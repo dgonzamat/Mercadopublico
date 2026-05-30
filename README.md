@@ -4,23 +4,7 @@
 
 **Stack:** Next.js 14 (App Router) + TypeScript strict + Tailwind CSS + react-leaflet + Recharts.
 
-## Deploy con un click
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdgonzamat%2Fmercadopublico&project-name=uap-atlas&repository-name=uap-atlas)
-
-El botón clona este repo a tu cuenta Vercel, importa la build y publica una URL `*.vercel.app` en ~2 min. No requiere variables de entorno.
-
-## Deploy automático vía GitHub Actions
-
-El workflow `.github/workflows/deploy.yml` despliega automáticamente a Vercel en cada push a `main`. Requiere 3 secrets en `Settings → Secrets and variables → Actions`:
-
-| Secret | Cómo obtenerlo |
-|---|---|
-| `VERCEL_TOKEN` | [vercel.com/account/tokens](https://vercel.com/account/tokens) → Create Token |
-| `VERCEL_ORG_ID` | `vercel link` en local → leer `.vercel/project.json → orgId` |
-| `VERCEL_PROJECT_ID` | mismo archivo → `projectId` |
-
-Una vez configurados, cada push a `main` produce un deploy de producción. PRs producen deploy preview.
+**Live:** https://uap-rust.vercel.app
 
 ## Estructura
 
