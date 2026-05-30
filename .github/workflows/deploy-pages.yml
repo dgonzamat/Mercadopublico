@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -38,3 +40,22 @@ jobs:
           publish_dir: ./out
           publish_branch: gh-pages
           commit_message: "deploy: ${{ github.event.head_commit.message }}"
+
+      - name: Enable GitHub Pages (idempotent)
+        run: |
+          set +e
+          # Try to create Pages site from gh-pages branch (will 409 if already exists, that's fine)
+          curl -sS -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/${{ github.repository }}/pages \
+            -d '{"source":{"branch":"gh-pages","path":"/"}}' || true
+          # Update to ensure source is correct (handles case where Pages already exists with wrong source)
+          curl -sS -X PUT \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/${{ github.repository }}/pages \
+            -d '{"source":{"branch":"gh-pages","path":"/"},"build_type":"legacy"}' || true
+          echo "Pages configured for gh-pages branch (or was already)."
