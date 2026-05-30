@@ -2,9 +2,13 @@
 
 > 79 años del fenómeno UAP documentados institucionalmente. 51 casos verificables, 18 patrones recurrentes, 11 frameworks teóricos comparados.
 
-**Stack:** Next.js 14 (App Router) + TypeScript strict + Tailwind CSS + react-leaflet + Recharts.
+**Stack:** Next.js 14 (App Router · static export) + TypeScript strict + Tailwind CSS + react-leaflet.
 
-**Live:** https://uap-rust.vercel.app
+**Live:** https://dgonzamat.github.io/mercadopublico/
+
+## Hosting
+
+GitHub Pages via `.github/workflows/deploy-pages.yml`. Auto-deploys on push to main.
 
 ## Estructura
 
@@ -31,8 +35,7 @@ data/                 cases.json (51), patterns.json (18), frameworks.json (11),
 ```bash
 npm install
 npm run dev    # http://localhost:3000
-npm run build  # production build (95 static pages)
-npm start      # serve production build
+npm run build  # static export to ./out/
 ```
 
 ## Páginas
