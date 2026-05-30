@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { cases, patterns, frameworks } from "@/lib/data";
 
-// Hoisted outside component: pure data, no need to re-create on render.
-// Probabilities sum >100% because hypotheses are not mutually exclusive (see /about).
 const hypothesisDistribution = [
   {
     id: "pluralidad",
@@ -58,51 +56,157 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16">
+      {/* HERO — objetivo claro en 30 seg */}
       <section className="pt-12">
-        <p className="font-mono text-xs uppercase tracking-widest text-accent">1947 — 2026</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-accent">
+          Análisis institucional de UAP — Unidentified Anomalous Phenomena
+        </p>
         <h1 className="mt-3 text-4xl font-bold leading-tight text-text sm:text-6xl">
-          79 años de fenómeno UAP
+          Lo que los gobiernos han documentado
           <br />
-          <span className="text-muted">documentados institucionalmente</span>
+          <span className="text-muted">sobre UAP en 79 años</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted">
-          {cases.length} casos verificables · {patterns.length} patrones recurrentes · {frameworks.length} frameworks teóricos comparados.
-          Análisis bilingüe ES/EN con metodología Bayesiana explícita.
+          <strong className="text-text">{cases.length} casos verificables</strong> · {patterns.length} patrones recurrentes ·{" "}
+          {frameworks.length} hipótesis comparadas — con metodología explícita y cero clickbait.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link href="/cases" className="rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-bg hover:bg-accent/90">Explorar {cases.length} casos →</Link>
-          <Link href="/resumen" className="rounded-md border border-border px-5 py-2.5 text-sm font-medium text-text hover:bg-panel">Leer resumen 10 min</Link>
+          <Link href="/resumen" className="rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-bg hover:bg-accent/90">
+            Resumen 10 min →
+          </Link>
+          <Link href="/cases" className="rounded-md border border-border px-5 py-2.5 text-sm font-medium text-text hover:bg-panel">
+            Explorar {cases.length} casos
+          </Link>
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <Stat label="Casos institucionales" value={cases.length.toString()} />
-        <Stat label="Tier S (alta confianza)" value={tierS.toString()} />
-        <Stat label="Patrones recurrentes" value={patterns.length.toString()} />
-        <Stat label="Frameworks comparados" value={frameworks.length.toString()} />
+      {/* ¿QUÉ VAS A ENCONTRAR? — objetivo concreto */}
+      <section aria-labelledby="que-encontraras">
+        <h2 id="que-encontraras" className="text-sm font-mono uppercase tracking-widest text-muted">
+          ¿Qué vas a encontrar aquí?
+        </h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
+          <FeatureCard
+            icon="🗂"
+            title="Casos verificables"
+            desc="Solo documentos institucionales — militar, congreso, agencias de inteligencia. Cada caso con tier, ubicación, fuente."
+          />
+          <FeatureCard
+            icon="🧭"
+            title="Patrones que se repiten"
+            desc="18 convergencias documentadas a través de 79 años y 12 países. No coincidencias aisladas — estructura."
+          />
+          <FeatureCard
+            icon="🧪"
+            title="Hipótesis con probabilidades"
+            desc="11 marcos teóricos comparados. Probabilidades Bayesianas explícitas sobre qué son los UAP."
+          />
+        </div>
       </section>
 
+      {/* QUÉ TE LLEVAS — valor concreto para el lector */}
+      <section aria-labelledby="que-te-llevas">
+        <h2 id="que-te-llevas" className="text-sm font-mono uppercase tracking-widest text-muted">
+          Qué te llevas
+        </h2>
+        <ul className="mt-4 space-y-3">
+          <ValueBullet>
+            Saber cuáles <strong className="text-text">{tierS} casos</strong> tienen mayor confianza
+            <span className="text-muted"> — Tier S = militar + sensor + multi-witness, 75-88% confianza</span>
+          </ValueBullet>
+          <ValueBullet>
+            Identificar <strong className="text-text">los {patterns.length} patrones</strong> que se repiten — incluyendo el cover-up institucional de 78 años
+          </ValueBullet>
+          <ValueBullet>
+            Comparar <strong className="text-text">las {frameworks.length} hipótesis serias</strong>
+            <span className="text-muted"> — ETH, Control System, Multidimensional, Predatory, Plurality (posición del corpus)</span>
+          </ValueBullet>
+          <ValueBullet>
+            Acceder a fuentes primarias: documentos DIA, testimonios congresionales bajo juramento, FOIA releases
+          </ValueBullet>
+        </ul>
+      </section>
+
+      {/* ¿QUÉ SON LOS UAP? — chart de probabilidades */}
       <HypothesisChart />
 
-      <section>
-        <h2 className="text-sm font-mono uppercase tracking-widest text-muted">Los módulos</h2>
+      {/* ¿POR DÓNDE EMPEZAR? — navegación por perfil */}
+      <section aria-labelledby="por-donde-empezar">
+        <h2 id="por-donde-empezar" className="text-sm font-mono uppercase tracking-widest text-muted">
+          ¿Por dónde empezar?
+        </h2>
+        <p className="mt-2 text-muted">Tres caminos según qué necesitas.</p>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
-          <ModuleCard href="/atlas" badge="En vivo" title="Pattern Atlas" desc="Mapa mundial interactivo + filtros por tier. Visualiza convergencia de fenómenos a través de 79 años." />
-          <ModuleCard badge="Roadmap" title="Bayesian Lab" desc="Calculadora interactiva. Ajusta tus priors sobre las 9 hipótesis y compara con el análisis del corpus." soon />
-          <ModuleCard badge="Roadmap" title="Convergence Engine" desc="Buscador semántico. Selecciona un caso y encuentra los estructuralmente más similares en el corpus." soon />
+          <PathCard
+            href="/resumen"
+            icon="🆕"
+            label="Soy nuevo al tema"
+            title="Empieza por el resumen"
+            desc="10 min. Los 5 hallazgos clave, la taxonomía de disclosure, la conclusión en una sola idea."
+          />
+          <PathCard
+            href="/cases"
+            icon="🔍"
+            label="Quiero ver casos"
+            title="51 casos cronológicos"
+            desc="Ordenados por era 1947-2026. Filtrables por tier de evidencia. Mapas, patrones, fuentes."
+          />
+          <PathCard
+            href="/about"
+            icon="🧪"
+            label="Cómo se hizo el análisis"
+            title="Metodología"
+            desc="Sistema de 4 tiers evidenciales, principio Bayesiano, qué casos mueven la aguja y cuáles no."
+          />
         </div>
       </section>
 
-      <section>
-        <h2 className="text-sm font-mono uppercase tracking-widest text-muted">Casos destacados</h2>
+      {/* MÓDULOS — relabel por valor */}
+      <section aria-labelledby="modulos">
+        <h2 id="modulos" className="text-sm font-mono uppercase tracking-widest text-muted">
+          Herramientas
+        </h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
+          <ModuleCard
+            href="/atlas"
+            badge="En vivo"
+            title="Atlas visual"
+            desc="Mapa mundial con los 51 casos UAP geolocalizados por país y época. Click un marcador para abrir el caso."
+          />
+          <ModuleCard
+            badge="Roadmap"
+            title="Calculadora Bayesiana"
+            desc="Ajustas tus priors sobre las hipótesis y la calculadora muestra tu probabilidad posterior. Compara con la del corpus."
+            soon
+          />
+          <ModuleCard
+            badge="Roadmap"
+            title="Buscador semántico"
+            desc="Selecciona un caso y encuentra los estructuralmente más similares — mismo patrón, misma era, misma morfología."
+            soon
+          />
+        </div>
+      </section>
+
+      {/* CASOS DESTACADOS */}
+      <section aria-labelledby="destacados">
+        <h2 id="destacados" className="text-sm font-mono uppercase tracking-widest text-muted">
+          Casos destacados
+        </h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((c) => (<FeaturedCase key={c.id} caseData={c} />))}
         </div>
       </section>
 
-      <section>
-        <h2 className="text-sm font-mono uppercase tracking-widest text-muted">La taxonomía de disclosure 8m/8n/8q/8r</h2>
-        <p className="mt-3 max-w-2xl text-muted">El aporte analítico central. Cualquier evento UAP institucional cae en una de cuatro categorías según quién controla el contenido vs quién libera la información.</p>
+      {/* TAXONOMÍA 2x2 */}
+      <section aria-labelledby="taxonomia">
+        <h2 id="taxonomia" className="text-sm font-mono uppercase tracking-widest text-muted">
+          La taxonomía de disclosure 8m/8n/8q/8r
+        </h2>
+        <p className="mt-3 max-w-2xl text-muted">
+          El aporte analítico central. Cualquier evento UAP institucional cae en una de cuatro categorías
+          según quién controla el contenido vs quién libera la información.
+        </p>
         <div className="mt-6 overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-panel">
@@ -177,12 +281,39 @@ function HypothesisChart() {
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function FeatureCard({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
-    <div className="rounded-lg border border-border bg-panel px-4 py-3">
-      <p className="text-3xl font-bold text-text">{value}</p>
-      <p className="mt-1 text-xs text-muted">{label}</p>
+    <div className="rounded-lg border border-border bg-panel p-5">
+      <span aria-hidden className="text-2xl">{icon}</span>
+      <h3 className="mt-3 text-base font-medium text-text">{title}</h3>
+      <p className="mt-2 text-sm text-muted">{desc}</p>
     </div>
+  );
+}
+
+function ValueBullet({ children }: { children: React.ReactNode }) {
+  return (
+    <li className="flex items-start gap-3 rounded-md border border-border bg-panel px-4 py-3 text-sm">
+      <span aria-hidden className="mt-0.5 font-mono text-accent">✓</span>
+      <span className="flex-1 text-text">{children}</span>
+    </li>
+  );
+}
+
+function PathCard({ href, icon, label, title, desc }: { href: string; icon: string; label: string; title: string; desc: string }) {
+  return (
+    <Link
+      href={href}
+      className="group block rounded-lg border border-border bg-panel p-5 transition hover:border-accent/50"
+    >
+      <div className="flex items-center gap-2">
+        <span aria-hidden className="text-xl">{icon}</span>
+        <span className="font-mono text-[10px] uppercase tracking-widest text-muted">{label}</span>
+      </div>
+      <h3 className="mt-3 text-base font-medium text-text group-hover:text-accent">{title}</h3>
+      <p className="mt-2 text-sm text-muted">{desc}</p>
+      <p className="mt-3 text-xs text-accent">Ir →</p>
+    </Link>
   );
 }
 
