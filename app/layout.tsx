@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MobileNav } from "@/components/MobileNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({
               <Link href="/about" className="hover:text-text">Metodología</Link>
               <Link href="/resumen" className="hover:text-text">Resumen</Link>
             </div>
+            <MobileNav />
           </nav>
         </header>
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
