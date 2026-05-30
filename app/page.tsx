@@ -1,6 +1,53 @@
 import Link from "next/link";
 import { cases, patterns, frameworks } from "@/lib/data";
 
+// Hoisted outside component: pure data, no need to re-create on render.
+// Probabilities sum >100% because hypotheses are not mutually exclusive (see /about).
+const hypothesisDistribution = [
+  {
+    id: "pluralidad",
+    label: "Pluralidad de inteligencias",
+    pct: 48,
+    color: "#ff4d4d",
+    note: "Múltiples fuentes distintas mezcladas — no es UN solo fenómeno",
+  },
+  {
+    id: "interdimensional",
+    label: "Interdimensional / física exótica",
+    pct: 15,
+    color: "#ff8800",
+    note: "Vienen de otras dimensiones, no de otros planetas (Puthoff, Davis)",
+  },
+  {
+    id: "natural",
+    label: "Fenómeno natural no catalogado",
+    pct: 12,
+    color: "#ffb347",
+    note: "Plasma, ionización avanzada, sprites — Hessdalen, Popocatépetl",
+  },
+  {
+    id: "clasificado",
+    label: "Programa clasificado terrestre",
+    pct: 11,
+    color: "#7fdbff",
+    note: "Breakaway civilization, black budget militar (Jorjani)",
+  },
+  {
+    id: "tratado",
+    label: "Tratado formal con Greys",
+    pct: 8,
+    color: "#aa88ff",
+    note: "Hipótesis Cooper, Lazar — sin evidencia primaria verificable",
+  },
+  {
+    id: "psicoespiritual",
+    label: "Contacto psicoespiritual / 'Other'",
+    pct: 6,
+    color: "#00aaff",
+    note: "Mack, Strieber, framework ontológico-religioso de Pasulka",
+  },
+] as const;
+
 export default function HomePage() {
   const tierS = cases.filter((c) => c.tier === "S").length;
   const featured = cases
@@ -34,6 +81,8 @@ export default function HomePage() {
         <Stat label="Patrones recurrentes" value={patterns.length.toString()} />
         <Stat label="Frameworks comparados" value={frameworks.length.toString()} />
       </section>
+
+      <HypothesisChart />
 
       <section>
         <h2 className="text-sm font-mono uppercase tracking-widest text-muted">Los módulos</h2>
@@ -91,6 +140,40 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+  );
+}
+
+function HypothesisChart() {
+  return (
+    <section aria-labelledby="hypothesis-chart-title">
+      <h2 id="hypothesis-chart-title" className="text-sm font-mono uppercase tracking-widest text-muted">
+        ¿Qué son los UAP?
+      </h2>
+      <p className="mt-3 max-w-2xl text-text">
+        Distribución de probabilidad del corpus sobre las hipótesis principales.
+        <span className="text-muted"> No suman 100% porque NO son mutuamente excluyentes — pueden ser parcialmente verdaderas al mismo tiempo.</span>
+      </p>
+      <div className="mt-6 space-y-5 rounded-lg border border-border bg-panel p-5">
+        {hypothesisDistribution.map((h) => (
+          <div key={h.id}>
+            <div className="flex items-baseline justify-between gap-3">
+              <p className="text-sm font-medium text-text">{h.label}</p>
+              <span className="font-mono text-base font-bold text-text" aria-label={`${h.pct} por ciento`}>
+                {h.pct}%
+              </span>
+            </div>
+            <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-bg" role="progressbar" aria-valuenow={h.pct} aria-valuemin={0} aria-valuemax={100}>
+              <div className="h-full rounded-full" style={{ width: `${h.pct}%`, backgroundColor: h.color }} />
+            </div>
+            <p className="mt-1 text-xs text-muted">{h.note}</p>
+          </div>
+        ))}
+      </div>
+      <p className="mt-3 text-xs text-muted">
+        Probabilidades móviles con evidencia nueva. Lectura completa en{" "}
+        <Link href="/about" className="text-accent hover:underline">metodología</Link>.
+      </p>
+    </section>
   );
 }
 
