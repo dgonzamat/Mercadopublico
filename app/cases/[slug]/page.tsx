@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cases, getPattern } from "@/lib/data";
 
@@ -32,7 +33,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <a href="/cases" className="text-sm text-muted hover:text-accent">← Volver a casos</a>
+      <Link href="/cases" className="text-sm text-muted hover:text-accent">← Volver a casos</Link>
 
       <header>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">Caso #{c.num} · {year} · {c.country_name}</p>
@@ -65,9 +66,9 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
           <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Patrones que exhibe</h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {casePatterns.map((p) => (
-              <a key={p.id} href={`/patterns/${p.letter}`} className="rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}>
+              <Link key={p.id} href={`/patterns/${p.letter}`} className="rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}>
                 <span className="font-mono text-accent">{p.id}</span> <span className="text-text">{p.name}</span>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -78,14 +79,14 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
           <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Casos relacionados</h2>
           <div className="mt-3 grid gap-2">
             {similar.map((s) => (
-              <a key={s.caseData.id} href={`/cases/${s.caseData.id}`} className="flex items-center justify-between rounded border border-border bg-panel px-3 py-2 text-sm transition hover:border-accent/50">
+              <Link key={s.caseData.id} href={`/cases/${s.caseData.id}`} className="flex items-center justify-between rounded border border-border bg-panel px-3 py-2 text-sm transition hover:border-accent/50">
                 <span>
                   <span className="mr-2">{s.caseData.flag}</span>
                   <span className="text-text">{s.caseData.name}</span>
                   <span className="ml-2 font-mono text-xs text-muted">{s.caseData.year_start}</span>
                 </span>
                 <span className="font-mono text-xs text-muted">Tier {s.caseData.tier} · {s.caseData.probability}%</span>
-              </a>
+              </Link>
             ))}
           </div>
         </section>

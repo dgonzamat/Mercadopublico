@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import { cases, patterns } from "@/lib/data";
 
@@ -39,9 +40,9 @@ export default function AtlasPage() {
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Patrones documentados ({patterns.length})</h2>
         <div className="mt-3 flex flex-wrap gap-2">
           {patterns.map((p) => (
-            <a key={p.id} href={`/patterns/${p.letter}`} className="rounded border border-border bg-panel px-2.5 py-1 text-xs hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}>
+            <Link key={p.id} href={`/patterns/${p.letter}`} className="rounded border border-border bg-panel px-2.5 py-1 text-xs hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}>
               <span className="font-mono text-accent">{p.id}</span> <span className="text-text">{p.name}</span>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

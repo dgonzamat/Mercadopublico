@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { researchers, getFramework } from "@/lib/data";
 
 export const metadata = {
@@ -31,14 +32,14 @@ export default function ResearchersPage() {
               {sectionResearchers.map((r) => {
                 const fw = r.framework ? getFramework(r.framework) : undefined;
                 return (
-                  <a key={r.id} href={`/researchers/${r.id}`} className="rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50">
+                  <Link key={r.id} href={`/researchers/${r.id}`} className="rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50">
                     <div className="flex items-baseline justify-between gap-2">
                       <h3 className="text-base font-medium text-text">{r.name}</h3>
                       <span className="font-mono text-xs text-muted">{r.born}{r.death ? `–${r.death}` : "–"}</span>
                     </div>
                     {fw && (<p className="mt-1 text-xs text-accent">{fw.name}</p>)}
                     <p className="mt-2 line-clamp-3 text-xs text-muted">{r.bio_short}</p>
-                  </a>
+                  </Link>
                 );
               })}
             </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { patterns, getCasesByPattern } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
@@ -19,7 +20,7 @@ export default function PatternDetailPage({ params }: { params: { letter: string
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <a href="/patterns" className="text-sm text-muted hover:text-accent">← Volver a patrones</a>
+      <Link href="/patterns" className="text-sm text-muted hover:text-accent">← Volver a patrones</Link>
 
       <header>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">Patrón {p.id}</p>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
 
@@ -20,13 +21,13 @@ export default function ResearcherDetailPage({ params }: { params: { slug: strin
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <a href="/researchers" className="text-sm text-muted hover:text-accent">← Volver a researchers</a>
+      <Link href="/researchers" className="text-sm text-muted hover:text-accent">← Volver a researchers</Link>
 
       <header>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">Sección {r.section} · {r.section_label} · {lifespan}</p>
         <h1 className="mt-2 text-3xl font-bold text-text">{r.name}</h1>
         {fw && (
-          <p className="mt-2 text-sm text-accent">Framework principal: <a href={`/frameworks#${fw.id}`} className="font-medium hover:underline">{fw.name}</a></p>
+          <p className="mt-2 text-sm text-accent">Framework principal: <Link href={`/frameworks#${fw.id}`} className="font-medium hover:underline">{fw.name}</Link></p>
         )}
       </header>
 

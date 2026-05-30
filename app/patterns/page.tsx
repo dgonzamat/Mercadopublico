@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { patterns, cases } from "@/lib/data";
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default function PatternsPage() {
         {patterns.map((p) => {
           const count = cases.filter((c) => c.patterns.includes(p.id)).length;
           return (
-            <a key={p.id} href={`/patterns/${p.letter}`} className="rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 4 }}>
+            <Link key={p.id} href={`/patterns/${p.letter}`} className="rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 4 }}>
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="font-mono text-xs text-accent">{p.id}</p>
@@ -26,7 +27,7 @@ export default function PatternsPage() {
                 <span className="rounded bg-bg px-2 py-0.5 font-mono text-[10px] text-muted">{count} casos</span>
               </div>
               <p className="mt-2 text-xs text-muted">{p.description}</p>
-            </a>
+            </Link>
           );
         })}
       </div>

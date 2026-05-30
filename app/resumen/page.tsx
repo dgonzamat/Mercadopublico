@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Resumen · UAP Atlas",
   description: "Versión accesible del análisis en lenguaje claro",
@@ -47,9 +49,9 @@ export default function ResumenPage() {
       </section>
 
       <div className="flex flex-wrap gap-3 border-t border-border pt-6">
-        <a href="/cases" className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-bg hover:bg-accent/90">Explorar 51 casos →</a>
-        <a href="/atlas" className="rounded-md border border-border px-4 py-2 text-sm font-medium text-text hover:bg-panel">Ver mapa</a>
-        <a href="/patterns" className="rounded-md border border-border px-4 py-2 text-sm font-medium text-text hover:bg-panel">Ver patrones</a>
+        <Link href="/cases" className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-bg hover:bg-accent/90">Explorar 51 casos →</Link>
+        <Link href="/atlas" className="rounded-md border border-border px-4 py-2 text-sm font-medium text-text hover:bg-panel">Ver mapa</Link>
+        <Link href="/patterns" className="rounded-md border border-border px-4 py-2 text-sm font-medium text-text hover:bg-panel">Ver patrones</Link>
       </div>
     </article>
   );
