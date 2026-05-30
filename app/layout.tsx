@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,17 +23,17 @@ export default function RootLayout({
       <body className="min-h-screen">
         <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-            <a href="/" className="font-mono text-sm tracking-tight text-text">
+            <Link href="/" className="font-mono text-sm tracking-tight text-text">
               <span className="text-accent">▲</span> UAP Atlas
-            </a>
+            </Link>
             <div className="hidden gap-5 text-sm text-muted sm:flex">
-              <a href="/cases" className="hover:text-text">Casos</a>
-              <a href="/atlas" className="hover:text-text">Atlas</a>
-              <a href="/patterns" className="hover:text-text">Patrones</a>
-              <a href="/researchers" className="hover:text-text">Researchers</a>
-              <a href="/frameworks" className="hover:text-text">Frameworks</a>
-              <a href="/about" className="hover:text-text">Metodología</a>
-              <a href="/resumen" className="hover:text-text">Resumen</a>
+              <Link href="/cases" className="hover:text-text">Casos</Link>
+              <Link href="/atlas" className="hover:text-text">Atlas</Link>
+              <Link href="/patterns" className="hover:text-text">Patrones</Link>
+              <Link href="/researchers" className="hover:text-text">Researchers</Link>
+              <Link href="/frameworks" className="hover:text-text">Frameworks</Link>
+              <Link href="/about" className="hover:text-text">Metodología</Link>
+              <Link href="/resumen" className="hover:text-text">Resumen</Link>
             </div>
           </nav>
         </header>
