@@ -26,15 +26,33 @@ jobs:
         with:
           node-version: '20'
 
+      # Force Pages source to "GitHub Actions" (build_type=workflow).
+      # If source was previously set to "Deploy from a branch", this corrects it
+      # so actions/deploy-pages below can take over.
+      - name: Force Pages source to GitHub Actions
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/${{ github.repository }}/pages \
+            -d '{"build_type":"workflow"}' || true
+          curl -sS -X PUT \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/${{ github.repository }}/pages \
+            -d '{"build_type":"workflow"}' || true
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Show Pages config detected by action
         run: |
           echo "Pages base_path:  ${{ steps.pages.outputs.base_path }}"
-          echo "Pages base_url:   ${{ steps.pages.outputs.base_url }}"
-          echo "Pages host:       ${{ steps.pages.outputs.host }}"
           echo "Pages origin:     ${{ steps.pages.outputs.origin }}"
 
       - name: Install dependencies
@@ -44,7 +62,6 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          # Pass the canonical Pages URL into the build so basePath matches exactly
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Add .nojekyll
@@ -52,14 +69,11 @@ jobs:
 
       - name: Debug — what the build actually produced
         run: |
-          echo "=== Files in out/ ==="
-          ls out/ | head -20
-          echo ""
           echo "=== First CSS link reference in out/index.html ==="
           grep -oE 'href="[^"]*\.css[^"]*"' out/index.html | head -3
           echo ""
-          echo "=== First few asset paths in out/index.html ==="
-          grep -oE 'href="/[^"]*"' out/index.html | head -5
+          echo "=== First nav link hrefs in out/index.html ==="
+          grep -oE 'href="/[^"]*"' out/index.html | sort -u | head -10
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -81,26 +95,23 @@ jobs:
         run: |
           BASE_URL="${{ steps.deployment.outputs.page_url }}"
           echo "Verifying deploy at: $BASE_URL"
-          sleep 15  # Give CDN a moment
+          sleep 20
 
-          # Fetch the homepage
           HTML=$(curl -sSL "$BASE_URL")
           if [ -z "$HTML" ]; then
-            echo "❌ Homepage returned empty body"
+            echo "::error::Homepage returned empty body"
             exit 1
           fi
 
-          # Extract the first CSS href
           CSS_HREF=$(echo "$HTML" | grep -oE 'href="[^"]*\.css[^"]*"' | head -1 | sed -E 's/href="([^"]+)"/\1/')
           if [ -z "$CSS_HREF" ]; then
-            echo "❌ No CSS link found in homepage HTML"
+            echo "::error::No CSS link found in homepage HTML"
             echo "First 500 chars of HTML:"
             echo "$HTML" | head -c 500
             exit 1
           fi
-          echo "✓ Found CSS href in HTML: $CSS_HREF"
+          echo "✓ HTML references CSS at: $CSS_HREF"
 
-          # Resolve to absolute URL
           if [[ "$CSS_HREF" == /* ]]; then
             HOST=$(echo "$BASE_URL" | grep -oE 'https?://[^/]+')
             CSS_URL="${HOST}${CSS_HREF}"
@@ -109,24 +120,14 @@ jobs:
           fi
           echo "Fetching CSS at: $CSS_URL"
 
-          # Fetch CSS and check status
           CSS_STATUS=$(curl -sSL -o /tmp/css.out -w "%{http_code}" "$CSS_URL")
           CSS_SIZE=$(wc -c < /tmp/css.out)
-          echo "CSS HTTP $CSS_STATUS, size $CSS_SIZE bytes"
+          echo "CSS HTTP $CSS_STATUS, $CSS_SIZE bytes"
 
-          if [ "$CSS_STATUS" != "200" ]; then
-            echo "❌ CSS did not return 200"
+          if [ "$CSS_STATUS" != "200" ] || [ "$CSS_SIZE" -lt 1000 ]; then
+            echo "::error::CSS failed verification (HTTP $CSS_STATUS, $CSS_SIZE bytes)"
             echo "First 500 chars of response:"
             head -c 500 /tmp/css.out
             exit 1
           fi
-          if [ "$CSS_SIZE" -lt 1000 ]; then
-            echo "❌ CSS body too small to be real Tailwind output (got $CSS_SIZE bytes)"
-            head -c 500 /tmp/css.out
-            exit 1
-          fi
-          if ! grep -q "tailwind" /tmp/css.out; then
-            echo "⚠ CSS body doesn't mention 'tailwind' — first 300 chars:"
-            head -c 300 /tmp/css.out
-          fi
-          echo "✅ Deployment verified: HTML + CSS both load from $BASE_URL"
+          echo "✅ Deploy verified at $BASE_URL — CSS loads correctly"
