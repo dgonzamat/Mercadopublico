@@ -3,12 +3,17 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
+const PRIMARY_CTA = {
+  href: "/probabilidades",
+  label: "Ver probabilidades",
+  sub: "Las 6 hipótesis sobre UAP",
+};
+
 const NAV_LINKS = [
-  { href: "/cases", label: "Casos" },
-  { href: "/probabilidades", label: "Probabilidades" },
-  { href: "/atlas", label: "Atlas" },
-  { href: "/about", label: "Metodología" },
-  { href: "/resumen", label: "Resumen" },
+  { href: "/cases", label: "Casos", sub: "52 institucionales · 1947–2026" },
+  { href: "/atlas", label: "Atlas", sub: "Mapa global de casos" },
+  { href: "/resumen", label: "Resumen", sub: "Lectura 10 min" },
+  { href: "/about", label: "Metodología", sub: "Cómo se construyó" },
 ];
 
 const SECONDARY_LINKS = [
@@ -21,8 +26,6 @@ export function MobileNav() {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
-  // Close on Escape + lock body scroll + focus first link when drawer opens.
-  // This is the shadcn Sheet pattern reproduced manually (zero deps).
   useEffect(() => {
     if (!open) return;
     function onKeyDown(e: KeyboardEvent) {
@@ -57,23 +60,71 @@ export function MobileNav() {
       {open && (
         <div
           id="mobile-nav-drawer"
-          className="sm:hidden fixed inset-0 top-[57px] z-40 overflow-y-auto bg-bg/95 backdrop-blur-sm"
+          className="sm:hidden fixed inset-0 top-[57px] z-40 overflow-y-auto bg-bg"
           onClick={() => setOpen(false)}
           role="presentation"
         >
           <nav
-            className="min-h-full border-t border-border bg-bg px-4 py-4"
+            className="min-h-full px-4 py-6"
             onClick={(e) => e.stopPropagation()}
             aria-label="Navegación principal"
           >
-            <ul className="space-y-1">
-              {NAV_LINKS.map((l, i) => (
+            {/* CTA PRIMARIO */}
+            <Link
+              ref={firstLinkRef}
+              href={PRIMARY_CTA.href}
+              onClick={() => setOpen(false)}
+              className="group block bg-accent p-6 hover:bg-text"
+            >
+              <p className="font-mono text-xs uppercase tracking-widest text-bg/70">
+                Empezar aquí
+              </p>
+              <p className="mt-2 font-display text-3xl font-medium leading-tight text-bg">
+                {PRIMARY_CTA.label} <span aria-hidden>→</span>
+              </p>
+              <p className="mt-2 text-sm text-bg/80">{PRIMARY_CTA.sub}</p>
+            </Link>
+
+            {/* NAV PRINCIPAL */}
+            <p className="mt-8 font-mono text-xs uppercase tracking-widest text-muted">
+              Navegar el corpus
+            </p>
+            <ul className="mt-3 divide-y divide-text/10 border-y border-text/15">
+              {NAV_LINKS.map((l) => (
                 <li key={l.href}>
                   <Link
-                    ref={i === 0 ? firstLinkRef : undefined}
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-md px-3 py-3 text-base text-text hover:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                    className="group flex min-h-[60px] items-center justify-between gap-4 py-4 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  >
+                    <div className="min-w-0 space-y-0.5">
+                      <p className="font-display text-2xl font-medium leading-tight text-text group-hover:text-accent">
+                        {l.label}
+                      </p>
+                      <p className="text-xs text-muted">{l.sub}</p>
+                    </div>
+                    <span
+                      aria-hidden
+                      className="shrink-0 font-mono text-lg text-muted group-hover:text-accent"
+                    >
+                      →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* NAV SECUNDARIO */}
+            <p className="mt-8 font-mono text-xs uppercase tracking-widest text-muted">
+              Más
+            </p>
+            <ul className="mt-2 grid grid-cols-2 gap-x-4">
+              {SECONDARY_LINKS.map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="block min-h-[48px] py-3 text-sm font-medium text-text underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {l.label}
                   </Link>
@@ -81,22 +132,10 @@ export function MobileNav() {
               ))}
             </ul>
 
-            <p className="mt-6 px-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-              Más
+            {/* FOOTER LINE */}
+            <p className="mt-10 border-t border-text/15 pt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
+              UAP Atlas · análisis institucional · 1947–2026
             </p>
-            <ul className="mt-2 space-y-1">
-              {SECONDARY_LINKS.map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-md px-3 py-3 text-sm text-muted hover:bg-panel hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </nav>
         </div>
       )}

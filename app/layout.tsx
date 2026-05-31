@@ -28,6 +28,13 @@ export const metadata: Metadata = {
   },
 };
 
+const SECONDARY_NAV = [
+  { href: "/cases", label: "Casos" },
+  { href: "/atlas", label: "Atlas" },
+  { href: "/about", label: "Metodología" },
+  { href: "/resumen", label: "Resumen" },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -36,76 +43,126 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="min-h-screen font-sans">
-        <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
-          <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <header className="sticky top-0 z-50 border-b-2 border-text bg-bg/95 backdrop-blur">
+          <nav
+            aria-label="Navegación principal"
+            className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3"
+          >
             <Link
               href="/"
-              className="font-mono text-sm tracking-tight text-text"
+              className="group flex items-baseline gap-2 text-text"
+              aria-label="UAP Atlas — inicio"
             >
-              <span className="text-accent">▲</span> UAP Atlas
-            </Link>
-            <div className="hidden gap-6 text-sm font-medium text-text sm:flex">
-              <Link
-                href="/cases"
-                className="hover:text-accent hover:underline hover:underline-offset-4"
+              <span
+                aria-hidden
+                className="font-mono text-base leading-none text-accent transition group-hover:rotate-180"
               >
-                Casos
-              </Link>
+                ▲
+              </span>
+              <span className="font-display text-xl font-medium tracking-tight md:text-2xl">
+                UAP <span className="italic text-accent">Atlas</span>
+              </span>
+            </Link>
+
+            <div className="hidden items-center gap-7 sm:flex">
+              {SECONDARY_NAV.map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="text-sm font-medium text-text underline-offset-8 hover:text-accent hover:underline"
+                >
+                  {l.label}
+                </Link>
+              ))}
               <Link
                 href="/probabilidades"
-                className="hover:text-accent hover:underline hover:underline-offset-4"
+                className="inline-flex min-h-[40px] items-center rounded-none bg-accent px-4 py-1.5 text-sm font-medium text-bg hover:bg-text"
               >
-                Probabilidades
-              </Link>
-              <Link
-                href="/atlas"
-                className="hover:text-accent hover:underline hover:underline-offset-4"
-              >
-                Atlas
-              </Link>
-              <Link
-                href="/about"
-                className="hover:text-accent hover:underline hover:underline-offset-4"
-              >
-                Metodología
-              </Link>
-              <Link
-                href="/resumen"
-                className="hover:text-accent hover:underline hover:underline-offset-4"
-              >
-                Resumen
+                Ver probabilidades →
               </Link>
             </div>
+
             <MobileNav />
           </nav>
         </header>
+
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
-        <footer className="border-t border-border py-8 text-center text-xs text-muted">
-          <nav
-            aria-label="Enlaces secundarios"
-            className="mb-4 flex flex-wrap justify-center gap-x-5 gap-y-2"
-          >
-            <Link href="/patterns" className="hover:text-text">
-              Patrones
-            </Link>
-            <Link href="/researchers" className="hover:text-text">
-              Ecosistema
-            </Link>
-            <Link href="/frameworks" className="hover:text-text">
-              Frameworks
-            </Link>
-          </nav>
-          <p>
-            UAP Atlas · análisis institucional · corpus open source ·{" "}
-            <a
-              href="https://github.com/dgonzamat/mercadopublico"
-              className="text-accent hover:underline"
-            >
-              github
-            </a>
-          </p>
+
+        <footer className="mt-32 border-t-2 border-text bg-panel">
+          <div className="mx-auto max-w-6xl px-4 py-12 space-y-10">
+            <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
+              <div className="space-y-3">
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  El proyecto
+                </p>
+                <p className="font-display text-2xl leading-snug text-text md:text-3xl">
+                  Un{" "}
+                  <span className="italic text-accent">
+                    cuaderno de investigación
+                  </span>{" "}
+                  abierto sobre UAP institucionales,
+                  <br />
+                  1947–2026.
+                </p>
+              </div>
+
+              <nav
+                aria-label="Navegación principal del pie"
+                className="space-y-2"
+              >
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  Atlas
+                </p>
+                <ul className="space-y-1">
+                  <FooterLink href="/cases" label="Casos" />
+                  <FooterLink href="/probabilidades" label="Probabilidades" />
+                  <FooterLink href="/atlas" label="Mapa" />
+                  <FooterLink href="/resumen" label="Resumen 10 min" />
+                </ul>
+              </nav>
+
+              <nav
+                aria-label="Más recursos"
+                className="space-y-2"
+              >
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  Más
+                </p>
+                <ul className="space-y-1">
+                  <FooterLink href="/patterns" label="Patrones" />
+                  <FooterLink href="/researchers" label="Ecosistema" />
+                  <FooterLink href="/frameworks" label="Frameworks" />
+                  <FooterLink href="/about" label="Metodología" />
+                </ul>
+              </nav>
+            </div>
+
+            <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
+              Corpus open source ·{" "}
+              <a
+                href="https://github.com/dgonzamat/mercadopublico"
+                className="text-text hover:text-accent hover:underline"
+              >
+                github
+              </a>{" "}
+              · análisis institucional
+            </p>
+          </div>
         </footer>
       </body>
     </html>
+  );
+}
+
+function FooterLink({ href, label }: { href: string; label: string }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className="inline-block min-h-[36px] py-1 text-sm text-text underline-offset-4 hover:text-accent hover:underline"
+      >
+        {label}
+      </Link>
+    </li>
   );
 }
