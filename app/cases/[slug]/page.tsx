@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { cases, getPattern } from "@/lib/data";
+import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
 import { TierBadge, CategoryBadge } from "@/components/Badge";
 
@@ -169,7 +169,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
           <p>
             <strong className="text-text">⏳ Caso pendiente de explicación detallada.</strong>{" "}
             Este caso aún no tiene narrativa, evidencia ni fuentes documentadas — solo el resumen
-            de arriba. Estamos expandiendo gradualmente los 51 casos del corpus.
+            de arriba. Estamos expandiendo gradualmente los {TOTAL_CASES} casos del corpus.
           </p>
         </section>
       )}

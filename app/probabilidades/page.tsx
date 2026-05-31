@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { cases, patterns } from "@/lib/data";
+import { cases, patterns, TOTAL_CASES } from "@/lib/data";
 import { HYPOTHESES } from "@/lib/hypotheses";
 import { PATTERN_TO_HYPOTHESIS } from "@/lib/hypothesisMapping";
 
@@ -47,7 +47,7 @@ export default function ProbabilidadesPage() {
           Lo que SÍ es
         </h2>
         <ul className="mt-3 space-y-2 text-sm text-text">
-          <li>✓ <strong>Juicio analítico estructurado</strong> sobre 51 casos institucionales (militar, congreso, agencias) entre 1947 y 2026.</li>
+          <li>✓ <strong>Juicio analítico estructurado</strong> sobre {TOTAL_CASES} casos institucionales (militar, congreso, agencias) entre 1947 y 2026.</li>
           <li>✓ <strong>Calibrado vía ICD-203</strong> — el mismo estándar que usan analistas IC para reportes a tomadores de decisión.</li>
           <li>✓ <strong>Auditable</strong> — cada hipótesis abajo lista los casos del corpus que la sostienen, mapeados por patrón documentado.</li>
         </ul>
@@ -89,13 +89,22 @@ export default function ProbabilidadesPage() {
       </section>
 
       <div className="flex flex-wrap gap-3 border-t border-border pt-6">
-        <Link href="/" className="rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel">
+        <Link
+          href="/"
+          className="rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
+        >
           ← Volver al dashboard
         </Link>
-        <Link href="/cases" className="rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel">
+        <Link
+          href="/cases"
+          className="rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
+        >
           Ver casos
         </Link>
-        <Link href="/about" className="rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel">
+        <Link
+          href="/about"
+          className="rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
+        >
           Metodología
         </Link>
       </div>
@@ -107,9 +116,12 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
   const h = HYPOTHESES.find((x) => x.id === hypothesisId);
   if (!h) return null;
 
+  // Casos que sostienen esta hipótesis = aquellos con al menos un patrón mapeado a h.id
   const supportingCases = cases.filter((c) =>
     c.patterns.some((p) => PATTERN_TO_HYPOTHESIS[p] === hypothesisId),
   );
+
+  // Patrones asociados a esta hipótesis
   const associatedPatterns = patterns.filter(
     (p) => PATTERN_TO_HYPOTHESIS[p.id] === hypothesisId,
   );

@@ -1,9 +1,9 @@
-import { cases } from "@/lib/data";
+import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 
 export const metadata = {
   title: "Casos · UAP Atlas",
-  description: `${51} casos institucionales documentados 1947-2026`,
+  description: `${TOTAL_CASES} casos institucionales documentados 1947-2026`,
 };
 
 export default function CasesPage() {
@@ -20,17 +20,27 @@ export default function CasesPage() {
     <div className="space-y-10">
       <header>
         <h1 className="text-3xl font-bold text-text">Casos institucionales</h1>
-        <p className="mt-2 text-muted">{cases.length} records (1947–2026). Ordenados cronológicamente. Probabilidad = confianza de que "es algo real no convencional" según análisis Bayesiano. No suman 100%.</p>
+        <p className="mt-2 text-muted">
+          {cases.length} records (1947–2026). Ordenados cronológicamente.
+          Probabilidad = confianza de que "es algo real no convencional" según
+          análisis Bayesiano. No suman 100%.
+        </p>
       </header>
 
       {eras.map((era) => {
-        const eraCases = sorted.filter((c) => c.year_start >= era.start && c.year_start <= era.end);
+        const eraCases = sorted.filter(
+          (c) => c.year_start >= era.start && c.year_start <= era.end
+        );
         if (eraCases.length === 0) return null;
         return (
           <section key={era.label}>
-            <h2 className="font-mono text-xs uppercase tracking-widest text-muted">{era.label} · {eraCases.length} casos</h2>
+            <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+              {era.label} · {eraCases.length} casos
+            </h2>
             <div className="mt-2">
-              {eraCases.map((c) => (<CaseRow key={c.id} caseData={c} />))}
+              {eraCases.map((c) => (
+                <CaseRow key={c.id} caseData={c} />
+              ))}
             </div>
           </section>
         );
