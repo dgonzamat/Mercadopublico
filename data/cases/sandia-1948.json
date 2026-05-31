@@ -1,0 +1,46 @@
+{
+  "id": "sandia-1948",
+  "num": 5,
+  "name": "Sandia 'green orbs'",
+  "year_start": 1948,
+  "year_end": 1950,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 35.05,
+    "lng": -106.55,
+    "place": "Sandia Base, New Mexico"
+  },
+  "tier": "S",
+  "probability": 75,
+  "summary": "209 sightings sobre base nuclear AFSWP, oficial PURSUE R02",
+  "summary_en": "209 sightings over AFSWP nuclear base, official PURSUE R02",
+  "patterns": [
+    "8b",
+    "8f"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre diciembre de 1948 y abril de 1950, personal militar y científicos del Sandia Base, Los Alamos National Laboratory y Kirtland AFB reportaron sistemáticamente esferas verdes brillantes sobrevolando instalaciones nucleares clave del programa atómico estadounidense. La concentración geográfica y temporal de los reportes (209 casos en menos de 18 meses sobre el corredor Albuquerque-Los Alamos) era estadísticamente anómala.\n\nEl Armed Forces Special Weapons Project (AFSWP) — la entidad que custodiaba el arsenal nuclear estadounidense — solicitó al Dr. Lincoln La Paz, astrofísico de la Universidad de Nuevo México, una investigación formal. La Paz concluyó que las trayectorias y comportamientos no correspondían a meteoros bólidos. La USAF estableció el Project Twinkle (1949-1951) con telescopios e instrumentación dedicada para fotografiar los green fireballs. El proyecto no produjo imágenes claras pero documentó decenas de observaciones adicionales por personal instrumental.\n\nEl AARO designó este conjunto de eventos como caso oficial PURSUE R02 en su release de 2024, ratificando su validez documental y su patrón temporal-geográfico sobre infraestructura nuclear.",
+  "whyMatters": "Primera ola documentada de eventos UAP sostenidos sobre infraestructura nuclear estadounidense, con investigación científica institucionalmente patrocinada (La Paz + Twinkle) y reconocimiento institucional moderno (AARO PURSUE R02). Establece el patrón histórico nuclear que se repetiría en Malmstrom 1967, Rendlesham 1980 y dozens of subsequent cases — un sesgo selectivo difícil de explicar como interpretación errónea masiva.",
+  "evidence": [
+    "209 reportes catalogados AFSWP (diciembre 1948 - abril 1950)",
+    "Investigación La Paz (NM University) descartando origen meteorítico",
+    "Project Twinkle USAF (1949-1951) — primer proyecto formal instrumental sobre UAP",
+    "Designación AARO PURSUE R02 (2024) ratificando el corpus"
+  ],
+  "sources": [
+    {
+      "name": "Project Twinkle Final Report (1951)",
+      "url": "https://www.theblackvault.com/documentarchive/project-twinkle-final-report/"
+    },
+    {
+      "name": "AARO PURSUE R02 release (2024)",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "La Paz, L. — 'Green Fireballs of New Mexico' (LANL archive)",
+      "note": "Análisis astronómico contemporáneo"
+    }
+  ]
+}

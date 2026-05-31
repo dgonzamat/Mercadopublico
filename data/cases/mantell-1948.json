@@ -1,0 +1,44 @@
+{
+  "id": "mantell-1948",
+  "num": 4,
+  "name": "Mantell crash",
+  "year_start": 1948,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 37.0,
+    "lng": -85.5,
+    "place": "Kentucky"
+  },
+  "tier": "A",
+  "probability": 40,
+  "summary": "Caza F-51 vs objeto, piloto muere",
+  "summary_en": "F-51 fighter vs object, pilot dies",
+  "patterns": [
+    "8c"
+  ],
+  "category": "incident",
+  "whatHappened": "El 7 de enero de 1948, alrededor de las 13:20, control de Godman Field (Fort Knox, Kentucky) recibió reportes civiles y de patrulla estatal sobre un objeto brillante de gran tamaño visible al sur. La Tte. Carter Bashford lo confirmó visualmente desde la torre. Cuatro F-51 Mustang de la Kentucky Air National Guard que regresaban a base fueron desviados a investigar.\n\nEl Capitán Thomas Mantell, líder de vuelo, persiguió el objeto en ascenso por encima del techo operacional seguro del F-51 sin oxígeno. Reportó por radio: 'It appears to be a metallic object of tremendous size'. Continuó el ascenso hasta aproximadamente 25,000 pies, perdió conciencia por hipoxia y el F-51 entró en barrena no recuperable. Mantell murió en el impacto cerca de Franklin, Kentucky.\n\nProject Sign investigó. La explicación oficial inicial — el planeta Venus — fue descartada en años siguientes por el propio Project Blue Book. La hipótesis aceptada actualmente es un Skyhook balloon (red de globos de investigación de altísima altitud entonces clasificada SECRET), cuya trayectoria de aquel día es consistente con la persecución. Esto no fue confirmable por Project Sign en 1948 porque el programa Skyhook era ultra-secreto.",
+  "whyMatters": "Primer caso documentado de fatalidad militar estadounidense en persecución de un objeto no identificado. Estableció un precedente operacional inmediato — las USAF a partir de 1948 desincentivó persecuciones agresivas de objetos no identificados sin coordinación de mando. La explicación Skyhook posterior ilustra cómo programas clasificados contemporáneos pueden generar incidentes UAP genuinamente inexplicables para los testigos sin ser exóticos en origen.",
+  "evidence": [
+    "Reporte oficial Project Sign del accidente (enero 1948)",
+    "Transcripción radio de Mantell describiendo objeto metálico",
+    "Reconstrucción posterior identificando Skyhook como explicación más probable",
+    "Cierre administrativo de Blue Book consistente con esta explicación"
+  ],
+  "sources": [
+    {
+      "name": "Project Blue Book — Mantell case file",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "Ruppelt, E. — The Report on UFOs (1956)",
+      "note": "Ex-director Blue Book reconstruyó el caso"
+    },
+    {
+      "name": "Clark, J. — UFO Encyclopedia 3rd ed. (2018)",
+      "note": "Síntesis Skyhook + crítica"
+    }
+  ]
+}
