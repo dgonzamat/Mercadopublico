@@ -146,12 +146,13 @@
     "born": 1983,
     "section": "B",
     "section_label": "Insiders / whistleblowers",
-    "credentials": "Ex-US Navy F/A-18F pilot (10 años, VFA-11) + co-fundador Americans for Safe Aerospace + testimonio bajo juramento House Oversight julio 2023",
-    "bio_short": "Piloto Navy que reportó encuentros UAP diarios durante deployment 2014-2015 sobre el Atlantic Test Range (USS Theodore Roosevelt). Sus testimonios + datos ATFLIR son la base de los videos Nimitz/Gimbal/GoFast liberados vía TTSA. Co-fundó Americans for Safe Aerospace (2022) para protección legal a pilotos comerciales y militares que reportan UAP — única ONG dedicada al canal safe-reporting. Testimonio bajo juramento julio 2023 junto con Grusch y Fravor — primer piloto activo en testificar oficialmente sobre UAP en sesión congresional pública.",
+    "credentials": "Ex-US Navy F/A-18F pilot (10 años, VFA-11) + co-fundador Americans for Safe Aerospace + testimonio bajo juramento House Oversight julio 2023 + apariciones recurrentes en hearings y media mayo 2026 (contexto PURSUE R03)",
+    "bio_short": "Piloto Navy que reportó encuentros UAP diarios durante deployment 2014-2015 sobre el Atlantic Test Range (USS Theodore Roosevelt). Sus testimonios + datos ATFLIR son la base de los videos Nimitz/Gimbal/GoFast liberados vía TTSA. Co-fundó Americans for Safe Aerospace (2022) para protección legal a pilotos comerciales y militares que reportan UAP — única ONG dedicada al canal safe-reporting. Testimonio bajo juramento julio 2023 junto con Grusch y Fravor — primer piloto activo en testificar oficialmente sobre UAP en sesión congresional pública. Continúa apareciendo en hearings y media coverage durante mayo 2026 en respuesta a PURSUE R03; mantiene posición de que el riesgo real es para safety aerial, no especulación cosmológica.",
     "works": [
       { "year": 2022, "title": "Founding Americans for Safe Aerospace", "contribution": "Primera ONG dedicada a protección legal de pilotos reportando UAP" },
       { "year": 2023, "title": "Congressional Testimony (House Oversight, 26 julio)", "contribution": "Primer piloto activo en testificar bajo juramento sobre encuentros UAP" },
-      { "year": 2024, "title": "Encounters (memoir, Penguin)", "contribution": "Narrativa detallada de los encuentros sobre Atlantic Range + cultura de silencio en Navy aviation" }
+      { "year": 2024, "title": "Encounters (memoir, Penguin)", "contribution": "Narrativa detallada de los encuentros sobre Atlantic Range + cultura de silencio en Navy aviation" },
+      { "year": 2026, "title": "Apariciones públicas mayo 2026 (PURSUE R03 context)", "contribution": "Voz piloto activo en presión disclosure contemporánea + crítica a ambigüedad estratégica del OPM NDA" }
     ]
   },
   {
@@ -175,6 +176,32 @@
     "works": []
   },
   {
+    "id": "burlison",
+    "name": "Eric Burlison",
+    "born": 1976,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "credentials": "US Representative (R-MO) + House Oversight Committee + miembro Task Force on Declassification of Federal Secrets (UAP)",
+    "bio_short": "Republicano de Missouri, miembro activo del Task Force bipartisano de Luna sobre desclasificación UAP. Coautor de propuestas legislativas para forzar disclosure y proteger whistleblowers. Voz consistente en audiencias congresionales 2023-2026 — confrontacional con Pentagon stonewalling y crítico explícito de la propuesta OPM NDA (mayo 2026) por silenciar futuros whistleblowers federales.",
+    "works": [
+      { "year": 2024, "title": "Patrocinio UAP Disclosure Act amendments", "contribution": "Legislación para acelerar liberación de records UAP" },
+      { "year": 2026, "title": "Audiencias mayo 2026 (PURSUE R03)", "contribution": "Crítica explícita al OPM NDA como táctica de strategic ambiguity" }
+    ]
+  },
+  {
+    "id": "moskowitz",
+    "name": "Jared Moskowitz",
+    "born": 1980,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "credentials": "US Representative (D-FL) + Co-Chair Task Force on Declassification of Federal Secrets (UAP) + ex-Director FEMA Florida",
+    "bio_short": "Co-presidente demócrata del Task Force junto a Luna (R) — la disclosure UAP es uno de los pocos issues genuinamente bipartisanos del Congreso 119. Su rol institucionaliza que el push no es 'cosa de Republicanos' — protege el caucus contra accusations de partisan capture y mantiene viabilidad legislativa. Background en emergency management (FEMA) le da legitimidad técnica en discusiones de safety aerial vinculadas a UAP.",
+    "works": [
+      { "year": 2024, "title": "Co-fundación Task Force bipartisano", "contribution": "Estructura formal democrática-republicana para forzar UAP disclosure" },
+      { "year": 2026, "title": "Apariciones hearings PURSUE R03 (mayo)", "contribution": "Voz Demócrata en presión bipartisana sostenida durante release controversial" }
+    ]
+  },
+  {
     "id": "coulthart",
     "name": "Ross Coulthart",
     "born": 1963,
@@ -184,6 +211,38 @@
     "bio_short": "Reportó Grusch testimony primero (junio 2023). Mantiene rigor metodológico de verificación cruzada. Tras desaparición Gen. McCasland (mayo 2026) afirmó 'grave national security crisis'. Su figura institucionaliza disclosure journalism — no es contactee ni amateur.",
     "works": [
       { "year": 2021, "title": "In Plain Sight (book)", "contribution": "Caso Australia UAP investigaciones" }
+    ]
+  },
+  {
+    "id": "corbell",
+    "name": "Jeremy Corbell",
+    "born": 1976,
+    "section": "D",
+    "section_label": "Periodistas investigativos / Documentalistas",
+    "credentials": "Filmmaker + investigative journalist + colaborador estable George Knapp (KLAS-TV, Las Vegas) + canal YouTube/podcast 'Weaponized'",
+    "bio_short": "Documentalista que ha liberado varios de los videos UAP de mayor perfil — pirámide verde filmada por USS Russell (2019, liberado 2021), esferas transmedium de USS Omaha, video Hudson Valley. Su trabajo es polarizante: para algunos institucionaliza la evidencia visual militar para audiencia general, para otros sensacionaliza sin contexto suficiente. Colaboración sostenida con George Knapp (periodista veterano UAP de Las Vegas) da credenciales mainstream-adyacentes. Documentales: 'Patient Seventeen', 'Hunt for the Skinwalker', 'Bob Lazar: Area 51 & Flying Saucers'.",
+    "works": [
+      { "year": 2015, "title": "Patient Seventeen (documentary)", "contribution": "Cirugía de extracción de implante UAP supuesto" },
+      { "year": 2018, "title": "Hunt for the Skinwalker (documentary)", "contribution": "AAWSAP/Skinwalker Ranch en formato accesible" },
+      { "year": 2018, "title": "Bob Lazar: Area 51 & Flying Saucers (documentary)", "contribution": "Reactivación pública narrativa Lazar para audiencia Netflix-era" },
+      { "year": 2021, "title": "Pyramid video release (USS Russell)", "contribution": "Liberación pública de filmación Navy 2019 — verificada por Pentagon como auténtica" },
+      { "year": 2021, "title": "Transmedium spheres release (USS Omaha)", "contribution": "Video Navy de esferas saliendo/entrando del océano — caso transmedium" }
+    ]
+  },
+  {
+    "id": "michels",
+    "name": "Jesse Michels",
+    "born": 1991,
+    "section": "D",
+    "section_label": "Periodistas investigativos",
+    "credentials": "Stanford + ex-Thiel Capital + host 'American Alchemy' (podcast/YouTube long-form) + investigative interviewer independiente",
+    "bio_short": "Investigador-entrevistador con metodología serie-larga. Entrevistas extensas multi-hora con Vallée, Nolan, Grusch, Karl Nell, James Fox, Lue Elizondo, Hal Puthoff, Eric Davis. Su rol no es originar reporting de casos nuevos sino conectar y contextualizar el ecosystem disclosure para audiencia técnica/Silicon Valley-adyacente. Calidad de preguntas + acceso a figuras Tier 1 + background analítico (ex-Thiel Capital, Stanford) lo distingue del UFO media commodity. Centro de gravedad: amplifica narrativas que conectan UAP con biotech, breakaway civilization, programas SAP, y consciousness studies.",
+    "works": [
+      { "year": 2020, "title": "Founding 'American Alchemy' podcast", "contribution": "Plataforma long-form para figuras Tier 1 UAP / consciousness / fringe science" },
+      { "year": 2023, "title": "Karl Nell interview series", "contribution": "Ex-Pentagon official sobre programa SAP de retrieved craft" },
+      { "year": 2024, "title": "Jacques Vallée interview series", "contribution": "Conversación multi-hora sobre Control System Hypothesis y casework forense" },
+      { "year": 2024, "title": "Garry Nolan interview series", "contribution": "Profundización en análisis MIBI + brain scans de witnesses" },
+      { "year": 2025, "title": "James Fox + Joe Murgia investigations", "contribution": "Amplificación de casos contactee tier evaluados con escepticismo metodológico" }
     ]
   },
   {
