@@ -141,6 +141,20 @@
     ]
   },
   {
+    "id": "graves",
+    "name": "Ryan Graves",
+    "born": 1983,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers",
+    "credentials": "Ex-US Navy F/A-18F pilot (10 años, VFA-11) + co-fundador Americans for Safe Aerospace + testimonio bajo juramento House Oversight julio 2023",
+    "bio_short": "Piloto Navy que reportó encuentros UAP diarios durante deployment 2014-2015 sobre el Atlantic Test Range (USS Theodore Roosevelt). Sus testimonios + datos ATFLIR son la base de los videos Nimitz/Gimbal/GoFast liberados vía TTSA. Co-fundó Americans for Safe Aerospace (2022) para protección legal a pilotos comerciales y militares que reportan UAP — única ONG dedicada al canal safe-reporting. Testimonio bajo juramento julio 2023 junto con Grusch y Fravor — primer piloto activo en testificar oficialmente sobre UAP en sesión congresional pública.",
+    "works": [
+      { "year": 2022, "title": "Founding Americans for Safe Aerospace", "contribution": "Primera ONG dedicada a protección legal de pilotos reportando UAP" },
+      { "year": 2023, "title": "Congressional Testimony (House Oversight, 26 julio)", "contribution": "Primer piloto activo en testificar bajo juramento sobre encuentros UAP" },
+      { "year": 2024, "title": "Encounters (memoir, Penguin)", "contribution": "Narrativa detallada de los encuentros sobre Atlantic Range + cultura de silencio en Navy aviation" }
+    ]
+  },
+  {
     "id": "luna",
     "name": "Anna Paulina Luna",
     "born": 1989,
