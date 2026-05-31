@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
 import { TierBadge, CategoryBadge } from "@/components/Badge";
+import { Eyebrow, H1, Lede, Body, Caption } from "@/lib/typography";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
@@ -14,11 +15,17 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return { title: `${c.name} · UAP Atlas`, description: c.summary };
 }
 
-export default function CaseDetailPage({ params }: { params: { slug: string } }) {
+export default function CaseDetailPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const c = cases.find((x) => x.id === params.slug);
   if (!c) notFound();
 
-  const year = c.year_end ? `${c.year_start}–${c.year_end}` : c.year_start.toString();
+  const year = c.year_end
+    ? `${c.year_start}–${c.year_end}`
+    : c.year_start.toString();
 
   const casePatterns = c.patterns
     .map((id) => getPattern(id))
@@ -40,146 +47,186 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
     .sort((a, b) => b.score - a.score)
     .slice(0, 5);
 
-  const hasRichContent = Boolean(
-    c.whatHappened || c.whyMatters || (c.evidence && c.evidence.length > 0) || (c.sources && c.sources.length > 0),
-  );
+  const hasNarrative = Boolean(c.whatHappened || c.whyMatters);
+  const hasEvidence = Boolean(c.evidence && c.evidence.length > 0);
+  const hasSources = Boolean(c.sources && c.sources.length > 0);
+  const hasRichContent = hasNarrative || hasEvidence || hasSources;
 
   return (
-    <article className="mx-auto max-w-3xl space-y-8">
-      <Link href="/cases" className="text-sm text-muted hover:text-accent">
+    <article className="mx-auto max-w-3xl space-y-12 py-4">
+      <Link
+        href="/cases"
+        className="inline-block text-sm text-muted hover:text-accent"
+      >
         ← Volver a casos
       </Link>
 
-      <header>
-        <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          Caso #{c.num} · {year} · {c.country_name}
-        </p>
-        <h1 className="mt-2 text-3xl font-bold text-text">
-          <span aria-hidden className="mr-2">{c.flag}</span>
-          {c.name}
-        </h1>
-
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <TierBadge tier={c.tier} />
-          <div className="rounded-md border border-border bg-panel px-3 py-1">
-            <span className="font-mono text-sm font-bold text-text">{c.probability}%</span>
-            <span className="ml-2 text-xs text-muted">probabilidad</span>
-          </div>
-          <CategoryBadge category={c.category} />
+      {/* ──────────────────────── ZONE A — IDENTIFICATION ──────────────────────── */}
+      <header className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">
+        <div className="space-y-4">
+          <Eyebrow>
+            Caso #{c.num} · {year} · {c.country_name}
+          </Eyebrow>
+          <H1>
+            <span aria-hidden className="mr-3">
+              {c.flag}
+            </span>
+            <span className="sr-only">{c.country_name}.</span>
+            {c.name}
+          </H1>
+          <Lede className="text-text">{c.summary}</Lede>
+          {c.summary_en && (
+            <p className="text-sm italic text-muted">{c.summary_en}</p>
+          )}
         </div>
 
-        <p className="mt-3 text-xs text-muted">{TIER_META[c.tier].description}</p>
+        <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-border pt-4">
+          <TierBadge tier={c.tier} />
+          <CategoryBadge category={c.category} />
+          <div className="ml-auto flex items-baseline gap-2 font-mono">
+            <span className="text-2xl font-semibold tabular-nums text-text">
+              {c.probability}
+            </span>
+            <span className="text-sm text-muted">% probabilidad</span>
+          </div>
+        </div>
+
+        <Caption className="mt-3">{TIER_META[c.tier].description}</Caption>
       </header>
 
-      <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Resumen</h2>
-        <p className="mt-2 text-text">{c.summary}</p>
-        {c.summary_en && (<p className="mt-2 text-sm italic text-muted">{c.summary_en}</p>)}
-      </section>
+      {/* ──────────────────────── ZONE B — NARRATIVE ───────────────────────────── */}
+      {hasNarrative && (
+        <section className="space-y-8">
+          {c.whatHappened && (
+            <div className="space-y-4">
+              <Eyebrow>Qué pasó</Eyebrow>
+              <div className="space-y-4">
+                {c.whatHappened.split("\n\n").map((para, i) => (
+                  <Body key={i}>{para}</Body>
+                ))}
+              </div>
+            </div>
+          )}
 
-      {c.whatHappened && (
-        <section>
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Qué pasó</h2>
-          <div className="mt-2 space-y-3 text-text">
-            {c.whatHappened.split("\n\n").map((para, i) => (
-              <p key={i}>{para}</p>
-            ))}
+          {c.whyMatters && (
+            <div className="space-y-4">
+              <Eyebrow>Por qué importa</Eyebrow>
+              <Body>{c.whyMatters}</Body>
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* ──────────────────────── ZONE C — APPARATUS ───────────────────────────── */}
+      <section className="space-y-10 border-t border-border pt-10">
+        {(hasEvidence || hasSources) && (
+          <div className="grid gap-10 md:grid-cols-2">
+            {hasEvidence && (
+              <div className="space-y-3">
+                <Eyebrow>Evidencia documentada</Eyebrow>
+                <ol className="space-y-2">
+                  {c.evidence!.map((item, i) => (
+                    <li
+                      key={i}
+                      className="grid grid-cols-[1.5rem_1fr] gap-2 text-sm text-text"
+                    >
+                      <span
+                        aria-hidden
+                        className="font-mono text-xs tabular-nums text-muted"
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
+
+            {hasSources && (
+              <div className="space-y-3">
+                <Eyebrow>Fuentes</Eyebrow>
+                <ol className="space-y-2">
+                  {c.sources!.map((s, i) => (
+                    <li
+                      key={i}
+                      className="grid grid-cols-[1.5rem_1fr] gap-2 text-sm"
+                    >
+                      <span
+                        aria-hidden
+                        className="font-mono text-xs tabular-nums text-muted"
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span>
+                        {s.url ? (
+                          <a
+                            href={s.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent hover:underline"
+                          >
+                            {s.name} <span aria-hidden>↗</span>
+                          </a>
+                        ) : (
+                          <span className="text-text">{s.name}</span>
+                        )}
+                        {s.note && (
+                          <span className="text-muted"> — {s.note}</span>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
           </div>
-        </section>
-      )}
+        )}
 
-      {c.whyMatters && (
-        <section>
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Por qué importa</h2>
-          <p className="mt-2 text-text">{c.whyMatters}</p>
-        </section>
-      )}
-
-      {c.evidence && c.evidence.length > 0 && (
-        <section>
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Evidencia documentada</h2>
-          <ul className="mt-2 space-y-2">
-            {c.evidence.map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-text">
-                <span aria-hidden className="mt-0.5 font-mono text-accent">·</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Ubicación</h2>
-        <p className="mt-2 text-text">{c.location.place || c.country_name}</p>
-        <p className="font-mono text-xs text-muted">
-          {c.location.lat.toFixed(2)}°, {c.location.lng.toFixed(2)}°
-        </p>
-      </section>
-
-      {casePatterns.length > 0 && (
-        <section>
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-            Patrones que exhibe
-          </h2>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {casePatterns.map((p) => (
-              <Link
-                key={p.id}
-                href={`/patterns/${p.letter}`}
-                className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50"
-                style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
-                title={p.description}
-              >
-                <span className="font-mono text-accent">{p.id}</span>{" "}
-                <span className="text-text">{p.name}</span>
-              </Link>
-            ))}
+        {casePatterns.length > 0 && (
+          <div className="space-y-3">
+            <Eyebrow>Patrones que exhibe ({casePatterns.length})</Eyebrow>
+            <div className="flex flex-wrap gap-2">
+              {casePatterns.map((p) => (
+                <Link
+                  key={p.id}
+                  href={`/patterns/${p.letter}`}
+                  className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50"
+                  style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
+                  title={p.description}
+                >
+                  <span className="font-mono text-accent">{p.id}</span>{" "}
+                  <span className="ml-2 text-text">{p.name}</span>
+                </Link>
+              ))}
+            </div>
           </div>
-        </section>
-      )}
+        )}
 
-      {c.sources && c.sources.length > 0 && (
-        <section>
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Fuentes</h2>
-          <ul className="mt-2 space-y-2">
-            {c.sources.map((s, i) => (
-              <li key={i} className="text-sm">
-                {s.url ? (
-                  <a
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent hover:underline"
-                  >
-                    {s.name}
-                  </a>
-                ) : (
-                  <span className="text-text">{s.name}</span>
-                )}
-                {s.note && <span className="ml-1 text-muted"> — {s.note}</span>}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {!hasRichContent && (
-        <section className="rounded-md border border-border bg-panel p-4 text-sm text-muted">
-          <p>
-            <strong className="text-text">⏳ Caso pendiente de explicación detallada.</strong>{" "}
-            Este caso aún no tiene narrativa, evidencia ni fuentes documentadas — solo el resumen
-            de arriba. Estamos expandiendo gradualmente los {TOTAL_CASES} casos del corpus.
+        <div className="space-y-2">
+          <Eyebrow>Ubicación</Eyebrow>
+          <p className="text-sm text-text">
+            {c.location.place || c.country_name}{" "}
+            <span className="font-mono text-xs text-muted">
+              · {c.location.lat.toFixed(2)}°, {c.location.lng.toFixed(2)}°
+            </span>
           </p>
-        </section>
-      )}
+        </div>
 
+        {!hasRichContent && (
+          <Caption className="italic">
+            Caso pendiente de explicación detallada — solo el resumen de arriba
+            está documentado. Expandimos gradualmente los {TOTAL_CASES} casos
+            del corpus.
+          </Caption>
+        )}
+      </section>
+
+      {/* ──────────────────────── RELATED CASES ────────────────────────────────── */}
       {similar.length > 0 && (
-        <section>
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-            Casos relacionados
-          </h2>
-          <div className="mt-3 grid gap-2">
+        <section className="space-y-3 border-t border-border pt-10">
+          <Eyebrow>Casos relacionados</Eyebrow>
+          <div className="grid gap-2">
             {similar.map((s) => {
               const reason = [
                 s.sameCountry ? "mismo país" : null,
@@ -193,19 +240,23 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
                 <Link
                   key={s.caseData.id}
                   href={`/cases/${s.caseData.id}`}
-                  className="block rounded border border-border bg-panel px-3 py-2 text-sm transition hover:border-accent/50"
+                  className="block rounded border border-border bg-panel px-4 py-3 text-sm transition hover:border-accent/50"
                 >
                   <div className="flex items-center justify-between gap-3">
                     <span className="min-w-0 truncate">
-                      <span aria-hidden className="mr-2">{s.caseData.flag}</span>
-                      <span className="sr-only">{s.caseData.country_name}.</span>
+                      <span aria-hidden className="mr-2">
+                        {s.caseData.flag}
+                      </span>
+                      <span className="sr-only">
+                        {s.caseData.country_name}.
+                      </span>
                       <span className="text-text">{s.caseData.name}</span>
-                      <span className="ml-2 font-mono text-xs text-muted">
+                      <span className="ml-2 font-mono text-xs tabular-nums text-muted">
                         {s.caseData.year_start}
                       </span>
                     </span>
                     <span className="shrink-0 font-mono text-xs text-muted">
-                      Tier {s.caseData.tier} · {s.caseData.probability}%
+                      {s.caseData.tier} · {s.caseData.probability}%
                     </span>
                   </div>
                   {reason && (
