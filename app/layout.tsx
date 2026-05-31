@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MobileNav } from "@/components/MobileNav";
+import { TOTAL_CASES } from "@/lib/data";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "UAP Atlas — Análisis institucional",
   description:
-    "Qué tan probable es cada hipótesis sobre UAP. 51 casos institucionales documentados desde 1947, probabilidad expresada como juicio analítico calibrado ICD-203.",
+    `79 años del fenómeno UAP documentados institucionalmente. ${TOTAL_CASES} casos, 18 patrones, 11 frameworks comparados.`,
   openGraph: {
     title: "UAP Atlas — Análisis institucional",
-    description: "Probabilidades por hipótesis (ICD-203) sobre 51 casos UAP.",
+    description: `79 años de fenómeno UAP, ${TOTAL_CASES} casos, 18 patrones.`,
     type: "website",
   },
 };
@@ -23,10 +24,7 @@ export default function RootLayout({
     <html lang="es">
       <body className="min-h-screen">
         <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
-          <nav
-            className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3"
-            aria-label="Principal"
-          >
+          <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
             <Link href="/" className="font-mono text-sm tracking-tight text-text">
               <span className="text-accent">▲</span> UAP Atlas
             </Link>
@@ -47,14 +45,7 @@ export default function RootLayout({
         <footer className="border-t border-border py-8 text-center text-xs text-muted">
           <p>
             UAP Atlas · análisis institucional · corpus open source ·{" "}
-            <a
-              href="https://github.com/dgonzamat/mercadopublico"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:underline"
-            >
-              github
-            </a>
+            <a href="https://github.com/dgonzamat/mercadopublico" className="text-accent hover:underline">github</a>
           </p>
         </footer>
       </body>
