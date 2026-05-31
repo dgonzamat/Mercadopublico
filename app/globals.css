@@ -14,6 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -57,4 +61,15 @@ a {
 .prose-editorial sup a {
   color: #7fdbff;
   text-decoration: none;
+}
+
+/* Full-bleed: break out of a constrained parent and span the viewport.
+   Used on home for inverted dark blocks and edge-to-edge visualizations. */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
