@@ -32,6 +32,35 @@
     ]
   },
   {
+    "id": "thaller",
+    "name": "Michelle Thaller",
+    "born": 1969,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD astrofísica Georgia State + Assistant Director for Science Communication, NASA Goddard Space Flight Center + co-host Discovery 'How the Universe Works'",
+    "framework": "plurality",
+    "bio_short": "Astrónoma NASA Goddard que ha planteado públicamente la hipótesis 'vida alienígena ya está aquí pero usa química exótica'. Su argumento: si la astrobiología prevé vida basada en silicio, azufre o ambientes ácidos (Venus, Titán), nuestra detección está sesgada a buscar firmas carbono-agua-oxígeno terrestres — y podemos estar literalmente rodeados de evidencia que no reconocemos. No afirma haber detectado UAP específicos; cuestiona el framework de detección mismo. Importancia institucional: única científica activa en NASA en niveles de dirección que sostiene públicamente esta posición, sin renunciar a su rol académico.",
+    "works": [
+      { "year": 2018, "title": "Aliens may already be among us — public talks", "contribution": "Hipótesis de bias de detección basado en química terrestre" },
+      { "year": 2020, "title": "How the Universe Works (Discovery, multiple seasons)", "contribution": "Comunicación científica mainstream con framework astrobiológico abierto" },
+      { "year": 2024, "title": "Public interviews on UAP context", "contribution": "Posición pública desde NASA Goddard sobre por qué la detección de vida puede haber fallado" }
+    ]
+  },
+  {
+    "id": "cote",
+    "name": "Andrew Coté",
+    "born": 1990,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "Físico (PhD-track) + ex-investigador fusión nuclear + co-investigador Skywatcher Project + analista cuantitativo de video UAP",
+    "bio_short": "Físico que aporta análisis matemático cuantitativo a videos UAP — extracción de trayectorias, cálculo de aceleraciones, evaluación de hipótesis convencionales (paralaje, artefactos sensor). Forma parte del Skywatcher Project (Jake Barber et al.) — esfuerzo de observación sistemática para detectar UAPs in situ con protocolo replicable. Su rol institucional emergente es proveer el rigor cuantitativo que falta en la mayoría del UFO discourse: en vez de testimonios, calcula. Background en fusión nuclear le da credenciales física dura.",
+    "works": [
+      { "year": 2023, "title": "Análisis FLIR Gimbal/GoFast", "contribution": "Cuantificación matemática de las aceleraciones reportadas para evaluar artefacto vs señal" },
+      { "year": 2024, "title": "Skywatcher Project participation", "contribution": "Co-investigador en protocolo observacional sistemático UAP" },
+      { "year": 2025, "title": "Apariciones podcast (Rogan, Michels)", "contribution": "Comunicación pública del análisis cuantitativo accesible" }
+    ]
+  },
+  {
     "id": "hynek",
     "name": "J. Allen Hynek",
     "born": 1910,
