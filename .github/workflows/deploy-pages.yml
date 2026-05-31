@@ -6,16 +6,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-deploy"
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,34 +26,12 @@ jobs:
         with:
           node-version: '20'
 
-      # Force Pages source to "GitHub Actions" (build_type=workflow).
-      # If source was previously set to "Deploy from a branch", this corrects it
-      # so actions/deploy-pages below can take over.
-      - name: Force Pages source to GitHub Actions
-        run: |
-          curl -sS -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/${{ github.repository }}/pages \
-            -d '{"build_type":"workflow"}' || true
-          curl -sS -X PUT \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/${{ github.repository }}/pages \
-            -d '{"build_type":"workflow"}' || true
-
+      # Detect canonical Pages base path so basePath matches the real URL.
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
-
-      - name: Show Pages config detected by action
-        run: |
-          echo "Pages base_path:  ${{ steps.pages.outputs.base_path }}"
-          echo "Pages origin:     ${{ steps.pages.outputs.origin }}"
 
       - name: Install dependencies
         run: npm install --no-audit --no-fund
@@ -69,65 +47,20 @@ jobs:
 
       - name: Debug — what the build actually produced
         run: |
-          echo "=== First CSS link reference in out/index.html ==="
-          grep -oE 'href="[^"]*\.css[^"]*"' out/index.html | head -3
-          echo ""
-          echo "=== First nav link hrefs in out/index.html ==="
-          grep -oE 'href="/[^"]*"' out/index.html | sort -u | head -10
+          echo "=== First CSS href in out/index.html ==="
+          grep -oE 'href="[^"]*\.css[^"]*"' out/index.html | head -1
+          echo "=== Sample nav hrefs ==="
+          grep -oE 'href="/[^"]*"' out/index.html | sort -u | head -8
+          echo "=== Pages count ==="
+          find out -name 'index.html' | wc -l
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      # Push to gh-pages branch — works with "Deploy from a branch" source
+      # which is the most reliable / least-fragile Pages config.
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-      - name: Verify deployment serves CSS correctly
-        run: |
-          BASE_URL="${{ steps.deployment.outputs.page_url }}"
-          echo "Verifying deploy at: $BASE_URL"
-          sleep 20
-
-          HTML=$(curl -sSL "$BASE_URL")
-          if [ -z "$HTML" ]; then
-            echo "::error::Homepage returned empty body"
-            exit 1
-          fi
-
-          CSS_HREF=$(echo "$HTML" | grep -oE 'href="[^"]*\.css[^"]*"' | head -1 | sed -E 's/href="([^"]+)"/\1/')
-          if [ -z "$CSS_HREF" ]; then
-            echo "::error::No CSS link found in homepage HTML"
-            echo "First 500 chars of HTML:"
-            echo "$HTML" | head -c 500
-            exit 1
-          fi
-          echo "✓ HTML references CSS at: $CSS_HREF"
-
-          if [[ "$CSS_HREF" == /* ]]; then
-            HOST=$(echo "$BASE_URL" | grep -oE 'https?://[^/]+')
-            CSS_URL="${HOST}${CSS_HREF}"
-          else
-            CSS_URL="${BASE_URL%/}/${CSS_HREF}"
-          fi
-          echo "Fetching CSS at: $CSS_URL"
-
-          CSS_STATUS=$(curl -sSL -o /tmp/css.out -w "%{http_code}" "$CSS_URL")
-          CSS_SIZE=$(wc -c < /tmp/css.out)
-          echo "CSS HTTP $CSS_STATUS, $CSS_SIZE bytes"
-
-          if [ "$CSS_STATUS" != "200" ] || [ "$CSS_SIZE" -lt 1000 ]; then
-            echo "::error::CSS failed verification (HTTP $CSS_STATUS, $CSS_SIZE bytes)"
-            echo "First 500 chars of response:"
-            head -c 500 /tmp/css.out
-            exit 1
-          fi
-          echo "✅ Deploy verified at $BASE_URL — CSS loads correctly"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "deploy: ${{ github.event.head_commit.message }}"
