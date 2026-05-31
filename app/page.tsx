@@ -50,37 +50,63 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────── LA TESIS — una sola respuesta visible ────────── */}
+      {/* ────────── LA TESIS — explicada en lenguaje claro ────────── */}
       <section className="full-bleed bg-text py-32 text-bg md:py-48">
         <div className="mx-auto max-w-6xl space-y-16 px-4">
-          <div className="space-y-4">
+          <div className="space-y-6">
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-              La respuesta principal
+              La respuesta del corpus
             </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
-              "El corpus apoya{" "}
-              <span className="text-accent">pluralidad de inteligencias</span>{" "}
-              — probablemente son varios fenómenos distintos, no uno solo."
+              Los UAP{" "}
+              <span className="text-accent italic">
+                no son una sola cosa
+              </span>{" "}
+              — son varios fenómenos distintos mezclados bajo la misma
+              etiqueta.
             </h2>
+            <p className="max-w-3xl font-display text-xl leading-snug text-bg/80 md:text-2xl">
+              Probablemente parte son programas militares clasificados, parte
+              fenómenos naturales raros, parte algo no humano que aún no
+              entendemos, parte identificaciones equivocadas. Una sola
+              explicación no encaja en los {cases.length} casos.
+            </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
-            <div className="space-y-2">
-              <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-                {mainHypothesis.icd.label} · {mainHypothesis.icd.min}–
-                {mainHypothesis.icd.max}%
-              </p>
-              <p className="font-display text-2xl leading-snug text-bg md:text-3xl">
-                Las otras 5 hipótesis son <em>improbables</em> según ICD-203,
-                pero el corpus las documenta para que puedas auditarlas.
-              </p>
-            </div>
+          <div className="grid gap-px bg-bg/15 md:grid-cols-4">
+            <CategoryFact
+              eyebrow="48%"
+              label="Pluralidad"
+              desc="Son varias cosas, no una"
+            />
+            <CategoryFact
+              eyebrow="15%"
+              label="Interdimensional"
+              desc="Otras dimensiones, no otros planetas"
+            />
+            <CategoryFact
+              eyebrow="12%"
+              label="Natural"
+              desc="Plasma, sprites, ionización"
+            />
+            <CategoryFact
+              eyebrow="11+8+6%"
+              label="Otras 3"
+              desc="Clasificado · Greys · Psicoespiritual"
+            />
+          </div>
+
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/probabilidades"
-              className="inline-flex min-h-[48px] items-center self-start whitespace-nowrap border-2 border-accent bg-accent px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-accent md:self-end"
+              className="inline-flex min-h-[48px] items-center whitespace-nowrap bg-accent px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-text"
             >
-              Ver las 6 hipótesis →
+              Ver las 6 hipótesis con su razonamiento →
             </Link>
+            <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+              {mainHypothesis.icd.label} ({mainHypothesis.icd.min}–
+              {mainHypothesis.icd.max}%) según ICD-203
+            </p>
           </div>
         </div>
       </section>
@@ -143,6 +169,28 @@ export default function HomePage() {
           />
         </div>
       </section>
+    </div>
+  );
+}
+
+function CategoryFact({
+  eyebrow,
+  label,
+  desc,
+}: {
+  eyebrow: string;
+  label: string;
+  desc: string;
+}) {
+  return (
+    <div className="space-y-2 bg-text p-6">
+      <p className="font-mono text-xs uppercase tracking-widest text-accent">
+        {eyebrow}
+      </p>
+      <p className="font-display text-2xl font-medium leading-tight text-bg md:text-3xl">
+        {label}
+      </p>
+      <p className="text-sm leading-snug text-bg/70">{desc}</p>
     </div>
   );
 }

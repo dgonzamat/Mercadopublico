@@ -17,15 +17,27 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 /**
  * Extract the longest quoted phrase from a body of prose, to render
  * as a pull-quote. Returns null if no suitable quote (30–240 chars).
- * Heuristic only — sources we control use quotes for meaningful citations.
+ *
+ * The corpus uses single quotes (') for technical terms ('Anomalous Aerial
+ * Vehicles', 'flying disc') and double quotes (" " or curly "") for actual
+ * citations. We accept both — heuristic only.
  */
 function findPullQuote(text?: string): string | null {
   if (!text) return null;
-  const matches = Array.from(text.matchAll(/[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g));
-  if (matches.length === 0) return null;
-  const quotes = matches.map((m) => m[1] ?? m[2]).filter(Boolean);
-  quotes.sort((a, b) => b.length - a.length);
-  return quotes[0] ?? null;
+  const patterns = [
+    /[""]([^""]{30,240})[""]|"([^"]{30,240})"/g,
+    /''([^']{30,240})''|'([^']{30,240})'/g,
+  ];
+  const all: string[] = [];
+  for (const re of patterns) {
+    for (const m of text.matchAll(re)) {
+      const q = m[1] ?? m[2];
+      if (q) all.push(q);
+    }
+  }
+  if (all.length === 0) return null;
+  all.sort((a, b) => b.length - a.length);
+  return all[0];
 }
 
 export default function CaseDetailPage({

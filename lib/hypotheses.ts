@@ -21,10 +21,10 @@ export interface Hypothesis {
 const RAW: Array<Omit<Hypothesis, "icd">> = [
   {
     id: "pluralidad",
-    label: "Pluralidad de inteligencias",
+    label: "Son varias cosas distintas, no una sola",
     corpusPct: 48,
     color: "#c41e3a",
-    note: "Múltiples fuentes distintas mezcladas — no es UN solo fenómeno",
+    note: "Programas militares + fenómenos naturales + algo no humano + identificaciones erradas, mezclados bajo la misma etiqueta 'UAP'",
   },
   {
     id: "interdimensional",
