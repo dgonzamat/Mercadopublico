@@ -44,20 +44,35 @@ export default function RootLayout({
             >
               <span className="text-accent">▲</span> UAP Atlas
             </Link>
-            <div className="hidden gap-5 text-sm text-muted sm:flex">
-              <Link href="/cases" className="hover:text-text">
+            <div className="hidden gap-6 text-sm font-medium text-text sm:flex">
+              <Link
+                href="/cases"
+                className="hover:text-accent hover:underline hover:underline-offset-4"
+              >
                 Casos
               </Link>
-              <Link href="/probabilidades" className="hover:text-text">
+              <Link
+                href="/probabilidades"
+                className="hover:text-accent hover:underline hover:underline-offset-4"
+              >
                 Probabilidades
               </Link>
-              <Link href="/atlas" className="hover:text-text">
+              <Link
+                href="/atlas"
+                className="hover:text-accent hover:underline hover:underline-offset-4"
+              >
                 Atlas
               </Link>
-              <Link href="/about" className="hover:text-text">
+              <Link
+                href="/about"
+                className="hover:text-accent hover:underline hover:underline-offset-4"
+              >
                 Metodología
               </Link>
-              <Link href="/resumen" className="hover:text-text">
+              <Link
+                href="/resumen"
+                className="hover:text-accent hover:underline hover:underline-offset-4"
+              >
                 Resumen
               </Link>
             </div>
