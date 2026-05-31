@@ -198,6 +198,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
                   <div className="flex items-center justify-between gap-3">
                     <span className="min-w-0 truncate">
                       <span aria-hidden className="mr-2">{s.caseData.flag}</span>
+                      <span className="sr-only">{s.caseData.country_name}.</span>
                       <span className="text-text">{s.caseData.name}</span>
                       <span className="ml-2 font-mono text-xs text-muted">
                         {s.caseData.year_start}

@@ -178,6 +178,7 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
                 className="inline-flex min-h-[44px] items-center rounded px-2 py-1 text-xs text-text hover:bg-panel"
               >
                 <span aria-hidden className="mr-1">{c.flag}</span>
+                <span className="sr-only">{c.country_name}.</span>
                 <span>{c.name}</span>
                 <span className="ml-1 font-mono text-muted">· {c.year_start}</span>
               </Link>
