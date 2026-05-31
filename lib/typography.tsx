@@ -40,7 +40,7 @@ export function H1({ children, className, id }: Props) {
     <h1
       id={id}
       className={cx(
-        "font-display text-3xl leading-tight tracking-tight text-text md:text-4xl",
+        "font-display text-4xl font-medium leading-[1.1] tracking-tight text-text md:text-5xl lg:text-6xl",
         className,
       )}
     >
@@ -55,7 +55,7 @@ export function H2({ children, className, id }: Props) {
     <h2
       id={id}
       className={cx(
-        "font-display text-2xl leading-snug tracking-tight text-text",
+        "font-display text-2xl font-medium leading-snug tracking-tight text-text md:text-3xl",
         className,
       )}
     >

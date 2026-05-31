@@ -10,8 +10,6 @@ html,
 body {
   background-color: #0a0a0f;
   color: #e5e5ee;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
