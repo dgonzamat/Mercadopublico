@@ -43,42 +43,44 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="min-h-screen font-sans">
-        <header className="sticky top-0 z-50 border-b-2 border-text bg-bg/95 backdrop-blur">
+        <header className="sticky top-0 z-50 border-b-4 border-text bg-bg">
           <nav
             aria-label="Navegación principal"
-            className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3"
+            className="mx-auto flex max-w-6xl items-stretch justify-between gap-0 px-4 sm:px-6"
           >
             <Link
               href="/"
-              className="group flex items-baseline gap-2 text-text"
+              className="group flex items-center gap-3 py-5 text-text"
               aria-label="UAP Atlas — inicio"
             >
               <span
                 aria-hidden
-                className="font-mono text-base leading-none text-accent transition group-hover:rotate-180"
+                className="inline-flex h-8 w-8 items-center justify-center bg-accent text-bg transition group-hover:rotate-180"
               >
-                ▲
+                <span className="font-mono text-sm leading-none">▲</span>
               </span>
-              <span className="font-display text-xl font-medium tracking-tight md:text-2xl">
-                UAP <span className="italic text-accent">Atlas</span>
+              <span className="font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
+                UAP
+                <span className="ml-1 italic text-accent">Atlas</span>
               </span>
             </Link>
 
-            <div className="hidden items-center gap-7 sm:flex">
+            <div className="hidden items-stretch sm:flex">
               {SECONDARY_NAV.map((l) => (
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="text-sm font-medium text-text underline-offset-8 hover:text-accent hover:underline"
+                  className="inline-flex items-center border-l border-text/15 px-4 font-display text-base font-medium text-text hover:bg-text hover:text-bg md:text-lg"
                 >
                   {l.label}
                 </Link>
               ))}
               <Link
                 href="/probabilidades"
-                className="inline-flex min-h-[40px] items-center rounded-none bg-accent px-4 py-1.5 text-sm font-medium text-bg hover:bg-text"
+                className="inline-flex items-center gap-2 border-l-4 border-text bg-accent px-6 font-display text-base font-medium text-bg hover:bg-text md:text-lg"
               >
-                Ver probabilidades →
+                Ver probabilidades
+                <span aria-hidden>→</span>
               </Link>
             </div>
 
