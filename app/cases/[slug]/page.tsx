@@ -1,27 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cases, getPattern } from "@/lib/data";
-
-// Static class strings — Tailwind JIT can't tokenize template-interpolated classes.
-// Without this, `border-${tierColor}/40` produces no CSS and the tier badge renders unstyled.
-const TIER_BADGE: Record<"S" | "A" | "B", string> = {
-  S: "border-tierS/40 bg-tierS/10 text-tierS",
-  A: "border-tierA/40 bg-tierA/10 text-tierA",
-  B: "border-tierB/40 bg-tierB/10 text-tierB",
-};
-
-const TIER_DESCRIPTION: Record<"S" | "A" | "B", string> = {
-  S: "Militar + sensor + multi-witness (75–88% confianza)",
-  A: "Institucional civil o multi-witness verificable (65–85%)",
-  B: "Folklórico, persistencia local, recurrente (50–65%)",
-};
-
-const CATEGORY_LABEL: Record<string, { icon: string; label: string }> = {
-  document: { icon: "📄", label: "Documento" },
-  incident: { icon: "👁", label: "Incidente" },
-  contactee: { icon: "🧑", label: "Contactee" },
-  crop_circle: { icon: "🌾", label: "Crop circle" },
-};
+import { TIER_META } from "@/lib/ui";
+import { TierBadge, CategoryBadge } from "@/components/Badge";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
@@ -38,7 +19,6 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
   if (!c) notFound();
 
   const year = c.year_end ? `${c.year_start}–${c.year_end}` : c.year_start.toString();
-  const cat = CATEGORY_LABEL[c.category];
 
   const casePatterns = c.patterns
     .map((id) => getPattern(id))
@@ -71,32 +51,20 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
           Caso #{c.num} · {year} · {c.country_name}
         </p>
         <h1 className="mt-2 text-3xl font-bold text-text">
-          <span aria-hidden className="mr-2">
-            {c.flag}
-          </span>
+          <span aria-hidden className="mr-2">{c.flag}</span>
           {c.name}
         </h1>
 
         <div className="mt-4 flex flex-wrap items-center gap-3">
-          <div
-            className={`rounded-md border px-3 py-1 ${TIER_BADGE[c.tier]}`}
-            title={TIER_DESCRIPTION[c.tier]}
-          >
-            <span className="font-mono text-xs uppercase">Tier {c.tier}</span>
-          </div>
+          <TierBadge tier={c.tier} />
           <div className="rounded-md border border-border bg-panel px-3 py-1">
             <span className="font-mono text-sm font-bold text-text">{c.probability}%</span>
             <span className="ml-2 text-xs text-muted">probabilidad</span>
           </div>
-          {cat && (
-            <div className="rounded-md border border-border bg-panel px-3 py-1">
-              <span aria-hidden className="mr-1.5">{cat.icon}</span>
-              <span className="font-mono text-xs uppercase text-muted">{cat.label}</span>
-            </div>
-          )}
+          <CategoryBadge category={c.category} />
         </div>
 
-        <p className="mt-3 text-xs text-muted">{TIER_DESCRIPTION[c.tier]}</p>
+        <p className="mt-3 text-xs text-muted">{TIER_META[c.tier].description}</p>
       </header>
 
       <section>
@@ -125,6 +93,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
                 href={`/patterns/${p.letter}`}
                 className="rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50"
                 style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
+                title={p.description}
               >
                 <span className="font-mono text-accent">{p.id}</span>{" "}
                 <span className="text-text">{p.name}</span>

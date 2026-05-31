@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
@@ -15,6 +15,24 @@ const NAV_LINKS = [
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
+
+  // Close on Escape + lock body scroll + focus first link when drawer opens.
+  // This is the shadcn Sheet pattern reproduced manually (zero deps).
+  useEffect(() => {
+    if (!open) return;
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("keydown", onKeyDown);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    firstLinkRef.current?.focus();
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open]);
 
   return (
     <>
@@ -22,8 +40,9 @@ export function MobileNav() {
         type="button"
         aria-label={open ? "Cerrar menú" : "Abrir menú"}
         aria-expanded={open}
+        aria-controls="mobile-nav-drawer"
         onClick={() => setOpen((v) => !v)}
-        className="sm:hidden -mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-text hover:bg-panel"
+        className="sm:hidden -mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-text hover:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
         <span aria-hidden className="text-xl leading-none">
           {open ? "✕" : "☰"}
@@ -32,6 +51,7 @@ export function MobileNav() {
 
       {open && (
         <div
+          id="mobile-nav-drawer"
           className="sm:hidden fixed inset-0 top-[57px] z-40 overflow-y-auto bg-bg/95 backdrop-blur-sm"
           onClick={() => setOpen(false)}
           role="presentation"
@@ -42,12 +62,13 @@ export function MobileNav() {
             aria-label="Navegación principal"
           >
             <ul className="space-y-1">
-              {NAV_LINKS.map((l) => (
+              {NAV_LINKS.map((l, i) => (
                 <li key={l.href}>
                   <Link
+                    ref={i === 0 ? firstLinkRef : undefined}
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-md px-3 py-3 text-base text-text hover:bg-panel"
+                    className="block rounded-md px-3 py-3 text-base text-text hover:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {l.label}
                   </Link>
