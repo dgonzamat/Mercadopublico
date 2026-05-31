@@ -821,5 +821,22 @@
     "summary_en": "Retired USAF Major General, ex-Director Wright-Patterson AFRL, named in WikiLeaks Podesta. Silver Alert active. Coulthart: 'grave national security crisis'",
     "patterns": ["8c", "8r"],
     "category": "incident"
+  },
+  {
+    "id": "aliens-gov-immigration-2026",
+    "num": 52,
+    "name": "alien.gov — disclosure rhetoric weaponizada para inmigración",
+    "year_start": 2025,
+    "year_end": 2026,
+    "country": "US",
+    "country_name": "Estados Unidos",
+    "flag": "🇺🇸",
+    "location": { "lat": 38.90, "lng": -77.04, "place": "White House / DHS, Washington DC" },
+    "tier": "A",
+    "probability": 92,
+    "summary": "El gobierno US lanza alien.gov (2025) y reactiva mensajería esta semana (mayo 2026) usando deliberadamente la ambigüedad del término 'alien' (legal: no-ciudadano · cultural: extraterrestre) para framear deportaciones. Pattern 8o invertido: el estado coopta la narrativa disclosure para legitimar política de inmigración, no al revés.",
+    "summary_en": "US government launches alien.gov (2025) and reactivates messaging this week (May 2026) deliberately exploiting the 'alien' term ambiguity (legal: non-citizen · cultural: extraterrestrial) to frame deportations. Pattern 8o inverted: the state co-opts disclosure narrative to legitimize immigration policy, not the reverse.",
+    "patterns": ["8o", "8n"],
+    "category": "document"
   }
 ]
