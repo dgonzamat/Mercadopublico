@@ -60,12 +60,12 @@ export function MobileNav() {
       {open && (
         <div
           id="mobile-nav-drawer"
-          className="sm:hidden fixed inset-0 top-[57px] z-40 overflow-y-auto bg-bg"
+          className="sm:hidden fixed left-0 right-0 top-16 bottom-0 z-40 overflow-y-auto bg-bg"
           onClick={() => setOpen(false)}
           role="presentation"
         >
           <nav
-            className="min-h-full px-4 py-6"
+            className="min-h-full bg-bg px-4 py-6"
             onClick={(e) => e.stopPropagation()}
             aria-label="Navegación principal"
           >

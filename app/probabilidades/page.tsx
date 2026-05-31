@@ -238,6 +238,40 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
           institucional.
         </Caption>
       )}
+
+      {supportingCases.length > 0 && (
+        <Link
+          href={`/cases/${supportingCases[0].id}`}
+          className="group mt-6 grid grid-cols-[auto_1fr_auto] items-center gap-4 border-2 border-text px-5 py-4 hover:bg-text hover:text-bg"
+        >
+          <span
+            aria-hidden
+            className="font-mono text-xs uppercase tracking-widest text-muted group-hover:text-bg/60"
+          >
+            Empezar por
+          </span>
+          <span className="min-w-0">
+            <span aria-hidden className="mr-2">
+              {supportingCases[0].flag}
+            </span>
+            <span className="sr-only">
+              {supportingCases[0].country_name}.
+            </span>
+            <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg md:text-xl">
+              {supportingCases[0].name}
+            </span>
+            <span className="ml-2 font-mono text-xs tabular-nums text-muted group-hover:text-bg/60">
+              {supportingCases[0].year_start} · {supportingCases[0].tier}
+            </span>
+          </span>
+          <span
+            aria-hidden
+            className="font-mono text-base text-accent group-hover:text-accent"
+          >
+            →
+          </span>
+        </Link>
+      )}
     </section>
   );
 }
