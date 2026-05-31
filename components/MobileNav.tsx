@@ -46,11 +46,12 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobile-nav-drawer"
         onClick={() => setOpen((v) => !v)}
-        className="sm:hidden -mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-text hover:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className="sm:hidden inline-flex h-11 items-center gap-2 rounded-none border-2 border-text bg-bg px-3 font-mono text-xs uppercase tracking-widest text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span aria-hidden className="text-xl leading-none">
+        <span aria-hidden className="text-base leading-none">
           {open ? "✕" : "☰"}
         </span>
+        <span>{open ? "Cerrar" : "Menú"}</span>
       </button>
 
       {open && (
