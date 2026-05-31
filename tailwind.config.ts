@@ -10,6 +10,7 @@ const config: Config = {
       colors: {
         bg: "#0a0a0f",
         panel: "#12121a",
+        "surface-2": "#1a1a26",
         border: "#22222e",
         text: "#e5e5ee",
         muted: "#8a8aa0",
@@ -20,6 +21,14 @@ const config: Config = {
       },
       fontFamily: {
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "monospace"],
+        display: [
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
       },
     },
   },

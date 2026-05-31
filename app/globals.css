@@ -24,3 +24,39 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Editorial prose styles — opt-in via .prose-editorial class.
+   Applied to reading-mode blocks (whatHappened, whyMatters, about, resumen). */
+.prose-editorial p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.prose-editorial p:last-child {
+  margin-bottom: 0;
+}
+.prose-editorial > p:first-of-type::first-letter {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  float: left;
+  padding: 0.25rem 0.5rem 0 0;
+  color: #e5e5ee;
+}
+.prose-editorial blockquote {
+  border-left: 2px solid #7fdbff;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #e5e5ee;
+}
+.prose-editorial sup {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+}
+.prose-editorial sup a {
+  color: #7fdbff;
+  text-decoration: none;
+}
