@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { cases } from "@/lib/data";
-import { IcdProbabilityChart } from "@/components/IcdProbabilityChart";
-import { CorpusStats } from "@/components/CorpusStats";
 import { TimelineByYear } from "@/components/TimelineByYear";
+import { HYPOTHESES } from "@/lib/hypotheses";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { countryCount } from "@/lib/corpusStats";
 
 export default function HomePage() {
   const countries = countryCount(cases);
+  const mainHypothesis = HYPOTHESES[0]; // Pluralidad — the corpus's position
+
   return (
     <div className="space-y-40 md:space-y-56">
       {/* ────────── HERO ────────── */}
@@ -49,36 +50,48 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────── INVERTED BLOCK — pull quote full bleed ────────── */}
+      {/* ────────── LA TESIS — una sola respuesta visible ────────── */}
       <section className="full-bleed bg-text py-32 text-bg md:py-48">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="max-w-4xl space-y-8">
+        <div className="mx-auto max-w-6xl space-y-16 px-4">
+          <div className="space-y-4">
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-              Tesis del corpus
+              La respuesta principal
             </p>
-            <p className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
-              "El corpus documenta{" "}
-              <span className="text-accent">79 años de un fenómeno real</span>{" "}
-              que ningún marco explica completamente, gestionado
-              institucionalmente con creciente sofisticación."
-            </p>
-            <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-              — Resumen del análisis, sección final
-            </p>
+            <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
+              "El corpus apoya{" "}
+              <span className="text-accent">pluralidad de inteligencias</span>{" "}
+              — probablemente son varios fenómenos distintos, no uno solo."
+            </h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+            <div className="space-y-2">
+              <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+                {mainHypothesis.icd.label} · {mainHypothesis.icd.min}–
+                {mainHypothesis.icd.max}%
+              </p>
+              <p className="font-display text-2xl leading-snug text-bg md:text-3xl">
+                Las otras 5 hipótesis son <em>improbables</em> según ICD-203,
+                pero el corpus las documenta para que puedas auditarlas.
+              </p>
+            </div>
+            <Link
+              href="/probabilidades"
+              className="inline-flex min-h-[48px] items-center self-start whitespace-nowrap border-2 border-accent bg-accent px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-accent md:self-end"
+            >
+              Ver las 6 hipótesis →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ────────── CHART ────────── */}
-      <IcdProbabilityChart />
-
-      {/* ────────── TIMELINE — visual full bleed dark ────────── */}
+      {/* ────────── TIMELINE — visual stand-alone ────────── */}
       <section className="full-bleed bg-text py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-4 space-y-10">
+        <div className="mx-auto max-w-6xl space-y-10 px-4">
           <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl">
               79 años,{" "}
-              <span className="text-accent italic">52 casos</span>,
+              <span className="text-accent italic">{cases.length} casos</span>,
               <br />
               una huella temporal.
             </h2>
@@ -89,34 +102,37 @@ export default function HomePage() {
             </p>
           </div>
           <TimelineByYear />
+          <Link
+            href="/cases"
+            className="inline-flex min-h-[48px] items-center border-2 border-bg px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-text"
+          >
+            Explorar los {cases.length} casos →
+          </Link>
         </div>
       </section>
 
-      {/* ────────── CORPUS STATS ────────── */}
-      <CorpusStats />
-
-      {/* ────────── CTAS ────────── */}
+      {/* ────────── CIERRE ────────── */}
       <section className="border-t-2 border-text/15 pt-12">
         <div className="space-y-6">
           <Eyebrow>Seguir leyendo</Eyebrow>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/probabilidades"
-              className="inline-flex min-h-[48px] items-center rounded-none bg-accent px-8 py-3 text-base font-medium text-bg hover:bg-accent/90"
-            >
-              Razonamiento detallado →
-            </Link>
-            <Link
-              href="/cases"
-              className="inline-flex min-h-[48px] items-center rounded-none border-2 border-text px-8 py-3 text-base font-medium text-text hover:bg-text hover:text-bg"
-            >
-              Explorar los {cases.length} casos
-            </Link>
+          <div className="flex flex-wrap gap-x-8 gap-y-4">
             <Link
               href="/resumen"
-              className="inline-flex min-h-[48px] items-center px-2 py-3 text-base font-medium text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent"
+              className="font-display text-2xl text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent md:text-3xl"
             >
-              Leer el resumen en 10 min
+              Resumen en 10 minutos →
+            </Link>
+            <Link
+              href="/about"
+              className="font-display text-2xl text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent md:text-3xl"
+            >
+              Cómo se construyó →
+            </Link>
+            <Link
+              href="/atlas"
+              className="font-display text-2xl text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent md:text-3xl"
+            >
+              Mapa global →
             </Link>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
+import { CorpusStats } from "@/components/CorpusStats";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
@@ -30,7 +31,9 @@ export default function CasesPage() {
         </Lede>
       </header>
 
-      <div className="space-y-8">
+      <CorpusStats />
+
+      <div className="space-y-8 pt-8">
         {ERAS.map((era) => {
           const eraCases = sorted.filter(
             (c) => c.year_start >= era.start && c.year_start <= era.end,

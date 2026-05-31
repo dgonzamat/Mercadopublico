@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cases, patterns, TOTAL_CASES } from "@/lib/data";
 import { HYPOTHESES } from "@/lib/hypotheses";
 import { PATTERN_TO_HYPOTHESIS } from "@/lib/hypothesisMapping";
+import { IcdProbabilityChart } from "@/components/IcdProbabilityChart";
 import { Eyebrow, H1, H2, H3, Lede, Body, Caption } from "@/lib/typography";
 
 export const metadata = {
@@ -31,6 +32,8 @@ export default function ProbabilidadesPage() {
           razonamiento detrás de cada etiqueta.
         </Lede>
       </header>
+
+      <IcdProbabilityChart />
 
       <section className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">
         <div className="grid gap-6 md:grid-cols-2">
