@@ -23,42 +23,42 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     id: "pluralidad",
     label: "Pluralidad de inteligencias",
     corpusPct: 48,
-    color: "#ff4d4d",
+    color: "#c41e3a",
     note: "Múltiples fuentes distintas mezcladas — no es UN solo fenómeno",
   },
   {
     id: "interdimensional",
     label: "Interdimensional / física exótica",
     corpusPct: 15,
-    color: "#ff8800",
+    color: "#c07020",
     note: "Vienen de otras dimensiones, no de otros planetas (Puthoff, Davis)",
   },
   {
     id: "natural",
     label: "Fenómeno natural no catalogado",
     corpusPct: 12,
-    color: "#ffb347",
+    color: "#8b6914",
     note: "Plasma, ionización avanzada, sprites — Hessdalen, Popocatépetl",
   },
   {
     id: "clasificado",
     label: "Programa clasificado terrestre",
     corpusPct: 11,
-    color: "#7fdbff",
+    color: "#1e4f8b",
     note: "Breakaway civilization, black budget militar (Jorjani)",
   },
   {
     id: "tratado",
     label: "Tratado formal con Greys",
     corpusPct: 8,
-    color: "#aa88ff",
+    color: "#6b3aa0",
     note: "Hipótesis Cooper, Lazar — sin evidencia primaria verificable",
   },
   {
     id: "psicoespiritual",
     label: "Contacto psicoespiritual / 'Other'",
     corpusPct: 6,
-    color: "#00aaff",
+    color: "#2a7878",
     note: "Mack, Strieber, framework ontológico-religioso de Pasulka",
   },
 ];
@@ -72,4 +72,5 @@ export function getHypothesis(id: string): Hypothesis | undefined {
   return HYPOTHESES.find((h) => h.id === id);
 }
 
+// Re-export for convenience.
 export { ICD_LABELS };
