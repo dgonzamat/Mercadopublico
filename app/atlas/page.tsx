@@ -1,17 +1,18 @@
-import Link from "next/link";
 import dynamic from "next/dynamic";
 import { cases, patterns } from "@/lib/data";
 
 const WorldMap = dynamic(() => import("@/components/WorldMap"), {
   ssr: false,
   loading: () => (
-    <div className="flex h-[600px] items-center justify-center rounded-lg border border-border bg-panel text-muted">Cargando mapa…</div>
+    <div className="flex h-[600px] items-center justify-center rounded-lg border border-border bg-panel text-muted">
+      Cargando mapa…
+    </div>
   ),
 });
 
 export const metadata = {
-  title: "Atlas · UAP Atlas",
-  description: "Mapa global de 51 casos UAP institucionales 1947-2026",
+  title: "Atlas · UAP",
+  description: "Mapa global de casos institucionales UAP 1947-2026",
 };
 
 export default function AtlasPage() {
@@ -22,10 +23,10 @@ export default function AtlasPage() {
   return (
     <div className="space-y-6">
       <header>
-        <h1 className="text-3xl font-bold text-text">Mapa de casos UAP</h1>
+        <h1 className="text-3xl font-bold text-text">Pattern Atlas</h1>
         <p className="mt-2 text-muted">
-          {cases.length} casos institucionales distribuidos globalmente (1947–2026).
-          Click un marcador para abrir el caso. Color = tier de confianza.
+          {cases.length} casos UAP institucionales distribuidos globalmente
+          (1947–2026). Click un marcador para ver el caso.
         </p>
       </header>
 
@@ -45,9 +46,15 @@ export default function AtlasPage() {
         </h2>
         <div className="mt-3 flex flex-wrap gap-2">
           {patterns.map((p) => (
-            <Link key={p.id} href={`/patterns/${p.letter}`} className="rounded border border-border bg-panel px-2.5 py-1 text-xs hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}>
-              <span className="font-mono text-accent">{p.id}</span> <span className="text-text">{p.name}</span>
-            </Link>
+            <a
+              key={p.id}
+              href={`/patterns/${p.letter}`}
+              className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-2.5 py-1 text-xs hover:border-accent/50"
+              style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
+            >
+              <span className="font-mono text-accent">{p.id}</span>{" "}
+              <span className="text-text">{p.name}</span>
+            </a>
           ))}
         </div>
       </section>
@@ -58,7 +65,10 @@ export default function AtlasPage() {
 function Legend({ color, label }: { color: string; label: string }) {
   return (
     <span className="inline-flex items-center gap-2 rounded border border-border bg-panel px-2 py-1 font-mono text-muted">
-      <span className="h-3 w-3 rounded-full" style={{ backgroundColor: color }} />
+      <span
+        className="h-3 w-3 rounded-full"
+        style={{ backgroundColor: color }}
+      />
       {label}
     </span>
   );
