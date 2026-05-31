@@ -64,3 +64,5 @@ UI strings are fully translated. Per-case narrative translation (52 cases ×
 Analytical content under CC BY 4.0. Code under MIT.
 
 See `web/CLAUDE.md` for full project context, conventions, and anti-patterns.
+
+<!-- redeploy-trigger: rename to uap-atlas -->
