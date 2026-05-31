@@ -1,57 +1,66 @@
-# UAP Atlas
+# UAP Atlas — institutional analysis of UAP phenomena
 
-> 79 años del fenómeno UAP documentados institucionalmente. 51 casos verificables, 18 patrones recurrentes, 11 frameworks teóricos comparados.
+> Bilingual (ES/EN) editorial atlas of 52 institutional UAP cases, 1947–2026.
+> 18 recurring patterns, 11 theoretical frameworks compared, 6 hypotheses with
+> ICD-203 calibrated probability.
 
-**Stack:** Next.js 14 (App Router · static export) + TypeScript strict + Tailwind CSS + react-leaflet.
+**Live:** https://dgonzamat.github.io/uap-atlas/
 
-**Live:** https://dgonzamat.github.io/mercadopublico/
+**Stack:** Next.js 14 (App Router · static export) + TypeScript strict + Tailwind CSS 3.4 + Fraunces/Inter via next/font + react-leaflet (Atlas map only).
 
 ## Hosting
 
-GitHub Pages via `.github/workflows/deploy-pages.yml`. Auto-deploys on push to main.
+GitHub Pages via `.github/workflows/deploy-pages.yml`. Auto-deploys on push to main. basePath auto-detected by `actions/configure-pages` from the repo name (no manual config needed).
 
-## Estructura
+## Structure
 
 ```
-app/                  Next.js App Router
-  page.tsx            Landing
-  cases/              51 casos cronológicos
-  atlas/              Mapa mundial interactivo (Leaflet)
-  patterns/           18 patrones recurrentes
-  frameworks/         11 frameworks teóricos comparados
-  researchers/        Ecosistema de disclosure (5 secciones)
-  about/              Metodología (Bayesian, 4-tier framework)
-  resumen/            Versión accesible 10 min
-  not-found.tsx       404 custom
-  sitemap.ts          SEO
-  robots.ts
-components/           CaseRow, WorldMap
-lib/                  data fetchers + types
-data/                 cases.json (51), patterns.json (18), frameworks.json (11), researchers.json (14)
+web/
+  app/                Next.js App Router
+    page.tsx          Hero · 52/79/N stats · thesis dark block · timeline · CTAs
+    cases/            52 cronological cases (CorpusStats at top)
+    cases/[slug]      Editorial detail: hero · 3 parts · evidence + sources · prev/next
+    probabilidades/   ICD-203 chart + per-hypothesis reasoning
+    atlas/            Leaflet world map of cases
+    patterns/         18 recurring patterns (8a-8r)
+    researchers/      Disclosure ecosystem (5 sections)
+    frameworks/       11 theoretical frameworks compared
+    about/            5-chapter methodology
+    resumen/          10-min plain-language summary
+  components/
+    T.tsx             Bilingual primitive: <T es=".." en=".."/>
+    LocaleToggle.tsx  ES/EN toggle (client, localStorage persist)
+    Badge, MobileNav, IcdProbabilityChart, CorpusStats, TimelineByYear, WorldMap
+  lib/                data.ts · types.ts · hypotheses.ts · icd203.ts · typography.tsx
+  data/cases/         52 per-case JSON files (source of truth)
+  scripts/build-cases.mjs   Build-time aggregator → data/cases.json (gitignored)
 ```
 
-## Desarrollo local
+## Development
 
 ```bash
+cd web
 npm install
 npm run dev    # http://localhost:3000
 npm run build  # static export to ./out/
 ```
 
-## Páginas
+`npm run build` runs `prebuild` automatically: aggregates `data/cases/*.json` →
+`data/cases.json`. To add a case, drop a new JSON under `data/cases/<id>.json`
+with schema `UAPCase` (see `lib/types.ts`).
 
-- `/` Landing con hero, 3 módulos, casos destacados, taxonomía 8m/8n/8q/8r
-- `/cases` Lista cronológica de 51 casos por era (1947-2026)
-- `/cases/[slug]` Detalle con map coords, patrones, casos relacionados
-- `/atlas` Mapa mundial interactivo Leaflet con 51 marcadores tier-colored
-- `/patterns` 18 patrones recurrentes (8a-8r)
-- `/patterns/[letter]` Detalle de patrón con casos que lo exhiben
-- `/frameworks` Matriz comparativa 11 frameworks teóricos
-- `/researchers` Ecosistema en 5 secciones (Vallée, Mack, Strieber, Grusch, Coulthart, Pasulka, etc.)
-- `/researchers/[slug]` Detalle de figura con works
-- `/about` Metodología Bayesiana + 4-tier evidential framework
-- `/resumen` Versión accesible 10 min
+## i18n
 
-## Licencia
+Whole site is bilingual ES/EN via CSS-based switching:
+- `<T es=".." en=".."/>` renders two sibling spans with `data-lang` attributes
+- `LocaleToggle` flips `html[data-locale]` and persists in localStorage
+- Pure CSS swap, SSG-compatible, zero overhead
 
-Contenido analítico bajo CC BY 4.0. Código bajo MIT.
+UI strings are fully translated. Per-case narrative translation (52 cases ×
+4 fields) is ongoing.
+
+## License
+
+Analytical content under CC BY 4.0. Code under MIT.
+
+See `web/CLAUDE.md` for full project context, conventions, and anti-patterns.
