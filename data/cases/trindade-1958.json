@@ -1,0 +1,44 @@
+{
+  "id": "trindade-1958",
+  "num": 11,
+  "name": "Trindade Island",
+  "year_start": 1958,
+  "country": "BR",
+  "country_name": "Brasil",
+  "flag": "🇧🇷",
+  "location": {
+    "lat": -20.51,
+    "lng": -29.32,
+    "place": "Ilha de Trindade"
+  },
+  "tier": "A",
+  "probability": 65,
+  "summary": "Marina Brasileña, foto oficial cigar/Saturn-shape",
+  "summary_en": "Brazilian Navy, official cigar/Saturn-shape photo",
+  "patterns": [
+    "8f"
+  ],
+  "category": "incident",
+  "whatHappened": "El 16 de enero de 1958, el buque de investigación científica brasileño Almirante Saldanha estaba anclado frente a la Isla de Trindade (1,200 km de la costa) preparando operaciones del Año Geofísico Internacional. A las 12:15 PM, aproximadamente 100 oficiales y científicos en cubierta observaron un objeto en forma de Saturno (cuerpo central con anillo perimetral) aproximarse a la isla, descender, ascender y retirarse en trayectoria curva.\n\nAlmiro Baraúna, fotógrafo civil contratado, logró capturar seis exposiciones del objeto con su Rolleiflex 2.8E. Cuatro de ellas mostraron el objeto con claridad. Los negativos fueron entregados al capitán del buque y revelados a bordo bajo supervisión militar. El presidente de Brasil, Juscelino Kubitschek, ordenó personalmente la liberación oficial de las fotografías tras verificación interna de la Marinha Brasileira.\n\nEl Ministro de Marina emitió comunicado oficial confirmando autenticidad. Las fotografías han sido sometidas a análisis fotogramétrico por múltiples organizaciones — incluyendo USAF Project Blue Book (que las catalogó como 'unidentified'), la propia Marinha Brasileira en 1958 y el GEPAN francés en 1980. Ninguno encontró evidencia de manipulación, aunque la cadena de custodia original permite discusiones residuales.",
+  "whyMatters": "Caso fotográfico con la mejor cadena de custodia institucional en la era pre-digital: cien testigos militares y científicos en cubierta, revelado de negativos a bordo bajo supervisión, autorización presidencial para publicación, confirmación oficial del Ministerio de Marina. El nivel de respaldo gubernamental brasileño es único entre casos fotográficos del corpus UAP global.",
+  "evidence": [
+    "Seis exposiciones originales Baraúna (Rolleiflex 2.8E) reveladas a bordo",
+    "Aproximadamente 100 testigos directos (oficiales Marinha + científicos)",
+    "Comunicado oficial Ministerio de Marina (febrero 1958)",
+    "Autorización personal del Presidente Kubitschek para release"
+  ],
+  "sources": [
+    {
+      "name": "Marinha do Brasil — Comunicado oficial Trindade (1958)",
+      "note": "Publicado en O Globo"
+    },
+    {
+      "name": "USAF Project Blue Book — Trindade case file (catalogado 'unidentified')",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "GEPAN/CNES — Analyse photographique Trindade (1980)",
+      "note": "Confirmación independiente francesa"
+    }
+  ]
+}

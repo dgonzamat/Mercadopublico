@@ -1,0 +1,49 @@
+{
+  "id": "roswell-1947",
+  "num": 2,
+  "name": "Roswell",
+  "year_start": 1947,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 33.39,
+    "lng": -104.52,
+    "place": "Roswell, New Mexico"
+  },
+  "tier": "S",
+  "probability": 55,
+  "summary": "Marcel + comunicado RAAF inicial + Mogul disputado",
+  "summary_en": "Marcel + initial RAAF release + Mogul disputed",
+  "patterns": [
+    "8m",
+    "8f"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre el 4 y 8 de julio de 1947, el ranchero William 'Mac' Brazel descubrió restos no identificados en su rancho cerca de Corona, Nuevo México. Notificó al sheriff de Roswell, quien contactó al Roswell Army Air Field (RAAF), base del 509th Bombardment Group — la única unidad nuclear operacional del mundo en ese momento. El Major Jesse Marcel (oficial de inteligencia) y el Capitán Sheridan Cavitt recuperaron material.\n\nEl 8 de julio de 1947, el Coronel William Blanchard autorizó al Tte. Walter Haut emitir el primer comunicado de prensa oficial: el RAAF había recuperado 'a flying disc'. Horas más tarde, el General Roger Ramey del 8th Air Force en Fort Worth retractó el comunicado afirmando que el material era de un globo meteorológico. El comunicado original y la retractación son ambos parte del registro periodístico contemporáneo (Roswell Daily Record).\n\nEn 1994, la USAF publicó el reporte 'Roswell Report: Fact vs. Fiction' atribuyendo los restos al Project Mogul (red de globos de gran altitud para detectar ensayos nucleares soviéticos). En 1997 publicó 'Case Closed' explicando reportes de cuerpos como confusión con maniquíes de paracaídas. Ambas explicaciones son disputadas por participantes contemporáneos, incluyendo Marcel, su hijo y testigos secundarios.",
+  "whyMatters": "Caso fundacional del fenómeno UAP moderno: combina el único comunicado oficial militar afirmando recuperación de un 'flying disc' con una retractación administrativa inmediata. Independientemente de la naturaleza real del material, establece el patrón institucional de release+walk-back que se repetiría a lo largo de ocho décadas. El Project Mogul oficial sigue siendo la explicación administrativa estadounidense, aunque las dos investigaciones USAF (1994, 1997) presentan inconsistencias internas señaladas por el GAO.",
+  "evidence": [
+    "Comunicado original RAAF (8 julio 1947) afirmando captura de 'flying disc'",
+    "Retractación del General Ramey publicada en Fort Worth Star-Telegram (9 julio 1947)",
+    "Reporte USAF 'Roswell Report: Fact vs. Fiction' (1994) — atribución oficial a Project Mogul",
+    "Affidávit jurado de Jesse Marcel Sr. (1979) describiendo material no convencional"
+  ],
+  "sources": [
+    {
+      "name": "USAF Roswell Report: Fact vs. Fiction (1994)",
+      "url": "https://media.defense.gov/2010/Oct/27/2001329751/-1/-1/0/AFD-101027-029.pdf"
+    },
+    {
+      "name": "USAF Roswell Report: Case Closed (1997)",
+      "url": "https://media.defense.gov/2010/Oct/27/2001329755/-1/-1/0/AFD-101027-030.pdf"
+    },
+    {
+      "name": "GAO Report B-262046 — Records management Roswell (1995)",
+      "url": "https://www.gao.gov/products/nsiad-95-187"
+    },
+    {
+      "name": "Roswell Daily Record — '8 julio 1947 edition (archived)",
+      "url": "http://www.roswellfiles.com/FOIA/RDDR-1947-07-08.htm"
+    }
+  ]
+}

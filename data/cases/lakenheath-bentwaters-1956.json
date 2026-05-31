@@ -1,0 +1,44 @@
+{
+  "id": "lakenheath-bentwaters-1956",
+  "num": 9,
+  "name": "Lakenheath-Bentwaters",
+  "year_start": 1956,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 52.41,
+    "lng": 0.56,
+    "place": "Suffolk, England"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "Multi-radar + Venom intercept lock invertido + Condon",
+  "summary_en": "Multi-radar + Venom intercept inverted lock + Condon",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 13-14 de agosto de 1956, operadores de radar en tres bases de la USAF en el Reino Unido — RAF Bentwaters, RAF Lakenheath y Sculthorpe — detectaron simultáneamente trazas anómalas moviéndose a velocidades de 2,000 a 4,000 mph. Las trazas fueron confirmadas en radar AGI/MPN-11 (ground control approach) y radar de búsqueda CPN-4 de manera independiente.\n\nLa RAF lanzó dos Venom NF.3 desde RAF Waterbeach. El primer Venom logró radar lock sobre el objeto, pero el objeto se posicionó detrás del avión instantáneamente — invirtiendo la situación táctica — y mantuvo posición de cola durante 10 minutos pese a las maniobras evasivas del piloto. El piloto reportó por radio: 'My gunsight is locked on but I can't shake him'. Eventualmente el objeto se retiró verticalmente.\n\nEl caso fue uno de los pocos clasificados como 'genuinely puzzling and inexplicable' por el Condon Committee (University of Colorado UFO Project, 1968) — el reporte cuya conclusión administrativa fue precisamente lo contrario: que el fenómeno UAP no merecía investigación científica. La inclusión del Lakenheath-Bentwaters como caso inexplicable es citada como ejemplo de la inconsistencia interna del Condon Report.",
+  "whyMatters": "Único caso donde dos fuerzas aéreas OTAN (USAF + RAF) registraron simultáneamente trazas multi-radar + interceptación aire con inversión táctica imposible para aeronaves convencionales de 1956. La calificación del Condon Committee — el reporte oficial que cerró Blue Book — como 'genuinely puzzling and inexplicable' preserva un ancla institucional contra la narrativa de 'todos los casos fueron explicados'.",
+  "evidence": [
+    "Trazas multi-radar simultáneas en tres bases (Bentwaters + Lakenheath + Sculthorpe)",
+    "Radar lock recíproco F-86 → objeto → F-86 con inversión táctica",
+    "Calificación 'genuinely puzzling and inexplicable' en Condon Report (1968)",
+    "Reportes oficiales USAF y RAF preservados contemporáneamente"
+  ],
+  "sources": [
+    {
+      "name": "Condon Report — Case 2 (1968)",
+      "url": "https://files.ncas.org/condon/text/case02.htm"
+    },
+    {
+      "name": "Thayer, G. — IEEE Spectrum analysis (1971)",
+      "note": "Físico Condon que disputó el cierre del comité"
+    },
+    {
+      "name": "RAF Lakenheath case file — UK National Archives",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C2007"
+    }
+  ]
+}

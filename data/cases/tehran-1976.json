@@ -1,0 +1,47 @@
+{
+  "id": "tehran-1976",
+  "num": 19,
+  "name": "Tehran 1976",
+  "year_start": 1976,
+  "country": "IR",
+  "country_name": "Irán",
+  "flag": "🇮🇷",
+  "location": {
+    "lat": 35.69,
+    "lng": 51.39,
+    "place": "Tehran"
+  },
+  "tier": "S",
+  "probability": 88,
+  "summary": "DIA validó oficialmente, F-4 EM failures × 2, multi-sensor, madre+subobjetos",
+  "summary_en": "DIA officially validated, F-4 EM failures × 2, multi-sensor, mother + sub-objects",
+  "patterns": [
+    "8b",
+    "8e",
+    "8k"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre la 1:00 y las 4:30 AM del 19 de septiembre de 1976, control aéreo en Mehrabad recibió múltiples reportes civiles de una luz brillante sobre el norte de Teherán. El supervisor confirmó el objeto visualmente y notificó al comando de la Fuerza Aérea Imperial Iraní. Un F-4 Phantom II del 32º escuadrón de Shahrokhi despegó para investigar; al acercarse a 40 kilómetros, sus instrumentos de comunicación y armamento fallaron simultáneamente y el piloto se vio obligado a abortar.\n\nUn segundo F-4 fue lanzado a las 1:40 AM. Logró radar lock a 27 millas náuticas — la traza era del tamaño de un Boeing 707. Cuando el copiloto intentó disparar un AIM-9 al objeto secundario más pequeño que se desprendió del primario, el sistema de armamento y todas las comunicaciones UHF/intercomunicador fallaron. Al desistir, los sistemas se restauraron. El objeto secundario regresó al primario y este último liberó un tercer objeto que descendió a aterrizar suavemente cerca de Rey-Shahr. Al amanecer un helicóptero examinó el sitio sin encontrar restos físicos.\n\nEl reporte fue clasificado por la DIA estadounidense (Defense Intelligence Agency) bajo el código DEFE-12 y posteriormente desclasificado vía FOIA. La evaluación DIA marcó el caso con la máxima calificación de calidad de información disponible en el formulario: 'an outstanding report'.",
+  "whyMatters": "Es uno de los pocos casos con validación institucional explícita por una agencia de inteligencia estadounidense, basada en datos multi-sensor (radar de tierra, radar aire-aire, instrumentación de cabina, testimonio de cinco oficiales militares) y con interferencia electromagnética repetible bajo proximidad al objeto. La pérdida sincronizada de sistemas en dos aeronaves distintas, recuperables al alejarse, es difícil de explicar como falla técnica o mala interpretación.",
+  "evidence": [
+    "Memorándum DIA Form 1396 (desclasificado FOIA) calificando el reporte como 'outstanding'",
+    "Radar lock en F-4 #2 con eco de tamaño equivalente a Boeing 707",
+    "Falla simultánea de armamento y comunicaciones al intentar disparo AIM-9, recuperación al alejarse",
+    "Testimonios juramentados del General Yousefi (IIAF), Capitán Jafari (piloto F-4 #2) y tripulación de tierra"
+  ],
+  "sources": [
+    {
+      "name": "DIA Defense Information Report DI-1696-0379-76",
+      "url": "https://www.theblackvault.com/documentarchive/iranian-air-force-pilots-encounter-with-a-uap-1976/",
+      "note": "Desclasificado vía FOIA"
+    },
+    {
+      "name": "Project Blue Book — Tehran Case File",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "Jafari interview, Sci-Fi Channel UFO Special (2007)",
+      "note": "Capitán piloto F-4 #2"
+    }
+  ]
+}

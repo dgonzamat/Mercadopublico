@@ -1,0 +1,46 @@
+{
+  "id": "colares-1977",
+  "num": 21,
+  "name": "Colares (Operação Prato)",
+  "year_start": 1977,
+  "year_end": 1978,
+  "country": "BR",
+  "country_name": "Brasil",
+  "flag": "🇧🇷",
+  "location": {
+    "lat": -0.93,
+    "lng": -48.3,
+    "place": "Colares, Pará"
+  },
+  "tier": "S",
+  "probability": 75,
+  "summary": "FAB acknowledged 2010, ~500-1000 víctimas médicas, 14 meses operación militar",
+  "summary_en": "FAB acknowledged 2010, ~500-1000 medical victims, 14-month military operation",
+  "patterns": [
+    "8a",
+    "8c"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre septiembre de 1977 y diciembre de 1978, los habitantes de la isla de Colares y municipios costeros del Estado de Pará (Amazonía brasileña) reportaron centenares de incidentes con objetos luminosos que emitían rayos verticales sobre personas durante la noche. Las víctimas presentaban quemaduras puntiformes geométricas, anemia severa por causas no determinadas y, en algunos casos, muerte. Estimaciones locales y médicas hablan de 500 a 1,000 víctimas con efectos médicos documentados.\n\nLa Força Aérea Brasileira (FAB) inició la Operação Prato bajo el mando del entonces Capitán Uyrangê Hollanda. Durante 14 meses la operación documentó 500+ fotografías, decenas de horas de filmación 16mm, reportes médicos hospitalarios y testimonios de los propios pilotos FAB que persiguieron objetos. El relator oficial de la operación produjo más de 2,000 páginas de documentación.\n\nEl archivo permaneció clasificado hasta 2005. La FAB reconoció oficialmente la realidad del fenómeno en 2010 publicando la documentación vía Arquivo Nacional. El Capitán Hollanda concedió entrevistas extensas en 1997 antes de su suicidio en condiciones que algunos investigadores asocian al impacto psicológico de su experiencia. El caso es el único evento UAP con cohorte epidemiológica documentada hospitalariamente y operación militar dedicada de más de un año.",
+  "whyMatters": "Único caso global con: (a) cohorte epidemiológica de cientos de víctimas médicamente documentadas, (b) operación militar formal dedicada por más de un año (Operação Prato), (c) reconocimiento oficial posterior por la fuerza aérea responsable (FAB 2010), (d) corpus fotográfico/fílmico/documental masivo preservado. La escala y profundidad institucional convierte a Colares en un caso sin paralelo metodológico en el corpus UAP mundial.",
+  "evidence": [
+    "Operação Prato FAB (1977-1978) — 2,000+ páginas + 500+ fotografías + film 16mm",
+    "Cohorte médica documentada en hospitales de Belém con quemaduras geométricas + anemia",
+    "Reconocimiento oficial FAB 2010 vía Arquivo Nacional",
+    "Testimonios extensos del Capitán Uyrangê Hollanda (entrevistas 1997)"
+  ],
+  "sources": [
+    {
+      "name": "Arquivo Nacional Brasil — Operação Prato (declassified 2005-2010)",
+      "url": "https://www.arquivonacional.gov.br/"
+    },
+    {
+      "name": "Pacaccini, D. — Operação Prato (documental, 2003)",
+      "note": "Reconstrucción periodística primaria"
+    },
+    {
+      "name": "Stratton, K. & Powell, R. — Colares UAP Event (SCU 2022)",
+      "url": "https://www.explorescu.org/"
+    }
+  ]
+}

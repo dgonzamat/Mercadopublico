@@ -1,0 +1,44 @@
+{
+  "id": "westall-1966",
+  "num": 13,
+  "name": "Westall Australia",
+  "year_start": 1966,
+  "country": "AU",
+  "country_name": "Australia",
+  "flag": "🇦🇺",
+  "location": {
+    "lat": -37.94,
+    "lng": 145.13,
+    "place": "Westall, Melbourne"
+  },
+  "tier": "S",
+  "probability": 75,
+  "summary": "300+ estudiantes + maestros, marca física, RAAF acknowledged",
+  "summary_en": "300+ students + teachers, physical mark, RAAF acknowledged",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 6 de abril de 1966, durante el recreo matutino de la Westall High School en Clayton South (suburbio de Melbourne, Australia), aproximadamente 300 estudiantes, profesores y residentes del barrio observaron un objeto plateado en forma de platillo descender sobre un pastizal adyacente al complejo escolar (Grange Reserve).\n\nEl objeto se posó sobre el pastizal aproximadamente 5 minutos, luego ascendió y fue perseguido por cinco Royal Australian Air Force (RAAF) jets que llegaron a la escena, según múltiples testigos. Tras la partida del objeto, un círculo de hierba quemada con aplastamiento geométrico permaneció visible durante semanas en el sitio de aterrizaje.\n\nEl Departamento de Educación del Estado de Victoria instruyó al personal docente no discutir el evento. El RAAF reconoció haber recibido reportes pero no realizó investigación formal documentada. En 2014, el Departamento de Defensa australiano publicó vía FOIA el archivo oficial 'A703/580/1/1' que confirma que el caso fue reportado y archivado sin investigación. Un documental nacional ('Westall '66', 2010) compiló testimonios de adultos que fueron testigos infantiles, con consistencia narrativa de 44 años.",
+  "whyMatters": "Único caso global con 300+ testigos infantiles + adultos en evento escolar diurno con evidencia física (círculo de hierba), persecución militar reportada y supresión administrativa documentada por departamento estatal de educación. La consistencia testimonial sostenida durante cuatro décadas y el reconocimiento RAAF moderno hacen este caso un ancla institucional rara en el corpus.",
+  "evidence": [
+    "300+ testigos directos (estudiantes + profesores + residentes)",
+    "Círculo de hierba quemada con aplastamiento documentado fotográficamente",
+    "Archivo oficial RAAF A703/580/1/1 (FOIA 2014)",
+    "Instrucción documentada del Departamento de Educación de Victoria de no discutir el evento"
+  ],
+  "sources": [
+    {
+      "name": "Australian Dept of Defence — A703/580/1/1 (FOIA)",
+      "url": "https://recordsearch.naa.gov.au/"
+    },
+    {
+      "name": "Westall '66: A Suburban UFO Mystery (2010 documentary)",
+      "note": "Director Rosie Jones, SBS"
+    },
+    {
+      "name": "Chalker, B. — UFO archives Australia",
+      "url": "http://www.theozfiles.com/"
+    }
+  ]
+}

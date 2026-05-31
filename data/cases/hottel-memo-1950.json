@@ -1,0 +1,42 @@
+{
+  "id": "hottel-memo-1950",
+  "num": 7,
+  "name": "Hottel Memo",
+  "year_start": 1950,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.89,
+    "lng": -77.04,
+    "place": "FBI Vault"
+  },
+  "tier": "A",
+  "probability": 10,
+  "summary": "FBI Vault más visto, hearsay 3 discos + 9 cuerpos NM",
+  "summary_en": "Most-viewed FBI Vault doc, hearsay 3 discs + 9 bodies NM",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "El 22 de marzo de 1950, el Special Agent in Charge de la oficina del FBI en Washington, Guy Hottel, envió un memorándum al director J. Edgar Hoover. El documento de una página reporta información provista por un informante de la USAF: tres 'flying saucers' habrían sido recuperados en Nuevo México, cada uno con tres tripulantes de aproximadamente tres pies de altura.\n\nEl memo Hottel es hearsay de segundo orden: Hottel reporta lo que un investigador AF reportó haber escuchado. No identifica fuente primaria ni testigos directos. El FBI lo archivó sin investigación adicional. Permaneció en archivos hasta 2011, cuando el FBI Vault online lo publicó. Desde entonces ha sido el documento más visto del FBI Vault (>10 millones de descargas a 2024).\n\nEl propio FBI emitió en 2013 una nota aclaratoria notando que el documento es hearsay no verificado y que su publicación 'no implica autenticación del contenido por parte del FBI'. La descripción coincide estilísticamente con el material hoax de Frank Scully ('Behind the Flying Saucers', 1950) que circulaba contemporáneamente.",
+  "whyMatters": "Ejemplo arquetípico del problema epistémico en el corpus UAP: documento gubernamental auténtico cuyo contenido es hearsay no verificable. Su popularidad ilustra cómo la curva de atención mediática se desacopla de la calidad evidencial — el memo es genuino como documento FBI pero su valor probatorio sobre el fenómeno UAP es bajo. Caso de calibración necesaria para discriminar entre 'documento real' y 'contenido real'.",
+  "evidence": [
+    "Memo original FBI firmado por Hottel (22 marzo 1950)",
+    "Aclaración FBI 2013 sobre status hearsay no verificado",
+    "Convergencia textual con material Scully (Behind the Flying Saucers, 1950)",
+    "Ausencia de archivos USAF correspondientes a la 'recuperación' reportada"
+  ],
+  "sources": [
+    {
+      "name": "FBI Vault — Hottel Memo",
+      "url": "https://vault.fbi.gov/hottel_guy/Guy%20Hottel%20Part%201%20of%201/view"
+    },
+    {
+      "name": "FBI clarification statement (2013)",
+      "url": "https://www.fbi.gov/news/stories/the-hottel-memo-roswell"
+    },
+    {
+      "name": "Scully, F. — Behind the Flying Saucers (1950)",
+      "note": "Texto contemporáneo con narrativa similar"
+    }
+  ]
+}

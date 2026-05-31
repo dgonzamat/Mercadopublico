@@ -1,0 +1,45 @@
+{
+  "id": "coyne-1973",
+  "num": 17,
+  "name": "Coyne Helicopter",
+  "year_start": 1973,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.42,
+    "lng": -82.91,
+    "place": "Mansfield, Ohio"
+  },
+  "tier": "S",
+  "probability": 85,
+  "summary": "UH-1H Army Reserve, helicóptero elevado 600m sin control del piloto, AAR oficial",
+  "summary_en": "UH-1H Army Reserve, helicopter raised 600m without pilot control, official AAR",
+  "patterns": [
+    "8a",
+    "8k"
+  ],
+  "category": "incident",
+  "whatHappened": "El 18 de octubre de 1973, alrededor de las 23:00 hora local, un helicóptero Bell UH-1H del Army Reserve volaba a 2,500 pies sobre Mansfield, Ohio, transportando al Capitán Lawrence Coyne y tres tripulantes desde Columbus a Cleveland. El Sargento Yanacsek avistó una luz roja al este aproximándose en curso de colisión. Coyne tomó controles y inició descenso de emergencia desde 2,500 a 1,700 pies a 2,000 pies por minuto.\n\nAntes del impacto esperado, el objeto se detuvo encima del helicóptero. Era una estructura gris metálica con forma de cigarro, luz roja al frente, luz verde tipo proyector apuntando hacia ellos y luz blanca trasera. El proyector verde iluminó la cabina. La brújula magnética del helicóptero comenzó a girar sin control. El altímetro indicaba 3,500 pies — Coyne descubrió que el helicóptero había subido 1,800 pies sin acción del piloto, con el colectivo en posición de descenso.\n\nEl objeto aceleró hacia el noroeste y se retiró. El control de tráfico aéreo de Mansfield confirmó haber recibido el tráfico anómalo en radar durante el evento. Cuatro testigos terrestres independientes (familia Coyne en automóvil) reportaron observar tanto al helicóptero como al objeto. El After Action Report fue archivado oficialmente por el Army Reserve y publicado posteriormente.",
+  "whyMatters": "Único caso militar documentado de manipulación cinética aparente de una aeronave por un objeto no identificado, con discrepancia verificable entre la posición del control de vuelo y la altitud real. Reportado por aviadores profesionales con calificación de instrumentos y respaldado por testimonio civil independiente. El AAR del Army permanece en el archivo oficial sin reclasificación.",
+  "evidence": [
+    "After Action Report (AAR) del 316th Medical Detachment, Army Reserve",
+    "Discrepancia altimétrica de 1,800 pies con colectivo en posición de descenso",
+    "Testimonio independiente de cuatro civiles desde tierra (familia Coyne)",
+    "Confirmación radar de Mansfield ARTCC del tráfico no identificado"
+  ],
+  "sources": [
+    {
+      "name": "Coyne AAR, Army Reserve 1973",
+      "url": "https://documents2.theblackvault.com/documents/ufos/coyne-helicopter-incident.pdf"
+    },
+    {
+      "name": "Zeidman, J. — 'A Helicopter-UFO Encounter Over Ohio' (CUFOS 1979)",
+      "note": "Reconstrucción técnica completa"
+    },
+    {
+      "name": "NICAP — Coyne case directory",
+      "url": "http://www.nicap.org/731018coyne_dir.htm"
+    }
+  ]
+}

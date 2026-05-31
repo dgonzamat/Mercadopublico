@@ -1,0 +1,44 @@
+{
+  "id": "bolender-memo-1969",
+  "num": 16,
+  "name": "Bolender Memo",
+  "year_start": 1969,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.89,
+    "lng": -77.04,
+    "place": "USAF Pentagon"
+  },
+  "tier": "S",
+  "probability": 95,
+  "summary": "'UFOs national security NOT part of Blue Book' — sistema paralelo",
+  "summary_en": "'UFOs national security NOT part of Blue Book' — parallel system",
+  "patterns": [
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "El 20 de octubre de 1969, el Brigadier General Carroll Bolender, Deputy Director de Development en el USAF Office of Aerospace Research, envió un memorándum interno preparatorio para el cierre administrativo de Project Blue Book (que efectivamente ocurrió en diciembre 1969).\n\nEl párrafo crítico del memo establece textualmente: 'Reports of UFOs which could affect national security are made in accordance with JANAP 146 or Air Force Manual 55-11, and are not part of the Blue Book system.' Esta declaración confirma documentalmente — desde la institución USAF — que el sistema público de investigación de UFOs (Blue Book) operaba en paralelo con un canal clasificado distinto reservado para casos con implicancias de seguridad nacional.\n\nJANAP 146 es el Joint Army-Navy-Air Force Publication para reportes de objetos hostiles o no identificados en el espacio aéreo continental; AFM 55-11 es el manual de Communications Instructions for Reporting Vital Intelligence Sightings (CIRVIS). Ambos canales tienen clasificación operacional y no archivan en Blue Book. El memo Bolender es la confirmación más explícita disponible del sistema dual.",
+  "whyMatters": "Documento bisagra para la metodología institucional: confirma que el cierre de Blue Book en 1969 no implicó el cierre de la investigación gubernamental del fenómeno UAP — solo el cierre de su canal público. Los reportes con implicancias de seguridad nacional siguieron fluyendo por JANAP 146 / CIRVIS sin trazabilidad pública. Establece el piso documental para investigaciones posteriores sobre programas compartimentados (AAWSAP, AATIP, UAPTF, Grusch testimony).",
+  "evidence": [
+    "Memorándum Bolender original (20 octubre 1969) preservado y desclasificado",
+    "Cita textual confirmando canal paralelo JANAP 146 / AFM 55-11",
+    "Cierre Blue Book en diciembre 1969 — confirmación cronológica del propósito del memo",
+    "Continuidad documentada de programas posteriores (AAWSAP 2008+, AATIP 2007+)"
+  ],
+  "sources": [
+    {
+      "name": "Bolender Memo USAF (declassified)",
+      "url": "https://documents2.theblackvault.com/documents/ufos/bolendermemo.pdf"
+    },
+    {
+      "name": "JANAP 146 — Joint Army-Navy-Air Force Publication",
+      "url": "https://www.jcs.mil/Library/CJCS-Manuals/"
+    },
+    {
+      "name": "Air Force Manual 55-11 (CIRVIS)",
+      "note": "Communications Instructions Reporting Vital Intelligence Sightings"
+    }
+  ]
+}

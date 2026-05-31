@@ -40,6 +40,10 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
     .sort((a, b) => b.score - a.score)
     .slice(0, 5);
 
+  const hasRichContent = Boolean(
+    c.whatHappened || c.whyMatters || (c.evidence && c.evidence.length > 0) || (c.sources && c.sources.length > 0),
+  );
+
   return (
     <article className="mx-auto max-w-3xl space-y-8">
       <Link href="/cases" className="text-sm text-muted hover:text-accent">
@@ -73,6 +77,38 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
         {c.summary_en && (<p className="mt-2 text-sm italic text-muted">{c.summary_en}</p>)}
       </section>
 
+      {c.whatHappened && (
+        <section>
+          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Qué pasó</h2>
+          <div className="mt-2 space-y-3 text-text">
+            {c.whatHappened.split("\n\n").map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {c.whyMatters && (
+        <section>
+          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Por qué importa</h2>
+          <p className="mt-2 text-text">{c.whyMatters}</p>
+        </section>
+      )}
+
+      {c.evidence && c.evidence.length > 0 && (
+        <section>
+          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Evidencia documentada</h2>
+          <ul className="mt-2 space-y-2">
+            {c.evidence.map((item, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm text-text">
+                <span aria-hidden className="mt-0.5 font-mono text-accent">·</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section>
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Ubicación</h2>
         <p className="mt-2 text-text">{c.location.place || c.country_name}</p>
@@ -100,6 +136,41 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {c.sources && c.sources.length > 0 && (
+        <section>
+          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Fuentes</h2>
+          <ul className="mt-2 space-y-2">
+            {c.sources.map((s, i) => (
+              <li key={i} className="text-sm">
+                {s.url ? (
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                  >
+                    {s.name}
+                  </a>
+                ) : (
+                  <span className="text-text">{s.name}</span>
+                )}
+                {s.note && <span className="ml-1 text-muted"> — {s.note}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {!hasRichContent && (
+        <section className="rounded-md border border-border bg-panel p-4 text-sm text-muted">
+          <p>
+            <strong className="text-text">⏳ Caso pendiente de explicación detallada.</strong>{" "}
+            Este caso aún no tiene narrativa, evidencia ni fuentes documentadas — solo el resumen
+            de arriba. Estamos expandiendo gradualmente los 51 casos del corpus.
+          </p>
         </section>
       )}
 
