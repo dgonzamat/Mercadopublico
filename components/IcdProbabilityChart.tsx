@@ -52,7 +52,7 @@ export function IcdProbabilityChart() {
                 className="font-mono text-xs uppercase tracking-wider"
                 style={{ color: h.color }}
               >
-                {h.icd.labelEs} <span className="opacity-60">({h.icd.label})</span>
+                {h.icd.labelEs} <span className="text-muted">({h.icd.label})</span>
               </span>
             </div>
 

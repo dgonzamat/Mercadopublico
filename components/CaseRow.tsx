@@ -22,6 +22,7 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       <span className="text-xl" aria-hidden>
         {caseData.flag}
       </span>
+      <span className="sr-only">{caseData.country_name}.</span>
       <div className="min-w-0 flex-1">
         <p className="truncate text-sm font-medium text-text group-hover:text-accent">
           {caseData.name}
