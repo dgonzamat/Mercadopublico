@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { href: "/cases", label: "Casos" },
   { href: "/atlas", label: "Atlas" },
   { href: "/patterns", label: "Patrones" },
-  { href: "/researchers", label: "Researchers" },
+  { href: "/researchers", label: "Ecosistema" },
   { href: "/frameworks", label: "Frameworks" },
   { href: "/about", label: "Metodología" },
   { href: "/resumen", label: "Resumen" },
@@ -32,12 +32,12 @@ export function MobileNav() {
 
       {open && (
         <div
-          className="sm:hidden fixed inset-0 top-[57px] z-40 bg-bg/95 backdrop-blur-sm"
+          className="sm:hidden fixed inset-0 top-[57px] z-40 overflow-y-auto bg-bg/95 backdrop-blur-sm"
           onClick={() => setOpen(false)}
           role="presentation"
         >
           <nav
-            className="border-t border-border bg-bg px-4 py-4"
+            className="min-h-full border-t border-border bg-bg px-4 py-4"
             onClick={(e) => e.stopPropagation()}
             aria-label="Navegación principal"
           >

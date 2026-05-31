@@ -23,7 +23,10 @@ export default function RootLayout({
     <html lang="es">
       <body className="min-h-screen">
         <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
-          <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+          <nav
+            className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3"
+            aria-label="Principal"
+          >
             <Link href="/" className="font-mono text-sm tracking-tight text-text">
               <span className="text-accent">▲</span> UAP Atlas
             </Link>
@@ -31,7 +34,7 @@ export default function RootLayout({
               <Link href="/cases" className="hover:text-text">Casos</Link>
               <Link href="/atlas" className="hover:text-text">Atlas</Link>
               <Link href="/patterns" className="hover:text-text">Patrones</Link>
-              <Link href="/researchers" className="hover:text-text">Researchers</Link>
+              <Link href="/researchers" className="hover:text-text">Ecosistema</Link>
               <Link href="/frameworks" className="hover:text-text">Frameworks</Link>
               <Link href="/about" className="hover:text-text">Metodología</Link>
               <Link href="/resumen" className="hover:text-text">Resumen</Link>
@@ -43,7 +46,14 @@ export default function RootLayout({
         <footer className="border-t border-border py-8 text-center text-xs text-muted">
           <p>
             UAP Atlas · análisis institucional · corpus open source ·{" "}
-            <a href="https://github.com/dgonzamat/mercadopublico" className="text-accent hover:underline">github</a>
+            <a
+              href="https://github.com/dgonzamat/mercadopublico"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              github
+            </a>
           </p>
         </footer>
       </body>

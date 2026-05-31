@@ -10,8 +10,8 @@ const WorldMap = dynamic(() => import("@/components/WorldMap"), {
 });
 
 export const metadata = {
-  title: "Atlas · UAP",
-  description: "Mapa global de casos institucionales UAP 1947-2026",
+  title: "Atlas · UAP Atlas",
+  description: "Mapa global de 51 casos UAP institucionales 1947-2026",
 };
 
 export default function AtlasPage() {
@@ -22,8 +22,11 @@ export default function AtlasPage() {
   return (
     <div className="space-y-6">
       <header>
-        <h1 className="text-3xl font-bold text-text">Pattern Atlas</h1>
-        <p className="mt-2 text-muted">{cases.length} casos UAP institucionales distribuidos globalmente (1947–2026). Click un marcador para ver el caso.</p>
+        <h1 className="text-3xl font-bold text-text">Mapa de casos UAP</h1>
+        <p className="mt-2 text-muted">
+          {cases.length} casos institucionales distribuidos globalmente (1947–2026).
+          Click un marcador para abrir el caso. Color = tier de confianza.
+        </p>
       </header>
 
       <div className="flex flex-wrap gap-3 text-xs">
@@ -37,7 +40,9 @@ export default function AtlasPage() {
       </div>
 
       <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">Patrones documentados ({patterns.length})</h2>
+        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+          Patrones documentados ({patterns.length})
+        </h2>
         <div className="mt-3 flex flex-wrap gap-2">
           {patterns.map((p) => (
             <Link key={p.id} href={`/patterns/${p.letter}`} className="rounded border border-border bg-panel px-2.5 py-1 text-xs hover:border-accent/50" style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}>
