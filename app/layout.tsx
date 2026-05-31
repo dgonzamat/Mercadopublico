@@ -6,10 +6,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "UAP Atlas — Análisis institucional",
   description:
-    "79 años del fenómeno UAP documentados institucionalmente. 51 casos, 18 patrones, 11 frameworks comparados.",
+    "Qué tan probable es cada hipótesis sobre UAP. 51 casos institucionales documentados desde 1947, probabilidad expresada como juicio analítico calibrado ICD-203.",
   openGraph: {
     title: "UAP Atlas — Análisis institucional",
-    description: "79 años de fenómeno UAP, 51 casos, 18 patrones.",
+    description: "Probabilidades por hipótesis (ICD-203) sobre 51 casos UAP.",
     type: "website",
   },
 };
@@ -32,6 +32,7 @@ export default function RootLayout({
             </Link>
             <div className="hidden gap-5 text-sm text-muted sm:flex">
               <Link href="/cases" className="hover:text-text">Casos</Link>
+              <Link href="/probabilidades" className="hover:text-text">Probabilidades</Link>
               <Link href="/atlas" className="hover:text-text">Atlas</Link>
               <Link href="/patterns" className="hover:text-text">Patrones</Link>
               <Link href="/researchers" className="hover:text-text">Ecosistema</Link>

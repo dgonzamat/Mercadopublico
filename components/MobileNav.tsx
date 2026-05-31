@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { href: "/cases", label: "Casos" },
+  { href: "/probabilidades", label: "Probabilidades" },
   { href: "/atlas", label: "Atlas" },
   { href: "/patterns", label: "Patrones" },
   { href: "/researchers", label: "Ecosistema" },
@@ -17,8 +18,6 @@ export function MobileNav() {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
-  // Close on Escape + lock body scroll + focus first link when drawer opens.
-  // This is the shadcn Sheet pattern reproduced manually (zero deps).
   useEffect(() => {
     if (!open) return;
     function onKeyDown(e: KeyboardEvent) {
