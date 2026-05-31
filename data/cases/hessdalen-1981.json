@@ -1,0 +1,44 @@
+{
+  "id": "hessdalen-1981",
+  "num": 26,
+  "name": "Hessdalen lights",
+  "year_start": 1981,
+  "country": "NO",
+  "country_name": "Noruega",
+  "flag": "🇳🇴",
+  "location": {
+    "lat": 62.78,
+    "lng": 11.2,
+    "place": "Hessdalen Valley"
+  },
+  "tier": "A",
+  "probability": 60,
+  "summary": "ÚNICO monitoreo científico continuo 44 años, AMS, peer-reviewed",
+  "summary_en": "ONLY continuous scientific monitoring 44 years, AMS, peer-reviewed",
+  "patterns": [
+    "8g"
+  ],
+  "category": "incident",
+  "whatHappened": "Desde 1981, residentes del Valle de Hessdalen (Noruega central) reportaron luces anómalas — esferas luminosas blancas, amarillas o rojas — flotando, descendiendo, ascendiendo y desplazándose por el valle, típicamente nocturnas pero también diurnas. Los reportes alcanzaron pico de 15 a 20 observaciones semanales en 1984.\n\nEn 1983 se estableció Project Hessdalen, primer estudio científico continuo de un fenómeno luminoso anómalo. Las universidades de Bergen (Noruega) y posteriormente del Politecnico di Torino (Italia) instalaron estaciones automatizadas con magnetómetros, cámaras CCD, radar y espectrómetros. La instrumentación ha registrado decenas de eventos con datos cuantitativos: espectros ópticos con líneas no consistentes con plasma atmosférico estándar, perturbaciones magnéticas locales, persistencia luminosa que excede mecanismos conocidos de ball lightning.\n\nEl Dr. Massimo Teodorani (físico, Torino) y el Dr. Erling Strand (Universidad Østfold) lideraron publicaciones peer-reviewed en revistas como Journal of Scientific Exploration y diversos proceedings internacionales. Hipótesis activas incluyen plasma natural exótico estabilizado por configuración geomagnética local (el valle tiene anomalías minerales), aunque ninguna explicación convencional ha replicado las características observadas. Hessdalen es el único laboratorio natural continuo de UAP operacional desde 1983.",
+  "whyMatters": "Único caso global con investigación científica continua, instrumental, multidisciplinaria y peer-reviewed durante más de cuatro décadas sobre un fenómeno luminoso recurrente en una geografía específica. Independientemente de hipótesis sobre la naturaleza causal, establece el modelo metodológico que el fenómeno UAP requiere — instrumentación continua, no reportes anecdóticos — y demuestra que el establishment científico puede comprometerse cuando el fenómeno es localmente reproducible.",
+  "evidence": [
+    "Estación AMS (Automatic Measurement Station) operacional desde 1998",
+    "Publicaciones peer-reviewed Teodorani, Strand et al. en JSE y EuroSky",
+    "Espectros ópticos con líneas no consistentes con plasma estándar",
+    "Cuarenta años de datos continuos preservados en repositorios universitarios"
+  ],
+  "sources": [
+    {
+      "name": "Project Hessdalen — official site (Østfold University)",
+      "url": "https://www.hessdalen.org/"
+    },
+    {
+      "name": "Teodorani, M. — 'A Long-Term Scientific Survey' JSE 2004",
+      "url": "https://www.scientificexploration.org/"
+    },
+    {
+      "name": "EuroSky Workshop proceedings — Hessdalen sessions",
+      "note": "Proceedings anuales 2010-2024"
+    }
+  ]
+}

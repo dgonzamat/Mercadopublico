@@ -1,9 +1,10 @@
 {
-  "name": "uap-atlas",
+  "name": "uap-analysis-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/build-cases.mjs && next dev",
+    "prebuild": "node scripts/build-cases.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
