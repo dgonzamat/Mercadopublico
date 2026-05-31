@@ -9,27 +9,37 @@ export function cn(...inputs: ClassValue[]) {
 
 export type TierKey = "S" | "A" | "B";
 
-export const TIER_META: Record<TierKey, { label: string; color: string; bg: string; border: string; description: string }> = {
+export const TIER_META: Record<TierKey, {
+  label: string;
+  plain: string;
+  color: string;
+  bg: string;
+  border: string;
+  description: string;
+}> = {
   S: {
     label: "Tier S",
+    plain: "Sólido",
     color: "text-tierS",
     bg: "bg-tierS/10",
     border: "border-tierS/40",
-    description: "Militar + sensor + multi-witness (75–88% confianza)",
+    description: "Caso militar con sensor y múltiples testigos (75–88% confianza)",
   },
   A: {
     label: "Tier A",
+    plain: "Aceptable",
     color: "text-tierA",
     bg: "bg-tierA/10",
     border: "border-tierA/40",
-    description: "Institucional civil o multi-witness verificable (65–85%)",
+    description: "Caso civil institucional con múltiples testigos verificables (65–85%)",
   },
   B: {
     label: "Tier B",
+    plain: "Folklórico",
     color: "text-tierB",
     bg: "bg-tierB/10",
     border: "border-tierB/40",
-    description: "Folklórico, persistencia local, recurrente (50–65%)",
+    description: "Fenómeno recurrente local sin verificación primaria (50–65%)",
   },
 };
 

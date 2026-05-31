@@ -108,7 +108,7 @@ export function MobileNav() {
 
               {/* NAV PRINCIPAL */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                Navegar el corpus
+                Explorar los 52 casos
               </p>
               <ul className="mt-4 divide-y divide-bg/15 border-y border-bg/15">
                 {NAV_LINKS.map((l) => (

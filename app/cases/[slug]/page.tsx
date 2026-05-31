@@ -25,8 +25,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 function findPullQuote(text?: string): string | null {
   if (!text) return null;
   const patterns = [
-    /[""]([^""]{30,240})[""]|"([^"]{30,240})"/g,
-    /''([^']{30,240})''|'([^']{30,240})'/g,
+    /[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g,
+    /‘’([^‘’]{30,240})‘’|'([^']{30,240})'/g,
   ];
   const all: string[] = [];
   for (const re of patterns) {
@@ -104,7 +104,7 @@ export default function CaseDetailPage({
             <span className="mx-2 text-text/30">·</span>
             {c.country_name}
             <span className="mx-2 text-text/30">·</span>
-            Tier {c.tier}
+            Evidencia {TIER_META[c.tier].plain.toLowerCase()}
           </p>
         </div>
 

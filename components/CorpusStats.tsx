@@ -21,7 +21,7 @@ export function CorpusStats() {
   return (
     <section aria-labelledby="corpus-stats-title" className="space-y-12">
       <div className="space-y-4">
-        <Eyebrow>Corpus · hechos verificables</Eyebrow>
+        <Eyebrow>Hechos verificables · {tiers.total} casos</Eyebrow>
         <H2 id="corpus-stats-title" className="max-w-3xl">
           Lo que sí podemos contar.
           <br />
@@ -33,32 +33,34 @@ export function CorpusStats() {
 
       {/* Tiers — three giant numbers */}
       <div className="space-y-6">
-        <Eyebrow>Tier de evidencia</Eyebrow>
+        <Eyebrow>Calidad de evidencia por caso</Eyebrow>
         <div className="grid grid-cols-3 gap-8 md:gap-12">
           <TierStat
-            label="Tier S"
+            label="Sólido"
             count={tiers.S}
             total={tiers.total}
             colorClass="text-tierS"
           />
           <TierStat
-            label="Tier A"
+            label="Aceptable"
             count={tiers.A}
             total={tiers.total}
             colorClass="text-tierA"
           />
           <TierStat
-            label="Tier B"
+            label="Folklórico"
             count={tiers.B}
             total={tiers.total}
             colorClass="text-tierB"
           />
         </div>
         <Caption className="max-w-3xl pt-2">
-          <strong className="text-text">S</strong> militar+sensor+multi-witness
-          · <strong className="text-text">A</strong> institucional civil
-          multi-witness · <strong className="text-text">B</strong> folklórico
-          recurrente
+          <strong className="text-text">Sólido (S)</strong> caso militar con
+          sensor y múltiples testigos ·{" "}
+          <strong className="text-text">Aceptable (A)</strong> caso civil
+          institucional verificable ·{" "}
+          <strong className="text-text">Folklórico (B)</strong> fenómeno
+          recurrente local
         </Caption>
       </div>
 
