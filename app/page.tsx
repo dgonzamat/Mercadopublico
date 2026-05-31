@@ -1,48 +1,39 @@
 import Link from "next/link";
 import { cases } from "@/lib/data";
 import { IcdProbabilityChart } from "@/components/IcdProbabilityChart";
-import { CorpusStats } from "@/components/CorpusStats";
 
+/**
+ * Home minimalista — SOLO un dashboard.
+ *
+ * Iteraciones previas agregaban "Lo que sí podemos contar" (CorpusStats) +
+ * CTAs múltiples. El usuario dejó claro: solo título + dashboard + ir al cálculo.
+ * Esta versión cumple esa restricción a la letra.
+ */
 export default function HomePage() {
   return (
-    <div className="space-y-16">
-      {/* HERO — objetivo en 30 seg */}
-      <section className="pt-12">
-        <p className="font-mono text-xs uppercase tracking-widest text-accent">
-          Análisis institucional de UAP — Unidentified Anomalous Phenomena
-        </p>
-        <h1 className="mt-3 text-4xl font-bold leading-tight text-text sm:text-6xl">
-          Qué tan probable es
-          <br />
-          <span className="text-muted">cada hipótesis sobre UAP</span>
+    <div className="mx-auto max-w-3xl space-y-8 py-8">
+      {/* Título ultra compacto */}
+      <header>
+        <h1 className="text-2xl font-bold text-text sm:text-3xl">
+          ¿Qué tan probable es cada hipótesis sobre UAP?
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted">
-          Probabilidad expresada como juicio analítico calibrado (estándar ICD-203),
-          sobre {cases.length} casos institucionales documentados desde 1947.
+        <p className="mt-2 text-sm text-muted">
+          {cases.length} casos institucionales · 1947–2026 · estándar ICD-203
         </p>
-      </section>
+      </header>
 
-      {/* CAPA 1 — Juicio analítico via ICD-203 */}
+      {/* EL dashboard — único elemento del home */}
       <IcdProbabilityChart />
 
-      {/* CAPA 2 — Hechos verificables del corpus */}
-      <CorpusStats />
-
-      {/* CTAs */}
-      <section className="flex flex-wrap gap-3 border-t border-border pt-8">
+      {/* Una sola CTA hacia el razonamiento detallado */}
+      <div className="border-t border-border pt-6">
         <Link
           href="/probabilidades"
-          className="rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-bg hover:bg-accent/90"
+          className="inline-flex items-center gap-2 rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-bg hover:bg-accent/90"
         >
-          Ver el razonamiento detallado →
+          Ver cómo se llegó a estas probabilidades →
         </Link>
-        <Link
-          href="/cases"
-          className="rounded-md border border-border px-5 py-2.5 text-sm font-medium text-text hover:bg-panel"
-        >
-          Explorar los {cases.length} casos
-        </Link>
-      </section>
+      </div>
     </div>
   );
 }
