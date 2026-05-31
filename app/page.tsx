@@ -55,7 +55,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl space-y-16 px-4">
           <div className="space-y-6">
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-              La respuesta del corpus
+              La respuesta de los {cases.length} casos
             </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
               Los UAP{" "}

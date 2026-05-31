@@ -140,7 +140,7 @@ export default function RootLayout({
             </div>
 
             <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
-              Corpus open source ·{" "}
+              Colección open source ·{" "}
               <a
                 href="https://github.com/dgonzamat/mercadopublico"
                 className="text-text hover:text-accent hover:underline"

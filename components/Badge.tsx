@@ -40,14 +40,17 @@ export function TierBadge({ tier, withDescription = false }: { tier: TierKey; wi
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-md border px-3 py-1 font-mono text-xs uppercase",
+        "inline-flex items-center gap-2 rounded-none border-2 px-3 py-1 text-xs",
         meta.bg,
         meta.border,
         meta.color,
       )}
       title={withDescription ? undefined : meta.description}
     >
-      Tier {tier}
+      <span className="font-display font-medium">{meta.plain}</span>
+      <span className="font-mono uppercase tracking-widest text-muted">
+        {tier}
+      </span>
     </span>
   );
 }
