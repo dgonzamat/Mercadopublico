@@ -15,8 +15,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      base_path: ${{ steps.pages.outputs.base_path }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,7 +28,6 @@ jobs:
         with:
           node-version: '20'
 
-      # Detect canonical Pages base path so basePath matches the real URL.
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -45,18 +46,8 @@ jobs:
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
-      - name: Debug — what the build actually produced
-        run: |
-          echo "=== First CSS href in out/index.html ==="
-          grep -oE 'href="[^"]*\.css[^"]*"' out/index.html | head -1
-          echo "=== Sample nav hrefs ==="
-          grep -oE 'href="/[^"]*"' out/index.html | sort -u | head -8
-          echo "=== Pages count ==="
-          find out -name 'index.html' | wc -l
-
-      # Push to gh-pages branch — works with "Deploy from a branch" source
-      # which is the most reliable / least-fragile Pages config.
-      - name: Deploy to gh-pages branch
+      # Path 1: push to gh-pages branch (works if Pages source = "Deploy from a branch")
+      - name: Deploy to gh-pages branch (peaceiris)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -64,3 +55,25 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
           commit_message: "deploy: ${{ github.event.head_commit.message }}"
+
+      # Path 2: upload as Pages artifact (works if Pages source = "GitHub Actions")
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  # Deploy via official Pages — only completes if source = "GitHub Actions"
+  # If source is "branch", this job errors silently but path 1 above already
+  # published the site.
+  deploy-official:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    continue-on-error: true
+    steps:
+      - name: Deploy to GitHub Pages (official)
+        id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
