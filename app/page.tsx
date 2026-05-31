@@ -115,7 +115,7 @@ export default function HomePage() {
             <span className="text-muted"> — Tier S = militar + sensor + multi-witness, 75-88% confianza</span>
           </ValueBullet>
           <ValueBullet>
-            Identificar <strong className="text-text">los {patterns.length} patrones</strong> que se repiten — incluyendo el cover-up institucional de 78 años
+            Identificar <strong className="text-text">los {patterns.length} patrones</strong> que se repiten — incluyendo el cover-up institucional de 79 años
           </ValueBullet>
           <ValueBullet>
             Comparar <strong className="text-text">las {frameworks.length} hipótesis serias</strong>
@@ -149,7 +149,7 @@ export default function HomePage() {
             icon="🔍"
             label="Quiero ver casos"
             title="51 casos cronológicos"
-            desc="Ordenados por era 1947-2026. Filtrables por tier de evidencia. Mapas, patrones, fuentes."
+            desc="Ordenados por era 1947-2026. Cada uno con tier, fuente, patrones, casos relacionados."
           />
           <PathCard
             href="/about"
@@ -170,7 +170,7 @@ export default function HomePage() {
           <ModuleCard
             href="/atlas"
             badge="En vivo"
-            title="Atlas visual"
+            title="Mapa de casos"
             desc="Mapa mundial con los 51 casos UAP geolocalizados por país y época. Click un marcador para abrir el caso."
           />
           <ModuleCard
@@ -193,6 +193,10 @@ export default function HomePage() {
         <h2 id="destacados" className="text-sm font-mono uppercase tracking-widest text-muted">
           Casos destacados
         </h2>
+        <p className="mt-2 text-sm text-muted">
+          Los 6 casos con mayor probabilidad — todos Tier S. ¿Quieres ver los otros 45?{" "}
+          <Link href="/cases" className="text-accent hover:underline">Lista completa</Link>.
+        </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((c) => (<FeaturedCase key={c.id} caseData={c} />))}
         </div>
@@ -259,14 +263,25 @@ function HypothesisChart() {
       </p>
       <div className="mt-6 space-y-5 rounded-lg border border-border bg-panel p-5">
         {hypothesisDistribution.map((h) => (
-          <div key={h.id}>
+          <div
+            key={h.id}
+            role="group"
+            aria-label={`${h.label}: ${h.pct}%`}
+          >
             <div className="flex items-baseline justify-between gap-3">
               <p className="text-sm font-medium text-text">{h.label}</p>
-              <span className="font-mono text-base font-bold text-text" aria-label={`${h.pct} por ciento`}>
+              <span className="font-mono text-base font-bold text-text">
                 {h.pct}%
               </span>
             </div>
-            <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-bg" role="progressbar" aria-valuenow={h.pct} aria-valuemin={0} aria-valuemax={100}>
+            <div
+              className="mt-1.5 h-2 overflow-hidden rounded-full bg-bg"
+              role="progressbar"
+              aria-valuenow={h.pct}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-label={`${h.label}: ${h.pct} por ciento de probabilidad`}
+            >
               <div className="h-full rounded-full" style={{ width: `${h.pct}%`, backgroundColor: h.color }} />
             </div>
             <p className="mt-1 text-xs text-muted">{h.note}</p>
@@ -321,8 +336,8 @@ function ModuleCard({ href, badge, title, desc, soon }: { href?: string; badge: 
   const inner = (
     <div className={`rounded-lg border p-5 transition ${soon ? "border-border bg-panel opacity-70" : "group border-border bg-panel hover:border-accent/50"}`}>
       <div className="flex items-center gap-2">
-        <span className="rounded bg-bg px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-muted">{badge}</span>
-        {soon && (<span className="rounded bg-tierA/20 px-2 py-0.5 font-mono text-[10px] uppercase text-tierA">próximamente</span>)}
+        <span className="rounded bg-bg px-2 py-0.5 font-mono text-xs uppercase tracking-widest text-muted">{badge}</span>
+        {soon && (<span className="rounded bg-border/60 px-2 py-0.5 font-mono text-xs uppercase text-muted">próximamente</span>)}
       </div>
       <h3 className={`mt-3 text-lg font-medium ${soon ? "text-muted" : "text-text group-hover:text-accent"}`}>{title}</h3>
       <p className="mt-2 text-sm text-muted">{desc}</p>
