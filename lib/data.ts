@@ -9,6 +9,8 @@ export const patterns = patternsData as Pattern[];
 export const frameworks = frameworksData as Framework[];
 export const researchers = researchersData as Researcher[];
 
+export const TOTAL_CASES = cases.length;
+
 export function getResearcher(id: string): Researcher | undefined {
   return researchers.find((r) => r.id === id);
 }
