@@ -1,0 +1,44 @@
+{
+  "id": "valdes-1977",
+  "num": 20,
+  "name": "Caso Valdés",
+  "year_start": 1977,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -22.92,
+    "lng": -68.55,
+    "place": "Andes, Chile"
+  },
+  "tier": "S",
+  "probability": 70,
+  "summary": "6 testigos militares Andes, efectos temporales (barba 5d + reloj 5d en 15 min)",
+  "summary_en": "6 military witnesses Andes, temporal effects (5-day beard + 5-day watch in 15 min)",
+  "patterns": [
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "El 25 de abril de 1977, una patrulla de seis soldados del Regimiento de Caballería 'Caracoles' del Ejército Chileno conducía ejercicio de campo en los altiplanos del desierto de Atacama (cerca de Putre, Región de Arica). A las 04:15 AM, el Cabo Armando Valdés notó luces moviéndose hacia el campamento. Despertó a sus compañeros; los seis observaron simultáneamente dos objetos lumínicos aproximándose en silencio.\n\nValdés tomó su rifle y se separó del grupo para encarar los objetos. Sus compañeros perdieron contacto visual con él durante aproximadamente 15 minutos. Al reaparecer, Valdés presentaba alteración mental severa, balbuceó frases incoherentes incluyendo la fecha '25 de abril' (cuando para los compañeros era ese mismo día), y se desplomó.\n\nLas anomalías físicas documentadas inmediatamente por sus compañeros: barba crecida equivalente a cinco días de no afeitarse (pese a haberse afeitado el día previo), reloj de pulsera adelantado cinco días (al 30 de abril) pero funcionando correctamente desde ese momento. Los soldados regresaron al regimiento; el Comandante notificó a la Fuerza Aérea y se documentó el caso oficialmente. Valdés recuperó funcionalidad días después pero no recordaba el evento intermedio. El caso es uno de los más citados como evidencia anecdótica de dilatación temporal asociada a eventos UAP. CEFAA (Comité de Estudios de Fenómenos Aéreos Anómalos, FACh) lo mantiene en su corpus oficial.",
+  "whyMatters": "Caso militar único con anomalías temporales físicamente verificables en tiempo real por testigos calificados: barba +5 días, reloj +5 días, en lapso reloj testigos de 15 minutos. Independientemente de la interpretación causal, los hechos documentados por seis observadores militares profesionales constituyen una anomalía metodológicamente sólida — alternativas convencionales (fraude colectivo, error de calendario) tienen dificultades para explicar la convergencia barba+reloj.",
+  "evidence": [
+    "Reporte oficial Regimiento Caracoles, Ejército de Chile (abril 1977)",
+    "Testimonio convergente de seis soldados sobre crecimiento de barba y reloj adelantado",
+    "Documentación CEFAA (FACh) preservada en corpus oficial",
+    "Examen médico/psicológico de Valdés en hospital militar de Iquique"
+  ],
+  "sources": [
+    {
+      "name": "CEFAA / DGAC Chile — Corpus oficial",
+      "url": "https://www.dgac.gob.cl/"
+    },
+    {
+      "name": "Bermúdez, J.A. — El Caso Valdés (1977)",
+      "note": "Investigación contemporánea CIFAE"
+    },
+    {
+      "name": "Liga Marcocelona de UAP — Caso Valdés",
+      "note": "Reconstrucción más detallada disponible"
+    }
+  ]
+}

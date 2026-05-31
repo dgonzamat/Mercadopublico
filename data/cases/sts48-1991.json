@@ -1,0 +1,42 @@
+{
+  "id": "sts48-1991",
+  "num": 30,
+  "name": "STS-48 NASA",
+  "year_start": 1991,
+  "country": "US",
+  "country_name": "Órbita Terrestre",
+  "flag": "🌍",
+  "location": {
+    "lat": 0,
+    "lng": 0,
+    "place": "Discovery orbit"
+  },
+  "tier": "A",
+  "probability": 55,
+  "summary": "Discovery video oficial NASA, Carlotto análisis: ~14 000 mph en <1s",
+  "summary_en": "Discovery NASA official video, Carlotto analysis: ~14,000 mph in <1s",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 15 de septiembre de 1991, durante la misión STS-48 del transbordador Discovery, una cámara de video del transbordador apuntada hacia el horizonte terrestre nocturno captó múltiples puntos luminosos moviéndose contra el fondo terrestre. En un punto específico del video, uno de los puntos cambió abruptamente de dirección a aproximadamente 90 grados y aceleró rápidamente, seguido inmediatamente por un destello desde la posición original consistente con un disparo direccional.\n\nNASA Public Affairs explicó las trazas como partículas de hielo desprendidas del transbordador, iluminadas y movidas por chorros de los thrusters Reaction Control System (RCS). El análisis del Dr. Mark Carlotto (anteriormente analista de procesamiento de imágenes en sistemas de defensa) publicado en Journal of Scientific Exploration (1995) disputó esta explicación. Carlotto modeló las trayectorias y calculó aceleraciones equivalentes a aproximadamente 14,000 mph en menos de un segundo — incompatible con partículas de hielo balísticamente neutras.\n\nEl video es de dominio público y ha sido analizado independientemente por múltiples investigadores. La disputa Carlotto vs. NASA Public Affairs es ejemplo de divergencia entre explicación oficial y análisis físico independiente. STS-48 forma parte de la categoría 'NASA-source UAP videos' que incluye STS-75 (1996) y otros, todos con disputas similares.",
+  "whyMatters": "Único caso UAP con video oficial NASA de dominio público, análisis físico independiente peer-reviewed y disputa documentada sobre la explicación oficial. La aceleración calculada por Carlotto (~14,000 mph en <1 segundo) es físicamente incompatible con partículas balísticas. Independientemente de la conclusión final, establece un piso analítico para la categoría 'NASA Shuttle videos' que sigue siendo metodológicamente abierta.",
+  "evidence": [
+    "Video STS-48 oficial NASA archivado y de dominio público",
+    "Carlotto, M. — JSE peer-reviewed analysis (1995) con cálculo de aceleración",
+    "Explicación oficial NASA Public Affairs (partículas de hielo) sin análisis numérico",
+    "Replicación del análisis Carlotto por múltiples investigadores independientes"
+  ],
+  "sources": [
+    {
+      "name": "NASA STS-48 mission archive",
+      "url": "https://www.nasa.gov/mission_pages/shuttle/shuttlemissions/archives/sts-48.html"
+    },
+    {
+      "name": "Carlotto, M. — JSE Vol. 9 (1995) 'Digital Image Analysis'",
+      "url": "https://www.scientificexploration.org/"
+    },
+    {
+      "name": "Oberg, J. — Critique of Carlotto analysis (Skeptical Inquirer 2003)",
+      "note": "Crítica formal a la atribución no-balística"
+    }
+  ]
+}

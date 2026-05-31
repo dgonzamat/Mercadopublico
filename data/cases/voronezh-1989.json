@@ -1,0 +1,44 @@
+{
+  "id": "voronezh-1989",
+  "num": 28,
+  "name": "Voronezh",
+  "year_start": 1989,
+  "country": "RU",
+  "country_name": "URSS / Rusia",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 51.67,
+    "lng": 39.21,
+    "place": "Voronezh, USSR"
+  },
+  "tier": "A",
+  "probability": 40,
+  "summary": "TASS publicación oficial 'Visit aliens to USSR is fact', Glasnost-era",
+  "summary_en": "TASS official publication 'Visit aliens to USSR is fact', Glasnost-era",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 27 de septiembre de 1989, en el parque municipal de Voronezh (Oblast de Voronezh, URSS), un grupo de niños jugando reportó la aparición de un objeto rojo brillante. Tres adultos del barrio se acercaron y presenciaron, según testimonios, el descenso del objeto y la salida de figuras humanoides altas acompañadas de una entidad más pequeña.\n\nEl 9 de octubre, la agencia oficial soviética TASS publicó un comunicado titulado 'Visita de extraterrestres a Voronezh es un hecho científicamente comprobado', citando al Dr. Genrikh Silanov del Laboratorio Geofísico de Voronezh. El comunicado incluyó descripción del objeto, dimensiones, marcas físicas en el suelo y testimonios. La cobertura internacional fue inmediata y masiva — Reuters, AP, Pravda, BBC reportaron el caso.\n\nEl contexto político es relevante: Glasnost (apertura informativa de Gorbachev) estaba en su pico y la URSS atravesaba transformaciones institucionales profundas. Investigación posterior por Jacques Vallée y otros encontró que las marcas físicas eran consistentes con un objeto pesado, los testigos infantiles (7-10 años) mantuvieron consistencia, pero la descripción de las entidades tomó elementos folkloricos locales que sugieren posible filtración cultural. El caso es citado en textos analíticos sobre interpretación cruzada de fenómeno por contexto cultural soviético versus occidental.",
+  "whyMatters": "Único caso UAP que recibió comunicado oficial afirmativo por agencia de noticias de superpotencia: TASS calificó el evento como 'hecho científicamente comprobado', algo sin paralelo en comunicaciones oficiales estadounidenses, británicas o francesas durante toda la era Guerra Fría. Aunque la calidad evidencial interna es modesta, el comunicado TASS es un dato institucional histórico sobre cómo se manejó la comunicación UAP en jurisdicción soviética.",
+  "evidence": [
+    "Comunicado TASS 9 octubre 1989 — texto original preservado",
+    "Citación oficial al Dr. Silanov (Laboratorio Geofísico Voronezh)",
+    "Marcas físicas documentadas en el sitio de aterrizaje del parque",
+    "Cobertura simultánea AP, Reuters, BBC con el mismo material fuente"
+  ],
+  "sources": [
+    {
+      "name": "TASS communiqué — '9 octubre 1989 (archived translations)",
+      "url": "https://tass.com/"
+    },
+    {
+      "name": "Vallée, J. — UFO Chronicles of the Soviet Union (1992)",
+      "note": "Capítulo dedicado a Voronezh"
+    },
+    {
+      "name": "Hopkins, B. & Hopkins, C. — Reuters/AP archive Voronezh 1989",
+      "note": "Sintetizado en NICAP archive"
+    }
+  ]
+}
