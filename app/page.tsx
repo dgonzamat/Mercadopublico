@@ -111,33 +111,81 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────── CIERRE ────────── */}
-      <section className="border-t-2 border-text/15 pt-12">
-        <div className="space-y-6">
+      {/* ────────── CIERRE — 3 CTAs visuales ────────── */}
+      <section className="space-y-10 border-t-2 border-text pt-16">
+        <div className="space-y-3">
           <Eyebrow>Seguir leyendo</Eyebrow>
-          <div className="flex flex-wrap gap-x-8 gap-y-4">
-            <Link
-              href="/resumen"
-              className="font-display text-2xl text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent md:text-3xl"
-            >
-              Resumen en 10 minutos →
-            </Link>
-            <Link
-              href="/about"
-              className="font-display text-2xl text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent md:text-3xl"
-            >
-              Cómo se construyó →
-            </Link>
-            <Link
-              href="/atlas"
-              className="font-display text-2xl text-text underline decoration-text/20 underline-offset-8 hover:decoration-accent md:text-3xl"
-            >
-              Mapa global →
-            </Link>
-          </div>
+          <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-5xl">
+            ¿Por dónde sigues?
+          </h2>
+        </div>
+        <div className="grid gap-px bg-text md:grid-cols-3">
+          <CtaCard
+            number="01"
+            eyebrow="10 minutos"
+            title="Resumen"
+            desc="Versión accesible del análisis completo en lenguaje claro."
+            href="/resumen"
+          />
+          <CtaCard
+            number="02"
+            eyebrow="Metodología"
+            title="Cómo se construyó"
+            desc="Framework de cuatro tiers, principio Bayesiano, evidencia auditable."
+            href="/about"
+          />
+          <CtaCard
+            number="03"
+            eyebrow="Visualización"
+            title="Mapa global"
+            desc="52 casos georeferenciados sobre 12 países, 1947–2026."
+            href="/atlas"
+          />
         </div>
       </section>
     </div>
+  );
+}
+
+function CtaCard({
+  number,
+  eyebrow,
+  title,
+  desc,
+  href,
+}: {
+  number: string;
+  eyebrow: string;
+  title: string;
+  desc: string;
+  href: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group flex flex-col gap-4 bg-bg p-8 transition hover:bg-text hover:text-bg md:p-10"
+    >
+      <div className="flex items-baseline justify-between gap-3">
+        <span className="font-display text-3xl tabular-nums leading-none text-muted group-hover:text-bg/60">
+          {number}
+        </span>
+        <span className="font-mono text-xs uppercase tracking-widest text-muted group-hover:text-bg/60">
+          {eyebrow}
+        </span>
+      </div>
+      <p className="font-display text-3xl font-medium leading-tight text-text group-hover:text-bg md:text-4xl">
+        {title}
+      </p>
+      <p className="text-sm leading-relaxed text-muted group-hover:text-bg/80">
+        {desc}
+      </p>
+      <span
+        aria-hidden
+        className="mt-auto font-mono text-xs uppercase tracking-widest text-accent group-hover:text-accent"
+      >
+        Continuar →
+      </span>
+    </Link>
   );
 }
 
