@@ -8,6 +8,12 @@ export interface Location {
   place?: string;
 }
 
+export interface CaseSource {
+  name: string;
+  url?: string;
+  note?: string;
+}
+
 export interface UAPCase {
   id: string;
   num: number;
@@ -25,6 +31,13 @@ export interface UAPCase {
   summary_en?: string;
   patterns: string[];
   category: Category;
+  // Optional rich-content fields. When present, the case detail page
+  // renders a fully-explained version. When absent, the summary is the
+  // only narrative shown (legacy/short cases).
+  whatHappened?: string;     // 2-3 paragraphs: chronology + context
+  whyMatters?: string;       // 1 paragraph: analytical significance
+  evidence?: string[];       // bullet list of documented evidence items
+  sources?: CaseSource[];    // citations / primary documents
 }
 
 export interface Pattern {
