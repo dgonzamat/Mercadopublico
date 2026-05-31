@@ -127,7 +127,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
               <Link
                 key={p.id}
                 href={`/patterns/${p.letter}`}
-                className="rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50"
+                className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-3 py-1.5 text-xs transition hover:border-accent/50"
                 style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
                 title={p.description}
               >

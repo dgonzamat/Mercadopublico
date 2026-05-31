@@ -2,6 +2,11 @@ import Link from "next/link";
 import { cases, patterns } from "@/lib/data";
 import { tierDistribution, topPatterns, eraDistribution, countryCount } from "@/lib/corpusStats";
 
+/**
+ * Verifiable descriptive statistics over the corpus. Counts only, no
+ * inference. Anchors the ICD-203 probability chart with raw data the
+ * reader can check against /cases.
+ */
 export function CorpusStats() {
   const tiers = tierDistribution(cases);
   const top = topPatterns(cases, patterns, 5);
@@ -19,6 +24,7 @@ export function CorpusStats() {
       </p>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        {/* Tier distribution */}
         <div className="rounded-lg border border-border bg-panel p-5">
           <h3 className="font-mono text-xs uppercase tracking-widest text-muted">
             Distribución por tier de evidencia
@@ -35,6 +41,7 @@ export function CorpusStats() {
           </p>
         </div>
 
+        {/* Era distribution */}
         <div className="rounded-lg border border-border bg-panel p-5">
           <h3 className="font-mono text-xs uppercase tracking-widest text-muted">
             Distribución por era
@@ -60,6 +67,7 @@ export function CorpusStats() {
         </div>
       </div>
 
+      {/* Top patterns */}
       <div className="mt-4 rounded-lg border border-border bg-panel p-5">
         <h3 className="font-mono text-xs uppercase tracking-widest text-muted">
           Top 5 patrones por frecuencia en el corpus
@@ -69,7 +77,7 @@ export function CorpusStats() {
             <Link
               key={p.id}
               href={`/patterns/${p.letter}`}
-              className="block transition hover:bg-bg/50 -mx-2 px-2 py-1 rounded"
+              className="flex min-h-[44px] items-center rounded -mx-2 px-2 py-1 transition hover:bg-bg/50"
             >
               <div className="flex items-baseline justify-between gap-3 text-sm">
                 <span className="min-w-0 truncate">

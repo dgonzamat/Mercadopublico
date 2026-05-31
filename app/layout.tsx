@@ -32,9 +32,6 @@ export default function RootLayout({
               <Link href="/cases" className="hover:text-text">Casos</Link>
               <Link href="/probabilidades" className="hover:text-text">Probabilidades</Link>
               <Link href="/atlas" className="hover:text-text">Atlas</Link>
-              <Link href="/patterns" className="hover:text-text">Patrones</Link>
-              <Link href="/researchers" className="hover:text-text">Ecosistema</Link>
-              <Link href="/frameworks" className="hover:text-text">Frameworks</Link>
               <Link href="/about" className="hover:text-text">Metodología</Link>
               <Link href="/resumen" className="hover:text-text">Resumen</Link>
             </div>
@@ -43,6 +40,11 @@ export default function RootLayout({
         </header>
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
         <footer className="border-t border-border py-8 text-center text-xs text-muted">
+          <nav aria-label="Enlaces secundarios" className="mb-4 flex flex-wrap justify-center gap-x-5 gap-y-2">
+            <Link href="/patterns" className="hover:text-text">Patrones</Link>
+            <Link href="/researchers" className="hover:text-text">Ecosistema</Link>
+            <Link href="/frameworks" className="hover:text-text">Frameworks</Link>
+          </nav>
           <p>
             UAP Atlas · análisis institucional · corpus open source ·{" "}
             <a href="https://github.com/dgonzamat/mercadopublico" className="text-accent hover:underline">github</a>

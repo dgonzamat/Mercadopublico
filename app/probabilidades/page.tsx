@@ -153,7 +153,7 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
               <Link
                 key={p.id}
                 href={`/patterns/${p.letter}`}
-                className="rounded border border-border bg-bg px-2.5 py-1 text-xs hover:border-accent/50"
+                className="inline-flex min-h-[44px] items-center rounded border border-border bg-bg px-2.5 py-1 text-xs hover:border-accent/50"
                 style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
                 title={p.description}
               >
@@ -175,7 +175,7 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
               <Link
                 key={c.id}
                 href={`/cases/${c.id}`}
-                className="rounded px-2 py-1 text-xs text-text hover:bg-panel"
+                className="inline-flex min-h-[44px] items-center rounded px-2 py-1 text-xs text-text hover:bg-panel"
               >
                 <span aria-hidden className="mr-1">{c.flag}</span>
                 <span>{c.name}</span>

@@ -7,17 +7,22 @@ const NAV_LINKS = [
   { href: "/cases", label: "Casos" },
   { href: "/probabilidades", label: "Probabilidades" },
   { href: "/atlas", label: "Atlas" },
+  { href: "/about", label: "Metodología" },
+  { href: "/resumen", label: "Resumen" },
+];
+
+const SECONDARY_LINKS = [
   { href: "/patterns", label: "Patrones" },
   { href: "/researchers", label: "Ecosistema" },
   { href: "/frameworks", label: "Frameworks" },
-  { href: "/about", label: "Metodología" },
-  { href: "/resumen", label: "Resumen" },
 ];
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
+  // Close on Escape + lock body scroll + focus first link when drawer opens.
+  // This is the shadcn Sheet pattern reproduced manually (zero deps).
   useEffect(() => {
     if (!open) return;
     function onKeyDown(e: KeyboardEvent) {
@@ -67,7 +72,24 @@ export function MobileNav() {
                     ref={i === 0 ? firstLinkRef : undefined}
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-md px-3 py-3 text-base text-text hover:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="block rounded-md px-3 py-3 text-base text-text hover:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-6 px-3 font-mono text-[11px] uppercase tracking-widest text-muted">
+              Más
+            </p>
+            <ul className="mt-2 space-y-1">
+              {SECONDARY_LINKS.map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="block rounded-md px-3 py-3 text-sm text-muted hover:bg-panel hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
                   >
                     {l.label}
                   </Link>
