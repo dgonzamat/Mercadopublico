@@ -73,3 +73,16 @@ a {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
+/* Bilingual switching — paired with the <T es=".." en=".."/> primitive.
+   Default (no data-locale on html, or data-locale="es") hides EN spans.
+   When LocaleToggle sets data-locale="en", we hide ES spans and show EN. */
+[data-lang="en"] {
+  display: none;
+}
+html[data-locale="en"] [data-lang="en"] {
+  display: inline;
+}
+html[data-locale="en"] [data-lang="es"] {
+  display: none;
+}

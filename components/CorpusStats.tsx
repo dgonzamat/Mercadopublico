@@ -5,6 +5,7 @@ import {
   topPatterns,
   eraDistribution,
 } from "@/lib/corpusStats";
+import { T } from "@/components/T";
 import { Eyebrow, H2, Caption, DisplayNumber } from "@/lib/typography";
 
 /**
@@ -21,52 +22,96 @@ export function CorpusStats() {
   return (
     <section aria-labelledby="corpus-stats-title" className="space-y-12">
       <div className="space-y-4">
-        <Eyebrow>Hechos verificables · {tiers.total} casos</Eyebrow>
+        <Eyebrow>
+          <T
+            es={`Hechos verificables · ${tiers.total} casos`}
+            en={`Verifiable facts · ${tiers.total} cases`}
+          />
+        </Eyebrow>
         <H2 id="corpus-stats-title" className="max-w-3xl">
-          Lo que sí podemos contar.
-          <br />
-          <span className="text-muted">
-            Las probabilidades son juicios sobre estos hechos.
-          </span>
+          <T
+            es={
+              <>
+                Lo que sí podemos contar.
+                <br />
+                <span className="text-muted">
+                  Las probabilidades son juicios sobre estos hechos.
+                </span>
+              </>
+            }
+            en={
+              <>
+                What we can actually count.
+                <br />
+                <span className="text-muted">
+                  Probabilities are judgments about these facts.
+                </span>
+              </>
+            }
+          />
         </H2>
       </div>
 
-      {/* Tiers — three giant numbers */}
       <div className="space-y-6">
-        <Eyebrow>Calidad de evidencia por caso</Eyebrow>
+        <Eyebrow>
+          <T
+            es="Calidad de evidencia por caso"
+            en="Evidence quality per case"
+          />
+        </Eyebrow>
         <div className="grid grid-cols-3 gap-8 md:gap-12">
           <TierStat
-            label="Sólido"
+            es="Sólido"
+            en="Solid"
             count={tiers.S}
             total={tiers.total}
             colorClass="text-tierS"
           />
           <TierStat
-            label="Aceptable"
+            es="Aceptable"
+            en="Acceptable"
             count={tiers.A}
             total={tiers.total}
             colorClass="text-tierA"
           />
           <TierStat
-            label="Folklórico"
+            es="Folklórico"
+            en="Folkloric"
             count={tiers.B}
             total={tiers.total}
             colorClass="text-tierB"
           />
         </div>
         <Caption className="max-w-3xl pt-2">
-          <strong className="text-text">Sólido (S)</strong> caso militar con
-          sensor y múltiples testigos ·{" "}
-          <strong className="text-text">Aceptable (A)</strong> caso civil
-          institucional verificable ·{" "}
-          <strong className="text-text">Folklórico (B)</strong> fenómeno
-          recurrente local
+          <T
+            es={
+              <>
+                <strong className="text-text">Sólido (S)</strong> caso militar
+                con sensor y múltiples testigos ·{" "}
+                <strong className="text-text">Aceptable (A)</strong> caso civil
+                institucional verificable ·{" "}
+                <strong className="text-text">Folklórico (B)</strong> fenómeno
+                recurrente local
+              </>
+            }
+            en={
+              <>
+                <strong className="text-text">Solid (S)</strong> military case
+                with sensor and multiple witnesses ·{" "}
+                <strong className="text-text">Acceptable (A)</strong> verifiable
+                institutional civil case ·{" "}
+                <strong className="text-text">Folkloric (B)</strong> recurring
+                local phenomenon
+              </>
+            }
+          />
         </Caption>
       </div>
 
-      {/* Eras — horizontal bar chart with display numbers */}
       <div className="space-y-6">
-        <Eyebrow>Distribución por era</Eyebrow>
+        <Eyebrow>
+          <T es="Distribución por era" en="Distribution by era" />
+        </Eyebrow>
         <div className="space-y-6 border-t border-text/15 pt-6">
           {eras.map((e) => {
             const pct = (e.count / tiers.total) * 100;
@@ -98,9 +143,13 @@ export function CorpusStats() {
         </div>
       </div>
 
-      {/* Top patterns — numbered list with big numbers */}
       <div className="space-y-6">
-        <Eyebrow>Top 5 patrones por frecuencia</Eyebrow>
+        <Eyebrow>
+          <T
+            es="Top 5 patrones por frecuencia"
+            en="Top 5 patterns by frequency"
+          />
+        </Eyebrow>
         <ol className="divide-y divide-text/10 border-t border-text/15">
           {top.map((p, i) => (
             <li key={p.id}>
@@ -116,7 +165,7 @@ export function CorpusStats() {
                     {p.name}
                   </p>
                   <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                    Patrón {p.id}
+                    <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} />
                   </p>
                 </div>
                 <div className="text-right">
@@ -124,7 +173,7 @@ export function CorpusStats() {
                     {p.count}
                   </span>
                   <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                    casos
+                    <T es="casos" en="cases" />
                   </p>
                 </div>
               </Link>
@@ -132,10 +181,30 @@ export function CorpusStats() {
           ))}
         </ol>
         <Caption>
-          ¿Quieres ver los 18 patrones?{" "}
-          <Link href="/patterns" className="text-accent hover:underline">
-            Lista completa →
-          </Link>
+          <T
+            es={
+              <>
+                ¿Quieres ver los 18 patrones?{" "}
+                <Link
+                  href="/patterns"
+                  className="text-accent hover:underline"
+                >
+                  Lista completa →
+                </Link>
+              </>
+            }
+            en={
+              <>
+                Want to see all 18 patterns?{" "}
+                <Link
+                  href="/patterns"
+                  className="text-accent hover:underline"
+                >
+                  Full list →
+                </Link>
+              </>
+            }
+          />
         </Caption>
       </div>
     </section>
@@ -143,12 +212,14 @@ export function CorpusStats() {
 }
 
 function TierStat({
-  label,
+  es,
+  en,
   count,
   total,
   colorClass,
 }: {
-  label: string;
+  es: string;
+  en: string;
   count: number;
   total: number;
   colorClass: string;
@@ -162,9 +233,11 @@ function TierStat({
         {count}
       </DisplayNumber>
       <div className="space-y-0.5">
-        <p className="font-display text-xl font-medium text-text">{label}</p>
+        <p className="font-display text-xl font-medium text-text">
+          <T es={es} en={en} />
+        </p>
         <p className="font-mono text-xs uppercase tracking-widest text-muted tabular-nums">
-          {pct.toFixed(0)}% del corpus
+          <T es={`${pct.toFixed(0)}% del corpus`} en={`${pct.toFixed(0)}% of corpus`} />
         </p>
       </div>
     </div>

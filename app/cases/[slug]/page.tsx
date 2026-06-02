@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
+import { T } from "@/components/T";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 
 export function generateStaticParams() {
@@ -25,8 +26,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 function findPullQuote(text?: string): string | null {
   if (!text) return null;
   const patterns = [
-    /[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g,
-    /‘’([^‘’]{30,240})‘’|'([^']{30,240})'/g,
+    /[""]([^""]{30,240})[""]|"([^"]{30,240})"/g,
+    /''([^']{30,240})''|'([^']{30,240})'/g,
   ];
   const all: string[] = [];
   for (const re of patterns) {
@@ -93,18 +94,24 @@ export default function CaseDetailPage({
         href="/cases"
         className="inline-block font-mono text-xs uppercase tracking-widest text-muted hover:text-accent"
       >
-        ← Volver al índice
+        <T es="← Volver al índice" en="← Back to index" />
       </Link>
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">
         <div className="space-y-4">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            Caso {String(c.num).padStart(2, "0")} de {TOTAL_CASES}
+            <T
+              es={`Caso ${String(c.num).padStart(2, "0")} de ${TOTAL_CASES}`}
+              en={`Case ${String(c.num).padStart(2, "0")} of ${TOTAL_CASES}`}
+            />
             <span className="mx-2 text-text/30">·</span>
             {c.country_name}
             <span className="mx-2 text-text/30">·</span>
-            Evidencia {TIER_META[c.tier].plain.toLowerCase()}
+            <T
+              es={`Evidencia ${TIER_META[c.tier].plain.toLowerCase()}`}
+              en={`Evidence: ${TIER_META[c.tier].plain.toLowerCase()}`}
+            />
           </p>
         </div>
 
@@ -132,26 +139,46 @@ export default function CaseDetailPage({
         </div>
 
         <p className="font-display text-2xl leading-snug text-text md:text-3xl">
-          {c.summary}
+          <T
+            es={c.summary}
+            en={c.summary_en ?? c.summary}
+          />
         </p>
         {c.summary_en && (
           <p className="font-display text-lg italic leading-snug text-muted md:text-xl">
-            “{c.summary_en}”
+            <T
+              es={<>“{c.summary_en}”</>}
+              en={<>“{c.summary}”</>}
+            />
           </p>
         )}
 
         <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-4">
-          <KeyFact label="Año" value={year} />
-          <KeyFact label="Tier" value={c.tier} mono />
+          <KeyFact es="Año" en="Year" value={year} />
+          <KeyFact es="Tier" en="Tier" value={c.tier} mono />
           <KeyFact
-            label="Probabilidad"
+            es="Probabilidad"
+            en="Probability"
             value={`${c.probability}%`}
             mono
           />
-          <KeyFact label="Categoría" value={c.category} />
+          <KeyFact es="Categoría" en="Category" value={c.category} />
         </div>
         <Caption>{TIER_META[c.tier].description}</Caption>
       </header>
+
+      {/* EN-only disclaimer when no EN narrative available */}
+      {hasNarrative && !c.whatHappened_en && (
+        <div data-lang="en" className="border-2 border-text bg-panel p-5">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+            Translation note
+          </p>
+          <p className="mt-2 text-sm text-text">
+            The detailed narrative below is in Spanish. English translation
+            pending for this specific case.
+          </p>
+        </div>
+      )}
 
       {/* ────────── ZONE B — NARRATIVE ────────── */}
       {hasNarrative && (
@@ -160,31 +187,52 @@ export default function CaseDetailPage({
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  Parte 01
+                  <T es="Parte 01" en="Part 01" />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  Qué pasó
+                  <T es="Qué pasó" en="What happened" />
                 </h2>
               </header>
 
-              {whatHappenedParas.map((para, i) => (
-                <div key={i} className="space-y-8">
-                  <p
-                    className={
-                      i === 0
-                        ? "text-lg leading-relaxed text-text first-letter:float-left first-letter:mr-3 first-letter:mt-2 first-letter:font-display first-letter:text-7xl first-letter:font-medium first-letter:leading-[0.85] first-letter:text-accent md:text-xl md:first-letter:text-8xl"
-                        : "text-lg leading-relaxed text-text md:text-xl"
-                    }
-                  >
-                    {para}
-                  </p>
-                  {pullQuote && i === 0 && (
-                    <PullQuote className="border-l-4 text-2xl md:text-3xl">
-                      “{pullQuote}”
-                    </PullQuote>
-                  )}
+              {/* ES paragraphs */}
+              <div data-lang="es" className="space-y-8">
+                {whatHappenedParas.map((para, i) => (
+                  <div key={i} className="space-y-8">
+                    <p
+                      className={
+                        i === 0
+                          ? "text-lg leading-relaxed text-text first-letter:float-left first-letter:mr-3 first-letter:mt-2 first-letter:font-display first-letter:text-7xl first-letter:font-medium first-letter:leading-[0.85] first-letter:text-accent md:text-xl md:first-letter:text-8xl"
+                          : "text-lg leading-relaxed text-text md:text-xl"
+                      }
+                    >
+                      {para}
+                    </p>
+                    {pullQuote && i === 0 && (
+                      <PullQuote className="border-l-4 text-2xl md:text-3xl">
+                        “{pullQuote}”
+                      </PullQuote>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* EN paragraphs if available */}
+              {c.whatHappened_en && (
+                <div data-lang="en" className="space-y-8">
+                  {c.whatHappened_en.split("\n\n").map((para, i) => (
+                    <p
+                      key={i}
+                      className={
+                        i === 0
+                          ? "text-lg leading-relaxed text-text first-letter:float-left first-letter:mr-3 first-letter:mt-2 first-letter:font-display first-letter:text-7xl first-letter:font-medium first-letter:leading-[0.85] first-letter:text-accent md:text-xl md:first-letter:text-8xl"
+                          : "text-lg leading-relaxed text-text md:text-xl"
+                      }
+                    >
+                      {para}
+                    </p>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
           )}
 
@@ -192,14 +240,17 @@ export default function CaseDetailPage({
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  Parte 02
+                  <T es="Parte 02" en="Part 02" />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  Por qué importa
+                  <T es="Por qué importa" en="Why it matters" />
                 </h2>
               </header>
               <p className="font-display text-xl leading-snug text-text md:text-2xl">
-                {c.whyMatters}
+                <T
+                  es={c.whyMatters}
+                  en={c.whyMatters_en ?? c.whyMatters}
+                />
               </p>
             </div>
           )}
@@ -210,10 +261,10 @@ export default function CaseDetailPage({
       <section className="space-y-12 border-t-2 border-text pt-12">
         <header className="space-y-3">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            Parte 03
+            <T es="Parte 03" en="Part 03" />
           </p>
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-            La evidencia detrás
+            <T es="La evidencia detrás" en="The evidence behind" />
           </h2>
         </header>
 
@@ -221,7 +272,9 @@ export default function CaseDetailPage({
           <div className="grid gap-12 md:grid-cols-2">
             {hasEvidence && (
               <div className="space-y-4">
-                <Eyebrow>Evidencia documentada</Eyebrow>
+                <Eyebrow>
+                  <T es="Evidencia documentada" en="Documented evidence" />
+                </Eyebrow>
                 <ol className="space-y-3">
                   {c.evidence!.map((item, i) => (
                     <li
@@ -234,7 +287,12 @@ export default function CaseDetailPage({
                       >
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <span>{item}</span>
+                      <span>
+                        <T
+                          es={item}
+                          en={c.evidence_en?.[i] ?? item}
+                        />
+                      </span>
                     </li>
                   ))}
                 </ol>
@@ -243,7 +301,9 @@ export default function CaseDetailPage({
 
             {hasSources && (
               <div className="space-y-4">
-                <Eyebrow>Fuentes</Eyebrow>
+                <Eyebrow>
+                  <T es="Fuentes" en="Sources" />
+                </Eyebrow>
                 <ol className="space-y-3">
                   {c.sources!.map((s, i) => (
                     <li
@@ -270,7 +330,10 @@ export default function CaseDetailPage({
                           <span className="text-text">{s.name}</span>
                         )}
                         {s.note && (
-                          <span className="text-muted"> — {s.note}</span>
+                          <span className="text-muted">
+                            {" "}
+                            — <T es={s.note} en={s.note_en ?? s.note} />
+                          </span>
                         )}
                       </span>
                     </li>
@@ -283,7 +346,12 @@ export default function CaseDetailPage({
 
         {casePatterns.length > 0 && (
           <div className="space-y-4">
-            <Eyebrow>Patrones que exhibe ({casePatterns.length})</Eyebrow>
+            <Eyebrow>
+              <T
+                es={`Patrones que exhibe (${casePatterns.length})`}
+                en={`Patterns it exhibits (${casePatterns.length})`}
+              />
+            </Eyebrow>
             <div className="flex flex-wrap gap-2">
               {casePatterns.map((p) => (
                 <Link
@@ -304,7 +372,9 @@ export default function CaseDetailPage({
         )}
 
         <div className="space-y-2">
-          <Eyebrow>Ubicación</Eyebrow>
+          <Eyebrow>
+            <T es="Ubicación" en="Location" />
+          </Eyebrow>
           <p className="text-sm text-text">
             {c.location.place || c.country_name}{" "}
             <span className="font-mono text-xs text-muted">
@@ -315,9 +385,10 @@ export default function CaseDetailPage({
 
         {!hasRichContent && (
           <Caption className="italic">
-            Caso pendiente de explicación detallada — solo el resumen de arriba
-            está documentado. Expandimos gradualmente los {TOTAL_CASES} casos
-            del corpus.
+            <T
+              es={`Caso pendiente de explicación detallada — solo el resumen de arriba está documentado. Expandimos gradualmente los ${TOTAL_CASES} casos del corpus.`}
+              en={`Case pending detailed explanation — only the summary above is documented. We're gradually expanding the ${TOTAL_CASES} cases.`}
+            />
           </Caption>
         )}
       </section>
@@ -325,7 +396,9 @@ export default function CaseDetailPage({
       {/* ────────── RELATED + NEXT CASE ────────── */}
       {similar.length > 0 && (
         <section className="space-y-6 border-t-2 border-text pt-12">
-          <Eyebrow>Casos relacionados</Eyebrow>
+          <Eyebrow>
+            <T es="Casos relacionados" en="Related cases" />
+          </Eyebrow>
           <div className="grid gap-px bg-text sm:grid-cols-2">
             {similar.map((s) => {
               const reason = [
@@ -373,7 +446,10 @@ export default function CaseDetailPage({
             className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
           >
             <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-              ← Caso anterior · #{prev.num}
+              <T
+                es={`← Caso anterior · #${prev.num}`}
+                en={`← Previous case · #${prev.num}`}
+              />
             </span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
               {prev.flag} {prev.name}
@@ -388,7 +464,10 @@ export default function CaseDetailPage({
             className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
           >
             <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-              Siguiente caso · #{next.num} →
+              <T
+                es={`Siguiente caso · #${next.num} →`}
+                en={`Next case · #${next.num} →`}
+              />
             </span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
               {next.name} {next.flag}
@@ -403,18 +482,20 @@ export default function CaseDetailPage({
 }
 
 function KeyFact({
-  label,
+  es,
+  en,
   value,
   mono = false,
 }: {
-  label: string;
+  es: string;
+  en: string;
   value: string;
   mono?: boolean;
 }) {
   return (
     <div className="bg-bg p-4">
       <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
-        {label}
+        <T es={es} en={en} />
       </p>
       <p
         className={`mt-1 ${

@@ -1,6 +1,7 @@
 import { HYPOTHESES } from "@/lib/hypotheses";
 import { cases } from "@/lib/data";
 import { evidenceCountFor } from "@/lib/hypothesisMapping";
+import { T } from "@/components/T";
 import { Eyebrow, H2, Caption } from "@/lib/typography";
 
 /**
@@ -23,23 +24,48 @@ export function IcdProbabilityChart() {
   return (
     <section aria-labelledby="probability-chart-title" className="space-y-12">
       <div className="space-y-4">
-        <Eyebrow>Juicio analítico · ICD-203</Eyebrow>
+        <Eyebrow>
+          <T es="Juicio analítico · ICD-203" en="Analytical judgment · ICD-203" />
+        </Eyebrow>
         <H2 id="probability-chart-title" className="max-w-3xl">
-          ¿Qué son los UAP?
+          <T es="¿Qué son los UAP?" en="What are UAPs?" />
           <br />
-          <span className="text-muted">Probabilidad por hipótesis.</span>
+          <span className="text-muted">
+            <T es="Probabilidad por hipótesis." en="Probability per hypothesis." />
+          </span>
         </H2>
         <Caption className="max-w-2xl pt-2">
-          Las 6 hipótesis principales con probabilidad expresada como{" "}
-          <a
-            href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent hover:underline"
-          >
-            etiqueta ICD-203
-          </a>{" "}
-          — el estándar USIC para juicio analítico sin modelo formal.
+          <T
+            es={
+              <>
+                Las 6 hipótesis principales con probabilidad expresada como{" "}
+                <a
+                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  etiqueta ICD-203
+                </a>{" "}
+                — el estándar USIC para juicio analítico sin modelo formal.
+              </>
+            }
+            en={
+              <>
+                The 6 main hypotheses with probability expressed as an{" "}
+                <a
+                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  ICD-203 label
+                </a>{" "}
+                — the USIC standard for analytical judgment without a formal
+                model.
+              </>
+            }
+          />
         </Caption>
       </div>
 
@@ -57,14 +83,19 @@ export function IcdProbabilityChart() {
             <div className="min-w-0 space-y-4">
               <div className="space-y-1">
                 <h3 className="font-display text-2xl font-medium leading-tight text-text md:text-3xl">
-                  {h.label}
+                  <T es={h.label} en={h.labelEn} />
                 </h3>
                 <p
                   className="font-mono text-xs uppercase tracking-wider"
                   style={{ color: h.color }}
                 >
-                  {h.icd.labelEs}{" "}
-                  <span className="text-muted">({h.icd.label})</span>
+                  <T es={h.icd.labelEs} en={h.icd.label} />{" "}
+                  <span className="text-muted">
+                    <T
+                      es={`(${h.icd.label})`}
+                      en={`(${Math.round(h.icd.min)}–${Math.round(h.icd.max)}%)`}
+                    />
+                  </span>
                 </p>
               </div>
 
@@ -95,7 +126,9 @@ export function IcdProbabilityChart() {
                 ))}
               </div>
 
-              <p className="text-sm text-muted">{h.note}</p>
+              <p className="text-sm text-muted">
+                <T es={h.note} en={h.noteEn} />
+              </p>
             </div>
 
             <div className="col-span-2 flex items-baseline gap-6 font-mono text-xs uppercase tracking-wider text-muted md:col-span-1 md:flex-col md:items-end md:gap-1 md:text-right">
@@ -103,13 +136,13 @@ export function IcdProbabilityChart() {
                 <span className="font-display text-3xl text-text md:text-4xl">
                   {h.evidence.caseCount}
                 </span>{" "}
-                casos
+                <T es="casos" en="cases" />
               </div>
               <div>
                 <span className="font-display text-xl text-text md:text-2xl">
                   {h.evidence.patternCount}
                 </span>{" "}
-                patrones
+                <T es="patrones" en="patterns" />
               </div>
             </div>
           </article>
@@ -117,14 +150,32 @@ export function IcdProbabilityChart() {
       </div>
 
       <Caption className="max-w-2xl pt-4">
-        Etiquetas son juicios analíticos calibrados, no posteriori de un modelo
-        Bayesiano formal. El conteo de evidencia muestra cuántos casos del
-        corpus exhiben patrones asociados — diferencia analítica dentro de una
-        misma banda ICD-203. Razonamiento completo en{" "}
-        <a className="text-accent hover:underline" href="/probabilidades">
-          /probabilidades
-        </a>
-        .
+        <T
+          es={
+            <>
+              Etiquetas son juicios analíticos calibrados, no posteriori de un
+              modelo Bayesiano formal. El conteo de evidencia muestra cuántos
+              casos exhiben patrones asociados — diferencia analítica dentro de
+              una misma banda ICD-203. Razonamiento completo en{" "}
+              <a className="text-accent hover:underline" href="/probabilidades">
+                /probabilidades
+              </a>
+              .
+            </>
+          }
+          en={
+            <>
+              Labels are calibrated analytical judgments, not posteriors of a
+              formal Bayesian model. Evidence count shows how many cases exhibit
+              associated patterns — analytical difference within the same
+              ICD-203 band. Full reasoning at{" "}
+              <a className="text-accent hover:underline" href="/probabilidades">
+                /probabilidades
+              </a>
+              .
+            </>
+          }
+        />
       </Caption>
     </section>
   );

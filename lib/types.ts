@@ -12,6 +12,7 @@ export interface CaseSource {
   name: string;
   url?: string;
   note?: string;
+  note_en?: string;
 }
 
 export interface UAPCase {
@@ -35,8 +36,11 @@ export interface UAPCase {
   // renders a fully-explained version. When absent, the summary is the
   // only narrative shown (legacy/short cases).
   whatHappened?: string;     // 2-3 paragraphs: chronology + context
+  whatHappened_en?: string;  // English translation
   whyMatters?: string;       // 1 paragraph: analytical significance
+  whyMatters_en?: string;    // English translation
   evidence?: string[];       // bullet list of documented evidence items
+  evidence_en?: string[];    // English translation
   sources?: CaseSource[];    // citations / primary documents
 }
 

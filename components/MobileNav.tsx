@@ -2,24 +2,41 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { T } from "@/components/T";
 
 const PRIMARY_CTA = {
   href: "/probabilidades",
-  label: "Ver probabilidades",
-  sub: "Las 6 hipótesis sobre UAP",
+  es: { label: "Ver probabilidades", sub: "Las 6 hipótesis sobre UAP" },
+  en: { label: "See probabilities", sub: "The 6 hypotheses about UAP" },
 };
 
 const NAV_LINKS = [
-  { href: "/cases", label: "Casos", sub: "52 institucionales · 1947–2026" },
-  { href: "/atlas", label: "Atlas", sub: "Mapa global de casos" },
-  { href: "/resumen", label: "Resumen", sub: "Lectura 10 min" },
-  { href: "/about", label: "Metodología", sub: "Cómo se construyó" },
+  {
+    href: "/cases",
+    es: { label: "Casos", sub: "52 institucionales · 1947–2026" },
+    en: { label: "Cases", sub: "52 institutional · 1947–2026" },
+  },
+  {
+    href: "/atlas",
+    es: { label: "Atlas", sub: "Mapa global de casos" },
+    en: { label: "Atlas", sub: "Global case map" },
+  },
+  {
+    href: "/resumen",
+    es: { label: "Resumen", sub: "Lectura 10 min" },
+    en: { label: "Summary", sub: "10-min read" },
+  },
+  {
+    href: "/about",
+    es: { label: "Metodología", sub: "Cómo se construyó" },
+    en: { label: "Method", sub: "How it was built" },
+  },
 ];
 
 const SECONDARY_LINKS = [
-  { href: "/patterns", label: "Patrones" },
-  { href: "/researchers", label: "Ecosistema" },
-  { href: "/frameworks", label: "Frameworks" },
+  { href: "/patterns", es: "Patrones", en: "Patterns" },
+  { href: "/researchers", es: "Ecosistema", en: "Ecosystem" },
+  { href: "/frameworks", es: "Frameworks", en: "Frameworks" },
 ];
 
 export function MobileNav() {
@@ -54,7 +71,13 @@ export function MobileNav() {
         <span aria-hidden className="text-lg leading-none">
           {open ? "✕" : "☰"}
         </span>
-        <span>{open ? "Cerrar" : "Menú"}</span>
+        <span>
+          {open ? (
+            <T es="Cerrar" en="Close" />
+          ) : (
+            <T es="Menú" en="Menu" />
+          )}
+        </span>
       </button>
 
       {open && (
@@ -72,7 +95,7 @@ export function MobileNav() {
             {/* TOP BAR — matches header height + close button */}
             <div className="sticky top-0 z-10 flex items-center justify-between border-b border-bg/15 bg-text px-4 py-5">
               <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-                Menú · UAP Atlas
+                <T es="Menú · UAP Atlas" en="Menu · UAP Atlas" />
               </p>
               <button
                 type="button"
@@ -83,7 +106,9 @@ export function MobileNav() {
                 <span aria-hidden className="text-base leading-none">
                   ✕
                 </span>
-                <span>Cerrar</span>
+                <span>
+                  <T es="Cerrar" en="Close" />
+                </span>
               </button>
             </div>
 
@@ -96,19 +121,20 @@ export function MobileNav() {
                 className="group block bg-accent p-6 hover:bg-bg hover:text-text"
               >
                 <p className="font-mono text-xs uppercase tracking-widest text-text/70 group-hover:text-muted">
-                  Empezar aquí
+                  <T es="Empezar aquí" en="Start here" />
                 </p>
                 <p className="mt-2 font-display text-3xl font-medium leading-tight text-text">
-                  {PRIMARY_CTA.label} <span aria-hidden>→</span>
+                  <T es={PRIMARY_CTA.es.label} en={PRIMARY_CTA.en.label} />{" "}
+                  <span aria-hidden>→</span>
                 </p>
                 <p className="mt-2 text-sm text-text/80 group-hover:text-muted">
-                  {PRIMARY_CTA.sub}
+                  <T es={PRIMARY_CTA.es.sub} en={PRIMARY_CTA.en.sub} />
                 </p>
               </Link>
 
               {/* NAV PRINCIPAL */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                Explorar los 52 casos
+                <T es="Explorar los 52 casos" en="Explore the 52 cases" />
               </p>
               <ul className="mt-4 divide-y divide-bg/15 border-y border-bg/15">
                 {NAV_LINKS.map((l) => (
@@ -120,10 +146,10 @@ export function MobileNav() {
                     >
                       <div className="min-w-0 space-y-1">
                         <p className="font-display text-2xl font-medium leading-tight text-bg group-hover:text-text">
-                          {l.label}
+                          <T es={l.es.label} en={l.en.label} />
                         </p>
                         <p className="text-xs text-bg/60 group-hover:text-muted">
-                          {l.sub}
+                          <T es={l.es.sub} en={l.en.sub} />
                         </p>
                       </div>
                       <span
@@ -139,7 +165,7 @@ export function MobileNav() {
 
               {/* NAV SECUNDARIO */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                Más
+                <T es="Más" en="More" />
               </p>
               <ul className="mt-3 grid grid-cols-2 gap-x-4">
                 {SECONDARY_LINKS.map((l) => (
@@ -149,14 +175,17 @@ export function MobileNav() {
                       onClick={() => setOpen(false)}
                       className="block min-h-[48px] py-3 text-sm font-medium text-bg underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
-                      {l.label}
+                      <T es={l.es} en={l.en} />
                     </Link>
                   </li>
                 ))}
               </ul>
 
               <p className="mt-12 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
-                UAP Atlas · análisis institucional · 1947–2026
+                <T
+                  es="UAP Atlas · análisis institucional · 1947–2026"
+                  en="UAP Atlas · institutional analysis · 1947–2026"
+                />
               </p>
             </div>
           </nav>
