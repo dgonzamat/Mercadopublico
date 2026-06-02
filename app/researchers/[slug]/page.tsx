@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
+import { T } from "@/components/T";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
 
 export function generateStaticParams() {
@@ -69,7 +70,12 @@ export default function ResearcherDetailPage({
       {/* Zone C — Apparatus: works as timeline */}
       {r.works.length > 0 && (
         <section className="space-y-3 border-t border-border pt-10">
-          <Eyebrow>Obras clave ({r.works.length})</Eyebrow>
+          <Eyebrow>
+            <T
+              es={`Por qué está acá · ${r.works.length} piezas`}
+              en={`Why they're here · ${r.works.length} pieces`}
+            />
+          </Eyebrow>
           <ol className="space-y-3">
             {r.works.map((w) => (
               <li

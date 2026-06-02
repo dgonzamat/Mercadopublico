@@ -136,7 +136,7 @@ export default function ResumenPage() {
           <T es="Lectura · 10 min" en="Read · 10 min" />
         </Eyebrow>
         <H1>
-          <T es="Resumen del análisis" en="Analysis summary" />
+          <T es="79 años en 10 minutos" en="79 years in 10 minutes" />
         </H1>
         <Lede className="text-muted">
           <T
@@ -206,7 +206,10 @@ export default function ResumenPage() {
             <T es="Hallazgos" en="Findings" />
           </Eyebrow>
           <H2>
-            <T es="Los 5 más importantes" en="The 5 most important" />
+            <T
+              es="Los 5 hechos que cambian la conversación"
+              en="The 5 facts that change the conversation"
+            />
           </H2>
         </div>
         <div className="space-y-10">

@@ -17,19 +17,26 @@ export default function ProbabilidadesPage() {
     <article className="mx-auto max-w-3xl space-y-16 py-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="Razonamiento detallado" en="Detailed reasoning" />
+          <T
+            es="La respuesta del corpus, abierta"
+            en="The corpus answer, opened up"
+          />
         </Eyebrow>
         <H1>
           <T
-            es="Por qué cada hipótesis tiene la probabilidad que tiene"
-            en="Why each hypothesis has the probability it has"
+            es="8 hipótesis. Una sola que importa de verdad."
+            en="8 hypotheses. Only one that actually matters."
           />
         </H1>
         <Lede className="text-muted">
           <T
             es={
               <>
-                Las probabilidades del home se asignan vía{" "}
+                Hay 8 explicaciones posibles para lo que pasa en el cielo.
+                Siete son fáciles de calibrar — o casi ciertas, o casi
+                imposibles. Una es donde está la <strong className="text-text">frontera analítica
+                real</strong>, y la mayoría del debate público gira alrededor de ella
+                sin saberlo. Calibradas vía{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -37,15 +44,19 @@ export default function ProbabilidadesPage() {
                   className="text-accent hover:underline"
                 >
                   ICD-203
-                </a>{" "}
-                (Intelligence Community Directive 2007), el estándar USIC para
-                juicio analítico sin modelo formal de inferencia. Acá se explica
-                el razonamiento detrás de cada etiqueta.
+                </a>
+                , el estándar de la comunidad de inteligencia US para juicio
+                analítico sin modelo formal.
               </>
             }
             en={
               <>
-                The home probabilities are assigned via{" "}
+                There are 8 possible explanations for what&apos;s happening in
+                the sky. Seven are easy to calibrate — either almost certain
+                or almost impossible. One is where the{" "}
+                <strong className="text-text">actual analytical frontier</strong>{" "}
+                lives, and most of the public debate orbits around it without
+                realizing. Calibrated via{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -53,10 +64,9 @@ export default function ProbabilidadesPage() {
                   className="text-accent hover:underline"
                 >
                   ICD-203
-                </a>{" "}
-                (Intelligence Community Directive 2007), the USIC standard for
-                analytical judgment without a formal inference model. Here we
-                explain the reasoning behind each label.
+                </a>
+                , the US intelligence community standard for analytical
+                judgment without a formal model.
               </>
             }
           />
@@ -196,41 +206,27 @@ export default function ProbabilidadesPage() {
 
       <section className="space-y-4 border-t border-border pt-8">
         <Eyebrow>
-          <T es="Posición del corpus" en="Corpus position" />
+          <T
+            es="Por qué la pregunta sigue abierta"
+            en="Why the question stays open"
+          />
         </Eyebrow>
         <H2>
           <T
-            es="Por qué el corpus elige Plurality"
-            en="Why the corpus chooses Plurality"
+            es="La frontera analítica real está en una hipótesis, no en ocho"
+            en="The actual analytical frontier is in one hypothesis, not eight"
           />
         </H2>
         <Body className="text-muted">
           <T
-            es="Ninguna hipótesis individual explica todo el corpus. Casos militares con sensor (Tehran, Nimitz, Belgian Wave) son evidencia fuerte de algo real pero no discriminan entre interpretaciones. Casos folklóricos persistentes (Hessdalen) sugieren fenómenos naturales raros. El cover-up institucional documentado de 79 años sugiere que el estado oculta algo, pero no resuelve si lo que oculta es ET, programa propio, o ambos."
-            en="No single hypothesis explains the entire corpus. Military sensor cases (Tehran, Nimitz, Belgian Wave) are strong evidence of something real but don't discriminate between interpretations. Persistent folkloric cases (Hessdalen) suggest rare natural phenomena. 79 years of documented institutional cover-up suggests the state hides something, but doesn't resolve whether what it hides is ET, an in-house program, or both."
+            es="Siete de las ocho hipótesis se ubican en bandas extremas (casi cierto o muy improbable) — son fáciles de calibrar porque los hechos están del lado del juicio o claramente en contra. La hipótesis H5 (≥1 caso involucra entidades no humanas) está en Probabilidad Pareja 45-55% — ahí es donde el corpus deja de poder decidir, y es la única banda que mueve el debate público real."
+            en="Seven of the eight hypotheses fall in extreme bands (almost certain or very unlikely) — easy to calibrate because the facts are clearly on one side. H5 (≥1 case involves non-human entities) sits at Roughly Even 45-55% — that's where the corpus stops being able to decide, and it's the only band that drives actual public debate."
           />
         </Body>
         <Body className="text-muted">
           <T
-            es={
-              <>
-                La posición{" "}
-                <strong className="text-text">Plurality</strong> dice:
-                probablemente son <em>varios fenómenos distintos</em> agrupados
-                bajo la etiqueta "UAP". Esto es honesto epistemológicamente —
-                admitir que no tenemos resolución suficiente para una explicación
-                unitaria.
-              </>
-            }
-            en={
-              <>
-                The <strong className="text-text">Plurality</strong> position
-                says: probably they are <em>several distinct phenomena</em>{" "}
-                grouped under the "UAP" label. This is epistemically honest —
-                admitting we don't have sufficient resolution for a unitary
-                explanation.
-              </>
-            }
+            es="Casos militares con sensor (Tehran, Nimitz, Belgian Wave) son evidencia fuerte de algo real pero no discriminan entre 'tecnología clasificada' y 'algo no humano'. Casos folklóricos persistentes (Hessdalen) sugieren fenómenos naturales raros pero no excluyen los otros. 79 años de cover-up institucional indica que el estado oculta algo, pero no resuelve si lo que oculta es programa propio, accidente conocido, contacto, o ambos a la vez. Ahí está la pregunta de verdad."
+            en="Military sensor cases (Tehran, Nimitz, Belgian Wave) are strong evidence of something real but don't discriminate between 'classified tech' and 'something non-human'. Persistent folkloric cases (Hessdalen) suggest rare natural phenomena but don't exclude the others. 79 years of institutional cover-up indicates the state hides something, but doesn't resolve whether what it hides is an in-house program, a known accident, contact, or all of the above. That's the real question."
           />
         </Body>
         <Caption>
@@ -277,22 +273,28 @@ export default function ProbabilidadesPage() {
 
       <nav className="flex flex-wrap gap-4 border-t border-border pt-8">
         <Link
-          href="/"
-          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
-        >
-          <T es="← Volver al dashboard" en="← Back to dashboard" />
-        </Link>
-        <Link
           href="/cases"
           className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
         >
-          <T es="Ver casos" en="See cases" />
+          <T
+            es="¿Cuál es el caso más fuerte? →"
+            en="What's the strongest case? →"
+          />
         </Link>
         <Link
           href="/about"
           className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
         >
-          <T es="Metodología" en="Method" />
+          <T
+            es="¿Cómo se calibra la probabilidad?"
+            en="How is the probability calibrated?"
+          />
+        </Link>
+        <Link
+          href="/"
+          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
+        >
+          <T es="← Volver al inicio" en="← Back to home" />
         </Link>
       </nav>
     </article>

@@ -10,28 +10,28 @@ export const metadata = {
 const sections = [
   {
     code: "A",
-    es: "Investigadores científicos / Teóricos",
-    en: "Scientific researchers / Theorists",
+    es: "Los que estudian con instrumentos",
+    en: "Those who study with instruments",
   },
   {
     code: "B",
-    es: "Insiders / Whistleblowers",
-    en: "Insiders / Whistleblowers",
+    es: "Los que estuvieron adentro",
+    en: "Those who were inside",
   },
   {
     code: "C",
-    es: "Actores políticos formales",
-    en: "Formal political actors",
+    es: "Los que pelean en el Capitolio",
+    en: "Those who fight on Capitol Hill",
   },
   {
     code: "D",
-    es: "Periodistas investigativos",
-    en: "Investigative journalists",
+    es: "Los que publican el documento",
+    en: "Those who publish the document",
   },
   {
     code: "E",
-    es: "Investigación ontológico-religiosa",
-    en: "Ontological-religious research",
+    es: "Los que se preguntan qué clase de cosa es esto",
+    en: "Those who ask what kind of thing this is",
   },
 ];
 
@@ -40,28 +40,34 @@ export default function ResearchersPage() {
     <div className="space-y-8">
       <header>
         <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
-          <T es="Ecosistema de disclosure" en="Disclosure ecosystem" />
+          <T
+            es="Las personas que no se callaron"
+            en="The people who didn't stay quiet"
+          />
         </h1>
         <p className="mt-2 text-muted">
           <T
             es={
               <>
-                Categoría epistemológica IV del corpus. Cinco sub-categorías de
-                figuras que producen{" "}
+                Investigadores, pilotos, congresistas, periodistas y filósofos
+                religiosos. Las 22 personas que sostienen el discurso UAP
+                sin convertirse en celebridades de feria. Todas en{" "}
                 <strong className="text-text">
-                  metodología, testimonio o acción bajo riesgo personal/político
+                  riesgo personal, político o profesional
                 </strong>{" "}
-                — no opinión.
+                — producen metodología, testimonio o acción, no opinión.
               </>
             }
             en={
               <>
-                Epistemological category IV of the corpus. Five sub-categories
-                of figures who produce{" "}
+                Researchers, pilots, congresspeople, journalists, and
+                religious philosophers. The 22 people who sustain the UAP
+                discourse without turning into carnival celebrities. All
+                taking{" "}
                 <strong className="text-text">
-                  methodology, testimony or action under personal/political risk
+                  personal, political, or professional risk
                 </strong>{" "}
-                — not opinion.
+                — producing methodology, testimony, or action, not opinion.
               </>
             }
           />

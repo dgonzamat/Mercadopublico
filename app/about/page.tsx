@@ -16,14 +16,14 @@ export default function AboutPage() {
         </Eyebrow>
         <H1>
           <T
-            es="Cómo se construyó este análisis"
-            en="How this analysis was built"
+            es="Las reglas del juego"
+            en="The rules of the game"
           />
         </H1>
         <Lede className="text-muted">
           <T
-            es="Principios metodológicos explícitos. Qué cuenta como evidencia, cómo se evalúa, cómo se actualizan las probabilidades."
-            en="Explicit methodological principles. What counts as evidence, how it's evaluated, how probabilities are updated."
+            es="Toda colección de evidencia UAP necesita una respuesta a tres preguntas: qué cuenta, cómo se pesa, y cuándo cambia. Acá las tres, explícitas — para que cualquiera pueda auditar el análisis en lugar de creerlo."
+            en="Any UAP evidence collection needs an answer to three questions: what counts, how it's weighted, and when it changes. Here are all three, made explicit — so anyone can audit the analysis instead of having to believe it."
           />
         </Lede>
       </header>
@@ -35,8 +35,8 @@ export default function AboutPage() {
           </Eyebrow>
           <H2>
             <T
-              es="Framework de cuatro tiers evidenciales"
-              en="Four-tier evidential framework"
+              es="Por qué Roswell no equivale a Meier"
+              en="Why Roswell isn't equivalent to Meier"
             />
           </H2>
         </div>
@@ -115,8 +115,8 @@ export default function AboutPage() {
           </Eyebrow>
           <H2>
             <T
-              es="Principio Bayesiano — qué casos mueven probabilidades"
-              en="Bayesian principle — which cases move probabilities"
+              es="El caso #50 ya no enseña nada (retorno marginal)"
+              en="Case #50 teaches nothing new (marginal return)"
             />
           </H2>
         </div>
@@ -186,8 +186,8 @@ export default function AboutPage() {
           </Eyebrow>
           <H2>
             <T
-              es="Las hipótesis NO son mutuamente excluyentes"
-              en="Hypotheses are NOT mutually exclusive"
+              es="Por qué las probabilidades superan 100% (y no es un error)"
+              en="Why probabilities exceed 100% (and it's not a bug)"
             />
           </H2>
         </div>

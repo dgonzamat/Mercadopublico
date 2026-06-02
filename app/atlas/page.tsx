@@ -25,12 +25,15 @@ export default function AtlasPage() {
     <div className="space-y-6">
       <header>
         <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
-          <T es="Atlas de patrones" en="Pattern Atlas" />
+          <T
+            es="Dónde pasa lo que no debería estar pasando"
+            en="Where the things that shouldn't happen, happen"
+          />
         </h1>
         <p className="mt-2 text-muted">
           <T
-            es={`${cases.length} casos UAP institucionales distribuidos globalmente (1947–2026). Click un marcador para ver el caso.`}
-            en={`${cases.length} institutional UAP cases distributed globally (1947–2026). Click a marker to see the case.`}
+            es={`${cases.length} casos georeferenciados. Si fuera fenómeno gringo, la mancha estaría sobre Nevada. Mirá dónde realmente está. Click un marcador para ver el caso.`}
+            en={`${cases.length} georeferenced cases. If it were a US-only phenomenon, the cluster would be over Nevada. Look at where it actually is. Click a marker to see the case.`}
           />
         </p>
       </header>

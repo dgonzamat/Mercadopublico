@@ -190,7 +190,7 @@ export default function CaseDetailPage({
                   <T es="Parte 01" en="Part 01" />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  <T es="Qué pasó" en="What happened" />
+                  <T es="La noche en cuestión" en="The night in question" />
                 </h2>
               </header>
 
@@ -243,7 +243,10 @@ export default function CaseDetailPage({
                   <T es="Parte 02" en="Part 02" />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  <T es="Por qué importa" en="Why it matters" />
+                  <T
+                    es="Por qué este caso movió la aguja"
+                    en="Why this case moved the needle"
+                  />
                 </h2>
               </header>
               <p className="font-display text-xl leading-snug text-text md:text-2xl">
@@ -264,7 +267,7 @@ export default function CaseDetailPage({
             <T es="Parte 03" en="Part 03" />
           </p>
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-            <T es="La evidencia detrás" en="The evidence behind" />
+            <T es="Lo que queda en papel" en="What's left on paper" />
           </h2>
         </header>
 
@@ -386,8 +389,8 @@ export default function CaseDetailPage({
         {!hasRichContent && (
           <Caption className="italic">
             <T
-              es={`Caso pendiente de explicación detallada — solo el resumen de arriba está documentado. Expandimos gradualmente los ${TOTAL_CASES} casos del corpus.`}
-              en={`Case pending detailed explanation — only the summary above is documented. We're gradually expanding the ${TOTAL_CASES} cases.`}
+              es={`Este caso aún no está expandido — solo el dato bruto. Si tenés fuentes documentales para ampliarlo, pull request bienvenido en el repo. Vamos por los ${TOTAL_CASES} progresivamente.`}
+              en={`This case isn't expanded yet — just the raw record. If you have documentary sources to expand it, pull requests welcome in the repo. We're going through ${TOTAL_CASES} progressively.`}
             />
           </Caption>
         )}
