@@ -25,7 +25,10 @@ export default function FrameworksPage() {
     <div className="space-y-8">
       <header>
         <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
-          <T es="Frameworks teóricos" en="Theoretical frameworks" />
+          <T
+            es="11 teorías serias en competencia"
+            en="11 serious competing theories"
+          />
         </h1>
         <p className="mt-2 text-muted">
           <T

@@ -11,7 +11,10 @@ export default function PatternsPage() {
     <div className="space-y-8">
       <header>
         <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
-          <T es="Patrones recurrentes" en="Recurring patterns" />
+          <T
+            es="18 patrones que aparecen una y otra vez"
+            en="18 patterns that show up again and again"
+          />
         </h1>
         <p className="mt-2 text-muted">
           <T

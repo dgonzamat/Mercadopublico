@@ -6,8 +6,8 @@ import { T } from "@/components/T";
 
 const PRIMARY_CTA = {
   href: "/probabilidades",
-  es: { label: "Ver probabilidades", sub: "Las 6 hipótesis sobre UAP" },
-  en: { label: "See probabilities", sub: "The 6 hypotheses about UAP" },
+  es: { label: "Ver probabilidades", sub: "Las 8 hipótesis y dónde está la frontera real" },
+  en: { label: "See probabilities", sub: "The 8 hypotheses and where the real frontier is" },
 };
 
 const NAV_LINKS = [
@@ -165,7 +165,7 @@ export function MobileNav() {
 
               {/* NAV SECUNDARIO */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es="Más" en="More" />
+                <T es="Material complementario" en="Supplementary material" />
               </p>
               <ul className="mt-3 grid grid-cols-2 gap-x-4">
                 {SECONDARY_LINKS.map((l) => (
