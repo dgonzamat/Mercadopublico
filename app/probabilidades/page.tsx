@@ -402,14 +402,9 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
         </div>
       )}
 
-      {associatedPatterns.length === 0 && supportingCases.length === 0 && (
-        <Caption className="italic">
-          <T
-            es="Sin patrones ni casos del corpus que sostengan directamente esta hipótesis — es prevalente en discurso público pero no en evidencia institucional."
-            en="No patterns or corpus cases directly sustain this hypothesis — it is prevalent in public discourse but not in institutional evidence."
-          />
-        </Caption>
-      )}
+      {associatedPatterns.length === 0 &&
+        supportingCases.length === 0 &&
+        renderNoEvidenceExpansion(h.id)}
 
       {supportingCases.length > 0 && (
         <Link
@@ -444,4 +439,168 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
       )}
     </section>
   );
+}
+
+/**
+ * Editorial expansion for hypotheses that legitimately have zero
+ * pattern + zero supporting case matches. Instead of an italic
+ * "no evidence" caption (which reads as empty), we render the
+ * actual reasoning for the assigned probability + relevant cross-
+ * links (to subclasses, to researchers, to other pages).
+ */
+function renderNoEvidenceExpansion(id: string) {
+  switch (id) {
+    case "misidentificacion":
+      return (
+        <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
+          <Body>
+            <T
+              es="Esta probabilidad NO se calcula sobre los 52 casos del corpus — esos ya sobrevivieron filtros institucionales (militar, congresional, periodístico). Aplica al universo previo: el conjunto general de reportes UAP enviados a Project Blue Book, AARO, y agencias similares, donde aproximadamente el 95% se resuelven como globos meteorológicos, satélites, aves, lens flares, pareidolia."
+              en="This probability is NOT computed over the 52 corpus cases — those already survived institutional filters (military, congressional, journalistic). It applies to the prior universe: the general set of UAP reports sent to Project Blue Book, AARO, and similar agencies, where approximately 95% resolve as weather balloons, satellites, birds, lens flares, pareidolia."
+            />
+          </Body>
+          <Body className="text-muted">
+            <T
+              es="La utilidad del corpus es justamente filtrar este 95%. Reconocer que la mayoría son misidentificaciones es lo que vuelve interesantes a los casos que no lo son."
+              en="The corpus's value is precisely filtering out this 95%. Acknowledging that most are misidentifications is what makes the remaining cases interesting."
+            />
+          </Body>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link
+              href="/about"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T
+                es="Cómo se filtra el corpus →"
+                en="How the corpus is filtered →"
+              />
+            </Link>
+          </div>
+        </div>
+      );
+
+    case "entidades-no-humanas":
+      return (
+        <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
+          <Body>
+            <T
+              es="Esta es la categoría paraguas. Su 45% se compone matemáticamente de la unión de proposiciones más específicas: interdimensional (22%), psicoespiritual (22%), tratado formal (6%), + categorías que aún no tenemos vocabulario para nombrar. P(unión) ≥ P(cualquier subclase), por eso el paraguas es mayor que cualquier specific bet."
+              en="This is the umbrella category. Its 45% composes mathematically from the union of more specific propositions: interdimensional (22%), psychospiritual (22%), formal treaty (6%), + categories we don't yet have vocabulary for. P(union) ≥ P(any subclass), which is why the umbrella exceeds any specific bet."
+            />
+          </Body>
+          <Body className="text-muted">
+            <T
+              es="La frontera analítica real vive acá. Casos militares con sensor (Tehran, Nimitz) son evidencia fuerte de algo, pero NO discriminan entre 'tecnología clasificada' y 'algo no humano' — ambas interpretaciones son consistentes con los datos. Esa indecidibilidad es la que mantiene la probabilidad en banda pareja."
+              en="The real analytical frontier lives here. Military sensor cases (Tehran, Nimitz) are strong evidence of something, but do NOT discriminate between 'classified tech' and 'something non-human' — both interpretations are consistent with the data. That undecidability is what keeps the probability in the even band."
+            />
+          </Body>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link
+              href="#interdimensional"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T
+                es="Ver subclase: interdimensional ↓"
+                en="See subclass: interdimensional ↓"
+              />
+            </Link>
+            <Link
+              href="#psicoespiritual"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T
+                es="Ver subclase: psicoespiritual ↓"
+                en="See subclass: psychospiritual ↓"
+              />
+            </Link>
+            <Link
+              href="#tratado-greys"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T
+                es="Ver subclase: tratado ↓"
+                en="See subclass: treaty ↓"
+              />
+            </Link>
+          </div>
+        </div>
+      );
+
+    case "psicoespiritual":
+      return (
+        <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
+          <Body>
+            <T
+              es="No hay patrones estructurales aislables en el corpus — la evidencia de esta hipótesis es testimonial (Mack, Strieber) o etnográfica-ontológica (Pasulka). Eso no la invalida, pero significa que la calibración debe basarse en literatura externa, no en el conteo de casos institucionales."
+              en="No isolable structural patterns in the corpus — evidence for this hypothesis is testimonial (Mack, Strieber) or ethnographic-ontological (Pasulka). That doesn't invalidate it, but means calibration must rely on external literature, not on institutional case counts."
+            />
+          </Body>
+          <Body className="text-muted">
+            <T
+              es="El 22% refleja: hay evidencia testimonial extensa y bien documentada (Harvard Med, novelas multi-décadas, Oxford UP), pero su naturaleza fenomenológica la hace difícil de auditar con métodos materialistas estándar."
+              en="The 22% reflects: there is extensive, well-documented testimonial evidence (Harvard Med, multi-decade novels, Oxford UP), but its phenomenological nature makes it hard to audit with standard materialist methods."
+            />
+          </Body>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link
+              href="/researchers/mack"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T es="John Mack →" en="John Mack →" />
+            </Link>
+            <Link
+              href="/researchers/strieber"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T es="Whitley Strieber →" en="Whitley Strieber →" />
+            </Link>
+            <Link
+              href="/researchers/pasulka"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T es="Diana Pasulka →" en="Diana Pasulka →" />
+            </Link>
+          </div>
+        </div>
+      );
+
+    case "tratado-greys":
+      return (
+        <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
+          <Body>
+            <T
+              es="Es una claim histórica específica: William Cooper afirmó en los 80s que existió un tratado formal Eisenhower-Greys 1954. Bob Lazar afirmó haber trabajado con tecnología recuperada en S-4 (Area 51). Ninguna afirmación tiene evidencia primaria verificable — ni documentos, ni testigos corroborantes, ni materiales."
+              en="It is a specific historical claim: William Cooper claimed in the 80s that a formal Eisenhower-Greys treaty existed in 1954. Bob Lazar claimed to have worked with recovered technology at S-4 (Area 51). Neither claim has verifiable primary evidence — no documents, no corroborating witnesses, no materials."
+            />
+          </Body>
+          <Body className="text-muted">
+            <T
+              es="El 6% refleja: la claim circula 40+ años en cultura UAP, pero el corpus institucional no la sostiene. Aún así no está en 0% porque el cover-up institucional documentado (Twining → Bolender → PURSUE) deja espacio epistémico para sorpresas."
+              en="The 6% reflects: the claim has circulated 40+ years in UAP culture, but the institutional corpus does not sustain it. Still not at 0% because the documented institutional cover-up (Twining → Bolender → PURSUE) leaves epistemic room for surprises."
+            />
+          </Body>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link
+              href="/frameworks"
+              className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
+            >
+              <T
+                es="Ver framework Treaty (Cooper) →"
+                en="See Treaty framework (Cooper) →"
+              />
+            </Link>
+          </div>
+        </div>
+      );
+
+    default:
+      return (
+        <Caption className="italic">
+          <T
+            es="Sin patrones ni casos directos en el corpus actual — la calibración deriva de literatura externa."
+            en="No direct patterns or cases in the current corpus — calibration derives from external literature."
+          />
+        </Caption>
+      );
+  }
 }
