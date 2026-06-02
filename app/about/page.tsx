@@ -200,56 +200,75 @@ export default function AboutPage() {
         <div className="rounded-lg border border-border bg-surface-2 p-5">
           <Eyebrow>
             <T
-              es="Ejemplo de probabilidades coexistentes"
-              en="Example of coexisting probabilities"
+              es="Ejemplo de probabilidades independientes (suman >100%)"
+              en="Example of independent probabilities (sum >100%)"
             />
           </Eyebrow>
           <ul className="mt-3 space-y-2 text-sm">
             <li className="flex items-baseline gap-3">
               <span className="w-10 text-right font-mono text-accent tabular-nums">
-                48%
+                97%
               </span>
               <span className="text-text">
                 <T
-                  es="Pluralidad de inteligencias"
-                  en="Plurality of intelligences"
+                  es="Misidentificación (mayoría de reportes generales)"
+                  en="Misidentification (most general reports)"
                 />
               </span>
             </li>
             <li className="flex items-baseline gap-3">
               <span className="w-10 text-right font-mono text-accent tabular-nums">
-                15%
-              </span>
-              <span className="text-text">Interdimensional</span>
-            </li>
-            <li className="flex items-baseline gap-3">
-              <span className="w-10 text-right font-mono text-accent tabular-nums">
-                12%
+                95%
               </span>
               <span className="text-text">
                 <T
-                  es="Fenómeno natural no catalogado"
-                  en="Uncatalogued natural phenomenon"
+                  es="El corpus contiene causas heterogéneas"
+                  en="The corpus contains heterogeneous causes"
                 />
               </span>
             </li>
             <li className="flex items-baseline gap-3">
               <span className="w-10 text-right font-mono text-accent tabular-nums">
-                11%
+                88%
               </span>
               <span className="text-text">
                 <T
-                  es="Programa clasificado EE.UU."
-                  en="US classified program"
+                  es="≥1 caso es programa clasificado terrestre"
+                  en="≥1 case is a terrestrial classified program"
+                />
+              </span>
+            </li>
+            <li className="flex items-baseline gap-3">
+              <span className="w-10 text-right font-mono text-accent tabular-nums">
+                70%
+              </span>
+              <span className="text-text">
+                <T
+                  es="≥1 caso es fenómeno natural raro"
+                  en="≥1 case is a rare natural phenomenon"
+                />
+              </span>
+            </li>
+            <li className="flex items-baseline gap-3">
+              <span className="w-10 text-right font-mono text-accent tabular-nums">
+                45%
+              </span>
+              <span className="text-text">
+                <T
+                  es="≥1 caso involucra entidades no humanas"
+                  en="≥1 case involves non-human entities"
                 />
               </span>
             </li>
             <li className="flex items-baseline gap-3">
               <span className="w-10 text-right font-mono text-muted tabular-nums">
-                14%
+                Σ &gt; 100%
               </span>
               <span className="text-muted">
-                <T es="otras hipótesis" en="other hypotheses" />
+                <T
+                  es="suma supera 100% — y eso es correcto bajo no-exclusividad"
+                  en="sum exceeds 100% — correct under non-exclusivity"
+                />
               </span>
             </li>
           </ul>

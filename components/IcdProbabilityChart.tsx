@@ -31,14 +31,20 @@ export function IcdProbabilityChart() {
           <T es="¿Qué son los UAP?" en="What are UAPs?" />
           <br />
           <span className="text-muted">
-            <T es="Probabilidad por hipótesis." en="Probability per hypothesis." />
+            <T
+              es="Probabilidad de cada proposición — independientes."
+              en="Probability per proposition — independent."
+            />
           </span>
         </H2>
         <Caption className="max-w-2xl pt-2">
           <T
             es={
               <>
-                Las 6 hipótesis principales con probabilidad expresada como{" "}
+                Las {rows.length} hipótesis son <strong>proposiciones independientes</strong>:
+                cada P responde "¿es esto cierto de al menos algunos casos del corpus?". Las
+                probabilidades <strong>NO suman 100%</strong> — los componentes pueden ser
+                parcialmente verdaderos en simultáneo. Calibradas vía{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -52,7 +58,10 @@ export function IcdProbabilityChart() {
             }
             en={
               <>
-                The 6 main hypotheses with probability expressed as an{" "}
+                The {rows.length} hypotheses are <strong>independent propositions</strong>:
+                each P answers "is this true of at least some corpus cases?".
+                Probabilities <strong>do NOT sum to 100%</strong> — components can be
+                partially true simultaneously. Calibrated via{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -129,67 +138,6 @@ export function IcdProbabilityChart() {
               <p className="text-sm text-muted">
                 <T es={h.note} en={h.noteEn} />
               </p>
-
-              {h.subhypotheses && h.subhypotheses.length > 0 && (
-                <details className="group mt-4 border-l-2 border-text/15 pl-4">
-                  <summary className="cursor-pointer list-none font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
-                    <T
-                      es={`Esta es una meta-hipótesis. Ver ${h.subhypotheses.length} sub-componentes →`}
-                      en={`This is a meta-hypothesis. See ${h.subhypotheses.length} sub-components →`}
-                    />
-                  </summary>
-                  <div className="mt-4 space-y-5">
-                    {h.subhypotheses.map((s, sIdx) => (
-                      <div key={s.id} className="space-y-2">
-                        <div className="flex items-baseline justify-between gap-3">
-                          <p className="font-display text-base font-medium leading-snug text-text md:text-lg">
-                            <span
-                              aria-hidden
-                              className="mr-2 font-mono text-xs tabular-nums text-muted"
-                            >
-                              {String(idx + 1).padStart(2, "0")}
-                              {String.fromCharCode(97 + sIdx)}
-                            </span>
-                            <T es={s.label} en={s.labelEn} />
-                          </p>
-                          <span
-                            className="shrink-0 font-mono text-[10px] uppercase tracking-wider text-muted"
-                          >
-                            <T es={s.icd.labelEs} en={s.icd.label} />
-                          </span>
-                        </div>
-                        <div
-                          className="relative h-1.5 bg-text/10"
-                          role="progressbar"
-                          aria-valuemin={s.icd.min}
-                          aria-valuemax={s.icd.max}
-                          aria-valuenow={Math.round((s.icd.min + s.icd.max) / 2)}
-                          aria-valuetext={`${s.label}: ${s.icd.labelEs}`}
-                        >
-                          <div
-                            className="absolute h-full"
-                            style={{
-                              left: `${s.icd.min}%`,
-                              width: `${s.icd.max - s.icd.min}%`,
-                              backgroundColor: h.color,
-                              opacity: 0.65,
-                            }}
-                          />
-                        </div>
-                        <p className="text-xs text-muted">
-                          <T es={s.note} en={s.noteEn} />
-                        </p>
-                      </div>
-                    ))}
-                    <p className="border-t border-text/10 pt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-                      <T
-                        es="Las sub-probabilidades NO suman 100%: los componentes pueden ser parcialmente verdaderos en simultáneo (no-mutua-exclusividad)."
-                        en="Sub-probabilities do NOT sum to 100%: components can be partially true simultaneously (non-mutual-exclusivity)."
-                      />
-                    </p>
-                  </div>
-                </details>
-              )}
             </div>
 
             <div className="col-span-2 flex items-baseline gap-6 font-mono text-xs uppercase tracking-wider text-muted md:col-span-1 md:flex-col md:items-end md:gap-1 md:text-right">

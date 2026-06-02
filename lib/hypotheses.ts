@@ -1,28 +1,21 @@
 import { ICD_LABELS, pctToIcdLabel, type IcdLabel } from "./icd203";
 
 /**
- * Single source of truth for the 6 main hypotheses about what UAPs are.
+ * Single source of truth for the 8 independent hypotheses about UAP.
  *
- * `corpusPct` is the historical figure from METHODOLOGY.md — an analytical
- * judgment, NOT a posterior derived from a formal model. We label it via
- * ICD-203 to avoid implying false precision (e.g., "48%" vs "45%" is not
- * meaningfully different given the evidence base).
+ * PARADIGM: Independent propositions (not mutually exclusive).
  *
- * Plurality (#01) is a meta-hypothesis: "several of the below are partially
- * true". Its `subhypotheses` decompose the claim into independently testable
- * components, each with its own ICD-203 band. The non-mutual-exclusivity
- * documented in /about applies — sub-probabilities do NOT need to sum to 100%.
+ * Each hypothesis = P(this proposition is true of at least some cases in
+ * the corpus). Probabilities do NOT sum to 100% — they CAN'T, because
+ * hypotheses are not mutually exclusive (see /about chapter 3).
+ *
+ * This replaces the previous 6-hypothesis exclusive framework, which
+ * contradicted its own non-exclusivity claim by summing to exactly 100%.
+ *
+ * `corpusPct` is the analytical midpoint estimate. Mapped to ICD-203 band
+ * via pctToIcdLabel() — the standard remains words-over-decimals because
+ * we lack a formal likelihood model.
  */
-
-export interface SubHypothesis {
-  id: string;
-  label: string;
-  labelEn: string;
-  midPct: number;
-  note: string;
-  noteEn: string;
-  icd: IcdLabel;
-}
 
 export interface Hypothesis {
   id: string;
@@ -33,112 +26,86 @@ export interface Hypothesis {
   note: string;
   noteEn: string;
   icd: IcdLabel;
-  subhypotheses?: SubHypothesis[];
 }
 
-type RawSubHypothesis = Omit<SubHypothesis, "icd">;
-type RawHypothesis = Omit<Hypothesis, "icd" | "subhypotheses"> & {
-  subhypotheses?: RawSubHypothesis[];
-};
-
-const RAW: RawHypothesis[] = [
+const RAW: Array<Omit<Hypothesis, "icd">> = [
   {
-    id: "pluralidad",
-    label: "Son varias cosas distintas, no una sola",
-    labelEn: "They are several distinct things, not one",
-    corpusPct: 48,
+    id: "misidentificacion",
+    label: "Misidentificaciones explican la mayoría de reportes",
+    labelEn: "Misidentifications explain the majority of reports",
+    corpusPct: 97,
+    color: "#6b6356",
+    note: "Globos, satélites, aves, lens flares, pareidolia. Project Blue Book resolvió ~95% así. Aplica a reportes generales, no a los 52 institucionales del corpus (que sobrevivieron filtros).",
+    noteEn: "Balloons, satellites, birds, lens flares, pareidolia. Project Blue Book resolved ~95% this way. Applies to general reports, not to the 52 institutional corpus cases (which survived filters).",
+  },
+  {
+    id: "heterogeneidad",
+    label: "El corpus contiene varias causas heterogéneas",
+    labelEn: "The corpus contains several heterogeneous causes",
+    corpusPct: 95,
     color: "#c41e3a",
-    note: "Programas militares + fenómenos naturales + algo no humano + identificaciones erradas, mezclados bajo la misma etiqueta 'UAP'",
-    noteEn: "Classified military programs + natural phenomena + something non-human + misidentifications, mixed under the same 'UAP' label",
-    subhypotheses: [
-      {
-        id: "pluralidad-clasificado",
-        label: "Parte son programas militares clasificados",
-        labelEn: "Part are classified military programs",
-        midPct: 88,
-        note: "Skunkworks, breakaway tech, drones experimentales — documentado históricamente (U-2 confundido con UFOs 1950s)",
-        noteEn: "Skunkworks, breakaway tech, experimental drones — historically documented (U-2 misidentified as UFOs in 1950s)",
-      },
-      {
-        id: "pluralidad-natural",
-        label: "Parte son fenómenos naturales raros",
-        labelEn: "Part are rare natural phenomena",
-        midPct: 70,
-        note: "Plasma atmosférico, sprites, ball lightning, ionización exótica — explica casos folklóricos persistentes",
-        noteEn: "Atmospheric plasma, sprites, ball lightning, exotic ionization — explains persistent folkloric cases",
-      },
-      {
-        id: "pluralidad-no-humano",
-        label: "Parte son entidades no humanas",
-        labelEn: "Part are non-human entities",
-        midPct: 50,
-        note: "No necesariamente ET clásico — podría ser interdimensional, ultraterrestre, criptoterrestre, o categorías que no tenemos",
-        noteEn: "Not necessarily classical ET — could be interdimensional, ultraterrestrial, cryptoterrestrial, or categories we don't yet have",
-      },
-      {
-        id: "pluralidad-misid",
-        label: "Parte son identificaciones erradas",
-        labelEn: "Part are misidentifications",
-        midPct: 97,
-        note: "Globos, satélites, aves, lens flares, pareidolia — Project Blue Book resolvió ~95% de reportes así",
-        noteEn: "Balloons, satellites, birds, lens flares, pareidolia — Project Blue Book resolved ~95% of reports this way",
-      },
-    ],
+    note: "Trivialmente cierta si CUALQUIER otra hipótesis abajo es parcialmente verdadera. Negarla requiere asumir explicación monolítica para 52 casos en 79 años — estadísticamente extremo.",
+    noteEn: "Trivially true if ANY hypothesis below is partially true. Denying it requires assuming a monolithic explanation for 52 cases over 79 years — statistically extreme.",
+  },
+  {
+    id: "programas-clasificados",
+    label: "≥1 caso es programa militar clasificado",
+    labelEn: "≥1 case is a classified military program",
+    corpusPct: 88,
+    color: "#1e4f8b",
+    note: "Skunkworks, breakaway tech, drones experimentales. Documentado: U-2 confundido con UFOs (1950s), F-117 (1980s). Vehículos no acknowledged siguen existiendo.",
+    noteEn: "Skunkworks, breakaway tech, experimental drones. Historically documented: U-2 misidentified as UFOs (1950s), F-117 (1980s). Non-acknowledged vehicles continue to exist.",
+  },
+  {
+    id: "fenomenos-naturales",
+    label: "≥1 caso es fenómeno natural raro no catalogado",
+    labelEn: "≥1 case is a rare uncatalogued natural phenomenon",
+    corpusPct: 70,
+    color: "#8b6914",
+    note: "Plasma atmosférico, sprites, ball lightning, ionización exótica. Explica recurrencias locales (Hessdalen, Popocatépetl, Marfa).",
+    noteEn: "Atmospheric plasma, sprites, ball lightning, exotic ionization. Explains local recurrences (Hessdalen, Popocatépetl, Marfa).",
+  },
+  {
+    id: "entidades-no-humanas",
+    label: "≥1 caso involucra entidades no humanas (categoría amplia)",
+    labelEn: "≥1 case involves non-human entities (broad category)",
+    corpusPct: 45,
+    color: "#8b0000",
+    note: "Paraguas que abarca ET clásico, interdimensional, ultraterrestre, criptoterrestre, o categorías ontológicas no establecidas. P(unión) ≥ P(cualquier subclase específica).",
+    noteEn: "Umbrella covering classical ET, interdimensional, ultraterrestrial, cryptoterrestrial, or unestablished ontological categories. P(union) ≥ P(any specific subclass).",
   },
   {
     id: "interdimensional",
-    label: "Interdimensional / física exótica",
-    labelEn: "Interdimensional / exotic physics",
-    corpusPct: 15,
+    label: "≥1 caso es interdimensional / física exótica",
+    labelEn: "≥1 case is interdimensional / exotic physics",
+    corpusPct: 22,
     color: "#c07020",
-    note: "Vienen de otras dimensiones, no de otros planetas (Puthoff, Davis)",
-    noteEn: "They come from other dimensions, not other planets (Puthoff, Davis)",
-  },
-  {
-    id: "natural",
-    label: "Fenómeno natural no catalogado",
-    labelEn: "Uncatalogued natural phenomenon",
-    corpusPct: 12,
-    color: "#8b6914",
-    note: "Plasma, ionización avanzada, sprites — Hessdalen, Popocatépetl",
-    noteEn: "Plasma, advanced ionization, sprites — Hessdalen, Popocatépetl",
-  },
-  {
-    id: "clasificado",
-    label: "Programa clasificado terrestre",
-    labelEn: "Terrestrial classified program",
-    corpusPct: 11,
-    color: "#1e4f8b",
-    note: "Breakaway civilization, black budget militar (Jorjani)",
-    noteEn: "Breakaway civilization, military black budget (Jorjani)",
-  },
-  {
-    id: "tratado",
-    label: "Tratado formal con Greys",
-    labelEn: "Formal treaty with Greys",
-    corpusPct: 8,
-    color: "#6b3aa0",
-    note: "Hipótesis Cooper, Lazar — sin evidencia primaria verificable",
-    noteEn: "Cooper, Lazar hypothesis — no verifiable primary evidence",
+    note: "Subclase específica de 'no humanas': vienen de otras dimensiones / atraviesan barreras espacio-tiempo. Framework Puthoff, Davis, Vallée's control system.",
+    noteEn: "Specific subclass of 'non-human': they come from other dimensions / traverse spacetime barriers. Puthoff, Davis, Vallée's control system framework.",
   },
   {
     id: "psicoespiritual",
-    label: "Contacto psicoespiritual / 'Other'",
-    labelEn: "Psychospiritual contact / 'Other'",
-    corpusPct: 6,
+    label: "≥1 caso es psicoespiritual / ontológico-religioso",
+    labelEn: "≥1 case is psychospiritual / ontological-religious",
+    corpusPct: 22,
     color: "#2a7878",
-    note: "Mack, Strieber, framework ontológico-religioso de Pasulka",
-    noteEn: "Mack, Strieber, Pasulka's ontological-religious framework",
+    note: "Subclase de 'no humanas': fenómeno ontológicamente distinto a aliens físicos. Mack, Strieber, Pasulka. Incluye lecturas religiosas (Boebert/Nephilim).",
+    noteEn: "Subclass of 'non-human': ontologically distinct from physical aliens. Mack, Strieber, Pasulka. Includes religious readings (Boebert/Nephilim).",
+  },
+  {
+    id: "tratado-greys",
+    label: "Existe tratado formal con Greys (claim específica)",
+    labelEn: "A formal treaty with Greys exists (specific claim)",
+    corpusPct: 6,
+    color: "#6b3aa0",
+    note: "Hipótesis Cooper, Lazar — afirmación histórica específica de acuerdo Eisenhower 1954. Sin evidencia primaria verificable en el corpus.",
+    noteEn: "Cooper, Lazar hypothesis — specific historical claim of Eisenhower 1954 agreement. No verifiable primary evidence in the corpus.",
   },
 ];
 
 export const HYPOTHESES: Hypothesis[] = RAW.map((h) => ({
   ...h,
   icd: pctToIcdLabel(h.corpusPct),
-  subhypotheses: h.subhypotheses?.map((s) => ({
-    ...s,
-    icd: pctToIcdLabel(s.midPct),
-  })),
 }));
 
 export function getHypothesis(id: string): Hypothesis | undefined {

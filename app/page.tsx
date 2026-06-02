@@ -1,15 +1,12 @@
 import Link from "next/link";
 import { cases } from "@/lib/data";
 import { TimelineByYear } from "@/components/TimelineByYear";
-import { HYPOTHESES } from "@/lib/hypotheses";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { countryCount } from "@/lib/corpusStats";
 
 export default function HomePage() {
   const countries = countryCount(cases);
-  const mainHypothesis = HYPOTHESES[0];
-
   return (
     <div className="space-y-40 md:space-y-56">
       {/* ────────── HERO ────────── */}
@@ -116,26 +113,33 @@ export default function HomePage() {
 
           <div className="grid gap-px bg-bg/15 md:grid-cols-4">
             <CategoryFact
-              eyebrow="48%"
-              es={{ label: "Pluralidad", desc: "Son varias cosas, no una" }}
-              en={{ label: "Plurality", desc: "Several things, not one" }}
+              eyebrow="97%"
+              es={{ label: "Misidentificación", desc: "Globos, satélites, aves" }}
+              en={{ label: "Misidentification", desc: "Balloons, satellites, birds" }}
             />
             <CategoryFact
-              eyebrow="15%"
-              es={{ label: "Interdimensional", desc: "Otras dimensiones, no otros planetas" }}
-              en={{ label: "Interdimensional", desc: "Other dimensions, not other planets" }}
+              eyebrow="88%"
+              es={{ label: "Programa clasificado", desc: "≥1 caso es black-budget militar" }}
+              en={{ label: "Classified program", desc: "≥1 case is military black-budget" }}
             />
             <CategoryFact
-              eyebrow="12%"
-              es={{ label: "Natural", desc: "Plasma, sprites, ionización" }}
-              en={{ label: "Natural", desc: "Plasma, sprites, ionization" }}
+              eyebrow="70%"
+              es={{ label: "Natural raro", desc: "≥1 caso es plasma/sprites/ionización" }}
+              en={{ label: "Rare natural", desc: "≥1 case is plasma/sprites/ionization" }}
             />
             <CategoryFact
-              eyebrow="11+8+6%"
-              es={{ label: "Otras 3", desc: "Clasificado · Greys · Psicoespiritual" }}
-              en={{ label: "Other 3", desc: "Classified · Greys · Psychospiritual" }}
+              eyebrow="45%"
+              es={{ label: "Entidad no humana", desc: "≥1 caso involucra alguna categoría no humana" }}
+              en={{ label: "Non-human entity", desc: "≥1 case involves some non-human category" }}
             />
           </div>
+
+          <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+            <T
+              es="Las probabilidades NO suman 100% — son proposiciones independientes (no-mutua-exclusividad)."
+              en="Probabilities do NOT sum to 100% — they are independent propositions (non-mutual-exclusivity)."
+            />
+          </p>
 
           <div className="flex flex-wrap items-center gap-4">
             <Link
@@ -143,15 +147,10 @@ export default function HomePage() {
               className="inline-flex min-h-[48px] items-center whitespace-nowrap bg-accent px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-text"
             >
               <T
-                es="Ver las 6 hipótesis con su razonamiento →"
-                en="See the 6 hypotheses with their reasoning →"
+                es="Ver las 8 hipótesis con su razonamiento →"
+                en="See the 8 hypotheses with their reasoning →"
               />
             </Link>
-            <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-              {mainHypothesis.icd.label} ({mainHypothesis.icd.min}–
-              {mainHypothesis.icd.max}%){" "}
-              <T es="según ICD-203" en="per ICD-203" />
-            </p>
           </div>
         </div>
       </section>
