@@ -65,7 +65,25 @@ export default function CasesPage() {
         </Lede>
       </header>
 
-      <CorpusStats />
+      <details className="group border-y border-text/15 py-4">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
+          <span>
+            <T
+              es="Estadísticas del corpus · distribución por era, patrones, países"
+              en="Corpus statistics · distribution by era, patterns, countries"
+            />
+          </span>
+          <span
+            aria-hidden
+            className="inline-block text-accent transition-transform group-open:rotate-180"
+          >
+            ▾
+          </span>
+        </summary>
+        <div className="mt-6">
+          <CorpusStats />
+        </div>
+      </details>
 
       <div className="space-y-8 pt-8">
         {ERAS.map((era) => {

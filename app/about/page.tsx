@@ -140,8 +140,11 @@ export default function AboutPage() {
                 <span className="normal-case tracking-normal text-muted">
                   <T es={CHAPTERS[0].es.tldr} en={CHAPTERS[0].en.tldr} />
                 </span>
-                <span className="ml-2 normal-case tracking-normal text-accent">
-                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                <span
+                  aria-hidden
+                  className="ml-2 inline-block text-accent transition-transform group-open:rotate-180"
+                >
+                  ▾
                 </span>
               </p>
             </summary>
@@ -231,8 +234,11 @@ export default function AboutPage() {
                 <span className="normal-case tracking-normal text-muted">
                   <T es={CHAPTERS[1].es.tldr} en={CHAPTERS[1].en.tldr} />
                 </span>
-                <span className="ml-2 normal-case tracking-normal text-accent">
-                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                <span
+                  aria-hidden
+                  className="ml-2 inline-block text-accent transition-transform group-open:rotate-180"
+                >
+                  ▾
                 </span>
               </p>
             </summary>
@@ -313,8 +319,11 @@ export default function AboutPage() {
                 <span className="normal-case tracking-normal text-muted">
                   <T es={CHAPTERS[2].es.tldr} en={CHAPTERS[2].en.tldr} />
                 </span>
-                <span className="ml-2 normal-case tracking-normal text-accent">
-                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                <span
+                  aria-hidden
+                  className="ml-2 inline-block text-accent transition-transform group-open:rotate-180"
+                >
+                  ▾
                 </span>
               </p>
             </summary>
@@ -376,8 +385,11 @@ export default function AboutPage() {
                 <span className="normal-case tracking-normal text-muted">
                   <T es={CHAPTERS[3].es.tldr} en={CHAPTERS[3].en.tldr} />
                 </span>
-                <span className="ml-2 normal-case tracking-normal text-accent">
-                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                <span
+                  aria-hidden
+                  className="ml-2 inline-block text-accent transition-transform group-open:rotate-180"
+                >
+                  ▾
                 </span>
               </p>
             </summary>
@@ -452,8 +464,11 @@ export default function AboutPage() {
                 <span className="normal-case tracking-normal text-muted">
                   <T es={CHAPTERS[4].es.tldr} en={CHAPTERS[4].en.tldr} />
                 </span>
-                <span className="ml-2 normal-case tracking-normal text-accent">
-                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                <span
+                  aria-hidden
+                  className="ml-2 inline-block text-accent transition-transform group-open:rotate-180"
+                >
+                  ▾
                 </span>
               </p>
             </summary>

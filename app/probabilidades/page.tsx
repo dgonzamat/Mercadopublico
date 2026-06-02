@@ -142,6 +142,32 @@ export default function ProbabilidadesPage() {
         ))}
       </div>
 
+      {/* ─────────── PUENTE NARRATIVO ─────────── */}
+      <section className="mx-auto max-w-prose space-y-4 pt-4">
+        <Body className="text-muted">
+          <T
+            es={
+              <>
+                Recorriste las ocho. Siete caen en los extremos —{" "}
+                <em>casi imposibles</em> de aceptar o{" "}
+                <em>fáciles</em> de descartar. Una sola se quedó
+                atascada en el medio, donde el debate sigue abierto. Ese
+                es el punto que vale la pena guardar.
+              </>
+            }
+            en={
+              <>
+                You walked through all eight. Seven sit at the extremes
+                — <em>almost impossible</em> to accept or{" "}
+                <em>easy</em> to dismiss. Only one stayed stuck in the
+                middle, where the debate is still open. That is the
+                point worth keeping.
+              </>
+            }
+          />
+        </Body>
+      </section>
+
       {/* ─────────── SUMMARY FINAL ─────────── */}
       <section className="space-y-6 border-t-2 border-text pt-10">
         <Eyebrow>
@@ -408,15 +434,18 @@ function HypothesisSection({
               {" · "}
               <span className="text-accent">
                 <T
-                  es="FRONTERA ANALÍTICA"
-                  en="ANALYTICAL FRONTIER"
+                  es="AQUÍ ESTÁ LA DUDA REAL"
+                  en="WHERE THE REAL DOUBT IS"
                 />
               </span>
             </>
           )}
           {!featured && (
-            <span className="ml-2 text-accent">
-              <T es="(expandir ↓)" en="(expand ↓)" />
+            <span
+              aria-hidden
+              className="ml-2 inline-block text-accent transition-transform group-open:rotate-180"
+            >
+              ▾
             </span>
           )}
         </p>
