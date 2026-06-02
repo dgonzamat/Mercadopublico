@@ -12,9 +12,12 @@ export const metadata = {
     "Detailed reasoning per hypothesis. ICD-203 + corpus evidence sustaining each judgment.",
 };
 
+const FEATURED_HYPOTHESIS_ID = "entidades-no-humanas";
+
 export default function ProbabilidadesPage() {
   return (
     <article className="mx-auto max-w-3xl space-y-16 py-8">
+      {/* ─────────── HERO ─────────── */}
       <header className="space-y-4">
         <Eyebrow>
           <T
@@ -34,9 +37,10 @@ export default function ProbabilidadesPage() {
               <>
                 Hay 8 explicaciones posibles para lo que pasa en el cielo.
                 Siete son fáciles de calibrar — o casi ciertas, o casi
-                imposibles. Una es donde está la <strong className="text-text">frontera analítica
-                real</strong>, y la mayoría del debate público gira alrededor de ella
-                sin saberlo. Calibradas vía{" "}
+                imposibles. Una es donde está la{" "}
+                <strong className="text-text">frontera analítica real</strong>,
+                y la mayoría del debate público gira alrededor de ella sin
+                saberlo. Calibradas vía{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -45,8 +49,7 @@ export default function ProbabilidadesPage() {
                 >
                   ICD-203
                 </a>
-                , el estándar de la comunidad de inteligencia US para juicio
-                analítico sin modelo formal.
+                .
               </>
             }
             en={
@@ -65,18 +68,172 @@ export default function ProbabilidadesPage() {
                 >
                   ICD-203
                 </a>
-                , the US intelligence community standard for analytical
-                judgment without a formal model.
+                .
               </>
             }
           />
         </Lede>
       </header>
 
+      {/* ─────────── CHART (overview) ─────────── */}
       <IcdProbabilityChart />
 
-      <section className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">
-        <div className="grid gap-6 md:grid-cols-2">
+      {/* ─────────── FRAMING (movió desde el final — ahora es bisagra) ─────────── */}
+      <section className="space-y-6 border-y-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
+        <Eyebrow>
+          <T es="La bisagra del análisis" en="The analytical hinge" />
+        </Eyebrow>
+        <H2>
+          <T
+            es="La frontera analítica real está en una hipótesis, no en ocho"
+            en="The real analytical frontier lives in one hypothesis, not eight"
+          />
+        </H2>
+        <Body>
+          <T
+            es={
+              <>
+                Siete de las ocho hipótesis están en bandas extremas — casi
+                ciertas o muy improbables — y se calibran fácil porque los
+                hechos están claramente de un lado. Solo{" "}
+                <strong className="text-accent">H5 (entidades no humanas)</strong>{" "}
+                cae en Probabilidad Pareja 45–55%. Ahí el corpus deja de poder
+                decidir, y ahí gira todo el debate público real. Cuando alguien
+                dice <em>"podrían ser aliens"</em> o <em>"no son aliens"</em>,
+                está discutiendo H5. Las otras 7 son anestesia conceptual.
+              </>
+            }
+            en={
+              <>
+                Seven of the eight hypotheses fall in extreme bands — almost
+                certain or very unlikely — and calibrate easily because facts
+                clearly land on one side. Only{" "}
+                <strong className="text-accent">H5 (non-human entities)</strong>{" "}
+                lands at Roughly Even 45–55%. There the corpus stops being able
+                to decide, and there spins all the real public debate. When
+                someone says <em>"they could be aliens"</em> or{" "}
+                <em>"they're not aliens"</em>, they're arguing H5. The other 7
+                are conceptual anesthesia.
+              </>
+            }
+          />
+        </Body>
+        <Link
+          href={`#${FEATURED_HYPOTHESIS_ID}`}
+          className="inline-flex min-h-[44px] items-center bg-accent px-5 py-2 text-sm font-medium text-bg hover:bg-text"
+        >
+          <T
+            es="Saltar a H5 — la frontera ↓"
+            en="Jump to H5 — the frontier ↓"
+          />
+        </Link>
+      </section>
+
+      {/* ─────────── 8 HIPÓTESIS (H5 destacada) ─────────── */}
+      <div className="space-y-16">
+        {HYPOTHESES.map((h, i) => (
+          <HypothesisSection
+            key={h.id}
+            hypothesisId={h.id}
+            index={i + 1}
+            total={HYPOTHESES.length}
+            featured={h.id === FEATURED_HYPOTHESIS_ID}
+          />
+        ))}
+      </div>
+
+      {/* ─────────── SUMMARY FINAL ─────────── */}
+      <section className="space-y-6 border-t-2 border-text pt-10">
+        <Eyebrow>
+          <T es="Lo que importa, en una frase" en="What matters, in one sentence" />
+        </Eyebrow>
+        <H2>
+          <T
+            es={
+              <>
+                H5 es la única hipótesis en banda pareja.
+                <br />
+                <span className="text-muted">
+                  Las otras siete son fáciles de descartar o de aceptar — esa
+                  es la pregunta del corpus.
+                </span>
+              </>
+            }
+            en={
+              <>
+                H5 is the only hypothesis in the even band.
+                <br />
+                <span className="text-muted">
+                  The other seven are easy to dismiss or accept — that's the
+                  corpus question.
+                </span>
+              </>
+            }
+          />
+        </H2>
+        <Body className="text-muted">
+          <T
+            es="Lake Huron 2023 dejó fragmentos físicos cuya composición isotópica aún no fue analizada públicamente. Si esos análisis revelan ratios inconsistentes con ocurrencia terrestre, H5 se mueve hacia probable. Si revelan composición convencional, H5 colapsa hacia 30%. Un solo experimento, dos décadas de claridad."
+            en="Lake Huron 2023 left physical fragments whose isotopic composition has not yet been publicly analyzed. If those analyses reveal ratios inconsistent with terrestrial occurrence, H5 moves toward likely. If they reveal conventional composition, H5 collapses toward 30%. A single experiment, two decades of clarity."
+          />
+        </Body>
+      </section>
+
+      {/* ─────────── NAV CIERRE (CTAs específicos) ─────────── */}
+      <nav className="grid gap-3 border-y-2 border-text py-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Link
+          href="/cases/lake-huron-2023"
+          className="inline-flex min-h-[56px] flex-col justify-center bg-accent px-5 py-3 text-sm hover:bg-text"
+        >
+          <span className="font-mono text-[11px] uppercase tracking-widest text-bg/70">
+            <T es="El experimento pendiente" en="The pending experiment" />
+          </span>
+          <span className="font-display text-base font-medium text-bg">
+            <T
+              es="Lake Huron 2023 →"
+              en="Lake Huron 2023 →"
+            />
+          </span>
+        </Link>
+        <Link
+          href="/about"
+          className="inline-flex min-h-[56px] flex-col justify-center border-2 border-text px-5 py-3 text-sm hover:bg-text hover:text-bg"
+        >
+          <span className="font-mono text-[11px] uppercase tracking-widest text-muted">
+            <T es="El método" en="The method" />
+          </span>
+          <span className="font-display text-base font-medium">
+            <T
+              es="¿Cómo se calibra cada %?"
+              en="How is each % calibrated?"
+            />
+          </span>
+        </Link>
+        <Link
+          href="/cases"
+          className="inline-flex min-h-[56px] flex-col justify-center border-2 border-text px-5 py-3 text-sm hover:bg-text hover:text-bg"
+        >
+          <span className="font-mono text-[11px] uppercase tracking-widest text-muted">
+            <T es="La evidencia" en="The evidence" />
+          </span>
+          <span className="font-display text-base font-medium">
+            <T
+              es="Ver los 52 casos →"
+              en="See the 52 cases →"
+            />
+          </span>
+        </Link>
+      </nav>
+
+      {/* ─────────── NOTA METODOLÓGICA (callout NO/SÍ movido al final) ─────────── */}
+      <details className="group border-t border-border pt-6">
+        <summary className="cursor-pointer list-none font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
+          <T
+            es="Nota metodológica · qué es esto y qué NO es →"
+            en="Methodological note · what this is and what it is NOT →"
+          />
+        </summary>
+        <div className="mt-6 grid gap-6 rounded-lg border border-border bg-surface-2 p-6 md:grid-cols-2 md:p-8">
           <div className="space-y-3">
             <Eyebrow>
               <T es="Lo que NO es" en="What it is NOT" />
@@ -94,7 +251,7 @@ export default function ProbabilidadesPage() {
                   en={
                     <>
                       <strong>It is not formal Bayesian inference.</strong> We
-                      don't have P(evidence | hypothesis) calculated.
+                      don&apos;t have P(evidence | hypothesis) calculated.
                     </>
                   }
                 />
@@ -104,14 +261,16 @@ export default function ProbabilidadesPage() {
                 <T
                   es={
                     <>
-                      <strong>No es "posición del usuario".</strong> No se
-                      ajustan priors; son juicios del análisis del corpus.
+                      <strong>No es &quot;posición del usuario&quot;.</strong>{" "}
+                      No se ajustan priors; son juicios del análisis del
+                      corpus.
                     </>
                   }
                   en={
                     <>
-                      <strong>It is not "user position".</strong> No priors are
-                      adjusted; they are judgments from the corpus analysis.
+                      <strong>It is not &quot;user position&quot;.</strong> No
+                      priors are adjusted; they are judgments from the corpus
+                      analysis.
                     </>
                   }
                 />
@@ -121,16 +280,17 @@ export default function ProbabilidadesPage() {
                 <T
                   es={
                     <>
-                      <strong>No son decimales precisos.</strong> Decir "48%"
-                      implica diferenciación que la evidencia no soporta. ICD-203
-                      usa palabras por eso.
+                      <strong>No son decimales precisos.</strong> Decir
+                      &quot;48%&quot; implica diferenciación que la evidencia
+                      no soporta. ICD-203 usa palabras por eso.
                     </>
                   }
                   en={
                     <>
                       <strong>They are not precise decimals.</strong> Saying
-                      "48%" implies differentiation the evidence doesn't support.
-                      ICD-203 uses words for this reason.
+                      &quot;48%&quot; implies differentiation the evidence
+                      doesn&apos;t support. ICD-203 uses words for this
+                      reason.
                     </>
                   }
                 />
@@ -165,13 +325,14 @@ export default function ProbabilidadesPage() {
                   es={
                     <>
                       <strong>Calibrado vía ICD-203</strong>, el mismo estándar
-                      que usan analistas IC para reportes a tomadores de decisión.
+                      que usan analistas IC para reportes a tomadores de
+                      decisión.
                     </>
                   }
                   en={
                     <>
-                      <strong>Calibrated via ICD-203</strong>, the same standard
-                      IC analysts use for reports to decision-makers.
+                      <strong>Calibrated via ICD-203</strong>, the same
+                      standard IC analysts use for reports to decision-makers.
                     </>
                   }
                 />
@@ -181,13 +342,13 @@ export default function ProbabilidadesPage() {
                 <T
                   es={
                     <>
-                      <strong>Auditable:</strong> cada hipótesis abajo lista los
+                      <strong>Auditable:</strong> cada hipótesis lista los
                       casos del corpus que la sostienen.
                     </>
                   }
                   en={
                     <>
-                      <strong>Auditable:</strong> each hypothesis below lists the
+                      <strong>Auditable:</strong> each hypothesis lists the
                       corpus cases that sustain it.
                     </>
                   }
@@ -196,112 +357,32 @@ export default function ProbabilidadesPage() {
             </ul>
           </div>
         </div>
-      </section>
-
-      <div className="space-y-16">
-        {HYPOTHESES.map((h) => (
-          <HypothesisSection key={h.id} hypothesisId={h.id} />
-        ))}
-      </div>
-
-      <section className="space-y-4 border-t border-border pt-8">
-        <Eyebrow>
-          <T
-            es="Por qué la pregunta sigue abierta"
-            en="Why the question stays open"
-          />
-        </Eyebrow>
-        <H2>
-          <T
-            es="La frontera analítica real está en una hipótesis, no en ocho"
-            en="The actual analytical frontier is in one hypothesis, not eight"
-          />
-        </H2>
-        <Body className="text-muted">
-          <T
-            es="Siete de las ocho hipótesis se ubican en bandas extremas (casi cierto o muy improbable) — son fáciles de calibrar porque los hechos están del lado del juicio o claramente en contra. La hipótesis H5 (≥1 caso involucra entidades no humanas) está en Probabilidad Pareja 45-55% — ahí es donde el corpus deja de poder decidir, y es la única banda que mueve el debate público real."
-            en="Seven of the eight hypotheses fall in extreme bands (almost certain or very unlikely) — easy to calibrate because the facts are clearly on one side. H5 (≥1 case involves non-human entities) sits at Roughly Even 45-55% — that's where the corpus stops being able to decide, and it's the only band that drives actual public debate."
-          />
-        </Body>
-        <Body className="text-muted">
-          <T
-            es="Casos militares con sensor (Tehran, Nimitz, Belgian Wave) son evidencia fuerte de algo real pero no discriminan entre 'tecnología clasificada' y 'algo no humano'. Casos folklóricos persistentes (Hessdalen) sugieren fenómenos naturales raros pero no excluyen los otros. 79 años de cover-up institucional indica que el estado oculta algo, pero no resuelve si lo que oculta es programa propio, accidente conocido, contacto, o ambos a la vez. Ahí está la pregunta de verdad."
-            en="Military sensor cases (Tehran, Nimitz, Belgian Wave) are strong evidence of something real but don't discriminate between 'classified tech' and 'something non-human'. Persistent folkloric cases (Hessdalen) suggest rare natural phenomena but don't exclude the others. 79 years of institutional cover-up indicates the state hides something, but doesn't resolve whether what it hides is an in-house program, a known accident, contact, or all of the above. That's the real question."
-          />
-        </Body>
-        <Caption>
-          <T
-            es={
-              <>
-                Más detalle metodológico en{" "}
-                <Link href="/about" className="text-accent hover:underline">
-                  Metodología
-                </Link>{" "}
-                y en{" "}
-                <a
-                  href="https://github.com/dgonzamat/UAP-analysys-/blob/main/METHODOLOGY.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  METHODOLOGY.md
-                </a>{" "}
-                del corpus original.
-              </>
-            }
-            en={
-              <>
-                More methodological detail in{" "}
-                <Link href="/about" className="text-accent hover:underline">
-                  Method
-                </Link>{" "}
-                and in{" "}
-                <a
-                  href="https://github.com/dgonzamat/UAP-analysys-/blob/main/METHODOLOGY.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  METHODOLOGY.md
-                </a>{" "}
-                of the original corpus.
-              </>
-            }
-          />
-        </Caption>
-      </section>
-
-      <nav className="flex flex-wrap gap-4 border-t border-border pt-8">
-        <Link
-          href="/cases"
-          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
-        >
-          <T
-            es="¿Cuál es el caso más fuerte? →"
-            en="What's the strongest case? →"
-          />
-        </Link>
-        <Link
-          href="/about"
-          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
-        >
-          <T
-            es="¿Cómo se calibra la probabilidad?"
-            en="How is the probability calibrated?"
-          />
-        </Link>
-        <Link
-          href="/"
-          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-4 py-2 text-sm text-text hover:bg-panel"
-        >
-          <T es="← Volver al inicio" en="← Back to home" />
-        </Link>
-      </nav>
+      </details>
     </article>
   );
 }
 
-function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
+/**
+ * HypothesisSection — drill detallado por hipótesis.
+ *
+ * Cambios respecto a la versión anterior:
+ * - Acepta index/total para counter "Hipótesis 3 de 8"
+ * - Acepta featured para destacar H5 (la frontera analítica)
+ * - Elimina caption duplicada del rango ICD-203 (ya visible en chart arriba)
+ * - El chart arriba ya muestra label + ICD label + bar + note + counts;
+ *   la section profundiza con patrones + casos + CTA o expansion.
+ */
+function HypothesisSection({
+  hypothesisId,
+  index,
+  total,
+  featured = false,
+}: {
+  hypothesisId: string;
+  index: number;
+  total: number;
+  featured?: boolean;
+}) {
   const h = HYPOTHESES.find((x) => x.id === hypothesisId);
   if (!h) return null;
 
@@ -316,12 +397,35 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
     <section
       id={h.id}
       aria-labelledby={`${h.id}-title`}
-      className="scroll-mt-20 space-y-4"
+      className={
+        featured
+          ? "scroll-mt-20 space-y-4 border-l-4 border-accent bg-surface-2 px-6 py-8 md:px-8"
+          : "scroll-mt-20 space-y-4"
+      }
     >
       <div className="flex items-start justify-between gap-4">
-        <H2 id={`${h.id}-title`}>
-          <T es={h.label} en={h.labelEn} />
-        </H2>
+        <div className="min-w-0 space-y-2">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
+            <T
+              es={`Hipótesis ${index} de ${total}`}
+              en={`Hypothesis ${index} of ${total}`}
+            />
+            {featured && (
+              <>
+                {" · "}
+                <span className="text-accent">
+                  <T
+                    es="FRONTERA ANALÍTICA"
+                    en="ANALYTICAL FRONTIER"
+                  />
+                </span>
+              </>
+            )}
+          </p>
+          <H2 id={`${h.id}-title`}>
+            <T es={h.label} en={h.labelEn} />
+          </H2>
+        </div>
         <span
           className="shrink-0 rounded-md border px-3 py-1 font-mono text-xs uppercase tracking-wider"
           style={{
@@ -333,12 +437,6 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
           <T es={h.icd.labelEs} en={h.icd.label} />
         </span>
       </div>
-      <Caption>
-        <T
-          es={`Rango ICD-203: ${h.icd.min}–${h.icd.max}% — ${h.note}`}
-          en={`ICD-203 range: ${h.icd.min}–${h.icd.max}% — ${h.noteEn}`}
-        />
-      </Caption>
 
       {associatedPatterns.length > 0 && (
         <div className="space-y-2 pt-2">
@@ -443,10 +541,7 @@ function HypothesisSection({ hypothesisId }: { hypothesisId: string }) {
 
 /**
  * Editorial expansion for hypotheses that legitimately have zero
- * pattern + zero supporting case matches. Instead of an italic
- * "no evidence" caption (which reads as empty), we render the
- * actual reasoning for the assigned probability + relevant cross-
- * links (to subclasses, to researchers, to other pages).
+ * pattern + zero supporting case matches.
  */
 function renderNoEvidenceExpansion(id: string) {
   switch (id) {
@@ -481,7 +576,7 @@ function renderNoEvidenceExpansion(id: string) {
 
     case "entidades-no-humanas":
       return (
-        <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
+        <div className="space-y-4 border-l-2 border-accent/40 pl-5 pt-2">
           <Body>
             <T
               es="Esta es la categoría paraguas. Su 45% se compone matemáticamente de la unión de proposiciones más específicas: interdimensional (22%), psicoespiritual (22%), tratado formal (6%), + categorías que aún no tenemos vocabulario para nombrar. P(unión) ≥ P(cualquier subclase), por eso el paraguas es mayor que cualquier specific bet."
@@ -500,8 +595,8 @@ function renderNoEvidenceExpansion(id: string) {
               className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
             >
               <T
-                es="Ver subclase: interdimensional ↓"
-                en="See subclass: interdimensional ↓"
+                es="Subclase: interdimensional ↓"
+                en="Subclass: interdimensional ↓"
               />
             </Link>
             <Link
@@ -509,8 +604,8 @@ function renderNoEvidenceExpansion(id: string) {
               className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
             >
               <T
-                es="Ver subclase: psicoespiritual ↓"
-                en="See subclass: psychospiritual ↓"
+                es="Subclase: psicoespiritual ↓"
+                en="Subclass: psychospiritual ↓"
               />
             </Link>
             <Link
@@ -518,8 +613,8 @@ function renderNoEvidenceExpansion(id: string) {
               className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
             >
               <T
-                es="Ver subclase: tratado ↓"
-                en="See subclass: treaty ↓"
+                es="Subclase: tratado ↓"
+                en="Subclass: treaty ↓"
               />
             </Link>
           </div>
