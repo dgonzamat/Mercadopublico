@@ -5,6 +5,42 @@ import { T } from "@/components/T";
 import { Eyebrow, H2, Caption } from "@/lib/typography";
 
 /**
+ * Editorial copy for hypotheses that legitimately have zero pattern
+ * matches in the corpus. Avoids the misleading "0 casos · 0 patrones"
+ * that looks like a bug. Each hypothesis explains WHY it has no
+ * pattern-derived evidence rather than just showing zeros.
+ */
+function noEvidenceCopy(id: string): { es: string; en: string } {
+  switch (id) {
+    case "misidentificacion":
+      return {
+        es: "Aplica al universo pre-filtro de reportes (~95% Blue Book), no a los 52 casos institucionales del corpus",
+        en: "Applies to the pre-filter universe of reports (~95% Blue Book), not to the 52 institutional cases of the corpus",
+      };
+    case "entidades-no-humanas":
+      return {
+        es: "Categoría paraguas — la evidencia específica aparece en sus subclases (interdimensional, psicoespiritual, tratado)",
+        en: "Umbrella category — specific evidence appears in its subclasses (interdimensional, psychospiritual, treaty)",
+      };
+    case "psicoespiritual":
+      return {
+        es: "Sin patrones aislables en el corpus — su evidencia es testimonial, no estructural",
+        en: "No isolable patterns in the corpus — its evidence is testimonial, not structural",
+      };
+    case "tratado-greys":
+      return {
+        es: "Sin evidencia primaria verificable en el corpus — es claim histórica específica (Cooper, Lazar)",
+        en: "No verifiable primary evidence in the corpus — it is a specific historical claim (Cooper, Lazar)",
+      };
+    default:
+      return {
+        es: "Sin patrones específicos en el corpus actual",
+        en: "No specific patterns in the current corpus",
+      };
+  }
+}
+
+/**
  * Probability chart — editorial format.
  *
  * Each hypothesis renders as a large, breathable row: oversized rank number
@@ -138,21 +174,42 @@ export function IcdProbabilityChart() {
               <p className="text-sm text-muted">
                 <T es={h.note} en={h.noteEn} />
               </p>
+
+              <a
+                href={`#${h.id}`}
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-accent hover:underline"
+              >
+                <T
+                  es="Ver razonamiento + casos asociados ↓"
+                  en="See reasoning + associated cases ↓"
+                />
+              </a>
             </div>
 
             <div className="col-span-2 flex items-baseline gap-6 font-mono text-xs uppercase tracking-wider text-muted md:col-span-1 md:flex-col md:items-end md:gap-1 md:text-right">
-              <div>
-                <span className="font-display text-3xl text-text md:text-4xl">
-                  {h.evidence.caseCount}
-                </span>{" "}
-                <T es="casos" en="cases" />
-              </div>
-              <div>
-                <span className="font-display text-xl text-text md:text-2xl">
-                  {h.evidence.patternCount}
-                </span>{" "}
-                <T es="patrones" en="patterns" />
-              </div>
+              {h.evidence.caseCount > 0 ? (
+                <>
+                  <div>
+                    <span className="font-display text-3xl text-text md:text-4xl">
+                      {h.evidence.caseCount}
+                    </span>{" "}
+                    <T es="casos" en="cases" />
+                  </div>
+                  <div>
+                    <span className="font-display text-xl text-text md:text-2xl">
+                      {h.evidence.patternCount}
+                    </span>{" "}
+                    <T es="patrones" en="patterns" />
+                  </div>
+                </>
+              ) : (
+                <div className="max-w-[12rem] text-left text-[11px] normal-case tracking-normal text-muted md:text-right">
+                  <T
+                    es={noEvidenceCopy(h.id).es}
+                    en={noEvidenceCopy(h.id).en}
+                  />
+                </div>
+              )}
             </div>
           </article>
         ))}
