@@ -4,6 +4,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { MobileNav } from "@/components/MobileNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { T } from "@/components/T";
+import { AnchorExpander } from "@/components/AnchorExpander";
 import { TOTAL_CASES } from "@/lib/data";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="min-h-screen font-sans">
+        <AnchorExpander />
         <header className="sticky top-0 z-50 border-b-4 border-text bg-bg">
           <nav
             aria-label="Navegación principal"
