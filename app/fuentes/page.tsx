@@ -171,42 +171,8 @@ export default function FuentesPage() {
         </Eyebrow>
         <Caption>
           <T
-            es={
-              <>
-                Categorización por dominio URL (best-effort). Una fuente puede
-                aparecer en múltiples casos; la deduplicación es por URL idéntica
-                o por nombre normalizado cuando no hay URL. Si encontrás una
-                fuente mal categorizada o una referencia faltante, pull request
-                bienvenido en el{" "}
-                <a
-                  href="https://github.com/dgonzamat/Mercadopublico"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  repositorio
-                </a>
-                .
-              </>
-            }
-            en={
-              <>
-                Categorization is by URL domain (best-effort). A source may
-                appear in multiple cases; deduplication is by identical URL or
-                by normalized name when no URL is present. If you find a
-                source miscategorized or a reference missing, pull requests are
-                welcome in the{" "}
-                <a
-                  href="https://github.com/dgonzamat/Mercadopublico"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  repository
-                </a>
-                .
-              </>
-            }
+            es="Categorización por dominio URL (best-effort). Una fuente puede aparecer en múltiples casos; la deduplicación es por URL idéntica o por nombre normalizado cuando no hay URL. Cada cita es auditable directamente desde su link."
+            en="Categorization is by URL domain (best-effort). A source may appear in multiple cases; deduplication is by identical URL or by normalized name when no URL is present. Every citation is auditable directly from its link."
           />
         </Caption>
       </section>

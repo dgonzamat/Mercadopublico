@@ -514,8 +514,8 @@ export default function AboutPage() {
               className="inline-flex min-h-[48px] items-center border-2 border-text px-6 py-2 text-base font-medium text-text hover:bg-text hover:text-bg"
             >
               <T
-                es="Ver las fuentes (186) →"
-                en="See the sources (186) →"
+                es="Ver todas las fuentes →"
+                en="See all sources →"
               />
             </Link>
           </div>
@@ -523,34 +523,8 @@ export default function AboutPage() {
 
         <Caption className="border-t border-border pt-6">
           <T
-            es={
-              <>
-                Source completo en{" "}
-                <a
-                  href="https://github.com/dgonzamat/UAP-analysys-/blob/main/METHODOLOGY.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  METHODOLOGY.md ↗
-                </a>{" "}
-                del corpus.
-              </>
-            }
-            en={
-              <>
-                Full source at{" "}
-                <a
-                  href="https://github.com/dgonzamat/UAP-analysys-/blob/main/METHODOLOGY.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  METHODOLOGY.md ↗
-                </a>
-                .
-              </>
-            }
+            es="Toda la metodología vive en esta página — sin documentos externos ni dependencias técnicas. Auditable directamente desde acá."
+            en="The full methodology lives on this page — no external documents or technical dependencies. Auditable directly from here."
           />
         </Caption>
       </article>

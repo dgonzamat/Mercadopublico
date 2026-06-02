@@ -96,15 +96,10 @@ export default function ResearcherDetailPage({
       )}
 
       <Caption className="border-t border-border pt-6">
-        Source completo en{" "}
-        <a
-          href="https://github.com/dgonzamat/UAP-analysys-/blob/main/RESEARCHERS.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent hover:underline"
-        >
-          RESEARCHERS.md ↗
-        </a>
+        <T
+          es="Bio sintetizada del ecosistema de disclosure UAP — categorizada por sección epistemológica (A-E) según rol dentro del campo: pioneros, institucionales, frontera, escépticos y testimoniales."
+          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E) according to role within the field: pioneers, institutionals, frontier, skeptics and testimonials."
+        />
       </Caption>
     </article>
   );

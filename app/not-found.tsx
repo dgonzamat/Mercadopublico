@@ -8,8 +8,8 @@ export default function NotFound() {
         Esta entrada no existe en el corpus.
       </h1>
       <p className="mt-4 text-muted">
-        O lo borramos al limpiar el archivo. Si era un caso específico que
-        buscabas, decinos cuál — pull request bienvenido en el repo.
+        O lo borramos al limpiar el archivo. Si buscabas un caso específico,
+        probá la lista completa de los 52.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <a

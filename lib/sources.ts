@@ -239,8 +239,7 @@ export function getAllSources(): AggregatedSource[] {
     );
   }
 
-  // Standards and methodology references (manually curated — these are
-  // structural to the analysis, not derived from corpus data)
+  // Standards reference (single official methodology link)
   add(
     {
       name: "ICD-203 Analytic Standards",
@@ -248,30 +247,6 @@ export function getAllSources(): AggregatedSource[] {
       note: "Intelligence Community Directive 2007 — calibration standard for analytical judgment",
     },
     { label: "Metodología", href: "/about" },
-  );
-  add(
-    {
-      name: "METHODOLOGY.md (corpus original)",
-      url: "https://github.com/dgonzamat/UAP-analysys-/blob/main/METHODOLOGY.md",
-      note: "Documentación detallada del framework de 4 tiers + principio Bayesiano",
-    },
-    { label: "Metodología", href: "/about" },
-  );
-  add(
-    {
-      name: "dgonzamat/UAP-analysys- (corpus repo)",
-      url: "https://github.com/dgonzamat/UAP-analysys-",
-      note: "Repositorio del corpus original con datos crudos y análisis primario",
-    },
-    { label: "Repositorio", href: "/about" },
-  );
-  add(
-    {
-      name: "dgonzamat/Mercadopublico (site repo)",
-      url: "https://github.com/dgonzamat/Mercadopublico",
-      note: "Código abierto de este sitio. Pull requests bienvenidos.",
-    },
-    { label: "Repositorio", href: "/about" },
   );
 
   return Array.from(map.values());

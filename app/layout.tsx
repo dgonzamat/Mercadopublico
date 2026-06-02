@@ -191,18 +191,8 @@ export default function RootLayout({
 
             <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
               <T
-                es="Colección open source · "
-                en="Open source collection · "
-              />
-              <a
-                href="https://github.com/dgonzamat/uap-atlas"
-                className="text-text hover:text-accent hover:underline"
-              >
-                github
-              </a>
-              <T
-                es=" · análisis institucional"
-                en=" · institutional analysis"
+                es="UAP Atlas · análisis institucional · 1947–2026"
+                en="UAP Atlas · institutional analysis · 1947–2026"
               />
             </p>
           </div>

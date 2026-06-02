@@ -389,8 +389,8 @@ export default function CaseDetailPage({
         {!hasRichContent && (
           <Caption className="italic">
             <T
-              es={`Este caso aún no está expandido — solo el dato bruto. Si tenés fuentes documentales para ampliarlo, pull request bienvenido en el repo. Vamos por los ${TOTAL_CASES} progresivamente.`}
-              en={`This case isn't expanded yet — just the raw record. If you have documentary sources to expand it, pull requests welcome in the repo. We're going through ${TOTAL_CASES} progressively.`}
+              es={`Este caso aún no está expandido — solo el dato bruto. Vamos por los ${TOTAL_CASES} progresivamente.`}
+              en={`This case isn't expanded yet — just the raw record. We're going through ${TOTAL_CASES} progressively.`}
             />
           </Caption>
         )}

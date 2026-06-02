@@ -142,31 +142,29 @@ export default function ResumenPage() {
           <T
             es={
               <>
-                Versión accesible del análisis completo. Para depth técnico ver
-                el corpus en{" "}
-                <a
-                  className="text-accent hover:underline"
-                  href="https://github.com/dgonzamat/UAP-analysys-"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/dgonzamat/UAP-analysys- ↗
-                </a>
+                Versión accesible del análisis completo. Para profundidad
+                técnica, ver{" "}
+                <Link href="/probabilidades" className="text-accent hover:underline">
+                  /probabilidades
+                </Link>{" "}
+                y{" "}
+                <Link href="/about" className="text-accent hover:underline">
+                  /about
+                </Link>
                 .
               </>
             }
             en={
               <>
-                Accessible version of the full analysis. For technical depth see
-                the corpus at{" "}
-                <a
-                  className="text-accent hover:underline"
-                  href="https://github.com/dgonzamat/UAP-analysys-"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/dgonzamat/UAP-analysys- ↗
-                </a>
+                Accessible version of the full analysis. For technical depth,
+                see{" "}
+                <Link href="/probabilidades" className="text-accent hover:underline">
+                  /probabilidades
+                </Link>{" "}
+                and{" "}
+                <Link href="/about" className="text-accent hover:underline">
+                  /about
+                </Link>
                 .
               </>
             }
