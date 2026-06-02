@@ -393,51 +393,53 @@ function HypothesisSection({
     (p) => PATTERN_TO_HYPOTHESIS[p.id] === hypothesisId,
   );
 
-  return (
-    <section
-      id={h.id}
-      aria-labelledby={`${h.id}-title`}
-      className={
-        featured
-          ? "scroll-mt-20 space-y-4 border-l-4 border-accent bg-surface-2 px-6 py-8 md:px-8"
-          : "scroll-mt-20 space-y-4"
-      }
-    >
-      <div className="flex items-start justify-between gap-4">
-        <div className="min-w-0 space-y-2">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T
-              es={`Hipótesis ${index} de ${total}`}
-              en={`Hypothesis ${index} of ${total}`}
-            />
-            {featured && (
-              <>
-                {" · "}
-                <span className="text-accent">
-                  <T
-                    es="FRONTERA ANALÍTICA"
-                    en="ANALYTICAL FRONTIER"
-                  />
-                </span>
-              </>
-            )}
-          </p>
-          <H2 id={`${h.id}-title`}>
-            <T es={h.label} en={h.labelEn} />
-          </H2>
-        </div>
-        <span
-          className="shrink-0 rounded-md border px-3 py-1 font-mono text-xs uppercase tracking-wider"
-          style={{
-            borderColor: `${h.color}66`,
-            color: h.color,
-            backgroundColor: `${h.color}11`,
-          }}
-        >
-          <T es={h.icd.labelEs} en={h.icd.label} />
-        </span>
+  // Header común: counter + title + ICD badge.
+  // Renderado como summary clickeable cuando NOT featured (accordion).
+  const headerInner = (
+    <div className="flex items-start justify-between gap-4">
+      <div className="min-w-0 space-y-2">
+        <p className="font-mono text-xs uppercase tracking-widest text-muted">
+          <T
+            es={`Hipótesis ${index} de ${total}`}
+            en={`Hypothesis ${index} of ${total}`}
+          />
+          {featured && (
+            <>
+              {" · "}
+              <span className="text-accent">
+                <T
+                  es="FRONTERA ANALÍTICA"
+                  en="ANALYTICAL FRONTIER"
+                />
+              </span>
+            </>
+          )}
+          {!featured && (
+            <span className="ml-2 text-accent">
+              <T es="(expandir ↓)" en="(expand ↓)" />
+            </span>
+          )}
+        </p>
+        <H2 id={`${h.id}-title`}>
+          <T es={h.label} en={h.labelEn} />
+        </H2>
       </div>
+      <span
+        className="shrink-0 rounded-md border px-3 py-1 font-mono text-xs uppercase tracking-wider"
+        style={{
+          borderColor: `${h.color}66`,
+          color: h.color,
+          backgroundColor: `${h.color}11`,
+        }}
+      >
+        <T es={h.icd.labelEs} en={h.icd.label} />
+      </span>
+    </div>
+  );
 
+  // El detalle profundo (patrones + casos + CTA o expansion).
+  const detail = (
+    <div className="mt-4 space-y-4">
       {associatedPatterns.length > 0 && (
         <div className="space-y-2 pt-2">
           <Eyebrow>
@@ -535,7 +537,36 @@ function HypothesisSection({
           </span>
         </Link>
       )}
-    </section>
+    </div>
+  );
+
+  // Render condicional:
+  // - featured (H5): full expanded, sin accordion — esta es la hipótesis core
+  // - not featured: <details> accordion cerrado por default. Header visible
+  //   (counter + label + ICD badge); contenido expande al click.
+  if (featured) {
+    return (
+      <section
+        id={h.id}
+        aria-labelledby={`${h.id}-title`}
+        className="scroll-mt-20 border-l-4 border-accent bg-surface-2 px-6 py-8 md:px-8"
+      >
+        {headerInner}
+        {detail}
+      </section>
+    );
+  }
+
+  return (
+    <details
+      id={h.id}
+      className="scroll-mt-20 border-b border-text/15 pb-4 group"
+    >
+      <summary className="cursor-pointer list-none hover:opacity-80">
+        {headerInner}
+      </summary>
+      {detail}
+    </details>
   );
 }
 

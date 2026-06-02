@@ -126,21 +126,26 @@ export default function AboutPage() {
         </nav>
 
         {/* CAP 1 */}
-        <section id="tiers" className="scroll-mt-20 space-y-6">
-          <div className="space-y-3">
-            <Eyebrow>
-              <T es={CHAPTERS[0].es.eyebrow} en={CHAPTERS[0].en.eyebrow} />
-            </Eyebrow>
-            <H2>
-              <T es={CHAPTERS[0].es.h2} en={CHAPTERS[0].en.h2} />
-            </H2>
-            <p className="font-mono text-xs uppercase tracking-widest text-accent">
-              <T es="TL;DR · " en="TL;DR · " />
-              <span className="normal-case tracking-normal text-muted">
-                <T es={CHAPTERS[0].es.tldr} en={CHAPTERS[0].en.tldr} />
-              </span>
-            </p>
-          </div>
+        <section id="tiers" className="scroll-mt-20">
+          <details className="group border-b border-text/15 pb-6">
+            <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
+              <Eyebrow>
+                <T es={CHAPTERS[0].es.eyebrow} en={CHAPTERS[0].en.eyebrow} />
+              </Eyebrow>
+              <H2>
+                <T es={CHAPTERS[0].es.h2} en={CHAPTERS[0].en.h2} />
+              </H2>
+              <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                <T es="TL;DR · " en="TL;DR · " />
+                <span className="normal-case tracking-normal text-muted">
+                  <T es={CHAPTERS[0].es.tldr} en={CHAPTERS[0].en.tldr} />
+                </span>
+                <span className="ml-2 normal-case tracking-normal text-accent">
+                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                </span>
+              </p>
+            </summary>
+            <div className="mt-6 space-y-6">
           <Body className="text-muted">
             <T
               es="No todos los casos UAP son equivalentes en valor evidencial. Mezclar tiers opaca el análisis e infla artificialmente la apariencia de evidencia. El público y la prensa frecuentemente conflactan tiers — esa es una fuente principal de confusión."
@@ -207,24 +212,31 @@ export default function AboutPage() {
               en={`A Tier 4 "evidence" should not be used to support conclusions that require Tier 1. The system derives from Hynek's Close Encounter Categories.`}
             />
           </PullQuote>
+            </div>
+          </details>
         </section>
 
         {/* CAP 2 */}
-        <section id="bayes" className="scroll-mt-20 space-y-6">
-          <div className="space-y-3">
-            <Eyebrow>
-              <T es={CHAPTERS[1].es.eyebrow} en={CHAPTERS[1].en.eyebrow} />
-            </Eyebrow>
-            <H2>
-              <T es={CHAPTERS[1].es.h2} en={CHAPTERS[1].en.h2} />
-            </H2>
-            <p className="font-mono text-xs uppercase tracking-widest text-accent">
-              <T es="TL;DR · " en="TL;DR · " />
-              <span className="normal-case tracking-normal text-muted">
-                <T es={CHAPTERS[1].es.tldr} en={CHAPTERS[1].en.tldr} />
-              </span>
-            </p>
-          </div>
+        <section id="bayes" className="scroll-mt-20">
+          <details className="group border-b border-text/15 pb-6">
+            <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
+              <Eyebrow>
+                <T es={CHAPTERS[1].es.eyebrow} en={CHAPTERS[1].en.eyebrow} />
+              </Eyebrow>
+              <H2>
+                <T es={CHAPTERS[1].es.h2} en={CHAPTERS[1].en.h2} />
+              </H2>
+              <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                <T es="TL;DR · " en="TL;DR · " />
+                <span className="normal-case tracking-normal text-muted">
+                  <T es={CHAPTERS[1].es.tldr} en={CHAPTERS[1].en.tldr} />
+                </span>
+                <span className="ml-2 normal-case tracking-normal text-accent">
+                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                </span>
+              </p>
+            </summary>
+            <div className="mt-6 space-y-6">
           <Body className="text-muted">
             <T
               es="No todos los casos añaden evidencia igualmente. Algunos mueven la aguja; otros tienen retorno marginal nulo por repetición."
@@ -282,24 +294,31 @@ export default function AboutPage() {
               }
             />
           </Caption>
+            </div>
+          </details>
         </section>
 
         {/* CAP 3 — podado (duplica /probabilidades) */}
-        <section id="non-exclusive" className="scroll-mt-20 space-y-6">
-          <div className="space-y-3">
-            <Eyebrow>
-              <T es={CHAPTERS[2].es.eyebrow} en={CHAPTERS[2].en.eyebrow} />
-            </Eyebrow>
-            <H2>
-              <T es={CHAPTERS[2].es.h2} en={CHAPTERS[2].en.h2} />
-            </H2>
-            <p className="font-mono text-xs uppercase tracking-widest text-accent">
-              <T es="TL;DR · " en="TL;DR · " />
-              <span className="normal-case tracking-normal text-muted">
-                <T es={CHAPTERS[2].es.tldr} en={CHAPTERS[2].en.tldr} />
-              </span>
-            </p>
-          </div>
+        <section id="non-exclusive" className="scroll-mt-20">
+          <details className="group border-b border-text/15 pb-6">
+            <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
+              <Eyebrow>
+                <T es={CHAPTERS[2].es.eyebrow} en={CHAPTERS[2].en.eyebrow} />
+              </Eyebrow>
+              <H2>
+                <T es={CHAPTERS[2].es.h2} en={CHAPTERS[2].en.h2} />
+              </H2>
+              <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                <T es="TL;DR · " en="TL;DR · " />
+                <span className="normal-case tracking-normal text-muted">
+                  <T es={CHAPTERS[2].es.tldr} en={CHAPTERS[2].en.tldr} />
+                </span>
+                <span className="ml-2 normal-case tracking-normal text-accent">
+                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                </span>
+              </p>
+            </summary>
+            <div className="mt-6 space-y-6">
           <Body className="text-muted">
             <T
               es="Distinción crítica del paradigma estadístico: las 8 hipótesis no compiten entre sí — pueden ser parcialmente verdaderas en simultáneo. Por eso las P suman más de 100%. Esto no es bug; es la estructura real del problema. Negarlo lleva a la falacia del 'tiene que ser una sola explicación'."
@@ -338,24 +357,31 @@ export default function AboutPage() {
               />
             </p>
           </div>
+            </div>
+          </details>
         </section>
 
         {/* CAP 4 — ACTUALIZADO al paradigma 8-hipótesis */}
-        <section id="movement" className="scroll-mt-20 space-y-6">
-          <div className="space-y-3">
-            <Eyebrow>
-              <T es={CHAPTERS[3].es.eyebrow} en={CHAPTERS[3].en.eyebrow} />
-            </Eyebrow>
-            <H2>
-              <T es={CHAPTERS[3].es.h2} en={CHAPTERS[3].en.h2} />
-            </H2>
-            <p className="font-mono text-xs uppercase tracking-widest text-accent">
-              <T es="TL;DR · " en="TL;DR · " />
-              <span className="normal-case tracking-normal text-muted">
-                <T es={CHAPTERS[3].es.tldr} en={CHAPTERS[3].en.tldr} />
-              </span>
-            </p>
-          </div>
+        <section id="movement" className="scroll-mt-20">
+          <details className="group border-b border-text/15 pb-6">
+            <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
+              <Eyebrow>
+                <T es={CHAPTERS[3].es.eyebrow} en={CHAPTERS[3].en.eyebrow} />
+              </Eyebrow>
+              <H2>
+                <T es={CHAPTERS[3].es.h2} en={CHAPTERS[3].en.h2} />
+              </H2>
+              <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                <T es="TL;DR · " en="TL;DR · " />
+                <span className="normal-case tracking-normal text-muted">
+                  <T es={CHAPTERS[3].es.tldr} en={CHAPTERS[3].en.tldr} />
+                </span>
+                <span className="ml-2 normal-case tracking-normal text-accent">
+                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                </span>
+              </p>
+            </summary>
+            <div className="mt-6 space-y-6">
           <Body className="text-muted">
             <T
               es="Tras la reformulación al paradigma independiente, 7 de las 8 hipótesis se ubican en bandas extremas (casi cierto o muy improbable). Esas no van a cambiar mucho — para moverlas necesitarías evidencia que contradiga décadas de consenso. La octava, H5, es la única que está en banda pareja — ahí es donde la evidencia nueva sí puede mover la aguja, y por eso ahí está la pregunta del corpus."
@@ -407,24 +433,31 @@ export default function AboutPage() {
               ]}
             />
           </div>
+            </div>
+          </details>
         </section>
 
         {/* CAP 5 */}
-        <section id="movers" className="scroll-mt-20 space-y-6">
-          <div className="space-y-3">
-            <Eyebrow>
-              <T es={CHAPTERS[4].es.eyebrow} en={CHAPTERS[4].en.eyebrow} />
-            </Eyebrow>
-            <H2>
-              <T es={CHAPTERS[4].es.h2} en={CHAPTERS[4].en.h2} />
-            </H2>
-            <p className="font-mono text-xs uppercase tracking-widest text-accent">
-              <T es="TL;DR · " en="TL;DR · " />
-              <span className="normal-case tracking-normal text-muted">
-                <T es={CHAPTERS[4].es.tldr} en={CHAPTERS[4].en.tldr} />
-              </span>
-            </p>
-          </div>
+        <section id="movers" className="scroll-mt-20">
+          <details className="group border-b border-text/15 pb-6">
+            <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
+              <Eyebrow>
+                <T es={CHAPTERS[4].es.eyebrow} en={CHAPTERS[4].en.eyebrow} />
+              </Eyebrow>
+              <H2>
+                <T es={CHAPTERS[4].es.h2} en={CHAPTERS[4].en.h2} />
+              </H2>
+              <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                <T es="TL;DR · " en="TL;DR · " />
+                <span className="normal-case tracking-normal text-muted">
+                  <T es={CHAPTERS[4].es.tldr} en={CHAPTERS[4].en.tldr} />
+                </span>
+                <span className="ml-2 normal-case tracking-normal text-accent">
+                  <T es="(ver detalle ↓)" en="(see detail ↓)" />
+                </span>
+              </p>
+            </summary>
+            <div className="mt-6 space-y-6">
           <ul className="space-y-3">
             {[
               {
@@ -477,6 +510,8 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
+            </div>
+          </details>
         </section>
 
         {/* BRIDGE FINAL — CTAs */}
