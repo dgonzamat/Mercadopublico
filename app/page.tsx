@@ -9,74 +9,54 @@ export default function HomePage() {
   const countries = countryCount(cases);
   return (
     <div className="space-y-40 md:space-y-56">
-      {/* ────────── HERO ────────── */}
+      {/* ────────── 1 · HERO (hook humano + sub-hero filtro) ────────── */}
       <section className="grid min-h-[70vh] grid-cols-1 items-end gap-12 pt-12 md:pt-24">
         <div className="space-y-8">
           <Eyebrow>
             <T
-              es="UAP Atlas · análisis institucional"
-              en="UAP Atlas · institutional analysis"
+              es="UAP Atlas · investigación abierta"
+              en="UAP Atlas · open research"
             />
           </Eyebrow>
-          <h1 className="font-display text-[12vw] font-medium leading-[0.95] tracking-tight text-text md:text-[7vw] lg:text-[6rem]">
+          <h1 className="font-display text-[10vw] font-medium leading-[1.02] tracking-tight text-text md:text-[6vw] lg:text-[5rem]">
             <T
               es={
                 <>
-                  Qué tan probable
+                  Hay algo real en el cielo desde 1947.
                   <br />
-                  es <span className="text-accent italic">cada hipótesis</span>
-                  <br />
-                  sobre los UAP.
+                  Llevamos{" "}
+                  <span className="text-accent italic">79 años</span>{" "}
+                  sin acordar qué es.
                 </>
               }
               en={
                 <>
-                  How likely is{" "}
-                  <span className="text-accent italic">each hypothesis</span>
+                  There&apos;s something real in the sky since 1947.
                   <br />
-                  about UAP.
+                  We&apos;ve spent{" "}
+                  <span className="text-accent italic">79 years</span>{" "}
+                  without agreeing what it is.
                 </>
               }
             />
           </h1>
-          <Lede className="max-w-xl text-muted">
+          <Lede className="max-w-2xl text-muted">
             <T
-              es={`Probabilidad como juicio analítico calibrado (estándar ICD-203) sobre ${cases.length} casos institucionales documentados desde 1947.`}
-              en={`Probability as a calibrated analytical judgment (ICD-203 standard) over ${cases.length} institutional cases documented since 1947.`}
+              es={`Un atlas de los ${cases.length} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
+              en={`An atlas of the ${cases.length} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
             />
           </Lede>
         </div>
       </section>
 
-      {/* ────────── BIG NUMBERS ────────── */}
-      <section className="border-y-2 border-text/15 py-16 md:py-24">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
-          <BigStat
-            number={cases.length}
-            es={{ label: "Casos documentados", sub: "institucionales · 1947–2026" }}
-            en={{ label: "Documented cases", sub: "institutional · 1947–2026" }}
-          />
-          <BigStat
-            number={79}
-            es={{ label: "Años de fenómeno", sub: "desde Roswell hasta PURSUE" }}
-            en={{ label: "Years of phenomenon", sub: "from Roswell to PURSUE" }}
-          />
-          <BigStat
-            number={countries}
-            es={{ label: "Países con registros", sub: "militares · civiles · folklóricos" }}
-            en={{ label: "Countries with records", sub: "military · civil · folkloric" }}
-          />
-        </div>
-      </section>
-
-      {/* ────────── LA TESIS ────────── */}
+      {/* ────────── 2 · TESIS (sube del beat 3 al 2 — NYT lead pattern) ────────── */}
       <section className="full-bleed bg-text py-32 text-bg md:py-48">
         <div className="mx-auto max-w-6xl space-y-16 px-4">
           <div className="space-y-6">
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
               <T
-                es={`La respuesta de los ${cases.length} casos`}
-                en={`The answer of the ${cases.length} cases`}
+                es={`La respuesta del corpus en una frase`}
+                en={`The corpus answer in one sentence`}
               />
             </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
@@ -86,9 +66,10 @@ export default function HomePage() {
                     Los UAP{" "}
                     <span className="text-accent italic">
                       no son una sola cosa
-                    </span>{" "}
-                    — son varios fenómenos distintos mezclados bajo la misma
-                    etiqueta.
+                    </span>
+                    . Son varias cosas distintas mezcladas bajo la misma
+                    etiqueta — y eso es justamente lo que hace difícil
+                    explicarlos.
                   </>
                 }
                 en={
@@ -96,17 +77,18 @@ export default function HomePage() {
                     UAP{" "}
                     <span className="text-accent italic">
                       are not one single thing
-                    </span>{" "}
-                    — they are several distinct phenomena mixed under the same
-                    label.
+                    </span>
+                    . They are several distinct things mixed under the same
+                    label — and that&apos;s exactly what makes them hard to
+                    explain.
                   </>
                 }
               />
             </h2>
             <p className="max-w-3xl font-display text-xl leading-snug text-bg/80 md:text-2xl">
               <T
-                es={`Probablemente parte son programas militares clasificados, parte fenómenos naturales raros, parte algo no humano que aún no entendemos, parte identificaciones equivocadas. Una sola explicación no encaja en los ${cases.length} casos.`}
-                en={`Probably some are classified military programs, some rare natural phenomena, some something non-human we don't yet understand, some misidentifications. No single explanation fits all ${cases.length} cases.`}
+                es={`Parte son programas militares clasificados (lo sabemos desde el U-2). Parte son fenómenos naturales raros (plasma, sprites, ionización). Parte son identificaciones equivocadas (siempre). Y en una porción no menor: algo no humano que aún no sabemos categorizar.`}
+                en={`Part are classified military programs (we've known since the U-2). Part are rare natural phenomena (plasma, sprites, ionization). Part are misidentifications (always). And a non-trivial portion: something non-human we don't yet know how to categorize.`}
               />
             </p>
           </div>
@@ -114,32 +96,25 @@ export default function HomePage() {
           <div className="grid gap-px bg-bg/15 md:grid-cols-4">
             <CategoryFact
               eyebrow="97%"
-              es={{ label: "Misidentificación", desc: "Globos, satélites, aves" }}
-              en={{ label: "Misidentification", desc: "Balloons, satellites, birds" }}
+              es={{ label: "Misidentificación", desc: "Globos, satélites, aves — siempre el grueso" }}
+              en={{ label: "Misidentification", desc: "Balloons, satellites, birds — always the bulk" }}
             />
             <CategoryFact
               eyebrow="88%"
-              es={{ label: "Programa clasificado", desc: "≥1 caso es black-budget militar" }}
-              en={{ label: "Classified program", desc: "≥1 case is military black-budget" }}
+              es={{ label: "Programa clasificado", desc: "Casi seguro que parte del corpus es black-budget militar" }}
+              en={{ label: "Classified program", desc: "Almost certain part of the corpus is military black-budget" }}
             />
             <CategoryFact
               eyebrow="70%"
-              es={{ label: "Natural raro", desc: "≥1 caso es plasma/sprites/ionización" }}
-              en={{ label: "Rare natural", desc: "≥1 case is plasma/sprites/ionization" }}
+              es={{ label: "Natural raro", desc: "Plasma, sprites, ionización (Hessdalen, Marfa)" }}
+              en={{ label: "Rare natural", desc: "Plasma, sprites, ionization (Hessdalen, Marfa)" }}
             />
             <CategoryFact
               eyebrow="45%"
-              es={{ label: "Entidad no humana", desc: "≥1 caso involucra alguna categoría no humana" }}
-              en={{ label: "Non-human entity", desc: "≥1 case involves some non-human category" }}
+              es={{ label: "Algo no humano", desc: "Aquí está la frontera analítica real" }}
+              en={{ label: "Something non-human", desc: "This is the actual analytical frontier" }}
             />
           </div>
-
-          <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-            <T
-              es="Las probabilidades NO suman 100% — son proposiciones independientes (no-mutua-exclusividad)."
-              en="Probabilities do NOT sum to 100% — they are independent propositions (non-mutual-exclusivity)."
-            />
-          </p>
 
           <div className="flex flex-wrap items-center gap-4">
             <Link
@@ -147,58 +122,102 @@ export default function HomePage() {
               className="inline-flex min-h-[48px] items-center whitespace-nowrap bg-accent px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-text"
             >
               <T
-                es="Ver las 8 hipótesis con su razonamiento →"
-                en="See the 8 hypotheses with their reasoning →"
+                es="Por qué cada hipótesis tiene esa probabilidad →"
+                en="Why each hypothesis has that probability →"
               />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ────────── TIMELINE ────────── */}
+      {/* ────────── 3 · BIG NUMBERS (ahora con narrativa) ────────── */}
+      <section className="border-y-2 border-text/15 py-16 md:py-24">
+        <div className="space-y-4">
+          <Eyebrow>
+            <T es="El alcance" en="The scope" />
+          </Eyebrow>
+          <h2 className="max-w-3xl font-display text-2xl font-medium leading-snug text-text md:text-3xl">
+            <T
+              es="No es teoría — es una colección documentada de evidencia."
+              en="It's not theory — it's a documented evidence collection."
+            />
+          </h2>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+          <BigStat
+            number={cases.length}
+            es={{
+              label: "Casos institucionales",
+              sub: "Sobrevivieron filtros militares, congresionales y periodísticos",
+            }}
+            en={{
+              label: "Institutional cases",
+              sub: "Survived military, congressional, and journalistic filters",
+            }}
+          />
+          <BigStat
+            number={79}
+            es={{
+              label: "Años de fenómeno",
+              sub: "Más tiempo del que duró toda la Guerra Fría (1947–1991)",
+            }}
+            en={{
+              label: "Years of phenomenon",
+              sub: "Longer than the entire Cold War (1947–1991)",
+            }}
+          />
+          <BigStat
+            number={countries}
+            es={{
+              label: "Países con registros",
+              sub: "Cada continente menos Antártida — no es fenómeno gringo",
+            }}
+            en={{
+              label: "Countries with records",
+              sub: "Every continent except Antarctica — not a US-only phenomenon",
+            }}
+          />
+        </div>
+      </section>
+
+      {/* ────────── 4 · TIMELINE con copy que cuenta ────────── */}
       <section className="full-bleed bg-text py-20 md:py-28">
         <div className="mx-auto max-w-6xl space-y-10 px-4">
-          <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
+          <div className="space-y-6">
+            <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+              <T
+                es="Distribución temporal"
+                en="Temporal distribution"
+              />
+            </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl">
               <T
                 es={
                   <>
-                    79 años,{" "}
-                    <span className="text-accent italic">
-                      {cases.length} casos
-                    </span>
-                    ,
+                    Los reportes no se distribuyen al azar.
                     <br />
-                    una huella temporal.
+                    Cuatro <span className="text-accent italic">picos</span> marcan rupturas institucionales.
                   </>
                 }
                 en={
                   <>
-                    79 years,{" "}
-                    <span className="text-accent italic">
-                      {cases.length} cases
-                    </span>
-                    ,
+                    Reports don&apos;t distribute randomly.
                     <br />
-                    a temporal fingerprint.
+                    Four <span className="text-accent italic">peaks</span> mark institutional ruptures.
                   </>
                 }
               />
             </h2>
-            <p className="font-mono text-xs uppercase tracking-widest text-bg/60 md:text-right">
+            <p className="max-w-3xl text-base leading-snug text-bg/80 md:text-lg">
               <T
                 es={
                   <>
-                    cada barra = 1 año
-                    <br />
-                    altura ∝ # casos
+                    <strong className="text-accent">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent">2004</strong> Nimitz — primer video oficial ATFLIR · <strong className="text-accent">2026</strong> PURSUE — primer disclosure presidencial. Cada pico es un momento donde una institución no pudo seguir negando.
                   </>
                 }
                 en={
                   <>
-                    each bar = 1 year
-                    <br />
-                    height ∝ # of cases
+                    <strong className="text-accent">1947</strong> Roswell — USAF creates Project Sign · <strong className="text-accent">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent">2004</strong> Nimitz — first official ATFLIR video · <strong className="text-accent">2026</strong> PURSUE — first presidential disclosure. Each peak is a moment when an institution could no longer keep denying.
                   </>
                 }
               />
@@ -210,18 +229,18 @@ export default function HomePage() {
             className="inline-flex min-h-[48px] items-center border-2 border-bg px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-text"
           >
             <T
-              es={`Explorar los ${cases.length} casos →`}
-              en={`Explore the ${cases.length} cases →`}
+              es={`Caminar los ${cases.length} casos en orden cronológico →`}
+              en={`Walk the ${cases.length} cases chronologically →`}
             />
           </Link>
         </div>
       </section>
 
-      {/* ────────── CIERRE ────────── */}
+      {/* ────────── 5 · CIERRE — CTAs en pregunta del lector ────────── */}
       <section className="space-y-10 border-t-2 border-text pt-16">
         <div className="space-y-3">
           <Eyebrow>
-            <T es="Seguir leyendo" en="Keep reading" />
+            <T es="Empezá por la pregunta que más te importe" en="Start with the question that matters most to you" />
           </Eyebrow>
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-5xl">
             <T es="¿Por dónde sigues?" en="Where do you go next?" />
@@ -231,42 +250,42 @@ export default function HomePage() {
           <CtaCard
             number="01"
             es={{
-              eyebrow: "10 minutos",
-              title: "Resumen",
-              desc: "Versión accesible del análisis completo en lenguaje claro.",
+              eyebrow: "El caso más fuerte",
+              title: "¿Cuál es la mejor evidencia?",
+              desc: "Los 29 casos Tier S del corpus: militar + sensor + múltiples testigos.",
             }}
             en={{
-              eyebrow: "10 minutes",
-              title: "Summary",
-              desc: "Accessible version of the full analysis in plain language.",
+              eyebrow: "The strongest case",
+              title: "What's the best evidence?",
+              desc: "The 29 Tier S cases of the corpus: military + sensor + multiple witnesses.",
             }}
-            href="/resumen"
+            href="/cases"
           />
           <CtaCard
             number="02"
             es={{
-              eyebrow: "Metodología",
-              title: "Cómo se construyó",
-              desc: "Framework de cuatro tiers, principio Bayesiano, evidencia auditable.",
+              eyebrow: "El razonamiento",
+              title: "¿Por qué nadie acuerda qué son?",
+              desc: "8 hipótesis con sus probabilidades calibradas vía ICD-203 — y dónde está la frontera analítica real.",
             }}
             en={{
-              eyebrow: "Method",
-              title: "How it was built",
-              desc: "Four-tier framework, Bayesian principle, auditable evidence.",
+              eyebrow: "The reasoning",
+              title: "Why does no one agree what they are?",
+              desc: "8 hypotheses with probabilities calibrated via ICD-203 — and where the actual analytical frontier is.",
             }}
-            href="/about"
+            href="/probabilidades"
           />
           <CtaCard
             number="03"
             es={{
-              eyebrow: "Visualización",
-              title: "Mapa global",
-              desc: "52 casos georeferenciados sobre 12 países, 1947–2026.",
+              eyebrow: "La distribución global",
+              title: "¿Es lo mismo en todo el mundo?",
+              desc: "52 casos georeferenciados sobre 16 países. Patrones que solo aparecen al mirar el mapa.",
             }}
             en={{
-              eyebrow: "Visualization",
-              title: "Global map",
-              desc: "52 georeferenced cases across 12 countries, 1947–2026.",
+              eyebrow: "Global distribution",
+              title: "Is it the same everywhere?",
+              desc: "52 georeferenced cases across 16 countries. Patterns visible only on the map.",
             }}
             href="/atlas"
           />
