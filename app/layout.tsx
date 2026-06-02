@@ -180,6 +180,11 @@ export default function RootLayout({
                     es="Metodología"
                     en="Method"
                   />
+                  <FooterLink
+                    href="/fuentes"
+                    es="Fuentes (bibliografía)"
+                    en="Sources (bibliography)"
+                  />
                 </ul>
               </nav>
             </div>

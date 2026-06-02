@@ -37,6 +37,7 @@ const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
   { href: "/researchers", es: "Ecosistema", en: "Ecosystem" },
   { href: "/frameworks", es: "Frameworks", en: "Frameworks" },
+  { href: "/fuentes", es: "Fuentes", en: "Sources" },
 ];
 
 export function MobileNav() {
