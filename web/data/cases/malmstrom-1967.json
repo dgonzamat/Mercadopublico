@@ -1,0 +1,102 @@
+{
+  "id": "malmstrom-1967",
+  "num": 14,
+  "name": "Malmstrom ICBM shutdown",
+  "year_start": 1967,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 47.51,
+    "lng": -111.18,
+    "place": "Malmstrom AFB, Montana"
+  },
+  "tier": "S",
+  "probability": 55,
+  "summary": "10 misiles desactivados, Salas testimony",
+  "summary_en": "10 missiles deactivated, Salas testimony",
+  "patterns": [
+    "8f",
+    "8k"
+  ],
+  "category": "incident",
+  "whatHappened": "El 16 de marzo de 1967, en la base de la USAF Malmstrom AFB (Montana), el Capitán Robert Salas estaba en turno como Deputy Missile Combat Crew Commander en el Launch Control Center (LCC) Oscar-Flight, controlando diez misiles balísticos intercontinentales LGM-30 Minuteman ICBM. Personal de seguridad exterior reportó un objeto luminoso flotando sobre la entrada del bunker.
+
+Mientras Salas hablaba por intercomunicador con el guardia, los diez misiles bajo su control simultáneamente fueron a estado 'No-Go' por causas no identificadas — un fallo crítico de readiness operacional. Posteriormente confirmó que el mismo evento había ocurrido en el LCC Echo-Flight aproximadamente una semana antes (16 marzo) con un patrón idéntico: objeto luminoso reportado + shutdown simultáneo de misiles.
+
+El reporte oficial USAF investigación interna concluyó 'cause undetermined'. Boeing (contratista del Minuteman) y la USAF analizaron sistemas y no replicaron el modo de falla. Salas testificó públicamente desde 1996 (Citizen Hearing, National Press Club Disclosure 2010) y publicó libro detallado en 2005. Robert Hastings (autor de 'UFOs and Nukes') ha documentado 150+ casos similares de interferencia UAP en instalaciones nucleares estadounidenses 1948-2012 con testimonios bajo juramento de 130+ oficiales militares.",
+  "whatHappened_en": "On March 16, 1967, at USAF Malmstrom AFB (Montana), Captain Robert Salas was on duty as Deputy Missile Combat Crew Commander at Launch Control Center (LCC) Oscar-Flight, controlling ten LGM-30 Minuteman intercontinental ballistic missiles. External security personnel reported a luminous object hovering over the bunker entrance.
+
+While Salas was speaking with the guard over the intercom, all ten missiles under his control simultaneously went to 'No-Go' status for unidentified causes — a critical loss of operational readiness. He later confirmed that the same event had occurred at LCC Echo-Flight roughly a week earlier (March 16) with an identical pattern: reported luminous object + simultaneous missile shutdown.
+
+The official USAF internal investigation concluded 'cause undetermined'. Boeing (the Minuteman contractor) and the USAF analyzed the systems and could not replicate the failure mode. Salas has testified publicly since 1996 (Citizen Hearing, National Press Club Disclosure 2010) and published a detailed book in 2005. Robert Hastings (author of 'UFOs and Nukes') has documented 150+ similar UAP interference cases at U.S. nuclear installations between 1948-2012, with sworn testimony from 130+ military officers.",
+  "whyMatters": "Caso operacional crítico: pérdida simultánea de readiness de diez ICBM bajo control de un único oficial durante presencia reportada de objeto no identificado, con replicación documentada en LCC adyacente. La calificación 'cause undetermined' por la USAF y la imposibilidad de Boeing de replicar el modo de falla preservan el evento como anomalía operacional sin explicación técnica conocida.",
+  "whyMatters_en": "A critical operational case: simultaneous loss of readiness of ten ICBMs under a single officer's control during the reported presence of an unidentified object, with documented replication in an adjacent LCC. The USAF's 'cause undetermined' finding and Boeing's inability to replicate the failure mode preserve the event as an operational anomaly with no known technical explanation.",
+  "evidence": [
+    "Reporte interno USAF 'cause undetermined' archivado",
+    "Análisis fallido Boeing del modo de falla simultáneo de 10 ICBM",
+    "Testimonio juramentado del Capitán Salas (Citizen Hearing 2013, libro 2005)",
+    "Patrón replicado en LCC Echo-Flight una semana antes"
+  ],
+  "evidence_en": [
+    "USAF internal report 'cause undetermined' filed",
+    "Failed Boeing analysis of the simultaneous 10-ICBM failure mode",
+    "Sworn testimony by Captain Salas (Citizen Hearing 2013, 2005 book)",
+    "Pattern replicated at LCC Echo-Flight a week earlier"
+  ],
+  "sources": [
+    {
+      "name": "Hastings, R. — UFOs and Nukes (2008)",
+      "url": "https://www.ufohastings.com/",
+      "note": "150+ casos documentados con testimonio jurado"
+    },
+    {
+      "name": "Salas, R. — Faded Giant (2005)",
+      "note": "Autobiográfico operacional"
+    },
+    {
+      "name": "National Press Club UFO Disclosure (Sept 27, 2010)",
+      "url": "https://www.nationalpressclub.org/",
+      "note": "7 oficiales militares incluyendo Salas"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Hastings, R. — UFOs and Nukes (2008)",
+      "url": "https://www.ufohastings.com/",
+      "note": "150+ documented cases with sworn testimony"
+    },
+    {
+      "name": "Salas, R. — Faded Giant (2005)",
+      "note": "Operational autobiography"
+    },
+    {
+      "name": "National Press Club UFO Disclosure (Sept 27, 2010)",
+      "url": "https://www.nationalpressclub.org/",
+      "note": "7 military officers including Salas"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Hipótesis alternativa válida: prueba de guerra electrónica clasificada de la propia USAF sobre sus sistemas Minuteman. Boeing y la USAF no replicaron el modo de falla, lo que debilita pero no descarta la posibilidad.",
+      "rationaleEn": "Valid alternative hypothesis: classified USAF EW test on its own Minuteman systems. Boeing and the USAF could not replicate the failure mode, which weakens but does not rule out the possibility."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Testimonio Salas + shutdown simultáneo de 10 ICBM + replicación en LCC adyacente + 150+ casos similares (Hastings) en instalaciones nucleares EE.UU. constituye un patrón sostenido difícil de atribuir a accidente.",
+      "rationaleEn": "Salas testimony + simultaneous shutdown of 10 ICBMs + replication in adjacent LCC + 150+ similar cases (Hastings) at U.S. nuclear installations constitutes a sustained pattern hard to attribute to accident."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Efectos coordinados de guerra electrónica con shutdown simultáneo de diez misiles + reportes visuales del objeto luminoso son incompatibles con cualquier fenómeno atmosférico conocido.",
+      "rationaleEn": "Coordinated EW effects with simultaneous shutdown of ten missiles + visual reports of the luminous object are incompatible with any known atmospheric phenomenon."
+    }
+  ]
+}

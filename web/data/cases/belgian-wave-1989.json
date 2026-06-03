@@ -1,0 +1,103 @@
+{
+  "id": "belgian-wave-1989",
+  "num": 29,
+  "name": "Belgian Wave (F-16)",
+  "year_start": 1989,
+  "year_end": 1990,
+  "country": "BE",
+  "country_name": "Bélgica",
+  "flag": "🇧🇪",
+  "location": {
+    "lat": 50.85,
+    "lng": 4.35,
+    "place": "Bélgica"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "6 sensores + 9 radar locks + 46G aceleración + Gen. De Brouwer tiempo real",
+  "summary_en": "6 sensors + 9 radar locks + 46G acceleration + Gen. De Brouwer real-time",
+  "patterns": [
+    "8b",
+    "8e",
+    "8k",
+    "8l"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre el 29 de noviembre de 1989 y abril de 1990, miles de civiles en Bélgica reportaron objetos triangulares oscuros con tres luces brillantes en los vértices y una luz central roja pulsante, moviéndose silenciosamente a baja velocidad. La Fuerza Aérea Belga (Belgian Air Component) recibió cientos de reportes corroborados por gendarmería y militares.
+
+El evento crítico ocurrió la noche del 30-31 de marzo de 1990. Gendarmería de Wavre confirmó visualmente el objeto y alertó a la Belgian Air Component. Dos F-16 fueron lanzados desde Beauvechain. Durante 75 minutos los pilotos lograron nueve lock-ons de radar; cada vez que el sistema enganchó, el objeto ejecutó maniobras evasivas con aceleraciones medidas de hasta 46G y cambios de altitud de 10,000 a 7,000 pies en un segundo — perfiles letales para cualquier piloto humano conocido. Seis sistemas de sensor independientes (dos radares Tierra, dos radares F-16, dos sistemas visuales) registraron el evento.
+
+El General Wilfried De Brouwer, entonces jefe de operaciones de la BAC y posteriormente Mayor General, condujo la investigación oficial en tiempo real. La Belgian Air Force publicó el reporte sin clasificar y De Brouwer reafirmó públicamente que el fenómeno fue 'observed by reliable witnesses, recorded by multiple radars, and remains unidentified'.",
+  "whatHappened_en": "Between November 29, 1989 and April 1990, thousands of civilians in Belgium reported dark triangular objects with three bright lights at the vertices and a central pulsing red light, moving silently at low speed. The Belgian Air Component received hundreds of reports corroborated by gendarmerie and military personnel.
+
+The critical event occurred on the night of March 30-31, 1990. Wavre gendarmerie visually confirmed the object and alerted the Belgian Air Component. Two F-16s were scrambled from Beauvechain. Over 75 minutes the pilots achieved nine radar lock-ons; each time the system locked on, the object executed evasive maneuvers with measured accelerations of up to 46G and altitude changes from 10,000 to 7,000 feet in one second — lethal profiles for any known human pilot. Six independent sensor systems (two ground radars, two F-16 radars, two visual systems) recorded the event.
+
+General Wilfried De Brouwer, then chief of operations of the BAC and later Major General, led the official investigation in real time. The Belgian Air Force published the unclassified report, and De Brouwer publicly reaffirmed that the phenomenon was 'observed by reliable witnesses, recorded by multiple radars, and remains unidentified'.",
+  "whyMatters": "Caso con la mejor combinación de datos multi-sensor documentada por una fuerza aérea OTAN: testimonio civil masivo + confirmación de gendarmería + interceptación militar con lock-ons radar repetidos + parámetros cinemáticos publicados. La transparencia institucional belga (rara entre fuerzas armadas) hace este caso el contraste metodológico con la opacidad histórica del Pentágono.",
+  "whyMatters_en": "The case with the best documented multi-sensor data combination from a NATO air force: mass civilian testimony + gendarmerie confirmation + military interception with repeated radar lock-ons + published kinematic parameters. Belgian institutional transparency (rare among armed forces) makes this case the methodological counterpoint to the Pentagon's historical opacity.",
+  "evidence": [
+    "Reporte oficial Belgian Air Force (1990) con tapes de radar F-16 publicados",
+    "Nueve lock-ons radar confirmados durante 75 minutos de interceptación",
+    "Aceleraciones medidas de hasta 46G — fuera del rango de cualquier plataforma humana conocida",
+    "Testimonio público del General De Brouwer (jefe de ops BAC) sostenido durante 35 años"
+  ],
+  "evidence_en": [
+    "Official Belgian Air Force report (1990) with published F-16 radar tapes",
+    "Nine confirmed radar lock-ons during 75 minutes of interception",
+    "Measured accelerations up to 46G — outside the envelope of any known human platform",
+    "Public testimony by General De Brouwer (BAC ops chief) sustained for 35 years"
+  ],
+  "sources": [
+    {
+      "name": "Belgian Air Force Official Report (1990)",
+      "url": "https://www.sobeps.org/",
+      "note": "SOBEPS publicó documentación primaria"
+    },
+    {
+      "name": "De Brouwer, W. — UFOs: Generals, Pilots and Government Officials Go on the Record (2010)",
+      "note": "Capítulo dedicado por el General"
+    },
+    {
+      "name": "Meessen, A. — 'Analysis of the Belgian Radar Data' (1992)",
+      "note": "Análisis técnico independiente"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Belgian Air Force Official Report (1990)",
+      "url": "https://www.sobeps.org/",
+      "note": "SOBEPS published the primary documentation"
+    },
+    {
+      "name": "De Brouwer, W. — UFOs: Generals, Pilots and Government Officials Go on the Record (2010)",
+      "note": "Chapter written by the General"
+    },
+    {
+      "name": "Meessen, A. — 'Analysis of the Belgian Radar Data' (1992)",
+      "note": "Independent technical analysis"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Lock radar F-16 + 9 capturas confirmadas + maniobras a 46G documentadas oficialmente por la Fuerza Aérea Belga. Compatible con plataforma militar avanzada (incl. F-117 era), pero el rendimiento excede aeronaves conocidas de la época.",
+      "rationaleEn": "F-16 radar lock + 9 confirmed captures + 46G maneuvers officially documented by the Belgian Air Force. Compatible with advanced military platform (incl. F-117 era), but performance exceeds known aircraft of the period."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Misma ambigüedad de H3-H5 pero algo más débil que Tehran/Nimitz: el reporte se apoya principalmente en lock radar + visual sin firma IR equivalente.",
+      "rationaleEn": "Same H3-H5 ambiguity but slightly weaker than Tehran/Nimitz: the report rests mainly on radar lock + visual without equivalent IR signature."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Lock radar + altitud + maniobras 46G + reportes simultáneos de múltiples gendarmes en tierra son incompatibles con fenómenos atmosféricos.",
+      "rationaleEn": "Radar lock + altitude + 46G maneuvers + simultaneous reports from multiple ground gendarmes are incompatible with atmospheric phenomena."
+    }
+  ]
+}
