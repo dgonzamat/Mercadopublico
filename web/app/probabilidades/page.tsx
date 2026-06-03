@@ -1,8 +1,17 @@
 import Link from "next/link";
 import { cases, patterns, TOTAL_CASES } from "@/lib/data";
-import { HYPOTHESES } from "@/lib/hypotheses";
-import { PATTERN_TO_HYPOTHESIS } from "@/lib/hypothesisMapping";
+import {
+  HYPOTHESES,
+  PRIMITIVE_HYPOTHESES,
+  ANTECEDENT_HYPOTHESES,
+  DERIVED_HYPOTHESES,
+} from "@/lib/hypotheses";
+import {
+  PATTERN_TO_HYPOTHESIS,
+  UMBRELLA_SUBCLASSES,
+} from "@/lib/hypothesisMapping";
 import { IcdProbabilityChart } from "@/components/IcdProbabilityChart";
+import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 
@@ -35,11 +44,12 @@ export default function ProbabilidadesPage() {
           <T
             es={
               <>
-                Hay 8 explicaciones posibles. Siete son fáciles de evaluar —
-                casi seguro que sí, o casi seguro que no. Una sola se queda{" "}
-                <strong className="text-text">atascada en el medio</strong>:
-                tan probable como improbable. Ahí es donde realmente vive el
-                debate. Calibradas con{" "}
+                Hay <strong className="text-text">6 proposiciones primitivas</strong>{" "}
+                sobre los {STATS.cases} casos del corpus — independientes, no
+                compiten entre sí. A su alrededor: 1 antecedente (qué pasa antes
+                del filtro institucional) y 1 consecuencia derivada (heterogeneidad,
+                que es función de las primitivas, no una declaración aparte). Todo
+                calibrado con{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -48,16 +58,18 @@ export default function ProbabilidadesPage() {
                 >
                   ICD-203
                 </a>
-                , el estándar que usan los analistas de inteligencia.
+                , el estándar verbal que usan los analistas de inteligencia
+                cuando no hay modelo formal.
               </>
             }
             en={
               <>
-                There are 8 possible explanations. Seven are easy to evaluate
-                — almost certain yes, or almost certain no. Only one stays{" "}
-                <strong className="text-text">stuck in the middle</strong>:
-                as likely as it is unlikely. That&apos;s where the real
-                debate lives. Calibrated with{" "}
+                There are <strong className="text-text">6 primitive propositions</strong>{" "}
+                about the {STATS.cases} corpus cases — independent, they
+                don&apos;t compete. Around them: 1 antecedent (what happens before
+                institutional filtering) and 1 derived consequence (heterogeneity,
+                which is a function of the primitives, not a separate
+                declaration). All calibrated with{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -66,7 +78,8 @@ export default function ProbabilidadesPage() {
                 >
                   ICD-203
                 </a>
-                , the standard intelligence analysts use.
+                , the verbal standard intelligence analysts use without a
+                formal model.
               </>
             }
           />
@@ -76,45 +89,49 @@ export default function ProbabilidadesPage() {
       {/* ─────────── CHART (overview) ─────────── */}
       <IcdProbabilityChart />
 
-      {/* ─────────── POR QUÉ se traba — caso ancla + 3 razones ─────────── */}
+      {/* ─────────── POR QUÉ H5 ESTÁ EN "IMPROBABLE" — umbrella math ─────────── */}
       <section className="space-y-6 border-y-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
         <Eyebrow>
-          <T es="Por qué se traba" en="Why it gets stuck" />
+          <T es="La frontera analítica" en="The analytical frontier" />
         </Eyebrow>
         <H2>
           <T
-            es="¿Por qué H5 se queda 50-50?"
-            en="Why does H5 stay 50-50?"
+            es="¿Por qué H5 (entidades no humanas) cae en banda Improbable?"
+            en="Why does H5 (non-human entities) fall in the Unlikely band?"
           />
         </H2>
         <Body>
           <T
             es={
               <>
-                En septiembre de 1976, dos F-4 Phantom de la fuerza aérea
-                iraní perdieron sus comunicaciones y armamento al acercarse
-                a un objeto que el radar terrestre confirmó del tamaño de un
-                Boeing 707. La DIA estadounidense lo calificó como{" "}
-                <em>&quot;outstanding report&quot;</em> — la máxima nota
-                interna del formulario. Eso es{" "}
-                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
-                  Tehran 1976
-                </Link>
-                . Hay 28 casos Tier S del mismo nivel de solidez.
+                H5 es paraguas sobre H6 (interdimensional, 22%), H7
+                (psicoespiritual, 22%) y H8 (tratado, 6%). La cota de Fréchet
+                fija el rango:{" "}
+                <strong className="text-text">
+                  max(subclase) ≤ P(H5) ≤ Σ subclases
+                </strong>{" "}
+                — entre 22% y 50%. El 28% calibrado refleja max(22%) más un
+                excedente pequeño por ET clásico / categorías sin vocabulario,
+                asumiendo overlap significativo entre las subclases nombradas.
+                Sin disjuncion completa no hay espacio para llegar a la cota
+                superior. Cae en banda{" "}
+                <strong className="text-text">Improbable</strong> (20-45%).
               </>
             }
             en={
               <>
-                In September 1976, two Iranian Air Force F-4 Phantoms lost
-                their communications and weapons systems as they approached
-                an object that ground radar confirmed was the size of a
-                Boeing 707. The U.S. DIA rated the report{" "}
-                <em>&quot;outstanding&quot;</em> — the highest internal
-                grade. That is{" "}
-                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
-                  Tehran 1976
-                </Link>
-                . There are 28 Tier S cases at that level of solidity.
+                H5 is an umbrella over H6 (interdimensional, 22%), H7
+                (psychospiritual, 22%) and H8 (treaty, 6%). The Fréchet bound
+                fixes the range:{" "}
+                <strong className="text-text">
+                  max(subclass) ≤ P(H5) ≤ Σ subclasses
+                </strong>{" "}
+                — between 22% and 50%. The calibrated 28% reflects max(22%)
+                plus a small excess for classical ET / unnamed categories,
+                assuming significant overlap among named subclasses. Without
+                full disjointness, there is no room to reach the upper bound.
+                Falls in the <strong className="text-text">Unlikely</strong>{" "}
+                band (20-45%).
               </>
             }
           />
@@ -123,27 +140,42 @@ export default function ProbabilidadesPage() {
           <T
             es={
               <>
-                Y sin embargo, ningún caso puede decidir entre dos lecturas
-                igualmente consistentes con los datos: <strong>tecnología
-                clasificada terrestre</strong> (sabemos que existe — el U-2,
-                el F-117 y el B-2 fueron UAP antes de ser desclasificados) o{" "}
-                <strong>algo no humano</strong>. Mientras no haya un método
-                nuevo de medición — material recuperado, análisis isotópico,
-                espectrometría — cada caso adicional refuerza el mismo
-                dilema sin resolverlo. Por eso H5 se queda 50-50.
+                En septiembre de 1976, dos F-4 Phantom iraníes perdieron
+                comunicaciones y armamento ante un objeto del tamaño de un
+                Boeing 707 confirmado por radar terrestre. La DIA lo calificó{" "}
+                <em>&quot;outstanding report&quot;</em>. Es{" "}
+                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
+                  Tehran 1976
+                </Link>
+                . Hay {STATS.tierS} casos Tier S del mismo nivel. La evidencia
+                es consistente con H3 (programa clasificado, 88%){" "}
+                <strong>y</strong> con H5 — en el marco independiente declarado
+                arriba, esto sube ambas. La ambigüedad no las pone en
+                competencia: H3 sube más rápido porque tiene precedente
+                histórico documentado (U-2, F-117, B-2 fueron UAP antes de ser
+                desclasificados); H5 sube menos porque carece del mismo
+                precedente material. El experimento isotópico de Lake Huron
+                2023 podría mover este balance.
               </>
             }
             en={
               <>
-                And yet no case can decide between two readings equally
-                consistent with the data: <strong>classified terrestrial
-                technology</strong> (we know it exists — the U-2, F-117 and
-                B-2 were all UAP before being declassified) or{" "}
-                <strong>something non-human</strong>. Until there is a new
-                measurement method — recovered material, isotopic analysis,
-                spectrometry — each additional case reinforces the same
-                dilemma without resolving it. That&apos;s why H5 stays
-                50-50.
+                In September 1976, two Iranian F-4 Phantoms lost
+                communications and weapons facing an object the size of a
+                Boeing 707 confirmed by ground radar. The DIA rated the
+                report <em>&quot;outstanding&quot;</em>. That is{" "}
+                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
+                  Tehran 1976
+                </Link>
+                . There are {STATS.tierS} Tier S cases at that level. The
+                evidence is consistent with H3 (classified program, 88%){" "}
+                <strong>and</strong> with H5 — in the independent frame
+                declared above, this raises both. The ambiguity doesn&apos;t
+                put them in competition: H3 rises faster because it has
+                documented historical precedent (U-2, F-117, B-2 were UAP
+                before declassification); H5 rises less because it lacks the
+                same material precedent. The Lake Huron 2023 isotopic
+                experiment could move this balance.
               </>
             }
           />
@@ -159,18 +191,52 @@ export default function ProbabilidadesPage() {
         </Link>
       </section>
 
-      {/* ─────────── 8 HIPÓTESIS (H5 destacada) ─────────── */}
+      {/* ─────────── 6 PROPOSICIONES PRIMITIVAS (H5 destacada) ─────────── */}
       <div className="space-y-16">
-        {HYPOTHESES.map((h, i) => (
+        {PRIMITIVE_HYPOTHESES.map((h, i) => (
           <HypothesisSection
             key={h.id}
             hypothesisId={h.id}
             index={i + 1}
-            total={HYPOTHESES.length}
+            total={PRIMITIVE_HYPOTHESES.length}
             featured={h.id === FEATURED_HYPOTHESIS_ID}
           />
         ))}
       </div>
+
+      {/* ─────────── ANTECEDENTE + DERIVADA ─────────── */}
+      <section
+        id="antecedente-derivada"
+        className="scroll-mt-20 space-y-10 border-t-2 border-text pt-12"
+      >
+        <header className="space-y-3">
+          <Eyebrow>
+            <T
+              es="Fuera del eje · antecedente y derivada"
+              en="Off-axis · antecedent and derived"
+            />
+          </Eyebrow>
+          <H2>
+            <T
+              es="Por qué estas dos no van con las primitivas"
+              en="Why these two don't belong on the primitive axis"
+            />
+          </H2>
+          <Body className="text-muted">
+            <T
+              es="Las primitivas comparten un eje porque viven en el mismo universo (los 64 casos institucionales del corpus) y son lógicamente independientes. Estas dos no cumplen ninguno de los dos requisitos."
+              en="The primitives share an axis because they live in the same universe (the 64 institutional corpus cases) and are logically independent. These two satisfy neither requirement."
+            />
+          </Body>
+        </header>
+
+        {ANTECEDENT_HYPOTHESES.map((h) => (
+          <OffAxisCard key={h.id} h={h} kindLabel={{ es: "Antecedente", en: "Antecedent" }} />
+        ))}
+        {DERIVED_HYPOTHESES.map((h) => (
+          <OffAxisCard key={h.id} h={h} kindLabel={{ es: "Derivada", en: "Derived" }} />
+        ))}
+      </section>
 
       {/* ─────────── PUENTE NARRATIVO al experimento ─────────── */}
       <section className="mx-auto max-w-prose space-y-4 pt-4">
@@ -178,15 +244,18 @@ export default function ProbabilidadesPage() {
           <T
             es={
               <>
-                Recorriste las ocho. Siete ya están resueltas. H5 sigue
-                atascada — y existe un experimento que podría desempatarla.
+                Recorriste las seis primitivas. Cinco ya están resueltas
+                (cuatro con alta confianza, una al borde inferior de
+                Improbable). H5 — entidades no humanas — es la que más se
+                movería si Lake Huron 2023 produjera material analizable.
               </>
             }
             en={
               <>
-                You walked through all eight. Seven are already resolved.
-                H5 remains stuck — and there is one experiment that could
-                break the tie.
+                You walked through the six primitives. Five are already
+                resolved (four with high confidence, one at the lower edge of
+                Unlikely). H5 — non-human entities — is the one that would
+                move the most if Lake Huron 2023 produced analyzable material.
               </>
             }
           />
@@ -287,8 +356,8 @@ export default function ProbabilidadesPage() {
           </span>
           <span className="font-display text-base font-medium">
             <T
-              es="Ver los 52 casos →"
-              en="See the 52 cases →"
+              es={`Ver los ${STATS.cases} casos →`}
+              en={`See the ${STATS.cases} cases →`}
             />
           </span>
         </Link>
@@ -801,4 +870,40 @@ function renderNoEvidenceExpansion(id: string) {
         </Caption>
       );
   }
+}
+
+/**
+ * Off-axis hypothesis card — for antecedent (universe pre-filtro) and
+ * derived (consecuencia lógica) hypotheses that should NOT share the
+ * primitive ICD-203 axis.
+ */
+function OffAxisCard({
+  h,
+  kindLabel,
+}: {
+  h: (typeof HYPOTHESES)[number];
+  kindLabel: { es: string; en: string };
+}) {
+  return (
+    <article
+      id={h.id}
+      aria-labelledby={`${h.id}-offaxis-title`}
+      className="scroll-mt-20 space-y-4 border-l-4 pl-6"
+      style={{ borderColor: h.color }}
+    >
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
+        <T es={kindLabel.es} en={kindLabel.en} />
+        {" · "}
+        <T es={h.icd.labelEs} en={h.icd.label} />
+        {" · "}
+        {Math.round(h.icd.min)}–{Math.round(h.icd.max)}%
+      </p>
+      <H2 id={`${h.id}-offaxis-title`} className="text-2xl md:text-3xl">
+        <T es={h.label} en={h.labelEn} />
+      </H2>
+      <Body className="text-muted">
+        <T es={h.note} en={h.noteEn} />
+      </Body>
+    </article>
+  );
 }
