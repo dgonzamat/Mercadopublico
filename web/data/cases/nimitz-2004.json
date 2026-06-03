@@ -1,0 +1,105 @@
+{
+  "id": "nimitz-2004",
+  "num": 38,
+  "name": "USS Nimitz Tic-Tac",
+  "year_start": 2004,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 32.22,
+    "lng": -117.78,
+    "place": "Pacífico, Baja California"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "Sensor data + 8 testigos militares, Cmdr. Fravor",
+  "summary_en": "Sensor data + 8 military witnesses, Cmdr. Fravor",
+  "patterns": [
+    "8b"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre el 10 y el 16 de noviembre de 2004, el grupo de portaaviones USS Nimitz (CSG-11) realizaba ejercicios de pre-deployment a 100 millas al suroeste de San Diego. El destructor USS Princeton (CG-59), equipado con radar SPY-1 Aegis recientemente actualizado, detectó múltiples 'Anomalous Aerial Vehicles' (AAVs): objetos descendiendo de 80,000 pies a 20,000 pies en menos de un segundo, deteniéndose y manteniéndose estacionarios.
+
+El 14 de noviembre, dos F/A-18F del VFA-41 'Black Aces' fueron desviados desde un ejercicio de entrenamiento a investigar. El Comandante David Fravor (CO del escuadrón) y la Tte. Cmdr. Alex Dietrich con sus respectivos WSOs llegaron al CAP point asignado por el Princeton. Fravor reportó haber observado visualmente un objeto blanco, sin alas ni propulsión visible, en forma de Tic-Tac de aproximadamente 12 metros de longitud, sobre una perturbación del océano. Al iniciar Fravor un descenso hacia el objeto, este reflejó el movimiento manteniendo distancia, y luego aceleró fuera de vista en menos de dos segundos.
+
+Posteriormente, el Tte. Chad Underwood (en otro F/A-18F del Nimitz) interceptó al objeto al CAP point reasignado y obtuvo el video ATFLIR conocido como 'FLIR1', publicado por TTSA en 2017 y oficialmente desclasificado por el Pentágono en abril de 2020. El radar SPY-1 del Princeton mantuvo trazas de hasta 100 objetos durante una semana.",
+  "whatHappened_en": "Between November 10 and 16, 2004, the USS Nimitz Carrier Strike Group (CSG-11) was conducting pre-deployment exercises 100 miles southwest of San Diego. The destroyer USS Princeton (CG-59), equipped with a recently upgraded SPY-1 Aegis radar, detected multiple 'Anomalous Aerial Vehicles' (AAVs): objects descending from 80,000 feet to 20,000 feet in under a second, halting and holding stationary.
+
+On November 14, two F/A-18Fs from VFA-41 'Black Aces' were diverted from a training exercise to investigate. Commander David Fravor (squadron CO) and Lt. Cmdr. Alex Dietrich with their respective WSOs arrived at the CAP point assigned by Princeton. Fravor reported visually observing a white object, with no wings or visible propulsion, in the shape of a Tic-Tac roughly 12 meters long, above a disturbance on the ocean surface. As Fravor began a descent toward the object, it mirrored his motion while maintaining distance, then accelerated out of sight in under two seconds.
+
+Later, Lt. Chad Underwood (in another Nimitz F/A-18F) intercepted the object at the reassigned CAP point and obtained the ATFLIR video known as 'FLIR1', published by TTSA in 2017 and officially declassified by the Pentagon in April 2020. The Princeton's SPY-1 radar held tracks of up to 100 objects over a full week.",
+  "whyMatters": "El caso es el cornerstone moderno del fenómeno UAP con confirmación institucional plena: video ATFLIR oficialmente liberado por el Pentágono, ocho testigos militares con calificación operacional (pilotos, WSOs, operadores Aegis), datos radar multi-sensor durante una semana completa, y testimonio público sostenido bajo juramento. Catalizador directo del programa AATIP/UAPTF/AARO y de la creación legislativa de la transparencia UAP en 2022-2023.",
+  "whyMatters_en": "The case is the modern cornerstone of the UAP phenomenon with full institutional confirmation: ATFLIR video officially released by the Pentagon, eight military witnesses with operational qualifications (pilots, WSOs, Aegis operators), multi-sensor radar data over a full week, and sustained public sworn testimony. A direct catalyst for the AATIP/UAPTF/AARO program and for the legislative creation of UAP transparency in 2022-2023.",
+  "evidence": [
+    "Video ATFLIR 'FLIR1' oficialmente desclasificado por el Pentágono (abril 2020)",
+    "Trazas radar SPY-1 Aegis del USS Princeton durante una semana de ejercicios",
+    "Testimonio bajo juramento de Fravor y Graves ante House Oversight (julio 2023)",
+    "Reporte interno de la Navy con calificación 'unsafe to fly' debido a frecuencia de encuentros"
+  ],
+  "evidence_en": [
+    "ATFLIR 'FLIR1' video officially declassified by the Pentagon (April 2020)",
+    "USS Princeton SPY-1 Aegis radar tracks over a full week of exercises",
+    "Sworn testimony by Fravor and Graves before House Oversight (July 2023)",
+    "Internal Navy report rating airspace 'unsafe to fly' due to encounter frequency"
+  ],
+  "sources": [
+    {
+      "name": "Pentagon Official Statement on UAP Videos (abril 2020)",
+      "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
+    },
+    {
+      "name": "Powell, Reid, Stratton et al. — Tic Tac UAP Executive Report (TTSA 2019)",
+      "note": "Reconstrucción ingenieril completa"
+    },
+    {
+      "name": "House Oversight UAP Hearing — Fravor testimony (julio 2023)",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+    },
+    {
+      "name": "Kean, L. — NYT 'Glowing Auras and Black Money' (dic 2017)",
+      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Pentagon Official Statement on UAP Videos (abril 2020)",
+      "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
+    },
+    {
+      "name": "Powell, Reid, Stratton et al. — Tic Tac UAP Executive Report (TTSA 2019)",
+      "note": "Complete engineering reconstruction"
+    },
+    {
+      "name": "House Oversight UAP Hearing — Fravor testimony (julio 2023)",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+    },
+    {
+      "name": "Kean, L. — NYT 'Glowing Auras and Black Money' (dic 2017)",
+      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Video ATFLIR oficialmente liberado por el Pentágono + radar SPY-1 Aegis + 8 testigos militares calificados durante una semana. Plataforma con envolvente de rendimiento (descenso 80k-20k ft en <1s) fuera de cualquier aeronave conocida.",
+      "rationaleEn": "ATFLIR video officially released by the Pentagon + SPY-1 Aegis radar + 8 qualified military witnesses over a week. Platform performance envelope (80k-20k ft descent in <1s) outside any known aircraft."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Misma ambigüedad Tehran-style: el rendimiento observado es consistente tanto con tecnología clasificada avanzada como con plataforma no humana. La firma IR de baja temperatura + ausencia de superficies de control aumenta la incompatibilidad con conocido.",
+      "rationaleEn": "Same Tehran-style ambiguity: observed performance is consistent with both advanced classified tech and non-human platform. Low-temperature IR signature + absence of control surfaces increases incompatibility with the known."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Firma IR FLIR + lock de radar AESA + observación visual coordinada multi-pilot durante una semana son incompatibles con cualquier fenómeno atmosférico catalogado.",
+      "rationaleEn": "FLIR IR signature + AESA radar lock + coordinated multi-pilot visual observation over a week are incompatible with any catalogued atmospheric phenomenon."
+    }
+  ]
+}

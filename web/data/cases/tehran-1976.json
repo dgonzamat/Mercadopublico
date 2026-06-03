@@ -1,0 +1,110 @@
+{
+  "id": "tehran-1976",
+  "num": 19,
+  "name": "Tehran 1976",
+  "year_start": 1976,
+  "country": "IR",
+  "country_name": "Irán",
+  "flag": "🇮🇷",
+  "location": {
+    "lat": 35.69,
+    "lng": 51.39,
+    "place": "Tehran"
+  },
+  "tier": "S",
+  "probability": 88,
+  "summary": "DIA validó oficialmente, F-4 EM failures × 2, multi-sensor, madre+subobjetos",
+  "summary_en": "DIA officially validated, F-4 EM failures × 2, multi-sensor, mother + sub-objects",
+  "patterns": [
+    "8b",
+    "8e",
+    "8k"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre la 1:00 y las 4:30 AM del 19 de septiembre de 1976, control aéreo en Mehrabad recibió múltiples reportes civiles de una luz brillante sobre el norte de Teherán. El supervisor confirmó el objeto visualmente y notificó al comando de la Fuerza Aérea Imperial Iraní. Un F-4 Phantom II del 32º escuadrón de Shahrokhi despegó para investigar; al acercarse a 40 kilómetros, sus instrumentos de comunicación y armamento fallaron simultáneamente y el piloto se vio obligado a abortar.
+
+Un segundo F-4 fue lanzado a las 1:40 AM. Logró radar lock a 27 millas náuticas — la traza era del tamaño de un Boeing 707. Cuando el copiloto intentó disparar un AIM-9 al objeto secundario más pequeño que se desprendió del primario, el sistema de armamento y todas las comunicaciones UHF/intercomunicador fallaron. Al desistir, los sistemas se restauraron. El objeto secundario regresó al primario y este último liberó un tercer objeto que descendió a aterrizar suavemente cerca de Rey-Shahr. Al amanecer un helicóptero examinó el sitio sin encontrar restos físicos.
+
+El reporte fue clasificado por la DIA estadounidense (Defense Intelligence Agency) bajo el código DEFE-12 y posteriormente desclasificado vía FOIA. La evaluación DIA marcó el caso con la máxima calificación de calidad de información disponible en el formulario: 'an outstanding report'.",
+  "whatHappened_en": "Between 1:00 and 4:30 AM on September 19, 1976, Mehrabad air traffic control received multiple civilian reports of a bright light over northern Tehran. The supervisor confirmed the object visually and notified Imperial Iranian Air Force command. An F-4 Phantom II from the 32nd Squadron at Shahrokhi took off to investigate; as it closed to 40 kilometers, its communications and weapons instruments failed simultaneously and the pilot was forced to abort.
+
+A second F-4 was launched at 1:40 AM. It achieved radar lock at 27 nautical miles — the return was the size of a Boeing 707. When the weapons officer attempted to fire an AIM-9 at the smaller secondary object that detached from the primary, the weapons system and all UHF/intercom communications failed. Upon disengaging, the systems were restored. The secondary object returned to the primary, and the primary then released a third object that descended to a soft landing near Rey-Shahr. At dawn a helicopter examined the site without finding any physical remains.
+
+The report was classified by the U.S. DIA (Defense Intelligence Agency) under code DEFE-12 and later declassified via FOIA. The DIA evaluation rated the case with the highest available quality grade on the form: 'an outstanding report'.",
+  "whyMatters": "Es uno de los pocos casos con validación institucional explícita por una agencia de inteligencia estadounidense, basada en datos multi-sensor (radar de tierra, radar aire-aire, instrumentación de cabina, testimonio de cinco oficiales militares) y con interferencia electromagnética repetible bajo proximidad al objeto. La pérdida sincronizada de sistemas en dos aeronaves distintas, recuperables al alejarse, es difícil de explicar como falla técnica o mala interpretación.",
+  "whyMatters_en": "One of the few cases with explicit institutional validation by a U.S. intelligence agency, based on multi-sensor data (ground radar, air-to-air radar, cockpit instrumentation, testimony from five military officers) and with repeatable electromagnetic interference correlated to proximity. The synchronized system loss across two different aircraft, recoverable upon withdrawal, is difficult to explain as technical failure or misinterpretation.",
+  "evidence": [
+    "Memorándum DIA Form 1396 (desclasificado FOIA) calificando el reporte como 'outstanding'",
+    "Radar lock en F-4 #2 con eco de tamaño equivalente a Boeing 707",
+    "Falla simultánea de armamento y comunicaciones al intentar disparo AIM-9, recuperación al alejarse",
+    "Testimonios juramentados del General Yousefi (IIAF), Capitán Jafari (piloto F-4 #2) y tripulación de tierra"
+  ],
+  "evidence_en": [
+    "DIA Form 1396 memorandum (declassified via FOIA) rating the report 'outstanding'",
+    "Radar lock on F-4 #2 with a return equivalent in size to a Boeing 707",
+    "Simultaneous weapons and communications failure when attempting an AIM-9 shot, recovered upon disengage",
+    "Sworn testimony from General Yousefi (IIAF), Captain Jafari (F-4 #2 pilot), and ground crew"
+  ],
+  "sources": [
+    {
+      "name": "DIA Defense Information Report DI-1696-0379-76",
+      "url": "https://www.theblackvault.com/documentarchive/iranian-air-force-pilots-encounter-with-a-uap-1976/",
+      "note": "Desclasificado vía FOIA"
+    },
+    {
+      "name": "Project Blue Book — Tehran Case File",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "Jafari interview, Sci-Fi Channel UFO Special (2007)",
+      "note": "Capitán piloto F-4 #2"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DIA Defense Information Report DI-1696-0379-76",
+      "url": "https://www.theblackvault.com/documentarchive/iranian-air-force-pilots-encounter-with-a-uap-1976/",
+      "note": "Declassified via FOIA"
+    },
+    {
+      "name": "Project Blue Book — Tehran Case File",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "Jafari interview, Sci-Fi Channel UFO Special (2007)",
+      "note": "Captain who piloted F-4 #2"
+    }
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tehran_ufo_1976_1.jpg",
+    "alt": "Primera página del Defense Information Report DI-1696-0379-76 de la DIA sobre el incidente de Teherán, septiembre 1976.",
+    "caption": "Defense Information Report DI-1696-0379-76. DIA, septiembre 1976. Calificado como \"outstanding report\" — la máxima calidad en el formulario interno.",
+    "caption_en": "Defense Information Report DI-1696-0379-76. DIA, September 1976. Rated 'outstanding report' — the highest quality grade on the internal form.",
+    "source": "Defense Intelligence Agency",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Tehran_ufo_1976_1.jpg"
+  },
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Multi-sensor militar (radar tierra + radar aire-aire + cabina) con calificación DIA 'outstanding'. Anomalía consistente con tecnología clasificada aeroespacial avanzada, aunque el rendimiento observado excede plataformas conocidas de la época.",
+      "rationaleEn": "Multi-sensor military (ground radar + air-to-air radar + cockpit) with DIA 'outstanding' rating. Anomaly consistent with advanced classified aerospace technology, though observed performance exceeds known platforms of the era."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Evidencia ambigua entre H3 y H5 — esta es la dualidad canónica. Sub-objetos desprendiéndose del primario y maniobras coordinadas son consistentes con la categoría no humana, sin precedente material que los excluya.",
+      "rationaleEn": "Evidence ambiguous between H3 and H5 — this is the canonical duality. Sub-objects detaching from the primary and coordinated maneuvers are consistent with the non-human category, with no material precedent excluding them."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Falla EM sincronizada en dos aeronaves distintas, recuperable al alejarse, con radar lock confirmado: ningún fenómeno atmosférico conocido (plasma, sprite, ball lightning, ionización) produce ese acoplamiento electromagnético selectivo.",
+      "rationaleEn": "Synchronized EM failure across two distinct aircraft, recoverable upon disengagement, with confirmed radar lock: no known atmospheric phenomenon (plasma, sprite, ball lightning, ionization) produces that selective electromagnetic coupling."
+    }
+  ]
+}

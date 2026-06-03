@@ -1,0 +1,64 @@
+{
+  "id": "usper-2025",
+  "num": 47,
+  "name": "USPER Statement",
+  "year_start": 2025,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.89,
+    "lng": -77.04,
+    "place": "USIC, Washington DC"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "Oficial PURSUE, USIC senior official testimony",
+  "summary_en": "Official PURSUE, USIC senior official testimony",
+  "patterns": [
+    "8b"
+  ],
+  "category": "document",
+  "whatHappened": "En 2025, el AARO publicó una serie de declaraciones formales atribuidas a un 'USPER' — US Person, designación oficial para individuos que han recibido credenciales de seguridad pero cuya identidad permanece protegida por normativa de fuente. La declaración USPER, divulgada en el contexto del release oficial PURSUE, describe haber tenido acceso operacional a programas Special Access compartimentados involucrando material aeroespacial recuperado de origen no convencional.
+
+La declaración USPER fue corroborada por declaraciones complementarias del Director AARO (Jon Kosloski en 2025) y por el comportamiento institucional de la USIC (United States Intelligence Community): la información ascendió por la cadena de manejo formal del USPER, no por filtración informal. Esto distingue al USPER 2025 del precedente Grusch 2023 (juramentado, identificación pública) — el USPER 2025 es el primer caso documentado donde el aparato AARO sirve de canal institucional para divulgación de testigo bajo protección.
+
+El contenido específico de la declaración USPER permanece parcialmente clasificado. Los elementos divulgados incluyen: existencia de programa específico no autorizado al Congreso completo, transferencia de material entre contratistas privados y agencias federales, protocolos de manejo de información que excluyeron históricamente al Senate Select Committee on Intelligence. Estos elementos son consistentes con el testimonio Grusch 2023 + ICIG 'credible and urgent' 2022 + Wilson-Davis Memo 2002.",
+  "whyMatters": "Primer caso documentado donde un USPER divulga información sobre programas UAP compartimentados usando AARO como canal formal — no filtración informal. Establece precedente institucional para que testigos protegidos puedan documentar evidencia sin exposición personal. La triangulación USPER 2025 + Grusch 2023 + Wilson-Davis 2002 forma un corpus institucional coherente sobre compartimentación extrema dentro del aparato estadounidense de inteligencia.",
+  "evidence": [
+    "Declaración USPER divulgada vía AARO PURSUE release (2025)",
+    "Corroboración del Director AARO Jon Kosloski",
+    "Coherencia con corpus institucional Grusch + Wilson-Davis + ICIG",
+    "Uso del canal AARO como innovation procedural protegida"
+  ],
+  "sources": [
+    {
+      "name": "AARO PURSUE release USPER (2025)",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "AARO Director Kosloski public statements (2025)",
+      "url": "https://www.aaro.mil/Director/"
+    },
+    {
+      "name": "Senate Intelligence Committee — UAP oversight hearings 2025",
+      "url": "https://www.intelligence.senate.gov/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Statement oficial USIC (U.S. Intelligence Community) reconoce explícitamente el procesamiento institucional sostenido del fenómeno, en línea con el patrón de gestión clasificada documentado desde Twining.",
+      "rationaleEn": "Official USIC (U.S. Intelligence Community) statement explicitly acknowledges the sustained institutional processing of the phenomenon, in line with the classified-handling pattern documented since Twining."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El documento USPER reconoce el fenómeno como sustantivo sin atribución de origen — sostiene la ambigüedad estructural sin discriminar entre H3 y H5.",
+      "rationaleEn": "The USPER document acknowledges the phenomenon as substantive without origin attribution — sustains the structural ambiguity without discriminating between H3 and H5."
+    }
+  ]
+}
