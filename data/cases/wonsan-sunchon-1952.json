@@ -1,0 +1,53 @@
+{
+  "id": "wonsan-sunchon-1952",
+  "num": 64,
+  "name": "Wonsan-Sunchon (Corea)",
+  "year_start": 1952,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.15,
+    "lng": 127.43,
+    "place": "Wonsan / Sunchon, Corea del Norte (misión USAF)"
+  },
+  "tier": "A",
+  "probability": 60,
+  "summary": "Dos B-29 USAF independientes 80mi separados + globo naranja sobre N. Korea wartime + Blue Book 'Unknown'",
+  "summary_en": "Two independent USAF B-29s 80mi apart + orange globe over wartime N. Korea + Blue Book 'Unknown'",
+  "patterns": [
+    "8e",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El 29 de enero de 1952, durante la Guerra de Corea, dos tripulaciones de bombarderos B-29 Superfortress de la USAF en misiones independientes sobre Corea del Norte reportaron observaciones casi idénticas de un objeto globular naranja que las acompañó a baja distancia. Las dos observaciones ocurrieron aproximadamente 80 millas separadas en el tiempo y el espacio — eliminando la posibilidad de coordinación o influencia mutua entre tripulaciones.\n\nLa primera tripulación, sobre Wonsan, reportó al objeto a aproximadamente 1,000 yardas del B-29, manteniendo posición relativa durante cinco minutos. La segunda tripulación, sobre Sunchon más al sur, reportó al mismo tipo de objeto (descripción independiente) durante un tiempo similar. Ambas tripulaciones describieron movimientos no consistentes con cazas conocidos (MiG-15) o globos meteorológicos: aceleraciones extremas, paradas instantáneas, y mantenimiento de posición lateral perfecta con el bombardero.\n\nLos reportes fueron transmitidos por cable de prioridad: FEAF (Far East Air Force, Tokyo) → ATIC (Air Technical Intelligence Center, Wright-Patterson AFB) → D/I (Directorate of Intelligence, Pentágono). Project Blue Book clasificó ambas observaciones como 'Unknown' bajo el procedimiento AFR 200-2. Los documentos originales del cable de FEAF, los reportes ATIC y la clasificación final fueron preservados y son accesibles a través de Project 1947 (archivo de historiador profesional) y el AF Historical Research Agency.",
+  "whatHappened_en": "On January 29, 1952, during the Korean War, two USAF B-29 Superfortress bomber crews on independent missions over North Korea reported nearly identical observations of an orange globular object that accompanied them at close range. The two observations occurred approximately 80 miles apart in time and space — eliminating the possibility of coordination or mutual influence between crews.\n\nThe first crew, over Wonsan, reported the object at approximately 1,000 yards from the B-29, maintaining relative position for five minutes. The second crew, over Sunchon further south, reported the same type of object (independent description) for a similar duration. Both crews described movements inconsistent with known fighters (MiG-15) or weather balloons: extreme accelerations, instantaneous stops, and perfect lateral position-keeping with the bomber.\n\nThe reports were transmitted by priority cable: FEAF (Far East Air Force, Tokyo) → ATIC (Air Technical Intelligence Center, Wright-Patterson AFB) → D/I (Directorate of Intelligence, Pentagon). Project Blue Book classified both observations as 'Unknown' under the AFR 200-2 procedure. The original FEAF cable documents, ATIC reports, and final classification were preserved and are accessible through Project 1947 (a professional historian's archive) and the AF Historical Research Agency.",
+  "whyMatters": "Único caso UAP en zona de combate activo durante una guerra — donde la presencia de tropas, radar, aeronaves enemigas e inteligencia militar era máxima. Las dos observaciones independientes a 80 millas de distancia eliminan explicaciones de error individual y dan al caso una resistencia evidencial mayor que casi cualquier observación civil. El registro institucional (FEAF → ATIC → D/I) está completo y desclasificado.",
+  "whyMatters_en": "The only UAP case in an active combat zone during a war — where the presence of troops, radar, enemy aircraft, and military intelligence was maximum. The two independent observations 80 miles apart eliminate individual-error explanations and give the case greater evidential strength than almost any civilian observation. The institutional record (FEAF → ATIC → D/I) is complete and declassified.",
+  "evidence": [
+    "Cable de prioridad FEAF (Tokyo) → ATIC (Wright-Patterson AFB)",
+    "Reporte ATIC de evaluación bilingüe (2 tripulaciones independientes)",
+    "Project Blue Book clasificación 'Unknown' bajo AFR 200-2",
+    "AF Historical Research Agency — registros desclasificados"
+  ],
+  "evidence_en": [
+    "Priority cable FEAF (Tokyo) → ATIC (Wright-Patterson AFB)",
+    "ATIC bilingual evaluation report (2 independent crews)",
+    "Project Blue Book 'Unknown' classification under AFR 200-2",
+    "AF Historical Research Agency — declassified records"
+  ],
+  "sources": [
+    {
+      "name": "Project 1947 — Korea Wonsan/Sunchon files",
+      "url": "http://www.project1947.com/fig/korea52a.htm"
+    },
+    {
+      "name": "Project Blue Book Case File — Wonsan/Sunchon 1/29/1952",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "Wikipedia: Wonsan-Sunchon UFO incident",
+      "url": "https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident"
+    }
+  ]
+}
