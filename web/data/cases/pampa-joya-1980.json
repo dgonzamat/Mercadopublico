@@ -1,0 +1,54 @@
+{
+  "id": "pampa-joya-1980",
+  "num": 67,
+  "name": "Pampa Joya · Caso Santamaría",
+  "year_start": 1980,
+  "country": "PE",
+  "country_name": "Perú",
+  "flag": "🇵🇪",
+  "location": {
+    "lat": -16.59,
+    "lng": -71.84,
+    "place": "Base Aérea La Joya, Arequipa"
+  },
+  "tier": "S",
+  "probability": 78,
+  "summary": "Piloto FAP descarga 64 obuses 30 mm contra UAP esférico desde Su-22; sin daño aparente al objeto.",
+  "summary_en": "Peruvian Air Force pilot fires 64 30mm rounds at spherical UAP from Su-22; no apparent damage to the object.",
+  "patterns": [
+    "8a",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 11 de abril de 1980, durante una formación matutina sobre la Base Aérea de La Joya (Arequipa, sur del Perú), personal militar observó un objeto esférico plateado estacionario a unos 1.800 metros de altitud. El comandante de base ordenó interceptarlo. El teniente Oscar Santamaría Méndez fue enviado en un Sukhoi Su-22 con orden de disparar.\n\nSantamaría posicionó su caza, abrió fuego con su cañón GSh-23 cargado con munición de 30 mm y descargó 64 obuses contra el objeto. Los proyectiles parecieron impactar pero el cuerpo esférico permaneció inalterado — sin fragmentación, sin pérdida de altitud, sin emisión de calor visible. A continuación, el objeto inició un ascenso vertical a velocidad inmediata que Santamaría no pudo igualar; el caza lo persiguió varios minutos antes de quedarse sin combustible y regresar a base.\n\nEl piloto fue interrogado por el Servicio de Inteligencia de la Fuerza Aérea peruana. Décadas después, ya retirado y bajo testimonio público, Santamaría confirmó el caso ante NARCAP y ante el Centro Mundial para el Estudio Científico de los OVNIs. El gobierno del Perú, vía la FAP, ha reconocido el incidente como un encuentro real con tecnología no identificada. El Pentágono incluyó el caso en revisiones internas de incidentes UAP militares latinoamericanos.",
+  "whatHappened_en": "On April 11, 1980, during a morning formation over La Joya Air Base (Arequipa, southern Peru), military personnel observed a silver spherical object stationary at roughly 1,800 meters altitude. The base commander ordered intercept. Lieutenant Oscar Santamaría Méndez was launched in a Sukhoi Su-22 with orders to fire.\n\nSantamaría positioned his fighter, opened fire with his GSh-23 cannon loaded with 30 mm rounds and discharged 64 shells at the object. The projectiles appeared to impact but the spherical body remained unaltered — no fragmentation, no altitude loss, no visible heat emission. The object then initiated an immediate-velocity vertical ascent which Santamaría could not match; the fighter pursued for several minutes before running low on fuel and returning to base.\n\nThe pilot was debriefed by Peruvian Air Force Intelligence. Decades later, after retirement and under public testimony, Santamaría confirmed the case to NARCAP and to the World Center for the Scientific Study of UFOs. The Peruvian government, through the FAP, has acknowledged the incident as a real encounter with unidentified technology. The Pentagon included the case in internal reviews of Latin American military UAP incidents.",
+  "whyMatters": "Es uno de los muy pocos casos donde un piloto militar abrió fuego con armamento cinético contra un UAP y los proyectiles fueron documentadamente inefectivos, sin signos de defensa activa por parte del objeto. Combinado con la persecución posterior y el testimonio público bajo identidad del piloto, constituye uno de los casos balísticos institucionalmente reconocidos más sólidos del corpus latinoamericano.",
+  "whyMatters_en": "One of very few cases where a military pilot opened fire with kinetic weapons against a UAP and the projectiles were documentedly ineffective, with no signs of active defense by the object. Combined with the subsequent pursuit and the pilot's public on-the-record testimony, it constitutes one of the strongest institutionally acknowledged ballistic cases in the Latin American corpus.",
+  "evidence": [
+    "Testimonio público bajo identidad del piloto Oscar Santamaría Méndez (FAP)",
+    "Reconocimiento institucional por la Fuerza Aérea del Perú",
+    "Debrief inicial por Servicio de Inteligencia FAP (1980)",
+    "Inclusión en revisiones internas del Pentágono sobre incidentes UAP militares en América Latina"
+  ],
+  "evidence_en": [
+    "Public on-the-record testimony by pilot Oscar Santamaría Méndez (FAP)",
+    "Institutional acknowledgment by the Peruvian Air Force",
+    "Initial debrief by FAP Intelligence Service (1980)",
+    "Inclusion in Pentagon internal reviews of military UAP incidents in Latin America"
+  ],
+  "sources": [
+    {
+      "name": "NARCAP — Santamaría / La Joya case file",
+      "url": "https://www.narcap.org",
+      "note": "National Aviation Reporting Center on Anomalous Phenomena"
+    },
+    {
+      "name": "Haines, R. F. & Vallée, J. — Aerial Phenomena Pilot Reports (Journal of Scientific Exploration)",
+      "note": "Caso citado como referencia balística"
+    },
+    {
+      "name": "Cobertura Caretas (Perú, 2001)",
+      "note": "Reapertura mediática del caso post-creación DIFAA"
+    }
+  ]
+}

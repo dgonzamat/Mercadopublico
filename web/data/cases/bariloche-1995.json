@@ -1,0 +1,54 @@
+{
+  "id": "bariloche-1995",
+  "num": 65,
+  "name": "Bariloche · Vuelo AR 674",
+  "year_start": 1995,
+  "country": "AR",
+  "country_name": "Argentina",
+  "flag": "🇦🇷",
+  "location": {
+    "lat": -41.15,
+    "lng": -71.30,
+    "place": "Aeropuerto Internacional Bariloche"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "Vuelo Aerolíneas Argentinas escoltado por objeto luminoso; apagón total del aeropuerto durante aproximación final.",
+  "summary_en": "Aerolíneas Argentinas flight escorted by luminous object; complete airport blackout during final approach.",
+  "patterns": [
+    "8e",
+    "8k"
+  ],
+  "category": "incident",
+  "whatHappened": "El 31 de julio de 1995, el vuelo AR 674 de Aerolíneas Argentinas — un Boeing 727 procedente de Buenos Aires — iniciaba aproximación final al Aeropuerto Internacional Teniente Luis Candelaria de Bariloche cuando el comandante Jorge Polanco y su primer oficial reportaron por radio un objeto luminoso discoidal acompañando al avión por estribor a velocidad y altitud constantes.\n\nDurante la aproximación, las luces de pista y todos los sistemas eléctricos del aeropuerto sufrieron un apagón total y simultáneo. Una ambulancia que se desplazaba por la cabecera reportó la misma anomalía. El comandante decidió un go-around; durante la maniobra el objeto realizó un ascenso vertical instantáneo y desapareció. La energía se restableció gradualmente en los minutos siguientes.\n\nEl caso fue investigado oficialmente por la **Comisión de Estudio de Fenómenos Aeroespaciales (CEFAe)** de la Fuerza Aérea Argentina — la oficina civil-militar dedicada al estudio formal de UAP. CEFAe entrevistó al comandante, primer oficial, tripulación de cabina, controladores de torre y testigos terrestres; analizó los registros eléctricos del aeropuerto; y emitió un informe público concluyendo que el caso no podía explicarse con fenómenos atmosféricos o falla técnica conocida.",
+  "whatHappened_en": "On July 31, 1995, Aerolíneas Argentinas flight AR 674 — a Boeing 727 from Buenos Aires — was on final approach to Bariloche's Teniente Luis Candelaria International Airport when Captain Jorge Polanco and his first officer reported by radio a luminous disc-shaped object escorting the aircraft off the starboard side at constant speed and altitude.\n\nDuring approach, the runway lights and all airport electrical systems suffered a total, simultaneous blackout. An ambulance moving along the threshold reported the same anomaly. The captain initiated a go-around; during the maneuver the object made an instantaneous vertical ascent and vanished. Power was gradually restored over the following minutes.\n\nThe case was officially investigated by the **Comisión de Estudio de Fenómenos Aeroespaciales (CEFAe)** of the Argentine Air Force — the joint civil-military office for formal UAP study. CEFAe interviewed the captain, first officer, cabin crew, tower controllers and ground witnesses; analyzed the airport's electrical records; and issued a public report concluding the case could not be explained by known atmospheric phenomena or technical failure.",
+  "whyMatters": "Es uno de los pocos casos sudamericanos con investigación formal de una agencia gubernamental dedicada (CEFAe), expediente público desclasificado, y correlación temporal entre la observación del objeto y una falla eléctrica masiva documentada independientemente por la empresa eléctrica local. Cumple los tres criterios clásicos de caso institucional: testigos múltiples profesionales, paper trail verificable, y ausencia de explicación convencional documentada.",
+  "whyMatters_en": "One of the few South American cases with a formal investigation by a dedicated government agency (CEFAe), a public declassified file, and temporal correlation between the object observation and a massive electrical failure independently documented by the local utility. Meets the three classic institutional case criteria: multiple professional witnesses, verifiable paper trail, and absence of documented conventional explanation.",
+  "evidence": [
+    "Informe oficial CEFAe (FAA) con testimonios juramentados de Polanco, primer oficial y tripulación",
+    "Registros eléctricos del aeropuerto documentando el apagón sincronizado",
+    "Testimonio independiente de personal de la ambulancia presente en pista",
+    "Confirmación radial entre tripulación y torre durante el evento"
+  ],
+  "evidence_en": [
+    "Official CEFAe (FAA) report with sworn testimony from Polanco, first officer and crew",
+    "Airport electrical records documenting the synchronized blackout",
+    "Independent testimony from ambulance personnel on the runway",
+    "Radio confirmation between crew and tower during the event"
+  ],
+  "sources": [
+    {
+      "name": "CEFAe — Informe del Caso Bariloche (Fuerza Aérea Argentina)",
+      "url": "https://www.argentina.gob.ar/fuerza-aerea/cefae",
+      "note": "Oficina oficial de estudios aeroespaciales"
+    },
+    {
+      "name": "Banchs, R. — El caso Bariloche (Ediciones B, 1996)",
+      "note": "Investigación civil contemporánea"
+    },
+    {
+      "name": "Cobertura La Nación, agosto 1995",
+      "url": "https://www.lanacion.com.ar"
+    }
+  ]
+}

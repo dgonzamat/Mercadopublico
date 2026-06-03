@@ -1,0 +1,52 @@
+{
+  "id": "dalnegorsk-1986",
+  "num": 68,
+  "name": "Dalnegorsk · Altura 611",
+  "year_start": 1986,
+  "country": "RU",
+  "country_name": "Rusia",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 44.55,
+    "lng": 135.60,
+    "place": "Cerro Izvestkovaya (Altura 611), Primorsky"
+  },
+  "tier": "A",
+  "probability": 70,
+  "summary": "Esfera metálica se estrella sobre cerro siberiano; Academia de Ciencias soviética analiza residuos con aleaciones anómalas.",
+  "summary_en": "Metallic sphere crashes on Siberian hill; Soviet Academy of Sciences analyzes residues with anomalous alloys.",
+  "patterns": [
+    "8a",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El 29 de enero de 1986, alrededor de las 19:55 hora local, múltiples testigos en la ciudad minera de Dalnegorsk (Lejano Oriente soviético) observaron un objeto esférico rojizo, del tamaño aproximado de un automóvil, descender en trayectoria controlada hasta impactar contra la cumbre del Izvestkovaya — conocido localmente como \"Altura 611\". El impacto produjo un destello brillante pero sin sonido de explosión convencional. El objeto fue visible durante aproximadamente una hora en estado luminoso antes de extinguirse.\n\nEl Far Eastern Branch de la **Academia de Ciencias de la URSS** desplegó al físico Valeriy Dvuzhilny y un equipo científico al sitio durante las semanas siguientes. Recolectaron tres tipos de residuos materiales en la zona de impacto:\n\n- **Mallas finas** de filamentos metálicos entrelazados\n- **Esferas oscuras** del tamaño de cabezas de alfiler\n- **\"Caña\" vítrea** de aspecto cristalino\n\nLos análisis posteriores en laboratorios soviéticos (incluyendo el Instituto Aerodinámico de Khabarovsk) reportaron composiciones inusuales: aleaciones de hierro y silicio en proporciones no estándar, presencia de tierras raras en concentraciones improbables para origen natural local, y estructuras metalográficas que los investigadores no lograron replicar con procesos industriales conocidos. Los resultados fueron publicados en revistas científicas soviéticas y permanecen disponibles públicamente.",
+  "whatHappened_en": "On January 29, 1986, around 19:55 local time, multiple witnesses in the mining town of Dalnegorsk (Soviet Far East) observed a reddish spherical object roughly the size of a car descend on a controlled trajectory until it impacted the summit of Izvestkovaya — known locally as 'Altura 611'. The impact produced a bright flash but no conventional explosion sound. The object remained visible in a luminous state for about an hour before extinguishing.\n\nThe Far Eastern Branch of the **USSR Academy of Sciences** deployed physicist Valeriy Dvuzhilny and a scientific team to the site over the following weeks. They collected three types of material residues from the impact zone:\n\n- **Fine meshes** of interwoven metallic filaments\n- **Dark spheres** the size of pinheads\n- **Glassy 'reed'** of crystalline appearance\n\nLater analysis in Soviet laboratories (including the Khabarovsk Aerodynamic Institute) reported unusual compositions: iron-silicon alloys in non-standard proportions, rare earths in concentrations improbable for the local natural origin, and metallographic structures the researchers could not replicate with known industrial processes. The results were published in Soviet scientific journals and remain publicly available.",
+  "whyMatters": "Junto con Trans-en-Provence 1981, es uno de los pocos casos UAP con análisis científico institucional sobre material físico recuperado in situ. La participación directa del aparato académico soviético — no de una agencia militar o de inteligencia — y la publicación abierta de resultados en revistas peer-reviewed lo distinguen del patrón habitual de \"crash retrieval clasificado\". El material sigue archivado y disponible para análisis comparativos.",
+  "whyMatters_en": "Together with Trans-en-Provence 1981, one of the few UAP cases with institutional scientific analysis of physical material recovered in situ. The direct involvement of the Soviet academic apparatus — not a military or intelligence agency — and the open publication of results in peer-reviewed journals distinguishes it from the usual 'classified crash retrieval' pattern. The material remains archived and available for comparative analysis.",
+  "evidence": [
+    "Material recolectado y catalogado por Far Eastern Branch — Academia de Ciencias URSS",
+    "Análisis metalográfico publicado en revistas científicas soviéticas (1987-1990)",
+    "Mediciones radiométricas y magnéticas in situ documentadas por Dvuzhilny et al.",
+    "Múltiples testigos visuales con triangulación de trayectoria desde la ciudad de Dalnegorsk"
+  ],
+  "evidence_en": [
+    "Material collected and catalogued by Far Eastern Branch — USSR Academy of Sciences",
+    "Metallographic analysis published in Soviet scientific journals (1987-1990)",
+    "On-site radiometric and magnetic measurements documented by Dvuzhilny et al.",
+    "Multiple visual witnesses with triangulated trajectory from the city of Dalnegorsk"
+  ],
+  "sources": [
+    {
+      "name": "Dvuzhilny, V. — Dalnegorsk Incident (publicación Academia de Ciencias)",
+      "note": "Físico principal de la investigación"
+    },
+    {
+      "name": "Journal of Scientific Exploration — Dalnegorsk material analysis review",
+      "url": "https://www.scientificexploration.org"
+    },
+    {
+      "name": "Mosk Mussorgsky/Vorobyev — análisis metalográfico (Khabarovsk Aero Institute)"
+    }
+  ]
+}

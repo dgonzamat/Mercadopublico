@@ -1,0 +1,54 @@
+{
+  "id": "chulucanas-2001",
+  "num": 66,
+  "name": "Chulucanas · Oleada DIFAA",
+  "year_start": 2001,
+  "country": "PE",
+  "country_name": "Perú",
+  "flag": "🇵🇪",
+  "location": {
+    "lat": -5.10,
+    "lng": -80.16,
+    "place": "Chulucanas, Piura"
+  },
+  "tier": "A",
+  "probability": 72,
+  "summary": "Objetos naranjas multi-testigo se separan en esferas y se recombinan; estudio oficial activo de la DIFAA.",
+  "summary_en": "Multi-witness orange objects split into spheres and recombine; active official DIFAA study.",
+  "patterns": [
+    "8b",
+    "8e",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "Durante octubre de 2001, cientos de habitantes del distrito de Chulucanas (región Piura, norte de Perú) reportaron una oleada sostenida de objetos esféricos color naranja maniobrando en silencio sobre el cerro Mawi-Pucalá. Los avistamientos se repitieron en noches consecutivas y fueron filmados por testigos civiles, autoridades locales y un equipo de noticias.\n\nEl rasgo distintivo del caso es la \"fisión\" observada: el objeto primario se separaba en varias esferas más pequeñas que se desplazaban en patrones coordinados antes de recombinarse en un único cuerpo. Este comportamiento se repitió en múltiples noches y fue documentado por más de una cámara.\n\nEl **Departamento de Investigación de Fenómenos Aéreos Anómalos (DIFAA)** de la Fuerza Aérea del Perú — creado en 2001 precisamente para coordinar estudios oficiales sobre UAP — tomó el caso como prioridad y desplegó investigadores al sitio. DIFAA recopiló filmaciones, entrevistó testigos, analizó material audiovisual y mantiene el caso como referencia metodológica de su programa. El expediente nunca fue cerrado con explicación convencional.",
+  "whatHappened_en": "During October 2001, hundreds of residents of the Chulucanas district (Piura region, northern Peru) reported a sustained wave of orange spherical objects maneuvering silently over the Mawi-Pucalá hill. Sightings repeated on consecutive nights and were filmed by civilian witnesses, local authorities and a news crew.\n\nThe distinctive feature of the case is the observed 'fission': the primary object would split into several smaller spheres that moved in coordinated patterns before recombining into a single body. This behavior repeated on multiple nights and was documented on more than one camera.\n\nThe **Departamento de Investigación de Fenómenos Aéreos Anómalos (DIFAA)** of the Peruvian Air Force — created in 2001 precisely to coordinate official UAP studies — took the case as priority and deployed investigators to the site. DIFAA collected footage, interviewed witnesses, analyzed audiovisual material and keeps the case as a methodological reference for its program. The file was never closed with a conventional explanation.",
+  "whyMatters": "Es uno de los pocos casos UAP en que un Estado mantuvo durante años una agencia gubernamental dedicada (DIFAA dentro de la Fuerza Aérea del Perú), con personal asignado y presupuesto operativo, examinando un mismo conjunto de eventos. Eso lo convierte en referencia comparable a CEFAe en Argentina y al programa francés GEIPAN — una de las pocas validaciones institucionales sostenidas del fenómeno fuera del eje EE.UU./URSS.",
+  "whyMatters_en": "One of the few UAP cases where a state maintained, for years, a dedicated government agency (DIFAA inside the Peruvian Air Force), with assigned personnel and operating budget, examining the same set of events. That makes it a reference comparable to CEFAe in Argentina and France's GEIPAN — one of the few sustained institutional validations of the phenomenon outside the US/USSR axis.",
+  "evidence": [
+    "Filmaciones múltiples coordinadas archivadas por DIFAA (FAP)",
+    "Testimonios juramentados de autoridades locales (alcalde, policía nacional)",
+    "Equipo periodístico de canal nacional documentó eventos en directo",
+    "Patrón 'fisión-fusión' repetido en noches sucesivas registrado por cámaras independientes"
+  ],
+  "evidence_en": [
+    "Multiple coordinated recordings archived by DIFAA (FAP)",
+    "Sworn testimony from local authorities (mayor, national police)",
+    "National television news crew documented events live",
+    "'Fission-fusion' pattern repeated on successive nights captured by independent cameras"
+  ],
+  "sources": [
+    {
+      "name": "DIFAA — Fuerza Aérea del Perú",
+      "url": "https://www.fap.mil.pe",
+      "note": "Oficina oficial de investigación de fenómenos aéreos anómalos"
+    },
+    {
+      "name": "Llerena, A. — Informe DIFAA Chulucanas (2002)",
+      "note": "Investigador principal asignado por la FAP"
+    },
+    {
+      "name": "Cobertura Canal N, octubre 2001"
+    }
+  ]
+}
