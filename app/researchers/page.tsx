@@ -1,4 +1,5 @@
 import { researchers, getFramework } from "@/lib/data";
+import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
@@ -50,8 +51,8 @@ export default function ResearchersPage() {
             es={
               <>
                 Investigadores, pilotos, congresistas, periodistas y filósofos
-                religiosos. Las 22 personas que sostienen el discurso UAP
-                sin convertirse en celebridades de feria. Todas en{" "}
+                religiosos. Las {STATS.researchers} personas que sostienen el
+                discurso UAP sin convertirse en celebridades de feria. Todas en{" "}
                 <strong className="text-text">
                   riesgo personal, político o profesional
                 </strong>{" "}
@@ -61,7 +62,7 @@ export default function ResearchersPage() {
             en={
               <>
                 Researchers, pilots, congresspeople, journalists, and
-                religious philosophers. The 22 people who sustain the UAP
+                religious philosophers. The {STATS.researchers} people who sustain the UAP
                 discourse without turning into carnival celebrities. All
                 taking{" "}
                 <strong className="text-text">

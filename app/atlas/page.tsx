@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
-import { cases, patterns } from "@/lib/data";
+import { patterns } from "@/lib/data";
+import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 const WorldMap = dynamic(() => import("@/components/WorldMap"), {
@@ -13,14 +14,10 @@ const WorldMap = dynamic(() => import("@/components/WorldMap"), {
 
 export const metadata = {
   title: "Atlas · UAP",
-  description: "Global map of institutional UAP cases 1947-2026",
+  description: `Global map of ${STATS.cases} institutional UAP cases ${STATS.startYear}-${STATS.endYear}`,
 };
 
 export default function AtlasPage() {
-  const tierS = cases.filter((c) => c.tier === "S").length;
-  const tierA = cases.filter((c) => c.tier === "A").length;
-  const tierB = cases.filter((c) => c.tier === "B").length;
-
   return (
     <div className="space-y-6">
       <header>
@@ -32,8 +29,8 @@ export default function AtlasPage() {
         </h1>
         <p className="mt-2 text-muted">
           <T
-            es={`${cases.length} casos georeferenciados. Si fuera fenómeno gringo, la mancha estaría sobre Nevada. Mirá dónde realmente está. Click un marcador para ver el caso.`}
-            en={`${cases.length} georeferenced cases. If it were a US-only phenomenon, the cluster would be over Nevada. Look at where it actually is. Click a marker to see the case.`}
+            es={`${STATS.cases} casos georeferenciados. Si fuera fenómeno gringo, la mancha estaría sobre Nevada. Mirá dónde realmente está. Click un marcador para ver el caso.`}
+            en={`${STATS.cases} georeferenced cases. If it were a US-only phenomenon, the cluster would be over Nevada. Look at where it actually is. Click a marker to see the case.`}
           />
         </p>
       </header>
@@ -41,18 +38,18 @@ export default function AtlasPage() {
       <div className="flex flex-wrap gap-3 text-xs">
         <Legend
           color="#8b0000"
-          es={`Sólido (S) · ${tierS} casos`}
-          en={`Solid (S) · ${tierS} cases`}
+          es={`Sólido (S) · ${STATS.tierS} casos`}
+          en={`Solid (S) · ${STATS.tierS} cases`}
         />
         <Legend
           color="#b86b1f"
-          es={`Aceptable (A) · ${tierA} casos`}
-          en={`Acceptable (A) · ${tierA} cases`}
+          es={`Aceptable (A) · ${STATS.tierA} casos`}
+          en={`Acceptable (A) · ${STATS.tierA} cases`}
         />
         <Legend
           color="#1e4f8b"
-          es={`Folklórico (B) · ${tierB} casos`}
-          en={`Folkloric (B) · ${tierB} cases`}
+          es={`Folklórico (B) · ${STATS.tierB} casos`}
+          en={`Folkloric (B) · ${STATS.tierB} cases`}
         />
       </div>
 
@@ -63,8 +60,8 @@ export default function AtlasPage() {
       <section>
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
           <T
-            es={`Patrones documentados (${patterns.length})`}
-            en={`Documented patterns (${patterns.length})`}
+            es={`Patrones documentados (${STATS.patterns})`}
+            en={`Documented patterns (${STATS.patterns})`}
           />
         </h2>
         <div className="mt-3 flex flex-wrap gap-2">
