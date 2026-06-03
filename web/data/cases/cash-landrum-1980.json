@@ -1,0 +1,66 @@
+{
+  "id": "cash-landrum-1980",
+  "num": 24,
+  "name": "Cash-Landrum",
+  "year_start": 1980,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 30.13,
+    "lng": -94.93,
+    "place": "Huffman, Texas"
+  },
+  "tier": "A",
+  "probability": 65,
+  "summary": "Quemaduras radiación severa, cáncer, records médicos",
+  "summary_en": "Severe radiation burns, cancer, medical records",
+  "patterns": [
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "El 29 de diciembre de 1980, alrededor de las 21:00, Betty Cash (51), Vickie Landrum (57) y el nieto de esta, Colby (7), regresaban en automóvil por una carretera rural cerca de Huffman, Texas. Avistaron un objeto diamantino brillante descendiendo en la carretera frente a ellos. Cash detuvo el vehículo. El objeto emitía llamas hacia abajo y un calor intenso que sintieron pese al parabrisas.\n\nDurante aproximadamente 20 minutos observaron el objeto, luego veintitrés helicópteros militares CH-47 Chinook llegaron y aparentemente escoltaron al objeto fuera del área. Cash, al exterior del vehículo intentando observar mejor, recibió la mayor exposición; las tres víctimas presentaron sintomatología compatible con síndrome de radiación aguda: quemaduras de primer y segundo grado, pérdida de pelo, vómitos, ampollas, lesiones oculares.\n\nCash fue hospitalizada durante semanas. Sus registros médicos del Parkway Hospital están preservados. La investigación civil incluyó al ingeniero John Schuessler. El gobierno estadounidense fue demandado bajo el Federal Tort Claims Act; el caso fue desestimado en 1986 porque el gobierno negó propiedad u operación del objeto o de los CH-47, declaración bajo juramento del Pentágono. Cash murió en 1998 de cáncer; Landrum en 2007. El caso es uno de los pocos casos del corpus con sintomatología radiológica documentada hospitalariamente, sin explicación oficial.",
+  "whatHappened_en": "On December 29, 1980, around 21:00, Betty Cash (51), Vickie Landrum (57), and Landrum's grandson Colby (7) were driving back along a rural road near Huffman, Texas. They sighted a bright diamond-shaped object descending onto the road in front of them. Cash stopped the vehicle. The object emitted flames downward and intense heat that they felt despite the windshield.\n\nFor about 20 minutes they observed the object, after which twenty-three CH-47 Chinook military helicopters arrived and appeared to escort the object out of the area. Cash, outside the vehicle trying to get a better look, received the highest exposure; all three victims developed symptoms consistent with acute radiation syndrome: first- and second-degree burns, hair loss, vomiting, blisters, ocular lesions.\n\nCash was hospitalized for weeks. Her medical records from Parkway Hospital are preserved. The civilian investigation included engineer John Schuessler. The U.S. government was sued under the Federal Tort Claims Act; the case was dismissed in 1986 after the government denied ownership or operation of the object or the CH-47s, in a sworn Pentagon statement. Cash died of cancer in 1998; Landrum in 2007. It is one of the few corpus cases with radiological symptomatology documented in a hospital setting, with no official explanation.",
+  "whyMatters": "Único caso UAP estadounidense con: (a) síndrome de radiación aguda documentado hospitalariamente en tres víctimas con diferentes niveles de exposición consistentes con la geometría reportada, (b) presencia de 23 helicópteros militares CH-47 confirmada por la propia narrativa, (c) demanda federal y declaración bajo juramento del Pentágono negando operación. La combinación de evidencia médica + presencia militar + negación institucional formal preserva el caso como anomalía operacional irresuelta.",
+  "whyMatters_en": "The only U.S. UAP case with: (a) acute radiation syndrome documented in hospital records across three victims, with exposure levels consistent with the reported geometry, (b) the presence of 23 CH-47 military helicopters confirmed by the narrative itself, (c) a federal lawsuit and sworn Pentagon statement denying operation. The combination of medical evidence + military presence + formal institutional denial preserves the case as an unresolved operational anomaly.",
+  "evidence": [
+    "Registros médicos Parkway Hospital de Betty Cash (semanas hospitalización)",
+    "Documentación del ingeniero John Schuessler (investigador civil profesional)",
+    "Federal Tort Claims Act lawsuit + declaración Pentagon bajo juramento",
+    "Sintomatología radiación aguda consistente con geometría exposición de tres víctimas"
+  ],
+  "evidence_en": [
+    "Parkway Hospital medical records for Betty Cash (weeks of hospitalization)",
+    "Documentation by engineer John Schuessler (professional civilian investigator)",
+    "Federal Tort Claims Act lawsuit + sworn Pentagon statement",
+    "Acute radiation symptomatology consistent with the exposure geometry of the three victims"
+  ],
+  "sources": [
+    {
+      "name": "Schuessler, J. — The Cash-Landrum UFO Incident (1998)",
+      "note": "Investigación de referencia"
+    },
+    {
+      "name": "Federal Court Records — Cash v. United States (1986)",
+      "url": "https://www.uscourts.gov/"
+    },
+    {
+      "name": "MUFON UFO Journal — Cash-Landrum (1981-1986)",
+      "note": "Cobertura sostenida durante caso judicial"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Schuessler, J. — The Cash-Landrum UFO Incident (1998)",
+      "note": "Reference investigation"
+    },
+    {
+      "name": "Federal Court Records — Cash v. United States (1986)",
+      "url": "https://www.uscourts.gov/"
+    },
+    {
+      "name": "MUFON UFO Journal — Cash-Landrum (1981-1986)",
+      "note": "Sustained coverage during the court case"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "canary-islands-1976",
+  "num": 59,
+  "name": "Islas Canarias",
+  "year_start": 1976,
+  "country": "ES",
+  "country_name": "España",
+  "flag": "🇪🇸",
+  "location": {
+    "lat": 28.29,
+    "lng": -16.62,
+    "place": "Islas Canarias"
+  },
+  "tier": "S",
+  "probability": 72,
+  "summary": "40 min multi-isla + 100+ págs declassified Ejército del Aire (1994) + precedente disclosure España",
+  "summary_en": "40 min multi-island + 100+ pages declassified Spanish Air Force (1994) + Spanish disclosure precedent",
+  "patterns": [
+    "8e",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El 22 de junio de 1976 entre las 21:27 y 22:18, observadores en Tenerife, La Palma, La Gomera y Gran Canaria reportaron un objeto luminoso esférico de gran tamaño en el cielo nocturno. Las observaciones fueron simultáneas desde múltiples islas con líneas de vista no superpuestas — descartando explicaciones locales atmosféricas.\n\nEl Ejército del Aire español inició una investigación formal bajo el grupo de Mando Aéreo de Canarias (MACAN). Los testigos incluyeron médicos, controladores aéreos del aeropuerto de Los Rodeos, marinos del buque Atrevida (Armada Española) que reportó el objeto por radio, y pilotos comerciales. El comandante del buque Atrevida describió 'un objeto luminoso ámbar-amarillo que emanaba un halo azulado violáceo' que pasó cerca y luego ascendió verticalmente a velocidad extrema.\n\nLa investigación oficial española recogió testimonios juramentados, declaraciones bajo oath, y análisis de telescopios del Observatorio del Teide. El archivo se mantuvo clasificado hasta 1994, cuando el Ministerio de Defensa español inició una política de disclosure progresiva bajo la cual >100 páginas de la investigación Canarias fueron desclasificadas, junto con archivos de otros 80+ casos UAP españoles. Este fue el primer programa de disclosure gubernamental formal de cualquier país europeo.",
+  "whatHappened_en": "On June 22, 1976 between 21:27 and 22:18, observers on Tenerife, La Palma, La Gomera and Gran Canaria reported a large luminous spherical object in the night sky. The observations were simultaneous from multiple islands with non-overlapping lines of sight — ruling out local atmospheric explanations.\n\nThe Spanish Air Force initiated a formal investigation under the Canary Islands Air Command (MACAN). Witnesses included doctors, air traffic controllers at Los Rodeos airport, sailors aboard the ship Atrevida (Spanish Navy) which reported the object by radio, and commercial pilots. The Atrevida's captain described 'a luminous amber-yellow object that emanated a bluish-violet halo' that passed close and then ascended vertically at extreme velocity.\n\nThe official Spanish investigation collected sworn testimony, statements under oath, and analysis from Teide Observatory telescopes. The file remained classified until 1994, when the Spanish Ministry of Defence initiated a progressive disclosure policy under which >100 pages of the Canary Islands investigation were declassified, along with files on 80+ other Spanish UAP cases. This was the first formal government disclosure program of any European country.",
+  "whyMatters": "Primer caso UAP donde un gobierno europeo (España) inició un programa formal de disclosure progresiva en 1994 — precedente directo de las acciones posteriores de Francia (COMETA 1999), Reino Unido (Pope/MoD 2008) y Estados Unidos (AATIP 2017). El archivo Canarias es el caso central del programa por la calidad multi-isla, multi-testigo, multi-institución (Ejército del Aire, Armada, controladores ATC, observatorio astronómico) de la evidencia.",
+  "whyMatters_en": "The first UAP case where a European government (Spain) initiated a formal progressive disclosure program in 1994 — direct precedent for the later actions of France (COMETA 1999), United Kingdom (Pope/MoD 2008), and the United States (AATIP 2017). The Canary Islands file is the central case of the program because of the multi-island, multi-witness, multi-institutional (Air Force, Navy, ATC controllers, astronomical observatory) quality of the evidence.",
+  "evidence": [
+    "Archivo declassified Ejército del Aire (1994) — >100 págs de investigación Canarias",
+    "Reporte radio del buque Atrevida, Armada Española (22 junio 1976)",
+    "Declaraciones juramentadas de controladores ATC Los Rodeos",
+    "Análisis del Observatorio del Teide (Tenerife)",
+    "Catálogo académico de V.J. Ballester Olmos (referencia estándar del caso)"
+  ],
+  "evidence_en": [
+    "Declassified Spanish Air Force file (1994) — >100 pages of Canary Islands investigation",
+    "Radio report from Atrevida ship, Spanish Navy (June 22, 1976)",
+    "Sworn statements from ATC controllers at Los Rodeos",
+    "Teide Observatory analysis (Tenerife)",
+    "Academic catalog by V.J. Ballester Olmos (standard reference for the case)"
+  ],
+  "sources": [
+    {
+      "name": "Ministerio de Defensa España — Archivo OVNI declassified (1994)",
+      "url": "https://www.ejercitodelaire.defensa.gob.es/"
+    },
+    {
+      "name": "Ballester Olmos, V.J. — A Catalogue of 200 Type-I UFO Events in Spain and Portugal (1976)"
+    },
+    {
+      "name": "Wikipedia: UFO sightings in the Canary Islands",
+      "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_the_Canary_Islands"
+    }
+  ]
+}
