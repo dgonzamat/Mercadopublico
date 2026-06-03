@@ -166,7 +166,7 @@ export function IcdProbabilityChart() {
                 aria-valuemin={h.effectiveIcd.min}
                 aria-valuemax={h.effectiveIcd.max}
                 aria-valuenow={Math.round((h.effectiveIcd.min + h.effectiveIcd.max) / 2)}
-                aria-valuetext={`${h.label}: ${h.effectiveIcd.labelEs}. Evidencia: ${h.evidence.caseCount} casos, ${h.evidence.patternCount} patrones.`}
+                aria-valuetext={`${h.label}: ${h.effectiveIcd.labelEs}. Evidencia: ${h.supportingCases} casos contribuyen, ${h.evidence.patternCount} patrones.`}
               >
                 <div
                   className="absolute h-full"
@@ -211,11 +211,11 @@ export function IcdProbabilityChart() {
             </div>
 
             <div className="col-span-2 flex items-baseline gap-6 font-mono text-xs uppercase tracking-wider text-muted md:col-span-1 md:flex-col md:items-end md:gap-1 md:text-right">
-              {h.evidence.caseCount > 0 ? (
+              {h.supportingCases > 0 ? (
                 <>
                   <div>
                     <span className="font-display text-3xl text-text md:text-4xl">
-                      {h.evidence.caseCount}
+                      {h.supportingCases}
                     </span>{" "}
                     <T es="casos" en="cases" />
                   </div>

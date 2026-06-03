@@ -89,6 +89,13 @@
       "strength": "substantial",
       "rationale": "Efectos coordinados de guerra electrónica con shutdown simultáneo de diez misiles + reportes visuales del objeto luminoso son incompatibles con cualquier fenómeno atmosférico conocido.",
       "rationaleEn": "Coordinated EW effects with simultaneous shutdown of ten missiles + visual reports of the luminous object are incompatible with any known atmospheric phenomenon."
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Patrón 8k de interferencia EM en sistemas Minuteman — efecto físico EM remoto en hardware nuclear califica como signal débil de física exótica",
+      "rationaleEn": "Pattern 8k of EM interference on Minuteman systems — remote EM physical effect on nuclear hardware qualifies as a weak signal of exotic physics"
     }
   ]
 }

@@ -97,6 +97,13 @@
       "strength": "substantial",
       "rationale": "Falla EM sincronizada en dos aeronaves distintas, recuperable al alejarse, con radar lock confirmado: ningún fenómeno atmosférico conocido (plasma, sprite, ball lightning, ionización) produce ese acoplamiento electromagnético selectivo.",
       "rationaleEn": "Synchronized EM failure across two distinct aircraft, recoverable upon disengagement, with confirmed radar lock: no known atmospheric phenomenon (plasma, sprite, ball lightning, ionization) produces that selective electromagnetic coupling."
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Patrón 8k de interferencia EM sincronizada en dos aeronaves distintas es signal débil pero presente de física exótica",
+      "rationaleEn": "Pattern 8k of synchronized EM interference across two distinct aircraft is a weak but present signal of exotic physics"
     }
   ]
 }
