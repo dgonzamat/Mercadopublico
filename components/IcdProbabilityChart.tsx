@@ -77,36 +77,39 @@ export function IcdProbabilityChart() {
           <T
             es={
               <>
-                Las {rows.length} hipótesis son <strong>proposiciones independientes</strong>:
-                cada P responde "¿es esto cierto de al menos algunos casos del corpus?". Las
-                probabilidades <strong>NO suman 100%</strong> — los componentes pueden ser
-                parcialmente verdaderos en simultáneo. Calibradas vía{" "}
+                Cada explicación se mide por separado, no compite con las otras.
+                Por eso los porcentajes <strong>pueden sumar más de 100</strong>{" "}
+                — pueden ser varias cosas al mismo tiempo. La etiqueta
+                (<em>Casi cierto</em>, <em>Pareja</em>, <em>Muy improbable</em>)
+                viene del{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent hover:underline"
                 >
-                  etiqueta ICD-203
+                  mismo estándar
                 </a>{" "}
-                — el estándar USIC para juicio analítico sin modelo formal.
+                que usan los analistas de inteligencia cuando no hay un modelo
+                matemático.
               </>
             }
             en={
               <>
-                The {rows.length} hypotheses are <strong>independent propositions</strong>:
-                each P answers "is this true of at least some corpus cases?".
-                Probabilities <strong>do NOT sum to 100%</strong> — components can be
-                partially true simultaneously. Calibrated via{" "}
+                Each explanation is measured on its own — they don&apos;t compete.
+                That&apos;s why the percentages <strong>can sum to more than 100</strong>{" "}
+                — they can be several things at once. The label
+                (<em>Almost certain</em>, <em>Roughly even</em>,{" "}
+                <em>Very unlikely</em>) comes from{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent hover:underline"
                 >
-                  ICD-203 label
+                  the same standard
                 </a>{" "}
-                — the USIC standard for analytical judgment without a formal
+                intelligence analysts use when there&apos;s no mathematical
                 model.
               </>
             }

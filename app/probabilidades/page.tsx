@@ -27,20 +27,19 @@ export default function ProbabilidadesPage() {
         </Eyebrow>
         <H1>
           <T
-            es="8 hipótesis. Una sola que importa de verdad."
-            en="8 hypotheses. Only one that actually matters."
+            es="¿Qué tan probable es cada explicación de los UAP?"
+            en="How likely is each explanation of UAP?"
           />
         </H1>
         <Lede className="text-muted">
           <T
             es={
               <>
-                Hay 8 explicaciones posibles para lo que pasa en el cielo.
-                Siete son fáciles de calibrar — o casi ciertas, o casi
-                imposibles. Una es donde está la{" "}
-                <strong className="text-text">frontera analítica real</strong>,
-                y la mayoría del debate público gira alrededor de ella sin
-                saberlo. Calibradas vía{" "}
+                Hay 8 explicaciones posibles. Siete son fáciles de evaluar —
+                casi seguro que sí, o casi seguro que no. Una sola se queda{" "}
+                <strong className="text-text">atascada en el medio</strong>:
+                tan probable como improbable. Ahí es donde realmente vive el
+                debate. Calibradas con{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -49,17 +48,16 @@ export default function ProbabilidadesPage() {
                 >
                   ICD-203
                 </a>
-                .
+                , el estándar que usan los analistas de inteligencia.
               </>
             }
             en={
               <>
-                There are 8 possible explanations for what&apos;s happening in
-                the sky. Seven are easy to calibrate — either almost certain
-                or almost impossible. One is where the{" "}
-                <strong className="text-text">actual analytical frontier</strong>{" "}
-                lives, and most of the public debate orbits around it without
-                realizing. Calibrated via{" "}
+                There are 8 possible explanations. Seven are easy to evaluate
+                — almost certain yes, or almost certain no. Only one stays{" "}
+                <strong className="text-text">stuck in the middle</strong>:
+                as likely as it is unlikely. That&apos;s where the real
+                debate lives. Calibrated with{" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -68,7 +66,7 @@ export default function ProbabilidadesPage() {
                 >
                   ICD-203
                 </a>
-                .
+                , the standard intelligence analysts use.
               </>
             }
           />
@@ -81,12 +79,12 @@ export default function ProbabilidadesPage() {
       {/* ─────────── FRAMING (movió desde el final — ahora es bisagra) ─────────── */}
       <section className="space-y-6 border-y-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
         <Eyebrow>
-          <T es="La bisagra del análisis" en="The analytical hinge" />
+          <T es="Donde se traba el debate" en="Where the debate gets stuck" />
         </Eyebrow>
         <H2>
           <T
-            es="La frontera analítica real está en una hipótesis, no en ocho"
-            en="The real analytical frontier lives in one hypothesis, not eight"
+            es="El punto donde el corpus no puede decidir"
+            en="The point where the corpus can't decide"
           />
         </H2>
         <Body>
@@ -94,26 +92,26 @@ export default function ProbabilidadesPage() {
             es={
               <>
                 Siete de las ocho hipótesis están en bandas extremas — casi
-                ciertas o muy improbables — y se calibran fácil porque los
-                hechos están claramente de un lado. Solo{" "}
+                seguro que sí, o casi seguro que no — y se evalúan fácil
+                porque los hechos están claramente de un lado. Solo{" "}
                 <strong className="text-accent">H5 (entidades no humanas)</strong>{" "}
-                cae en Probabilidad Pareja 45–55%. Ahí el corpus deja de poder
-                decidir, y ahí gira todo el debate público real. Cuando alguien
-                dice <em>"podrían ser aliens"</em> o <em>"no son aliens"</em>,
-                está discutiendo H5. Las otras 7 son anestesia conceptual.
+                queda 50-50. Ahí el corpus deja de poder decidir. Cuando
+                alguien dice <em>"podrían ser aliens"</em> o{" "}
+                <em>"no son aliens"</em>, está discutiendo H5 sin saberlo.
+                Las otras 7 ya están resueltas — son ruido en la discusión.
               </>
             }
             en={
               <>
                 Seven of the eight hypotheses fall in extreme bands — almost
-                certain or very unlikely — and calibrate easily because facts
-                clearly land on one side. Only{" "}
+                certain yes or almost certain no — and resolve easily because
+                facts clearly land on one side. Only{" "}
                 <strong className="text-accent">H5 (non-human entities)</strong>{" "}
-                lands at Roughly Even 45–55%. There the corpus stops being able
-                to decide, and there spins all the real public debate. When
-                someone says <em>"they could be aliens"</em> or{" "}
-                <em>"they're not aliens"</em>, they're arguing H5. The other 7
-                are conceptual anesthesia.
+                stays 50-50. There the corpus stops being able to decide.
+                When someone says <em>"they could be aliens"</em> or{" "}
+                <em>"they&apos;re not aliens"</em>, they&apos;re arguing H5
+                without realizing. The other 7 are already resolved — noise
+                in the discussion.
               </>
             }
           />
