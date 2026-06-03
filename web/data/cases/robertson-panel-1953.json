@@ -1,0 +1,66 @@
+{
+  "id": "robertson-panel-1953",
+  "num": 8,
+  "name": "Robertson Panel",
+  "year_start": 1953,
+  "country": "US",
+  "country_name": "Estados Unidos (CIA)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.95,
+    "lng": -77.15,
+    "place": "CIA HQ, Langley VA"
+  },
+  "tier": "S",
+  "probability": 95,
+  "summary": "CIA prescribe institucionalmente cover-up cultural",
+  "summary_en": "CIA institutionally prescribes cultural cover-up",
+  "patterns": [
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "Entre el 14 y 17 de enero de 1953, la CIA convocó en su sede de Langley a un panel de cinco científicos presidido por el físico H.P. Robertson (Caltech, ex-Manhattan Project). Los miembros incluían a Lloyd Berkner, Samuel Goudsmit, Luis Alvarez (futuro Premio Nobel de Física) y Thornton Page. El mandato del panel era evaluar la 'amenaza a la seguridad nacional' que representaba el fenómeno UFO en el contexto Guerra Fría.\n\nEl informe final, clasificado SECRET y desclasificado parcialmente en 1975, concluye que los UFOs en sí no representan amenaza física directa, pero que el interés público masivo en el fenómeno sí lo es: podría ser explotado por la URSS para saturar canales de inteligencia con falsos reportes, generando histeria pública en caso de ataque real. El panel recomendó explícitamente un programa de 'debunking' y 'education' para reducir el interés público.\n\nEl panel propuso usar canales mediáticos (incluyendo Disney y CBS), educación escolar y celebridades para normalizar la dismissión institucional del fenómeno. Estas recomendaciones fueron implementadas a través de Project Blue Book (reorientado desde Grudge), del Pentagon Public Information Office y de cooperación informal con medios.",
+  "whatHappened_en": "Between January 14 and 17, 1953, the CIA convened at its Langley headquarters a panel of five scientists chaired by physicist H.P. Robertson (Caltech, former Manhattan Project). Members included Lloyd Berkner, Samuel Goudsmit, Luis Alvarez (future Nobel laureate in Physics), and Thornton Page. The panel's mandate was to evaluate the 'national security threat' posed by the UFO phenomenon in the Cold War context.\n\nThe final report, classified SECRET and partially declassified in 1975, concludes that UFOs themselves pose no direct physical threat, but that massive public interest in the phenomenon does: it could be exploited by the USSR to saturate intelligence channels with false reports, generating public panic during a real attack. The panel explicitly recommended a 'debunking' and 'education' program to reduce public interest.\n\nThe panel proposed using media channels (including Disney and CBS), school education, and celebrities to normalize institutional dismissal of the phenomenon. These recommendations were implemented through Project Blue Book (redirected from Grudge), the Pentagon Public Information Office, and informal cooperation with the media.",
+  "whyMatters": "Caso fundacional documentando que la postura pública desinteresada-debunking de la institución estadounidense no fue resultado de ausencia de evidencia, sino producto de una recomendación deliberada de política de comunicación. El Robertson Panel es la justificación administrativa documentada de la asimetría entre lo que se sabía operacionalmente y lo que se comunicaba públicamente durante setenta años subsiguientes.",
+  "whyMatters_en": "Founding case documenting that the U.S. institution's public uninterested-debunking posture was not the result of an absence of evidence, but the product of a deliberate communications policy recommendation. The Robertson Panel is the documented administrative justification for the asymmetry between what was known operationally and what was communicated publicly for the seventy years that followed.",
+  "evidence": [
+    "Robertson Panel Report desclasificado parcialmente (1975) vía FOIA",
+    "Recomendación textual de 'debunking' y 'education' como política deliberada",
+    "Implementación posterior documentada en Project Blue Book (Grudge → Blue Book transition)",
+    "Cinco firmantes profesionales con perfil científico de alto nivel (Alvarez, etc.)"
+  ],
+  "evidence_en": [
+    "Robertson Panel Report partially declassified (1975) via FOIA",
+    "Verbatim recommendation of 'debunking' and 'education' as deliberate policy",
+    "Subsequent implementation documented in Project Blue Book (Grudge → Blue Book transition)",
+    "Five professional signatories with high-level scientific profile (Alvarez, etc.)"
+  ],
+  "sources": [
+    {
+      "name": "Robertson Panel Report (declassified 1975)",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp78-04722a000100130001-7"
+    },
+    {
+      "name": "Durant Report — annexed summary",
+      "url": "https://www.cia.gov/readingroom/docs/CIA-RDP91-00929R000400600006-9.pdf"
+    },
+    {
+      "name": "Jacobs, D. — The UFO Controversy in America (1975)",
+      "note": "Reconstrucción histórica del impacto del panel"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Robertson Panel Report (declassified 1975)",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp78-04722a000100130001-7"
+    },
+    {
+      "name": "Durant Report — annexed summary",
+      "url": "https://www.cia.gov/readingroom/docs/CIA-RDP91-00929R000400600006-9.pdf"
+    },
+    {
+      "name": "Jacobs, D. — The UFO Controversy in America (1975)",
+      "note": "Historical reconstruction of the panel's impact"
+    }
+  ]
+}
