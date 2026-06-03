@@ -1,0 +1,67 @@
+{
+  "id": "popocatepetl-1992",
+  "num": 31,
+  "name": "Popocatépetl",
+  "year_start": 1992,
+  "country": "MX",
+  "country_name": "México",
+  "flag": "🇲🇽",
+  "location": {
+    "lat": 19.02,
+    "lng": -98.62,
+    "place": "Popocatépetl"
+  },
+  "tier": "B",
+  "probability": 60,
+  "summary": "CENAPRED continuo, ~50-200 eventos anómalos, PR053 PURSUE morfología cigarro",
+  "summary_en": "CENAPRED continuous, ~50-200 anomalous events, PR053 PURSUE cigar morphology",
+  "patterns": [
+    "8f",
+    "8g"
+  ],
+  "category": "incident",
+  "whatHappened": "El volcán Popocatépetl (5,426m, 70 km al sureste de Ciudad de México) ha sido monitoreado continuamente por el Centro Nacional de Prevención de Desastres (CENAPRED) desde 1992 con cámaras térmicas y de espectro visible. Durante este monitoreo se han registrado de 50 a 200 eventos donde objetos discoidales, cilíndricos o lineales se observan emergiendo del cráter, sobrevolando la cumbre, o aparentemente entrando al cráter.\n\nLos videos son auto-archivados por el sistema de monitoreo volcanológico (no específicamente diseñado para UAP). Casos notables incluyen el 28 de julio de 1998 (objeto cilíndrico de aproximadamente 100m de longitud descendiendo verticalmente en la fumarola), el 25 de octubre de 2012 (objeto cilíndrico saliendo del cráter durante actividad fumarólica) y eventos diarios de menor intensidad en períodos de actividad volcánica intensa.\n\nEl AARO catalogó al menos uno de estos eventos como PR053 en su release PURSUE oficial, describiendo morfología 'cigar-shaped'. Los videos están publicados por CENAPRED como parte del registro científico volcanológico — no como evidencia UAP — lo que reduce el riesgo de manipulación intencional. Análisis alternativos sugieren que algunos eventos pueden ser meteoros, satélites Iridium reflejando luz solar en atardeceres específicos, o artefactos de cámaras CCD con shutter rápido. La densidad de eventos anómalos sobre infraestructura geológica activa permanece estadísticamente significativa.",
+  "whatHappened_en": "The Popocatépetl volcano (5,426m, 70 km southeast of Mexico City) has been continuously monitored by the Centro Nacional de Prevención de Desastres (CENAPRED) since 1992 using thermal and visible-spectrum cameras. During this monitoring, 50 to 200 events have been recorded in which disc-shaped, cylindrical, or linear objects appear emerging from the crater, flying over the summit, or apparently entering the crater.\n\nThe videos are auto-archived by the volcano monitoring system (not specifically designed for UAP). Notable cases include July 28, 1998 (a cylindrical object roughly 100m long descending vertically into the fumarole), October 25, 2012 (a cylindrical object leaving the crater during fumarolic activity), and lower-intensity daily events during periods of intense volcanic activity.\n\nAARO cataloged at least one of these events as PR053 in its official PURSUE release, describing 'cigar-shaped' morphology. The videos are published by CENAPRED as part of the volcanological scientific record — not as UAP evidence — which reduces the risk of intentional manipulation. Alternative analyses suggest some events may be meteors, Iridium satellites reflecting sunlight at specific dusk conditions, or CCD camera fast-shutter artifacts. The density of anomalous events over active geological infrastructure remains statistically significant.",
+  "whyMatters": "Único corpus UAP con instrumentación continua institucional no diseñada para detectar UAP — eliminando sesgo de selección y manipulación intencional — sobre infraestructura geológica activa durante 32+ años. El reconocimiento AARO PR053 valida al menos un evento como anómalo. La hipótesis de correlación UAP/actividad volcánica (también observada en Hessdalen sobre anomalías geomagnéticas) es metodológicamente investigable.",
+  "whyMatters_en": "The only UAP corpus with continuous institutional instrumentation not designed to detect UAPs — eliminating selection bias and intentional manipulation — over active geological infrastructure for 32+ years. AARO's PR053 acknowledgment validates at least one event as anomalous. The UAP/volcanic-activity correlation hypothesis (also observed at Hessdalen over geomagnetic anomalies) is methodologically investigable.",
+  "evidence": [
+    "Cámaras CENAPRED continuas desde 1992 — corpus autogenerado",
+    "Eventos catalogados: 28 julio 1998, 25 octubre 2012, eventos múltiples 2012-2024",
+    "Designación AARO PR053 confirmando al menos un evento como anómalo",
+    "Ausencia de incentivo CENAPRED para manipular (mission es volcanología, no UAP)"
+  ],
+  "evidence_en": [
+    "Continuous CENAPRED cameras since 1992 — self-generated corpus",
+    "Cataloged events: July 28 1998, October 25 2012, multiple events 2012-2024",
+    "AARO PR053 designation confirming at least one event as anomalous",
+    "No CENAPRED incentive to manipulate (its mission is volcanology, not UAP)"
+  ],
+  "sources": [
+    {
+      "name": "CENAPRED — Monitoreo Volcánico Popocatépetl",
+      "url": "https://www.gob.mx/cenapred"
+    },
+    {
+      "name": "AARO Release PR053 (2024)",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "Maussan, J. — Compilación Popocatépetl UFO archive",
+      "note": "Cobertura periodística sostenida"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "CENAPRED — Monitoreo Volcánico Popocatépetl",
+      "url": "https://www.gob.mx/cenapred"
+    },
+    {
+      "name": "AARO Release PR053 (2024)",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "Maussan, J. — Compilación Popocatépetl UFO archive",
+      "note": "Sustained journalistic coverage"
+    }
+  ]
+}
