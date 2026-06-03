@@ -28,8 +28,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 function findPullQuote(text?: string): string | null {
   if (!text) return null;
   const patterns = [
-    /[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g,
-    /‘‘([^’]{30,240})’’|'([^']{30,240})'/g,
+    /[""]([^""]{30,240})[""]|"([^"]{30,240})"/g,
+    /''([^']{30,240})''|'([^']{30,240})'/g,
   ];
   const all: string[] = [];
   for (const re of patterns) {
