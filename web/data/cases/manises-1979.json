@@ -1,0 +1,66 @@
+{
+  "id": "manises-1979",
+  "num": 22,
+  "name": "Manises 1979",
+  "year_start": 1979,
+  "country": "ES",
+  "country_name": "España",
+  "flag": "🇪🇸",
+  "location": {
+    "lat": 39.49,
+    "lng": -0.47,
+    "place": "Manises, Valencia"
+  },
+  "tier": "S",
+  "probability": 78,
+  "summary": "TAE Supercaravelle emergencia, Mirage F-1, Spanish AF radar",
+  "summary_en": "TAE Supercaravelle emergency, Mirage F-1, Spanish AF radar",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 11 de noviembre de 1979, el vuelo TAE 421 (Supercaravelle EC-BIC) volaba de Salzburgo a Las Palmas con 109 pasajeros y siete tripulantes. Sobre Valencia, a las 23:00, el comandante Francisco Lerdo de Tejada y el copiloto observaron tres luces rojas brillantes aproximándose en curso de colisión. Las luces siguieron al avión durante varios minutos pese a maniobras evasivas.\n\nLerdo de Tejada declaró emergencia aérea y aterrizó en el Aeropuerto de Manises (Valencia) como precaución. Simultáneamente, el radar militar de Torrejón confirmó la presencia de objetos no identificados en la trayectoria del vuelo. El Mando Aéreo del Centro lanzó un Mirage F-1 desde Los Llanos (Albacete) pilotado por el Capitán Fernando Cámara, equipado con cámara fotográfica.\n\nCámara observó visualmente un objeto luminoso esférico de gran tamaño cerca de Sagunto, intentó interceptarlo tres veces y fue evadido en cada ocasión por el objeto que aceleraba a velocidades estimadas en Mach 1+. El Mirage agotó combustible y retornó a base. La radarización militar registró el evento completo. El expediente del Ejército del Aire español fue desclasificado en 1992-1995 por el Teniente General Ramón Valero Bermejo (Jefe del Estado Mayor del Aire), proceso pionero de transparencia institucional UAP en Europa que precedió por décadas la apertura estadounidense.",
+  "whatHappened_en": "On November 11, 1979, TAE flight 421 (Supercaravelle EC-BIC) was flying from Salzburg to Las Palmas with 109 passengers and seven crew. Over Valencia at 23:00, Captain Francisco Lerdo de Tejada and the first officer observed three bright red lights approaching on a collision course. The lights followed the aircraft for several minutes despite evasive maneuvers.\n\nLerdo de Tejada declared an in-flight emergency and landed at Manises Airport (Valencia) as a precaution. Simultaneously, the Torrejón military radar confirmed the presence of unidentified objects on the flight's path. The Central Air Command launched a Mirage F-1 from Los Llanos (Albacete) piloted by Captain Fernando Cámara, equipped with a camera.\n\nCámara visually observed a large luminous spherical object near Sagunto, tried to intercept it three times, and was outpaced each time by the object accelerating to estimated speeds of Mach 1+. The Mirage ran out of fuel and returned to base. Military radar recorded the full event. The Spanish Air Force file was declassified in 1992-1995 by Lieutenant General Ramón Valero Bermejo (Chief of the Air Staff), a pioneering UAP institutional transparency process in Europe that preceded U.S. disclosure by decades.",
+  "whyMatters": "Único caso europeo con: (a) emergencia aérea civil declarada por tripulación profesional, (b) confirmación radar militar terrestre paralela, (c) interceptación militar con piloto identificado nominalmente, (d) desclasificación voluntaria temprana por jefe de fuerza aérea (1992-1995). La política de transparencia del Ejército del Aire español sobre los expedientes UAP es referencia metodológica internacional.",
+  "whyMatters_en": "The only European case with: (a) a civilian in-flight emergency declared by a professional crew, (b) parallel ground military radar confirmation, (c) military interception with a named pilot, (d) early voluntary declassification by an air force chief (1992-1995). The Spanish Air Force's transparency policy on UAP files is an international methodological reference.",
+  "evidence": [
+    "Bitácora del comandante Lerdo de Tejada + reporte de emergencia aérea TAE",
+    "Radar militar Torrejón confirmando presencia de objetos no identificados",
+    "Reporte del Capitán Cámara (piloto Mirage F-1) con tres intentos de interceptación",
+    "Desclasificación voluntaria EMAE 1992-1995 — expediente público completo"
+  ],
+  "evidence_en": [
+    "Captain Lerdo de Tejada's logbook + TAE in-flight emergency report",
+    "Torrejón military radar confirming the presence of unidentified objects",
+    "Captain Cámara's report (Mirage F-1 pilot) with three interception attempts",
+    "Voluntary EMAE declassification 1992-1995 — complete public file"
+  ],
+  "sources": [
+    {
+      "name": "Ejército del Aire — Expediente Manises 1979 (desclasificado)",
+      "url": "https://www.defensa.gob.es/ejercitoaire/"
+    },
+    {
+      "name": "Ballester Olmos, V.-J. — Manises 1979 (FOTOCAT 2010)",
+      "note": "Reconstrucción técnica completa"
+    },
+    {
+      "name": "Benítez, J.J. — Erase una vez los OVNIs (1979)",
+      "note": "Cobertura periodística contemporánea"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Ejército del Aire — Expediente Manises 1979 (desclasificado)",
+      "url": "https://www.defensa.gob.es/ejercitoaire/"
+    },
+    {
+      "name": "Ballester Olmos, V.-J. — Manises 1979 (FOTOCAT 2010)",
+      "note": "Complete technical reconstruction"
+    },
+    {
+      "name": "Benítez, J.J. — Erase una vez los OVNIs (1979)",
+      "note": "Contemporary journalistic coverage"
+    }
+  ]
+}

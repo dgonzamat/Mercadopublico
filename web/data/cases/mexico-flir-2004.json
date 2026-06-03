@@ -1,0 +1,66 @@
+{
+  "id": "mexico-flir-2004",
+  "num": 37,
+  "name": "Mexican Air Force (FLIR)",
+  "year_start": 2004,
+  "country": "MX",
+  "country_name": "México",
+  "flag": "🇲🇽",
+  "location": {
+    "lat": 18.46,
+    "lng": -94.05,
+    "place": "Campeche"
+  },
+  "tier": "A",
+  "probability": 30,
+  "summary": "Gen. Vega García/SEDENA personalmente. Hipótesis alternativa: flares plataformas",
+  "summary_en": "Gen. Vega García/SEDENA personally. Alt hypothesis: platform flares",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 5 de marzo de 2004, una aeronave Merlin C26-A del 501 Escuadrón de la Fuerza Aérea Mexicana (FAM) patrullando sobre Campeche en operativos antinarcóticos detectó múltiples objetos en su radar y en su FLIR (Forward Looking InfraRed). El piloto, Mayor Mendoza, reportó once objetos esféricos siguiendo a la aeronave durante aproximadamente 30 minutos, visibles solo en infrarrojo (no visualmente).\n\nEl General Clemente Vega García, entonces Secretario de la Defensa Nacional (SEDENA), aprobó personalmente la divulgación del video FLIR al investigador Jaime Maussan en mayo de 2004. La conferencia de prensa de Maussan generó cobertura internacional masiva. El General Vega García personalmente declaró: 'no podemos negar lo que ocurrió ahí'.\n\nEl astrónomo mexicano Julio Allende y posteriormente análisis independientes propusieron una explicación alternativa: el FLIR habría detectado quemadores de gas de plataformas petroleras Cantarell (zona de extracción intensa) cuya señatura térmica puede aparecer como objetos discretos en infrarrojo bajo condiciones de inversión atmosférica. Esta hipótesis es consistente con la geografía (vuelo sobre el Golfo) y la ausencia de detección visual. La FAM no ha emitido conclusión oficial actualizada. El caso es citado como ejemplo de evento UAP con divulgación institucional alta inicial seguida de explicación alternativa convencional plausible.",
+  "whatHappened_en": "On March 5, 2004, a Merlin C26-A aircraft from the 501st Squadron of the Mexican Air Force (FAM) on an anti-narcotics patrol over Campeche detected multiple objects on its radar and FLIR (Forward Looking InfraRed). The pilot, Major Mendoza, reported eleven spherical objects following the aircraft for approximately 30 minutes, visible only in infrared (not visually).\n\nGeneral Clemente Vega García, then Secretary of National Defense (SEDENA), personally approved the release of the FLIR video to researcher Jaime Maussan in May 2004. Maussan's press conference generated massive international coverage. General Vega García personally stated: 'we cannot deny what happened there'.\n\nMexican astronomer Julio Allende and later independent analyses proposed an alternative explanation: the FLIR may have detected gas flares from the Cantarell oil platforms (an intense extraction zone), whose thermal signature can appear as discrete objects in infrared under atmospheric inversion conditions. The hypothesis is consistent with the geography (flight over the Gulf) and the absence of visual detection. The FAM has not issued an updated official conclusion. The case is cited as an example of a UAP event with high initial institutional disclosure followed by a plausible conventional alternative explanation.",
+  "whyMatters": "Caso de calibración importante: única instancia donde un Secretario de Defensa de país soberano divulgó proactivamente video FLIR militar como evento UAP, seguido por explicación convencional técnicamente plausible. Ilustra que la divulgación institucional no implica naturaleza no convencional del evento subyacente. Es referencia para metodología de discriminación entre UAP genuinos y artefactos instrumentales en otros casos del corpus.",
+  "whyMatters_en": "An important calibration case: the only instance where a sovereign country's Defense Secretary proactively disclosed a military FLIR video as a UAP event, followed by a technically plausible conventional explanation. It illustrates that institutional disclosure does not imply non-conventional nature of the underlying event. It is a reference for the methodology of distinguishing genuine UAPs from instrumental artifacts in other corpus cases.",
+  "evidence": [
+    "Video FLIR oficial FAM autorizado para release por SEDENA",
+    "Declaración pública del General Vega García",
+    "Análisis alternativo de Cantarell platform burners (Allende et al.)",
+    "Ausencia de detección visual concurrente con detección FLIR — consistente con hipótesis platform burners"
+  ],
+  "evidence_en": [
+    "Official FAM FLIR video authorized for release by SEDENA",
+    "Public statement by General Vega García",
+    "Alternative analysis of Cantarell platform burners (Allende et al.)",
+    "No concurrent visual detection alongside the FLIR detection — consistent with the platform-burners hypothesis"
+  ],
+  "sources": [
+    {
+      "name": "SEDENA Mexico — communication officielle 2004",
+      "url": "https://www.gob.mx/sedena"
+    },
+    {
+      "name": "Maussan, J. — Press conference video archive (mayo 2004)",
+      "note": "Material primario disponible"
+    },
+    {
+      "name": "Allende, J. — Análisis alternativo Cantarell burners (2004)",
+      "note": "Publicación académica mexicana"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "SEDENA Mexico — communication officielle 2004",
+      "url": "https://www.gob.mx/sedena"
+    },
+    {
+      "name": "Maussan, J. — Press conference video archive (mayo 2004)",
+      "note": "Primary material available"
+    },
+    {
+      "name": "Allende, J. — Análisis alternativo Cantarell burners (2004)",
+      "note": "Mexican academic publication"
+    }
+  ]
+}

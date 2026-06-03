@@ -1,0 +1,67 @@
+{
+  "id": "aawsap-skinwalker-2008",
+  "num": 41,
+  "name": "AAWSAP / Skinwalker Ranch",
+  "year_start": 2008,
+  "year_end": 2010,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.25,
+    "lng": -109.88,
+    "place": "Skinwalker Ranch, Utah"
+  },
+  "tier": "A",
+  "probability": 35,
+  "summary": "DoD program $22M, 38 DIRDs, fenomenología mezclada (UAPs + multidimensional)",
+  "summary_en": "DoD program $22M, 38 DIRDs, mixed phenomenology (UAPs + multidimensional)",
+  "patterns": [
+    "8g"
+  ],
+  "category": "incident",
+  "whatHappened": "El Advanced Aerospace Weapon System Applications Program (AAWSAP) fue establecido por la Defense Intelligence Agency (DIA) en septiembre de 2008, gestionado por el contratista Bigelow Aerospace Advanced Space Studies (BAASS) bajo dirección del empresario Robert Bigelow. Su financiamiento federal fue de aproximadamente $22 millones durante el período 2008-2010, solicitado por el Senador Harry Reid y autorizado en black budget.\n\nEl componente más controversial del AAWSAP fue su investigación en Skinwalker Ranch (Utah), una propiedad rural de 200 hectáreas que Bigelow había adquirido al ranchero Terry Sherman después de los reportes Sherman de fenómenos múltiples — UAPs, criaturas anómalas, fenómenos poltergeist, animales mutilados — durante los años 90. El AAWSAP instaló equipos científicos en el rancho durante 2008-2010 y produjo 38 Defense Intelligence Reference Documents (DIRDs) sobre temas como wormhole physics, biological effects of UAP, propulsion exotic, etc.\n\nLos DIRDs fueron desclasificados parcialmente en 2018-2019 vía FOIA por investigadores independientes (John Greenewald, The Black Vault). El programa fue terminado administrativamente en 2010. El AAWSAP es antecesor directo del AATIP (Advanced Aerospace Threat Identification Program) que Luis Elizondo dirigió. La fenomenología mezclada de Skinwalker (UAPs + paranormal) ha generado controversia metodológica sobre si AAWSAP fue investigación científica seria o exploración compartimentada de fenómenos no convencionales más amplios.",
+  "whatHappened_en": "The Advanced Aerospace Weapon System Applications Program (AAWSAP) was established by the Defense Intelligence Agency (DIA) in September 2008, managed by contractor Bigelow Aerospace Advanced Space Studies (BAASS) under the direction of entrepreneur Robert Bigelow. Federal funding totaled approximately $22 million during 2008-2010, requested by Senator Harry Reid and authorized through the black budget.\n\nThe most controversial component of AAWSAP was its research at Skinwalker Ranch (Utah), a 200-hectare rural property that Bigelow had purchased from rancher Terry Sherman following Sherman family reports of multiple phenomena — UAPs, anomalous creatures, poltergeist activity, cattle mutilations — during the 1990s. AAWSAP installed scientific equipment at the ranch from 2008-2010 and produced 38 Defense Intelligence Reference Documents (DIRDs) on topics such as wormhole physics, biological effects of UAP, exotic propulsion, and more.\n\nThe DIRDs were partially declassified in 2018-2019 via FOIA by independent researchers (John Greenewald, The Black Vault). The program was administratively terminated in 2010. AAWSAP is the direct precursor to AATIP (Advanced Aerospace Threat Identification Program), which Luis Elizondo led. Skinwalker's mixed phenomenology (UAPs + paranormal) has generated methodological controversy over whether AAWSAP was serious scientific research or a compartmentalized exploration of broader non-conventional phenomena.",
+  "whyMatters": "Primer programa federal estadounidense post-Blue Book formalmente documentado, con financiamiento verificado y producción de Defense Intelligence Reference Documents. Su existencia es confirmada institucionalmente. La fenomenología mezclada del estudio Skinwalker abre debate metodológico sobre la separación analítica entre UAP propiamente dichos y fenómenos anómalos asociados — debate que continúa en AARO y testimonios congresionales actuales.",
+  "whyMatters_en": "First formally documented post-Blue Book U.S. federal program, with verified funding and production of Defense Intelligence Reference Documents. Its existence is institutionally confirmed. The mixed phenomenology of the Skinwalker study opens a methodological debate about the analytical separation between UAPs proper and associated anomalous phenomena — a debate that continues at AARO and in current congressional testimony.",
+  "evidence": [
+    "Documentos contractuales DIA-BAASS 2008-2010 ($22M financiamiento)",
+    "38 DIRDs publicados parcialmente vía FOIA (2018-2019)",
+    "Carta del Senador Harry Reid (2009) solicitando SAP designation",
+    "Confirmación posterior por Pentagon Press Officer Susan Gough"
+  ],
+  "evidence_en": [
+    "DIA-BAASS contract documents 2008-2010 ($22M funding)",
+    "38 DIRDs partially published via FOIA (2018-2019)",
+    "Letter from Senator Harry Reid (2009) requesting SAP designation",
+    "Subsequent confirmation by Pentagon Press Officer Susan Gough"
+  ],
+  "sources": [
+    {
+      "name": "DIA AAWSAP DIRDs (declassified, The Black Vault)",
+      "url": "https://www.theblackvault.com/documentarchive/the-defense-intelligence-reference-documents/"
+    },
+    {
+      "name": "Knapp, G. — Inside the Mysterious Skinwalker Program (Las Vegas Now)",
+      "url": "https://www.8newsnow.com/"
+    },
+    {
+      "name": "Lacatski, J. & Kelleher, C. & Knapp, G. — Skinwalkers at the Pentagon (2021)",
+      "note": "Por participantes directos del programa"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DIA AAWSAP DIRDs (declassified, The Black Vault)",
+      "url": "https://www.theblackvault.com/documentarchive/the-defense-intelligence-reference-documents/"
+    },
+    {
+      "name": "Knapp, G. — Inside the Mysterious Skinwalker Program (Las Vegas Now)",
+      "url": "https://www.8newsnow.com/"
+    },
+    {
+      "name": "Lacatski, J. & Kelleher, C. & Knapp, G. — Skinwalkers at the Pentagon (2021)",
+      "note": "By direct participants in the program"
+    }
+  ]
+}

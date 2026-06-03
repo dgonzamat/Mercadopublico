@@ -1,0 +1,67 @@
+{
+  "id": "dow-centcom-2020",
+  "num": 45,
+  "name": "DOW CENTCOM mission reports",
+  "year_start": 2020,
+  "year_end": 2024,
+  "country": "US",
+  "country_name": "Multi-país (Persian Gulf)",
+  "flag": "🌍",
+  "location": {
+    "lat": 26.0,
+    "lng": 51.0,
+    "place": "Persian Gulf"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "S//NF, telemetría sensores, Persian Gulf concentration",
+  "summary_en": "S//NF, sensor telemetry, Persian Gulf concentration",
+  "patterns": [
+    "8b"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre 2020 y 2024, el Department of War (Pentágono) recibió reportes estructurados de incursiones UAP sostenidas sobre el Persian Gulf, particularmente en el espacio operacional del CENTCOM (United States Central Command). Los reportes — clasificados S//NOFORN — describieron objetos con comportamiento kinético anómalo penetrando áreas operacionales de US Navy en el Golfo Pérsico, observados por tripulaciones de patrulla marítima P-8 Poseidon, destructores Arleigh Burke y aeronaves de carrier strike groups.\n\nLos reportes incluyen telemetría sensor (radar AN/SPY-1, AN/APS-137 ISAR, FLIR ATFLIR, SLAM-ER vehicle data) con timestamps, coordenadas y características cinemáticas. El AARO designó el conjunto como caso institucional bajo PURSUE en releases 2024-2026. Las características más documentadas: objetos cilíndricos y discoidales de tamaño 3-10m, velocidades sostenidas Mach 1+ a baja altura sobre mar, capacidad de detención instantánea seguida de aceleración no convencional.\n\nEl área geográfica de concentración (Persian Gulf entre Bahrain, Qatar e Irán) sugiere correlación con activos navales estadounidenses operacionales o con instalaciones nucleares civiles iraníes. El testimonio del Senador Marco Rubio y otros miembros del Gang of Eight con acceso a briefings clasificados ha sido citado como confirmación indirecta de la realidad operacional de estos reportes. Los detalles permanecen mayoritariamente clasificados.",
+  "whatHappened_en": "Between 2020 and 2024, the Department of War (Pentagon) received structured reports of sustained UAP incursions over the Persian Gulf, particularly within the CENTCOM (United States Central Command) operational area. The reports — classified S//NOFORN — described objects with anomalous kinetic behavior penetrating U.S. Navy operational zones in the Gulf, observed by P-8 Poseidon maritime patrol crews, Arleigh Burke destroyers, and carrier strike group aircraft.\n\nThe reports include sensor telemetry (AN/SPY-1 radar, AN/APS-137 ISAR, ATFLIR FLIR, SLAM-ER vehicle data) with timestamps, coordinates, and kinematic characteristics. AARO designated the body of cases as an institutional case under PURSUE in 2024-2026 releases. The most documented characteristics: cylindrical and disc-shaped objects, 3-10m in size, sustained speeds Mach 1+ at low altitude over the sea, capable of instantaneous halts followed by non-conventional acceleration.\n\nThe geographic concentration (Persian Gulf between Bahrain, Qatar and Iran) suggests correlation with U.S. operational naval assets or with Iranian civilian nuclear facilities. Testimony from Senator Marco Rubio and other Gang of Eight members with access to classified briefings has been cited as indirect confirmation of the operational reality of these reports. Details remain largely classified.",
+  "whyMatters": "Conjunto de casos institucionales contemporáneos con telemetría sensor de alta calidad y concentración geográfica significativa sobre área de actividad operacional naval estadounidense. La designación AARO PURSUE valida institucionalmente el conjunto. La concentración Persian Gulf establece patrón geográfico contemporáneo análogo al patrón nuclear histórico (Sandia 1948, Malmstrom 1967): UAP recurrentes sobre infraestructura militarmente sensible.",
+  "whyMatters_en": "A contemporary institutional case set with high-quality sensor telemetry and significant geographic concentration over a U.S. naval operational area. The AARO PURSUE designation provides institutional validation. The Persian Gulf concentration establishes a contemporary geographic pattern analogous to the historical nuclear pattern (Sandia 1948, Malmstrom 1967): recurrent UAPs over militarily sensitive infrastructure.",
+  "evidence": [
+    "Reportes S//NOFORN sostenidos 2020-2024 al CENTCOM",
+    "Telemetría sensor multi-plataforma (radar Aegis + ATFLIR + ISAR)",
+    "Designación AARO PURSUE en releases 2024-2026",
+    "Briefings clasificados a Gang of Eight congressional"
+  ],
+  "evidence_en": [
+    "Sustained S//NOFORN reports 2020-2024 to CENTCOM",
+    "Multi-platform sensor telemetry (Aegis radar + ATFLIR + ISAR)",
+    "AARO PURSUE designation in 2024-2026 releases",
+    "Classified briefings to the congressional Gang of Eight"
+  ],
+  "sources": [
+    {
+      "name": "AARO Releases (2024-2026)",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "House Intelligence Committee hearings on UAP (2023-2024)",
+      "url": "https://intelligence.house.gov/"
+    },
+    {
+      "name": "Coulthart, R. — NewsNation Reality Check 2024 coverage",
+      "note": "Cobertura sostenida del programa"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "AARO Releases (2024-2026)",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "House Intelligence Committee hearings on UAP (2023-2024)",
+      "url": "https://intelligence.house.gov/"
+    },
+    {
+      "name": "Coulthart, R. — NewsNation Reality Check 2024 coverage",
+      "note": "Sustained coverage of the program"
+    }
+  ]
+}

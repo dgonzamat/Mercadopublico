@@ -1,0 +1,44 @@
+{
+  "id": "yukon-1996",
+  "num": 34,
+  "name": "Yukon Highway",
+  "year_start": 1996,
+  "country": "CA",
+  "country_name": "Canadá",
+  "flag": "🇨🇦",
+  "location": {
+    "lat": 62.45,
+    "lng": -136.66,
+    "place": "Yukon Territory"
+  },
+  "tier": "A",
+  "probability": 65,
+  "summary": "RCMP + 18+ testigos en 3 hrs, objeto 'tamaño campo de fútbol' silencioso",
+  "summary_en": "RCMP + 18+ witnesses in 3 hrs, 'football field-sized' silent object",
+  "patterns": [
+    "8l"
+  ],
+  "category": "incident",
+  "whatHappened": "El 11 de diciembre de 1996, entre las 19:00 y 22:00 hora local, al menos 22 testigos en cinco comunidades del Yukon Territory (Canadá) — Fox Lake, Carmacks, Pelly Crossing, Mayo, Stewart Crossing — observaron un objeto enorme en forma de disco o triángulo desplazándose lentamente sobre la Klondike Highway. La trayectoria geográfica fue reconstruida posteriormente: el objeto recorrió aproximadamente 300 km en tres horas, consistente con observación simultánea coordinada.\n\nLos testigos incluyen al Conductor Jim Stranack (camionero profesional), familias en automóvil, residentes en aldeas y empleados de la Royal Canadian Mounted Police (RCMP). Las descripciones convergen: tamaño 'football field-sized' (estadio de fútbol), iluminación blanca brillante en periferia, ausencia total de sonido, velocidad de aproximadamente 50 km/h.\n\nEl investigador civil Martin Jasek (geólogo) recopiló 22 testimonios independientes en 1996-2000 y publicó reconstrucción geométrica del evento. La RCMP confirmó la recepción de múltiples reportes pero no abrió investigación formal por ausencia de delito. Transport Canada confirmó que no había tráfico aéreo civil o militar conocido en la trayectoria durante esas horas. El caso es uno de los pocos objetos triangulares 'gigantes' con reconstrucción cartográfica precisa basada en testigos distribuidos geográficamente.",
+  "whyMatters": "Único caso global con reconstrucción cartográfica de trayectoria de 300 km basada en 22 testigos independientes en cinco comunidades, durante tres horas. La distribución geográfica + temporal hace improbable explicaciones de error perceptual coordinado. La ausencia confirmada de tráfico aéreo conocido por Transport Canada agrega un piso institucional al caso.",
+  "evidence": [
+    "22 testimonios independientes recopilados por Jasek (1996-2000)",
+    "Reconstrucción geométrica de trayectoria 300 km en 3 horas",
+    "Confirmación RCMP de recepción de reportes",
+    "Confirmación Transport Canada de ausencia de tráfico aéreo conocido"
+  ],
+  "sources": [
+    {
+      "name": "Jasek, M. — UFO Over the Klondike Highway (UFO*BC 2003)",
+      "url": "http://www.ufobc.ca/"
+    },
+    {
+      "name": "RCMP Yukon Division — case records (FOIA)",
+      "url": "https://www.rcmp-grc.gc.ca/"
+    },
+    {
+      "name": "Rutkowski, C. — The Canadian UFO Report (2006)",
+      "note": "Capítulo sobre Yukon"
+    }
+  ]
+}

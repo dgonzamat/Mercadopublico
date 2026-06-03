@@ -1,0 +1,55 @@
+{
+  "id": "kecksburg-1965",
+  "num": 56,
+  "name": "Kecksburg",
+  "year_start": 1965,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.18,
+    "lng": -79.46,
+    "place": "Kecksburg, Pensilvania"
+  },
+  "tier": "S",
+  "probability": 60,
+  "summary": "Objeto bellota en bosque PA + cordón militar + flatbed + demanda FOIA contra NASA expuso Project Moon Dust",
+  "summary_en": "Acorn-shaped object in PA woods + military cordon + flatbed removal + FOIA lawsuit against NASA exposed Project Moon Dust",
+  "patterns": [
+    "8m",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 9 de diciembre de 1965 a las 16:47, miles de testigos en seis estados del noreste de EEUU y Ontario observaron una bola de fuego brillante atravesar el cielo. NORAD inicialmente sugirió que era un meteoroide. Sin embargo, en Kecksburg, Pensilvania (zona rural cerca de Pittsburgh), residentes reportaron ver el objeto descender lentamente y aterrizar en un bosque adyacente al pueblo.\n\nLa policía estatal de Pensilvania y bomberos voluntarios respondieron primero. Reportaron haber visto un objeto metálico en forma de bellota, aproximadamente del tamaño de un Volkswagen, con jeroglíficos o marcas no identificadas en su base. Personal militar del U.S. Army llegó horas después, cordonó el área, ordenó a civiles retirarse, y según múltiples testigos (incluyendo el periodista local John Murphy de WHJB Radio), retiraron un objeto cubierto en un camión flatbed durante la madrugada.\n\nLa USAF y NASA negaron oficialmente cualquier involucramiento por décadas. En 2003, la periodista Leslie Kean demandó a NASA bajo FOIA. El caso (Kean v. NASA, 2003-2007) resultó en una orden judicial federal que forzó a NASA a buscar registros sobre el incidente. Los documentos parcialmente liberados revelaron la existencia de Project Moon Dust — un programa USAF/CIA clasificado para recuperar 'objetos de origen no terrestre' (originalmente diseñado para recuperar satélites soviéticos). Los registros completos siguen incompletos según la corte.",
+  "whatHappened_en": "On December 9, 1965 at 16:47, thousands of witnesses across six northeastern US states and Ontario observed a brilliant fireball cross the sky. NORAD initially suggested it was a meteoroid. However, in Kecksburg, Pennsylvania (a rural area near Pittsburgh), residents reported seeing the object descend slowly and land in woods adjacent to the town.\n\nPennsylvania state police and volunteer firefighters responded first. They reported seeing a metallic acorn-shaped object, approximately the size of a Volkswagen, with hieroglyphs or unidentified markings on its base. U.S. Army military personnel arrived hours later, cordoned the area, ordered civilians to withdraw, and according to multiple witnesses (including local journalist John Murphy of WHJB Radio), removed a covered object on a flatbed truck during the night.\n\nThe USAF and NASA officially denied any involvement for decades. In 2003, journalist Leslie Kean sued NASA under FOIA. The case (Kean v. NASA, 2003-2007) resulted in a federal court order forcing NASA to search for records on the incident. The partially released documents revealed the existence of Project Moon Dust — a classified USAF/CIA program to recover 'objects of non-terrestrial origin' (originally designed to recover Soviet satellites). The complete records remain incomplete per the court.",
+  "whyMatters": "Único caso UAP donde una demanda federal FOIA forzó la liberación de documentos sobre un programa de recuperación clasificado (Project Moon Dust) que el gobierno había negado existir. La sentencia Kean v. NASA establece precedente jurídico de que el gobierno mantenía programas operacionales para 'objetos de origen no terrestre' — independiente de si Kecksburg fue uno o no. La negación-luego-revelación es el caso textual del patrón 'cover-up institucional documentado'.",
+  "whyMatters_en": "The only UAP case where a federal FOIA lawsuit forced the release of documents about a classified recovery program (Project Moon Dust) that the government had denied existed. The Kean v. NASA ruling establishes legal precedent that the government maintained operational programs for 'objects of non-terrestrial origin' — independent of whether Kecksburg was one or not. The denial-then-revelation is the textbook case of the 'documented institutional cover-up' pattern.",
+  "evidence": [
+    "Reporte WHJB Radio — John Murphy (testimonio contemporáneo, 9-10 dic 1965)",
+    "Testimonios juramentados de policía estatal PA y bomberos voluntarios",
+    "Documentos parcialmente desclasificados Project Moon Dust (vía Kean v. NASA)",
+    "Sentencia Kean v. NASA (US District Court, 2003-2007) — orden de búsqueda forzada"
+  ],
+  "evidence_en": [
+    "WHJB Radio report — John Murphy (contemporary testimony, Dec 9-10, 1965)",
+    "Sworn testimony from PA state police and volunteer firefighters",
+    "Partially declassified Project Moon Dust documents (via Kean v. NASA)",
+    "Kean v. NASA ruling (US District Court, 2003-2007) — forced search order"
+  ],
+  "sources": [
+    {
+      "name": "Kean v. NASA — Federal Court Docket (2003-2007)",
+      "url": "https://www.theblackvault.com/casefiles/the-vault-files-the-1965-kecksburg-pennsylvania-crash/"
+    },
+    {
+      "name": "Project Moon Dust — Documentos parciales (Black Vault FOIA)",
+      "url": "https://www.theblackvault.com/documentarchive/project-moon-dust/"
+    },
+    {
+      "name": "Kean, Leslie — UFOs: Generals, Pilots and Government Officials Go On the Record (2010)"
+    },
+    {
+      "name": "Pennsylvania State Police archives — 9 diciembre 1965"
+    }
+  ]
+}

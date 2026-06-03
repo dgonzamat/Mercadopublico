@@ -1,0 +1,66 @@
+{
+  "id": "bosque-chile-2010",
+  "num": 42,
+  "name": "El Bosque Chile (CEFAA)",
+  "year_start": 2010,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -33.46,
+    "lng": -70.69,
+    "place": "Santiago, Chile"
+  },
+  "tier": "A",
+  "probability": 75,
+  "summary": "Air show, cientos testigos, velocidad >Mach 3 calculada, CEFAA 'anómalo'",
+  "summary_en": "Air show, hundreds of witnesses, speed >Mach 3 calculated, CEFAA 'anomalous'",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 13 de noviembre de 2010, durante el show aéreo conmemorando el centenario de la Fuerza Aérea de Chile (FACh) en la Base Aérea El Bosque (Santiago), cientos de civiles y personal militar observaron un objeto discoidal moviéndose entre las formaciones acrobáticas que estaban demostrando. El objeto fue registrado en múltiples cámaras de video y fotografías por espectadores y por equipos de prensa.\n\nEl General José Huber, comandante operacional de la FACh, ordenó al Comité de Estudios de Fenómenos Aéreos Anómalos (CEFAA) — organismo oficial dependiente de la Dirección General de Aeronáutica Civil (DGAC) — investigar el evento. CEFAA recopiló más de 20 videos independientes filmados desde diferentes ángulos durante el show.\n\nEl análisis técnico CEFAA, presentado por su director Ricardo Bermúdez en 2012, calculó velocidad de movimiento del objeto entre las formaciones: aproximadamente Mach 3 (3,700 km/h) basado en correlación fotogramétrica de los videos sincronizados. Esta velocidad es incompatible con cualquier aeronave tripulada operacional en 2010 — los formaciones acrobáticas FACh estaban a aproximadamente Mach 0.7. CEFAA clasificó oficialmente al evento como 'anómalo' — la designación más alta del esquema metodológico institucional chileno.",
+  "whatHappened_en": "On November 13, 2010, during the air show commemorating the centenary of the Chilean Air Force (FACh) at El Bosque Air Base (Santiago), hundreds of civilians and military personnel observed a disc-shaped object moving between the aerobatic formations performing the demonstration. The object was captured by multiple video cameras and photographs from spectators and press teams.\n\nGeneral José Huber, operational commander of the FACh, ordered the Comité de Estudios de Fenómenos Aéreos Anómalos (CEFAA) — the official body under the Dirección General de Aeronáutica Civil (DGAC) — to investigate. CEFAA gathered more than 20 independent videos filmed from different angles during the show.\n\nThe CEFAA technical analysis, presented by its director Ricardo Bermúdez in 2012, calculated the object's speed between the formations at roughly Mach 3 (3,700 km/h), based on photogrammetric correlation across the synchronized videos. This speed is incompatible with any manned aircraft in service in 2010 — the FACh aerobatic formations were flying at approximately Mach 0.7. CEFAA officially classified the event as 'anomalous' — the highest designation in Chile's institutional methodological scheme.",
+  "whyMatters": "Único caso global con: (a) docena de videos independientes sincronizados de un show aéreo público, (b) análisis fotogramétrico formal por agencia gubernamental nacional, (c) cálculo de velocidad incompatible con aeronaves operacionales, (d) clasificación oficial 'anómalo' por organismo estatal. La transparencia metodológica de CEFAA establece estándar internacional para investigación UAP por gobierno.",
+  "whyMatters_en": "The only global case with: (a) over a dozen independent synchronized videos from a public air show, (b) formal photogrammetric analysis by a national government agency, (c) computed speed incompatible with operational aircraft, (d) official 'anomalous' classification by a state body. CEFAA's methodological transparency sets an international standard for government UAP investigation.",
+  "evidence": [
+    "20+ videos sincronizados desde diferentes ángulos del show aéreo",
+    "Análisis fotogramétrico CEFAA con velocidad calculada ~Mach 3",
+    "Clasificación oficial 'anómalo' por CEFAA / DGAC Chile",
+    "Presentación pública del análisis por el General Bermúdez (2012)"
+  ],
+  "evidence_en": [
+    "20+ synchronized videos from different angles of the air show",
+    "CEFAA photogrammetric analysis with computed speed ~Mach 3",
+    "Official 'anomalous' classification by CEFAA / DGAC Chile",
+    "Public presentation of the analysis by General Bermúdez (2012)"
+  ],
+  "sources": [
+    {
+      "name": "CEFAA / DGAC Chile — El Bosque case file (2012)",
+      "url": "https://www.dgac.gob.cl/"
+    },
+    {
+      "name": "Maccabee, B. — Independent analysis El Bosque footage",
+      "note": "Físico óptico, investigación civil"
+    },
+    {
+      "name": "Open Minds TV — CEFAA Press Conference 2012",
+      "note": "Cobertura internacional"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "CEFAA / DGAC Chile — El Bosque case file (2012)",
+      "url": "https://www.dgac.gob.cl/"
+    },
+    {
+      "name": "Maccabee, B. — Independent analysis El Bosque footage",
+      "note": "Optical physicist, civilian investigation"
+    },
+    {
+      "name": "Open Minds TV — CEFAA Press Conference 2012",
+      "note": "International coverage"
+    }
+  ]
+}
