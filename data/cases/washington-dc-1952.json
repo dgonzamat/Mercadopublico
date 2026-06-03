@@ -1,0 +1,57 @@
+{
+  "id": "washington-dc-1952",
+  "num": 53,
+  "name": "Washington Flap",
+  "year_start": 1952,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.89,
+    "lng": -77.04,
+    "place": "Washington, D.C."
+  },
+  "tier": "S",
+  "probability": 78,
+  "summary": "Radar-visual sobre la Casa Blanca + F-94 scrambled + conferencia USAF más grande post-WWII",
+  "summary_en": "Radar-visual over the White House + F-94 scrambled + largest USAF press conference post-WWII",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre el 19-20 y el 26-27 de julio de 1952, controladores de tráfico aéreo en Washington National Airport (ARTC) y Andrews AFB rastrearon múltiples ecos radar no identificados sobre el espacio aéreo prohibido del Distrito de Columbia, incluyendo la Casa Blanca y el Capitolio. Pilotos comerciales y de aerolíneas confirmaron visualmente luces que coincidían con la posición de los ecos.\n\nLa Fuerza Aérea respondió ambos fines de semana con interceptores F-94 Starfire del 142nd Fighter-Interceptor Squadron. Los pilotos reportaron que las luces se desvanecían al aproximarse. Los ecos radar regresaron al retirarse los aviones. El Mayor General John Samford, Director de Inteligencia de la USAF, convocó la conferencia de prensa más grande del Departamento desde la Segunda Guerra Mundial el 29 de julio de 1952 — atribuyendo los retornos a inversiones de temperatura.\n\nLa explicación oficial fue cuestionada por meteorólogos contemporáneos (Donald Menzel apoyó; James McDonald rechazó posteriormente). El incidente directamente catalizó el Robertson Panel de enero 1953 — el primer comité de inteligencia formal de la CIA para evaluar el fenómeno UAP. El Presidente Truman fue briefeado personalmente.",
+  "whatHappened_en": "On the weekends of July 19-20 and July 26-27, 1952, air traffic controllers at Washington National Airport (ARTC) and Andrews AFB tracked multiple unidentified radar returns over the restricted airspace of the District of Columbia, including the White House and Capitol. Commercial and airline pilots visually confirmed lights matching the positions of the returns.\n\nThe Air Force responded on both weekends with F-94 Starfire interceptors from the 142nd Fighter-Interceptor Squadron. Pilots reported the lights faded on approach. The radar returns reappeared when the aircraft withdrew. Major General John Samford, USAF Director of Intelligence, convened the Department's largest press conference since World War II on July 29, 1952 — attributing the returns to temperature inversions.\n\nThe official explanation was challenged by contemporary meteorologists (Donald Menzel supported it; James McDonald later rejected it). The incident directly catalyzed the January 1953 Robertson Panel — the CIA's first formal intelligence committee to evaluate the UAP phenomenon. President Truman was personally briefed.",
+  "whyMatters": "Es el único caso UAP que provocó la conferencia de prensa más grande del Departamento de Defensa post-WWII y catalizó directamente el Robertson Panel (ya en el corpus). Radar-visual multi-sistema sobre infraestructura presidencial, con respuesta de interceptores militares y briefing presidencial, todo dentro del registro institucional contemporáneo. Establece el patrón de 'explicación meteorológica oficial' que se aplicaría a casos posteriores.",
+  "whyMatters_en": "The only UAP case that triggered the largest post-WWII Department of Defense press conference and directly catalyzed the Robertson Panel (already in the corpus). Multi-system radar-visual over presidential infrastructure, with military interceptor response and presidential briefing, all within the contemporary institutional record. Establishes the 'official meteorological explanation' pattern that would be applied to later cases.",
+  "evidence": [
+    "Transcripciones de ARTC y Andrews AFB (julio 19-20 y 26-27, 1952)",
+    "Reportes verbales de los pilotos F-94 del 142nd FIS",
+    "Conferencia de prensa Maj. Gen. John Samford, USAF (29 julio 1952)",
+    "Project Blue Book Case File #1606 (Washington National Sightings)",
+    "CIA Robertson Panel records (enero 1953) — catalizador directo"
+  ],
+  "evidence_en": [
+    "ARTC and Andrews AFB transcripts (July 19-20 and 26-27, 1952)",
+    "Verbal reports from F-94 pilots of 142nd FIS",
+    "Press conference, Maj. Gen. John Samford, USAF (July 29, 1952)",
+    "Project Blue Book Case File #1606 (Washington National Sightings)",
+    "CIA Robertson Panel records (January 1953) — direct catalyst"
+  ],
+  "sources": [
+    {
+      "name": "Project Blue Book Archive — Washington National Sightings",
+      "url": "https://www.archives.gov/research/military/air-force/ufos"
+    },
+    {
+      "name": "CIA Robertson Panel Report (1953)",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp83-00415r013500050001-3"
+    },
+    {
+      "name": "Ruppelt, Edward J. — The Report on Unidentified Flying Objects (1956)"
+    },
+    {
+      "name": "McDonald, J.E. — Statement on Unidentified Flying Objects, AAAS (1968)"
+    }
+  ]
+}
