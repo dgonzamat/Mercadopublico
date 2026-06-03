@@ -1,0 +1,64 @@
+{
+  "id": "ariel-school-1994",
+  "num": 32,
+  "name": "Ariel School",
+  "year_start": 1994,
+  "country": "ZW",
+  "country_name": "Zimbabwe",
+  "flag": "🇿🇼",
+  "location": {
+    "lat": -17.66,
+    "lng": 31.05,
+    "place": "Ruwa, Zimbabwe"
+  },
+  "tier": "S",
+  "probability": 77,
+  "summary": "62 niños + Dr. Mack (Harvard) + 28 años consistencia + interpretación cultural cruzada",
+  "summary_en": "62 children + Dr. Mack (Harvard) + 28-year consistency + cross-cultural interpretation",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 16 de septiembre de 1994, durante el recreo matutino de la Ariel School (Ruwa, Zimbabwe), 62 niños entre 5 y 12 años observaron un objeto plateado descender y posarse en un campo adyacente al patio escolar. Algunos niños reportaron una o más figuras humanoides pequeñas emergiendo del objeto y estableciendo contacto ocular y, según varios niños, contacto telepático con mensajes sobre destrucción ambiental.\n\nEl director de la escuela, Colin Mackie, llamó a investigadores locales y al BBC. Tim Leach (BBC) y el Dr. John E. Mack (Harvard Medical School, profesor de psiquiatría y autor de 'Abduction' 1994) viajaron a Ruwa pocas semanas después del evento. Mack entrevistó individualmente a los niños con metodología psiquiátrica formal. Los dibujos producidos independientemente por los niños mostraron consistencia estructural notable en la forma del objeto y de las figuras.\n\nEl caso ha sido revisitado por documentaristas durante 30 años. En 2022, el documental 'Ariel Phenomenon' (Dir. Randall Nickerson) entrevistó a los adultos que fueron testigos infantiles. La consistencia narrativa intergeneracional (las personas tienen ahora 35-42 años) es metodológicamente notable. La interpretación cruzada zimbabuense / occidental del fenómeno se cita en literatura sobre cómo el contexto cultural moldea la descripción de eventos anómalos sin invalidar el evento sustrato.",
+  "whatHappened_en": "On September 16, 1994, during morning recess at the Ariel School (Ruwa, Zimbabwe), 62 children between 5 and 12 years old observed a silver object descend and settle in a field adjacent to the schoolyard. Some children reported one or more small humanoid figures emerging from the object and making eye contact and — according to several of them — telepathic contact with messages about environmental destruction.\n\nThe school principal, Colin Mackie, called local investigators and the BBC. Tim Leach (BBC) and Dr. John E. Mack (Harvard Medical School, professor of psychiatry and author of 'Abduction' 1994) traveled to Ruwa within weeks of the event. Mack interviewed the children individually using formal psychiatric methodology. Drawings independently produced by the children showed striking structural consistency in the shape of the object and of the figures.\n\nThe case has been revisited by documentary filmmakers for 30 years. In 2022, the documentary 'Ariel Phenomenon' (dir. Randall Nickerson) interviewed the adults who had been child witnesses. The intergenerational narrative consistency (the witnesses are now 35-42 years old) is methodologically notable. The cross-cultural Zimbabwean / Western interpretation of the phenomenon is cited in the literature on how cultural context shapes the description of anomalous events without invalidating the underlying event.",
+  "whyMatters": "Único caso UAP con: (a) 62 testigos infantiles con dibujos independientes contemporáneos, (b) investigación psiquiátrica formal por profesor de Harvard con metodología clínica, (c) consistencia narrativa de 30 años en entrevistas con los testigos como adultos. El compromiso institucional de Harvard Medical School vía Mack es excepcional en el corpus UAP global.",
+  "whyMatters_en": "The only UAP case with: (a) 62 child witnesses with independent contemporary drawings, (b) formal psychiatric investigation by a Harvard professor using clinical methodology, (c) 30 years of narrative consistency in interviews with the witnesses as adults. The institutional involvement of Harvard Medical School via Mack is exceptional in the global UAP corpus.",
+  "evidence": [
+    "Entrevistas individuales Dr. John Mack (Harvard) días posteriores al evento",
+    "62 dibujos independientes contemporáneos preservados",
+    "Documental BBC contemporáneo (Tim Leach)",
+    "Consistencia narrativa 30 años después documentada en 'Ariel Phenomenon' (2022)"
+  ],
+  "evidence_en": [
+    "Individual interviews by Dr. John Mack (Harvard) within days of the event",
+    "62 independent contemporary drawings preserved",
+    "Contemporary BBC documentary (Tim Leach)",
+    "Narrative consistency 30 years later documented in 'Ariel Phenomenon' (2022)"
+  ],
+  "sources": [
+    {
+      "name": "Mack, J.E. — Passport to the Cosmos (1999)",
+      "note": "Capítulo dedicado a Ariel"
+    },
+    {
+      "name": "Nickerson, R. — Ariel Phenomenon (2022 documentary)",
+      "url": "https://www.arielphenomenon.com/"
+    },
+    {
+      "name": "John E. Mack Institute — Ariel School archive",
+      "url": "https://johnemackinstitute.org/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Mack, J.E. — Passport to the Cosmos (1999)",
+      "note": "Chapter dedicated to Ariel"
+    },
+    {
+      "name": "Nickerson, R. — Ariel Phenomenon (2022 documentary)",
+      "url": "https://www.arielphenomenon.com/"
+    },
+    {
+      "name": "John E. Mack Institute — Ariel School archive",
+      "url": "https://johnemackinstitute.org/"
+    }
+  ]
+}
