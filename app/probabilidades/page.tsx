@@ -76,42 +76,74 @@ export default function ProbabilidadesPage() {
       {/* ─────────── CHART (overview) ─────────── */}
       <IcdProbabilityChart />
 
-      {/* ─────────── FRAMING (movió desde el final — ahora es bisagra) ─────────── */}
+      {/* ─────────── POR QUÉ se traba — caso ancla + 3 razones ─────────── */}
       <section className="space-y-6 border-y-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
         <Eyebrow>
-          <T es="Donde se traba el debate" en="Where the debate gets stuck" />
+          <T es="Por qué se traba" en="Why it gets stuck" />
         </Eyebrow>
         <H2>
           <T
-            es="El punto donde el corpus no puede decidir"
-            en="The point where the corpus can't decide"
+            es="¿Por qué H5 se queda 50-50?"
+            en="Why does H5 stay 50-50?"
           />
         </H2>
         <Body>
           <T
             es={
               <>
-                Siete de las ocho hipótesis están en bandas extremas — casi
-                seguro que sí, o casi seguro que no — y se evalúan fácil
-                porque los hechos están claramente de un lado. Solo{" "}
-                <strong className="text-accent">H5 (entidades no humanas)</strong>{" "}
-                queda 50-50. Ahí el corpus deja de poder decidir. Cuando
-                alguien dice <em>"podrían ser aliens"</em> o{" "}
-                <em>"no son aliens"</em>, está discutiendo H5 sin saberlo.
-                Las otras 7 ya están resueltas — son ruido en la discusión.
+                En septiembre de 1976, dos F-4 Phantom de la fuerza aérea
+                iraní perdieron sus comunicaciones y armamento al acercarse
+                a un objeto que el radar terrestre confirmó del tamaño de un
+                Boeing 707. La DIA estadounidense lo calificó como{" "}
+                <em>&quot;outstanding report&quot;</em> — la máxima nota
+                interna del formulario. Eso es{" "}
+                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
+                  Tehran 1976
+                </Link>
+                . Hay 28 casos Tier S del mismo nivel de solidez.
               </>
             }
             en={
               <>
-                Seven of the eight hypotheses fall in extreme bands — almost
-                certain yes or almost certain no — and resolve easily because
-                facts clearly land on one side. Only{" "}
-                <strong className="text-accent">H5 (non-human entities)</strong>{" "}
-                stays 50-50. There the corpus stops being able to decide.
-                When someone says <em>"they could be aliens"</em> or{" "}
-                <em>"they&apos;re not aliens"</em>, they&apos;re arguing H5
-                without realizing. The other 7 are already resolved — noise
-                in the discussion.
+                In September 1976, two Iranian Air Force F-4 Phantoms lost
+                their communications and weapons systems as they approached
+                an object that ground radar confirmed was the size of a
+                Boeing 707. The U.S. DIA rated the report{" "}
+                <em>&quot;outstanding&quot;</em> — the highest internal
+                grade. That is{" "}
+                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
+                  Tehran 1976
+                </Link>
+                . There are 28 Tier S cases at that level of solidity.
+              </>
+            }
+          />
+        </Body>
+        <Body className="text-muted">
+          <T
+            es={
+              <>
+                Y sin embargo, ningún caso puede decidir entre dos lecturas
+                igualmente consistentes con los datos: <strong>tecnología
+                clasificada terrestre</strong> (sabemos que existe — el U-2,
+                el F-117 y el B-2 fueron UAP antes de ser desclasificados) o{" "}
+                <strong>algo no humano</strong>. Mientras no haya un método
+                nuevo de medición — material recuperado, análisis isotópico,
+                espectrometría — cada caso adicional refuerza el mismo
+                dilema sin resolverlo. Por eso H5 se queda 50-50.
+              </>
+            }
+            en={
+              <>
+                And yet no case can decide between two readings equally
+                consistent with the data: <strong>classified terrestrial
+                technology</strong> (we know it exists — the U-2, F-117 and
+                B-2 were all UAP before being declassified) or{" "}
+                <strong>something non-human</strong>. Until there is a new
+                measurement method — recovered material, isotopic analysis,
+                spectrometry — each additional case reinforces the same
+                dilemma without resolving it. That&apos;s why H5 stays
+                50-50.
               </>
             }
           />
@@ -121,8 +153,8 @@ export default function ProbabilidadesPage() {
           className="inline-flex min-h-[44px] items-center bg-accent px-5 py-2 text-sm font-medium text-bg hover:bg-text"
         >
           <T
-            es="Saltar a H5 — la frontera ↓"
-            en="Jump to H5 — the frontier ↓"
+            es="Ir a H5 — los detalles ↓"
+            en="Jump to H5 — the details ↓"
           />
         </Link>
       </section>
@@ -140,65 +172,78 @@ export default function ProbabilidadesPage() {
         ))}
       </div>
 
-      {/* ─────────── PUENTE NARRATIVO ─────────── */}
+      {/* ─────────── PUENTE NARRATIVO al experimento ─────────── */}
       <section className="mx-auto max-w-prose space-y-4 pt-4">
         <Body className="text-muted">
           <T
             es={
               <>
-                Recorriste las ocho. Siete caen en los extremos —{" "}
-                <em>casi imposibles</em> de aceptar o{" "}
-                <em>fáciles</em> de descartar. Una sola se quedó
-                atascada en el medio, donde el debate sigue abierto. Ese
-                es el punto que vale la pena guardar.
+                Recorriste las ocho. Siete ya están resueltas. H5 sigue
+                atascada — y existe un experimento que podría desempatarla.
               </>
             }
             en={
               <>
-                You walked through all eight. Seven sit at the extremes
-                — <em>almost impossible</em> to accept or{" "}
-                <em>easy</em> to dismiss. Only one stayed stuck in the
-                middle, where the debate is still open. That is the
-                point worth keeping.
+                You walked through all eight. Seven are already resolved.
+                H5 remains stuck — and there is one experiment that could
+                break the tie.
               </>
             }
           />
         </Body>
       </section>
 
-      {/* ─────────── SUMMARY FINAL ─────────── */}
+      {/* ─────────── CIERRE — el experimento pendiente (ya no re-resumen) ─────────── */}
       <section className="space-y-6 border-t-2 border-text pt-10">
         <Eyebrow>
-          <T es="Lo que importa, en una frase" en="What matters, in one sentence" />
+          <T es="El experimento pendiente" en="The pending experiment" />
         </Eyebrow>
         <H2>
           <T
+            es="Un solo análisis puede cerrar dos décadas de debate"
+            en="One analysis can close two decades of debate"
+          />
+        </H2>
+        <Body>
+          <T
             es={
               <>
-                H5 es la única hipótesis en banda pareja.
-                <br />
-                <span className="text-muted">
-                  Las otras siete son fáciles de descartar o de aceptar — esa
-                  es la pregunta del corpus.
-                </span>
+                El 12 de febrero de 2023, un F-16 de la Air National Guard
+                derribó un objeto sobre el lago Huron con un misil AIM-9X.
+                Los fragmentos cayeron al agua. Aún no fueron analizados
+                públicamente.
               </>
             }
             en={
               <>
-                H5 is the only hypothesis in the even band.
-                <br />
-                <span className="text-muted">
-                  The other seven are easy to dismiss or accept — that's the
-                  corpus question.
-                </span>
+                On February 12, 2023, an Air National Guard F-16 shot down
+                an object over Lake Huron with an AIM-9X missile. The
+                fragments fell into the water. They have not yet been
+                publicly analyzed.
               </>
             }
           />
-        </H2>
+        </Body>
         <Body className="text-muted">
           <T
-            es="Lake Huron 2023 dejó fragmentos físicos cuya composición isotópica aún no fue analizada públicamente. Si esos análisis revelan ratios inconsistentes con ocurrencia terrestre, H5 se mueve hacia probable. Si revelan composición convencional, H5 colapsa hacia 30%. Un solo experimento, dos décadas de claridad."
-            en="Lake Huron 2023 left physical fragments whose isotopic composition has not yet been publicly analyzed. If those analyses reveal ratios inconsistent with terrestrial occurrence, H5 moves toward likely. If they reveal conventional composition, H5 collapses toward 30%. A single experiment, two decades of clarity."
+            es={
+              <>
+                Si esos fragmentos pasan por análisis isotópico y revelan
+                ratios inconsistentes con ocurrencia terrestre, H5 se mueve
+                hacia <em>probable</em>. Si revelan composición convencional,
+                H5 colapsa hacia <em>30%</em>. Un solo experimento. Dos
+                décadas de claridad.
+              </>
+            }
+            en={
+              <>
+                If those fragments undergo isotopic analysis and reveal
+                ratios inconsistent with terrestrial occurrence, H5 moves
+                toward <em>likely</em>. If they reveal conventional
+                composition, H5 collapses toward <em>30%</em>. A single
+                experiment. Two decades of clarity.
+              </>
+            }
           />
         </Body>
       </section>
