@@ -49,6 +49,28 @@ export default function HomePage() {
               en={`An atlas of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
             />
           </Lede>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link
+              href="/atlas"
+              className="inline-flex min-h-[44px] items-center gap-2 border-2 border-text px-5 py-2 text-sm font-medium text-text hover:bg-text hover:text-bg"
+            >
+              <T
+                es={`Ver el mapa global · ${STATS.countries} países`}
+                en={`See the global map · ${STATS.countries} countries`}
+              />
+              <span aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/cases"
+              className="inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-muted hover:text-accent"
+            >
+              <T
+                es={`Caminar los ${STATS.cases} casos cronológicamente`}
+                en={`Walk the ${STATS.cases} cases chronologically`}
+              />
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
