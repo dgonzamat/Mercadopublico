@@ -85,6 +85,13 @@
       "strength": "modest",
       "rationale": "Ascenso forzado documentado por altímetro + acoplamiento EM + observación visual coordinada de los cuatro tripulantes son incompatibles con un meteoro o fenómeno atmosférico.",
       "rationaleEn": "Forced ascent documented by altimeter + EM coupling + coordinated visual observation by all four crew are incompatible with a meteor or atmospheric phenomenon."
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Patrón 8k — acoplamiento EM con sistemas del helicóptero más ascenso forzado por mecanismo no identificado",
+      "rationaleEn": "Pattern 8k — EM coupling with helicopter systems plus forced ascent via unidentified mechanism"
     }
   ]
 }

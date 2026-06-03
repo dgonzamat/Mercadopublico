@@ -90,6 +90,13 @@
       "strength": "modest",
       "rationale": "Lock radar + altitud + maniobras 46G + reportes simultáneos de múltiples gendarmes en tierra son incompatibles con fenómenos atmosféricos.",
       "rationaleEn": "Radar lock + altitude + 46G maneuvers + simultaneous reports from multiple ground gendarmes are incompatible with atmospheric phenomena."
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Patrón 8k presente — interferencia EM y aceleraciones 46G fuera del rango clásico apuntan parcialmente a física no convencional",
+      "rationaleEn": "Pattern 8k present — EM interference and 46G accelerations outside the classical range partially point to non-conventional physics"
     }
   ]
 }
