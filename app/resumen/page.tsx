@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { TOTAL_CASES } from "@/lib/data";
+import { cases, TOTAL_CASES } from "@/lib/data";
+import { countryCount } from "@/lib/corpusStats";
 import { T } from "@/components/T";
 import {
   Eyebrow,
@@ -10,69 +11,72 @@ import {
   PullQuote,
 } from "@/lib/typography";
 
+const COUNTRIES = countryCount(cases);
+const YEARS_OF_PHENOMENON = 2026 - 1947;
+
 export const metadata = {
-  title: "Summary · UAP Atlas",
-  description: "Accessible version of the analysis in plain language",
+  title: "Resumen · UAP Atlas",
+  description: `Versión accesible del análisis: 79 años de fenómeno UAP institucional, ${TOTAL_CASES} casos en ${COUNTRIES} países, en 10 minutos de lectura.`,
 };
 
 const FINDINGS = [
   {
     es: {
-      confidence: "~95%",
+      confidence: "Alta",
       title: "El fenómeno es real",
-      text: `${TOTAL_CASES} casos institucionales documentados por gobiernos, militares y agencias entre 1947 y 2026, en 12 países. Multi-sensor, multi-witness, fotos, video, radar, daño físico medible.`,
+      text: `${TOTAL_CASES} casos institucionales documentados por gobiernos, militares y agencias entre 1947 y 2026, en ${COUNTRIES} países. Multi-sensor, multi-witness, fotos, video, radar, daño físico medible.`,
     },
     en: {
-      confidence: "~95%",
+      confidence: "High",
       title: "The phenomenon is real",
-      text: `${TOTAL_CASES} institutional cases documented by governments, militaries and agencies between 1947 and 2026, in 12 countries. Multi-sensor, multi-witness, photos, video, radar, measurable physical damage.`,
+      text: `${TOTAL_CASES} institutional cases documented by governments, militaries and agencies between 1947 and 2026, in ${COUNTRIES} countries. Multi-sensor, multi-witness, photos, video, radar, measurable physical damage.`,
     },
   },
   {
     es: {
-      confidence: "alta",
+      confidence: "Alta",
       title: "No es UNA cosa — son varias",
       text: "9 morfologías distintas, 5 modos de interacción con humanos, casos contradictorios entre sí. La explicación honesta requiere pluralidad.",
     },
     en: {
-      confidence: "high",
+      confidence: "High",
       title: "It's not ONE thing — there are several",
       text: "9 distinct morphologies, 5 modes of interaction with humans, cases that contradict each other. The honest explanation requires plurality.",
     },
   },
   {
     es: {
-      confidence: "~95%",
+      confidence: "Alta",
       title: "Los gobiernos saben más de lo que dicen",
       text: "Secuencia documental verificable: Twining 1947 → Robertson 1953 → Bolender 1969 → Wilson-Davis 2002 → Grusch 2023 → PURSUE 2026.",
     },
     en: {
-      confidence: "~95%",
+      confidence: "High",
       title: "Governments know more than they say",
       text: "Verifiable documentary sequence: Twining 1947 → Robertson 1953 → Bolender 1969 → Wilson-Davis 2002 → Grusch 2023 → PURSUE 2026.",
     },
   },
   {
     es: {
-      confidence: "alta",
-      title: "PURSUE 2026 NO es disclosure real — es ambigüedad estratégica",
+      confidence: "Media",
+      title: "PURSUE 2026 no es disclosure real — es ambigüedad estratégica",
       text: "Mano derecha: abre archivos. Mano izquierda: propuesta OPM NDA (26 may) silencia futuros whistleblowers federales.",
     },
     en: {
-      confidence: "high",
-      title: "PURSUE 2026 is NOT real disclosure — it's strategic ambiguity",
+      confidence: "Medium",
+      title: "PURSUE 2026 is not real disclosure — it's strategic ambiguity",
       text: "Right hand: opens archives. Left hand: OPM NDA proposal (May 26) silences future federal whistleblowers.",
     },
   },
   {
     es: {
-      confidence: "verificable",
-      title: "El framework de Vallée (1975) predijo PURSUE 2026",
+      confidence: "Media",
+      title: "El framework de Vallée (1975) anticipó PURSUE 2026",
       text: "Vallée propuso un termostato cibernético que regula creencia colectiva. PURSUE encaja exactamente. 51 años de predicción cumplida.",
     },
     en: {
-      confidence: "verifiable",
-      title: "Vallée's framework (1975) predicted PURSUE 2026",
+      confidence: "Medium",
+      title: "Vallée's framework (1975) anticipated PURSUE 2026",
       text: "Vallée proposed a cybernetic thermostat regulating collective belief. PURSUE fits exactly. 51 years of fulfilled prediction.",
     },
   },
@@ -80,8 +84,8 @@ const FINDINGS = [
 
 const THREE_FRASES = [
   {
-    es: "Hay un fenómeno físico real que los gobiernos llevan documentando desde 1947 y que ningún marco interpretativo único explica completamente.",
-    en: "There is a real physical phenomenon that governments have been documenting since 1947 and that no single interpretive framework explains completely.",
+    es: "Hay un fenómeno que las instituciones llevan documentando desde 1947 y que ningún marco interpretativo único explica completamente.",
+    en: "There is a phenomenon institutions have been documenting since 1947 and that no single interpretive framework explains completely.",
   },
   {
     es: "En mayo 2026, Estados Unidos liberó archivos masivos sobre UAP (PURSUE) — pero la liberación fue cuidadosamente curada para no afirmar ni negar nada sustantivo.",
@@ -136,7 +140,10 @@ export default function ResumenPage() {
           <T es="Lectura · 10 min" en="Read · 10 min" />
         </Eyebrow>
         <H1>
-          <T es="79 años en 10 minutos" en="79 years in 10 minutes" />
+          <T
+            es={`${YEARS_OF_PHENOMENON} años en 10 minutos`}
+            en={`${YEARS_OF_PHENOMENON} years in 10 minutes`}
+          />
         </H1>
         <Lede className="text-muted">
           <T
@@ -254,8 +261,8 @@ export default function ResumenPage() {
         </div>
         <Body className="text-muted">
           <T
-            es="Cualquier evento UAP institucional cae en una de cuatro categorías:"
-            en="Any institutional UAP event falls into one of four categories:"
+            es="Los cuatro patrones de manejo institucional que el corpus identifica:"
+            en="The four patterns of institutional handling the corpus identifies:"
           />
         </Body>
         <ul className="space-y-3">
@@ -292,10 +299,16 @@ export default function ResumenPage() {
         </Eyebrow>
         <PullQuote>
           <T
-            es={`El corpus documenta 79 años de un fenómeno real que ningún marco explica completamente, gestionado institucionalmente con creciente sofisticación. PURSUE 2026 es la fase actual de esa gestión — no el fin del cover-up, sino su evolución a "transparencia controlada". El framework de Vallée predijo este momento en 1975. Lo que decidamos hacer con la información ahora es la pregunta política y filosófica de nuestra generación.`}
-            en={`The corpus documents 79 years of a real phenomenon that no framework explains completely, institutionally managed with growing sophistication. PURSUE 2026 is the current phase of that management — not the end of the cover-up but its evolution into "controlled transparency". Vallée's framework predicted this moment in 1975. What we decide to do with the information now is the political and philosophical question of our generation.`}
+            es={`PURSUE 2026 no es el fin del cover-up. Es su evolución a "transparencia controlada".`}
+            en={`PURSUE 2026 is not the end of the cover-up. It is its evolution into "controlled transparency".`}
           />
         </PullQuote>
+        <Body className="text-muted">
+          <T
+            es={`${YEARS_OF_PHENOMENON} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. Vallée describió este patrón en 1975 — ahora lo vemos en directo. Lo que decidamos hacer con la información es la pregunta política de nuestra generación.`}
+            en={`${YEARS_OF_PHENOMENON} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Vallée described this pattern in 1975 — we now see it in real time. What we do with the information is the political question of our generation.`}
+          />
+        </Body>
       </section>
 
       <nav className="flex flex-wrap gap-4 border-t border-border pt-8">
