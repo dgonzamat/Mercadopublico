@@ -118,7 +118,6 @@ export function IcdProbabilityChart() {
         {rows.map((h, idx) => (
           <article
             key={h.id}
-            id={h.id}
             className="grid grid-cols-[3rem_1fr] items-baseline gap-6 py-8 md:grid-cols-[4rem_1fr_auto] md:py-10"
           >
             <span className="font-display text-3xl leading-none tabular-nums text-muted md:text-4xl">
