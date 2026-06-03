@@ -116,6 +116,13 @@ export default function HomePage() {
             />
           </div>
 
+          <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+            <T
+              es="Cada % es independiente — no suman 100, porque pueden ser varias cosas al mismo tiempo."
+              en="Each % is independent — they don't sum to 100, because they can be several things at once."
+            />
+          </p>
+
           <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/probabilidades"
