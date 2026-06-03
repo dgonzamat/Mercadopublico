@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { cases, TOTAL_CASES } from "@/lib/data";
-import { countryCount } from "@/lib/corpusStats";
+import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import {
   Eyebrow,
@@ -11,12 +10,9 @@ import {
   PullQuote,
 } from "@/lib/typography";
 
-const COUNTRIES = countryCount(cases);
-const YEARS_OF_PHENOMENON = 2026 - 1947;
-
 export const metadata = {
   title: "Resumen · UAP Atlas",
-  description: `Versión accesible del análisis: 79 años de fenómeno UAP institucional, ${TOTAL_CASES} casos en ${COUNTRIES} países, en 10 minutos de lectura.`,
+  description: `Versión accesible del análisis: ${STATS.years} años de fenómeno UAP institucional, ${STATS.cases} casos en ${STATS.countries} países, en 10 minutos de lectura.`,
 };
 
 const FINDINGS = [
@@ -24,12 +20,12 @@ const FINDINGS = [
     es: {
       confidence: "Alta",
       title: "El fenómeno es real",
-      text: `${TOTAL_CASES} casos institucionales documentados por gobiernos, militares y agencias entre 1947 y 2026, en ${COUNTRIES} países. Multi-sensor, multi-witness, fotos, video, radar, daño físico medible.`,
+      text: `${STATS.cases} casos institucionales documentados por gobiernos, militares y agencias entre 1947 y 2026, en ${STATS.countries} países. Multi-sensor, multi-witness, fotos, video, radar, daño físico medible.`,
     },
     en: {
       confidence: "High",
       title: "The phenomenon is real",
-      text: `${TOTAL_CASES} institutional cases documented by governments, militaries and agencies between 1947 and 2026, in ${COUNTRIES} countries. Multi-sensor, multi-witness, photos, video, radar, measurable physical damage.`,
+      text: `${STATS.cases} institutional cases documented by governments, militaries and agencies between 1947 and 2026, in ${STATS.countries} countries. Multi-sensor, multi-witness, photos, video, radar, measurable physical damage.`,
     },
   },
   {
@@ -141,8 +137,8 @@ export default function ResumenPage() {
         </Eyebrow>
         <H1>
           <T
-            es={`${YEARS_OF_PHENOMENON} años en 10 minutos`}
-            en={`${YEARS_OF_PHENOMENON} years in 10 minutes`}
+            es={`${STATS.years} años en 10 minutos`}
+            en={`${STATS.years} years in 10 minutes`}
           />
         </H1>
         <Lede className="text-muted">
@@ -305,8 +301,8 @@ export default function ResumenPage() {
         </PullQuote>
         <Body className="text-muted">
           <T
-            es={`${YEARS_OF_PHENOMENON} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. Vallée describió este patrón en 1975 — ahora lo vemos en directo. Lo que decidamos hacer con la información es la pregunta política de nuestra generación.`}
-            en={`${YEARS_OF_PHENOMENON} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Vallée described this pattern in 1975 — we now see it in real time. What we do with the information is the political question of our generation.`}
+            es={`${STATS.years} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. Vallée describió este patrón en 1975 — ahora lo vemos en directo. Lo que decidamos hacer con la información es la pregunta política de nuestra generación.`}
+            en={`${STATS.years} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Vallée described this pattern in 1975 — we now see it in real time. What we do with the information is the political question of our generation.`}
           />
         </Body>
       </section>
@@ -317,8 +313,8 @@ export default function ResumenPage() {
           className="inline-flex min-h-[44px] items-center rounded-md bg-accent px-5 py-2 text-sm font-medium text-bg hover:bg-accent/90"
         >
           <T
-            es={`Explorar ${TOTAL_CASES} casos →`}
-            en={`Explore ${TOTAL_CASES} cases →`}
+            es={`Explorar ${STATS.cases} casos →`}
+            en={`Explore ${STATS.cases} cases →`}
           />
         </Link>
         <Link

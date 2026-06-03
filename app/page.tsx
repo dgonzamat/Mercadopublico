@@ -1,20 +1,15 @@
 import Link from "next/link";
-import { cases } from "@/lib/data";
 import { TimelineByYear } from "@/components/TimelineByYear";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
-import { countryCount } from "@/lib/corpusStats";
+import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
   title: "UAP Atlas — La evidencia institucional",
-  description:
-    "Atlas de casos UAP institucionales 1947–2026 — los que sobrevivieron filtros militares, congresionales y periodísticos. Probabilidades calibradas vía ICD-203.",
+  description: `Atlas de ${STATS.cases} casos UAP institucionales ${STATS.startYear}–${STATS.endYear} — los que sobrevivieron filtros militares, congresionales y periodísticos. Probabilidades calibradas vía ICD-203.`,
 };
 
 export default function HomePage() {
-  const countries = countryCount(cases);
-  const tierSCount = cases.filter((c) => c.tier === "S").length;
-  const yearsOfPhenomenon = 2026 - 1947;
   return (
     <div className="space-y-40 md:space-y-56">
       {/* ────────── 1 · HERO (hook humano + sub-hero filtro) ────────── */}
@@ -33,7 +28,7 @@ export default function HomePage() {
                   Hay algo que las instituciones no pudieron explicar desde 1947.
                   <br />
                   Llevamos{" "}
-                  <span className="text-accent italic">{yearsOfPhenomenon} años</span>{" "}
+                  <span className="text-accent italic">{STATS.years} años</span>{" "}
                   sin acordar qué es.
                 </>
               }
@@ -42,7 +37,7 @@ export default function HomePage() {
                   There&apos;s something institutions couldn&apos;t explain since 1947.
                   <br />
                   We&apos;ve spent{" "}
-                  <span className="text-accent italic">{yearsOfPhenomenon} years</span>{" "}
+                  <span className="text-accent italic">{STATS.years} years</span>{" "}
                   without agreeing what it is.
                 </>
               }
@@ -50,8 +45,8 @@ export default function HomePage() {
           </h1>
           <Lede className="max-w-2xl text-muted">
             <T
-              es={`Un atlas de los ${cases.length} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
-              en={`An atlas of the ${cases.length} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
+              es={`Un atlas de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
+              en={`An atlas of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
             />
           </Lede>
         </div>
@@ -180,7 +175,7 @@ export default function HomePage() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
           <BigStat
-            number={cases.length}
+            number={STATS.cases}
             es={{
               label: "Casos institucionales",
               sub: "Sobrevivieron filtros militares, congresionales y periodísticos",
@@ -191,7 +186,7 @@ export default function HomePage() {
             }}
           />
           <BigStat
-            number={yearsOfPhenomenon}
+            number={STATS.years}
             es={{
               label: "Años de fenómeno",
               sub: "Más tiempo del que duró toda la Guerra Fría (1947–1991)",
@@ -202,7 +197,7 @@ export default function HomePage() {
             }}
           />
           <BigStat
-            number={countries}
+            number={STATS.countries}
             es={{
               label: "Países con registros",
               sub: "Cada continente menos Antártida — no es fenómeno gringo",
@@ -264,8 +259,8 @@ export default function HomePage() {
             className="inline-flex min-h-[48px] items-center border-2 border-bg px-8 py-3 text-base font-medium text-bg hover:bg-bg hover:text-text"
           >
             <T
-              es={`Caminar los ${cases.length} casos en orden cronológico →`}
-              en={`Walk the ${cases.length} cases chronologically →`}
+              es={`Caminar los ${STATS.cases} casos en orden cronológico →`}
+              en={`Walk the ${STATS.cases} cases chronologically →`}
             />
           </Link>
         </div>
@@ -287,12 +282,12 @@ export default function HomePage() {
             es={{
               eyebrow: "El caso más fuerte",
               title: "¿Cuál es la mejor evidencia?",
-              desc: `Los ${tierSCount} casos Tier S del corpus: militar + sensor + múltiples testigos.`,
+              desc: `Los ${STATS.tierS} casos Tier S del corpus: militar + sensor + múltiples testigos.`,
             }}
             en={{
               eyebrow: "The strongest case",
               title: "What's the best evidence?",
-              desc: `The ${tierSCount} Tier S cases of the corpus: military + sensor + multiple witnesses.`,
+              desc: `The ${STATS.tierS} Tier S cases of the corpus: military + sensor + multiple witnesses.`,
             }}
             href="/cases"
           />
@@ -315,12 +310,12 @@ export default function HomePage() {
             es={{
               eyebrow: "La distribución global",
               title: "¿Es lo mismo en todo el mundo?",
-              desc: `${cases.length} casos sobre ${countries} países. Bélgica, Chile, Brasil y España tienen casos militares oficiales tan sólidos como EEUU.`,
+              desc: `${STATS.cases} casos sobre ${STATS.countries} países. Bélgica, Chile, Brasil y España tienen casos militares oficiales tan sólidos como EEUU.`,
             }}
             en={{
               eyebrow: "Global distribution",
               title: "Is it the same everywhere?",
-              desc: `${cases.length} cases across ${countries} countries. Belgium, Chile, Brazil and Spain have official military cases as solid as the US.`,
+              desc: `${STATS.cases} cases across ${STATS.countries} countries. Belgium, Chile, Brazil and Spain have official military cases as solid as the US.`,
             }}
             href="/atlas"
           />
