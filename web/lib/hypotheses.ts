@@ -15,13 +15,31 @@ import { ICD_LABELS, pctToIcdLabel, type IcdLabel } from "./icd203";
  *   - "derived"    — logical consequence of the primitives, not an
  *                    independent declaration. Computed, not calibrated.
  *
- * `corpusPct` is the analytical midpoint estimate. Mapped to ICD-203 band
- * via pctToIcdLabel() — the standard remains words-over-decimals because
- * we lack a formal likelihood model.
+ * CALIBRATION MODEL (Option C — hybrid derived + override):
+ *
+ *   - `corpusPct` is the PRIOR — the baseline probability the analyst
+ *     assigns to this proposition in absence of corpus evidence. Used as
+ *     the starting point for build-time derivation.
+ *
+ *   - At build time, `effectiveCalibration(h, cases)` (in
+ *     lib/hypothesisMapping) computes the displayed probability:
+ *       effective = prior + pressure × 0.5
+ *     where `pressure` is the sum of declared case contributions for the
+ *     hypothesis (see lib/types.ts EvidenceContribution). Each new case
+ *     therefore shifts the displayed pct automatically.
+ *
+ *   - `corpusPctOverride` is an optional manual final value that bypasses
+ *     all pressure logic. Used for hypotheses whose pct is NOT a function
+ *     of the corpus — antecedent (pre-filter universe) and derived
+ *     (consequence-of-primitives) hypotheses always declare an override.
+ *
+ *   - The verbal ICD-203 band is recomputed from the effective pct, so
+ *     adding cases that shift the pct across a band boundary auto-updates
+ *     the verbal label too.
  *
  * Umbrella relations (subclass → superclass) live in
- * `lib/hypothesisMapping.ts` (UMBRELLA_SUBCLASSES). Evidence counts honor
- * them: an umbrella inherits its subclasses' case/pattern coverage.
+ * `lib/hypothesisMapping.ts` (UMBRELLA_SUBCLASSES). Evidence counts and
+ * pressure both honor them: an umbrella inherits its subclasses' coverage.
  */
 
 export type HypothesisKind = "primitive" | "antecedent" | "derived";
@@ -30,11 +48,12 @@ export interface Hypothesis {
   id: string;
   label: string;
   labelEn: string;
-  corpusPct: number;
+  corpusPct: number;                // PRIOR — baseline before corpus evidence
+  corpusPctOverride?: number;       // optional manual final value (bypasses pressure)
   color: string;
   note: string;
   noteEn: string;
-  icd: IcdLabel;
+  icd: IcdLabel;                    // computed from corpusPct (prior); see effectiveCalibration for derived
   kind: HypothesisKind;
 }
 
@@ -45,9 +64,10 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     label: "Misidentificaciones explican la mayoría de reportes",
     labelEn: "Misidentifications explain the majority of reports",
     corpusPct: 97,
+    corpusPctOverride: 97,
     color: "#6b6356",
-    note: "Esta hipótesis describe un universo distinto: los miles de reportes generales (estilo Project Blue Book o AARO) antes de pasar filtros institucionales. En ese universo, casi todo se resuelve como confusiones — globos, satélites, aves, lens flares, pareidolia. Los casos del corpus ya pasaron esos filtros precisamente para excluir esta categoría, así que aquí su peso es prácticamente cero.",
-    noteEn: "This hypothesis describes a different universe: the thousands of general reports (Project Blue Book / AARO style) before passing institutional filters. In that universe, nearly everything resolves as confusions — balloons, satellites, birds, lens flares, pareidolia. The corpus cases already passed those filters precisely to exclude this category, so its weight here is practically zero.",
+    note: "Esta hipótesis describe un universo distinto: los miles de reportes generales (estilo Project Blue Book o AARO) ANTES de pasar filtros institucionales. En ese universo, casi todo se resuelve como confusiones — globos, satélites, aves, lens flares, pareidolia. Los casos del corpus ya pasaron esos filtros precisamente para excluir esta categoría, así que aquí su peso es prácticamente cero.",
+    noteEn: "This hypothesis describes a different universe: the thousands of general reports (Project Blue Book / AARO style) BEFORE passing institutional filters. In that universe, nearly everything resolves as confusions — balloons, satellites, birds, lens flares, pareidolia. The corpus cases already passed those filters precisely to exclude this category, so its weight here is practically zero.",
   },
   {
     id: "heterogeneidad",
@@ -55,6 +75,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     label: "El corpus contiene varias causas heterogéneas",
     labelEn: "The corpus contains several heterogeneous causes",
     corpusPct: 95,
+    corpusPctOverride: 95,
     color: "#c41e3a",
     note: "Esta no es una hipótesis aparte — es una conclusión que se sigue de las otras. Si más de una explicación tiene probabilidad alta (programas clasificados al 88%, fenómenos naturales al 70%), por matemática básica el corpus tiene que contener varias causas mezcladas. Negarlo requeriría asumir que casi todos los casos comparten la misma explicación — estadísticamente extremo en 79 años.",
     noteEn: "This isn't a separate hypothesis — it's a conclusion that follows from the others. If more than one explanation has high probability (classified programs at 88%, natural phenomena at 70%), basic math forces the corpus to contain mixed causes. Denying this would require assuming nearly all cases share a single explanation — statistically extreme over 79 years.",
