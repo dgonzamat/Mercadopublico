@@ -5,8 +5,16 @@ import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { countryCount } from "@/lib/corpusStats";
 
+export const metadata = {
+  title: "UAP Atlas — La evidencia institucional",
+  description:
+    "Atlas de casos UAP institucionales 1947–2026 — los que sobrevivieron filtros militares, congresionales y periodísticos. Probabilidades calibradas vía ICD-203.",
+};
+
 export default function HomePage() {
   const countries = countryCount(cases);
+  const tierSCount = cases.filter((c) => c.tier === "S").length;
+  const yearsOfPhenomenon = 2026 - 1947;
   return (
     <div className="space-y-40 md:space-y-56">
       {/* ────────── 1 · HERO (hook humano + sub-hero filtro) ────────── */}
@@ -22,19 +30,19 @@ export default function HomePage() {
             <T
               es={
                 <>
-                  Hay algo real en el cielo desde 1947.
+                  Hay algo que las instituciones no pudieron explicar desde 1947.
                   <br />
                   Llevamos{" "}
-                  <span className="text-accent italic">79 años</span>{" "}
+                  <span className="text-accent italic">{yearsOfPhenomenon} años</span>{" "}
                   sin acordar qué es.
                 </>
               }
               en={
                 <>
-                  There&apos;s something real in the sky since 1947.
+                  There&apos;s something institutions couldn&apos;t explain since 1947.
                   <br />
                   We&apos;ve spent{" "}
-                  <span className="text-accent italic">79 years</span>{" "}
+                  <span className="text-accent italic">{yearsOfPhenomenon} years</span>{" "}
                   without agreeing what it is.
                 </>
               }
@@ -93,6 +101,26 @@ export default function HomePage() {
             </p>
           </div>
 
+          <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+            <T
+              es={
+                <>
+                  Las 4 principales — el chart completo (8 hipótesis) en{" "}
+                  <Link href="/probabilidades" className="text-accent hover:underline">
+                    /probabilidades
+                  </Link>
+                </>
+              }
+              en={
+                <>
+                  The 4 main ones — full chart (8 hypotheses) at{" "}
+                  <Link href="/probabilidades" className="text-accent hover:underline">
+                    /probabilidades
+                  </Link>
+                </>
+              }
+            />
+          </p>
           <div className="grid gap-px bg-bg/15 md:grid-cols-4">
             <CategoryFact
               eyebrow="97%"
@@ -163,7 +191,7 @@ export default function HomePage() {
             }}
           />
           <BigStat
-            number={79}
+            number={yearsOfPhenomenon}
             es={{
               label: "Años de fenómeno",
               sub: "Más tiempo del que duró toda la Guerra Fría (1947–1991)",
@@ -259,12 +287,12 @@ export default function HomePage() {
             es={{
               eyebrow: "El caso más fuerte",
               title: "¿Cuál es la mejor evidencia?",
-              desc: "Los 29 casos Tier S del corpus: militar + sensor + múltiples testigos.",
+              desc: `Los ${tierSCount} casos Tier S del corpus: militar + sensor + múltiples testigos.`,
             }}
             en={{
               eyebrow: "The strongest case",
               title: "What's the best evidence?",
-              desc: "The 29 Tier S cases of the corpus: military + sensor + multiple witnesses.",
+              desc: `The ${tierSCount} Tier S cases of the corpus: military + sensor + multiple witnesses.`,
             }}
             href="/cases"
           />
@@ -273,12 +301,12 @@ export default function HomePage() {
             es={{
               eyebrow: "El razonamiento",
               title: "¿Por qué nadie acuerda qué son?",
-              desc: "8 hipótesis con sus probabilidades calibradas vía ICD-203 — y dónde está la frontera analítica real.",
+              desc: "8 explicaciones con su probabilidad. Una sola se queda 50-50 — ahí vive el debate real.",
             }}
             en={{
               eyebrow: "The reasoning",
               title: "Why does no one agree what they are?",
-              desc: "8 hypotheses with probabilities calibrated via ICD-203 — and where the actual analytical frontier is.",
+              desc: "8 explanations with their probability. Only one stays 50-50 — that's where the real debate lives.",
             }}
             href="/probabilidades"
           />
@@ -287,12 +315,12 @@ export default function HomePage() {
             es={{
               eyebrow: "La distribución global",
               title: "¿Es lo mismo en todo el mundo?",
-              desc: "52 casos georeferenciados sobre 16 países. Patrones que solo aparecen al mirar el mapa.",
+              desc: `${cases.length} casos sobre ${countries} países. Bélgica, Chile, Brasil y España tienen casos militares oficiales tan sólidos como EEUU.`,
             }}
             en={{
               eyebrow: "Global distribution",
               title: "Is it the same everywhere?",
-              desc: "52 georeferenced cases across 16 countries. Patterns visible only on the map.",
+              desc: `${cases.length} cases across ${countries} countries. Belgium, Chile, Brazil and Spain have official military cases as solid as the US.`,
             }}
             href="/atlas"
           />
@@ -316,9 +344,9 @@ function CategoryFact({
       <p className="font-mono text-xs uppercase tracking-widest text-accent">
         {eyebrow}
       </p>
-      <p className="font-display text-2xl font-medium leading-tight text-bg md:text-3xl">
+      <h3 className="font-display text-2xl font-medium leading-tight text-bg md:text-3xl">
         <T es={es.label} en={en.label} />
-      </p>
+      </h3>
       <p className="text-sm leading-snug text-bg/70">
         <T es={es.desc} en={en.desc} />
       </p>
@@ -350,9 +378,9 @@ function CtaCard({
           <T es={es.eyebrow} en={en.eyebrow} />
         </span>
       </div>
-      <p className="font-display text-3xl font-medium leading-tight text-text group-hover:text-bg md:text-4xl">
+      <h3 className="font-display text-3xl font-medium leading-tight text-text group-hover:text-bg md:text-4xl">
         <T es={es.title} en={en.title} />
-      </p>
+      </h3>
       <p className="text-sm leading-relaxed text-muted group-hover:text-bg/80">
         <T es={es.desc} en={en.desc} />
       </p>
