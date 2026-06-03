@@ -3,6 +3,15 @@ import { TimelineByYear } from "@/components/TimelineByYear";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
+import { cases } from "@/lib/data";
+import { getHypothesis } from "@/lib/hypotheses";
+import { effectiveCalibration } from "@/lib/hypothesisMapping";
+
+function effectivePctFor(id: string): number {
+  const h = getHypothesis(id);
+  if (!h) return 0;
+  return Math.round(effectiveCalibration(h, cases).pct);
+}
 
 export const metadata = {
   title: "UAP Codex — La evidencia institucional",
@@ -120,8 +129,8 @@ export default function HomePage() {
 
           <p className="max-w-3xl text-sm leading-relaxed text-bg/70">
             <T
-              es="Antes de mirar el corpus: la gran mayoría de reportes UAP en la población general son confusiones — globos, satélites, aves, lens flares. Project Blue Book resolvió cerca del 97% así. Lo que sigue son las explicaciones para el resto: los 64 casos que pasaron el filtro institucional."
-              en="Before looking at the corpus: the vast majority of UAP reports in the general population are confusions — balloons, satellites, birds, lens flares. Project Blue Book resolved roughly 97% that way. What follows are the explanations for the rest: the 64 cases that passed the institutional filter."
+              es={`Antes de mirar el corpus: la gran mayoría de reportes UAP en la población general son confusiones — globos, satélites, aves, lens flares. Project Blue Book resolvió cerca del 97% así. Lo que sigue son las explicaciones para el resto: los ${STATS.cases} casos que pasaron el filtro institucional.`}
+              en={`Before looking at the corpus: the vast majority of UAP reports in the general population are confusions — balloons, satellites, birds, lens flares. Project Blue Book resolved roughly 97% that way. What follows are the explanations for the rest: the ${STATS.cases} cases that passed the institutional filter.`}
             />
           </p>
 
@@ -147,17 +156,17 @@ export default function HomePage() {
           </p>
           <div className="grid gap-px bg-bg/15 md:grid-cols-3">
             <CategoryFact
-              eyebrow="88%"
+              eyebrow={`${effectivePctFor("programas-clasificados")}%`}
               es={{ label: "Programa clasificado", desc: "Casi seguro que parte son drones experimentales no acknowledged — pasó con el U-2, el F-117 y el B-2" }}
               en={{ label: "Classified program", desc: "Almost certain part are unannounced experimental drones — happened with the U-2, F-117 and B-2" }}
             />
             <CategoryFact
-              eyebrow="70%"
+              eyebrow={`${effectivePctFor("fenomenos-naturales")}%`}
               es={{ label: "Natural raro", desc: "Plasma atmosférico, sprites, ionización (recurrencias en Hessdalen, Marfa, Popocatépetl)" }}
               en={{ label: "Rare natural", desc: "Atmospheric plasma, sprites, ionization (recurrences at Hessdalen, Marfa, Popocatépetl)" }}
             />
             <CategoryFact
-              eyebrow="28%"
+              eyebrow={`${effectivePctFor("entidades-no-humanas")}%`}
               es={{ label: "Algo no humano", desc: "La categoría más amplia — improbable, pero no descartable. Donde realmente vive el debate." }}
               en={{ label: "Something non-human", desc: "The broadest category — unlikely, but not ruled out. Where the real debate lives." }}
             />
