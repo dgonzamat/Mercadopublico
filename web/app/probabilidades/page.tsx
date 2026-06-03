@@ -9,7 +9,9 @@ import {
 import {
   PATTERN_TO_HYPOTHESIS,
   UMBRELLA_SUBCLASSES,
+  effectiveCalibration,
 } from "@/lib/hypothesisMapping";
+import { pctToIcdLabel } from "@/lib/icd203";
 import { IcdProbabilityChart } from "@/components/IcdProbabilityChart";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
@@ -599,6 +601,9 @@ function HypothesisSection({
   const h = HYPOTHESES.find((x) => x.id === hypothesisId);
   if (!h) return null;
 
+  const calib = effectiveCalibration(h, cases);
+  const effectiveIcd = pctToIcdLabel(calib.pct);
+
   const supportingCases = cases.filter((c) =>
     c.patterns.some((p) => PATTERN_TO_HYPOTHESIS[p] === hypothesisId),
   );
@@ -648,7 +653,10 @@ function HypothesisSection({
           backgroundColor: `${h.color}11`,
         }}
       >
-        <T es={h.icd.labelEs} en={h.icd.label} />
+        <T es={effectiveIcd.labelEs} en={effectiveIcd.label} />{" "}
+        <span className="opacity-70">
+          ({calib.pct.toFixed(0)}%)
+        </span>
       </span>
     </div>
   );
