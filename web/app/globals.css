@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background-color: #f7f2e8;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Editorial prose styles — opt-in via .prose-editorial class.
+   Applied to reading-mode blocks (whatHappened, whyMatters, about, resumen). */
+.prose-editorial p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.prose-editorial p:last-child {
+  margin-bottom: 0;
+}
+.prose-editorial > p:first-of-type::first-letter {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  float: left;
+  padding: 0.25rem 0.5rem 0 0;
+  color: #e5e5ee;
+}
+.prose-editorial blockquote {
+  border-left: 2px solid #7fdbff;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #e5e5ee;
+}
+.prose-editorial sup {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+}
+.prose-editorial sup a {
+  color: #7fdbff;
+  text-decoration: none;
+}
+
+/* Full-bleed: break out of a constrained parent and span the viewport.
+   Used on home for inverted dark blocks and edge-to-edge visualizations. */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Bilingual switching — paired with the <T es=".." en=".."/> primitive.
+   Default (no data-locale on html, or data-locale="es") hides EN spans.
+   When LocaleToggle sets data-locale="en", we hide ES spans and show EN. */
+[data-lang="en"] {
+  display: none;
+}
+html[data-locale="en"] [data-lang="en"] {
+  display: inline;
+}
+html[data-locale="en"] [data-lang="es"] {
+  display: none;
+}
