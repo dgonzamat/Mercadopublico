@@ -20,12 +20,20 @@
   ],
   "category": "incident",
   "whatHappened": "Entre el 26 y 28 de diciembre de 1980, personal de la USAF estacionado en RAF Bentwaters y RAF Woodbridge (Suffolk, Inglaterra) reportó luces anómalas en Rendlesham Forest, adyacente a las bases que albergaban armamento nuclear estadounidense. La madrugada del 26, los Airmen John Burroughs, Bud Steffens y posteriormente el Sgt. Jim Penniston ingresaron al bosque y reportaron un objeto metálico triangular en el suelo con símbolos grabados que Penniston tocó y dibujó.\n\nLa madrugada del 28, el Tte. Cnel. Charles Halt (Deputy Base Commander de Bentwaters) lideró una segunda investigación. Halt grabó en cassette en tiempo real una bitácora de 18 minutos describiendo: tres marcas de impresión en el suelo, lecturas de radiación elevadas (Geiger Beta/Gamma 0.07 milliroentgens — significativamente sobre background) en los puntos de impresión, y luces aéreas anómalas observadas por el equipo. La grabación de Halt fue luego desclasificada y es el único registro contemporáneo de tiempo real de un caso UAP por un oficial militar de campo en operación.\n\nEl 13 de enero de 1981, Halt envió un memorándum oficial al British Ministry of Defence titulado 'Unexplained Lights' reportando los hechos. El memo Halt fue desclasificado en 1983 vía FOIA estadounidense. El MoD británico cerró su evaluación interna concluyendo 'no defence significance'.",
+  "whatHappened_en": "Between December 26 and 28, 1980, USAF personnel stationed at RAF Bentwaters and RAF Woodbridge (Suffolk, England) reported anomalous lights in Rendlesham Forest, adjacent to the bases that housed U.S. nuclear weapons. Early on December 26, Airmen John Burroughs, Bud Steffens, and later Sgt. Jim Penniston entered the forest and reported a triangular metallic object on the ground with engraved symbols that Penniston touched and sketched.\n\nIn the early hours of December 28, Lt. Col. Charles Halt (Deputy Base Commander of Bentwaters) led a second investigation. Halt recorded an 18-minute real-time cassette log describing: three impression marks on the ground, elevated radiation readings (Geiger Beta/Gamma 0.07 milliroentgens — significantly above background) at the impression points, and anomalous aerial lights observed by the team. The Halt tape was later declassified and is the only contemporary real-time record of a UAP case by a field military officer in operation.\n\nOn January 13, 1981, Halt sent an official memorandum to the British Ministry of Defence titled 'Unexplained Lights' reporting the facts. The Halt memo was declassified in 1983 via U.S. FOIA. The UK MoD closed its internal review concluding 'no defence significance'.",
   "whyMatters": "Único caso UAP donde existe grabación de audio contemporánea en tiempo real por un oficial militar de campo, complementada por memorando oficial firmado y desclasificado, evidencia física registrada (marcas de suelo + radiación) y testimonio sostenido públicamente por testigos del más alto rango (Halt, Penniston, Burroughs) durante más de cuarenta años. Ocurrió en perímetro inmediato de instalación con armamento nuclear OTAN — un contexto que ningún país pudo tratar como insignificante operacionalmente.",
+  "whyMatters_en": "The only UAP case with a real-time contemporary audio recording by a field military officer, complemented by a signed and declassified official memo, recorded physical evidence (ground marks + radiation), and public testimony sustained for more than forty years by witnesses of the highest rank (Halt, Penniston, Burroughs). It occurred on the immediate perimeter of a NATO nuclear-weapons installation — a context no country could treat as operationally insignificant.",
   "evidence": [
     "Memorándum Halt al MoD (13 enero 1981, desclasificado 1983)",
     "Grabación audio de Halt de 18 minutos durante la investigación nocturna del 28 diciembre",
     "Lecturas radiación 0.07 milliroentgens en marcas de suelo (10x background local)",
     "Dibujos de Penniston de los símbolos grabados en superficie del objeto"
+  ],
+  "evidence_en": [
+    "Halt memorandum to the MoD (January 13, 1981, declassified 1983)",
+    "Halt's 18-minute audio recording during the nighttime investigation of December 28",
+    "Radiation readings of 0.07 milliroentgens at the ground marks (10x local background)",
+    "Penniston's drawings of the symbols engraved on the object's surface"
   ],
   "sources": [
     {
@@ -43,5 +51,31 @@
     {
       "name": "Penniston, J. & Burroughs, J. — Encounter in Rendlesham Forest (2014)"
     }
-  ]
+  ],
+  "sources_en": [
+    {
+      "name": "Halt Memo, USAF (13 enero 1981)",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp95-00972r000200200013-3"
+    },
+    {
+      "name": "Halt Tape — declassified original audio",
+      "url": "https://www.ianridpath.com/ufo/rendlesham_halttape.htm"
+    },
+    {
+      "name": "MoD UK — Rendlesham Forest File (DEFE 24/1948)",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C12104616"
+    },
+    {
+      "name": "Penniston, J. & Burroughs, J. — Encounter in Rendlesham Forest (2014)"
+    }
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halt_Memorandum.jpg",
+    "alt": "Memorándum 'Unexplained Lights' del Teniente Coronel Charles Halt al Ministerio de Defensa británico, fechado 13 de enero de 1981.",
+    "caption": "Memorándum 'Unexplained Lights' del Lt. Col. Charles Halt al UK MoD. RAF Bentwaters, 13 de enero 1981 — el único reporte oficial de la USAF que describe el evento como real.",
+    "caption_en": "'Unexplained Lights' memorandum from Lt. Col. Charles Halt to the UK MoD. RAF Bentwaters, January 13 1981 — the only official USAF report that treats the event as real.",
+    "source": "United States Air Force",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Halt_Memorandum.jpg"
+  }
 }
