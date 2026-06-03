@@ -531,6 +531,81 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-10 space-y-4 border-t border-text/15 pt-8">
+            <Eyebrow>
+              <T
+                es="Modelo de calibración por caso"
+                en="Per-case calibration model"
+              />
+            </Eyebrow>
+            <h3 className="font-display text-xl font-medium leading-snug text-text md:text-2xl">
+              <T
+                es="Cómo cada caso nuevo recalibra el sitio entero, en build-time"
+                en="How each new case recalibrates the entire site, at build-time"
+              />
+            </h3>
+            <Body className="text-muted">
+              <T
+                es="Cada caso del corpus declara explícitamente a qué hipótesis aporta evidencia y con qué fuerza. La suma de esas contribuciones genera un índice continuo (presión) que se muestra junto al juicio verbal calibrado (ICD-203) en /probabilidades. Cuando la presión drifta más de 5 puntos porcentuales respecto a la banda verbal, el sitio lo señaliza — pero nunca cambia el juicio automáticamente. Esto preserva la honestidad estructural del análisis: la presión es objetiva y se actualiza con cada caso; el juicio verbal queda en manos humanas."
+                en="Each corpus case explicitly declares which hypothesis it contributes to and with what strength. The sum of those contributions generates a continuous index (pressure) shown alongside the verbal calibrated judgment (ICD-203) on /probabilidades. When pressure drifts more than 5 percentage points from the verbal band, the site flags it — but never changes the judgment automatically. This preserves the analysis's structural honesty: pressure is objective and updates with each case; verbal judgment stays in human hands."
+              />
+            </Body>
+            <Body className="text-muted">
+              <T
+                es={
+                  <>
+                    Los pesos son públicos y declarados:{" "}
+                    <strong className="text-text">mínimo +0.5</strong>{" "}
+                    (repite patrón ya documentado),{" "}
+                    <strong className="text-text">modesto +2</strong>{" "}
+                    (corroboración independiente o una modalidad sensora añadida),{" "}
+                    <strong className="text-text">sustancial +5</strong>{" "}
+                    (modalidad sensora nueva o contradice patrón establecido),{" "}
+                    <strong className="text-text">categoría nueva +15</strong>{" "}
+                    (clase de evidencia entirely nueva — material recuperado +
+                    análisis publicado, identificación de origen, etc).
+                  </>
+                }
+                en={
+                  <>
+                    Weights are public and declared:{" "}
+                    <strong className="text-text">minimal +0.5</strong>{" "}
+                    (repeats an already-documented pattern),{" "}
+                    <strong className="text-text">modest +2</strong>{" "}
+                    (independent corroboration or one added sensor modality),{" "}
+                    <strong className="text-text">substantial +5</strong>{" "}
+                    (new sensor modality or contradicts established pattern),{" "}
+                    <strong className="text-text">category-breaking +15</strong>{" "}
+                    (entirely new class of evidence — recovered material +
+                    published analysis, origin identification, etc).
+                  </>
+                }
+              />
+            </Body>
+            <Caption>
+              <T
+                es={
+                  <>
+                    Cada caso individual muestra su contribución declarada en su
+                    propia página, en la sección{" "}
+                    <em>&quot;Lo que este caso movió&quot;</em>. Los casos sin
+                    contribución declarada se auto-siembran desde sus patrones
+                    al peso mínimo (+0.5 por patrón mapeado).
+                  </>
+                }
+                en={
+                  <>
+                    Each individual case shows its declared contribution on its
+                    own page, in the <em>&quot;What this case moved&quot;</em>{" "}
+                    section. Cases without a declared contribution are
+                    auto-seeded from their patterns at minimal weight (+0.5 per
+                    mapped pattern).
+                  </>
+                }
+              />
+            </Caption>
+          </div>
             </div>
           </details>
         </section>
