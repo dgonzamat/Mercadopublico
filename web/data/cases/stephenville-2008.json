@@ -1,0 +1,66 @@
+{
+  "id": "stephenville-2008",
+  "num": 40,
+  "name": "Stephenville",
+  "year_start": 2008,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 32.22,
+    "lng": -98.2,
+    "place": "Stephenville, Texas"
+  },
+  "tier": "B",
+  "probability": 40,
+  "summary": "Triángulo grande silencioso, FAA radar",
+  "summary_en": "Large silent triangle, FAA radar",
+  "patterns": [
+    "8l"
+  ],
+  "category": "incident",
+  "whatHappened": "El 8 de enero de 2008, alrededor de las 18:15 hora local, múltiples residentes de Stephenville y alrededores (Erath County, Texas) observaron un objeto grande y silencioso con luces brillantes moviéndose lentamente al este. El testigo de mayor perfil fue el alguacil Lee Roy Gaitan; otros incluyeron pilotos privados, granjeros y residentes que reportaron de manera independiente.\n\nEl investigador Robert Powell (entonces director de investigación de MUFON) solicitó datos de radar de la FAA bajo FOIA. La FAA proporcionó tracks de radar primario que mostraron una traza no identificada moviéndose por la región. Crucialmente, la traza derivó hacia el espacio aéreo restringido de George W. Bush Crawford Ranch en aproximación lenta — coincidente con presencia del presidente en el rancho. Aviones F-16 del 457th Fighter Squadron (Carswell/Fort Worth) fueron lanzados según los registros de radar.\n\nLa 301st Fighter Wing eventualmente confirmó haber realizado ejercicios de entrenamiento en la zona esa noche, contradiciendo su declaración inicial de no haber tenido aeronaves en el área. La explicación alternativa convencional (F-16 en entrenamiento) no contradice los testimonios específicos sobre el objeto grande con luces, pero la 301st no ha aclarado completamente la discrepancia. El caso es uno de los pocos con análisis FOIA exhaustivo de radar primario de FAA, publicado por MUFON en reporte técnico extenso.",
+  "whatHappened_en": "On January 8, 2008, around 18:15 local time, multiple residents of Stephenville and surrounding areas (Erath County, Texas) observed a large, silent object with bright lights moving slowly to the east. The highest-profile witness was Constable Lee Roy Gaitan; others included private pilots, farmers, and residents reporting independently.\n\nResearcher Robert Powell (then MUFON director of research) requested FAA radar data via FOIA. The FAA provided primary radar tracks showing an unidentified trace moving across the region. Critically, the trace drifted toward the restricted airspace of George W. Bush's Crawford Ranch on a slow approach — coinciding with the president's presence at the ranch. F-16 aircraft from the 457th Fighter Squadron (Carswell/Fort Worth) were launched according to radar records.\n\nThe 301st Fighter Wing eventually confirmed it had been conducting training exercises in the area that night, contradicting its initial statement that no aircraft had been in the area. The conventional alternative explanation (F-16s in training) does not contradict the specific testimony about the large lit object, but the 301st has not fully clarified the discrepancy. The case is one of the few with exhaustive FOIA analysis of FAA primary radar, published by MUFON in an extensive technical report.",
+  "whyMatters": "Único caso con análisis FOIA de radar primario FAA correlacionado con testimonios civiles y presencia presidencial en zona restringida. La contradicción inicial-corrección de la 301st Fighter Wing es dato institucional sobre comportamiento de comunicación militar ante eventos públicos. Establece metodología de uso de FOIA + radar para reconstrucción objetiva de eventos UAP modernos.",
+  "whyMatters_en": "The only case with FOIA analysis of FAA primary radar correlated with civilian testimony and presidential presence in restricted airspace. The 301st Fighter Wing's initial-then-corrected statements are an institutional data point on military communication behavior during public events. Establishes a FOIA + radar methodology for objective reconstruction of modern UAP events.",
+  "evidence": [
+    "Datos radar FAA obtenidos vía FOIA por MUFON",
+    "Testimonios civiles convergentes (alguacil + pilotos privados + residentes)",
+    "Correlación geográfica con espacio aéreo restringido Crawford Ranch",
+    "Contradicción documentada en declaraciones 301st Fighter Wing"
+  ],
+  "evidence_en": [
+    "FAA radar data obtained via FOIA by MUFON",
+    "Convergent civilian testimony (constable + private pilots + residents)",
+    "Geographic correlation with Crawford Ranch restricted airspace",
+    "Documented contradiction in 301st Fighter Wing statements"
+  ],
+  "sources": [
+    {
+      "name": "Powell, R. — MUFON Stephenville Report (2008)",
+      "url": "https://mufon.com/"
+    },
+    {
+      "name": "FAA radar data — Stephenville (FOIA release)",
+      "url": "https://www.faa.gov/foia"
+    },
+    {
+      "name": "Hanks, A. — Stephenville Lights (2014)",
+      "note": "Reconstrucción periodística"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Powell, R. — MUFON Stephenville Report (2008)",
+      "url": "https://mufon.com/"
+    },
+    {
+      "name": "FAA radar data — Stephenville (FOIA release)",
+      "url": "https://www.faa.gov/foia"
+    },
+    {
+      "name": "Hanks, A. — Stephenville Lights (2014)",
+      "note": "Journalistic reconstruction"
+    }
+  ]
+}
