@@ -1,6 +1,11 @@
 import { PRIMITIVE_HYPOTHESES } from "@/lib/hypotheses";
 import { cases } from "@/lib/data";
-import { evidenceCountFor, driftFor } from "@/lib/hypothesisMapping";
+import {
+  evidenceCountFor,
+  effectiveCalibration,
+  type CalibrationSource,
+} from "@/lib/hypothesisMapping";
+import { pctToIcdLabel } from "@/lib/icd203";
 import { T } from "@/components/T";
 import { Eyebrow, H2, Caption } from "@/lib/typography";
 
@@ -37,19 +42,23 @@ function noEvidenceCopy(id: string): { es: string; en: string } {
  * Removed all chrome (outer card, per-row borders). The data is the chrome.
  */
 export function IcdProbabilityChart() {
-  const rows = PRIMITIVE_HYPOTHESES.map((h) => ({
-    ...h,
-    evidence: evidenceCountFor(h.id, cases),
-    drift: driftFor(
-      h.id,
-      h.corpusPct,
-      { min: h.icd.min, max: h.icd.max },
-      cases,
-    ),
-  })).sort((a, b) => {
-    const bandDiff = b.icd.max - a.icd.max;
+  const rows = PRIMITIVE_HYPOTHESES.map((h) => {
+    const calib = effectiveCalibration(h, cases);
+    const effectiveIcd = pctToIcdLabel(calib.pct);
+    return {
+      ...h,
+      evidence: evidenceCountFor(h.id, cases),
+      effectivePct: calib.pct,
+      source: calib.source,
+      pressure: calib.pressure,
+      supportingCases: calib.supportingCases,
+      shift: calib.shift,
+      effectiveIcd,
+    };
+  }).sort((a, b) => {
+    const bandDiff = b.effectiveIcd.max - a.effectiveIcd.max;
     if (bandDiff !== 0) return bandDiff;
-    return b.corpusPct - a.corpusPct;
+    return b.effectivePct - a.effectivePct;
   });
 
   return (
@@ -140,11 +149,11 @@ export function IcdProbabilityChart() {
                   className="font-mono text-xs uppercase tracking-wider"
                   style={{ color: h.color }}
                 >
-                  <T es={h.icd.labelEs} en={h.icd.label} />{" "}
+                  <T es={h.effectiveIcd.labelEs} en={h.effectiveIcd.label} />{" "}
                   <span className="text-muted">
                     <T
-                      es={`(${h.icd.label})`}
-                      en={`(${Math.round(h.icd.min)}–${Math.round(h.icd.max)}%)`}
+                      es={`(${h.effectiveIcd.label})`}
+                      en={`(${Math.round(h.effectiveIcd.min)}–${Math.round(h.effectiveIcd.max)}%)`}
                     />
                   </span>
                 </p>
@@ -154,16 +163,16 @@ export function IcdProbabilityChart() {
               <div
                 className="relative h-2 bg-text/10"
                 role="progressbar"
-                aria-valuemin={h.icd.min}
-                aria-valuemax={h.icd.max}
-                aria-valuenow={Math.round((h.icd.min + h.icd.max) / 2)}
-                aria-valuetext={`${h.label}: ${h.icd.labelEs}. Evidencia: ${h.evidence.caseCount} casos, ${h.evidence.patternCount} patrones.`}
+                aria-valuemin={h.effectiveIcd.min}
+                aria-valuemax={h.effectiveIcd.max}
+                aria-valuenow={Math.round((h.effectiveIcd.min + h.effectiveIcd.max) / 2)}
+                aria-valuetext={`${h.label}: ${h.effectiveIcd.labelEs}. Evidencia: ${h.evidence.caseCount} casos, ${h.evidence.patternCount} patrones.`}
               >
                 <div
                   className="absolute h-full"
                   style={{
-                    left: `${h.icd.min}%`,
-                    width: `${h.icd.max - h.icd.min}%`,
+                    left: `${h.effectiveIcd.min}%`,
+                    width: `${h.effectiveIcd.max - h.effectiveIcd.min}%`,
                     backgroundColor: h.color,
                   }}
                 />
@@ -181,7 +190,14 @@ export function IcdProbabilityChart() {
                 <T es={h.note} en={h.noteEn} />
               </p>
 
-              <PressureBadge drift={h.drift} />
+              <CalibrationSourceBadge
+                source={h.source}
+                pct={h.effectivePct}
+                prior={h.corpusPct}
+                pressure={h.pressure}
+                supportingCases={h.supportingCases}
+                shift={h.shift}
+              />
 
               <a
                 href={`#${h.id}`}
@@ -227,11 +243,16 @@ export function IcdProbabilityChart() {
         <T
           es={
             <>
-              Estos números son juicios calibrados, no salida de una fórmula.
-              El conteo de casos a la derecha indica cuántos del corpus
-              exhiben patrones asociados a cada hipótesis — sirve para
-              comparar dos hipótesis que comparten la misma banda. Razonamiento
-              completo en{" "}
+              Cada probabilidad se deriva del prior del analista{" "}
+              <strong>más</strong> la presión acumulada de los casos del
+              corpus que la sostienen — recalibrada automáticamente en cada
+              build. Los pesos por caso son públicos y declarados (ver{" "}
+              <a className="text-accent hover:underline" href="/about">
+                /about Cap. 5
+              </a>
+              ). Cuando un analista discrepa con el resultado derivado, puede
+              declarar un ajuste manual; el sitio lo indica explícitamente.
+              Razonamiento completo en{" "}
               <a className="text-accent hover:underline" href="/probabilidades">
                 /probabilidades
               </a>
@@ -240,10 +261,16 @@ export function IcdProbabilityChart() {
           }
           en={
             <>
-              These numbers are calibrated judgments, not the output of a
-              formula. The case count on the right shows how many corpus cases
-              exhibit patterns associated with each hypothesis — useful when
-              two hypotheses share a band. Full reasoning at{" "}
+              Each probability is derived from the analyst&apos;s prior{" "}
+              <strong>plus</strong> the accumulated pressure of the corpus
+              cases that sustain it — auto-recalibrated on every build.
+              Per-case weights are public and declared (see{" "}
+              <a className="text-accent hover:underline" href="/about">
+                /about Ch. 5
+              </a>
+              ). When an analyst disagrees with the derived result, they
+              can declare a manual override; the site flags it explicitly.
+              Full reasoning at{" "}
               <a className="text-accent hover:underline" href="/probabilidades">
                 /probabilidades
               </a>
@@ -257,77 +284,90 @@ export function IcdProbabilityChart() {
 }
 
 /**
- * PressureBadge — displays the per-hypothesis evidence pressure index
- * computed from the corpus, alongside the drift relative to calibrated
- * probability. Three states:
- *   - aligned (|drift| < 5pp): green check
- *   - minor-drift (5-10pp): yellow caution
- *   - review-needed (>10pp): orange flag
+ * CalibrationSourceBadge — shows how the displayed probability was
+ * obtained. Three sources, all build-time computed:
  *
- * The badge always shows raw pressure + supporting cases so the reader
- * sees the continuous component of the calibration, not just the band.
+ *   - "derived":  effective = prior + pressure × 0.5. Default for
+ *                 primitive hypotheses. Updates with every case added.
+ *   - "prior":    pressure = 0 (no cases declared for this hypothesis).
+ *                 Falls back to the prior.
+ *   - "override": `corpusPctOverride` declared on the hypothesis (used by
+ *                 antecedent/derived hypotheses whose pct doesn't come
+ *                 from corpus).
+ *
+ * Always shows pressure + case count so the audit trail is visible.
  */
-function PressureBadge({
-  drift,
+function CalibrationSourceBadge({
+  source,
+  pct,
+  prior,
+  pressure,
+  supportingCases,
+  shift,
 }: {
-  drift: {
-    pressure: number;
-    supportingCases: number;
-    impliedPct: number;
-    drift: number;
-    status: "aligned" | "minor-drift" | "review-needed";
-  };
+  source: "override" | "derived" | "prior";
+  pct: number;
+  prior: number;
+  pressure: number;
+  supportingCases: number;
+  shift: number;
 }) {
-  const sign = drift.drift >= 0 ? "+" : "−";
-  const driftAbs = Math.abs(drift.drift).toFixed(1);
-  const symbol =
-    drift.status === "aligned"
-      ? "✓"
-      : drift.status === "minor-drift"
-        ? "⚠"
-        : "▲";
-  const stateColor =
-    drift.status === "aligned"
-      ? "text-text/60"
-      : drift.status === "minor-drift"
-        ? "text-accent"
-        : "text-tierS";
-
+  const sign = shift >= 0 ? "+" : "−";
+  const shiftAbs = Math.abs(shift).toFixed(1);
   return (
     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-l-2 border-text/15 pl-3 font-mono text-[11px] uppercase tracking-wider text-muted">
-      <span>
-        <T es="Presión" en="Pressure" />:{" "}
-        <span className="text-text">{drift.pressure.toFixed(1)} pts</span>
-      </span>
-      <span aria-hidden className="text-text/30">
-        ·
-      </span>
-      <span>
-        <T es="Implica" en="Implies" />:{" "}
-        <span className="text-text">~{drift.impliedPct.toFixed(0)}%</span>
-      </span>
-      <span aria-hidden className="text-text/30">
-        ·
-      </span>
-      <span className={stateColor}>
-        <span aria-hidden>{symbol}</span>{" "}
-        <T
-          es={
-            drift.status === "aligned"
-              ? `alineado (${sign}${driftAbs} pp)`
-              : drift.status === "minor-drift"
-                ? `leve drift ${sign}${driftAbs} pp`
-                : `revisar — drift ${sign}${driftAbs} pp`
-          }
-          en={
-            drift.status === "aligned"
-              ? `aligned (${sign}${driftAbs} pp)`
-              : drift.status === "minor-drift"
-                ? `minor drift ${sign}${driftAbs} pp`
-                : `review — drift ${sign}${driftAbs} pp`
-          }
-        />
-      </span>
+      {source === "derived" && (
+        <>
+          <span>
+            <T es="Derivado" en="Derived" />:{" "}
+            <span className="text-text">
+              {prior.toFixed(0)} ({" "}
+              <T es="prior" en="prior" />) {sign} {shiftAbs}{" "}
+              <T es="pp presión" en="pp pressure" /> ={" "}
+              <strong>{pct.toFixed(0)}%</strong>
+            </span>
+          </span>
+          <span aria-hidden className="text-text/30">
+            ·
+          </span>
+          <span>
+            <span className="text-text">{supportingCases}</span>{" "}
+            <T es="casos contribuyen" en="cases contribute" />
+          </span>
+          <span aria-hidden className="text-text/30">
+            ·
+          </span>
+          <span>
+            <T es="Presión" en="Pressure" />:{" "}
+            <span className="text-text">{pressure.toFixed(1)} pts</span>
+          </span>
+        </>
+      )}
+      {source === "prior" && (
+        <>
+          <span>
+            <T es="Prior" en="Prior" />:{" "}
+            <span className="text-text">{pct.toFixed(0)}%</span>
+          </span>
+          <span aria-hidden className="text-text/30">
+            ·
+          </span>
+          <span className="text-muted/70">
+            <T
+              es="ningún caso del corpus contribuye aún"
+              en="no corpus case contributes yet"
+            />
+          </span>
+        </>
+      )}
+      {source === "override" && (
+        <span className="text-accent">
+          <T
+            es="Ajuste manual aplicado"
+            en="Manual override applied"
+          />
+        </span>
+      )}
     </div>
   );
 }

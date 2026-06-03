@@ -210,40 +210,58 @@ export function pressureFor(
 }
 
 /**
- * Drift analysis: maps the continuous pressure to an implied probability
- * within the hypothesis's ICD-203 band, and compares with the calibrated
- * value. Used to surface when the corpus has accumulated evidence that
- * the verbal calibration hasn't been updated to reflect.
+ * Effective calibration — Option C: derived from prior + pressure, with
+ * optional manual override.
  *
- * pressureNorm = clamp(pressure / 50, -1, 1)
- * implied      = midpoint + pressureNorm × bandWidth × 0.5
+ * Resolution order:
+ *   1. If `corpusPctOverride` is declared on the hypothesis, use it.
+ *      Source = "override". Used by antecedent/derived hypotheses whose
+ *      pct doesn't come from corpus evidence.
+ *   2. Otherwise, compute: effective = prior + pressure × SHIFT_FACTOR
+ *      Source = "derived" when pressure ≠ 0, "prior" when pressure = 0.
  *
- * The 50-point normalization scale is documented in `/about` Chapter 5
- * as the "full half-band shift" threshold.
+ * The shift factor (0.5 pp per pressure point) means:
+ *   - 1 modest contribution (+2 pressure) = +1 pp shift
+ *   - 1 substantial contribution (+5 pressure) = +2.5 pp shift
+ *   - 1 category-breaking contribution (+15 pressure) = +7.5 pp shift
+ *   - 20 minimal contributions (+10 pressure) = +5 pp shift
+ *
+ * This makes a single case never dramatic but corpus accumulation
+ * meaningful — matching the marginal-return principle from /about Ch. 2.
  */
-export type DriftStatus = "aligned" | "minor-drift" | "review-needed";
+export const PRESSURE_SHIFT_FACTOR = 0.5;
 
-export function driftFor(
-  hypothesisId: string,
-  calibratedPct: number,
-  band: { min: number; max: number },
+export type CalibrationSource = "override" | "derived" | "prior";
+
+interface HypothesisLike {
+  id: string;
+  corpusPct: number;
+  corpusPctOverride?: number;
+}
+
+export function effectiveCalibration(
+  h: HypothesisLike,
   cases: MinimalCase[],
 ): {
+  pct: number;
+  source: CalibrationSource;
   pressure: number;
   supportingCases: number;
-  impliedPct: number;
-  drift: number;
-  status: DriftStatus;
+  shift: number;
 } {
-  const { pressure, supportingCases } = pressureFor(hypothesisId, cases);
-  const midpoint = (band.min + band.max) / 2;
-  const width = band.max - band.min;
-  const pressureNorm = Math.max(-1, Math.min(1, pressure / 50));
-  const impliedRaw = midpoint + pressureNorm * width * 0.5;
-  const impliedPct = Math.max(1, Math.min(99, impliedRaw));
-  const drift = impliedPct - calibratedPct;
-  const absDrift = Math.abs(drift);
-  const status: DriftStatus =
-    absDrift < 5 ? "aligned" : absDrift < 10 ? "minor-drift" : "review-needed";
-  return { pressure, supportingCases, impliedPct, drift, status };
+  const { pressure, supportingCases } = pressureFor(h.id, cases);
+  if (h.corpusPctOverride !== undefined) {
+    return {
+      pct: h.corpusPctOverride,
+      source: "override",
+      pressure,
+      supportingCases,
+      shift: 0,
+    };
+  }
+  const shift = pressure * PRESSURE_SHIFT_FACTOR;
+  const pctRaw = h.corpusPct + shift;
+  const pct = Math.max(1, Math.min(99, pctRaw));
+  const source: CalibrationSource = pressure === 0 ? "prior" : "derived";
+  return { pct, source, pressure, supportingCases, shift };
 }
