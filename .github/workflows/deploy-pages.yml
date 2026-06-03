@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./web
     outputs:
       base_path: ${{ steps.pages.outputs.base_path }}
     steps:
@@ -51,7 +54,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./web/out
           publish_branch: gh-pages
           force_orphan: true
           commit_message: "deploy: ${{ github.event.head_commit.message }}"
@@ -60,7 +63,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./web/out
 
   # Deploy via official Pages — only completes if source = "GitHub Actions"
   # If source is "branch", this job errors silently but path 1 above already
