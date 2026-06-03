@@ -1,0 +1,75 @@
+{
+  "id": "mccasland-disappearance-2026",
+  "num": 51,
+  "name": "Desaparición Gen. McCasland",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 35.08,
+    "lng": -106.65,
+    "place": "Albuquerque, NM"
+  },
+  "tier": "S",
+  "probability": 100,
+  "summary": "Major General retirado USAF, ex-Director Wright-Patterson AFRL, mencionado en WikiLeaks Podesta. Silver Alert activo. Coulthart: 'grave national security crisis'",
+  "summary_en": "Retired USAF Major General, ex-Director Wright-Patterson AFRL, named in WikiLeaks Podesta. Silver Alert active. Coulthart: 'grave national security crisis'",
+  "patterns": [
+    "8c",
+    "8r"
+  ],
+  "category": "incident",
+  "whatHappened": "A finales de mayo de 2026, el Major General retirado de la USAF Donald McCasland fue reportado como persona desaparecida en Ohio. McCasland fue Director del Air Force Research Laboratory (AFRL) en Wright-Patterson Air Force Base — la instalación más asociada históricamente con custodia de material UAP recuperado, desde Roswell 1947 a través del Foreign Technology Division y el Battelle Memorial Institute.\n\nEl nombre de McCasland aparece en los emails de John Podesta filtrados por WikiLeaks (2016) en el contexto de comunicaciones de Tom DeLonge sobre el proyecto TTSA: DeLonge identifica a McCasland como un contacto clave del programa relacionado con divulgación UAP. Ohio emitió un Silver Alert (procedimiento estandarizado para adultos vulnerables desaparecidos) en su búsqueda, pero la falta de información pública subsiguiente sobre su localización resulta anómala dado su perfil.\n\nEl periodista de investigación Ross Coulthart caracterizó públicamente la situación como 'a grave national security crisis' en NewsNation, sugiriendo que la desaparición podría estar relacionada con su acceso histórico a programas clasificados. La coincidencia temporal con los releases PURSUE R03 y el contexto político de mayo 2026 añade peso analítico al caso, aunque los hechos definitivos permanecen no resueltos a la fecha de cierre del corpus.",
+  "whatHappened_en": "In late May 2026, retired USAF Major General Donald McCasland was reported missing in Ohio. McCasland was Director of the Air Force Research Laboratory (AFRL) at Wright-Patterson Air Force Base — the facility most historically associated with custody of recovered UAP material, from Roswell 1947 through the Foreign Technology Division and the Battelle Memorial Institute.\n\nMcCasland's name appears in John Podesta's emails leaked by WikiLeaks (2016) in the context of Tom DeLonge's communications about the TTSA project: DeLonge identifies McCasland as a key program contact related to UAP disclosure. Ohio issued a Silver Alert (the standardized procedure for missing vulnerable adults) in the search, but the lack of subsequent public information about his location is anomalous given his profile.\n\nInvestigative journalist Ross Coulthart publicly characterized the situation as 'a grave national security crisis' on NewsNation, suggesting the disappearance could be tied to his historical access to classified programs. The temporal overlap with the PURSUE R03 releases and the political context of May 2026 adds analytical weight to the case, although the definitive facts remain unresolved at the corpus's closing date.",
+  "whyMatters": "Independientemente del desenlace, el caso es analíticamente significativo porque combina cuatro elementos verificables: (1) perfil profesional de máximo acceso a programas históricamente asociados con UAP, (2) mención documental en filtración Podesta vinculada a TTSA, (3) coincidencia temporal con releases AARO acelerados, (4) caracterización pública por periodista de defensa como crisis de seguridad nacional. La combinación señala stress operacional dentro del aparato de transparencia/secreto estadounidense en 2026.",
+  "whyMatters_en": "Regardless of outcome, the case is analytically significant because it combines four verifiable elements: (1) a professional profile with top-level access to programs historically associated with UAP, (2) documentary mention in the Podesta leak linked to TTSA, (3) temporal overlap with accelerated AARO releases, (4) public characterization by a defense journalist as a national security crisis. The combination signals operational stress inside the U.S. transparency/secrecy apparatus in 2026.",
+  "evidence": [
+    "Silver Alert oficial emitido por Ohio (mayo 2026)",
+    "Email WikiLeaks Podesta #3099 mencionando McCasland en contexto TTSA",
+    "Curriculum oficial USAF: Director AFRL Wright-Patterson durante período de mayor revelación UAP institucional",
+    "Coulthart NewsNation segment caracterizando como 'grave national security crisis'"
+  ],
+  "evidence_en": [
+    "Official Silver Alert issued by Ohio (May 2026)",
+    "WikiLeaks Podesta email #3099 naming McCasland in a TTSA context",
+    "Official USAF résumé: Director of AFRL Wright-Patterson during the period of greatest institutional UAP disclosure",
+    "Coulthart NewsNation segment characterizing the case as a 'grave national security crisis'"
+  ],
+  "sources": [
+    {
+      "name": "WikiLeaks Podesta Email #3099 (DeLonge correspondence)",
+      "url": "https://wikileaks.org/podesta-emails/emailid/3099"
+    },
+    {
+      "name": "Ohio Silver Alert System — public record (mayo 2026)",
+      "url": "https://ohioattorneygeneral.gov/Law-Enforcement/Local-Law-Enforcement/Missing-Adult-Alerts"
+    },
+    {
+      "name": "Coulthart, R. — NewsNation 'Reality Check' (mayo 2026)",
+      "note": "Cobertura sostenida desde la primera semana"
+    },
+    {
+      "name": "USAF Biography — Maj Gen Donald McCasland (retired)",
+      "url": "https://www.af.mil/About-Us/Biographies/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "WikiLeaks Podesta Email #3099 (DeLonge correspondence)",
+      "url": "https://wikileaks.org/podesta-emails/emailid/3099"
+    },
+    {
+      "name": "Ohio Silver Alert System — public record (mayo 2026)",
+      "url": "https://ohioattorneygeneral.gov/Law-Enforcement/Local-Law-Enforcement/Missing-Adult-Alerts"
+    },
+    {
+      "name": "Coulthart, R. — NewsNation 'Reality Check' (mayo 2026)",
+      "note": "Sustained coverage from the first week"
+    },
+    {
+      "name": "USAF Biography — Maj Gen Donald McCasland (retired)",
+      "url": "https://www.af.mil/About-Us/Biographies/"
+    }
+  ]
+}
