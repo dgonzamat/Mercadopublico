@@ -1,0 +1,66 @@
+{
+  "id": "falcon-lake-1967",
+  "num": 15,
+  "name": "Falcon Lake",
+  "year_start": 1967,
+  "country": "CA",
+  "country_name": "Canadá",
+  "flag": "🇨🇦",
+  "location": {
+    "lat": 49.71,
+    "lng": -95.27,
+    "place": "Falcon Lake, Manitoba"
+  },
+  "tier": "A",
+  "probability": 65,
+  "summary": "Quemaduras geométricas torso Michalak, RCMP",
+  "summary_en": "Geometric burns on Michalak's torso, RCMP",
+  "patterns": [
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "El 20 de mayo de 1967, el mecánico industrial Stefan Michalak prospectaba cuarzo cerca de Falcon Lake (Manitoba, Canadá). A las 12:15 PM observó dos objetos discoidales rojos brillantes descendiendo; uno se posó sobre una formación rocosa cercana. Michalak se aproximó, escuchó voces (no inteligibles) y observó el panel exterior del objeto.\n\nTras aproximadamente 30 minutos, Michalak intentó tocar la superficie con un guante; el guante se derritió instantáneamente. El objeto giró exponiendo una rejilla en el casco que expulsó gas caliente hacia Michalak, incinerando su camisa y quemando geometricamente la piel de su torso en un patrón cuadriculado consistente con la rejilla observada.\n\nMichalak caminó al hospital de Winnipeg. Las quemaduras fueron documentadas fotográficamente. Sufrió pérdida de peso, fatiga sostenida, urticaria y náuseas durante meses. La Royal Canadian Mounted Police (RCMP) y la Royal Canadian Air Force investigaron oficialmente; el sitio mostraba un círculo carbonizado de cuarzo y musgo. Muestras de suelo posteriormente analizadas en University of Colorado mostraron niveles elevados de radioactividad sobre background. El caso permaneció abierto sin explicación oficial; el Departamento de Defensa de Canadá publicó el archivo completo vía Library and Archives Canada en 1980s.",
+  "whatHappened_en": "On May 20, 1967, industrial mechanic Stefan Michalak was prospecting for quartz near Falcon Lake (Manitoba, Canada). At 12:15 PM he observed two bright red disc-shaped objects descending; one settled on a nearby rock formation. Michalak approached, heard voices (unintelligible), and inspected the object's outer panel.\n\nAfter roughly 30 minutes, Michalak tried to touch the surface with a glove; the glove melted instantly. The object rotated, exposing a grille on the hull that vented hot gas toward Michalak, incinerating his shirt and geometrically burning the skin of his torso in a grid pattern consistent with the grille observed.\n\nMichalak walked to a Winnipeg hospital. The burns were documented photographically. He experienced weight loss, sustained fatigue, hives, and nausea for months. The Royal Canadian Mounted Police (RCMP) and the Royal Canadian Air Force investigated officially; the site showed a charred circle of quartz and moss. Soil samples later analyzed at the University of Colorado showed elevated radioactivity above background. The case remained open with no official explanation; Canada's Department of National Defence released the full file through Library and Archives Canada in the 1980s.",
+  "whyMatters": "Único caso con quemaduras geométricas documentadas en hospital coincidentes con estructura física reportada del objeto + medición de radioactividad elevada en sitio + investigación oficial RCMP + RCAF preservada en archivos nacionales. La evidencia médica documentada constituye el respaldo físico más robusto en el corpus para un evento de close encounter individual.",
+  "whyMatters_en": "The only case with hospital-documented geometric burns matching the reported physical structure of the object + elevated site radioactivity + official RCMP + RCAF investigation preserved in national archives. The documented medical evidence is the most robust physical backing in the corpus for an individual close encounter event.",
+  "evidence": [
+    "Quemaduras geométricas patrón cuadriculado documentadas en Misericordia Hospital, Winnipeg",
+    "Radioactividad elevada confirmada en muestras de suelo (University of Colorado)",
+    "Investigación RCMP + RCAF + Departamento de Salud Nacional canadiense",
+    "Reporte completo Stanton Friedman + Chris Rutkowski 'When They Appeared' (2018)"
+  ],
+  "evidence_en": [
+    "Geometric grid-pattern burns documented at Misericordia Hospital, Winnipeg",
+    "Elevated radioactivity confirmed in soil samples (University of Colorado)",
+    "RCMP + RCAF + Canadian Department of National Health investigation",
+    "Complete report by Stanton Friedman + Chris Rutkowski, 'When They Appeared' (2018)"
+  ],
+  "sources": [
+    {
+      "name": "Department of National Defence Canada — Falcon Lake case file",
+      "url": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx"
+    },
+    {
+      "name": "Rutkowski, C. & Friedman, S. — When They Appeared (2018)",
+      "note": "Reconstrucción documental completa"
+    },
+    {
+      "name": "Condon Report — Case 22 (Falcon Lake)",
+      "url": "https://files.ncas.org/condon/text/case22.htm"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Department of National Defence Canada — Falcon Lake case file",
+      "url": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx"
+    },
+    {
+      "name": "Rutkowski, C. & Friedman, S. — When They Appeared (2018)",
+      "note": "Complete documentary reconstruction"
+    },
+    {
+      "name": "Condon Report — Case 22 (Falcon Lake)",
+      "url": "https://files.ncas.org/condon/text/case22.htm"
+    }
+  ]
+}
