@@ -10,6 +10,8 @@ const tierColors = {
   B: "#7fdbff",
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function WorldMap() {
   return (
     <MapContainer
@@ -35,7 +37,7 @@ export default function WorldMap() {
           }}
           eventHandlers={{
             click: () => {
-              window.location.href = `/cases/${c.id}`;
+              window.location.href = `${basePath}/cases/${c.id}/`;
             },
           }}
         >
