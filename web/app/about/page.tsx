@@ -9,6 +9,7 @@ import {
   PullQuote,
 } from "@/lib/typography";
 import { T } from "@/components/T";
+import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
   title: "Method · UAP Codex",
@@ -699,8 +700,8 @@ export default function AboutPage() {
               className="inline-flex min-h-[48px] items-center border-2 border-text px-6 py-2 text-base font-medium text-text hover:bg-text hover:text-bg"
             >
               <T
-                es="Ver los 52 casos →"
-                en="See the 52 cases →"
+                es={`Ver los ${STATS.cases} casos →`}
+                en={`See the ${STATS.cases} cases →`}
               />
             </Link>
             <Link
