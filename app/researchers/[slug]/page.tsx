@@ -12,7 +12,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) return { title: "No encontrado" };
   return {
-    title: `${r.name} · UAP Atlas`,
+    title: `${r.name} · UAP Codex`,
     description: r.bio_short.slice(0, 160),
   };
 }
@@ -97,8 +97,8 @@ export default function ResearcherDetailPage({
 
       <Caption className="border-t border-border pt-6">
         <T
-          es="Bio sintetizada del ecosistema de disclosure UAP — categorizada por sección epistemológica (A-E) según rol dentro del campo: pioneros, institucionales, frontera, escépticos y testimoniales."
-          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E) according to role within the field: pioneers, institutionals, frontier, skeptics and testimonials."
+          es="Bio sintetizada del ecosistema de disclosure UAP — categorizada por sección epistemológica (A-E)."
+          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E)."
         />
       </Caption>
     </article>

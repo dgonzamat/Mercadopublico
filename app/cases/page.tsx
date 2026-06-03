@@ -5,7 +5,7 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
-  title: "Casos · UAP Atlas",
+  title: "Casos · UAP Codex",
   description: `${TOTAL_CASES} institutional cases documented 1947-2026`,
 };
 

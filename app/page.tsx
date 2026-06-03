@@ -5,8 +5,8 @@ import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
-  title: "UAP Atlas — La evidencia institucional",
-  description: `Atlas de ${STATS.cases} casos UAP institucionales ${STATS.startYear}–${STATS.endYear} — los que sobrevivieron filtros militares, congresionales y periodísticos. Probabilidades calibradas vía ICD-203.`,
+  title: "UAP Codex — La evidencia institucional",
+  description: `Compendio de ${STATS.cases} casos UAP institucionales ${STATS.startYear}–${STATS.endYear} — los que sobrevivieron filtros militares, congresionales y periodísticos. Probabilidades calibradas vía ICD-203.`,
 };
 
 export default function HomePage() {
@@ -17,8 +17,8 @@ export default function HomePage() {
         <div className="space-y-8">
           <Eyebrow>
             <T
-              es="UAP Atlas · investigación abierta"
-              en="UAP Atlas · open research"
+              es="UAP Codex · investigación abierta"
+              en="UAP Codex · open research"
             />
           </Eyebrow>
           <h1 className="font-display text-[10vw] font-medium leading-[1.02] tracking-tight text-text md:text-[6vw] lg:text-[5rem]">
@@ -45,8 +45,8 @@ export default function HomePage() {
           </h1>
           <Lede className="max-w-2xl text-muted">
             <T
-              es={`Un atlas de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
-              en={`An atlas of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
+              es={`Un compendio de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
+              en={`A compendium of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
             />
           </Lede>
           <div className="flex flex-wrap gap-3 pt-2">

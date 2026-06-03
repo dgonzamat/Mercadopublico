@@ -96,7 +96,7 @@ export function MobileNav() {
             {/* TOP BAR — matches header height + close button */}
             <div className="sticky top-0 z-10 flex items-center justify-between border-b border-bg/15 bg-text px-4 py-5">
               <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es="Menú · UAP Atlas" en="Menu · UAP Atlas" />
+                <T es="Menú · UAP Codex" en="Menu · UAP Codex" />
               </p>
               <button
                 type="button"
@@ -184,8 +184,8 @@ export function MobileNav() {
 
               <p className="mt-12 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
                 <T
-                  es="UAP Atlas · análisis institucional · 1947–2026"
-                  en="UAP Atlas · institutional analysis · 1947–2026"
+                  es="UAP Codex · análisis institucional · 1947–2026"
+                  en="UAP Codex · institutional analysis · 1947–2026"
                 />
               </p>
             </div>

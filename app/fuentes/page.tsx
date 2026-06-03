@@ -4,7 +4,7 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Caption } from "@/lib/typography";
 
 export const metadata = {
-  title: "Fuentes · UAP Atlas",
+  title: "Fuentes · UAP Codex",
   description:
     "All sources cited across the UAP corpus — official FOIA documents, declassified archives, academic papers, investigative press, books and code.",
 };

@@ -22,10 +22,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "UAP Atlas — Institutional analysis",
+  title: "UAP Codex — Institutional analysis",
   description: `${STATS.years} years of UAP phenomenon documented institutionally. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} frameworks compared.`,
   openGraph: {
-    title: "UAP Atlas — Institutional analysis",
+    title: "UAP Codex — Institutional analysis",
     description: `${STATS.years} years of UAP phenomenon, ${STATS.cases} cases, ${STATS.patterns} patterns.`,
     type: "website",
   },
@@ -55,7 +55,7 @@ export default function RootLayout({
             <Link
               href="/"
               className="group flex items-center gap-3 py-5 text-text"
-              aria-label="UAP Atlas"
+              aria-label="UAP Codex"
             >
               <span
                 aria-hidden
@@ -65,7 +65,7 @@ export default function RootLayout({
               </span>
               <span className="font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
                 UAP
-                <span className="ml-1 italic text-accent">Atlas</span>
+                <span className="ml-1 italic text-accent">Codex</span>
               </span>
             </Link>
 
@@ -193,8 +193,8 @@ export default function RootLayout({
 
             <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
               <T
-                es="UAP Atlas · análisis institucional · 1947–2026"
-                en="UAP Atlas · institutional analysis · 1947–2026"
+                es="UAP Codex · análisis institucional · 1947–2026"
+                en="UAP Codex · institutional analysis · 1947–2026"
               />
             </p>
           </div>

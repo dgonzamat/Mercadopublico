@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { cases, patterns, researchers } from "@/lib/data";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://uap-atlas.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://uap-codex.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
