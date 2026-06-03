@@ -57,8 +57,8 @@ export function IcdProbabilityChart() {
           <br />
           <span className="text-muted">
             <T
-              es="6 proposiciones primitivas e independientes sobre el corpus."
-              en="6 primitive, independent propositions about the corpus."
+              es="Seis explicaciones plausibles. Cada caso puede ser más de una."
+              en="Six plausible explanations. Each case can be more than one."
             />
           </span>
         </H2>
@@ -66,33 +66,11 @@ export function IcdProbabilityChart() {
           <T
             es={
               <>
-                Cada proposición se mide por separado, no compite con las otras —
-                pueden ser varias verdaderas a la vez. La etiqueta
-                (<em>Casi cierto</em>, <em>Pareja</em>, <em>Muy improbable</em>)
-                viene del{" "}
-                <a
-                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  estándar ICD-203
-                </a>{" "}
-                que usan los analistas de inteligencia cuando no hay modelo
-                formal. El antecedente <em>misidentificación</em> y la
-                consecuencia <em>heterogeneidad</em> se explican{" "}
-                <a href="#antecedente-derivada" className="text-accent hover:underline">
-                  aparte
-                </a>{" "}
-                — no pertenecen al mismo eje.
-              </>
-            }
-            en={
-              <>
-                Each proposition is measured on its own — they don&apos;t compete,
-                and several can be true at once. The label
-                (<em>Almost certain</em>, <em>Roughly even</em>,{" "}
-                <em>Very unlikely</em>) comes from{" "}
+                Cada explicación se mide por separado — pueden ser varias
+                verdaderas a la vez. La etiqueta (<em>casi cierto</em>,{" "}
+                <em>probable</em>, <em>improbable</em>) viene del método que
+                usan los analistas de inteligencia cuando no hay modelo
+                matemático ({" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -100,14 +78,37 @@ export function IcdProbabilityChart() {
                   className="text-accent hover:underline"
                 >
                   ICD-203
-                </a>{" "}
-                — the standard intelligence analysts use without a formal model.
-                The antecedent <em>misidentification</em> and the consequence{" "}
-                <em>heterogeneity</em> are explained{" "}
+                </a>
+                ). Dos hipótesis más —{" "}
+                <em>misidentificación</em> (universo previo al filtro) y{" "}
+                <em>heterogeneidad</em> (consecuencia de las seis) — viven{" "}
                 <a href="#antecedente-derivada" className="text-accent hover:underline">
-                  separately
-                </a>{" "}
-                — they don&apos;t belong on this axis.
+                  aparte
+                </a>
+                .
+              </>
+            }
+            en={
+              <>
+                Each explanation is measured on its own — several can be true
+                at once. The label (<em>almost certain</em>, <em>likely</em>,{" "}
+                <em>unlikely</em>) comes from the method intelligence analysts
+                use without a mathematical model ({" "}
+                <a
+                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  ICD-203
+                </a>
+                ). Two further hypotheses —{" "}
+                <em>misidentification</em> (the universe before the filter)
+                and <em>heterogeneity</em> (a consequence of the six) — live{" "}
+                <a href="#antecedente-derivada" className="text-accent hover:underline">
+                  apart
+                </a>
+                .
               </>
             }
           />
@@ -218,10 +219,11 @@ export function IcdProbabilityChart() {
         <T
           es={
             <>
-              Etiquetas son juicios analíticos calibrados, no posteriori de un
-              modelo Bayesiano formal. El conteo de evidencia muestra cuántos
-              casos exhiben patrones asociados — diferencia analítica dentro de
-              una misma banda ICD-203. Razonamiento completo en{" "}
+              Estos números son juicios calibrados, no salida de una fórmula.
+              El conteo de casos a la derecha indica cuántos del corpus
+              exhiben patrones asociados a cada hipótesis — sirve para
+              comparar dos hipótesis que comparten la misma banda. Razonamiento
+              completo en{" "}
               <a className="text-accent hover:underline" href="/probabilidades">
                 /probabilidades
               </a>
@@ -230,10 +232,10 @@ export function IcdProbabilityChart() {
           }
           en={
             <>
-              Labels are calibrated analytical judgments, not posteriors of a
-              formal Bayesian model. Evidence count shows how many cases exhibit
-              associated patterns — analytical difference within the same
-              ICD-203 band. Full reasoning at{" "}
+              These numbers are calibrated judgments, not the output of a
+              formula. The case count on the right shows how many corpus cases
+              exhibit patterns associated with each hypothesis — useful when
+              two hypotheses share a band. Full reasoning at{" "}
               <a className="text-accent hover:underline" href="/probabilidades">
                 /probabilidades
               </a>

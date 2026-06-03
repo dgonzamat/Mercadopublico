@@ -46,8 +46,8 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     labelEn: "Misidentifications explain the majority of reports",
     corpusPct: 97,
     color: "#6b6356",
-    note: "ANTECEDENTE — aplica al universo PRE-FILTRO (reportes generales tipo Blue Book / AARO), NO al corpus institucional. Por construcción, P(misidentificación | caso ∈ corpus) ≈ 0%: los 64 casos pasaron filtros institucionales precisamente para excluir esta clase. Se muestra como antecedente del proceso de selección, no como hipótesis en competencia.",
-    noteEn: "ANTECEDENT — applies to the PRE-FILTER universe (general reports such as Blue Book / AARO), NOT to the institutional corpus. By construction, P(misidentification | case ∈ corpus) ≈ 0%: the 64 cases passed institutional filters precisely to exclude this class. Shown as antecedent to the selection process, not as a competing hypothesis.",
+    note: "Esta hipótesis describe un universo distinto: los miles de reportes generales (estilo Project Blue Book o AARO) antes de pasar filtros institucionales. En ese universo, casi todo se resuelve como confusiones — globos, satélites, aves, lens flares, pareidolia. Los casos del corpus ya pasaron esos filtros precisamente para excluir esta categoría, así que aquí su peso es prácticamente cero.",
+    noteEn: "This hypothesis describes a different universe: the thousands of general reports (Project Blue Book / AARO style) before passing institutional filters. In that universe, nearly everything resolves as confusions — balloons, satellites, birds, lens flares, pareidolia. The corpus cases already passed those filters precisely to exclude this category, so its weight here is practically zero.",
   },
   {
     id: "heterogeneidad",
@@ -56,8 +56,8 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     labelEn: "The corpus contains several heterogeneous causes",
     corpusPct: 95,
     color: "#c41e3a",
-    note: "DERIVADA — no es proposición primitiva. P(heterogeneidad) = 1 − P(a lo sumo una causa primitiva verdadera). Por Fréchet, P(H3 ∧ H4) ≥ P(H3) + P(H4) − 1 = 0.58, lo que ya implica P(heterogeneidad) ≥ 0.58. El 95% reportado asume dependencia positiva fuerte entre primitivas.",
-    noteEn: "DERIVED — not a primitive proposition. P(heterogeneity) = 1 − P(at most one primitive cause true). Fréchet bound gives P(H3 ∧ H4) ≥ 0.58, which already implies P(heterogeneity) ≥ 0.58. The reported 95% assumes strong positive dependence among primitives.",
+    note: "Esta no es una hipótesis aparte — es una conclusión que se sigue de las otras. Si más de una explicación tiene probabilidad alta (programas clasificados al 88%, fenómenos naturales al 70%), por matemática básica el corpus tiene que contener varias causas mezcladas. Negarlo requeriría asumir que casi todos los casos comparten la misma explicación — estadísticamente extremo en 79 años.",
+    noteEn: "This isn't a separate hypothesis — it's a conclusion that follows from the others. If more than one explanation has high probability (classified programs at 88%, natural phenomena at 70%), basic math forces the corpus to contain mixed causes. Denying this would require assuming nearly all cases share a single explanation — statistically extreme over 79 years.",
   },
   {
     id: "programas-clasificados",
@@ -86,8 +86,8 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     labelEn: "≥1 case involves non-human entities (broad category)",
     corpusPct: 28,
     color: "#8b0000",
-    note: "Paraguas sobre H6 interdimensional, H7 psicoespiritual, H8 tratado, + ET clásico / categorías sin vocabulario establecido. Cota Fréchet: max(subclase) ≤ P(H5) ≤ Σ subclases ⇒ 22% ≤ P(H5) ≤ 50%. El 28% reflejado = max(22%) + pequeño excedente por ET clásico, asumiendo overlap significativo entre subclases nombradas. Cae en banda 'Improbable' (20-45%).",
-    noteEn: "Umbrella over H6 interdimensional, H7 psychospiritual, H8 treaty, + classical ET / categories without established vocabulary. Fréchet bound: max(subclass) ≤ P(H5) ≤ Σ subclasses ⇒ 22% ≤ P(H5) ≤ 50%. The reported 28% = max(22%) + small excess for classical ET, assuming significant overlap among named subclasses. Falls in 'Unlikely' band (20-45%).",
+    note: "Categoría amplia: incluye tres versiones más específicas — interdimensional, psicoespiritual, tratado encubierto — más espacio para variantes sin nombre establecido (ET clásico, ontologías nuevas). Tiene que ser al menos tan probable como la versión más alta, lo que da algo cerca de 28%. Improbable, pero no descartable.",
+    noteEn: "Broad category: includes three more specific versions — interdimensional, psychospiritual, covert treaty — plus room for variants without established naming (classical ET, new ontologies). Must be at least as probable as the highest specific version, which lands near 28%. Unlikely, but not ruled out.",
   },
   {
     id: "interdimensional",
