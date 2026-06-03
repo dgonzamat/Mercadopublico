@@ -15,6 +15,16 @@ export interface CaseSource {
   note_en?: string;
 }
 
+export interface CaseDocument {
+  url: string;
+  alt: string;
+  caption: string;
+  caption_en?: string;
+  source: string;
+  license: string;
+  href?: string;
+}
+
 export interface UAPCase {
   id: string;
   num: number;
@@ -42,6 +52,7 @@ export interface UAPCase {
   evidence?: string[];       // bullet list of documented evidence items
   evidence_en?: string[];    // English translation
   sources?: CaseSource[];    // citations / primary documents
+  primaryDocument?: CaseDocument; // optional primary-source image (PD/CC only)
 }
 
 export interface Pattern {
