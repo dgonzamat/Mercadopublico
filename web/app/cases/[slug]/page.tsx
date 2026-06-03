@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
+import { getHypothesis } from "@/lib/hypotheses";
+import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 
@@ -26,8 +28,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 function findPullQuote(text?: string): string | null {
   if (!text) return null;
   const patterns = [
-    /[""]([^""]{30,240})[""]|"([^"]{30,240})"/g,
-    /''([^']{30,240})''|'([^']{30,240})'/g,
+    /[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g,
+    /‘‘([^’]{30,240})’’|'([^']{30,240})'/g,
   ];
   const all: string[] = [];
   for (const re of patterns) {
@@ -425,6 +427,78 @@ export default function CaseDetailPage({
           </Caption>
         )}
       </section>
+
+      {/* ────────── LO QUE ESTE CASO MOVIÓ ────────── */}
+      {c.evidenceContribution && c.evidenceContribution.length > 0 && (
+        <section className="space-y-6 border-t-2 border-text pt-12">
+          <Eyebrow>
+            <T es="Lo que este caso movió" en="What this case moved" />
+          </Eyebrow>
+          <Body className="text-muted">
+            <T
+              es="Cada caso del corpus declara explícitamente a qué hipótesis aporta evidencia y con qué fuerza. Estos números alimentan el índice de presión que aparece junto a cada hipótesis en /probabilidades. Verlos por caso permite auditar de dónde viene cada nivel de confianza."
+              en="Each corpus case explicitly declares which hypothesis it contributes to and with what strength. These numbers feed the pressure index shown next to each hypothesis on /probabilidades. Seeing them per case lets you audit where each confidence level comes from."
+            />
+          </Body>
+          <ol className="space-y-4">
+            {c.evidenceContribution.map((e, i) => {
+              const h = getHypothesis(e.hypothesisId);
+              const weight = STRENGTH_WEIGHT[e.strength] ?? 0;
+              const sign = e.direction === "supports" ? "+" : "−";
+              const arrowSym = e.direction === "supports" ? "↑" : "↓";
+              const strengthLabel: Record<string, { es: string; en: string }> = {
+                minimal: { es: "mínimo", en: "minimal" },
+                modest: { es: "modesto", en: "modest" },
+                substantial: { es: "sustancial", en: "substantial" },
+                "category-breaking": {
+                  es: "categoría nueva",
+                  en: "category-breaking",
+                },
+              };
+              const sLabel = strengthLabel[e.strength] ?? {
+                es: e.strength,
+                en: e.strength,
+              };
+              return (
+                <li
+                  key={i}
+                  className="grid grid-cols-[2.5rem_1fr] gap-4 border-l-2 pl-4"
+                  style={{ borderColor: h?.color ?? "var(--accent)" }}
+                >
+                  <span
+                    className="font-display text-2xl leading-none tabular-nums"
+                    style={{ color: h?.color ?? "var(--accent)" }}
+                  >
+                    {sign}
+                    {weight}
+                  </span>
+                  <div className="space-y-1">
+                    <p className="font-display text-lg font-medium leading-snug text-text">
+                      <T
+                        es={h?.label ?? e.hypothesisId}
+                        en={h?.labelEn ?? e.hypothesisId}
+                      />{" "}
+                      <span className="text-muted">{arrowSym}</span>
+                    </p>
+                    <p className="font-mono text-xs uppercase tracking-wider text-muted">
+                      <T es={sLabel.es} en={sLabel.en} />
+                    </p>
+                    <p className="text-sm leading-relaxed text-text/80">
+                      <T es={e.rationale} en={e.rationaleEn} />
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+          <Caption className="italic">
+            <T
+              es="Pesos: mínimo +0.5, modesto +2, sustancial +5, categoría nueva +15. Documentación completa en /about Cap. 5."
+              en="Weights: minimal +0.5, modest +2, substantial +5, category-breaking +15. Full documentation in /about Ch. 5."
+            />
+          </Caption>
+        </section>
+      )}
 
       {/* ────────── RELATED + NEXT CASE ────────── */}
       {similar.length > 0 && (

@@ -1,6 +1,6 @@
 import { PRIMITIVE_HYPOTHESES } from "@/lib/hypotheses";
 import { cases } from "@/lib/data";
-import { evidenceCountFor } from "@/lib/hypothesisMapping";
+import { evidenceCountFor, driftFor } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
 import { Eyebrow, H2, Caption } from "@/lib/typography";
 
@@ -40,6 +40,12 @@ export function IcdProbabilityChart() {
   const rows = PRIMITIVE_HYPOTHESES.map((h) => ({
     ...h,
     evidence: evidenceCountFor(h.id, cases),
+    drift: driftFor(
+      h.id,
+      h.corpusPct,
+      { min: h.icd.min, max: h.icd.max },
+      cases,
+    ),
   })).sort((a, b) => {
     const bandDiff = b.icd.max - a.icd.max;
     if (bandDiff !== 0) return bandDiff;
@@ -175,6 +181,8 @@ export function IcdProbabilityChart() {
                 <T es={h.note} en={h.noteEn} />
               </p>
 
+              <PressureBadge drift={h.drift} />
+
               <a
                 href={`#${h.id}`}
                 className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-accent hover:underline"
@@ -245,5 +253,81 @@ export function IcdProbabilityChart() {
         />
       </Caption>
     </section>
+  );
+}
+
+/**
+ * PressureBadge — displays the per-hypothesis evidence pressure index
+ * computed from the corpus, alongside the drift relative to calibrated
+ * probability. Three states:
+ *   - aligned (|drift| < 5pp): green check
+ *   - minor-drift (5-10pp): yellow caution
+ *   - review-needed (>10pp): orange flag
+ *
+ * The badge always shows raw pressure + supporting cases so the reader
+ * sees the continuous component of the calibration, not just the band.
+ */
+function PressureBadge({
+  drift,
+}: {
+  drift: {
+    pressure: number;
+    supportingCases: number;
+    impliedPct: number;
+    drift: number;
+    status: "aligned" | "minor-drift" | "review-needed";
+  };
+}) {
+  const sign = drift.drift >= 0 ? "+" : "−";
+  const driftAbs = Math.abs(drift.drift).toFixed(1);
+  const symbol =
+    drift.status === "aligned"
+      ? "✓"
+      : drift.status === "minor-drift"
+        ? "⚠"
+        : "▲";
+  const stateColor =
+    drift.status === "aligned"
+      ? "text-text/60"
+      : drift.status === "minor-drift"
+        ? "text-accent"
+        : "text-tierS";
+
+  return (
+    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-l-2 border-text/15 pl-3 font-mono text-[11px] uppercase tracking-wider text-muted">
+      <span>
+        <T es="Presión" en="Pressure" />:{" "}
+        <span className="text-text">{drift.pressure.toFixed(1)} pts</span>
+      </span>
+      <span aria-hidden className="text-text/30">
+        ·
+      </span>
+      <span>
+        <T es="Implica" en="Implies" />:{" "}
+        <span className="text-text">~{drift.impliedPct.toFixed(0)}%</span>
+      </span>
+      <span aria-hidden className="text-text/30">
+        ·
+      </span>
+      <span className={stateColor}>
+        <span aria-hidden>{symbol}</span>{" "}
+        <T
+          es={
+            drift.status === "aligned"
+              ? `alineado (${sign}${driftAbs} pp)`
+              : drift.status === "minor-drift"
+                ? `leve drift ${sign}${driftAbs} pp`
+                : `revisar — drift ${sign}${driftAbs} pp`
+          }
+          en={
+            drift.status === "aligned"
+              ? `aligned (${sign}${driftAbs} pp)`
+              : drift.status === "minor-drift"
+                ? `minor drift ${sign}${driftAbs} pp`
+                : `review — drift ${sign}${driftAbs} pp`
+          }
+        />
+      </span>
+    </div>
   );
 }

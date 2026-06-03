@@ -50,5 +50,14 @@
       "name": "Reuters — Japan to study UFOs (Sept 2020)",
       "url": "https://www.reuters.com"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Directiva ministerial formal de una potencia G7 trata el fenómeno como prioridad de defensa aérea — refuerza patrón de gestión institucional internacional",
+      "rationaleEn": "Formal ministerial directive from a G7 power treating the phenomenon as an air-defense priority — reinforces the international institutional handling pattern"
+    }
   ]
 }

@@ -50,5 +50,21 @@
       "name": "Cobertura La Nación, agosto 1995",
       "url": "https://www.lanacion.com.ar"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Patrón EM-interference + multi-testigo profesional + paper trail oficial — corroboración independiente del cluster Tehran/Malmstrom",
+      "rationaleEn": "EM interference pattern + professional multi-witness + official paper trail — independent corroboration of the Tehran/Malmstrom cluster"
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Apagón eléctrico sincronizado y ascenso vertical instantáneo dentro del rango física-exótica",
+      "rationaleEn": "Synchronized power blackout + instantaneous vertical ascent within the exotic-physics range"
+    }
   ]
 }
