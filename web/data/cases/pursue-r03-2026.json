@@ -1,0 +1,69 @@
+{
+  "id": "pursue-r03-2026",
+  "num": 49,
+  "name": "PURSUE R03 + Isaacman + OPM NDA",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.89,
+    "lng": -77.04,
+    "place": "Department of War"
+  },
+  "tier": "S",
+  "probability": 88,
+  "summary": "3 releases en 19 días (8/22/27 may) + 340M hits 12h + non-confirmation simultánea",
+  "summary_en": "3 releases in 19 days (May 8/22/27) + 340M hits 12h + simultaneous non-confirmation",
+  "patterns": [
+    "8n",
+    "8o"
+  ],
+  "category": "document",
+  "whatHappened": "Entre el 8 y el 27 de mayo de 2026, el AARO publicó tres releases consecutivos bajo el código PURSUE R03 (Pentagon Unidentified Recovery and Surveillance Unified Evaluation, third batch). El intervalo de 19 días entre el primer y tercer release rompió el patrón histórico del AARO de releases trimestrales o semi-anuales — sugiriendo presión operacional o política para acelerar la divulgación.\n\nEl release del 22 de mayo en particular acumuló más de 340 millones de hits durante las primeras 12 horas en plataformas de noticias y agregadores sociales, batiendo el récord de tráfico para cualquier comunicación oficial del AARO desde su creación en 2022. Simultáneamente, el DoD emitió una declaración de 'non-confirmation' explícita rehusando caracterizar el contenido como evidencia de origen no humano — un patrón retórico que analistas calificaron como 'managed limited hangout': liberar datos suficientes para mantener la narrativa de transparencia sin permitir conclusiones definitivas.\n\nEl timing coincidió con la desaparición pública del Major General retirado Doug McCasland (caso #50 del corpus) y con el fenómeno aliens.gov / migration framing en redes sociales norteamericanas. La triangulación temporal de estos tres eventos en menos de tres semanas es analíticamente relevante.",
+  "whatHappened_en": "Between May 8 and May 27, 2026, AARO published three consecutive releases under the code PURSUE R03 (Pentagon Unidentified Recovery and Surveillance Unified Evaluation, third batch). The 19-day window between the first and third release broke AARO's historical pattern of quarterly or semi-annual releases — suggesting operational or political pressure to accelerate disclosure.\n\nThe May 22 release in particular accumulated more than 340 million hits in the first 12 hours across news platforms and social aggregators, breaking the traffic record for any official AARO communication since its 2022 creation. Simultaneously, the DoD issued an explicit 'non-confirmation' statement refusing to characterize the content as evidence of non-human origin — a rhetorical pattern analysts labeled a 'managed limited hangout': release enough data to sustain the transparency narrative without permitting definitive conclusions.\n\nThe timing coincided with the public disappearance of retired Major General Doug McCasland (case #50 in the corpus) and with the aliens.gov / migration-framing phenomenon on U.S. social media. The temporal triangulation of these three events in under three weeks is analytically relevant.",
+  "whyMatters": "Caso de comportamiento institucional contemporáneo: la coincidencia entre aceleración de releases, récord histórico de atención mediática y disclaimer simultáneo del DoD sugiere que el aparato estadounidense de divulgación UAP entró en fase de release controlado en 2026. Esto es un dato estructural — independiente de si los UAP son de origen no humano — sobre cómo la institución está gestionando información que clasificaba como sensible hace solo cinco años.",
+  "whyMatters_en": "A case of contemporary institutional behavior: the convergence of accelerated releases, record-setting media attention, and a simultaneous DoD disclaimer suggests that the U.S. UAP disclosure apparatus entered a controlled-release phase in 2026. This is a structural data point — independent of whether UAPs are non-human in origin — about how the institution is managing information it classified as sensitive only five years ago.",
+  "evidence": [
+    "Tres releases AARO consecutivos: 8, 22 y 27 de mayo 2026",
+    "Métrica documentada de 340M+ hits en 12 horas para el release del 22 de mayo",
+    "Declaración DoD de 'non-confirmation' emitida sincronizadamente con cada release",
+    "Coincidencia temporal con McCasland disappearance y framing aliens.gov"
+  ],
+  "evidence_en": [
+    "Three consecutive AARO releases: May 8, 22, and 27, 2026",
+    "Documented metric of 340M+ hits in 12 hours for the May 22 release",
+    "DoD 'non-confirmation' statement issued in sync with each release",
+    "Temporal overlap with the McCasland disappearance and the aliens.gov framing"
+  ],
+  "sources": [
+    {
+      "name": "AARO Release R03 (mayo 2026)",
+      "url": "https://www.aaro.mil/",
+      "note": "Página oficial AARO con tres releases archivados"
+    },
+    {
+      "name": "DoD Press Office — Non-confirmation statement (mayo 2026)",
+      "url": "https://www.defense.gov/News/"
+    },
+    {
+      "name": "Coulthart, R. — NewsNation coverage (mayo 2026)",
+      "note": "Cobertura sostenida del intervalo de releases"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "AARO Release R03 (mayo 2026)",
+      "url": "https://www.aaro.mil/",
+      "note": "Official AARO page with the three archived releases"
+    },
+    {
+      "name": "DoD Press Office — Non-confirmation statement (mayo 2026)",
+      "url": "https://www.defense.gov/News/"
+    },
+    {
+      "name": "Coulthart, R. — NewsNation coverage (mayo 2026)",
+      "note": "Sustained coverage of the release window"
+    }
+  ]
+}
