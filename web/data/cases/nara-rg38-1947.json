@@ -1,0 +1,65 @@
+{
+  "id": "nara-rg38-1947",
+  "num": 3,
+  "name": "NARA RG 38 incident summaries",
+  "year_start": 1947,
+  "year_end": 1948,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 34.95,
+    "lng": -117.88,
+    "place": "Muroc Field, California"
+  },
+  "tier": "S",
+  "probability": 85,
+  "summary": "Records militares estructurados, Muroc + múltiples",
+  "summary_en": "Structured military records, Muroc + multiples",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "Entre 1947 y 1948, el Office of Naval Intelligence (ONI) y diversas comandancias de la US Navy compilaron Incident Summaries estructurados sobre avistamientos anómalos en bases aeronavales — particularmente Muroc Army Air Field (futuro Edwards AFB) en California, sitio de prueba de aeronaves experimentales. Estos reportes permanecen archivados en el National Archives Record Group 38 (Records of the Chief of Naval Operations).\n\nEl 8 de julio de 1947 — el mismo día del comunicado Roswell — pilotos de prueba en Muroc reportaron objetos discoidales realizando maniobras imposibles para aeronaves convencionales. Los Incident Summaries describen performances kinéticos que excedían el F-86 Sabre (entonces el caza más avanzado en desarrollo): 'velocidad estimada 250 a 800 mph, capacidad de detención instantánea, ascensos verticales'.\n\nEl historiador militar Michael Swords y el investigador Barry Greenwood catalogaron estos documentos en los años 1990. Muchos permanecen sin desclasificar bajo (b)(1) national security pese a su edad superior a 75 años, en contraste con el procedimiento estándar de declassificación automática.",
+  "whatHappened_en": "Between 1947 and 1948, the Office of Naval Intelligence (ONI) and various U.S. Navy commands compiled structured Incident Summaries on anomalous sightings at naval air bases — particularly Muroc Army Air Field (future Edwards AFB) in California, the experimental aircraft test site. These reports remain archived in National Archives Record Group 38 (Records of the Chief of Naval Operations).\n\nOn July 8, 1947 — the same day as the Roswell press release — test pilots at Muroc reported disc-shaped objects performing maneuvers impossible for conventional aircraft. The Incident Summaries describe kinematic performance exceeding the F-86 Sabre (then the most advanced fighter in development): 'estimated speed 250 to 800 mph, instantaneous halt capability, vertical climbs'.\n\nMilitary historian Michael Swords and researcher Barry Greenwood cataloged these documents in the 1990s. Many remain undeclassified under (b)(1) national security despite being over 75 years old, in contrast with the standard automatic declassification procedure.",
+  "whyMatters": "Demuestra que el aparato militar estadounidense generó documentación estructurada de avistamientos anómalos desde la primera ola de 1947, no solo press releases sino reportes operacionales internos. La retención continuada bajo clasificación de algunos documentos NARA RG 38 sugiere que su contenido permanece operacionalmente relevante — un dato analítico independiente sobre cómo la institución valora la información incluso ocho décadas después.",
+  "whyMatters_en": "Demonstrates that the U.S. military apparatus produced structured documentation of anomalous sightings from the very first 1947 wave — not just press releases but internal operational reports. Continued classification of some NARA RG 38 documents suggests their content remains operationally relevant — an independent analytical data point about how the institution values the information even eight decades later.",
+  "evidence": [
+    "Incident Summaries Muroc Army Air Field (8 julio 1947) en NARA RG 38",
+    "Catalogación independiente Swords/Greenwood de 1990s",
+    "Múltiples documentos aún retenidos bajo (b)(1) >75 años",
+    "Performance kinético reportado fuera del envelope de aeronaves de 1947"
+  ],
+  "evidence_en": [
+    "Muroc Army Air Field Incident Summaries (July 8, 1947) in NARA RG 38",
+    "Independent cataloging by Swords/Greenwood in the 1990s",
+    "Multiple documents still withheld under (b)(1) >75 years on",
+    "Reported kinematic performance outside the 1947 aircraft envelope"
+  ],
+  "sources": [
+    {
+      "name": "NARA Record Group 38 — ONI Records",
+      "url": "https://www.archives.gov/research/military/ww2/navy/rg-38.html"
+    },
+    {
+      "name": "Swords, M. & Powell, R. — UFOs and Government (2012)",
+      "note": "Catálogo cronológico de docs militares"
+    },
+    {
+      "name": "Greenwood, B. — Just Cause (CAUS 1985-2000)",
+      "note": "Newsletter dedicado a FOIA-recovered docs"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "NARA Record Group 38 — ONI Records",
+      "url": "https://www.archives.gov/research/military/ww2/navy/rg-38.html"
+    },
+    {
+      "name": "Swords, M. & Powell, R. — UFOs and Government (2012)",
+      "note": "Chronological catalog of military documents"
+    },
+    {
+      "name": "Greenwood, B. — Just Cause (CAUS 1985-2000)",
+      "note": "Newsletter dedicated to FOIA-recovered documents"
+    }
+  ]
+}
