@@ -50,5 +50,21 @@
       "name": "Cobertura Caretas (Perú, 2001)",
       "note": "Reapertura mediática del caso post-creación DIFAA"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Único caso del corpus con descarga balística cinética efectiva-nula documentada — modalidad sensora nueva",
+      "rationaleEn": "Only case in the corpus with documented effective-null kinetic ballistic discharge — new sensor modality"
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Absorción de 64 obuses de 30mm sin daño ni respuesta defensiva no es atribuible a tecnología terrestre conocida",
+      "rationaleEn": "Absorption of 64×30mm rounds with no damage or defensive response is not attributable to known terrestrial technology"
+    }
   ]
 }

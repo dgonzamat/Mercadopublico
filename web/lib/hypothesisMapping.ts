@@ -101,3 +101,149 @@ export function evidenceCountFor(
     patternCount: supportingPatterns.size,
   };
 }
+
+/**
+ * Per-case calibration system — see lib/types.ts EvidenceContribution.
+ *
+ * Each case can declare explicit contributions; otherwise auto-seeded from
+ * its pattern list (each mapped pattern = +0.5 to the mapped hypothesis).
+ *
+ * Two outputs:
+ *   - pressureFor(h, cases) → continuous score (Σ supports − Σ weakens)
+ *   - driftFor(h, cases) → comparison of implied vs calibrated probability
+ *
+ * Umbrella hypotheses inherit contributions from their subclasses
+ * (same UMBRELLA_SUBCLASSES relation used by evidenceCountFor).
+ */
+
+export const STRENGTH_WEIGHT: Record<string, number> = {
+  minimal: 0.5,
+  modest: 2,
+  substantial: 5,
+  "category-breaking": 15,
+};
+
+interface MinimalCase {
+  id?: string;
+  patterns: string[];
+  evidenceContribution?: Array<{
+    hypothesisId: string;
+    direction: "supports" | "weakens";
+    strength: string;
+  }>;
+}
+
+interface NormalizedContribution {
+  caseId: string;
+  hypothesisId: string;
+  direction: "supports" | "weakens";
+  strength: string;
+  weight: number;
+}
+
+/**
+ * Returns effective contributions for a case. If the case declares
+ * `evidenceContribution`, those are used directly. Otherwise, auto-seed
+ * from patterns: each pattern mapped to a hypothesis emits a `minimal`
+ * supporting contribution to that hypothesis.
+ */
+function effectiveContributions(c: MinimalCase): NormalizedContribution[] {
+  const caseId = c.id ?? "(unknown)";
+  if (c.evidenceContribution && c.evidenceContribution.length > 0) {
+    return c.evidenceContribution.map((e) => ({
+      caseId,
+      hypothesisId: e.hypothesisId,
+      direction: e.direction,
+      strength: e.strength,
+      weight: STRENGTH_WEIGHT[e.strength] ?? 0,
+    }));
+  }
+  // Auto-seed from patterns
+  const seen = new Set<string>();
+  const out: NormalizedContribution[] = [];
+  for (const p of c.patterns) {
+    const hid = PATTERN_TO_HYPOTHESIS[p];
+    if (!hid || seen.has(hid)) continue;
+    seen.add(hid);
+    out.push({
+      caseId,
+      hypothesisId: hid,
+      direction: "supports",
+      strength: "minimal",
+      weight: STRENGTH_WEIGHT.minimal,
+    });
+  }
+  return out;
+}
+
+/**
+ * Continuous pressure index per hypothesis.
+ * Honors umbrella inheritance (subclass contributions count for the umbrella).
+ */
+export function pressureFor(
+  hypothesisId: string,
+  cases: MinimalCase[],
+): { pressure: number; supportingCases: number; declaredCases: number } {
+  const targets = targetIdsFor(hypothesisId);
+  let supports = 0;
+  let weakens = 0;
+  const supportingCaseIds = new Set<string>();
+  let declaredCases = 0;
+  for (const c of cases) {
+    let touched = false;
+    if (c.evidenceContribution && c.evidenceContribution.length > 0) {
+      declaredCases++;
+    }
+    for (const e of effectiveContributions(c)) {
+      if (!targets.includes(e.hypothesisId)) continue;
+      touched = true;
+      if (e.direction === "supports") supports += e.weight;
+      else weakens += e.weight;
+    }
+    if (touched) supportingCaseIds.add(c.id ?? "");
+  }
+  return {
+    pressure: supports - weakens,
+    supportingCases: supportingCaseIds.size,
+    declaredCases,
+  };
+}
+
+/**
+ * Drift analysis: maps the continuous pressure to an implied probability
+ * within the hypothesis's ICD-203 band, and compares with the calibrated
+ * value. Used to surface when the corpus has accumulated evidence that
+ * the verbal calibration hasn't been updated to reflect.
+ *
+ * pressureNorm = clamp(pressure / 50, -1, 1)
+ * implied      = midpoint + pressureNorm × bandWidth × 0.5
+ *
+ * The 50-point normalization scale is documented in `/about` Chapter 5
+ * as the "full half-band shift" threshold.
+ */
+export type DriftStatus = "aligned" | "minor-drift" | "review-needed";
+
+export function driftFor(
+  hypothesisId: string,
+  calibratedPct: number,
+  band: { min: number; max: number },
+  cases: MinimalCase[],
+): {
+  pressure: number;
+  supportingCases: number;
+  impliedPct: number;
+  drift: number;
+  status: DriftStatus;
+} {
+  const { pressure, supportingCases } = pressureFor(hypothesisId, cases);
+  const midpoint = (band.min + band.max) / 2;
+  const width = band.max - band.min;
+  const pressureNorm = Math.max(-1, Math.min(1, pressure / 50));
+  const impliedRaw = midpoint + pressureNorm * width * 0.5;
+  const impliedPct = Math.max(1, Math.min(99, impliedRaw));
+  const drift = impliedPct - calibratedPct;
+  const absDrift = Math.abs(drift);
+  const status: DriftStatus =
+    absDrift < 5 ? "aligned" : absDrift < 10 ? "minor-drift" : "review-needed";
+  return { pressure, supportingCases, impliedPct, drift, status };
+}
