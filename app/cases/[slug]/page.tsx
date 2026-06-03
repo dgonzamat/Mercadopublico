@@ -271,6 +271,36 @@ export default function CaseDetailPage({
           </h2>
         </header>
 
+        {c.primaryDocument && (
+          <figure className="space-y-3 border-l-2 border-accent/40 pl-5">
+            <a
+              href={c.primaryDocument.href ?? c.primaryDocument.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full max-w-md transition hover:opacity-90"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={c.primaryDocument.url}
+                alt={c.primaryDocument.alt}
+                className="w-full border border-text/15 bg-surface-2"
+                loading="lazy"
+              />
+            </a>
+            <figcaption className="max-w-md space-y-1">
+              <p className="text-sm leading-snug text-text">
+                <T
+                  es={c.primaryDocument.caption}
+                  en={c.primaryDocument.caption_en ?? c.primaryDocument.caption}
+                />
+              </p>
+              <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                {c.primaryDocument.source} · {c.primaryDocument.license}
+              </p>
+            </figcaption>
+          </figure>
+        )}
+
         {(hasEvidence || hasSources) && (
           <div className="grid gap-12 md:grid-cols-2">
             {hasEvidence && (
