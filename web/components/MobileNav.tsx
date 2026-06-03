@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { T } from "@/components/T";
+import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
   href: "/probabilidades",
@@ -135,7 +136,7 @@ export function MobileNav() {
 
               {/* NAV PRINCIPAL */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es="Explorar los 52 casos" en="Explore the 52 cases" />
+                <T es={`Explorar los ${STATS.cases} casos`} en={`Explore the ${STATS.cases} cases`} />
               </p>
               <ul className="mt-4 divide-y divide-bg/15 border-y border-bg/15">
                 {NAV_LINKS.map((l) => (
