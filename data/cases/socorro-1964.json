@@ -53,5 +53,14 @@
     {
       "name": "Stanford, Ray — Socorro Saucer in a Pentagon Pantry (1976)"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Project_Blue_Book_report_-_1964-04-8694587-Socorro-NewMexico.pdf?page=1&width=600",
+    "alt": "Primera página del expediente Project Blue Book #8766 sobre el caso Socorro, Nuevo México, 24 de abril de 1964.",
+    "caption": "Expediente original Project Blue Book #8766 — clasificado oficialmente como \"Unknown\" tras la observación del Oficial Lonnie Zamora.",
+    "caption_en": "Original Project Blue Book case file #8766 — officially classified \"Unknown\" after Officer Lonnie Zamora's sighting.",
+    "source": "USAF Project Blue Book",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book_report_-_1964-04-8694587-Socorro-NewMexico.pdf"
+  }
 }
