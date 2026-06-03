@@ -1,9 +1,10 @@
 import { frameworks } from "@/lib/data";
+import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
   title: "Frameworks · UAP Atlas",
-  description: "11 serious theoretical frameworks compared",
+  description: `${STATS.frameworks} serious theoretical frameworks compared`,
 };
 
 const verdictColor: Record<string, string> = {
@@ -26,8 +27,8 @@ export default function FrameworksPage() {
       <header>
         <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
           <T
-            es="11 teorías serias en competencia"
-            en="11 serious competing theories"
+            es={`${STATS.frameworks} teorías serias en competencia`}
+            en={`${STATS.frameworks} serious competing theories`}
           />
         </h1>
         <p className="mt-2 text-muted">

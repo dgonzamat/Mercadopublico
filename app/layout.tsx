@@ -5,7 +5,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
-import { TOTAL_CASES } from "@/lib/data";
+import { STATS } from "@/lib/siteStats";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -23,10 +23,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "UAP Atlas — Institutional analysis",
-  description: `79 years of UAP phenomenon documented institutionally. ${TOTAL_CASES} cases, 18 patterns, 11 frameworks compared.`,
+  description: `${STATS.years} years of UAP phenomenon documented institutionally. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} frameworks compared.`,
   openGraph: {
     title: "UAP Atlas — Institutional analysis",
-    description: `79 years of UAP phenomenon, ${TOTAL_CASES} cases, 18 patterns.`,
+    description: `${STATS.years} years of UAP phenomenon, ${STATS.cases} cases, ${STATS.patterns} patterns.`,
     type: "website",
   },
 };

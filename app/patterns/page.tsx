@@ -1,9 +1,10 @@
 import { patterns, cases } from "@/lib/data";
+import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
   title: "Patterns · UAP Atlas",
-  description: "18 recurring patterns (8a-8r) identified in the corpus",
+  description: `${STATS.patterns} recurring patterns (8a-8r) identified in the corpus`,
 };
 
 export default function PatternsPage() {
@@ -12,14 +13,14 @@ export default function PatternsPage() {
       <header>
         <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
           <T
-            es="18 patrones que aparecen una y otra vez"
-            en="18 patterns that show up again and again"
+            es={`${STATS.patterns} patrones que aparecen una y otra vez`}
+            en={`${STATS.patterns} patterns that show up again and again`}
           />
         </h1>
         <p className="mt-2 text-muted">
           <T
-            es={`${patterns.length} patrones identificados a través de convergencia entre casos independientes. No se diseñaron a priori — emergieron tras acumulación de evidencia.`}
-            en={`${patterns.length} patterns identified through convergence across independent cases. They were not designed a priori — they emerged after accumulation of evidence.`}
+            es={`${STATS.patterns} patrones identificados a través de convergencia entre casos independientes. No se diseñaron a priori — emergieron tras acumulación de evidencia.`}
+            en={`${STATS.patterns} patterns identified through convergence across independent cases. They were not designed a priori — they emerged after accumulation of evidence.`}
           />
         </p>
       </header>
