@@ -1,0 +1,69 @@
+{
+  "id": "ghost-rockets-1946",
+  "num": 72,
+  "name": "Ghost Rockets · Försvarsstaben",
+  "year_start": 1946,
+  "country": "SE",
+  "country_name": "Suecia",
+  "flag": "🇸🇪",
+  "location": {
+    "lat": 59.33,
+    "lng": 18.07,
+    "place": "Estocolmo · Försvarsstaben (Estado Mayor)"
+  },
+  "tier": "S",
+  "probability": 70,
+  "summary": "~2,000 reportes en Suecia 1946. Försvarsstaben emite comunicado oficial: 225 casos clasificados como 'objetos físicos reales' tras revisión institucional.",
+  "summary_en": "~2,000 reports across Sweden 1946. Försvarsstaben issues official statement: 225 cases classified as 'real physical objects' after institutional review.",
+  "patterns": [
+    "8a",
+    "8e",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre mayo y diciembre de 1946, Suecia recibió aproximadamente 2,000 reportes de objetos con forma de cohete o misil cruzando su espacio aéreo, con un pico de actividad entre el 9 y 11 de agosto de 1946. El Estado Mayor sueco (Försvarsstaben) creó un comité formal de investigación — el Ghost Rocket Committee — que procesó sistemáticamente las observaciones.\n\nDe los aproximadamente 1,000 reportes revisados hacia el 29 de noviembre de 1946, **225 fueron oficialmente clasificados como observaciones de 'objetos físicos reales'** según un memorándum de FOA (Försvarets forskningsanstalt / Instituto Nacional de Investigación de Defensa) fechado el 3 de diciembre de 1946. Aproximadamente 100 impactos fueron documentados y 30 piezas de restos físicos fueron examinadas en laboratorio.\n\nEl 10 de octubre de 1946, el Estado Mayor emitió un comunicado público con la conclusión más significativa del archivo: 'En algunos casos... se han hecho observaciones claras e inequívocas que no pueden explicarse como fenómenos naturales, aeronaves suecas, o imaginación.' La hipótesis principal investigada fue ensayos soviéticos de cohetes V-2 capturados — nunca confirmada. Los archivos fueron desclasificados en 1984 y posteriormente puestos a disposición a través del AFU (Arkivet för UFO-forskning).",
+  "whatHappened_en": "Between May and December 1946, Sweden received approximately 2,000 reports of rocket- or missile-shaped objects crossing its airspace, peaking on August 9-11, 1946. The Swedish Defence Staff (Försvarsstaben) formed a formal investigative committee — the Ghost Rocket Committee — that systematically processed observations.\n\nOf approximately 1,000 reports reviewed by November 29, 1946, **225 were officially classified as observations of 'real physical objects'** per a memo from FOA (Försvarets forskningsanstalt / National Defence Research Institute) dated December 3, 1946. Approximately 100 impacts were documented and 30 debris pieces examined in laboratory.\n\nOn October 10, 1946, the Defence Staff issued a public communiqué with the file's most significant conclusion: 'In some cases... clear, unambiguous observations have been made that cannot be explained as natural phenomena, Swedish aircraft, or imagination.' The main investigated hypothesis was Soviet tests of captured V-2 rockets — never confirmed. Files were declassified 1984 and later made available via AFU (Arkivet för UFO-forskning).",
+  "whyMatters": "Es probablemente el ejemplo más temprano del corpus de un Estado neutral organizando una respuesta institucional formal y publicando estadísticas con una clasificación explícita 'objetos físicos no explicados' tras una revisión escéptica nacional. La cifra de 225 reportes residuales no es propaganda — es el resultado documentado por FOA tras descartar las explicaciones convencionales.",
+  "whyMatters_en": "Likely the earliest corpus example of a neutral state organizing a formal institutional response and publishing statistics with an explicit 'unexplained physical objects' classification after national skeptical review. The 225 residual reports is not propaganda — it is the documented FOA result after ruling out conventional explanations.",
+  "evidence": [
+    "Comunicado oficial del Försvarsstaben (10 octubre 1946)",
+    "Memo FOA del 3 de diciembre de 1946 documentando 225 reportes clasificados como 'objetos físicos reales'",
+    "~100 impactos físicos y 30 piezas de restos examinadas en laboratorio",
+    "Archivos desclasificados 1984; mantenidos por AFU (Arkivet för UFO-forskning)"
+  ],
+  "evidence_en": [
+    "Official Försvarsstaben communiqué (October 10, 1946)",
+    "FOA memo dated December 3, 1946 documenting 225 reports classified as 'real physical objects'",
+    "~100 physical impacts and 30 debris pieces examined in laboratory",
+    "Files declassified 1984; held by AFU (Arkivet för UFO-forskning)"
+  ],
+  "sources": [
+    {
+      "name": "Ghost rockets — Wikipedia con bibliografía Swahn/Liljegren/AFU",
+      "url": "https://en.wikipedia.org/wiki/Ghost_rockets"
+    },
+    {
+      "name": "PROJECT 1947 — Sweden Ghost Rocket Reports 1946",
+      "url": "https://www.project1947.com/fig/1946a.htm"
+    },
+    {
+      "name": "AFU — Arkivet för UFO-forskning"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El Försvarsstaben investigó sistemáticamente la hipótesis de ensayos soviéticos de V-2 capturados — proceso típico de descartar tecnología clasificada extranjera",
+      "rationaleEn": "Försvarsstaben systematically investigated the hypothesis of Soviet V-2 captured tests — typical process of ruling out foreign classified technology"
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Comunicado oficial sueco explícitamente descarta 'fenómenos naturales, aeronaves suecas o imaginación' para 225 casos residuales tras revisión científica de FOA",
+      "rationaleEn": "Official Swedish communiqué explicitly rules out 'natural phenomena, Swedish aircraft or imagination' for 225 residual cases after FOA scientific review"
+    }
+  ]
+}
