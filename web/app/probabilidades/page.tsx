@@ -24,6 +24,37 @@ export const metadata = {
 
 const FEATURED_HYPOTHESIS_ID = "entidades-no-humanas";
 
+/**
+ * Visual conventions for this page (apply consistently when editing):
+ *
+ * BORDERS — section separators:
+ *   border-t-2 border-text         major section break (top)
+ *   border-l-4 border-accent       featured hypothesis card (H5)
+ *   border-l-4 + style h.color     off-axis hypothesis (antecedent/derived)
+ *   border-b   border-text/15      collapsed accordion separator
+ *   border-l-2 border-text/15      content inset (expansion paragraphs)
+ *   border-l-2 border-accent/40    content inset INSIDE the featured card
+ *
+ * CTAs — touch targets:
+ *   min-h-[56px]                   primary nav CTA (hero-level, one per group)
+ *   min-h-[44px]                   all other links and badges (a11y minimum)
+ *
+ * CTAs — variants by semantic role:
+ *   bg-accent + hover:bg-text                    primary filled (the ONE
+ *                                                main action in a section)
+ *   border-2 border-text +                       outline secondary
+ *     hover:bg-text hover:text-bg                (most "→" CTAs)
+ *   border + border-l-color +                    categorical tag/badge
+ *     hover:border-accent/50                     (patterns, taxonomies)
+ *   hover:bg-panel                               in-list internal link
+ *                                                (case listings)
+ *
+ * Text sizes follow target size:
+ *   56px CTA  → text-base label + text-[11px] kicker
+ *   44px CTA  → text-sm
+ *   44px tag  → text-xs (compact, multi-row)
+ */
+
 export default function ProbabilidadesPage() {
   return (
     <article className="mx-auto max-w-3xl space-y-16 py-8">
@@ -130,7 +161,7 @@ export default function ProbabilidadesPage() {
       </section>
 
       {/* ─────────── NAV CIERRE (CTAs específicos) ─────────── */}
-      <nav className="grid gap-3 border-y-2 border-text py-6 sm:grid-cols-2 lg:grid-cols-3">
+      <nav className="grid gap-3 border-t-2 border-text pt-6 sm:grid-cols-2 lg:grid-cols-3">
         <Link
           href="/cases/lake-huron-2023"
           className="inline-flex min-h-[56px] flex-col justify-center bg-accent px-5 py-3 text-sm hover:bg-text"
@@ -176,7 +207,7 @@ export default function ProbabilidadesPage() {
       </nav>
 
       {/* ─────────── NOTA METODOLÓGICA (callout NO/SÍ movido al final) ─────────── */}
-      <details className="group border-t border-border pt-6">
+      <details className="group border-t-2 border-text pt-6">
         <summary className="cursor-pointer list-none font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
           <T
             es="Nota metodológica · qué es esto y qué NO es →"
@@ -569,14 +600,34 @@ function renderNoEvidenceExpansion(id: string) {
         <div className="space-y-4 border-l-2 border-accent/40 pl-5 pt-2">
           <Body>
             <T
-              es="Esta es la categoría paraguas: incluye interdimensional (22%), psicoespiritual (22%), tratado formal (6%), + categorías sin vocabulario establecido. Por cota de Fréchet, el paraguas tiene que ser al menos tan alto como la subclase más alta — su prior de 28% asume solape significativo entre subclases. El % efectivo del chart arriba refleja la presión acumulada de los casos del corpus."
-              en="This is the umbrella category: includes interdimensional (22%), psychospiritual (22%), formal treaty (6%), + categories without established vocabulary. By the Fréchet bound, the umbrella must be at least as high as the highest subclass — its 28% prior assumes significant overlap between them. The effective % in the chart above reflects accumulated pressure from corpus cases."
-            />
-          </Body>
-          <Body className="text-muted">
-            <T
-              es="La frontera analítica real vive acá. Casos militares con sensor (Tehran, Nimitz) son evidencia fuerte de algo, pero NO discriminan entre 'tecnología clasificada' y 'algo no humano' — ambas interpretaciones son consistentes con los datos. Esa indecidibilidad es la que mantiene la probabilidad en banda pareja."
-              en="The real analytical frontier lives here. Military sensor cases (Tehran, Nimitz) are strong evidence of something, but do NOT discriminate between 'classified tech' and 'something non-human' — both interpretations are consistent with the data. That undecidability is what keeps the probability in the even band."
+              es={
+                <>
+                  <strong className="text-text">Por qué exactamente 28%.</strong>{" "}
+                  Por cota de Fréchet, el paraguas tiene que ser al menos tan
+                  alto como la subclase más alta — con interdimensional (22%),
+                  psicoespiritual (22%), tratado formal (6%) más variantes sin
+                  vocabulario establecido, el prior asume solape significativo
+                  entre subclases. Los casos militares con sensor (Tehran,
+                  Nimitz) son evidencia fuerte de <em>algo</em>, pero NO
+                  discriminan entre tecnología clasificada y entidades no
+                  humanas. Esa indecidibilidad es la que mantiene la
+                  probabilidad en banda pareja.
+                </>
+              }
+              en={
+                <>
+                  <strong className="text-text">Why exactly 28%.</strong>{" "}
+                  By the Fréchet bound, the umbrella must be at least as high
+                  as the highest subclass — with interdimensional (22%),
+                  psychospiritual (22%), formal treaty (6%) plus variants
+                  without established vocabulary, the prior assumes
+                  significant overlap between subclasses. Military sensor
+                  cases (Tehran, Nimitz) are strong evidence of{" "}
+                  <em>something</em>, but do NOT discriminate between
+                  classified tech and non-human entities. That undecidability
+                  is what keeps the probability in the even band.
+                </>
+              }
             />
           </Body>
           <div className="flex flex-wrap gap-3 pt-2">
