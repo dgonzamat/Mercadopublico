@@ -1,0 +1,73 @@
+{
+  "id": "bolivia-el-taire-1978",
+  "num": 77,
+  "name": "El Taire / Bermejo crash",
+  "year_start": 1978,
+  "country": "BO",
+  "country_name": "Bolivia",
+  "flag": "🇧🇴",
+  "location": {
+    "lat": -22.69,
+    "lng": -64.34,
+    "place": "Cerro El Taire · Bermejo · frontera Tarija"
+  },
+  "tier": "A",
+  "probability": 60,
+  "summary": "Objeto cilíndrico impacta montaña frontera Bolivia/Argentina; boom supersónico audible a 150 mi; FAB despliega 3 aeronaves; CIA cable FOIA documenta.",
+  "summary_en": "Cylindrical object impacts mountain on Bolivia/Argentina border; supersonic boom audible at 150 mi; Bolivian Air Force deploys 3 aircraft; CIA FOIA cable documents.",
+  "patterns": [
+    "8a",
+    "8m"
+  ],
+  "category": "incident",
+  "whatHappened": "El 6 de mayo de 1978, un objeto cilíndrico metálico impactó el cerro El Taire cerca del río Bermejo, en la frontera entre el departamento de Tarija (Bolivia) y la provincia de Salta (Argentina). El boom sónico del impacto fue audible a aproximadamente 150 millas (~240 km) de distancia, registrado por testimonios coincidentes en ambos lados de la frontera.\n\nLa Fuerza Aérea Boliviana (FAB) desplegó tres aeronaves al sitio en las horas siguientes. Los datos disponibles sugieren que personal militar estadounidense — incluyendo al Coronel Robert Simmons y al Mayor John Hayes — estaba presente o asistió en la respuesta inicial, posiblemente en capacidad de enlace técnico.\n\nLa cobertura periodística boliviana de la época (El Diario, La Razón) reportó zonas acordonadas y restos materiales retirados por personal mixto. No se publicó nunca un informe técnico oficial boliviano sobre el material recuperado o la naturaleza del objeto.\n\nLa CIA emitió un cable interno titulado 'Bolivia's Report Contradicts the Details of the Fallen Object' que fue desclasificado posteriormente y está disponible públicamente en el CIA Reading Room (documento 0005515665). El cable señala explícitamente contradicciones entre los reportes bolivianos oficiales y las observaciones independientes, lo que sostiene el caso como institucionalmente no resuelto.",
+  "whatHappened_en": "On May 6, 1978, a cylindrical metallic object impacted El Taire hill near the Bermejo river on the border between Tarija department (Bolivia) and Salta province (Argentina). The sonic boom of impact was audible at approximately 150 miles (~240 km), recorded by coincident testimonies on both sides of the border.\n\nThe Bolivian Air Force (FAB) deployed three aircraft to the site in the following hours. Available data suggest US military personnel — including Colonel Robert Simmons and Major John Hayes — were present or assisted in the initial response, possibly in a technical liaison capacity.\n\nContemporary Bolivian press coverage (El Diario, La Razón) reported cordoned-off zones and material remains retrieved by mixed personnel. No official Bolivian technical report on the recovered material or the object's nature was ever published.\n\nThe CIA issued an internal cable titled 'Bolivia's Report Contradicts the Details of the Fallen Object' which was later declassified and is publicly available in the CIA Reading Room (document 0005515665). The cable explicitly notes contradictions between Bolivian official reports and independent observations, sustaining the case as institutionally unresolved.",
+  "whyMatters": "Es uno de los pocos casos del corpus con cable CIA FOIA directo señalando contradicciones en el reporte oficial del país sede del incidente. El triage inicial del corpus rechazó este caso por 'sin reporte oficial publicado', pero el deep research posterior recuperó el cable CIA Reading Room 0005515665 que provee paper trail institucional verificable.",
+  "whyMatters_en": "One of the few corpus cases with a direct CIA FOIA cable flagging contradictions in the host country's official report. The corpus's initial triage rejected this case for 'no published official report,' but subsequent deep research recovered CIA Reading Room cable 0005515665, providing verifiable institutional paper trail.",
+  "evidence": [
+    "CIA cable desclasificado 'Bolivia's Report Contradicts the Details of the Fallen Object' (CIA Reading Room doc 0005515665)",
+    "Boom sónico audible a 150 mi documentado por testimonios cross-frontera Bolivia/Argentina",
+    "Despliegue documentado de tres aeronaves FAB al sitio de impacto",
+    "Cobertura contemporánea de El Diario y La Razón sobre zona acordonada"
+  ],
+  "evidence_en": [
+    "Declassified CIA cable 'Bolivia's Report Contradicts the Details of the Fallen Object' (CIA Reading Room doc 0005515665)",
+    "Sonic boom audible at 150 mi documented by cross-border Bolivia/Argentina testimonies",
+    "Documented deployment of three FAB aircraft to impact site",
+    "Contemporary El Diario and La Razón coverage of cordoned-off zone"
+  ],
+  "sources": [
+    {
+      "name": "CIA Reading Room — Bolivia's Report Contradicts the Details of the Fallen Object",
+      "url": "https://www.cia.gov/readingroom/document/0005515665",
+      "note": "Documento primario desclasificado"
+    },
+    {
+      "name": "UFO Evidence — El Taire / Bermejo Crash",
+      "url": "http://www.ufoevidence.org/cases/case635.htm"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Cable CIA explícitamente identifica contradicciones en el reporte oficial boliviano — la naturaleza del objeto nunca fue institucionalmente resuelta",
+      "rationaleEn": "CIA cable explicitly identifies contradictions in the official Bolivian report — the object's nature was never institutionally resolved"
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Presencia documentada de personal militar estadounidense nombrado (Simmons, Hayes) en una recuperación material en Bolivia sugiere coordinación clasificada multinacional",
+      "rationaleEn": "Documented presence of named US military personnel (Simmons, Hayes) in a material retrieval in Bolivia suggests classified multinational coordination"
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Cable CIA descarta cierre como meteorito convencional al señalar explícitamente las contradicciones del reporte boliviano sobre 'fallen object'",
+      "rationaleEn": "CIA cable rules out closure as conventional meteor by explicitly flagging contradictions in the Bolivian report on 'fallen object'"
+    }
+  ]
+}

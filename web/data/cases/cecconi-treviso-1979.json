@@ -1,0 +1,77 @@
+{
+  "id": "cecconi-treviso-1979",
+  "num": 76,
+  "name": "Cecconi G-91R · Treviso",
+  "year_start": 1979,
+  "country": "IT",
+  "country_name": "Italia",
+  "flag": "🇮🇹",
+  "location": {
+    "lat": 45.67,
+    "lng": 12.24,
+    "place": "Treviso · 14° Gruppo, 2° Stormo"
+  },
+  "tier": "S",
+  "probability": 72,
+  "summary": "G-91R del 14º Gruppo vectorado por radar Istrana; 82 frames gun-camera VINTEN preservados; archivo AM Aeronautica Militare.",
+  "summary_en": "14th Gruppo G-91R vectored by Istrana radar; 82 VINTEN gun-camera frames preserved; AM Aeronautica Militare archive.",
+  "patterns": [
+    "8a",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 18 de junio de 1979, el Mariscal Giancarlo Cecconi del 14º Gruppo, 2º Stormo de la Aeronautica Militare Italiana, fue vectorado por el Centro Istrana (radar de control de tráfico aéreo militar) sobre un objeto no identificado que penetraba el espacio aéreo italiano. Cecconi piloteaba un Fiat G-91R de reconocimiento equipado con cámara de armamento VINTEN para registro fotogramétrico.\n\nDurante una serie de 7 a 8 pases sucesivos sobre el objeto a una distancia de aproximadamente 70 a 80 metros, Cecconi filmó **82 fotogramas de cámara gun-camera VINTEN** del objeto. La imagen documentada presenta una forma de disco aplanado con un domo central, con una firma fotométrica inconsistente con cualquier aeronave conocida de la época.\n\nEl reporte completo — incluyendo el rollo VINTEN, la traza radar del Centro Istrana, y el debriefing de Cecconi — fue archivado en el dossier oficial OVNI de la Aeronautica Militare, parte del marco institucional establecido en 1978 por directiva del entonces Primer Ministro Giulio Andreotti tras la oleada UAP italiana de ese año.\n\nUna explicación oficial posterior del Ministerio de Defensa italiano propuso 'bolsa de plástico negro' como artefacto observado — explicación que ha sido contestada en la literatura científica por inconsistencias cinemáticas (la 'bolsa' habría requerido velocidad y direccionalidad imposibles para un objeto de masa atmosférica). El archivo institucional retiene el caso.",
+  "whatHappened_en": "On June 18, 1979, Maresciallo Giancarlo Cecconi of the 14th Gruppo, 2nd Stormo of the Italian Air Force, was vectored by Centro Istrana (military air traffic control radar) onto an unidentified object penetrating Italian airspace. Cecconi was flying a Fiat G-91R reconnaissance aircraft equipped with a VINTEN gun camera for photogrammetric recording.\n\nDuring 7 to 8 successive passes over the object at approximately 70-80 meters distance, Cecconi filmed **82 VINTEN gun-camera frames** of the object. The documented imagery shows a flattened disc shape with a central dome, with a photometric signature inconsistent with any known aircraft of the era.\n\nThe full report — including the VINTEN reel, Centro Istrana radar track, and Cecconi's debriefing — was archived in the official Aeronautica Militare UFO dossier, part of the institutional framework established in 1978 by directive of then-Prime Minister Giulio Andreotti following Italy's UAP wave that year.\n\nA later Italian Ministry of Defence official explanation proposed 'black plastic bag' as the observed artifact — an explanation contested in scientific literature due to kinematic inconsistencies (the 'bag' would have required impossible speed and directionality for an atmospheric-mass object). The institutional archive retains the case.",
+  "whyMatters": "Es probablemente la mejor evidencia visual del corpus europeo: cámara de armamento militar institucional, radar lock confirmado por Centro Istrana, piloto nombrado del 14º Gruppo, archivo oficial Aeronautica Militare retenido. Italia fue el primer Estado en formalizar un programa OVNI militar publicado (1978-presente), y Cecconi es el caso fundacional dentro de ese marco.",
+  "whyMatters_en": "Likely the best visual evidence in the European corpus: institutional military gun camera, radar lock confirmed by Centro Istrana, named pilot from 14th Gruppo, retained official Aeronautica Militare archive. Italy was the first state to formalize a published military UFO program (1978-present), and Cecconi is the founding case within that framework.",
+  "evidence": [
+    "82 fotogramas gun-camera VINTEN preservados en archivo Aeronautica Militare",
+    "Vector y traza radar del Centro Istrana — radar militar de control de tráfico aéreo",
+    "Identificación nominal del Mariscal Giancarlo Cecconi, 14º Gruppo 2º Stormo AM",
+    "Marco institucional Andreotti/SIOS 1978 — primer programa OVNI militar publicado de Europa"
+  ],
+  "evidence_en": [
+    "82 VINTEN gun-camera frames preserved in Aeronautica Militare archive",
+    "Centro Istrana vector and radar track — military air traffic control radar",
+    "Named identification of Maresciallo Giancarlo Cecconi, 14th Gruppo 2nd Stormo AM",
+    "Andreotti/SIOS 1978 institutional framework — first published military UFO program in Europe"
+  ],
+  "sources": [
+    {
+      "name": "The Black Vault — Cecconi 1979 case file",
+      "url": "https://www.theblackvault.com/casefiles/the-ufo-case-of-maresciallo-cecconi-june-18-1979/"
+    },
+    {
+      "name": "Aeronautica Militare — Archivo OVNI oficial",
+      "url": "https://www.aeronautica.difesa.it/ovni/",
+      "note": "Marco institucional Andreotti/SIOS 1978-presente"
+    },
+    {
+      "name": "EuroUFO — 1978 Italian Wave retrospective",
+      "url": "http://www.euroufo.net/2018/05/project1978/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Caso fundacional del marco SIOS/Andreotti — primer programa OVNI militar formal publicado en Europa, sostiene patrón de manejo institucional",
+      "rationaleEn": "Founding case of the SIOS/Andreotti framework — first formal published military UFO program in Europe, sustains institutional handling pattern"
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Forma de disco aplanado con domo central + cinemática inconsistente con bolsa plástica — categoría estructural no atribuible a aeronave conocida",
+      "rationaleEn": "Flattened disc with central dome + kinematics inconsistent with plastic bag — structural category not attributable to known aircraft"
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "82 frames de gun-camera militar + radar lock simultáneo + 7 pases excluyen plasma, sprite o ilusión óptica",
+      "rationaleEn": "82 military gun-camera frames + simultaneous radar lock + 7 passes exclude plasma, sprite or optical illusion"
+    }
+  ]
+}
