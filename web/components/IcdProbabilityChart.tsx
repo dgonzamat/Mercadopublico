@@ -81,9 +81,10 @@ export function IcdProbabilityChart() {
           <T
             es={
               <>
-                Un mismo caso puede caer en varias hipótesis a la vez — por
-                eso los porcentajes no compiten ni suman 100. Cada uno se
-                evalúa por separado. La etiqueta (<em>casi cierto</em>,{" "}
+                Cada % responde a la pregunta: <em>¿al menos un caso del
+                corpus es de este tipo?</em> Un mismo caso puede caer en
+                varias hipótesis a la vez — por eso los porcentajes no
+                compiten ni suman 100. La etiqueta (<em>casi cierto</em>,{" "}
                 <em>probable</em>, <em>improbable</em>) viene del método que
                 usan los analistas de inteligencia cuando no hay modelo
                 matemático ({" "}
@@ -106,10 +107,11 @@ export function IcdProbabilityChart() {
             }
             en={
               <>
-                A single case can fall into multiple hypotheses at once —
-                that&apos;s why percentages don&apos;t compete or sum to 100.
-                Each one is measured separately. The label (
-                <em>almost certain</em>, <em>likely</em>, <em>unlikely</em>)
+                Each % answers the question: <em>is at least one corpus
+                case of this type?</em> A single case can fall into multiple
+                hypotheses at once — that&apos;s why percentages don&apos;t
+                compete or sum to 100. The label (<em>almost certain</em>,{" "}
+                <em>likely</em>, <em>unlikely</em>)
                 comes from the method intelligence analysts use without a
                 mathematical model ({" "}
                 <a
@@ -134,47 +136,43 @@ export function IcdProbabilityChart() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 md:gap-6">
-        {rows.map((h) => (
-          <article
-            key={h.id}
-            className="flex flex-col gap-3 border-l-4 bg-surface-2/50 p-5 md:p-6"
-            style={{ borderColor: h.color }}
-            aria-label={`${h.label}: ${h.effectiveIcd.labelEs}, ${Math.round(h.effectivePct)} por ciento`}
-          >
-            {/* ICD verbal label — dominant. Format matches /home CategoryFact. */}
-            <p
-              className="font-mono text-xs uppercase tracking-wider"
-              style={{ color: h.color }}
+        {rows.map((h) => {
+          const cleanLabel = h.label
+            .replace(/^≥1 caso (es|involucra)\s+/i, "")
+            .replace(/^Existe\s+/i, "");
+          const cleanLabelEn = h.labelEn
+            .replace(/^≥1 case (is|involves)\s+/i, "")
+            .replace(/^A\s+/i, "");
+          return (
+            <article
+              key={h.id}
+              className="flex flex-col gap-3 border-l-4 bg-surface-2/50 p-5 md:p-6"
+              style={{ borderColor: h.color }}
+              aria-label={`${h.label}: ${h.effectiveIcd.labelEs}, ${Math.round(h.effectivePct)} por ciento`}
             >
-              <T es={h.effectiveIcd.labelEs} en={h.effectiveIcd.label} />{" "}
-              <span className="text-muted">
-                ({Math.round(h.effectivePct)}%)
-              </span>
-            </p>
+              {/* ICD verbal label — dominant. Format matches /home CategoryFact. */}
+              <p
+                className="font-mono text-xs uppercase tracking-wider"
+                style={{ color: h.color }}
+              >
+                <T es={h.effectiveIcd.labelEs} en={h.effectiveIcd.label} />{" "}
+                <span className="text-muted">
+                  ({Math.round(h.effectivePct)}%)
+                </span>
+              </p>
 
-            {/* Hypothesis title */}
-            <h3 className="font-display text-xl font-medium leading-tight text-text md:text-2xl">
-              <T es={h.label} en={h.labelEn} />
-            </h3>
+              {/* Hypothesis title — cleaned (≥1 caso prefix moved to caption) */}
+              <h3 className="font-display text-xl font-medium leading-tight text-text md:text-2xl">
+                <T es={cleanLabel} en={cleanLabelEn} />
+              </h3>
 
-            {/* Hypothesis note */}
-            <p className="text-sm leading-snug text-muted">
-              <T es={h.note} en={h.noteEn} />
-            </p>
+              {/* Hypothesis note */}
+              <p className="text-sm leading-snug text-muted">
+                <T es={h.note} en={h.noteEn} />
+              </p>
 
-            {/* Calibration source — compact audit */}
-            <CalibrationSourceBadge
-              source={h.source}
-              pct={h.effectivePct}
-              prior={h.corpusPct}
-              pressure={h.pressure}
-              supportingCases={h.supportingCases}
-              shift={h.shift}
-            />
-
-            {/* Evidence stats + link to detail */}
-            <div className="mt-auto flex items-center justify-between border-t border-text/10 pt-3">
-              <div className="font-mono text-[11px] uppercase tracking-wider text-muted">
+              {/* Compact evidence — single line, no duplication */}
+              <p className="font-mono text-[11px] uppercase tracking-wider text-muted">
                 {h.supportingCases > 0 ? (
                   <>
                     <span className="text-text">{h.supportingCases}</span>{" "}
@@ -186,16 +184,35 @@ export function IcdProbabilityChart() {
                 ) : (
                   <T es={noEvidenceCopy(h.id).es} en={noEvidenceCopy(h.id).en} />
                 )}
-              </div>
+              </p>
+
+              {/* Calibration audit — collapsed by default, expand for math */}
+              <details className="group">
+                <summary className="cursor-pointer list-none font-mono text-[11px] uppercase tracking-widest text-muted hover:text-accent">
+                  <T es="Cómo se derivó ▾" en="How it was derived ▾" />
+                </summary>
+                <div className="mt-3">
+                  <CalibrationSourceBadge
+                    source={h.source}
+                    pct={h.effectivePct}
+                    prior={h.corpusPct}
+                    pressure={h.pressure}
+                    supportingCases={h.supportingCases}
+                    shift={h.shift}
+                  />
+                </div>
+              </details>
+
+              {/* Detail link */}
               <a
                 href={`#${h.id}`}
-                className="shrink-0 font-mono text-[11px] uppercase tracking-widest text-accent hover:underline"
+                className="mt-auto self-end border-t border-text/10 pt-3 font-mono text-[11px] uppercase tracking-widest text-accent hover:underline"
               >
                 <T es="Razonamiento →" en="Reasoning →" />
               </a>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
 
       <Caption className="max-w-2xl pt-4">
