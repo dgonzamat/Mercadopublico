@@ -8,7 +8,6 @@ import {
 } from "@/lib/hypotheses";
 import {
   PATTERN_TO_HYPOTHESIS,
-  UMBRELLA_SUBCLASSES,
   effectiveCalibration,
 } from "@/lib/hypothesisMapping";
 import { pctToIcdLabel } from "@/lib/icd203";
@@ -75,191 +74,6 @@ export default function ProbabilidadesPage() {
       {/* ─────────── CHART (overview) ─────────── */}
       <IcdProbabilityChart />
 
-      {/* ─────────── POR QUÉ H5 ESTÁ EN "IMPROBABLE" — umbrella math ─────────── */}
-      <section className="space-y-6 border-y-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
-        <Eyebrow>
-          <T es="La frontera analítica" en="The analytical frontier" />
-        </Eyebrow>
-        <H2>
-          <T
-            es={
-              <>
-                Por qué <em>algo no humano</em> sigue siendo improbable —{" "}
-                pero no descartable
-              </>
-            }
-            en={
-              <>
-                Why <em>something non-human</em> stays unlikely —{" "}
-                but not ruled out
-              </>
-            }
-          />
-        </H2>
-        <Body>
-          <T
-            es={
-              <>
-                <em>&quot;Algo no humano&quot;</em> es una categoría amplia.
-                Incluye al menos tres versiones más específicas: realidad{" "}
-                <strong className="text-text">interdimensional</strong> (otras
-                físicas), fenómeno{" "}
-                <strong className="text-text">psicoespiritual</strong>{" "}
-                (contacto de conciencia, no de materia), o un{" "}
-                <strong className="text-text">tratado encubierto</strong> con
-                visitantes — la hipótesis Cooper-Lazar. Cada versión
-                específica tiene, por separado, baja probabilidad. Pero la
-                categoría general tiene que ser <strong className="text-text">
-                al menos tan probable como la más alta de ellas
-                </strong> — eso da algo cerca de 28%. Improbable, sí.
-                Imposible, no.
-              </>
-            }
-            en={
-              <>
-                <em>&quot;Something non-human&quot;</em> is a broad category.
-                It includes at least three more specific versions:{" "}
-                <strong className="text-text">interdimensional</strong>{" "}
-                reality (different physics), a{" "}
-                <strong className="text-text">psychospiritual</strong>{" "}
-                phenomenon (contact of consciousness, not matter), or a{" "}
-                <strong className="text-text">covert treaty</strong> with
-                visitors — the Cooper-Lazar hypothesis. Each specific
-                version is, on its own, low-probability. But the broad
-                category has to be <strong className="text-text">
-                at least as probable as the highest of them
-                </strong> — that lands near 28%. Unlikely, yes. Impossible,
-                no.
-              </>
-            }
-          />
-        </Body>
-        <details className="group border-l-2 border-text/15 pl-5">
-          <summary className="cursor-pointer list-none font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
-            <T
-              es="Por qué exactamente 28%, no 22% ni 50% ↓"
-              en="Why exactly 28%, not 22% or 50% ↓"
-            />
-          </summary>
-          <Body className="mt-4 text-sm text-muted">
-            <T
-              es={
-                <>
-                  Cota de Fréchet: si las versiones específicas son P(interdim.)
-                  = 22%, P(psicoesp.) = 22%, P(tratado) = 6%, la categoría
-                  paraguas tiene que estar entre{" "}
-                  <strong>22%</strong> (si las versiones se solapan
-                  completamente) y <strong>50%</strong> (si son perfectamente
-                  disjuntas). El 28% asume solape significativo más un margen
-                  pequeño para variantes no nombradas (ET clásico, categorías
-                  sin vocabulario establecido). Cae en banda{" "}
-                  <strong>Improbable</strong> (20-45%) según ICD-203.
-                </>
-              }
-              en={
-                <>
-                  Fréchet bound: if the specific versions are P(interdim.) =
-                  22%, P(psychospir.) = 22%, P(treaty) = 6%, the umbrella
-                  category must lie between <strong>22%</strong> (if versions
-                  overlap completely) and <strong>50%</strong> (if perfectly
-                  disjoint). The 28% assumes significant overlap plus a small
-                  margin for unnamed variants (classical ET, categories
-                  without established vocabulary). Falls in the{" "}
-                  <strong>Unlikely</strong> band (20-45%) per ICD-203.
-                </>
-              }
-            />
-          </Body>
-        </details>
-        <Body className="text-muted">
-          <T
-            es={
-              <>
-                Tomá{" "}
-                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
-                  Tehran 1976
-                </Link>
-                : dos cazas iraníes en intercepción nocturna pierden de
-                pronto radio y armas frente a un objeto que el radar terrestre
-                confirma del tamaño de un avión comercial. La inteligencia
-                militar de EE.UU. archivó el reporte con su máxima
-                calificación interna. Hay <strong>{STATS.tierS} casos del corpus</strong>{" "}
-                con ese nivel de evidencia.
-              </>
-            }
-            en={
-              <>
-                Take{" "}
-                <Link href="/cases/tehran-1976" className="text-accent hover:underline">
-                  Tehran 1976
-                </Link>
-                : two Iranian fighters on night intercept suddenly lose radio
-                and weapons facing an object that the ground radar confirms
-                is the size of a commercial airliner. U.S. military
-                intelligence filed the report with its highest internal
-                rating. There are <strong>{STATS.tierS} corpus cases</strong>{" "}
-                at that level of evidence.
-              </>
-            }
-          />
-        </Body>
-        <Body className="text-muted">
-          <T
-            es={
-              <>
-                Lo importante: esa noche no se puede saber si lo que
-                persiguieron era <strong className="text-text">un dron
-                experimental ultra-clasificado</strong> (sabemos que existen
-                — el F-117 y el B-2 fueron &quot;UAP&quot; antes de ser
-                anunciados públicamente) o{" "}
-                <strong className="text-text">algo más raro</strong>. Las dos
-                lecturas explican lo que pasó. La hipótesis del programa
-                clasificado gana terreno más rápido porque tiene precedente
-                material; la del &quot;algo no humano&quot; se mantiene atrás
-                porque, hasta hoy, falta el equivalente — material recuperado
-                y analizado. Por eso un solo análisis isotópico de los
-                fragmentos derribados sobre{" "}
-                <Link href="/cases/lake-huron-2023" className="text-accent hover:underline">
-                  Lake Huron en febrero 2023
-                </Link>
-                {" "}podría mover dramáticamente el balance, si esos restos
-                alguna vez se examinan.
-              </>
-            }
-            en={
-              <>
-                Here&apos;s what matters: that night you can&apos;t tell
-                whether they were chasing{" "}
-                <strong className="text-text">an ultra-classified
-                experimental drone</strong> (we know they exist — the F-117
-                and B-2 were &quot;UAP&quot; before being publicly announced)
-                or <strong className="text-text">something stranger</strong>.
-                Both readings explain what happened. The classified-program
-                hypothesis gains ground faster because it has material
-                precedent; the &quot;something non-human&quot; one stays
-                behind because, to this day, it lacks the equivalent —
-                recovered, analyzed material. That&apos;s why a single
-                isotopic analysis of the fragments shot down over{" "}
-                <Link href="/cases/lake-huron-2023" className="text-accent hover:underline">
-                  Lake Huron in February 2023
-                </Link>
-                {" "}could dramatically move the balance, if those remains
-                are ever examined.
-              </>
-            }
-          />
-        </Body>
-        <Link
-          href={`#${FEATURED_HYPOTHESIS_ID}`}
-          className="inline-flex min-h-[44px] items-center bg-accent px-5 py-2 text-sm font-medium text-bg hover:bg-text"
-        >
-          <T
-            es="Ir a H5 — los detalles ↓"
-            en="Jump to H5 — the details ↓"
-          />
-        </Link>
-      </section>
-
       {/* ─────────── 6 PROPOSICIONES PRIMITIVAS (H5 destacada) ─────────── */}
       <div className="space-y-16">
         {PRIMITIVE_HYPOTHESES.map((h, i) => (
@@ -313,85 +127,6 @@ export default function ProbabilidadesPage() {
             kindLabel={{ es: "Consecuencia", en: "Consequence" }}
           />
         ))}
-      </section>
-
-      {/* ─────────── PUENTE NARRATIVO al experimento ─────────── */}
-      <section className="mx-auto max-w-prose space-y-4 pt-4">
-        <Body className="text-muted">
-          <T
-            es={
-              <>
-                De las seis hipótesis principales, cinco están razonablemente
-                decididas. La de <em>algo no humano</em> — más amplia, más
-                incómoda — es la única que un solo experimento podría mover
-                de manera significativa. Ese experimento existe y está pendiente.
-              </>
-            }
-            en={
-              <>
-                Five of the six main hypotheses are reasonably settled. The{" "}
-                <em>something non-human</em> one — broader, less comfortable —
-                is the only one a single experiment could meaningfully move.
-                That experiment exists, and it&apos;s pending.
-              </>
-            }
-          />
-        </Body>
-      </section>
-
-      {/* ─────────── CIERRE — el experimento pendiente (ya no re-resumen) ─────────── */}
-      <section className="space-y-6 border-t-2 border-text pt-10">
-        <Eyebrow>
-          <T es="El experimento pendiente" en="The pending experiment" />
-        </Eyebrow>
-        <H2>
-          <T
-            es="Un solo análisis puede cerrar dos décadas de debate"
-            en="One analysis can close two decades of debate"
-          />
-        </H2>
-        <Body>
-          <T
-            es={
-              <>
-                El 12 de febrero de 2023, un F-16 de la Air National Guard
-                derribó un objeto sobre el lago Huron con un misil AIM-9X.
-                Los fragmentos cayeron al agua. Aún no fueron analizados
-                públicamente.
-              </>
-            }
-            en={
-              <>
-                On February 12, 2023, an Air National Guard F-16 shot down
-                an object over Lake Huron with an AIM-9X missile. The
-                fragments fell into the water. They have not yet been
-                publicly analyzed.
-              </>
-            }
-          />
-        </Body>
-        <Body className="text-muted">
-          <T
-            es={
-              <>
-                Si esos fragmentos pasan por análisis isotópico y revelan
-                ratios inconsistentes con ocurrencia terrestre, H5 se mueve
-                hacia <em>probable</em>. Si revelan composición convencional,
-                H5 colapsa hacia <em>30%</em>. Un solo experimento. Dos
-                décadas de claridad.
-              </>
-            }
-            en={
-              <>
-                If those fragments undergo isotopic analysis and reveal
-                ratios inconsistent with terrestrial occurrence, H5 moves
-                toward <em>likely</em>. If they reveal conventional
-                composition, H5 collapses toward <em>30%</em>. A single
-                experiment. Two decades of clarity.
-              </>
-            }
-          />
-        </Body>
       </section>
 
       {/* ─────────── NAV CIERRE (CTAs específicos) ─────────── */}
@@ -834,8 +569,8 @@ function renderNoEvidenceExpansion(id: string) {
         <div className="space-y-4 border-l-2 border-accent/40 pl-5 pt-2">
           <Body>
             <T
-              es="Esta es la categoría paraguas. Su 45% se compone matemáticamente de la unión de proposiciones más específicas: interdimensional (22%), psicoespiritual (22%), tratado formal (6%), + categorías que aún no tenemos vocabulario para nombrar. P(unión) ≥ P(cualquier subclase), por eso el paraguas es mayor que cualquier specific bet."
-              en="This is the umbrella category. Its 45% composes mathematically from the union of more specific propositions: interdimensional (22%), psychospiritual (22%), formal treaty (6%), + categories we don't yet have vocabulary for. P(union) ≥ P(any subclass), which is why the umbrella exceeds any specific bet."
+              es="Esta es la categoría paraguas: incluye interdimensional (22%), psicoespiritual (22%), tratado formal (6%), + categorías sin vocabulario establecido. Por cota de Fréchet, el paraguas tiene que ser al menos tan alto como la subclase más alta — su prior de 28% asume solape significativo entre subclases. El % efectivo del chart arriba refleja la presión acumulada de los casos del corpus."
+              en="This is the umbrella category: includes interdimensional (22%), psychospiritual (22%), formal treaty (6%), + categories without established vocabulary. By the Fréchet bound, the umbrella must be at least as high as the highest subclass — its 28% prior assumes significant overlap between them. The effective % in the chart above reflects accumulated pressure from corpus cases."
             />
           </Body>
           <Body className="text-muted">
