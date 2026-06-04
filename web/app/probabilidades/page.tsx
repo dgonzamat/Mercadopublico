@@ -53,6 +53,19 @@ const FEATURED_HYPOTHESIS_ID = "entidades-no-humanas";
  *   56px CTA  → text-base label + text-[11px] kicker
  *   44px CTA  → text-sm
  *   44px tag  → text-xs (compact, multi-row)
+ *
+ * COPY NUMERIC DISCIPLINE:
+ *   Each hypothesis has TWO numbers: the PRIOR (`corpusPct` in
+ *   lib/hypotheses.ts) and the EFFECTIVE (`prior + pressure × 0.5`,
+ *   shown by the chart and the section ICD badge). When editorial copy
+ *   cites a percentage, name which one. Mixing them is the most
+ *   common drift bug in this codebase.
+ *     "su prior de 22%"      ← unambiguous prior reference
+ *     "el chart muestra 44%" ← unambiguous effective reference
+ *     "lo que da 28%"        ← AVOID: reads as effective claim
+ *   Static `.note` strings cannot interpolate the effective at render
+ *   time; either keep them prior-only with the word "prior" attached,
+ *   or move the cite into page.tsx where `calib.pct` is in scope.
  */
 
 export default function ProbabilidadesPage() {
@@ -494,7 +507,7 @@ function HypothesisSection({
 
       {associatedPatterns.length === 0 &&
         supportingCases.length === 0 &&
-        renderNoEvidenceExpansion(h.id)}
+        renderNoEvidenceExpansion(h.id, calib.pct)}
 
       {supportingCases.length > 0 && (
         <Link
@@ -564,7 +577,7 @@ function HypothesisSection({
  * Editorial expansion for hypotheses that legitimately have zero
  * pattern + zero supporting case matches.
  */
-function renderNoEvidenceExpansion(id: string) {
+function renderNoEvidenceExpansion(id: string, effectivePct: number) {
   switch (id) {
     case "misidentificacion":
       return (
@@ -602,30 +615,40 @@ function renderNoEvidenceExpansion(id: string) {
             <T
               es={
                 <>
-                  <strong className="text-text">Por qué exactamente 28%.</strong>{" "}
+                  <strong className="text-text">Cómo se deriva el prior de 28%.</strong>{" "}
                   Por cota de Fréchet, el paraguas tiene que ser al menos tan
-                  alto como la subclase más alta — con interdimensional (22%),
-                  psicoespiritual (22%), tratado formal (6%) más variantes sin
-                  vocabulario establecido, el prior asume solape significativo
-                  entre subclases. Los casos militares con sensor (Tehran,
-                  Nimitz) son evidencia fuerte de <em>algo</em>, pero NO
-                  discriminan entre tecnología clasificada y entidades no
-                  humanas. Esa indecidibilidad es la que mantiene la
-                  probabilidad en banda pareja.
+                  alto como la subclase de mayor prior — con interdimensional
+                  (prior 22%), psicoespiritual (prior 22%) y tratado formal
+                  (prior 6%), más variantes sin vocabulario establecido, el
+                  prior queda en 28% asumiendo solape significativo entre
+                  subclases.{" "}
+                  <strong className="text-text">
+                    El chart muestra {effectivePct.toFixed(0)}%
+                  </strong>{" "}
+                  porque los casos militares con sensor (Tehran, Nimitz) son
+                  evidencia fuerte de <em>algo</em>, pero NO discriminan entre
+                  tecnología clasificada y entidades no humanas — esa
+                  indecidibilidad presiona el prior hacia arriba sin
+                  resolverse en ninguna dirección.
                 </>
               }
               en={
                 <>
-                  <strong className="text-text">Why exactly 28%.</strong>{" "}
+                  <strong className="text-text">How the 28% prior is derived.</strong>{" "}
                   By the Fréchet bound, the umbrella must be at least as high
-                  as the highest subclass — with interdimensional (22%),
-                  psychospiritual (22%), formal treaty (6%) plus variants
-                  without established vocabulary, the prior assumes
-                  significant overlap between subclasses. Military sensor
-                  cases (Tehran, Nimitz) are strong evidence of{" "}
-                  <em>something</em>, but do NOT discriminate between
-                  classified tech and non-human entities. That undecidability
-                  is what keeps the probability in the even band.
+                  as the highest-prior subclass — with interdimensional
+                  (prior 22%), psychospiritual (prior 22%) and formal treaty
+                  (prior 6%), plus variants without established vocabulary,
+                  the prior settles at 28% assuming significant overlap
+                  between subclasses.{" "}
+                  <strong className="text-text">
+                    The chart shows {effectivePct.toFixed(0)}%
+                  </strong>{" "}
+                  because military sensor cases (Tehran, Nimitz) are strong
+                  evidence of <em>something</em>, but do NOT discriminate
+                  between classified tech and non-human entities — that
+                  undecidability pushes the prior upward without resolving in
+                  either direction.
                 </>
               }
             />
@@ -673,8 +696,8 @@ function renderNoEvidenceExpansion(id: string) {
           </Body>
           <Body className="text-muted">
             <T
-              es="El 22% refleja: hay evidencia testimonial extensa y bien documentada (Harvard Med, novelas multi-décadas, Oxford UP), pero su naturaleza fenomenológica la hace difícil de auditar con métodos materialistas estándar."
-              en="The 22% reflects: there is extensive, well-documented testimonial evidence (Harvard Med, multi-decade novels, Oxford UP), but its phenomenological nature makes it hard to audit with standard materialist methods."
+              es="Su prior de 22% refleja: hay evidencia testimonial extensa y bien documentada (Harvard Med, novelas multi-décadas, Oxford UP), pero su naturaleza fenomenológica la hace difícil de auditar con métodos materialistas estándar."
+              en="Its 22% prior reflects: there is extensive, well-documented testimonial evidence (Harvard Med, multi-decade novels, Oxford UP), but its phenomenological nature makes it hard to audit with standard materialist methods."
             />
           </Body>
           <div className="flex flex-wrap gap-3 pt-2">
@@ -711,8 +734,8 @@ function renderNoEvidenceExpansion(id: string) {
           </Body>
           <Body className="text-muted">
             <T
-              es="El 6% refleja: la claim circula 40+ años en cultura UAP, pero el corpus institucional no la sostiene. Aún así no está en 0% porque el cover-up institucional documentado (Twining → Bolender → PURSUE) deja espacio epistémico para sorpresas."
-              en="The 6% reflects: the claim has circulated 40+ years in UAP culture, but the institutional corpus does not sustain it. Still not at 0% because the documented institutional cover-up (Twining → Bolender → PURSUE) leaves epistemic room for surprises."
+              es="Su prior de 6% refleja: la claim circula 40+ años en cultura UAP, pero el corpus institucional no la sostiene. Aún así no está en 0% porque el cover-up institucional documentado (Twining → Bolender → PURSUE) deja espacio epistémico para sorpresas."
+              en="Its 6% prior reflects: the claim has circulated 40+ years in UAP culture, but the institutional corpus does not sustain it. Still not at 0% because the documented institutional cover-up (Twining → Bolender → PURSUE) leaves epistemic room for surprises."
             />
           </Body>
           <div className="flex flex-wrap gap-3 pt-2">
