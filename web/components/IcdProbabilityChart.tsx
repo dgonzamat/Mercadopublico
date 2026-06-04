@@ -72,8 +72,8 @@ export function IcdProbabilityChart() {
           <br />
           <span className="text-muted">
             <T
-              es="Seis explicaciones plausibles. Cada caso puede ser más de una."
-              en="Six plausible explanations. Each case can be more than one."
+              es="La respuesta del corpus es mixta — parte es uno, parte es otro."
+              en="The corpus answer is mixed — part is one, part is another."
             />
           </span>
         </H2>
@@ -81,8 +81,9 @@ export function IcdProbabilityChart() {
           <T
             es={
               <>
-                Cada explicación se mide por separado — pueden ser varias
-                verdaderas a la vez. La etiqueta (<em>casi cierto</em>,{" "}
+                Un mismo caso puede caer en varias hipótesis a la vez — por
+                eso los porcentajes no compiten ni suman 100. Cada uno se
+                evalúa por separado. La etiqueta (<em>casi cierto</em>,{" "}
                 <em>probable</em>, <em>improbable</em>) viene del método que
                 usan los analistas de inteligencia cuando no hay modelo
                 matemático ({" "}
@@ -105,10 +106,12 @@ export function IcdProbabilityChart() {
             }
             en={
               <>
-                Each explanation is measured on its own — several can be true
-                at once. The label (<em>almost certain</em>, <em>likely</em>,{" "}
-                <em>unlikely</em>) comes from the method intelligence analysts
-                use without a mathematical model ({" "}
+                A single case can fall into multiple hypotheses at once —
+                that&apos;s why percentages don&apos;t compete or sum to 100.
+                Each one is measured separately. The label (
+                <em>almost certain</em>, <em>likely</em>, <em>unlikely</em>)
+                comes from the method intelligence analysts use without a
+                mathematical model ({" "}
                 <a
                   href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
                   target="_blank"
@@ -130,110 +133,66 @@ export function IcdProbabilityChart() {
         </Caption>
       </div>
 
-      <div className="divide-y-2 divide-text/10 border-y-2 border-text/15">
-        {rows.map((h, idx) => (
+      <div className="grid gap-4 md:grid-cols-2 md:gap-6">
+        {rows.map((h) => (
           <article
             key={h.id}
-            className="grid grid-cols-[3rem_1fr] items-baseline gap-6 py-8 md:grid-cols-[4rem_1fr_auto] md:py-10"
+            className="flex flex-col gap-3 border-l-4 bg-surface-2/50 p-5 md:p-6"
+            style={{ borderColor: h.color }}
+            aria-label={`${h.label}: ${h.effectiveIcd.labelEs}, ${Math.round(h.effectivePct)} por ciento`}
           >
-            <span className="font-display text-3xl leading-none tabular-nums text-muted md:text-4xl">
-              {String(idx + 1).padStart(2, "0")}
-            </span>
+            {/* ICD verbal label — dominant. Format matches /home CategoryFact. */}
+            <p
+              className="font-mono text-xs uppercase tracking-wider"
+              style={{ color: h.color }}
+            >
+              <T es={h.effectiveIcd.labelEs} en={h.effectiveIcd.label} />{" "}
+              <span className="text-muted">
+                ({Math.round(h.effectivePct)}%)
+              </span>
+            </p>
 
-            <div className="min-w-0 space-y-4">
-              <div className="space-y-1">
-                <h3 className="font-display text-2xl font-medium leading-tight text-text md:text-3xl">
-                  <T es={h.label} en={h.labelEn} />
-                </h3>
-                <p
-                  className="font-mono text-xs uppercase tracking-wider"
-                  style={{ color: h.color }}
-                >
-                  <T es={h.effectiveIcd.labelEs} en={h.effectiveIcd.label} />{" "}
-                  <span className="text-muted">
-                    <T
-                      es={`(${h.effectiveIcd.label})`}
-                      en={`(${Math.round(h.effectiveIcd.min)}–${Math.round(h.effectiveIcd.max)}%)`}
-                    />
-                  </span>
-                </p>
+            {/* Hypothesis title */}
+            <h3 className="font-display text-xl font-medium leading-tight text-text md:text-2xl">
+              <T es={h.label} en={h.labelEn} />
+            </h3>
+
+            {/* Hypothesis note */}
+            <p className="text-sm leading-snug text-muted">
+              <T es={h.note} en={h.noteEn} />
+            </p>
+
+            {/* Calibration source — compact audit */}
+            <CalibrationSourceBadge
+              source={h.source}
+              pct={h.effectivePct}
+              prior={h.corpusPct}
+              pressure={h.pressure}
+              supportingCases={h.supportingCases}
+              shift={h.shift}
+            />
+
+            {/* Evidence stats + link to detail */}
+            <div className="mt-auto flex items-center justify-between border-t border-text/10 pt-3">
+              <div className="font-mono text-[11px] uppercase tracking-wider text-muted">
+                {h.supportingCases > 0 ? (
+                  <>
+                    <span className="text-text">{h.supportingCases}</span>{" "}
+                    <T es="casos" en="cases" />
+                    <span className="mx-2 text-text/30">·</span>
+                    <span className="text-text">{h.evidence.patternCount}</span>{" "}
+                    <T es="patrones" en="patterns" />
+                  </>
+                ) : (
+                  <T es={noEvidenceCopy(h.id).es} en={noEvidenceCopy(h.id).en} />
+                )}
               </div>
-
-              {/* 0–100% scale with tick markers, rendered full-width */}
-              <div
-                className="relative h-2 bg-text/10"
-                role="progressbar"
-                aria-valuemin={h.effectiveIcd.min}
-                aria-valuemax={h.effectiveIcd.max}
-                aria-valuenow={Math.round((h.effectiveIcd.min + h.effectiveIcd.max) / 2)}
-                aria-valuetext={`${h.label}: ${h.effectiveIcd.labelEs}. Evidencia: ${h.supportingCases} casos contribuyen, ${h.evidence.patternCount} patrones.`}
-              >
-                <div
-                  className="absolute h-full"
-                  style={{
-                    left: `${h.effectiveIcd.min}%`,
-                    width: `${h.effectiveIcd.max - h.effectiveIcd.min}%`,
-                    backgroundColor: h.color,
-                  }}
-                />
-                {[25, 50, 75].map((tick) => (
-                  <span
-                    key={tick}
-                    aria-hidden
-                    className="absolute inset-y-0 w-px bg-text/20"
-                    style={{ left: `${tick}%` }}
-                  />
-                ))}
-              </div>
-
-              <p className="text-sm text-muted">
-                <T es={h.note} en={h.noteEn} />
-              </p>
-
-              <CalibrationSourceBadge
-                source={h.source}
-                pct={h.effectivePct}
-                prior={h.corpusPct}
-                pressure={h.pressure}
-                supportingCases={h.supportingCases}
-                shift={h.shift}
-              />
-
               <a
                 href={`#${h.id}`}
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-accent hover:underline"
+                className="shrink-0 font-mono text-[11px] uppercase tracking-widest text-accent hover:underline"
               >
-                <T
-                  es="Ver razonamiento + casos asociados ↓"
-                  en="See reasoning + associated cases ↓"
-                />
+                <T es="Razonamiento →" en="Reasoning →" />
               </a>
-            </div>
-
-            <div className="col-span-2 flex items-baseline gap-6 font-mono text-xs uppercase tracking-wider text-muted md:col-span-1 md:flex-col md:items-end md:gap-1 md:text-right">
-              {h.supportingCases > 0 ? (
-                <>
-                  <div>
-                    <span className="font-display text-3xl text-text md:text-4xl">
-                      {h.supportingCases}
-                    </span>{" "}
-                    <T es="casos" en="cases" />
-                  </div>
-                  <div>
-                    <span className="font-display text-xl text-text md:text-2xl">
-                      {h.evidence.patternCount}
-                    </span>{" "}
-                    <T es="patrones" en="patterns" />
-                  </div>
-                </>
-              ) : (
-                <div className="max-w-[12rem] text-left text-[11px] normal-case tracking-normal text-muted md:text-right">
-                  <T
-                    es={noEvidenceCopy(h.id).es}
-                    en={noEvidenceCopy(h.id).en}
-                  />
-                </div>
-              )}
             </div>
           </article>
         ))}
