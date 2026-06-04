@@ -1,0 +1,66 @@
+{
+  "id": "algeria-min-defense-1975",
+  "num": 71,
+  "name": "Démarche Min. Defensa Argelia",
+  "year_start": 1975,
+  "country": "DZ",
+  "country_name": "Argelia",
+  "flag": "🇩🇿",
+  "location": {
+    "lat": 36.75,
+    "lng": 3.04,
+    "place": "Argel · Ministerio de Defensa Nacional"
+  },
+  "tier": "S",
+  "probability": 75,
+  "summary": "Secretario General del Ministerio de Defensa convoca formalmente a embajada US tras sighting radar-confirmado sobre territorio argelino.",
+  "summary_en": "Algerian Ministry of Defense Secretary General formally summons US embassy after radar-confirmed sighting over Algerian territory.",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "El 7 de marzo de 1975, el Coronel Abdelhamid Latreche, Secretario General del Ministerio de Defensa Nacional de Argelia, convocó formalmente a la embajada estadounidense en Argel para exigir explicación sobre 'máquinas' no identificadas que estaban maniobrando en el espacio aéreo argelino, incluido un sighting confirmado por radar el 6 de marzo de 1975.\n\nLatreche le indicó al diplomático estadounidense que su Ministerio ya había descartado las explicaciones convencionales habituales — basura espacial, satélites en órbita decadente, y ópticas atmosféricas. La conversación quedó documentada en el cable State Department 1975ALGIER00638, desclasificado posteriormente y publicado en el WikiLeaks PlusD archive.\n\nEl gobierno argelino no emitió declaración pública sobre el incidente. No existe cable de cierre conocido del lado argelino. El hecho de que un alto funcionario militar de un Estado no alineado convoque oficialmente a una embajada extranjera para discutir un fenómeno aéreo no identificado — descartando las explicaciones convencionales primero — constituye uno de los reconocimientos institucionales más nítidos del corpus.",
+  "whatHappened_en": "On March 7, 1975, Colonel Abdelhamid Latreche, Secretary General of Algeria's Ministry of National Defense, formally summoned the US embassy in Algiers to demand explanation for unidentified 'machines' maneuvering in Algerian airspace, including a radar-confirmed sighting on March 6, 1975.\n\nLatreche told the US diplomat his Ministry had already ruled out the usual conventional explanations — space debris, decaying-orbit satellites, and atmospheric optics. The conversation was documented in State Department cable 1975ALGIER00638, later declassified and published in the WikiLeaks PlusD archive.\n\nThe Algerian government issued no public statement. No closure cable from the Algerian side is known. That a senior military official of a non-aligned state would formally summon a foreign embassy to discuss an unidentified aerial phenomenon — having first ruled out conventional explanations — constitutes one of the cleanest institutional acknowledgments in the corpus.",
+  "whyMatters": "Es el caso UAP institucional más nítido del Magreb y uno de los pocos en el corpus donde un Estado no alineado documenta formalmente, vía un canal diplomático, que su propio Ministerio de Defensa descartó las explicaciones convencionales antes de buscar consulta externa. El cable State 1975ALGIER00638 es primary source con cadena de custodia inmediata.",
+  "whyMatters_en": "The cleanest institutional UAP case in the Maghreb and one of the few in the corpus where a non-aligned state formally documents, via a diplomatic channel, that its own Ministry of Defense ruled out conventional explanations before seeking external consultation. State cable 1975ALGIER00638 is a primary source with immediate chain of custody.",
+  "evidence": [
+    "State Department cable 1975ALGIER00638 (desclasificado, en WikiLeaks PlusD)",
+    "Encuentro radar confirmado del 6 de marzo de 1975 referenciado en el cable",
+    "Identificación nominal del Coronel Latreche as SG del Ministerio de Defensa",
+    "Sin cable de cierre — el caso permanece institucionalmente abierto"
+  ],
+  "evidence_en": [
+    "State Department cable 1975ALGIER00638 (declassified, in WikiLeaks PlusD)",
+    "March 6, 1975 radar-confirmed encounter referenced in the cable",
+    "Named identification of Colonel Latreche as MoD Secretary General",
+    "No closure cable — case remains institutionally open"
+  ],
+  "sources": [
+    {
+      "name": "State Department cable 1975ALGIER00638",
+      "url": "https://wikileaks.org/plusd/cables/1975ALGIER00638_b.html",
+      "note": "Cable diplomático primario desclasificado"
+    },
+    {
+      "name": "CIA CREST — Unidentified Flying Objects Over Morocco and Algeria",
+      "url": "https://www.cia.gov/readingroom/docs/DOC_0000015466.pdf"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Una potencia no alineada convoca a una embajada extranjera para discutir tecnología aérea no identificada — patrón consistente con apoyo institucional al fenómeno como amenaza aérea real",
+      "rationaleEn": "A non-aligned power summons a foreign embassy to discuss unidentified aerial technology — pattern consistent with institutional support for the phenomenon as a real air-defense threat"
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "El propio Ministerio argelino ya había descartado satélites en órbita decadente y ópticas atmosféricas antes de pedir consulta",
+      "rationaleEn": "The Algerian Ministry itself had already ruled out decaying-orbit satellites and atmospheric optics before requesting consultation"
+    }
+  ]
+}
