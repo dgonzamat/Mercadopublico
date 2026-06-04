@@ -44,8 +44,8 @@ const CHAPTERS = [
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Hipótesis fáciles vs hipótesis en frontera", tldr: "Cinco de seis explicaciones están en bandas extremas y no se mueven; la de 'algo no humano' es la única que un experimento podría mover de verdad" },
-    en: { eyebrow: "Chapter 4", h2: "Easy hypotheses vs frontier hypotheses", tldr: "Five of six explanations sit in extreme bands and don't move; the 'something non-human' one is the only one an experiment could meaningfully move" },
+    es: { eyebrow: "Capítulo 4", h2: "Hipótesis fáciles vs hipótesis en frontera", tldr: "Cinco de las seis explicaciones están razonablemente decididas — programas clasificados arriba, subclases específicas abajo. Solo entidades no humanas (categoría amplia) está abierta a evidencia decisiva." },
+    en: { eyebrow: "Chapter 4", h2: "Easy hypotheses vs frontier hypotheses", tldr: "Five of the six explanations are reasonably settled — classified programs near the top, specific subclasses near the bottom. Only the broad 'non-human entities' category remains open to decisive evidence." },
   },
   {
     id: "movers",
@@ -399,50 +399,50 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
           <Body className="text-muted">
             <T
-              es="De las seis explicaciones principales del corpus, cinco están razonablemente decididas — viven en bandas extremas (casi cierto o muy improbable) y para moverlas necesitarías evidencia que contradiga décadas de consenso. La sexta, la de 'algo no humano', es la única que un solo experimento podría mover de manera significativa. Por eso ahí vive el debate del corpus."
-              en="Of the six main corpus explanations, five are reasonably settled — they live in extreme bands (almost certain or very unlikely) and moving them would require evidence contradicting decades of consensus. The sixth, the 'something non-human' one, is the only one a single experiment could meaningfully move. That's where the corpus debate lives."
+              es="De las seis explicaciones principales del corpus, cinco están razonablemente decididas — programa clasificado arriba con evidencia histórica documentada (U-2, F-117), y las tres subclases específicas (interdimensional, psicoespiritual, tratado formal) abajo porque su evidencia es testimonial o sin documentos primarios. La sexta, entidades no humanas (categoría amplia), es la única que un solo experimento decisivo podría mover. Por eso ahí vive el debate del corpus."
+              en="Of the six main corpus explanations, five are reasonably settled — classified programs near the top with documented historical evidence (U-2, F-117), and the three specific subclasses (interdimensional, psychospiritual, formal treaty) near the bottom because their evidence is testimonial or lacks primary documents. The sixth, broad non-human entities, is the only one a single decisive experiment could move. That's where the corpus debate lives."
             />
           </Body>
           <div className="grid gap-4 sm:grid-cols-3">
             <MoveList
-              es="Casi techo (no se mueven)"
-              en="Near ceiling (don't move)"
+              es="Priors arriba (no se mueven)"
+              en="Priors near ceiling (don't move)"
               items={[
-                "Programa clasificado = 88%",
-                "Fenómeno natural raro = 70%",
+                "Programa clasificado · prior 88%",
+                "Fenómeno natural raro · prior 70%",
               ]}
               itemsEn={[
-                "Classified program = 88%",
-                "Rare natural phenomenon = 70%",
+                "Classified program · prior 88%",
+                "Rare natural phenomenon · prior 70%",
               ]}
             />
             <MoveList
-              es="Activo (la frontera)"
-              en="Active (the frontier)"
+              es="Prior abierto (la frontera)"
+              en="Open prior (the frontier)"
               items={[
-                "Algo no humano = 28%",
+                "Entidades no humanas · prior 28%",
                 "→ categoría amplia (la más debatida)",
                 "→ donde el experimento de Lake Huron pesaría",
               ]}
               itemsEn={[
-                "Something non-human = 28%",
+                "Non-human entities · prior 28%",
                 "→ broad category (most debated)",
                 "→ where the Lake Huron experiment would matter",
               ]}
               accent
             />
             <MoveList
-              es="Casi piso (no se mueven)"
-              en="Near floor (don't move)"
+              es="Priors abajo (no se mueven)"
+              en="Priors near floor (don't move)"
               items={[
-                "Interdimensional = 22%",
-                "Psicoespiritual = 22%",
-                "Tratado encubierto = 6%",
+                "Interdimensional · prior 22%",
+                "Psicoespiritual · prior 22%",
+                "Tratado formal · prior 6%",
               ]}
               itemsEn={[
-                "Interdimensional = 22%",
-                "Psychospiritual = 22%",
-                "Covert treaty = 6%",
+                "Interdimensional · prior 22%",
+                "Psychospiritual · prior 22%",
+                "Formal treaty · prior 6%",
               ]}
             />
           </div>

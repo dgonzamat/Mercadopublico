@@ -54,18 +54,9 @@ const FEATURED_HYPOTHESIS_ID = "entidades-no-humanas";
  *   44px CTA  → text-sm
  *   44px tag  → text-xs (compact, multi-row)
  *
- * COPY NUMERIC DISCIPLINE:
- *   Each hypothesis has TWO numbers: the PRIOR (`corpusPct` in
- *   lib/hypotheses.ts) and the EFFECTIVE (`prior + pressure × 0.5`,
- *   shown by the chart and the section ICD badge). When editorial copy
- *   cites a percentage, name which one. Mixing them is the most
- *   common drift bug in this codebase.
- *     "su prior de 22%"      ← unambiguous prior reference
- *     "el chart muestra 44%" ← unambiguous effective reference
- *     "lo que da 28%"        ← AVOID: reads as effective claim
- *   Static `.note` strings cannot interpolate the effective at render
- *   time; either keep them prior-only with the word "prior" attached,
- *   or move the cite into page.tsx where `calib.pct` is in scope.
+ * COPY NUMERIC DISCIPLINE: see lib/hypotheses.ts JSDoc (prior vs
+ * effective; tag every cited percentage with "prior" or move the cite
+ * into a scope where `calib.pct` is available).
  */
 
 export default function ProbabilidadesPage() {
