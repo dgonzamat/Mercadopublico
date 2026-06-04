@@ -41,6 +41,29 @@ import { STATS } from "./siteStats";
  * Umbrella relations (subclass → superclass) live in
  * `lib/hypothesisMapping.ts` (UMBRELLA_SUBCLASSES). Evidence counts and
  * pressure both honor them: an umbrella inherits its subclasses' coverage.
+ *
+ * COPY NUMERIC DISCIPLINE (applies to EVERY page citing percentages):
+ *
+ *   Each hypothesis has TWO numbers: the PRIOR (`corpusPct` here) and
+ *   the EFFECTIVE (`prior + pressure × 0.5`, shown by IcdProbabilityChart
+ *   and section ICD badges). They DIVERGE as the corpus grows. The most
+ *   common drift bug in this codebase is editorial copy that cites a
+ *   number without naming which one — readers see two different numbers
+ *   for the same hypothesis on the same page.
+ *
+ *   When editorial copy cites a percentage, name it:
+ *     "su prior de 22%"      ← unambiguous prior reference
+ *     "el chart muestra 44%" ← unambiguous effective reference
+ *     "lo que da 28%"        ← AVOID: reads as effective claim
+ *
+ *   Static strings (`.note`, MoveList items, chapter bodies, etc.)
+ *   cannot interpolate the effective at render time. Two options:
+ *   (a) keep them prior-only with the word "prior" attached, or
+ *   (b) move the cite into a server component where `effectiveCalibration`
+ *       is in scope and interpolate `calib.pct`.
+ *
+ *   Pages bound by this rule: /probabilidades, /about, /home, /resumen,
+ *   and any component that reads HYPOTHESES or PRIMITIVE_HYPOTHESES.
  */
 
 export type HypothesisKind = "primitive" | "antecedent" | "derived";
