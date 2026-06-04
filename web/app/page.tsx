@@ -6,11 +6,14 @@ import { STATS } from "@/lib/siteStats";
 import { cases } from "@/lib/data";
 import { getHypothesis } from "@/lib/hypotheses";
 import { effectiveCalibration } from "@/lib/hypothesisMapping";
+import { pctToIcdLabel } from "@/lib/icd203";
 
-function effectivePctFor(id: string): number {
+function effectiveLabelFor(id: string): { pct: number; es: string; en: string } {
   const h = getHypothesis(id);
-  if (!h) return 0;
-  return Math.round(effectiveCalibration(h, cases).pct);
+  if (!h) return { pct: 0, es: "—", en: "—" };
+  const pct = Math.round(effectiveCalibration(h, cases).pct);
+  const icd = pctToIcdLabel(pct);
+  return { pct, es: icd.labelEs, en: icd.label };
 }
 
 export const metadata = {
@@ -155,21 +158,42 @@ export default function HomePage() {
             />
           </p>
           <div className="grid gap-px bg-bg/15 md:grid-cols-3">
-            <CategoryFact
-              eyebrow={`${effectivePctFor("programas-clasificados")}%`}
-              es={{ label: "Programa clasificado", desc: "Casi seguro que parte son drones experimentales no acknowledged — pasó con el U-2, el F-117 y el B-2" }}
-              en={{ label: "Classified program", desc: "Almost certain part are unannounced experimental drones — happened with the U-2, F-117 and B-2" }}
-            />
-            <CategoryFact
-              eyebrow={`${effectivePctFor("fenomenos-naturales")}%`}
-              es={{ label: "Natural raro", desc: "Plasma atmosférico, sprites, ionización (recurrencias en Hessdalen, Marfa, Popocatépetl)" }}
-              en={{ label: "Rare natural", desc: "Atmospheric plasma, sprites, ionization (recurrences at Hessdalen, Marfa, Popocatépetl)" }}
-            />
-            <CategoryFact
-              eyebrow={`${effectivePctFor("entidades-no-humanas")}%`}
-              es={{ label: "Algo no humano", desc: "La categoría más amplia — improbable, pero no descartable. Donde realmente vive el debate." }}
-              en={{ label: "Something non-human", desc: "The broadest category — unlikely, but not ruled out. Where the real debate lives." }}
-            />
+            {(() => {
+              const c1 = effectiveLabelFor("programas-clasificados");
+              return (
+                <CategoryFact
+                  icdEs={c1.es}
+                  icdEn={c1.en}
+                  pct={c1.pct}
+                  es={{ label: "Programa clasificado", desc: "Casi seguro que parte son drones experimentales no acknowledged — pasó con el U-2, el F-117 y el B-2" }}
+                  en={{ label: "Classified program", desc: "Almost certain part are unannounced experimental drones — happened with the U-2, F-117 and B-2" }}
+                />
+              );
+            })()}
+            {(() => {
+              const c2 = effectiveLabelFor("fenomenos-naturales");
+              return (
+                <CategoryFact
+                  icdEs={c2.es}
+                  icdEn={c2.en}
+                  pct={c2.pct}
+                  es={{ label: "Natural raro", desc: "Plasma atmosférico, sprites, ionización (recurrencias en Hessdalen, Marfa, Popocatépetl)" }}
+                  en={{ label: "Rare natural", desc: "Atmospheric plasma, sprites, ionization (recurrences at Hessdalen, Marfa, Popocatépetl)" }}
+                />
+              );
+            })()}
+            {(() => {
+              const c3 = effectiveLabelFor("entidades-no-humanas");
+              return (
+                <CategoryFact
+                  icdEs={c3.es}
+                  icdEn={c3.en}
+                  pct={c3.pct}
+                  es={{ label: "Algo no humano", desc: "La categoría más amplia — improbable, pero no descartable. Donde realmente vive el debate." }}
+                  en={{ label: "Something non-human", desc: "The broadest category — unlikely, but not ruled out. Where the real debate lives." }}
+                />
+              );
+            })()}
           </div>
 
           <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
@@ -359,18 +383,23 @@ export default function HomePage() {
 }
 
 function CategoryFact({
-  eyebrow,
+  icdEs,
+  icdEn,
+  pct,
   es,
   en,
 }: {
-  eyebrow: string;
+  icdEs: string;
+  icdEn: string;
+  pct: number;
   es: { label: string; desc: string };
   en: { label: string; desc: string };
 }) {
   return (
     <div className="space-y-2 bg-text p-6">
       <p className="font-mono text-xs uppercase tracking-widest text-accent">
-        {eyebrow}
+        <T es={icdEs} en={icdEn} />{" "}
+        <span className="text-bg/50">({pct}%)</span>
       </p>
       <h3 className="font-display text-2xl font-medium leading-tight text-bg md:text-3xl">
         <T es={es.label} en={en.label} />
