@@ -1,0 +1,83 @@
+{
+  "id": "vranov-dyji-1987",
+  "num": 74,
+  "name": "Vranov nad Dyjí · Mi-24",
+  "year_start": 1987,
+  "country": "CZ",
+  "country_name": "Checoslovaquia",
+  "flag": "🇨🇿",
+  "location": {
+    "lat": 48.91,
+    "lng": 15.81,
+    "place": "Embalse Vranov nad Dyjí · Moravia del Sur"
+  },
+  "tier": "S",
+  "probability": 70,
+  "summary": "Mi-24 del 51º Regimiento ordenado a disparar contra objeto cigar-shape; 2.5h persecución; velocidad 60→2,700 km/h; weapons lock evadido; nombres oficiales documentados.",
+  "summary_en": "Mi-24 of the 51st Regiment ordered to fire at cigar-shaped object; 2.5h pursuit; speed 60→2,700 km/h; weapons lock evaded; named officers documented.",
+  "patterns": [
+    "8e",
+    "8k"
+  ],
+  "category": "incident",
+  "whatHappened": "El 12 de julio de 1987, la tripulación de un helicóptero Mi-24 'Hind' del 51º Regimiento de Helicópteros checoslovaco — Capitán Čestmír Tesařík (piloto), Primer Oficial Ivan Pospíchal y Primer Oficial Milan Šero — recibió orden de Control de Tráfico Aéreo (ATC) militar de interceptar y engager un objeto no identificado de forma cilíndrica sobre el embalse Vranov nad Dyjí.\n\nDurante una persecución de aproximadamente 2 horas y 30 minutos hacia el corredor Brno → Jaslovské Bohunice → Bratislava, la tripulación reportó que el objeto exhibía cambios de velocidad extremos — desde 60 km/h hasta aproximadamente 2,700 km/h — y evadía sistemáticamente los intentos de lock de armamento del Mi-24. Las comunicaciones por radio fueron monitoreadas en tiempo real por múltiples estaciones de control de tráfico aéreo militar.\n\nLa doctrina del Ejército Popular Checoslovaco (ČSLA) en la época era 'si no sabemos qué es, no existe'. Como consecuencia, los registros de radio-comunicaciones fueron ordenados a destruir, y no quedaron archivos militares formales del incidente. Sin embargo, los tres tripulantes han confirmado el evento en testimonios públicos posteriores, principalmente vía prensa checa post-1989. El caso quedó documentado por nombre, fecha, base de origen y unidad militar.",
+  "whatHappened_en": "On July 12, 1987, the crew of a Czechoslovak 51st Helicopter Regiment Mi-24 'Hind' — Captain Čestmír Tesařík (pilot), F/O Ivan Pospíchal, and F/O Milan Šero — was ordered by military Air Traffic Control (ATC) to intercept and engage an unidentified cigar-shaped object over the Vranov nad Dyjí reservoir.\n\nDuring a pursuit lasting approximately 2 hours and 30 minutes along the Brno → Jaslovské Bohunice → Bratislava corridor, the crew reported the object exhibiting extreme speed changes — from 60 km/h to approximately 2,700 km/h — and systematically evading the Mi-24's weapons-lock attempts. Radio communications were monitored in real time by multiple military air traffic control stations.\n\nThe Czechoslovak People's Army (ČSLA) doctrine of the era was 'if we don't know what it is, it doesn't exist'. Consequently, radio-communication records were ordered destroyed, and no formal military archive of the incident remains. However, the three crew members have confirmed the event in subsequent public testimony, primarily via Czech press post-1989. The case is documented by name, date, base of origin, and military unit.",
+  "whyMatters": "Es el caso UAP institucional más sólido del bloque soviético post-Petrozavodsk 1977 y pre-Voronezh 1989. Combina interceptación militar activa, intento de engagement balístico, cambios de velocidad fuera del rango cinemático humano (60→2,700 km/h), y triangulación con tres tripulantes nombrados que mantuvieron el testimonio durante 35+ años. La destrucción ordenada de los registros es en sí misma evidencia del manejo institucional.",
+  "whyMatters_en": "The strongest institutional UAP case from the Soviet bloc between Petrozavodsk 1977 and Voronezh 1989. Combines active military interception, attempted ballistic engagement, speed changes outside the human kinematic range (60→2,700 km/h), and triangulation across three named crew members who sustained the testimony for 35+ years. The ordered destruction of records is itself evidence of institutional handling.",
+  "evidence": [
+    "Testimonios públicos sostenidos de Tesařík, Pospíchal y Šero post-1989",
+    "Documentación del 51º Regimiento de Helicópteros y base de origen",
+    "Múltiples estaciones ATC militares monitoreando comunicaciones en tiempo real",
+    "Doctrina ČSLA documentada que ordenó destrucción de registros — patrón consistente con cover-up"
+  ],
+  "evidence_en": [
+    "Sustained public testimony from Tesařík, Pospíchal and Šero post-1989",
+    "Documentation of 51st Helicopter Regiment and base of origin",
+    "Multiple military ATC stations monitoring communications in real time",
+    "Documented ČSLA doctrine ordering destruction of records — consistent with cover-up pattern"
+  ],
+  "sources": [
+    {
+      "name": "ArmyWeb — Vranov 1987 (reconstrucción militar checa)",
+      "url": "https://www.armyweb.cz/clanek/v-roce-1987-se-stretl-cesky-vrtulnik-s-pravdepodobnym-ufo"
+    },
+    {
+      "name": "Aktuálně.cz — Vranov reconstruction",
+      "url": "https://magazin.aktualne.cz/udajny-ufo-incident-nad-vranovskou-prehradou/r~d59bceba3b9b11f0bf960cc47ab5f122/"
+    },
+    {
+      "name": "Praguepig — Vranov nad Dyjí UFO Case",
+      "url": "https://praguepig.com/2018/08/vranov-nad-dyji-ufo-case/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "ATC militar checoslovaco autoriza engagement contra objeto desconocido — confirma manejo institucional sostenido; ordenó destrucción de registros (patrón cover-up)",
+      "rationaleEn": "Czechoslovak military ATC authorizes engagement against unknown object — confirms sustained institutional handling; ordered destruction of records (cover-up pattern)"
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Cambios de velocidad 60→2,700 km/h y evasión sistemática de weapons-lock exceden envolvente cinemática de cualquier plataforma humana de 1987",
+      "rationaleEn": "Speed changes 60→2,700 km/h and systematic weapons-lock evasion exceed kinematic envelope of any human platform from 1987"
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Persecución activa con Mi-24 + ATC + múltiples estaciones de radio + comportamiento direccional excluyen plasma, meteoro o cualquier fenómeno atmosférico catalogado",
+      "rationaleEn": "Active Mi-24 pursuit + ATC + multiple radio stations + directional behavior exclude plasma, meteor or any catalogued atmospheric phenomenon"
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Cambios de velocidad de 60 a 2,700 km/h sin signo de aceleración convencional sugiere física no estándar",
+      "rationaleEn": "Speed changes from 60 to 2,700 km/h with no sign of conventional acceleration suggests non-standard physics"
+    }
+  ]
+}

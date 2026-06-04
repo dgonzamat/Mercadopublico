@@ -1,0 +1,76 @@
+{
+  "id": "lago-de-cote-1971",
+  "num": 73,
+  "name": "Lago de Cote · IGN aerial photo",
+  "year_start": 1971,
+  "country": "CR",
+  "country_name": "Costa Rica",
+  "flag": "🇨🇷",
+  "location": {
+    "lat": 10.59,
+    "lng": -84.91,
+    "place": "Lago de Cote · Arenal-Tilarán"
+  },
+  "tier": "S",
+  "probability": 78,
+  "summary": "Cámara cartográfica IGN del gobierno costarricense captura disco metálico ~100m sobre lago; única foto del set con objeto; peer-reviewed por Haines (NASA Ames).",
+  "summary_en": "Costa Rican government IGN cartographic camera captures metallic ~100m disc over lake; only frame of timed sequence with object; peer-reviewed by Haines (NASA Ames).",
+  "patterns": [
+    "8a",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 4 de septiembre de 1971, durante un vuelo de relevamiento cartográfico financiado por el Instituto Costarricense de Electricidad (ICE) para el proyecto hidroeléctrico Arenal, una aeronave Aero Commander 680F del Instituto Geográfico Nacional (IGN) sobrevoló el Lago de Cote a las 08:25 a una altitud de 10,000 pies. La cámara aerofotogramétrica del IGN — un sistema RMK 15/23 produciendo negativos de 23×23 cm a intervalo fijo — capturó automáticamente una secuencia del lago para el levantamiento cartográfico.\n\nUn único negativo de la secuencia contiene un objeto metálico circular de aproximadamente 100 metros de diámetro sobre la superficie del lago. Los negativos contiguos en la secuencia no contienen el objeto, descartando un artefacto mecánico de la cámara. El objeto presenta forma de disco con un borde definido y firma fotométrica consistente con superficie metálica reflectiva.\n\nEl negativo original quedó archivado en el Departamento de Fotografía del IGN. En 1990, el Dr. Richard F. Haines (científico de NASA-Ames retirado) publicó análisis fotogramétrico en el Journal of Scientific Exploration (Vol. 4, No. 1, pp. 71–74) autentificando el negativo y descartando manipulación digital, montaje óptico, mancha en la lente, o reflejo del lago.",
+  "whatHappened_en": "On September 4, 1971, during a cartographic survey flight funded by the Costa Rican Electricity Institute (ICE) for the Arenal hydroelectric project, an Aero Commander 680F from the National Geographic Institute (IGN) overflew Lago de Cote at 08:25 at 10,000 feet altitude. The IGN's aerial photogrammetric camera — an RMK 15/23 system producing 23×23 cm negatives at fixed intervals — automatically captured a sequence of the lake for cartographic mapping.\n\nA single negative in the sequence contains a circular metallic object approximately 100 meters in diameter over the lake surface. Adjacent negatives in the timed sequence do not contain the object, ruling out a mechanical camera artifact. The object presents disc shape with a defined edge and photometric signature consistent with reflective metallic surface.\n\nThe original negative remained archived at the IGN's Photography Department. In 1990, Dr. Richard F. Haines (retired NASA-Ames scientist) published photogrammetric analysis in the Journal of Scientific Exploration (Vol. 4, No. 1, pp. 71–74) authenticating the negative and ruling out digital manipulation, optical montage, lens spot, or lake reflection.",
+  "whyMatters": "Es probablemente la mejor evidencia fotográfica del corpus latinoamericano: cámara cartográfica gubernamental con cadena de custodia institucional, una sola exposición del timed-set con objeto (excluyendo artefacto), análisis peer-reviewed publicado en revista científica con autor de NASA-Ames. La diferencia con casos UAP típicos es que aquí no hay testigo humano — el objeto fue captado por una cámara automática gubernamental durante una operación rutinaria.",
+  "whyMatters_en": "Likely the best photographic evidence in the Latin American corpus: governmental cartographic camera with institutional chain of custody, single exposure of the timed set containing the object (excluding artifact), peer-reviewed analysis published in a scientific journal by a NASA-Ames author. The difference from typical UAP cases is that there's no human witness — the object was captured by an automatic government camera during routine operation.",
+  "evidence": [
+    "Negativo original 23×23 cm archivado en Departamento de Fotografía del IGN (Costa Rica)",
+    "Único negativo del timed-set con objeto, excluyendo artefacto mecánico",
+    "Análisis peer-reviewed: Haines, R.F. — Journal of Scientific Exploration Vol. 4 No. 1 (1990)",
+    "Autenticación contra montaje digital, mancha de lente, reflejo del lago"
+  ],
+  "evidence_en": [
+    "Original 23×23 cm negative archived at IGN Photography Department (Costa Rica)",
+    "Single negative in the timed set containing the object, excluding mechanical artifact",
+    "Peer-reviewed analysis: Haines, R.F. — Journal of Scientific Exploration Vol. 4 No. 1 (1990)",
+    "Authentication against digital montage, lens spot, lake reflection"
+  ],
+  "sources": [
+    {
+      "name": "Haines, R.F. — 'Photo Analysis of an Aerial Disc Over Costa Rica: New Evidence' (Journal of Scientific Exploration, 1990)",
+      "url": "https://www.scientificexploration.org"
+    },
+    {
+      "name": "Instituto Geográfico Nacional de Costa Rica — Archivo Digital",
+      "url": "https://www.archivodigital.go.cr/index.php/instituto-geografico-nacional-ign"
+    },
+    {
+      "name": "Rice University ArchivesSpace — Haines correspondence record",
+      "url": "https://archives.library.rice.edu/repositories/2/archival_objects/330038"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Disco metálico ~100m fotografiado sobre Costa Rica en 1971 — sin programa aéreo nacional con esa escala; compatible con incursión clasificada extranjera o plataforma desconocida",
+      "rationaleEn": "Metallic ~100m disc photographed over Costa Rica in 1971 — no national aerial program with that scale; compatible with foreign classified incursion or unknown platform"
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Evidencia fotográfica con cadena de custodia institucional y peer-review científico — uno de los pocos casos del corpus donde la imagen sobrevive análisis NASA-grade",
+      "rationaleEn": "Photographic evidence with institutional chain of custody and scientific peer-review — one of the few corpus cases where the image survives NASA-grade analysis"
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Análisis fotogramétrico de Haines descarta reflejo del lago, mancha óptica, montaje y artefacto mecánico — categorías que cubrirían la mayoría de explicaciones naturales",
+      "rationaleEn": "Haines's photogrammetric analysis rules out lake reflection, optical spot, montage and mechanical artifact — categories that would cover most natural explanations"
+    }
+  ]
+}
