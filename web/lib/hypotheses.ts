@@ -78,8 +78,8 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     corpusPct: 95,
     corpusPctOverride: 95,
     color: "#c41e3a",
-    note: `Esta no es una hipótesis aparte — es una conclusión que se sigue de las otras. Si más de una explicación tiene probabilidad alta (programas clasificados al 88%, fenómenos naturales al 70%), por matemática básica el corpus tiene que contener varias causas mezcladas. Negarlo requeriría asumir que casi todos los casos comparten la misma explicación — estadísticamente extremo en ${STATS.years} años.`,
-    noteEn: `This isn't a separate hypothesis — it's a conclusion that follows from the others. If more than one explanation has high probability (classified programs at 88%, natural phenomena at 70%), basic math forces the corpus to contain mixed causes. Denying this would require assuming nearly all cases share a single explanation — statistically extreme over ${STATS.years} years.`,
+    note: `Esta no es una hipótesis aparte — es una conclusión que se sigue de las otras. Si más de una explicación tiene prior alto, por matemática básica el corpus tiene que contener varias causas mezcladas. Negarlo requeriría asumir que casi todos los casos comparten la misma explicación — estadísticamente extremo en ${STATS.years} años.`,
+    noteEn: `This isn't a separate hypothesis — it's a conclusion that follows from the others. If more than one hypothesis has a high prior, basic math forces the corpus to contain mixed causes. Denying this would require assuming nearly all cases share a single explanation — statistically extreme over ${STATS.years} years.`,
   },
   {
     id: "programas-clasificados",
@@ -108,8 +108,8 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     labelEn: "≥1 case involves non-human entities (broad category)",
     corpusPct: 28,
     color: "#8b0000",
-    note: "Categoría amplia: incluye tres versiones más específicas — interdimensional, psicoespiritual, tratado formal — más espacio para variantes sin nombre establecido (ET clásico, ontologías nuevas). Tiene que ser al menos tan probable como la versión más alta, lo que da algo cerca de 28%. Improbable, pero no descartable.",
-    noteEn: "Broad category: includes three more specific versions — interdimensional, psychospiritual, formal treaty — plus room for variants without established naming (classical ET, new ontologies). Must be at least as probable as the highest specific version, which lands near 28%. Unlikely, but not ruled out.",
+    note: "Categoría amplia: incluye tres versiones más específicas — interdimensional, psicoespiritual, tratado formal — más espacio para variantes sin nombre establecido (ET clásico, ontologías nuevas). Tiene que ser al menos tan probable como la subclase de mayor prior. Improbable, pero no descartable.",
+    noteEn: "Broad category: includes three more specific versions — interdimensional, psychospiritual, formal treaty — plus room for variants without established naming (classical ET, new ontologies). Must be at least as probable as the highest-prior subclass. Unlikely, but not ruled out.",
   },
   {
     id: "interdimensional",
