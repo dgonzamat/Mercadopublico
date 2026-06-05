@@ -1,0 +1,48 @@
+name: CI
+
+# Validación en cada PR y en ramas de trabajo. Es un "dry-run" del deploy:
+# corre exactamente la misma cadena (build-cases → auditoría → next build)
+# que deploy-pages.yml, pero SIN publicar. Garantiza que cualquier PR
+# — incluidos los que abre la rutina diaria de casos nuevos — pase la
+# auditoría de consistencia antes de poder mergearse.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches-ignore: [main]   # main ya valida vía deploy-pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "ci-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      # `npm run build` encadena el prebuild (build-cases + audit-consistency)
+      # y luego next build. Si los JSON de casos están rotos, si hay drift
+      # numérico/textual (auditoría E1–E6), o si falla el type-check, este
+      # paso falla y el PR no es mergeable.
+      - name: Validate (build-cases → audit → next build)
+        run: npm run build
+        env:
+          NODE_ENV: production
