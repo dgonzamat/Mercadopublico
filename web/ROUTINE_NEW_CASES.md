@@ -2,19 +2,20 @@
 
 Playbook para la **rutina agéntica de cowork** que corre a diario sobre este
 repositorio. Define qué hacer, con qué disciplina, y — crítico — qué **NO**
-hacer. La rutina descubre candidatos y **abre un PR draft**; nunca mergea ni
-deploya por su cuenta. La incorporación al sitio público siempre pasa por
-revisión humana.
+hacer. La rutina descubre candidatos, abre un PR y lo mergea automáticamente
+si CI pasa.
 
 ---
 
-## Política de seguridad (no negociable)
+## Política de seguridad
 
-1. **Nunca** hacer push a `main`. **Nunca** mergear. Solo abrir **PR draft**.
-2. **Nunca** auto-aprobar. El merge lo hace una persona tras revisar.
-3. Si no hay candidatos que cumplan el umbral de calidad, **no abrir PR** —
+1. **Nunca** hacer push directo a `main`. Siempre via PR.
+2. **Auto-merge habilitado**: si CI verde (build-cases + auditoría + next build),
+   mergear automáticamente via squash. Habilitar auto-merge en el PR al crearlo.
+3. Si CI falla, corregir en la misma rama **antes** de que el auto-merge se active.
+4. Si no hay candidatos que cumplan el umbral de calidad, **no abrir PR** —
    terminar la rutina en silencio. Cero ruido es preferible a casos débiles.
-4. Un PR por día como máximo, agrupando los candidatos encontrados.
+5. Un PR por día como máximo, agrupando los candidatos encontrados.
 
 ## Flujo
 
@@ -24,10 +25,11 @@ revisión humana.
 3. ¿Cumple el umbral de inclusión? → si no, descartar
 4. Redactar data/cases/<id>.json con el schema completo + calibración
 5. Asignar `num` único secuencial (max(num actual) + 1, +2, …)
-6. Abrir UN PR draft con todos los candidatos del día
-7. CI (ci.yml) corre build-cases → auditoría → next build en el PR
-8. Si la auditoría falla, corregir en el PR antes de pedir revisión
-9. Dejar el PR en draft + resumen de cada caso y sus fuentes
+6. Abrir UN PR (squash merge) con todos los candidatos del día
+7. Habilitar auto-merge en el PR via GitHub API (squash)
+8. CI (ci.yml) corre build-cases → auditoría → next build en el PR
+9. Si CI verde → auto-merge se activa automáticamente
+10. Si CI falla → corregir en la misma rama (auto-merge no se activa hasta que CI pase)
 ```
 
 ## Umbral de inclusión
@@ -77,9 +79,9 @@ aguadilla/bolender).
 - Audiencias del Congreso y testimonios oficiales nuevos.
 - Cobertura de prensa establecida que cite documentos primarios.
 
-## Verificación antes de pedir revisión
+## Verificación antes de activar auto-merge
 
-- [ ] El PR es **draft** y apunta a `main`.
+- [ ] PR apunta a `main`, auto-merge habilitado (squash).
 - [ ] CI verde: build-cases + auditoría (0 ERRORS) + next build.
 - [ ] Cada caso nuevo tiene fuentes primarias y `evidenceContribution` calibrado.
 - [ ] `num` únicos, sin colisión con casos existentes.
