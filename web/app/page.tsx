@@ -124,8 +124,8 @@ export default function HomePage() {
             </h2>
             <p className="max-w-3xl font-display text-xl leading-snug text-bg/80 md:text-2xl">
               <T
-                es={`Parte son programas militares clasificados (lo sabemos desde el U-2). Parte son fenómenos naturales raros (plasma, sprites, ionización). Parte son identificaciones equivocadas (siempre). Y en una porción no menor: algo no humano que aún no sabemos categorizar.`}
-                en={`Part are classified military programs (we've known since the U-2). Part are rare natural phenomena (plasma, sprites, ionization). Part are misidentifications (always). And a non-trivial portion: something non-human we don't yet know how to categorize.`}
+                es={`La mayoría apunta a programas militares clasificados — lo sabemos desde el U-2 (1950s) y el F-117 (1980s). Una porción no menor involucra entidades no humanas que aún no sabemos categorizar. Algunos pueden ser fenómenos naturales raros (plasma, sprites), aunque la evidencia multi-sensora militar excluye esa lectura en la mayoría de los Tier S. Las identificaciones equivocadas se filtran antes — quedan los ${STATS.cases} casos que las superaron.`}
+                en={`Most point to classified military programs — we've known since the U-2 (1950s) and the F-117 (1980s). A non-trivial portion involves non-human entities we don't yet know how to categorize. Some may be rare natural phenomena (plasma, sprites), though multi-sensor military evidence rules that out for most Tier S cases. Misidentifications get filtered out first — what remains are the ${STATS.cases} cases that survived that culling.`}
               />
             </p>
           </div>
@@ -189,8 +189,8 @@ export default function HomePage() {
                   icdEs={c3.es}
                   icdEn={c3.en}
                   pct={c3.pct}
-                  es={{ label: "Algo no humano", desc: "La categoría más amplia — improbable, pero no descartable. Donde realmente vive el debate." }}
-                  en={{ label: "Something non-human", desc: "The broadest category — unlikely, but not ruled out. Where the real debate lives." }}
+                  es={{ label: "Entidades no humanas", desc: "La categoría más amplia — donde realmente vive el debate. Calibrada al alza por presión multi-sensora del corpus." }}
+                  en={{ label: "Non-human entities", desc: "The broadest category — where the real debate lives. Calibrated upward by multi-sensor pressure from the corpus." }}
                 />
               );
             })()}
@@ -353,12 +353,12 @@ export default function HomePage() {
             es={{
               eyebrow: "El razonamiento",
               title: "¿Por qué nadie acuerda qué son?",
-              desc: "6 explicaciones plausibles, cada una con su nivel de confianza. La de 'algo no humano' es la que más se discute — y la única que un solo experimento podría mover.",
+              desc: "6 explicaciones plausibles, cada una con su nivel de confianza. La de entidades no humanas es la que más se discute — y la única que un solo experimento podría mover.",
             }}
             en={{
               eyebrow: "The reasoning",
               title: "Why does no one agree what they are?",
-              desc: "6 plausible explanations, each with its confidence level. The 'something non-human' one is the most debated — and the only one a single experiment could move.",
+              desc: "6 plausible explanations, each with its confidence level. The non-human entities one is the most debated — and the only one a single experiment could move.",
             }}
             href="/probabilidades"
           />
