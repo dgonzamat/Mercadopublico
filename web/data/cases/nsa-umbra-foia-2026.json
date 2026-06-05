@@ -1,0 +1,80 @@
+{
+  "id": "nsa-umbra-foia-2026",
+  "num": 81,
+  "name": "NSA TOP SECRET UMBRA — Producción FOIA (Disclosure Foundation, 2026)",
+  "name_en": "NSA TOP SECRET UMBRA — FOIA Production (Disclosure Foundation, 2026)",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.11,
+    "lng": -76.77,
+    "place": "NSA / Fort Meade, Maryland"
+  },
+  "tier": "S",
+  "probability": 88,
+  "summary": "La NSA produce más de 300 páginas de registros UAP clasificados TOP SECRET UMBRA tras una apelación FOIA exitosa de la Disclosure Foundation. Primera vez que material al nivel de compartimentación UMBRA se libera públicamente en relación a UAP. Los documentos muestran que la NSA trató el fenómeno como asunto serio de inteligencia de señales durante décadas, incluyendo rastreos por radar y respuestas de interceptación militar.",
+  "summary_en": "The NSA produces over 300 pages of TOP SECRET UMBRA-classified UAP records following a successful Disclosure Foundation FOIA appeal. The first time material at the UMBRA compartmentation level has been publicly released in connection with UAP. The documents show the NSA treated the phenomenon as a serious signals intelligence matter for decades, including radar tracking and military intercept responses.",
+  "patterns": ["8m", "8e"],
+  "category": "document",
+  "whatHappened": "El 18 de mayo de 2026, la National Security Agency (NSA) produjo más de 300 páginas de registros históricos sobre UAP marcados como TOP SECRET UMBRA en respuesta a una apelación administrativa de la Freedom of Information Act (FOIA) presentada por la Disclosure Foundation. Es la primera vez en la historia que material clasificado al nivel de compartimentación UMBRA se libera públicamente en conexión con el fenómeno UAP. UMBRA es uno de los marcadores de clasificación más sensibles asociados a la inteligencia de señales (SIGINT) de los Estados Unidos, históricamente reservado para operaciones de recopilación de inteligencia de comunicaciones de altísima sensibilidad.\n\nEl origen legal del caso se remonta a 1980, cuando un grupo de vigilancia ciudadano presentó una demanda FOIA contra la NSA para compeler la producción de información sobre OVNIs en posesión de la agencia. En ese proceso, el Director de Política de la NSA presentó affidavits en cámara (in camera) ante el tribunal declarando que ~239 documentos relacionados con UFO existían en los archivos de la agencia, pero que revelarlos comprometería métodos y fuentes de inteligencia. La agencia negó integralmente la solicitud. Décadas después, la Disclosure Foundation apeló internamente esa negativa, y la propia autoridad de apelaciones de la NSA determinó que la denegación original había sido improcedente. La producción del 18 de mayo de 2026 es el resultado de esa resolución.\n\nLos documentos producidos incluyen registros que describen rastreos por radar de objetos con características físicas, velocidades y comportamientos inconsistentes con explicaciones convencionales, así como respuestas de interceptación militar activadas por dichos contactos. La NSA mantiene redacciones significativas sobre documentos adicionales de los años 1960 en adelante, y el equipo legal de la Disclosure Foundation continúa impugnando dichas retenciones.",
+  "whatHappened_en": "On May 18, 2026, the National Security Agency (NSA) produced over 300 pages of historical UAP records marked TOP SECRET UMBRA in response to a Freedom of Information Act (FOIA) administrative appeal by the Disclosure Foundation. This is the first time in history that material classified at the UMBRA compartmentation level has been publicly released in connection with the UAP phenomenon. UMBRA is one of the most sensitive classification markers associated with U.S. signals intelligence (SIGINT), historically reserved for highly sensitive communications intelligence collection operations.\n\nThe legal origin of the case dates to 1980, when a citizen watchdog group filed a FOIA lawsuit against the NSA to compel production of UFO-related information in the agency's possession. In that proceeding, the NSA's Chief Policy Officer submitted in camera affidavits to the court stating that approximately 239 UFO-related documents existed in agency files but that their release would compromise intelligence methods and sources. The agency issued a blanket denial. Decades later, the Disclosure Foundation appealed that denial internally, and the NSA's own appeals authority determined that the original denial had been improper. The May 18, 2026 production is the result of that ruling.\n\nThe produced documents include records describing radar tracking of objects with physical characteristics, speeds, and behaviors plainly inconsistent with conventional explanations, as well as military intercept responses triggered by those contacts. The NSA maintains significant redactions over additional documents dating from the 1960s onward, and the Disclosure Foundation's legal team continues to challenge those withholdings.",
+  "whyMatters": "Los documentos NSA UMBRA 2026 son estructuralmente análogos al Twining Memo 1947 y al Bolender Memo 1969 del corpus: registros institucionales internos que documentan que la agencia trataba el fenómeno como asunto serio de seguridad nacional, producidos bajo compulsión legal y no por iniciativa voluntaria de transparencia. La clasificación UMBRA añade una dimensión sin precedente: indica que la NSA categorizó al menos parte del fenómeno UAP dentro de sus canales SIGINT más sensibles — lo que implica ya sea que el fenómeno generaba señales interceptables o que la inteligencia sobre el fenómeno provenía de fuentes de comunicaciones de altísima sensibilidad. Ambas implicaciones son consistentes con el corpus de programas clasificados pero exceden cualquier reconocimiento previo.",
+  "whyMatters_en": "The NSA UMBRA 2026 documents are structurally analogous to the Twining Memo 1947 and the Bolender Memo 1969 in the corpus: internal institutional records documenting that the agency treated the phenomenon as a serious national security matter, produced under legal compulsion rather than voluntary transparency. The UMBRA classification adds an unprecedented dimension: it indicates that the NSA categorized at least part of the UAP phenomenon within its most sensitive SIGINT channels — implying either that the phenomenon generated interceptable signals, or that intelligence about the phenomenon derived from highly sensitive communications sources. Both implications are consistent with the classified programs corpus but exceed any prior acknowledgment.",
+  "evidence": [
+    "Producción formal de la NSA de 300+ páginas de registros UAP marcados TOP SECRET UMBRA (18 mayo 2026), vía apelación FOIA",
+    "Autoridad de apelaciones interna de la NSA determinó que la negativa original (1980) fue improcedente — admisión institucional de retención indebida",
+    "Registros incluyen rastreos por radar de objetos con velocidades y comportamientos inconsistentes con explicaciones convencionales",
+    "Respuestas de interceptación militar documentadas en los registros producidos",
+    "Affidavits in camera de 1980 del Director de Política NSA reconocen ~239 documentos UAP en posesión de la agencia — corroborado por la producción de 2026"
+  ],
+  "evidence_en": [
+    "Formal NSA production of 300+ pages of TOP SECRET UMBRA-marked UAP records (May 18, 2026), via FOIA appeal",
+    "NSA internal appeals authority ruled the original 1980 denial was improper — institutional admission of prior improper withholding",
+    "Records include radar tracking of objects with speeds and behaviors inconsistent with conventional explanations",
+    "Military intercept responses documented in the produced records",
+    "1980 NSA Chief Policy Officer in camera affidavits acknowledging ~239 UAP documents in agency possession — corroborated by the 2026 production"
+  ],
+  "sources": [
+    {
+      "name": "Disclosure Foundation — 'NSA Releases Hundreds of Pages of Formerly Top Secret UMBRA UAP Records After FOIA Appeal' (18 mayo 2026)",
+      "url": "https://disclosure.org/news/nsa-top-secret-umbra-uap-foia-release"
+    },
+    {
+      "name": "Disclosure Foundation — Documentos producidos (PDF directo)",
+      "url": "https://disclosure.org/api/media/documents/nsa-top-secret-umbra-uap-foia-release.pdf"
+    },
+    {
+      "name": "NewsNation — 'UFO files released: New UAP documents from NSA obtained by Disclosure Foundation' (mayo 2026)",
+      "url": "https://www.newsnationnow.com/space/ufo/disclosure-foundation-nsa-ufo-documents/"
+    },
+    {
+      "name": "Unknown Country — 'FOIA Appeal Forces Release of Highly Classified NSA UAP Records' (mayo 2026)",
+      "url": "https://unknowncountry.com/headline-news/foia-appeal-forces-release-of-highly-classified-nsa-uap-records/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Los registros NSA UMBRA documentan tratamiento sostenido del fenómeno UAP dentro de los canales SIGINT más sensibles de la agencia durante décadas, incluyendo retención activa bajo el nivel de compartimentación más alto y negativa institucional mantenida por 46 años hasta ser declarada improcedente. Esto es el patrón arquetípico de gestión de información de programas clasificados: canales de distribución restringida, ausencia de reconocimiento externo, resistencia maximalista a la producción legal. Substantial porque los documentos confirman tratamiento institucional del fenómeno a un nivel de sensibilidad sin precedente en el corpus — excediendo los memos Twining y Bolender en clasificación formal.",
+      "rationaleEn": "The NSA UMBRA records document sustained treatment of the UAP phenomenon within the agency's most sensitive SIGINT channels for decades, including active retention under the highest compartmentation level and institutional denial maintained for 46 years until ruled improper. This is the archetypal pattern of classified-program information management: restricted distribution channels, absence of external acknowledgment, maximalist resistance to legal production. Substantial because the documents confirm institutional treatment of the phenomenon at a sensitivity level without precedent in the corpus — formally exceeding the Twining and Bolender memos in classification."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El hecho de que la NSA categorizara UAP dentro de canales UMBRA — reservados para inteligencia sobre fuentes de comunicaciones de altísima sensibilidad — implica que el fenómeno generaba señales interceptables o que la inteligencia sobre él provenía de canales de esa clase. Esto va más allá del simple secreto institucional y sugiere que el fenómeno tenía propiedades que lo hacían relevante para SIGINT. Minimal porque los documentos no revelan ontología — solo comportamiento institucional.",
+      "rationaleEn": "The fact that the NSA categorized UAP within UMBRA channels — reserved for intelligence about highly sensitive communications sources — implies that the phenomenon generated interceptable signals or that intelligence about it derived from such channels. This goes beyond simple institutional secrecy and suggests the phenomenon had properties making it relevant to SIGINT. Minimal because the documents do not reveal ontology — only institutional behavior."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "El nivel UMBRA es inconsistente con el tratamiento institucional esperado de fenómenos naturales raros. Los fenómenos naturales como plasma atmosférico o ball lightning no generan inteligencia de señales clasificada al nivel más alto, ni activan respuestas de interceptación militar documentadas en canales SIGINT sensibles.",
+      "rationaleEn": "The UMBRA level is inconsistent with the expected institutional treatment of rare natural phenomena. Natural phenomena such as atmospheric plasma or ball lightning do not generate signals intelligence classified at the highest level, nor do they trigger documented military intercept responses in sensitive SIGINT channels."
+    }
+  ]
+}

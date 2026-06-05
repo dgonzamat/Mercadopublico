@@ -1,0 +1,80 @@
+{
+  "id": "yemen-orb-2024",
+  "num": 80,
+  "name": "Yemen — Orbe / Misil Hellfire (MQ-9, 2024)",
+  "name_en": "Yemen — Orb / Hellfire Missile Strike (MQ-9, 2024)",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Estados Unidos / Mar Rojo",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 14.8,
+    "lng": 42.0,
+    "place": "Mar Rojo, frente a costa occidental de Yemen"
+  },
+  "tier": "A",
+  "probability": 78,
+  "summary": "Dos MQ-9 Reaper de EE. UU. rastrean y atacan con misil AGM-114 Hellfire a un orbe no identificado en zona de combate activa (operaciones anti-Huthi). El misil deflecta sin detonar. Video militar difundido en audiencia del Congreso por denunciante (sep 2025). Primera revelación pública de compromiso armado contra un UAP.",
+  "summary_en": "Two U.S. MQ-9 Reapers track and engage an unidentified orb with an AGM-114 Hellfire missile in an active combat zone (anti-Houthi operations). The missile deflects without detonating. Military video disclosed at a congressional hearing by a whistleblower (Sep 2025). First public disclosure of an armed engagement against a UAP.",
+  "patterns": ["8r", "8a"],
+  "category": "incident",
+  "whatHappened": "El 30 de octubre de 2024, aproximadamente a las 04:17Z, dos MQ-9 Reaper del ejército estadounidense operando en el Mar Rojo frente a la costa yemení — teatro de operaciones activo contra los ataques de drones y misiles de las milicias Huthi a la navegación comercial — localizaron mediante la técnica de 'buddy lasing' (designación de objetivos cruzada entre dos aeronaves) un orbe no identificado. Uno de los MQ-9 disparó un misil AGM-114 Hellfire al objeto. El video registrado por el otro MQ-9 muestra el proyectil ingresando desde la izquierda del encuadre y haciendo contacto con el orbe: el misil deflecta sin detonar, el objeto se deforma y empieza a rotar, desprendiendo objetos menores — uno de ellos de muy baja visibilidad — hacia su zona posterior.\n\nEl comportamiento del misil es analíticamente significativo: el AGM-114 Hellfire es un misil altamente efectivo contra objetivos blindados y drones — diseñado para detonar ante impactos a velocidad. La deflexión sin detonación implica o bien una falla del mecanismo de detonación por impacto o una propiedad material del orbe inconsistente con cualquier aeronave o drone conocido (incluyendo los sistemas más avanzados de adversarios). Ningún drone ni aeronave no tripulada identificada sobrevive un impacto Hellfire sin detonar el artefacto.\n\nEl video fue obtenido por el congresista Eric Burlison (R-Missouri) a través de un denunciante militar y presentado públicamente por primera vez el 9 de septiembre de 2025 en la audiencia del Task Force on the Declassification of Federal Secrets titulada 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection'. Burlison declaró que una revisión independiente se encontraba en curso al momento de la audiencia. El Departamento de Defensa no emitió declaración pública sobre este incidente.",
+  "whatHappened_en": "On October 30, 2024, at approximately 04:17Z, two U.S. MQ-9 Reapers operating in the Red Sea off the Yemeni coast — an active theater for anti-Houthi operations against drone and missile attacks on commercial shipping — located an unidentified orb using 'buddy lasing' (cross-aircraft target designation). One MQ-9 fired an AGM-114 Hellfire missile at the object. Video recorded by the second MQ-9 shows the projectile entering from the left of frame and making contact with the orb: the missile deflects without detonating, the object deforms and begins to tumble, shedding smaller objects — one barely visible — trailing from its rear.\n\nThe missile's behavior is analytically significant: the AGM-114 Hellfire is a highly effective missile against armored targets and drones, designed to detonate on high-velocity impact. Deflection without detonation implies either a failure of the impact-detonation mechanism or a material property of the orb inconsistent with any known aircraft or drone (including the most advanced adversary systems). No known drone or unmanned aircraft survives a Hellfire impact without triggering the warhead.\n\nThe video was obtained by Rep. Eric Burlison (R-Missouri) from a military whistleblower and presented publicly for the first time on September 9, 2025, at the House Task Force on the Declassification of Federal Secrets hearing titled 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection.' Burlison stated that an independent review was ongoing at the time of the hearing. The Department of Defense did not issue a public statement about this incident.",
+  "whyMatters": "El incidente Yemen 2024 es el primer caso en el corpus con evidencia de compromiso armado directo entre un sistema de armas estándar (Hellfire) y un objeto no identificado, con resultado materialmente anómalo: deflexión sin detonación. Si se confirma mediante la revisión independiente en curso, constituye evidencia de categoría-breaking sobre las propiedades materiales del fenómeno — independientemente de su origen. La combinación de zona de combate activa (lo que descarta fenómenos naturales y objetivos civiles), plataforma de vigilancia de alta definición (MQ-9 EO/IR), y comportamiento post-impacto documentado (deformación + desprendimiento de sub-objetos) coloca este caso en un nivel evidencial sin precedente en el corpus.",
+  "whyMatters_en": "The Yemen 2024 incident is the first case in the corpus with evidence of a direct armed engagement between a standard weapons system (Hellfire) and an unidentified object, with a materially anomalous outcome: deflection without detonation. If confirmed by the independent review in progress, this constitutes category-breaking evidence about the material properties of the phenomenon — regardless of its origin. The combination of an active combat zone (ruling out natural phenomena and civilian targets), high-definition surveillance platform (MQ-9 EO/IR), and documented post-impact behavior (deformation + sub-object shedding) places this case at an evidential level without precedent in the corpus.",
+  "evidence": [
+    "Video MQ-9 EO/IR con marca temporal (~04:17Z, 30 oct 2024) mostrando el intercambio completo misil-orbe",
+    "Técnica buddy lasing confirmada: dos MQ-9 coordinados, designación cruzada previa al disparo",
+    "Misil AGM-114 Hellfire deflecta sin detonar: resultado físicamente anómalo para cualquier objetivo conocido",
+    "Objeto deforma y rota post-impacto, desprendiendo sub-objetos — comportamiento inconsistente con estructuras convencionales",
+    "Video presentado en audiencia congressional del Congreso de EE. UU. (House Oversight Task Force, 9 sep 2025) por Rep. Burlison"
+  ],
+  "evidence_en": [
+    "MQ-9 EO/IR video with timestamp (~04:17Z, Oct 30, 2024) showing the complete missile-orb exchange",
+    "Buddy lasing technique confirmed: two coordinated MQ-9s, cross-aircraft designation prior to firing",
+    "AGM-114 Hellfire missile deflects without detonating: a physically anomalous outcome against any known target",
+    "Object deforms and tumbles post-impact, shedding sub-objects — behavior inconsistent with conventional structures",
+    "Video presented at a U.S. congressional hearing (House Oversight Task Force, Sep 9, 2025) by Rep. Burlison"
+  ],
+  "sources": [
+    {
+      "name": "Rep. Burlison, E. — Presentación del video en audiencia House Oversight Task Force, 9 sep 2025",
+      "note": "Fuente primaria: video mostrado en sesión congressional del Task Force on the Declassification of Federal Secrets"
+    },
+    {
+      "name": "House Oversight Committee — Hearing: 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection', 9 sep 2025",
+      "url": "https://oversight.house.gov/hearing/restoring-public-trust-through-uap-transparency-and-whistleblower-protection/"
+    },
+    {
+      "name": "NBC News — 'Video shown at House UAP hearing appears to show missile fired at object near Yemen' (9 sep 2025)",
+      "url": "https://www.nbcnews.com/news/us-news/video-shown-house-uap-hearing-appears-show-missile-fired-object-yemen-rcna230199"
+    },
+    {
+      "name": "The War Zone — 'Revelation That MQ-9 Reapers Are Now Engaging Aerial Targets Comes From UAP Hearing' (sep 2025)",
+      "url": "https://www.twz.com/news-features/revelation-that-mq-9-reapers-are-now-engaging-aerial-targets-comes-from-uap-hearing"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El comportamiento post-Hellfire del orbe — deflexión sin detonación, deformación sin desintegración, desprendimiento de sub-objetos — excede el envelope de respuesta al impacto de cualquier aeronave, drone o sistema de armas conocido, incluyendo los más avanzados sistemas UAV de adversarios de los EE. UU. (China, Rusia, Irán). Si la revisión independiente confirma la autenticidad del video, las propiedades materiales del objeto son inconsistentes con cualquier tecnología humana conocida. Modest porque la revisión está en curso y la autenticidad aún no es oficialmente validada por el gobierno.",
+      "rationaleEn": "The orb's post-Hellfire behavior — deflection without detonation, deformation without disintegration, sub-object shedding — exceeds the impact-response envelope of any known aircraft, drone, or weapons system, including the most advanced adversary UAV systems (China, Russia, Iran). If the independent review confirms the video's authenticity, the object's material properties are inconsistent with any known human technology. Modest because the review is ongoing and authenticity has not yet been officially validated by the government."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Zona de combate activa con operaciones anti-Huthi implica presencia de múltiples actores con capacidades UAV avanzadas (EE. UU., aliados, Irán, actores regionales). No puede descartarse que el orbe sea un sistema clasificado de adversario con propiedades de resistencia a impacto inusuales. Sin embargo, la deflexión Hellfire sin detonación supera el envelope documentado incluso para los programas clasificados más avanzados conocidos. Minimal porque el contexto de combate sostiene la hipótesis pero el comportamiento físico la excede.",
+      "rationaleEn": "An active combat zone with anti-Houthi operations implies the presence of multiple actors with advanced UAV capabilities (U.S., allies, Iran, regional actors). It cannot be ruled out that the orb is an adversary classified system with unusual impact-resistance properties. However, Hellfire deflection without detonation exceeds the documented performance envelope even for the most advanced known classified programs. Minimal because the combat context sustains the hypothesis but the physical behavior exceeds it."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Un orbe en zona de combate activa coordinadamente localizado por buddy lasing de dos MQ-9 militares y luego impactado por Hellfire no tiene análogo en el catálogo de fenómenos naturales raros. Los fenómenos de plasma y ball lightning no sobreviven impactos de misiles ni exhiben sub-objetos tras el contacto.",
+      "rationaleEn": "An orb in an active combat zone coordinately located by two-MQ-9 military buddy lasing and then struck by a Hellfire has no analog in the catalog of rare natural phenomena. Plasma and ball lightning phenomena do not survive missile impacts or exhibit sub-objects after contact."
+    }
+  ]
+}
