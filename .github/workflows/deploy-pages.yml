@@ -63,11 +63,15 @@ jobs:
             echo "version=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
           fi
 
+      # Force base_path empty because the site is served from the apex of
+      # a custom domain (uapcodex.org). `actions/configure-pages` only
+      # returns the empty base_path once Settings → Pages → Custom domain
+      # is filled in by hand — we don't depend on that here.
       - name: Build Next.js static export
         run: npm run build
         env:
           NODE_ENV: production
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_BASE_PATH: ''
           NEXT_PUBLIC_BUILD_VERSION: ${{ steps.ver.outputs.version }}
 
       - name: Add .nojekyll
