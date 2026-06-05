@@ -6,6 +6,7 @@ import { LocaleToggle } from "@/components/LocaleToggle";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { STATS } from "@/lib/siteStats";
+import { BUILD_VERSION } from "@/lib/version";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -66,6 +67,12 @@ export default function RootLayout({
               <span className="font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
                 UAP
                 <span className="ml-1 italic text-accent">Codex</span>
+              </span>
+              <span
+                className="self-start font-mono text-[10px] font-normal not-italic leading-none text-muted"
+                title="Versión desplegada (número de PR mergeado)"
+              >
+                {BUILD_VERSION}
               </span>
             </Link>
 
