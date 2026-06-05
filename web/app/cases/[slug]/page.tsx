@@ -6,6 +6,7 @@ import { getHypothesis } from "@/lib/hypotheses";
 import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
+import { caseJsonLd } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
@@ -14,7 +15,35 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Caso no encontrado" };
-  return { title: `${c.name} · UAP Codex`, description: c.summary };
+  const path = `/cases/${c.id}`;
+  const description = c.summary_en
+    ? `${c.summary} — ${c.summary_en}`
+    : c.summary;
+  return {
+    title: `${c.name} · UAP Codex`,
+    description,
+    alternates: {
+      canonical: path,
+      languages: {
+        es: path,
+        en: path,
+        "x-default": path,
+      },
+    },
+    openGraph: {
+      type: "article",
+      title: `${c.name} — ${c.year_start}${c.year_end ? `–${c.year_end}` : ""}`,
+      description,
+      url: path,
+      locale: "es_ES",
+      alternateLocale: c.whatHappened_en ? ["en_US"] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${c.name} — UAP Codex`,
+      description: c.summary,
+    },
+  };
 }
 
 /**
@@ -22,13 +51,13 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
  * as a pull-quote. Returns null if no suitable quote (30–240 chars).
  *
  * The corpus uses single quotes (') for technical terms ('Anomalous Aerial
- * Vehicles', 'flying disc') and double quotes (" " or curly "") for actual
+ * Vehicles', 'flying disc') and double quotes (" " or curly “”) for actual
  * citations. We accept both — heuristic only.
  */
 function findPullQuote(text?: string): string | null {
   if (!text) return null;
   const patterns = [
-    /[""]([^""]{30,240})[""]|"([^"]{30,240})"/g,
+    /[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g,
     /''([^']{30,240})''|'([^']{30,240})'/g,
   ];
   const all: string[] = [];
@@ -92,6 +121,13 @@ export default function CaseDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-24 py-4 md:space-y-32">
+      <script
+        type="application/ld+json"
+        // Per-case Schema.org Article+Event+Place graph for rich snippets
+        // (article cards in SERPs) and knowledge-graph entity linking on
+        // the case's geographic location.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseJsonLd(c)) }}
+      />
       <Link
         href="/cases"
         className="inline-block font-mono text-xs uppercase tracking-widest text-muted hover:text-accent"
@@ -141,17 +177,11 @@ export default function CaseDetailPage({
         </div>
 
         <p className="font-display text-2xl leading-snug text-text md:text-3xl">
-          <T
-            es={c.summary}
-            en={c.summary_en ?? c.summary}
-          />
+          <T es={c.summary} en={c.summary_en ?? c.summary} />
         </p>
         {c.summary_en && (
           <p className="font-display text-lg italic leading-snug text-muted md:text-xl">
-            <T
-              es={<>“{c.summary_en}”</>}
-              en={<>“{c.summary}”</>}
-            />
+            <T es={<>“{c.summary_en}”</>} en={<>“{c.summary}”</>} />
           </p>
         )}
 
@@ -252,10 +282,7 @@ export default function CaseDetailPage({
                 </h2>
               </header>
               <p className="font-display text-xl leading-snug text-text md:text-2xl">
-                <T
-                  es={c.whyMatters}
-                  en={c.whyMatters_en ?? c.whyMatters}
-                />
+                <T es={c.whyMatters} en={c.whyMatters_en ?? c.whyMatters} />
               </p>
             </div>
           )}
@@ -323,10 +350,7 @@ export default function CaseDetailPage({
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <span>
-                        <T
-                          es={item}
-                          en={c.evidence_en?.[i] ?? item}
-                        />
+                        <T es={item} en={c.evidence_en?.[i] ?? item} />
                       </span>
                     </li>
                   ))}
@@ -393,9 +417,7 @@ export default function CaseDetailPage({
                   key={p.id}
                   href={`/patterns/${p.letter}`}
                   className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
-                  style={{
-                    borderColor: p.color,
-                  }}
+                  style={{ borderColor: p.color }}
                   title={p.description}
                 >
                   <span className="font-mono">{p.id}</span>
