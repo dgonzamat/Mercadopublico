@@ -106,10 +106,8 @@ export default function ProbabilidadesPage() {
         </Lede>
       </header>
 
-      {/* ─────────── CHART (overview) ─────────── */}
       <IcdProbabilityChart />
 
-      {/* ─────────── 6 PROPOSICIONES PRIMITIVAS (H5 destacada) ─────────── */}
       <div className="space-y-16">
         {PRIMITIVE_HYPOTHESES.map((h, i) => (
           <HypothesisSection
@@ -122,23 +120,16 @@ export default function ProbabilidadesPage() {
         ))}
       </div>
 
-      {/* ─────────── DOS HIPÓTESIS APARTE ─────────── */}
       <section
         id="antecedente-derivada"
         className="scroll-mt-20 space-y-10 border-t-2 border-text pt-12"
       >
         <header className="space-y-3">
           <Eyebrow>
-            <T
-              es="Antes y después del corpus"
-              en="Before and after the corpus"
-            />
+            <T es="Antes y después del corpus" en="Before and after the corpus" />
           </Eyebrow>
           <H2>
-            <T
-              es="Dos hipótesis aparte"
-              en="Two hypotheses set apart"
-            />
+            <T es="Dos hipótesis aparte" en="Two hypotheses set apart" />
           </H2>
           <Body className="text-muted">
             <T
@@ -164,7 +155,6 @@ export default function ProbabilidadesPage() {
         ))}
       </section>
 
-      {/* ─────────── NAV CIERRE (CTAs específicos) ─────────── */}
       <nav className="grid gap-3 border-t-2 border-text pt-6 sm:grid-cols-2 lg:grid-cols-3">
         <Link
           href="/cases/lake-huron-2023"
@@ -174,10 +164,7 @@ export default function ProbabilidadesPage() {
             <T es="El experimento pendiente" en="The pending experiment" />
           </span>
           <span className="font-display text-base font-medium text-bg">
-            <T
-              es="Lake Huron 2023 →"
-              en="Lake Huron 2023 →"
-            />
+            <T es="Lake Huron 2023 →" en="Lake Huron 2023 →" />
           </span>
         </Link>
         <Link
@@ -188,10 +175,7 @@ export default function ProbabilidadesPage() {
             <T es="El método" en="The method" />
           </span>
           <span className="font-display text-base font-medium">
-            <T
-              es="¿Cómo se calibra cada %?"
-              en="How is each % calibrated?"
-            />
+            <T es="¿Cómo se calibra cada %?" en="How is each % calibrated?" />
           </span>
         </Link>
         <Link
@@ -202,15 +186,11 @@ export default function ProbabilidadesPage() {
             <T es="La evidencia" en="The evidence" />
           </span>
           <span className="font-display text-base font-medium">
-            <T
-              es={`Ver los ${STATS.cases} casos →`}
-              en={`See the ${STATS.cases} cases →`}
-            />
+            <T es={`Ver los ${STATS.cases} casos →`} en={`See the ${STATS.cases} cases →`} />
           </span>
         </Link>
       </nav>
 
-      {/* ─────────── NOTA METODOLÓGICA (callout NO/SÍ movido al final) ─────────── */}
       <details className="group border-t-2 border-text pt-6">
         <summary className="cursor-pointer list-none font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
           <T
@@ -220,123 +200,53 @@ export default function ProbabilidadesPage() {
         </summary>
         <div className="mt-6 grid gap-6 rounded-lg border border-border bg-surface-2 p-6 md:grid-cols-2 md:p-8">
           <div className="space-y-3">
-            <Eyebrow>
-              <T es="Lo que NO es" en="What it is NOT" />
-            </Eyebrow>
+            <Eyebrow><T es="Lo que NO es" en="What it is NOT" /></Eyebrow>
             <ul className="space-y-2 text-sm text-text">
               <li>
                 <span className="text-muted">·</span>{" "}
                 <T
-                  es={
-                    <>
-                      <strong>No es inferencia Bayesiana formal.</strong> No
-                      tenemos P(evidencia | hipótesis) calculadas.
-                    </>
-                  }
-                  en={
-                    <>
-                      <strong>It is not formal Bayesian inference.</strong> We
-                      don&apos;t have P(evidence | hypothesis) calculated.
-                    </>
-                  }
+                  es={<><strong>No es inferencia Bayesiana formal.</strong> No tenemos P(evidencia | hipótesis) calculadas.</>}
+                  en={<><strong>It is not formal Bayesian inference.</strong> We don&apos;t have P(evidence | hypothesis) calculated.</>}
                 />
               </li>
               <li>
                 <span className="text-muted">·</span>{" "}
                 <T
-                  es={
-                    <>
-                      <strong>No es &quot;posición del usuario&quot;.</strong>{" "}
-                      No se ajustan priors; son juicios del análisis del
-                      corpus.
-                    </>
-                  }
-                  en={
-                    <>
-                      <strong>It is not &quot;user position&quot;.</strong> No
-                      priors are adjusted; they are judgments from the corpus
-                      analysis.
-                    </>
-                  }
+                  es={<><strong>No es &quot;posición del usuario&quot;.</strong> No se ajustan priors; son juicios del análisis del corpus.</>}
+                  en={<><strong>It is not &quot;user position&quot;.</strong> No priors are adjusted; they are judgments from the corpus analysis.</>}
                 />
               </li>
               <li>
                 <span className="text-muted">·</span>{" "}
                 <T
-                  es={
-                    <>
-                      <strong>No son decimales precisos.</strong> Decir
-                      &quot;48%&quot; implica diferenciación que la evidencia
-                      no soporta. ICD-203 usa palabras por eso.
-                    </>
-                  }
-                  en={
-                    <>
-                      <strong>They are not precise decimals.</strong> Saying
-                      &quot;48%&quot; implies differentiation the evidence
-                      doesn&apos;t support. ICD-203 uses words for this
-                      reason.
-                    </>
-                  }
+                  es={<><strong>No son decimales precisos.</strong> Decir &quot;48%&quot; implica diferenciación que la evidencia no soporta. ICD-203 usa palabras por eso.</>}
+                  en={<><strong>They are not precise decimals.</strong> Saying &quot;48%&quot; implies differentiation the evidence doesn&apos;t support. ICD-203 uses words for this reason.</>}
                 />
               </li>
             </ul>
           </div>
           <div className="space-y-3">
-            <Eyebrow>
-              <T es="Lo que SÍ es" en="What it IS" />
-            </Eyebrow>
+            <Eyebrow><T es="Lo que SÍ es" en="What it IS" /></Eyebrow>
             <ul className="space-y-2 text-sm text-text">
               <li>
                 <span className="text-accent">·</span>{" "}
                 <T
-                  es={
-                    <>
-                      <strong>Juicio analítico estructurado</strong> sobre{" "}
-                      {TOTAL_CASES} casos institucionales (1947–2026).
-                    </>
-                  }
-                  en={
-                    <>
-                      <strong>Structured analytical judgment</strong> over{" "}
-                      {TOTAL_CASES} institutional cases (1947–2026).
-                    </>
-                  }
+                  es={<><strong>Juicio analítico estructurado</strong> sobre {TOTAL_CASES} casos institucionales (1947–2026).</>}
+                  en={<><strong>Structured analytical judgment</strong> over {TOTAL_CASES} institutional cases (1947–2026).</>}
                 />
               </li>
               <li>
                 <span className="text-accent">·</span>{" "}
                 <T
-                  es={
-                    <>
-                      <strong>Calibrado vía ICD-203</strong>, el mismo estándar
-                      que usan analistas IC para reportes a tomadores de
-                      decisión.
-                    </>
-                  }
-                  en={
-                    <>
-                      <strong>Calibrated via ICD-203</strong>, the same
-                      standard IC analysts use for reports to decision-makers.
-                    </>
-                  }
+                  es={<><strong>Calibrado vía ICD-203</strong>, el mismo estándar que usan analistas IC para reportes a tomadores de decisión.</>}
+                  en={<><strong>Calibrated via ICD-203</strong>, the same standard IC analysts use for reports to decision-makers.</>}
                 />
               </li>
               <li>
                 <span className="text-accent">·</span>{" "}
                 <T
-                  es={
-                    <>
-                      <strong>Auditable:</strong> cada hipótesis lista los
-                      casos del corpus que la sostienen.
-                    </>
-                  }
-                  en={
-                    <>
-                      <strong>Auditable:</strong> each hypothesis lists the
-                      corpus cases that sustain it.
-                    </>
-                  }
+                  es={<><strong>Auditable:</strong> cada hipótesis lista los casos del corpus que la sostienen.</>}
+                  en={<><strong>Auditable:</strong> each hypothesis lists the corpus cases that sustain it.</>}
                 />
               </li>
             </ul>
@@ -347,16 +257,6 @@ export default function ProbabilidadesPage() {
   );
 }
 
-/**
- * HypothesisSection — drill detallado por hipótesis.
- *
- * Cambios respecto a la versión anterior:
- * - Acepta index/total para counter "Hipótesis 3 de 8"
- * - Acepta featured para destacar H5 (la frontera analítica)
- * - Elimina caption duplicada del rango ICD-203 (ya visible en chart arriba)
- * - El chart arriba ya muestra label + ICD label + bar + note + counts;
- *   la section profundiza con patrones + casos + CTA o expansion.
- */
 function HypothesisSection({
   hypothesisId,
   index,
@@ -374,15 +274,17 @@ function HypothesisSection({
   const calib = effectiveCalibration(h, cases);
   const effectiveIcd = pctToIcdLabel(calib.pct);
 
-  const supportingCases = cases.filter((c) =>
-    c.patterns.some((p) => PATTERN_TO_HYPOTHESIS[p] === hypothesisId),
+  const supportingCases = cases.filter(
+    (c) =>
+      c.patterns.some((p) => PATTERN_TO_HYPOTHESIS[p] === hypothesisId) ||
+      c.evidenceContribution?.some(
+        (e) => e.hypothesisId === hypothesisId && e.direction === "supports",
+      ),
   );
   const associatedPatterns = patterns.filter(
     (p) => PATTERN_TO_HYPOTHESIS[p.id] === hypothesisId,
   );
 
-  // Header común: counter + title + ICD badge.
-  // Renderado como summary clickeable cuando NOT featured (accordion).
   const headerInner = (
     <div className="flex items-start justify-between gap-4">
       <div className="min-w-0 space-y-2">
@@ -395,10 +297,7 @@ function HypothesisSection({
             <>
               {" · "}
               <span className="text-accent">
-                <T
-                  es="La que más se discute"
-                  en="The one most debated"
-                />
+                <T es="La que más se discute" en="The one most debated" />
               </span>
             </>
           )}
@@ -424,14 +323,11 @@ function HypothesisSection({
         }}
       >
         <T es={effectiveIcd.labelEs} en={effectiveIcd.label} />{" "}
-        <span className="opacity-70">
-          ({calib.pct.toFixed(0)}%)
-        </span>
+        <span className="opacity-70">({calib.pct.toFixed(0)}%)</span>
       </span>
     </div>
   );
 
-  // El detalle profundo (patrones + casos + CTA o expansion).
   const detail = (
     <div className="mt-4 space-y-4">
       {associatedPatterns.length > 0 && (
@@ -474,14 +370,10 @@ function HypothesisSection({
                 href={`/cases/${c.id}`}
                 className="inline-flex min-h-[44px] items-center rounded px-2 py-1 text-xs text-text hover:bg-panel"
               >
-                <span aria-hidden className="mr-2">
-                  {c.flag}
-                </span>
+                <span aria-hidden className="mr-2">{c.flag}</span>
                 <span className="sr-only">{c.country_name}.</span>
                 <span className="truncate">{c.name}</span>
-                <span className="ml-2 shrink-0 font-mono text-muted">
-                  · {c.year_start}
-                </span>
+                <span className="ml-2 shrink-0 font-mono text-muted">· {c.year_start}</span>
               </Link>
             ))}
           </div>
@@ -505,16 +397,11 @@ function HypothesisSection({
           href={`/cases/${supportingCases[0].id}`}
           className="group mt-6 grid grid-cols-[auto_1fr_auto] items-center gap-4 border-2 border-text px-5 py-4 hover:bg-text hover:text-bg"
         >
-          <span
-            aria-hidden
-            className="font-mono text-xs uppercase tracking-widest text-muted group-hover:text-bg/60"
-          >
+          <span aria-hidden className="font-mono text-xs uppercase tracking-widest text-muted group-hover:text-bg/60">
             <T es="Empezar por" en="Start with" />
           </span>
           <span className="min-w-0">
-            <span aria-hidden className="mr-2">
-              {supportingCases[0].flag}
-            </span>
+            <span aria-hidden className="mr-2">{supportingCases[0].flag}</span>
             <span className="sr-only">{supportingCases[0].country_name}.</span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg md:text-xl">
               {supportingCases[0].name}
@@ -523,21 +410,12 @@ function HypothesisSection({
               {supportingCases[0].year_start} · {supportingCases[0].tier}
             </span>
           </span>
-          <span
-            aria-hidden
-            className="font-mono text-base text-accent group-hover:text-accent"
-          >
-            →
-          </span>
+          <span aria-hidden className="font-mono text-base text-accent group-hover:text-accent">→</span>
         </Link>
       )}
     </div>
   );
 
-  // Render condicional:
-  // - featured (H5): full expanded, sin accordion — esta es la hipótesis core
-  // - not featured: <details> accordion cerrado por default. Header visible
-  //   (counter + label + ICD badge); contenido expande al click.
   if (featured) {
     return (
       <section
@@ -564,10 +442,6 @@ function HypothesisSection({
   );
 }
 
-/**
- * Editorial expansion for hypotheses that legitimately have zero
- * pattern + zero supporting case matches.
- */
 function renderNoEvidenceExpansion(id: string, effectivePct: number) {
   switch (id) {
     case "misidentificacion":
@@ -607,39 +481,17 @@ function renderNoEvidenceExpansion(id: string, effectivePct: number) {
               es={
                 <>
                   <strong className="text-text">Cómo se deriva el prior de 28%.</strong>{" "}
-                  Por cota de Fréchet, el paraguas tiene que ser al menos tan
-                  alto como la subclase de mayor prior — con interdimensional
-                  (prior 22%), psicoespiritual (prior 22%) y tratado formal
-                  (prior 6%), más variantes sin vocabulario establecido, el
-                  prior queda en 28% asumiendo solape significativo entre
-                  subclases.{" "}
-                  <strong className="text-text">
-                    El chart muestra {effectivePct.toFixed(0)}%
-                  </strong>{" "}
-                  porque los casos militares con sensor (Tehran, Nimitz) son
-                  evidencia fuerte de <em>algo</em>, pero NO discriminan entre
-                  tecnología clasificada y entidades no humanas — esa
-                  indecidibilidad presiona el prior hacia arriba sin
-                  resolverse en ninguna dirección.
+                  Por cota de Fréchet, el paraguas tiene que ser al menos tan alto como la subclase de mayor prior — con interdimensional (prior 22%), ontológico no materialista (prior 22%) y tratado formal (prior 6%), más variantes sin vocabulario establecido, el prior queda en 28% asumiendo solape significativo entre subclases.{" "}
+                  <strong className="text-text">El chart muestra {effectivePct.toFixed(0)}%</strong>{" "}
+                  porque los casos militares con sensor (Tehran, Nimitz) son evidencia fuerte de <em>algo</em>, pero NO discriminan entre tecnología clasificada y entidades no humanas — esa indecidibilidad presiona el prior hacia arriba sin resolverse en ninguna dirección.
                 </>
               }
               en={
                 <>
                   <strong className="text-text">How the 28% prior is derived.</strong>{" "}
-                  By the Fréchet bound, the umbrella must be at least as high
-                  as the highest-prior subclass — with interdimensional
-                  (prior 22%), psychospiritual (prior 22%) and formal treaty
-                  (prior 6%), plus variants without established vocabulary,
-                  the prior settles at 28% assuming significant overlap
-                  between subclasses.{" "}
-                  <strong className="text-text">
-                    The chart shows {effectivePct.toFixed(0)}%
-                  </strong>{" "}
-                  because military sensor cases (Tehran, Nimitz) are strong
-                  evidence of <em>something</em>, but do NOT discriminate
-                  between classified tech and non-human entities — that
-                  undecidability pushes the prior upward without resolving in
-                  either direction.
+                  By the Fréchet bound, the umbrella must be at least as high as the highest-prior subclass — with interdimensional (prior 22%), non-materialist ontological (prior 22%) and formal treaty (prior 6%), plus variants without established vocabulary, the prior settles at 28% assuming significant overlap between subclasses.{" "}
+                  <strong className="text-text">The chart shows {effectivePct.toFixed(0)}%</strong>{" "}
+                  because military sensor cases (Tehran, Nimitz) are strong evidence of <em>something</em>, but do NOT discriminate between classified tech and non-human entities — that undecidability pushes the prior upward without resolving in either direction.
                 </>
               }
             />
@@ -655,12 +507,12 @@ function renderNoEvidenceExpansion(id: string, effectivePct: number) {
               />
             </Link>
             <Link
-              href="#psicoespiritual"
+              href="#ontologico-no-materialista"
               className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
             >
               <T
-                es="Subclase: psicoespiritual ↓"
-                en="Subclass: psychospiritual ↓"
+                es="Subclase: ontológico no materialista ↓"
+                en="Subclass: non-materialist ontological ↓"
               />
             </Link>
             <Link
@@ -676,7 +528,7 @@ function renderNoEvidenceExpansion(id: string, effectivePct: number) {
         </div>
       );
 
-    case "psicoespiritual":
+    case "ontologico-no-materialista":
       return (
         <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
           <Body>
@@ -755,11 +607,6 @@ function renderNoEvidenceExpansion(id: string, effectivePct: number) {
   }
 }
 
-/**
- * Off-axis hypothesis card — for antecedent (universe pre-filtro) and
- * derived (consecuencia lógica) hypotheses that should NOT share the
- * primitive ICD-203 axis.
- */
 function OffAxisCard({
   h,
   kindLabel,

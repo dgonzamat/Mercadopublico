@@ -48,7 +48,7 @@ export const PATTERN_TO_HYPOTHESIS: Record<string, string> = {
 export const UMBRELLA_SUBCLASSES: Record<string, string[]> = {
   "entidades-no-humanas": [
     "interdimensional",
-    "psicoespiritual",
+    "ontologico-no-materialista",
     "tratado-greys",
   ],
 };
