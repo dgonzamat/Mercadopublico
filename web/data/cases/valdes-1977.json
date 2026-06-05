@@ -19,6 +19,22 @@
     "8a"
   ],
   "category": "incident",
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Cabo Armando Valdés (Carabineros de Chile) desapareció físicamente durante 15 minutos en presencia de seis subordinados durante patrullaje en Putre, observando objeto luminoso. Reapareció en otra posición desorientado con su reloj adelantado a la fecha (1977-04-25 → fecha futura) y barba crecida varios días. Testimonios juramentados de seis testigos militares + investigación formal de Carabineros + radio Chile contemporary documentation = robust testimonial evidence de anomalía temporal/física. Modest porque sin telemetría sensora ni recuperación física — la evidencia es testimonial institucional + anomaly del reloj físico.",
+      "rationaleEn": "Cabo Armando Valdés (Chilean Carabineros) physically disappeared for 15 minutes in the presence of six subordinates during patrol in Putre, observing a luminous object. Reappeared at another position disoriented with his watch advanced to a future date (1977-04-25 → future date) and several days of grown beard. Sworn testimony from six military witnesses + formal Carabineros investigation + contemporary Radio Chile documentation = robust testimonial evidence of temporal/physical anomaly. Modest because no sensor telemetry or physical recovery — evidence is institutional testimony + physical watch anomaly."
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Anomalía temporal documentada (reloj adelantado + crecimiento de barba inconsistent con 15 min observados por testigos) sugiere distorsión espacio-temporal — firma del frame interdimensional (Puthoff, Davis, Vallée). Modest porque la observación del crecimiento de barba podría tener explicación retroactiva (fugue state, malingering), pero la consistencia entre reloj + observación de barba por testigos militares hace la anomalía no trivialmente desestimable.",
+      "rationaleEn": "Documented temporal anomaly (advanced watch + beard growth inconsistent with 15 min observed by witnesses) suggests spacetime distortion — signature of the interdimensional frame (Puthoff, Davis, Vallée). Modest because beard growth observation could have retroactive explanation (fugue state, malingering), but consistency between watch + beard observation by military witnesses makes the anomaly non-trivially dismissible."
+    }
+  ],
   "whatHappened": "El 25 de abril de 1977, una patrulla de seis soldados del Regimiento de Caballería 'Caracoles' del Ejército Chileno conducía ejercicio de campo en los altiplanos del desierto de Atacama (cerca de Putre, Región de Arica). A las 04:15 AM, el Cabo Armando Valdés notó luces moviéndose hacia el campamento. Despertó a sus compañeros; los seis observaron simultáneamente dos objetos lumínicos aproximándose en silencio.\n\nValdés tomó su rifle y se separó del grupo para encarar los objetos. Sus compañeros perdieron contacto visual con él durante aproximadamente 15 minutos. Al reaparecer, Valdés presentaba alteración mental severa, balbuceó frases incoherentes incluyendo la fecha '25 de abril' (cuando para los compañeros era ese mismo día), y se desplomó.\n\nLas anomalías físicas documentadas inmediatamente por sus compañeros: barba crecida equivalente a cinco días de no afeitarse (pese a haberse afeitado el día previo), reloj de pulsera adelantado cinco días (al 30 de abril) pero funcionando correctamente desde ese momento. Los soldados regresaron al regimiento; el Comandante notificó a la Fuerza Aérea y se documentó el caso oficialmente. Valdés recuperó funcionalidad días después pero no recordaba el evento intermedio. El caso es uno de los más citados como evidencia anecdótica de dilatación temporal asociada a eventos UAP. CEFAA (Comité de Estudios de Fenómenos Aéreos Anómalos, FACh) lo mantiene en su corpus oficial.",
   "whyMatters": "Caso militar único con anomalías temporales físicamente verificables en tiempo real por testigos calificados: barba +5 días, reloj +5 días, en lapso reloj testigos de 15 minutos. Independientemente de la interpretación causal, los hechos documentados por seis observadores militares profesionales constituyen una anomalía metodológicamente sólida — alternativas convencionales (fraude colectivo, error de calendario) tienen dificultades para explicar la convergencia barba+reloj.",
   "evidence": [
