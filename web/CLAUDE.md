@@ -143,8 +143,8 @@ Si un caso no tiene rich content, la página de detalle muestra fallback "⏳ Ca
 
 - Workflow `.github/workflows/deploy-pages.yml` corre en push a `main`
 - Dual deploy: peaceiris (gh-pages branch) + actions/deploy-pages (artifact) — belt-and-suspenders por ambigüedad histórica del Pages source config
-- URL pública: https://dgonzamat.github.io/uap-atlas/
-- `basePath` en `next.config.mjs`: `/uap-atlas` (lowercase, kebab-case)
+- URL pública: https://dgonzamat.github.io/Mercadopublico/
+- `basePath` en CI: `${{ steps.pages.outputs.base_path }}` (auto-calculado por GitHub Pages desde el nombre del repo). Fallback local en `next.config.mjs`: `/Mercadopublico`. Histórico: el fallback decía `/uap-atlas` (nombre conceptual del proyecto) hasta ser corregido al nombre real del repo.
 
 ### Branch protocol
 
