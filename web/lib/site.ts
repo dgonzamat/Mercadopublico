@@ -6,5 +6,5 @@
  * Trailing slash is stripped so callers can do `${SITE_URL}/path`.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://uapcodex.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://uapcodex.org"
 ).replace(/\/$/, "");
