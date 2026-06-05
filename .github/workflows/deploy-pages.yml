@@ -25,6 +25,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # need full history so the version step can
+                            # walk back to the last merge commit
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -40,10 +43,20 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
+      # Compute build version. Walks the git history (not just HEAD) for
+      # the most recent commit subject that matches either GitHub merge
+      # pattern — "title (#NN)" from squash-merge or "Merge pull request
+      # #NN" from regular merge. This way a direct push to main (e.g. a
+      # docs tweak with no PR) still shows the last release number
+      # instead of falling back to a raw SHA.
       - name: Compute build version
         id: ver
         run: |
-          PR=$(git log -1 --pretty=%s | grep -oE '#[0-9]+' | head -1 | tr -d '#')
+          PR=$(git log --pretty=%s \
+               | grep -oE '(\(#[0-9]+\)$|^Merge pull request #[0-9]+)' \
+               | head -1 \
+               | grep -oE '[0-9]+' \
+               | head -1)
           if [ -n "$PR" ]; then
             echo "version=v$PR" >> "$GITHUB_OUTPUT"
           else
