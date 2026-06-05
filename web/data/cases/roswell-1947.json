@@ -20,6 +20,22 @@
     "8f"
   ],
   "category": "incident",
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Caso es ejemplo histórico canónico de cover-up institucional: comunicado oficial Roswell AAF del 8 julio 1947 anunció recovery de 'flying disc' → retractación 24h después atribuyendo a balloon → décadas de explanations cambiantes (weather balloon → Project Mogul 1994 → Project Mogul + crash test dummies 1997). Patrón cover-up con shifting story is sí mismo evidence de que algo no convencional fue recuperado y mantenido clasificado. Modest porque el contenido específico de lo recuperado no está confirmado en evidencia primaria — solo el patrón institucional de manejo.",
+      "rationaleEn": "Case is canonical historical example of institutional cover-up: official Roswell AAF press release July 8, 1947 announced recovery of 'flying disc' → retraction 24h later attributing to balloon → decades of shifting explanations (weather balloon → Project Mogul 1994 → Project Mogul + crash test dummies 1997). Cover-up pattern with shifting story is itself evidence that something unconventional was recovered and kept classified. Modest because the specific content of what was recovered is not confirmed in primary evidence — only the institutional handling pattern."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Testimonios secondhand sobre recovery de cuerpos no humanos circularon décadas después (Glenn Dennis, Jesse Marcel Jr., Walter Haut testamento sellado) pero NO hay evidencia primaria verificable (no documento, no materia, no fotografía autenticada). Inferencia desde testimonial weight de testigos institucionales secundarios es leve. Minimal, no modest.",
+      "rationaleEn": "Secondhand testimony about non-human body recovery circulated decades later (Glenn Dennis, Jesse Marcel Jr., Walter Haut sealed affidavit) but there is no verifiable primary evidence (no document, no material, no authenticated photo). Inference from testimonial weight of secondary institutional witnesses is weak. Minimal, not modest."
+    }
+  ],
   "whatHappened": "Entre el 4 y 8 de julio de 1947, el ranchero William 'Mac' Brazel descubrió restos no identificados en su rancho cerca de Corona, Nuevo México. Notificó al sheriff de Roswell, quien contactó al Roswell Army Air Field (RAAF), base del 509th Bombardment Group — la única unidad nuclear operacional del mundo en ese momento. El Major Jesse Marcel (oficial de inteligencia) y el Capitán Sheridan Cavitt recuperaron material.\n\nEl 8 de julio de 1947, el Coronel William Blanchard autorizó al Tte. Walter Haut emitir el primer comunicado de prensa oficial: el RAAF había recuperado 'a flying disc'. Horas más tarde, el General Roger Ramey del 8th Air Force en Fort Worth retractó el comunicado afirmando que el material era de un globo meteorológico. El comunicado original y la retractación son ambos parte del registro periodístico contemporáneo (Roswell Daily Record).\n\nEn 1994, la USAF publicó el reporte 'Roswell Report: Fact vs. Fiction' atribuyendo los restos al Project Mogul (red de globos de gran altitud para detectar ensayos nucleares soviéticos). En 1997 publicó 'Case Closed' explicando reportes de cuerpos como confusión con maniquíes de paracaídas. Ambas explicaciones son disputadas por participantes contemporáneos, incluyendo Marcel, su hijo y testigos secundarios.",
   "whatHappened_en": "Between July 4 and 8, 1947, rancher William 'Mac' Brazel discovered unidentified debris on his ranch near Corona, New Mexico. He notified the Roswell sheriff, who contacted Roswell Army Air Field (RAAF), home of the 509th Bombardment Group — the only operational nuclear unit in the world at the time. Major Jesse Marcel (intelligence officer) and Captain Sheridan Cavitt recovered the material.\n\nOn July 8, 1947, Colonel William Blanchard authorized Lt. Walter Haut to issue the first official press release: RAAF had recovered 'a flying disc'. Hours later, General Roger Ramey of the 8th Air Force in Fort Worth retracted the statement, claiming the material was from a weather balloon. Both the original release and the retraction are part of the contemporary journalistic record (Roswell Daily Record).\n\nIn 1994, the USAF published the report 'Roswell Report: Fact vs. Fiction', attributing the debris to Project Mogul (a network of high-altitude balloons designed to detect Soviet nuclear tests). In 1997 it released 'Case Closed', explaining reports of bodies as confusion with parachute test dummies. Both explanations are disputed by contemporary participants, including Marcel, his son, and secondary witnesses.",
   "whyMatters": "Caso fundacional del fenómeno UAP moderno: combina el único comunicado oficial militar afirmando recuperación de un 'flying disc' con una retractación administrativa inmediata. Independientemente de la naturaleza real del material, establece el patrón institucional de release+walk-back que se repetiría a lo largo de ocho décadas. El Project Mogul oficial sigue siendo la explicación administrativa estadounidense, aunque las dos investigaciones USAF (1994, 1997) presentan inconsistencias internas señaladas por el GAO.",
@@ -57,7 +73,7 @@
   "sources_en": [
     {
       "name": "USAF Roswell Report: Fact vs. Fiction (1994)",
-      "url": "https://media.defense.gov/2010/Oct/27/2001329751/-1/-1/0/AFD-101027-029.pdf"
+      "url": "https://media.defense.gov/2010/Oct/27/2001329751/-1/-1/0/AFD-101027-030.pdf"
     },
     {
       "name": "USAF Roswell Report: Case Closed (1997)",
