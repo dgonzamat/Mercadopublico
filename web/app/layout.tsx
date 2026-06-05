@@ -7,6 +7,8 @@ import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { STATS } from "@/lib/siteStats";
 import { BUILD_VERSION } from "@/lib/version";
+import { SITE_URL } from "@/lib/site";
+import { websiteJsonLd } from "@/lib/jsonld";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -22,14 +24,41 @@ const inter = Inter({
   display: "swap",
 });
 
+const TITLE = "UAP Codex — Institutional analysis";
+const DESCRIPTION = `${STATS.years} years of UAP phenomenon documented institutionally. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} frameworks compared.`;
+const SHORT_DESCRIPTION = `${STATS.years} years of UAP phenomenon, ${STATS.cases} cases, ${STATS.patterns} patterns.`;
+
 export const metadata: Metadata = {
-  title: "UAP Codex — Institutional analysis",
-  description: `${STATS.years} years of UAP phenomenon documented institutionally. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} frameworks compared.`,
-  openGraph: {
-    title: "UAP Codex — Institutional analysis",
-    description: `${STATS.years} years of UAP phenomenon, ${STATS.cases} cases, ${STATS.patterns} patterns.`,
-    type: "website",
+  metadataBase: new URL(SITE_URL),
+  title: { default: TITLE, template: "%s · UAP Codex" },
+  description: DESCRIPTION,
+  applicationName: "UAP Codex",
+  authors: [{ name: "UAP Codex" }],
+  alternates: {
+    canonical: "/",
+    languages: {
+      // Same URL serves ES + EN via in-page toggle; alternates inform
+      // search engines that the content exists in both languages.
+      es: "/",
+      en: "/",
+      "x-default": "/",
+    },
   },
+  openGraph: {
+    type: "website",
+    siteName: "UAP Codex",
+    title: TITLE,
+    description: SHORT_DESCRIPTION,
+    url: "/",
+    locale: "es_ES",
+    alternateLocale: ["en_US"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: SHORT_DESCRIPTION,
+  },
+  robots: { index: true, follow: true },
 };
 
 const SECONDARY_NAV: Array<{ href: string; es: string; en: string }> = [
@@ -46,6 +75,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${fraunces.variable} ${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          // Schema.org WebSite node — enables Google sitelinks search box
+          // and helps LLM crawlers identify the corpus as a structured
+          // research site, not just a blog.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+        />
+      </head>
       <body className="min-h-screen font-sans">
         <AnchorExpander />
         <header className="sticky top-0 z-50 border-b-4 border-text bg-bg">
@@ -145,11 +183,7 @@ export default function RootLayout({
                   Atlas
                 </p>
                 <ul className="space-y-1">
-                  <FooterLink
-                    href="/cases"
-                    es="Casos"
-                    en="Cases"
-                  />
+                  <FooterLink href="/cases" es="Casos" en="Cases" />
                   <FooterLink
                     href="/probabilidades"
                     es="Probabilidades"
@@ -169,11 +203,7 @@ export default function RootLayout({
                   <T es="Más" en="More" />
                 </p>
                 <ul className="space-y-1">
-                  <FooterLink
-                    href="/patterns"
-                    es="Patrones"
-                    en="Patterns"
-                  />
+                  <FooterLink href="/patterns" es="Patrones" en="Patterns" />
                   <FooterLink
                     href="/researchers"
                     es="Ecosistema"
@@ -184,11 +214,7 @@ export default function RootLayout({
                     es="Frameworks"
                     en="Frameworks"
                   />
-                  <FooterLink
-                    href="/about"
-                    es="Metodología"
-                    en="Method"
-                  />
+                  <FooterLink href="/about" es="Metodología" en="Method" />
                   <FooterLink
                     href="/fuentes"
                     es="Fuentes (bibliografía)"
