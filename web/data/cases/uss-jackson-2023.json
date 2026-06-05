@@ -1,0 +1,80 @@
+{
+  "id": "uss-jackson-2023",
+  "num": 79,
+  "name": "USS Jackson — Incidente Transmedium (Wiggins, 2023)",
+  "name_en": "USS Jackson — Transmedium Incident (Wiggins, 2023)",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 33.0,
+    "lng": -119.5,
+    "place": "Área W-291, Océano Pacífico, costa sur de California"
+  },
+  "tier": "S",
+  "probability": 82,
+  "summary": "Senior Chief de la Marina en servicio activo observa 4 objetos Tic Tac — uno emergiendo del océano — con confirmación en radar y EO/IR. Primer testimonio ante el Congreso de un oficial activo de la Armada. Comportamiento transmedium (océano-aire), partida sincronizada sin huella térmica ni sónica.",
+  "summary_en": "Active-duty Navy Senior Chief observes 4 Tic Tac objects — one emerging from the ocean — confirmed on radar and EO/IR. First ever active-duty U.S. Navy congressional testimony. Transmedium behavior (ocean-to-air), synchronized departure with no thermal or sonic signature.",
+  "patterns": ["8h", "8e"],
+  "category": "incident",
+  "whatHappened": "El 15 de febrero de 2023, aproximadamente a las 19:15 PST, el Senior Chief de Operaciones Alexandro Wiggins — especialista en radar con 23 años de servicio en la Armada — se encontraba de guardia en el Centro de Información de Combate (CIC) del USS Jackson, patrullando el Área de Aviso W-291 frente a la costa sur de California, la misma región oceánica del incidente Nimitz de 2004. Wiggins detectó retornos de radar irregulares y observó una luz en el horizonte emergiendo de la superficie del océano y ascendiendo hacia la atmósfera. El objeto tenía morfología Tic Tac auto-luminosa — cilíndrica, sin alas ni superficies de control visibles.\n\nEn el transcurso de minutos, el objeto inicial se unió a tres más de idéntica morfología, formando una cuadripartición de cuatro entidades. El sistema EO/IR multi-espectral Star SAFIRE del USS Jackson capturó imágenes de los objetos con marca temporal y de posición visible en los fotogramas. Todos los objetos abandonaron la zona de forma sincronizada, en lo que Wiggins describió como 'partida simultánea e instantánea', sin dejar huella térmica, sin rastro de propulsión convencional y sin producir boom sónico. La duración total del evento fue de varios minutos.\n\nEl USS Jackson no elevó un reporte formal de incidente: según Wiggins, los objetos mantuvieron distancia segura y no mostraron señales claras de agresión, condiciones que bajo la normativa vigente de la Marina no activan el protocolo de reporte automático. El caso llegó al conocimiento público el 9 de septiembre de 2025, cuando Wiggins testificó voluntariamente ante el Task Force on the Declassification of Federal Secrets de la Cámara de Representantes — convirtiéndose en el primer oficial en servicio activo de la Marina de los Estados Unidos en declarar públicamente ante el Congreso sobre un incidente UAP.",
+  "whatHappened_en": "On February 15, 2023, at approximately 19:15 PST, Senior Chief Operations Specialist Alexandro Wiggins — a radar specialist with 23 years of Navy service — was on watch in the Combat Information Center (CIC) of the USS Jackson, patrolling Warning Area W-291 off the Southern California coast, the same oceanic region as the 2004 Nimitz incident. Wiggins detected irregular radar returns and observed a light on the horizon emerging from the ocean surface and ascending into the atmosphere. The object had a self-luminous Tic Tac morphology — cylindrical, with no visible wings or control surfaces.\n\nWithin minutes, the initial object linked up with three others of identical morphology, forming a four-object formation. The USS Jackson's Star SAFIRE multi-spectral EO/IR system captured imagery of the objects with timestamp and position data visible in published frames. All four objects departed the area in what Wiggins described as a 'simultaneous, near-instantaneous departure,' leaving no thermal signature, no conventional propulsion trail, and no sonic boom. The total duration of the event was several minutes.\n\nThe USS Jackson did not file a formal incident report: according to Wiggins, the objects maintained a safe distance and showed no clear signs of aggression, conditions that under current Navy regulations do not trigger automatic threat-reporting protocols. The case entered the public record on September 9, 2025, when Wiggins voluntarily testified before the House Task Force on the Declassification of Federal Secrets — becoming the first active-duty U.S. Navy member ever to testify publicly before Congress about a UAP incident.",
+  "whyMatters": "El USS Jackson combina tres elementos raramente presentes juntos: comportamiento transmedium documentado (emergencia oceánica verificada en radar), confirmación multi-sensor independiente (radar + EO/IR con marca temporal) y testimonio en servicio activo ante el Congreso — un primer institucional sin precedente en 80 años de investigación UAP formal. La proximidad geográfica y morfológica al incidente Nimitz 2004 (misma área oceánica, misma morfología Tic Tac, mismo tipo de plataforma naval) establece correlación de patrón con décadas de separación. La ausencia de reporte formal inicial ilustra la fricción estructural entre el comportamiento observado y los protocolos de reporte vigentes — evidencia de un sistema diseñado para filtrar, no para detectar.",
+  "whyMatters_en": "The USS Jackson combines three rarely co-present elements: documented transmedium behavior (ocean emergence verified on radar), independent multi-sensor confirmation (radar + timestamped EO/IR), and active-duty congressional testimony — an institutional first without precedent in 80 years of formal UAP investigation. The geographic and morphological proximity to the 2004 Nimitz incident (same oceanic region, same Tic Tac morphology, same naval platform type) establishes pattern correlation across decades. The absence of an initial formal report illustrates the structural friction between observed behavior and existing reporting protocols — evidence of a system designed to filter, not detect.",
+  "evidence": [
+    "Retornos de radar documentados en el CIC del USS Jackson, 15 feb 2023 ~19:15 PST, Área W-291",
+    "Imágenes captadas por sistema Star SAFIRE multi-espectral EO/IR con marca temporal y posicional visibles",
+    "Comportamiento transmedium confirmado: emergencia oceánica del primer objeto + formación cuadripartita posterior",
+    "Testimonio escrito (written statement) de Wiggins presentado formalmente ante el Congreso (House Oversight, 9 sep 2025)",
+    "Primera declaración pública ante el Congreso de un oficial en servicio activo de la Marina de EE. UU. sobre incidente UAP"
+  ],
+  "evidence_en": [
+    "Radar returns documented in USS Jackson's CIC, Feb 15, 2023 ~19:15 PST, Warning Area W-291",
+    "Imagery captured by Star SAFIRE multi-spectral EO/IR system with visible timestamp and position data",
+    "Transmedium behavior confirmed: ocean emergence of first object + subsequent four-object formation",
+    "Written statement formally submitted to Congress by Wiggins (House Oversight, Sep 9, 2025)",
+    "First public congressional testimony by an active-duty U.S. Navy member about a UAP incident"
+  ],
+  "sources": [
+    {
+      "name": "Wiggins, A.C. — Written Statement, House Oversight Task Force on Declassification, 9 sep 2025",
+      "url": "https://oversight.house.gov/wp-content/uploads/2025/09/Wiggins-Written-Statement.pdf"
+    },
+    {
+      "name": "House Oversight Committee — Hearing: 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection', 9 sep 2025",
+      "url": "https://oversight.house.gov/hearing/restoring-public-trust-through-uap-transparency-and-whistleblower-protection/"
+    },
+    {
+      "name": "DefenseScoop — 'Military whistleblowers share new evidence of alleged UAP at transparency hearing' (9 sep 2025)",
+      "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/"
+    },
+    {
+      "name": "NewsNation — 'UAP sighting off California coast similar to Tic Tac incident' (sep 2025)",
+      "url": "https://www.newsnationnow.com/space/ufo/uap-sighting-off-california-coast-tic-tac-incident/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Comportamiento transmedium (emergencia desde el océano + ascenso atmosférico), cuadripartición sincronizada con partida simultánea e instantánea, y ausencia total de huella térmica o sónica están fuera del envelope conocido para cualquier aeronave o fenómeno biológico. El patrón morfológico Tic Tac replica el de Nimitz 2004 (confirmado multi-sensor en la misma área oceánica 19 años después), lo que establece correlación de patrón a largo plazo difícil de reconciliar con fenómenos naturales o clasificados conocidos. Modest porque el comportamiento es incompatible con explanations convencionales pero no hay recuperación de material ni revelación de ontología.",
+      "rationaleEn": "Transmedium behavior (ocean emergence + atmospheric ascent), synchronized four-object formation with simultaneous near-instantaneous departure, and complete absence of thermal or sonic signature are outside the known performance envelope of any aircraft or biological phenomenon. The Tic Tac morphological pattern replicates Nimitz 2004 (confirmed multi-sensor in the same oceanic area 19 years later), establishing long-range pattern correlation difficult to reconcile with known natural or classified phenomena. Modest because the behavior is incompatible with conventional explanations but there is no material recovery or ontological revelation."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "La formación cuadripartita sincronizada con partida simultánea y la emergencia transmedium desde el océano no tienen análogo en el catálogo de fenómenos naturales raros (plasma atmosférico, ball lightning) que típicamente son solitarios, impredecibles y no muestran comportamiento coordinado multi-entidad. Minimal porque no es un caso que resuelva definitivamente la hipótesis de fenómenos naturales.",
+      "rationaleEn": "The synchronized four-object formation with simultaneous departure and transmedium ocean emergence have no analog in the catalog of rare natural phenomena (atmospheric plasma, ball lightning), which are typically solitary, unpredictable, and do not exhibit multi-entity coordinated behavior. Minimal because this case does not definitively resolve the natural phenomena hypothesis."
+    },
+    {
+      "hypothesisId": "interdimensional",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El comportamiento transmedium — transición fluida entre el dominio oceánico y el atmosférico sin cambio visible de morfología ni propulsión — es consistente con el marco interdimensional de Puthoff/Davis que postula entidades capaces de atravesar barreras de estado físico. Minimal porque la consistencia con el marco no equivale a confirmación.",
+      "rationaleEn": "The transmedium behavior — fluid transition between the oceanic and atmospheric domains with no visible morphological change or propulsion — is consistent with the Puthoff/Davis interdimensional framework postulating entities capable of traversing physical-state barriers. Minimal because consistency with the framework does not equal confirmation."
+    }
+  ]
+}
