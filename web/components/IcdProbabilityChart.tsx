@@ -16,7 +16,7 @@ import { Eyebrow, H2, Caption } from "@/lib/typography";
  */
 function noEvidenceCopy(id: string): { es: string; en: string } {
   switch (id) {
-    case "psicoespiritual":
+    case "ontologico-no-materialista":
       return {
         es: "Sin patrones aislables en el corpus — su evidencia es testimonial, no estructural",
         en: "No isolable patterns in the corpus — its evidence is testimonial, not structural",
