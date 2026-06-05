@@ -19,6 +19,22 @@
     "8m"
   ],
   "category": "document",
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Memo formal del Teniente General Twining (Comandante Air Materiel Command, USAF) al Brigadier General Schulgen (Jefe Inteligencia del Aire), 23 sep 1947, conclusión textual: 'The phenomenon reported is something real and not visionary or fictitious.' Excluye explícitamente ilusiones perceptuales o fenómenos atmosféricos como explicación. Enumera características kinemáticas (forma de disco, performance evasivo, velocidades subsónicas a supersónicas, ascensos verticales) que no corresponden a meteorología conocida 1947. Autoridad institucional máxima (cuatro estrellas) + clasificación SECRET original + autenticidad ratificada por desclasificación USAF 1969 = substantial weakens.",
+      "rationaleEn": "Formal memo from Lieutenant General Twining (Commander Air Materiel Command, USAF) to Brigadier General Schulgen (Chief Air Intelligence), Sep 23 1947, textual conclusion: 'The phenomenon reported is something real and not visionary or fictitious.' Explicitly excludes perceptual illusions or atmospheric phenomena as explanation. Lists kinematic characteristics (disc shape, evasive performance, subsonic to supersonic speeds, vertical ascents) that did not correspond to known 1947 meteorology. Maximum institutional authority (four stars) + original SECRET classification + authenticity ratified by USAF 1969 declassification = substantial weakens."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Memo recomienda formalmente crear Project Sign — implementado tres meses después, antecesor directo de Blue Book. Establece patrón institucional acknowledgment → estudio → eventual cierre administrativo. La recomendación de programa formal de investigación es consistente con el patrón de cover-up posterior. Modest, no substantial — Twining NO afirma que era programa terrestre; la inferencia es desde el patrón institucional posterior, no desde el contenido del memo.",
+      "rationaleEn": "Memo formally recommends creating Project Sign — implemented three months later, direct predecessor of Blue Book. Establishes institutional pattern of acknowledgment → study → eventual administrative closure. The recommendation of a formal research program is consistent with the subsequent cover-up pattern. Modest, not substantial — Twining does NOT claim it was a terrestrial program; the inference is from the subsequent institutional pattern, not from the memo's content."
+    }
+  ],
   "whatHappened": "El 23 de septiembre de 1947, el Teniente General Nathan F. Twining, entonces Comandante del Air Materiel Command (Wright Field), envió un memorándum clasificado SECRET al Brigadier General George Schulgen, Jefe de Aviación de la División de Inteligencia del Estado Mayor del Aire. El documento responde formalmente a la consulta de Schulgen sobre la naturaleza de los 'flying discs' reportados masivamente durante el verano de 1947.\n\nTwining concluyó textualmente: 'It is the opinion that: (a) The phenomenon reported is something real and not visionary or fictitious.' El memorándum enumera las características reportadas del fenómeno (forma de disco, performance evasivo, velocidad subsónica a supersónica, ascensos verticales) y recomienda la creación de un proyecto formal de investigación. Esta recomendación cristalizó en Project Sign (diciembre 1947), antecesor directo de Project Grudge y Project Blue Book.\n\nEl memo Twining fue desclasificado en 1969 y ratificado como auténtico por la USAF en el contexto del cierre administrativo de Blue Book ese mismo año.",
   "whyMatters": "Es la primera afirmación institucional documentada por un comandante de cuatro estrellas de la USAF de que el fenómeno UFO/UAP es 'algo real, no visionario o ficticio'. Establece el piso histórico para todo el debate institucional posterior: ninguna postura oficial posterior puede honestamente decir que el fenómeno fue descartado desde el inicio — el primer juicio profesional sobre la evidencia fue precisamente lo opuesto.",
   "evidence": [
