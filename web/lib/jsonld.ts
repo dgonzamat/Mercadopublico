@@ -23,6 +23,7 @@ export function websiteJsonLd() {
     inLanguage: ["es", "en"],
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE_URL}/#org`,
       name: "UAP Codex",
       url: SITE_URL,
     },
@@ -31,6 +32,17 @@ export function websiteJsonLd() {
 
 export function caseJsonLd(c: UAPCase) {
   const url = `${SITE_URL}/cases/${c.id}`;
+  // Article needs a year-anchored date. We don't track a real publish date
+  // per case, so we anchor on year_start (the historical year of the case)
+  // and treat the current build time as dateModified. Google accepts that
+  // and warnings on missing datePublished/dateModified go away.
+  const datePublished = `${c.year_start}-01-01`;
+  const dateModified = new Date().toISOString().slice(0, 10);
+  // Use the case's primary document image when available; otherwise the
+  // site-wide OG default. Either satisfies Google's "image" requirement.
+  const image = c.primaryDocument?.url
+    ? [c.primaryDocument.url]
+    : [`${SITE_URL}/og-default.png`];
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -42,6 +54,16 @@ export function caseJsonLd(c: UAPCase) {
         articleSection: "UAP institutional cases",
         inLanguage: c.whatHappened_en ? ["es", "en"] : ["es"],
         url,
+        datePublished,
+        dateModified,
+        image,
+        author: {
+          "@type": "Organization",
+          "@id": `${SITE_URL}/#org`,
+          name: "UAP Codex",
+          url: SITE_URL,
+        },
+        publisher: { "@id": `${SITE_URL}/#org` },
         isPartOf: { "@id": `${SITE_URL}/#website` },
         about: {
           "@type": "Event",
