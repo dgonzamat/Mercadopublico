@@ -1,0 +1,88 @@
+name: Daily Audit
+
+# Auditoría diaria independiente del flujo de PRs. Corre todos los días
+# `npm run audit` sobre el corpus actual de `main`. Si encuentra ERRORS
+# (drift numérico, frases prohibidas, evidenceContribution rota, JSON
+# inválido), abre un GitHub issue con el reporte completo.
+#
+# Por qué existe: la auditoría que ya corre en deploy (deploy-pages.yml)
+# y en PRs (ci.yml) solo se dispara cuando alguien empuja código. Esta
+# corrida diaria detecta drift que entró por commits manuales o renames
+# a medias, sin depender de que haya actividad ese día.
+
+on:
+  schedule:
+    - cron: '0 7 * * *'    # diario, 07:00 UTC
+  workflow_dispatch:       # también disparable a mano desde la UI
+
+permissions:
+  contents: read
+  issues: write            # para abrir el issue cuando falla
+
+concurrency:
+  group: "daily-audit"
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      # Captura todo el output a un archivo y al log a la vez. `audit`
+      # falla con exit 1 si hay ERRORS; usamos `|| true` para no abortar
+      # el job y poder abrir el issue con el reporte abajo.
+      - name: Run consistency audit
+        id: audit
+        run: |
+          set +e
+          npm run audit 2>&1 | tee /tmp/audit.log
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      # Si la auditoría falla, abre (o reusa) un issue con el reporte.
+      # Se usa el script de GitHub Actions oficial para no agregar deps.
+      - name: Open issue on drift
+        if: steps.audit.outputs.exit_code != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/audit.log', 'utf8');
+            const today = new Date().toISOString().slice(0, 10);
+            const title = `audit: drift detectado (${today})`;
+            const body = [
+              'La auditoría diaria encontró inconsistencias en `main`.',
+              '',
+              '<details><summary>Reporte completo</summary>',
+              '',
+              '```',
+              report.slice(-6000),  // últimas ~6KB del reporte
+              '```',
+              '',
+              '</details>',
+              '',
+              `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['audit', 'automated'],
+            });
+
+      - name: Fail the job if drift
+        if: steps.audit.outputs.exit_code != '0'
+        run: exit 1
