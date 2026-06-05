@@ -449,14 +449,14 @@ function renderNoEvidenceExpansion(id: string, effectivePct: number) {
         <div className="space-y-4 border-l-2 border-text/15 pl-5 pt-2">
           <Body>
             <T
-              es={`Esta probabilidad NO se calcula sobre los ${STATS.cases} casos del corpus — esos ya sobrevivieron filtros institucionales (militar, congresional, periodístico). Aplica al universo previo: el conjunto general de reportes UAP enviados a Project Blue Book, AARO, y agencias similares, donde aproximadamente el 95% se resuelven como globos meteorológicos, satélites, aves, lens flares, pareidolia.`}
-              en={`This probability is NOT computed over the ${STATS.cases} corpus cases — those already survived institutional filters (military, congressional, journalistic). It applies to the prior universe: the general set of UAP reports sent to Project Blue Book, AARO, and similar agencies, where approximately 95% resolve as weather balloons, satellites, birds, lens flares, pareidolia.`}
+              es={`Esta probabilidad NO se calcula sobre los ${STATS.cases} casos del corpus — esos ya sobrevivieron filtros institucionales (militar, congresional, periodístico). Aplica al universo previo: el conjunto general de reportes UAP enviados a Project Blue Book, AARO, y agencias similares, donde aproximadamente el 97% se resuelven como globos meteorológicos, satélites, aves, lens flares, pareidolia.`}
+              en={`This probability is NOT computed over the ${STATS.cases} corpus cases — those already survived institutional filters (military, congressional, journalistic). It applies to the prior universe: the general set of UAP reports sent to Project Blue Book, AARO, and similar agencies, where approximately 97% resolve as weather balloons, satellites, birds, lens flares, pareidolia.`}
             />
           </Body>
           <Body className="text-muted">
             <T
-              es="La utilidad del corpus es justamente filtrar este 95%. Reconocer que la mayoría son misidentificaciones es lo que vuelve interesantes a los casos que no lo son."
-              en="The corpus's value is precisely filtering out this 95%. Acknowledging that most are misidentifications is what makes the remaining cases interesting."
+              es="La utilidad del corpus es justamente filtrar este 97%. Reconocer que la mayoría son misidentificaciones es lo que vuelve interesantes a los casos que no lo son."
+              en="The corpus's value is precisely filtering out this 97%. Acknowledging that most are misidentifications is what makes the remaining cases interesting."
             />
           </Body>
           <div className="flex flex-wrap gap-3 pt-2">

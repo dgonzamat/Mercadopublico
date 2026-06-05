@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/build-cases.mjs && next dev",
-    "prebuild": "node scripts/build-cases.mjs",
+    "dev": "node scripts/build-cases.mjs && node scripts/audit-consistency.mjs --warn && next dev",
+    "prebuild": "node scripts/build-cases.mjs && node scripts/audit-consistency.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "audit": "node scripts/audit-consistency.mjs"
   },
   "dependencies": {
     "clsx": "2.1.1",
