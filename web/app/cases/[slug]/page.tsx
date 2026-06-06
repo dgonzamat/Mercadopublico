@@ -564,14 +564,21 @@ export default function CaseDetailPage({
           </Eyebrow>
           <div className="grid gap-px bg-text sm:grid-cols-2">
             {similar.map((s) => {
-              const reason = [
-                s.sameCountry ? "mismo país" : null,
-                s.sharedPatterns.length > 0
-                  ? `${s.sharedPatterns.length} ${s.sharedPatterns.length === 1 ? "patrón" : "patrones"}`
-                  : null,
-              ]
-                .filter(Boolean)
-                .join(" · ");
+              const reasonFor = (lang: "es" | "en") =>
+                [
+                  s.sameCountry
+                    ? lang === "es"
+                      ? "mismo país"
+                      : "same country"
+                    : null,
+                  s.sharedPatterns.length > 0
+                    ? lang === "es"
+                      ? `${s.sharedPatterns.length} ${s.sharedPatterns.length === 1 ? "patrón" : "patrones"}`
+                      : `${s.sharedPatterns.length} ${s.sharedPatterns.length === 1 ? "pattern" : "patterns"}`
+                    : null,
+                ]
+                  .filter(Boolean)
+                  .join(" · ");
               return (
                 <Link
                   key={s.caseData.id}
@@ -579,7 +586,7 @@ export default function CaseDetailPage({
                   className="group flex flex-col gap-2 bg-bg p-5 hover:bg-text hover:text-bg"
                 >
                   <p className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-                    {reason}
+                    <T es={reasonFor("es")} en={reasonFor("en")} />
                   </p>
                   <p className="font-display text-xl font-medium leading-tight text-text group-hover:text-bg">
                     <span aria-hidden className="mr-2">

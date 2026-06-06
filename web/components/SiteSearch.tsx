@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Fuse from "fuse.js";
+import { T } from "@/components/T";
 
 /**
  * Client-side search component.
@@ -55,20 +56,20 @@ function hrefFor(e: IndexEntry): string {
   }
 }
 
-function badgeLabelFor(type: IndexEntry["type"]): string {
+function badgeLabelFor(type: IndexEntry["type"]): { es: string; en: string } {
   switch (type) {
     case "researcher":
-      return "PERSONA";
+      return { es: "PERSONA", en: "PERSON" };
     case "post":
-      return "BLOG";
+      return { es: "BLOG", en: "BLOG" };
     case "pattern":
-      return "PATRÓN";
+      return { es: "PATRÓN", en: "PATTERN" };
     case "framework":
-      return "MARCO";
+      return { es: "MARCO", en: "FRAMEWORK" };
     case "page":
-      return "PÁGINA";
+      return { es: "PÁGINA", en: "PAGE" };
     default:
-      return "CASO";
+      return { es: "CASO", en: "CASE" };
   }
 }
 
@@ -81,6 +82,18 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   const [index, setIndex] = useState<IndexEntry[] | null>(null);
   const [fuse, setFuse] = useState<Fuse<IndexEntry> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  // Locale activo para los atributos que no pueden usar <T> (placeholder,
+  // label). Se sincroniza con data-locale del <html> que setea LocaleToggle.
+  const [locale, setLocale] = useState<"es" | "en">("es");
+
+  useEffect(() => {
+    const el = document.documentElement;
+    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
+    read();
+    const obs = new MutationObserver(read);
+    obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
+    return () => obs.disconnect();
+  }, []);
 
   async function loadIndex() {
     if (index) return;
@@ -191,14 +204,24 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   return (
     <div className={wrapClass}>
       <label className="sr-only" htmlFor={isMobile ? "site-search-mobile" : "site-search"}>
-        Buscar caso, persona, país, año
+        {locale === "es"
+          ? "Buscar caso, persona, país, año"
+          : "Search case, person, country, year"}
       </label>
       <input
         ref={inputRef}
         id={isMobile ? "site-search-mobile" : "site-search"}
         type="search"
         autoComplete="off"
-        placeholder={isMobile ? "Buscar caso, persona, país, año…" : "Buscar…  ( / )"}
+        placeholder={
+          isMobile
+            ? locale === "es"
+              ? "Buscar caso, persona, país, año…"
+              : "Search case, person, country, year…"
+            : locale === "es"
+              ? "Buscar…  ( / )"
+              : "Search…  ( / )"
+        }
         className={inputClass}
         value={query}
         onFocus={() => {
@@ -218,7 +241,13 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
       {open && query.length >= 2 && (
         <div className={panelClass}>
           {results.length === 0 ? (
-            <p className={emptyClass}>{fuse ? "sin resultados" : "cargando…"}</p>
+            <p className={emptyClass}>
+              {fuse ? (
+                <T es="sin resultados" en="no results" />
+              ) : (
+                <T es="cargando…" en="loading…" />
+              )}
+            </p>
           ) : (
             <ul role="listbox" className={isMobile ? "" : "max-h-[60vh] overflow-y-auto"}>
               {results.map((r, i) => (
@@ -242,7 +271,10 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
                           i === selected ? metaActive : metaIdle
                         }`}
                       >
-                        {badgeLabelFor(r.type)}
+                        <T
+                          es={badgeLabelFor(r.type).es}
+                          en={badgeLabelFor(r.type).en}
+                        />
                       </span>
                     </p>
                     <p
@@ -250,7 +282,8 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
                         i === selected ? metaActive : metaIdle
                       }`}
                     >
-                      {r.subtitle}{r.meta ? ` · ${r.meta}` : ""} · {r.summary}
+                      {r.subtitle}{r.meta ? ` · ${r.meta}` : ""} ·{" "}
+                      {locale === "en" && r.summary_en ? r.summary_en : r.summary}
                     </p>
                   </Link>
                 </li>
@@ -258,7 +291,12 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
             </ul>
           )}
           {!isMobile && (
-            <p className={footerClass}>↑↓ navegar · Enter abrir · Esc cerrar</p>
+            <p className={footerClass}>
+              <T
+                es="↑↓ navegar · Enter abrir · Esc cerrar"
+                en="↑↓ navigate · Enter open · Esc close"
+              />
+            </p>
           )}
         </div>
       )}
