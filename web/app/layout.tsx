@@ -92,15 +92,15 @@ export default function RootLayout({
               >
                 <span className="font-mono text-sm leading-none">▲</span>
               </span>
-              <span className="font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
+              <span className="relative font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
                 UAP
                 <span className="ml-1 italic text-accent">Codex</span>
-              </span>
-              <span
-                className="self-start font-mono text-[10px] font-normal not-italic leading-none text-muted"
-                title="Versión desplegada (número de PR mergeado)"
-              >
-                {BUILD_VERSION}
+                <span
+                  className="pointer-events-none absolute -top-1 right-0 font-mono text-[9px] font-normal not-italic leading-none text-muted"
+                  title="Versión desplegada (número de PR mergeado)"
+                >
+                  {BUILD_VERSION}
+                </span>
               </span>
             </Link>
 
@@ -111,7 +111,7 @@ export default function RootLayout({
               <HeaderNav />
               <Link
                 href="/probabilidades"
-                className="inline-flex items-center gap-2 border-l-4 border-text bg-accent px-6 font-display text-base font-medium text-bg hover:bg-text md:text-lg"
+                className="inline-flex items-center gap-2 border-l-4 border-text bg-accent px-4 font-display text-base font-medium text-bg hover:bg-text"
               >
                 <T es="Ver probabilidades" en="See probabilities" />
                 <span aria-hidden>→</span>

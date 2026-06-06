@@ -30,7 +30,7 @@ export function HeaderNav() {
             key={l.href}
             href={l.href}
             aria-current={active ? "page" : undefined}
-            className={`inline-flex items-center border-l border-text/15 px-4 font-display text-base font-medium hover:bg-text hover:text-bg md:text-lg ${
+            className={`inline-flex items-center border-l border-text/15 px-3 font-display text-base font-medium hover:bg-text hover:text-bg ${
               active ? "text-accent" : "text-text"
             }`}
           >
