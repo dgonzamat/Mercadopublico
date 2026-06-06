@@ -87,13 +87,18 @@ a {
 }
 
 /* Bilingual switching — paired with the <T es=".." en=".."/> primitive.
-   Default (no data-locale on html, or data-locale="es") hides EN spans.
-   When LocaleToggle sets data-locale="en", we hide ES spans and show EN. */
+   Default (no data-locale on html, or data-locale="es") hides EN content.
+   When LocaleToggle sets data-locale="en", we hide ES content and show EN.
+
+   `revert` (not `inline`) restores each element's natural display: inline
+   for the <span> from <T>, block for the <div data-lang> wrappers used by
+   block content (translation note, narrative paragraphs). Forcing `inline`
+   collapsed those block divs into broken bordered boxes in EN mode. */
 [data-lang="en"] {
   display: none;
 }
 html[data-locale="en"] [data-lang="en"] {
-  display: inline;
+  display: revert;
 }
 html[data-locale="en"] [data-lang="es"] {
   display: none;
