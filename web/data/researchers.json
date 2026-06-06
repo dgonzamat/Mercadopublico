@@ -7,7 +7,7 @@
     "section_label": "Investigadores científicos",
     "credentials": "PhD astrofísica Northwestern + pionero ARPANET/Internet + venture capitalist",
     "framework": "control-system",
-    "bio_short": "Challenger intelectual dominante a la ETH dentro del serious UAP research por 60 años. Su Control System Hypothesis (1975) predijo exactamente el patrón PURSUE 2026: liberación curada + non-confirmation + cierre de canales + sincronización cultural. 51 años de predicción cumplida hacen su framework la lente interpretativa dominante de 2026.",
+    "bio_short": "Durante sesenta años fue el principal contrapeso intelectual a la hipótesis extraterrestre dentro de la investigación seria del fenómeno. Su 'hipótesis del sistema de control' (1975) sostiene que la inteligencia detrás del fenómeno regula la creencia humana mediante revelaciones dosificadas que nunca se confirman. Medio siglo después, la desclasificación PURSUE de 2026 —filtración curada, sin confirmación oficial y sincronizada con la cultura— encaja con ese pronóstico, lo que volvió su marco la lente interpretativa dominante.",
     "works": [
       { "year": 1965, "title": "Anatomy of a Phenomenon", "contribution": "Primer análisis científico formal del fenómeno" },
       { "year": 1969, "title": "Passport to Magonia", "contribution": "Continuidad folklore → modern UAP" },
@@ -25,7 +25,7 @@
     "section_label": "Investigadores científicos",
     "credentials": "PhD inmunología Stanford + 230+ peer-reviewed papers + 50+ patentes + co-fundador 8+ biotechs",
     "framework": "plurality",
-    "bio_short": "Único científico de alto nivel haciendo hard science forense sobre materiales presuntamente UAP-asociados. Multiplexed Ion Beam Imaging (MIBI) reporta ratios isotópicos (Mg, Bi) inconsistentes con ocurrencia natural en Tierra. Mantiene disciplina metodológica estricta — no afirma origen ET, solo 'origen desconocido con propiedades anómalas'.",
+    "bio_short": "Es el científico de mayor rango que aplica análisis forense de laboratorio a materiales presuntamente asociados al fenómeno. Mediante imagen iónica de alta resolución ha reportado proporciones isotópicas (magnesio, bismuto) difíciles de explicar por procesos naturales terrestres. Mantiene una disciplina estricta: no afirma un origen extraterrestre, solo 'origen desconocido con propiedades anómalas'.",
     "works": [
       { "year": 2021, "title": "Anomalous Aerial Vehicles paper", "contribution": "Brain scan patterns en witnesses (con Kit Green)" },
       { "year": 2025, "title": "The New Science of UAP (arXiv 2502.06794)", "contribution": "Co-autor con Vallée: framework científico para análisis material" }
@@ -40,7 +40,7 @@
     "section_label": "Investigadores científicos (histórico)",
     "credentials": "PhD astrofísica Ohio State + consultor científico Project Sign/Grudge/Blue Book (1948-1969)",
     "framework": "plurality",
-    "bio_short": "Inició como debunker oficial USAF → conversión documentada hacia 'el fenómeno requiere investigación seria' → fundó CUFOS (1973). Su sistema Close Encounter Categories (CE1/CE2/CE3) es la base implícita del Tier system usado en este corpus.",
+    "bio_short": "Astrofísico que empezó como desacreditador oficial de la Fuerza Aérea estadounidense y, tras dos décadas revisando casos, viró en público hacia la postura de que el fenómeno merecía estudio serio; en 1973 fundó su propio centro de investigación (CUFOS). Su clasificación de 'encuentros cercanos' (de primer, segundo y tercer tipo) es la base implícita del sistema de niveles que ordena este corpus.",
     "works": [
       { "year": 1972, "title": "The UFO Experience", "contribution": "Sistema CE1/CE2/CE3 — clasificación encuentros cercanos" }
     ]
@@ -53,7 +53,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers (histórico)",
     "credentials": "Captain USAF + Director Project Blue Book (1951–1953) + acuñó el término 'Unidentified Flying Object'",
-    "bio_short": "Primer director profesional del programa USAF de investigación UAP. Su libro 'The Report on Unidentified Flying Objects' (1956) es la primera memoir desde adentro del establishment USAF. Defendió metodología rigurosa frente a presión superior para clasificar todo como 'identified'. Muerte cardiaca a los 37 años — fechada en patrón 8c de testigos críticos que mueren prematuramente.",
+    "bio_short": "Primer director profesional del programa de la Fuerza Aérea estadounidense para investigar el fenómeno (Proyecto Libro Azul). Su libro de 1956 es la primera memoria escrita desde dentro de ese aparato y defendió una metodología rigurosa frente a la presión superior por catalogar todo como 'identificado'. Murió de un infarto a los 37 años, sumándose al patrón recurrente del corpus de testigos críticos que fallecen prematuramente.",
     "works": [
       { "year": 1956, "title": "The Report on Unidentified Flying Objects", "contribution": "Primera memoir oficial desde adentro del programa USAF Blue Book" }
     ]
@@ -66,7 +66,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers (histórico)",
     "credentials": "USMC Major + Naval Academy + Director NICAP (1956–1969) + autor primer best-seller UAP",
-    "bio_short": "Primera figura pública en denunciar formalmente el cover-up USAF. Como Director NICAP organizó la primera campaña civil sistemática contra el 'debunking' oficial de Project Blue Book. Sus libros (1950, 1953, 1955) introdujeron al público estadounidense la tesis de gobierno encubriendo evidencia — frame que sobrevive hasta hoy.",
+    "bio_short": "Primera figura pública que denunció formalmente un encubrimiento por parte de la Fuerza Aérea. Al frente de la organización civil NICAP montó la primera campaña sistemática contra el desmentido oficial del Proyecto Libro Azul. Sus libros de los años cincuenta instalaron en el público estadounidense la tesis de un gobierno que oculta evidencia, un marco narrativo que sobrevive hasta hoy.",
     "works": [
       { "year": 1950, "title": "The Flying Saucers Are Real", "contribution": "Primer best-seller UAP. Tesis: USAF está ocultando evidencia" },
       { "year": 1953, "title": "Flying Saucers from Outer Space", "contribution": "Documentación casos militares + presión por Congressional hearings" }
@@ -81,7 +81,7 @@
     "section_label": "Investigadores científicos (histórico)",
     "credentials": "PhD physics University of Iowa + Professor Atmospheric Sciences University of Arizona + 1500+ páginas testimonio Congress 1968",
     "framework": "plurality",
-    "bio_short": "Único físico de credenciales académicas mainstream que se dedicó full-time a investigación UAP desde 1966. Crítico devastador del Condon Report 1968 — calificó la metodología como 'institutional gas-lighting'. Muerte por aparente suicidio 1971, disputada por familiares e investigadores; catalogada en patrón 8c.",
+    "bio_short": "Único físico con credenciales académicas plenas que se dedicó a tiempo completo a investigar el fenómeno desde 1966. Fue el crítico más demoledor del Informe Condon de 1968, cuya metodología calificó de manipulación institucional. Su muerte en 1971, registrada como suicidio pero disputada por familiares e investigadores, figura en el patrón del corpus de testigos críticos fallecidos en circunstancias controvertidas.",
     "works": [
       { "year": 1968, "title": "Statement on UFOs (House Symposium Congress)", "contribution": "1500+ páginas testimonio científico, casos sin explicación" },
       { "year": 1969, "title": "Science in Default", "contribution": "Crítica formal al Condon Report" }
@@ -96,7 +96,7 @@
     "section_label": "Investigadores científicos",
     "credentials": "MSc physics University of Chicago + 14 años industria nuclear (Westinghouse, GE, McDonnell) + 4500+ lectures públicas",
     "framework": "eth",
-    "bio_short": "Único físico nuclear que dedicó 50+ años full-time a UAP. Centrado en Roswell 1947 — co-investigó con Kevin Randle y Don Schmitt. Publicó MJ-12 documents en 1985, autenticidad nunca verificada y disputada. 'Crash at Corona' (1992) y 'TOP SECRET/MAJIC' (1996) son referencia para la narrativa Roswell-ETH.",
+    "bio_short": "Único físico nuclear que dedicó más de cincuenta años a tiempo completo al fenómeno. Centró su trabajo en el caso Roswell de 1947 y en 1985 difundió los documentos 'MJ-12', cuya autenticidad nunca pudo verificarse y sigue en disputa. Sus libros son referencia obligada de la narrativa que une Roswell con la hipótesis extraterrestre.",
     "works": [
       { "year": 1980, "title": "Flying Saucers ARE Real", "contribution": "Compendio casos históricos + tesis ETH" },
       { "year": 1992, "title": "Crash at Corona", "contribution": "Reconstrucción Roswell con Don Berliner" },
@@ -110,7 +110,7 @@
     "section": "A",
     "section_label": "Sponsors institucionales de investigación",
     "credentials": "CEO Bigelow Aerospace + Funder NIDS (1995) + Funder BAASS (2007) + AATIP contractor ($22M DIA contract 2008)",
-    "bio_short": "Sponsor privado más importante de research UAP en USA en los 90s y 2000s. Compró Skinwalker Ranch 1996 para study sistemático. Su BAASS ganó el contrato DIA $22M para AATIP — pieza clave en el linkage gobierno-privado de research clasificada. Entrevista 60 Minutes (2017): 'absolutely convinced' aliens han visitado Tierra.",
+    "bio_short": "El mayor mecenas privado de la investigación del fenómeno en Estados Unidos durante los años noventa y dos mil. Compró el rancho Skinwalker en 1996 para estudiarlo de forma sistemática, y su empresa BAASS ganó el contrato de 22 millones de dólares de la Agencia de Inteligencia de Defensa que financió el programa AATIP, pieza clave del vínculo entre el Estado y la investigación privada clasificada. En 2017 declaró estar 'absolutamente convencido' de que seres de otros mundos han visitado la Tierra.",
     "works": [
       { "year": 1995, "title": "Founding National Institute for Discovery Science (NIDS)", "contribution": "Primer privately-funded scientific UAP research effort serio" },
       { "year": 2007, "title": "Founding Bigelow Aerospace Advanced Space Studies (BAASS)", "contribution": "Contractor que ejecutó AATIP a través del DIA" }
@@ -123,7 +123,7 @@
     "section": "A",
     "section_label": "Investigadores científicos",
     "credentials": "PhD electrical engineering Stanford + ex-SRI International Remote Viewing program + President EarthTech International + ex-Science Director BAASS",
-    "bio_short": "Físico aerospace con bridge único entre research clasificada de gobierno (SRI, DIA) y proyectos privados Bigelow. Co-autor de papers técnicos AAWSAP/AATIP sobre advanced propulsion. Su nombre aparece en docenas de papers DTIC desclasificados sobre warp drive, traversable wormholes, zero-point energy.",
+    "bio_short": "Físico que tendió un puente poco común entre la investigación clasificada del Estado (el instituto SRI, la Agencia de Inteligencia de Defensa) y los proyectos privados de Bigelow. Coescribió informes técnicos sobre propulsión avanzada para los programas AAWSAP y AATIP, y su nombre aparece en decenas de documentos oficiales desclasificados sobre propulsión exótica, agujeros de gusano y energía del punto cero.",
     "works": [
       { "year": 2010, "title": "Advanced Aerospace Weapons Systems Application Program reports (DTIC)", "contribution": "38 technical reports sobre exotic propulsion en linkage con AATIP" }
     ]
@@ -135,7 +135,7 @@
     "section": "A",
     "section_label": "Investigadores científicos",
     "credentials": "PhD theoretical physics University of Arizona + EarthTech International + AATIP consultant + co-autor papers exotic propulsion DTIC",
-    "bio_short": "Físico teórico aerospace, autor del Wilson Memo (1997–2002) — documentos personales leaked en 2019 que detallan una conversación entre Davis y Admiral Thomas Wilson sobre un programa SAP no acknowledged de recuperación de craft. Autenticidad disputada, pero el contenido alinea estructuralmente con el testimony de Grusch 2023.",
+    "bio_short": "Físico teórico vinculado a los programas de propulsión avanzada del Pentágono. Es el autor del llamado 'memo Wilson', unas notas personales filtradas en 2019 que describen una conversación con el almirante Thomas Wilson sobre un programa secreto y no reconocido de recuperación de naves. Su autenticidad se disputa, pero su contenido coincide en estructura con el testimonio que David Grusch dio en 2023.",
     "works": [
       { "year": 2002, "title": "Wilson Memo (leaked 2019)", "contribution": "Notas personales sobre programas SAP no acknowledged" }
     ]
@@ -147,7 +147,7 @@
     "section": "A",
     "section_label": "Investigadores científicos",
     "credentials": "PhD optical science + Chief Scientist UAP Task Force (2018–2021) + autor 30+ libros + Skinwalker Ranch researcher (post-2018)",
-    "bio_short": "Único científico con triple linkage UAPTF gobierno + Skinwalker Ranch privado + público (History Channel 'Secret of Skinwalker Ranch'). Bridge generacional entre Bigelow research era y AARO/Pentagon era. Sus testimonios públicos sobre incidentes UAPTF son consistente con framework Grusch.",
+    "bio_short": "Científico que reúne tres planos pocas veces combinados: el programa estatal (fue jefe científico del Grupo de Trabajo sobre fenómenos no identificados), la investigación privada en el rancho Skinwalker y la divulgación televisiva. Funciona como bisagra generacional entre la era financiada por Bigelow y la etapa actual del Pentágono, y sus relatos públicos sobre incidentes del Grupo de Trabajo son coherentes con el marco que planteó Grusch.",
     "works": [
       { "year": 2020, "title": "The Secret of Skinwalker Ranch (History Channel)", "contribution": "Series TV de investigación científica en el rancho" }
     ]
@@ -159,7 +159,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "ex-Deputy Assistant Secretary of Defense for Intelligence (Clinton + Bush admins) + Senior Staff Senate Intelligence Committee + Senior Advisor TTSA",
-    "bio_short": "Insider más alto en cargo activo en push para disclosure. Pieza clave en el linkage Pentagon → New York Times artículo Dec 16 2017 (Cooper/Blumenthal/Kean). Sus op-eds en Wall Street Journal y Washington Post (2018+) institucionalizaron el frame 'national security' del problema UAP — retiró el frame del 'UFO enthusiast'.",
+    "bio_short": "El exfuncionario de más alto rango que impulsa la apertura de información. Fue pieza clave para que el caso llegara del Pentágono al reportaje del New York Times de diciembre de 2017, y sus columnas en el Wall Street Journal y el Washington Post instalaron el asunto como un problema de seguridad nacional, sacándolo del terreno del aficionado a los ovnis.",
     "works": [
       { "year": 2018, "title": "Op-eds WSJ + WaPo + The Hill (2018–2024)", "contribution": "Institucionalizó el frame 'national security' del problema UAP" }
     ]
@@ -173,7 +173,7 @@
     "section_label": "Investigadores científicos",
     "credentials": "MD Harvard + Pulitzer 1977 (T.E. Lawrence biography) + Professor of Psychiatry Harvard Medical School",
     "framework": "psychospiritual",
-    "bio_short": "Único Pulitzer-winning Harvard professor que tomó testimonios de experiencers en serio epistemológicamente. Validó Ariel School 1994 in situ. Murió atropellado por conductor ebrio en Londres 2004 — Patrón 8c. Su framework Psychospiritual Contact propone que UAP/Other excede categorías Western reductivistas.",
+    "bio_short": "Profesor de psiquiatría de Harvard y ganador del Pulitzer, fue el académico de mayor prestigio que tomó en serio, en términos epistemológicos, los testimonios de personas que dicen haber vivido experiencias de contacto. Investigó en terreno el caso de la escuela Ariel (Zimbabue, 1994). Murió atropellado por un conductor ebrio en Londres en 2004, hecho que el corpus inscribe en su patrón de testigos críticos fallecidos prematuramente. Su marco propone que el fenómeno desborda las categorías reduccionistas occidentales.",
     "works": [
       { "year": 1994, "title": "Abduction: Human Encounters with Aliens", "contribution": "Testimonios experiencers con metodología psiquiátrica" },
       { "year": 1999, "title": "Passport to the Cosmos", "contribution": "Cross-cultural validation (Zimbabwe, Brazil)" }
@@ -187,7 +187,7 @@
     "section_label": "Investigadores experiencer-teóricos",
     "framework": "psychospiritual",
     "credentials": "Novelista bestseller + Cambridge education + 40 años documentación sistemática experiencias propias",
-    "bio_short": "Communion (1987) introdujo el arquetipo Gray en cultura masiva. Distingue: experiencias son reales fenomenológicamente; la interpretación 'aliens' es la lectura más obvia pero quizá no la correcta. The Key (originalmente 1998, expandida 2011) presenta diálogo con 'Master of the Key' con conocimiento técnico que Strieber no debía poseer.",
+    "bio_short": "Su libro Communion (1987) introdujo la figura del 'gris' en la cultura de masas. Distingue con cuidado dos planos: las experiencias serían reales en lo fenomenológico, mientras que interpretarlas como 'extraterrestres' es la lectura más obvia, pero quizá no la correcta. En The Key relata un diálogo con una entidad que le habría transmitido conocimiento técnico que, asegura, él no podía poseer.",
     "works": [
       { "year": 1987, "title": "Communion", "contribution": "Arquetipo Gray entra a cultura masiva" },
       { "year": 1998, "title": "The Key", "contribution": "Diálogo cosmológico con entity" },
@@ -202,7 +202,7 @@
     "section_label": "Investigadores científicos",
     "credentials": "PhD physics Harvard + ex-Chair Astronomy Harvard + Founding Director Black Hole Initiative + Director Galileo Project",
     "framework": "eth",
-    "bio_short": "Defensor más visible públicamente de la ETH dentro de academia mainstream. Galileo Project intenta detección sistemática de tecnofirmas. Oumuamua (1I/2017) propuso origen artificial — controversial. Su rigor metodológico hace el caso ETH defendible en contexto académico que históricamente lo rechazaba.",
+    "bio_short": "Es el defensor más visible de la hipótesis extraterrestre dentro de la academia tradicional. Desde Harvard dirige el Proyecto Galileo, que busca detectar de forma sistemática tecnofirmas, y planteó que el objeto interestelar Oumuamua (2017) podría tener origen artificial, una tesis polémica. Su rigor metodológico vuelve defendible la hipótesis extraterrestre en un entorno académico que históricamente la rechazaba.",
     "works": [
       { "year": 2021, "title": "Extraterrestrial: The First Sign of Intelligent Life Beyond Earth", "contribution": "Caso público para Oumuamua artificial" },
       { "year": 2023, "title": "Interstellar", "contribution": "IM1 meteor recovery + análisis material" }
@@ -216,7 +216,7 @@
     "section_label": "Teóricos filosóficos",
     "credentials": "PhD philosophy Stony Brook + autor 10+ libros filosofía política y UAP",
     "framework": "political-subjugation",
-    "bio_short": "Único teórico que propone Political Subjugation Frame: el disclosure controlado prepara gobierno global totalitario justificado por amenaza externa fabricada. Taxonomía exhaustiva de 9 hipótesis del corpus deriva en buena parte de su Closer Encounters (2021). Polarizing figure por afiliaciones políticas previas, pero análisis filosófico rigoroso.",
+    "bio_short": "Único teórico que propone el 'marco de la subyugación política': la apertura controlada de información prepararía el terreno para un gobierno mundial autoritario, justificado por una amenaza externa fabricada. La taxonomía de nueve hipótesis que ordena este corpus deriva en buena parte de su libro Closer Encounters (2021). Es una figura polarizante por sus afiliaciones políticas previas, pero su análisis filosófico es riguroso.",
     "works": [
       { "year": 2021, "title": "Closer Encounters", "contribution": "Taxonomía de 9 hipótesis + Political Subjugation Frame" }
     ]
@@ -230,7 +230,7 @@
     "section_label": "Teóricos filosóficos",
     "credentials": "Ex-sacerdote jesuita + 70+ años investigación cross-cultural",
     "framework": "predatory-entities",
-    "bio_short": "Originó Predatory Entities Framework: las entidades UAP serían predadoras parasitarias no-corpóreas que se alimentan de energía emocional humana y se han disfrazado históricamente de dioses. Influencia central en cultura UAP latinoamericana. Convergencia notable con John Keel (Mothman Prophecies).",
+    "bio_short": "Exsacerdote jesuita que originó el 'marco de las entidades depredadoras': las inteligencias detrás del fenómeno serían parásitos no corpóreos que se alimentan de la energía emocional humana y que, a lo largo de la historia, se habrían disfrazado de dioses. Su obra es central en la cultura del fenómeno en América Latina y converge de forma notable con las tesis de John Keel.",
     "works": [
       { "year": 1984, "title": "Defendámonos de los dioses", "contribution": "Predatory entities framework completo" }
     ]
@@ -242,7 +242,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "Ex-USAF Major + NRO + NGA + ICIG officially designated 'credible and urgent'",
-    "bio_short": "Testimonio bajo juramento ante House Oversight Committee (julio 2023): existencia de programas SAP de recuperación de craft no-humanos + biológicos no-humanos. Hearsay multi-source (40+ insiders). ICIG validó como credible and urgent. PURSUE 2026 emergió en parte como respuesta a su testimonio.",
+    "bio_short": "En julio de 2023 declaró bajo juramento ante el Comité de Supervisión de la Cámara de Representantes que existen programas secretos de recuperación de naves de origen no humano, junto con restos biológicos no humanos. Su testimonio se apoya en fuentes indirectas —más de cuarenta informantes— y fue calificado de 'creíble y urgente' por el inspector general de la comunidad de inteligencia. La desclasificación PURSUE de 2026 surgió en parte como respuesta a esa declaración.",
     "works": [
       { "year": 2023, "title": "Congressional Testimony (House Oversight)", "contribution": "Disclosure formal de programas SAP no acknowledged" }
     ]
@@ -254,7 +254,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "Ex-AATIP Director (DoD/DIA) + Counterintelligence Special Agent",
-    "bio_short": "Dirigió Advanced Aerospace Threat Identification Program (AATIP) en DoD. Su renuncia pública 2017 + liberación de Nimitz/Gimbal/GoFast videos via TTSA detonó la era moderna de disclosure. Imminent (2024) consolida narrativa pública.",
+    "bio_short": "Dirigió el programa de identificación de amenazas aeroespaciales avanzadas (AATIP) dentro del Departamento de Defensa. Su renuncia pública en 2017 y la difusión de los videos militares Nimitz, Gimbal y GoFast detonaron la etapa moderna de apertura informativa. Su libro Imminent (2024) consolidó esa narrativa ante el público.",
     "works": [
       { "year": 2024, "title": "Imminent: Inside the Pentagon's Hunt for UFOs", "contribution": "Narrativa pública AATIP + framework UAP threat" }
     ]
@@ -266,7 +266,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "Ex-US Navy F/A-18F pilot (10 años, VFA-11) + co-fundador Americans for Safe Aerospace + testimonio bajo juramento House Oversight julio 2023",
-    "bio_short": "Piloto Navy que reportó encuentros UAP diarios durante deployment 2014-2015 sobre el Atlantic Test Range (USS Theodore Roosevelt). Sus testimonios + datos ATFLIR son la base de los videos Nimitz/Gimbal/GoFast liberados vía TTSA. Co-fundó Americans for Safe Aerospace (2022) para protección legal a pilotos comerciales y militares que reportan UAP. Testimonio bajo juramento julio 2023 junto con Grusch y Fravor.",
+    "bio_short": "Piloto de combate de la Marina que reportó encuentros casi diarios con objetos no identificados durante su despliegue de 2014-2015 sobre el Atlántico. Sus testimonios y los datos de sensores son la base de los videos militares difundidos años después. Fundó Americans for Safe Aerospace (2022), la primera organización dedicada a proteger legalmente a los pilotos que reportan estos fenómenos, y en julio de 2023 fue el primer piloto en actividad en declarar bajo juramento ante el Congreso.",
     "works": [
       { "year": 2022, "title": "Founding Americans for Safe Aerospace", "contribution": "Primera ONG dedicada a protección legal de pilotos reportando UAP" },
       { "year": 2023, "title": "Congressional Testimony (House Oversight, 26 julio)", "contribution": "Primer piloto activo en testificar bajo juramento sobre encuentros UAP" },
@@ -280,7 +280,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "ex-Commander VFA-41 Black Aces + USS Nimitz pilot Tic-Tac incident (14 nov 2004) + testimonio bajo juramento House Oversight julio 2023",
-    "bio_short": "Comandante de squadron Navy F/A-18 que persiguió el Tic-Tac object durante el incidente Nimitz 14 nov 2004. Su testimony (entrevista Joe Rogan 2019, testimony Congress 2023) es la base canonical de la era moderna disclosure — first credible witness within active-duty Navy aviation con video sensor corroboration.",
+    "bio_short": "Comandante de un escuadrón de cazas de la Marina que persiguió el objeto conocido como 'Tic-Tac' durante el incidente del portaaviones Nimitz, en noviembre de 2004. Su relato —difundido en 2019 y ratificado bajo juramento ante el Congreso en 2023— es el testimonio fundacional de la etapa moderna: el primer testigo creíble dentro de la aviación naval en servicio activo, con respaldo de video y sensores.",
     "works": [
       { "year": 2023, "title": "Congressional Testimony (House Oversight, 26 julio)", "contribution": "Testimonio bajo juramento sobre el incidente Nimitz Tic-Tac" }
     ]
@@ -292,7 +292,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "ex-Lieutenant Commander US Navy + Wingman de Fravor en Tic-Tac incident + Hoover Institution National Security Fellow",
-    "bio_short": "Pilota wingman de Fravor durante el incidente Nimitz Tic-Tac (14 nov 2004). Sus testimonios (60 Minutes 2021, multiple interviews) corroboran independientemente el reporte Fravor. Como oficial Navy activa por años post-incidente y luego National Security Fellow en Hoover, su credibilidad pública contrasta con stereotypes UFO-enthusiast.",
+    "bio_short": "Piloto de la Marina que acompañaba a Fravor durante el incidente del Nimitz en 2004. Sus declaraciones públicas corroboran de forma independiente aquel reporte. Su trayectoria como oficial naval en activo durante años, y luego como investigadora de seguridad nacional en la Institución Hoover, contrasta con el estereotipo del aficionado a los ovnis y refuerza su credibilidad.",
     "works": [
       { "year": 2021, "title": "60 Minutes interview (mayo)", "contribution": "Primer testimony público mainstream de wingman Tic-Tac" }
     ]
@@ -304,7 +304,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "Colonel (ret) US Army + 30 años Defense Intelligence + ex-Adviser UAP Task Force + Co-founder Skyfort Group",
-    "bio_short": "Confirmó públicamente (panel SALT iConnections 2023) testimony Grusch sin contradicción institucional — primer Colonel activo en validar el frame 'NHI' del whistleblower. Skyfort Group consultancy post-retirement opera entre Pentagon y privados en UAP-related programs.",
+    "bio_short": "Coronel retirado del Ejército con treinta años en inteligencia de defensa. En 2023 confirmó en público, sin contradicción institucional, el testimonio de Grusch, y se convirtió en el primer militar de ese rango en validar el marco de la 'inteligencia no humana'. Tras retirarse, su consultora Skyfort opera entre el Pentágono y el sector privado en programas vinculados al fenómeno.",
     "works": [
       { "year": 2023, "title": "SALT iConnections panel statement", "contribution": "Confirmación pública del frame Grusch desde dentro del establishment" }
     ]
@@ -316,7 +316,7 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "ex-Director All-domain Anomaly Resolution Office AARO (2022–2023) + Chief Scientist Defense Intelligence + PhD physics",
-    "bio_short": "Primer Director AARO. Postura pública skeptical: la mayoría de UAP reports tienen explicaciones mundanas (drones, balloons, sensor artifacts). Renunció dic 2023 — públicamente por reasons personales, especulación insider sugiere fricción con whistleblower disclosure agenda. Su sucesor Jon Kosloski tomó tono mucho más cautious-acknowledging.",
+    "bio_short": "Primer director de la oficina del Pentágono creada para resolver casos de fenómenos anómalos (AARO). Sostuvo una postura escéptica: la mayoría de los reportes tendrían explicaciones mundanas —drones, globos, artefactos de los sensores—. Renunció a fines de 2023, oficialmente por motivos personales, aunque se especula con fricciones frente a la agenda de los denunciantes; su sucesor adoptó un tono bastante más abierto.",
     "works": [
       { "year": 2024, "title": "AARO Historical Record Report Volume I", "contribution": "Reporte oficial AARO con conclusión skeptical sobre programas SAP no acknowledged" }
     ]
@@ -328,7 +328,7 @@
     "section": "C",
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-FL) + Chair Task Force on Declassification of Federal Secrets",
-    "bio_short": "Lidera Task Force bipartisana con poder de oversight + subpoena para forzar disclosure. Co-protagonista con Burchett del ecosystem 8q que forzó PURSUE 2026. Audiencias congresionales nov 2024 con Grusch + Gold + Shellenberger.",
+    "bio_short": "Encabeza el grupo de trabajo bipartidista del Congreso para desclasificar secretos federales, con poder de citación para forzar la apertura de información. Junto a Tim Burchett lidera la presión legislativa que impulsó la desclasificación PURSUE de 2026, tras las audiencias de noviembre de 2024 con Grusch y otros testigos.",
     "works": [],
     "photo": "/researchers/luna.jpg",
     "photo_credit": "U.S. House of Representatives",
@@ -341,7 +341,7 @@
     "section": "C",
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-TN) + House Oversight Committee",
-    "bio_short": "Co-líder Task Force con Luna. Estilo público confrontacional contra Pentagon stonewalling. Frase recurrente: 'they're flying around without any regard for the laws of physics'. Funcionalmente complementario a Luna en presión bipartisana sobre USIC.",
+    "bio_short": "Codirige con Anna Paulina Luna el grupo de trabajo del Congreso para la desclasificación. De estilo público confrontativo frente al bloqueo del Pentágono, resume su postura en una frase recurrente: los objetos 'vuelan sin ningún respeto por las leyes de la física'. Es el complemento de Luna en la presión bipartidista sobre la comunidad de inteligencia.",
     "works": [],
     "photo": "/researchers/burchett.jpg",
     "photo_credit": "U.S. House of Representatives",
@@ -354,7 +354,7 @@
     "section": "D",
     "section_label": "Periodistas investigativos",
     "credentials": "Veterano periodismo investigativo Australia + News Nation (US)",
-    "bio_short": "Reportó Grusch testimony primero (junio 2023). Mantiene rigor metodológico de verificación cruzada. Tras desaparición Gen. McCasland (mayo 2026) afirmó 'grave national security crisis'. Su figura institucionaliza disclosure journalism — no es contactee ni amateur.",
+    "bio_short": "Periodista de investigación que dio la primicia del testimonio de Grusch en junio de 2023 y mantiene una metodología de verificación cruzada. Tras la desaparición del general McCasland, en mayo de 2026, habló de una 'grave crisis de seguridad nacional'. Su figura profesionaliza el periodismo de desclasificación: no es un aficionado ni un contactado.",
     "works": [
       { "year": 2021, "title": "In Plain Sight (book)", "contribution": "Caso Australia UAP investigaciones" }
     ]
@@ -366,7 +366,7 @@
     "section": "D",
     "section_label": "Periodistas investigativos",
     "credentials": "Investigative journalist + co-autora NYT 17 dic 2017 + autora 'UFOs: Generals, Pilots and Government Officials Go on the Record' (2010, NYT bestseller)",
-    "bio_short": "Co-autora del artículo NYT 16 dic 2017 que cambió la conversación pública UAP en USA (con Ralph Blumenthal y Helene Cooper). Su libro 2010 anticipó la disclosure agenda — testimonios on-the-record de pilotos militares y exfuncionarios sin lenguaje sensacionalista. Pieza clave en la transición del frame 'UFO' → 'UAP / national security'.",
+    "bio_short": "Coescribió el reportaje del New York Times de diciembre de 2017 que cambió la conversación pública sobre el tema en Estados Unidos. Su libro de 2010 ya anticipaba esa agenda, con testimonios verificables de pilotos militares y exfuncionarios y sin lenguaje sensacionalista. Fue pieza clave en el tránsito del término 'ovni' al de 'fenómeno anómalo' ligado a la seguridad nacional.",
     "works": [
       { "year": 2010, "title": "UFOs: Generals, Pilots and Government Officials Go on the Record", "contribution": "NYT bestseller — anticipó el frame disclosure de 2017" },
       { "year": 2017, "title": "NYT 'Glowing Auras and Black Money'", "contribution": "Artículo mainstream que reveló AATIP al público" }
@@ -379,7 +379,7 @@
     "section": "D",
     "section_label": "Periodistas investigativos",
     "credentials": "45 años NYT staff writer + part of 2017 Pulitzer-winning investigative team + co-autor NYT 17 dic 2017",
-    "bio_short": "Veterano periodismo investigativo NYT. Co-firmó el artículo 2017 sobre AATIP que rompió el silencio mainstream sobre UAP. Su trayectoria pre-UAP (crimen organizado, política) le dio peso institucional al outing del programa Pentagon — no podía ser tildado de UFO enthusiast.",
+    "bio_short": "Periodista de investigación con 45 años en el New York Times e integrante de un equipo ganador del Pulitzer. Cofirmó el reportaje de 2017 que rompió el silencio de la prensa seria sobre el programa AATIP del Pentágono; su trayectoria previa en crimen organizado y política le dio el peso institucional necesario para que la revelación no pudiera descartarse como cosa de entusiastas. Más tarde escribió la biografía del psiquiatra John Mack.",
     "works": [
       { "year": 2017, "title": "NYT 'Glowing Auras and Black Money' (co-autor)", "contribution": "Revelación pública del programa AATIP" },
       { "year": 2021, "title": "The Believer: Alien Encounters, Hard Science, and the Passion of John Mack", "contribution": "Biografía de John Mack — puente Harvard / abduction research" }
@@ -392,7 +392,7 @@
     "section": "D",
     "section_label": "Periodistas investigativos",
     "credentials": "Investigative journalist KLAS-TV Las Vegas (40+ años) + 7-time Peabody Award winner + reportaje histórico Bob Lazar (1989)",
-    "bio_short": "Único periodista mainstream que cubrió UAP y secret programs sistemáticamente desde 1989. Reportó Bob Lazar y la story de S-4 que dio shape a la era contemporary UFO culture. Sus piezas investigativas sobre Skinwalker Ranch (con Colm Kelleher), BAASS y AATIP funding son archivo periodístico clave que conectó décadas de research privado y gobierno.",
+    "bio_short": "Único periodista de medios masivos que cubrió el fenómeno y los programas secretos de forma sistemática desde 1989, año en que difundió el caso de Bob Lazar y la base S-4 que dio forma a la cultura ovni contemporánea. Sus investigaciones sobre el rancho Skinwalker y la financiación de los programas BAASS y AATIP son un archivo periodístico que conecta décadas de investigación privada y estatal.",
     "works": [
       { "year": 1989, "title": "Bob Lazar / S-4 reportajes KLAS", "contribution": "Origen público de la S-4 / Area 51 narrativa moderna" },
       { "year": 2005, "title": "Hunt for the Skinwalker (co-autor con Colm Kelleher)", "contribution": "Crónica primaria del rancho Bigelow" }
@@ -405,7 +405,7 @@
     "section": "A",
     "section_label": "Catalizadores culturales",
     "credentials": "Co-fundador Blink-182 + Co-fundador To The Stars Academy (TTSA) 2017",
-    "bio_short": "Catalyst cultural improbable que financió y organizó el equipo (Mellon, Elizondo, Puthoff, Davis) que produjo el NYT 2017 story. TTSA sirve como vehicle público para release de los videos Nimitz/Gimbal/GoFast. Su narrative 'Sekret Machines' y comic novels son la dimensión popular del disclosure agenda — controversial pero estructuralmente crítico.",
+    "bio_short": "Catalizador cultural improbable: el músico que financió y reunió al equipo de exfuncionarios (Mellon, Elizondo, Puthoff, Davis) detrás del reportaje del New York Times de 2017. Su organización To The Stars Academy sirvió de vehículo público para difundir los videos militares Nimitz, Gimbal y GoFast. Su saga Sekret Machines es la cara popular de la agenda de desclasificación: discutible, pero estructuralmente decisiva.",
     "works": [
       { "year": 2017, "title": "Founding To The Stars Academy (TTSA)", "contribution": "Vehicle público para ex-Pentagon insiders → NYT 2017 → Nimitz videos" },
       { "year": 2016, "title": "Sekret Machines: Chasing Shadows (con A.J. Hartley)", "contribution": "Novela framework basada en briefings de insiders" }
@@ -419,7 +419,7 @@
     "section_label": "Investigación ontológico-religiosa",
     "credentials": "PhD religious studies + Professor UNC Wilmington + ex-fellow Vatican Library",
     "framework": "psychospiritual",
-    "bio_short": "American Cosmic (Oxford UP 2019) primer libro académico mainstream sobre cultura UAP institucional contemporánea (Silicon Valley, Vatican, defense contractors). Encounters (2023) extiende framework al fenomenology of contact. Aporta perspectiva ontológico-religiosa que conecta UAP con tradiciones espirituales pre-modernas.",
+    "bio_short": "Su libro American Cosmic (Oxford University Press, 2019) fue el primer estudio académico de referencia sobre la cultura institucional del fenómeno hoy: Silicon Valley, el Vaticano, los contratistas de defensa. Encounters (2023) extiende ese trabajo a la fenomenología del contacto. Aporta una mirada ontológico-religiosa que conecta el fenómeno con tradiciones espirituales premodernas.",
     "works": [
       { "year": 2019, "title": "American Cosmic", "contribution": "Etnografía cultura UAP institucional" },
       { "year": 2023, "title": "Encounters", "contribution": "Phenomenology of contact framework" }
