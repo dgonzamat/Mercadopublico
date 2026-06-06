@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { patterns, getCasesByPattern } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { PrevNext } from "@/components/PrevNext";
+import { T } from "@/components/T";
 
 export function generateStaticParams() {
   return patterns.map((p) => ({ letter: p.letter }));
@@ -25,6 +27,11 @@ export default function PatternDetailPage({
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) notFound();
   const patternCases = getCasesByPattern(p.id);
+
+  // Orden secuencial = orden del array (igual que el índice /patterns).
+  const idx = patterns.findIndex((x) => x.letter === p.letter);
+  const prev = idx > 0 ? patterns[idx - 1] : null;
+  const next = idx < patterns.length - 1 ? patterns[idx + 1] : null;
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
@@ -67,6 +74,40 @@ export default function PatternDetailPage({
           )}
         </div>
       </section>
+
+      <PrevNext
+        label="Navegación entre patrones"
+        prev={
+          prev
+            ? {
+                href: `/patterns/${prev.letter}`,
+                es: "← Anterior",
+                en: "← Previous",
+                title: (
+                  <T
+                    es={`${prev.id} ${prev.name}`}
+                    en={`${prev.id} ${prev.name_en}`}
+                  />
+                ),
+              }
+            : null
+        }
+        next={
+          next
+            ? {
+                href: `/patterns/${next.letter}`,
+                es: "Siguiente →",
+                en: "Next →",
+                title: (
+                  <T
+                    es={`${next.id} ${next.name}`}
+                    en={`${next.id} ${next.name_en}`}
+                  />
+                ),
+              }
+            : null
+        }
+      />
     </article>
   );
 }

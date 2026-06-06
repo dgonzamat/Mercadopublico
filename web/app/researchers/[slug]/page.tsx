@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { PrevNext } from "@/components/PrevNext";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
 
@@ -29,6 +30,15 @@ export default function ResearcherDetailPage({
 
   const fw = r.framework ? getFramework(r.framework) : undefined;
   const lifespan = r.death ? `${r.born}–${r.death}` : `${r.born}–`;
+
+  // Orden secuencial = mismo del índice (secciones A–E, estable dentro de cada una).
+  const ordered = [...researchers].sort((a, b) =>
+    a.section.localeCompare(b.section),
+  );
+  const idx = ordered.findIndex((x) => x.id === r.id);
+  const prev = idx > 0 ? ordered[idx - 1] : null;
+  const next =
+    idx >= 0 && idx < ordered.length - 1 ? ordered[idx + 1] : null;
 
   return (
     <article className="mx-auto max-w-3xl space-y-12 py-4">
@@ -154,6 +164,30 @@ export default function ResearcherDetailPage({
           en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E)."
         />
       </Caption>
+
+      <PrevNext
+        label="Navegación entre investigadores"
+        prev={
+          prev
+            ? {
+                href: `/researchers/${prev.id}`,
+                es: "← Anterior",
+                en: "← Previous",
+                title: prev.name,
+              }
+            : null
+        }
+        next={
+          next
+            ? {
+                href: `/researchers/${next.id}`,
+                es: "Siguiente →",
+                en: "Next →",
+                title: next.name,
+              }
+            : null
+        }
+      />
     </article>
   );
 }
