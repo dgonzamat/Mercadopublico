@@ -35,7 +35,7 @@ export default function ResearcherDetailPage({
         href="/researchers"
         className="inline-block text-sm text-muted hover:text-accent"
       >
-        ← Volver a researchers
+        <T es="← Volver a investigadores" en="← Back to researchers" />
       </Link>
 
       {/* Zone A — Identification */}
@@ -44,24 +44,27 @@ export default function ResearcherDetailPage({
           <ResearcherAvatar researcher={r} size="lg" />
           <div className="space-y-4">
             <Eyebrow>
-              Sección {r.section} · {r.section_label} · {lifespan}
+              <T es="Sección" en="Section" /> {r.section} ·{" "}
+              <T es={r.section_label} en={r.section_label_en} /> · {lifespan}
             </Eyebrow>
             <H1>{r.name}</H1>
             {fw && (
               <p className="text-sm text-text">
-                <span className="text-muted">Framework principal:</span>{" "}
+                <span className="text-muted">
+                  <T es="Framework principal:" en="Primary framework:" />
+                </span>{" "}
                 <Link
                   href={`/frameworks#${fw.id}`}
                   className="text-accent hover:underline"
                 >
-                  {fw.name}
+                  <T es={fw.name} en={fw.name_en} />
                 </Link>
               </p>
             )}
           </div>
         </div>
         <Caption className="mt-4 border-t border-border pt-4">
-          {r.credentials}
+          <T es={r.credentials} en={r.credentials_en} />
         </Caption>
         {r.photo && (r.photo_credit || r.photo_license) && (
           <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
@@ -72,8 +75,12 @@ export default function ResearcherDetailPage({
 
       {/* Zone B — Narrative */}
       <section className="space-y-3">
-        <Eyebrow>Biografía</Eyebrow>
-        <Body>{r.bio_short}</Body>
+        <Eyebrow>
+          <T es="Biografía" en="Biography" />
+        </Eyebrow>
+        <Body>
+          <T es={r.bio_short} en={r.bio_short_en} />
+        </Body>
       </section>
 
       {/* Zone C — Apparatus: works as timeline */}
@@ -96,7 +103,9 @@ export default function ResearcherDetailPage({
                 </span>
                 <div className="space-y-1">
                   <p className="text-sm font-medium text-text">{w.title}</p>
-                  <p className="text-xs text-muted">{w.contribution}</p>
+                  <p className="text-xs text-muted">
+                    <T es={w.contribution} en={w.contribution_en} />
+                  </p>
                 </div>
               </li>
             ))}
