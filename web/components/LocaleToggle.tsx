@@ -20,12 +20,14 @@ export function LocaleToggle() {
       (localStorage.getItem("locale") as Locale | null)) || "es";
     setLocale(stored);
     document.documentElement.dataset.locale = stored;
+    document.documentElement.lang = stored;
   }, []);
 
   function toggle() {
     const next: Locale = locale === "es" ? "en" : "es";
     setLocale(next);
     document.documentElement.dataset.locale = next;
+    document.documentElement.lang = next;
     localStorage.setItem("locale", next);
   }
 
