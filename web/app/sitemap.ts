@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { cases, patterns, researchers } from "@/lib/data";
+import { posts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/resumen",
     "/fuentes",
+    "/blog",
+    "/contact",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
@@ -44,10 +47,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const postRoutes = posts.map((p) => ({
+    url: `${SITE_URL}/blog/${p.id}`,
+    lastModified: new Date(p.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
   return [
     ...staticRoutes,
     ...caseRoutes,
     ...patternRoutes,
     ...researcherRoutes,
+    ...postRoutes,
   ];
 }
