@@ -4,13 +4,20 @@ import { useState } from "react";
 import { T } from "@/components/T";
 
 /**
- * Botón "Compartir" para páginas de detalle. Usa la Web Share API nativa
- * (hoja del SO) donde existe — móvil y varios navegadores desktop — y cae
- * a "copiar link" al portapapeles donde no. Server-safe: toda la lógica
- * corre en el click. Con el og:image del sitio, el preview compartido
- * muestra imagen.
+ * Botón "Compartir". Usa la Web Share API nativa (hoja del SO) donde existe
+ * — móvil y varios navegadores desktop — y cae a "copiar link" al
+ * portapapeles donde no. Server-safe: toda la lógica corre en el click.
+ *
+ * - variant "default": botón con texto (páginas de detalle, footer).
+ * - variant "icon": botón cuadrado solo-ícono (header), al lado de la lupa.
  */
-export function ShareButton({ title }: { title?: string }) {
+export function ShareButton({
+  title,
+  variant = "default",
+}: {
+  title?: string;
+  variant?: "default" | "icon";
+}) {
   const [copied, setCopied] = useState(false);
 
   async function onShare() {
@@ -33,6 +40,20 @@ export function ShareButton({ title }: { title?: string }) {
     }
   }
 
+  if (variant === "icon") {
+    return (
+      <button
+        type="button"
+        onClick={onShare}
+        aria-label={copied ? "Link copiado" : "Compartir"}
+        title={copied ? "Link copiado" : "Compartir"}
+        className="inline-flex h-9 w-9 items-center justify-center border border-border bg-bg text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      >
+        {copied ? <CheckIcon /> : <ShareIcon />}
+      </button>
+    );
+  }
+
   return (
     <button
       type="button"
@@ -46,5 +67,43 @@ export function ShareButton({ title }: { title?: string }) {
         <T es="Compartir" en="Share" />
       )}
     </button>
+  );
+}
+
+function ShareIcon() {
+  return (
+    <svg
+      width="17"
+      height="17"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
+      <polyline points="16 6 12 2 8 6" />
+      <line x1="12" y1="2" x2="12" y2="15" />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg
+      width="17"
+      height="17"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
   );
 }

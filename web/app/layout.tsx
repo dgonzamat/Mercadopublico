@@ -4,6 +4,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { MobileNav } from "@/components/MobileNav";
 import { HeaderNav } from "@/components/HeaderNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
+import { ShareButton } from "@/components/ShareButton";
 import { SiteSearch } from "@/components/SiteSearch";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
@@ -107,8 +108,9 @@ export default function RootLayout({
             </Link>
 
             <div className="hidden items-stretch gap-3 lg:flex">
-              <div className="flex items-center">
+              <div className="flex items-center gap-2">
                 <SiteSearch />
+                <ShareButton variant="icon" />
               </div>
               <HeaderNav />
               <Link
@@ -160,6 +162,9 @@ export default function RootLayout({
                     }
                   />
                 </p>
+                <div className="pt-2">
+                  <ShareButton title="UAP Codex" />
+                </div>
               </div>
 
               <nav
