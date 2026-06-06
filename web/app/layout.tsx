@@ -63,8 +63,8 @@ export const metadata: Metadata = {
 const SECONDARY_NAV: Array<{ href: string; es: string; en: string }> = [
   { href: "/cases", es: "Casos", en: "Cases" },
   { href: "/atlas", es: "Atlas", en: "Atlas" },
+  { href: "/researchers", es: "Investigadores", en: "Researchers" },
   { href: "/about", es: "Metodología", en: "Method" },
-  { href: "/resumen", es: "Resumen", en: "Summary" },
 ];
 
 export default function RootLayout({
@@ -205,8 +205,8 @@ export default function RootLayout({
                   <FooterLink href="/patterns" es="Patrones" en="Patterns" />
                   <FooterLink
                     href="/researchers"
-                    es="Ecosistema"
-                    en="Ecosystem"
+                    es="Investigadores"
+                    en="Researchers"
                   />
                   <FooterLink
                     href="/frameworks"
