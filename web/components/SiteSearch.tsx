@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 
 /**
@@ -32,6 +33,7 @@ interface IndexEntry {
 }
 
 export function SiteSearch() {
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(0);
@@ -103,7 +105,10 @@ export function SiteSearch() {
       setSelected((s) => Math.max(s - 1, 0));
     } else if (e.key === "Enter" && results[selected]) {
       e.preventDefault();
-      window.location.href = `/cases/${results[selected].id}`;
+      router.push(`/cases/${results[selected].id}`);
+      setOpen(false);
+      setQuery("");
+      inputRef.current?.blur();
     } else if (e.key === "Escape") {
       e.preventDefault();
       inputRef.current?.blur();
@@ -151,6 +156,10 @@ export function SiteSearch() {
                 <li key={r.id} role="option" aria-selected={i === selected}>
                   <Link
                     href={`/cases/${r.id}`}
+                    onClick={() => {
+                      setOpen(false);
+                      setQuery("");
+                    }}
                     className={`block border-b border-border/40 px-4 py-3 text-sm last:border-b-0 ${
                       i === selected
                         ? "bg-text text-bg"
