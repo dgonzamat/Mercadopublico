@@ -207,7 +207,7 @@ export default function CaseDetailPage({
 
       {/* EN-only disclaimer when no EN narrative available */}
       {hasNarrative && !c.whatHappened_en && (
-        <div data-lang="en" className="border-2 border-text bg-panel p-5">
+        <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
             Translation note
           </p>
@@ -233,7 +233,7 @@ export default function CaseDetailPage({
               </header>
 
               {/* ES paragraphs */}
-              <div data-lang="es" className="space-y-8">
+              <div lang="es" data-lang="es" className="space-y-8">
                 {whatHappenedParas.map((para, i) => (
                   <div key={i} className="space-y-8">
                     <p
@@ -256,7 +256,7 @@ export default function CaseDetailPage({
 
               {/* EN paragraphs if available */}
               {c.whatHappened_en && (
-                <div data-lang="en" className="space-y-8">
+                <div lang="en" data-lang="en" className="space-y-8">
                   {c.whatHappened_en.split("\n\n").map((para, i) => (
                     <p
                       key={i}

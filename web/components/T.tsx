@@ -14,8 +14,8 @@ import type { ReactNode } from "react";
 export function T({ es, en }: { es: ReactNode; en: ReactNode }) {
   return (
     <>
-      <span data-lang="es">{es}</span>
-      <span data-lang="en">{en}</span>
+      <span lang="es" data-lang="es">{es}</span>
+      <span lang="en" data-lang="en">{en}</span>
     </>
   );
 }
