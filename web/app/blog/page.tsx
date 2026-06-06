@@ -7,6 +7,9 @@ export const metadata = {
   title: "Blog · UAP Codex",
   description:
     "Notas de método, decisiones de análisis y avances del cuaderno de investigación UAP Codex.",
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
 };
 
 export default function BlogPage() {
@@ -25,6 +28,12 @@ export default function BlogPage() {
             en="Method notes, analysis decisions and corpus progress. How this notebook gets built, out loud."
           />
         </Lede>
+        <a
+          href="/feed.xml"
+          className="inline-block font-mono text-xs uppercase tracking-widest text-muted underline-offset-4 hover:text-accent hover:underline"
+        >
+          <T es="Suscribirse · RSS →" en="Subscribe · RSS →" />
+        </a>
       </header>
 
       <ul className="divide-y divide-text/15 border-y border-text/15">
