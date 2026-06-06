@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { T } from "@/components/T";
 import { SiteSearch } from "@/components/SiteSearch";
+import { LocaleToggle } from "@/components/LocaleToggle";
 import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
@@ -191,7 +192,15 @@ export function MobileNav() {
                 ))}
               </ul>
 
-              <p className="mt-12 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
+              {/* IDIOMA / LANGUAGE */}
+              <div className="mt-10 flex items-center justify-between gap-4 border-t border-bg/15 pt-6">
+                <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+                  <T es="Idioma" en="Language" />
+                </p>
+                <LocaleToggle variant="drawer" />
+              </div>
+
+              <p className="mt-10 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
                 <T
                   es="UAP Codex · análisis institucional · 1947–2026"
                   en="UAP Codex · institutional analysis · 1947–2026"
