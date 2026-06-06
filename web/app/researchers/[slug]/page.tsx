@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
+import { researcherJsonLd } from "@/lib/jsonld";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
@@ -43,6 +44,10 @@ export default function ResearcherDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-12 py-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(researcherJsonLd(r)) }}
+      />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
           items={[
