@@ -10,15 +10,16 @@ import Fuse from "fuse.js";
  *
  * - Lazy-loads /search-index.json on first focus (no impact on First Load JS).
  * - Fuse.js fuzzy match with weighted keys (name > subtitle > summary).
- * - Indexes cases AND researchers; each entry's `type` decides route +
- *   badge color so a search for "Grusch" lands on /researchers/grusch,
- *   not nothing.
+ * - Indexes cases, researchers, patterns, frameworks and static section
+ *   pages; each entry's `type` decides route + badge so a search for
+ *   "Grusch" lands on /researchers/grusch and "interdimensional" on its
+ *   pattern, not nothing.
  * - Keyboard: `/` or Cmd/Ctrl+K to focus, ↑↓ to navigate, Enter to open,
  *   Esc to close. (Mobile variant skips the hotkey listener.)
  */
 
 interface IndexEntry {
-  type: "case" | "researcher";
+  type: "case" | "researcher" | "pattern" | "framework" | "page";
   id: string;
   num: number;
   name: string;
@@ -38,11 +39,33 @@ interface Props {
 }
 
 function hrefFor(e: IndexEntry): string {
-  return e.type === "researcher" ? `/researchers/${e.id}` : `/cases/${e.id}`;
+  switch (e.type) {
+    case "researcher":
+      return `/researchers/${e.id}`;
+    case "pattern":
+      return `/patterns/${e.id}`;
+    case "framework":
+      return `/frameworks#${e.id}`;
+    case "page":
+      return `/${e.id}`;
+    default:
+      return `/cases/${e.id}`;
+  }
 }
 
 function badgeLabelFor(type: IndexEntry["type"]): string {
-  return type === "researcher" ? "PERSONA" : "CASO";
+  switch (type) {
+    case "researcher":
+      return "PERSONA";
+    case "pattern":
+      return "PATRÓN";
+    case "framework":
+      return "MARCO";
+    case "page":
+      return "PÁGINA";
+    default:
+      return "CASO";
+  }
 }
 
 export function SiteSearch({ variant = "default", onSelect }: Props = {}) {

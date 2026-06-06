@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
 import { T } from "@/components/T";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
 
@@ -31,12 +32,13 @@ export default function ResearcherDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-12 py-4">
-      <Link
-        href="/researchers"
-        className="inline-block text-sm text-muted hover:text-accent"
-      >
-        <T es="← Volver a investigadores" en="← Back to researchers" />
-      </Link>
+      <Breadcrumb
+        items={[
+          { href: "/", es: "Inicio", en: "Home" },
+          { href: "/researchers", es: "Investigadores", en: "Researchers" },
+          { es: r.name, en: r.name },
+        ]}
+      />
 
       {/* Zone A — Identification */}
       <header className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">

@@ -74,7 +74,8 @@ export default function FrameworksPage() {
             {frameworks.map((f) => (
               <tr
                 key={f.id}
-                className={`border-t border-border ${
+                id={f.id}
+                className={`scroll-mt-20 border-t border-border ${
                   f.id === "plurality" ? "bg-accent/5" : ""
                 }`}
               >

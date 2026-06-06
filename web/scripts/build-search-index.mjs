@@ -2,12 +2,12 @@
 /**
  * Build-time generation of the client-side search index.
  *
- * Reads data/cases/*.json + data/researchers.json and emits a unified
- * search payload at public/search-index.json. Each entry carries a
- * `type` discriminator so SiteSearch can route, badge, and rank by
- * kind. Frameworks and patterns intentionally not indexed yet — they
- * have fewer items and are typically found by browsing /frameworks
- * and /patterns directly.
+ * Reads data/cases/*.json + data/researchers.json + data/patterns.json +
+ * data/frameworks.json and emits a unified search payload at
+ * public/search-index.json. Each entry carries a `type` discriminator so
+ * SiteSearch can route, badge, and rank by kind. A small set of static
+ * section pages (probabilidades, atlas, about…) is indexed too so they
+ * are reachable from search, not just the global nav.
  */
 
 import fs from "node:fs";
@@ -68,12 +68,124 @@ const researcherEntries = researchers.map((r) => ({
     .join(" "),
 }));
 
+// ── PATTERNS ─────────────────────────────────────────────────────────────
+const patternsData = JSON.parse(
+  fs.readFileSync(path.join(dataDir, "patterns.json"), "utf-8"),
+);
+
+const patternEntries = patternsData.map((p) => ({
+  type: "pattern",
+  id: p.letter, // href → /patterns/{letter}
+  num: 0,
+  name: p.name,
+  subtitle: `Patrón ${p.id}`,
+  meta: "",
+  flag: "",
+  year: "",
+  year_start: 0,
+  summary: p.description,
+  summary_en: p.description_en,
+  keywords: [p.id, p.name_en].filter(Boolean).join(" "),
+}));
+
+// ── FRAMEWORKS ───────────────────────────────────────────────────────────
+const frameworksData = JSON.parse(
+  fs.readFileSync(path.join(dataDir, "frameworks.json"), "utf-8"),
+);
+
+const frameworkEntries = frameworksData.map((f) => ({
+  type: "framework",
+  id: f.id, // href → /frameworks#{id}
+  num: 0,
+  name: f.name,
+  subtitle: f.author || "Marco teórico",
+  meta: "",
+  flag: "",
+  year: "",
+  year_start: 0,
+  summary: f.one_sentence_es,
+  summary_en: f.one_sentence_en,
+  keywords: [f.name_en, f.origin].filter(Boolean).join(" "),
+}));
+
+// ── STATIC PAGES ─────────────────────────────────────────────────────────
+const pageEntries = [
+  {
+    id: "probabilidades",
+    name: "Probabilidades",
+    summary: "Las 8 hipótesis y su nivel de confianza ICD-203.",
+    summary_en: "The 8 hypotheses and their ICD-203 confidence level.",
+    keywords: "hipotesis hypotheses ICD-203 confianza confidence",
+  },
+  {
+    id: "atlas",
+    name: "Atlas",
+    summary: "Mapa global de los casos.",
+    summary_en: "Global map of the cases.",
+    keywords: "mapa map geografia geography",
+  },
+  {
+    id: "about",
+    name: "Metodología",
+    summary: "Cómo se construyó el corpus.",
+    summary_en: "How the corpus was built.",
+    keywords: "metodo method methodology criterios",
+  },
+  {
+    id: "resumen",
+    name: "Resumen",
+    summary: "Lectura de 10 minutos.",
+    summary_en: "10-minute read.",
+    keywords: "resumen summary overview",
+  },
+  {
+    id: "fuentes",
+    name: "Fuentes",
+    summary: "Bibliografía y fuentes primarias.",
+    summary_en: "Bibliography and primary sources.",
+    keywords: "bibliografia sources FOIA",
+  },
+  {
+    id: "patterns",
+    name: "Patrones",
+    summary: "Índice de patrones recurrentes del corpus.",
+    summary_en: "Index of recurring corpus patterns.",
+    keywords: "patrones patterns",
+  },
+  {
+    id: "frameworks",
+    name: "Marcos teóricos",
+    summary: "Marcos teóricos comparados.",
+    summary_en: "Theoretical frameworks compared.",
+    keywords: "marcos frameworks teorias theories",
+  },
+].map((p) => ({
+  type: "page",
+  id: p.id, // href → /{id}
+  num: 0,
+  name: p.name,
+  subtitle: "Sección",
+  meta: "",
+  flag: "",
+  year: "",
+  year_start: 0,
+  summary: p.summary,
+  summary_en: p.summary_en,
+  keywords: p.keywords,
+}));
+
 // ── EMIT ─────────────────────────────────────────────────────────────────
-const index = [...caseEntries, ...researcherEntries];
+const index = [
+  ...caseEntries,
+  ...researcherEntries,
+  ...patternEntries,
+  ...frameworkEntries,
+  ...pageEntries,
+];
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
 fs.writeFileSync(outFile, JSON.stringify(index));
 
 const sizeKb = (fs.statSync(outFile).size / 1024).toFixed(1);
 console.log(
-  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers → public/search-index.json (${sizeKb} KB)`,
+  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${patternEntries.length} patterns + ${frameworkEntries.length} frameworks + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
 );
