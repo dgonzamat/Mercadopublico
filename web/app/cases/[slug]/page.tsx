@@ -157,7 +157,7 @@ export default function CaseDetailPage({
             <span className="mx-2 text-text/30">·</span>
             <T
               es={`Evidencia ${TIER_META[c.tier].plain.toLowerCase()}`}
-              en={`Evidence: ${TIER_META[c.tier].plain.toLowerCase()}`}
+              en={`Evidence: ${TIER_META[c.tier].plain_en.toLowerCase()}`}
             />
           </p>
           {c.epistemicStatus && c.epistemicStatus !== "documented" && (
@@ -208,7 +208,12 @@ export default function CaseDetailPage({
           />
           <KeyFact es="Categoría" en="Category" value={c.category} />
         </div>
-        <Caption>{TIER_META[c.tier].description}</Caption>
+        <Caption>
+          <T
+            es={TIER_META[c.tier].description}
+            en={TIER_META[c.tier].description_en}
+          />
+        </Caption>
       </header>
 
       {/* EN-only disclaimer when no EN narrative available */}

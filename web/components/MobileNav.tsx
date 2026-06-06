@@ -61,6 +61,20 @@ export function MobileNav() {
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);
 
+  // Locale activo para los aria-label (atributos, no pueden usar <T>).
+  const [locale, setLocale] = useState<"es" | "en">("es");
+  useEffect(() => {
+    const el = document.documentElement;
+    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
+    read();
+    const obs = new MutationObserver(read);
+    obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
+    return () => obs.disconnect();
+  }, []);
+  const closeLabel = locale === "es" ? "Cerrar menú" : "Close menu";
+  const openLabel = locale === "es" ? "Abrir menú" : "Open menu";
+  const navLabel = locale === "es" ? "Navegación principal" : "Main navigation";
+
   useEffect(() => {
     if (!open) return;
     function onKeyDown(e: KeyboardEvent) {
@@ -80,7 +94,7 @@ export function MobileNav() {
     <>
       <button
         type="button"
-        aria-label={open ? "Cerrar menú" : "Abrir menú"}
+        aria-label={open ? closeLabel : openLabel}
         aria-expanded={open}
         aria-controls="mobile-nav-drawer"
         onClick={() => setOpen((v) => !v)}
@@ -108,7 +122,7 @@ export function MobileNav() {
           <nav
             className="min-h-full bg-text"
             onClick={(e) => e.stopPropagation()}
-            aria-label="Navegación principal"
+            aria-label={navLabel}
           >
             {/* TOP BAR — matches header height + close button */}
             <div className="sticky top-0 z-10 flex items-center justify-between border-b border-bg/15 bg-text px-4 py-5">
@@ -119,7 +133,7 @@ export function MobileNav() {
                 <LocaleToggle variant="drawer" />
                 <button
                   type="button"
-                  aria-label="Cerrar menú"
+                  aria-label={closeLabel}
                   onClick={() => setOpen(false)}
                   className="inline-flex h-10 items-center gap-2 border-2 border-bg bg-text px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
                 >
