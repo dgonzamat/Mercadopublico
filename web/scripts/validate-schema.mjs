@@ -80,6 +80,18 @@ researchers.forEach((r, i) => {
   // Campos opcionales: si están, deben ser string
   for (const f of ["photo", "photo_credit", "photo_license"])
     if (r[f] !== undefined && !isStr(r[f])) err(w, `${f} debe ser string`);
+
+  // sources opcional: si está, array de { name, url?, note?, note_en? }
+  if (r.sources !== undefined) {
+    if (!isArr(r.sources)) err(w, "sources debe ser array");
+    else
+      r.sources.forEach((s, j) => {
+        if (!isStr(s.name)) err(`${w}.sources[${j}]`, "name obligatorio (string)");
+        for (const f of ["url", "note", "note_en"])
+          if (s[f] !== undefined && !isStr(s[f]))
+            err(`${w}.sources[${j}]`, `${f} debe ser string`);
+      });
+  }
 });
 
 // ─── 3. data/cases/*.json ────────────────────────────────────────────────

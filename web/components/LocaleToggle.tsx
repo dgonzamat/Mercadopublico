@@ -12,7 +12,19 @@ type Locale = "es" | "en";
  * the stored locale and update the html dataset. If the user previously
  * chose EN, the visible content shifts to EN immediately after hydration.
  */
-export function LocaleToggle() {
+// Per-variant chrome. The header sits on the light paper bg; the drawer
+// sits on the dark (bg-text) mobile menu, so it needs inverted colors.
+const VARIANT = {
+  header:
+    "self-stretch border-l border-text/15 px-3 text-text hover:bg-text hover:text-bg",
+  drawer: "border-2 border-bg px-3 py-2 text-bg hover:bg-bg hover:text-text",
+} as const;
+
+export function LocaleToggle({
+  variant = "header",
+}: {
+  variant?: keyof typeof VARIANT;
+}) {
   const [locale, setLocale] = useState<Locale>("es");
 
   useEffect(() => {
@@ -38,7 +50,7 @@ export function LocaleToggle() {
       aria-label={
         locale === "es" ? "Switch to English" : "Cambiar a español"
       }
-      className="inline-flex items-center gap-1 self-stretch border-l border-text/15 px-3 font-mono text-xs uppercase tracking-widest text-text hover:bg-text hover:text-bg"
+      className={`inline-flex items-center gap-1 font-mono text-xs uppercase tracking-widest ${VARIANT[variant]}`}
     >
       <span aria-hidden className={locale === "es" ? "text-accent" : ""}>
         ES
