@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { UAPCase } from "@/lib/types";
+import { EpistemicBadge } from "@/components/Badge";
 
 export function CaseRow({ caseData }: { caseData: UAPCase }) {
   const tierColor =
@@ -24,12 +25,15 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       </span>
       <span className="sr-only">{caseData.country_name}.</span>
       <div className="min-w-0">
-        <p className="truncate text-sm font-medium text-text group-hover:text-accent">
-          {caseData.name}
-          <span className="ml-2 font-mono text-xs text-muted sm:hidden">
-            · {year}
-          </span>
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="truncate text-sm font-medium text-text group-hover:text-accent">
+            {caseData.name}
+            <span className="ml-2 font-mono text-xs text-muted sm:hidden">
+              · {year}
+            </span>
+          </p>
+          <EpistemicBadge status={caseData.epistemicStatus} compact />
+        </div>
         <p className="truncate text-xs text-muted">{caseData.summary}</p>
       </div>
       <span className="hidden w-16 text-right font-mono text-xs tabular-nums text-muted sm:inline">

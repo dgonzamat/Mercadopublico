@@ -1,4 +1,5 @@
 import { cn, TIER_META, CATEGORY_META, type TierKey } from "@/lib/ui";
+import { T } from "@/components/T";
 
 type BadgeVariant = "neutral" | "outline" | "accent";
 
@@ -51,6 +52,50 @@ export function TierBadge({ tier, withDescription = false }: { tier: TierKey; wi
       <span className="font-mono uppercase tracking-widest text-muted">
         {tier}
       </span>
+    </span>
+  );
+}
+
+// Epistemic-status chips. "documented" is the default and renders nothing;
+// only recent/in-progress ("developing") and near-future corpus content
+// ("projected") get a visible marker so speculative entries read honestly.
+const EPISTEMIC: Record<
+  "developing" | "projected",
+  { icon: string; es: string; en: string; cls: string }
+> = {
+  developing: {
+    icon: "●",
+    es: "En desarrollo",
+    en: "Developing",
+    cls: "border-accent/30 bg-accent/10 text-accent",
+  },
+  projected: {
+    icon: "◷",
+    es: "Proyectado",
+    en: "Projected",
+    cls: "border-dashed border-muted/60 bg-bg text-muted",
+  },
+};
+
+export function EpistemicBadge({
+  status,
+  compact = false,
+}: {
+  status?: string;
+  compact?: boolean;
+}) {
+  if (status !== "developing" && status !== "projected") return null;
+  const m = EPISTEMIC[status];
+  return (
+    <span
+      className={cn(
+        "inline-flex shrink-0 items-center gap-1 rounded border px-2 py-0.5 font-mono text-xs uppercase tracking-widest",
+        m.cls,
+      )}
+      title={compact ? m.es : undefined}
+    >
+      <span aria-hidden>{m.icon}</span>
+      {!compact && <T es={m.es} en={m.en} />}
     </span>
   );
 }

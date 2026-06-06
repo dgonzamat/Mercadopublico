@@ -5,6 +5,7 @@ import { TIER_META } from "@/lib/ui";
 import { getHypothesis } from "@/lib/hypotheses";
 import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
+import { EpistemicBadge } from "@/components/Badge";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd } from "@/lib/jsonld";
 
@@ -151,6 +152,9 @@ export default function CaseDetailPage({
               en={`Evidence: ${TIER_META[c.tier].plain.toLowerCase()}`}
             />
           </p>
+          {c.epistemicStatus && c.epistemicStatus !== "documented" && (
+            <EpistemicBadge status={c.epistemicStatus} />
+          )}
         </div>
 
         <div className="grid grid-cols-[auto_1fr] items-baseline gap-x-6 gap-y-4 md:gap-x-10">
