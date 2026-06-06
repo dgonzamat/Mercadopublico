@@ -19,6 +19,16 @@ function effectiveLabelFor(id: string): { pct: number; es: string; en: string } 
 export const metadata = {
   title: "UAP Codex — La evidencia institucional",
   description: `Compendio de ${STATS.cases} casos UAP institucionales ${STATS.startYear}–${STATS.endYear} — los que sobrevivieron filtros militares, congresionales y periodísticos. Probabilidades calibradas vía ICD-203.`,
+  // Canonical/hreflang específicos de la home. NO van en el layout: ahí se
+  // heredan a todas las páginas y hacían que cada ruta canonicalizara a "/".
+  alternates: {
+    canonical: "/",
+    languages: {
+      es: "/",
+      en: "/",
+      "x-default": "/",
+    },
+  },
 };
 
 export default function HomePage() {

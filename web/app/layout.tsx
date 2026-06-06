@@ -37,14 +37,6 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   applicationName: "UAP Codex",
   authors: [{ name: "UAP Codex" }],
-  alternates: {
-    canonical: "/",
-    languages: {
-      es: "/",
-      en: "/",
-      "x-default": "/",
-    },
-  },
   openGraph: {
     type: "website",
     siteName: "UAP Codex",
