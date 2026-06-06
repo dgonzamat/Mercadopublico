@@ -1,5 +1,6 @@
 import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
+import { CategoryNav } from "@/components/CategoryNav";
 import { CorpusStats } from "@/components/CorpusStats";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -45,6 +46,12 @@ const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
 
 export default function CasesPage() {
   const sorted = [...cases].sort((a, b) => a.year_start - b.year_start);
+  const eras = ERAS.map((era) => ({
+    era,
+    eraCases: sorted.filter(
+      (c) => c.year_start >= era.start && c.year_start <= era.end,
+    ),
+  })).filter(({ eraCases }) => eraCases.length > 0);
 
   return (
     <div className="space-y-12 py-8">
@@ -65,6 +72,16 @@ export default function CasesPage() {
           />
         </Lede>
       </header>
+
+      <CategoryNav
+        label={{ es: "Saltar a una era", en: "Jump to an era" }}
+        items={eras.map(({ era, eraCases }) => ({
+          anchor: `era-${era.start}`,
+          es: `${era.start}–${era.end}`,
+          en: `${era.start}–${era.end}`,
+          count: eraCases.length,
+        }))}
+      />
 
       <details className="group border-y border-text/15 py-4">
         <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
@@ -101,13 +118,13 @@ export default function CasesPage() {
       </div>
 
       <div className="space-y-8 pt-8">
-        {ERAS.map((era) => {
-          const eraCases = sorted.filter(
-            (c) => c.year_start >= era.start && c.year_start <= era.end,
-          );
-          if (eraCases.length === 0) return null;
+        {eras.map(({ era, eraCases }) => {
           return (
-            <section key={`${era.start}-${era.end}`}>
+            <section
+              key={`${era.start}-${era.end}`}
+              id={`era-${era.start}`}
+              className="scroll-mt-20"
+            >
               <h2 className="sticky top-14 z-10 -mx-4 bg-bg/95 px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted backdrop-blur">
                 <span className="text-text">
                   {era.start}–{era.end}
