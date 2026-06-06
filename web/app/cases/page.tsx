@@ -3,6 +3,7 @@ import { CaseRow } from "@/components/CaseRow";
 import { CorpusStats } from "@/components/CorpusStats";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
+import { EpistemicBadge } from "@/components/Badge";
 
 export const metadata = {
   title: "Casos · UAP Codex",
@@ -31,13 +32,13 @@ const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
   {
     start: 1996,
     end: 2016,
-    es: "Pre-disclosure: filtraciones, libros, demandas",
+    es: "Pre-divulgación: filtraciones, libros, demandas",
     en: "Pre-disclosure: leaks, books, lawsuits",
   },
   {
     start: 2017,
     end: 2030,
-    es: "Disclosure: Nimitz, Grusch, PURSUE",
+    es: "Divulgación: Nimitz, Grusch, PURSUE",
     en: "Disclosure: Nimitz, Grusch, PURSUE",
   },
 ];
@@ -84,6 +85,20 @@ export default function CasesPage() {
           <CorpusStats />
         </div>
       </details>
+
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
+        <span className="font-mono uppercase tracking-widest text-muted/70">
+          <T es="Sin marca = documentado." en="No marker = documented." />
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <EpistemicBadge status="developing" compact />
+          <T es="reciente / en curso" en="recent / in progress" />
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <EpistemicBadge status="projected" compact />
+          <T es="proyectado / especulativo" en="projected / speculative" />
+        </span>
+      </div>
 
       <div className="space-y-8 pt-8">
         {ERAS.map((era) => {

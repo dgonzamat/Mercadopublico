@@ -1,4 +1,5 @@
 export type Tier = "S" | "A" | "B";
+export type EpistemicStatus = "documented" | "developing" | "projected";
 export type Category = "incident" | "document" | "contactee" | "crop_circle";
 export type VerdictMoral = "neutral" | "hostile" | "positive" | "variable";
 
@@ -60,6 +61,10 @@ export interface UAPCase {
   flag: string;
   location: Location;
   tier: Tier;
+  // Estatus epistémico del caso. Ausente = "documented" (evidencia
+  // primaria verificable). "developing" = reciente/en curso; "projected"
+  // = contenido near-future del corpus (análisis, no hecho documentado).
+  epistemicStatus?: EpistemicStatus;
   probability: number;
   summary: string;
   summary_en?: string;

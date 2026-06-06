@@ -210,7 +210,7 @@ export default function RootLayout({
                   />
                   <FooterLink
                     href="/frameworks"
-                    es="Frameworks"
+                    es="Marcos teóricos"
                     en="Frameworks"
                   />
                   <FooterLink href="/about" es="Metodología" en="Method" />

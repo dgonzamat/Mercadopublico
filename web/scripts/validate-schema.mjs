@@ -129,6 +129,11 @@ for (const file of caseFiles) {
   if (!isStr(c.country_name)) err(w, "country_name obligatorio (string)");
   if (!isStr(c.flag)) err(w, "flag obligatorio (string)");
   if (!TIERS.has(c.tier)) err(w, `tier inválido "${c.tier}" (S/A/B)`);
+  if (
+    c.epistemicStatus !== undefined &&
+    !["documented", "developing", "projected"].includes(c.epistemicStatus)
+  )
+    err(w, `epistemicStatus inválido "${c.epistemicStatus}"`);
   if (!CATEGORIES.has(c.category)) err(w, `category inválida "${c.category}"`);
   if (!isNum(c.probability)) err(w, "probability obligatorio (number)");
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");

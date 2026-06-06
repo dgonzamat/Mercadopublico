@@ -299,7 +299,7 @@ export default function HomePage() {
               <T
                 es={
                   <>
-                    <strong className="text-accent">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent">2004</strong> Nimitz — primer video oficial ATFLIR · <strong className="text-accent">2026</strong> PURSUE — primer disclosure presidencial. Cada pico es un momento donde una institución no pudo seguir negando.
+                    <strong className="text-accent">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent">2004</strong> Nimitz — primer video oficial ATFLIR · <strong className="text-accent">2026</strong> PURSUE — primera divulgación presidencial. Cada pico es un momento donde una institución no pudo seguir negando.
                   </>
                 }
                 en={
