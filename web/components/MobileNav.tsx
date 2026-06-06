@@ -24,20 +24,24 @@ const NAV_LINKS = [
     en: { label: "Atlas", sub: "Global case map" },
   },
   {
-    href: "/resumen",
-    es: { label: "Resumen", sub: "Lectura 10 min" },
-    en: { label: "Summary", sub: "10-min read" },
+    href: "/researchers",
+    es: { label: "Investigadores", sub: "Personas detrás del corpus" },
+    en: { label: "Researchers", sub: "People behind the corpus" },
   },
   {
     href: "/about",
     es: { label: "Metodología", sub: "Cómo se construyó" },
     en: { label: "Method", sub: "How it was built" },
   },
+  {
+    href: "/resumen",
+    es: { label: "Resumen", sub: "Lectura 10 min" },
+    en: { label: "Summary", sub: "10-min read" },
+  },
 ];
 
 const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
-  { href: "/researchers", es: "Ecosistema", en: "Ecosystem" },
   { href: "/frameworks", es: "Frameworks", en: "Frameworks" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
 ];
