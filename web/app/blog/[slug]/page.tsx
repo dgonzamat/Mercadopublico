@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { posts, getPost } from "@/lib/posts";
+import { postJsonLd } from "@/lib/jsonld";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
@@ -35,6 +36,10 @@ export default function PostDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-10 py-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(postJsonLd(p)) }}
+      />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
           items={[

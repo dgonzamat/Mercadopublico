@@ -1,5 +1,5 @@
 import { SITE_URL } from "./site";
-import type { UAPCase } from "./types";
+import type { UAPCase, Post, Researcher } from "./types";
 import { STATS } from "./siteStats";
 
 /**
@@ -42,7 +42,7 @@ export function caseJsonLd(c: UAPCase) {
   // site-wide OG default. Either satisfies Google's "image" requirement.
   const image = c.primaryDocument?.url
     ? [c.primaryDocument.url]
-    : [`${SITE_URL}/og-default.png`];
+    : [`${SITE_URL}/og.png`];
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -96,5 +96,48 @@ export function caseJsonLd(c: UAPCase) {
           : {}),
       },
     ],
+  };
+}
+
+export function postJsonLd(p: Post) {
+  const url = `${SITE_URL}/blog/${p.id}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${url}#post`,
+    headline: p.title,
+    description: p.summary,
+    inLanguage: p.body_en ? ["es", "en"] : ["es"],
+    url,
+    datePublished: p.date,
+    dateModified: p.date,
+    image: [`${SITE_URL}/og.png`],
+    ...(p.tags && p.tags.length > 0 ? { keywords: p.tags.join(", ") } : {}),
+    author: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#org`,
+      name: "UAP Codex",
+      url: SITE_URL,
+    },
+    publisher: { "@id": `${SITE_URL}/#org` },
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+  };
+}
+
+export function researcherJsonLd(r: Researcher) {
+  const url = `${SITE_URL}/researchers/${r.id}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${url}#person`,
+    name: r.name,
+    description: r.bio_short,
+    url,
+    ...(r.photo ? { image: r.photo } : {}),
+    ...(r.credentials ? { jobTitle: r.credentials } : {}),
+    ...(r.born ? { birthDate: String(r.born) } : {}),
+    ...(r.death ? { deathDate: String(r.death) } : {}),
+    subjectOf: { "@id": `${SITE_URL}/#website` },
   };
 }
