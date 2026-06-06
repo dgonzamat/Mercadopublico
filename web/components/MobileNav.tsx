@@ -31,6 +31,11 @@ const NAV_LINKS = [
     en: { label: "Researchers", sub: "People behind the corpus" },
   },
   {
+    href: "/blog",
+    es: { label: "Blog", sub: "Notas de método y avances" },
+    en: { label: "Blog", sub: "Method notes and progress" },
+  },
+  {
     href: "/about",
     es: { label: "Metodología", sub: "Cómo se construyó" },
     en: { label: "Method", sub: "How it was built" },
@@ -45,7 +50,6 @@ const NAV_LINKS = [
 const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
   { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
-  { href: "/blog", es: "Blog", en: "Blog" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
   { href: "/contact", es: "Contacto", en: "Contact" },
 ];

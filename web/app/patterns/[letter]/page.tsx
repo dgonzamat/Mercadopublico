@@ -45,29 +45,36 @@ export default function PatternDetailPage({
 
       <header>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          Patrón {p.id}
+          <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} />
         </p>
         <h1
           className="mt-2 text-3xl font-bold text-text"
           style={{ borderLeftColor: p.color, borderLeftWidth: 4, paddingLeft: 12 }}
         >
-          {p.name}
+          <T es={p.name} en={p.name_en} />
         </h1>
       </header>
 
       <section>
-        <p className="text-text">{p.description}</p>
-        <p className="mt-2 text-sm italic text-muted">{p.description_en}</p>
+        <p className="text-text">
+          <T es={p.description} en={p.description_en} />
+        </p>
       </section>
 
       <section>
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-          Casos que exhiben este patrón ({patternCases.length})
+          <T
+            es={`Casos que exhiben este patrón (${patternCases.length})`}
+            en={`Cases exhibiting this pattern (${patternCases.length})`}
+          />
         </h2>
         <div className="mt-2">
           {patternCases.length === 0 ? (
             <p className="text-muted">
-              Patrón estructural/meta — sin casos individuales en este corpus.
+              <T
+                es="Patrón estructural/meta — sin casos individuales en este corpus."
+                en="Structural/meta pattern — no individual cases in this corpus."
+              />
             </p>
           ) : (
             patternCases.map((c) => <CaseRow key={c.id} caseData={c} />)
