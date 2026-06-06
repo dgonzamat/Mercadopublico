@@ -84,7 +84,7 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobile-nav-drawer"
         onClick={() => setOpen((v) => !v)}
-        className="sm:hidden inline-flex items-center gap-3 self-stretch border-l-4 border-text bg-accent px-5 font-display text-base font-medium text-bg hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className="lg:hidden inline-flex items-center gap-3 self-stretch border-l-4 border-text bg-accent px-5 font-display text-base font-medium text-bg hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
         <span aria-hidden className="text-lg leading-none">
           {open ? "✕" : "☰"}
@@ -101,7 +101,7 @@ export function MobileNav() {
       {open && (
         <div
           id="mobile-nav-drawer"
-          className="sm:hidden fixed inset-0 z-40 overflow-y-auto bg-text text-bg"
+          className="lg:hidden fixed inset-0 z-40 overflow-y-auto bg-text text-bg"
           onClick={() => setOpen(false)}
           role="presentation"
         >

@@ -9,13 +9,15 @@ import { T } from "@/components/T";
 /**
  * Client-side search component.
  *
- * - Lazy-loads /search-index.json on first focus (no impact on First Load JS).
- * - Fuse.js fuzzy match with weighted keys (name > subtitle > summary).
- * - Indexes cases, researchers, patterns, frameworks and static section
- *   pages; each entry's `type` decides route + badge so a search for
- *   "Grusch" lands on /researchers/grusch and "interdimensional" on its
- *   pattern, not nothing.
- * - Keyboard: `/` or Cmd/Ctrl+K to focus, ↑↓ to navigate, Enter to open,
+ * - Desktop: a search ICON in the header that opens an overlay panel
+ *   (input + results) anchored to it. The overlay is absolutely positioned
+ *   so it never competes for header width — that keeps the top bar from
+ *   overflowing/overlapping the wordmark.
+ * - Mobile: an always-visible input inside the nav drawer.
+ * - Lazy-loads /search-index.json on first open (no impact on First Load JS).
+ * - Fuse.js fuzzy match; indexes cases, researchers, posts, patterns,
+ *   frameworks and static pages; each entry's `type` decides route + badge.
+ * - Keyboard: `/` or Cmd/Ctrl+K to open, ↑↓ to navigate, Enter to open,
  *   Esc to close. (Mobile variant skips the hotkey listener.)
  */
 
@@ -73,17 +75,35 @@ function badgeLabelFor(type: IndexEntry["type"]): { es: string; en: string } {
   }
 }
 
+function SearchIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      aria-hidden
+    >
+      <circle cx="11" cy="11" r="7" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+  );
+}
+
 export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   const router = useRouter();
   const isMobile = variant === "mobile";
   const [query, setQuery] = useState("");
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); // results panel visible (query >= 2)
+  const [expanded, setExpanded] = useState(false); // desktop overlay open
   const [selected, setSelected] = useState(0);
   const [index, setIndex] = useState<IndexEntry[] | null>(null);
   const [fuse, setFuse] = useState<Fuse<IndexEntry> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  // Locale activo para los atributos que no pueden usar <T> (placeholder,
-  // label). Se sincroniza con data-locale del <html> que setea LocaleToggle.
+  // Locale activo para atributos que no pueden usar <T> (placeholder, label).
   const [locale, setLocale] = useState<"es" | "en">("es");
 
   useEffect(() => {
@@ -123,6 +143,20 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
     }
   }
 
+  function openSearch() {
+    loadIndex();
+    setExpanded(true);
+    setOpen(true);
+    setSelected(0);
+    requestAnimationFrame(() => inputRef.current?.focus());
+  }
+
+  function closeSearch() {
+    setExpanded(false);
+    setOpen(false);
+  }
+
+  // Hotkeys (desktop only): `/` or Cmd/Ctrl+K open the search overlay.
   useEffect(() => {
     if (isMobile) return;
     function onKey(e: KeyboardEvent) {
@@ -134,16 +168,16 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
           target.isContentEditable);
       if (!isTyping && e.key === "/") {
         e.preventDefault();
-        inputRef.current?.focus();
+        openSearch();
       }
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        inputRef.current?.focus();
+        openSearch();
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [isMobile]);
+  }, [isMobile]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const results =
     fuse && query.length >= 2
@@ -153,7 +187,7 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   function selectAt(i: number) {
     const r = results[i];
     if (!r) return;
-    setOpen(false);
+    closeSearch();
     setQuery("");
     inputRef.current?.blur();
     onSelect?.();
@@ -173,18 +207,14 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
     } else if (e.key === "Escape") {
       e.preventDefault();
       inputRef.current?.blur();
-      setOpen(false);
+      closeSearch();
     }
   }
 
   // ── Styling per variant ─────────────────────────────────────────────
-  const wrapClass = isMobile ? "" : "relative";
   const inputClass = isMobile
     ? "h-12 w-full border-2 border-bg/30 bg-text px-4 font-mono text-sm text-bg placeholder:text-bg/50 focus:border-accent focus:outline-none"
-    : "h-9 w-32 border border-border bg-bg px-3 font-mono text-xs text-text placeholder:text-muted focus:w-56 focus:border-accent focus:outline-none md:w-40 md:focus:w-64";
-  const panelClass = isMobile
-    ? "mt-3 border-2 border-bg/30 bg-text"
-    : "absolute right-0 top-full z-50 mt-2 w-80 border-2 border-text bg-bg shadow-xl md:w-96";
+    : "h-11 w-full border-b border-border bg-bg px-4 font-mono text-sm text-text placeholder:text-muted focus:outline-none";
   const itemBaseClass = isMobile
     ? "block min-h-[68px] border-b border-bg/15 px-4 py-4 text-sm last:border-b-0"
     : "block border-b border-border/40 px-4 py-3 text-sm last:border-b-0";
@@ -201,103 +231,140 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
     ? "border-t border-bg/15 bg-text px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-bg/60"
     : "border-t border-border bg-panel px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted";
 
-  return (
-    <div className={wrapClass}>
-      <label className="sr-only" htmlFor={isMobile ? "site-search-mobile" : "site-search"}>
-        {locale === "es"
-          ? "Buscar caso, persona, país, año"
-          : "Search case, person, country, year"}
-      </label>
-      <input
-        ref={inputRef}
-        id={isMobile ? "site-search-mobile" : "site-search"}
-        type="search"
-        autoComplete="off"
-        placeholder={
-          isMobile
-            ? locale === "es"
-              ? "Buscar caso, persona, país, año…"
-              : "Search case, person, country, year…"
-            : locale === "es"
-              ? "Buscar…  ( / )"
-              : "Search…  ( / )"
-        }
-        className={inputClass}
-        value={query}
-        onFocus={() => {
-          loadIndex();
-          setOpen(true);
-          setSelected(0);
-        }}
-        onBlur={() => {
-          setTimeout(() => setOpen(false), isMobile ? 200 : 150);
-        }}
-        onChange={(e) => {
-          setQuery(e.target.value);
-          setSelected(0);
-        }}
-        onKeyDown={handleKeyDown}
-      />
-      {open && query.length >= 2 && (
-        <div className={panelClass}>
-          {results.length === 0 ? (
-            <p className={emptyClass}>
-              {fuse ? (
-                <T es="sin resultados" en="no results" />
-              ) : (
-                <T es="cargando…" en="loading…" />
-              )}
-            </p>
+  const placeholder =
+    locale === "es"
+      ? "Buscar caso, persona, país, año…"
+      : "Search case, person, country, year…";
+  const srLabel =
+    locale === "es"
+      ? "Buscar caso, persona, país, año"
+      : "Search case, person, country, year";
+
+  // Shared results list (used by both variants).
+  const resultsList =
+    open && query.length >= 2 ? (
+      results.length === 0 ? (
+        <p className={emptyClass}>
+          {fuse ? (
+            <T es="sin resultados" en="no results" />
           ) : (
-            <ul role="listbox" className={isMobile ? "" : "max-h-[60vh] overflow-y-auto"}>
-              {results.map((r, i) => (
-                <li key={`${r.type}-${r.id}`} role="option" aria-selected={i === selected}>
-                  <Link
-                    href={hrefFor(r)}
-                    onClick={() => {
-                      setOpen(false);
-                      setQuery("");
-                      onSelect?.();
-                    }}
-                    className={`${itemBaseClass} ${
-                      i === selected ? itemActiveOn : itemIdle
+            <T es="cargando…" en="loading…" />
+          )}
+        </p>
+      ) : (
+        <ul role="listbox" className={isMobile ? "" : "max-h-[60vh] overflow-y-auto"}>
+          {results.map((r, i) => (
+            <li key={`${r.type}-${r.id}`} role="option" aria-selected={i === selected}>
+              <Link
+                href={hrefFor(r)}
+                onClick={() => {
+                  closeSearch();
+                  setQuery("");
+                  onSelect?.();
+                }}
+                className={`${itemBaseClass} ${i === selected ? itemActiveOn : itemIdle}`}
+              >
+                <p className="flex items-center gap-2 font-display font-medium leading-tight">
+                  {r.flag && <span aria-hidden>{r.flag}</span>}
+                  <span className="truncate">{r.name}</span>
+                  <span
+                    className={`ml-auto shrink-0 font-mono text-[9px] uppercase tracking-widest ${
+                      i === selected ? metaActive : metaIdle
                     }`}
                   >
-                    <p className="flex items-center gap-2 font-display font-medium leading-tight">
-                      {r.flag && <span aria-hidden>{r.flag}</span>}
-                      <span className="truncate">{r.name}</span>
-                      <span
-                        className={`ml-auto shrink-0 font-mono text-[9px] uppercase tracking-widest ${
-                          i === selected ? metaActive : metaIdle
-                        }`}
-                      >
-                        <T
-                          es={badgeLabelFor(r.type).es}
-                          en={badgeLabelFor(r.type).en}
-                        />
-                      </span>
-                    </p>
-                    <p
-                      className={`mt-1 line-clamp-1 font-mono text-[11px] ${
-                        i === selected ? metaActive : metaIdle
-                      }`}
-                    >
-                      {r.subtitle}{r.meta ? ` · ${r.meta}` : ""} ·{" "}
-                      {locale === "en" && r.summary_en ? r.summary_en : r.summary}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-          {!isMobile && (
-            <p className={footerClass}>
-              <T
-                es="↑↓ navegar · Enter abrir · Esc cerrar"
-                en="↑↓ navigate · Enter open · Esc close"
-              />
-            </p>
-          )}
+                    <T es={badgeLabelFor(r.type).es} en={badgeLabelFor(r.type).en} />
+                  </span>
+                </p>
+                <p
+                  className={`mt-1 line-clamp-1 font-mono text-[11px] ${
+                    i === selected ? metaActive : metaIdle
+                  }`}
+                >
+                  {r.subtitle}
+                  {r.meta ? ` · ${r.meta}` : ""} ·{" "}
+                  {locale === "en" && r.summary_en ? r.summary_en : r.summary}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )
+    ) : null;
+
+  // ── Mobile: always-visible input in the drawer ──────────────────────
+  if (isMobile) {
+    return (
+      <div>
+        <label className="sr-only" htmlFor="site-search-mobile">
+          {srLabel}
+        </label>
+        <input
+          ref={inputRef}
+          id="site-search-mobile"
+          type="search"
+          autoComplete="off"
+          placeholder={placeholder}
+          className={inputClass}
+          value={query}
+          onFocus={() => {
+            loadIndex();
+            setOpen(true);
+            setSelected(0);
+          }}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setSelected(0);
+          }}
+          onKeyDown={handleKeyDown}
+        />
+        {open && query.length >= 2 && (
+          <div className="mt-3 border-2 border-bg/30 bg-text">{resultsList}</div>
+        )}
+      </div>
+    );
+  }
+
+  // ── Desktop: icon trigger + absolutely-positioned overlay ───────────
+  return (
+    <div className="relative flex items-center">
+      <button
+        type="button"
+        aria-label={locale === "es" ? "Buscar  ( / )" : "Search  ( / )"}
+        aria-expanded={expanded}
+        onClick={() => (expanded ? closeSearch() : openSearch())}
+        className="inline-flex h-9 w-9 items-center justify-center border border-border bg-bg text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      >
+        <SearchIcon />
+      </button>
+      {expanded && (
+        <div className="absolute right-0 top-full z-50 mt-2 w-80 border-2 border-text bg-bg shadow-xl md:w-96">
+          <label className="sr-only" htmlFor="site-search">
+            {srLabel}
+          </label>
+          <input
+            ref={inputRef}
+            id="site-search"
+            type="search"
+            autoComplete="off"
+            placeholder={placeholder}
+            className={inputClass}
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setSelected(0);
+            }}
+            onBlur={() => {
+              setTimeout(() => closeSearch(), 150);
+            }}
+            onKeyDown={handleKeyDown}
+          />
+          {resultsList}
+          <p className={footerClass}>
+            <T
+              es="↑↓ navegar · Enter abrir · Esc cerrar"
+              en="↑↓ navigate · Enter open · Esc close"
+            />
+          </p>
         </div>
       )}
     </div>
