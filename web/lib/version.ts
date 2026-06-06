@@ -1,5 +1,5 @@
 /**
- * Build version shown next to the "UAP Codex" wordmark in the header.
+ * Build version shown discreetly in the site footer.
  *
  * Set at build time in CI (.github/workflows/deploy-pages.yml) from the
  * merged PR number — e.g. "v78". Falls back to the short commit SHA when

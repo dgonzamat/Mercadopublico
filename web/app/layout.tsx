@@ -92,15 +92,9 @@ export default function RootLayout({
               >
                 <span className="font-mono text-sm leading-none">▲</span>
               </span>
-              <span className="relative font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
+              <span className="font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
                 UAP
                 <span className="ml-1 italic text-accent">Codex</span>
-                <span
-                  className="pointer-events-none absolute -top-1 right-0 font-mono text-[9px] font-normal not-italic leading-none text-muted"
-                  title="Versión desplegada (número de PR mergeado)"
-                >
-                  {BUILD_VERSION}
-                </span>
               </span>
             </Link>
 
@@ -216,6 +210,12 @@ export default function RootLayout({
                 es="UAP Codex · análisis institucional · 1947–2026"
                 en="UAP Codex · institutional analysis · 1947–2026"
               />
+              <span
+                className="ml-2 normal-case text-muted/70"
+                title="Versión desplegada (número de PR mergeado)"
+              >
+                {BUILD_VERSION}
+              </span>
             </p>
           </div>
         </footer>
