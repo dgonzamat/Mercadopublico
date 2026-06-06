@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { posts, getPost } from "@/lib/posts";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { Eyebrow, H1 } from "@/lib/typography";
 
@@ -34,13 +35,16 @@ export default function PostDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-10 py-4">
-      <Breadcrumb
-        items={[
-          { href: "/", es: "Inicio", en: "Home" },
-          { href: "/blog", es: "Blog", en: "Blog" },
-          { es: p.title, en: p.title_en ?? p.title },
-        ]}
-      />
+      <div className="flex items-center justify-between gap-4">
+        <Breadcrumb
+          items={[
+            { href: "/", es: "Inicio", en: "Home" },
+            { href: "/blog", es: "Blog", en: "Blog" },
+            { es: p.title, en: p.title_en ?? p.title },
+          ]}
+        />
+        <ShareButton title={p.title} />
+      </div>
 
       <header className="space-y-4 border-b-2 border-text pb-6">
         <Eyebrow>
