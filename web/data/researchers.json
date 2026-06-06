@@ -457,6 +457,23 @@
     "sources": [{"name": "Oficina del representante Tim Burchett, Cámara de Representantes de EE.UU.", "note": "Co-liderazgo del grupo de trabajo de desclasificación.", "note_en": "Co-lead of the declassification task force."}]
   },
   {
+    "id": "burlison",
+    "name": "Eric Burlison",
+    "born": 1976,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "credentials": "US Representative (R-MO) + House Oversight Committee",
+    "bio_short": "Representante por el 7º distrito de Misuri desde 2023 e integrante del subcomité de Supervisión de la Cámara que celebró la audiencia UAP de julio de 2023 con Grusch, Graves y Fravor. Sostiene que el gobierno federal 'bloquea activamente' la información sobre el fenómeno e insiste en que los pilotos deben poder reportar sin temor a represalias. Empuja, en clave bipartidista, por un comité permanente del Congreso dedicado a los UAP.",
+    "works": [],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rep.%20Eric%20Burlison%20-%20118th%20Congress%20%28cropped%29.jpg?width=400",
+    "photo_credit": "U.S. House of Representatives",
+    "photo_license": "Public domain",
+    "section_label_en": "Formal political actors",
+    "credentials_en": "US Representative (R-MO) + House Oversight Committee",
+    "bio_short_en": "Representative for Missouri's 7th district since 2023 and a member of the House Oversight subcommittee that held the July 2023 UAP hearing with Grusch, Graves and Fravor. He argues the federal government is 'actively blocking' information on the phenomenon and insists pilots must be able to report without fear of reprisal. He is part of the bipartisan push for a standing congressional committee dedicated to UAP.",
+    "sources": [{"name": "Oficina del representante Eric Burlison, Cámara de Representantes de EE.UU.", "url": "https://burlison.house.gov/", "note": "Integrante del subcomité de Supervisión en la audiencia UAP de julio de 2023.", "note_en": "Member of the Oversight subcommittee at the July 2023 UAP hearing."}]
+  },
+  {
     "id": "coulthart",
     "name": "Ross Coulthart",
     "born": 1963,
