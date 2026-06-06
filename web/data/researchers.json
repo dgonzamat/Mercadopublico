@@ -46,6 +46,125 @@
     ]
   },
   {
+    "id": "ruppelt",
+    "name": "Edward J. Ruppelt",
+    "born": 1923,
+    "death": 1960,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers (histórico)",
+    "credentials": "Captain USAF + Director Project Blue Book (1951–1953) + acuñó el término 'Unidentified Flying Object'",
+    "bio_short": "Primer director profesional del programa USAF de investigación UAP. Su libro 'The Report on Unidentified Flying Objects' (1956) es la primera memoir desde adentro del establishment USAF. Defendió metodología rigurosa frente a presión superior para clasificar todo como 'identified'. Muerte cardiaca a los 37 años — fechada en patrón 8c de testigos críticos que mueren prematuramente.",
+    "works": [
+      { "year": 1956, "title": "The Report on Unidentified Flying Objects", "contribution": "Primera memoir oficial desde adentro del programa USAF Blue Book" }
+    ]
+  },
+  {
+    "id": "keyhoe",
+    "name": "Donald Keyhoe",
+    "born": 1897,
+    "death": 1988,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers (histórico)",
+    "credentials": "USMC Major + Naval Academy + Director NICAP (1956–1969) + autor primer best-seller UAP",
+    "bio_short": "Primera figura pública en denunciar formalmente el cover-up USAF. Como Director NICAP organizó la primera campaña civil sistemática contra el 'debunking' oficial de Project Blue Book. Sus libros (1950, 1953, 1955) introdujeron al público estadounidense la tesis de gobierno encubriendo evidencia — frame que sobrevive hasta hoy.",
+    "works": [
+      { "year": 1950, "title": "The Flying Saucers Are Real", "contribution": "Primer best-seller UAP. Tesis: USAF está ocultando evidencia" },
+      { "year": 1953, "title": "Flying Saucers from Outer Space", "contribution": "Documentación casos militares + presión por Congressional hearings" }
+    ]
+  },
+  {
+    "id": "mcdonald",
+    "name": "James E. McDonald",
+    "born": 1920,
+    "death": 1971,
+    "section": "A",
+    "section_label": "Investigadores científicos (histórico)",
+    "credentials": "PhD physics University of Iowa + Professor Atmospheric Sciences University of Arizona + 1500+ páginas testimonio Congress 1968",
+    "framework": "plurality",
+    "bio_short": "Único físico de credenciales académicas mainstream que se dedicó full-time a investigación UAP desde 1966. Crítico devastador del Condon Report 1968 — calificó la metodología como 'institutional gas-lighting'. Muerte por aparente suicidio 1971, disputada por familiares e investigadores; catalogada en patrón 8c.",
+    "works": [
+      { "year": 1968, "title": "Statement on UFOs (House Symposium Congress)", "contribution": "1500+ páginas testimonio científico, casos sin explicación" },
+      { "year": 1969, "title": "Science in Default", "contribution": "Crítica formal al Condon Report" }
+    ]
+  },
+  {
+    "id": "friedman",
+    "name": "Stanton Friedman",
+    "born": 1934,
+    "death": 2019,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "MSc physics University of Chicago + 14 años industria nuclear (Westinghouse, GE, McDonnell) + 4500+ lectures públicas",
+    "framework": "eth",
+    "bio_short": "Único físico nuclear que dedicó 50+ años full-time a UAP. Centrado en Roswell 1947 — co-investigó con Kevin Randle y Don Schmitt. Publicó MJ-12 documents en 1985, autenticidad nunca verificada y disputada. 'Crash at Corona' (1992) y 'TOP SECRET/MAJIC' (1996) son referencia para la narrativa Roswell-ETH.",
+    "works": [
+      { "year": 1980, "title": "Flying Saucers ARE Real", "contribution": "Compendio casos históricos + tesis ETH" },
+      { "year": 1992, "title": "Crash at Corona", "contribution": "Reconstrucción Roswell con Don Berliner" },
+      { "year": 1996, "title": "TOP SECRET/MAJIC", "contribution": "Documentos MJ-12 + caso institucional" }
+    ]
+  },
+  {
+    "id": "bigelow",
+    "name": "Robert Bigelow",
+    "born": 1945,
+    "section": "A",
+    "section_label": "Sponsors institucionales de investigación",
+    "credentials": "CEO Bigelow Aerospace + Funder NIDS (1995) + Funder BAASS (2007) + AATIP contractor ($22M DIA contract 2008)",
+    "bio_short": "Sponsor privado más importante de research UAP en USA en los 90s y 2000s. Compró Skinwalker Ranch 1996 para study sistemático. Su BAASS ganó el contrato DIA $22M para AATIP — pieza clave en el linkage gobierno-privado de research clasificada. Entrevista 60 Minutes (2017): 'absolutely convinced' aliens han visitado Tierra.",
+    "works": [
+      { "year": 1995, "title": "Founding National Institute for Discovery Science (NIDS)", "contribution": "Primer privately-funded scientific UAP research effort serio" },
+      { "year": 2007, "title": "Founding Bigelow Aerospace Advanced Space Studies (BAASS)", "contribution": "Contractor que ejecutó AATIP a través del DIA" }
+    ]
+  },
+  {
+    "id": "puthoff",
+    "name": "Harold E. Puthoff",
+    "born": 1936,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD electrical engineering Stanford + ex-SRI International Remote Viewing program + President EarthTech International + ex-Science Director BAASS",
+    "bio_short": "Físico aerospace con bridge único entre research clasificada de gobierno (SRI, DIA) y proyectos privados Bigelow. Co-autor de papers técnicos AAWSAP/AATIP sobre advanced propulsion. Su nombre aparece en docenas de papers DTIC desclasificados sobre warp drive, traversable wormholes, zero-point energy.",
+    "works": [
+      { "year": 2010, "title": "Advanced Aerospace Weapons Systems Application Program reports (DTIC)", "contribution": "38 technical reports sobre exotic propulsion en linkage con AATIP" }
+    ]
+  },
+  {
+    "id": "davis",
+    "name": "Eric W. Davis",
+    "born": 1961,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD theoretical physics University of Arizona + EarthTech International + AATIP consultant + co-autor papers exotic propulsion DTIC",
+    "bio_short": "Físico teórico aerospace, autor del Wilson Memo (1997–2002) — documentos personales leaked en 2019 que detallan una conversación entre Davis y Admiral Thomas Wilson sobre un programa SAP no acknowledged de recuperación de craft. Autenticidad disputada, pero el contenido alinea estructuralmente con el testimony de Grusch 2023.",
+    "works": [
+      { "year": 2002, "title": "Wilson Memo (leaked 2019)", "contribution": "Notas personales sobre programas SAP no acknowledged" }
+    ]
+  },
+  {
+    "id": "taylor-t",
+    "name": "Travis Taylor",
+    "born": 1968,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD optical science + Chief Scientist UAP Task Force (2018–2021) + autor 30+ libros + Skinwalker Ranch researcher (post-2018)",
+    "bio_short": "Único científico con triple linkage UAPTF gobierno + Skinwalker Ranch privado + público (History Channel 'Secret of Skinwalker Ranch'). Bridge generacional entre Bigelow research era y AARO/Pentagon era. Sus testimonios públicos sobre incidentes UAPTF son consistente con framework Grusch.",
+    "works": [
+      { "year": 2020, "title": "The Secret of Skinwalker Ranch (History Channel)", "contribution": "Series TV de investigación científica en el rancho" }
+    ]
+  },
+  {
+    "id": "mellon",
+    "name": "Christopher Mellon",
+    "born": 1957,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers",
+    "credentials": "ex-Deputy Assistant Secretary of Defense for Intelligence (Clinton + Bush admins) + Senior Staff Senate Intelligence Committee + Senior Advisor TTSA",
+    "bio_short": "Insider más alto en cargo activo en push para disclosure. Pieza clave en el linkage Pentagon → New York Times artículo Dec 16 2017 (Cooper/Blumenthal/Kean). Sus op-eds en Wall Street Journal y Washington Post (2018+) institucionalizaron el frame 'national security' del problema UAP — retiró el frame del 'UFO enthusiast'.",
+    "works": [
+      { "year": 2018, "title": "Op-eds WSJ + WaPo + The Hill (2018–2024)", "contribution": "Institucionalizó el frame 'national security' del problema UAP" }
+    ]
+  },
+  {
     "id": "mack",
     "name": "John E. Mack",
     "born": 1929,
@@ -147,11 +266,59 @@
     "section": "B",
     "section_label": "Insiders / whistleblowers",
     "credentials": "Ex-US Navy F/A-18F pilot (10 años, VFA-11) + co-fundador Americans for Safe Aerospace + testimonio bajo juramento House Oversight julio 2023",
-    "bio_short": "Piloto Navy que reportó encuentros UAP diarios durante deployment 2014-2015 sobre el Atlantic Test Range (USS Theodore Roosevelt). Sus testimonios + datos ATFLIR son la base de los videos Nimitz/Gimbal/GoFast liberados vía TTSA. Co-fundó Americans for Safe Aerospace (2022) para protección legal a pilotos comerciales y militares que reportan UAP — única ONG dedicada al canal safe-reporting. Testimonio bajo juramento julio 2023 junto con Grusch y Fravor — primer piloto activo en testificar oficialmente sobre UAP en sesión congresional pública.",
+    "bio_short": "Piloto Navy que reportó encuentros UAP diarios durante deployment 2014-2015 sobre el Atlantic Test Range (USS Theodore Roosevelt). Sus testimonios + datos ATFLIR son la base de los videos Nimitz/Gimbal/GoFast liberados vía TTSA. Co-fundó Americans for Safe Aerospace (2022) para protección legal a pilotos comerciales y militares que reportan UAP. Testimonio bajo juramento julio 2023 junto con Grusch y Fravor.",
     "works": [
       { "year": 2022, "title": "Founding Americans for Safe Aerospace", "contribution": "Primera ONG dedicada a protección legal de pilotos reportando UAP" },
       { "year": 2023, "title": "Congressional Testimony (House Oversight, 26 julio)", "contribution": "Primer piloto activo en testificar bajo juramento sobre encuentros UAP" },
-      { "year": 2024, "title": "Encounters (memoir, Penguin)", "contribution": "Narrativa detallada de los encuentros sobre Atlantic Range + cultura de silencio en Navy aviation" }
+      { "year": 2024, "title": "Encounters (memoir, Penguin)", "contribution": "Narrativa detallada de los encuentros sobre Atlantic Range" }
+    ]
+  },
+  {
+    "id": "fravor",
+    "name": "David Fravor",
+    "born": 1962,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers",
+    "credentials": "ex-Commander VFA-41 Black Aces + USS Nimitz pilot Tic-Tac incident (14 nov 2004) + testimonio bajo juramento House Oversight julio 2023",
+    "bio_short": "Comandante de squadron Navy F/A-18 que persiguió el Tic-Tac object durante el incidente Nimitz 14 nov 2004. Su testimony (entrevista Joe Rogan 2019, testimony Congress 2023) es la base canonical de la era moderna disclosure — first credible witness within active-duty Navy aviation con video sensor corroboration.",
+    "works": [
+      { "year": 2023, "title": "Congressional Testimony (House Oversight, 26 julio)", "contribution": "Testimonio bajo juramento sobre el incidente Nimitz Tic-Tac" }
+    ]
+  },
+  {
+    "id": "dietrich",
+    "name": "Alex Dietrich",
+    "born": 1979,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers",
+    "credentials": "ex-Lieutenant Commander US Navy + Wingman de Fravor en Tic-Tac incident + Hoover Institution National Security Fellow",
+    "bio_short": "Pilota wingman de Fravor durante el incidente Nimitz Tic-Tac (14 nov 2004). Sus testimonios (60 Minutes 2021, multiple interviews) corroboran independientemente el reporte Fravor. Como oficial Navy activa por años post-incidente y luego National Security Fellow en Hoover, su credibilidad pública contrasta con stereotypes UFO-enthusiast.",
+    "works": [
+      { "year": 2021, "title": "60 Minutes interview (mayo)", "contribution": "Primer testimony público mainstream de wingman Tic-Tac" }
+    ]
+  },
+  {
+    "id": "nell",
+    "name": "Karl Nell",
+    "born": 1969,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers",
+    "credentials": "Colonel (ret) US Army + 30 años Defense Intelligence + ex-Adviser UAP Task Force + Co-founder Skyfort Group",
+    "bio_short": "Confirmó públicamente (panel SALT iConnections 2023) testimony Grusch sin contradicción institucional — primer Colonel activo en validar el frame 'NHI' del whistleblower. Skyfort Group consultancy post-retirement opera entre Pentagon y privados en UAP-related programs.",
+    "works": [
+      { "year": 2023, "title": "SALT iConnections panel statement", "contribution": "Confirmación pública del frame Grusch desde dentro del establishment" }
+    ]
+  },
+  {
+    "id": "kirkpatrick",
+    "name": "Sean Kirkpatrick",
+    "born": 1968,
+    "section": "B",
+    "section_label": "Insiders / whistleblowers",
+    "credentials": "ex-Director All-domain Anomaly Resolution Office AARO (2022–2023) + Chief Scientist Defense Intelligence + PhD physics",
+    "bio_short": "Primer Director AARO. Postura pública skeptical: la mayoría de UAP reports tienen explicaciones mundanas (drones, balloons, sensor artifacts). Renunció dic 2023 — públicamente por reasons personales, especulación insider sugiere fricción con whistleblower disclosure agenda. Su sucesor Jon Kosloski tomó tono mucho más cautious-acknowledging.",
+    "works": [
+      { "year": 2024, "title": "AARO Historical Record Report Volume I", "contribution": "Reporte oficial AARO con conclusión skeptical sobre programas SAP no acknowledged" }
     ]
   },
   {
@@ -184,6 +351,58 @@
     "bio_short": "Reportó Grusch testimony primero (junio 2023). Mantiene rigor metodológico de verificación cruzada. Tras desaparición Gen. McCasland (mayo 2026) afirmó 'grave national security crisis'. Su figura institucionaliza disclosure journalism — no es contactee ni amateur.",
     "works": [
       { "year": 2021, "title": "In Plain Sight (book)", "contribution": "Caso Australia UAP investigaciones" }
+    ]
+  },
+  {
+    "id": "kean",
+    "name": "Leslie Kean",
+    "born": 1958,
+    "section": "D",
+    "section_label": "Periodistas investigativos",
+    "credentials": "Investigative journalist + co-autora NYT 17 dic 2017 + autora 'UFOs: Generals, Pilots and Government Officials Go on the Record' (2010, NYT bestseller)",
+    "bio_short": "Co-autora del artículo NYT 16 dic 2017 que cambió la conversación pública UAP en USA (con Ralph Blumenthal y Helene Cooper). Su libro 2010 anticipó la disclosure agenda — testimonios on-the-record de pilotos militares y exfuncionarios sin lenguaje sensacionalista. Pieza clave en la transición del frame 'UFO' → 'UAP / national security'.",
+    "works": [
+      { "year": 2010, "title": "UFOs: Generals, Pilots and Government Officials Go on the Record", "contribution": "NYT bestseller — anticipó el frame disclosure de 2017" },
+      { "year": 2017, "title": "NYT 'Glowing Auras and Black Money'", "contribution": "Artículo mainstream que reveló AATIP al público" }
+    ]
+  },
+  {
+    "id": "blumenthal",
+    "name": "Ralph Blumenthal",
+    "born": 1941,
+    "section": "D",
+    "section_label": "Periodistas investigativos",
+    "credentials": "45 años NYT staff writer + part of 2017 Pulitzer-winning investigative team + co-autor NYT 17 dic 2017",
+    "bio_short": "Veterano periodismo investigativo NYT. Co-firmó el artículo 2017 sobre AATIP que rompió el silencio mainstream sobre UAP. Su trayectoria pre-UAP (crimen organizado, política) le dio peso institucional al outing del programa Pentagon — no podía ser tildado de UFO enthusiast.",
+    "works": [
+      { "year": 2017, "title": "NYT 'Glowing Auras and Black Money' (co-autor)", "contribution": "Revelación pública del programa AATIP" },
+      { "year": 2021, "title": "The Believer: Alien Encounters, Hard Science, and the Passion of John Mack", "contribution": "Biografía de John Mack — puente Harvard / abduction research" }
+    ]
+  },
+  {
+    "id": "knapp",
+    "name": "George Knapp",
+    "born": 1952,
+    "section": "D",
+    "section_label": "Periodistas investigativos",
+    "credentials": "Investigative journalist KLAS-TV Las Vegas (40+ años) + 7-time Peabody Award winner + reportaje histórico Bob Lazar (1989)",
+    "bio_short": "Único periodista mainstream que cubrió UAP y secret programs sistemáticamente desde 1989. Reportó Bob Lazar y la story de S-4 que dio shape a la era contemporary UFO culture. Sus piezas investigativas sobre Skinwalker Ranch (con Colm Kelleher), BAASS y AATIP funding son archivo periodístico clave que conectó décadas de research privado y gobierno.",
+    "works": [
+      { "year": 1989, "title": "Bob Lazar / S-4 reportajes KLAS", "contribution": "Origen público de la S-4 / Area 51 narrativa moderna" },
+      { "year": 2005, "title": "Hunt for the Skinwalker (co-autor con Colm Kelleher)", "contribution": "Crónica primaria del rancho Bigelow" }
+    ]
+  },
+  {
+    "id": "delonge",
+    "name": "Tom DeLonge",
+    "born": 1975,
+    "section": "A",
+    "section_label": "Catalizadores culturales",
+    "credentials": "Co-fundador Blink-182 + Co-fundador To The Stars Academy (TTSA) 2017",
+    "bio_short": "Catalyst cultural improbable que financió y organizó el equipo (Mellon, Elizondo, Puthoff, Davis) que produjo el NYT 2017 story. TTSA sirve como vehicle público para release de los videos Nimitz/Gimbal/GoFast. Su narrative 'Sekret Machines' y comic novels son la dimensión popular del disclosure agenda — controversial pero estructuralmente crítico.",
+    "works": [
+      { "year": 2017, "title": "Founding To The Stars Academy (TTSA)", "contribution": "Vehicle público para ex-Pentagon insiders → NYT 2017 → Nimitz videos" },
+      { "year": 2016, "title": "Sekret Machines: Chasing Shadows (con A.J. Hartley)", "contribution": "Novela framework basada en briefings de insiders" }
     ]
   },
   {
