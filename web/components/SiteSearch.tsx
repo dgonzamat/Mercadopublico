@@ -9,39 +9,40 @@ import Fuse from "fuse.js";
  * Client-side search component.
  *
  * - Lazy-loads /search-index.json on first focus (no impact on First Load JS).
- * - Fuse.js fuzzy match with weighted keys (name > country > summary).
+ * - Fuse.js fuzzy match with weighted keys (name > subtitle > summary).
+ * - Indexes cases AND researchers; each entry's `type` decides route +
+ *   badge color so a search for "Grusch" lands on /researchers/grusch,
+ *   not nothing.
  * - Keyboard: `/` or Cmd/Ctrl+K to focus, ↑↓ to navigate, Enter to open,
- *   Esc to close. (Mobile variant skips the hotkey listener since the
- *   drawer is the focus container already.)
- * - Two variants: "default" (compact, dropdown anchored under the input,
- *   for the desktop header) and "mobile" (full-width, inline results,
- *   inverted colours for the dark drawer background).
- *
- * Why client-side: site is `output: "export"`, so no server runtime. The
- * 81-case index gzips to ~10 KB; Fuse.js is ~17 KB gzipped — trivial budget.
+ *   Esc to close. (Mobile variant skips the hotkey listener.)
  */
 
 interface IndexEntry {
+  type: "case" | "researcher";
   id: string;
   num: number;
   name: string;
-  country: string;
+  subtitle: string;
+  meta: string;
   flag: string;
   year: string;
   year_start: number;
-  tier: string;
   summary: string;
   summary_en?: string;
-  patterns: string[];
+  keywords: string;
 }
 
 interface Props {
-  /** Visual variant: "default" for the desktop header, "mobile" for the
-   *  drawer. Defaults to "default". */
   variant?: "default" | "mobile";
-  /** Called after a result is selected (Enter or click). Useful so the
-   *  mobile drawer can close itself when the user picks a case. */
   onSelect?: () => void;
+}
+
+function hrefFor(e: IndexEntry): string {
+  return e.type === "researcher" ? `/researchers/${e.id}` : `/cases/${e.id}`;
+}
+
+function badgeLabelFor(type: IndexEntry["type"]): string {
+  return type === "researcher" ? "PERSONA" : "CASO";
 }
 
 export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
@@ -54,7 +55,6 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   const [fuse, setFuse] = useState<Fuse<IndexEntry> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Lazy load the index on first focus.
   async function loadIndex() {
     if (index) return;
     try {
@@ -65,12 +65,12 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
       setFuse(
         new Fuse(data, {
           keys: [
-            { name: "name", weight: 0.4 },
-            { name: "country", weight: 0.2 },
+            { name: "name", weight: 0.45 },
+            { name: "subtitle", weight: 0.15 },
             { name: "summary", weight: 0.15 },
             { name: "summary_en", weight: 0.1 },
             { name: "year", weight: 0.1 },
-            { name: "patterns", weight: 0.05 },
+            { name: "keywords", weight: 0.05 },
           ],
           threshold: 0.35,
           ignoreLocation: true,
@@ -79,12 +79,10 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
         }),
       );
     } catch {
-      /* network error — leave index null, input still degrades to empty */
+      /* network error — leave fuse null, dropdown shows "cargando…" */
     }
   }
 
-  // Global hotkeys are desktop-only — in mobile the drawer is the
-  // focus container and the user is on a touch keyboard.
   useEffect(() => {
     if (isMobile) return;
     function onKey(e: KeyboardEvent) {
@@ -119,7 +117,7 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
     setQuery("");
     inputRef.current?.blur();
     onSelect?.();
-    router.push(`/cases/${r.id}`);
+    router.push(hrefFor(r));
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
@@ -139,7 +137,7 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
     }
   }
 
-  // ---------- Styling per variant ----------
+  // ── Styling per variant ─────────────────────────────────────────────
   const wrapClass = isMobile ? "" : "relative";
   const inputClass = isMobile
     ? "h-12 w-full border-2 border-bg/30 bg-text px-4 font-mono text-sm text-bg placeholder:text-bg/50 focus:border-accent focus:outline-none"
@@ -166,14 +164,14 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   return (
     <div className={wrapClass}>
       <label className="sr-only" htmlFor={isMobile ? "site-search-mobile" : "site-search"}>
-        Buscar caso, país, año
+        Buscar caso, persona, país, año
       </label>
       <input
         ref={inputRef}
         id={isMobile ? "site-search-mobile" : "site-search"}
         type="search"
         autoComplete="off"
-        placeholder={isMobile ? "Buscar caso, país, año…" : "Buscar…  ( / )"}
+        placeholder={isMobile ? "Buscar caso, persona, país, año…" : "Buscar…  ( / )"}
         className={inputClass}
         value={query}
         onFocus={() => {
@@ -182,8 +180,6 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
           setSelected(0);
         }}
         onBlur={() => {
-          // Delay so a result click registers before close. Mobile uses
-          // inline results so a slightly longer delay avoids a flicker.
           setTimeout(() => setOpen(false), isMobile ? 200 : 150);
         }}
         onChange={(e) => {
@@ -199,9 +195,9 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
           ) : (
             <ul role="listbox" className={isMobile ? "" : "max-h-[60vh] overflow-y-auto"}>
               {results.map((r, i) => (
-                <li key={r.id} role="option" aria-selected={i === selected}>
+                <li key={`${r.type}-${r.id}`} role="option" aria-selected={i === selected}>
                   <Link
-                    href={`/cases/${r.id}`}
+                    href={hrefFor(r)}
                     onClick={() => {
                       setOpen(false);
                       setQuery("");
@@ -212,14 +208,14 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
                     }`}
                   >
                     <p className="flex items-center gap-2 font-display font-medium leading-tight">
-                      <span aria-hidden>{r.flag}</span>
+                      {r.flag && <span aria-hidden>{r.flag}</span>}
                       <span className="truncate">{r.name}</span>
                       <span
-                        className={`ml-auto shrink-0 font-mono text-[10px] tabular-nums ${
+                        className={`ml-auto shrink-0 font-mono text-[9px] uppercase tracking-widest ${
                           i === selected ? metaActive : metaIdle
                         }`}
                       >
-                        {r.year} · Tier {r.tier}
+                        {badgeLabelFor(r.type)}
                       </span>
                     </p>
                     <p
@@ -227,7 +223,7 @@ export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
                         i === selected ? metaActive : metaIdle
                       }`}
                     >
-                      {r.country} · {r.summary}
+                      {r.subtitle}{r.meta ? ` · ${r.meta}` : ""} · {r.summary}
                     </p>
                   </Link>
                 </li>
