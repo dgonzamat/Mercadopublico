@@ -110,10 +110,12 @@ export default function ResearchersPage() {
                         </span>
                       </div>
                       {fw && (
-                        <p className="mt-1 text-xs text-accent">{fw.name}</p>
+                        <p className="mt-1 text-xs text-accent">
+                          <T es={fw.name} en={fw.name_en} />
+                        </p>
                       )}
                       <p className="mt-2 line-clamp-3 text-xs text-muted">
-                        {r.bio_short}
+                        <T es={r.bio_short} en={r.bio_short_en} />
                       </p>
                     </div>
                   </a>

@@ -57,8 +57,11 @@ researchers.forEach((r, i) => {
   if (r.death !== undefined && !isNum(r.death)) err(w, "death debe ser number");
   if (!SECTIONS.has(r.section)) err(w, `section inválida "${r.section}" (A–E)`);
   if (!isStr(r.section_label)) err(w, "section_label obligatorio (string)");
+  if (!isStr(r.section_label_en)) err(w, "section_label_en obligatorio (string)");
   if (!isStr(r.credentials)) err(w, "credentials obligatorio (string)");
+  if (!isStr(r.credentials_en)) err(w, "credentials_en obligatorio (string)");
   if (!isStr(r.bio_short)) err(w, "bio_short obligatorio (string)");
+  if (!isStr(r.bio_short_en)) err(w, "bio_short_en obligatorio (string)");
 
   if (r.framework !== undefined && !frameworkIds.has(r.framework))
     err(w, `framework "${r.framework}" no existe en frameworks.json`);
@@ -70,6 +73,8 @@ researchers.forEach((r, i) => {
       if (!isStr(wk.title)) err(`${w}.works[${j}]`, "title obligatorio (string)");
       if (!isStr(wk.contribution))
         err(`${w}.works[${j}]`, "contribution obligatorio (string)");
+      if (!isStr(wk.contribution_en))
+        err(`${w}.works[${j}]`, "contribution_en obligatorio (string)");
     });
 
   // Campos opcionales: si están, deben ser string

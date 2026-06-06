@@ -107,6 +107,7 @@ export interface ResearcherWork {
   year: number;
   title: string;
   contribution: string;
+  contribution_en: string;
 }
 
 export interface Researcher {
@@ -116,9 +117,12 @@ export interface Researcher {
   death?: number;
   section: "A" | "B" | "C" | "D" | "E";
   section_label: string;
+  section_label_en: string;
   credentials: string;
+  credentials_en: string;
   framework?: string;
   bio_short: string;
+  bio_short_en: string;
   works: ResearcherWork[];
   // Optional portrait. `photo` is a path under /public (e.g.
   // "/researchers/luna.jpg"). Only freely-licensed images (PD/CC) are used;
