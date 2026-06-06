@@ -11,8 +11,11 @@ import Fuse from "fuse.js";
  * - Lazy-loads /search-index.json on first focus (no impact on First Load JS).
  * - Fuse.js fuzzy match with weighted keys (name > country > summary).
  * - Keyboard: `/` or Cmd/Ctrl+K to focus, ↑↓ to navigate, Enter to open,
- *   Esc to close.
- * - Results dropdown anchored under the input; mobile-friendly width.
+ *   Esc to close. (Mobile variant skips the hotkey listener since the
+ *   drawer is the focus container already.)
+ * - Two variants: "default" (compact, dropdown anchored under the input,
+ *   for the desktop header) and "mobile" (full-width, inline results,
+ *   inverted colours for the dark drawer background).
  *
  * Why client-side: site is `output: "export"`, so no server runtime. The
  * 81-case index gzips to ~10 KB; Fuse.js is ~17 KB gzipped — trivial budget.
@@ -32,8 +35,18 @@ interface IndexEntry {
   patterns: string[];
 }
 
-export function SiteSearch() {
+interface Props {
+  /** Visual variant: "default" for the desktop header, "mobile" for the
+   *  drawer. Defaults to "default". */
+  variant?: "default" | "mobile";
+  /** Called after a result is selected (Enter or click). Useful so the
+   *  mobile drawer can close itself when the user picks a case. */
+  onSelect?: () => void;
+}
+
+export function SiteSearch({ variant = "default", onSelect }: Props = {}) {
   const router = useRouter();
+  const isMobile = variant === "mobile";
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(0);
@@ -70,8 +83,10 @@ export function SiteSearch() {
     }
   }
 
-  // Global hotkeys: `/` and Cmd/Ctrl+K open the search.
+  // Global hotkeys are desktop-only — in mobile the drawer is the
+  // focus container and the user is on a touch keyboard.
   useEffect(() => {
+    if (isMobile) return;
     function onKey(e: KeyboardEvent) {
       const target = e.target as HTMLElement | null;
       const isTyping =
@@ -90,11 +105,22 @@ export function SiteSearch() {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [isMobile]);
 
-  const results = fuse && query.length >= 2
-    ? fuse.search(query, { limit: 6 }).map((r) => r.item)
-    : [];
+  const results =
+    fuse && query.length >= 2
+      ? fuse.search(query, { limit: isMobile ? 8 : 6 }).map((r) => r.item)
+      : [];
+
+  function selectAt(i: number) {
+    const r = results[i];
+    if (!r) return;
+    setOpen(false);
+    setQuery("");
+    inputRef.current?.blur();
+    onSelect?.();
+    router.push(`/cases/${r.id}`);
+  }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "ArrowDown") {
@@ -105,10 +131,7 @@ export function SiteSearch() {
       setSelected((s) => Math.max(s - 1, 0));
     } else if (e.key === "Enter" && results[selected]) {
       e.preventDefault();
-      router.push(`/cases/${results[selected].id}`);
-      setOpen(false);
-      setQuery("");
-      inputRef.current?.blur();
+      selectAt(selected);
     } else if (e.key === "Escape") {
       e.preventDefault();
       inputRef.current?.blur();
@@ -116,18 +139,42 @@ export function SiteSearch() {
     }
   }
 
+  // ---------- Styling per variant ----------
+  const wrapClass = isMobile ? "" : "relative";
+  const inputClass = isMobile
+    ? "h-12 w-full border-2 border-bg/30 bg-text px-4 font-mono text-sm text-bg placeholder:text-bg/50 focus:border-accent focus:outline-none"
+    : "h-9 w-32 border border-border bg-bg px-3 font-mono text-xs text-text placeholder:text-muted focus:w-56 focus:border-accent focus:outline-none md:w-40 md:focus:w-64";
+  const panelClass = isMobile
+    ? "mt-3 border-2 border-bg/30 bg-text"
+    : "absolute right-0 top-full z-50 mt-2 w-80 border-2 border-text bg-bg shadow-xl md:w-96";
+  const itemBaseClass = isMobile
+    ? "block min-h-[68px] border-b border-bg/15 px-4 py-4 text-sm last:border-b-0"
+    : "block border-b border-border/40 px-4 py-3 text-sm last:border-b-0";
+  const itemActiveOn = isMobile ? "bg-bg text-text" : "bg-text text-bg";
+  const itemIdle = isMobile
+    ? "text-bg hover:bg-bg hover:text-text"
+    : "text-text hover:bg-panel";
+  const metaIdle = isMobile ? "text-bg/60" : "text-muted";
+  const metaActive = isMobile ? "text-text/70" : "text-bg/70";
+  const emptyClass = isMobile
+    ? "p-4 font-mono text-xs uppercase tracking-widest text-bg/60"
+    : "p-4 font-mono text-xs uppercase tracking-widest text-muted";
+  const footerClass = isMobile
+    ? "border-t border-bg/15 bg-text px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-bg/60"
+    : "border-t border-border bg-panel px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted";
+
   return (
-    <div className="relative">
-      <label className="sr-only" htmlFor="site-search">
+    <div className={wrapClass}>
+      <label className="sr-only" htmlFor={isMobile ? "site-search-mobile" : "site-search"}>
         Buscar caso, país, año
       </label>
       <input
         ref={inputRef}
-        id="site-search"
+        id={isMobile ? "site-search-mobile" : "site-search"}
         type="search"
         autoComplete="off"
-        placeholder="Buscar…  ( / )"
-        className="h-9 w-32 border border-border bg-bg px-3 font-mono text-xs text-text placeholder:text-muted focus:w-56 focus:border-accent focus:outline-none md:w-40 md:focus:w-64"
+        placeholder={isMobile ? "Buscar caso, país, año…" : "Buscar…  ( / )"}
+        className={inputClass}
         value={query}
         onFocus={() => {
           loadIndex();
@@ -135,8 +182,9 @@ export function SiteSearch() {
           setSelected(0);
         }}
         onBlur={() => {
-          // Delay to allow result click to register before close.
-          setTimeout(() => setOpen(false), 150);
+          // Delay so a result click registers before close. Mobile uses
+          // inline results so a slightly longer delay avoids a flicker.
+          setTimeout(() => setOpen(false), isMobile ? 200 : 150);
         }}
         onChange={(e) => {
           setQuery(e.target.value);
@@ -145,13 +193,11 @@ export function SiteSearch() {
         onKeyDown={handleKeyDown}
       />
       {open && query.length >= 2 && (
-        <div className="absolute right-0 top-full z-50 mt-2 w-80 border-2 border-text bg-bg shadow-xl md:w-96">
+        <div className={panelClass}>
           {results.length === 0 ? (
-            <p className="p-4 font-mono text-xs uppercase tracking-widest text-muted">
-              {fuse ? "sin resultados" : "cargando…"}
-            </p>
+            <p className={emptyClass}>{fuse ? "sin resultados" : "cargando…"}</p>
           ) : (
-            <ul role="listbox" className="max-h-[60vh] overflow-y-auto">
+            <ul role="listbox" className={isMobile ? "" : "max-h-[60vh] overflow-y-auto"}>
               {results.map((r, i) => (
                 <li key={r.id} role="option" aria-selected={i === selected}>
                   <Link
@@ -159,11 +205,10 @@ export function SiteSearch() {
                     onClick={() => {
                       setOpen(false);
                       setQuery("");
+                      onSelect?.();
                     }}
-                    className={`block border-b border-border/40 px-4 py-3 text-sm last:border-b-0 ${
-                      i === selected
-                        ? "bg-text text-bg"
-                        : "text-text hover:bg-panel"
+                    className={`${itemBaseClass} ${
+                      i === selected ? itemActiveOn : itemIdle
                     }`}
                   >
                     <p className="flex items-center gap-2 font-display font-medium leading-tight">
@@ -171,7 +216,7 @@ export function SiteSearch() {
                       <span className="truncate">{r.name}</span>
                       <span
                         className={`ml-auto shrink-0 font-mono text-[10px] tabular-nums ${
-                          i === selected ? "text-bg/70" : "text-muted"
+                          i === selected ? metaActive : metaIdle
                         }`}
                       >
                         {r.year} · Tier {r.tier}
@@ -179,7 +224,7 @@ export function SiteSearch() {
                     </p>
                     <p
                       className={`mt-1 line-clamp-1 font-mono text-[11px] ${
-                        i === selected ? "text-bg/70" : "text-muted"
+                        i === selected ? metaActive : metaIdle
                       }`}
                     >
                       {r.country} · {r.summary}
@@ -189,9 +234,9 @@ export function SiteSearch() {
               ))}
             </ul>
           )}
-          <p className="border-t border-border bg-panel px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted">
-            ↑↓ navegar · Enter abrir · Esc cerrar
-          </p>
+          {!isMobile && (
+            <p className={footerClass}>↑↓ navegar · Enter abrir · Esc cerrar</p>
+          )}
         </div>
       )}
     </div>
