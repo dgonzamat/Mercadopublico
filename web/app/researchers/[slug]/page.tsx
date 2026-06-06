@@ -113,6 +113,39 @@ export default function ResearcherDetailPage({
         </section>
       )}
 
+      {/* Zone D — Sources */}
+      {r.sources && r.sources.length > 0 && (
+        <section className="space-y-3 border-t border-border pt-10">
+          <Eyebrow>
+            <T es="Fuentes" en="Sources" />
+          </Eyebrow>
+          <ul className="space-y-2">
+            {r.sources.map((s) => (
+              <li key={s.name} className="text-sm text-text">
+                {s.url ? (
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                  >
+                    {s.name}
+                  </a>
+                ) : (
+                  <span>{s.name}</span>
+                )}
+                {(s.note || s.note_en) && (
+                  <span className="text-muted">
+                    {" — "}
+                    <T es={s.note ?? ""} en={s.note_en ?? s.note ?? ""} />
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <Caption className="border-t border-border pt-6">
         <T
           es="Bio sintetizada del ecosistema de disclosure UAP — categorizada por sección epistemológica (A-E)."

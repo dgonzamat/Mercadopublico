@@ -110,6 +110,13 @@ export interface ResearcherWork {
   contribution_en: string;
 }
 
+export interface ResearcherSource {
+  name: string;
+  url?: string;
+  note?: string;
+  note_en?: string;
+}
+
 export interface Researcher {
   id: string;
   name: string;
@@ -130,4 +137,6 @@ export interface Researcher {
   photo?: string;
   photo_credit?: string;   // attribution / source line
   photo_license?: string;  // e.g. "Public domain"
+  // Primary references that back the bio. Mirrors CaseSource.
+  sources?: ResearcherSource[];
 }
