@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
@@ -42,13 +43,16 @@ export default function ResearcherDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-12 py-4">
-      <Breadcrumb
-        items={[
-          { href: "/", es: "Inicio", en: "Home" },
-          { href: "/researchers", es: "Investigadores", en: "Researchers" },
-          { es: r.name, en: r.name },
-        ]}
-      />
+      <div className="flex items-center justify-between gap-4">
+        <Breadcrumb
+          items={[
+            { href: "/", es: "Inicio", en: "Home" },
+            { href: "/researchers", es: "Investigadores", en: "Researchers" },
+            { es: r.name, en: r.name },
+          ]}
+        />
+        <ShareButton title={r.name} />
+      </div>
 
       {/* Zone A — Identification */}
       <header className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">

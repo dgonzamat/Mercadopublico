@@ -6,6 +6,7 @@ import { getHypothesis } from "@/lib/hypotheses";
 import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { ShareButton } from "@/components/ShareButton";
 import { EpistemicBadge } from "@/components/Badge";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd } from "@/lib/jsonld";
@@ -132,13 +133,16 @@ export default function CaseDetailPage({
         // the case's geographic location.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(caseJsonLd(c)) }}
       />
-      <Breadcrumb
-        items={[
-          { href: "/", es: "Inicio", en: "Home" },
-          { href: "/cases", es: "Casos", en: "Cases" },
-          { es: c.name, en: c.name },
-        ]}
-      />
+      <div className="flex items-center justify-between gap-4">
+        <Breadcrumb
+          items={[
+            { href: "/", es: "Inicio", en: "Home" },
+            { href: "/cases", es: "Casos", en: "Cases" },
+            { es: c.name, en: c.name },
+          ]}
+        />
+        <ShareButton title={c.name} />
+      </div>
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">

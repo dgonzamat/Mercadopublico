@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { patterns, getCasesByPattern } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { T } from "@/components/T";
 
@@ -35,13 +36,16 @@ export default function PatternDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <Breadcrumb
-        items={[
-          { href: "/", es: "Inicio", en: "Home" },
-          { href: "/patterns", es: "Patrones", en: "Patterns" },
-          { es: `${p.id} ${p.name}`, en: `${p.id} ${p.name_en}` },
-        ]}
-      />
+      <div className="flex items-center justify-between gap-4">
+        <Breadcrumb
+          items={[
+            { href: "/", es: "Inicio", en: "Home" },
+            { href: "/patterns", es: "Patrones", en: "Patterns" },
+            { es: `${p.id} ${p.name}`, en: `${p.id} ${p.name_en}` },
+          ]}
+        />
+        <ShareButton title={`${p.id} ${p.name}`} />
+      </div>
 
       <header>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
