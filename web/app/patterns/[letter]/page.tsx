@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { patterns, getCasesByPattern } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export function generateStaticParams() {
   return patterns.map((p) => ({ letter: p.letter }));
@@ -27,9 +28,13 @@ export default function PatternDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <a href="/patterns" className="text-sm text-muted hover:text-accent">
-        ← Volver a patrones
-      </a>
+      <Breadcrumb
+        items={[
+          { href: "/", es: "Inicio", en: "Home" },
+          { href: "/patterns", es: "Patrones", en: "Patterns" },
+          { es: `${p.id} ${p.name}`, en: `${p.id} ${p.name_en}` },
+        ]}
+      />
 
       <header>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">

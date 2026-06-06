@@ -5,6 +5,7 @@ import { TIER_META } from "@/lib/ui";
 import { getHypothesis } from "@/lib/hypotheses";
 import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { EpistemicBadge } from "@/components/Badge";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd } from "@/lib/jsonld";
@@ -129,12 +130,13 @@ export default function CaseDetailPage({
         // the case's geographic location.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(caseJsonLd(c)) }}
       />
-      <Link
-        href="/cases"
-        className="inline-block font-mono text-xs uppercase tracking-widest text-muted hover:text-accent"
-      >
-        <T es="← Volver al índice" en="← Back to index" />
-      </Link>
+      <Breadcrumb
+        items={[
+          { href: "/", es: "Inicio", en: "Home" },
+          { href: "/cases", es: "Casos", en: "Cases" },
+          { es: c.name, en: c.name },
+        ]}
+      />
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">
@@ -462,8 +464,36 @@ export default function CaseDetailPage({
           </Eyebrow>
           <Body className="text-muted">
             <T
-              es="Cada caso del corpus declara explícitamente a qué hipótesis aporta evidencia y con qué fuerza. Estos números alimentan el índice de presión que aparece junto a cada hipótesis en /probabilidades. Verlos por caso permite auditar de dónde viene cada nivel de confianza."
-              en="Each corpus case explicitly declares which hypothesis it contributes to and with what strength. These numbers feed the pressure index shown next to each hypothesis on /probabilidades. Seeing them per case lets you audit where each confidence level comes from."
+              es={
+                <>
+                  Cada caso del corpus declara explícitamente a qué hipótesis
+                  aporta evidencia y con qué fuerza. Estos números alimentan el
+                  índice de presión que aparece junto a cada hipótesis en{" "}
+                  <Link
+                    href="/probabilidades"
+                    className="text-accent underline-offset-4 hover:underline"
+                  >
+                    probabilidades
+                  </Link>
+                  . Verlos por caso permite auditar de dónde viene cada nivel de
+                  confianza.
+                </>
+              }
+              en={
+                <>
+                  Each corpus case explicitly declares which hypothesis it
+                  contributes to and with what strength. These numbers feed the
+                  pressure index shown next to each hypothesis on{" "}
+                  <Link
+                    href="/probabilidades"
+                    className="text-accent underline-offset-4 hover:underline"
+                  >
+                    probabilities
+                  </Link>
+                  . Seeing them per case lets you audit where each confidence
+                  level comes from.
+                </>
+              }
             />
           </Body>
           <ol className="space-y-4">

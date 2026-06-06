@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { T } from "@/components/T";
 import { SiteSearch } from "@/components/SiteSearch";
 import { LocaleToggle } from "@/components/LocaleToggle";
@@ -50,6 +51,9 @@ const SECONDARY_LINKS = [
 export function MobileNav() {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
+  const pathname = usePathname();
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   useEffect(() => {
     if (!open) return;
@@ -156,10 +160,15 @@ export function MobileNav() {
                     <Link
                       href={l.href}
                       onClick={() => setOpen(false)}
+                      aria-current={isActive(l.href) ? "page" : undefined}
                       className="group flex min-h-[68px] items-center justify-between gap-4 py-5 hover:bg-bg hover:px-4 hover:-mx-4 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       <div className="min-w-0 space-y-1">
-                        <p className="font-display text-2xl font-medium leading-tight text-bg group-hover:text-text">
+                        <p
+                          className={`font-display text-2xl font-medium leading-tight group-hover:text-text ${
+                            isActive(l.href) ? "text-accent" : "text-bg"
+                          }`}
+                        >
                           <T es={l.es.label} en={l.en.label} />
                         </p>
                         <p className="text-xs text-bg/60 group-hover:text-muted">
@@ -187,7 +196,10 @@ export function MobileNav() {
                     <Link
                       href={l.href}
                       onClick={() => setOpen(false)}
-                      className="block min-h-[48px] py-3 text-sm font-medium text-bg underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      aria-current={isActive(l.href) ? "page" : undefined}
+                      className={`block min-h-[48px] py-3 text-sm font-medium underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                        isActive(l.href) ? "text-accent underline" : "text-bg"
+                      }`}
                     >
                       <T es={l.es} en={l.en} />
                     </Link>

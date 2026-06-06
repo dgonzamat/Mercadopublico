@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
 import { MobileNav } from "@/components/MobileNav";
+import { HeaderNav } from "@/components/HeaderNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { SiteSearch } from "@/components/SiteSearch";
 import { T } from "@/components/T";
@@ -60,13 +61,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const SECONDARY_NAV: Array<{ href: string; es: string; en: string }> = [
-  { href: "/cases", es: "Casos", en: "Cases" },
-  { href: "/atlas", es: "Atlas", en: "Atlas" },
-  { href: "/researchers", es: "Investigadores", en: "Researchers" },
-  { href: "/about", es: "Metodología", en: "Method" },
-];
-
 export default function RootLayout({
   children,
 }: {
@@ -114,15 +108,7 @@ export default function RootLayout({
               <div className="flex items-center">
                 <SiteSearch />
               </div>
-              {SECONDARY_NAV.map((l) => (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  className="inline-flex items-center border-l border-text/15 px-4 font-display text-base font-medium text-text hover:bg-text hover:text-bg md:text-lg"
-                >
-                  <T es={l.es} en={l.en} />
-                </Link>
-              ))}
+              <HeaderNav />
               <Link
                 href="/probabilidades"
                 className="inline-flex items-center gap-2 border-l-4 border-text bg-accent px-6 font-display text-base font-medium text-bg hover:bg-text md:text-lg"
