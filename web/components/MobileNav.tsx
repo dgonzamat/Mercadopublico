@@ -45,7 +45,9 @@ const NAV_LINKS = [
 const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
   { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
+  { href: "/blog", es: "Blog", en: "Blog" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
+  { href: "/contact", es: "Contacto", en: "Contact" },
 ];
 
 export function MobileNav() {

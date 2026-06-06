@@ -188,6 +188,7 @@ export default function RootLayout({
                   <T es="Más" en="More" />
                 </p>
                 <ul className="space-y-1">
+                  <FooterLink href="/blog" es="Blog" en="Blog" />
                   <FooterLink href="/patterns" es="Patrones" en="Patterns" />
                   <FooterLink
                     href="/researchers"
@@ -200,6 +201,7 @@ export default function RootLayout({
                     en="Frameworks"
                   />
                   <FooterLink href="/about" es="Metodología" en="Method" />
+                  <FooterLink href="/contact" es="Contacto" en="Contact" />
                   <FooterLink
                     href="/fuentes"
                     es="Fuentes (bibliografía)"

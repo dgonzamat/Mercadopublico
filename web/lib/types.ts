@@ -145,3 +145,22 @@ export interface Researcher {
   // Primary references that back the bio. Mirrors CaseSource.
   sources?: ResearcherSource[];
 }
+
+/**
+ * Entrada de blog. Mismo patrón que UAPCase: un archivo JSON por post en
+ * data/posts/, agregado a data/posts.json por scripts/build-posts.mjs.
+ * El cuerpo es texto plano con párrafos separados por `\n\n` (igual que
+ * `whatHappened` en los casos) — sin parser de markdown, sin deps nuevas.
+ */
+export interface Post {
+  id: string;          // slug (= nombre de archivo)
+  num: number;         // secuencia para orden y prev/next
+  title: string;
+  title_en?: string;
+  date: string;        // ISO yyyy-mm-dd
+  summary: string;
+  summary_en?: string;
+  tags?: string[];
+  body: string;        // párrafos separados por \n\n
+  body_en?: string;
+}

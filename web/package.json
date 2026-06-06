@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/validate-schema.mjs --warn && node scripts/build-cases.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs --warn && next dev",
-    "prebuild": "node scripts/validate-schema.mjs && node scripts/build-cases.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs",
+    "dev": "node scripts/validate-schema.mjs --warn && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs --warn && next dev",
+    "prebuild": "node scripts/validate-schema.mjs && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

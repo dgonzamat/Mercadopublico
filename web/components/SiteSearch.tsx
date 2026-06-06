@@ -19,7 +19,7 @@ import Fuse from "fuse.js";
  */
 
 interface IndexEntry {
-  type: "case" | "researcher" | "pattern" | "framework" | "page";
+  type: "case" | "researcher" | "post" | "pattern" | "framework" | "page";
   id: string;
   num: number;
   name: string;
@@ -42,6 +42,8 @@ function hrefFor(e: IndexEntry): string {
   switch (e.type) {
     case "researcher":
       return `/researchers/${e.id}`;
+    case "post":
+      return `/blog/${e.id}`;
     case "pattern":
       return `/patterns/${e.id}`;
     case "framework":
@@ -57,6 +59,8 @@ function badgeLabelFor(type: IndexEntry["type"]): string {
   switch (type) {
     case "researcher":
       return "PERSONA";
+    case "post":
+      return "BLOG";
     case "pattern":
       return "PATRÓN";
     case "framework":
