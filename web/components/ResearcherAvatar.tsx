@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Researcher } from "@/lib/types";
 
 // Static size lookup — Tailwind JIT won't compile dynamic class strings.
@@ -22,12 +25,18 @@ export function ResearcherAvatar({
   size?: keyof typeof SIZES;
 }) {
   const box = SIZES[size];
-  if (researcher.photo) {
+  // Si la foto remota (Wikimedia, etc.) falla o el archivo se movió, caemos
+  // al avatar de iniciales en vez de mostrar una imagen rota. Client por el
+  // onError.
+  const [failed, setFailed] = useState(false);
+
+  if (researcher.photo && !failed) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={researcher.photo}
         alt={researcher.name}
+        onError={() => setFailed(true)}
         className={`${box} shrink-0 rounded-full border border-border object-cover`}
         loading="lazy"
       />
