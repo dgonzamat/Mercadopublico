@@ -43,7 +43,7 @@ const NAV_LINKS = [
 
 const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
-  { href: "/frameworks", es: "Frameworks", en: "Frameworks" },
+  { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
 ];
 
@@ -105,19 +105,22 @@ export function MobileNav() {
               <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
                 <T es="Menú · UAP Codex" en="Menu · UAP Codex" />
               </p>
-              <button
-                type="button"
-                aria-label="Cerrar menú"
-                onClick={() => setOpen(false)}
-                className="inline-flex h-10 items-center gap-2 border-2 border-bg bg-text px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
-              >
-                <span aria-hidden className="text-base leading-none">
-                  ✕
-                </span>
-                <span>
-                  <T es="Cerrar" en="Close" />
-                </span>
-              </button>
+              <div className="flex items-center gap-2">
+                <LocaleToggle variant="drawer" />
+                <button
+                  type="button"
+                  aria-label="Cerrar menú"
+                  onClick={() => setOpen(false)}
+                  className="inline-flex h-10 items-center gap-2 border-2 border-bg bg-text px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
+                >
+                  <span aria-hidden className="text-base leading-none">
+                    ✕
+                  </span>
+                  <span>
+                    <T es="Cerrar" en="Close" />
+                  </span>
+                </button>
+              </div>
             </div>
 
             <div className="px-4 py-8">
@@ -192,15 +195,7 @@ export function MobileNav() {
                 ))}
               </ul>
 
-              {/* IDIOMA / LANGUAGE */}
-              <div className="mt-10 flex items-center justify-between gap-4 border-t border-bg/15 pt-6">
-                <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-                  <T es="Idioma" en="Language" />
-                </p>
-                <LocaleToggle variant="drawer" />
-              </div>
-
-              <p className="mt-10 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
+              <p className="mt-12 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
                 <T
                   es="UAP Codex · análisis institucional · 1947–2026"
                   en="UAP Codex · institutional analysis · 1947–2026"

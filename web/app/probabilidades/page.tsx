@@ -587,7 +587,7 @@ function renderNoEvidenceExpansion(id: string, effectivePct: number) {
               className="inline-flex min-h-[44px] items-center border-2 border-text px-4 py-2 text-sm hover:bg-text hover:text-bg"
             >
               <T
-                es="Ver framework Treaty (Cooper) →"
+                es="Ver marco Treaty (Cooper) →"
                 en="See Treaty framework (Cooper) →"
               />
             </Link>

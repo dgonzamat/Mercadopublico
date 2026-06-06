@@ -31,13 +31,13 @@ const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
   {
     start: 1996,
     end: 2016,
-    es: "Pre-disclosure: filtraciones, libros, demandas",
+    es: "Pre-divulgación: filtraciones, libros, demandas",
     en: "Pre-disclosure: leaks, books, lawsuits",
   },
   {
     start: 2017,
     end: 2030,
-    es: "Disclosure: Nimitz, Grusch, PURSUE",
+    es: "Divulgación: Nimitz, Grusch, PURSUE",
     en: "Disclosure: Nimitz, Grusch, PURSUE",
   },
 ];

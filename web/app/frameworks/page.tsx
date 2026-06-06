@@ -3,7 +3,7 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
-  title: "Frameworks · UAP Codex",
+  title: "Marcos teóricos · UAP Codex",
   description: `${STATS.frameworks} serious theoretical frameworks compared`,
 };
 
@@ -39,7 +39,7 @@ export default function FrameworksPage() {
                 El corpus adopta{" "}
                 <strong className="text-text">Plurality</strong> — posición
                 epistémicamente honesta que evita la unificación prematura que
-                cada framework comete en distinta dirección.
+                cada marco comete en distinta dirección.
               </>
             }
             en={
@@ -60,7 +60,7 @@ export default function FrameworksPage() {
           <thead className="bg-panel">
             <tr>
               <th className="px-4 py-3 text-left font-medium text-muted">
-                <T es="Framework" en="Framework" />
+                <T es="Marco teórico" en="Framework" />
               </th>
               <th className="px-4 py-3 text-left font-medium text-muted">
                 <T es="Autor principal" en="Main author" />

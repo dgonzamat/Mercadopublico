@@ -51,7 +51,7 @@ export default function ResearcherDetailPage({
             {fw && (
               <p className="text-sm text-text">
                 <span className="text-muted">
-                  <T es="Framework principal:" en="Primary framework:" />
+                  <T es="Marco teórico principal:" en="Primary framework:" />
                 </span>{" "}
                 <Link
                   href={`/frameworks#${fw.id}`}
@@ -148,7 +148,7 @@ export default function ResearcherDetailPage({
 
       <Caption className="border-t border-border pt-6">
         <T
-          es="Bio sintetizada del ecosistema de disclosure UAP — categorizada por sección epistemológica (A-E)."
+          es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-E)."
           en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E)."
         />
       </Caption>

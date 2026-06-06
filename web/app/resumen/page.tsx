@@ -44,7 +44,7 @@ const FINDINGS = [
     es: {
       confidence: "Alta",
       title: "Los gobiernos saben más de lo que dicen",
-      text: "Hay una secuencia documental, papel firmado, que va de un memo del general Twining a la fuerza aérea en 1947 (el fenómeno es 'real, no visionario') al disclosure presidencial de mayo 2026. En el medio: el panel Robertson lo declara amenaza psicológica (1953), el memo Bolender cierra Project Blue Book pero admite que hay reportes 'que sí afectan la seguridad nacional' (1969), filtraciones Wilson-Davis (2002), y el testimonio bajo juramento de David Grusch ante el Congreso (2023). Cada pieza es auditable. Ninguna es rumor.",
+      text: "Hay una secuencia documental, papel firmado, que va de un memo del general Twining a la fuerza aérea en 1947 (el fenómeno es 'real, no visionario') a la divulgación presidencial de mayo 2026. En el medio: el panel Robertson lo declara amenaza psicológica (1953), el memo Bolender cierra Project Blue Book pero admite que hay reportes 'que sí afectan la seguridad nacional' (1969), filtraciones Wilson-Davis (2002), y el testimonio bajo juramento de David Grusch ante el Congreso (2023). Cada pieza es auditable. Ninguna es rumor.",
     },
     en: {
       confidence: "High",
@@ -55,7 +55,7 @@ const FINDINGS = [
   {
     es: {
       confidence: "Media",
-      title: "PURSUE 2026 no es disclosure real — es ambigüedad estratégica",
+      title: "PURSUE 2026 no es divulgación real — es ambigüedad estratégica",
       text: "La liberación PURSUE (Presidential Unified UAP Records Repository and Strategic Engagement) de mayo 2026 abre archivos al público con una mano. Con la otra, una propuesta del 26 de mayo (de la Oficina de Personal Federal, el organismo que regula a los empleados públicos) introduce un acuerdo de confidencialidad mucho más amplio que silencia, hacia adelante, a quien quiera denunciar irregularidades desde dentro del gobierno.",
     },
     en: {
@@ -84,7 +84,7 @@ const THREE_FRASES = [
     en: "There is a phenomenon institutions have been documenting since 1947, and no single explanation is enough to cover all of it.",
   },
   {
-    es: "En mayo de 2026, Estados Unidos liberó por primera vez archivos masivos sobre el tema — una operación llamada PURSUE, primer disclosure presidencial de la historia. Pero la liberación fue cuidadosamente curada para no afirmar ni negar nada sustantivo.",
+    es: "En mayo de 2026, Estados Unidos liberó por primera vez archivos masivos sobre el tema — una operación llamada PURSUE, la primera divulgación presidencial de la historia. Pero la liberación fue cuidadosamente curada para no afirmar ni negar nada sustantivo.",
     en: "In May 2026, the United States released massive archives on the topic for the first time — an operation called PURSUE, the first presidential disclosure in history. But the release was carefully curated to neither affirm nor deny anything substantive.",
   },
   {
@@ -250,7 +250,7 @@ export default function ResumenPage() {
           </Eyebrow>
           <H2>
             <T
-              es="La taxonomía de disclosure"
+              es="La taxonomía de divulgación"
               en="The taxonomy of disclosure"
             />
           </H2>
