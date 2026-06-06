@@ -108,8 +108,9 @@ export default function RootLayout({
             </Link>
 
             <div className="hidden items-stretch gap-3 lg:flex">
-              <div className="flex items-center">
+              <div className="flex items-center gap-2">
                 <SiteSearch />
+                <ShareButton variant="icon" />
               </div>
               <HeaderNav />
               <Link
