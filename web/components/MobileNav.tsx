@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { T } from "@/components/T";
+import { SiteSearch } from "@/components/SiteSearch";
 import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
@@ -115,12 +116,15 @@ export function MobileNav() {
             </div>
 
             <div className="px-4 py-8">
+              {/* SITE SEARCH — mobile variant */}
+              <SiteSearch variant="mobile" onSelect={() => setOpen(false)} />
+
               {/* PRIMARY CTA */}
               <Link
                 ref={firstLinkRef}
                 href={PRIMARY_CTA.href}
                 onClick={() => setOpen(false)}
-                className="group block bg-accent p-6 hover:bg-bg hover:text-text"
+                className="group mt-8 block bg-accent p-6 hover:bg-bg hover:text-text"
               >
                 <p className="font-mono text-xs uppercase tracking-widest text-text/70 group-hover:text-muted">
                   <T es="Empezar aquí" en="Start here" />
