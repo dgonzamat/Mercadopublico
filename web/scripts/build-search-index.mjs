@@ -68,6 +68,30 @@ const researcherEntries = researchers.map((r) => ({
     .join(" "),
 }));
 
+// ── POSTS ────────────────────────────────────────────────────────────────
+const postsDir = path.join(dataDir, "posts");
+const postsData = fs.existsSync(postsDir)
+  ? fs
+      .readdirSync(postsDir)
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => JSON.parse(fs.readFileSync(path.join(postsDir, f), "utf-8")))
+  : [];
+
+const postEntries = postsData.map((p) => ({
+  type: "post",
+  id: p.id, // href → /blog/{id}
+  num: 0,
+  name: p.title,
+  subtitle: "Blog",
+  meta: p.date || "",
+  flag: "",
+  year: p.date ? p.date.slice(0, 4) : "",
+  year_start: p.date ? Number(p.date.slice(0, 4)) : 0,
+  summary: p.summary || "",
+  summary_en: p.summary_en,
+  keywords: (p.tags || []).join(" "),
+}));
+
 // ── PATTERNS ─────────────────────────────────────────────────────────────
 const patternsData = JSON.parse(
   fs.readFileSync(path.join(dataDir, "patterns.json"), "utf-8"),
@@ -166,6 +190,22 @@ const pageEntries = [
     summary_en: "Theoretical frameworks compared.",
     keywords: "marcos frameworks teorias theories",
   },
+  {
+    id: "blog",
+    name: "Blog",
+    subtitle: "El cuaderno",
+    summary: "Notas de método y avances del corpus.",
+    summary_en: "Method notes and corpus progress.",
+    keywords: "blog notas notebook posts",
+  },
+  {
+    id: "contact",
+    name: "Contacto",
+    subtitle: "Contacto",
+    summary: "Correcciones, fuentes y casos faltantes.",
+    summary_en: "Corrections, sources and missing cases.",
+    keywords: "contacto contact email issue github",
+  },
 ].map((p) => ({
   type: "page",
   id: p.id, // href → /{id}
@@ -185,6 +225,7 @@ const pageEntries = [
 const index = [
   ...caseEntries,
   ...researcherEntries,
+  ...postEntries,
   ...patternEntries,
   ...frameworkEntries,
   ...pageEntries,
@@ -194,5 +235,5 @@ fs.writeFileSync(outFile, JSON.stringify(index));
 
 const sizeKb = (fs.statSync(outFile).size / 1024).toFixed(1);
 console.log(
-  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${patternEntries.length} patterns + ${frameworkEntries.length} frameworks + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
+  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${patternEntries.length} patterns + ${frameworkEntries.length} frameworks + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
 );

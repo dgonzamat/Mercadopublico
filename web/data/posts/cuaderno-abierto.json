@@ -1,0 +1,12 @@
+{
+  "id": "cuaderno-abierto",
+  "num": 1,
+  "title": "Por qué un cuaderno abierto sobre UAP",
+  "title_en": "Why an open notebook on UAP",
+  "date": "2026-01-15",
+  "summary": "UAP Codex no es un sitio de creyentes ni de escépticos: es un cuaderno de investigación con el razonamiento expuesto. Esto explica para qué existe.",
+  "summary_en": "UAP Codex is neither a believers' nor a skeptics' site: it is a research notebook with its reasoning on display. This explains what it is for.",
+  "tags": ["meta", "metodología"],
+  "body": "El problema con casi todo lo que se escribe sobre fenómenos aéreos no identificados es que parte de una conclusión y junta evidencia hacia atrás. Los creyentes quieren que sean naves; los escépticos quieren que sean globos. Ambos llegan con la respuesta antes de mirar.\n\nEste sitio intenta lo contrario: tomar los casos que sobrevivieron filtros institucionales —militares, gubernamentales, periodísticos— y dejar el razonamiento a la vista. Cada probabilidad se calibra con ICD-203, el mismo estándar que usan los analistas de inteligencia, y cada hipótesis lista los casos del corpus que la sostienen. Si no estás de acuerdo con un número, podés ver exactamente de dónde sale.\n\nNo hay una tesis que defender. Hay un corpus, un método para leerlo, y la honestidad de marcar dónde termina la evidencia y empieza la especulación. Este blog va a documentar cómo se construye eso: decisiones de método, casos nuevos, y los errores que vayamos corrigiendo.",
+  "body_en": "The problem with almost everything written about unidentified aerial phenomena is that it starts from a conclusion and gathers evidence backwards. Believers want them to be craft; skeptics want them to be balloons. Both arrive with the answer before looking.\n\nThis site attempts the opposite: take the cases that survived institutional filters —military, governmental, journalistic— and leave the reasoning on display. Each probability is calibrated with ICD-203, the same standard intelligence analysts use, and each hypothesis lists the corpus cases that sustain it. If you disagree with a number, you can see exactly where it comes from.\n\nThere is no thesis to defend. There is a corpus, a method to read it, and the honesty to mark where evidence ends and speculation begins. This blog will document how that gets built: method decisions, new cases, and the mistakes we correct along the way."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "leer-icd203",
+  "num": 2,
+  "title": "Cómo leer una probabilidad ICD-203",
+  "title_en": "How to read an ICD-203 probability",
+  "date": "2026-02-03",
+  "summary": "Por qué el sitio dice «probable» en vez de «73%», y qué significa exactamente cada palabra de confianza.",
+  "summary_en": "Why the site says \"likely\" instead of \"73%\", and what each confidence word means exactly.",
+  "tags": ["metodología", "ICD-203"],
+  "body": "Cuando ves «probable» junto a una hipótesis, no es vaguedad: es disciplina. El estándar ICD-203 de la comunidad de inteligencia de EE.UU. asigna rangos numéricos a un conjunto fijo de palabras —«casi cierto», «probable», «improbable», «casi imposible»— precisamente para no fingir una precisión que la evidencia no soporta.\n\nDecir «73%» implica que podrías distinguir ese caso de uno al «71%». Con evidencia testimonial, documental y de sensores de calidad despareja, esa diferenciación es ficción. La palabra es más honesta que el decimal.\n\nEn el sitio mostramos ambos: la palabra ICD-203 y un porcentaje entre paréntesis, para anclar la intuición. Pero el porcentaje es la consecuencia del juicio verbal, no al revés. Cuando dudes, leé la palabra."
+}
