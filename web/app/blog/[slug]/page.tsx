@@ -53,14 +53,14 @@ export default function PostDetailPage({
       </header>
 
       {/* Cuerpo bilingüe: divs data-lang (no <T>) para contenido en bloque. */}
-      <div data-lang="es" className="space-y-5">
+      <div lang="es" data-lang="es" className="space-y-5">
         {parasEs.map((para, i) => (
           <p key={i} className="text-lg leading-relaxed text-text md:text-xl">
             {para}
           </p>
         ))}
       </div>
-      <div data-lang="en" className="space-y-5">
+      <div lang="en" data-lang="en" className="space-y-5">
         {parasEn.map((para, i) => (
           <p key={i} className="text-lg leading-relaxed text-text md:text-xl">
             {para}
