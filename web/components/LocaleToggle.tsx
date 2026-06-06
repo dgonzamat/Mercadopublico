@@ -8,10 +8,28 @@ type Locale = "es" | "en";
  * EN/ES toggle. Sets `[data-locale]` on the html element, persists in
  * localStorage. CSS in globals.css drives the per-span visibility.
  *
- * On first render, the server outputs ES (default). On mount, we read
- * the stored locale and update the html dataset. If the user previously
- * chose EN, the visible content shifts to EN immediately after hydration.
+ * On first render, the server outputs ES (default). On mount we pick the
+ * locale: an explicit prior choice (localStorage) wins; otherwise we
+ * auto-detect from the browser's preferred languages. Detection is NOT
+ * persisted — only an explicit toggle is — so it re-runs each visit until
+ * the user actually picks one.
  */
+// Walk the browser's ordered language preferences and return whichever of
+// es/en the user prefers first. Defaults to ES (the site's base language)
+// for any other language.
+function detectLocale(): Locale {
+  if (typeof navigator === "undefined") return "es";
+  const langs = navigator.languages?.length
+    ? navigator.languages
+    : [navigator.language];
+  for (const l of langs) {
+    const code = l.toLowerCase().slice(0, 2);
+    if (code === "es") return "es";
+    if (code === "en") return "en";
+  }
+  return "es";
+}
+
 // Per-variant chrome. The header sits on the light paper bg; the drawer
 // sits on the dark (bg-text) mobile menu, so it needs inverted colors.
 const VARIANT = {
@@ -28,11 +46,11 @@ export function LocaleToggle({
   const [locale, setLocale] = useState<Locale>("es");
 
   useEffect(() => {
-    const stored = (typeof window !== "undefined" &&
-      (localStorage.getItem("locale") as Locale | null)) || "es";
-    setLocale(stored);
-    document.documentElement.dataset.locale = stored;
-    document.documentElement.lang = stored;
+    const stored = localStorage.getItem("locale") as Locale | null;
+    const initial: Locale = stored ?? detectLocale();
+    setLocale(initial);
+    document.documentElement.dataset.locale = initial;
+    document.documentElement.lang = initial;
   }, []);
 
   function toggle() {
