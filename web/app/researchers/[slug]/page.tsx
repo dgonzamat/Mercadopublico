@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
 import { T } from "@/components/T";
+import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
 
 export function generateStaticParams() {
@@ -39,26 +40,34 @@ export default function ResearcherDetailPage({
 
       {/* Zone A — Identification */}
       <header className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">
-        <div className="space-y-4">
-          <Eyebrow>
-            Sección {r.section} · {r.section_label} · {lifespan}
-          </Eyebrow>
-          <H1>{r.name}</H1>
-          {fw && (
-            <p className="text-sm text-text">
-              <span className="text-muted">Framework principal:</span>{" "}
-              <Link
-                href={`/frameworks#${fw.id}`}
-                className="text-accent hover:underline"
-              >
-                {fw.name}
-              </Link>
-            </p>
-          )}
+        <div className="flex items-start gap-5">
+          <ResearcherAvatar researcher={r} size="lg" />
+          <div className="space-y-4">
+            <Eyebrow>
+              Sección {r.section} · {r.section_label} · {lifespan}
+            </Eyebrow>
+            <H1>{r.name}</H1>
+            {fw && (
+              <p className="text-sm text-text">
+                <span className="text-muted">Framework principal:</span>{" "}
+                <Link
+                  href={`/frameworks#${fw.id}`}
+                  className="text-accent hover:underline"
+                >
+                  {fw.name}
+                </Link>
+              </p>
+            )}
+          </div>
         </div>
         <Caption className="mt-4 border-t border-border pt-4">
           {r.credentials}
         </Caption>
+        {r.photo && (r.photo_credit || r.photo_license) && (
+          <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
+            {[r.photo_credit, r.photo_license].filter(Boolean).join(" · ")}
+          </p>
+        )}
       </header>
 
       {/* Zone B — Narrative */}

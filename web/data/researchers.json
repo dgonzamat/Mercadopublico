@@ -329,7 +329,10 @@
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-FL) + Chair Task Force on Declassification of Federal Secrets",
     "bio_short": "Lidera Task Force bipartisana con poder de oversight + subpoena para forzar disclosure. Co-protagonista con Burchett del ecosystem 8q que forzó PURSUE 2026. Audiencias congresionales nov 2024 con Grusch + Gold + Shellenberger.",
-    "works": []
+    "works": [],
+    "photo": "/researchers/luna.jpg",
+    "photo_credit": "U.S. House of Representatives",
+    "photo_license": "Public domain"
   },
   {
     "id": "burchett",
@@ -339,7 +342,10 @@
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-TN) + House Oversight Committee",
     "bio_short": "Co-líder Task Force con Luna. Estilo público confrontacional contra Pentagon stonewalling. Frase recurrente: 'they're flying around without any regard for the laws of physics'. Funcionalmente complementario a Luna en presión bipartisana sobre USIC.",
-    "works": []
+    "works": [],
+    "photo": "/researchers/burchett.jpg",
+    "photo_credit": "U.S. House of Representatives",
+    "photo_license": "Public domain"
   },
   {
     "id": "coulthart",
