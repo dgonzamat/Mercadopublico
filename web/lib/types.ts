@@ -120,4 +120,10 @@ export interface Researcher {
   framework?: string;
   bio_short: string;
   works: ResearcherWork[];
+  // Optional portrait. `photo` is a path under /public (e.g.
+  // "/researchers/luna.jpg"). Only freely-licensed images (PD/CC) are used;
+  // when absent the UI falls back to an initials avatar.
+  photo?: string;
+  photo_credit?: string;   // attribution / source line
+  photo_license?: string;  // e.g. "Public domain"
 }
