@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
 import { MobileNav } from "@/components/MobileNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
+import { SiteSearch } from "@/components/SiteSearch";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { STATS } from "@/lib/siteStats";
@@ -37,8 +38,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
     languages: {
-      // Same URL serves ES + EN via in-page toggle; alternates inform
-      // search engines that the content exists in both languages.
       es: "/",
       en: "/",
       "x-default": "/",
@@ -78,9 +77,6 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          // Schema.org WebSite node — enables Google sitelinks search box
-          // and helps LLM crawlers identify the corpus as a structured
-          // research site, not just a blog.
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
         />
       </head>
@@ -114,7 +110,10 @@ export default function RootLayout({
               </span>
             </Link>
 
-            <div className="hidden items-stretch sm:flex">
+            <div className="hidden items-stretch gap-3 sm:flex">
+              <div className="flex items-center">
+                <SiteSearch />
+              </div>
               {SECONDARY_NAV.map((l) => (
                 <Link
                   key={l.href}
