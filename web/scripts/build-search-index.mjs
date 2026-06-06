@@ -113,6 +113,7 @@ const pageEntries = [
   {
     id: "probabilidades",
     name: "Probabilidades",
+    subtitle: "Hipótesis · ICD-203",
     summary: "Las 8 hipótesis y su nivel de confianza ICD-203.",
     summary_en: "The 8 hypotheses and their ICD-203 confidence level.",
     keywords: "hipotesis hypotheses ICD-203 confianza confidence",
@@ -120,6 +121,7 @@ const pageEntries = [
   {
     id: "atlas",
     name: "Atlas",
+    subtitle: "Mapa global",
     summary: "Mapa global de los casos.",
     summary_en: "Global map of the cases.",
     keywords: "mapa map geografia geography",
@@ -127,6 +129,7 @@ const pageEntries = [
   {
     id: "about",
     name: "Metodología",
+    subtitle: "Cómo se construyó",
     summary: "Cómo se construyó el corpus.",
     summary_en: "How the corpus was built.",
     keywords: "metodo method methodology criterios",
@@ -134,6 +137,7 @@ const pageEntries = [
   {
     id: "resumen",
     name: "Resumen",
+    subtitle: "Lectura 10 min",
     summary: "Lectura de 10 minutos.",
     summary_en: "10-minute read.",
     keywords: "resumen summary overview",
@@ -141,6 +145,7 @@ const pageEntries = [
   {
     id: "fuentes",
     name: "Fuentes",
+    subtitle: "Bibliografía",
     summary: "Bibliografía y fuentes primarias.",
     summary_en: "Bibliography and primary sources.",
     keywords: "bibliografia sources FOIA",
@@ -148,6 +153,7 @@ const pageEntries = [
   {
     id: "patterns",
     name: "Patrones",
+    subtitle: "Índice de patrones",
     summary: "Índice de patrones recurrentes del corpus.",
     summary_en: "Index of recurring corpus patterns.",
     keywords: "patrones patterns",
@@ -155,6 +161,7 @@ const pageEntries = [
   {
     id: "frameworks",
     name: "Marcos teóricos",
+    subtitle: "Marcos comparados",
     summary: "Marcos teóricos comparados.",
     summary_en: "Theoretical frameworks compared.",
     keywords: "marcos frameworks teorias theories",
@@ -164,7 +171,7 @@ const pageEntries = [
   id: p.id, // href → /{id}
   num: 0,
   name: p.name,
-  subtitle: "Sección",
+  subtitle: p.subtitle,
   meta: "",
   flag: "",
   year: "",
