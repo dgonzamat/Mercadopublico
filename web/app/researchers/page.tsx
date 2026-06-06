@@ -1,6 +1,7 @@
 import { researchers, getFramework } from "@/lib/data";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
+import { CategoryNav } from "@/components/CategoryNav";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 
 export const metadata = {
@@ -38,6 +39,13 @@ const sections = [
 ];
 
 export default function ResearchersPage() {
+  const sectionList = sections
+    .map((section) => ({
+      section,
+      people: researchers.filter((r) => r.section === section.code),
+    }))
+    .filter(({ people }) => people.length > 0);
+
   return (
     <div className="space-y-8">
       <header>
@@ -76,13 +84,23 @@ export default function ResearchersPage() {
         </p>
       </header>
 
-      {sections.map((section) => {
-        const sectionResearchers = researchers.filter(
-          (r) => r.section === section.code,
-        );
-        if (sectionResearchers.length === 0) return null;
+      <CategoryNav
+        label={{ es: "Saltar a una sección", en: "Jump to a section" }}
+        items={sectionList.map(({ section, people }) => ({
+          anchor: `seccion-${section.code.toLowerCase()}`,
+          es: `${section.code} · ${section.es}`,
+          en: `${section.code} · ${section.en}`,
+          count: people.length,
+        }))}
+      />
+
+      {sectionList.map(({ section, people: sectionResearchers }) => {
         return (
-          <section key={section.code}>
+          <section
+            key={section.code}
+            id={`seccion-${section.code.toLowerCase()}`}
+            className="scroll-mt-20"
+          >
             <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
               <T
                 es={`Sección ${section.code} · ${section.es}`}
