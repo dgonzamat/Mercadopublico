@@ -10,6 +10,9 @@
  *
  * Chequea campos obligatorios, tipos, enums, unicidad de ids/num y la
  * integridad referencial (framework → frameworks.json, patterns → patterns.json).
+ * Además valida: MAPA (coordenadas en rango, sin placeholder 0,0),
+ * BIBLIOGRAFÍA (todo caso/investigador cita ≥1 fuente, urls bien formadas) y
+ * FOTOS (si hay foto, URL válida + licencia de atribución).
  *
  * SALIDA:
  *   - exit 0  → schema OK
@@ -34,6 +37,9 @@ const err = (where, msg) => errors.push(`${where}: ${msg}`);
 const isStr = (v) => typeof v === "string" && v.length > 0;
 const isNum = (v) => typeof v === "number" && Number.isFinite(v);
 const isArr = (v) => Array.isArray(v);
+// URL http(s) válida, o ruta absoluta bajo /public (para fotos locales).
+const isHttpUrl = (v) => typeof v === "string" && /^https?:\/\/\S+$/.test(v);
+const isPhotoRef = (v) => isHttpUrl(v) || (typeof v === "string" && v.startsWith("/"));
 
 // ─── 1. Conjuntos de referencia ──────────────────────────────────────────
 
@@ -77,20 +83,29 @@ researchers.forEach((r, i) => {
         err(`${w}.works[${j}]`, "contribution_en obligatorio (string)");
     });
 
-  // Campos opcionales: si están, deben ser string
-  for (const f of ["photo", "photo_credit", "photo_license"])
+  // FOTOS: si hay foto debe ser URL http(s) o ruta /public, y exigir licencia
+  // (cumplimiento de atribución: solo se usan imágenes PD/CC).
+  for (const f of ["photo_credit", "photo_license"])
     if (r[f] !== undefined && !isStr(r[f])) err(w, `${f} debe ser string`);
+  if (r.photo !== undefined) {
+    if (!isPhotoRef(r.photo))
+      err(w, `photo debe ser URL http(s) o ruta /public: "${r.photo}"`);
+    if (!isStr(r.photo_license))
+      err(w, "photo presente requiere photo_license (atribución PD/CC)");
+  }
 
-  // sources opcional: si está, array de { name, url?, note?, note_en? }
-  if (r.sources !== undefined) {
-    if (!isArr(r.sources)) err(w, "sources debe ser array");
-    else
-      r.sources.forEach((s, j) => {
-        if (!isStr(s.name)) err(`${w}.sources[${j}]`, "name obligatorio (string)");
-        for (const f of ["url", "note", "note_en"])
-          if (s[f] !== undefined && !isStr(s[f]))
-            err(`${w}.sources[${j}]`, `${f} debe ser string`);
-      });
+  // BIBLIOGRAFÍA: sources obligatorio (al menos una fuente verificable)
+  if (!isArr(r.sources) || r.sources.length === 0) {
+    err(w, "sources obligatorio (bibliografía): al menos una fuente");
+  } else {
+    r.sources.forEach((s, j) => {
+      if (!isStr(s.name)) err(`${w}.sources[${j}]`, "name obligatorio (string)");
+      for (const f of ["note", "note_en"])
+        if (s[f] !== undefined && !isStr(s[f]))
+          err(`${w}.sources[${j}]`, `${f} debe ser string`);
+      if (s.url !== undefined && !isHttpUrl(s.url))
+        err(`${w}.sources[${j}]`, `url malformada: "${s.url}"`);
+    });
   }
 });
 
@@ -139,8 +154,17 @@ for (const file of caseFiles) {
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");
 
-  if (!c.location || !isNum(c.location.lat) || !isNum(c.location.lng))
+  // MAPA: coordenadas presentes, en rango y no placeholder (0,0 = null island)
+  if (!c.location || !isNum(c.location.lat) || !isNum(c.location.lng)) {
     err(w, "location.{lat,lng} obligatorio (number)");
+  } else {
+    const { lat, lng } = c.location;
+    if (lat < -90 || lat > 90) err(w, `location.lat fuera de rango [-90,90]: ${lat}`);
+    if (lng < -180 || lng > 180)
+      err(w, `location.lng fuera de rango [-180,180]: ${lng}`);
+    if (lat === 0 && lng === 0)
+      err(w, "location (0,0) — coordenadas placeholder (null island); usar el ancla terrestre real");
+  }
 
   if (!isArr(c.patterns)) err(w, "patterns debe ser array");
   else
@@ -148,6 +172,17 @@ for (const file of caseFiles) {
       if (!patternIds.has(p))
         err(w, `pattern "${p}" no existe en patterns.json`);
     });
+
+  // BIBLIOGRAFÍA: todo caso debe citar al menos una fuente; url bien formada
+  if (!isArr(c.sources) || c.sources.length === 0) {
+    err(w, "sources obligatorio (bibliografía): al menos una fuente");
+  } else {
+    c.sources.forEach((s, j) => {
+      if (!isStr(s.name)) err(`${w}.sources[${j}]`, "name obligatorio (string)");
+      if (s.url !== undefined && !isHttpUrl(s.url))
+        err(`${w}.sources[${j}]`, `url malformada: "${s.url}"`);
+    });
+  }
 }
 
 // ─── 4. Reporte ──────────────────────────────────────────────────────────
