@@ -33,7 +33,11 @@ export default function ResearcherDetailPage({
   if (!r) notFound();
 
   const fw = r.framework ? getFramework(r.framework) : undefined;
-  const lifespan = r.death ? `${r.born}–${r.death}` : `${r.born}–`;
+  const lifespan = r.born
+    ? r.death
+      ? `${r.born}–${r.death}`
+      : `${r.born}–`
+    : "";
   const relatedCases = casesForResearcher(r.id);
 
   // Orden secuencial = mismo del índice (secciones A–E, estable dentro de cada una).
@@ -69,7 +73,8 @@ export default function ResearcherDetailPage({
           <div className="space-y-4">
             <Eyebrow>
               <T es="Sección" en="Section" /> {r.section} ·{" "}
-              <T es={r.section_label} en={r.section_label_en} /> · {lifespan}
+              <T es={r.section_label} en={r.section_label_en} />
+              {lifespan ? ` · ${lifespan}` : ""}
             </Eyebrow>
             <H1>{r.name}</H1>
             {fw && (

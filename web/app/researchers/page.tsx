@@ -123,8 +123,12 @@ export default function ResearchersPage() {
                           {r.name}
                         </h3>
                         <span className="font-mono text-xs text-muted">
-                          {r.born}
-                          {r.death ? `–${r.death}` : "–"}
+                          {r.born ? (
+                            <>
+                              {r.born}
+                              {r.death ? `–${r.death}` : "–"}
+                            </>
+                          ) : null}
                         </span>
                       </div>
                       {fw && (
