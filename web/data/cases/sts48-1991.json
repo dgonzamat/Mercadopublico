@@ -7,9 +7,9 @@
   "country_name": "Órbita Terrestre",
   "flag": "🌍",
   "location": {
-    "lat": 0,
-    "lng": 0,
-    "place": "Discovery orbit"
+    "lat": 28.585,
+    "lng": -80.65,
+    "place": "Órbita de Discovery (STS-48) · misión lanzada desde Cabo Cañaveral"
   },
   "tier": "A",
   "probability": 55,
