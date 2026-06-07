@@ -1,0 +1,64 @@
+{
+  "id": "raytheon-atflir-2004",
+  "num": 111,
+  "name": "Raytheon · ATFLIR (sensor del video FLIR1)",
+  "name_en": "Raytheon · ATFLIR (sensor behind the FLIR1 video)",
+  "year_start": 2004,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 33.92,
+    "lng": -118.4,
+    "place": "Raytheon (Space & Airborne Systems), El Segundo, California"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "Raytheon fabrica el AN/ASQ-228 ATFLIR (Advanced Targeting Forward-Looking Infrared), el pod EO/IR que capturó el video FLIR1 del incidente Nimitz (2004) y que equipa a los F/A-18 de los videos Gimbal y GoFast. Es el contratista cuyo hardware calibrado convirtió avistamientos en datos de sensor militar — la base instrumental de los casos UAP modernos mejor documentados.",
+  "summary_en": "Raytheon builds the AN/ASQ-228 ATFLIR (Advanced Targeting Forward-Looking Infrared), the EO/IR pod that captured the FLIR1 video of the Nimitz incident (2004) and equips the F/A-18s in the Gimbal and GoFast videos. It is the contractor whose calibrated hardware turned sightings into military sensor data — the instrumental backbone of the best-documented modern UAP cases.",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "Raytheon (hoy RTX, vía su división Space & Airborne Systems) diseña y fabrica el AN/ASQ-228 ATFLIR, un pod de targeting electro-óptico/infrarrojo montado en los F/A-18 de la US Navy. El ATFLIR es el instrumento que registró el video conocido como FLIR1 durante el incidente del USS Nimitz en noviembre de 2004, y es el mismo tipo de sensor detrás de los videos Gimbal y GoFast (2015), los tres desclasificados oficialmente por el Pentágono en 2020.\n\nLa relevancia del contratista es instrumental, no testimonial: el ATFLIR es un sistema calibrado de grado militar con parámetros conocidos (campo de visión, modos de seguimiento, zoom), lo que permite a los analistas estimar tamaño, distancia y cinemática del objeto y descartar artefactos triviales. Que los objetos de Nimitz/Gimbal/GoFast aparezcan en un sensor Raytheon de provenance conocida es precisamente lo que eleva esos casos del testimonio a la evidencia de sensor — y también lo que habilita el debate técnico sobre paralaje y artefactos de gimbal.",
+  "whatHappened_en": "Raytheon (today RTX, via its Space & Airborne Systems division) designs and builds the AN/ASQ-228 ATFLIR, an electro-optical/infrared targeting pod mounted on US Navy F/A-18s. The ATFLIR is the instrument that recorded the video known as FLIR1 during the USS Nimitz incident in November 2004, and is the same type of sensor behind the Gimbal and GoFast videos (2015), all three officially declassified by the Pentagon in 2020.\n\nThe contractor's relevance is instrumental, not testimonial: the ATFLIR is a calibrated military-grade system with known parameters (field of view, tracking modes, zoom), letting analysts estimate the object's size, range and kinematics and rule out trivial artifacts. That the Nimitz/Gimbal/GoFast objects appear on a Raytheon sensor of known provenance is precisely what raises those cases from testimony to sensor evidence — and also what enables the technical debate over parallax and gimbal artifacts.",
+  "whyMatters": "El corpus moderno descansa sobre datos de sensor, no solo testigos — y esos datos salen de hardware de contratistas. Raytheon es el nodo instrumental: sin la provenance conocida y la calibración del ATFLIR, los videos Nimitz/Gimbal/GoFast serían anécdotas; con ella, son objetos de análisis técnico reproducible (y de crítica técnica legítima). Modela la dependencia estructural entre la evidencia UAP de grado militar y los contratistas que construyen los sensores.",
+  "whyMatters_en": "The modern corpus rests on sensor data, not just witnesses — and that data comes from contractor hardware. Raytheon is the instrumental node: without the known provenance and calibration of the ATFLIR, the Nimitz/Gimbal/GoFast videos would be anecdotes; with it, they are objects of reproducible technical analysis (and of legitimate technical criticism). It models the structural dependence between military-grade UAP evidence and the contractors who build the sensors.",
+  "evidence": [
+    "El AN/ASQ-228 ATFLIR es un pod de targeting EO/IR de Raytheon montado en los F/A-18 de la US Navy.",
+    "El ATFLIR capturó el video FLIR1 del incidente Nimitz (nov 2004); mismo tipo de sensor en Gimbal y GoFast (2015).",
+    "Los tres videos fueron desclasificados oficialmente por el Pentágono en 2020.",
+    "Parámetros de sensor conocidos (FOV, modos de seguimiento, zoom) permiten estimar tamaño/distancia/cinemática y discutir artefactos."
+  ],
+  "evidence_en": [
+    "The AN/ASQ-228 ATFLIR is a Raytheon EO/IR targeting pod mounted on US Navy F/A-18s.",
+    "The ATFLIR captured the FLIR1 video of the Nimitz incident (Nov 2004); same sensor type in Gimbal and GoFast (2015).",
+    "All three videos were officially declassified by the Pentagon in 2020.",
+    "Known sensor parameters (FOV, tracking modes, zoom) allow estimation of size/range/kinematics and discussion of artifacts."
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Pentagon UFO videos (FLIR1/Gimbal/GoFast, ATFLIR)",
+      "url": "https://en.wikipedia.org/wiki/Pentagon_UFO_videos"
+    },
+    {
+      "name": "U.S. Navy / DoD — Liberación oficial de los tres videos UAP (2020)",
+      "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Que los objetos de Nimitz/Gimbal/GoFast aparezcan en un sensor militar calibrado de provenance conocida (ATFLIR/Raytheon) refuerza que se trata de targets reales con cinemática medible, no de meros artefactos perceptuales. Minimal porque el mismo sensor habilita explicaciones de artefacto (paralaje, rotación de gimbal) que parte del debate técnico sostiene.",
+      "rationaleEn": "That the Nimitz/Gimbal/GoFast objects appear on a calibrated military sensor of known provenance (ATFLIR/Raytheon) reinforces that these are real targets with measurable kinematics, not mere perceptual artifacts. Minimal because the same sensor enables artifact explanations (parallax, gimbal rotation) that part of the technical debate maintains."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La cadena de sensores de contratistas como Raytheon es la misma infraestructura que sostiene los programas aeroespaciales clasificados; la provenance del hardware documenta el aparato técnico-militar sin pronunciarse sobre el origen de los objetos detectados.",
+      "rationaleEn": "The contractor sensor chain like Raytheon's is the same infrastructure that underpins classified aerospace programs; the hardware provenance documents the technical-military apparatus without pronouncing on the origin of the detected objects."
+    }
+  ]
+}

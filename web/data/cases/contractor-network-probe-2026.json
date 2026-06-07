@@ -1,0 +1,66 @@
+{
+  "id": "contractor-network-probe-2026",
+  "num": 113,
+  "name": "Red de contratistas · requerimientos congresionales",
+  "name_en": "Contractor network · congressional records demands",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.89,
+    "lng": -77.01,
+    "place": "Congreso de EE.UU., Washington DC"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 35,
+  "summary": "En 2026 la investigación congresional de disclosure amplió sus requerimientos de registros desde las agencias hacia la red de contratistas y FFRDCs: además de MITRE, los reportes nombran a RAND, Aerospace Corporation, MIT Lincoln Laboratory, Northrop Grumman y SAIC. Las alegaciones de retrieval/reverse-engineering provienen de testimonios (Grusch) y prensa, NO de documentos confirmados — este caso modela el proceso de investigación, no una afirmación de posesión.",
+  "summary_en": "In 2026 the congressional disclosure investigation expanded its records demands from agencies into the contractor and FFRDC network: beyond MITRE, reports name RAND, the Aerospace Corporation, MIT Lincoln Laboratory, Northrop Grumman and SAIC. The retrieval/reverse-engineering allegations come from testimony (Grusch) and press, NOT from confirmed documents — this case models the investigation process, not a claim of possession.",
+  "patterns": [
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "A lo largo de 2026, el empuje legislativo de disclosure (liderado por figuras como el Rep. Eric Burlison) extendió los requerimientos formales de registros más allá de las agencias gubernamentales, hacia la capa de contratistas y centros de investigación financiados por el gobierno. La prensa especializada reportó que el rastro de la investigación apuntaba a RAND Corporation, Aerospace Corporation, MIT Lincoln Laboratory, Northrop Grumman y SAIC, además del requerimiento específico a MITRE.\n\nEs crucial el encuadre epistémico: las afirmaciones de que estos contratistas poseen 'vehículos no humanos' o ejecutan programas de retrieval/reverse-engineering provienen del testimonio bajo juramento de David Grusch (2023) y de cobertura periodística — no de documentos oficiales confirmados ni de admisiones corporativas. Lo verificable y documentado es el proceso: que el Congreso ahora dirige requerimientos formales a esta red. EG&G, históricamente el contratista logístico de Área 51 (vuelos 'Janet'), pertenece al mismo ecosistema de secreto aeroespacial, aunque su vínculo con material UAP es indirecto. Este caso existe para nombrar a la red sin afirmar las alegaciones como hechos.",
+  "whatHappened_en": "Throughout 2026, the legislative disclosure push (led by figures like Rep. Eric Burlison) extended formal records demands beyond government agencies, into the layer of contractors and government-funded research centers. Specialized press reported that the investigation's trail pointed at RAND Corporation, the Aerospace Corporation, MIT Lincoln Laboratory, Northrop Grumman and SAIC, in addition to the specific demand on MITRE.\n\nThe epistemic framing is crucial: the claims that these contractors possess 'non-human vehicles' or run retrieval/reverse-engineering programs come from David Grusch's sworn testimony (2023) and journalistic coverage — not from confirmed official documents or corporate admissions. What is verifiable and documented is the process: that Congress is now directing formal demands at this network. EG&G, historically the logistics contractor for Area 51 ('Janet' flights), belongs to the same aerospace-secrecy ecosystem, though its link to UAP material is indirect. This case exists to name the network without asserting the allegations as facts.",
+  "whyMatters": "Cierra el mapa de actores: si las agencias y los FFRDCs individuales (MITRE, Battelle) son nodos, esta es la red completa que la investigación persigue. Su valor es procedimental y su tier es bajo a propósito — documenta que el escrutinio existe, no que las alegaciones sean ciertas. Mantener la distinción entre 'objetivo de investigación' y 'posesión confirmada' es exactamente la disciplina epistémica que distingue al corpus del rumor.",
+  "whyMatters_en": "It closes the actor map: if agencies and individual FFRDCs (MITRE, Battelle) are nodes, this is the full network the investigation pursues. Its value is procedural and its tier is deliberately low — it documents that scrutiny exists, not that the allegations are true. Keeping the distinction between 'investigation target' and 'confirmed possession' is exactly the epistemic discipline that separates the corpus from rumor.",
+  "evidence": [
+    "Reportes de prensa (2026): la investigación de disclosure amplía requerimientos hacia RAND, Aerospace Corp, MIT Lincoln Laboratory, Northrop Grumman y SAIC.",
+    "Las alegaciones de retrieval/reverse-engineering derivan del testimonio juramentado de Grusch (2023) y de prensa — sin documentos oficiales confirmatorios.",
+    "EG&G: contratista logístico documentado de Área 51 (vuelos 'Janet'); vínculo con material UAP indirecto.",
+    "Lo confirmado es el proceso de requerimiento congresional, no la posesión de material."
+  ],
+  "evidence_en": [
+    "Press reports (2026): the disclosure investigation expands demands toward RAND, Aerospace Corp, MIT Lincoln Laboratory, Northrop Grumman and SAIC.",
+    "The retrieval/reverse-engineering allegations derive from Grusch's sworn testimony (2023) and press — without confirming official documents.",
+    "EG&G: documented Area 51 logistics contractor ('Janet' flights); link to UAP material is indirect.",
+    "What is confirmed is the congressional demand process, not possession of material."
+  ],
+  "sources": [
+    {
+      "name": "IBTimes UK — 'US lawmakers target private contractors in UFO disclosure' (2026)",
+      "url": "https://www.ibtimes.co.uk/us-lawmakers-target-private-contractors-ufo-disclosure-1797599"
+    },
+    {
+      "name": "DefenseScoop — Burlison records request a MITRE y la red de contratistas (may 2026)",
+      "url": "https://defensescoop.com/2026/05/27/rep-eric-burlison-request-for-uap-records-mitre/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Que el Congreso dirija requerimientos a una red de contratistas aeroespaciales y FFRDCs es consistente con la existencia de compartimentación profunda en programas clasificados; documenta el aparato, no su contenido. Minimal porque el caso es proceso de investigación, no hallazgo.",
+      "rationaleEn": "That Congress directs demands at a network of aerospace contractors and FFRDCs is consistent with the existence of deep compartmentalization in classified programs; it documents the apparatus, not its content. Minimal because the case is investigation process, not finding."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Las alegaciones de retrieval bajo juramento (Grusch) que motivan los requerimientos mantienen viva la hipótesis, pero al ser testimoniales y no documentadas su peso es mínimo; el caso explícitamente no las trata como confirmadas.",
+      "rationaleEn": "The sworn retrieval allegations (Grusch) that motivate the demands keep the hypothesis alive, but being testimonial and undocumented their weight is minimal; the case explicitly does not treat them as confirmed."
+    }
+  ]
+}

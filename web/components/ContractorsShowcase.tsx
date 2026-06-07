@@ -13,6 +13,9 @@ const CONTRACTOR_IDS = [
   "mitre-ffrdc-2026",
   "aawsap-skinwalker-2008",
   "battelle-special-report-1952",
+  "raytheon-atflir-2004",
+  "lockheed-skunkworks-1955",
+  "contractor-network-probe-2026",
 ];
 
 export function ContractorsShowcase() {

@@ -1,0 +1,66 @@
+{
+  "id": "lockheed-skunkworks-1955",
+  "num": 112,
+  "name": "Lockheed Martin Skunk Works (ADP)",
+  "name_en": "Lockheed Martin Skunk Works (ADP)",
+  "year_start": 1955,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 34.63,
+    "lng": -118.08,
+    "place": "Lockheed Martin Skunk Works, Palmdale, California"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 50,
+  "summary": "Skunk Works (Advanced Development Programs de Lockheed Martin) construyó los aviones más clasificados de la historia: U-2 (1955), SR-71 (1964), F-117 (1981). Es el arquetipo documentado de la hipótesis 'programa clasificado': aeronaves reales y secretas que, mientras estuvieron no reconocidas, generaron reportes de objetos imposibles. La cita atribuida a su director Ben Rich sobre 'viajar entre las estrellas' es popular pero no verificada.",
+  "summary_en": "Skunk Works (Lockheed Martin's Advanced Development Programs) built the most classified aircraft in history: U-2 (1955), SR-71 (1964), F-117 (1981). It is the documented archetype of the 'classified program' hypothesis: real, secret aircraft that, while unacknowledged, generated reports of impossible objects. The quote attributed to its director Ben Rich about 'traveling among the stars' is popular but unverified.",
+  "patterns": [
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "Skunk Works es el nombre informal de Advanced Development Programs (ADP), la división de proyectos secretos de Lockheed Martin. Desde el U-2 (primer vuelo 1955) y el A-12/SR-71 (1964) hasta el F-117 Nighthawk (1981), produjo las aeronaves más clasificadas de la historia estadounidense — capaces de altitudes, velocidades o firmas radar que, durante años, no tuvieron explicación pública. El U-2 voló a 70.000 pies cuando ningún avión comercial pasaba de 40.000; la CIA estimó después que más de la mitad de los reportes OVNI de fines de los 50 y los 60 eran, en realidad, vuelos de U-2 y SR-71.\n\nEsto coloca a Skunk Works en el centro de la hipótesis 'programa clasificado': la prueba de existencia de que aeronaves reales, secretas y no reconocidas generan reportes de objetos aparentemente imposibles mientras dura su clasificación. Es el mecanismo mundano que explica una porción del corpus — el mismo que cita la página de probabilidades para U-2 (1950s) y F-117 (1980s). La frase atribuida a Ben Rich, segundo director del Skunk Works ('ya tenemos los medios para viajar entre las estrellas…'), circula ampliamente pero carece de fuente primaria verificable y debe tratarse como apócrifa.",
+  "whatHappened_en": "Skunk Works is the informal name of Advanced Development Programs (ADP), Lockheed Martin's secret-projects division. From the U-2 (first flight 1955) and the A-12/SR-71 (1964) to the F-117 Nighthawk (1981), it produced the most classified aircraft in U.S. history — capable of altitudes, speeds or radar signatures that, for years, had no public explanation. The U-2 flew at 70,000 feet when no commercial aircraft passed 40,000; the CIA later estimated that more than half of UFO reports from the late 1950s and 1960s were, in fact, U-2 and SR-71 flights.\n\nThis places Skunk Works at the center of the 'classified program' hypothesis: the existence proof that real, secret, unacknowledged aircraft generate reports of apparently impossible objects while their classification lasts. It is the mundane mechanism that explains a portion of the corpus — the same one the probabilities page cites for the U-2 (1950s) and F-117 (1980s). The phrase attributed to Ben Rich, the second Skunk Works director ('we already have the means to travel among the stars…'), circulates widely but lacks a verifiable primary source and should be treated as apocryphal.",
+  "whyMatters": "Skunk Works es la razón por la que la hipótesis 'programa clasificado' no es especulación sino patrón histórico confirmado: cada vez que el Estado desclasifica un avión negro, retroactivamente explica una ola de reportes. Anclar este actor mantiene honesto al corpus — recuerda que la explicación más probable para buena parte de los casos es tecnología humana secreta, no exótica. Su cita apócrifa también ilustra cómo el mito se mezcla con el dato.",
+  "whyMatters_en": "Skunk Works is why the 'classified program' hypothesis is not speculation but a confirmed historical pattern: each time the state declassifies a black aircraft, it retroactively explains a wave of reports. Anchoring this actor keeps the corpus honest — a reminder that the most likely explanation for much of the case set is secret human technology, not exotic. Its apocryphal quote also illustrates how myth blends with data.",
+  "evidence": [
+    "Skunk Works (ADP) construyó el U-2 (1955), el A-12/SR-71 (1964) y el F-117 (1981) — las aeronaves más clasificadas de su época.",
+    "La CIA estimó que más de la mitad de los reportes OVNI de fines de los 50 y los 60 fueron vuelos de U-2/SR-71.",
+    "Patrón confirmado: la desclasificación de cada avión negro explica retroactivamente reportes previos.",
+    "La cita atribuida a Ben Rich sobre viajes interestelares carece de fuente primaria verificable (apócrifa)."
+  ],
+  "evidence_en": [
+    "Skunk Works (ADP) built the U-2 (1955), the A-12/SR-71 (1964) and the F-117 (1981) — the most classified aircraft of their era.",
+    "The CIA estimated that more than half of late-1950s and 1960s UFO reports were U-2/SR-71 flights.",
+    "Confirmed pattern: the declassification of each black aircraft retroactively explains prior reports.",
+    "The quote attributed to Ben Rich about interstellar travel lacks a verifiable primary source (apocryphal)."
+  ],
+  "sources": [
+    {
+      "name": "CIA — 'The CIA and the U-2 Program, 1954–1974' (rol del U-2 en reportes OVNI)",
+      "url": "https://www.cia.gov/readingroom/document/0001417320"
+    },
+    {
+      "name": "Lockheed Martin — Skunk Works / Advanced Development Programs",
+      "url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Skunk Works es la prueba de existencia de la hipótesis: aeronaves reales y secretas (U-2, SR-71, F-117) generaron oleadas de reportes de objetos imposibles mientras estuvieron no reconocidas, confirmadas retroactivamente por la propia CIA. Es el mecanismo mundano mejor documentado para explicar una porción del corpus. Modest y no más alto porque explica una fracción (sobre todo casos de alta altitud / firma radar), no los casos con cinemática o materiales fuera del envelope conocido.",
+      "rationaleEn": "Skunk Works is the existence proof of the hypothesis: real, secret aircraft (U-2, SR-71, F-117) generated waves of impossible-object reports while unacknowledged, retroactively confirmed by the CIA itself. It is the best-documented mundane mechanism to explain a portion of the corpus. Modest and no higher because it explains a fraction (mainly high-altitude / radar-signature cases), not cases with kinematics or materials outside the known envelope."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "La disponibilidad demostrada de explicaciones de programa clasificado para reportes históricamente 'imposibles' resta, marginalmente, a la necesidad de invocar origen no humano para el corpus en general — aunque no toca los casos cuyas propiedades exceden el envelope aeronáutico conocido.",
+      "rationaleEn": "The demonstrated availability of classified-program explanations for historically 'impossible' reports marginally weakens the need to invoke non-human origin for the corpus in general — though it does not touch cases whose properties exceed the known aeronautical envelope."
+    }
+  ]
+}
