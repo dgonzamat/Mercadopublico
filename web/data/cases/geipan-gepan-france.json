@@ -1,0 +1,57 @@
+{
+  "id": "geipan-gepan-france",
+  "num": 107,
+  "name": "GEPAN / GEIPAN · agencia CNES",
+  "name_en": "GEPAN / GEIPAN · CNES agency",
+  "year_start": 1977,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 43.56,
+    "lng": 1.48,
+    "place": "CNES, Toulouse (Francia)"
+  },
+  "tier": "A",
+  "probability": 45,
+  "epistemicStatus": "documented",
+  "category": "document",
+  "summary": "En 1977 la agencia espacial francesa (CNES) creó el GEPAN (Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés), dirigido inicialmente por Claude Poher. Renombrado SEPRA (1988) y luego GEIPAN (2005), es el único organismo del mundo dentro de una agencia espacial nacional dedicado de forma pública y sostenida —casi medio siglo— a recibir, investigar y publicar reportes de fenómenos aeroespaciales no identificados. Clasifica cada caso (A–D) según cuánto se explica; un pequeño porcentaje queda como 'PAN D', no identificado pese a buena información. Es el patrón oro institucional, y el organismo que estudió la traza física de Trans-en-Provence.",
+  "summary_en": "In 1977 the French space agency (CNES) created GEPAN (Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés), initially directed by Claude Poher. Renamed SEPRA (1988) and then GEIPAN (2005), it is the only body in the world within a national space agency dedicated publicly and continuously —for nearly half a century— to receiving, investigating and publishing reports of unidentified aerospace phenomena. It classifies each case (A–D) by how much is explained; a small percentage remains 'PAN D', unidentified despite good information. It is the institutional gold standard, and the body that studied the Trans-en-Provence physical trace.",
+  "patterns": [],
+  "whatHappened": "En 1977, el director general del CNES (la agencia espacial francesa), Yves Sillard, autorizó la creación del GEPAN —Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés—, con sede en Toulouse y dirigido por el ingeniero Claude Poher. La idea era tratar el fenómeno como un objeto de estudio científico dentro del Estado: recibir denuncias (canalizadas por la gendarmería y la aviación civil), investigarlas con método y archivar y publicar los resultados. Es algo que ningún otro país ha sostenido en el tiempo: una ventanilla oficial, pública y permanente, dentro de la agencia espacial nacional.\n\nEl organismo cambió de nombre y de alcance con los años —SEPRA en 1988, bajo Jean-Jacques Velasco, y GEIPAN desde 2005—, pero mantuvo su núcleo metodológico. Cada caso se clasifica en cuatro categorías: PAN A (identificado con certeza), PAN B (probablemente identificado), PAN C (información insuficiente) y PAN D (no identificado pese a contar con datos de buena calidad). La gran mayoría de las denuncias cae en A, B o C; solo un pequeño porcentaje —del orden de un 3%— queda como PAN D. Desde 2007, el GEIPAN publica sus expedientes en línea, un nivel de transparencia inédito para un organismo estatal.\n\nSu trabajo más célebre es la investigación de Trans-en-Provence (1981), donde la gendarmería preservó el terreno y el GEPAN encargó análisis de laboratorio del suelo y de la vegetación que mostraron alteraciones bioquímicas no triviales. Más allá de casos puntuales, el valor del GEPAN/GEIPAN para el corpus es ser la prueba de concepto de que un Estado puede estudiar el fenómeno con seriedad, sin sensacionalismo ni negación: la mayoría se explica, una minoría resiste, y todo queda documentado y disponible.",
+  "whatHappened_en": "In 1977, the director-general of CNES (the French space agency), Yves Sillard, authorized the creation of GEPAN —Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés—, based in Toulouse and directed by engineer Claude Poher. The idea was to treat the phenomenon as an object of scientific study within the state: receive reports (channeled through the gendarmerie and civil aviation), investigate them methodically, and archive and publish the results. It is something no other country has sustained over time: an official, public, permanent window within the national space agency.\n\nThe body changed name and scope over the years —SEPRA in 1988, under Jean-Jacques Velasco, and GEIPAN since 2005— but kept its methodological core. Each case is classified into four categories: PAN A (identified with certainty), PAN B (probably identified), PAN C (insufficient information) and PAN D (unidentified despite good-quality data). The vast majority of reports fall into A, B or C; only a small percentage —on the order of 3%— remains PAN D. Since 2007, GEIPAN has published its files online, a level of transparency unprecedented for a state body.\n\nIts most famous work is the investigation of Trans-en-Provence (1981), where the gendarmerie preserved the ground and GEPAN commissioned laboratory analyses of the soil and vegetation that showed non-trivial biochemical alterations. Beyond individual cases, the value of GEPAN/GEIPAN for the corpus is to be the proof of concept that a state can study the phenomenon seriously, without sensationalism or denial: most is explained, a minority resists, and everything is documented and available.",
+  "whyMatters": "El GEPAN/GEIPAN es, en lo institucional, la pieza más importante del corpus: el organismo oficial más antiguo, transparente y metodológico del mundo dedicado al fenómeno. Donde los demás Estados oscilan entre el secreto y la negación, Francia eligió hace casi cincuenta años estudiarlo abiertamente desde su agencia espacial, clasificar cada caso y publicar los expedientes. Su sistema A–D es, de hecho, un antepasado directo del tipo de calibración que este sitio intenta hacer: la mayoría se explica, un residuo no, y el rigor está en mantener separadas ambas cosas. Completa —y en cierto sentido encabeza— el conjunto de oficinas oficiales del corpus (CRIDOVNI, OIFAA, CEFAA, CIAE), y le da un anclaje europeo a Claude Poher, su director fundador.",
+  "whyMatters_en": "GEPAN/GEIPAN is, institutionally, the most important piece in the corpus: the world's oldest, most transparent and methodical official body dedicated to the phenomenon. Where other states swing between secrecy and denial, France chose almost fifty years ago to study it openly from its space agency, classify every case and publish the files. Its A–D system is, in fact, a direct ancestor of the kind of calibration this site attempts: most is explained, a residue is not, and the rigor lies in keeping the two apart. It completes —and in a sense heads— the corpus's set of official offices (CRIDOVNI, OIFAA, CEFAA, CIAE), and gives a European anchor to Claude Poher, its founding director.",
+  "evidence": [
+    "Creación del GEPAN por el CNES en 1977 (dirección de Claude Poher); renombrado SEPRA (1988) y GEIPAN (2005)",
+    "Sistema de clasificación PAN A–D; ~3% queda como PAN D (no identificado con datos de buena calidad)",
+    "Único organismo en una agencia espacial nacional dedicado al fenómeno de forma pública y continua (~50 años)",
+    "Publicación en línea de expedientes desde 2007; investigación de referencia: Trans-en-Provence (1981)"
+  ],
+  "evidence_en": [
+    "Creation of GEPAN by CNES in 1977 (directed by Claude Poher); renamed SEPRA (1988) and GEIPAN (2005)",
+    "PAN A–D classification system; ~3% remains PAN D (unidentified with good-quality data)",
+    "Only body within a national space agency dedicated to the phenomenon publicly and continuously (~50 years)",
+    "Online publication of files since 2007; reference investigation: Trans-en-Provence (1981)"
+  ],
+  "sources": [
+    {
+      "name": "GEIPAN — CNES (sitio oficial)",
+      "url": "https://www.cnes-geipan.fr/"
+    },
+    {
+      "name": "GEIPAN — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GEIPAN"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El historial documentado del GEPAN/GEIPAN es que la gran mayoría de las denuncias se clasifican como identificadas o probablemente identificadas (PAN A/B) o con información insuficiente (PAN C). Es evidencia institucional, sostenida durante décadas y publicada, de cuánto del fenómeno se explica con análisis riguroso —dejando, eso sí, un residuo PAN D reconocido.",
+      "rationaleEn": "The documented track record of GEPAN/GEIPAN is that the vast majority of reports are classified as identified or probably identified (PAN A/B) or with insufficient information (PAN C). It is institutional evidence, sustained over decades and published, of how much of the phenomenon is explained with rigorous analysis —while acknowledging a PAN D residue."
+    }
+  ]
+}
