@@ -17,8 +17,8 @@ const PRIMARY_CTA = {
 const NAV_LINKS = [
   {
     href: "/cases",
-    es: { label: "Casos", sub: "52 institucionales · 1947–2026" },
-    en: { label: "Cases", sub: "52 institutional · 1947–2026" },
+    es: { label: "Casos", sub: `${STATS.cases} institucionales · 1947–2026` },
+    en: { label: "Cases", sub: `${STATS.cases} institutional · 1947–2026` },
   },
   {
     href: "/atlas",

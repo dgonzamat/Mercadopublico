@@ -184,7 +184,7 @@ export function CorpusStats() {
           <T
             es={
               <>
-                ¿Quieres ver los 18 patrones?{" "}
+                ¿Quieres ver los {patterns.length} patrones?{" "}
                 <Link
                   href="/patterns"
                   className="text-accent hover:underline"
@@ -195,7 +195,7 @@ export function CorpusStats() {
             }
             en={
               <>
-                Want to see all 18 patterns?{" "}
+                Want to see all {patterns.length} patterns?{" "}
                 <Link
                   href="/patterns"
                   className="text-accent hover:underline"
