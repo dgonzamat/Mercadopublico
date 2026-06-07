@@ -1,0 +1,80 @@
+{
+  "id": "roosevelt-2014",
+  "num": 82,
+  "name": "USS Theodore Roosevelt (Gimbal/GoFast)",
+  "name_en": "USS Theodore Roosevelt (Gimbal/GoFast)",
+  "year_start": 2014,
+  "year_end": 2015,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 31.0,
+    "lng": -79.5,
+    "place": "Atlántico, costa este de EE.UU. (Virginia–Florida)"
+  },
+  "tier": "S",
+  "probability": 80,
+  "summary": "Pilotos de F/A-18 del ala aérea del USS Theodore Roosevelt registran contactos UAP casi a diario frente a la costa este de EE.UU. (verano 2014–marzo 2015), confirmados por radar, infrarrojo y vista. De esas salidas salen los videos Gimbal y GoFast. Ryan Graves reporta un cuasi-impacto y eleva quejas formales de seguridad de vuelo.",
+  "summary_en": "F/A-18 pilots from the USS Theodore Roosevelt air wing log near-daily UAP contacts off the U.S. East Coast (summer 2014–March 2015), confirmed by radar, infrared and visual. The Gimbal and GoFast videos come from these sorties. Ryan Graves reports a near-miss and files formal flight-safety complaints.",
+  "patterns": ["8h", "8e"],
+  "category": "incident",
+  "whatHappened": "Entre el verano de 2014 y marzo de 2015, mientras el ala aérea del portaaviones USS Theodore Roosevelt entrenaba en las áreas de aviso del Atlántico frente a la costa este de Estados Unidos —entre Virginia y Florida—, las tripulaciones de F/A-18 Super Hornet comenzaron a registrar objetos no identificados casi a diario. Los contactos aparecían simultáneamente en radar, en el sensor infrarrojo ATFLIR y a la vista de los pilotos. Los objetos no mostraban superficies de control, alas ni escape visible, y se mantenían estacionarios contra vientos de más de 100 nudos o aceleraban a velocidades que las tripulaciones no podían igualar.\n\nEl teniente Ryan Graves, del escuadrón VFA-11, fue uno de los pilotos que reportó los contactos de forma sistemática y elevó quejas formales de seguridad de vuelo, después de que un compañero de su escuadrón estuviera a punto de colisionar con un objeto descrito como 'un cubo dentro de una esfera transparente' en el Área de Aviso W-72. De estas mismas salidas provienen dos grabaciones que se harían públicas: GIMBAL —filmada el 20 de enero de 2015 frente a Jacksonville (Florida), que muestra un objeto rotando sobre las nubes mientras la tripulación menciona 'toda una flota' en el radar— y GOFAST, que muestra un objeto desplazándose veloz a baja altura sobre el océano.\n\nEl 16 de diciembre de 2017, The New York Times reveló la existencia del programa AATIP del Pentágono y publicó los videos FLIR (Nimitz) y GIMBAL (Roosevelt). En julio de 2023, Graves declaró bajo juramento ante el subcomité de Supervisión de la Cámara de Representantes sobre estos encuentros y sobre la ausencia de un canal de reporte funcional para los pilotos.",
+  "whatHappened_en": "Between the summer of 2014 and March 2015, while the USS Theodore Roosevelt carrier air wing trained in the Atlantic warning areas off the U.S. East Coast —between Virginia and Florida— F/A-18 Super Hornet crews began logging unidentified objects almost daily. The contacts appeared simultaneously on radar, on the ATFLIR infrared sensor, and to the pilots' eyes. The objects showed no control surfaces, wings or visible exhaust, and held station against 100-knot-plus winds or accelerated beyond what the crews could match.\n\nLieutenant Ryan Graves, of squadron VFA-11, was one of the pilots who systematically reported the contacts and filed formal flight-safety complaints, after a squadron-mate nearly collided with an object described as 'a cube inside a transparent sphere' in Warning Area W-72. From these same sorties came two recordings that would later go public: GIMBAL —filmed on 20 January 2015 off Jacksonville, Florida, showing an object rotating above the clouds as the crew remarks on 'a whole fleet' on radar— and GOFAST, showing an object moving fast at low altitude over the ocean.\n\nOn 16 December 2017, The New York Times revealed the Pentagon's AATIP program and published the FLIR (Nimitz) and GIMBAL (Roosevelt) videos. In July 2023, Graves testified under oath before the House Oversight subcommittee about these encounters and about the absence of a functioning reporting channel for pilots.",
+  "whyMatters": "Roosevelt es la contraparte atlántica de Nimitz: contactos militares persistentes, confirmados por múltiples sensores independientes, que se repitieron casi a diario durante meses sin resolución. A diferencia de un avistamiento aislado, la recurrencia convierte el caso en un problema de seguridad de vuelo documentado, no en una anécdota. Dos de sus grabaciones —Gimbal y GoFast— se volvieron, junto al FLIR de Nimitz, la ventana pública que detonó la era moderna de divulgación. El testimonio de Graves expone además la falla estructural del sistema de reporte: pilotos que veían objetos a diario sin un canal formal para registrarlos.",
+  "whyMatters_en": "Roosevelt is the Atlantic counterpart of Nimitz: persistent military contacts, confirmed by multiple independent sensors, recurring almost daily for months with no resolution. Unlike an isolated sighting, the recurrence makes the case a documented flight-safety problem, not an anecdote. Two of its recordings —Gimbal and GoFast— became, alongside the Nimitz FLIR, the public window that detonated the modern disclosure era. Graves's testimony also exposes the structural failure of the reporting system: pilots seeing objects daily with no formal channel to log them.",
+  "evidence": [
+    "Contactos simultáneos en radar, sensor infrarrojo ATFLIR y observación visual de las tripulaciones del USS Theodore Roosevelt (2014–2015)",
+    "Video GIMBAL filmado el 20 de enero de 2015 frente a Jacksonville (Florida)",
+    "Video GOFAST de las mismas salidas atlánticas",
+    "Cuasi-impacto reportado en el Área de Aviso W-72; quejas formales de seguridad de vuelo elevadas por Ryan Graves (VFA-11)",
+    "Reportaje de The New York Times (16 dic 2017) revelando AATIP y publicando los videos",
+    "Testimonio bajo juramento de Ryan Graves ante el subcomité de Supervisión de la Cámara (julio 2023)"
+  ],
+  "evidence_en": [
+    "Simultaneous radar, ATFLIR infrared sensor and visual contacts by USS Theodore Roosevelt crews (2014–2015)",
+    "GIMBAL video filmed on 20 January 2015 off Jacksonville, Florida",
+    "GOFAST video from the same Atlantic sorties",
+    "Reported near-miss in Warning Area W-72; formal flight-safety complaints filed by Ryan Graves (VFA-11)",
+    "New York Times report (16 Dec 2017) revealing AATIP and publishing the videos",
+    "Ryan Graves's sworn testimony before the House Oversight subcommittee (July 2023)"
+  ],
+  "sources": [
+    {
+      "name": "Ryan Graves — Written Statement, House Oversight Subcommittee on National Security (26 jul 2023)",
+      "url": "https://oversight.house.gov/wp-content/uploads/2023/07/Ryan-HOC-Testimony.pdf"
+    },
+    {
+      "name": "The New York Times — 'Glowing Auras and ‘Black Money’: The Pentagon's Mysterious U.F.O. Program' (16 dic 2017)",
+      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
+    },
+    {
+      "name": "Pentagon UFO videos (FLIR/Gimbal/GoFast) — autenticidad confirmada por el DoD (2020)",
+      "note": "El Departamento de Defensa confirmó la autenticidad de los tres videos en abril de 2020.",
+      "note_en": "The Department of Defense confirmed the authenticity of the three videos in April 2020."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "La confirmación multi-sensor (radar + ATFLIR + vista) descarta el artefacto óptico aislado, y la recurrencia casi diaria durante meses descarta el evento puntual irrepetible. Objetos sin superficies de control ni escape visible que se mantienen contra vientos de 100+ nudos están fuera del envelope conocido. Modest porque la ambigüedad sensorial de Gimbal (debate sobre paralaje/rotación del cardán) impide tratarlo como prueba definitiva.",
+      "rationaleEn": "Multi-sensor confirmation (radar + ATFLIR + visual) rules out an isolated optical artifact, and near-daily recurrence over months rules out a one-off unrepeatable event. Objects with no control surfaces or visible exhaust holding station against 100-knot-plus winds are outside the known envelope. Modest because Gimbal's sensor ambiguity (parallax/gimbal-rotation debate) prevents treating it as definitive proof."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La aparición de objetos no identificados de forma persistente en un área de entrenamiento militar activa es compatible con drones o plataformas de prueba —propias o adversarias— operando sin coordinación con las tripulaciones. Minimal porque el comportamiento de vuelo observado (sin propulsión visible, contra viento extremo) no encaja con tecnología convencional conocida.",
+      "rationaleEn": "The persistent appearance of unidentified objects in an active military training area is consistent with drones or test platforms —friendly or adversary— operating without coordination with the crews. Minimal because the observed flight behavior (no visible propulsion, against extreme wind) does not fit known conventional technology."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "La persistencia espacial y temporal (mismas áreas, casi a diario, durante meses) y la confirmación simultánea en radar e infrarrojo no encajan con fenómenos atmosféricos transitorios. Minimal porque el caso no resuelve la hipótesis por sí solo.",
+      "rationaleEn": "The spatial and temporal persistence (same areas, near-daily, over months) and simultaneous radar-plus-infrared confirmation do not fit transient atmospheric phenomena. Minimal because the case does not resolve the hypothesis on its own."
+    }
+  ]
+}

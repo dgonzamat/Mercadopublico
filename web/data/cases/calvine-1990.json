@@ -1,0 +1,64 @@
+{
+  "id": "calvine-1990",
+  "num": 83,
+  "name": "Calvine · Perthshire",
+  "name_en": "Calvine · Perthshire",
+  "year_start": 1990,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 56.78,
+    "lng": -3.95,
+    "place": "Calvine, Perthshire, Escocia"
+  },
+  "tier": "A",
+  "probability": 62,
+  "summary": "El 4 de agosto de 1990, dos hombres fotografían un gran objeto en forma de diamante suspendido en silencio sobre los páramos de Calvine (Escocia), con un caza militar visible cerca. Entregaron las fotos a un diario, que las pasó al Ministerio de Defensa; los originales 'desaparecieron' y nunca se publicaron. David Clarke recuperó una copia 32 años después.",
+  "summary_en": "On 4 August 1990, two men photograph a large diamond-shaped object hovering silently over the moors at Calvine, Scotland, with a military jet visible nearby. They handed the photos to a newspaper, which passed them to the Ministry of Defence; the originals 'disappeared' and were never published. David Clarke recovered a copy 32 years later.",
+  "patterns": ["8m"],
+  "category": "incident",
+  "whatHappened": "En la tarde del 4 de agosto de 1990, dos hombres que caminaban por los páramos sobre la aldea de Calvine, en Perthshire (Escocia), observaron un gran objeto en forma de diamante suspendido en silencio en el cielo. Buscaron refugio bajo unos árboles y, desde allí, tomaron una serie de unas seis fotografías mientras el objeto permanecía estático y luego ascendía verticalmente hasta desaparecer. En al menos una de las imágenes aparece, además del objeto, un caza militar a poca distancia.\n\nLos testigos entregaron las copias y los negativos originales a un periódico escocés (el Daily Record), que a su vez los remitió al Ministerio de Defensa (MoD). Los originales se 'extraviaron' y la historia nunca se publicó. Durante más de tres décadas las fotografías estuvieron fuera del alcance público, pese a ser consideradas por varios investigadores entre las mejores jamás tomadas del fenómeno.\n\nTras trece años de investigación, el académico y ex curador de los National Archives David Clarke localizó al ex oficial de prensa de la RAF Craig Lindsay, quien había conservado una copia del último positivo original. En mayo de 2022 Lindsay le mostró la fotografía, el sobre y las fotocopias que en su día había enviado por fax al MoD. La imagen se hizo pública en 2022. Un análisis fotográfico de Andrew Robinson (Sheffield Hallam) no halló señales de manipulación.",
+  "whatHappened_en": "On the evening of 4 August 1990, two men walking on the moors above the hamlet of Calvine, in Perthshire (Scotland), observed a large diamond-shaped object hovering silently in the sky. They took shelter under some trees and, from there, shot a series of about six photographs while the object held station and then ascended vertically out of view. In at least one of the images, alongside the object, a military jet appears nearby.\n\nThe witnesses handed the prints and original negatives to a Scottish newspaper (the Daily Record), which in turn passed them to the Ministry of Defence (MoD). The originals were 'misplaced' and the story was never published. For more than three decades the photographs were beyond public reach, despite being regarded by several researchers as among the best ever taken of the phenomenon.\n\nAfter thirteen years of research, academic and former National Archives curator David Clarke located former RAF press officer Craig Lindsay, who had kept a copy of the last original print. In May 2022 Lindsay showed him the photograph, the envelope and the photocopies he had once faxed to the MoD. The image was made public in 2022. A photographic analysis by Andrew Robinson (Sheffield Hallam) found no signs of manipulation.",
+  "whyMatters": "Calvine es uno de los casos fotográficos mejor documentados del Reino Unido, y su valor no está solo en la imagen sino en lo que pasó con ella: el Ministerio de Defensa retuvo el material durante más de treinta años, los originales se 'perdieron' y la historia se enterró. Es un ejemplo nítido del patrón de cover-up institucional documentado —el aparato oficial actuando para filtrar, no para esclarecer—. Que el caso solo saliera a la luz por la copia que un oficial de prensa guardó por su cuenta muestra hasta qué punto la información dependía de la voluntad individual frente al archivo oficial.",
+  "whyMatters_en": "Calvine is one of the United Kingdom's best-documented photographic cases, and its value lies not only in the image but in what happened to it: the Ministry of Defence held the material for more than thirty years, the originals were 'lost', and the story was buried. It is a clear instance of the documented institutional cover-up pattern —the official apparatus acting to filter, not to clarify. That the case only came to light through the copy a press officer kept on his own shows how far the information depended on individual will against the official archive.",
+  "evidence": [
+    "Serie de ~6 fotografías tomadas el 4 de agosto de 1990 por dos testigos sobre los páramos de Calvine",
+    "Presencia de un caza militar junto al objeto en al menos una de las imágenes",
+    "Entrega de copias y negativos originales al MoD, vía el diario Daily Record; posterior 'extravío' de los originales",
+    "Copia del último positivo conservada por el ex oficial de prensa de la RAF Craig Lindsay durante 32 años",
+    "Análisis fotográfico de Andrew Robinson (Sheffield Hallam) sin indicios de manipulación"
+  ],
+  "evidence_en": [
+    "Series of ~6 photographs taken on 4 August 1990 by two witnesses on the Calvine moors",
+    "Presence of a military jet beside the object in at least one of the images",
+    "Delivery of prints and original negatives to the MoD, via the Daily Record newspaper; subsequent 'loss' of the originals",
+    "Copy of the last print kept by former RAF press officer Craig Lindsay for 32 years",
+    "Photographic analysis by Andrew Robinson (Sheffield Hallam) with no signs of manipulation"
+  ],
+  "sources": [
+    {
+      "name": "David Clarke — Calvine UFO photograph (investigación y publicación, 2022)",
+      "url": "https://drdavidclarke.co.uk/",
+      "note": "Recuperó la copia conservada por Craig Lindsay y la hizo pública.",
+      "note_en": "Recovered the copy kept by Craig Lindsay and made it public."
+    },
+    {
+      "name": "Newsweek — 'Best UFO Picture Ever, the Calvine Photo, Found After 30 Years Missing' (2022)",
+      "url": "https://www.newsweek.com/best-ufo-picture-calvine-photo-found-30-years-missing-1733673"
+    },
+    {
+      "name": "A. Robinson — 'Photographic Analysis of the Calvine UFO Photograph', Sheffield Hallam University",
+      "url": "https://shura.shu.ac.uk/34877/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La combinación de un objeto no identificado, un caza militar en la escena y la retención prolongada del material por el Ministerio de Defensa es consistente con la lectura de que las autoridades sospechaban un programa clasificado —propio o ajeno— y suprimieron las imágenes por eso. Minimal porque la suppression también es compatible con otras hipótesis y la naturaleza del objeto sigue sin determinarse.",
+      "rationaleEn": "The combination of an unidentified object, a military jet in the scene, and the Ministry of Defence's prolonged retention of the material is consistent with the reading that the authorities suspected a classified program —their own or another's— and suppressed the images for that reason. Minimal because the suppression is also compatible with other hypotheses and the nature of the object remains undetermined."
+    }
+  ]
+}
