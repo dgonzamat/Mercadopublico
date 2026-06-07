@@ -53,7 +53,7 @@ researchers.forEach((r, i) => {
   else seenResearcherIds.add(r.id);
 
   if (!isStr(r.name)) err(w, "name obligatorio (string)");
-  if (!isNum(r.born)) err(w, "born obligatorio (number)");
+  if (r.born !== undefined && !isNum(r.born)) err(w, "born debe ser number");
   if (r.death !== undefined && !isNum(r.death)) err(w, "death debe ser number");
   if (!SECTIONS.has(r.section)) err(w, `section inválida "${r.section}" (A–E)`);
   if (!isStr(r.section_label)) err(w, "section_label obligatorio (string)");
