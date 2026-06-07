@@ -808,6 +808,47 @@
     ]
   },
   {
+    "id": "haines",
+    "name": "Richard F. Haines",
+    "flag": "🇺🇸",
+    "born": 1937,
+    "section": "A",
+    "section_label": "Análisis científico de avistamientos (NARCAP)",
+    "section_label_en": "Scientific analysis of sightings (NARCAP)",
+    "credentials": "PhD psicología experimental · científico (R) de NASA Ames · fundador y científico jefe de NARCAP",
+    "credentials_en": "PhD experimental psychology · retired NASA Ames scientist · founder and chief scientist of NARCAP",
+    "bio_short": "Psicólogo experimental (PhD, Michigan State, 1964) y científico investigador de NASA Ames entre 1967 y 1986, donde trabajó en proyectos Gemini, Apollo, Skylab y Estación Espacial y dirigió la Oficina de Factores Humanos del Espacio. Tras retirarse del gobierno dedicó buena parte de su trabajo a documentar y analizar avistamientos en todo el mundo, con foco en dos áreas: reportes de pilotos y análisis fotográfico. En 1999 cofundó NARCAP (National Aviation Reporting Center on Anomalous Phenomena). Es el analista que sometió a revisión la foto del Lago de Cote (Costa Rica, 1971) y confirmó que el disco no era doble exposición, reflejo ni falsificación.",
+    "bio_short_en": "Experimental psychologist (PhD, Michigan State, 1964) and research scientist at NASA Ames from 1967 to 1986, where he worked on Gemini, Apollo, Skylab and Space Station projects and led the Space Human Factors Office. After retiring from government he devoted much of his work to documenting and analyzing sightings worldwide, focusing on two areas: pilot reports and photographic analysis. In 1999 he co-founded NARCAP (National Aviation Reporting Center on Anomalous Phenomena). He is the analyst who peer-reviewed the Lago de Cote photo (Costa Rica, 1971) and confirmed the disc was not a double exposure, reflection or forgery.",
+    "works": [
+      {"year": 1999, "title": "NARCAP (National Aviation Reporting Center on Anomalous Phenomena)", "contribution": "Cofundó y dirige científicamente el centro de análisis de fenómenos en aviación", "contribution_en": "Co-founded and scientifically directs the center for analysis of aviation phenomena"},
+      {"year": 1990, "title": "Análisis de la foto del Lago de Cote", "contribution": "Revisión técnica del negativo original; descartó doble exposición, reflejo y falsificación", "contribution_en": "Technical review of the original negative; ruled out double exposure, reflection and forgery"}
+    ],
+    "sources": [
+      {"name": "NARCAP — National Aviation Reporting Center on Anomalous Phenomena", "url": "https://www.narcap.org/"},
+      {"name": "Richard Haines — Center for UFO Studies (CUFOS)", "url": "https://cufos.org/about-us/cufos-board-consultants-and-friends/richard-haines/"}
+    ]
+  },
+  {
+    "id": "powell",
+    "name": "Robert Powell",
+    "flag": "🇺🇸",
+    "section": "A",
+    "section_label": "Análisis forense UAP (SCU)",
+    "section_label_en": "Forensic UAP analysis (SCU)",
+    "credentials": "Químico (BS) · ex director de investigación de MUFON (2007–2017) · miembro fundador de la SCU",
+    "credentials_en": "Chemist (BS) · former MUFON Director of Research (2007–2017) · founding member of the SCU",
+    "bio_short": "Químico de formación, con experiencia dirigiendo laboratorios y un grupo de I+D en nanotecnología (con varias patentes). Fue director de investigación de MUFON entre 2007 y 2017, donde creó su Comité de Revisión Científica (2012), y es miembro fundador del directorio de la SCU (Scientific Coalition for UAP Studies), el grupo que produce análisis técnicos de casos a partir de datos. Coautor del informe forense del caso Nimitz (2004) —que estimó aceleraciones de decenas a cientos de g— y del estudio del caso de Aguadilla (Puerto Rico, 2013), reconstruido cuadro por cuadro del video infrarrojo del CBP. Autor de 'UFOs: A Scientist Explains What We Know (And Don't Know)'.",
+    "bio_short_en": "A chemist by training, with experience directing laboratories and a nanotechnology R&D group (with several patents). He was MUFON's Director of Research from 2007 to 2017, where he created its Science Review Board (2012), and is a founding board member of the SCU (Scientific Coalition for UAP Studies), the group that produces data-driven technical analyses of cases. Co-author of the forensic report on the Nimitz case (2004) —which estimated accelerations of tens to hundreds of g— and of the study of the Aguadilla case (Puerto Rico, 2013), reconstructed frame by frame from the CBP infrared video. Author of 'UFOs: A Scientist Explains What We Know (And Don't Know)'.",
+    "works": [
+      {"year": 2017, "title": "Análisis forense del caso Nimitz (SCU)", "contribution": "Coautor del estudio que reconstruyó la cinemática del UAP (decenas a cientos de g)", "contribution_en": "Co-author of the study reconstructing the UAP's kinematics (tens to hundreds of g)"},
+      {"year": 2019, "title": "Estudio del caso Aguadilla (SCU)", "contribution": "Reconstrucción cuadro por cuadro del video infrarrojo del CBP (comportamiento transmedium)", "contribution_en": "Frame-by-frame reconstruction of the CBP infrared video (transmedium behavior)"}
+    ],
+    "sources": [
+      {"name": "SCU — Robert Powell (Scientific Coalition for UAP Studies)", "url": "https://www.explorescu.org/robert-powell"},
+      {"name": "SCU — informe del caso Aguadilla (2013)", "url": "https://www.explorescu.org/post/2013-aguadilla-puerto-rico-uap-incident-report-a-detailed-analysis"}
+    ]
+  },
+  {
     "id": "hourcade",
     "name": "Milton Hourcade",
     "flag": "🇺🇾",

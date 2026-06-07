@@ -45,6 +45,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   poher: ["trans-en-provence-1981"],
   "taylor-t": ["aawsap-skinwalker-2008"],
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
+  haines: ["lago-de-cote-1971"],
+  powell: ["aguadilla-2013", "nimitz-2004"],
 
   // A — teóricos anclados al caso que estudiaron
   nolan: ["council-bluffs-1977", "american-cosmic-2017"],
