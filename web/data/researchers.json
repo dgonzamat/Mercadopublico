@@ -627,6 +627,26 @@
     "sources": [{"name": "Incidente OVNI de La Joya (Arequipa, 1980)", "url": "https://es.wikipedia.org/wiki/Incidente_ovni_de_la_Joya_-_Arequipa", "note": "Caso documentado con múltiples testigos militares.", "note_en": "Documented case with multiple military witnesses."}]
   },
   {
+    "id": "choy",
+    "name": "Anthony Choy",
+    "born": 1961,
+    "section": "B",
+    "section_label": "Investigador oficial (OIFAA-FAP)",
+    "section_label_en": "Official investigator (OIFAA-FAP)",
+    "credentials": "Abogado y periodista · investigador de OVNIs de la OIFAA, Fuerza Aérea del Perú (desde 2002)",
+    "credentials_en": "Lawyer and journalist · UFO investigator at OIFAA, Peruvian Air Force (from 2002)",
+    "bio_short": "Abogado y periodista de investigación limeño (n. 1961). Cuando la Fuerza Aérea del Perú creó la OIFAA (Oficina de Investigación de Fenómenos Aéreos Anómalos) a fines de 2001, Choy fue convocado como su investigador civil. En febrero de 2002 encabezó la pesquisa oficial de la oleada de Chulucanas (Piura) —la primera investigación estatal de OVNIs revelada del país—. Más tarde fundó el grupo Proyecto 33 y dirigió la Asociación Peruana de Ufología (APU, 2012), que impulsa la desclasificación de archivos del Estado.",
+    "bio_short_en": "Lawyer and investigative journalist from Lima (b. 1961). When the Peruvian Air Force created OIFAA (Office for the Investigation of Anomalous Aerial Phenomena) in late 2001, Choy was brought in as its civilian investigator. In February 2002 he led the official inquiry into the Chulucanas wave (Piura) —the country's first publicly revealed state UFO investigation. He later founded the Proyecto 33 group and directed the Peruvian Association of Ufology (APU, 2012), which pushes for the declassification of state archives.",
+    "works": [
+      {"year": 2002, "title": "OIFAA — investigación de Chulucanas", "contribution": "Encabezó la investigación oficial de la oleada de Chulucanas (Piura) para la Fuerza Aérea del Perú", "contribution_en": "Led the official investigation of the Chulucanas wave (Piura) for the Peruvian Air Force"},
+      {"year": 2012, "title": "Asociación Peruana de Ufología (APU)", "contribution": "Fundó y dirigió la asociación que promueve la desclasificación de archivos OVNI del Estado peruano", "contribution_en": "Founded and directed the association promoting declassification of Peruvian state UFO archives"}
+    ],
+    "sources": [
+      {"name": "Infobae — 'Anthony Choy, el ufólogo y abogado que buscaba historias y terminó fascinado por el tema OVNI' (2023)", "url": "https://www.infobae.com/peru/2023/02/12/anthony-choy-el-ufologo-y-abogado-que-buscaba-historias-pero-termino-atrapado-por-el-tema-ovni/"},
+      {"name": "Anthony Choy — Wikipedia (ES)", "url": "https://es.wikipedia.org/wiki/Anthony_Choy"}
+    ]
+  },
+  {
     "id": "poher",
     "name": "Claude Poher",
     "born": 1936,
