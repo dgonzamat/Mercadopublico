@@ -36,7 +36,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   franz: ["mexico-flir-2004"],
   fuenzalida: ["valdes-1977"],
   salazar: ["oleada-mexico-1965"],
-  hourcade: ["cridovni-uruguay-1979"],
+  hourcade: ["cridovni-uruguay-1979", "fh227-pluna-1975"],
   banchs: ["trancas-1963"],
   agostinelli: ["trancas-1963"],
   janosch: ["bariloche-1995", "mexico-flir-2004"],
@@ -101,6 +101,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   // E — comisiones oficiales latinoamericanas
   chamorro: ["pucallpa-2008", "chulucanas-2001", "oifaa-difaa-peru"],
   lianza: ["ciae-cefae-2011"],
+  sanchez: ["cridovni-uruguay-1979"],
   bermudez: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
   bravo: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
 

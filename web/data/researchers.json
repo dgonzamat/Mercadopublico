@@ -1010,6 +1010,26 @@
     ]
   },
   {
+    "id": "sanchez",
+    "name": "Ariel Sánchez Ríos",
+    "flag": "🇺🇾",
+    "section": "B",
+    "section_label": "Coronel FAU · presidente de la CRIDOVNI",
+    "section_label_en": "FAU Colonel · president of CRIDOVNI",
+    "credentials": "Coronel (Aviador Naval, R) de la Fuerza Aérea Uruguaya · presidente de la CRIDOVNI (desde 2008)",
+    "credentials_en": "Colonel (Naval Aviator, ret.) of the Uruguayan Air Force · president of CRIDOVNI (since 2008)",
+    "bio_short": "Coronel (aviador naval, retirado) de la Fuerza Aérea Uruguaya y, desde 2008, presidente de la CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de Objetos Voladores no Identificados), la comisión gubernamental UAP de mayor continuidad del mundo —activa sin interrupción desde 1979—. Es su cara pública y su voz institucional: defiende un enfoque metodológico y de soberanía aérea, y bajo su conducción la CRIDOVNI ha investigado más de 1.500 denuncias, de las que cerca de un 3% quedan clasificadas como 'no convencionales'. En su gestión la Fuerza Aérea Uruguaya firmó un acuerdo preliminar de cooperación con la AARO de Estados Unidos para el análisis de fenómenos.",
+    "bio_short_en": "Colonel (naval aviator, retired) of the Uruguayan Air Force and, since 2008, president of CRIDOVNI (Commission for Receiving and Investigating Reports of Unidentified Flying Objects), the world's longest continuously running government UAP commission —active without interruption since 1979—. He is its public face and institutional voice: he advocates a methodological, air-sovereignty approach, and under his leadership CRIDOVNI has investigated more than 1,500 reports, of which about 3% are classified as 'non-conventional'. During his tenure the Uruguayan Air Force signed a preliminary cooperation agreement with the United States' AARO for the analysis of phenomena.",
+    "works": [
+      {"year": 2008, "title": "Presidencia de la CRIDOVNI", "contribution": "Conduce la comisión oficial uruguaya con criterio metodológico y continuidad institucional", "contribution_en": "Leads the Uruguayan official commission with a methodological approach and institutional continuity"},
+      {"year": 2023, "title": "Acuerdo de cooperación FAU–AARO", "contribution": "Acercamiento con la oficina de UAP de EE.UU. para análisis conjunto", "contribution_en": "Engagement with the U.S. UAP office for joint analysis"}
+    ],
+    "sources": [
+      {"name": "Segurilatam — entrevista al coronel Ariel Sánchez Ríos (CRIDOVNI)", "url": "https://www.segurilatam.com/entrevistas/coronel-ariel-sanchez-rios-cridovni-los-ovnis-afectan-a-la-soberania-aerea_20210921.html"},
+      {"name": "Fuerza Aérea Uruguaya — CRIDOVNI", "url": "https://www.fau.mil.uy/es/articulos/182-comision-receptora-e-investigadora-de-denuncias-de-objetos-voladores-no-identificados-cridovni.html"}
+    ]
+  },
+  {
     "id": "petit",
     "name": "Marco Antônio Petit",
     "flag": "🇧🇷",
