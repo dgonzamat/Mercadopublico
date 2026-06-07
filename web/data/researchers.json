@@ -649,6 +649,26 @@
     ]
   },
   {
+    "id": "hourcade",
+    "name": "Milton Hourcade",
+    "section": "A",
+    "section_label": "Ufología científica (Uruguay)",
+    "section_label_en": "Scientific ufology (Uruguay)",
+    "credentials": "Pionero de la ufología uruguaya · fundador del CIOVI (1958) · periodista científico · autor premiado",
+    "credentials_en": "Pioneer of Uruguayan ufology · founder of CIOVI (1958) · science journalist · award-winning author",
+    "bio_short": "Periodista científico y ufólogo uruguayo, pionero del estudio riguroso del fenómeno en su país. En 1958 fundó el CIOVI (Centro de Investigación de Objetos Voladores Inexplicables), la primera institución privada de Uruguay en investigar reportes OVNI con método científico, que operó hasta 2008 manteniendo buena relación con la comunidad académica. De enfoque escéptico y racional —busca explicaciones convencionales antes que exóticas—, fue periodista de ciencia y tecnología y trabajó veinte años en la Voz de América en Washington. En 2008 fundó el UAPSG/GEFAI, que dirige desde Iowa. Es el polo civil y científico de la ufología uruguaya, contemporáneo de la comisión oficial CRIDOVNI de la Fuerza Aérea.",
+    "bio_short_en": "Uruguayan science journalist and ufologist, a pioneer of the rigorous study of the phenomenon in his country. In 1958 he founded CIOVI (Center for the Investigation of Unexplained Flying Objects), Uruguay's first private institution to investigate UFO reports with a scientific method, which operated until 2008 while keeping a good relationship with the academic community. Skeptical and rational in approach —seeking conventional explanations before exotic ones—, he was a science and technology journalist and worked for twenty years at Voice of America in Washington. In 2008 he founded UAPSG/GEFAI, which he directs from Iowa. He is the civilian, scientific pole of Uruguayan ufology, contemporary with the official CRIDOVNI commission of the Air Force.",
+    "works": [
+      {"year": 1958, "title": "Fundación del CIOVI", "contribution": "Primera institución privada de Uruguay en investigar OVNIs con método científico (1958–2008)", "contribution_en": "Uruguay's first private institution to investigate UFOs with a scientific method (1958–2008)"},
+      {"year": 1978, "title": "OVNIs: Desafío a la Ciencia", "contribution": "Obra de referencia de la ufología científica en español", "contribution_en": "A reference work of scientific ufology in Spanish"},
+      {"year": 2008, "title": "UAPSG / GEFAI", "contribution": "Fundó el grupo de estudio de fenómenos aéreos inusuales que dirige desde EE.UU.", "contribution_en": "Founded the unusual aerial phenomena study group he directs from the US"}
+    ],
+    "sources": [
+      {"name": "El Observador — 'Los OVNI sin alienígenas ni conspiraciones'", "url": "https://www.elobservador.com.uy/nota/los-ovni-sin-alienigenas-ni-conspiraciones-20119919110"},
+      {"name": "EuroUFO — CIOVI", "url": "http://www.euroufo.net/tag/ciovi/"}
+    ]
+  },
+  {
     "id": "santa-maria",
     "name": "Óscar Santa María Huertas",
     "born": 1957,
