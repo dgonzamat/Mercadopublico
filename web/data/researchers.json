@@ -970,6 +970,46 @@
     ]
   },
   {
+    "id": "bermudez",
+    "name": "Ricardo Bermúdez",
+    "flag": "🇨🇱",
+    "section": "B",
+    "section_label": "General FACh · director de la CEFAA",
+    "section_label_en": "FACh General · director of CEFAA",
+    "credentials": "General (R) de la Fuerza Aérea de Chile · ex piloto de combate · director de la CEFAA (2009–2016)",
+    "credentials_en": "General (ret.) of the Chilean Air Force · former combat pilot · director of CEFAA (2009–2016)",
+    "bio_short": "General (retirado) de la Fuerza Aérea de Chile y ex piloto de combate, con una carrera que incluyó la dirección de la Escuela Técnica de Aeronáutica y la Escuela de Ingenieros, la subdirección de la Academia de la FACh, el cargo de agregado aéreo en Londres y el mando de la Tercera Brigada Aérea. Entre 2009 y 2016 dirigió la CEFAA (Comité de Estudios de Fenómenos Aéreos Anómalos) de la aviación civil chilena, dándole su mayor perfil científico e internacional. Bajo su conducción la CEFAA investigó y reconoció públicamente como no identificados los casos de la base El Bosque (2010) y del helicóptero naval (2014). Es la cara institucional de la ufología oficial chilena.",
+    "bio_short_en": "Retired general of the Chilean Air Force and former combat pilot, with a career that included directing the Technical Aeronautics School and the Engineering School, deputy-directing the FACh Academy, serving as air attaché in London and commanding the Third Air Brigade. Between 2009 and 2016 he directed CEFAA (Committee for the Study of Anomalous Aerial Phenomena) of Chilean civil aviation, giving it its greatest scientific and international profile. Under his leadership CEFAA investigated and publicly acknowledged as unidentified the El Bosque air base case (2010) and the naval helicopter case (2014). He is the institutional face of official Chilean ufology.",
+    "works": [
+      {"year": 2009, "title": "Dirección de la CEFAA (2009–2016)", "contribution": "Dio al comité oficial chileno un perfil científico y multidisciplinario", "contribution_en": "Gave the official Chilean committee a scientific, multidisciplinary profile"},
+      {"year": 2014, "title": "Caso del helicóptero naval", "contribution": "Condujo el análisis multidisciplinario del caso, reconocido públicamente como no identificado", "contribution_en": "Led the multidisciplinary analysis of the case, publicly acknowledged as unidentified"}
+    ],
+    "sources": [
+      {"name": "OpenMinds — 'General (Ret.) Ricardo Bermúdez, Chile's Official UFO Agency'", "url": "http://openminds.tv/general-ret-ricardo-bermudez-chiles-official-ufo-agency/31993"},
+      {"name": "DGAC Chile — CEFAA", "url": "https://www.dgac.gob.cl/cefaa-un-modelo-investigativo-de-fenomenos-aereos-anomalos/"}
+    ]
+  },
+  {
+    "id": "bravo",
+    "name": "Rodrigo Bravo Garrido",
+    "flag": "🇨🇱",
+    "section": "B",
+    "section_label": "Capitán del Ejército · representante ante la CEFAA",
+    "section_label_en": "Army Captain · representative to CEFAA",
+    "credentials": "Capitán y piloto del Ejército de Chile · representante del Ejército ante la CEFAA · autor de 'Ufología Aeronáutica'",
+    "credentials_en": "Captain and pilot of the Chilean Army · Army representative to CEFAA · author of 'Aeronautical Ufology'",
+    "bio_short": "Capitán y piloto del Ejército de Chile, vinculado al estudio del fenómeno desde una óptica aeronáutica y metodológica. Colaboró con la CEFAA desde 2002 y en diciembre de 2009 fue designado representante del Ejército ante el comité. En 2010 publicó 'Ufología Aeronáutica', donde propone un método para investigar los fenómenos aéreos anómalos con las herramientas y el rigor de la aviación —análisis de trayectorias, instrumentos, condiciones de vuelo— en lugar de la especulación. Es una de las voces militares serias del tema en Chile.",
+    "bio_short_en": "Captain and pilot of the Chilean Army, engaged with the study of the phenomenon from an aeronautical and methodological perspective. He collaborated with CEFAA from 2002 and in December 2009 was designated the Army's representative to the committee. In 2010 he published 'Aeronautical Ufology', proposing a method to investigate anomalous aerial phenomena with the tools and rigor of aviation —trajectory analysis, instruments, flight conditions— rather than speculation. He is one of the serious military voices on the subject in Chile.",
+    "works": [
+      {"year": 2009, "title": "Representante del Ejército ante la CEFAA", "contribution": "Enlace del Ejército de Chile con el comité oficial de la aviación civil", "contribution_en": "Chilean Army liaison to the civil-aviation official committee"},
+      {"year": 2010, "title": "Ufología Aeronáutica", "contribution": "Propuso un método aeronáutico y técnico para investigar fenómenos aéreos anómalos", "contribution_en": "Proposed an aeronautical, technical method to investigate anomalous aerial phenomena"}
+    ],
+    "sources": [
+      {"name": "Rodrigo Bravo — Wikipedia (ES)", "url": "https://es.wikipedia.org/wiki/Rodrigo_Bravo"},
+      {"name": "MundoNow — 'UFO sightings in Chile: pilot Rodrigo Bravo Garrido'", "url": "https://mundonow.com/en/ufo-sightings-in-chile-bravo-garrido/"}
+    ]
+  },
+  {
     "id": "petit",
     "name": "Marco Antônio Petit",
     "flag": "🇧🇷",
