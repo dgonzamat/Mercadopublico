@@ -260,11 +260,24 @@ const CANONICAL_COUNTS = new Map([
   [STATS.tierS, "STATS.tierS"],
   [STATS.tierA, "STATS.tierA"],
   [STATS.tierB, "STATS.tierB"],
+  [STATS.patterns, "STATS.patterns"],
+  [STATS.researchers, "STATS.researchers"],
+  [STATS.frameworks, "STATS.frameworks"],
 ]);
 
-// Values close to a canonical count but wrong (within ±5) likely indicate drift.
+// Drift detection (±5) solo para los conteos grandes: el ±5 de cuentas
+// chicas (patterns 18, frameworks 11) colisiona con números comunes y daría
+// falsos positivos. Esas se cazan por match exacto, no por drift.
+const DRIFT_BASES = [
+  STATS.cases,
+  STATS.countries,
+  STATS.years,
+  STATS.tierS,
+  STATS.tierA,
+  STATS.tierB,
+];
 const DRIFT_NUMBERS = new Set();
-for (const c of CANONICAL_COUNTS.keys()) {
+for (const c of DRIFT_BASES) {
   for (let d = -5; d <= 5; d++) if (d !== 0) DRIFT_NUMBERS.add(c + d);
 }
 // Don't confuse small numbers (1-10) with stats drift
@@ -283,7 +296,7 @@ for (const file of sourceFiles) {
     // Skip Vallée 1975 prediction line (date arithmetic, not corpus stat)
     if (/Vallée|Vallee|1975/.test(line)) return;
     // Look for "<number> casos|cases|países|countries|años|years"
-    const ctxRe = /\b(\d{2,3})\s+(casos|cases|países|countries|años|years|patrones|patterns)\b/g;
+    const ctxRe = /\b(\d{2,3})\s+(casos|cases|países|countries|años|years|patrones|patterns|investigadores|researchers|marcos|frameworks)\b/g;
     let m;
     while ((m = ctxRe.exec(line)) !== null) {
       const n = Number(m[1]);
