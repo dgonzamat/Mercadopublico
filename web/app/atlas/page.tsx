@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
-import { patterns } from "@/lib/data";
+import Link from "next/link";
 import { STATS } from "@/lib/siteStats";
-import { OfficialAgencies } from "@/components/OfficialAgencies";
 import { T } from "@/components/T";
 
 const WorldMap = dynamic(() => import("@/components/WorldMap"), {
@@ -38,29 +37,23 @@ export default function AtlasPage() {
 
       <WorldMap />
 
-      <OfficialAgencies />
-
-      <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+      <nav className="flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
+        <Link
+          href="/researchers#agencias"
+          className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
+        >
+          <T es="🏛️ Agencias oficiales del fenómeno" en="🏛️ Official agencies for the phenomenon" />
+        </Link>
+        <Link
+          href="/patterns"
+          className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
+        >
           <T
-            es={`Patrones documentados (${STATS.patterns})`}
-            en={`Documented patterns (${STATS.patterns})`}
+            es={`🔁 Patrones documentados (${STATS.patterns})`}
+            en={`🔁 Documented patterns (${STATS.patterns})`}
           />
-        </h2>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {patterns.map((p) => (
-            <a
-              key={p.id}
-              href={`/patterns/${p.letter}`}
-              className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-2.5 py-1 text-xs hover:border-accent/50"
-              style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
-            >
-              <span className="font-mono text-accent">{p.id}</span>{" "}
-              <span className="text-text">{p.name}</span>
-            </a>
-          ))}
-        </div>
-      </section>
+        </Link>
+      </nav>
     </div>
   );
 }

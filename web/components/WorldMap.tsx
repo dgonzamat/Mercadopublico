@@ -34,20 +34,24 @@ export default function WorldMap() {
 
   return (
     <div className="space-y-3">
-      <div
-        className="flex flex-wrap gap-2 text-xs"
-        role="group"
-        aria-label="Filtro por nivel de evidencia"
-      >
+      <div className="space-y-2">
+        <span className="font-mono text-xs uppercase tracking-widest text-muted">
+          <T es="Filtrar por nivel de evidencia" en="Filter by evidence level" />
+        </span>
+        <div
+          className="flex flex-wrap gap-2 text-xs"
+          role="group"
+          aria-label="Filtro por nivel de evidencia"
+        >
         {TIERS.map((t) => (
           <button
             key={t.key}
             type="button"
             onClick={() => toggle(t.key)}
             aria-pressed={active[t.key]}
-            className={`inline-flex min-h-[36px] items-center gap-2 rounded border px-2.5 py-1 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            className={`inline-flex min-h-[36px] items-center gap-2 rounded border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               active[t.key]
-                ? "border-border bg-panel text-muted"
+                ? "border-accent/40 bg-panel text-text"
                 : "border-border/40 bg-transparent text-muted/40"
             }`}
           >
@@ -66,6 +70,7 @@ export default function WorldMap() {
             </span>
           </button>
         ))}
+        </div>
       </div>
 
       <div className="overflow-hidden rounded-lg border border-border">

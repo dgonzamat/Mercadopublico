@@ -1232,5 +1232,65 @@
       {"name": "Marco Antônio Petit — Wikipédia (PT)", "url": "https://pt.wikipedia.org/wiki/Marco_Ant%C3%B4nio_Petit"},
       {"name": "Revista UFO — Marco Antonio Petit", "url": "https://ufo.com.br/marco-antonio-petit/"}
     ]
+  },
+  {
+    "id": "maccabee",
+    "name": "Bruce Maccabee",
+    "flag": "🇺🇸",
+    "born": 1942,
+    "section": "A",
+    "section_label": "Análisis fotográfico y óptico de avistamientos",
+    "section_label_en": "Photographic and optical analysis of sightings",
+    "credentials": "PhD física óptica (American University) · físico (R) del Naval Surface Warfare Center · fundador del Fund for UFO Research",
+    "credentials_en": "PhD optical physics (American University) · retired physicist, Naval Surface Warfare Center · founder of the Fund for UFO Research",
+    "bio_short": "Físico óptico (PhD, American University) que trabajó durante décadas para la Marina de EE.UU. en el Naval Surface Warfare Center, en procesamiento óptico de datos, láseres y defensa antimisil. Fuera de su trabajo gubernamental se especializó en el análisis técnico de fotografías y películas de avistamientos, aplicando fotometría y reconstrucción geométrica para descartar artefactos, reflejos y falsificaciones. Cofundador del Fund for UFO Research. Es el analista que estudió la película del avistamiento de Kaikōura (Nueva Zelanda, 1978) y los datos del encuentro de Japan Air Lines 1628 (1986).",
+    "bio_short_en": "Optical physicist (PhD, American University) who worked for decades for the U.S. Navy at the Naval Surface Warfare Center on optical data processing, lasers and missile defense. Outside his government work he specialized in the technical analysis of sighting photographs and films, applying photometry and geometric reconstruction to rule out artifacts, reflections and forgeries. Co-founder of the Fund for UFO Research. He is the analyst who studied the film of the Kaikōura sighting (New Zealand, 1978) and the data from the Japan Air Lines 1628 encounter (1986).",
+    "works": [
+      {"year": 1979, "title": "Análisis de la película de Kaikōura (Nueva Zelanda)", "contribution": "Estudio fotométrico de las luces filmadas desde el avión de carga y de los registros de radar", "contribution_en": "Photometric study of the lights filmed from the cargo aircraft and of the radar records"},
+      {"year": 1987, "title": "Análisis del caso Japan Air Lines 1628", "contribution": "Revisión técnica de los datos de radar/FAA del encuentro sobre Alaska", "contribution_en": "Technical review of the radar/FAA data from the encounter over Alaska"}
+    ],
+    "sources": [
+      {"name": "Bruce Maccabee — Wikipedia (EN)", "url": "https://en.wikipedia.org/wiki/Bruce_Maccabee"},
+      {"name": "Bruce Maccabee — sitio personal (brumac)", "url": "https://brumac.org/"}
+    ]
+  },
+  {
+    "id": "schuessler",
+    "name": "John F. Schuessler",
+    "flag": "🇺🇸",
+    "section": "A",
+    "section_label": "Investigación de campo de efectos físicos (MUFON)",
+    "section_label_en": "Field investigation of physical effects (MUFON)",
+    "credentials": "Ingeniero aeroespacial (programas tripulados de NASA, McDonnell Douglas) · cofundador y director internacional de MUFON",
+    "credentials_en": "Aerospace engineer (NASA crewed programs, McDonnell Douglas) · co-founder and international director of MUFON",
+    "bio_short": "Ingeniero aeroespacial que trabajó en McDonnell Douglas en los programas tripulados de la NASA (Mercury, Gemini, Apollo, Skylab y el transbordador). Cofundador y por décadas director internacional de MUFON, donde sistematizó la metodología de investigación de campo. Lideró la investigación del incidente Cash-Landrum (1980), documentando con registros médicos los efectos de radiación reportados por los testigos, y publicó la monografía de referencia del caso.",
+    "bio_short_en": "Aerospace engineer who worked at McDonnell Douglas on NASA's crewed programs (Mercury, Gemini, Apollo, Skylab and the Shuttle). Co-founder and for decades international director of MUFON, where he systematized field-investigation methodology. He led the investigation of the Cash-Landrum incident (1980), documenting with medical records the radiation effects reported by the witnesses, and published the reference monograph on the case.",
+    "works": [
+      {"year": 1998, "title": "The Cash-Landrum UFO Incident", "contribution": "Investigación de campo de referencia del caso; documentó los efectos médicos de los testigos", "contribution_en": "Reference field investigation of the case; documented the witnesses' medical effects"},
+      {"year": 1969, "title": "MUFON — dirección internacional", "contribution": "Cofundó y dirigió la red de investigadores de campo y su protocolo", "contribution_en": "Co-founded and directed the field-investigator network and its protocol"}
+    ],
+    "sources": [
+      {"name": "MUFON — Mutual UFO Network", "url": "https://www.mufon.com/"},
+      {"name": "The Cash-Landrum UFO Incident (John F. Schuessler, 1998)", "note": "Monografía de referencia del caso", "note_en": "Reference monograph on the case"}
+    ]
+  },
+  {
+    "id": "zeidman",
+    "name": "Jennie Zeidman",
+    "flag": "🇺🇸",
+    "section": "A",
+    "section_label": "Investigación documental de casos (CUFOS)",
+    "section_label_en": "Documentary case investigation (CUFOS)",
+    "credentials": "Analista de Battelle (Project Blue Book Special Report 14) · investigadora del Center for UFO Studies (CUFOS)",
+    "credentials_en": "Battelle analyst (Project Blue Book Special Report 14) · researcher at the Center for UFO Studies (CUFOS)",
+    "bio_short": "Analista que en los años cincuenta trabajó en el Battelle Memorial Institute sobre el Special Report No. 14 del Project Blue Book, el estudio estadístico más grande de la Fuerza Aérea de EE.UU. sobre avistamientos. Colaboradora de J. Allen Hynek y del Center for UFO Studies (CUFOS). Es autora de la investigación canónica del encuentro del helicóptero del Ejército sobre Mansfield, Ohio (caso Coyne, 1973): una monografía que reconstruyó los testimonios de la tripulación y de los testigos en tierra y descartó las explicaciones convencionales.",
+    "bio_short_en": "Analyst who in the 1950s worked at the Battelle Memorial Institute on Project Blue Book's Special Report No. 14, the largest statistical study of sightings ever conducted by the U.S. Air Force. A collaborator of J. Allen Hynek and the Center for UFO Studies (CUFOS). She authored the canonical investigation of the Army helicopter encounter over Mansfield, Ohio (Coyne case, 1973): a monograph that reconstructed the crew's and ground witnesses' testimony and ruled out conventional explanations.",
+    "works": [
+      {"year": 1979, "title": "A Helicopter-UFO Encounter Over Ohio", "contribution": "Monografía CUFOS de referencia del caso Coyne (1973)", "contribution_en": "Reference CUFOS monograph on the Coyne case (1973)"}
+    ],
+    "sources": [
+      {"name": "Center for UFO Studies (CUFOS)", "url": "https://cufos.org/"},
+      {"name": "Jennie Zeidman, 'A Helicopter-UFO Encounter Over Ohio' (CUFOS, 1979)", "note": "Monografía del caso Coyne/Mansfield", "note_en": "Monograph on the Coyne/Mansfield case"}
+    ]
   }
 ]
