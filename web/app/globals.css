@@ -103,3 +103,26 @@ html[data-locale="en"] [data-lang="en"] {
 html[data-locale="en"] [data-lang="es"] {
   display: none;
 }
+
+/* ── Filtro por región (data-region-filter en el contenedor) ───────────────
+   Patrón CSS-puro, hermano del toggle de idioma. El contenedor activo oculta
+   los ítems [data-region] que no matchean, y las secciones [data-group] que
+   quedan sin ningún ítem del filtro (vía :has). Cero data al cliente. */
+[data-region-filter="norteamerica"] [data-region]:not([data-region="norteamerica"]),
+[data-region-filter="latinoamerica"] [data-region]:not([data-region="latinoamerica"]),
+[data-region-filter="europa"] [data-region]:not([data-region="europa"]),
+[data-region-filter="asia"] [data-region]:not([data-region="asia"]),
+[data-region-filter="medio-oriente"] [data-region]:not([data-region="medio-oriente"]),
+[data-region-filter="oceania"] [data-region]:not([data-region="oceania"]),
+[data-region-filter="africa"] [data-region]:not([data-region="africa"]) {
+  display: none !important;
+}
+[data-region-filter="norteamerica"] [data-group]:not(:has([data-region="norteamerica"])),
+[data-region-filter="latinoamerica"] [data-group]:not(:has([data-region="latinoamerica"])),
+[data-region-filter="europa"] [data-group]:not(:has([data-region="europa"])),
+[data-region-filter="asia"] [data-group]:not(:has([data-region="asia"])),
+[data-region-filter="medio-oriente"] [data-group]:not(:has([data-region="medio-oriente"])),
+[data-region-filter="oceania"] [data-group]:not(:has([data-region="oceania"])),
+[data-region-filter="africa"] [data-group]:not(:has([data-region="africa"])) {
+  display: none;
+}

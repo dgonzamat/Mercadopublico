@@ -3,6 +3,8 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { CategoryNav } from "@/components/CategoryNav";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
+import { RegionFilter } from "@/components/RegionFilter";
+import { regionOf, flagToCountry, type Region } from "@/lib/regions";
 
 export const metadata = {
   title: "Disclosure ecosystem · UAP Codex",
@@ -45,6 +47,12 @@ export default function ResearchersPage() {
       people: researchers.filter((r) => r.section === section.code),
     }))
     .filter(({ people }) => people.length > 0);
+
+  const regionCounts: Partial<Record<Region, number>> = {};
+  for (const r of researchers) {
+    const reg = regionOf(flagToCountry(r.flag));
+    if (reg) regionCounts[reg] = (regionCounts[reg] ?? 0) + 1;
+  }
 
   return (
     <div className="space-y-8">
@@ -94,11 +102,13 @@ export default function ResearchersPage() {
         }))}
       />
 
+      <RegionFilter counts={regionCounts} total={researchers.length}>
       {sectionList.map(({ section, people: sectionResearchers }) => {
         return (
           <section
             key={section.code}
             id={`seccion-${section.code.toLowerCase()}`}
+            data-group
             className="scroll-mt-20"
           >
             <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
@@ -111,8 +121,12 @@ export default function ResearchersPage() {
               {sectionResearchers.map((r) => {
                 const fw = r.framework ? getFramework(r.framework) : undefined;
                 return (
-                  <a
+                  <div
                     key={r.id}
+                    data-region={regionOf(flagToCountry(r.flag)) ?? "otro"}
+                    className="contents"
+                  >
+                  <a
                     href={`/researchers/${r.id}`}
                     className="flex gap-3 rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50"
                   >
@@ -142,12 +156,14 @@ export default function ResearchersPage() {
                       </p>
                     </div>
                   </a>
+                  </div>
                 );
               })}
             </div>
           </section>
         );
       })}
+      </RegionFilter>
     </div>
   );
 }

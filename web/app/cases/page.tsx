@@ -2,6 +2,8 @@ import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { CategoryNav } from "@/components/CategoryNav";
 import { CorpusStats } from "@/components/CorpusStats";
+import { RegionFilter } from "@/components/RegionFilter";
+import { regionOf, type Region } from "@/lib/regions";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
@@ -13,7 +15,7 @@ export const metadata = {
 
 const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
   {
-    start: 1947,
+    start: 1946,
     end: 1959,
     es: "La primera oleada",
     en: "The first wave",
@@ -52,6 +54,12 @@ export default function CasesPage() {
       (c) => c.year_start >= era.start && c.year_start <= era.end,
     ),
   })).filter(({ eraCases }) => eraCases.length > 0);
+
+  const regionCounts: Partial<Record<Region, number>> = {};
+  for (const c of cases) {
+    const r = regionOf(c.country);
+    if (r) regionCounts[r] = (regionCounts[r] ?? 0) + 1;
+  }
 
   return (
     <div className="space-y-12 py-8">
@@ -117,37 +125,46 @@ export default function CasesPage() {
         </span>
       </div>
 
-      <div className="space-y-8 pt-8">
-        {eras.map(({ era, eraCases }) => {
-          return (
-            <section
-              key={`${era.start}-${era.end}`}
-              id={`era-${era.start}`}
-              className="scroll-mt-20"
-            >
-              <h2 className="sticky top-14 z-10 -mx-4 bg-bg/95 px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted backdrop-blur">
-                <span className="text-text">
-                  {era.start}–{era.end}
-                </span>{" "}
-                ·{" "}
-                <T es={era.es} en={era.en} />{" "}
-                <span className="text-muted">
+      <RegionFilter counts={regionCounts} total={cases.length}>
+        <div className="space-y-8 pt-2">
+          {eras.map(({ era, eraCases }) => {
+            return (
+              <section
+                key={`${era.start}-${era.end}`}
+                id={`era-${era.start}`}
+                data-group
+                className="scroll-mt-20"
+              >
+                <h2 className="sticky top-14 z-10 -mx-4 bg-bg/95 px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted backdrop-blur">
+                  <span className="text-text">
+                    {era.start}–{era.end}
+                  </span>{" "}
                   ·{" "}
-                  <T
-                    es={`${eraCases.length} casos`}
-                    en={`${eraCases.length} cases`}
-                  />
-                </span>
-              </h2>
-              <div>
-                {eraCases.map((c) => (
-                  <CaseRow key={c.id} caseData={c} />
-                ))}
-              </div>
-            </section>
-          );
-        })}
-      </div>
+                  <T es={era.es} en={era.en} />{" "}
+                  <span className="text-muted">
+                    ·{" "}
+                    <T
+                      es={`${eraCases.length} casos`}
+                      en={`${eraCases.length} cases`}
+                    />
+                  </span>
+                </h2>
+                <div>
+                  {eraCases.map((c) => (
+                    <div
+                      key={c.id}
+                      data-region={regionOf(c.country) ?? "otro"}
+                      className="contents"
+                    >
+                      <CaseRow caseData={c} />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </RegionFilter>
     </div>
   );
 }

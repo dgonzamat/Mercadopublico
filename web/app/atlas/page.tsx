@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { patterns } from "@/lib/data";
 import { STATS } from "@/lib/siteStats";
+import { OfficialAgencies } from "@/components/OfficialAgencies";
 import { T } from "@/components/T";
 
 const WorldMap = dynamic(() => import("@/components/WorldMap"), {
@@ -35,27 +36,9 @@ export default function AtlasPage() {
         </p>
       </header>
 
-      <div className="flex flex-wrap gap-3 text-xs">
-        <Legend
-          color="#8b0000"
-          es={`Sólido (S) · ${STATS.tierS} casos`}
-          en={`Solid (S) · ${STATS.tierS} cases`}
-        />
-        <Legend
-          color="#b86b1f"
-          es={`Aceptable (A) · ${STATS.tierA} casos`}
-          en={`Acceptable (A) · ${STATS.tierA} cases`}
-        />
-        <Legend
-          color="#1e4f8b"
-          es={`Folklórico (B) · ${STATS.tierB} casos`}
-          en={`Folkloric (B) · ${STATS.tierB} cases`}
-        />
-      </div>
+      <WorldMap />
 
-      <div className="overflow-hidden rounded-lg border border-border">
-        <WorldMap />
-      </div>
+      <OfficialAgencies />
 
       <section>
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
@@ -79,25 +62,5 @@ export default function AtlasPage() {
         </div>
       </section>
     </div>
-  );
-}
-
-function Legend({
-  color,
-  es,
-  en,
-}: {
-  color: string;
-  es: string;
-  en: string;
-}) {
-  return (
-    <span className="inline-flex items-center gap-2 rounded border border-border bg-panel px-2 py-1 font-mono text-muted">
-      <span
-        className="h-3 w-3 rounded-full"
-        style={{ backgroundColor: color }}
-      />
-      <T es={es} en={en} />
-    </span>
   );
 }
