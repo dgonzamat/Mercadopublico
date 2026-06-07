@@ -1,0 +1,65 @@
+{
+  "id": "uss-omaha-2019",
+  "num": 93,
+  "name": "USS Omaha — esfera transmedium",
+  "name_en": "USS Omaha — transmedium sphere",
+  "year_start": 2019,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 32.6,
+    "lng": -117.6,
+    "place": "Área de advertencia restringida frente a San Diego, California"
+  },
+  "tier": "A",
+  "probability": 55,
+  "summary": "El 15 de julio de 2019, en un área de advertencia restringida frente a San Diego, el Combat Information Center del buque USS Omaha registró con FLIR/visión nocturna una esfera que sobrevoló el mar, se detuvo y descendió al agua sin estela visible (comportamiento 'transmedium'). El radar llegó a mostrar hasta 14 esferas rodeando al barco. Jeremy Corbell y George Knapp difundieron el material en 2021; el Pentágono confirmó que fue captado por personal de la Marina y estaba bajo análisis de la UAPTF —autenticidad confirmada, no explicación—.",
+  "summary_en": "On 15 July 2019, in a restricted warning area off San Diego, the Combat Information Center of the USS Omaha recorded with FLIR/night vision a sphere that flew over the sea, stopped, and descended into the water with no visible wake ('transmedium' behavior). Radar showed at one point up to 14 spheres surrounding the ship. Jeremy Corbell and George Knapp released the material in 2021; the Pentagon confirmed it was captured by Navy personnel and was under UAPTF analysis —authenticity confirmed, not explanation.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 15 de julio de 2019, en un área de advertencia restringida frente a la costa de San Diego (California), el buque de combate litoral USS Omaha y otras unidades de la Marina de EE.UU. registraron una serie de objetos esféricos no identificados. Desde el Combat Information Center del Omaha se filmó, con cámara FLIR y visión nocturna, una esfera que se desplazaba sobre el mar, se detenía y finalmente descendía hasta tocar el agua y desaparecer bajo la superficie, sin estela ni restos visibles —el comportamiento que la literatura UAP llama 'transmedium' (transición aire-agua)—.\n\nEl episodio no fue aislado: formó parte de una oleada de incursiones de 'esferas' sobre varios barcos de la Marina frente a San Diego en julio de 2019 (USS Omaha, USS Russell, USS Kidd, entre otros). En un momento el radar mostró hasta 14 objetos esféricos rodeando a uno de los buques. De los mismos días proviene también el llamado video 'pirámide', filmado desde el USS Russell.\n\nEl material salió a la luz en 2021, difundido por el cineasta Jeremy Corbell junto al periodista George Knapp. En abril de 2021, la portavoz del Pentágono Susan Gough confirmó que los videos habían sido captados por personal de la Marina y que la UAP Task Force los incluía en sus exámenes en curso. La confirmación cubrió la procedencia y autenticidad, no una explicación: el origen quedó sin determinar. Entre las hipótesis convencionales se ha señalado una operación de drones (posiblemente de vigilancia adversaria), que explicaría el enjambre; el descenso al agua de la esfera, en cambio, sigue siendo el elemento más discutido del caso.",
+  "whatHappened_en": "On 15 July 2019, in a restricted warning area off the coast of San Diego (California), the littoral combat ship USS Omaha and other U.S. Navy units recorded a series of unidentified spherical objects. From the Omaha's Combat Information Center, a sphere was filmed with FLIR and night vision moving over the sea, stopping, and finally descending until it touched the water and vanished beneath the surface, with no wake or visible debris —the behavior that UAP literature calls 'transmedium' (air-water transition).\n\nThe episode was not isolated: it was part of a wave of 'sphere' incursions over several Navy ships off San Diego in July 2019 (USS Omaha, USS Russell, USS Kidd, among others). At one point radar showed up to 14 spherical objects surrounding one of the ships. From those same days comes the so-called 'pyramid' video, filmed from the USS Russell.\n\nThe material came to light in 2021, released by filmmaker Jeremy Corbell alongside journalist George Knapp. In April 2021, Pentagon spokesperson Susan Gough confirmed that the videos had been captured by Navy personnel and that the UAP Task Force included them in its ongoing examinations. The confirmation covered provenance and authenticity, not an explanation: the origin was left undetermined. Among conventional hypotheses, a drone operation (possibly adversary surveillance) has been pointed to, which would explain the swarm; the sphere's descent into the water, by contrast, remains the most debated element of the case.",
+  "whyMatters": "El caso del USS Omaha importa porque combina dos cosas que rara vez coinciden: registro multisensor de la Marina (radar + FLIR + múltiples buques) y confirmación oficial del Pentágono de que el material es genuino. Eso lo separa de la ufología de video casero. Al mismo tiempo, marca con honestidad el límite: la confirmación es de autenticidad y procedencia, no de naturaleza. La explicación más sobria del enjambre —drones— es plausible y no debe descartarse; lo que resiste a esa lectura es el descenso de la esfera al agua sin estela, el dato que mantiene el caso abierto. Es un buen ejemplo del estándar del sitio: anomalía documentada por sensores e instituciones, con la conclusión deliberadamente en suspenso.",
+  "whyMatters_en": "The USS Omaha case matters because it combines two things that rarely coincide: Navy multi-sensor recording (radar + FLIR + multiple ships) and official Pentagon confirmation that the material is genuine. That sets it apart from home-video ufology. At the same time, it honestly marks the limit: the confirmation is of authenticity and provenance, not of nature. The soberest explanation of the swarm —drones— is plausible and should not be dismissed; what resists that reading is the sphere's descent into the water with no wake, the datum that keeps the case open. It is a good example of the site's standard: anomaly documented by sensors and institutions, with the conclusion deliberately suspended.",
+  "evidence": [
+    "Video FLIR/visión nocturna del Combat Information Center del USS Omaha (15 jul 2019) de una esfera que desciende al agua sin estela",
+    "Radar que mostró hasta 14 objetos esféricos rodeando a un buque de la Marina frente a San Diego",
+    "Oleada multibuque (Omaha, Russell, Kidd) en julio de 2019; incluye el video 'pirámide' del USS Russell",
+    "Confirmación del Pentágono (Susan Gough, abr 2021): material captado por personal de la Marina, en análisis de la UAPTF",
+    "Difundido por Jeremy Corbell y George Knapp (2021)"
+  ],
+  "evidence_en": [
+    "FLIR/night-vision video from the USS Omaha's Combat Information Center (15 Jul 2019) of a sphere descending into the water with no wake",
+    "Radar showing up to 14 spherical objects surrounding a Navy ship off San Diego",
+    "Multi-ship wave (Omaha, Russell, Kidd) in July 2019; includes the USS Russell 'pyramid' video",
+    "Pentagon confirmation (Susan Gough, Apr 2021): material captured by Navy personnel, under UAPTF analysis",
+    "Released by Jeremy Corbell and George Knapp (2021)"
+  ],
+  "sources": [
+    {
+      "name": "Mystery Wire (G. Knapp / J. Corbell) — 'USS Omaha UFO video'",
+      "url": "https://www.mysterywire.com/ufo/uss-omaha-ufo-video/"
+    },
+    {
+      "name": "Wikipedia — 'Pentagon UFO videos' (confirmación de autenticidad, abril 2021)",
+      "url": "https://en.wikipedia.org/wiki/Pentagon_UFO_videos"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Un enjambre de esferas que rodea buques de la Marina en un área de advertencia restringida es consistente con una operación de sistemas no tripulados (drones), posiblemente de vigilancia adversaria —la hipótesis convencional más fuerte para los eventos de San Diego de julio de 2019—.",
+      "rationaleEn": "A swarm of spheres surrounding Navy ships in a restricted warning area is consistent with an unmanned-systems (drone) operation, possibly adversary surveillance —the strongest conventional hypothesis for the July 2019 San Diego events."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El descenso de la esfera al agua sin estela ni restos visibles ('transmedium') no encaja limpio con un dron convencional. Minimal porque descansa en un único clip FLIR cuya interpretación está en disputa y la autenticidad confirmada no equivale a confirmación de naturaleza.",
+      "rationaleEn": "The sphere's descent into the water with no wake or visible debris ('transmedium') does not fit cleanly with a conventional drone. Minimal because it rests on a single FLIR clip whose interpretation is disputed, and confirmed authenticity is not confirmation of nature."
+    }
+  ]
+}
