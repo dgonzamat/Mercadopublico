@@ -104,7 +104,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   corbell: ["uss-omaha-2019"],
   clarke: ["rendlesham-1980", "calvine-1990"],
   blumenthal: ["nimitz-2004"],
-  gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986"],
+  gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986", "arquivo-nacional-brasil-2026"],
 
   // E — comisiones oficiales latinoamericanas
   chamorro: ["pucallpa-2008", "chulucanas-2001", "oifaa-difaa-peru"],
@@ -114,7 +114,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   bravo: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
 
   // Brasil — ufología de campo
-  petit: ["colares-1977", "varginha-1996", "noite-oficial-1986"],
+  petit: ["colares-1977", "varginha-1996", "noite-oficial-1986", "arquivo-nacional-brasil-2026"],
 
   // Colombia — astronomía / escepticismo
   puerta: ["bogota-t33-1964"],
