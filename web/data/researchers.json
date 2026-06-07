@@ -593,7 +593,11 @@
     "credentials_en": "FOTOCAT curator · Anomaly Foundation (Spain)",
     "bio_short": "Ufólogo analítico valenciano (n. 1948), referente del enfoque riguroso y escéptico en español. Cura FOTOCAT, el mayor catálogo mundial de casos con evidencia fotográfica o fílmica, y entre 1992 y 1999 fue pieza clave en la desclasificación de los archivos OVNI del Ejército del Aire español. Autor de más de 300 informes técnicos: trata cada caso como un problema de evidencia, no de fe.",
     "bio_short_en": "Analytical Valencian ufologist (b. 1948), a reference for the rigorous, skeptical approach in Spanish. He curates FOTOCAT, the largest worldwide catalogue of cases backed by photographic or film evidence, and between 1992 and 1999 was instrumental in declassifying the Spanish Air Force's UFO archives. Author of 300+ technical reports: he treats each case as a problem of evidence, not faith.",
-    "works": [],
+    "works": [
+      {"year": 1978, "title": "OVNIS: El fenómeno aterrizaje", "contribution": "Primer catálogo riguroso de casos de aterrizaje en España y Portugal", "contribution_en": "First rigorous catalogue of landing cases in Spain and Portugal"},
+      {"year": 1995, "title": "Expedientes insólitos", "contribution": "Documentó los archivos OVNI del Ejército del Aire y su desclasificación", "contribution_en": "Documented the Spanish Air Force's UFO archives and their declassification"},
+      {"year": 2000, "title": "Proyecto FOTOCAT", "contribution": "Catálogo mundial de casos UAP con evidencia fotográfica o fílmica", "contribution_en": "Worldwide catalogue of UAP cases with photographic or film evidence"}
+    ],
     "sources": [{"name": "Proyecto FOTOCAT · Fundación Anomalía", "url": "https://fotocat.blogspot.com/", "note": "Mayor catálogo mundial de casos con evidencia fotográfica/fílmica.", "note_en": "Largest worldwide catalogue of cases with photographic/film evidence."}]
   },
   {
@@ -607,7 +611,10 @@
     "credentials_en": "FAP Lieutenant (ret.) · combat pilot, Peruvian Air Force",
     "bio_short": "Piloto de la Fuerza Aérea del Perú que el 11 de abril de 1980, con 23 años, despegó de la base de La Joya (Arequipa) para interceptar un objeto que se creía un globo espía. Disparó 64 proyectiles desde su caza Sukhoi sin efecto y lo persiguió varios minutos; al acercarse vio una cúpula opaca, como vidrio esmerilado, sobre un disco metálico. Su testimonio —militar, bajo protocolo y documentado— es uno de los más sólidos de Latinoamérica.",
     "bio_short_en": "Peruvian Air Force pilot who, on 11 April 1980, aged 23, scrambled from La Joya base (Arequipa) to intercept an object believed to be a spy balloon. He fired 64 rounds from his Sukhoi fighter with no effect and chased it for several minutes; closing in, he saw an opaque dome, like frosted glass, over a metal disc. His testimony —military, under protocol and documented— is one of Latin America's strongest.",
-    "works": [],
+    "works": [
+      {"year": 1980, "title": "Incidente de La Joya (Arequipa)", "contribution": "Interceptó y disparó 64 proyectiles contra un UAP desde su Sukhoi, sin efecto; caso militar documentado", "contribution_en": "Intercepted and fired 64 rounds at a UAP from his Sukhoi, to no effect; documented military case"},
+      {"year": 2010, "title": "Testimonio en 'UFOs' (Leslie Kean)", "contribution": "Su relato entró al registro público internacional junto a otros pilotos y oficiales", "contribution_en": "His account entered the international public record alongside other pilots and officials"}
+    ],
     "sources": [{"name": "Incidente OVNI de La Joya (Arequipa, 1980)", "url": "https://es.wikipedia.org/wiki/Incidente_ovni_de_la_Joya_-_Arequipa", "note": "Caso documentado con múltiples testigos militares.", "note_en": "Documented case with multiple military witnesses."}]
   }
 ]
