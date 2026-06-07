@@ -1,0 +1,43 @@
+{
+  "id": "american-cosmic-2017",
+  "num": 88,
+  "name": "American Cosmic (sitio de impacto, Nuevo México)",
+  "name_en": "American Cosmic (impact site, New Mexico)",
+  "year_start": 2017,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 34.4,
+    "lng": -106.0,
+    "place": "Nuevo México · ubicación no divulgada"
+  },
+  "tier": "B",
+  "probability": 18,
+  "summary": "En 2017, la profesora de estudios religiosos Diana Walsh Pasulka y el inmunólogo de Stanford Garry Nolan fueron llevados —con los ojos vendados— a un sitio no divulgado de Nuevo México presentado como el lugar de un impacto de los años 40 (explícitamente no Roswell). Excavaron material metálico ligero de aspecto inusual, del que Nolan tomó muestras. Pasulka narró el episodio en 'American Cosmic' (Oxford University Press, 2019). El sitio nunca fue divulgado ni verificado: el caso es valioso como etnografía de la cultura de recuperación de restos, no como traza confirmada.",
+  "summary_en": "In 2017, religious-studies professor Diana Walsh Pasulka and Stanford immunologist Garry Nolan were taken —blindfolded— to an undisclosed New Mexico site presented as the location of a 1940s impact (explicitly not Roswell). They dug up lightweight, unusual-looking metallic material, of which Nolan took samples. Pasulka recounted the episode in 'American Cosmic' (Oxford University Press, 2019). The site was never disclosed or verified: the case is valuable as an ethnography of the crash-retrieval culture, not as a confirmed trace.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "Diana Walsh Pasulka, profesora de estudios religiosos en la Universidad de Carolina del Norte en Wilmington y ex-fellow de la Biblioteca Vaticana, llevaba años estudiando el fenómeno UAP como un hecho cultural y religioso emergente: cómo se forman creencias, narrativas e instituciones alrededor de experiencias anómalas. En el curso de esa investigación entró en contacto con un círculo de científicos e ingenieros —algunos con credenciales institucionales— que tratan la recuperación de restos de naves como un tema de trabajo real.\n\nEn 2017, guiada por una figura a la que llama 'Tyler D.' (más tarde identificado públicamente como un ingeniero ligado a programas espaciales), Pasulka viajó junto al inmunólogo de Stanford Garry Nolan a un paraje de Nuevo México. Según su relato, fueron transportados con los ojos vendados para no poder ubicar el sitio, presentado como el lugar de un impacto de los años 40 —explícitamente distinto de Roswell—. Allí excavaron, bajo una capa de escombros, fragmentos de un material metálico ligero, de textura irregular descrita como 'piel de rana' metálica. Nolan recogió muestras para análisis.\n\nPasulka reconstruyó el episodio en 'American Cosmic: UFOs, Religion, Technology' (Oxford University Press, 2019), un trabajo académico sobre cómo el fenómeno UAP funciona como una forma de religiosidad en una cultura saturada de tecnología. El punto crucial —y que ella misma subraya— es epistémico: la ubicación nunca fue divulgada, no hay registro oficial del sitio, y los únicos testigos del acto son los propios participantes. El valor del caso no está en una traza verificable, sino en documentar de primera mano cómo se transmite y practica la cultura de la recuperación de restos dentro de un 'colegio invisible' de científicos.",
+  "whatHappened_en": "Diana Walsh Pasulka, professor of religious studies at the University of North Carolina Wilmington and a former Vatican Library fellow, had spent years studying the UAP phenomenon as an emerging cultural and religious fact: how beliefs, narratives and institutions form around anomalous experiences. In the course of that research she came into contact with a circle of scientists and engineers —some with institutional credentials— who treat the retrieval of craft debris as a real working subject.\n\nIn 2017, guided by a figure she calls 'Tyler D.' (later publicly identified as an engineer linked to space programs), Pasulka traveled with Stanford immunologist Garry Nolan to a spot in New Mexico. According to her account, they were transported blindfolded so they could not locate the site, which was presented as the location of a 1940s impact —explicitly different from Roswell. There, under a layer of rubble, they dug up fragments of a lightweight metallic material with an irregular texture described as metallic 'frog skin'. Nolan collected samples for analysis.\n\nPasulka reconstructed the episode in 'American Cosmic: UFOs, Religion, Technology' (Oxford University Press, 2019), an academic work on how the UAP phenomenon functions as a form of religiosity in a technology-saturated culture. The crucial point —which she herself stresses— is epistemic: the location was never disclosed, there is no official record of the site, and the only witnesses to the act are the participants themselves. The case's value lies not in a verifiable trace but in first-hand documentation of how the crash-retrieval culture is transmitted and practiced within an 'invisible college' of scientists.",
+  "whyMatters": "American Cosmic importa como objeto de estudio sobre el propio campo, no como prueba de un impacto. Es el caso que ancla la línea de investigación de Pasulka: la UAP entendida como fenómeno religioso-tecnológico, con su 'colegio invisible' de científicos, sus reliquias y sus rituales de secreto. Y es, a la vez, el límite epistémico más extremo del corpus: un sitio con los ojos vendados, sin ubicación, sin registro oficial y con solo dos testigos —ambos partidarios del tema— no puede tratarse como evidencia material. Esa tensión es precisamente lo que lo hace útil: muestra cómo se fabrica y transmite la creencia en la recuperación de restos, y por qué un relato así, por serio que sea su autora, debe quedar en el escalón más bajo de fiabilidad. Anomalía como dato cultural, sí; conclusión material, no.",
+  "whyMatters_en": "American Cosmic matters as an object of study about the field itself, not as proof of an impact. It is the case that anchors Pasulka's line of research: UAP understood as a religious-technological phenomenon, with its 'invisible college' of scientists, its relics and its rituals of secrecy. And it is, at the same time, the corpus's most extreme epistemic limit: a blindfolded site, with no location, no official record and only two witnesses —both sympathetic to the subject— cannot be treated as material evidence. That tension is exactly what makes it useful: it shows how belief in crash retrieval is manufactured and transmitted, and why such an account, however serious its author, must remain at the lowest tier of reliability. Anomaly as a cultural datum, yes; material conclusion, no.",
+  "evidence": [
+    "Relato de primera mano de Diana W. Pasulka en 'American Cosmic' (Oxford University Press, 2019)",
+    "Garry Nolan como segundo participante y analista del material recogido",
+    "Transporte con los ojos vendados; ubicación nunca divulgada ni verificada de forma independiente",
+    "Sin registro oficial del sitio: el caso es etnográfico (cultura de recuperación de restos), no una traza confirmada"
+  ],
+  "evidence_en": [
+    "First-hand account by Diana W. Pasulka in 'American Cosmic' (Oxford University Press, 2019)",
+    "Garry Nolan as the second participant and analyst of the collected material",
+    "Blindfolded transport; location never disclosed or independently verified",
+    "No official record of the site: the case is ethnographic (crash-retrieval culture), not a confirmed trace"
+  ],
+  "sources": [
+    {
+      "name": "Pasulka, D. W. — 'American Cosmic: UFOs, Religion, Technology' (Oxford University Press, 2019)",
+      "url": "https://global.oup.com/academic/product/american-cosmic-9780190692889"
+    }
+  ]
+}

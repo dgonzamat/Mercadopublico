@@ -8,9 +8,13 @@ import type { UAPCase, Researcher } from "./types";
  * las dos entidades, así que vive acá como fuente única. Se pobló a partir
  * de menciones en el contenido de cada caso + curaduría manual verificada.
  *
- * Los investigadores ausentes de este mapa son teóricos / ontológicos sin
- * caso puntual del corpus (Nolan, Strieber, Jorjani, Freixedo, Pasulka) — la
- * ausencia es intencional, no un hueco.
+ * Los cinco teóricos que antes no tenían caso puntual ahora están anclados al
+ * caso que efectivamente estudiaron: Freixedo → Colares (su caso canónico de
+ * entidades hostiles); Nolan → Council Bluffs + American Cosmic (análisis de
+ * materiales); Strieber → Communion (su propia abducción documentada);
+ * Pasulka → American Cosmic (su trabajo de campo en 'American Cosmic');
+ * Jorjani → testimonio de Grusch (el evento de disclosure que su filosofía
+ * analiza). Ningún investigador queda huérfano.
  */
 export const RESEARCHER_CASES: Record<string, string[]> = {
   // A — científicos
@@ -34,6 +38,13 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   poher: ["trans-en-provence-1981"],
   "taylor-t": ["aawsap-skinwalker-2008"],
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
+
+  // A — teóricos anclados al caso que estudiaron
+  nolan: ["council-bluffs-1977", "american-cosmic-2017"],
+  strieber: ["communion-1985"],
+  pasulka: ["american-cosmic-2017"],
+  freixedo: ["colares-1977"],
+  jorjani: ["grusch-testimony-2023"],
 
   // B — insiders / militares
   ruppelt: [

@@ -1,0 +1,64 @@
+{
+  "id": "council-bluffs-1977",
+  "num": 86,
+  "name": "Council Bluffs (metal fundido)",
+  "name_en": "Council Bluffs (molten metal)",
+  "year_start": 1977,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 41.28,
+    "lng": -95.85,
+    "place": "Big Lake Park, Council Bluffs, Iowa"
+  },
+  "tier": "B",
+  "probability": 22,
+  "summary": "La noche del 17 de diciembre de 1977 varios testigos en Council Bluffs (Iowa) vieron caer una masa luminosa roja; en un campo helado quedaron ~13 kg de metal fundido que aún ardía. Es uno de los casos de traza física que Garry Nolan y Jacques Vallée reanalizaron décadas después con técnicas isotópicas: las razones de isótopos resultaron normales (terrestres), pero la mezcla de metales era inusual y solo parcialmente fundida, compatible con un proceso industrial incompleto.",
+  "summary_en": "On the night of 17 December 1977 several witnesses in Council Bluffs (Iowa) saw a red luminous mass fall; about 13 kg of still-burning molten metal was left in a frozen field. It is one of the physical-trace cases that Garry Nolan and Jacques Vallée re-analyzed decades later with isotopic techniques: the isotope ratios came out normal (terrestrial), but the metal mixture was unusual and only partially melted, consistent with an incomplete industrial process.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "Cerca de las 19:45 del 17 de diciembre de 1977, varios residentes de Council Bluffs (Iowa) reportaron ver un objeto luminoso rojo descender y, segundos después, una masa brillante caer cerca del límite norte de la ciudad, en torno a Big Lake Park. Los testigos —entre ellos un matrimonio que conducía cerca— describieron destellos y un resplandor en el campo. Cuando la policía y los bomberos llegaron, encontraron unos 13 kg (≈30 libras) de metal fundido aún incandescente sobre el suelo helado, parte del cual había prendido la hierba seca.\n\nEl material fue recolectado y analizado en su momento por laboratorios locales y universitarios. Los primeros análisis identificaron una aleación de hierro y otros metales, sin un origen evidente: no había aviones caídos, ni torres, ni instalaciones industriales próximas que explicaran una colada de metal fundido cayendo del cielo en una noche de invierno. El caso quedó como una de las 'trazas físicas' clásicas de la casuística UAP estadounidense, citado por investigadores como Jacques Vallée durante años.\n\nDécadas más tarde, Vallée y el inmunólogo de Stanford Garry Nolan incluyeron la muestra de Council Bluffs en un programa de reanálisis de materiales con técnicas modernas (microscopía, espectrometría e isótopos), publicado en la literatura revisada por pares. El resultado fue deliberadamente sobrio: las razones isotópicas eran normales —terrestres, sin firma exótica—, pero la combinación de metales era inusual y la masa estaba solo parcialmente mezclada, un patrón compatible con un proceso industrial incompleto más que con una tecnología anómala. Nolan estudió la muestra; la conclusión publicada fue prosaica.",
+  "whatHappened_en": "Around 7:45 pm on 17 December 1977, several residents of Council Bluffs (Iowa) reported seeing a red luminous object descend and, seconds later, a bright mass fall near the northern city limits, around Big Lake Park. Witnesses —including a couple driving nearby— described flashes and a glow in the field. When police and firefighters arrived, they found about 13 kg (≈30 lb) of still-incandescent molten metal on the frozen ground, part of which had set the dry grass alight.\n\nThe material was collected and analyzed at the time by local and university laboratories. Early analyses identified an iron-and-other-metals alloy with no obvious origin: there was no downed aircraft, no tower, no nearby industrial facility to explain a pour of molten metal falling from the sky on a winter night. The case became one of the classic 'physical traces' of US UAP casework, cited for years by investigators such as Jacques Vallée.\n\nDecades later, Vallée and Stanford immunologist Garry Nolan included the Council Bluffs sample in a program re-analyzing materials with modern techniques (microscopy, spectrometry and isotopes), published in the peer-reviewed literature. The result was deliberately sober: the isotope ratios were normal —terrestrial, with no exotic signature— but the combination of metals was unusual and the mass was only partially mixed, a pattern consistent with an incomplete industrial process rather than anomalous technology. Nolan studied the sample; the published conclusion was prosaic.",
+  "whyMatters": "Council Bluffs es un buen caso de estudio de cómo trabaja la ciencia de materiales sobre la casuística UAP: un evento con testigos, una traza física conservada y un reanálisis revisado por pares décadas después. Importa por su resultado, no a pesar de él. Cuando Garry Nolan y Jacques Vallée midieron isótopos y composición, no encontraron una firma anómala sino indicios de un proceso industrial incompleto. Es el contrapunto disciplinado a la tentación de tratar todo metal fundido inexplicado como evidencia de tecnología no humana: aquí un teórico de la materia anómala estudió la muestra y reportó honestamente que apuntaba a algo terrestre. Esa disposición a publicar el resultado mundano es exactamente el estándar del corpus.",
+  "whyMatters_en": "Council Bluffs is a good case study of how materials science works on UAP casework: an event with witnesses, a preserved physical trace, and a peer-reviewed re-analysis decades later. It matters for its result, not in spite of it. When Garry Nolan and Jacques Vallée measured isotopes and composition, they found not an anomalous signature but signs of an incomplete industrial process. It is the disciplined counterpoint to the temptation to treat every unexplained molten metal as evidence of non-human technology: here a theorist of anomalous materials studied the sample and honestly reported that it pointed to something terrestrial. That willingness to publish the mundane result is exactly the corpus's standard.",
+  "evidence": [
+    "Múltiples testigos vieron caer una masa luminosa roja la noche del 17 dic 1977",
+    "~13 kg (≈30 lb) de metal fundido aún incandescente recuperados en el campo, con hierba quemada",
+    "Análisis contemporáneos no hallaron fuente industrial ni aeronave que explicara la colada",
+    "Reanálisis isotópico de Vallée & Nolan (revisado por pares): isótopos normales, mezcla de metales inusual y solo parcialmente fundida → proceso industrial incompleto"
+  ],
+  "evidence_en": [
+    "Multiple witnesses saw a red luminous mass fall on the night of 17 Dec 1977",
+    "~13 kg (≈30 lb) of still-incandescent molten metal recovered in the field, with burnt grass",
+    "Contemporary analyses found no industrial source or aircraft to explain the pour",
+    "Vallée & Nolan isotopic re-analysis (peer-reviewed): normal isotopes, unusual and only partially melted metal mixture → incomplete industrial process"
+  ],
+  "sources": [
+    {
+      "name": "Vallée, J. & Nolan, G. — 'Improved instrumental techniques, including isotopic analysis, applicable to the characterization of unusual materials...', Progress in Aerospace Sciences (2022)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042121000907"
+    },
+    {
+      "name": "Hartmann, W. K. et al. — informe de campo del incidente de Council Bluffs (1977-78)",
+      "note": "Documentación contemporánea de testigos y recolección del material.",
+      "note_en": "Contemporary documentation of witnesses and material recovery."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El reanálisis isotópico publicado por Vallée y Nolan encontró razones de isótopos normales (terrestres) y una mezcla de metales solo parcialmente fundida, compatible con un proceso industrial incompleto. La explicación más simple del metal fundido de Council Bluffs es terrestre/prosaica, no una tecnología anómala.",
+      "rationaleEn": "The isotopic re-analysis published by Vallée and Nolan found normal (terrestrial) isotope ratios and an only partially melted metal mixture, consistent with an incomplete industrial process. The simplest explanation for the Council Bluffs molten metal is terrestrial/prosaic, not anomalous technology."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La ausencia de una fuente industrial o aeronave evidente esa noche, junto a una combinación de metales inusual, mantuvo el caso abierto durante décadas. Minimal —y deliberadamente bajo— porque el propio reanálisis de Nolan concluyó hacia un origen terrestre, no tecnológico.",
+      "rationaleEn": "The absence of an obvious industrial source or aircraft that night, together with an unusual metal combination, kept the case open for decades. Minimal —and deliberately low— because Nolan's own re-analysis pointed toward a terrestrial, not technological, origin."
+    }
+  ]
+}
