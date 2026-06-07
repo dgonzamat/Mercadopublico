@@ -1,0 +1,56 @@
+{
+  "id": "lima-difaa-2019",
+  "num": 99,
+  "name": "Jorge Chávez · doble avistamiento (DIFAA)",
+  "name_en": "Jorge Chávez · double sighting (DIFAA)",
+  "year_start": 2019,
+  "country": "PE",
+  "country_name": "Perú",
+  "flag": "🇵🇪",
+  "location": {
+    "lat": -12.02,
+    "lng": -77.12,
+    "place": "Frente al Aeropuerto Jorge Chávez, Lima (sobre el mar)"
+  },
+  "tier": "A",
+  "probability": 55,
+  "summary": "El 27 de febrero de 2019, hacia la 01:30, las tripulaciones de dos vuelos comerciales (LANPERÚ 2437 y LATAM ECUADOR 1442) que esperaban para despegar del aeropuerto Jorge Chávez de Lima observaron dos objetos muy luminosos sobre el mar, a unas 5 millas náuticas y ~2.400 m de altura. El episodio duró unos 40 minutos, fue corroborado con la torre de control y quedó registrado en el radar de CORPAC. La DIFAA de la Fuerza Aérea investigó el caso y su director confirmó que hubo dos objetos con lectura de radar; su naturaleza quedó sin determinar.",
+  "summary_en": "On 27 February 2019, around 1:30 AM, the crews of two commercial flights (LANPERÚ 2437 and LATAM ECUADOR 1442) waiting to take off from Lima's Jorge Chávez airport observed two very luminous objects over the sea, about 5 nautical miles out and ~2,400 m high. The episode lasted around 40 minutes, was corroborated with the control tower and was recorded on CORPAC radar. The Air Force's DIFAA investigated the case and its director confirmed there were two objects with a radar reading; their nature was left undetermined.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En la madrugada del 27 de febrero de 2019, alrededor de la 01:30, dos aviones de línea esperaban su turno de despegue en las pistas de rodaje del Aeropuerto Internacional Jorge Chávez de Lima. Las tripulaciones de los vuelos LANPERÚ 2437 y LATAM ECUADOR 1442 advirtieron, sobre el mar, dos objetos muy luminosos no identificados, a unas cinco millas náuticas de la costa y a unos 2.400 metros de altura.\n\nLo que distingue al caso es la convergencia de testigos y registros: los pilotos comunicaron lo que veían a la torre de control del aeropuerto, que coordinó las observaciones, y los objetos quedaron registrados en la pantalla de radar operada por CORPAC (la corporación que administra el control de tránsito aéreo en Perú). El avistamiento se prolongó por unos 40 minutos —demasiado para un meteoro o un destello fugaz— y ocurrió en un espacio aéreo controlado y muy vigilado.\n\nLa Dirección/Departamento de Investigación de Fenómenos Aéreos Anómalos (DIFAA) de la Fuerza Aérea del Perú tomó el caso. Su director, el coronel FAP Marcos Barraza, declaró públicamente —en una confirmación recogida por CNN en junio de 2019— que hubo dos objetos y que la lectura de radar validaba su aparición. La FAP no ofreció una explicación convencional cerrada: el caso quedó como un avistamiento multisensor (visual de pilotos profesionales + torre + radar) de naturaleza no determinada.",
+  "whatHappened_en": "In the early hours of 27 February 2019, around 1:30 AM, two airliners were waiting their turn to take off on the taxiways of Lima's Jorge Chávez International Airport. The crews of flights LANPERÚ 2437 and LATAM ECUADOR 1442 noticed, over the sea, two very luminous unidentified objects, about five nautical miles offshore and at about 2,400 meters altitude.\n\nWhat sets the case apart is the convergence of witnesses and records: the pilots reported what they were seeing to the airport control tower, which coordinated the observations, and the objects were recorded on the radar screen operated by CORPAC (the corporation that manages air traffic control in Peru). The sighting lasted around 40 minutes —too long for a meteor or a fleeting flash— and occurred in controlled, closely watched airspace.\n\nThe Peruvian Air Force's Department for the Investigation of Anomalous Aerial Phenomena (DIFAA) took up the case. Its director, FAP Colonel Marcos Barraza, publicly stated —in a confirmation reported by CNN in June 2019— that there were two objects and that the radar reading validated their appearance. The FAP offered no closed conventional explanation: the case stood as a multi-sensor sighting (professional pilots' visual + tower + radar) of undetermined nature.",
+  "whyMatters": "El doble avistamiento de Lima es el caso peruano reciente que mejor combina los ingredientes que el corpus valora: testigos calificados (pilotos comerciales), corroboración institucional (torre de control), un sensor independiente (radar de CORPAC) y una investigación oficial (DIFAA) que confirmó la realidad de los objetos sin forzar una explicación. No prueba qué eran —dos luces sobre el mar admiten candidatos convencionales que no se descartaron del todo—, pero sí eleva el caso por encima del testimonio aislado: hay un eco en radar y una validación oficial. Es, además, el caso que justifica tratar a la DIFAA como una oficina dispuesta a reconocer lo no identificado, y no solo a archivar.",
+  "whyMatters_en": "The Lima double sighting is the recent Peruvian case that best combines the ingredients the corpus values: qualified witnesses (commercial pilots), institutional corroboration (control tower), an independent sensor (CORPAC radar) and an official investigation (DIFAA) that confirmed the reality of the objects without forcing an explanation. It does not prove what they were —two lights over the sea admit conventional candidates that were not fully ruled out—, but it does lift the case above the isolated testimony: there is a radar echo and an official validation. It is also the case that justifies treating DIFAA as an office willing to acknowledge the unidentified, not just to file it away.",
+  "evidence": [
+    "Dos tripulaciones comerciales (LANPERÚ 2437 y LATAM ECUADOR 1442) observan dos objetos luminosos sobre el mar (27 feb 2019, ~01:30)",
+    "Coordinación con la torre de control del aeropuerto Jorge Chávez; episodio de ~40 minutos",
+    "Registro en el radar de CORPAC (control de tránsito aéreo del Perú)",
+    "Investigación de la DIFAA (FAP); su director, coronel Marcos Barraza, confirma dos objetos con lectura de radar (CNN, jun 2019)"
+  ],
+  "evidence_en": [
+    "Two commercial crews (LANPERÚ 2437 and LATAM ECUADOR 1442) observe two luminous objects over the sea (27 Feb 2019, ~1:30 AM)",
+    "Coordination with the Jorge Chávez airport control tower; ~40-minute episode",
+    "Recorded on CORPAC radar (Peru's air traffic control)",
+    "DIFAA (FAP) investigation; its director, Colonel Marcos Barraza, confirms two objects with a radar reading (CNN, Jun 2019)"
+  ],
+  "sources": [
+    {
+      "name": "CNN en Español — 'La Fuerza Aérea de Perú confirma avistamiento de ovnis cerca del aeropuerto de Lima' (jun 2019)",
+      "url": "https://cnnespanol.cnn.com/2019/06/18/la-fuerza-aerea-de-peru-confirma-avistamiento-de-ovnis-cerca-del-aeropuerto-de-lima"
+    },
+    {
+      "name": "El Comercio (Perú) — 'FAP confirma a CNN el primer avistamiento de ovnis cerca del Jorge Chávez'",
+      "url": "https://elcomercio.pe/mundo/actualidad/ovni-ufo-fuerza-aerea-peru-confirma-cnn-primer-avistamiento-ovnis-cerca-aeropuerto-jorge-chavez-lima-noticia-nndc-646800-noticia/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Avistamiento multisensor en espacio aéreo controlado: dos tripulaciones de pilotos profesionales + torre de control + eco en el radar de CORPAC durante ~40 minutos, con investigación y validación oficial de la DIFAA. Modest —y no más— porque dos objetos luminosos sobre el mar admiten candidatos convencionales (drones, globos, reflejos) que no fueron descartados de forma concluyente, y la 'naturaleza' quedó sin determinar.",
+      "rationaleEn": "Multi-sensor sighting in controlled airspace: two professional flight crews + control tower + an echo on CORPAC radar over ~40 minutes, with an official DIFAA investigation and validation. Modest —and no more— because two luminous objects over the sea admit conventional candidates (drones, balloons, reflections) that were not conclusively ruled out, and the 'nature' was left undetermined."
+    }
+  ]
+}

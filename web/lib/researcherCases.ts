@@ -72,7 +72,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   fravor: ["nimitz-2004", "grusch-testimony-2023"],
   dietrich: ["nimitz-2004"],
   "santa-maria": ["pampa-joya-1980"],
-  choy: ["chulucanas-2001"],
+  choy: ["chulucanas-2001", "oifaa-difaa-peru"],
   pope: ["rendlesham-1980", "cosford-1993"],
   graves: ["roosevelt-2014", "nimitz-2004", "grusch-testimony-2023"],
   keyhoe: ["washington-dc-1952"],
@@ -99,7 +99,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   gevaerd: ["varginha-1996", "colares-1977"],
 
   // E — comisiones oficiales latinoamericanas
-  chamorro: ["pucallpa-2008", "chulucanas-2001"],
+  chamorro: ["pucallpa-2008", "chulucanas-2001", "oifaa-difaa-peru"],
   lianza: ["ciae-cefae-2011"],
   bermudez: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
   bravo: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
