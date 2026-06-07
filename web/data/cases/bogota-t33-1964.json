@@ -1,0 +1,56 @@
+{
+  "id": "bogota-t33-1964",
+  "num": 103,
+  "name": "Bogotá · T-33 sobre El Dorado",
+  "name_en": "Bogotá · T-33 over El Dorado",
+  "year_start": 1964,
+  "country": "CO",
+  "country_name": "Colombia",
+  "flag": "🇨🇴",
+  "location": {
+    "lat": 4.70,
+    "lng": -74.15,
+    "place": "Aeropuerto El Dorado, Bogotá"
+  },
+  "tier": "B",
+  "probability": 28,
+  "summary": "En 1964, cerca del aeropuerto El Dorado de Bogotá, varias tripulaciones reportaron un objeto redondo de color amarillo intenso sobre la torre de control. Un piloto de Avianca había advertido antes que 'otra aeronave' le cruzó el rumbo a su misma altura, pese a que la torre no tenía otro tráfico en la zona. La Fuerza Aérea Colombiana autorizó a un caza T-33 a perseguir el objeto; lo siguió a unos 31.000 pies durante un lapso breve hasta quedarse sin combustible. Es el caso clásico de aviación/intercepción de la casuística colombiana.",
+  "summary_en": "In 1964, near Bogotá's El Dorado airport, several crews reported a round, deep-yellow object over the control tower. An Avianca pilot had earlier warned that 'another aircraft' crossed his path at his same altitude, even though the tower had no other traffic in the area. The Colombian Air Force authorized a T-33 fighter to chase the object; it followed it at about 31,000 feet for a brief span until running out of fuel. It is the classic aviation/interception case of Colombian casework.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En 1964, en las inmediaciones del Aeropuerto El Dorado de Bogotá, se concatenaron varios reportes de aviación. Hacia las 20:00, el piloto de un Avianca DC-4 que se aproximaba a la sabana de Bogotá, cerca de Facatativá, comunicó al control de tránsito aéreo que otra aeronave acababa de cruzar su trayectoria a la misma altura; alarmado, pidió información, pero la torre le respondió que el único avión en vuelo en esa zona era el suyo.\n\nPoco después, varias aeronaves con destino al aeropuerto reportaron un objeto extraño situado sobre la propia torre de control: lo describieron como redondo, de un color amarillo profundo e intenso, con detalles oscuros. Ante la insistencia de los reportes, la Fuerza Aérea Colombiana, que mantenía aviones de apoyo en El Dorado, autorizó la persecución: un caza Lockheed T-33 'Silver Star' recibió permiso de la torre para perseguir el objeto. El T-33 lo siguió a unos 31.000 pies, pero solo pudo hacerlo durante un lapso breve, porque no tenía combustible suficiente para continuar; el objeto no fue alcanzado.\n\nEl caso se conserva como el episodio de aviación/intercepción más citado de la ufología colombiana, recogido por autores como Esteban Cruz ('Expedientes X Colombia'). Su valor es testimonial e institucional —múltiples pilotos profesionales, la torre de control y una respuesta militar—, pero sin registro de radar conservado ni fotografías: la documentación es periodística y de archivo, no instrumental. Voces científicas locales, como el astrónomo Germán Puerta, recuerdan que buena parte de los avistamientos colombianos tienen explicaciones convencionales (aeronaves, satélites, fenómenos ópticos), un marco de cautela que también aplica aquí.",
+  "whatHappened_en": "In 1964, in the vicinity of Bogotá's El Dorado airport, several aviation reports chained together. Around 8:00 PM, the pilot of an Avianca DC-4 approaching the Bogotá plain, near Facatativá, told air traffic control that another aircraft had just crossed his path at the same altitude; alarmed, he asked for information, but the tower replied that the only plane in flight in that area was his own.\n\nShortly after, several aircraft bound for the airport reported a strange object positioned over the control tower itself: they described it as round, of a deep, intense yellow color, with dark details. Faced with the insistence of the reports, the Colombian Air Force, which kept support aircraft at El Dorado, authorized a pursuit: a Lockheed T-33 'Silver Star' fighter received permission from the tower to chase the object. The T-33 followed it at about 31,000 feet, but could only do so for a brief span, because it did not have enough fuel to continue; the object was not reached.\n\nThe case is preserved as the most cited aviation/interception episode of Colombian ufology, collected by authors such as Esteban Cruz ('Expedientes X Colombia'). Its value is testimonial and institutional —multiple professional pilots, the control tower and a military response—, but with no preserved radar record or photographs: the documentation is journalistic and archival, not instrumental. Local scientific voices, such as astronomer Germán Puerta, recall that a good part of Colombian sightings have conventional explanations (aircraft, satellites, optical phenomena), a caution that also applies here.",
+  "whyMatters": "Bogotá 1964 importa como la pieza fundacional de Colombia en el corpus: un caso de aviación con múltiples testigos calificados, una torre de control involucrada y una respuesta militar de intercepción —el patrón que se repite en la mejor casuística mundial—. Pero también ejemplifica el límite de la casuística antigua latinoamericana: por sólido que sea el relato, sin radar conservado, sin fotos y con documentación esencialmente periodística, no puede subir de Tier B. Sirve para anclar a Colombia con honestidad —un buen caso histórico— y para introducir su contrapeso científico, el astrónomo Germán Puerta, que recuerda cuántos avistamientos se disuelven al examinarlos. Anomalía testimonial, conclusión prudente.",
+  "whyMatters_en": "Bogotá 1964 matters as Colombia's foundational piece in the corpus: an aviation case with multiple qualified witnesses, a control tower involved and a military interception response —the pattern that recurs in the world's best casework—. But it also exemplifies the limit of old Latin American casework: however solid the account, with no preserved radar, no photos and essentially journalistic documentation, it cannot rise above Tier B. It serves to anchor Colombia honestly —a good historical case— and to introduce its scientific counterweight, astronomer Germán Puerta, who recalls how many sightings dissolve when examined. Testimonial anomaly, prudent conclusion.",
+  "evidence": [
+    "Piloto de Avianca DC-4 reporta una aeronave que le cruza el rumbo a su altura; la torre no registra otro tráfico (1964)",
+    "Varias tripulaciones reportan un objeto redondo amarillo intenso sobre la torre de control de El Dorado",
+    "La Fuerza Aérea Colombiana autoriza a un caza T-33 a perseguirlo; lo sigue a ~31.000 pies hasta quedarse sin combustible",
+    "Documentación periodística y de archivo (Esteban Cruz, 'Expedientes X Colombia'); sin radar conservado ni fotografías"
+  ],
+  "evidence_en": [
+    "Avianca DC-4 pilot reports an aircraft crossing his path at his altitude; the tower records no other traffic (1964)",
+    "Several crews report a round, deep-yellow object over the El Dorado control tower",
+    "The Colombian Air Force authorizes a T-33 fighter to chase it; it follows at ~31,000 feet until running out of fuel",
+    "Journalistic and archival documentation (Esteban Cruz, 'Expedientes X Colombia'); no preserved radar or photographs"
+  ],
+  "sources": [
+    {
+      "name": "El Tiempo (Colombia) — 'Controlador aéreo revela cómo avión de guerra persiguió ovni en Bogotá'",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/ovnis-controlador-aereo-dice-que-avion-persiguio-extrano-aparato-en-bogota-379078"
+    },
+    {
+      "name": "Vanguardia — 'Crónica de un encuentro cercano: el avión de guerra que persiguió un ovni en Bogotá en 1964'",
+      "url": "https://www.vanguardia.com/entretenimiento/tendencias/2023/09/13/cronica-de-un-encuentro-cercano-la-verdad-sobre-el-avion-de-guerra-persiguio-ovni-en-bogota-en-1964/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Caso de aviación con múltiples pilotos profesionales, torre de control y una respuesta militar de intercepción (T-33). Minimal porque es esencialmente visual y testimonial —sin radar conservado ni fotografías—, propio de 1964, y admite candidatos convencionales que la documentación de archivo no permite descartar.",
+      "rationaleEn": "Aviation case with multiple professional pilots, a control tower and a military interception response (T-33). Minimal because it is essentially visual and testimonial —no preserved radar or photographs—, typical of 1964, and admits conventional candidates that the archival documentation does not allow ruling out."
+    }
+  ]
+}
