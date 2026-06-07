@@ -32,7 +32,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   mack: ["ariel-school-1994"],
   delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
   poher: ["trans-en-provence-1981"],
-  taylor: ["aawsap-skinwalker-2008"],
+  "taylor-t": ["aawsap-skinwalker-2008"],
 
   // B — insiders / militares
   ruppelt: [
