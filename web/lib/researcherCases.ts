@@ -98,8 +98,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   blumenthal: ["nimitz-2004"],
   gevaerd: ["varginha-1996", "colares-1977"],
 
-  // E — Perú · OIFAA (oficina oficial de la FAP)
+  // E — comisiones oficiales latinoamericanas
   chamorro: ["pucallpa-2008", "chulucanas-2001"],
+  lianza: ["ciae-cefae-2011"],
 
   // Brasil — ufología de campo
   petit: ["colares-1977", "varginha-1996"],
