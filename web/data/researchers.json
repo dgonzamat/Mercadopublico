@@ -1351,5 +1351,25 @@
     "sources": [
       {"name": "Oficina del representante Jared Moskowitz, Cámara de Representantes de EE.UU.", "url": "https://moskowitz.house.gov/"}
     ]
+  },
+  {
+    "id": "gallaudet",
+    "name": "Tim Gallaudet",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Informante institucional (US Navy / NOAA)",
+    "section_label_en": "Institutional whistleblower (US Navy / NOAA)",
+    "credentials": "Contralmirante US Navy (R) · ex Oceanógrafo de la Armada · ex administrador interino de la NOAA · PhD en oceanografía",
+    "credentials_en": "US Navy Rear Admiral (Ret.) · former Oceanographer of the Navy · former Acting NOAA Administrator · PhD in oceanography",
+    "bio_short": "Sirvió 32 años en la Armada de EE.UU. como oficial de meteorología y oceanografía, retirándose como Oceanógrafo de la Armada (2017); luego fue subsecretario de Comercio para Océanos y Atmósfera y administrador interino de la NOAA (2017–2021). Ganó notoriedad al revelar un email clasificado de 2015 ('URGENT SAFETY OF FLIGHT ISSUE') del Fleet Forces Command que advertía de casi-colisiones con un objeto y referenciaba el video 'Go Fast'; el correo desapareció de todas las cuentas al día siguiente. Testificó ante la House Oversight el 13 de noviembre de 2024. Es la principal voz que insiste en la dimensión transmedium y oceánica del fenómeno (objetos sumergibles no identificados).",
+    "bio_short_en": "He served 32 years in the U.S. Navy as a meteorology and oceanography officer, retiring as Oceanographer of the Navy (2017); he then was Assistant Secretary of Commerce for Oceans and Atmosphere and Acting NOAA Administrator (2017–2021). He gained prominence by revealing a classified 2015 email ('URGENT SAFETY OF FLIGHT ISSUE') from Fleet Forces Command warning of near-midair collisions with an object and referencing the 'Go Fast' video; the email vanished from all accounts the next day. He testified before House Oversight on November 13, 2024. He is the leading voice insisting on the transmedium and oceanic dimension of the phenomenon (unidentified submersible objects).",
+    "works": [
+      {"year": 2015, "title": "Email 'URGENT SAFETY OF FLIGHT ISSUE'", "contribution": "Receptor y divulgador del correo del Fleet Forces Command (video Go Fast) borrado al día siguiente", "contribution_en": "Recipient and discloser of the Fleet Forces Command email (Go Fast video) wiped the next day"},
+      {"year": 2024, "title": "Testimonio ante la House Oversight (13 nov 2024)", "contribution": "Testigo institucional que pidió transparencia y atención al dominio oceánico/transmedium", "contribution_en": "Institutional witness who called for transparency and attention to the oceanic/transmedium domain"}
+    ],
+    "sources": [
+      {"name": "Written Testimony by Dr. Tim Gallaudet, Rear Admiral, U.S. Navy (Ret.) — House Oversight (13 nov 2024)", "url": "https://oversight.house.gov/wp-content/uploads/2024/11/Updated-Testimony-Gallaudet.pdf"},
+      {"name": "DefenseScoop — 'Former Naval commander Timothy Gallaudet agrees to testify at UAP hearing' (2024)", "url": "https://defensescoop.com/2024/11/06/former-naval-commander-timothy-gallaudet-agrees-testify-uap-hearing/"}
+    ]
   }
 ]
