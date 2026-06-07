@@ -554,6 +554,27 @@
     "photo_license": "CC-BY-SA 2.0"
   },
   {
+    "id": "corbell",
+    "name": "Jeremy Corbell",
+    "born": 1977,
+    "section": "D",
+    "section_label": "Cineasta de disclosure",
+    "section_label_en": "Disclosure filmmaker",
+    "credentials": "Cineasta e investigador UAP · co-conductor del podcast 'Weaponized' (con George Knapp)",
+    "credentials_en": "UAP filmmaker and investigator · co-host of the 'Weaponized' podcast (with George Knapp)",
+    "bio_short": "Cineasta, artista e investigador UAP estadounidense (n. 1977), radicado en Los Ángeles. Saltó a la primera plana del tema al llevar al dominio público varias piezas de footage UAP de la Marina de EE.UU., entre ellas el video 'pirámide' (USS Russell) y la esfera del USS Omaha que parece sumergirse en el mar (comportamiento 'transmedium'). En abril de 2021 el Pentágono confirmó que ese material fue captado por personal de la Marina y estaba bajo análisis de la UAPTF —confirmación de autenticidad, no de explicación—. Dirigió el documental 'Bob Lazar: Area 51 & Flying Saucers' (2018) y co-conduce el podcast 'Weaponized' con el periodista George Knapp. Es una figura mediática del disclosure: su valor está en las primicias verificadas, no en el análisis técnico.",
+    "bio_short_en": "American filmmaker, artist and UAP investigator (b. 1977), based in Los Angeles. He rose to prominence by bringing several pieces of U.S. Navy UAP footage into the public domain, including the 'pyramid' video (USS Russell) and the USS Omaha sphere that appears to submerge into the sea ('transmedium' behavior). In April 2021 the Pentagon confirmed that this material was captured by Navy personnel and was under UAPTF analysis —a confirmation of authenticity, not of explanation. He directed the documentary 'Bob Lazar: Area 51 & Flying Saucers' (2018) and co-hosts the 'Weaponized' podcast with journalist George Knapp. He is a media figure of disclosure: his value lies in verified scoops, not technical analysis.",
+    "works": [
+      {"year": 2018, "title": "Bob Lazar: Area 51 & Flying Saucers", "contribution": "Documental (Netflix 2019) con un retrato comprensivo de Bob Lazar", "contribution_en": "Documentary (Netflix 2019) with a sympathetic portrait of Bob Lazar"},
+      {"year": 2021, "title": "Difusión del footage UAP de la Marina (Omaha / pirámide)", "contribution": "Llevó al dominio público videos confirmados luego como auténticos por el Pentágono", "contribution_en": "Brought to the public domain videos later confirmed as authentic by the Pentagon"},
+      {"year": 2022, "title": "Podcast 'Weaponized' (con George Knapp)", "contribution": "Plataforma de periodismo de investigación sobre UAP", "contribution_en": "Investigative journalism platform on UAP"}
+    ],
+    "sources": [
+      {"name": "Jeremy Corbell — Wikipedia", "url": "https://en.wikipedia.org/wiki/Jeremy_Corbell"},
+      {"name": "Mystery Wire (G. Knapp / J. Corbell) — 'USS Omaha UFO video'", "url": "https://www.mysterywire.com/ufo/uss-omaha-ufo-video/"}
+    ]
+  },
+  {
     "id": "delonge",
     "name": "Tom DeLonge",
     "born": 1975,
