@@ -5,6 +5,7 @@ import { CategoryNav } from "@/components/CategoryNav";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { RegionFilter } from "@/components/RegionFilter";
 import { OfficialAgencies } from "@/components/OfficialAgencies";
+import { ContractorsShowcase } from "@/components/ContractorsShowcase";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
 
 export const metadata = {
@@ -168,6 +169,10 @@ export default function ResearchersPage() {
 
       <section id="agencias" className="scroll-mt-20 border-t border-border pt-8">
         <OfficialAgencies />
+      </section>
+
+      <section id="contratistas" className="scroll-mt-20 border-t border-border pt-8">
+        <ContractorsShowcase />
       </section>
     </div>
   );
