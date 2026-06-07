@@ -88,6 +88,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   knapp: ["aawsap-skinwalker-2008"],
   clarke: ["rendlesham-1980", "calvine-1990"],
   blumenthal: ["nimitz-2004"],
+  gevaerd: ["varginha-1996", "colares-1977"],
 
   // E — Perú · OIFAA (oficina oficial de la FAP)
   chamorro: ["pucallpa-2008", "chulucanas-2001"],

@@ -701,6 +701,29 @@
     "sources": [{"name": "Nick Pope, 'Open Skies, Closed Minds' (1996)", "note": "Relato del oficial del UFO desk del MoD.", "note_en": "Account by the MoD UFO desk officer."}]
   },
   {
+    "id": "gevaerd",
+    "name": "Ademar José Gevaerd",
+    "born": 1962,
+    "death": 2022,
+    "section": "D",
+    "section_label": "Editor de Revista UFO (Brasil)",
+    "section_label_en": "Editor of Revista UFO (Brazil)",
+    "credentials": "Ufólogo brasileño · fundador y editor de la Revista UFO · fundador del CBPDV · 700+ investigaciones de campo",
+    "credentials_en": "Brazilian ufologist · founder and editor of Revista UFO · founder of CBPDV · 700+ field investigations",
+    "bio_short": "Químico de formación y ufólogo brasileño (Maringá, 1962 – 2022). En 1983 fundó el Centro Brasileiro de Pesquisas de Discos Voadores (CBPDV), la mayor entidad ufológica del país, y en 1985 la Revista UFO, la publicación de ufología más longeva del mundo, que editó hasta su muerte. Realizó más de 700 investigaciones de campo —entre ellas el célebre Caso Varginha (1996), del que fue principal investigador y difusor— y lideró la campaña 'UFOs: Liberdade de Informação Já', que presionó por la apertura de los archivos militares brasileños. En los años 80, J. Allen Hynek lo invitó a representar al CUFOS en Brasil.",
+    "bio_short_en": "Chemist by training and Brazilian ufologist (Maringá, 1962 – 2022). In 1983 he founded the Centro Brasileiro de Pesquisas de Discos Voadores (CBPDV), the country's largest ufology body, and in 1985 Revista UFO, the world's longest-running ufology magazine, which he edited until his death. He conducted over 700 field investigations —including the famous Varginha Case (1996), of which he was the main investigator and popularizer— and led the 'UFOs: Freedom of Information Now' campaign, which pressed for the opening of Brazilian military archives. In the 1980s, J. Allen Hynek invited him to represent CUFOS in Brazil.",
+    "works": [
+      {"year": 1983, "title": "Centro Brasileiro de Pesquisas de Discos Voadores (CBPDV)", "contribution": "Fundó la mayor entidad ufológica de Brasil (Curitiba)", "contribution_en": "Founded Brazil's largest ufology organization (Curitiba)"},
+      {"year": 1985, "title": "Revista UFO", "contribution": "Fundó y editó la revista de ufología más longeva del mundo", "contribution_en": "Founded and edited the world's longest-running ufology magazine"},
+      {"year": 1996, "title": "Investigación del Caso Varginha", "contribution": "Principal investigador y difusor del caso más famoso de la ufología brasileña", "contribution_en": "Main investigator and popularizer of Brazilian ufology's most famous case"},
+      {"year": 2005, "title": "Campaña 'UFOs: Liberdade de Informação Já'", "contribution": "Lideró la campaña que presionó por la apertura de los archivos militares brasileños sobre OVNIs", "contribution_en": "Led the campaign that pressed for the opening of Brazilian military UFO archives"}
+    ],
+    "sources": [
+      {"name": "Ademar José Gevaerd — Wikipedia", "url": "https://en.wikipedia.org/wiki/Ademar_Jos%C3%A9_Gevaerd"},
+      {"name": "Revista UFO — Gevaerd", "url": "https://ufo.com.br/gevaerd/"}
+    ]
+  },
+  {
     "id": "chamorro",
     "name": "Julio César Chamorro",
     "born": 1957,
