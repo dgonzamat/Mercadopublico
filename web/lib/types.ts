@@ -125,7 +125,7 @@ export interface ResearcherSource {
 export interface Researcher {
   id: string;
   name: string;
-  born: number;
+  born?: number;
   death?: number;
   section: "A" | "B" | "C" | "D" | "E";
   section_label: string;

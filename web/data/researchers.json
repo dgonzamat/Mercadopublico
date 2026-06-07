@@ -630,6 +630,25 @@
     ]
   },
   {
+    "id": "salazar",
+    "name": "Alfonso Salazar Mendoza",
+    "section": "A",
+    "section_label": "Ufología hemerográfica (México)",
+    "section_label_en": "Newspaper-archive ufology (Mexico)",
+    "credentials": "Técnico en aviación · investigador hemerográfico OVNI · miembro del CIFEEEAC",
+    "credentials_en": "Aviation technician · newspaper-archive UFO researcher · member of CIFEEEAC",
+    "bio_short": "Técnico en aviación —trabajó en el Aeropuerto Internacional de la Ciudad de México— e investigador OVNI mexicano. A lo largo de más de cuatro décadas reunió uno de los mayores archivos hemerográficos de ufología de Latinoamérica: más de 2.000 casos documentados en prensa desde 1890, incluido el primer avistamiento registrado en México (una nota de 1897 hallada en la Hemeroteca Nacional). Revisó los miles de documentos OVNI desclasificados por la CIA buscando casos mexicanos y promueve la desclasificación en México. Colabora con Jaime Maussan en investigaciones de archivo histórico.",
+    "bio_short_en": "Aviation technician —he worked at Mexico City International Airport— and Mexican UFO researcher. Over more than four decades he assembled one of the largest newspaper-archive ufology collections in Latin America: more than 2,000 cases documented in the press since 1890, including the first sighting recorded in Mexico (an 1897 article found in the National Newspaper Archive). He reviewed the thousands of CIA-declassified UFO documents searching for Mexican cases and advocates for declassification in Mexico. He collaborates with Jaime Maussan on historical archive investigations.",
+    "works": [
+      {"year": 2001, "title": "Los OVNIs y la Aviación Mexicana", "contribution": "Compilación de casos OVNI en la aviación mexicana (con Carlos A. Guzmán)", "contribution_en": "Compilation of UFO cases in Mexican aviation (with Carlos A. Guzmán)"},
+      {"year": 2019, "title": "Ovnis vistos en México: hacia una clasificación de tipología OVNI", "contribution": "Clasificación tipológica de avistamientos mexicanos, basada en prensa (con Guzmán y Aviña)", "contribution_en": "Typological classification of Mexican sightings, based on the press (with Guzmán and Aviña)"}
+    ],
+    "sources": [
+      {"name": "Milenio — 'El buscador de ovnis: lleva 53 años coleccionando expedientes secretos'", "url": "https://www.milenio.com/comunidad/buscador-ovnis-53-anos-coleccionando-expedientes-secretos"},
+      {"name": "Insólita Experiencia — 'Alfonso Salazar: es necesaria una desclasificación ovni en México'", "url": "https://www.insolitaexperiencia.com/alfonso-salazar-es-necesaria-una-desclasificacion-ovni-en-mexico/"}
+    ]
+  },
+  {
     "id": "santa-maria",
     "name": "Óscar Santa María Huertas",
     "born": 1957,
