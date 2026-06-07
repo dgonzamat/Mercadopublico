@@ -47,13 +47,15 @@ const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
 ];
 
 export default function CasesPage() {
-  const sorted = [...cases].sort((a, b) => a.year_start - b.year_start);
+  // Períodos del más nuevo al más antiguo; dentro de cada uno, por probabilidad (mayor primero).
   const eras = ERAS.map((era) => ({
     era,
-    eraCases: sorted.filter(
-      (c) => c.year_start >= era.start && c.year_start <= era.end,
-    ),
-  })).filter(({ eraCases }) => eraCases.length > 0);
+    eraCases: cases
+      .filter((c) => c.year_start >= era.start && c.year_start <= era.end)
+      .sort((a, b) => b.probability - a.probability),
+  }))
+    .filter(({ eraCases }) => eraCases.length > 0)
+    .reverse();
 
   const regionCounts: Partial<Record<Region, number>> = {};
   for (const c of cases) {
@@ -75,8 +77,8 @@ export default function CasesPage() {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es="Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. Ordenados cronológicamente — el orden importa, los picos hablan."
-            en="Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. Ordered chronologically — the order matters, the peaks speak."
+            es="Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. Del período más reciente al más antiguo; dentro de cada uno, por solidez de la evidencia."
+            en="Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From the most recent period to the oldest; within each, by strength of evidence."
           />
         </Lede>
       </header>
