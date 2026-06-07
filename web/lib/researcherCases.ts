@@ -41,6 +41,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   agostinelli: ["trancas-1963"],
   janosch: ["bariloche-1995", "mexico-flir-2004"],
   mack: ["ariel-school-1994"],
+  hind: ["ariel-school-1994"],
   delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
   poher: ["trans-en-provence-1981"],
   "taylor-t": ["aawsap-skinwalker-2008"],
