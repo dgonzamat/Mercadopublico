@@ -1292,5 +1292,64 @@
       {"name": "Center for UFO Studies (CUFOS)", "url": "https://cufos.org/"},
       {"name": "Jennie Zeidman, 'A Helicopter-UFO Encounter Over Ohio' (CUFOS, 1979)", "note": "Monografía del caso Coyne/Mansfield", "note_en": "Monograph on the Coyne/Mansfield case"}
     ]
+  },
+  {
+    "id": "gillibrand",
+    "name": "Kirsten Gillibrand",
+    "flag": "🇺🇸",
+    "born": 1966,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Senadora de EE.UU. (D-NY) · Comité de Servicios Armados del Senado",
+    "credentials_en": "US Senator (D-NY) · Senate Armed Services Committee",
+    "bio_short": "Principal arquitecta legislativa de la infraestructura UAP del gobierno de EE.UU. A través de enmiendas a la Ley de Autorización de Defensa (NDAA) impulsó la creación de la oficina que se convirtió en la AARO (All-domain Anomaly Resolution Office), con mandato de reporte obligatorio, financiamiento y un mecanismo seguro para denunciantes. Es la fuerza más sostenida del Senado para institucionalizar la investigación del fenómeno por fuera del estigma.",
+    "bio_short_en": "The principal legislative architect of the U.S. government's UAP infrastructure. Through National Defense Authorization Act (NDAA) amendments she drove the creation of the office that became AARO (All-domain Anomaly Resolution Office), with a mandate for mandatory reporting, funding and a secure whistleblower mechanism. She is the Senate's most sustained force to institutionalize investigation of the phenomenon beyond stigma.",
+    "works": [
+      {"year": 2021, "title": "Enmienda NDAA — oficina UAP", "contribution": "Estableció por ley la oficina precursora de AARO y el reporte obligatorio", "contribution_en": "Statutorily established the precursor office to AARO and mandatory reporting"},
+      {"year": 2023, "title": "Transparencia / financiamiento AARO", "contribution": "Sostuvo el financiamiento y las exigencias de transparencia sobre la comunidad de inteligencia", "contribution_en": "Sustained AARO funding and transparency demands on the intelligence community"}
+    ],
+    "sources": [
+      {"name": "Oficina de la senadora Kirsten Gillibrand, Senado de EE.UU.", "url": "https://www.gillibrand.senate.gov/"}
+    ]
+  },
+  {
+    "id": "schumer",
+    "name": "Chuck Schumer",
+    "flag": "🇺🇸",
+    "born": 1950,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Senador de EE.UU. (D-NY) · Líder de la Mayoría del Senado",
+    "credentials_en": "US Senator (D-NY) · Senate Majority Leader",
+    "bio_short": "Co-autor —junto al senador republicano Mike Rounds— del UAP Disclosure Act of 2023, modelado sobre la JFK Records Act: proponía una Review Board independiente para desclasificar registros y un mecanismo de 'eminent domain' del gobierno sobre material y tecnología de origen no humano en manos de privados. Que el líder de la mayoría del Senado pusiera su capital político detrás de la desclasificación elevó el estatus institucional del tema.",
+    "bio_short_en": "Co-author —with Republican Senator Mike Rounds— of the UAP Disclosure Act of 2023, modeled on the JFK Records Act: it proposed an independent Review Board to declassify records and a government 'eminent domain' mechanism over non-human-origin material and technology held by private parties. That the Senate Majority Leader put his political capital behind disclosure raised the issue's institutional status.",
+    "works": [
+      {"year": 2023, "title": "UAP Disclosure Act of 2023", "contribution": "Co-autor del proyecto de desclasificación más ambicioso (Review Board + eminent domain)", "contribution_en": "Co-author of the most ambitious disclosure bill (Review Board + eminent domain)"}
+    ],
+    "sources": [
+      {"name": "UAP Disclosure Act of 2023 (Schumer–Rounds), Congreso de EE.UU.", "url": "https://www.congress.gov/"}
+    ]
+  },
+  {
+    "id": "moskowitz",
+    "name": "Jared Moskowitz",
+    "flag": "🇺🇸",
+    "born": 1980,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Representante de EE.UU. (D-FL) · Comité de Supervisión de la Cámara",
+    "credentials_en": "US Representative (D-FL) · House Oversight Committee",
+    "bio_short": "Una de las voces demócratas más activas sobre UAP en la Cámara. Desde el Comité de Supervisión participó en las audiencias de 2023 y 2024 presionando por transparencia y por protección de denunciantes, y se sumó al grupo bipartidista que —junto a Luna, Burchett y Burlison— mantuvo el tema en agenda cruzando líneas partidarias.",
+    "bio_short_en": "One of the most active Democratic voices on UAP in the House. From the Oversight Committee he took part in the 2023 and 2024 hearings pressing for transparency and whistleblower protection, joining the bipartisan group that —with Luna, Burchett and Burlison— kept the issue on the agenda across party lines.",
+    "works": [
+      {"year": 2023, "title": "Audiencia de Supervisión sobre UAP (julio 2023)", "contribution": "Interrogó a los testigos (Grusch, Graves, Fravor) por transparencia", "contribution_en": "Questioned the witnesses (Grusch, Graves, Fravor) on transparency"},
+      {"year": 2024, "title": "Audiencias UAP (noviembre 2024)", "contribution": "Presión bipartidista continuada sobre el Pentágono y la comunidad de inteligencia", "contribution_en": "Continued bipartisan pressure on the Pentagon and the intelligence community"}
+    ],
+    "sources": [
+      {"name": "Oficina del representante Jared Moskowitz, Cámara de Representantes de EE.UU.", "url": "https://moskowitz.house.gov/"}
+    ]
   }
 ]
