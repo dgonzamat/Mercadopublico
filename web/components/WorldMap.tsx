@@ -1,7 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import { MapContainer, TileLayer, CircleMarker, Tooltip } from "react-leaflet";
+import { useEffect, useState } from "react";
+import {
+  MapContainer,
+  TileLayer,
+  CircleMarker,
+  Tooltip,
+  useMap,
+} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { cases } from "@/lib/data";
 import { T } from "@/components/T";
@@ -18,18 +24,71 @@ const TIER_COLOR: Record<Tier, string> = { S: "#8b0000", A: "#b86b1f", B: "#1e4f
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-export default function WorldMap() {
+type ResearcherRef = { id: string; name: string; flag: string };
+
+/** Encuadra el mapa al país elegido; vuelve a la vista mundial en "all". */
+function FitBounds({
+  points,
+  depKey,
+}: {
+  points: [number, number][];
+  depKey: string;
+}) {
+  const map = useMap();
+  useEffect(() => {
+    if (depKey.startsWith("all|") || points.length === 0) {
+      map.setView([20, 0], 2);
+      return;
+    }
+    if (points.length === 1) {
+      map.setView(points[0], 6);
+      return;
+    }
+    map.fitBounds(points, { padding: [40, 40], maxZoom: 7 });
+    // `points` cambia de identidad cada render; el gatillo real es `depKey`.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [depKey, map]);
+  return null;
+}
+
+export default function WorldMap({
+  countryResearchers,
+}: {
+  countryResearchers: Record<string, ResearcherRef[]>;
+}) {
   const [active, setActive] = useState<Record<Tier, boolean>>({
     S: true,
     A: true,
     B: true,
   });
+  const [country, setCountry] = useState<string>("all");
   const counts: Record<Tier, number> = {
     S: cases.filter((c) => c.tier === "S").length,
     A: cases.filter((c) => c.tier === "A").length,
     B: cases.filter((c) => c.tier === "B").length,
   };
-  const shown = cases.filter((c) => active[c.tier]);
+  const countryOptions = Object.values(
+    cases.reduce<
+      Record<string, { code: string; name: string; flag: string; n: number }>
+    >((by, c) => {
+      (by[c.country] ??= {
+        code: c.country,
+        name: c.country_name,
+        flag: c.flag,
+        n: 0,
+      }).n++;
+      return by;
+    }, {}),
+  ).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
+  const shown = cases.filter(
+    (c) => active[c.tier] && (country === "all" || c.country === country),
+  );
+  const points = shown.map(
+    (c) => [c.location.lat, c.location.lng] as [number, number],
+  );
+  const assocResearchers =
+    country === "all" ? [] : countryResearchers[country] ?? [];
+  const depKey = `${country}|${active.S ? 1 : 0}${active.A ? 1 : 0}${active.B ? 1 : 0}`;
   const toggle = (t: Tier) => setActive((a) => ({ ...a, [t]: !a[t] }));
 
   return (
@@ -73,6 +132,28 @@ export default function WorldMap() {
         </div>
       </div>
 
+      <div className="space-y-2">
+        <label
+          htmlFor="atlas-country"
+          className="block font-mono text-xs uppercase tracking-widest text-muted"
+        >
+          <T es="Filtrar por país" en="Filter by country" />
+        </label>
+        <select
+          id="atlas-country"
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
+          className="block w-full max-w-xs rounded border border-border bg-panel px-3 py-2 font-mono text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        >
+          <option value="all">{`🌐 Todos · ${cases.length}`}</option>
+          {countryOptions.map((o) => (
+            <option key={o.code} value={o.code}>
+              {`${o.flag} ${o.name} · ${o.n}`}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <div className="h-[60vh] min-h-[360px] overflow-hidden rounded-lg border border-border md:h-[600px]">
         <MapContainer
           center={[20, 0]}
@@ -84,6 +165,7 @@ export default function WorldMap() {
             attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
+          <FitBounds points={points} depKey={depKey} />
           {shown.map((c) => (
             <CircleMarker
               key={c.id}
@@ -116,6 +198,35 @@ export default function WorldMap() {
           ))}
         </MapContainer>
       </div>
+
+      {country !== "all" && (
+        <div className="space-y-2">
+          <span className="block font-mono text-xs uppercase tracking-widest text-muted">
+            <T es="Investigadores asociados" en="Associated researchers" />
+          </span>
+          {assocResearchers.length > 0 ? (
+            <div className="flex flex-wrap gap-2">
+              {assocResearchers.map((r) => (
+                <a
+                  key={r.id}
+                  href={`${basePath}/researchers/${r.id}/`}
+                  className="inline-flex min-h-[36px] items-center gap-1.5 rounded-full border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  <span aria-hidden>{r.flag}</span>
+                  {r.name}
+                </a>
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm text-muted">
+              <T
+                es="Ningún investigador del corpus está asociado a casos de este país."
+                en="No researcher in the corpus is associated with cases from this country."
+              />
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
