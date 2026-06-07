@@ -989,6 +989,66 @@
     "sources": [{"name": "GEIPAN — CNES (antes GEPAN)", "url": "https://www.cnes-geipan.fr/", "note": "Organismo oficial francés de estudio de fenómenos aeroespaciales no identificados.", "note_en": "Official French body studying unidentified aerospace phenomena."}]
   },
   {
+    "id": "velasco",
+    "name": "Jean-Jacques Velasco",
+    "flag": "🇫🇷",
+    "section": "B",
+    "section_label": "Ex jefe del GEPAN/SEPRA (CNES)",
+    "section_label_en": "Former head of GEPAN/SEPRA (CNES)",
+    "credentials": "Ingeniero óptico del CNES · responsable del GEPAN/SEPRA (1983–2004) · coautor del informe COMETA",
+    "credentials_en": "Optical engineer at CNES · head of GEPAN/SEPRA (1983–2004) · co-author of the COMETA report",
+    "bio_short": "Ingeniero especialista en óptica del CNES (la agencia espacial francesa) y, durante más de dos décadas (1983–2004), responsable del organismo oficial francés de estudio del fenómeno —el GEPAN, luego SEPRA—. Bajo su conducción la agencia investigó cientos de casos con método científico y dejó publicada su clasificación. Dirigió la investigación de referencia de Trans-en-Provence (1981), donde el análisis de laboratorio del suelo y la vegetación reveló alteraciones bioquímicas no triviales asociadas a la traza. Coautor del informe COMETA (1999) y autor de libros sobre el tema, sostiene —con más apertura que el ala escéptica— que un residuo de casos resiste toda explicación convencional.",
+    "bio_short_en": "An optics engineer at CNES (the French space agency) and, for more than two decades (1983–2004), head of the French official body for studying the phenomenon —GEPAN, later SEPRA—. Under his leadership the agency investigated hundreds of cases with a scientific method and published its classification. He directed the reference investigation of Trans-en-Provence (1981), where laboratory analysis of the soil and vegetation revealed non-trivial biochemical alterations associated with the trace. Co-author of the COMETA report (1999) and author of books on the subject, he holds —with more openness than the skeptical wing— that a residue of cases resists all conventional explanation.",
+    "works": [
+      {"year": 1981, "title": "Investigación de Trans-en-Provence", "contribution": "Dirigió el estudio oficial; análisis de suelo y plantas con alteraciones bioquímicas", "contribution_en": "Directed the official study; soil and plant analysis with biochemical alterations"},
+      {"year": 1999, "title": "Informe COMETA", "contribution": "Coautor del informe de altos oficiales franceses sobre los UAP y la defensa", "contribution_en": "Co-author of the report by senior French officials on UAP and defense"}
+    ],
+    "sources": [
+      {"name": "Jean-Jacques Velasco — Wikipedia", "url": "https://fr.wikipedia.org/wiki/Jean-Jacques_Velasco"},
+      {"name": "GEIPAN — CNES", "url": "https://www.cnes-geipan.fr/"}
+    ]
+  },
+  {
+    "id": "de-brouwer",
+    "name": "Wilfried De Brouwer",
+    "flag": "🇧🇪",
+    "section": "B",
+    "section_label": "General FAB · oleada belga",
+    "section_label_en": "BAF General · Belgian wave",
+    "credentials": "Mayor general (R) de la Fuerza Aérea Belga · jefe de operaciones durante la oleada de 1989–1990",
+    "credentials_en": "Major general (ret.) of the Belgian Air Force · chief of operations during the 1989–1990 wave",
+    "bio_short": "Mayor general (retirado) de la Fuerza Aérea Belga, con una larga carrera que lo llevó hasta subjefe del estado mayor aéreo y cargos en la OTAN. Durante la oleada belga de objetos triangulares (1989–1990), como jefe de operaciones del estado mayor, fue quien organizó la respuesta militar: la noche del 30 al 31 de marzo de 1990, ante detecciones de radar en tierra, ordenó el despegue de dos F-16 que lograron enganches de radar sobre objetos con maniobras y aceleraciones fuera de lo conocido. Poco después dio una conferencia de prensa pública en la que presentó los datos de radar a los periodistas y reconoció abiertamente que el fenómeno no estaba identificado —un grado de transparencia institucional excepcional—. Aportó luego su testimonio al libro de Leslie Kean.",
+    "bio_short_en": "A major general (retired) of the Belgian Air Force, with a long career that took him to deputy chief of the air staff and NATO posts. During the Belgian wave of triangular objects (1989–1990), as chief of operations of the staff, he was the one who organized the military response: on the night of 30–31 March 1990, faced with ground radar detections, he ordered two F-16s to scramble; they achieved radar locks on objects with maneuvers and accelerations beyond the known. Shortly after he gave a public press conference in which he presented the radar data to journalists and openly acknowledged that the phenomenon was unidentified —an exceptional degree of institutional transparency. He later contributed his testimony to Leslie Kean's book.",
+    "works": [
+      {"year": 1990, "title": "Respuesta de la FAB a la oleada belga", "contribution": "Ordenó la interceptación con F-16 y presentó públicamente los datos de radar", "contribution_en": "Ordered the F-16 interception and publicly presented the radar data"},
+      {"year": 2010, "title": "Testimonio en 'UFOs' (Leslie Kean)", "contribution": "Aportó el relato del general al registro público internacional", "contribution_en": "Contributed the general's account to the international public record"}
+    ],
+    "sources": [
+      {"name": "Wilfried De Brouwer — Wikipedia", "url": "https://en.wikipedia.org/wiki/Wilfried_De_Brouwer"},
+      {"name": "Belgian UFO wave — Wikipedia", "url": "https://en.wikipedia.org/wiki/Belgian_UFO_wave"}
+    ]
+  },
+  {
+    "id": "strand",
+    "name": "Erling Strand",
+    "flag": "🇳🇴",
+    "section": "A",
+    "section_label": "Estudio instrumentado (Project Hessdalen)",
+    "section_label_en": "Instrumented study (Project Hessdalen)",
+    "credentials": "Ingeniero · investigador de la Universidad de Østfold · fundador de Project Hessdalen",
+    "credentials_en": "Engineer · researcher at Østfold University College · founder of Project Hessdalen",
+    "bio_short": "Ingeniero noruego e investigador de la Universidad de Østfold, fundador en 1983 de Project Hessdalen, el intento más serio del mundo de estudiar un fenómeno luminoso recurrente con instrumentos. Ante la oleada de luces en el valle de Hessdalen (1981–1984), en lugar de limitarse a recoger testimonios instaló estaciones de medición automáticas que registran de forma continua datos visuales, electromagnéticos y de radar. Coorganizó la primera conferencia científica internacional sobre el fenómeno (1994) y mantiene una de las pocas líneas de investigación de campo verdaderamente cuantitativa de la ufología. Representa el ideal del sitio: medir antes que concluir.",
+    "bio_short_en": "A Norwegian engineer and researcher at Østfold University College, who in 1983 founded Project Hessdalen, the world's most serious attempt to study a recurring luminous phenomenon with instruments. Faced with the wave of lights in the Hessdalen valley (1981–1984), instead of merely collecting testimonies he installed automatic measurement stations that continuously record visual, electromagnetic and radar data. He co-organized the first international scientific conference on the phenomenon (1994) and maintains one of the few truly quantitative field-research lines in ufology. He embodies the site's ideal: measure before concluding.",
+    "works": [
+      {"year": 1983, "title": "Project Hessdalen", "contribution": "Fundó el estudio instrumentado del fenómeno luminoso de Hessdalen (estaciones automáticas)", "contribution_en": "Founded the instrumented study of the Hessdalen luminous phenomenon (automatic stations)"},
+      {"year": 1994, "title": "Conferencia científica de Hessdalen", "contribution": "Coorganizó el primer encuentro internacional sobre el fenómeno", "contribution_en": "Co-organized the first international meeting on the phenomenon"}
+    ],
+    "sources": [
+      {"name": "Project Hessdalen — hessdalen.org", "url": "https://www.hessdalen.org/"},
+      {"name": "Hessdalen lights — Wikipedia", "url": "https://en.wikipedia.org/wiki/Hessdalen_lights"}
+    ]
+  },
+  {
     "id": "clarke",
     "name": "David Clarke",
     "flag": "🇬🇧",

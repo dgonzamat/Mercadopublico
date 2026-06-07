@@ -43,7 +43,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   mack: ["ariel-school-1994"],
   hind: ["ariel-school-1994"],
   delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
-  poher: ["trans-en-provence-1981"],
+  poher: ["trans-en-provence-1981", "geipan-gepan-france"],
   "taylor-t": ["aawsap-skinwalker-2008"],
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
   haines: ["lago-de-cote-1971"],
@@ -115,6 +115,11 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
 
   // Colombia — astronomía / escepticismo
   puerta: ["bogota-t33-1964"],
+
+  // Europa — agencia oficial e instituciones
+  velasco: ["geipan-gepan-france", "trans-en-provence-1981"],
+  "de-brouwer": ["belgian-wave-1989"],
+  strand: ["hessdalen-1981"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
