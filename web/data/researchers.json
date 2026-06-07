@@ -719,5 +719,26 @@
       {"name": "International Coalition for Extraterrestrial Research — Julio Chamorro (Perú)", "url": "https://icer.pt/people/julio-chamorro-peru/"},
       {"name": "La Huella OVNI — entrevista al Comandante (r) Julio Chamorro", "url": "https://mundonow.com/en/commander-julio-chamorro-ufo-research-information/"}
     ]
+  },
+  {
+    "id": "petit",
+    "name": "Marco Antônio Petit",
+    "born": 1957,
+    "section": "A",
+    "section_label": "Ufología de campo (Brasil)",
+    "section_label_en": "Field ufology (Brazil)",
+    "credentials": "Ufólogo brasileño · miembro fundador de la CBU · investigador de campo desde 1975 · autor de 16 libros",
+    "credentials_en": "Brazilian ufologist · founding member of the CBU · field investigator since 1975 · author of 16 books",
+    "bio_short": "Escritor y ufólogo brasileño (Río de Janeiro, 1957). Investiga el fenómeno OVNI desde 1975 y es una de las figuras centrales de la ufología de campo brasileña: desde 1982 condujo vigilias y registros en la Serra da Beleza (oeste de Río), documentando cientos de casos y alrededor de un centenar de fotografías. Miembro fundador de la Comissão Brasileira de Ufólogos (CBU) y co-impulsor de la campaña 'UFOs: Liberdade de Informação Já', que llevó a la apertura de unas 4.000 páginas de archivos militares brasileños. Estudió los casos clásicos de la ufología militar del país: Operação Prato (Colares), la Noche Oficial de los OVNIs (1986) y Varginha.",
+    "bio_short_en": "Brazilian writer and ufologist (Rio de Janeiro, 1957). He has investigated the UFO phenomenon since 1975 and is one of the central figures of Brazilian field ufology: since 1982 he has run vigils and surveys in the Serra da Beleza (west of Rio), documenting hundreds of cases and around a hundred photographs. A founding member of the Comissão Brasileira de Ufólogos (CBU) and a co-driver of the 'UFOs: Freedom of Information Now' campaign, which led to the release of some 4,000 pages of Brazilian military files. He studied the country's classic military-ufology cases: Operação Prato (Colares), the Official UFO Night (1986) and Varginha.",
+    "works": [
+      {"year": 1975, "title": "Inicio de investigación de campo", "contribution": "Comenzó a investigar el fenómeno OVNI, con foco en los casos militares brasileños", "contribution_en": "Began investigating the UFO phenomenon, focusing on Brazilian military cases"},
+      {"year": 1982, "title": "Vigilias en la Serra da Beleza", "contribution": "Registro sistemático de campo: cientos de casos documentados y ~130 fotografías a lo largo de los años", "contribution_en": "Systematic field surveys: hundreds of documented cases and ~130 photographs over the years"},
+      {"year": 2005, "title": "Campaña 'UFOs: Liberdade de Informação Já'", "contribution": "Co-impulsó la campaña que llevó a abrir unas 4.000 páginas de archivos militares brasileños sobre OVNIs", "contribution_en": "Co-led the campaign that led to the release of some 4,000 pages of Brazilian military UFO files"}
+    ],
+    "sources": [
+      {"name": "Marco Antônio Petit — Wikipédia (PT)", "url": "https://pt.wikipedia.org/wiki/Marco_Ant%C3%B4nio_Petit"},
+      {"name": "Revista UFO — Marco Antonio Petit", "url": "https://ufo.com.br/marco-antonio-petit/"}
+    ]
   }
 ]
