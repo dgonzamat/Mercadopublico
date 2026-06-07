@@ -1,0 +1,66 @@
+{
+  "id": "mitre-ffrdc-2026",
+  "num": 109,
+  "name": "MITRE Corporation · FFRDC DoD/IC",
+  "name_en": "MITRE Corporation · DoD/IC FFRDC",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.925,
+    "lng": -77.205,
+    "place": "MITRE, McLean, Virginia"
+  },
+  "tier": "A",
+  "epistemicStatus": "developing",
+  "probability": 45,
+  "summary": "MITRE opera FFRDCs (centros de I+D financiados por el gobierno) para el Departamento de Defensa y la comunidad de inteligencia, y —según prensa de defensa— examinó especímenes de material asociado a UAP. En mayo de 2026 el Rep. Eric Burlison exigió formalmente a MITRE entregar registros y assets UAP que databan de 1930. Primer requerimiento congresional explícito a un contratista FFRDC privado sobre material del fenómeno.",
+  "summary_en": "MITRE operates FFRDCs (government-funded R&D centers) for the Department of Defense and the intelligence community, and —per defense press— examined specimens of UAP-associated material. In May 2026, Rep. Eric Burlison formally demanded that MITRE hand over UAP records and assets dating back to 1930. The first explicit congressional records demand on a private FFRDC contractor regarding phenomenon material.",
+  "patterns": [
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "MITRE Corporation opera FFRDCs (Federally Funded Research and Development Centers) para el Departamento de Defensa y la comunidad de inteligencia de EE.UU. — una posición que le da acceso estructural a programas y datos clasificados sin ser una agencia gubernamental ni un contratista comercial común. Según reportes de la prensa de defensa, MITRE ha examinado especímenes de material asociado a UAP.\n\nEl 27 de mayo de 2026, DefenseScoop informó que el representante Eric Burlison (R-Missouri) había exigido formalmente a MITRE entregar todos los registros y assets relacionados con UAP en su poder, incluyendo material que databa de 1930, y que MITRE se movía para cumplir con el requerimiento. Es el primer caso documentado en que un FFRDC privado es objeto de un requerimiento congresional explícito sobre material del fenómeno — extendiendo el escrutinio de disclosure desde las agencias hacia la capa de contratistas, históricamente la menos visible.",
+  "whatHappened_en": "MITRE Corporation operates FFRDCs (Federally Funded Research and Development Centers) for the U.S. Department of Defense and the intelligence community — a position that gives it structural access to classified programs and data without being a government agency or an ordinary commercial contractor. According to defense-press reporting, MITRE has examined specimens of UAP-associated material.\n\nOn May 27, 2026, DefenseScoop reported that Rep. Eric Burlison (R-Missouri) had formally demanded that MITRE hand over all UAP-related records and assets in its possession, including material dating back to 1930, and that MITRE was moving to comply. It is the first documented case in which a private FFRDC is the target of an explicit congressional records demand regarding phenomenon material — extending disclosure scrutiny from agencies into the contractor layer, historically the least visible.",
+  "whyMatters": "Los FFRDC como MITRE son el eslabón menos visible del procesamiento institucional del fenómeno: ni agencia (sujeta a FOIA y oversight directo) ni contratista comercial (sujeto a contratos públicos), operan en una zona gris con acceso a material clasificado. El requerimiento de Burlison de 2026 es el primer intento formal de penetrar esa capa. Su valor es procedimental, no físico: no aporta un avistamiento, sino que documenta dónde reside parte del material y quién lo ha tenido.",
+  "whyMatters_en": "FFRDCs like MITRE are the least visible link in the institutional processing of the phenomenon: neither an agency (subject to FOIA and direct oversight) nor a commercial contractor (subject to public contracts), they operate in a gray zone with access to classified material. Burlison's 2026 demand is the first formal attempt to penetrate that layer. Its value is procedural, not physical: it does not contribute a sighting, but documents where part of the material resides and who has held it.",
+  "evidence": [
+    "MITRE opera FFRDCs para el DoD y la comunidad de inteligencia — acceso estructural a programas clasificados.",
+    "Reportes de prensa de defensa indican que MITRE examinó especímenes de material asociado a UAP.",
+    "27 may 2026 (DefenseScoop): el Rep. Eric Burlison exige formalmente a MITRE registros y assets UAP desde 1930; MITRE se mueve a cumplir.",
+    "Primer requerimiento congresional explícito a un FFRDC privado sobre material del fenómeno."
+  ],
+  "evidence_en": [
+    "MITRE operates FFRDCs for the DoD and the intelligence community — structural access to classified programs.",
+    "Defense-press reporting indicates MITRE examined specimens of UAP-associated material.",
+    "May 27, 2026 (DefenseScoop): Rep. Eric Burlison formally demands UAP records and assets from MITRE dating to 1930; MITRE moves to comply.",
+    "First explicit congressional records demand on a private FFRDC regarding phenomenon material."
+  ],
+  "sources": [
+    {
+      "name": "DefenseScoop — 'MITRE moves to comply with lawmaker's request for UAP records and assets dating back to 1930' (27 may 2026)",
+      "url": "https://defensescoop.com/2026/05/27/rep-eric-burlison-request-for-uap-records-mitre/"
+    },
+    {
+      "name": "MITRE Corporation — FFRDCs operados para el DoD y la comunidad de inteligencia",
+      "url": "https://www.mitre.org/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Un FFRDC con acceso clasificado examinando material UAP y conservando registros que datan de 1930 es consistente con el patrón de procesamiento institucional sostenido y compartimentado del fenómeno, fuera del alcance del oversight ordinario.",
+      "rationaleEn": "An FFRDC with classified access examining UAP material and holding records dating to 1930 is consistent with the pattern of sustained, compartmented institutional processing of the phenomenon, beyond the reach of ordinary oversight."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El examen de 'especímenes' implica material físico de origen no establecido, pero sin resultados públicos no discrimina entre tecnología humana clasificada y origen no convencional.",
+      "rationaleEn": "The examination of 'specimens' implies physical material of unestablished origin, but without public results it does not discriminate between classified human technology and unconventional origin."
+    }
+  ]
+}

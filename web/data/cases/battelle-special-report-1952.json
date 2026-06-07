@@ -1,0 +1,64 @@
+{
+  "id": "battelle-special-report-1952",
+  "num": 110,
+  "name": "Battelle Memorial Institute · Special Report 14",
+  "name_en": "Battelle Memorial Institute · Special Report 14",
+  "year_start": 1952,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.998,
+    "lng": -83.021,
+    "place": "Battelle, Columbus, Ohio"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 42,
+  "summary": "Battelle, instituto que gestiona laboratorios nacionales del DoE (incl. Oak Ridge), ejecutó bajo contrato USAF el Project Blue Book Special Report 14 (1952–1955) — el mayor estudio estadístico UAP de su época, que dejó ~22% de casos 'desconocidos', con mayor tasa entre los reportes de mejor calidad. Décadas después reaparece en el análisis de materiales del fenómeno. El contratista-analista de mayor recorrido histórico.",
+  "summary_en": "Battelle, the institute that manages DoE national labs (incl. Oak Ridge), executed under USAF contract the Project Blue Book Special Report 14 (1952–1955) — the largest statistical UAP study of its era, which left ~22% of cases 'unknown', with a higher rate among the best-quality reports. Decades later it reappears in phenomenon material analysis. The contractor-analyst with the longest historical track record.",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "Battelle Memorial Institute es un instituto de investigación sin fines de lucro que gestiona o co-gestiona varios laboratorios nacionales del Departamento de Energía de EE.UU. (incluido Oak Ridge). Entre 1952 y 1955, bajo contrato con la USAF, Battelle ejecutó el análisis estadístico que se publicaría como Project Blue Book Special Report 14 — el estudio cuantitativo más grande de su época sobre reportes UAP. Clasificó miles de casos y dejó cerca del 22% como 'desconocidos', con una tasa de desconocidos mayor entre los reportes de mejor calidad (mejores testigos, más datos).\n\nDécadas después, Battelle reaparece en la capa de análisis de materiales: según reportes recientes, laboratorios vinculados a Battelle (vía Oak Ridge) examinaron muestras asociadas a UAP, con firmas isotópicas reportadas como 'consistentes con formación terrestre'. Battelle es así el contratista-analista de mayor recorrido histórico en el procesamiento del fenómeno, desde la estadística de los años 50 hasta la metalurgia contemporánea.",
+  "whatHappened_en": "Battelle Memorial Institute is a non-profit research institute that manages or co-manages several U.S. Department of Energy national laboratories (including Oak Ridge). Between 1952 and 1955, under contract with the USAF, Battelle executed the statistical analysis that would be published as Project Blue Book Special Report 14 — the largest quantitative study of its era on UAP reports. It classified thousands of cases and left roughly 22% as 'unknowns', with a higher unknown rate among the best-quality reports (better witnesses, more data).\n\nDecades later, Battelle reappears in the material-analysis layer: according to recent reporting, labs linked to Battelle (via Oak Ridge) examined UAP-associated samples, with isotopic signatures reported as 'consistent with terrestrial formation'. Battelle is thus the contractor-analyst with the longest historical track record in processing the phenomenon, from 1950s statistics to contemporary metallurgy.",
+  "whyMatters": "Special Report 14 es citado en ambos sentidos del debate: oficialmente concluyó que no había evidencia de tecnología extraordinaria, pero su propio dato —22% de desconocidos, con mayor tasa entre los casos mejor documentados— es usado por los proponentes como señal de un residuo no explicado. Battelle encarna la ambigüedad estructural del rol contratista: produce el análisis que el Estado usa para cerrar el caso y el que los investigadores usan para mantenerlo abierto.",
+  "whyMatters_en": "Special Report 14 is cited by both sides of the debate: it officially concluded there was no evidence of extraordinary technology, yet its own datum —22% unknowns, with a higher rate among the best-documented cases— is used by proponents as a sign of an unexplained residue. Battelle embodies the structural ambiguity of the contractor role: it produces the analysis the state uses to close the case and the one researchers use to keep it open.",
+  "evidence": [
+    "Battelle ejecutó el Project Blue Book Special Report 14 (1952–1955) bajo contrato USAF — el mayor estudio estadístico UAP de su época.",
+    "Special Report 14: ~22% de casos quedaron 'desconocidos', con mayor tasa entre los reportes de mejor calidad.",
+    "Battelle gestiona o co-gestiona laboratorios nacionales del DoE (incl. Oak Ridge).",
+    "Reportes recientes: análisis de materiales asociados a UAP con firmas isotópicas 'consistentes con formación terrestre'."
+  ],
+  "evidence_en": [
+    "Battelle executed Project Blue Book Special Report 14 (1952–1955) under USAF contract — the largest statistical UAP study of its era.",
+    "Special Report 14: ~22% of cases remained 'unknown', with a higher rate among the best-quality reports.",
+    "Battelle manages or co-manages DoE national laboratories (incl. Oak Ridge).",
+    "Recent reporting: analysis of UAP-associated materials with isotopic signatures 'consistent with terrestrial formation'."
+  ],
+  "sources": [
+    {
+      "name": "USAF / Project Blue Book — Special Report No. 14 (Battelle Memorial Institute, 1955)",
+      "note": "Estudio estadístico de ~3200 reportes; ~22% clasificados 'unknown'."
+    },
+    {
+      "name": "Live Science — US government declassifies UAP files (contexto de análisis de materiales, 2026)",
+      "url": "https://www.livescience.com/space/extraterrestrial-life/us-government-declassifies-nearly-200-uap-files-including-strange-sightings-from-apollo-astronauts"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El uso sostenido de un contratista-analista (Battelle) para procesar el fenómeno —estadística en los 50, materiales en la era moderna— documenta el aparato institucional, pero no se pronuncia sobre el origen de los casos.",
+      "rationaleEn": "The sustained use of a contractor-analyst (Battelle) to process the phenomenon —statistics in the '50s, materials in the modern era— documents the institutional apparatus, but does not pronounce on the origin of the cases."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Las firmas isotópicas 'consistentes con formación terrestre' reportadas en los materiales analizados restan, marginalmente, a la hipótesis de origen no humano para esas muestras específicas.",
+      "rationaleEn": "The isotopic signatures 'consistent with terrestrial formation' reported in the analyzed materials marginally weaken the non-human-origin hypothesis for those specific samples."
+    }
+  ]
+}

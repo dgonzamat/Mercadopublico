@@ -49,7 +49,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   haines: ["lago-de-cote-1971", "chicago-ohare-2006"],
   maccabee: ["jal1628-1986", "kaikoura-1978"],
   schuessler: ["cash-landrum-1980"],
-  zeidman: ["coyne-1973"],
+  zeidman: ["coyne-1973", "battelle-special-report-1952"],
   powell: ["aguadilla-2013", "nimitz-2004"],
   rutkowski: ["shag-harbour-1967", "yukon-1996"],
   chalker: ["westall-1966", "valentich-1978"],
