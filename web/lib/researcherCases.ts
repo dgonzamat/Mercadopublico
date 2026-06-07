@@ -65,6 +65,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   fravor: ["nimitz-2004", "grusch-testimony-2023"],
   dietrich: ["nimitz-2004"],
   "santa-maria": ["pampa-joya-1980"],
+  choy: ["chulucanas-2001"],
   pope: ["rendlesham-1980", "cosford-1993"],
   graves: ["roosevelt-2014", "nimitz-2004", "grusch-testimony-2023"],
   keyhoe: ["washington-dc-1952"],
