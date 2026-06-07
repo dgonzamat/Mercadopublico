@@ -73,12 +73,12 @@ export default function WorldMap() {
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-lg border border-border">
+      <div className="h-[60vh] min-h-[360px] overflow-hidden rounded-lg border border-border md:h-[600px]">
         <MapContainer
           center={[20, 0]}
           zoom={2}
           scrollWheelZoom
-          style={{ height: "600px", width: "100%", background: "#0a0a0f" }}
+          style={{ height: "100%", width: "100%", background: "#0a0a0f" }}
         >
           <TileLayer
             attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
