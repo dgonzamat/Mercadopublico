@@ -9,8 +9,8 @@ import type { UAPCase, Researcher } from "./types";
  * de menciones en el contenido de cada caso + curaduría manual verificada.
  *
  * Los investigadores ausentes de este mapa son teóricos / ontológicos sin
- * caso puntual del corpus (Loeb, Nolan, Strieber, Jorjani, Freixedo,
- * Pasulka) — la ausencia es intencional, no un hueco.
+ * caso puntual del corpus (Nolan, Strieber, Jorjani, Freixedo, Pasulka) — la
+ * ausencia es intencional, no un hueco.
  */
 export const RESEARCHER_CASES: Record<string, string[]> = {
   // A — científicos
@@ -33,6 +33,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
   poher: ["trans-en-provence-1981"],
   "taylor-t": ["aawsap-skinwalker-2008"],
+  loeb: ["oumuamua-2017", "3i-atlas-2025"],
 
   // B — insiders / militares
   ruppelt: [

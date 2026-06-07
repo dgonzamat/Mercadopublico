@@ -1,0 +1,71 @@
+{
+  "id": "3i-atlas-2025",
+  "num": 85,
+  "name": "3I/ATLAS (C/2025 N1)",
+  "name_en": "3I/ATLAS (C/2025 N1)",
+  "year_start": 2025,
+  "country": "CL",
+  "country_name": "Espacio interestelar · ATLAS (Chile)",
+  "flag": "🌍",
+  "location": {
+    "lat": -30.47,
+    "lng": -70.76,
+    "place": "Estación ATLAS, Río Hurtado (Chile)"
+  },
+  "tier": "A",
+  "probability": 45,
+  "summary": "Tercer objeto interestelar confirmado (2025), tras ʻOumuamua y Borisov. A diferencia del primero, sí muestra actividad cometaria, pero con una química inusual: una de las razones CO₂/H₂O más altas medidas (~8), una pluma con solo ~4% de agua, níquel sin hierro y varios jets. El consenso lo trata como un cometa interestelar raro pero natural; Avi Loeb documentó las anomalías y mantiene la pregunta abierta, sin afirmar que sean tecnológicas.",
+  "summary_en": "Third confirmed interstellar object (2025), after ʻOumuamua and Borisov. Unlike the first, it does show cometary activity, but with unusual chemistry: one of the highest CO₂/H₂O ratios ever measured (~8), a plume only ~4% water, nickel without iron, and several jets. The consensus treats it as a rare but natural interstellar comet; Avi Loeb documented the anomalies and keeps the question open, without claiming they are technological.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 1 de julio de 2025, la red ATLAS (Asteroid Terrestrial-impact Last Alert System), financiada por la NASA, detectó desde su estación en Río Hurtado (Chile) un objeto en trayectoria hiperbólica. Confirmado como interestelar, recibió la designación 3I/ATLAS (C/2025 N1): el tercer visitante de fuera del Sistema Solar registrado, después de 1I/ʻOumuamua (2017) y 2I/Borisov (2019). A diferencia de ʻOumuamua, mostró desde temprano actividad cometaria —coma y jets—, por lo que la astronomía lo clasificó como un cometa interestelar.\n\nLas campañas de observación (Hubble, JWST, VLT, Subaru, e incluso la Parker Solar Probe) revelaron una química poco habitual: una razón CO₂/H₂O de las más altas jamás medidas en un cometa (~8), una pluma de gas con apenas ~4% de agua, presencia de níquel sin el hierro que suele acompañarlo, y varios chorros de material en direcciones específicas. Pasó por su perihelio el 29 de octubre de 2025, a 1,36 UA del Sol —entre las órbitas de la Tierra y Marte— y pasó cerca de la Tierra a 1,8 UA, sin riesgo alguno.\n\nEl astrofísico Avi Loeb catalogó públicamente una lista de anomalías de 3I/ATLAS y argumentó que varias no estaban previstas por los modelos cometarios estándar. Es importante el matiz: el propio Loeb concluyó que las anomalías no apuntan necesariamente a un origen tecnológico, sino que deben documentarse y estudiarse en detalle. El consenso científico —NASA, ESA— sostiene que se trata de un cometa interestelar genuino, inusual pero natural.",
+  "whatHappened_en": "On 1 July 2025, the NASA-funded ATLAS network (Asteroid Terrestrial-impact Last Alert System) detected from its station in Río Hurtado (Chile) an object on a hyperbolic trajectory. Confirmed as interstellar, it was designated 3I/ATLAS (C/2025 N1): the third visitor from outside the Solar System on record, after 1I/ʻOumuamua (2017) and 2I/Borisov (2019). Unlike ʻOumuamua, it showed cometary activity early —coma and jets— so astronomy classified it as an interstellar comet.\n\nObserving campaigns (Hubble, JWST, VLT, Subaru, and even the Parker Solar Probe) revealed unusual chemistry: a CO₂/H₂O ratio among the highest ever measured in a comet (~8), a gas plume with only ~4% water, nickel present without the iron that usually accompanies it, and several jets of material in specific directions. It passed perihelion on 29 October 2025, at 1.36 AU from the Sun —between the orbits of Earth and Mars— and passed Earth at 1.8 AU, with no risk at all.\n\nAstrophysicist Avi Loeb publicly catalogued a list of 3I/ATLAS anomalies and argued that several were not predicted by standard cometary models. The nuance matters: Loeb himself concluded that the anomalies do not necessarily point to a technological origin, but should be documented and studied in detail. The scientific consensus —NASA, ESA— holds that it is a genuine interstellar comet, unusual but natural.",
+  "whyMatters": "3I/ATLAS muestra cómo debería funcionar la frontera astronómica del corpus: un objeto detectado a tiempo por una red institucional, seguido por los mayores telescopios del mundo, con datos abiertos y revisados — y aun así, con propiedades que sorprendieron a los modelos. Es el contrapunto maduro de ʻOumuamua: esta vez la astronomía sí pudo caracterizarlo. Y es un caso de estudio sobre cómo separar la anomalía real (química y morfología inusuales, confirmadas) de la sobreinterpretación: incluso quien más empuja la hipótesis exótica, Loeb, se detuvo en 'documentar y explorar', no en afirmar. Esa disciplina —anomalía sí, conclusión no— es exactamente el estándar del sitio.",
+  "whyMatters_en": "3I/ATLAS shows how the corpus's astronomical frontier should work: an object detected in time by an institutional network, followed by the world's largest telescopes, with open, peer-reviewed data — and still, with properties that surprised the models. It is the mature counterpoint to ʻOumuamua: this time astronomy could characterize it. And it is a case study in separating the real anomaly (unusual, confirmed chemistry and morphology) from over-interpretation: even the person pushing the exotic hypothesis hardest, Loeb, stopped at 'document and explore', not at asserting. That discipline —anomaly yes, conclusion no— is exactly the site's standard.",
+  "evidence": [
+    "Trayectoria hiperbólica que confirma origen interestelar — tercer objeto así registrado (tras ʻOumuamua y Borisov)",
+    "Razón CO₂/H₂O ~8, de las más altas medidas en cualquier cometa; pluma con ~4% de agua",
+    "Detección de níquel sin hierro y varios jets en direcciones específicas",
+    "Seguimiento por Hubble, JWST, VLT, Subaru y la Parker Solar Probe; datos abiertos y revisados",
+    "Perihelio el 29 oct 2025 a 1,36 UA; aproximación a la Tierra a 1,8 UA (sin riesgo)"
+  ],
+  "evidence_en": [
+    "Hyperbolic trajectory confirming interstellar origin — third such object on record (after ʻOumuamua and Borisov)",
+    "CO₂/H₂O ratio ~8, among the highest measured in any comet; plume with ~4% water",
+    "Detection of nickel without iron and several jets in specific directions",
+    "Tracked by Hubble, JWST, VLT, Subaru and the Parker Solar Probe; open, peer-reviewed data",
+    "Perihelion on 29 Oct 2025 at 1.36 AU; Earth approach at 1.8 AU (no risk)"
+  ],
+  "sources": [
+    {
+      "name": "NASA Science — 'Comet 3I/ATLAS'",
+      "url": "https://science.nasa.gov/solar-system/comets/3i-atlas/"
+    },
+    {
+      "name": "ESA — 'Comet 3I/ATLAS — frequently asked questions'",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Comet_3I_ATLAS_frequently_asked_questions"
+    },
+    {
+      "name": "Avi Loeb — 'Anomalies of 3I/ATLAS, Organized by Likelihood' (Medium, 2025)",
+      "url": "https://avi-loeb.medium.com/anomalies-of-3i-atlas-organized-by-likelihood-af20fb3b6d21",
+      "note": "Catálogo de anomalías; concluye que no apuntan necesariamente a tecnología.",
+      "note_en": "Catalogue of anomalies; concludes they do not necessarily point to technology."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "3I/ATLAS muestra actividad cometaria inequívoca (coma, jets) y NASA/ESA lo clasifican como un cometa interestelar genuino; sus rarezas químicas, aunque llamativas, caen dentro de la diversidad esperable de objetos de otros sistemas. Modest porque la química (CO2/H2O ~8, níquel sin hierro) no tiene aún un análogo bien establecido y sigue en estudio.",
+      "rationaleEn": "3I/ATLAS shows unmistakable cometary activity (coma, jets) and NASA/ESA classify it as a genuine interstellar comet; its chemical oddities, though striking, fall within the expected diversity of objects from other systems. Modest because the chemistry (CO2/H2O ~8, nickel without iron) has no well-established analog yet and remains under study."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Algunas anomalías (jets direccionales, química atípica, trayectoria) fueron señaladas como no previstas por los modelos estándar. Minimal —y deliberadamente bajo— porque incluso Loeb, que las documentó, concluyó que no apuntan necesariamente a un origen tecnológico.",
+      "rationaleEn": "Some anomalies (directional jets, atypical chemistry, trajectory) were flagged as not predicted by standard models. Minimal —and deliberately low— because even Loeb, who documented them, concluded they do not necessarily point to a technological origin."
+    }
+  ]
+}
