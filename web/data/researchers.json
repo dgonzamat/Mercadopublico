@@ -901,6 +901,25 @@
     ]
   },
   {
+    "id": "lianza",
+    "name": "Rubén Lianza",
+    "section": "B",
+    "section_label": "Comodoro FAA · director del CIAE",
+    "section_label_en": "FAA Commodore · director of CIAE",
+    "credentials": "Comodoro (R) y piloto de pruebas de la Fuerza Aérea Argentina · analista de imágenes (IPACO) · director del CIAE",
+    "credentials_en": "Commodore (ret.) and test pilot of the Argentine Air Force · image analyst (IPACO) · director of CIAE",
+    "bio_short": "Comodoro (retirado) y piloto de pruebas de la Fuerza Aérea Argentina (promoción 1980), con más de 3.000 horas de vuelo en 20 tipos de aeronaves y una carrera orientada a ensayos en vuelo e investigación y desarrollo: fue jefe del Centro de Ensayos en Vuelo de la FAA, piloto de proyecto en Vought Aircraft (Dallas) y enlace del Programa Pampa en Lockheed Martin Argentina. Licenciado en sistemas aeroespaciales y analista certificado en el software de análisis de imágenes IPACO. Desde mediados de la década de 2010 dirige la comisión oficial de fenómenos aeroespaciales, que reorganizó como CIAE (Centro de Identificación Aeroespacial). Su equipo analizó más de 400 denuncias sin hallar una sola 'nave': aplica análisis técnico de fotos y videos para distinguir lo extraordinario de un insecto, un reflejo o un satélite. Crítico de la ufología tradicional, cita a Carl Sagan para advertir que algunos sectores 'no buscan resolver el misterio sino preservarlo'.",
+    "bio_short_en": "Commodore (retired) and test pilot of the Argentine Air Force (Class of 1980), with more than 3,000 flight hours in 20 aircraft types and a career oriented to flight testing and research and development: he was head of the FAA's Flight Test Center, project pilot at Vought Aircraft (Dallas) and Pampa Program liaison at Lockheed Martin Argentina. He holds a degree in aerospace systems and is a certified analyst in the IPACO image-analysis software. Since the mid-2010s he has directed the official aerospace-phenomena commission, which he reorganized as CIAE (Aerospace Identification Center). His team analyzed more than 400 reports without finding a single 'craft': he applies technical analysis of photos and videos to distinguish the extraordinary from an insect, a reflection or a satellite. A critic of traditional ufology, he cites Carl Sagan to warn that some sectors 'do not seek to solve the mystery but to preserve it'.",
+    "works": [
+      {"year": 2015, "title": "Conducción de la CEFAe / CIAE", "contribution": "Dio a la comisión oficial un enfoque científico-técnico de identificación; reorganizó la CEFAe en el CIAE (2019)", "contribution_en": "Gave the official commission a scientific-technical identification approach; reorganized CEFAe into CIAE (2019)"},
+      {"year": 2020, "title": "Análisis técnico de 400+ denuncias", "contribution": "Resolvió la gran mayoría como fenómenos prosaicos mediante análisis de imágenes (IPACO)", "contribution_en": "Resolved the vast majority as prosaic phenomena via image analysis (IPACO)"}
+    ],
+    "sources": [
+      {"name": "Zona Militar — entrevista al comodoro Rubén Lianza (CIAE)", "url": "https://www.zona-militar.com/2020/12/22/entrevista-a-ruben-lianza-quien-esta-a-cargo-del-centro-de-identificacion-aeroespacial/"},
+      {"name": "Fuerza Aérea Argentina — Centro de Identificación Aeroespacial", "url": "https://www.argentina.gob.ar/fuerzaaerea/centro-de-identificacion-aeroespacial"}
+    ]
+  },
+  {
     "id": "petit",
     "name": "Marco Antônio Petit",
     "born": 1957,
