@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
 import { researcherJsonLd } from "@/lib/jsonld";
+import { casesForResearcher } from "@/lib/researcherCases";
+import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
@@ -32,6 +34,7 @@ export default function ResearcherDetailPage({
 
   const fw = r.framework ? getFramework(r.framework) : undefined;
   const lifespan = r.death ? `${r.born}–${r.death}` : `${r.born}–`;
+  const relatedCases = casesForResearcher(r.id);
 
   // Orden secuencial = mismo del índice (secciones A–E, estable dentro de cada una).
   const ordered = [...researchers].sort((a, b) =>
@@ -165,6 +168,29 @@ export default function ResearcherDetailPage({
             ))}
           </ul>
         </section>
+      )}
+
+      {relatedCases.length > 0 ? (
+        <section className="space-y-3 border-t border-border pt-10">
+          <Eyebrow>
+            <T
+              es={`Casos asociados (${relatedCases.length})`}
+              en={`Associated cases (${relatedCases.length})`}
+            />
+          </Eyebrow>
+          <div>
+            {relatedCases.map((c) => (
+              <CaseRow key={c.id} caseData={c} />
+            ))}
+          </div>
+        </section>
+      ) : (
+        <p className="border-t border-border pt-6 font-mono text-xs uppercase tracking-widest text-muted">
+          <T
+            es="Aporta marco teórico / ontológico — sin caso puntual del corpus."
+            en="Contributes a theoretical / ontological framework — no specific corpus case."
+          />
+        </p>
       )}
 
       <Caption className="border-t border-border pt-6">

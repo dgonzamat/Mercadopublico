@@ -7,6 +7,8 @@ import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
+import { ResearcherAvatar } from "@/components/ResearcherAvatar";
+import { researchersForCase } from "@/lib/researcherCases";
 import { EpistemicBadge } from "@/components/Badge";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd } from "@/lib/jsonld";
@@ -85,6 +87,7 @@ export default function CaseDetailPage({
   const c = cases.find((x) => x.id === params.slug);
   if (!c) notFound();
 
+  const caseResearchers = researchersForCase(c.id);
   const sortedByNum = [...cases].sort((a, b) => a.num - b.num);
   const idx = sortedByNum.findIndex((x) => x.id === c.id);
   const prev = idx > 0 ? sortedByNum[idx - 1] : null;
@@ -612,6 +615,37 @@ export default function CaseDetailPage({
                 </Link>
               );
             })}
+          </div>
+        </section>
+      )}
+
+      {/* ────────── INVESTIGADORES ASOCIADOS ────────── */}
+      {caseResearchers.length > 0 && (
+        <section className="space-y-4 border-t-2 border-text pt-12">
+          <Eyebrow>
+            <T
+              es={`Investigadores asociados (${caseResearchers.length})`}
+              en={`Associated researchers (${caseResearchers.length})`}
+            />
+          </Eyebrow>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {caseResearchers.map((r) => (
+              <Link
+                key={r.id}
+                href={`/researchers/${r.id}`}
+                className="flex items-center gap-3 rounded-lg border border-border bg-panel p-3 transition hover:border-accent/50"
+              >
+                <ResearcherAvatar researcher={r} size="sm" />
+                <span className="min-w-0">
+                  <span className="block truncate text-sm font-medium text-text">
+                    {r.name}
+                  </span>
+                  <span className="block truncate text-xs text-muted">
+                    <T es={r.section_label} en={r.section_label_en} />
+                  </span>
+                </span>
+              </Link>
+            ))}
           </div>
         </section>
       )}

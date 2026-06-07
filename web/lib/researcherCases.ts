@@ -1,0 +1,93 @@
+import { cases, researchers } from "./data";
+import type { UAPCase, Researcher } from "./types";
+
+/**
+ * Asociación curada investigador → casos del corpus.
+ *
+ * Es una relación muchos-a-muchos que no encaja limpio dentro de ninguna de
+ * las dos entidades, así que vive acá como fuente única. Se pobló a partir
+ * de menciones en el contenido de cada caso + curaduría manual verificada.
+ *
+ * Los investigadores ausentes de este mapa son teóricos / ontológicos sin
+ * caso puntual del corpus (Loeb, Nolan, Strieber, Jorjani, Freixedo,
+ * Pasulka) — la ausencia es intencional, no un hueco.
+ */
+export const RESEARCHER_CASES: Record<string, string[]> = {
+  // A — científicos
+  vallee: ["pampa-joya-1980", "valdes-1977", "voronezh-1989"],
+  hynek: ["socorro-1964", "valensole-1965", "hudson-valley-1983"],
+  mcdonald: ["levelland-1957", "rb47-1957", "washington-dc-1952"],
+  friedman: ["falcon-lake-1967", "varginha-1996"],
+  puthoff: ["levelland-1957", "valdes-1977", "uss-jackson-2023"],
+  davis: [
+    "wilson-davis-2002",
+    "grusch-testimony-2023",
+    "valdes-1977",
+    "levelland-1957",
+    "uss-jackson-2023",
+    "usper-2025",
+  ],
+  bigelow: ["aawsap-skinwalker-2008", "wikileaks-podesta-2016"],
+  "ballester-olmos": ["canary-islands-1976", "manises-1979"],
+  mack: ["ariel-school-1994"],
+  delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
+  poher: ["trans-en-provence-1981"],
+  taylor: ["aawsap-skinwalker-2008"],
+
+  // B — insiders / militares
+  ruppelt: [
+    "twining-memo-1947",
+    "estimate-situation-1948",
+    "mantell-1948",
+    "washington-dc-1952",
+  ],
+  grusch: [
+    "grusch-testimony-2023",
+    "bolender-memo-1969",
+    "wilson-davis-2002",
+    "usper-2025",
+    "wikileaks-podesta-2016",
+  ],
+  elizondo: ["aawsap-skinwalker-2008"],
+  mellon: ["wilson-davis-2002"],
+  fravor: ["nimitz-2004", "grusch-testimony-2023"],
+  dietrich: ["nimitz-2004"],
+  "santa-maria": ["pampa-joya-1980"],
+  pope: ["canary-islands-1976", "wikileaks-podesta-2016"],
+  graves: ["roosevelt-2014", "nimitz-2004", "grusch-testimony-2023"],
+  keyhoe: ["washington-dc-1952"],
+  kirkpatrick: ["uss-jackson-2023", "usper-2025"],
+  nell: ["grusch-testimony-2023"],
+
+  // C — actores políticos
+  burlison: ["yemen-orb-2024"],
+  luna: ["grusch-testimony-2023", "yemen-orb-2024"],
+  burchett: ["grusch-testimony-2023"],
+
+  // D — periodistas
+  coulthart: [
+    "dow-centcom-2020",
+    "pursue-r03-2026",
+    "mccasland-disappearance-2026",
+    "aliens-gov-immigration-2026",
+  ],
+  kean: ["nimitz-2004", "kecksburg-1965"],
+  knapp: ["aawsap-skinwalker-2008"],
+  clarke: ["rendlesham-1980", "calvine-1990"],
+  blumenthal: ["nimitz-2004"],
+};
+
+/** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
+export function casesForResearcher(researcherId: string): UAPCase[] {
+  const ids = RESEARCHER_CASES[researcherId] ?? [];
+  return ids
+    .map((id) => cases.find((c) => c.id === id))
+    .filter((c): c is UAPCase => Boolean(c));
+}
+
+/** Investigadores asociados a un caso (vía el mapa inverso). */
+export function researchersForCase(caseId: string): Researcher[] {
+  return researchers.filter((r) =>
+    (RESEARCHER_CASES[r.id] ?? []).includes(caseId),
+  );
+}
