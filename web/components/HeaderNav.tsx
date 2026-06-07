@@ -13,7 +13,7 @@ import { T } from "@/components/T";
 const NAV: Array<{ href: string; es: string; en: string }> = [
   { href: "/cases", es: "Casos", en: "Cases" },
   { href: "/atlas", es: "Atlas", en: "Atlas" },
-  { href: "/researchers", es: "Investigadores", en: "Researchers" },
+  { href: "/researchers", es: "Actores", en: "Actors" },
   { href: "/blog", es: "Blog", en: "Blog" },
   { href: "/about", es: "Metodología", en: "Method" },
 ];

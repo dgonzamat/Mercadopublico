@@ -191,8 +191,8 @@ export default function RootLayout({
                   <FooterLink href="/patterns" es="Patrones" en="Patterns" />
                   <FooterLink
                     href="/researchers"
-                    es="Investigadores"
-                    en="Researchers"
+                    es="Actores"
+                    en="Actors"
                   />
                   <FooterLink
                     href="/frameworks"
