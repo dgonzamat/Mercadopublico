@@ -788,6 +788,26 @@
     ]
   },
   {
+    "id": "puerta",
+    "name": "Germán Puerta Restrepo",
+    "flag": "🇨🇴",
+    "section": "A",
+    "section_label": "Astronomía y divulgación (Colombia)",
+    "section_label_en": "Astronomy and science outreach (Colombia)",
+    "credentials": "Astrónomo y divulgador científico · ex director del Planetario de Bogotá · autor de numerosos libros de astronomía",
+    "credentials_en": "Astronomer and science communicator · former director of the Bogotá Planetarium · author of numerous astronomy books",
+    "bio_short": "Economista de la Universidad de los Andes y astrónomo aficionado experto, divulgador científico colombiano. Fue director científico del Planetario de Bogotá durante años, creador del Festival de Astronomía de Villa de Leyva y autor de mapas del cielo y numerosos libros de astronomía (entre ellos 'Marte' y 'Los animales del cielo'); recibió el premio latinoamericano RedPop. Frente al fenómeno OVNI representa el contrapeso escéptico y científico de la casuística colombiana: recuerda que la gran mayoría de los avistamientos tiene explicaciones convencionales —aviones, drones, satélites, la Estación Espacial, fenómenos ópticos— y que la astronomía es el primer filtro para separar la anomalía real de la confusión.",
+    "bio_short_en": "Economist from the University of the Andes and an expert amateur astronomer, a Colombian science communicator. He was scientific director of the Bogotá Planetarium for years, creator of the Villa de Leyva Astronomy Festival and author of sky maps and numerous astronomy books (among them 'Marte' and 'Los animales del cielo'); he received the Latin American RedPop award. On the UFO phenomenon he represents the skeptical, scientific counterweight of Colombian casework: he recalls that the vast majority of sightings have conventional explanations —aircraft, drones, satellites, the Space Station, optical phenomena— and that astronomy is the first filter to separate real anomaly from confusion.",
+    "works": [
+      {"year": 1998, "title": "Dirección científica del Planetario de Bogotá", "contribution": "Divulgación astronómica y marco científico para evaluar avistamientos en Colombia", "contribution_en": "Astronomy outreach and a scientific framework to assess sightings in Colombia"},
+      {"year": 2010, "title": "Libros de astronomía y mapas del cielo", "contribution": "Obra de divulgación que provee el contexto astronómico de los 'avistamientos'", "contribution_en": "Outreach work providing the astronomical context for 'sightings'"}
+    ],
+    "sources": [
+      {"name": "Semana — 'Germán Puerta, el astrónomo que propone un planetario en cada ciudad'", "url": "https://www.semana.com/nacion/articulo/german-puerta-el-astronomo-que-propone-que-haya-un-planetario-en-cada-ciudad-del-pais/202234/"},
+      {"name": "Astropuerta — sitio de Germán Puerta Restrepo", "url": "https://www.astropuerta.com.co/"}
+    ]
+  },
+  {
     "id": "hourcade",
     "name": "Milton Hourcade",
     "flag": "🇺🇾",
