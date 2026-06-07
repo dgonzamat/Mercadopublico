@@ -49,6 +49,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   haines: ["lago-de-cote-1971"],
   powell: ["aguadilla-2013", "nimitz-2004"],
   rutkowski: ["shag-harbour-1967", "yukon-1996"],
+  chalker: ["westall-1966", "valentich-1978"],
 
   // A — teóricos anclados al caso que estudiaron
   nolan: ["council-bluffs-1977", "american-cosmic-2017"],

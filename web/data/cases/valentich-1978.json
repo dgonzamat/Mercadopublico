@@ -1,0 +1,57 @@
+{
+  "id": "valentich-1978",
+  "num": 106,
+  "name": "Desaparición de Frederick Valentich",
+  "name_en": "Disappearance of Frederick Valentich",
+  "year_start": 1978,
+  "country": "AU",
+  "country_name": "Australia",
+  "flag": "🇦🇺",
+  "location": {
+    "lat": -39.2,
+    "lng": 144.2,
+    "place": "Estrecho de Bass, Australia"
+  },
+  "tier": "B",
+  "probability": 20,
+  "summary": "El 21 de octubre de 1978, el piloto australiano Frederick Valentich, de 20 años, desapareció en un Cessna 182 sobre el estrecho de Bass, en ruta a la isla King. Minutos antes informó al control de Melbourne que una aeronave lo sobrevolaba a unos 300 m, con cuatro luces brillantes, que 'no es un avión' y que su motor fallaba; tras un ruido metálico, la comunicación se cortó. Nunca se hallaron ni él ni el avión. Es uno de los casos más célebres de Australia, aunque su única 'evidencia' es la transcripción de radio.",
+  "summary_en": "On 21 October 1978, the 20-year-old Australian pilot Frederick Valentich disappeared in a Cessna 182 over Bass Strait, en route to King Island. Minutes earlier he told Melbourne control that an aircraft was passing over him at about 300 m, with four bright lights, that 'it is not an aircraft' and that his engine was failing; after a metallic sound, the communication cut off. Neither he nor the plane was ever found. It is one of Australia's most famous cases, though its only 'evidence' is the radio transcript.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La tarde del 21 de octubre de 1978, Frederick Valentich, un piloto de 20 años con licencia de instrucción, despegó de Moorabbin (Melbourne) en un Cessna 182 con destino a la isla King, cruzando el estrecho de Bass. Hacia las 19:06, ya sobre el agua y de noche, comenzó a comunicarse con el control de tránsito aéreo de Melbourne: preguntó si había tráfico conocido a su altura, porque una gran aeronave con cuatro luces brillantes parecía sobrevolarlo a unos 300 metros. El control respondió que no había tráfico registrado en la zona.\n\nDurante los siguientes minutos, la transcripción registra una escalada: Valentich describió que el objeto se movía a gran velocidad, que pasaba y se posicionaba sobre él, que tenía una superficie metálica brillante y una luz verde; dijo que 'no es un avión' y que su motor empezaba a fallar y a ratear. Sus últimas palabras describen al objeto sobre él; luego se escuchó en la frecuencia un ruido metálico, raspante, de unos 17 segundos, y la comunicación se interrumpió. Valentich nunca llegó a King Island.\n\nLa búsqueda aérea y marítima fue infructuosa: no se hallaron restos concluyentes del avión ni del piloto. La investigación oficial australiana no pudo determinar la causa de la desaparición. Con los años se propusieron explicaciones convencionales —desorientación espacial y vuelo invertido (las 'luces' serían su propio reflejo o estrellas), una falla mecánica, incluso un fraude o un suicidio—, ninguna demostrada. El caso es famoso, pero su núcleo es una sola fuente: el relato por radio de un piloto joven, sin radar que corrobore el objeto ni traza física del desenlace.",
+  "whatHappened_en": "On the afternoon of 21 October 1978, Frederick Valentich, a 20-year-old pilot with a student license, took off from Moorabbin (Melbourne) in a Cessna 182 bound for King Island, crossing Bass Strait. Around 7:06 PM, already over the water and at night, he began communicating with Melbourne air traffic control: he asked whether there was known traffic at his altitude, because a large aircraft with four bright lights seemed to be passing over him at about 300 meters. Control replied that there was no traffic on record in the area.\n\nOver the next few minutes, the transcript records an escalation: Valentich described the object moving at high speed, passing and positioning itself over him, with a shiny metallic surface and a green light; he said 'it is not an aircraft' and that his engine was starting to fail and idle rough. His last words describe the object above him; then a metallic, scraping sound of about 17 seconds was heard on the frequency, and the communication cut off. Valentich never reached King Island.\n\nThe air and sea search was fruitless: no conclusive wreckage of the plane or the pilot was found. The official Australian investigation could not determine the cause of the disappearance. Over the years conventional explanations were proposed —spatial disorientation and inverted flight (the 'lights' being his own reflection or stars), a mechanical failure, even a hoax or suicide—, none proven. The case is famous, but its core is a single source: the radio account of a young pilot, with no radar to corroborate the object and no physical trace of the outcome.",
+  "whyMatters": "Valentich importa por su lugar en la cultura y por lo que enseña sobre los límites de la evidencia. Es uno de los pocos casos en que un avistamiento coincide con la desaparición real del testigo, lo que le dio una carga dramática enorme y lo volvió un ícono australiano. Pero, examinado en frío, su evidencia es endeble: todo descansa en la transcripción de radio de un piloto joven y solo, sin confirmación de radar del 'objeto' ni hallazgo del avión, y con explicaciones convencionales plausibles (desorientación nocturna sobre el mar) que nunca pudieron descartarse ni probarse. Entra como Tier B —caso testimonial célebre— con esa frontera explícita: la tragedia es real, el OVNI es, estrictamente, un relato. Sirve de contraste con los casos australianos con sensor.",
+  "whyMatters_en": "Valentich matters for its place in culture and for what it teaches about the limits of evidence. It is one of the few cases in which a sighting coincides with the witness's actual disappearance, which gave it enormous dramatic weight and made it an Australian icon. But, examined coldly, its evidence is weak: everything rests on the radio transcript of a young pilot flying alone, with no radar confirmation of the 'object' and no recovery of the plane, and with plausible conventional explanations (nighttime disorientation over the sea) that could never be ruled out or proven. It enters as Tier B —a famous testimonial case— with that explicit frontier: the tragedy is real, the UFO is, strictly, an account. It serves as a contrast with the sensor-backed Australian cases.",
+  "evidence": [
+    "Transcripción de radio piloto–control de Melbourne (21 oct 1978): objeto con cuatro luces que 'no es un avión'",
+    "Control confirma que no había tráfico conocido a su altura en la zona",
+    "Ruido metálico/raspante de ~17 s al final de la comunicación; pérdida de contacto",
+    "Búsqueda sin restos concluyentes; investigación oficial australiana no determinó la causa; sin radar del objeto"
+  ],
+  "evidence_en": [
+    "Radio transcript pilot–Melbourne control (21 Oct 1978): object with four lights that 'is not an aircraft'",
+    "Control confirms there was no known traffic at his altitude in the area",
+    "Metallic/scraping sound of ~17 s at the end of the communication; loss of contact",
+    "Search with no conclusive wreckage; official Australian investigation did not determine the cause; no radar of the object"
+  ],
+  "sources": [
+    {
+      "name": "Disappearance of Frederick Valentich — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Disappearance_of_Frederick_Valentich"
+    },
+    {
+      "name": "Department of Transport (Australia) — investigación del accidente VH-DSJ (1978)",
+      "note": "Investigación oficial; causa no determinada.",
+      "note_en": "Official investigation; cause undetermined."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Relato por radio de un piloto que describe un objeto que 'no es un avión' justo antes de desaparecer, con control de tránsito confirmando que no había tráfico conocido. Minimal porque es una fuente única, sin radar que corrobore el objeto ni traza física, y con explicaciones convencionales plausibles (desorientación espacial nocturna) que no pudieron descartarse.",
+      "rationaleEn": "Radio account of a pilot describing an object that 'is not an aircraft' just before disappearing, with air traffic control confirming there was no known traffic. Minimal because it is a single source, with no radar to corroborate the object and no physical trace, and with plausible conventional explanations (nighttime spatial disorientation) that could not be ruled out."
+    }
+  ]
+}

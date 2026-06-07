@@ -1,0 +1,56 @@
+{
+  "id": "hangzhou-2010",
+  "num": 104,
+  "name": "Aeropuerto de Hangzhou (cierre por OVNI)",
+  "name_en": "Hangzhou Airport (UFO shutdown)",
+  "year_start": 2010,
+  "country": "CN",
+  "country_name": "China",
+  "flag": "🇨🇳",
+  "location": {
+    "lat": 30.23,
+    "lng": 120.43,
+    "place": "Aeropuerto Internacional Xiaoshan, Hangzhou"
+  },
+  "tier": "B",
+  "probability": 24,
+  "summary": "La noche del 7 de julio de 2010, un objeto luminoso no identificado provocó el cierre del Aeropuerto Internacional Xiaoshan de Hangzhou durante alrededor de una hora; varios vuelos fueron desviados o demorados y miles de pasajeros quedaron afectados. El episodio se volvió uno de los avistamientos más reportados de la China moderna. Las autoridades investigaron y dejaron entrever un vínculo con actividad militar no divulgada; nunca hubo explicación pública concluyente, y las fotografías más difundidas son compatibles con un rastro de larga exposición de una aeronave.",
+  "summary_en": "On the night of 7 July 2010, an unidentified luminous object caused the closure of Hangzhou's Xiaoshan International Airport for about an hour; several flights were diverted or delayed and thousands of passengers were affected. The episode became one of the most reported sightings in modern China. Authorities investigated and hinted at a link to undisclosed military activity; there was never a conclusive public explanation, and the most widely circulated photographs are consistent with a long-exposure trail of an aircraft.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "Hacia las 21:00 del 7 de julio de 2010, el personal del Aeropuerto Internacional Xiaoshan de Hangzhou (provincia de Zhejiang) y la tripulación de un vuelo a punto de despegar reportaron un objeto luminoso no identificado en el cielo. Por precaución, las autoridades aeroportuarias suspendieron las operaciones: durante cerca de una hora el aeropuerto permaneció cerrado, con vuelos desviados a otras terminales y demoras que afectaron a miles de pasajeros. Para un país donde un cierre de aeropuerto es noticia mayor, el episodio tuvo enorme repercusión mediática, y se inscribió en una racha de avistamientos reportados en China ese verano.\n\nCircularon varias fotografías; la más célebre muestra un trazo luminoso curvado con una especie de cola, sobre la silueta nocturna de la ciudad. Las autoridades chinas dijeron haber identificado la causa, pero —como suele ocurrir en estos casos— el detalle se manejó con reserva: medios locales sugirieron un vínculo con actividad militar (un vuelo de prueba o material no divulgado), sin que se publicara una explicación oficial cerrada.\n\nConviene leer el caso por lo que es y por lo que no es. Lo sólido y verificable es institucional: el aeropuerto efectivamente cerró y hubo una respuesta operativa documentada. Lo anómalo —el 'objeto'— es mucho más débil: las imágenes más difundidas son perfectamente compatibles con la estela de larga exposición de una aeronave o un cohete, un artefacto fotográfico habitual de noche. El valor de Hangzhou para el corpus es ser el caso flagship de China —un país enorme y opaco en la materia— y, a la vez, un buen ejemplo de cómo un evento real (el cierre) y una evidencia frágil (la foto) se combinan en la percepción pública.",
+  "whatHappened_en": "Around 9:00 PM on 7 July 2010, staff at Hangzhou's Xiaoshan International Airport (Zhejiang province) and the crew of a flight about to take off reported an unidentified luminous object in the sky. As a precaution, airport authorities suspended operations: for nearly an hour the airport remained closed, with flights diverted to other terminals and delays affecting thousands of passengers. For a country where an airport closure is major news, the episode had enormous media impact, and it was part of a run of reported sightings in China that summer.\n\nSeveral photographs circulated; the most famous shows a curved luminous streak with a kind of tail, over the city's night skyline. Chinese authorities said they had identified the cause, but —as often happens in these cases— the detail was handled with reserve: local media suggested a link to military activity (a test flight or undisclosed materiel), without any closed official explanation being published.\n\nThe case should be read for what it is and is not. What is solid and verifiable is institutional: the airport did close and there was a documented operational response. The anomalous part —the 'object'— is much weaker: the most circulated images are perfectly consistent with the long-exposure trail of an aircraft or rocket, a common nighttime photographic artifact. Hangzhou's value for the corpus is being China's flagship case —a huge, opaque country on the matter— and, at the same time, a good example of how a real event (the closure) and fragile evidence (the photo) combine in public perception.",
+  "whyMatters": "Hangzhou importa por dos razones casi opuestas. Por un lado, es la puerta de entrada de China al corpus: el país más poblado del mundo, con un aparato estatal hermético, apenas deja casos verificables, y este —por la magnitud del cierre de aeropuerto y su cobertura— es el más sólido institucionalmente. Por el otro, es un recordatorio de disciplina: un evento operativo real (clausura, vuelos desviados) no convierte en anómala a la evidencia visual, que aquí es endeble y compatible con explicaciones prosaicas. Entra como Tier B precisamente por esa asimetría —respuesta institucional fuerte, objeto débil— y con la cautela explícita de que 'cerraron el aeropuerto' no equivale a 'había una nave'.",
+  "whyMatters_en": "Hangzhou matters for two almost opposite reasons. On one hand, it is China's gateway into the corpus: the world's most populous country, with an opaque state apparatus, yields few verifiable cases, and this one —by the magnitude of the airport closure and its coverage— is the most institutionally solid. On the other, it is a reminder of discipline: a real operational event (closure, diverted flights) does not make the visual evidence anomalous, which here is weak and consistent with prosaic explanations. It enters as Tier B precisely because of that asymmetry —strong institutional response, weak object— and with the explicit caution that 'they closed the airport' is not the same as 'there was a craft'.",
+  "evidence": [
+    "Cierre operativo del Aeropuerto Xiaoshan de Hangzhou por ~1 hora (7 jul 2010); vuelos desviados y miles de pasajeros afectados",
+    "Reportes de personal aeroportuario y de una tripulación a punto de despegar",
+    "Investigación de las autoridades; sugerencias de medios sobre actividad militar no divulgada, sin explicación oficial pública",
+    "Fotografías más difundidas compatibles con estela de larga exposición de una aeronave/cohete"
+  ],
+  "evidence_en": [
+    "Operational closure of Hangzhou's Xiaoshan Airport for ~1 hour (7 Jul 2010); diverted flights and thousands of passengers affected",
+    "Reports from airport staff and a crew about to take off",
+    "Investigation by the authorities; media suggestions of undisclosed military activity, with no public official explanation",
+    "Most circulated photographs consistent with a long-exposure trail of an aircraft/rocket"
+  ],
+  "sources": [
+    {
+      "name": "ABC News — 'UFO in China's Skies Prompts Investigation' (2010)",
+      "url": "https://abcnews.go.com/International/ufo-china-closes-airport-prompts-investigation/story?id=11159531"
+    },
+    {
+      "name": "UFO sightings in China — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_China"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "La evidencia visual más difundida del caso —un trazo luminoso con cola— es característica de una estela de larga exposición de una aeronave o cohete de noche, y las propias autoridades insinuaron un origen en actividad militar no divulgada. La respuesta institucional (cierre del aeropuerto) es real, pero el 'objeto' admite con holgura una lectura convencional.",
+      "rationaleEn": "The case's most circulated visual evidence —a luminous streak with a tail— is characteristic of a nighttime long-exposure trail of an aircraft or rocket, and the authorities themselves hinted at an origin in undisclosed military activity. The institutional response (airport closure) is real, but the 'object' comfortably admits a conventional reading."
+    }
+  ]
+}
