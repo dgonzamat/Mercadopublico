@@ -4,6 +4,7 @@ import { T } from "@/components/T";
 import { CategoryNav } from "@/components/CategoryNav";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { RegionFilter } from "@/components/RegionFilter";
+import { OfficialAgencies } from "@/components/OfficialAgencies";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
 
 export const metadata = {
@@ -164,6 +165,10 @@ export default function ResearchersPage() {
         );
       })}
       </RegionFilter>
+
+      <section id="agencias" className="scroll-mt-20 border-t border-border pt-8">
+        <OfficialAgencies />
+      </section>
     </div>
   );
 }
