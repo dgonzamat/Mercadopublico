@@ -20,12 +20,20 @@
   ],
   "category": "incident",
   "whatHappened": "El 11 de diciembre de 1996, entre las 19:00 y 22:00 hora local, al menos 22 testigos en cinco comunidades del Yukon Territory (Canadá) — Fox Lake, Carmacks, Pelly Crossing, Mayo, Stewart Crossing — observaron un objeto enorme en forma de disco o triángulo desplazándose lentamente sobre la Klondike Highway. La trayectoria geográfica fue reconstruida posteriormente: el objeto recorrió aproximadamente 300 km en tres horas, consistente con observación simultánea coordinada.\n\nLos testigos incluyen al Conductor Jim Stranack (camionero profesional), familias en automóvil, residentes en aldeas y empleados de la Royal Canadian Mounted Police (RCMP). Las descripciones convergen: tamaño 'football field-sized' (estadio de fútbol), iluminación blanca brillante en periferia, ausencia total de sonido, velocidad de aproximadamente 50 km/h.\n\nEl investigador civil Martin Jasek (geólogo) recopiló 22 testimonios independientes en 1996-2000 y publicó reconstrucción geométrica del evento. La RCMP confirmó la recepción de múltiples reportes pero no abrió investigación formal por ausencia de delito. Transport Canada confirmó que no había tráfico aéreo civil o militar conocido en la trayectoria durante esas horas. El caso es uno de los pocos objetos triangulares 'gigantes' con reconstrucción cartográfica precisa basada en testigos distribuidos geográficamente.",
+  "whatHappened_en": "On December 11, 1996, between 19:00 and 22:00 local time, at least 22 witnesses in five communities of Yukon Territory (Canada) — Fox Lake, Carmacks, Pelly Crossing, Mayo, Stewart Crossing — observed an enormous disc- or triangle-shaped object moving slowly over the Klondike Highway. The geographic trajectory was reconstructed afterward: the object traveled approximately 300 km in three hours, consistent with coordinated simultaneous observation.\n\nThe witnesses include the driver Jim Stranack (professional truck driver), families in cars, village residents, and employees of the Royal Canadian Mounted Police (RCMP). The descriptions converge: 'football field-sized', bright white lighting on the periphery, total absence of sound, speed of approximately 50 km/h.\n\nThe civilian researcher Martin Jasek (geologist) collected 22 independent testimonies in 1996-2000 and published a geometric reconstruction of the event. The RCMP confirmed receipt of multiple reports but did not open a formal investigation due to the absence of a crime. Transport Canada confirmed that there was no known civilian or military air traffic on the trajectory during those hours. The case is one of the few 'giant' triangular objects with a precise cartographic reconstruction based on geographically distributed witnesses.",
   "whyMatters": "Único caso global con reconstrucción cartográfica de trayectoria de 300 km basada en 22 testigos independientes en cinco comunidades, durante tres horas. La distribución geográfica + temporal hace improbable explicaciones de error perceptual coordinado. La ausencia confirmada de tráfico aéreo conocido por Transport Canada agrega un piso institucional al caso.",
+  "whyMatters_en": "The only global case with a cartographic reconstruction of a 300 km trajectory based on 22 independent witnesses in five communities, over three hours. The geographic + temporal distribution makes explanations of coordinated perceptual error improbable. The confirmed absence of known air traffic per Transport Canada adds an institutional floor to the case.",
   "evidence": [
     "22 testimonios independientes recopilados por Jasek (1996-2000)",
     "Reconstrucción geométrica de trayectoria 300 km en 3 horas",
     "Confirmación RCMP de recepción de reportes",
     "Confirmación Transport Canada de ausencia de tráfico aéreo conocido"
+  ],
+  "evidence_en": [
+    "22 independent testimonies collected by Jasek (1996-2000)",
+    "Geometric reconstruction of a 300 km trajectory in 3 hours",
+    "RCMP confirmation of receipt of reports",
+    "Transport Canada confirmation of absence of known air traffic"
   ],
   "sources": [
     {
