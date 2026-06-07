@@ -120,6 +120,7 @@ export default function ResearchersPage() {
                     <div className="min-w-0 flex-1">
                       <div className="flex items-baseline justify-between gap-2">
                         <h3 className="text-base font-medium text-text">
+                          <span aria-hidden className="mr-1.5">{r.flag}</span>
                           {r.name}
                         </h3>
                         <span className="font-mono text-xs text-muted">

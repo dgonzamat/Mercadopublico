@@ -39,6 +39,9 @@ const isNum = (v) => typeof v === "number" && Number.isFinite(v);
 const isArr = (v) => Array.isArray(v);
 // URL http(s) válida, o ruta absoluta bajo /public (para fotos locales).
 const isHttpUrl = (v) => typeof v === "string" && /^https?:\/\/\S+$/.test(v);
+// Bandera: dos símbolos indicadores regionales (emoji de país, p. ej. 🇦🇷).
+const isFlag = (v) =>
+  typeof v === "string" && /^[\u{1F1E6}-\u{1F1FF}]{2}$/u.test(v);
 const isPhotoRef = (v) => isHttpUrl(v) || (typeof v === "string" && v.startsWith("/"));
 
 // ─── 1. Conjuntos de referencia ──────────────────────────────────────────
@@ -59,6 +62,9 @@ researchers.forEach((r, i) => {
   else seenResearcherIds.add(r.id);
 
   if (!isStr(r.name)) err(w, "name obligatorio (string)");
+  if (!isStr(r.flag)) err(w, "flag obligatorio (bandera de nacionalidad)");
+  else if (!isFlag(r.flag))
+    err(w, `flag debe ser un emoji de bandera de país (indicadores regionales): "${r.flag}"`);
   if (r.born !== undefined && !isNum(r.born)) err(w, "born debe ser number");
   if (r.death !== undefined && !isNum(r.death)) err(w, "death debe ser number");
   if (!SECTIONS.has(r.section)) err(w, `section inválida "${r.section}" (A–E)`);
