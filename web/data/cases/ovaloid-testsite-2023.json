@@ -1,0 +1,84 @@
+{
+  "id": "ovaloid-testsite-2023",
+  "num": 108,
+  "name": "Sitio de prueba LiDAR — objeto ovaloide (PURSUE, 2023)",
+  "name_en": "LiDAR Test Site — Ovaloid Object (PURSUE, 2023)",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.5,
+    "lng": -98.35,
+    "place": "Sitio de prueba militar — ubicación clasificada (EE.UU.)"
+  },
+  "tier": "A",
+  "epistemicStatus": "developing",
+  "probability": 63,
+  "summary": "Septiembre 2023, sitio de prueba militar de EE.UU. con espacio aéreo cerrado por ensayos LiDAR: una contratista con 15 años en instalaciones militares —que ella misma cerró el espacio aéreo ese día—, un piloto de drones y otros testigos observan un objeto ovaloide metálico color bronce (~40–60 m) que se materializa desde una luz brillante y desaparece al instante. Gráfico renderizado por el FBI y boceto compuesto; ubicación oficialmente redactada. Divulgado en el release oficial PURSUE (war.gov/ufo, may 2026).",
+  "summary_en": "September 2023, a U.S. military test site with airspace closed for LiDAR trials: a contractor with 15 years on military installations —who personally closed the airspace that day—, a drone pilot and other witnesses observe a bronze metallic ovaloid object (~40–60 m) that materializes from a bright light and vanishes instantly. FBI-rendered graphic and composite sketch; location officially redacted. Disclosed in the official PURSUE release (war.gov/ufo, May 2026).",
+  "patterns": [
+    "8h",
+    "8n"
+  ],
+  "category": "incident",
+  "whatHappened": "En septiembre de 2023, un equipo trabajaba con tecnología LiDAR (Light Detection and Ranging) dentro de un sitio de prueba militar de EE.UU. cuyo espacio aéreo había sido cerrado para los ensayos. La testigo principal —una contratista con 15 años de experiencia en instalaciones militares, que ese día fue la persona encargada de cerrar el espacio aéreo del área— relató haber visto un objeto con forma de cigarro/ovaloide y una luz extremadamente brillante hacia el suroeste, aproximadamente entre 500 y 3000 pies sobre la línea de árboles más cercana. La observación duró de cinco a diez segundos antes de que el objeto desapareciera.\n\nUn gráfico renderizado por el laboratorio del FBI a partir de los testimonios describe el objeto como un elipsoide metálico color bronce de entre 130 y 195 pies de longitud (aprox. 40–60 m), que se materializó desde una luz brillante en el cielo y desapareció de forma instantánea. El avistamiento fue corroborado por un piloto de drones que operaba cerca de la misma instalación y por otros testigos —cuyos nombres aparecen redactados— que conducían hacia el sitio ese día. El boceto compuesto y el gráfico del FBI figuran entre los materiales liberados.\n\nEl caso fue divulgado en la primera entrega del sistema PURSUE (Presidential Unsealing and Reporting System for UAP Encounters), publicada en war.gov/ufo el 8 de mayo de 2026. La ubicación exacta —estado y nombre del rango— permanece oficialmente redactada: solo se identifica como un sitio de prueba militar cerrado. Ese contexto es analíticamente relevante en ambos sentidos: un rango de pruebas con espacio aéreo restringido descarta el tráfico civil casual, pero es también el lugar donde se ensayan plataformas clasificadas no reconocidas.",
+  "whatHappened_en": "In September 2023, a team was working with LiDAR (Light Detection and Ranging) technology inside a U.S. military test site whose airspace had been closed for the trials. The primary witness —a contractor with 15 years of experience on military installations, who that day was the person responsible for closing the area's airspace— reported seeing a cigar/ovaloid-shaped object with an extremely bright light to the southwest, roughly 500 to 3000 feet above the nearest treeline. The observation lasted five to ten seconds before the object vanished.\n\nA graphic rendered by the FBI lab from the testimony describes the object as a bronze metallic ellipsoid between 130 and 195 feet long (approx. 40–60 m), which materialized out of a bright light in the sky and disappeared instantaneously. The sighting was corroborated by a drone pilot operating near the same facility and by other witnesses —whose names are redacted— who were driving toward the site that day. The composite sketch and the FBI graphic are among the released materials.\n\nThe case was disclosed in the first tranche of the PURSUE system (Presidential Unsealing and Reporting System for UAP Encounters), published at war.gov/ufo on May 8, 2026. The exact location —state and range name— remains officially redacted: it is identified only as a closed military test site. That context is analytically relevant both ways: a test range with restricted airspace rules out casual civilian traffic, but it is also exactly where unacknowledged classified platforms are tested.",
+  "whyMatters": "Es uno de los primeros avistamientos individuales —no documentos de política— liberados por el canal oficial PURSUE con corroboración multi-testigo y respaldo del FBI. La credibilidad de la testigo (15 años en instalaciones militares, responsable del cierre del espacio aéreo) y la corroboración independiente (piloto de drones + conductores) lo separan de un reporte aislado. Su valor evidencial está limitado por la falta de sensor duro (la observación es testimonial, no hay foto/video confirmado), la duración breve y la ubicación redactada — pero la combinación de testigo entrenado, espacio aéreo militar restringido y provenance oficial lo coloca en el rango Tier A.",
+  "whyMatters_en": "It is one of the first individual sightings —not policy documents— released through the official PURSUE channel with multi-witness corroboration and FBI backing. The witness's credibility (15 years on military installations, responsible for closing the airspace) and the independent corroboration (drone pilot + drivers) set it apart from an isolated report. Its evidential value is limited by the lack of hard sensor data (the observation is testimonial, with no confirmed photo/video), the short duration and the redacted location — but the combination of a trained witness, restricted military airspace and official provenance places it in the Tier A range.",
+  "evidence": [
+    "Testigo de alta credibilidad: contratista con 15 años en instalaciones militares de EE.UU., encargada de cerrar el espacio aéreo del sitio ese día.",
+    "Corroboración multi-testigo independiente: piloto de drones operando cerca de la instalación + testigos adicionales (redactados) conduciendo hacia el sitio.",
+    "Gráfico renderizado por el laboratorio del FBI: objeto elipsoide metálico color bronce, 130–195 pies (~40–60 m).",
+    "Boceto compuesto del objeto sobre la línea de árboles, con una luz brillante en un extremo.",
+    "Espacio aéreo cerrado por ensayos (descarta tráfico civil casual); divulgado en el release oficial PURSUE, war.gov/ufo, Release 1 (8 may 2026)."
+  ],
+  "evidence_en": [
+    "High-credibility witness: contractor with 15 years on U.S. military installations, responsible for closing the site's airspace that day.",
+    "Independent multi-witness corroboration: a drone pilot operating near the facility + additional (redacted) witnesses driving toward the site.",
+    "FBI-lab rendered graphic: bronze metallic ellipsoid object, 130–195 feet (~40–60 m).",
+    "Composite sketch of the object above the treeline, with a bright light at one end.",
+    "Airspace closed for trials (rules out casual civilian traffic); disclosed in the official PURSUE release, war.gov/ufo, Release 1 (May 8, 2026)."
+  ],
+  "sources": [
+    {
+      "name": "PURSUE — Presidential Unsealing and Reporting System for UAP Encounters (portal oficial)",
+      "url": "https://www.war.gov/ufo/"
+    },
+    {
+      "name": "DefenseScoop — 'Data alone is not disclosure': UAP research community reacts to Trump's first PURSUE file drop (14 may 2026)",
+      "url": "https://defensescoop.com/2026/05/14/uap-trump-first-pursue-ufo-file-drop/"
+    },
+    {
+      "name": "Live Science — US government declassifies nearly 200 UAP files, including strange sightings (8 may 2026)",
+      "url": "https://www.livescience.com/space/extraterrestrial-life/us-government-declassifies-nearly-200-uap-files-including-strange-sightings-from-apollo-astronauts"
+    },
+    {
+      "name": "Flying Magazine — Unpacking the Pentagon's Latest UAP Release (2026)",
+      "url": "https://www.flyingmag.com/unpacking-pentagon-latest-uap-release/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El evento ocurre dentro de un sitio de prueba militar con espacio aéreo cerrado: precisamente el contexto donde se ensayan plataformas clasificadas no reconocidas. El prior de que un objeto anómalo sobre un rango de pruebas sea un sistema propio es alto. Modest porque el comportamiento descrito (materialización desde una luz, desaparición instantánea, sin firma acústica reportada) excede el envelope de los drones conocidos, y la ubicación e identidad permanecen redactadas.",
+      "rationaleEn": "The event occurs inside a military test site with closed airspace: exactly the context where unacknowledged classified platforms are tested. The prior that an anomalous object over a test range is a domestic system is high. Modest because the described behavior (materializing from a light, instantaneous disappearance, no reported acoustic signature) exceeds the envelope of known drones, and the location and identity remain redacted."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Materialización desde una luz y desaparición instantánea, junto al tamaño estimado (40–60 m) y la ausencia de propulsión visible, son inconsistentes con aeronaves convencionales. Minimal porque la evidencia es testimonial (sin sensor duro ni video confirmado), la duración fue de 5–10 s y la percepción de 'materialización' admite explicaciones perceptuales.",
+      "rationaleEn": "Materialization from a light and instantaneous disappearance, together with the estimated size (40–60 m) and the absence of visible propulsion, are inconsistent with conventional aircraft. Minimal because the evidence is testimonial (no hard sensor or confirmed video), the duration was 5–10 s, and the 'materialization' perception admits perceptual explanations."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Un objeto metálico definido, color bronce, con forma elipsoide y borde neto no encaja con plasma atmosférico, ball lightning ni sprites; los testigos eran observadores entrenados en un rango controlado. Weakens minimal porque la lectura de fenómeno natural es poco compatible con la morfología metálica descrita.",
+      "rationaleEn": "A defined bronze-colored metallic object with an ellipsoid shape and a clean edge does not fit atmospheric plasma, ball lightning or sprites; the witnesses were trained observers on a controlled range. Weakens minimal because the natural-phenomenon reading is poorly compatible with the described metallic morphology."
+    }
+  ]
+}
