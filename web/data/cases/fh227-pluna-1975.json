@@ -1,0 +1,56 @@
+{
+  "id": "fh227-pluna-1975",
+  "num": 100,
+  "name": "FH-227 PLUNA · luz que escoltó al avión",
+  "name_en": "FH-227 PLUNA · light that escorted the plane",
+  "year_start": 1975,
+  "country": "UY",
+  "country_name": "Uruguay",
+  "flag": "🇺🇾",
+  "location": {
+    "lat": -30.4,
+    "lng": -56.5,
+    "place": "Norte de Uruguay (ruta Asunción–Montevideo, hacia Artigas)"
+  },
+  "tier": "A",
+  "probability": 55,
+  "summary": "El 25 de septiembre de 1975, a las 19:30, un avión FH-227 de la Fuerza Aérea Uruguaya al servicio de PLUNA volaba de Asunción a Montevideo a 14.000 pies. Tras sobrevolar Monte Caseros, el piloto vio una luz amarillo-blanca muy brillante que ascendió hasta su altitud y lo acompañó a 3–5 millas. Al encender la luz de aterrizaje, el objeto se aproximó; al apagarla, se alejó —y en ese acercamiento se sintió un fuerte olor a cable quemado en cabina, sin que se hallara falla eléctrica—. Las fotografías fueron analizadas por la CRIDOVNI. Es uno de los casos de aviación más citados de Uruguay.",
+  "summary_en": "On 25 September 1975, at 7:30 PM, a Uruguayan Air Force FH-227 on PLUNA service was flying from Asunción to Montevideo at 14,000 feet. After overflying Monte Caseros, the pilot saw a very bright yellowish-white light that rose to his altitude and accompanied him at 3–5 miles. When he turned on the landing light, the object approached; when he turned it off, it withdrew —and during that approach a strong smell of burnt cable was felt in the cabin, with no electrical fault found—. The photographs were analyzed by CRIDOVNI. It is one of Uruguay's most cited aviation cases.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 25 de septiembre de 1975, a las 19:30, un avión FH-227 de la Fuerza Aérea Uruguaya, en servicio para la aerolínea PLUNA, cubría la ruta entre Asunción del Paraguay y Montevideo. Volaba a 14.000 pies (unos 4.300 m) y a una velocidad de crucero de 250 nudos (450 km/h). Ya entrada la noche, después de sobrevolar Monte Caseros, el piloto advirtió a su izquierda y por debajo, en dirección a Artigas y cerca de la tierra, una luz amarillenta —casi blanca— muy brillante.\n\nLa luz comenzó a ascender y, unos cinco minutos después, se ubicó a la misma altura del avión, a una distancia de entre 3 y 5 millas, acompañando su movimiento uniforme. Para comprobar si el objeto reaccionaba, el piloto encendió la luz izquierda de aterrizaje: de inmediato la luz se aproximó de manera significativa, y esa aproximación cesó cuando el piloto la apagó. Durante el breve acercamiento, la tripulación percibió en cabina un fuerte olor a cable quemado, como de una conexión eléctrica; sin embargo, las comprobaciones posteriores descartaron cualquier desperfecto.\n\nDel episodio quedaron fotografías, que fueron remitidas a la CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de Objetos Voladores no Identificados) de la Fuerza Aérea Uruguaya para su análisis. El caso —pre-CRIDOVNI por unos años, ya que la comisión se formalizó en 1979— es uno de los avistamientos de aviación más citados del país y del tipo que motivó la creación de una ventanilla oficial: testigo calificado, comportamiento interactivo y un registro fotográfico que el Estado se tomó el trabajo de estudiar.",
+  "whatHappened_en": "On 25 September 1975, at 7:30 PM, a Uruguayan Air Force FH-227, on service for the airline PLUNA, was covering the route between Asunción, Paraguay and Montevideo. It was flying at 14,000 feet (about 4,300 m) and a cruise speed of 250 knots (450 km/h). Well into the night, after overflying Monte Caseros, the pilot noticed to his left and below, toward Artigas and near the ground, a yellowish —almost white— very bright light.\n\nThe light began to ascend and, about five minutes later, positioned itself at the aircraft's altitude, 3 to 5 miles away, accompanying its uniform movement. To check whether the object reacted, the pilot turned on the left landing light: the light immediately approached significantly, and that approach ceased when the pilot turned it off. During the brief approach, the crew perceived a strong smell of burnt cable in the cabin, as if from an electrical connection; however, subsequent checks ruled out any fault.\n\nThe episode left photographs, which were sent to CRIDOVNI (Commission for Receiving and Investigating Reports of Unidentified Flying Objects) of the Uruguayan Air Force for analysis. The case —pre-CRIDOVNI by a few years, since the commission was formalized in 1979— is one of the country's most cited aviation sightings, and of the kind that motivated the creation of an official window: a qualified witness, interactive behavior and a photographic record that the state took the trouble to study.",
+  "whyMatters": "El caso del FH-227 es el avistamiento-evento que le faltaba a Uruguay en el corpus, y uno de los más sólidos de su casuística: piloto profesional, larga duración, fotografías y —lo más interesante— comportamiento aparentemente interactivo (la luz se acercaba al encender el faro de aterrizaje y se alejaba al apagarlo), acompañado de un efecto físico en cabina (olor a quemado sin falla eléctrica). Nada de eso prueba un origen exótico —una luz que parece reaccionar puede ser coincidencia, y los olores tienen muchas causas—, pero el conjunto es exactamente el tipo de reporte que un Estado decidió no descartar de oficio: fue de los que empujaron a la Fuerza Aérea a crear la CRIDOVNI cuatro años después. Junto a la comisión y a sus investigadores, completa la pieza uruguaya del corpus.",
+  "whyMatters_en": "The FH-227 case is the sighting-event Uruguay was missing in the corpus, and one of the strongest in its casework: a professional pilot, long duration, photographs and —most interesting— apparently interactive behavior (the light approached when the landing light was turned on and withdrew when turned off), accompanied by a physical effect in the cabin (a burnt smell with no electrical fault). None of that proves an exotic origin —a light that seems to react can be coincidence, and smells have many causes—, but the whole is exactly the kind of report a state decided not to dismiss out of hand: it was among those that pushed the Air Force to create CRIDOVNI four years later. Alongside the commission and its researchers, it completes Uruguay's piece of the corpus.",
+  "evidence": [
+    "Avistamiento de un piloto de la FAU (FH-227, servicio PLUNA) el 25 sep 1975, 19:30, a 14.000 pies",
+    "Luz brillante que ascendió hasta la altitud del avión y lo acompañó por minutos a 3–5 millas",
+    "Comportamiento interactivo: se aproximó al encender la luz de aterrizaje y se alejó al apagarla",
+    "Olor a cable quemado en cabina durante el acercamiento, sin falla eléctrica detectada; fotografías analizadas por la CRIDOVNI"
+  ],
+  "evidence_en": [
+    "Sighting by a FAU pilot (FH-227, PLUNA service) on 25 Sep 1975, 7:30 PM, at 14,000 feet",
+    "Bright light that rose to the aircraft's altitude and accompanied it for minutes at 3–5 miles",
+    "Interactive behavior: it approached when the landing light was turned on and withdrew when turned off",
+    "Smell of burnt cable in the cabin during the approach, with no electrical fault found; photographs analyzed by CRIDOVNI"
+  ],
+  "sources": [
+    {
+      "name": "Fuerza Aérea Uruguaya — CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de OVNI)",
+      "url": "https://www.fau.mil.uy/es/articulos/182-comision-receptora-e-investigadora-de-denuncias-de-objetos-voladores-no-identificados-cridovni.html"
+    },
+    {
+      "name": "Punta del Este Internacional — 'Las fotografías tomadas del OVNI serán analizadas por CRIDOVNI'",
+      "url": "https://puntadelesteinternacional.com/las-fotografias-tomadas-del-ovni-seran-analizadas-por-c-r-i-d-o-v-n-i"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Avistamiento de piloto profesional con larga duración, registro fotográfico, comportamiento aparentemente interactivo (respuesta a la luz de aterrizaje) y un efecto físico reportado en cabina. Modest porque cada elemento admite lecturas convencionales —coincidencia en la 'reacción', causas mundanas del olor— y no hubo confirmación por radar ni recuperación; el conjunto sostiene la anomalía sin probar su naturaleza.",
+      "rationaleEn": "Professional pilot sighting with long duration, photographic record, apparently interactive behavior (response to the landing light) and a reported physical effect in the cabin. Modest because each element admits conventional readings —coincidence in the 'reaction', mundane causes for the smell— and there was no radar confirmation or recovery; the whole sustains the anomaly without proving its nature."
+    }
+  ]
+}
