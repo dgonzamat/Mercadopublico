@@ -610,6 +610,26 @@
     "sources": [{"name": "Proyecto FOTOCAT · Fundación Anomalía", "url": "https://fotocat.blogspot.com/", "note": "Mayor catálogo mundial de casos con evidencia fotográfica/fílmica.", "note_en": "Largest worldwide catalogue of cases with photographic/film evidence."}]
   },
   {
+    "id": "fuenzalida",
+    "name": "Rodrigo Fuenzalida",
+    "born": 1963,
+    "section": "A",
+    "section_label": "Ufología de campo (Chile)",
+    "section_label_en": "Field ufology (Chile)",
+    "credentials": "Sociólogo y ufólogo chileno · fundador y director de AION · referente de la ufología latinoamericana",
+    "credentials_en": "Chilean sociologist and ufologist · founder and director of AION · a reference for Latin American ufology",
+    "bio_short": "Sociólogo y ufólogo chileno (n. 1963), fundador y director de AION (Agrupación de Investigaciones Ovniológicas de Chile). Desde los años 90 es una de las figuras centrales de la ufología chilena, con un enfoque deliberadamente riguroso y alejado del sensacionalismo: AION reúne un equipo multidisciplinario —con psicólogos y psiquiatras— para evaluar la credibilidad de los testigos. Formado además en hipnoterapia y orador internacional, ha contribuido a posicionar a Chile como un referente de la ufología latinoamericana, divulgando y analizando casos clásicos del país como el del cabo Armando Valdés (1977).",
+    "bio_short_en": "Chilean sociologist and ufologist (b. 1963), founder and director of AION (Agrupación de Investigaciones Ovniológicas de Chile). Since the 1990s he has been one of the central figures of Chilean ufology, with a deliberately rigorous, non-sensationalist approach: AION brings together a multidisciplinary team —including psychologists and psychiatrists— to assess witnesses' credibility. Also trained in hypnotherapy and an international speaker, he has helped position Chile as a reference for Latin American ufology, publicizing and analyzing the country's classic cases such as that of Corporal Armando Valdés (1977).",
+    "works": [
+      {"year": 1997, "title": "AION (Agrupación de Investigaciones Ovniológicas de Chile)", "contribution": "Fundó y dirige la principal agrupación civil de investigación OVNI del país, con metodología multidisciplinaria", "contribution_en": "Founded and directs the country's main civilian UFO research group, with a multidisciplinary methodology"},
+      {"year": 2021, "title": "ICER (International Coalition for Extraterrestrial Research)", "contribution": "Representa a Chile en la red internacional ICER de investigación del fenómeno", "contribution_en": "Represents Chile in the international ICER network for phenomenon research"}
+    ],
+    "sources": [
+      {"name": "AION — Agrupación de Investigaciones Ovniológicas de Chile", "url": "https://www.aion.cl/"},
+      {"name": "ICER — Rodrigo Fuenzalida (Chile)", "url": "https://icer.network/2021/10/22/rodrigo-fuenzalida-chile/"}
+    ]
+  },
+  {
     "id": "santa-maria",
     "name": "Óscar Santa María Huertas",
     "born": 1957,
