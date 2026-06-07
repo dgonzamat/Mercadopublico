@@ -6,7 +6,7 @@ import { T } from "@/components/T";
 const WorldMap = dynamic(() => import("@/components/WorldMap"), {
   ssr: false,
   loading: () => (
-    <div className="flex h-[600px] items-center justify-center rounded-lg border border-border bg-panel text-muted">
+    <div className="flex h-[60vh] min-h-[360px] items-center justify-center rounded-lg border border-border bg-panel text-muted md:h-[600px]">
       <T es="Cargando mapa…" en="Loading map…" />
     </div>
   ),
