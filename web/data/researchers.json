@@ -430,7 +430,10 @@
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-FL) + Chair Task Force on Declassification of Federal Secrets",
     "bio_short": "Encabeza el grupo de trabajo bipartidista del Congreso para desclasificar secretos federales, con poder de citación para forzar la apertura de información. Junto a Tim Burchett lidera la presión legislativa que impulsó la desclasificación PURSUE de 2026, tras las audiencias de noviembre de 2024 con Grusch y otros testigos.",
-    "works": [],
+    "works": [
+      {"year": 2023, "title": "Audiencia de Supervisión sobre UAP (julio 2023)", "contribution": "Co-impulsora de la primera audiencia con testigos bajo juramento", "contribution_en": "Co-driver of the first hearing with witnesses under oath"},
+      {"year": 2024, "title": "Task Force on the Declassification of Federal Secrets", "contribution": "Preside el grupo que retomó las audiencias UAP (noviembre 2024)", "contribution_en": "Chairs the task force that resumed UAP hearings (November 2024)"}
+    ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Paulina%20Luna.jpg?width=400",
     "photo_credit": "U.S. House of Representatives",
     "photo_license": "Public domain",
@@ -447,7 +450,10 @@
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-TN) + House Oversight Committee",
     "bio_short": "Codirige con Anna Paulina Luna el grupo de trabajo del Congreso para la desclasificación. De estilo público confrontativo frente al bloqueo del Pentágono, resume su postura en una frase recurrente: los objetos 'vuelan sin ningún respeto por las leyes de la física'. Es el complemento de Luna en la presión bipartidista sobre la comunidad de inteligencia.",
-    "works": [],
+    "works": [
+      {"year": 2023, "title": "Audiencia de Supervisión sobre UAP (julio 2023)", "contribution": "Impulsó la audiencia del Congreso con Grusch, Graves y Fravor", "contribution_en": "Drove the July 2023 congressional hearing with Grusch, Graves and Fravor"},
+      {"year": 2023, "title": "Grupo de trabajo bipartidista de desclasificación", "contribution": "Co-liderazgo con Anna Paulina Luna en la presión sobre el Pentágono", "contribution_en": "Co-leadership with Anna Paulina Luna pressing the Pentagon"}
+    ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rep.%20Tim%20Burchett%20official%20photo%2C%20116th%20congress%20%28cropped%29.jpg?width=400",
     "photo_credit": "U.S. House of Representatives",
     "photo_license": "Public domain",
@@ -464,7 +470,10 @@
     "section_label": "Actores políticos formales",
     "credentials": "US Representative (R-MO) + House Oversight Committee",
     "bio_short": "Representante por el 7º distrito de Misuri desde 2023 e integrante del subcomité de Supervisión de la Cámara que celebró la audiencia UAP de julio de 2023 con Grusch, Graves y Fravor. Sostiene que el gobierno federal 'bloquea activamente' la información sobre el fenómeno e insiste en que los pilotos deben poder reportar sin temor a represalias. Empuja, en clave bipartidista, por un comité permanente del Congreso dedicado a los UAP.",
-    "works": [],
+    "works": [
+      {"year": 2023, "title": "Audiencia de Supervisión sobre UAP (julio 2023)", "contribution": "Interrogó a los testigos como miembro del subcomité de Seguridad Nacional", "contribution_en": "Questioned the witnesses as a member of the National Security subcommittee"},
+      {"year": 2024, "title": "Audiencia 'Exposing the Truth' (noviembre 2024)", "contribution": "Presentó el video del dron MQ-9 frente a Yemen (octubre 2024)", "contribution_en": "Presented the MQ-9 drone video off Yemen (October 2024)"}
+    ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rep.%20Eric%20Burlison%20-%20118th%20Congress%20%28cropped%29.jpg?width=400",
     "photo_credit": "U.S. House of Representatives",
     "photo_license": "Public domain",
