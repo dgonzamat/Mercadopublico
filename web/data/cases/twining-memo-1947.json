@@ -36,12 +36,20 @@
     }
   ],
   "whatHappened": "El 23 de septiembre de 1947, el Teniente General Nathan F. Twining, entonces Comandante del Air Materiel Command (Wright Field), envió un memorándum clasificado SECRET al Brigadier General George Schulgen, Jefe de Aviación de la División de Inteligencia del Estado Mayor del Aire. El documento responde formalmente a la consulta de Schulgen sobre la naturaleza de los 'flying discs' reportados masivamente durante el verano de 1947.\n\nTwining concluyó textualmente: 'It is the opinion that: (a) The phenomenon reported is something real and not visionary or fictitious.' El memorándum enumera las características reportadas del fenómeno (forma de disco, performance evasivo, velocidad subsónica a supersónica, ascensos verticales) y recomienda la creación de un proyecto formal de investigación. Esta recomendación cristalizó en Project Sign (diciembre 1947), antecesor directo de Project Grudge y Project Blue Book.\n\nEl memo Twining fue desclasificado en 1969 y ratificado como auténtico por la USAF en el contexto del cierre administrativo de Blue Book ese mismo año.",
+  "whatHappened_en": "On September 23, 1947, Lieutenant General Nathan F. Twining, then Commander of the Air Materiel Command (Wright Field), sent a SECRET-classified memorandum to Brigadier General George Schulgen, Chief of the Aviation Division of the Air Staff Intelligence Division. The document formally responds to Schulgen's inquiry about the nature of the 'flying discs' reported en masse during the summer of 1947.\n\nTwining concluded verbatim: 'It is the opinion that: (a) The phenomenon reported is something real and not visionary or fictitious.' The memorandum lists the reported characteristics of the phenomenon (disc shape, evasive performance, subsonic to supersonic speed, vertical ascents) and recommends the creation of a formal research project. This recommendation crystallized into Project Sign (December 1947), direct predecessor of Project Grudge and Project Blue Book.\n\nThe Twining memo was declassified in 1969 and ratified as authentic by the USAF in the context of the administrative closure of Blue Book that same year.",
   "whyMatters": "Es la primera afirmación institucional documentada por un comandante de cuatro estrellas de la USAF de que el fenómeno UFO/UAP es 'algo real, no visionario o ficticio'. Establece el piso histórico para todo el debate institucional posterior: ninguna postura oficial posterior puede honestamente decir que el fenómeno fue descartado desde el inicio — el primer juicio profesional sobre la evidencia fue precisamente lo opuesto.",
+  "whyMatters_en": "It is the first documented institutional affirmation by a four-star USAF commander that the UFO/UAP phenomenon is 'something real, not visionary or fictitious.' It establishes the historical floor for all subsequent institutional debate: no later official position can honestly say the phenomenon was dismissed from the outset — the first professional judgment on the evidence was precisely the opposite.",
   "evidence": [
     "Memorándum original clasificado SECRET firmado por Twining (23 septiembre 1947)",
     "Conclusión textual: 'The phenomenon reported is something real'",
     "Recomendación formal de crear Project Sign — implementada tres meses después",
     "Desclasificación 1969 sin modificaciones al texto operativo"
+  ],
+  "evidence_en": [
+    "Original SECRET-classified memorandum signed by Twining (September 23, 1947)",
+    "Verbatim conclusion: 'The phenomenon reported is something real'",
+    "Formal recommendation to create Project Sign — implemented three months later",
+    "1969 declassification with no modifications to the operative text"
   ],
   "sources": [
     {
