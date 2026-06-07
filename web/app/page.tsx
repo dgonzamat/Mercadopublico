@@ -96,7 +96,68 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────── 2 · TESIS (sube del beat 3 al 2 — NYT lead pattern) ────────── */}
+      {/* ────────── 2 · EL ALCANCE (big numbers + CTA) ────────── */}
+      <section className="border-y-2 border-text/15 py-16 md:py-24">
+        <div className="space-y-4">
+          <Eyebrow>
+            <T es="El alcance" en="The scope" />
+          </Eyebrow>
+          <h2 className="max-w-3xl font-display text-2xl font-medium leading-snug text-text md:text-3xl">
+            <T
+              es="No es teoría — es una colección documentada de evidencia."
+              en="It's not theory — it's a documented evidence collection."
+            />
+          </h2>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+          <BigStat
+            number={STATS.cases}
+            es={{
+              label: "Casos institucionales",
+              sub: "Sobrevivieron filtros militares, congresionales y periodísticos",
+            }}
+            en={{
+              label: "Institutional cases",
+              sub: "Survived military, congressional, and journalistic filters",
+            }}
+          />
+          <BigStat
+            number={STATS.years}
+            es={{
+              label: "Años de fenómeno",
+              sub: "Más tiempo del que duró toda la Guerra Fría (1947–1991)",
+            }}
+            en={{
+              label: "Years of phenomenon",
+              sub: "Longer than the entire Cold War (1947–1991)",
+            }}
+          />
+          <BigStat
+            number={STATS.countries}
+            es={{
+              label: "Países con registros",
+              sub: "Cada continente menos Antártida — no es fenómeno gringo",
+            }}
+            en={{
+              label: "Countries with records",
+              sub: "Every continent except Antarctica — not a US-only phenomenon",
+            }}
+          />
+        </div>
+        <div className="mt-12 flex flex-wrap gap-4">
+          <Link
+            href="/cases"
+            className="inline-flex min-h-[48px] items-center border-2 border-text px-8 py-3 text-base font-medium text-text hover:bg-text hover:text-bg"
+          >
+            <T
+              es={`Explorar los ${STATS.cases} casos →`}
+              en={`Explore the ${STATS.cases} cases →`}
+            />
+          </Link>
+        </div>
+      </section>
+
+      {/* ────────── 3 · TESIS (NYT lead pattern) ────────── */}
       <section className="full-bleed bg-text py-32 text-bg md:py-48">
         <div className="mx-auto max-w-6xl space-y-16 px-4">
           <div className="space-y-6">
@@ -224,56 +285,6 @@ export default function HomePage() {
               />
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* ────────── 3 · BIG NUMBERS (ahora con narrativa) ────────── */}
-      <section className="border-y-2 border-text/15 py-16 md:py-24">
-        <div className="space-y-4">
-          <Eyebrow>
-            <T es="El alcance" en="The scope" />
-          </Eyebrow>
-          <h2 className="max-w-3xl font-display text-2xl font-medium leading-snug text-text md:text-3xl">
-            <T
-              es="No es teoría — es una colección documentada de evidencia."
-              en="It's not theory — it's a documented evidence collection."
-            />
-          </h2>
-        </div>
-        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
-          <BigStat
-            number={STATS.cases}
-            es={{
-              label: "Casos institucionales",
-              sub: "Sobrevivieron filtros militares, congresionales y periodísticos",
-            }}
-            en={{
-              label: "Institutional cases",
-              sub: "Survived military, congressional, and journalistic filters",
-            }}
-          />
-          <BigStat
-            number={STATS.years}
-            es={{
-              label: "Años de fenómeno",
-              sub: "Más tiempo del que duró toda la Guerra Fría (1947–1991)",
-            }}
-            en={{
-              label: "Years of phenomenon",
-              sub: "Longer than the entire Cold War (1947–1991)",
-            }}
-          />
-          <BigStat
-            number={STATS.countries}
-            es={{
-              label: "Países con registros",
-              sub: "Cada continente menos Antártida — no es fenómeno gringo",
-            }}
-            en={{
-              label: "Countries with records",
-              sub: "Every continent except Antarctica — not a US-only phenomenon",
-            }}
-          />
         </div>
       </section>
 
