@@ -616,5 +616,59 @@
       {"year": 2010, "title": "Testimonio en 'UFOs' (Leslie Kean)", "contribution": "Su relato entró al registro público internacional junto a otros pilotos y oficiales", "contribution_en": "His account entered the international public record alongside other pilots and officials"}
     ],
     "sources": [{"name": "Incidente OVNI de La Joya (Arequipa, 1980)", "url": "https://es.wikipedia.org/wiki/Incidente_ovni_de_la_Joya_-_Arequipa", "note": "Caso documentado con múltiples testigos militares.", "note_en": "Documented case with multiple military witnesses."}]
+  },
+  {
+    "id": "poher",
+    "name": "Claude Poher",
+    "born": 1936,
+    "section": "A",
+    "section_label": "Investigador científico (GEPAN/CNES)",
+    "section_label_en": "Scientific researcher (GEPAN/CNES)",
+    "credentials": "Fundador y primer director del GEPAN · ingeniero del CNES, doctor en astrofísica",
+    "credentials_en": "Founder and first director of GEPAN · CNES engineer, PhD in astrophysics",
+    "bio_short": "Ingeniero y doctor en astrofísica del CNES que en 1977 fundó y dirigió el GEPAN, el primer organismo científico oficial del mundo dedicado a estudiar fenómenos aeroespaciales no identificados, dentro de la agencia espacial francesa. En 1975 había coautorado con Jacques Vallée un análisis estadístico de reportes presentado en la AIAA. En 1978 concluyó ante el consejo científico del GEPAN que los casos no explicados tras investigación rigurosa correspondían a objetos materiales de origen desconocido.",
+    "bio_short_en": "Engineer and astrophysics PhD at CNES who in 1977 founded and led GEPAN, the world's first official scientific body dedicated to studying unidentified aerospace phenomena, inside the French space agency. In 1975 he had co-authored with Jacques Vallée a statistical analysis of reports presented at the AIAA. In 1978 he concluded before GEPAN's scientific council that cases unexplained after rigorous investigation were material objects of unknown origin.",
+    "works": [
+      {"year": 1975, "title": "Basic Patterns in UFO Observations (con J. Vallée)", "contribution": "Análisis estadístico de reportes presentado en la AIAA", "contribution_en": "Statistical analysis of reports presented at the AIAA"},
+      {"year": 1977, "title": "Fundación del GEPAN (CNES)", "contribution": "Primer organismo científico oficial del mundo dedicado al estudio de UAP", "contribution_en": "World's first official scientific body dedicated to studying UAP"},
+      {"year": 1978, "title": "Informe sobre los casos 'categoría D'", "contribution": "Concluyó que los casos no explicados eran objetos materiales de origen desconocido", "contribution_en": "Concluded the unexplained cases were material objects of unknown origin"}
+    ],
+    "sources": [{"name": "GEIPAN — CNES (antes GEPAN)", "url": "https://www.cnes-geipan.fr/", "note": "Organismo oficial francés de estudio de fenómenos aeroespaciales no identificados.", "note_en": "Official French body studying unidentified aerospace phenomena."}]
+  },
+  {
+    "id": "clarke",
+    "name": "David Clarke",
+    "born": 1967,
+    "section": "D",
+    "section_label": "Periodistas investigativos",
+    "section_label_en": "Investigative journalists",
+    "credentials": "Periodista de investigación y académico (Sheffield Hallam) · curador de los archivos OVNI del MoD",
+    "credentials_en": "Investigative journalist and academic (Sheffield Hallam) · curator of the MoD UFO files",
+    "bio_short": "Periodista de investigación y académico de la Universidad Sheffield Hallam (n. 1967). Entre 2008 y 2013 fue curador del proyecto de desclasificación de los archivos OVNI del Ministerio de Defensa británico en los National Archives, supervisando su apertura al público. Desde una postura escéptica y documental trata el fenómeno como historia social y problema de archivo, no de fe: autor de 'How UFOs Conquered the World' y 'UFO Drawings from The National Archives'.",
+    "bio_short_en": "Investigative journalist and academic at Sheffield Hallam University (b. 1967). From 2008 to 2013 he was curator of the project to declassify the British Ministry of Defence's UFO files at The National Archives, overseeing their public release. From a skeptical, documentary stance he treats the phenomenon as social history and an archival problem, not faith: author of 'How UFOs Conquered the World' and 'UFO Drawings from The National Archives'.",
+    "works": [
+      {"year": 2002, "title": "Out of the Shadows (con Andy Roberts)", "contribution": "Historia del establishment británico frente al fenómeno OVNI", "contribution_en": "History of the British establishment's handling of the UFO phenomenon"},
+      {"year": 2008, "title": "Archivos OVNI del MoD (The National Archives)", "contribution": "Curador de la desclasificación y apertura pública de los expedientes", "contribution_en": "Curator of the declassification and public release of the files"},
+      {"year": 2015, "title": "How UFOs Conquered the World", "contribution": "Historia social y cultural del fenómeno desde una óptica escéptica", "contribution_en": "Social and cultural history of the phenomenon from a skeptical lens"}
+    ],
+    "sources": [{"name": "Dr David Clarke — MoD UFO files, The National Archives", "url": "https://drdavidclarke.co.uk/national-archives-ufo-files-7/", "note": "Desclasificación de los expedientes OVNI del Ministerio de Defensa británico.", "note_en": "Declassification of the British Ministry of Defence UFO files."}]
+  },
+  {
+    "id": "pope",
+    "name": "Nick Pope",
+    "born": 1965,
+    "death": 2026,
+    "section": "B",
+    "section_label": "Funcionario institucional (MoD)",
+    "section_label_en": "Institutional official (MoD)",
+    "credentials": "Ex oficial del 'UFO desk' del Ministerio de Defensa británico (1991–1994)",
+    "credentials_en": "Former 'UFO desk' officer, British Ministry of Defence (1991–1994)",
+    "bio_short": "Funcionario del Ministerio de Defensa británico que entre 1991 y 1994 ocupó el 'UFO desk' (Secretariat Air Staff 2A), investigando reportes de fenómenos aéreos por su posible impacto en la defensa nacional. Tras dejar el puesto hizo públicas sus conclusiones —su paso por dentro del aparato oficial— en 'Open Skies, Closed Minds' (1996), volviéndose una voz mediática del tema hasta su muerte en 2026.",
+    "bio_short_en": "British Ministry of Defence civil servant who from 1991 to 1994 held the 'UFO desk' (Secretariat Air Staff 2A), investigating reports of aerial phenomena for their possible impact on national defence. After leaving the post he made his conclusions public —his time inside the official apparatus— in 'Open Skies, Closed Minds' (1996), becoming a media voice on the topic until his death in 2026.",
+    "works": [
+      {"year": 1991, "title": "MoD 'UFO desk' (Sec(AS)2A)", "contribution": "Investigó reportes de fenómenos aéreos para el Ministerio de Defensa británico", "contribution_en": "Investigated aerial phenomena reports for the British Ministry of Defence"},
+      {"year": 1996, "title": "Open Skies, Closed Minds", "contribution": "Relato público de su paso por el escritorio OVNI del MoD", "contribution_en": "Public account of his time at the MoD's UFO desk"}
+    ],
+    "sources": [{"name": "Nick Pope, 'Open Skies, Closed Minds' (1996)", "note": "Relato del oficial del UFO desk del MoD.", "note_en": "Account by the MoD UFO desk officer."}]
   }
 ]
