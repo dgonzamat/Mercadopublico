@@ -849,6 +849,26 @@
     ]
   },
   {
+    "id": "rutkowski",
+    "name": "Chris Rutkowski",
+    "flag": "🇨🇦",
+    "section": "A",
+    "section_label": "Ufología estadística / catalogación (Canadá)",
+    "section_label_en": "Statistical ufology / cataloguing (Canada)",
+    "credentials": "Escritor científico y educador (astronomía) · fundador del Canadian UFO Survey · 10 libros sobre el tema",
+    "credentials_en": "Science writer and educator (astronomy) · founder of the Canadian UFO Survey · author of 10 books on the subject",
+    "bio_short": "Escritor científico y educador canadiense, con formación en astronomía, que estudia el fenómeno desde mediados de los años 70 con un enfoque marcadamente estadístico y documental. Desde 1989 dirige, a través de Ufology Research (UFOROM, Manitoba), el Canadian UFO Survey, un censo anual que reúne y analiza todos los reportes del país y que ya documenta más de 22.000 avistamientos —una de las series de datos más largas y sistemáticas del mundo—. Ha publicado en revistas revisadas por pares y es autor de diez libros, entre ellos 'Canada's UFOs: Declassified' (2021). De hecho funciona como el referente civil al que suelen derivarse los reportes militares canadienses: su valor no está en afirmar, sino en contar, clasificar y depurar.",
+    "bio_short_en": "Canadian science writer and educator, trained in astronomy, who has studied the phenomenon since the mid-1970s with a markedly statistical and documentary approach. Since 1989 he has run, through Ufology Research (UFOROM, Manitoba), the Canadian UFO Survey, an annual census that gathers and analyzes all the country's reports and already documents more than 22,000 sightings —one of the longest and most systematic data series in the world. He has published in peer-reviewed journals and is the author of ten books, among them 'Canada's UFOs: Declassified' (2021). He effectively serves as the civilian point of contact to whom Canadian military reports are usually referred: his value lies not in asserting, but in counting, classifying and filtering.",
+    "works": [
+      {"year": 1989, "title": "Canadian UFO Survey", "contribution": "Censo anual de avistamientos en Canadá; 22.000+ reportes catalogados y analizados", "contribution_en": "Annual census of sightings in Canada; 22,000+ reports catalogued and analyzed"},
+      {"year": 2021, "title": "Canada's UFOs: Declassified", "contribution": "Síntesis documental de los archivos y casos canadienses", "contribution_en": "Documentary synthesis of Canadian files and cases"}
+    ],
+    "sources": [
+      {"name": "Chris Rutkowski — Wikipedia", "url": "https://en.wikipedia.org/wiki/Chris_Rutkowski"},
+      {"name": "Ufology Research — Canadian UFO Survey", "url": "https://canadianuforeport.ca/"}
+    ]
+  },
+  {
     "id": "hourcade",
     "name": "Milton Hourcade",
     "flag": "🇺🇾",
