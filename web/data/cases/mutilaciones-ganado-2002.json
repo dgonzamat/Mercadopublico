@@ -1,0 +1,59 @@
+{
+  "id": "mutilaciones-ganado-2002",
+  "num": 95,
+  "name": "Mutilaciones de ganado en Argentina",
+  "name_en": "Argentine cattle mutilations",
+  "year_start": 2002,
+  "country": "AR",
+  "country_name": "Argentina",
+  "flag": "🇦🇷",
+  "location": {
+    "lat": -34.6,
+    "lng": -64.3,
+    "place": "La Pampa y provincias centrales, Argentina"
+  },
+  "tier": "B",
+  "probability": 14,
+  "summary": "En abril de 2002, una ola de animales muertos con 'mutilaciones' precisas (cortes limpios, ausencia de sangre, órganos blandos faltantes) sacudió a la opinión pública en provincias centrales de Argentina, asociada por muchos a OVNIs. El organismo sanitario SENASA concluyó que se trataba de carroñeo natural, atribuyendo el patrón a fauna —entre ella el 'ratón hocicudo rojizo'—, explicación que fue muy discutida. Es el caso escéptico argentino por excelencia: anomalía aparente vs. explicación natural.",
+  "summary_en": "In April 2002, a wave of dead animals with precise 'mutilations' (clean cuts, absence of blood, missing soft organs) shook public opinion in central Argentine provinces, linked by many to UFOs. The animal-health agency SENASA concluded it was natural scavenging, attributing the pattern to wildlife —including the 'red mouse opossum'—, an explanation that was heavily debated. It is the Argentine skeptical case par excellence: apparent anomaly vs. natural explanation.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "A partir de abril de 2002, en provincias del centro de Argentina (La Pampa, Buenos Aires, Santa Fe, Córdoba, entre otras), aparecieron cientos de vacas muertas con un patrón llamativo: cortes de apariencia limpia y precisa, ausencia notoria de sangre y falta de tejidos blandos —ojos, lengua, orejas, ano, órganos genitales—. El fenómeno, que coincidía con el patrón internacional de las 'mutilaciones de ganado', generó alarma pública y se asoció rápidamente con OVNIs; algunos pobladores reportaron además luces extrañas en las zonas afectadas.\n\nEl Servicio Nacional de Sanidad y Calidad Agroalimentaria (SENASA) realizó necropsias y un estudio de campo. Su conclusión oficial fue que no había nada anómalo: los cuerpos mostraban una secuencia normal de muerte (por diversas causas) seguida de carroñeo por fauna. El informe señaló a depredadores y carroñeros —y, de forma célebre, al 'ratón hocicudo rojizo' (una comadrejita)— como responsables de los cortes 'quirúrgicos', que en realidad son el resultado de animales que comen primero los tejidos blandos, dejando bordes que la putrefacción y la deshidratación vuelven netos.\n\nLa explicación fue tan discutida como el fenómeno: críticos objetaron que la especie señalada no abunda en todas las zonas afectadas y que el informe no cubría cada caso. Pero el patrón general —tejidos blandos primero, sin sangre por lividez post mortem, bordes 'limpios' por desecación— es exactamente el que la veterinaria forense documenta en carroñeo en todo el mundo, y es la explicación científica establecida para las 'mutilaciones de ganado' como clase. El caso argentino de 2002 es valioso justamente por eso: una anomalía masiva y mediática que, examinada, encaja con un proceso natural.",
+  "whatHappened_en": "From April 2002, in central Argentine provinces (La Pampa, Buenos Aires, Santa Fe, Córdoba, among others), hundreds of dead cows appeared with a striking pattern: clean, precise-looking cuts, a notable absence of blood, and missing soft tissues —eyes, tongue, ears, anus, genitals—. The phenomenon, matching the international 'cattle mutilation' pattern, caused public alarm and was quickly linked to UFOs; some residents also reported strange lights in the affected areas.\n\nThe National Service of Agri-Food Health and Quality (SENASA) carried out necropsies and a field study. Its official conclusion was that there was nothing anomalous: the carcasses showed a normal sequence of death (from various causes) followed by scavenging by wildlife. The report pointed to predators and scavengers —and, famously, to the 'red mouse opossum' (a small marsupial)— as responsible for the 'surgical' cuts, which are actually the result of animals eating the soft tissues first, leaving edges that putrefaction and dehydration make clean.\n\nThe explanation was as debated as the phenomenon: critics objected that the named species is not abundant in all affected areas and that the report did not cover every case. But the general pattern —soft tissues first, no blood due to post-mortem lividity, 'clean' edges from desiccation— is exactly what forensic veterinary science documents for scavenging worldwide, and is the established scientific explanation for 'cattle mutilations' as a class. The 2002 Argentine case is valuable precisely for that: a massive, media-driven anomaly that, examined, fits a natural process.",
+  "whyMatters": "Las mutilaciones de 2002 son el caso escéptico argentino de manual, y por eso pertenecen al corpus. Tienen todo lo que alimenta una ola: escala (cientos de animales), un patrón inquietante, pánico rural, luces reportadas y una atribución inmediata a OVNIs. Y tienen lo que pocas olas consiguen: una investigación institucional (SENASA) que llegó a una explicación natural concreta y verificable. No importa que la explicación fuera discutida en los detalles; importa que el mecanismo general —carroñeo post mortem— es el consenso forense para las 'mutilaciones' en todo el mundo. Es el contrapeso necesario: cuando una anomalía masiva se examina con método, suele resolverse. Anomalía aparente, explicación natural documentada.",
+  "whyMatters_en": "The 2002 mutilations are the textbook Argentine skeptical case, and that is why they belong in the corpus. They have everything that fuels a wave: scale (hundreds of animals), a disturbing pattern, rural panic, reported lights, and an immediate attribution to UFOs. And they have what few waves achieve: an institutional investigation (SENASA) that reached a concrete, verifiable natural explanation. It does not matter that the explanation was debated in its details; what matters is that the general mechanism —post-mortem scavenging— is the forensic consensus for 'mutilations' worldwide. It is the necessary counterweight: when a massive anomaly is examined methodically, it tends to resolve. Apparent anomaly, documented natural explanation.",
+  "evidence": [
+    "Cientos de animales muertos en provincias centrales (desde abril 2002) con tejidos blandos faltantes y cortes de apariencia 'quirúrgica'",
+    "Alarma pública y atribución a OVNIs; reportes de luces extrañas en algunas zonas",
+    "Estudio del SENASA con necropsias: secuencia de muerte natural + carroñeo por fauna (incl. el 'ratón hocicudo rojizo')",
+    "El patrón coincide con el consenso forense internacional sobre 'mutilaciones de ganado' como carroñeo post mortem; la atribución específica fue discutida"
+  ],
+  "evidence_en": [
+    "Hundreds of dead animals in central provinces (from April 2002) with missing soft tissues and 'surgical'-looking cuts",
+    "Public alarm and attribution to UFOs; reports of strange lights in some areas",
+    "SENASA study with necropsies: natural death sequence + scavenging by wildlife (incl. the 'red mouse opossum')",
+    "The pattern matches the international forensic consensus on 'cattle mutilations' as post-mortem scavenging; the specific attribution was debated"
+  ],
+  "sources": [
+    {
+      "name": "SENASA (Argentina) — informe sobre las mutilaciones de ganado (2002)",
+      "note": "Conclusión oficial: muerte natural + carroñeo por fauna.",
+      "note_en": "Official conclusion: natural death + scavenging by wildlife."
+    },
+    {
+      "name": "Visión OVNI — 'Argentina sacudida por mutilaciones de ganado'",
+      "url": "https://www.visionovni.com.ar/archivos/1058",
+      "note": "Cobertura del fenómeno y la investigación de campo.",
+      "note_en": "Coverage of the phenomenon and the field investigation."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "La investigación del SENASA atribuyó el patrón a una secuencia natural —muerte por diversas causas seguida de carroñeo por fauna—, que coincide con el consenso forense internacional sobre las 'mutilaciones de ganado'. Los cortes 'quirúrgicos' y la falta de sangre se explican por consumo de tejidos blandos + lividez y desecación post mortem.",
+      "rationaleEn": "The SENASA investigation attributed the pattern to a natural sequence —death from various causes followed by scavenging by wildlife—, matching the international forensic consensus on 'cattle mutilations'. The 'surgical' cuts and absence of blood are explained by soft-tissue consumption + post-mortem lividity and desiccation."
+    }
+  ]
+}

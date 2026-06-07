@@ -670,6 +670,64 @@
     ]
   },
   {
+    "id": "banchs",
+    "name": "Roberto Banchs",
+    "section": "A",
+    "section_label": "Ufología analítica (Argentina)",
+    "section_label_en": "Analytical ufology (Argentina)",
+    "credentials": "Arquitecto y psicólogo social · pionero del enfoque biopsicosocial del fenómeno OVNI en Argentina",
+    "credentials_en": "Architect and social psychologist · pioneer of the biopsychosocial approach to UFOs in Argentina",
+    "bio_short": "Arquitecto y psicólogo social argentino, decano de la ufología analítica del país y referente del escepticismo reflexivo: estudia los casos entrevistando testigos y cruzando hemeroteca y bibliografía, sin caer ni en la credulidad ni en la refutación automática. En los años 60 colaboró con la comisión OVNI de la Secretaría de la Armada Argentina y observó fenómenos en radar desde un puesto. Es autor de 'Ovnis: peregrinos del silencio' (1993), 'Fenómenos aéreos inusuales: un enfoque biopsicosocial' (1994 —primer libro sobre el tema editado por una universidad argentina—) y la 'Guía biográfica de la ufología argentina' (2000).",
+    "bio_short_en": "Argentine architect and social psychologist, the dean of the country's analytical ufology and a reference for reflexive skepticism: he studies cases by interviewing witnesses and cross-checking newspaper archives and bibliography, falling into neither credulity nor automatic refutation. In the 1960s he collaborated with the UFO commission of the Argentine Navy Secretariat and observed phenomena on radar from an outpost. He is the author of 'Ovnis: peregrinos del silencio' (1993), 'Fenómenos aéreos inusuales: un enfoque biopsicosocial' (1994 —the first book on the subject published by an Argentine university—) and the 'Guía biográfica de la ufología argentina' (2000).",
+    "works": [
+      {"year": 1994, "title": "Fenómenos aéreos inusuales: un enfoque biopsicosocial", "contribution": "Primer libro sobre el tema editado por una universidad argentina; enfoque científico centrado en el perceptor humano", "contribution_en": "First book on the topic published by an Argentine university; scientific approach centered on the human perceiver"},
+      {"year": 2000, "title": "Guía biográfica de la ufología argentina (1947–1972)", "contribution": "Catálogo histórico de los primeros 25 años de la ufología argentina", "contribution_en": "Historical catalogue of the first 25 years of Argentine ufology"}
+    ],
+    "sources": [
+      {"name": "Visión OVNI — 'Sobre Roberto E. Banchs'", "url": "http://www.visionovni.com.ar/archivos/938"},
+      {"name": "Banchs, R. — 'Guía biográfica de la ufología argentina' (cataovni)", "url": "https://cataovni.wordpress.com/guiabiograficadelaufologiaargentina-dr-banchs/"}
+    ]
+  },
+  {
+    "id": "agostinelli",
+    "name": "Alejandro Agostinelli",
+    "born": 1963,
+    "section": "A",
+    "section_label": "Periodismo crítico / escéptico (Argentina)",
+    "section_label_en": "Critical / skeptical journalism (Argentina)",
+    "credentials": "Periodista (desde 1982) · cofundador del CAIRP · autor de 'Invasores' (2009)",
+    "credentials_en": "Journalist (since 1982) · co-founder of CAIRP · author of 'Invasores' (2009)",
+    "bio_short": "Periodista, escritor y productor argentino (n. 1963), una de las voces más rigurosas y críticas del fenómeno en castellano. En los años 80 dirigió la revista UFO Press y fue secretario general del Centro de Investigaciones Ufológicas; integró luego el comité directivo del CAIRP (Centro Argentino para la Investigación y Refutación de la Pseudociencia). Su libro 'Invasores: historias reales de extraterrestres en la Argentina' (Sudamericana, 2009) revisa con método de archivo los grandes casos del país. Se define agnóstico en materia de OVNIs: documenta, contextualiza y desinfla mitos, incluido un dossier extenso sobre el caso Trancas.",
+    "bio_short_en": "Argentine journalist, writer and producer (b. 1963), one of the most rigorous and critical voices on the phenomenon in Spanish. In the 1980s he directed the magazine UFO Press and was secretary general of the Center for Ufological Research; he later sat on the directive committee of CAIRP (Argentine Center for the Investigation and Refutation of Pseudoscience). His book 'Invasores: real stories of extraterrestrials in Argentina' (Sudamericana, 2009) reviews the country's major cases with an archival method. He calls himself an agnostic on UFOs: he documents, contextualizes and deflates myths, including an extensive dossier on the Trancas case.",
+    "works": [
+      {"year": 1981, "title": "Revista UFO Press", "contribution": "Dirigió la revista de investigación ufológica (años 80)", "contribution_en": "Directed the ufological research magazine (1980s)"},
+      {"year": 2009, "title": "Invasores. Historias reales de extraterrestres en la Argentina", "contribution": "Revisión periodística de archivo de los grandes casos argentinos", "contribution_en": "Archival journalistic review of Argentina's major cases"}
+    ],
+    "sources": [
+      {"name": "Alejandro Agostinelli — Wikipedia", "url": "https://es.wikipedia.org/wiki/Alejandro_Agostinelli"},
+      {"name": "Factor (blog de A. Agostinelli)", "url": "https://factorelblog.com/"}
+    ]
+  },
+  {
+    "id": "janosch",
+    "name": "Heriberto Janosch",
+    "section": "A",
+    "section_label": "Ufología analítica (Argentina)",
+    "section_label_en": "Analytical ufology (Argentina)",
+    "credentials": "Psicólogo (UBA) y técnico en electrónica · escéptico pragmático · investiga el fenómeno desde 1973",
+    "credentials_en": "Psychologist (UBA) and electronics technician · pragmatic skeptic · investigating the phenomenon since 1973",
+    "bio_short": "Psicólogo (Universidad de Buenos Aires) y técnico en electrónica y telecomunicaciones argentino, investigador del fenómeno OVNI desde 1973 y miembro fundador del CAIRP (1994). De método escéptico-pragmático, es conocido por sus análisis de casos famosos: firmó el estudio que explicó el video FLIR de la Fuerza Aérea Mexicana (2004) como las antorchas del campo Cantarell, y escribió 'El ovni de Bariloche: 20 años después', una reevaluación del caso argentino más célebre. Reside en Madrid, donde es profesor e investigador universitario.",
+    "bio_short_en": "Argentine psychologist (University of Buenos Aires) and electronics-and-telecommunications technician, a UFO researcher since 1973 and a founding member of CAIRP (1994). Skeptical-pragmatic in method, he is known for his analyses of famous cases: he co-signed the study that explained the Mexican Air Force FLIR video (2004) as the Cantarell oil-field flares, and wrote 'The Bariloche UFO: 20 years later', a re-evaluation of Argentina's most famous case. He lives in Madrid, where he is a university professor and researcher.",
+    "works": [
+      {"year": 2004, "title": "Análisis del caso FLIR de la FAM (con A. Franz y otros)", "contribution": "Co-firmó la explicación de las antorchas del campo Cantarell", "contribution_en": "Co-signed the Cantarell oil-field flares explanation"},
+      {"year": 2015, "title": "El ovni de Bariloche: 20 años después", "contribution": "Reevaluación crítica del caso del aeropuerto de Bariloche (1995)", "contribution_en": "Critical re-evaluation of the Bariloche airport case (1995)"}
+    ],
+    "sources": [
+      {"name": "Visión OVNI — 'El ovni de Bariloche, 20 años después' (H. Janosch)", "url": "http://www.visionovni.com.ar/archivos/1319"},
+      {"name": "Hipótesis — '¿Qué fue el CAIRP?'", "url": "https://hipotesis-carolus.blogspot.com/2017/09/que-fue-el-cairp-centro-argentino-para.html"}
+    ]
+  },
+  {
     "id": "salazar",
     "name": "Alfonso Salazar Mendoza",
     "section": "A",

@@ -1,0 +1,58 @@
+{
+  "id": "trancas-1963",
+  "num": 94,
+  "name": "Caso Trancas",
+  "name_en": "The Trancas Case",
+  "year_start": 1963,
+  "country": "AR",
+  "country_name": "Argentina",
+  "flag": "🇦🇷",
+  "location": {
+    "lat": -26.23,
+    "lng": -65.28,
+    "place": "Trancas, Tucumán"
+  },
+  "tier": "B",
+  "probability": 28,
+  "summary": "La noche del 21 de octubre de 1963, la familia Moreno reportó en su finca de Trancas (Tucumán) varios objetos luminosos: uno se posó cerca de la casa, junto a las vías del tren, durante unos 45 minutos, mientras otros se alineaban a lo lejos. Hubo un haz de luz dirigido a la casa y se recogió un residuo del lugar. Es uno de los casos argentinos más célebres por la cantidad de testigos y por contar con análisis de laboratorio del residuo (mayormente carbonato de calcio). Conserva elementos relatados de tono dramático y nunca tuvo una resolución formal.",
+  "summary_en": "On the night of 21 October 1963, the Moreno family reported several luminous objects at their farm in Trancas (Tucumán): one settled near the house, by the railway tracks, for about 45 minutes, while others lined up in the distance. A beam of light was directed at the house, and a residue was collected from the site. It is one of the most famous Argentine cases for the number of witnesses and for having a laboratory analysis of the residue (mostly calcium carbonate). It retains dramatically toned reported elements and never had a formal resolution.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La noche del 21 de octubre de 1963, en la finca de la familia Moreno en Trancas, provincia de Tucumán (Argentina), varias personas —entre ellas un grupo de mujeres de la familia— reportaron la aparición de objetos luminosos. Según los relatos, uno de ellos descendió cerca de la casa, junto a las vías del ferrocarril, y permaneció allí cerca de 45 minutos; a lo lejos se alinearon otros objetos. Los testigos describieron un haz de luz que se proyectó hacia la vivienda y una sensación de calor y encierro durante el episodio.\n\nEl caso se distinguió de otros avistamientos por la cantidad y consistencia de los testimonios, la duración del fenómeno y, sobre todo, porque al día siguiente se recogió en el sitio un residuo —una sustancia fibrosa/blanquecina— que fue enviado a análisis. El doctor Walter Gonzalo Tell, del Instituto de Ingeniería Química de la Universidad Nacional de Tucumán, reportó una composición de aproximadamente 96,5% de carbonato de calcio y 3,5% de carbonato de potasio; análisis posteriores (Universidad Nacional del Sur) confirmaron carbonatos de calcio y potasio.\n\nTrancas quedó como uno de los casos más célebres de la ufología argentina y latinoamericana, citado por su riqueza testimonial y por el raro hecho de tener un residuo físico analizado en una universidad. Conviene, sin embargo, leerlo con cautela: parte del relato fue creciendo en versiones posteriores con detalles de tono dramático, y la composición del residuo —carbonatos de calcio y potasio— no es en sí exótica (aparece en materiales orgánicos y minerales comunes); lo que se consideró llamativo fue su concentración y uniformidad en ese contexto. El caso nunca tuvo una explicación formal cerrada.",
+  "whatHappened_en": "On the night of 21 October 1963, at the Moreno family's farm in Trancas, Tucumán province (Argentina), several people —including a group of women of the family— reported the appearance of luminous objects. According to the accounts, one of them descended near the house, by the railway tracks, and stayed there for about 45 minutes; others lined up in the distance. Witnesses described a beam of light projected toward the home and a sensation of heat and confinement during the episode.\n\nThe case stood out from other sightings for the number and consistency of the testimonies, the duration of the phenomenon and, above all, because the next day a residue —a fibrous/whitish substance— was collected at the site and sent for analysis. Dr. Walter Gonzalo Tell, of the Institute of Chemical Engineering at the National University of Tucumán, reported a composition of about 96.5% calcium carbonate and 3.5% potassium carbonate; later analyses (National University of the South) confirmed calcium and potassium carbonates.\n\nTrancas became one of the most famous cases in Argentine and Latin American ufology, cited for its testimonial richness and for the rare fact of having a physical residue analyzed at a university. It should, however, be read with caution: part of the account grew in later versions with dramatically toned details, and the residue's composition —calcium and potassium carbonates— is not in itself exotic (it appears in common organic and mineral materials); what was deemed striking was its concentration and uniformity in that context. The case never had a closed, formal explanation.",
+  "whyMatters": "Trancas importa por una combinación poco común en la casuística sudamericana: muchos testigos sostenidos, larga duración y un residuo físico que llegó a un laboratorio universitario. Eso lo eleva por encima del avistamiento anecdótico. Pero también es un buen ejercicio de disciplina: el dato de laboratorio (carbonatos de calcio y potasio) suena impresionante hasta que se nota que no es una firma exótica, y el relato acumuló adornos con los años. Sirve, entonces, como caso-escuela: un clásico genuino que hay que apreciar por lo que tiene de documentado, sin dejar que la fama llene los huecos. Anomalía testimonial fuerte, conclusión material prudente.",
+  "whyMatters_en": "Trancas matters for a combination uncommon in South American casework: many sustained witnesses, long duration, and a physical residue that reached a university laboratory. That lifts it above the anecdotal sighting. But it is also a good exercise in discipline: the lab datum (calcium and potassium carbonates) sounds impressive until one notes it is not an exotic signature, and the account accumulated embellishments over the years. It serves, then, as a teaching case: a genuine classic to be appreciated for what it has that is documented, without letting fame fill the gaps. Strong testimonial anomaly, prudent material conclusion.",
+  "evidence": [
+    "Múltiples testigos de la familia Moreno; fenómeno sostenido ~45 min junto a las vías del tren (21 oct 1963)",
+    "Haz de luz dirigido a la vivienda; marcas y residuo recogidos en el sitio al día siguiente",
+    "Análisis de laboratorio (Dr. Walter G. Tell, U. Nacional de Tucumán): ~96,5% carbonato de calcio, ~3,5% carbonato de potasio; confirmado luego por la U. Nacional del Sur",
+    "Caveat: la composición no es exótica y el relato sumó detalles dramáticos en versiones posteriores; sin resolución formal"
+  ],
+  "evidence_en": [
+    "Multiple witnesses of the Moreno family; phenomenon sustained ~45 min by the railway tracks (21 Oct 1963)",
+    "Beam of light directed at the home; marks and residue collected at the site the next day",
+    "Laboratory analysis (Dr. Walter G. Tell, National University of Tucumán): ~96.5% calcium carbonate, ~3.5% potassium carbonate; later confirmed by the National University of the South",
+    "Caveat: the composition is not exotic and the account added dramatic details in later versions; no formal resolution"
+  ],
+  "sources": [
+    {
+      "name": "La Gaceta (Tucumán) — 'Caso Trancas: la única testigo viva recuerda los ovnis'",
+      "url": "https://www.lagaceta.com.ar/nota/1010882/sociedad/caso-trancas-unica-testigo-viva-recuerda-ovnis.html"
+    },
+    {
+      "name": "Agostinelli, A. — 'Dossier: El caso Trancas. ¿Asedio platillista o militar?' (Factor)",
+      "url": "https://factorelblog.com/2022/01/03/dossier-el-caso-trancas-asedio-platillista-o-militar-2/",
+      "note": "Análisis crítico del caso.",
+      "note_en": "Critical analysis of the case."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Encuentro cercano con múltiples testigos sostenidos, larga duración y un residuo físico recogido y analizado en universidad. Minimal porque el residuo (carbonatos de calcio y potasio) no es una firma exótica y el relato incorporó adornos dramáticos en versiones posteriores, lo que erosiona el peso probatorio.",
+      "rationaleEn": "Close encounter with multiple sustained witnesses, long duration, and a physical residue collected and analyzed at a university. Minimal because the residue (calcium and potassium carbonates) is not an exotic signature and the account incorporated dramatic embellishments in later versions, which erodes its evidentiary weight."
+    }
+  ]
+}
