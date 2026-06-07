@@ -630,6 +630,25 @@
     ]
   },
   {
+    "id": "franz",
+    "name": "Alejandro Franz Navarrete",
+    "section": "A",
+    "section_label": "Análisis aeroespacial escéptico (México)",
+    "section_label_en": "Skeptical aerospace analysis (Mexico)",
+    "credentials": "Capitán piloto (Aeroméxico) · ex controlador aéreo · meteorólogo · director del CENEAAM",
+    "credentials_en": "Airline captain (Aeroméxico) · former air traffic controller · meteorologist · director of CENEAAM",
+    "bio_short": "Capitán piloto comercial (comandante MD-80/88 en Aeroméxico, 1981–2007), ex controlador de tránsito aéreo (1968–1979) y meteorólogo, investigador independiente de fenómenos aeroespaciales anómalos desde 1963 y director del CENEAAM (Centro de Estudios Aeroespaciales en México) desde 1998. Desde su sitio alcione.org practica un análisis escéptico y técnico de casos OVNI, buscando explicaciones convencionales antes que exóticas. Es el autor del análisis de referencia del caso FLIR de la Fuerza Aérea Mexicana (2004): demostró que los objetos captados en infrarrojo eran las antorchas (quemadores de gas) de las plataformas petroleras del campo Cantarell, no naves —conclusión respaldada por investigadores como Ballester-Olmos, Borraz, Janosch, Mori y Ruiz Noguez.",
+    "bio_short_en": "Commercial airline captain (MD-80/88 commander at Aeroméxico, 1981–2007), former air traffic controller (1968–1979) and meteorologist, an independent researcher of anomalous aerospace phenomena since 1963 and director of CENEAAM (Center for Aerospace Studies in Mexico) since 1998. From his site alcione.org he practices a skeptical, technical analysis of UFO cases, seeking conventional explanations before exotic ones. He authored the reference analysis of the Mexican Air Force FLIR case (2004): he showed that the objects captured in infrared were the gas-flaring torches of the Cantarell oil-field platforms, not craft —a conclusion endorsed by researchers such as Ballester-Olmos, Borraz, Janosch, Mori and Ruiz Noguez.",
+    "works": [
+      {"year": 1998, "title": "CENEAAM (Centro de Estudios Aeroespaciales en México)", "contribution": "Dirige el centro de análisis técnico de fenómenos aeroespaciales en México", "contribution_en": "Directs the center for technical analysis of aerospace phenomena in Mexico"},
+      {"year": 2004, "title": "Análisis del caso FLIR de la FAM (Campeche)", "contribution": "Atribuyó los objetos del FLIR a las antorchas del campo petrolero Cantarell; publicado en Cuadernos de Ufología", "contribution_en": "Attributed the FLIR objects to the Cantarell oil-field flares; published in Cuadernos de Ufología"}
+    ],
+    "sources": [
+      {"name": "Alcione.org — credenciales de Alejandro Franz Navarrete", "url": "http://www.alcione.org/AFN_credentials.html"},
+      {"name": "Latest UFO Sightings — 'Mexican Air Force FLIR's video lights are not UFOs'", "url": "https://www.latest-ufo-sightings.net/2010/08/mexican-air-force-flirs-video-lights.html"}
+    ]
+  },
+  {
     "id": "salazar",
     "name": "Alfonso Salazar Mendoza",
     "section": "A",
