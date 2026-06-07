@@ -890,6 +890,26 @@
     ]
   },
   {
+    "id": "chalker",
+    "name": "Bill Chalker",
+    "flag": "🇦🇺",
+    "section": "A",
+    "section_label": "Ufología de campo / archivos (Australia)",
+    "section_label_en": "Field ufology / archives (Australia)",
+    "credentials": "Químico y matemático · investigador de campo (5 décadas) · accedió a los archivos OVNI de la RAAF · autor de 'The Oz Files'",
+    "credentials_en": "Chemist and mathematician · field investigator (5 decades) · accessed the RAAF UFO files · author of 'The Oz Files'",
+    "bio_short": "Investigador OVNI australiano de referencia, con formación en química y matemáticas (Universidad de Nueva Inglaterra) y cinco décadas de trabajo de campo. Fue representante en Australia de la APRO (1978–1986) y representante estatal de MUFON en Nueva Gales del Sur (1976–1993), y editor colaborador del International UFO Reporter. Su aporte distintivo es documental e institucional: fue el primer investigador civil al que se le permitió revisar los archivos OVNI de la Real Fuerza Aérea Australiana (RAAF), un trabajo que sintetizó en su libro 'The Oz Files: The Australian UFO Story' (1996). Representa el ala rigurosa y archivística de la ufología australiana, atenta a la diferencia entre el caso documentado y la leyenda.",
+    "bio_short_en": "Australia's leading UFO researcher, with a background in chemistry and mathematics (University of New England) and five decades of fieldwork. He was the Australian representative of APRO (1978–1986) and MUFON state representative for New South Wales (1976–1993), and a contributing editor of the International UFO Reporter. His distinctive contribution is documentary and institutional: he was the first civilian researcher allowed to review the Royal Australian Air Force (RAAF) UFO files, work he synthesized in his book 'The Oz Files: The Australian UFO Story' (1996). He represents the rigorous, archival wing of Australian ufology, attentive to the difference between the documented case and the legend.",
+    "works": [
+      {"year": 1996, "title": "The Oz Files: The Australian UFO Story", "contribution": "Síntesis de los archivos OVNI de la RAAF y de la casuística australiana", "contribution_en": "Synthesis of the RAAF UFO files and Australian casework"},
+      {"year": 1982, "title": "Acceso a los archivos OVNI de la RAAF", "contribution": "Primer investigador civil autorizado a revisar los expedientes de la fuerza aérea australiana", "contribution_en": "First civilian researcher authorized to review the Australian Air Force files"}
+    ],
+    "sources": [
+      {"name": "Bill Chalker — Wikipedia", "url": "https://en.wikipedia.org/wiki/Bill_Chalker"},
+      {"name": "Bill Chalker — Center for UFO Studies (CUFOS)", "url": "https://cufos.org/about-us/cufos-board-consultants-and-friends/bill-chalker/"}
+    ]
+  },
+  {
     "id": "hourcade",
     "name": "Milton Hourcade",
     "flag": "🇺🇾",
