@@ -1,0 +1,70 @@
+{
+  "id": "oumuamua-2017",
+  "num": 84,
+  "name": "ʻOumuamua (1I/2017 U1)",
+  "name_en": "ʻOumuamua (1I/2017 U1)",
+  "year_start": 2017,
+  "country": "US",
+  "country_name": "Espacio interestelar · Pan-STARRS (Hawái)",
+  "flag": "🌍",
+  "location": {
+    "lat": 20.71,
+    "lng": -156.26,
+    "place": "Observatorio Pan-STARRS, Haleakalā (Hawái)"
+  },
+  "tier": "A",
+  "probability": 52,
+  "summary": "Primer objeto interestelar confirmado que atravesó el Sistema Solar (2017). Mostró una aceleración no gravitacional —se alejó del Sol más rápido de lo que la gravedad sola explica— sin cola ni coma cometaria visible, y una forma extrema (muy alargada o tipo disco). El consenso lo trata como un objeto natural inusual; Avi Loeb planteó que el comportamiento es compatible con presión de radiación sobre una vela delgada, dejando abierta la hipótesis tecnológica.",
+  "summary_en": "First confirmed interstellar object to pass through the Solar System (2017). It showed a non-gravitational acceleration —moving away from the Sun faster than gravity alone explains— with no visible cometary tail or coma, and an extreme shape (highly elongated or disk-like). The consensus treats it as an unusual natural object; Avi Loeb argued the behavior is consistent with radiation pressure on a thin sail, leaving the technological hypothesis open.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 19 de octubre de 2017, el telescopio Pan-STARRS 1 en Haleakalā (Hawái) detectó un objeto en una órbita hiperbólica: no estaba ligado al Sol, venía de fuera del Sistema Solar y volvería a salir. Fue el primer objeto interestelar confirmado, y recibió el nombre hawaiano ʻOumuamua ('mensajero que llega primero desde lejos'), con la designación 1I/2017 U1. Para cuando se identificó ya se alejaba, y solo pudo observarse unas pocas semanas.\n\nEn ese tiempo acumuló rarezas. Su brillo variaba en un factor enorme al rotar, lo que implica una forma muy poco habitual —extremadamente alargada (proporciones de hasta 6:1 o más) o, en otros modelos, un disco plano—. No mostró cola ni coma: no parecía un cometa activo. Y sin embargo, mediciones publicadas en Nature (Micheli et al., 2018) detectaron una aceleración no gravitacional pequeña pero significativa, alejándolo del Sol, sin la liberación de gas o polvo que normalmente la produciría.\n\nEsa combinación —aceleración sin cola visible— es el núcleo del debate. El astrofísico de Harvard Avi Loeb, con Shmuel Bialy, propuso en 2018 que la presión de la radiación solar sobre un objeto muy delgado y plano podría explicar el empuje, lo que abriría la puerta a un origen artificial (una vela). El consenso científico prefiere explicaciones naturales: un fragmento de hielo de nitrógeno, un 'iceberg' de hidrógeno, o un agregado poroso de polvo, cuya desgasificación de volátiles sería difícil de ver. ʻOumuamua salió del alcance de los telescopios a inicios de 2018 y no volverá: el caso quedó sin resolverse de forma directa.",
+  "whatHappened_en": "On 19 October 2017, the Pan-STARRS 1 telescope on Haleakalā (Hawaii) detected an object on a hyperbolic orbit: not bound to the Sun, coming from outside the Solar System and bound to leave again. It was the first confirmed interstellar object, named with the Hawaiian word ʻOumuamua ('a messenger that reaches out from afar'), designated 1I/2017 U1. By the time it was identified it was already receding, and could only be observed for a few weeks.\n\nIn that window it piled up oddities. Its brightness varied by a huge factor as it rotated, implying a very unusual shape —extremely elongated (axis ratios up to 6:1 or more) or, in other models, a flat disk. It showed no tail or coma: it did not look like an active comet. And yet, measurements published in Nature (Micheli et al., 2018) detected a small but significant non-gravitational acceleration pushing it away from the Sun, without the gas or dust release that would normally cause it.\n\nThat combination —acceleration with no visible tail— is the core of the debate. Harvard astrophysicist Avi Loeb, with Shmuel Bialy, proposed in 2018 that solar radiation pressure on a very thin, flat object could explain the push, which would open the door to an artificial origin (a sail). The scientific consensus prefers natural explanations: a fragment of nitrogen ice, a hydrogen 'iceberg', or a porous dust aggregate whose outgassing of volatiles would be hard to see. ʻOumuamua left the reach of telescopes in early 2018 and will not return: the case was left directly unresolved.",
+  "whyMatters": "ʻOumuamua importa por lo que expone, no por lo que resuelve. Es un objeto real, confirmado por múltiples observatorios, con una anomalía medida y publicada en revisión por pares —la aceleración no gravitacional— que ninguna explicación, natural o artificial, cerró del todo con los pocos datos disponibles. Marcó el nacimiento de una pregunta institucional: ¿está la astronomía preparada para detectar y caracterizar a tiempo un objeto interestelar anómalo? La respuesta —se identificó tarde y se perdió en semanas— motivó el Galileo Project de Loeb y un cambio en la vigilancia del cielo. Es el caso fundacional del corpus en su frontera astronómica.",
+  "whyMatters_en": "ʻOumuamua matters for what it exposes, not for what it resolves. It is a real object, confirmed by multiple observatories, with a measured and peer-reviewed anomaly —the non-gravitational acceleration— that no explanation, natural or artificial, fully closed with the scarce available data. It marked the birth of an institutional question: is astronomy ready to detect and characterize an anomalous interstellar object in time? The answer —identified late and lost within weeks— motivated Loeb's Galileo Project and a shift in sky surveillance. It is the corpus's foundational case at its astronomical frontier.",
+  "evidence": [
+    "Órbita hiperbólica (no ligada al Sol) que confirma origen interestelar — primer objeto así detectado",
+    "Aceleración no gravitacional medida y publicada en Nature (Micheli et al., 2018), sin cola ni coma visibles",
+    "Curva de luz con variación extrema → forma muy alargada o tipo disco (poco habitual)",
+    "Observado por múltiples instrumentos (Pan-STARRS, VLT, Hubble, Spitzer) durante unas semanas de 2017–2018",
+    "Hipótesis tecnológica formal: Bialy & Loeb (2018), presión de radiación sobre una vela delgada"
+  ],
+  "evidence_en": [
+    "Hyperbolic orbit (not bound to the Sun) confirming interstellar origin — first such object detected",
+    "Non-gravitational acceleration measured and published in Nature (Micheli et al., 2018), with no visible tail or coma",
+    "Light curve with extreme variation → highly elongated or disk-like shape (unusual)",
+    "Observed by multiple instruments (Pan-STARRS, VLT, Hubble, Spitzer) over a few weeks in 2017–2018",
+    "Formal technological hypothesis: Bialy & Loeb (2018), radiation pressure on a thin sail"
+  ],
+  "sources": [
+    {
+      "name": "Micheli et al. — 'Non-gravitational acceleration in the trajectory of 1I/2017 U1 (ʻOumuamua)', Nature (2018)",
+      "url": "https://www.nature.com/articles/s41586-018-0254-4"
+    },
+    {
+      "name": "Bialy & Loeb — 'Could Solar Radiation Pressure Explain ʻOumuamua's Peculiar Acceleration?', ApJ Letters (2018)",
+      "url": "https://iopscience.iop.org/article/10.3847/2041-8213/aaeda8"
+    },
+    {
+      "name": "Avi Loeb — 'Extraterrestrial: The First Sign of Intelligent Life Beyond Earth' (2021)",
+      "note": "Argumento público a favor del origen artificial.",
+      "note_en": "Public case for an artificial origin."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El consenso científico explica las anomalías de ʻOumuamua —aceleración sin cola, forma extrema— con mecanismos naturales (desgasificación de hielos de N2 o H2 difíciles de observar, agregado poroso). Modest porque ninguna de esas explicaciones se confirmó con datos directos antes de que el objeto se perdiera, dejando un margen genuino de incertidumbre.",
+      "rationaleEn": "The scientific consensus explains ʻOumuamua's anomalies —acceleration with no tail, extreme shape— with natural mechanisms (outgassing of hard-to-observe N2 or H2 ices, a porous aggregate). Modest because none of those explanations was confirmed with direct data before the object was lost, leaving genuine uncertainty."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La aceleración no gravitacional sin pérdida visible de masa es, formalmente, compatible con presión de radiación sobre una estructura artificial delgada (Bialy & Loeb 2018). Minimal porque es una hipótesis minoritaria y la ausencia de datos no equivale a evidencia positiva de tecnología.",
+      "rationaleEn": "The non-gravitational acceleration with no visible mass loss is, formally, consistent with radiation pressure on a thin artificial structure (Bialy & Loeb 2018). Minimal because it is a minority hypothesis and the absence of data is not positive evidence of technology."
+    }
+  ]
+}
