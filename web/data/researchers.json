@@ -679,5 +679,25 @@
       {"year": 1996, "title": "Open Skies, Closed Minds", "contribution": "Relato público de su paso por el escritorio OVNI del MoD", "contribution_en": "Public account of his time at the MoD's UFO desk"}
     ],
     "sources": [{"name": "Nick Pope, 'Open Skies, Closed Minds' (1996)", "note": "Relato del oficial del UFO desk del MoD.", "note_en": "Account by the MoD UFO desk officer."}]
+  },
+  {
+    "id": "chamorro",
+    "name": "Julio César Chamorro",
+    "born": 1957,
+    "section": "B",
+    "section_label": "Comandante FAP · fundador de la OIFAA",
+    "section_label_en": "FAP Commander · OIFAA founder",
+    "credentials": "Comandante (r.) de la Fuerza Aérea del Perú · piloto y especialista en radar · fundador y director de la OIFAA",
+    "credentials_en": "Commander (ret.) of the Peruvian Air Force · pilot and radar specialist · founder and director of OIFAA",
+    "bio_short": "Comandante (r.) de la Fuerza Aérea del Perú, piloto y especialista en operación de radar (se formó en la entonces URSS). Fundó y dirigió la OIFAA (Oficina de Investigación de Fenómenos Aéreos Anómalos), la dependencia oficial de la FAP encargada de evaluar reportes de fenómenos aéreos no identificados —reabierta en 2013 como DIFAA—. Bajo su conducción la oficina investigó casos como la oleada de Chulucanas (2002) y las 'luces' de Pucallpa (2008). Es la cara militar e institucional de la ufología oficial peruana.",
+    "bio_short_en": "Commander (ret.) of the Peruvian Air Force, pilot and radar-operation specialist (trained in the then-USSR). He founded and directed OIFAA (Office for the Investigation of Anomalous Aerial Phenomena), the FAP's official unit for assessing reports of unidentified aerial phenomena —reopened in 2013 as DIFAA. Under his leadership the office investigated cases such as the Chulucanas wave (2002) and the Pucallpa 'lights' (2008). He is the military, institutional face of official Peruvian ufology.",
+    "works": [
+      {"year": 1975, "title": "Ingreso a la Fuerza Aérea del Perú", "contribution": "Piloto FAP; en 1977 se especializó en defensa aérea y operación de radar", "contribution_en": "FAP pilot; in 1977 specialized in air defense and radar operation"},
+      {"year": 2001, "title": "OIFAA (Oficina de Investigación de Fenómenos Aéreos Anómalos)", "contribution": "Fundó y dirigió la oficina oficial de la FAP para investigar fenómenos aéreos anómalos (reabierta en 2013 como DIFAA)", "contribution_en": "Founded and directed the FAP's official office to investigate anomalous aerial phenomena (reopened in 2013 as DIFAA)"}
+    ],
+    "sources": [
+      {"name": "International Coalition for Extraterrestrial Research — Julio Chamorro (Perú)", "url": "https://icer.pt/people/julio-chamorro-peru/"},
+      {"name": "La Huella OVNI — entrevista al Comandante (r) Julio Chamorro", "url": "https://mundonow.com/en/commander-julio-chamorro-ufo-research-information/"}
+    ]
   }
 ]
