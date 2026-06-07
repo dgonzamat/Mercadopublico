@@ -91,6 +91,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
 
   // E — Perú · OIFAA (oficina oficial de la FAP)
   chamorro: ["pucallpa-2008", "chulucanas-2001"],
+
+  // Brasil — ufología de campo
+  petit: ["colares-1977", "varginha-1996"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
