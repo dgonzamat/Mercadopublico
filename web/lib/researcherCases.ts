@@ -35,6 +35,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   "ballester-olmos": ["canary-islands-1976", "manises-1979"],
   fuenzalida: ["valdes-1977"],
   salazar: ["oleada-mexico-1965"],
+  hourcade: ["cridovni-uruguay-1979"],
   mack: ["ariel-school-1994"],
   delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
   poher: ["trans-en-provence-1981"],
