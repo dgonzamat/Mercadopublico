@@ -125,6 +125,7 @@ export interface ResearcherSource {
 export interface Researcher {
   id: string;
   name: string;
+  flag: string;           // bandera de nacionalidad (emoji regional, p. ej. 🇦🇷)
   born?: number;
   death?: number;
   section: "A" | "B" | "C" | "D" | "E";

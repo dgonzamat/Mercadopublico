@@ -2,6 +2,7 @@
   {
     "id": "vallee",
     "name": "Jacques Vallée",
+    "flag": "🇫🇷",
     "born": 1939,
     "section": "A",
     "section_label": "Investigadores científicos",
@@ -27,6 +28,7 @@
   {
     "id": "nolan",
     "name": "Garry Nolan",
+    "flag": "🇺🇸",
     "born": 1961,
     "section": "A",
     "section_label": "Investigadores científicos",
@@ -45,6 +47,7 @@
   {
     "id": "hynek",
     "name": "J. Allen Hynek",
+    "flag": "🇺🇸",
     "born": 1910,
     "death": 1986,
     "section": "A",
@@ -64,6 +67,7 @@
   {
     "id": "ruppelt",
     "name": "Edward J. Ruppelt",
+    "flag": "🇺🇸",
     "born": 1923,
     "death": 1960,
     "section": "B",
@@ -79,6 +83,7 @@
   {
     "id": "keyhoe",
     "name": "Donald Keyhoe",
+    "flag": "🇺🇸",
     "born": 1897,
     "death": 1988,
     "section": "B",
@@ -97,6 +102,7 @@
   {
     "id": "mcdonald",
     "name": "James E. McDonald",
+    "flag": "🇺🇸",
     "born": 1920,
     "death": 1971,
     "section": "A",
@@ -116,6 +122,7 @@
   {
     "id": "friedman",
     "name": "Stanton Friedman",
+    "flag": "🇺🇸",
     "born": 1934,
     "death": 2019,
     "section": "A",
@@ -139,6 +146,7 @@
   {
     "id": "bigelow",
     "name": "Robert Bigelow",
+    "flag": "🇺🇸",
     "born": 1945,
     "section": "A",
     "section_label": "Sponsors institucionales de investigación",
@@ -159,6 +167,7 @@
   {
     "id": "puthoff",
     "name": "Harold E. Puthoff",
+    "flag": "🇺🇸",
     "born": 1936,
     "section": "A",
     "section_label": "Investigadores científicos",
@@ -173,6 +182,7 @@
   {
     "id": "davis",
     "name": "Eric W. Davis",
+    "flag": "🇺🇸",
     "born": 1961,
     "section": "A",
     "section_label": "Investigadores científicos",
@@ -187,6 +197,7 @@
   {
     "id": "taylor-t",
     "name": "Travis Taylor",
+    "flag": "🇺🇸",
     "born": 1968,
     "section": "A",
     "section_label": "Investigadores científicos",
@@ -204,6 +215,7 @@
   {
     "id": "mellon",
     "name": "Christopher Mellon",
+    "flag": "🇺🇸",
     "born": 1957,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -221,6 +233,7 @@
   {
     "id": "mack",
     "name": "John E. Mack",
+    "flag": "🇺🇸",
     "born": 1929,
     "death": 2004,
     "section": "A",
@@ -240,6 +253,7 @@
   {
     "id": "strieber",
     "name": "Whitley Strieber",
+    "flag": "🇺🇸",
     "born": 1945,
     "section": "A",
     "section_label": "Investigadores experiencer-teóricos",
@@ -262,6 +276,7 @@
   {
     "id": "loeb",
     "name": "Avi Loeb",
+    "flag": "🇮🇱",
     "born": 1962,
     "section": "A",
     "section_label": "Investigadores científicos",
@@ -283,6 +298,7 @@
   {
     "id": "jorjani",
     "name": "Jason Reza Jorjani",
+    "flag": "🇺🇸",
     "born": 1981,
     "section": "A",
     "section_label": "Teóricos filosóficos",
@@ -298,6 +314,7 @@
   {
     "id": "freixedo",
     "name": "Salvador Freixedo",
+    "flag": "🇪🇸",
     "born": 1923,
     "death": 2019,
     "section": "A",
@@ -317,6 +334,7 @@
   {
     "id": "grusch",
     "name": "David Grusch",
+    "flag": "🇺🇸",
     "born": 1986,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -334,6 +352,7 @@
   {
     "id": "elizondo",
     "name": "Luis Elizondo",
+    "flag": "🇺🇸",
     "born": 1971,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -348,6 +367,7 @@
   {
     "id": "graves",
     "name": "Ryan Graves",
+    "flag": "🇺🇸",
     "born": 1983,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -366,6 +386,7 @@
   {
     "id": "fravor",
     "name": "David Fravor",
+    "flag": "🇺🇸",
     "born": 1962,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -380,6 +401,7 @@
   {
     "id": "dietrich",
     "name": "Alex Dietrich",
+    "flag": "🇺🇸",
     "born": 1979,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -394,6 +416,7 @@
   {
     "id": "nell",
     "name": "Karl Nell",
+    "flag": "🇺🇸",
     "born": 1969,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -408,6 +431,7 @@
   {
     "id": "kirkpatrick",
     "name": "Sean Kirkpatrick",
+    "flag": "🇺🇸",
     "born": 1968,
     "section": "B",
     "section_label": "Informantes / denunciantes",
@@ -425,6 +449,7 @@
   {
     "id": "luna",
     "name": "Anna Paulina Luna",
+    "flag": "🇺🇸",
     "born": 1989,
     "section": "C",
     "section_label": "Actores políticos formales",
@@ -445,6 +470,7 @@
   {
     "id": "burchett",
     "name": "Tim Burchett",
+    "flag": "🇺🇸",
     "born": 1964,
     "section": "C",
     "section_label": "Actores políticos formales",
@@ -465,6 +491,7 @@
   {
     "id": "burlison",
     "name": "Eric Burlison",
+    "flag": "🇺🇸",
     "born": 1976,
     "section": "C",
     "section_label": "Actores políticos formales",
@@ -485,6 +512,7 @@
   {
     "id": "coulthart",
     "name": "Ross Coulthart",
+    "flag": "🇦🇺",
     "born": 1963,
     "section": "D",
     "section_label": "Periodistas investigativos",
@@ -502,6 +530,7 @@
   {
     "id": "kean",
     "name": "Leslie Kean",
+    "flag": "🇺🇸",
     "born": 1958,
     "section": "D",
     "section_label": "Periodistas investigativos",
@@ -519,6 +548,7 @@
   {
     "id": "blumenthal",
     "name": "Ralph Blumenthal",
+    "flag": "🇺🇸",
     "born": 1941,
     "section": "D",
     "section_label": "Periodistas investigativos",
@@ -536,6 +566,7 @@
   {
     "id": "knapp",
     "name": "George Knapp",
+    "flag": "🇺🇸",
     "born": 1952,
     "section": "D",
     "section_label": "Periodistas investigativos",
@@ -556,6 +587,7 @@
   {
     "id": "corbell",
     "name": "Jeremy Corbell",
+    "flag": "🇺🇸",
     "born": 1977,
     "section": "D",
     "section_label": "Cineasta de disclosure",
@@ -577,6 +609,7 @@
   {
     "id": "delonge",
     "name": "Tom DeLonge",
+    "flag": "🇺🇸",
     "born": 1975,
     "section": "A",
     "section_label": "Catalizadores culturales",
@@ -597,6 +630,7 @@
   {
     "id": "pasulka",
     "name": "Diana Walsh Pasulka",
+    "flag": "🇺🇸",
     "born": 1969,
     "section": "E",
     "section_label": "Investigación ontológico-religiosa",
@@ -615,6 +649,7 @@
   {
     "id": "ballester-olmos",
     "name": "Vicente-Juan Ballester Olmos",
+    "flag": "🇪🇸",
     "born": 1948,
     "section": "A",
     "section_label": "Ufología analítica",
@@ -633,6 +668,7 @@
   {
     "id": "fuenzalida",
     "name": "Rodrigo Fuenzalida",
+    "flag": "🇨🇱",
     "born": 1963,
     "section": "A",
     "section_label": "Ufología de campo (Chile)",
@@ -653,6 +689,7 @@
   {
     "id": "franz",
     "name": "Alejandro Franz Navarrete",
+    "flag": "🇲🇽",
     "section": "A",
     "section_label": "Análisis aeroespacial escéptico (México)",
     "section_label_en": "Skeptical aerospace analysis (Mexico)",
@@ -672,6 +709,7 @@
   {
     "id": "banchs",
     "name": "Roberto Banchs",
+    "flag": "🇦🇷",
     "section": "A",
     "section_label": "Ufología analítica (Argentina)",
     "section_label_en": "Analytical ufology (Argentina)",
@@ -691,6 +729,7 @@
   {
     "id": "agostinelli",
     "name": "Alejandro Agostinelli",
+    "flag": "🇦🇷",
     "born": 1963,
     "section": "A",
     "section_label": "Periodismo crítico / escéptico (Argentina)",
@@ -711,6 +750,7 @@
   {
     "id": "janosch",
     "name": "Heriberto Janosch",
+    "flag": "🇦🇷",
     "section": "A",
     "section_label": "Ufología analítica (Argentina)",
     "section_label_en": "Analytical ufology (Argentina)",
@@ -730,6 +770,7 @@
   {
     "id": "salazar",
     "name": "Alfonso Salazar Mendoza",
+    "flag": "🇲🇽",
     "section": "A",
     "section_label": "Ufología hemerográfica (México)",
     "section_label_en": "Newspaper-archive ufology (Mexico)",
@@ -749,6 +790,7 @@
   {
     "id": "hourcade",
     "name": "Milton Hourcade",
+    "flag": "🇺🇾",
     "section": "A",
     "section_label": "Ufología científica (Uruguay)",
     "section_label_en": "Scientific ufology (Uruguay)",
@@ -769,6 +811,7 @@
   {
     "id": "santa-maria",
     "name": "Óscar Santa María Huertas",
+    "flag": "🇵🇪",
     "born": 1957,
     "section": "B",
     "section_label": "Testigo militar (piloto)",
@@ -786,6 +829,7 @@
   {
     "id": "choy",
     "name": "Anthony Choy",
+    "flag": "🇵🇪",
     "born": 1961,
     "section": "B",
     "section_label": "Investigador oficial (OIFAA-FAP)",
@@ -806,6 +850,7 @@
   {
     "id": "poher",
     "name": "Claude Poher",
+    "flag": "🇫🇷",
     "born": 1936,
     "section": "A",
     "section_label": "Investigador científico (GEPAN/CNES)",
@@ -824,6 +869,7 @@
   {
     "id": "clarke",
     "name": "David Clarke",
+    "flag": "🇬🇧",
     "born": 1967,
     "section": "D",
     "section_label": "Periodistas investigativos",
@@ -842,6 +888,7 @@
   {
     "id": "pope",
     "name": "Nick Pope",
+    "flag": "🇬🇧",
     "born": 1965,
     "death": 2026,
     "section": "B",
@@ -860,6 +907,7 @@
   {
     "id": "gevaerd",
     "name": "Ademar José Gevaerd",
+    "flag": "🇧🇷",
     "born": 1962,
     "death": 2022,
     "section": "D",
@@ -883,6 +931,7 @@
   {
     "id": "chamorro",
     "name": "Julio César Chamorro",
+    "flag": "🇵🇪",
     "born": 1957,
     "section": "B",
     "section_label": "Comandante FAP · fundador de la OIFAA",
@@ -903,6 +952,7 @@
   {
     "id": "lianza",
     "name": "Rubén Lianza",
+    "flag": "🇦🇷",
     "section": "B",
     "section_label": "Comodoro FAA · director del CIAE",
     "section_label_en": "FAA Commodore · director of CIAE",
@@ -922,6 +972,7 @@
   {
     "id": "petit",
     "name": "Marco Antônio Petit",
+    "flag": "🇧🇷",
     "born": 1957,
     "section": "A",
     "section_label": "Ufología de campo (Brasil)",
