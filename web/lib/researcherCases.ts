@@ -101,6 +101,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   // E — comisiones oficiales latinoamericanas
   chamorro: ["pucallpa-2008", "chulucanas-2001"],
   lianza: ["ciae-cefae-2011"],
+  bermudez: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
+  bravo: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
 
   // Brasil — ufología de campo
   petit: ["colares-1977", "varginha-1996"],
