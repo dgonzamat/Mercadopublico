@@ -1,0 +1,70 @@
+{
+  "id": "arquivo-nacional-brasil-2026",
+  "num": 111,
+  "name": "Arquivo Nacional · 893 registros OVNI (Brasil)",
+  "name_en": "National Archives · 893 UFO records (Brazil)",
+  "year_start": 2026,
+  "country": "BR",
+  "country_name": "Brasil",
+  "flag": "🇧🇷",
+  "location": {
+    "lat": -22.906,
+    "lng": -43.189,
+    "place": "Arquivo Nacional, Río de Janeiro"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 50,
+  "summary": "El Arquivo Nacional de Brasil mantiene público —vía la plataforma SIAN— un acervo de 893 registros de OVNIs (1952–2023), ordenados cronológicamente: informes, comunicaciones oficiales, imágenes, audios y dibujos. El flujo viene desde 2008, cuando el Comando da Aeronáutica empezó a derivar al archivo todo material que decide hacer público ('Fundo Óvnis'). En 2026, en pleno empuje de disclosure global, fue destacado como la divulgación UAP estatal más transparente del mundo — el contraste directo con la ambigüedad estratégica de EE.UU.",
+  "summary_en": "Brazil's National Archives keeps public —via the SIAN platform— a collection of 893 UFO records (1952–2023), arranged chronologically: reports, official communications, images, audio and drawings. The flow dates from 2008, when the Air Force Command began routing to the archive all material it decides to make public ('Óvnis Fund'). In 2026, amid the global disclosure push, it was highlighted as the world's most transparent state UAP disclosure — a direct contrast with the U.S. strategic ambiguity.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "document",
+  "whatHappened": "El Arquivo Nacional de Brasil mantiene un acervo público de 893 registros de OVNIs que abarcan de 1952 a 2023, organizados cronológicamente y accesibles vía el SIAN (Sistema de Informações do Arquivo Nacional). El conjunto —conocido como 'Fundo Óvnis'— incluye informes, comunicaciones oficiales, imágenes, audios y dibujos. El flujo institucional viene desde 2008: tras la campaña por libertad de información liderada por la Comissão Brasileira de Ufologia (CBU), el Comando da Aeronáutica (FAB) acordó derivar al Arquivo Nacional todo material sobre avistamientos cuyo secreto expire o que decida hacer público. El público incluso puede contribuir enviando material por correo a la unidad de normalización del archivo.\n\nEn 2026, en pleno empuje de disclosure global (con EE.UU. liberando archivos vía el sistema PURSUE), la prensa brasileña e internacional volvió a destacar el acervo y lo presentó como la divulgación UAP estatal más transparente del mundo. El contraste es analíticamente relevante: mientras el modelo estadounidense combina liberación parcial con non-confirmation simultánea (ambigüedad estratégica), Brasil mantiene un archivo abierto, chronológico y consultable de casi 900 reportes militares y civiles. No todos los 893 registros son de alta calidad evidencial —el acervo mezcla reportes mundanos con casos sólidos como Colares, Trindade y la Noite Oficial—, pero su existencia abierta es en sí misma un dato institucional.",
+  "whatHappened_en": "Brazil's National Archives maintains a public collection of 893 UFO records spanning 1952 to 2023, organized chronologically and accessible via SIAN (the National Archive Information System). The set —known as the 'Óvnis Fund'— includes reports, official communications, images, audio and drawings. The institutional flow dates from 2008: after the freedom-of-information campaign led by the Brazilian UFO Commission (CBU), the Air Force Command (FAB) agreed to route to the National Archives all sighting material whose secrecy expires or that it decides to make public. The public can even contribute by emailing material to the archive's normalization unit.\n\nIn 2026, amid the global disclosure push (with the U.S. releasing files via the PURSUE system), Brazilian and international press again highlighted the collection and presented it as the world's most transparent state UAP disclosure. The contrast is analytically relevant: while the U.S. model combines partial release with simultaneous non-confirmation (strategic ambiguity), Brazil maintains an open, chronological, searchable archive of nearly 900 military and civilian reports. Not all 893 records are of high evidential quality —the collection mixes mundane reports with solid cases like Colares, Trindade and the Official Night— but its open existence is itself an institutional datum.",
+  "whyMatters": "Brasil es el contraejemplo de transparencia del corpus: donde EE.UU. liberó goteos con non-confirmation, el Estado brasileño mantiene un archivo nacional abierto y consultable de casi 900 reportes desde 1952. Eso convierte a Brasil en el mejor laboratorio para estudiar la distribución real del fenómeno sin el filtro de la clasificación — y refuerza la tesis del corpus de que la documentación militar oficial de UAP no es exclusiva de EE.UU. El acervo es la fuente primaria estatal detrás de los casos brasileños del corpus.",
+  "whyMatters_en": "Brazil is the corpus's transparency counterexample: where the U.S. released trickles with non-confirmation, the Brazilian state maintains an open, searchable national archive of nearly 900 reports since 1952. That makes Brazil the best laboratory to study the phenomenon's real distribution without the classification filter — and reinforces the corpus thesis that official military UAP documentation is not exclusive to the U.S. The collection is the state primary source behind the corpus's Brazilian cases.",
+  "evidence": [
+    "893 registros de OVNIs (1952–2023) públicos vía SIAN, ordenados cronológicamente (informes, comunicaciones oficiales, imágenes, audios, dibujos).",
+    "Flujo desde 2008: el Comando da Aeronáutica deriva al Arquivo Nacional el material que hace público ('Fundo Óvnis'), tras la campaña FOIA de la CBU.",
+    "El público puede contribuir material al acervo por correo a la unidad de normalización del archivo.",
+    "2026: destacado como la divulgación UAP estatal más transparente del mundo, en contraste con la ambigüedad estratégica de EE.UU. (PURSUE)."
+  ],
+  "evidence_en": [
+    "893 UFO records (1952–2023) public via SIAN, chronologically ordered (reports, official communications, images, audio, drawings).",
+    "Flow since 2008: the Air Force Command routes to the National Archives the material it makes public ('Óvnis Fund'), after the CBU's FOIA campaign.",
+    "The public can contribute material to the collection by emailing the archive's normalization unit.",
+    "2026: highlighted as the world's most transparent state UAP disclosure, contrasting with U.S. strategic ambiguity (PURSUE)."
+  ],
+  "sources": [
+    {
+      "name": "Arquivo Nacional — 'Os OVNIs no Arquivo Nacional' (acervo Fundo Óvnis, SIAN)",
+      "url": "https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional"
+    },
+    {
+      "name": "Anomalien — Brazil Opens National UFO Archives, ~900 Sightings (2026)",
+      "url": "https://anomalien.com/brazil-opens-national-ufo-archives-releasing-files-on-nearly-900-sightings/"
+    },
+    {
+      "name": "Political Saucer — Brazil's UFO Files: The World's Most Transparent UAP Disclosure (2026)",
+      "url": "https://politicalsaucer.substack.com/p/brazils-ufo-files-the-worlds-most"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Un archivo estatal abierto de casi 900 reportes militares y civiles documenta el procesamiento institucional sostenido del fenómeno por una potencia no estadounidense, pero su apertura misma resta peso a la idea de un encubrimiento universal; no se pronuncia sobre el origen de los casos individuales.",
+      "rationaleEn": "An open state archive of nearly 900 military and civilian reports documents a non-U.S. power's sustained institutional processing of the phenomenon, but its very openness undercuts the idea of a universal cover-up; it does not pronounce on the origin of individual cases."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El acervo contiene casos sólidos no explicados (Colares, Trindade, Noite Oficial) junto a una mayoría de reportes mundanos; mantiene viva la hipótesis sin discriminar origen, y su valor es sobre todo metodológico —datos abiertos para estudiar la distribución real.",
+      "rationaleEn": "The collection contains solid unexplained cases (Colares, Trindade, Official Night) alongside a majority of mundane reports; it keeps the hypothesis alive without discriminating origin, and its value is mainly methodological —open data to study the real distribution."
+    }
+  ]
+}
