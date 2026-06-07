@@ -1,0 +1,57 @@
+{
+  "id": "fbi-occupant-memos-1960s",
+  "num": 113,
+  "name": "Memos FBI · 'crewmen' humanoides (PURSUE)",
+  "name_en": "FBI memos · humanoid 'crewmen' (PURSUE)",
+  "year_start": 1965,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.894,
+    "lng": -77.025,
+    "place": "FBI · registros desclasificados (PURSUE), Washington DC"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 28,
+  "summary": "Memos del FBI de los años 60, desclasificados en la entrega PURSUE (2026), que recogen reportes de testigos sobre 'crewmen' humanoides pequeños —con traje y casco— saliendo de craft no identificados. Pertenecen a la categoría de encuentros con ocupantes (CE3): valor evidencial bajo (testimonial, sin corroboración física), incluidos por completitud documental y como muestra del tipo de material que el FBI archivó.",
+  "summary_en": "FBI memos from the 1960s, declassified in the PURSUE release (2026), that log witness reports of small humanoid 'crewmen' —wearing suits and helmets— emerging from unidentified craft. They belong to the occupant-encounter category (CE3): low evidential value (testimonial, no physical corroboration), included for documentary completeness and as a sample of the kind of material the FBI archived.",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "Entre el material desclasificado en el sistema PURSUE (war.gov/ufo, 2026) figuran memorandos del FBI de la década de 1960 que registran reportes de testigos describiendo 'crewmen' —tripulantes humanoides de baja estatura, con trajes y cascos— que emergían de objetos no identificados. Corresponden a la categoría que la ufología clasifica como encuentros cercanos del tercer tipo (CE3, con ocupantes).\n\nEl encuadre epistémico es decisivo: estos memos documentan que el FBI recibió y archivó tales reportes, no que el FBI los validara. Son testimonios sin corroboración física —ni sensor, ni material, ni multi-testigo institucional verificado— y el propio Departamento de Guerra subraya que el material PURSUE 'no resuelto' no constituye prueba de origen extraterrestre. El valor de incluirlos en el corpus es mostrar el tipo de material que el aparato federal conservó durante décadas, manteniendo la distinción entre 'reporte archivado por una agencia' y 'evidencia'.",
+  "whatHappened_en": "Among the material declassified in the PURSUE system (war.gov/ufo, 2026) are FBI memoranda from the 1960s logging witness reports describing 'crewmen' —short humanoid occupants wearing suits and helmets— emerging from unidentified objects. They belong to what ufology classifies as close encounters of the third kind (CE3, with occupants).\n\nThe epistemic framing is decisive: these memos document that the FBI received and filed such reports, not that the FBI validated them. They are testimonies without physical corroboration —no sensor, no material, no verified institutional multi-witness— and the Department of War itself stresses that 'unresolved' PURSUE material does not constitute proof of extraterrestrial origin. The value of including them in the corpus is to show the kind of material the federal apparatus retained for decades, while keeping the distinction between 'report filed by an agency' and 'evidence'.",
+  "whyMatters": "Marca el piso evidencial del corpus: los reportes de ocupantes son la categoría más débil (testimonial, sin corroboración) y la más permeable a la confusión y la fabricación. Anclarlos con su tier bajo y su encuadre escéptico es parte de la disciplina del corpus —incluir el dato de que existen sin elevarlo a evidencia—. También documenta que el FBI, no solo el estamento militar, fue receptor histórico de estos reportes.",
+  "whyMatters_en": "It marks the corpus's evidential floor: occupant reports are the weakest category (testimonial, without corroboration) and the most permeable to confusion and fabrication. Anchoring them with their low tier and skeptical framing is part of the corpus's discipline —recording that they exist without elevating them to evidence. It also documents that the FBI, not only the military establishment, was a historical recipient of these reports.",
+  "evidence": [
+    "Memos del FBI de los años 60 desclasificados en PURSUE (war.gov/ufo, 2026).",
+    "Contenido: reportes de testigos sobre 'crewmen' humanoides pequeños con traje y casco saliendo de craft no identificados.",
+    "Categoría CE3 (encuentros con ocupantes): testimonial, sin corroboración física ni de sensor.",
+    "El Departamento de Guerra subraya que el material 'no resuelto' no prueba origen extraterrestre."
+  ],
+  "evidence_en": [
+    "FBI memos from the 1960s declassified in PURSUE (war.gov/ufo, 2026).",
+    "Content: witness reports of small humanoid 'crewmen' in suits and helmets emerging from unidentified craft.",
+    "CE3 category (occupant encounters): testimonial, without physical or sensor corroboration.",
+    "The Department of War stresses that 'unresolved' material does not prove extraterrestrial origin."
+  ],
+  "sources": [
+    {
+      "name": "Sentinel Assam — 'Pentagon Declassifies Decades of UAP Files, Reveals Global Sightings and Four-Foot Humanoid Reports' (2026)",
+      "url": "https://www.sentinelassam.com/topheadlines/pentagon-declassifies-decades-of-uap-files-reveals-global-sightings-and-four-foot-humanoid-reports"
+    },
+    {
+      "name": "PURSUE — war.gov/ufo (memos FBI, eyewitness accounts)",
+      "url": "https://www.war.gov/ufo/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Los reportes de ocupantes mantienen viva la hipótesis de entidades no humanas como categoría, pero su naturaleza testimonial y sin corroboración les da peso mínimo; el caso explícitamente no los trata como evidencia, solo como material archivado.",
+      "rationaleEn": "Occupant reports keep the non-human-entities hypothesis alive as a category, but their testimonial, uncorroborated nature gives them minimal weight; the case explicitly does not treat them as evidence, only as filed material."
+    }
+  ]
+}
