@@ -3,9 +3,9 @@
   "num": 64,
   "name": "Wonsan-Sunchon (Corea)",
   "year_start": 1952,
-  "country": "US",
-  "country_name": "Estados Unidos",
-  "flag": "🇺🇸",
+  "country": "KP",
+  "country_name": "Corea del Norte",
+  "flag": "🇰🇵",
   "location": {
     "lat": 39.15,
     "lng": 127.43,

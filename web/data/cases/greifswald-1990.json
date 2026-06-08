@@ -1,0 +1,44 @@
+{
+  "id": "greifswald-1990",
+  "num": 126,
+  "name": "Greifswald · luces masivas + 6 videos (RDA)",
+  "name_en": "Greifswald · mass lights + 6 videos (East Germany)",
+  "year_start": 1990,
+  "country": "DE",
+  "country_name": "Alemania",
+  "flag": "🇩🇪",
+  "location": {
+    "lat": 54.14,
+    "lng": 13.68,
+    "place": "Bahía de Greifswald, cerca de la central nuclear de Lubmin"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 35,
+  "summary": "La noche del 24 de agosto de 1990, pocos meses antes de la reunificación alemana, cientos de personas en Greifswald, Lubmin y localidades vecinas del antiguo Este observaron durante casi una hora un grupo de 6-7 luces amarillentas suspendidas sobre la bahía, cerca de la central nuclear de Lubmin. El episodio quedó registrado en al menos seis videos y varias fotos —uno de los avistamientos masivos mejor documentados en cámara de Europa—. Encuadre honesto: la explicación más discutida es el lanzamiento de bengalas de paracaídas en un ejercicio militar; el valor del caso es la documentación visual múltiple y simultánea, no una anomalía probada.",
+  "summary_en": "On the night of August 24, 1990, months before German reunification, hundreds of people in Greifswald, Lubmin and neighboring towns of the former East watched for almost an hour a cluster of 6-7 yellowish lights hanging over the bay, near the Lubmin nuclear power plant. The episode was captured in at least six videos and several photos —one of Europe's best camera-documented mass sightings. Honest framing: the most-discussed explanation is parachute flares dropped in a military exercise; the case's value is the multiple simultaneous visual documentation, not a proven anomaly.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La noche del 24 de agosto de 1990, en las últimas semanas de existencia de la República Democrática Alemana, cientos de habitantes de Greifswald, Lubmin, Wolgast y otras localidades de la costa báltica observaron un fenómeno luminoso sobre la bahía de Greifswald, en las inmediaciones de la central nuclear de Lubmin. El avistamiento se prolongó cerca de una hora: un grupo de seis o siete luces amarillentas o anaranjadas que aparecían suspendidas en formación, a veces alineadas, sobre el agua.\n\nLo que distingue al caso es el volumen de registro visual. Al menos seis personas distintas grabaron el fenómeno en video desde distintos puntos, y se tomaron varias fotografías —un nivel de documentación en cámara poco común para un avistamiento masivo de esa época. Investigadores civiles (incluida la red MUFON) analizaron posteriormente las imágenes. La cercanía a una instalación nuclear amplificó la atención pública.\n\nEl encuadre del corpus es deliberadamente cauto. La explicación más recurrente y plausible es el lanzamiento de bengalas de paracaídas (parachute flares) durante un ejercicio militar sobre el Báltico: bengalas que arden colgando lentamente producen exactamente grupos de luces amarillentas y suspendidas. Quienes defienden la anomalía objetan que no constaría un ejercicio esa noche y que algunas luces habrían descrito giros bruscos, pero esos puntos no están firmemente establecidos. Lo que ancla el caso no es la naturaleza del objeto, sino el hecho institucionalmente útil de un avistamiento masivo, multi-testigo y multi-cámara, documentado y discutido en el registro público.",
+  "whatHappened_en": "On the night of August 24, 1990, in the final weeks of the German Democratic Republic, hundreds of residents of Greifswald, Lubmin, Wolgast and other Baltic-coast towns watched a luminous phenomenon over Greifswald Bay, close to the Lubmin nuclear power plant. The sighting lasted about an hour: a cluster of six or seven yellowish or orange lights that appeared to hang in formation, sometimes aligned, over the water.\n\nWhat sets the case apart is the volume of visual record. At least six different people filmed the phenomenon from different vantage points, and several photographs were taken —a level of camera documentation uncommon for a mass sighting of that era. Civilian investigators (including the MUFON network) later analyzed the footage. Proximity to a nuclear facility amplified public attention.\n\nThe corpus framing is deliberately cautious. The most recurrent and plausible explanation is the dropping of parachute flares during a military exercise over the Baltic: slowly descending burning flares produce exactly such clusters of hanging yellowish lights. Those who argue for an anomaly object that no exercise is on record that night and that some lights made sharp turns, but those points are not firmly established. What anchors the case is not the object's nature but the institutionally useful fact of a mass, multi-witness, multi-camera sighting, documented and debated in the public record.",
+  "whyMatters": "Primer caso de Alemania en el corpus y uno de los avistamientos masivos mejor documentados en cámara de Europa: seis videos independientes y cientos de testigos sobre una bahía junto a una central nuclear. Su explicación más probable son bengalas de un ejercicio militar, por lo que se incluye —como Marruecos 1976 o Irlanda 2018— por el valor del registro multi-testigo y multi-cámara, no por elevar el fenómeno a anomalía.",
+  "whyMatters_en": "Germany's first corpus case and one of Europe's best camera-documented mass sightings: six independent videos and hundreds of witnesses over a bay next to a nuclear plant. Its most likely explanation is flares from a military exercise, so it is included —like Morocco 1976 or Ireland 2018— for the value of the multi-witness, multi-camera record, not to elevate the phenomenon to an anomaly.",
+  "evidence": [
+    "Cientos de testigos en Greifswald, Lubmin y localidades vecinas durante ~1 hora (24 ago 1990).",
+    "Al menos seis videos independientes y varias fotos — documentación en cámara excepcional para la época.",
+    "Avistamiento sobre la bahía junto a la central nuclear de Lubmin; analizado luego por MUFON.",
+    "Encuadre honesto: la explicación más plausible es el lanzamiento de bengalas de paracaídas en un ejercicio militar."
+  ],
+  "evidence_en": [
+    "Hundreds of witnesses in Greifswald, Lubmin and neighboring towns for ~1 hour (Aug 24, 1990).",
+    "At least six independent videos and several photos — exceptional camera documentation for the era.",
+    "Sighting over the bay next to the Lubmin nuclear power plant; later analyzed by MUFON.",
+    "Honest framing: the most plausible explanation is the dropping of parachute flares in a military exercise."
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Greifswald lights (Greifswalder Vorkommnis, 24 ago 1990)",
+      "url": "https://en.wikipedia.org/wiki/Greifswald_lights"
+    }
+  ]
+}
