@@ -158,3 +158,11 @@ Si un caso no tiene rich content, la página de detalle muestra fallback "⏳ Ca
 - **No** hardcodear el número total de casos (51 vs 52) — derivar de `cases.length`
 - **No** usar `node:` scheme en imports de Next.js (`node:fs` falla; usar `fs`)
 - **No** generar `cases.json` manualmente para commitear — siempre vía `npm run build` / `scripts/build-cases.mjs`
+
+### Deuda pendiente · fotos de actores
+
+Estado (jun 2026): **17/75 actores tienen foto**; los 58 restantes usan el avatar de iniciales (fallback de `ResearcherAvatar`). No es un defecto de datos — el audit pasa 0/0 — sino cobertura incompleta.
+
+Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles** (typos, números, IDs de Flickr, sufijos "official portrait"), así que **hay que copiarlos de Commons, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
+
+Para completarlas hace falta **resolver el filename exacto vía la API de Commons**, que requiere `commons.wikimedia.org` en el **allowlist de red del entorno** (hoy bloqueado: `Host not in allowlist` / `403` para todo host externo de imágenes). Con ese dominio habilitado, una sesión puede consultar la API, sacar los 58 filenames y poblar el lote verificado (`scripts/fetch-researcher-photos.sh` es el punto de partida). La foto la renderiza el navegador del usuario, no el build — el bloqueo solo afecta la *resolución* del filename, no el render final.
