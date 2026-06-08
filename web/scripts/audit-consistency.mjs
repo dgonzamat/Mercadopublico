@@ -137,6 +137,9 @@ const EDITORIAL_RANGES_OK = new Set([
   "95",
   // Whole-number priors (must equal a hypothesis prior to pass)
   "88", "70", "28", "22", "6",
+  // Effective-value cites in about/page.tsx Ch.4 + clamp note: programas
+  // clasificados effective = 99 (clamped), fenómeno natural effective ≈ 16.
+  "99", "16",
 ]);
 
 /**
