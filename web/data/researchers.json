@@ -1431,5 +1431,43 @@
       {"name": "Fox News — 'Non-human bodies allegedly recovered from crashed UFO, documentary filmmaker claims'", "url": "https://www.foxnews.com/media/non-human-bodies-allegedly-recovered-crashed-ufo-documentary-filmmaker-claims"},
       {"name": "IBTimes UK — 'Dan Farah Claims 80-Year Cover-Up of Non-Human Life'", "url": "https://www.ibtimes.co.uk/age-disclosure-ufo-cover-1792238"}
     ]
+  },
+  {
+    "id": "salas",
+    "name": "Robert Salas",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Testigo militar · USAF (incidente Malmstrom)",
+    "section_label_en": "Military witness · USAF (Malmstrom incident)",
+    "credentials": "Capitán USAF (ret.) · ex Deputy Missile Combat Crew Commander, Malmstrom AFB · testigo del Disclosure Project (2001)",
+    "credentials_en": "USAF Captain (ret.) · former Deputy Missile Combat Crew Commander, Malmstrom AFB · witness at the Disclosure Project (2001)",
+    "bio_short": "Oficial de la USAF que el 16 de marzo de 1967 estaba de turno como Deputy Missile Combat Crew Commander en el Launch Control Center Oscar-Flight de Malmstrom AFB (Montana) cuando sus diez misiles Minuteman ICBM pasaron simultáneamente a estado 'No-Go', coincidiendo con el reporte de un objeto luminoso sobre el bunker. Es el testigo central y nominal del incidente. En el evento del National Press Club del Disclosure Project (9 de mayo de 2001) llevó su testimonio al registro público, y luego lo documentó en los libros 'Faded Giant' y 'Unidentified'.",
+    "bio_short_en": "USAF officer who, on March 16, 1967, was on duty as Deputy Missile Combat Crew Commander at Malmstrom AFB's Oscar-Flight Launch Control Center (Montana) when his ten Minuteman ICBMs simultaneously went to 'No-Go' status, coinciding with a reported luminous object over the bunker. He is the central, named witness of the incident. At the Disclosure Project's National Press Club event (May 9, 2001) he put his testimony on the public record, later documenting it in the books 'Faded Giant' and 'Unidentified'.",
+    "works": [
+      {"year": 2001, "title": "Testimonio en el Disclosure Project (National Press Club)", "contribution": "Llevó el incidente de Malmstrom (1967) al registro público bajo su nombre", "contribution_en": "Brought the Malmstrom incident (1967) onto the public record under his name"},
+      {"year": 2005, "title": "Faded Giant / Unidentified", "contribution": "Documentación de primera mano del apagado de misiles", "contribution_en": "First-hand documentation of the missile shutdown"}
+    ],
+    "sources": [
+      {"name": "The Disclosure Project — testimonio de Robert Salas (National Press Club, 2001)", "note": "Testimonio del incidente de Malmstrom AFB (1967).", "note_en": "Testimony on the Malmstrom AFB incident (1967)."}
+    ]
+  },
+  {
+    "id": "callahan",
+    "name": "John Callahan",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Denunciante institucional · FAA (caso JAL 1628)",
+    "section_label_en": "Institutional whistleblower · FAA (JAL 1628 case)",
+    "credentials": "Ex Division Chief, Accidents & Investigations Branch, FAA · testigo del Disclosure Project (2001)",
+    "credentials_en": "Former Division Chief, Accidents & Investigations Branch, FAA · witness at the Disclosure Project (2001)",
+    "bio_short": "Ex jefe de división de la rama de Accidentes e Investigaciones de la FAA. Manejó el expediente del vuelo Japan Airlines 1628 (17 de noviembre de 1986, Alaska), uno de los pocos casos con confirmación de radar terrestre (ARTCC) y de a bordo a la vez. Afirma haber conservado la data de radar y la grabación de cabina cuando, según su relato, la FAA y la CIA buscaban que el episodio 'nunca hubiera ocurrido'. En el National Press Club del Disclosure Project (9 de mayo de 2001) llevó ese relato al registro público.",
+    "bio_short_en": "Former division chief of the FAA's Accidents & Investigations branch. He handled the Japan Airlines 1628 file (November 17, 1986, Alaska), one of the few cases with both ground (ARTCC) and airborne radar confirmation. He says he preserved the radar data and cockpit recording when, by his account, the FAA and CIA wanted the episode to 'have never happened.' At the Disclosure Project's National Press Club event (May 9, 2001) he put that account on the public record.",
+    "works": [
+      {"year": 1986, "title": "Expediente FAA del vuelo JAL 1628", "contribution": "Retención de la data de radar y la grabación frente a la presión de supresión", "contribution_en": "Retention of the radar data and recording against suppression pressure"},
+      {"year": 2001, "title": "Testimonio en el Disclosure Project (National Press Club)", "contribution": "Denuncia pública del manejo institucional del caso JAL 1628", "contribution_en": "Public disclosure of the institutional handling of the JAL 1628 case"}
+    ],
+    "sources": [
+      {"name": "The Disclosure Project — testimonio de John Callahan (National Press Club, 2001)", "note": "Testimonio sobre el manejo del caso JAL 1628 (1986).", "note_en": "Testimony on the handling of the JAL 1628 case (1986)."}
+    ]
   }
 ]
