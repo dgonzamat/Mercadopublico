@@ -1411,5 +1411,25 @@
       {"name": "New Paradigm Institute — Danny Sheehan", "url": "https://newparadigminstitute.org/danny-sheehan/"},
       {"name": "Daniel Sheehan — Constitutional Attorney & UAP Disclosure", "url": "https://dannysheehan.com/"}
     ]
+  },
+  {
+    "id": "farah",
+    "name": "Dan Farah",
+    "flag": "🇺🇸",
+    "section": "D",
+    "section_label": "Cineasta de disclosure",
+    "section_label_en": "Disclosure filmmaker",
+    "credentials": "Productor y director de cine/TV · director de 'The Age of Disclosure' (2025)",
+    "credentials_en": "Film/TV producer and director · director of 'The Age of Disclosure' (2025)",
+    "bio_short": "Productor de Hollywood que dirigió 'The Age of Disclosure', documental estrenado en el SXSW (marzo de 2025) y luego en streaming. Reúne a 34 altos miembros del gobierno, las fuerzas armadas y la comunidad de inteligencia de EE.UU. que afirman, on-record, un encubrimiento de 80 años sobre vida no humana y una carrera secreta (EE.UU., Rusia, China) por la ingeniería inversa de tecnología de origen no humano. Varios entrevistados dicen haber visto craft recuperados y cuerpos no humanos de distintas especies; en 2026 las declaraciones de Farah a Fox News sobre esos cuerpos amplificaron el debate. Su valor es testimonial: son declaraciones de funcionarios, no evidencia física confirmada, y la AARO niega tener información que sustente programas de posesión o reverse-engineering.",
+    "bio_short_en": "A Hollywood producer who directed 'The Age of Disclosure', a documentary that premiered at SXSW (March 2025) and later streamed. It gathers 34 senior members of the U.S. government, military and intelligence community who claim, on the record, an 80-year cover-up of non-human life and a secret race (U.S., Russia, China) to reverse-engineer technology of non-human origin. Several interviewees say they have seen recovered craft and non-human bodies of different species; in 2026 Farah's statements to Fox News about those bodies amplified the debate. Its value is testimonial: these are officials' statements, not confirmed physical evidence, and AARO denies holding information substantiating possession or reverse-engineering programs.",
+    "works": [
+      {"year": 2025, "title": "The Age of Disclosure", "contribution": "Documental con 34 oficiales on-record sobre el alegado encubrimiento de 80 años (craft y cuerpos recuperados)", "contribution_en": "Documentary with 34 officials on the record about the alleged 80-year cover-up (recovered craft and bodies)"}
+    ],
+    "sources": [
+      {"name": "The Hollywood Reporter — 'The Age of Disclosure' Review (Dan Farah)", "url": "https://www.hollywoodreporter.com/movies/movie-reviews/the-age-of-disclosure-review-ufos-aliens-dan-farah-1236158783/"},
+      {"name": "Fox News — 'Non-human bodies allegedly recovered from crashed UFO, documentary filmmaker claims'", "url": "https://www.foxnews.com/media/non-human-bodies-allegedly-recovered-crashed-ufo-documentary-filmmaker-claims"},
+      {"name": "IBTimes UK — 'Dan Farah Claims 80-Year Cover-Up of Non-Human Life'", "url": "https://www.ibtimes.co.uk/age-disclosure-ufo-cover-1792238"}
+    ]
   }
 ]
