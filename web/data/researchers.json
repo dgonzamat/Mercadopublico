@@ -1292,5 +1292,144 @@
       {"name": "Center for UFO Studies (CUFOS)", "url": "https://cufos.org/"},
       {"name": "Jennie Zeidman, 'A Helicopter-UFO Encounter Over Ohio' (CUFOS, 1979)", "note": "Monografía del caso Coyne/Mansfield", "note_en": "Monograph on the Coyne/Mansfield case"}
     ]
+  },
+  {
+    "id": "gillibrand",
+    "name": "Kirsten Gillibrand",
+    "flag": "🇺🇸",
+    "born": 1966,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Senadora de EE.UU. (D-NY) · Comité de Servicios Armados del Senado",
+    "credentials_en": "US Senator (D-NY) · Senate Armed Services Committee",
+    "bio_short": "Principal arquitecta legislativa de la infraestructura UAP del gobierno de EE.UU. A través de enmiendas a la Ley de Autorización de Defensa (NDAA) impulsó la creación de la oficina que se convirtió en la AARO (All-domain Anomaly Resolution Office), con mandato de reporte obligatorio, financiamiento y un mecanismo seguro para denunciantes. Es la fuerza más sostenida del Senado para institucionalizar la investigación del fenómeno por fuera del estigma.",
+    "bio_short_en": "The principal legislative architect of the U.S. government's UAP infrastructure. Through National Defense Authorization Act (NDAA) amendments she drove the creation of the office that became AARO (All-domain Anomaly Resolution Office), with a mandate for mandatory reporting, funding and a secure whistleblower mechanism. She is the Senate's most sustained force to institutionalize investigation of the phenomenon beyond stigma.",
+    "works": [
+      {"year": 2021, "title": "Enmienda NDAA — oficina UAP", "contribution": "Estableció por ley la oficina precursora de AARO y el reporte obligatorio", "contribution_en": "Statutorily established the precursor office to AARO and mandatory reporting"},
+      {"year": 2023, "title": "Transparencia / financiamiento AARO", "contribution": "Sostuvo el financiamiento y las exigencias de transparencia sobre la comunidad de inteligencia", "contribution_en": "Sustained AARO funding and transparency demands on the intelligence community"}
+    ],
+    "sources": [
+      {"name": "Oficina de la senadora Kirsten Gillibrand, Senado de EE.UU.", "url": "https://www.gillibrand.senate.gov/"}
+    ]
+  },
+  {
+    "id": "schumer",
+    "name": "Chuck Schumer",
+    "flag": "🇺🇸",
+    "born": 1950,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Senador de EE.UU. (D-NY) · Líder de la Mayoría del Senado",
+    "credentials_en": "US Senator (D-NY) · Senate Majority Leader",
+    "bio_short": "Co-autor —junto al senador republicano Mike Rounds— del UAP Disclosure Act of 2023, modelado sobre la JFK Records Act: proponía una Review Board independiente para desclasificar registros y un mecanismo de 'eminent domain' del gobierno sobre material y tecnología de origen no humano en manos de privados. Que el líder de la mayoría del Senado pusiera su capital político detrás de la desclasificación elevó el estatus institucional del tema.",
+    "bio_short_en": "Co-author —with Republican Senator Mike Rounds— of the UAP Disclosure Act of 2023, modeled on the JFK Records Act: it proposed an independent Review Board to declassify records and a government 'eminent domain' mechanism over non-human-origin material and technology held by private parties. That the Senate Majority Leader put his political capital behind disclosure raised the issue's institutional status.",
+    "works": [
+      {"year": 2023, "title": "UAP Disclosure Act of 2023", "contribution": "Co-autor del proyecto de desclasificación más ambicioso (Review Board + eminent domain)", "contribution_en": "Co-author of the most ambitious disclosure bill (Review Board + eminent domain)"}
+    ],
+    "sources": [
+      {"name": "UAP Disclosure Act of 2023 (Schumer–Rounds), Congreso de EE.UU.", "url": "https://www.congress.gov/"}
+    ]
+  },
+  {
+    "id": "moskowitz",
+    "name": "Jared Moskowitz",
+    "flag": "🇺🇸",
+    "born": 1980,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Representante de EE.UU. (D-FL) · Comité de Supervisión de la Cámara",
+    "credentials_en": "US Representative (D-FL) · House Oversight Committee",
+    "bio_short": "Una de las voces demócratas más activas sobre UAP en la Cámara. Desde el Comité de Supervisión participó en las audiencias de 2023 y 2024 presionando por transparencia y por protección de denunciantes, y se sumó al grupo bipartidista que —junto a Luna, Burchett y Burlison— mantuvo el tema en agenda cruzando líneas partidarias.",
+    "bio_short_en": "One of the most active Democratic voices on UAP in the House. From the Oversight Committee he took part in the 2023 and 2024 hearings pressing for transparency and whistleblower protection, joining the bipartisan group that —with Luna, Burchett and Burlison— kept the issue on the agenda across party lines.",
+    "works": [
+      {"year": 2023, "title": "Audiencia de Supervisión sobre UAP (julio 2023)", "contribution": "Interrogó a los testigos (Grusch, Graves, Fravor) por transparencia", "contribution_en": "Questioned the witnesses (Grusch, Graves, Fravor) on transparency"},
+      {"year": 2024, "title": "Audiencias UAP (noviembre 2024)", "contribution": "Presión bipartidista continuada sobre el Pentágono y la comunidad de inteligencia", "contribution_en": "Continued bipartisan pressure on the Pentagon and the intelligence community"}
+    ],
+    "sources": [
+      {"name": "Oficina del representante Jared Moskowitz, Cámara de Representantes de EE.UU.", "url": "https://moskowitz.house.gov/"}
+    ]
+  },
+  {
+    "id": "gallaudet",
+    "name": "Tim Gallaudet",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Informante institucional (US Navy / NOAA)",
+    "section_label_en": "Institutional whistleblower (US Navy / NOAA)",
+    "credentials": "Contralmirante US Navy (R) · ex Oceanógrafo de la Armada · ex administrador interino de la NOAA · PhD en oceanografía",
+    "credentials_en": "US Navy Rear Admiral (Ret.) · former Oceanographer of the Navy · former Acting NOAA Administrator · PhD in oceanography",
+    "bio_short": "Sirvió 32 años en la Armada de EE.UU. como oficial de meteorología y oceanografía, retirándose como Oceanógrafo de la Armada (2017); luego fue subsecretario de Comercio para Océanos y Atmósfera y administrador interino de la NOAA (2017–2021). Ganó notoriedad al revelar un email clasificado de 2015 ('URGENT SAFETY OF FLIGHT ISSUE') del Fleet Forces Command que advertía de casi-colisiones con un objeto y referenciaba el video 'Go Fast'; el correo desapareció de todas las cuentas al día siguiente. Testificó ante la House Oversight el 13 de noviembre de 2024. Es la principal voz que insiste en la dimensión transmedium y oceánica del fenómeno (objetos sumergibles no identificados).",
+    "bio_short_en": "He served 32 years in the U.S. Navy as a meteorology and oceanography officer, retiring as Oceanographer of the Navy (2017); he then was Assistant Secretary of Commerce for Oceans and Atmosphere and Acting NOAA Administrator (2017–2021). He gained prominence by revealing a classified 2015 email ('URGENT SAFETY OF FLIGHT ISSUE') from Fleet Forces Command warning of near-midair collisions with an object and referencing the 'Go Fast' video; the email vanished from all accounts the next day. He testified before House Oversight on November 13, 2024. He is the leading voice insisting on the transmedium and oceanic dimension of the phenomenon (unidentified submersible objects).",
+    "works": [
+      {"year": 2015, "title": "Email 'URGENT SAFETY OF FLIGHT ISSUE'", "contribution": "Receptor y divulgador del correo del Fleet Forces Command (video Go Fast) borrado al día siguiente", "contribution_en": "Recipient and discloser of the Fleet Forces Command email (Go Fast video) wiped the next day"},
+      {"year": 2024, "title": "Testimonio ante la House Oversight (13 nov 2024)", "contribution": "Testigo institucional que pidió transparencia y atención al dominio oceánico/transmedium", "contribution_en": "Institutional witness who called for transparency and attention to the oceanic/transmedium domain"}
+    ],
+    "sources": [
+      {"name": "Written Testimony by Dr. Tim Gallaudet, Rear Admiral, U.S. Navy (Ret.) — House Oversight (13 nov 2024)", "url": "https://oversight.house.gov/wp-content/uploads/2024/11/Updated-Testimony-Gallaudet.pdf"},
+      {"name": "DefenseScoop — 'Former Naval commander Timothy Gallaudet agrees to testify at UAP hearing' (2024)", "url": "https://defensescoop.com/2024/11/06/former-naval-commander-timothy-gallaudet-agrees-testify-uap-hearing/"}
+    ]
+  },
+  {
+    "id": "james-fox",
+    "name": "James Fox",
+    "flag": "🇺🇸",
+    "section": "D",
+    "section_label": "Cineasta de disclosure",
+    "section_label_en": "Disclosure filmmaker",
+    "credentials": "Documentalista estadounidense · director de cine de investigación UAP",
+    "credentials_en": "American documentary filmmaker · UAP investigative film director",
+    "bio_short": "Director de algunos de los documentales de disclosure más vistos: 'I Know What I Saw' (2009), que reunió a pilotos y oficiales militares y de gobierno hablando on-record; 'The Phenomenon' (2020), un repaso histórico del fenómeno con testimonios de primera mano; y 'Moment of Contact' (2022), su investigación de campo del caso Varginha (Brasil, 1996). Su método es periodístico-documental: lleva a testigos institucionales a hablar frente a cámara, no a especular.",
+    "bio_short_en": "Director of some of the most-watched disclosure documentaries: 'I Know What I Saw' (2009), which gathered pilots and military and government officials speaking on the record; 'The Phenomenon' (2020), a historical survey of the phenomenon with first-hand testimony; and 'Moment of Contact' (2022), his field investigation of the Varginha case (Brazil, 1996). His method is journalistic-documentary: he gets institutional witnesses to speak on camera, not to speculate.",
+    "works": [
+      {"year": 2009, "title": "I Know What I Saw", "contribution": "Documental con pilotos y oficiales militares/gubernamentales on-record", "contribution_en": "Documentary with pilots and military/government officials on the record"},
+      {"year": 2020, "title": "The Phenomenon", "contribution": "Repaso histórico del fenómeno con testimonios de primera mano", "contribution_en": "Historical survey of the phenomenon with first-hand testimony"},
+      {"year": 2022, "title": "Moment of Contact", "contribution": "Investigación de campo del caso Varginha (1996)", "contribution_en": "Field investigation of the Varginha case (1996)"}
+    ],
+    "sources": [
+      {"name": "The Phenomenon (2020) / Moment of Contact (2022) — documentales dirigidos por James Fox", "note": "Filmografía de disclosure: I Know What I Saw, The Phenomenon, Moment of Contact", "note_en": "Disclosure filmography: I Know What I Saw, The Phenomenon, Moment of Contact"}
+    ]
+  },
+  {
+    "id": "sheehan",
+    "name": "Daniel Sheehan",
+    "flag": "🇺🇸",
+    "section": "C",
+    "section_label": "Abogado constitucional · disclosure (New Paradigm Institute)",
+    "section_label_en": "Constitutional attorney · disclosure (New Paradigm Institute)",
+    "credentials": "Abogado constitucional (Harvard) · fundador del New Paradigm Institute · litigante de Pentagon Papers, Silkwood e Irán-Contra",
+    "credentials_en": "Constitutional attorney (Harvard) · founder of the New Paradigm Institute · litigator on the Pentagon Papers, Silkwood and Iran-Contra",
+    "bio_short": "Abogado litigante de derechos civiles con más de cinco décadas de carrera —Pentagon Papers, caso Silkwood, Irán-Contra—. Su vínculo con el tema UAP se remonta a la administración Carter, cuando fue consultado sobre archivos clasificados. En 2023 fundó el New Paradigm Institute, donde actúa como General Counsel y director estratégico para forzar, por vías legales y constitucionales, la divulgación de UAP por parte de gobiernos, corporaciones y particulares, separando dato verificable de especulación.",
+    "bio_short_en": "A civil-rights litigation attorney with over five decades of practice —Pentagon Papers, the Silkwood case, Iran-Contra. His connection to the UAP issue dates back to the Carter administration, when he was consulted on classified files. In 2023 he founded the New Paradigm Institute, where he serves as General Counsel and Strategic Director to compel, through legal and constitutional avenues, the disclosure of UAP by governments, corporations and private parties, separating verifiable data from speculation.",
+    "works": [
+      {"year": 2023, "title": "Fundación del New Paradigm Institute", "contribution": "Vehículo legal y educativo para forzar la divulgación de UAP", "contribution_en": "Legal and educational vehicle to compel UAP disclosure"},
+      {"year": 2023, "title": "Asesoría legal a denunciantes UAP", "contribution": "Apoyo legal y estratégico a testigos y a nuevas audiencias del Congreso", "contribution_en": "Legal and strategic support to witnesses and new congressional hearings"}
+    ],
+    "sources": [
+      {"name": "New Paradigm Institute — Danny Sheehan", "url": "https://newparadigminstitute.org/danny-sheehan/"},
+      {"name": "Daniel Sheehan — Constitutional Attorney & UAP Disclosure", "url": "https://dannysheehan.com/"}
+    ]
+  },
+  {
+    "id": "farah",
+    "name": "Dan Farah",
+    "flag": "🇺🇸",
+    "section": "D",
+    "section_label": "Cineasta de disclosure",
+    "section_label_en": "Disclosure filmmaker",
+    "credentials": "Productor y director de cine/TV · director de 'The Age of Disclosure' (2025)",
+    "credentials_en": "Film/TV producer and director · director of 'The Age of Disclosure' (2025)",
+    "bio_short": "Productor de Hollywood que dirigió 'The Age of Disclosure', documental estrenado en el SXSW (marzo de 2025) y luego en streaming. Reúne a 34 altos miembros del gobierno, las fuerzas armadas y la comunidad de inteligencia de EE.UU. que afirman, on-record, un encubrimiento de 80 años sobre vida no humana y una carrera secreta (EE.UU., Rusia, China) por la ingeniería inversa de tecnología de origen no humano. Varios entrevistados dicen haber visto craft recuperados y cuerpos no humanos de distintas especies; en 2026 las declaraciones de Farah a Fox News sobre esos cuerpos amplificaron el debate. Su valor es testimonial: son declaraciones de funcionarios, no evidencia física confirmada, y la AARO niega tener información que sustente programas de posesión o reverse-engineering.",
+    "bio_short_en": "A Hollywood producer who directed 'The Age of Disclosure', a documentary that premiered at SXSW (March 2025) and later streamed. It gathers 34 senior members of the U.S. government, military and intelligence community who claim, on the record, an 80-year cover-up of non-human life and a secret race (U.S., Russia, China) to reverse-engineer technology of non-human origin. Several interviewees say they have seen recovered craft and non-human bodies of different species; in 2026 Farah's statements to Fox News about those bodies amplified the debate. Its value is testimonial: these are officials' statements, not confirmed physical evidence, and AARO denies holding information substantiating possession or reverse-engineering programs.",
+    "works": [
+      {"year": 2025, "title": "The Age of Disclosure", "contribution": "Documental con 34 oficiales on-record sobre el alegado encubrimiento de 80 años (craft y cuerpos recuperados)", "contribution_en": "Documentary with 34 officials on the record about the alleged 80-year cover-up (recovered craft and bodies)"}
+    ],
+    "sources": [
+      {"name": "The Hollywood Reporter — 'The Age of Disclosure' Review (Dan Farah)", "url": "https://www.hollywoodreporter.com/movies/movie-reviews/the-age-of-disclosure-review-ufos-aliens-dan-farah-1236158783/"},
+      {"name": "Fox News — 'Non-human bodies allegedly recovered from crashed UFO, documentary filmmaker claims'", "url": "https://www.foxnews.com/media/non-human-bodies-allegedly-recovered-crashed-ufo-documentary-filmmaker-claims"},
+      {"name": "IBTimes UK — 'Dan Farah Claims 80-Year Cover-Up of Non-Human Life'", "url": "https://www.ibtimes.co.uk/age-disclosure-ufo-cover-1792238"}
+    ]
   }
 ]

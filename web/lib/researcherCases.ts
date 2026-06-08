@@ -50,6 +50,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   maccabee: ["jal1628-1986", "kaikoura-1978"],
   schuessler: ["cash-landrum-1980"],
   zeidman: ["coyne-1973", "battelle-special-report-1952"],
+  "james-fox": ["varginha-1996"],
   powell: ["aguadilla-2013", "nimitz-2004"],
   rutkowski: ["shag-harbour-1967", "yukon-1996"],
   chalker: ["westall-1966", "valentich-1978"],
