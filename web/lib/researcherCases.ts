@@ -85,7 +85,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   pope: ["rendlesham-1980", "cosford-1993"],
   graves: ["roosevelt-2014", "nimitz-2004", "grusch-testimony-2023"],
   keyhoe: ["washington-dc-1952"],
-  kirkpatrick: ["uss-jackson-2023", "usper-2025"],
+  kirkpatrick: ["uss-jackson-2023", "usper-2025", "mosul-orb-2016"],
   nell: ["grusch-testimony-2023"],
 
   // C — actores políticos
@@ -102,7 +102,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   ],
   kean: ["nimitz-2004", "kecksburg-1965"],
   knapp: ["aawsap-skinwalker-2008", "uss-omaha-2019"],
-  corbell: ["uss-omaha-2019"],
+  corbell: ["uss-omaha-2019", "afghanistan-isr-disc-2020"],
   clarke: ["rendlesham-1980", "calvine-1990", "howden-moor-1997"],
   blumenthal: ["nimitz-2004"],
   gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986", "arquivo-nacional-brasil-2026"],
