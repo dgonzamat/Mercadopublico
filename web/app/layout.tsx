@@ -8,6 +8,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { SiteSearch } from "@/components/SiteSearch";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
+import { CookieConsent } from "@/components/CookieConsent";
 import { STATS } from "@/lib/siteStats";
 import { BUILD_VERSION } from "@/lib/version";
 import { SITE_URL } from "@/lib/site";
@@ -67,19 +68,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
-        />
-        {/* Google Analytics (GA4) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-MZHZC5ZLY5"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-MZHZC5ZLY5');`,
-          }}
         />
       </head>
       <body className="min-h-screen font-sans">
@@ -231,6 +219,7 @@ gtag('config', 'G-MZHZC5ZLY5');`,
             </p>
           </div>
         </footer>
+        <CookieConsent />
       </body>
     </html>
   );
