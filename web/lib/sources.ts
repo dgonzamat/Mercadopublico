@@ -76,9 +76,9 @@ export const CATEGORY_LABELS: Record<
     es: "Libros y memoirs",
     en: "Books and memoirs",
     description_es:
-      "Bibliografía publicada: Vallée, Mack, Strieber, Elizondo, Graves, Pasulka, Coulthart, Jorjani, Freixedo.",
+      "Bibliografía publicada: Vallée, Mack, Strieber, Elizondo, Graves, Pasulka, Coulthart, Freixedo.",
     description_en:
-      "Published bibliography: Vallée, Mack, Strieber, Elizondo, Graves, Pasulka, Coulthart, Jorjani, Freixedo.",
+      "Published bibliography: Vallée, Mack, Strieber, Elizondo, Graves, Pasulka, Coulthart, Freixedo.",
   },
   audio_video: {
     es: "Audio, video y documentales",

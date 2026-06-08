@@ -8,13 +8,12 @@ import type { UAPCase, Researcher } from "./types";
  * las dos entidades, así que vive acá como fuente única. Se pobló a partir
  * de menciones en el contenido de cada caso + curaduría manual verificada.
  *
- * Los cinco teóricos que antes no tenían caso puntual ahora están anclados al
+ * Los teóricos que antes no tenían caso puntual ahora están anclados al
  * caso que efectivamente estudiaron: Freixedo → Colares (su caso canónico de
  * entidades hostiles); Nolan → Council Bluffs + American Cosmic (análisis de
  * materiales); Strieber → Communion (su propia abducción documentada);
- * Pasulka → American Cosmic (su trabajo de campo en 'American Cosmic');
- * Jorjani → testimonio de Grusch (el evento de disclosure que su filosofía
- * analiza). Ningún investigador queda huérfano.
+ * Pasulka → American Cosmic (su trabajo de campo en 'American Cosmic').
+ * Ningún investigador queda huérfano.
  */
 export const RESEARCHER_CASES: Record<string, string[]> = {
   // A — científicos
@@ -62,7 +61,6 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   strieber: ["communion-1985"],
   pasulka: ["american-cosmic-2017"],
   freixedo: ["colares-1977"],
-  jorjani: ["grusch-testimony-2023"],
 
   // B — insiders / militares
   ruppelt: [

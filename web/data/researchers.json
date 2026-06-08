@@ -317,22 +317,6 @@
     "photo_license": "CC-BY-SA 4.0"
   },
   {
-    "id": "jorjani",
-    "name": "Jason Reza Jorjani",
-    "flag": "🇺🇸",
-    "born": 1981,
-    "section": "A",
-    "section_label": "Teóricos filosóficos",
-    "credentials": "PhD philosophy Stony Brook + autor 10+ libros filosofía política y UAP",
-    "framework": "political-subjugation",
-    "bio_short": "Único teórico que propone el 'marco de la subyugación política': la apertura controlada de información prepararía el terreno para un gobierno mundial autoritario, justificado por una amenaza externa fabricada. La taxonomía de nueve hipótesis que ordena este corpus deriva en buena parte de su libro Closer Encounters (2021). Es una figura polarizante por sus afiliaciones políticas previas, pero su análisis filosófico es riguroso.",
-    "works": [{"year": 2021, "title": "Closer Encounters", "contribution": "Taxonomía de 9 hipótesis + Political Subjugation Frame", "contribution_en": "Taxonomy of 9 hypotheses + political subjugation frame"}],
-    "section_label_en": "Philosophical theorists",
-    "credentials_en": "PhD in philosophy, Stony Brook + author of 10+ books on political philosophy and UAP",
-    "bio_short_en": "The only theorist who proposes the 'political subjugation frame': a controlled release of information would prepare the ground for an authoritarian world government, justified by a fabricated external threat. The taxonomy of nine hypotheses that organizes this corpus derives in large part from his book Closer Encounters (2021). He is a polarizing figure for his prior political affiliations, but his philosophical analysis is rigorous.",
-    "sources": [{"name": "Jason Reza Jorjani, 'Closer Encounters' (2021)", "note": "Taxonomía de hipótesis y marco de la subyugación política.", "note_en": "Taxonomy of hypotheses and the political subjugation frame."}]
-  },
-  {
     "id": "freixedo",
     "name": "Salvador Freixedo",
     "flag": "🇪🇸",
