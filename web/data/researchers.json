@@ -1391,5 +1391,25 @@
     "sources": [
       {"name": "The Phenomenon (2020) / Moment of Contact (2022) — documentales dirigidos por James Fox", "note": "Filmografía de disclosure: I Know What I Saw, The Phenomenon, Moment of Contact", "note_en": "Disclosure filmography: I Know What I Saw, The Phenomenon, Moment of Contact"}
     ]
+  },
+  {
+    "id": "sheehan",
+    "name": "Daniel Sheehan",
+    "flag": "🇺🇸",
+    "section": "C",
+    "section_label": "Abogado constitucional · disclosure (New Paradigm Institute)",
+    "section_label_en": "Constitutional attorney · disclosure (New Paradigm Institute)",
+    "credentials": "Abogado constitucional (Harvard) · fundador del New Paradigm Institute · litigante de Pentagon Papers, Silkwood e Irán-Contra",
+    "credentials_en": "Constitutional attorney (Harvard) · founder of the New Paradigm Institute · litigator on the Pentagon Papers, Silkwood and Iran-Contra",
+    "bio_short": "Abogado litigante de derechos civiles con más de cinco décadas de carrera —Pentagon Papers, caso Silkwood, Irán-Contra—. Su vínculo con el tema UAP se remonta a la administración Carter, cuando fue consultado sobre archivos clasificados. En 2023 fundó el New Paradigm Institute, donde actúa como General Counsel y director estratégico para forzar, por vías legales y constitucionales, la divulgación de UAP por parte de gobiernos, corporaciones y particulares, separando dato verificable de especulación.",
+    "bio_short_en": "A civil-rights litigation attorney with over five decades of practice —Pentagon Papers, the Silkwood case, Iran-Contra. His connection to the UAP issue dates back to the Carter administration, when he was consulted on classified files. In 2023 he founded the New Paradigm Institute, where he serves as General Counsel and Strategic Director to compel, through legal and constitutional avenues, the disclosure of UAP by governments, corporations and private parties, separating verifiable data from speculation.",
+    "works": [
+      {"year": 2023, "title": "Fundación del New Paradigm Institute", "contribution": "Vehículo legal y educativo para forzar la divulgación de UAP", "contribution_en": "Legal and educational vehicle to compel UAP disclosure"},
+      {"year": 2023, "title": "Asesoría legal a denunciantes UAP", "contribution": "Apoyo legal y estratégico a testigos y a nuevas audiencias del Congreso", "contribution_en": "Legal and strategic support to witnesses and new congressional hearings"}
+    ],
+    "sources": [
+      {"name": "New Paradigm Institute — Danny Sheehan", "url": "https://newparadigminstitute.org/danny-sheehan/"},
+      {"name": "Daniel Sheehan — Constitutional Attorney & UAP Disclosure", "url": "https://dannysheehan.com/"}
+    ]
   }
 ]
