@@ -67,5 +67,14 @@
       "rationale": "Algunas anomalías (jets direccionales, química atípica, trayectoria) fueron señaladas como no previstas por los modelos estándar. Minimal —y deliberadamente bajo— porque incluso Loeb, que las documentó, concluyó que no apuntan necesariamente a un origen tecnológico.",
       "rationaleEn": "Some anomalies (directional jets, atypical chemistry, trajectory) were flagged as not predicted by standard models. Minimal —and deliberately low— because even Loeb, who documented them, concluded they do not necessarily point to a technological origin."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Webb_Images_Combined_3I_ATLAS.png?width=600",
+    "alt": "Observaciones combinadas del telescopio espacial James Webb del cometa interestelar 3I/ATLAS, agosto de 2025.",
+    "caption": "Imagen del telescopio espacial James Webb (agosto 2025) del cometa interestelar 3I/ATLAS — el tercer objeto interestelar confirmado en cruzar el Sistema Solar.",
+    "caption_en": "James Webb Space Telescope image (August 2025) of interstellar comet 3I/ATLAS — the third confirmed interstellar object to cross the Solar System.",
+    "source": "NASA / ESA / CSA · James Webb Space Telescope",
+    "license": "Dominio público",
+    "href": "https://commons.wikimedia.org/wiki/File:Webb_Images_Combined_3I_ATLAS.png"
+  }
 }
