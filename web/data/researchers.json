@@ -1371,5 +1371,25 @@
       {"name": "Written Testimony by Dr. Tim Gallaudet, Rear Admiral, U.S. Navy (Ret.) — House Oversight (13 nov 2024)", "url": "https://oversight.house.gov/wp-content/uploads/2024/11/Updated-Testimony-Gallaudet.pdf"},
       {"name": "DefenseScoop — 'Former Naval commander Timothy Gallaudet agrees to testify at UAP hearing' (2024)", "url": "https://defensescoop.com/2024/11/06/former-naval-commander-timothy-gallaudet-agrees-testify-uap-hearing/"}
     ]
+  },
+  {
+    "id": "james-fox",
+    "name": "James Fox",
+    "flag": "🇺🇸",
+    "section": "D",
+    "section_label": "Cineasta de disclosure",
+    "section_label_en": "Disclosure filmmaker",
+    "credentials": "Documentalista estadounidense · director de cine de investigación UAP",
+    "credentials_en": "American documentary filmmaker · UAP investigative film director",
+    "bio_short": "Director de algunos de los documentales de disclosure más vistos: 'I Know What I Saw' (2009), que reunió a pilotos y oficiales militares y de gobierno hablando on-record; 'The Phenomenon' (2020), un repaso histórico del fenómeno con testimonios de primera mano; y 'Moment of Contact' (2022), su investigación de campo del caso Varginha (Brasil, 1996). Su método es periodístico-documental: lleva a testigos institucionales a hablar frente a cámara, no a especular.",
+    "bio_short_en": "Director of some of the most-watched disclosure documentaries: 'I Know What I Saw' (2009), which gathered pilots and military and government officials speaking on the record; 'The Phenomenon' (2020), a historical survey of the phenomenon with first-hand testimony; and 'Moment of Contact' (2022), his field investigation of the Varginha case (Brazil, 1996). His method is journalistic-documentary: he gets institutional witnesses to speak on camera, not to speculate.",
+    "works": [
+      {"year": 2009, "title": "I Know What I Saw", "contribution": "Documental con pilotos y oficiales militares/gubernamentales on-record", "contribution_en": "Documentary with pilots and military/government officials on the record"},
+      {"year": 2020, "title": "The Phenomenon", "contribution": "Repaso histórico del fenómeno con testimonios de primera mano", "contribution_en": "Historical survey of the phenomenon with first-hand testimony"},
+      {"year": 2022, "title": "Moment of Contact", "contribution": "Investigación de campo del caso Varginha (1996)", "contribution_en": "Field investigation of the Varginha case (1996)"}
+    ],
+    "sources": [
+      {"name": "The Phenomenon (2020) / Moment of Contact (2022) — documentales dirigidos por James Fox", "note": "Filmografía de disclosure: I Know What I Saw, The Phenomenon, Moment of Contact", "note_en": "Disclosure filmography: I Know What I Saw, The Phenomenon, Moment of Contact"}
+    ]
   }
 ]
