@@ -106,7 +106,7 @@ export default function ProbabilidadesPage() {
         </Lede>
       </header>
 
-      <IcdProbabilityChart />
+      <IcdProbabilityChart framing={false} />
 
       <div className="space-y-16">
         {PRIMITIVE_HYPOTHESES.map((h, i) => (

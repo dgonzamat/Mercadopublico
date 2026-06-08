@@ -41,7 +41,7 @@ function noEvidenceCopy(id: string): { es: string; en: string } {
  * + label + ICD-203 band + a 12-column scale that places the band visually.
  * Removed all chrome (outer card, per-row borders). The data is the chrome.
  */
-export function IcdProbabilityChart() {
+export function IcdProbabilityChart({ framing = true }: { framing?: boolean } = {}) {
   const rows = PRIMITIVE_HYPOTHESES.map((h) => {
     const calib = effectiveCalibration(h, cases);
     const effectiveIcd = pctToIcdLabel(calib.pct);
@@ -77,62 +77,31 @@ export function IcdProbabilityChart() {
             />
           </span>
         </H2>
-        <Caption className="max-w-2xl pt-2">
-          <T
-            es={
-              <>
-                Cada % responde a la pregunta: <em>¿al menos un caso del
-                corpus es de este tipo?</em> Un mismo caso puede caer en
-                varias hipótesis a la vez — por eso los porcentajes no
-                compiten ni suman 100. La etiqueta (<em>casi cierto</em>,{" "}
-                <em>probable</em>, <em>improbable</em>) viene del método que
-                usan los analistas de inteligencia cuando no hay modelo
-                matemático ({" "}
-                <a
-                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  ICD-203
-                </a>
-                ). Dos hipótesis más —{" "}
-                <em>misidentificación</em> (universo previo al filtro) y{" "}
-                <em>heterogeneidad</em> (consecuencia de las seis) — viven{" "}
-                <a href="#antecedente-derivada" className="text-accent hover:underline">
-                  aparte
-                </a>
-                .
-              </>
-            }
-            en={
-              <>
-                Each % answers the question: <em>is at least one corpus
-                case of this type?</em> A single case can fall into multiple
-                hypotheses at once — that&apos;s why percentages don&apos;t
-                compete or sum to 100. The label (<em>almost certain</em>,{" "}
-                <em>likely</em>, <em>unlikely</em>)
-                comes from the method intelligence analysts use without a
-                mathematical model ({" "}
-                <a
-                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  ICD-203
-                </a>
-                ). Two further hypotheses —{" "}
-                <em>misidentification</em> (the universe before the filter)
-                and <em>heterogeneity</em> (a consequence of the six) — live{" "}
-                <a href="#antecedente-derivada" className="text-accent hover:underline">
-                  apart
-                </a>
-                .
-              </>
-            }
-          />
-        </Caption>
+        {framing && (
+          <Caption className="max-w-2xl pt-2">
+            <T
+              es={
+                <>
+                  Un mismo caso puede caer en varias hipótesis — por eso los
+                  porcentajes <strong>no compiten ni suman 100</strong>.{" "}
+                  <a href="/probabilidades" className="text-accent hover:underline">
+                    Cómo se lee →
+                  </a>
+                </>
+              }
+              en={
+                <>
+                  A single case can fall into multiple hypotheses — that&apos;s
+                  why the percentages <strong>don&apos;t compete or sum to
+                  100</strong>.{" "}
+                  <a href="/probabilidades" className="text-accent hover:underline">
+                    How to read this →
+                  </a>
+                </>
+              }
+            />
+          </Caption>
+        )}
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 md:gap-6">
@@ -215,46 +184,30 @@ export function IcdProbabilityChart() {
         })}
       </div>
 
-      <Caption className="max-w-2xl pt-4">
-        <T
-          es={
-            <>
-              Cada probabilidad se deriva del prior del analista{" "}
-              <strong>más</strong> la presión acumulada de los casos del
-              corpus que la sostienen — recalibrada automáticamente en cada
-              build. Los pesos por caso son públicos y declarados (ver{" "}
-              <a className="text-accent hover:underline" href="/about">
-                /about Cap. 5
-              </a>
-              ). Cuando un analista discrepa con el resultado derivado, puede
-              declarar un ajuste manual; el sitio lo indica explícitamente.
-              Razonamiento completo en{" "}
-              <a className="text-accent hover:underline" href="/probabilidades">
-                /probabilidades
-              </a>
-              .
-            </>
-          }
-          en={
-            <>
-              Each probability is derived from the analyst&apos;s prior{" "}
-              <strong>plus</strong> the accumulated pressure of the corpus
-              cases that sustain it — auto-recalibrated on every build.
-              Per-case weights are public and declared (see{" "}
-              <a className="text-accent hover:underline" href="/about">
-                /about Ch. 5
-              </a>
-              ). When an analyst disagrees with the derived result, they
-              can declare a manual override; the site flags it explicitly.
-              Full reasoning at{" "}
-              <a className="text-accent hover:underline" href="/probabilidades">
-                /probabilidades
-              </a>
-              .
-            </>
-          }
-        />
-      </Caption>
+      {framing && (
+        <Caption className="max-w-2xl pt-4">
+          <T
+            es={
+              <>
+                Cada % = prior del analista + presión de los casos que la
+                sostienen, recalibrado en cada build. Método completo en{" "}
+                <a className="text-accent hover:underline" href="/about">/about</a>{" "}
+                y{" "}
+                <a className="text-accent hover:underline" href="/probabilidades">/probabilidades</a>.
+              </>
+            }
+            en={
+              <>
+                Each % = the analyst&apos;s prior + the pressure of the cases
+                that sustain it, recalibrated on every build. Full method at{" "}
+                <a className="text-accent hover:underline" href="/about">/about</a>{" "}
+                and{" "}
+                <a className="text-accent hover:underline" href="/probabilidades">/probabilidades</a>.
+              </>
+            }
+          />
+        </Caption>
+      )}
     </section>
   );
 }
