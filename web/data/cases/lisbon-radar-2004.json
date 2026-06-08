@@ -1,0 +1,44 @@
+{
+  "id": "lisbon-radar-2004",
+  "num": 123,
+  "name": "Lisboa · blanco de radar de la Fuerza Aérea",
+  "name_en": "Lisbon · Air Force radar target",
+  "year_start": 2004,
+  "country": "PT",
+  "country_name": "Portugal",
+  "flag": "🇵🇹",
+  "location": {
+    "lat": 38.72,
+    "lng": -9.14,
+    "place": "Espacio aéreo de Lisboa (Fuerza Aérea Portuguesa)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 38,
+  "summary": "En 2004, ante un objeto no identificado en el espacio aéreo cercano a Lisboa, la Fuerza Aérea Portuguesa puso F-16 en alerta. El portavoz de la fuerza, coronel Carlos Barbosa, confirmó públicamente que el radar de defensa registró un 'blanco' durante dos o tres minutos, sin explicación final. Primer caso de Portugal en el corpus: confirmación oficial de un retorno de radar, sin programa de investigación que lo respaldara.",
+  "summary_en": "In 2004, in response to an unidentified object in the airspace near Lisbon, the Portuguese Air Force put F-16s on standby. The force's spokesperson, Colonel Carlos Barbosa, publicly confirmed that defense radar registered a 'target' for two or three minutes, with no final explanation. Portugal's first case in the corpus: official confirmation of a radar return, with no investigation program to back it.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "En 2004, la defensa aérea portuguesa detectó un objeto no identificado en el espacio aéreo cercano a Lisboa y mantuvo aviones F-16 en alerta ante la posibilidad de tener que interceptarlo. El episodio trascendió porque la propia Fuerza Aérea lo confirmó: su portavoz, el coronel Carlos Barbosa, declaró que el radar de defensa había registrado un 'blanco' (target) durante dos o tres minutos en la zona, y que no se le había dado una explicación definitiva.\n\nEl encuadre es deliberadamente acotado. Lo documentado es la confirmación institucional de un retorno de radar y la respuesta operativa (F-16 en alerta); no hay confirmación visual, intercepción consumada ni informe técnico público. Portugal, a diferencia de Francia o España, no tiene un programa estatal de investigación de UAP ni archivos desclasificados, por lo que el caso vive de la declaración oficial a la prensa más que de un expediente.\n\nAun así, es un dato institucional honesto: una fuerza aérea reconociendo en voz de su portavoz un blanco de radar inexplicado y la consiguiente alerta de cazas. Ancla a Portugal en el corpus en su tier correspondiente.",
+  "whatHappened_en": "In 2004, Portuguese air defense detected an unidentified object in the airspace near Lisbon and kept F-16 aircraft on standby in case an interception was needed. The episode became public because the Air Force itself confirmed it: its spokesperson, Colonel Carlos Barbosa, stated that defense radar had registered a 'target' for two or three minutes in the area, and that no definitive explanation had been given.\n\nThe framing is deliberately narrow. What is documented is the institutional confirmation of a radar return and the operational response (F-16s on standby); there is no visual confirmation, completed interception or public technical report. Portugal, unlike France or Spain, has no state UAP investigation program or declassified archives, so the case rests on the official statement to the press rather than on a file.\n\nEven so, it is an honest institutional datum: an air force acknowledging, through its spokesperson, an unexplained radar target and the resulting fighter alert. It anchors Portugal in the corpus at its appropriate tier.",
+  "whyMatters": "Primer caso portugués del corpus. Su valor es la confirmación oficial: no un rumor, sino el portavoz de la Fuerza Aérea reconociendo un blanco de radar inexplicado y una alerta de F-16. Documenta que incluso un país sin programa de investigación ni archivos desclasificados deja, ocasionalmente, un reconocimiento institucional en el registro público.",
+  "whyMatters_en": "Portugal's first corpus case. Its value is the official confirmation: not a rumor but the Air Force spokesperson acknowledging an unexplained radar target and an F-16 alert. It documents that even a country without an investigation program or declassified archives occasionally leaves an institutional acknowledgment in the public record.",
+  "evidence": [
+    "La Fuerza Aérea Portuguesa puso F-16 en alerta por un objeto no identificado cerca de Lisboa (2004).",
+    "El portavoz, coronel Carlos Barbosa, confirmó que el radar de defensa registró un 'blanco' durante 2-3 minutos.",
+    "Sin explicación final; sin confirmación visual ni informe técnico público.",
+    "Portugal no tiene programa estatal de UAP ni archivos desclasificados — el caso vive de la declaración oficial."
+  ],
+  "evidence_en": [
+    "The Portuguese Air Force put F-16s on standby for an unidentified object near Lisbon (2004).",
+    "The spokesperson, Colonel Carlos Barbosa, confirmed defense radar registered a 'target' for 2-3 minutes.",
+    "No final explanation; no visual confirmation or public technical report.",
+    "Portugal has no state UAP program or declassified archives — the case rests on the official statement."
+  ],
+  "sources": [
+    {
+      "name": "Portugal Resident — 'Air Force alert for UFO'",
+      "url": "https://www.portugalresident.com/air-force-alert-for-ufo/"
+    }
+  ]
+}
