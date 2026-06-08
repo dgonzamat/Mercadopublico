@@ -1,0 +1,42 @@
+{
+  "id": "alma-ata-1991",
+  "num": 118,
+  "name": "Alma-Atá · patrulla policial + cable CIA",
+  "name_en": "Alma-Ata · police patrol + CIA cable",
+  "year_start": 1991,
+  "country": "KZ",
+  "country_name": "Kazajistán",
+  "flag": "🇰🇿",
+  "location": {
+    "lat": 43.22,
+    "lng": 76.97,
+    "place": "Alma-Atá (Almaty), cerca del monte Kok-Tyube"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "summary": "En 1991, milicianos (policía) de patrulla en Alma-Atá —entonces capital de la Kazajistán soviética— reportaron un objeto no identificado cerca del monte Kok-Tyube: una especie de fuego en la cima del que salían rayos rojos que subían y bajaban. El episodio quedó registrado en un documento del FOIA reading room de la CIA. Caso documentado pero de fenómeno ambiguo, incluido por su rastro institucional más que por su solidez.",
+  "summary_en": "In 1991, militiamen (police) on patrol in Alma-Ata —then capital of Soviet Kazakhstan— reported an unidentified object near Kok-Tyube Mountain: a kind of fire at the summit emitting red rays that moved up and down. The episode was recorded in a CIA FOIA reading-room document. A documented case but of ambiguous phenomenon, included for its institutional trail rather than its strength.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "A fines de la tarde de un día de 1991, una patrulla de milicianos (policía soviética) que se aproximaba al monte Kok-Tyube, en las afueras de Alma-Atá —capital de la entonces República Socialista Soviética de Kazajistán—, observó lo que describieron como un fuego en la cima de la montaña. Según el reporte, las llamas subían y bajaban y de su centro brotaba un haz de rayos rojos.\n\nEl interés del caso es su rastro documental: el avistamiento de los patrulleros fue recogido en un documento que hoy se encuentra en el FOIA reading room de la CIA ('ALMA-ATA PATROLMEN REPORT UFO SIGHTING'). Es decir, un reporte policial soviético que la inteligencia estadounidense archivó.\n\nEl encuadre es deliberadamente cauto. A diferencia del caso Tajik Air, el fenómeno descrito aquí —fuego en una cima, rayos rojos ascendentes y descendentes— admite explicaciones convencionales (una fogata, bengalas, descargas, fenómenos atmosféricos). Se incluye por su valor documental (testigos policiales + archivo de la CIA), no por discriminar entre hipótesis: es un caso de piso, anclado con honestidad sobre su limitación.",
+  "whatHappened_en": "Late one afternoon in 1991, a patrol of militiamen (Soviet police) approaching Kok-Tyube Mountain on the outskirts of Alma-Ata —capital of the then Kazakh Soviet Socialist Republic— observed what they described as a fire at the mountain's summit. According to the report, the flames moved up and down and a beam of red rays burst from its center.\n\nThe case's interest is its documentary trail: the patrolmen's sighting was recorded in a document now held in the CIA FOIA reading room ('ALMA-ATA PATROLMEN REPORT UFO SIGHTING'). That is, a Soviet police report that U.S. intelligence archived.\n\nThe framing is deliberately cautious. Unlike the Tajik Air case, the phenomenon described here —fire on a summit, red rays moving up and down— admits conventional explanations (a bonfire, flares, discharges, atmospheric phenomena). It is included for its documentary value (police witnesses + CIA archive), not for discriminating between hypotheses: it is a floor case, honestly anchored on its limitation.",
+  "whyMatters": "Documenta el cruce poco común de un reporte policial soviético que terminó archivado por la inteligencia de EE.UU. (FOIA CIA). Suma un segundo punto en Kazajistán y muestra el tipo de material de bajo tier que el corpus incluye por completitud —sin elevarlo—: testigos institucionales, sí, pero fenómeno ambiguo con explicaciones mundanas plausibles.",
+  "whyMatters_en": "It documents the uncommon crossover of a Soviet police report that ended up archived by U.S. intelligence (CIA FOIA). It adds a second point in Kazakhstan and shows the kind of low-tier material the corpus includes for completeness —without elevating it—: institutional witnesses, yes, but an ambiguous phenomenon with plausible mundane explanations.",
+  "evidence": [
+    "Patrulla de milicianos (policía soviética) como testigos, cerca del monte Kok-Tyube, Alma-Atá (1991).",
+    "Reporte recogido en un documento del FOIA reading room de la CIA ('ALMA-ATA PATROLMEN REPORT UFO SIGHTING').",
+    "Fenómeno descrito: fuego en la cima con rayos rojos ascendentes/descendentes — ambiguo, con explicaciones convencionales posibles."
+  ],
+  "evidence_en": [
+    "A patrol of militiamen (Soviet police) as witnesses, near Kok-Tyube Mountain, Alma-Ata (1991).",
+    "Report held in a CIA FOIA reading-room document ('ALMA-ATA PATROLMEN REPORT UFO SIGHTING').",
+    "Phenomenon described: fire at the summit with red rays moving up and down — ambiguous, with possible conventional explanations."
+  ],
+  "sources": [
+    {
+      "name": "CIA FOIA Reading Room — 'ALMA-ATA PATROLMEN REPORT UFO SIGHTING'",
+      "url": "https://www.cia.gov/readingroom/document/0005517792"
+    }
+  ]
+}

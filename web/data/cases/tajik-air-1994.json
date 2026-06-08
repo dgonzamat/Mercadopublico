@@ -1,0 +1,48 @@
+{
+  "id": "tajik-air-1994",
+  "num": 117,
+  "name": "Tajik Air · OVNI sobre Kazajistán (PURSUE)",
+  "name_en": "Tajik Air · UFO over Kazakhstan (PURSUE)",
+  "year_start": 1994,
+  "country": "KZ",
+  "country_name": "Kazajistán",
+  "flag": "🇰🇿",
+  "location": {
+    "lat": 48.0,
+    "lng": 67.5,
+    "place": "Espacio aéreo de Kazajistán (vuelo Tajik Air)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "El 27 de enero de 1994, el capitán Edward Rhodes y dos copilotos de un Boeing 747 de Tajik Air reportaron, a 41.000 pies sobre Kazajistán, un objeto luminoso que los sobrepasó a mayor velocidad y altura y maniobró durante más de 40 minutos en círculos, espirales y giros de 90°. El episodio quedó documentado en un cable del Departamento de Estado de EE.UU. y figura entre los archivos desclasificados PURSUE (2026).",
+  "summary_en": "On January 27, 1994, Captain Edward Rhodes and two co-pilots of a Tajik Air Boeing 747 reported, at 41,000 feet over Kazakhstan, a luminous object that overtook them at greater speed and altitude and maneuvered for over 40 minutes in circles, corkscrews and 90° turns. The episode was documented in a U.S. State Department cable and appears among the declassified PURSUE files (2026).",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 27 de enero de 1994, durante un vuelo de Tajik Air en un Boeing 747, la tripulación —el capitán Edward Rhodes y dos copilotos— observó a 41.000 pies sobre territorio de Kazajistán un objeto de intensa luminosidad que pasó junto a la aeronave a velocidad y altura superiores. El objeto fue seguido visualmente por la tripulación durante más de 40 minutos, describiendo trayectorias en círculos, en espiral (corkscrew) y giros bruscos de 90 grados.\n\nLo significativo no es solo el testimonio de tres tripulantes profesionales, sino su rastro documental: el avistamiento fue recogido en un cable del Departamento de Estado de EE.UU., y ese material reapareció públicamente en la segunda ola de desclasificación del sistema PURSUE (war.gov/ufo, 2026). Es decir, un reporte de aviación de los años 90 que el aparato diplomático estadounidense conservó y que ahora forma parte del registro oficial liberado.\n\nEl encuadre es honesto: es un caso fuerte en lo testimonial (multi-tripulante, larga duración, maniobras anómalas) y en lo documental (cable oficial + PURSUE), pero sin corroboración de radar o sensor independiente en el material disponible.",
+  "whatHappened_en": "On January 27, 1994, during a Tajik Air flight on a Boeing 747, the crew —Captain Edward Rhodes and two co-pilots— observed at 41,000 feet over Kazakhstan an intensely luminous object that passed the aircraft at greater speed and altitude. The object was tracked visually by the crew for over 40 minutes, describing circular, corkscrew and sharp 90-degree trajectories.\n\nWhat matters is not only the testimony of three professional crew members but its documentary trail: the sighting was recorded in a U.S. State Department cable, and that material resurfaced publicly in the second wave of the PURSUE declassification system (war.gov/ufo, 2026). That is, a 1990s aviation report that the U.S. diplomatic apparatus retained and that now forms part of the released official record.\n\nThe framing is honest: it is a strong case both testimonially (multi-crew, long duration, anomalous maneuvers) and documentarily (official cable + PURSUE), but without independent radar or sensor corroboration in the available material.",
+  "whyMatters": "Ancla a Kazajistán en el corpus con un caso que combina dos fuerzas: tripulación profesional múltiple con 40+ minutos de observación, y una cadena documental oficial (cable del Departamento de Estado → desclasificación PURSUE 2026). Conecta el espacio aéreo centroasiático con el hilo de disclosure estadounidense, mostrando que el material liberado por EE.UU. incluye encuentros ocurridos lejos de su territorio.",
+  "whyMatters_en": "It anchors Kazakhstan in the corpus with a case combining two strengths: multiple professional crew with 40+ minutes of observation, and an official documentary chain (State Department cable → PURSUE 2026 declassification). It connects Central Asian airspace with the U.S. disclosure thread, showing that material released by the U.S. includes encounters that occurred far from its territory.",
+  "evidence": [
+    "Tres tripulantes profesionales (capitán Edward Rhodes + 2 copilotos) de un Boeing 747 de Tajik Air.",
+    "Observación de 40+ minutos a 41.000 ft sobre Kazajistán, con maniobras en círculo, espiral y giros de 90°.",
+    "Documentado en un cable del Departamento de Estado de EE.UU.",
+    "Incluido en la desclasificación PURSUE (war.gov/ufo, 2026)."
+  ],
+  "evidence_en": [
+    "Three professional crew members (Captain Edward Rhodes + 2 co-pilots) of a Tajik Air Boeing 747.",
+    "40+ minutes of observation at 41,000 ft over Kazakhstan, with circular, corkscrew and 90° maneuvers.",
+    "Documented in a U.S. State Department cable.",
+    "Included in the PURSUE declassification (war.gov/ufo, 2026)."
+  ],
+  "sources": [
+    {
+      "name": "The Times of Central Asia — 'Pentagon UFO Files Include 1994 Tajik Air Report Over Kazakhstan' (2026)",
+      "url": "https://timesca.com/pentagon-ufo-files-include-1994-tajik-air-report-over-kazakhstan/"
+    },
+    {
+      "name": "PURSUE — war.gov/ufo (cable del Departamento de Estado, reporte Tajik Air 1994)",
+      "url": "https://www.war.gov/ufo/"
+    }
+  ]
+}
