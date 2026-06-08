@@ -53,5 +53,14 @@
       "rationale": "Los reportes de ocupantes mantienen viva la hipótesis de entidades no humanas como categoría, pero su naturaleza testimonial y sin corroboración les da peso mínimo; el caso explícitamente no los trata como evidencia, solo como material archivado.",
       "rationaleEn": "Occupant reports keep the non-human-entities hypothesis alive as a category, but their testimonial, uncorroborated nature gives them minimal weight; the case explicitly does not treat them as evidence, only as filed material."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/FBI_UFO_file_part_1.pdf?page=1&width=600",
+    "alt": "Primera página del expediente UFO del FBI (The Vault), colección desclasificada.",
+    "caption": "Expediente UFO del FBI (The Vault, desclasificado) — la colección de memos donde se archivaron, sin verificar, reportes de 'crewmen' y ocupantes.",
+    "caption_en": "FBI UFO file (The Vault, declassified) — the collection of memos where reports of 'crewmen' and occupants were filed, unverified.",
+    "source": "Federal Bureau of Investigation",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:FBI_UFO_file_part_1.pdf"
+  }
 }
