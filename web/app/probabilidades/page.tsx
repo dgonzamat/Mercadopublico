@@ -17,7 +17,7 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 
 export const metadata = {
-  title: "Probabilities · UAP Codex",
+  title: "Probabilities",
   description:
     "Detailed reasoning per hypothesis. ICD-203 + corpus evidence sustaining each judgment.",
 };

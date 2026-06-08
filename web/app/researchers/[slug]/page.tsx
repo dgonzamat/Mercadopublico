@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) return { title: "No encontrado" };
   return {
-    title: `${r.name} · UAP Codex`,
+    title: `${r.name}`,
     description: r.bio_short.slice(0, 160),
   };
 }
@@ -59,7 +59,7 @@ export default function ResearcherDetailPage({
         <Breadcrumb
           items={[
             { href: "/", es: "Inicio", en: "Home" },
-            { href: "/researchers", es: "Investigadores", en: "Researchers" },
+            { href: "/researchers", es: "Actores", en: "Actors" },
             { es: r.name, en: r.name },
           ]}
         />

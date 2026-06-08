@@ -4,7 +4,7 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
-  title: "Blog · UAP Codex",
+  title: "Blog",
   description:
     "Notas de método, decisiones de análisis y avances del cuaderno de investigación UAP Codex.",
   alternates: {

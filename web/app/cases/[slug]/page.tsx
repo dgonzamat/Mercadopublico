@@ -21,11 +21,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Caso no encontrado" };
   const path = `/cases/${c.id}`;
-  const description = c.summary_en
-    ? `${c.summary} — ${c.summary_en}`
-    : c.summary;
+  const description = c.summary;
   return {
-    title: `${c.name} · UAP Codex`,
+    title: `${c.name}`,
     description,
     alternates: {
       canonical: path,
@@ -624,8 +622,8 @@ export default function CaseDetailPage({
         <section className="space-y-4 border-t-2 border-text pt-12">
           <Eyebrow>
             <T
-              es={`Investigadores asociados (${caseResearchers.length})`}
-              en={`Associated researchers (${caseResearchers.length})`}
+              es={`Actores asociados (${caseResearchers.length})`}
+              en={`Associated actors (${caseResearchers.length})`}
             />
           </Eyebrow>
           <div className="grid gap-3 sm:grid-cols-2">

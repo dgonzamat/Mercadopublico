@@ -17,7 +17,7 @@ export function generateMetadata({
 }) {
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) return { title: "Patrón no encontrado" };
-  return { title: `${p.id} ${p.name} · UAP Codex`, description: p.description };
+  return { title: `${p.id} ${p.name}`, description: p.description };
 }
 
 export default function PatternDetailPage({

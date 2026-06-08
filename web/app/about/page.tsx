@@ -12,7 +12,7 @@ import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
-  title: "Method · UAP Codex",
+  title: "Method",
   description:
     "Cómo se pesa la evidencia: cuatro tiers de fuerza probatoria, retornos decrecientes por caso, y por qué seis hipótesis pueden ser parcialmente ciertas en simultáneo.",
 };
@@ -45,7 +45,7 @@ const CHAPTERS = [
   {
     id: "movers",
     n: "5",
-    es: { eyebrow: "Capítulo 5", h2: "Qué movería el análisis ahora", tldr: "Análisis isotópico de Lake Huron, material recuperado verificable, nuevo país acknowledging" },
+    es: { eyebrow: "Capítulo 5", h2: "Qué movería el análisis ahora", tldr: "Análisis isotópico de Lake Huron, material recuperado verificable, reconocimiento formal de un nuevo país" },
     en: { eyebrow: "Chapter 5", h2: "What would move the analysis now", tldr: "Lake Huron isotopic analysis, verifiable recovered material, new country acknowledging" },
   },
 ];
@@ -337,7 +337,7 @@ export default function AboutPage() {
                   { weight: "+++", color: "text-tierS", es: "Análisis isotópico independiente de residuos físicos publicado", en: "Independent isotopic analysis of physical residues published" },
                   { weight: "+++", color: "text-tierS", es: "Material recuperado con fotos verificables", en: "Recovered material with verifiable photos" },
                   { weight: "+++", color: "text-tierS", es: "Lake Huron fragmentos análisis publicado", en: "Lake Huron fragment analysis published" },
-                  { weight: "+", color: "text-tierA", es: "Nuevo país que acknowledged formalmente", en: "New country formally acknowledging" },
+                  { weight: "+", color: "text-tierA", es: "Nuevo país que reconoce formalmente el fenómeno", en: "New country formally acknowledging" },
                   { weight: "+", color: "text-tierA", es: "Otro Tehran-equivalente con sensor data", en: "Another Tehran-equivalent with sensor data" },
                   { weight: "~0", color: "text-muted", es: "Nuevo contactee con cosmología detallada", en: "New contactee with detailed cosmology" },
                 ].map((item, i) => (
@@ -363,7 +363,7 @@ export default function AboutPage() {
                 </Body>
                 <Body className="text-muted">
                   <T
-                    es={<>Los pesos por caso son públicos y declarados:{" "}<strong className="text-text">mínimo +0.5</strong>{" "}(repite patrón ya documentado),{" "}<strong className="text-text">modesto +2</strong>{" "}(corroboración independiente o una modalidad sensora añadida),{" "}<strong className="text-text">sustancial +5</strong>{" "}(modalidad sensora nueva o contradice patrón establecido),{" "}<strong className="text-text">categoría nueva +15</strong>{" "}(clase de evidencia entirely nueva — material recuperado + análisis publicado, identificación de origen, etc).</>}
+                    es={<>Los pesos por caso son públicos y declarados:{" "}<strong className="text-text">mínimo +0.5</strong>{" "}(repite patrón ya documentado),{" "}<strong className="text-text">modesto +2</strong>{" "}(corroboración independiente o una modalidad sensora añadida),{" "}<strong className="text-text">sustancial +5</strong>{" "}(modalidad sensora nueva o contradice patrón establecido),{" "}<strong className="text-text">categoría nueva +15</strong>{" "}(clase de evidencia enteramente nueva — material recuperado + análisis publicado, identificación de origen, etc).</>}
                     en={<>Per-case weights are public and declared:{" "}<strong className="text-text">minimal +0.5</strong>{" "}(repeats already-documented pattern),{" "}<strong className="text-text">modest +2</strong>{" "}(independent corroboration or one added sensor modality),{" "}<strong className="text-text">substantial +5</strong>{" "}(new sensor modality or contradicts established pattern),{" "}<strong className="text-text">category-breaking +15</strong>{" "}(entirely new class of evidence — recovered material + published analysis, origin identification, etc).</>}
                   />
                 </Body>
