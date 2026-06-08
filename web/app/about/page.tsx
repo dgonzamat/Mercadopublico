@@ -109,9 +109,8 @@ export default function AboutPage() {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[0].es.eyebrow} en={CHAPTERS[0].en.eyebrow} /></Eyebrow>
               <H2><T es={CHAPTERS[0].es.h2} en={CHAPTERS[0].en.h2} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-accent">
-                <T es="En resumen · " en="In short · " />
-                <span className="normal-case tracking-normal text-muted">
+              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[0].es.tldr} en={CHAPTERS[0].en.tldr} />
                 </span>
                 <span aria-hidden className="ml-2 inline-block text-accent transition-transform group-open:rotate-180">▾</span>
@@ -157,9 +156,8 @@ export default function AboutPage() {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[1].es.eyebrow} en={CHAPTERS[1].en.eyebrow} /></Eyebrow>
               <H2><T es={CHAPTERS[1].es.h2} en={CHAPTERS[1].en.h2} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-accent">
-                <T es="En resumen · " en="In short · " />
-                <span className="normal-case tracking-normal text-muted">
+              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[1].es.tldr} en={CHAPTERS[1].en.tldr} />
                 </span>
                 <span aria-hidden className="ml-2 inline-block text-accent transition-transform group-open:rotate-180">▾</span>
@@ -220,9 +218,8 @@ export default function AboutPage() {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[2].es.eyebrow} en={CHAPTERS[2].en.eyebrow} /></Eyebrow>
               <H2><T es={CHAPTERS[2].es.h2} en={CHAPTERS[2].en.h2} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-accent">
-                <T es="En resumen · " en="In short · " />
-                <span className="normal-case tracking-normal text-muted">
+              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[2].es.tldr} en={CHAPTERS[2].en.tldr} />
                 </span>
                 <span aria-hidden className="ml-2 inline-block text-accent transition-transform group-open:rotate-180">▾</span>
@@ -252,9 +249,8 @@ export default function AboutPage() {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[3].es.eyebrow} en={CHAPTERS[3].en.eyebrow} /></Eyebrow>
               <H2><T es={CHAPTERS[3].es.h2} en={CHAPTERS[3].en.h2} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-accent">
-                <T es="En resumen · " en="In short · " />
-                <span className="normal-case tracking-normal text-muted">
+              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[3].es.tldr} en={CHAPTERS[3].en.tldr} />
                 </span>
                 <span aria-hidden className="ml-2 inline-block text-accent transition-transform group-open:rotate-180">▾</span>
@@ -323,9 +319,8 @@ export default function AboutPage() {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[4].es.eyebrow} en={CHAPTERS[4].en.eyebrow} /></Eyebrow>
               <H2><T es={CHAPTERS[4].es.h2} en={CHAPTERS[4].en.h2} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-accent">
-                <T es="En resumen · " en="In short · " />
-                <span className="normal-case tracking-normal text-muted">
+              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[4].es.tldr} en={CHAPTERS[4].en.tldr} />
                 </span>
                 <span aria-hidden className="ml-2 inline-block text-accent transition-transform group-open:rotate-180">▾</span>
