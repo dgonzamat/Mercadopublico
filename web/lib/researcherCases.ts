@@ -48,6 +48,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
   haines: ["lago-de-cote-1971", "chicago-ohare-2006"],
   maccabee: ["jal1628-1986", "kaikoura-1978"],
+  salas: ["malmstrom-1967"],
+  callahan: ["jal1628-1986"],
   schuessler: ["cash-landrum-1980"],
   zeidman: ["coyne-1973", "battelle-special-report-1952"],
   "james-fox": ["varginha-1996"],
