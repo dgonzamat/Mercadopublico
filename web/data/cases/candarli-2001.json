@@ -1,0 +1,48 @@
+{
+  "id": "candarli-2001",
+  "num": 121,
+  "name": "Çandarlı · pilotos de la FAT sobre el Egeo",
+  "name_en": "Çandarlı · Turkish Air Force pilots over the Aegean",
+  "year_start": 2001,
+  "country": "TR",
+  "country_name": "Turquía",
+  "flag": "🇹🇷",
+  "location": {
+    "lat": 38.93,
+    "lng": 26.93,
+    "place": "Çandarlı, costa del Egeo (Turquía)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 35,
+  "summary": "En 2001, durante un vuelo de entrenamiento en un T-37 frente a Çandarlí (costa egea de Turquía), dos pilotos de la Fuerza Aérea Turca reportaron un objeto brillante con forma entre cono y disco que se aproximó a alta velocidad y giró alrededor del avión durante unos 30 minutos. Lo informaron a su controlador y al centro regional de alerta del ejército turco. Segundo caso turco del corpus: testimonio de pilotos militares con reporte a la cadena de mando.",
+  "summary_en": "In 2001, during a training flight in a T-37 off Çandarlı (Turkey's Aegean coast), two Turkish Air Force pilots reported a bright object shaped between a cone and a disc that approached at high speed and gyrated around the plane for about 30 minutes. They reported it to their controller and to the regional alert center of the Turkish army. Turkey's second corpus case: military pilot testimony reported up the chain of command.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En 2001, dos pilotos aprendices de la Fuerza Aérea Turca realizaban un vuelo de entrenamiento de rutina en un T-37 (fabricación estadounidense) frente al pueblo costero de Çandarlí, en el Egeo. Según su reporte, un objeto brillante se aproximó a la aeronave a alta velocidad y maniobró girando a su alrededor durante aproximadamente media hora. Lo describieron con una forma inusual, como un cruce entre un cono y un disco.\n\nLos pilotos comunicaron el avistamiento a su controlador y al centro regional de alerta de guerra del ejército turco, integrándolo en la cadena institucional militar. El caso fue recogido por la prensa internacional (ABC News).\n\nEl encuadre es honesto: es un testimonio de pilotos militares —entrenados en identificación de aeronaves— con larga duración y reporte formal a la cadena de mando, pero sin confirmación de radar ni registro de sensor en el material disponible. Suma un segundo punto turco junto a Kumburgaz (2007), de distinta naturaleza: aquél visual-civil con video, éste de aviación militar.",
+  "whatHappened_en": "In 2001, two trainee pilots of the Turkish Air Force were on a routine training flight in a U.S.-made T-37 off the coastal town of Çandarlı, in the Aegean. According to their report, a bright object approached the aircraft at high speed and maneuvered around it for about half an hour. They described it as having an unusual shape, like a cross between a cone and a disc.\n\nThe pilots reported the sighting to their controller and to the regional war alert center of the Turkish army, integrating it into the military institutional chain. The case was picked up by the international press (ABC News).\n\nThe framing is honest: it is testimony from military pilots —trained in aircraft identification— with long duration and a formal report up the chain of command, but without radar confirmation or sensor record in the available material. It adds a second Turkish point alongside Kumburgaz (2007), of a different nature: that one civilian-visual with video, this one military aviation.",
+  "whyMatters": "Segundo caso turco del corpus y de perfil institucional distinto al de Kumburgaz: en vez de un video civil, aquí hay pilotos de la Fuerza Aérea reportando por la cadena de mando a la torre y al centro de alerta del ejército. Muestra que Turquía —considerada un 'hotspot' de avistamientos— también tiene encuentros de aviación militar en el registro público.",
+  "whyMatters_en": "Turkey's second corpus case, with an institutional profile distinct from Kumburgaz: instead of a civilian video, here Air Force pilots report up the chain of command to the tower and the army alert center. It shows that Turkey —considered a sightings 'hotspot'— also has military aviation encounters in the public record.",
+  "evidence": [
+    "Dos pilotos de la Fuerza Aérea Turca en un T-37, vuelo de entrenamiento sobre el Egeo (Çandarlí, 2001).",
+    "Objeto brillante forma cono/disco que giró alrededor del avión ~30 minutos.",
+    "Reportado al controlador y al centro regional de alerta del ejército turco.",
+    "Cobertura de prensa internacional (ABC News); sin confirmación de radar disponible."
+  ],
+  "evidence_en": [
+    "Two Turkish Air Force pilots in a T-37, training flight over the Aegean (Çandarlı, 2001).",
+    "Bright cone/disc-shaped object that gyrated around the plane ~30 minutes.",
+    "Reported to the controller and the regional alert center of the Turkish army.",
+    "International press coverage (ABC News); no available radar confirmation."
+  ],
+  "sources": [
+    {
+      "name": "ABC News — 'Turkish Pilots Encounter UFOs Over Aegean' (2001)",
+      "url": "https://abcnews.go.com/International/story?id=80672"
+    },
+    {
+      "name": "Hürriyet Daily News — 'UFOs continue to fascinate Turkey and the world'",
+      "url": "https://www.hurriyetdailynews.com/ufos-continue-to-fascinate-turkey-and-the-world-------84526"
+    }
+  ]
+}

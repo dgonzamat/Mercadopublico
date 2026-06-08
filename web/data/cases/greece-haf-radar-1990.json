@@ -1,0 +1,48 @@
+{
+  "id": "greece-haf-radar-1990",
+  "num": 120,
+  "name": "Grecia · radar HAF, tres controladores",
+  "name_en": "Greece · HAF radar, three controllers",
+  "year_start": 1990,
+  "country": "GR",
+  "country_name": "Grecia",
+  "flag": "🇬🇷",
+  "location": {
+    "lat": 37.98,
+    "lng": 23.73,
+    "place": "Espacio aéreo griego — expediente Hellenic Air Force"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 45,
+  "summary": "El 14 de diciembre de 1990, tres controladores aéreos independientes en distintas ubicaciones detectaron en radar un objeto cigar-shaped que cruzaba el espacio aéreo griego a más de 3.000 mph, pintando un blanco duro en pantalla. La Hellenic Air Force abrió un expediente oficial del caso. Primer caso de Grecia en el corpus: multi-controlador + radar duro + archivo militar.",
+  "summary_en": "On December 14, 1990, three independent air traffic controllers at different locations tracked on radar a cigar-shaped object crossing Greek airspace at over 3,000 mph, painting a hard target on screen. The Hellenic Air Force opened an official file on the case. Greece's first case in the corpus: multi-controller + hard radar + military file.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "El 14 de diciembre de 1990, tres controladores aéreos —operando de forma independiente en ubicaciones distintas— registraron en radar el mismo objeto cruzando el espacio aéreo griego. El blanco, descrito como de forma alargada (cigar-shaped), se desplazaba a una velocidad estimada de más de 3.000 mph y aparecía como un retorno de radar sólido ('hard target'), no como un eco fantasma o una interferencia.\n\nLa coincidencia de tres registros independientes y la naturaleza física del retorno llevaron a la Hellenic Air Force (Fuerza Aérea Helénica) a abrir un expediente oficial del caso.\n\nEl encuadre del corpus es directo: lo sólido aquí es la cadena institucional —radar militar, multiplicidad de operadores independientes, expediente de la fuerza aérea—. No hay confirmación visual ni material recuperado, y la velocidad reportada (3.000+ mph) debe leerse con la cautela habitual de las estimaciones de radar de la época. Pero como dato instrumental institucional, ancla a Grecia en el corpus con un caso de tier medio creíble.",
+  "whatHappened_en": "On December 14, 1990, three air traffic controllers —operating independently at different locations— recorded on radar the same object crossing Greek airspace. The target, described as elongated (cigar-shaped), moved at an estimated speed of over 3,000 mph and appeared as a solid radar return ('hard target'), not a phantom echo or interference.\n\nThe coincidence of three independent records and the physical nature of the return led the Hellenic Air Force to open an official file on the case.\n\nThe corpus framing is straightforward: what is solid here is the institutional chain —military radar, multiple independent operators, an air-force file. There is no visual confirmation or recovered material, and the reported speed (3,000+ mph) should be read with the usual caution of period radar estimates. But as an institutional instrumental datum, it anchors Greece in the corpus with a credible mid-tier case.",
+  "whyMatters": "Primer caso griego del corpus, y de buen perfil institucional: no un avistamiento anónimo sino tres controladores independientes y un expediente abierto por la Hellenic Air Force sobre un blanco duro de radar. Se prefirió este al 'Greek Roswell' de Megas Platanos (1990), cuyos testigos eran campesinos y cuya explicación oficial —reentrada de un satélite soviético— es plausible y mundana.",
+  "whyMatters_en": "Greece's first corpus case, and one with a solid institutional profile: not an anonymous sighting but three independent controllers and a file opened by the Hellenic Air Force on a hard radar target. It was preferred over the Megas Platanos 'Greek Roswell' (1990), whose witnesses were villagers and whose official explanation —a Soviet satellite re-entry— is plausible and mundane.",
+  "evidence": [
+    "Tres controladores aéreos independientes en distintas ubicaciones detectaron el mismo objeto en radar (14 dic 1990).",
+    "Blanco duro ('hard target'), forma alargada, velocidad estimada +3.000 mph.",
+    "La Hellenic Air Force abrió un expediente oficial del caso.",
+    "Sin confirmación visual ni material recuperado — dato puramente instrumental."
+  ],
+  "evidence_en": [
+    "Three independent air traffic controllers at different locations tracked the same object on radar (Dec 14, 1990).",
+    "Hard radar target, elongated shape, estimated speed 3,000+ mph.",
+    "The Hellenic Air Force opened an official file on the case.",
+    "No visual confirmation or recovered material — a purely instrumental datum."
+  ],
+  "sources": [
+    {
+      "name": "GreekReporter — 'The Greek Roswell: UFO Sightings in Greece' (2026)",
+      "url": "https://greekreporter.com/2026/05/06/roswell-greece-ufo/"
+    },
+    {
+      "name": "Wikipedia — UFO sightings in Greece",
+      "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_Greece"
+    }
+  ]
+}
