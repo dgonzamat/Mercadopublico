@@ -1,0 +1,48 @@
+{
+  "id": "air-france-3532-1994",
+  "num": 122,
+  "name": "Air France 3532 · disco + radar militar (GEIPAN)",
+  "name_en": "Air France 3532 · disc + military radar (GEIPAN)",
+  "year_start": 1994,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 48.82,
+    "lng": 3.08,
+    "place": "Cerca de Coulommiers, región de París"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "El 28 de enero de 1994, la tripulación del Airbus A320 del vuelo Air France 3532 (cap. Jean-Charles Duboc) observó cerca de Coulommiers un disco/lente marrón-rojizo de ~300 m que cambiaba de forma. El radar militar de la Defensa Aérea (CODA) registró un track de ~50 segundos de un objeto que cruzó la trayectoria del avión a menos de 1 milla náutica. GEIPAN clasifica el caso como 'inexplicado' y el informe COMETA lo destaca. Caso multi-modal: aviación civil + radar militar + agencia oficial.",
+  "summary_en": "On January 28, 1994, the crew of Air France flight 3532's Airbus A320 (Capt. Jean-Charles Duboc) observed near Coulommiers a shape-shifting brown-red disc/lens about 300 m across. Military air-defense radar (CODA) recorded a ~50-second track of an object that crossed the aircraft's path at less than 1 nautical mile. GEIPAN classifies the case as 'unexplained' and the COMETA report highlights it. A multi-modal case: civil aviation + military radar + official agency.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "El 28 de enero de 1994, el vuelo Air France 3532 (Niza-Londres) sobrevolaba la región de París en un Airbus A320. La tripulación —encabezada por el capitán Jean-Charles Duboc— avistó sobre el horizonte un objeto discoidal de gran tamaño, estimado en unos 300 metros de diámetro, de color marrón-rojizo oscuro, bordes difusos y que cambiaba constantemente de forma, descrito como una 'lente gigantesca'.\n\nLo decisivo es la corroboración instrumental: el Centre d'Opérations de la Défense Aérienne (CODA), desde el centro de detección de Cinq-Mars-la-Pile, registró un track de radar de unos 50 segundos cuya trayectoria casi intersecó la del A320 —distancia mínima registrada por debajo de 1 milla náutica—. El objeto desapareció del radar de forma abrupta.\n\nGEIPAN, la unidad oficial del CNES para fenómenos aeroespaciales no identificados, mantiene el caso en su inventario clasificado como 'inexplicado' (expediente 1994-01-01345). El informe COMETA —elaborado por ex altos oficiales y expertos franceses— lo citó como ejemplo destacado de maniobras y velocidades extraordinarias. La línea epistémica es fuerte: visual de tripulación profesional + radar militar independiente + clasificación oficial de inexplicado.",
+  "whatHappened_en": "On January 28, 1994, Air France flight 3532 (Nice-London) was flying over the Paris region in an Airbus A320. The crew —led by Captain Jean-Charles Duboc— sighted a large disc-shaped object on the horizon, estimated at about 300 meters across, dark brown-red, with fuzzy edges and constantly shifting shape, described as a 'gigantic lens'.\n\nThe decisive element is the instrumental corroboration: the Air Defense Operations Center (CODA), from the Cinq-Mars-la-Pile detection center, recorded a radar track of about 50 seconds whose path nearly intersected the A320's —minimum recorded distance under 1 nautical mile. The object vanished abruptly from radar.\n\nGEIPAN, the CNES's official unit for unidentified aerospace phenomena, keeps the case in its inventory classified as 'unexplained' (file 1994-01-01345). The COMETA report —drawn up by former senior French officers and experts— cited it as a prime example of extraordinary maneuvers and speeds. The epistemic line is strong: professional crew visual + independent military radar + official 'unexplained' classification.",
+  "whyMatters": "Uno de los casos de aviación + radar más sólidos de Francia y faltaba en el corpus: no testimonio aislado, sino visual de una tripulación profesional confirmado por radar militar independiente, y con la rareza de una clasificación oficial de 'inexplicado' por la agencia estatal (GEIPAN) más la mención en COMETA. Complementa los casos franceses de traza física (Trans-en-Provence) y de ocupantes (Valensole) con uno puramente aeronáutico-instrumental.",
+  "whyMatters_en": "One of France's strongest aviation + radar cases, and it was missing from the corpus: not isolated testimony but a professional crew visual confirmed by independent military radar, with the rarity of an official 'unexplained' classification by the state agency (GEIPAN) plus the COMETA mention. It complements the French physical-trace case (Trans-en-Provence) and entity case (Valensole) with a purely aeronautical-instrumental one.",
+  "evidence": [
+    "Tripulación profesional del A320 (cap. Jean-Charles Duboc) avistó un disco/lente de ~300 m, marrón-rojizo, cambiante.",
+    "Radar militar (CODA, Cinq-Mars-la-Pile) registró un track de ~50 s a <1 milla náutica del avión.",
+    "GEIPAN (CNES) clasifica el caso como 'inexplicado' (expediente 1994-01-01345).",
+    "Citado como ejemplo destacado en el informe COMETA."
+  ],
+  "evidence_en": [
+    "Professional A320 crew (Capt. Jean-Charles Duboc) sighted a ~300 m brown-red, shape-shifting disc/lens.",
+    "Military radar (CODA, Cinq-Mars-la-Pile) recorded a ~50 s track within <1 nautical mile of the aircraft.",
+    "GEIPAN (CNES) classifies the case as 'unexplained' (file 1994-01-01345).",
+    "Cited as a prime example in the COMETA report."
+  ],
+  "sources": [
+    {
+      "name": "GEIPAN / CNES — inventario oficial (caso 1994-01-01345, Coulommiers)",
+      "url": "https://www.geipan.fr/"
+    },
+    {
+      "name": "Air France 3532 (28 ene 1994) — track de radar (documentación ufológica)",
+      "url": "https://ufologie.patrickgross.org/ufology/af3532rt.htm"
+    }
+  ]
+}
