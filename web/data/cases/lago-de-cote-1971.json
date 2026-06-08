@@ -72,5 +72,14 @@
       "rationale": "Análisis fotogramétrico de Haines descarta reflejo del lago, mancha óptica, montaje y artefacto mecánico — categorías que cubrirían la mayoría de explicaciones naturales",
       "rationaleEn": "Haines's photogrammetric analysis rules out lake reflection, optical spot, montage and mechanical artifact — categories that would cover most natural explanations"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cote_ufo.jpg?width=600",
+    "alt": "Fotografía aérea del Instituto Geográfico Nacional de Costa Rica con un objeto discoidal sobre el Lago de Cote, 4 de septiembre de 1971.",
+    "caption": "Imagen del relevamiento aéreo del Instituto Geográfico Nacional de Costa Rica (4 sep 1971): un disco capturado por casualidad sobre el Lago de Cote, considerada una de las fotos UAP de mayor calidad por su origen instrumental no buscado.",
+    "caption_en": "Image from the Costa Rican National Geographic Institute's aerial survey (Sept 4, 1971): a disc captured by chance over Lake Cote, considered one of the highest-quality UAP photos because of its incidental, instrumental origin.",
+    "source": "Instituto Geográfico Nacional de Costa Rica",
+    "license": "Dominio público",
+    "href": "https://commons.wikimedia.org/wiki/File:Cote_ufo.jpg"
+  }
 }
