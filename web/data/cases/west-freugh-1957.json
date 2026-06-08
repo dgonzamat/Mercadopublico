@@ -1,0 +1,48 @@
+{
+  "id": "west-freugh-1957",
+  "num": 115,
+  "name": "West Freugh · radar RAF + silencio del Air Ministry",
+  "name_en": "West Freugh · RAF radar + Air Ministry silence",
+  "year_start": 1957,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 54.85,
+    "lng": -4.94,
+    "place": "RAF West Freugh, Wigtownshire, Escocia"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "En abril de 1957, el radar de la Bombing Trials Unit del Ministry of Supply en RAF West Freugh (Escocia) trackeó durante 36 minutos un objeto que se mantuvo estático a 50.000 ft, ascendió a 70.000 ft y luego aceleró a ~240 mph hacia la Isla de Man. El Air Ministry, interpelado en el Parlamento, admitió no tener explicación; al comandante de la base se le ordenó silencio. Caso radar institucional de primer nivel con cover-up parlamentario documentado.",
+  "summary_en": "In April 1957, the Ministry of Supply Bombing Trials Unit radar at RAF West Freugh (Scotland) tracked an object for 36 minutes that held still at 50,000 ft, climbed to 70,000 ft and then accelerated to ~240 mph toward the Isle of Man. The Air Ministry, questioned in Parliament, admitted it had no explanation; the base commander was ordered to stay silent. A top-tier institutional radar case with a documented parliamentary cover-up.",
+  "patterns": ["8e", "8m"],
+  "category": "incident",
+  "whatHappened": "El 4 de abril de 1957, las unidades de radar de la Bombing Trials Unit del Ministry of Supply, con base en RAF West Freugh (Wigtownshire, suroeste de Escocia), detectaron un objeto no identificado mientras monitoreaban un ejercicio de bombardeo. El objeto permaneció estático durante unos 10 minutos a 50.000 pies, a 20-25 millas al norte de Stranraer; luego ascendió a 70.000 pies, giró al sudeste y aceleró a unas 240 mph dirigiéndose hacia la Isla de Man. En total fue trackeado por radar durante 36 minutos.\n\nComo el caso llegó a los titulares de la prensa, miembros del Parlamento —entre ellos el diputado conservador Sir Patrick Wall— interpelaron al Air Ministry, que se vio forzado a admitir que no tenía una explicación convencional. El comandante de RAF West Freugh, Wing Commander Walter Whitworth, emitió una declaración aprobada por el Air Ministry: «Tengo orden del Air Ministry de no decir nada sobre el objeto. No se me permite revelar su posición, curso ni velocidad».\n\nEl expediente forma parte de los archivos UAP de los National Archives del Reino Unido. La línea epistémica es fuerte: medición instrumental de altura y velocidad por radar militar, performance anómala (hover seguido de aceleración a gran altura) y una admisión oficial de no-explicación acompañada de una orden explícita de silencio.",
+  "whatHappened_en": "On April 4, 1957, radar units of the Ministry of Supply Bombing Trials Unit, headquartered at RAF West Freugh (Wigtownshire, south-west Scotland), detected an unidentified object while monitoring a bombing exercise. The object held still for about 10 minutes at 50,000 feet, 20-25 miles north of Stranraer; it then climbed to 70,000 feet, turned south-east and accelerated to about 240 mph toward the Isle of Man. In all it was tracked on radar for 36 minutes.\n\nAs the case hit the press headlines, Members of Parliament —among them Conservative MP Sir Patrick Wall— questioned the Air Ministry, which was forced to admit it had no conventional explanation. The commanding officer of RAF West Freugh, Wing Commander Walter Whitworth, issued an Air Ministry-approved statement: «I have been ordered by the Air Ministry to say nothing about the object. I am not allowed to reveal its position, course and speed».\n\nThe file is part of the UK National Archives' UAP records. The epistemic line is strong: instrumental measurement of height and speed by military radar, anomalous performance (hover followed by high-altitude acceleration), and an official admission of no-explanation paired with an explicit order of silence.",
+  "whyMatters": "Es uno de los radar-cases institucionales más sólidos del Reino Unido y faltaba en el corpus: datos de radar militar con altura y velocidad medidas, performance que excede el envelope de 1957, y —raro— una admisión parlamentaria de que el Air Ministry no podía explicarlo, junto a una orden documentada de silencio. Suma un caso británico de los años 50 puramente instrumental, distinto del visual/forense de Rendlesham o la foto de Calvine.",
+  "whyMatters_en": "It is one of the UK's strongest institutional radar cases and was missing from the corpus: military radar data with measured height and speed, performance exceeding the 1957 envelope, and —rarely— a parliamentary admission that the Air Ministry could not explain it, alongside a documented order of silence. It adds a purely instrumental 1950s British case, distinct from the visual/forensic Rendlesham or the Calvine photo.",
+  "evidence": [
+    "Radar militar (Bombing Trials Unit, Ministry of Supply) trackeó el objeto 36 minutos con altura y velocidad medidas.",
+    "Performance anómala: estático a 50.000 ft, ascenso a 70.000 ft, aceleración a ~240 mph.",
+    "El Air Ministry, interpelado en el Parlamento (Sir Patrick Wall), admitió no tener explicación convencional.",
+    "Orden explícita de silencio al comandante de la base; expediente en los National Archives del Reino Unido."
+  ],
+  "evidence_en": [
+    "Military radar (Bombing Trials Unit, Ministry of Supply) tracked the object for 36 minutes with measured height and speed.",
+    "Anomalous performance: still at 50,000 ft, climb to 70,000 ft, acceleration to ~240 mph.",
+    "The Air Ministry, questioned in Parliament (Sir Patrick Wall), admitted it had no conventional explanation.",
+    "Explicit order of silence to the base commander; file held at the UK National Archives."
+  ],
+  "sources": [
+    {
+      "name": "The National Archives (UK) — Unidentified Flying Objects (UFOs) research guide",
+      "url": "https://cdn.nationalarchives.gov.uk/documents/aug-2009-research-guide.pdf"
+    },
+    {
+      "name": "RAF West Freugh incident, April 1957 (documentación ufológica)",
+      "url": "http://ufologie.patrickgross.org/htm/westfreugh57.htm"
+    }
+  ]
+}

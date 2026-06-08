@@ -1,0 +1,48 @@
+{
+  "id": "howden-moor-1997",
+  "num": 116,
+  "name": "Howden Moor · operativo de rescate por un objeto fantasma",
+  "name_en": "Howden Moor · rescue operation for a phantom object",
+  "year_start": 1997,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 53.43,
+    "lng": -1.75,
+    "place": "Howden Moors, Peak District, frontera South Yorkshire/Derbyshire"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 28,
+  "summary": "La noche del 24 de marzo de 1997, tras reportes de un objeto que se estrelló o explotó sobre los Howden Moors (Peak District), los servicios de emergencia montaron uno de los mayores operativos de búsqueda de la región (~200 personas, £50.000+). El British Geological Survey registró dos 'eventos sónicos' esa noche; hubo cazas de la RAF a baja altura. Pero ningún avión apareció y los radares no detectaron nada. Caso multi-agencia sobre un objeto que el aparato oficial buscó pero nunca confirmó.",
+  "summary_en": "On the night of March 24, 1997, after reports of an object that crashed or exploded over the Howden Moors (Peak District), emergency services mounted one of the region's largest search operations (~200 personnel, £50,000+). The British Geological Survey recorded two 'sonic events' that night; low-flying RAF jets were involved. But no aircraft turned up and radars detected nothing. A multi-agency case about an object the official apparatus searched for but never confirmed.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "Poco después de las 22:00 del lunes 24 de marzo de 1997, múltiples testigos reportaron luces y un estruendo sobre los Howden Moors, en la frontera entre South Yorkshire y el Peak District de Derbyshire, compatibles con un avión estrellándose o un objeto explotando. La policía de South Yorkshire y los servicios de emergencia montaron en respuesta uno de los mayores operativos aéreos y terrestres de rescate de la historia de la región: casi 200 efectivos y un costo superior a las £50.000, asumiendo un desastre aéreo.\n\nLa búsqueda no encontró nada: ningún avión derribado, ningún resto. Las llamadas a todos los aeropuertos civiles y militares dieron negativo —nadie tenía aeronaves sobre los páramos— y los radares tampoco habían registrado algo. Sin embargo, sí quedó evidencia instrumental: el British Geological Survey grabó dos 'eventos sónicos' inexplicados esa noche, y se reportó actividad de cazas de la RAF a baja altura en la zona.\n\nEl encuadre es deliberadamente cauto: lo documentado con solidez es la respuesta institucional masiva y el registro sísmico del BGS, no la naturaleza del objeto. Bien podría combinar un bólido/meteoro con vuelos militares coincidentes. Es un caso del límite: un evento real lo bastante creíble como para movilizar al Estado, pero sin objeto confirmado por sensor.",
+  "whatHappened_en": "Shortly after 10pm on Monday, March 24, 1997, multiple witnesses reported lights and a roar over the Howden Moors, on the border between South Yorkshire and the Derbyshire Peak District, consistent with an aircraft crashing or an object exploding. South Yorkshire Police and emergency services mounted in response one of the largest air and ground rescue operations in the region's history: nearly 200 personnel and a cost exceeding £50,000, assuming an air disaster.\n\nThe search found nothing: no downed aircraft, no debris. Calls to every civilian and military airport came back negative —no one had aircraft over the moors— and radars had recorded nothing either. Yet instrumental evidence did remain: the British Geological Survey recorded two unexplained 'sonic events' that night, and low-flying RAF jet activity was reported in the area.\n\nThe framing is deliberately cautious: what is solidly documented is the massive institutional response and the BGS seismic record, not the nature of the object. It could well combine a bolide/meteor with coincidental military flights. It is a borderline case: a real event credible enough to mobilize the state, but with no sensor-confirmed object.",
+  "whyMatters": "Documenta algo poco común: el Estado movilizando un operativo de rescate de gran escala por un objeto que nunca apareció ni en el terreno ni en el radar, con registro sísmico independiente del BGS. Es el tipo de caso que el corpus ancla con honestidad —fuerte en respuesta institucional, débil en identificación del objeto—. Fue investigado por David Clarke, periodista y académico que curó los archivos OVNI del MoD y ya está en el roster.",
+  "whyMatters_en": "It documents something uncommon: the state mounting a large-scale rescue operation for an object that never appeared on the ground or on radar, with an independent BGS seismic record. It is the kind of case the corpus anchors honestly —strong on institutional response, weak on object identification. It was investigated by David Clarke, the journalist and academic who curated the MoD UFO files and is already in the roster.",
+  "evidence": [
+    "Uno de los mayores operativos de rescate de la región (~200 efectivos, £50.000+), policía de South Yorkshire + servicios de emergencia.",
+    "El British Geological Survey registró dos 'eventos sónicos' inexplicados la noche del 24 de marzo de 1997.",
+    "Reportes de cazas de la RAF a baja altura en la zona.",
+    "Ningún avión hallado y radares negativos: el objeto nunca fue confirmado por sensor."
+  ],
+  "evidence_en": [
+    "One of the region's largest rescue operations (~200 personnel, £50,000+), South Yorkshire Police + emergency services.",
+    "The British Geological Survey recorded two unexplained 'sonic events' on the night of March 24, 1997.",
+    "Reports of low-flying RAF jets in the area.",
+    "No aircraft found and negative radars: the object was never sensor-confirmed."
+  ],
+  "sources": [
+    {
+      "name": "Dr David Clarke — Secret Files: The Howden Moor Incident",
+      "url": "https://drdavidclarke.co.uk/secret-files/howden-moor-incident/"
+    },
+    {
+      "name": "Wikipedia — UFO sightings in the United Kingdom (Howden Moor, 1997)",
+      "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_the_United_Kingdom"
+    }
+  ]
+}

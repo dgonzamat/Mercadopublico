@@ -103,7 +103,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   kean: ["nimitz-2004", "kecksburg-1965"],
   knapp: ["aawsap-skinwalker-2008", "uss-omaha-2019"],
   corbell: ["uss-omaha-2019"],
-  clarke: ["rendlesham-1980", "calvine-1990"],
+  clarke: ["rendlesham-1980", "calvine-1990", "howden-moor-1997"],
   blumenthal: ["nimitz-2004"],
   gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986", "arquivo-nacional-brasil-2026"],
 
