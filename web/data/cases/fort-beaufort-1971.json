@@ -1,0 +1,49 @@
+{
+  "id": "fort-beaufort-1971",
+  "num": 114,
+  "name": "Fort Beaufort · OVNI baleado por la policía",
+  "name_en": "Fort Beaufort · UFO fired on by police",
+  "year_start": 1971,
+  "country": "ZA",
+  "country_name": "Sudáfrica",
+  "flag": "🇿🇦",
+  "location": {
+    "lat": -32.78,
+    "lng": 26.63,
+    "place": "Braeside farm, Fort Beaufort, Cabo Oriental"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "El 26 de junio de 1971, cerca de Fort Beaufort (Cabo Oriental), un granjero y dos policías dispararon contra un objeto luminoso de baja altura que cambiaba de color; seis concejales lo observaron con binoculares y se hallaron nueve marcas de tren de aterrizaje en arcilla dura. Caso multi-testigo con participación policial y municipal, traza física y cobertura de prensa internacional — pero sin registro de sensor ni reporte militar formal.",
+  "summary_en": "On June 26, 1971, near Fort Beaufort (Eastern Cape), a farmer and two policemen fired at a low-altitude luminous object that changed color; six town councillors watched it through binoculars and nine landing-gear imprints were found in hard clay. A multi-witness case with police and municipal involvement, a physical trace and international press coverage — but no sensor record or formal military report.",
+  "patterns": ["8a"],
+  "category": "incident",
+  "whatHappened": "En la mañana del 26 de junio de 1971, en la granja Braeside cerca de Fort Beaufort (Cabo Oriental, Sudáfrica), un peón notó una 'bola de fuego' de unos 0,76 m de diámetro a la altura de las copas de los árboles. El dueño, Bennie Smit, disparó ocho tiros contra el objeto sin efecto visible.\n\nLlegó la policía: el sargento Piet Kitching y el comandante de estación P.R. van Rensburg también dispararon. Según los testigos, el objeto cambió de color y terminó adoptando la apariencia de un tambor de 200 litros, ovalado y de un gris metálico (gunmetal). Seis concejales municipales de Fort Beaufort observaron el episodio con binoculares, y en el terreno se encontraron nueve impresiones —descritas como marcas de tren de aterrizaje— sobre arcilla dura.\n\nEl caso fue cubierto por la prensa internacional. Se reportó que el regimiento del ejército de Grahamstown investigó el sitio, pero la institución no pudo —o no quiso— aportar registros del evento. Esa es la línea epistémica del caso: testigos institucionales múltiples (policía, concejo municipal) y una traza física, pero sin dato de sensor ni un informe militar formal que lo respalde.",
+  "whatHappened_en": "On the morning of June 26, 1971, at Braeside farm near Fort Beaufort (Eastern Cape, South Africa), a farm laborer noticed a 'fireball' about 0.76 m across at treetop height. The owner, Bennie Smit, fired eight shots at the object with no visible effect.\n\nPolice arrived: sergeant Piet Kitching and station commander P.R. van Rensburg also fired. According to witnesses, the object changed color and eventually took on the appearance of a gunmetal-grey, oval, 200-liter-drum shape. Six Fort Beaufort town councillors watched the episode through binoculars, and nine imprints —described as landing-gear marks— were found on hard clay.\n\nThe case was covered by international press. The Grahamstown army regiment was reported to have investigated the site, but the institution could not —or would not— provide records of the event. That is the case's epistemic line: multiple institutional witnesses (police, town council) and a physical trace, but no sensor data and no formal military report to back it.",
+  "whyMatters": "Es el caso sudafricano mejor documentado y el de mayor peso institucional: no es un avistamiento anónimo sino uno con policía, concejo municipal y traza física. Ancla a Sudáfrica en el corpus con un caso Tier B honesto —creíble por la cantidad y calidad de testigos, pero limitado por la ausencia de sensor o reporte militar formal—. Su contraparte famosa, el supuesto derribo de Kalahari (1989), quedó fuera por ser un fraude documentado, desmentido por la propia pionera de la ufología africana, Cynthia Hind.",
+  "whyMatters_en": "It is South Africa's best-documented case and the one with the most institutional weight: not an anonymous sighting but one involving police, a town council and a physical trace. It anchors South Africa in the corpus with an honest Tier B case —credible for the number and quality of witnesses, but limited by the absence of sensor data or a formal military report. Its famous counterpart, the alleged Kalahari shootdown (1989), was left out as a documented hoax, debunked by the pioneer of African ufology herself, Cynthia Hind.",
+  "evidence": [
+    "Disparos de un granjero (Bennie Smit) y de la policía (sargento Kitching, comandante van Rensburg) contra el objeto, sin efecto visible.",
+    "Seis concejales de Fort Beaufort observaron el episodio con binoculares.",
+    "Nueve marcas tipo tren de aterrizaje halladas en arcilla dura (traza física).",
+    "Cobertura de prensa internacional; el ejército de Grahamstown investigó el sitio pero no aportó registros."
+  ],
+  "evidence_en": [
+    "Shots fired by a farmer (Bennie Smit) and police (sergeant Kitching, commander van Rensburg) at the object, with no visible effect.",
+    "Six Fort Beaufort town councillors watched the episode through binoculars.",
+    "Nine landing-gear-type imprints found in hard clay (physical trace).",
+    "International press coverage; the Grahamstown army regiment investigated the site but produced no records."
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — UFO sightings in South Africa (Fort Beaufort, 1971)",
+      "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa"
+    },
+    {
+      "name": "Cynthia Hind — investigación de casos del sur de África (contexto)",
+      "note": "Hind documentó casos africanos y desmintió el fraude de Kalahari (1989).",
+      "note_en": "Hind documented African cases and debunked the Kalahari hoax (1989)."
+    }
+  ]
+}
