@@ -1,0 +1,44 @@
+{
+  "id": "afghanistan-isr-disc-2020",
+  "num": 131,
+  "name": "Afganistán · disco en sensor IR de plataforma ISR (USAF)",
+  "name_en": "Afghanistan · disc on USAF ISR platform IR sensor",
+  "year_start": 2020,
+  "country": "AF",
+  "country_name": "Afganistán",
+  "flag": "🇦🇫",
+  "location": {
+    "lat": 33.0,
+    "lng": 69.5,
+    "place": "Frontera Afganistán–Pakistán (plataforma de reconocimiento de la USAF)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 32,
+  "summary": "En 2020, una plataforma de reconocimiento a gran altitud de la Fuerza Aérea de EE.UU. captó sobre la frontera Afganistán–Pakistán un objeto discoidal en sensor térmico/infrarrojo, estimado en 200-400 m, que no mostraba penacho de calor pese a ir registrado por una cámara térmica. El metraje fue difundido por el periodista Jeremy Corbell. Primer registro de Afganistán: dato de sensor militar real en el teatro de operaciones, con la salvedad honesta de que el Pentágono no lo ha confirmado oficialmente (a diferencia de los videos de la Marina).",
+  "summary_en": "In 2020, a U.S. Air Force high-altitude reconnaissance platform captured over the Afghanistan–Pakistan border a disc-shaped object on a thermal/infrared sensor, estimated at 200-400 m, showing no heat plume despite being recorded by a thermal camera. The footage was released by journalist Jeremy Corbell. Afghanistan's first record: real military sensor data in-theater, with the honest caveat that the Pentagon has not officially confirmed it (unlike the Navy videos).",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En 2020, durante la presencia militar estadounidense en Afganistán, una plataforma de reconocimiento e inteligencia (ISR) de gran altitud de la Fuerza Aérea de EE.UU. registró sobre la región fronteriza entre Afganistán y Pakistán un objeto de forma discoidal. La grabación, hecha con un sensor térmico/infrarrojo, mostraba un objeto estimado entre 200 y 400 metros de diámetro que no exhibía penacho ni firma de calor —algo notable, dado que una cámara térmica debería detectar el calor de un sistema de propulsión convencional.\n\nEl metraje llegó al público a través del periodista e investigador Jeremy Corbell, conocido por difundir varias filtraciones de video militar (algunas de ellas, como las esferas y el 'pirámide' de la Marina de 2021, posteriormente confirmadas como auténticas por el Pentágono).\n\nEl encuadre del corpus es deliberadamente cauto sobre la procedencia. Lo que ancla el caso es su carácter de dato de sensor militar en un teatro de operaciones activo: imagen térmica desde una plataforma ISR, no un testimonio visual aislado. La salvedad honesta es igual de importante: a diferencia de los videos de la Marina (Nimitz, GoFast, Gimbal) reconocidos oficialmente, esta grabación afgana fue difundida por un periodista y el Departamento de Defensa no ha emitido una confirmación formal ni un expediente público de AARO. Se incluye, por tanto, en su tier correspondiente: un registro de sensor real y geográficamente anclado, pero con una cadena de custodia institucional más débil que los casos S del corpus.",
+  "whatHappened_en": "In 2020, during the U.S. military presence in Afghanistan, a high-altitude intelligence, surveillance and reconnaissance (ISR) platform of the U.S. Air Force recorded a disc-shaped object over the border region between Afghanistan and Pakistan. The recording, made with a thermal/infrared sensor, showed an object estimated at 200 to 400 meters across that displayed no heat plume or signature —notable, since a thermal camera should detect the heat of a conventional propulsion system.\n\nThe footage reached the public through journalist and investigator Jeremy Corbell, known for releasing several military video leaks (some of them, like the Navy's 2021 spheres and 'pyramid', later confirmed as authentic by the Pentagon).\n\nThe corpus framing is deliberately cautious about provenance. What anchors the case is its nature as a military sensor datum in an active theater of operations: a thermal image from an ISR platform, not an isolated visual testimony. The honest caveat is equally important: unlike the Navy videos (Nimitz, GoFast, Gimbal) that were officially acknowledged, this Afghan recording was released by a journalist, and the Department of Defense has issued no formal confirmation or public AARO file. It is therefore included at its appropriate tier: a real, geographically-anchored sensor record, but with a weaker institutional chain of custody than the corpus's S-tier cases.",
+  "whyMatters": "Primer registro de Afganistán y la extensión del corpus a un teatro de guerra: no un testimonio visual, sino imagen de sensor térmico desde una plataforma ISR de la USAF. Su valor es instrumental y geográfico; su límite, honesto: la procedencia es una difusión periodística sin confirmación formal del Pentágono ni expediente de AARO. Ancla a Afganistán como dato de sensor militar real, sin elevarlo al estatus de los casos oficialmente reconocidos.",
+  "whyMatters_en": "Afghanistan's first record and the corpus's extension into a war theater: not a visual testimony but a thermal-sensor image from a USAF ISR platform. Its value is instrumental and geographic; its limit, honest: the provenance is a journalistic release with no formal Pentagon confirmation or AARO file. It anchors Afghanistan as a real military sensor datum, without elevating it to the status of the officially acknowledged cases.",
+  "evidence": [
+    "Objeto discoidal registrado en sensor térmico/IR desde una plataforma ISR de la USAF a gran altitud (2020).",
+    "Sobre la región fronteriza Afganistán–Pakistán; tamaño estimado 200-400 m, sin penacho ni firma de calor.",
+    "Metraje difundido por el periodista Jeremy Corbell (autor de otras filtraciones de video militar).",
+    "Salvedad honesta: sin confirmación formal del Pentágono ni expediente público de AARO — cadena de custodia más débil que los videos de la Marina."
+  ],
+  "evidence_en": [
+    "Disc-shaped object recorded on a thermal/IR sensor from a high-altitude USAF ISR platform (2020).",
+    "Over the Afghanistan–Pakistan border region; estimated size 200-400 m, no heat plume or signature.",
+    "Footage released by journalist Jeremy Corbell (author of other military video leaks).",
+    "Honest caveat: no formal Pentagon confirmation or public AARO file — weaker chain of custody than the Navy videos."
+  ],
+  "sources": [
+    {
+      "name": "NBC News — 'Disc-shaped UAP caught on camera by the military in 2020'",
+      "url": "https://www.nbcnews.com/now/video/disc-shaped-uap-caught-on-camera-by-the-military-in-2020-241946693913"
+    }
+  ]
+}
