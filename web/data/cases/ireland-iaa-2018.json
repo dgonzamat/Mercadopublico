@@ -1,0 +1,48 @@
+{
+  "id": "ireland-iaa-2018",
+  "num": 125,
+  "name": "Irlanda · pilotos + investigación del IAA",
+  "name_en": "Ireland · pilots + IAA investigation",
+  "year_start": 2018,
+  "country": "IE",
+  "country_name": "Irlanda",
+  "flag": "🇮🇪",
+  "location": {
+    "lat": 51.9,
+    "lng": -10.2,
+    "place": "Costa suroeste de Irlanda (Shannon ATC)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "summary": "El 9 de noviembre de 2018, hacia las 06:47, la piloto de un British Airways (B787) preguntó a Shannon ATC si había ejercicios militares: había visto un objeto 'moviéndose muy rápido', una luz brillante que viró al norte a gran velocidad. Un vuelo de Virgin reportó múltiples objetos brillantes en la misma trayectoria. El radar no mostró nada y la Irish Aviation Authority abrió una investigación, con las grabaciones de ATC hechas públicas. Primer caso de Irlanda; encuadre honesto: lo más probable es un bólido/meteoro, pero la respuesta institucional quedó documentada.",
+  "summary_en": "On November 9, 2018, around 06:47, the pilot of a British Airways flight (B787) asked Shannon ATC whether there were military exercises: she had seen an object 'moving so fast', a bright light that veered north at high speed. A Virgin flight reported multiple bright objects on the same trajectory. Radar showed nothing and the Irish Aviation Authority opened an investigation, with the ATC recordings made public. Ireland's first case; honest framing: the most likely explanation is a bolide/meteor, but the institutional response was documented.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 9 de noviembre de 2018, alrededor de las 06:47, la piloto de un vuelo de British Airways (indicativo Speedbird94, un Boeing 787) contactó al control de tráfico aéreo de Shannon para preguntar si había ejercicios militares en el espacio aéreo que estaba cruzando. Había observado un objeto que se movía a gran velocidad: apareció por su lado izquierdo, viró bruscamente al norte y se alejó como una luz brillante que 'desapareció a muy alta velocidad'.\n\nMinutos después, la tripulación de un vuelo de Virgin (indicativo Virgin 76) reportó haber visto 'múltiples objetos siguiendo la misma trayectoria, muy brillantes', con dos luces que parecían retroceder y luego ascender a gran velocidad. Shannon ATC informó que no aparecía nada ni en el radar primario ni en el secundario.\n\nLa Irish Aviation Authority (IAA) abrió una investigación del episodio, y las grabaciones de las comunicaciones con ATC se hicieron públicas. El encuadre del corpus es deliberadamente cauto: la explicación más probable —varios pilotos viendo luces muy rápidas y brillantes casi al mismo tiempo, sobre un área amplia y sin retorno de radar— es un meteoro o bólido entrando en la atmósfera, y así lo sugirieron los astrónomos. Lo que ancla el caso no es el objeto, sino la cadena institucional: pilotos de dos aerolíneas comerciales, control aéreo y una investigación formal de la autoridad de aviación, con audio público.",
+  "whatHappened_en": "On November 9, 2018, around 06:47, the pilot of a British Airways flight (callsign Speedbird94, a Boeing 787) contacted Shannon air traffic control to ask whether there were military exercises in the airspace she was crossing. She had observed an object moving at high speed: it appeared on her left-hand side, veered sharply north and moved off as a bright light that 'disappeared at very high speed'.\n\nMinutes later, the crew of a Virgin flight (callsign Virgin 76) reported seeing 'multiple objects following the same trajectory, very bright', with two lights that seemed to move back and then climb away at speed. Shannon ATC reported that nothing showed on either primary or secondary radar.\n\nThe Irish Aviation Authority (IAA) opened an investigation of the episode, and the recordings of the ATC communications were made public. The corpus framing is deliberately cautious: the most likely explanation —several pilots seeing very fast, bright lights at almost the same time, over a wide area and with no radar return— is a meteor or bolide entering the atmosphere, as astronomers suggested. What anchors the case is not the object but the institutional chain: pilots from two commercial airlines, air traffic control and a formal investigation by the aviation authority, with public audio.",
+  "whyMatters": "Primer caso de Irlanda y un ejemplo del valor institucional sobre el fenomenológico: el fenómeno casi seguro fue un meteoro, pero la cadena —dos tripulaciones comerciales, Shannon ATC y una investigación formal de la Irish Aviation Authority con grabaciones públicas— es un registro institucional limpio. Se incluye como Marruecos 1976 o Petrozavodsk: documentado y reconocido, sin elevar el fenómeno a anomalía.",
+  "whyMatters_en": "Ireland's first case and an example of institutional over phenomenological value: the phenomenon was almost certainly a meteor, but the chain —two commercial crews, Shannon ATC and a formal Irish Aviation Authority investigation with public recordings— is a clean institutional record. It is included like Morocco 1976 or Petrozavodsk: documented and acknowledged, without elevating the phenomenon to an anomaly.",
+  "evidence": [
+    "Piloto de British Airways (B787, Speedbird94) reportó a Shannon ATC un objeto rápido y brillante (9 nov 2018, ~06:47).",
+    "Vuelo de Virgin (Virgin 76) reportó múltiples objetos brillantes en la misma trayectoria.",
+    "Shannon ATC: nada en radar primario ni secundario.",
+    "La Irish Aviation Authority abrió investigación; grabaciones de ATC públicas. Explicación más probable: meteoro/bólido."
+  ],
+  "evidence_en": [
+    "British Airways pilot (B787, Speedbird94) reported a fast, bright object to Shannon ATC (Nov 9, 2018, ~06:47).",
+    "Virgin flight (Virgin 76) reported multiple bright objects on the same trajectory.",
+    "Shannon ATC: nothing on primary or secondary radar.",
+    "The Irish Aviation Authority opened an investigation; ATC recordings public. Most likely explanation: meteor/bolide."
+  ],
+  "sources": [
+    {
+      "name": "TheJournal.ie — ''Moving so fast': UFO sighting under investigation by Irish Aviation Authority' (nov 2018)",
+      "url": "https://www.thejournal.ie/moving-so-fast-ufo-sighting-under-investigation-by-irish-airport-authority-4334894-Nov2018/"
+    },
+    {
+      "name": "Irish Examiner — 'UFO seen off Irish coast 'in all probability, were meteorites''",
+      "url": "https://www.irishexaminer.com/news/arid-30884774.html"
+    }
+  ]
+}
