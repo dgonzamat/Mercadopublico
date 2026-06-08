@@ -60,5 +60,14 @@
       "name": "Scully, F. — Behind the Flying Saucers (1950)",
       "note": "Contemporary text with a similar narrative"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/FBI_Hottel_Memo.jpg?width=600",
+    "alt": "Memorándum de Guy Hottel del FBI, marzo de 1950.",
+    "caption": "El memorándum Hottel del FBI (1950) reporta —de segunda mano y sin verificar— «tres platillos voladores recuperados» en Nuevo México. El propio FBI lo marca como rumor no investigado.",
+    "caption_en": "The FBI Hottel memo (1950) reports —second-hand and unverified— «three so-called flying saucers recovered» in New Mexico. The FBI itself flags it as an uninvestigated rumor.",
+    "source": "Federal Bureau of Investigation",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:FBI_Hottel_Memo.jpg"
+  }
 }

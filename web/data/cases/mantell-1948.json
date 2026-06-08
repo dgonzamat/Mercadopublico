@@ -7,7 +7,7 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 37.0,
+    "lat": 37,
     "lng": -85.5,
     "place": "Kentucky"
   },
@@ -62,5 +62,14 @@
       "name": "Clark, J. — UFO Encyclopedia 3rd ed. (2018)",
       "note": "Skyhook synthesis + critique"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kentucky_National_Guard_portrait_of_Captain_Thomas_F._Mantell_Jr.jpg?width=600",
+    "alt": "Retrato de la Guardia Nacional de Kentucky del Capitán Thomas F. Mantell Jr.",
+    "caption": "El Capitán Thomas F. Mantell Jr., piloto de la Guardia Nacional de Kentucky que murió persiguiendo el objeto el 7 de enero de 1948.",
+    "caption_en": "Captain Thomas F. Mantell Jr., the Kentucky Air National Guard pilot who died chasing the object on January 7, 1948.",
+    "source": "Kentucky National Guard",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Kentucky_National_Guard_portrait_of_Captain_Thomas_F._Mantell_Jr.jpg"
+  }
 }

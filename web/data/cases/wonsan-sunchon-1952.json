@@ -49,5 +49,14 @@
       "name": "Wikipedia: Wonsan-Sunchon UFO incident",
       "url": "https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Project_Blue_Book_report_-_1952-10-9169199-North_Korea.pdf?page=1&width=600",
+    "alt": "Primera página del expediente Project Blue Book sobre Corea del Norte, octubre de 1952.",
+    "caption": "Expediente Project Blue Book (octubre de 1952) del avistamiento sobre Corea del Norte durante la guerra (sector Wonsan/Sunchon).",
+    "caption_en": "Project Blue Book case file (October 1952) of the wartime sighting over North Korea (Wonsan/Sunchon sector).",
+    "source": "USAF Project Blue Book",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book_report_-_1952-10-9169199-North_Korea.pdf"
+  }
 }
