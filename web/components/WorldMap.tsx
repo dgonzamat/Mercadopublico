@@ -202,7 +202,7 @@ export default function WorldMap({
       {country !== "all" && (
         <div className="space-y-2">
           <span className="block font-mono text-xs uppercase tracking-widest text-muted">
-            <T es="Investigadores asociados" en="Associated researchers" />
+            <T es="Actores asociados" en="Associated actors" />
           </span>
           {assocResearchers.length > 0 ? (
             <div className="flex flex-wrap gap-2">

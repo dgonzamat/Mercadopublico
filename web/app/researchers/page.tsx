@@ -9,7 +9,7 @@ import { ContractorsShowcase } from "@/components/ContractorsShowcase";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
 
 export const metadata = {
-  title: "Disclosure ecosystem · UAP Codex",
+  title: "Disclosure ecosystem",
   description:
     "Researchers, whistleblowers, politicians, journalists and ontological-religious figures sustaining contemporary UAP disclosure",
 };

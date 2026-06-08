@@ -14,7 +14,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const p = getPost(params.slug);
   if (!p) return { title: "Post no encontrado" };
-  return { title: `${p.title} · UAP Codex`, description: p.summary };
+  return { title: `${p.title}`, description: p.summary };
 }
 
 export default function PostDetailPage({

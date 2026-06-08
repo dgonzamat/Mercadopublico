@@ -3,7 +3,7 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
-  title: "Patterns · UAP Codex",
+  title: "Patterns",
   description: `${STATS.patterns} recurring patterns (8a-8r) identified in the corpus`,
 };
 

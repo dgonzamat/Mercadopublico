@@ -3,7 +3,7 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
-  title: "Marcos teóricos · UAP Codex",
+  title: "Marcos teóricos",
   description: `${STATS.frameworks} serious theoretical frameworks compared`,
 };
 

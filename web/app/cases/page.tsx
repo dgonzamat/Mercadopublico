@@ -9,7 +9,7 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
 
 export const metadata = {
-  title: "Casos · UAP Codex",
+  title: "Casos",
   description: `${TOTAL_CASES} institutional cases documented 1947-2026`,
 };
 
