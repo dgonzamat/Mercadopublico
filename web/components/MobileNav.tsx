@@ -27,8 +27,8 @@ const NAV_LINKS = [
   },
   {
     href: "/researchers",
-    es: { label: "Investigadores", sub: "Personas detrás del corpus" },
-    en: { label: "Researchers", sub: "People behind the corpus" },
+    es: { label: "Actores", sub: "El ecosistema del disclosure" },
+    en: { label: "Actors", sub: "The disclosure ecosystem" },
   },
   {
     href: "/blog",
