@@ -1,0 +1,48 @@
+{
+  "id": "ukraine-mao-uap-2022",
+  "num": 130,
+  "name": "Ucrania · estudio UAP del Observatorio Astronómico (MAO/NASU)",
+  "name_en": "Ukraine · UAP study by the Main Astronomical Observatory (MAO/NASU)",
+  "year_start": 2022,
+  "country": "UA",
+  "country_name": "Ucrania",
+  "flag": "🇺🇦",
+  "location": {
+    "lat": 50.36,
+    "lng": 30.50,
+    "place": "Observatorio Astronómico Principal (NASU), Kyiv"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 22,
+  "summary": "En 2022, en plena invasión rusa, astrónomos del Observatorio Astronómico Principal (MAO) de la Academia Nacional de Ciencias de Ucrania publicaron dos papers (arXiv) reportando observaciones de UAP sobre Kyiv con dos estaciones de meteoros (Kyiv y Vinarivka, base de 120 km). Clasificaron objetos en 'Cosmics' (luminosos) y 'Phantoms' (oscuros), con velocidades y altitudes extraordinarias. Encuadre honesto: la propia Academia Nacional de Ciencias desacreditó oficialmente el estudio por falta de rigor y errores graves en la estimación de distancias. Primer registro de Ucrania: documenta el episodio institucional —y su corrección—, no una anomalía probada.",
+  "summary_en": "In 2022, amid the Russian invasion, astronomers at the Main Astronomical Observatory (MAO) of the National Academy of Sciences of Ukraine published two papers (arXiv) reporting UAP observations over Kyiv using two meteor stations (Kyiv and Vinarivka, 120 km baseline). They classified objects into 'Cosmics' (luminous) and 'Phantoms' (dark), with extraordinary speeds and altitudes. Honest framing: the National Academy of Sciences itself officially discredited the study for lack of rigor and serious errors in distance estimation. Ukraine's first record: it documents the institutional episode —and its correction— not a proven anomaly.",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "En agosto de 2022, en plena guerra tras la invasión rusa, un equipo del Observatorio Astronómico Principal (Main Astronomical Observatory, MAO) de la Academia Nacional de Ciencias de Ucrania (NASU) hizo públicas, en arXiv, dos memorias tituladas 'Unidentified aerial phenomena I. Observations of events' y 'II. Evaluation of UAP properties'. El trabajo describía observaciones del cielo diurno sobre Kyiv realizadas con dos estaciones de meteoros —una en Kyiv y otra en la aldea de Vinarivka, al sur, con una base de unos 120 km— equipadas con cámaras de video, usando una 'técnica de observación especial' para detectar y caracterizar objetos.\n\nLos autores propusieron una taxonomía propia: 'Cosmics', objetos luminosos más brillantes que el fondo del cielo (a los que daban nombres de aves —vencejo, halcón, águila—), y 'Phantoms', objetos oscuros con contraste de hasta ~50%. Reportaron cifras llamativas: un objeto luminoso en la troposfera a 2,6 km de altitud, moviéndose a Mach 2,3 con un tamaño de ~6 m, y 'Phantoms' a distancias de hasta 10-12 km con velocidades de hasta 15 km/s.\n\nEl encuadre del corpus es explícitamente escéptico sobre el fenómeno. La propia Academia Nacional de Ciencias de Ucrania concluyó una revisión y desacreditó oficialmente el informe por no profesional y carente de rigor científico: el procesamiento e interpretación se habían hecho a un nivel inadecuado y con errores significativos en la determinación de las distancias a los objetos. Analistas externos (Snopes, Live Science) coincidieron en que estimar mal la distancia infla artificialmente velocidad y tamaño, y que lo observado es compatible con aves, insectos o artefactos cercanos malinterpretados como objetos lejanos y veloces. Lo que ancla el caso no es el fenómeno —casi seguro mundano— sino el episodio institucional completo: un observatorio de una academia nacional publicando un estudio dedicado a UAP, y esa misma academia ejerciendo una corrección pública. Es ciencia autocorrigiéndose en el registro abierto.",
+  "whatHappened_en": "In August 2022, amid the war following the Russian invasion, a team from the Main Astronomical Observatory (MAO) of the National Academy of Sciences of Ukraine (NASU) released on arXiv two papers titled 'Unidentified aerial phenomena I. Observations of events' and 'II. Evaluation of UAP properties'. The work described daytime-sky observations over Kyiv made with two meteor stations —one in Kyiv and one in the village of Vinarivka to the south, with a baseline of about 120 km— fitted with video cameras, using a 'special observation technique' to detect and characterize objects.\n\nThe authors proposed their own taxonomy: 'Cosmics', luminous objects brighter than the sky background (which they named after birds —swift, falcon, eagle), and 'Phantoms', dark objects with contrast up to ~50%. They reported striking figures: a luminous object in the troposphere at 2.6 km altitude, moving at Mach 2.3 with a size of ~6 m, and 'Phantoms' at distances of up to 10-12 km with speeds of up to 15 km/s.\n\nThe corpus framing is explicitly skeptical about the phenomenon. The National Academy of Sciences of Ukraine itself concluded a review and officially discredited the report as unprofessional and lacking scientific rigor: the processing and interpretation had been done at an inadequate level and with significant errors in determining the distances to the objects. External analysts (Snopes, Live Science) agreed that misjudging distance artificially inflates speed and size, and that what was observed is consistent with birds, insects or nearby artifacts mistaken for distant, fast objects. What anchors the case is not the phenomenon —almost certainly mundane— but the complete institutional episode: a national academy observatory publishing a study dedicated to UAP, and that same academy issuing a public correction. It is science self-correcting in the open record.",
+  "whyMatters": "Primer registro de Ucrania y un caso de valor metodológico, no fenomenológico: un observatorio de la Academia Nacional de Ciencias publicó un estudio dedicado a UAP con técnica instrumental propia, y la misma academia lo desacreditó públicamente por errores de distancia. Se incluye —como Marruecos 1976 o Irlanda 2018— por el episodio institucional documentado, y porque ilustra justo lo contrario de un encubrimiento: la corrección abierta. Es un recordatorio de que 'instituciones mirando el cielo' no equivale a 'anomalía confirmada'.",
+  "whyMatters_en": "Ukraine's first record and a case of methodological, not phenomenological, value: an observatory of the National Academy of Sciences published a dedicated UAP study with its own instrumental technique, and the same academy publicly discredited it for distance errors. It is included —like Morocco 1976 or Ireland 2018— for the documented institutional episode, and because it illustrates the opposite of a cover-up: open correction. It is a reminder that 'institutions looking at the sky' does not equal 'confirmed anomaly'.",
+  "evidence": [
+    "Dos papers (arXiv, 2022) del Observatorio Astronómico Principal (MAO) de la Academia Nacional de Ciencias de Ucrania sobre UAP en Kyiv.",
+    "Método: dos estaciones de meteoros (Kyiv y Vinarivka, base ~120 km) con cámaras de video y 'técnica especial'.",
+    "Taxonomía propia: 'Cosmics' (luminosos) y 'Phantoms' (oscuros); cifras reportadas de Mach 2,3 a 2,6 km y hasta 15 km/s.",
+    "Corrección institucional: la NASU desacreditó oficialmente el estudio por falta de rigor y errores graves en la estimación de distancias (debunk: aves/insectos/artefactos)."
+  ],
+  "evidence_en": [
+    "Two papers (arXiv, 2022) by the Main Astronomical Observatory (MAO) of the National Academy of Sciences of Ukraine on UAP over Kyiv.",
+    "Method: two meteor stations (Kyiv and Vinarivka, ~120 km baseline) with video cameras and a 'special technique'.",
+    "Own taxonomy: 'Cosmics' (luminous) and 'Phantoms' (dark); reported figures of Mach 2.3 at 2.6 km and up to 15 km/s.",
+    "Institutional correction: NASU officially discredited the study for lack of rigor and serious distance-estimation errors (debunk: birds/insects/artifacts)."
+  ],
+  "sources": [
+    {
+      "name": "arXiv:2211.17085 — 'Unidentified aerial phenomena II. Evaluation of UAP properties' (MAO/NASU)",
+      "url": "https://arxiv.org/abs/2211.17085"
+    },
+    {
+      "name": "Snopes — 'Are There UFOs Over Kyiv?' (incl. NASU discrediting the report)",
+      "url": "https://www.snopes.com/news/2022/09/14/ufos-over-kyiv/"
+    }
+  ]
+}
