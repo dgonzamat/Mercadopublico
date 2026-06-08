@@ -85,7 +85,17 @@ export default function ProbabilidadesPage() {
                 rigurosos, hay <strong className="text-text">seis cosas plausibles</strong>{" "}
                 que estos objetos podrían ser. No compiten entre sí — un mismo
                 caso puede ser dos a la vez. Cada una con su nivel de confianza,
-                en las mismas palabras que usan los analistas de inteligencia:{" "}
+                en las mismas palabras que usan los analistas de inteligencia
+                (
+                <a
+                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  ICD-203
+                </a>
+                ):{" "}
                 <em>casi cierto</em>, <em>probable</em>, <em>improbable</em>,{" "}
                 <em>casi imposible</em>.
               </>
@@ -97,7 +107,17 @@ export default function ProbabilidadesPage() {
                 there are <strong className="text-text">six plausible things</strong>{" "}
                 these objects could be. They don&apos;t compete — a single case
                 can be more than one at once. Each gets a confidence level in
-                the same words intelligence analysts use:{" "}
+                the same words intelligence analysts use
+                (
+                <a
+                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  ICD-203
+                </a>
+                ):{" "}
                 <em>almost certain</em>, <em>likely</em>, <em>unlikely</em>,{" "}
                 <em>almost no chance</em>.
               </>
