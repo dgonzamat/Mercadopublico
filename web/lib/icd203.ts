@@ -5,7 +5,7 @@
  * limited institutional evidence. Used here instead of single-decimal
  * percentages, which imply false precision the data doesn't support.
  *
- * https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf
+ * https://irp.fas.org/dni/icd/icd-203.pdf (FAS canonical mirror)
  */
 
 export interface IcdLabel {
