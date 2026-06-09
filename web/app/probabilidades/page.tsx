@@ -350,6 +350,12 @@ function HypothesisSection({
 
   const detail = (
     <div className="mt-4 space-y-4">
+      {h.prose && (
+        <Body className="text-text/90">
+          <T es={h.prose} en={h.proseEn ?? h.prose} />
+        </Body>
+      )}
+
       {associatedPatterns.length > 0 && (
         <div className="space-y-2 pt-2">
           <Eyebrow>
@@ -652,7 +658,10 @@ function OffAxisCard({
         <T es={h.label} en={h.labelEn} />
       </H2>
       <Body className="text-muted">
-        <T es={h.note} en={h.noteEn} />
+        <T
+          es={h.prose ?? h.note}
+          en={h.proseEn ?? h.noteEn}
+        />
       </Body>
     </article>
   );
