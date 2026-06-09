@@ -220,16 +220,20 @@ export function pressureFor(
  *   2. Otherwise, compute: effective = prior + pressure × SHIFT_FACTOR
  *      Source = "derived" when pressure ≠ 0, "prior" when pressure = 0.
  *
- * The shift factor (0.5 pp per pressure point) means:
- *   - 1 modest contribution (+2 pressure) = +1 pp shift
- *   - 1 substantial contribution (+5 pressure) = +2.5 pp shift
- *   - 1 category-breaking contribution (+15 pressure) = +7.5 pp shift
- *   - 20 minimal contributions (+10 pressure) = +5 pp shift
+ * The shift factor (0.25 pp per pressure point) means:
+ *   - 1 modest contribution (+2 pressure) = +0.5 pp shift
+ *   - 1 substantial contribution (+5 pressure) = +1.25 pp shift
+ *   - 1 category-breaking contribution (+15 pressure) = +3.75 pp shift
+ *   - 20 minimal contributions (+10 pressure) = +2.5 pp shift
  *
- * This makes a single case never dramatic but corpus accumulation
- * meaningful — matching the marginal-return principle from /about Ch. 2.
+ * Lowered from 0.5 to 0.25 (2026-06): at 0.5 the umbrella hypothesis
+ * entidades-no-humanas accumulated to 74% — reading as ICD-203 "probable"
+ * — because pressure inherits across umbrella subclasses, double-counting
+ * cases that genuinely don't discriminate between competing hypotheses.
+ * Halving the factor preserves the marginal-return principle (each new
+ * case still nudges the dial) without inflating umbrellas mechanically.
  */
-export const PRESSURE_SHIFT_FACTOR = 0.5;
+export const PRESSURE_SHIFT_FACTOR = 0.25;
 
 export type CalibrationSource = "override" | "derived" | "prior";
 

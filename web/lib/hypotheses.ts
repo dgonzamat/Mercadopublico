@@ -24,7 +24,7 @@ import { STATS } from "./siteStats";
  *
  *   - At build time, `effectiveCalibration(h, cases)` (in
  *     lib/hypothesisMapping) computes the displayed probability:
- *       effective = prior + pressure × 0.5
+ *       effective = prior + pressure × PRESSURE_SHIFT_FACTOR (currently 0.25)
  *     where `pressure` is the sum of declared case contributions for the
  *     hypothesis (see lib/types.ts EvidenceContribution). Each new case
  *     therefore shifts the displayed pct automatically.
@@ -45,8 +45,9 @@ import { STATS } from "./siteStats";
  * COPY NUMERIC DISCIPLINE (applies to EVERY page citing percentages):
  *
  *   Each hypothesis has TWO numbers: the PRIOR (`corpusPct` here) and
- *   the EFFECTIVE (`prior + pressure × 0.5`, shown by IcdProbabilityChart
- *   and section ICD badges). They DIVERGE as the corpus grows. The most
+ *   the EFFECTIVE (`prior + pressure × PRESSURE_SHIFT_FACTOR`, shown by
+ *   IcdProbabilityChart and section ICD badges). They DIVERGE as the
+ *   corpus grows. The most
  *   common drift bug in this codebase is editorial copy that cites a
  *   number without naming which one — readers see two different numbers
  *   for the same hypothesis on the same page.
