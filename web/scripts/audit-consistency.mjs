@@ -109,7 +109,7 @@ for (const h of HYPOTHESES) {
   if (h.override !== undefined) {
     EFFECTIVE[h.id] = h.override;
   } else {
-    const shift = pressureFor(h.id) * 0.5;
+    const shift = pressureFor(h.id) * 0.25;
     EFFECTIVE[h.id] = Math.max(1, Math.min(99, h.prior + shift));
   }
 }
@@ -138,8 +138,9 @@ const EDITORIAL_RANGES_OK = new Set([
   // Whole-number priors (must equal a hypothesis prior to pass)
   "88", "70", "28", "22", "6",
   // Effective-value cites in about/page.tsx Ch.4 + clamp note: programas
-  // clasificados effective = 99 (clamped), fenómeno natural effective ≈ 16.
-  "99", "16",
+  // clasificados effective = 99 (clamped). Fenómeno natural effective ≈ 43
+  // since PRESSURE_SHIFT_FACTOR halving (was 16 at 0.5).
+  "99", "43",
 ]);
 
 /**
