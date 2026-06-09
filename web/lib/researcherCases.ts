@@ -53,7 +53,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   zeidman: ["coyne-1973", "battelle-special-report-1952"],
   "james-fox": ["varginha-1996"],
   powell: ["aguadilla-2013", "nimitz-2004"],
-  rutkowski: ["shag-harbour-1967", "yukon-1996"],
+  rutkowski: ["shag-harbour-1967", "yukon-1996", "project-magnet-canada-1950"],
   chalker: ["westall-1966", "valentich-1978"],
 
   // A — teóricos anclados al caso que estudiaron
