@@ -91,12 +91,14 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   kirkpatrick: ["uss-jackson-2023", "usper-2025", "mosul-orb-2016"],
   nell: ["grusch-testimony-2023"],
   stratton: ["grusch-testimony-2023"],
+  gallaudet: ["nimitz-2004"],
 
   // C — actores políticos
   burlison: ["yemen-orb-2024"],
   reid: ["aawsap-skinwalker-2008"],
   luna: ["grusch-testimony-2023", "yemen-orb-2024"],
   burchett: ["grusch-testimony-2023"],
+  moskowitz: ["grusch-testimony-2023"],
 
   // D — periodistas
   coulthart: [
