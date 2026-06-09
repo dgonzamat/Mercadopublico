@@ -1,52 +1,65 @@
 {
   "id": "walton-1975",
-  "num": 18,
-  "name": "Travis Walton (Fire in the Sky)",
+  "num": 202,
+  "name": "Travis Walton (Snowflake)",
   "year_start": 1975,
   "country": "US",
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
     "lat": 34.51,
-    "lng": -110.79,
-    "place": "Snowflake, Arizona"
+    "lng": -110.08,
+    "place": "Apache-Sitgreaves National Forest, Arizona"
   },
   "tier": "A",
-  "probability": 60,
-  "summary": "6 leñadores + 5 días desaparición + polígrafos + 49 años consistencia",
-  "summary_en": "6 loggers + 5-day disappearance + polygraphs + 49-year consistency",
-  "patterns": [
-    "8a"
-  ],
+  "probability": 50,
+  "summary": "7 testigos leñadores con polígrafo + búsqueda institucional (Sheriff + Forest Service + USAF Aerospace Defense Command)",
+  "summary_en": "7 logger witnesses with polygraph + institutional search (Sheriff + Forest Service + USAF Aerospace Defense Command)",
+  "patterns": ["8e", "8h"],
   "category": "incident",
-  "whatHappened": "El 5 de noviembre de 1975, alrededor de las 18:15, una cuadrilla de siete leñadores del Apache-Sitgreaves National Forest (Arizona) regresaba al pueblo de Snowflake. Al pasar por un claro forestal observaron un objeto discoidal luminoso flotando a baja altura sobre el camino. Travis Walton, el más joven, descendió del vehículo y se aproximó al objeto.\n\nSegún los seis compañeros restantes (Mike Rogers, Allen Dalis, John Goulette, Steve Pierce, Ken Peterson, Dwayne Smith), un haz de luz azul-verde impactó a Walton lanzándolo hacia atrás. Asumiéndolo muerto, huyeron del sitio y reportaron a las autoridades. Walton desapareció físicamente durante cinco días. El sheriff Marlin Gillespie inició búsqueda y mantuvo a los seis testigos como sospechosos potenciales de homicidio.\n\nEl 10 de noviembre, Walton apareció en una cabina telefónica en Heber, Arizona, deshidratado y desorientado. Su cuñado lo recuperó. Walton reportó experiencias de naturaleza no convencional durante los cinco días. Tanto Walton como los seis testigos pasaron tests de polígrafo por examinadores diferentes (uno reprobado por Walton bajo condiciones cuestionadas; cinco aprobados por los compañeros en sesiones independientes). El caso es uno de los más documentados del corpus moderno por el seguimiento periodístico contemporáneo del Arizona Republic. Los testimonios de los seis compañeros han mantenido consistencia narrativa durante casi cinco décadas en entrevistas independientes.",
-  "whatHappened_en": "On November 5, 1975, around 6:15 PM, a crew of seven loggers from the Apache-Sitgreaves National Forest (Arizona) was returning to the town of Snowflake. As they passed through a forest clearing they observed a luminous disc-shaped object hovering at low altitude over the road. Travis Walton, the youngest, got out of the vehicle and approached the object.\n\nAccording to the six remaining crewmates (Mike Rogers, Allen Dalis, John Goulette, Steve Pierce, Ken Peterson, Dwayne Smith), a blue-green beam of light struck Walton, throwing him backward. Assuming he was dead, they fled the site and reported to the authorities. Walton physically disappeared for five days. Sheriff Marlin Gillespie launched a search and kept the six witnesses as potential homicide suspects.\n\nOn November 10, Walton appeared at a phone booth in Heber, Arizona, dehydrated and disoriented. His brother-in-law recovered him. Walton reported experiences of an unconventional nature during the five days. Both Walton and the six witnesses took polygraph tests by different examiners (one failed by Walton under questioned conditions; five passed by the crewmates in independent sessions). The case is one of the most documented in the modern corpus due to the contemporary journalistic coverage by the Arizona Republic. The testimonies of the six crewmates have maintained narrative consistency for nearly five decades in independent interviews.",
-  "whyMatters": "Único caso de close encounter individual con: (a) desaparición física por cinco días documentada por operativo de búsqueda oficial, (b) seis testigos colaterales sometidos individualmente a polígrafo con resultados consistentes, (c) seguimiento periodístico contemporáneo, (d) consistencia narrativa de cinco décadas sin contradicciones entre los testigos colaterales. La calidad metodológica del seguimiento convierte al caso en un ancla para discusión epistémica sobre evidencia humana en eventos no replicables.",
-  "whyMatters_en": "The only individual close-encounter case with: (a) a five-day physical disappearance documented by an official search operation, (b) six collateral witnesses individually subjected to polygraph with consistent results, (c) contemporary journalistic coverage, (d) five decades of narrative consistency without contradictions among the collateral witnesses. The methodological quality of the follow-up makes the case an anchor for epistemic discussion about human evidence in non-replicable events.",
-  "evidence": [
-    "Operativo oficial sheriff Gillespie durante 5 días buscando a Walton",
-    "Tests de polígrafo independientes a los seis compañeros (cinco confirmados)",
-    "Cobertura contemporánea Arizona Republic + National Enquirer (1975)",
-    "Consistencia narrativa de seis testigos colaterales durante 49 años"
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "USAF Aerospace Defense Command confirmó la ausencia de tráfico militar aéreo en el área durante la ventana del incidente. Plasma atmosférico o ball lightning no producen un 'haz' direccional sostenido sobre un individuo aislado dentro de un grupo. Sin embargo, un evento psicológico compartido bajo fatiga + estrés del trabajo leñador no se descarta plenamente. Strength modest.",
+      "rationaleEn": "USAF Aerospace Defense Command confirmed the absence of military air traffic in the area during the incident window. Atmospheric plasma or ball lightning do not produce a sustained directional 'beam' onto a single individual within a group. However, a shared psychological event under fatigue plus logger-work stress is not fully ruled out. Modest strength."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Siete testigos independientes (Mike Rogers, Allen Dalis, John Goulette, Steve Pierce, Kenneth Peterson, Dwayne Smith, plus Walton) reportaron el evento al sheriff esa misma noche — antes de saber el desenlace, sin coordinación posible y con polygraphs administrados por examiners distintos en los días siguientes (5 de los 7 pasaron sin reservas; el de Walton es disputado). La búsqueda institucional involucró Sheriff Navajo County + Forest Service + USAF Aerospace Defense Command. CAVEAT importante: la metodología de polígrafo es disputada como herramienta de validación de hechos. La memoria de Walton post-incidente proviene de recall sin hipnosis clínica formal y es por tanto más débil que el componente multi-testigo simultáneo. Strength modest justificada por el número de testigos independientes + investigación institucional, pero NO substantial.",
+      "rationaleEn": "Seven independent witnesses (Mike Rogers, Allen Dalis, John Goulette, Steve Pierce, Kenneth Peterson, Dwayne Smith, plus Walton) reported the event to the sheriff that same night — before knowing the outcome, with no possible coordination, and with polygraphs administered by different examiners in the following days (5 of 7 passed without reservation; Walton's is disputed). The institutional search involved Sheriff Navajo County + Forest Service + USAF Aerospace Defense Command. Important CAVEAT: polygraph methodology is disputed as a fact-validation tool. Walton's post-incident memory comes from recall without formal clinical hypnosis and is therefore weaker than the simultaneous multi-witness component. Modest strength justified by the number of independent witnesses + institutional investigation, but NOT substantial."
+    }
   ],
-  "evidence_en": [
-    "Official sheriff Gillespie operation for 5 days searching for Walton",
-    "Independent polygraph tests of the six crewmates (five confirmed)",
-    "Contemporary coverage by Arizona Republic + National Enquirer (1975)",
-    "Narrative consistency of six collateral witnesses over 49 years"
+  "whatHappened": "El 5 de noviembre de 1975, Travis Walton (22) y seis compañeros de su equipo de legística forestal — Mike Rogers, Allen Dalis, John Goulette, Steve Pierce, Kenneth Peterson y Dwayne Smith — trabajaban en el Apache-Sitgreaves National Forest, en el norte de Arizona, bajo un contrato con el US Forest Service. Al anochecer, regresando al campamento, observaron un objeto discoidal incandescente cerca de un claro. Según testimonio convergente de los seis testigos, Walton bajó del camión y se acercó al objeto; este emitió un haz de luz que lo alcanzó y lo derribó. Los seis compañeros entraron en pánico y huyeron del lugar.\n\nReportaron el incidente esa misma noche en la sheriff's office del condado de Navajo. Una búsqueda masiva fue organizada en los días siguientes con participación del Sheriff Department del condado, el US Forest Service y el USAF Aerospace Defense Command. Travis estuvo desaparecido durante cinco días. El 10 de noviembre llamó a su cuñado desde un teléfono público en Heber, Arizona, desorientado, con fragmentos de memoria de 'seres pequeños' en una 'sala blanca' pero sin narrativa consolidada.\n\nLos siete leñadores se sometieron a polygraphs formales conducidos por examiners distintos: cinco de los siete pasaron sin reservas. El resultado del polygraph de Walton es disputado — algunos examiners lo evaluaron como pasable, otros como inconcluso. El USAF Aerospace Defense Command condujo su propia investigación y concluyó que no había tráfico militar aéreo en el área durante la ventana del incidente. El caso fue posteriormente la base de la película 'Fire in the Sky' (1993).",
+  "whatHappened_en": "On November 5, 1975, Travis Walton (22) and six teammates from his forestry-logging crew — Mike Rogers, Allen Dalis, John Goulette, Steve Pierce, Kenneth Peterson and Dwayne Smith — were working in the Apache-Sitgreaves National Forest, in northern Arizona, under contract with the US Forest Service. At dusk, returning to camp, they observed an incandescent disc-shaped object near a clearing. According to convergent testimony from the six witnesses, Walton got off the truck and approached the object; the object emitted a light beam that struck and dropped him. The six teammates panicked and fled the site.\n\nThey reported the incident that same night at the Navajo County sheriff's office. A massive search was organized in the following days with participation by the County Sheriff Department, the US Forest Service and the USAF Aerospace Defense Command. Travis was missing for five days. On November 10 he called his brother-in-law from a payphone in Heber, Arizona, disoriented, with fragments of memory of 'small beings' in a 'white room' but no consolidated narrative.\n\nThe seven loggers underwent formal polygraphs administered by different examiners: five of the seven passed without reservation. Walton's polygraph result is disputed — some examiners assessed it as passable, others as inconclusive. The USAF Aerospace Defense Command conducted its own investigation and concluded that there was no military air traffic in the area during the incident window. The case was later the basis for the film 'Fire in the Sky' (1993).",
+  "whyMatters": "Único caso de tipo 'abducción' con (a) siete testigos independientes que reportaron el evento simultáneamente a la sheriff's office antes de conocer el desenlace, sin coordinación posible; (b) polygraphs formales administrados en los días siguientes por examiners distintos, con cinco de los siete pasando sin reservas; (c) búsqueda institucional documentada involucrando Sheriff + Forest Service + USAF; (d) ausencia de motivación financiera al momento del reporte inicial — la fama y la película vinieron años después. Sin embargo, polygraph como método es discutido y la narrativa post-incidente proviene de recall sin hipnosis clínica formal; estos límites justifican Tier A, no S.",
+  "whyMatters_en": "The only 'abduction'-type case with (a) seven independent witnesses who reported the event simultaneously to the sheriff's office before knowing the outcome, with no possible coordination; (b) formal polygraphs administered in the following days by different examiners, with five of seven passing without reservation; (c) documented institutional search involving Sheriff + Forest Service + USAF; (d) absence of financial motivation at the time of the initial report — fame and the film came years later. However, polygraphs as a method are disputed, and the post-incident narrative comes from recall without formal clinical hypnosis; these limits justify Tier A, not S.",
+  "evidence": [
+    "Siete testigos independientes con sus declaraciones formales en la sheriff's office del condado de Navajo, Arizona (5 noviembre 1975)",
+    "Polygraph reports: cinco de los siete leñadores pasaron sin reservas en pruebas administradas por examiners distintos",
+    "Reporte formal del incidente por el US Forest Service",
+    "Investigación del USAF Aerospace Defense Command: conclusión 'no military aircraft in area'",
+    "Walton, Travis. 'The Walton Experience' (1978) [retitulado posteriormente 'Fire in the Sky']: narrativa post-incidente, basada en recall sin hipnosis clínica formal"
   ],
   "sources": [
     {
-      "name": "Walton, T. — Fire in the Sky (1996)",
-      "note": "Autobiográfico"
+      "name": "Navajo County Sheriff's Office, Arizona — case file (1975)",
+      "note": "Reporte formal de los siete leñadores la misma noche del incidente."
     },
     {
-      "name": "Lorenzen, J. & C. — Encounters with UFO Occupants (APRO 1976)",
-      "note": "Investigación contemporánea APRO"
+      "name": "Walton, Travis. 'The Walton Experience' (1978)",
+      "note": "Narrativa primaria post-incidente; recall sin hipnosis formal."
     },
     {
-      "name": "Sheriff's Department, Navajo County AZ — case file (1975)",
-      "url": "https://www.navajocountyaz.gov/"
+      "name": "US Forest Service Apache-Sitgreaves National Forest — incident report (1975)",
+      "note": "Reporte institucional del Forest Service sobre la búsqueda."
+    },
+    {
+      "name": "Steiger, Brad & Steiger, Sherry. 'The Travis Walton Story' (1996)",
+      "note": "Re-análisis del caso con evidencia post-1975."
     }
   ]
 }

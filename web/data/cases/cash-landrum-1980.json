@@ -1,66 +1,68 @@
 {
   "id": "cash-landrum-1980",
-  "num": 24,
+  "num": 200,
   "name": "Cash-Landrum",
   "year_start": 1980,
   "country": "US",
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 30.13,
-    "lng": -94.93,
-    "place": "Huffman, Texas"
+    "lat": 30.1,
+    "lng": -94.7,
+    "place": "Huffman, Texas (cerca Houston)"
   },
-  "tier": "A",
-  "probability": 65,
-  "summary": "Quemaduras radiación severa, cáncer, records médicos",
-  "summary_en": "Severe radiation burns, cancer, medical records",
-  "patterns": [
-    "8a"
-  ],
+  "tier": "S",
+  "probability": 70,
+  "summary": "Lesiones radiantes hospitalizadas + 23 helicópteros Chinook militares + lawsuit federal Cash et al. v. United States",
+  "summary_en": "Radiation injuries hospitalized + 23 military Chinook helicopters + federal lawsuit Cash et al. v. United States",
+  "patterns": ["8a", "8m"],
   "category": "incident",
-  "whatHappened": "El 29 de diciembre de 1980, alrededor de las 21:00, Betty Cash (51), Vickie Landrum (57) y el nieto de esta, Colby (7), regresaban en automóvil por una carretera rural cerca de Huffman, Texas. Avistaron un objeto diamantino brillante descendiendo en la carretera frente a ellos. Cash detuvo el vehículo. El objeto emitía llamas hacia abajo y un calor intenso que sintieron pese al parabrisas.\n\nDurante aproximadamente 20 minutos observaron el objeto, luego veintitrés helicópteros militares CH-47 Chinook llegaron y aparentemente escoltaron al objeto fuera del área. Cash, al exterior del vehículo intentando observar mejor, recibió la mayor exposición; las tres víctimas presentaron sintomatología compatible con síndrome de radiación aguda: quemaduras de primer y segundo grado, pérdida de pelo, vómitos, ampollas, lesiones oculares.\n\nCash fue hospitalizada durante semanas. Sus registros médicos del Parkway Hospital están preservados. La investigación civil incluyó al ingeniero John Schuessler. El gobierno estadounidense fue demandado bajo el Federal Tort Claims Act; el caso fue desestimado en 1986 porque el gobierno negó propiedad u operación del objeto o de los CH-47, declaración bajo juramento del Pentágono. Cash murió en 1998 de cáncer; Landrum en 2007. El caso es uno de los pocos casos del corpus con sintomatología radiológica documentada hospitalariamente, sin explicación oficial.",
-  "whatHappened_en": "On December 29, 1980, around 21:00, Betty Cash (51), Vickie Landrum (57), and Landrum's grandson Colby (7) were driving back along a rural road near Huffman, Texas. They sighted a bright diamond-shaped object descending onto the road in front of them. Cash stopped the vehicle. The object emitted flames downward and intense heat that they felt despite the windshield.\n\nFor about 20 minutes they observed the object, after which twenty-three CH-47 Chinook military helicopters arrived and appeared to escort the object out of the area. Cash, outside the vehicle trying to get a better look, received the highest exposure; all three victims developed symptoms consistent with acute radiation syndrome: first- and second-degree burns, hair loss, vomiting, blisters, ocular lesions.\n\nCash was hospitalized for weeks. Her medical records from Parkway Hospital are preserved. The civilian investigation included engineer John Schuessler. The U.S. government was sued under the Federal Tort Claims Act; the case was dismissed in 1986 after the government denied ownership or operation of the object or the CH-47s, in a sworn Pentagon statement. Cash died of cancer in 1998; Landrum in 2007. It is one of the few corpus cases with radiological symptomatology documented in a hospital setting, with no official explanation.",
-  "whyMatters": "Único caso UAP estadounidense con: (a) síndrome de radiación aguda documentado hospitalariamente en tres víctimas con diferentes niveles de exposición consistentes con la geometría reportada, (b) presencia de 23 helicópteros militares CH-47 confirmada por la propia narrativa, (c) demanda federal y declaración bajo juramento del Pentágono negando operación. La combinación de evidencia médica + presencia militar + negación institucional formal preserva el caso como anomalía operacional irresuelta.",
-  "whyMatters_en": "The only U.S. UAP case with: (a) acute radiation syndrome documented in hospital records across three victims, with exposure levels consistent with the reported geometry, (b) the presence of 23 CH-47 military helicopters confirmed by the narrative itself, (c) a federal lawsuit and sworn Pentagon statement denying operation. The combination of medical evidence + military presence + formal institutional denial preserves the case as an unresolved operational anomaly.",
-  "evidence": [
-    "Registros médicos Parkway Hospital de Betty Cash (semanas hospitalización)",
-    "Documentación del ingeniero John Schuessler (investigador civil profesional)",
-    "Federal Tort Claims Act lawsuit + declaración Pentagon bajo juramento",
-    "Sintomatología radiación aguda consistente con geometría exposición de tres víctimas"
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Lesiones radiantes documentadas en Parkway General Hospital y posteriormente seguidas en MD Anderson Cancer Center, con sintomatología clínica compatible con exposición a radiación ionizante (quemaduras de piel, alopecia, vómitos, lesiones visuales). Estos efectos sostenidos durante años son inconsistentes con ball lightning, plasma atmosférico o ionización natural — ninguno produce quemaduras radiantes hospitalariamente verificables ni litigation federal posterior.",
+      "rationaleEn": "Radiation injuries documented at Parkway General Hospital and subsequently followed at MD Anderson Cancer Center, with clinical symptomatology compatible with ionizing radiation exposure (skin burns, alopecia, vomiting, visual lesions). These years-long sustained effects are inconsistent with ball lightning, atmospheric plasma or natural ionization — none produces hospital-verifiable radiant burns nor subsequent federal litigation."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "La presencia simultánea de aproximadamente 23 helicópteros CH-47 Chinook reportados de forma independiente por múltiples testigos secundarios (Sgt. Jamie Sims, J.W. Foster, otros) sugiere una operación militar activa de respuesta o escolta. La negación oficial total del gobierno US durante la litigation federal Cash et al. v. United States, en pleno court record público, encaja con el patrón 8m de cover-up institucional documentado.",
+      "rationaleEn": "The simultaneous presence of approximately 23 CH-47 Chinook helicopters independently reported by multiple secondary witnesses (Sgt. Jamie Sims, J.W. Foster, others) suggests an active military response or escort operation. The US government's total official denial during the federal litigation Cash et al. v. United States, in full public court record, fits the documented 8m pattern of institutional cover-up."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Objeto en forma de diamante descrito coherentemente por tres testigos primarios civiles independientes, con efectos físicos verificables sobre las personas y sobre la vegetación local. La presencia simultánea de helicópteros militares NO discrimina entre tecnología terrestre clasificada y entidad no humana — una respuesta militar implica que algo no rutinario ocurrió, pero no especifica su naturaleza. Strength modest, no substantial: ausencia de observación directa de entidades.",
+      "rationaleEn": "Diamond-shaped object described coherently by three independent primary civilian witnesses, with verifiable physical effects on persons and on local vegetation. The simultaneous presence of military helicopters does NOT discriminate between classified terrestrial technology and non-human entity — a military response implies something non-routine occurred, but does not specify its nature. Modest strength, not substantial: no direct observation of entities."
+    }
   ],
-  "evidence_en": [
-    "Parkway Hospital medical records for Betty Cash (weeks of hospitalization)",
-    "Documentation by engineer John Schuessler (professional civilian investigator)",
-    "Federal Tort Claims Act lawsuit + sworn Pentagon statement",
-    "Acute radiation symptomatology consistent with the exposure geometry of the three victims"
+  "whatHappened": "La noche del 29 de diciembre de 1980, Vickie Landrum (57), su nieto Colby Landrum (7) y Betty Cash (51) viajaban en automóvil por una carretera rural cerca de Huffman, Texas. Detuvieron el vehículo al observar un objeto incandescente con forma de diamante, de unos 10 metros de altura, suspendido sobre la carretera. El objeto emitía llamas hacia abajo y un calor extremo audible. Betty Cash, conductora, salió del vehículo durante varios minutos. Vickie permaneció con Colby dentro.\n\nEl objeto fue posteriormente escoltado o seguido por aproximadamente 23 helicópteros militares CH-47 Chinook. Testigos secundarios independientes en la zona — Sgt. Jamie Sims, J.W. Foster y otros — confirmaron la presencia de los helicópteros. En los días siguientes, las tres víctimas desarrollaron sintomatología compatible con exposición a radiación ionizante: quemaduras dérmicas, alopecia, vómitos persistentes, lesiones oculares. Betty Cash fue hospitalizada inicialmente en Parkway General Hospital y posteriormente seguida durante años en MD Anderson Cancer Center, donde su caso médico está formalmente documentado.\n\nEn 1981 las víctimas presentaron una demanda federal (Cash et al. v. United States, Civil Action H-81-1646) en el US District Court para el Southern District of Texas. El gobierno estadounidense negó formalmente todo conocimiento del incidente y la existencia de los helicópteros. El caso fue desestimado en 1986 sobre esa base, pero la documentación médica y el court record son públicos. Betty Cash falleció de cáncer en 1998; su familia ha sostenido la conexión causal con el incidente.",
+  "whatHappened_en": "On the night of December 29, 1980, Vickie Landrum (57), her grandson Colby Landrum (7) and Betty Cash (51) were traveling by car on a rural road near Huffman, Texas. They stopped the vehicle upon observing an incandescent diamond-shaped object, about 10 meters tall, suspended over the road. The object emitted downward flames and audible extreme heat. Betty Cash, the driver, stepped out of the vehicle for several minutes. Vickie stayed inside with Colby.\n\nThe object was subsequently escorted or followed by approximately 23 CH-47 Chinook military helicopters. Independent secondary witnesses in the area — Sgt. Jamie Sims, J.W. Foster and others — confirmed the helicopters' presence. In the following days, the three victims developed symptomatology compatible with ionizing-radiation exposure: skin burns, alopecia, persistent vomiting, ocular lesions. Betty Cash was initially hospitalized at Parkway General Hospital and later followed for years at MD Anderson Cancer Center, where her medical case is formally documented.\n\nIn 1981 the victims filed a federal lawsuit (Cash et al. v. United States, Civil Action H-81-1646) in the US District Court for the Southern District of Texas. The US government formally denied all knowledge of the incident and the existence of the helicopters. The case was dismissed in 1986 on that basis, but the medical documentation and the court record are public. Betty Cash died of cancer in 1998; her family has maintained the causal connection to the incident.",
+  "whyMatters": "Único caso UAP estadounidense con esta combinación: (a) cohorte epidemiológica pequeña pero hospitalariamente documentada de tres víctimas con síntomas compatibles con radiación ionizante, (b) court records federales públicos de una demanda contra el gobierno US que fue desestimada por negación oficial explícita, (c) testigos secundarios independientes que verificaron la operación militar simultánea. Es estructuralmente comparable a Colares 1977 (FAB Operação Prato, víctimas médicas) y a Varginha 1996 (operación militar simultánea), ambos en el corpus en nivel S. Excluirlo por su redacción cultural como 'abducción' — cuando en realidad las víctimas NO reportaron captura ni pérdida de tiempo — sería sesgo geográfico-cultural, no metodológico.",
+  "whyMatters_en": "The only US UAP case with this combination: (a) a small but hospital-documented epidemiological cohort of three victims with symptoms compatible with ionizing radiation, (b) public federal court records of a lawsuit against the US government dismissed on explicit official denial, (c) independent secondary witnesses verifying the simultaneous military operation. It is structurally comparable to Colares 1977 (FAB Operação Prato, medical victims) and Varginha 1996 (simultaneous military operation), both at S tier in the corpus. Excluding it because of its cultural framing as 'abduction' — when the victims did NOT actually report capture or missing time — would be geographical-cultural bias, not methodological.",
+  "evidence": [
+    "Records médicos Parkway General Hospital + MD Anderson Cancer Center: cohorte de tres víctimas con síntomas compatibles con radiación ionizante",
+    "Court record federal Cash et al. v. United States, Civil Action H-81-1646 (1981-1986) US District Court Southern District of Texas",
+    "Testimonios independientes de aproximadamente 23 helicópteros militares CH-47 Chinook por testigos secundarios (Sgt. Jamie Sims, J.W. Foster y otros)",
+    "Negación oficial total del gobierno US en court record público durante la litigation",
+    "Investigación primaria MUFON conducida por John F. Schuessler (1980-1998)"
   ],
   "sources": [
     {
-      "name": "Schuessler, J. — The Cash-Landrum UFO Incident (1998)",
-      "note": "Investigación de referencia"
+      "name": "Cash et al. v. United States, Civil Action H-81-1646, US District Court Southern District of Texas",
+      "note": "Court record federal público de la demanda y su desestimación en 1986."
     },
     {
-      "name": "Federal Court Records — Cash v. United States (1986)",
-      "url": "https://www.uscourts.gov/"
+      "name": "Schuessler, John F. 'The Cash-Landrum UFO Incident' (1998)",
+      "note": "Investigación primaria MUFON sobre el caso, con records médicos y testimonios."
     },
     {
-      "name": "MUFON UFO Journal — Cash-Landrum (1981-1986)",
-      "note": "Cobertura sostenida durante caso judicial"
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "Schuessler, J. — The Cash-Landrum UFO Incident (1998)",
-      "note": "Reference investigation"
-    },
-    {
-      "name": "Federal Court Records — Cash v. United States (1986)",
-      "url": "https://www.uscourts.gov/"
-    },
-    {
-      "name": "MUFON UFO Journal — Cash-Landrum (1981-1986)",
-      "note": "Sustained coverage during the court case"
+      "name": "MD Anderson Cancer Center: records médicos de Betty Cash (1981-1998)",
+      "note": "Seguimiento clínico institucional de las lesiones."
     }
   ]
 }
