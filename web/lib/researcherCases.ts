@@ -55,6 +55,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   powell: ["aguadilla-2013", "nimitz-2004"],
   rutkowski: ["shag-harbour-1967", "yukon-1996", "project-magnet-canada-1950"],
   chalker: ["westall-1966", "valentich-1978"],
+  west: ["roosevelt-2014", "nimitz-2004"],
+  knuth: ["nimitz-2004"],
+  sturrock: ["trans-en-provence-1981"],
 
   // A — teóricos anclados al caso que estudiaron
   nolan: ["council-bluffs-1977", "american-cosmic-2017"],
@@ -87,9 +90,11 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   keyhoe: ["washington-dc-1952"],
   kirkpatrick: ["uss-jackson-2023", "usper-2025", "mosul-orb-2016"],
   nell: ["grusch-testimony-2023"],
+  stratton: ["grusch-testimony-2023"],
 
   // C — actores políticos
   burlison: ["yemen-orb-2024"],
+  reid: ["aawsap-skinwalker-2008"],
   luna: ["grusch-testimony-2023", "yemen-orb-2024"],
   burchett: ["grusch-testimony-2023"],
 
