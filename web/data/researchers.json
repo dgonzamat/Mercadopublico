@@ -1462,5 +1462,231 @@
     "sources": [
       {"name": "The Disclosure Project — testimonio de John Callahan (National Press Club, 2001)", "note": "Testimonio sobre el manejo del caso JAL 1628 (1986).", "note_en": "Testimony on the handling of the JAL 1628 case (1986)."}
     ]
+  },
+  {
+    "id": "reid",
+    "name": "Harry Reid",
+    "flag": "🇺🇸",
+    "born": 1939,
+    "death": 2021,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "credentials": "Líder de la Mayoría del Senado de EE.UU. (D-NV, 2007–2015) + Senador (1987–2017)",
+    "bio_short": "El actor político fundacional del ciclo moderno de disclosure. En 2007, junto a los senadores Ted Stevens y Daniel Inouye, gestionó el financiamiento (~22 millones de dólares) del AAWSAP, el programa de la DIA ejecutado a través de la empresa de Robert Bigelow (BAASS) que investigó el fenómeno y el rancho Skinwalker. Sin esa maniobra presupuestaria no habrían existido el AATIP, las filtraciones de 2017 ni gran parte del aparato institucional que el corpus documenta. Defendió hasta su muerte que el tema merecía estudio serio.",
+    "works": [
+      {
+        "year": 2007,
+        "title": "Financiamiento del AAWSAP (DIA/BAASS)",
+        "contribution": "Gestionó el earmark de ~22M USD que creó el programa",
+        "contribution_en": "Secured the ~$22M earmark that created the program"
+      },
+      {
+        "year": 2021,
+        "title": "Advocacy público por el estudio del fenómeno",
+        "contribution": "Sostuvo hasta su muerte que el tema merecía investigación científica",
+        "contribution_en": "Maintained until his death that the subject deserved scientific study"
+      }
+    ],
+    "section_label_en": "Formal political actors",
+    "credentials_en": "U.S. Senate Majority Leader (D-NV, 2007–2015) + Senator (1987–2017)",
+    "bio_short_en": "The foundational political actor of the modern disclosure cycle. In 2007, together with senators Ted Stevens and Daniel Inouye, he arranged the funding (~$22 million) for AAWSAP, the DIA program run through Robert Bigelow's company (BAASS) that investigated the phenomenon and the Skinwalker Ranch. Without that budgetary maneuver there would have been no AATIP, no 2017 leaks and little of the institutional apparatus the corpus documents. He maintained until his death that the topic deserved serious study.",
+    "sources": [
+      {
+        "name": "The New York Times — 'Glowing Auras and Black Money' (dic 2017)",
+        "note": "Rol de Reid en el financiamiento del AATIP/AAWSAP.",
+        "note_en": "Reid's role in funding AATIP/AAWSAP."
+      }
+    ]
+  },
+  {
+    "id": "west",
+    "name": "Mick West",
+    "flag": "🇬🇧",
+    "born": 1966,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "Investigador escéptico + fundador de Metabunk + ex-programador (serie Tony Hawk's Pro Skater)",
+    "bio_short": "Es el referente escéptico contemporáneo del fenómeno. Desde su sitio Metabunk produjo las explicaciones técnicas más influyentes de los videos de la Marina de EE.UU.: la rotación del 'Gimbal' como artefacto de glare del sensor giroestabilizado y el 'GoFast' como un objeto lento cercano cuya velocidad aparente es un efecto de paralaje. No niega que existan casos sin resolver: insiste en que la carga de la prueba y el análisis riguroso deben preceder a la conclusión extraordinaria. Encarna el polo escéptico que el corpus considera indispensable para la calibración honesta.",
+    "works": [
+      {
+        "year": 2018,
+        "title": "Escaping the Rabbit Hole",
+        "contribution": "Método para evaluar afirmaciones extraordinarias y desinformación",
+        "contribution_en": "Method for evaluating extraordinary claims and misinformation"
+      },
+      {
+        "year": 2021,
+        "title": "Análisis de Gimbal y GoFast",
+        "contribution": "Explicaciones de glare/rotación y paralaje para los videos navales",
+        "contribution_en": "Glare/rotation and parallax explanations for the Navy videos"
+      }
+    ],
+    "section_label_en": "Scientific researchers",
+    "credentials_en": "Skeptical investigator + founder of Metabunk + former programmer (Tony Hawk's Pro Skater series)",
+    "bio_short_en": "He is the phenomenon's leading contemporary skeptic. From his site Metabunk he produced the most influential technical explanations of the U.S. Navy videos: the 'Gimbal' rotation as a glare artifact of the gyro-stabilized sensor, and the 'GoFast' as a slow nearby object whose apparent speed is a parallax effect. He does not deny that unresolved cases exist: he insists that burden of proof and rigorous analysis must precede the extraordinary conclusion. He embodies the skeptical pole the corpus considers indispensable for honest calibration.",
+    "sources": [
+      {
+        "name": "Mick West, 'Escaping the Rabbit Hole' (2018) + Metabunk.org",
+        "url": "https://www.metabunk.org/",
+        "note": "Análisis técnico escéptico de los videos navales.",
+        "note_en": "Skeptical technical analysis of the Navy videos."
+      }
+    ]
+  },
+  {
+    "id": "stratton",
+    "name": "Jay Stratton",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Informantes / denunciantes",
+    "credentials": "ex-Director de la UAP Task Force (UAPTF) + oficial de inteligencia de carrera (Marina/DIA)",
+    "bio_short": "Oficial de inteligencia de carrera que dirigió la UAP Task Force, el grupo oficial del Pentágono (2020–2022) que produjo la base del informe preliminar de la ODNI de 2021. Es citado por David Grusch como un insider creíble del manejo del tema, y según varios relatos estuvo involucrado en líneas de investigación sobre materiales y recuperaciones. Tras dejar el gobierno pasó al sector privado. Aporta el eslabón institucional formal entre los casos navales y el ciclo de denuncias.",
+    "works": [
+      {
+        "year": 2021,
+        "title": "Conducción de la UAP Task Force",
+        "contribution": "Lideró el grupo oficial que alimentó el informe ODNI 2021",
+        "contribution_en": "Led the official task force that fed the 2021 ODNI assessment"
+      }
+    ],
+    "section_label_en": "Insiders / whistleblowers",
+    "credentials_en": "Former Director of the UAP Task Force (UAPTF) + career intelligence officer (Navy/DIA)",
+    "bio_short_en": "A career intelligence officer who led the UAP Task Force, the Pentagon's official group (2020–2022) that produced the basis for the 2021 ODNI preliminary assessment. He is cited by David Grusch as a credible insider on the handling of the topic, and per several accounts was involved in lines of inquiry into materials and retrievals. After leaving government he moved to the private sector. He provides the formal institutional link between the Navy cases and the whistleblower cycle.",
+    "sources": [
+      {
+        "name": "ODNI — 'Preliminary Assessment: Unidentified Aerial Phenomena' (2021)",
+        "note": "Producto de la UAP Task Force dirigida por Stratton.",
+        "note_en": "Product of the UAP Task Force led by Stratton."
+      }
+    ]
+  },
+  {
+    "id": "knuth",
+    "name": "Kevin H. Knuth",
+    "flag": "🇺🇸",
+    "born": 1966,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD physics + Professor of Physics, University at Albany (SUNY) + ex-NASA Ames + cofundador de UAPx",
+    "bio_short": "Físico y ex-investigador del NASA Ames, profesor en SUNY Albany, cofundador de UAPx, un grupo que estudia el fenómeno con instrumentación científica. En un artículo revisado por pares estimó las características de vuelo de objetos como el 'Tic-Tac' del Nimitz y argumentó que, de ser reales las cinemáticas reportadas, implicarían aceleraciones extraordinarias. Defiende que el fenómeno se aborde con el método científico estándar —datos, instrumentos, revisión por pares— en lugar de la anécdota.",
+    "works": [
+      {
+        "year": 2019,
+        "title": "Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles (Entropy)",
+        "contribution": "Análisis cuantitativo revisado por pares de cinemáticas reportadas",
+        "contribution_en": "Peer-reviewed quantitative analysis of reported kinematics"
+      },
+      {
+        "year": 2021,
+        "title": "Expediciones de UAPx",
+        "contribution": "Recolección instrumentada de datos en campo",
+        "contribution_en": "Instrumented field data collection"
+      }
+    ],
+    "section_label_en": "Scientific researchers",
+    "credentials_en": "PhD in physics + Professor of Physics, University at Albany (SUNY) + former NASA Ames + co-founder of UAPx",
+    "bio_short_en": "A physicist and former NASA Ames researcher, professor at SUNY Albany, co-founder of UAPx, a group studying the phenomenon with scientific instrumentation. In a peer-reviewed paper he estimated the flight characteristics of objects like the Nimitz 'Tic-Tac' and argued that, if the reported kinematics were real, they would imply extraordinary accelerations. He advocates approaching the phenomenon with the standard scientific method —data, instruments, peer review— rather than anecdote.",
+    "sources": [
+      {
+        "name": "K. Knuth, R. Powell, P. Reali, 'Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles', Entropy (2019)",
+        "url": "https://www.mdpi.com/1099-4300/21/10/939",
+        "note": "Análisis cuantitativo de cinemáticas UAP.",
+        "note_en": "Quantitative analysis of UAP kinematics."
+      }
+    ]
+  },
+  {
+    "id": "villarroel",
+    "name": "Beatriz Villarroel",
+    "flag": "🇸🇪",
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD astrofísica + investigadora en Nordita / Stockholm University + Instituto de Astrofísica de Canarias + líder del proyecto VASCO",
+    "bio_short": "Astrofísica que lidera VASCO (Vanishing & Appearing Sources during a Century of Observations), un proyecto que compara placas fotográficas del cielo a lo largo de un siglo para hallar objetos que aparecieron o desaparecieron. Su línea más provocadora analiza transitorios en placas anteriores a 1957 —antes de que existiera cualquier satélite humano— planteando que algunos puntos de luz podrían ser reflejos de objetos en órbita, una hipótesis comprobable. Representa el abordaje observacional riguroso: buscar señales en datos de archivo, no en testimonios.",
+    "works": [
+      {
+        "year": 2019,
+        "title": "Proyecto VASCO",
+        "contribution": "Búsqueda sistemática de fuentes que desaparecen en sondeos de archivo",
+        "contribution_en": "Systematic search for vanishing sources in archival sky surveys"
+      },
+      {
+        "year": 2022,
+        "title": "Transitorios pre-Sputnik",
+        "contribution": "Estudio de destellos en placas anteriores a los satélites humanos",
+        "contribution_en": "Study of flashes on plates predating human satellites"
+      }
+    ],
+    "section_label_en": "Scientific researchers",
+    "credentials_en": "PhD in astrophysics + researcher at Nordita / Stockholm University + Instituto de Astrofísica de Canarias + lead of the VASCO project",
+    "bio_short_en": "An astrophysicist who leads VASCO (Vanishing & Appearing Sources during a Century of Observations), a project comparing photographic sky plates across a century to find objects that appeared or disappeared. Her most provocative line analyzes transients on plates predating 1957 —before any human satellite existed— proposing that some points of light could be reflections from objects in orbit, a testable hypothesis. She represents the rigorous observational approach: looking for signals in archival data, not in testimony.",
+    "sources": [
+      {
+        "name": "B. Villarroel et al., VASCO project / 'Exploring nine simultaneously occurring transients on April 12th 1950'",
+        "note": "Estudio de transitorios pre-Sputnik.",
+        "note_en": "Study of pre-Sputnik transients."
+      }
+    ]
+  },
+  {
+    "id": "sturrock",
+    "name": "Peter A. Sturrock",
+    "flag": "🇬🇧",
+    "born": 1924,
+    "section": "A",
+    "section_label": "Investigadores científicos",
+    "credentials": "PhD physics Cambridge + Professor Emeritus of Applied Physics, Stanford + fundador de la Society for Scientific Exploration",
+    "bio_short": "Astrofísico de plasma de Stanford que presidió el taller de Pocantico de 1997 (el 'Panel Sturrock'), la primera revisión científica independiente de la evidencia física del fenómeno. Un panel de físicos evaluó casos con trazas, radar y efectos en instrumentos y concluyó que el tema merecía estudio científico continuado y que algunos casos resistían explicación trivial. Décadas antes del AARO, instaló el argumento de que el fenómeno es una cuestión empírica, no de creencia.",
+    "works": [
+      {
+        "year": 1998,
+        "title": "Panel Sturrock / Pocantico Report",
+        "contribution": "Primera revisión científica independiente de evidencia física UAP",
+        "contribution_en": "First independent scientific review of physical UAP evidence"
+      },
+      {
+        "year": 1999,
+        "title": "The UFO Enigma",
+        "contribution": "Síntesis del panel para una audiencia científica",
+        "contribution_en": "Synthesis of the panel for a scientific audience"
+      }
+    ],
+    "section_label_en": "Scientific researchers",
+    "credentials_en": "PhD in physics, Cambridge + Professor Emeritus of Applied Physics, Stanford + founder of the Society for Scientific Exploration",
+    "bio_short_en": "A Stanford plasma astrophysicist who chaired the 1997 Pocantico workshop (the 'Sturrock Panel'), the first independent scientific review of the phenomenon's physical evidence. A panel of physicists assessed cases involving traces, radar and instrument effects and concluded the subject deserved continued scientific study and that some cases resisted trivial explanation. Decades before AARO, he established the argument that the phenomenon is an empirical question, not a matter of belief.",
+    "sources": [
+      {
+        "name": "P. A. Sturrock, 'The UFO Enigma' (1999) + Pocantico Report (1998)",
+        "note": "Primera revisión científica independiente de la evidencia física.",
+        "note_en": "First independent scientific review of the physical evidence."
+      }
+    ]
+  },
+  {
+    "id": "barber",
+    "name": "Jake Barber",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Informantes / denunciantes",
+    "credentials": "ex-operador/piloto (alegado) + whistleblower público (2025)",
+    "bio_short": "Se presentó públicamente en 2025, en el documental y la cobertura de News Nation con Ross Coulthart, afirmando haber participado en un programa de recuperación de objetos no identificados —incluyendo una nave con forma de 'huevo'—. Es uno de los testimonios más recientes y mediáticos de la ola de denunciantes, pero también de los más contestados: sus afirmaciones, a la fecha, no cuentan con verificación documental independiente. Se incluye como dato del ciclo de disclosure, con el caveat explícito de que está sin corroborar.",
+    "works": [
+      {
+        "year": 2025,
+        "title": "Testimonio público (News Nation / Coulthart)",
+        "contribution": "Afirmaciones sobre un programa de recuperación de UAP — sin corroborar",
+        "contribution_en": "Claims about a UAP retrieval program — uncorroborated"
+      }
+    ],
+    "section_label_en": "Insiders / whistleblowers",
+    "credentials_en": "Former operator/pilot (alleged) + public whistleblower (2025)",
+    "bio_short_en": "He came forward publicly in 2025, in the documentary and News Nation coverage with Ross Coulthart, claiming to have taken part in a program to recover unidentified objects —including an 'egg'-shaped craft. He is one of the most recent and high-profile testimonies of the whistleblower wave, but also one of the most contested: his claims, to date, lack independent documentary verification. He is included as a datum of the disclosure cycle, with the explicit caveat that it is uncorroborated.",
+    "sources": [
+      {
+        "name": "News Nation / Ross Coulthart — cobertura de Jake Barber (2025)",
+        "note": "Testimonio sin corroboración documental independiente.",
+        "note_en": "Testimony without independent documentary corroboration."
+      }
+    ]
   }
 ]
