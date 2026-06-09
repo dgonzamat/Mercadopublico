@@ -6,9 +6,14 @@ import { STATS } from "./siteStats";
  * Schema.org JSON-LD helpers.
  *
  * Injected as <script type="application/ld+json"> in the layout (site-wide)
- * and per case page. Enables Google rich snippets (article cards, event
- * results, knowledge-graph entity recognition) and helps the corpus be
- * legible to LLM crawlers as structured data, not just prose.
+ * and per case page. Enables Google rich snippets (article cards,
+ * knowledge-graph entity recognition) and helps the corpus be legible to
+ * LLM crawlers as structured data, not just prose.
+ *
+ * Cases are emitted as `Article` (editorial content about a historical
+ * event), NOT as `Event` — `Event` triggers Google's commercial-event
+ * validator that demands `organizer`, `performer`, `offers`, none of which
+ * apply to a historical case.
  */
 
 export function websiteJsonLd() {
@@ -65,24 +70,18 @@ export function caseJsonLd(c: UAPCase) {
         },
         publisher: { "@id": `${SITE_URL}/#org` },
         isPartOf: { "@id": `${SITE_URL}/#website` },
-        about: {
-          "@type": "Event",
-          name: c.name,
-          startDate: String(c.year_start),
-          ...(c.year_end ? { endDate: String(c.year_end) } : {}),
-          location: {
-            "@type": "Place",
-            name: c.location.place || c.country_name,
-            address: {
-              "@type": "PostalAddress",
-              addressCountry: c.country,
-              addressLocality: c.location.place || undefined,
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: c.location.lat,
-              longitude: c.location.lng,
-            },
+        contentLocation: {
+          "@type": "Place",
+          name: c.location.place || c.country_name,
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: c.country,
+            addressLocality: c.location.place || undefined,
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: c.location.lat,
+            longitude: c.location.lng,
           },
         },
         ...(c.sources && c.sources.length > 0
