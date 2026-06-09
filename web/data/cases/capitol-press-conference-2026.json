@@ -1,0 +1,84 @@
+{
+  "id": "capitol-press-conference-2026",
+  "num": 138,
+  "name": "Conferencia del Capitolio · Grusch + lawmakers (9 jun 2026)",
+  "name_en": "Capitol Press Conference · Grusch + lawmakers (Jun 9, 2026)",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8899,
+    "lng": -77.0091,
+    "place": "Escalinata del Capitolio, Washington D.C."
+  },
+  "tier": "S",
+  "epistemicStatus": "developing",
+  "probability": 80,
+  "summary": "Conferencia de prensa bipartisan del 9 jun 2026 en la escalinata del Capitolio. El whistleblower David Grusch (ex Air Force intelligence officer, ex UAP Task Force) junto a los representantes Eric Burlison (R-MO), Jared Moskowitz (D-FL), Anna Paulina Luna (R-FL) y Tim Burchett (R-TN), con hosts Leslie Kean y James Fox, formaliza tres demandas concretas al Ejecutivo y al Congreso: desclasificación presidencial de archivos UAP nombrados por Grusch, aprobación del UAP Disclosure Act y refuerzo de protecciones a whistleblowers con coordinación internacional. Es la jugada de presión institucional más estructurada desde el testimonio bajo juramento de Grusch en julio 2023.",
+  "summary_en": "Bipartisan press conference held on June 9, 2026 on the U.S. Capitol steps. Whistleblower David Grusch (former Air Force intelligence officer, former UAP Task Force) joined by Representatives Eric Burlison (R-MO), Jared Moskowitz (D-FL), Anna Paulina Luna (R-FL) and Tim Burchett (R-TN), with hosts Leslie Kean and James Fox, formalizes three concrete demands to the Executive and to Congress: presidential declassification of UAP files named by Grusch, passage of the UAP Disclosure Act, and strengthened whistleblower protections with international coordination. It is the most structured institutional-pressure move since Grusch's sworn testimony in July 2023.",
+  "patterns": [
+    "8q",
+    "8m",
+    "8n"
+  ],
+  "category": "document",
+  "whatHappened": "El 9 de junio de 2026, a las 13:00 ET, una agrupación bipartisan se reunió en la escalinata del Capitolio para una conferencia de prensa coordinada por la periodista Leslie Kean (autora del reportaje del New York Times del 16 de diciembre de 2017 que reveló AATIP) y el documentalista James Fox. Los oradores principales fueron los representantes Eric Burlison (R-MO), Jared Moskowitz (D-FL), Anna Paulina Luna (R-FL) y Tim Burchett (R-TN), acompañados por el whistleblower David Grusch — ex oficial de inteligencia de la Air Force y ex representante ante la UAP Task Force del Pentágono. Grusch ya había testimoniado bajo juramento ante el Congreso en julio de 2023 sobre programas clasificados de recuperación y reverse engineering de craft de origen no humano.\n\nLa conferencia formalizó tres demandas concretas. Primero: desclasificación presidencial de archivos UAP específicos que Grusch ha identificado por nombre ante los cuerpos de oversight de inteligencia. Segundo: aprobación congresional del UAP Disclosure Act, con pathways sistemáticos de release y protecciones de seguridad nacional. Tercero: protecciones reforzadas para whistleblowers que prevengan retaliación administrativa, junto con coordinación internacional invitando a gobiernos aliados a contribuir evidencia UAP. Los legisladores citaron específicamente el incidente de Varginha 1996 entre los records a desclasificar, y plantearon la posibilidad de que los seres reportados allí hayan sido transportados a Estados Unidos como parte de programas de recuperación.\n\nGrusch escaló su lenguaje público respecto al testimonio de 2023: declaró que el gobierno estadounidense está \"aware of 'several' kinds\" de inteligencias no humanas, \"ranging in complexity\". El evento se enmarca en la directiva de desclasificación que el Presidente Trump emitió en mayo de 2026 y en el portal PURSUE que se abrió como canal de release, que para junio acumulaba más de mil millones de accesos a las primeras tandas de pilot reports, videos y archivos históricos. El press conference no presentó documentos nuevos — su valor es procedural y político: traducir presión sostenida en pedidos formales accionables.",
+  "whatHappened_en": "On June 9, 2026, at 1:00 PM ET, a bipartisan gathering convened on the steps of the U.S. Capitol for a press conference coordinated by journalist Leslie Kean (author of the New York Times December 16, 2017 investigation that revealed AATIP) and documentary filmmaker James Fox. The main speakers were Representatives Eric Burlison (R-MO), Jared Moskowitz (D-FL), Anna Paulina Luna (R-FL) and Tim Burchett (R-TN), joined by whistleblower David Grusch — former Air Force intelligence officer and former representative to the Pentagon's UAP Task Force. Grusch had previously testified under oath before Congress in July 2023 about classified programs for the recovery and reverse-engineering of craft of non-human origin.\n\nThe conference formalized three concrete demands. First: presidential declassification of specific UAP files that Grusch has named to intelligence oversight bodies. Second: congressional passage of the UAP Disclosure Act, with systematic release pathways and national-security protections. Third: strengthened whistleblower protections preventing administrative retaliation, plus international coordination inviting allied governments to contribute UAP evidence. Lawmakers specifically cited the 1996 Varginha incident among the records to be declassified, and raised the possibility that the beings reported there were transported to the United States as part of recovery programs.\n\nGrusch escalated his public language relative to the 2023 testimony: he stated that the U.S. government is \"aware of 'several' kinds\" of non-human intelligences, \"ranging in complexity\". The event is framed by President Trump's declassification directive issued in May 2026 and by the PURSUE portal opened as a release channel, which by June had accumulated more than one billion accesses to first batches of pilot reports, videos and historical files. The press conference did not present new documents — its value is procedural and political: translating sustained pressure into formally actionable requests.",
+  "whyMatters": "Es la jugada de presión institucional más estructurada en EE.UU. desde el testimonio bajo juramento de Grusch en julio 2023, y se distingue por tres rasgos que pocas conferencias UAP previas exhiben juntos: composición bipartisan (republicanos y demócratas en la misma fila), demandas escritas accionables (no genéricas) y arquitectura procedural (presidential directive + congressional act + whistleblower law + international coordination). No aporta evidencia material nueva — su importancia es procedural, no probatoria. Por eso entra al corpus como pieza de presión institucional (categoría document), no como observación UAP. Su Tier S no califica fuerza evidencial sobre la naturaleza del fenómeno, sino calidad institucional de la presión: cuatro legisladores en ejercicio, un whistleblower con testimonio bajo juramento previo, hosts con trayectoria periodística verificada, y un encaje cronológico con la directiva ejecutiva de mayo 2026.",
+  "whyMatters_en": "It is the most structured institutional-pressure move in the U.S. since Grusch's sworn testimony in July 2023, and it is distinguished by three traits that few prior UAP conferences exhibit together: bipartisan composition (Republicans and Democrats on the same line), written, actionable demands (not generic ones) and a procedural architecture (presidential directive + congressional act + whistleblower law + international coordination). It does not bring new material evidence — its importance is procedural, not probative. That is why it enters the corpus as an institutional-pressure piece (category document), not as a UAP observation. Its Tier S does not score evidential strength about the nature of the phenomenon, but the institutional quality of the pressure: four sitting lawmakers, a whistleblower with prior sworn testimony, hosts with verified journalistic track record, and a chronological fit with the May 2026 executive directive.",
+  "evidence": [
+    "Press conference pública 9 jun 2026, 13:00 ET, escalinata del Capitolio, cobertura en NewsNation, LA Magazine, Washington Times, iHeart, Unidentified Phenomena",
+    "Composición bipartisan: Burlison (R-MO), Luna (R-FL), Burchett (R-TN), Moskowitz (D-FL); hosts Kean (NYT) y Fox",
+    "Tres demandas formalmente escritas: (a) desclasificación presidencial de archivos UAP que Grusch identificó por nombre, (b) UAP Disclosure Act, (c) protecciones whistleblower + coordinación internacional",
+    "Escalamiento retórico de Grusch: declara que el USG está 'aware of several kinds' de inteligencias no humanas, 'ranging in complexity' — primer uso público de tipología diferenciada por un whistleblower formal",
+    "Llamado específico a desclasificar records de Varginha 1996, planteando hipótesis de transferencia de seres a EE.UU.",
+    "Encaje cronológico con la directiva presidencial de desclasificación de mayo 2026 y con el portal PURSUE que para junio acumulaba más de mil millones de accesos a primeras tandas"
+  ],
+  "evidence_en": [
+    "Public press conference Jun 9, 2026, 1:00 PM ET, U.S. Capitol steps, coverage in NewsNation, LA Magazine, Washington Times, iHeart, Unidentified Phenomena",
+    "Bipartisan composition: Burlison (R-MO), Luna (R-FL), Burchett (R-TN), Moskowitz (D-FL); hosts Kean (NYT) and Fox",
+    "Three formally written demands: (a) presidential declassification of UAP files Grusch has named, (b) UAP Disclosure Act, (c) whistleblower protections + international coordination",
+    "Grusch rhetorical escalation: declares the USG is 'aware of several kinds' of non-human intelligences, 'ranging in complexity' — first public use of differentiated typology by a formal whistleblower",
+    "Specific call to declassify Varginha 1996 records, raising the hypothesis of transfer of beings to the U.S.",
+    "Chronological fit with the May 2026 presidential declassification directive and with the PURSUE portal that by June had accumulated more than one billion accesses to first batches"
+  ],
+  "sources": [
+    {
+      "name": "The Exclusion Zone — 'Grusch at the Capitol: UAP Disclosure Demands June 9, 2026'",
+      "url": "https://www.theexclusionzone.com/grusch-capitol-june-9-2026-uap-disclosure/"
+    },
+    {
+      "name": "Unidentified Phenomena — 'Capitol Press Conference: Grusch and Lawmakers Demand Disclosure'",
+      "url": "https://unidentifiedphenomena.com/topics/capitol-press-conference-grusch-and-lawmakers-demand-disclosure/"
+    },
+    {
+      "name": "NewsNation — 'UFO whistleblower David Grusch says government aware of several kinds of aliens'",
+      "url": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-david-grusch-declassified-uap-files/"
+    },
+    {
+      "name": "LA Magazine — 'David Grusch Returns to Capitol Hill for UFO Disclosure'",
+      "url": "https://lamag.com/politics/ufo-whistleblower-david-grusch-returns-to-capitol-hill-tuesday/"
+    },
+    {
+      "name": "iHeart — 'Push For UAP Disclosure Comes To U.S. Capitol' (9 jun 2026)",
+      "url": "https://www.iheart.com/content/2026-06-09-push-for-uap-disclosure-comes-to-us-capitol/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Presión institucional sostenida: cuatro legisladores en ejercicio + whistleblower con testimonio bajo juramento previo + demandas escritas accionables que asumen explícitamente la existencia de programas de recuperación y reverse engineering. No aporta evidencia material nueva — vale como confirmación de que la hipótesis de existencia del programa sigue siendo políticamente operativa y bipartisan en el Congreso.",
+      "rationaleEn": "Sustained institutional pressure: four sitting lawmakers + whistleblower with prior sworn testimony + actionable written demands that explicitly assume the existence of recovery and reverse-engineering programs. It brings no new material evidence — it counts as confirmation that the program-existence hypothesis remains politically operative and bipartisan in Congress."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Grusch escala públicamente a 'several kinds, ranging in complexity'. Es testimonio individual sin documentos primarios presentados ese día — eso lo deja en minimal, no en modest. La mención específica de Varginha 1996 con hipótesis de transferencia de seres a EE.UU. extiende, no crea, evidencia: la subyacencia es el caso brasileño ya calibrado como Tier S.",
+      "rationaleEn": "Grusch publicly escalates to 'several kinds, ranging in complexity'. It is individual testimony without primary documents presented that day — that leaves it at minimal, not modest. The specific mention of Varginha 1996 with the hypothesis of transferring beings to the U.S. extends, does not create, evidence: the underlying piece is the Brazilian case already calibrated as Tier S."
+    }
+  ]
+}
