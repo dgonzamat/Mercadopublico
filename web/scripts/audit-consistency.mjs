@@ -86,7 +86,9 @@ const STATS = {
 
 // ─── 3. COMPUTE EFFECTIVE CALIBRATIONS (mirror lib/hypothesisMapping.ts) ─
 
-const STRENGTH_W = { minimal: 0.5, modest: 2, substantial: 5, "category-breaking": 15 };
+// Must mirror lib/hypothesisMapping.ts STRENGTH_WEIGHT (log-odds Bayes-factor
+// weights, NOT the legacy linear pressure points).
+const STRENGTH_W = { minimal: 0.005, modest: 0.02, substantial: 0.05, "category-breaking": 0.15 };
 const UMBRELLA = {
   "entidades-no-humanas": ["interdimensional", "ontologico-no-materialista", "tratado-greys"],
 };
@@ -104,13 +106,17 @@ function pressureFor(hid) {
   return p;
 }
 
+function logit(p) { return Math.log(p / (1 - p)); }
+function sigmoid(x) { return 1 / (1 + Math.exp(-x)); }
+
 const EFFECTIVE = {};
 for (const h of HYPOTHESES) {
   if (h.override !== undefined) {
     EFFECTIVE[h.id] = h.override;
   } else {
-    const shift = pressureFor(h.id) * 0.25;
-    EFFECTIVE[h.id] = Math.max(1, Math.min(99, h.prior + shift));
+    const priorClamped = Math.max(0.01, Math.min(0.99, h.prior / 100));
+    const pct = sigmoid(logit(priorClamped) + pressureFor(h.id)) * 100;
+    EFFECTIVE[h.id] = Math.max(1, Math.min(99, pct));
   }
 }
 
@@ -137,10 +143,9 @@ const EDITORIAL_RANGES_OK = new Set([
   "95",
   // Whole-number priors (must equal a hypothesis prior to pass)
   "88", "70", "28", "22", "6",
-  // Effective-value cites in about/page.tsx Ch.4 + clamp note: programas
-  // clasificados effective = 99 (clamped). Fenómeno natural effective ≈ 43
-  // since PRESSURE_SHIFT_FACTOR halving (was 16 at 0.5).
-  "99", "43",
+  // Effective-value cites in about/page.tsx Ch.4 under the log-odds model:
+  // programas-clasificados ≈ 96 (no longer clamped), fenómeno natural ≈ 44.
+  "96", "44",
 ]);
 
 /**

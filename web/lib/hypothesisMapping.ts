@@ -106,21 +106,49 @@ export function evidenceCountFor(
  * Per-case calibration system — see lib/types.ts EvidenceContribution.
  *
  * Each case can declare explicit contributions; otherwise auto-seeded from
- * its pattern list (each mapped pattern = +0.5 to the mapped hypothesis).
+ * its pattern list (each mapped pattern = one `minimal` supporting
+ * contribution to the mapped hypothesis).
  *
- * Two outputs:
- *   - pressureFor(h, cases) → continuous score (Σ supports − Σ weakens)
- *   - driftFor(h, cases) → comparison of implied vs calibrated probability
+ * MATHEMATICAL MODEL: log-odds Bayesian-style update.
+ *
+ *   effective = sigmoid(logit(prior) + Σ direction × weight)
+ *
+ *   - `weight` is the case's contribution magnitude in log-odds space (a
+ *     Bayes-factor-like quantity).
+ *   - `direction` ∈ {+1 supports, −1 weakens}.
+ *   - sigmoid saturates asymptotically toward 0 and 1, so no artificial
+ *     clamp is needed: the prior's distance from the extremes provides a
+ *     natural ceiling/floor.
+ *
+ *   The weights below are calibrated CONSERVATIVELY because corpus cases
+ *   are not independent observations — they share cultural era, selection
+ *   bias and methodological assumptions. A "modest" contribution = +0.02
+ *   in log-odds = odds × 1.020x = ~2% boost. This means 50 modest cases
+ *   would shift logit by 1.0 — moving a 50%-prior to ~73%, an 88%-prior to
+ *   ~95% — neither of which saturates artificially.
  *
  * Umbrella hypotheses inherit contributions from their subclasses
  * (same UMBRELLA_SUBCLASSES relation used by evidenceCountFor).
  */
 
+/**
+ * Per-strength weight in log-odds space (≈ ln(Bayes factor)).
+ * Interpretation by strength:
+ *   minimal           → odds × 1.005x  (very weak hint)
+ *   modest            → odds × 1.020x  (clear hint)
+ *   substantial       → odds × 1.051x  (solid evidence)
+ *   category-breaking → odds × 1.162x  (paradigm-shifting observation)
+ *
+ * Conservative on purpose: corpus cases are correlated (shared era,
+ * selection bias). Treating each as an independent Bayesian observation
+ * with strong likelihood would saturate the dial within a handful of
+ * cases. Compare with NAIVE_LINEAR_WEIGHT (kept for migration audit).
+ */
 export const STRENGTH_WEIGHT: Record<string, number> = {
-  minimal: 0.5,
-  modest: 2,
-  substantial: 5,
-  "category-breaking": 15,
+  minimal: 0.005,
+  modest: 0.02,
+  substantial: 0.05,
+  "category-breaking": 0.15,
 };
 
 interface MinimalCase {
@@ -210,30 +238,38 @@ export function pressureFor(
 }
 
 /**
- * Effective calibration — Option C: derived from prior + pressure, with
- * optional manual override.
+ * Effective calibration — log-odds Bayesian update with optional override.
  *
  * Resolution order:
  *   1. If `corpusPctOverride` is declared on the hypothesis, use it.
  *      Source = "override". Used by antecedent/derived hypotheses whose
  *      pct doesn't come from corpus evidence.
- *   2. Otherwise, compute: effective = prior + pressure × SHIFT_FACTOR
+ *   2. Otherwise:
+ *        logit_prior = ln(prior / (1 − prior))
+ *        logit_eff   = logit_prior + Σ direction × STRENGTH_WEIGHT[strength]
+ *        effective   = sigmoid(logit_eff) = 1 / (1 + exp(−logit_eff))
  *      Source = "derived" when pressure ≠ 0, "prior" when pressure = 0.
  *
- * The shift factor (0.25 pp per pressure point) means:
- *   - 1 modest contribution (+2 pressure) = +0.5 pp shift
- *   - 1 substantial contribution (+5 pressure) = +1.25 pp shift
- *   - 1 category-breaking contribution (+15 pressure) = +3.75 pp shift
- *   - 20 minimal contributions (+10 pressure) = +2.5 pp shift
+ * Why log-odds and not a linear `prior + pressure × k`:
+ *   - The linear model saturated artificially at the 1–99% clamp: a
+ *     hypothesis with prior 88% and pressure 56 went straight to 99% (cap)
+ *     for any reasonable k.
+ *   - Log-odds saturates asymptotically (sigmoid never reaches 0 or 1),
+ *     so the same evidence shifts probabilities NEAR the extremes much
+ *     less than near 50%. That is the correct Bayesian behavior: when
+ *     prior is already 95%, a "modest" hint isn't going to push it past
+ *     99%; when prior is 50%, that same hint moves the needle visibly.
  *
- * Lowered from 0.5 to 0.25 (2026-06): at 0.5 the umbrella hypothesis
- * entidades-no-humanas accumulated to 74% — reading as ICD-203 "probable"
- * — because pressure inherits across umbrella subclasses, double-counting
- * cases that genuinely don't discriminate between competing hypotheses.
- * Halving the factor preserves the marginal-return principle (each new
- * case still nudges the dial) without inflating umbrellas mechanically.
+ * The clamp to [1, 99] is kept as a SAFETY bound for floating-point edge
+ * cases and to keep the ICD-203 rule (never 0%, never 100%) visible, but
+ * it is no longer the source of the ceiling.
  */
-export const PRESSURE_SHIFT_FACTOR = 0.25;
+
+/**
+ * @deprecated kept for back-compat audit of the previous linear model.
+ * The log-odds model does NOT use a multiplicative shift factor.
+ */
+export const PRESSURE_SHIFT_FACTOR = 1;
 
 export type CalibrationSource = "override" | "derived" | "prior";
 
@@ -241,6 +277,14 @@ interface HypothesisLike {
   id: string;
   corpusPct: number;
   corpusPctOverride?: number;
+}
+
+function logit(p: number): number {
+  return Math.log(p / (1 - p));
+}
+
+function sigmoid(x: number): number {
+  return 1 / (1 + Math.exp(-x));
 }
 
 export function effectiveCalibration(
@@ -263,9 +307,11 @@ export function effectiveCalibration(
       shift: 0,
     };
   }
-  const shift = pressure * PRESSURE_SHIFT_FACTOR;
-  const pctRaw = h.corpusPct + shift;
+  const priorClamped = Math.max(0.01, Math.min(0.99, h.corpusPct / 100));
+  const logitEffective = logit(priorClamped) + pressure;
+  const pctRaw = sigmoid(logitEffective) * 100;
   const pct = Math.max(1, Math.min(99, pctRaw));
+  const shift = pct - h.corpusPct;
   const source: CalibrationSource = pressure === 0 ? "prior" : "derived";
   return { pct, source, pressure, supportingCases, shift };
 }

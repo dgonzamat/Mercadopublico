@@ -216,9 +216,8 @@ export function IcdProbabilityChart({ framing = true }: { framing?: boolean } = 
  * CalibrationSourceBadge — shows how the displayed probability was
  * obtained. Three sources, all build-time computed:
  *
- *   - "derived":  effective = prior + pressure × PRESSURE_SHIFT_FACTOR
- *                 (currently 0.25). Default for primitive hypotheses.
- *                 Updates with every case added.
+ *   - "derived":  effective = sigmoid(logit(prior) + pressure). Default
+ *                 for primitive hypotheses. Updates with every case added.
  *   - "prior":    pressure = 0 (no cases declared for this hypothesis).
  *                 Falls back to the prior.
  *   - "override": `corpusPctOverride` declared on the hypothesis (used by

@@ -259,8 +259,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="De las seis explicaciones principales del corpus, cinco están razonablemente decididas — programa clasificado arriba con evidencia histórica documentada (U-2, F-117); fenómeno natural raro, que arrancó con un prior alto (70%) pero que el corpus empujó hasta ~43% efectivo porque los casos con sensor muestran objetos estructurados, no plasma; y las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal) abajo porque su evidencia es testimonial o sin documentos primarios. La sexta, entidades no humanas (categoría amplia), es la única que un solo experimento decisivo podría mover. Por eso ahí vive el debate del corpus."
-                  en="Of the six main corpus explanations, five are reasonably settled — classified programs near the top with documented historical evidence (U-2, F-117); rare natural phenomenon, which started from a high prior (70%) but the corpus pushed down to ~43% effective because the sensor cases show structured objects, not plasma; and the three specific subclasses (interdimensional, non-materialist ontological, formal treaty) near the bottom because their evidence is testimonial or lacks primary documents. The sixth, broad non-human entities, is the only one a single decisive experiment could move. That's where the corpus debate lives."
+                  es="De las seis explicaciones principales del corpus, cinco están razonablemente decididas — programa clasificado arriba (~96% efectivo) con evidencia histórica documentada (U-2, F-117); fenómeno natural raro, que arrancó con un prior alto (70%) pero que el corpus empujó hasta ~44% efectivo porque los casos con sensor muestran objetos estructurados, no plasma; y las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal) abajo porque su evidencia es testimonial o sin documentos primarios. La sexta, entidades no humanas (categoría amplia), es la única que un solo experimento decisivo podría mover. Por eso ahí vive el debate del corpus."
+                  en="Of the six main corpus explanations, five are reasonably settled — classified programs near the top (~96% effective) with documented historical evidence (U-2, F-117); rare natural phenomenon, which started from a high prior (70%) but the corpus pushed down to ~44% effective because the sensor cases show structured objects, not plasma; and the three specific subclasses (interdimensional, non-materialist ontological, formal treaty) near the bottom because their evidence is testimonial or lacks primary documents. The sixth, broad non-human entities, is the only one a single decisive experiment could move. That's where the corpus debate lives."
                 />
               </Body>
               <div className="grid gap-4 sm:grid-cols-3">
@@ -268,10 +268,10 @@ export default function AboutPage() {
                   es="Priors arriba (no se mueven)"
                   en="Priors near ceiling (don't move)"
                   items={[
-                    "Programa clasificado · prior 88% → 99%",
+                    "Programa clasificado · prior 88% → 96%",
                   ]}
                   itemsEn={[
-                    "Classified program · prior 88% → 99%",
+                    "Classified program · prior 88% → 96%",
                   ]}
                 />
                 <MoveList
@@ -352,8 +352,8 @@ export default function AboutPage() {
                 </h3>
                 <Body className="text-muted">
                   <T
-                    es={<>Las probabilidades del corpus se derivan en build-time siguiendo una fórmula pública:{" "}<strong className="text-text">probabilidad = prior + presión × 0.25</strong>. El <em>prior</em> es el juicio del analista antes de mirar el corpus; la <em>presión</em> es la suma de las contribuciones declaradas por cada caso del corpus. Cada caso nuevo recalibra automáticamente todas las probabilidades del sitio sin intervención humana. El resultado se topa en el rango <strong className="text-text">1–99%</strong> (regla ICD-203: nunca 0 ni 100), por eso una hipótesis muy evidenciada como «programa clasificado» muestra 99% aunque la presión acumulada la empujaría más alto.</>}
-                    en={<>Corpus probabilities are derived at build-time following a public formula:{" "}<strong className="text-text">probability = prior + pressure × 0.25</strong>. The <em>prior</em> is the analyst&apos;s judgment before looking at the corpus; the <em>pressure</em> is the sum of declared contributions from each corpus case. Every new case auto-recalibrates all probabilities site-wide without human intervention. The result is capped to the <strong className="text-text">1–99%</strong> range (ICD-203 rule: never 0 or 100), which is why a heavily-evidenced hypothesis like “classified program” shows 99% even though the accumulated pressure would push it higher.</>}
+                    es={<>Las probabilidades del corpus se derivan en build-time siguiendo una fórmula bayesiana pública:{" "}<strong className="text-text">probabilidad = sigmoide(logit(prior) + presión)</strong>. El <em>prior</em> es el juicio del analista antes de mirar el corpus, expresado en log-odds; la <em>presión</em> es la suma de las contribuciones de cada caso, también en log-odds (un caso «modest» ≈ multiplicar las odds por 1.02). La sigmoide satura asintóticamente, así que el efectivo nunca llega a 0 ni a 100 — la regla ICD-203 emerge naturalmente del modelo, no de un tope artificial. Cada caso nuevo recalibra todas las probabilidades del sitio sin intervención humana.</>}
+                    en={<>Corpus probabilities are derived at build-time via a public Bayesian formula:{" "}<strong className="text-text">probability = sigmoid(logit(prior) + pressure)</strong>. The <em>prior</em> is the analyst&apos;s judgment before looking at the corpus, expressed in log-odds; the <em>pressure</em> is the sum of declared contributions from each corpus case, also in log-odds (one «modest» case ≈ multiplying odds by 1.02). The sigmoid saturates asymptotically, so the effective never reaches 0 or 100 — the ICD-203 rule emerges naturally from the model, not from an artificial ceiling. Every new case re-calibrates all probabilities site-wide without human intervention.</>}
                   />
                 </Body>
                 <Body className="text-muted">
