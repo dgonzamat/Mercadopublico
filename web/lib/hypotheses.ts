@@ -23,11 +23,15 @@ import { STATS } from "./siteStats";
  *     the starting point for build-time derivation.
  *
  *   - At build time, `effectiveCalibration(h, cases)` (in
- *     lib/hypothesisMapping) computes the displayed probability:
- *       effective = prior + pressure × PRESSURE_SHIFT_FACTOR (currently 0.25)
- *     where `pressure` is the sum of declared case contributions for the
- *     hypothesis (see lib/types.ts EvidenceContribution). Each new case
- *     therefore shifts the displayed pct automatically.
+ *     lib/hypothesisMapping) computes the displayed probability via a
+ *     log-odds Bayesian update:
+ *       effective = sigmoid(logit(prior) + Σ direction × weight)
+ *     where each case contributes a log-odds shift (see lib/types.ts
+ *     EvidenceContribution and STRENGTH_WEIGHT). Each new case therefore
+ *     updates the displayed pct automatically and saturates asymptotically
+ *     (no artificial ceiling/floor clamp). Replaces the prior linear
+ *     `prior + pressure × 0.25` model, which capped at 99% for any
+ *     well-evidenced hypothesis.
  *
  *   - `corpusPctOverride` is an optional manual final value that bypasses
  *     all pressure logic. Used for hypotheses whose pct is NOT a function
@@ -45,7 +49,7 @@ import { STATS } from "./siteStats";
  * COPY NUMERIC DISCIPLINE (applies to EVERY page citing percentages):
  *
  *   Each hypothesis has TWO numbers: the PRIOR (`corpusPct` here) and
- *   the EFFECTIVE (`prior + pressure × PRESSURE_SHIFT_FACTOR`, shown by
+ *   the EFFECTIVE (sigmoid(logit(prior) + pressure), shown by
  *   IcdProbabilityChart and section ICD badges). They DIVERGE as the
  *   corpus grows. The most
  *   common drift bug in this codebase is editorial copy that cites a
