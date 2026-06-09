@@ -1,0 +1,77 @@
+{
+  "id": "rommel-report-1980",
+  "num": 136,
+  "name": "Operation Animal Mutilation (Informe Rommel, FBI/DOJ)",
+  "name_en": "Operation Animal Mutilation (Rommel Report, FBI/DOJ)",
+  "year_start": 1980,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 35.687,
+    "lng": -105.938,
+    "place": "Santa Fe, Nuevo México (Distrito Judicial 1°)"
+  },
+  "tier": "S",
+  "probability": 8,
+  "summary": "Investigación federal de mutilaciones de ganado encargada en 1979 por el Senador Harrison Schmitt (Nuevo México) tras presión política rural, financiada con una grant LEAA del Departamento de Justicia y ejecutada por el ex-agente FBI Kenneth Rommel desde la Fiscalía del 1° Distrito Judicial. El informe final (junio 1980, 297 páginas) examinó 15 casos en NM con necropsias veterinarias formales y trabajo de campo, y concluyó que el patrón se explica por muerte por causas naturales seguida de depredación y descomposición. No halló evidencia de instrumentos quirúrgicos, helicópteros encubiertos, sectas, ni intervención anómala. Es el documento institucional más sólido del corpus para la hipótesis fenómenos-naturales sobre mutilaciones.",
+  "summary_en": "Federal investigation of cattle mutilations commissioned in 1979 by Senator Harrison Schmitt (New Mexico) under rural political pressure, funded by a DOJ Law Enforcement Assistance Administration grant and executed by former FBI agent Kenneth Rommel from the 1st Judicial District Attorney's office. The final report (June 1980, 297 pages) examined 15 NM cases with formal veterinary necropsies and field work, and concluded the pattern is explained by death from natural causes followed by predation and decomposition. It found no evidence of surgical instruments, covert helicopters, cults, or anomalous intervention. It is the strongest institutional document in the corpus for the natural-phenomena hypothesis on mutilations.",
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "En abril de 1979, ante una ola persistente de reportes de ganado encontrado muerto con cortes 'quirúrgicos', ausencia de sangre y tejidos blandos faltantes —y atribuciones recurrentes a OVNIs, helicópteros negros y sectas—, el Senador Harrison Schmitt (NM) convocó una conferencia federal en Albuquerque. Asistieron el FBI, fiscales locales, el AG de Nuevo México Toney Anaya, veterinarios y rancheros. La conclusión política fue clara: hacía falta una investigación con autoridad ejecutiva, no más folklore.\n\nLa Law Enforcement Assistance Administration (LEAA) del Departamento de Justicia aprobó una grant de aproximadamente USD 44,170 a la Fiscalía del 1° Distrito Judicial de NM (Santa Fe) para conducir la investigación. La fiscalía contrató a Kenneth M. Rommel —agente FBI retirado con 28 años de carrera, sin agenda en el debate OVNI— como director de proyecto. Durante doce meses, Rommel y su equipo respondieron a cada reporte fresco que pudieron alcanzar en NM, ordenaron necropsias veterinarias formales en laboratorios estatales, entrevistaron a rancheros, sheriffs, veterinarios y testigos de luces, y revisaron archivos previos.\n\nEl informe final, 'Operation Animal Mutilation: Report of the District Attorney, First Judicial District, State of New Mexico', se entregó al DOJ en junio de 1980. Las 297 páginas examinan 15 casos en detalle. En cada uno, las necropsias documentaron muerte por causas naturales conocidas —parto difícil, enfermedad, clostridium, rayo, intoxicación por loco weed— seguida de depredación normal por coyotes, perros y aves carroñeras que consumen tejidos blandos primero (ojos, lengua, ano, genitales). Los 'cortes quirúrgicos' resultan de la combinación de mordeduras de carnívoros pequeños, lividez post mortem que vacía la zona de sangre visible, y desecación de bordes en clima seco. Rommel descartó explícitamente intervención de sectas, helicópteros militares encubiertos y agentes federales clandestinos: no halló instrumentos, no halló testigos de operaciones, no halló rastros físicos compatibles con esas hipótesis.",
+  "whatHappened_en": "In April 1979, facing a persistent wave of reports of cattle found dead with 'surgical' cuts, missing blood and soft tissues —and recurrent attributions to UFOs, black helicopters and cults—, Senator Harrison Schmitt (NM) convened a federal conference in Albuquerque. The FBI, local prosecutors, NM Attorney General Toney Anaya, veterinarians and ranchers attended. The political conclusion was clear: an investigation with executive authority was needed, not more folklore.\n\nThe DOJ's Law Enforcement Assistance Administration (LEAA) approved a grant of approximately USD 44,170 to the 1st Judicial District Attorney's office (Santa Fe) to conduct the investigation. The DA hired Kenneth M. Rommel —retired FBI agent with a 28-year career, no stake in the UFO debate— as project director. For twelve months, Rommel and his team responded to every fresh report they could reach in NM, ordered formal veterinary necropsies in state laboratories, interviewed ranchers, sheriffs, veterinarians and witnesses of lights, and reviewed prior files.\n\nThe final report, 'Operation Animal Mutilation: Report of the District Attorney, First Judicial District, State of New Mexico', was delivered to the DOJ in June 1980. Its 297 pages examine 15 cases in detail. In each, necropsies documented death from known natural causes —difficult birth, disease, clostridium, lightning, loco weed intoxication— followed by normal predation by coyotes, dogs and scavenger birds that consume soft tissue first (eyes, tongue, anus, genitals). The 'surgical cuts' result from the combination of small-carnivore bites, post-mortem lividity that drains visible blood from the area, and edge desiccation in dry climate. Rommel explicitly ruled out cult intervention, covert military helicopters and clandestine federal agents: he found no instruments, no witnesses of operations, no physical traces compatible with those hypotheses.",
+  "whyMatters": "El Informe Rommel es el contrapeso institucional más fuerte del corpus para una categoría entera de fenómeno. No es un OVNI 'desmentido'; es una clase completa de anomalía —mutilaciones de ganado, presentes en folklore, prensa y cine desde los 70— sometida a investigación federal con autoridad judicial, financiamiento DOJ, metodología veterinaria estándar y un director sin sesgo previo. La conclusión es nítida y verificable: el patrón es natural. Esto vale más que cualquier opinión escéptica individual porque cumple los criterios que el corpus exige para los casos pro-anómalos: documento primario, autoridad institucional, metodología reproducible. Tier S precisamente porque la rigurosidad metodológica es simétrica con la que se exige a los casos que pesan en la otra dirección. Si Colares 1977 es Tier S por la investigación FAB, Rommel 1980 es Tier S por la investigación DOJ.",
+  "whyMatters_en": "The Rommel Report is the strongest institutional counterweight in the corpus for an entire category of phenomenon. It is not a single UFO 'debunked'; it is a whole class of anomaly —cattle mutilations, present in folklore, press and film since the 70s— subjected to federal investigation with judicial authority, DOJ funding, standard veterinary methodology and an unbiased director. The conclusion is sharp and verifiable: the pattern is natural. This is worth more than any individual skeptical opinion because it meets the criteria the corpus demands of pro-anomalous cases: primary document, institutional authority, reproducible methodology. Tier S precisely because the methodological rigor is symmetric with what is demanded of cases that weigh in the other direction. If Colares 1977 is Tier S for the FAB investigation, Rommel 1980 is Tier S for the DOJ investigation.",
+  "evidence": [
+    "Conferencia federal abril 1979 en Albuquerque convocada por el Senador Harrison Schmitt (NM); asistieron FBI, AG Toney Anaya, fiscales y rancheros",
+    "Grant LEAA del Departamento de Justicia (~USD 44,170) a la Fiscalía del 1° Distrito Judicial de NM para conducir la investigación",
+    "Director del proyecto: Kenneth M. Rommel, ex-agente FBI con 28 años de carrera, contratado por su independencia respecto al debate OVNI",
+    "297 páginas, 15 casos examinados en detalle con necropsias veterinarias formales en laboratorios estatales (1979–1980)",
+    "Conclusión documentada: muerte por causas naturales (parto difícil, enfermedad, clostridium, rayo, loco weed) + depredación normal (coyotes, perros, aves carroñeras) + lividez/desecación post mortem explican el patrón completo",
+    "Refutación explícita de hipótesis de sectas, helicópteros militares encubiertos y operativos federales clandestinos: cero instrumentos, cero testigos directos, cero trazas físicas compatibles"
+  ],
+  "evidence_en": [
+    "April 1979 federal conference in Albuquerque convened by Senator Harrison Schmitt (NM); attended by FBI, AG Toney Anaya, prosecutors and ranchers",
+    "DOJ Law Enforcement Assistance Administration grant (~USD 44,170) to the 1st Judicial District DA's office to conduct the investigation",
+    "Project director: Kenneth M. Rommel, retired FBI agent with 28-year career, hired for his independence from the UFO debate",
+    "297 pages, 15 cases examined in detail with formal veterinary necropsies at state laboratories (1979–1980)",
+    "Documented conclusion: death from natural causes (difficult birth, disease, clostridium, lightning, loco weed) + normal predation (coyotes, dogs, scavenger birds) + post-mortem lividity/desiccation explain the full pattern",
+    "Explicit refutation of cult, covert military helicopter and clandestine federal operative hypotheses: zero instruments, zero direct witnesses, zero compatible physical traces"
+  ],
+  "sources": [
+    {
+      "name": "Rommel, K.M. — 'Operation Animal Mutilation: Report of the District Attorney, First Judicial District, State of New Mexico' (junio 1980)",
+      "note": "Informe primario de 297 páginas entregado al DOJ.",
+      "note_en": "Primary 297-page report delivered to DOJ."
+    },
+    {
+      "name": "FBI Vault — Animal Mutilation files",
+      "url": "https://vault.fbi.gov/Animal%20Mutilation",
+      "note": "Archivo desclasificado del FBI con correspondencia y materiales relacionados al caso.",
+      "note_en": "Declassified FBI archive with correspondence and case-related materials."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Es el documento institucional más sólido del corpus a favor de explicación natural para una clase completa de fenómeno: investigación federal con autoridad judicial, financiamiento DOJ, 297 páginas, 15 necropsias veterinarias formales y un director sin sesgo previo. La conclusión —muerte natural + depredación + lividez/desecación post mortem— es el consenso forense internacional para 'mutilaciones de ganado'.",
+      "rationaleEn": "It is the corpus's strongest institutional document for natural explanation of an entire phenomenon class: federal investigation with judicial authority, DOJ funding, 297 pages, 15 formal veterinary necropsies and an unbiased director. The conclusion —natural death + predation + post-mortem lividity/desiccation— is the international forensic consensus on 'cattle mutilations'."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "substantial",
+      "rationale": "Refuta directamente la lectura anómala de las mutilaciones de ganado para los 15 casos NM investigados: cero rastros de instrumentos quirúrgicos, cero testigos de operaciones, ninguna firma física compatible con intervención anómala. Como las mutilaciones son uno de los pilares folclóricos de la hipótesis de entidades no humanas operando en zonas rurales, su refutación institucional pesa.",
+      "rationaleEn": "It directly refutes the anomalous reading of cattle mutilations for the 15 NM cases investigated: zero surgical instrument traces, zero operation witnesses, no physical signature compatible with anomalous intervention. Since mutilations are one of the folkloric pillars of the non-human-entity hypothesis operating in rural areas, this institutional refutation carries weight."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Rommel descartó explícitamente la hipótesis de helicópteros militares encubiertos y operativos federales clandestinos: ningún testigo directo, ningún registro de operaciones, ninguna traza física compatible con experimentos gubernamentales con ganado en NM durante la ventana investigada.",
+      "rationaleEn": "Rommel explicitly ruled out the covert military helicopter and clandestine federal operative hypothesis: no direct witnesses, no operational records, no physical trace compatible with government experiments on cattle in NM during the investigated window."
+    }
+  ]
+}
