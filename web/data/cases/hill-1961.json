@@ -1,0 +1,65 @@
+{
+  "id": "hill-1961",
+  "num": 91,
+  "name": "Barney y Betty Hill",
+  "year_start": 1961,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 44.49,
+    "lng": -71.57,
+    "place": "Lancaster, New Hampshire"
+  },
+  "tier": "A",
+  "probability": 45,
+  "summary": "Radar Pease AFB + sesiones psiquiátricas formales Dr. Benjamin Simon (Boston) + 'The Interrupted Journey' (1966)",
+  "summary_en": "Pease AFB radar + formal psychiatric sessions with Dr. Benjamin Simon (Boston) + 'The Interrupted Journey' (1966)",
+  "patterns": ["8e", "8m"],
+  "category": "incident",
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "La correlación de radar en la base Pease AFB en el momento documentado descarta la confusión con un planeta brillante, estrella o satélite. Sin embargo, ball lightning, autosugestión bajo fatiga prolongada y sueños inducidos por estrés siguen siendo explicaciones parciales no descartables para los componentes testimoniales. Strength modest, no substantial.",
+      "rationaleEn": "The radar correlation at Pease AFB at the documented time rules out confusion with a bright planet, star or satellite. However, ball lightning, autosuggestion under prolonged fatigue and stress-induced dreams remain partial explanations that cannot be ruled out for the testimonial components. Modest strength, not substantial."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Testimonios convergentes pero no idénticos bajo hipnosis clínica conducida independientemente con cada uno por el Dr. Benjamin Simon — psiquiatra con credenciales académicas plenas, especialista en hipnosis terapéutica. Convergencia + correlación de radar independiente USAF Pease AFB apuntan a un sustrato real. CAVEAT: el Dr. Simon mismo, autor principal de la metodología, concluyó profesionalmente que las memorias eran fantasías compartidas, no eventos reales. Esa opinión de la fuente primaria limita la strength a modest. La hipótesis 'entidades no humanas' suma, pero con caveat académico explícito.",
+      "rationaleEn": "Convergent but non-identical testimonies under clinical hypnosis conducted independently with each by Dr. Benjamin Simon — psychiatrist with full academic credentials, specialist in therapeutic hypnosis. Convergence + independent USAF Pease AFB radar correlation point to a real substrate. CAVEAT: Dr. Simon himself, the lead author of the methodology, professionally concluded that the memories were shared fantasies, not real events. That primary-source opinion limits the strength to modest. The 'non-human entities' hypothesis adds pressure, but with explicit academic caveat."
+    }
+  ],
+  "whatHappened": "La noche del 19 al 20 de septiembre de 1961, Barney Hill (39, trabajador postal, afroamericano) y su esposa Betty Hill (42, trabajadora social, miembro activa de la NAACP) regresaban en automóvil de un viaje a Niagara Falls y Montreal. Cerca de Lancaster, New Hampshire, observaron una luz brillante en el cielo que parecía seguir el vehículo. Barney detuvo el auto, observó con binoculares y reportaría posteriormente haber visto un objeto discoidal con 'ocupantes' visibles a través de ventanas. Continuaron el viaje hacia su casa en Portsmouth, NH, pero arribaron con un retraso inexplicable de aproximadamente dos horas — el conocido 'missing time'.\n\nEsa misma noche, la estación de radar de la base USAF Pease AFB registró un objeto no identificado en el área a la misma hora. La correlación está documentada en archivos del Project Blue Book (posteriormente desclasificados de forma parcial). En los meses siguientes Betty desarrolló sueños recurrentes con narrativa detallada.\n\nEntre diciembre de 1963 y junio de 1964, ambos se sometieron a sesiones formales de hipnosis clínica con el Dr. Benjamin Simon, psiquiatra de Boston con credenciales académicas plenas y especialista en hipnosis terapéutica. Las sesiones fueron conducidas de forma independiente con cada uno y produjeron narrativas convergentes en estructura pero no idénticas en detalle. El Dr. Simon concluyó profesionalmente que las 'memorias' recuperadas eran fantasías compartidas, no eventos reales — esa opinión médica forma parte esencial del expediente del caso. El libro 'The Interrupted Journey' (1966) de John G. Fuller, basado en las transcripciones clínicas, fue best-seller y nominado al Pulitzer; es uno de los primeros documentos del marco 'abducción' en la cultura estadounidense.",
+  "whatHappened_en": "On the night of September 19-20, 1961, Barney Hill (39, postal worker, African American) and his wife Betty Hill (42, social worker, active NAACP member) were driving back from a trip to Niagara Falls and Montreal. Near Lancaster, New Hampshire, they observed a bright light in the sky that seemed to follow the vehicle. Barney stopped the car, observed with binoculars and would later report seeing a disc-shaped object with 'occupants' visible through windows. They continued home to Portsmouth, NH, but arrived with an unexplained delay of about two hours — the well-known 'missing time'.\n\nThat same night, the USAF Pease AFB radar station registered an unidentified object in the area at the same time. The correlation is documented in Project Blue Book files (later partially declassified). In the following months Betty developed recurring dreams with detailed narrative.\n\nBetween December 1963 and June 1964, both underwent formal clinical-hypnosis sessions with Dr. Benjamin Simon, a Boston psychiatrist with full academic credentials and a specialist in therapeutic hypnosis. The sessions were conducted independently with each and produced narratives convergent in structure but not identical in detail. Dr. Simon professionally concluded that the recovered 'memories' were shared fantasies, not real events — that medical opinion is an essential part of the case file. The 1966 book 'The Interrupted Journey' by John G. Fuller, based on the clinical transcripts, was a bestseller and a Pulitzer nominee; it is one of the first documents of the 'abduction' frame in US culture.",
+  "whyMatters": "Primer caso de 'abducción' documentado con (a) correlación de radar oficial USAF Pease AFB en el Project Blue Book, (b) tratamiento psiquiátrico formal por un médico de credenciales académicas plenas con transcripciones clínicas preservadas, (c) opinión profesional explícita de la fuente primaria — el propio Dr. Simon — de que las memorias eran fantasías, no eventos reales. Esa opinión médica es parte de la evidencia y debe pesar a favor de las hipótesis no-NHI en la calibración. La inclusión en el corpus es metodológicamente justificada (radar + record clínico formal) pero no es endorso de la lectura literal de captura.",
+  "whyMatters_en": "The first documented 'abduction' case with (a) official USAF Pease AFB radar correlation in Project Blue Book, (b) formal psychiatric treatment by a doctor with full academic credentials and preserved clinical transcripts, (c) explicit professional opinion from the primary source — Dr. Simon himself — that the memories were fantasies, not real events. That medical opinion is part of the evidence and must weigh in favor of non-NHI hypotheses in calibration. Inclusion in the corpus is methodologically justified (radar + formal clinical record) but is not an endorsement of the literal capture reading.",
+  "evidence": [
+    "Project Blue Book Case File: correlación de radar USAF Pease AFB en la noche del 19-20 sept 1961 (parcialmente desclasificado)",
+    "Transcripciones clínicas Dr. Benjamin Simon (1963-1964): records psiquiátricos formales del proceso de hipnosis con ambos individualmente",
+    "Fuller, John G. 'The Interrupted Journey' (1966): book primario basado en las transcripciones, nominado al Pulitzer",
+    "Marjorie Fish star-map analysis (1968): correspondencia disputada entre dibujos de Betty Hill y el sistema Zeta Reticuli",
+    "Opinión profesional Dr. Benjamin Simon: 'memorias = fantasías compartidas, no eventos reales' — conclusión del clínico responsable"
+  ],
+  "sources": [
+    {
+      "name": "Fuller, John G. 'The Interrupted Journey' (1966)",
+      "note": "Reconstrucción basada en transcripciones clínicas Dr. Simon."
+    },
+    {
+      "name": "USAF Project Blue Book Case File (declassified portions)",
+      "note": "Correlación de radar Pease AFB."
+    },
+    {
+      "name": "Friedman, S. & Marden, K. 'Captured! The Betty and Barney Hill UFO Experience' (2007)",
+      "note": "Re-análisis del caso con evidencia adicional declassified."
+    },
+    {
+      "name": "Simon, Benjamin. Transcripciones clínicas (1963-1964)",
+      "note": "Records psiquiátricos formales del proceso de hipnosis. Conclusión profesional Simon: fantasías compartidas."
+    }
+  ]
+}
