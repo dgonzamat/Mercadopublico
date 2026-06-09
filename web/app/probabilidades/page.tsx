@@ -88,7 +88,7 @@ export default function ProbabilidadesPage() {
                 en las mismas palabras que usan los analistas de inteligencia
                 (
                 <a
-                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  href="https://irp.fas.org/dni/icd/icd-203.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent hover:underline"
@@ -110,7 +110,7 @@ export default function ProbabilidadesPage() {
                 the same words intelligence analysts use
                 (
                 <a
-                  href="https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf"
+                  href="https://irp.fas.org/dni/icd/icd-203.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent hover:underline"

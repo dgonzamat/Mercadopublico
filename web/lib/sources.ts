@@ -243,7 +243,7 @@ export function getAllSources(): AggregatedSource[] {
   add(
     {
       name: "ICD-203 Analytic Standards",
-      url: "https://www.dni.gov/files/documents/ICD/ICD%20203%20Analytic%20Standards.pdf",
+      url: "https://irp.fas.org/dni/icd/icd-203.pdf",
       note: "Intelligence Community Directive 2007 — calibration standard for analytical judgment",
     },
     { label: "Metodología", href: "/about" },
