@@ -23,7 +23,7 @@ web/
     cases/              # listado + detalle [slug]
     probabilidades/     # transparencia del juicio ICD-203
     atlas/              # Leaflet map (client)
-    patterns/           # 18 patrones recurrentes
+    patterns/           # 19 patrones recurrentes
     researchers/        # ecosistema disclosure (5 secciones)
     frameworks/         # 11 frameworks teóricos comparados
     about/, resumen/    # metodología + 10-min summary

@@ -142,11 +142,11 @@ const EDITORIAL_RANGES_OK = new Set([
   // Heterogeneity override
   "95",
   // Whole-number priors (must equal a hypothesis prior to pass)
-  "88", "70", "60", "28", "30", "22", "6",
+  "88", "70", "28", "30", "22", "6",
   // Effective-value cites in about/page.tsx Ch.4 under the log-odds model:
   // programas-clasificados ≈ 96, fenómeno natural ≈ 44, tecnologia-adversaria
-  // ≈ 63, ingenieria-inversa ≈ 31, entidades-no-humanas ≈ 51.
-  "96", "44", "63", "31", "51",
+  // ≈ 89, ingenieria-inversa ≈ 31, entidades-no-humanas ≈ 52.
+  "96", "44", "89", "31", "52",
 ]);
 
 /**

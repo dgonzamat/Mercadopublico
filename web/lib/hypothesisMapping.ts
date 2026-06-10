@@ -32,6 +32,7 @@ export const PATTERN_TO_HYPOTHESIS: Record<string, string> = {
   "8p": "interdimensional", // crop circles peer-reviewed → física anómala
   "8q": "programas-clasificados", // ecosystem disclosure → presión sobre el estado
   "8r": "programas-clasificados", // leaks/WikiLeaks → autenticación cruzada del cover-up
+  "8s": "tecnologia-adversaria", // vigilancia aérea de otro Estado → plataformas sin atribución inmediata
 };
 
 /**
