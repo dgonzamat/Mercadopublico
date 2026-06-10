@@ -1,0 +1,87 @@
+{
+  "id": "setka-ussr-1978",
+  "num": 146,
+  "name": "Programa SETKA · investigación estatal soviética de UAP (1978–1991)",
+  "name_en": "SETKA Program · Soviet state UAP investigation (1978–1991)",
+  "year_start": 1978,
+  "year_end": 1991,
+  "country": "SU",
+  "country_name": "Unión Soviética",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "place": "Moscú · Academia de Ciencias de la URSS + Ministerio de Defensa"
+  },
+  "tier": "S",
+  "probability": 90,
+  "summary": "Programa oficial soviético de investigación de fenómenos aéreos anómalos, establecido en octubre de 1978 tras la ola de avistamientos 1977–78 (en particular Petrozavodsk). Operó en dos brazos paralelos: SETKA-AN dentro de la Academia de Ciencias y SETKA-MO dentro del Ministerio de Defensa, ordenado por la Comisión Militar-Industrial. El Instituto IZMIRAN de magnetismo terrestre y propagación de radio lideró la coordinación científica. Durante trece años (1978–1990/91) una orden permanente exigió a cada militar soviético reportar por escrito cualquier fenómeno anómalo — se recopilaron aproximadamente tres mil reportes. Es el paralelo institucional casi exacto de Project Blue Book, ejecutado fuera de Occidente y simétrico cronológicamente con el ciclo AAWSAP que vendría tres décadas después en EE.UU.",
+  "summary_en": "Official Soviet program for investigating anomalous aerial phenomena, established in October 1978 following the 1977–78 sighting wave (particularly Petrozavodsk). It operated in two parallel branches: SETKA-AN within the Academy of Sciences and SETKA-MO within the Ministry of Defense, ordered by the Military-Industrial Commission. The IZMIRAN Institute for terrestrial magnetism and radio-wave propagation led the scientific coordination. For thirteen years (1978–1990/91) a standing order required every Soviet serviceman to report any anomalous phenomenon in writing — approximately three thousand reports were collected. It is the near-exact institutional parallel of Project Blue Book, executed outside the West and chronologically symmetric with the AAWSAP cycle that would come three decades later in the U.S.",
+  "patterns": [
+    "8m",
+    "8n",
+    "8q"
+  ],
+  "category": "document",
+  "whatHappened": "La ola soviética de avistamientos UAP de 1977–78 alcanzó intensidad sin precedentes con el incidente Petrozavodsk del 20 de septiembre de 1977 (ver caso correspondiente del corpus), que TASS confirmó oficialmente y disparó presión institucional simultánea sobre la Academia de Ciencias y el Ministerio de Defensa. El 18 de octubre de 1978, una reunión en la Academia de Ciencias de la URSS formalizó la respuesta estatal: un programa coordinado de investigación de fenómenos aéreos anómalos, con dos brazos paralelos.\n\nSETKA-AN (Setka — 'malla' o 'red' en ruso — Akademia Nauk) funcionó dentro de la Academia de Ciencias con el Instituto IZMIRAN (Institut Zemnogo Magnetizma, Ionosfery i Rasprostraneniya Radiovoln — Instituto de Magnetismo Terrestre, Ionosfera y Propagación de Ondas de Radio) como coordinador científico. SETKA-MO (Ministerstva Oboroni) corrió en paralelo dentro del Ministerio de Defensa, ordenado por la Comisión Militar-Industrial (VPK) — la misma estructura que coordinaba el desarrollo armamentístico soviético clasificado. Las dos ramas se coordinaron pero mantuvieron canales de reporte separados.\n\nEl mandato operativo más distintivo fue una orden permanente del Ministerio de Defensa: cada miembro del personal militar soviético tenía obligación de reportar por escrito cualquier fenómeno aéreo anómalo observado en servicio. A lo largo de trece años (1978 hasta el colapso de la URSS en 1990–91), se acumularon aproximadamente tres mil reportes. El acceso a la documentación fue parcialmente abierto en los años 90 por el periodista estadounidense George Knapp y los investigadores rusos Paul Stonehill, Valery Uvarov y Vadim Chernobrov, y posteriormente analizado en literatura académica occidental (Skeptical Inquirer, Journal of Anomalous Science). El programa terminó con la disolución del Estado soviético; no tuvo sucesor formal en la Federación Rusa.",
+  "whatHappened_en": "The Soviet wave of UAP sightings in 1977–78 reached unprecedented intensity with the September 20, 1977 Petrozavodsk incident (see corresponding corpus case), which TASS officially confirmed and which triggered simultaneous institutional pressure on the Academy of Sciences and the Ministry of Defense. On October 18, 1978, a meeting at the USSR Academy of Sciences formalized the state response: a coordinated program to investigate anomalous aerial phenomena, with two parallel branches.\n\nSETKA-AN (Setka — 'mesh' or 'net' in Russian — Akademia Nauk) operated within the Academy of Sciences with the IZMIRAN Institute (Institut Zemnogo Magnetizma, Ionosfery i Rasprostraneniya Radiovoln — Institute of Terrestrial Magnetism, Ionosphere and Radio-Wave Propagation) as scientific coordinator. SETKA-MO (Ministerstva Oboroni) ran in parallel within the Ministry of Defense, ordered by the Military-Industrial Commission (VPK) — the same structure that coordinated classified Soviet weapons development. The two branches coordinated but maintained separate reporting channels.\n\nThe most distinctive operative mandate was a standing order from the Ministry of Defense: every Soviet military servicemember had an obligation to report in writing any anomalous aerial phenomenon observed in service. Over thirteen years (1978 until the collapse of the USSR in 1990–91), approximately three thousand reports accumulated. Access to the documentation was partially opened in the 1990s by U.S. journalist George Knapp and Russian researchers Paul Stonehill, Valery Uvarov and Vadim Chernobrov, and subsequently analyzed in Western academic literature (Skeptical Inquirer, Journal of Anomalous Science). The program ended with the dissolution of the Soviet state; it had no formal successor in the Russian Federation.",
+  "whyMatters": "Es la pieza institucional ancla del corpus para la Unión Soviética — equivalente estructural exacto de Project Blue Book (EE.UU.) y antecesor cronológico de Pine Gap como armadura institucional fuera del eje anglo. Su importancia es triple. Primero, demuestra empíricamente que el procesamiento estatal estructurado de UAP no fue exclusivo de los aliados occidentales: la URSS replicó casi sin variación la arquitectura Blue Book —mandato presidencial / del partido, brazo científico + brazo militar, reporte obligatorio, archivo centralizado— durante trece años. Segundo, los aproximadamente tres mil reportes acumulados son uno de los corpus nacionales de UAP más grandes del siglo XX, con un sesgo de selección institucional simétrico al Blue Book (operadores militares en servicio) que permite comparación cruzada entre los dos bloques de la Guerra Fría. Tercero, el cierre del programa con la disolución de la URSS y la ausencia de sucesor en la Federación Rusa documenta una asimetría institucional: el ciclo soviético terminó, el ciclo estadounidense post-AARO continúa. Cualquier corpus que no registre SETKA pierde la pieza estructural rusa más importante del siglo XX.",
+  "whyMatters_en": "It is the corpus's institutional anchor piece for the Soviet Union — exact structural equivalent of Project Blue Book (U.S.) and chronological precursor of Pine Gap as institutional armor outside the Anglo axis. Its importance is threefold. First, it empirically demonstrates that structured state processing of UAP was not exclusive to Western allies: the USSR replicated the Blue Book architecture almost without variation —presidential/party mandate, scientific arm + military arm, mandatory reporting, centralized archive— for thirteen years. Second, the approximately three thousand accumulated reports are one of the largest national UAP corpora of the 20th century, with an institutional selection bias symmetric to Blue Book's (military operators on duty) that enables cross-comparison between the two Cold War blocs. Third, the program's closure with the USSR's dissolution and the absence of a successor in the Russian Federation documents an institutional asymmetry: the Soviet cycle ended, the U.S. post-AARO cycle continues. Any corpus that does not register SETKA loses the most important structural Russian piece of the 20th century.",
+  "evidence": [
+    "Reunión del 18 de octubre de 1978 en la Academia de Ciencias de la URSS que formalizó el programa SETKA",
+    "SETKA-AN coordinado por el Instituto IZMIRAN (magnetismo terrestre, ionosfera, propagación de ondas de radio) dentro de la Academia de Ciencias",
+    "SETKA-MO ordenado por la Comisión Militar-Industrial (VPK) dentro del Ministerio de Defensa — misma estructura que coordinaba el desarrollo armamentístico clasificado",
+    "Orden permanente del Ministerio de Defensa: cada militar soviético en servicio debía reportar por escrito cualquier fenómeno aéreo anómalo observado",
+    "Trece años de operación continua (1978 → 1990/91), con cierre coincidente con la disolución del Estado soviético",
+    "Aproximadamente tres mil reportes acumulados — uno de los corpus nacionales UAP más grandes del siglo XX",
+    "Acceso parcial al archivo posterior a 1991 por George Knapp (KLAS-TV Las Vegas, periodista) + investigadores rusos Paul Stonehill, Valery Uvarov, Vadim Chernobrov",
+    "Análisis académico occidental posterior en Skeptical Inquirer, Journal of Anomalous Science y monografía de Stonehill & Mantle"
+  ],
+  "evidence_en": [
+    "October 18, 1978 meeting at the USSR Academy of Sciences that formalized the SETKA program",
+    "SETKA-AN coordinated by the IZMIRAN Institute (terrestrial magnetism, ionosphere, radio-wave propagation) within the Academy of Sciences",
+    "SETKA-MO ordered by the Military-Industrial Commission (VPK) within the Ministry of Defense — same structure coordinating classified weapons development",
+    "Standing order from the Ministry of Defense: every Soviet servicemember on duty had to report in writing any anomalous aerial phenomenon observed",
+    "Thirteen years of continuous operation (1978 → 1990/91), with closure coinciding with the dissolution of the Soviet state",
+    "Approximately three thousand reports accumulated — one of the largest national UAP corpora of the 20th century",
+    "Post-1991 partial archive access by George Knapp (KLAS-TV Las Vegas, journalist) + Russian researchers Paul Stonehill, Valery Uvarov, Vadim Chernobrov",
+    "Subsequent Western academic analysis in Skeptical Inquirer, Journal of Anomalous Science and the Stonehill & Mantle monograph"
+  ],
+  "sources": [
+    {
+      "name": "Stonehill, P. & Mantle, P. — 'SETKA: A Secret Soviet UFO Research Program' (UFOInfo)",
+      "url": "https://www.ufoinfo.com/news/setka.shtml",
+      "note": "Reconstrucción primaria del programa por dos investigadores con acceso al archivo post-1991."
+    },
+    {
+      "name": "Skeptical Inquirer — 'A History of State UFO Research in the USSR'",
+      "url": "https://skepticalinquirer.org/newsletter/history-of-state-ufo-research-in-the-ussr/",
+      "note": "Análisis académico occidental del programa."
+    },
+    {
+      "name": "Stonehill, P. & Mantle, P. — 'Setka — Dawn of a Soviet Secret Program' (Journal of Anomalous Science)",
+      "url": "https://www.helpwithdiy.com/setka-dawn-of-a-soviet-secret-program/",
+      "note": "Detalle del origen y la reunión fundacional de octubre 1978."
+    },
+    {
+      "name": "Knapp, G. — 'Russian UFO files' coverage (KLAS-TV Las Vegas, 1993)",
+      "note": "Acceso periodístico inicial al archivo soviético post-disolución."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "SETKA es el equivalente institucional casi exacto de Project Blue Book, ejecutado fuera del eje occidental durante trece años con mandato del Partido / Comisión Militar-Industrial, brazo científico (Academia de Ciencias + IZMIRAN) + brazo militar (Ministerio de Defensa), orden de reporte obligatorio y archivo centralizado de aproximadamente tres mil reportes. Pocas piezas del corpus combinan duración, escala documental y dualidad ciencia-defensa con este nivel de simetría con el aparato estadounidense. Substantial es la calibración honesta: la existencia del programa, su duración y su producción documental están institucionalmente confirmadas en el archivo accesible post-1991.",
+      "rationaleEn": "SETKA is the near-exact institutional equivalent of Project Blue Book, executed outside the Western axis for thirteen years with a Party / Military-Industrial Commission mandate, scientific arm (Academy of Sciences + IZMIRAN) + military arm (Ministry of Defense), mandatory reporting order and centralized archive of approximately three thousand reports. Few corpus pieces combine duration, documentary scale and science-defense duality with this level of symmetry with the U.S. apparatus. Substantial is the honest calibration: the program's existence, duration and documentary output are institutionally confirmed in the post-1991 accessible archive."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Que dos potencias rivales con cero coordinación operativa hayan dedicado trece años de aparato estatal centralizado al mismo tipo de fenómeno —Estados Unidos a Project Blue Book, la URSS a SETKA, en períodos parcialmente solapados— tensiona ligeramente la lectura fuerte 'todo es ruido cultural y misidentificación rural'. Si el universo de reportes fuera puramente ruido, dos burocracias rivales independientes coincidiendo en la inversión institucional sería estadísticamente raro. Minimal porque la lectura escéptica explica también la dualidad (ambos Estados gestionaban su propio ruido militar).",
+      "rationaleEn": "That two rival powers with zero operational coordination dedicated thirteen years of centralized state apparatus to the same kind of phenomenon —the United States with Project Blue Book, the USSR with SETKA, in partially overlapping periods— slightly tensions the strong reading 'it's all cultural noise and rural misidentification'. If the report universe were pure noise, two independent rival bureaucracies converging on the institutional investment would be statistically rare. Minimal because the skeptical reading also explains the duality (both states were managing their own military noise)."
+    }
+  ]
+}
