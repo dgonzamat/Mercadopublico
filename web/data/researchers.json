@@ -1611,10 +1611,16 @@
         "contribution_en": "Systematic search for vanishing sources in archival sky surveys"
       },
       {
-        "year": 2022,
-        "title": "Transitorios pre-Sputnik",
-        "contribution": "Estudio de destellos en placas anteriores a los satélites humanos",
-        "contribution_en": "Study of flashes on plates predating human satellites"
+        "year": 2021,
+        "title": "Nine simultaneously occurring transients on April 12th 1950 (Scientific Reports)",
+        "contribution": "Nueve fuentes puntuales aparecen en media hora en una placa de Palomar de 1950 y desaparecen en placas previas, posteriores y en surveys CCD modernos. Paper revisado por pares en Nature Scientific Reports — primera evidencia documentada de transitorios pre-Sputnik anómalos.",
+        "contribution_en": "Nine point sources appear within half an hour on a 1950 Palomar plate and are absent on prior, later and modern CCD surveys. Peer-reviewed paper in Nature Scientific Reports — first documented evidence of anomalous pre-Sputnik transients."
+      },
+      {
+        "year": 2025,
+        "title": "POSS-I transients ↔ nuclear testing + UAP reports (Scientific Reports)",
+        "contribution": "Con Bruehl: dataset de 2,718 días (1949–1957) muestra que los transitorios pre-Sputnik son 45% más probables ±1 día de un test nuclear (p=0.008) y que por cada UAP report adicional en el día hay 8.5% más transitorios (p=0.015). Es la correlación estadística peer-reviewed más fuerte entre fenómeno UAP, actividad nuclear y registros astronómicos.",
+        "contribution_en": "With Bruehl: dataset of 2,718 days (1949–1957) shows pre-Sputnik transients are 45% more likely within ±1 day of a nuclear test (p=0.008) and that each additional same-day UAP report associates with 8.5% more transients (p=0.015). It is the strongest peer-reviewed statistical correlation between UAP phenomenon, nuclear activity and astronomical records."
       }
     ],
     "section_label_en": "Scientific researchers",
@@ -1622,9 +1628,21 @@
     "bio_short_en": "An astrophysicist who leads VASCO (Vanishing & Appearing Sources during a Century of Observations), a project comparing photographic sky plates across a century to find objects that appeared or disappeared. Her most provocative line analyzes transients on plates predating 1957 —before any human satellite existed— proposing that some points of light could be reflections from objects in orbit, a testable hypothesis. She represents the rigorous observational approach: looking for signals in archival data, not in testimony.",
     "sources": [
       {
-        "name": "B. Villarroel et al., VASCO project / 'Exploring nine simultaneously occurring transients on April 12th 1950'",
-        "note": "Estudio de transitorios pre-Sputnik.",
-        "note_en": "Study of pre-Sputnik transients."
+        "name": "Villarroel, B. et al. — 'Exploring nine simultaneously occurring transients on April 12th 1950' (Scientific Reports 11, 12794, 2021)",
+        "url": "https://www.nature.com/articles/s41598-021-92162-7",
+        "note": "Paper revisado por pares en Nature Scientific Reports. DOI 10.1038/s41598-021-92162-7.",
+        "note_en": "Peer-reviewed paper in Nature Scientific Reports. DOI 10.1038/s41598-021-92162-7."
+      },
+      {
+        "name": "Bruehl, R. & Villarroel, B. — 'Transients in the Palomar Observatory Sky Survey (POSS-I) may be associated with nuclear testing and reports of unidentified anomalous phenomena' (Scientific Reports, 2025)",
+        "url": "https://www.nature.com/articles/s41598-025-21620-3",
+        "note": "Correlación estadística pre-Sputnik con tests nucleares (p=0.008) y reportes UAP (p=0.015).",
+        "note_en": "Pre-Sputnik statistical correlation with nuclear tests (p=0.008) and UAP reports (p=0.015)."
+      },
+      {
+        "name": "VASCO project — Vanishing & Appearing Sources during a Century of Observations",
+        "url": "https://vladimi9.wixsite.com/vasco-citizen-science",
+        "note": "Sitio del proyecto liderado por Villarroel."
       }
     ]
   },

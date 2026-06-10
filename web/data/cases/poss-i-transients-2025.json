@@ -1,0 +1,101 @@
+{
+  "id": "poss-i-transients-2025",
+  "num": 139,
+  "name": "POSS-I Transients ↔ tests nucleares + UAP (Bruehl & Villarroel)",
+  "name_en": "POSS-I Transients ↔ nuclear tests + UAP (Bruehl & Villarroel)",
+  "year_start": 2025,
+  "country": "SE",
+  "country_name": "Suecia",
+  "flag": "🇸🇪",
+  "location": {
+    "lat": 33.3563,
+    "lng": -116.8650,
+    "place": "Palomar Observatory, California (data set); Stockholm University / IAC Canarias (análisis)"
+  },
+  "tier": "S",
+  "probability": 60,
+  "summary": "Paper revisado por pares en Nature Scientific Reports (oct 2025) por Bruehl y Villarroel. Dataset de 2,718 días (19 nov 1949 a 28 abr 1957, completamente pre-Sputnik) con transitorios identificados en placas del Palomar Observatory Sky Survey. Dos asociaciones estadísticamente significativas: los transitorios son 45% más probables ±1 día de un test nuclear (p=0.008) y por cada UAP report adicional el mismo día hay 8.5% más transitorios identificados (p=0.015). Es la correlación peer-reviewed más fuerte del corpus entre actividad nuclear, registros UAP de la época y observaciones astronómicas independientes.",
+  "summary_en": "Peer-reviewed paper in Nature Scientific Reports (Oct 2025) by Bruehl and Villarroel. Dataset of 2,718 days (Nov 19, 1949 to Apr 28, 1957, fully pre-Sputnik) with transients identified on Palomar Observatory Sky Survey plates. Two statistically significant associations: transients are 45% more likely within ±1 day of a nuclear test (p=0.008) and for each additional same-day UAP report there are 8.5% more transients identified (p=0.015). It is the strongest peer-reviewed correlation in the corpus between nuclear activity, UAP records of the era and independent astronomical observations.",
+  "patterns": [
+    "8g",
+    "8a"
+  ],
+  "category": "document",
+  "whatHappened": "El POSS-I (Palomar Observatory Sky Survey, primera campaña) es el primer mapeo fotográfico sistemático del cielo nocturno del hemisferio norte, ejecutado por el Mount Palomar Observatory entre 1949 y 1958 con el telescopio Schmidt de 48 pulgadas. La campaña capturó miles de placas de archivo que hoy permiten comparación pixel-a-pixel con surveys CCD modernos.\n\nDesde 2019, la astrofísica Beatriz Villarroel (Nordita / Stockholm University / IAC Canarias) lidera el proyecto VASCO (Vanishing & Appearing Sources during a Century of Observations) sobre estas placas. En 2021 publicó en Nature Scientific Reports el primer paper identificando nueve fuentes puntuales que aparecen en media hora en una placa del 12 de abril de 1950 y desaparecen en placas anteriores, posteriores y en surveys CCD modernos varios magnitudes más profundos. La pregunta crítica: ningún satélite humano podía generar esos puntos —Sputnik se lanzó en octubre de 1957, 7 años después.\n\nEn octubre de 2025, Bruehl y Villarroel publicaron en Nature Scientific Reports el paper que el corpus registra como caso ancla. Construyeron un dataset diario de 2,718 días (19 nov 1949 a 28 abr 1957, completamente pre-Sputnik) cruzando tres fuentes: transitorios identificados en placas POSS-I, registros públicos de detonaciones nucleares atmosféricas (Trinity follow-ups, Operation Greenhouse, Operation Buster-Jangle, etc.) y reportes UAP independientes de la época (Project Blue Book, archivos militares desclasificados). El análisis estadístico mostró dos asociaciones significativas: los transitorios son 45% más probables en una ventana de ±1 día de un test nuclear (p=0.008), y por cada UAP report independiente adicional en el día hay un 8.5% más transitorios identificados (p=0.015). El paper es cuidadosamente conservador en su interpretación: documenta la correlación, no afirma causalidad, y enumera explícitamente hipótesis competidoras (contaminación de placas, sesgo de búsqueda, fenómeno atmosférico inducido por radiación, artefactos en órbita anteriores a 1957).",
+  "whatHappened_en": "POSS-I (Palomar Observatory Sky Survey, first campaign) is the first systematic photographic mapping of the northern hemisphere night sky, conducted by the Mount Palomar Observatory between 1949 and 1958 with the 48-inch Schmidt telescope. The campaign captured thousands of archival plates that today enable pixel-by-pixel comparison with modern CCD surveys.\n\nSince 2019, astrophysicist Beatriz Villarroel (Nordita / Stockholm University / IAC Canarias) leads the VASCO project (Vanishing & Appearing Sources during a Century of Observations) on these plates. In 2021 she published in Nature Scientific Reports the first paper identifying nine point sources that appear within half an hour on an April 12, 1950 plate and are absent on prior, later and modern CCD surveys several magnitudes deeper. The critical question: no human satellite could generate those points —Sputnik launched in October 1957, 7 years later.\n\nIn October 2025, Bruehl and Villarroel published in Nature Scientific Reports the paper the corpus registers as the anchor case. They built a daily dataset of 2,718 days (Nov 19, 1949 to Apr 28, 1957, fully pre-Sputnik) crossing three sources: transients identified in POSS-I plates, public records of atmospheric nuclear detonations (Trinity follow-ups, Operation Greenhouse, Operation Buster-Jangle, etc.) and independent UAP reports of the era (Project Blue Book, declassified military archives). The statistical analysis showed two significant associations: transients are 45% more likely within a ±1 day window of a nuclear test (p=0.008), and for each additional independent UAP report on the same day there is an 8.5% increase in identified transients (p=0.015). The paper is carefully conservative in its interpretation: it documents correlation, does not assert causation, and explicitly enumerates competing hypotheses (plate contamination, search bias, radiation-induced atmospheric phenomenon, orbital artifacts predating 1957).",
+  "whyMatters": "Es el caso ancla del corpus para evidencia científica rigurosa peer-reviewed sobre el fenómeno UAP. Estructuralmente comparable al Battelle Special Report 1952 (estadística sobre Blue Book) y al Informe Rommel 1980 (federal, escéptico, riguroso): paper publicado, dataset reproducible, metodología auditable, intervalos de confianza explícitos. Su importancia es triple. Primero, es pre-Sputnik: elimina la hipótesis 'satélites humanos' que cierra rápidamente las correlaciones post-1957. Segundo, articula la línea histórica nuclear–UAP (Malmstrom 1967, Loring 1975, Hessdalen) con un dato cuantitativo independiente de testimonio militar. Tercero, viene de astronomía profesional, no de UAP-research: la corroboración sería más fuerte por venir de un dominio metodológico distinto. Sus límites también son nítidos: correlación no es causalidad, el size del efecto es modesto, las hipótesis competidoras (contaminación de placas, sesgo de búsqueda) están en la mesa. Tier S no por la fuerza de la conclusión, sino por la calidad del aparato evidencial: peer review en Nature SR, datos públicos, código y placas accesibles para replicación.",
+  "whyMatters_en": "It is the corpus's anchor case for rigorous peer-reviewed scientific evidence on the UAP phenomenon. Structurally comparable to the Battelle Special Report 1952 (Blue Book statistics) and the Rommel Report 1980 (federal, skeptical, rigorous): published paper, reproducible dataset, auditable methodology, explicit confidence intervals. Its importance is threefold. First, it is pre-Sputnik: it removes the 'human satellite' hypothesis that quickly closes post-1957 correlations. Second, it articulates the historical nuclear–UAP line (Malmstrom 1967, Loring 1975, Hessdalen) with a quantitative datum independent of military testimony. Third, it comes from professional astronomy, not UAP research: corroboration would be stronger coming from a different methodological domain. Its limits are sharp too: correlation is not causation, the effect size is modest, competing hypotheses (plate contamination, search bias) are on the table. Tier S not for the strength of the conclusion, but for the quality of the evidential apparatus: peer review in Nature SR, public data, code and plates accessible for replication.",
+  "evidence": [
+    "Paper Bruehl & Villarroel — 'Transients in the Palomar Observatory Sky Survey (POSS-I) may be associated with nuclear testing and reports of unidentified anomalous phenomena' — Nature Scientific Reports (oct 2025), DOI 10.1038/s41598-025-21620-3",
+    "Dataset diario de 2,718 días (19 nov 1949 – 28 abr 1957), completamente pre-Sputnik (lanzado oct 1957)",
+    "Asociación 1: transitorios 45% más probables ±1 día de test nuclear (p=0.008)",
+    "Asociación 2: 8.5% incremento de transitorios por cada UAP report adicional el mismo día (p=0.015)",
+    "Paper anterior Villarroel et al. 2021 (Scientific Reports 11, 12794) que identifica los 9 transitorios simultáneos del 12 abr 1950, base metodológica del paper 2025",
+    "Cobertura científica independiente: phys.org (oct 2025), Newsweek (2025), Sciety Labs (preprint pre-publicación)",
+    "Réplica independiente publicada en arXiv (2604.00056) corroborando correlación nuclear-transient con metodología distinta + Earth Shadow Deficit como check de selection bias",
+    "Sitio web público del proyecto VASCO con datos, código y procedimiento de citizen science para validación cruzada"
+  ],
+  "evidence_en": [
+    "Bruehl & Villarroel paper — 'Transients in the Palomar Observatory Sky Survey (POSS-I) may be associated with nuclear testing and reports of unidentified anomalous phenomena' — Nature Scientific Reports (Oct 2025), DOI 10.1038/s41598-025-21620-3",
+    "Daily dataset of 2,718 days (Nov 19, 1949 – Apr 28, 1957), fully pre-Sputnik (launched Oct 1957)",
+    "Association 1: transients 45% more likely within ±1 day of a nuclear test (p=0.008)",
+    "Association 2: 8.5% increase in transients per additional same-day UAP report (p=0.015)",
+    "Previous Villarroel et al. 2021 paper (Scientific Reports 11, 12794) identifying the 9 simultaneous transients of Apr 12, 1950, methodological basis of the 2025 paper",
+    "Independent scientific coverage: phys.org (Oct 2025), Newsweek (2025), Sciety Labs (pre-publication preprint)",
+    "Independent replication published on arXiv (2604.00056) corroborating nuclear-transient correlation with a different methodology + Earth Shadow Deficit as a selection-bias check",
+    "Public VASCO project website with data, code and citizen-science workflow for cross-validation"
+  ],
+  "sources": [
+    {
+      "name": "Bruehl, R. & Villarroel, B. — 'Transients in the Palomar Observatory Sky Survey (POSS-I) may be associated with nuclear testing and reports of unidentified anomalous phenomena' (Scientific Reports, 2025)",
+      "url": "https://www.nature.com/articles/s41598-025-21620-3",
+      "note": "Paper ancla. Nature Scientific Reports, octubre 2025.",
+      "note_en": "Anchor paper. Nature Scientific Reports, October 2025."
+    },
+    {
+      "name": "Villarroel, B. et al. — 'Exploring nine simultaneously occurring transients on April 12th 1950' (Scientific Reports 11, 12794, 2021)",
+      "url": "https://www.nature.com/articles/s41598-021-92162-7",
+      "note": "Base metodológica. DOI 10.1038/s41598-021-92162-7.",
+      "note_en": "Methodological basis. DOI 10.1038/s41598-021-92162-7."
+    },
+    {
+      "name": "Independent Replication of Nuclear Test-Transient Correlations and Earth Shadow Deficit in POSS-I Photographic Plates (arXiv 2604.00056)",
+      "url": "https://arxiv.org/pdf/2604.00056",
+      "note": "Replicación independiente con metodología distinta + Earth Shadow Deficit como control de selection bias.",
+      "note_en": "Independent replication with a different methodology + Earth Shadow Deficit as selection-bias control."
+    },
+    {
+      "name": "phys.org — 'Mysterious transient objects in sky linked to nuclear testing and unidentified anomalous phenomena' (oct 2025)",
+      "url": "https://phys.org/news/2025-10-mysterious-transient-sky-linked-nuclear.html",
+      "note": "Cobertura científica del paper en prensa especializada."
+    },
+    {
+      "name": "VASCO project — Vanishing & Appearing Sources during a Century of Observations",
+      "url": "https://vladimi9.wixsite.com/vasco-citizen-science",
+      "note": "Proyecto liderado por Villarroel. Datos públicos, código abierto, citizen science."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La correlación estadística entre transitorios POSS-I y tests nucleares estadounidenses (p=0.008, 45% más probable ±1 día) en el periodo 1949–1957 es compatible con varias hipótesis no exclusivas: artefactos en órbita pre-Sputnik (programa militar muy temprano, contradice cronología oficial), reflejos en partículas de polvo radiactivo de alta atmósfera, o programa de observación de cielo militar concurrente. Cualquiera de las tres tensiona la cronología pública de la era espacial estadounidense. Suma como minimal soporte para la hipótesis de programas clasificados porque la cronología oficial (Sputnik oct 1957 como primer satélite) tendría que ajustarse; pero el paper mismo no afirma esa lectura — sólo documenta la correlación. Indicio compatible, no prueba.",
+      "rationaleEn": "The statistical correlation between POSS-I transients and U.S. nuclear tests (p=0.008, 45% more likely within ±1 day) in the 1949–1957 period is compatible with several non-exclusive hypotheses: pre-Sputnik orbital artifacts (very early military program, contradicting official chronology), reflections off radioactive dust particles in the high atmosphere, or a concurrent military sky-observation program. Any of the three tensions the public chronology of the U.S. space era. It counts as minimal support for the classified-program hypothesis because the official chronology (Sputnik Oct 1957 as the first satellite) would need to be adjusted; but the paper itself does not assert that reading — it only documents the correlation. Compatible indication, not proof."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La correlación con tests nucleares es físicamente consistente con efectos atmosféricos naturales inducidos por radiación: ionización de partículas, plasmas transitorios sobre la columna de aire, reflexión de luz solar en polvo radiactivo en altitudes altas. Esta es una de las hipótesis competidoras que el propio paper enumera. Como mecánicamente plausible y no descartada, suma como minimal supports para la hipótesis natural — sin probarla, la mantiene viva como explicación competidora del mismo dato.",
+      "rationaleEn": "The correlation with nuclear tests is physically consistent with naturally-induced radiation atmospheric effects: particle ionization, transient plasmas above the air column, sunlight reflection off radioactive dust at high altitudes. This is one of the competing hypotheses the paper itself enumerates. As mechanically plausible and not ruled out, it counts as minimal support for the natural hypothesis — without proving it, it keeps it alive as a competing explanation of the same datum."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La correlación con UAP reports independientes (p=0.015) acopla observaciones astronómicas profesionales con testimonio militar/civil de la época — pero la asociación es indirecta y el efecto modesto. Suma minimal porque vincula dos modalidades evidenciales distintas (placa fotográfica + reporte humano) sin requerir hipótesis adicional. Lo que NO suma: no discrimina entre 'objetos físicos pre-Sputnik' y 'fenómeno atmosférico observado por testigos humanos a la vez que registrado por placas'. La indecidibilidad la mantiene en minimal.",
+      "rationaleEn": "The correlation with independent UAP reports (p=0.015) couples professional astronomical observations with military/civilian testimony of the era — but the association is indirect and the effect modest. It counts as minimal because it links two distinct evidential modalities (photographic plate + human report) without requiring an additional hypothesis. What it does not add: it does not discriminate between 'pre-Sputnik physical objects' and 'atmospheric phenomenon observed by human witnesses while simultaneously recorded by plates'. That undecidability keeps it at minimal."
+    }
+  ]
+}
