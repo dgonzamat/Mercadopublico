@@ -414,6 +414,7 @@ const SPANGLISH_PROPER_OK = [
   "Joint Defence Facility",      // institución
   "Eyre Highway",                // topónimo (carretera)
   "University of Queensland",    // institución
+  "Department of War",           // institución US (DoD renombrado 2026)
 ];
 
 function stripQuotedAndProper(s) {

@@ -1,6 +1,6 @@
 {
   "baseline": true,
-  "timestamp": "2026-06-10T22:15:20.829Z",
+  "timestamp": "2026-06-10T23:18:27.832Z",
   "score": 13,
   "components": {
     "auditErrors": 0,
@@ -40,11 +40,11 @@
       "id": "programas-clasificados",
       "kind": "primitive",
       "prior": 88,
-      "effective": 96.4,
+      "effective": 96.5,
       "priorBand": "very-likely",
       "effBand": "almost-certain",
-      "drift": 8.4,
-      "coverage": 64
+      "drift": 8.5,
+      "coverage": 65
     },
     {
       "id": "tecnologia-adversaria",
