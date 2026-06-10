@@ -31,7 +31,7 @@ web/
   lib/
     data.ts             # carga cases / patterns / frameworks / researchers
     types.ts            # UAPCase, Hypothesis, EvidenceContribution, etc.
-    hypotheses.ts       # source-of-truth: 8 hipótesis con prior + prose
+    hypotheses.ts       # source-of-truth: 10 hipótesis con prior + prose
     hypothesisMapping.ts # log-odds Bayesian update + pressure
     icd203.ts           # bandas verbales DNI ICD-203
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx

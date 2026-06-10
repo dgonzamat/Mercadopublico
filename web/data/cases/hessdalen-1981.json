@@ -35,6 +35,22 @@
     "Optical spectra with lines inconsistent with standard plasma",
     "Forty years of continuous data preserved in university repositories"
   ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Es el caso ancla mundial para fenómeno natural raro no catalogado: 44 años de instrumentación continua (magnetómetros, CCD, radar, espectrómetros), publicaciones peer-reviewed (Teodorani, Strand), y una hipótesis natural activa físicamente plausible — plasma exótico estabilizado por la configuración geomagnética y mineral del valle. El fenómeno es recurrente, localizado y medible: exactamente la firma de un proceso natural no entendido, no de tecnología o intención. Substantial porque ningún otro caso del corpus tiene esta densidad instrumental a favor de la hipótesis natural.",
+      "rationaleEn": "It is the world anchor case for a rare uncatalogued natural phenomenon: 44 years of continuous instrumentation (magnetometers, CCD, radar, spectrometers), peer-reviewed publications (Teodorani, Strand), and a physically plausible active natural hypothesis — exotic plasma stabilized by the valley's geomagnetic and mineral configuration. The phenomenon is recurrent, localized and measurable: exactly the signature of a not-yet-understood natural process, not of technology or intent. Substantial because no other corpus case has this instrumental density favoring the natural hypothesis."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Cuatro décadas de monitoreo continuo sin registrar estructura, maniobra intencional, respuesta a estímulos ni firma de propulsión — las luces flotan, derivan y se desvanecen. Si el fenómeno tuviera componente intencional, 44 años de instrumentación lo habrían capturado. Minimal weakens: aplica solo al fenómeno de Hessdalen, no generaliza al resto del corpus.",
+      "rationaleEn": "Four decades of continuous monitoring without recording structure, intentional maneuvering, response to stimuli or propulsion signature — the lights hover, drift and fade. If the phenomenon had an intentional component, 44 years of instrumentation would have captured it. Minimal weakens: it applies only to the Hessdalen phenomenon, it does not generalize to the rest of the corpus."
+    }
+  ],
   "sources": [
     {
       "name": "Project Hessdalen — official site (Østfold University)",

@@ -35,6 +35,22 @@
     "Alternative analysis of Cantarell platform burners (Allende et al.)",
     "No concurrent visual detection alongside the FLIR detection — consistent with the platform-burners hypothesis"
   ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Es el caso de calibración escéptica instrumental del corpus: detección FLIR sin correlato visual, geografía compatible con los quemadores de las plataformas Cantarell, y condiciones de inversión atmosférica que producen exactamente la firma observada. La explicación de Allende es técnicamente plausible y nunca fue refutada. El caso enseña que divulgación institucional de alto nivel (un Secretario de Defensa) no implica naturaleza no convencional del evento subyacente.",
+      "rationaleEn": "It is the corpus's instrumental skeptical calibration case: FLIR detection without visual correlate, geography compatible with the Cantarell platform burners, and atmospheric inversion conditions producing exactly the observed signature. Allende's explanation is technically plausible and was never refuted. The case teaches that high-level institutional disclosure (a Defense Secretary) does not imply non-conventional nature of the underlying event."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "El caso debilita marginalmente la inferencia 'detección instrumental = objeto real': once objetos en FLIR sin detección visual concurrente resultaron probablemente artefactos térmicos de infraestructura petrolera. Es el contraejemplo metodológico que obliga a exigir multi-sensor (radar + IR + visual) antes de pesar un caso — estándar que los casos fuertes del corpus (Nimitz, Tehran) sí cumplen.",
+      "rationaleEn": "The case marginally weakens the inference 'instrumental detection = real object': eleven FLIR objects without concurrent visual detection turned out to be probable thermal artifacts of oil infrastructure. It is the methodological counterexample that forces the multi-sensor requirement (radar + IR + visual) before weighing a case — a standard the corpus's strong cases (Nimitz, Tehran) do meet."
+    }
+  ],
   "sources": [
     {
       "name": "SEDENA Mexico — communication officielle 2004",

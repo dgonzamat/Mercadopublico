@@ -35,6 +35,29 @@
     "GEPAN classification 'D' — unexplained after exhaustive investigation",
     "Scientific publication of Bounias' results in a peer-reviewed journal (1990)"
   ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "El análisis INRA de Bounias (publicado peer-reviewed, Phyton 1990) descartó explícitamente explicaciones convencionales: la compresión mecánica de un objeto pesado + trauma bioquímico foliar proporcional a la distancia de un punto central es incompatible con rayo, incendio, contaminación química o fenómeno meteorológico. GEPAN clasificó 'D' tras investigación exhaustiva. Es uno de los descartes naturales mejor documentados del corpus.",
+      "rationaleEn": "Bounias' INRA analysis (peer-reviewed, Phyton 1990) explicitly ruled out conventional explanations: mechanical compression from a heavy object + foliar biochemical trauma proportional to distance from a central point is incompatible with lightning, fire, chemical contamination or meteorological phenomena. GEPAN classified it 'D' after exhaustive investigation. One of the corpus's best-documented natural-explanation dismissals."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Las trazas físicas (compresión de objeto pesado + fuente energética puntual) son consistentes con un craft estructurado, pero no discriminan entre tecnología no humana y tecnología clasificada experimental — Francia 1981 es era de prototipos. El testimonio es de un solo testigo. Minimal: el caso prueba que ALGO físico aterrizó, no qué era.",
+      "rationaleEn": "The physical traces (heavy-object compression + point-source energy) are consistent with a structured craft, but do not discriminate between non-human technology and experimental classified technology — France 1981 is a prototype era. The testimony is from a single witness. Minimal: the case proves SOMETHING physical landed, not what it was."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La lectura alternativa simétrica: un prototipo experimental (francés o aliado) en vuelo de prueba explicaría el objeto ovoide, el aterrizaje breve y el ascenso silencioso. Ningún programa fue identificado en 45 años, lo que pesa en contra, pero la era y la geografía (sur de Francia, corredores de prueba) mantienen la hipótesis viva en minimal.",
+      "rationaleEn": "The symmetric alternative reading: an experimental prototype (French or allied) on a test flight would explain the ovoid object, brief landing and silent ascent. No program has been identified in 45 years, which weighs against, but the era and geography (southern France, test corridors) keep the hypothesis alive at minimal."
+    }
+  ],
   "sources": [
     {
       "name": "GEPAN/CNES — Note Technique 16 (1983)",
