@@ -123,8 +123,14 @@ Detalle completo en JSDoc de `lib/hypothesisMapping.ts` y `lib/hypotheses.ts`.
 
 ## Deuda pendiente · fotos de actores
 
-Estado (jun 2026): **20/81 actores tienen foto**; los 61 restantes usan el avatar de iniciales (fallback de `ResearcherAvatar`). No es un defecto de datos — el audit pasa 0/0 — sino cobertura incompleta.
+Estado (jun 2026, post-análisis): **22/81 actores tienen foto**. El techo real NO son los 59 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada: ~30-35/81.
 
-Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles** (typos, números, IDs de Flickr, sufijos "official portrait"), así que **hay que copiarlos de Commons, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
+Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles**, así que **hay que verificarlos, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
 
-Para completarlas hace falta resolver el filename exacto vía la API de Commons, que requiere `commons.wikimedia.org` en el allowlist de red del entorno (típicamente bloqueado). Con ese dominio habilitado, una sesión puede consultar la API, sacar los 61 filenames y poblar el lote verificado (`scripts/fetch-researcher-photos.sh` es el punto de partida). La foto la renderiza el navegador del usuario, no el build.
+**Ruta de resolución que funciona** (descubierta jun 2026): la API de Commons y Wikipedia siguen bloqueadas por allowlist (`Host not in allowlist` / 403), pero **WebSearch con `site:commons.wikimedia.org` sí funciona** como resolución indirecta. Protocolo: (1) búsqueda de descubrimiento por persona, (2) búsqueda de verificación con el filename exacto entre comillas, (3) solo commitear filenames corroborados por links literales `File:...` o metadata consistente entre búsquedas independientes.
+
+**Registro de búsqueda (jun 2026) — NO re-buscar**:
+- ✅ Verificados y aplicados: reid (`Harry Reid official portrait 2009.jpg`), gillibrand (`Kirsten Gillibrand, official portrait, 112th Congress.jpg`).
+- ❌ Confirmados SIN foto libre en Commons: Mack, McDonald, Sturrock, Sheehan, Salas, Nell, Gallaudet, Fravor, Graves. Puthoff tiene categoría pero sin retrato (solo una foto de equipo de laboratorio).
+- ❓ Categoría existe pero el filename del retrato no se resolvió vía search index: Ruppelt, Keyhoe. Candidatos si se habilita el allowlist algún día.
+- Sin buscar aún (tier media/baja): Nolan, Pasulka, Kean, Blumenthal, Fox, Pope, West, Velasco, De Brouwer, Villarroel, Knuth, Maccabee, y ~35 investigadores regionales con probabilidad baja.
