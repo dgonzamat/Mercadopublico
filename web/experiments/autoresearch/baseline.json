@@ -1,6 +1,6 @@
 {
   "baseline": true,
-  "timestamp": "2026-06-10T23:18:27.832Z",
+  "timestamp": "2026-06-10T23:31:29.637Z",
   "score": 13,
   "components": {
     "auditErrors": 0,
@@ -40,11 +40,11 @@
       "id": "programas-clasificados",
       "kind": "primitive",
       "prior": 88,
-      "effective": 96.5,
+      "effective": 96.7,
       "priorBand": "very-likely",
       "effBand": "almost-certain",
-      "drift": 8.5,
-      "coverage": 65
+      "drift": 8.7,
+      "coverage": 68
     },
     {
       "id": "tecnologia-adversaria",
@@ -70,11 +70,11 @@
       "id": "entidades-no-humanas",
       "kind": "primitive",
       "prior": 28,
-      "effective": 54,
+      "effective": 54.1,
       "priorBand": "unlikely",
       "effBand": "even-chance",
-      "drift": 26,
-      "coverage": 93
+      "drift": 26.1,
+      "coverage": 94
     },
     {
       "id": "interdimensional",
