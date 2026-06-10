@@ -9,7 +9,7 @@
   "flag": "🇨🇦",
   "location": {
     "lat": 45.42,
-    "lng": -75.70,
+    "lng": -75.7,
     "place": "Ottawa, Canadá (Department of Transport / Defence Research Board)"
   },
   "tier": "A",
@@ -17,7 +17,9 @@
   "probability": 55,
   "summary": "En diciembre de 1950, Transport Canada estableció Project Magnet, un programa oficial de estudio de OVNIs dirigido por el ingeniero de radio Wilbert B. Smith, con el objetivo de investigar el fenómeno y la posibilidad de aprovechar el geomagnetismo para propulsión. En abril de 1952 el gobierno creó además Project Second Storey, un comité paralelo del Defence Research Board. Magnet estuvo activo formalmente hasta 1954. Son dos de los programas estatales de UFO más tempranos del mundo; encuadre honesto: las conclusiones extraterrestres fueron interpretación personal de Smith, no postura oficial — el valor es la temprana institucionalización del tema en un gobierno del G7.",
   "summary_en": "In December 1950, Transport Canada established Project Magnet, an official UFO study program directed by radio engineer Wilbert B. Smith, aimed at investigating the phenomenon and the possibility of harnessing geomagnetism for propulsion. In April 1952 the government also created Project Second Storey, a parallel Defence Research Board committee. Magnet was formally active until 1954. These are among the world's earliest state UFO programs; honest framing: the extraterrestrial conclusions were Smith's personal interpretation, not official policy — the value is the early institutionalization of the subject in a G7 government.",
-  "patterns": ["8e"],
+  "patterns": [
+    "8e"
+  ],
   "category": "document",
   "whatHappened": "El 2 de diciembre de 1950, el Department of Transport (Transport Canada) aprobó formalmente Project Magnet, un programa de estudio de fenómenos aéreos no identificados bajo la dirección de Wilbert Brockhouse Smith, ingeniero senior de radio de la sección de Radiodifusión y Mediciones. El objetivo declarado era recolectar datos sobre OVNIs y aplicar lo aprendido a la ingeniería, en particular explorar si el campo magnético terrestre podía usarse como fuente de propulsión. En junio de 1952, Smith emitió un informe preliminar que sostenía que los OVNIs probablemente tenían origen inteligente y extraterrestre y que casi con certeza manipulaban el magnetismo para volar.\n\nEn paralelo, en abril de 1952, el gobierno canadiense estableció Project Second Storey, un comité del Defence Research Board encargado de evaluar los reportes de OVNIs, con Smith también involucrado. A diferencia de Magnet, Second Storey adoptó una postura escéptica: concluyó que los testimonios eran demasiado poco fiables para sostener conclusiones y recomendó no destinar recursos sostenidos.\n\nEl encuadre del corpus es equilibrado. Lo institucionalmente sólido y verificable es la existencia de dos programas estatales formales dedicados al fenómeno, en un país del G7, a comienzos de los años 50 —entre los más tempranos del mundo, contemporáneos de los primeros esfuerzos de la USAF—. Lo que NO debe sobrevenderse son las conclusiones: la tesis extraterrestre y magnética era la interpretación personal de Smith, no una postura oficial del gobierno canadiense; Magnet perdió el financiamiento estatal en 1954 (Smith lo continuó de forma informal hasta su muerte en 1962) y Second Storey fue explícitamente desestimatorio. El valor del caso es la temprana institucionalización —no una validación del fenómeno.",
   "whatHappened_en": "On December 2, 1950, the Department of Transport (Transport Canada) formally approved Project Magnet, a program to study unidentified aerial phenomena under the direction of Wilbert Brockhouse Smith, a senior radio engineer in the Broadcast and Measurements Section. The stated aim was to collect data on UFOs and apply what was learned to engineering, in particular to explore whether Earth's magnetic field could be used as a source of propulsion. In June 1952, Smith issued a preliminary report arguing that UFOs were probably of intelligent, extraterrestrial origin and almost certainly manipulated magnetism for flight.\n\nIn parallel, in April 1952, the Canadian government established Project Second Storey, a Defence Research Board committee tasked with assessing UFO reports, with Smith also involved. Unlike Magnet, Second Storey took a skeptical stance: it concluded that the testimonies were too unreliable to support conclusions and recommended against committing sustained resources.\n\nThe corpus framing is balanced. What is institutionally solid and verifiable is the existence of two formal state programs dedicated to the phenomenon, in a G7 country, in the early 1950s —among the earliest in the world, contemporaneous with the first USAF efforts. What should NOT be oversold are the conclusions: the extraterrestrial-magnetic thesis was Smith's personal interpretation, not official Canadian government policy; Magnet lost state funding in 1954 (Smith continued it informally until his death in 1962) and Second Storey was explicitly dismissive. The case's value is the early institutionalization —not a validation of the phenomenon.",
@@ -43,6 +45,15 @@
     {
       "name": "Library and Archives Canada — Wilbert Smith / Project Magnet records (Department of Transport)",
       "url": "https://mysteriesofcanada.com/canada/wilbert-smith/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Dos programas oficiales del gobierno canadiense (Project Magnet de Transport Canada, comité clasificado Second Storey) dedicados al fenómeno desde 1950-52 — entre los más tempranos del mundo. Documenta que el procesamiento estatal estructurado de UAP precede por décadas al ciclo actual y no fue exclusivo de EE.UU.",
+      "rationaleEn": "Two official Canadian government programs (Transport Canada's Project Magnet, the classified Second Storey committee) dedicated to the phenomenon from 1950-52 — among the world's earliest. It documents that structured state processing of UAP precedes the current cycle by decades and was not exclusive to the U.S."
     }
   ]
 }

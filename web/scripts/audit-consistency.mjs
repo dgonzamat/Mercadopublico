@@ -145,8 +145,8 @@ const EDITORIAL_RANGES_OK = new Set([
   "88", "70", "28", "30", "22", "6",
   // Effective-value cites in about/page.tsx Ch.4 under the log-odds model:
   // programas-clasificados ≈ 96, fenómeno natural ≈ 44, tecnologia-adversaria
-  // ≈ 89, ingenieria-inversa ≈ 31, entidades-no-humanas ≈ 52.
-  "96", "44", "89", "31", "52",
+  // ≈ 89, ingenieria-inversa ≈ 31, entidades-no-humanas ≈ 54.
+  "96", "44", "89", "31", "54",
 ]);
 
 /**

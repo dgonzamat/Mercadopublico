@@ -17,7 +17,9 @@
   "probability": 55,
   "summary": "El 28 de enero de 1994, la tripulación del Airbus A320 del vuelo Air France 3532 (cap. Jean-Charles Duboc) observó cerca de Coulommiers un disco/lente marrón-rojizo de ~300 m que cambiaba de forma. El radar militar de la Defensa Aérea (CODA) registró un track de ~50 segundos de un objeto que cruzó la trayectoria del avión a menos de 1 milla náutica. GEIPAN clasifica el caso como 'inexplicado' y el informe COMETA lo destaca. Caso multi-modal: aviación civil + radar militar + agencia oficial.",
   "summary_en": "On January 28, 1994, the crew of Air France flight 3532's Airbus A320 (Capt. Jean-Charles Duboc) observed near Coulommiers a shape-shifting brown-red disc/lens about 300 m across. Military air-defense radar (CODA) recorded a ~50-second track of an object that crossed the aircraft's path at less than 1 nautical mile. GEIPAN classifies the case as 'unexplained' and the COMETA report highlights it. A multi-modal case: civil aviation + military radar + official agency.",
-  "patterns": ["8e"],
+  "patterns": [
+    "8e"
+  ],
   "category": "incident",
   "whatHappened": "El 28 de enero de 1994, el vuelo Air France 3532 (Niza-Londres) sobrevolaba la región de París en un Airbus A320. La tripulación —encabezada por el capitán Jean-Charles Duboc— avistó sobre el horizonte un objeto discoidal de gran tamaño, estimado en unos 300 metros de diámetro, de color marrón-rojizo oscuro, bordes difusos y que cambiaba constantemente de forma, descrito como una 'lente gigantesca'.\n\nLo decisivo es la corroboración instrumental: el Centre d'Opérations de la Défense Aérienne (CODA), desde el centro de detección de Cinq-Mars-la-Pile, registró un track de radar de unos 50 segundos cuya trayectoria casi intersecó la del A320 —distancia mínima registrada por debajo de 1 milla náutica—. El objeto desapareció del radar de forma abrupta.\n\nGEIPAN, la unidad oficial del CNES para fenómenos aeroespaciales no identificados, mantiene el caso en su inventario clasificado como 'inexplicado' (expediente 1994-01-01345). El informe COMETA —elaborado por ex altos oficiales y expertos franceses— lo citó como ejemplo destacado de maniobras y velocidades extraordinarias. La línea epistémica es fuerte: visual de tripulación profesional + radar militar independiente + clasificación oficial de inexplicado.",
   "whatHappened_en": "On January 28, 1994, Air France flight 3532 (Nice-London) was flying over the Paris region in an Airbus A320. The crew —led by Captain Jean-Charles Duboc— sighted a large disc-shaped object on the horizon, estimated at about 300 meters across, dark brown-red, with fuzzy edges and constantly shifting shape, described as a 'gigantic lens'.\n\nThe decisive element is the instrumental corroboration: the Air Defense Operations Center (CODA), from the Cinq-Mars-la-Pile detection center, recorded a radar track of about 50 seconds whose path nearly intersected the A320's —minimum recorded distance under 1 nautical mile. The object vanished abruptly from radar.\n\nGEIPAN, the CNES's official unit for unidentified aerospace phenomena, keeps the case in its inventory classified as 'unexplained' (file 1994-01-01345). The COMETA report —drawn up by former senior French officers and experts— cited it as a prime example of extraordinary maneuvers and speeds. The epistemic line is strong: professional crew visual + independent military radar + official 'unexplained' classification.",
@@ -43,6 +45,22 @@
     {
       "name": "Air France 3532 (28 ene 1994) — track de radar (documentación ufológica)",
       "url": "https://ufologie.patrickgross.org/ufology/af3532rt.htm"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Visual de tripulación profesional (capitán Duboc) + track de radar militar independiente (CODA) cruzando la trayectoria + clasificación oficial 'inexplicado' de GEIPAN + mención en el informe COMETA. Correlación visual-radar con cadena institucional es la modalidad que el corpus pesa como modest en testigo profesional.",
+      "rationaleEn": "Professional crew visual (Captain Duboc) + independent military radar track (CODA) crossing the trajectory + official GEIPAN 'unexplained' classification + mention in the COMETA report. Visual-radar correlation with institutional chain is the modality the corpus weighs as modest for professional witnesses."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Re-análisis posteriores propusieron un globo estratosférico como candidato parcial; la propuesta no explica bien el cambio de forma reportado ni el track de velocidad, pero permanece en la mesa.",
+      "rationaleEn": "Later re-analyses proposed a stratospheric balloon as a partial candidate; the proposal does not explain well the reported shape change or the speed track, but remains on the table."
     }
   ]
 }

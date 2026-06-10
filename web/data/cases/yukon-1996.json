@@ -48,5 +48,21 @@
       "name": "Rutkowski, C. — The Canadian UFO Report (2006)",
       "note": "Capítulo sobre Yukon"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El análisis de Ted Molczan identificó la re-entrada del cuerpo del cohete Cosmos 2335 (segunda etapa) la misma noche, con trayectoria y timing compatibles con la línea de testigos. Una re-entrada nocturna produce exactamente la fila de luces lentas y silenciosas reportada, y la percepción de 'objeto gigante cercano' es el error de paralaje documentado en re-entradas.",
+      "rationaleEn": "Ted Molczan's analysis identified the re-entry of the Cosmos 2335 rocket body (second stage) the same night, with trajectory and timing compatible with the witness line. A nighttime re-entry produces exactly the reported row of slow, silent lights, and the perception of a 'giant nearby object' is the parallax error documented in re-entries."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Varios testigos describieron estructura sólida con hileras de ventanas a baja altura — detalles que los investigadores originales (Jasek) consideran inconsistentes con una re-entrada a >100 km. La tensión testimonio-explicación queda abierta; minimal.",
+      "rationaleEn": "Several witnesses described a solid structure with rows of windows at low altitude — details the original investigators (Jasek) consider inconsistent with a re-entry at >100 km. The testimony-explanation tension remains open; minimal."
+    }
   ]
 }

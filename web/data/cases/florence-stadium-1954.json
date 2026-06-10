@@ -17,7 +17,9 @@
   "probability": 50,
   "summary": "El 27 de octubre de 1954, durante un partido de la Fiorentina, ~10.000 personas en el Stadio Artemio Franchi vieron objetos sobre el estadio y el partido se detuvo. Cayó una sustancia filamentosa ('angel hair') que el profesor Giovanni Canneri (Universidad de Florencia) analizó por espectrografía: boro, silicio, calcio y magnesio, no radiactiva. Avistamiento masivo con testigos nombrados (jugadores, prensa, policía) y muestra física con análisis universitario — aunque con un debate escéptico abierto (ejercicios de chaff de la Aeronautica ese día).",
   "summary_en": "On October 27, 1954, during a Fiorentina football match, ~10,000 people at the Stadio Artemio Franchi saw objects over the stadium and the game stopped. A filamentous substance ('angel hair') fell, which Professor Giovanni Canneri (University of Florence) analyzed by spectrography: boron, silicon, calcium and magnesium, non-radioactive. A mass sighting with named witnesses (players, press, police) and a physical sample with university analysis — though with an open skeptical debate (Italian Air Force chaff exercises that day).",
-  "patterns": ["8a"],
+  "patterns": [
+    "8a"
+  ],
   "category": "incident",
   "whatHappened": "El 27 de octubre de 1954, durante un partido de fútbol de la Fiorentina en el Stadio Artemio Franchi de Florencia, unas 10.000 personas detuvieron su atención —y el partido se interrumpió— al ver uno o más objetos sobre el estadio: descritos de forma variada como ovoides, cigar-shaped o esferas brillantes, con destellos. Entre los testigos hubo figuras nombradas, como el defensor de la Fiorentina Ardico Magnini, además de periodistas, jugadores y policía.\n\nDurante el episodio cayó del cielo, en cantidad, una sustancia plateada y filamentosa conocida como 'angel hair' (capelli d'angelo), que se posó sobre techos y luego se desintegró en aproximadamente una hora. El profesor Giovanni Canneri, del Instituto de Análisis Químico de la Universidad de Florencia, logró tomar una muestra; el análisis espectrográfico indicó que contenía boro, silicio, calcio y magnesio, y que no era radiactiva.\n\nEl encuadre es deliberadamente equilibrado. La organización escéptica italiana CICAP señaló que la Aeronautica Militare realizaba ejercicios con chaff ese día. Pero el chaff es esencialmente aluminio y la composición química hallada no coincide con eso ni con telas de araña de migración. El caso queda, por tanto, abierto: fuerte en masa de testigos y en muestra física analizada por una universidad, pero sin un objeto resuelto y con una hipótesis mundana en discusión.",
   "whatHappened_en": "On October 27, 1954, during a Fiorentina football match at the Stadio Artemio Franchi in Florence, about 10,000 people turned their attention —and the match was interrupted— upon seeing one or more objects over the stadium: variously described as egg-shaped, cigar-shaped or glowing spheres, with flashes. Among the witnesses were named figures, such as Fiorentina defender Ardico Magnini, plus journalists, players and police.\n\nDuring the episode a silvery, filamentous substance known as 'angel hair' (capelli d'angelo) fell in quantity, draping over rooftops and then disintegrating in about an hour. Professor Giovanni Canneri, of the University of Florence's Institute of Chemical Analysis, managed to take a sample; spectrographic analysis indicated it contained boron, silicon, calcium and magnesium, and was not radioactive.\n\nThe framing is deliberately balanced. The Italian skeptic organization CICAP noted that the Aeronautica Militare was running chaff exercises that day. But chaff is essentially aluminum and the chemical composition found matches neither that nor migrating spider silk. The case therefore remains open: strong on mass witnesses and on a physical sample analyzed by a university, but without a resolved object and with a mundane hypothesis under debate.",
@@ -43,6 +45,22 @@
     {
       "name": "Enigma Labs — Soccer Match UAP Sighting Over Tuscany, Italy (1954)",
       "url": "https://enigmalabs.io/library/ad386be0-57b4-4b18-8757-73d61b2dc1c3"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Decenas de miles de testigos simultáneos con partido detenido + muestra física analizada por espectrografía universitaria (boro, silicio, calcio, magnesio). Minimal porque la observación es puramente visual y el residuo admite explicación natural.",
+      "rationaleEn": "Tens of thousands of simultaneous witnesses with the match halted + a physical sample analyzed by university spectrography (boron, silicon, calcium, magnesium). Minimal because the observation is purely visual and the residue admits a natural explanation."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El 'angel hair' tiene candidato natural sólido: gossamer de arañas migratorias, estacionalmente consistente con finales de octubre en Toscana; la composición mineral medida no lo descarta (contaminación de superficie).",
+      "rationaleEn": "'Angel hair' has a solid natural candidate: gossamer from ballooning spiders, seasonally consistent with late October in Tuscany; the measured mineral composition does not rule it out (surface contamination)."
     }
   ]
 }

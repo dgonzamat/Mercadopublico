@@ -62,5 +62,21 @@
       "name": "Open Minds TV — CEFAA Press Conference 2012",
       "note": "International coverage"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Análisis independientes posteriores al dictamen CEFAA convergieron en que el objeto es un insecto cercano al lente: el cálculo de 'Mach 3' asume distancia lejana que ningún dato establece, los múltiples videos no muestran el mismo objeto sincronizado al examinarse frame a frame, y ningún radar del show aéreo lo registró. La explicación entomológica nunca fue refutada.",
+      "rationaleEn": "Independent analyses after the CEFAA ruling converged on the object being an insect near the lens: the 'Mach 3' calculation assumes a far distance no data establishes, the multiple videos do not show the same synchronized object on frame-by-frame examination, and no air-show radar recorded it. The entomological explanation was never refuted."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "CEFAA mantiene oficialmente la clasificación 'anómalo' tras análisis fotogramétrico formal — el desacuerdo institucional-escéptico permanece en el récord.",
+      "rationaleEn": "CEFAA officially maintains the 'anomalous' classification after formal photogrammetric analysis — the institutional-skeptic disagreement remains on the record."
+    }
   ]
 }
