@@ -1,0 +1,100 @@
+{
+  "baseline": true,
+  "timestamp": "2026-06-10T01:40:54.251Z",
+  "score": 13,
+  "components": {
+    "auditErrors": 0,
+    "auditWarns": 0,
+    "bandJumps": 3,
+    "coverageGaps": 2,
+    "extremeDrift": 0
+  },
+  "strengthWeights": {
+    "minimal": 0.005,
+    "modest": 0.02,
+    "substantial": 0.05,
+    "category-breaking": 0.15
+  },
+  "calibrations": [
+    {
+      "id": "misidentificacion",
+      "kind": "antecedent",
+      "prior": 97,
+      "effective": 97,
+      "priorBand": "almost-certain",
+      "effBand": "almost-certain",
+      "drift": 0,
+      "coverage": null
+    },
+    {
+      "id": "heterogeneidad",
+      "kind": "derived",
+      "prior": 95,
+      "effective": 95,
+      "priorBand": "almost-certain",
+      "effBand": "almost-certain",
+      "drift": 0,
+      "coverage": null
+    },
+    {
+      "id": "programas-clasificados",
+      "kind": "primitive",
+      "prior": 88,
+      "effective": 95.8,
+      "priorBand": "very-likely",
+      "effBand": "almost-certain",
+      "drift": 7.8,
+      "coverage": 49
+    },
+    {
+      "id": "fenomenos-naturales",
+      "kind": "primitive",
+      "prior": 70,
+      "effective": 43.5,
+      "priorBand": "probable",
+      "effBand": "even-chance",
+      "drift": 26.5,
+      "coverage": 48
+    },
+    {
+      "id": "entidades-no-humanas",
+      "kind": "primitive",
+      "prior": 28,
+      "effective": 50.4,
+      "priorBand": "unlikely",
+      "effBand": "even-chance",
+      "drift": 22.4,
+      "coverage": 70
+    },
+    {
+      "id": "interdimensional",
+      "kind": "primitive",
+      "prior": 22,
+      "effective": 23.1,
+      "priorBand": "unlikely",
+      "effBand": "unlikely",
+      "drift": 1.1,
+      "coverage": 10
+    },
+    {
+      "id": "ontologico-no-materialista",
+      "kind": "primitive",
+      "prior": 22,
+      "effective": 22.3,
+      "priorBand": "unlikely",
+      "effBand": "unlikely",
+      "drift": 0.3,
+      "coverage": 1
+    },
+    {
+      "id": "tratado-greys",
+      "kind": "primitive",
+      "prior": 6,
+      "effective": 6,
+      "priorBand": "almost-no-chance",
+      "effBand": "almost-no-chance",
+      "drift": 0,
+      "coverage": 0
+    }
+  ]
+}
