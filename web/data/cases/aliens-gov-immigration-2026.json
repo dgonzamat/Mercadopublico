@@ -1,7 +1,7 @@
 {
   "id": "aliens-gov-immigration-2026",
   "num": 52,
-  "name": "alien.gov — disclosure rhetoric weaponizada para inmigración",
+  "name": "alien.gov — retórica de divulgación instrumentalizada para inmigración",
   "year_start": 2025,
   "year_end": 2026,
   "country": "US",
@@ -84,5 +84,6 @@
       "rationale": "Documenta capacidad estatal activa de gestión narrativa sobre el tema UAP: el aparato político usa deliberadamente la ambigüedad del término 'alien' para fines domésticos. No prueba programa alguno, pero es consistente con la tesis de que la comunicación pública sobre UAP es un activo gestionado, no un flujo transparente.",
       "rationaleEn": "It documents active state narrative-management capability on the UAP topic: the political apparatus deliberately uses the ambiguity of the term 'alien' for domestic purposes. It proves no program, but is consistent with the thesis that public UAP communication is a managed asset, not a transparent flow."
     }
-  ]
+  ],
+  "name_en": "alien.gov — disclosure rhetoric weaponized for immigration"
 }

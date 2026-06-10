@@ -37,7 +37,7 @@ export default function FrameworksPage() {
               <>
                 {frameworks.length} marcos interpretativos serios en competencia.
                 El corpus adopta{" "}
-                <strong className="text-text">Plurality</strong> — posición
+                <strong className="text-text">Pluralidad</strong> — posición
                 epistémicamente honesta que evita la unificación prematura que
                 cada marco comete en distinta dirección.
               </>
@@ -80,8 +80,12 @@ export default function FrameworksPage() {
                 }`}
               >
                 <td className="px-4 py-3">
-                  <p className="font-medium text-text">{f.name}</p>
-                  <p className="mt-1 text-xs text-muted">{f.one_sentence_es}</p>
+                  <p className="font-medium text-text">
+                    <T es={f.name} en={f.name_en} />
+                  </p>
+                  <p className="mt-1 text-xs text-muted">
+                    <T es={f.one_sentence_es} en={f.one_sentence_en} />
+                  </p>
                 </td>
                 <td className="px-4 py-3 text-xs text-muted">{f.author}</td>
                 <td className="px-4 py-3">

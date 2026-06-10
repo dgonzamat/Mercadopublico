@@ -25,6 +25,9 @@
  *   E5  evidenceContribution.hypothesisId debe existir en HYPOTHESES.
  *   E6  Cada caso Tier S debería declarar al menos un evidenceContribution
  *       (calibración manual; los demás auto-seedean de patterns).
+ *   E7  Spanglish: los campos ES-first de casos (name, summary) no deben
+ *       contener inglés descriptivo — el inglés vive en *_en. Heurística
+ *       curada con exenciones para nombres propios y texto entre comillas.
  */
 
 import fs from "node:fs";
@@ -379,6 +382,59 @@ for (const c of cases) {
       0,
       `Tier S case "${c.id}" has no evidenceContribution — calibration auto-seeds from patterns only`,
     );
+  }
+}
+
+// ─── 9b. RULE E7: Spanglish in ES-facing case fields ─────────────────────
+//
+// `name` y `summary` son los campos ES-first que renderiza /cases. Inglés
+// descriptivo ahí es drift editorial (el inglés vive en name_en/summary_en).
+// Heurística conservadora: lista curada de palabras inglesas comunes en
+// títulos UAP que casi nunca aparecen en prosa española. Se exime el texto
+// entre comillas (títulos citados) y los nombres propios canónicos.
+
+const SPANGLISH_RE =
+  /\b(crash|lights|wave|shutdown|files|hearing|leaked|streaks|highway|island|wartime|rhetoric|summaries|saucer|nests?|weaponized|weaponizada|sighting|witness(es)?|burns?|recovery|the|of|with|from)\b/i;
+
+const SPANGLISH_PROPER_OK = [
+  "Phoenix Lights",          // nombre canónico global del evento
+  "Ariel School",            // ídem
+  "Skinwalker Ranch",        // ídem
+  "Hudson Valley",           // topónimo
+  "Lake Huron",              // topónimo
+  "East Coast",              // topónimo en nombre de caso ya establecido
+  "Mystery Drones",          // etiqueta mediática canónica
+  "Blue Book",
+  "Estimate of the Situation", // título de documento
+  "Special Report",            // título de documento (Battelle)
+  "Ministry of Supply",        // institución
+  "Bombing Trials Unit",       // institución
+  "National Press Club",
+  "Operation Animal Mutilation", // título de informe
+  "Joint Defence Facility",      // institución
+  "Eyre Highway",                // topónimo (carretera)
+  "University of Queensland",    // institución
+];
+
+function stripQuotedAndProper(s) {
+  let t = s.replace(/'[^']*'|"[^"]*"|«[^»]*»|‘[^’]*’/g, "");
+  for (const k of SPANGLISH_PROPER_OK) t = t.split(k).join("");
+  return t;
+}
+
+for (const c of cases) {
+  for (const field of ["name", "summary"]) {
+    const v = c[field];
+    if (!v) continue;
+    const m = stripQuotedAndProper(v).match(SPANGLISH_RE);
+    if (m) {
+      record(
+        "ERROR",
+        path.join(casesDir, c.id + ".json"),
+        0,
+        `E7 spanglish: campo ES "${field}" contiene "${m[0]}" (case ${c.id}) — mover el inglés a ${field}_en o citar entre comillas`,
+      );
+    }
   }
 }
 

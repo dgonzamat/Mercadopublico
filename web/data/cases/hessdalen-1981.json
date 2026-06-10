@@ -1,7 +1,7 @@
 {
   "id": "hessdalen-1981",
   "num": 26,
-  "name": "Hessdalen lights",
+  "name": "Luces de Hessdalen",
   "year_start": 1981,
   "country": "NO",
   "country_name": "Noruega",
@@ -78,5 +78,6 @@
       "name": "EuroSky Workshop proceedings — Hessdalen sessions",
       "note": "Annual proceedings 2010-2024"
     }
-  ]
+  ],
+  "name_en": "Hessdalen lights"
 }

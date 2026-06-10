@@ -1,7 +1,7 @@
 {
   "id": "belgian-wave-1989",
   "num": 29,
-  "name": "Belgian Wave (F-16)",
+  "name": "Oleada belga (F-16)",
   "year_start": 1989,
   "year_end": 1990,
   "country": "BE",
@@ -98,5 +98,6 @@
       "rationale": "Patrón 8k presente — interferencia EM y aceleraciones 46G fuera del rango clásico apuntan parcialmente a física no convencional",
       "rationaleEn": "Pattern 8k present — EM interference and 46G accelerations outside the classical range partially point to non-conventional physics"
     }
-  ]
+  ],
+  "name_en": "Belgian Wave (F-16)"
 }

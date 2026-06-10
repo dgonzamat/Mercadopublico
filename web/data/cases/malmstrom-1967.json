@@ -1,7 +1,7 @@
 {
   "id": "malmstrom-1967",
   "num": 14,
-  "name": "Malmstrom ICBM shutdown",
+  "name": "Malmstrom · apagado de ICBMs",
   "year_start": 1967,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -97,5 +97,6 @@
       "rationale": "Patrón 8k de interferencia EM en sistemas Minuteman — efecto físico EM remoto en hardware nuclear califica como signal débil de física exótica",
       "rationaleEn": "Pattern 8k of EM interference on Minuteman systems — remote EM physical effect on nuclear hardware qualifies as a weak signal of exotic physics"
     }
-  ]
+  ],
+  "name_en": "Malmstrom ICBM shutdown"
 }

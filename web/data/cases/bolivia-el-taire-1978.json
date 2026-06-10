@@ -1,7 +1,7 @@
 {
   "id": "bolivia-el-taire-1978",
   "num": 77,
-  "name": "El Taire / Bermejo crash",
+  "name": "El Taire / caída de Bermejo",
   "year_start": 1978,
   "country": "BO",
   "country_name": "Bolivia",
@@ -69,5 +69,6 @@
       "rationale": "Cable CIA descarta cierre como meteorito convencional al señalar explícitamente las contradicciones del reporte boliviano sobre 'fallen object'",
       "rationaleEn": "CIA cable rules out closure as conventional meteor by explicitly flagging contradictions in the Bolivian report on 'fallen object'"
     }
-  ]
+  ],
+  "name_en": "El Taire / Bermejo crash"
 }

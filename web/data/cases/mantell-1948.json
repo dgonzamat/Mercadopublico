@@ -1,7 +1,7 @@
 {
   "id": "mantell-1948",
   "num": 4,
-  "name": "Mantell crash",
+  "name": "Caída de Mantell",
   "year_start": 1948,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -87,5 +87,6 @@
       "rationale": "La explicación Skyhook es plausible, consistente con la trayectoria y ampliamente aceptada — el caso no sostiene lectura anómala.",
       "rationaleEn": "The Skyhook explanation is plausible, consistent with the trajectory and widely accepted — the case does not sustain an anomalous reading."
     }
-  ]
+  ],
+  "name_en": "Mantell crash"
 }

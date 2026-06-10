@@ -1,7 +1,7 @@
 {
   "id": "hudson-valley-1983",
   "num": 62,
-  "name": "Hudson Valley Boomerang",
+  "name": "Hudson Valley · el 'Boomerang'",
   "year_start": 1983,
   "year_end": 1986,
   "country": "US",
@@ -74,5 +74,6 @@
       "rationale": "La morfología triángulo/boomerang masivo y silencioso es la firma que una década después se asociaría a plataformas LTA y vuelo furtivo experimental — la lectura 'prototipo doméstico' es viable para el subconjunto no explicado por ultraligeros.",
       "rationaleEn": "The massive, silent triangle/boomerang morphology is the signature that a decade later would be associated with LTA platforms and experimental stealth flight — the 'domestic prototype' reading is viable for the subset not explained by ultralights."
     }
-  ]
+  ],
+  "name_en": "Hudson Valley Boomerang"
 }

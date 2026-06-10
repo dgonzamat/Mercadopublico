@@ -1,7 +1,7 @@
 {
   "id": "trindade-1958",
   "num": 11,
-  "name": "Trindade Island",
+  "name": "Isla Trindade",
   "year_start": 1958,
   "country": "BR",
   "country_name": "Brasil",
@@ -64,5 +64,6 @@
       "name": "GEPAN/CNES — Analyse photographique Trindade (1980)",
       "note": "Confirmación independiente francesa"
     }
-  ]
+  ],
+  "name_en": "Trindade Island"
 }
