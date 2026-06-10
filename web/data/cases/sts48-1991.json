@@ -60,5 +60,21 @@
       "name": "Oberg, J. — Critique of Carlotto analysis (Skeptical Inquirer 2003)",
       "note": "Formal critique of the non-ballistic attribution"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El análisis peer-reviewed de Carlotto calcula cinemática incompatible con partículas balísticas. Minimal porque la explicación NASA/Oberg (partículas de hielo cercanas + disparo de thruster de actitud que explica el cambio brusco de dirección) nunca fue refutada y la ambigüedad de distancia (cerca/lejos) es irresoluble con una sola cámara.",
+      "rationaleEn": "Carlotto's peer-reviewed analysis computes kinematics incompatible with ballistic particles. Minimal because the NASA/Oberg explanation (nearby ice particles + attitude-thruster firing explaining the abrupt direction change) was never refuted and the distance ambiguity (near/far) is unresolvable with a single camera."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La lectura convencional —partículas de hielo iluminadas reaccionando al disparo de thruster— es físicamente autoconsistente y explica la simultaneidad del 'flash' con el cambio de trayectoria.",
+      "rationaleEn": "The conventional reading —illuminated ice particles reacting to a thruster firing— is physically self-consistent and explains the simultaneity of the 'flash' with the trajectory change."
+    }
   ]
 }

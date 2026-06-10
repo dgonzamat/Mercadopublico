@@ -13,7 +13,7 @@
   },
   "tier": "S",
   "probability": 75,
-  "summary": "Secretario General del Ministerio de Defensa convoca formalmente a embajada US tras sighting radar-confirmado sobre territorio argelino.",
+  "summary": "Secretario General del Ministerio de Defensa convoca formalmente a embajada US tras un avistamiento confirmado por radar sobre territorio argelino.",
   "summary_en": "Algerian Ministry of Defense Secretary General formally summons US embassy after radar-confirmed sighting over Algerian territory.",
   "patterns": [
     "8e",

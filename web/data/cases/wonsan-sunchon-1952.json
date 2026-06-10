@@ -13,7 +13,7 @@
   },
   "tier": "A",
   "probability": 60,
-  "summary": "Dos B-29 USAF independientes 80mi separados + globo naranja sobre N. Korea wartime + Blue Book 'Unknown'",
+  "summary": "Dos B-29 de la USAF independientes, separados 80 millas + globo naranja sobre Corea del Norte en plena guerra + Blue Book 'Unknown'",
   "summary_en": "Two independent USAF B-29s 80mi apart + orange globe over wartime N. Korea + Blue Book 'Unknown'",
   "patterns": [
     "8e",
@@ -58,5 +58,21 @@
     "source": "USAF Project Blue Book",
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book_report_-_1952-10-9169199-North_Korea.pdf"
-  }
+  },
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Dos tripulaciones de B-29 independientes a 80 millas reportando el mismo tipo de objeto eliminan el error individual, y Blue Book lo dejó 'Unknown'. Minimal porque es observación visual nocturna en zona de combate, sin radar correlacionado en el expediente.",
+      "rationaleEn": "Two independent B-29 crews 80 miles apart reporting the same type of object eliminate individual error, and Blue Book left it 'Unknown'. Minimal because it is nighttime visual observation in a combat zone, with no correlated radar in the file."
+    },
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Zona de guerra activa 1952: una plataforma de observación soviética o china siguiendo bombarderos B-29 es lectura operativa plausible — exactamente la clase de incidente que esta hipótesis cubre. Sin atribución entonces ni después; minimal.",
+      "rationaleEn": "Active war zone 1952: a Soviet or Chinese observation platform following B-29 bombers is a plausible operational reading — exactly the class of incident this hypothesis covers. No attribution then or since; minimal."
+    }
+  ]
 }

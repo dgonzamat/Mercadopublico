@@ -17,7 +17,9 @@
   "probability": 45,
   "summary": "El 16 de abril de 2016, un avión de reconocimiento de EE.UU. grabó sobre Mosul una esfera metálica que se desplazaba sin alas, propulsión visible ni firma térmica evidente. El video fue presentado oficialmente por el director de la AARO del Pentágono, Sean Kirkpatrick, en la audiencia del Senado de abril de 2023, donde se mostró junto a un caso casi idéntico de 2022 en Medio Oriente y se declaró 'aún en estudio'. Primer caso de Irak: dato de sensor militar oficialmente reconocido y no resuelto —su fuerza es la cadena de custodia institucional, no una conclusión sobre su naturaleza.",
   "summary_en": "On April 16, 2016, a U.S. reconnaissance aircraft filmed over Mosul a metallic sphere moving with no wings, visible propulsion or obvious thermal signature. The video was officially presented by Pentagon AARO director Sean Kirkpatrick at the April 2023 Senate hearing, where it was shown alongside a near-identical 2022 Middle East case and declared 'still being studied'. Iraq's first case: an officially acknowledged, unresolved military sensor datum —its strength is the institutional chain of custody, not a conclusion about its nature.",
-  "patterns": ["8e"],
+  "patterns": [
+    "8e"
+  ],
   "category": "incident",
   "whatHappened": "El 16 de abril de 2016, durante las operaciones de la coalición contra el Estado Islámico, una plataforma de reconocimiento estadounidense grabó sobre la ciudad de Mosul, en el norte de Irak, un objeto esférico de aspecto metálico. En el video —tomado con sensor electro-óptico/infrarrojo— la esfera se desplaza a través del encuadre sin superficies de sustentación visibles, sin penacho de propulsión y sin una firma térmica que delate un motor convencional. Es lo que desde entonces se conoce como el 'Mosul Orb'.\n\nLo que distingue a este caso de otras filtraciones es su estatus oficial. El video fue presentado por el propio director de la All-domain Anomaly Resolution Office (AARO) del Pentágono, el Dr. Sean Kirkpatrick, durante la audiencia pública del Senado de EE.UU. en abril de 2023. Allí lo mostró junto a un objeto esférico casi idéntico registrado en 2022 en otro punto de Medio Oriente, señalando que estos 'orbs' constituyen una morfología recurrente en los datos de la AARO y que el caso seguía bajo estudio.\n\nEl encuadre del corpus es equilibrado. La fortaleza del caso es su cadena de custodia institucional impecable: no es un rumor ni una difusión periodística, sino metraje de sensor militar reconocido oficialmente por la agencia del Pentágono encargada de los UAP, ante el Senado. Pero la honestidad obliga a no sobreinterpretar: es un único sensor, un clip breve, y la propia AARO ha resuelto muchos 'orbs' similares como objetos mundanos (globos, drones, desechos) o ha dejado abierta esa posibilidad. Lo que ancla a Irak en el corpus es, por tanto, un dato de sensor oficialmente acknowledged y no resuelto —fuerte en procedencia, abierto en interpretación.",
   "whatHappened_en": "On April 16, 2016, during coalition operations against the Islamic State, a U.S. reconnaissance platform filmed over the city of Mosul, in northern Iraq, a spherical, metallic-looking object. In the video —taken with an electro-optical/infrared sensor— the sphere moves across the frame with no visible lifting surfaces, no propulsion plume and no thermal signature betraying a conventional engine. It is what has since become known as the 'Mosul Orb'.\n\nWhat sets this case apart from other leaks is its official status. The video was presented by the director of the Pentagon's All-domain Anomaly Resolution Office (AARO) himself, Dr. Sean Kirkpatrick, during the U.S. Senate's public hearing in April 2023. There he showed it alongside a near-identical spherical object recorded in 2022 elsewhere in the Middle East, noting that these 'orbs' are a recurring morphology in AARO's data and that the case remained under study.\n\nThe corpus framing is balanced. The case's strength is its impeccable institutional chain of custody: not a rumor or a journalistic release, but military sensor footage officially acknowledged by the Pentagon's UAP agency, before the Senate. But honesty requires not over-reading it: it is a single sensor, a short clip, and AARO itself has resolved many similar 'orbs' as mundane objects (balloons, drones, debris) or left that possibility open. What anchors Iraq in the corpus is therefore an officially acknowledged, unresolved sensor datum —strong in provenance, open in interpretation.",
@@ -43,6 +45,22 @@
     {
       "name": "EarthSky — 'UFO hearing in Senate: New videos but no hard evidence' (testimonio de Kirkpatrick, AARO)",
       "url": "https://earthsky.org/human-world/ufo-hearing-senate-uap-congress/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Metraje de sensor militar presentado oficialmente por el director de AARO ante el Senado con estatus 'no resuelto'. Minimal porque es un solo sensor sin multi-modalidad ni datos de performance publicados.",
+      "rationaleEn": "Military sensor footage officially presented by the AARO director to the Senate with 'unresolved' status. Minimal because it is a single sensor without multi-modality or published performance data."
+    },
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Irak 2016, zona de guerra con múltiples actores estatales operando plataformas pequeñas de vigilancia: una esfera metálica sobre Mosul tiene lectura viva como dron de otro Estado, sin atribución oficial.",
+      "rationaleEn": "Iraq 2016, a war zone with multiple state actors operating small surveillance platforms: a metallic orb over Mosul has a live reading as another state's drone, officially unattributed."
     }
   ]
 }

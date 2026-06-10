@@ -1,7 +1,7 @@
 {
   "id": "nara-rg38-1947",
   "num": 3,
-  "name": "NARA RG 38 incident summaries",
+  "name": "NARA RG 38 · resúmenes de incidentes",
   "year_start": 1947,
   "year_end": 1948,
   "country": "US",
@@ -70,5 +70,6 @@
       "name": "Greenwood, B. — Just Cause (CAUS 1985-2000)",
       "note": "Newsletter dedicated to FOIA-recovered documents"
     }
-  ]
+  ],
+  "name_en": "NARA RG 38 incident summaries"
 }

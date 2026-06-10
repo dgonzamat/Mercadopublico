@@ -44,5 +44,21 @@
       "name": "PROJECT 1947 — Scandinavian Ghost Rocket Reports 1946",
       "url": "http://www.project1947.com/"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El episodio fue tratado institucionalmente en tiempo real como presunta actividad de misiles de otro Estado (derivados V-2 soviéticos desde Peenemünde capturado): Suecia movilizó a sus fuerzas, restringió prensa y consultó a aliados. Es el caso fundacional de la clase 'tecnología de otro Estado sobre territorio nacional sin atribución' — 1946, antes del término 'platillo volador'. La atribución soviética nunca se confirmó; modest por el tratamiento institucional, no por confirmación.",
+      "rationaleEn": "The episode was institutionally treated in real time as suspected missile activity by another state (Soviet V-2 derivatives from captured Peenemünde): Sweden mobilized its forces, restricted the press and consulted allies. It is the founding case of the class 'another state's technology over national territory without attribution' — 1946, before the term 'flying saucer'. Soviet attribution was never confirmed; modest for the institutional treatment, not for confirmation."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Análisis posteriores atribuyen una fracción sustancial de los ~2.000 reportes a bólidos y meteoros — la explicación natural cubre parte de la ola sin agotar los reportes con trayectoria horizontal y caída en lagos.",
+      "rationaleEn": "Later analyses attribute a substantial fraction of the ~2,000 reports to bolides and meteors — the natural explanation covers part of the wave without exhausting the reports with horizontal trajectories and lake impacts."
+    }
   ]
 }

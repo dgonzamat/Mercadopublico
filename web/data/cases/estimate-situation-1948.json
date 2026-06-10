@@ -62,5 +62,21 @@
       "name": "Hall, R. — UFO Evidence Vol. II (NICAP 2001)",
       "note": "Reconstruction of the document"
     }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "La supresión administrativa por Vandenberg de la primera evaluación profesional interna de la USAF —sin refutación científica documentada y con destrucción del documento— es patrón institucional de gestión de información, atestiguado por Ruppelt (jefe de Blue Book) en su libro de 1956. Establece la divergencia conocimiento interno vs comunicación pública desde 1948.",
+      "rationaleEn": "Vandenberg's administrative suppression of the USAF's first internal professional assessment —without documented scientific refutation and with destruction of the document— is an institutional information-management pattern, attested by Ruppelt (Blue Book chief) in his 1956 book. It establishes the internal-knowledge vs public-communication divergence as early as 1948."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Que la primera evaluación interna concluyera la hipótesis interplanetaria como más probable es señal de cómo leyó la evidencia el primer equipo profesional. Minimal porque el documento fue destruido: su contenido se conoce solo por testimonio de segunda mano.",
+      "rationaleEn": "That the first internal assessment concluded the interplanetary hypothesis was most probable signals how the first professional team read the evidence. Minimal because the document was destroyed: its content is known only through secondhand testimony."
+    }
   ]
 }

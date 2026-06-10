@@ -1,6 +1,6 @@
 {
   "baseline": true,
-  "timestamp": "2026-06-10T21:41:55.943Z",
+  "timestamp": "2026-06-10T22:15:20.829Z",
   "score": 13,
   "components": {
     "auditErrors": 0,
@@ -40,41 +40,41 @@
       "id": "programas-clasificados",
       "kind": "primitive",
       "prior": 88,
-      "effective": 96,
+      "effective": 96.4,
       "priorBand": "very-likely",
       "effBand": "almost-certain",
-      "drift": 8,
-      "coverage": 57
+      "drift": 8.4,
+      "coverage": 64
     },
     {
       "id": "tecnologia-adversaria",
       "kind": "primitive",
       "prior": 88,
-      "effective": 89.2,
+      "effective": 89.5,
       "priorBand": "very-likely",
       "effBand": "very-likely",
-      "drift": 1.2,
-      "coverage": 3
+      "drift": 1.5,
+      "coverage": 7
     },
     {
       "id": "fenomenos-naturales",
       "kind": "primitive",
       "prior": 70,
-      "effective": 43.8,
+      "effective": 44.1,
       "priorBand": "probable",
       "effBand": "even-chance",
-      "drift": 26.2,
-      "coverage": 55
+      "drift": 25.9,
+      "coverage": 57
     },
     {
       "id": "entidades-no-humanas",
       "kind": "primitive",
       "prior": 28,
-      "effective": 52.3,
+      "effective": 54,
       "priorBand": "unlikely",
       "effBand": "even-chance",
-      "drift": 24.3,
-      "coverage": 80
+      "drift": 26,
+      "coverage": 93
     },
     {
       "id": "interdimensional",
