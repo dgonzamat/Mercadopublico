@@ -1,0 +1,91 @@
+{
+  "id": "chinese-balloon-montana-2023",
+  "num": 143,
+  "name": "Globo de vigilancia chino · Montana → Carolina del Sur",
+  "name_en": "Chinese surveillance balloon · Montana → South Carolina",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 32.78,
+    "lng": -79.35,
+    "place": "Costa de Carolina del Sur (derribo) / sobrevuelo Montana–Carolina"
+  },
+  "tier": "S",
+  "probability": 95,
+  "summary": "Entre el 28 de enero y el 4 de febrero de 2023, un globo de gran altitud de origen chino sobrevoló territorio continental estadounidense desde Alaska, pasando sobre instalaciones nucleares en Montana (Malmstrom Air Force Base, silos Minuteman III), descendiendo hacia el sureste hasta ser derribado el 4 de febrero por un misil AIM-9X Sidewinder lanzado por un F-22 Raptor a 60,000 pies sobre la costa atlántica de Carolina del Sur. La administración Biden y el DoD confirmaron oficialmente que se trataba de una plataforma de inteligencia (SIGINT/PHOTINT). Recuperación parcial de partes mecánicas, electrónicas y de carga útil fue ejecutada por la Marina de EE.UU. (USS Carter Hall, USS Oscar Austin) y FBI para análisis. Es el primer caso del corpus de tecnología adversaria confirmada oficialmente operando sobre territorio continental estadounidense en el ciclo UAP post-2017, y abre la categoría `tecnologia-adversaria` con la base evidencial más sólida posible.",
+  "summary_en": "Between January 28 and February 4, 2023, a high-altitude Chinese-origin balloon overflew the continental United States from Alaska, passing over nuclear installations in Montana (Malmstrom Air Force Base, Minuteman III silos), descending southeast until shot down on February 4 by an AIM-9X Sidewinder missile launched by an F-22 Raptor at 60,000 feet over the Atlantic coast of South Carolina. The Biden administration and DoD officially confirmed it was an intelligence platform (SIGINT/PHOTINT). Partial recovery of mechanical, electronic and payload parts was executed by the U.S. Navy (USS Carter Hall, USS Oscar Austin) and the FBI for analysis. It is the corpus's first case of officially confirmed adversary technology operating over the continental United States in the post-2017 UAP cycle, and opens the `tecnologia-adversaria` category with the strongest possible evidential basis.",
+  "patterns": [
+    "8c",
+    "8m",
+    "8r"
+  ],
+  "category": "incident",
+  "whatHappened": "El 28 de enero de 2023, NORAD detectó por primera vez la presencia de un objeto de gran altitud no identificado entrando al espacio aéreo estadounidense por las Islas Aleutianas (Alaska). El objeto fue tracked durante cinco días mientras seguía una trayectoria sobre territorio canadiense, ingresando al continental US por Idaho, sobrevolando el norte de Montana —incluyendo el complejo de silos Minuteman III administrado por la 341st Missile Wing de Malmstrom Air Force Base— y descendiendo en diagonal hacia el sureste por Wyoming, Nebraska, Kansas, Missouri, Carolina del Norte y finalmente la costa de Carolina del Sur.\n\nLa administración Biden y el Departamento de Defensa optaron por no derribar el globo sobre territorio terrestre por riesgo a poblaciones civiles dado el tamaño (aproximadamente 60 metros de altura total con una carga útil del tamaño de tres autobuses escolares). El 4 de febrero a las 14:39 ET, un F-22 Raptor del 1st Fighter Wing (Langley AFB) disparó un misil AIM-9X Sidewinder a aproximadamente 60,000 pies de altitud sobre el Atlántico, derribando el globo a unas 6 millas náuticas de la costa de Surfside Beach (Carolina del Sur). La recuperación de los restos fue coordinada por el FBI con apoyo naval del USS Carter Hall (LSD-50) y USS Oscar Austin (DDG-79), y procesada en el laboratorio del FBI en Quantico, Virginia.\n\nEn la rueda de prensa del Pentágono del 4 de febrero, el Secretario de Defensa Lloyd Austin y el general Mark Milley confirmaron oficialmente que el globo era una plataforma de inteligencia de origen chino. El gobierno chino reconoció parcialmente el incidente caracterizando el globo como 'plataforma civil de investigación meteorológica desviada por vientos', explicación que el DoD rechazó citando la presencia de antenas SIGINT, paneles solares de alta capacidad y trayectoria controlable. En las semanas posteriores, AARO y el DoD admitieron que el globo era parte de una serie histórica de globos chinos sobre territorio estadounidense que habían sido inicialmente categorizados como UAP en años previos —incluyendo cuatro sobrevuelos confirmados a posteriori bajo las administraciones Trump y Biden— y que no habían sido detectados o reportados públicamente. Tres globos adicionales de origen no confirmado fueron derribados en los días siguientes sobre Alaska, Yukon y el Lago Hurón.",
+  "whatHappened_en": "On January 28, 2023, NORAD first detected the presence of an unidentified high-altitude object entering U.S. airspace through the Aleutian Islands (Alaska). The object was tracked for five days as it followed a trajectory over Canadian territory, entering the continental U.S. through Idaho, overflying northern Montana —including the Minuteman III silo complex administered by Malmstrom Air Force Base's 341st Missile Wing— and descending diagonally to the southeast through Wyoming, Nebraska, Kansas, Missouri, North Carolina and finally the South Carolina coast.\n\nThe Biden administration and Department of Defense chose not to shoot down the balloon over land due to risk to civilian populations given its size (approximately 60 meters total height with a payload the size of three school buses). On February 4 at 14:39 ET, an F-22 Raptor from the 1st Fighter Wing (Langley AFB) fired an AIM-9X Sidewinder missile at approximately 60,000 feet altitude over the Atlantic, shooting down the balloon about 6 nautical miles off the coast of Surfside Beach (South Carolina). Wreckage recovery was coordinated by the FBI with naval support from USS Carter Hall (LSD-50) and USS Oscar Austin (DDG-79), and processed at the FBI laboratory in Quantico, Virginia.\n\nAt the February 4 Pentagon press conference, Secretary of Defense Lloyd Austin and General Mark Milley officially confirmed that the balloon was a Chinese-origin intelligence platform. The Chinese government partially acknowledged the incident by characterizing the balloon as a 'civilian meteorological research platform deviated by winds', an explanation the DoD rejected citing the presence of SIGINT antennas, high-capacity solar panels and controllable trajectory. In the following weeks, AARO and the DoD admitted that this balloon was part of a historical series of Chinese balloons over U.S. territory that had been initially categorized as UAP in previous years —including four overflights confirmed retroactively under the Trump and Biden administrations— that had not been detected or publicly reported. Three additional balloons of unconfirmed origin were shot down in subsequent days over Alaska, Yukon, and Lake Huron.",
+  "whyMatters": "Es el caso ancla del corpus para la hipótesis `tecnologia-adversaria`. Pocos casos UAP tienen un grado de confirmación oficial comparable: declaración pública del Secretario de Defensa, recuperación de restos físicos, análisis FBI en Quantico, identificación de antenas SIGINT, y reconocimiento posterior del DoD de una serie histórica de sobrevuelos previos categorizados como UAP. Su importancia estructural es doble. Primero, **valida empíricamente la categoría 'tecnología adversaria'** que el debate UAP había mantenido como hipótesis especulativa hasta este caso. Segundo, **reescribe retroactivamente el registro UAP previo**: si AARO admite que cuatro UAP de años anteriores fueron en realidad globos chinos no detectados, eso recalibra el corpus completo —cualquier UAP de alta altitud no identificado entre 2018 y 2023 debe ahora considerarse potencialmente adversario antes que anómalo. La conexión con Lake Huron 2023 (derribado tres días después, jamás identificado oficialmente) es directa: la presunción razonable es adversaria, no anómala, mientras no se pruebe lo contrario.",
+  "whyMatters_en": "It is the corpus's anchor case for the `tecnologia-adversaria` hypothesis. Few UAP cases have a comparable degree of official confirmation: public statement from the Secretary of Defense, physical wreckage recovery, FBI analysis at Quantico, SIGINT antenna identification, and the DoD's subsequent acknowledgment of a historical series of prior overflights categorized as UAP. Its structural importance is twofold. First, it **empirically validates the 'adversary technology' category** which the UAP debate had kept as a speculative hypothesis until this case. Second, it **retroactively rewrites the prior UAP record**: if AARO admits that four UAPs from earlier years were in fact undetected Chinese balloons, that recalibrates the entire corpus —any unidentified high-altitude UAP between 2018 and 2023 must now be considered potentially adversarial before being considered anomalous. The connection to Lake Huron 2023 (shot down three days later, never officially identified) is direct: the reasonable presumption is adversarial, not anomalous, unless proven otherwise.",
+  "evidence": [
+    "Detección NORAD inicial 28 enero 2023, Islas Aleutianas (Alaska); tracking de 5 días sobre territorio continental",
+    "Sobrevuelo confirmado de Malmstrom Air Force Base (Montana) y complejo Minuteman III ICBM administrado por la 341st Missile Wing",
+    "Derribo 4 feb 2023, 14:39 ET, F-22 Raptor 1st Fighter Wing (Langley AFB), misil AIM-9X Sidewinder a 60,000 pies sobre Atlántico (~6 millas náuticas de Surfside Beach, SC)",
+    "Recuperación de restos por USS Carter Hall (LSD-50) y USS Oscar Austin (DDG-79); análisis FBI en Quantico Lab",
+    "Confirmación oficial Pentágono 4 feb 2023: Sec. Lloyd Austin + Gen. Mark Milley identifican plataforma china SIGINT/PHOTINT",
+    "Reconocimiento retroactivo AARO/DoD de serie histórica de cuatro globos chinos previos categorizados como UAP en administraciones Trump y Biden (no detectados públicamente en su momento)",
+    "Tres derribos adicionales en días siguientes: Alaska, Yukon, Lago Hurón (este último jamás identificado oficialmente)",
+    "Respuesta china oficial: 'plataforma civil meteorológica desviada por vientos' — explicación rechazada por DoD citando antenas SIGINT y trayectoria controlable"
+  ],
+  "evidence_en": [
+    "Initial NORAD detection Jan 28, 2023, Aleutian Islands (Alaska); 5-day tracking over continental territory",
+    "Confirmed overflight of Malmstrom Air Force Base (Montana) and Minuteman III ICBM complex administered by the 341st Missile Wing",
+    "Shoot-down Feb 4, 2023, 14:39 ET, F-22 Raptor 1st Fighter Wing (Langley AFB), AIM-9X Sidewinder missile at 60,000 ft over Atlantic (~6 nm off Surfside Beach, SC)",
+    "Wreckage recovery by USS Carter Hall (LSD-50) and USS Oscar Austin (DDG-79); FBI Quantico Lab analysis",
+    "Official Pentagon confirmation Feb 4, 2023: Sec. Lloyd Austin + Gen. Mark Milley identify Chinese SIGINT/PHOTINT platform",
+    "AARO/DoD retroactive acknowledgment of historical series of four prior Chinese balloons categorized as UAP under Trump and Biden administrations (not publicly detected at the time)",
+    "Three additional shoot-downs in following days: Alaska, Yukon, Lake Huron (the last never officially identified)",
+    "Chinese official response: 'civilian meteorological platform deviated by winds' — explanation rejected by DoD citing SIGINT antennas and controllable trajectory"
+  ],
+  "sources": [
+    {
+      "name": "U.S. Department of Defense — Press Briefing 4 feb 2023 (Sec. Lloyd Austin + Gen. Mark Milley)",
+      "url": "https://www.defense.gov/News/Releases/Release/Article/3287204/",
+      "note": "Confirmación oficial del derribo y origen chino."
+    },
+    {
+      "name": "FBI Laboratory — Analysis of recovered balloon components (Quantico, 2023)",
+      "note": "Análisis primario de restos."
+    },
+    {
+      "name": "AARO — Historical UAP series reclassification post-Feb 2023",
+      "url": "https://www.aaro.mil/",
+      "note": "Reconocimiento retroactivo de globos chinos previos categorizados como UAP."
+    },
+    {
+      "name": "CRS Report R47457 — 'High-Altitude Surveillance Balloons: What's Going Up?' (Congressional Research Service, 2023)",
+      "url": "https://crsreports.congress.gov/product/pdf/R/R47457",
+      "note": "Análisis legislativo del incidente y su contexto."
+    },
+    {
+      "name": "NYT — 'How a Chinese Spy Balloon Blew Past the Pentagon' (Cooper, Barnes, 2023)",
+      "url": "https://www.nytimes.com/2023/02/05/us/politics/chinese-spy-balloon.html",
+      "note": "Investigación periodística sobre la cadena de decisión."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Confirmación oficial directa: declaración del Secretario de Defensa, recuperación de restos físicos, análisis FBI, identificación de antenas SIGINT. Es el caso del corpus con mayor grado de evidencia institucional para tecnología militar adversaria —pocos casos del catálogo tienen este nivel de cierre. Substantial es la calibración honesta: el caso valida empíricamente la categoría completa.",
+      "rationaleEn": "Direct official confirmation: Secretary of Defense statement, physical wreckage recovery, FBI analysis, SIGINT antenna identification. It is the corpus case with the highest degree of institutional evidence for adversary military technology —few catalog cases have this level of closure. Substantial is the honest calibration: the case empirically validates the entire category."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "El caso muestra que NORAD y AARO no habían detectado/reportado públicamente cuatro sobrevuelos chinos previos. Esto tensiona ligeramente la hipótesis 'programas-clasificados US explican casos UAP previos' porque revela que parte del registro era de origen adversario, no doméstico. Minimal weakens: la falta de detección US no refuta programas US, solo revela que el universo de explicaciones es más amplio.",
+      "rationaleEn": "The case shows that NORAD and AARO had not publicly detected/reported four prior Chinese overflights. This slightly tensions the 'U.S. classified programs explain prior UAP cases' hypothesis because it reveals that part of the record was adversary-origin, not domestic. Minimal weakens: U.S. detection failure does not refute U.S. programs, only reveals that the explanation universe is broader."
+    }
+  ]
+}

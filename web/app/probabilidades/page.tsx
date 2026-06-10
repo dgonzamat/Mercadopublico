@@ -82,7 +82,7 @@ export default function ProbabilidadesPage() {
               <>
                 Mirando los <strong className="text-text">{STATS.cases} casos</strong>{" "}
                 que pasaron filtros militares, gubernamentales o periodísticos
-                rigurosos, hay <strong className="text-text">seis cosas plausibles</strong>{" "}
+                rigurosos, hay <strong className="text-text">ocho cosas plausibles</strong>{" "}
                 que estos objetos podrían ser. No compiten entre sí — un mismo
                 caso puede ser dos a la vez. Cada una con su nivel de confianza,
                 en las mismas palabras que usan los analistas de inteligencia
@@ -104,7 +104,7 @@ export default function ProbabilidadesPage() {
               <>
                 Looking at the <strong className="text-text">{STATS.cases} UAP cases</strong>{" "}
                 that passed strict military, government or journalistic filters,
-                there are <strong className="text-text">six plausible things</strong>{" "}
+                there are <strong className="text-text">eight plausible things</strong>{" "}
                 these objects could be. They don&apos;t compete — a single case
                 can be more than one at once. Each gets a confidence level in
                 the same words intelligence analysts use
@@ -153,8 +153,8 @@ export default function ProbabilidadesPage() {
           </H2>
           <Body className="text-muted">
             <T
-              es={`Las seis del cuadro de arriba describen, cada una a su modo, qué podrían ser los ${STATS.cases} casos del corpus. Las dos que siguen son distintas: una habla de un universo de reportes anterior al filtro (los miles que nunca llegan a este corpus), la otra es una conclusión que se desprende de las seis, no una hipótesis aparte. Por eso van con su propia explicación.`}
-              en={`The six above each describe, in their own way, what the ${STATS.cases} corpus cases could be. The next two are different: one talks about a prior universe of reports (the thousands that never reach this corpus), the other is a conclusion that follows from the six, not a separate hypothesis. So they get their own explanation.`}
+              es={`Las ocho del cuadro de arriba describen, cada una a su modo, qué podrían ser los ${STATS.cases} casos del corpus. Las dos que siguen son distintas: una habla de un universo de reportes anterior al filtro (los miles que nunca llegan a este corpus), la otra es una conclusión que se desprende de las ocho, no una hipótesis aparte. Por eso van con su propia explicación.`}
+              en={`The eight above each describe, in their own way, what the ${STATS.cases} corpus cases could be. The next two are different: one talks about a prior universe of reports (the thousands that never reach this corpus), the other is a conclusion that follows from the eight, not a separate hypothesis. So they get their own explanation.`}
             />
           </Body>
         </header>

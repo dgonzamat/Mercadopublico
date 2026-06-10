@@ -1,0 +1,98 @@
+{
+  "id": "mystery-drones-east-coast-2024",
+  "num": 144,
+  "name": "Mystery Drones · costa este (New Jersey + NY + bases)",
+  "name_en": "Mystery Drones · East Coast (New Jersey + NY + bases)",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.0583,
+    "lng": -74.4057,
+    "place": "New Jersey + área de la costa este de EE.UU."
+  },
+  "tier": "A",
+  "epistemicStatus": "developing",
+  "probability": 50,
+  "summary": "Entre noviembre y diciembre de 2024, una ola de avistamientos de drones de gran tamaño y comportamiento coordinado fue reportada sobre New Jersey y la costa este de EE.UU., incluyendo sobrevuelos sobre instalaciones militares (Picatinny Arsenal, Naval Weapons Station Earle), reactores nucleares (Salem y Hope Creek) y residencias del Gobernador Phil Murphy. La FBI, DHS, FAA y AARO ejecutaron investigación conjunta. La administración Biden y luego la Trump declararon oficialmente que no se trataba de tecnología anómala ni amenaza extranjera —caracterizándolos como mezcla de aeronaves comerciales, drones autorizados y misidentificaciones— sin embargo, varios legisladores (incluyendo el Gobernador Murphy y senadores de NJ) cuestionaron públicamente la explicación. El origen verdadero quedó oficialmente abierto. Es el caso ambiguo emblemático del corpus para `tecnologia-adversaria`.",
+  "summary_en": "Between November and December 2024, a wave of sightings of large drones with coordinated behavior was reported over New Jersey and the U.S. East Coast, including overflights of military installations (Picatinny Arsenal, Naval Weapons Station Earle), nuclear reactors (Salem and Hope Creek) and Governor Phil Murphy's residences. The FBI, DHS, FAA and AARO conducted a joint investigation. The Biden administration and later the Trump administration officially stated that this was neither anomalous technology nor a foreign threat —characterizing them as a mix of commercial aircraft, authorized drones and misidentifications— however, several lawmakers (including Governor Murphy and NJ senators) publicly questioned the explanation. The true origin remained officially open. It is the corpus's emblematic ambiguous case for `tecnologia-adversaria`.",
+  "patterns": [
+    "8e",
+    "8h",
+    "8n"
+  ],
+  "category": "incident",
+  "whatHappened": "Los primeros reportes públicos de drones grandes y coordinados sobre New Jersey comenzaron a finales de noviembre de 2024. Para mediados de diciembre, miles de avistamientos habían sido registrados a través de aplicaciones civiles y reportes a la FAA, incluyendo videos en alta resolución de drones de aparente tamaño industrial (estimados entre 1.5 y 6 metros de envergadura) operando en formación, a baja altitud y velocidad mayor a la de drones comerciales típicos, con luces estroboscópicas y sobre todo en horarios nocturnos.\n\nLos sobrevuelos cubrieron una zona amplia: Picatinny Arsenal (centro de I+D de armas del US Army), Naval Weapons Station Earle (terminal de transferencia de munición naval para la flota del Atlántico), los reactores nucleares de Salem y Hope Creek operados por PSEG Nuclear, la propiedad residencial del Gobernador Phil Murphy en Middletown Township, y áreas urbanas del norte de Nueva Jersey y de Long Island. El Gobernador Murphy convocó conferencias de prensa exigiendo explicaciones federales. El Senador Andy Kim y el Senador Cory Booker (ambos de NJ) presionaron públicamente al DHS y a la FAA. La FBI, DHS, FAA y AARO ejecutaron investigación conjunta documentada y desplegaron equipos de tracking adicionales.\n\nEl 17 de diciembre de 2024, la portavoz de seguridad nacional de la Casa Blanca Karine Jean-Pierre y el director del FBI Christopher Wray declararon en conferencia que los sobrevuelos eran mayoritariamente aeronaves comerciales, drones autorizados, helicópteros y misidentificaciones, y que 'no había evidencia de amenaza extranjera ni de tecnología anómala'. Varios legisladores y el propio Gobernador Murphy rechazaron públicamente esta explicación como insuficiente. La administración Trump, asumiendo en enero 2025, sostuvo la misma posición oficial. Sin embargo, no se publicó análisis forense detallado de los drones, no se identificaron operadores específicos para la mayoría de los sobrevuelos sobre instalaciones sensibles, y el origen verdadero quedó oficialmente abierto. La administración Trump no inició una investigación renovada, dejando el caso como ambivalente en el registro institucional.",
+  "whatHappened_en": "The first public reports of large coordinated drones over New Jersey began in late November 2024. By mid-December, thousands of sightings had been registered through civilian apps and reports to the FAA, including high-resolution videos of drones of apparent industrial size (estimated 1.5 to 6 meters in wingspan) operating in formation, at low altitude and at speeds greater than typical commercial drones, with strobe lights and predominantly during nighttime hours.\n\nThe overflights covered a wide zone: Picatinny Arsenal (US Army weapons R&D center), Naval Weapons Station Earle (naval ammunition transfer terminal for the Atlantic fleet), the Salem and Hope Creek nuclear reactors operated by PSEG Nuclear, Governor Phil Murphy's residential property in Middletown Township, and urban areas of northern New Jersey and Long Island. Governor Murphy convened press conferences demanding federal explanations. Senator Andy Kim and Senator Cory Booker (both NJ) publicly pressed DHS and FAA. The FBI, DHS, FAA and AARO conducted a documented joint investigation and deployed additional tracking equipment.\n\nOn December 17, 2024, White House national security spokesperson Karine Jean-Pierre and FBI Director Christopher Wray declared at a press conference that the overflights were mostly commercial aircraft, authorized drones, helicopters and misidentifications, and that 'there was no evidence of foreign threat or anomalous technology'. Several lawmakers and Governor Murphy himself publicly rejected this explanation as insufficient. The Trump administration, taking office in January 2025, maintained the same official position. However, no detailed forensic analysis of the drones was published, no specific operators were identified for most overflights over sensitive installations, and the true origin remained officially open. The Trump administration did not initiate a renewed investigation, leaving the case as ambivalent in the institutional record.",
+  "whyMatters": "Es el caso ambiguo más relevante del corpus para `tecnologia-adversaria`. Combina cuatro rasgos que ningún caso anterior tenía simultáneamente: (a) escala mediática (miles de avistamientos, cobertura nacional sostenida durante semanas), (b) afectación de targets de seguridad nacional (Picatinny, NWS Earle, Salem/Hope Creek reactores), (c) coordinación federal explícita FBI+DHS+FAA+AARO, y (d) explicación oficial **disputada públicamente por legisladores en ejercicio del estado afectado**, incluyendo el Gobernador y senadores. La hipótesis `tecnologia-adversaria` se beneficia porque el caso pertenece estructuralmente a esa categoría: drones de origen no acreditado sobre infraestructura crítica es exactamente la firma del espionaje aéreo adversario. Pero el caso también deja viva la posibilidad de programas-clasificados (drones US no reconocidos en testing) y de la versión escéptica (efectivamente fue una mezcla de aeronaves comerciales mal identificadas). Tier A por la investigación federal conjunta, la cobertura sostenida y los datos públicos disputados; no Tier S porque no hubo identificación oficial concluyente ni recuperación física de un dron específico.",
+  "whyMatters_en": "It is the corpus's most relevant ambiguous case for `tecnologia-adversaria`. It combines four features no prior case had simultaneously: (a) media scale (thousands of sightings, sustained national coverage over weeks), (b) impact on national-security targets (Picatinny, NWS Earle, Salem/Hope Creek reactors), (c) explicit federal coordination FBI+DHS+FAA+AARO, and (d) official explanation **publicly disputed by sitting lawmakers of the affected state**, including the Governor and senators. The `tecnologia-adversaria` hypothesis benefits because the case belongs structurally to that category: drones of unaccredited origin over critical infrastructure is exactly the signature of adversary aerial espionage. But the case also leaves alive the possibility of classified programs (unacknowledged U.S. drones in testing) and of the skeptical version (it was effectively a mix of misidentified commercial aircraft). Tier A for the joint federal investigation, sustained coverage and disputed public data; not Tier S because there was no conclusive official identification nor physical recovery of a specific drone.",
+  "evidence": [
+    "Miles de avistamientos públicos entre noviembre y diciembre 2024 documentados vía FAA, apps civiles, y reportes policiales locales",
+    "Sobrevuelos sobre instalaciones críticas: Picatinny Arsenal, Naval Weapons Station Earle, reactores Salem y Hope Creek (PSEG Nuclear), residencia del Gobernador Phil Murphy en Middletown Township",
+    "Coordinación federal conjunta FBI + DHS + FAA + AARO durante el periodo del evento; despliegue de equipos de tracking adicionales",
+    "Declaración oficial de la Casa Blanca (Karine Jean-Pierre) y FBI (Director Christopher Wray) el 17 dic 2024: 'sin evidencia de amenaza extranjera ni tecnología anómala'",
+    "Disputa pública oficial: el Gobernador NJ Phil Murphy + Senador Andy Kim + Senador Cory Booker rechazan la explicación como insuficiente",
+    "Ausencia de análisis forense detallado publicado, ausencia de identificación de operadores específicos para sobrevuelos sobre instalaciones sensibles, origen verdadero oficialmente abierto",
+    "Continuidad de posición oficial bajo administración Trump (enero 2025+): sin investigación renovada, caso queda institucionalmente ambivalente"
+  ],
+  "evidence_en": [
+    "Thousands of public sightings between November and December 2024 documented via FAA, civilian apps and local police reports",
+    "Overflights of critical installations: Picatinny Arsenal, Naval Weapons Station Earle, Salem and Hope Creek nuclear reactors (PSEG Nuclear), Governor Phil Murphy's residence in Middletown Township",
+    "Joint federal coordination FBI + DHS + FAA + AARO during the event period; deployment of additional tracking equipment",
+    "Official statement from the White House (Karine Jean-Pierre) and FBI (Director Christopher Wray) on Dec 17, 2024: 'no evidence of foreign threat or anomalous technology'",
+    "Official public dispute: NJ Governor Phil Murphy + Senator Andy Kim + Senator Cory Booker reject the explanation as insufficient",
+    "Absence of published detailed forensic analysis, absence of specific operator identification for overflights of sensitive installations, true origin officially open",
+    "Continuity of official position under the Trump administration (January 2025+): no renewed investigation, the case remains institutionally ambivalent"
+  ],
+  "sources": [
+    {
+      "name": "White House Press Briefing 17 dic 2024 (Karine Jean-Pierre + FBI Director Wray)",
+      "url": "https://www.whitehouse.gov/briefing-room/press-briefings/",
+      "note": "Declaración oficial 'sin evidencia de amenaza extranjera ni tecnología anómala'."
+    },
+    {
+      "name": "Office of Governor Phil Murphy — Press conferences Dec 2024",
+      "url": "https://www.nj.gov/governor/news/",
+      "note": "Disputa pública estatal de la explicación federal."
+    },
+    {
+      "name": "Senator Andy Kim (NJ) — Public statements re drone sightings Dec 2024",
+      "url": "https://www.kim.senate.gov/",
+      "note": "Presión legislativa federal."
+    },
+    {
+      "name": "AARO — Joint federal investigation report Nov-Dec 2024",
+      "url": "https://www.aaro.mil/",
+      "note": "Documento institucional de la coordinación FBI/DHS/FAA/AARO."
+    },
+    {
+      "name": "NYT — 'New Jersey Drone Sightings: What We Know and What We Don't' (dic 2024)",
+      "url": "https://www.nytimes.com/",
+      "note": "Cobertura periodística sostenida del incidente."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Sobrevuelos coordinados sobre múltiples targets de seguridad nacional (arsenal del Army, terminal de munición naval, reactores nucleares, residencia de gobernador) durante semanas, con coordinación federal conjunta FBI+DHS+FAA+AARO, en un periodo de tensión geopolítica documentada con China y Rusia. La firma operacional (formación + targeting de infraestructura crítica + duración) es congruente con espionaje aéreo adversario estructurado. Modest porque la explicación oficial específicamente niega esa lectura y la cierre institucional no fue concluyente.",
+      "rationaleEn": "Coordinated overflights of multiple national-security targets (Army arsenal, naval munitions terminal, nuclear reactors, governor's residence) over weeks, with joint federal FBI+DHS+FAA+AARO coordination, during a period of documented geopolitical tension with China and Russia. The operational signature (formation + critical-infrastructure targeting + duration) is congruent with structured adversary aerial espionage. Modest because the official explanation specifically denies that reading and institutional closure was not conclusive."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La hipótesis alternativa: drones US no reconocidos en testing —tanto el Picatinny Arsenal como NWS Earle son sitios de I+D y operaciones de armas— donde sobrevuelos de drones experimentales US no acreditados explicarían la falta de identificación oficial. Minimal porque sobrevolar residencia de gobernador y reactores nucleares no encaja con el patrón típico de testing US.",
+      "rationaleEn": "The alternative hypothesis: unacknowledged U.S. drones in testing —both Picatinny Arsenal and NWS Earle are R&D and weapons-operations sites— where overflights of unaccredited experimental U.S. drones would explain the lack of official identification. Minimal because overflying a governor's residence and nuclear reactors does not fit the typical U.S. testing pattern."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La explicación oficial sostiene que la mayoría de los avistamientos fueron aeronaves comerciales, drones autorizados, helicópteros y misidentificaciones. Esa explicación captura ciertamente parte del volumen total de reportes. Minimal porque no cubre los sobrevuelos sobre instalaciones críticas, que son los datos analíticamente relevantes.",
+      "rationaleEn": "The official explanation holds that most sightings were commercial aircraft, authorized drones, helicopters and misidentifications. That explanation certainly captures part of the total reporting volume. Minimal because it does not cover overflights of critical installations, which are the analytically relevant data points."
+    }
+  ]
+}

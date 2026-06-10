@@ -65,9 +65,9 @@
     {
       "hypothesisId": "programas-clasificados",
       "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Cadena de mando NORAD documentada + decisión presidencial de derribo + uso de AIM-9X por F-16 sobre territorio EE.UU. constituyen la confirmación institucional más alta del corpus para tratamiento militar del fenómeno.",
-      "rationaleEn": "Documented NORAD chain of command + presidential decision to shoot down + use of AIM-9X by F-16 over U.S. territory constitute the highest institutional confirmation in the corpus for military treatment of the phenomenon."
+      "strength": "modest",
+      "rationale": "La cadena de mando NORAD + decisión presidencial + AIM-9X constituyen el tratamiento militar del fenómeno como amenaza no acreditada. Una lectura US-program existe (drones experimentales US no acreditados) pero el reconocimiento posterior de AARO/DoD de la serie de globos chinos previos categorizados como UAP empuja la presunción razonable hacia adversaria, no doméstica. Modest captura la ambivalencia: programas-clasificados US sigue siendo una lectura plausible pero ya no la default.",
+      "rationaleEn": "The NORAD chain of command + presidential decision + AIM-9X constitute military treatment of the phenomenon as an unaccredited threat. A U.S.-program reading exists (unacknowledged experimental U.S. drones) but the subsequent AARO/DoD acknowledgment of the series of prior Chinese balloons categorized as UAP pushes the reasonable presumption toward adversary, not domestic. Modest captures the ambivalence: U.S. classified programs remains a plausible reading but no longer the default."
     },
     {
       "hypothesisId": "entidades-no-humanas",
@@ -82,6 +82,13 @@
       "strength": "modest",
       "rationale": "Tracking radar sólido + firma IR + capacidad de blanqueo por AIM-9X excluye fenómenos atmosféricos (plasma, sprites, ball lightning).",
       "rationaleEn": "Solid radar tracking + IR signature + ability to be locked by AIM-9X excludes atmospheric phenomena (plasma, sprites, ball lightning)."
+    },
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "substantial",
+      "rationale": "Lake Huron fue derribado entre el 10 y 12 de febrero de 2023, en la ventana inmediatamente posterior al derribo del globo chino confirmado de Carolina del Sur (4 feb) y dos derribos previos sin identificar (Alaska 10 feb, Yukon 11 feb). El reconocimiento posterior de AARO/DoD de la serie histórica de globos chinos sobre territorio EE.UU. categorizados como UAP eleva substancialmente la presunción de que Lake Huron también es origen adversario (china o ruso). La ausencia de recuperación pública de los restos no permite cierre, pero la base bayesiana razonable ahora favorece adversaria sobre anómala mientras no se pruebe lo contrario.",
+      "rationaleEn": "Lake Huron was shot down between Feb 10 and 12, 2023, in the window immediately following the confirmed Chinese balloon shoot-down off South Carolina (Feb 4) and two prior unidentified shoot-downs (Alaska Feb 10, Yukon Feb 11). The subsequent AARO/DoD acknowledgment of the historical series of Chinese balloons over U.S. territory categorized as UAP substantially elevates the presumption that Lake Huron is also adversary-origin (Chinese or Russian). The absence of public wreckage recovery prevents closure, but the reasonable Bayesian base now favors adversary over anomalous unless proven otherwise."
     }
   ]
 }

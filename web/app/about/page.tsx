@@ -14,7 +14,7 @@ import { STATS } from "@/lib/siteStats";
 export const metadata = {
   title: "Method",
   description:
-    "Cómo se pesa la evidencia: cuatro tiers de fuerza probatoria, retornos decrecientes por caso, y por qué seis hipótesis pueden ser parcialmente ciertas en simultáneo.",
+    "Cómo se pesa la evidencia: cuatro tiers de fuerza probatoria, retornos decrecientes por caso, y por qué ocho hipótesis pueden ser parcialmente ciertas en simultáneo.",
 };
 
 const CHAPTERS = [
@@ -33,14 +33,14 @@ const CHAPTERS = [
   {
     id: "non-exclusive",
     n: "3",
-    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades superan 100% (y no es un error)", tldr: "Las seis explicaciones principales no compiten entre sí — un mismo caso puede caer en más de una" },
-    en: { eyebrow: "Chapter 3", h2: "Why probabilities exceed 100% (and it's not a bug)", tldr: "The six main explanations don't compete — a single case can fall into more than one" },
+    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades superan 100% (y no es un error)", tldr: "Las ocho explicaciones principales no compiten entre sí — un mismo caso puede caer en más de una" },
+    en: { eyebrow: "Chapter 3", h2: "Why probabilities exceed 100% (and it's not a bug)", tldr: "The eight main explanations don't compete — a single case can fall into more than one" },
   },
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Hipótesis fáciles vs hipótesis en frontera", tldr: "Cinco de las seis explicaciones están razonablemente decididas — programas clasificados arriba, subclases específicas abajo. Solo entidades no humanas (categoría amplia) está abierta a evidencia decisiva." },
-    en: { eyebrow: "Chapter 4", h2: "Easy hypotheses vs frontier hypotheses", tldr: "Five of the six explanations are reasonably settled — classified programs near the top, specific subclasses near the bottom. Only the broad 'non-human entities' category remains open to decisive evidence." },
+    es: { eyebrow: "Capítulo 4", h2: "Hipótesis fáciles vs hipótesis en frontera", tldr: "Seis de las ocho explicaciones están razonablemente decididas — programas clasificados y tecnología adversaria arriba, subclases específicas abajo. Entidades no humanas y la afirmación de ingeniería inversa son las dos abiertas a evidencia decisiva." },
+    en: { eyebrow: "Chapter 4", h2: "Easy hypotheses vs frontier hypotheses", tldr: "Six of the eight explanations are reasonably settled — classified programs and adversary technology near the top, specific subclasses near the bottom. Non-human entities and the reverse-engineering claim are the two open to decisive evidence." },
   },
   {
     id: "movers",
@@ -228,8 +228,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="Distinción crítica del paradigma estadístico: las seis explicaciones principales no compiten entre sí — pueden ser parcialmente verdaderas a la vez. Por eso los porcentajes pueden sumar más de 100. Esto no es un error; es la estructura real del problema. Negarlo lleva a la falacia del 'tiene que ser una sola explicación'."
-                  en="Critical distinction of the statistical paradigm: the six main explanations don't compete with each other — they can be partially true at once. That's why percentages can sum to more than 100. This isn't a bug; it's the real structure of the problem. Denying it leads to the 'must be one single explanation' fallacy."
+                  es="Distinción crítica del paradigma estadístico: las ocho explicaciones principales no compiten entre sí — pueden ser parcialmente verdaderas a la vez. Por eso los porcentajes pueden sumar más de 100. Esto no es un error; es la estructura real del problema. Negarlo lleva a la falacia del 'tiene que ser una sola explicación'."
+                  en="Critical distinction of the statistical paradigm: the eight main explanations don't compete with each other — they can be partially true at once. That's why percentages can sum to more than 100. This isn't a bug; it's the real structure of the problem. Denying it leads to the 'must be one single explanation' fallacy."
                 />
               </Body>
               <div className="rounded-lg border-l-4 border-accent bg-surface-2 px-5 py-4">
@@ -259,8 +259,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="De las seis explicaciones principales del corpus, cinco están razonablemente decididas — programa clasificado arriba (~96% efectivo) con evidencia histórica documentada (U-2, F-117); fenómeno natural raro, que arrancó con un prior alto (70%) pero que el corpus empujó hasta ~44% efectivo porque los casos con sensor muestran objetos estructurados, no plasma; y las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal) abajo porque su evidencia es testimonial o sin documentos primarios. La sexta, entidades no humanas (categoría amplia), es la única que un solo experimento decisivo podría mover. Por eso ahí vive el debate del corpus."
-                  en="Of the six main corpus explanations, five are reasonably settled — classified programs near the top (~96% effective) with documented historical evidence (U-2, F-117); rare natural phenomenon, which started from a high prior (70%) but the corpus pushed down to ~44% effective because the sensor cases show structured objects, not plasma; and the three specific subclasses (interdimensional, non-materialist ontological, formal treaty) near the bottom because their evidence is testimonial or lacks primary documents. The sixth, broad non-human entities, is the only one a single decisive experiment could move. That's where the corpus debate lives."
+                  es="De las ocho explicaciones principales del corpus, seis están razonablemente decididas — programa clasificado arriba (~96% efectivo) con evidencia histórica documentada (U-2, F-117), tecnología adversaria también arriba (~63%) con confirmación oficial del globo chino sobre Montana 2023, fenómeno natural raro que el corpus empujó hasta ~44% efectivo porque los casos con sensor muestran objetos estructurados, y las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal) abajo porque su evidencia es testimonial. Las dos abiertas son entidades no humanas (categoría amplia, ~51%) e ingeniería inversa (~31%, programa US de RE de tech no humana): ambas se moverían con un experimento decisivo o un release ejecutivo. Por eso ahí vive el debate del corpus."
+                  en="Of the eight main corpus explanations, six are reasonably settled — classified programs near the top (~96% effective) with documented historical evidence (U-2, F-117), adversary technology also near the top (~63%) with official confirmation of the Chinese balloon over Montana 2023, rare natural phenomenon that the corpus pushed down to ~44% effective because the sensor cases show structured objects, and the three specific subclasses (interdimensional, non-materialist ontological, formal treaty) near the bottom because their evidence is testimonial. The two open ones are broad non-human entities (~51%) and reverse-engineering (~31%, a U.S. RE program of non-human tech): both would move with a decisive experiment or an executive release. That's where the corpus debate lives."
                 />
               </Body>
               <div className="grid gap-4 sm:grid-cols-3">
@@ -306,8 +306,8 @@ export default function AboutPage() {
               </div>
               <Caption className="pt-2">
                 <T
-                  es="Las dos hipótesis adicionales — misidentificación (97%, antes del filtro institucional) y heterogeneidad (95%, consecuencia de las seis principales) — viven en /probabilidades en su propia sección."
-                  en="The two additional hypotheses — misidentification (97%, before the institutional filter) and heterogeneity (95%, consequence of the six main ones) — live in /probabilidades in their own section."
+                  es="Las dos hipótesis adicionales — misidentificación (97%, antes del filtro institucional) y heterogeneidad (95%, consecuencia de las ocho principales) — viven en /probabilidades en su propia sección."
+                  en="The two additional hypotheses — misidentification (97%, before the institutional filter) and heterogeneity (95%, consequence of the eight main ones) — live in /probabilidades in their own section."
                 />
               </Caption>
             </div>
@@ -382,11 +382,11 @@ export default function AboutPage() {
         <section className="space-y-6 border-t-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
           <Eyebrow><T es="Ya entendés el método" en="You now understand the method" /></Eyebrow>
           <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
-            <T es="Ahora mirá el resultado: seis explicaciones con su nivel de confianza" en="Now see the result: six explanations with their confidence level" />
+            <T es="Ahora mirá el resultado: ocho explicaciones con su nivel de confianza" en="Now see the result: eight explanations with their confidence level" />
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/probabilidades" className="inline-flex min-h-[48px] items-center bg-accent px-6 py-2 text-base font-medium text-bg hover:bg-text">
-              <T es="Ver las seis explicaciones →" en="See the six explanations →" />
+              <T es="Ver las ocho explicaciones →" en="See the eight explanations →" />
             </Link>
             <Link href="/cases" className="inline-flex min-h-[48px] items-center border-2 border-text px-6 py-2 text-base font-medium text-text hover:bg-text hover:text-bg">
               <T es={`Ver los ${STATS.cases} casos →`} en={`See the ${STATS.cases} cases →`} />
