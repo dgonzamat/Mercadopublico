@@ -35,6 +35,22 @@
     "Vegetation inhibited in a geometric pattern for approximately a decade",
     "GEIPAN/CNES classification 'D1 — non-identifié' in the 1979 review"
   ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Reporte de entidades humanoides + parálisis inducida por dispositivo + marcas físicas en cruz con huecos de 40cm documentadas por Gendarmería en tiempo real + inhibición de vegetación durante una década + clasificación 'D1 non-identifié' del organismo oficial francés (GEIPAN/CNES) tras revisión completa. La combinación testimonio de entidades + evidencia física persistente + efecto biológico sostenido + investigación oficial es la modalidad que el corpus pesa: el testigo describió entidades Y dejó rastro material verificable. Modest y no substantial por testigo único.",
+      "rationaleEn": "Report of humanoid entities + device-induced paralysis + cross-shaped physical marks with 40cm holes documented by the Gendarmerie in real time + vegetation inhibition for a decade + 'D1 non-identifié' classification by the official French body (GEIPAN/CNES) after full review. The combination of entity testimony + persistent physical evidence + sustained biological effect + official investigation is the modality the corpus weighs: the witness described entities AND left verifiable material trace. Modest and not substantial due to single witness."
+    },
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Cuatro huecos de aterrizaje en patrón de cruz + inhibición de crecimiento de lavanda durante diez años en geometría definida no son producibles por fenómeno natural conocido. Minimal porque la evidencia física, aunque persistente, no fue analizada bioquímicamente con el estándar que GEPAN aplicaría después en Trans-en-Provence (1981).",
+      "rationaleEn": "Four landing holes in a cross pattern + lavender growth inhibition for ten years in defined geometry are not producible by any known natural phenomenon. Minimal because the physical evidence, though persistent, was not biochemically analyzed with the standard GEPAN would later apply at Trans-en-Provence (1981)."
+    }
+  ],
   "sources": [
     {
       "name": "GEIPAN/CNES — Case Valensole 1965 D1",

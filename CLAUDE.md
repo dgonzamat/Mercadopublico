@@ -23,7 +23,7 @@ web/
     cases/              # listado + detalle [slug]
     probabilidades/     # transparencia del juicio ICD-203
     atlas/              # Leaflet map (client)
-    patterns/           # 18 patrones recurrentes
+    patterns/           # 19 patrones recurrentes
     researchers/        # ecosistema disclosure (5 secciones)
     frameworks/         # 11 frameworks teóricos comparados
     about/, resumen/    # metodología + 10-min summary
@@ -31,7 +31,7 @@ web/
   lib/
     data.ts             # carga cases / patterns / frameworks / researchers
     types.ts            # UAPCase, Hypothesis, EvidenceContribution, etc.
-    hypotheses.ts       # source-of-truth: 8 hipótesis con prior + prose
+    hypotheses.ts       # source-of-truth: 10 hipótesis con prior + prose
     hypothesisMapping.ts # log-odds Bayesian update + pressure
     icd203.ts           # bandas verbales DNI ICD-203
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
