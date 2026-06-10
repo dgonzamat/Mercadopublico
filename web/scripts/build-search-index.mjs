@@ -138,8 +138,8 @@ const pageEntries = [
     id: "probabilidades",
     name: "Probabilidades",
     subtitle: "Hipótesis · ICD-203",
-    summary: "Las 8 hipótesis y su nivel de confianza ICD-203.",
-    summary_en: "The 8 hypotheses and their ICD-203 confidence level.",
+    summary: "Las 10 hipótesis y su nivel de confianza ICD-203.",
+    summary_en: "The 10 hypotheses and their ICD-203 confidence level.",
     keywords: "hipotesis hypotheses ICD-203 confianza confidence",
   },
   {
