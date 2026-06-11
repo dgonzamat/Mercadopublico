@@ -5,6 +5,8 @@ import { T } from "@/components/T";
 export const metadata = {
   title: "Marcos teóricos",
   description: `${STATS.frameworks} serious theoretical frameworks compared`,
+
+  alternates: { canonical: "/frameworks/" },
 };
 
 const verdictColor: Record<string, string> = {

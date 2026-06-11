@@ -15,6 +15,8 @@ export const metadata = {
   title: "Method",
   description:
     "Cómo se pesa la evidencia: cuatro tiers de fuerza probatoria, retornos decrecientes por caso, y por qué ocho hipótesis pueden ser parcialmente ciertas en simultáneo.",
+
+  alternates: { canonical: "/about/" },
 };
 
 const CHAPTERS = [

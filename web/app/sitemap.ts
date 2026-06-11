@@ -22,7 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
-    changeFrequency: "weekly" as const,
+    // Home + /cases + /probabilidades: daily (corpus and disclosure cycle move
+    // 2-3 times per week and home reflects the dial). Other static routes:
+    // weekly is honest for their actual update rate.
+    changeFrequency:
+      path === "" || path === "/cases" || path === "/probabilidades"
+        ? ("daily" as const)
+        : ("weekly" as const),
     priority: path === "" ? 1.0 : 0.8,
   }));
 

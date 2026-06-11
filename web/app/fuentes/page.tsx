@@ -7,6 +7,8 @@ export const metadata = {
   title: "Fuentes",
   description:
     "All sources cited across the UAP corpus — official FOIA documents, declassified archives, academic papers, investigative press, books and code.",
+
+  alternates: { canonical: "/fuentes/" },
 };
 
 export default function FuentesPage() {

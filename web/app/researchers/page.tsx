@@ -12,6 +12,8 @@ export const metadata = {
   title: "Disclosure ecosystem",
   description:
     "Researchers, whistleblowers, politicians, journalists and ontological-religious figures sustaining contemporary UAP disclosure",
+
+  alternates: { canonical: "/researchers/" },
 };
 
 const sections = [

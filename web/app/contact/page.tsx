@@ -10,6 +10,8 @@ export const metadata = {
   title: "Contacto",
   description:
     "Correcciones, fuentes primarias y casos faltantes. Cómo contribuir al cuaderno UAP Codex.",
+
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {
