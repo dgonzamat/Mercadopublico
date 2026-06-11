@@ -5,6 +5,8 @@ import { T } from "@/components/T";
 export const metadata = {
   title: "Patterns",
   description: `${STATS.patterns} recurring patterns (8a-8r) identified in the corpus`,
+
+  alternates: { canonical: "/patterns/" },
 };
 
 export default function PatternsPage() {

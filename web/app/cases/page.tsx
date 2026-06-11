@@ -11,6 +11,8 @@ import { EpistemicBadge } from "@/components/Badge";
 export const metadata = {
   title: "Casos",
   description: `${TOTAL_CASES} institutional cases documented 1947-2026`,
+
+  alternates: { canonical: "/cases/" },
 };
 
 const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [

@@ -20,6 +20,8 @@ export const metadata = {
   title: "Probabilities",
   description:
     "Detailed reasoning per hypothesis. ICD-203 + corpus evidence sustaining each judgment.",
+
+  alternates: { canonical: "/probabilidades/" },
 };
 
 const FEATURED_HYPOTHESIS_ID = "entidades-no-humanas";
