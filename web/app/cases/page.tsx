@@ -49,15 +49,16 @@ const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
 ];
 
 export default function CasesPage() {
-  // Períodos del más nuevo al más antiguo; dentro de cada uno, por probabilidad (mayor primero).
+  // CA-1 · la promesa de la Home es «caminar en orden cronológico»:
+  // eras ascendentes (1947 → 2026) y, dentro de cada una, por año.
   const eras = ERAS.map((era) => ({
     era,
     eraCases: cases
       .filter((c) => c.year_start >= era.start && c.year_start <= era.end)
-      .sort((a, b) => b.probability - a.probability),
-  }))
-    .filter(({ eraCases }) => eraCases.length > 0)
-    .reverse();
+      .sort(
+        (a, b) => a.year_start - b.year_start || b.probability - a.probability,
+      ),
+  })).filter(({ eraCases }) => eraCases.length > 0);
 
   const regionCounts: Partial<Record<Region, number>> = {};
   for (const c of cases) {
@@ -66,7 +67,7 @@ export default function CasesPage() {
   }
 
   return (
-    <div className="space-y-12 py-8">
+    <div data-cases-root className="space-y-12 py-8">
       <header className="space-y-4">
         <Eyebrow>
           <T es="El archivo · 1947–2026" en="The archive · 1947–2026" />
@@ -79,24 +80,27 @@ export default function CasesPage() {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es="Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. Del período más reciente al más antiguo; dentro de cada uno, por solidez de la evidencia."
-            en="Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From the most recent period to the oldest; within each, by strength of evidence."
+            es="Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. De 1947 a 2026, era por era, en orden cronológico."
+            en="Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From 1947 to 2026, era by era, in chronological order."
           />
         </Lede>
       </header>
 
-      <CategoryNav
-        label={{ es: "Saltar a una era", en: "Jump to an era" }}
-        items={eras.map(({ era, eraCases }) => ({
-          anchor: `era-${era.start}`,
-          es: `${era.start}–${era.end}`,
-          en: `${era.start}–${era.end}`,
-          count: eraCases.length,
-        }))}
-      />
+      {/* CA-5 · [data-era-nav]: se oculta vía CSS cuando hay filtro regional activo */}
+      <div data-era-nav>
+        <CategoryNav
+          label={{ es: "Saltar a una era", en: "Jump to an era" }}
+          items={eras.map(({ era, eraCases }) => ({
+            anchor: `era-${era.start}`,
+            es: `${era.start}–${era.end}`,
+            en: `${era.start}–${era.end}`,
+            count: eraCases.length,
+          }))}
+        />
+      </div>
 
-      <details className="group border-y border-text/15 py-4">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-mono text-xs uppercase tracking-widest text-muted hover:text-accent">
+      <details className="group">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border border-border bg-panel px-4 py-3 font-mono text-xs uppercase tracking-widest text-muted transition hover:border-accent/50 hover:text-accent">
           <span>
             <T
               es="Estadísticas del corpus · distribución por era, patrones, países"
@@ -131,6 +135,24 @@ export default function CasesPage() {
 
       <RegionFilter counts={regionCounts} total={cases.length}>
         <div className="space-y-8 pt-2">
+          {/* CA-2 · cabecera de columnas — una sola vez, estilo tabla editorial */}
+          <div
+            aria-hidden
+            className="grid grid-cols-[auto_auto_1fr_auto_auto_auto] items-center gap-4 border-b-2 border-text pb-2 font-mono text-[10px] uppercase tracking-widest text-muted"
+          >
+            <span className="hidden w-10 text-right sm:inline">Nº</span>
+            <span className="w-6" />
+            <span>
+              <T es="Caso" en="Case" />
+            </span>
+            <span className="hidden w-16 text-right sm:inline">
+              <T es="Año" en="Year" />
+            </span>
+            <span className="w-12 text-right">
+              <T es="Evid." en="Evid." />
+            </span>
+            <span className="w-12 text-right">%</span>
+          </div>
           {eras.map(({ era, eraCases }) => {
             return (
               <section
@@ -139,7 +161,7 @@ export default function CasesPage() {
                 data-group
                 className="scroll-mt-20"
               >
-                <h2 className="sticky top-14 z-10 -mx-4 bg-bg/95 px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted backdrop-blur">
+                <h2 className="sticky top-[76px] z-10 -mx-4 border-b border-border bg-bg px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted">
                   <span className="text-text">
                     {era.start}–{era.end}
                   </span>{" "}

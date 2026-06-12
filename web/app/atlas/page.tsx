@@ -3,6 +3,7 @@ import { cases } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
+import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { WorldMapLazy } from "@/components/WorldMapLazy";
 
 export const metadata = {
@@ -32,38 +33,55 @@ export default function AtlasPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
+    <div className="space-y-8 py-8">
+      {/* AT-2 · mismo patrón de header que /cases: Eyebrow + H1 + Lede */}
+      <header className="space-y-4">
+        <Eyebrow>
+          <T
+            es={`El territorio · ${STATS.countries} países`}
+            en={`The territory · ${STATS.countries} countries`}
+          />
+        </Eyebrow>
+        <H1>
           <T
             es="Dónde pasa lo que no debería estar pasando"
             en="Where the things that shouldn't happen, happen"
           />
-        </h1>
-        <p className="mt-2 text-muted">
+        </H1>
+        <Lede className="max-w-3xl text-muted">
           <T
-            es={`${STATS.cases} casos georeferenciados. Si fuera fenómeno gringo, la mancha estaría sobre Nevada. Mirá dónde realmente está. Click un marcador para ver el caso.`}
-            en={`${STATS.cases} georeferenced cases. If it were a US-only phenomenon, the cluster would be over Nevada. Look at where it actually is. Click a marker to see the case.`}
+            es={`${STATS.cases} casos georeferenciados. Si fuera fenómeno gringo, la mancha estaría sobre Nevada. Mira dónde está realmente. Toca un marcador para abrir el caso.`}
+            en={`${STATS.cases} georeferenced cases. If it were a US-only phenomenon, the cluster would be over Nevada. Look at where it actually is. Tap a marker to open the case.`}
           />
-        </p>
+        </Lede>
       </header>
 
       <WorldMapLazy countryResearchers={countryResearchers} />
 
       <nav className="flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
+        {/* AT-4 · puente al archivo · T-1 esquinas vivas · T-2 sin emoji */}
+        <Link
+          href="/cases"
+          className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
+        >
+          <T
+            es={`Los ${STATS.cases} casos en el archivo →`}
+            en={`The ${STATS.cases} cases in the archive →`}
+          />
+        </Link>
         <Link
           href="/researchers#agencias"
-          className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
+          className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
         >
-          <T es="🏛️ Agencias oficiales del fenómeno" en="🏛️ Official agencies for the phenomenon" />
+          <T es="Agencias oficiales del fenómeno" en="Official agencies for the phenomenon" />
         </Link>
         <Link
           href="/patterns"
-          className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
+          className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
         >
           <T
-            es={`🔁 Patrones documentados (${STATS.patterns})`}
-            en={`🔁 Documented patterns (${STATS.patterns})`}
+            es={`Patrones documentados (${STATS.patterns})`}
+            en={`Documented patterns (${STATS.patterns})`}
           />
         </Link>
       </nav>

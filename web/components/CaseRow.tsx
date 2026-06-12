@@ -41,10 +41,14 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       </span>
       <span
         className={`w-12 shrink-0 text-right font-mono text-xs ${tierColor}`}
+        title="Nivel de evidencia · S sólido · A aceptable · B folklórico"
       >
         {caseData.tier}
       </span>
-      <span className="w-12 shrink-0 text-right font-mono text-sm font-semibold tabular-nums text-text">
+      <span
+        className="w-12 shrink-0 text-right font-mono text-sm font-semibold tabular-nums text-text"
+        title="Probabilidad del caso · juicio ICD-203"
+      >
         {caseData.probability}%
       </span>
     </Link>

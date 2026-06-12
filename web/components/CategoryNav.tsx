@@ -32,7 +32,7 @@ export function CategoryNav({
           <li key={it.anchor}>
             <a
               href={`#${it.anchor}`}
-              className="inline-flex min-h-[44px] items-center gap-2 rounded border border-border bg-panel px-3 py-1 text-xs text-text hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="inline-flex min-h-[44px] items-center gap-2 border border-border bg-panel px-3 py-1 text-xs text-text hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <span>
                 <T es={it.es} en={it.en} />
