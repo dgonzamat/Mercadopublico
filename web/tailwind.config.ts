@@ -15,6 +15,8 @@ const config: Config = {
         text: "#1a1a1a",
         muted: "#6b6356",
         accent: "#c41e3a",
+        // CC-1 · mismo matiz, más luz — para text-accent sobre bg-text (5.4:1 AA)
+        "accent-bright": "#ee6075",
         tierS: "#8b0000",
         tierA: "#b86b1f",
         tierB: "#1e4f8b",

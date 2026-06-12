@@ -25,7 +25,7 @@ export function Badge({ variant = "neutral", className, title, children }: Badge
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 rounded px-2 py-0.5 font-mono text-xs uppercase tracking-widest",
+        "inline-flex items-center gap-1 px-2 py-0.5 font-mono text-xs uppercase tracking-widest",
         variants[variant],
         className,
       )}
@@ -89,7 +89,7 @@ export function EpistemicBadge({
   return (
     <span
       className={cn(
-        "inline-flex shrink-0 items-center gap-1 rounded border px-2 py-0.5 font-mono text-xs uppercase tracking-widest",
+        "inline-flex shrink-0 items-center gap-1 border px-2 py-0.5 font-mono text-xs uppercase tracking-widest",
         m.cls,
       )}
       title={compact ? m.es : undefined}

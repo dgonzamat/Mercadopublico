@@ -14,6 +14,8 @@ const NAV: Array<{ href: string; es: string; en: string }> = [
   { href: "/cases", es: "Casos", en: "Cases" },
   { href: "/atlas", es: "Atlas", en: "Atlas" },
   { href: "/researchers", es: "Actores", en: "Actors" },
+  // NA-1 · la puerta de entrada para el visitante nuevo, visible en desktop
+  { href: "/resumen", es: "Resumen", en: "Summary" },
   { href: "/blog", es: "Blog", en: "Blog" },
   { href: "/about", es: "Metodología", en: "Method" },
 ];

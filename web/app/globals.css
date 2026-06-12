@@ -126,3 +126,10 @@ html[data-locale="en"] [data-lang="es"] {
 [data-region-filter="africa"] [data-group]:not(:has([data-region="africa"])) {
   display: none;
 }
+
+/* CA-5 · con filtro regional activo, las anclas de era pueden apuntar a
+   secciones ocultas por :has() — se oculta el índice de eras mientras
+   haya un filtro distinto de "all". Cero JS, mismo patrón del resto. */
+[data-cases-root]:has([data-region-filter]:not([data-region-filter="all"])) [data-era-nav] {
+  display: none;
+}

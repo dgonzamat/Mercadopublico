@@ -101,12 +101,6 @@ export default function RootLayout({
                 UAP
                 <span className="ml-1 italic text-accent">Codex</span>
               </span>
-              <span
-                className="self-start font-mono text-[10px] font-normal not-italic leading-none text-muted"
-                title="Versión desplegada (número de PR mergeado)"
-              >
-                {BUILD_VERSION}
-              </span>
             </Link>
 
             <div className="hidden items-stretch gap-3 lg:flex">
@@ -131,7 +125,7 @@ export default function RootLayout({
 
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
 
-        <footer className="mt-32 border-t-2 border-text bg-panel">
+        <footer className="mt-16 border-t-2 border-text bg-panel">
           <div className="mx-auto max-w-6xl px-4 py-12 space-y-10">
             <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
               <div className="space-y-3">
@@ -220,11 +214,15 @@ export default function RootLayout({
               </nav>
             </div>
 
-            <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
+            <p
+              className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted"
+              title="Versión desplegada (número de PR mergeado)"
+            >
               <T
                 es="UAP Codex · análisis institucional · 1947–2026"
                 en="UAP Codex · institutional analysis · 1947–2026"
-              />
+              />{" "}
+              · {BUILD_VERSION}
             </p>
           </div>
         </footer>

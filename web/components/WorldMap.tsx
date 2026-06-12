@@ -108,7 +108,7 @@ export default function WorldMap({
             type="button"
             onClick={() => toggle(t.key)}
             aria-pressed={active[t.key]}
-            className={`inline-flex min-h-[36px] items-center gap-2 rounded border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            className={`inline-flex min-h-[36px] items-center gap-2 border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               active[t.key]
                 ? "border-accent/40 bg-panel text-text"
                 : "border-border/40 bg-transparent text-muted/40"
@@ -143,9 +143,9 @@ export default function WorldMap({
           id="atlas-country"
           value={country}
           onChange={(e) => setCountry(e.target.value)}
-          className="block w-full max-w-xs rounded border border-border bg-panel px-3 py-2 font-mono text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="block w-full max-w-xs border border-border bg-panel px-3 py-2 font-mono text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          <option value="all">{`🌐 Todos · ${cases.length}`}</option>
+          <option value="all">{`Todos · ${cases.length}`}</option>
           {countryOptions.map((o) => (
             <option key={o.code} value={o.code}>
               {`${o.flag} ${o.name} · ${o.n}`}
@@ -154,16 +154,16 @@ export default function WorldMap({
         </select>
       </div>
 
-      <div className="h-[60vh] min-h-[360px] overflow-hidden rounded-lg border border-border md:h-[600px]">
+      <div className="h-[60vh] min-h-[360px] overflow-hidden border border-border md:h-[600px]">
         <MapContainer
           center={[20, 0]}
           zoom={2}
           scrollWheelZoom
-          style={{ height: "100%", width: "100%", background: "#0a0a0f" }}
+          style={{ height: "100%", width: "100%", background: "#e8e4da" }}
         >
           <TileLayer
             attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
           />
           <FitBounds points={points} depKey={depKey} />
           {shown.map((c) => (
@@ -174,7 +174,7 @@ export default function WorldMap({
               pathOptions={{
                 color: TIER_COLOR[c.tier],
                 fillColor: TIER_COLOR[c.tier],
-                fillOpacity: 0.6,
+                fillOpacity: 0.75,
                 weight: 1,
               }}
               eventHandlers={{
@@ -199,6 +199,14 @@ export default function WorldMap({
         </MapContainer>
       </div>
 
+      {/* AT-3 · la codificación central del mapa, explicada en una línea */}
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
+        <T
+          es="○ tamaño = probabilidad del caso · color = nivel de evidencia"
+          en="○ size = case probability · color = evidence level"
+        />
+      </p>
+
       {country !== "all" && (
         <div className="space-y-2">
           <span className="block font-mono text-xs uppercase tracking-widest text-muted">
@@ -210,7 +218,7 @@ export default function WorldMap({
                 <a
                   key={r.id}
                   href={`${basePath}/researchers/${r.id}/`}
-                  className="inline-flex min-h-[36px] items-center gap-1.5 rounded-full border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex min-h-[36px] items-center gap-1.5 border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <span aria-hidden>{r.flag}</span>
                   {r.name}
