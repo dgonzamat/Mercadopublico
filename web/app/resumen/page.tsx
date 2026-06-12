@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Cta } from "@/components/Cta";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import {
@@ -150,11 +151,11 @@ export default function ResumenPage() {
                 Versión accesible del análisis completo. Para profundidad
                 técnica, ver{" "}
                 <Link href="/probabilidades" className="text-accent hover:underline">
-                  /probabilidades
+                  las probabilidades por hipótesis
                 </Link>{" "}
                 y{" "}
                 <Link href="/about" className="text-accent hover:underline">
-                  /about
+                  la metodología
                 </Link>
                 .
               </>
@@ -164,11 +165,11 @@ export default function ResumenPage() {
                 Accessible version of the full analysis. For technical depth,
                 see{" "}
                 <Link href="/probabilidades" className="text-accent hover:underline">
-                  /probabilidades
+                  the per-hypothesis probabilities
                 </Link>{" "}
                 and{" "}
                 <Link href="/about" className="text-accent hover:underline">
-                  /about
+                  the methodology
                 </Link>
                 .
               </>
@@ -311,28 +312,27 @@ export default function ResumenPage() {
         </Body>
       </section>
 
+      {/* CE-1/T-1 (extensión de la auditoría a esta página): primitiva Cta,
+          esquinas vivas, un solo primary. */}
       <nav className="flex flex-wrap gap-4 border-t border-border pt-8">
-        <Link
-          href="/cases"
-          className="inline-flex min-h-[44px] items-center rounded-md bg-accent px-5 py-2 text-sm font-medium text-bg hover:bg-accent/90"
-        >
+        <Cta href="/cases" variant="primary">
           <T
-            es={`Explorar ${STATS.cases} casos →`}
-            en={`Explore ${STATS.cases} cases →`}
+            es={`Explorar los ${STATS.cases} casos →`}
+            en={`Explore the ${STATS.cases} cases →`}
           />
-        </Link>
-        <Link
-          href="/probabilidades"
-          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-5 py-2 text-sm font-medium text-text hover:bg-panel"
-        >
-          <T es="Ver razonamiento" en="See reasoning" />
-        </Link>
-        <Link
-          href="/atlas"
-          className="inline-flex min-h-[44px] items-center rounded-md border border-border px-5 py-2 text-sm font-medium text-text hover:bg-panel"
-        >
-          <T es="Mapa" en="Map" />
-        </Link>
+        </Cta>
+        <Cta href="/probabilidades" variant="secondary">
+          <T
+            es="Por qué cada hipótesis tiene esa probabilidad"
+            en="Why each hypothesis has that probability"
+          />
+        </Cta>
+        <Cta href="/atlas" variant="secondary">
+          <T
+            es={`Ver el mapa global · ${STATS.countries} países`}
+            en={`See the global map · ${STATS.countries} countries`}
+          />
+        </Cta>
       </nav>
     </article>
   );
