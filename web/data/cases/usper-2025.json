@@ -14,8 +14,8 @@
   "tier": "S",
   "epistemicStatus": "projected",
   "probability": 80,
-  "summary": "Oficial PURSUE, USIC senior official testimony",
-  "summary_en": "Official PURSUE, USIC senior official testimony",
+  "summary": "En el marco del release PURSUE, AARO publicó declaraciones formales de un 'USPER' — testigo con credenciales de seguridad e identidad protegida — que describe acceso operacional a programas compartimentados con material aeroespacial recuperado de origen no convencional.",
+  "summary_en": "Under the PURSUE release, AARO published formal statements by a 'USPER' — a security-credentialed witness with protected identity — describing operational access to compartmented programs involving recovered aerospace material of unconventional origin.",
   "patterns": [
     "8b"
   ],

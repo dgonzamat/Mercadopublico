@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 85,
-  "summary": "Oficial PURSUE R02, derribo kinético UAP, primer caso documentado",
-  "summary_en": "Official PURSUE R02, kinetic UAP shootdown, first documented case",
+  "summary": "Un F-16 derribó con un misil AIM-9X, por orden presidencial, un objeto octogonal sin propulsión observable sobre el Lago Hurón: primer derribo cinético documentado de un objeto no identificado sobre territorio estadounidense, reconocido en el release PURSUE R02.",
+  "summary_en": "On presidential order, an F-16 shot down an octagonal object with no observable propulsion over Lake Huron with an AIM-9X missile: the first documented kinetic shootdown of an unidentified object over US territory, acknowledged in the PURSUE R02 release.",
   "patterns": [
     "8s"
   ],

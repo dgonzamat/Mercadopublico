@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 80,
-  "summary": "Multi-radar + Venom intercept lock invertido + Condon",
-  "summary_en": "Multi-radar + Venom intercept inverted lock + Condon",
+  "summary": "Tres bases de la USAF en Inglaterra rastrearon simultáneamente trazas a 2,000–4,000 mph; un caza Venom de la RAF logró enganche de radar y el objeto invirtió la posición táctica colocándose a su cola. El Comité Condon lo calificó de genuinamente desconcertante.",
+  "summary_en": "Three USAF bases in England simultaneously tracked returns at 2,000–4,000 mph; an RAF Venom achieved radar lock and the object reversed the tactical position onto its tail. The Condon Committee called it genuinely puzzling.",
   "patterns": [
     "8e"
   ],

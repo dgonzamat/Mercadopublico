@@ -14,8 +14,8 @@
   },
   "tier": "S",
   "probability": 75,
-  "summary": "209 avistamientos sobre base nuclear AFSWP, oficial PURSUE R02",
-  "summary_en": "209 sightings over AFSWP nuclear base, official PURSUE R02",
+  "summary": "Entre 1948 y 1950 se registraron 209 avistamientos de esferas verdes sobre el corredor nuclear Albuquerque–Los Álamos, investigados con patrocinio militar y reconocidos por AARO en el release PURSUE R02: la primera ola documentada sobre infraestructura nuclear estadounidense.",
+  "summary_en": "Between 1948 and 1950, 209 sightings of green spheres were logged over the Albuquerque–Los Alamos nuclear corridor, investigated under military sponsorship and acknowledged by AARO in the PURSUE R02 release: the first documented wave over US nuclear infrastructure.",
   "patterns": [
     "8b",
     "8f"
