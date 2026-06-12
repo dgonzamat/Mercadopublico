@@ -24,6 +24,32 @@ const cutoff = new Date(Date.now() - HOURS_WINDOW * 3600 * 1000);
 
 const candidates = [];
 
+// ─── Saneamiento de contenido externo ────────────────────────────────────────
+// Títulos, descripciones y URLs vienen de fuentes públicas no confiables
+// (cualquiera puede crear un repo/dataset con el topic monitoreado) y terminan
+// interpolados en el markdown del issue que abre el workflow. Neutralizamos:
+//   - URLs: solo https hacia los hosts esperados (un repo malicioso no puede
+//     hacer que el issue enlace a un dominio arbitrario o use otro esquema).
+//   - Texto: sin saltos de línea ni caracteres que rompan la sintaxis de link
+//     markdown `[título](url)` o abran bloques de código en el issue.
+const ALLOWED_HOSTS = new Set(["arxiv.org", "export.arxiv.org", "github.com", "huggingface.co"]);
+function safeUrl(raw) {
+  try {
+    const u = new URL(raw);
+    if (!ALLOWED_HOSTS.has(u.hostname)) return "";
+    u.protocol = "https:"; // arXiv emite ids http://; servimos siempre https
+    return u.href;
+  } catch {
+    return "";
+  }
+}
+function safeText(raw) {
+  return String(raw)
+    .replace(/[\[\]`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 async function fetchJSON(url, opts = {}) {
   const r = await fetch(url, opts);
   if (!r.ok) throw new Error(`${url} → HTTP ${r.status}`);
@@ -40,7 +66,7 @@ try {
   const query = encodeURIComponent(
     'abs:"UAP" OR abs:"UFO" OR abs:"unidentified aerial phenomena" OR abs:"anomalous aerial phenomena"',
   );
-  const url = `http://export.arxiv.org/api/query?search_query=${query}&sortBy=submittedDate&sortOrder=descending&max_results=20`;
+  const url = `https://export.arxiv.org/api/query?search_query=${query}&sortBy=submittedDate&sortOrder=descending&max_results=20`;
   const xml = await fetchText(url);
   const entries = xml.split("<entry>").slice(1);
   for (const e of entries) {
@@ -112,11 +138,16 @@ try {
   console.error("HuggingFace:", err.message);
 }
 
-// ─── Dedupe por URL y output ───────────────────────────────────────────────────────────
+// ─── Saneamiento, dedupe por URL y output ──────────────────────────────────────────────
 const seen = new Set();
-const unique = candidates.filter((c) =>
-  c.url && !seen.has(c.url) && seen.add(c.url),
-);
+const unique = candidates
+  .map((c) => ({
+    ...c,
+    title: safeText(c.title),
+    note: c.note ? safeText(c.note) : c.note,
+    url: safeUrl(c.url),
+  }))
+  .filter((c) => c.url && !seen.has(c.url) && seen.add(c.url));
 
 console.log(`Discovered ${unique.length} candidates in last ${HOURS_WINDOW}h`);
 for (const c of unique) console.log(`  [${c.source}] ${c.date} ${c.title.slice(0, 80)}`);

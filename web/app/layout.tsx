@@ -12,7 +12,7 @@ import { CookieConsent } from "@/components/CookieConsent";
 import { STATS } from "@/lib/siteStats";
 import { BUILD_VERSION } from "@/lib/version";
 import { SITE_URL } from "@/lib/site";
-import { websiteJsonLd } from "@/lib/jsonld";
+import { serializeJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -73,7 +73,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(websiteJsonLd()) }}
         />
       </head>
       <body className="min-h-screen font-sans">

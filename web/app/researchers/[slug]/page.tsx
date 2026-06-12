@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
-import { researcherJsonLd } from "@/lib/jsonld";
+import { researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { casesForResearcher } from "@/lib/researcherCases";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
@@ -53,7 +53,7 @@ export default function ResearcherDetailPage({
     <article className="mx-auto max-w-3xl space-y-12 py-4">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(researcherJsonLd(r)) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(researcherJsonLd(r)) }}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb

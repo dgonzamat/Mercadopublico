@@ -16,6 +16,17 @@ import { STATS } from "./siteStats";
  * apply to a historical case.
  */
 
+/**
+ * Serializa un objeto JSON-LD para inyectarlo en <script type="application/ld+json">.
+ * Escapa `<` como secuencia unicode (\\u003c): si algún campo del corpus llegara a contener
+ * "</script>" o "<!--", no puede cerrar el tag ni abrir comentario HTML
+ * (el JSON resultante sigue siendo válido). Usar SIEMPRE este helper en vez
+ * de JSON.stringify directo dentro de dangerouslySetInnerHTML.
+ */
+export function serializeJsonLd(obj: unknown): string {
+  return JSON.stringify(obj).replace(/</g, "\\u003c");
+}
+
 export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
