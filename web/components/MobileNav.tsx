@@ -27,7 +27,7 @@ const NAV_LINKS = [
   },
   {
     href: "/researchers",
-    es: { label: "Actores", sub: "El ecosistema del disclosure" },
+    es: { label: "Actores", sub: "El ecosistema de la divulgación" },
     en: { label: "Actors", sub: "The disclosure ecosystem" },
   },
   {

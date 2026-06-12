@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { posts, getPost } from "@/lib/posts";
-import { postJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { breadcrumbJsonLd, postJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
@@ -14,7 +14,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const p = getPost(params.slug);
   if (!p) return { title: "Post no encontrado" };
-  return { title: `${p.title}`, description: p.summary };
+  return {
+    title: p.title,
+    description: p.summary,
+    alternates: { canonical: `/blog/${p.id}/` },
+  };
 }
 
 export default function PostDetailPage({
@@ -39,6 +43,18 @@ export default function PostDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(postJsonLd(p)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(
+            breadcrumbJsonLd([
+              { href: "/", label: "Inicio" },
+              { href: "/blog/", label: "Blog" },
+              { label: p.title },
+            ]),
+          ),
+        }}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb

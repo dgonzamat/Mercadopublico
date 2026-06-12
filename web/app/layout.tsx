@@ -28,9 +28,12 @@ const inter = Inter({
   display: "swap",
 });
 
-const TITLE = "UAP Codex — Institutional analysis";
-const DESCRIPTION = `${STATS.years} years of UAP phenomenon documented institutionally. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} frameworks compared.`;
-const SHORT_DESCRIPTION = `${STATS.years} years of UAP phenomenon, ${STATS.cases} cases, ${STATS.patterns} patterns.`;
+// Metadata por defecto en español: es el idioma base del sitio (<html lang="es">,
+// locale og es_ES). El inglés vive en el toggle del cliente, no en lo que
+// indexan los buscadores.
+const TITLE = "UAP Codex — Análisis institucional del fenómeno UAP";
+const DESCRIPTION = `${STATS.years} años de fenómeno UAP documentado institucionalmente. ${STATS.cases} casos, ${STATS.patterns} patrones, ${STATS.frameworks} marcos teóricos comparados.`;
+const SHORT_DESCRIPTION = `${STATS.years} años de fenómeno UAP, ${STATS.cases} casos, ${STATS.patterns} patrones.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

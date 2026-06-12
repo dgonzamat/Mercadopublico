@@ -57,10 +57,10 @@ export const CATEGORY_LABELS: Record<
       "Open archives aggregating FOIA documents and original materials: The Black Vault, Project 1947, archive.org.",
   },
   academic: {
-    es: "Papers académicos y peer-reviewed",
+    es: "Artículos académicos revisados por pares",
     en: "Academic papers and peer-reviewed",
     description_es:
-      "Publicaciones científicas en arxiv, journals, conferences. Incluye trabajos de Nolan, Vallée, Loeb y otros.",
+      "Publicaciones científicas en arXiv, revistas y congresos. Incluye trabajos de Nolan, Vallée, Loeb y otros.",
     description_en:
       "Scientific publications in arxiv, journals, conferences. Includes work by Nolan, Vallée, Loeb and others.",
   },
@@ -68,12 +68,12 @@ export const CATEGORY_LABELS: Record<
     es: "Periodismo investigativo",
     en: "Investigative journalism",
     description_es:
-      "NYT, Washington Post, The Debrief, News Nation, plus international press coverage of incidents and disclosure.",
+      "NYT, Washington Post, The Debrief, News Nation, más la cobertura de prensa internacional de incidentes y divulgación.",
     description_en:
       "NYT, Washington Post, The Debrief, News Nation, plus international press coverage of incidents and disclosure.",
   },
   book: {
-    es: "Libros y memoirs",
+    es: "Libros y memorias",
     en: "Books and memoirs",
     description_es:
       "Bibliografía publicada: Vallée, Mack, Strieber, Elizondo, Graves, Pasulka, Coulthart, Freixedo.",
@@ -84,7 +84,7 @@ export const CATEGORY_LABELS: Record<
     es: "Audio, video y documentales",
     en: "Audio, video and documentaries",
     description_es:
-      "Material filmado: videos ATFLIR del Pentagon, documentales (Skinwalker, Patient Seventeen, Bob Lazar), podcasts long-form.",
+      "Material filmado: videos ATFLIR del Pentágono, documentales (Skinwalker, Patient Seventeen, Bob Lazar) y pódcasts de larga duración.",
     description_en:
       "Filmed material: Pentagon ATFLIR videos, documentaries (Skinwalker, Patient Seventeen, Bob Lazar), long-form podcasts.",
   },
@@ -97,7 +97,7 @@ export const CATEGORY_LABELS: Record<
       "GitHub repositories of the original corpus and site source code.",
   },
   other: {
-    es: "Otros · Sin link público",
+    es: "Otros · Sin enlace público",
     en: "Other · No public link",
     description_es:
       "Documentos físicos, testimonios privados, archivos militares aún clasificados y referencias sin URL pública directa.",

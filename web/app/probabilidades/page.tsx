@@ -17,9 +17,9 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 
 export const metadata = {
-  title: "Probabilities",
+  title: "Probabilidades por hipótesis (ICD-203)",
   description:
-    "Detailed reasoning per hypothesis. ICD-203 + corpus evidence sustaining each judgment.",
+    "Razonamiento detallado por hipótesis: estándar ICD-203 más la evidencia del corpus que sostiene cada juicio de probabilidad.",
 
   alternates: { canonical: "/probabilidades/" },
 };

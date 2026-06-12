@@ -9,8 +9,8 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
 
 export const metadata = {
-  title: "Casos",
-  description: `${TOTAL_CASES} institutional cases documented 1947-2026`,
+  title: "Casos UAP institucionales (1947–2026)",
+  description: `${TOTAL_CASES} casos UAP institucionales documentados entre 1947 y 2026 — archivo cronológico con nivel de evidencia y fuentes primarias.`,
 
   alternates: { canonical: "/cases/" },
 };

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { researchers, getFramework } from "@/lib/data";
-import { researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { breadcrumbJsonLd, researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { casesForResearcher } from "@/lib/researcherCases";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
@@ -19,8 +19,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) return { title: "No encontrado" };
   return {
-    title: `${r.name}`,
+    title: r.name,
     description: r.bio_short.slice(0, 160),
+    alternates: { canonical: `/researchers/${r.id}/` },
   };
 }
 
@@ -54,6 +55,18 @@ export default function ResearcherDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(researcherJsonLd(r)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(
+            breadcrumbJsonLd([
+              { href: "/", label: "Inicio" },
+              { href: "/researchers/", label: "Actores" },
+              { label: r.name },
+            ]),
+          ),
+        }}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb

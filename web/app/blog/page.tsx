@@ -4,10 +4,11 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
-  title: "Blog",
+  title: "Blog — notas del cuaderno de investigación",
   description:
     "Notas de método, decisiones de análisis y avances del cuaderno de investigación UAP Codex.",
   alternates: {
+    canonical: "/blog/",
     types: { "application/rss+xml": "/feed.xml" },
   },
 };

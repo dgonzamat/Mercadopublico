@@ -15,8 +15,8 @@ const WorldMap = dynamic(() => import("@/components/WorldMap"), {
 });
 
 export const metadata = {
-  title: "Atlas",
-  description: `Global map of ${STATS.cases} institutional UAP cases ${STATS.startYear}-${STATS.endYear}`,
+  title: "Atlas — mapa global de casos",
+  description: `Mapa global de los ${STATS.cases} casos UAP institucionales documentados entre ${STATS.startYear} y ${STATS.endYear}.`,
 
   alternates: { canonical: "/atlas/" },
 };
