@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 80,
-  "summary": "Sensor data + 8 testigos militares, Cmdr. Fravor",
-  "summary_en": "Sensor data + 8 military witnesses, Cmdr. Fravor",
+  "summary": "El radar Aegis del USS Princeton rastreó objetos que descendían de 80,000 a 20,000 pies en menos de un segundo; el Cmdr. Fravor y otros siete testigos militares observaron el 'Tic-Tac' y el video ATFLIR fue liberado oficialmente por el Pentágono. El caso moderno de referencia.",
+  "summary_en": "USS Princeton's Aegis radar tracked objects dropping from 80,000 to 20,000 feet in under a second; Cmdr. Fravor and seven other military witnesses observed the 'Tic-Tac', and the ATFLIR video was officially released by the Pentagon. The modern benchmark case.",
   "patterns": [
     "8b"
   ],

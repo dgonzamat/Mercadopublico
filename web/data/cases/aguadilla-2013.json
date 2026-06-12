@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 70,
-  "summary": "US CBP FLIR pod 3 min, transmedium air-water documentado, división en 2",
-  "summary_en": "US CBP FLIR pod 3 min, transmedium air-water documented, splits into 2",
+  "summary": "Una aeronave DHC-8 de la US Customs and Border Protection filmó con cámara térmica, durante más de tres minutos, un objeto que cruza del aire al agua sin desacelerar y se divide en dos. Es el único video FLIR oficial con comportamiento transmedio sostenido.",
+  "summary_en": "A US Customs and Border Protection DHC-8 filmed with its thermal camera, for over three minutes, an object crossing from air to water without decelerating and splitting in two. The only official FLIR video showing sustained transmedium behavior.",
   "patterns": [
     "8b"
   ],

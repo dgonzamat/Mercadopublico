@@ -13,8 +13,8 @@
   },
   "tier": "A",
   "probability": 75,
-  "summary": "Project Sign ET conclusion, suprimida por Vandenberg",
-  "summary_en": "Project Sign ET conclusion, suppressed by Vandenberg",
+  "summary": "El equipo de Project Sign concluyó en un documento TOP SECRET de 1948 que la hipótesis interplanetaria era la explicación más probable del fenómeno; el General Vandenberg rechazó la evaluación y ordenó destruirla, sin refutación científica documentada.",
+  "summary_en": "In a 1948 TOP SECRET document, the Project Sign team concluded the interplanetary hypothesis was the most probable explanation of the phenomenon; General Vandenberg rejected the estimate and ordered it destroyed, with no documented scientific rebuttal.",
   "patterns": [
     "8m"
   ],

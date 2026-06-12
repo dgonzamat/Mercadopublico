@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 55,
-  "summary": "10 misiles desactivados, Salas testimony",
-  "summary_en": "10 missiles deactivated, Salas testimony",
+  "summary": "Los diez ICBM Minuteman del Launch Control Center Oscar-Flight (Malmstrom AFB) pasaron simultáneamente a estado no operativo mientras seguridad reportaba un objeto luminoso sobre el búnker; la USAF lo registró como 'causa indeterminada' y el Capitán Salas lo testificó públicamente.",
+  "summary_en": "All ten Minuteman ICBMs at Malmstrom AFB's Oscar-Flight Launch Control Center simultaneously went off-alert while security reported a luminous object over the bunker; the USAF logged it as 'cause undetermined' and Captain Salas testified publicly.",
   "patterns": [
     "8f",
     "8k"
