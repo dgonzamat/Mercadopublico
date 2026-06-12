@@ -106,12 +106,6 @@ export function IcdProbabilityChart({ framing = true }: { framing?: boolean } = 
 
       <div className="grid gap-4 md:grid-cols-2 md:gap-6">
         {rows.map((h) => {
-          const cleanLabel = h.label
-            .replace(/^≥1 caso (es|involucra)\s+/i, "")
-            .replace(/^Existe\s+/i, "");
-          const cleanLabelEn = h.labelEn
-            .replace(/^≥1 case (is|involves)\s+/i, "")
-            .replace(/^A\s+/i, "");
           return (
             <article
               key={h.id}
@@ -130,9 +124,11 @@ export function IcdProbabilityChart({ framing = true }: { framing?: boolean } = 
                 </span>
               </p>
 
-              {/* Hypothesis title — cleaned (≥1 caso prefix moved to caption) */}
+              {/* Título con el label COMPLETO: el prefijo "≥1 caso es…" ES el
+                  claim. Recortarlo convertía "90% · tecnología de otro Estado"
+                  en una afirmación que el modelo no hace. */}
               <h3 className="font-display text-xl font-medium leading-tight text-text md:text-2xl">
-                <T es={cleanLabel} en={cleanLabelEn} />
+                <T es={h.label} en={h.labelEn} />
               </h3>
 
               {/* Hypothesis note */}
