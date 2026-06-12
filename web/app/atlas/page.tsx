@@ -1,18 +1,9 @@
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { cases } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
-
-const WorldMap = dynamic(() => import("@/components/WorldMap"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex h-[60vh] min-h-[360px] items-center justify-center rounded-lg border border-border bg-panel text-muted md:h-[600px]">
-      <T es="Cargando mapa…" en="Loading map…" />
-    </div>
-  ),
-});
+import { WorldMapLazy } from "@/components/WorldMapLazy";
 
 export const metadata = {
   title: "Atlas — mapa global de casos",
@@ -57,7 +48,7 @@ export default function AtlasPage() {
         </p>
       </header>
 
-      <WorldMap countryResearchers={countryResearchers} />
+      <WorldMapLazy countryResearchers={countryResearchers} />
 
       <nav className="flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
         <Link

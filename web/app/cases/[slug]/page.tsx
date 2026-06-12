@@ -17,7 +17,8 @@ export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Caso no encontrado" };
   const path = `/cases/${c.id}/`;
@@ -81,11 +82,12 @@ function findPullQuote(text?: string): string | null {
   return all[0];
 }
 
-export default function CaseDetailPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function CaseDetailPage(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
   const c = cases.find((x) => x.id === params.slug);
   if (!c) notFound();
 

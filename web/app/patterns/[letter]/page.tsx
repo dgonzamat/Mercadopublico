@@ -11,11 +11,12 @@ export function generateStaticParams() {
   return patterns.map((p) => ({ letter: p.letter }));
 }
 
-export function generateMetadata({
-  params,
-}: {
-  params: { letter: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ letter: string }>;
+  }
+) {
+  const params = await props.params;
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) return { title: "Patrón no encontrado" };
   return {
@@ -25,11 +26,12 @@ export function generateMetadata({
   };
 }
 
-export default function PatternDetailPage({
-  params,
-}: {
-  params: { letter: string };
-}) {
+export default async function PatternDetailPage(
+  props: {
+    params: Promise<{ letter: string }>;
+  }
+) {
+  const params = await props.params;
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) notFound();
   const patternCases = getCasesByPattern(p.id);
