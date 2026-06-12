@@ -6,19 +6,21 @@ import { SITE_URL } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
+  // trailingSlash: true en next.config → las URLs servidas terminan en "/".
+  // El sitemap debe listar exactamente esas URLs (mismo formato que canonicals).
   const staticRoutes = [
-    "",
-    "/cases",
-    "/probabilidades",
-    "/atlas",
-    "/patterns",
-    "/frameworks",
-    "/researchers",
-    "/about",
-    "/resumen",
-    "/fuentes",
-    "/blog",
-    "/contact",
+    "/",
+    "/cases/",
+    "/probabilidades/",
+    "/atlas/",
+    "/patterns/",
+    "/frameworks/",
+    "/researchers/",
+    "/about/",
+    "/resumen/",
+    "/fuentes/",
+    "/blog/",
+    "/contact/",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
@@ -26,35 +28,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 2-3 times per week and home reflects the dial). Other static routes:
     // weekly is honest for their actual update rate.
     changeFrequency:
-      path === "" || path === "/cases" || path === "/probabilidades"
+      path === "/" || path === "/cases/" || path === "/probabilidades/"
         ? ("daily" as const)
         : ("weekly" as const),
-    priority: path === "" ? 1.0 : 0.8,
+    priority: path === "/" ? 1.0 : 0.8,
   }));
 
   const caseRoutes = cases.map((c) => ({
-    url: `${SITE_URL}/cases/${c.id}`,
+    url: `${SITE_URL}/cases/${c.id}/`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   const patternRoutes = patterns.map((p) => ({
-    url: `${SITE_URL}/patterns/${p.letter}`,
+    url: `${SITE_URL}/patterns/${p.letter}/`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
 
   const researcherRoutes = researchers.map((r) => ({
-    url: `${SITE_URL}/researchers/${r.id}`,
+    url: `${SITE_URL}/researchers/${r.id}/`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
 
   const postRoutes = posts.map((p) => ({
-    url: `${SITE_URL}/blog/${p.id}`,
+    url: `${SITE_URL}/blog/${p.id}/`,
     lastModified: new Date(p.date),
     changeFrequency: "monthly" as const,
     priority: 0.5,

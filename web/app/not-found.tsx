@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { STATS } from "@/lib/siteStats";
+
+export const metadata: Metadata = {
+  title: "Página no encontrada (404)",
+  description: "La página que buscas no existe o cambió de dirección.",
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (

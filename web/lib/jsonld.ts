@@ -27,6 +27,27 @@ export function serializeJsonLd(obj: unknown): string {
   return JSON.stringify(obj).replace(/</g, "\\u003c");
 }
 
+/**
+ * BreadcrumbList para las páginas de detalle. Refleja el componente
+ * <Breadcrumb> visible; los labels van en español (idioma base del sitio).
+ * El último ítem (página actual) se incluye sin `item` propio — Google lo
+ * acepta y evita duplicar la URL canónica.
+ */
+export function breadcrumbJsonLd(
+  items: { href?: string; label: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.label,
+      ...(it.href ? { item: `${SITE_URL}${it.href}` } : {}),
+    })),
+  };
+}
+
 export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -35,7 +56,7 @@ export function websiteJsonLd() {
     name: "UAP Codex",
     alternateName: "UAP Codex — Institutional analysis",
     url: SITE_URL,
-    description: `${STATS.years} years of UAP phenomenon documented institutionally. ${STATS.cases} cases across ${STATS.countries} countries, calibrated under ICD-203.`,
+    description: `${STATS.years} años de fenómeno UAP documentado institucionalmente. ${STATS.cases} casos en ${STATS.countries} países, calibrados bajo ICD-203.`,
     inLanguage: ["es", "en"],
     publisher: {
       "@type": "Organization",
@@ -47,7 +68,7 @@ export function websiteJsonLd() {
 }
 
 export function caseJsonLd(c: UAPCase) {
-  const url = `${SITE_URL}/cases/${c.id}`;
+  const url = `${SITE_URL}/cases/${c.id}/`;
   // Article needs a year-anchored date. We don't track a real publish date
   // per case, so we anchor on year_start (the historical year of the case)
   // and treat the current build time as dateModified. Google accepts that
@@ -110,7 +131,7 @@ export function caseJsonLd(c: UAPCase) {
 }
 
 export function postJsonLd(p: Post) {
-  const url = `${SITE_URL}/blog/${p.id}`;
+  const url = `${SITE_URL}/blog/${p.id}/`;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -136,7 +157,7 @@ export function postJsonLd(p: Post) {
 }
 
 export function researcherJsonLd(r: Researcher) {
-  const url = `${SITE_URL}/researchers/${r.id}`;
+  const url = `${SITE_URL}/researchers/${r.id}/`;
   return {
     "@context": "https://schema.org",
     "@type": "Person",

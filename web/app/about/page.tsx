@@ -12,9 +12,9 @@ import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
-  title: "Method",
+  title: "Metodología — cómo se pesa la evidencia",
   description:
-    "Cómo se pesa la evidencia: cuatro tiers de fuerza probatoria, retornos decrecientes por caso, y por qué ocho hipótesis pueden ser parcialmente ciertas en simultáneo.",
+    "Cómo se pesa la evidencia: cuatro niveles de fuerza probatoria, retornos decrecientes por caso, y por qué ocho hipótesis pueden ser parcialmente ciertas en simultáneo.",
 
   alternates: { canonical: "/about/" },
 };
@@ -23,7 +23,7 @@ const CHAPTERS = [
   {
     id: "tiers",
     n: "1",
-    es: { eyebrow: "Capítulo 1", h2: "Por qué Roswell no equivale a Meier", tldr: "4 tiers de evidencia — Tier 1 militar+sensor pesa distinto que Tier 4 contactee" },
+    es: { eyebrow: "Capítulo 1", h2: "Por qué Roswell no equivale a Meier", tldr: "4 niveles de evidencia — Tier 1 (militar+sensor) no pesa lo mismo que Tier 4 (contactado)" },
     en: { eyebrow: "Chapter 1", h2: "Why Roswell isn't equivalent to Meier", tldr: "4 evidence tiers — Tier 1 military+sensor weighs differently than Tier 4 contactee" },
   },
   {
@@ -121,7 +121,7 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="No todos los casos UAP son equivalentes en valor evidencial. Mezclar tiers opaca el análisis e infla artificialmente la apariencia de evidencia. El público y la prensa frecuentemente conflactan tiers — esa es una fuente principal de confusión."
+                  es="No todos los casos UAP son equivalentes en valor evidencial. Mezclar niveles opaca el análisis e infla artificialmente la apariencia de evidencia. El público y la prensa confunden esos niveles con frecuencia — esa es una fuente principal de confusión."
                   en="Not all UAP cases are equivalent in evidential value. Mixing tiers obscures the analysis and artificially inflates the appearance of evidence. The public and the press frequently conflate tiers — that's a principal source of confusion."
                 />
               </Body>
@@ -145,7 +145,7 @@ export default function AboutPage() {
               </div>
               <PullQuote>
                 <T
-                  es={`Una "evidencia" Tier 4 no debería usarse para soportar conclusiones que requieren Tier 1. El sistema deriva de las Close Encounter Categories de Hynek.`}
+                  es={`Una "evidencia" Tier 4 no debería usarse para sustentar conclusiones que exigen Tier 1. El sistema deriva de las categorías de encuentros cercanos de Hynek.`}
                   en={`A Tier 4 "evidence" should not be used to support conclusions that require Tier 1. The system derives from Hynek's Close Encounter Categories.`}
                 />
               </PullQuote>
@@ -194,9 +194,9 @@ export default function AboutPage() {
                   es="Mueve poco o nada"
                   en="Barely moves"
                   items={[
-                    "Tier 4 contactee aislado (Meier 1-2%)",
+                    "Contactado aislado Tier 4 (Meier 1–2%)",
                     "Caso #50 del mismo patrón (~0%)",
-                    "Nueva predicción contactee fallada (baja, no sube)",
+                    "Nueva predicción de contactado fallida (baja, no sube)",
                   ]}
                   itemsEn={[
                     "Isolated Tier 4 contactee (Meier 1-2%)",
@@ -207,7 +207,7 @@ export default function AboutPage() {
               </div>
               <Caption>
                 <T
-                  es={<><strong className="text-text">Estado:</strong> los casos individuales de tipo &quot;contactee&quot; ya no agregan evidencia útil. En cambio, los institucionales con sensor militar (Tier 1/2) siguen acumulando información valiosa.</>}
+                  es={<><strong className="text-text">Estado:</strong> los casos individuales de tipo &quot;contactado&quot; ya no agregan evidencia útil. En cambio, los institucionales con sensor militar (Tier 1/2) siguen acumulando información valiosa.</>}
                   en={<><strong className="text-text">Status:</strong> individual &quot;contactee&quot; cases no longer add useful evidence. By contrast, institutional cases with military sensors (Tier 1/2) keep accumulating valuable information.</>}
                 />
               </Caption>

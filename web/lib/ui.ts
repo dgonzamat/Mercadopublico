@@ -54,6 +54,6 @@ export const TIER_META: Record<TierKey, {
 export const CATEGORY_META: Record<string, { icon: string; label: string }> = {
   document: { icon: "📄", label: "Documento" },
   incident: { icon: "👁", label: "Incidente" },
-  contactee: { icon: "🧑", label: "Contactee" },
-  crop_circle: { icon: "🌾", label: "Crop circle" },
+  contactee: { icon: "🧑", label: "Contactado" },
+  crop_circle: { icon: "🌾", label: "Círculo de cultivo" },
 };

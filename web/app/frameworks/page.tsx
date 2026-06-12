@@ -3,8 +3,8 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
-  title: "Marcos teóricos",
-  description: `${STATS.frameworks} serious theoretical frameworks compared`,
+  title: "Marcos teóricos comparados",
+  description: `${STATS.frameworks} marcos teóricos serios sobre el fenómeno UAP, comparados por poder explicativo y evidencia.`,
 
   alternates: { canonical: "/frameworks/" },
 };

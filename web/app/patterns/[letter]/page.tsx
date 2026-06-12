@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { T } from "@/components/T";
+import { breadcrumbJsonLd, serializeJsonLd } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return patterns.map((p) => ({ letter: p.letter }));
@@ -17,7 +18,11 @@ export function generateMetadata({
 }) {
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) return { title: "Patrón no encontrado" };
-  return { title: `${p.id} ${p.name}`, description: p.description };
+  return {
+    title: `${p.id} ${p.name}`,
+    description: p.description,
+    alternates: { canonical: `/patterns/${p.letter}/` },
+  };
 }
 
 export default function PatternDetailPage({
@@ -36,6 +41,18 @@ export default function PatternDetailPage({
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(
+            breadcrumbJsonLd([
+              { href: "/", label: "Inicio" },
+              { href: "/patterns/", label: "Patrones" },
+              { label: `${p.id} ${p.name}` },
+            ]),
+          ),
+        }}
+      />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
           items={[

@@ -11,7 +11,7 @@ import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { EpistemicBadge } from "@/components/Badge";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
-import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { breadcrumbJsonLd, caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
@@ -20,7 +20,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Caso no encontrado" };
-  const path = `/cases/${c.id}`;
+  const path = `/cases/${c.id}/`;
   const description = c.summary;
   return {
     title: `${c.name}`,
@@ -40,13 +40,17 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
       url: path,
       locale: "es_ES",
       alternateLocale: c.whatHappened_en ? ["en_US"] : [],
-      images: [{ url: "/og.png", width: 1200, height: 630 }],
+      // Si el caso tiene documento primario (escaneo FOIA, foto oficial),
+      // úsalo como tarjeta social: identifica el caso mejor que el OG genérico.
+      images: c.primaryDocument?.url
+        ? [{ url: c.primaryDocument.url, alt: c.primaryDocument.alt ?? c.name }]
+        : [{ url: "/og.png", width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${c.name} — UAP Codex`,
       description: c.summary,
-      images: ["/og.png"],
+      images: c.primaryDocument?.url ? [c.primaryDocument.url] : ["/og.png"],
     },
   };
 }
@@ -133,6 +137,18 @@ export default function CaseDetailPage({
         // (article cards in SERPs) and knowledge-graph entity linking on
         // the case's geographic location.
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(caseJsonLd(c)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(
+            breadcrumbJsonLd([
+              { href: "/", label: "Inicio" },
+              { href: "/cases/", label: "Casos" },
+              { label: c.name },
+            ]),
+          ),
+        }}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb

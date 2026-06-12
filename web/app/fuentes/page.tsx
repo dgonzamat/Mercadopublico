@@ -4,9 +4,9 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Caption } from "@/lib/typography";
 
 export const metadata = {
-  title: "Fuentes",
+  title: "Fuentes y bibliografía del corpus",
   description:
-    "All sources cited across the UAP corpus — official FOIA documents, declassified archives, academic papers, investigative press, books and code.",
+    "Todas las fuentes citadas en el corpus UAP — documentos FOIA oficiales, archivos desclasificados, artículos académicos, prensa de investigación, libros y código.",
 
   alternates: { canonical: "/fuentes/" },
 };

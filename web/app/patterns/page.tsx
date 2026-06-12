@@ -3,8 +3,8 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 
 export const metadata = {
-  title: "Patterns",
-  description: `${STATS.patterns} recurring patterns (8a-8r) identified in the corpus`,
+  title: "Patrones recurrentes del fenómeno",
+  description: `${STATS.patterns} patrones recurrentes (8a–8r) identificados a lo largo del corpus de casos UAP institucionales.`,
 
   alternates: { canonical: "/patterns/" },
 };

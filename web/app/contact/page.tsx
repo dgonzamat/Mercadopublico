@@ -7,7 +7,7 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 const CONTACT_EMAIL = "dgonzamat@gmail.com";
 
 export const metadata = {
-  title: "Contacto",
+  title: "Contacto — correcciones y fuentes",
   description:
     "Correcciones, fuentes primarias y casos faltantes. Cómo contribuir al cuaderno UAP Codex.",
 
