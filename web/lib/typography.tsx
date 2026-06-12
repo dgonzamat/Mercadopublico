@@ -105,10 +105,15 @@ export function Caption({ children, className }: Props) {
 
 // Display number — hero stats, killer figures. Tabular nums.
 export function DisplayNumber({ children, className }: Props) {
+  // Sin color de base: cn() es clsx puro (no deduplica) y un text-* del
+  // caller quedaría compitiendo con el de aquí — gana el orden del CSS
+  // generado, no el del atributo (así los BigStat de la Home rendían
+  // negros pese a pasar text-accent). El color llega por className o se
+  // hereda del body (tinta).
   return (
     <span
       className={cx(
-        "font-display text-5xl leading-none tracking-tight text-text tabular-nums md:text-6xl",
+        "font-display text-5xl leading-none tracking-tight tabular-nums md:text-6xl",
         className,
       )}
     >
