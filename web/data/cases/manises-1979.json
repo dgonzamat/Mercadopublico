@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 78,
-  "summary": "TAE Supercaravelle emergencia, Mirage F-1, Spanish AF radar",
-  "summary_en": "TAE Supercaravelle emergency, Mirage F-1, Spanish AF radar",
+  "summary": "Un Supercaravelle de TAE declara emergencia aérea sobre Valencia acosado por luces no identificadas; el radar militar de Torrejón confirma los objetos y un Mirage F-1 fracasa tres veces en interceptarlos. Expediente desclasificado por el Ejército del Aire (1992–1995).",
+  "summary_en": "A TAE Supercaravelle declares an in-flight emergency over Valencia, harassed by unidentified lights; Torrej\u00f3n military radar confirms the objects and a Mirage F-1 fails three interception attempts. File declassified by the Spanish Air Force (1992\u20131995).",
   "patterns": [
     "8e"
   ],
