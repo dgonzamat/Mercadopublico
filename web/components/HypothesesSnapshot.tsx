@@ -22,6 +22,15 @@ export function HypothesesSnapshot() {
 
   return (
     <div>
+      {/* La semántica existencial tiene que ser explícita: los labels van
+          recortados por espacio y sin esta línea "90%" se lee como "90% de
+          que los UAP sean X", que el modelo no afirma. */}
+      <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
+        <T
+          es="Probabilidad de que al menos un caso del corpus corresponda a cada explicación"
+          en="Probability that at least one corpus case matches each explanation"
+        />
+      </p>
       {rows.map((h, i) => {
         const cleanLabel = h.label
           .replace(/^≥1 caso (es|involucra)\s+/i, "")
