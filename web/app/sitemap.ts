@@ -3,6 +3,9 @@ import { cases, patterns, researchers } from "@/lib/data";
 import { posts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
+// Requerido por Next 16 con output: "export" para rutas de metadata.
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 

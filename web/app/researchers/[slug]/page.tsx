@@ -15,7 +15,8 @@ export function generateStaticParams() {
   return researchers.map((r) => ({ slug: r.id }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) return { title: "No encontrado" };
   return {
@@ -25,11 +26,12 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function ResearcherDetailPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function ResearcherDetailPage(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) notFound();
 

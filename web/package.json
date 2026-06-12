@@ -7,7 +7,6 @@
     "prebuild": "node scripts/validate-schema.mjs && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "audit": "node scripts/audit-consistency.mjs",
     "validate-schema": "node scripts/validate-schema.mjs"
   },
@@ -15,7 +14,7 @@
     "clsx": "2.1.1",
     "fuse.js": "7.0.0",
     "leaflet": "1.9.4",
-    "next": "^14.2.35",
+    "next": "16.2.9",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-leaflet": "4.2.1"
