@@ -1,0 +1,97 @@
+{
+  "id": "desclasificacion-mod-espana-1992-1997",
+  "num": 153,
+  "name": "Desclasificación UAP del Ejército del Aire (España, 1992–1997)",
+  "name_en": "Spanish Air Force UAP Declassification (Spain, 1992–1997)",
+  "year_start": 1992,
+  "year_end": 1997,
+  "country": "ES",
+  "country_name": "España",
+  "flag": "🇪🇸",
+  "location": {
+    "lat": 40.4839,
+    "lng": -3.4564,
+    "place": "Cuartel General del Ejército del Aire / Base Aérea de Torrejón, Madrid"
+  },
+  "tier": "S",
+  "probability": 78,
+  "summary": "Proceso oficial de desclasificación UAP iniciado en 1992 por el General de Brigada Alfonso Fernández Aguado (entonces 2º Jefe del Estado Mayor del Ejército del Aire) y continuado por sus sucesores hasta 1997. Liberó ~80 expedientes archivados por el Mando Operativo Aéreo (MOA) entre 1962 y 1995. El investigador civil Vicente-Juan Ballester Olmos estructuró el protocolo de revisión, indexado y publicación. Es uno de los pocos archivos UAP nacionales del mundo desclasificados sistemáticamente por el propio aparato militar sin presión congresional ni judicial — modelo institucional citado posteriormente por programas similares en Francia (CNES/GEPAN), Chile (CEFAA) y Uruguay (CRIDOVNI). ~20% de los expedientes quedaron formalmente catalogados como 'sin explicación convencional' tras revisión.",
+  "summary_en": "Official Spanish Air Force UAP declassification process initiated in 1992 by Brigadier General Alfonso Fernández Aguado (then Deputy Chief of Staff of the Spanish Air Force) and continued by his successors through 1997. It released ~80 files archived by the Operational Air Command (MOA) between 1962 and 1995. Civilian researcher Vicente-Juan Ballester Olmos structured the review, indexing and publication protocol. It is one of the few national UAP archives in the world systematically declassified by the military apparatus itself without congressional or judicial pressure — an institutional model later cited by analogous programs in France (CNES/GEPAN), Chile (CEFAA) and Uruguay (CRIDOVNI). ~20% of the files remained formally catalogued as 'without conventional explanation' after review.",
+  "patterns": [
+    "8e",
+    "8q"
+  ],
+  "category": "document",
+  "whatHappened": "El Ejército del Aire español mantuvo expedientes UAP clasificados desde principios de los años 60, archivados originalmente en el Cuartel General del Aire por el Servicio de Información del Estado Mayor y posteriormente por el Mando Operativo Aéreo (MOA) con sede en la Base Aérea de Torrejón (Madrid). En 1992, el General de Brigada Alfonso Fernández Aguado, entonces 2º Jefe del Estado Mayor del Ejército del Aire, autorizó el inicio del proceso de desclasificación sistemática del archivo. El protocolo se diseñó con la colaboración del investigador civil Vicente-Juan Ballester Olmos —entonces el documentalista UAP español con mayor recorrido y autor del proyecto FOTOCAT— quien actuó como interlocutor técnico entre el aparato militar y la comunidad investigadora.\n\nEl proceso liberó ~80 expedientes entre 1992 y 1997, cubriendo eventos archivados entre 1962 y 1995. La metodología siguió tres pasos: (1) selección del expediente por la oficina del MOA, (2) tachado de información sensible —nombres de testigos militares, posiciones operativas, datos de localización clasificada— preservando el cuerpo narrativo y técnico del informe original, (3) publicación abierta del expediente sanitizado en formato consultable por investigadores acreditados en el archivo del Cuartel General del Ejército del Aire. Aproximadamente el 80% de los expedientes fue catalogado tras revisión como atribuible a fenómenos convencionales (globos meteorológicos, aeronaves, reentradas de satélites, planetas Venus/Júpiter, fenómenos atmosféricos); ~20% quedó formalmente catalogado como 'sin explicación convencional' — tasa residual estructuralmente similar a la de Project Blue Book USAF (caso 151) y Battelle Special Report 14 (caso 110), sugiriendo que el residual no es artefacto de un solo aparato sino patrón replicable entre fuerzas aéreas occidentales.\n\nDos casos icónicos del corpus pertenecen al archivo desclasificado: Canarias 1976 (caso del avistamiento masivo islas occidentales) y Manises 1979 (intercepto de Iberia JK297 con aterrizaje de emergencia en la base de Manises). El proceso español es notable porque ocurrió sin presión congresional ni judicial análoga al ciclo estadounidense — fue voluntario y endógeno al propio aparato militar, lo que lo distingue del modelo Bolender→Condon→FOIA del lado US. Programas posteriores de desclasificación UAP en Francia (CNES/GEPAN, archivo público), Chile (CEFAA) y Uruguay (CRIDOVNI) citan formalmente el protocolo Ballester Olmos / Fernández Aguado como referencia metodológica.",
+  "whatHappened_en": "The Spanish Air Force maintained classified UAP files since the early 1960s, archived initially at the Air Force Headquarters by the General Staff Information Service and later by the Operational Air Command (MOA) headquartered at Torrejón Air Base (Madrid). In 1992, Brigadier General Alfonso Fernández Aguado, then Deputy Chief of Staff of the Spanish Air Force, authorized the start of the archive's systematic declassification process. The protocol was designed in collaboration with civilian researcher Vicente-Juan Ballester Olmos —at the time Spain's most experienced UAP documentalist and author of the FOTOCAT project— who acted as technical interlocutor between the military apparatus and the research community.\n\nThe process released ~80 files between 1992 and 1997, covering events archived between 1962 and 1995. The methodology followed three steps: (1) file selection by the MOA office, (2) redaction of sensitive information —military witness names, operational positions, classified location data— while preserving the narrative and technical body of the original report, (3) open publication of the sanitized file in a researcher-accessible format at the Air Force Headquarters archive. Approximately 80% of files were catalogued upon review as attributable to conventional phenomena (weather balloons, aircraft, satellite reentries, planets Venus/Jupiter, atmospheric phenomena); ~20% remained formally catalogued as 'without conventional explanation' — a residual rate structurally similar to that of Project Blue Book USAF (case 151) and Battelle Special Report 14 (case 110), suggesting the residual is not an artifact of a single apparatus but a replicable pattern across Western air forces.\n\nTwo iconic corpus cases belong to the declassified archive: Canary Islands 1976 (the western-islands mass sighting case) and Manises 1979 (Iberia JK297 intercept with emergency landing at Manises airbase). The Spanish process is notable because it occurred without congressional or judicial pressure analogous to the U.S. cycle — it was voluntary and endogenous to the military apparatus itself, distinguishing it from the Bolender→Condon→FOIA model on the U.S. side. Later UAP declassification programs in France (CNES/GEPAN, public archive), Chile (CEFAA) and Uruguay (CRIDOVNI) formally cite the Ballester Olmos / Fernández Aguado protocol as a methodological reference.",
+  "whyMatters": "Es el caso ancla del corpus para España y, más estructuralmente, para la lectura comparada inter-Estados del fenómeno UAP. Tres rasgos lo hacen Tier S. Primero, calidad institucional: ~80 expedientes oficiales del Ejército del Aire, revisados y publicados bajo protocolo militar formal, accesibles en el archivo del Cuartel General — papelería verificable. Segundo, valor comparativo: la tasa residual del ~20% replica la observada en Project Blue Book USAF (caso 151) y Battelle Special Report 14 (caso 110) — coincidencia estadística entre dos aparatos independientes que sugiere que el residual no es artefacto metodológico de una sola fuerza aérea, sino patrón estable. Tercero, modelo institucional: la desclasificación voluntaria endógena al propio MOD —sin presión congresional, sin litigio FOIA, sin filtración— es ruta institucional distinta a la dominante en EE.UU., y ha sido citada como referencia por Francia (CNES/GEPAN), Chile (CEFAA) y Uruguay (CRIDOVNI). El corpus pasaba de tener 2 casos ES sueltos (Canarias 1976, Manises 1979) a tener el proceso institucional que los enmarca. Su fragilidad —que justifica Tier S y no S+— es de cobertura: el archivo es selectivo (no incluye programa de operaciones especiales si lo hubiera) y el 'sin explicación convencional' es categoría reactiva, no afirmativa.",
+  "whyMatters_en": "It is the corpus anchor for Spain and, more structurally, for the inter-state comparative reading of the UAP phenomenon. Three traits make it Tier S. First, institutional quality: ~80 official Spanish Air Force files, reviewed and published under formal military protocol, accessible at the Air Force Headquarters archive — verifiable paperwork. Second, comparative value: the ~20% residual rate replicates the one observed in Project Blue Book USAF (case 151) and Battelle Special Report 14 (case 110) — statistical coincidence between two independent apparatuses suggesting the residual is not a methodological artifact of a single air force but a stable pattern. Third, institutional model: voluntary declassification endogenous to the MOD itself —without congressional pressure, without FOIA litigation, without leak— is an institutional route distinct from the dominant U.S. one, and has been cited as a reference by France (CNES/GEPAN), Chile (CEFAA) and Uruguay (CRIDOVNI). The corpus went from having 2 loose ES cases (Canary Islands 1976, Manises 1979) to having the institutional process that frames them. Its fragility —which justifies Tier S and not S+— is one of coverage: the archive is selective (it does not include any special-operations program if one existed) and 'without conventional explanation' is a reactive category, not an affirmative one.",
+  "evidence": [
+    "Proceso oficial autorizado en 1992 por el General de Brigada Alfonso Fernández Aguado (entonces 2º Jefe del Estado Mayor del Ejército del Aire) y continuado por sus sucesores hasta 1997",
+    "~80 expedientes UAP archivados por el Mando Operativo Aéreo (MOA) liberados sistemáticamente al público investigador, cubriendo eventos entre 1962 y 1995",
+    "Protocolo de revisión diseñado por el investigador civil Vicente-Juan Ballester Olmos (autor del proyecto FOTOCAT) como interlocutor técnico entre el aparato militar y la comunidad investigadora",
+    "Metodología documental: selección por MOA → redacción de información sensible (nombres, posiciones operativas, localización clasificada) → publicación del expediente sanitizado en formato consultable en el archivo del Cuartel General del Ejército del Aire",
+    "Distribución de catalogación: ~80% atribuible a fenómenos convencionales (globos, aeronaves, reentradas, planetas, atmósfera); ~20% formalmente catalogado como 'sin explicación convencional'",
+    "Convergencia estadística inter-archivo: la tasa residual ~20% replica la observada en Project Blue Book USAF (caso 151) y Battelle Special Report 14 (caso 110) — coincidencia entre aparatos independientes que sugiere patrón replicable, no artefacto metodológico",
+    "Casos del corpus pertenecientes al archivo desclasificado: Canarias 1976 (avistamiento masivo islas occidentales) y Manises 1979 (intercepto Iberia JK297 con aterrizaje de emergencia)",
+    "Naturaleza voluntaria y endógena: desclasificación iniciada por el propio aparato militar sin presión congresional, sin litigio FOIA, sin filtración — ruta institucional distinta al modelo Bolender→Condon→FOIA estadounidense",
+    "Influencia comparada: el protocolo es citado como referencia metodológica por programas posteriores de desclasificación UAP en Francia (CNES/GEPAN), Chile (CEFAA) y Uruguay (CRIDOVNI)"
+  ],
+  "evidence_en": [
+    "Official process authorized in 1992 by Brigadier General Alfonso Fernández Aguado (then Deputy Chief of Staff of the Spanish Air Force) and continued by his successors through 1997",
+    "~80 UAP files archived by the Operational Air Command (MOA) systematically released to the research public, covering events between 1962 and 1995",
+    "Review protocol designed by civilian researcher Vicente-Juan Ballester Olmos (author of the FOTOCAT project) as technical interlocutor between the military apparatus and the research community",
+    "Documentary methodology: MOA selection → redaction of sensitive information (names, operational positions, classified location) → publication of the sanitized file in researcher-accessible format at the Air Force Headquarters archive",
+    "Cataloguing distribution: ~80% attributable to conventional phenomena (balloons, aircraft, reentries, planets, atmosphere); ~20% formally catalogued as 'without conventional explanation'",
+    "Inter-archive statistical convergence: the ~20% residual rate replicates the one observed in Project Blue Book USAF (case 151) and Battelle Special Report 14 (case 110) — coincidence between independent apparatuses suggesting a replicable pattern, not a methodological artifact",
+    "Corpus cases belonging to the declassified archive: Canary Islands 1976 (western-islands mass sighting) and Manises 1979 (Iberia JK297 intercept with emergency landing)",
+    "Voluntary and endogenous nature: declassification initiated by the military apparatus itself without congressional pressure, without FOIA litigation, without leak — an institutional route distinct from the U.S. Bolender→Condon→FOIA model",
+    "Comparative influence: the protocol is cited as a methodological reference by later UAP declassification programs in France (CNES/GEPAN), Chile (CEFAA) and Uruguay (CRIDOVNI)"
+  ],
+  "sources": [
+    {
+      "name": "Ballester Olmos, V.-J. — 'Expedientes Insólitos' (Temas de Hoy, 1995)",
+      "note": "Libro de referencia escrito por el coordinador civil del proceso; presenta y analiza los expedientes desclasificados."
+    },
+    {
+      "name": "Ballester Olmos, V.-J. — FOTOCAT Project archive (online)",
+      "url": "https://fotocat.blogspot.com/",
+      "note": "Archivo público continuado del coordinador del proceso; incluye documentación del MOA desclasificada."
+    },
+    {
+      "name": "Ejército del Aire — Archivo del Cuartel General (Madrid)",
+      "note": "Custodio oficial de los expedientes UAP sanitizados; consultable por investigadores acreditados."
+    },
+    {
+      "name": "Ballester Olmos, V.-J. & Vallée, J. — 'Norway's Project Hessdalen as a Reference for the Instrumented Study of UAP' (referencia comparada)",
+      "note": "Texto académico que sitúa el proceso español en el mapa comparado de programas institucionales UAP."
+    },
+    {
+      "name": "Anuario Estadístico del Ejército del Aire — series 1990s",
+      "note": "Documentación oficial del MOA con referencias institucionales al proceso."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "El aparato militar español, revisando ~80 expedientes propios con metodología formal, catalogó ~80% como atribuible a fenómenos convencionales. Es replicación independiente de la distribución encontrada por Project Blue Book USAF (caso 151) y Battelle Special Report 14 (caso 110): dos fuerzas aéreas occidentales sin coordinación llegan a tasas de identificación cercanas. Modest porque confirma la prior override (97) por convergencia inter-archivo, no la eleva.",
+      "rationaleEn": "The Spanish military apparatus, reviewing ~80 of its own files with formal methodology, catalogued ~80% as attributable to conventional phenomena. It is independent replication of the distribution found by Project Blue Book USAF (case 151) and Battelle Special Report 14 (case 110): two Western air forces with no coordination reach near-identical identification rates. Modest because it confirms the prior override (97) by inter-archive convergence, not raises it."
+    },
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Que un MOD nacional desclasifique voluntariamente su archivo UAP completo —sin presión congresional, sin litigio, sin filtración— tensiona la lectura fuerte de que 'todo aparato de inteligencia occidental sostiene perpetuamente el canal clasificado paralelo'. Minimal porque la desclasificación española es selectiva (cubre el archivo MOA regular, no necesariamente programas de operaciones especiales si los hubo) — el caso de Bolender no se invalida con esto, pero la generalización fuerte se modera.",
+      "rationaleEn": "That a national MOD voluntarily declassifies its complete UAP archive —without congressional pressure, without litigation, without leak— tensions the strong reading that 'every Western intelligence apparatus perpetually sustains the parallel classified channel'. Minimal because the Spanish declassification is selective (covers the regular MOA archive, not necessarily special-operations programs if any existed) — the Bolender case is not invalidated by this, but the strong generalization is moderated."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El ~20% del archivo MOA quedó formalmente catalogado como 'sin explicación convencional' tras revisión militar interna — replicando la fracción residual de Blue Book y Battelle. La convergencia inter-archivo entre fuerzas aéreas independientes sugiere que el residual no es artefacto metodológico de una sola institución. Minimal porque 'sin explicación' es categoría reactiva (insuficiencia de datos o exhaustividad de hipótesis convencionales) no afirmativa de un origen específico.",
+      "rationaleEn": "~20% of the MOA archive remained formally catalogued as 'without conventional explanation' after internal military review — replicating the residual fraction of Blue Book and Battelle. The inter-archive convergence between independent air forces suggests the residual is not the methodological artifact of a single institution. Minimal because 'without explanation' is a reactive category (insufficient data or exhaustion of conventional hypotheses), not an affirmative claim of a specific origin."
+    }
+  ]
+}
