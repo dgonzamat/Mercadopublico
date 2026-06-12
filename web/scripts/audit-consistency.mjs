@@ -415,6 +415,8 @@ const SPANGLISH_PROPER_OK = [
   "Eyre Highway",                // topónimo (carretera)
   "University of Queensland",    // institución
   "Department of War",           // institución US (DoD renombrado 2026)
+  "National Archives of Australia", // archivo nacional australiano (Turner Report)
+  "Task Force on the Declassification of Federal Secrets", // sub-órgano House Oversight (Burlison)
 ];
 
 function stripQuotedAndProper(s) {
