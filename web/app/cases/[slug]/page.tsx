@@ -11,7 +11,7 @@ import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { EpistemicBadge } from "@/components/Badge";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
-import { caseJsonLd } from "@/lib/jsonld";
+import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
@@ -132,7 +132,7 @@ export default function CaseDetailPage({
         // Per-case Schema.org Article+Event+Place graph for rich snippets
         // (article cards in SERPs) and knowledge-graph entity linking on
         // the case's geographic location.
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseJsonLd(c)) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(caseJsonLd(c)) }}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
