@@ -1,0 +1,80 @@
+{
+  "id": "sky-canada-project-2025",
+  "num": 203,
+  "name": "Sky Canada Project · revisión científica federal del reporte UAP",
+  "name_en": "Sky Canada Project · federal scientific review of UAP reporting",
+  "year_start": 2025,
+  "country": "CA",
+  "country_name": "Canadá",
+  "flag": "🇨🇦",
+  "location": {
+    "lat": 45.4215,
+    "lng": -75.6972,
+    "place": "Oficina del Asesor Científico Jefe de Canadá (OCSA), Ottawa"
+  },
+  "tier": "A",
+  "epistemicStatus": "developing",
+  "probability": 62,
+  "summary": "El Sky Canada Project es la revisión que la Oficina del Asesor Científico Jefe de Canadá (OCSA), bajo Mona Nemer, dedicó al estado del reporte público de fenómenos aéreos no identificados. Iniciado en 2022, su informe — 'Management of Public Reporting of Unidentified Aerial Phenomena in Canada' — tuvo preview en enero de 2025 y publicación completa a mediados de 2025. Constata que Canadá recibe entre 600 y 1.000 reportes UAP al año pero que desde 1995 ningún organismo federal tiene el mandato de recolectarlos: quedan dispersos entre la RCMP, Transport Canada y la Agencia Espacial Canadiense. Recomienda crear un líder nacional único que estandarice, recolecte y publique los datos. Es el primer reconocimiento científico-federal canadiense de que el sistema de reporte está roto; no investiga avistamientos ni se pronuncia sobre su naturaleza.",
+  "summary_en": "The Sky Canada Project is the review the Office of the Chief Science Advisor of Canada (OCSA), under Mona Nemer, devoted to the state of public reporting of unidentified aerial phenomena. Launched in 2022, its report — 'Management of Public Reporting of Unidentified Aerial Phenomena in Canada' — had a preview in January 2025 and full publication in mid-2025. It finds that Canada receives between 600 and 1,000 UAP reports a year but that since 1995 no federal body has held the mandate to collect them: they are scattered across the RCMP, Transport Canada and the Canadian Space Agency. It recommends creating a single national lead to standardize, collect and publish the data. It is the first Canadian federal-scientific acknowledgment that the reporting system is broken; it does not investigate sightings nor pronounce on their nature.",
+  "patterns": [
+    "8q"
+  ],
+  "category": "document",
+  "whatHappened": "En 2022, la Oficina del Asesor Científico Jefe de Canadá (Office of the Chief Science Advisor, OCSA), encabezada por Mona Nemer, lanzó el Sky Canada Project: una revisión sistemática de cómo el gobierno canadiense gestiona el reporte público de fenómenos aéreos no identificados (UAP). No se concibió como una investigación de avistamientos ni como un esfuerzo por probar o refutar vida extraterrestre — su objeto era el mecanismo de reporte en sí, no los datos de primera mano. El proyecto no recolectó ni analizó fotos, videos o testimonios individuales.\n\nEl informe resultante, 'Management of Public Reporting of Unidentified Aerial Phenomena in Canada', tuvo una versión preview en enero de 2025 y publicación completa a mediados de 2025. Su diagnóstico es directo: los canadienses reportan entre 600 y 1.000 avistamientos UAP por año, y una encuesta de 2024 halló que un 27% afirma haber observado algo no identificable en el cielo — pero desde 1995 ningún organismo federal tiene el mandato de recolectar o investigar esos reportes. El resultado es un sistema fragmentado: los reportes se dispersan entre la Real Policía Montada del Canadá (RCMP), Transport Canada (vía la base CADORS de incidentes de aviación civil) y la Agencia Espacial Canadiense, sin que ninguno los compile ni los analice de forma sistemática.\n\nLas recomendaciones apuntan a cerrar ese vacío institucional: designar un líder nacional único — el informe sugiere la Agencia Espacial Canadiense — que estandarice y centralice la recolección; habilitar una línea/aplicación dedicada y un portal público de reporte; abrir los datos y proveer herramientas de ciencia ciudadana; y publicar hallazgos y conclusiones de forma transparente. El marco subraya el rigor científico y el combate a la desinformación como justificación: sin un canal creíble, el vacío lo llenan el estigma y las narrativas no verificadas.",
+  "whatHappened_en": "In 2022, the Office of the Chief Science Advisor of Canada (OCSA), led by Mona Nemer, launched the Sky Canada Project: a systematic review of how the Canadian government manages the public reporting of unidentified aerial phenomena (UAP). It was not conceived as an investigation of sightings nor as an effort to prove or disprove extraterrestrial life — its object was the reporting mechanism itself, not first-hand data. The project did not collect or analyze photos, videos or individual testimonies.\n\nThe resulting report, 'Management of Public Reporting of Unidentified Aerial Phenomena in Canada', had a preview version in January 2025 and full publication in mid-2025. Its diagnosis is blunt: Canadians report between 600 and 1,000 UAP sightings per year, and a 2024 survey found that 27% say they have observed something unidentifiable in the sky — yet since 1995 no federal body has held the mandate to collect or investigate those reports. The result is a fragmented system: reports scatter across the Royal Canadian Mounted Police (RCMP), Transport Canada (via the CADORS civil-aviation incident database) and the Canadian Space Agency, with none of them compiling or analyzing them systematically.\n\nThe recommendations aim to close that institutional gap: designate a single national lead — the report suggests the Canadian Space Agency — to standardize and centralize collection; enable a dedicated hotline/app and a public reporting portal; open the data and provide citizen-science tools; and publish findings and conclusions transparently. The framing stresses scientific rigor and countering misinformation as justification: without a credible channel, the vacuum is filled by stigma and unverified narratives.",
+  "whyMatters": "Es el análogo canadiense del ciclo institucional que el corpus ya rastrea en EE.UU. (AARO, PURSUE, UAP Disclosure Act): un Estado occidental reconoce a nivel científico-federal que el reporte UAP merece infraestructura formal. Su peso es procedural, no probatorio — el informe explícitamente no investiga casos ni se pronuncia sobre su naturaleza — pero reestructura el problema en Canadá: documenta que durante tres décadas no hubo dueño institucional del dato, y nombra el costo de ese vacío (estigma, desinformación, 600-1.000 reportes anuales perdidos sin análisis). A diferencia de PURSUE (Tier S: directiva ejecutiva con portal operativo y mandato), Sky Canada es advisory: recomienda, no ordena, y su implementación quedó pendiente de decisión del gobierno. De ahí el Tier A. Encaja con Project Magnet/Second Storey (1950) como los dos polos del involucramiento estatal canadiense: un programa operativo a mitad del siglo XX y una auditoría científica del reporte 75 años después.",
+  "whyMatters_en": "It is the Canadian analog of the institutional cycle the corpus already tracks in the U.S. (AARO, PURSUE, UAP Disclosure Act): a Western state acknowledges at the federal-scientific level that UAP reporting deserves formal infrastructure. Its weight is procedural, not probative — the report explicitly does not investigate cases nor pronounce on their nature — but it restructures the problem in Canada: it documents that for three decades there was no institutional owner of the data, and names the cost of that vacuum (stigma, misinformation, 600-1,000 annual reports lost without analysis). Unlike PURSUE (Tier S: executive directive with an operational portal and mandate), Sky Canada is advisory: it recommends, it does not order, and its implementation was left to government decision. Hence Tier A. It pairs with Project Magnet/Second Storey (1950) as the two poles of Canadian state involvement: an operational program in the mid-20th century and a scientific audit of reporting 75 years later.",
+  "evidence": [
+    "Informe oficial 'Management of Public Reporting of Unidentified Aerial Phenomena in Canada' de la Oficina del Asesor Científico Jefe de Canadá (OCSA)",
+    "Sky Canada Project iniciado en 2022; versión preview publicada en enero de 2025 e informe completo a mediados de 2025",
+    "Diagnóstico documentado: 600-1.000 reportes UAP por año en Canadá; encuesta nacional de 2024 con 27% de observación de algo no identificable",
+    "Constatación de que desde 1995 ningún organismo federal tiene mandato para recolectar o investigar reportes públicos UAP",
+    "Recomendación de un líder nacional único (se sugiere la Agencia Espacial Canadiense) más portal público, datos abiertos y ciencia ciudadana",
+    "Reportes actualmente dispersos entre RCMP, Transport Canada (base CADORS) y la Agencia Espacial Canadiense, sin compilación sistemática"
+  ],
+  "evidence_en": [
+    "Official report 'Management of Public Reporting of Unidentified Aerial Phenomena in Canada' from the Office of the Chief Science Advisor of Canada (OCSA)",
+    "Sky Canada Project launched in 2022; preview version published in January 2025 and full report in mid-2025",
+    "Documented diagnosis: 600-1,000 UAP reports per year in Canada; a 2024 national survey with 27% reporting observation of something unidentifiable",
+    "Finding that since 1995 no federal body has held the mandate to collect or investigate public UAP reports",
+    "Recommendation of a single national lead (the Canadian Space Agency is suggested) plus a public portal, open data and citizen science",
+    "Reports currently scattered across the RCMP, Transport Canada (CADORS database) and the Canadian Space Agency, with no systematic compilation"
+  ],
+  "sources": [
+    {
+      "name": "Office of the Chief Science Advisor of Canada — Sky Canada Project (portal oficial)",
+      "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project",
+      "note": "Página primaria del proyecto."
+    },
+    {
+      "name": "Management of Public Reporting of Unidentified Aerial Phenomena in Canada — informe (gov.ca)",
+      "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project/management-public-reporting-unidentified-aerial-phenomena-canada",
+      "note": "Informe completo y recomendaciones."
+    },
+    {
+      "name": "CBC News — 'Canada needs agency to manage public UFO sightings, says new federal report'",
+      "url": "https://www.cbc.ca/news/canada/manitoba/sky-canada-project-report-ufo-uap-1.7586922",
+      "note": "Cobertura periodística del lanzamiento y las recomendaciones."
+    },
+    {
+      "name": "The Debrief — 'Canada's UAP Challenges: Will the Government Act on the Sky Canada Project Report?'",
+      "url": "https://thedebrief.org/canadas-uap-challenges-will-the-government-act-on-the-sky-canada-project-report/",
+      "note": "Análisis del estado de implementación pendiente."
+    },
+    {
+      "name": "EarthSky — 'UFOs in Canada? Official new report'",
+      "url": "https://earthsky.org/human-world/ufos-in-canada-chief-science-advisor-of-canada-uap/",
+      "note": "Síntesis divulgativa del informe."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Una revisión científica federal que prioriza sistematizar el reporte y combatir la desinformación — y que explícitamente declina investigar casos o afirmar anomalía — trata implícitamente el grueso de los 600-1.000 reportes anuales como prosaicamente explicable. Es una señal de encuadre, no evidencia: minimal porque el informe no analiza ningún avistamiento y deja abierta la posibilidad de un residuo no explicado.",
+      "rationaleEn": "A federal scientific review that prioritizes systematizing reporting and countering misinformation — and that explicitly declines to investigate cases or assert anomaly — implicitly treats the bulk of the 600-1,000 annual reports as prosaically explainable. It is a framing signal, not evidence: minimal because the report analyzes no sighting and leaves open the possibility of an unexplained residue."
+    }
+  ]
+}
