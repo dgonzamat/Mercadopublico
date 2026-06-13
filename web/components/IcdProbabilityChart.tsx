@@ -122,6 +122,11 @@ export function IcdProbabilityChart({ framing = true }: { framing?: boolean } = 
                 <span className="text-muted">
                   ({Math.round(h.effectivePct)}%)
                 </span>
+                {h.source === "override" && (
+                  <span className="ml-2 border border-border bg-panel px-1.5 py-0.5 text-[10px] normal-case tracking-normal text-muted">
+                    <T es="calibración editorial" en="editorial calibration" />
+                  </span>
+                )}
               </p>
 
               {/* Título con el label COMPLETO: el prefijo "≥1 caso es…" ES el

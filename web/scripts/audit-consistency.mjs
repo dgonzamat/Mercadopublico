@@ -147,9 +147,11 @@ const EDITORIAL_RANGES_OK = new Set([
   // Whole-number priors (must equal a hypothesis prior to pass)
   "88", "70", "28", "30", "22", "6",
   // Effective-value cites in about/page.tsx Ch.4 under the log-odds model:
-  // programas-clasificados ≈ 96, fenómeno natural ≈ 44, tecnologia-adversaria
-  // ≈ 89, ingenieria-inversa ≈ 31, entidades-no-humanas ≈ 54.
-  "96", "44", "89", "31", "54",
+  // Valores EFECTIVOS citados en /about (post-calibración estadística jun 2026:
+  // monotonicidad existencial + anti doble conteo de anclas):
+  // programas-clasificados ≈ 97, tecnologia-adversaria ≈ 93, fenómeno
+  // natural ≈ 73, entidades-no-humanas ≈ 56, ingenieria-inversa ≈ 32.
+  "93", "73", "56", "32",
 ]);
 
 /**

@@ -13,6 +13,30 @@
  * (lib/hypotheses.ts post-reformulation).
  */
 
+import { HYPOTHESES } from "./hypotheses";
+
+/**
+ * claimType por hipótesis — gobierna la agregación de evidencia (ver JSDoc
+ * de `claimType` en lib/hypotheses.ts). Para "corpus-existential" («≥1 caso
+ * es X») las contribuciones `weakens` se EXCLUYEN de la suma: la afirmación
+ * es monótona — que el caso A no sea X no baja la probabilidad de que el
+ * caso B lo sea. Esos verdictos siguen siendo válidos a nivel de caso y se
+ * muestran en su expediente; simplemente no penalizan la hipótesis global.
+ *
+ * NOTA DE HONESTIDAD ESTADÍSTICA: este modelo es un sistema de puntuación
+ * editorial estructurado en log-odds, no inferencia bayesiana estricta —
+ * los priors se fijaron conociendo el corpus y los pesos son juicios, no
+ * likelihood ratios derivados. Para las hipótesis existenciales, la forma
+ * de agregación formalmente correcta sería noisy-OR
+ * (P = 1 − Π(1−qᵢ) sobre los candidatos); el esquema actual la aproxima
+ * con el prior absorbiendo el ancla confirmada (regla anti doble conteo en
+ * las prosas de tecnologia-adversaria y fenomenos-naturales) más empujes
+ * conservadores de los candidatos restantes.
+ */
+const CLAIM_TYPE: Record<string, string> = Object.fromEntries(
+  HYPOTHESES.map((h) => [h.id, h.claimType]),
+);
+
 export const PATTERN_TO_HYPOTHESIS: Record<string, string> = {
   "8a": "heterogeneidad", // efectos físicos / interacción biológica → algo real
   "8b": "heterogeneidad", // madre+sub-objetos → estructura intencional (diversidad)
@@ -22,8 +46,9 @@ export const PATTERN_TO_HYPOTHESIS: Record<string, string> = {
   "8f": "heterogeneidad", // monitoreo riesgo catastrófico → patrón de interés intencional
   "8g": "fenomenos-naturales", // persistencia local (Hessdalen, Popocatépetl) → fenómeno repetible
   "8h": "heterogeneidad", // morfologías múltiples → diversidad explícita
-  "8i": "heterogeneidad", // framework de tiers → meta-pattern
-  "8j": "heterogeneidad", // metodología Bayesiana → meta-pattern
+  // 8i (framework de tiers) y 8j (metodología bayesiana) NO mapean a ninguna
+  // hipótesis: son meta-patrones sobre cómo trabaja el corpus, no evidencia
+  // del fenómeno. Que el catálogo use tiers no hace más probable nada.
   "8k": "interdimensional", // interferencia EM → física exótica
   "8l": "programas-clasificados", // triángulos silenciosos → tecnología terrestre avanzada
   "8m": "programas-clasificados", // cover-up institucional → estado oculta algo
@@ -226,8 +251,13 @@ export function pressureFor(
     for (const e of effectiveContributions(c)) {
       if (!targets.includes(e.hypothesisId)) continue;
       touched = true;
-      if (e.direction === "supports") supports += e.weight;
-      else weakens += e.weight;
+      if (e.direction === "supports") {
+        supports += e.weight;
+      } else if (CLAIM_TYPE[hypothesisId] !== "corpus-existential") {
+        // `weakens` solo cuenta para afirmaciones no monótonas
+        // (world-existence): ver CLAIM_TYPE arriba.
+        weakens += e.weight;
+      }
     }
     if (touched) supportingCaseIds.add(c.id ?? "");
   }

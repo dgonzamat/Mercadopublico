@@ -261,8 +261,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="De las ocho explicaciones principales del corpus, seis están razonablemente decididas — programa clasificado arriba (~96% efectivo) con evidencia histórica documentada (U-2, F-117), tecnología de vigilancia de otro Estado también arriba (~89%) con el globo de 2023 atribuido oficialmente por el DoD, fenómeno natural raro que el corpus empujó hasta ~44% efectivo porque los casos con sensor muestran objetos estructurados, y las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal) abajo porque su evidencia es testimonial. Las dos abiertas son entidades no humanas (categoría amplia, ~54%) e ingeniería inversa (~31%, programa US de RE de tech no humana): ambas se moverían con un experimento decisivo o un release ejecutivo. Por eso ahí vive el debate del corpus."
-                  en="Of the eight main corpus explanations, six are reasonably settled — classified programs near the top (~96% effective) with documented historical evidence (U-2, F-117), another state's surveillance technology also near the top (~89%) with the 2023 balloon officially attributed by the DoD, rare natural phenomenon that the corpus pushed down to ~44% effective because the sensor cases show structured objects, and the three specific subclasses (interdimensional, non-materialist ontological, formal treaty) near the bottom because their evidence is testimonial. The two open ones are broad non-human entities (~54%) and reverse-engineering (~31%, a U.S. RE program of non-human tech): both would move with a decisive experiment or an executive release. That's where the corpus debate lives."
+                  es="De las ocho explicaciones principales del corpus, seis están razonablemente decididas — programa clasificado arriba (~97% efectivo) con evidencia histórica documentada (U-2, F-117), tecnología de vigilancia de otro Estado también arriba (~93%) con el globo de 2023 como ancla confirmada (atribuido oficialmente por el DoD; el prior absorbe el ancla para no contarla dos veces), fenómeno natural raro en ~73% sostenido por Hessdalen como ancla — los verdictos «este caso no es natural» de otros expedientes no la penalizan, porque una afirmación «≥1 caso» es monótona —, y las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal) abajo porque su evidencia es testimonial. Las dos abiertas son entidades no humanas (categoría amplia, ~56%) e ingeniería inversa (~32%, programa US de RE de tech no humana): ambas se moverían con un experimento decisivo o un release ejecutivo. Por eso ahí vive el debate del corpus."
+                  en="Of the eight main corpus explanations, six are reasonably settled — classified programs near the top (~97% effective) with documented historical evidence (U-2, F-117), another state's surveillance technology also near the top (~93%) with the 2023 balloon as a confirmed anchor (officially attributed by the DoD; the prior absorbs the anchor to avoid double counting), rare natural phenomenon at ~73% sustained by Hessdalen as its anchor — \"this case is not natural\" verdicts from other files don't penalize it, because a \"≥1 case\" claim is monotone —, and the three specific subclasses (interdimensional, non-materialist ontological, formal treaty) near the bottom because their evidence is testimonial. The two open ones are broad non-human entities (~56%) and reverse-engineering (~32%, a U.S. RE program of non-human tech): both would move with a decisive experiment or an executive release. That's where the corpus debate lives."
                 />
               </Body>
               <div className="grid gap-4 sm:grid-cols-3">
@@ -270,10 +270,10 @@ export default function AboutPage() {
                   es="Priors arriba (no se mueven)"
                   en="Priors near ceiling (don't move)"
                   items={[
-                    "Programa clasificado · prior 88% → 96%",
+                    "Programa clasificado · prior 88% → 97%",
                   ]}
                   itemsEn={[
-                    "Classified program · prior 88% → 96%",
+                    "Classified program · prior 88% → 97%",
                   ]}
                 />
                 <MoveList

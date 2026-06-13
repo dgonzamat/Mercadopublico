@@ -75,13 +75,6 @@
   ],
   "evidenceContribution": [
     {
-      "hypothesisId": "tecnologia-adversaria",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Confirmación oficial directa: declaración del Secretario de Defensa, recuperación de restos físicos, análisis FBI, identificación de antenas SIGINT. Es el caso del corpus con mayor grado de evidencia institucional para tecnología militar adversaria —pocos casos del catálogo tienen este nivel de cierre. Substantial es la calibración honesta: el caso valida empíricamente la categoría completa.",
-      "rationaleEn": "Direct official confirmation: Secretary of Defense statement, physical wreckage recovery, FBI analysis, SIGINT antenna identification. It is the corpus case with the highest degree of institutional evidence for adversary military technology —few catalog cases have this level of closure. Substantial is the honest calibration: the case empirically validates the entire category."
-    },
-    {
       "hypothesisId": "programas-clasificados",
       "direction": "weakens",
       "strength": "minimal",

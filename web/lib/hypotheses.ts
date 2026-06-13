@@ -58,7 +58,7 @@ import { STATS } from "./siteStats";
  *
  *   When editorial copy cites a percentage, name it:
  *     "su prior de 22%"      ← unambiguous prior reference
- *     "el chart muestra 44%" ← unambiguous effective reference
+ *     "el chart muestra 73%" ← unambiguous effective reference
  *     "lo que da 28%"        ← AVOID: reads as effective claim
  *
  *   Static strings (`.note`, MoveList items, chapter bodies, etc.)
@@ -79,6 +79,19 @@ export interface Hypothesis {
   labelEn: string;
   corpusPct: number;                // PRIOR — baseline before corpus evidence
   corpusPctOverride?: number;       // optional manual final value (bypasses pressure)
+  /**
+   * Forma lógica de la afirmación — gobierna cómo se agrega la evidencia:
+   *  - "corpus-existential": «≥1 caso del corpus es X». Monótona: descartar
+   *    candidatos individuales no puede bajarla → las contribuciones
+   *    `weakens` se EXCLUYEN de la calibración (siguen siendo verdictos
+   *    válidos por caso).
+   *  - "world-existence": «existe X en el mundo» (programa, tratado). La
+   *    contra-evidencia sí puede bajarla → `weakens` cuenta.
+   *  - "proportional": afirmación de proporción sobre un universo
+   *    (p.ej. la mayoría de los reportes).
+   *  - "meta": consecuencia matemática de las otras, no calibrable por casos.
+   */
+  claimType: "corpus-existential" | "world-existence" | "proportional" | "meta";
   color: string;
   note: string;                     // short blurb — used by the compact chart card
   noteEn: string;
@@ -91,6 +104,7 @@ export interface Hypothesis {
 const RAW: Array<Omit<Hypothesis, "icd">> = [
   {
     id: "misidentificacion",
+    claimType: "proportional",
     kind: "antecedent",
     label: "Misidentificaciones explican la mayoría de reportes",
     labelEn: "Misidentifications explain the majority of reports",
@@ -104,6 +118,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "heterogeneidad",
+    claimType: "meta",
     kind: "derived",
     label: "El corpus contiene varias causas heterogéneas",
     labelEn: "The corpus contains several heterogeneous causes",
@@ -117,6 +132,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "programas-clasificados",
+    claimType: "corpus-existential",
     kind: "primitive",
     label: "≥1 caso es programa militar clasificado",
     labelEn: "≥1 case is a classified military program",
@@ -129,18 +145,20 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "tecnologia-adversaria",
+    claimType: "corpus-existential",
     kind: "primitive",
     label: "≥1 caso es tecnología de vigilancia de otro Estado",
     labelEn: "≥1 case is another state's surveillance technology",
-    corpusPct: 88,
+    corpusPct: 92,
     color: "#6b3023",
     note: "Plataformas de inteligencia operadas por un Estado sobre territorio de otro, sin atribución inmediata. Caso confirmado: el globo de vigilancia de 2023, atribuido oficialmente por el DoD. Mystery Drones 2024 y derribos de feb 2023 con origen no atribuido.",
     noteEn: "Intelligence platforms operated by one state over another's territory, without immediate attribution. Confirmed case: the 2023 surveillance balloon, officially attributed by the DoD. 2024 Mystery Drones and Feb 2023 shoot-downs with unattributed origin.",
-    prose: "Hipótesis distinta de `programas-clasificados` aunque a menudo se confunden con ella. Afirma que al menos un caso del corpus es **tecnología de inteligencia operada por un Estado sobre territorio de otro**, sin atribución institucional inmediata. El marco es deliberadamente neutro: no nombra países — las atribuciones específicas viven en cada caso y solo cuando una institución las hizo en el récord. Su prior de 88% es simétrico al de `programas-clasificados` y por la misma razón: la formulación '≥1 caso' ya está satisfecha con confirmación documental. El globo de vigilancia derribado frente a Carolina del Sur en febrero 2023 fue atribuido oficialmente por el Secretario de Defensa, con restos recuperados y analizados por el FBI; AARO reconoció después una serie histórica de sobrevuelos previos que habían sido categorizados como UAP. Los Mystery Drones de 2024 y los otros derribos de febrero 2023 (Alaska, Yukon, Lake Huron) permanecen sin atribución oficial. Lo que esta hipótesis distingue de `programas-clasificados` es la dirección de la pregunta: si un caso es tecnología doméstica no reconocida, el problema es cover-up; si es tecnología de otro Estado, el problema es defensa aérea — dos lecturas con consecuencias operativas opuestas que la palabra 'UAP' colapsa si no se separan.",
-    proseEn: "Hypothesis distinct from `programas-clasificados` though they are often conflated. It claims that at least one corpus case is **intelligence technology operated by one state over another's territory**, without immediate institutional attribution. The frame is deliberately neutral: it names no countries — specific attributions live in each case and only where an institution made them on the record. Its 88% prior is symmetric with `programas-clasificados` and for the same reason: the '≥1 case' formulation is already satisfied with documentary confirmation. The surveillance balloon shot down off South Carolina in February 2023 was officially attributed by the Secretary of Defense, with wreckage recovered and analyzed by the FBI; AARO later acknowledged a historical series of prior overflights that had been categorized as UAP. The 2024 Mystery Drones and the other February 2023 shoot-downs (Alaska, Yukon, Lake Huron) remain officially unattributed. What this hypothesis distinguishes from `programas-clasificados` is the direction of the question: if a case is unacknowledged domestic technology, the problem is cover-up; if it is another state's technology, the problem is air defense — two readings with opposite operational consequences that the word 'UAP' collapses unless they are separated.",
+    prose: "Hipótesis distinta de `programas-clasificados` aunque a menudo se confunden con ella. Afirma que al menos un caso del corpus es **tecnología de inteligencia operada por un Estado sobre territorio de otro**, sin atribución institucional inmediata. El marco es deliberadamente neutro: no nombra países — las atribuciones específicas viven en cada caso y solo cuando una institución las hizo en el récord. Su prior de 92% es el piso que impone el ancla confirmada: para una afirmación existencial, P(≥1 caso) no puede ser menor que la probabilidad de que el mejor candidato califique. Evaluación del ancla: China admitió la propiedad del globo de 2023 y disputa solo su propósito; hay restos recuperados con equipamiento de colección reportado y trayectoria de merodeo sobre campos de ICBM — pero toda la cadena probatoria pasa por un solo gobierno, sin verificación independiente: q ≈ 0.92. Por la misma razón el caso ancla no vuelve a contribuir presión — su evidencia ya vive en el prior (regla anti doble conteo). El globo de vigilancia derribado frente a Carolina del Sur en febrero 2023 fue atribuido oficialmente por el Secretario de Defensa, con restos recuperados y analizados por el FBI; AARO reconoció después una serie histórica de sobrevuelos previos que habían sido categorizados como UAP. Los Mystery Drones de 2024 y los otros derribos de febrero 2023 (Alaska, Yukon, Lake Huron) permanecen sin atribución oficial. Lo que esta hipótesis distingue de `programas-clasificados` es la dirección de la pregunta: si un caso es tecnología doméstica no reconocida, el problema es cover-up; si es tecnología de otro Estado, el problema es defensa aérea — dos lecturas con consecuencias operativas opuestas que la palabra 'UAP' colapsa si no se separan.",
+    proseEn: "Hypothesis distinct from `programas-clasificados` though they are often conflated. It claims that at least one corpus case is **intelligence technology operated by one state over another's territory**, without immediate institutional attribution. The frame is deliberately neutral: it names no countries — specific attributions live in each case and only where an institution made them on the record. Its 92% prior is the floor imposed by the confirmed anchor: for an existential claim, P(≥1 case) cannot be lower than the probability that the best candidate qualifies. Anchor assessment: China admitted ownership of the 2023 balloon and disputes only its purpose; debris was recovered with reported collection equipment and a loitering trajectory over ICBM fields — but the entire evidentiary chain runs through a single government, without independent verification: q ≈ 0.92. For the same reason the anchor case contributes no further pressure — its evidence already lives in the prior (anti double-counting rule). The surveillance balloon shot down off South Carolina in February 2023 was officially attributed by the Secretary of Defense, with wreckage recovered and analyzed by the FBI; AARO later acknowledged a historical series of prior overflights that had been categorized as UAP. The 2024 Mystery Drones and the other February 2023 shoot-downs (Alaska, Yukon, Lake Huron) remain officially unattributed. What this hypothesis distinguishes from `programas-clasificados` is the direction of the question: if a case is unacknowledged domestic technology, the problem is cover-up; if it is another state's technology, the problem is air defense — two readings with opposite operational consequences that the word 'UAP' collapses unless they are separated.",
   },
   {
     id: "fenomenos-naturales",
+    claimType: "corpus-existential",
     kind: "primitive",
     label: "≥1 caso es fenómeno natural raro no catalogado",
     labelEn: "≥1 case is a rare uncatalogued natural phenomenon",
@@ -148,11 +166,12 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
     color: "#8b6914",
     note: "Plasma atmosférico, sprites, ball lightning, ionización exótica sobre fallas tectónicas. Explica recurrencias locales como Hessdalen — 44 años de instrumentación continua, el caso ancla de esta familia — Popocatépetl y las Marfa Lights.",
     noteEn: "Atmospheric plasma, sprites, ball lightning, exotic ionization over tectonic faults. Explains local recurrences like Hessdalen — 44 years of continuous instrumentation, the anchor case of this family — Popocatépetl and the Marfa Lights.",
-    prose: "La hipótesis natural cubre lo que la física conoce pero el observador rara vez ha visto: plasmas atmosféricos, ball lightning, sprites, transient luminous events, ionización exótica sobre fallas tectónicas, reflejos termoclinales. Tiene prior alto porque el corpus contiene observaciones de luces persistentes sin firma de propulsión artificial —Hessdalen lleva más de cuatro décadas documentado por físicos noruegos, Popocatépetl reaparece con cada erupción, las Marfa Lights tienen su propio observatorio turístico. La prensa decimonónica reportaba foo fighters mucho antes de que existieran sensores capaces de resolverlos. Su debilidad es simétrica a la fortaleza de programas-clasificados: no explica bien los casos con maniobras intencionales, cambios de dirección sin inercia detectable, intercepción coordinada de un objetivo o tracking de aeronave. Plasma raro puede flotar, brillar, expandirse; no maniobra. El Informe Rommel 1980 sobre mutilaciones de ganado es la versión escéptica institucional más fuerte de esta familia: cuando se examinan los casos con método veterinario estándar, encajan.",
-    proseEn: "The natural hypothesis covers what physics knows but the observer rarely sees: atmospheric plasmas, ball lightning, sprites, transient luminous events, exotic ionization over tectonic faults, thermocline reflections. It carries a high prior because the corpus contains persistent-light observations without any artificial propulsion signature —Hessdalen has been documented for over four decades by Norwegian physicists, Popocatépetl reappears with each eruption, the Marfa Lights have their own tourist observatory. 19th-century press reported foo fighters long before sensors could resolve them. Its weakness is symmetric to classified-program's strength: it does not explain cases with intentional maneuvering, inertia-free direction changes, coordinated target interception, or aircraft tracking. Rare plasma can float, glow, expand; it does not maneuver. The Rommel Report 1980 on cattle mutilations is the strongest institutional skeptical version in this family: examined with standard veterinary method, the cases fit.",
+    prose: "La hipótesis natural cubre lo que la física conoce pero el observador rara vez ha visto: plasmas atmosféricos, ball lightning, sprites, transient luminous events, ionización exótica sobre fallas tectónicas, reflejos termoclinales. Tiene prior alto porque el corpus contiene observaciones de luces persistentes sin firma de propulsión artificial —Hessdalen lleva más de cuatro décadas documentado por físicos noruegos, Popocatépetl reaparece con cada erupción, las Marfa Lights tienen su propio observatorio turístico. La prensa decimonónica reportaba foo fighters mucho antes de que existieran sensores capaces de resolverlos. Su debilidad es simétrica a la fortaleza de programas-clasificados: no explica bien los casos con maniobras intencionales, cambios de dirección sin inercia detectable, intercepción coordinada de un objetivo o tracking de aeronave. Plasma raro puede flotar, brillar, expandirse; no maniobra. El Informe Rommel 1980 sobre mutilaciones de ganado es la versión escéptica institucional más fuerte de esta familia: cuando se examinan los casos con método veterinario estándar, encajan. Dos reglas de calibración aplican aquí: Hessdalen — el ancla que justifica el prior de 70% — no vuelve a contribuir presión (su evidencia ya vive en el prior), y los verdictos «este caso no es natural» de otros expedientes no restan: una afirmación «≥1 caso» es monótona — descartar candidatos individuales no puede bajar la probabilidad de que otro candidato califique.",
+    proseEn: "The natural hypothesis covers what physics knows but the observer rarely sees: atmospheric plasmas, ball lightning, sprites, transient luminous events, exotic ionization over tectonic faults, thermocline reflections. It carries a high prior because the corpus contains persistent-light observations without any artificial propulsion signature —Hessdalen has been documented for over four decades by Norwegian physicists, Popocatépetl reappears with each eruption, the Marfa Lights have their own tourist observatory. 19th-century press reported foo fighters long before sensors could resolve them. Its weakness is symmetric to classified-program's strength: it does not explain cases with intentional maneuvering, inertia-free direction changes, coordinated target interception, or aircraft tracking. Rare plasma can float, glow, expand; it does not maneuver. The Rommel Report 1980 on cattle mutilations is the strongest institutional skeptical version in this family: examined with standard veterinary method, the cases fit. Two calibration rules apply here: Hessdalen — the anchor justifying the 70% prior — contributes no further pressure (its evidence already lives in the prior), and \"this case is not natural\" verdicts from other files do not subtract: a \"≥1 case\" claim is monotone — ruling out individual candidates cannot lower the probability that another candidate qualifies.",
   },
   {
     id: "entidades-no-humanas",
+    claimType: "corpus-existential",
     kind: "primitive",
     label: "≥1 caso involucra entidades no humanas (categoría amplia)",
     labelEn: "≥1 case involves non-human entities (broad category)",
@@ -165,6 +184,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "interdimensional",
+    claimType: "corpus-existential",
     kind: "primitive",
     label: "≥1 caso es interdimensional / física exótica",
     labelEn: "≥1 case is interdimensional / exotic physics",
@@ -177,6 +197,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "ontologico-no-materialista",
+    claimType: "corpus-existential",
     kind: "primitive",
     label: "≥1 caso es ontológico no materialista (frame Mack/Strieber)",
     labelEn: "≥1 case is non-materialist ontological (Mack/Strieber frame)",
@@ -189,6 +210,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "ingenieria-inversa",
+    claimType: "world-existence",
     kind: "primitive",
     label: "Existe programa de ingeniería inversa de tecnología no humana (claim específica)",
     labelEn: "A reverse-engineering program on non-human technology exists (specific claim)",
@@ -201,6 +223,7 @@ const RAW: Array<Omit<Hypothesis, "icd">> = [
   },
   {
     id: "tratado-greys",
+    claimType: "world-existence",
     kind: "primitive",
     label: "Existe tratado formal con Greys (claim específica)",
     labelEn: "A formal treaty with Greys exists (specific claim)",
