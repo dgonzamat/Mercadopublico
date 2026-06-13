@@ -296,12 +296,6 @@ export function pressureFor(
  * it is no longer the source of the ceiling.
  */
 
-/**
- * @deprecated kept for back-compat audit of the previous linear model.
- * The log-odds model does NOT use a multiplicative shift factor.
- */
-export const PRESSURE_SHIFT_FACTOR = 1;
-
 export type CalibrationSource = "override" | "derived" | "prior";
 
 interface HypothesisLike {

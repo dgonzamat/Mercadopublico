@@ -28,6 +28,18 @@
  *   E7  Spanglish: los campos ES-first de casos (name, summary) no deben
  *       contener inglés descriptivo — el inglés vive en *_en. Heurística
  *       curada con exenciones para nombres propios y texto entre comillas.
+ *   E8  Calibración existencial (post-#244):
+ *       E8a (WARN) Una contribución `weakens` hacia una hipótesis
+ *           corpus-existential es inerte — se calcula pero se descarta
+ *           (la claim «≥1 caso» es monótona). Se avisa para que no se
+ *           confunda con evidencia efectiva.
+ *       E8b (ERROR) Invariante de monotonicidad: el `effective` de toda
+ *           hipótesis corpus-existential debe ser ≥ su prior. Si se rompe,
+ *           el motor o este mirror dejaron de excluir `weakens`.
+ *
+ * NOTA · este script DUPLICA la calibración de lib/hypothesisMapping.ts
+ * (no puede importar TS sin build). La sección 3 debe mantenerse espejada;
+ * E8b es el guard que detecta cuando la copia se desincroniza.
  */
 
 import fs from "node:fs";
@@ -51,10 +63,14 @@ function parseHypotheses(src) {
   const re = /\{\s*id:\s*"([^"]+)",[\s\S]*?corpusPct:\s*(\d+)(?:[\s\S]*?corpusPctOverride:\s*(\d+))?[\s\S]*?\},/g;
   let m;
   while ((m = re.exec(src)) !== null) {
+    // claimType vive en el mismo bloque del objeto; lo extraemos del match
+    // capturado (puede aparecer antes o después de corpusPct).
+    const ct = /claimType:\s*"([^"]+)"/.exec(m[0]);
     out.push({
       id: m[1],
       prior: Number(m[2]),
       override: m[3] !== undefined ? Number(m[3]) : undefined,
+      claimType: ct ? ct[1] : undefined,
     });
   }
   return out;
@@ -66,6 +82,7 @@ if (HYPOTHESES.length < 6) {
 }
 const HYP_IDS = new Set(HYPOTHESES.map((h) => h.id));
 const PRIOR_BY_ID = Object.fromEntries(HYPOTHESES.map((h) => [h.id, h.prior]));
+const CLAIM_TYPE_BY_ID = Object.fromEntries(HYPOTHESES.map((h) => [h.id, h.claimType]));
 const OVERRIDE_BY_ID = Object.fromEntries(
   HYPOTHESES.filter((h) => h.override !== undefined).map((h) => [h.id, h.override]),
 );
@@ -90,23 +107,74 @@ const STATS = {
 // ─── 3. COMPUTE EFFECTIVE CALIBRATIONS (mirror lib/hypothesisMapping.ts) ─
 
 // Must mirror lib/hypothesisMapping.ts STRENGTH_WEIGHT (log-odds Bayes-factor
-// weights, NOT the legacy linear pressure points).
+// weights, NOT the legacy linear pressure points) AND su agregación: auto-seed
+// por patrones + exclusión de `weakens` para hipótesis corpus-existential.
 const STRENGTH_W = { minimal: 0.005, modest: 0.02, substantial: 0.05, "category-breaking": 0.15 };
 const UMBRELLA = {
   "entidades-no-humanas": ["interdimensional", "ontologico-no-materialista", "tratado-greys"],
 };
 
+// PATTERN_TO_HYPOTHESIS parseado desde lib/hypothesisMapping.ts. Necesario
+// para replicar el AUTO-SEED de lib: un caso SIN evidenceContribution explícita
+// siembra una contribución `supports`/`minimal` por cada patrón mapeado. Sin
+// esto el audit subcontaba la presión vs. lo que renderiza el sitio.
+function parsePatternMap(src) {
+  const body = /PATTERN_TO_HYPOTHESIS[^=]*=\s*\{([\s\S]*?)\n\};/.exec(src);
+  if (!body) return {};
+  const out = {};
+  const re = /"([^"]+)":\s*"([^"]+)"/g;
+  let m;
+  while ((m = re.exec(body[1])) !== null) out[m[1]] = m[2];
+  return out;
+}
+const mappingSrc = fs.readFileSync(
+  path.join(root, "lib", "hypothesisMapping.ts"),
+  "utf-8",
+);
+const PATTERN_TO_HYPOTHESIS = parsePatternMap(mappingSrc);
+
+/**
+ * Mirror de lib/hypothesisMapping.ts → effectiveContributions(): si el caso
+ * declara evidenceContribution, usa esas; si no, auto-siembra desde patterns
+ * (dedup por hipótesis, dirección `supports`, peso `minimal`).
+ */
+function effectiveContributions(c) {
+  if (c.evidenceContribution && c.evidenceContribution.length > 0) {
+    return c.evidenceContribution.map((e) => ({
+      hypothesisId: e.hypothesisId,
+      direction: e.direction,
+      weight: STRENGTH_W[e.strength] ?? 0,
+    }));
+  }
+  const seen = new Set();
+  const out = [];
+  for (const p of c.patterns || []) {
+    const hid = PATTERN_TO_HYPOTHESIS[p];
+    if (!hid || seen.has(hid)) continue;
+    seen.add(hid);
+    out.push({ hypothesisId: hid, direction: "supports", weight: STRENGTH_W.minimal });
+  }
+  return out;
+}
+
 function pressureFor(hid) {
   const targets = [hid, ...(UMBRELLA[hid] || [])];
-  let p = 0;
+  let supports = 0;
+  let weakens = 0;
   for (const c of cases) {
-    for (const e of c.evidenceContribution || []) {
+    for (const e of effectiveContributions(c)) {
       if (!targets.includes(e.hypothesisId)) continue;
-      const w = STRENGTH_W[e.strength] ?? 0;
-      p += e.direction === "supports" ? w : -w;
+      if (e.direction === "supports") {
+        supports += e.weight;
+      } else if (CLAIM_TYPE_BY_ID[hid] !== "corpus-existential") {
+        // `weakens` solo cuenta para afirmaciones NO monótonas: una claim
+        // «≥1 caso es X» no baja porque un candidato individual se descarte.
+        // Ver claimType en lib/hypotheses.ts y CLAIM_TYPE en hypothesisMapping.ts.
+        weakens += e.weight;
+      }
     }
   }
-  return p;
+  return supports - weakens;
 }
 
 function logit(p) { return Math.log(p / (1 - p)); }
@@ -349,6 +417,7 @@ for (const file of scanForForbidden) {
 // ─── 9. RULE E5 + E6: evidenceContribution integrity ─────────────────────
 
 let tierSWithoutContrib = 0;
+const inertWeakens = []; // RULE E8a — agregadas en un solo WARN al final
 for (const c of cases) {
   for (const e of c.evidenceContribution || []) {
     if (!HYP_IDS.has(e.hypothesisId)) {
@@ -375,6 +444,16 @@ for (const c of cases) {
         `evidenceContribution has unknown direction "${e.direction}" (case ${c.id})`,
       );
     }
+    // RULE E8a · `weakens` muerto: una contribución que debilita una hipótesis
+    // corpus-existential se calcula pero se DESCARTA (la claim «≥1 caso» es
+    // monótona). Sigue siendo un verdicto válido a nivel de caso, pero no
+    // mueve la calibración global — se avisa para que nadie lo crea efectivo.
+    if (
+      e.direction === "weakens" &&
+      CLAIM_TYPE_BY_ID[e.hypothesisId] === "corpus-existential"
+    ) {
+      inertWeakens.push({ caseId: c.id, hid: e.hypothesisId });
+    }
   }
   if (c.tier === "S" && (!c.evidenceContribution || c.evidenceContribution.length === 0)) {
     tierSWithoutContrib++;
@@ -383,6 +462,42 @@ for (const c of cases) {
       path.join(casesDir, c.id + ".json"),
       0,
       `Tier S case "${c.id}" has no evidenceContribution — calibration auto-seeds from patterns only`,
+    );
+  }
+}
+
+// RULE E8a · resumen agregado de `weakens` inertes (deuda silenciosa: datos
+// que se calculan y se descartan). Un solo WARN para no inundar el prebuild.
+if (inertWeakens.length > 0) {
+  const byHyp = {};
+  for (const w of inertWeakens) byHyp[w.hid] = (byHyp[w.hid] || 0) + 1;
+  const breakdown = Object.entries(byHyp)
+    .map(([h, n]) => `${h}×${n}`)
+    .join(", ");
+  record(
+    "WARN",
+    hypothesesPath,
+    0,
+    `${inertWeakens.length} inert weakens toward corpus-existential hypotheses (${breakdown}) — computed then discarded by monotonicity; valid as per-case verdicts only`,
+  );
+}
+
+// ─── 9a. RULE E8b: monotonicity invariant for existential claims ─────────
+//
+// Una claim «≥1 caso es X» (corpus-existential) es monótona: descartar
+// candidatos no puede bajar P(≥1 caso califique). Por tanto su `effective`
+// NUNCA puede caer por debajo de su prior. Si esto se rompe, el motor
+// (lib/hypothesisMapping.ts) o este mirror dejaron de excluir `weakens` —
+// exactamente el drift que introdujo #244 en este auditor. Falla el build.
+for (const h of HYPOTHESES) {
+  if (h.override !== undefined || h.claimType !== "corpus-existential") continue;
+  const eff = EFFECTIVE[h.id];
+  if (eff + 1e-9 < h.prior) {
+    record(
+      "ERROR",
+      hypothesesPath,
+      0,
+      `monotonicity broken: corpus-existential "${h.id}" effective=${eff.toFixed(2)} < prior=${h.prior} (weakens must be excluded — see #244)`,
     );
   }
 }
