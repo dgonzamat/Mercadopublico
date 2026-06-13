@@ -1,0 +1,82 @@
+{
+  "id": "panama-canal-zone-1958",
+  "num": 204,
+  "name": "Zona del Canal de Panamá · radar militar y reflectores (1958)",
+  "name_en": "Panama Canal Zone · military radar and searchlights (1958)",
+  "year_start": 1958,
+  "country": "PA",
+  "country_name": "Panamá",
+  "flag": "🇵🇦",
+  "location": {
+    "lat": 8.9147,
+    "lng": -79.5997,
+    "place": "Zona del Canal (administración estadounidense), Howard Field y baterías antiaéreas"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 68,
+  "summary": "En las noches del 9 y 10 de marzo de 1958, personal de la Fuerza Aérea estadounidense y de artillería antiaérea del Ejército de EE.UU. en la Zona del Canal de Panamá rastreó objetos no identificados con múltiples radares de búsqueda y seguimiento. Cuando los reflectores antiaéreos iluminaron los blancos, estos ascendieron de 2.000 a 10.000 pies en cinco a diez segundos; un T-33 de Howard Field intentó interceptarlos sin éxito —cada vez que se acercaba, el objeto se alejaba varias millas y se detenía—. El caso quedó documentado en un reporte oficial del Capitán Vernon D. Adams (USAF) y archivado en Project Blue Book. Es un evento multi-sensor (radar + reflector + visual + intento de intercepción aérea) de la era Blue Book sobre territorio centroamericano.",
+  "summary_en": "On the nights of March 9 and 10, 1958, U.S. Air Force personnel and U.S. Army anti-aircraft artillery in the Panama Canal Zone tracked unidentified objects with multiple search and tracking radars. When anti-aircraft searchlights illuminated the targets, they climbed from 2,000 to 10,000 feet in five to ten seconds; a T-33 from Howard Field attempted to intercept without success —each time it closed in, the object would move several miles away and stop. The case was documented in an official report by Capt. Vernon D. Adams (USAF) and archived in Project Blue Book. It is a multi-sensor event (radar + searchlight + visual + air-intercept attempt) from the Blue Book era over Central American territory.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "A las 2003R (hora local) del 9 de marzo de 1958, el centro de operaciones antiaéreas de la Zona del Canal de Panamá recibió un reporte de radar de una aeronave no identificada. Durante el seguimiento del primer blip, a las 2045R se observaron dos blips adicionales. Los operadores dirigieron reflectores antiaéreos hacia los blancos de radar; cuando la luz tocó los objetos, estos ascendieron de unos 2.000 pies a 10.000 pies en cinco a diez segundos — un cambio de altitud incompatible con las aeronaves convencionales de la época.\n\nEl episodio se extendió a la jornada siguiente. Un T-33 Shooting Star despegó de Howard Field para interceptar uno de los objetos; según el registro, cada vez que el T-33 se aproximaba, el objeto 'se alejaba varias millas y luego se detenía'. Las observaciones de radar fueron descritas como retornos fuertes, fácilmente distinguibles de nubes o eco meteorológico, con momentos de movimiento errático e incluso evasivo. Participaron varias instalaciones de radar de búsqueda y seguimiento, además del personal de artillería antiaérea — es decir, el evento fue captado por sensores y operadores independientes, no por un solo testigo.\n\nEl Capitán Vernon D. Adams (USAF) consolidó lo ocurrido en un reporte oficial: 'A number of unidentified radar tracks were observed 9–10 March 1958 by search and tracking radar located in the Canal Zone. Two tracks were investigated by aircraft with negative results.' El expediente entró en Project Blue Book, el programa de la USAF que entre 1952 y 1969 investigó más de 12.000 reportes, de los cuales 701 permanecen sin explicación. El caso de la Zona del Canal pertenece a la categoría de incidentes con instrumentación múltiple que el cierre administrativo de Blue Book no resolvió.",
+  "whatHappened_en": "At 2003R (local time) on March 9, 1958, the Panama Canal Zone anti-aircraft operations center received a radar report of an unidentified aircraft. During the tracking of the first blip, two additional blips were observed at 2045R. Operators directed anti-aircraft searchlights at the radar targets; when the light touched the objects, they climbed from about 2,000 feet to 10,000 feet in five to ten seconds — an altitude change incompatible with the conventional aircraft of the era.\n\nThe episode extended into the following day. A T-33 Shooting Star took off from Howard Field to intercept one of the objects; according to the record, each time the T-33 closed in, the object 'would move several miles away, then stop.' The radar observations were described as strong returns, easily distinguished from clouds or weather echo, with moments of erratic and even evasive movement. Several search and tracking radar installations were involved, along with anti-aircraft artillery personnel — meaning the event was captured by independent sensors and operators, not a single witness.\n\nCapt. Vernon D. Adams (USAF) consolidated the event in an official report: 'A number of unidentified radar tracks were observed 9–10 March 1958 by search and tracking radar located in the Canal Zone. Two tracks were investigated by aircraft with negative results.' The file entered Project Blue Book, the USAF program that between 1952 and 1969 investigated more than 12,000 reports, of which 701 remain unexplained. The Canal Zone case belongs to the category of multi-instrument incidents that Blue Book's administrative closure did not resolve.",
+  "whyMatters": "Es el primer caso centroamericano de instrumentación militar múltiple en el corpus, y abre Panamá. Su valor está en la correlación entre sensores independientes: radar de búsqueda y seguimiento, reflectores antiaéreos y observación visual coincidieron sobre los mismos blancos, y el comportamiento clave —ascenso de 2.000 a 10.000 pies en segundos al ser iluminados, evasión sistemática del T-33— es difícil de reducir a propagación anómala de radar o eco meteorológico, los candidatos prosaicos habituales para retornos de 1958. La intercepción 'con resultados negativos' deja el episodio en la ambigüedad típica de Blue Book: no identificado, no explicado, no resuelto. Tier A y no S porque, a diferencia de Lakenheath-Bentwaters 1956 —el análogo radar+jet de la misma década, extensamente analizado en la literatura—, este caso descansa sobre un único expediente Blue Book con menor corroboración independiente posterior. Caveat de atribución: el evento ocurrió sobre la Zona del Canal, bajo administración estadounidense en 1958, no bajo jurisdicción panameña — pero geográficamente es Panamá, y así se registra.",
+  "whyMatters_en": "It is the corpus's first Central American case of multiple military instrumentation, and it opens Panama. Its value lies in the correlation between independent sensors: search and tracking radar, anti-aircraft searchlights and visual observation coincided on the same targets, and the key behavior —a climb from 2,000 to 10,000 feet in seconds when illuminated, systematic evasion of the T-33— is hard to reduce to anomalous radar propagation or weather echo, the usual prosaic candidates for 1958 returns. The 'negative results' intercept leaves the episode in Blue Book's typical ambiguity: unidentified, unexplained, unresolved. Tier A and not S because, unlike Lakenheath-Bentwaters 1956 —the radar+jet analog of the same decade, extensively analyzed in the literature— this case rests on a single Blue Book file with less subsequent independent corroboration. Attribution caveat: the event occurred over the Canal Zone, under U.S. administration in 1958, not Panamanian jurisdiction — but geographically it is Panama, and so it is recorded.",
+  "evidence": [
+    "Reporte oficial del Capitán Vernon D. Adams (USAF) sobre los radar tracks no identificados del 9–10 de marzo de 1958 en la Zona del Canal",
+    "Detección por múltiples radares de búsqueda y seguimiento más personal de artillería antiaérea — sensores y operadores independientes",
+    "Ascenso de los objetos de ~2.000 a 10.000 pies en 5–10 segundos al ser iluminados por reflectores antiaéreos (primer blip 2003R, dos blips adicionales 2045R del 9 de marzo)",
+    "Intento de intercepción por un T-33 Shooting Star desde Howard Field; el objeto se alejaba varias millas y se detenía cada vez que el jet se aproximaba",
+    "Expediente archivado en Project Blue Book (USAF, 1952–1969); el caso quedó dentro de la categoría no resuelta",
+    "Documentación primaria escaneada disponible en Internet Archive ('Panama Canal Zone Radar Sighting – March 9 10, 1958')"
+  ],
+  "evidence_en": [
+    "Official report by Capt. Vernon D. Adams (USAF) on the unidentified radar tracks of March 9–10, 1958 in the Canal Zone",
+    "Detection by multiple search and tracking radars plus anti-aircraft artillery personnel — independent sensors and operators",
+    "Objects climbed from ~2,000 to 10,000 feet in 5–10 seconds when illuminated by anti-aircraft searchlights (first blip 2003R, two additional blips 2045R on March 9)",
+    "Intercept attempt by a T-33 Shooting Star from Howard Field; the object moved several miles away and stopped each time the jet closed in",
+    "File archived in Project Blue Book (USAF, 1952–1969); the case fell within the unresolved category",
+    "Primary scanned documentation available on the Internet Archive ('Panama Canal Zone Radar Sighting – March 9 10, 1958')"
+  ],
+  "sources": [
+    {
+      "name": "Unredacted.info — Radar and Pilot Encounters with Unidentified Objects Over Panama Canal",
+      "url": "https://www.unredacted.info/ufo/radar-and-pilot-encounters-with-unidentified-objects-over-panama-canal/",
+      "note": "Síntesis con citas del reporte de Adams y la cronología."
+    },
+    {
+      "name": "Internet Archive — 'Panama Canal Zone Radar Sighting – March 9 10, 1958' (documentación primaria escaneada)",
+      "url": "https://archive.org/details/PanamaUFO",
+      "note": "Expediente primario digitalizado."
+    },
+    {
+      "name": "National Archives — Project Blue Book / UFOs (USAF)",
+      "url": "https://www.archives.gov/research/military/air-force/ufos",
+      "note": "Marco del programa que archivó el caso."
+    },
+    {
+      "name": "Wikipedia — Howard Air Force Base (Canal Zone)",
+      "url": "https://en.wikipedia.org/wiki/Howard_Air_Force_Base",
+      "note": "Base de origen del T-33 interceptor."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "La correlación entre radar de búsqueda y seguimiento, reflectores y observación visual sobre los mismos blancos, más el ascenso súbito al ser iluminados y la evasión del T-33, tensiona la lectura natural más obvia para retornos de 1958 (propagación anómala / inversión térmica / eco meteorológico): un artefacto de radar no responde a luz ni evade un interceptor. Modest, no substantial, porque el episodio descansa sobre un único expediente Blue Book con menor reanálisis independiente que Lakenheath-Bentwaters.",
+      "rationaleEn": "The correlation between search and tracking radar, searchlights and visual observation on the same targets, plus the sudden climb upon illumination and the evasion of the T-33, strains the most obvious natural reading for 1958 returns (anomalous propagation / thermal inversion / weather echo): a radar artifact does not respond to light or evade an interceptor. Modest, not substantial, because the episode rests on a single Blue Book file with less independent re-analysis than Lakenheath-Bentwaters."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El comportamiento aparentemente intencional —responder a la iluminación, mantener distancia del interceptor— es compatible con un objeto real bajo control, no con un fenómeno pasivo. Minimal porque la evidencia es radar+visual de 1958, sin foto, telemetría ni material, y el intercepto terminó 'con resultados negativos': la maniobra es sugerente pero no diagnóstica.",
+      "rationaleEn": "The apparently intentional behavior —responding to illumination, keeping distance from the interceptor— is compatible with a real object under control, not a passive phenomenon. Minimal because the evidence is 1958 radar+visual, with no photo, telemetry or material, and the intercept ended 'with negative results': the maneuver is suggestive but not diagnostic."
+    }
+  ]
+}
