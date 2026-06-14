@@ -1,0 +1,85 @@
+{
+  "id": "harare-airport-2008",
+  "num": 207,
+  "name": "Aeropuerto de Harare · objeto sobre la pista en documento CIA (Zimbabwe, 2008)",
+  "name_en": "Harare Airport · object over the runway in a CIA document (Zimbabwe, 2008)",
+  "year_start": 2008,
+  "country": "ZW",
+  "country_name": "Zimbabwe",
+  "flag": "🇿🇼",
+  "location": {
+    "lat": -17.9319,
+    "lng": 31.0928,
+    "place": "Aeropuerto Internacional de Harare (hoy Robert Gabriel Mugabe Intl), Harare"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 50,
+  "summary": "El 2 de julio de 2008, un objeto no identificado fue observado sobre el Aeropuerto Internacional de Harare, en Zimbabwe, posiblemente por radar y por medios ópticos. Un cable de la CIA fechado al día siguiente —clasificado 'Secret' y desclasificado solo en 2026 a través del tercer release de PURSUE— describe un objeto 'tipo disco' con centro hueco, una serie de luces rotativas en la parte inferior y 'haces' emanando de él, suspendido a altitud indeterminada. El reporte escaló al White House Situation Room y a la comunidad de inteligencia, poniendo a los activos de la CIA en Zimbabwe en alerta alta; internamente se debatió si era una plataforma de vigilancia de un gobierno extranjero o un objeto de origen no humano. No hay evidencia independiente verificable más allá del propio documento de inteligencia.",
+  "summary_en": "On July 2, 2008, an unidentified object was observed over Harare International Airport in Zimbabwe, possibly by both radar and optical means. A CIA cable dated the next day —classified 'Secret' and declassified only in 2026 through the third PURSUE release— describes a 'disc-like' object with a hollow center, a series of rotating lights on the underside and 'beams' emanating from it, hovering at an undetermined altitude. The report escalated to the White House Situation Room and the intelligence community, putting CIA assets in Zimbabwe on high alert; internally there was debate over whether it was a foreign government's surveillance platform or an object of non-human origin. There is no independently verifiable evidence beyond the intelligence document itself.",
+  "patterns": [
+    "8e",
+    "8s"
+  ],
+  "category": "document",
+  "whatHappened": "El 2 de julio de 2008, sobre el Aeropuerto Internacional de Harare —principal terminal aérea de Zimbabwe, hoy renombrada Robert Gabriel Mugabe International Airport—, observadores reportaron un objeto no identificado suspendido a gran altitud. Según el registro, fue detectado posiblemente tanto por radar como por medios ópticos. La descripción es específica: un objeto 'tipo disco' con el centro hueco, una serie de luces rotativas en la parte inferior del fuselaje y, en cierto momento, 'haces' emanando del objeto.\n\nUn cable de la CIA fechado el 3 de julio de 2008 documentó el evento y lo clasificó como 'Secret'. El reporte se transmitió al White House Situation Room y a la comunidad de inteligencia, y según los archivos puso en alerta alta a los activos de la CIA que operaban en Zimbabwe. El contexto importaba: julio de 2008 fue el punto álgido de la crisis política zimbabuense tras las elecciones, con el país bajo escrutinio internacional. Los propios analistas debatieron dos lecturas opuestas del objeto: una herramienta de vigilancia avanzada de un gobierno extranjero, o un objeto de origen extraterrestre.\n\nEl documento permaneció clasificado durante dieciocho años y solo se hizo público el 12 de junio de 2026, como parte del tercer release del sistema PURSUE (war.gov/ufo/). Es importante delimitar su estatus epistémico: lo que existe es un documento de inteligencia auténtico que registra un avistamiento y la reacción institucional que provocó; no existe, en cambio, evidencia independiente verificable —ni los datos crudos de radar, ni fotografías, ni un análisis técnico publicado— que confirme la naturaleza del objeto. El caso vale por su procedencia institucional (un cable CIA con escalamiento al máximo nivel) más que por su contenido sensor, que se conoce solo de segunda mano a través del relato del cable.",
+  "whatHappened_en": "On July 2, 2008, over Harare International Airport —Zimbabwe's main air terminal, now renamed Robert Gabriel Mugabe International Airport— observers reported an unidentified object hovering at high altitude. According to the record, it was detected possibly by both radar and optical means. The description is specific: a 'disc-like' object with a hollow center, a series of rotating lights on the underside of the airframe and, at one point, 'beams' emanating from the object.\n\nA CIA cable dated July 3, 2008 documented the event and classified it 'Secret'. The report was transmitted to the White House Situation Room and the intelligence community, and according to the files it put CIA assets operating in Zimbabwe on high alert. Context mattered: July 2008 was the peak of Zimbabwe's post-election political crisis, with the country under international scrutiny. The analysts themselves debated two opposite readings of the object: an advanced surveillance tool of a foreign government, or an object of extraterrestrial origin.\n\nThe document stayed classified for eighteen years and only became public on June 12, 2026, as part of the third release of the PURSUE system (war.gov/ufo/). It is important to delimit its epistemic status: what exists is an authentic intelligence document recording a sighting and the institutional reaction it provoked; there is no independently verifiable evidence —no raw radar data, no photographs, no published technical analysis— confirming the object's nature. The case is valuable for its institutional provenance (a CIA cable escalated to the highest level) rather than for its sensor content, which is known only secondhand through the cable's account.",
+  "whyMatters": "Es el segundo caso africano del corpus surgido de documentación institucional dura, junto a Argelia 1975, y el primero que llega vía la maquinaria de release de PURSUE — un ejemplo concreto de la pregunta '¿qué pasa por el canal?'. Su interés analítico está en que el propio aparato de inteligencia estadounidense encuadró el avistamiento exactamente en la bifurcación que el corpus considera central: tecnología de vigilancia de otro Estado versus entidades no humanas. Sobre un aeropuerto internacional, en un país en crisis política y bajo observación de potencias extranjeras en 2008, la lectura de plataforma de vigilancia foránea es plausible y conservadora; la morfología reportada (disco con centro hueco, luces rotativas, 'haces') empuja en la otra dirección. El caso no resuelve la disyuntiva: es un cable de inteligencia, no un expediente sensor. Por eso Tier A —procedencia CIA con escalamiento al White House Situation Room— pero con probabilidad moderada: la evidencia es un relato institucional de segunda mano, sin datos de radar crudos, fotografías ni verificación independiente, y aflorada dieciocho años después.",
+  "whyMatters_en": "It is the corpus's second African case arising from hard institutional documentation, alongside Algeria 1975, and the first to arrive via the PURSUE release machinery — a concrete instance of the 'what passes through the channel?' question. Its analytic interest is that the U.S. intelligence apparatus itself framed the sighting in exactly the fork the corpus treats as central: another state's surveillance technology versus something non-human. Over an international airport, in a country in political crisis and under foreign-power observation in 2008, the foreign-surveillance-platform reading is plausible and conservative; the reported morphology (disc with a hollow center, rotating lights, 'beams') pushes the other way. The case does not resolve the dilemma: it is an intelligence cable, not a sensor file. Hence Tier A —CIA provenance with escalation to the White House Situation Room— but with moderate probability: the evidence is a secondhand institutional account, with no raw radar data, photographs or independent verification, and surfaced eighteen years later.",
+  "evidence": [
+    "Cable de la CIA fechado el 3 de julio de 2008, clasificado 'Secret', que documenta el avistamiento del 2 de julio sobre el Aeropuerto Internacional de Harare",
+    "Detección reportada posiblemente por radar y por medios ópticos",
+    "Descripción del objeto: 'tipo disco' con centro hueco, serie de luces rotativas en la parte inferior y 'haces' emanando de él, suspendido a altitud indeterminada",
+    "Escalamiento del reporte al White House Situation Room y a la comunidad de inteligencia; activos de la CIA en Zimbabwe en alerta alta",
+    "Debate interno documentado: plataforma de vigilancia de un gobierno extranjero vs objeto de origen extraterrestre",
+    "Desclasificación el 12 de junio de 2026 como parte del tercer release del sistema PURSUE (war.gov/ufo/)",
+    "Sin evidencia independiente verificable: no se publicaron datos crudos de radar, fotografías ni análisis técnico — solo el relato del cable"
+  ],
+  "evidence_en": [
+    "CIA cable dated July 3, 2008, classified 'Secret', documenting the July 2 sighting over Harare International Airport",
+    "Detection reported possibly by radar and optical means",
+    "Object description: 'disc-like' with a hollow center, a series of rotating lights on the underside and 'beams' emanating from it, hovering at undetermined altitude",
+    "Escalation of the report to the White House Situation Room and the intelligence community; CIA assets in Zimbabwe on high alert",
+    "Documented internal debate: a foreign government's surveillance platform vs an object of extraterrestrial origin",
+    "Declassification on June 12, 2026 as part of the third release of the PURSUE system (war.gov/ufo/)",
+    "No independently verifiable evidence: no raw radar data, photographs or technical analysis were published — only the cable's account"
+  ],
+  "sources": [
+    {
+      "name": "Newsweek — 'UFO Files: 5 Key Revelations as Pentagon Drops Third Batch of Records'",
+      "url": "https://www.newsweek.com/ufo-files-pentagon-releases-third-batch-records-uap-pete-hegseth-trump-12064856",
+      "note": "Detalle del documento CIA sobre Harare en el tercer release de PURSUE."
+    },
+    {
+      "name": "NBC News — 'Third batch of declassified UFO files reveals sightings around the world were investigated'",
+      "url": "https://www.nbcnews.com/politics/national-security/third-batch-declassified-ufo-files-reveals-sightings-world-investigate-rcna349775",
+      "note": "Cobertura del contenido del tercer release, incluido Harare."
+    },
+    {
+      "name": "iHarare — 'CIA Went On High Alert In Zimbabwe After Mystery UFO Hovered Over Harare Airport'",
+      "url": "https://iharare.com/cia-went-on-high-alert-in-zimbabwe-after-mystery-ufo-hovered-over-harare-airport-newly-declassified-files-claim/",
+      "note": "Cobertura local con la fecha (jul 2008) y la descripción del objeto."
+    },
+    {
+      "name": "war.gov/ufo/ — Presidential Unsealing and Reporting System for UAP Encounters (Release 3)",
+      "url": "https://www.war.gov/ufo/",
+      "note": "Fuente primaria: el portal donde se publicó el documento desclasificado."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "tecnologia-adversaria",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El propio análisis de la CIA planteó la lectura de plataforma de vigilancia de un gobierno extranjero, y el escenario la favorece: un objeto sobre el aeropuerto principal de un país en crisis política aguda en 2008, bajo observación de potencias externas. Es el tipo de blanco que una capacidad de inteligencia estatal explicaría. Minimal porque no hay atribución ni datos técnicos — es una hipótesis institucional sobre un relato, no una identificación.",
+      "rationaleEn": "The CIA's own analysis raised the foreign-government surveillance-platform reading, and the scenario favors it: an object over the main airport of a country in acute political crisis in 2008, under observation by external powers. It is the kind of target a state intelligence capability would explain. Minimal because there is no attribution or technical data — it is an institutional hypothesis about an account, not an identification."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Que un cable de la CIA tomara el evento con suficiente seriedad para escalarlo al White House Situation Room, y que la morfología reportada (disco con centro hueco, luces rotativas, 'haces') no encaje con aeronaves conocidas, presta un apoyo leve a la lectura no humana. Minimal porque la evidencia es un relato de inteligencia de segunda mano, sin datos crudos ni verificación, y los mismos rasgos admiten una plataforma artificial avanzada.",
+      "rationaleEn": "That a CIA cable took the event seriously enough to escalate it to the White House Situation Room, and that the reported morphology (disc with hollow center, rotating lights, 'beams') does not match known aircraft, lends slight support to the non-human reading. Minimal because the evidence is a secondhand intelligence account, with no raw data or verification, and the same features admit an advanced artificial platform."
+    }
+  ]
+}
