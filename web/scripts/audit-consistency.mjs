@@ -36,6 +36,9 @@
  *       E8b (ERROR) Invariante de monotonicidad: el `effective` de toda
  *           hipótesis corpus-existential debe ser ≥ su prior. Si se rompe,
  *           el motor o este mirror dejaron de excluir `weakens`.
+ *   E9  (WARN) Cobertura investigador↔caso: marca los investigadores de
+ *       researchers.json sin mención (por nombre/apellido) en ningún caso.
+ *       Heurística por substring, conservadora (ver nota en la regla).
  *
  * NOTA · este script DUPLICA la calibración de lib/hypothesisMapping.ts
  * (no puede importar TS sin build). La sección 3 debe mantenerse espejada;
@@ -90,10 +93,22 @@ const OVERRIDE_BY_ID = Object.fromEntries(
 // ─── 2. CARGA CORPUS ─────────────────────────────────────────────────────
 
 const casesDir = path.join(root, "data", "cases");
-const cases = fs
+const caseFileNames = fs
   .readdirSync(casesDir)
-  .filter((f) => f.endsWith(".json"))
-  .map((f) => JSON.parse(fs.readFileSync(path.join(casesDir, f), "utf-8")));
+  .filter((f) => f.endsWith(".json"));
+const cases = caseFileNames.map((f) =>
+  JSON.parse(fs.readFileSync(path.join(casesDir, f), "utf-8")),
+);
+
+// Texto crudo concatenado de todos los expedientes — lo usa RULE E9 para el
+// cruce investigador↔caso por nombre (búsqueda de substring conservadora).
+const caseCorpusText = caseFileNames
+  .map((f) => fs.readFileSync(path.join(casesDir, f), "utf-8"))
+  .join("\n");
+
+const researchers = JSON.parse(
+  fs.readFileSync(path.join(root, "data", "researchers.json"), "utf-8"),
+);
 
 const STATS = {
   cases: cases.length,
@@ -102,6 +117,7 @@ const STATS = {
   tierA: cases.filter((c) => c.tier === "A").length,
   tierB: cases.filter((c) => c.tier === "B").length,
   years: Math.max(...cases.map((c) => c.year_start)) - 1947,
+  researchers: researchers.length,
 };
 
 // ─── 3. COMPUTE EFFECTIVE CALIBRATIONS (mirror lib/hypothesisMapping.ts) ─
@@ -502,6 +518,35 @@ for (const h of HYPOTHESES) {
   }
 }
 
+// ─── 9c. RULE E9: researcher ↔ case association coverage ─────────────────
+//
+// No existe un vínculo estructurado investigador↔caso (los casos no tienen
+// campo `researchers`). Esta regla mide la red IMPLÍCITA: un investigador se
+// considera "asociado" si su nombre completo, o su apellido (≥4 letras),
+// aparece como substring en el texto de algún expediente. La búsqueda por
+// substring es deliberadamente conservadora: prefiere falsos positivos de
+// asociación (no marcar un huérfano dudoso) antes que marcar erróneamente
+// como huérfano a alguien que sí está citado. Los huérfanos se reportan en
+// un único WARN agregado: son candidatos a enlazar con un caso o a revisar.
+const orphanResearchers = [];
+for (const r of researchers) {
+  const full = (r.name || "").trim();
+  const surname = full.split(/\s+/).pop() || "";
+  const linked =
+    (full.length >= 4 && caseCorpusText.includes(full)) ||
+    (surname.length >= 4 && caseCorpusText.includes(surname));
+  if (!linked) orphanResearchers.push(r.id);
+}
+const linkedCount = researchers.length - orphanResearchers.length;
+if (orphanResearchers.length > 0) {
+  record(
+    "WARN",
+    path.join(root, "data", "researchers.json"),
+    0,
+    `${orphanResearchers.length}/${researchers.length} investigadores sin mención en ningún caso (heurística por nombre): ${orphanResearchers.join(", ")} — candidatos a enlazar o revisar`,
+  );
+}
+
 // ─── 9b. RULE E7: Spanglish in ES-facing case fields ─────────────────────
 //
 // `name` y `summary` son los campos ES-first que renderiza /cases. Inglés
@@ -574,6 +619,7 @@ out.push(` Countries:    ${STATS.countries}`);
 out.push(` Years:        ${STATS.years}`);
 out.push(` Tier S/A/B:   ${STATS.tierS} / ${STATS.tierA} / ${STATS.tierB}`);
 out.push(` Tier S w/o evidenceContribution: ${tierSWithoutContrib}`);
+out.push(` Researchers linked to ≥1 case: ${linkedCount} / ${STATS.researchers}`);
 out.push("");
 out.push(" Hypothesis priors → effective:");
 for (const h of HYPOTHESES) {
