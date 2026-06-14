@@ -1,0 +1,65 @@
+{
+  "id": "kofu-japan-1975",
+  "num": 209,
+  "name": "Incidente de Kōfu · encuentro con ocupante y trazas físicas (Japón, 1975)",
+  "name_en": "Kōfu Incident · occupant encounter and physical traces (Japan, 1975)",
+  "year_start": 1975,
+  "country": "JP",
+  "country_name": "Japón",
+  "flag": "🇯🇵",
+  "location": {
+    "lat": 35.6642,
+    "lng": 138.5685,
+    "place": "Kamimachi, Kōfu, prefectura de Yamanashi"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "summary": "El 23 de febrero de 1975, dos escolares de Kōfu (prefectura de Yamanashi, Japón), Masato Kawano y Katsuhiro Yamahata, dijeron haber visto dos objetos naranjas que descendieron, uno de los cuales aterrizó en un viñedo; de él habría salido un ocupante bajo que tocó el hombro de uno de los niños, dejándolo momentáneamente paralizado. El caso es inusual entre los avistamientos de tierra por su corroboración: además de los niños, lo reportaron sus madres, un compañero, un conserje y una conductora, y en el sitio quedaron dos postes de concreto derribados que el personal escolar concluyó que los niños no pudieron tumbar; un profesor midió radiactividad anómala en el suelo con un contador Geiger. La explicación oficial —la Oficina de Aviación Civil lo atribuyó a las luces de un avión YS-11— cubre las luces aéreas pero no el aterrizaje ni el ocupante. Caso clásico japonés, contado con su contraexplicación.",
+  "summary_en": "On February 23, 1975, two schoolboys from Kōfu (Yamanashi prefecture, Japan), Masato Kawano and Katsuhiro Yamahata, said they saw two orange objects descend, one of which landed in a vineyard; from it a short occupant allegedly emerged and touched one boy on the shoulder, leaving him momentarily paralyzed. The case is unusual among ground sightings for its corroboration: besides the boys, it was reported by their mothers, a classmate, a janitor and a woman driving by, and two concrete posts were left toppled at the site, which school staff concluded the children could not have knocked over; a teacher measured anomalous radioactivity in the soil with a Geiger counter. The official explanation —the Civil Aviation Bureau attributed it to the lights of a YS-11 aircraft— covers the aerial lights but not the landing or the occupant. A classic Japanese case, told with its counter-explanation.",
+  "patterns": [
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "El atardecer del 23 de febrero de 1975, en el barrio de Kamimachi de Kōfu (prefectura de Yamanashi), dos niños de escuela primaria, Masato Kawano y Katsuhiro Yamahata, patinaban cuando dijeron haber visto un par de objetos naranjas en el cielo. Según su relato, uno de los objetos descendió y aterrizó en un viñedo cercano. Describieron una nave discoidal de la que emergió un ocupante bajo —de poco más de un metro, rostro oscuro y arrugado, con rasgos que la prensa amplificó luego como 'colmillos'—. El ser se habría acercado y tocado el hombro de uno de los niños, que quedó momentáneamente paralizado del miedo.\n\nLo que distingue al caso de un avistamiento infantil aislado es la corroboración alrededor del evento. Varias personas dijeron haber visto el objeto o las luces: las madres de los niños, el hermano menor de Katsuhiro, un compañero de clase, un conserje y una mujer que conducía por la zona. En el sitio del supuesto aterrizaje quedaron dos postes de concreto sólidos derribados; cuando el personal de la escuela investigó si los propios niños podían haberlos tumbado, concluyó que era imposible. Uno de los profesores tomó muestras del suelo del lugar y las midió con un contador Geiger, reportando niveles de radiactividad que describió como anómalos respecto al fondo natural.\n\nLas autoridades ofrecieron una explicación prosaica: la Oficina de Aviación Civil del Ministerio de Transporte sostuvo que lo que los niños vieron no fue una nave sino las luces de un avión de hélice YS-11. La explicación tiene un límite evidente: puede dar cuenta de las luces naranjas en el cielo, pero no del aterrizaje, del ocupante ni de los postes derribados. El caso quedó como uno de los encuentros cercanos más conocidos de Japón, sin resolución consensuada: ni la versión de los niños tiene evidencia instrumental que la confirme, ni la explicación oficial cubre el conjunto del relato.",
+  "whatHappened_en": "At dusk on February 23, 1975, in the Kamimachi neighborhood of Kōfu (Yamanashi prefecture), two primary-school boys, Masato Kawano and Katsuhiro Yamahata, were roller-skating when they said they saw a pair of orange objects in the sky. According to their account, one of the objects descended and landed in a nearby vineyard. They described a disc-shaped craft from which a short occupant emerged —a little over a meter tall, with a dark, wrinkled face and features the press later amplified as 'fangs.' The being supposedly approached and touched one of the boys on the shoulder, leaving him momentarily paralyzed with fear.\n\nWhat distinguishes the case from an isolated child sighting is the corroboration around the event. Several people said they saw the object or the lights: the boys' mothers, Katsuhiro's younger brother, a classmate, a janitor and a woman driving through the area. Two solid concrete posts were left toppled at the alleged landing site; when school staff investigated whether the children themselves could have knocked them over, they concluded it was impossible. One of the teachers took soil samples from the spot and measured them with a Geiger counter, reporting radioactivity levels he described as anomalous relative to the natural background.\n\nAuthorities offered a prosaic explanation: the Civil Aviation Bureau of the Transport Ministry maintained that what the boys saw was not a craft but the lights of a YS-11 propeller aircraft. The explanation has an obvious limit: it can account for the orange lights in the sky, but not the landing, the occupant or the toppled posts. The case remained one of Japan's best-known close encounters, with no agreed resolution: neither the boys' version has instrumental evidence confirming it, nor does the official explanation cover the whole account.",
+  "whyMatters": "Es el primer encuentro cercano con ocupante (CE3) asiático del corpus y un clásico de la ufología japonesa — aporta una categoría morfológica que faltaba en la cobertura de Asia, dominada por luces y casos institucionales. Su interés está en la mezcla poco habitual de testimonio infantil con elementos verificables a posteriori: testigos adultos independientes, dos postes de concreto derribados que la escuela determinó que los niños no pudieron tumbar, y una medición de radiactividad anómala en el suelo. Nada de eso es prueba —las trazas no fueron analizadas por un laboratorio independiente y el contador Geiger lo manejó un profesor, no un equipo forense— pero eleva el caso por encima del rumor. Se mantiene en Tier B con probabilidad baja por su debilidad estructural: testigos centrales que eran niños, ausencia de instrumentación, riesgo de amplificación mediática (los 'colmillos') y una explicación oficial viva (el YS-11) que, aunque parcial, cubre la parte aérea. Es el contrapeso honesto: un caso famoso, sugerente y a la vez frágil.",
+  "whyMatters_en": "It is the corpus's first Asian close encounter with an occupant (CE3) and a classic of Japanese ufology — it adds a morphological category missing from Asia's coverage, which is dominated by lights and institutional cases. Its interest lies in the unusual mix of child testimony with elements verifiable after the fact: independent adult witnesses, two concrete posts toppled that the school determined the children could not have knocked over, and a measurement of anomalous soil radioactivity. None of that is proof —the traces were not analyzed by an independent lab and the Geiger counter was handled by a teacher, not a forensic team— but it raises the case above rumor. It stays at Tier B with low probability because of its structural weakness: central witnesses who were children, absence of instrumentation, risk of media amplification (the 'fangs'), and a live official explanation (the YS-11) that, though partial, covers the aerial part. It is the honest counterweight: a famous, suggestive and at the same time fragile case.",
+  "evidence": [
+    "Relato de dos escolares (Masato Kawano y Katsuhiro Yamahata) sobre dos objetos naranjas, un aterrizaje en viñedo y un ocupante bajo el 23 de febrero de 1975 en Kōfu",
+    "Corroboración de testigos adultos y otros menores: madres de los niños, el hermano menor, un compañero, un conserje y una conductora",
+    "Dos postes de concreto sólidos derribados en el sitio; el personal escolar concluyó que los niños no pudieron tumbarlos",
+    "Medición de radiactividad anómala en el suelo del lugar con contador Geiger por un profesor",
+    "Reporte de parálisis momentánea de uno de los niños tras el contacto con el ocupante (efecto físico sobre el testigo)",
+    "Explicación oficial: la Oficina de Aviación Civil atribuyó las luces a un avión YS-11 — cubre la parte aérea, no el aterrizaje ni el ocupante"
+  ],
+  "evidence_en": [
+    "Account by two schoolboys (Masato Kawano and Katsuhiro Yamahata) of two orange objects, a vineyard landing and a short occupant on February 23, 1975 in Kōfu",
+    "Corroboration by adult witnesses and other minors: the boys' mothers, the younger brother, a classmate, a janitor and a woman driving by",
+    "Two solid concrete posts toppled at the site; school staff concluded the children could not have knocked them over",
+    "Measurement of anomalous soil radioactivity at the site with a Geiger counter by a teacher",
+    "Report of momentary paralysis of one boy after contact with the occupant (physical effect on the witness)",
+    "Official explanation: the Civil Aviation Bureau attributed the lights to a YS-11 aircraft — covers the aerial part, not the landing or the occupant"
+  ],
+  "sources": [
+    {
+      "name": "UFO Evidence — 'UFO lands and humanoid taps young schoolboy on shoulder, Kofu City, Japan, Feb 23, 1975'",
+      "url": "http://www.ufoevidence.org/cases/case443.htm",
+      "note": "Cronología, testigos y trazas físicas del caso."
+    },
+    {
+      "name": "Historic Mysteries — 'The Terrifying Aliens of Japan's Kōfu Incident'",
+      "url": "https://www.historicmysteries.com/unexplained-mysteries/kofu-ufo/33422/",
+      "note": "Síntesis del caso y la explicación oficial (YS-11)."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El relato de un ocupante, el efecto físico reportado (parálisis momentánea) y las trazas posteriores (postes derribados que la escuela atribuyó a algo más que los niños, suelo con lectura Geiger anómala) prestan un apoyo leve a que ocurrió algo real más allá de luces confundibles. Minimal por la fragilidad estructural: testigos centrales infantiles, sin instrumentación ni análisis de laboratorio independiente, y con amplificación mediática del componente del 'ocupante'.",
+      "rationaleEn": "The account of an occupant, the reported physical effect (momentary paralysis) and the subsequent traces (toppled posts the school attributed to more than the children, soil with an anomalous Geiger reading) lend slight support to something real having happened beyond confusable lights. Minimal because of the structural fragility: central child witnesses, no instrumentation or independent lab analysis, and media amplification of the 'occupant' component."
+    }
+  ]
+}
