@@ -1,0 +1,70 @@
+{
+  "id": "ilopango-el-salvador-2009",
+  "num": 205,
+  "name": "Ilopango · objeto no identificado fotografiado en base aérea (El Salvador, 2009)",
+  "name_en": "Ilopango · unidentified object photographed at air base (El Salvador, 2009)",
+  "year_start": 2009,
+  "country": "SV",
+  "country_name": "El Salvador",
+  "flag": "🇸🇻",
+  "location": {
+    "lat": 13.6995,
+    "lng": -89.1199,
+    "place": "Primera Brigada Aérea, Aeropuerto de Ilopango, San Salvador"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "summary": "En abril de 2009, un miembro de la Fuerza Aérea Salvadoreña — que pidió mantenerse anónimo — fotografió aeronaves estacionadas en la rampa militar desde el segundo piso de la Primera Brigada Aérea, en el Aeropuerto de Ilopango. Al revisar la imagen apareció un objeto no identificado cerca del umbral de la antigua pista 08, a plena luz del día, que no se había percibido en el momento de la toma. El caso, junto con antecedentes como el avistamiento sobre San Salvador de enero de 1969, está documentado por la comunidad de aviación salvadoreña. Su valor es geográfico: abre El Salvador en el corpus. Su evidencia es débil: un único fotograma de fuente entusiasta, fotógrafo anónimo, sin análisis ni cadena de custodia — el patrón clásico de un objeto captado pero no visto, compatible con un artefacto mundano.",
+  "summary_en": "In April 2009, a member of the Salvadoran Air Force — who asked to remain anonymous — photographed aircraft parked on the military ramp from the second floor of the First Air Brigade building at Ilopango Airport. On reviewing the image, an unidentified object appeared near the threshold of the old runway 08, in broad daylight, that had not been noticed at the moment of capture. The case, together with antecedents such as the January 1969 sighting over San Salvador, is documented by the Salvadoran aviation community. Its value is geographic: it opens El Salvador in the corpus. Its evidence is weak: a single frame from an enthusiast source, an anonymous photographer, with no analysis or chain of custody — the classic pattern of an object captured but not seen, compatible with a mundane artifact.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En abril de 2009, un integrante de la Fuerza Aérea Salvadoreña subió al segundo piso del edificio de la Primera Brigada Aérea, en el Aeropuerto de Ilopango, con la intención de fotografiar las aeronaves estacionadas en la rampa militar. No notó nada anómalo mientras disparaba la cámara. Al revisar las fotografías después, encontró en una de ellas un objeto no identificado volando muy cerca del umbral de la antigua pista 08. El objeto, captado a plena luz del día, aparentaba moverse a gran velocidad y no correspondía a ninguna aeronave conocida ni a un fenómeno atmosférico común. El testigo prefirió mantenerse anónimo; la imagen circuló entre el personal y fue recopilada por la comunidad de aviación salvadoreña.\n\nEl episodio se inscribe en una tradición de avistamientos salvadoreños menos documentados. El 15 de enero de 1969, alrededor de las 3:30 de la tarde, un objeto ovoide y brillante sobrevoló San Salvador con movimientos rápidos; dos carpinteros que trabajaban en la terraza de El Diario de Hoy alertaron a los periodistas, y los testigos lo describieron como un disco veloz que por momentos liberaba humo negro, antes de alejarse hacia el Cerro de San Jacinto. En su momento se sugirió una explicación prosaica: la misión soviética tripulada Soyuz 4, lanzada el 14 de enero de ese año.\n\nNinguno de estos episodios cuenta con la instrumentación múltiple, la cadena de custodia o el reanálisis independiente que distinguen a los casos de tier alto del corpus. Son registros de prensa y de comunidad aeronáutica, valiosos como cobertura regional pero frágiles como evidencia.",
+  "whatHappened_en": "In April 2009, a member of the Salvadoran Air Force went up to the second floor of the First Air Brigade building at Ilopango Airport intending to photograph aircraft parked on the military ramp. He noticed nothing anomalous while shooting. On reviewing the photographs afterward, he found in one of them an unidentified object flying very close to the threshold of the old runway 08. The object, captured in broad daylight, appeared to move at high speed and did not correspond to any known aircraft or common atmospheric phenomenon. The witness chose to remain anonymous; the image circulated among personnel and was compiled by the Salvadoran aviation community.\n\nThe episode belongs to a tradition of less-documented Salvadoran sightings. On January 15, 1969, around 3:30 in the afternoon, a bright ovoid object flew over San Salvador with rapid movements; two carpenters working on the terrace of El Diario de Hoy alerted journalists, and witnesses described it as a fast disc that at times released black smoke before moving off toward Cerro de San Jacinto. At the time a prosaic explanation was suggested: the Soviet crewed mission Soyuz 4, launched on January 14 of that year.\n\nNone of these episodes has the multiple instrumentation, chain of custody or independent re-analysis that distinguish the corpus's high-tier cases. They are press and aviation-community records, valuable as regional coverage but fragile as evidence.",
+  "whyMatters": "Importa por cobertura geográfica, no por fuerza probatoria: abre El Salvador en el corpus y densifica un istmo centroamericano casi vacío (hasta ahora solo Costa Rica y Panamá). Pero su tier es B por una razón explícita: la fotografía de 2009 proviene de una fuente entusiasta, con fotógrafo anónimo, sin negativo original verificado, sin análisis fotogramétrico y sin cadena de custodia. El rasgo central del caso — un objeto que aparece en la imagen pero que nadie vio al disparar — es justamente el sello de los artefactos mundanos: aves, insectos cercanos al lente, una aeronave a gran distancia, o un defecto de sensor. El antecedente de 1969 refuerza la lectura escéptica, porque la propia prensa de la época ofreció un candidato concreto (Soyuz 4). Se incluye con esa etiqueta honesta: caso de baja confianza que completa el mapa centroamericano y sirve de contraste con los anclajes instrumentados de la región.",
+  "whyMatters_en": "It matters for geographic coverage, not probative strength: it opens El Salvador in the corpus and densifies an almost-empty Central American isthmus (until now only Costa Rica and Panama). But its tier is B for an explicit reason: the 2009 photograph comes from an enthusiast source, with an anonymous photographer, no verified original negative, no photogrammetric analysis and no chain of custody. The case's central feature — an object that appears in the image but that no one saw while shooting — is precisely the hallmark of mundane artifacts: birds, insects near the lens, a distant aircraft, or a sensor defect. The 1969 antecedent reinforces the skeptical reading, because the press of the day itself offered a concrete candidate (Soyuz 4). It is included with that honest label: a low-confidence case that completes the Central American map and serves as contrast with the region's instrumented anchors.",
+  "evidence": [
+    "Fotografía de abril de 2009 tomada desde el segundo piso de la Primera Brigada Aérea (Ilopango) que muestra un objeto no identificado cerca del umbral de la antigua pista 08",
+    "Fotógrafo identificado como miembro de la Fuerza Aérea Salvadoreña, anónimo por elección propia",
+    "El objeto no fue percibido en el momento de la toma — apareció solo al revisar la imagen — y se captó a plena luz del día",
+    "Antecedente del 15 de enero de 1969: objeto ovoide brillante sobre San Salvador, testigos en El Diario de Hoy (carpinteros Daniel Lauda Martínez y Manuel Martínez)",
+    "Para el caso de 1969 la prensa contemporánea propuso como candidato prosaico la misión soviética Soyuz 4 (lanzada el 14 de enero de 1969)",
+    "Recopilación por la comunidad de aviación salvadoreña (Flotilla Aérea) — sin negativo original verificado, análisis fotogramétrico ni cadena de custodia"
+  ],
+  "evidence_en": [
+    "April 2009 photograph taken from the second floor of the First Air Brigade (Ilopango) showing an unidentified object near the threshold of the old runway 08",
+    "Photographer identified as a member of the Salvadoran Air Force, anonymous by his own choice",
+    "The object was not perceived at the moment of capture — it appeared only on reviewing the image — and was captured in broad daylight",
+    "January 15, 1969 antecedent: a bright ovoid object over San Salvador, witnesses at El Diario de Hoy (carpenters Daniel Lauda Martínez and Manuel Martínez)",
+    "For the 1969 case, the contemporary press proposed as a prosaic candidate the Soviet Soyuz 4 mission (launched January 14, 1969)",
+    "Compilation by the Salvadoran aviation community (Flotilla Aérea) — with no verified original negative, photogrammetric analysis or chain of custody"
+  ],
+  "sources": [
+    {
+      "name": "Flotilla Aérea — 'Luces y enigmas en el cielo'",
+      "url": "https://flotilla-aerea.com/2024/12/16/luces-y-enigmas-en-el-cielo/",
+      "note": "Recopilación del caso de Ilopango 2009 por la comunidad de aviación salvadoreña."
+    },
+    {
+      "name": "El Salvador.com — 'Enero 1969: OVNI sobrevuela San Salvador y genera alarma entre capitalinos'",
+      "url": "https://www.elsalvador.com/entretenimiento/cultura/jueves-recuerdo-ovni-sobrevuela-san-salvador-en-1969/1083591/2023/",
+      "note": "Antecedente histórico con el candidato prosaico Soyuz 4."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Una fotografía diurna en la que el objeto no fue visto al disparar y solo apareció al revisar la imagen es el caso prototípico de artefacto mundano: ave o insecto cercano al lente, aeronave distante o defecto de sensor. El antecedente de 1969 trae además un candidato prosaico nombrado por la prensa de la época (Soyuz 4). Modest porque, sin el negativo y sin análisis, tampoco puede cerrarse la identificación de forma concluyente.",
+      "rationaleEn": "A daytime photograph in which the object was not seen while shooting and appeared only on review is the prototypical case of a mundane artifact: a bird or insect near the lens, a distant aircraft, or a sensor defect. The 1969 antecedent also brings a prosaic candidate named by the press of the day (Soyuz 4). Modest because, without the negative and without analysis, the identification cannot be conclusively closed either."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Como evidencia de entidades no humanas, el caso es de los más débiles del corpus: fuente única entusiasta, fotógrafo anónimo, un solo fotograma sin metadata verificable. No resta probabilidad real a una afirmación existencial — por eso minimal — pero deja constancia de que este expediente, por sí mismo, no aporta nada a favor de la hipótesis.",
+      "rationaleEn": "As evidence of something non-human, the case is among the weakest in the corpus: a single enthusiast source, an anonymous photographer, one frame with no verifiable metadata. It does not subtract real probability from an existential claim — hence minimal — but it records that this file, on its own, contributes nothing in favor of the hypothesis."
+    }
+  ]
+}
