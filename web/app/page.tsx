@@ -1,5 +1,7 @@
 import { TimelineByYear } from "@/components/TimelineByYear";
 import { Cta } from "@/components/Cta";
+import { HeroRadar } from "@/components/HeroRadar";
+import { CountUp } from "@/components/CountUp";
 import { HypothesesSnapshot } from "@/components/HypothesesSnapshot";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
@@ -23,52 +25,59 @@ export const metadata = {
 export default function HomePage() {
   return (
     <div className="space-y-24 md:space-y-40">
-      {/* ────────── 1 · HERO (hook humano + sub-hero filtro) ────────── */}
-      <section className="grid min-h-[70vh] grid-cols-1 items-end gap-12 pt-12 md:pt-24">
-        <div className="space-y-8">
-          <Eyebrow>
-            <T
-              es="UAP Codex · investigación abierta"
-              en="UAP Codex · open research"
-            />
-          </Eyebrow>
-          <h1 className="font-display text-[clamp(2.75rem,7vw,5rem)] font-medium leading-[1.05] tracking-tight text-text">
-            <T
-              es={
-                <>
-                  <span className="text-accent italic">{STATS.years} años</span>{" "}
-                  sin explicación oficial.
-                </>
-              }
-              en={
-                <>
-                  <span className="text-accent italic">{STATS.years} years</span>{" "}
-                  without an official explanation.
-                </>
-              }
-            />
-          </h1>
-          <Lede className="max-w-2xl text-muted">
-            <T
-              es={`Hay algo que las instituciones no pudieron — o no quisieron — explicar desde 1947. Un compendio de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
-              en={`There's something institutions couldn't — or wouldn't — explain since 1947. A compendium of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
-            />
-          </Lede>
-          <div className="flex flex-wrap gap-3 pt-2">
-            <Cta href="/probabilidades" variant="primary">
+      {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
+      <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
+        <HeroRadar contacts={STATS.cases} />
+        <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
+          <div className="max-w-2xl space-y-8">
+            <Eyebrow className="!text-bg/55">
               <T
-                es="Qué tan probable es cada explicación"
-                en="How likely each explanation is"
+                es="UAP Codex · investigación abierta"
+                en="UAP Codex · open research"
               />
-              <span aria-hidden>→</span>
-            </Cta>
-            <Cta href="/resumen" variant="ghost">
+            </Eyebrow>
+            <h1 className="font-display text-[clamp(2.75rem,7vw,5rem)] font-medium leading-[1.05] tracking-tight text-bg">
               <T
-                es="¿Solo 10 minutos? Lee el resumen"
-                en="Only 10 minutes? Read the summary"
+                es={
+                  <>
+                    <span className="text-accent-bright italic">
+                      <CountUp to={STATS.years} /> años
+                    </span>{" "}
+                    sin explicación oficial.
+                  </>
+                }
+                en={
+                  <>
+                    <span className="text-accent-bright italic">
+                      <CountUp to={STATS.years} /> years
+                    </span>{" "}
+                    without an official explanation.
+                  </>
+                }
               />
-              <span aria-hidden>→</span>
-            </Cta>
+            </h1>
+            <Lede className="max-w-2xl !text-bg/70">
+              <T
+                es={`Hay algo que las instituciones no pudieron — o no quisieron — explicar desde 1947. Un compendio de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
+                en={`There's something institutions couldn't — or wouldn't — explain since 1947. A compendium of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
+              />
+            </Lede>
+            <div className="flex flex-wrap gap-3 pt-2">
+              <Cta href="/probabilidades" variant="primary" onDark>
+                <T
+                  es="Qué tan probable es cada explicación"
+                  en="How likely each explanation is"
+                />
+                <span aria-hidden>→</span>
+              </Cta>
+              <Cta href="/resumen" variant="ghost" onDark>
+                <T
+                  es="¿Solo 10 minutos? Lee el resumen"
+                  en="Only 10 minutes? Read the summary"
+                />
+                <span aria-hidden>→</span>
+              </Cta>
+            </div>
           </div>
         </div>
       </section>
