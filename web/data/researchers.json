@@ -316,27 +316,7 @@
     "photo_credit": "Avi Loeb (self)",
     "photo_license": "CC-BY-SA 4.0"
   },
-  {
-    "id": "freixedo",
-    "name": "Salvador Freixedo",
-    "flag": "🇪🇸",
-    "born": 1923,
-    "death": 2019,
-    "section": "A",
-    "section_label": "Teóricos filosóficos",
-    "credentials": "Ex-sacerdote jesuita + 70+ años investigación cross-cultural",
-    "framework": "predatory-entities",
-    "bio_short": "Exsacerdote jesuita que originó el 'marco de las entidades depredadoras': las inteligencias detrás del fenómeno serían parásitos no corpóreos que se alimentan de la energía emocional humana y que, a lo largo de la historia, se habrían disfrazado de dioses. Su obra es central en la cultura del fenómeno en América Latina y converge de forma notable con las tesis de John Keel.",
-    "works": [{"year": 1984, "title": "Defendámonos de los dioses", "contribution": "Predatory entities framework completo", "contribution_en": "Complete predatory-entities framework"}],
-    "section_label_en": "Philosophical theorists",
-    "credentials_en": "Former Jesuit priest + 70+ years of cross-cultural research",
-    "bio_short_en": "A former Jesuit priest who originated the 'predatory entities frame': the intelligences behind the phenomenon would be non-corporeal parasites that feed on human emotional energy and that, throughout history, have disguised themselves as gods. His work is central to the culture of the phenomenon in Latin America and converges notably with the theses of John Keel.",
-    "sources": [{"name": "Salvador Freixedo, 'Defendámonos de los dioses' (1984)", "note": "Marco de las entidades depredadoras.", "note_en": "The predatory-entities framework."}],
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SavadorFreixedo1.JPG?width=400",
-    "photo_credit": "Vetranio (Wikimedia)",
-    "photo_license": "CC-BY-SA 3.0"
-  },
-  {
+{
     "id": "grusch",
     "name": "David Grusch",
     "flag": "🇺🇸",

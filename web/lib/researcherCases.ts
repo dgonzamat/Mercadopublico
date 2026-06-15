@@ -63,7 +63,6 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   nolan: ["council-bluffs-1977", "american-cosmic-2017"],
   strieber: ["communion-1985"],
   pasulka: ["american-cosmic-2017"],
-  freixedo: ["colares-1977"],
 
   // B — insiders / militares
   ruppelt: [
