@@ -1,0 +1,76 @@
+{
+  "id": "la-joya-arequipa-1980",
+  "num": 210,
+  "name": "La Joya · un caza FAP dispara contra un objeto (Perú, 1980)",
+  "name_en": "La Joya · a Peruvian fighter fires at an object (Peru, 1980)",
+  "year_start": 1980,
+  "country": "PE",
+  "country_name": "Perú",
+  "flag": "🇵🇪",
+  "location": {
+    "lat": -16.61,
+    "lng": -71.87,
+    "place": "Base Aérea de La Joya, Arequipa"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 60,
+  "summary": "El 11 de abril de 1980, en la Base Aérea de La Joya (Arequipa, Perú), el teniente de la Fuerza Aérea del Perú Óscar Santa María Huertas despegó en un caza Sukhoi Su-22 para interceptar un objeto que la base creyó al principio un globo espía. Disparó 64 de sus 140 proyectiles en una primera ráfaga que, según su testimonio, el objeto pareció absorber sin daño; en los intentos siguientes el objeto se desplazaba justo cuando lograba fijarlo. El objeto —descrito como de unos 10 metros, con una cúpula brillante color crema sobre una base circular plateada, similar a una bombilla cortada— resistió 22 minutos de persecución, fue visto por cientos de personas en la base y permaneció estático unas dos horas más. Santa María es el único piloto documentado que ha disparado contra un objeto no identificado.",
+  "summary_en": "On April 11, 1980, at La Joya Air Base (Arequipa, Peru), Peruvian Air Force lieutenant Óscar Santa María Huertas scrambled in a Sukhoi Su-22 fighter to intercept an object the base initially took for a spy balloon. He fired 64 of his 140 rounds in a first burst that, by his testimony, the object seemed to absorb without damage; on the following attempts the object moved away just as he locked onto it. The object —described as about 10 meters across, with a shiny cream-colored dome over a silver circular base, like a cut light bulb— withstood 22 minutes of pursuit, was seen by hundreds of people at the base, and remained stationary for about two more hours. Santa María is the only documented pilot to have fired at an unidentified object.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "La mañana del 11 de abril de 1980, el personal de la Base Aérea de La Joya, en el desierto de Arequipa, detectó un objeto esférico y luminoso suspendido cerca del perímetro. Ante la sospecha de que fuera un globo de vigilancia extranjero sobre instalaciones militares sensibles, el mando ordenó interceptarlo. El teniente Óscar Santa María Huertas, de 23 años, despegó en un Sukhoi Su-22 artillado con 140 proyectiles de cañón de 30 mm.\n\nSegún su relato, en su primera pasada disparó una ráfaga de 64 proyectiles que formó 'un muro de fuego' sobre el objeto; ninguno pareció dañarlo —el objeto absorbió el impacto o lo esquivó sin sufrir efecto visible—. En las tres aproximaciones siguientes, cada vez que Santa María lograba fijar el blanco y se disponía a disparar, el objeto se desplazaba a gran velocidad y volvía a detenerse fuera de alcance. La persecución, a distintas altitudes, duró unos 22 minutos. Sin munición útil y con combustible bajo, el piloto regresó a la base. El objeto —que describió de unos 10 metros, con una cúpula superior brillante color crema, semejante a una bombilla cortada por la mitad, y una base circular ancha de color plateado— permaneció estático en el cielo cerca de dos horas más, a la vista de cientos de efectivos.\n\nEl caso quedó como uno de los expedientes aeronáuticos militares mejor testimoniados de Sudamérica: protagonista nombrado y vivo, decenas o cientos de testigos en una base militar, y un comportamiento (evasión activa de un caza, resistencia al fuego de cañón, estacionariedad prolongada) difícil de encajar en un globo o un fenómeno natural. Su límite es la ausencia de registro instrumental sobreviviente: no se conserva película de la cámara de disparo ni trazas de radar publicadas. Santa María declaró públicamente durante décadas y su testimonio fue presentado en foros internacionales sobre fenómenos aéreos.",
+  "whatHappened_en": "On the morning of April 11, 1980, personnel at La Joya Air Base, in the Arequipa desert, detected a luminous spherical object hovering near the perimeter. Suspecting a foreign surveillance balloon over sensitive military facilities, the command ordered an interception. Lieutenant Óscar Santa María Huertas, 23, took off in a Sukhoi Su-22 armed with 140 rounds of 30 mm cannon.\n\nBy his account, on his first pass he fired a burst of 64 rounds that formed 'a wall of fire' over the object; none seemed to damage it —the object absorbed the impact or dodged it with no visible effect. On the next three approaches, each time Santa María locked onto the target and was about to fire, the object moved away at high speed and stopped again out of range. The pursuit, at varying altitudes, lasted about 22 minutes. Out of useful ammunition and low on fuel, the pilot returned to base. The object —which he described as about 10 meters across, with a shiny cream-colored upper dome, like a light bulb cut in half, and a wide silver circular base— remained stationary in the sky for nearly two more hours, in view of hundreds of personnel.\n\nThe case stands as one of South America's best-attested military aeronautical files: a named, living protagonist, dozens or hundreds of witnesses at a military base, and behavior (active evasion of a fighter, resistance to cannon fire, prolonged stationarity) hard to fit a balloon or a natural phenomenon. Its limit is the absence of surviving instrumental record: no gun-camera film or published radar tracks are preserved. Santa María testified publicly for decades, and his account was presented at international forums on aerial phenomena.",
+  "whyMatters": "Es el caso peruano más célebre y uno de los pocos del mundo con un piloto militar disparando munición real contra un objeto no identificado — Óscar Santa María Huertas es, hasta donde está documentado, el único piloto que lo ha hecho. Su valor es testimonial e institucional: un oficial nombrado, una base militar como escenario, cientos de testigos y un comportamiento del objeto que tensiona simultáneamente la hipótesis del globo (no evade ni resiste cañón) y la del fenómeno natural (no maniobra contra un caza). Tier A y no S por la limitación dura: el episodio descansa sobre testimonio —muy consistente y sostenido cuarenta años— pero sin película de cámara de disparo ni registro de radar publicado que lo fije objetivamente. Encaja en la bifurcación que el corpus considera central: la sospecha inicial fue tecnología de vigilancia de otro Estado; lo que el piloto reporta empuja hacia algo que ningún globo de 1980 podía hacer.",
+  "whyMatters_en": "It is Peru's most famous case and one of the few in the world with a military pilot firing live ammunition at an unidentified object — Óscar Santa María Huertas is, as far as documented, the only pilot to have done so. Its value is testimonial and institutional: a named officer, a military base as the setting, hundreds of witnesses, and object behavior that simultaneously strains the balloon hypothesis (it neither evades nor withstands cannon fire) and the natural-phenomenon one (it does not maneuver against a fighter). Tier A and not S because of the hard limitation: the episode rests on testimony —very consistent and sustained for forty years— but with no gun-camera film or published radar record to fix it objectively. It fits the fork the corpus treats as central: the initial suspicion was another state's surveillance technology; what the pilot reports pushes toward something no 1980 balloon could do.",
+  "evidence": [
+    "Testimonio sostenido durante décadas del teniente FAP Óscar Santa María Huertas, piloto interceptor",
+    "Interceptación en un caza Sukhoi Su-22 artillado con 140 proyectiles de 30 mm; 64 disparados en la primera ráfaga",
+    "El objeto pareció absorber o esquivar el fuego sin daño y evadió las fijaciones posteriores del caza",
+    "Persecución de unos 22 minutos a distintas altitudes; el objeto permaneció estático cerca de dos horas tras el regreso del piloto",
+    "Cientos de testigos del personal de la Base Aérea de La Joya (Arequipa)",
+    "Descripción del objeto: ~10 m, cúpula superior color crema tipo bombilla cortada sobre base circular plateada",
+    "Sospecha institucional inicial de globo de vigilancia extranjero — descartada por el comportamiento observado",
+    "Sin registro instrumental sobreviviente conocido (sin película de cámara de disparo ni trazas de radar publicadas)"
+  ],
+  "evidence_en": [
+    "Decades-long sustained testimony of FAP lieutenant Óscar Santa María Huertas, the intercepting pilot",
+    "Interception in a Sukhoi Su-22 armed with 140 rounds of 30 mm; 64 fired in the first burst",
+    "The object appeared to absorb or dodge the fire without damage and evaded the fighter's subsequent locks",
+    "Pursuit of about 22 minutes at varying altitudes; the object remained stationary for nearly two hours after the pilot returned",
+    "Hundreds of witnesses among La Joya Air Base (Arequipa) personnel",
+    "Object description: ~10 m, cream-colored upper dome like a cut light bulb over a silver circular base",
+    "Initial institutional suspicion of a foreign surveillance balloon — ruled out by the observed behavior",
+    "No known surviving instrumental record (no gun-camera film or published radar tracks)"
+  ],
+  "sources": [
+    {
+      "name": "Enigma Labs — 'La Joya Air Force Base, Arequipa, Peru, April 11, 1980'",
+      "url": "https://enigmalabs.io/library/e6b60e28-a5f2-449e-8c4f-8f36132ea4f7",
+      "note": "Ficha del caso con cronología y descripción del objeto."
+    },
+    {
+      "name": "Inexplicata (Journal of Hispanic Ufology) — 'Peru: La Joya AFB, The Perfect UFO Case (1980)'",
+      "url": "https://inexplicata.blogspot.com/2016/11/peru-la-joya-afb-perfect-ufo-case-1980.html",
+      "note": "Análisis del caso en la ufología hispana."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Un objeto que evade activamente a un caza al ser fijado, resiste una ráfaga de cañón de 30 mm y permanece estático horas no encaja con un fenómeno natural pasivo (plasma, reflejo, inversión). La observación por cientos de personas en una base militar refuerza que había un objeto real y maniobrable. Modest, no substantial, porque todo el comportamiento descansa en testimonio sin película de cámara de disparo ni radar publicado.",
+      "rationaleEn": "An object that actively evades a fighter when locked on, withstands a 30 mm cannon burst and remains stationary for hours does not fit a passive natural phenomenon (plasma, reflection, inversion). Observation by hundreds at a military base reinforces that there was a real, maneuverable object. Modest, not substantial, because the whole behavior rests on testimony with no gun-camera film or published radar."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "La evasión inteligente frente a un interceptor armado sugiere un objeto real bajo control. Minimal porque la evidencia dura es nula (sin imagen, radar ni material) y un testimonio único de piloto, por consistente que sea, no es diagnóstico de origen no humano.",
+      "rationaleEn": "Intelligent evasion of an armed interceptor suggests a real object under control. Minimal because the hard evidence is null (no image, radar or material) and a single pilot's account, however consistent, is not diagnostic of non-human origin."
+    }
+  ]
+}
