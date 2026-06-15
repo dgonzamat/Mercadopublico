@@ -62,6 +62,17 @@ const FEATURED_HYPOTHESIS_ID = "entidades-no-humanas";
  */
 
 export default function ProbabilidadesPage() {
+  // PR-3 · ordenar las secciones de detalle igual que el chart (banda ICD ↓,
+  // luego % efectivo ↓) para que el lector no vea las probabilidades saltar
+  // (antes iban en orden de array: 88 · 88 · 70 · 28 · 22 · 22 · 30 · 6).
+  const primitivesSorted = [...PRIMITIVE_HYPOTHESES]
+    .map((h) => {
+      const pct = effectiveCalibration(h, cases).pct;
+      return { h, pct, icdMax: pctToIcdLabel(pct).max };
+    })
+    .sort((a, b) => b.icdMax - a.icdMax || b.pct - a.pct)
+    .map((x) => x.h);
+
   return (
     <article className="mx-auto max-w-3xl space-y-16 py-8">
       {/* ─────────── HERO ─────────── */}
@@ -131,12 +142,12 @@ export default function ProbabilidadesPage() {
       <IcdProbabilityChart framing={false} />
 
       <div className="space-y-16">
-        {PRIMITIVE_HYPOTHESES.map((h, i) => (
+        {primitivesSorted.map((h, i) => (
           <HypothesisSection
             key={h.id}
             hypothesisId={h.id}
             index={i + 1}
-            total={PRIMITIVE_HYPOTHESES.length}
+            total={primitivesSorted.length}
             featured={h.id === FEATURED_HYPOTHESIS_ID}
           />
         ))}
@@ -220,7 +231,7 @@ export default function ProbabilidadesPage() {
             en="Methodological note · what this is and what it is NOT →"
           />
         </summary>
-        <div className="mt-6 grid gap-6 rounded-lg border border-border bg-surface-2 p-6 md:grid-cols-2 md:p-8">
+        <div className="mt-6 grid gap-6 border border-border bg-surface-2 p-6 md:grid-cols-2 md:p-8">
           <div className="space-y-3">
             <Eyebrow><T es="Lo que NO es" en="What it is NOT" /></Eyebrow>
             <ul className="space-y-2 text-sm text-text">
@@ -336,11 +347,12 @@ function HypothesisSection({
           <T es={h.label} en={h.labelEn} />
         </H2>
       </div>
+      {/* PR-1 esquinas vivas · PR-2 texto en text-text (AA); la identidad de
+          color de la hipótesis vive en el borde + tinte, no en el texto. */}
       <span
-        className="shrink-0 rounded-md border px-3 py-1 font-mono text-xs uppercase tracking-wider"
+        className="shrink-0 border px-3 py-1 font-mono text-xs uppercase tracking-wider text-text"
         style={{
           borderColor: `${h.color}66`,
-          color: h.color,
           backgroundColor: `${h.color}11`,
         }}
       >
@@ -371,7 +383,7 @@ function HypothesisSection({
               <Link
                 key={p.id}
                 href={`/patterns/${p.letter}`}
-                className="inline-flex min-h-[44px] items-center rounded border border-border bg-panel px-3 py-1 text-xs hover:border-accent/50"
+                className="inline-flex min-h-[44px] items-center border border-border bg-panel px-3 py-1 text-xs hover:border-accent/50"
                 style={{ borderLeftColor: p.color, borderLeftWidth: 3 }}
                 title={p.description}
               >
@@ -396,7 +408,7 @@ function HypothesisSection({
               <Link
                 key={c.id}
                 href={`/cases/${c.id}`}
-                className="inline-flex min-h-[44px] items-center rounded px-2 py-1 text-xs text-text hover:bg-panel"
+                className="inline-flex min-h-[44px] items-center px-2 py-1 text-xs text-text hover:bg-panel"
               >
                 <span aria-hidden className="mr-2">{c.flag}</span>
                 <span className="sr-only">{c.country_name}.</span>

@@ -131,6 +131,17 @@ export default async function CaseDetailPage(
     : [];
   const pullQuote = findPullQuote(c.whatHappened);
 
+  // CD-2 · numeración de partes secuencial y honesta. Antes "Parte 01/02/03"
+  // estaban hard-codeadas: un caso sin `whatHappened` saltaba a "Parte 02" o
+  // empezaba en "Parte 03". Ahora el contador solo cuenta las partes presentes
+  // (el aparato documental "Lo que queda en papel" siempre existe).
+  const partNo: Record<string, string> = {};
+  let _pc = 0;
+  const pad = (n: number) => String(n).padStart(2, "0");
+  if (c.whatHappened) partNo.whatHappened = pad(++_pc);
+  if (c.whyMatters) partNo.whyMatters = pad(++_pc);
+  partNo.apparatus = pad(++_pc);
+
   return (
     <article className="mx-auto max-w-3xl space-y-24 py-4 md:space-y-32">
       <script
@@ -255,7 +266,7 @@ export default async function CaseDetailPage(
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  <T es="Parte 01" en="Part 01" />
+                  <T es={`Parte ${partNo.whatHappened}`} en={`Part ${partNo.whatHappened}`} />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
                   <T es="La noche en cuestión" en="The night in question" />
@@ -308,7 +319,7 @@ export default async function CaseDetailPage(
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  <T es="Parte 02" en="Part 02" />
+                  <T es={`Parte ${partNo.whyMatters}`} en={`Part ${partNo.whyMatters}`} />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
                   <T
@@ -329,7 +340,7 @@ export default async function CaseDetailPage(
       <section className="space-y-12 border-t-2 border-text pt-12">
         <header className="space-y-3">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T es="Parte 03" en="Part 03" />
+            <T es={`Parte ${partNo.apparatus}`} en={`Part ${partNo.apparatus}`} />
           </p>
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
             <T es="Lo que queda en papel" en="What's left on paper" />
@@ -649,7 +660,7 @@ export default async function CaseDetailPage(
               <Link
                 key={r.id}
                 href={`/researchers/${r.id}`}
-                className="flex items-center gap-3 rounded-lg border border-border bg-panel p-3 transition hover:border-accent/50"
+                className="flex items-center gap-3 border border-border bg-panel p-3 transition hover:border-accent/50"
               >
                 <ResearcherAvatar researcher={r} size="sm" />
                 <span className="min-w-0">
