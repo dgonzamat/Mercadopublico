@@ -1,0 +1,70 @@
+{
+  "id": "exeter-1965",
+  "num": 215,
+  "name": "Exeter · objeto a baja altura visto por dos policías (EE.UU., 1965)",
+  "name_en": "Exeter · low-altitude object seen by two police officers (USA, 1965)",
+  "year_start": 1965,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 42.9814,
+    "lng": -70.9478,
+    "place": "Exeter / Kensington, New Hampshire"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 58,
+  "summary": "La madrugada del 3 de septiembre de 1965, cerca de Exeter (New Hampshire), Norman Muscarello, de 18 años, reportó un objeto grande con luces rojas pulsantes que se elevó sobre los árboles a corta distancia. Su credibilidad se reforzó cuando dos policías de Exeter —el patrullero Eugene Bertrand y el oficial David Hunt— acudieron y vieron el mismo objeto a baja altura sobre un campo: 'tan grande como un granero', con luces rojas destellantes, flotando y maniobrando 'de un modo que ningún avión podría'. Project Blue Book intentó atribuirlo a la Operación Big Blast (un ejercicio con B-47) y a estrellas/planetas, pero los tiempos no cuajaban y el caso quedó clasificado como 'no identificado'. John Fuller lo difundió en 'Incident at Exeter' (1966). Es uno de los casos multi-testigo con fuerza policial mejor atestiguados de la era Blue Book.",
+  "summary_en": "In the early hours of September 3, 1965, near Exeter (New Hampshire), 18-year-old Norman Muscarello reported a large object with pulsating red lights that rose above the trees at close range. His credibility was reinforced when two Exeter police officers —patrolman Eugene Bertrand and officer David Hunt— responded and saw the same object at low altitude over a field: 'as big as a barn,' with flashing red lights, floating and maneuvering 'in a way no plane could.' Project Blue Book tried to attribute it to Operation Big Blast (a B-47 exercise) and to stars/planets, but the timings did not fit and the case was classified 'unidentified.' John Fuller popularized it in 'Incident at Exeter' (1966). It is one of the best-attested multi-witness cases with police involvement of the Blue Book era.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "Pasada la medianoche del 3 de septiembre de 1965, Norman Muscarello —un joven de 18 años recién alistado en la Marina— hacía autostop por la Ruta 150 cerca de Kensington, a las afueras de Exeter, New Hampshire, cuando dijo haber visto un objeto grande con cinco luces rojas pulsantes que emergió de detrás de unos árboles y se acercó hasta hacerlo arrojarse a la cuneta. Aterrado, llegó a la comisaría de Exeter y convenció al personal de su sinceridad.\n\nEl patrullero Eugene Bertrand —que minutos antes había asistido a una mujer también asustada por una luz que la había seguido en su auto— llevó a Muscarello de vuelta al campo. Allí, ambos vieron elevarse desde detrás de los árboles un objeto oscuro y enorme con luces rojas destellantes; Bertrand lo describió como 'tan grande como un granero'. El oficial David Hunt llegó poco después y observó el mismo objeto, que 'flotaba, se bamboleaba y hacía cosas que ningún avión podría' antes de alejarse hacia Hampton. El despachador y un oficial supervisor escucharon los relatos en tiempo real.\n\nEl caso entró en Project Blue Book. Las explicaciones propuestas —la Operación Big Blast (un ejercicio nocturno con bombarderos B-47/B-52) y la confusión de estrellas o planetas— chocaron con los horarios: el ejercicio había terminado antes del avistamiento de los policías. Blue Book terminó listando el caso como 'no identificado'. Lo que lo distingue es la calidad de los testigos: un avistamiento a baja altura, a corta distancia, corroborado por dos oficiales de policía en servicio, sin instrumentación pero con observadores entrenados y coincidentes.",
+  "whatHappened_en": "After midnight on September 3, 1965, Norman Muscarello —an 18-year-old newly enlisted in the Navy— was hitchhiking along Route 150 near Kensington, outside Exeter, New Hampshire, when he said he saw a large object with five pulsating red lights emerge from behind some trees and approach until he threw himself into the ditch. Terrified, he reached the Exeter police station and convinced the staff of his sincerity.\n\nPatrolman Eugene Bertrand —who minutes earlier had assisted a woman also frightened by a light that had followed her car— drove Muscarello back to the field. There, both saw a dark, enormous object with flashing red lights rise from behind the trees; Bertrand described it as 'as big as a barn.' Officer David Hunt arrived shortly after and observed the same object, which 'floated, wobbled and did things no plane could' before moving off toward Hampton. The dispatcher and a supervising officer heard the accounts in real time.\n\nThe case entered Project Blue Book. The proposed explanations —Operation Big Blast (a nighttime exercise with B-47/B-52 bombers) and confusion of stars or planets— collided with the timing: the exercise had ended before the officers' sighting. Blue Book ended up listing the case as 'unidentified.' What distinguishes it is the quality of the witnesses: a low-altitude, close-range sighting corroborated by two on-duty police officers, without instrumentation but with trained, concordant observers.",
+  "whyMatters": "Es uno de los avistamientos multi-testigo mejor atestiguados de la era Project Blue Book y un caso 'unidentified' oficial que sobrevive con su etiqueta intacta. Su fuerza está en los testigos: además del observador inicial, dos policías en servicio describieron a corta distancia un objeto grande, silencioso, con luces rojas y maniobras incompatibles con aeronaves convencionales — el tipo de testimonio difícil de descartar como confusión casual. Su límite es el de su época: no hubo radar, foto ni película que fijara el objeto, y las explicaciones prosaicas, aunque fallaron en los tiempos, no pueden excluirse del todo. Tier A —no S— por esa ausencia de instrumentación: descansa en testimonio profesional convergente, fuerte pero no diagnóstico. Junto a Levelland y Socorro, ancla la línea de casos de la era Blue Book donde la propia USAF no logró cerrar una explicación.",
+  "whyMatters_en": "It is one of the best-attested multi-witness sightings of the Project Blue Book era and an official 'unidentified' case that survives with its label intact. Its strength lies in the witnesses: besides the initial observer, two on-duty police officers described at close range a large, silent object with red lights and maneuvers incompatible with conventional aircraft — the kind of testimony hard to dismiss as casual confusion. Its limit is that of its time: there was no radar, photo or film to fix the object, and the prosaic explanations, though they failed on timing, cannot be entirely excluded. Tier A —not S— because of that absence of instrumentation: it rests on convergent professional testimony, strong but not diagnostic. Alongside Levelland and Socorro, it anchors the line of Blue Book-era cases the USAF itself could not close.",
+  "evidence": [
+    "Reporte inicial de Norman Muscarello (18) de un objeto con luces rojas pulsantes a corta distancia, 3 de septiembre de 1965, cerca de Exeter, NH",
+    "Corroboración de dos policías de Exeter en servicio: patrullero Eugene Bertrand y oficial David Hunt",
+    "Descripción concordante: objeto grande ('tan grande como un granero'), luces rojas destellantes, flotando y maniobrando sin sonido de avión",
+    "Reporte previo la misma noche de una conductora seguida por una luz (asistida por Bertrand)",
+    "Project Blue Book clasificó el caso como 'no identificado' tras fallar las explicaciones de Operación Big Blast y de estrellas/planetas por desajuste horario",
+    "Difusión y documentación en 'Incident at Exeter' de John G. Fuller (1966)"
+  ],
+  "evidence_en": [
+    "Initial report by Norman Muscarello (18) of an object with pulsating red lights at close range, September 3, 1965, near Exeter, NH",
+    "Corroboration by two on-duty Exeter police officers: patrolman Eugene Bertrand and officer David Hunt",
+    "Concordant description: large object ('as big as a barn'), flashing red lights, floating and maneuvering with no aircraft sound",
+    "Earlier report the same night of a driver followed by a light (assisted by Bertrand)",
+    "Project Blue Book classified the case 'unidentified' after the Operation Big Blast and stars/planets explanations failed on timing",
+    "Popularization and documentation in John G. Fuller's 'Incident at Exeter' (1966)"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Exeter incident",
+      "url": "https://en.wikipedia.org/wiki/Exeter_incident",
+      "note": "Cronología, testigos y clasificación Blue Book."
+    },
+    {
+      "name": "UFO Evidence — The Incident at Exeter (Muscarello Case)",
+      "url": "http://www.ufoevidence.org/cases/case426.htm",
+      "note": "Síntesis del caso y testimonios."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Un objeto grande que flota y maniobra a baja altura, observado a corta distancia por dos policías en servicio además del testigo inicial, presta apoyo a que algo real y maniobrable estaba presente. Minimal porque no hubo radar, foto ni película; por sólido que sea el testimonio profesional, no fija la naturaleza del objeto.",
+      "rationaleEn": "A large object that floats and maneuvers at low altitude, observed at close range by two on-duty police officers in addition to the initial witness, lends support to something real and maneuverable being present. Minimal because there was no radar, photo or film; however solid the professional testimony, it does not fix the object's nature."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Las explicaciones prosaicas que Blue Book intentó —el ejercicio Operación Big Blast y la confusión de estrellas/planetas— fallaron por desajuste horario y no encajan con un objeto a baja altura que tres testigos vieron maniobrar. Minimal porque, sin instrumentación, no puede excluirse del todo alguna confusión no identificada.",
+      "rationaleEn": "The prosaic explanations Blue Book attempted —the Operation Big Blast exercise and confusion of stars/planets— failed on timing and do not fit a low-altitude object three witnesses saw maneuver. Minimal because, without instrumentation, some unidentified confusion cannot be entirely excluded."
+    }
+  ]
+}
