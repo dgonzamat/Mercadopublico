@@ -113,11 +113,10 @@ export function IcdProbabilityChart({ framing = true }: { framing?: boolean } = 
               style={{ borderColor: h.color }}
               aria-label={`${h.label}: ${h.effectiveIcd.labelEs}, ${Math.round(h.effectivePct)} por ciento`}
             >
-              {/* ICD verbal label — dominant. Format matches /home CategoryFact. */}
-              <p
-                className="font-mono text-xs uppercase tracking-wider"
-                style={{ color: h.color }}
-              >
+              {/* ICD verbal label — dominant. Format matches /home CategoryFact.
+                  PR-2 · texto en text-text (AA sobre surface-2); el color de la
+                  hipótesis ya vive en el border-l-4 de la tarjeta. */}
+              <p className="font-mono text-xs uppercase tracking-wider text-text">
                 <T es={h.effectiveIcd.labelEs} en={h.effectiveIcd.label} />{" "}
                 <span className="text-muted">
                   ({Math.round(h.effectivePct)}%)
