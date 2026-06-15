@@ -81,8 +81,8 @@ export default async function ResearcherDetailPage(
         <ShareButton title={r.name} />
       </div>
 
-      {/* Zone A — Identification */}
-      <header className="rounded-lg border border-border bg-surface-2 p-6 md:p-8">
+      {/* Zone A — Identification · U-2 esquinas vivas (era rounded-lg) */}
+      <header className="border border-border bg-surface-2 p-6 md:p-8">
         <div className="flex items-start gap-5">
           <ResearcherAvatar researcher={r} size="lg" />
           <div className="space-y-4">

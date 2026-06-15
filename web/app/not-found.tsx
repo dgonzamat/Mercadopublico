@@ -18,7 +18,7 @@ export default function NotFound() {
       </h1>
       <p className="mt-4 text-muted">
         O lo borramos al limpiar el archivo. Si buscabas un caso específico,
-        probá la lista completa de los {STATS.cases}.
+        prueba la lista completa de los {STATS.cases}.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <a

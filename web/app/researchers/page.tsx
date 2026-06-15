@@ -7,6 +7,7 @@ import { RegionFilter } from "@/components/RegionFilter";
 import { OfficialAgencies } from "@/components/OfficialAgencies";
 import { ContractorsShowcase } from "@/components/ContractorsShowcase";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
+import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   title: "Actores del ecosistema de divulgación UAP",
@@ -60,14 +61,20 @@ export default function ResearchersPage() {
 
   return (
     <div className="space-y-8">
-      <header>
-        <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
+      <header className="space-y-4">
+        <Eyebrow>
+          <T
+            es={`El ecosistema · ${STATS.researchers} actores`}
+            en={`The ecosystem · ${STATS.researchers} actors`}
+          />
+        </Eyebrow>
+        <H1>
           <T
             es="Las personas que no se callaron"
             en="The people who didn't stay quiet"
           />
-        </h1>
-        <p className="mt-2 text-muted">
+        </H1>
+        <Lede className="text-muted">
           <T
             es={
               <>
@@ -93,7 +100,7 @@ export default function ResearchersPage() {
               </>
             }
           />
-        </p>
+        </Lede>
       </header>
 
       <CategoryNav
@@ -132,7 +139,7 @@ export default function ResearchersPage() {
                   >
                   <a
                     href={`/researchers/${r.id}`}
-                    className="flex gap-3 rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50"
+                    className="flex gap-3 border border-border bg-panel p-4 transition hover:border-accent/50"
                   >
                     <ResearcherAvatar researcher={r} size="sm" />
                     <div className="min-w-0 flex-1">

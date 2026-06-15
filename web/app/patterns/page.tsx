@@ -1,6 +1,7 @@
 import { patterns, cases } from "@/lib/data";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
+import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   title: "Patrones recurrentes del fenómeno",
@@ -12,19 +13,22 @@ export const metadata = {
 export default function PatternsPage() {
   return (
     <div className="space-y-8">
-      <header>
-        <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
+      <header className="space-y-4">
+        <Eyebrow>
+          <T es="El catálogo · 8a–8r" en="The catalog · 8a–8r" />
+        </Eyebrow>
+        <H1>
           <T
             es={`${STATS.patterns} patrones que aparecen una y otra vez`}
             en={`${STATS.patterns} patterns that show up again and again`}
           />
-        </h1>
-        <p className="mt-2 text-muted">
+        </H1>
+        <Lede className="text-muted">
           <T
             es={`${STATS.patterns} patrones identificados a través de convergencia entre casos independientes. No se diseñaron a priori — emergieron tras acumulación de evidencia.`}
             en={`${STATS.patterns} patterns identified through convergence across independent cases. They were not designed a priori — they emerged after accumulation of evidence.`}
           />
-        </p>
+        </Lede>
       </header>
 
       <div className="grid gap-3 sm:grid-cols-2">
@@ -34,7 +38,7 @@ export default function PatternsPage() {
             <a
               key={p.id}
               href={`/patterns/${p.letter}`}
-              className="rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50"
+              className="border border-border bg-panel p-4 transition hover:border-accent/50"
               style={{ borderLeftColor: p.color, borderLeftWidth: 4 }}
             >
               <div className="flex items-start justify-between gap-3">
@@ -44,7 +48,7 @@ export default function PatternsPage() {
                     {p.name}
                   </h2>
                 </div>
-                <span className="rounded bg-bg px-2 py-0.5 font-mono text-[10px] text-muted">
+                <span className="bg-bg px-2 py-0.5 font-mono text-[10px] text-muted">
                   <T es={`${count} casos`} en={`${count} cases`} />
                 </span>
               </div>

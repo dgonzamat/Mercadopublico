@@ -1,6 +1,7 @@
 import { frameworks } from "@/lib/data";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
+import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   title: "Marcos teóricos comparados",
@@ -26,14 +27,17 @@ const verdictLabel: Record<string, { es: string; en: string }> = {
 export default function FrameworksPage() {
   return (
     <div className="space-y-8">
-      <header>
-        <h1 className="font-display text-3xl font-medium text-text md:text-4xl">
+      <header className="space-y-4">
+        <Eyebrow>
+          <T es="El debate · marcos en competencia" en="The debate · competing frameworks" />
+        </Eyebrow>
+        <H1>
           <T
             es={`${STATS.frameworks} teorías serias en competencia`}
             en={`${STATS.frameworks} serious competing theories`}
           />
-        </h1>
-        <p className="mt-2 text-muted">
+        </H1>
+        <Lede className="text-muted">
           <T
             es={
               <>
@@ -54,10 +58,10 @@ export default function FrameworksPage() {
               </>
             }
           />
-        </p>
+        </Lede>
       </header>
 
-      <div className="overflow-hidden rounded-lg border border-border">
+      <div className="border border-border">
         <table className="w-full text-sm">
           <thead className="bg-panel">
             <tr>
