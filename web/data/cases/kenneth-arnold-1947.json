@@ -1,0 +1,70 @@
+{
+  "id": "kenneth-arnold-1947",
+  "num": 219,
+  "name": "Kenneth Arnold · el avistamiento que acuñó 'platillo volador' (EE.UU., 1947)",
+  "name_en": "Kenneth Arnold · the sighting that coined 'flying saucer' (USA, 1947)",
+  "year_start": 1947,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 46.8523,
+    "lng": -121.7603,
+    "place": "Monte Rainier, estado de Washington"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 52,
+  "summary": "El 24 de junio de 1947, el piloto privado Kenneth Arnold volaba cerca del Monte Rainier (Washington) cuando reportó nueve objetos brillantes en formación desplazándose a gran velocidad entre el Rainier y el Monte Adams. Cronometró su paso contra los picos y estimó una velocidad de unos 1.700 km/h, muy superior a cualquier aeronave conocida de la época. Su descripción del movimiento —'como un platillo si lo lanzas rebotando sobre el agua'— llevó a la prensa a acuñar el término 'flying saucer' (platillo volador). Es el avistamiento fundacional de la era moderna del fenómeno: el que disparó la oleada de 1947 y el vocabulario que aún usamos. Las explicaciones prosaicas posteriores (espejismos, meteoros, aves) nunca lo cerraron de forma concluyente.",
+  "summary_en": "On June 24, 1947, private pilot Kenneth Arnold was flying near Mount Rainier (Washington) when he reported nine bright objects in formation moving at great speed between Rainier and Mount Adams. He timed their passage against the peaks and estimated a speed of about 1,700 km/h, far above any known aircraft of the era. His description of the motion —'like a saucer skipped across water'— led the press to coin the term 'flying saucer.' It is the foundational sighting of the modern era of the phenomenon: the one that triggered the 1947 wave and the vocabulary we still use. Later prosaic explanations (mirages, meteors, birds) never closed it conclusively.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 24 de junio de 1947, hacia las 15:00, Kenneth Arnold —un empresario y piloto privado experimentado de Boise, Idaho— sobrevolaba el estado de Washington en su avioneta CallAir A-2, ayudando en la búsqueda de un transporte militar siniestrado, cuando un destello le hizo mirar al norte. Reportó nueve objetos brillantes y planos volando en formación escalonada entre el Monte Rainier y el Monte Adams, a unos 2.800 metros de altitud.\n\nArnold hizo lo que pocos testigos podían: una estimación cuantitativa. Cronometró el tiempo que los objetos tardaron en recorrer la distancia conocida entre los dos picos (unos 80 km) y calculó una velocidad del orden de los 1.700 km/h —cerca del triple de la máxima de cualquier avión de 1947, y antes de que existieran reportes públicos de vuelo supersónico—. Describió los objetos como recortados, sin cola, y su movimiento ondulante 'como un platillo si lo haces rebotar sobre el agua'. Un periodista tradujo esa imagen del *movimiento* en una descripción de la *forma*, y nació el término 'flying saucer'.\n\nEl reporte de Arnold, ampliamente difundido por la prensa nacional, desató la oleada de avistamientos del verano de 1947 —incluido Roswell pocos días después— y fundó el léxico y el marco cultural del fenómeno moderno. La USAF y los escépticos propusieron después varias explicaciones: un espejismo de inversión térmica sobre las montañas, una lluvia de meteoros, gotas en la cabina, o una bandada de aves (pelícanos). Ninguna explicó de forma concluyente la combinación de número, formación, velocidad estimada y duración que reportó un piloto entrenado. El caso quedó como el punto de partida —irresuelto— de todo lo que vino después.",
+  "whatHappened_en": "On June 24, 1947, around 3:00 p.m., Kenneth Arnold —an experienced businessman and private pilot from Boise, Idaho— was flying over Washington state in his CallAir A-2, helping search for a downed military transport, when a flash made him look north. He reported nine bright, flat objects flying in a staggered formation between Mount Rainier and Mount Adams, at about 2,800 meters altitude.\n\nArnold did what few witnesses could: a quantitative estimate. He timed how long the objects took to cover the known distance between the two peaks (about 80 km) and computed a speed on the order of 1,700 km/h —near triple the maximum of any 1947 aircraft, and before public reports of supersonic flight existed. He described the objects as cut-off, tailless, and their undulating motion 'like a saucer if you skip it across water.' A journalist translated that image of the *motion* into a description of the *shape*, and the term 'flying saucer' was born.\n\nArnold's report, widely carried by the national press, triggered the wave of sightings in the summer of 1947 —including Roswell days later— and founded the lexicon and cultural frame of the modern phenomenon. The USAF and skeptics later proposed several explanations: a thermal-inversion mirage over the mountains, a meteor shower, droplets on the canopy, or a flock of birds (pelicans). None conclusively explained the combination of number, formation, estimated speed and duration reported by a trained pilot. The case remained the —unresolved— starting point of everything that followed.",
+  "whyMatters": "Es el caso fundacional del fenómeno moderno: el 24 de junio de 1947 inaugura la era contemporánea, dispara la oleada de ese verano y aporta el término —'platillo volador'— que organizó la percepción cultural durante ocho décadas. Ningún corpus serio puede omitirlo. Su valor no es solo histórico: a diferencia de la mayoría de los reportes de su época, Arnold —piloto entrenado— produjo una estimación cuantitativa de velocidad cronometrando los objetos contra dos picos de distancia conocida, lo que eleva su testimonio por encima de la impresión casual. Su límite es el de 1947: un solo observador primario, sin radar, foto ni película, y un menú de explicaciones prosaicas (espejismo, meteoros, aves) que, aunque no cierran el caso, tampoco pueden descartarse. Tier A —no S— por esa ausencia de instrumentación: importancia histórica máxima, carga evidencial sólida pero unipersonal.",
+  "whyMatters_en": "It is the foundational case of the modern phenomenon: June 24, 1947 inaugurates the contemporary era, triggers that summer's wave, and supplies the term —'flying saucer'— that organized cultural perception for eight decades. No serious corpus can omit it. Its value is not only historical: unlike most reports of its time, Arnold —a trained pilot— produced a quantitative speed estimate by timing the objects against two peaks of known distance, which raises his testimony above a casual impression. Its limit is that of 1947: a single primary observer, with no radar, photo or film, and a menu of prosaic explanations (mirage, meteors, birds) that, while they do not close the case, cannot be ruled out either. Tier A —not S— because of that absence of instrumentation: maximal historical importance, solid but single-witness evidential load.",
+  "evidence": [
+    "Reporte de Kenneth Arnold, piloto privado experimentado, el 24 de junio de 1947 sobre el Monte Rainier (Washington)",
+    "Nueve objetos brillantes y planos en formación escalonada entre el Rainier y el Monte Adams",
+    "Estimación cuantitativa de velocidad (~1.700 km/h) por cronometraje contra la distancia conocida entre dos picos",
+    "Descripción del movimiento 'como un platillo rebotando sobre el agua' — origen del término 'flying saucer' en la prensa",
+    "Detonante de la oleada nacional de avistamientos del verano de 1947 y del marco cultural del fenómeno",
+    "Explicaciones prosaicas posteriores (espejismo de inversión, meteoros, aves) — ninguna concluyente"
+  ],
+  "evidence_en": [
+    "Report by Kenneth Arnold, an experienced private pilot, on June 24, 1947 over Mount Rainier (Washington)",
+    "Nine bright, flat objects in staggered formation between Rainier and Mount Adams",
+    "Quantitative speed estimate (~1,700 km/h) by timing against the known distance between two peaks",
+    "Description of the motion 'like a saucer skipped across water' — origin of the press term 'flying saucer'",
+    "Trigger of the national wave of sightings in the summer of 1947 and of the phenomenon's cultural frame",
+    "Later prosaic explanations (inversion mirage, meteors, birds) — none conclusive"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Kenneth Arnold UFO sighting",
+      "url": "https://en.wikipedia.org/wiki/Kenneth_Arnold_UFO_sighting",
+      "note": "Cronología, estimación de velocidad y origen del término."
+    },
+    {
+      "name": "National Museum of the USAF / Project Blue Book context",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/198202/unidentified-flying-objects-project-blue-book/",
+      "note": "Marco institucional del estudio USAF del fenómeno."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Un piloto entrenado reportó nueve objetos en formación y produjo una estimación de velocidad muy superior a la tecnología de 1947 mediante cronometraje contra puntos de distancia conocida — un testimonio cuantitativo, no una impresión casual. Minimal porque es un único observador primario sin radar, foto ni película, y existen alternativas prosaicas no descartables.",
+      "rationaleEn": "A trained pilot reported nine objects in formation and produced a speed estimate far above 1947 technology by timing them against points of known distance — a quantitative testimony, not a casual impression. Minimal because it is a single primary observer with no radar, photo or film, and non-excludable prosaic alternatives exist."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Las explicaciones prosaicas propuestas —espejismo de inversión térmica sobre las montañas, meteoros, o una bandada de aves— son candidatos reales para un avistamiento diurno breve de 1947 y mantienen viva la lectura de confusión perceptual. Minimal porque ninguna da cuenta de forma completa del número, la formación y la velocidad estimada por un piloto.",
+      "rationaleEn": "The proposed prosaic explanations —thermal-inversion mirage over the mountains, meteors, or a flock of birds— are real candidates for a brief 1947 daytime sighting and keep alive the perceptual-confusion reading. Minimal because none fully accounts for the number, formation and speed estimated by a pilot."
+    }
+  ]
+}
