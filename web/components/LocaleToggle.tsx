@@ -40,10 +40,19 @@ const VARIANT = {
 
 export function LocaleToggle({
   variant = "header",
+  dark = false,
 }: {
   variant?: keyof typeof VARIANT;
+  dark?: boolean;
 }) {
   const [locale, setLocale] = useState<Locale>("es");
+  // Dark header (Home hero overlay): cream chrome + accent-bright active span.
+  const chrome =
+    dark && variant === "header"
+      ? "self-stretch border-l border-bg/15 px-3 text-bg hover:bg-bg hover:text-text"
+      : VARIANT[variant];
+  const activeColor = dark ? "text-accent-bright" : "text-accent";
+  const sepColor = dark ? "text-bg/40" : "text-muted";
 
   useEffect(() => {
     const stored = localStorage.getItem("locale") as Locale | null;
@@ -68,15 +77,15 @@ export function LocaleToggle({
       aria-label={
         locale === "es" ? "Switch to English" : "Cambiar a español"
       }
-      className={`inline-flex items-center gap-1 font-mono text-xs uppercase tracking-widest ${VARIANT[variant]}`}
+      className={`inline-flex items-center gap-1 font-mono text-xs uppercase tracking-widest ${chrome}`}
     >
-      <span aria-hidden className={locale === "es" ? "text-accent" : ""}>
+      <span aria-hidden className={locale === "es" ? activeColor : ""}>
         ES
       </span>
-      <span aria-hidden className="text-muted">
+      <span aria-hidden className={sepColor}>
         /
       </span>
-      <span aria-hidden className={locale === "en" ? "text-accent" : ""}>
+      <span aria-hidden className={locale === "en" ? activeColor : ""}>
         EN
       </span>
     </button>

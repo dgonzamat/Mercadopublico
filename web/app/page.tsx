@@ -28,15 +28,17 @@ export default function HomePage() {
       {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
       <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
         <HeroRadar contacts={STATS.cases} />
-        {/* readout de instrumento — chip mono con punto que parpadea (cableado a STATS) */}
-        <div className="pointer-events-none absolute right-4 top-6 z-10 hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55 md:flex">
-          <span className="h-1.5 w-1.5 animate-pulse bg-accent-bright" />
-          <T
-            es={`Barrido activo · ${STATS.cases} contactos`}
-            en={`Sweep active · ${STATS.cases} contacts`}
-          />
-        </div>
         <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
+          {/* readout de instrumento — alineado a la columna de contenido (mismo
+              eje que el header) y bajo el header fijo. Cableado a STATS; punto
+              cuadrado para no reintroducir rounded. */}
+          <div className="pointer-events-none absolute right-4 top-[88px] hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55 md:flex">
+            <span className="h-1.5 w-1.5 animate-pulse bg-accent-bright" />
+            <T
+              es={`Barrido activo · ${STATS.cases} contactos`}
+              en={`Sweep active · ${STATS.cases} contacts`}
+            />
+          </div>
           <div className="max-w-2xl space-y-8">
             <Eyebrow className="!text-bg/55">
               <T

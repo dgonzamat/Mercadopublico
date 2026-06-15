@@ -20,7 +20,7 @@ const NAV: Array<{ href: string; es: string; en: string }> = [
   { href: "/about", es: "Metodología", en: "Method" },
 ];
 
-export function HeaderNav() {
+export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
   const pathname = usePathname();
   return (
     <>
@@ -32,8 +32,10 @@ export function HeaderNav() {
             key={l.href}
             href={l.href}
             aria-current={active ? "page" : undefined}
-            className={`inline-flex items-center border-l border-text/15 px-3 font-display text-base font-medium hover:bg-text hover:text-bg ${
-              active ? "text-accent" : "text-text"
+            className={`inline-flex items-center border-l px-3 font-display text-base font-medium ${
+              dark
+                ? `border-bg/15 hover:bg-bg hover:text-text ${active ? "text-accent-bright" : "text-bg/85"}`
+                : `border-text/15 hover:bg-text hover:text-bg ${active ? "text-accent" : "text-text"}`
             }`}
           >
             <T es={l.es} en={l.en} />

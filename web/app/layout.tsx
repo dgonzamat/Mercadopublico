@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
-import { MobileNav } from "@/components/MobileNav";
-import { HeaderNav } from "@/components/HeaderNav";
-import { LocaleToggle } from "@/components/LocaleToggle";
 import { ShareButton } from "@/components/ShareButton";
-import { SiteSearch } from "@/components/SiteSearch";
+import { SiteHeader } from "@/components/SiteHeader";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { CookieConsent } from "@/components/CookieConsent";
@@ -81,47 +78,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen font-sans">
         <AnchorExpander />
-        <header className="sticky top-0 z-50 border-b-4 border-text bg-bg">
-          <nav
-            aria-label="Navegación principal"
-            className="mx-auto flex max-w-6xl items-stretch justify-between gap-0 px-4 sm:px-6"
-          >
-            <Link
-              href="/"
-              className="group flex items-center gap-3 py-5 text-text"
-              aria-label="UAP Codex"
-            >
-              <span
-                aria-hidden
-                className="inline-flex h-8 w-8 items-center justify-center bg-accent text-bg transition group-hover:rotate-180"
-              >
-                <span className="font-mono text-sm leading-none">▲</span>
-              </span>
-              <span className="font-display text-2xl font-medium leading-none tracking-tight md:text-3xl">
-                UAP
-                <span className="ml-1 italic text-accent">Codex</span>
-              </span>
-            </Link>
-
-            <div className="hidden items-stretch gap-3 lg:flex">
-              <div className="flex items-center gap-2">
-                <SiteSearch />
-                <ShareButton variant="icon" />
-              </div>
-              <HeaderNav />
-              <Link
-                href="/probabilidades"
-                className="inline-flex items-center gap-2 border-l-4 border-text bg-accent px-4 font-display text-base font-medium text-bg hover:bg-text"
-              >
-                <T es="Ver probabilidades" en="See probabilities" />
-                <span aria-hidden>→</span>
-              </Link>
-              <LocaleToggle />
-            </div>
-
-            <MobileNav />
-          </nav>
-        </header>
+        <SiteHeader />
 
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
 

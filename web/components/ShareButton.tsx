@@ -14,9 +14,11 @@ import { T } from "@/components/T";
 export function ShareButton({
   title,
   variant = "default",
+  dark = false,
 }: {
   title?: string;
   variant?: "default" | "icon";
+  dark?: boolean;
 }) {
   const [copied, setCopied] = useState(false);
   // X-3 · locale activo para los aria-label/title (atributos, no pueden usar <T>).
@@ -61,7 +63,11 @@ export function ShareButton({
         onClick={onShare}
         aria-label={copied ? copiedLabel : shareLabel}
         title={copied ? copiedLabel : shareLabel}
-        className="inline-flex h-9 w-9 items-center justify-center border border-border bg-bg text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className={`inline-flex h-9 w-9 items-center justify-center border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+          dark
+            ? "border-bg/30 bg-transparent text-bg hover:bg-bg hover:text-text"
+            : "border-border bg-bg text-text hover:bg-text hover:text-bg"
+        }`}
       >
         {copied ? <CheckIcon /> : <ShareIcon />}
       </button>

@@ -54,7 +54,7 @@ const SECONDARY_LINKS = [
   { href: "/contact", es: "Contacto", en: "Contact" },
 ];
 
-export function MobileNav() {
+export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
@@ -98,7 +98,11 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobile-nav-drawer"
         onClick={() => setOpen((v) => !v)}
-        className="lg:hidden inline-flex items-center gap-3 self-stretch border-l-4 border-text bg-bg px-5 font-display text-base font-medium text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className={`lg:hidden inline-flex items-center gap-3 self-stretch border-l-4 px-5 font-display text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+          dark
+            ? "border-bg/30 bg-transparent text-bg hover:bg-bg hover:text-text"
+            : "border-text bg-bg text-text hover:bg-text hover:text-bg"
+        }`}
       >
         <span aria-hidden className="text-lg leading-none">
           {open ? "✕" : "☰"}
