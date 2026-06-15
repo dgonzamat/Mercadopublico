@@ -28,8 +28,9 @@ export default function HomePage() {
       {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
       <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
         <HeroRadar contacts={STATS.cases} />
-        {/* readout de instrumento — chip mono con punto que parpadea (cableado a STATS) */}
-        <div className="pointer-events-none absolute right-4 top-6 z-10 hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55 md:flex">
+        {/* readout de instrumento — chip mono con punto que parpadea (cableado a STATS).
+            top-[88px] para librar el header fijo (≈80px) que se superpone en la home. */}
+        <div className="pointer-events-none absolute right-4 top-[88px] z-10 hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55 md:flex">
           <span className="h-1.5 w-1.5 animate-pulse bg-accent-bright" />
           <T
             es={`Barrido activo · ${STATS.cases} contactos`}
