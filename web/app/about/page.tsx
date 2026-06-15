@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Cta } from "@/components/Cta";
 import {
   Eyebrow,
   H1,
@@ -125,7 +126,7 @@ export default function AboutPage() {
                   en="Not all UAP cases are equivalent in evidential value. Mixing tiers obscures the analysis and artificially inflates the appearance of evidence. The public and the press frequently conflate tiers — that's a principal source of confusion."
                 />
               </Body>
-              <div className="overflow-hidden rounded-lg border border-border">
+              <div className="border border-border">
                 <table className="w-full text-sm">
                   <thead className="bg-surface-2">
                     <tr>
@@ -234,7 +235,7 @@ export default function AboutPage() {
                   en="Critical distinction of the statistical paradigm: the eight main explanations don't compete with each other — they can be partially true at once. That's why percentages can sum to more than 100. This isn't a bug; it's the real structure of the problem. Denying it leads to the 'must be one single explanation' fallacy."
                 />
               </Body>
-              <div className="rounded-lg border-l-4 border-accent bg-surface-2 px-5 py-4">
+              <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
                 <p className="text-sm text-text">
                   <T
                     es={<>El detalle por hipótesis (con números, bandas ICD-203 y razonamiento expandido) vive en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}para no duplicar el contenido acá.</>}
@@ -382,20 +383,20 @@ export default function AboutPage() {
         </section>
 
         <section className="space-y-6 border-t-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
-          <Eyebrow><T es="Ya entendés el método" en="You now understand the method" /></Eyebrow>
+          <Eyebrow><T es="Ya entiendes el método" en="You now understand the method" /></Eyebrow>
           <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
-            <T es="Ahora mirá el resultado: ocho explicaciones con su nivel de confianza" en="Now see the result: eight explanations with their confidence level" />
+            <T es="Ahora mira el resultado: ocho explicaciones con su nivel de confianza" en="Now see the result: eight explanations with their confidence level" />
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
-            <Link href="/probabilidades" className="inline-flex min-h-[48px] items-center bg-accent px-6 py-2 text-base font-medium text-bg hover:bg-text">
+            <Cta href="/probabilidades" variant="primary">
               <T es="Ver las ocho explicaciones →" en="See the eight explanations →" />
-            </Link>
-            <Link href="/cases" className="inline-flex min-h-[48px] items-center border-2 border-text px-6 py-2 text-base font-medium text-text hover:bg-text hover:text-bg">
+            </Cta>
+            <Cta href="/cases" variant="secondary">
               <T es={`Ver los ${STATS.cases} casos →`} en={`See the ${STATS.cases} cases →`} />
-            </Link>
-            <Link href="/fuentes" className="inline-flex min-h-[48px] items-center border-2 border-text px-6 py-2 text-base font-medium text-text hover:bg-text hover:text-bg">
+            </Cta>
+            <Cta href="/fuentes" variant="secondary">
               <T es="Ver todas las fuentes →" en="See all sources →" />
-            </Link>
+            </Cta>
           </div>
         </section>
 

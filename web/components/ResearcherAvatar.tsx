@@ -37,15 +37,18 @@ export function ResearcherAvatar({
         src={researcher.photo}
         alt={researcher.name}
         onError={() => setFailed(true)}
-        className={`${box} shrink-0 rounded-full border border-border object-cover`}
+        className={`${box} shrink-0 border border-border object-cover`}
         loading="lazy"
       />
     );
   }
   return (
+    // SE-1 · fallback como monograma intencional (tinta + crema, ~12:1) en vez
+    // de iniciales muted sobre surface-2 (~2.7:1, leía como imagen rota). Cuadrado
+    // como la foto: registro de dossier de archivo, coherente con el sistema.
     <div
       aria-hidden
-      className={`${box} flex shrink-0 items-center justify-center rounded-full border border-border bg-surface-2 font-mono font-medium text-muted`}
+      className={`${box} flex shrink-0 items-center justify-center border border-text bg-text font-mono font-medium text-bg`}
     >
       {initials(researcher.name)}
     </div>

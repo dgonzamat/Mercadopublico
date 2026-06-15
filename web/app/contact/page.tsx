@@ -33,7 +33,7 @@ export default function ContactPage() {
         </H1>
         <Lede className="text-muted">
           <T
-            es="¿Una corrección, una fuente primaria, un caso que falta? Este proyecto mejora bajo escrutinio. Escribí directo por email."
+            es="¿Una corrección, una fuente primaria, un caso que falta? Este proyecto mejora bajo escrutinio. Escribe directo por email."
             en="A correction, a primary source, a missing case? This project improves under scrutiny. Write directly by email."
           />
         </Lede>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { T } from "@/components/T";
 
 /**
@@ -19,6 +19,20 @@ export function ShareButton({
   variant?: "default" | "icon";
 }) {
   const [copied, setCopied] = useState(false);
+  // X-3 · locale activo para los aria-label/title (atributos, no pueden usar <T>).
+  // Antes estaban hard-codeados en español y el botón del header anunciaba
+  // «Compartir» también en modo EN.
+  const [locale, setLocale] = useState<"es" | "en">("es");
+  useEffect(() => {
+    const el = document.documentElement;
+    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
+    read();
+    const obs = new MutationObserver(read);
+    obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
+    return () => obs.disconnect();
+  }, []);
+  const shareLabel = locale === "es" ? "Compartir" : "Share";
+  const copiedLabel = locale === "es" ? "Link copiado" : "Link copied";
 
   async function onShare() {
     const url = window.location.href;
@@ -45,8 +59,8 @@ export function ShareButton({
       <button
         type="button"
         onClick={onShare}
-        aria-label={copied ? "Link copiado" : "Compartir"}
-        title={copied ? "Link copiado" : "Compartir"}
+        aria-label={copied ? copiedLabel : shareLabel}
+        title={copied ? copiedLabel : shareLabel}
         className="inline-flex h-9 w-9 items-center justify-center border border-border bg-bg text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
         {copied ? <CheckIcon /> : <ShareIcon />}

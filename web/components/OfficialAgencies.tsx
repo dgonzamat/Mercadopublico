@@ -43,7 +43,7 @@ export function OfficialAgencies() {
             <Link
               key={a.id}
               href={`/cases/${a.id}`}
-              className="block rounded-lg border border-border bg-panel p-4 transition hover:border-accent/50"
+              className="block border border-border bg-panel p-4 transition hover:border-accent/50"
             >
               <div className="flex items-baseline gap-2">
                 <span className="text-xl" aria-hidden>

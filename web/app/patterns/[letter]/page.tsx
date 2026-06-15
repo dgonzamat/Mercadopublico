@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { T } from "@/components/T";
+import { Eyebrow, H1 } from "@/lib/typography";
 import { breadcrumbJsonLd, serializeJsonLd } from "@/lib/jsonld";
 
 export function generateStaticParams() {
@@ -66,16 +67,17 @@ export default async function PatternDetailPage(
         <ShareButton title={`${p.id} ${p.name}`} />
       </div>
 
-      <header>
-        <p className="font-mono text-xs uppercase tracking-widest text-muted">
+      {/* U-1 · header con primitivas (antes h1 en sans bold, fuera del sistema).
+          El acento de color del patrón se conserva en el borde izquierdo. */}
+      <header className="space-y-2">
+        <Eyebrow>
           <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} />
-        </p>
-        <h1
-          className="mt-2 text-3xl font-bold text-text"
-          style={{ borderLeftColor: p.color, borderLeftWidth: 4, paddingLeft: 12 }}
-        >
-          <T es={p.name} en={p.name_en} />
-        </h1>
+        </Eyebrow>
+        <div style={{ borderLeftColor: p.color, borderLeftWidth: 4, paddingLeft: 12 }}>
+          <H1>
+            <T es={p.name} en={p.name_en} />
+          </H1>
+        </div>
       </header>
 
       <section>
