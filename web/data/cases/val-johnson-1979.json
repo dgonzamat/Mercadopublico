@@ -1,0 +1,72 @@
+{
+  "id": "val-johnson-1979",
+  "num": 222,
+  "name": "Val Johnson · patrullero con daño físico documentado (EE.UU., 1979)",
+  "name_en": "Val Johnson · patrol car with documented physical damage (USA, 1979)",
+  "year_start": 1979,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 48.55,
+    "lng": -96.77,
+    "place": "Carretera estatal 220, condado de Marshall, Minnesota"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 45,
+  "summary": "Hacia la 1:40 de la madrugada del 27 de agosto de 1979, el ayudante del sheriff Val Johnson conducía por la carretera 220 del condado de Marshall (Minnesota) cuando una luz intensa se abalanzó sobre su patrulla; perdió el conocimiento. Al despertar, el parabrisas estaba agrietado, un faro y la luz de emergencia dañados y la antena doblada; además, tanto su reloj de pulsera como el reloj del auto se habían atrasado 14 minutos, y tenía irritación ocular como de soldadura. El sheriff documentó los daños y el vehículo se conserva hoy en un museo del condado. Es uno de los pocos casos con daño físico medible a un objeto (el auto) y un testigo policial, aunque con un único observador y dudas sobre la mecánica de los daños.",
+  "summary_en": "Around 1:40 a.m. on August 27, 1979, Deputy Sheriff Val Johnson was driving on Marshall County Highway 220 (Minnesota) when an intense light rushed at his patrol car; he lost consciousness. When he came to, the windshield was cracked, a headlight and the emergency light damaged and the antenna bent; in addition, both his wristwatch and the car's clock had fallen 14 minutes behind, and he had welding-like eye irritation. The sheriff documented the damage and the vehicle is preserved today in a county museum. It is one of the few cases with measurable physical damage to an object (the car) and a police witness, though with a single observer and doubts about the mechanics of the damage.",
+  "patterns": [
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "A la 1:40 de la madrugada del 27 de agosto de 1979, el ayudante del sheriff Val Johnson patrullaba la carretera estatal 220 en el condado de Marshall, Minnesota, cerca de la frontera con Dakota del Norte. Según su relato, vio una luz muy intensa a un lado de la carretera y, al girar hacia ella, la luz se precipitó sobre el vehículo. Lo siguiente que recordó fue despertar con la patrulla detenida en diagonal sobre la calzada y marcas de frenado que indicaban un viraje brusco.\n\nJohnson, aturdido y con los ojos irritados —como por el destello de una soldadura—, llamó por radio. Los daños en el vehículo quedaron documentados por el Departamento del Sheriff: el parabrisas agrietado desde dentro, un faro y la luz roja de emergencia del techo rotos, y la antena de radio doblada en ángulo. Dos detalles temporales llamaron la atención: el reloj de pulsera de Johnson y el reloj del salpicadero coincidían entre sí pero estaban atrasados unos 14 minutos respecto a la hora real, como si el tiempo se hubiera 'perdido'. Johnson recibió tratamiento por la irritación ocular.\n\nEl caso fue investigado por el Center for UFO Studies (CUFOS) y otros; el vehículo dañado se conservó y hoy se exhibe en el museo del condado de Marshall en Warren. Su fuerza está en lo inusual de tener daño físico medible sobre un objeto y un testigo profesional. Su debilidad es simétrica: investigadores escépticos señalaron que el patrón de daños es difícil de conciliar con una colisión a alta velocidad (el parabrisas agrietado pero no hundido, la antena doblada de un modo peculiar), dejando abierta la posibilidad de una causa más mundana o incluso de manipulación. El caso quedó sin explicación consensuada: evidencia física real, mecánica discutida, observador único.",
+  "whatHappened_en": "At 1:40 a.m. on August 27, 1979, Deputy Sheriff Val Johnson was patrolling State Highway 220 in Marshall County, Minnesota, near the North Dakota border. By his account, he saw a very intense light to one side of the road and, as he turned toward it, the light rushed at the vehicle. The next thing he recalled was waking with the patrol car stopped diagonally across the road and skid marks indicating a sharp swerve.\n\nJohnson, dazed and with irritated eyes —as if from a welding flash— called in by radio. The vehicle damage was documented by the Sheriff's Department: the windshield cracked from the inside, a headlight and the roof's red emergency light broken, and the radio antenna bent at an angle. Two time details drew attention: Johnson's wristwatch and the dashboard clock agreed with each other but were about 14 minutes behind the real time, as if time had been 'lost.' Johnson was treated for the eye irritation.\n\nThe case was investigated by the Center for UFO Studies (CUFOS) and others; the damaged vehicle was preserved and is displayed today at the Marshall County museum in Warren. Its strength lies in the rarity of having measurable physical damage to an object and a professional witness. Its weakness is symmetric: skeptical investigators noted that the damage pattern is hard to reconcile with a high-speed collision (the windshield cracked but not caved in, the antenna bent in a peculiar way), leaving open a more mundane cause or even manipulation. The case remained without an agreed explanation: real physical evidence, disputed mechanics, a single observer.",
+  "whyMatters": "Es uno de los pocos casos del corpus con daño físico medible sobre un objeto —el propio vehículo policial, que se conserva como pieza de museo— sumado a un testigo profesional y a anomalías concomitantes (atraso de 14 minutos en dos relojes, irritación ocular). Esa materialidad lo distingue de un avistamiento puramente visual. Pero el caso ilustra también el límite de la evidencia física aislada: el patrón de daños fue cuestionado por investigadores que lo consideraron incompatible con una colisión a alta velocidad, lo que abre causas mundanas o intencionadas que el testimonio único no permite excluir. Tier A por la evidencia física documentada y preservada y la condición policial del testigo; probabilidad moderada porque la mecánica de los daños es disputada y no hubo segundo observador. Es un caso-estudio sobre lo que un objeto dañado puede —y no puede— probar.",
+  "whyMatters_en": "It is one of the few cases in the corpus with measurable physical damage to an object —the police vehicle itself, preserved as a museum piece— combined with a professional witness and concomitant anomalies (a 14-minute lag on two clocks, eye irritation). That materiality distinguishes it from a purely visual sighting. But the case also illustrates the limit of isolated physical evidence: the damage pattern was questioned by investigators who considered it incompatible with a high-speed collision, opening mundane or intentional causes that the single testimony cannot exclude. Tier A for the documented, preserved physical evidence and the witness's police status; moderate probability because the damage mechanics are disputed and there was no second observer. It is a case study on what a damaged object can —and cannot— prove.",
+  "evidence": [
+    "Relato del ayudante del sheriff Val Johnson, 27 de agosto de 1979, carretera 220, condado de Marshall, Minnesota (~1:40 am)",
+    "Daños documentados por el Departamento del Sheriff: parabrisas agrietado, faro y luz de emergencia rotos, antena de radio doblada",
+    "Atraso coincidente de ~14 minutos en el reloj de pulsera del agente y en el reloj del vehículo",
+    "Irritación ocular del testigo tipo destello de soldadura, que requirió tratamiento",
+    "Vehículo conservado y exhibido en el museo del condado de Marshall (Warren)",
+    "Investigación de CUFOS y otros; objeción escéptica: el patrón de daños es difícil de conciliar con una colisión a alta velocidad"
+  ],
+  "evidence_en": [
+    "Account of Deputy Sheriff Val Johnson, August 27, 1979, Highway 220, Marshall County, Minnesota (~1:40 a.m.)",
+    "Damage documented by the Sheriff's Department: cracked windshield, broken headlight and emergency light, bent radio antenna",
+    "Coincident ~14-minute lag on the officer's wristwatch and the vehicle's clock",
+    "Welding-flash-type eye irritation in the witness, requiring treatment",
+    "Vehicle preserved and displayed at the Marshall County museum (Warren)",
+    "Investigation by CUFOS and others; skeptical objection: the damage pattern is hard to reconcile with a high-speed collision"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Val Johnson incident",
+      "url": "https://en.wikipedia.org/wiki/Val_Johnson_incident",
+      "note": "Cronología, daños y objeciones escépticas."
+    },
+    {
+      "name": "MNopedia (Minnesota Historical Society) — Val Johnson Incident, 1979",
+      "url": "https://www.mnhs.org/mnopedia/search/index/event/val-johnson-incident-1979",
+      "note": "Fuente histórica institucional del estado."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Daño físico medible a un vehículo, conservado como evidencia, junto con un testigo policial y anomalías temporales coincidentes en dos relojes, es más que un avistamiento visual. Minimal porque hubo un único observador y la mecánica de los daños fue cuestionada como incompatible con una colisión real.",
+      "rationaleEn": "Measurable physical damage to a vehicle, preserved as evidence, together with a police witness and coincident time anomalies on two clocks, is more than a visual sighting. Minimal because there was a single observer and the damage mechanics were questioned as incompatible with a real collision."
+    },
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El cuestionamiento escéptico del patrón de daños —agrietamiento sin hundimiento, antena doblada de forma peculiar— mantiene viva una causa más mundana o intencionada, dado que no hubo segundo testigo que fijara el evento. Minimal porque tampoco se demostró una explicación prosaica concreta que cubra el conjunto (daños + relojes + ojos).",
+      "rationaleEn": "The skeptical questioning of the damage pattern —cracking without caving, antenna bent in a peculiar way— keeps alive a more mundane or intentional cause, given there was no second witness to fix the event. Minimal because no concrete prosaic explanation covering the whole (damage + clocks + eyes) was demonstrated either."
+    }
+  ]
+}
