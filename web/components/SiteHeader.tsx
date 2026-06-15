@@ -45,7 +45,7 @@ export function SiteHeader() {
     >
       <nav
         aria-label="Navegación principal"
-        className="mx-auto flex max-w-6xl items-stretch justify-between gap-0 px-4 sm:px-6"
+        className="mx-auto flex max-w-7xl items-stretch justify-between gap-x-6 px-4 sm:px-6"
       >
         <Link
           href="/"
@@ -68,7 +68,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <div className="hidden items-stretch gap-3 lg:flex">
+        <div className="hidden items-stretch gap-3 xl:flex">
           <div className="flex items-center gap-2">
             <SiteSearch dark={dark} />
             <ShareButton variant="icon" dark={dark} />
