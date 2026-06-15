@@ -28,7 +28,7 @@ export default function HomePage() {
       {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
       <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
         <HeroRadar contacts={STATS.cases} />
-        <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
+        <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
           {/* readout de instrumento — alineado a la columna de contenido (mismo
               eje que el header) y bajo el header fijo. Cableado a STATS; punto
               cuadrado para no reintroducir rounded. */}
