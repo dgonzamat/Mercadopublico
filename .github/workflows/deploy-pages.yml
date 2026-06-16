@@ -37,9 +37,14 @@ jobs:
         with:
           node-version: '20'
 
+      # configure-pages no debe ser fatal: si Pages está deshabilitado o el
+      # token no puede crearlo, la ruta de respaldo (peaceiris → gh-pages)
+      # igual debe publicar. Sin esto, un fallo aquí aborta todo el job y
+      # tumba el deploy completo (incidente del 16 jun 2026).
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        continue-on-error: true
         with:
           enablement: true
 
