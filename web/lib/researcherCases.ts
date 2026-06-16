@@ -119,8 +119,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   chamorro: ["pucallpa-2008", "chulucanas-2001", "oifaa-difaa-peru"],
   lianza: ["ciae-cefae-2011"],
   sanchez: ["cridovni-uruguay-1979"],
-  bermudez: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
-  bravo: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014"],
+  bermudez: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014", "collahuasi-2013"],
+  bravo: ["cefaa-chile-1997", "bosque-chile-2010", "naval-chile-2014", "collahuasi-2013"],
 
   // Brasil — ufología de campo
   petit: ["colares-1977", "varginha-1996", "noite-oficial-1986", "arquivo-nacional-brasil-2026"],
