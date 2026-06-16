@@ -32,11 +32,14 @@ export function HypothesesSnapshot() {
         />
       </p>
       {rows.map((h, i) => {
+        // El snapshot recorta el sujeto existencial («Al menos un caso es/
+        // involucra…», «Existe…») porque la línea introductoria de arriba ya
+        // lo enuncia para toda la lista; aquí solo queda el predicado.
         const cleanLabel = h.label
-          .replace(/^≥1 caso (es|involucra)\s+/i, "")
+          .replace(/^Al menos un caso (es|involucra)\s+(un[a]?\s+)?/i, "")
           .replace(/^Existe\s+/i, "");
         const cleanLabelEn = h.labelEn
-          .replace(/^≥1 case (is|involves)\s+/i, "")
+          .replace(/^At least one case (is|involves)\s+(an?\s+)?/i, "")
           .replace(/^A\s+/i, "");
         return (
           <div
