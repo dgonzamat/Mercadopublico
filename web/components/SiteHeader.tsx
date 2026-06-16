@@ -49,7 +49,7 @@ export function SiteHeader() {
       >
         <Link
           href="/"
-          className={`group flex items-center gap-3 py-5 ${dark ? "text-bg" : "text-text"}`}
+          className={`group flex min-w-0 items-center gap-3 py-5 ${dark ? "text-bg" : "text-text"}`}
           aria-label="UAP Codex"
         >
           <span
