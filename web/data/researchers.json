@@ -1692,5 +1692,75 @@
         "note_en": "Testimony without independent documentary corroboration."
       }
     ]
+  },
+  {
+    "id": "wang-sichao",
+    "name": "Wang Sichao",
+    "flag": "🇨🇳",
+    "born": 1937,
+    "death": 2016,
+    "section": "A",
+    "section_label": "Astronomía (China)",
+    "section_label_en": "Astronomy (China)",
+    "credentials": "Astrónomo planetario · investigador del Observatorio de la Montaña Púrpura (Academia China de Ciencias)",
+    "credentials_en": "Planetary astronomer · researcher at the Purple Mountain Observatory (Chinese Academy of Sciences)",
+    "bio_short": "Astrónomo del Observatorio de la Montaña Púrpura (Nanjing), de la Academia China de Ciencias, donde investigó entre 1963 y 1999 asteroides, meteoros y cometas. Durante unas cuatro décadas estudió además avistamientos no identificados con método astronómico: reconstruyó trayectorias, altitudes y velocidades a partir de los reportes —como en la espiral masiva de 1981 sobre catorce provincias, que situó en altitud orbital— para separar las confusiones con cohetes, satélites y fenómenos ópticos de los pocos casos que consideró sin explicación. Representa el filtro científico de la casuística china.",
+    "bio_short_en": "Astronomer at the Purple Mountain Observatory (Nanjing), of the Chinese Academy of Sciences, where he researched asteroids, meteors and comets between 1963 and 1999. For some four decades he also studied unidentified sightings with astronomical method: he reconstructed trajectories, altitudes and speeds from reports —as in the 1981 mass spiral over fourteen provinces, which he placed at orbital altitude— to separate confusions with rockets, satellites and optical phenomena from the few cases he considered unexplained. He represents the scientific filter of Chinese casework.",
+    "works": [
+      {
+        "year": 1981,
+        "title": "Análisis de la espiral del 24 de julio de 1981",
+        "contribution": "Reconstrucción de altitud (~650 km) y velocidad del evento masivo de 14 provincias",
+        "contribution_en": "Reconstruction of altitude (~650 km) and speed of the 14-province mass event"
+      },
+      {
+        "year": 1999,
+        "title": "Estudio astronómico de avistamientos UAP (≈1977–2016)",
+        "contribution": "Casi cuatro décadas aplicando criterio astronómico para discriminar anomalía real de confusión",
+        "contribution_en": "Nearly four decades applying astronomical criteria to tell real anomaly from confusion"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia — Wang Sichao",
+        "url": "https://en.wikipedia.org/wiki/Wang_Sichao"
+      },
+      {
+        "name": "Beijing Review — 'Mysteries in the Sky'",
+        "url": "https://www.bjreview.com/Cover_Story_Series_2010/node_45821.htm"
+      }
+    ]
+  },
+  {
+    "id": "ziegel",
+    "name": "Felix Ziegel",
+    "flag": "🇷🇺",
+    "born": 1920,
+    "death": 1988,
+    "section": "A",
+    "section_label": "Ufología científica (URSS)",
+    "section_label_en": "Scientific ufology (USSR)",
+    "credentials": "Doctor en Ciencias · docente de Cosmología en el Instituto de Aviación de Moscú (MAI) · fundador de la ufología soviética",
+    "credentials_en": "Doctor of Science · docent of Cosmology at the Moscow Aviation Institute (MAI) · founder of Soviet ufology",
+    "bio_short": "Astrónomo y matemático soviético, doctor en Ciencias y docente de Cosmología en el Instituto de Aviación de Moscú (MAI), autor de más de cuarenta libros de divulgación astronómica. Es considerado el padre de la ufología soviética: el 10 de noviembre de 1967 hizo en la televisión central de la URSS un llamado público a reportar avistamientos y coorganizó el primer grupo de estudio de OVNIs oficialmente autorizado del país. Durante la era del programa estatal SETKA fue la figura científica civil que empujó por un estudio sistemático del fenómeno, en tensión con el secreto institucional. Murió en 1988.",
+    "bio_short_en": "Soviet astronomer and mathematician, Doctor of Science and docent of Cosmology at the Moscow Aviation Institute (MAI), author of more than forty popular astronomy books. He is regarded as the father of Soviet ufology: on November 10, 1967 he made a public appeal on USSR central television for sighting reports and co-organized the country's first officially approved UFO study group. During the era of the state SETKA program he was the civilian scientific figure who pushed for a systematic study of the phenomenon, in tension with institutional secrecy. He died in 1988.",
+    "works": [
+      {
+        "year": 1967,
+        "title": "Llamado televisivo y primer grupo de estudio soviético",
+        "contribution": "Inició el estudio civil organizado del fenómeno en la URSS",
+        "contribution_en": "Launched the organized civilian study of the phenomenon in the USSR"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia — Felix Ziegel",
+        "url": "https://en.wikipedia.org/wiki/Felix_Ziegel"
+      },
+      {
+        "name": "The Moscow Times — 'Little Green Men: A Look at the Official Soviet X-Files Investigation'",
+        "url": "https://www.themoscowtimes.com/2016/03/31/little-green-men-a-look-at-the-official-soviet-x-files-investigation-a52335"
+      }
+    ]
   }
 ]

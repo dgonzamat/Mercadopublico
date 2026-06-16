@@ -17,6 +17,8 @@ import type { UAPCase, Researcher } from "./types";
  */
 export const RESEARCHER_CASES: Record<string, string[]> = {
   // A — científicos
+  "wang-sichao": ["china-spiral-1981"],
+  ziegel: ["setka-ussr-1978"],
   vallee: ["pampa-joya-1980", "valdes-1977", "voronezh-1989"],
   hynek: ["socorro-1964", "valensole-1965", "hudson-valley-1983"],
   mcdonald: ["levelland-1957", "rb47-1957", "washington-dc-1952", "lakenheath-bentwaters-1956"],
