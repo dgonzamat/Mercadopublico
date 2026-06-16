@@ -45,7 +45,7 @@ export function SiteHeader() {
     >
       <nav
         aria-label="Navegación principal"
-        className="mx-auto flex max-w-7xl items-stretch justify-between gap-x-6 px-4 sm:px-6"
+        className="mx-auto flex max-w-7xl items-stretch justify-between gap-x-2 px-4 sm:gap-x-6 sm:px-6"
       >
         <Link
           href="/"
