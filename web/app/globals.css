@@ -26,6 +26,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Contain horizontal overflow at the ROOT, not just <body>. On mobile,
+   position:fixed elements (the header) and full-bleed 100vw blocks are sized
+   against the initial containing block (<html>), so an overflow there makes
+   the whole document pannable — clipping only <body> doesn't catch it, which
+   left the home hero shifted (cut on the left, cream strip on the right) and
+   the fixed header's "Menú" button pushed off the right edge. html as the
+   scroll container is also where position:sticky resolves, so sticky headers
+   on inner routes keep working. */
+html {
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
 }
