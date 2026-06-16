@@ -98,7 +98,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
         aria-expanded={open}
         aria-controls="mobile-nav-drawer"
         onClick={() => setOpen((v) => !v)}
-        className={`xl:hidden inline-flex items-center gap-3 self-stretch border-l-4 px-5 font-display text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+        className={`xl:hidden inline-flex items-center gap-2 self-stretch border-l-4 px-4 font-display text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent sm:gap-3 sm:px-5 ${
           dark
             ? "border-bg/30 bg-transparent text-bg hover:bg-bg hover:text-text"
             : "border-text bg-bg text-text hover:bg-text hover:text-bg"
