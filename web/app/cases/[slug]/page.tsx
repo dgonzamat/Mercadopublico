@@ -184,11 +184,6 @@ export default async function CaseDetailPage(
             />
             <span className="mx-2 text-text/30">·</span>
             {c.country_name}
-            <span className="mx-2 text-text/30">·</span>
-            <T
-              es={`Evidencia ${TIER_META[c.tier].plain.toLowerCase()}`}
-              en={`Evidence: ${TIER_META[c.tier].plain_en.toLowerCase()}`}
-            />
           </p>
           {c.epistemicStatus && c.epistemicStatus !== "documented" && (
             <EpistemicBadge status={c.epistemicStatus} />
