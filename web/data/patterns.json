@@ -1,173 +1,173 @@
 [
-  {
-    "id": "8a",
-    "letter": "a",
-    "name": "Efectos físicos / interacción biológica",
-    "name_en": "Physical effects / biological interaction",
-    "description": "Casos con efectos fisiológicos documentados directamente sobre testigos.",
-    "description_en": "Cases with directly documented physiological effects on witnesses.",
-    "color": "#ff4d4d"
-  },
-  {
-    "id": "8b",
-    "letter": "b",
-    "name": "Madre + sub-objetos",
-    "name_en": "Mother + sub-objects",
-    "description": "Objeto grande emite/recibe objetos secundarios o se divide. 9 casos en 77 años.",
-    "description_en": "Large object emits/receives secondary objects or splits. 9 cases over 77 years.",
-    "color": "#ff8800"
-  },
-  {
-    "id": "8c",
-    "letter": "c",
-    "name": "Muerte de testigos críticos",
-    "name_en": "Death of critical witnesses",
-    "description": "Personas con información significativa sobre UAPs que murieron en circunstancias notables.",
-    "description_en": "People with significant UAP information who died under notable circumstances.",
-    "color": "#cc0000"
-  },
-  {
-    "id": "8d",
-    "letter": "d",
-    "name": "Investigadores/contactees aparte",
-    "name_en": "Researchers/contactees separate",
-    "description": "Tradición paralela al corpus institucional, tratamiento epistemológico distinto.",
-    "description_en": "Parallel tradition to institutional corpus, distinct epistemological treatment.",
-    "color": "#888888"
-  },
-  {
-    "id": "8e",
-    "letter": "e",
-    "name": "Transparencia institucional tiempo real",
-    "name_en": "Real-time institutional transparency",
-    "description": "Casos donde gobiernos/militares acknowledged abiertamente durante o poco después del evento.",
-    "description_en": "Cases where governments/militaries openly acknowledged during or shortly after event.",
-    "color": "#7fdbff"
-  },
-  {
-    "id": "8f",
-    "letter": "f",
-    "name": "Monitoreo de fuentes de riesgo catastrófico",
-    "name_en": "Monitoring catastrophic risk sources",
-    "description": "Concentración UAP sobre sitios nucleares + volcanes activos + submarinos.",
-    "description_en": "UAP concentration over nuclear sites + active volcanoes + submarines.",
-    "color": "#ffdd00"
-  },
-  {
-    "id": "8g",
-    "letter": "g",
-    "name": "Persistencia local sostenida",
-    "name_en": "Sustained local persistence",
-    "description": "UAPs que vuelven al mismo sitio durante años (Hessdalen, Popocatépetl, Kumburgaz).",
-    "description_en": "UAPs returning to the same site over years (Hessdalen, Popocatépetl, Kumburgaz).",
-    "color": "#00cc99"
-  },
-  {
-    "id": "8h",
-    "letter": "h",
-    "name": "Catálogo de morfologías observadas",
-    "name_en": "Observed morphology catalog",
-    "description": "9 categorías morfológicas distintas: discos, orbes, tic-tacs, triángulos, cigarros, etc.",
-    "description_en": "9 distinct morphological categories: discs, orbs, tic-tacs, triangles, cigars, etc.",
-    "color": "#aa88ff"
-  },
-  {
-    "id": "8i",
-    "letter": "i",
-    "name": "Framework de cuatro tiers evidenciales",
-    "name_en": "Four-tier evidential framework",
-    "description": "Tier 1 institucional → Tier 4 contactee.",
-    "description_en": "Tier 1 institutional → Tier 4 contactee.",
-    "color": "#888aff"
-  },
-  {
-    "id": "8j",
-    "letter": "j",
-    "name": "Metodología Bayesiana",
-    "name_en": "Bayesian methodology",
-    "description": "Qué casos mueven probabilidades vs cuáles tienen retorno marginal nulo.",
-    "description_en": "Which cases move probabilities vs marginal-return-zero ones.",
-    "color": "#999999"
-  },
-  {
-    "id": "8k",
-    "letter": "k",
-    "name": "Interferencia EM en vehículos/aeronaves",
-    "name_en": "EM interference in vehicles/aircraft",
-    "description": "66 años de estabilidad. Levelland, Coyne, Tehran, Belgian, DOW Syria.",
-    "description_en": "66 years of stability. Levelland, Coyne, Tehran, Belgian, DOW Syria.",
-    "color": "#ff00aa"
-  },
-  {
-    "id": "8l",
-    "letter": "l",
-    "name": "Triángulos grandes silenciosos",
-    "name_en": "Large silent triangles",
-    "description": "1980s-presente. Hudson Valley, Belgian, Phoenix, Yukon.",
-    "description_en": "1980s-present. Hudson Valley, Belgian, Phoenix, Yukon.",
-    "color": "#5555ff"
-  },
-  {
-    "id": "8m",
-    "letter": "m",
-    "name": "Cover-up institucional documentado",
-    "name_en": "Documented institutional cover-up",
-    "description": "79 años, 1947-2026. Twining→Robertson→Bolender→Wilson-Davis→Bennewitz. Secuencia documental verificable.",
-    "description_en": "79 years, 1947-2026. Twining→Robertson→Bolender→Wilson-Davis→Bennewitz. Verifiable documentary sequence.",
-    "color": "#990000"
-  },
-  {
-    "id": "8n",
-    "letter": "n",
-    "name": "Strategic Ambiguity Disclosure",
-    "name_en": "Strategic Ambiguity Disclosure",
-    "description": "Liberación de archivos + simultánea non-confirmation + cierre canales denunciante. PURSUE 2026.",
-    "description_en": "File release + simultaneous non-confirmation + whistleblower channel closure. PURSUE 2026.",
-    "color": "#ff6600"
-  },
-  {
-    "id": "8o",
-    "letter": "o",
-    "name": "Cultural-Institutional Synchronization",
-    "name_en": "Cultural-Institutional Synchronization",
-    "description": "Convergencia ±90 días entre divulgación institucional y declaraciones autoridades culturales. Spielberg + PURSUE.",
-    "description_en": "±90-day convergence between institutional disclosure and cultural authority statements. Spielberg + PURSUE.",
-    "color": "#cc88ff"
-  },
-  {
-    "id": "8p",
-    "letter": "p",
-    "name": "Marcadores geométricos masivos (crop circles)",
-    "name_en": "Geometric Mass Markers (crop circles)",
-    "description": "Subpoblación con anomalías físicas peer-reviewed (Levengood/BLT 1994-99). 5% del total.",
-    "description_en": "Subpopulation with peer-reviewed physical anomalies (Levengood/BLT 1994-99). 5% of total.",
-    "color": "#66ffaa"
-  },
-  {
-    "id": "8q",
-    "letter": "q",
-    "name": "Disclosure Ecosystem Network",
-    "name_en": "Disclosure Ecosystem Network",
-    "description": "Infraestructura formal política-mediática contra strategic ambiguity. Luna + Burchett + Coulthart + News Nation + Grusch.",
-    "description_en": "Formal political-media infrastructure against strategic ambiguity. Luna + Burchett + Coulthart + News Nation + Grusch.",
-    "color": "#00aaff"
-  },
-  {
-    "id": "8r",
-    "letter": "r",
-    "name": "Unauthorized Disclosure Channels",
-    "name_en": "Unauthorized Disclosure Channels",
-    "description": "Leaks de documentos institucionales auténticos fuera del control estatal. WikiLeaks Cablegate + Podesta + Wilson-Davis.",
-    "description_en": "Leaks of authentic institutional documents outside state control. WikiLeaks Cablegate + Podesta + Wilson-Davis.",
-    "color": "#ff00ff"
-  },
-  {
-    "id": "8s",
-    "letter": "s",
-    "name": "Vigilancia aérea de otro Estado",
-    "name_en": "Foreign-State Aerial Surveillance",
-    "description": "Plataformas de vigilancia operadas por otro Estado sobre territorio nacional sin atribución inmediata. Globo 2023 (atribución oficial DoD) + Mystery Drones 2024 + derribos feb 2023.",
-    "description_en": "Surveillance platforms operated by another state over national territory without immediate attribution. 2023 balloon (official DoD attribution) + 2024 Mystery Drones + Feb 2023 shoot-downs.",
-    "color": "#b08d57"
-  }
+    {
+        "id": "8a",
+        "letter": "a",
+        "name": "Efectos físicos / interacción biológica",
+        "name_en": "Physical effects / biological interaction",
+        "description": "Casos con efectos fisiológicos documentados directamente sobre testigos.",
+        "description_en": "Cases with directly documented physiological effects on witnesses.",
+        "color": "#ff4d4d"
+    },
+    {
+        "id": "8b",
+        "letter": "b",
+        "name": "Madre + sub-objetos",
+        "name_en": "Mother + sub-objects",
+        "description": "Objeto grande emite/recibe objetos secundarios o se divide. 9 casos en 77 años.",
+        "description_en": "Large object emits/receives secondary objects or splits. 9 cases over 77 years.",
+        "color": "#ff8800"
+    },
+    {
+        "id": "8c",
+        "letter": "c",
+        "name": "Muerte de testigos críticos",
+        "name_en": "Death of critical witnesses",
+        "description": "Personas con información significativa sobre UAPs que murieron en circunstancias notables.",
+        "description_en": "People with significant UAP information who died under notable circumstances.",
+        "color": "#cc0000"
+    },
+    {
+        "id": "8d",
+        "letter": "d",
+        "name": "Investigadores/contactees aparte",
+        "name_en": "Researchers/contactees separate",
+        "description": "Tradición paralela al corpus institucional, tratamiento epistemológico distinto.",
+        "description_en": "Parallel tradition to institutional corpus, distinct epistemological treatment.",
+        "color": "#888888"
+    },
+    {
+        "id": "8e",
+        "letter": "e",
+        "name": "Transparencia institucional tiempo real",
+        "name_en": "Real-time institutional transparency",
+        "description": "Casos donde gobiernos/militares acknowledged abiertamente durante o poco después del evento.",
+        "description_en": "Cases where governments/militaries openly acknowledged during or shortly after event.",
+        "color": "#7fdbff"
+    },
+    {
+        "id": "8f",
+        "letter": "f",
+        "name": "Monitoreo de fuentes de riesgo catastrófico",
+        "name_en": "Monitoring catastrophic risk sources",
+        "description": "Concentración UAP sobre sitios nucleares + volcanes activos + submarinos.",
+        "description_en": "UAP concentration over nuclear sites + active volcanoes + submarines.",
+        "color": "#ffdd00"
+    },
+    {
+        "id": "8g",
+        "letter": "g",
+        "name": "Persistencia local sostenida",
+        "name_en": "Sustained local persistence",
+        "description": "UAPs que vuelven al mismo sitio durante años (Hessdalen, Popocatépetl, Kumburgaz).",
+        "description_en": "UAPs returning to the same site over years (Hessdalen, Popocatépetl, Kumburgaz).",
+        "color": "#00cc99"
+    },
+    {
+        "id": "8h",
+        "letter": "h",
+        "name": "Catálogo de morfologías observadas",
+        "name_en": "Observed morphology catalog",
+        "description": "9 categorías morfológicas distintas: discos, orbes, tic-tacs, triángulos, cigarros, etc.",
+        "description_en": "9 distinct morphological categories: discs, orbs, tic-tacs, triangles, cigars, etc.",
+        "color": "#aa88ff"
+    },
+    {
+        "id": "8i",
+        "letter": "i",
+        "name": "Framework de cuatro tiers evidenciales",
+        "name_en": "Four-tier evidential framework",
+        "description": "Tier 1 institucional → Tier 4 contactee.",
+        "description_en": "Tier 1 institutional → Tier 4 contactee.",
+        "color": "#888aff"
+    },
+    {
+        "id": "8j",
+        "letter": "j",
+        "name": "Metodología Bayesiana",
+        "name_en": "Bayesian methodology",
+        "description": "Qué casos mueven probabilidades vs cuáles tienen retorno marginal nulo.",
+        "description_en": "Which cases move probabilities vs marginal-return-zero ones.",
+        "color": "#999999"
+    },
+    {
+        "id": "8k",
+        "letter": "k",
+        "name": "Interferencia EM en vehículos/aeronaves",
+        "name_en": "EM interference in vehicles/aircraft",
+        "description": "66 años de estabilidad. Levelland, Coyne, Tehran, Belgian, DOW Syria.",
+        "description_en": "66 years of stability. Levelland, Coyne, Tehran, Belgian, DOW Syria.",
+        "color": "#ff00aa"
+    },
+    {
+        "id": "8l",
+        "letter": "l",
+        "name": "Triángulos grandes silenciosos",
+        "name_en": "Large silent triangles",
+        "description": "1980s-presente. Hudson Valley, Belgian, Phoenix, Yukon.",
+        "description_en": "1980s-present. Hudson Valley, Belgian, Phoenix, Yukon.",
+        "color": "#5555ff"
+    },
+    {
+        "id": "8m",
+        "letter": "m",
+        "name": "Cover-up institucional documentado",
+        "name_en": "Documented institutional cover-up",
+        "description": "79 años, 1947-2026. Twining→Robertson→Bolender→Wilson-Davis→Bennewitz. Secuencia documental verificable.",
+        "description_en": "79 years, 1947-2026. Twining→Robertson→Bolender→Wilson-Davis→Bennewitz. Verifiable documentary sequence.",
+        "color": "#990000"
+    },
+    {
+        "id": "8n",
+        "letter": "n",
+        "name": "Divulgación de ambigüedad estratégica",
+        "name_en": "Strategic Ambiguity Disclosure",
+        "description": "Liberación de archivos + no-confirmación simultánea + cierre de canales del denunciante. PURSUE 2026.",
+        "description_en": "File release + simultaneous non-confirmation + whistleblower channel closure. PURSUE 2026.",
+        "color": "#ff6600"
+    },
+    {
+        "id": "8o",
+        "letter": "o",
+        "name": "Sincronización cultural-institucional",
+        "name_en": "Cultural-Institutional Synchronization",
+        "description": "Convergencia ±90 días entre divulgación institucional y declaraciones autoridades culturales. Spielberg + PURSUE.",
+        "description_en": "±90-day convergence between institutional disclosure and cultural authority statements. Spielberg + PURSUE.",
+        "color": "#cc88ff"
+    },
+    {
+        "id": "8p",
+        "letter": "p",
+        "name": "Marcadores geométricos masivos (crop circles)",
+        "name_en": "Geometric Mass Markers (crop circles)",
+        "description": "Subpoblación con anomalías físicas peer-reviewed (Levengood/BLT 1994-99). 5% del total.",
+        "description_en": "Subpopulation with peer-reviewed physical anomalies (Levengood/BLT 1994-99). 5% of total.",
+        "color": "#66ffaa"
+    },
+    {
+        "id": "8q",
+        "letter": "q",
+        "name": "Red del ecosistema de divulgación",
+        "name_en": "Disclosure Ecosystem Network",
+        "description": "Infraestructura formal político-mediática contra la ambigüedad estratégica. Luna + Burchett + Coulthart + News Nation + Grusch.",
+        "description_en": "Formal political-media infrastructure against strategic ambiguity. Luna + Burchett + Coulthart + News Nation + Grusch.",
+        "color": "#00aaff"
+    },
+    {
+        "id": "8r",
+        "letter": "r",
+        "name": "Canales de divulgación no autorizada",
+        "name_en": "Unauthorized Disclosure Channels",
+        "description": "Leaks de documentos institucionales auténticos fuera del control estatal. WikiLeaks Cablegate + Podesta + Wilson-Davis.",
+        "description_en": "Leaks of authentic institutional documents outside state control. WikiLeaks Cablegate + Podesta + Wilson-Davis.",
+        "color": "#ff00ff"
+    },
+    {
+        "id": "8s",
+        "letter": "s",
+        "name": "Vigilancia aérea de otro Estado",
+        "name_en": "Foreign-State Aerial Surveillance",
+        "description": "Plataformas de vigilancia operadas por otro Estado sobre territorio nacional sin atribución inmediata. Globo 2023 (atribución oficial DoD) + Mystery Drones 2024 + derribos feb 2023.",
+        "description_en": "Surveillance platforms operated by another state over national territory without immediate attribution. 2023 balloon (official DoD attribution) + 2024 Mystery Drones + Feb 2023 shoot-downs.",
+        "color": "#b08d57"
+    }
 ]
