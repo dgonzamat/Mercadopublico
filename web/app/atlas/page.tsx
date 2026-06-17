@@ -18,13 +18,13 @@ export default function AtlasPage() {
   // server y pasado como prop slim para no bundlear researchers.json al cliente.
   const countryResearchers: Record<
     string,
-    { id: string; name: string; flag: string }[]
+    { id: string; name: string }[]
   > = {};
   for (const c of cases) {
     const list = (countryResearchers[c.country] ??= []);
     for (const r of researchersForCase(c.id)) {
       if (!list.some((x) => x.id === r.id)) {
-        list.push({ id: r.id, name: r.name, flag: r.flag });
+        list.push({ id: r.id, name: r.name });
       }
     }
   }
