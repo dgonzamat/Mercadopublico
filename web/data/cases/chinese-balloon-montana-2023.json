@@ -81,5 +81,14 @@
       "rationale": "El caso muestra que NORAD y AARO no habían detectado/reportado públicamente cuatro sobrevuelos chinos previos. Esto tensiona ligeramente la hipótesis 'programas-clasificados US explican casos UAP previos' porque revela que parte del registro era de origen adversario, no doméstico. Minimal weakens: la falta de detección US no refuta programas US, solo revela que el universo de explicaciones es más amplio.",
       "rationaleEn": "The case shows that NORAD and AARO had not publicly detected/reported four prior Chinese overflights. This slightly tensions the 'U.S. classified programs explain prior UAP cases' hypothesis because it reveals that part of the record was adversary-origin, not domestic. Minimal weakens: U.S. detection failure does not refute U.S. programs, only reveals that the explanation universe is broader."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Chinese_Balloon_route.svg?width=800",
+    "alt": "Mapa de la trayectoria del globo de vigilancia chino de 2023.",
+    "caption": "Trayectoria del globo de vigilancia chino de 2023, desde Alaska y Montana hasta su derribo frente a la costa de Carolina del Sur.",
+    "caption_en": "Path of the 2023 Chinese surveillance balloon, from Alaska and Montana to its shootdown off the South Carolina coast.",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "href": "https://commons.wikimedia.org/wiki/File:2023_Chinese_Balloon_route.svg"
+  }
 }
