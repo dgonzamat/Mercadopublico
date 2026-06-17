@@ -1,0 +1,69 @@
+{
+  "id": "uap-science-advisory-council-2026",
+  "num": 227,
+  "name": "UAP Science Advisory Council · Loeb (12 jun 2026)",
+  "name_en": "UAP Science Advisory Council · Loeb (Jun 12, 2026)",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8977,
+    "lng": -77.0365,
+    "place": "Washington D.C. (Casa Blanca / AARO)"
+  },
+  "tier": "A",
+  "epistemicStatus": "developing",
+  "probability": 80,
+  "summary": "El 12 de junio de 2026, el astrofísico de Harvard Avi Loeb anunció que la Casa Blanca, AARO, la ODNI y el FBI le pidieron formar y presidir un Consejo Asesor Científico sobre UAP. Reúne un equipo de datos (Cloete, Sarmiento, Szydagis, Nandal, Eldadi) y un panel más amplio con escépticos y defensores, con el mandato de aplicar método científico priorizando datos nuevos de alta calidad sobre material viejo no verificable.",
+  "summary_en": "On June 12, 2026, Harvard astrophysicist Avi Loeb announced that the White House, AARO, ODNI and the FBI asked him to assemble and chair a UAP Science Advisory Council. It brings together a data team (Cloete, Sarmiento, Szydagis, Nandal, Eldadi) and a broader panel spanning skeptics and advocates, mandated to apply scientific method by prioritizing new high-quality data over old, unverifiable material.",
+  "patterns": [
+    "8q",
+    "8n"
+  ],
+  "category": "document",
+  "whatHappened": "El 12 de junio de 2026 —el mismo día de la tercera tanda de releases del portal PURSUE— el astrofísico de Harvard Avi Loeb anunció que la Casa Blanca, la All-Domain Anomaly Resolution Office (AARO), la Oficina del Director de Inteligencia Nacional (ODNI) y el FBI, junto con otros miembros de la comunidad de inteligencia, le pidieron formar y presidir un nuevo Consejo Asesor Científico sobre UAP (UAP Science Advisory Council). Loeb —que dirige el Galileo Project y es miembro del consejo asesor de la Disclosure Foundation— lo presentó en su blog y en los canales de la fundación como un órgano para aportar rigor científico al estudio del fenómeno.\n\nEl consejo se organiza en torno a un equipo central de datos: el Dr. Richard Cloete y la Dra. Regina Sarmiento (análisis y gestión de datos con IA), el Prof. Matthew Szydagis (instrumentación y recolección de datos), el Dr. Devesh Nandal (análisis numérico y astrofísica) y el Dr. Omer Eldadi (gestión de datos, IA y psicología humana). A su alrededor, los rosters reportados por la prensa incluyen un panel más amplio con figuras de perfiles deliberadamente opuestos: el inmunólogo de Stanford Garry Nolan y el contralmirante (r) Tim Gallaudet —ambos ya asociados a la investigación del fenómeno— junto al escéptico Michael Shermer, la filósofa de la ciencia Carol Cleland y otros (Ben Lamm, Peter Skafish, Ross Howard). Las listas exactas varían entre coberturas, pero todas coinciden en esa mezcla de escépticos y defensores, presentada como una señal de neutralidad metodológica.\n\nEl mandato declarado es ayudar a las agencias a estudiar la naturaleza de los UAP con método científico, con énfasis en recolectar y analizar datos nuevos de alta calidad en lugar de relitigar material antiguo que no puede verificarse de forma independiente. Sin embargo, la cobertura de mediados de junio señaló una tensión de origen: los científicos del consejo no estarían autorizados a ver los archivos UAP clasificados que custodian las mismas agencias que lo crearon. El consejo nace, así, como una capa de credibilidad científica sobre un cuerpo de evidencia al que su propio panel no tiene acceso pleno.",
+  "whatHappened_en": "On June 12, 2026 —the same day as the third batch of releases from the PURSUE portal— Harvard astrophysicist Avi Loeb announced that the White House, the All-Domain Anomaly Resolution Office (AARO), the Office of the Director of National Intelligence (ODNI) and the FBI, along with other members of the Intelligence Community, had asked him to assemble and chair a new UAP Science Advisory Council. Loeb —who leads the Galileo Project and sits on the Disclosure Foundation's advisory board— presented it on his blog and through the foundation's channels as a body to bring scientific rigor to the study of the phenomenon.\n\nThe council is organized around a core data team: Dr. Richard Cloete and Dr. Regina Sarmiento (data analysis and management with AI), Prof. Matthew Szydagis (instrumentation and data collection), Dr. Devesh Nandal (numerical analysis and astrophysics) and Dr. Omer Eldadi (data management, AI and human psychology). Around them, the rosters reported in the press include a broader panel of deliberately opposite profiles: Stanford immunologist Garry Nolan and retired Rear Admiral Tim Gallaudet —both already associated with phenomenon research— alongside skeptic Michael Shermer, philosopher of science Carol Cleland and others (Ben Lamm, Peter Skafish, Ross Howard). Exact lists vary across coverage, but all agree on that mix of skeptics and advocates, presented as a signal of methodological neutrality.\n\nThe stated mandate is to help agencies study the nature of UAP with scientific method, emphasizing the collection and analysis of new, high-quality data rather than relitigating old material that cannot be independently verified. However, mid-June coverage flagged a tension at its very origin: the council's scientists reportedly are not cleared to see the classified UAP files held by the same agencies that created it. The council is thus born as a layer of scientific credibility over a body of evidence to which its own panel lacks full access.",
+  "whyMatters": "Es la primera vez que el gobierno de EE.UU. inserta formalmente un consejo asesor científico —presidido por un defensor público de la búsqueda científica del fenómeno— dentro de la gobernanza UAP, junto a AARO, ODNI y el FBI. Su rasgo más notable es la amplitud ideológica: reunir en el mismo panel a escépticos declarados (Shermer) y a defensores (Nolan, Gallaudet, el propio Loeb) es un gesto de neutralidad metodológica poco común en el campo. Entra al corpus como pieza institucional (categoría document), no como observación UAP: no aporta evidencia sobre la naturaleza del fenómeno, sino que documenta su institucionalización científica, y por eso no lleva contribución bayesiana a ninguna hipótesis. Lo que lo hace relevante es su lectura crítica dentro del patrón de ambigüedad estratégica: crear un órgano científico de cara al público mientras se le retiene el acceso a los archivos clasificados reproduce el molde de PURSUE —un canal de credibilidad sin la pieza de evidencia decisiva—. Es, a la vez, el reconocimiento institucional más fuerte de que el fenómeno merece ciencia rigurosa y un caso de estudio sobre los límites que el aparato de seguridad le impone a esa ciencia.",
+  "whyMatters_en": "It is the first time the U.S. government has formally embedded a scientific advisory council —chaired by a public advocate of the scientific search for the phenomenon— within UAP governance, alongside AARO, ODNI and the FBI. Its most notable trait is its ideological breadth: bringing declared skeptics (Shermer) and advocates (Nolan, Gallaudet, Loeb himself) onto the same panel is a gesture of methodological neutrality rarely seen in the field. It enters the corpus as an institutional piece (document category), not as a UAP observation: it brings no evidence about the nature of the phenomenon but documents its scientific institutionalization, which is why it carries no Bayesian contribution to any hypothesis. What makes it relevant is its critical reading within the strategic-ambiguity pattern: creating a public-facing science body while withholding access to the classified files reproduces the PURSUE mold —a credibility channel without the decisive piece of evidence—. It is at once the strongest institutional acknowledgment that the phenomenon merits rigorous science and a case study in the limits the security apparatus imposes on that science.",
+  "evidence": [
+    "Anuncio del 12 de junio de 2026 por Avi Loeb (blog en Medium y canales de la Disclosure Foundation), coincidente con la tercera tanda de releases del portal PURSUE",
+    "Órganos solicitantes: Casa Blanca, AARO, ODNI, FBI y otros miembros de la comunidad de inteligencia",
+    "Equipo central de datos: Richard Cloete y Regina Sarmiento (datos/IA), Matthew Szydagis (instrumentación), Devesh Nandal (análisis numérico/astrofísica), Omer Eldadi (datos/IA/psicología)",
+    "Panel ampliado reportado por la prensa: Garry Nolan, Tim Gallaudet, Michael Shermer, Carol Cleland, Ben Lamm, Peter Skafish, Ross Howard — composición con escépticos y defensores",
+    "Mandato declarado: método científico con énfasis en datos nuevos de alta calidad por sobre material antiguo no verificable",
+    "Tensión reportada (mediados jun 2026): los científicos del consejo no tendrían acceso a los archivos UAP clasificados de las agencias que lo crearon"
+  ],
+  "evidence_en": [
+    "June 12, 2026 announcement by Avi Loeb (Medium blog and Disclosure Foundation channels), coinciding with the third batch of PURSUE portal releases",
+    "Requesting bodies: White House, AARO, ODNI, FBI and other members of the Intelligence Community",
+    "Core data team: Richard Cloete and Regina Sarmiento (data/AI), Matthew Szydagis (instrumentation), Devesh Nandal (numerical analysis/astrophysics), Omer Eldadi (data/AI/psychology)",
+    "Broader panel reported in the press: Garry Nolan, Tim Gallaudet, Michael Shermer, Carol Cleland, Ben Lamm, Peter Skafish, Ross Howard — composition spanning skeptics and advocates",
+    "Stated mandate: scientific method emphasizing new, high-quality data over old, unverifiable material",
+    "Reported tension (mid-June 2026): the council's scientists reportedly lack access to the classified UAP files of the agencies that created it"
+  ],
+  "sources": [
+    {
+      "name": "Disclosure Foundation — 'Advisory Board Member Avi Loeb to Lead New UAP Science Advisory Council'",
+      "url": "https://disclosure.org/news/uap-science-advisory-council"
+    },
+    {
+      "name": "Avi Loeb (Medium, jun 2026) — 'A UAP Science Advisory Council to the U.S. Government: Keeping Our Eyes on the Orbs, Not the Audience!'",
+      "url": "https://avi-loeb.medium.com/a-uap-science-advisory-council-to-the-u-s-f7262e57b0df"
+    },
+    {
+      "name": "Skeptic — 'Michael Shermer Named to White House UAP Science Advisory Council'",
+      "url": "https://www.skeptic.com/article/michael-shermer-named-to-white-house-uap-science-advisory-council/",
+      "note": "Confirma la inclusión de un escéptico declarado en el panel."
+    },
+    {
+      "name": "UFO Timeline — 'White House Tasks Dr. Avi Loeb To Create A UAP Science Advisory Council'",
+      "url": "https://ufotimeline.com/2026/06/white-house-tasks-dr-avi-loeb-to-create-a-uap-science-advisory-council/"
+    },
+    {
+      "name": "Above the Norm News (16 jun 2026) — 'A New Board Now Controls the UFO Files. Its Own Scientists Aren’t Allowed to See Them'",
+      "url": "https://www.abovethenormnews.com/2026/06/16/uap-governance-board/",
+      "note": "Fuente de la tensión: el panel científico sin acceso a los archivos clasificados."
+    }
+  ]
+}
