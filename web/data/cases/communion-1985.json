@@ -10,7 +10,8 @@
   "location": {
     "lat": 41.62,
     "lng": -74.3,
-    "place": "Cabaña en el norte del estado de Nueva York"
+    "place": "Cabaña en el norte del estado de Nueva York",
+    "place_en": "Cabin in upstate New York"
   },
   "tier": "B",
   "probability": 20,

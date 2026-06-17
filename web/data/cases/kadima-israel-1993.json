@@ -10,7 +10,8 @@
   "location": {
     "lat": 32.2756,
     "lng": 34.9189,
-    "place": "Moshav Kadima, cerca de Netanya"
+    "place": "Moshav Kadima, cerca de Netanya",
+    "place_en": "Moshav Kadima, near Netanya"
   },
   "tier": "B",
   "epistemicStatus": "documented",

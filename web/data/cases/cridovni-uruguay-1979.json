@@ -10,7 +10,8 @@
   "location": {
     "lat": -34.83,
     "lng": -56.02,
-    "place": "Montevideo · Comando General de la Fuerza Aérea"
+    "place": "Montevideo · Comando General de la Fuerza Aérea",
+    "place_en": "Montevideo · Air Force General Command"
   },
   "tier": "A",
   "probability": 65,

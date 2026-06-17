@@ -10,13 +10,16 @@
   "location": {
     "lat": 36.93,
     "lng": -87.45,
-    "place": "Kelly, cerca de Hopkinsville, Kentucky"
+    "place": "Kelly, cerca de Hopkinsville, Kentucky",
+    "place_en": "Kelly, near Hopkinsville, Kentucky"
   },
   "tier": "B",
   "probability": 20,
   "summary": "La noche del 21 de agosto de 1955, las familias Sutton y Taylor —once personas— dijeron haber sido asediadas durante horas en una granja cerca de Hopkinsville, Kentucky, por varias criaturas pequeñas de cabeza grande y ojos brillantes que se acercaban a la casa. Dispararon contra ellas sin efecto aparente y huyeron a la comisaría aterrorizados. La policía y la patrulla estatal investigaron: no hallaron rastros ni marcas de aterrizaje, pero sí agujeros de bala y casquillos. Es el encuentro multitestigo más citado de su época y el origen de la frase 'hombrecitos verdes'.",
   "summary_en": "On the night of 21 August 1955, the Sutton and Taylor families —eleven people— said they were besieged for hours at a farmhouse near Hopkinsville, Kentucky, by several small creatures with large heads and bright eyes that approached the house. They fired at them with no apparent effect and fled to the police station in terror. Police and state troopers investigated: they found no traces or landing marks, but did find bullet holes and shell casings. It is the most cited multi-witness encounter of its era and the origin of the phrase 'little green men'.",
-  "patterns": ["8g"],
+  "patterns": [
+    "8g"
+  ],
   "epistemicStatus": "documented",
   "category": "contactee",
   "whatHappened": "Hacia las siete de la tarde del 21 de agosto de 1955, en una granja del caserío de Kelly, cerca de Hopkinsville (Kentucky), Billy Ray Taylor salió al patio a buscar agua del pozo y —según contó— vio una luz brillante cruzar el cielo y posarse en el campo. Poco después, las familias Sutton y Taylor, unas once personas reunidas en la casa, dijeron haber visto acercarse figuras pequeñas, de aproximadamente un metro, con cabezas grandes, ojos luminosos, brazos largos y un modo de moverse casi flotante.\n\nLo que siguió, según el relato sostenido por todos los presentes, fue un asedio de varias horas. Las criaturas aparecían en las ventanas y se aproximaban a la puerta; los hombres de la casa les dispararon con escopeta y rifle del calibre 22 a corta distancia, y describieron que los proyectiles parecían rebotar o no surtir efecto, acompañados de un sonido metálico. Las figuras se retiraban y volvían. Cerca de las once de la noche, las dos familias huyeron en automóvil hasta la comisaría de Hopkinsville y entraron, aterrorizadas, a denunciar lo ocurrido.\n\nLa respuesta institucional fue inmediata y es lo que ancla el caso: la policía de Hopkinsville y la patrulla estatal —más de una docena de agentes— acudieron a la granja esa misma noche. No encontraron rastros de 'hombrecitos', ni marcas de aterrizaje, ni nada anómalo en el terreno; sí constataron los agujeros de bala en la puerta mosquitera y los casquillos en el suelo, coherentes con que los testigos efectivamente dispararon contra 'algo'. Los agentes describieron a las familias como personas genuinamente asustadas, no ebrias ni en busca de notoriedad.\n\nEl caso pasó al folclor con una imprecisión célebre: la prensa convirtió a los 'hombrecitos grises' del relato en 'hombrecitos verdes', acuñando la expresión que desde entonces designa a los extraterrestres. La explicación escéptica más citada —búhos cornudos grandes, territoriales y de ojos reflectantes, magnificados por el miedo y la oscuridad— nunca fue confirmada ni refutada de forma concluyente.",

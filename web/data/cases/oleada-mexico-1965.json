@@ -10,7 +10,8 @@
   "location": {
     "lat": 19.427,
     "lng": -99.168,
-    "place": "Ciudad de México (Ángel de la Independencia) · oleada nacional"
+    "place": "Ciudad de México (Ángel de la Independencia) · oleada nacional",
+    "place_en": "Mexico City (Ángel de la Independencia) · nationwide wave"
   },
   "tier": "B",
   "probability": 15,

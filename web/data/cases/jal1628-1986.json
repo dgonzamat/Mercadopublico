@@ -9,7 +9,8 @@
   "location": {
     "lat": 64.5,
     "lng": -150,
-    "place": "Sobre Alaska"
+    "place": "Sobre Alaska",
+    "place_en": "Over Alaska"
   },
   "tier": "S",
   "probability": 85,

@@ -11,7 +11,8 @@
   "location": {
     "lat": 55.7558,
     "lng": 37.6173,
-    "place": "Moscú · Academia de Ciencias de la URSS + Ministerio de Defensa"
+    "place": "Moscú · Academia de Ciencias de la URSS + Ministerio de Defensa",
+    "place_en": "Moscow · USSR Academy of Sciences + Ministry of Defense"
   },
   "tier": "S",
   "probability": 90,

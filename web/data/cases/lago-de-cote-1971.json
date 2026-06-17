@@ -10,7 +10,8 @@
   "location": {
     "lat": 10.59,
     "lng": -84.91,
-    "place": "Lago de Cote · Arenal-Tilarán"
+    "place": "Lago de Cote · Arenal-Tilarán",
+    "place_en": "Lake Cote · Arenal-Tilarán"
   },
   "tier": "S",
   "probability": 78,

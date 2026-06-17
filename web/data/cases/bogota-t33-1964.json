@@ -8,9 +8,10 @@
   "country_name": "Colombia",
   "flag": "🇨🇴",
   "location": {
-    "lat": 4.70,
+    "lat": 4.7,
     "lng": -74.15,
-    "place": "Aeropuerto El Dorado, Bogotá"
+    "place": "Aeropuerto El Dorado, Bogotá",
+    "place_en": "El Dorado Airport, Bogotá"
   },
   "tier": "B",
   "probability": 28,

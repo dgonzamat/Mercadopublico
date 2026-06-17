@@ -10,7 +10,8 @@
   "location": {
     "lat": -8.42,
     "lng": -74.53,
-    "place": "Caserío San Juan, cerca de Pucallpa (Ucayali)"
+    "place": "Caserío San Juan, cerca de Pucallpa (Ucayali)",
+    "place_en": "San Juan hamlet, near Pucallpa (Ucayali)"
   },
   "tier": "B",
   "probability": 28,

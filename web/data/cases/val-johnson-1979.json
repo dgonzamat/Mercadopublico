@@ -10,7 +10,8 @@
   "location": {
     "lat": 48.55,
     "lng": -96.77,
-    "place": "Carretera estatal 220, condado de Marshall, Minnesota"
+    "place": "Carretera estatal 220, condado de Marshall, Minnesota",
+    "place_en": "State Highway 220, Marshall County, Minnesota"
   },
   "tier": "A",
   "epistemicStatus": "documented",

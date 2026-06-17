@@ -10,7 +10,8 @@
   "location": {
     "lat": 14.8,
     "lng": 42,
-    "place": "Mar Rojo, frente a costa occidental de Yemen"
+    "place": "Mar Rojo, frente a costa occidental de Yemen",
+    "place_en": "Red Sea, off the western coast of Yemen"
   },
   "tier": "A",
   "epistemicStatus": "developing",

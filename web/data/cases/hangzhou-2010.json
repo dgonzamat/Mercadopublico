@@ -10,7 +10,8 @@
   "location": {
     "lat": 30.23,
     "lng": 120.43,
-    "place": "Aeropuerto Internacional Xiaoshan, Hangzhou"
+    "place": "Aeropuerto Internacional Xiaoshan, Hangzhou",
+    "place_en": "Xiaoshan International Airport, Hangzhou"
   },
   "tier": "B",
   "probability": 24,

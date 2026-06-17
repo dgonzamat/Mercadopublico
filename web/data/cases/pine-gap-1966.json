@@ -10,7 +10,8 @@
   "location": {
     "lat": -23.799,
     "lng": 133.737,
-    "place": "Pine Gap, cerca de Alice Springs, Territorio del Norte"
+    "place": "Pine Gap, cerca de Alice Springs, Territorio del Norte",
+    "place_en": "Pine Gap, near Alice Springs, Northern Territory"
   },
   "tier": "S",
   "probability": 70,

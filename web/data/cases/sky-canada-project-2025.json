@@ -10,7 +10,8 @@
   "location": {
     "lat": 45.4215,
     "lng": -75.6972,
-    "place": "Oficina del Asesor Científico Jefe de Canadá (OCSA), Ottawa"
+    "place": "Oficina del Asesor Científico Jefe de Canadá (OCSA), Ottawa",
+    "place_en": "Office of Canada's Chief Science Advisor (OCSA), Ottawa"
   },
   "tier": "A",
   "epistemicStatus": "developing",

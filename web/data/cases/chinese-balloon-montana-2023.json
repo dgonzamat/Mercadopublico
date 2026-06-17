@@ -10,7 +10,8 @@
   "location": {
     "lat": 32.78,
     "lng": -79.35,
-    "place": "Costa de Carolina del Sur (derribo) / sobrevuelo Montana–Carolina"
+    "place": "Costa de Carolina del Sur (derribo) / sobrevuelo Montana–Carolina",
+    "place_en": "South Carolina coast (shootdown) / Montana–Carolina overflight"
   },
   "tier": "S",
   "probability": 95,

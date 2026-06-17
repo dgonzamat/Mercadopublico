@@ -10,7 +10,8 @@
   "location": {
     "lat": -23.18,
     "lng": -45.88,
-    "place": "Espacio aéreo de São Paulo / Río / Goiás"
+    "place": "Espacio aéreo de São Paulo / Río / Goiás",
+    "place_en": "Airspace of São Paulo / Rio / Goiás"
   },
   "tier": "S",
   "probability": 70,

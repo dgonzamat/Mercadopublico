@@ -10,7 +10,8 @@
   "location": {
     "lat": 46.95,
     "lng": 7.45,
-    "place": "Suiza (Servicio de Inteligencia de la Fuerza Aérea)"
+    "place": "Suiza (Servicio de Inteligencia de la Fuerza Aérea)",
+    "place_en": "Switzerland (Air Force Intelligence Service)"
   },
   "tier": "B",
   "epistemicStatus": "documented",

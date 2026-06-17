@@ -10,7 +10,8 @@
   "location": {
     "lat": 39.15,
     "lng": 127.43,
-    "place": "Wonsan / Sunchon, Corea del Norte (misión USAF)"
+    "place": "Wonsan / Sunchon, Corea del Norte (misión USAF)",
+    "place_en": "Wonsan / Sunchon, North Korea (USAF mission)"
   },
   "tier": "A",
   "probability": 60,

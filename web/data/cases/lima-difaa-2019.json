@@ -10,7 +10,8 @@
   "location": {
     "lat": -12.02,
     "lng": -77.12,
-    "place": "Frente al Aeropuerto Jorge Chávez, Lima (sobre el mar)"
+    "place": "Frente al Aeropuerto Jorge Chávez, Lima (sobre el mar)",
+    "place_en": "Off Jorge Chávez Airport, Lima (over the sea)"
   },
   "tier": "A",
   "probability": 55,

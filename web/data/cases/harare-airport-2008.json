@@ -10,7 +10,8 @@
   "location": {
     "lat": -17.9319,
     "lng": 31.0928,
-    "place": "Aeropuerto Internacional de Harare (hoy Robert Gabriel Mugabe Intl), Harare"
+    "place": "Aeropuerto Internacional de Harare (hoy Robert Gabriel Mugabe Intl), Harare",
+    "place_en": "Harare International Airport (now Robert Gabriel Mugabe Intl), Harare"
   },
   "tier": "A",
   "epistemicStatus": "documented",

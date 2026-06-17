@@ -10,7 +10,8 @@
   "location": {
     "lat": 48.82,
     "lng": 3.08,
-    "place": "Cerca de Coulommiers, región de París"
+    "place": "Cerca de Coulommiers, región de París",
+    "place_en": "Near Coulommiers, Paris region"
   },
   "tier": "A",
   "epistemicStatus": "documented",

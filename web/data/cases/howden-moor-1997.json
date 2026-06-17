@@ -10,7 +10,8 @@
   "location": {
     "lat": 53.43,
     "lng": -1.75,
-    "place": "Howden Moors, Peak District, frontera South Yorkshire/Derbyshire"
+    "place": "Howden Moors, Peak District, frontera South Yorkshire/Derbyshire",
+    "place_en": "Howden Moors, Peak District, South Yorkshire/Derbyshire border"
   },
   "tier": "B",
   "epistemicStatus": "documented",

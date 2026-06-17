@@ -10,7 +10,8 @@
   "location": {
     "lat": -16.61,
     "lng": -71.87,
-    "place": "Base Aérea de La Joya, Arequipa"
+    "place": "Base Aérea de La Joya, Arequipa",
+    "place_en": "La Joya Air Base, Arequipa"
   },
   "tier": "A",
   "epistemicStatus": "documented",

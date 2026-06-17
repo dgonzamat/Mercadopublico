@@ -10,7 +10,8 @@
   "location": {
     "lat": 60.17,
     "lng": 24.94,
-    "place": "Finlandia (reportes nacionales; investigación de la Defensa)"
+    "place": "Finlandia (reportes nacionales; investigación de la Defensa)",
+    "place_en": "Finland (nationwide reports; Defense investigation)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

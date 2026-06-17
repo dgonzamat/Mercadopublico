@@ -9,8 +9,9 @@
   "flag": "🇺🇸",
   "location": {
     "lat": 39.2683,
-    "lng": -97.7700,
-    "place": "Granja de la familia Johnson, Delphos, Kansas"
+    "lng": -97.77,
+    "place": "Granja de la familia Johnson, Delphos, Kansas",
+    "place_en": "Johnson family farm, Delphos, Kansas"
   },
   "tier": "A",
   "epistemicStatus": "documented",

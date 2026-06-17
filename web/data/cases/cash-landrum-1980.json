@@ -9,7 +9,8 @@
   "location": {
     "lat": 30.1,
     "lng": -94.7,
-    "place": "Huffman, Texas (cerca Houston)"
+    "place": "Huffman, Texas (cerca Houston)",
+    "place_en": "Huffman, Texas (near Houston)"
   },
   "tier": "S",
   "probability": 70,

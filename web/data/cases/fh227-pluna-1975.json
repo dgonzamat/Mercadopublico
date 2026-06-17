@@ -10,7 +10,8 @@
   "location": {
     "lat": -30.4,
     "lng": -56.5,
-    "place": "Norte de Uruguay (ruta Asunción–Montevideo, hacia Artigas)"
+    "place": "Norte de Uruguay (ruta Asunción–Montevideo, hacia Artigas)",
+    "place_en": "Northern Uruguay (Asunción–Montevideo route, toward Artigas)"
   },
   "tier": "A",
   "probability": 55,
