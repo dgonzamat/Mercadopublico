@@ -1,112 +1,112 @@
 [
-  {
-    "id": "eth",
-    "name": "ETH clásica",
-    "name_en": "Classical ETH",
-    "author": "Loeb (Galileo Project), Mack (parcial)",
-    "origin": "Tecnológico/biológico — otras civilizaciones físicas",
-    "verdict_moral": "neutral",
-    "one_sentence_es": "Son alienígenas de otros planetas con tecnología avanzada.",
-    "one_sentence_en": "They are aliens from other planets with advanced technology."
-  },
-  {
-    "id": "control-system",
-    "name": "Sistema de control",
-    "name_en": "Control System",
-    "author": "Jacques Vallée (1975)",
-    "origin": "Cibernético/regulador — sistema termostático auto-referente",
-    "verdict_moral": "neutral",
-    "one_sentence_es": "Es un sistema que regula nuestra creencia colectiva, no objetos físicos.",
-    "one_sentence_en": "It's a system that regulates our collective belief, not physical objects."
-  },
-  {
-    "id": "predatory-entities",
-    "name": "Entidades depredadoras",
-    "name_en": "Predatory Entities",
-    "author": "Salvador Freixedo (1984), John Keel",
-    "origin": "Adversarial/parasitario — entidades no-corpóreas predadoras",
-    "verdict_moral": "hostile",
-    "one_sentence_es": "Son entidades hostiles que se alimentan de nuestra energía emocional y se disfrazan de dioses.",
-    "one_sentence_en": "They are hostile entities that feed on our emotional energy and disguise themselves as gods."
-  },
-  {
-    "id": "psychospiritual",
-    "name": "Contacto psicoespiritual",
-    "name_en": "Psychospiritual Contact",
-    "author": "John E. Mack (Harvard), Whitley Strieber",
-    "origin": "Transformacional — inteligencia consciente 'Other'",
-    "verdict_moral": "positive",
-    "one_sentence_es": "Es contacto transformacional con una inteligencia 'Other' que excede nuestras categorías.",
-    "one_sentence_en": "It is transformational contact with an 'Other' intelligence beyond our categories."
-  },
-  {
-    "id": "multidimensional",
-    "name": "Multidimensional",
-    "name_en": "Multidimensional",
-    "author": "Hal Puthoff, Eric Davis, AAWSAP",
-    "origin": "Física exótica — otras dimensiones/branes",
-    "verdict_moral": "variable",
-    "one_sentence_es": "Vienen de otras dimensiones físicas, no de otros planetas.",
-    "one_sentence_en": "They come from other physical dimensions, not other planets."
-  },
-  {
-    "id": "breakaway-civilization",
-    "name": "Civilización paralela (breakaway)",
-    "name_en": "Breakaway Civilization",
-    "author": "Jorjani, Lazar (claims)",
-    "origin": "Civilización humana paralela secreta",
-    "verdict_moral": "variable",
-    "one_sentence_es": "Es tecnología de una civilización humana secreta paralela.",
-    "one_sentence_en": "It's technology from a secret parallel human civilization."
-  },
-  {
-    "id": "time-traveler",
-    "name": "Viajeros del tiempo",
-    "name_en": "Time Traveler",
-    "author": "Masters, Jorjani (taxonomy)",
-    "origin": "Descendientes humanos del futuro",
-    "verdict_moral": "variable",
-    "one_sentence_es": "Son descendientes humanos del futuro investigando su pasado.",
-    "one_sentence_en": "They are human descendants from the future investigating their past."
-  },
-  {
-    "id": "crypto-terrestrial",
-    "name": "Criptoterrestre / atlante",
-    "name_en": "Crypto-Terrestrial / Atlantean",
-    "author": "Tim Lomas (2024), Jorjani",
-    "origin": "Civilización terrestre prehistórica sobreviviente",
-    "verdict_moral": "variable",
-    "one_sentence_es": "Son una civilización terrestre prehistórica que sobrevive oculta.",
-    "one_sentence_en": "They are a prehistoric terrestrial civilization that survives hidden."
-  },
-  {
-    "id": "simulation-avatar",
-    "name": "Avatar de simulación",
-    "name_en": "Simulation Avatar",
-    "author": "Jorjani (taxonomy)",
-    "origin": "Computacional — interfaces de realidad simulada",
-    "verdict_moral": "variable",
-    "one_sentence_es": "UAPs son interfaces de una realidad simulada.",
-    "one_sentence_en": "UAPs are interfaces of a simulated reality."
-  },
-  {
-    "id": "political-subjugation",
-    "name": "Marco de subyugación política",
-    "name_en": "Political Subjugation Frame",
-    "author": "Jason Reza Jorjani (2021)",
-    "origin": "Operación de control — estados terrestres + threat externa fabricada",
-    "verdict_moral": "hostile",
-    "one_sentence_es": "El disclosure controlado prepara gobierno global totalitario justificado por amenaza exterior.",
-    "one_sentence_en": "Controlled disclosure prepares totalitarian global governance justified by external threat."
-  },
-  {
-    "id": "plurality",
-    "name": "Pluralidad (posición del corpus)",
-    "name_en": "Plurality (corpus position)",
-    "author": "Corpus",
-    "origin": "Heterogéneo — múltiples sources distintas",
-    "verdict_moral": "variable",
-    "one_sentence_es": "No es UN solo fenómeno — son varios fenómenos distintos mezclados.",
-    "one_sentence_en": "It's not ONE phenomenon — it's several distinct phenomena mixed together."
-  }
+    {
+        "id": "eth",
+        "name": "Hipótesis extraterrestre clásica (ETH)",
+        "name_en": "Classical Extraterrestrial Hypothesis (ETH)",
+        "author": "Loeb (Galileo Project), Mack (parcial)",
+        "origin": "Tecnológico/biológico — otras civilizaciones físicas",
+        "verdict_moral": "neutral",
+        "one_sentence_es": "Son alienígenas de otros planetas con tecnología avanzada.",
+        "one_sentence_en": "They are aliens from other planets with advanced technology."
+    },
+    {
+        "id": "control-system",
+        "name": "Sistema de control",
+        "name_en": "Control System",
+        "author": "Jacques Vallée (1975)",
+        "origin": "Cibernético/regulador — sistema termostático auto-referente",
+        "verdict_moral": "neutral",
+        "one_sentence_es": "Es un sistema que regula nuestra creencia colectiva, no objetos físicos.",
+        "one_sentence_en": "It's a system that regulates our collective belief, not physical objects."
+    },
+    {
+        "id": "predatory-entities",
+        "name": "Entidades depredadoras",
+        "name_en": "Predatory Entities",
+        "author": "Salvador Freixedo (1984), John Keel",
+        "origin": "Adversarial/parasitario — entidades no-corpóreas predadoras",
+        "verdict_moral": "hostile",
+        "one_sentence_es": "Son entidades hostiles que se alimentan de nuestra energía emocional y se disfrazan de dioses.",
+        "one_sentence_en": "They are hostile entities that feed on our emotional energy and disguise themselves as gods."
+    },
+    {
+        "id": "psychospiritual",
+        "name": "Contacto psicoespiritual",
+        "name_en": "Psychospiritual Contact",
+        "author": "John E. Mack (Harvard), Whitley Strieber",
+        "origin": "Transformacional — inteligencia consciente 'Other'",
+        "verdict_moral": "positive",
+        "one_sentence_es": "Es contacto transformacional con una inteligencia 'Other' que excede nuestras categorías.",
+        "one_sentence_en": "It is transformational contact with an 'Other' intelligence beyond our categories."
+    },
+    {
+        "id": "multidimensional",
+        "name": "Multidimensional",
+        "name_en": "Multidimensional",
+        "author": "Hal Puthoff, Eric Davis, AAWSAP",
+        "origin": "Física exótica — otras dimensiones/branes",
+        "verdict_moral": "variable",
+        "one_sentence_es": "Vienen de otras dimensiones físicas, no de otros planetas.",
+        "one_sentence_en": "They come from other physical dimensions, not other planets."
+    },
+    {
+        "id": "breakaway-civilization",
+        "name": "Civilización paralela (breakaway)",
+        "name_en": "Breakaway Civilization",
+        "author": "Jorjani, Lazar (claims)",
+        "origin": "Civilización humana paralela secreta",
+        "verdict_moral": "variable",
+        "one_sentence_es": "Es tecnología de una civilización humana secreta paralela.",
+        "one_sentence_en": "It's technology from a secret parallel human civilization."
+    },
+    {
+        "id": "time-traveler",
+        "name": "Viajeros del tiempo",
+        "name_en": "Time Traveler",
+        "author": "Masters, Jorjani (taxonomy)",
+        "origin": "Descendientes humanos del futuro",
+        "verdict_moral": "variable",
+        "one_sentence_es": "Son descendientes humanos del futuro investigando su pasado.",
+        "one_sentence_en": "They are human descendants from the future investigating their past."
+    },
+    {
+        "id": "crypto-terrestrial",
+        "name": "Criptoterrestre / atlante",
+        "name_en": "Crypto-Terrestrial / Atlantean",
+        "author": "Tim Lomas (2024), Jorjani",
+        "origin": "Civilización terrestre prehistórica sobreviviente",
+        "verdict_moral": "variable",
+        "one_sentence_es": "Son una civilización terrestre prehistórica que sobrevive oculta.",
+        "one_sentence_en": "They are a prehistoric terrestrial civilization that survives hidden."
+    },
+    {
+        "id": "simulation-avatar",
+        "name": "Avatar de simulación",
+        "name_en": "Simulation Avatar",
+        "author": "Jorjani (taxonomy)",
+        "origin": "Computacional — interfaces de realidad simulada",
+        "verdict_moral": "variable",
+        "one_sentence_es": "UAPs son interfaces de una realidad simulada.",
+        "one_sentence_en": "UAPs are interfaces of a simulated reality."
+    },
+    {
+        "id": "political-subjugation",
+        "name": "Marco de subyugación política",
+        "name_en": "Political Subjugation Frame",
+        "author": "Jason Reza Jorjani (2021)",
+        "origin": "Operación de control — estados terrestres + threat externa fabricada",
+        "verdict_moral": "hostile",
+        "one_sentence_es": "El disclosure controlado prepara gobierno global totalitario justificado por amenaza exterior.",
+        "one_sentence_en": "Controlled disclosure prepares totalitarian global governance justified by external threat."
+    },
+    {
+        "id": "plurality",
+        "name": "Pluralidad (posición del corpus)",
+        "name_en": "Plurality (corpus position)",
+        "author": "Corpus",
+        "origin": "Heterogéneo — múltiples sources distintas",
+        "verdict_moral": "variable",
+        "one_sentence_es": "No es UN solo fenómeno — son varios fenómenos distintos mezclados.",
+        "one_sentence_en": "It's not ONE phenomenon — it's several distinct phenomena mixed together."
+    }
 ]
