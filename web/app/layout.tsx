@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
 import { ShareButton } from "@/components/ShareButton";
@@ -55,6 +55,10 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#c41e3a",
 };
 
 export default function RootLayout({
