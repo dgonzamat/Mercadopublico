@@ -66,5 +66,14 @@
       "rationale": "Apagón eléctrico sincronizado y ascenso vertical instantáneo dentro del rango física-exótica",
       "rationaleEn": "Synchronized power blackout + instantaneous vertical ascent within the exotic-physics range"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aeropuerto_Internacional_Teniente_Luis_Candelaria_(Bariloche).JPG?width=800",
+    "alt": "Aeropuerto Internacional Teniente Luis Candelaria de Bariloche, Argentina.",
+    "caption": "Aeropuerto Internacional Teniente Luis Candelaria de Bariloche, destino del vuelo AR 674 de Aerolíneas Argentinas implicado en el avistamiento de 1995.",
+    "caption_en": "Teniente Luis Candelaria International Airport in Bariloche, destination of Aerolíneas Argentinas flight AR 674 involved in the 1995 sighting.",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "href": "https://commons.wikimedia.org/wiki/File:Aeropuerto_Internacional_Teniente_Luis_Candelaria_(Bariloche).JPG"
+  }
 }

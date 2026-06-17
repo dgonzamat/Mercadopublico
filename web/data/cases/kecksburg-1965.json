@@ -67,5 +67,14 @@
     {
       "name": "Pennsylvania State Police archives — 9 diciembre 1965"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kecksburg_UFO.JPG?width=800",
+    "alt": "Réplica del objeto en forma de bellota erigida como monumento en Kecksburg, Pensilvania.",
+    "caption": "Réplica del objeto con forma de bellota erigida como monumento en Kecksburg, Pensilvania, que conmemora el incidente de diciembre de 1965.",
+    "caption_en": "Acorn-shaped replica object erected as a monument in Kecksburg, Pennsylvania, commemorating the December 1965 incident.",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "href": "https://commons.wikimedia.org/wiki/File:Kecksburg_UFO.JPG"
+  }
 }
