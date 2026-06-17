@@ -159,6 +159,10 @@ export default function WorldMap({
           center={[20, 0]}
           zoom={2}
           scrollWheelZoom
+          // preferCanvas: renderiza los ~177 marcadores en un único canvas en
+          // vez de un nodo SVG por marcador. Baja drásticamente el uso de
+          // memoria/DOM y evita el crash del renderer en móviles con poca RAM.
+          preferCanvas
           style={{ height: "100%", width: "100%", background: "#e8e4da" }}
         >
           <TileLayer
