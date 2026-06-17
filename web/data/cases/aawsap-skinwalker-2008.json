@@ -125,5 +125,14 @@
       "rationale": "AAWSAP encargó 38 DIRDs incluyendo análisis de warp drives, manipulación de métrica, energía negativa y wormholes (Puthoff, Davis, Maccone) — exactamente los marcos teóricos que un programa de ingeniería inversa de tecnología no humana necesitaría como base científica. El libro 'Skinwalkers at the Pentagon' (Lacatski/Kelleher/Knapp 2021), escrito por el director DIA del programa, describe testimonios internos sobre intentos de comprender tecnología recuperada. No prueba que el programa de RE existe, pero documenta institucionalmente que la DIA pagó por la base teórica que ese programa necesitaría — la mayor coherencia documental del corpus para la hipótesis.",
       "rationaleEn": "AAWSAP commissioned 38 DIRDs including analyses of warp drives, metric engineering, negative energy and wormholes (Puthoff, Davis, Maccone) — exactly the theoretical frames that a reverse-engineering program of non-human technology would need as a scientific basis. The book 'Skinwalkers at the Pentagon' (Lacatski/Kelleher/Knapp 2021), written by the program's DIA director, describes internal testimony about attempts to understand recovered technology. It does not prove the RE program exists, but it institutionally documents that the DIA paid for the theoretical basis that program would need — the corpus's strongest documentary coherence for the hypothesis."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skinwalker_Ranch_(10393732103).jpg?width=800",
+    "alt": "Letreros de «prohibido el paso» a la entrada del Skinwalker Ranch, Utah.",
+    "caption": "Entrada del Skinwalker Ranch en el condado de Uintah, Utah, foco del programa AAWSAP financiado por la DIA (2008–2010).",
+    "caption_en": "Entrance to Skinwalker Ranch in Uintah County, Utah, focus of the DIA-funded AAWSAP program (2008–2010).",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "href": "https://commons.wikimedia.org/wiki/File:Skinwalker_Ranch_(10393732103).jpg"
+  }
 }
