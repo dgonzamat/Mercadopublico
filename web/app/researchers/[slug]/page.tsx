@@ -91,10 +91,7 @@ export default async function ResearcherDetailPage(
               <T es={r.section_label} en={r.section_label_en} />
               {lifespan ? ` · ${lifespan}` : ""}
             </Eyebrow>
-            <H1>
-              <span aria-hidden className="mr-2">{r.flag}</span>
-              {r.name}
-            </H1>
+            <H1>{r.name}</H1>
             {fw && (
               <p className="text-sm text-text">
                 <span className="text-muted">
