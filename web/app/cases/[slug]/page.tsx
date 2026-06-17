@@ -559,11 +559,11 @@ export default async function CaseDetailPage(
               return (
                 <li
                   key={i}
-                  className="grid grid-cols-[2.5rem_1fr] gap-4 border-l-2 pl-4"
+                  className="grid grid-cols-[4.25rem_1fr] gap-4 border-l-2 pl-4"
                   style={{ borderColor: h?.color ?? "var(--accent)" }}
                 >
                   <span
-                    className="font-display text-2xl leading-none tabular-nums"
+                    className="font-display text-xl leading-none tabular-nums whitespace-nowrap"
                     style={{ color: h?.color ?? "var(--accent)" }}
                   >
                     {sign}
@@ -590,8 +590,8 @@ export default async function CaseDetailPage(
           </ol>
           <Caption className="italic">
             <T
-              es="Pesos: mínimo +0.5, modesto +2, sustancial +5, categoría nueva +15. Documentación completa en /about Cap. 5."
-              en="Weights: minimal +0.5, modest +2, substantial +5, category-breaking +15. Full documentation in /about Ch. 5."
+              es="Pesos (shift en log-odds): mínimo +0.005, modesto +0.02, sustancial +0.05, categoría nueva +0.15. Documentación completa en /about Cap. 5."
+              en="Weights (log-odds shift): minimal +0.005, modest +0.02, substantial +0.05, category-breaking +0.15. Full documentation in /about Ch. 5."
             />
           </Caption>
         </section>
