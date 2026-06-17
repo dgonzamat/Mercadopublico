@@ -410,7 +410,6 @@ function HypothesisSection({
                 href={`/cases/${c.id}`}
                 className="inline-flex min-h-[44px] items-center px-2 py-1 text-xs text-text hover:bg-panel"
               >
-                <span aria-hidden className="mr-2">{c.flag}</span>
                 <span className="sr-only">{c.country_name}.</span>
                 <span className="truncate">{c.name}</span>
                 <span className="ml-2 shrink-0 font-mono text-muted">· {c.year_start}</span>
@@ -441,7 +440,6 @@ function HypothesisSection({
             <T es="Empezar por" en="Start with" />
           </span>
           <span className="min-w-0">
-            <span aria-hidden className="mr-2">{supportingCases[0].flag}</span>
             <span className="sr-only">{supportingCases[0].country_name}.</span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg md:text-xl">
               {supportingCases[0].name}

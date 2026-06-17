@@ -266,7 +266,6 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
                 className={`${itemBaseClass} ${i === selected ? itemActiveOn : itemIdle}`}
               >
                 <p className="flex items-center gap-2 font-display font-medium leading-tight">
-                  {r.flag && <span aria-hidden>{r.flag}</span>}
                   <span className="truncate">{r.name}</span>
                   <span
                     className={`ml-auto shrink-0 font-mono text-[9px] uppercase tracking-widest ${

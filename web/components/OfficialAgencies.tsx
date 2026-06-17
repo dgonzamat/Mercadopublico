@@ -46,9 +46,6 @@ export function OfficialAgencies() {
               className="block border border-border bg-panel p-4 transition hover:border-accent/50"
             >
               <div className="flex items-baseline gap-2">
-                <span className="text-xl" aria-hidden>
-                  {a.flag}
-                </span>
                 <h3 className="text-sm font-medium text-text">{a.name}</h3>
               </div>
               <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
