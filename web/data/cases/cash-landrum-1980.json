@@ -13,9 +13,12 @@
   },
   "tier": "S",
   "probability": 70,
-  "summary": "Lesiones radiantes hospitalizadas + 23 helicópteros Chinook militares + lawsuit federal Cash et al. v. United States",
-  "summary_en": "Radiation injuries hospitalized + 23 military Chinook helicopters + federal lawsuit Cash et al. v. United States",
-  "patterns": ["8a", "8m"],
+  "summary": "La noche del 29 de diciembre de 1980, Betty Cash, Vickie Landrum y su nieto observaron cerca de Huffman (Texas) un objeto incandescente en forma de diamante que irradiaba calor y era escoltado por unos 23 helicópteros militares. Los tres desarrollaron síntomas compatibles con radiación ionizante, hospitalariamente documentados, y demandaron al gobierno federal.",
+  "summary_en": "On the night of 29 December 1980, Betty Cash, Vickie Landrum and her grandson watched a glowing diamond-shaped object radiating heat near Huffman, Texas, escorted by some 23 military helicopters. All three developed symptoms consistent with ionizing radiation, documented in hospital, and sued the federal government.",
+  "patterns": [
+    "8a",
+    "8m"
+  ],
   "category": "incident",
   "evidenceContribution": [
     {

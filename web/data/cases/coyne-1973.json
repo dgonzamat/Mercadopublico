@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 85,
-  "summary": "UH-1H Army Reserve, helicóptero elevado 600m sin control del piloto, AAR oficial",
-  "summary_en": "UH-1H Army Reserve, helicopter raised 600m without pilot control, official AAR",
+  "summary": "El 18 de octubre de 1973, un helicóptero Bell UH-1H del Army Reserve sobre Mansfield (Ohio) estuvo a punto de colisionar con un objeto gris en forma de cigarro; pese a que la tripulación mantenía el control en descenso, la aeronave ascendió sin mando del piloto. El reporte oficial del Ejército (AAR) permanece en archivo sin reclasificar.",
+  "summary_en": "On 18 October 1973, an Army Reserve Bell UH-1H over Mansfield, Ohio, nearly collided with a gray cigar-shaped object; though the crew held the controls in a descent, the helicopter climbed with no pilot input. The Army's official after-action report remains on file, unreclassified.",
   "patterns": [
     "8a",
     "8k"

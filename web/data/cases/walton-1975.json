@@ -13,9 +13,12 @@
   },
   "tier": "A",
   "probability": 50,
-  "summary": "7 testigos leñadores con polígrafo + búsqueda institucional (Sheriff + Forest Service + USAF Aerospace Defense Command)",
-  "summary_en": "7 logger witnesses with polygraph + institutional search (Sheriff + Forest Service + USAF Aerospace Defense Command)",
-  "patterns": ["8e", "8h"],
+  "summary": "El 5 de noviembre de 1975, Travis Walton y seis compañeros de una cuadrilla forestal en Arizona vieron un objeto discoidal incandescente; según el testimonio convergente de los seis, Walton se acercó y desapareció cinco días. Los siete reportaron el hecho al sheriff antes de conocer el desenlace y cinco pasaron el polígrafo, con búsqueda institucional del Forest Service y la USAF documentada.",
+  "summary_en": "On 5 November 1975, Travis Walton and six fellow members of a forestry crew in Arizona saw a glowing disc-shaped object; by the convergent testimony of all six, Walton approached it and vanished for five days. The seven reported the event to the sheriff before the outcome was known, five passed polygraphs, and an institutional search by the Forest Service and USAF is documented.",
+  "patterns": [
+    "8e",
+    "8h"
+  ],
   "category": "incident",
   "evidenceContribution": [
     {
