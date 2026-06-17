@@ -20,9 +20,6 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       <span className="hidden w-10 text-right font-mono text-xs tabular-nums text-muted sm:inline">
         {String(caseData.num).padStart(2, "0")}
       </span>
-      <span className="text-xl" aria-hidden>
-        {caseData.flag}
-      </span>
       <span className="sr-only">{caseData.country_name}.</span>
       <div className="min-w-0">
         <div className="flex items-center gap-2">

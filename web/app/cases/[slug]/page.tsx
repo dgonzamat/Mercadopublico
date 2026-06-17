@@ -5,6 +5,7 @@ import { TIER_META } from "@/lib/ui";
 import { getHypothesis } from "@/lib/hypotheses";
 import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
 import { T } from "@/components/T";
+import { countryEn } from "@/lib/i18n-geo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
@@ -168,7 +169,7 @@ export default async function CaseDetailPage(
           items={[
             { href: "/", es: "Inicio", en: "Home" },
             { href: "/cases", es: "Casos", en: "Cases" },
-            { es: c.name, en: c.name },
+            { es: c.name, en: c.name_en ?? c.name },
           ]}
         />
         <ShareButton title={c.name} />
@@ -183,7 +184,7 @@ export default async function CaseDetailPage(
               en={`Case ${String(c.num).padStart(2, "0")} of ${TOTAL_CASES}`}
             />
             <span className="mx-2 text-text/30">·</span>
-            {c.country_name}
+            <T es={c.country_name} en={countryEn(c.country_name)} />
           </p>
           {c.epistemicStatus && c.epistemicStatus !== "documented" && (
             <EpistemicBadge status={c.epistemicStatus} />
@@ -201,14 +202,17 @@ export default async function CaseDetailPage(
             <p className="font-mono text-xs uppercase tracking-widest text-muted">
               {year}
               <span className="mx-2 text-text/30">·</span>
-              {c.location.place || c.country_name}
+              {c.location.place ? (
+                c.location.place
+              ) : (
+                <T es={c.country_name} en={countryEn(c.country_name)} />
+              )}
             </p>
             <H1>
-              <span aria-hidden className="mr-3 text-3xl md:text-4xl">
-                {c.flag}
+              <span className="sr-only">
+                <T es={c.country_name} en={countryEn(c.country_name)} />.
               </span>
-              <span className="sr-only">{c.country_name}.</span>
-              {c.name}
+              <T es={c.name} en={c.name_en ?? c.name} />
             </H1>
           </div>
         </div>
@@ -470,7 +474,11 @@ export default async function CaseDetailPage(
             <T es="Ubicación" en="Location" />
           </Eyebrow>
           <p className="text-sm text-text">
-            {c.location.place || c.country_name}{" "}
+            {c.location.place ? (
+              c.location.place
+            ) : (
+              <T es={c.country_name} en={countryEn(c.country_name)} />
+            )}{" "}
             <span className="font-mono text-xs text-muted">
               · {c.location.lat.toFixed(2)}°, {c.location.lng.toFixed(2)}°
             </span>
@@ -620,10 +628,10 @@ export default async function CaseDetailPage(
                     <T es={reasonFor("es")} en={reasonFor("en")} />
                   </p>
                   <p className="font-display text-xl font-medium leading-tight text-text group-hover:text-bg">
-                    <span aria-hidden className="mr-2">
-                      {s.caseData.flag}
-                    </span>
-                    {s.caseData.name}
+                    <T
+                      es={s.caseData.name}
+                      en={s.caseData.name_en ?? s.caseData.name}
+                    />
                   </p>
                   <p className="mt-auto font-mono text-xs tabular-nums text-muted group-hover:text-bg/60">
                     {s.caseData.year_start} · Tier {s.caseData.tier} ·{" "}
@@ -684,7 +692,7 @@ export default async function CaseDetailPage(
               />
             </span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-              {prev.flag} {prev.name}
+              <T es={prev.name} en={prev.name_en ?? prev.name} />
             </span>
           </Link>
         ) : (
@@ -702,7 +710,7 @@ export default async function CaseDetailPage(
               />
             </span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-              {next.name} {next.flag}
+              <T es={next.name} en={next.name_en ?? next.name} />
             </span>
           </Link>
         ) : (

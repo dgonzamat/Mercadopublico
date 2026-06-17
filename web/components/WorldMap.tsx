@@ -148,7 +148,7 @@ export default function WorldMap({
           <option value="all">{`Todos · ${cases.length}`}</option>
           {countryOptions.map((o) => (
             <option key={o.code} value={o.code}>
-              {`${o.flag} ${o.name} · ${o.n}`}
+              {`${o.name} · ${o.n}`}
             </option>
           ))}
         </select>
@@ -189,10 +189,7 @@ export default function WorldMap({
             >
               <Tooltip>
                 <div style={{ fontFamily: "monospace", fontSize: 12 }}>
-                  <strong>
-                    <span aria-hidden>{c.flag} </span>
-                    {c.name}
-                  </strong>
+                  <strong>{c.name}</strong>
                   <br />
                   {c.country_name} · {c.year_start} · Tier {c.tier} ·{" "}
                   {c.probability}%
@@ -224,7 +221,6 @@ export default function WorldMap({
                   href={`${basePath}/researchers/${r.id}/`}
                   className="inline-flex min-h-[36px] items-center gap-1.5 border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
-                  <span aria-hidden>{r.flag}</span>
                   {r.name}
                 </a>
               ))}
