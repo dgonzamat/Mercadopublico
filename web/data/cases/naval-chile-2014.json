@@ -2,12 +2,13 @@
   "id": "naval-chile-2014",
   "num": 44,
   "name": "Helicóptero Naval Chile",
+  "name_en": "Chilean Navy helicopter",
   "year_start": 2014,
   "country": "CL",
   "country_name": "Chile",
   "flag": "🇨🇱",
   "location": {
-    "lat": -33.0,
+    "lat": -33,
     "lng": -71.6,
     "place": "Costa de Chile"
   },

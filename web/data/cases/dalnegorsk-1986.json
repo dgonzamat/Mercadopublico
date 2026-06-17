@@ -2,13 +2,14 @@
   "id": "dalnegorsk-1986",
   "num": 68,
   "name": "Dalnegorsk · Altura 611",
+  "name_en": "Dalnegorsk · Height 611",
   "year_start": 1986,
   "country": "RU",
   "country_name": "Rusia",
   "flag": "🇷🇺",
   "location": {
     "lat": 44.55,
-    "lng": 135.60,
+    "lng": 135.6,
     "place": "Cerro Izvestkovaya (Altura 611), Primorsky"
   },
   "tier": "A",
