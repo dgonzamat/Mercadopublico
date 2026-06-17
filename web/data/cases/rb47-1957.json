@@ -7,14 +7,14 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 33.0,
-    "lng": -91.0,
+    "lat": 33,
+    "lng": -91,
     "place": "Misisipi–Luisiana–Texas–Oklahoma"
   },
   "tier": "S",
   "probability": 88,
-  "summary": "RB-47 ECM + radar terrestre + visual + 3 receptores ELINT, 700+ millas, 90 min — Condon Committee aceptado",
-  "summary_en": "RB-47 ECM + ground radar + visual + 3 onboard ELINT receivers, 700+ miles, 90 min — accepted by Condon Committee",
+  "summary": "El 17 de julio de 1957, un RB-47 de reconocimiento de la USAF detectó sobre el Golfo de México una señal de radar correlacionada con una luz visible mediante tres receptores ELINT independientes, radar terrestre y observación visual, que aparecieron y desaparecieron en sincronía durante 90 minutos sobre 1.100 km. El Condon Report lo clasificó como no explicado.",
+  "summary_en": "On 17 July 1957, a USAF RB-47 reconnaissance aircraft detected a radar signal correlated with a visible light over the Gulf of Mexico via three independent ELINT receivers, ground radar and visual observation, all appearing and vanishing in sync for 90 minutes across 1,100 km. The Condon Report classified it as unexplained.",
   "patterns": [
     "8e",
     "8k"

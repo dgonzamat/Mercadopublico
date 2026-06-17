@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 78,
-  "summary": "Objeto cae al agua + RCMP + RCN Fleet Diving + RCAF + telexes de prioridad + búsqueda submarina 3 días",
-  "summary_en": "Object strikes water + RCMP + RCN Fleet Diving + RCAF + priority telexes + 3-day undersea search",
+  "summary": "El 4 de octubre de 1967, varios residentes de Shag Harbour (Nueva Escocia) vieron un objeto con cuatro luces caer al mar; la RCMP confirmó en minutos la espuma amarilla y una mancha persistente. El Maritime Command ordenó una búsqueda submarina de tres días de la Fleet Diving Unit, y el gobierno liberó los registros sin disputa.",
+  "summary_en": "On 4 October 1967, several Shag Harbour (Nova Scotia) residents saw a four-light object fall into the sea; the RCMP confirmed yellow foam and a lingering slick within minutes. Maritime Command ordered a three-day underwater search by the Fleet Diving Unit, and the government released the records without dispute.",
   "patterns": [
     "8e",
     "8h"

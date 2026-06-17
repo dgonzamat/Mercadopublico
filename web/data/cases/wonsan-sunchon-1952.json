@@ -13,8 +13,8 @@
   },
   "tier": "A",
   "probability": 60,
-  "summary": "Dos B-29 de la USAF independientes, separados 80 millas + globo naranja sobre Corea del Norte en plena guerra + Blue Book 'Unknown'",
-  "summary_en": "Two independent USAF B-29s 80mi apart + orange globe over wartime N. Korea + Blue Book 'Unknown'",
+  "summary": "El 29 de enero de 1952, durante la Guerra de Corea, dos tripulaciones de bombarderos B-29 de la USAF en misiones independientes y separadas 80 millas reportaron de forma casi idéntica un objeto globular naranja que las acompañó a baja distancia sobre Corea del Norte. Project Blue Book lo clasificó «Unknown»; las dos observaciones independientes descartan el error individual.",
+  "summary_en": "On 29 January 1952, during the Korean War, two USAF B-29 bomber crews on independent missions 80 miles apart reported a nearly identical orange globular object pacing them at close range over North Korea. Project Blue Book classified it \"Unknown\"; the two independent observations rule out individual error.",
   "patterns": [
     "8e",
     "8h"

@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 78,
-  "summary": "Radar-visual sobre la Casa Blanca + F-94 scrambled + conferencia USAF más grande post-WWII",
-  "summary_en": "Radar-visual over the White House + F-94 scrambled + largest USAF press conference post-WWII",
+  "summary": "Los fines de semana del 19 y el 26 de julio de 1952, controladores de Washington National y Andrews AFB rastrearon ecos no identificados sobre el espacio aéreo prohibido del Capitolio y la Casa Blanca, confirmados visualmente por pilotos y perseguidos por cazas F-94. El episodio provocó la mayor conferencia de prensa de la USAF desde la guerra y catalizó el Robertson Panel.",
+  "summary_en": "On the weekends of 19 and 26 July 1952, controllers at Washington National and Andrews AFB tracked unidentified returns over the restricted airspace of the Capitol and the White House, visually confirmed by pilots and chased by F-94 fighters. The episode triggered the largest USAF press conference since the war and catalyzed the Robertson Panel.",
   "patterns": [
     "8e",
     "8m"

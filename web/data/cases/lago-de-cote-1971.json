@@ -13,8 +13,8 @@
   },
   "tier": "S",
   "probability": 78,
-  "summary": "Cámara cartográfica IGN del gobierno costarricense captura disco metálico ~100m sobre lago; única foto del set con objeto; peer-reviewed por Haines (NASA Ames).",
-  "summary_en": "Costa Rican government IGN cartographic camera captures metallic ~100m disc over lake; only frame of timed sequence with object; peer-reviewed by Haines (NASA Ames).",
+  "summary": "El 4 de septiembre de 1971, una cámara aerofotogramétrica del Instituto Geográfico Nacional, en vuelo de relevamiento sobre el Lago de Cote, captó automáticamente un disco metálico de unos 100 metros en un único negativo de la secuencia. La cadena de custodia gubernamental y el análisis peer-reviewed (Haines, NASA-Ames) la sitúan entre la mejor evidencia fotográfica del corpus.",
+  "summary_en": "On 4 September 1971, a Costa Rican National Geographic Institute mapping camera, on a survey flight over Lake Cote, automatically captured a roughly 100-meter metallic disc on a single negative of the sequence. Its government chain of custody and peer-reviewed analysis (Haines, NASA-Ames) rank it among the best photographic evidence in the corpus.",
   "patterns": [
     "8a",
     "8e"

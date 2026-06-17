@@ -13,9 +13,12 @@
   },
   "tier": "A",
   "probability": 45,
-  "summary": "Radar Pease AFB + sesiones psiquiátricas formales Dr. Benjamin Simon (Boston) + 'The Interrupted Journey' (1966)",
-  "summary_en": "Pease AFB radar + formal psychiatric sessions with Dr. Benjamin Simon (Boston) + 'The Interrupted Journey' (1966)",
-  "patterns": ["8e", "8m"],
+  "summary": "La noche del 19 de septiembre de 1961, Betty y Barney Hill reportaron ser seguidos por una luz cerca de Lancaster (New Hampshire) y, bajo hipnosis posterior con el psiquiatra Benjamin Simon, relataron una abducción. La base Pease registró un eco de radar correlacionado en el Project Blue Book; el propio Simon consideró que los recuerdos eran fantasías, no memoria.",
+  "summary_en": "On the night of 19 September 1961, Betty and Barney Hill reported being followed by a light near Lancaster, New Hampshire, and, under later hypnosis with psychiatrist Benjamin Simon, recounted an abduction. Pease AFB logged a correlated radar return in Project Blue Book; Simon himself judged the memories to be fantasy, not recall.",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
   "category": "incident",
   "evidenceContribution": [
     {
