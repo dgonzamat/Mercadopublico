@@ -2,12 +2,13 @@
   "id": "chulucanas-2001",
   "num": 66,
   "name": "Chulucanas · Oleada DIFAA",
+  "name_en": "Chulucanas · DIFAA wave",
   "year_start": 2001,
   "country": "PE",
   "country_name": "Perú",
   "flag": "🇵🇪",
   "location": {
-    "lat": -5.10,
+    "lat": -5.1,
     "lng": -80.16,
     "place": "Chulucanas, Piura"
   },
