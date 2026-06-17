@@ -66,5 +66,14 @@
       "rationale": "La aceleración no gravitacional sin pérdida visible de masa es, formalmente, compatible con presión de radiación sobre una estructura artificial delgada (Bialy & Loeb 2018). Minimal porque es una hipótesis minoritaria y la ausencia de datos no equivale a evidencia positiva de tecnología.",
       "rationaleEn": "The non-gravitational acceleration with no visible mass loss is, formally, consistent with radiation pressure on a thin artificial structure (Bialy & Loeb 2018). Minimal because it is a minority hypothesis and the absence of data is not positive evidence of technology."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist%E2%80%99s_impression_of_the_interstellar_asteroid_%60Oumuamua.jpg?width=800",
+    "alt": "Impresión artística de ESO del objeto interestelar ʻOumuamua.",
+    "caption": "Impresión artística de ʻOumuamua, el primer objeto interestelar conocido que cruzó el Sistema Solar (2017), según el Observatorio Europeo Austral (ESO/M. Kornmesser).",
+    "caption_en": "Artist's impression of ʻOumuamua, the first known interstellar object to cross the Solar System (2017), by the European Southern Observatory (ESO/M. Kornmesser).",
+    "source": "ESO / M. Kornmesser",
+    "license": "CC BY 4.0",
+    "href": "https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_impression_of_the_interstellar_asteroid_%60Oumuamua.jpg"
+  }
 }

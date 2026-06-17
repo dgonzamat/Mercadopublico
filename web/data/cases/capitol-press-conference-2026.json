@@ -105,5 +105,14 @@
       "rationale": "Las tres demandas formales planteadas en la conferencia asumen explícitamente la existencia de un programa US de recuperación + ingeniería inversa: 'desclasificar archivos UAP que Grusch identificó por nombre', 'aprobar UAP Disclosure Act', 'proteger denunciantes de represalias'. Estas peticiones no tienen sentido analítico si no se asume que el programa existe y los archivos lo documentan. La conferencia traduce la afirmación de Grusch (testimoniada bajo juramento en 2023) en presión institucional bipartidista sostenida. Modest porque las demandas son la afirmación operativa más fuerte del corpus sobre la existencia del programa, sin presentación de documentos primarios que la prueben.",
       "rationaleEn": "The three formal demands at the conference explicitly assume the existence of a U.S. recovery + reverse-engineering program: 'declassify UAP files Grusch identified by name', 'pass the UAP Disclosure Act', 'protect whistleblowers from retaliation'. These petitions make no analytical sense unless one assumes the program exists and the files document it. The conference translates Grusch's claim (sworn under oath in 2023) into sustained bipartisan institutional pressure. Modest because the demands are the corpus's strongest operative claim about the program's existence, without presentation of primary documents that prove it."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Grusch_giving_testimony_on_26_July_2023_before_the_US_House_Subcommittee_on_National_Security_the_Border_and_Foreign_Affairs.png?width=800",
+    "alt": "David Grusch testificando ante un subcomité de la Cámara de Representantes, 26 jul 2023.",
+    "caption": "El denunciante David Grusch testifica bajo juramento ante el subcomité de la Cámara de Representantes el 26 de julio de 2023; en junio de 2026 reapareció en la conferencia del Capitolio.",
+    "caption_en": "Whistleblower David Grusch testifies under oath before the U.S. House subcommittee on July 26, 2023; in June 2026 he returned at the Capitol press conference.",
+    "source": "U.S. House (vía Wikimedia Commons)",
+    "license": "Dominio público",
+    "href": "https://commons.wikimedia.org/wiki/File:David_Grusch_giving_testimony_on_26_July_2023_before_the_US_House_Subcommittee_on_National_Security_the_Border_and_Foreign_Affairs.png"
+  }
 }

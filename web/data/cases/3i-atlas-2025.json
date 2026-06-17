@@ -67,5 +67,14 @@
       "rationale": "Algunas anomalías (jets direccionales, química atípica, trayectoria) fueron señaladas como no previstas por los modelos estándar. Minimal —y deliberadamente bajo— porque incluso Loeb, que las documentó, concluyó que no apuntan necesariamente a un origen tecnológico.",
       "rationaleEn": "Some anomalies (directional jets, atypical chemistry, trajectory) were flagged as not predicted by standard models. Minimal —and deliberately low— because even Loeb, who documented them, concluded they do not necessarily point to a technological origin."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Deep_VLT_image_of_3I-ATLAS,_a_new_interstellar_object_(potw2527a).jpg?width=800",
+    "alt": "Imagen profunda del VLT de ESO del objeto interestelar 3I/ATLAS.",
+    "caption": "Imagen profunda del Very Large Telescope de ESO del tercer objeto interestelar confirmado, 3I/ATLAS, captada en 2025.",
+    "caption_en": "Deep image from ESO's Very Large Telescope of the third confirmed interstellar object, 3I/ATLAS, captured in 2025.",
+    "source": "ESO",
+    "license": "CC BY 4.0",
+    "href": "https://commons.wikimedia.org/wiki/File:Deep_VLT_image_of_3I-ATLAS,_a_new_interstellar_object_(potw2527a).jpg"
+  }
 }
