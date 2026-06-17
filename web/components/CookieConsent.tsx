@@ -55,6 +55,8 @@ export function CookieConsent() {
     if (consent === "granted") {
       loadGoogleAnalytics();
     } else if (consent !== "denied") {
+      // Consentimiento leído de localStorage en mount (no disponible en SSR).
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setShow(true);
     }
   }, []);
