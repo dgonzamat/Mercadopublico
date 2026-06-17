@@ -10,7 +10,8 @@
   "location": {
     "lat": -41.15,
     "lng": -71.3,
-    "place": "Aeropuerto Internacional Bariloche"
+    "place": "Aeropuerto Internacional Bariloche",
+    "place_en": "Bariloche International Airport"
   },
   "tier": "S",
   "probability": 80,

@@ -10,7 +10,8 @@
   "location": {
     "lat": -39.2,
     "lng": 144.2,
-    "place": "Estrecho de Bass, Australia"
+    "place": "Estrecho de Bass, Australia",
+    "place_en": "Bass Strait, Australia"
   },
   "tier": "B",
   "probability": 20,

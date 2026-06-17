@@ -10,7 +10,8 @@
   "location": {
     "lat": 55.14,
     "lng": 14.92,
-    "place": "Dinamarca (Fuerza Aérea Real; estaciones de radar de Bornholm)"
+    "place": "Dinamarca (Fuerza Aérea Real; estaciones de radar de Bornholm)",
+    "place_en": "Denmark (Royal Air Force; Bornholm radar stations)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

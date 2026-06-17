@@ -203,7 +203,10 @@ export default async function CaseDetailPage(
               {year}
               <span className="mx-2 text-text/30">·</span>
               {c.location.place ? (
-                c.location.place
+                <T
+                  es={c.location.place}
+                  en={c.location.place_en ?? c.location.place}
+                />
               ) : (
                 <T es={c.country_name} en={countryEn(c.country_name)} />
               )}
@@ -475,7 +478,10 @@ export default async function CaseDetailPage(
           </Eyebrow>
           <p className="text-sm text-text">
             {c.location.place ? (
-              c.location.place
+              <T
+                es={c.location.place}
+                en={c.location.place_en ?? c.location.place}
+              />
             ) : (
               <T es={c.country_name} en={countryEn(c.country_name)} />
             )}{" "}

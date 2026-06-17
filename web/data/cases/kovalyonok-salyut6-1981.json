@@ -8,9 +8,10 @@
   "country_name": "Unión Soviética",
   "flag": "🇷🇺",
   "location": {
-    "lat": -33.0,
-    "lng": 28.0,
-    "place": "Órbita baja terrestre sobre el Atlántico Sur / Océano Índico, estación espacial Salyut-6"
+    "lat": -33,
+    "lng": 28,
+    "place": "Órbita baja terrestre sobre el Atlántico Sur / Océano Índico, estación espacial Salyut-6",
+    "place_en": "Low Earth orbit over the South Atlantic / Indian Ocean, Salyut-6 space station"
   },
   "tier": "A",
   "probability": 50,

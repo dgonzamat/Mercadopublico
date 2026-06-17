@@ -10,7 +10,8 @@
   "location": {
     "lat": 28.29,
     "lng": -16.62,
-    "place": "Islas Canarias"
+    "place": "Islas Canarias",
+    "place_en": "Canary Islands"
   },
   "tier": "S",
   "probability": 72,

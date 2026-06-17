@@ -10,7 +10,8 @@
   "location": {
     "lat": -34.6,
     "lng": -58.45,
-    "place": "Fuerza Aérea Argentina (Buenos Aires)"
+    "place": "Fuerza Aérea Argentina (Buenos Aires)",
+    "place_en": "Argentine Air Force (Buenos Aires)"
   },
   "tier": "A",
   "probability": 38,

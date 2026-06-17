@@ -8,9 +8,10 @@
   "country_name": "Afganistán",
   "flag": "🇦🇫",
   "location": {
-    "lat": 33.0,
+    "lat": 33,
     "lng": 69.5,
-    "place": "Frontera Afganistán–Pakistán (plataforma de reconocimiento de la USAF)"
+    "place": "Frontera Afganistán–Pakistán (plataforma de reconocimiento de la USAF)",
+    "place_en": "Afghanistan–Pakistan border (USAF reconnaissance platform)"
   },
   "tier": "B",
   "epistemicStatus": "documented",

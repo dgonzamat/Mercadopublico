@@ -10,7 +10,8 @@
   "location": {
     "lat": 13.6995,
     "lng": -89.1199,
-    "place": "Primera Brigada Aérea, Aeropuerto de Ilopango, San Salvador"
+    "place": "Primera Brigada Aérea, Aeropuerto de Ilopango, San Salvador",
+    "place_en": "First Air Brigade, Ilopango Airport, San Salvador"
   },
   "tier": "B",
   "epistemicStatus": "documented",

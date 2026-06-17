@@ -9,15 +9,19 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 31.0,
+    "lat": 31,
     "lng": -79.5,
-    "place": "Atlántico, costa este de EE.UU. (Virginia–Florida)"
+    "place": "Atlántico, costa este de EE.UU. (Virginia–Florida)",
+    "place_en": "Atlantic, U.S. East Coast (Virginia–Florida)"
   },
   "tier": "S",
   "probability": 80,
   "summary": "Pilotos de F/A-18 del ala aérea del USS Theodore Roosevelt registran contactos UAP casi a diario frente a la costa este de EE.UU. (verano 2014–marzo 2015), confirmados por radar, infrarrojo y vista. De esas salidas salen los videos Gimbal y GoFast. Ryan Graves reporta un cuasi-impacto y eleva quejas formales de seguridad de vuelo.",
   "summary_en": "F/A-18 pilots from the USS Theodore Roosevelt air wing log near-daily UAP contacts off the U.S. East Coast (summer 2014–March 2015), confirmed by radar, infrared and visual. The Gimbal and GoFast videos come from these sorties. Ryan Graves reports a near-miss and files formal flight-safety complaints.",
-  "patterns": ["8h", "8e"],
+  "patterns": [
+    "8h",
+    "8e"
+  ],
   "category": "incident",
   "whatHappened": "Entre el verano de 2014 y marzo de 2015, mientras el ala aérea del portaaviones USS Theodore Roosevelt entrenaba en las áreas de aviso del Atlántico frente a la costa este de Estados Unidos —entre Virginia y Florida—, las tripulaciones de F/A-18 Super Hornet comenzaron a registrar objetos no identificados casi a diario. Los contactos aparecían simultáneamente en radar, en el sensor infrarrojo ATFLIR y a la vista de los pilotos. Los objetos no mostraban superficies de control, alas ni escape visible, y se mantenían estacionarios contra vientos de más de 100 nudos o aceleraban a velocidades que las tripulaciones no podían igualar.\n\nEl teniente Ryan Graves, del escuadrón VFA-11, fue uno de los pilotos que reportó los contactos de forma sistemática y elevó quejas formales de seguridad de vuelo, después de que un compañero de su escuadrón estuviera a punto de colisionar con un objeto descrito como 'un cubo dentro de una esfera transparente' en el Área de Aviso W-72. De estas mismas salidas provienen dos grabaciones que se harían públicas: GIMBAL —filmada el 20 de enero de 2015 frente a Jacksonville (Florida), que muestra un objeto rotando sobre las nubes mientras la tripulación menciona 'toda una flota' en el radar— y GOFAST, que muestra un objeto desplazándose veloz a baja altura sobre el océano.\n\nEl 16 de diciembre de 2017, The New York Times reveló la existencia del programa AATIP del Pentágono y publicó los videos FLIR (Nimitz) y GIMBAL (Roosevelt). En julio de 2023, Graves declaró bajo juramento ante el subcomité de Supervisión de la Cámara de Representantes sobre estos encuentros y sobre la ausencia de un canal de reporte funcional para los pilotos.",
   "whatHappened_en": "Between the summer of 2014 and March 2015, while the USS Theodore Roosevelt carrier air wing trained in the Atlantic warning areas off the U.S. East Coast —between Virginia and Florida— F/A-18 Super Hornet crews began logging unidentified objects almost daily. The contacts appeared simultaneously on radar, on the ATFLIR infrared sensor, and to the pilots' eyes. The objects showed no control surfaces, wings or visible exhaust, and held station against 100-knot-plus winds or accelerated beyond what the crews could match.\n\nLieutenant Ryan Graves, of squadron VFA-11, was one of the pilots who systematically reported the contacts and filed formal flight-safety complaints, after a squadron-mate nearly collided with an object described as 'a cube inside a transparent sphere' in Warning Area W-72. From these same sorties came two recordings that would later go public: GIMBAL —filmed on 20 January 2015 off Jacksonville, Florida, showing an object rotating above the clouds as the crew remarks on 'a whole fleet' on radar— and GOFAST, showing an object moving fast at low altitude over the ocean.\n\nOn 16 December 2017, The New York Times revealed the Pentagon's AATIP program and published the FLIR (Nimitz) and GIMBAL (Roosevelt) videos. In July 2023, Graves testified under oath before the House Oversight subcommittee about these encounters and about the absence of a functioning reporting channel for pilots.",

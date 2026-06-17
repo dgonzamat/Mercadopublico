@@ -10,7 +10,8 @@
   "location": {
     "lat": -17.946,
     "lng": 145.927,
-    "place": "Horseshoe Lagoon, cerca de Tully, Queensland"
+    "place": "Horseshoe Lagoon, cerca de Tully, Queensland",
+    "place_en": "Horseshoe Lagoon, near Tully, Queensland"
   },
   "tier": "A",
   "probability": 35,

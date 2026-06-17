@@ -10,7 +10,8 @@
   "location": {
     "lat": 40.0583,
     "lng": -74.4057,
-    "place": "New Jersey + área de la costa este de EE.UU."
+    "place": "New Jersey + área de la costa este de EE.UU.",
+    "place_en": "New Jersey + U.S. East Coast area"
   },
   "tier": "A",
   "epistemicStatus": "developing",

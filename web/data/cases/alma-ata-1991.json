@@ -10,7 +10,8 @@
   "location": {
     "lat": 43.22,
     "lng": 76.97,
-    "place": "Alma-Atá (Almaty), cerca del monte Kok-Tyube"
+    "place": "Alma-Atá (Almaty), cerca del monte Kok-Tyube",
+    "place_en": "Alma-Ata (Almaty), near Mount Kok-Tyube"
   },
   "tier": "B",
   "epistemicStatus": "documented",

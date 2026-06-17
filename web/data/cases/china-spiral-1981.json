@@ -8,9 +8,10 @@
   "country_name": "China",
   "flag": "🇨🇳",
   "location": {
-    "lat": 34.0,
+    "lat": 34,
     "lng": 108.9,
-    "place": "14 provincias del norte y centro de China"
+    "place": "14 provincias del norte y centro de China",
+    "place_en": "14 provinces of northern and central China"
   },
   "tier": "B",
   "epistemicStatus": "documented",

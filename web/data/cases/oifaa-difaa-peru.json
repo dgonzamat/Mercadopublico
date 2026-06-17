@@ -10,7 +10,8 @@
   "location": {
     "lat": -12.05,
     "lng": -77.05,
-    "place": "Fuerza Aérea del Perú, Lima"
+    "place": "Fuerza Aérea del Perú, Lima",
+    "place_en": "Peruvian Air Force, Lima"
   },
   "tier": "A",
   "probability": 46,

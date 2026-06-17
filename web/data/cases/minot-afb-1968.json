@@ -9,7 +9,8 @@
   "location": {
     "lat": 48.42,
     "lng": -101.36,
-    "place": "Minot AFB, Dakota del Norte"
+    "place": "Minot AFB, Dakota del Norte",
+    "place_en": "Minot AFB, North Dakota"
   },
   "tier": "S",
   "probability": 78,

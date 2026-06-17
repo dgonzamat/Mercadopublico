@@ -10,7 +10,8 @@
   "location": {
     "lat": 8.9147,
     "lng": -79.5997,
-    "place": "Zona del Canal (administración estadounidense), Howard Field y baterías antiaéreas"
+    "place": "Zona del Canal (administración estadounidense), Howard Field y baterías antiaéreas",
+    "place_en": "Canal Zone (U.S. administration), Howard Field and anti-aircraft batteries"
   },
   "tier": "A",
   "epistemicStatus": "documented",

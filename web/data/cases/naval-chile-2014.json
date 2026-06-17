@@ -10,7 +10,8 @@
   "location": {
     "lat": -33,
     "lng": -71.6,
-    "place": "Costa de Chile"
+    "place": "Costa de Chile",
+    "place_en": "Coast of Chile"
   },
   "tier": "A",
   "probability": 70,

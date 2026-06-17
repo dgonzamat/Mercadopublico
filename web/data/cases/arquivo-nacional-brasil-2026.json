@@ -10,7 +10,8 @@
   "location": {
     "lat": -22.906,
     "lng": -43.189,
-    "place": "Arquivo Nacional, Río de Janeiro"
+    "place": "Arquivo Nacional, Río de Janeiro",
+    "place_en": "National Archives, Rio de Janeiro"
   },
   "tier": "A",
   "epistemicStatus": "documented",

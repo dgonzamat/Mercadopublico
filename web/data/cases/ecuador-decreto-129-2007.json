@@ -10,7 +10,8 @@
   "location": {
     "lat": -0.18,
     "lng": -78.47,
-    "place": "Quito · Fuerza Aérea Ecuatoriana"
+    "place": "Quito · Fuerza Aérea Ecuatoriana",
+    "place_en": "Quito · Ecuadorian Air Force"
   },
   "tier": "A",
   "probability": 75,

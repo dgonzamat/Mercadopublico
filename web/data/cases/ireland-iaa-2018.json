@@ -10,7 +10,8 @@
   "location": {
     "lat": 51.9,
     "lng": -10.2,
-    "place": "Costa suroeste de Irlanda (Shannon ATC)"
+    "place": "Costa suroeste de Irlanda (Shannon ATC)",
+    "place_en": "Southwest coast of Ireland (Shannon ATC)"
   },
   "tier": "B",
   "epistemicStatus": "documented",

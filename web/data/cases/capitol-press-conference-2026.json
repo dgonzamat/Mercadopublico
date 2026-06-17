@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.8899,
     "lng": -77.0091,
-    "place": "Escalinata del Capitolio, Washington D.C."
+    "place": "Escalinata del Capitolio, Washington D.C.",
+    "place_en": "U.S. Capitol steps, Washington D.C."
   },
   "tier": "A",
   "epistemicStatus": "developing",

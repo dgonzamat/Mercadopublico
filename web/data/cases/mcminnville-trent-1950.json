@@ -10,7 +10,8 @@
   "location": {
     "lat": 45.21,
     "lng": -123.2,
-    "place": "Granja de los Trent, cerca de McMinnville, Oregón"
+    "place": "Granja de los Trent, cerca de McMinnville, Oregón",
+    "place_en": "Trent farm, near McMinnville, Oregon"
   },
   "tier": "A",
   "epistemicStatus": "documented",

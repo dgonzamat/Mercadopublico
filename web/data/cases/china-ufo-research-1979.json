@@ -10,7 +10,8 @@
   "location": {
     "lat": 30.5417,
     "lng": 114.367,
-    "place": "Universidad de Wuhan, provincia de Hubei · sede fundacional"
+    "place": "Universidad de Wuhan, provincia de Hubei · sede fundacional",
+    "place_en": "Wuhan University, Hubei province · founding site"
   },
   "tier": "A",
   "probability": 70,

@@ -11,7 +11,8 @@
   "location": {
     "lat": 40.4839,
     "lng": -3.4564,
-    "place": "Cuartel General del Ejército del Aire / Base Aérea de Torrejón, Madrid"
+    "place": "Cuartel General del Ejército del Aire / Base Aérea de Torrejón, Madrid",
+    "place_en": "Air Force HQ / Torrejón Air Base, Madrid"
   },
   "tier": "S",
   "probability": 78,
