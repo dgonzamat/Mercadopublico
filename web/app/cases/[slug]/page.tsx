@@ -200,7 +200,7 @@ export default async function CaseDetailPage(
             aria-hidden
             className="font-display text-6xl leading-none tabular-nums text-accent md:text-8xl"
           >
-            {String(c.year_start).slice(-2)}
+            {String(c.num).padStart(2, "0")}
           </span>
           <div className="space-y-3">
             <p className="font-mono text-xs uppercase tracking-widest text-muted">
