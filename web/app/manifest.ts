@@ -12,7 +12,9 @@ export default function manifest(): MetadataRoute.Manifest {
     description:
       "Cuaderno de investigación abierto sobre UAP institucionales, 1947–2026.",
     start_url: "/",
-    display: "standalone",
+    // "browser" (no "standalone"): es un sitio de lectura, no una app.
+    // Evita el prompt de instalación PWA en móvil; conserva ícono y theme-color.
+    display: "browser",
     background_color: "#f7f2e8",
     theme_color: "#c41e3a",
     lang: "es",
