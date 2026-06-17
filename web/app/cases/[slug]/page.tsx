@@ -221,11 +221,6 @@ export default async function CaseDetailPage(
         <p className="font-display text-2xl leading-snug text-text md:text-3xl">
           <T es={c.summary} en={c.summary_en ?? c.summary} />
         </p>
-        {c.summary_en && (
-          <p className="font-display text-lg italic leading-snug text-muted md:text-xl">
-            <T es={<>“{c.summary_en}”</>} en={<>“{c.summary}”</>} />
-          </p>
-        )}
 
         <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-4">
           <KeyFact es="Año" en="Year" value={year} />
