@@ -24,7 +24,7 @@ const TIER_COLOR: Record<Tier, string> = { S: "#8b0000", A: "#b86b1f", B: "#1e4f
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-type ResearcherRef = { id: string; name: string; flag: string };
+type ResearcherRef = { id: string; name: string };
 
 /** Encuadra el mapa al país elegido; vuelve a la vista mundial en "all". */
 function FitBounds({
@@ -69,12 +69,11 @@ export default function WorldMap({
   };
   const countryOptions = Object.values(
     cases.reduce<
-      Record<string, { code: string; name: string; flag: string; n: number }>
+      Record<string, { code: string; name: string; n: number }>
     >((by, c) => {
       (by[c.country] ??= {
         code: c.country,
         name: c.country_name,
-        flag: c.flag,
         n: 0,
       }).n++;
       return by;

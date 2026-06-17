@@ -180,8 +180,8 @@ export default async function CaseDetailPage(
         <div className="space-y-4">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
             <T
-              es={`Caso ${String(c.num).padStart(2, "0")} de ${TOTAL_CASES}`}
-              en={`Case ${String(c.num).padStart(2, "0")} of ${TOTAL_CASES}`}
+              es={`Caso ${String(idx + 1).padStart(2, "0")} de ${TOTAL_CASES}`}
+              en={`Case ${String(idx + 1).padStart(2, "0")} of ${TOTAL_CASES}`}
             />
             <span className="mx-2 text-text/30">·</span>
             <T es={c.country_name} en={countryEn(c.country_name)} />
@@ -196,7 +196,7 @@ export default async function CaseDetailPage(
             aria-hidden
             className="font-display text-6xl leading-none tabular-nums text-accent md:text-8xl"
           >
-            {String(c.num).padStart(2, "0")}
+            {String(idx + 1).padStart(2, "0")}
           </span>
           <div className="space-y-3">
             <p className="font-mono text-xs uppercase tracking-widest text-muted">

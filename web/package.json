@@ -6,6 +6,7 @@
     "dev": "node scripts/validate-schema.mjs --warn && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs --warn && next dev",
     "prebuild": "node scripts/validate-schema.mjs && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs",
     "build": "next build",
+    "typecheck": "tsc --noEmit",
     "start": "next start",
     "audit": "node scripts/audit-consistency.mjs",
     "validate-schema": "node scripts/validate-schema.mjs"
