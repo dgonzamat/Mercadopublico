@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Cta } from "@/components/Cta";
+import { CorpusStats } from "@/components/CorpusStats";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import {
@@ -245,6 +246,11 @@ export default function ResumenPage() {
           ))}
         </div>
       </section>
+
+      {/* Anclaje cuantitativo: tras los hallazgos cualitativos, lo que el
+          corpus permite contar literalmente (tiers, eras, patrones). Reubicado
+          desde /cases, donde competía con la navegación del archivo. */}
+      <CorpusStats />
 
       <section className="space-y-6">
         <div className="space-y-3">
