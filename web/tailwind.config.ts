@@ -13,7 +13,10 @@ const config: Config = {
         "surface-2": "#dfd5be",
         border: "#c4b89d",
         text: "#1a1a1a",
-        muted: "#6b6356",
+        // Oscurecido desde #6b6356: en surface-2 daba 4.06:1 (bajo AA). Ahora
+        // 4.68:1 sobre surface-2, 5.48 panel, 6.11 bg — AA en las tres
+        // superficies, manteniendo la jerarquía muted (2.55:1 vs text).
+        muted: "#615a4d",
         accent: "#c41e3a",
         // CC-1 · mismo matiz, más luz — para text-accent sobre bg-text (5.4:1 AA)
         "accent-bright": "#ee6075",
