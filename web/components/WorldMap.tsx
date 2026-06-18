@@ -107,7 +107,7 @@ export default function WorldMap({
             type="button"
             onClick={() => toggle(t.key)}
             aria-pressed={active[t.key]}
-            className={`inline-flex min-h-[36px] items-center gap-2 border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            className={`inline-flex min-h-[44px] items-center gap-2 border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               active[t.key]
                 ? "border-accent/40 bg-panel text-text"
                 : "border-border/40 bg-transparent text-muted/40"
@@ -218,7 +218,7 @@ export default function WorldMap({
                 <a
                   key={r.id}
                   href={`${basePath}/researchers/${r.id}/`}
-                  className="inline-flex min-h-[36px] items-center gap-1.5 border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex min-h-[44px] items-center gap-1.5 border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {r.name}
                 </a>
