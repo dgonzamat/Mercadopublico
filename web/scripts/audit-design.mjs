@@ -10,7 +10,9 @@
  *   D1 · Contraste WCAG AA — cada par texto/superficie/tier debe ser >= 4.5:1.
  *   D2 · Drift de color de tier — los hex hardcodeados en WorldMap deben
  *        coincidir con los tokens de tailwind (origen del bug #323).
- *   D3 · Color retirado — el viejo tierA #b86b1f no debe reaparecer en ningún lado.
+ *   D3 · Off-palette — todo hex hardcodeado en app/components/css debe ser un
+ *        token de tailwind o estar en HEX_ALLOWLIST (con justificación). Caza
+ *        cualquier drift de color futuro, no solo el viejo #b86b1f de #323.
  *   D4 · Touch targets — ningún interactivo por debajo del mínimo WCAG 2.2 (24px).
  *
  * WARN (no rompe): touch targets entre 24 y 43px (recomendado 44).
@@ -93,15 +95,21 @@ for (const [key, token] of [["S", "tierS"], ["A", "tierA"], ["B", "tierB"]]) {
   }
 }
 
-// ── D3 · Color retirado (#b86b1f, viejo tierA pre-#312) ──────────────────────
-const RETIRED = ["#b86b1f"];
+// ── D3 · Off-palette — todo hex hardcodeado debe ser token o estar allowlisteado ─
+// Subsume el guard del viejo #b86b1f: cualquier hex no-token rompe el build.
+const TOKEN_VALUES = new Set(Object.values(tokens));
+const HEX_ALLOWLIST = new Set([
+  "#e8e4da", // fondo del canvas Leaflet (WorldMap) — base de mapa decorativa, no es token de texto
+]);
 for (const f of FILES) {
-  const txt = read(f);
-  for (const hex of RETIRED) {
-    if (txt.toLowerCase().includes(hex)) {
-      errors.push(`D3 color retirado: ${hex} reaparece en ${f} (usar el token vigente)`);
+  read(f).split("\n").forEach((line, i) => {
+    for (const m of line.matchAll(/#[0-9a-fA-F]{6}\b/g)) {
+      const hex = m[0].toLowerCase();
+      if (!TOKEN_VALUES.has(hex) && !HEX_ALLOWLIST.has(hex)) {
+        errors.push(`D3 off-palette: ${hex} en ${f}:${i + 1} — usar un token de tailwind o agregar a HEX_ALLOWLIST con justificación`);
+      }
     }
-  }
+  });
 }
 
 // ── D4 · Touch targets (min interactivo) ─────────────────────────────────────
