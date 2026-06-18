@@ -1,7 +1,6 @@
 import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { CategoryNav } from "@/components/CategoryNav";
-import { CorpusStats } from "@/components/CorpusStats";
 import { RegionFilter } from "@/components/RegionFilter";
 import { regionOf, type Region } from "@/lib/regions";
 import { T } from "@/components/T";
@@ -98,26 +97,6 @@ export default function CasesPage() {
           }))}
         />
       </div>
-
-      <details className="group">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border border-border bg-panel px-4 py-3 font-mono text-xs uppercase tracking-widest text-muted transition hover:border-accent/50 hover:text-accent">
-          <span>
-            <T
-              es="Estadísticas del corpus · distribución por era, patrones, países"
-              en="Corpus statistics · distribution by era, patterns, countries"
-            />
-          </span>
-          <span
-            aria-hidden
-            className="inline-block text-accent transition-transform group-open:rotate-180"
-          >
-            ▾
-          </span>
-        </summary>
-        <div className="mt-6">
-          <CorpusStats />
-        </div>
-      </details>
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
         <span className="font-mono uppercase tracking-widest text-muted/70">
