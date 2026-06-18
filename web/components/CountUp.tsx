@@ -23,6 +23,9 @@ export function CountUp({
   const [val, setVal] = useState(to);
 
   useEffect(() => {
+    // Animación de conteo: el estado se inicializa en mount (preferencias del
+    // navegador + arranque del rAF), no disponible en SSR.
+    /* eslint-disable react-hooks/set-state-in-effect */
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setVal(to);
       return;
@@ -30,6 +33,7 @@ export function CountUp({
     let raf = 0;
     let startT = 0;
     setVal(0);
+    /* eslint-enable react-hooks/set-state-in-effect */
     const step = (t: number) => {
       if (!startT) startT = t;
       const k = Math.min(1, (t - startT) / durationMs);

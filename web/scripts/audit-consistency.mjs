@@ -239,12 +239,6 @@ const EDITORIAL_RANGES_OK = new Set([
 ]);
 
 /**
- * Set of all override values across hypotheses — used to avoid flagging
- * a number as "drift from override X" when it's actually override Y.
- */
-const ALL_OVERRIDE_VALUES = new Set(Object.values(OVERRIDE_BY_ID));
-
-/**
  * Phrases that drifted out of the rename history. Forbidden anywhere
  * user-facing (app/ pages + case rationales rendered by the slug page).
  */

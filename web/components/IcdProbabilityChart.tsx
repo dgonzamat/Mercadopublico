@@ -3,7 +3,6 @@ import { cases } from "@/lib/data";
 import {
   evidenceCountFor,
   effectiveCalibration,
-  type CalibrationSource,
 } from "@/lib/hypothesisMapping";
 import { pctToIcdLabel } from "@/lib/icd203";
 import { T } from "@/components/T";

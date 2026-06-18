@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { STATS } from "@/lib/siteStats";
 
 export const metadata: Metadata = {
@@ -21,18 +22,18 @@ export default function NotFound() {
         prueba la lista completa de los {STATS.cases}.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <a
+        <Link
           href="/"
           className="rounded-none bg-accent px-4 py-2 text-sm font-medium text-bg hover:bg-text"
         >
           Volver al inicio
-        </a>
-        <a
+        </Link>
+        <Link
           href="/cases"
           className="rounded-none border border-border px-4 py-2 text-sm text-text hover:bg-panel"
         >
           Ver los {STATS.cases} casos
-        </a>
+        </Link>
       </div>
     </div>
   );

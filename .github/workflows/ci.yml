@@ -38,6 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
+      - name: Lint (ESLint)
+        run: npm run lint
+
       # `npm run build` encadena el prebuild (build-cases + audit-consistency)
       # y luego next build. Si los JSON de casos están rotos, si hay drift
       # numérico/textual (auditoría E1–E6), o si falla el type-check, este

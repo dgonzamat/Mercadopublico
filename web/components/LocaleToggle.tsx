@@ -57,6 +57,8 @@ export function LocaleToggle({
   useEffect(() => {
     const stored = localStorage.getItem("locale") as Locale | null;
     const initial: Locale = stored ?? detectLocale();
+    // Locale leído de localStorage/navegador en mount (no disponible en SSR).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLocale(initial);
     document.documentElement.dataset.locale = initial;
     document.documentElement.lang = initial;

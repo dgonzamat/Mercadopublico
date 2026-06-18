@@ -1,5 +1,4 @@
 import { cases, researchers, frameworks } from "./data";
-import type { CaseSource } from "./types";
 
 /**
  * Aggregate every source cited across the entire corpus into one
