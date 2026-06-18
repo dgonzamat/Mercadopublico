@@ -47,6 +47,7 @@ web/
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
     build-search-index.mjs
     audit-consistency.mjs # corre en prebuild; verifica % editoriales vs priors
+    audit-design.mjs      # corre en prebuild; contraste WCAG AA + drift de color de tier + touch targets
     validate-schema.mjs   # corre en prebuild; valida schema de cases/researchers
 ```
 
