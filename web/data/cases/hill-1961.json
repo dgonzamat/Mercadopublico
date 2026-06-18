@@ -22,6 +22,15 @@
     "8m"
   ],
   "category": "incident",
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Betty and Barney Hill Incident roadside marker.jpg?width=800",
+    "alt": "Marcador histórico estatal de New Hampshire que conmemora el incidente de abducción de Betty y Barney Hill de 1961.",
+    "caption": "Marcador histórico del estado de New Hampshire (instalado en 2011) en la ruta US-3, que conmemora el avistamiento y la reportada abducción de Betty y Barney Hill la noche del 19-20 de septiembre de 1961 — el primer caso de abducción ampliamente difundido en EE.UU.",
+    "caption_en": "New Hampshire state historical marker (installed 2011) on US-3, commemorating the sighting and reported abduction of Betty and Barney Hill on the night of 19-20 September 1961 — the first widely publicized abduction case in the U.S.",
+    "source": "Kenneth C. Zirkel (Wikimedia Commons)",
+    "license": "CC BY-SA 4.0",
+    "href": "https://commons.wikimedia.org/wiki/File:Betty_and_Barney_Hill_Incident_roadside_marker.jpg"
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "fenomenos-naturales",
