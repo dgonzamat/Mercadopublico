@@ -18,7 +18,9 @@ const config: Config = {
         // CC-1 · mismo matiz, más luz — para text-accent sobre bg-text (5.4:1 AA)
         "accent-bright": "#ee6075",
         tierS: "#8b0000",
-        tierA: "#b86b1f",
+        // Oscurecido desde #b86b1f (3.65:1, fallaba AA) → 4.84:1 sobre bg,
+        // mismo matiz naranja. AA texto normal para el badge Tier A.
+        tierA: "#9c5a18",
         tierB: "#1e4f8b",
       },
       fontFamily: {
