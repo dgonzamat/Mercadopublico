@@ -1,0 +1,64 @@
+{
+  "id": "project-condign-2000",
+  "num": 231,
+  "name": "Project Condign · estudio UAP del MoD británico",
+  "name_en": "Project Condign · UK MoD UAP study",
+  "year_start": 2000,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 51.5033,
+    "lng": -0.1276,
+    "place": "Defence Intelligence Staff · Ministry of Defence, Londres",
+    "place_en": "Defence Intelligence Staff · Ministry of Defence, London"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 60,
+  "summary": "Estudio secreto del Defence Intelligence Staff del Ministerio de Defensa británico ('Unidentified Aerial Phenomena in the UK Air Defence Region'), completado en 2000 y desclasificado en 2006 vía FOIA. Concluyó que los UAP son reales pero sin evidencia de origen no humano ni intención hostil — y atribuyó muchos a plasmas atmosféricos poco comprendidos ('buoyant plasmas').",
+  "summary_en": "Secret study by the UK Ministry of Defence's Defence Intelligence Staff ('Unidentified Aerial Phenomena in the UK Air Defence Region'), completed in 2000 and declassified in 2006 via FOIA. It concluded UAP are real but with no evidence of non-human origin or hostile intent — and attributed many to poorly understood atmospheric plasmas ('buoyant plasmas').",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "Project Condign fue un estudio de inteligencia encargado por el Defence Intelligence Staff (DIS) del Ministerio de Defensa del Reino Unido a fines de los años 90, completado en un informe de unas 460 páginas hacia diciembre de 2000 bajo el título 'Unidentified Aerial Phenomena in the UK Air Defence Region'. Permaneció clasificado hasta mayo de 2006, cuando fue liberado vía Freedom of Information Act a los investigadores David Clarke y Gary Anthony. Su autor permaneció anónimo.\n\nEl informe aceptó que los UAP son fenómenos físicos reales que aparecen de manera recurrente en el espacio aéreo británico, pero concluyó que no había evidencia de que representaran una amenaza hostil ni un origen extraterrestre. Su hipótesis central atribuyó una porción significativa de los casos a fenómenos de plasma atmosférico poco comprendidos —masas de gas cargado y flotante ('buoyant charged plasmas')— y sugirió que campos electromagnéticos asociados podrían inducir efectos perceptuales en los observadores. La conclusión de plasma es discutida: muchos investigadores la consideran insuficiente para los casos con maniobra estructurada. El expediente entra al corpus por su solidez documental (informe oficial del MoD, desclasificado y auditable) y como el ancla institucional británica de la hipótesis de fenómenos naturales.",
+  "whatHappened_en": "Project Condign was an intelligence study commissioned by the UK Ministry of Defence's Defence Intelligence Staff (DIS) in the late 1990s, completed as a roughly 460-page report around December 2000 under the title 'Unidentified Aerial Phenomena in the UK Air Defence Region'. It remained classified until May 2006, when it was released via the Freedom of Information Act to researchers David Clarke and Gary Anthony. Its author remained anonymous.\n\nThe report accepted that UAP are real physical phenomena recurring in British airspace, but concluded there was no evidence they represented a hostile threat or an extraterrestrial origin. Its central hypothesis attributed a significant share of cases to poorly understood atmospheric plasma phenomena —masses of buoyant charged gas ('buoyant charged plasmas')— and suggested associated electromagnetic fields could induce perceptual effects in observers. The plasma conclusion is contested: many researchers consider it insufficient for cases with structured maneuvering. The file enters the corpus for its documentary solidity (official MoD report, declassified and auditable) and as the British institutional anchor of the natural-phenomena hypothesis.",
+  "whyMatters": "Es uno de los pocos estudios oficiales de un ministerio de defensa occidental que abordó los UAP de forma sistemática y terminó por escrito — y el ancla institucional británica de la hipótesis natural. Su valor es doble: confirma que el MoD trató el fenómeno como real y digno de estudio clasificado, y a la vez ofrece la explicación 'plasma atmosférico' que el corpus pondera en la hipótesis de fenómenos naturales. Su límite es el mismo que el de esa hipótesis: el plasma flota y brilla, pero no maniobra, por lo que la atribución no cubre los casos con control intencional. Tier A por la solidez documental (informe MoD desclasificado), no por la fuerza de su conclusión, que es contestada.",
+  "whyMatters_en": "It is one of the few official Western defence-ministry studies that addressed UAP systematically and committed conclusions to paper — and the British institutional anchor of the natural hypothesis. Its value is twofold: it confirms the MoD treated the phenomenon as real and worthy of classified study, and it offers the 'atmospheric plasma' explanation the corpus weighs in the natural-phenomena hypothesis. Its limit is the same as that hypothesis's: plasma floats and glows but does not maneuver, so the attribution does not cover cases with intentional control. Tier A for documentary solidity (declassified MoD report), not for the strength of its conclusion, which is contested.",
+  "evidence": [
+    "Informe del Defence Intelligence Staff (MoD) 'Unidentified Aerial Phenomena in the UK Air Defence Region', completado ~dic 2000",
+    "Desclasificado en mayo de 2006 vía FOIA a David Clarke y Gary Anthony",
+    "Conclusión: UAP reales, sin evidencia de hostilidad ni origen no humano",
+    "Atribución central a plasmas atmosféricos flotantes ('buoyant charged plasmas') y posibles efectos perceptuales por campos EM",
+    "Autor anónimo; ~460 páginas"
+  ],
+  "evidence_en": [
+    "Defence Intelligence Staff (MoD) report 'Unidentified Aerial Phenomena in the UK Air Defence Region', completed ~Dec 2000",
+    "Declassified May 2006 via FOIA to David Clarke and Gary Anthony",
+    "Conclusion: UAP real, no evidence of hostility or non-human origin",
+    "Central attribution to buoyant atmospheric plasmas ('buoyant charged plasmas') and possible perceptual effects from EM fields",
+    "Anonymous author; ~460 pages"
+  ],
+  "sources": [
+    {
+      "name": "The National Archives (UK) — Project Condign / DIS UAP report (FOIA 2006)",
+      "url": "https://www.nationalarchives.gov.uk/ufos/",
+      "note": "Liberación oficial del informe."
+    },
+    {
+      "name": "Clarke, D. — 'The UFO Files' (The National Archives) — análisis del Project Condign",
+      "url": "https://drdavidclarke.co.uk/national-archives/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "fenomenos-naturales",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Estudio oficial del MoD británico que atribuye una porción significativa de los UAP a plasmas atmosféricos flotantes poco comprendidos — la versión institucional más fuerte de la hipótesis natural junto a Hessdalen. Modest, no más: la conclusión de plasma es contestada y, por la propia lógica de la hipótesis, no cubre los casos con maniobra estructurada (el plasma no maniobra). Pesa como respaldo institucional documentado a la familia natural, no como prueba de que todos los casos sean plasma.",
+      "rationaleEn": "Official UK MoD study attributing a significant share of UAP to poorly understood buoyant atmospheric plasmas — the strongest institutional version of the natural hypothesis alongside Hessdalen. Modest, no more: the plasma conclusion is contested and, by the hypothesis's own logic, does not cover cases with structured maneuvering (plasma does not maneuver). It weighs as documented institutional backing for the natural family, not as proof that all cases are plasma."
+    }
+  ]
+}

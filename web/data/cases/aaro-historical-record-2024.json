@@ -1,0 +1,70 @@
+{
+  "id": "aaro-historical-record-2024",
+  "num": 234,
+  "name": "AARO · Historical Record Report, Volumen 1 (2024)",
+  "name_en": "AARO · Historical Record Report, Volume 1 (2024)",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8709,
+    "lng": -77.0553,
+    "place": "All-domain Anomaly Resolution Office · Pentágono"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 70,
+  "summary": "El 8 de marzo de 2024 la AARO publicó el Volumen 1 de su 'Report on the Historical Record of U.S. Government Involvement with UAP'. Tras revisar el período 1945–2023, concluyó que no halló evidencia de que ninguna investigación oficial confirmara tecnología extraterrestre ni de programas de ingeniería inversa — atribuyendo las creencias a identificaciones erróneas, confusión burocrática y reportes circulares. Es el ancla institucional escéptica más fuerte del corpus.",
+  "summary_en": "On March 8, 2024, AARO published Volume 1 of its 'Report on the Historical Record of U.S. Government Involvement with UAP'. After reviewing the 1945–2023 period, it concluded it found no evidence that any official investigation confirmed extraterrestrial technology or reverse-engineering programs — attributing the beliefs to misidentifications, bureaucratic confusion and circular reporting. It is the corpus's strongest skeptical institutional anchor.",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "La All-domain Anomaly Resolution Office (AARO), creada por el Pentágono en 2022, recibió del Congreso el mandato de revisar el registro histórico de la participación del gobierno estadounidense con los UAP. El Volumen 1 del informe resultante se publicó el 8 de marzo de 2024 y abarca el período de 1945 a octubre de 2023, basándose en archivos clasificados y no clasificados, entrevistas y revisión de todos los programas y nombres en clave alegados.\n\nSu conclusión central es escéptica y directa: AARO no encontró evidencia de que ninguna investigación —gubernamental, académica o privada— haya confirmado la existencia de tecnología de origen extraterrestre, ni evidencia de programas de recuperación o ingeniería inversa de craft no humano. Atribuyó la persistencia de esas creencias a una combinación de identificaciones erróneas de sistemas reales (a menudo programas clasificados propios), malentendidos burocráticos, y un fenómeno de 'reporte circular' donde la misma afirmación no verificada se cita a sí misma a través de múltiples fuentes. El informe rebate explícitamente afirmaciones del estilo de las de David Grusch. Es deliberadamente la contraparte institucional del polo de divulgación: misma materia, conclusión opuesta.",
+  "whatHappened_en": "The All-domain Anomaly Resolution Office (AARO), created by the Pentagon in 2022, was tasked by Congress to review the historical record of U.S. government involvement with UAP. Volume 1 of the resulting report was published on March 8, 2024, covering the 1945 to October 2023 period, drawing on classified and unclassified archives, interviews and a review of all alleged programs and code names.\n\nIts central conclusion is skeptical and direct: AARO found no evidence that any investigation —governmental, academic or private— confirmed the existence of technology of extraterrestrial origin, nor evidence of programs to recover or reverse-engineer non-human craft. It attributed the persistence of such beliefs to a combination of misidentifications of real systems (often one's own classified programs), bureaucratic misunderstandings, and a 'circular reporting' phenomenon where the same unverified claim cites itself across multiple sources. The report explicitly rebuts claims of the kind made by David Grusch. It is deliberately the institutional counterpart to the disclosure pole: same subject, opposite conclusion.",
+  "whyMatters": "Es el ancla escéptica oficial más fuerte del corpus, y por eso indispensable para la honestidad de la calibración: contrapesa las adiciones recientes del polo de divulgación (Grusch, Immaculate Constellation, plasmoides). Una agencia federal con acceso a archivos clasificados revisó el registro completo 1945–2023 y concluyó por escrito que no hay evidencia de tecnología no humana ni de ingeniería inversa. Su límite es simétrico al de su contraparte: 'no encontramos evidencia' no es lo mismo que 'no existe', y los críticos señalan que AARO no tuvo acceso a los SAP no reconocidos que Grusch alega. Pero como dato institucional documentado, baja la presión sobre las hipótesis de ingeniería inversa y entidades no humanas. Tier A por solidez documental e impacto.",
+  "whyMatters_en": "It is the corpus's strongest official skeptical anchor, and therefore indispensable for calibration honesty: it counterweights the recent additions from the disclosure pole (Grusch, Immaculate Constellation, plasmoids). A federal agency with access to classified archives reviewed the full 1945–2023 record and concluded in writing that there is no evidence of non-human technology or reverse-engineering. Its limit is symmetric to its counterpart's: 'we found no evidence' is not the same as 'it does not exist', and critics note AARO lacked access to the unacknowledged SAPs Grusch alleges. But as a documented institutional datum, it lowers the pressure on the reverse-engineering and non-human-entities hypotheses. Tier A for documentary solidity and impact.",
+  "evidence": [
+    "AARO 'Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1', publicado el 8 mar 2024",
+    "Cubre 1945–oct 2023; basado en archivos clasificados/no clasificados, entrevistas y revisión de programas y nombres en clave alegados",
+    "Conclusión: sin evidencia de confirmación de tecnología ET ni de programas de recuperación/ingeniería inversa",
+    "Atribuye las creencias a identificación errónea (a menudo de programas clasificados propios), confusión burocrática y 'reporte circular'",
+    "Rebate explícitamente afirmaciones del tipo de las de Grusch"
+  ],
+  "evidence_en": [
+    "AARO 'Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1', published March 8, 2024",
+    "Covers 1945–Oct 2023; based on classified/unclassified archives, interviews and review of alleged programs and code names",
+    "Conclusion: no evidence of confirmed ET technology or of recovery/reverse-engineering programs",
+    "Attributes the beliefs to misidentification (often of one's own classified programs), bureaucratic confusion and 'circular reporting'",
+    "Explicitly rebuts Grusch-style claims"
+  ],
+  "sources": [
+    {
+      "name": "AARO — 'Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1' (8 mar 2024)",
+      "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
+      "note": "Documento primario oficial de la AARO."
+    },
+    {
+      "name": "AARO — página oficial de informes",
+      "url": "https://www.aaro.mil/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "ingenieria-inversa",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Una agencia federal con acceso a archivos clasificados revisó el registro 1945–2023 y concluyó por escrito que no halló evidencia de programas de recuperación o ingeniería inversa de craft no humano. Es la contraparte institucional directa de las afirmaciones de Grusch/Immaculate Constellation. Weakens modest, no más: 'no encontramos evidencia' no equivale a 'no existe', y AARO no tuvo acceso declarado a los SAP no reconocidos alegados — pero como dato oficial documentado, resta presión real a la hipótesis.",
+      "rationaleEn": "A federal agency with access to classified archives reviewed the 1945–2023 record and concluded in writing that it found no evidence of programs to recover or reverse-engineer non-human craft. It is the direct institutional counterpart to the Grusch/Immaculate Constellation claims. Weakens modest, no more: 'we found no evidence' does not equal 'it does not exist', and AARO had no declared access to the alleged unacknowledged SAPs — but as an official documented datum, it genuinely reduces pressure on the hypothesis."
+    },
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "El informe no halló evidencia de confirmación de tecnología de origen extraterrestre en todo el registro histórico revisado. Minimal: aplica a la confirmación documental de NHI vía programas USG, no a la totalidad de la hipótesis paraguas (que se sostiene por instrumentación multi-sensor independiente, fuera del alcance del informe). Ausencia de evidencia institucional, no evidencia de ausencia.",
+      "rationaleEn": "The report found no evidence confirming technology of extraterrestrial origin across the entire historical record reviewed. Minimal: it applies to the documentary confirmation of NHI via USG programs, not to the whole umbrella hypothesis (sustained by independent multi-sensor instrumentation, outside the report's scope). Absence of institutional evidence, not evidence of absence."
+    }
+  ]
+}
