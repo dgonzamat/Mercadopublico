@@ -1,0 +1,63 @@
+{
+  "id": "odni-preliminary-assessment-2021",
+  "num": 232,
+  "name": "ODNI · Preliminary Assessment de UAP (2021)",
+  "name_en": "ODNI · Preliminary Assessment of UAP (2021)",
+  "year_start": 2021,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.9543,
+    "lng": -77.1466,
+    "place": "Office of the Director of National Intelligence · McLean, Virginia"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 75,
+  "summary": "El primer informe público moderno del gobierno de EE.UU. sobre UAP: la 'Preliminary Assessment' de la ODNI, entregada al Congreso el 25 de junio de 2021. Revisó 144 reportes de fuentes oficiales (2004–2021); explicó solo uno (un globo desinflándose) y dejó 143 sin resolver por datos insuficientes, sin atribuirlos a tecnología extranjera ni descartar nada.",
+  "summary_en": "The first modern public U.S. government report on UAP: the ODNI 'Preliminary Assessment', delivered to Congress on June 25, 2021. It reviewed 144 reports from official sources (2004–2021); explained only one (a deflating balloon) and left 143 unresolved due to insufficient data, without attributing them to foreign technology or ruling anything out.",
+  "patterns": [
+    "8e",
+    "8n"
+  ],
+  "category": "document",
+  "whatHappened": "Tras la inclusión de una cláusula en la Intelligence Authorization Act, la Office of the Director of National Intelligence (ODNI), junto con el UAP Task Force del Pentágono, entregó al Congreso el 25 de junio de 2021 un informe no clasificado de nueve páginas: 'Preliminary Assessment: Unidentified Aerial Phenomena'. Fue el primer reconocimiento público y sistemático del gobierno estadounidense moderno de que el fenómeno es un problema de inteligencia legítimo.\n\nEl informe analizó 144 reportes UAP originados en fuentes del gobierno entre 2004 y 2021. De ellos, solo uno fue resuelto con confianza (identificado como un globo que se desinflaba); los 143 restantes quedaron sin explicación, atribuidos a datos insuficientes más que a una conclusión sobre su naturaleza. Señaló que un subconjunto exhibió características de vuelo inusuales (aparente movimiento sin medios de propulsión visibles) que requerían análisis adicional, y enumeró cinco categorías explicativas potenciales (desorden aéreo, fenómenos atmosféricos naturales, programas de desarrollo de EE.UU., sistemas adversarios extranjeros, y un cajón 'otros'). No afirmó origen extraterrestre ni lo descartó. Su valor es procedural y de encuadre: estableció la base institucional sobre la que se construyeron la AARO, las audiencias y el ciclo de divulgación posterior.",
+  "whatHappened_en": "Following a clause inserted into the Intelligence Authorization Act, the Office of the Director of National Intelligence (ODNI), together with the Pentagon's UAP Task Force, delivered to Congress on June 25, 2021 a nine-page unclassified report: 'Preliminary Assessment: Unidentified Aerial Phenomena'. It was the first public, systematic acknowledgment by the modern U.S. government that the phenomenon is a legitimate intelligence problem.\n\nThe report analyzed 144 UAP reports originating from government sources between 2004 and 2021. Of these, only one was confidently resolved (identified as a deflating balloon); the remaining 143 were left unexplained, attributed to insufficient data rather than a conclusion about their nature. It noted that a subset exhibited unusual flight characteristics (apparent movement without visible means of propulsion) requiring further analysis, and listed five potential explanatory categories (airborne clutter, natural atmospheric phenomena, U.S. developmental programs, foreign adversary systems, and an 'other' bin). It neither asserted nor ruled out extraterrestrial origin. Its value is procedural and framing: it established the institutional baseline on which AARO, the hearings and the later disclosure cycle were built.",
+  "whyMatters": "Es el documento fundacional del ciclo UAP moderno: el primer reconocimiento oficial público de que el gobierno de EE.UU. no puede explicar la mayoría de sus propios reportes UAP. El dato duro —143 de 144 sin resolver— no prueba nada exótico (el propio informe lo atribuye a datos insuficientes), pero sí erosiona la lectura escéptica fuerte de que 'todo es identificación errónea trivial': si lo fuera, la comunidad de inteligencia habría cerrado los 144. Su agnosticismo deliberado (cinco categorías, ninguna conclusión) es el patrón institucional que el corpus rastrea. Tier A por solidez documental e impacto institucional, no por fuerza evidencial sobre la naturaleza del fenómeno.",
+  "whyMatters_en": "It is the founding document of the modern UAP cycle: the first official public acknowledgment that the U.S. government cannot explain most of its own UAP reports. The hard datum —143 of 144 unresolved— proves nothing exotic (the report itself attributes it to insufficient data), but it does erode the strong skeptical reading that 'it's all trivial misidentification': if it were, the intelligence community would have closed all 144. Its deliberate agnosticism (five categories, no conclusion) is the institutional pattern the corpus tracks. Tier A for documentary solidity and institutional impact, not for evidential strength about the nature of the phenomenon.",
+  "evidence": [
+    "Informe no clasificado de la ODNI 'Preliminary Assessment: Unidentified Aerial Phenomena', entregado al Congreso el 25 jun 2021",
+    "144 reportes UAP de fuentes gubernamentales (2004–2021); solo 1 resuelto (globo desinflándose), 143 sin explicar por datos insuficientes",
+    "Subconjunto con características de vuelo inusuales señaladas para análisis adicional",
+    "Cinco categorías explicativas potenciales enumeradas; sin afirmar ni descartar origen no humano",
+    "Producido en conjunto con el UAP Task Force del Pentágono"
+  ],
+  "evidence_en": [
+    "ODNI unclassified report 'Preliminary Assessment: Unidentified Aerial Phenomena', delivered to Congress June 25, 2021",
+    "144 UAP reports from government sources (2004–2021); only 1 resolved (deflating balloon), 143 unexplained due to insufficient data",
+    "Subset with unusual flight characteristics flagged for further analysis",
+    "Five potential explanatory categories listed; neither asserting nor ruling out non-human origin",
+    "Produced jointly with the Pentagon's UAP Task Force"
+  ],
+  "sources": [
+    {
+      "name": "ODNI — 'Preliminary Assessment: Unidentified Aerial Phenomena' (25 jun 2021)",
+      "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf",
+      "note": "Documento primario oficial."
+    },
+    {
+      "name": "ODNI — página oficial de informes UAP",
+      "url": "https://www.dni.gov/index.php/newsroom/reports-publications"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "La propia comunidad de inteligencia revisó 144 reportes de fuentes oficiales y solo pudo resolver uno como mundano (globo). Eso tensiona —débilmente— la lectura escéptica fuerte de que todo es identificación errónea trivial: si lo fuera, el aparato habría cerrado más casos. Minimal porque el informe atribuye explícitamente los 143 restantes a datos insuficientes, no a 'no es mundano'; no es una refutación de la misidentificación, solo una fricción.",
+      "rationaleEn": "The intelligence community itself reviewed 144 reports from official sources and could only resolve one as mundane (a balloon). That weakly strains the strong skeptical reading that it's all trivial misidentification: if it were, the apparatus would have closed more cases. Minimal because the report explicitly attributes the remaining 143 to insufficient data, not to 'it's not mundane'; it is not a refutation of misidentification, only friction."
+    }
+  ]
+}
