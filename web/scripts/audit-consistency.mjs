@@ -598,6 +598,52 @@ for (const c of cases) {
   }
 }
 
+// ─── 9c. RULE E10: prose bilingual completeness (ERROR) ──────────────────
+//
+// Calidad como patrón del audit: si un campo de prosa ES-first existe, su
+// traducción _en es obligatoria — el toggle de idioma renderiza ambos, y un
+// _en ausente deja al lector inglés con texto en español. summary/whatHappened/
+// whyMatters son strings; evidence es array. (sources se exime: suele ser
+// URLs/nombres propios neutrales.)
+
+const PROSE_PAIRS = [
+  ["summary", "summary_en"],
+  ["whatHappened", "whatHappened_en"],
+  ["whyMatters", "whyMatters_en"],
+];
+for (const c of cases) {
+  const file = path.join(casesDir, c.id + ".json");
+  for (const [es, en] of PROSE_PAIRS) {
+    if (c[es] && !c[en]) {
+      record("ERROR", file, 0, `E10 i18n: campo ES "${es}" sin traducción "${en}" (case ${c.id}) — la prosa debe ser bilingüe`);
+    }
+  }
+  if (Array.isArray(c.evidence) && c.evidence.length && (!Array.isArray(c.evidence_en) || !c.evidence_en.length)) {
+    record("ERROR", file, 0, `E10 i18n: "evidence" sin "evidence_en" (case ${c.id}) — la lista de evidencia debe ser bilingüe`);
+  }
+}
+
+// ─── 9d. RULE E11: proper-noun fields with Spanish but no _en (WARN) ──────
+//
+// name y location.place pueden ser nombres propios idénticos en EN (Roswell,
+// Lake Huron) — ahí _en es innecesario. Pero si contienen español descriptivo
+// (Nuevo México, Departamento de Guerra, Cielo sobre…) y falta _en, el modo
+// inglés muestra español. Heurística conservadora (sin diacríticos sueltos,
+// para no marcar topónimos propios como Pará/Popocatépetl). WARN, no ERROR.
+
+const ES_DESC_RE =
+  /\b(sobre|cerca|entre|frente|cielo|fuerzas?|guerra|ministerio|departamento|ej[eé]rcito|a[eé]reo|a[eé]rea|nuevo|nueva|norte|sur|isla|islas|oc[eé]ano|provincias?|distrito|ubicaci[oó]n|reportes?|renombrado|defensa|nacional|c[aá]mara|esc(o|ó)cia|francia|brasil|b[eé]lgica|alemania|jap[oó]n|estado mayor|guerra)\b/i;
+for (const c of cases) {
+  const file = path.join(casesDir, c.id + ".json");
+  if (c.name && !c.name_en && ES_DESC_RE.test(c.name)) {
+    record("WARN", file, 0, `E11 i18n: "name" con español "${(c.name.match(ES_DESC_RE) || [])[0]}" sin name_en (case ${c.id})`);
+  }
+  const place = c.location && c.location.place;
+  if (place && !(c.location && c.location.place_en) && ES_DESC_RE.test(place)) {
+    record("WARN", file, 0, `E11 i18n: "place" con español "${(place.match(ES_DESC_RE) || [])[0]}" sin place_en (case ${c.id})`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
