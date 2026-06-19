@@ -1,0 +1,63 @@
+{
+  "id": "sturrock-panel-1998",
+  "num": 237,
+  "name": "Panel Sturrock · revisión científica de evidencia física (1998)",
+  "name_en": "Sturrock Panel · scientific review of physical evidence (1998)",
+  "year_start": 1998,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 41.0918,
+    "lng": -73.8587,
+    "place": "Pocantico Conference Center, Tarrytown, Nueva York"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 60,
+  "summary": "En 1997 el astrofísico de Stanford Peter Sturrock convocó un panel de científicos para revisar la evidencia física asociada a casos UAP. El informe (1998) concluyó que algunos casos presentan datos físicos sin explicar que merecen estudio científico — sin afirmar origen extraterrestre, pero rompiendo el tabú de que el tema no es investigable.",
+  "summary_en": "In 1997 Stanford astrophysicist Peter Sturrock convened a panel of scientists to review the physical evidence associated with UAP cases. The report (1998) concluded that some cases present unexplained physical data deserving scientific study — without asserting extraterrestrial origin, but breaking the taboo that the subject is not investigable.",
+  "patterns": [
+    "8e",
+    "8j"
+  ],
+  "category": "document",
+  "whatHappened": "El astrofísico de la Universidad de Stanford Peter A. Sturrock organizó en 1997 un taller (el Pocantico Workshop, financiado por Laurance Rockefeller) que reunió a un panel de físicos y científicos para examinar, por primera vez en décadas y de forma independiente, la evidencia física reportada en casos UAP: marcas en el suelo, efectos en vehículos, daño a vegetación, fotografías y datos de radar.\n\nEl informe resultante, publicado en 1998 (y luego en el Journal of Scientific Exploration), concluyó que aunque ningún caso constituía prueba de origen extraterrestre, un subconjunto presentaba fenómenos físicos sin explicación convencional que justificaban investigación científica seria y continuada. Recomendó que la comunidad científica tratara el tema como un problema empírico legítimo y que se mejorara la calidad instrumental de los datos. El panel Sturrock es el precursor directo, dos décadas antes, del enfoque que NASA adoptaría en 2023: ni afirmación exótica ni descarte, sino llamado al rigor sobre los datos físicos. Entra al corpus como documento de método científico, no como evidencia del fenómeno.",
+  "whatHappened_en": "Stanford University astrophysicist Peter A. Sturrock organized in 1997 a workshop (the Pocantico Workshop, funded by Laurance Rockefeller) that gathered a panel of physicists and scientists to examine, for the first time in decades and independently, the physical evidence reported in UAP cases: ground marks, vehicle effects, vegetation damage, photographs and radar data.\n\nThe resulting report, published in 1998 (and later in the Journal of Scientific Exploration), concluded that although no case constituted proof of extraterrestrial origin, a subset presented physical phenomena without conventional explanation that warranted serious and continued scientific investigation. It recommended the scientific community treat the subject as a legitimate empirical problem and that the instrumental quality of data be improved. The Sturrock panel is the direct precursor, two decades earlier, of the approach NASA would adopt in 2023: neither exotic assertion nor dismissal, but a call for rigor on the physical data. It enters the corpus as a scientific-method document, not as evidence of the phenomenon.",
+  "whyMatters": "Es el puente entre el folklore y la ciencia: el primer panel de físicos en décadas que revisó la evidencia física UAP y concluyó que parte de ella merece estudio — rompiendo el tabú heredado del Condon Report de que el tema no es investigable. Su importancia es metodológica y de legitimación, no probatoria: no afirma nada exótico, pide datos mejores. Anticipa por 25 años el informe de NASA 2023. Tier A por la solidez del proceso (panel científico nombrado, publicación revisada), no por una conclusión sobre la naturaleza del fenómeno.",
+  "whyMatters_en": "It is the bridge between folklore and science: the first panel of physicists in decades to review UAP physical evidence and conclude that part of it merits study — breaking the taboo inherited from the Condon Report that the subject is not investigable. Its importance is methodological and legitimizing, not probative: it asserts nothing exotic, it asks for better data. It anticipates NASA's 2023 report by 25 years. Tier A for the solidity of the process (named scientific panel, peer-reviewed publication), not for a conclusion about the nature of the phenomenon.",
+  "evidence": [
+    "Pocantico Workshop (1997) convocado por el astrofísico Peter A. Sturrock (Stanford), financiado por Laurance Rockefeller",
+    "Panel de físicos/científicos revisó evidencia física: marcas de suelo, efectos en vehículos, vegetación, fotos, radar",
+    "Informe (1998), luego en el Journal of Scientific Exploration",
+    "Conclusión: ningún caso prueba origen ET, pero un subconjunto presenta física sin explicación que merece estudio serio",
+    "Recomendación: tratar el tema como problema empírico legítimo; mejorar la calidad instrumental de los datos"
+  ],
+  "evidence_en": [
+    "Pocantico Workshop (1997) convened by astrophysicist Peter A. Sturrock (Stanford), funded by Laurance Rockefeller",
+    "Panel of physicists/scientists reviewed physical evidence: ground marks, vehicle effects, vegetation, photos, radar",
+    "Report (1998), later in the Journal of Scientific Exploration",
+    "Conclusion: no case proves ET origin, but a subset presents unexplained physics meriting serious study",
+    "Recommendation: treat the subject as a legitimate empirical problem; improve instrumental data quality"
+  ],
+  "sources": [
+    {
+      "name": "Sturrock, P. et al. — 'Physical Evidence Related to UFO Reports' (Pocantico Report, 1998), Journal of Scientific Exploration",
+      "url": "https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+      "note": "Documento primario."
+    },
+    {
+      "name": "Pocantico / Sturrock Panel — entrada enciclopédica",
+      "url": "https://en.wikipedia.org/wiki/Sturrock_panel"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Un panel independiente de físicos revisó la evidencia física UAP y concluyó que un subconjunto presenta fenómenos sin explicación convencional que merecen estudio. Tensiona débilmente la lectura de que todo es identificación errónea: científicos calificados no pudieron descartar todo el residuo físico. Minimal: el panel explícitamente no afirma nada exótico y enfatiza la necesidad de mejores datos — es un llamado al método, no una conclusión positiva.",
+      "rationaleEn": "An independent panel of physicists reviewed UAP physical evidence and concluded a subset presents phenomena without conventional explanation that merit study. It weakly strains the reading that it's all misidentification: qualified scientists could not dismiss the entire physical residue. Minimal: the panel explicitly asserts nothing exotic and emphasizes the need for better data — it is a call to method, not a positive conclusion."
+    }
+  ]
+}
