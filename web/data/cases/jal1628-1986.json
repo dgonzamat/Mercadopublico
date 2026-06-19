@@ -85,8 +85,8 @@
       "hypothesisId": "fenomenos-naturales",
       "direction": "weakens",
       "strength": "modest",
-      "rationale": "Retorno radar FAA persistente + observación visual prolongada (45 min) + IR del 747 a 35,000 pies son incompatibles con plasma, mirage o aurora.",
-      "rationaleEn": "Persistent FAA radar return + prolonged visual observation (45 min) + IR from the 747 at 35,000 feet are incompatible with plasma, mirage or aurora."
+      "rationale": "Retorno radar FAA persistente + observación visual prolongada (~50 min) + IR del 747 a 35,000 pies son incompatibles con plasma, mirage o aurora.",
+      "rationaleEn": "Persistent FAA radar return + prolonged visual observation (~50 min) + IR from the 747 at 35,000 feet are incompatible with plasma, mirage or aurora."
     }
   ]
 }

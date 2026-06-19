@@ -37,19 +37,20 @@
   "evidence": [
     "Reporte oficial Regimiento Caracoles, Ejército de Chile (abril 1977)",
     "Testimonio convergente de seis soldados sobre crecimiento de barba y reloj adelantado",
-    "Documentación CEFAA (FACh) preservada en corpus oficial",
-    "Examen médico/psicológico de Valdés en hospital militar de Iquique"
+    "Amplia cobertura de la prensa chilena contemporánea (1977)",
+    "Evaluación médica de Valdés en un recinto militar tras el evento"
   ],
   "evidence_en": [
     "Official report from the Caracoles Regiment, Chilean Army (April 1977)",
     "Convergent testimony from six soldiers about beard growth and advanced watch",
-    "CEFAA (FACh) documentation preserved in the official corpus",
-    "Medical/psychological examination of Valdés at the Iquique military hospital"
+    "Extensive contemporary Chilean press coverage (1977)",
+    "Medical evaluation of Valdés at a military facility after the event"
   ],
   "sources": [
     {
       "name": "CEFAA / DGAC Chile — Comité de Estudios de Fenómenos Aéreos Anómalos",
-      "url": "https://www.dgac.gob.cl/cefaa-un-modelo-investigativo-de-fenomenos-aereos-anomalos/"
+      "url": "https://www.dgac.gob.cl/cefaa-un-modelo-investigativo-de-fenomenos-aereos-anomalos/",
+      "note": "Organismo oficial chileno creado en 1997; referencia institucional, no fuente contemporánea del caso de 1977."
     },
     {
       "name": "Caso Cabo Valdés — Wikipedia (ES)",
