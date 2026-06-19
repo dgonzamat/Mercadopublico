@@ -15,8 +15,8 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 70,
-  "summary": "~2,000 reportes en Suecia 1946. Försvarsstaben emite comunicado oficial: 225 casos clasificados como 'objetos físicos reales' tras revisión institucional.",
-  "summary_en": "~2,000 reports across Sweden 1946. Försvarsstaben issues official statement: 225 cases classified as 'real physical objects' after institutional review.",
+  "summary": "Durante 1946 se registraron unos 2.000 reportes de proyectiles no identificados sobre Suecia; tras revisarlos, el Estado Mayor de Defensa sueco (Försvarsstaben) clasificó 225 casos como 'objetos físicos reales' que no pudo explicar.",
+  "summary_en": "During 1946 some 2,000 reports of unidentified projectiles were logged over Sweden; after reviewing them, the Swedish Defence Staff (Försvarsstaben) classified 225 cases as 'real physical objects' it could not explain.",
   "patterns": [
     "8a",
     "8e",

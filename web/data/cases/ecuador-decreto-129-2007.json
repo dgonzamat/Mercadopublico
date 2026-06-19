@@ -16,8 +16,8 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 75,
-  "summary": "Decreto presidencial desclasifica archivos FAE, incluido encuentro Mirage sobre la Amazonía con maniobras imposibles.",
-  "summary_en": "Presidential decree declassifies FAE archives, including a Mirage encounter over the Amazon with impossible maneuvers.",
+  "summary": "El 17 de mayo de 2007, el Decreto Ejecutivo N° 129 ordenó la desclasificación de los archivos de la Fuerza Aérea Ecuatoriana (FAE) sobre observaciones aéreas anómalas, incluido el encuentro de 1989 entre un caza Mirage F.1 y un objeto no identificado sobre la Amazonía ecuatoriana.",
+  "summary_en": "On 17 May 2007, Executive Decree No. 129 ordered the declassification of the Ecuadorian Air Force (FAE) files on anomalous aerial observations, including the 1989 encounter between a Mirage F.1 fighter and an unidentified object over the Ecuadorian Amazon.",
   "patterns": [
     "8q",
     "8e"
