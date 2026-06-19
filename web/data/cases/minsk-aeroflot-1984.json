@@ -1,0 +1,63 @@
+{
+  "id": "minsk-aeroflot-1984",
+  "num": 249,
+  "name": "Caso Minsk · Aeroflot Tu-134 + radar (URSS)",
+  "name_en": "Minsk case · Aeroflot Tu-134 + radar (USSR)",
+  "year_start": 1984,
+  "country": "SU",
+  "country_name": "Unión Soviética (Bielorrusia)",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 53.9,
+    "lng": 27.5667,
+    "place": "Cielo sobre Minsk, RSS de Bielorrusia (ruta Tbilisi–Tallin)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "El 7 de septiembre de 1984, la tripulación de un Tu-134 de Aeroflot en ruta Tbilisi–Tallin observó sobre Minsk un objeto luminoso que emitía haces de luz y cambiaba de forma; el control de tráfico aéreo reportó un eco 'doble' en radar. El periódico Trud lo publicó en enero de 1985 ('A las 4:10 en punto'), volviéndolo el caso soviético más célebre. La explicación líder es un lanzamiento desde el cosmódromo de Plesetsk.",
+  "summary_en": "On September 7, 1984, the crew of an Aeroflot Tu-134 en route Tbilisi–Tallinn observed over Minsk a luminous object emitting light beams and changing shape; air traffic control reported a 'double' radar return. The Trud newspaper published it in January 1985 ('At 4:10 Sharp'), making it the most famous Soviet case. The leading explanation is a launch from the Plesetsk Cosmodrome.",
+  "patterns": [
+    "8a",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "A las 4:10 de la madrugada del 7 de septiembre de 1984, un Tupolev Tu-134 de Aeroflot que volaba la ruta Tbilisi–Tallin observó, a la altura de Minsk (RSS de Bielorrusia), un punto amarillo del que surgió un haz de luz que se transformó en un cono; el objeto cambió repetidamente de forma —rayos, círculos concéntricos, una 'nube', una masa amorfa—. El copiloto Guennadi Lazurin y otros tripulantes lo describieron; uno lo comparó con 'un cigarro con tres haces de luz'. El control de tráfico aéreo informó que el radar mostraba un objeto 'doble', interpretado como el avión y el objeto no identificado juntos.\n\nEl episodio causó sensación cuando el periódico Trud lo publicó el 30 de enero de 1985 bajo el título 'A las 4:10 en punto', convirtiéndolo en el caso UAP soviético más célebre y forzando una investigación. Décadas después, el análisis escéptico (entre otros, el del especialista James Oberg y el Skeptical Inquirer) lo vinculó de forma convincente al lanzamiento de un cohete desde el cosmódromo de Plesetsk esa madrugada: la fenomenología (haz que se expande en cono, cambios de forma, visibilidad simultánea desde otras aeronaves en la región) encaja con una pluma de combustible iluminada en la alta atmósfera. Entra al corpus como Tier A por la calidad del registro —tripulación profesional múltiple, radar, prensa nacional e investigación oficial—, con probabilidad baja porque la explicación convencional (Plesetsk) es fuerte.",
+  "whatHappened_en": "At 4:10 a.m. on September 7, 1984, an Aeroflot Tupolev Tu-134 flying the Tbilisi–Tallinn route observed, near Minsk (Byelorussian SSR), a yellow point from which a beam of light emerged and turned into a cone; the object repeatedly changed shape —rays, concentric circles, a 'cloud', an amorphous mass—. Co-pilot Gennady Lazurin and other crew described it; one compared it to 'a cigar with three beams of light'. Air traffic control reported the radar showed a 'double' object, interpreted as the aircraft and the unidentified object together.\n\nThe episode caused a sensation when the Trud newspaper published it on January 30, 1985 under the title 'At 4:10 Sharp', making it the most famous Soviet UAP case and forcing an investigation. Decades later, skeptical analysis (among others, by specialist James Oberg and the Skeptical Inquirer) convincingly linked it to a rocket launch from the Plesetsk Cosmodrome that morning: the phenomenology (a beam expanding into a cone, shape changes, simultaneous visibility from other aircraft in the region) fits an illuminated fuel plume in the upper atmosphere. It enters the corpus as Tier A for the quality of the record —multiple professional crew, radar, national press and an official investigation—, with low probability because the conventional explanation (Plesetsk) is strong.",
+  "whyMatters": "Es el caso UAP soviético más célebre y un excelente caso de calibración: combina todo lo que suele elevar un expediente —tripulación profesional múltiple, confirmación de radar, prensa nacional, investigación oficial— y aun así la explicación más sólida es un lanzamiento de cohete desde Plesetsk. Su valor es doble: documenta la respuesta institucional soviética al fenómeno (rara para la época) y sirve de advertencia metodológica de que pilotos + radar no bastan si no se descartan estímulos como lanzamientos espaciales. Tier A por la calidad del registro; probabilidad baja porque lo convencional explica bien la fenomenología.",
+  "whyMatters_en": "It is the most famous Soviet UAP case and an excellent calibration case: it combines everything that usually elevates a file —multiple professional crew, radar confirmation, national press, official investigation— and yet the strongest explanation is a rocket launch from Plesetsk. Its value is twofold: it documents the Soviet institutional response to the phenomenon (rare for the era) and serves as a methodological caution that pilots + radar are not enough unless stimuli like space launches are ruled out. Tier A for the quality of the record; low probability because the conventional explanation fits the phenomenology well.",
+  "evidence": [
+    "Observación por la tripulación de un Tu-134 de Aeroflot (ruta Tbilisi–Tallin) sobre Minsk, 4:10 del 7 sep 1984",
+    "Objeto luminoso con haz/cono que cambiaba de forma; descrito por el copiloto Lazurin y otros tripulantes",
+    "Control de tráfico aéreo reportó un eco 'doble' en radar",
+    "Publicado por el periódico Trud el 30 ene 1985 ('A las 4:10 en punto'); forzó investigación oficial",
+    "Explicación líder (Oberg / Skeptical Inquirer): lanzamiento desde el cosmódromo de Plesetsk esa madrugada"
+  ],
+  "evidence_en": [
+    "Observation by the crew of an Aeroflot Tu-134 (Tbilisi–Tallinn route) over Minsk, 4:10 a.m. Sep 7, 1984",
+    "Luminous object with a beam/cone changing shape; described by co-pilot Lazurin and other crew",
+    "Air traffic control reported a 'double' radar return",
+    "Published by the Trud newspaper on Jan 30, 1985 ('At 4:10 Sharp'); forced an official investigation",
+    "Leading explanation (Oberg / Skeptical Inquirer): a launch from the Plesetsk Cosmodrome that morning"
+  ],
+  "sources": [
+    {
+      "name": "Skeptical Inquirer — 'The Minsk UFO Case' (2009)",
+      "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2009/01/22164446/p35.pdf",
+      "note": "Análisis y vínculo con el lanzamiento de Plesetsk."
+    },
+    {
+      "name": "Trud — 'A las 4:10 en punto' (30 ene 1985) — síntesis del caso",
+      "url": "https://en.wikipedia.org/wiki/Minsk_UFO_sighting"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Caso de máxima calidad de registro (pilotos múltiples + radar + prensa + investigación) cuya explicación más sólida resultó ser un lanzamiento de cohete desde Plesetsk. Respalda la lectura escéptica como recordatorio de que pilotos + radar no garantizan anomalía si no se descartan estímulos como lanzamientos espaciales. Minimal y override: aporte de calibración/registro, no de probabilidad efectiva.",
+      "rationaleEn": "A case of maximal record quality (multiple pilots + radar + press + investigation) whose strongest explanation turned out to be a rocket launch from Plesetsk. It backs the skeptical reading as a reminder that pilots + radar do not guarantee anomaly unless stimuli like space launches are ruled out. Minimal and override: a calibration/record contribution, not effective probability."
+    }
+  ]
+}
