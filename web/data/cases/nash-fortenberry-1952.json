@@ -1,0 +1,59 @@
+{
+  "id": "nash-fortenberry-1952",
+  "num": 243,
+  "name": "Nash-Fortenberry · dos pilotos de Pan Am (Virginia)",
+  "name_en": "Nash-Fortenberry · two Pan Am pilots (Virginia)",
+  "year_start": 1952,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 36.8508,
+    "lng": -76.2859,
+    "place": "Cerca de Norfolk, Virginia"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "El 14 de julio de 1952, los pilotos de Pan American William Nash y William Fortenberry observaron desde su DC-4, cerca de Norfolk (Virginia), entre 6 y 8 discos rojo-brillantes volando en formación por debajo de su avión, que ejecutaron una inversión abrupta y se unieron a otros antes de partir a gran velocidad. Project Blue Book lo clasificó inicialmente como 'no identificado'.",
+  "summary_en": "On July 14, 1952, Pan American pilots William Nash and William Fortenberry observed from their DC-4, near Norfolk, Virginia, between 6 and 8 bright-red discs flying in formation below their aircraft, which executed an abrupt flip and joined others before departing at high speed. Project Blue Book initially classified it as 'unidentified'.",
+  "patterns": [
+    "8h",
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 14 de julio de 1952, durante la intensa oleada de avistamientos de ese verano (la misma que culminó en los eventos de radar sobre Washington), los pilotos comerciales William B. Nash y William H. Fortenberry volaban un DC-4 de Pan American hacia Miami cuando, cerca de Newport News–Norfolk, vieron aparecer debajo de su avión una formación de seis discos de color rojo brillante, con bordes definidos.\n\nSegún su reporte —detallado y consistente entre ambos— los discos volaban en línea, ejecutaron una inversión casi instantánea (se 'voltearon' mostrando el canto), se les unieron dos discos más, y todo el grupo aceleró y ascendió antes de apagarse y desaparecer. La estimación de tamaño y velocidad que hicieron implicaba una dinámica extrema. El caso fue investigado por Project Blue Book y figuró inicialmente entre los 'no identificados'; años después se intentó atribuirlo a reflejos o fenómenos lumínicos, atribución que los pilotos rechazaron con detalle. Entra al corpus como caso Tier A clásico de doble testigo cualificado: dos pilotos comerciales experimentados, reporte coincidente y registro institucional.",
+  "whatHappened_en": "On the night of July 14, 1952, during that summer's intense sighting wave (the same that culminated in the radar events over Washington), commercial pilots William B. Nash and William H. Fortenberry were flying a Pan American DC-4 toward Miami when, near Newport News–Norfolk, a formation of six bright-red, sharp-edged discs appeared below their aircraft.\n\nPer their report —detailed and consistent between the two— the discs flew in line, executed a near-instantaneous flip (they 'turned' edge-on), were joined by two more discs, and the whole group accelerated and climbed before dimming and vanishing. Their size and speed estimates implied extreme dynamics. The case was investigated by Project Blue Book and initially figured among the 'unidentified'; years later an attribution to reflections or light phenomena was attempted, which the pilots rejected in detail. It enters the corpus as a classic Tier A double-qualified-witness case: two experienced commercial pilots, a coinciding report and an institutional record.",
+  "whyMatters": "Es uno de los casos de doble piloto comercial más sólidos de la oleada de 1952: dos testigos profesionales independientes con la misma observación detallada, registrada por Blue Book como 'no identificado'. Su valor es la calidad y coincidencia de los testigos sobre una maniobra (inversión instantánea, formación) difícil de atribuir a fenómenos lumínicos. Su límite es que es un caso visual sin instrumento. Tier A por doble testigo cualificado y registro institucional, no por evidencia instrumental.",
+  "whyMatters_en": "It is one of the most solid double-commercial-pilot cases of the 1952 wave: two independent professional witnesses with the same detailed observation, logged by Blue Book as 'unidentified'. Its value is the quality and agreement of the witnesses on a maneuver (instantaneous flip, formation) hard to attribute to light phenomena. Its limit is that it is a visual case without an instrument. Tier A for a double qualified witness and institutional record, not for instrumental evidence.",
+  "evidence": [
+    "Avistamiento por los pilotos de Pan Am William Nash y William Fortenberry desde un DC-4, 14 jul 1952",
+    "6–8 discos rojo-brillantes en formación, con inversión abrupta y aceleración/ascenso",
+    "Reporte detallado y coincidente entre ambos pilotos profesionales",
+    "Investigado por Project Blue Book; clasificado inicialmente como 'no identificado'",
+    "Atribución posterior a reflejos rechazada por los testigos"
+  ],
+  "evidence_en": [
+    "Sighting by Pan Am pilots William Nash and William Fortenberry from a DC-4, Jul 14, 1952",
+    "6–8 bright-red discs in formation, with an abrupt flip and acceleration/climb",
+    "Detailed, coinciding report from both professional pilots",
+    "Investigated by Project Blue Book; initially classified as 'unidentified'",
+    "Later attribution to reflections rejected by the witnesses"
+  ],
+  "sources": [
+    {
+      "name": "Project Blue Book — Nash-Fortenberry sighting (archivos USAF)",
+      "url": "https://en.wikipedia.org/wiki/Nash-Fortenberry_UFO_sighting",
+      "note": "Síntesis del registro Blue Book."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Dos pilotos comerciales experimentados reportaron de forma coincidente una formación con maniobra de inversión que Blue Book registró como 'no identificado'. La calidad y coincidencia de los testigos tensiona la lectura de identificación errónea trivial. Minimal: es visual, sin instrumento, y existe atribución (rechazada) a reflejos. Override: aporte de registro.",
+      "rationaleEn": "Two experienced commercial pilots reported, in agreement, a formation with a flip maneuver that Blue Book logged as 'unidentified'. The quality and agreement of the witnesses strain the trivial-misidentification reading. Minimal: it is visual, without an instrument, and a (rejected) attribution to reflections exists. Override: a record contribution."
+    }
+  ]
+}
