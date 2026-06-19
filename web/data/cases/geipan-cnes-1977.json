@@ -1,0 +1,63 @@
+{
+  "id": "geipan-cnes-1977",
+  "num": 238,
+  "name": "GEIPAN · agencia oficial de UAP del CNES (Francia)",
+  "name_en": "GEIPAN · official CNES UAP agency (France)",
+  "year_start": 1977,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 43.5615,
+    "lng": 1.4807,
+    "place": "CNES · Toulouse"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 75,
+  "summary": "El GEIPAN, dentro de la agencia espacial francesa (CNES), es el único organismo gubernamental permanente, público y con financiamiento estatal dedicado al estudio científico de los UAP en el mundo. Operativo desde 1977 (como GEPAN, luego SEPRA, luego GEIPAN), recoge denuncias, investiga con gendarmería y meteorología, publica sus expedientes y clasifica un residuo persistente (~3% de tipo D) como inexplicado.",
+  "summary_en": "GEIPAN, within the French space agency (CNES), is the only permanent, public, state-funded government body dedicated to the scientific study of UAP in the world. Operational since 1977 (as GEPAN, then SEPRA, then GEIPAN), it collects reports, investigates with gendarmerie and meteorology, publishes its case files, and classifies a persistent residue (~3% type D) as unexplained.",
+  "patterns": [
+    "8e",
+    "8i"
+  ],
+  "category": "document",
+  "whatHappened": "En 1977, el Centre National d'Études Spatiales (CNES) —la agencia espacial de Francia— creó el GEPAN (Groupe d'Études des Phénomènes Aérospatiaux Non identifiés), un organismo oficial para investigar científicamente los reportes de UAP. Renombrado SEPRA en 1988 y GEIPAN en 2005, ha operado de forma continua durante casi medio siglo, lo que lo convierte en el único cuerpo estatal permanente del mundo dedicado al tema, dotado de presupuesto público y metodología formal.\n\nGEIPAN recibe denuncias del público y de la aviación, las investiga en cooperación con la Gendarmería Nationale, Météo-France y la aviación civil, y clasifica cada caso en cuatro categorías (A: identificado; B: probable; C: datos insuficientes; D: inexplicado pese a datos de calidad). Históricamente, alrededor del 3% de los casos quedan como tipo D. Desde 2007 publica sus expedientes en línea, un grado de transparencia institucional inusual. Su existencia misma es el dato: un Estado occidental decidió, de forma sostenida, que el fenómeno merece un aparato científico permanente — y ese aparato, sobrio y escéptico por diseño, no logra explicar un residuo pequeño pero persistente.",
+  "whatHappened_en": "In 1977, the Centre National d'Études Spatiales (CNES) —France's space agency— created GEPAN (Groupe d'Études des Phénomènes Aérospatiaux Non identifiés), an official body to scientifically investigate UAP reports. Renamed SEPRA in 1988 and GEIPAN in 2005, it has operated continuously for nearly half a century, making it the world's only permanent state body dedicated to the subject, with a public budget and formal methodology.\n\nGEIPAN receives reports from the public and aviation, investigates them in cooperation with the Gendarmerie Nationale, Météo-France and civil aviation, and classifies each case into four categories (A: identified; B: probable; C: insufficient data; D: unexplained despite quality data). Historically, around 3% of cases remain type D. Since 2007 it publishes its case files online, an unusual degree of institutional transparency. Its very existence is the datum: a Western state decided, in a sustained way, that the phenomenon merits a permanent scientific apparatus — and that apparatus, sober and skeptical by design, cannot explain a small but persistent residue.",
+  "whyMatters": "Es la refutación viviente de que ningún gobierno toma el fenómeno en serio de forma científica y sostenida: Francia lleva casi 50 años haciéndolo con presupuesto público, metodología formal y publicación abierta. Su valor es doble: institucionalmente, normaliza el estudio del fenómeno; evidencialmente, su residuo tipo D (~3%) es un dato sobrio —ni propaganda ni entusiasmo— de que un cuerpo escéptico bien dotado no puede cerrar todos los casos. Tier A por la solidez institucional (agencia estatal permanente, expedientes públicos), no por una conclusión sobre la naturaleza del fenómeno, que GEIPAN deliberadamente no hace.",
+  "whyMatters_en": "It is the living refutation of the idea that no government takes the phenomenon scientifically and sustainedly seriously: France has done so for nearly 50 years with a public budget, formal methodology and open publication. Its value is twofold: institutionally, it normalizes study of the phenomenon; evidentially, its type-D residue (~3%) is a sober datum —neither propaganda nor enthusiasm— that a well-resourced skeptical body cannot close all cases. Tier A for institutional solidity (permanent state agency, public case files), not for a conclusion about the nature of the phenomenon, which GEIPAN deliberately does not make.",
+  "evidence": [
+    "GEPAN creado por el CNES (agencia espacial francesa) en 1977; renombrado SEPRA (1988) y GEIPAN (2005)",
+    "Único organismo gubernamental permanente y con financiamiento público dedicado a UAP en el mundo",
+    "Investiga con la Gendarmerie Nationale, Météo-France y aviación civil; clasificación A/B/C/D",
+    "~3% de casos clasificados como tipo D (inexplicados pese a datos de calidad)",
+    "Publica sus expedientes en línea desde 2007"
+  ],
+  "evidence_en": [
+    "GEPAN created by CNES (French space agency) in 1977; renamed SEPRA (1988) and GEIPAN (2005)",
+    "World's only permanent, publicly funded government body dedicated to UAP",
+    "Investigates with the Gendarmerie Nationale, Météo-France and civil aviation; A/B/C/D classification",
+    "~3% of cases classified as type D (unexplained despite quality data)",
+    "Publishes its case files online since 2007"
+  ],
+  "sources": [
+    {
+      "name": "GEIPAN — sitio oficial (CNES)",
+      "url": "https://www.geipan.fr/",
+      "note": "Agencia y expedientes públicos."
+    },
+    {
+      "name": "GEIPAN — entrada enciclopédica (historia GEPAN/SEPRA/GEIPAN)",
+      "url": "https://en.wikipedia.org/wiki/GEIPAN"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Un organismo estatal escéptico por diseño, con casi medio siglo de operación, metodología formal y datos de calidad, aún clasifica ~3% de sus casos como inexplicados (tipo D). Tensiona débilmente la lectura de que todo es identificación errónea: el aparato más sobrio y sostenido del mundo no logra cerrar el residuo. Minimal porque GEIPAN explica la gran mayoría y no afirma nada exótico sobre el tipo D — solo que los datos no permiten identificarlo.",
+      "rationaleEn": "A state body skeptical by design, with nearly half a century of operation, formal methodology and quality data, still classifies ~3% of its cases as unexplained (type D). It weakly strains the reading that it's all misidentification: the world's most sober and sustained apparatus cannot close the residue. Minimal because GEIPAN explains the vast majority and asserts nothing exotic about type D — only that the data do not allow identifying it."
+    }
+  ]
+}
