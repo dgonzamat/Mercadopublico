@@ -476,8 +476,13 @@ for (const c of cases) {
   }
 }
 
-// RULE E8a · resumen agregado de `weakens` inertes (deuda silenciosa: datos
-// que se calculan y se descartan). Un solo WARN para no inundar el prebuild.
+// RULE E8a · resumen agregado de `weakens` inertes. NOTE, no WARN: es una
+// propiedad ESTRUCTURAL del modelo, no deuda accionable. Una claim
+// corpus-existential («≥1 caso es X») es monótona — un `weakens` no puede
+// bajar P(≥1), así que el motor lo calcula y lo descarta. Hacerlo «efectivo»
+// rompería el invariante de monotonicidad (E8b, que sí es ERROR). El verdicto
+// sigue siendo válido a nivel de caso (se renderiza en /cases). Se reporta como
+// NOTE para dejar constancia sin pretender que hay algo que corregir.
 if (inertWeakens.length > 0) {
   const byHyp = {};
   for (const w of inertWeakens) byHyp[w.hid] = (byHyp[w.hid] || 0) + 1;
@@ -485,10 +490,10 @@ if (inertWeakens.length > 0) {
     .map(([h, n]) => `${h}×${n}`)
     .join(", ");
   record(
-    "WARN",
+    "NOTE",
     hypothesesPath,
     0,
-    `${inertWeakens.length} inert weakens toward corpus-existential hypotheses (${breakdown}) — computed then discarded by monotonicity; valid as per-case verdicts only`,
+    `${inertWeakens.length} inert weakens toward corpus-existential hypotheses (${breakdown}) — by design: monotone claims discard weakens globally; valid as per-case verdicts (E8b enforces the invariant)`,
   );
 }
 
@@ -665,6 +670,7 @@ for (const c of cases) {
 
 const errors = findings.filter((f) => f.level === "ERROR");
 const warns = findings.filter((f) => f.level === "WARN");
+const notes = findings.filter((f) => f.level === "NOTE");
 
 const out = [];
 out.push("");
@@ -687,7 +693,7 @@ for (const h of HYPOTHESES) {
 }
 out.push("");
 out.push(`─ Findings ──────────────────────────────────────────────────────`);
-out.push(`  ERRORS: ${errors.length}    WARNS: ${warns.length}`);
+out.push(`  ERRORS: ${errors.length}    WARNS: ${warns.length}    NOTES: ${notes.length}`);
 out.push("");
 
 if (errors.length > 0) {
@@ -703,6 +709,13 @@ if (warns.length > 0) {
     out.push(`     ${f.file}:${f.line}  ${f.msg}`);
   }
   if (warns.length > 30) out.push(`     … and ${warns.length - 30} more`);
+  out.push("");
+}
+if (notes.length > 0) {
+  out.push("  ℹ️  NOTES (by-design, non-actionable):");
+  for (const f of notes) {
+    out.push(`     ${f.file}:${f.line}  ${f.msg}`);
+  }
   out.push("");
 }
 if (errors.length === 0 && warns.length === 0) {
