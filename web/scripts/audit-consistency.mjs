@@ -644,6 +644,23 @@ for (const c of cases) {
   }
 }
 
+// ─── 9e. RULE E12: lede robustness — summary too short (WARN) ─────────────
+//
+// El summary es el lede del caso: debe cargar quién/qué/cuándo/dónde, no ser
+// una nota telegráfica. Un lede de primer nivel raramente baja de ~180 chars
+// sin sacrificar dateline o atribución. WARN, no ERROR — es estándar editorial,
+// no error de datos. (Histórico: 6 casos eran stubs <155 chars; reescritos jun
+// 2026 a datelines completos.)
+
+const LEDE_MIN = 180;
+for (const c of cases) {
+  const file = path.join(casesDir, c.id + ".json");
+  const len = (c.summary || "").length;
+  if (len > 0 && len < LEDE_MIN) {
+    record("WARN", file, 0, `E12 lede: summary de ${len} chars (<${LEDE_MIN}) — un lede debe cargar quién/qué/cuándo/dónde (case ${c.id})`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

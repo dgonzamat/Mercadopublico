@@ -1,8 +1,8 @@
 {
   "id": "japan-jai-directive-2020",
   "num": 70,
-  "name": "Directiva JAI · Japón",
-  "name_en": "JAI Directive · Japan",
+  "name": "Protocolo UAP del Ministerio de Defensa · Japón",
+  "name_en": "MoD UAP Reporting Protocol · Japan",
   "year_start": 2020,
   "country": "JP",
   "country_name": "Japón",
@@ -16,15 +16,15 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 80,
-  "summary": "Ministerio de Defensa japonés emite protocolo formal obligando a pilotos militares a registrar y reportar encuentros UAP.",
-  "summary_en": "Japanese Ministry of Defense issues formal protocol requiring military pilots to record and report UAP encounters.",
+  "summary": "El 14 de septiembre de 2020, el Ministerio de Defensa de Japón, bajo el ministro Taro Kono, emitió un protocolo formal que obliga a los pilotos de la Fuerza Aérea de Autodefensa (JASDF) a filmar, documentar y reportar por cadena de mando todo encuentro con fenómenos aéreos no identificados.",
+  "summary_en": "On 14 September 2020, Japan's Ministry of Defense, under Minister Taro Kono, issued a formal protocol requiring Air Self-Defense Force (JASDF) pilots to film, document and report up the chain of command any encounter with unidentified aerial phenomena.",
   "patterns": [
     "8q",
     "8e"
   ],
   "category": "document",
-  "whatHappened": "El 14 de septiembre de 2020, el **Ministerio de Defensa de Japón**, bajo la conducción del entonces ministro Taro Kono, emitió un protocolo formal — la Directiva JAI sobre fenómenos aéreos no identificados — que obliga a todo piloto militar de la **Fuerza Aérea de Autodefensa (JASDF)** a:\n\n- Filmar con la cámara del casco o sistemas de cabina cualquier encuentro con un fenómeno aéreo no identificable\n- Documentar parámetros de vuelo, altitud, comportamiento del objeto y condiciones meteorológicas\n- Reportar el incidente por cadena de mando al departamento de inteligencia aérea\n\nLa directiva surgió como respuesta directa a la divulgación parcial estadounidense de abril 2020, cuando el Pentágono liberó oficialmente los tres videos UAP de la Marina (FLIR-1, Gimbal, Go Fast). El gobierno japonés reconoció públicamente que la vulnerabilidad de las fronteras marítimas del archipiélago — especialmente frente al Mar de la China Oriental — hace de los UAP una prioridad de defensa aérea sustantiva, no un asunto cultural o anecdótico.\n\nLa directiva permanece activa. Reportes posteriores de la JASDF han mencionado el uso del protocolo aunque los contenidos específicos de los reportes no se han hecho públicos.",
-  "whatHappened_en": "On September 14, 2020, the **Japanese Ministry of Defense**, under then-Minister Taro Kono, issued a formal protocol — the JAI Directive on unidentified aerial phenomena — requiring every military pilot of the **Japan Air Self-Defense Force (JASDF)** to:\n\n- Film with helmet camera or cockpit systems any encounter with an unidentifiable aerial phenomenon\n- Document flight parameters, altitude, object behavior and meteorological conditions\n- Report the incident through chain of command to the air intelligence department\n\nThe directive emerged as a direct response to the partial US disclosure of April 2020, when the Pentagon officially released the three US Navy UAP videos (FLIR-1, Gimbal, Go Fast). The Japanese government publicly acknowledged that the vulnerability of the archipelago's maritime borders — especially facing the East China Sea — makes UAP a substantive air-defense priority, not a cultural or anecdotal matter.\n\nThe directive remains active. Subsequent JASDF reports have mentioned use of the protocol, although the specific contents of those reports have not been made public.",
+  "whatHappened": "El 14 de septiembre de 2020, el **Ministerio de Defensa de Japón**, bajo la conducción del entonces ministro Taro Kono, emitió un protocolo formal sobre fenómenos aéreos no identificados que obliga a todo piloto militar de la **Fuerza Aérea de Autodefensa (JASDF)** a:\n\n- Filmar con la cámara del casco o sistemas de cabina cualquier encuentro con un fenómeno aéreo no identificable\n- Documentar parámetros de vuelo, altitud, comportamiento del objeto y condiciones meteorológicas\n- Reportar el incidente por cadena de mando al departamento de inteligencia aérea\n\nLa directiva surgió como respuesta directa a la divulgación parcial estadounidense de abril 2020, cuando el Pentágono liberó oficialmente los tres videos UAP de la Marina (FLIR-1, Gimbal, Go Fast). El gobierno japonés reconoció públicamente que la vulnerabilidad de las fronteras marítimas del archipiélago — especialmente frente al Mar de la China Oriental — hace de los UAP una prioridad de defensa aérea sustantiva, no un asunto cultural o anecdótico.\n\nLa directiva permanece activa. Reportes posteriores de la JASDF han mencionado el uso del protocolo aunque los contenidos específicos de los reportes no se han hecho públicos.",
+  "whatHappened_en": "On September 14, 2020, the **Japanese Ministry of Defense**, under then-Minister Taro Kono, issued a formal protocol on unidentified aerial phenomena requiring every military pilot of the **Japan Air Self-Defense Force (JASDF)** to:\n\n- Film with helmet camera or cockpit systems any encounter with an unidentifiable aerial phenomenon\n- Document flight parameters, altitude, object behavior and meteorological conditions\n- Report the incident through chain of command to the air intelligence department\n\nThe directive emerged as a direct response to the partial US disclosure of April 2020, when the Pentagon officially released the three US Navy UAP videos (FLIR-1, Gimbal, Go Fast). The Japanese government publicly acknowledged that the vulnerability of the archipelago's maritime borders — especially facing the East China Sea — makes UAP a substantive air-defense priority, not a cultural or anecdotal matter.\n\nThe directive remains active. Subsequent JASDF reports have mentioned use of the protocol, although the specific contents of those reports have not been made public.",
   "whyMatters": "Es el primer protocolo institucional asiático que formaliza el tratamiento militar del fenómeno UAP — anterior incluso al establecimiento del AARO estadounidense en julio 2022. Coloca a Japón en una corta lista de Estados que han elevado el reporte UAP a directiva oficial (Francia 1977, Argentina 2011, EE.UU. 2022, Japón 2020). Representa el desplazamiento del fenómeno desde la categoría \"cultural\" a la categoría \"defensa aérea\" en una potencia tecnológica G7.",
   "whyMatters_en": "The first Asian institutional protocol formalizing the military treatment of the UAP phenomenon — predating even the US AARO establishment in July 2022. It places Japan in a short list of states that have elevated UAP reporting to official directive (France 1977, Argentina 2011, US 2022, Japan 2020). It represents the displacement of the phenomenon from the 'cultural' category to the 'air defense' category in a G7 technological power.",
   "evidence": [
@@ -41,12 +41,12 @@
   ],
   "sources": [
     {
-      "name": "Ministry of Defense — JAI Directive announcement",
+      "name": "Ministry of Defense (Japan) — UAP reporting protocol announcement (Sept 2020)",
       "url": "https://www.mod.go.jp/en/",
       "note": "Comunicado oficial 2020"
     },
     {
-      "name": "Asahi Shimbun — JAI Directive coverage (Sept 2020)",
+      "name": "Asahi Shimbun — coverage of MoD UAP reporting protocol (Sept 2020)",
       "url": "https://www.asahi.com"
     },
     {
