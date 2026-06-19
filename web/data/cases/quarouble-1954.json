@@ -1,0 +1,59 @@
+{
+  "id": "quarouble-1954",
+  "num": 247,
+  "name": "Quarouble · investigación de la Gendarmerie (Francia)",
+  "name_en": "Quarouble · Gendarmerie investigation (France)",
+  "year_start": 1954,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 50.3939,
+    "lng": 3.6536,
+    "place": "Quarouble, Nord, Francia"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "El 10 de septiembre de 1954, durante la gran oleada francesa de ese año, el metalúrgico Marius Dewilde reportó un objeto oscuro posado sobre las vías del tren cerca de Quarouble y dos figuras pequeñas; dijo haber quedado paralizado por un haz. La Gendarmerie Nationale investigó y documentó marcas físicas: depresiones en los durmientes de madera consistentes con un gran peso.",
+  "summary_en": "On September 10, 1954, during that year's great French wave, metalworker Marius Dewilde reported a dark object resting on the railway tracks near Quarouble and two small figures; he said he was paralyzed by a beam. The Gendarmerie Nationale investigated and documented physical marks: depressions in the wooden sleepers consistent with great weight.",
+  "patterns": [
+    "8a",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 10 de septiembre de 1954, Marius Dewilde, un trabajador metalúrgico, salió de su casa en Quarouble (departamento del Nord) al oír a su perro y vio una masa oscura posada sobre la vía férrea junto a su jardín. Según su relato, dos figuras pequeñas se movían cerca; cuando se acercó, un haz de luz lo dejó momentáneamente paralizado, y luego el objeto se elevó y partió. El episodio ocurrió al inicio de la oleada masiva de avistamientos que recorrió Francia en el otoño de 1954.\n\nDewilde denunció lo ocurrido a la Gendarmerie Nationale, que abrió una investigación formal. Los gendarmes y, posteriormente, personal de la Fuerza Aérea documentaron marcas físicas en el lugar: depresiones en los durmientes de madera de la vía y en el balasto, que peritajes estimaron consistentes con la presión de un objeto de varias toneladas. El testimonio de entidades es de un solo testigo y pertenece al registro folklórico/contactee de la época; lo que ancla el caso es la investigación oficial y las marcas documentadas. Entra al corpus como Tier B: ancla institucional (Gendarmerie) y traza física, pero núcleo testimonial de un solo observador.",
+  "whatHappened_en": "On the night of September 10, 1954, Marius Dewilde, a metalworker, stepped out of his home in Quarouble (Nord department) upon hearing his dog and saw a dark mass resting on the railway line beside his garden. Per his account, two small figures moved nearby; when he approached, a beam of light left him momentarily paralyzed, and then the object rose and departed. The episode occurred at the start of the massive sighting wave that swept France in the autumn of 1954.\n\nDewilde reported the events to the Gendarmerie Nationale, which opened a formal investigation. The gendarmes and, later, Air Force personnel documented physical marks at the site: depressions in the wooden sleepers of the track and in the ballast, which assessors estimated as consistent with the pressure of an object of several tons. The entity testimony is single-witness and belongs to the folkloric/contactee record of the era; what anchors the case is the official investigation and the documented marks. It enters the corpus as Tier B: institutional anchor (Gendarmerie) and a physical trace, but a single-observer testimonial core.",
+  "whyMatters": "Es uno de los casos detonantes de la histórica oleada francesa de 1954 y un ejemplo temprano de investigación oficial por la Gendarmerie con peritaje de trazas físicas — el linaje institucional que más tarde produciría el GEPAN/GEIPAN. Su valor es el ancla oficial y las marcas documentadas; su límite es que el corazón del relato (objeto + entidades) descansa en un solo testigo. Tier B por esa combinación: registro institucional real sobre un núcleo testimonial individual.",
+  "whyMatters_en": "It is one of the trigger cases of the historic French wave of 1954 and an early example of an official Gendarmerie investigation with assessment of physical traces — the institutional lineage that would later produce GEPAN/GEIPAN. Its value is the official anchor and the documented marks; its limit is that the heart of the account (object + entities) rests on a single witness. Tier B for that combination: a real institutional record over an individual testimonial core.",
+  "evidence": [
+    "Denuncia de Marius Dewilde e investigación formal de la Gendarmerie Nationale, 10 sep 1954",
+    "Marcas físicas documentadas: depresiones en durmientes de madera y balasto de la vía férrea",
+    "Peritaje estimó la presión consistente con un objeto de varias toneladas",
+    "Caso detonante de la oleada francesa masiva del otoño de 1954",
+    "Núcleo testimonial (objeto + dos figuras + parálisis) de un solo observador"
+  ],
+  "evidence_en": [
+    "Marius Dewilde's report and formal Gendarmerie Nationale investigation, Sep 10, 1954",
+    "Documented physical marks: depressions in the wooden sleepers and ballast of the railway",
+    "Assessment estimated the pressure as consistent with an object of several tons",
+    "Trigger case of the massive French wave of autumn 1954",
+    "Testimonial core (object + two figures + paralysis) from a single observer"
+  ],
+  "sources": [
+    {
+      "name": "Gendarmerie Nationale / GEIPAN — caso Quarouble (Marius Dewilde), 1954 (síntesis)",
+      "url": "https://en.wikipedia.org/wiki/Marius_Dewilde",
+      "note": "Síntesis de la investigación oficial y las trazas."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "La Gendarmerie documentó marcas físicas en la vía consistentes con un gran peso, lo que excede una simple ilusión. Pero el núcleo del caso (objeto + entidades + parálisis) es de un solo testigo y pertenece al registro folklórico de 1954. Minimal: la traza ancla algo, el relato no se puede corroborar. Override: aporte de registro, no de calibración.",
+      "rationaleEn": "The Gendarmerie documented physical marks on the track consistent with great weight, which exceeds a simple illusion. But the core of the case (object + entities + paralysis) is single-witness and belongs to the 1954 folkloric record. Minimal: the trace anchors something, the account cannot be corroborated. Override: a record, not a calibration, contribution."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "deception-island-1965",
+  "num": 246,
+  "name": "Isla Decepción · avistamiento tri-nacional en la Antártida",
+  "name_en": "Deception Island · tri-national Antarctic sighting",
+  "year_start": 1965,
+  "country": "AR",
+  "country_name": "Antártida · Isla Decepción (bases AR/CL/UK)",
+  "flag": "🇦🇶",
+  "location": {
+    "lat": -62.98,
+    "lng": -60.66,
+    "place": "Isla Decepción, Islas Shetland del Sur (Antártida)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 65,
+  "summary": "El 3 de julio de 1965, personal de las bases antárticas argentina, chilena y británica en la Isla Decepción observó un objeto luminoso y maniobrante. La Armada Argentina lo fotografió y reportó perturbaciones en instrumentos magnéticos; Argentina emitió un comunicado oficial reconociéndolo — uno de los primeros reconocimientos gubernamentales formales de un avistamiento. Tres naciones, registro independiente.",
+  "summary_en": "On July 3, 1965, personnel from the Argentine, Chilean and British Antarctic bases on Deception Island observed a luminous, maneuvering object. The Argentine Navy photographed it and reported disturbances in magnetic instruments; Argentina issued an official communiqué acknowledging it — one of the first formal governmental acknowledgments of a sighting. Three nations, independent record.",
+  "patterns": [
+    "8a",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 3 de julio de 1965, en plena noche polar, el personal de tres bases científico-militares vecinas en la Isla Decepción (Islas Shetland del Sur) —la base argentina (Decepción), la chilena (Pedro Aguirre Cerda) y la británica (Falkland Islands Dependencies Survey)— observó de forma independiente un objeto luminoso, multicolor, que se desplazaba y cambiaba de dirección sobre el cielo antártico durante unos 20 minutos.\n\nLa dotación argentina, de la Armada, tomó fotografías del objeto y reportó que un teodolito y otros instrumentos magnéticos registraron perturbaciones durante el avistamiento. Lo notable institucionalmente es que, días después, el gobierno argentino emitió un comunicado oficial reconociendo el episodio como un fenómeno aéreo no identificado — uno de los primeros reconocimientos gubernamentales formales de un avistamiento en cualquier país, y excepcional para la época. El hecho de que tres naciones con bases separadas, sin coordinación previa y en plena Guerra Fría, registraran el mismo evento, sumado a la fotografía y a la perturbación instrumental, lo coloca entre los casos antárticos mejor respaldados. Entra al corpus como Tier A multi-nacional.",
+  "whatHappened_en": "On July 3, 1965, in the polar night, personnel from three neighboring scientific-military bases on Deception Island (South Shetland Islands) —the Argentine base (Decepción), the Chilean one (Pedro Aguirre Cerda) and the British one (Falkland Islands Dependencies Survey)— independently observed a luminous, multicolored object moving and changing direction across the Antarctic sky for about 20 minutes.\n\nThe Argentine Navy detachment took photographs of the object and reported that a theodolite and other magnetic instruments registered disturbances during the sighting. What is institutionally notable is that, days later, the Argentine government issued an official communiqué acknowledging the episode as an unidentified aerial phenomenon — one of the first formal governmental acknowledgments of a sighting in any country, and exceptional for the era. The fact that three nations with separate bases, without prior coordination and at the height of the Cold War, recorded the same event, together with the photograph and the instrumental disturbance, places it among the best-supported Antarctic cases. It enters the corpus as a multi-national Tier A.",
+  "whyMatters": "Es uno de los pocos casos con reconocimiento gubernamental oficial explícito de la época, y excepcional por la corroboración tri-nacional independiente (Argentina, Chile, Reino Unido) en un entorno controlado y sin población civil que confunda el reporte. Suma fotografía y perturbación de instrumentos magnéticos. El comunicado oficial argentino lo hace además un dato institucional, no solo un avistamiento. Tier A por la convergencia multi-testigo de tres Estados + registro instrumental + reconocimiento oficial; no Tier S porque la instrumentación (teodolito, foto) es de menor resolución que un sistema multi-sensor militar moderno.",
+  "whyMatters_en": "It is one of the few cases with explicit official governmental acknowledgment of the era, and exceptional for the independent tri-national corroboration (Argentina, Chile, United Kingdom) in a controlled environment with no civilian population to muddle the report. It adds a photograph and disturbance of magnetic instruments. The official Argentine communiqué also makes it an institutional datum, not just a sighting. Tier A for the multi-witness convergence of three states + instrumental record + official acknowledgment; not Tier S because the instrumentation (theodolite, photo) is of lower resolution than a modern multi-sensor military system.",
+  "evidence": [
+    "Avistamiento simultáneo desde las bases argentina, chilena y británica en Isla Decepción, 3 jul 1965 (~20 min)",
+    "Fotografías tomadas por la dotación de la Armada Argentina",
+    "Perturbaciones reportadas en teodolito e instrumentos magnéticos durante el evento",
+    "Comunicado oficial del gobierno argentino reconociendo el fenómeno — reconocimiento gubernamental temprano y excepcional",
+    "Corroboración tri-nacional independiente, sin coordinación previa, en plena Guerra Fría"
+  ],
+  "evidence_en": [
+    "Simultaneous sighting from the Argentine, Chilean and British bases on Deception Island, Jul 3, 1965 (~20 min)",
+    "Photographs taken by the Argentine Navy detachment",
+    "Reported disturbances in a theodolite and magnetic instruments during the event",
+    "Official communiqué from the Argentine government acknowledging the phenomenon — an early, exceptional governmental acknowledgment",
+    "Independent tri-national corroboration, without prior coordination, at the height of the Cold War"
+  ],
+  "sources": [
+    {
+      "name": "Armada Argentina / comunicado oficial 1965 — incidente de Isla Decepción (síntesis)",
+      "url": "https://en.wikipedia.org/wiki/Deception_Island#UFO_sighting",
+      "note": "Síntesis del registro tri-nacional y del comunicado argentino."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "modest",
+      "rationale": "Corroboración independiente por tres Estados con bases separadas, en un entorno antártico controlado y sin ruido civil, más fotografía, perturbación instrumental y un comunicado oficial argentino. La convergencia multi-nacional sin coordinación previa es difícil de reducir a identificación errónea local. Modest, no más, porque la instrumentación es de baja resolución (teodolito/foto de 1965) y un estímulo astronómico/atmosférico inusual no es del todo descartable. La hipótesis está en su techo (override): aporte sólido de registro.",
+      "rationaleEn": "Independent corroboration by three states with separate bases, in a controlled Antarctic environment without civilian noise, plus a photograph, instrumental disturbance and an official Argentine communiqué. The multi-national convergence without prior coordination is hard to reduce to local misidentification. Modest, no more, because the instrumentation is low-resolution (1965 theodolite/photo) and an unusual astronomical/atmospheric stimulus is not entirely dismissible. The hypothesis is at its ceiling (override): a solid record contribution."
+    }
+  ]
+}
