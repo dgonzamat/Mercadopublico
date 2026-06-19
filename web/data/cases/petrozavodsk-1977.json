@@ -10,7 +10,8 @@
   "location": {
     "lat": 61.79,
     "lng": 34.36,
-    "place": "Petrozavodsk, Karelia, URSS"
+    "place": "Petrozavodsk, Karelia, URSS",
+    "place_en": "Petrozavodsk, Karelia, USSR"
   },
   "tier": "A",
   "epistemicStatus": "documented",

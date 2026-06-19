@@ -10,7 +10,8 @@
   "location": {
     "lat": 34.02,
     "lng": -6.83,
-    "place": "Marruecos (reportes nacionales; Gendarmería Real, Rabat)"
+    "place": "Marruecos (reportes nacionales; Gendarmería Real, Rabat)",
+    "place_en": "Morocco (national reports; Royal Gendarmerie, Rabat)"
   },
   "tier": "B",
   "epistemicStatus": "documented",

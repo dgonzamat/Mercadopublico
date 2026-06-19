@@ -9,7 +9,8 @@
   "location": {
     "lat": 32.22,
     "lng": -117.78,
-    "place": "Pacífico, Baja California"
+    "place": "Pacífico, Baja California",
+    "place_en": "Pacific, Baja California"
   },
   "tier": "S",
   "epistemicStatus": "documented",

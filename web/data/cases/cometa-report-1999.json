@@ -10,7 +10,8 @@
   "location": {
     "lat": 48.8566,
     "lng": 2.3522,
-    "place": "COMETA · auditores del IHEDN, París"
+    "place": "COMETA · auditores del IHEDN, París",
+    "place_en": "COMETA · IHEDN auditors, Paris"
   },
   "tier": "A",
   "epistemicStatus": "documented",

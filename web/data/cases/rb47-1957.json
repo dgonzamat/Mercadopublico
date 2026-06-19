@@ -9,7 +9,8 @@
   "location": {
     "lat": 33,
     "lng": -91,
-    "place": "Misisipi–Luisiana–Texas–Oklahoma"
+    "place": "Misisipi–Luisiana–Texas–Oklahoma",
+    "place_en": "Mississippi–Louisiana–Texas–Oklahoma"
   },
   "tier": "S",
   "epistemicStatus": "documented",

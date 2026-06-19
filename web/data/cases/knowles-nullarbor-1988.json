@@ -10,7 +10,8 @@
   "location": {
     "lat": -31.835,
     "lng": 128.214,
-    "place": "Entre Madura y Mundrabilla, Llanura de Nullarbor, Australia Occidental"
+    "place": "Entre Madura y Mundrabilla, Llanura de Nullarbor, Australia Occidental",
+    "place_en": "Between Madura and Mundrabilla, Nullarbor Plain, Western Australia"
   },
   "tier": "A",
   "epistemicStatus": "documented",

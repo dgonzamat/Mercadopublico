@@ -10,7 +10,8 @@
   "location": {
     "lat": 43.56,
     "lng": 1.48,
-    "place": "CNES, Toulouse (Francia)"
+    "place": "CNES, Toulouse (Francia)",
+    "place_en": "CNES, Toulouse (France)"
   },
   "tier": "A",
   "probability": 45,

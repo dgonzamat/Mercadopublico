@@ -10,7 +10,8 @@
   "location": {
     "lat": 35.69,
     "lng": 139.69,
-    "place": "Tokio · Ministerio de Defensa"
+    "place": "Tokio · Ministerio de Defensa",
+    "place_en": "Tokyo · Ministry of Defense"
   },
   "tier": "A",
   "epistemicStatus": "documented",

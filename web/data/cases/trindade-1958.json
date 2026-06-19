@@ -9,7 +9,8 @@
   "location": {
     "lat": -20.51,
     "lng": -29.32,
-    "place": "Ilha de Trindade"
+    "place": "Ilha de Trindade",
+    "place_en": "Trindade Island"
   },
   "tier": "A",
   "epistemicStatus": "documented",

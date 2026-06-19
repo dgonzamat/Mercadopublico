@@ -10,7 +10,8 @@
   "location": {
     "lat": 56.78,
     "lng": -3.95,
-    "place": "Calvine, Perthshire, Escocia"
+    "place": "Calvine, Perthshire, Escocia",
+    "place_en": "Calvine, Perthshire, Scotland"
   },
   "tier": "A",
   "epistemicStatus": "documented",

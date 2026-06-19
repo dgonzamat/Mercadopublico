@@ -10,7 +10,8 @@
   "location": {
     "lat": 33.3563,
     "lng": -116.8650,
-    "place": "Palomar Observatory, California (data set); Stockholm University / IAC Canarias (análisis)"
+    "place": "Palomar Observatory, California (data set); Stockholm University / IAC Canarias (análisis)",
+    "place_en": "Palomar Observatory, California (data set); Stockholm University / IAC Canary Islands (analysis)"
   },
   "tier": "S",
   "epistemicStatus": "documented",

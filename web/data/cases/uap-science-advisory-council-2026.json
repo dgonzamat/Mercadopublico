@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.8977,
     "lng": -77.0365,
-    "place": "Washington D.C. (Casa Blanca / AARO)"
+    "place": "Washington D.C. (Casa Blanca / AARO)",
+    "place_en": "Washington D.C. (White House / AARO)"
   },
   "tier": "A",
   "epistemicStatus": "developing",

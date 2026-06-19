@@ -10,7 +10,8 @@
   "location": {
     "lat": -33.39,
     "lng": -70.79,
-    "place": "DGAC, Santiago de Chile"
+    "place": "DGAC, Santiago de Chile",
+    "place_en": "DGAC, Santiago, Chile"
   },
   "tier": "A",
   "probability": 48,

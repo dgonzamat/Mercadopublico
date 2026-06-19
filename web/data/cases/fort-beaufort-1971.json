@@ -10,7 +10,8 @@
   "location": {
     "lat": -32.78,
     "lng": 26.63,
-    "place": "Braeside farm, Fort Beaufort, Cabo Oriental"
+    "place": "Braeside farm, Fort Beaufort, Cabo Oriental",
+    "place_en": "Braeside farm, Fort Beaufort, Eastern Cape"
   },
   "tier": "B",
   "epistemicStatus": "documented",

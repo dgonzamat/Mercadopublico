@@ -10,7 +10,8 @@
   "location": {
     "lat": 47.2528,
     "lng": -85.0,
-    "place": "Lago Superior (frente a Kinross AFB, Michigan)"
+    "place": "Lago Superior (frente a Kinross AFB, Michigan)",
+    "place_en": "Lake Superior (off Kinross AFB, Michigan)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

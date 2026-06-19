@@ -10,7 +10,8 @@
   "location": {
     "lat": 50.95,
     "lng": 28.0,
-    "place": "Base de las Fuerzas de Cohetes Estratégicos · Byelokoroviche, RSS de Ucrania"
+    "place": "Base de las Fuerzas de Cohetes Estratégicos · Byelokoroviche, RSS de Ucrania",
+    "place_en": "Strategic Rocket Forces base · Byelokoroviche, Ukrainian SSR"
   },
   "tier": "A",
   "epistemicStatus": "documented",

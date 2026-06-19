@@ -10,7 +10,8 @@
   "location": {
     "lat": 53.9,
     "lng": 27.5667,
-    "place": "Cielo sobre Minsk, RSS de Bielorrusia (ruta Tbilisi–Tallin)"
+    "place": "Cielo sobre Minsk, RSS de Bielorrusia (ruta Tbilisi–Tallin)",
+    "place_en": "Sky over Minsk, Byelorussian SSR (Tbilisi–Tallinn route)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

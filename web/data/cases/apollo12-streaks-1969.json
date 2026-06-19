@@ -10,7 +10,8 @@
   "location": {
     "lat": 29.55,
     "lng": -95.09,
-    "place": "NASA · debrief post-misión, Houston"
+    "place": "NASA · debrief post-misión, Houston",
+    "place_en": "NASA · post-mission debrief, Houston"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": 34.4,
     "lng": -106.0,
-    "place": "Nuevo México · ubicación no divulgada"
+    "place": "Nuevo México · ubicación no divulgada",
+    "place_en": "New Mexico · undisclosed location"
   },
   "tier": "B",
   "epistemicStatus": "documented",

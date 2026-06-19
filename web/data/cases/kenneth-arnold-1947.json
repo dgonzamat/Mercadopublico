@@ -10,7 +10,8 @@
   "location": {
     "lat": 46.8523,
     "lng": -121.7603,
-    "place": "Monte Rainier, estado de Washington"
+    "place": "Monte Rainier, estado de Washington",
+    "place_en": "Mount Rainier, Washington State"
   },
   "tier": "A",
   "epistemicStatus": "documented",

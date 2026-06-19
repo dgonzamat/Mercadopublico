@@ -10,7 +10,8 @@
   "location": {
     "lat": 40.0076,
     "lng": -105.2659,
-    "place": "Universidad de Colorado, Boulder"
+    "place": "Universidad de Colorado, Boulder",
+    "place_en": "University of Colorado, Boulder"
   },
   "tier": "A",
   "epistemicStatus": "documented",

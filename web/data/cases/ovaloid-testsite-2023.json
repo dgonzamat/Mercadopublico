@@ -10,7 +10,8 @@
   "location": {
     "lat": 39.5,
     "lng": -98.35,
-    "place": "Sitio de prueba militar — ubicación clasificada (EE.UU.)"
+    "place": "Sitio de prueba militar — ubicación clasificada (EE.UU.)",
+    "place_en": "Military test site — classified location (U.S.)"
   },
   "tier": "A",
   "epistemicStatus": "developing",

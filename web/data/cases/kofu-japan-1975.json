@@ -10,7 +10,8 @@
   "location": {
     "lat": 35.6642,
     "lng": 138.5685,
-    "place": "Kamimachi, Kōfu, prefectura de Yamanashi"
+    "place": "Kamimachi, Kōfu, prefectura de Yamanashi",
+    "place_en": "Kamimachi, Kōfu, Yamanashi Prefecture"
   },
   "tier": "B",
   "epistemicStatus": "documented",

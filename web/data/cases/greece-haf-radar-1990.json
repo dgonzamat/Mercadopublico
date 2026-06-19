@@ -10,7 +10,8 @@
   "location": {
     "lat": 37.98,
     "lng": 23.73,
-    "place": "Espacio aéreo griego — expediente Hellenic Air Force"
+    "place": "Espacio aéreo griego — expediente Hellenic Air Force",
+    "place_en": "Greek airspace — Hellenic Air Force file"
   },
   "tier": "B",
   "epistemicStatus": "documented",
