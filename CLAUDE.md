@@ -73,10 +73,16 @@ Esta separación existe porque `cases.json` monolítico (~165KB) excede el budge
 Campos obligatorios: `id, num, name, year_start, country, country_name, flag, location, tier, probability, summary, summary_en, patterns, category`.
 
 Campos opcionales de rich content (renderizados como secciones en `/cases/[slug]`):
-- `whatHappened` — 2-3 párrafos, cronología + contexto. Separa párrafos con `\n\n`.
-- `whyMatters` — 1 párrafo, significancia analítica.
+- `whatHappened` — cronología + contexto. Separa párrafos con `\n\n`.
+- `whyMatters` — significancia analítica.
 - `evidence` — array de strings, 3-8 ítems documentados.
 - `sources` — array de `{name, url?, note?}` para citas primarias.
+
+### Línea editorial · longitud de la descripción (jun 2026)
+
+**Estándar: la descripción narrativa de cada caso —`whatHappened` + `whyMatters`— debe alcanzar al menos ~1 página A4 (~550 palabras / ~3.500 caracteres), en español e inglés.** `evidence` y `sources` aportan pero NO cuentan para la página: el estándar mide prosa, no listas — un caso con narrativa corta y listas largas sigue por debajo del estándar.
+
+Esto extiende la regla anterior ("2-3 párrafos") porque el corpus dejó casos demasiado telegráficos para su tier. El auditor `audit-consistency.mjs` (regla **E13**, corre en prebuild) reporta cuántos casos siguen bajo el umbral, con backlog por tier — es **WARN agregado, no ERROR**: el build no se rompe, pero el progreso queda medible. La expansión se hace **con investigación caso por caso** (fuentes primarias, no relleno), priorizando **Tier S → A → B**. Cualquier caso nuevo debe nacer cumpliendo el estándar.
 - `evidenceContribution` — array de contribuciones a hipótesis: `{hypothesisId, direction, strength, rationale, rationaleEn}`. Recomendado para Tier S y A.
 
 Si un caso no tiene rich content, la página de detalle muestra fallback "⏳ Caso pendiente de explicación detallada".

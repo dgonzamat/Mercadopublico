@@ -666,6 +666,47 @@ for (const c of cases) {
   }
 }
 
+// ─── 9f. RULE E13: description ≥ 1 page (editorial standard, WARN) ────────
+//
+// Línea editorial (jun 2026): la DESCRIPCIÓN narrativa de cada caso
+// —whatHappened + whyMatters— debe alcanzar ~1 página A4 (~550 palabras /
+// ~3.500 caracteres) en español. evidence/sources aportan pero NO cuentan
+// para la página: el estándar mide prosa, no listas. Se mide el cuerpo ES
+// (E10 ya garantiza que el _en exista y sea bilingüe). WARN agregado —no
+// ERROR— porque el backlog se expande con investigación caso por caso, no
+// rellenando; el conteo deja el progreso medible (mismo patrón que E9).
+//
+// El expediente entero (incl. evidence/sources) no debe quedar exento: un
+// caso con narrativa corta pero listas largas SIGUE bajo el estándar, porque
+// la página es prosa. Por eso el umbral aplica solo a whatHappened+whyMatters.
+
+const PAGE_MIN_BODY = 3500;
+const shortBodies = [];
+for (const c of cases) {
+  const bodyLen = ((c.whatHappened || "") + "\n\n" + (c.whyMatters || "")).trim().length;
+  if (bodyLen < PAGE_MIN_BODY) {
+    shortBodies.push({ id: c.id, tier: c.tier || "?", len: bodyLen });
+  }
+}
+if (shortBodies.length > 0) {
+  const byTier = { S: 0, A: 0, B: 0 };
+  for (const s of shortBodies) byTier[s.tier] = (byTier[s.tier] || 0) + 1;
+  const shortest = [...shortBodies]
+    .sort((a, b) => a.len - b.len)
+    .slice(0, 12)
+    .map((s) => `${s.id}(${s.tier},${s.len})`)
+    .join(", ");
+  record(
+    "WARN",
+    casesDir,
+    0,
+    `E13 longitud: ${shortBodies.length}/${cases.length} casos bajo ~1 página ` +
+      `(whatHappened+whyMatters <${PAGE_MIN_BODY} chars ES). Backlog por tier: ` +
+      `S×${byTier.S} A×${byTier.A} B×${byTier.B}. Expandir con investigación, ` +
+      `prioridad S→A→B. Más cortos: ${shortest}`,
+  );
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
@@ -684,6 +725,7 @@ out.push(` Years:        ${STATS.years}`);
 out.push(` Tier S/A/B:   ${STATS.tierS} / ${STATS.tierA} / ${STATS.tierB}`);
 out.push(` Tier S w/o evidenceContribution: ${tierSWithoutContrib}`);
 out.push(` Researchers linked to ≥1 case: ${linkedCount} / ${STATS.researchers}`);
+out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${STATS.cases - shortBodies.length} / ${STATS.cases}`);
 out.push("");
 out.push(" Hypothesis priors → effective:");
 for (const h of HYPOTHESES) {
