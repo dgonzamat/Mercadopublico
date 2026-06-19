@@ -1,0 +1,65 @@
+{
+  "id": "condon-report-1968",
+  "num": 235,
+  "name": "Condon Report · estudio USAF–Universidad de Colorado",
+  "name_en": "Condon Report · USAF–University of Colorado study",
+  "year_start": 1968,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.0076,
+    "lng": -105.2659,
+    "place": "Universidad de Colorado, Boulder"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 60,
+  "summary": "'Scientific Study of Unidentified Flying Objects' (1968), dirigido por el físico Edward Condon en la Universidad de Colorado con financiamiento de la USAF. Su conclusión —que el estudio de los OVNIs no aporta valor científico— cerró el Project Blue Book en 1969. Pero su credibilidad quedó dañada: el 'memo Low' reveló un sesgo de diseño, y cerca de un tercio de los casos quedó sin explicación pese a la conclusión.",
+  "summary_en": "'Scientific Study of Unidentified Flying Objects' (1968), led by physicist Edward Condon at the University of Colorado with USAF funding. Its conclusion —that studying UFOs offers no scientific value— closed Project Blue Book in 1969. But its credibility was damaged: the 'Low memo' revealed a design bias, and roughly a third of cases remained unexplained despite the conclusion.",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "Ante la presión pública y científica sobre el Project Blue Book, la USAF financió en 1966 un estudio independiente en la Universidad de Colorado, dirigido por el reconocido físico Edward U. Condon. El informe final, de más de mil páginas y unos 91 casos analizados, se entregó a fines de 1968 y se publicó en enero de 1969.\n\nLa sección de conclusiones, redactada por Condon, sostuvo que dos décadas de estudio de OVNIs no habían aportado nada al conocimiento científico y que no se justificaba más investigación. Sobre esa base, la USAF cerró el Project Blue Book en diciembre de 1969. Sin embargo, el informe es famoso por su tensión interna: un memorándum del coordinador del proyecto, Robert Low (1967), reveló que el estudio se diseñó para 'aparecer objetivo' mientras se esperaba un resultado negativo —un sesgo de mandato—; y, paradójicamente, cerca de un tercio de los casos del propio informe quedaron clasificados como no explicados. El expediente entra al corpus como el documento institucional escéptico fundacional de EE.UU., y como caso de estudio de cómo una conclusión puede divergir de sus propios datos.",
+  "whatHappened_en": "Amid public and scientific pressure on Project Blue Book, the USAF funded in 1966 an independent study at the University of Colorado, led by the renowned physicist Edward U. Condon. The final report, over a thousand pages with some 91 cases analyzed, was delivered in late 1968 and published in January 1969.\n\nThe conclusions section, written by Condon, held that two decades of UFO study had added nothing to scientific knowledge and that no further investigation was warranted. On that basis, the USAF closed Project Blue Book in December 1969. However, the report is famous for its internal tension: a memo by project coordinator Robert Low (1967) revealed the study was designed to 'appear objective' while a negative result was expected —a mandate bias—; and, paradoxically, roughly a third of the report's own cases were classified as unexplained. The file enters the corpus as the U.S. founding skeptical institutional document, and as a case study of how a conclusion can diverge from its own data.",
+  "whyMatters": "Es el documento que institucionalizó el cierre del estudio oficial de OVNIs en EE.UU. durante medio siglo — y, a la vez, el ejemplo más citado de conclusión escéptica en tensión con sus propios datos. El 'memo Low' lo convierte en un caso de sesgo de mandato documentado; el ~33% de casos no explicados, en un argumento involuntario contra su propia conclusión. Por eso su contribución es ambivalente: como acto institucional, ancla el polo escéptico; como evidencia, su residuo no explicado pese a un diseño hostil tensiona la lectura de 'todo es trivial'. Tier A por solidez documental e impacto histórico (cerró el Blue Book), no por la fuerza de una conclusión que su propio aparato socava.",
+  "whyMatters_en": "It is the document that institutionalized the closure of official UFO study in the U.S. for half a century — and, at the same time, the most cited example of a skeptical conclusion in tension with its own data. The 'Low memo' makes it a documented case of mandate bias; the ~33% unexplained cases, an involuntary argument against its own conclusion. Hence its contribution is ambivalent: as an institutional act, it anchors the skeptical pole; as evidence, its unexplained residue despite a hostile design strains the 'it's all trivial' reading. Tier A for documentary solidity and historical impact (it closed Blue Book), not for the strength of a conclusion its own apparatus undercuts.",
+  "evidence": [
+    "'Scientific Study of Unidentified Flying Objects' (Universidad de Colorado, financiado por USAF), entregado 1968, publicado ene 1969",
+    "Dirigido por el físico Edward U. Condon; ~91 casos, más de 1000 páginas",
+    "Conclusión: el estudio de OVNIs no aporta valor científico; recomendó no continuar",
+    "Base para el cierre del Project Blue Book (diciembre 1969)",
+    "Memo Low (1967): el estudio diseñado para 'aparecer objetivo' con resultado negativo esperado — sesgo de mandato",
+    "~33% de los casos del informe quedaron clasificados como no explicados"
+  ],
+  "evidence_en": [
+    "'Scientific Study of Unidentified Flying Objects' (University of Colorado, USAF-funded), delivered 1968, published Jan 1969",
+    "Led by physicist Edward U. Condon; ~91 cases, over 1000 pages",
+    "Conclusion: UFO study offers no scientific value; recommended discontinuation",
+    "Basis for the closure of Project Blue Book (December 1969)",
+    "Low memo (1967): the study designed to 'appear objective' with an expected negative result — mandate bias",
+    "~33% of the report's cases were classified as unexplained"
+  ],
+  "sources": [
+    {
+      "name": "'Scientific Study of Unidentified Flying Objects' (Condon Report) — texto completo (archive.org)",
+      "url": "https://archive.org/details/scientificstudyo0000unse",
+      "note": "Documento primario."
+    },
+    {
+      "name": "University of Colorado / NCAR — registro del Condon Committee",
+      "url": "https://en.wikipedia.org/wiki/Condon_Committee"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Paradoja documentada: un estudio diseñado con sesgo de mandato hacia un resultado negativo (memo Low) aún dejó cerca de un tercio de sus casos sin explicación. Que incluso bajo presión escéptica el residuo no explicado persista tensiona —débilmente— la lectura de que todo es identificación errónea trivial. Minimal porque el informe es ante todo un acto institucional escéptico; el contrapeso viene de su propio residuo, no de una afirmación positiva.",
+      "rationaleEn": "Documented paradox: a study designed with a mandate bias toward a negative result (Low memo) still left roughly a third of its cases unexplained. That an unexplained residue persists even under skeptical pressure weakly strains the reading that it's all trivial misidentification. Minimal because the report is primarily a skeptical institutional act; the counterweight comes from its own residue, not from a positive claim."
+    }
+  ]
+}

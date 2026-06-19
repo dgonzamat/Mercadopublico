@@ -1,0 +1,63 @@
+{
+  "id": "cometa-report-1999",
+  "num": 236,
+  "name": "Informe COMETA · ex-oficiales franceses (1999)",
+  "name_en": "COMETA Report · French ex-officials (1999)",
+  "year_start": 1999,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "place": "COMETA · auditores del IHEDN, París"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "'Les OVNI et la Défense' (1999): informe de COMETA, un comité de generales y oficiales superiores franceses retirados y expertos aeroespaciales (varios ligados al IHEDN). Tras revisar casos con datos de radar y testigos calificados, concluyó que la hipótesis extraterrestre es la más plausible para un residuo de casos, e instó a los gobiernos a prepararse.",
+  "summary_en": "'Les OVNI et la Défense' (1999): report by COMETA, a committee of retired French generals and senior officers and aerospace experts (several linked to IHEDN). After reviewing cases with radar data and qualified witnesses, it concluded the extraterrestrial hypothesis is the most plausible for a residue of cases, and urged governments to prepare.",
+  "patterns": [
+    "8e",
+    "8q"
+  ],
+  "category": "document",
+  "whatHappened": "COMETA (Comité d'Études Approfondies) fue un grupo independiente de oficiales militares franceses retirados de alto rango y expertos aeroespaciales, muchos de ellos auditores del Institut des hautes études de défense nationale (IHEDN), el centro de estudios de defensa de Francia. En 1999 publicaron el informe 'Les OVNI et la Défense: à quoi doit-on se préparer?' ('Los OVNI y la Defensa: ¿a qué debemos prepararnos?').\n\nEl informe analizó una serie de casos —priorizando los respaldados por radar, intercepciones militares y testigos calificados como pilotos— y argumentó que, descartadas las explicaciones convencionales, la hipótesis extraterrestre (ETH) era la más racional para explicar un residuo consistente. Recomendó a Francia y a los gobiernos aliados reforzar la recolección de datos, coordinar a nivel europeo y prepararse institucionalmente para la posibilidad. No es un documento gubernamental oficial —es la opinión analítica de un grupo de ex-oficiales—, pero su peso institucional (la trayectoria de sus autores) lo convirtió en una de las declaraciones pro-ETH más serias jamás producidas por figuras de ese rango. Entra al corpus como documento de análisis experto, con su conclusión ETH ponderada como tal: opinión calificada, no evidencia nueva.",
+  "whatHappened_en": "COMETA (Comité d'Études Approfondies) was an independent group of high-ranking retired French military officers and aerospace experts, many of them auditors of the Institut des hautes études de défense nationale (IHEDN), France's defence studies center. In 1999 they published the report 'Les OVNI et la Défense: à quoi doit-on se préparer?' ('UFOs and Defence: what should we be prepared for?').\n\nThe report analyzed a series of cases —prioritizing those backed by radar, military intercepts and qualified witnesses such as pilots— and argued that, conventional explanations ruled out, the extraterrestrial hypothesis (ETH) was the most rational to explain a consistent residue. It recommended France and allied governments strengthen data collection, coordinate at the European level and prepare institutionally for the possibility. It is not an official government document —it is the analytical opinion of a group of ex-officers—, but its institutional weight (its authors' standing) made it one of the most serious pro-ETH statements ever produced by figures of that rank. It enters the corpus as an expert-analysis document, with its ETH conclusion weighted as such: qualified opinion, not new evidence.",
+  "whyMatters": "Es el contrapeso pro-ETH a los informes escépticos oficiales (Condon, AARO): un grupo de generales y expertos aeroespaciales franceses, con credenciales de defensa, llegó por escrito a la conclusión opuesta. Su valor es que eleva la ETH desde el folklore al análisis de defensa serio — pero su límite es claro: COMETA analiza casos ya conocidos y emite un juicio, no aporta evidencia primaria nueva, y no es un documento de gobierno. Por eso su contribución es minimal: pesa como opinión calificada que mantiene la hipótesis sobre la mesa, no como dato que la confirme. Tier A por la solidez documental y el rango de sus autores.",
+  "whyMatters_en": "It is the pro-ETH counterweight to the official skeptical reports (Condon, AARO): a group of French generals and aerospace experts, with defence credentials, reached the opposite conclusion in writing. Its value is that it lifts the ETH from folklore to serious defence analysis — but its limit is clear: COMETA analyzes already-known cases and issues a judgment, it brings no new primary evidence, and it is not a government document. Hence its contribution is minimal: it weighs as qualified opinion that keeps the hypothesis on the table, not as data that confirms it. Tier A for documentary solidity and the standing of its authors.",
+  "evidence": [
+    "Informe 'Les OVNI et la Défense: à quoi doit-on se préparer?' (COMETA, 1999)",
+    "Autores: generales y oficiales superiores franceses retirados + expertos aeroespaciales, varios auditores del IHEDN",
+    "Metodología: priorización de casos con radar, intercepciones militares y testigos calificados",
+    "Conclusión: la hipótesis extraterrestre es la más plausible para un residuo de casos tras descartar lo convencional",
+    "Recomendación: reforzar recolección de datos, coordinación europea y preparación institucional"
+  ],
+  "evidence_en": [
+    "Report 'Les OVNI et la Défense: à quoi doit-on se préparer?' (COMETA, 1999)",
+    "Authors: retired French generals and senior officers + aerospace experts, several IHEDN auditors",
+    "Methodology: prioritization of cases with radar, military intercepts and qualified witnesses",
+    "Conclusion: the extraterrestrial hypothesis is the most plausible for a residue of cases after ruling out the conventional",
+    "Recommendation: strengthen data collection, European coordination and institutional preparation"
+  ],
+  "sources": [
+    {
+      "name": "Informe COMETA 'Les OVNI et la Défense' (1999) — texto",
+      "url": "https://www.cufos.org/cometa/COMETA_part1.pdf",
+      "note": "Documento primario (traducción/archivo)."
+    },
+    {
+      "name": "COMETA report — entrada enciclopédica",
+      "url": "https://en.wikipedia.org/wiki/COMETA_Report"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Un grupo de generales y expertos aeroespaciales franceses concluyó por escrito que la hipótesis extraterrestre es la más plausible para un residuo de casos. Eleva la ETH desde el folklore al análisis de defensa serio — pero es juicio analítico sobre casos ya conocidos, no evidencia primaria nueva, y no es un documento de gobierno. Minimal: pesa como opinión calificada que mantiene la hipótesis viva, no como confirmación.",
+      "rationaleEn": "A group of French generals and aerospace experts concluded in writing that the extraterrestrial hypothesis is the most plausible for a residue of cases. It lifts the ETH from folklore to serious defence analysis — but it is an analytical judgment on already-known cases, not new primary evidence, and not a government document. Minimal: it weighs as qualified opinion that keeps the hypothesis alive, not as confirmation."
+    }
+  ]
+}
