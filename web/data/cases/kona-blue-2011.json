@@ -1,0 +1,68 @@
+{
+  "id": "kona-blue-2011",
+  "num": 229,
+  "name": "Kona Blue · SAP prospectivo de DHS (recuperación UAP)",
+  "name_en": "Kona Blue · DHS prospective SAP (UAP retrieval)",
+  "year_start": 2011,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8895,
+    "lng": -77.0353,
+    "place": "Department of Homeland Security · Washington D.C."
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 70,
+  "summary": "Programa de Acceso Especial prospectivo (PSAP) propuesto al DHS hacia 2011, derivado del AAWSAP/AATIP de la DIA y liderado por el Dr. Jim Lacatski. Proponía estudiar tecnología UFO, entrevistar testigos y custodiar materiales recuperados — pero fue terminado el 10 de febrero de 2012 sin ser aprobado, sin financiamiento y sin recibir material alguno. Desclasificado por el DHS en 2023 y documentado oficialmente por la AARO.",
+  "summary_en": "Prospective Special Access Program (PSAP) proposed to DHS around 2011, derived from the DIA's AAWSAP/AATIP and led by Dr. Jim Lacatski. It proposed to study UFO technology, interview witnesses and hold recovered materials — but was terminated on February 10, 2012 without being approved, unfunded and never receiving any material. Declassified by DHS in 2023 and officially documented by AARO.",
+  "patterns": [
+    "8m",
+    "8e"
+  ],
+  "category": "document",
+  "whatHappened": "Kona Blue fue un Programa de Acceso Especial prospectivo (Prospective Special Access Program) propuesto a la dirigencia del Department of Homeland Security alrededor de 2011. Surgió como continuación del Advanced Aerospace Weapon System Application Program (AAWSAP) / Advanced Aerospace Threat Identification Program (AATIP), gestionado por la Defense Intelligence Agency entre 2009 y 2012 con earmarks congresionales, y fue impulsado por el Dr. Jim Lacatski, analista de inteligencia y experto en misiles de la DIA. La propuesta contemplaba estudiar tecnología de origen desconocido, entrevistar testigos, investigar efectos físicos y psicológicos de los encuentros, líneas de consciousness/remote viewing, y —el punto más significativo— custodiar y analizar materiales recuperados.\n\nEl programa nunca fue aprobado ni formalmente establecido: fue terminado el 10 de febrero de 2012. Según la documentación oficial, ningún dato ni material de ningún tipo fue transferido a o recolectado por el DHS bajo Kona Blue, y el programa nunca recibió materiales ni financiamiento. En febrero de 2023 el DHS desclasificó inesperadamente los documentos que detallan el programa, y posteriormente la All-domain Anomaly Resolution Office (AARO) publicó un informe oficial 'History and Origin of KONA BLUE'. El valor del expediente es documental, no probatorio: confirma por papel oficial que partes del aparato de inteligencia estadounidense architecturaron un programa formal cuyo mandato explícito incluía custodiar craft recuperado — sin que la desclasificación pruebe que tal material existiera.",
+  "whatHappened_en": "Kona Blue was a Prospective Special Access Program proposed to Department of Homeland Security leadership around 2011. It arose as a continuation of the Advanced Aerospace Weapon System Application Program (AAWSAP) / Advanced Aerospace Threat Identification Program (AATIP), managed by the Defense Intelligence Agency between 2009 and 2012 with congressional earmarks, and was driven by Dr. Jim Lacatski, an intelligence analyst and missile expert at the DIA. The proposal contemplated studying technology of unknown origin, interviewing witnesses, investigating physical and psychological effects of encounters, consciousness/remote-viewing lines, and —the most significant point— holding and analyzing recovered materials.\n\nThe program was never approved or formally established: it was terminated on February 10, 2012. According to the official documentation, no data or material of any kind was transferred to or collected by DHS under Kona Blue, and the program never received materials or funding. In February 2023 DHS unexpectedly declassified the documents detailing the program, and the All-domain Anomaly Resolution Office (AARO) later published an official 'History and Origin of KONA BLUE' report. The file's value is documentary, not probative: it confirms by official paper that parts of the U.S. intelligence apparatus architected a formal program whose explicit mandate included holding recovered craft — without the declassification proving such material existed.",
+  "whyMatters": "Es un dato documental duro sobre la hipótesis de programas de recuperación: el gobierno de EE.UU. redactó y propuso formalmente un Programa de Acceso Especial cuyo mandato incluía custodiar materiales recuperados de craft de origen desconocido. Que el programa nunca se financiara ni recibiera material es exactamente lo que la propia AARO subraya — y por eso el peso es de intención institucional, no de confirmación de hardware. Importa porque conecta el ecosistema AAWSAP/AATIP/Skinwalker (caso del corpus) con la versión DHS, y porque la desclasificación de 2023 lo pone sobre papel oficial verificable, no en testimonio. Tier A por la solidez documental (documentos DHS desclasificados + informe oficial de AARO), no por la fuerza evidencial sobre la naturaleza del fenómeno.",
+  "whyMatters_en": "It is a hard documentary datum on the recovery-program hypothesis: the U.S. government drafted and formally proposed a Special Access Program whose mandate included holding materials recovered from craft of unknown origin. That the program was never funded nor received material is exactly what AARO itself stresses — and so the weight is institutional intent, not hardware confirmation. It matters because it connects the AAWSAP/AATIP/Skinwalker ecosystem (a corpus case) with the DHS version, and because the 2023 declassification puts it on verifiable official paper, not testimony. Tier A for the documentary solidity (declassified DHS documents + official AARO report), not for evidential strength about the nature of the phenomenon.",
+  "evidence": [
+    "Documentos Kona Blue desclasificados por el DHS (febrero 2023)",
+    "Informe oficial de la AARO: 'History and Origin of KONA BLUE' (aaro.mil)",
+    "Origen en AAWSAP/AATIP (DIA, 2009-2012, earmarks congresionales); impulsado por el Dr. Jim Lacatski",
+    "Mandato propuesto: estudio de tecnología de origen desconocido, custodia de materiales recuperados, efectos en testigos",
+    "Terminado el 10 de febrero de 2012, sin aprobación, sin financiamiento y sin recibir material alguno (según la documentación oficial)"
+  ],
+  "evidence_en": [
+    "Kona Blue documents declassified by DHS (February 2023)",
+    "Official AARO report: 'History and Origin of KONA BLUE' (aaro.mil)",
+    "Origin in AAWSAP/AATIP (DIA, 2009-2012, congressional earmarks); driven by Dr. Jim Lacatski",
+    "Proposed mandate: study of technology of unknown origin, custody of recovered materials, effects on witnesses",
+    "Terminated February 10, 2012, without approval, unfunded and never receiving any material (per the official documentation)"
+  ],
+  "sources": [
+    {
+      "name": "AARO — 'History and Origin of KONA BLUE' (informe oficial)",
+      "url": "https://www.aaro.mil/Portals/136/PDFs/UAP_RECORDS_RESEARCH/History_and_Origin_of_KONA_BLUE_FINAL_508.pdf",
+      "note": "Documento primario oficial de la AARO."
+    },
+    {
+      "name": "The Black Vault — 'DoD Releases KONA BLUE Documents'",
+      "url": "https://www.theblackvault.com/documentarchive/dod-releases-kona-blue-documents/",
+      "note": "Archivo de los documentos desclasificados."
+    },
+    {
+      "name": "NewsNation — 'What was the Kona Blue program, and does it mean UFOs exist?'",
+      "url": "https://www.newsnationnow.com/space/ufo/what-kona-blue-do-ufos-exist/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "ingenieria-inversa",
+      "direction": "supports",
+      "strength": "modest",
+      "rationale": "Documento oficial desclasificado: el gobierno de EE.UU. propuso formalmente un Programa de Acceso Especial cuyo mandato explícito incluía custodiar y analizar materiales recuperados de craft de origen desconocido. Es intención institucional puesta en papel, no confirmación de hardware — la propia AARO subraya que el programa nunca se financió ni recibió material. Modest porque la solidez es documental (existe el programa propuesto) pero no prueba que existiera el material a custodiar.",
+      "rationaleEn": "Declassified official document: the U.S. government formally proposed a Special Access Program whose explicit mandate included holding and analyzing materials recovered from craft of unknown origin. It is institutional intent on paper, not hardware confirmation — AARO itself stresses the program was never funded nor received material. Modest because the solidity is documentary (the proposed program exists) but it does not prove the material to be held existed."
+    }
+  ]
+}

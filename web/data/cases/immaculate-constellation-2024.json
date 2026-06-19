@@ -1,0 +1,67 @@
+{
+  "id": "immaculate-constellation-2024",
+  "num": 230,
+  "name": "Immaculate Constellation · uSAP alegado de archivo UAP",
+  "name_en": "Immaculate Constellation · alleged UAP-archive uSAP",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8899,
+    "lng": -77.0091,
+    "place": "Cámara de Representantes · Washington D.C."
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "En octubre-noviembre de 2024, el periodista Michael Shellenberger reveló ante el Congreso un documento de 12 páginas que describe 'Immaculate Constellation', un presunto Programa de Acceso Especial no reconocido (uSAP) creado hacia 2017 para recolectar y custodiar imágenes de alta resolución y datos de sensores de UAP captados por activos militares de EE.UU. El DoD respondió con una no-negación: dijo que el programa no existe sin explicar el origen de los documentos.",
+  "summary_en": "In October-November 2024, journalist Michael Shellenberger presented to Congress a 12-page document describing 'Immaculate Constellation', an alleged unacknowledged Special Access Program (uSAP) created around 2017 to collect and hold high-resolution imagery and sensor data of UAP captured by U.S. military assets. The DoD responded with a non-denial: it said the program does not exist without explaining the origin of the documents.",
+  "patterns": [
+    "8m",
+    "8r"
+  ],
+  "category": "document",
+  "whatHappened": "A partir del 9 de octubre de 2024, la prensa abrió la historia de un presunto Programa de Acceso Especial no reconocido (unacknowledged SAP) sobre fenómenos anómalos no identificados. El periodista de investigación Michael Shellenberger le dio alcance nacional al presentar, en una audiencia congresional de noviembre de 2024, los detalles de un documento de denunciante que describía el programa. El 13 de noviembre de 2024, antes de la audiencia, a la representante Nancy Mace se le entregó el documento original de 12 páginas del Pentágono sobre Immaculate Constellation.\n\nSegún el documento, el programa habría sido creado hacia 2017 y su misión sería recolectar, poner en cuarentena y analizar imágenes de alta resolución y datos de sensores de UAP captados por activos militares estadounidenses en todo el mundo, gestionado sin la supervisión congresional apropiada. El Departamento de Defensa emitió una respuesta de no-negación: afirmó que el programa no existe, pero declinó explicar cómo se redactaron los documentos que lo describen. El expediente entra al corpus por su rastro documental e institucional —documento presentado en el registro del Congreso, referencia FOIA del DNI (DF-2025-00021), no-negación oficial del DoD— y no por confirmación: la existencia del programa permanece sin verificar. Por eso la probabilidad es moderada y el peso, contextual.",
+  "whatHappened_en": "Starting October 9, 2024, the press broke the story of an alleged unacknowledged Special Access Program regarding unidentified anomalous phenomena. Investigative journalist Michael Shellenberger gave it national reach by presenting, at a November 2024 congressional hearing, the details of a whistleblower document describing the program. On November 13, 2024, before the hearing, Representative Nancy Mace was handed the original 12-page Pentagon document on Immaculate Constellation.\n\nPer the document, the program was allegedly created around 2017 and its mission would be to collect, quarantine and analyze high-resolution imagery and sensor data of UAP captured by U.S. military assets worldwide, managed without appropriate congressional oversight. The Department of Defense issued a non-denial response: it stated the program does not exist, but declined to explain how the documents describing it came to be written. The file enters the corpus for its documentary and institutional trace —document entered into the congressional record, DNI FOIA reference (DF-2025-00021), official DoD non-denial— and not for confirmation: the program's existence remains unverified. That is why the probability is moderate and the weight, contextual.",
+  "whyMatters": "Es un caso de rastro documental fuerte sobre claim no confirmado: a diferencia de un testimonio suelto, aquí hay un documento físico de 12 páginas entregado a una legisladora en ejercicio, presentado en audiencia, con referencia FOIA del DNI y una no-negación oficial del DoD que rehúsa explicar el origen del documento. Esa no-negación es lo analíticamente relevante: el patrón retórico 'no existe, pero no diremos de dónde salieron los papeles' es el mismo que el corpus rastrea en el ciclo encubrimiento→ambigüedad. No prueba el programa —su existencia sigue sin verificar, y por eso no es Tier S ni alta probabilidad—, pero el expediente documental es real y auditable. Estructuralmente comparable al memo Wilson-Davis 2002: documento contestado, origen disputado, valor procedural.",
+  "whyMatters_en": "It is a case of strong documentary trace on an unconfirmed claim: unlike a loose testimony, here there is a physical 12-page document handed to a sitting lawmaker, presented at a hearing, with a DNI FOIA reference and an official DoD non-denial that refuses to explain the document's origin. That non-denial is the analytically relevant part: the rhetorical pattern 'it does not exist, but we won't say where the papers came from' is the same one the corpus tracks in the cover-up→ambiguity cycle. It does not prove the program —its existence remains unverified, which is why it is not Tier S or high probability—, but the documentary file is real and auditable. Structurally comparable to the Wilson-Davis memo 2002: contested document, disputed origin, procedural value.",
+  "evidence": [
+    "Documento de 12 páginas del Pentágono sobre Immaculate Constellation entregado a la rep. Nancy Mace (13 nov 2024)",
+    "Presentación por el periodista Michael Shellenberger en audiencia congresional (noviembre 2024)",
+    "Referencia FOIA del DNI: DF-2025-00021 (descripción desde material no clasificado, 22 oct 2024)",
+    "Respuesta de no-negación del DoD: afirma que el programa no existe sin explicar el origen de los documentos",
+    "Misión descrita: recolección, cuarentena y análisis de imágenes de alta resolución y datos de sensores de UAP de activos militares de EE.UU. (presunto uSAP creado ~2017)"
+  ],
+  "evidence_en": [
+    "12-page Pentagon document on Immaculate Constellation handed to Rep. Nancy Mace (Nov 13, 2024)",
+    "Presentation by journalist Michael Shellenberger at a congressional hearing (November 2024)",
+    "DNI FOIA reference: DF-2025-00021 (description from unclassified material, Oct 22, 2024)",
+    "DoD non-denial response: states the program does not exist without explaining the documents' origin",
+    "Described mission: collection, quarantine and analysis of high-resolution imagery and sensor data of UAP from U.S. military assets (alleged uSAP created ~2017)"
+  ],
+  "sources": [
+    {
+      "name": "ODNI FOIA — DF-2025-00021 'Immaculate Constellation' (descripción desclasificada, 22 oct 2024)",
+      "url": "https://www.dni.gov/files/documents/FOIA/DF-2025-00021-Immaculate-Constellation-descrp-from-UNCLASS-Press-22-Oct-2024.pdf",
+      "note": "Referencia documental oficial del DNI."
+    },
+    {
+      "name": "NewsNation — 'Immaculate Constellation: What is the alleged Pentagon program on UAPs?'",
+      "url": "https://www.newsnationnow.com/space/ufo/what-is-immaculate-constellation/"
+    },
+    {
+      "name": "NewsNation — \"'Immaculate Constellation' UAP program named in report: Journalist\"",
+      "url": "https://www.newsnationnow.com/space/ufo/report-immaculate-constellation-uap-journalist/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Documento de 12 páginas en el registro congresional + referencia FOIA del DNI + no-negación oficial del DoD describen un presunto Programa de Acceso Especial no reconocido para archivar imágenes/sensores de UAP. Es rastro documental real, pero la existencia del programa permanece sin verificar y el DoD la niega — por eso minimal: pesa como dato del patrón institucional (no-negación, gestión fuera de oversight), no como confirmación del programa. No es evidencia primaria del fenómeno, sino de cómo se administraría su información.",
+      "rationaleEn": "A 12-page document in the congressional record + DNI FOIA reference + official DoD non-denial describe an alleged unacknowledged Special Access Program to archive UAP imagery/sensors. It is real documentary trace, but the program's existence remains unverified and the DoD denies it — hence minimal: it weighs as a datum of the institutional pattern (non-denial, management outside oversight), not as confirmation of the program. It is not primary evidence of the phenomenon, but of how its information would be administered."
+    }
+  ]
+}
