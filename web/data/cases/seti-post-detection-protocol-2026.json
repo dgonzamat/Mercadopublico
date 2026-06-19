@@ -1,0 +1,76 @@
+{
+  "id": "seti-post-detection-protocol-2026",
+  "num": 228,
+  "name": "Protocolo SETI de post-detección · actualización IAA 2026",
+  "name_en": "SETI Post-Detection Protocol · IAA 2026 update",
+  "year_start": 2026,
+  "country": "GB",
+  "country_name": "Reino Unido · IAA/SETI (global)",
+  "flag": "🌍",
+  "location": {
+    "lat": 53.4808,
+    "lng": -2.2426,
+    "place": "Univ. de Manchester · IAA SETI Permanent Committee (ratificación global)",
+    "place_en": "Univ. of Manchester · IAA SETI Permanent Committee (global ratification)"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 80,
+  "summary": "El IAA SETI Committee ratificó en 2026 la primera gran revisión desde ~2010 de los 'post-detection protocols': cómo verificar y anunciar una detección de inteligencia extraterrestre. Lo analíticamente relevante es la frontera que traza — declara explícitamente que NO aplica a los UAP en la atmósfera terrestre, en el mismo año en que la ola de divulgación lo empujó a actualizarse.",
+  "summary_en": "The IAA SETI Committee ratified in 2026 the first major revision since ~2010 of the 'post-detection protocols': how to verify and announce a detection of extraterrestrial intelligence. The analytically relevant point is the boundary it draws — it explicitly states it does NOT apply to UAP in Earth's atmosphere, in the same year the disclosure wave prompted the update.",
+  "patterns": [
+    "8e",
+    "8o"
+  ],
+  "category": "document",
+  "whatHappened": "El SETI Permanent Committee de la International Academy of Astronautics (IAA), en un esfuerzo global presidido por el astrofísico Michael Garrett (Sir Bernard Lovell Chair, Universidad de Manchester), ratificó en 2026 una actualización integral de los 'Declaration of Principles Concerning Activities Following the Detection of Extraterrestrial Intelligence' — los protocolos de post-detección, sin una revisión seria desde alrededor de 2010. La versión se finaliza formalmente en el International Astronautical Congress de agosto de 2026 y su borrador técnico circuló como preprint (arXiv 2510.14506).\n\nLa actualización amplía el alcance a todo el espectro de tecnofirmas: señales de radio de banda estrecha, emisión láser, exceso infrarrojo asociado a uso de energía a gran escala (megaestructuras tipo Dyson), anomalías en mediciones astronómicas, y evidencia de artefactos físicos. Introduce requisitos de verificación independiente multi-instrumento antes de cualquier anuncio público —ningún equipo puede publicitar una detección sin confirmación cruzada por instituciones y telescopios distintos—, y mantiene la regla de que no debe enviarse ninguna respuesta a una señal sin consulta internacional coordinada a través de Naciones Unidas. Como novedad para 2026 incorpora protocolos para redes sociales, filtraciones de datos, el riesgo de deepfakes generados por IA durante la verificación, y la protección de investigadores frente a acoso y represalias profesionales, además de crear un Subcomité permanente de Post-Detección.\n\nEl documento traza una frontera explícita: declara que aplica a la búsqueda astronómica de inteligencia extraterrestre y NO a los Unidentified Anomalous Phenomena observados en la atmósfera terrestre. Esa exclusión es deliberada y llega justo cuando el propio texto reconoce que el mundo cambió por las audiencias congresionales sobre UAP — es decir, la ola UAP motivó la actualización, y la actualización aprovechó para amurallarse de la ola UAP.",
+  "whatHappened_en": "The SETI Permanent Committee of the International Academy of Astronautics (IAA), in a global effort chaired by astrophysicist Michael Garrett (Sir Bernard Lovell Chair, University of Manchester), ratified in 2026 a comprehensive update to the 'Declaration of Principles Concerning Activities Following the Detection of Extraterrestrial Intelligence' — the post-detection protocols, without a serious revision since around 2010. The version is formally finalized at the International Astronautical Congress of August 2026 and its technical draft circulated as a preprint (arXiv 2510.14506).\n\nThe update broadens scope to the full range of technosignatures: narrow-band radio signals, laser emission, infrared excess associated with large-scale energy use (Dyson-type megastructures), anomalies in astronomical measurements, and evidence of physical artifacts. It introduces independent multi-instrument verification requirements before any public announcement —no team may publicize a detection without cross-confirmation by separate institutions and telescopes—, and keeps the rule that no reply should be sent to a signal without coordinated international consultation through the United Nations. New for 2026, it incorporates protocols for social media, data leaks, the risk of AI-generated deepfakes during verification, and protection of researchers from harassment and professional retaliation, plus the creation of a permanent Post-Detection Sub-Committee.\n\nThe document draws an explicit boundary: it declares it applies to the astronomical search for extraterrestrial intelligence and NOT to Unidentified Anomalous Phenomena observed in Earth's atmosphere. That exclusion is deliberate and arrives precisely as the text itself acknowledges the world changed because of UAP congressional hearings — i.e., the UAP wave motivated the update, and the update took the opportunity to wall itself off from the UAP wave.",
+  "whyMatters": "No es un caso de avistamiento — no aporta evidencia del fenómeno. Su valor para el corpus es como dato de comportamiento institucional: el establishment científico (IAA/SETI), empujado por la ola de divulgación de 2026, formaliza su canal de contacto y, en el mismo gesto, reafirma la frontera de legitimidad entre la SETI astronómica 'respetable' (tecnofirmas a años-luz) y los UAP atmosféricos 'fuera de dominio'. Es mantenimiento de frontera: mientras Grusch lleva 'vida plasmoide sintiente' al Capitolio y AARO publica orbes plasma-like, la academia traza una línea para no tocar el expediente UAP. Hay también una resonancia metodológica incómoda para esa línea: el estándar de verificación multi-instrumento independiente que SETI ahora exige es exactamente el que el corpus usa para calificar un caso como Tier S — la misma vara que SETI aplica a una señal de radio es la que valida los mejores casos UAP que SETI se niega a mirar. Tier B porque su peso evidencial sobre la naturaleza del fenómeno es nulo; entra como contexto de gobernanza, no como evidencia.",
+  "whyMatters_en": "It is not a sighting case — it brings no evidence of the phenomenon. Its value to the corpus is as a datum of institutional behavior: the scientific establishment (IAA/SETI), pushed by the 2026 disclosure wave, formalizes its contact channel and, in the same gesture, reasserts the legitimacy boundary between 'respectable' astronomical SETI (technosignatures light-years away) and 'out-of-domain' atmospheric UAP. It is boundary maintenance: while Grusch takes 'sentient plasmoid life' to the Capitol and AARO releases plasma-like orbs, academia draws a line to avoid touching the UAP file. There is also a methodological resonance uncomfortable for that line: the independent multi-instrument verification standard SETI now requires is exactly the one the corpus uses to qualify a case as Tier S — the same yardstick SETI applies to a radio signal is the one that validates the best UAP cases SETI refuses to look at. Tier B because its evidential weight on the nature of the phenomenon is nil; it enters as governance context, not as evidence.",
+  "evidence": [
+    "Actualización ratificada por el IAA SETI Permanent Committee (2026), primera revisión mayor desde ~2010; presidida por Michael Garrett (Univ. de Manchester)",
+    "Alcance ampliado a todas las tecnofirmas: radio de banda estrecha, láser, exceso IR (megaestructuras), anomalías astronómicas, artefactos físicos",
+    "Verificación independiente multi-instrumento obligatoria antes de cualquier anuncio público",
+    "Regla mantenida: ninguna respuesta a una señal sin consulta internacional coordinada vía ONU",
+    "Novedades 2026: protocolos contra deepfakes/IA, filtraciones, redes sociales; protección a investigadores; Subcomité permanente de Post-Detección",
+    "Exclusión explícita: el documento NO aplica a los UAP observados en la atmósfera terrestre",
+    "Finalización formal en el IAC de agosto de 2026; preprint técnico arXiv 2510.14506"
+  ],
+  "evidence_en": [
+    "Update ratified by the IAA SETI Permanent Committee (2026), first major revision since ~2010; chaired by Michael Garrett (Univ. of Manchester)",
+    "Scope broadened to all technosignatures: narrow-band radio, laser, IR excess (megastructures), astronomical anomalies, physical artifacts",
+    "Mandatory independent multi-instrument verification before any public announcement",
+    "Rule retained: no reply to a signal without coordinated international consultation via the UN",
+    "New for 2026: protocols against deepfakes/AI, leaks, social media; researcher protection; permanent Post-Detection Sub-Committee",
+    "Explicit exclusion: the document does NOT apply to UAP observed in Earth's atmosphere",
+    "Formal finalization at the August 2026 IAC; technical preprint arXiv 2510.14506"
+  ],
+  "sources": [
+    {
+      "name": "SETI Post-Detection Protocols — preprint técnico (arXiv 2510.14506)",
+      "url": "https://arxiv.org/pdf/2510.14506",
+      "note": "Borrador de la actualización 2026."
+    },
+    {
+      "name": "The Conversation — 'Alien first contact: how the new rules differ from science fiction'",
+      "url": "https://theconversation.com/alien-first-contact-how-the-new-rules-differ-from-science-fiction-278394"
+    },
+    {
+      "name": "SETI Institute — 'Beyond Disclosure Day: The Real-World Protocols'",
+      "url": "https://www.seti.org/news/beyond-disclosure-day/"
+    },
+    {
+      "name": "Astronomy.com — 'The real disclosure day: the protocols for announcing extraterrestrial intelligence'",
+      "url": "https://www.astronomy.com/science/the-real-disclosure-day-the-protocols-for-announcing-extraterrestrial-intelligence/"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "entidades-no-humanas",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Aporte procedural, no probatorio: que un cuerpo científico global (IAA/SETI) mantenga y actualice un protocolo formal ratificado para detectar inteligencia extraterrestre indica que la comunidad trata la pregunta NHI como una posibilidad real que vale gobernar. No es evidencia del fenómeno — el documento no observa nada y excluye explícitamente los UAP. Minimal precisamente por eso: pesa como seriedad institucional sobre la pregunta, no como dato sobre su respuesta. La frontera que traza (SETI sí, UAP no) es lo analíticamente relevante, no un shift de calibración.",
+      "rationaleEn": "Procedural, not probative: that a global scientific body (IAA/SETI) maintains and updates a ratified formal protocol to detect extraterrestrial intelligence indicates the community treats the NHI question as a real possibility worth governing. It is not evidence of the phenomenon — the document observes nothing and explicitly excludes UAP. Minimal precisely for that reason: it weighs as institutional seriousness about the question, not as data about its answer. The boundary it draws (SETI yes, UAP no) is the analytically relevant point, not a calibration shift."
+    }
+  ]
+}
