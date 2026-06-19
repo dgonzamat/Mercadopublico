@@ -1,0 +1,58 @@
+{
+  "id": "ubatuba-1957",
+  "num": 248,
+  "name": "Ubatuba · fragmentos metálicos analizados (Brasil)",
+  "name_en": "Ubatuba · analyzed metal fragments (Brazil)",
+  "year_start": 1957,
+  "country": "BR",
+  "country_name": "Brasil",
+  "flag": "🇧🇷",
+  "location": {
+    "lat": -23.4336,
+    "lng": -45.0838,
+    "place": "Ubatuba, São Paulo, Brasil"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "summary": "En septiembre de 1957, fragmentos de un metal ligero —presuntamente de un disco que explotó sobre una playa de Ubatuba— llegaron por correo al columnista Ibrahim Sued. Los primeros análisis del laboratorio mineral brasileño reportaron magnesio muy puro; análisis modernos posteriores no confirmaron pureza anómala, y la procedencia nunca tuvo cadena de testigos verificable.",
+  "summary_en": "In September 1957, fragments of a light metal —supposedly from a disc that exploded over a beach at Ubatuba— arrived by mail to columnist Ibrahim Sued. Early analyses by the Brazilian mineral laboratory reported very pure magnesium; later modern analyses did not confirm anomalous purity, and the provenance never had a verifiable chain of witnesses.",
+  "patterns": [
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "En septiembre de 1957, el columnista brasileño Ibrahim Sued recibió por correo, de un remitente anónimo, varios fragmentos de un metal blanquecino y ligero acompañados de una carta que afirmaba que provenían de un disco volador que había explotado sobre una playa cerca de Ubatuba, en el estado de São Paulo. Sued publicó la historia y entregó muestras para análisis.\n\nLos primeros estudios —atribuidos a un laboratorio de producción mineral brasileño— reportaron que el material era magnesio de pureza inusualmente alta, lo que alimentó la hipótesis de un origen tecnológico exótico, y el caso se volvió uno de los expedientes de 'evidencia física' más citados de la era. Sin embargo, la procedencia nunca pudo establecerse: no hubo testigos del supuesto evento ni cadena de custodia, solo una carta anónima. Análisis posteriores —incluidos los financiados por el panel de Peter Sturrock y otros equipos con instrumentación moderna— no confirmaron la pureza anómala: el magnesio resultó consistente con material terrestre producible en la época. Entra al corpus como Tier B: un caso de evidencia física históricamente importante cuya anomalía no sobrevivió al escrutinio moderno, valioso justamente como ejemplo de cómo se evalúa —y se desinfla— una muestra reclamada.",
+  "whatHappened_en": "In September 1957, Brazilian columnist Ibrahim Sued received by mail, from an anonymous sender, several fragments of a whitish, light metal accompanied by a letter claiming they came from a flying disc that had exploded over a beach near Ubatuba, in São Paulo state. Sued published the story and submitted samples for analysis.\n\nThe earliest studies —attributed to a Brazilian mineral-production laboratory— reported the material was magnesium of unusually high purity, which fed the hypothesis of an exotic technological origin, and the case became one of the most cited 'physical evidence' files of the era. However, the provenance could never be established: there were no witnesses to the supposed event and no chain of custody, only an anonymous letter. Later analyses —including those funded by Peter Sturrock's panel and other teams with modern instrumentation— did not confirm the anomalous purity: the magnesium proved consistent with terrestrial material producible at the time. It enters the corpus as Tier B: a historically important physical-evidence case whose anomaly did not survive modern scrutiny, valuable precisely as an example of how a claimed sample is evaluated —and deflated.",
+  "whyMatters": "Es uno de los casos de 'evidencia física' más famosos del corpus latinoamericano y un caso testigo del método: cómo una muestra reclamada pasa de 'magnesio ultrapuro de origen desconocido' a 'magnesio terrestre ordinario' cuando se aplican análisis modernos y se exige cadena de custodia. Su valor no es la anomalía —que no se sostuvo— sino la lección epistémica: sin procedencia verificable, ni siquiera una muestra material concluye nada. Tier B y probabilidad baja por eso: ancla documental (informes de laboratorio reales) sobre un núcleo cuya pretensión anómala fue refutada.",
+  "whyMatters_en": "It is one of the most famous 'physical evidence' cases in the Latin American corpus and a test case of method: how a claimed sample goes from 'ultra-pure magnesium of unknown origin' to 'ordinary terrestrial magnesium' when modern analyses are applied and a chain of custody is required. Its value is not the anomaly —which did not hold— but the epistemic lesson: without verifiable provenance, not even a material sample concludes anything. Tier B and low probability for that reason: a documentary anchor (real lab reports) over a core whose anomalous claim was refuted.",
+  "evidence": [
+    "Fragmentos de metal ligero enviados por correo anónimo al columnista Ibrahim Sued (sep 1957)",
+    "Primeros análisis (laboratorio mineral brasileño): magnesio de pureza reportada como muy alta",
+    "Sin testigos del evento ni cadena de custodia — procedencia no verificable",
+    "Análisis modernos posteriores (incl. equipos vinculados al panel Sturrock): sin pureza anómala, consistente con material terrestre",
+    "Uno de los casos de 'evidencia física' más citados de la era, hoy considerado no concluyente"
+  ],
+  "evidence_en": [
+    "Fragments of light metal sent by anonymous mail to columnist Ibrahim Sued (Sept 1957)",
+    "Early analyses (Brazilian mineral laboratory): magnesium with reported very high purity",
+    "No witnesses to the event and no chain of custody — unverifiable provenance",
+    "Later modern analyses (incl. teams linked to the Sturrock panel): no anomalous purity, consistent with terrestrial material",
+    "One of the most cited 'physical evidence' cases of the era, now considered inconclusive"
+  ],
+  "sources": [
+    {
+      "name": "Ubatuba fragments — síntesis de análisis (APRO / panel Sturrock y revisiones modernas)",
+      "url": "https://en.wikipedia.org/wiki/Ubatuba_UFO_explosion",
+      "note": "Síntesis de la cronología y de los análisis de laboratorio."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Caso de muestra material cuya pretensión anómala (magnesio ultrapuro) no sobrevivió al análisis moderno y cuya procedencia (carta anónima, sin testigos) es inverificable. Respalda la lectura escéptica como ejemplo de que sin cadena de custodia ni anomalía confirmada, una 'muestra física' no aporta evidencia. Minimal y override: aporte epistémico/de registro, no de calibración.",
+      "rationaleEn": "A material-sample case whose anomalous claim (ultra-pure magnesium) did not survive modern analysis and whose provenance (anonymous letter, no witnesses) is unverifiable. It backs the skeptical reading as an example that without chain of custody or confirmed anomaly, a 'physical sample' contributes no evidence. Minimal and override: an epistemic/record contribution, not a calibration one."
+    }
+  ]
+}
