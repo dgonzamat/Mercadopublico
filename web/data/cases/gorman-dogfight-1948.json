@@ -1,0 +1,59 @@
+{
+  "id": "gorman-dogfight-1948",
+  "num": 241,
+  "name": "Gorman Dogfight · F-51 vs. luz maniobrante (Fargo)",
+  "name_en": "Gorman Dogfight · F-51 vs. maneuvering light (Fargo)",
+  "year_start": 1948,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 46.8772,
+    "lng": -96.7898,
+    "place": "Fargo, Dakota del Norte"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 50,
+  "summary": "El 1 de octubre de 1948, el teniente de la Guardia Nacional Aérea George F. Gorman sostuvo un 'combate aéreo' de unos 27 minutos sobre Fargo persiguiendo en su F-51 Mustang a una pequeña luz blanca que maniobraba a mayor velocidad que su caza. Confirmado por operadores de torre y otro piloto en tierra; investigado por Project Sign/Blue Book.",
+  "summary_en": "On October 1, 1948, Air National Guard Lt. George F. Gorman engaged in a roughly 27-minute 'dogfight' over Fargo, pursuing in his F-51 Mustang a small white light that maneuvered faster than his fighter. Confirmed by tower operators and another pilot on the ground; investigated by Project Sign/Blue Book.",
+  "patterns": [
+    "8a",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 1 de octubre de 1948, mientras se preparaba para aterrizar en Fargo, el teniente George F. Gorman —piloto de la Air National Guard y veterano de la Segunda Guerra Mundial— observó una luz blanca que se movía de forma errática sobre la ciudad. Durante unos 27 minutos persiguió el objeto con su caza F-51 Mustang en una serie de maniobras que describió como un combate aéreo: el objeto realizaba giros cerrados, ascensos verticales y reversiones que su avión no podía igualar, y en un momento pareció dirigirse directamente hacia él antes de esquivarlo.\n\nEl episodio fue corroborado por dos operadores de la torre de control del aeropuerto y por otro piloto en tierra, lo que lo elevó por encima de un avistamiento de un solo testigo. Project Sign (precursor del Project Blue Book) lo investigó como caso destacado. La explicación oficial finalmente ofrecida —un globo meteorológico iluminado— es discutida, porque no encaja con las maniobras de alta dinámica que reportó un piloto militar entrenado. Entra al corpus como caso Tier A de la era fundacional: testigo cualificado, corroboración múltiple y registro institucional, con una explicación convencional en tensión con la observación.",
+  "whatHappened_en": "On the night of October 1, 1948, while preparing to land at Fargo, Lt. George F. Gorman —an Air National Guard pilot and World War II veteran— observed a white light moving erratically over the city. For about 27 minutes he pursued the object in his F-51 Mustang in a series of maneuvers he described as a dogfight: the object made tight turns, vertical climbs and reversals his aircraft could not match, and at one point appeared to head straight at him before veering off.\n\nThe episode was corroborated by two airport control-tower operators and by another pilot on the ground, lifting it above a single-witness sighting. Project Sign (precursor of Project Blue Book) investigated it as a prominent case. The official explanation eventually offered —a lighted weather balloon— is contested, because it does not fit the high-dynamic maneuvers reported by a trained military pilot. It enters the corpus as a Tier A case of the founding era: a qualified witness, multiple corroboration and institutional record, with a conventional explanation in tension with the observation.",
+  "whyMatters": "Es uno de los casos fundacionales de piloto militar de la era Project Sign, y un arquetipo temprano del patrón 'objeto que supera a un caza en maniobra'. Su valor es la calidad del testigo (piloto entrenado, veterano de guerra) y la corroboración múltiple (torre + segundo piloto), con registro institucional. Su límite es que la explicación de globo, aunque discutida, no es descartable del todo. Tier A por testigo cualificado y corroboración, no por evidencia instrumental dura.",
+  "whyMatters_en": "It is one of the founding military-pilot cases of the Project Sign era, and an early archetype of the 'object that out-maneuvers a fighter' pattern. Its value is the quality of the witness (a trained pilot, war veteran) and the multiple corroboration (tower + second pilot), with an institutional record. Its limit is that the balloon explanation, though contested, is not entirely dismissible. Tier A for qualified witness and corroboration, not for hard instrumental evidence.",
+  "evidence": [
+    "Persecución de ~27 minutos por el teniente George F. Gorman (Air National Guard) en un F-51 Mustang, 1 oct 1948",
+    "Corroboración por dos operadores de torre de control y otro piloto en tierra",
+    "Investigado por Project Sign (precursor de Project Blue Book)",
+    "Maniobras reportadas (giros cerrados, ascensos verticales, reversión) superiores a las del caza",
+    "Explicación oficial (globo meteorológico iluminado) discutida por incompatibilidad con las maniobras"
+  ],
+  "evidence_en": [
+    "~27-minute pursuit by Lt. George F. Gorman (Air National Guard) in an F-51 Mustang, Oct 1, 1948",
+    "Corroboration by two control-tower operators and another pilot on the ground",
+    "Investigated by Project Sign (precursor of Project Blue Book)",
+    "Reported maneuvers (tight turns, vertical climbs, reversal) exceeding the fighter's",
+    "Official explanation (lighted weather balloon) contested as incompatible with the maneuvers"
+  ],
+  "sources": [
+    {
+      "name": "Project Blue Book / Project Sign — Gorman Dogfight (archivos USAF)",
+      "url": "https://en.wikipedia.org/wiki/Gorman_Dogfight",
+      "note": "Síntesis del registro Blue Book/Sign."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Un piloto militar entrenado y corroborado por la torre reportó maniobras que la explicación oficial de globo no cubre bien. Tensiona débilmente la lectura de identificación errónea trivial. Minimal: el caso es visual (sin instrumento duro) y el globo no es del todo descartable. La hipótesis ya está en su techo (override): aporte de registro, no de calibración.",
+      "rationaleEn": "A trained military pilot, corroborated by the tower, reported maneuvers the official balloon explanation does not cover well. It weakly strains the trivial-misidentification reading. Minimal: the case is visual (no hard instrument) and the balloon is not entirely dismissible. The hypothesis is already at its ceiling (override): a record, not a calibration, contribution."
+    }
+  ]
+}

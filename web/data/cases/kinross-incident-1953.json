@@ -1,0 +1,59 @@
+{
+  "id": "kinross-incident-1953",
+  "num": 244,
+  "name": "Incidente Kinross · F-89 desaparecido sobre el lago Superior",
+  "name_en": "Kinross Incident · F-89 lost over Lake Superior",
+  "year_start": 1953,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 47.2528,
+    "lng": -85.0,
+    "place": "Lago Superior (frente a Kinross AFB, Michigan)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 50,
+  "summary": "El 23 de noviembre de 1953, un caza F-89C Scorpion despegó de Kinross AFB para interceptar un eco de radar no identificado sobre el lago Superior. El radar terrestre mostró que el avión y el objetivo se fusionaban en un solo blip — y el F-89, con el teniente Felix Moncla y el operador de radar Robert Wilson, desapareció sin dejar rastro. Nunca se halló la aeronave ni los cuerpos.",
+  "summary_en": "On November 23, 1953, an F-89C Scorpion fighter took off from Kinross AFB to intercept an unidentified radar return over Lake Superior. Ground radar showed the aircraft and the target merge into a single blip — and the F-89, with Lt. Felix Moncla and radar operator Robert Wilson, vanished without a trace. Neither the aircraft nor the bodies were ever found.",
+  "patterns": [
+    "8a",
+    "8c"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 23 de noviembre de 1953, el Air Defense Command detectó un objeto no identificado sobre el lago Superior, en espacio aéreo restringido. Desde la base aérea de Kinross (Michigan) despegó un interceptor F-89C Scorpion tripulado por el teniente Felix Moncla (piloto) y el teniente Robert Wilson (operador de radar) para identificarlo.\n\nControladores de tierra siguieron por radar cómo el F-89 se acercaba al objetivo a gran velocidad. En el momento de la intercepción, los dos ecos —el caza y el objeto— se fusionaron en un único blip en la pantalla. Luego el blip combinado continuó su curso y el F-89 desapareció: no respondió a las llamadas, no apareció en radar y nunca fue hallado pese a las búsquedas. La USAF ofreció explicaciones cambiantes a lo largo de los años —que Moncla había identificado el objetivo como un avión canadiense (un Lancaster de la RCAF que negó cualquier contacto), que sufrió vértigo y se estrelló—, ninguna concluyente. El expediente entra al corpus como caso Tier A: un evento militar plenamente registrado por radar y por la pérdida documentada de una aeronave y su tripulación, con explicaciones oficiales en conflicto y un núcleo —la fusión de ecos— sin resolver.",
+  "whatHappened_en": "On the night of November 23, 1953, Air Defense Command detected an unidentified object over Lake Superior, in restricted airspace. From Kinross Air Force Base (Michigan) an F-89C Scorpion interceptor took off, crewed by Lt. Felix Moncla (pilot) and Lt. Robert Wilson (radar operator), to identify it.\n\nGround controllers tracked on radar as the F-89 closed on the target at high speed. At the moment of interception, the two returns —the fighter and the object— merged into a single blip on the screen. The combined blip then continued on its course and the F-89 vanished: it did not answer calls, did not reappear on radar and was never found despite searches. The USAF offered shifting explanations over the years —that Moncla had identified the target as a Canadian aircraft (an RCAF Lancaster that denied any contact), that he suffered vertigo and crashed—, none conclusive. The file enters the corpus as a Tier A case: a military event fully recorded by radar and by the documented loss of an aircraft and its crew, with conflicting official explanations and a core —the merging of returns— left unresolved.",
+  "whyMatters": "Es uno de los casos militares más serios de la era Blue Book porque no es solo un avistamiento: hay una aeronave y dos tripulantes perdidos, un seguimiento de radar terrestre y un registro institucional ineludible. El detalle central —los ecos del caza y del objetivo fusionándose antes de la desaparición— nunca tuvo explicación consistente; las versiones oficiales (Lancaster canadiense, vértigo) se contradijeron entre sí y la RCAF negó el contacto. Tier A por la gravedad y el registro institucional (radar + pérdida documentada), no por evidencia de la naturaleza del objeto, que permanece indeterminada.",
+  "whyMatters_en": "It is one of the most serious military cases of the Blue Book era because it is not merely a sighting: there is an aircraft and two crew lost, a ground-radar track and an inescapable institutional record. The central detail —the fighter's and the target's returns merging before the disappearance— never had a consistent explanation; the official versions (Canadian Lancaster, vertigo) contradicted each other and the RCAF denied the contact. Tier A for the gravity and institutional record (radar + documented loss), not for evidence of the object's nature, which remains undetermined.",
+  "evidence": [
+    "F-89C Scorpion despegado de Kinross AFB para interceptar un eco no identificado sobre el lago Superior, 23 nov 1953",
+    "Tripulación: Tte. Felix Moncla (piloto) y Tte. Robert Wilson (operador de radar)",
+    "Radar terrestre del ADC registró la fusión de los ecos del caza y el objetivo en un solo blip",
+    "El F-89 desapareció sin respuesta y nunca fue hallado (aeronave ni cuerpos)",
+    "Explicaciones oficiales cambiantes (Lancaster RCAF —negado por Canadá— o vértigo), ninguna concluyente"
+  ],
+  "evidence_en": [
+    "F-89C Scorpion launched from Kinross AFB to intercept an unidentified return over Lake Superior, Nov 23, 1953",
+    "Crew: Lt. Felix Moncla (pilot) and Lt. Robert Wilson (radar operator)",
+    "ADC ground radar recorded the merging of the fighter's and the target's returns into a single blip",
+    "The F-89 vanished without response and was never found (neither aircraft nor bodies)",
+    "Shifting official explanations (RCAF Lancaster —denied by Canada— or vertigo), none conclusive"
+  ],
+  "sources": [
+    {
+      "name": "Project Blue Book / USAF Air Defense Command — Kinross Incident (archivos)",
+      "url": "https://en.wikipedia.org/wiki/Kinross_incident",
+      "note": "Síntesis del registro USAF y de las búsquedas."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "Pérdida militar plenamente documentada con seguimiento de radar y fusión de ecos sin explicación consistente; las versiones oficiales se contradijeron y la RCAF negó el supuesto Lancaster. Tensiona la lectura de identificación errónea trivial. Minimal: lo indeterminado es la naturaleza del objetivo, y un accidente convencional sigue siendo posible. Override: aporte de registro.",
+      "rationaleEn": "A fully documented military loss with radar tracking and a merging of returns lacking a consistent explanation; the official versions contradicted each other and the RCAF denied the supposed Lancaster. It strains the trivial-misidentification reading. Minimal: what is undetermined is the target's nature, and a conventional accident remains possible. Override: a record contribution."
+    }
+  ]
+}

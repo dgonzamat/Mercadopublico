@@ -1,0 +1,59 @@
+{
+  "id": "tremonton-film-1952",
+  "num": 242,
+  "name": "Película de Tremonton · filmación de la Marina (Utah)",
+  "name_en": "Tremonton film · Navy photographer footage (Utah)",
+  "year_start": 1952,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 41.7102,
+    "lng": -112.1655,
+    "place": "Tremonton, Utah"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "El 2 de julio de 1952, el suboficial fotógrafo de la Marina de EE.UU. Delbert C. Newhouse filmó en 16 mm cerca de Tremonton (Utah) un grupo de ~12 objetos brillantes moviéndose en formación. Los laboratorios fotográficos de la Marina (Anacostia) analizaron el film y concluyeron que no eran aeronaves, globos ni aves; el Panel Robertson de 1953 lo revisó y lo atribuyó a pájaros.",
+  "summary_en": "On July 2, 1952, U.S. Navy Chief Photographer's Mate Delbert C. Newhouse filmed in 16mm near Tremonton, Utah a group of ~12 bright objects moving in formation. The Navy photographic labs (Anacostia) analyzed the film and concluded they were not aircraft, balloons or birds; the 1953 Robertson Panel reviewed it and attributed it to birds.",
+  "patterns": [
+    "8h",
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "El 2 de julio de 1952, mientras viajaba con su familia cerca de Tremonton, Utah, el Chief Warrant Officer Delbert C. Newhouse —fotógrafo de la Marina de EE.UU. con miles de horas de experiencia— detuvo el auto y filmó con su cámara Bell & Howell de 16 mm un grupo de aproximadamente doce objetos brillantes que se desplazaban en formación por el cielo, uno de los cuales se separó y se fue en dirección opuesta.\n\nEl film fue entregado a la USAF y analizado en profundidad por el laboratorio fotográfico de la Marina en Anacostia, que tras semanas de estudio fotogramétrico concluyó que los objetos no eran aeronaves, globos ni aves, y que se trataba de objetos auto-luminosos no identificados. En enero de 1953, el Panel Robertson —convocado por la CIA— revisó la película junto con la de Great Falls y, en línea con su mandato desclasificador, la atribuyó a pájaros (gaviotas) reflejando el sol. La tensión entre el análisis del laboratorio naval y la conclusión del panel es el núcleo del caso. Entra al corpus como caso Tier A instrumentado: evidencia fílmica real, testigo cualificado y análisis institucional formal, con conclusiones oficiales en conflicto.",
+  "whatHappened_en": "On July 2, 1952, while traveling with his family near Tremonton, Utah, Chief Warrant Officer Delbert C. Newhouse —a U.S. Navy photographer with thousands of hours of experience— stopped the car and filmed with his 16mm Bell & Howell camera a group of approximately twelve bright objects moving in formation across the sky, one of which separated and went off in the opposite direction.\n\nThe film was handed to the USAF and analyzed in depth by the Navy photographic laboratory at Anacostia, which after weeks of photogrammetric study concluded the objects were not aircraft, balloons or birds, and that they were unidentified self-luminous objects. In January 1953, the Robertson Panel —convened by the CIA— reviewed the film along with the Great Falls footage and, in line with its debunking mandate, attributed it to birds (gulls) reflecting the sun. The tension between the naval lab's analysis and the panel's conclusion is the core of the case. It enters the corpus as an instrumented Tier A case: real film evidence, a qualified witness and formal institutional analysis, with conflicting official conclusions.",
+  "whyMatters": "Es uno de los pocos casos tempranos con evidencia fílmica analizada formalmente por un laboratorio gubernamental — y un caso testigo del choque entre análisis técnico y conclusión política. El laboratorio de la Marina dijo 'no son aves'; el Panel Robertson, con mandato de desestigmatizar, dijo 'son aves'. Esa divergencia documentada es el valor analítico. Tier A por la combinación de testigo cualificado (fotógrafo naval), evidencia instrumental (film de 16 mm) y análisis institucional, no por una conclusión cerrada sobre su naturaleza.",
+  "whyMatters_en": "It is one of the few early cases with film evidence formally analyzed by a government laboratory — and a test case of the clash between technical analysis and political conclusion. The Navy lab said 'not birds'; the Robertson Panel, mandated to destigmatize, said 'birds'. That documented divergence is the analytical value. Tier A for the combination of a qualified witness (a naval photographer), instrumental evidence (16mm film) and institutional analysis, not for a closed conclusion about its nature.",
+  "evidence": [
+    "Filmación en 16 mm de ~12 objetos en formación por el CWO Delbert C. Newhouse (fotógrafo de la Marina), 2 jul 1952",
+    "Análisis fotogramétrico del laboratorio naval de Anacostia: no aeronaves, globos ni aves",
+    "Revisión por el Panel Robertson (CIA, ene 1953), que lo atribuyó a aves",
+    "Divergencia documentada entre el laboratorio técnico y la conclusión del panel",
+    "Uno de los films UAP más analizados de la era Blue Book"
+  ],
+  "evidence_en": [
+    "16mm film of ~12 objects in formation by CWO Delbert C. Newhouse (Navy photographer), Jul 2, 1952",
+    "Photogrammetric analysis by the Anacostia naval lab: not aircraft, balloons or birds",
+    "Review by the Robertson Panel (CIA, Jan 1953), which attributed it to birds",
+    "Documented divergence between the technical lab and the panel's conclusion",
+    "One of the most analyzed UAP films of the Blue Book era"
+  ],
+  "sources": [
+    {
+      "name": "Project Blue Book / Robertson Panel — Tremonton film (archivos USAF/CIA)",
+      "url": "https://en.wikipedia.org/wiki/Tremonton_UFO_film",
+      "note": "Síntesis del registro y análisis."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "weakens",
+      "strength": "minimal",
+      "rationale": "El laboratorio fotográfico de la Marina, tras análisis fotogramétrico, descartó aves/aeronaves/globos — y solo el Panel Robertson (con mandato desestigmatizador) revirtió a 'aves'. Que el análisis técnico institucional contradijera la conclusión oficial tensiona la lectura escéptica simple. Minimal: es film de baja resolución y la atribución a aves no es imposible. Override: aporte de registro.",
+      "rationaleEn": "The Navy photographic lab, after photogrammetric analysis, ruled out birds/aircraft/balloons — and only the Robertson Panel (with a destigmatizing mandate) reverted to 'birds'. That the institutional technical analysis contradicted the official conclusion strains the simple skeptical reading. Minimal: it is low-resolution film and the bird attribution is not impossible. Override: a record contribution."
+    }
+  ]
+}
