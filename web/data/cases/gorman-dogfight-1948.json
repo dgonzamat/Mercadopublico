@@ -10,7 +10,8 @@
   "location": {
     "lat": 46.8772,
     "lng": -96.7898,
-    "place": "Fargo, Dakota del Norte"
+    "place": "Fargo, Dakota del Norte",
+    "place_en": "Fargo, North Dakota"
   },
   "tier": "A",
   "epistemicStatus": "documented",

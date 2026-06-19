@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.8719,
     "lng": -77.0563,
-    "place": "Departamento de Guerra (renombrado en 2026 desde DoD), Pentágono"
+    "place": "Departamento de Guerra (renombrado en 2026 desde DoD), Pentágono",
+    "place_en": "Department of War (renamed in 2026 from DoD), Pentagon"
   },
   "tier": "A",
   "epistemicStatus": "developing",

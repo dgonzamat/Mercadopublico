@@ -9,7 +9,8 @@
   "location": {
     "lat": 28.585,
     "lng": -80.65,
-    "place": "Órbita de Discovery (STS-48) · misión lanzada desde Cabo Cañaveral"
+    "place": "Órbita de Discovery (STS-48) · misión lanzada desde Cabo Cañaveral",
+    "place_en": "Discovery orbit (STS-48) · mission launched from Cape Canaveral"
   },
   "tier": "A",
   "epistemicStatus": "documented",

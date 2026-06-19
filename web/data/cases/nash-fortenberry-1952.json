@@ -10,7 +10,8 @@
   "location": {
     "lat": 36.8508,
     "lng": -76.2859,
-    "place": "Cerca de Norfolk, Virginia"
+    "place": "Cerca de Norfolk, Virginia",
+    "place_en": "Near Norfolk, Virginia"
   },
   "tier": "A",
   "epistemicStatus": "documented",

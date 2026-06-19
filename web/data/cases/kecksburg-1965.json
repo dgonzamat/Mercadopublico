@@ -9,7 +9,8 @@
   "location": {
     "lat": 40.18,
     "lng": -79.46,
-    "place": "Kecksburg, Pensilvania"
+    "place": "Kecksburg, Pensilvania",
+    "place_en": "Kecksburg, Pennsylvania"
   },
   "tier": "S",
   "epistemicStatus": "documented",

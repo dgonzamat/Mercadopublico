@@ -10,7 +10,8 @@
   "location": {
     "lat": 32.6,
     "lng": -117.6,
-    "place": "Área de advertencia restringida frente a San Diego, California"
+    "place": "Área de advertencia restringida frente a San Diego, California",
+    "place_en": "Restricted warning area off San Diego, California"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": -62.98,
     "lng": -60.66,
-    "place": "Isla Decepción, Islas Shetland del Sur (Antártida)"
+    "place": "Isla Decepción, Islas Shetland del Sur (Antártida)",
+    "place_en": "Deception Island, South Shetland Islands (Antarctica)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": -20.98,
     "lng": -68.66,
-    "place": "Mina Collahuasi, Tarapacá"
+    "place": "Mina Collahuasi, Tarapacá",
+    "place_en": "Collahuasi mine, Tarapacá"
   },
   "tier": "A",
   "probability": 52,

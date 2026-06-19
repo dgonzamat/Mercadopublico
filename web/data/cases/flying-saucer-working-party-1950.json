@@ -10,7 +10,8 @@
   "location": {
     "lat": 51.5033,
     "lng": -0.1276,
-    "place": "Ministry of Defence · Londres"
+    "place": "Ministry of Defence · Londres",
+    "place_en": "Ministry of Defence · London"
   },
   "tier": "A",
   "epistemicStatus": "documented",

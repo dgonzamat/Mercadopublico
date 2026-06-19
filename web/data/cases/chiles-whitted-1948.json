@@ -10,7 +10,8 @@
   "location": {
     "lat": 32.2,
     "lng": -86.5,
-    "place": "~32 km al suroeste de Montgomery, Alabama"
+    "place": "~32 km al suroeste de Montgomery, Alabama",
+    "place_en": "~32 km southwest of Montgomery, Alabama"
   },
   "tier": "A",
   "epistemicStatus": "documented",

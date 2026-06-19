@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.894,
     "lng": -77.025,
-    "place": "FBI · registros desclasificados (PURSUE), Washington DC"
+    "place": "FBI · registros desclasificados (PURSUE), Washington DC",
+    "place_en": "FBI · declassified records (PURSUE), Washington DC"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": 35.687,
     "lng": -105.938,
-    "place": "Santa Fe, Nuevo México (Distrito Judicial 1°)"
+    "place": "Santa Fe, Nuevo México (Distrito Judicial 1°)",
+    "place_en": "Santa Fe, New Mexico (1st Judicial District)"
   },
   "tier": "S",
   "epistemicStatus": "documented",

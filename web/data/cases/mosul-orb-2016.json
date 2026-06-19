@@ -10,7 +10,8 @@
   "location": {
     "lat": 36.34,
     "lng": 43.13,
-    "place": "Mosul, Irak (plataforma de reconocimiento de EE.UU.)"
+    "place": "Mosul, Irak (plataforma de reconocimiento de EE.UU.)",
+    "place_en": "Mosul, Iraq (U.S. reconnaissance platform)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

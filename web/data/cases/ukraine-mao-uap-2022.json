@@ -10,7 +10,8 @@
   "location": {
     "lat": 50.36,
     "lng": 30.50,
-    "place": "Observatorio Astronómico Principal (NASU), Kyiv"
+    "place": "Observatorio Astronómico Principal (NASU), Kyiv",
+    "place_en": "Main Astronomical Observatory (NASU), Kyiv"
   },
   "tier": "B",
   "epistemicStatus": "documented",

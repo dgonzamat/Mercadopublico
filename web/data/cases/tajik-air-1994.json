@@ -10,7 +10,8 @@
   "location": {
     "lat": 48.0,
     "lng": 67.5,
-    "place": "Espacio aéreo de Kazajistán (vuelo Tajik Air)"
+    "place": "Espacio aéreo de Kazajistán (vuelo Tajik Air)",
+    "place_en": "Kazakhstan airspace (Tajik Air flight)"
   },
   "tier": "B",
   "epistemicStatus": "documented",

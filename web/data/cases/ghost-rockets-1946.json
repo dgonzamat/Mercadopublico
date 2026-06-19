@@ -9,7 +9,8 @@
   "location": {
     "lat": 59.33,
     "lng": 18.07,
-    "place": "Estocolmo · Försvarsstaben (Estado Mayor)"
+    "place": "Estocolmo · Försvarsstaben (Estado Mayor)",
+    "place_en": "Stockholm · Försvarsstaben (Defence Staff)"
   },
   "tier": "S",
   "epistemicStatus": "documented",

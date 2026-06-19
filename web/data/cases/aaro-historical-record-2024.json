@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.8709,
     "lng": -77.0553,
-    "place": "All-domain Anomaly Resolution Office · Pentágono"
+    "place": "All-domain Anomaly Resolution Office · Pentágono",
+    "place_en": "All-domain Anomaly Resolution Office · Pentagon"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": -34.6,
     "lng": -64.3,
-    "place": "La Pampa y provincias centrales, Argentina"
+    "place": "La Pampa y provincias centrales, Argentina",
+    "place_en": "La Pampa and central provinces, Argentina"
   },
   "tier": "B",
   "epistemicStatus": "documented",

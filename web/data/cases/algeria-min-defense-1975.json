@@ -10,7 +10,8 @@
   "location": {
     "lat": 36.75,
     "lng": 3.04,
-    "place": "Argel · Ministerio de Defensa Nacional"
+    "place": "Argel · Ministerio de Defensa Nacional",
+    "place_en": "Algiers · Ministry of National Defence"
   },
   "tier": "S",
   "epistemicStatus": "documented",

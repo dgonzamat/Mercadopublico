@@ -10,7 +10,8 @@
   "location": {
     "lat": 45.42,
     "lng": -75.7,
-    "place": "Ottawa, Canadá (Department of Transport / Defence Research Board)"
+    "place": "Ottawa, Canadá (Department of Transport / Defence Research Board)",
+    "place_en": "Ottawa, Canada (Department of Transport / Defence Research Board)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

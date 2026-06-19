@@ -10,7 +10,8 @@
   "location": {
     "lat": 50.85,
     "lng": 4.35,
-    "place": "Bélgica"
+    "place": "Bélgica",
+    "place_en": "Belgium"
   },
   "tier": "S",
   "epistemicStatus": "documented",

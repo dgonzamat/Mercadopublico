@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.8899,
     "lng": -77.0091,
-    "place": "Cámara de Representantes · Washington D.C."
+    "place": "Cámara de Representantes · Washington D.C.",
+    "place_en": "House of Representatives · Washington D.C."
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": 41.0918,
     "lng": -73.8587,
-    "place": "Pocantico Conference Center, Tarrytown, Nueva York"
+    "place": "Pocantico Conference Center, Tarrytown, Nueva York",
+    "place_en": "Pocantico Conference Center, Tarrytown, New York"
   },
   "tier": "A",
   "epistemicStatus": "documented",
