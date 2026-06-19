@@ -1,0 +1,63 @@
+{
+  "id": "flying-saucer-working-party-1950",
+  "num": 239,
+  "name": "Flying Saucer Working Party · primer estudio oficial del MoD (UK)",
+  "name_en": "Flying Saucer Working Party · first official MoD study (UK)",
+  "year_start": 1950,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 51.5033,
+    "lng": -0.1276,
+    "place": "Ministry of Defence · Londres"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "El primer estudio oficial sobre platos voladores de un gobierno occidental: el Flying Saucer Working Party, creado por el Ministerio de Defensa británico bajo Henry Tizard en 1950. Su informe secreto (1951) concluyó que todos los avistamientos se explican por identificación errónea, ilusión o engaño, y recomendó no investigar más. Desclasificado en 2001.",
+  "summary_en": "The first official flying-saucer study by a Western government: the Flying Saucer Working Party, set up by the UK Ministry of Defence under Henry Tizard in 1950. Its secret report (1951) concluded all sightings are explained by misidentification, illusion or hoax, and recommended no further investigation. Declassified in 2001.",
+  "patterns": [
+    "8e",
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "A instancias del influyente científico de defensa Sir Henry Tizard, el Ministerio de Defensa británico estableció en 1950 un pequeño comité secreto —el Flying Saucer Working Party (FSWP)— para evaluar el fenómeno de los 'platos voladores' que dominaba la prensa tras la oleada estadounidense de 1947. Fue el primer estudio oficial del tema realizado por un gobierno occidental.\n\nEl informe del grupo, completado en junio de 1951, examinó un puñado de casos británicos destacados y concluyó de forma tajante que todos los avistamientos eran atribuibles a: identificaciones erróneas de objetos convencionales, ilusiones ópticas o psicológicas, o engaños deliberados. Recomendó que no se dedicaran más recursos oficiales al asunto. El informe permaneció clasificado durante medio siglo, hasta su desclasificación en 2001. Entra al corpus como el documento escéptico fundacional de la postura institucional británica —el equivalente temprano y más rotundo del Condon Report estadounidense—, valioso por su solidez documental y su rol histórico, aunque su muestra fue pequeña.",
+  "whatHappened_en": "At the instigation of the influential defence scientist Sir Henry Tizard, the UK Ministry of Defence established in 1950 a small secret committee —the Flying Saucer Working Party (FSWP)— to assess the 'flying saucer' phenomenon dominating the press after the 1947 American wave. It was the first official study of the subject by a Western government.\n\nThe group's report, completed in June 1951, examined a handful of prominent British cases and concluded flatly that all sightings were attributable to: misidentifications of conventional objects, optical or psychological illusions, or deliberate hoaxes. It recommended no further official resources be devoted to the matter. The report remained classified for half a century, until its declassification in 2001. It enters the corpus as the founding skeptical document of the British institutional stance —the early and most categorical equivalent of the American Condon Report—, valuable for its documentary solidity and historical role, though its sample was small.",
+  "whyMatters": "Es la raíz documental de la postura escéptica oficial británica y el primer veredicto institucional occidental sobre el fenómeno — medio siglo antes de Project Condign, que llegaría a una conclusión más matizada (plasma) sobre el mismo tema. Su valor es histórico e institucional: muestra que la respuesta estatal por defecto, ya en 1950, fue cerrar el asunto. Su límite es la muestra: revisó pocos casos y zanjó con firmeza, un patrón de conclusión-por-mandato que reaparecería en Condon. Tier A por solidez documental (informe del MoD desclasificado), no por la profundidad de su análisis.",
+  "whyMatters_en": "It is the documentary root of the British official skeptical stance and the first Western institutional verdict on the phenomenon — half a century before Project Condign, which would reach a more nuanced (plasma) conclusion on the same subject. Its value is historical and institutional: it shows the default state response, already in 1950, was to close the matter. Its limit is the sample: it reviewed few cases and concluded firmly, a conclusion-by-mandate pattern that would reappear in Condon. Tier A for documentary solidity (declassified MoD report), not for the depth of its analysis.",
+  "evidence": [
+    "Flying Saucer Working Party creado por el MoD británico (impulso de Sir Henry Tizard) en 1950",
+    "Informe secreto completado en junio de 1951",
+    "Conclusión: todos los avistamientos = identificación errónea, ilusión o engaño; recomendó no investigar más",
+    "Primer estudio oficial sobre el fenómeno de un gobierno occidental",
+    "Desclasificado en 2001"
+  ],
+  "evidence_en": [
+    "Flying Saucer Working Party set up by the UK MoD (at Sir Henry Tizard's instigation) in 1950",
+    "Secret report completed June 1951",
+    "Conclusion: all sightings = misidentification, illusion or hoax; recommended no further investigation",
+    "First official study of the phenomenon by a Western government",
+    "Declassified in 2001"
+  ],
+  "sources": [
+    {
+      "name": "The National Archives (UK) — Flying Saucer Working Party report (desclasificado 2001)",
+      "url": "https://www.nationalarchives.gov.uk/ufos/",
+      "note": "Liberación oficial."
+    },
+    {
+      "name": "Flying Saucer Working Party — entrada enciclopédica",
+      "url": "https://en.wikipedia.org/wiki/Flying_Saucer_Working_Party"
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "misidentificacion",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "El primer estudio oficial occidental concluyó que todos los avistamientos examinados eran identificación errónea, ilusión o engaño. Es respaldo institucional temprano a la hipótesis escéptica — pero con muestra pequeña y un patrón de conclusión-por-mandato (cerró el tema sin investigación profunda). Minimal por eso. La hipótesis de misidentificación ya está en su techo (override), así que el aporte es documental más que de calibración.",
+      "rationaleEn": "The first official Western study concluded all examined sightings were misidentification, illusion or hoax. It is early institutional backing for the skeptical hypothesis — but with a small sample and a conclusion-by-mandate pattern (it closed the matter without deep investigation). Minimal for that reason. The misidentification hypothesis is already at its ceiling (override), so the contribution is documentary rather than calibration."
+    }
+  ]
+}

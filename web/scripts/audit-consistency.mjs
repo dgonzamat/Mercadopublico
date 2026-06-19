@@ -573,6 +573,7 @@ const SPANGLISH_PROPER_OK = [
   "Department of War",           // institución US (DoD renombrado 2026)
   "National Archives of Australia", // archivo nacional australiano (Turner Report)
   "Task Force on the Declassification of Federal Secrets", // sub-órgano House Oversight (Burlison)
+  "Flying Saucer Working Party", // primer estudio oficial del MoD británico (1950)
 ];
 
 function stripQuotedAndProper(s) {
