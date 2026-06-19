@@ -1,0 +1,59 @@
+{
+  "id": "byelokoroviche-1982",
+  "num": 245,
+  "name": "Byelokoroviche · UFO sobre base de misiles soviética",
+  "name_en": "Byelokoroviche · UFO over Soviet missile base",
+  "year_start": 1982,
+  "country": "SU",
+  "country_name": "Unión Soviética (Ucrania)",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 50.95,
+    "lng": 28.0,
+    "place": "Base de las Fuerzas de Cohetes Estratégicos · Byelokoroviche, RSS de Ucrania"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 60,
+  "summary": "En octubre de 1982, sobre una base de las Fuerzas de Cohetes Estratégicos cerca de Byelokoroviche (RSS de Ucrania), personal militar reportó un objeto discoidal estacionario durante horas. Durante el evento, según la investigación soviética, los paneles de control de lanzamiento de los ICBM iniciaron por sí solos una secuencia de prelanzamiento por unos 15 segundos, sin orden. Es el paralelo soviético de Malmstrom 1967.",
+  "summary_en": "In October 1982, over a Strategic Rocket Forces base near Byelokoroviche (Ukrainian SSR), military personnel reported a disc-shaped object stationary for hours. During the event, per the Soviet investigation, the ICBMs' launch-control panels began a pre-launch sequence on their own for about 15 seconds, with no command. It is the Soviet parallel to Malmstrom 1967.",
+  "patterns": [
+    "8f",
+    "8a"
+  ],
+  "category": "incident",
+  "whatHappened": "En octubre de 1982, una unidad de las Fuerzas de Cohetes Estratégicos (RVSN) soviéticas estacionada cerca de Byelokoroviche, en la República Socialista Soviética de Ucrania, reportó la presencia de un objeto discoidal que permaneció estacionario sobre la instalación durante varias horas, observado por numerosos efectivos.\n\nSegún los materiales de la investigación oficial soviética sobre el fenómeno —recopilados durante el programa estatal de estudio de UAP (la red 'SETKA' del Ministerio de Defensa y la Academia de Ciencias) y divulgados tras 1991—, durante la presencia del objeto los paneles de control de lanzamiento de los misiles balísticos intercontinentales de la base iniciaron de forma autónoma una secuencia de prelanzamiento que duró aproximadamente 15 segundos, sin que ningún operador introdujera comandos, antes de detenerse por sí sola. El episodio quedó documentado en la cadena de mando y elevado al estudio central. Es estructural y casi exactamente análogo al apagón/activación de ICBMs en Malmstrom AFB (EE.UU., 1967) que ya está en el corpus: el mismo patrón —UAP estacionario sobre arsenal nuclear con interferencia en los sistemas de armas— reportado de forma independiente por las dos superpotencias. La verificación se apoya en sourcing soviético post-1991, menos auditable que un documento FOIA occidental, lo que se refleja en su calibración.",
+  "whatHappened_en": "In October 1982, a Soviet Strategic Rocket Forces (RVSN) unit stationed near Byelokoroviche, in the Ukrainian Soviet Socialist Republic, reported the presence of a disc-shaped object that remained stationary over the installation for several hours, observed by numerous personnel.\n\nAccording to the materials of the official Soviet investigation of the phenomenon —compiled during the state UAP-study program (the Ministry of Defence and Academy of Sciences 'SETKA' network) and released after 1991—, during the object's presence the launch-control panels of the base's intercontinental ballistic missiles autonomously began a pre-launch sequence lasting about 15 seconds, with no operator entering commands, before stopping on their own. The episode was documented up the chain of command and escalated to the central study. It is structurally and almost exactly analogous to the ICBM shutdown/activation at Malmstrom AFB (U.S., 1967) already in the corpus: the same pattern —a stationary UAP over a nuclear arsenal with interference in the weapons systems— reported independently by the two superpowers. Verification rests on post-1991 Soviet sourcing, less auditable than a Western FOIA document, which is reflected in its calibration.",
+  "whyMatters": "Es la contraparte soviética de Malmstrom: el mismo patrón —UAP sobre instalación nuclear con activación anómala de los sistemas de armas— reportado por la otra superpotencia, de forma independiente y a través de su propio aparato de investigación estatal. Esa convergencia entre dos cadenas de mando rivales que no compartían datos es analíticamente fuerte para el patrón de 'monitoreo de fuentes de riesgo nuclear'. Su límite es la verificabilidad: el sourcing es soviético post-colapso, no un documento desclasificado occidental. Tier A por el rango institucional del registro (estudio estatal RVSN/SETKA), con la calibración atenuada por la trazabilidad de la fuente.",
+  "whyMatters_en": "It is the Soviet counterpart to Malmstrom: the same pattern —a UAP over a nuclear installation with anomalous activation of the weapons systems— reported by the other superpower, independently and through its own state investigation apparatus. That convergence between two rival chains of command that did not share data is analytically strong for the 'monitoring of nuclear risk sources' pattern. Its limit is verifiability: the sourcing is post-collapse Soviet, not a declassified Western document. Tier A for the institutional standing of the record (RVSN/SETKA state study), with calibration attenuated by source traceability.",
+  "evidence": [
+    "Objeto discoidal estacionario por horas sobre una base RVSN cerca de Byelokoroviche (RSS de Ucrania), oct 1982; múltiples efectivos",
+    "Activación autónoma (~15 s) de la secuencia de prelanzamiento de ICBMs sin comando de operador, según la investigación soviética",
+    "Recopilado en el programa estatal soviético de estudio de UAP (red SETKA, MoD + Academia de Ciencias)",
+    "Materiales divulgados tras 1991",
+    "Análogo estructural directo de Malmstrom AFB 1967 (caso del corpus)"
+  ],
+  "evidence_en": [
+    "Disc-shaped object stationary for hours over an RVSN base near Byelokoroviche (Ukrainian SSR), Oct 1982; multiple personnel",
+    "Autonomous activation (~15 s) of the ICBMs' pre-launch sequence with no operator command, per the Soviet investigation",
+    "Compiled in the Soviet state UAP-study program (SETKA network, MoD + Academy of Sciences)",
+    "Materials released after 1991",
+    "Direct structural analogue of Malmstrom AFB 1967 (a corpus case)"
+  ],
+  "sources": [
+    {
+      "name": "Materiales del estudio estatal soviético de UAP (red SETKA / 'Blue Folder'), divulgados post-1991",
+      "url": "https://en.wikipedia.org/wiki/Identification_studies_of_UFOs#Soviet_Union",
+      "note": "Síntesis del programa soviético y del incidente."
+    }
+  ],
+  "evidenceContribution": [
+    {
+      "hypothesisId": "programas-clasificados",
+      "direction": "supports",
+      "strength": "minimal",
+      "rationale": "Reporte militar soviético, vía su propio estudio estatal, de un UAP sobre arsenal nuclear con activación anómala de sistemas de armas — independiente de Malmstrom 1967 y convergente con él. La convergencia entre dos aparatos rivales es interesante, pero el sourcing soviético post-1991 es menos trazable que un FOIA occidental. Minimal por eso: pesa como corroboración del patrón nuclear-UAP, no como dato verificable de primera mano.",
+      "rationaleEn": "Soviet military report, via its own state study, of a UAP over a nuclear arsenal with anomalous activation of weapons systems — independent of and convergent with Malmstrom 1967. The convergence between two rival apparatuses is interesting, but post-1991 Soviet sourcing is less traceable than a Western FOIA. Minimal for that reason: it weighs as corroboration of the nuclear-UAP pattern, not as firsthand verifiable data."
+    }
+  ]
+}
