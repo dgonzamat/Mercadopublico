@@ -87,6 +87,7 @@ export default function ProbabilidadesPage() {
           <MecePartition
             items={allScored}
             consolidateNonHuman
+            hrefFor={(key) => `#hyp-${key}`}
             totalLabelEs={`Suman 100% · ${allScored.length} casos · mundano abierto en 3 · no-humano agrupado`}
             totalLabelEn={`Sum to 100% · ${allScored.length} cases · mundane opened into 3 · non-human grouped`}
           />
@@ -107,7 +108,7 @@ export default function ProbabilidadesPage() {
           {hypRows.map((c) => {
             const top = casesByModal[c.key].slice(0, 6);
             return (
-              <div key={c.key} className="border-l-4 pl-4" style={{ borderColor: c.color }}>
+              <div key={c.key} id={`hyp-${c.key}`} className="scroll-mt-24 border-l-4 pl-4" style={{ borderColor: c.color }}>
                 <h3 className="font-mono text-sm uppercase tracking-wider text-text">
                   <T es={c.label} en={c.labelEn} />
                   <span className="ml-2 font-normal text-muted">

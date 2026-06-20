@@ -25,6 +25,7 @@ export function MecePartition({
   totalLabelEn,
   showDerived = true,
   consolidateNonHuman = false,
+  hrefFor,
 }: {
   compact?: boolean;
   /** Dataset a graficar; por defecto los incidentes (corpusPosteriors). */
@@ -37,6 +38,9 @@ export function MecePartition({
   /** Fusiona las dos narrativas no-humanas en una sola barra "No-humano".
    *  Solo afecta la VISTA agregada; los datos por caso conservan la distinción. */
   consolidateNonHuman?: boolean;
+  /** Si se provee, cada categoría (segmento de la cinta + fila de la leyenda)
+   *  se vuelve un enlace a hrefFor(key) — p.ej. el ancla de su detalle. */
+  hrefFor?: (key: string) => string | undefined;
 }) {
   const scored = items ?? corpusPosteriors();
   const N = scored.length;
@@ -60,36 +64,53 @@ export function MecePartition({
         role="img"
         aria-label={`${rows.map((r) => `${r.label} ${share(r.count / N)}%`).join(", ")}`}
       >
-        {rows.map((c) => (
-          <div
-            key={c.key}
-            title={`${c.label}: ${share(c.count / N)}%`}
-            style={{ width: `${(c.count / N) * 100}%`, backgroundColor: c.color }}
-          />
-        ))}
+        {rows.map((c) => {
+          const href = hrefFor?.(c.key);
+          const style = { width: `${(c.count / N) * 100}%`, backgroundColor: c.color };
+          const title = `${c.label}: ${share(c.count / N)}%`;
+          return href ? (
+            <a key={c.key} href={href} title={title} aria-label={title} className="transition-opacity hover:opacity-80" style={style} />
+          ) : (
+            <div key={c.key} title={title} style={style} />
+          );
+        })}
       </div>
 
       {/* Leyenda jerárquica */}
-      <ol className="mt-5 space-y-2.5">
-        {rows.map((c, i) => (
-          <li key={c.key} className="flex items-baseline justify-between gap-3 font-mono text-xs">
-            <span className="flex min-w-0 items-center gap-2">
-              <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: c.color }} aria-hidden />
-              <span className={`uppercase tracking-wider ${i === 0 ? "font-semibold text-text" : "text-text"}`}>
-                <T es={c.label} en={c.labelEn} />
+      <ol className="mt-5 space-y-1">
+        {rows.map((c, i) => {
+          const href = hrefFor?.(c.key);
+          const inner = (
+            <>
+              <span className="flex min-w-0 items-center gap-2">
+                <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: c.color }} aria-hidden />
+                <span className={`uppercase tracking-wider ${i === 0 ? "font-semibold text-text" : "text-text"} ${href ? "group-hover:text-accent group-hover:underline" : ""}`}>
+                  <T es={c.label} en={c.labelEn} />
+                </span>
               </span>
-            </span>
-            <span className="shrink-0 whitespace-nowrap text-right tabular-nums text-muted">
-              <span className={i === 0 ? "text-text" : ""}>{share(c.count / N)}%</span>
-              {!compact && (
-                <>
-                  {" · "}
-                  {c.count.toFixed(1)} <T es="casos" en="cases" />
-                </>
+              <span className="shrink-0 whitespace-nowrap text-right tabular-nums text-muted">
+                <span className={i === 0 ? "text-text" : ""}>{share(c.count / N)}%</span>
+                {!compact && (
+                  <>
+                    {" · "}
+                    {c.count.toFixed(1)} <T es="casos" en="cases" />
+                  </>
+                )}
+              </span>
+            </>
+          );
+          return (
+            <li key={c.key} className="font-mono text-xs">
+              {href ? (
+                <a href={href} className="group -mx-2 flex items-baseline justify-between gap-3 rounded-sm px-2 py-1 hover:bg-border/30">
+                  {inner}
+                </a>
+              ) : (
+                <div className="flex items-baseline justify-between gap-3 py-1">{inner}</div>
               )}
-            </span>
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ol>
 
       <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
