@@ -3,9 +3,10 @@
  *
  * No hay framework de tests en el repo; siguiendo la convención de scripts
  * standalone, este valida los invariantes del donut y del pulido contra el HTML
- * generado por `next build` (SSG). Correr DESPUÉS de `npm run build`:
+ * generado por `next build` (SSG). Corre automáticamente como hook `postbuild`
+ * (gate de CI, igual que los audits); también a mano con `npm test`:
  *
- *   node scripts/test-chart.mjs
+ *   node scripts/test-chart.mjs   # requiere out/ (correr tras el build)
  *
  * Verifica:
  *  - El donut tiene exactamente 6 segmentos (hipótesis, no-humano consolidado).
@@ -74,9 +75,24 @@ if (circles.length > 0) {
   else fail(`offsets no monótonos / con solape: ${offs.map((o) => o.toFixed(1)).join(", ")}`);
 }
 
-// 4) El centro del donut muestra el total de casos
-if (/>\s*200\s*</.test(html)) ok(`el centro muestra el total (200 casos)`);
-else fail(`no encontré el total "200" en el render`);
+// 4) El centro del donut muestra el total de casos.
+//    El total NO se hardcodea (anti-pattern del repo): se deriva del corpus
+//    generado (data/cases.json) para que el test no se rompa al crecer el corpus.
+let expectedN = null;
+try {
+  const cases = JSON.parse(readFileSync(join(__dirname, "..", "data", "cases.json"), "utf8"));
+  expectedN = Array.isArray(cases) ? cases.length : Array.isArray(cases?.cases) ? cases.cases.length : null;
+} catch {
+  /* cases.json es artefacto de build; si falta, caemos al check laxo abajo */
+}
+if (expectedN != null) {
+  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro muestra el total derivado del corpus (${expectedN} casos)`);
+  else fail(`el centro no muestra el total del corpus (${expectedN})`);
+} else if (/>\s*\d{2,4}\s*</.test(html)) {
+  ok(`el centro muestra un total numérico (no se pudo derivar del corpus)`);
+} else {
+  fail(`no encontré el total de casos en el render`);
+}
 
 // 5) No se filtran fórmulas en español a la vista renderizada
 const leaks = ["misid+natural+fraude", "clasificado+adversaria+no-humano"];
