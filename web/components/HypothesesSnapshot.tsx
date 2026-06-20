@@ -1,4 +1,4 @@
-import { MECE_CLASSES, corpusPosteriors, expectedCounts, roundedShares } from "@/lib/meceModel";
+import { MECE_CLASSES, corpusPosteriors, expectedCounts } from "@/lib/meceModel";
 import { T } from "@/components/T";
 
 /**
@@ -11,7 +11,6 @@ export function HypothesesSnapshot() {
   const scored = corpusPosteriors();
   const N = scored.length;
   const counts = expectedCounts(scored);
-  const shares = roundedShares(scored);
   const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
 
   return (
@@ -37,7 +36,7 @@ export function HypothesesSnapshot() {
             <div className="h-full bg-bg/80" style={{ width: `${(counts[c.id] / N) * 100}%` }} />
           </div>
           <p className="col-start-2 font-mono text-[11px] uppercase tracking-wider text-accent-bright md:col-start-4 md:text-right">
-            {shares[c.id]}%
+            {((counts[c.id] / N) * 100).toFixed(1)}%
           </p>
         </div>
       ))}

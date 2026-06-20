@@ -3,13 +3,15 @@ import {
   MECE_CLASSES,
   corpusPosteriors,
   expectedCounts,
-  roundedShares,
   entidadesNoHumanas,
   heterogeneidad,
 } from "@/lib/meceModel";
 import type { Posterior } from "@/lib/types";
 
 const pct = (x: number) => (x * 100).toFixed(0);
+/** Share como % con 1 decimal: dos narrativas con el mismo nº de casos (p.ej.
+ *  7.8) muestran el mismo % (5.5%), y los seis siguen sumando 100.0. */
+const share = (x: number) => (x * 100).toFixed(1);
 
 /**
  * Partición comparable del corpus: las 6 narrativas reparten el 100%.
@@ -19,7 +21,6 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
   const scored = corpusPosteriors();
   const N = scored.length;
   const counts = expectedCounts(scored);
-  const shares = roundedShares(scored);
   const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
 
   const enh = scored.reduce((s, c) => s + entidadesNoHumanas(c.posterior), 0);
@@ -30,16 +31,16 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
       <div className="space-y-2.5">
         {ranked.map((c) => (
           <div key={c.id}>
-            <div className="flex items-baseline justify-between font-mono text-xs">
-              <span className="uppercase tracking-wider text-text">
+            <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
+              <span className="min-w-0 uppercase tracking-wider text-text">
                 <T es={c.label} en={c.labelEn} />
               </span>
-              <span className="text-muted">
-                {shares[c.id]}%
+              <span className="shrink-0 whitespace-nowrap text-right text-muted">
+                {share(counts[c.id] / N)}%
                 {!compact && (
                   <>
-                    {" "}
-                    · {counts[c.id].toFixed(1)} <T es="casos" en="cases" />
+                    {" · "}
+                    {counts[c.id].toFixed(1)} <T es="casos" en="cases" />
                   </>
                 )}
               </span>
@@ -54,18 +55,28 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
         <T es={`Suman 100% · ${N} casos · partición exhaustiva`} en={`Sum to 100% · ${N} cases · exhaustive partition`} />
       </p>
       {!compact && (
-        <div className="mt-4 space-y-1 border-t border-border pt-3 font-mono text-[11px]">
-          <div className="flex items-baseline justify-between">
-            <span className="uppercase tracking-wider text-text">
-              <T es="Entidades no humanas (derivada = no-humano encubierto + abierto)" en="Non-human entities (derived = covert + open non-human)" />
-            </span>
-            <span className="text-muted">{pct(enh / N)}%</span>
+        <div className="mt-4 space-y-3 border-t border-border pt-3 font-mono text-[11px]">
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <div className="uppercase tracking-wider text-text">
+                <T es="Entidades no humanas" en="Non-human entities" />
+              </div>
+              <div className="text-muted">
+                <T es="derivada = encubierto + abierto" en="derived = covert + open" />
+              </div>
+            </div>
+            <span className="shrink-0 text-muted">{pct(enh / N)}%</span>
           </div>
-          <div className="flex items-baseline justify-between">
-            <span className="uppercase tracking-wider text-text">
-              <T es="Heterogeneidad (derivada = 1 − mundano/natural)" en="Heterogeneity (derived = 1 − mundane/natural)" />
-            </span>
-            <span className="text-muted">{pct(het / N)}%</span>
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <div className="uppercase tracking-wider text-text">
+                <T es="Heterogeneidad" en="Heterogeneity" />
+              </div>
+              <div className="text-muted">
+                <T es="derivada = 1 − mundano/natural" en="derived = 1 − mundane/natural" />
+              </div>
+            </div>
+            <span className="shrink-0 text-muted">{pct(het / N)}%</span>
           </div>
         </div>
       )}
