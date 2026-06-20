@@ -52,7 +52,7 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
         ))}
       </div>
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T es={`Suman 100% · ${N} casos · partición exhaustiva`} en={`Sum to 100% · ${N} cases · exhaustive partition`} />
+        <T es={`Suman 100% · ${N} casos de incidente · partición exhaustiva`} en={`Sum to 100% · ${N} incident cases · exhaustive partition`} />
       </p>
       {!compact && (
         <div className="mt-4 space-y-3 border-t border-border pt-3 font-mono text-[11px]">

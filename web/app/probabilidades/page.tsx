@@ -3,6 +3,7 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
 import { MECE_CLASSES, corpusPosteriors, modal } from "@/lib/meceModel";
+import { STATS } from "@/lib/siteStats";
 import type { MeceClassId } from "@/lib/types";
 
 export const metadata = {
@@ -65,8 +66,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Cada uno de los ${scored.length} casos de incidente reparte el 100% entre las mismas seis narrativas mutuamente excluyentes. Sumadas, reparten el corpus de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano + encubrimiento estatal» es una clase propia. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa) y como vistas derivadas.`}
-          en={`Each of the ${scored.length} incident cases splits 100% among the same six mutually-exclusive narratives. Summed, they partition the corpus comparably: one can coherently say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human + state cover-up' is its own class. The prior framework's hypotheses are preserved as a mapping (see each narrative) and as derived views.`}
+          es={`El corpus tiene ${STATS.cases} casos; ${scored.length} son de incidente (los ${STATS.cases - scored.length} casos-documento se excluyen: la pregunta «qué era el objeto» no les aplica). Cada uno de esos ${scored.length} casos reparte el 100% entre las mismas seis narrativas mutuamente excluyentes. Sumadas, reparten ese conjunto de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano + encubrimiento estatal» es una clase propia. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa) y como vistas derivadas.`}
+          en={`The corpus has ${STATS.cases} cases; ${scored.length} are incidents (the ${STATS.cases - scored.length} document cases are excluded: the 'what was the object' question does not apply to them). Each of those ${scored.length} cases splits 100% among the same six mutually-exclusive narratives. Summed, they partition that set comparably: one can coherently say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human + state cover-up' is its own class. The prior framework's hypotheses are preserved as a mapping (see each narrative) and as derived views.`}
         />
       </Lede>
 
