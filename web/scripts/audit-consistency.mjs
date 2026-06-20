@@ -424,9 +424,9 @@ if (shortBodies.length > 0) {
 
 // ─── 9g. RULE M1: invariante del modelo MECE (posterior) ─────────────────
 //
-// Modelo en migración (lib/meceModel.ts): cada caso de incidente reparte el
-// 100% sobre 9 explicaciones mutuamente excluyentes. Invariante duro:
-//   - todo caso category!=="document" DEBE tener `posterior` con las 9 claves
+// Modelo MECE (lib/meceModel.ts): cada caso de incidente reparte el
+// 100% sobre 6 narrativas mutuamente excluyentes. Invariante duro:
+//   - todo caso category!=="document" DEBE tener `posterior` con las 6 claves
 //     exactas, sumando 1 (±0.005). ERROR si no.
 //   - los casos-documento NO deben tener posterior (la partición no aplica). WARN.
 const MECE_CLASSES_AUDIT = [

@@ -15,7 +15,7 @@ import { STATS } from "@/lib/siteStats";
 export const metadata = {
   title: "Metodología — cómo se pesa la evidencia",
   description:
-    "Cómo se pesa la evidencia: cuatro niveles de fuerza probatoria, retornos decrecientes por caso, y por qué las nueve explicaciones reparten el 100% de forma comparable.",
+    "Cómo se pesa la evidencia: cuatro niveles de fuerza probatoria, retornos decrecientes por caso, y por qué las seis narrativas reparten el 100% de forma comparable.",
 
   alternates: { canonical: "/about/" },
 };
@@ -36,14 +36,14 @@ const CHAPTERS = [
   {
     id: "non-exclusive",
     n: "3",
-    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades suman 100%", tldr: "Las nueve explicaciones son mutuamente excluyentes por caso; la distribución es comparable y reparte el 100%" },
-    en: { eyebrow: "Chapter 3", h2: "Why probabilities sum to 100%", tldr: "The nine explanations are mutually exclusive per case; the distribution is comparable and sums to 100%" },
+    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades suman 100%", tldr: "Las seis narrativas son mutuamente excluyentes por caso; la distribución es comparable y reparte el 100%" },
+    en: { eyebrow: "Chapter 3", h2: "Why probabilities sum to 100%", tldr: "The six narratives are mutually exclusive per case; the distribution is comparable and sums to 100%" },
   },
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayor parte del corpus se reparte entre explicaciones mundanas e indeterminables; las clases no-humanas y la de ingeniería inversa son pequeñas y concentran el debate abierto." },
-    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most of the corpus splits between mundane and indeterminable explanations; the non-human classes and reverse-engineering are small and hold the open debate." },
+    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayor parte del corpus se reparte entre explicaciones mundanas e indeterminables; las narrativas no-humanas son pequeñas y concentran el debate abierto." },
+    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most of the corpus splits between mundane and indeterminable explanations; the non-human narratives are small and hold the open debate." },
   },
   {
     id: "movers",
@@ -231,8 +231,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="Por caso, las nueve explicaciones son mutuamente excluyentes: cada caso tuvo una causa real y la incertidumbre se reparte entre los candidatos, sumando 100%. Sumadas sobre el corpus dan una partición comparable — se puede decir qué explicación da cuenta de más casos. El costo honesto es asumir que cada caso tiene una explicación verdadera; lo que no se puede asignar cae en «indeterminable». El marco anterior, donde los porcentajes no sumaban 100 ni se podían comparar, se reemplazó precisamente para corregir eso."
-                  en="Per case, the nine explanations are mutually exclusive: each case had one real cause and the uncertainty is split among the candidates, summing to 100%. Summed across the corpus they give a comparable partition — one can say which explanation accounts for more cases. The honest cost is assuming each case has one true explanation; whatever cannot be assigned falls into 'indeterminable'. The prior framework, where percentages neither summed to 100 nor were comparable, was replaced precisely to fix that."
+                  es="Por caso, las seis narrativas son mutuamente excluyentes: cada caso tuvo una causa real y la incertidumbre se reparte entre los candidatos, sumando 100%. Sumadas sobre el corpus dan una partición comparable — se puede decir qué explicación da cuenta de más casos. El costo honesto es asumir que cada caso tiene una explicación verdadera; lo que no se puede asignar cae en «indeterminable». El marco anterior, donde los porcentajes no sumaban 100 ni se podían comparar, se reemplazó precisamente para corregir eso."
+                  en="Per case, the six narratives are mutually exclusive: each case had one real cause and the uncertainty is split among the candidates, summing to 100%. Summed across the corpus they give a comparable partition — one can say which explanation accounts for more cases. The honest cost is assuming each case has one true explanation; whatever cannot be assigned falls into 'indeterminable'. The prior framework, where percentages neither summed to 100 nor were comparable, was replaced precisely to fix that."
                 />
               </Body>
               <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
@@ -262,14 +262,14 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="El modelo se reformuló para dar números COMPARABLES. Antes, cada hipótesis era una afirmación existencial independiente («al menos un caso es X») y sus porcentajes no sumaban 100 ni competían entre sí — no se podía decir qué explicación era más probable que otra. Ahora cada caso reparte el 100% sobre las mismas nueve explicaciones mutuamente excluyentes, y el corpus las agrega en una partición que reparte el 100% de forma comparable. Las hipótesis del marco anterior se conservan: cinco como hojas, tres como subclases de «entidades no humanas», y «entidades no humanas» y «heterogeneidad» como vistas derivadas."
-                  en="The model was reformulated to yield COMPARABLE numbers. Before, each hypothesis was an independent existential claim (at least one case is X) and its percentages neither summed to 100 nor competed — one could not say which explanation was more probable than another. Now each case splits 100% over the same nine mutually-exclusive explanations, and the corpus aggregates them into a partition that splits 100% comparably. The prior framework hypotheses are preserved: five as leaves, three as subclasses of non-human entities, and non-human entities and heterogeneity as derived views."
+                  es="El modelo se reformuló para dar números COMPARABLES. Antes, cada hipótesis era una afirmación existencial independiente («al menos un caso es X») y sus porcentajes no sumaban 100 ni competían entre sí — no se podía decir qué explicación era más probable que otra. Ahora cada caso reparte el 100% sobre las mismas seis narrativas mutuamente excluyentes, y el corpus las agrega en una partición que reparte el 100% de forma comparable. Cada narrativa bundlea objeto + postura institucional, de modo que «no-humano + ocultación estatal» es una clase propia. Las hipótesis del marco anterior se conservan como mapeo dentro de cada narrativa, y «entidades no humanas» (suma de las dos narrativas no-humanas) y «heterogeneidad» quedan como vistas derivadas."
+                  en="The model was reformulated to yield COMPARABLE numbers. Before, each hypothesis was an independent existential claim (at least one case is X) and its percentages neither summed to 100 nor competed — one could not say which explanation was more probable than another. Now each case splits 100% over the same six mutually-exclusive narratives, and the corpus aggregates them into a partition that splits 100% comparably. Each narrative bundles object + institutional stance, so 'non-human + state cover-up' is its own class. The prior framework hypotheses are preserved as a mapping inside each narrative, and 'non-human entities' (the sum of the two non-human narratives) and 'heterogeneity' remain derived views."
                 />
               </Body>
               <Caption className="pt-2">
                 <T
-                  es={<>La partición completa, las nueve explicaciones y los casos modales de cada una viven en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
-                  en={<>The full partition, the nine explanations and each one&apos;s modal cases live at{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
+                  es={<>La partición completa, las seis narrativas y los casos modales de cada una viven en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
+                  en={<>The full partition, the six narratives and each one&apos;s modal cases live at{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
                 />
               </Caption>
             </div>
@@ -307,33 +307,33 @@ export default function AboutPage() {
 
               <div className="mt-10 space-y-4 border-t border-text/15 pt-8">
                 <Eyebrow>
-                  <T es="Calibración derivada con ajuste manual" en="Derived calibration with manual override" />
+                  <T es="Posterior por caso, agregado mecánico" en="Per-case posterior, mechanical aggregate" />
                 </Eyebrow>
                 <h3 className="font-display text-xl font-medium leading-snug text-text md:text-2xl">
                   <T es="Cómo cada caso nuevo mueve las probabilidades automáticamente" en="How each new case moves the probabilities automatically" />
                 </h3>
                 <Body className="text-muted">
                   <T
-                    es={<>Las probabilidades del corpus se derivan en build-time de forma pública y comparable. Cada caso reparte el 100% entre nueve explicaciones mutuamente excluyentes: <strong className="text-text">un posterior que suma 1</strong>. El corpus las agrega en el nº esperado de casos por explicación —Eⱼ = Σᵢ P(explicaciónⱼ | casoᵢ)—, que reparte el 100% y es comparable entre explicaciones; al ser una esperanza (lineal), es válido aunque los casos estén correlacionados. Son juicios analíticos estructurados, no frecuencias calibradas empíricamente: el modelo dice qué explicación es más coherente con cada caso, no cuál es objetivamente correcta. Cada caso nuevo recalcula la partición sin intervención humana.</>}
-                    en={<>Corpus probabilities are derived at build-time in a public, comparable way. Each case splits 100% among nine mutually-exclusive explanations: <strong className="text-text">a posterior that sums to 1</strong>. The corpus aggregates them into the expected number of cases per explanation —Eⱼ = Σᵢ P(explanationⱼ | caseᵢ)—, which splits 100% and is comparable across explanations; being an expectation (linear), it holds even if cases are correlated. These are structured analytical judgments, not empirically calibrated frequencies: the model says which explanation is most coherent with each case, not which is objectively correct. Every new case recomputes the partition without human intervention.</>}
+                    es={<>Las probabilidades del corpus se derivan en build-time de forma pública y comparable. Cada caso reparte el 100% entre seis narrativas mutuamente excluyentes: <strong className="text-text">un posterior que suma 1</strong>. El corpus las agrega en el nº esperado de casos por narrativa —Eⱼ = Σᵢ P(narrativaⱼ | casoᵢ)—, que reparte el 100% y es comparable entre narrativas; al ser una esperanza (lineal), es válido aunque los casos estén correlacionados. Son juicios analíticos estructurados, no frecuencias calibradas empíricamente: el modelo dice qué explicación es más coherente con cada caso, no cuál es objetivamente correcta. Cada caso nuevo recalcula la partición sin intervención humana.</>}
+                    en={<>Corpus probabilities are derived at build-time in a public, comparable way. Each case splits 100% among six mutually-exclusive narratives: <strong className="text-text">a posterior that sums to 1</strong>. The corpus aggregates them into the expected number of cases per narrative —Eⱼ = Σᵢ P(narrativeⱼ | caseᵢ)—, which splits 100% and is comparable across narratives; being an expectation (linear), it holds even if cases are correlated. These are structured analytical judgments, not empirically calibrated frequencies: the model says which explanation is most coherent with each case, not which is objectively correct. Every new case recomputes the partition without human intervention.</>}
                   />
                 </Body>
                 <Body className="text-muted">
                   <T
-                    es={<>Los pesos por caso son públicos y declarados:{" "}<strong className="text-text">mínimo +0.5</strong>{" "}(repite patrón ya documentado),{" "}<strong className="text-text">modesto +2</strong>{" "}(corroboración independiente o una modalidad sensora añadida),{" "}<strong className="text-text">sustancial +5</strong>{" "}(modalidad sensora nueva o contradice patrón establecido),{" "}<strong className="text-text">categoría nueva +15</strong>{" "}(clase de evidencia enteramente nueva — material recuperado + análisis publicado, identificación de origen, etc).</>}
-                    en={<>Per-case weights are public and declared:{" "}<strong className="text-text">minimal +0.5</strong>{" "}(repeats already-documented pattern),{" "}<strong className="text-text">modest +2</strong>{" "}(independent corroboration or one added sensor modality),{" "}<strong className="text-text">substantial +5</strong>{" "}(new sensor modality or contradicts established pattern),{" "}<strong className="text-text">category-breaking +15</strong>{" "}(entirely new class of evidence — recovered material + published analysis, origin identification, etc).</>}
+                    es={<>El posterior de cada caso es un juicio declarado, no un cálculo a partir de pesos: el análisis del caso reparte explícitamente el 100% entre las seis narrativas según qué tan bien cada una da cuenta de la evidencia. No hay fórmula oculta — el reparto es el juicio, y queda visible en la página del caso. Lo que el caso no permite asignar se concentra en{" "}<strong className="text-text">«indeterminable»</strong>, la válvula de honestidad del modelo.</>}
+                    en={<>Each case&apos;s posterior is a declared judgment, not a computation from weights: the case analysis explicitly splits 100% among the six narratives by how well each accounts for the evidence. There is no hidden formula — the split is the judgment, and it stays visible on the case page. Whatever the case does not allow assigning concentrates in{" "}<strong className="text-text">&apos;indeterminable&apos;</strong>, the model&apos;s honesty valve.</>}
                   />
                 </Body>
                 <Body className="text-muted">
                   <T
-                    es={<>Cuando un analista discrepa con el resultado derivado — por ejemplo cuando hay contexto cualitativo no codificable en pesos — puede declarar un{" "}<strong className="text-text">ajuste manual</strong>{" "}explícito que reemplaza el cálculo. El sitio indica visualmente cuándo se aplica un ajuste manual, para que el lector vea la diferencia entre derivación automática y juicio humano explícito.</>}
-                    en={<>When an analyst disagrees with the derived result — for example when there&apos;s qualitative context not captured in the weights — they can declare an explicit{" "}<strong className="text-text">manual override</strong>{" "}that replaces the calculation. The site flags visually when an override is in effect, so the reader sees the difference between automatic derivation and explicit human judgment.</>}
+                    es={<>El agregado del corpus es puramente mecánico: suma esos posteriores en el nº esperado de casos por narrativa y los redondea con el método de mayor resto (Hamilton) para que los porcentajes mostrados sumen exactamente 100. Cada caso nuevo entra con su posterior y recalcula la partición sin intervención adicional.</>}
+                    en={<>The corpus aggregate is purely mechanical: it sums those posteriors into the expected number of cases per narrative and rounds them with the largest-remainder (Hamilton) method so the displayed percentages sum to exactly 100. Each new case enters with its posterior and recomputes the partition with no further intervention.</>}
                   />
                 </Body>
                 <Caption>
                   <T
-                    es={<>Cada caso individual muestra su contribución declarada en su propia página, en la sección{" "}<em>&quot;Lo que este caso movió&quot;</em>. Los casos sin contribución declarada se auto-siembran desde sus patrones al peso mínimo (+0.5 por patrón mapeado). Las hipótesis{" "}<em>antecedente</em> (misidentificación) y{" "}<em>derivada</em> (heterogeneidad) usan ajuste manual por construcción, porque sus probabilidades no provienen del corpus.</>}
-                    en={<>Each individual case shows its declared contribution on its own page, in the{" "}<em>&quot;What this case moved&quot;</em> section. Cases without a declared contribution are auto-seeded from their patterns at minimal weight (+0.5 per mapped pattern). The <em>antecedent</em> (misidentification) and <em>derived</em> (heterogeneity) hypotheses use manual override by construction, since their probabilities don&apos;t come from the corpus.</>}
+                    es={<>Cada caso de incidente muestra su posterior en su propia página, en la sección{" "}<em>&quot;Cómo se reparte este caso&quot;</em>. Los casos-documento (memos, audiencias, filtraciones) no llevan posterior: la pregunta «qué era el objeto» no les aplica.</>}
+                    en={<>Each incident case shows its posterior on its own page, in the{" "}<em>&quot;How this case splits&quot;</em> section. Document cases (memos, hearings, leaks) carry no posterior: the &apos;what was the object&apos; question does not apply to them.</>}
                   />
                 </Caption>
               </div>
@@ -344,11 +344,11 @@ export default function AboutPage() {
         <section className="space-y-6 border-t-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
           <Eyebrow><T es="Ya entiendes el método" en="You now understand the method" /></Eyebrow>
           <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
-            <T es="Ahora mira el resultado: ocho explicaciones con su nivel de confianza" en="Now see the result: eight explanations with their confidence level" />
+            <T es="Ahora mira el resultado: seis narrativas que reparten el corpus" en="Now see the result: six narratives partitioning the corpus" />
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
             <Cta href="/probabilidades" variant="primary">
-              <T es="Ver las ocho explicaciones →" en="See the eight explanations →" />
+              <T es="Ver las seis narrativas →" en="See the six narratives →" />
             </Cta>
             <Cta href="/cases" variant="secondary">
               <T es={`Ver los ${STATS.cases} casos →`} en={`See the ${STATS.cases} cases →`} />

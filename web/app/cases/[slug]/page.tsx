@@ -511,7 +511,7 @@ export default async function CaseDetailPage(
             <T
               es={
                 <>
-                  Este caso reparte el 100% entre las nueve explicaciones
+                  Este caso reparte el 100% entre las seis narrativas
                   mutuamente excluyentes del modelo. La barra muestra qué tan
                   probable es cada una; sumadas en todo el corpus producen la{" "}
                   <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
@@ -522,8 +522,8 @@ export default async function CaseDetailPage(
               }
               en={
                 <>
-                  This case splits 100% among the model&apos;s nine
-                  mutually-exclusive explanations. The bar shows how probable
+                  This case splits 100% among the model&apos;s six
+                  mutually-exclusive narratives. The bar shows how probable
                   each is; summed across the corpus they produce the{" "}
                   <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     comparable partition

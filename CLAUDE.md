@@ -81,17 +81,17 @@ Campos opcionales de rich content (renderizados como secciones en `/cases/[slug]
 **Estándar: la descripción narrativa de cada caso —`whatHappened` + `whyMatters`— debe alcanzar al menos ~1 página A4 (~550 palabras / ~3.500 caracteres), en español e inglés.** `evidence` y `sources` aportan pero NO cuentan para la página: el estándar mide prosa, no listas — un caso con narrativa corta y listas largas sigue por debajo del estándar.
 
 Esto extiende la regla anterior ("2-3 párrafos") porque el corpus dejó casos demasiado telegráficos para su tier. El auditor `audit-consistency.mjs` (regla **E13**, corre en prebuild) reporta cuántos casos siguen bajo el umbral, con backlog por tier — es **WARN agregado, no ERROR**: el build no se rompe, pero el progreso queda medible. La expansión se hace **con investigación caso por caso** (fuentes primarias, no relleno), priorizando **Tier S → A → B**. Cualquier caso nuevo debe nacer cumpliendo el estándar.
-- `posterior` — distribución MECE sobre 9 explicaciones que suma 1: `{mundano, natural_desc, clasificada, adversaria, ing_inversa, interdimensional, ontologico, tratado, indet}`. OBLIGATORIO en casos no-documento (invariante M1 del audit `audit-consistency.mjs`). Ver `lib/meceModel.ts`.
+- `posterior` — distribución MECE sobre 6 narrativas que suma 1: `{mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet}`. OBLIGATORIO en casos no-documento (invariante M1 del audit `audit-consistency.mjs`). Ver `lib/meceModel.ts`.
 
 Si un caso no tiene rich content, la página de detalle muestra fallback "⏳ Caso pendiente de explicación detallada".
 
 ## Modelo de probabilidad (MECE)
 
-Las probabilidades son **comparables**: cada caso de incidente reparte el 100% sobre 9 explicaciones **mutuamente excluyentes y exhaustivas** (campo `posterior`, suma 1). El corpus las agrega en el nº esperado de casos por explicación —`Eⱼ = Σᵢ P(claseⱼ | casoᵢ)`—, que reparte el 100% y es comparable entre clases; al ser una esperanza (lineal) es válido aunque los casos estén correlacionados.
+Las probabilidades son **comparables**: cada caso de incidente reparte el 100% sobre 6 narrativas **mutuamente excluyentes y exhaustivas** (campo `posterior`, suma 1). El corpus las agrega en el nº esperado de casos por narrativa —`Eⱼ = Σᵢ P(narrativaⱼ | casoᵢ)`—, que reparte el 100% y es comparable entre narrativas; al ser una esperanza (lineal) es válido aunque los casos estén correlacionados.
 
-Las 9 hojas preservan las hipótesis del marco anterior: 5 directas (`mundano`=misidentificación, `natural_desc`, `clasificada`=programas-clasificados, `adversaria`, `ing_inversa`) + 3 subclases de entidades-no-humanas (`interdimensional`, `ontologico`, `tratado`) + `indet`. Dos vistas **derivadas**: `entidades-no-humanas` = suma de las 3 subclases; `heterogeneidad` = 1 − `mundano`.
+Cada narrativa bundlea **objeto + postura institucional**, de modo que combinaciones como «no-humano + ocultación estatal» son una clase propia: `mundano_natural` (misidentificación + fenómenos naturales), `humana_clasificada` (programa propio/aliado, encubrimiento intrínseco), `adversaria` (tecnología de otro Estado), `nohumano_encubierto` (no-humano que un Estado conoce/controla/oculta — incluye ingeniería inversa y narrativa de tratado), `nohumano_abierto` (no-humano que nadie controla — tipo Vallée / interdimensional / ontológico), `indet`. Las hipótesis del marco anterior se conservan como mapeo dentro de cada narrativa (`legacyHypothesis` en `MECE_CLASSES`). Dos vistas **derivadas**: `entidades-no-humanas` = `nohumano_encubierto` + `nohumano_abierto`; `heterogeneidad` = 1 − `mundano_natural`.
 
-Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad ≠ verdad. Los casos-documento se excluyen (la partición «qué era el objeto» no aplica). Detalle en JSDoc de `lib/meceModel.ts`. El invariante (suma=1, 9 claves, no en documentos) se valida en `audit-consistency.mjs` (regla M1) y `validate-schema.mjs`.
+Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad ≠ verdad. Los casos-documento se excluyen (la partición «qué era el objeto» no aplica). Detalle en JSDoc de `lib/meceModel.ts`. El invariante (suma=1, 6 claves, no en documentos) se valida en `audit-consistency.mjs` (regla M1) y `validate-schema.mjs`.
 
 ## Convenciones de UI
 

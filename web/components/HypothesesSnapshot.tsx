@@ -3,7 +3,7 @@ import { T } from "@/components/T";
 
 /**
  * Snapshot de la partición MECE para la Home (fondo oscuro bg-text).
- * Las nueve explicaciones mutuamente excluyentes reparten el 100% del corpus
+ * Las seis narrativas mutuamente excluyentes reparten el 100% del corpus
  * — distribución COMPARABLE (a diferencia del marco anterior, donde los % no
  * sumaban 100). Barras crema sobre oscuro; server component, cero JS.
  */
@@ -19,8 +19,8 @@ export function HypothesesSnapshot() {
     <div>
       <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es={`Cómo se reparte el corpus (${N} casos) entre las nueve explicaciones — suman 100%`}
-          en={`How the corpus (${N} cases) splits among the nine explanations — they sum to 100%`}
+          es={`Cómo se reparte el corpus (${N} casos) entre las seis narrativas — suman 100%`}
+          en={`How the corpus (${N} cases) splits among the six narratives — they sum to 100%`}
         />
       </p>
       {ranked.map((c, i) => (
@@ -44,8 +44,8 @@ export function HypothesesSnapshot() {
       ))}
       <p className="pt-4 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es="Partición exhaustiva y comparable — las explicaciones reparten el 100% del corpus"
-          en="Exhaustive, comparable partition — the explanations split 100% of the corpus"
+          es="Partición exhaustiva y comparable — las narrativas reparten el 100% del corpus"
+          en="Exhaustive, comparable partition — the narratives split 100% of the corpus"
         />
       </p>
     </div>

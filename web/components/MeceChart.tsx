@@ -17,7 +17,7 @@ const CLASS_BY_ID = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c])) as Re
 const pct = (x: number) => (x * 100).toFixed(0);
 
 /**
- * Partición comparable del corpus: las 9 explicaciones reparten el 100%.
+ * Partición comparable del corpus: las 6 narrativas reparten el 100%.
  * + vistas derivadas (entidades-no-humanas, heterogeneidad).
  */
 export function MecePartition({ compact = false }: { compact?: boolean }) {

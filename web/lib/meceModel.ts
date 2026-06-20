@@ -1,28 +1,36 @@
 /**
- * MODELO MECE — probabilidades COMPARABLES (en migración, paso 1).
- * ================================================================
+ * MODELO MECE — probabilidades COMPARABLES.
+ * =========================================
  *
- * Reemplaza la AGREGACIÓN del esquema viejo (10 hipótesis existenciales
- * solapadas, no comparables) por un POSTERIOR POR CASO sobre explicaciones
- * mutuamente excluyentes y exhaustivas (MECE) que suma 1. El agregado del
- * corpus reparte el 100% entre clases.
+ * Reemplaza la AGREGACIÓN del esquema viejo (hipótesis existenciales solapadas,
+ * no comparables) por un POSTERIOR POR CASO sobre SEIS NARRATIVAS mutuamente
+ * excluyentes y exhaustivas (MECE) que suma 1. El agregado del corpus reparte
+ * el 100% entre las narrativas.
  *
- * PRESERVA LAS 10 HIPÓTESIS:
- *   - 5 son hojas directas: mundano (misidentificación), natural
- *     (fenómenos-naturales), clasificada (programas-clasificados), adversaria
- *     (tecnología-adversaria), ing_inversa (ingeniería-inversa).
- *   - 3 hojas son las subclases del paraguas: interdimensional, ontologico,
- *     tratado.
- *   - entidades-no-humanas = SUMA de esas 3 subclases (vista derivada).
- *   - heterogeneidad = 1 − mundano (vista derivada; ≥1 caso anómalo).
- *   - misidentificación como pre-filtro del universo previo sigue como claim
- *     aparte (fuera del corpus), no como clase de esta partición.
+ * SEIS NARRATIVAS CONJUNTAS (objeto + postura institucional):
+ *   - mundano_natural: objeto conocido / ilusión / error / fraude o fenómeno
+ *     natural. Absorbe «misidentificación» y «fenómenos naturales».
+ *   - humana_clasificada: programa secreto propio o aliado (encubrimiento
+ *     intrínseco). Antigua «programas clasificados».
+ *   - adversaria: tecnología de vigilancia de otro Estado.
+ *   - nohumano_encubierto: inteligencia/tecnología no humana que un Estado
+ *     conoce, controla u oculta — incluye ingeniería inversa y la narrativa de
+ *     tratado. Es la combinación «no-humano + ocultación estatal» como clase.
+ *   - nohumano_abierto: fenómeno no humano que ninguna institución controla ni
+ *     oculta (sistema de control tipo Vallée; interdimensional / ontológico).
+ *   - indet: evidencia insuficiente para asignar una narrativa.
  *
- * COEXISTENCIA: durante la migración este módulo NO está cableado a las
- * páginas vivas. Lee `case.posterior` si existe; si no, deriva un posterior
- * PROVISIONAL desde los campos legacy.
+ * VISTAS DERIVADAS:
+ *   - entidades-no-humanas = nohumano_encubierto + nohumano_abierto.
+ *   - heterogeneidad = 1 − mundano_natural (≥1 caso anómalo).
  *
- * COMPARABILIDAD/CORRELACIÓN: E_j = Σ_i P(clase_j|caso_i) es lineal, así que
+ * Las hipótesis del marco anterior se conservan como mapeo dentro de cada
+ * narrativa (campo legacyHypothesis), no como clases independientes.
+ *
+ * FALLBACK: si un caso no trae `posterior`, seedPosterior deriva uno provisional
+ * desde `probability` (sin pesos ni contribuciones — esos campos se eliminaron).
+ *
+ * COMPARABILIDAD/CORRELACIÓN: E_j = Σ_i P(narrativa_j|caso_i) es lineal, así que
  * el agregado vale aunque los casos estén correlacionados. Sigue siendo
  * subjetivo, no calibrado.
  *
