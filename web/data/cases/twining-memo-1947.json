@@ -12,6 +12,7 @@
     "place": "Pentagon, Washington DC"
   },
   "tier": "S",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 95,
   "posterior": { "mundano_natural": 0.20, "humana_clasificada": 0.22, "adversaria": 0.18, "nohumano_encubierto": 0.17, "nohumano_abierto": 0.08, "indet": 0.15 },

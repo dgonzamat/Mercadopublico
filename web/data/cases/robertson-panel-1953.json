@@ -12,6 +12,7 @@
     "place": "CIA HQ, Langley VA"
   },
   "tier": "S",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 95,
   "posterior": {

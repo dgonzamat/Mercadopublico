@@ -14,6 +14,7 @@
     "place_en": "CNES, Toulouse (France)"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "probability": 45,
   "posterior": {
     "mundano_natural": 0.15,

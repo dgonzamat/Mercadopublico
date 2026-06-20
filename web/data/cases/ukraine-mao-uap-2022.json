@@ -14,6 +14,7 @@
     "place_en": "Main Astronomical Observatory (NASU), Kyiv"
   },
   "tier": "B",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 22,
   "posterior": { "mundano_natural": 0.8, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 0.2 },

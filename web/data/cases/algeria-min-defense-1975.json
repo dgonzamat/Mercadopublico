@@ -14,6 +14,7 @@
     "place_en": "Algiers · Ministry of National Defence"
   },
   "tier": "S",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 75,
   "posterior": {

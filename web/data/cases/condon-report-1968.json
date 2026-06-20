@@ -14,6 +14,7 @@
     "place_en": "University of Colorado, Boulder"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 60,
   "posterior": {

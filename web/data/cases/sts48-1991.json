@@ -13,6 +13,7 @@
     "place_en": "Discovery orbit (STS-48) · mission launched from Cape Canaveral"
   },
   "tier": "A",
+  "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 55,
   "summary": "Una cámara del transbordador Discovery captó un punto luminoso que giró unos 90 grados y aceleró tras un destello; NASA lo atribuyó a partículas de hielo y el análisis independiente de Carlotto calculó ~14,000 mph en menos de un segundo, incompatible con esa explicación.",

@@ -14,6 +14,7 @@
     "place_en": "Univ. of Manchester · IAA SETI Permanent Committee (global ratification)"
   },
   "tier": "B",
+  "mundanoType": "misid",
   "epistemicStatus": "developing",
   "probability": 80,
   "posterior": { "mundano_natural": 0.55, "humana_clasificada": 0.12, "adversaria": 0.03, "nohumano_encubierto": 0.05, "nohumano_abierto": 0.10, "indet": 0.15 },

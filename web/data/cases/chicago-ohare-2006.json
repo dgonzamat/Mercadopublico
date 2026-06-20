@@ -12,6 +12,7 @@
     "place": "Chicago O'Hare International Airport"
   },
   "tier": "S",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 72,
   "summary": "El 7 de noviembre de 2006, al menos doce empleados de United Airlines observaron un disco metálico estacionario sobre la puerta C-17 del aeropuerto O'Hare antes de que ascendiera bruscamente dejando un agujero en las nubes. La FAA negó tener registros; una demanda FOIA del Chicago Tribune forzó la liberación del audio interno que contradecía la negación.",

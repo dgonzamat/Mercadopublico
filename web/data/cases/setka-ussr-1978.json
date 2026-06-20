@@ -15,6 +15,7 @@
     "place_en": "Moscow · USSR Academy of Sciences + Ministry of Defense"
   },
   "tier": "S",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 90,
   "posterior": { "mundano_natural": 0.2, "humana_clasificada": 0.1, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 0.7 },

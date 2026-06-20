@@ -171,6 +171,10 @@ for (const file of caseFiles) {
       if (Math.abs(tot - 1) > 0.005) err(w, `posterior suma ${tot.toFixed(4)} (debe ser 1)`);
     }
   }
+  // mundanoType (opcional): sub-tipo de la explicación prosaica.
+  if (c.mundanoType !== undefined && !["misid", "natural", "fraude"].includes(c.mundanoType)) {
+    err(w, `mundanoType inválido "${c.mundanoType}" (misid|natural|fraude)`);
+  }
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");
 

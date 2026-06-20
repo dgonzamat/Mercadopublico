@@ -12,6 +12,7 @@
     "place": "Department of War"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "epistemicStatus": "projected",
   "probability": 88,
   "posterior": {

@@ -14,6 +14,7 @@
     "place_en": "DGAC, Santiago, Chile"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "probability": 48,
   "posterior": {
     "mundano_natural": 0.60,

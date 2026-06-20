@@ -58,6 +58,23 @@ export default function ProbabilidadesPage() {
     casesByModal[id].sort((a, b) => b.p - a.p);
   }
 
+  // Apertura de "mundano/natural": su masa clasificada, por sub-tipo de
+  // explicación prosaica (misidentificación / fenómeno natural / fraude).
+  const MUNDANO_TYPES: { key: "misid" | "natural" | "fraude"; es: string; en: string }[] = [
+    { key: "misid", es: "Misidentificación", en: "Misidentification" },
+    { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
+    { key: "fraude", es: "Fraude / hoax", en: "Hoax / fraud" },
+  ];
+  const mundanoBy: Record<string, number> = { misid: 0, natural: 0, fraude: 0 };
+  let mundanoTotal = 0;
+  for (const s of allScored) {
+    const m = classifiedPosterior(s.posterior).mundano_natural || 0;
+    if (m <= 0) continue;
+    mundanoTotal += m;
+    mundanoBy[s.mundanoType ?? "misid"] += m;
+  }
+  const mundColor = MECE_CLASSES.find((c) => c.id === "mundano_natural")!.color;
+
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
       <Eyebrow>
@@ -90,6 +107,40 @@ export default function ProbabilidadesPage() {
             totalLabelEs={`Suman 100% · ${allScored.length} casos · «No-humano» agrupa encubierto + abierto`}
             totalLabelEn={`Sum to 100% · ${allScored.length} cases · 'Non-human' groups covert + open`}
           />
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <H2>
+          <T es="Dentro de mundano / natural" en="Inside mundane / natural" />
+        </H2>
+        <Caption>
+          <T
+            es={`«Mundano/natural» (${(mundanoTotal / allScored.length * 100).toFixed(0)}% del corpus) no es una sola cosa: separa el error humano sobre algo conocido, la física natural genuina y el engaño deliberado. Son lecturas prosaicas epistémicamente distintas.`}
+            en={`'Mundane/natural' (${(mundanoTotal / allScored.length * 100).toFixed(0)}% of the corpus) is not one thing: it separates human error about a known object, genuine natural physics, and deliberate hoax. These are epistemically distinct prosaic readings.`}
+          />
+        </Caption>
+        <div className="mt-6 rounded-sm border border-border bg-panel p-5">
+          <div className="space-y-2.5">
+            {MUNDANO_TYPES.map((t) => (
+              <div key={t.key}>
+                <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
+                  <span className="min-w-0 uppercase tracking-wider text-text">
+                    <T es={t.es} en={t.en} />
+                  </span>
+                  <span className="shrink-0 whitespace-nowrap text-right text-muted">
+                    {(mundanoBy[t.key] / mundanoTotal * 100).toFixed(0)}% · {mundanoBy[t.key].toFixed(1)} <T es="casos" en="cases" />
+                  </span>
+                </div>
+                <div className="mt-1 h-2 w-full bg-border/40">
+                  <div className="h-2" style={{ width: `${(mundanoBy[t.key] / mundanoTotal) * 100}%`, backgroundColor: mundColor }} />
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
+            <T es={`${mundanoTotal.toFixed(0)} casos-equivalentes · sub-tipo de la explicación prosaica`} en={`${mundanoTotal.toFixed(0)} case-equivalents · sub-type of the prosaic explanation`} />
+          </p>
         </div>
       </section>
 

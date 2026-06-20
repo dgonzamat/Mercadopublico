@@ -170,6 +170,7 @@ export interface ScoredCase {
   category: string;
   posterior: Posterior;
   seeded: boolean;
+  mundanoType?: UAPCase["mundanoType"];
 }
 
 /** Casos del corpus a los que aplica el modelo (excluye documentos). */
@@ -183,6 +184,7 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
       category: c.category,
       posterior: posteriorFor(c),
       seeded: !c.posterior,
+      mundanoType: c.mundanoType,
     }));
 }
 
@@ -203,5 +205,6 @@ export function documentPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): S
       category: c.category,
       posterior: c.posterior ? normalize(c.posterior) : { ...emptyPosterior(), indet: 1 },
       seeded: !c.posterior,
+      mundanoType: c.mundanoType,
     }));
 }
