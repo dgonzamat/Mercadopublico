@@ -58,15 +58,33 @@ export interface EvidenceContribution {
  * comparable. Ver lib/meceModel.ts. Coexiste con el modelo viejo durante la
  * migración; `posterior` es opcional hasta recodificar las ~200 fichas.
  */
+/**
+ * Hojas de la partición (suman 1 por caso). Preservan las hipótesis del modelo
+ * viejo: 5 son hipótesis directas, 3 son las subclases del paraguas «entidades
+ * no humanas». Las hipótesis DERIVADAS se recuperan como vistas:
+ *   - entidades-no-humanas = interdimensional + ontologico + tratado
+ *   - heterogeneidad       = 1 − mundano  (≥1 caso genuinamente anómalo)
+ * (misidentificación como pre-filtro del universo previo sigue aparte.)
+ */
 export type MeceClassId =
-  | "mundano"       // identificación errónea / objeto conocido / fraude
-  | "natural_desc"  // fenómeno natural real pero no catalogado
-  | "clasificada"   // tecnología humana clasificada (propia/aliada)
-  | "adversaria"    // tecnología de vigilancia de otro Estado
-  | "no_humano"     // inteligencia/entidad no humana (incl. interdimensional…)
-  | "indet";        // indeterminable / evidencia insuficiente
+  | "mundano"          // misidentificación / objeto conocido / fraude
+  | "natural_desc"     // fenómeno natural (catalogado o no)
+  | "clasificada"      // programas clasificados (tec. humana propia/aliada)
+  | "adversaria"       // tecnología de vigilancia de otro Estado
+  | "ing_inversa"      // ingeniería inversa de tecnología no humana (programa)
+  | "interdimensional" // subclase de entidades no humanas
+  | "ontologico"       // subclase: ontológico no materialista
+  | "tratado"          // subclase: tratado formal (greys)
+  | "indet";           // indeterminable / evidencia insuficiente
 
 export type Posterior = Record<MeceClassId, number>;
+
+/** Subclases que componen el paraguas «entidades no humanas» (derivado). */
+export const ENTIDADES_SUBCLASSES: MeceClassId[] = [
+  "interdimensional",
+  "ontologico",
+  "tratado",
+];
 
 export interface UAPCase {
   id: string;

@@ -2,26 +2,39 @@
  * MODELO MECE — probabilidades COMPARABLES (en migración, paso 1).
  * ================================================================
  *
- * Reemplaza el esquema viejo (10 hipótesis existenciales solapadas, no
- * comparables; ver lib/hypotheses.ts + lib/hypothesisMapping.ts) por un
- * POSTERIOR POR CASO sobre explicaciones mutuamente excluyentes y exhaustivas
- * (MECE) que suma 1. El agregado del corpus reparte el 100% entre clases.
+ * Reemplaza la AGREGACIÓN del esquema viejo (10 hipótesis existenciales
+ * solapadas, no comparables) por un POSTERIOR POR CASO sobre explicaciones
+ * mutuamente excluyentes y exhaustivas (MECE) que suma 1. El agregado del
+ * corpus reparte el 100% entre clases.
+ *
+ * PRESERVA LAS 10 HIPÓTESIS:
+ *   - 5 son hojas directas: mundano (misidentificación), natural
+ *     (fenómenos-naturales), clasificada (programas-clasificados), adversaria
+ *     (tecnología-adversaria), ing_inversa (ingeniería-inversa).
+ *   - 3 hojas son las subclases del paraguas: interdimensional, ontologico,
+ *     tratado.
+ *   - entidades-no-humanas = SUMA de esas 3 subclases (vista derivada).
+ *   - heterogeneidad = 1 − mundano (vista derivada; ≥1 caso anómalo).
+ *   - misidentificación como pre-filtro del universo previo sigue como claim
+ *     aparte (fuera del corpus), no como clase de esta partición.
  *
  * COEXISTENCIA: durante la migración este módulo NO está cableado a las
  * páginas vivas. Lee `case.posterior` si existe; si no, deriva un posterior
- * PROVISIONAL desde los campos legacy (probability + evidenceContribution),
- * para poder ver el modelo sobre los 200 casos antes de recodificarlos a mano.
+ * PROVISIONAL desde los campos legacy.
  *
- * COMPARABILIDAD Y CORRELACIÓN: el agregado E_j = Σ_i P(clase_j | caso_i) es
- * lineal, así que vale aunque los casos estén correlacionados — esquiva el
- * problema de independencia. Sigue siendo subjetivo, no calibrado.
+ * COMPARABILIDAD/CORRELACIÓN: E_j = Σ_i P(clase_j|caso_i) es lineal, así que
+ * el agregado vale aunque los casos estén correlacionados. Sigue siendo
+ * subjetivo, no calibrado.
  *
- * ALCANCE: aplica a casos de avistamiento/incidente. Los casos-documento
- * (category === "document") se EXCLUYEN: la partición "¿qué era el objeto?"
- * no les aplica.
+ * ALCANCE: casos de avistamiento/incidente. Los casos-documento se excluyen.
  */
 
-import type { MeceClassId, Posterior, UAPCase } from "./types";
+import {
+  ENTIDADES_SUBCLASSES,
+  type MeceClassId,
+  type Posterior,
+  type UAPCase,
+} from "./types";
 import { cases as ALL_CASES } from "./data";
 
 export const MECE_CLASSES: ReadonlyArray<{
@@ -29,19 +42,27 @@ export const MECE_CLASSES: ReadonlyArray<{
   label: string;
   labelEn: string;
   color: string;
+  /** Hipótesis del modelo viejo que esta hoja preserva. */
+  legacyHypothesis: string;
 }> = [
-  { id: "mundano", label: "Mundano / identificación errónea", labelEn: "Mundane / misidentification", color: "#5a6b7a" },
-  { id: "natural_desc", label: "Fenómeno natural no catalogado", labelEn: "Uncatalogued natural phenomenon", color: "#3f7d5a" },
-  { id: "clasificada", label: "Tecnología humana clasificada", labelEn: "Classified human technology", color: "#7a6b23" },
-  { id: "adversaria", label: "Tecnología de otro Estado", labelEn: "Another state's technology", color: "#8a4b23" },
-  { id: "no_humano", label: "Inteligencia no humana", labelEn: "Non-human intelligence", color: "#6b3a7a" },
-  { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a" },
+  { id: "mundano", label: "Identificación errónea", labelEn: "Misidentification", color: "#5a6b7a", legacyHypothesis: "misidentificacion" },
+  { id: "natural_desc", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#3f7d5a", legacyHypothesis: "fenomenos-naturales" },
+  { id: "clasificada", label: "Programas clasificados", labelEn: "Classified programs", color: "#7a6b23", legacyHypothesis: "programas-clasificados" },
+  { id: "adversaria", label: "Tecnología adversaria", labelEn: "Adversary technology", color: "#8a4b23", legacyHypothesis: "tecnologia-adversaria" },
+  { id: "ing_inversa", label: "Ingeniería inversa", labelEn: "Reverse engineering", color: "#9a5b3a", legacyHypothesis: "ingenieria-inversa" },
+  { id: "interdimensional", label: "Interdimensional", labelEn: "Interdimensional", color: "#5b3a8a", legacyHypothesis: "interdimensional" },
+  { id: "ontologico", label: "Ontológico no materialista", labelEn: "Non-materialist ontological", color: "#6b3a7a", legacyHypothesis: "ontologico-no-materialista" },
+  { id: "tratado", label: "Tratado formal (greys)", labelEn: "Formal treaty (greys)", color: "#7a3a6b", legacyHypothesis: "tratado-greys" },
+  { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—" },
 ];
 
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
 export function emptyPosterior(): Posterior {
-  return { mundano: 0, natural_desc: 0, clasificada: 0, adversaria: 0, no_humano: 0, indet: 0 };
+  return {
+    mundano: 0, natural_desc: 0, clasificada: 0, adversaria: 0, ing_inversa: 0,
+    interdimensional: 0, ontologico: 0, tratado: 0, indet: 0,
+  };
 }
 
 export function sumPosterior(p: Posterior): number {
@@ -56,37 +77,45 @@ function normalize(p: Posterior): Posterior {
   return out;
 }
 
+// ─── Vistas DERIVADAS (preservan hipótesis del modelo viejo) ──────────────
+
+/** entidades-no-humanas = suma de las 3 subclases. */
+export function entidadesNoHumanas(p: Posterior): number {
+  return ENTIDADES_SUBCLASSES.reduce((s, k) => s + (p[k] || 0), 0);
+}
+
+/** heterogeneidad = 1 − mundano (probabilidad de que el caso sea anómalo). */
+export function heterogeneidad(p: Posterior): number {
+  return 1 - (p.mundano || 0);
+}
+
 // ─── Sembrado provisional desde campos legacy ────────────────────────────
 
-/** Hipótesis vieja → clase MECE (las no listadas no aportan al sembrado). */
 const HYP_TO_CLASS: Record<string, MeceClassId> = {
   misidentificacion: "mundano",
   "fenomenos-naturales": "natural_desc",
   "programas-clasificados": "clasificada",
   "tecnologia-adversaria": "adversaria",
-  "entidades-no-humanas": "no_humano",
-  interdimensional: "no_humano",
-  "ontologico-no-materialista": "no_humano",
-  "tratado-greys": "no_humano",
-  "ingenieria-inversa": "no_humano",
+  "ingenieria-inversa": "ing_inversa",
+  interdimensional: "interdimensional",
+  "ontologico-no-materialista": "ontologico",
+  "tratado-greys": "tratado",
+  // entidades-no-humanas (umbrella) se reparte entre las 3 subclases (abajo)
   // heterogeneidad: meta-claim, no aporta a una clase concreta
 };
 
 const STRENGTH_W: Record<string, number> = {
-  minimal: 0.005,
-  modest: 0.02,
-  substantial: 0.05,
-  "category-breaking": 0.15,
+  minimal: 0.005, modest: 0.02, substantial: 0.05, "category-breaking": 0.15,
 };
 
 /**
- * Posterior PROVISIONAL para un caso sin `posterior` explícito. Heurística
- * transparente (a reemplazar en la migración por valores afinados a mano):
- *   - `anomalous` = probability/100, acotado — masa de "explicación real".
- *   - el resto (1−anomalous) va a mundano (mayoría) + indet.
- *   - la masa `anomalous` se reparte entre {clasificada, adversaria,
- *     no_humano, natural_desc} según las contribuciones `supports` legacy;
- *     si no hay ninguna, va a `indet` (no sabemos a qué clase asignarla).
+ * Posterior PROVISIONAL para un caso sin `posterior`. Heurística transparente
+ * (a reemplazar a mano en la migración):
+ *   - anomalous = probability/100 acotado → masa de "explicación real".
+ *   - el resto va a mundano (mayoría) + indet.
+ *   - anomalous se reparte entre las clases reales según las contribuciones
+ *     `supports` legacy; entidades-no-humanas (umbrella) se divide en sus 3
+ *     subclases; sin contribuciones → indet.
  */
 export function seedPosterior(c: UAPCase): Posterior {
   const anomalous = Math.max(0.05, Math.min(0.95, (c.probability ?? 50) / 100));
@@ -98,25 +127,30 @@ export function seedPosterior(c: UAPCase): Posterior {
 
   const w: Partial<Record<MeceClassId, number>> = {};
   let totalW = 0;
-  for (const e of c.evidenceContribution ?? []) {
-    if (e.direction !== "supports") continue;
-    const cls = HYP_TO_CLASS[e.hypothesisId];
-    if (!cls || cls === "mundano") continue; // mundano ya cubierto por masa mundana
-    const ww = STRENGTH_W[e.strength] ?? 0.005;
+  const addW = (cls: MeceClassId, ww: number) => {
     w[cls] = (w[cls] ?? 0) + ww;
     totalW += ww;
+  };
+  for (const e of c.evidenceContribution ?? []) {
+    if (e.direction !== "supports") continue;
+    const ww = STRENGTH_W[e.strength] ?? 0.005;
+    if (e.hypothesisId === "entidades-no-humanas") {
+      for (const sub of ENTIDADES_SUBCLASSES) addW(sub, ww / ENTIDADES_SUBCLASSES.length);
+      continue;
+    }
+    const cls = HYP_TO_CLASS[e.hypothesisId];
+    if (!cls || cls === "mundano") continue; // mundano ya cubierto
+    addW(cls, ww);
   }
 
   if (totalW > 0) {
     for (const cls of CLASS_IDS) if (w[cls]) p[cls] += anomalous * (w[cls]! / totalW);
   } else {
-    // anomalía sin clase asignable → indeterminable
     p.indet += anomalous;
   }
   return normalize(p);
 }
 
-/** Posterior efectivo: el declarado, o el sembrado provisional. */
 export function posteriorFor(c: UAPCase): Posterior {
   return c.posterior ? normalize(c.posterior) : seedPosterior(c);
 }
@@ -130,7 +164,7 @@ export function modal(p: Posterior): { id: MeceClassId; prob: number } {
   return { id: best, prob: bestP };
 }
 
-/** E_j = Σ_i P(clase_j | caso_i). Suma = nº de ítems. Comparable y lineal. */
+/** E_j = Σ_i P(clase_j|caso_i). Suma = nº de ítems. */
 export function expectedCounts(items: Array<{ posterior: Posterior }>): Posterior {
   const out = emptyPosterior();
   for (const it of items) for (const k of CLASS_IDS) out[k] += it.posterior[k];
@@ -146,13 +180,13 @@ export function roundedShares(items: Array<{ posterior: Posterior }>): Posterior
     return { id, floor: Math.floor(v), rem: v - Math.floor(v) };
   });
   let left = 100 - rows.reduce((s, r) => s + r.floor, 0);
+  const out = emptyPosterior();
   const bump = new Set<MeceClassId>();
   for (const r of [...rows].sort((a, b) => b.rem - a.rem)) {
     if (left <= 0) break;
     bump.add(r.id);
     left--;
   }
-  const out = emptyPosterior();
   for (const r of rows) out[r.id] = r.floor + (bump.has(r.id) ? 1 : 0);
   return out;
 }
@@ -161,14 +195,12 @@ export interface ScoredCase {
   id: string;
   name: string;
   tier: string;
+  category: string;
   posterior: Posterior;
   seeded: boolean;
 }
 
-/**
- * Posteriores de los casos del corpus a los que aplica el modelo
- * (excluye category === "document"). Default: corpus completo.
- */
+/** Casos del corpus a los que aplica el modelo (excluye documentos). */
 export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): ScoredCase[] {
   return cases
     .filter((c) => c.category !== "document")
@@ -176,6 +208,7 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
       id: c.id,
       name: c.name,
       tier: c.tier,
+      category: c.category,
       posterior: posteriorFor(c),
       seeded: !c.posterior,
     }));
