@@ -51,14 +51,5 @@
       "name": "Flying Saucer Working Party — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/Flying_Saucer_Working_Party"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El primer estudio oficial occidental concluyó que todos los avistamientos examinados eran identificación errónea, ilusión o engaño. Es respaldo institucional temprano a la hipótesis escéptica — pero con muestra pequeña y un patrón de conclusión-por-mandato (cerró el tema sin investigación profunda). Minimal por eso. La hipótesis de misidentificación ya está en su techo (override), así que el aporte es documental más que de calibración.",
-      "rationaleEn": "The first official Western study concluded all examined sightings were misidentification, illusion or hoax. It is early institutional backing for the skeptical hypothesis — but with a small sample and a conclusion-by-mandate pattern (it closed the matter without deep investigation). Minimal for that reason. The misidentification hypothesis is already at its ceiling (override), so the contribution is documentary rather than calibration."
-    }
   ]
 }

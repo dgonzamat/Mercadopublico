@@ -50,15 +50,6 @@
       "note": "Sintetizado en NICAP archive"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El comunicado afirmativo de TASS es un dato institucional histórico único, pero la evidencia subyacente es testimonial (principalmente niños) sin instrumentación ni traza física analizada con cadena de custodia. El peso del caso está en la conducta institucional soviética, no en la fuerza probatoria del evento.",
-      "rationaleEn": "The affirmative TASS communiqué is a unique historical institutional datum, but the underlying evidence is testimonial (mostly children) without instrumentation or physically analyzed traces with chain of custody. The case's weight lies in Soviet institutional behavior, not in the event's probative force."
-    }
-  ],
   "posterior": {
     "mundano": 0.55,
     "natural_desc": 0.04,

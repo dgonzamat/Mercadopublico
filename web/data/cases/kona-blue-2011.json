@@ -55,14 +55,5 @@
       "name": "NewsNation — 'What was the Kona Blue program, and does it mean UFOs exist?'",
       "url": "https://www.newsnationnow.com/space/ufo/what-kona-blue-do-ufos-exist/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "ingenieria-inversa",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Documento oficial desclasificado: el gobierno de EE.UU. propuso formalmente un Programa de Acceso Especial cuyo mandato explícito incluía custodiar y analizar materiales recuperados de naves de origen desconocido. Es intención institucional puesta en papel, no confirmación de hardware — la propia AARO subraya que el programa nunca se financió ni recibió material. Modest porque la solidez es documental (existe el programa propuesto) pero no prueba que existiera el material a custodiar.",
-      "rationaleEn": "Declassified official document: the U.S. government formally proposed a Special Access Program whose explicit mandate included holding and analyzing materials recovered from craft of unknown origin. It is institutional intent on paper, not hardware confirmation — AARO itself stresses the program was never funded nor received material. Modest because the solidity is documentary (the proposed program exists) but it does not prove the material to be held existed."
-    }
   ]
 }

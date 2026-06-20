@@ -104,21 +104,5 @@
       "url": "https://www.morningstar.com/news/pr-newswire/20260528ny70439/push-for-uap-ufo-transparency-intensifies-as-members-of-congress-and-whistleblowers-call-for-release-of-groundbreaking-conclusive-files",
       "note": "Documenta la presión continuada para release específico post-PURSUE."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La activación de PURSUE confirma institucionalmente la existencia de archivos UAP federales no publicados — el sistema no existiría si el contenido a desclasificar no existiera. Su valor probatorio es procedural, no material: documenta que el Estado reconoce poseer registros UAP, no qué dicen esos registros. Modest porque la confirmación de existencia es real pero el contenido específico publicado en la tanda inicial no aporta evidencia primaria nueva sobre las hipótesis primitivas.",
-      "rationaleEn": "The activation of PURSUE institutionally confirms the existence of unpublished federal UAP archives — the system would not exist if the content to be declassified did not exist. Its evidential value is procedural, not material: it documents that the state acknowledges possessing UAP records, not what those records say. Modest because the confirmation of existence is real but the specific content published in the initial batch contributes no novel primary evidence about the primitive hypotheses."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Que el Estado dedique infraestructura ejecutiva continua a release de registros UAP es leve tensión contra la lectura escéptica fuerte 'todo es misidentificación rural / sensor artifact'. Si el universo de reportes fuera puramente ruido, la inversión institucional sostenida sería incoherente. Minimal porque PURSUE también es compatible con misidentificación (release administra el ruido), no la refuta.",
-      "rationaleEn": "That the state dedicates continuous executive infrastructure to UAP-record release is a slight tension against the strong skeptical reading 'it's all rural misidentification / sensor artifact'. If the report universe were pure noise, sustained institutional investment would be incoherent. Minimal because PURSUE is also compatible with misidentification (the release administers the noise), it does not refute it."
-    }
   ]
 }

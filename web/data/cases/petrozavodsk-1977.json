@@ -63,21 +63,5 @@
       "name": "Wikipedia: Petrozavodsk phenomenon",
       "url": "https://en.wikipedia.org/wiki/Petrozavodsk_phenomenon"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La 'medusa' coincide en hora y geometría con el lanzamiento del Kosmos-955 desde el cosmódromo de Plesetsk — instalación entonces secreta a ~300 km. La pluma de un cohete en condiciones crepusculares produce exactamente la morfología radiante reportada.",
-      "rationaleEn": "The 'jellyfish' matches in time and geometry the launch of Kosmos-955 from the Plesetsk cosmodrome — a then-secret installation ~300 km away. A rocket plume in twilight conditions produces exactly the reported radiant morphology."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Doble vía: la causa probable era un programa clasificado soviético (Plesetsk no existía oficialmente), y el evento gatilló Project Setka — 13 años de investigación estatal de UAP en simetría casi exacta con Blue Book. El patrón 'programa secreto genera ola UAP + el Estado se investiga a sí mismo en secreto' queda documentado fuera de Occidente.",
-      "rationaleEn": "Twofold: the probable cause was a classified Soviet program (Plesetsk did not officially exist), and the event triggered Project Setka — 13 years of state UAP investigation in near-exact symmetry with Blue Book. The pattern 'secret program generates UAP wave + the state secretly investigates itself' is documented outside the West."
-    }
   ]
 }

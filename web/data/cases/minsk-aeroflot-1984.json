@@ -52,15 +52,6 @@
       "url": "https://en.wikipedia.org/wiki/Minsk_UFO_sighting"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Caso de máxima calidad de registro (pilotos múltiples + radar + prensa + investigación) cuya explicación más sólida resultó ser un lanzamiento de cohete desde Plesetsk. Respalda la lectura escéptica como recordatorio de que pilotos + radar no garantizan anomalía si no se descartan estímulos como lanzamientos espaciales. Minimal y override: aporte de calibración/registro, no de probabilidad efectiva.",
-      "rationaleEn": "A case of maximal record quality (multiple pilots + radar + press + investigation) whose strongest explanation turned out to be a rocket launch from Plesetsk. It backs the skeptical reading as a reminder that pilots + radar do not guarantee anomaly unless stimuli like space launches are ruled out. Minimal and override: a calibration/record contribution, not effective probability."
-    }
-  ],
   "posterior": {
     "mundano": 0.40,
     "natural_desc": 0.30,

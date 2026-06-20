@@ -55,14 +55,5 @@
       "name": "NewsNation — \"'Immaculate Constellation' UAP program named in report: Journalist\"",
       "url": "https://www.newsnationnow.com/space/ufo/report-immaculate-constellation-uap-journalist/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Documento de 12 páginas en el registro congresional + referencia FOIA del DNI + no-negación oficial del DoD describen un presunto Programa de Acceso Especial no reconocido para archivar imágenes/sensores de UAP. Es rastro documental real, pero la existencia del programa permanece sin verificar y el DoD la niega — por eso minimal: pesa como dato del patrón institucional (no-negación, gestión fuera de oversight), no como confirmación del programa. No es evidencia primaria del fenómeno, sino de cómo se administraría su información.",
-      "rationaleEn": "A 12-page document in the congressional record + DNI FOIA reference + official DoD non-denial describe an alleged unacknowledged Special Access Program to archive UAP imagery/sensors. It is real documentary trace, but the program's existence remains unverified and the DoD denies it — hence minimal: it weighs as a datum of the institutional pattern (non-denial, management outside oversight), not as confirmation of the program. It is not primary evidence of the phenomenon, but of how its information would be administered."
-    }
   ]
 }

@@ -75,35 +75,5 @@
     "ontologico": 0.04,
     "tratado": 0.01,
     "indet": 0.25
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Reporte After Action firmado por la Reserva del Ejército de EE.UU. + cuatro testigos militares calificados + lecturas altímétrico documentadas constituyen registro institucional formal.",
-      "rationaleEn": "Signed After Action Report from the U.S. Army Reserve + four qualified military witnesses + documented altimeter readings constitute formal institutional record."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Acoplamiento aparente (helicóptero ascendido contra los controles del piloto en 1,800 pies) sugiere interacción física, aunque la evidencia es de un solo equipo en una sola noche.",
-      "rationaleEn": "Apparent coupling (helicopter pulled up against the pilot's controls by 1,800 feet) suggests physical interaction, although the evidence is from a single crew on a single night."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Ascenso forzado documentado por altímetro + acoplamiento EM + observación visual coordinada de los cuatro tripulantes son incompatibles con un meteoro o fenómeno atmosférico.",
-      "rationaleEn": "Forced ascent documented by altimeter + EM coupling + coordinated visual observation by all four crew are incompatible with a meteor or atmospheric phenomenon."
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Patrón 8k — acoplamiento EM con sistemas del helicóptero más ascenso forzado por mecanismo no identificado",
-      "rationaleEn": "Pattern 8k — EM coupling with helicopter systems plus forced ascent via unidentified mechanism"
-    }
-  ]
+  }
 }

@@ -58,21 +58,5 @@
       "name": "Wikipedia — 'Pentagon UFO videos' (confirmación de autenticidad, abril 2021)",
       "url": "https://en.wikipedia.org/wiki/Pentagon_UFO_videos"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Un enjambre de esferas que rodea buques de la Marina en un área de advertencia restringida es consistente con una operación de sistemas no tripulados (drones), posiblemente de vigilancia adversaria —la hipótesis convencional más fuerte para los eventos de San Diego de julio de 2019—.",
-      "rationaleEn": "A swarm of spheres surrounding Navy ships in a restricted warning area is consistent with an unmanned-systems (drone) operation, possibly adversary surveillance —the strongest conventional hypothesis for the July 2019 San Diego events."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El descenso de la esfera al agua sin estela ni restos visibles ('transmedium') no encaja limpio con un dron convencional. Minimal porque descansa en un único clip FLIR cuya interpretación está en disputa y la autenticidad confirmada no equivale a confirmación de naturaleza.",
-      "rationaleEn": "The sphere's descent into the water with no wake or visible debris ('transmedium') does not fit cleanly with a conventional drone. Minimal because it rests on a single FLIR clip whose interpretation is disputed, and confirmed authenticity is not confirmation of nature."
-    }
   ]
 }

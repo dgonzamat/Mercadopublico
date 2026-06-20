@@ -63,21 +63,5 @@
     "ontologico": 0.12,
     "tratado": 0.04,
     "indet": 0.14
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Los rasgos centrales del relato —despertar paralizado, presencias en el dormitorio, comunicación telepática— encajan con la hipnagogia y la parálisis del sueño, fenómenos neurológicos comunes y bien caracterizados. En ausencia de cualquier traza física, la explicación prosaica es la más económica.",
-      "rationaleEn": "The account's central features —waking paralyzed, presences in the bedroom, telepathic communication— fit hypnagogia and sleep paralysis, common and well-characterized neurological phenomena. In the absence of any physical trace, the prosaic explanation is the most economical."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Es un testimonio de experiencer sincero, detallado y consecuente durante décadas, investigado por un periodista. Minimal porque es puramente subjetivo: sin sensor, sin traza física y sin testigos externos del evento, no puede pesar como evidencia positiva de una agencia no humana.",
-      "rationaleEn": "It is a sincere experiencer testimony, detailed and consistent over decades, investigated by a journalist. Minimal because it is purely subjective: with no sensor, no physical trace and no external witnesses to the event, it cannot weigh as positive evidence of a non-human agency."
-    }
-  ]
+  }
 }

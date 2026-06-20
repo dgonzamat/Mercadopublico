@@ -84,28 +84,5 @@
       "url": "https://www.nytimes.com/",
       "note": "Cobertura periodística sostenida del incidente."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "tecnologia-adversaria",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Sobrevuelos coordinados sobre múltiples targets de seguridad nacional (arsenal del Army, terminal de munición naval, reactores nucleares, residencia de gobernador) durante semanas, con coordinación federal conjunta FBI+DHS+FAA+AARO, sin atribución oficial de origen. La firma operacional (formación + targeting de infraestructura crítica + duración) es congruente con vigilancia aérea estructurada de otro Estado. Modest porque la explicación oficial específicamente niega esa lectura y la cierre institucional no fue concluyente.",
-      "rationaleEn": "Coordinated overflights of multiple national-security targets (Army arsenal, naval munitions terminal, nuclear reactors, governor's residence) over weeks, with joint federal FBI+DHS+FAA+AARO coordination, with no official attribution of origin. The operational signature (formation + critical-infrastructure targeting + duration) is congruent with another state's structured aerial surveillance. Modest because the official explanation specifically denies that reading and institutional closure was not conclusive."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La hipótesis alternativa: drones US no reconocidos en testing —tanto el Picatinny Arsenal como NWS Earle son sitios de I+D y operaciones de armas— donde sobrevuelos de drones experimentales US no acreditados explicarían la falta de identificación oficial. Minimal porque sobrevolar residencia de gobernador y reactores nucleares no encaja con el patrón típico de testing US.",
-      "rationaleEn": "The alternative hypothesis: unacknowledged U.S. drones in testing —both Picatinny Arsenal and NWS Earle are R&D and weapons-operations sites— where overflights of unaccredited experimental U.S. drones would explain the lack of official identification. Minimal because overflying a governor's residence and nuclear reactors does not fit the typical U.S. testing pattern."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La explicación oficial sostiene que la mayoría de los avistamientos fueron aeronaves comerciales, drones autorizados, helicópteros y misidentificaciones. Esa explicación captura ciertamente parte del volumen total de reportes. Minimal porque no cubre los sobrevuelos sobre instalaciones críticas, que son los datos analíticamente relevantes.",
-      "rationaleEn": "The official explanation holds that most sightings were commercial aircraft, authorized drones, helicopters and misidentifications. That explanation certainly captures part of the total reporting volume. Minimal because it does not cover overflights of critical installations, which are the analytically relevant data points."
-    }
   ]
 }

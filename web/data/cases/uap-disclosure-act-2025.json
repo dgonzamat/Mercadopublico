@@ -79,28 +79,5 @@
       "url": "https://www.archives.gov/research/jfk/legislative-history",
       "note": "Modelo legal sobre el que se construye el UAP Disclosure Act."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Que el líder de la mayoría del Senado más cinco senadores bipartidista inviertan tres ciclos legislativos consecutivos (2023, 2024, 2025) en construir un marco de Records Review Board específicamente para records UAP, modelado sobre el JFK Records Act que sí forzó release histórica, es afirmación operativa institucional fuerte de que existen records que el aparato federal está reteniendo. Modest porque el lenguaje del Act asume la existencia del archivo pero no presenta su contenido — la presión legislativa documentada es el hallazgo, no la prueba del programa mismo.",
-      "rationaleEn": "That the Senate Majority Leader plus five bipartisan senators invest three consecutive legislative cycles (2023, 2024, 2025) in building a Records Review Board framework specifically for UAP records, modeled on the JFK Records Act that did force historical release, is strong institutional operative assertion that records exist the federal apparatus is withholding. Modest because the Act's language assumes the archive's existence but does not present its contents — the documented legislative pressure is the finding, not proof of the program itself."
-    },
-    {
-      "hypothesisId": "ingenieria-inversa",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La provisión de eminent domain sobre material UAP recuperado en manos privadas incluida en la versión 2023 del Act es la afirmación operativa congresional más explícita sobre la hipótesis de ingeniería inversa por contratista: el lenguaje legal solo tiene sentido si los redactores asumen que tal material existe bajo custodia corporativa. Que la provisión haya sido removida en conferencia ('gutted') no la invalida como evidencia — al contrario, la fricción legislativa documentada es señal de oposición institucional activa. Modest porque es lenguaje legal asumido, no documento del programa.",
-      "rationaleEn": "The eminent-domain provision over recovered UAP material in private hands included in the 2023 version of the Act is Congress's most explicit operative assertion on the contractor reverse-engineering hypothesis: the legal language only makes sense if drafters assume such material exists under corporate custody. That the provision was removed in conference ('gutted') does not invalidate it as evidence — on the contrary, the documented legislative friction is a signal of active institutional opposition. Modest because it is assumed legal language, not a document of the program."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Seis senadores en ejercicio que sostienen un esfuerzo legislativo de tres años contra fricción de conferencia documentada tensionan la lectura escéptica fuerte de que 'todo es ruido cultural sin contenido institucional sustantivo'. Minimal porque la presión legislativa sostenida también es compatible con la lectura escéptica (los senadores responden a presión de constituyentes y prensa, no necesariamente a evidencia clasificada propia) — pero no es nula.",
-      "rationaleEn": "Six sitting senators sustaining a three-year legislative effort against documented conference friction tension the strong skeptical reading that 'it's all cultural noise without substantive institutional content'. Minimal because sustained legislative pressure is also compatible with the skeptical reading (senators respond to constituent and press pressure, not necessarily to their own classified evidence) — but it is not null."
-    }
   ]
 }

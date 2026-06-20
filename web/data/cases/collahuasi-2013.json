@@ -49,22 +49,6 @@
     "Estimated ~1 hour of presence over the sector before departing",
     "Limitations acknowledged by CEFAA: uncooperative witnesses and a single-analyst conclusion"
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Un comité aeronáutico oficial sometió las imágenes a análisis óptico/térmico y un analista concluyó que el objeto emitía energía propia incompatible con el reflejo solar. El respaldo institucional y la persistencia de ~1 hora sostienen un shift mínimo. Pero la conclusión fue de un solo analista, los testigos no cooperaron, y el cuadro —objeto discoidal flotando en día despejado— es muy susceptible a explicación prosaica. Minimal y deliberadamente bajo.",
-      "rationaleEn": "An official aeronautical committee subjected the images to optical/thermal analysis and one analyst concluded the object emitted its own energy incompatible with solar reflection. Institutional backing and the ~1 hour of persistence sustain a minimal shift. But the conclusion came from a single analyst, the witnesses did not cooperate, and the picture —a discoidal object hovering on a clear day— is highly susceptible to a prosaic explanation. Minimal and deliberately low."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Provenance débil: fotos de cámaras personales sin metadata reconstruible, testigos que rehusaron cooperar, y un objeto que se comporta como algo flotante a la deriva durante una hora. Sin geometría ni hora verificadas, candidatos prosaicos (globo de gran altitud, dron, fenómeno óptico) no pueden descartarse. El propio director de la CEFAA pidió cautela sobre el dictamen.",
-      "rationaleEn": "Weak provenance: photos from personal cameras with no reconstructable metadata, witnesses who refused to cooperate, and an object behaving like something drifting in place for an hour. Without verified geometry or time, prosaic candidates (high-altitude balloon, drone, optical phenomenon) cannot be ruled out. CEFAA's own director urged caution about the verdict."
-    }
-  ],
   "sources": [
     {
       "name": "CEFAA / DGAC Chile — Estudio fotográfico oficial caso Collahuasi (2014)",

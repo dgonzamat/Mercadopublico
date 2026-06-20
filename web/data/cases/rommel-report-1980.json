@@ -52,28 +52,5 @@
       "note": "Archivo desclasificado del FBI con correspondencia y materiales relacionados al caso.",
       "note_en": "Declassified FBI archive with correspondence and case-related materials."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Es el documento institucional más sólido del corpus a favor de explicación natural para una clase completa de fenómeno: investigación federal con autoridad judicial, financiamiento DOJ, 297 páginas, 15 necropsias veterinarias formales y un director sin sesgo previo. La conclusión —muerte natural + depredación + lividez/desecación post mortem— es el consenso forense internacional para 'mutilaciones de ganado'.",
-      "rationaleEn": "It is the corpus's strongest institutional document for natural explanation of an entire phenomenon class: federal investigation with judicial authority, DOJ funding, 297 pages, 15 formal veterinary necropsies and an unbiased director. The conclusion —natural death + predation + post-mortem lividity/desiccation— is the international forensic consensus on 'cattle mutilations'."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "substantial",
-      "rationale": "Refuta directamente la lectura anómala de las mutilaciones de ganado para los 15 casos NM investigados: cero rastros de instrumentos quirúrgicos, cero testigos de operaciones, ninguna firma física compatible con intervención anómala. Como las mutilaciones son uno de los pilares folclóricos de la hipótesis de entidades no humanas operando en zonas rurales, su refutación institucional pesa.",
-      "rationaleEn": "It directly refutes the anomalous reading of cattle mutilations for the 15 NM cases investigated: zero surgical instrument traces, zero operation witnesses, no physical signature compatible with anomalous intervention. Since mutilations are one of the folkloric pillars of the non-human-entity hypothesis operating in rural areas, this institutional refutation carries weight."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Rommel descartó explícitamente la hipótesis de helicópteros militares encubiertos y operativos federales clandestinos: ningún testigo directo, ningún registro de operaciones, ninguna traza física compatible con experimentos gubernamentales con ganado en NM durante la ventana investigada.",
-      "rationaleEn": "Rommel explicitly ruled out the covert military helicopter and clandestine federal operative hypothesis: no direct witnesses, no operational records, no physical trace compatible with government experiments on cattle in NM during the investigated window."
-    }
   ]
 }

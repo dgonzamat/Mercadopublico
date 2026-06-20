@@ -62,21 +62,5 @@
     "ontologico": 0.03,
     "tratado": 0.02,
     "indet": 0.30
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Material recuperado in situ analizado por aparato académico soviético con publicación abierta — modalidad de evidencia física directa con cadena de custodia",
-      "rationaleEn": "Material recovered in situ analyzed by Soviet academic apparatus with open publication — direct physical evidence modality with chain of custody"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Aleaciones reportadas con estructuras metalográficas no replicables por proceso natural conocido",
-      "rationaleEn": "Reported alloys with metallographic structures not replicable by any known natural process"
-    }
-  ]
+  }
 }

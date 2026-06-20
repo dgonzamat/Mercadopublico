@@ -59,14 +59,5 @@
     "ontologico": 0.01,
     "tratado": 0.01,
     "indet": 0.10
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La investigación del SENASA atribuyó el patrón a una secuencia natural —muerte por diversas causas seguida de carroñeo por fauna—, que coincide con el consenso forense internacional sobre las 'mutilaciones de ganado'. Los cortes 'quirúrgicos' y la falta de sangre se explican por consumo de tejidos blandos + lividez y desecación post mortem.",
-      "rationaleEn": "The SENASA investigation attributed the pattern to a natural sequence —death from various causes followed by scavenging by wildlife—, matching the international forensic consensus on 'cattle mutilations'. The 'surgical' cuts and absence of blood are explained by soft-tissue consumption + post-mortem lividity and desiccation."
-    }
-  ]
+  }
 }

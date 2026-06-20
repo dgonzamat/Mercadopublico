@@ -49,29 +49,6 @@
       "url": "http://ufologie.patrickgross.org/htm/westfreugh57.htm"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La admisión parlamentaria de inexplicabilidad junto a la orden documentada de silencio del Air Ministry es el patrón institucional de gestión de información en su forma más limpia: el Estado reconoce el dato y simultáneamente cierra su discusión.",
-      "rationaleEn": "The parliamentary admission of inexplicability together with the Air Ministry's documented silence order is the institutional information-management pattern in its cleanest form: the state acknowledges the datum and simultaneously closes its discussion."
-    },
-    {
-      "hypothesisId": "tecnologia-adversaria",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "1957: globos de reconocimiento soviéticos sobre el Reino Unido eran una clase real de incursión — candidato genuino para un objeto estático a 50-70 mil pies que luego deriva a 240 mph con el viento de altura.",
-      "rationaleEn": "1957: Soviet reconnaissance balloons over the UK were a real class of incursion — a genuine candidate for an object static at 50-70 thousand feet that then drifts at 240 mph with high-altitude wind."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El track de radar militar con ascenso de 50.000 a 70.000 pies excedía el envelope de cualquier aeronave de 1957 conocida; queda como dato instrumental sin resolver.",
-      "rationaleEn": "The military radar track with a climb from 50,000 to 70,000 feet exceeded the envelope of any known 1957 aircraft; it remains an unresolved instrumental datum."
-    }
-  ],
   "posterior": {
     "mundano": 0.10,
     "natural_desc": 0.06,

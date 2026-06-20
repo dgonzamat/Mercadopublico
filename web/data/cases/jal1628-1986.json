@@ -76,28 +76,5 @@
     "ontologico": 0.04,
     "tratado": 0.02,
     "indet": 0.24
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Datos radar FAA + sesión informativa de la Fuerza Aérea + denuncia interna del Inspector Callahan documentan procesamiento institucional. Compatible con prueba clasificada, aunque el tamaño reportado del objeto madre excede plataformas civiles o militares conocidas en Alaska en 1986.",
-      "rationaleEn": "FAA radar data + Air Force briefing + internal whistleblower complaint from Inspector Callahan document institutional processing. Compatible with classified test, although the reported size of the mother object exceeds known civilian or military platforms in Alaska in 1986."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Tamaño-portaaviones reportado + sub-objetos desprendiéndose + acoplamiento EM con sistemas del Boeing 747 son consistentes con la categoría umbrella H5.",
-      "rationaleEn": "Aircraft-carrier-sized reported + sub-objects detaching + EM coupling with the Boeing 747 systems are consistent with the H5 umbrella category."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "La observación visual prolongada (~50 min) por una tripulación experimentada que maniobró para verificar pesa contra explicaciones atmosféricas simples (plasma, mirage, aurora). El factor de descuento honesto es que la FAA atribuyó los retornos de radar a ecos partidos o clutter, no a un objeto sólido, y la hipótesis astronómica de Klass (Júpiter/Marte) cubre parte del fenómeno — por eso 'weakens' se mantiene en modest, no más alto.",
-      "rationaleEn": "The prolonged visual observation (~50 min) by an experienced crew that maneuvered to verify weighs against simple atmospheric explanations (plasma, mirage, aurora). The honest discount factor is that the FAA attributed the radar returns to split echoes or clutter, not a solid object, and Klass's astronomical hypothesis (Jupiter/Mars) covers part of the phenomenon — hence 'weakens' stays at modest, not higher."
-    }
-  ]
+  }
 }

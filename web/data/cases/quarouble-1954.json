@@ -58,14 +58,5 @@
       "url": "https://en.wikipedia.org/wiki/Marius_Dewilde",
       "note": "Síntesis de la investigación oficial y las trazas."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "La Gendarmerie documentó marcas físicas en la vía consistentes con un gran peso, lo que excede una simple ilusión. Pero el núcleo del caso (objeto + entidades + parálisis) es de un solo testigo y pertenece al registro folklórico de 1954. Minimal: la traza ancla algo, el relato no se puede corroborar. Override: aporte de registro, no de calibración.",
-      "rationaleEn": "The Gendarmerie documented physical marks on the track consistent with great weight, which exceeds a simple illusion. But the core of the case (object + entities + paralysis) is single-witness and belongs to the 1954 folkloric record. Minimal: the trace anchors something, the account cannot be corroborated. Override: a record, not a calibration, contribution."
-    }
   ]
 }

@@ -71,21 +71,5 @@
     {
       "name": "AFU — Arkivet för UFO-forskning"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El Försvarsstaben investigó sistemáticamente la hipótesis de ensayos soviéticos de V-2 capturados — proceso típico de descartar tecnología clasificada extranjera",
-      "rationaleEn": "Försvarsstaben systematically investigated the hypothesis of Soviet V-2 captured tests — typical process of ruling out foreign classified technology"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Comunicado oficial sueco explícitamente descarta 'fenómenos naturales, aeronaves suecas o imaginación' para 225 casos residuales tras revisión científica de FOA",
-      "rationaleEn": "Official Swedish communiqué explicitly rules out 'natural phenomena, Swedish aircraft or imagination' for 225 residual cases after FOA scientific review"
-    }
   ]
 }

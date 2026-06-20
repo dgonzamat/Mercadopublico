@@ -63,22 +63,6 @@
       "note": "Imágenes y cronología del caso."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El análisis de Hartmann para el propio Condon Report halló las fotos consistentes con un objeto metálico real y de gran tamaño volando a distancia — un respaldo técnico inusual viniendo de un estudio orientado a cerrar el tema. Minimal porque ese mismo análisis no es concluyente y compite con una hipótesis de modelo colgado que sigue viva.",
-      "rationaleEn": "Hartmann's analysis for the Condon Report itself found the photos consistent with a real, large metallic object flying at a distance — an unusual technical endorsement from a study oriented to close the subject. Minimal because that same analysis is inconclusive and competes with a hung-model hypothesis that remains alive."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La hipótesis escéptica más fuerte —un modelo pequeño colgado de un cable bajo los aleros— es un candidato prosaico serio y persistente, defendido con análisis fotogramétrico. Minimal porque tampoco se ha demostrado de forma concluyente y debe convivir con la evaluación positiva de Hartmann.",
-      "rationaleEn": "The strongest skeptical hypothesis —a small model hung from a wire under the eaves— is a serious, persistent prosaic candidate, defended with photogrammetric analysis. Minimal because it too has not been conclusively demonstrated and must coexist with Hartmann's positive assessment."
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/UFO_picture_taken_by_Paul_Trent_in_McMinnville,_Oregon.jpg?width=800",
     "alt": "Fotografía del disco volador tomada por Paul Trent en McMinnville, Oregon, 1950.",

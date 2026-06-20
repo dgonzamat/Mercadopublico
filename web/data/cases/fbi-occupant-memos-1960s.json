@@ -46,15 +46,6 @@
       "url": "https://www.war.gov/ufo/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Los reportes de ocupantes mantienen viva la hipótesis de entidades no humanas como categoría, pero su naturaleza testimonial y sin corroboración les da peso mínimo; el caso explícitamente no los trata como evidencia, solo como material archivado.",
-      "rationaleEn": "Occupant reports keep the non-human-entities hypothesis alive as a category, but their testimonial, uncorroborated nature gives them minimal weight; the case explicitly does not treat them as evidence, only as filed material."
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/FBI_UFO_file_part_1.pdf?page=1&width=600",
     "alt": "Primera página del expediente UFO del FBI (The Vault), colección desclasificada.",

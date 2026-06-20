@@ -58,14 +58,5 @@
       "url": "https://en.wikipedia.org/wiki/Deception_Island#UFO_sighting",
       "note": "Síntesis del registro tri-nacional y del comunicado argentino."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Corroboración independiente por tres Estados con bases separadas, en un entorno antártico controlado y sin ruido civil, más fotografía, perturbación instrumental y un comunicado oficial argentino. La convergencia multi-nacional sin coordinación previa es difícil de reducir a identificación errónea local. Modest, no más, porque la instrumentación es de baja resolución (teodolito/foto de 1965) y un estímulo astronómico/atmosférico inusual no es del todo descartable. La hipótesis está en su techo (override): aporte sólido de registro.",
-      "rationaleEn": "Independent corroboration by three states with separate bases, in a controlled Antarctic environment without civilian noise, plus a photograph, instrumental disturbance and an official Argentine communiqué. The multi-national convergence without prior coordination is hard to reduce to local misidentification. Modest, no more, because the instrumentation is low-resolution (1965 theodolite/photo) and an unusual astronomical/atmospheric stimulus is not entirely dismissible. The hypothesis is at its ceiling (override): a solid record contribution."
-    }
   ]
 }

@@ -70,21 +70,5 @@
       "url": "https://www.ufocasebook.com/2012/videopretoriasouthafrica.html",
       "note": "Recopilación del caso y el material de video."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Un objeto que ondula, supera a un helicóptero a 270 km/h y asciende verticalmente al final de la persecución no encaja bien con un fenómeno natural pasivo (plasma, reflejo, inversión). La observación coordinada por tierra y aire sobre kilómetros refuerza que algo se desplazaba realmente. Modest, no substantial, porque el comportamiento depende del relato del piloto y el radar solo dio 'clutter', sin un track instrumentado que fije velocidad y altitud.",
-      "rationaleEn": "An object that undulates, outpaces a helicopter at 270 km/h and ascends vertically at the end of the chase does not fit a passive natural phenomenon well (plasma, reflection, inversion). The coordinated ground-and-air observation over kilometers reinforces that something was really moving. Modest, not substantial, because the behavior rests on the pilot's account and the radar only gave 'clutter', with no instrumented track fixing speed and altitude."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La persecución multi-testigo de un objeto que evade activamente sugiere un objeto real bajo control, no un artefacto. Minimal porque la evidencia dura es frágil: video nocturno de 1996, radar 'clutter' en vez de track, y descripciones exóticas (triángulo rojo, tentáculos verdes) que admiten un compuesto prosaico (astro brillante + artefactos de lente). Sugerente, no diagnóstico.",
-      "rationaleEn": "The multi-witness pursuit of an actively evading object suggests a real object under control, not an artifact. Minimal because the hard evidence is fragile: a 1996 nighttime video, radar 'clutter' rather than a track, and exotic descriptions (red triangle, green tentacles) that admit a prosaic composite (bright body + lens artifacts). Suggestive, not diagnostic."
-    }
   ]
 }

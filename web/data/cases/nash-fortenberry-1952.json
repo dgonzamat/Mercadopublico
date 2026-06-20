@@ -58,14 +58,5 @@
     "ontologico": 0.03,
     "tratado": 0.01,
     "indet": 0.37
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Dos pilotos comerciales experimentados reportaron de forma coincidente una formación con maniobra de inversión que Blue Book registró como 'no identificado'. La calidad y coincidencia de los testigos tensiona la lectura de identificación errónea trivial. Minimal: es visual, sin instrumento, y existe atribución (rechazada) a reflejos. Override: aporte de registro.",
-      "rationaleEn": "Two experienced commercial pilots reported, in agreement, a formation with a flip maneuver that Blue Book logged as 'unidentified'. The quality and agreement of the witnesses strain the trivial-misidentification reading. Minimal: it is visual, without an instrument, and a (rejected) attribution to reflections exists. Override: a record contribution."
-    }
-  ]
+  }
 }

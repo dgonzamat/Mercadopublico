@@ -48,15 +48,6 @@
       "note": "Síntesis del registro USAF y de las búsquedas."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Pérdida militar plenamente documentada con seguimiento de radar y fusión de ecos sin explicación consistente; las versiones oficiales se contradijeron y la RCAF negó el supuesto Lancaster. Tensiona la lectura de identificación errónea trivial. Minimal: lo indeterminado es la naturaleza del objetivo, y un accidente convencional sigue siendo posible. Override: aporte de registro.",
-      "rationaleEn": "A fully documented military loss with radar tracking and a merging of returns lacking a consistent explanation; the official versions contradicted each other and the RCAF denied the supposed Lancaster. It strains the trivial-misidentification reading. Minimal: what is undetermined is the target's nature, and a conventional accident remains possible. Override: a record contribution."
-    }
-  ],
   "posterior": {
     "mundano": 0.34,
     "natural_desc": 0.04,

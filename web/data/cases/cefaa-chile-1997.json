@@ -45,14 +45,5 @@
       "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC)",
       "url": "https://sefaa.dgac.gob.cl/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Como organismo oficial con panel multidisciplinario, el CEFAA identifica la mayoría de los reportes de FANI como objetos o efectos convencionales (tráfico aéreo, astronómicos, meteorológicos, ópticos). Es evidencia institucional de cuánto del fenómeno, examinado con método, resulta prosaico —aunque, a diferencia de organismos más desacreditadores, reconoce un residuo no identificado.",
-      "rationaleEn": "As an official body with a multidisciplinary panel, CEFAA identifies most FANI reports as conventional objects or effects (air traffic, astronomical, meteorological, optical). It is institutional evidence of how much of the phenomenon, examined methodically, turns out prosaic —though, unlike more debunking bodies, it acknowledges an unidentified residue."
-    }
   ]
 }

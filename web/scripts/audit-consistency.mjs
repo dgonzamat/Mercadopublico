@@ -52,44 +52,6 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 
-// ─── 1. CARGA SOURCE-OF-TRUTH ────────────────────────────────────────────
-
-const hypothesesPath = path.join(root, "lib", "hypotheses.ts");
-const hypothesesSrc = fs.readFileSync(hypothesesPath, "utf-8");
-
-/**
- * Parse priors from lib/hypotheses.ts via regex (TS parser would be overkill).
- * Matches `id: "x"` followed by `corpusPct: N` and optional `corpusPctOverride: N`.
- */
-function parseHypotheses(src) {
-  const out = [];
-  const re = /\{\s*id:\s*"([^"]+)",[\s\S]*?corpusPct:\s*(\d+)(?:[\s\S]*?corpusPctOverride:\s*(\d+))?[\s\S]*?\},/g;
-  let m;
-  while ((m = re.exec(src)) !== null) {
-    // claimType vive en el mismo bloque del objeto; lo extraemos del match
-    // capturado (puede aparecer antes o después de corpusPct).
-    const ct = /claimType:\s*"([^"]+)"/.exec(m[0]);
-    out.push({
-      id: m[1],
-      prior: Number(m[2]),
-      override: m[3] !== undefined ? Number(m[3]) : undefined,
-      claimType: ct ? ct[1] : undefined,
-    });
-  }
-  return out;
-}
-const HYPOTHESES = parseHypotheses(hypothesesSrc);
-if (HYPOTHESES.length < 6) {
-  console.error("audit: failed to parse lib/hypotheses.ts (got", HYPOTHESES.length, "hypotheses)");
-  process.exit(1);
-}
-const HYP_IDS = new Set(HYPOTHESES.map((h) => h.id));
-const PRIOR_BY_ID = Object.fromEntries(HYPOTHESES.map((h) => [h.id, h.prior]));
-const CLAIM_TYPE_BY_ID = Object.fromEntries(HYPOTHESES.map((h) => [h.id, h.claimType]));
-const OVERRIDE_BY_ID = Object.fromEntries(
-  HYPOTHESES.filter((h) => h.override !== undefined).map((h) => [h.id, h.override]),
-);
-
 // ─── 2. CARGA CORPUS ─────────────────────────────────────────────────────
 
 const casesDir = path.join(root, "data", "cases");
@@ -119,93 +81,6 @@ const STATS = {
   years: Math.max(...cases.map((c) => c.year_start)) - 1947,
   researchers: researchers.length,
 };
-
-// ─── 3. COMPUTE EFFECTIVE CALIBRATIONS (mirror lib/hypothesisMapping.ts) ─
-
-// Must mirror lib/hypothesisMapping.ts STRENGTH_WEIGHT (log-odds Bayes-factor
-// weights, NOT the legacy linear pressure points) AND su agregación: auto-seed
-// por patrones + exclusión de `weakens` para hipótesis corpus-existential.
-const STRENGTH_W = { minimal: 0.005, modest: 0.02, substantial: 0.05, "category-breaking": 0.15 };
-const UMBRELLA = {
-  "entidades-no-humanas": ["interdimensional", "ontologico-no-materialista", "tratado-greys"],
-};
-
-// PATTERN_TO_HYPOTHESIS parseado desde lib/hypothesisMapping.ts. Necesario
-// para replicar el AUTO-SEED de lib: un caso SIN evidenceContribution explícita
-// siembra una contribución `supports`/`minimal` por cada patrón mapeado. Sin
-// esto el audit subcontaba la presión vs. lo que renderiza el sitio.
-function parsePatternMap(src) {
-  const body = /PATTERN_TO_HYPOTHESIS[^=]*=\s*\{([\s\S]*?)\n\};/.exec(src);
-  if (!body) return {};
-  const out = {};
-  const re = /"([^"]+)":\s*"([^"]+)"/g;
-  let m;
-  while ((m = re.exec(body[1])) !== null) out[m[1]] = m[2];
-  return out;
-}
-const mappingSrc = fs.readFileSync(
-  path.join(root, "lib", "hypothesisMapping.ts"),
-  "utf-8",
-);
-const PATTERN_TO_HYPOTHESIS = parsePatternMap(mappingSrc);
-
-/**
- * Mirror de lib/hypothesisMapping.ts → effectiveContributions(): si el caso
- * declara evidenceContribution, usa esas; si no, auto-siembra desde patterns
- * (dedup por hipótesis, dirección `supports`, peso `minimal`).
- */
-function effectiveContributions(c) {
-  if (c.evidenceContribution && c.evidenceContribution.length > 0) {
-    return c.evidenceContribution.map((e) => ({
-      hypothesisId: e.hypothesisId,
-      direction: e.direction,
-      weight: STRENGTH_W[e.strength] ?? 0,
-    }));
-  }
-  const seen = new Set();
-  const out = [];
-  for (const p of c.patterns || []) {
-    const hid = PATTERN_TO_HYPOTHESIS[p];
-    if (!hid || seen.has(hid)) continue;
-    seen.add(hid);
-    out.push({ hypothesisId: hid, direction: "supports", weight: STRENGTH_W.minimal });
-  }
-  return out;
-}
-
-function pressureFor(hid) {
-  const targets = [hid, ...(UMBRELLA[hid] || [])];
-  let supports = 0;
-  let weakens = 0;
-  for (const c of cases) {
-    for (const e of effectiveContributions(c)) {
-      if (!targets.includes(e.hypothesisId)) continue;
-      if (e.direction === "supports") {
-        supports += e.weight;
-      } else if (CLAIM_TYPE_BY_ID[hid] !== "corpus-existential") {
-        // `weakens` solo cuenta para afirmaciones NO monótonas: una claim
-        // «≥1 caso es X» no baja porque un candidato individual se descarte.
-        // Ver claimType en lib/hypotheses.ts y CLAIM_TYPE en hypothesisMapping.ts.
-        weakens += e.weight;
-      }
-    }
-  }
-  return supports - weakens;
-}
-
-function logit(p) { return Math.log(p / (1 - p)); }
-function sigmoid(x) { return 1 / (1 + Math.exp(-x)); }
-
-const EFFECTIVE = {};
-for (const h of HYPOTHESES) {
-  if (h.override !== undefined) {
-    EFFECTIVE[h.id] = h.override;
-  } else {
-    const priorClamped = Math.max(0.01, Math.min(0.99, h.prior / 100));
-    const pct = sigmoid(logit(priorClamped) + pressureFor(h.id)) * 100;
-    EFFECTIVE[h.id] = Math.max(1, Math.min(99, pct));
-  }
-}
 
 // ─── 4. REGLAS DE DRIFT ──────────────────────────────────────────────────
 
@@ -274,77 +149,7 @@ function record(level, file, line, msg) {
   findings.push({ level, file: path.relative(root, file), line, msg });
 }
 
-// ─── 6. RULE E1 + E2: percentages in app/**/*.tsx ────────────────────────
-
-const PCT_RE = /(\d{1,3})\s*%/g;
-
 const tsxFiles = walk(path.join(root, "app"), [".tsx"]);
-for (const file of tsxFiles) {
-    if (file.includes("probabilidades-proto")) continue; // prototipo: % ilustrativos, no priors
-  const lines = fs.readFileSync(file, "utf-8").split("\n");
-  lines.forEach((line, i) => {
-    const lineNo = i + 1;
-    let m;
-    PCT_RE.lastIndex = 0;
-    while ((m = PCT_RE.exec(line)) !== null) {
-      const pct = m[1];
-      // Skip clearly-non-editorial uses
-      if (/className=|tracking-|opacity|width|height|gap-|p-|m-|--tw/.test(line)) continue;
-      if (line.includes("ICD%20203")) continue; // PDF URL
-      if (/text-\[\d+%/.test(line)) continue; // tailwind size token
-      if (/var\(|hsl\(|rgb\(/.test(line)) continue;
-
-      const matchesPrior = Object.values(PRIOR_BY_ID).includes(Number(pct));
-      const matchesOverride = Object.values(OVERRIDE_BY_ID).includes(Number(pct));
-      const allowed = EDITORIAL_RANGES_OK.has(pct);
-
-      if (!matchesPrior && !matchesOverride && !allowed) {
-        record("ERROR", file, lineNo, `unknown % cited: "${pct}%" (no matching hypothesis prior, override, or editorial exception)`);
-      }
-
-      // Rule E2 (relaxed): if the % matches a primitive prior AND
-      // the line doesn't mention "prior" AND isn't a tier conf band,
-      // warn. Overrides (97/95) are exempt — they have separate
-      // vocabulary ("antes del filtro", "consecuencia"). Tier bands
-      // (conf="…") are illustrations of reliability, not priors.
-      const isPrimitivePrior = matchesPrior && !matchesOverride;
-      const isTierConfBand = /conf=|Tier\s*\d/i.test(line);
-      if (isPrimitivePrior && !/prior/i.test(line) && !isTierConfBand) {
-        record("WARN", file, lineNo, `% "${pct}%" matches a primitive prior — line should tag it explicitly as "prior" (COPY NUMERIC DISCIPLINE)`);
-      }
-    }
-  });
-}
-
-// Specific cross-check: pre-filter-universe context cites should match
-// the misidentificacion override exactly.
-const PREFILTER_OVERRIDE = OVERRIDE_BY_ID["misidentificacion"];
-if (PREFILTER_OVERRIDE !== undefined) {
-  const ctxWords = "globos|balloons|Blue Book|AARO|pareidolia|lens flares|reportes generales|general (?:UAP )?reports|pre-filter|antes del filtro";
-  for (const file of tsxFiles) {
-  if (file.includes("probabilidades-proto")) continue; // prototipo: % ilustrativos, no priors
-    const lines = fs.readFileSync(file, "utf-8").split("\n");
-    lines.forEach((line, i) => {
-      // Match only when ctxWords appear NEAR a percentage in the same line
-      const re = new RegExp(`(?:${ctxWords})[^\\n]{0,200}?(\\d{1,3})\\s*%`, "i");
-      const m = line.match(re);
-      if (!m) return;
-      // If the canonical override value appears anywhere on the line,
-      // the line is internally correct — even if multiple values coexist
-      // (e.g. about-page "97% antes del filtro... y 95% consecuencia").
-      const hasCanonical = new RegExp(`\\b${PREFILTER_OVERRIDE}\\s*%`).test(line);
-      if (hasCanonical) return;
-      const cited = Number(m[1]);
-      if (cited === PREFILTER_OVERRIDE) return;
-      record(
-        "ERROR",
-        file,
-        i + 1,
-        `pre-filter universe context cites "${cited}%" but misidentificacion override=${PREFILTER_OVERRIDE}% — drift`,
-      );
-    });
-  }
-}
 
 // ─── 7. RULE E3: hardcoded counts in /app + /components ──────────────────
 
@@ -425,99 +230,6 @@ for (const file of scanForForbidden) {
       }
     }
   });
-}
-
-// ─── 9. RULE E5 + E6: evidenceContribution integrity ─────────────────────
-
-let tierSWithoutContrib = 0;
-const inertWeakens = []; // RULE E8a — agregadas en un solo WARN al final
-for (const c of cases) {
-  for (const e of c.evidenceContribution || []) {
-    if (!HYP_IDS.has(e.hypothesisId)) {
-      record(
-        "ERROR",
-        path.join(casesDir, c.id + ".json"),
-        0,
-        `evidenceContribution references unknown hypothesisId "${e.hypothesisId}" (case ${c.id})`,
-      );
-    }
-    if (!(e.strength in STRENGTH_W)) {
-      record(
-        "ERROR",
-        path.join(casesDir, c.id + ".json"),
-        0,
-        `evidenceContribution has unknown strength "${e.strength}" (case ${c.id})`,
-      );
-    }
-    if (!["supports", "weakens"].includes(e.direction)) {
-      record(
-        "ERROR",
-        path.join(casesDir, c.id + ".json"),
-        0,
-        `evidenceContribution has unknown direction "${e.direction}" (case ${c.id})`,
-      );
-    }
-    // RULE E8a · `weakens` muerto: una contribución que debilita una hipótesis
-    // corpus-existential se calcula pero se DESCARTA (la claim «≥1 caso» es
-    // monótona). Sigue siendo un verdicto válido a nivel de caso, pero no
-    // mueve la calibración global — se avisa para que nadie lo crea efectivo.
-    if (
-      e.direction === "weakens" &&
-      CLAIM_TYPE_BY_ID[e.hypothesisId] === "corpus-existential"
-    ) {
-      inertWeakens.push({ caseId: c.id, hid: e.hypothesisId });
-    }
-  }
-  if (c.tier === "S" && (!c.evidenceContribution || c.evidenceContribution.length === 0)) {
-    tierSWithoutContrib++;
-    record(
-      "WARN",
-      path.join(casesDir, c.id + ".json"),
-      0,
-      `Tier S case "${c.id}" has no evidenceContribution — calibration auto-seeds from patterns only`,
-    );
-  }
-}
-
-// RULE E8a · resumen agregado de `weakens` inertes. NOTE, no WARN: es una
-// propiedad ESTRUCTURAL del modelo, no deuda accionable. Una claim
-// corpus-existential («≥1 caso es X») es monótona — un `weakens` no puede
-// bajar P(≥1), así que el motor lo calcula y lo descarta. Hacerlo «efectivo»
-// rompería el invariante de monotonicidad (E8b, que sí es ERROR). El verdicto
-// sigue siendo válido a nivel de caso (se renderiza en /cases). Se reporta como
-// NOTE para dejar constancia sin pretender que hay algo que corregir.
-if (inertWeakens.length > 0) {
-  const byHyp = {};
-  for (const w of inertWeakens) byHyp[w.hid] = (byHyp[w.hid] || 0) + 1;
-  const breakdown = Object.entries(byHyp)
-    .map(([h, n]) => `${h}×${n}`)
-    .join(", ");
-  record(
-    "NOTE",
-    hypothesesPath,
-    0,
-    `${inertWeakens.length} inert weakens toward corpus-existential hypotheses (${breakdown}) — by design: monotone claims discard weakens globally; valid as per-case verdicts (E8b enforces the invariant)`,
-  );
-}
-
-// ─── 9a. RULE E8b: monotonicity invariant for existential claims ─────────
-//
-// Una claim «≥1 caso es X» (corpus-existential) es monótona: descartar
-// candidatos no puede bajar P(≥1 caso califique). Por tanto su `effective`
-// NUNCA puede caer por debajo de su prior. Si esto se rompe, el motor
-// (lib/hypothesisMapping.ts) o este mirror dejaron de excluir `weakens` —
-// exactamente el drift que introdujo #244 en este auditor. Falla el build.
-for (const h of HYPOTHESES) {
-  if (h.override !== undefined || h.claimType !== "corpus-existential") continue;
-  const eff = EFFECTIVE[h.id];
-  if (eff + 1e-9 < h.prior) {
-    record(
-      "ERROR",
-      hypothesesPath,
-      0,
-      `monotonicity broken: corpus-existential "${h.id}" effective=${eff.toFixed(2)} < prior=${h.prior} (weakens must be excluded — see #244)`,
-    );
-  }
 }
 
 // ─── 9c. RULE E9: researcher ↔ case association coverage ─────────────────
@@ -766,7 +478,6 @@ out.push(` Cases:        ${STATS.cases}`);
 out.push(` Countries:    ${STATS.countries}`);
 out.push(` Years:        ${STATS.years}`);
 out.push(` Tier S/A/B:   ${STATS.tierS} / ${STATS.tierA} / ${STATS.tierB}`);
-out.push(` Tier S w/o evidenceContribution: ${tierSWithoutContrib}`);
 out.push(` Researchers linked to ≥1 case: ${linkedCount} / ${STATS.researchers}`);
 out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${STATS.cases - shortBodies.length} / ${STATS.cases}`);
 out.push(` Casos con posterior MECE (no-documento): ${mecePosteriorCount}`);
@@ -778,14 +489,7 @@ out.push(` Casos con posterior MECE (no-documento): ${mecePosteriorCount}`);
   }
 }
 out.push("");
-out.push(" Hypothesis priors → effective:");
-for (const h of HYPOTHESES) {
-  const eff = EFFECTIVE[h.id];
-  const tag = h.override !== undefined ? "[override]" : "[derived]";
-  out.push(`   ${h.id.padEnd(30)} prior=${String(h.prior).padStart(3)}  effective=${String(eff).padStart(5)}  ${tag}`);
-}
-out.push("");
-out.push(`─ Findings ──────────────────────────────────────────────────────`);
+out.push(`─ Findings ─────────────────────────────────────────────`);
 out.push(`  ERRORS: ${errors.length}    WARNS: ${warns.length}    NOTES: ${notes.length}`);
 out.push("");
 

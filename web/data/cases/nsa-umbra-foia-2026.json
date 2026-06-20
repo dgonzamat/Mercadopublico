@@ -57,28 +57,5 @@
       "name": "Unknown Country — 'FOIA Appeal Forces Release of Highly Classified NSA UAP Records' (mayo 2026)",
       "url": "https://unknowncountry.com/headline-news/foia-appeal-forces-release-of-highly-classified-nsa-uap-records/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Los registros NSA UMBRA documentan tratamiento sostenido del fenómeno UAP dentro de los canales SIGINT más sensibles de la agencia durante décadas, incluyendo retención activa bajo el nivel de compartimentación más alto y negativa institucional mantenida por 46 años hasta ser declarada improcedente. Esto es el patrón arquetípico de gestión de información de programas clasificados: canales de distribución restringida, ausencia de reconocimiento externo, resistencia maximalista a la producción legal. Substantial porque los documentos confirman tratamiento institucional del fenómeno a un nivel de sensibilidad sin precedente en el corpus — excediendo los memos Twining y Bolender en clasificación formal.",
-      "rationaleEn": "The NSA UMBRA records document sustained treatment of the UAP phenomenon within the agency's most sensitive SIGINT channels for decades, including active retention under the highest compartmentation level and institutional denial maintained for 46 years until ruled improper. This is the archetypal pattern of classified-program information management: restricted distribution channels, absence of external acknowledgment, maximalist resistance to legal production. Substantial because the documents confirm institutional treatment of the phenomenon at a sensitivity level without precedent in the corpus — formally exceeding the Twining and Bolender memos in classification."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Que la NSA categorizara material UAP dentro de canales UMBRA — reservados para los productos COMINT más sensibles — es compatible con que el fenómeno generara señales interceptables o con que la inteligencia sobre él circulara por esos canales. Suma como minimal y no más, porque la lectura competidora es al menos igual de fuerte: la marca UMBRA puede proteger la fuente y el método de recolección (qué sistemas extranjeros intercepta la NSA) y no una propiedad del fenómeno. Los documentos revelan comportamiento institucional, no ontología.",
-      "rationaleEn": "That the NSA categorized UAP material within UMBRA channels — reserved for the most sensitive COMINT products — is compatible with the phenomenon generating interceptable signals or with intelligence about it traveling through those channels. It counts as minimal and no more, because the competing reading is at least as strong: the UMBRA marking may protect the collection source and method (which foreign systems the NSA intercepts) rather than a property of the phenomenon. The documents reveal institutional behavior, not ontology."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El nivel UMBRA es inconsistente con el tratamiento institucional esperado de fenómenos naturales raros. Los fenómenos naturales como plasma atmosférico o ball lightning no generan inteligencia de señales clasificada al nivel más alto, ni activan respuestas de interceptación militar documentadas en canales SIGINT sensibles.",
-      "rationaleEn": "The UMBRA level is inconsistent with the expected institutional treatment of rare natural phenomena. Natural phenomena such as atmospheric plasma or ball lightning do not generate signals intelligence classified at the highest level, nor do they trigger documented military intercept responses in sensitive SIGINT channels."
-    }
   ]
 }

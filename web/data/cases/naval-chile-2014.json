@@ -38,22 +38,6 @@
     "Two lateral thermal discharges documented in specific frames",
     "No concurrent visual detection despite clear sky"
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "9 minutos de FLIR militar continuo + investigación multi-agencia de dos años + clasificación oficial 'anómalo' sostienen que algo no identificado voló frente a Valparaíso. Pero la ausencia de detección visual concurrente (la misma debilidad que resolvió el caso FLIR mexicano 2004 como quemadores de Cantarell) y la velocidad compatible con aeronaves convencionales mantienen viva la lectura prosaica — análisis posteriores independientes propusieron un vuelo comercial en ascenso con estelas de condensación aerodinámicas en geometría engañosa. Minimal: el caso vale más por la transparencia metodológica chilena que por su fuerza discriminante.",
-      "rationaleEn": "9 minutes of continuous military FLIR + two-year multi-agency investigation + official 'anomalous' classification sustain that something unidentified flew off Valparaíso. But the absence of concurrent visual detection (the same weakness that resolved the 2004 Mexican FLIR case as Cantarell burners) and speed compatible with conventional aircraft keep the prosaic reading alive — later independent analyses proposed a climbing commercial flight with aerodynamic contrails in deceptive geometry. Minimal: the case is worth more for Chilean methodological transparency than for its discriminating power."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Análisis independientes posteriores al reporte CEFAA (incluyendo el del astrónomo Andrew Procyk y revisiones en Metabunk) identificaron al vuelo IB6830 de Iberia —un cuatrimotor— como candidato consistente con posición, rumbo y las dos 'plumas' térmicas (estelas de condensación aerodinámicas de un avión de cuatro motores). CEFAA no actualizó su conclusión, pero la explicación convencional nunca fue refutada técnicamente. El caso ilustra el límite de la detección mono-sensor.",
-      "rationaleEn": "Independent analyses after the CEFAA report (including astronomer Andrew Procyk's and Metabunk reviews) identified Iberia flight IB6830 —a four-engine aircraft— as a candidate consistent with position, heading and the two thermal 'plumes' (aerodynamic contrails of a four-engine aircraft). CEFAA did not update its conclusion, but the conventional explanation was never technically refuted. The case illustrates the limit of single-sensor detection."
-    }
-  ],
   "sources": [
     {
       "name": "CEFAA / DGAC Chile — Caso 11N (2017)",

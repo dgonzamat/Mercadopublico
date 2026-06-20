@@ -45,14 +45,5 @@
       "name": "El Comercio (Perú) — 'Expedientes ovni' / desclasificación FAP",
       "url": "https://elcomercio.pe/archivo-elcomercio/ovnis-en-el-peru-ufo-avistamientos-platillos-voladores-ufologia-conflctos-de-potencias-eeuu-china-globos-seres-extraterrestres-nnsp-noticia/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Como oficina oficial, la OIFAA/DIFAA procesa denuncias con criterios técnicos y muchas se identifican como objetos o efectos convencionales. Minimal —más bajo que en organismos marcadamente desacreditadores— porque la DIFAA se ha distinguido por validar públicamente algún caso con respaldo de radar (Lima 2019) en vez de resolverlo todo.",
-      "rationaleEn": "As an official office, OIFAA/DIFAA processes reports with technical criteria and many are identified as conventional objects or effects. Minimal —lower than in markedly debunking bodies— because DIFAA has stood out for publicly validating a radar-backed case (Lima 2019) rather than resolving everything."
-    }
   ]
 }

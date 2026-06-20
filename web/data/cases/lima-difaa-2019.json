@@ -46,15 +46,6 @@
       "url": "https://elcomercio.pe/mundo/actualidad/ovni-ufo-fuerza-aerea-peru-confirma-cnn-primer-avistamiento-ovnis-cerca-aeropuerto-jorge-chavez-lima-noticia-nndc-646800-noticia/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Avistamiento multisensor en espacio aéreo controlado: dos tripulaciones de pilotos profesionales + torre de control + eco en el radar de CORPAC durante ~40 minutos, con investigación y validación oficial de la DIFAA. Modest —y no más— porque dos objetos luminosos sobre el mar admiten candidatos convencionales (drones, globos, reflejos) que no fueron descartados de forma concluyente, y la 'naturaleza' quedó sin determinar.",
-      "rationaleEn": "Multi-sensor sighting in controlled airspace: two professional flight crews + control tower + an echo on CORPAC radar over ~40 minutes, with an official DIFAA investigation and validation. Modest —and no more— because two luminous objects over the sea admit conventional candidates (drones, balloons, reflections) that were not conclusively ruled out, and the 'nature' was left undetermined."
-    }
-  ],
   "posterior": {
     "mundano": 0.4,
     "natural_desc": 0.08,

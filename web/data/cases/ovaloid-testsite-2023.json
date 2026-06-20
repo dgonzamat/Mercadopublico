@@ -69,28 +69,5 @@
       "name": "Flying Magazine — Unpacking the Pentagon's Latest UAP Release (2026)",
       "url": "https://www.flyingmag.com/unpacking-pentagon-latest-uap-release/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El evento ocurre dentro de un sitio de prueba militar con espacio aéreo cerrado: precisamente el contexto donde se ensayan plataformas clasificadas no reconocidas. El prior de que un objeto anómalo sobre un rango de pruebas sea un sistema propio es alto. Modest porque el comportamiento descrito (materialización desde una luz, desaparición instantánea, sin firma acústica reportada) excede el envelope de los drones conocidos, y la ubicación e identidad permanecen redactadas.",
-      "rationaleEn": "The event occurs inside a military test site with closed airspace: exactly the context where unacknowledged classified platforms are tested. The prior that an anomalous object over a test range is a domestic system is high. Modest because the described behavior (materializing from a light, instantaneous disappearance, no reported acoustic signature) exceeds the envelope of known drones, and the location and identity remain redacted."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Materialización desde una luz y desaparición instantánea, junto al tamaño estimado (40–60 m) y la ausencia de propulsión visible, son inconsistentes con aeronaves convencionales. Minimal porque la evidencia es testimonial (sin sensor duro ni video confirmado), la duración fue de 5–10 s y la percepción de 'materialización' admite explicaciones perceptuales.",
-      "rationaleEn": "Materialization from a light and instantaneous disappearance, together with the estimated size (40–60 m) and the absence of visible propulsion, are inconsistent with conventional aircraft. Minimal because the evidence is testimonial (no hard sensor or confirmed video), the duration was 5–10 s, and the 'materialization' perception admits perceptual explanations."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Un objeto metálico definido, color bronce, con forma elipsoide y borde neto no encaja con plasma atmosférico, ball lightning ni sprites; los testigos eran observadores entrenados en un rango controlado. Weakens minimal porque la lectura de fenómeno natural es poco compatible con la morfología metálica descrita.",
-      "rationaleEn": "A defined bronze-colored metallic object with an ellipsoid shape and a clean edge does not fit atmospheric plasma, ball lightning or sprites; the witnesses were trained observers on a controlled range. Weakens minimal because the natural-phenomenon reading is poorly compatible with the described metallic morphology."
-    }
   ]
 }

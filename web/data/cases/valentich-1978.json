@@ -57,14 +57,5 @@
       "note": "Investigación oficial; causa no determinada.",
       "note_en": "Official investigation; cause undetermined."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Relato por radio de un piloto que describe un objeto que 'no es un avión' justo antes de desaparecer, con control de tránsito confirmando que no había tráfico conocido. Minimal porque es una fuente única, sin radar que corrobore el objeto ni traza física, y con explicaciones convencionales plausibles (desorientación espacial nocturna) que no pudieron descartarse.",
-      "rationaleEn": "Radio account of a pilot describing an object that 'is not an aircraft' just before disappearing, with air traffic control confirming there was no known traffic. Minimal because it is a single source, with no radar to corroborate the object and no physical trace, and with plausible conventional explanations (nighttime spatial disorientation) that could not be ruled out."
-    }
   ]
 }

@@ -62,28 +62,5 @@
       "name": "EuroUFO — 1978 Italian Wave retrospective",
       "url": "http://www.euroufo.net/2018/05/project1978/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Caso fundacional del marco SIOS/Andreotti — primer programa OVNI militar formal publicado en Europa, sostiene patrón de manejo institucional",
-      "rationaleEn": "Founding case of the SIOS/Andreotti framework — first formal published military UFO program in Europe, sustains institutional handling pattern"
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Forma alargada negro mate con domo superior ('gota de agua') y movimientos verticales sostenidos descritos por el piloto; cinemática cuestionable para un globo de bolsas plásticas. Minimal y débil porque la identificación oficial (globo de plástico a la deriva) sigue siendo un candidato mundano serio.",
-      "rationaleEn": "Elongated dull-black shape with an upper dome ('drop of water') and sustained vertical movements described by the pilot; kinematics questionable for a plastic-bag balloon. Minimal and weak because the official identification (a drifting plastic balloon) remains a serious mundane candidate."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "82 frames de gun-camera militar + radar lock simultáneo + 7 pases excluyen plasma, sprite o ilusión óptica",
-      "rationaleEn": "82 military gun-camera frames + simultaneous radar lock + 7 passes exclude plasma, sprite or optical illusion"
-    }
   ]
 }

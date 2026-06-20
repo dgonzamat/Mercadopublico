@@ -64,29 +64,6 @@
       "url": "https://archives.library.rice.edu/repositories/2/archival_objects/330038"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Disco metálico ~100m fotografiado sobre Costa Rica en 1971 — sin programa aéreo nacional con esa escala; compatible con incursión clasificada extranjera o plataforma desconocida",
-      "rationaleEn": "Metallic ~100m disc photographed over Costa Rica in 1971 — no national aerial program with that scale; compatible with foreign classified incursion or unknown platform"
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Evidencia fotográfica con cadena de custodia institucional y peer-review científico — uno de los pocos casos del corpus donde la imagen sobrevive análisis NASA-grade",
-      "rationaleEn": "Photographic evidence with institutional chain of custody and scientific peer-review — one of the few corpus cases where the image survives NASA-grade analysis"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "El análisis de Haines descarta montaje, doble exposición y manipulación, lo que cierra parte de las explicaciones convencionales; pero deja abierta la marca de presión en la emulsión por falta de acceso al negativo original, de modo que el debilitamiento de la hipótesis natural es parcial, no total",
-      "rationaleEn": "Haines's analysis rules out montage, double exposure and manipulation, closing off part of the conventional explanations; but it leaves the emulsion pressure-mark open for lack of access to the original negative, so the weakening of the natural hypothesis is partial, not total"
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cote_ufo.jpg?width=600",
     "alt": "Fotografía aérea del Instituto Geográfico Nacional de Costa Rica con un objeto discoidal sobre el Lago de Cote, 4 de septiembre de 1971.",

@@ -66,21 +66,5 @@
       "url": "https://www.war.gov/ufo/",
       "note": "Fuente primaria: el portal donde se publicó el documento desclasificado."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "tecnologia-adversaria",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El propio análisis de la CIA planteó la lectura de plataforma de vigilancia de un gobierno extranjero, y el escenario la favorece: un objeto sobre el aeropuerto principal de un país en crisis política aguda en 2008, bajo observación de potencias externas. Es el tipo de blanco que una capacidad de inteligencia estatal explicaría. Minimal porque no hay atribución ni datos técnicos — es una hipótesis institucional sobre un relato, no una identificación.",
-      "rationaleEn": "The CIA's own analysis raised the foreign-government surveillance-platform reading, and the scenario favors it: an object over the main airport of a country in acute political crisis in 2008, under observation by external powers. It is the kind of target a state intelligence capability would explain. Minimal because there is no attribution or technical data — it is an institutional hypothesis about an account, not an identification."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Que un cable de la CIA tomara el evento con suficiente seriedad para escalarlo al White House Situation Room, y que la morfología reportada (disco con centro hueco, luces rotativas, 'haces') no encaje con aeronaves conocidas, presta un apoyo leve a la lectura no humana. Minimal porque la evidencia es un relato de inteligencia de segunda mano, sin datos crudos ni verificación, y los mismos rasgos admiten una plataforma artificial avanzada.",
-      "rationaleEn": "That a CIA cable took the event seriously enough to escalate it to the White House Situation Room, and that the reported morphology (disc with hollow center, rotating lights, 'beams') does not match known aircraft, lends slight support to the non-human reading. Minimal because the evidence is a secondhand intelligence account, with no raw data or verification, and the same features admit an advanced artificial platform."
-    }
   ]
 }

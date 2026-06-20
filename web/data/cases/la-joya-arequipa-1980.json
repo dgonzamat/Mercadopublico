@@ -68,21 +68,5 @@
       "url": "https://inexplicata.blogspot.com/2016/11/peru-la-joya-afb-perfect-ufo-case-1980.html",
       "note": "Análisis del caso en la ufología hispana."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Un objeto que evade activamente a un caza al ser fijado, resiste una ráfaga de cañón de 30 mm y permanece estático horas no encaja con un fenómeno natural pasivo (plasma, reflejo, inversión). La observación por cientos de personas en una base militar refuerza que había un objeto real y maniobrable. Modest, no substantial, porque todo el comportamiento descansa en testimonio sin película de cámara de disparo ni radar publicado.",
-      "rationaleEn": "An object that actively evades a fighter when locked on, withstands a 30 mm cannon burst and remains stationary for hours does not fit a passive natural phenomenon (plasma, reflection, inversion). Observation by hundreds at a military base reinforces that there was a real, maneuverable object. Modest, not substantial, because the whole behavior rests on testimony with no gun-camera film or published radar."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La evasión inteligente frente a un interceptor armado sugiere un objeto real bajo control. Minimal porque la evidencia dura es nula (sin imagen, radar ni material) y un testimonio único de piloto, por consistente que sea, no es diagnóstico de origen no humano.",
-      "rationaleEn": "Intelligent evasion of an armed interceptor suggests a real object under control. Minimal because the hard evidence is null (no image, radar or material) and a single pilot's account, however consistent, is not diagnostic of non-human origin."
-    }
   ]
 }

@@ -47,29 +47,6 @@
     "tratado": 0.05,
     "indet": 0.27
   },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Quemaduras geométricas en patrón cuadriculado documentadas en hospital, coincidentes con la rejilla del objeto descrita ANTES de conocerse las lesiones + radioactividad elevada en sitio (University of Colorado) + investigación RCMP/RCAF que no encontró explicación + síntomas sistémicos sostenidos (pérdida de peso, urticaria). La correlación lesión-estructura es el dato duro: el patrón de la quemadura no es producible por los mecanismos de fraude disponibles para un mecánico en 1967. Modest y no substantial porque es testigo único y la interpretación del objeto (no humano vs experimental) queda abierta.",
-      "rationaleEn": "Hospital-documented grid-pattern geometric burns matching the object's grille described BEFORE the injuries were known + elevated site radioactivity (University of Colorado) + RCMP/RCAF investigation finding no explanation + sustained systemic symptoms (weight loss, hives). The injury-structure correlation is the hard datum: the burn pattern is not producible by fraud mechanisms available to a mechanic in 1967. Modest and not substantial because it is a single witness and the object's interpretation (non-human vs experimental) remains open."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Quemaduras en patrón cuadriculado regular + guante derretido por contacto puntual + vegetación afectada en círculo no son producibles por ningún fenómeno atmosférico conocido: el plasma o un rayo no dejan geometría reticular regular. El descarte de fenómeno natural para el evento central es más fuerte que en la mayoría de los close encounters del corpus. Nota: la radiación elevada del sitio, en cambio, sí admite una explicación natural parcial (veta de radio regional / pintura luminiscente), por lo que no se cuenta aquí como descarte de lo natural.",
-      "rationaleEn": "Regular grid-pattern burns + glove melted by point contact + circle of affected vegetation are not producible by any known atmospheric phenomenon: plasma or lightning leaves no regular grid geometry. The dismissal of a natural phenomenon for the core event is stronger than in most close encounters in the corpus. Note: the site's elevated radiation, by contrast, does admit a partial natural explanation (regional radium vein / luminescent paint), so it is not counted here as ruling out the natural reading."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La lectura alternativa: prototipo experimental (US o canadiense) con escape de gases calientes y materiales radiactivos, en 1967 — plena era de programas nucleares aeroespaciales (NERVA, proyectos NEPA tardíos). Ningún programa fue identificado en 58 años y la geometría del evento no encaja con prototipos conocidos de la era, pero la posibilidad no es descartable.",
-      "rationaleEn": "The alternative reading: an experimental prototype (U.S. or Canadian) with hot gas exhaust and radioactive materials, in 1967 — the height of the aerospace nuclear program era (NERVA, late NEPA projects). No program has been identified in 58 years and the event's geometry does not fit known prototypes of the era, but the possibility is not dismissible."
-    }
-  ],
   "sources": [
     {
       "name": "Department of National Defence Canada — Falcon Lake case file",

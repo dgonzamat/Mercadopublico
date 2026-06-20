@@ -67,21 +67,5 @@
       "url": "http://www.ufoevidence.org/cases/case116.htm",
       "note": "Síntesis del caso y su rol en el Estimate of the Situation."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Dos pilotos de aerolínea entrenados dieron descripciones concordantes de un objeto estructurado (filas de ventanas, forma definida, maniobra de ascenso) a corta distancia — el tipo de testimonio profesional que pesa más que un reporte casual. Minimal porque el avistamiento duró 10–15 segundos de noche, sin instrumentación ni foto, y existe una alternativa natural seria (meteoro brillante) que la propia USAF adoptó.",
-      "rationaleEn": "Two trained airline pilots gave concordant descriptions of a structured object (rows of windows, definite shape, climbing maneuver) at close range — the kind of professional testimony that weighs more than a casual report. Minimal because the sighting lasted 10–15 seconds at night, with no instrumentation or photo, and a serious natural alternative exists (bright meteor) that the USAF itself adopted."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La explicación oficial de Project Blue Book —un meteoro brillante durante la actividad de las Delta Acuáridas— es un candidato prosaico real para un destello rápido nocturno en 1948, y mantiene viva la lectura de que incluso observadores expertos pueden estructurar perceptualmente un bólido. Minimal porque esa explicación no da cuenta del cambio de dirección ni del detalle de las ventanas que ambos pilotos describieron.",
-      "rationaleEn": "Project Blue Book's official explanation —a bright meteor during Delta Aquariid activity— is a real prosaic candidate for a fast nighttime flash in 1948, and keeps alive the reading that even expert observers can perceptually structure a bolide. Minimal because that explanation does not account for the change of direction or the window detail both pilots described."
-    }
   ]
 }

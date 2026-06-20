@@ -56,21 +56,5 @@
       "note": "Documentación contemporánea de testigos y recolección del material.",
       "note_en": "Contemporary documentation of witnesses and material recovery."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El reanálisis isotópico publicado por Vallée y Nolan encontró razones de isótopos normales (terrestres) y una mezcla de metales solo parcialmente fundida, compatible con un proceso industrial incompleto. La explicación más simple del metal fundido de Council Bluffs es terrestre/prosaica, no una tecnología anómala.",
-      "rationaleEn": "The isotopic re-analysis published by Vallée and Nolan found normal (terrestrial) isotope ratios and an only partially melted metal mixture, consistent with an incomplete industrial process. The simplest explanation for the Council Bluffs molten metal is terrestrial/prosaic, not anomalous technology."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La ausencia de una fuente industrial o aeronave evidente esa noche, junto a una combinación de metales inusual, mantuvo el caso abierto durante décadas. Minimal —y deliberadamente bajo— porque el propio reanálisis de Nolan concluyó hacia un origen terrestre, no tecnológico.",
-      "rationaleEn": "The absence of an obvious industrial source or aircraft that night, together with an unusual metal combination, kept the case open for decades. Minimal —and deliberately low— because Nolan's own re-analysis pointed toward a terrestrial, not technological, origin."
-    }
   ]
 }

@@ -72,28 +72,5 @@
       "name": "Anuario Estadístico del Ejército del Aire — series 1990s",
       "note": "Documentación oficial del MOA con referencias institucionales al proceso."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El aparato militar español, revisando ~80 expedientes propios con metodología formal, catalogó ~80% como atribuible a fenómenos convencionales. Es replicación independiente de la distribución encontrada por Project Blue Book USAF (caso 151) y Battelle Special Report 14 (caso 110): dos fuerzas aéreas occidentales sin coordinación llegan a tasas de identificación cercanas. Modest porque confirma la prior override (97) por convergencia inter-archivo, no la eleva.",
-      "rationaleEn": "The Spanish military apparatus, reviewing ~80 of its own files with formal methodology, catalogued ~80% as attributable to conventional phenomena. It is independent replication of the distribution found by Project Blue Book USAF (case 151) and Battelle Special Report 14 (case 110): two Western air forces with no coordination reach near-identical identification rates. Modest because it confirms the prior override (97) by inter-archive convergence, not raises it."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Que un MOD nacional desclasifique voluntariamente su archivo UAP completo —sin presión congresional, sin litigio, sin filtración— tensiona la lectura fuerte de que 'todo aparato de inteligencia occidental sostiene perpetuamente el canal clasificado paralelo'. Minimal porque la desclasificación española es selectiva (cubre el archivo MOA regular, no necesariamente programas de operaciones especiales si los hubo) — el caso de Bolender no se invalida con esto, pero la generalización fuerte se modera.",
-      "rationaleEn": "That a national MOD voluntarily declassifies its complete UAP archive —without congressional pressure, without litigation, without leak— tensions the strong reading that 'every Western intelligence apparatus perpetually sustains the parallel classified channel'. Minimal because the Spanish declassification is selective (covers the regular MOA archive, not necessarily special-operations programs if any existed) — the Bolender case is not invalidated by this, but the strong generalization is moderated."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El ~20% del archivo MOA quedó formalmente catalogado como 'sin explicación convencional' tras revisión militar interna — replicando la fracción residual de Blue Book y Battelle. La convergencia inter-archivo entre fuerzas aéreas independientes sugiere que el residual no es artefacto metodológico de una sola institución. Minimal porque 'sin explicación' es categoría reactiva (insuficiencia de datos o exhaustividad de hipótesis convencionales) no afirmativa de un origen específico.",
-      "rationaleEn": "~20% of the MOA archive remained formally catalogued as 'without conventional explanation' after internal military review — replicating the residual fraction of Blue Book and Battelle. The inter-archive convergence between independent air forces suggests the residual is not the methodological artifact of a single institution. Minimal because 'without explanation' is a reactive category (insufficient data or exhaustion of conventional hypotheses), not an affirmative claim of a specific origin."
-    }
   ]
 }

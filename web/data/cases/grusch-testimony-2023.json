@@ -64,29 +64,6 @@
       "url": "https://www.congress.gov/amendment/118th-congress/senate-amendment/797"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Testimonio bajo juramento ante el Congreso de EE.UU. + estatus protegido como denunciante por la Inspector General de la Comunidad de Inteligencia (ICIG) + corroboración cruzada con notas Wilson-Davis. La narrativa Grusch describe explícitamente programas no-divulgados.",
-      "rationaleEn": "Sworn testimony before the U.S. Congress + protected whistleblower status from the Intelligence Community Inspector General (ICIG) + cross-corroboration with Wilson-Davis notes. The Grusch narrative explicitly describes non-disclosed programs."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Grusch declaró bajo juramento la existencia de material recuperado de origen no humano y restos biológicos. El testimonio jurado eleva el peso epistémico aunque la evidencia material primaria no ha sido producida públicamente.",
-      "rationaleEn": "Grusch testified under oath to the existence of recovered material of non-human origin and biological remains. Sworn testimony raises the epistemic weight even though primary material evidence has not been publicly produced."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "La narrativa de programas de recuperación con cadena de custodia federal es incompatible con explicación natural — si el testimonio es falso, lo es por mala fe o error, no por confusión con un fenómeno natural.",
-      "rationaleEn": "The narrative of retrieval programs with federal chain of custody is incompatible with a natural explanation — if the testimony is false, it is so by bad faith or error, not by confusion with a natural phenomenon."
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Grusch_giving_testimony_on_26_July_2023_before_the_US_House_Subcommittee_on_National_Security_the_Border_and_Foreign_Affairs.png?width=600",
     "alt": "David Grusch testificando ante el Subcomité de la Cámara de Representantes, 26 de julio de 2023.",

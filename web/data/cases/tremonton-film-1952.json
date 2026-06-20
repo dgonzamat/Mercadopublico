@@ -47,15 +47,6 @@
       "note": "Síntesis del registro y análisis."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El laboratorio fotográfico de la Marina, tras análisis fotogramétrico, descartó aves/aeronaves/globos — y solo el Panel Robertson (con mandato desestigmatizador) revirtió a 'aves'. Que el análisis técnico institucional contradijera la conclusión oficial tensiona la lectura escéptica simple. Minimal: es film de baja resolución y la atribución a aves no es imposible. Override: aporte de registro.",
-      "rationaleEn": "The Navy photographic lab, after photogrammetric analysis, ruled out birds/aircraft/balloons — and only the Robertson Panel (with a destigmatizing mandate) reverted to 'birds'. That the institutional technical analysis contradicted the official conclusion strains the simple skeptical reading. Minimal: it is low-resolution film and the bird attribution is not impossible. Override: a record contribution."
-    }
-  ],
   "posterior": {
     "mundano": 0.34,
     "natural_desc": 0.06,

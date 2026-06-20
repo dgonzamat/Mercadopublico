@@ -89,28 +89,5 @@
     "source": "United States Air Force",
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:Halt_Memorandum.jpg"
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Proximidad inmediata a instalación nuclear OTAN y ausencia de respuesta operacional británica oficial podrían sugerir prueba clasificada de la USAF, aunque la duración (3 noches) y la profundidad documental superan el perfil habitual de un ensayo.",
-      "rationaleEn": "Immediate proximity to a NATO nuclear installation and the absence of official British operational response could suggest a classified USAF test, although the duration (3 nights) and documentary depth exceed the usual exercise profile."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Memo Halt firmado + grabación contemporánea en cassette + marcas físicas con radiación elevada + testimonio sostenido por oficiales de alto rango durante 40+ años constituye una de las acumulaciones documentales más densas del corpus.",
-      "rationaleEn": "Signed Halt memo + contemporary cassette recording + physical impressions with elevated radiation + testimony sustained by high-ranking officers for 40+ years constitutes one of the densest documentary accumulations in the corpus."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Lecturas radiométricas elevadas en puntos de impresión sobre el suelo + duración multi-noche + memo militar firmado descartan explicaciones de faro, mirage o pareidolia que se proponen ocasionalmente.",
-      "rationaleEn": "Elevated radiometric readings at ground-impression points + multi-night duration + signed military memo rule out lighthouse, mirage or pareidolia explanations that are occasionally proposed."
-    }
-  ]
+  }
 }

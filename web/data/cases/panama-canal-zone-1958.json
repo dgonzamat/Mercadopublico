@@ -64,22 +64,6 @@
       "note": "Base de origen del T-33 interceptor."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "La correlación entre radar de búsqueda y seguimiento, reflectores y observación visual sobre los mismos blancos, más el ascenso súbito al ser iluminados y la evasión del T-33, tensiona la lectura natural más obvia para retornos de 1958 (propagación anómala / inversión térmica / eco meteorológico): un artefacto de radar no responde a luz ni evade un interceptor. Modest, no substantial, porque el episodio descansa sobre un único expediente Blue Book con menor reanálisis independiente que Lakenheath-Bentwaters.",
-      "rationaleEn": "The correlation between search and tracking radar, searchlights and visual observation on the same targets, plus the sudden climb upon illumination and the evasion of the T-33, strains the most obvious natural reading for 1958 returns (anomalous propagation / thermal inversion / weather echo): a radar artifact does not respond to light or evade an interceptor. Modest, not substantial, because the episode rests on a single Blue Book file with less independent re-analysis than Lakenheath-Bentwaters."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El comportamiento aparentemente intencional —responder a la iluminación, mantener distancia del interceptor— es compatible con un objeto real bajo control, no con un fenómeno pasivo. Minimal porque la evidencia es radar+visual de 1958, sin foto, telemetría ni material, y el intercepto terminó 'con resultados negativos': la maniobra es sugerente pero no diagnóstica.",
-      "rationaleEn": "The apparently intentional behavior —responding to illumination, keeping distance from the interceptor— is compatible with a real object under control, not a passive phenomenon. Minimal because the evidence is 1958 radar+visual, with no photo, telemetry or material, and the intercept ended 'with negative results': the maneuver is suggestive but not diagnostic."
-    }
-  ],
   "posterior": {
     "mundano": 0.18,
     "natural_desc": 0.15,

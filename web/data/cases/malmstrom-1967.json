@@ -80,35 +80,5 @@
       "note": "7 military officers including Salas"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Hipótesis alternativa válida: prueba de guerra electrónica clasificada de la propia USAF sobre sus sistemas Minuteman. Boeing y la USAF no replicaron el modo de falla, lo que debilita pero no descarta la posibilidad.",
-      "rationaleEn": "Valid alternative hypothesis: classified USAF EW test on its own Minuteman systems. Boeing and the USAF could not replicate the failure mode, which weakens but does not rule out the possibility."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Testimonio Salas + shutdown simultáneo de 10 ICBM + replicación en LCC adyacente + 150+ casos similares (Hastings) en instalaciones nucleares EE.UU. constituye un patrón sostenido difícil de atribuir a accidente.",
-      "rationaleEn": "Salas testimony + simultaneous shutdown of 10 ICBMs + replication in adjacent LCC + 150+ similar cases (Hastings) at U.S. nuclear installations constitutes a sustained pattern hard to attribute to accident."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "substantial",
-      "rationale": "Efectos coordinados de guerra electrónica con shutdown simultáneo de diez misiles + reportes visuales del objeto luminoso son incompatibles con cualquier fenómeno atmosférico conocido.",
-      "rationaleEn": "Coordinated EW effects with simultaneous shutdown of ten missiles + visual reports of the luminous object are incompatible with any known atmospheric phenomenon."
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Patrón 8k de interferencia EM en sistemas Minuteman — efecto físico EM remoto en hardware nuclear califica como signal débil de física exótica",
-      "rationaleEn": "Pattern 8k of EM interference on Minuteman systems — remote EM physical effect on nuclear hardware qualifies as a weak signal of exotic physics"
-    }
-  ],
   "name_en": "Malmstrom ICBM shutdown"
 }

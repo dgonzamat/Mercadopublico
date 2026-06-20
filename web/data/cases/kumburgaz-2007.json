@@ -65,22 +65,6 @@
       "note": "Primary material available at SOBE"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El análisis TÜBİTAK concluyó no-manipulación y objeto no identificado, lo cual valida el material pero no su interpretación. Minimal porque todo el corpus proviene de un solo operador desde un solo punto, y el candidato escéptico (luces de cubierta de cruceros en el Mármara, desenfocadas) nunca fue refutado formalmente.",
-      "rationaleEn": "The TÜBİTAK analysis concluded non-manipulation and unidentified object, which validates the material but not its interpretation. Minimal because the entire footage comes from a single operator at a single vantage point, and the skeptical candidate (defocused cruise-ship deck lights on the Marmara) was never formally refuted."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La hipótesis de cruceros fondeados (cubiertas iluminadas, bokeh de lente) es geométrica y ópticamente consistente con los frames más citados.",
-      "rationaleEn": "The anchored-cruise-ship hypothesis (lit decks, lens bokeh) is geometrically and optically consistent with the most-cited frames."
-    }
-  ],
   "posterior": {
     "mundano": 0.50,
     "natural_desc": 0.06,

@@ -28,29 +28,6 @@ export interface CaseDocument {
 }
 
 /**
- * Per-case calibration contribution. Each case declares which hypotheses
- * it moves and by how much. The pressure index (see lib/hypothesisMapping)
- * aggregates these across all cases to compute a continuous evidence
- * signal that runs alongside the verbal ICD-203 calibration.
- *
- * Cases without an explicit `evidenceContribution` field get auto-seeded
- * from their pattern→hypothesis mapping at minimal strength.
- */
-export type StrengthLevel =
-  | "minimal"           // +0.5 — repeats established pattern, no new modality
-  | "modest"            // +2 — independent corroboration or one new modality
-  | "substantial"       // +5 — new sensor modality or contradicts pattern
-  | "category-breaking"; // +15 — entirely new class of evidence
-
-export interface EvidenceContribution {
-  hypothesisId: string;
-  direction: "supports" | "weakens";
-  strength: StrengthLevel;
-  rationale: string;
-  rationaleEn: string;
-}
-
-/**
  * MODELO MECE (en migración) — reemplazo de evidenceContribution + las 10
  * hipótesis existenciales solapadas. Cada caso recibe una distribución sobre
  * un conjunto de explicaciones MUTUAMENTE EXCLUYENTES y EXHAUSTIVAS que suma
@@ -118,11 +95,6 @@ export interface UAPCase {
   evidence_en?: string[];    // English translation
   sources?: CaseSource[];    // citations / primary documents
   primaryDocument?: CaseDocument; // optional primary-source image (PD/CC only)
-  // Per-case calibration contributions. When present, each declares which
-  // hypothesis this case moves and by how much. When absent, auto-seeded
-  // from `patterns` at minimal strength (+0.5 per mapped pattern).
-  // LEGACY: en proceso de reemplazo por `posterior` (modelo MECE).
-  evidenceContribution?: EvidenceContribution[];
   // MODELO MECE (en migración): distribución sobre explicaciones excluyentes,
   // suma 1. Opcional hasta recodificar las fichas. Mientras esté ausente,
   // lib/meceModel.ts deriva un posterior provisional desde los campos legacy.

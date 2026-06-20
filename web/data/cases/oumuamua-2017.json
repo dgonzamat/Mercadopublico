@@ -64,22 +64,6 @@
     "tratado": 0.01,
     "indet": 0.19
   },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El consenso científico explica las anomalías de ʻOumuamua —aceleración sin cola, forma extrema— con mecanismos naturales (desgasificación de hielos de N2 o H2 difíciles de observar, agregado poroso). Modest porque ninguna de esas explicaciones se confirmó con datos directos antes de que el objeto se perdiera, dejando un margen genuino de incertidumbre.",
-      "rationaleEn": "The scientific consensus explains ʻOumuamua's anomalies —acceleration with no tail, extreme shape— with natural mechanisms (outgassing of hard-to-observe N2 or H2 ices, a porous aggregate). Modest because none of those explanations was confirmed with direct data before the object was lost, leaving genuine uncertainty."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La aceleración no gravitacional sin pérdida visible de masa es, formalmente, compatible con presión de radiación sobre una estructura artificial delgada (Bialy & Loeb 2018). Minimal porque es una hipótesis minoritaria y la ausencia de datos no equivale a evidencia positiva de tecnología.",
-      "rationaleEn": "The non-gravitational acceleration with no visible mass loss is, formally, consistent with radiation pressure on a thin artificial structure (Bialy & Loeb 2018). Minimal because it is a minority hypothesis and the absence of data is not positive evidence of technology."
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist%E2%80%99s_impression_of_the_interstellar_asteroid_%60Oumuamua.jpg?width=800",
     "alt": "Impresión artística de ESO del objeto interestelar ʻOumuamua.",

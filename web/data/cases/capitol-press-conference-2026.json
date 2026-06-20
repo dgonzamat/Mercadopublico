@@ -89,29 +89,6 @@
       "note": "Cobertura de la 'gutting' del bill — contexto operativo de la conferencia."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Presión institucional sostenida: cuatro legisladores en ejercicio + denunciante con testimonio bajo juramento previo + demandas escritas accionables que asumen explícitamente la existencia de programas de recuperación e ingeniería inversa. No aporta evidencia material nueva — vale como confirmación de que la hipótesis de existencia del programa sigue siendo políticamente operativa y bipartidista en el Congreso.",
-      "rationaleEn": "Sustained institutional pressure: four sitting lawmakers + whistleblower with prior sworn testimony + actionable written demands that explicitly assume the existence of recovery and reverse-engineering programs. It brings no new material evidence — it counts as confirmation that the program-existence hypothesis remains politically operative and bipartisan in Congress."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Grusch escala públicamente a 'several kinds, ranging in complexity', y describe un 'continuo desde vida corpórea bípeda hasta vida plasmoide sintiente' — el primer denunciante formal que mete los plasmoides en el catálogo NHI. Es testimonio individual sin documentos primarios presentados ese día, y la ciencia establecida no reconoce vida basada en plasma — eso lo deja en minimal, no en modest. Lo notable no es la fuerza probatoria sino que el mismo objeto plasma que AARO/Kosloski encuadra como fenómeno natural (caso 145), Grusch lo encuadra como entidad: el plasmoide queda en disputa entre fenomenos-naturales y entidades-no-humanas, sin que el testimonio resuelva la indecidibilidad. La mención de Varginha 1996 con hipótesis de transferencia de seres a EE.UU. extiende, no crea, evidencia: la subyacencia es el caso brasileño ya calibrado como Tier S.",
-      "rationaleEn": "Grusch publicly escalates to 'several kinds, ranging in complexity', and describes a 'continuum from corporeal bipedal life to sentient plasmoid life' — the first formal whistleblower to put plasmoids in the NHI catalogue. It is individual testimony without primary documents presented that day, and established science does not recognize plasma-based life — that leaves it at minimal, not modest. What is notable is not its probative strength but that the same plasma object AARO/Kosloski frames as a natural phenomenon (case 145), Grusch frames as an entity: the plasmoid is contested between natural-phenomena and non-human-entities, with the testimony not resolving the undecidability. The mention of Varginha 1996 with the hypothesis of transferring beings to the U.S. extends, does not create, evidence: the underlying piece is the Brazilian case already calibrated as Tier S."
-    },
-    {
-      "hypothesisId": "ingenieria-inversa",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Las tres demandas formales planteadas en la conferencia asumen explícitamente la existencia de un programa US de recuperación + ingeniería inversa: 'desclasificar archivos UAP que Grusch identificó por nombre', 'aprobar UAP Disclosure Act', 'proteger denunciantes de represalias'. Estas peticiones no tienen sentido analítico si no se asume que el programa existe y los archivos lo documentan. La conferencia traduce la afirmación de Grusch (testimoniada bajo juramento en 2023) en presión institucional bipartidista sostenida. Modest porque las demandas son la afirmación operativa más fuerte del corpus sobre la existencia del programa, sin presentación de documentos primarios que la prueben.",
-      "rationaleEn": "The three formal demands at the conference explicitly assume the existence of a U.S. recovery + reverse-engineering program: 'declassify UAP files Grusch identified by name', 'pass the UAP Disclosure Act', 'protect whistleblowers from retaliation'. These petitions make no analytical sense unless one assumes the program exists and the files document it. The conference translates Grusch's claim (sworn under oath in 2023) into sustained bipartisan institutional pressure. Modest because the demands are the corpus's strongest operative claim about the program's existence, without presentation of primary documents that prove it."
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Grusch_giving_testimony_on_26_July_2023_before_the_US_House_Subcommittee_on_National_Security_the_Border_and_Foreign_Affairs.png?width=800",
     "alt": "David Grusch testificando ante un subcomité de la Cámara de Representantes, 26 jul 2023.",

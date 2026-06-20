@@ -47,15 +47,6 @@
       "note_en": "Critical analysis of the case."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Encuentro cercano con múltiples testigos sostenidos, larga duración y un residuo físico recogido y analizado en universidad. Minimal porque el residuo (carbonatos de calcio y potasio) no es una firma exótica y el relato incorporó adornos dramáticos en versiones posteriores, lo que erosiona el peso probatorio.",
-      "rationaleEn": "Close encounter with multiple sustained witnesses, long duration, and a physical residue collected and analyzed at a university. Minimal because the residue (calcium and potassium carbonates) is not an exotic signature and the account incorporated dramatic embellishments in later versions, which erodes its evidentiary weight."
-    }
-  ],
   "posterior": {
     "mundano": 0.46,
     "natural_desc": 0.06,

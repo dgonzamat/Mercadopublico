@@ -48,22 +48,6 @@
     "Later GEPAN (CNES) review: inconclusive, classified as worthy of further study",
     "Encounter of two minor witnesses, no instrumental record; folkloric tone ('little black devils')"
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Encuentro cercano con figuras y un objeto, con expediente de gendarmería el mismo día, trazas reportadas (olor, hierba) y una revisión posterior del GEPAN que lo dejó sin explicación convencional. El doble filtro institucional sostiene un shift mínimo. Pero son dos testigos menores, sin sensor, en un relato de fuerte tono folclórico. Minimal y deliberadamente bajo.",
-      "rationaleEn": "Close encounter with figures and an object, with a gendarmerie file the same day, reported traces (odor, grass) and a later GEPAN review that left it without conventional explanation. The double institutional filter sustains a minimal shift. But it is two minor witnesses, no sensor, in an account of strong folkloric tone. Minimal and deliberately low."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Dos testigos menores son particularmente susceptibles a sugestión, error perceptivo y construcción narrativa; el tono ('pequeños diablos') sugiere un marco cultural-religioso previo. Las trazas reportadas (olor, hierba seca) admiten causas mundanas y no se conservaron para análisis. La conclusión inconclusa del GEPAN no descarta una explicación prosaica, solo no la identificó.",
-      "rationaleEn": "Two minor witnesses are particularly susceptible to suggestion, perceptual error and narrative construction; the tone ('little devils') suggests a prior cultural-religious frame. The reported traces (odor, dry grass) admit mundane causes and were not preserved for analysis. GEPAN's inconclusive verdict does not rule out a prosaic explanation, it just did not identify one."
-    }
-  ],
   "sources": [
     {
       "name": "GEPAN / CNES — Reexamen del expediente de gendarmería del caso de Cussac",

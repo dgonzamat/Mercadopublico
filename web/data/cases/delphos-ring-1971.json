@@ -59,22 +59,6 @@
       "note": "Reapreciación científica (incluye trabajo de KSU)."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El caso dejó una traza física real y duradera (suelo decolorado e hidrófobo, brillo persistente) acompañada de efectos en el testigo, lo que lo eleva sobre un avistamiento visual. Minimal porque el testigo central es único (con corroboración familiar) y una parte importante de la firma —forma anular e hidrofobicidad— tiene un candidato natural reproducible.",
-      "rationaleEn": "The case left a real, durable physical trace (discolored, hydrophobic soil; persistent glow) accompanied by effects on the witness, which raises it above a visual sighting. Minimal because the central witness is single (with family corroboration) and an important part of the signature —ring shape and hydrophobicity— has a reproducible natural candidate."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Un 'anillo de hadas' fúngico explica de forma económica la forma circular y la hidrofobicidad del suelo —el efecto se reprodujo en laboratorio—, un candidato prosaico serio para la traza. Minimal porque no da cuenta de forma concluyente del brillo persistente ni del avistamiento del objeto.",
-      "rationaleEn": "A fungal 'fairy ring' economically explains the circular shape and the soil hydrophobicity —the effect was reproduced in the lab— a serious prosaic candidate for the trace. Minimal because it does not conclusively account for the persistent glow or the object sighting."
-    }
-  ],
   "posterior": {
     "mundano": 0.20,
     "natural_desc": 0.30,

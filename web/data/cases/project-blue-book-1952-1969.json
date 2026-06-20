@@ -78,28 +78,5 @@
       "name": "Hynek, J. A. — 'The UFO Experience: A Scientific Inquiry' (1972)",
       "note": "Reporte del consultor científico oficial tras dejar el programa."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Es el dataset más grande del corpus para la lectura escéptica: 12,618 reportes archivados oficialmente con ~94.5% resueltos a causas mundanas (globos, planetas, aeronaves convencionales, fenómenos meteorológicos, errores de instrumentación) tras 17 años de investigación USAF formal. Modest porque la tasa de resolución es consistente con la prior override (97), pero el residual heterogéneo (701 unidentified + ~22% en reportes de calidad) impide tratarlo como confirmación cerrada — el propio Battelle Special Report 14 mostró que el residual no es ruido aleatorio.",
-      "rationaleEn": "It is the corpus's largest dataset for the skeptical reading: 12,618 reports officially archived with ~94.5% resolved to mundane causes (balloons, planets, conventional aircraft, weather phenomena, instrumentation errors) after 17 years of formal USAF investigation. Modest because the resolution rate is consistent with the prior override (97), but the heterogeneous residual (701 unidentified + ~22% in quality reports) prevents treating it as closed confirmation — Battelle Special Report 14 itself showed the residual is not random noise."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El Bolender Memo (octubre 1969, firmado por el General George S. Brown) es declaración interna USAF de que los reportes UAP con implicación de seguridad nacional 'are not part of the Blue Book system' — confirmación documental directa de canal clasificado paralelo, escrita tres meses antes del cierre del programa. Que el aparato USAF formalice la existencia del canal paralelo en el documento mismo que justifica cerrar el canal público es la coherencia interna más fuerte del corpus pre-AAWSAP para la hipótesis. Modest porque el memo nombra el canal pero no describe su contenido.",
-      "rationaleEn": "The Bolender Memo (October 1969, signed by General George S. Brown) is an internal USAF declaration that UAP reports with national-security implication 'are not part of the Blue Book system' — direct documentary confirmation of a parallel classified channel, written three months before program closure. That the USAF apparatus formalizes the parallel channel's existence in the very document justifying the public channel's closure is the corpus's strongest pre-AAWSAP internal coherence for the hypothesis. Modest because the memo names the channel but does not describe its content."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El residual de 701 casos catalogados oficialmente como 'unidentified' tras investigación USAF completa, expandido al ~22% en la subcategoría de mayor calidad evidencial según el Battelle Special Report 14, deja una población documental que el aparato oficial no pudo resolver con marco convencional. Minimal porque 'unidentified' incluye casos cerrados por insuficiencia de datos, no necesariamente anomalía intrínseca — el residual es heterogéneo y compatible con múltiples lecturas, pero no nulo.",
-      "rationaleEn": "The residual of 701 cases officially catalogued as 'unidentified' after complete USAF investigation, expanding to ~22% in the highest evidential-quality subcategory per Battelle Special Report 14, leaves a documentary population the official apparatus could not resolve with the conventional frame. Minimal because 'unidentified' includes cases closed by data insufficiency, not necessarily intrinsic anomaly — the residual is heterogeneous and compatible with multiple readings, but not null."
-    }
   ]
 }

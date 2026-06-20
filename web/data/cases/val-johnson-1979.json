@@ -64,21 +64,5 @@
       "url": "https://www.mnhs.org/mnopedia/search/index/event/val-johnson-incident-1979",
       "note": "Fuente histórica institucional del estado."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Daño físico medible a un vehículo, conservado como evidencia, junto con un testigo policial y anomalías temporales coincidentes en dos relojes, es más que un avistamiento visual. Minimal porque hubo un único observador y la mecánica de los daños fue cuestionada como incompatible con una colisión real.",
-      "rationaleEn": "Measurable physical damage to a vehicle, preserved as evidence, together with a police witness and coincident time anomalies on two clocks, is more than a visual sighting. Minimal because there was a single observer and the damage mechanics were questioned as incompatible with a real collision."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El cuestionamiento escéptico del patrón de daños —agrietamiento sin hundimiento, antena doblada de forma peculiar— mantiene viva una causa más mundana o intencionada, dado que no hubo segundo testigo que fijara el evento. Minimal porque tampoco se demostró una explicación prosaica concreta que cubra el conjunto (daños + relojes + ojos).",
-      "rationaleEn": "The skeptical questioning of the damage pattern —cracking without caving, antenna bent in a peculiar way— keeps alive a more mundane or intentional cause, given there was no second witness to fix the event. Minimal because no concrete prosaic explanation covering the whole (damage + clocks + eyes) was demonstrated either."
-    }
   ]
 }

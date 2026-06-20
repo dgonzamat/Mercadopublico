@@ -50,14 +50,5 @@
       "name": "ODNI — página oficial de informes UAP",
       "url": "https://www.dni.gov/index.php/newsroom/reports-publications"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "La propia comunidad de inteligencia revisó 144 reportes de fuentes oficiales y solo pudo resolver uno como mundano (globo). Eso tensiona —débilmente— la lectura escéptica fuerte de que todo es identificación errónea trivial: si lo fuera, el aparato habría cerrado más casos. Minimal porque el informe atribuye explícitamente los 143 restantes a datos insuficientes, no a 'no es mundano'; no es una refutación de la misidentificación, solo una fricción.",
-      "rationaleEn": "The intelligence community itself reviewed 144 reports from official sources and could only resolve one as mundane (a balloon). That weakly strains the strong skeptical reading that it's all trivial misidentification: if it were, the apparatus would have closed more cases. Minimal because the report explicitly attributes the remaining 143 to insufficient data, not to 'it's not mundane'; it is not a refutation of misidentification, only friction."
-    }
   ]
 }

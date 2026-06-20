@@ -51,14 +51,5 @@
       "name": "COMETA report — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/COMETA_Report"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Un grupo de generales y expertos aeroespaciales franceses concluyó por escrito que la hipótesis extraterrestre es la más plausible para un residuo de casos. Eleva la ETH desde el folklore al análisis de defensa serio — pero es juicio analítico sobre casos ya conocidos, no evidencia primaria nueva, y no es un documento de gobierno. Minimal: pesa como opinión calificada que mantiene la hipótesis viva, no como confirmación.",
-      "rationaleEn": "A group of French generals and aerospace experts concluded in writing that the extraterrestrial hypothesis is the most plausible for a residue of cases. It lifts the ETH from folklore to serious defence analysis — but it is an analytical judgment on already-known cases, not new primary evidence, and not a government document. Minimal: it weighs as qualified opinion that keeps the hypothesis alive, not as confirmation."
-    }
   ]
 }

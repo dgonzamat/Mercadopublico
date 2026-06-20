@@ -76,28 +76,5 @@
     "ontologico": 0.04,
     "tratado": 0.03,
     "indet": 0.22
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Cohorte familiar de cuatro con testimonio convergente + testigo independiente (Henley) + investigación policial con descarte explícito de fraude + datos de laboratorio mixtos (Haines/NASA encuentra diferencia interior/exterior no resuelta). La modalidad evidencial es similar al Cash-Landrum estadounidense pero con materialidad menos sostenida en el tiempo: no hay litigio federal ni cohorte médica oncológica. Minimal porque el cuerpo de evidencia material disputada no llega al substantial — el dato Haines es un punto interesante, no una prueba.",
-      "rationaleEn": "Family cohort of four with convergent testimony + independent witness (Henley) + police investigation with explicit dismissal of fraud + mixed lab data (Haines/NASA finds unresolved interior/exterior difference). The evidential modality is similar to U.S. Cash-Landrum but with less sustained materiality over time: no federal litigation, no oncology cohort. Minimal because the disputed physical-evidence body does not reach substantial — the Haines datum is an interesting point, not a proof."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El testimonio del testigo independiente Henley + la observación policial de afectación física aguda + la diferenciación de polvo interior/exterior por NASA no encajan trivialmente con plasma atmosférico, ball lightning u otros candidatos naturales. No es refutación fuerte porque la cohorte podría haber sido afectada por un fenómeno meteorológico raro (tornado de polvo, downburst) que también explicaría las abolladuras. Minimal: debilita.",
-      "rationaleEn": "Independent witness Henley's testimony + police observation of acute physical affectation + NASA differentiation of interior/exterior dust do not trivially fit atmospheric plasma, ball lightning or other natural candidates. Not a strong refutation because the cohort might have been affected by a rare meteorological phenomenon (dust tornado, downburst) that would also explain the dents. Minimal weakens."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Cohabitación geográfica con la red de bases de inteligencia australianas (Pine Gap, North West Cape, Geraldton) que operan sistemas no acknowledged. Un objeto de 1m que persigue un auto a 100 km/h podría ser dron experimental temprano (1988 es periodo de desarrollo intensivo de drones tácticos en US/AU). Minimal porque la descripción (humo, voces alteradas, levantamiento) no es congruente con drones convencionales.",
-      "rationaleEn": "Geographical cohabitation with the Australian intelligence-base network (Pine Gap, North West Cape, Geraldton) operating non-acknowledged systems. A 1m object pursuing a car at 100 km/h could be an early experimental drone (1988 is a period of intensive tactical-drone development in U.S./AU). Minimal because the description (smoke, altered voices, lifting) is not congruent with conventional drones."
-    }
-  ]
+  }
 }

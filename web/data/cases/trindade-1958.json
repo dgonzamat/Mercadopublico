@@ -48,22 +48,6 @@
     "tratado": 0.03,
     "indet": 0.28
   },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Cuatro fotografías nítidas de objeto estructurado en forma de Saturno + ~100 testigos militares/científicos en cubierta + revelado a bordo bajo supervisión + tres análisis fotogramétricos independientes (Marinha 1958, Blue Book, GEPAN 1980) sin hallazgo de manipulación + confirmación oficial al nivel de Presidente y Ministro de Marina. El objeto estructurado con morfología no aeronáutica en 1958 — antes de drones y de la mayoría de prototipos discoidales conocidos — sostiene la lectura no convencional. Modest y no substantial por el debate residual de cadena de custodia (Baraúna era fotógrafo experto en trucaje, aunque ningún análisis encontró evidencia de ello).",
-      "rationaleEn": "Four clear photographs of a Saturn-shaped structured object + ~100 military/scientific witnesses on deck + on-board development under supervision + three independent photogrammetric analyses (Marinha 1958, Blue Book, GEPAN 1980) finding no manipulation + official confirmation at the level of President and Navy Minister. A structured object with non-aeronautical morphology in 1958 — before drones and most known disc prototypes — sustains the non-conventional reading. Modest and not substantial due to residual chain-of-custody debate (Baraúna was an expert trick photographer, though no analysis found evidence of trickery)."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Un objeto con cuerpo central y anillo perimetral fotografiado con bordes definidos y trayectoria curva controlada no encaja con plasma, lenticular extremo ni fenómeno óptico — la morfología es estructural. Minimal porque las fotos de 1958 no permiten descartar completamente artefactos ópticos complejos con el estándar forense actual.",
-      "rationaleEn": "An object with a central body and perimeter ring photographed with defined edges and a controlled curved trajectory does not fit plasma, extreme lenticular clouds or optical phenomena — the morphology is structural. Minimal because 1958 photographs cannot fully rule out complex optical artifacts by today's forensic standard."
-    }
-  ],
   "sources": [
     {
       "name": "Marinha do Brasil — Comunicado oficial Trindade (1958)",

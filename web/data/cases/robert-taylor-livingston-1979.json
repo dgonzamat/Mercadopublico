@@ -59,22 +59,6 @@
       "note": "Documento institucional local sobre el incidente y el sitio."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Combina elementos poco comunes: traza física documentada por la policía (huellas y orificios), efecto corporal real sobre el testigo (ropa rasgada, raspaduras) y una investigación criminal oficial. Minimal porque hay un solo testigo y una explicación médica plausible (epilepsia) que puede dar cuenta del colapso y la percepción sin requerir un objeto anómalo.",
-      "rationaleEn": "It combines uncommon elements: police-documented physical trace (tracks and holes), real bodily effect on the witness (torn clothes, grazes) and an official criminal investigation. Minimal because there is a single witness and a plausible medical explanation (epilepsy) that can account for the collapse and the perception without requiring an anomalous object."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La hipótesis de un episodio médico —Taylor padecía epilepsia; un ataque podría producir colapso, alucinación olfativa y caída— es un candidato prosaico serio que explicaría la experiencia y parte de las lesiones. Minimal porque no da cuenta de forma concluyente de las marcas en el suelo documentadas por la policía.",
-      "rationaleEn": "The medical-episode hypothesis —Taylor had epilepsy; a seizure could produce collapse, olfactory hallucination and a fall— is a serious prosaic candidate that would explain the experience and part of the injuries. Minimal because it does not conclusively account for the ground marks documented by police."
-    }
-  ],
   "posterior": {
     "mundano": 0.42,
     "natural_desc": 0.04,

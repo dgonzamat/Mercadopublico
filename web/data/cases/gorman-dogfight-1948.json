@@ -58,14 +58,5 @@
     "ontologico": 0.02,
     "tratado": 0.01,
     "indet": 0.21
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Un piloto militar entrenado y corroborado por la torre reportó maniobras que la explicación oficial de globo no cubre bien. Tensiona débilmente la lectura de identificación errónea trivial. Minimal: el caso es visual (sin instrumento duro) y el globo no es del todo descartable. La hipótesis ya está en su techo (override): aporte de registro, no de calibración.",
-      "rationaleEn": "A trained military pilot, corroborated by the tower, reported maneuvers the official balloon explanation does not cover well. It weakly strains the trivial-misidentification reading. Minimal: the case is visual (no hard instrument) and the balloon is not entirely dismissible. The hypothesis is already at its ceiling (override): a record, not a calibration, contribution."
-    }
-  ]
+  }
 }

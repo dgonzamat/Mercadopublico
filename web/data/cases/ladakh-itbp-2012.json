@@ -61,21 +61,5 @@
     "ontologico": 0.01,
     "tratado": 0.005,
     "indet": 0.13
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Tres agencias técnicas indias (ISRO/DRDO/NTRO) más PMO en cadena de mando — patrón de manejo institucional sostenido sin closure pública",
-      "rationaleEn": "Three Indian technical agencies (ISRO/DRDO/NTRO) plus PMO in chain of command — pattern of sustained institutional handling without public closure"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Minimal y deliberadamente débil: la persistencia y el comportamiento descartan plasma o auroras, pero la explicación natural dominante —Júpiter y Venus mal identificados, con desfase sidéreo de 4 min/día confirmado por el Indian Institute of Astrophysics— es probablemente correcta, de modo que el caso apenas mueve esta hipótesis.",
-      "rationaleEn": "Minimal and deliberately weak: persistence and behavior rule out plasma or auroras, but the dominant natural explanation —misidentified Jupiter and Venus, with the 4-min/day sidereal offset confirmed by the Indian Institute of Astrophysics— is probably correct, so the case barely moves this hypothesis."
-    }
-  ]
+  }
 }

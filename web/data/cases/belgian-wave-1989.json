@@ -71,36 +71,6 @@
       "note": "Independent technical analysis"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Lock radar F-16 + 9 capturas confirmadas + maniobras a 46G documentadas oficialmente por la Fuerza Aérea Belga. Compatible con plataforma militar avanzada (incl. F-117 era), pero el rendimiento excede aeronaves conocidas de la época.",
-      "rationaleEn": "F-16 radar lock + 9 confirmed captures + 46G maneuvers officially documented by the Belgian Air Force. Compatible with advanced military platform (incl. F-117 era), but performance exceeds known aircraft of the period."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Misma ambigüedad de H3-H5 pero algo más débil que Tehran/Nimitz: el reporte se apoya principalmente en lock radar + visual sin firma IR equivalente.",
-      "rationaleEn": "Same H3-H5 ambiguity but slightly weaker than Tehran/Nimitz: the report rests mainly on radar lock + visual without equivalent IR signature."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Lock radar + altitud + maniobras 46G + reportes simultáneos de múltiples gendarmes en tierra son incompatibles con fenómenos atmosféricos.",
-      "rationaleEn": "Radar lock + altitude + 46G maneuvers + simultaneous reports from multiple ground gendarmes are incompatible with atmospheric phenomena."
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Patrón 8k presente — interferencia EM y aceleraciones 46G fuera del rango clásico apuntan parcialmente a física no convencional",
-      "rationaleEn": "Pattern 8k present — EM interference and 46G accelerations outside the classical range partially point to non-conventional physics"
-    }
-  ],
   "name_en": "Belgian Wave (F-16)",
   "posterior": {
     "mundano": 0.16,

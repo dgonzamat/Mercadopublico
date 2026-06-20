@@ -89,65 +89,17 @@ export function heterogeneidad(p: Posterior): number {
   return 1 - (p.mundano || 0);
 }
 
-// ─── Sembrado provisional desde campos legacy ────────────────────────────
+// ─── Fallback de posterior ───────────────────────────────────────────────
+//
+// Todos los casos no-documento llevan un `posterior` hand-coded (invariante M1
+// del audit). Esta función es solo una red de seguridad para un caso futuro
+// sin posterior: deja la masa anómala como indeterminable (no inventa clase).
 
-const HYP_TO_CLASS: Record<string, MeceClassId> = {
-  misidentificacion: "mundano",
-  "fenomenos-naturales": "natural_desc",
-  "programas-clasificados": "clasificada",
-  "tecnologia-adversaria": "adversaria",
-  "ingenieria-inversa": "ing_inversa",
-  interdimensional: "interdimensional",
-  "ontologico-no-materialista": "ontologico",
-  "tratado-greys": "tratado",
-  // entidades-no-humanas (umbrella) se reparte entre las 3 subclases (abajo)
-  // heterogeneidad: meta-claim, no aporta a una clase concreta
-};
-
-const STRENGTH_W: Record<string, number> = {
-  minimal: 0.005, modest: 0.02, substantial: 0.05, "category-breaking": 0.15,
-};
-
-/**
- * Posterior PROVISIONAL para un caso sin `posterior`. Heurística transparente
- * (a reemplazar a mano en la migración):
- *   - anomalous = probability/100 acotado → masa de "explicación real".
- *   - el resto va a mundano (mayoría) + indet.
- *   - anomalous se reparte entre las clases reales según las contribuciones
- *     `supports` legacy; entidades-no-humanas (umbrella) se divide en sus 3
- *     subclases; sin contribuciones → indet.
- */
 export function seedPosterior(c: UAPCase): Posterior {
   const anomalous = Math.max(0.05, Math.min(0.95, (c.probability ?? 50) / 100));
-  const mundaneMass = 1 - anomalous;
-
   const p = emptyPosterior();
-  p.mundano = mundaneMass * 0.7;
-  p.indet = mundaneMass * 0.3;
-
-  const w: Partial<Record<MeceClassId, number>> = {};
-  let totalW = 0;
-  const addW = (cls: MeceClassId, ww: number) => {
-    w[cls] = (w[cls] ?? 0) + ww;
-    totalW += ww;
-  };
-  for (const e of c.evidenceContribution ?? []) {
-    if (e.direction !== "supports") continue;
-    const ww = STRENGTH_W[e.strength] ?? 0.005;
-    if (e.hypothesisId === "entidades-no-humanas") {
-      for (const sub of ENTIDADES_SUBCLASSES) addW(sub, ww / ENTIDADES_SUBCLASSES.length);
-      continue;
-    }
-    const cls = HYP_TO_CLASS[e.hypothesisId];
-    if (!cls || cls === "mundano") continue; // mundano ya cubierto
-    addW(cls, ww);
-  }
-
-  if (totalW > 0) {
-    for (const cls of CLASS_IDS) if (w[cls]) p[cls] += anomalous * (w[cls]! / totalW);
-  } else {
-    p.indet += anomalous;
-  }
+  p.mundano = (1 - anomalous) * 0.7;
+  p.indet = (1 - anomalous) * 0.3 + anomalous;
   return normalize(p);
 }
 

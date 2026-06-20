@@ -47,14 +47,5 @@
       "name": "SUFOI — Scandinavian UFO Information (archivo receptor de los expedientes daneses)",
       "url": "https://www.sufoi.dk/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El dataset danés es confirmación institucional directa de la tasa de ruido del universo pre-filtro: ~15.000 reportes en tres décadas, >98% resueltos convencionalmente, ~200 sin resolver. Es la estadística nacional completa más limpia del corpus para la hipótesis antecedente.",
-      "rationaleEn": "The Danish dataset is direct institutional confirmation of the pre-filter universe noise rate: ~15,000 reports over three decades, >98% conventionally resolved, ~200 unresolved. It is the corpus's cleanest complete national statistic for the antecedent hypothesis."
-    }
   ]
 }

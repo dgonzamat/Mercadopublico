@@ -87,35 +87,5 @@
     "ontologico": 0.05,
     "tratado": 0.04,
     "indet": 0.27
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Multi-sensor militar (radar tierra + radar aire-aire + cabina) con calificación DIA 'outstanding'. Anomalía consistente con tecnología clasificada aeroespacial avanzada, aunque el rendimiento observado excede plataformas conocidas de la época.",
-      "rationaleEn": "Multi-sensor military (ground radar + air-to-air radar + cockpit) with DIA 'outstanding' rating. Anomaly consistent with advanced classified aerospace technology, though observed performance exceeds known platforms of the era."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Evidencia ambigua entre H3 y H5 — esta es la dualidad canónica. Sub-objetos desprendiéndose del primario y maniobras coordinadas son consistentes con la categoría no humana, sin precedente material que los excluya.",
-      "rationaleEn": "Evidence ambiguous between H3 and H5 — this is the canonical duality. Sub-objects detaching from the primary and coordinated maneuvers are consistent with the non-human category, with no material precedent excluding them."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "substantial",
-      "rationale": "Falla EM sincronizada en dos aeronaves distintas, recuperable al alejarse, con radar lock confirmado: ningún fenómeno atmosférico conocido (plasma, sprite, ball lightning, ionización) produce ese acoplamiento electromagnético selectivo.",
-      "rationaleEn": "Synchronized EM failure across two distinct aircraft, recoverable upon disengagement, with confirmed radar lock: no known atmospheric phenomenon (plasma, sprite, ball lightning, ionization) produces that selective electromagnetic coupling."
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Patrón 8k de interferencia EM sincronizada en dos aeronaves distintas es signal débil pero presente de física exótica",
-      "rationaleEn": "Pattern 8k of synchronized EM interference across two distinct aircraft is a weak but present signal of exotic physics"
-    }
-  ]
+  }
 }

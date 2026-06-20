@@ -51,22 +51,6 @@
       "note": "Síntesis del caso y testimonios."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Un objeto grande que flota y maniobra a baja altura, observado a corta distancia por dos policías en servicio además del testigo inicial, presta apoyo a que algo real y maniobrable estaba presente. Minimal porque no hubo radar, foto ni película; por sólido que sea el testimonio profesional, no fija la naturaleza del objeto.",
-      "rationaleEn": "A large object that floats and maneuvers at low altitude, observed at close range by two on-duty police officers in addition to the initial witness, lends support to something real and maneuverable being present. Minimal because there was no radar, photo or film; however solid the professional testimony, it does not fix the object's nature."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Las explicaciones prosaicas que Blue Book intentó —el ejercicio Operación Big Blast y la confusión de estrellas/planetas— fallaron por desajuste horario y no encajan con un objeto a baja altura que tres testigos vieron maniobrar. Minimal porque, sin instrumentación, no puede excluirse del todo alguna confusión no identificada.",
-      "rationaleEn": "The prosaic explanations Blue Book attempted —the Operation Big Blast exercise and confusion of stars/planets— failed on timing and do not fit a low-altitude object three witnesses saw maneuver. Minimal because, without instrumentation, some unidentified confusion cannot be entirely excluded."
-    }
-  ],
   "posterior": {
     "mundano": 0.30,
     "natural_desc": 0.06,

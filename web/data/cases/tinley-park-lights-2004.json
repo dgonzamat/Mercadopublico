@@ -67,21 +67,5 @@
       "url": "https://chicago.suntimes.com/news/2014/7/2/18611840/happy-world-ufo-day-5-notable-ufo-sightings-in-illinois-history",
       "note": "Cobertura periodística del caso en contexto."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Todos los rasgos reportados —luces rojizo-naranjas (color de llama), silencio, deriva con el viento, 'formación' de varios puntos— coinciden con farolillos voladores o bengalas, una explicación convencional económica que cubre el conjunto sin residuo. El caso ilustra que un avistamiento masivo y muy participado puede tener causa prosaica. Modest, no substantial, porque no hubo identificación instrumental concluyente (ni recuperación de farolillos ni análisis del video) y el investigador de campo descartó el fraude.",
-      "rationaleEn": "All reported features —reddish-orange lights (flame color), silence, drift with the wind, a 'formation' of several points— match sky lanterns or flares, an economical conventional explanation that covers the whole without residue. The case illustrates that a mass, highly-participated sighting can have a prosaic cause. Modest, not substantial, because there was no conclusive instrumental identification (no recovered lanterns or video analysis) and the field investigator ruled out a hoax."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Como evidencia de entidades no humanas el caso es débil: la firma encaja con farolillos y no hay datos duros (instrumentación, material) que exijan una explicación exótica. Minimal porque una afirmación existencial no baja por un candidato prosaico; queda como verdicto escéptico por caso.",
-      "rationaleEn": "As evidence of non-human entities the case is weak: the signature matches lanterns and there is no hard data (instrumentation, material) requiring an exotic explanation. Minimal because an existential claim does not drop for one prosaic candidate; it stands as a per-case skeptical verdict."
-    }
   ]
 }

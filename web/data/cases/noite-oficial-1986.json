@@ -61,14 +61,5 @@
       "note": "Grabaciones piloto-controlador de la noche del 19/05/1986.",
       "note_en": "Pilot-controller recordings from the night of 19 May 1986."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Evento multisensor e institucional: detección por radar en múltiples emplazamientos + interceptación con cinco cazas + testigos pilotos + un testigo civil de peso + reconocimiento oficial del ministro de Aeronáutica, con un informe que atribuye 'inteligencia' y rendimiento (esquive, formación, aceleración extrema) no explicado por la tecnología conocida. Substantial por la convergencia de modalidades y el respaldo estatal; no category-breaking porque no hubo recuperación ni una identificación cerrada, y persisten lecturas escépticas de los retornos de radar.",
-      "rationaleEn": "Multi-sensor, institutional event: radar detection at multiple sites + interception with five fighters + pilot witnesses + a weighty civilian witness + official recognition by the Minister of Aeronautics, with a report attributing 'intelligence' and performance (evasion, formation, extreme acceleration) unexplained by known technology. Substantial because of the convergence of modalities and state backing; not category-breaking because there was no recovery or closed identification, and skeptical readings of the radar returns persist."
-    }
   ]
 }

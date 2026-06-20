@@ -93,28 +93,5 @@
     "ontologico": 0.06,
     "tratado": 0.04,
     "indet": 0.25
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Video ATFLIR oficialmente liberado por el Pentágono + radar SPY-1 Aegis + 8 testigos militares calificados durante una semana. Plataforma con envolvente de rendimiento (descenso 80k-20k ft en <1s) fuera de cualquier aeronave conocida.",
-      "rationaleEn": "ATFLIR video officially released by the Pentagon + SPY-1 Aegis radar + 8 qualified military witnesses over a week. Platform performance envelope (80k-20k ft descent in <1s) outside any known aircraft."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Misma ambigüedad Tehran-style: el rendimiento observado es consistente tanto con tecnología clasificada avanzada como con plataforma no humana. La firma IR de baja temperatura + ausencia de superficies de control aumenta la incompatibilidad con conocido.",
-      "rationaleEn": "Same Tehran-style ambiguity: observed performance is consistent with both advanced classified tech and non-human platform. Low-temperature IR signature + absence of control surfaces increases incompatibility with the known."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "substantial",
-      "rationale": "Firma IR FLIR + lock de radar AESA + observación visual coordinada multi-pilot durante una semana son incompatibles con cualquier fenómeno atmosférico catalogado.",
-      "rationaleEn": "FLIR IR signature + AESA radar lock + coordinated multi-pilot visual observation over a week are incompatible with any catalogued atmospheric phenomenon."
-    }
-  ]
+  }
 }
