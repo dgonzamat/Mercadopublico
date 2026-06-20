@@ -6,7 +6,6 @@ import {
   PROTO_CASES,
   expectedCounts,
   roundedShares,
-  noisyOrAtLeastOne,
   modal,
   validatePosteriors,
   type MeceClassId,
@@ -74,8 +73,8 @@ export default function ProbabilidadesProtoPage() {
       <section className="mt-12">
         <H2>
           <T
-            es="Nº esperado de casos por explicación"
-            en="Expected number of cases per explanation"
+            es="Las seis explicaciones reparten el 100% del corpus"
+            en="The six explanations partition 100% of the corpus"
           />
         </H2>
         <Caption>
@@ -167,43 +166,6 @@ export default function ProbabilidadesProtoPage() {
               </div>
             );
           })}
-        </div>
-      </section>
-
-      {/* === Existenciales coherentes (bonus) === */}
-      <section className="mt-16">
-        <H2>
-          <T
-            es="Las existenciales, ahora coherentes"
-            en="The existential claims, now coherent"
-          />
-        </H2>
-        <Caption>
-          <T
-            es="P(≥1 caso es X) = 1 − Πᵢ(1 − P(X|casoᵢ)), noisy-OR sobre los mismos posteriores. Esto SÍ asume independencia entre casos (a diferencia del agregado de arriba)."
-            en="P(≥1 case is X) = 1 − Πᵢ(1 − P(X|caseᵢ)), noisy-OR over the same posteriors. This DOES assume independence between cases (unlike the aggregate above)."
-          />
-        </Caption>
-        <p className="mt-2 inline-block border border-accent/50 px-2 py-1 font-mono text-[11px] uppercase tracking-widest text-accent">
-          <T
-            es="⚠ No es una partición — NO suman 100% (son preguntas sí/no independientes)"
-            en="⚠ Not a partition — they do NOT sum to 100% (independent yes/no questions)"
-          />
-        </p>
-        <div className="mt-6 space-y-2">
-          {(["no_humano", "clasificada", "adversaria"] as MeceClassId[]).map(
-            (id) => (
-              <div
-                key={id}
-                className="flex items-baseline justify-between font-mono text-xs"
-              >
-                <span className="uppercase tracking-wider text-text">
-                  <T es={`≥1 caso · ${LABEL[id].es}`} en={`≥1 case · ${LABEL[id].en}`} />
-                </span>
-                <span className="text-muted">{pct(noisyOrAtLeastOne(id))}%</span>
-              </div>
-            ),
-          )}
         </div>
       </section>
 
