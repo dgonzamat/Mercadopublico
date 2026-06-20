@@ -41,5 +41,13 @@
       "name": "CIA FOIA Reading Room — 'ALMA-ATA PATROLMEN REPORT UFO SIGHTING'",
       "url": "https://www.cia.gov/readingroom/document/0005517792"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.63,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.025,
+    "indet": 0.285
+  }
 }

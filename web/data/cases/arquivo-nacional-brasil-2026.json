@@ -55,21 +55,5 @@
       "name": "Correio Braziliense — 'Arquivo Nacional do Brasil divulga 900 registros de OVNIs' (cifra de prensa 2026)",
       "url": "https://www.correiobraziliense.com.br/cbradar/arquivo-nacional-do-brasil-divulga-900-registros-de-ovnis-no-pais-veja-como-acessar/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Un archivo estatal abierto de cientos de reportes militares y civiles documenta el procesamiento institucional sostenido del fenómeno por una potencia no estadounidense, pero su apertura misma resta peso a la idea de un encubrimiento universal; no se pronuncia sobre el origen de los casos individuales.",
-      "rationaleEn": "An open state archive of hundreds of military and civilian reports documents a non-U.S. power's sustained institutional processing of the phenomenon, but its very openness undercuts the idea of a universal cover-up; it does not pronounce on the origin of individual cases."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El acervo contiene casos sólidos no explicados (Colares, Trindade, Noite Oficial) junto a una mayoría de reportes mundanos; mantiene viva la hipótesis sin discriminar origen, y su valor es sobre todo metodológico —datos abiertos para estudiar la distribución real.",
-      "rationaleEn": "The collection contains solid unexplained cases (Colares, Trindade, Official Night) alongside a majority of mundane reports; it keeps the hypothesis alive without discriminating origin, and its value is mainly methodological —open data to study the real distribution."
-    }
   ]
 }

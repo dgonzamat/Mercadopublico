@@ -49,21 +49,5 @@
       "name": "CIA CREST — Unidentified Flying Objects Over Morocco and Algeria",
       "url": "https://www.cia.gov/readingroom/docs/DOC_0000015466.pdf"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Una potencia no alineada convoca a una embajada extranjera para discutir tecnología aérea no identificada — patrón consistente con apoyo institucional al fenómeno como amenaza aérea real",
-      "rationaleEn": "A non-aligned power summons a foreign embassy to discuss unidentified aerial technology — pattern consistent with institutional support for the phenomenon as a real air-defense threat"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El propio Ministerio argelino ya había descartado satélites en órbita decadente y ópticas atmosféricas antes de pedir consulta",
-      "rationaleEn": "The Algerian Ministry itself had already ruled out decaying-orbit satellites and atmospheric optics before requesting consultation"
-    }
   ]
 }

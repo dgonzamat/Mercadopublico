@@ -52,34 +52,12 @@
       "url": "https://praguepig.com/2018/08/vranov-nad-dyji-ufo-case/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "ATC militar checoslovaco autoriza engagement contra objeto desconocido — confirma manejo institucional sostenido; ordenó destrucción de registros (patrón encubrimiento)",
-      "rationaleEn": "Czechoslovak military ATC authorizes engagement against unknown object — confirms sustained institutional handling; ordered destruction of records (cover-up pattern)"
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Cambios de velocidad 60→2,700 km/h y evasión sistemática de weapons-lock exceden envolvente cinemática de cualquier plataforma humana de 1987",
-      "rationaleEn": "Speed changes 60→2,700 km/h and systematic weapons-lock evasion exceed kinematic envelope of any human platform from 1987"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "substantial",
-      "rationale": "Persecución activa con Mi-24 + ATC + múltiples estaciones de radio + comportamiento direccional excluyen plasma, meteoro o cualquier fenómeno atmosférico catalogado",
-      "rationaleEn": "Active Mi-24 pursuit + ATC + multiple radio stations + directional behavior exclude plasma, meteor or any catalogued atmospheric phenomenon"
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Cambios de velocidad de 60 a 2,700 km/h sin signo de aceleración convencional sugiere física no estándar",
-      "rationaleEn": "Speed changes from 60 to 2,700 km/h with no sign of conventional acceleration suggests non-standard physics"
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0.14,
+    "adversaria": 0.16,
+    "nohumano_encubierto": 0.17,
+    "nohumano_abierto": 0.11,
+    "indet": 0.27
+  }
 }

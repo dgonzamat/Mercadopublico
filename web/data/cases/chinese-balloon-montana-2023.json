@@ -75,15 +75,14 @@
       "note": "Investigación periodística sobre la cadena de decisión."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El caso muestra que NORAD y AARO no habían detectado/reportado públicamente cuatro sobrevuelos chinos previos. Esto tensiona ligeramente la hipótesis 'programas-clasificados US explican casos UAP previos' porque revela que parte del registro era de origen adversario, no doméstico. Minimal weakens: la falta de detección US no refuta programas US, solo revela que el universo de explicaciones es más amplio.",
-      "rationaleEn": "The case shows that NORAD and AARO had not publicly detected/reported four prior Chinese overflights. This slightly tensions the 'U.S. classified programs explain prior UAP cases' hypothesis because it reveals that part of the record was adversary-origin, not domestic. Minimal weakens: U.S. detection failure does not refute U.S. programs, only reveals that the explanation universe is broader."
-    }
-  ],
+  "posterior": {
+    "mundano_natural": 0.04,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.92,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.0,
+    "indet": 0.02
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Chinese_Balloon_route.svg?width=800",
     "alt": "Mapa de la trayectoria del globo de vigilancia chino de 2023.",

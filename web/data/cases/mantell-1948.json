@@ -73,21 +73,13 @@
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:Kentucky_National_Guard_portrait_of_Captain_Thomas_F._Mantell_Jr.jpg"
   },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La explicación aceptada —globo Skyhook de un programa clasificado de la Navy— convierte al caso en prueba documentada de que los programas clasificados generan incidentes UAP genuinos con costo humano: un piloto murió persiguiendo un artefacto que su propia cadena de mando no podía identificarle. Es el ejemplo fundacional del mecanismo 'cobertura por misidentificación'.",
-      "rationaleEn": "The accepted explanation —a Skyhook balloon from a classified Navy program— makes the case documented proof that classified programs generate genuine UAP incidents at human cost: a pilot died chasing an artifact his own chain of command could not identify for him. It is the foundational example of the 'cover via misidentification' mechanism."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "La explicación Skyhook es plausible, consistente con la trayectoria y ampliamente aceptada — el caso no sostiene lectura anómala.",
-      "rationaleEn": "The Skyhook explanation is plausible, consistent with the trajectory and widely accepted — the case does not sustain an anomalous reading."
-    }
-  ],
-  "name_en": "Mantell crash"
+  "name_en": "Mantell crash",
+  "posterior": {
+    "mundano_natural": 0.14,
+    "humana_clasificada": 0.62,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.03,
+    "indet": 0.18
+  }
 }

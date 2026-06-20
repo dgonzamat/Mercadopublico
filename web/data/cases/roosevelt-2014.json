@@ -59,27 +59,12 @@
       "note_en": "The Department of Defense confirmed the authenticity of the three videos in April 2020."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La confirmación multi-sensor (radar + ATFLIR + vista) descarta el artefacto óptico aislado, y la recurrencia casi diaria durante meses descarta el evento puntual irrepetible. Objetos sin superficies de control ni escape visible que se mantienen contra vientos de 100+ nudos están fuera del envelope conocido. Modest porque la ambigüedad sensorial de Gimbal (debate sobre paralaje/rotación del cardán) impide tratarlo como prueba definitiva.",
-      "rationaleEn": "Multi-sensor confirmation (radar + ATFLIR + visual) rules out an isolated optical artifact, and near-daily recurrence over months rules out a one-off unrepeatable event. Objects with no control surfaces or visible exhaust holding station against 100-knot-plus winds are outside the known envelope. Modest because Gimbal's sensor ambiguity (parallax/gimbal-rotation debate) prevents treating it as definitive proof."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La aparición de objetos no identificados de forma persistente en un área de entrenamiento militar activa es compatible con drones o plataformas de prueba —propias o adversarias— operando sin coordinación con las tripulaciones. Minimal porque el comportamiento de vuelo observado (sin propulsión visible, contra viento extremo) no encaja con tecnología convencional conocida.",
-      "rationaleEn": "The persistent appearance of unidentified objects in an active military training area is consistent with drones or test platforms —friendly or adversary— operating without coordination with the crews. Minimal because the observed flight behavior (no visible propulsion, against extreme wind) does not fit known conventional technology."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "La persistencia espacial y temporal (mismas áreas, casi a diario, durante meses) y la confirmación simultánea en radar e infrarrojo no encajan con fenómenos atmosféricos transitorios. Minimal porque el caso no resuelve la hipótesis por sí solo.",
-      "rationaleEn": "The spatial and temporal persistence (same areas, near-daily, over months) and simultaneous radar-plus-infrared confirmation do not fit transient atmospheric phenomena. Minimal because the case does not resolve the hypothesis on its own."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.14,
+    "humana_clasificada": 0.16,
+    "adversaria": 0.14,
+    "nohumano_encubierto": 0.16,
+    "nohumano_abierto": 0.1,
+    "indet": 0.3
+  }
 }

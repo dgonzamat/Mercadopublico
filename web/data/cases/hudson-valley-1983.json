@@ -53,28 +53,13 @@
       "name": "CUFOS — Hudson Valley Case File"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Los 'Stormville flyers' (ultraligeros en formación nocturna) explican documentadamente un subconjunto de los avistamientos — la explicación es real pero parcial.",
-      "rationaleEn": "The 'Stormville flyers' (ultralights in night formation) documentedly explain a subset of the sightings — the explanation is real but partial."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El incidente de Indian Point (objeto sosteniéndose sobre el reactor nuclear con personal de seguridad como testigos y respuesta de seguridad documentada) resiste la explicación de ultraligeros por la duración del hover y la zona de exclusión aérea.",
-      "rationaleEn": "The Indian Point incident (object hovering over the nuclear reactor with security personnel as witnesses and a documented security response) resists the ultralight explanation given the hover duration and the no-fly zone."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La morfología triángulo/boomerang masivo y silencioso es la firma que una década después se asociaría a plataformas LTA y vuelo furtivo experimental — la lectura 'prototipo doméstico' es viable para el subconjunto no explicado por ultraligeros.",
-      "rationaleEn": "The massive, silent triangle/boomerang morphology is the signature that a decade later would be associated with LTA platforms and experimental stealth flight — the 'domestic prototype' reading is viable for the subset not explained by ultralights."
-    }
-  ],
+  "posterior": {
+    "mundano_natural": 0.47,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.09,
+    "indet": 0.27
+  },
   "name_en": "Hudson Valley Boomerang"
 }

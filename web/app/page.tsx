@@ -205,8 +205,8 @@ export default function HomePage() {
               className="whitespace-nowrap"
             >
               <T
-                es="Por qué cada hipótesis tiene esa probabilidad →"
-                en="Why each hypothesis has that probability →"
+                es="Cómo se reparte el corpus entre explicaciones →"
+                en="How the corpus splits among the explanations →"
               />
             </Cta>
           </div>

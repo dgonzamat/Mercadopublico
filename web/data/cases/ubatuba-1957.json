@@ -47,13 +47,12 @@
       "note": "Síntesis de la cronología y de los análisis de laboratorio."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Caso de muestra material cuya pretensión anómala no sobrevivió al escrutinio moderno: la pureza del magnesio es real pero no anómala (producible en la Tierra) y el análisis isotópico no halló desviaciones significativas, mientras la procedencia (carta anónima, sin testigos) es inverificable. Respalda la lectura escéptica como ejemplo de que sin cadena de custodia ni anomalía confirmada, una 'muestra física' no aporta evidencia. Minimal y override: aporte epistémico/de registro, no de calibración.",
-      "rationaleEn": "A material-sample case whose anomalous claim did not survive modern scrutiny: the magnesium's purity is real but not anomalous (producible on Earth) and isotopic analysis found no significant departures, while the provenance (anonymous letter, no witnesses) is unverifiable. It backs the skeptical reading as an example that without chain of custody or confirmed anomaly, a 'physical sample' contributes no evidence. Minimal and override: an epistemic/record contribution, not a calibration one."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.67,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.04,
+    "indet": 0.22
+  }
 }

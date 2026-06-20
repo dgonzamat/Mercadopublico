@@ -57,20 +57,12 @@
       "note": "Documenta el mecanismo prosaico (lanzamientos confundidos con OVNIs) en China."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Es el caso testigo de que incluso el avistamiento más masivo puede tener causa prosaica. La altitud orbital (~650 km), la velocidad espacial (~1,6 km/s) reconstruidas por un astrónomo de la Academia China de Ciencias y la morfología en espiral coinciden con el venteo de una etapa de cohete o satélite — el mismo mecanismo confirmado en Noruega 2009 y en espirales chinas posteriores. Modest, no substantial, porque la atribución a un lanzamiento concreto de 1981 no quedó formalmente cerrada en el registro público.",
-      "rationaleEn": "It is the test case that even the most massive sighting can have a prosaic cause. The orbital altitude (~650 km), space-regime speed (~1.6 km/s) reconstructed by a Chinese Academy of Sciences astronomer, and the spiral morphology match the venting of a rocket stage or satellite — the same mechanism confirmed in Norway 2009 and in later Chinese spirals. Modest, not substantial, because attribution to a specific 1981 launch was not formally closed in the public record."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Como evidencia de entidades no humanas el caso es casi nulo: la firma física apunta a un objeto humano en régimen espacial, no a una nave bajo control anómalo. Minimal porque una afirmación existencial no baja por un candidato descartado; queda como verdicto escéptico por caso.",
-      "rationaleEn": "As evidence of non-human entities the case is nearly null: the physical signature points to a human object in a space regime, not a craft under anomalous control. Minimal because an existential claim does not drop for one ruled-out candidate; it stands as a per-case skeptical verdict."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.88,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.015,
+    "indet": 0.055
+  }
 }

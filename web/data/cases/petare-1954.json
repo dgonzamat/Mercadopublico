@@ -57,13 +57,12 @@
       "note": "Obra venezolana que recogió y difundió el caso; fuente primaria de la casuística nacional temprana."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Encuentro cercano de dos testigos con figuras y un objeto luminoso, con lesiones atendidas y constancia fiscal de sobriedad/lucidez. Minimal —deliberadamente bajo— porque es un CE-III de tono dramático, de solo dos testigos, sin sensor ni traza material verificable más allá de las lesiones, y propio de una época de fuerte folclor de 'ocupantes' (oleada de 1954).",
-      "rationaleEn": "Close encounter of two witnesses with figures and a luminous object, with treated injuries and a prosecutor's record of sobriety/lucidity. Minimal —deliberately low— because it is a dramatically toned CE-III, with only two witnesses, no sensor or verifiable material trace beyond the injuries, and typical of an era of strong 'occupant' folklore (the 1954 wave)."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.53,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.18,
+    "indet": 0.23
+  }
 }

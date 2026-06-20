@@ -54,13 +54,12 @@
       "note": "Documentación y audio de la grabación secreta."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Dos testigos describieron un encuentro con ocupantes y mantuvieron su relato de forma consistente, y la grabación secreta del sheriff captó angustia genuina en lugar de un montaje — lo que distingue el caso de un fraude ordinario. Minimal porque es una experiencia subjetiva de abducción sin ninguna evidencia física, fotográfica ni instrumental: sinceridad no es confirmación.",
-      "rationaleEn": "Two witnesses described an encounter with occupants and held their account consistently, and the sheriff's secret recording captured genuine distress rather than a hoax — which distinguishes the case from an ordinary fraud. Minimal because it is a subjective abduction experience with no physical, photographic or instrumental evidence: sincerity is not confirmation."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.13,
+    "indet": 0.33
+  }
 }

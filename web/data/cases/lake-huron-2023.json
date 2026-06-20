@@ -64,34 +64,12 @@
       "url": "https://www.aaro.mil/Annual-Reports/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La cadena de mando NORAD + decisión presidencial + AIM-9X constituyen el tratamiento militar del fenómeno como amenaza no acreditada. Una lectura US-program existe (drones experimentales US no acreditados) pero el reconocimiento posterior de AARO/DoD de la serie de globos chinos previos categorizados como UAP empuja la presunción razonable hacia adversaria, no doméstica. Modest captura la ambivalencia: programas-clasificados US sigue siendo una lectura plausible pero ya no la default.",
-      "rationaleEn": "The NORAD chain of command + presidential decision + AIM-9X constitute military treatment of the phenomenon as an unaccredited threat. A U.S.-program reading exists (unacknowledged experimental U.S. drones) but the subsequent AARO/DoD acknowledgment of the series of prior Chinese balloons categorized as UAP pushes the reasonable presumption toward adversary, not domestic. Modest captures the ambivalence: U.S. classified programs remains a plausible reading but no longer the default."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Los fragmentos cayeron al lago Huron sin recuperación pública conocida, lo que mantiene la hipótesis técnicamente no cerrada — el experimento material pendiente descrito en /probabilidades. No obstante, la evaluación oficial de las imágenes infrarrojas desclasificadas en 2026 ('probablemente de naturaleza similar a un globo') reduce el peso de esta lectura: 'minimal' captura un residuo de incertidumbre, no un indicio positivo.",
-      "rationaleEn": "The fragments fell into Lake Huron with no known public recovery, leaving the hypothesis technically open — the pending material experiment described in /probabilidades. However, the official assessment of the infrared footage declassified in 2026 ('likely balloon-like in nature') reduces the weight of this reading: 'minimal' captures a residue of uncertainty, not a positive indication."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Tracking radar sólido + firma IR + capacidad de blanqueo por AIM-9X excluye fenómenos atmosféricos (plasma, sprites, ball lightning).",
-      "rationaleEn": "Solid radar tracking + IR signature + ability to be locked by AIM-9X excludes atmospheric phenomena (plasma, sprites, ball lightning)."
-    },
-    {
-      "hypothesisId": "tecnologia-adversaria",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Lake Huron fue derribado entre el 10 y 12 de febrero de 2023, en la ventana inmediatamente posterior al derribo del globo chino confirmado de Carolina del Sur (4 feb) y dos derribos previos sin identificar (Alaska 10 feb, Yukon 11 feb). El reconocimiento posterior de AARO/DoD de la serie histórica de globos chinos sobre territorio EE.UU. categorizados como UAP eleva substancialmente la presunción de que Lake Huron también es una plataforma de otro Estado, sin atribución oficial. La ausencia de recuperación pública de los restos no permite cierre, pero la base bayesiana razonable ahora favorece plataforma estatal extranjera sobre anómala mientras no se pruebe lo contrario.",
-      "rationaleEn": "Lake Huron was shot down between Feb 10 and 12, 2023, in the window immediately following the confirmed Chinese balloon shoot-down off South Carolina (Feb 4) and two prior unidentified shoot-downs (Alaska Feb 10, Yukon Feb 11). The subsequent AARO/DoD acknowledgment of the historical series of Chinese balloons over U.S. territory categorized as UAP substantially elevates the presumption that Lake Huron is also another state's platform, officially unattributed. The absence of public wreckage recovery prevents closure, but the reasonable Bayesian base now favors a foreign state platform over anomalous unless proven otherwise."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.22,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.04,
+    "indet": 0.17
+  }
 }

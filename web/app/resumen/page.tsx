@@ -152,7 +152,7 @@ export default function ResumenPage() {
                 Versión accesible del análisis completo. Para profundidad
                 técnica, ver{" "}
                 <Link href="/probabilidades" className="text-accent hover:underline">
-                  las probabilidades por hipótesis
+                  las probabilidades por explicación
                 </Link>{" "}
                 y{" "}
                 <Link href="/about" className="text-accent hover:underline">
@@ -166,7 +166,7 @@ export default function ResumenPage() {
                 Accessible version of the full analysis. For technical depth,
                 see{" "}
                 <Link href="/probabilidades" className="text-accent hover:underline">
-                  the per-hypothesis probabilities
+                  the per-explanation probabilities
                 </Link>{" "}
                 and{" "}
                 <Link href="/about" className="text-accent hover:underline">
@@ -329,8 +329,8 @@ export default function ResumenPage() {
         </Cta>
         <Cta href="/probabilidades" variant="secondary">
           <T
-            es="Por qué cada hipótesis tiene esa probabilidad"
-            en="Why each hypothesis has that probability"
+            es="Cómo se reparte el corpus entre explicaciones"
+            en="How the corpus splits among the explanations"
           />
         </Cta>
         <Cta href="/atlas" variant="secondary">

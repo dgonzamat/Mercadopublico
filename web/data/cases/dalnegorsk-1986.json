@@ -52,20 +52,12 @@
       "name": "Análisis metalográfico — Instituto Aerodinámico de Khabarovsk (Academia de Ciencias, Far Eastern Branch)"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "Material recuperado in situ analizado por aparato académico soviético con publicación abierta — modalidad de evidencia física directa con cadena de custodia",
-      "rationaleEn": "Material recovered in situ analyzed by Soviet academic apparatus with open publication — direct physical evidence modality with chain of custody"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Aleaciones reportadas con estructuras metalográficas no replicables por proceso natural conocido",
-      "rationaleEn": "Reported alloys with metallographic structures not replicable by any known natural process"
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.46,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.11,
+    "nohumano_abierto": 0.05,
+    "indet": 0.3
+  }
 }

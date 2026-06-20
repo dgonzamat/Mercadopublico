@@ -51,14 +51,5 @@
       "name": "Pocantico / Sturrock Panel — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/Sturrock_panel"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Un panel independiente de físicos revisó la evidencia física UAP y concluyó que un subconjunto presenta fenómenos sin explicación convencional que merecen estudio. Tensiona débilmente la lectura de que todo es identificación errónea: científicos calificados no pudieron descartar todo el residuo físico. Minimal: el panel explícitamente no afirma nada exótico y enfatiza la necesidad de mejores datos — es un llamado al método, no una conclusión positiva.",
-      "rationaleEn": "An independent panel of physicists reviewed UAP physical evidence and concluded a subset presents phenomena without conventional explanation that merit study. It weakly strains the reading that it's all misidentification: qualified scientists could not dismiss the entire physical residue. Minimal: the panel explicitly asserts nothing exotic and emphasizes the need for better data — it is a call to method, not a positive conclusion."
-    }
   ]
 }

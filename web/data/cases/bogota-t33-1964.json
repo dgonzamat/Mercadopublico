@@ -46,13 +46,12 @@
       "url": "https://www.vanguardia.com/entretenimiento/tendencias/2023/09/13/cronica-de-un-encuentro-cercano-la-verdad-sobre-el-avion-de-guerra-persiguio-ovni-en-bogota-en-1964/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Caso de aviación con múltiples pilotos profesionales, torre de control y una respuesta militar de intercepción (T-33). Minimal porque es esencialmente visual y testimonial —sin radar conservado ni fotografías—, propio de 1964, y admite candidatos convencionales que la documentación de archivo no permite descartar.",
-      "rationaleEn": "Aviation case with multiple professional pilots, a control tower and a military interception response (T-33). Minimal because it is essentially visual and testimonial —no preserved radar or photographs—, typical of 1964, and admits conventional candidates that the archival documentation does not allow ruling out."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.05,
+    "indet": 0.27
+  }
 }

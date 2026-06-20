@@ -40,22 +40,6 @@
     "Total absence of physical traces of the creatures or landing marks",
     "Recurring skeptical explanation (great horned owls) never conclusively confirmed or refuted"
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Once testigos, varias horas y respuesta policial inmediata dan al relato una densidad poco común para la época. Pero no quedó traza física alguna de las criaturas —solo prueba de que se disparó contra algo— y la explicación prosaica sigue viva. Minimal y deliberadamente bajo: el caso vale por su densidad testimonial e institucional, no por capacidad discriminante.",
-      "rationaleEn": "Eleven witnesses, several hours and an immediate police response give the account an uncommon density for the era. But no physical trace of the creatures remained —only proof that something was fired at— and the prosaic explanation remains alive. Minimal and deliberately low: the case is worth its testimonial and institutional density, not its discriminating power."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La hipótesis escéptica clásica —búhos cornudos grandes, territoriales y de ojos reflectantes, magnificados por la oscuridad, el miedo y el alcohol— explica buena parte de los rasgos reportados (estatura, ojos luminosos, brazos largos, movimiento flotante, inmunidad a los disparos por simple fallo de puntería nocturna). Nunca se confirmó, pero la ausencia de rastros la mantiene competitiva.",
-      "rationaleEn": "The classic skeptical hypothesis —large, territorial great horned owls with reflective eyes, magnified by darkness, fear and alcohol— explains much of the reported traits (height, luminous eyes, long arms, floating movement, immunity to shots via simple nighttime missed aim). It was never confirmed, but the absence of traces keeps it competitive."
-    }
-  ],
   "sources": [
     {
       "name": "HISTORY — 'How the Little Green Men Phenomenon Began on a Kentucky Farm'",
@@ -65,5 +49,13 @@
       "name": "Center for Inquiry / Skeptical Inquirer — 'Siege of the Little Green Men: The 1955 Kelly, Kentucky, Incident'",
       "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2006/11/22164554/p12.pdf"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.57,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.005,
+    "nohumano_encubierto": 0.065,
+    "nohumano_abierto": 0.14,
+    "indet": 0.21
+  }
 }

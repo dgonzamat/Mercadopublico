@@ -43,5 +43,13 @@
       "name": "UFO sightings in the Netherlands — Soesterberg air base (1979)",
       "url": "https://en.wikipedia.org/wiki/Soesterberg_Air_Base"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.03,
+    "indet": 0.32
+  }
 }

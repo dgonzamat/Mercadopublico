@@ -51,20 +51,12 @@
       "note": "Síntesis del caso y testimonios."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "La explicación dominante —bandadas de aves nocturnas reflejando el alumbrado urbano y de un autocine— cubre de forma económica los rasgos reportados (formación, color azul-verdoso, velocidad aparente), e ilustra que un avistamiento masivo con testigos cualificados y fotos puede tener causa prosaica. Modest porque la atribución a aves nunca fue aceptada de forma unánime y las fotos no se explicaron de forma concluyente.",
-      "rationaleEn": "The dominant explanation —flocks of night birds reflecting urban and drive-in lighting— economically covers the reported features (formation, blue-green color, apparent speed), and illustrates that a mass sighting with qualified witnesses and photos can have a prosaic cause. Modest because the bird attribution was never unanimously accepted and the photos were not conclusively explained."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Como evidencia de entidades no humanas el caso es débil: la firma encaja con aves iluminadas y no hay datos duros que exijan una explicación exótica. Minimal porque una afirmación existencial no baja por un candidato prosaico; queda como verdicto escéptico por caso.",
-      "rationaleEn": "As evidence of non-human entities the case is weak: the signature fits illuminated birds and there is no hard data requiring an exotic explanation. Minimal because an existential claim does not drop for one prosaic candidate; it stands as a per-case skeptical verdict."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.74,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.06,
+    "indet": 0.14
+  }
 }

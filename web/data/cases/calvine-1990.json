@@ -54,13 +54,12 @@
       "url": "https://shura.shu.ac.uk/34877/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La combinación de un objeto no identificado, un caza militar en la escena y la retención prolongada del material por el Ministerio de Defensa es consistente con la lectura de que las autoridades sospechaban un programa clasificado —propio o ajeno— y suprimieron las imágenes por eso. Minimal porque la suppression también es compatible con otras hipótesis y la naturaleza del objeto sigue sin determinarse.",
-      "rationaleEn": "The combination of an unidentified object, a military jet in the scene, and the Ministry of Defence's prolonged retention of the material is consistent with the reading that the authorities suspected a classified program —their own or another's— and suppressed the images for that reason. Minimal because the suppression is also compatible with other hypotheses and the nature of the object remains undetermined."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.29,
+    "humana_clasificada": 0.27,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.01,
+    "indet": 0.32
+  }
 }

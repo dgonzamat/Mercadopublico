@@ -45,14 +45,5 @@
       "name": "Zona Militar — entrevista al comodoro Rubén Lianza, a cargo del CIAE (2020)",
       "url": "https://www.zona-militar.com/2020/12/22/entrevista-a-ruben-lianza-quien-esta-a-cargo-del-centro-de-identificacion-aeroespacial/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El historial documentado del organismo oficial argentino (CEFAe/CIAE) bajo el comodoro Lianza es que la gran mayoría de las denuncias de fenómenos aéreos se identifican como objetos o efectos convencionales (astros, satélites, drones, reflejos). Es evidencia institucional de cuánto del fenómeno, examinado técnicamente, resulta prosaico.",
-      "rationaleEn": "The documented track record of Argentina's official body (CEFAe/CIAE) under Commodore Lianza is that the vast majority of aerial-phenomena reports are identified as conventional objects or effects (celestial bodies, satellites, drones, reflections). It is institutional evidence of how much of the phenomenon, examined technically, turns out to be prosaic."
-    }
   ]
 }

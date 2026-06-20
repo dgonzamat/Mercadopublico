@@ -23,6 +23,14 @@
     "8e"
   ],
   "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.39,
+    "humana_clasificada": 0.09,
+    "adversaria": 0.07,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.11,
+    "indet": 0.3
+  },
   "whatHappened": "El 4 de septiembre de 1971, hacia las 08:25, una aeronave del Instituto Geográfico Nacional (IGN) de Costa Rica volaba a unos 10.000 pies (cerca de 3.000 metros) sobre el Lago de Cote, en la región de Arenal-Tilarán, ejecutando un relevamiento aerofotogramétrico vinculado a los estudios del proyecto hidroeléctrico del Arenal del Instituto Costarricense de Electricidad (ICE). La cámara cartográfica del IGN —un sistema de gran formato que producía negativos de 23×23 cm a intervalo regular y automático— registraba el terreno fotograma a fotograma para el levantamiento del mapa.\n\nEn uno de esos negativos, sobre la superficie del lago, aparece un objeto circular de aspecto metálico cuyo diámetro, estimado por escala fotogramétrica, se ha cifrado en torno a unas decenas de metros (las referencias divulgativas suelen hablar de hasta unos 100 metros). El objeto presenta forma de disco con un borde definido y un brillo compatible con una superficie reflectante. El elemento que da fuerza al caso es que se trata de una cámara automática que disparaba a intervalo fijo durante una operación rutinaria del Estado: nadie estaba buscando un objeto, y el negativo quedó incorporado a una secuencia institucional con cadena de custodia.\n\nEl negativo original fue conservado en el archivo del IGN. El Dr. Richard F. Haines, científico retirado de NASA-Ames, junto con Jacques Vallée, analizó el material y publicó un estudio en el Journal of Scientific Exploration (1990) examinando su autenticidad. La honestidad editorial exige reflejar que ese mismo análisis técnico abrió, y no cerró, una hipótesis mundana de peso. Parte de la discusión —incluida la que el propio Haines documentó— considera que la imagen podría ser un artefacto de la emulsión: concretamente una 'marca de presión' (pressure mark), es decir una deformación o muesca en el negativo, capaz de producir una mancha ovalada que se percibe como un objeto sólido. Esta hipótesis se vio limitada por el acceso restringido al negativo original para inspección física directa de la emulsión; sin esa inspección no se pudo confirmar ni descartar de forma definitiva la marca de presión frente a un objeto real. Los patrones de sombra inconsistentes señalados por algunos analistas se han usado como argumento a favor del artefacto; los partidarios de su autenticidad sostienen que la nitidez del borde y la geometría favorecen un objeto físico.",
   "whatHappened_en": "On September 4, 1971, around 08:25, an aircraft of Costa Rica's National Geographic Institute (IGN) was flying at about 10,000 feet (near 3,000 meters) over Lago de Cote, in the Arenal-Tilarán region, carrying out an aerial photogrammetric survey tied to the studies for the Costa Rican Electricity Institute's (ICE) Arenal hydroelectric project. The IGN's mapping camera — a large-format system producing 23×23 cm negatives at regular automatic intervals — recorded the terrain frame by frame for the map survey.\n\nIn one of those negatives, over the lake surface, a circular object of metallic appearance appears, its diameter, estimated by photogrammetric scale, put at some tens of meters (popular references often cite up to around 100 meters). The object shows a disc shape with a defined edge and a brightness consistent with a reflective surface. What gives the case its force is that this was an automatic camera firing at fixed intervals during a routine state operation: no one was looking for an object, and the negative became part of an institutional sequence with chain of custody.\n\nThe original negative was preserved in the IGN archive. Dr. Richard F. Haines, a retired NASA-Ames scientist, together with Jacques Vallée, analyzed the material and published a study in the Journal of Scientific Exploration (1990) examining its authenticity. Editorial honesty requires noting that this same technical analysis opened, rather than closed, a weighty mundane hypothesis. Part of the discussion — including what Haines himself documented — holds that the image could be an emulsion artifact: specifically a 'pressure mark', that is, a deformation or dent in the negative able to produce an oval blotch perceived as a solid object. This hypothesis was limited by restricted access to the original negative for direct physical inspection of the emulsion; without that inspection, the pressure mark could not be definitively confirmed or ruled out against a real object. The inconsistent shadow patterns flagged by some analysts have been used to argue for the artifact; defenders of its authenticity hold that the edge sharpness and geometry favor a physical object.",
   "whyMatters": "Es probablemente la mejor evidencia fotográfica del corpus latinoamericano por su origen, no por su certeza: una cámara cartográfica gubernamental, disparando de forma automática durante una operación rutinaria, con cadena de custodia institucional y sin testigo humano que pueda haber sesgado el reporte. Esa procedencia instrumental no buscada es exactamente lo que la distingue de la inmensa mayoría de fotos UAP, casi siempre tomadas por una persona que ya estaba mirando el cielo.\n\nLa calibración, sin embargo, debe resistir la tentación de leer 'mejor foto del corpus' como 'foto probada'. El análisis de Haines no autentica el objeto como nave: examina la imagen y deja abierta una explicación mundana seria —la marca de presión en la emulsión— que solo podría haberse zanjado con inspección física directa del negativo original, acceso que no se obtuvo de forma concluyente. El caso es, por tanto, fuerte en procedencia y cadena de custodia, y genuinamente indeterminado en cuanto a la naturaleza de lo fotografiado. Por eso el corpus lo pesa como apoyo modesto y registra el debilitamiento de la hipótesis natural solo en la medida en que el análisis descarta montaje, doble exposición o manipulación, sin poder descartar el artefacto de emulsión. Mantener esa distinción —origen impecable, contenido no resuelto— es lo que impide convertir una imagen valiosa en una prueba que no es.",
@@ -51,29 +59,6 @@
     {
       "name": "Rice University ArchivesSpace — Haines correspondence record",
       "url": "https://archives.library.rice.edu/repositories/2/archival_objects/330038"
-    }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Disco metálico ~100m fotografiado sobre Costa Rica en 1971 — sin programa aéreo nacional con esa escala; compatible con incursión clasificada extranjera o plataforma desconocida",
-      "rationaleEn": "Metallic ~100m disc photographed over Costa Rica in 1971 — no national aerial program with that scale; compatible with foreign classified incursion or unknown platform"
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Evidencia fotográfica con cadena de custodia institucional y peer-review científico — uno de los pocos casos del corpus donde la imagen sobrevive análisis NASA-grade",
-      "rationaleEn": "Photographic evidence with institutional chain of custody and scientific peer-review — one of the few corpus cases where the image survives NASA-grade analysis"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "El análisis de Haines descarta montaje, doble exposición y manipulación, lo que cierra parte de las explicaciones convencionales; pero deja abierta la marca de presión en la emulsión por falta de acceso al negativo original, de modo que el debilitamiento de la hipótesis natural es parcial, no total",
-      "rationaleEn": "Haines's analysis rules out montage, double exposure and manipulation, closing off part of the conventional explanations; but it leaves the emulsion pressure-mark open for lack of access to the original negative, so the weakening of the natural hypothesis is partial, not total"
     }
   ],
   "primaryDocument": {

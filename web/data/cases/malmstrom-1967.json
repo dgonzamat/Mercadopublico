@@ -21,6 +21,14 @@
     "8k"
   ],
   "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.17,
+    "humana_clasificada": 0.3,
+    "adversaria": 0.06,
+    "nohumano_encubierto": 0.18,
+    "nohumano_abierto": 0.04,
+    "indet": 0.25
+  },
   "whatHappened": "En marzo de 1967, en la base aérea de la USAF Malmstrom (Montana), dos escuadrones de misiles balísticos intercontinentales LGM-30 Minuteman sufrieron en pocos días fallos de disponibilidad operacional difíciles de explicar. El caso más citado es el del Capitán Robert Salas, quien estaba en turno como Deputy Missile Combat Crew Commander en un Launch Control Center (LCC) controlando diez misiles cuando, según su relato, personal de seguridad exterior le reportó por teléfono un objeto luminoso flotando sobre la entrada del búnker. Mientras hablaba con el guardia, los misiles bajo su control fueron pasando a estado 'No-Go' —pérdida de disponibilidad— en rápida sucesión.\n\nEl evento técnicamente mejor documentado es el del escuadrón Echo-Flight, ocurrido el 16 de marzo de 1967: los diez misiles de Echo cayeron a 'No-Go' casi simultáneamente, en una ventana estimada de segundos. Boeing, contratista del sistema Minuteman, condujo una investigación de ingeniería extensa. Salas ha sostenido que su propio incidente en Oscar-Flight, días después, siguió el mismo patrón acompañado del objeto luminoso. Conviene precisar un punto debatido: la documentación contemporánea de Echo-Flight no consigna avistamientos UAP en el reporte de ingeniería; la conexión entre el shutdown de Echo y un objeto luminoso proviene principalmente del testimonio posterior de Salas y de otros veteranos recopilados décadas más tarde, lo que es objeto de disputa entre investigadores.\n\nSobre la causa, la posición de los reportes técnicos de la época apuntó a un pulso de ruido electrónico de origen no identificado, comparado por su efecto con un pulso electromagnético (EMP), capaz de propagarse por las líneas y poner los misiles en falla. Boeing y la USAF no lograron replicar de forma concluyente el modo de falla simultáneo, y la investigación quedó sin una causa raíz cerrada. Salas testificó públicamente desde mediados de los años 90, en el National Press Club (2010) y en la Citizen Hearing on Disclosure, y publicó el libro 'Faded Giant' (2005). Robert Hastings, en 'UFOs and Nukes', sostiene haber documentado más de 150 episodios de presunta interferencia en instalaciones nucleares estadounidenses (1948-2012) con testimonios de más de 130 militares.",
   "whatHappened_en": "In March 1967, at USAF Malmstrom AFB (Montana), two squadrons of LGM-30 Minuteman intercontinental ballistic missiles suffered operational-readiness failures within days that proved hard to explain. The most-cited case is that of Captain Robert Salas, on duty as Deputy Missile Combat Crew Commander at a Launch Control Center (LCC) controlling ten missiles when, by his account, external security personnel phoned in a report of a luminous object hovering over the bunker entrance. As he spoke with the guard, the missiles under his control went to 'No-Go' status — loss of readiness — in rapid succession.\n\nThe technically best-documented event is the Echo-Flight squadron incident of March 16, 1967: all ten Echo missiles dropped to 'No-Go' almost simultaneously, within an estimated window of seconds. Boeing, the Minuteman system contractor, conducted an extensive engineering investigation. Salas has maintained that his own Oscar-Flight incident days later followed the same pattern accompanied by the luminous object. A disputed point bears noting: the contemporary Echo-Flight documentation records no UAP sightings in the engineering report; the link between the Echo shutdown and a luminous object comes chiefly from Salas's later testimony and from other veterans collected decades afterward, which is contested among investigators.\n\nOn cause, the technical reports of the period pointed to an electronic noise pulse of unidentified origin, compared in effect to an electromagnetic pulse (EMP), able to propagate along the lines and fault the missiles. Boeing and the USAF could not conclusively replicate the simultaneous failure mode, and the investigation closed without a settled root cause. Salas has testified publicly since the mid-1990s, at the National Press Club (2010) and the Citizen Hearing on Disclosure, and published the book 'Faded Giant' (2005). Robert Hastings, in 'UFOs and Nukes', claims to have documented over 150 episodes of alleged interference at U.S. nuclear installations (1948-2012) with testimony from more than 130 military personnel.",
   "whyMatters": "El caso es operacionalmente crítico: la pérdida casi simultánea de disponibilidad de un escuadrón completo de diez ICBM, con replicación en un escuadrón vecino en la misma quincena, es una anomalía de sistemas de armas nucleares que la USAF registró como sin causa raíz cerrada. Ese hecho —documentado en los reportes de ingeniería de Boeing— es sólido con independencia de la interpretación UAP.\n\nLa calibración exige separar dos capas que la cobertura popular fusiona. La capa robusta es el fallo técnico: real, simultáneo, no replicado de forma concluyente. La capa frágil es la atribución a un objeto luminoso: descansa de forma desproporcionada en testimonio reconstruido años después, y la propia documentación de Echo-Flight no lo recoge. Existen además hipótesis mundanas serias que no pueden descartarse: un pulso de ruido electrónico o EMP de origen interno —incluyendo la posibilidad, planteada en revisiones recientes y disputada por los testigos, de una prueba clasificada de la propia USAF sobre la vulnerabilidad EMP de sus sistemas Minuteman— explicaría el shutdown sin necesidad de un objeto externo. Que Boeing no replicara el modo de falla debilita pero no liquida esa vía. Por eso el corpus pesa el caso como apoyo modesto, no fuerte: la anomalía de hardware es genuina; la conexión causal con un fenómeno no identificado es plausible pero no probada, y conviven con ella explicaciones técnicas no exóticas.",
@@ -67,36 +75,6 @@
       "name": "National Press Club UFO Disclosure (Sept 27, 2010)",
       "url": "https://www.nationalpressclub.org/",
       "note": "7 military officers including Salas"
-    }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Hipótesis alternativa válida: prueba de guerra electrónica clasificada de la propia USAF sobre sus sistemas Minuteman. Boeing y la USAF no replicaron el modo de falla, lo que debilita pero no descarta la posibilidad.",
-      "rationaleEn": "Valid alternative hypothesis: classified USAF EW test on its own Minuteman systems. Boeing and the USAF could not replicate the failure mode, which weakens but does not rule out the possibility."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Testimonio Salas + shutdown simultáneo de 10 ICBM + replicación en LCC adyacente + 150+ casos similares (Hastings) en instalaciones nucleares EE.UU. constituye un patrón sostenido difícil de atribuir a accidente.",
-      "rationaleEn": "Salas testimony + simultaneous shutdown of 10 ICBMs + replication in adjacent LCC + 150+ similar cases (Hastings) at U.S. nuclear installations constitutes a sustained pattern hard to attribute to accident."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "substantial",
-      "rationale": "Efectos coordinados de guerra electrónica con shutdown simultáneo de diez misiles + reportes visuales del objeto luminoso son incompatibles con cualquier fenómeno atmosférico conocido.",
-      "rationaleEn": "Coordinated EW effects with simultaneous shutdown of ten missiles + visual reports of the luminous object are incompatible with any known atmospheric phenomenon."
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Patrón 8k de interferencia EM en sistemas Minuteman — efecto físico EM remoto en hardware nuclear califica como signal débil de física exótica",
-      "rationaleEn": "Pattern 8k of EM interference on Minuteman systems — remote EM physical effect on nuclear hardware qualifies as a weak signal of exotic physics"
     }
   ],
   "name_en": "Malmstrom ICBM shutdown"

@@ -46,21 +46,5 @@
       "name": "MITRE Corporation — FFRDCs operados para el DoD y la comunidad de inteligencia",
       "url": "https://www.mitre.org/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Un FFRDC con acceso clasificado examinando material UAP y conservando registros que datan de 1930 es consistente con el patrón de procesamiento institucional sostenido y compartimentado del fenómeno, fuera del alcance del oversight ordinario.",
-      "rationaleEn": "An FFRDC with classified access examining UAP material and holding records dating to 1930 is consistent with the pattern of sustained, compartmented institutional processing of the phenomenon, beyond the reach of ordinary oversight."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El examen de 'especímenes' implica material físico de origen no establecido, pero sin resultados públicos no discrimina entre tecnología humana clasificada y origen no convencional.",
-      "rationaleEn": "The examination of 'specimens' implies physical material of unestablished origin, but without public results it does not discriminate between classified human technology and unconventional origin."
-    }
   ]
 }

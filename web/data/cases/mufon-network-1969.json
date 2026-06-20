@@ -65,14 +65,5 @@
       "url": "https://www.scientificamerican.com/article/how-wealthy-ufo-fans-helped-fuel-fringe-beliefs/",
       "note": "Crítica al rol de financistas privados (Bigelow) y al rigor."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El embudo civil de reporte de MUFON, al triar decenas de miles de casos, identifica la mayoría como prosaicos y deja solo un residuo 'desconocido' — coherente con la lectura de que las misidentificaciones explican el grueso de los reportes. Minimal porque es una contribución institucional indirecta (sobre el universo de reportes, no un caso), y el propio rigor del triaje es contestado.",
-      "rationaleEn": "MUFON's civilian reporting funnel, in triaging tens of thousands of cases, identifies the majority as prosaic and leaves only an 'unknown' residue — consistent with the reading that misidentifications explain the bulk of reports. Minimal because it is an indirect institutional contribution (about the universe of reports, not a case), and the rigor of the triage itself is contested."
-    }
   ]
 }

@@ -49,28 +49,13 @@
       "url": "http://www.ufoevidence.org/cases/case635.htm"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Cable CIA explícitamente identifica contradicciones en el reporte oficial boliviano — la naturaleza del objeto nunca fue institucionalmente resuelta",
-      "rationaleEn": "CIA cable explicitly identifies contradictions in the official Bolivian report — the object's nature was never institutionally resolved"
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Presencia documentada de personal militar estadounidense nombrado (Simmons, Hayes) en una recuperación material en Bolivia sugiere coordinación clasificada multinacional",
-      "rationaleEn": "Documented presence of named US military personnel (Simmons, Hayes) in a material retrieval in Bolivia suggests classified multinational coordination"
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Cable CIA descarta cierre como meteorito convencional al señalar explícitamente las contradicciones del reporte boliviano sobre 'fallen object'",
-      "rationaleEn": "CIA cable rules out closure as conventional meteor by explicitly flagging contradictions in the Bolivian report on 'fallen object'"
-    }
-  ],
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.06,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.35
+  },
   "name_en": "El Taire / Bermejo crash"
 }

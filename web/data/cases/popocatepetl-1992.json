@@ -64,5 +64,13 @@
       "name": "Maussan, J. — Compilación Popocatépetl UFO archive",
       "note": "Sustained journalistic coverage"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.015,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.045,
+    "indet": 0.31
+  }
 }

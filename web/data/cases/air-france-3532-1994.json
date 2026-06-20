@@ -48,20 +48,12 @@
       "url": "https://ufologie.patrickgross.org/ufology/af3532rt.htm"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Visual de tripulación profesional (capitán Duboc) + track de radar militar independiente (CODA) cruzando la trayectoria + clasificación oficial 'inexplicado' de GEIPAN + mención en el informe COMETA. Correlación visual-radar con cadena institucional es la modalidad que el corpus pesa como modest en testigo profesional.",
-      "rationaleEn": "Professional crew visual (Captain Duboc) + independent military radar track (CODA) crossing the trajectory + official GEIPAN 'unexplained' classification + mention in the COMETA report. Visual-radar correlation with institutional chain is the modality the corpus weighs as modest for professional witnesses."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Re-análisis posteriores propusieron un globo estratosférico como candidato parcial; la propuesta no explica bien el cambio de forma reportado ni el track de velocidad, pero permanece en la mesa.",
-      "rationaleEn": "Later re-analyses proposed a stratospheric balloon as a partial candidate; the proposal does not explain well the reported shape change or the speed track, but remains on the table."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.07,
+    "indet": 0.29
+  }
 }

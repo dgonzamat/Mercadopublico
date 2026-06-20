@@ -50,14 +50,5 @@
       "name": "NASA — 'NASA Releases Independent Study Team Report on UAP'",
       "url": "https://www.nasa.gov/news-release/nasa-to-announce-results-findings-of-uap-independent-study/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Un panel científico independiente de NASA, con datos no clasificados, no halló evidencia de origen extraterrestre. Weakens minimal: es una conclusión institucional honesta, pero el propio informe la condiciona a la mala calidad de los datos —no afirma 'no son no humanos', sino 'los datos no permiten concluirlo'. Pesa como ausencia de evidencia (no como evidencia de ausencia), por eso minimal.",
-      "rationaleEn": "An independent NASA scientific panel, with unclassified data, found no evidence of extraterrestrial origin. Weakens minimal: it is an honest institutional conclusion, but the report itself conditions it on poor data quality —it does not assert 'they are not non-human', but 'the data do not allow concluding it'. It weighs as absence of evidence (not evidence of absence), hence minimal."
-    }
   ]
 }

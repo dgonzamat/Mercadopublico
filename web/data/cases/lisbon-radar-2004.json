@@ -45,5 +45,13 @@
       "name": "Portugal Resident — 'Air Force alert for UFO'",
       "url": "https://www.portugalresident.com/air-force-alert-for-ufo/"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
+    "indet": 0.27
+  }
 }

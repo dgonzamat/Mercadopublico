@@ -63,20 +63,12 @@
       "note": "Entrevista directa de Kovalyonok sobre el incidente."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Cohorte institucionalmente máxima (dos cosmonautas en servicio, uno con grado de Mayor General y dos veces Héroe URSS) + descripción técnica detallada con cambio morfológico (translucidez, estructura interna visible) + verificación cruzada negativa de lanzamientos compatibles. Minimal porque es testimonio sin instrumentación coordinada (sin cámara ni radar simultáneos en el récord) y porque el propio Kovalyonok sostuvo en entrevistas posteriores la lectura de objeto artificial terrestre no identificado — la fuerza testimonial existe, la indeterminación interpretativa también.",
-      "rationaleEn": "Institutionally maximum cohort (two cosmonauts on duty, one of them Major General and twice Hero of the USSR) + detailed technical description with morphological change (translucency, visible internal structure) + negative cross-check of compatible launches. Minimal because it is testimony without coordinated instrumentation (no simultaneous camera or radar in the record) and because Kovalyonok himself in later interviews sustained the reading of unidentified terrestrial artificial object — the testimonial strength exists, the interpretive indeterminacy also."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La lectura preferida del propio testigo: un programa soviético o estadounidense clasificado de la era 1981 que no fue notificado a la tripulación de Salyut-6 podría explicar un objeto en órbita paralela. La era era de desarrollo intensivo de ASAT y plataformas de observación orbital de ambos bloques (Polyus, Almaz, ASAT-Vought) — la posibilidad no es descartable. Minimal porque ningún programa específico fue identificado en cuarenta años posteriores.",
-      "rationaleEn": "The witness's own preferred reading: a classified Soviet or U.S. program from the 1981 era that was not notified to the Salyut-6 crew could explain an object in parallel orbit. The era was one of intensive ASAT and orbital observation platform development by both blocs (Polyus, Almaz, ASAT-Vought) — the possibility is not dismissible. Minimal because no specific program was identified in the following forty years."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.14,
+    "adversaria": 0.06,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.04,
+    "indet": 0.29
+  }
 }

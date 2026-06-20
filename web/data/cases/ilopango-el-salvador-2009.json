@@ -52,20 +52,12 @@
       "note": "Antecedente histórico con el candidato prosaico Soyuz 4."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Una fotografía diurna en la que el objeto no fue visto al disparar y solo apareció al revisar la imagen es el caso prototípico de artefacto mundano: ave o insecto cercano al lente, aeronave distante o defecto de sensor. El antecedente de 1969 trae además un candidato prosaico nombrado por la prensa de la época (Soyuz 4). Modest porque, sin el negativo y sin análisis, tampoco puede cerrarse la identificación de forma concluyente.",
-      "rationaleEn": "A daytime photograph in which the object was not seen while shooting and appeared only on review is the prototypical case of a mundane artifact: a bird or insect near the lens, a distant aircraft, or a sensor defect. The 1969 antecedent also brings a prosaic candidate named by the press of the day (Soyuz 4). Modest because, without the negative and without analysis, the identification cannot be conclusively closed either."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Como evidencia de entidades no humanas, el caso es de los más débiles del corpus: fuente única entusiasta, fotógrafo anónimo, un solo fotograma sin metadata verificable. No resta probabilidad real a una afirmación existencial — por eso minimal — pero deja constancia de que este expediente, por sí mismo, no aporta nada a favor de la hipótesis.",
-      "rationaleEn": "As evidence of something non-human, the case is among the weakest in the corpus: a single enthusiast source, an anonymous photographer, one frame with no verifiable metadata. It does not subtract real probability from an existential claim — hence minimal — but it records that this file, on its own, contributes nothing in favor of the hypothesis."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.7,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.015,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.025,
+    "indet": 0.23
+  }
 }

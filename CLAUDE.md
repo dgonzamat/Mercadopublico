@@ -27,13 +27,11 @@ web/
     researchers/        # ecosistema disclosure (5 secciones)
     frameworks/         # 11 frameworks teóricos comparados
     about/, resumen/    # metodología + 10-min summary
-  components/           # Badge, MobileNav, IcdProbabilityChart, CorpusStats, WorldMap...
+  components/           # Badge, MobileNav, MeceChart, CorpusStats, WorldMap...
   lib/
     data.ts             # carga cases / patterns / frameworks / researchers
-    types.ts            # UAPCase, Hypothesis, EvidenceContribution, etc.
-    hypotheses.ts       # source-of-truth: 10 hipótesis con prior + prose
-    hypothesisMapping.ts # log-odds Bayesian update + pressure
-    icd203.ts           # bandas verbales DNI ICD-203
+    types.ts            # UAPCase, Posterior (MECE), MeceClassId, etc.
+    meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
     cases/              # SOURCE OF TRUTH: ~137 archivos JSON, uno por caso
@@ -83,21 +81,17 @@ Campos opcionales de rich content (renderizados como secciones en `/cases/[slug]
 **Estándar: la descripción narrativa de cada caso —`whatHappened` + `whyMatters`— debe alcanzar al menos ~1 página A4 (~550 palabras / ~3.500 caracteres), en español e inglés.** `evidence` y `sources` aportan pero NO cuentan para la página: el estándar mide prosa, no listas — un caso con narrativa corta y listas largas sigue por debajo del estándar.
 
 Esto extiende la regla anterior ("2-3 párrafos") porque el corpus dejó casos demasiado telegráficos para su tier. El auditor `audit-consistency.mjs` (regla **E13**, corre en prebuild) reporta cuántos casos siguen bajo el umbral, con backlog por tier — es **WARN agregado, no ERROR**: el build no se rompe, pero el progreso queda medible. La expansión se hace **con investigación caso por caso** (fuentes primarias, no relleno), priorizando **Tier S → A → B**. Cualquier caso nuevo debe nacer cumpliendo el estándar.
-- `evidenceContribution` — array de contribuciones a hipótesis: `{hypothesisId, direction, strength, rationale, rationaleEn}`. Recomendado para Tier S y A.
+- `posterior` — distribución MECE sobre 6 narrativas que suma 1: `{mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet}`. OBLIGATORIO en casos no-documento (invariante M1 del audit `audit-consistency.mjs`). Ver `lib/meceModel.ts`.
 
 Si un caso no tiene rich content, la página de detalle muestra fallback "⏳ Caso pendiente de explicación detallada".
 
-## Modelo de calibración
+## Modelo de probabilidad (MECE)
 
-Las probabilidades del corpus se calculan en build-time con un Bayesian update en log-odds:
+Las probabilidades son **comparables**: cada caso de incidente reparte el 100% sobre 6 narrativas **mutuamente excluyentes y exhaustivas** (campo `posterior`, suma 1). El corpus las agrega en el nº esperado de casos por narrativa —`Eⱼ = Σᵢ P(narrativaⱼ | casoᵢ)`—, que reparte el 100% y es comparable entre narrativas; al ser una esperanza (lineal) es válido aunque los casos estén correlacionados.
 
-```
-effective = sigmoid(logit(prior) + Σ direction × weight)
-```
+Cada narrativa bundlea **objeto + postura institucional**, de modo que combinaciones como «no-humano + ocultación estatal» son una clase propia: `mundano_natural` (misidentificación + fenómenos naturales), `humana_clasificada` (programa propio/aliado, encubrimiento intrínseco), `adversaria` (tecnología de otro Estado), `nohumano_encubierto` (no-humano que un Estado conoce/controla/oculta — incluye ingeniería inversa y narrativa de tratado), `nohumano_abierto` (no-humano que nadie controla — tipo Vallée / interdimensional / ontológico), `indet`. Las hipótesis del marco anterior se conservan como mapeo dentro de cada narrativa (`legacyHypothesis` en `MECE_CLASSES`). Dos vistas **derivadas**: `entidades-no-humanas` = `nohumano_encubierto` + `nohumano_abierto`; `heterogeneidad` = 1 − `mundano_natural`.
 
-donde cada caso contribuye un shift en log-odds via `evidenceContribution`. Weights conservadores (`minimal: 0.005`, `modest: 0.02`, `substantial: 0.05`, `category-breaking: 0.15`) porque los casos del corpus están correlacionados (era cultural compartida, selection bias). Reemplaza un modelo lineal previo que saturaba al cap artificial.
-
-Detalle completo en JSDoc de `lib/hypothesisMapping.ts` y `lib/hypotheses.ts`.
+Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad ≠ verdad. Los casos-documento se excluyen (la partición «qué era el objeto» no aplica). Detalle en JSDoc de `lib/meceModel.ts`. El invariante (suma=1, 6 claves, no en documentos) se valida en `audit-consistency.mjs` (regla M1) y `validate-schema.mjs`.
 
 ## Convenciones de UI
 

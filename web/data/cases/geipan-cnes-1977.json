@@ -50,14 +50,5 @@
       "name": "GEIPAN — entrada enciclopédica (historia GEPAN/SEPRA/GEIPAN)",
       "url": "https://en.wikipedia.org/wiki/GEIPAN"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Un organismo estatal escéptico por diseño, con casi medio siglo de operación, metodología formal y datos de calidad, aún clasifica ~3% de sus casos como inexplicados (tipo D). Tensiona débilmente la lectura de que todo es identificación errónea: el aparato más sobrio y sostenido del mundo no logra cerrar el residuo. Minimal porque GEIPAN explica la gran mayoría y no afirma nada exótico sobre el tipo D — solo que los datos no permiten identificarlo.",
-      "rationaleEn": "A state body skeptical by design, with nearly half a century of operation, formal methodology and quality data, still classifies ~3% of its cases as unexplained (type D). It weakly strains the reading that it's all misidentification: the world's most sober and sustained apparatus cannot close the residue. Minimal because GEIPAN explains the vast majority and asserts nothing exotic about type D — only that the data do not allow identifying it."
-    }
   ]
 }

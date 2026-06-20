@@ -54,22 +54,14 @@
       "url": "https://www.lanacion.com.ar"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Avistamiento aéreo sostenido por tripulación comercial fiable + seguimiento institucional. La concurrencia con el apagón es notable, pero la causa documentada de la falla eléctrica es error humano en la subestación de Alícura, no el objeto; el peso descansa en el avistamiento, no en un efecto EM probado",
-      "rationaleEn": "Sustained aerial sighting by a reliable commercial crew + institutional follow-up. The coincidence with the blackout is notable, but the documented cause of the electrical failure is human error at the Alícura substation, not the object; the weight rests on the sighting, not on a proven EM effect"
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "El ascenso rápido reportado del objeto entra en el rango de física no convencional; la señal es débil y el apagón coincidente tiene causa mundana documentada, por lo que no se cuenta como efecto exótico",
-      "rationaleEn": "The object's reported rapid ascent falls within the non-conventional-physics range; the signal is weak and the coincident blackout has a documented mundane cause, so it is not counted as an exotic effect"
-    }
-  ],
+  "posterior": {
+    "mundano_natural": 0.54,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.08,
+    "indet": 0.24
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aeropuerto_Internacional_Teniente_Luis_Candelaria_(Bariloche).JPG?width=800",
     "alt": "Aeropuerto Internacional Teniente Luis Candelaria de Bariloche, Argentina.",

@@ -51,21 +51,5 @@
       "name": "AARO — página oficial de informes",
       "url": "https://www.aaro.mil/"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "ingenieria-inversa",
-      "direction": "weakens",
-      "strength": "modest",
-      "rationale": "Una agencia federal con acceso a archivos clasificados revisó el registro 1945–2023 y concluyó por escrito que no halló evidencia de programas de recuperación o ingeniería inversa de craft no humano. Es la contraparte institucional directa de las afirmaciones de Grusch/Immaculate Constellation. Weakens modest, no más: 'no encontramos evidencia' no equivale a 'no existe', y AARO no tuvo acceso declarado a los SAP no reconocidos alegados — pero como dato oficial documentado, resta presión real a la hipótesis.",
-      "rationaleEn": "A federal agency with access to classified archives reviewed the 1945–2023 record and concluded in writing that it found no evidence of programs to recover or reverse-engineer non-human craft. It is the direct institutional counterpart to the Grusch/Immaculate Constellation claims. Weakens modest, no more: 'we found no evidence' does not equal 'it does not exist', and AARO had no declared access to the alleged unacknowledged SAPs — but as an official documented datum, it genuinely reduces pressure on the hypothesis."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El informe no halló evidencia de confirmación de tecnología de origen extraterrestre en todo el registro histórico revisado. Minimal: aplica a la confirmación documental de NHI vía programas USG, no a la totalidad de la hipótesis paraguas (que se sostiene por instrumentación multi-sensor independiente, fuera del alcance del informe). Ausencia de evidencia institucional, no evidencia de ausencia.",
-      "rationaleEn": "The report found no evidence confirming technology of extraterrestrial origin across the entire historical record reviewed. Minimal: it applies to the documentary confirmation of NHI via USG programs, not to the whole umbrella hypothesis (sustained by independent multi-sensor instrumentation, outside the report's scope). Absence of institutional evidence, not evidence of absence."
-    }
   ]
 }

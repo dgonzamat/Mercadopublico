@@ -52,22 +52,14 @@
       "note": "Marco institucional del estudio USAF del fenómeno."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Un piloto entrenado reportó nueve objetos en formación y produjo una estimación de velocidad muy superior a la tecnología de 1947 mediante cronometraje contra puntos de distancia conocida — un testimonio cuantitativo, no una impresión casual. Minimal porque es un único observador primario sin radar, foto ni película, y existen alternativas prosaicas no descartables.",
-      "rationaleEn": "A trained pilot reported nine objects in formation and produced a speed estimate far above 1947 technology by timing them against points of known distance — a quantitative testimony, not a casual impression. Minimal because it is a single primary observer with no radar, photo or film, and non-excludable prosaic alternatives exist."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Las explicaciones prosaicas propuestas —espejismo de inversión térmica sobre las montañas, meteoros, o una bandada de aves— son candidatos reales para un avistamiento diurno breve de 1947 y mantienen viva la lectura de confusión perceptual. Minimal porque ninguna da cuenta de forma completa del número, la formación y la velocidad estimada por un piloto.",
-      "rationaleEn": "The proposed prosaic explanations —thermal-inversion mirage over the mountains, meteors, or a flock of birds— are real candidates for a brief 1947 daytime sighting and keep alive the perceptual-confusion reading. Minimal because none fully accounts for the number, formation and speed estimated by a pilot."
-    }
-  ],
+  "posterior": {
+    "mundano_natural": 0.52,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.11,
+    "indet": 0.3
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arnold_AAF_drawing.jpg?width=800",
     "alt": "Dibujo de los objetos en forma de disco entregado por Kenneth Arnold a la inteligencia de la USAAF, 1947.",

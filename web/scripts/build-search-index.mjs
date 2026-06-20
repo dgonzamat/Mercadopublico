@@ -139,8 +139,8 @@ const pageEntries = [
     name: "Probabilidades",
     subtitle: "Hipótesis · ICD-203",
     summary: "Las 10 hipótesis y su nivel de confianza ICD-203.",
-    summary_en: "The 10 hypotheses and their ICD-203 confidence level.",
-    keywords: "hipotesis hypotheses ICD-203 confianza confidence",
+    summary_en: "The nine MECE explanations and the comparable corpus partition.",
+    keywords: "explicaciones hipotesis hypotheses MECE particion comparable probabilidad",
   },
   {
     id: "atlas",

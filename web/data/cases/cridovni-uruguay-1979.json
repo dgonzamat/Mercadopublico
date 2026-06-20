@@ -52,21 +52,5 @@
       "name": "Búsqueda — CRIDOVNI 1,570 denuncias",
       "url": "https://www.busqueda.com.uy/Secciones/Comision-de-la-Fuerza-Aerea-ha-investigado-mas-de-1-570-denuncias-sobre-ovnis-el-3-no-concluyo-con-una-explicacion-convencional--uc52920"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Comisión oficial sostenida 45+ años + acuerdo con AARO formaliza patrón de manejo institucional internacional del fenómeno",
-      "rationaleEn": "Official commission sustained 45+ years + agreement with AARO formalizes international institutional handling pattern of the phenomenon"
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "47 casos clasificados oficialmente como 'no convencional' por la propia FAU tras revisión escéptica representa peso evidencial estructural",
-      "rationaleEn": "47 cases officially classified as 'non-conventional' by FAU itself after skeptical review represents structural evidential weight"
-    }
   ]
 }

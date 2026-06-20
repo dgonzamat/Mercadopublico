@@ -50,20 +50,12 @@
       "note_en": "Skeptical reconstruction: rocket re-entry + witness reassessment."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El grueso de la oleada del 30–31 marzo 1993 coincide con la reentrada de los restos de un cohete ruso (booster de un Cosmos), fechada hacia la 1:15 hora local por catálogos de desechos espaciales, cuya trayectoria explica los reportes de 'luces brillantes' a lo largo del país. El avistamiento cercano de Shawbury quedó como residuo, con su propio testigo mostrándose ambivalente sobre lo visto. La explicación prosaica cubre la mayor parte del caso.",
-      "rationaleEn": "The bulk of the 30–31 March 1993 wave coincides with the re-entry of Russian rocket debris (a Cosmos booster), dated to around 1:15 a.m. local time by space-debris catalogues, whose trajectory explains the 'bright lights' reports across the country. The close-range Shawbury sighting remained a residue, with its own witness ambivalent about what he saw. The prosaic explanation covers most of the case."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "En su momento, un oficial militar reportó un objeto grande a corta distancia y el MoD registró internamente que algo había operado en el espacio aéreo sin ser detectado por radar ('considerable importancia para la defensa'). Minimal porque la explicación prosaica mayoritaria y la posterior reevaluación del testigo erosionan el residuo anómalo.",
-      "rationaleEn": "At the time, a military officer reported a large object at close range and the MoD internally recorded that something had operated in the airspace without radar detection ('considerable defence significance'). Minimal because the majority prosaic explanation and the witness's later reassessment erode the anomalous residue."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.68,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.03,
+    "indet": 0.23
+  }
 }

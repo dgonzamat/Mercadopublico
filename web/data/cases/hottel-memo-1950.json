@@ -70,14 +70,5 @@
     "source": "Federal Bureau of Investigation",
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:FBI_Hottel_Memo.jpg"
-  },
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Documento FBI auténtico cuyo contenido es de oídas en tercera mano, trazable al fraude de Aztec (Silas Newton). Documenta la mecánica por la cual el rumor adquiere apariencia de evidencia al pasar por un membrete oficial — el caso de calibración del corpus para 'documento real ≠ contenido verificado'.",
-      "rationaleEn": "An authentic FBI document whose content is third-hand hearsay, traceable to the Aztec hoax (Silas Newton). It documents the mechanics by which rumor acquires the appearance of evidence by passing through official letterhead — the corpus's calibration case for 'real document ≠ verified content'."
-    }
-  ]
+  }
 }

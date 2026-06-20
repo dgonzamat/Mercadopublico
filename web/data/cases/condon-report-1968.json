@@ -53,14 +53,5 @@
       "name": "University of Colorado / NCAR — registro del Condon Committee",
       "url": "https://en.wikipedia.org/wiki/Condon_Committee"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Paradoja documentada: un estudio diseñado con sesgo de mandato hacia un resultado negativo (memo Low) aún dejó cerca de un tercio de sus casos sin explicación. Que incluso bajo presión escéptica el residuo no explicado persista tensiona —débilmente— la lectura de que todo es identificación errónea trivial. Minimal porque el informe es ante todo un acto institucional escéptico; el contrapeso viene de su propio residuo, no de una afirmación positiva.",
-      "rationaleEn": "Documented paradox: a study designed with a mandate bias toward a negative result (Low memo) still left roughly a third of its cases unexplained. That an unexplained residue persists even under skeptical pressure weakly strains the reading that it's all trivial misidentification. Minimal because the report is primarily a skeptical institutional act; the counterweight comes from its own residue, not from a positive claim."
-    }
   ]
 }

@@ -50,20 +50,12 @@
       "url": "https://www.war.gov/ufo/"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "El testimonio tiene una explicación física conocida y reproducible (rayos cósmicos en la retina), por lo que no aporta a un origen no humano; su inclusión en un archivo oficial 'no resuelto' no constituye anomalía. Resta marginalmente al recordar que parte del material desclasificado es mundano bien explicado.",
-      "rationaleEn": "The testimony has a known, reproducible physical explanation (cosmic rays on the retina), so it does not contribute to a non-human origin; its inclusion in an official 'unresolved' archive does not constitute an anomaly. It marginally weakens by reminding that part of the declassified material is well-explained mundane."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Es un ejemplo directo de un reporte de 'luces' con causa natural/física conocida (interacción de rayos cósmicos con el sistema visual), consistente con la idea de que una fracción de los reportes corresponde a fenómenos naturales o perceptuales bien caracterizados.",
-      "rationaleEn": "It is a direct example of a 'lights' report with a known natural/physical cause (cosmic-ray interaction with the visual system), consistent with the idea that a fraction of reports correspond to well-characterized natural or perceptual phenomena."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.88,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.005,
+    "nohumano_abierto": 0.015,
+    "indet": 0.08
+  }
 }

@@ -36,22 +36,6 @@
     "Wilson did not deny the meeting or the general discussion (only specific details)",
     "Coherence with Grusch's subsequent testimony (2023) about undisclosed programs"
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "ingenieria-inversa",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Es el documento más directo del corpus sobre la afirmación de ingeniería inversa: las notas describen un SAP operado por contratista privado dedicado a 'recuperación de restos' de material aeroespacial no convencional, relatado supuestamente por un alto oficial de la DIA. Davis no negó la autoría de las notas. Modest y no substantial —y deliberadamente cauto— porque son notas privadas no respaldadas por ningún documento del programa, sin corroboración independiente del SAP descrito, y porque el propio Wilson niega haberse reunido con Davis o haber transmitido esa información. El peso proviene de la especificidad del relato, no de su verificación.",
-      "rationaleEn": "It is the corpus's most direct document on the reverse-engineering claim: the notes describe a private-contractor SAP dedicated to 'crash retrieval' of unconventional aerospace material, allegedly recounted by a senior DIA official. Davis did not deny authorship of the notes. Modest and not substantial —and deliberately cautious— because these are private notes unsupported by any program document, with no independent corroboration of the described SAP, and because Wilson himself denies meeting Davis or conveying that information. The weight comes from the specificity of the account, not from its verification."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Independientemente de qué contenga el SAP descrito, las notas documentan compartimentación extrema dentro del aparato de inteligencia: la negación de acceso a un Vice Director de DIA con habilitación TS/SCI es estructura de black program operativa. La coherencia con el testimonio juramentado de Grusch (2023) sobre programas no divulgados refuerza la lectura sin probarla.",
-      "rationaleEn": "Regardless of what the described SAP contains, the notes document extreme compartmentalization within the intelligence apparatus: denial of access to a TS/SCI-cleared DIA Vice Director is operative black-program structure. The coherence with Grusch's sworn testimony (2023) about undisclosed programs reinforces the reading without proving it."
-    }
-  ],
   "sources": [
     {
       "name": "Wilson-Davis Memo — full text leaked 2019",

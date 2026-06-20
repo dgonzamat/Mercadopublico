@@ -46,13 +46,12 @@
       "url": "https://puntadelesteinternacional.com/las-fotografias-tomadas-del-ovni-seran-analizadas-por-c-r-i-d-o-v-n-i"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Avistamiento de piloto profesional con larga duración, registro fotográfico, comportamiento aparentemente interactivo (respuesta a la luz de aterrizaje) y un efecto físico reportado en cabina. Modest porque cada elemento admite lecturas convencionales —coincidencia en la 'reacción', causas mundanas del olor— y no hubo confirmación por radar ni recuperación; el conjunto sostiene la anomalía sin probar su naturaleza.",
-      "rationaleEn": "Professional pilot sighting with long duration, photographic record, apparently interactive behavior (response to the landing light) and a reported physical effect in the cabin. Modest because each element admits conventional readings —coincidence in the 'reaction', mundane causes for the smell— and there was no radar confirmation or recovery; the whole sustains the anomaly without proving its nature."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.51,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.07,
+    "indet": 0.3
+  }
 }

@@ -69,21 +69,5 @@
       "name": "Knapp, G. — 'Russian UFO files' coverage (KLAS-TV Las Vegas, 1993)",
       "note": "Acceso periodístico inicial al archivo soviético post-disolución."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "substantial",
-      "rationale": "SETKA es el equivalente institucional casi exacto de Project Blue Book, ejecutado fuera del eje occidental durante trece años con mandato del Partido / Comisión Militar-Industrial, brazo científico (Academia de Ciencias + IZMIRAN) + brazo militar (Ministerio de Defensa), orden de reporte obligatorio y archivo centralizado de aproximadamente tres mil reportes. Pocas piezas del corpus combinan duración, escala documental y dualidad ciencia-defensa con este nivel de simetría con el aparato estadounidense. Substantial es la calibración honesta: la existencia del programa, su duración y su producción documental están institucionalmente confirmadas en el archivo accesible post-1991.",
-      "rationaleEn": "SETKA is the near-exact institutional equivalent of Project Blue Book, executed outside the Western axis for thirteen years with a Party / Military-Industrial Commission mandate, scientific arm (Academy of Sciences + IZMIRAN) + military arm (Ministry of Defense), mandatory reporting order and centralized archive of approximately three thousand reports. Few corpus pieces combine duration, documentary scale and science-defense duality with this level of symmetry with the U.S. apparatus. Substantial is the honest calibration: the program's existence, duration and documentary output are institutionally confirmed in the post-1991 accessible archive."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Que dos potencias rivales con cero coordinación operativa hayan dedicado trece años de aparato estatal centralizado al mismo tipo de fenómeno —Estados Unidos a Project Blue Book, la URSS a SETKA, en períodos parcialmente solapados— tensiona ligeramente la lectura fuerte 'todo es ruido cultural y misidentificación rural'. Si el universo de reportes fuera puramente ruido, dos burocracias rivales independientes coincidiendo en la inversión institucional sería estadísticamente raro. Minimal porque la lectura escéptica explica también la dualidad (ambos Estados gestionaban su propio ruido militar).",
-      "rationaleEn": "That two rival powers with zero operational coordination dedicated thirteen years of centralized state apparatus to the same kind of phenomenon —the United States with Project Blue Book, the USSR with SETKA, in partially overlapping periods— slightly tensions the strong reading 'it's all cultural noise and rural misidentification'. If the report universe were pure noise, two independent rival bureaucracies converging on the institutional investment would be statistically rare. Minimal because the skeptical reading also explains the duality (both states were managing their own military noise)."
-    }
   ]
 }

@@ -45,14 +45,5 @@
       "name": "GEIPAN — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/GEIPAN"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El historial documentado del GEPAN/GEIPAN es que la gran mayoría de las denuncias se clasifican como identificadas o probablemente identificadas (PAN A/B) o con información insuficiente (PAN C). Es evidencia institucional, sostenida durante décadas y publicada, de cuánto del fenómeno se explica con análisis riguroso —dejando, eso sí, un residuo PAN D reconocido.",
-      "rationaleEn": "The documented track record of GEPAN/GEIPAN is that the vast majority of reports are classified as identified or probably identified (PAN A/B) or with insufficient information (PAN C). It is institutional evidence, sustained over decades and published, of how much of the phenomenon is explained with rigorous analysis —while acknowledging a PAN D residue."
-    }
   ]
 }

@@ -42,13 +42,12 @@
       "url": "https://www.nbcnews.com/now/video/disc-shaped-uap-caught-on-camera-by-the-military-in-2020-241946693913"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Objeto discoidal de gran tamaño registrado en sensor térmico/IR de una plataforma ISR militar, sin penacho de calor y con cambios bruscos de dirección — rasgos difíciles de conciliar con tecnología convencional si el metraje es auténtico. Solo 'minimal': la cadena de custodia es débil (difusión periodística cinco años después, sin confirmación del Pentágono ni expediente de AARO), por lo que el dato apenas inclina la balanza.",
-      "rationaleEn": "A large disc-shaped object recorded on a military ISR platform's thermal/IR sensor, with no heat plume and abrupt direction changes — features hard to reconcile with conventional technology if the footage is authentic. Only 'minimal': the chain of custody is weak (a journalistic release five years later, no Pentagon confirmation or AARO file), so the datum barely tips the balance."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0.14,
+    "adversaria": 0.14,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.04,
+    "indet": 0.28
+  }
 }

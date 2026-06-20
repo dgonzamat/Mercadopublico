@@ -53,20 +53,12 @@
       "name": "Cobertura periodística (TV nacional peruana y Univisión), octubre 2001"
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Estudio sostenido por agencia gubernamental dedicada (DIFAA) — refuerza el patrón de cobertura institucional latinoamericana",
-      "rationaleEn": "Sustained study by dedicated government agency (DIFAA) — reinforces the Latin American institutional coverage pattern"
-    },
-    {
-      "hypothesisId": "interdimensional",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Comportamiento de fisión-fusión repetible difícil de explicar con plataforma material convencional",
-      "rationaleEn": "Repeatable fission-fusion behavior difficult to explain with conventional material platform"
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.53,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.09,
+    "indet": 0.3
+  }
 }

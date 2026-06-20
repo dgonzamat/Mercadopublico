@@ -76,28 +76,5 @@
       "url": "https://vladimi9.wixsite.com/vasco-citizen-science",
       "note": "Proyecto liderado por Villarroel. Datos públicos, código abierto, citizen science."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La correlación estadística entre transitorios POSS-I y tests nucleares estadounidenses (p=0.008, 45% más probable ±1 día) en el periodo 1949–1957 es compatible con varias hipótesis no exclusivas: artefactos en órbita pre-Sputnik (programa militar muy temprano, contradice cronología oficial), reflejos en partículas de polvo radiactivo de alta atmósfera, o programa de observación de cielo militar concurrente. Cualquiera de las tres tensiona la cronología pública de la era espacial estadounidense. Suma como minimal soporte para la hipótesis de programas clasificados porque la cronología oficial (Sputnik oct 1957 como primer satélite) tendría que ajustarse; pero el paper mismo no afirma esa lectura — sólo documenta la correlación. Indicio compatible, no prueba.",
-      "rationaleEn": "The statistical correlation between POSS-I transients and U.S. nuclear tests (p=0.008, 45% more likely within ±1 day) in the 1949–1957 period is compatible with several non-exclusive hypotheses: pre-Sputnik orbital artifacts (very early military program, contradicting official chronology), reflections off radioactive dust particles in the high atmosphere, or a concurrent military sky-observation program. Any of the three tensions the public chronology of the U.S. space era. It counts as minimal support for the classified-program hypothesis because the official chronology (Sputnik Oct 1957 as the first satellite) would need to be adjusted; but the paper itself does not assert that reading — it only documents the correlation. Compatible indication, not proof."
-    },
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La correlación con tests nucleares es físicamente consistente con efectos atmosféricos naturales inducidos por radiación: ionización de partículas, plasmas transitorios sobre la columna de aire, reflexión de luz solar en polvo radiactivo en altitudes altas. Esta es una de las hipótesis competidoras que el propio paper enumera. Como mecánicamente plausible y no descartada, suma como minimal supports para la hipótesis natural — sin probarla, la mantiene viva como explicación competidora del mismo dato.",
-      "rationaleEn": "The correlation with nuclear tests is physically consistent with naturally-induced radiation atmospheric effects: particle ionization, transient plasmas above the air column, sunlight reflection off radioactive dust at high altitudes. This is one of the competing hypotheses the paper itself enumerates. As mechanically plausible and not ruled out, it counts as minimal support for the natural hypothesis — without proving it, it keeps it alive as a competing explanation of the same datum."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "La correlación con UAP reports independientes (p=0.015) acopla observaciones astronómicas profesionales con testimonio militar/civil de la época — pero la asociación es indirecta y el efecto modesto. Suma minimal porque vincula dos modalidades evidenciales distintas (placa fotográfica + reporte humano) sin requerir hipótesis adicional. Lo que NO suma: no discrimina entre 'objetos físicos pre-Sputnik' y 'fenómeno atmosférico observado por testigos humanos a la vez que registrado por placas'. La indecidibilidad la mantiene en minimal.",
-      "rationaleEn": "The correlation with independent UAP reports (p=0.015) couples professional astronomical observations with military/civilian testimony of the era — but the association is indirect and the effect modest. It counts as minimal because it links two distinct evidential modalities (photographic plate + human report) without requiring an additional hypothesis. What it does not add: it does not discriminate between 'pre-Sputnik physical objects' and 'atmospheric phenomenon observed by human witnesses while simultaneously recorded by plates'. That undecidability keeps it at minimal."
-    }
   ]
 }

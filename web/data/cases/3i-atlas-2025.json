@@ -54,22 +54,14 @@
       "note_en": "Catalogue of anomalies; concludes they do not necessarily point to technology."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "fenomenos-naturales",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "3I/ATLAS muestra actividad cometaria inequívoca (coma, jets) y NASA/ESA lo clasifican como un cometa interestelar genuino; sus rarezas químicas, aunque llamativas, caen dentro de la diversidad esperable de objetos de otros sistemas. Modest porque la química (CO2/H2O ~8, níquel sin hierro) no tiene aún un análogo bien establecido y sigue en estudio.",
-      "rationaleEn": "3I/ATLAS shows unmistakable cometary activity (coma, jets) and NASA/ESA classify it as a genuine interstellar comet; its chemical oddities, though striking, fall within the expected diversity of objects from other systems. Modest because the chemistry (CO2/H2O ~8, nickel without iron) has no well-established analog yet and remains under study."
-    },
-    {
-      "hypothesisId": "entidades-no-humanas",
-      "direction": "supports",
-      "strength": "minimal",
-      "rationale": "Algunas anomalías (jets direccionales, química atípica, trayectoria) fueron señaladas como no previstas por los modelos estándar. Minimal —y deliberadamente bajo— porque incluso Loeb, que las documentó, concluyó que no apuntan necesariamente a un origen tecnológico.",
-      "rationaleEn": "Some anomalies (directional jets, atypical chemistry, trajectory) were flagged as not predicted by standard models. Minimal —and deliberately low— because even Loeb, who documented them, concluded they do not necessarily point to a technological origin."
-    }
-  ],
+  "posterior": {
+    "mundano_natural": 0.77,
+    "humana_clasificada": 0.0,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.06,
+    "indet": 0.17
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Deep_VLT_image_of_3I-ATLAS,_a_new_interstellar_object_(potw2527a).jpg?width=800",
     "alt": "Imagen profunda del VLT de ESO del objeto interestelar 3I/ATLAS.",

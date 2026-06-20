@@ -72,28 +72,5 @@
       "name": "FY 2024 National Defense Authorization Act — UAP Records Collection provisions",
       "note": "Marco legal habilitante de la operación; crea NARA Record Group 615 para UAP."
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "ingenieria-inversa",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El texto de la solicitud Burlison-MITRE asume explícitamente como objeto de búsqueda 'los alegados programas heredados de recuperación de restos o ingeniería inversa' — formulación que no tiene sentido legal si la Task Force no asumiera operacionalmente que esos programas pueden existir. Un cuerpo congresional con poder de subpoena formalizando la búsqueda de records de un programa de ingeniería inversa es la afirmación operativa institucional más fuerte del corpus sobre la hipótesis, aunque no presenta documento del programa mismo. Modest porque la búsqueda no es prueba del programa; es presunción legislativa documentada.",
-      "rationaleEn": "The Burlison-MITRE request text explicitly assumes as a search object 'the alleged legacy crash-retrieval or reverse-engineering programs' — a formulation that makes no legal sense unless the Task Force operationally assumed those programs may exist. A subpoena-capable congressional body formalizing the search for records of a reverse-engineering program is the corpus's strongest operative institutional assertion on the hypothesis, although it does not present a document of the program itself. Modest because the search is not proof of the program; it is documented legislative presumption."
-    },
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Documenta institucionalmente la **zona gris FFRDC** como canal donde un programa clasificado puede sostenerse fuera del aparato federal directo. La estrategia explícita de Burlison —trail MITRE → MIT Lincoln → RAND → Aerospace → Northrop— es articulación documentada de la tesis 'encubrimiento institucional con contratista intermediario'. MITRE confirmando que cumplirá es respaldo público de la lectura. Modest porque la zona gris es estructural, no prueba del programa específico.",
-      "rationaleEn": "It institutionally documents the **FFRDC gray zone** as the channel through which a classified program can be sustained outside the direct federal apparatus. Burlison's explicit strategy —trail MITRE → MIT Lincoln → RAND → Aerospace → Northrop— is documented articulation of the 'institutional cover-up via contractor intermediary' thesis. MITRE confirming it will comply is public backing of the reading. Modest because the gray zone is structural, not proof of the specific program."
-    },
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "weakens",
-      "strength": "minimal",
-      "rationale": "Una solicitud congresional formal de records desde 1930 a múltiples FFRDCs simultáneos, con marco legal NDAA + NARA Record Group, tensiona la lectura escéptica fuerte que sostiene 'todo es ruido cultural y ningún programa institucional sostenido existe'. Si el universo de records UAP fuera puramente ruido administrativo, la inversión legislativa coordinada sería incoherente. Minimal porque la solicitud también es compatible con la lectura escéptica (el Congreso busca records y descubre que no hay programa, solo archivos administrativos).",
-      "rationaleEn": "A formal congressional request for records since 1930 to multiple simultaneous FFRDCs, with NDAA + NARA Record Group legal framework, tensions the strong skeptical reading that holds 'it's all cultural noise and no sustained institutional program exists'. If the UAP records universe were pure administrative noise, coordinated legislative investment would be incoherent. Minimal because the request is also compatible with the skeptical reading (Congress searches for records and discovers there is no program, only administrative archives)."
-    }
   ]
 }

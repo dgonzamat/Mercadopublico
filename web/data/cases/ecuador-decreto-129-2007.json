@@ -53,14 +53,5 @@
       "name": "Cobertura El Comercio (Ecuador, mayo 2007)",
       "url": "https://www.elcomercio.com"
     }
-  ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "programas-clasificados",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "Instrumento presidencial firmado confirma que el Estado mantenía archivos clasificados — refuerza patrón de gestión institucional sostenida",
-      "rationaleEn": "Signed presidential instrument confirms the state held classified files — reinforces the pattern of sustained institutional handling"
-    }
   ]
 }

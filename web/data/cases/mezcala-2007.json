@@ -50,13 +50,12 @@
       "note_en": "Material from the investigator who documented the case."
     }
   ],
-  "evidenceContribution": [
-    {
-      "hypothesisId": "misidentificacion",
-      "direction": "supports",
-      "strength": "modest",
-      "rationale": "El rasgo central —un objeto luminoso casi inmóvil sobre un cerro durante cerca de 72 horas— es la firma clásica de un cuerpo astronómico brillante y bajo en el horizonte (un planeta o estrella titilando), no de una nave: nada material permanece fijo días enteros. La masividad de testigos no discrimina contra esa lectura. Apoya de forma modesta la hipótesis de identificación errónea.",
-      "rationaleEn": "The central feature —a nearly motionless luminous object over a hill for about 72 hours— is the classic signature of a bright low-horizon astronomical body (a twinkling planet or star), not a craft: nothing material stays fixed for entire days. The mass of witnesses does not discriminate against that reading. It modestly supports the misidentification hypothesis."
-    }
-  ]
+  "posterior": {
+    "mundano_natural": 0.76,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.04,
+    "indet": 0.15
+  }
 }
