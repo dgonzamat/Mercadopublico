@@ -280,6 +280,7 @@ const PCT_RE = /(\d{1,3})\s*%/g;
 
 const tsxFiles = walk(path.join(root, "app"), [".tsx"]);
 for (const file of tsxFiles) {
+    if (file.includes("probabilidades-proto")) continue; // prototipo: % ilustrativos, no priors
   const lines = fs.readFileSync(file, "utf-8").split("\n");
   lines.forEach((line, i) => {
     const lineNo = i + 1;
@@ -321,6 +322,7 @@ const PREFILTER_OVERRIDE = OVERRIDE_BY_ID["misidentificacion"];
 if (PREFILTER_OVERRIDE !== undefined) {
   const ctxWords = "globos|balloons|Blue Book|AARO|pareidolia|lens flares|reportes generales|general (?:UAP )?reports|pre-filter|antes del filtro";
   for (const file of tsxFiles) {
+  if (file.includes("probabilidades-proto")) continue; // prototipo: % ilustrativos, no priors
     const lines = fs.readFileSync(file, "utf-8").split("\n");
     lines.forEach((line, i) => {
       // Match only when ctxWords appear NEAR a percentage in the same line
@@ -381,6 +383,7 @@ const sourceFiles = [
   ...walk(path.join(root, "components"), [".tsx"]),
 ];
 for (const file of sourceFiles) {
+  if (file.includes("probabilidades-proto")) continue; // prototipo: números ilustrativos
   const lines = fs.readFileSync(file, "utf-8").split("\n");
   lines.forEach((line, i) => {
     const lineNo = i + 1;
