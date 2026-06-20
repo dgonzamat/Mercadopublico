@@ -14,6 +14,7 @@
     "place_en": "Switzerland (Air Force Intelligence Service)"
   },
   "tier": "B",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 35,
   "posterior": { "mundano_natural": 0.55, "humana_clasificada": 0.05, "adversaria": 0.15, "nohumano_encubierto": 0.04, "nohumano_abierto": 0.06, "indet": 0.15 },

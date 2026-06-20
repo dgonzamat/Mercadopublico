@@ -13,6 +13,7 @@
     "place": "Battelle, Columbus, Ohio"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 42,
   "posterior": {

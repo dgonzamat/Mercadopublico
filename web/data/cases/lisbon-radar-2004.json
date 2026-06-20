@@ -14,6 +14,7 @@
     "place_en": "Lisbon airspace (Portuguese Air Force)"
   },
   "tier": "B",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 38,
   "summary": "En 2004, ante un objeto no identificado en el espacio aéreo cercano a Lisboa, la Fuerza Aérea Portuguesa puso F-16 en alerta. El portavoz de la fuerza, coronel Carlos Barbosa, confirmó públicamente que el radar de defensa registró un 'blanco' durante dos o tres minutos, sin explicación final. Primer caso de Portugal en el corpus: confirmación oficial de un retorno de radar, sin programa de investigación que lo respaldara.",

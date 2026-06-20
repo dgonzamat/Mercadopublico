@@ -14,6 +14,7 @@
     "place_en": "Argentine Air Force (Buenos Aires)"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "probability": 38,
   "posterior": {
     "mundano_natural": 0.45,

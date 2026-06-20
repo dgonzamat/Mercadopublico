@@ -14,6 +14,7 @@
     "place_en": "Lake Superior (off Kinross AFB, Michigan)"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 50,
   "summary": "El 23 de noviembre de 1953, un caza F-89C Scorpion despegó de Kinross AFB para interceptar un eco de radar no identificado sobre el lago Superior. El radar terrestre mostró que el avión y el objetivo se fusionaban en un solo blip — y el F-89, con el teniente Felix Moncla y el operador de radar Robert Wilson, desapareció sin dejar rastro. Nunca se halló la aeronave ni los cuerpos.",

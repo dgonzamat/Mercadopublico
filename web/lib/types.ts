@@ -1,6 +1,8 @@
 export type Tier = "S" | "A" | "B";
 export type EpistemicStatus = "documented" | "developing" | "projected";
 export type Category = "incident" | "document" | "contactee" | "crop_circle";
+/** Sub-tipo de la explicación prosaica (abre la narrativa mundano/natural). */
+export type MundanoType = "misid" | "natural" | "fraude";
 export type VerdictMoral = "neutral" | "hostile" | "positive" | "variable";
 
 export interface Location {
@@ -73,6 +75,8 @@ export interface UAPCase {
   flag: string;
   location: Location;
   tier: Tier;
+  /** Sub-tipo de la explicación prosaica si el caso carga masa mundano/natural. */
+  mundanoType?: MundanoType;
   // Estatus epistémico del caso. Ausente = "documented" (evidencia
   // primaria verificable). "developing" = reciente/en curso; "projected"
   // = contenido near-future del corpus (análisis, no hecho documentado).

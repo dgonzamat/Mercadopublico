@@ -12,6 +12,7 @@
     "place": "FBI Vault"
   },
   "tier": "A",
+  "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 10,
   "posterior": {

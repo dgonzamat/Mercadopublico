@@ -14,6 +14,7 @@
     "place_en": "Office of Canada's Chief Science Advisor (OCSA), Ottawa"
   },
   "tier": "A",
+  "mundanoType": "misid",
   "epistemicStatus": "developing",
   "probability": 62,
   "posterior": { "mundano_natural": 0.15, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 0.85 },

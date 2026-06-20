@@ -14,6 +14,7 @@
     "place_en": "Defence Intelligence Staff · Ministry of Defence, London"
   },
   "tier": "A",
+  "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 60,
   "posterior": {
