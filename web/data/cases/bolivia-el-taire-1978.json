@@ -53,8 +53,8 @@
     "mundano_natural": 0.4,
     "humana_clasificada": 0.12,
     "adversaria": 0.06,
-    "nohumano_encubierto": 0.03,
-    "nohumano_abierto": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
     "indet": 0.35
   },
   "name_en": "El Taire / Bermejo crash"

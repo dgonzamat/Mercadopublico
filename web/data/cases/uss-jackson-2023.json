@@ -63,8 +63,8 @@
     "mundano_natural": 0.15,
     "humana_clasificada": 0.15,
     "adversaria": 0.13,
-    "nohumano_encubierto": 0.08,
-    "nohumano_abierto": 0.18,
+    "nohumano_encubierto": 0.17,
+    "nohumano_abierto": 0.09,
     "indet": 0.31
   }
 }

@@ -57,8 +57,8 @@
     "mundano_natural": 0.47,
     "humana_clasificada": 0.12,
     "adversaria": 0.02,
-    "nohumano_encubierto": 0.02,
-    "nohumano_abierto": 0.1,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.09,
     "indet": 0.27
   },
   "name_en": "Hudson Valley Boomerang"

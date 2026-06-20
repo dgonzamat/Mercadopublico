@@ -84,11 +84,11 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.09,
+    "mundano_natural": 0.08,
     "humana_clasificada": 0.2,
-    "adversaria": 0.14,
-    "nohumano_encubierto": 0.1,
-    "nohumano_abierto": 0.22,
+    "adversaria": 0.13,
+    "nohumano_encubierto": 0.2,
+    "nohumano_abierto": 0.14,
     "indet": 0.25
   }
 }

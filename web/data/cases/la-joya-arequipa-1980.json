@@ -28,10 +28,10 @@
   "whyMatters_en": "It is Peru's most famous case and one of the few in the world with a military pilot firing live ammunition at an unidentified object — Óscar Santa María Huertas is, as far as documented, the only pilot to have done so. Its value is testimonial and institutional: a named officer, a military base as the setting, hundreds of witnesses, and object behavior that simultaneously strains the balloon hypothesis (it neither evades nor withstands cannon fire) and the natural-phenomenon one (it does not maneuver against a fighter). Tier A and not S because of the hard limitation: the episode rests on testimony —very consistent and sustained for forty years— but with no gun-camera film or published radar record to fix it objectively. It fits the fork the corpus treats as central: the initial suspicion was another state's surveillance technology; what the pilot reports pushes toward something no 1980 balloon could do.\n\nIt is worth weighing the two readings honestly, however. The case's strength is the convergence of a verifiable, exceptional act —a fighter firing live ammunition, recorded in the rounds expended— with the mass of witnesses in formation. Its weakness is that almost all the anomalous content (the absorbed fire, the intelligent evasion, the exact dimensions) comes from a single narrator, with no image or radar to back it, and an account repeated for forty years can consolidate and polish itself over time. The Peruvian Air Force's own official silence, which some read as cover-up, is also compatible with a routine episode —fire against an unidentified target that proved inconsequential— that never warranted a public report. The case therefore lives on the border between a genuinely extraordinary military event and a single, unverifiable testimony: it weighs, but it does not decide.",
   "posterior": {
     "mundano_natural": 0.21,
-    "humana_clasificada": 0.1,
+    "humana_clasificada": 0.09,
     "adversaria": 0.14,
-    "nohumano_encubierto": 0.06,
-    "nohumano_abierto": 0.18,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.15,
     "indet": 0.31
   },
   "evidence": [

@@ -111,11 +111,11 @@
     "href": "https://commons.wikimedia.org/wiki/File:Nave_Espacial_de_Varginha.jpg"
   },
   "posterior": {
-    "mundano_natural": 0.2,
-    "humana_clasificada": 0.1,
+    "mundano_natural": 0.18,
+    "humana_clasificada": 0.08,
     "adversaria": 0.02,
-    "nohumano_encubierto": 0.16,
-    "nohumano_abierto": 0.22,
-    "indet": 0.3
+    "nohumano_encubierto": 0.38,
+    "nohumano_abierto": 0.06,
+    "indet": 0.28
   }
 }
