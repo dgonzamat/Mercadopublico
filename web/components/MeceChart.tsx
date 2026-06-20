@@ -99,7 +99,7 @@ export function MecePartition({
                 <T es="Heterogeneidad" en="Heterogeneity" />
               </div>
               <div className="text-muted">
-                <T es="derivada = 1 − mundano/natural" en="derived = 1 − mundane/natural" />
+                <T es="derivada = 1 − prosaico (misid+natural+fraude)" en="derived = 1 − prosaic (misid+natural+hoax)" />
               </div>
             </div>
             <span className="shrink-0 text-muted">{pct(het / N)}%</span>
