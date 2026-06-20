@@ -21,14 +21,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.62,
-    "natural_desc": 0.10,
-    "clasificada": 0.03,
+    "mundano_natural": 0.72,
+    "humana_clasificada": 0.03,
     "adversaria": 0.02,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.04,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.06,
     "indet": 0.15
   },
   "whatHappened": "El 5 de marzo de 2004, una aeronave Merlin C26-A del 501 Escuadrón de la Fuerza Aérea Mexicana (FAM) patrullando sobre el estado de Campeche, cerca de Ciudad del Carmen, en operativos antinarcóticos, detectó múltiples objetos en su radar (un AN/PS-143 Bravo Victor 3) y en su sistema FLIR (Forward Looking InfraRed, un Star Zapphir II). La tripulación reportó once objetos esféricos que parecían acompañar y rodear a la aeronave durante un intervalo prolongado, registrados tanto en modo normal como en infrarrojo. Lo decisivo es que los objetos solo aparecían en infrarrojo: la tripulación no los vio a simple vista.\n\nEl General Clemente Vega García, entonces Secretario de la Defensa Nacional (SEDENA), aprobó la divulgación del material. En abril de 2004 un oficial de la Secretaría contactó al investigador Jaime Maussan y le facilitó el video FLIR; Maussan lo presentó en una conferencia de prensa en mayo de 2004 que generó cobertura internacional masiva. La participación abierta de la SEDENA convirtió el episodio en un caso atípico: pocas veces el ministerio de defensa de un país soberano divulga proactivamente material de sensores militares como un evento UAP.\n\nEl piloto e investigador mexicano Alejandro Franz Navarrete, de la organización Alcione, propuso la explicación alternativa más influyente y, con el tiempo, dominante: el FLIR habría detectado los quemadores de gas (flares) de las plataformas petroleras del campo Cantarell, en la sonda de Campeche, una de las zonas de extracción más intensas del Golfo de México, situadas a entre 50 y 90 km de Ciudad del Carmen. A esa distancia y cerca del horizonte, fuentes de calor fijas pueden aparecer como objetos discretos suspendidos a la altura del avión, especialmente si una inversión térmica refracta su firma infrarroja. Franz fortaleció su argumento consultando el sistema FIRMS de la NASA, que confirmó la presencia de focos de calor activos en el área de Cantarell ese mismo 5 de marzo de 2004 —es decir, las plataformas estaban efectivamente quemando gas esa jornada—. La hipótesis es consistente con la geografía (vuelo sobre el Golfo), con la ausencia total de detección visual y con que los 'objetos' nunca se acercaran de verdad. La FAM no ha emitido una conclusión oficial actualizada que la confirme o refute. El caso se cita como ejemplo de evento UAP con divulgación institucional alta inicial seguida de una explicación convencional técnicamente plausible que nunca fue desmentida.",

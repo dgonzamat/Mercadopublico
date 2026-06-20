@@ -26,14 +26,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.34,
-    "natural_desc": 0.03,
-    "clasificada": 0.20,
+    "mundano_natural": 0.37,
+    "humana_clasificada": 0.2,
     "adversaria": 0.18,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.03,
-    "ontologico": 0.01,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.04,
     "indet": 0.19
   },
   "whatHappened": "Los primeros reportes públicos de drones grandes y coordinados sobre New Jersey comenzaron a finales de noviembre de 2024. Para mediados de diciembre, miles de avistamientos habían sido registrados a través de aplicaciones civiles y reportes a la FAA, incluyendo videos en alta resolución de drones de aparente tamaño industrial (estimados entre 1.5 y 6 metros de envergadura) operando en formación, a baja altitud y velocidad mayor a la de drones comerciales típicos, con luces estroboscópicas y sobre todo en horarios nocturnos.\n\nLos sobrevuelos cubrieron una zona amplia: Picatinny Arsenal (centro de I+D de armas del US Army), Naval Weapons Station Earle (terminal de transferencia de munición naval para la flota del Atlántico), los reactores nucleares de Salem y Hope Creek operados por PSEG Nuclear, la propiedad residencial del Gobernador Phil Murphy en Middletown Township, y áreas urbanas del norte de Nueva Jersey y de Long Island. La FAA llegó a imponer restricciones temporales de vuelo sobre Picatinny Arsenal y sobre el Trump National Golf Club de Bedminster. El Gobernador Murphy convocó conferencias de prensa exigiendo explicaciones federales. El Senador Andy Kim —que participó personalmente en un patrullaje policial nocturno para observar el fenómeno— y el Senador Cory Booker (ambos de NJ) presionaron públicamente al DHS y a la FAA, incluso por carta a los secretarios Buttigieg y Mayorkas y al director Wray. La FBI, DHS, FAA y AARO ejecutaron investigación conjunta documentada y desplegaron equipos de tracking adicionales.\n\nLa posición oficial se construyó en varios actos. El DHS y el FBI sostuvieron que la mayoría de los avistamientos eran casos de 'identidad equivocada': público confundiendo aeronaves tripuladas que operan legalmente —aviones en aproximación a aeropuertos concurridos como JFK, helicópteros, e incluso estrellas y planetas— con drones. El Secretario de Seguridad Nacional Alejandro Mayorkas afirmó que 'no conocemos ninguna amenaza ni actividad maliciosa'. La Casa Blanca, a través de su portavocería de seguridad nacional, reforzó el mensaje a mediados de diciembre de 2024: muchos de los objetos eran drones autorizados o aeronaves comerciales, y 'no había evidencia de amenaza extranjera ni de tecnología anómala'. Al mismo tiempo, en una audiencia ante el Congreso, un alto funcionario del FBI (el subdirector adjunto Robert Wheeler) reconoció el límite de ese conocimiento: preguntado sobre el riesgo, respondió que no había nada conocido que lo hiciera afirmar una amenaza, 'pero simplemente no sabemos, y esa es la parte preocupante'. Varios legisladores y el propio Gobernador Murphy rechazaron públicamente la explicación como insuficiente. La administración Trump, asumiendo en enero 2025, sostuvo la misma posición oficial. No se publicó, sin embargo, análisis forense detallado de los drones, no se identificaron operadores específicos para la mayoría de los sobrevuelos sobre instalaciones sensibles, y el origen verdadero quedó oficialmente abierto. La administración Trump no inició una investigación renovada, dejando el caso ambivalente en el registro institucional.",

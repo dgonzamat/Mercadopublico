@@ -24,14 +24,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.68,
-    "natural_desc": 0.12,
-    "clasificada": 0.03,
+    "mundano_natural": 0.8,
+    "humana_clasificada": 0.03,
     "adversaria": 0.04,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.02,
-    "ontologico": 0.01,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
     "indet": 0.08
   },
   "whatHappened": "El contexto lo es todo. Apenas tres meses después de Pearl Harbor, la costa oeste de Estados Unidos vivía en una alerta de invasión casi histérica. La noche del 23 al 24 de febrero de 1942, un submarino japonés (el I-17) había emergido frente a Santa Bárbara y bombardeado la instalación petrolera de Ellwood: el primer ataque del Eje sobre suelo continental estadounidense desde la guerra de 1812. El daño material fue mínimo, pero el efecto psicológico fue enorme. Apenas veinticuatro horas después, la inteligencia naval había advertido que podía esperarse un ataque sobre la zona en las próximas diez horas. Sobre ese trasfondo de nervios, la noche del 24 al 25 de febrero los radares y observadores de la 37.ª Brigada de Artillería Costera detectaron supuestos objetos aproximándose a Los Ángeles. A la 02:25 se decretó el apagón total de la ciudad, y a las 03:16 las baterías antiaéreas abrieron fuego: más de 1.400 proyectiles de 12,8 libras fueron disparados durante aproximadamente una hora contra el cielo nocturno, mientras decenas de reflectores barrían la oscuridad.\n\nEl resultado es lo más revelador. No cayó ninguna bomba enemiga, no se confirmó ninguna aeronave hostil, no hubo derribos y, terminada la guerra, los registros japoneses no mostraron ningún avión sobre Los Ángeles esa noche. Las únicas cinco víctimas mortales fueron indirectas: tres en accidentes de tráfico durante el caos del apagón y dos por infartos atribuidos a la tensión. La metralla de los propios proyectiles antiaéreos —que vuelven a caer— dañó casas y vehículos en tierra. La respuesta oficial fue inmediatamente contradictoria: el Secretario de Marina Frank Knox calificó el episodio, ya el 25 de febrero, de falsa alarma producto de los nervios de guerra; el Secretario de Guerra Henry Stimson, en cambio, sostuvo que hasta cinco aeronaves no identificadas —posiblemente civiles operadas por agentes enemigos para sembrar pánico— habrían sobrevolado la zona. Esa discrepancia entre dos departamentos del mismo gobierno es, paradójicamente, lo que mantuvo vivo el misterio durante décadas.\n\nLa famosa fotografía publicada por Los Angeles Times el 26 de febrero —media docena de haces de reflector convergiendo sobre un punto luminoso en el cielo— se convirtió en el ícono visual del episodio y es citada hasta hoy por la cultura OVNI como prueba de un objeto sólido. Sin embargo, análisis posteriores establecieron que la imagen fue fuertemente retocada en el cuarto oscuro, una práctica editorial rutinaria de la época para 'limpiar' y dramatizar fotografías de prensa; lo que parece un disco iluminado es en buena medida un artefacto del retoque. En 1983, la Office of Air Force History revisó formalmente el caso y concluyó que el detonante más probable fueron uno o más globos meteorológicos soltados hacia la 01:00 que, sumados a la expectativa de ataque, dispararon la primera alarma; las demás baterías abrieron fuego en cadena al ver los fogonazos de las vecinas, alimentando una hora de barrera contra un cielo esencialmente vacío. Entra al corpus como Tier B: un evento institucional plenamente documentado cuya interpretación como fenómeno anómalo es débil.",

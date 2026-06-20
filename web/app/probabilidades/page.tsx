@@ -8,47 +8,35 @@ import type { MeceClassId } from "@/lib/types";
 export const metadata = {
   title: "Probabilidades por explicación (modelo MECE)",
   description:
-    "Distribución comparable sobre explicaciones mutuamente excluyentes: cada caso reparte 100% entre nueve explicaciones; el corpus las reparte de forma comparable. Preserva las hipótesis del marco anterior.",
+    "Distribución comparable sobre narrativas mutuamente excluyentes (objeto + postura institucional): cada caso reparte 100% entre seis narrativas; el corpus las reparte de forma comparable. Preserva las hipótesis del marco anterior.",
   alternates: { canonical: "/probabilidades/" },
 };
 
 /** Qué significa cada clase (y qué hipótesis del marco anterior preserva). */
 const BLURB: Record<MeceClassId, { es: string; en: string }> = {
-  mundano: {
-    es: "Objeto conocido, ilusión perceptual, error o fraude. Es la clase de la antigua hipótesis de «misidentificación» dentro del corpus.",
-    en: "Known object, perceptual illusion, error or hoax. The within-corpus class of the former 'misidentification' hypothesis.",
+  mundano_natural: {
+    es: "Objeto conocido, ilusión, error o fraude, o un fenómeno natural. Sin anomalía ni encubrimiento. Absorbe «misidentificación» y «fenómenos naturales».",
+    en: "Known object, illusion, error or hoax, or a natural phenomenon. No anomaly, no cover-up. Absorbs 'misidentification' and 'natural phenomena'.",
   },
-  natural_desc: {
-    es: "Fenómeno natural real, catalogado o no (plasma, bólido, reentrada). Antigua hipótesis «fenómenos naturales».",
-    en: "A real natural phenomenon, catalogued or not (plasma, bolide, reentry). Former 'natural phenomena' hypothesis.",
-  },
-  clasificada: {
-    es: "Tecnología humana clasificada propia o aliada (black project). Antigua hipótesis «programas clasificados».",
-    en: "Classified human technology, own or allied (black project). Former 'classified programs' hypothesis.",
+  humana_clasificada: {
+    es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
+    en: "A secret own or allied program (cover-up is intrinsic). Former 'classified programs' hypothesis.",
   },
   adversaria: {
     es: "Tecnología de vigilancia de otro Estado. Antigua hipótesis «tecnología adversaria».",
     en: "Another state's surveillance technology. Former 'adversary technology' hypothesis.",
   },
-  ing_inversa: {
-    es: "Ingeniería inversa humana de tecnología no humana recuperada. Antigua hipótesis «ingeniería inversa».",
-    en: "Human reverse-engineering of recovered non-human technology. Former 'reverse engineering' hypothesis.",
+  nohumano_encubierto: {
+    es: "Inteligencia o tecnología no humana que un Estado conoce, controla u oculta — incluye ingeniería inversa y la narrativa de tratado. Es la combinación «no-humano + ocultación militar» como clase propia.",
+    en: "Non-human intelligence or technology that a state knows, controls or hides — includes reverse-engineering and the treaty narrative. The 'non-human + military cover-up' combination as its own class.",
   },
-  interdimensional: {
-    es: "Inteligencia no humana vía física exótica u otra dimensión. Subclase de «entidades no humanas».",
-    en: "Non-human intelligence via exotic physics or another dimension. Subclass of 'non-human entities'.",
-  },
-  ontologico: {
-    es: "Inteligencia no humana como fenómeno no materialista / de conciencia. Subclase de «entidades no humanas».",
-    en: "Non-human intelligence as a non-materialist / consciousness phenomenon. Subclass of 'non-human entities'.",
-  },
-  tratado: {
-    es: "Greys / tratado formal con no humanos. Subclase de «entidades no humanas».",
-    en: "Greys / formal treaty with non-humans. Subclass of 'non-human entities'.",
+  nohumano_abierto: {
+    es: "Fenómeno genuinamente no humano que ninguna institución controla ni oculta (el «sistema de control» tipo Vallée; interdimensional / ontológico).",
+    en: "A genuinely non-human phenomenon that no institution controls or hides (the Vallée-style 'control system'; interdimensional / ontological).",
   },
   indet: {
-    es: "Evidencia insuficiente para asignar una explicación. Es la honestidad del modelo: no todo se puede resolver.",
-    en: "Insufficient evidence to assign an explanation. The model's honesty: not everything can be resolved.",
+    es: "Evidencia insuficiente para asignar una narrativa. La honestidad del modelo: no todo se puede resolver.",
+    en: "Insufficient evidence to assign a narrative. The model's honesty: not everything can be resolved.",
   },
 };
 
@@ -77,8 +65,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Cada uno de los ${scored.length} casos de incidente reparte el 100% entre las mismas nueve explicaciones mutuamente excluyentes. Sumadas, reparten el corpus de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Las hipótesis del marco anterior se preservan (cinco como hojas, tres como subclases, dos como vistas derivadas).`}
-          en={`Each of the ${scored.length} incident cases splits 100% among the same nine mutually-exclusive explanations. Summed, they partition the corpus comparably: one can coherently say which explanation accounts for more cases. The prior framework's hypotheses are preserved (five as leaves, three as subclasses, two as derived views).`}
+          es={`Cada uno de los ${scored.length} casos de incidente reparte el 100% entre las mismas seis narrativas mutuamente excluyentes. Sumadas, reparten el corpus de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano + encubrimiento estatal» es una clase propia. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa) y como vistas derivadas.`}
+          en={`Each of the ${scored.length} incident cases splits 100% among the same six mutually-exclusive narratives. Summed, they partition the corpus comparably: one can coherently say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human + state cover-up' is its own class. The prior framework's hypotheses are preserved as a mapping (see each narrative) and as derived views.`}
         />
       </Lede>
 
@@ -93,7 +81,7 @@ export default function ProbabilidadesPage() {
 
       <section className="mt-16">
         <H2>
-          <T es="Las nueve explicaciones" en="The nine explanations" />
+          <T es="Las seis narrativas" en="The six narratives" />
         </H2>
         <Caption>
           <T

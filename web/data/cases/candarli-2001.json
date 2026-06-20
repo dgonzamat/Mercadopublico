@@ -25,14 +25,11 @@
   "whyMatters": "Segundo caso turco del corpus y de perfil institucional distinto al de Kumburgaz: en vez de un video civil, aquí hay pilotos de la Fuerza Aérea reportando por la cadena de mando a la torre y al centro de alerta del ejército. Muestra que Turquía —considerada un 'hotspot' de avistamientos— también tiene encuentros de aviación militar en el registro público.\n\nMás aún, el caso es un buen ejemplo del modo en que una institución gestiona un reporte incómodo de sus propios pilotos. La explicación oficial (aves o globo meteorológico) es plausible y debe tomarse en serio: una bandada o un globo a la deriva pueden producir, contra el sol y a distancia, una impresión de forma compacta y de 'acompañamiento' por paralaje. Pero la amenaza de medidas disciplinarias contra los testigos introduce un sesgo en sentido contrario, porque desincentiva el reporte futuro y enturbia la trazabilidad del dato original. Esa tensión —desmentido mundano frente a presión institucional sobre el testigo— es exactamente el tipo de patrón que el corpus busca documentar sin sobreinterpretar: el caso vale como punto institucional turco y como ilustración de la dinámica reporte/contención, no como evidencia de anomalía física. En el balance, la duración reportada (≈30 minutos de 'acompañamiento' a la altitud y velocidad del jet) es el rasgo que más tensiona la explicación de aves o globo, pero por sí solo no la refuta, y sin radar ni imagen el episodio permanece como un testimonio profesional inconcluso. Es el lugar correcto para un caso de tier medio-bajo: registrado, geográficamente relevante, evidencialmente abierto.",
   "whyMatters_en": "Turkey's second corpus case, with an institutional profile distinct from Kumburgaz: instead of a civilian video, here Air Force pilots report up the chain of command to the tower and the army alert center. It shows that Turkey —considered a sightings 'hotspot'— also has military aviation encounters in the public record.\n\nMoreover, the case is a good example of how an institution manages an uncomfortable report from its own pilots. The official explanation (birds or a weather balloon) is plausible and should be taken seriously: a flock or a drifting balloon can, against the sun and at a distance, produce an impression of a compact shape and of 'accompaniment' through parallax. But the threat of disciplinary measures against the witnesses introduces a bias in the opposite direction, because it discourages future reporting and muddies the traceability of the original datum. That tension —mundane rebuttal versus institutional pressure on the witness— is exactly the kind of pattern the corpus seeks to document without overinterpreting: the case stands as a Turkish institutional point and as an illustration of the report/containment dynamic, not as evidence of physical anomaly. On balance, the reported duration (≈30 minutes of 'accompaniment' at the jet's altitude and speed) is the feature that most strains the birds-or-balloon explanation, but on its own it does not refute it, and without radar or imagery the episode remains an inconclusive professional testimony. That is the right place for a low-to-mid-tier case: recorded, geographically relevant, evidentially open.",
   "posterior": {
-    "mundano": 0.42,
-    "natural_desc": 0.06,
-    "clasificada": 0.04,
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.04,
     "adversaria": 0.08,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.04,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.06,
     "indet": 0.32
   },
   "evidence": [

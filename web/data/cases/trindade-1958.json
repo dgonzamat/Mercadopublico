@@ -38,14 +38,11 @@
     "President Kubitschek's personal authorization for release"
   ],
   "posterior": {
-    "mundano": 0.30,
-    "natural_desc": 0.06,
-    "clasificada": 0.05,
+    "mundano_natural": 0.36,
+    "humana_clasificada": 0.05,
     "adversaria": 0.03,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.18,
-    "ontologico": 0.06,
-    "tratado": 0.03,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.24,
     "indet": 0.28
   },
   "sources": [

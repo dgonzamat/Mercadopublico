@@ -21,14 +21,11 @@
   "patterns": ["8e"],
   "category": "incident",
   "posterior": {
-    "mundano": 0.18,
-    "natural_desc": 0.22,
-    "clasificada": 0.08,
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.08,
     "adversaria": 0.12,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.07,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.09,
     "indet": 0.29
   },
   "whatHappened": "El 14 de diciembre de 1990, tres controladores aéreos —operando de forma independiente en ubicaciones distintas— registraron en radar el mismo objeto cruzando el espacio aéreo griego. El blanco, descrito como de forma alargada (cigar-shaped), se desplazaba a una velocidad estimada de más de 3.000 mph (unos 4.800 km/h, cerca de Mach 4) y aparecía como un retorno de radar sólido ('hard target'), no como un eco fantasma ni como una interferencia atmosférica.\n\nLa coincidencia de tres registros independientes y la naturaleza física del retorno llevaron a la Hellenic Air Force (Fuerza Aérea Helénica) a abrir un expediente oficial del caso. El contexto importa: a comienzos de los años 90 el Egeo era uno de los espacios aéreos más vigilados y disputados de Europa, con intercepciones recurrentes entre cazas griegos y turcos, de modo que la red de radar militar y civil estaba en alerta permanente y los operadores eran profesionales habituados a discriminar tráfico real de espurios.\n\nEl encuadre del corpus es directo: lo sólido aquí es la cadena institucional —radar militar, multiplicidad de operadores independientes, expediente de la fuerza aérea—. No hay confirmación visual ni material recuperado, y la cifra de velocidad debe leerse con la cautela habitual de las estimaciones de radar de la época: las velocidades extremas en pantalla pueden originarse en artefactos de procesamiento, propagación anómala (ductos atmosféricos que 'doblan' el haz), correlación errónea de retornos sucesivos o ecos de origen instrumental. Que tres operadores independientes coincidieran reduce —sin eliminar— esas explicaciones, porque algunas anomalías de propagación pueden afectar a más de un radar a la vez. Como dato instrumental institucional, ancla a Grecia en el corpus con un caso de tier medio creíble pero no extraordinario.",

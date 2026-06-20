@@ -22,14 +22,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.30,
-    "natural_desc": 0.18,
-    "clasificada": 0.06,
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.06,
     "adversaria": 0.03,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.07,
-    "ontologico": 0.03,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.1,
     "indet": 0.31
   },
   "whatHappened": "El 7 de noviembre de 2006 alrededor de las 16:15 hora local, personal de tierra y pilotos de United Airlines en el Gate C-17 del aeropuerto Chicago O'Hare observaron un objeto metálico circular en forma de disco, de color gris oscuro, posando bajo la capa de nubes a una altura estimada en unos 500 a 700 metros sobre la terminal. El objeto, sin luces, marcas ni ruido, permaneció estacionario durante aproximadamente 5 minutos. Luego ascendió de forma vertical y abrupta atravesando la capa nubosa y, según varios testigos, dejó por unos segundos un agujero circular nítido en las nubes —de unos 30 metros de diámetro— por el que se vio cielo azul antes de que se cerrara.\n\nLos testigos directos incluyeron al menos 12 empleados de United Airlines: mecánicos en la rampa, supervisores de operaciones, personal de empuje de aeronaves (pushback) y pilotos, incluido al menos uno que reportó el objeto por radio interna. La tripulación del vuelo United 446 a Charlotte, estacionado en C-17, estuvo entre quienes lo vieron. La torre de control de O'Hare, según la versión inicial de la FAA, no había detectado nada en radar y no tenía registros. Cuando el periodista del Chicago Tribune Jon Hilkevitch presentó la pregunta, tanto United Airlines como la FAA negaron oficialmente tener conocimiento del evento, y la FAA lo atribuyó a un 'fenómeno meteorológico'.\n\nHilkevitch presentó una solicitud FOIA detallada a la FAA. La presión documental forzó la liberación de comunicaciones internas que contradecían la negación inicial: grabaciones y transcripciones de control de tráfico aéreo donde un supervisor de United pedía a la torre que confirmara si veían el objeto sobre C-17, lo que probaba que el reporte sí había llegado al sistema oficial. El artículo del Tribune del 1 de enero de 2007 se convirtió en uno de los más leídos en la historia en línea del periódico. De forma independiente, NARCAP (National Aviation Reporting Center on Anomalous Phenomena), grupo de científicos y profesionales de la aviación, condujo una investigación técnica dirigida por el ex investigador de la NASA Dr. Richard F. Haines y publicó en marzo de 2007 un informe de unas 150 páginas tratando el caso como un problema de seguridad operacional, no de creencia.",

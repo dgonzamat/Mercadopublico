@@ -23,14 +23,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.18,
-    "natural_desc": 0.28,
-    "clasificada": 0.22,
+    "mundano_natural": 0.46,
+    "humana_clasificada": 0.22,
     "adversaria": 0.05,
-    "ing_inversa": 0.03,
-    "interdimensional": 0.06,
-    "ontologico": 0.02,
-    "tratado": 0.02,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.08,
     "indet": 0.14
   },
   "whatHappened": "El 9 de diciembre de 1965, hacia las 16:47, miles de testigos en al menos seis estados del noreste de Estados Unidos y en la provincia canadiense de Ontario observaron una bola de fuego brillante atravesar el cielo, dejando una estela de humo y, según varios reportes, provocando estampidos sónicos. La interpretación astronómica dominante es que se trató de un bólido (un gran meteoroide en desintegración) cuyo paso fue ampliamente documentado en esa franja geográfica. Sin embargo, en Kecksburg, una zona rural del condado de Westmoreland cerca de Pittsburgh, varios residentes afirmaron que un objeto descendió de forma controlada o lenta y se posó en un bosque adyacente al pueblo, lo que separa este caso de un simple avistamiento de meteoro.\n\nLa policía estatal de Pensilvania y bomberos voluntarios respondieron primero. Algunos testigos —entre ellos el adolescente Frances Kalp, que dio el aviso inicial— y otros vecinos describieron un objeto metálico con forma de bellota, aproximadamente del tamaño de un automóvil pequeño, con una banda de marcas en relieve comparadas con jeroglíficos en su base. Personal militar del U.S. Army llegó a las pocas horas, acordonó el área, ordenó a los civiles retirarse y, según múltiples testigos, retiró un objeto cubierto sobre un camión de plataforma durante la noche. El periodista local John Murphy, de la radio WHJB, grabó entrevistas en el lugar; relató después que parte de su material fue confiscado y que la cobertura sufrió presiones, un punto recurrente en la memoria del caso aunque difícil de corroborar documentalmente.\n\nLa USAF y la NASA negaron oficialmente cualquier participación durante décadas; la explicación pública osciló entre 'no se encontró nada' y la atribución a un meteoro. En 2002 la periodista Leslie Kean lideró, con el respaldo del Sci-Fi Channel, una iniciativa de Freedom of Information Act, y en 2003 se convirtió en demandante en un litigio FOIA federal contra la NASA en Washington D.C. El caso se resolvió en octubre de 2007 con un acuerdo que obligó a la NASA a buscar y entregar cientos de documentos y a pagar los honorarios legales de la demandante. Los registros liberados confirmaron la existencia del programa Project Moon Dust (y de la red asociada Blue Fly), un esfuerzo USAF/inteligencia para recuperar objetos espaciales de origen no estadounidense o desconocido. La propia NASA reconoció haber examinado restos en los años sesenta pero adujo que los registros específicos se habían perdido. Una de las hipótesis convencionales —que el objeto fuera la reentrada del satélite soviético Kosmos 96— fue descartada por el científico jefe de desechos orbitales de la NASA, quien dijo a Kean que la mecánica orbital hacía 'absolutamente imposible' que parte de esa sonda explicara ni la bola de fuego ni un objeto en Kecksburg.",

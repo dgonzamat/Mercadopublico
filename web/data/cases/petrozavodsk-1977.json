@@ -25,14 +25,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.40,
-    "natural_desc": 0.18,
-    "clasificada": 0.28,
+    "mundano_natural": 0.58,
+    "humana_clasificada": 0.28,
     "adversaria": 0.02,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.02,
-    "ontologico": 0.01,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
     "indet": 0.07
   },
   "whatHappened": "El 20 de septiembre de 1977, en torno a las 04:00 hora de Moscú, miles de habitantes de Petrozavodsk —capital de la República de Karelia, en el noroeste de la URSS— vieron en el cielo aún oscuro un objeto luminoso descrito de forma muy consistente como una 'medusa': un núcleo brillante del que descendían haces o filamentos de luz, que se desplazó, se expandió y proyectó un resplandor sobre la ciudad antes de disiparse. El fenómeno fue visible durante varios minutos y no se limitó a Karelia: hubo reportes a través de un arco enorme del norte de Europa —Finlandia, las repúblicas bálticas y otras regiones del noroeste soviético—, lo que indica un origen a gran altitud capaz de ser iluminado por el sol mientras la superficie seguía a oscuras.\n\nLo verdaderamente excepcional fue la reacción institucional. En lugar del silencio o el desmentido habituales del aparato soviético, la agencia oficial TASS publicó al día siguiente una nota reconociendo el fenómeno como un evento atmosférico inusual aún no explicado. Fue prácticamente la única vez que TASS validó públicamente un avistamiento de esta naturaleza durante la era soviética, y bastó para desatar una intensa especulación popular.\n\nLa explicación convencional, identificada por la prensa occidental en cuestión de horas, es el lanzamiento del satélite Kosmos-955 desde el cosmódromo de Plesetsk esa misma madrugada. Plesetsk —entonces una instalación militar cuya existencia la URSS no reconocía oficialmente— está a unos cientos de kilómetros, y la pluma de escape y la separación de etapas de un cohete iluminadas por el sol en condiciones crepusculares producen exactamente la morfología radiante en forma de medusa que se reportó. Algunos escépticos señalan discrepancias menores de tiempo y apariencia respecto de un lanzamiento estándar, pero la coincidencia de hora, geometría y dispersión geográfica hace de Kosmos-955 el candidato dominante.\n\nA escala institucional el episodio tuvo una consecuencia mayor: contribuyó a que las autoridades soviéticas establecieran en 1978 el programa conocido como Setka ('la red'), un esfuerzo conjunto del Ministerio de Defensa y la Academia de Ciencias para recopilar y analizar reportes de fenómenos aéreos no identificados. Setka operó alrededor de trece años, hasta el fin de la URSS; el físico Yuly Platov figuró entre sus responsables científicos. Tras su liberación parcial en los años noventa, Platov y otros documentaron que una proporción muy alta de los reportes correspondía precisamente a lanzamientos y ensayos militares —el propio Plesetsk y otros programas clasificados—, un hallazgo que refuerza, no debilita, la lectura de Petrozavodsk como artefacto humano.",

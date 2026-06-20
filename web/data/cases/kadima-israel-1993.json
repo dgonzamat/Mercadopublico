@@ -21,14 +21,11 @@
   "patterns": [],
   "category": "incident",
   "posterior": {
-    "mundano": 0.58,
-    "natural_desc": 0.03,
-    "clasificada": 0.01,
+    "mundano_natural": 0.61,
+    "humana_clasificada": 0.01,
     "adversaria": 0.01,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.06,
-    "ontologico": 0.05,
-    "tratado": 0.07,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.11,
     "indet": 0.18
   },
   "whatHappened": "En la primavera de 1993, el moshav agrícola de Kadima, cerca de Netanya, fue escenario de una serie de reportes de encuentros con una entidad no humana —el inicio de una oleada que la zona, hoy considerada un 'punto caliente' ufológico israelí, prolongaría hasta 1998—. Entre marzo y junio, varias residentes —los relatos suelen citar a cinco mujeres en episodios separados— describieron de forma independiente y con notable coincidencia a un ser muy alto (alrededor de 2,5 metros), calvo, de tipo 'gris', con rostro ovalado, ojos grandes y brillantes y una nariz mínima en forma de punto. Esa convergencia entre descripciones independientes es el rasgo que llamó la atención de los investigadores locales.\n\nEl caso dejó elementos materiales, lo que lo distingue de un avistamiento puramente testimonial. En los campos aparecieron depresiones o 'círculos de aterrizaje' —los relatos hablan de una primera, luego una segunda a pocos metros y una tercera días después, y la oleada completa habría dejado más de una decena—, cada una con residuos que fueron muestreados: un material gelatinoso negro, un líquido rojizo de base supuestamente cadmio y, en al menos un círculo grande de unos 18 metros de diámetro, restos de un material que, según se reportó, el Instituto Geológico de Israel analizó como silicio de muy alta pureza. Además se describieron huellas profundas que, según los relatos, la policía siguió a lo largo de varios kilómetros.\n\nLa respuesta institucional fue tangible: alertada la seguridad del moshav, se llamó a la Policía de Fronteras y cerca de 30 agentes peinaron la zona durante la madrugada. No hallaron a ningún ser, pero el despliegue y el rastreo de huellas quedaron registrados. El problema del caso es de procedencia probatoria. Aunque el hallazgo de silicio de alta pureza por un instituto geológico suena impresionante, el silicio puro no es exótico —es el material base de la industria de los semiconductores y aparece en numerosos contextos industriales—, y nunca se publicó una cadena de custodia que conectara de forma verificable la muestra analizada con el círculo del campo. Peor aún, la documentación y difusión del caso quedaron en manos de la ufología israelí más entusiasta —en particular Barry Chamish, autor de credibilidad muy cuestionada que llegó a enmarcar los encuentros en una narrativa bíblica y profética—. El resultado es un expediente de alta extrañeza (encuentro con ocupante + trazas + respuesta policial) montado sobre una base evidencial frágil.",

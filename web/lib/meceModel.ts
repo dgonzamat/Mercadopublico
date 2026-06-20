@@ -42,17 +42,14 @@ export const MECE_CLASSES: ReadonlyArray<{
   label: string;
   labelEn: string;
   color: string;
-  /** Hipótesis del modelo viejo que esta hoja preserva. */
+  /** Hipótesis del marco anterior que esta narrativa absorbe. */
   legacyHypothesis: string;
 }> = [
-  { id: "mundano", label: "Identificación errónea", labelEn: "Misidentification", color: "#5a6b7a", legacyHypothesis: "misidentificacion" },
-  { id: "natural_desc", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#3f7d5a", legacyHypothesis: "fenomenos-naturales" },
-  { id: "clasificada", label: "Programas clasificados", labelEn: "Classified programs", color: "#7a6b23", legacyHypothesis: "programas-clasificados" },
-  { id: "adversaria", label: "Tecnología adversaria", labelEn: "Adversary technology", color: "#8a4b23", legacyHypothesis: "tecnologia-adversaria" },
-  { id: "ing_inversa", label: "Ingeniería inversa", labelEn: "Reverse engineering", color: "#9a5b3a", legacyHypothesis: "ingenieria-inversa" },
-  { id: "interdimensional", label: "Interdimensional", labelEn: "Interdimensional", color: "#5b3a8a", legacyHypothesis: "interdimensional" },
-  { id: "ontologico", label: "Ontológico no materialista", labelEn: "Non-materialist ontological", color: "#6b3a7a", legacyHypothesis: "ontologico-no-materialista" },
-  { id: "tratado", label: "Tratado formal (greys)", labelEn: "Formal treaty (greys)", color: "#7a3a6b", legacyHypothesis: "tratado-greys" },
+  { id: "mundano_natural", label: "Mundano / natural", labelEn: "Mundane / natural", color: "#5a6b7a", legacyHypothesis: "misidentificación + fenómenos-naturales" },
+  { id: "humana_clasificada", label: "Tecnología humana clasificada", labelEn: "Classified human technology", color: "#7a6b23", legacyHypothesis: "programas-clasificados" },
+  { id: "adversaria", label: "Tecnología adversaria", labelEn: "Adversary technology", color: "#8a4b23", legacyHypothesis: "tecnología-adversaria" },
+  { id: "nohumano_encubierto", label: "No-humano + encubrimiento estatal", labelEn: "Non-human + state cover-up", color: "#6b3a7a", legacyHypothesis: "ingeniería-inversa + tratado-greys + entidades con cover-up" },
+  { id: "nohumano_abierto", label: "No-humano sin gestión estatal", labelEn: "Non-human, no state management", color: "#5b3a8a", legacyHypothesis: "interdimensional + ontológico" },
   { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—" },
 ];
 
@@ -60,8 +57,8 @@ const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
 export function emptyPosterior(): Posterior {
   return {
-    mundano: 0, natural_desc: 0, clasificada: 0, adversaria: 0, ing_inversa: 0,
-    interdimensional: 0, ontologico: 0, tratado: 0, indet: 0,
+    mundano_natural: 0, humana_clasificada: 0, adversaria: 0,
+    nohumano_encubierto: 0, nohumano_abierto: 0, indet: 0,
   };
 }
 
@@ -86,7 +83,7 @@ export function entidadesNoHumanas(p: Posterior): number {
 
 /** heterogeneidad = 1 − mundano (probabilidad de que el caso sea anómalo). */
 export function heterogeneidad(p: Posterior): number {
-  return 1 - (p.mundano || 0);
+  return 1 - (p.mundano_natural || 0);
 }
 
 // ─── Fallback de posterior ───────────────────────────────────────────────
@@ -98,7 +95,7 @@ export function heterogeneidad(p: Posterior): number {
 export function seedPosterior(c: UAPCase): Posterior {
   const anomalous = Math.max(0.05, Math.min(0.95, (c.probability ?? 50) / 100));
   const p = emptyPosterior();
-  p.mundano = (1 - anomalous) * 0.7;
+  p.mundano_natural = (1 - anomalous) * 0.7;
   p.indet = (1 - anomalous) * 0.3 + anomalous;
   return normalize(p);
 }

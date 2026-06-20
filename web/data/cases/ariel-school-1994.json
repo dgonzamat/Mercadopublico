@@ -19,14 +19,11 @@
   "patterns": [],
   "category": "incident",
   "posterior": {
-    "mundano": 0.38,
-    "natural_desc": 0.10,
-    "clasificada": 0.02,
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.02,
     "adversaria": 0.01,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.14,
-    "ontologico": 0.13,
-    "tratado": 0.05,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.27,
     "indet": 0.16
   },
   "whatHappened": "El 16 de septiembre de 1994, durante el recreo matutino de la Ariel School, un colegio privado en Ruwa, a las afueras de Harare (Zimbabwe), un grupo de alumnos —cifrado habitualmente en 62, con edades entre 5 y 12 años— afirmó haber visto uno o más objetos plateados descender y posarse en un terreno con matorral adyacente al patio, fuera de la valla del recreo. Varios niños describieron una o más figuras pequeñas de aspecto humanoide, piel oscura o cérea y ojos grandes, que se movieron cerca del objeto. Una parte de los niños relató haber recibido un mensaje —descrito como telepático— relacionado con el daño al medio ambiente y el futuro del planeta.\n\nEl director, Colin Mackie, no presenció el evento (los maestros estaban reunidos) y al principio fue escéptico, pero ante la insistencia de los alumnos contactó a investigadores. La ufóloga Cynthia Hind documentó el caso primero; poco después llegó el equipo de la BBC (Tim Leach) y, a comienzos de diciembre de 1994, el Dr. John E. Mack, profesor de psiquiatría en Harvard Medical School y autor del libro 'Abduction' (1994). Mack y colaboradores entrevistaron a los niños y recogieron dibujos hechos por ellos, que muestran una consistencia estructural notable en la forma del objeto y de las figuras.\n\nLa honestidad editorial obliga a presentar con detalle las objeciones serias, porque son centrales para calibrar el caso. Primero, la metodología de entrevista de Mack ha sido criticada por inducir respuestas: llegó semanas después del evento, los niños habían tenido tiempo de conversar entre sí y con adultos, y los críticos sostienen que sus preguntas fueron sugestivas y que el contenido 'telepático' y ecológico —que coincide estrechamente con las propias tesis de Mack— pudo emerger por sugestión más que por recuerdo espontáneo; el propio Mack describió su método como un 'proceso intuitivo co-creativo', formulación que para oídos escépticos admite la contaminación. Segundo, se ha propuesto un disparador mundano: la noche anterior (14-15 de septiembre de 1994) hubo una reentrada del cohete Zenit-2 asociado al lanzamiento del satélite Cosmos 2290, visible como un espectáculo luminoso sobre el sur de África, lo que pudo predisponer a la región —y a los niños— a interpretar el cielo en clave anómala. Tercero, la dinámica de grupo entre escolares (sugestión colectiva, contagio del relato del primero al resto) es un mecanismo psicológico bien establecido que no requiere un sustrato físico.\n\nEl caso ha sido revisitado durante tres décadas. En 2022 el documental 'Ariel Phenomenon' (dir. Randall Nickerson) entrevistó a varios de los testigos ya adultos (hoy con 35-42 años), cuya consistencia narrativa intergeneracional es uno de los rasgos más citados a su favor. En 2025, sin embargo, la cobertura escéptica (incluida la del Skeptical Inquirer a raíz de la serie de Netflix 'Encounters') revisó de nuevo la fiabilidad de las entrevistas originales.",

@@ -63,14 +63,11 @@
     "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book_report_-_1952-10-9169199-North_Korea.pdf"
   },
   "posterior": {
-    "mundano": 0.16,
-    "natural_desc": 0.18,
-    "clasificada": 0.05,
+    "mundano_natural": 0.34,
+    "humana_clasificada": 0.05,
     "adversaria": 0.16,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.10,
-    "ontologico": 0.03,
-    "tratado": 0.01,
-    "indet": 0.30
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.13,
+    "indet": 0.3
   }
 }

@@ -23,14 +23,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.40,
-    "natural_desc": 0.05,
-    "clasificada": 0.03,
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.03,
     "adversaria": 0.02,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.11,
-    "ontologico": 0.04,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.15,
     "indet": 0.33
   },
   "whatHappened": "Hacia la 1:40 de la madrugada del 27 de agosto de 1979, el ayudante del sheriff Val Johnson, de 35 años, patrullaba la carretera estatal 220 en el condado de Marshall, Minnesota, cerca de la localidad de Stephen y de la frontera con Dakota del Norte. Según su relato, vio una luz muy intensa —descrita como un haz— a un lado de la carretera y, al girar hacia ella para investigar, la luz se precipitó sobre el vehículo; oyó vidrio rompiéndose y perdió el conocimiento. Lo siguiente que recordó fue despertar con la patrulla detenida en diagonal sobre la calzada, tras unas marcas de frenado de unos 30 metros que indicaban un viraje brusco. Por la radio reportó que había chocado con 'algo' y llamó a la central; el registro horario sugería que había estado inconsciente alrededor de 39 minutos.\n\nJohnson, aturdido y con los ojos irritados —como por el destello de una soldadura, lo que se conoce como queratitis por arco—, fue atendido por sus colegas. Los daños en el vehículo quedaron documentados por el Departamento del Sheriff y fotografiados: el parabrisas agrietado, un faro y la luz roja de emergencia del techo rotos, y dos antenas de radio dobladas en ángulo de casi 90 grados. Dos detalles temporales llamaron la atención: el reloj de pulsera de Johnson y el reloj eléctrico del salpicadero coincidían entre sí pero marcaban unos 14 minutos menos de lo debido, como si ambos se hubieran detenido durante ese lapso. Johnson recibió tratamiento por la irritación ocular.\n\nEl caso fue investigado por el Center for UFO Studies (CUFOS), cuyo entonces investigador jefe, Allan Hendry —un escéptico riguroso, autor de un célebre manual de identificación de OVNIs—, lo examinó de cerca. Hendry resumió el problema con honestidad: la mayor dificultad del caso es encontrar una sola explicación coherente para algo que se comportara como Johnson describió y a la vez produjera el patrón de daños hallado. El vehículo dañado se conservó y hoy se exhibe en el museo de la Sociedad Histórica del condado de Marshall, en Warren, tal como quedó en 1979. La fuerza del caso está en lo inusual de tener daño físico medible sobre un objeto y un testigo profesional que nunca afirmó haber visto una nave ni extraterrestres —solo una fuerza que no pudo identificar—. Su debilidad es simétrica: el patrón de daños es difícil de conciliar con una colisión a alta velocidad (el parabrisas agrietado pero no hundido, las antenas dobladas de un modo peculiar), lo que deja abierta una causa más mundana e incluso, para los más escépticos, la sospecha no probada de un montaje. El caso quedó sin explicación consensuada: evidencia física real, mecánica discutida, observador único.",

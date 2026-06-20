@@ -25,14 +25,11 @@
   "whyMatters": "Primer caso de Irlanda en el corpus y un ejemplo nítido del valor institucional por encima del fenomenológico: el fenómeno casi con seguridad fue un meteoro, pero la cadena que lo registró —dos tripulaciones de aerolíneas comerciales, el control de tráfico aéreo de Shannon y una investigación formal de la Irish Aviation Authority, con grabaciones de audio públicas— constituye un registro institucional limpio y verificable de principio a fin. Pocos casos del corpus permiten al lector escuchar literalmente el intercambio original entre piloto y controlador; aquí el dato primario está disponible.\n\nSu inclusión obedece a la misma lógica que la de Marruecos 1976 o Petrozavodsk: episodios documentados y reconocidos por instituciones serias cuyo fenómeno tiene explicación natural plausible, y que entran al corpus precisamente para mostrar que reconocimiento institucional y anomalía no son lo mismo. Calibrar bien exige incluir estos casos 'resueltos hacia lo mundano' con honestidad, no solo los irresueltos; de lo contrario el corpus se sesgaría hacia lo inexplicado. La baja probabilidad asignada refleja exactamente eso: solidez total del registro, anomalía nula.",
   "whyMatters_en": "Ireland's first corpus case and a clear example of institutional over phenomenological value: the phenomenon was almost certainly a meteor, but the chain that recorded it —two commercial airline crews, Shannon air traffic control and a formal Irish Aviation Authority investigation, with public audio recordings— constitutes a clean, end-to-end verifiable institutional record. Few corpus cases let the reader literally hear the original pilot-controller exchange; here the primary datum is available.\n\nIts inclusion follows the same logic as Morocco 1976 or Petrozavodsk: episodes documented and acknowledged by serious institutions whose phenomenon has a plausible natural explanation, included precisely to show that institutional acknowledgment and anomaly are not the same thing. Good calibration requires including these 'resolved-toward-mundane' cases honestly, not only the unresolved ones; otherwise the corpus would skew toward the unexplained. The low probability assigned reflects exactly that: total solidity of the record, zero anomaly.",
   "posterior": {
-    "mundano": 0.08,
-    "natural_desc": 0.66,
-    "clasificada": 0.02,
+    "mundano_natural": 0.74,
+    "humana_clasificada": 0.02,
     "adversaria": 0.01,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.02,
-    "ontologico": 0.01,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
     "indet": 0.18
   },
   "evidence": [

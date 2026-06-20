@@ -22,14 +22,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.10,
-    "natural_desc": 0.30,
-    "clasificada": 0.06,
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.06,
     "adversaria": 0.07,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.09,
-    "ontologico": 0.03,
-    "tratado": 0.02,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.12,
     "indet": 0.32
   },
   "whatHappened": "El verano de 1952 fue el pico de una oleada nacional de avistamientos en Estados Unidos: Project Blue Book registró ese año un número récord de reportes, concentrados en julio. En ese marco ocurrió la serie de Washington, conocida en la prensa como 'The Big Flap' o la 'Invasión de Washington'.\n\nLa madrugada del 19-20 de julio de 1952, hacia las 23:40, el controlador senior Harry G. Barnes y su equipo en el Centro de Control de Ruta (ARTC) del Washington National Airport detectaron siete ecos lentos que no seguían rutas de vuelo establecidas, dentro del espacio aéreo restringido sobre la Casa Blanca y el Capitolio. Los blancos fueron rastreados simultáneamente por el radar de la torre del propio aeropuerto y por el radar de la base aérea de Andrews, descartando un artefacto de un solo equipo. Pilotos de aerolíneas en vuelo —entre ellos el capitán S. C. Pierman— y operadores en tierra reportaron luces cuyas posiciones coincidían con los ecos. Algunos retornos exhibieron desplazamientos súbitos a velocidades muy altas tras periodos casi estacionarios.\n\nLa Fuerza Aérea ordenó el despegue de interceptores F-94 Starfire, con demora por la disponibilidad de aviones desde New Castle (Delaware). Según los reportes, cuando los cazas llegaban al área los ecos se desvanecían, y reaparecían al retirarse los aviones. El patrón se repitió el fin de semana siguiente, 26-27 de julio: nuevos ecos, nuevo scramble. El piloto teniente William Patterson reportó haberse visto rodeado de luces blancas y consultó a tierra si debía abrir fuego; no se le dio la orden y las luces se alejaron a gran velocidad.\n\nLa presión pública y mediática fue tal que el 29 de julio de 1952 el Mayor General John Samford, Director de Inteligencia de la USAF, convocó la conferencia de prensa más grande del Departamento desde la Segunda Guerra Mundial. Samford —con el respaldo técnico del capitán Roy James— atribuyó los ecos a inversiones de temperatura (propagación anómala del radar) y los avistamientos visuales a estrellas y meteoros bajo condiciones atmosféricas inusuales. El director de Blue Book, Edward Ruppelt, documentó el episodio desde dentro.\n\nLa explicación oficial fue y sigue siendo discutida. El astrónomo Donald Menzel la respaldó como espejismo/inversión; el físico atmosférico James E. McDonald la rechazó años después, argumentando que las inversiones presentes esa noche eran demasiado débiles para producir ecos tan definidos y que la propagación anómala no explica bien la correlación radar-visual ni el rastreo simultáneo por radares independientes con movimientos aparentemente controlados. El episodio, junto con el volumen de reportes de 1952, alarmó a la CIA y catalizó directamente la convocatoria del Robertson Panel en enero de 1953 — el primer comité formal de inteligencia para evaluar el fenómeno, que recomendaría una política de 'desmitificación' pública. El Presidente Truman fue informado a través de su asistente aéreo.",

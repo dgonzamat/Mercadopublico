@@ -159,7 +159,7 @@ for (const file of caseFiles) {
   if (!isNum(c.probability)) err(w, "probability obligatorio (number)");
   // posterior (modelo MECE): si está presente, valida 9 claves y suma ≈ 1.
   if (c.posterior !== undefined) {
-    const MECE_KEYS = ["mundano", "natural_desc", "clasificada", "adversaria", "ing_inversa", "interdimensional", "ontologico", "tratado", "indet"];
+    const MECE_KEYS = ["mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet"];
     const miss = MECE_KEYS.filter((k) => typeof c.posterior[k] !== "number");
     const extra = Object.keys(c.posterior).filter((k) => !MECE_KEYS.includes(k));
     if (miss.length || extra.length)

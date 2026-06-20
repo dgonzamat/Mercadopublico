@@ -24,14 +24,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.20,
-    "natural_desc": 0.30,
-    "clasificada": 0.05,
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.05,
     "adversaria": 0.06,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.08,
-    "ontologico": 0.03,
-    "tratado": 0.02,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.11,
     "indet": 0.25
   },
   "whatHappened": "La Isla Decepción, una caldera volcánica activa de las Islas Shetland del Sur, fue durante la Guerra Fría un punto de fricción soberana: argentinos, chilenos y británicos mantenían bases científico-militares a corta distancia unas de otras, en un solapamiento de reclamos antárticos. Ese contexto —tres dotaciones vigilantes y mutuamente desconfiadas en un mismo enclave— es lo que da peso al episodio. En las semanas previas se habían reportado luces de colores en movimiento sobre el cielo antártico; la estación británica recibió noticia de avistamientos vistos desde la estación argentina los días 7 y 20 de junio.\n\nEl 3 de julio de 1965, en plena noche polar austral, personal de las bases vecinas —la argentina (Decepción), la chilena (Pedro Aguirre Cerda) y la británica (Falkland Islands Dependencies Survey)— observó un objeto luminoso y multicolor que se desplazaba y cambiaba de dirección durante varios minutos. La dotación argentina, de la Armada, tomó fotografías del objeto. Lo más citado del caso es el componente instrumental: dos meteorólogos observaron un cuerpo redondo blanco-azulado y, según los registros, dos variómetros marcaron perturbaciones súbitas del campo magnético en el momento del avistamiento, quedando trazadas en sus cintas. Conviene ser preciso sobre la lectura oficial de ese dato: el capitán José María Cohen, de la Armada Argentina, declaró posteriormente que las variaciones magnéticas registradas en los instrumentos de Decepción no excedían los límites de la variación normal — un matiz que la narrativa popular del caso suele omitir.\n\nLo institucionalmente notable es que, días después, el gobierno argentino emitió un comunicado oficial reconociendo el episodio como un fenómeno aéreo no identificado, uno de los primeros reconocimientos gubernamentales formales de un avistamiento en cualquier país y excepcional para la época. El expediente figura incluso en documentación de la CIA y fue tratado en la sección de evidencia física indirecta del propio Informe Condon. La convergencia de tres naciones con bases separadas, sin coordinación previa y en plena Guerra Fría, sumada a la fotografía y al registro instrumental, lo coloca entre los casos antárticos mejor respaldados. Entra al corpus como Tier A multi-nacional.",

@@ -78,14 +78,11 @@
     "href": "https://commons.wikimedia.org/wiki/File:Tehran_ufo_1976_1.jpg"
   },
   "posterior": {
-    "mundano": 0.09,
-    "natural_desc": 0.06,
-    "clasificada": 0.17,
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0.17,
     "adversaria": 0.12,
-    "ing_inversa": 0.05,
-    "interdimensional": 0.15,
-    "ontologico": 0.05,
-    "tratado": 0.04,
+    "nohumano_encubierto": 0.09,
+    "nohumano_abierto": 0.2,
     "indet": 0.27
   }
 }

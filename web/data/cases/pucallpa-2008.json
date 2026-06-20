@@ -21,14 +21,11 @@
   "patterns": [],
   "category": "incident",
   "posterior": {
-    "mundano": 0.42,
-    "natural_desc": 0.18,
-    "clasificada": 0.02,
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0.02,
     "adversaria": 0.01,
-    "ing_inversa": 0.005,
-    "interdimensional": 0.05,
-    "ontologico": 0.04,
-    "tratado": 0.005,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.09,
     "indet": 0.27
   },
   "whatHappened": "En abril de 2008, en el caserío San Juan, en los alrededores de Pucallpa (departamento de Ucayali, en la Amazonía peruana), los pobladores reportaron que durante varias noches 'luces' sobrevolaban la zona y proyectaban haces de luz dirigidos contra las personas. El relato —recogido por medios y por la ufología local— describe una población atemorizada, que asociaba las luces con una agresión nocturna recurrente y vivía el episodio como un acoso colectivo. Ese rasgo —luces que no solo se observan, sino que parecen 'atacar' a la gente con haces dirigidos— es el que lleva a comparar el caso, a menor escala, con el episodio brasileño de Colares (1977), donde pobladores de la isla de Colares denunciaron quemaduras y efectos físicos atribuidos a haces de luz nocturnos. La comparación es de patrón fenomenológico, no de magnitud ni de respaldo evidencial: Colares generó un expediente militar (la Operación Prato) con fotografías y dibujos; Pucallpa no alcanza ese nivel de documentación.\n\nLa OIFAA (Oficina de Investigación de Fenómenos Aéreos Anómalos) de la Fuerza Aérea del Perú, dirigida por el comandante Julio César Chamorro, recibió el reporte y, según las fuentes, ya tenía personal en la región vinculado al seguimiento del fenómeno. La existencia misma de esta oficina es notable: el Perú es uno de los pocos países de la región que ha mantenido una ventanilla oficial dentro de su fuerza aérea para canalizar reportes de fenómenos aéreos anómalos, y Chamorro es su figura más visible. El componente civil de la investigación lo aportaron tres estudiantes de la carrera de Ciencias de la Comunicación de la Universidad de Lima —Teresa Lucía Chamorro (hija del comandante), Martha Wong y Luciana Macías—, que tomaron el caso como trabajo del curso 'Fundamentos de la Información', con el apoyo de Chamorro y de la oficina. Las estudiantes viajaron a la zona, recogieron testimonios de los pobladores y reunieron material que después describirían como una experiencia que transformó su manera de entender el fenómeno.\n\nEl material reunido se presentó públicamente en un congreso de ufología en Lima, donde el caso fue divulgado como 'el OVNI de Pucallpa'. A diferencia de Chulucanas (2001) o La Joya (1980), la documentación disponible es comparativamente débil: testimonios de pobladores, cobertura de prensa local y trabajo de divulgación, sin un expediente técnico abierto y verificable equivalente —sin radar, sin análisis fotográfico independiente, sin cadena de custodia robusta del material. Conviene además recordar que el contexto amazónico introduce explicaciones prosaicas plausibles para 'luces nocturnas que asustan': desde fenómenos meteorológicos y bioluminiscentes hasta la sugestión colectiva en comunidades aisladas, sin que ninguna pueda confirmarse ni descartarse con la evidencia disponible. Se lo suele describir, en consecuencia, como un caso abierto, pendiente de un análisis más riguroso.",

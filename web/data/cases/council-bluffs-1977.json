@@ -24,14 +24,11 @@
   "whyMatters": "Council Bluffs es un buen caso de estudio de cómo trabaja la ciencia de materiales sobre la casuística UAP: un evento con testigos, una traza física conservada y un reanálisis revisado por pares décadas después. Importa por su resultado, no a pesar de él. Cuando Garry Nolan y Jacques Vallée midieron isótopos y composición, no encontraron una firma anómala sino indicios de un proceso industrial incompleto. Es el contrapunto disciplinado a la tentación de tratar todo metal fundido inexplicado como evidencia de tecnología no humana: aquí un teórico de la materia anómala estudió la muestra y reportó honestamente que apuntaba a algo terrestre. Esa disposición a publicar el resultado mundano es exactamente el estándar del corpus. Conviene además precisar el alcance del 'no resuelto': la fase contemporánea descartó las explicaciones más triviales (meteorito, reingreso, fraude), de modo que el residuo es genuinamente anómalo en el sentido de carecer de fuente identificada esa noche; pero 'fuente no identificada' no equivale a 'origen no terrestre', y el reanálisis isotópico empuja con fuerza hacia lo terrestre. El caso enseña a sostener simultáneamente las dos cosas —un evento real y sin fuente conocida, y una conclusión material prosaica— sin colapsarlas en una afirmación exótica.",
   "whyMatters_en": "Council Bluffs is a good case study of how materials science works on UAP casework: an event with witnesses, a preserved physical trace, and a peer-reviewed re-analysis decades later. It matters for its result, not in spite of it. When Garry Nolan and Jacques Vallée measured isotopes and composition, they found not an anomalous signature but signs of an incomplete industrial process. It is the disciplined counterpoint to the temptation to treat every unexplained molten metal as evidence of non-human technology: here a theorist of anomalous materials studied the sample and honestly reported that it pointed to something terrestrial. That willingness to publish the mundane result is exactly the corpus's standard. It is also worth being precise about the scope of 'unresolved': the contemporary phase ruled out the most trivial explanations (meteorite, re-entry, hoax), so the residue is genuinely anomalous in the sense of lacking an identified source that night; but 'unidentified source' does not equal 'non-terrestrial origin', and the isotopic re-analysis pushes hard toward the terrestrial. The case teaches one to hold both things at once —a real event with no known source, and a prosaic material conclusion— without collapsing them into an exotic claim.",
   "posterior": {
-    "mundano": 0.62,
-    "natural_desc": 0.08,
-    "clasificada": 0.02,
+    "mundano_natural": 0.7,
+    "humana_clasificada": 0.02,
     "adversaria": 0.01,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.02,
-    "ontologico": 0.01,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
     "indet": 0.22
   },
   "evidence": [

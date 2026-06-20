@@ -21,14 +21,11 @@
   "patterns": ["8a"],
   "category": "incident",
   "posterior": {
-    "mundano": 0.30,
-    "natural_desc": 0.18,
-    "clasificada": 0.03,
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.03,
     "adversaria": 0.02,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.08,
-    "ontologico": 0.04,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.12,
     "indet": 0.33
   },
   "whatHappened": "En la mañana del 26 de junio de 1971, en la granja Braeside cerca de Fort Beaufort (Cabo Oriental, Sudáfrica), un peón rural notó una 'bola de fuego' de poco más de un metro de diámetro suspendida cerca del embalse de la granja, a la altura de las copas de los árboles. Avisado, el dueño, el granjero Bennie Smit, salió con un rifle y disparó varias veces contra el objeto sin efecto aparente; según el relato, descargó alrededor de ocho tiros antes de que llegara apoyo.\n\nLa policía local acudió: el sargento Piet Kitching, armado con un rifle .303, y el comandante de estación P.R. van Rensburg también abrieron fuego. Los testigos coincidieron en que, tras numerosos disparos, uno de ellos pareció impactar y el objeto cambió de color, para luego desplazarse hacia la vegetación y desaparecer. La forma se describió como ovalada, comparable a un tambor metálico de 200 litros, de un gris oscuro metálico (gunmetal). El elemento que elevó el caso por encima de un avistamiento aislado fue el perfil de los testigos: seis concejales municipales de Fort Beaufort siguieron el episodio con binoculares, sumando observadores civiles de cargo público a los policías y al granjero.\n\nEn el terreno quedó una traza física: nueve impresiones sobre arcilla dura, cada una de unos 10 cm de diámetro y entre 25 y 30 mm de profundidad, dispuestas de un modo que los investigadores compararon con marcas de tren de aterrizaje. Se le pidió a Smit que enviara muestras de la arcilla por tren a Pretoria para análisis, pero —según el relato que circuló en la prensa— las muestras se extraviaron en tránsito y nunca llegaron a la capital, lo que dejó sin verificar el único elemento materialmente analizable del caso.\n\nLa historia tuvo cobertura de prensa internacional y se enmarca dentro de una oleada sudafricana de inicios de los años setenta. Se reportó que el regimiento del ejército de Grahamstown se interesó por el sitio, pero la institución no pudo —o no quiso— aportar registros del evento. Esa es la línea epistémica del caso: testigos institucionales múltiples (policía, concejo municipal) y una traza física, pero sin dato de sensor, sin las muestras de suelo y sin un informe militar formal que lo respalde. La explicación mundana más invocada para los disparos sin efecto —desde el escepticismo— apunta a una mala identificación de un fenómeno luminoso (un objeto brillante mal estimado en distancia y tamaño en la penumbra del amanecer), pero ninguna reconstrucción convencional ha dado cuenta de forma satisfactoria del conjunto: la persistencia del objeto bajo fuego, el cambio de color y las nueve impresiones en el suelo.",

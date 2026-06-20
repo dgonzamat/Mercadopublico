@@ -23,14 +23,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.18,
-    "natural_desc": 0.04,
-    "clasificada": 0.34,
+    "mundano_natural": 0.22,
+    "humana_clasificada": 0.34,
     "adversaria": 0.03,
-    "ing_inversa": 0.05,
-    "interdimensional": 0.10,
-    "ontologico": 0.03,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.13,
     "indet": 0.22
   },
   "whatHappened": "La noche del 29 de diciembre de 1980, alrededor de las 21:00, Vickie Landrum (57), su nieto Colby Landrum (7) y Betty Cash (51) regresaban en automóvil de cenar, por la carretera FM 1485 en una zona boscosa y poco transitada cerca de Huffman, Texas, al noreste de Houston. Detuvieron el vehículo al observar a baja altura sobre la carretera un objeto incandescente con forma de diamante o rombo, que emitía periódicamente llamas por su parte inferior con un sonido descrito como un rugido o un bramido intermitente. El calor que irradiaba era tan intenso que, según los testigos, calentó la carrocería del coche; Vickie relató que la manija de la puerta quemaba al tacto y que la salpicadera del tablero quedó con marcas. Betty Cash, conductora, permaneció fuera del vehículo varios minutos observando; Vickie se mantuvo dentro protegiendo a su nieto, que lloraba.\n\nCuando el objeto comenzó a elevarse, apareció en torno a él una gran cantidad de helicópteros militares —las testigos contaron alrededor de 23, varios identificados como CH-47 Chinook de doble rotor— que parecían escoltarlo o seguirlo en formación. Esta es una de las particularidades del caso: testigos secundarios independientes en la zona, entre ellos un oficial de policía fuera de servicio (Sgt. Jamie Sims) y el residente local J.W. Foster, corroboraron de forma separada el inusual despliegue de helicópteros esa noche. En las horas y días siguientes, las tres víctimas desarrollaron una sintomatología aguda compatible con exposición a radiación o a un agente tóxico: quemaduras y ampollas en la piel, hinchazón facial, caída de cabello, vómitos persistentes, diarrea y lesiones oculares con visión temporalmente afectada. Betty Cash, la más expuesta, fue hospitalizada en enero de 1981 en Parkway General Hospital y posteriormente atendida durante años, incluido seguimiento en el MD Anderson Cancer Center.\n\nEn 1981 las víctimas, representadas pro bono por el abogado Peter Gersten, presentaron una demanda federal por 20 millones de dólares (Cash et al. v. United States, Civil Action H-81-1646) en el US District Court para el Southern District of Texas, alegando que aeronaves del gobierno habían causado sus lesiones. El gobierno estadounidense negó formalmente todo conocimiento del incidente y la operación de los helicópteros, y ninguna rama de las fuerzas armadas reconoció haber tenido ese tipo de aeronaves en formación esa noche. El caso fue desestimado en 1986 por falta de prueba de que el gobierno hubiese operado el objeto, pero la documentación médica y el court record son públicos. Betty Cash falleció en 1998; su familia ha sostenido la conexión causal entre sus problemas de salud y el incidente.",

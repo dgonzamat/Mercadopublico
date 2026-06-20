@@ -50,14 +50,11 @@
     }
   ],
   "posterior": {
-    "mundano": 0.18,
-    "natural_desc": 0.22,
-    "clasificada": 0.12,
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.12,
     "adversaria": 0.06,
-    "ing_inversa": 0.02,
-    "interdimensional": 0.03,
-    "ontologico": 0.01,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.04,
     "indet": 0.35
   },
   "name_en": "El Taire / Bermejo crash"

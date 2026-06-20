@@ -28,39 +28,37 @@ export interface CaseDocument {
 }
 
 /**
- * MODELO MECE (en migración) — reemplazo de evidenceContribution + las 10
- * hipótesis existenciales solapadas. Cada caso recibe una distribución sobre
- * un conjunto de explicaciones MUTUAMENTE EXCLUYENTES y EXHAUSTIVAS que suma
- * 1. El agregado del corpus (Σ posteriores) reparte el 100% entre clases y es
- * comparable. Ver lib/meceModel.ts. Coexiste con el modelo viejo durante la
- * migración; `posterior` es opcional hasta recodificar las ~200 fichas.
- */
-/**
- * Hojas de la partición (suman 1 por caso). Preservan las hipótesis del modelo
- * viejo: 5 son hipótesis directas, 3 son las subclases del paraguas «entidades
- * no humanas». Las hipótesis DERIVADAS se recuperan como vistas:
- *   - entidades-no-humanas = interdimensional + ontologico + tratado
- *   - heterogeneidad       = 1 − mundano  (≥1 caso genuinamente anómalo)
- * (misidentificación como pre-filtro del universo previo sigue aparte.)
+ * MODELO MECE — narrativas conjuntas (objeto + postura institucional).
+ * Cada caso reparte 100% sobre 6 narrativas mutuamente excluyentes y
+ * exhaustivas. A diferencia de un eje de solo-objeto, estas bundlean el
+ * encubrimiento DENTRO de la hipótesis, de modo que «no-humano + ocultación
+ * estatal» es una clase propia (nohumano_encubierto), no una combinación
+ * imposible. El agregado del corpus (Σ posteriores) reparte el 100% y es
+ * comparable. Ver lib/meceModel.ts.
+ *
+ * Mapeo con el marco anterior (10 hipótesis):
+ *   mundano_natural      = misidentificación + fenómenos-naturales
+ *   humana_clasificada   = programas-clasificados
+ *   adversaria           = tecnología-adversaria
+ *   nohumano_encubierto  = ingeniería-inversa + tratado-greys + entidades con cover-up
+ *   nohumano_abierto     = interdimensional + ontológico sin gestión estatal
+ *   indet                = indeterminable
+ * Derivadas: entidades-no-humanas = encubierto + abierto; heterogeneidad = 1 − mundano_natural.
  */
 export type MeceClassId =
-  | "mundano"          // misidentificación / objeto conocido / fraude
-  | "natural_desc"     // fenómeno natural (catalogado o no)
-  | "clasificada"      // programas clasificados (tec. humana propia/aliada)
-  | "adversaria"       // tecnología de vigilancia de otro Estado
-  | "ing_inversa"      // ingeniería inversa de tecnología no humana (programa)
-  | "interdimensional" // subclase de entidades no humanas
-  | "ontologico"       // subclase: ontológico no materialista
-  | "tratado"          // subclase: tratado formal (greys)
-  | "indet";           // indeterminable / evidencia insuficiente
+  | "mundano_natural"      // objeto conocido / error / fraude / fenómeno natural
+  | "humana_clasificada"   // programa secreto propio o aliado (encubrimiento intrínseco)
+  | "adversaria"           // tecnología de vigilancia de otro Estado
+  | "nohumano_encubierto"  // no-humano que un Estado conoce/controla/oculta (incl. ing. inversa)
+  | "nohumano_abierto"     // no-humano sin gestión estatal (sistema de control tipo Vallée)
+  | "indet";               // indeterminable / evidencia insuficiente
 
 export type Posterior = Record<MeceClassId, number>;
 
-/** Subclases que componen el paraguas «entidades no humanas» (derivado). */
+/** Subclases no-humanas → vista derivada «entidades no humanas». */
 export const ENTIDADES_SUBCLASSES: MeceClassId[] = [
-  "interdimensional",
-  "ontologico",
-  "tratado",
+  "nohumano_encubierto",
+  "nohumano_abierto",
 ];
 
 export interface UAPCase {

@@ -43,14 +43,11 @@
     }
   ],
   "posterior": {
-    "mundano": 0.45,
-    "natural_desc": 0.18,
-    "clasificada": 0.03,
+    "mundano_natural": 0.63,
+    "humana_clasificada": 0.03,
     "adversaria": 0.02,
-    "ing_inversa": 0.005,
-    "interdimensional": 0.015,
-    "ontologico": 0.01,
-    "tratado": 0.005,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.025,
     "indet": 0.285
   }
 }

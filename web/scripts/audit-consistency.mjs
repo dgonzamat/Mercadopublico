@@ -430,8 +430,7 @@ if (shortBodies.length > 0) {
 //     exactas, sumando 1 (±0.005). ERROR si no.
 //   - los casos-documento NO deben tener posterior (la partición no aplica). WARN.
 const MECE_CLASSES_AUDIT = [
-  "mundano", "natural_desc", "clasificada", "adversaria", "ing_inversa",
-  "interdimensional", "ontologico", "tratado", "indet",
+  "mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet",
 ];
 let mecePosteriorCount = 0;
 const meceAgg = Object.fromEntries(MECE_CLASSES_AUDIT.map((k) => [k, 0]));

@@ -24,14 +24,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.18,
-    "natural_desc": 0.22,
-    "clasificada": 0.06,
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.06,
     "adversaria": 0.04,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.10,
-    "ontologico": 0.04,
-    "tratado": 0.02,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.14,
     "indet": 0.33
   },
   "whatHappened": "Entre el 21 y el 31 de diciembre de 1978, una secuencia de avistamientos en los cielos sobre la Isla Sur de Nueva Zelanda, particularmente en torno a la región de Kaikōura, fue registrada por pilotos comerciales, controladores de tráfico aéreo de Wellington, personal vinculado a la RNZAF y, en su episodio culminante, por un equipo de televisión australiano que voló deliberadamente para documentar el fenómeno.\n\nLa fase inicial ocurrió la madrugada del 21 de diciembre, cuando la tripulación de un Argosy de carga de Safe Air, que cubría rutas nocturnas de reparto de prensa, observó luces brillantes que parecían acompañar a la aeronave. Wellington Air Traffic Control registró ecos de radar que, según los controladores, se correlacionaban con las posiciones visuales reportadas por los pilotos. La sucesión de reportes despertó interés mediático internacional.\n\nEl episodio mejor documentado se produjo la noche del 30 al 31 de diciembre. Un equipo de Channel 0 / Network Ten de Melbourne —el reportero Quentin Fogarty, el camarógrafo David Crockett y la sonidista Ngaire Crockett— embarcó en un vuelo Argosy entre Wellington y Christchurch con la intención de filmar material de fondo para un reportaje sobre los avistamientos previos. Durante el vuelo registraron en película de 16 mm a color varios objetos luminosos, mientras Wellington ATC informaba de ecos de radar coincidentes. El metraje resultante es el único registro filmado en color de un caso de este tipo acompañado por correlación de radar simultánea reportada por controladores.\n\nLa investigación pasó por varios filtros. El Ministerio de Defensa neozelandés abrió expediente (referencia AIR 1080/6/897 en los Archivos Nacionales de Wellington). El óptico y físico estadounidense Bruce Maccabee, del Naval Surface Weapons Center, analizó la película, viajó a Nueva Zelanda y Australia para entrevistar a los testigos y estimó que uno de los objetos era muy brillante y de gran tamaño aparente, difícilmente atribuible a plasma o rayo en bola. Un memorando interno de la CIA, liberado años después vía FOIA, llegó a describir el material como notable entre los reportes civiles de OVNIs por su evidencia documental.\n\nLa explicación escéptica oficial fue clara y debe presentarse con justicia: el resumen del informe difundido a la prensa en 1979 atribuyó las luces a 'fenómenos atmosféricos naturales pero inusuales'. En concreto, los analistas del DSIR propusieron que las luces observadas desde el Argosy correspondían a una flota de unos cincuenta barcos calamareros japoneses que faenaban frente a la península de Banks con potentes focos, cuya luz se reflejaría en nubes o en una capa de inversión térmica, y que el objeto matutino más brillante era el planeta Venus refractado en la atmósfera. Los testigos rechazaron estas explicaciones: David Crockett probó a enfocar Venus con su cámara y obtuvo apenas un punto diminuto, nada parecido a lo filmado, y el piloto Bill Startup objetó que los barcos calamareros, Venus o las luces del puerto no podían explicar ecos de radar desplazándose a unos 140 nudos. Maccabee también señaló que no había constancia de que hubiera calamareros en la zona esa noche. El debate entre la lectura atmosférico-prosaica y la anómala sigue abierto.",

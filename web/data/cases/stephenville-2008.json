@@ -25,14 +25,11 @@
   "whyMatters": "Es uno de los pocos casos del corpus que combina testimonio civil convergente con un análisis FOIA exhaustivo de radar primario de la FAA, y con la circunstancia agravante de una traza dirigida hacia espacio aéreo restringido durante la presencia del presidente en su rancho. Su valor metodológico es alto: muestra cómo herramientas civiles y legales —una solicitud de información y el escrutinio de millones de puntos de radar— permiten reconstruir un evento de forma objetiva, sin depender solo de la memoria de los testigos. Ese es el modelo que casos posteriores han buscado replicar.\n\nLa contradicción inicial seguida de corrección de la 301st Fighter Wing es un dato institucional limpio sobre el comportamiento comunicacional militar ante eventos públicos: una primera negativa, luego revertida, que —independientemente de su causa— erosiona la confianza y alimenta la sospecha de encubrimiento incluso cuando la explicación final (ejercicios de F-16) es mundana. Para la calibración, el caso vive en una tensión productiva: la explicación convencional cubre buena parte de los reportes, pero la traza de radar no identificada hacia Crawford y los testimonios sobre un objeto único y silencioso impiden cerrarlo del todo, lo que justifica su posición en Tier B con probabilidad intermedia.",
   "whyMatters_en": "It is one of the few corpus cases that combines convergent civilian testimony with an exhaustive FOIA analysis of FAA primary radar, plus the aggravating circumstance of a track heading toward restricted airspace during the president's presence at his ranch. Its methodological value is high: it shows how civil, legal tools —an information request and the scrutiny of millions of radar points— allow an event to be reconstructed objectively, without relying solely on witness memory. That is the model later cases have sought to replicate.\n\nThe 301st Fighter Wing's initial denial followed by a correction is a clean institutional data point on military communication behavior during public events: a first denial, later reversed, that —whatever its cause— erodes trust and feeds suspicion of cover-up even when the final explanation (F-16 exercises) is mundane. For calibration, the case lives in a productive tension: the conventional explanation covers much of the reports, but the unidentified radar track toward Crawford and the testimony of a single silent object keep it from full closure, which justifies its position at Tier B with intermediate probability.",
   "posterior": {
-    "mundano": 0.38,
-    "natural_desc": 0.04,
-    "clasificada": 0.10,
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.1,
     "adversaria": 0.06,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.05,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.07,
     "indet": 0.33
   },
   "evidence": [

@@ -21,14 +21,11 @@
   "patterns": [],
   "category": "incident",
   "posterior": {
-    "mundano": 0.38,
-    "natural_desc": 0.12,
-    "clasificada": 0.06,
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.06,
     "adversaria": 0.05,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.06,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.08,
     "indet": 0.29
   },
   "whatHappened": "El 27 de enero de 1994, durante un vuelo de Tajik Air en un Boeing 747SP, la tripulación —el piloto jefe Edward (Ed) Rhodes, ciudadano estadounidense, y dos colegas también pilotos estadounidenses— observó a 41.000 pies sobre territorio de Kazajistán un objeto de intensa luminosidad que se aproximaba desde el este a gran velocidad y a una altura muy por encima de la aeronave. Según el reporte, la posición se dio en torno a los 45° de latitud norte y 55° de longitud este. El objeto fue seguido visualmente por la tripulación durante unos 40 minutos, describiendo trayectorias en círculos, en espiral (corkscrew) y giros bruscos de 90 grados.\n\nLo significativo no es solo el testimonio de tres tripulantes profesionales, sino su rastro documental, que ahora puede precisarse. El avistamiento quedó recogido en un cable de la embajada de EE.UU. en Dushanbe (Tayikistán), fechado el 31 de enero de 1994 y titulado 'Tajik Air Pilots Report Unidentified Flying Object'; el documento lleva un sello del Departamento de Estado 'Released in Full' con fecha del 25 de febrero de 2026, y reapareció públicamente en la ola de desclasificación del sistema PURSUE (war.gov/ufo, 2026). El propio cable indica que Rhodes tomó varias fotografías con una cámara compacta Olympus de bolsillo y dijo que enviaría copias a la embajada y al escritorio de Tayikistán del Departamento de Estado si salían bien; no obstante, ninguna fotografía acompaña al cable liberado, de modo que la parte visual del reporte sigue sin corroboración material.\n\nEl encuadre es honesto: es un caso fuerte en lo testimonial (tres pilotos profesionales, larga duración, maniobras anómalas) y en lo documental (cable de embajada con fecha y título + desclasificación PURSUE), pero sin corroboración de radar, de sensor independiente ni de las fotografías mencionadas en el material disponible. Lo que se conserva es la transcripción diplomática de un reporte de pilotos, no una medición instrumental.",

@@ -22,14 +22,11 @@
   ],
   "category": "incident",
   "posterior": {
-    "mundano": 0.45,
-    "natural_desc": 0.05,
-    "clasificada": 0.10,
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.1,
     "adversaria": 0.07,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.05,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.07,
     "indet": 0.24
   },
   "whatHappened": "El 18 de junio de 1979, hacia las 11:30 de la mañana, el Mariscal (Maresciallo) Giancarlo Cecconi, del 14º Gruppo del 2º Stormo de la Aeronautica Militare italiana, regresaba a la base de Treviso tras una misión de reconocimiento cuando el Centro Istrana, radar militar de control de tráfico aéreo, detectó un intruso en sus pantallas y vectoró a Cecconi para que lo interceptara dentro de una zona de espacio aéreo restringido. Cecconi pilotaba un Fiat G-91R de reconocimiento equipado con cámaras de armamento VINTEN, concebidas para el registro fotogramétrico de objetivos.\n\nSegún su relato y el material conservado, Cecconi efectuó del orden de siete u ocho pases sucesivos sobre el objeto, accionando las cámaras en cada pasada, hasta acumular un total de 82 fotogramas. Describió un cuerpo oscuro, de tono negro mate, con una forma alargada —comparada con un depósito de combustible aerodinámico o un cilindro— con la parte superior ligeramente aplanada y un elemento superior a modo de cúpula o domo, transparente o blanquecino, que comparó con una 'gota de agua'. Personal de la torre de control de Treviso le advirtió por radio de que el objeto parecía emitir una extraña estela azulada. Cuando Cecconi se aproximaba, el objeto realizó movimientos verticales de ascenso y descenso, llegando a ganar varios miles de pies de altura.\n\nEl informe completo —el rollo VINTEN, la traza de radar del Centro Istrana y el debriefing de Cecconi— quedó archivado en el dossier oficial OVNI de la Aeronautica Militare, dentro del marco institucional que Italia consolidó a finales de la década de 1970 tras la notable oleada de avistamientos de 1978, marco asociado en la divulgación posterior a la figura de Giulio Andreotti como gran referente político del periodo.\n\nLa explicación escéptica oficial debe presentarse con precisión y sin atenuarla. Años más tarde —hacia 1984— el Ministerio de Defensa italiano comunicó que el objeto había sido identificado por sus foto-intérpretes como un globo cilíndrico fabricado con bolsas de plástico negro, es decir, un artefacto ligero arrastrado por el viento. Esta conclusión sorprendió a los investigadores que habían recogido el testimonio de Cecconi, porque no encajaba con lo que el piloto había descrito: la objeción técnica principal es cinemática, ya que una bolsa o globo de plástico, de masa despreciable, difícilmente podría exhibir los ascensos y descensos sostenidos y la aparente direccionalidad reportados, ni mantenerse de forma estable frente a un reactor en repetidos pases. El archivo institucional conserva el caso, y la discrepancia entre la observación del piloto y la identificación del Ministerio es precisamente lo que lo mantiene en discusión.\n\nEn aras de la honestidad, conviene registrar también que la lectura escéptica no es trivial: a esa altura, un globo o conjunto de bolsas plásticas a la deriva puede engañar la percepción de tamaño, distancia y movimiento relativo de un piloto que maniobra a alta velocidad, y la 'estela azulada' admite interpretaciones ópticas. El valor del caso no descansa en que la explicación mundana sea imposible, sino en la calidad del soporte documental: cámara de armamento militar, vector de radar y piloto identificado.",

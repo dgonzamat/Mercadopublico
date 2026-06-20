@@ -21,14 +21,11 @@
   "patterns": [],
   "category": "incident",
   "posterior": {
-    "mundano": 0.32,
-    "natural_desc": 0.30,
-    "clasificada": 0.10,
+    "mundano_natural": 0.62,
+    "humana_clasificada": 0.1,
     "adversaria": 0.02,
-    "ing_inversa": 0.01,
-    "interdimensional": 0.03,
-    "ontologico": 0.02,
-    "tratado": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.05,
     "indet": 0.19
   },
   "whatHappened": "La noche del lunes 24 de marzo de 1997, en torno a las 21:30 y luego de nuevo cerca de las 22:00, múltiples testigos —entre ellos residentes y agentes de policía— reportaron primero luces inusuales en el cielo tras el anochecer y después una serie de estruendos y destellos brillantes que iluminaron los páramos de los Howden Moors, en la frontera entre South Yorkshire y el Peak District de Derbyshire. La secuencia era compatible con un avión estrellándose o un objeto explotando. La policía de South Yorkshire respondió movilizando, junto a los servicios de bomberos y ambulancias y con apoyo de cuatro condados, uno de los mayores operativos aéreos y terrestres de rescate de la historia reciente de la región: del orden de 200 efectivos y un costo superior a las £50.000, sobre la hipótesis de trabajo de un desastre aéreo. La búsqueda se prolongó toda la noche y se dio por terminada al día siguiente.\n\nLa búsqueda no encontró nada: ningún avión derribado, ningún resto, ningún herido. Las llamadas a todos los aeropuertos civiles y militares dieron negativo —nadie reportaba aeronaves perdidas sobre los páramos— y los radares de control no habían registrado una caída. Sin embargo, sí quedó evidencia instrumental: el British Geological Survey grabó dos 'eventos sónicos' inexplicados esa noche, del tipo que produce un estampido supersónico o una explosión, y se reportó actividad de cazas de la RAF a baja altura en la zona en torno a esas horas.\n\nLas hipótesis convencionales que circularon, y que el periodista e investigador David Clarke examinó con detalle, encajan dos piezas. Por un lado, un bólido o meteoro brillante entrando en la atmósfera explicaría las luces y, de fragmentarse, parte del ruido; por otro, los 'eventos sónicos' del BGS y los estampidos podrían deberse a cazas militares volando a baja altura y posiblemente rompiendo la barrera del sonido —vuelos que, de ser secretos o no declarados, encajarían con la negativa inicial de las autoridades a confirmarlos—. Una tercera lectura sugiere simplemente la coincidencia temporal de un meteoro con un ejercicio militar nocturno, cada uno contribuyendo a una parte de los reportes.\n\nEl encuadre es deliberadamente cauto. Lo documentado con solidez es la respuesta institucional masiva y el registro sísmico independiente del BGS, no la naturaleza del objeto. No hubo objeto confirmado por sensor ni resto recuperado, y la explicación más económica combina fenómenos mundanos. Es un caso del límite: un evento real lo bastante creíble como para movilizar al Estado a gran escala, pero cuyo núcleo —qué cruzó exactamente el cielo de los Howden Moors esa noche— nunca se cerró.",
