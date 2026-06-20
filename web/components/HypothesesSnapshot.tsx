@@ -11,7 +11,19 @@ export function HypothesesSnapshot() {
   const scored = [...corpusPosteriors(), ...documentPosteriors()];
   const N = scored.length;
   const counts = expectedCounts(scored);
-  const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
+  // Vista consolidada: las dos narrativas no-humanas se muestran como una sola
+  // barra "No-humano" (los datos por caso conservan la distinción).
+  type Row = { key: string; label: string; labelEn: string; count: number };
+  const rows: Row[] = [];
+  for (const c of MECE_CLASSES) {
+    if (c.id === "nohumano_encubierto") continue;
+    if (c.id === "nohumano_abierto") {
+      rows.push({ key: "nohumano", label: "No-humano", labelEn: "Non-human", count: counts.nohumano_encubierto + counts.nohumano_abierto });
+    } else {
+      rows.push({ key: c.id, label: c.label, labelEn: c.labelEn, count: counts[c.id] });
+    }
+  }
+  rows.sort((a, b) => b.count - a.count);
 
   return (
     <div>
@@ -21,9 +33,9 @@ export function HypothesesSnapshot() {
           en={`How the corpus's ${N} cases split among the six narratives — they sum to 100%`}
         />
       </p>
-      {ranked.map((c, i) => (
+      {rows.map((c, i) => (
         <div
-          key={c.id}
+          key={c.key}
           className="grid grid-cols-[2.5rem_1fr] items-center gap-x-4 gap-y-2 border-b border-bg/10 py-4 md:grid-cols-[2.5rem_minmax(0,1fr)_minmax(0,18rem)_5rem]"
         >
           <span className="font-mono text-xs tabular-nums text-bg/40">
@@ -33,10 +45,10 @@ export function HypothesesSnapshot() {
             <T es={c.label} en={c.labelEn} />
           </p>
           <div className="col-start-2 h-1.5 bg-bg/10 md:col-start-3">
-            <div className="h-full bg-bg/80" style={{ width: `${(counts[c.id] / N) * 100}%` }} />
+            <div className="h-full bg-bg/80" style={{ width: `${(c.count / N) * 100}%` }} />
           </div>
           <p className="col-start-2 font-mono text-[11px] uppercase tracking-wider text-accent-bright md:col-start-4 md:text-right">
-            {((counts[c.id] / N) * 100).toFixed(1)}%
+            {((c.count / N) * 100).toFixed(1)}%
           </p>
         </div>
       ))}

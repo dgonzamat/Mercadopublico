@@ -86,8 +86,9 @@ export default function ProbabilidadesPage() {
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
             items={allScored}
-            totalLabelEs={`Suman 100% · ${allScored.length} casos · partición exhaustiva`}
-            totalLabelEn={`Sum to 100% · ${allScored.length} cases · exhaustive partition`}
+            consolidateNonHuman
+            totalLabelEs={`Suman 100% · ${allScored.length} casos · «No-humano» agrupa encubierto + abierto`}
+            totalLabelEn={`Sum to 100% · ${allScored.length} cases · 'Non-human' groups covert + open`}
           />
         </div>
       </section>

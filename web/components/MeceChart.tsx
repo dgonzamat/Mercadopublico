@@ -24,6 +24,7 @@ export function MecePartition({
   totalLabelEs,
   totalLabelEn,
   showDerived = true,
+  consolidateNonHuman = false,
 }: {
   compact?: boolean;
   /** Dataset a graficar; por defecto los incidentes (corpusPosteriors). */
@@ -33,11 +34,36 @@ export function MecePartition({
   totalLabelEn?: string;
   /** Vistas derivadas (solo aplican a la partición de incidentes). */
   showDerived?: boolean;
+  /** Fusiona las dos narrativas no-humanas en una sola barra "No-humano".
+   *  Solo afecta la VISTA agregada; los datos por caso conservan la distinción. */
+  consolidateNonHuman?: boolean;
 }) {
   const scored = items ?? corpusPosteriors();
   const N = scored.length;
   const counts = expectedCounts(scored);
-  const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
+
+  type Row = { key: string; label: string; labelEn: string; color: string; count: number };
+  let rows: Row[];
+  if (consolidateNonHuman) {
+    rows = [];
+    for (const c of MECE_CLASSES) {
+      if (c.id === "nohumano_encubierto") continue; // se fusiona en la barra "No-humano"
+      if (c.id === "nohumano_abierto") {
+        rows.push({
+          key: "nohumano",
+          label: "No-humano",
+          labelEn: "Non-human",
+          color: c.color,
+          count: counts.nohumano_encubierto + counts.nohumano_abierto,
+        });
+      } else {
+        rows.push({ key: c.id, label: c.label, labelEn: c.labelEn, color: c.color, count: counts[c.id] });
+      }
+    }
+  } else {
+    rows = MECE_CLASSES.map((c) => ({ key: c.id, label: c.label, labelEn: c.labelEn, color: c.color, count: counts[c.id] }));
+  }
+  rows.sort((a, b) => b.count - a.count);
 
   const enh = scored.reduce((s, c) => s + entidadesNoHumanas(c.posterior), 0);
   const het = scored.reduce((s, c) => s + heterogeneidad(c.posterior), 0);
@@ -45,24 +71,24 @@ export function MecePartition({
   return (
     <div>
       <div className="space-y-2.5">
-        {ranked.map((c) => (
-          <div key={c.id}>
+        {rows.map((c) => (
+          <div key={c.key}>
             <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
               <span className="min-w-0 uppercase tracking-wider text-text">
                 <T es={c.label} en={c.labelEn} />
               </span>
               <span className="shrink-0 whitespace-nowrap text-right text-muted">
-                {share(counts[c.id] / N)}%
+                {share(c.count / N)}%
                 {!compact && (
                   <>
                     {" · "}
-                    {counts[c.id].toFixed(1)} <T es="casos" en="cases" />
+                    {c.count.toFixed(1)} <T es="casos" en="cases" />
                   </>
                 )}
               </span>
             </div>
             <div className="mt-1 h-2 w-full bg-border/40">
-              <div className="h-2" style={{ width: `${(counts[c.id] / N) * 100}%`, backgroundColor: c.color }} />
+              <div className="h-2" style={{ width: `${(c.count / N) * 100}%`, backgroundColor: c.color }} />
             </div>
           </div>
         ))}
@@ -75,17 +101,19 @@ export function MecePartition({
       </p>
       {!compact && showDerived && (
         <div className="mt-4 space-y-3 border-t border-border pt-3 font-mono text-[11px]">
-          <div className="flex items-start justify-between gap-3">
-            <div className="min-w-0">
-              <div className="uppercase tracking-wider text-text">
-                <T es="Entidades no humanas" en="Non-human entities" />
+          {!consolidateNonHuman && (
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <div className="uppercase tracking-wider text-text">
+                  <T es="Entidades no humanas" en="Non-human entities" />
+                </div>
+                <div className="text-muted">
+                  <T es="derivada = encubierto + abierto" en="derived = covert + open" />
+                </div>
               </div>
-              <div className="text-muted">
-                <T es="derivada = encubierto + abierto" en="derived = covert + open" />
-              </div>
+              <span className="shrink-0 text-muted">{pct(enh / N)}%</span>
             </div>
-            <span className="shrink-0 text-muted">{pct(enh / N)}%</span>
-          </div>
+          )}
           <div className="flex items-start justify-between gap-3">
             <div className="min-w-0">
               <div className="uppercase tracking-wider text-text">
