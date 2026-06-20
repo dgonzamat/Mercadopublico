@@ -42,8 +42,8 @@ const CHAPTERS = [
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayor parte del corpus se reparte entre explicaciones mundanas e indeterminables; las narrativas no-humanas son pequeñas y concentran el debate abierto." },
-    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most of the corpus splits between mundane and indeterminable explanations; the non-human narratives are small and hold the open debate." },
+    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayor parte del corpus es prosaico (sobre todo misidentificación); las hipótesis no-humanas son minoría y se concentran en los casos mejor documentados." },
+    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most of the corpus is prosaic (mostly misidentification); the non-human hypotheses are a minority and concentrate in the best-documented cases." },
   },
   {
     id: "movers",
@@ -231,8 +231,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="Por caso, las seis narrativas son mutuamente excluyentes: cada caso tuvo una causa real y la incertidumbre se reparte entre los candidatos, sumando 100%. Sumadas sobre el corpus dan una partición comparable — se puede decir qué explicación da cuenta de más casos. El costo honesto es asumir que cada caso tiene una explicación verdadera; lo que no se puede asignar cae en «indeterminable». El marco anterior, donde los porcentajes no sumaban 100 ni se podían comparar, se reemplazó precisamente para corregir eso."
-                  en="Per case, the six narratives are mutually exclusive: each case had one real cause and the uncertainty is split among the candidates, summing to 100%. Summed across the corpus they give a comparable partition — one can say which explanation accounts for more cases. The honest cost is assuming each case has one true explanation; whatever cannot be assigned falls into 'indeterminable'. The prior framework, where percentages neither summed to 100 nor were comparable, was replaced precisely to fix that."
+                  es="Por caso, las narrativas son mutuamente excluyentes: cada caso tuvo una causa real y la incertidumbre se reparte entre los candidatos, sumando 100%. Sumadas sobre el corpus dan una partición comparable — se puede decir qué explicación da cuenta de más casos. En la presentación del sitio se aplica una clasificación forzada: lo prosaico se abre en tres hipótesis (misidentificación, fenómeno natural, fraude), las dos no-humanas se muestran juntas, y la masa que el caso no permite asignar se reparte entre las hipótesis que sí apoya — de modo que ningún caso queda sin clasificar. El marco anterior, donde los porcentajes no sumaban 100 ni se podían comparar, se reemplazó precisamente para corregir eso."
+                  en="Per case, the narratives are mutually exclusive: each case had one real cause and the uncertainty is split among the candidates, summing to 100%. Summed across the corpus they give a comparable partition — one can say which explanation accounts for more cases. The site's presentation applies a forced classification: the prosaic opens into three hypotheses (misidentification, natural phenomenon, hoax), the two non-human ones are shown together, and the mass a case cannot assign is spread across the hypotheses it does support — so no case is left unclassified. The prior framework, where percentages neither summed to 100 nor were comparable, was replaced precisely to fix that."
                 />
               </Body>
               <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
@@ -320,8 +320,8 @@ export default function AboutPage() {
                 </Body>
                 <Body className="text-muted">
                   <T
-                    es={<>El posterior de cada caso es un juicio declarado, no un cálculo a partir de pesos: el análisis del caso reparte explícitamente el 100% entre las seis narrativas según qué tan bien cada una da cuenta de la evidencia. No hay fórmula oculta — el reparto es el juicio, y queda visible en la página del caso. Lo que el caso no permite asignar se concentra en{" "}<strong className="text-text">«indeterminable»</strong>, la válvula de honestidad del modelo.</>}
-                    en={<>Each case&apos;s posterior is a declared judgment, not a computation from weights: the case analysis explicitly splits 100% among the six narratives by how well each accounts for the evidence. There is no hidden formula — the split is the judgment, and it stays visible on the case page. Whatever the case does not allow assigning concentrates in{" "}<strong className="text-text">&apos;indeterminable&apos;</strong>, the model&apos;s honesty valve.</>}
+                    es={<>El posterior de cada caso es un juicio declarado, no un cálculo a partir de pesos: el análisis del caso reparte explícitamente el 100% según qué tan bien cada explicación da cuenta de la evidencia. No hay fórmula oculta — el reparto es el juicio, y queda visible en la página del caso. La masa que el caso no permite asignar (la antigua{" "}<strong className="text-text">«indeterminable»</strong>) se redistribuye, en las gráficas, entre las hipótesis que el caso sí apoya: <strong className="text-text">clasificación forzada</strong>, ningún caso queda sin clasificar.</>}
+                    en={<>Each case&apos;s posterior is a declared judgment, not a computation from weights: the case analysis explicitly splits 100% by how well each explanation accounts for the evidence. There is no hidden formula — the split is the judgment, and it stays visible on the case page. The mass a case cannot assign (the former{" "}<strong className="text-text">&apos;indeterminable&apos;</strong>) is redistributed, in the charts, across the hypotheses the case does support: <strong className="text-text">forced classification</strong>, no case left unclassified.</>}
                   />
                 </Body>
                 <Body className="text-muted">
@@ -332,8 +332,8 @@ export default function AboutPage() {
                 </Body>
                 <Caption>
                   <T
-                    es={<>Cada caso de incidente muestra su posterior en su propia página, en la sección{" "}<em>&quot;Cómo se reparte este caso&quot;</em>. Los casos-documento (memos, audiencias, filtraciones) no llevan posterior: la pregunta «qué era el objeto» no les aplica.</>}
-                    en={<>Each incident case shows its posterior on its own page, in the{" "}<em>&quot;How this case splits&quot;</em> section. Document cases (memos, hearings, leaks) carry no posterior: the &apos;what was the object&apos; question does not apply to them.</>}
+                    es={<>Cada caso muestra su posterior en su propia página, en la sección{" "}<em>&quot;Distribución de explicaciones&quot;</em>. En los incidentes el posterior mide la naturaleza del objeto; en los casos-documento (memos, audiencias, filtraciones) mide el «lean» evidencial —hacia qué explicación inclina su contenido—, ya que no tienen un objeto que clasificar.</>}
+                    en={<>Each case shows its posterior on its own page, in the{" "}<em>&quot;Distribution of explanations&quot;</em> section. For incidents the posterior measures the nature of the object; for document cases (memos, hearings, leaks) it measures the evidential &apos;lean&apos; —which explanation their content tilts toward—, since they have no object to classify.</>}
                   />
                 </Caption>
               </div>

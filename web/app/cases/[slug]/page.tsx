@@ -511,9 +511,10 @@ export default async function CaseDetailPage(
             <T
               es={
                 <>
-                  Este caso reparte el 100% entre las seis narrativas
-                  mutuamente excluyentes del modelo. La barra muestra qué tan
-                  probable es cada una; sumadas en todo el corpus producen la{" "}
+                  Este caso se clasifica entre las hipótesis del modelo: la
+                  barra reparte el 100% según cuánto pesa cada explicación (la
+                  incertidumbre se reparte entre las hipótesis que el caso
+                  apoya). Sumadas en todo el corpus producen la{" "}
                   <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     partición comparable
                   </Link>
@@ -525,9 +526,10 @@ export default async function CaseDetailPage(
               }
               en={
                 <>
-                  This case splits 100% among the model&apos;s six
-                  mutually-exclusive narratives. The bar shows how probable
-                  each is; summed across the corpus they produce the{" "}
+                  This case is classified among the model&apos;s hypotheses:
+                  the bar splits 100% by how much each explanation weighs (the
+                  uncertainty is spread across the hypotheses the case
+                  supports). Summed across the corpus they produce the{" "}
                   <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     comparable partition
                   </Link>
@@ -542,8 +544,8 @@ export default async function CaseDetailPage(
           <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} />
           <Caption className="italic">
             <T
-              es="Juicio analítico estructurado, no frecuencia calibrada. «Indeterminable» es la masa que no se puede asignar con la evidencia disponible."
-              en="Structured analytical judgment, not a calibrated frequency. 'Indeterminable' is the mass that cannot be assigned with the available evidence."
+              es="Juicio analítico estructurado, no frecuencia calibrada. Clasificación forzada: la masa que la evidencia no permite asignar se reparte entre las hipótesis que el caso sí apoya."
+              en="Structured analytical judgment, not a calibrated frequency. Forced classification: the mass the evidence cannot assign is spread across the hypotheses the case does support."
             />
           </Caption>
         </section>
