@@ -50,6 +50,24 @@ export interface EvidenceContribution {
   rationaleEn: string;
 }
 
+/**
+ * MODELO MECE (en migración) — reemplazo de evidenceContribution + las 10
+ * hipótesis existenciales solapadas. Cada caso recibe una distribución sobre
+ * un conjunto de explicaciones MUTUAMENTE EXCLUYENTES y EXHAUSTIVAS que suma
+ * 1. El agregado del corpus (Σ posteriores) reparte el 100% entre clases y es
+ * comparable. Ver lib/meceModel.ts. Coexiste con el modelo viejo durante la
+ * migración; `posterior` es opcional hasta recodificar las ~200 fichas.
+ */
+export type MeceClassId =
+  | "mundano"       // identificación errónea / objeto conocido / fraude
+  | "natural_desc"  // fenómeno natural real pero no catalogado
+  | "clasificada"   // tecnología humana clasificada (propia/aliada)
+  | "adversaria"    // tecnología de vigilancia de otro Estado
+  | "no_humano"     // inteligencia/entidad no humana (incl. interdimensional…)
+  | "indet";        // indeterminable / evidencia insuficiente
+
+export type Posterior = Record<MeceClassId, number>;
+
 export interface UAPCase {
   id: string;
   num: number;
@@ -85,7 +103,12 @@ export interface UAPCase {
   // Per-case calibration contributions. When present, each declares which
   // hypothesis this case moves and by how much. When absent, auto-seeded
   // from `patterns` at minimal strength (+0.5 per mapped pattern).
+  // LEGACY: en proceso de reemplazo por `posterior` (modelo MECE).
   evidenceContribution?: EvidenceContribution[];
+  // MODELO MECE (en migración): distribución sobre explicaciones excluyentes,
+  // suma 1. Opcional hasta recodificar las fichas. Mientras esté ausente,
+  // lib/meceModel.ts deriva un posterior provisional desde los campos legacy.
+  posterior?: Posterior;
 }
 
 export interface Pattern {
