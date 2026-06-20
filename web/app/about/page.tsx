@@ -15,7 +15,7 @@ import { STATS } from "@/lib/siteStats";
 export const metadata = {
   title: "Metodología — cómo se pesa la evidencia",
   description:
-    "Cómo se pesa la evidencia: cuatro niveles de fuerza probatoria, retornos decrecientes por caso, y por qué ocho hipótesis pueden ser parcialmente ciertas en simultáneo.",
+    "Cómo se pesa la evidencia: cuatro niveles de fuerza probatoria, retornos decrecientes por caso, y por qué las nueve explicaciones reparten el 100% de forma comparable.",
 
   alternates: { canonical: "/about/" },
 };
@@ -36,14 +36,14 @@ const CHAPTERS = [
   {
     id: "non-exclusive",
     n: "3",
-    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades superan 100% (y no es un error)", tldr: "Las ocho explicaciones principales no compiten entre sí — un mismo caso puede caer en más de una" },
-    en: { eyebrow: "Chapter 3", h2: "Why probabilities exceed 100% (and it's not a bug)", tldr: "The eight main explanations don't compete — a single case can fall into more than one" },
+    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades suman 100%", tldr: "Las nueve explicaciones son mutuamente excluyentes por caso; la distribución es comparable y reparte el 100%" },
+    en: { eyebrow: "Chapter 3", h2: "Why probabilities sum to 100%", tldr: "The nine explanations are mutually exclusive per case; the distribution is comparable and sums to 100%" },
   },
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Hipótesis fáciles vs hipótesis en frontera", tldr: "Seis de las ocho explicaciones están razonablemente decididas — programas clasificados y tecnología adversaria arriba, subclases específicas abajo. Entidades no humanas y la afirmación de ingeniería inversa son las dos abiertas a evidencia decisiva." },
-    en: { eyebrow: "Chapter 4", h2: "Easy hypotheses vs frontier hypotheses", tldr: "Six of the eight explanations are reasonably settled — classified programs and adversary technology near the top, specific subclasses near the bottom. Non-human entities and the reverse-engineering claim are the two open to decisive evidence." },
+    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayor parte del corpus se reparte entre explicaciones mundanas e indeterminables; las clases no-humanas y la de ingeniería inversa son pequeñas y concentran el debate abierto." },
+    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most of the corpus splits between mundane and indeterminable explanations; the non-human classes and reverse-engineering are small and hold the open debate." },
   },
   {
     id: "movers",
@@ -231,15 +231,15 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="Distinción crítica del paradigma estadístico: las ocho explicaciones principales no compiten entre sí — pueden ser parcialmente verdaderas a la vez. Por eso los porcentajes pueden sumar más de 100. Esto no es un error; es la estructura real del problema. Negarlo lleva a la falacia del 'tiene que ser una sola explicación'."
-                  en="Critical distinction of the statistical paradigm: the eight main explanations don't compete with each other — they can be partially true at once. That's why percentages can sum to more than 100. This isn't a bug; it's the real structure of the problem. Denying it leads to the 'must be one single explanation' fallacy."
+                  es="Por caso, las nueve explicaciones son mutuamente excluyentes: cada caso tuvo una causa real y la incertidumbre se reparte entre los candidatos, sumando 100%. Sumadas sobre el corpus dan una partición comparable — se puede decir qué explicación da cuenta de más casos. El costo honesto es asumir que cada caso tiene una explicación verdadera; lo que no se puede asignar cae en «indeterminable». El marco anterior, donde los porcentajes no sumaban 100 ni se podían comparar, se reemplazó precisamente para corregir eso."
+                  en="Per case, the nine explanations are mutually exclusive: each case had one real cause and the uncertainty is split among the candidates, summing to 100%. Summed across the corpus they give a comparable partition — one can say which explanation accounts for more cases. The honest cost is assuming each case has one true explanation; whatever cannot be assigned falls into 'indeterminable'. The prior framework, where percentages neither summed to 100 nor were comparable, was replaced precisely to fix that."
                 />
               </Body>
               <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
                 <p className="text-sm text-text">
                   <T
-                    es={<>El detalle por hipótesis (con números, bandas ICD-203 y razonamiento expandido) vive en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}para no duplicar el contenido acá.</>}
-                    en={<>The per-hypothesis detail (with numbers, ICD-203 bands, and expanded reasoning) lives in{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}to avoid duplicating content here.</>}
+                    es={<>El detalle por explicación (con números y casos modales) vive en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}para no duplicar el contenido acá.</>}
+                    en={<>The per-explanation detail (with numbers and modal cases) lives in{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}to avoid duplicating content here.</>}
                   />
                 </p>
               </div>
@@ -262,55 +262,14 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="De las ocho explicaciones principales del corpus, seis están razonablemente decididas. Arriba, el programa clasificado (~97% efectivo) con evidencia histórica documentada (U-2, F-117) y la tecnología de vigilancia de otro Estado (~93%), con el globo de 2023 como ancla confirmada —atribuido oficialmente por el DoD; el prior absorbe el ancla para no contarla dos veces—. También el fenómeno natural raro, en ~73% sostenido por Hessdalen: los veredictos «este caso no es natural» de otros expedientes no lo penalizan, porque una afirmación «al menos un caso» es monótona. Abajo, las tres subclases específicas (interdimensional, ontológico no materialista, tratado formal), porque su evidencia es testimonial. Las dos explicaciones abiertas son entidades no humanas (categoría amplia, ~56%) e ingeniería inversa (~32%, programa estadounidense de RE de tecnología no humana): ambas se moverían con un experimento decisivo o un release ejecutivo. Por eso ahí vive el debate del corpus."
-                  en="Of the eight main corpus explanations, six are reasonably settled. Near the top sit classified programs (~97% effective), with documented historical evidence (U-2, F-117), and another state's surveillance technology (~93%), with the 2023 balloon as a confirmed anchor —officially attributed by the DoD; the prior absorbs the anchor to avoid double counting. The rare natural phenomenon sits at ~73%, sustained by Hessdalen: “this case is not natural” verdicts from other files don't penalize it, because an “at least one case” claim is monotone. Near the bottom are the three specific subclasses (interdimensional, non-materialist ontological, formal treaty), because their evidence is testimonial. The two open explanations are broad non-human entities (~56%) and reverse-engineering (~32%, a U.S. RE program of non-human tech): both would move with a decisive experiment or an executive release. That's where the corpus debate lives."
+                  es="El modelo se reformuló para dar números COMPARABLES. Antes, cada hipótesis era una afirmación existencial independiente («al menos un caso es X») y sus porcentajes no sumaban 100 ni competían entre sí — no se podía decir qué explicación era más probable que otra. Ahora cada caso reparte el 100% sobre las mismas nueve explicaciones mutuamente excluyentes, y el corpus las agrega en una partición que reparte el 100% de forma comparable. Las hipótesis del marco anterior se conservan: cinco como hojas, tres como subclases de «entidades no humanas», y «entidades no humanas» y «heterogeneidad» como vistas derivadas."
+                  en="The model was reformulated to yield COMPARABLE numbers. Before, each hypothesis was an independent existential claim (at least one case is X) and its percentages neither summed to 100 nor competed — one could not say which explanation was more probable than another. Now each case splits 100% over the same nine mutually-exclusive explanations, and the corpus aggregates them into a partition that splits 100% comparably. The prior framework hypotheses are preserved: five as leaves, three as subclasses of non-human entities, and non-human entities and heterogeneity as derived views."
                 />
               </Body>
-              <div className="grid gap-4 sm:grid-cols-3">
-                <MoveList
-                  es="Priors arriba (no se mueven)"
-                  en="Priors near ceiling (don't move)"
-                  items={[
-                    "Programa clasificado · prior 88% → 97%",
-                  ]}
-                  itemsEn={[
-                    "Classified program · prior 88% → 97%",
-                  ]}
-                />
-                <MoveList
-                  es="Prior abierto (la frontera)"
-                  en="Open prior (the frontier)"
-                  items={[
-                    "Entidades no humanas · prior 28%",
-                    "→ categoría amplia (la más debatida)",
-                    "→ donde el experimento de Lake Huron pesaría",
-                  ]}
-                  itemsEn={[
-                    "Non-human entities · prior 28%",
-                    "→ broad category (most debated)",
-                    "→ where the Lake Huron experiment would matter",
-                  ]}
-                  accent
-                />
-                <MoveList
-                  es="Priors abajo (no se mueven)"
-                  en="Priors near floor (don't move)"
-                  items={[
-                    "Interdimensional · prior 22%",
-                    "Ontológico no materialista · prior 22%",
-                    "Tratado formal · prior 6%",
-                  ]}
-                  itemsEn={[
-                    "Interdimensional · prior 22%",
-                    "Non-materialist ontological · prior 22%",
-                    "Formal treaty · prior 6%",
-                  ]}
-                />
-              </div>
               <Caption className="pt-2">
                 <T
-                  es="Las dos hipótesis adicionales — misidentificación (97%, antes del filtro institucional) y heterogeneidad (95%, consecuencia de las ocho principales) — viven en /probabilidades en su propia sección."
-                  en="The two additional hypotheses — misidentification (97%, before the institutional filter) and heterogeneity (95%, consequence of the eight main ones) — live in /probabilidades in their own section."
+                  es={<>La partición completa, las nueve explicaciones y los casos modales de cada una viven en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
+                  en={<>The full partition, the nine explanations and each one&apos;s modal cases live at{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
                 />
               </Caption>
             </div>
@@ -355,8 +314,8 @@ export default function AboutPage() {
                 </h3>
                 <Body className="text-muted">
                   <T
-                    es={<>Las probabilidades del corpus se derivan en build-time siguiendo una fórmula bayesiana pública:{" "}<strong className="text-text">probabilidad = sigmoide(logit(prior) + presión)</strong>. El <em>prior</em> es el juicio del analista antes de mirar el corpus, expresado en log-odds; la <em>presión</em> es la suma de las contribuciones de cada caso, también en log-odds (un caso «modest» ≈ multiplicar las odds por 1.02). La sigmoide satura asintóticamente, así que el efectivo nunca llega a 0 ni a 100 — la regla ICD-203 emerge naturalmente del modelo, no de un tope artificial. Cada caso nuevo recalibra todas las probabilidades del sitio sin intervención humana.</>}
-                    en={<>Corpus probabilities are derived at build-time via a public Bayesian formula:{" "}<strong className="text-text">probability = sigmoid(logit(prior) + pressure)</strong>. The <em>prior</em> is the analyst&apos;s judgment before looking at the corpus, expressed in log-odds; the <em>pressure</em> is the sum of declared contributions from each corpus case, also in log-odds (one «modest» case ≈ multiplying odds by 1.02). The sigmoid saturates asymptotically, so the effective never reaches 0 or 100 — the ICD-203 rule emerges naturally from the model, not from an artificial ceiling. Every new case re-calibrates all probabilities site-wide without human intervention.</>}
+                    es={<>Las probabilidades del corpus se derivan en build-time de forma pública y comparable. Cada caso reparte el 100% entre nueve explicaciones mutuamente excluyentes: <strong className="text-text">un posterior que suma 1</strong>. El corpus las agrega en el nº esperado de casos por explicación —Eⱼ = Σᵢ P(explicaciónⱼ | casoᵢ)—, que reparte el 100% y es comparable entre explicaciones; al ser una esperanza (lineal), es válido aunque los casos estén correlacionados. Son juicios analíticos estructurados, no frecuencias calibradas empíricamente: el modelo dice qué explicación es más coherente con cada caso, no cuál es objetivamente correcta. Cada caso nuevo recalcula la partición sin intervención humana.</>}
+                    en={<>Corpus probabilities are derived at build-time in a public, comparable way. Each case splits 100% among nine mutually-exclusive explanations: <strong className="text-text">a posterior that sums to 1</strong>. The corpus aggregates them into the expected number of cases per explanation —Eⱼ = Σᵢ P(explanationⱼ | caseᵢ)—, which splits 100% and is comparable across explanations; being an expectation (linear), it holds even if cases are correlated. These are structured analytical judgments, not empirically calibrated frequencies: the model says which explanation is most coherent with each case, not which is objectively correct. Every new case recomputes the partition without human intervention.</>}
                   />
                 </Body>
                 <Body className="text-muted">
