@@ -16,12 +16,12 @@
   "tier": "A",
   "probability": 48,
   "posterior": {
-    "mundano_natural": 0,
-    "humana_clasificada": 0,
-    "adversaria": 0,
-    "nohumano_encubierto": 0,
-    "nohumano_abierto": 0,
-    "indet": 1.0
+    "mundano_natural": 0.60,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.11,
+    "indet": 0.15
   },
   "epistemicStatus": "documented",
   "category": "document",

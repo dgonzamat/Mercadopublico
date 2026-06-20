@@ -17,12 +17,12 @@
   "epistemicStatus": "documented",
   "probability": 50,
   "posterior": {
-    "mundano_natural": 0,
-    "humana_clasificada": 0,
-    "adversaria": 0,
-    "nohumano_encubierto": 0,
-    "nohumano_abierto": 0,
-    "indet": 1
+    "mundano_natural": 0.58,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.13,
+    "indet": 0.15
   },
   "summary": "MUFON (Mutual UFO Network) es la mayor y más longeva red civil de reporte e investigación UAP. Fundada el 31 de mayo de 1969 como Midwest UFO Network en Quincy, Illinois —en respuesta directa al cierre del Project Blue Book ese mismo año—, opera con unos 4.000 miembros, más de 700 investigadores de campo entrenados con un manual propio, y mantiene desde 2006 el Case Management System (CMS), un repositorio público que superaba los 100.000 reportes en 2024. Es la infraestructura civil que llenó el vacío institucional dejado por el Estado. Pero su rigor es objeto de crítica documentada: financiamiento y enredo con Bigelow Aerospace, y un foco que científicos califican de pseudocientífico (abducción, hipnosis regresiva, híbridos). Entra al corpus como institución de reporte de gran escala pero credibilidad metodológica contestada.",
   "summary_en": "MUFON (Mutual UFO Network) is the largest and longest-running civilian UAP reporting and investigation network. Founded on May 31, 1969 as the Midwest UFO Network in Quincy, Illinois —a direct response to the closure of Project Blue Book that same year— it operates with some 4,000 members, more than 700 trained field investigators with their own manual, and since 2006 maintains the Case Management System (CMS), a public repository that surpassed 100,000 reports by 2024. It is the civilian infrastructure that filled the institutional vacuum left by the state. But its rigor is the subject of documented criticism: funding and entanglement with Bigelow Aerospace, and a focus scientists deem pseudoscientific (abduction, hypnotic regression, hybrids). It enters the corpus as a large-scale reporting institution with contested methodological credibility.",

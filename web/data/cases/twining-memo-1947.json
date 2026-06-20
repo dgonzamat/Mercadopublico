@@ -14,7 +14,7 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 95,
-  "posterior": { "mundano_natural": 0, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 1.0 },
+  "posterior": { "mundano_natural": 0.20, "humana_clasificada": 0.22, "adversaria": 0.18, "nohumano_encubierto": 0.17, "nohumano_abierto": 0.08, "indet": 0.15 },
   "summary": "El 23 de septiembre de 1947, el teniente general Nathan Twining envió al general Schulgen un memorándum clasificado afirmando que «el fenómeno reportado es algo real y no imaginario o ficticio». Es la primera afirmación institucional documentada por un comandante de la USAF de que el fenómeno era real — el piso histórico de todo el debate posterior.",
   "summary_en": "On 23 September 1947, Lieutenant General Nathan Twining sent General Schulgen a classified memorandum stating that \"the phenomenon reported is something real and not visionary or fictitious\". It is the first documented institutional assertion by a USAF commander that the phenomenon was real — the historical floor of the entire later debate.",
   "patterns": [

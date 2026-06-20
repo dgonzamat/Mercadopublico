@@ -112,6 +112,21 @@ export function posteriorFor(c: UAPCase): Posterior {
   return c.posterior ? normalize(c.posterior) : seedPosterior(c);
 }
 
+/**
+ * Clasificación forzada: redistribuye la masa `indet` proporcionalmente sobre
+ * las 5 narrativas sustantivas, de modo que ningún caso quede en
+ * indeterminable. Si un caso no tiene soporte sustantivo, cae en mundano/natural
+ * (default prosaico). Idempotente: aplicarla dos veces da el mismo resultado.
+ */
+export function classifiedPosterior(p: Posterior): Posterior {
+  const out = emptyPosterior();
+  const subst = CLASS_IDS.filter((k) => k !== "indet");
+  const total = subst.reduce((s, k) => s + (p[k] || 0), 0);
+  if (total <= 0) { out.mundano_natural = 1; return out; }
+  for (const k of subst) out[k] = (p[k] || 0) / total;
+  return out;
+}
+
 // ─── Agregación comparable ───────────────────────────────────────────────
 
 export function modal(p: Posterior): { id: MeceClassId; prob: number } {
