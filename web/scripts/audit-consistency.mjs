@@ -710,6 +710,46 @@ if (shortBodies.length > 0) {
   );
 }
 
+// ─── 9g. RULE M1: invariante del modelo MECE (posterior) ─────────────────
+//
+// Modelo en migración (lib/meceModel.ts): cada caso de incidente reparte el
+// 100% sobre 9 explicaciones mutuamente excluyentes. Invariante duro:
+//   - todo caso category!=="document" DEBE tener `posterior` con las 9 claves
+//     exactas, sumando 1 (±0.005). ERROR si no.
+//   - los casos-documento NO deben tener posterior (la partición no aplica). WARN.
+const MECE_CLASSES_AUDIT = [
+  "mundano", "natural_desc", "clasificada", "adversaria", "ing_inversa",
+  "interdimensional", "ontologico", "tratado", "indet",
+];
+let mecePosteriorCount = 0;
+const meceAgg = Object.fromEntries(MECE_CLASSES_AUDIT.map((k) => [k, 0]));
+for (const c of cases) {
+  const file = path.join(casesDir, c.id + ".json");
+  const isDoc = c.category === "document";
+  const p = c.posterior;
+  if (isDoc) {
+    if (p) record("WARN", file, 0, `M1: caso-documento "${c.id}" tiene posterior — el modelo MECE no aplica a documentos`);
+    continue;
+  }
+  if (!p) {
+    record("ERROR", file, 0, `M1: caso no-documento "${c.id}" sin posterior (modelo MECE)`);
+    continue;
+  }
+  const missing = MECE_CLASSES_AUDIT.filter((k) => !(k in p));
+  const extra = Object.keys(p).filter((k) => !MECE_CLASSES_AUDIT.includes(k));
+  if (missing.length || extra.length) {
+    record("ERROR", file, 0, `M1: posterior de "${c.id}" con claves mal (faltan [${missing}], sobran [${extra}])`);
+    continue;
+  }
+  const total = MECE_CLASSES_AUDIT.reduce((acc, k) => acc + (p[k] || 0), 0);
+  if (Math.abs(total - 1) > 0.005) {
+    record("ERROR", file, 0, `M1: posterior de "${c.id}" suma ${total.toFixed(4)} (debe ser 1)`);
+    continue;
+  }
+  mecePosteriorCount++;
+  for (const k of MECE_CLASSES_AUDIT) meceAgg[k] += p[k];
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
@@ -729,6 +769,14 @@ out.push(` Tier S/A/B:   ${STATS.tierS} / ${STATS.tierA} / ${STATS.tierB}`);
 out.push(` Tier S w/o evidenceContribution: ${tierSWithoutContrib}`);
 out.push(` Researchers linked to ≥1 case: ${linkedCount} / ${STATS.researchers}`);
 out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${STATS.cases - shortBodies.length} / ${STATS.cases}`);
+out.push(` Casos con posterior MECE (no-documento): ${mecePosteriorCount}`);
+{
+  const meceTotal = Object.values(meceAgg).reduce((a, b) => a + b, 0) || 1;
+  out.push(" MECE · partición del corpus (Σ esperado · %):");
+  for (const k of [...MECE_CLASSES_AUDIT].sort((a, b) => meceAgg[b] - meceAgg[a])) {
+    out.push(`   ${k.padEnd(16)} ${meceAgg[k].toFixed(1).padStart(6)}  (${(meceAgg[k] / meceTotal * 100).toFixed(1)}%)`);
+  }
+}
 out.push("");
 out.push(" Hypothesis priors → effective:");
 for (const h of HYPOTHESES) {
