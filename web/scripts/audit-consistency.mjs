@@ -3,7 +3,7 @@
  * Auditor permanente — corre antes de cada build (prebuild hook).
  *
  * Verifica que la copy editorial y los datos del corpus sigan consistentes
- * con la source-of-truth (lib/hypotheses.ts + STATS derivado del corpus).
+ * con la source-of-truth (data/cases/*.json + STATS derivado del corpus).
  *
  * SALIDA:
  *   - exit 0  → todo OK o solo WARNINGs
@@ -14,35 +14,23 @@
  *   node scripts/audit-consistency.mjs --warn    # nunca exit ≠ 0
  *
  * REGLAS:
- *   E1  Cada % editorial en /app debe coincidir con el prior canónico de
- *       la hipótesis o estar listado en STALE_OK / EDITORIAL_RANGES_OK.
- *   E2  Cada uso del prior debe estar tageado con la palabra "prior" en
- *       la misma línea, salvo overrides documentados.
  *   E3  Conteos hardcoded (78/77/79 etc.) en /app y /components deben
  *       coincidir con STATS calculado del corpus.
  *   E4  Términos prohibidos (drift de renames) no deben aparecer en /app
  *       ni en case rationales rendered to user.
- *   E5  evidenceContribution.hypothesisId debe existir en HYPOTHESES.
- *   E6  Cada caso Tier S debería declarar al menos un evidenceContribution
- *       (calibración manual; los demás auto-seedean de patterns).
  *   E7  Spanglish: los campos ES-first de casos (name, summary) no deben
  *       contener inglés descriptivo — el inglés vive en *_en. Heurística
  *       curada con exenciones para nombres propios y texto entre comillas.
- *   E8  Calibración existencial (post-#244):
- *       E8a (WARN) Una contribución `weakens` hacia una hipótesis
- *           corpus-existential es inerte — se calcula pero se descarta
- *           (la claim «≥1 caso» es monótona). Se avisa para que no se
- *           confunda con evidencia efectiva.
- *       E8b (ERROR) Invariante de monotonicidad: el `effective` de toda
- *           hipótesis corpus-existential debe ser ≥ su prior. Si se rompe,
- *           el motor o este mirror dejaron de excluir `weakens`.
  *   E9  (WARN) Cobertura investigador↔caso: marca los investigadores de
  *       researchers.json sin mención (por nombre/apellido) en ningún caso.
  *       Heurística por substring, conservadora (ver nota en la regla).
- *
- * NOTA · este script DUPLICA la calibración de lib/hypothesisMapping.ts
- * (no puede importar TS sin build). La sección 3 debe mantenerse espejada;
- * E8b es el guard que detecta cuando la copia se desincroniza.
+ *   E10 (ERROR) Completitud bilingüe de prosa: campos ES con su par *_en.
+ *   E11 (WARN) Campos de nombre propio con español pero sin *_en.
+ *   E12 (WARN) Robustez del lede: summary demasiado corto.
+ *   E13 (WARN) Estándar editorial: descripción narrativa ≥ ~1 página A4.
+ *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
+ *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
+ *       los casos-documento no llevan posterior.
  */
 
 import fs from "node:fs";
@@ -85,34 +73,6 @@ const STATS = {
 // ─── 4. REGLAS DE DRIFT ──────────────────────────────────────────────────
 
 /**
- * Percentages allowed to appear without matching a hypothesis prior.
- * Each entry is a documented editorial exception with a reason.
- */
-const EDITORIAL_RANGES_OK = new Set([
-  // Tier reliability bands in about/page.tsx (Hynek-derived, not hypothesis priors)
-  "75", "85", "65", "50", "40",
-  // Movement deltas in about/page.tsx (illustrative case-level shifts, not priors)
-  "5", "2", "1", "0",
-  // Pedagogical anti-pattern example in about/page.tsx (illustrative only)
-  "48",
-  // Paradigm note: "probabilidades pueden superar 100%"
-  "100",
-  // Vallée 1975 prediction year count (51 = 2026 - 1975, not a corpus stat)
-  "51",
-  // Universe pre-filter cite that doubles as Project Blue Book stat (= override 97)
-  "97",
-  // Heterogeneity override
-  "95",
-  // Whole-number priors (must equal a hypothesis prior to pass)
-  "88", "70", "28", "30", "22", "6",
-  // Effective-value cites in about/page.tsx Ch.4 under the log-odds model:
-  // Valores EFECTIVOS citados en /about (post-calibración estadística jun 2026:
-  // monotonicidad existencial + anti doble conteo de anclas):
-  // programas-clasificados ≈ 97, tecnologia-adversaria ≈ 93, fenómeno
-  // natural ≈ 73, entidades-no-humanas ≈ 56, ingenieria-inversa ≈ 32.
-  "93", "73", "56", "32",
-]);
-
 /**
  * Phrases that drifted out of the rename history. Forbidden anywhere
  * user-facing (app/ pages + case rationales rendered by the slug page).
@@ -188,7 +148,6 @@ const sourceFiles = [
   ...walk(path.join(root, "components"), [".tsx"]),
 ];
 for (const file of sourceFiles) {
-  if (file.includes("probabilidades-proto")) continue; // prototipo: números ilustrativos
   const lines = fs.readFileSync(file, "utf-8").split("\n");
   lines.forEach((line, i) => {
     const lineNo = i + 1;
