@@ -1,5 +1,12 @@
 # AutoResearch · UAP Codex calibration
 
+> ⚠️ **ARCHIVADO / OBSOLETO (jun 2026).** Este experimento operaba sobre el
+> modelo de calibración **log-odds** (`lib/hypothesisMapping.ts`, campo
+> `evidenceContribution`), reemplazado por el modelo **MECE** (`lib/meceModel.ts`,
+> posterior por caso). Su sandbox (`lib/hypothesisMapping.ts`) ya no existe, así
+> que `eval.mjs` **no corre**. Se conserva solo como registro histórico del
+> enfoque anterior; no refleja el modelo vigente.
+
 Mini-laboratorio AutoResearch sobre el modelo de calibración log-odds que
 calcula los % efectivos de cada hipótesis en `/probabilidades`.
 
