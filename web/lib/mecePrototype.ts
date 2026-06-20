@@ -142,3 +142,28 @@ export function expectedCounts(cases: ProtoCase[] = PROTO_CASES): Posterior {
 export function noisyOrAtLeastOne(cls: MeceClassId, cases: ProtoCase[] = PROTO_CASES): number {
   return 1 - cases.reduce((prod, c) => prod * (1 - c.posterior[cls]), 1);
 }
+
+/**
+ * Porcentajes del agregado redondeados a entero por el método del mayor resto
+ * (Hamilton), de modo que SIEMPRE sumen exactamente 100 — sin el artefacto de
+ * que el redondeo por valor dé 99 o 101.
+ */
+export function roundedShares(cases: ProtoCase[] = PROTO_CASES): Posterior {
+  const counts = expectedCounts(cases);
+  const n = cases.length;
+  const rows = MECE_CLASSES.map((c) => {
+    const v = (counts[c.id] / n) * 100;
+    return { id: c.id, floor: Math.floor(v), rem: v - Math.floor(v) };
+  });
+  let left = 100 - rows.reduce((s, r) => s + r.floor, 0);
+  const order = [...rows].sort((a, b) => b.rem - a.rem);
+  const bump = new Set<MeceClassId>();
+  for (const r of order) {
+    if (left <= 0) break;
+    bump.add(r.id);
+    left--;
+  }
+  const out = ZERO();
+  for (const r of rows) out[r.id] = r.floor + (bump.has(r.id) ? 1 : 0);
+  return out;
+}

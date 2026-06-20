@@ -5,6 +5,7 @@ import {
   MECE_CLASSES,
   PROTO_CASES,
   expectedCounts,
+  roundedShares,
   noisyOrAtLeastOne,
   modal,
   validatePosteriors,
@@ -30,6 +31,7 @@ export default function ProbabilidadesProtoPage() {
   const N = PROTO_CASES.length;
   const broken = validatePosteriors();
   const counts = expectedCounts();
+  const shares = roundedShares();
   const rankedClasses = [...MECE_CLASSES].sort(
     (a, b) => counts[b.id] - counts[a.id],
   );
@@ -91,7 +93,7 @@ export default function ProbabilidadesProtoPage() {
                 </span>
                 <span className="text-muted">
                   {counts[c.id].toFixed(2)}{" "}
-                  <T es="casos" en="cases" /> · {pct(counts[c.id] / N)}%
+                  <T es="casos" en="cases" /> · {shares[c.id]}%
                 </span>
               </div>
               <div className="mt-1 h-2 w-full bg-border/40">
@@ -106,6 +108,12 @@ export default function ProbabilidadesProtoPage() {
             </div>
           ))}
         </div>
+        <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
+          <T
+            es="Suman 100% · partición exhaustiva del corpus"
+            en="Sum to 100% · exhaustive partition of the corpus"
+          />
+        </p>
       </section>
 
       {/* === Posterior por caso === */}
@@ -176,6 +184,12 @@ export default function ProbabilidadesProtoPage() {
             en="P(≥1 case is X) = 1 − Πᵢ(1 − P(X|caseᵢ)), noisy-OR over the same posteriors. This DOES assume independence between cases (unlike the aggregate above)."
           />
         </Caption>
+        <p className="mt-2 inline-block border border-accent/50 px-2 py-1 font-mono text-[11px] uppercase tracking-widest text-accent">
+          <T
+            es="⚠ No es una partición — NO suman 100% (son preguntas sí/no independientes)"
+            en="⚠ Not a partition — they do NOT sum to 100% (independent yes/no questions)"
+          />
+        </p>
         <div className="mt-6 space-y-2">
           {(["no_humano", "clasificada", "adversaria"] as MeceClassId[]).map(
             (id) => (
