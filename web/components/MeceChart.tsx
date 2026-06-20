@@ -14,6 +14,79 @@ const pct = (x: number) => (x * 100).toFixed(0);
  *  7.8) muestran el mismo % (5.5%), y los seis siguen sumando 100.0. */
 const share = (x: number) => (x * 100).toFixed(1);
 
+type DonutRow = { key: string; color: string; count: number; label: string };
+
+/** Donut SVG puro (sin JS): las narrativas reparten el anillo. El centro lleva
+ *  el total. Cada segmento es opcionalmente un enlace (hrefFor). */
+function Donut({
+  rows,
+  N,
+  hrefFor,
+}: {
+  rows: DonutRow[];
+  N: number;
+  hrefFor?: (key: string) => string | undefined;
+}) {
+  const size = 240;
+  const stroke = 38;
+  const r = (size - stroke) / 2;
+  const C = 2 * Math.PI * r;
+  const gap = 1.5; // separación visual entre segmentos, en unidades de arco
+  const c = size / 2;
+  // Offset acumulado por segmento, precomputado (sin mutar en el render).
+  const offsets = rows.reduce<number[]>((acc, row, i) => {
+    acc.push(i === 0 ? 0 : acc[i - 1] + (rows[i - 1].count / N) * C);
+    return acc;
+  }, []);
+  const segments = rows.map((row, i) => {
+    const frac = row.count / N;
+    const len = Math.max(frac * C - gap, 0.5);
+    const dashoffset = -offsets[i];
+    const title = `${row.label}: ${share(frac)}%`;
+    const href = hrefFor?.(row.key);
+    const circle = (
+      <circle
+        cx={c}
+        cy={c}
+        r={r}
+        fill="none"
+        stroke={row.color}
+        strokeWidth={stroke}
+        strokeDasharray={`${len} ${C - len}`}
+        strokeDashoffset={dashoffset}
+        className={href ? "transition-opacity hover:opacity-80" : undefined}
+      >
+        <title>{title}</title>
+      </circle>
+    );
+    return href ? (
+      <a key={row.key} href={href} aria-label={title}>
+        {circle}
+      </a>
+    ) : (
+      <g key={row.key}>{circle}</g>
+    );
+  });
+  return (
+    <div className="relative h-60 w-60 shrink-0">
+      <svg
+        viewBox={`0 0 ${size} ${size}`}
+        className="h-60 w-60 -rotate-90"
+        role="img"
+        aria-label={rows.map((row) => `${row.label} ${share(row.count / N)}%`).join(", ")}
+      >
+        {segments}
+      </svg>
+      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center">
+        <span className="font-mono text-4xl font-semibold tabular-nums text-text">{N}</span>
+        <span className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted">
+          <T es="casos" en="cases" />
+        </span>
+      </div>
+    </div>
+  );
+}
+
 /**
  * Partición comparable del corpus: las 6 narrativas reparten el 100%.
  * + vistas derivadas (entidades-no-humanas, heterogeneidad).
@@ -58,26 +131,12 @@ export function MecePartition({
 
   return (
     <div>
-      {/* Cinta apilada 100% — la partición como un entero */}
-      <div
-        className="flex h-9 w-full gap-px overflow-hidden rounded-md bg-panel"
-        role="img"
-        aria-label={`${rows.map((r) => `${r.label} ${share(r.count / N)}%`).join(", ")}`}
-      >
-        {rows.map((c) => {
-          const href = hrefFor?.(c.key);
-          const style = { width: `${(c.count / N) * 100}%`, backgroundColor: c.color };
-          const title = `${c.label}: ${share(c.count / N)}%`;
-          return href ? (
-            <a key={c.key} href={href} title={title} aria-label={title} className="transition-opacity hover:opacity-80" style={style} />
-          ) : (
-            <div key={c.key} title={title} style={style} />
-          );
-        })}
-      </div>
+      <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-10">
+        {/* Donut grande — la partición como un entero */}
+        <Donut rows={rows} N={N} hrefFor={hrefFor} />
 
-      {/* Leyenda jerárquica */}
-      <ol className="mt-5 space-y-1">
+        {/* Leyenda jerárquica */}
+        <ol className="w-full flex-1 space-y-1">
         {rows.map((c, i) => {
           const href = hrefFor?.(c.key);
           const inner = (
@@ -111,9 +170,10 @@ export function MecePartition({
             </li>
           );
         })}
-      </ol>
+        </ol>
+      </div>
 
-      <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
+      <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-muted">
         <T
           es={totalLabelEs ?? `Suman 100% · ${N} casos de incidente · partición exhaustiva`}
           en={totalLabelEn ?? `Sum to 100% · ${N} incident cases · exhaustive partition`}
