@@ -127,11 +127,30 @@ export function CasePosterior({ posterior }: { posterior: Posterior }) {
         ))}
       </div>
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T es="Explicación modal" en="Modal explanation" />:{" "}
-        <span style={{ color: m.c.color }} className="font-semibold">
-          <T es={m.c.label} en={m.c.labelEn} />
-        </span>{" "}
-        {pct(m.v)}% · <T es="suma 100%" en="sums to 100%" />
+        {m.c.id === "indet" ? (
+          <>
+            <span style={{ color: m.c.color }} className="font-semibold">
+              <T es="Indeterminable" en="Indeterminable" />
+            </span>{" "}
+            {pct(m.v)}% ·{" "}
+            {top[1] ? (
+              <T
+                es={`ninguna narrativa domina (2ª: ${top[1].c.label}, ${pct(top[1].v)}%)`}
+                en={`no dominant narrative (2nd: ${top[1].c.labelEn}, ${pct(top[1].v)}%)`}
+              />
+            ) : (
+              <T es="sin señal hacia ninguna narrativa" en="no signal toward any narrative" />
+            )}
+          </>
+        ) : (
+          <>
+            <T es="Explicación modal" en="Modal explanation" />:{" "}
+            <span style={{ color: m.c.color }} className="font-semibold">
+              <T es={m.c.label} en={m.c.labelEn} />
+            </span>{" "}
+            {pct(m.v)}% · <T es="suma 100%" en="sums to 100%" />
+          </>
+        )}
       </p>
     </div>
   );
