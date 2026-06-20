@@ -58,6 +58,36 @@ export default function ProbabilidadesPage() {
     casesByModal[id].sort((a, b) => b.p - a.p);
   }
 
+  // Descomposición de la masa indeterminable por su 2ª narrativa más probable
+  // (las dos no-humanas se agrupan, igual que en la partición consolidada).
+  const NONHUMAN = new Set<MeceClassId>(["nohumano_encubierto", "nohumano_abierto"]);
+  const CLASS_COLOR = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c.color])) as Record<MeceClassId, string>;
+  const indetParts: Record<string, { label: string; labelEn: string; color: string; mass: number }> = {};
+  let indetTotal = 0;
+  for (const s of allScored) {
+    const im = s.posterior.indet || 0;
+    if (im <= 0) continue;
+    indetTotal += im;
+    let best: (typeof MECE_CLASSES)[number] | null = null;
+    let bestV = 0;
+    for (const c of MECE_CLASSES) {
+      if (c.id === "indet") continue;
+      const v = s.posterior[c.id] || 0;
+      if (v > bestV) { bestV = v; best = c; }
+    }
+    let key: string, label: string, labelEn: string, color: string;
+    if (!best || bestV <= 0) {
+      key = "none"; label = "Sin 2ª — puro proceso/canal"; labelEn = "No 2nd — pure process/channel"; color = CLASS_COLOR.indet;
+    } else if (NONHUMAN.has(best.id)) {
+      key = "nohumano"; label = "Inclina a No-humano"; labelEn = "Leans non-human"; color = CLASS_COLOR.nohumano_abierto;
+    } else {
+      key = best.id; label = `Inclina a ${best.label}`; labelEn = `Leans ${best.labelEn}`; color = best.color;
+    }
+    (indetParts[key] ??= { label, labelEn, color, mass: 0 }).mass += im;
+  }
+  const indetRows = Object.values(indetParts).sort((a, b) => b.mass - a.mass);
+  const indetIncident = allScored.filter((s) => s.category !== "document").reduce((t, s) => t + (s.posterior.indet || 0), 0);
+
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
       <Eyebrow>
@@ -90,6 +120,43 @@ export default function ProbabilidadesPage() {
             totalLabelEs={`Suman 100% · ${allScored.length} casos · «No-humano» agrupa encubierto + abierto`}
             totalLabelEn={`Sum to 100% · ${allScored.length} cases · 'Non-human' groups covert + open`}
           />
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <H2>
+          <T es="Dentro de lo indeterminable" en="Inside the indeterminable" />
+        </H2>
+        <Caption>
+          <T
+            es={`«Indeterminable» (${(indetTotal / allScored.length * 100).toFixed(0)}% del corpus) no es «podría ser cualquier cosa». Descompuesta por la 2ª narrativa más probable de cada caso, la masa inclina así — y mayoritariamente hacia lo prosaico, no lo exótico.`}
+            en={`'Indeterminable' (${(indetTotal / allScored.length * 100).toFixed(0)}% of the corpus) is not 'could be anything'. Broken down by each case's second-most-probable narrative, the mass leans like this — and mostly toward the prosaic, not the exotic.`}
+          />
+        </Caption>
+        <div className="mt-6 rounded-sm border border-border bg-panel p-5">
+          <div className="space-y-2.5">
+            {indetRows.map((r) => (
+              <div key={r.label}>
+                <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
+                  <span className="min-w-0 uppercase tracking-wider text-text">
+                    <T es={r.label} en={r.labelEn} />
+                  </span>
+                  <span className="shrink-0 whitespace-nowrap text-right text-muted">
+                    {(r.mass / indetTotal * 100).toFixed(0)}% · {r.mass.toFixed(1)} <T es="casos" en="cases" />
+                  </span>
+                </div>
+                <div className="mt-1 h-2 w-full bg-border/40">
+                  <div className="h-2" style={{ width: `${(r.mass / indetTotal) * 100}%`, backgroundColor: r.color }} />
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
+            <T
+              es={`Fuente: ${(indetIncident / indetTotal * 100).toFixed(0)}% ambigüedad evidencial (incidentes) · ${(100 - indetIncident / indetTotal * 100).toFixed(0)}% proceso/canal (documentos)`}
+              en={`Source: ${(indetIncident / indetTotal * 100).toFixed(0)}% evidential ambiguity (incidents) · ${(100 - indetIncident / indetTotal * 100).toFixed(0)}% process/channel (documents)`}
+            />
+          </p>
         </div>
       </section>
 
