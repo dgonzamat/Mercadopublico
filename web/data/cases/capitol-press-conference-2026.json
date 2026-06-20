@@ -17,12 +17,12 @@
   "epistemicStatus": "developing",
   "probability": 80,
   "posterior": {
-    "mundano_natural": 0,
-    "humana_clasificada": 0,
+    "mundano_natural": 0.22,
+    "humana_clasificada": 0.13,
     "adversaria": 0,
-    "nohumano_encubierto": 0.25,
-    "nohumano_abierto": 0,
-    "indet": 0.75
+    "nohumano_encubierto": 0.35,
+    "nohumano_abierto": 0.05,
+    "indet": 0.25
   },
   "summary": "Conferencia de prensa bipartidista del 9 jun 2026 en la escalinata del Capitolio. El denunciante David Grusch (ex Air Force intelligence officer, ex UAP Task Force) junto a los representantes Eric Burlison (R-MO), Jared Moskowitz (D-FL), Anna Paulina Luna (R-FL) y Tim Burchett (R-TN), con los anfitriones Leslie Kean y James Fox, formaliza tres demandas concretas al Ejecutivo y al Congreso: desclasificación presidencial de archivos UAP nombrados por Grusch, aprobación del UAP Disclosure Act y refuerzo de protecciones a denunciantes con coordinación internacional. Es la jugada de presión institucional más estructurada desde el testimonio bajo juramento de Grusch en julio 2023.",
   "summary_en": "Bipartisan press conference held on June 9, 2026 on the U.S. Capitol steps. Whistleblower David Grusch (former Air Force intelligence officer, former UAP Task Force) joined by Representatives Eric Burlison (R-MO), Jared Moskowitz (D-FL), Anna Paulina Luna (R-FL) and Tim Burchett (R-TN), with hosts Leslie Kean and James Fox, formalizes three concrete demands to the Executive and to Congress: presidential declassification of UAP files named by Grusch, passage of the UAP Disclosure Act, and strengthened whistleblower protections with international coordination. It is the most structured institutional-pressure move since Grusch's sworn testimony in July 2023.",

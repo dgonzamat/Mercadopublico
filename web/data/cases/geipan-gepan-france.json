@@ -17,12 +17,12 @@
   "mundanoType": "misid",
   "probability": 45,
   "posterior": {
-    "mundano_natural": 0.15,
-    "humana_clasificada": 0,
-    "adversaria": 0,
+    "mundano_natural": 0.50,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.05,
     "nohumano_encubierto": 0,
-    "nohumano_abierto": 0,
-    "indet": 0.85
+    "nohumano_abierto": 0.05,
+    "indet": 0.35
   },
   "epistemicStatus": "documented",
   "category": "document",

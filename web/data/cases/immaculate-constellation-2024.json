@@ -17,12 +17,12 @@
   "epistemicStatus": "documented",
   "probability": 55,
   "posterior": {
-    "mundano_natural": 0.05,
-    "humana_clasificada": 0.10,
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0.25,
     "adversaria": 0,
-    "nohumano_encubierto": 0.20,
+    "nohumano_encubierto": 0.35,
     "nohumano_abierto": 0,
-    "indet": 0.65
+    "indet": 0.25
   },
   "summary": "En octubre-noviembre de 2024, el periodista Michael Shellenberger reveló ante el Congreso un documento de 12 páginas que describe 'Immaculate Constellation', un presunto Programa de Acceso Especial no reconocido (uSAP) creado hacia 2017 para recolectar y custodiar imágenes de alta resolución y datos de sensores de UAP captados por activos militares de EE.UU. El DoD respondió con una no-negación: dijo que el programa no existe sin explicar el origen de los documentos.",
   "summary_en": "In October-November 2024, journalist Michael Shellenberger presented to Congress a 12-page document describing 'Immaculate Constellation', an alleged unacknowledged Special Access Program (uSAP) created around 2017 to collect and hold high-resolution imagery and sensor data of UAP captured by U.S. military assets. The DoD responded with a non-denial: it said the program does not exist without explaining the origin of the documents.",

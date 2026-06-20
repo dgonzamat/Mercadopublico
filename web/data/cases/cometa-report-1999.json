@@ -17,12 +17,12 @@
   "epistemicStatus": "documented",
   "probability": 55,
   "posterior": {
-    "mundano_natural": 0,
+    "mundano_natural": 0.15,
     "humana_clasificada": 0,
     "adversaria": 0,
     "nohumano_encubierto": 0,
     "nohumano_abierto": 0.55,
-    "indet": 0.45
+    "indet": 0.3
   },
   "summary": "'Les OVNI et la Défense' (1999): informe de COMETA, un comité de generales y oficiales superiores franceses retirados y expertos aeroespaciales (varios ligados al IHEDN). Tras revisar casos con datos de radar y testigos calificados, concluyó que la hipótesis extraterrestre es la más plausible para un residuo de casos, e instó a los gobiernos a prepararse.",
   "summary_en": "'Les OVNI et la Défense' (1999): report by COMETA, a committee of retired French generals and senior officers and aerospace experts (several linked to IHEDN). After reviewing cases with radar data and qualified witnesses, it concluded the extraterrestrial hypothesis is the most plausible for a residue of cases, and urged governments to prepare.",

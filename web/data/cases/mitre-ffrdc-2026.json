@@ -16,12 +16,12 @@
   "epistemicStatus": "developing",
   "probability": 45,
   "posterior": {
-    "mundano_natural": 0,
-    "humana_clasificada": 0.05,
+    "mundano_natural": 0.27,
+    "humana_clasificada": 0.13,
     "adversaria": 0,
-    "nohumano_encubierto": 0.15,
+    "nohumano_encubierto": 0.30,
     "nohumano_abierto": 0,
-    "indet": 0.80
+    "indet": 0.30
   },
   "summary": "MITRE opera FFRDCs (centros de I+D financiados por el gobierno) para el Departamento de Defensa y la comunidad de inteligencia, y —según prensa de defensa— examinó especímenes de material asociado a UAP. En mayo de 2026 el Rep. Eric Burlison exigió formalmente a MITRE entregar registros y assets UAP que databan de 1930. Primer requerimiento congresional explícito a un contratista FFRDC privado sobre material del fenómeno.",
   "summary_en": "MITRE operates FFRDCs (government-funded R&D centers) for the Department of Defense and the intelligence community, and —per defense press— examined specimens of UAP-associated material. In May 2026, Rep. Eric Burlison formally demanded that MITRE hand over UAP records and assets dating back to 1930. The first explicit congressional records demand on a private FFRDC contractor regarding phenomenon material.",

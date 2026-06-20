@@ -16,12 +16,12 @@
   "epistemicStatus": "projected",
   "probability": 88,
   "posterior": {
-    "mundano_natural": 0,
-    "humana_clasificada": 0.25,
-    "adversaria": 0.1,
-    "nohumano_encubierto": 0,
+    "mundano_natural": 0.1,
+    "humana_clasificada": 0.4,
+    "adversaria": 0.2,
+    "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0,
-    "indet": 0.65
+    "indet": 0.25
   },
   "summary": "La NSA produce más de 300 páginas de registros UAP clasificados TOP SECRET UMBRA tras una apelación FOIA exitosa de la Disclosure Foundation. Primera vez que material al nivel de compartimentación UMBRA se libera públicamente en relación a UAP. Los documentos muestran que la NSA trató el fenómeno como asunto serio de inteligencia de señales durante décadas, incluyendo rastreos por radar y respuestas de interceptación militar.",
   "summary_en": "The NSA produces over 300 pages of TOP SECRET UMBRA-classified UAP records following a successful Disclosure Foundation FOIA appeal. The first time material at the UMBRA compartmentation level has been publicly released in connection with UAP. The documents show the NSA treated the phenomenon as a serious signals intelligence matter for decades, including radar tracking and military intercept responses.",

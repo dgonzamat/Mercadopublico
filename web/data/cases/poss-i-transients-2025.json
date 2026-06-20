@@ -18,12 +18,12 @@
   "epistemicStatus": "documented",
   "probability": 60,
   "posterior": {
-    "mundano_natural": 0.25,
-    "humana_clasificada": 0,
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.1,
     "adversaria": 0,
-    "nohumano_encubierto": 0,
-    "nohumano_abierto": 0,
-    "indet": 0.75
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.1,
+    "indet": 0.25
   },
   "summary": "Paper revisado por pares en Nature Scientific Reports (oct 2025) por Bruehl y Villarroel. Dataset de 2,718 días (19 nov 1949 a 28 abr 1957, completamente pre-Sputnik) con transitorios identificados en placas del Palomar Observatory Sky Survey. Dos asociaciones estadísticamente significativas: los transitorios son 45% más probables ±1 día de un test nuclear (p=0.008) y por cada UAP report adicional el mismo día hay 8.5% más transitorios identificados (p=0.015). Es la correlación peer-reviewed más fuerte del corpus entre actividad nuclear, registros UAP de la época y observaciones astronómicas independientes.",
   "summary_en": "Peer-reviewed paper in Nature Scientific Reports (Oct 2025) by Bruehl and Villarroel. Dataset of 2,718 days (Nov 19, 1949 to Apr 28, 1957, fully pre-Sputnik) with transients identified on Palomar Observatory Sky Survey plates. Two statistically significant associations: transients are 45% more likely within ±1 day of a nuclear test (p=0.008) and for each additional same-day UAP report there are 8.5% more transients identified (p=0.015). It is the strongest peer-reviewed correlation in the corpus between nuclear activity, UAP records of the era and independent astronomical observations.",

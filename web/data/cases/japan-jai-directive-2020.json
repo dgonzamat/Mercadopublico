@@ -17,12 +17,12 @@
   "epistemicStatus": "documented",
   "probability": 80,
   "posterior": {
-    "mundano_natural": 0,
-    "humana_clasificada": 0.10,
-    "adversaria": 0,
+    "mundano_natural": 0.38,
+    "humana_clasificada": 0.27,
+    "adversaria": 0.05,
     "nohumano_encubierto": 0,
     "nohumano_abierto": 0,
-    "indet": 0.90
+    "indet": 0.30
   },
   "summary": "El 14 de septiembre de 2020, el Ministerio de Defensa de Japón, bajo el ministro Taro Kono, emitió un protocolo formal que obliga a los pilotos de la Fuerza Aérea de Autodefensa (JASDF) a filmar, documentar y reportar por cadena de mando todo encuentro con fenómenos aéreos no identificados.",
   "summary_en": "On 14 September 2020, Japan's Ministry of Defense, under Minister Taro Kono, issued a formal protocol requiring Air Self-Defense Force (JASDF) pilots to film, document and report up the chain of command any encounter with unidentified aerial phenomena.",
