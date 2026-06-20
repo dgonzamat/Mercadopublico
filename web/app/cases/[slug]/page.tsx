@@ -2,8 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
-import { getHypothesis } from "@/lib/hypotheses";
-import { STRENGTH_WEIGHT } from "@/lib/hypothesisMapping";
+import { posteriorFor } from "@/lib/meceModel";
+import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -501,101 +501,43 @@ export default async function CaseDetailPage(
         )}
       </section>
 
-      {/* ────────── LO QUE ESTE CASO MOVIÓ ────────── */}
-      {c.evidenceContribution && c.evidenceContribution.length > 0 && (
+      {/* ────────── DISTRIBUCIÓN DE EXPLICACIONES (MECE) ────────── */}
+      {c.category !== "document" && (
         <section className="space-y-6 border-t-2 border-text pt-12">
           <Eyebrow>
-            <T es="Lo que este caso movió" en="What this case moved" />
+            <T es="Distribución de explicaciones" en="Distribution of explanations" />
           </Eyebrow>
           <Body className="text-muted">
             <T
               es={
                 <>
-                  Cada caso del corpus declara explícitamente a qué hipótesis
-                  aporta evidencia y con qué fuerza. Estos números alimentan el
-                  índice de presión que aparece junto a cada hipótesis en{" "}
-                  <Link
-                    href="/probabilidades"
-                    className="text-accent underline-offset-4 hover:underline"
-                  >
-                    probabilidades
+                  Este caso reparte el 100% entre las nueve explicaciones
+                  mutuamente excluyentes del modelo. La barra muestra qué tan
+                  probable es cada una; sumadas en todo el corpus producen la{" "}
+                  <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
+                    partición comparable
                   </Link>
-                  . Verlos por caso permite auditar de dónde viene cada nivel de
-                  confianza.
+                  .
                 </>
               }
               en={
                 <>
-                  Each corpus case explicitly declares which hypothesis it
-                  contributes to and with what strength. These numbers feed the
-                  pressure index shown next to each hypothesis on{" "}
-                  <Link
-                    href="/probabilidades"
-                    className="text-accent underline-offset-4 hover:underline"
-                  >
-                    probabilities
+                  This case splits 100% among the model&apos;s nine
+                  mutually-exclusive explanations. The bar shows how probable
+                  each is; summed across the corpus they produce the{" "}
+                  <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
+                    comparable partition
                   </Link>
-                  . Seeing them per case lets you audit where each confidence
-                  level comes from.
+                  .
                 </>
               }
             />
           </Body>
-          <ol className="space-y-4">
-            {c.evidenceContribution.map((e, i) => {
-              const h = getHypothesis(e.hypothesisId);
-              const weight = STRENGTH_WEIGHT[e.strength] ?? 0;
-              const sign = e.direction === "supports" ? "+" : "−";
-              const arrowSym = e.direction === "supports" ? "↑" : "↓";
-              const strengthLabel: Record<string, { es: string; en: string }> = {
-                minimal: { es: "mínimo", en: "minimal" },
-                modest: { es: "modesto", en: "modest" },
-                substantial: { es: "sustancial", en: "substantial" },
-                "category-breaking": {
-                  es: "categoría nueva",
-                  en: "category-breaking",
-                },
-              };
-              const sLabel = strengthLabel[e.strength] ?? {
-                es: e.strength,
-                en: e.strength,
-              };
-              return (
-                <li
-                  key={i}
-                  className="grid grid-cols-[4.25rem_1fr] gap-4 border-l-2 pl-4"
-                  style={{ borderColor: h?.color ?? "var(--accent)" }}
-                >
-                  <span
-                    className="font-display text-xl leading-none tabular-nums whitespace-nowrap"
-                    style={{ color: h?.color ?? "var(--accent)" }}
-                  >
-                    {sign}
-                    {weight}
-                  </span>
-                  <div className="space-y-1">
-                    <p className="font-display text-lg font-medium leading-snug text-text">
-                      <T
-                        es={h?.label ?? e.hypothesisId}
-                        en={h?.labelEn ?? e.hypothesisId}
-                      />{" "}
-                      <span className="text-muted">{arrowSym}</span>
-                    </p>
-                    <p className="font-mono text-xs uppercase tracking-wider text-muted">
-                      <T es={sLabel.es} en={sLabel.en} />
-                    </p>
-                    <p className="text-sm leading-relaxed text-text/80">
-                      <T es={e.rationale} en={e.rationaleEn} />
-                    </p>
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
+          <CasePosterior posterior={posteriorFor(c)} />
           <Caption className="italic">
             <T
-              es="Pesos (shift en log-odds): mínimo +0.005, modesto +0.02, sustancial +0.05, categoría nueva +0.15. Documentación completa en /about Cap. 5."
-              en="Weights (log-odds shift): minimal +0.005, modest +0.02, substantial +0.05, category-breaking +0.15. Full documentation in /about Ch. 5."
+              es="Juicio analítico estructurado, no frecuencia calibrada. «Indeterminable» es la masa que no se puede asignar con la evidencia disponible."
+              en="Structured analytical judgment, not a calibrated frequency. 'Indeterminable' is the mass that cannot be assigned with the available evidence."
             />
           </Caption>
         </section>
