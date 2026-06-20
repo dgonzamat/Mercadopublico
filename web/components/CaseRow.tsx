@@ -47,7 +47,7 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       </span>
       <span
         className="w-12 shrink-0 text-right font-mono text-sm font-semibold tabular-nums text-text"
-        title="Probabilidad del caso · juicio ICD-203"
+        title="Probabilidad del caso · qué tan probable es un fenómeno genuinamente no explicado (distinta de la partición de explicaciones)"
       >
         {caseData.probability}%
       </span>

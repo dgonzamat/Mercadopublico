@@ -3,7 +3,7 @@ import type { UAPCase, Pattern } from "./types";
 /**
  * Pure descriptive statistics over the corpus. NO inference — these are
  * counts/distributions you can verify by hand against data/cases.json.
- * Used in CorpusStats component to anchor the ICD-203 judgment chart
+ * Used in CorpusStats component to anchor the corpus overview
  * with verifiable facts.
  */
 
