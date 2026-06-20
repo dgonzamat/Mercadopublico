@@ -539,7 +539,7 @@ export default async function CaseDetailPage(
               }
             />
           </Body>
-          <CasePosterior posterior={posteriorFor(c)} />
+          <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} />
           <Caption className="italic">
             <T
               es="Juicio analítico estructurado, no frecuencia calibrada. «Indeterminable» es la masa que no se puede asignar con la evidencia disponible."
