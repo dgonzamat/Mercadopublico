@@ -7,12 +7,7 @@ import {
   entidadesNoHumanas,
   heterogeneidad,
 } from "@/lib/meceModel";
-import type { MeceClassId, Posterior } from "@/lib/types";
-
-const CLASS_BY_ID = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c])) as Record<
-  MeceClassId,
-  (typeof MECE_CLASSES)[number]
->;
+import type { Posterior } from "@/lib/types";
 
 const pct = (x: number) => (x * 100).toFixed(0);
 
@@ -26,7 +21,6 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
   const counts = expectedCounts(scored);
   const shares = roundedShares(scored);
   const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
-  const max = Math.max(...MECE_CLASSES.map((c) => counts[c.id]));
 
   const enh = scored.reduce((s, c) => s + entidadesNoHumanas(c.posterior), 0);
   const het = scored.reduce((s, c) => s + heterogeneidad(c.posterior), 0);
@@ -51,7 +45,7 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
               </span>
             </div>
             <div className="mt-1 h-2 w-full bg-border/40">
-              <div className="h-2" style={{ width: `${(counts[c.id] / max) * 100}%`, backgroundColor: c.color }} />
+              <div className="h-2" style={{ width: `${(counts[c.id] / N) * 100}%`, backgroundColor: c.color }} />
             </div>
           </div>
         ))}
@@ -63,13 +57,13 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
         <div className="mt-4 space-y-1 border-t border-border pt-3 font-mono text-[11px]">
           <div className="flex items-baseline justify-between">
             <span className="uppercase tracking-wider text-text">
-              <T es="Entidades no humanas (derivada = interdim.+ontol.+tratado)" en="Non-human entities (derived = interdim.+ontol.+treaty)" />
+              <T es="Entidades no humanas (derivada = no-humano encubierto + abierto)" en="Non-human entities (derived = covert + open non-human)" />
             </span>
             <span className="text-muted">{pct(enh / N)}%</span>
           </div>
           <div className="flex items-baseline justify-between">
             <span className="uppercase tracking-wider text-text">
-              <T es="Heterogeneidad (derivada = 1 − mundano)" en="Heterogeneity (derived = 1 − mundane)" />
+              <T es="Heterogeneidad (derivada = 1 − mundano/natural)" en="Heterogeneity (derived = 1 − mundane/natural)" />
             </span>
             <span className="text-muted">{pct(het / N)}%</span>
           </div>
