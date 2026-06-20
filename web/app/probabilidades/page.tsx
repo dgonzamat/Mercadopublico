@@ -68,8 +68,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Cada una de las ${STATS.cases} piezas del corpus se clasifica en una hipótesis: los ${scored.length} casos de incidente por la naturaleza del objeto, y los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) por el lean evidencial de su contenido. Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten el corpus de forma comparable: se puede decir qué hipótesis da cuenta de más casos.`}
-          en={`Each of the corpus's ${STATS.cases} pieces is classified into one hypothesis: the ${scored.length} incident cases by the nature of the object, and the ${STATS.cases - scored.length} document cases (memos, hearings, leaks) by the evidential lean of their content. It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and hoax— and 'non-human' groups covert + open. Summed, they partition the corpus comparably: one can say which hypothesis accounts for more cases.`}
+          es={`Las ${STATS.cases} piezas del corpus se clasifican, cada una, en una hipótesis (los casos de incidente por la naturaleza del objeto; los casos-documento por el lean evidencial de su contenido). Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten el corpus de forma comparable: se puede decir qué hipótesis da cuenta de más casos.`}
+          en={`The corpus's ${STATS.cases} pieces are each classified into one hypothesis (incident cases by the nature of the object; document cases by the evidential lean of their content). It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and hoax— and 'non-human' groups covert + open. Summed, they partition the corpus comparably: one can say which hypothesis accounts for more cases.`}
         />
       </Lede>
 
@@ -79,8 +79,8 @@ export default function ProbabilidadesPage() {
         </H2>
         <Caption>
           <T
-            es={`Las ${STATS.cases} piezas: ${scored.length} incidentes (por objeto) + ${STATS.cases - scored.length} documentos (por lean del registro). Clasificación forzada, sin indeterminable.`}
-            en={`All ${STATS.cases} pieces: ${scored.length} incidents (by object) + ${STATS.cases - scored.length} documents (by record lean). Forced classification, no indeterminable.`}
+            es={`Las ${STATS.cases} piezas del corpus, clasificadas. Clasificación forzada, sin indeterminable.`}
+            en={`All ${STATS.cases} corpus pieces, classified. Forced classification, no indeterminable.`}
           />
         </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
