@@ -53,6 +53,17 @@
       "note_en": "Public case for an artificial origin."
     }
   ],
+  "posterior": {
+    "mundano": 0.05,
+    "natural_desc": 0.62,
+    "clasificada": 0.01,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.08,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.19
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "fenomenos-naturales",

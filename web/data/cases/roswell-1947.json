@@ -89,6 +89,17 @@
       "url": "http://www.roswellfiles.com/FOIA/RDDR-1947-07-08.htm"
     }
   ],
+  "posterior": {
+    "mundano": 0.20,
+    "natural_desc": 0.02,
+    "clasificada": 0.40,
+    "adversaria": 0.02,
+    "ing_inversa": 0.08,
+    "interdimensional": 0.02,
+    "ontologico": 0.01,
+    "tratado": 0.05,
+    "indet": 0.20
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/General_Ramey_with_Roswell_Memo.png",
     "alt": "Brigadier General Roger Ramey en cuclillas junto a restos del incidente, sosteniendo un telegrama en su mano, Fort Worth, 8 de julio de 1947.",

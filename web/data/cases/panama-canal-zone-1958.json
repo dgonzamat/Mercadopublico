@@ -79,5 +79,16 @@
       "rationale": "El comportamiento aparentemente intencional —responder a la iluminación, mantener distancia del interceptor— es compatible con un objeto real bajo control, no con un fenómeno pasivo. Minimal porque la evidencia es radar+visual de 1958, sin foto, telemetría ni material, y el intercepto terminó 'con resultados negativos': la maniobra es sugerente pero no diagnóstica.",
       "rationaleEn": "The apparently intentional behavior —responding to illumination, keeping distance from the interceptor— is compatible with a real object under control, not a passive phenomenon. Minimal because the evidence is 1958 radar+visual, with no photo, telemetry or material, and the intercept ended 'with negative results': the maneuver is suggestive but not diagnostic."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.18,
+    "natural_desc": 0.15,
+    "clasificada": 0.12,
+    "adversaria": 0.04,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.1,
+    "ontologico": 0.03,
+    "tratado": 0.01,
+    "indet": 0.37
+  }
 }

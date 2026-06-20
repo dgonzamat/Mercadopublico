@@ -81,5 +81,16 @@
       "name": "Maccabee, B. — Análisis técnico complementario",
       "note": "Retired Naval Surface Warfare Center optical physicist"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.46,
+    "natural_desc": 0.05,
+    "clasificada": 0.03,
+    "adversaria": 0.02,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.03,
+    "ontologico": 0.015,
+    "tratado": 0.005,
+    "indet": 0.38
+  }
 }

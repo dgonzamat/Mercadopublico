@@ -62,6 +62,17 @@
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book_report_-_1952-10-9169199-North_Korea.pdf"
   },
+  "posterior": {
+    "mundano": 0.16,
+    "natural_desc": 0.18,
+    "clasificada": 0.05,
+    "adversaria": 0.16,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.10,
+    "ontologico": 0.03,
+    "tratado": 0.01,
+    "indet": 0.30
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

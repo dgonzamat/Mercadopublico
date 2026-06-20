@@ -64,6 +64,17 @@
       "url": "https://www.aaro.mil/Annual-Reports/"
     }
   ],
+  "posterior": {
+    "mundano": 0.40,
+    "natural_desc": 0.05,
+    "clasificada": 0.10,
+    "adversaria": 0.22,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.03,
+    "ontologico": 0.01,
+    "tratado": 0.01,
+    "indet": 0.17
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

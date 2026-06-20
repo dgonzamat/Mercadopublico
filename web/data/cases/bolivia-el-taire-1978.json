@@ -72,5 +72,16 @@
       "rationaleEn": "CIA cable rules out closure as conventional meteor by explicitly flagging contradictions in the Bolivian report on 'fallen object'"
     }
   ],
+  "posterior": {
+    "mundano": 0.18,
+    "natural_desc": 0.22,
+    "clasificada": 0.12,
+    "adversaria": 0.06,
+    "ing_inversa": 0.02,
+    "interdimensional": 0.03,
+    "ontologico": 0.01,
+    "tratado": 0.01,
+    "indet": 0.35
+  },
   "name_en": "El Taire / Bermejo crash"
 }

@@ -54,6 +54,17 @@
       "url": "https://shura.shu.ac.uk/34877/"
     }
   ],
+  "posterior": {
+    "mundano": 0.22,
+    "natural_desc": 0.07,
+    "clasificada": 0.25,
+    "adversaria": 0.05,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.05,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.32
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

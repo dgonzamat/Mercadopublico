@@ -101,5 +101,16 @@
       "rationaleEn": "Pattern 8k present — EM interference and 46G accelerations outside the classical range partially point to non-conventional physics"
     }
   ],
-  "name_en": "Belgian Wave (F-16)"
+  "name_en": "Belgian Wave (F-16)",
+  "posterior": {
+    "mundano": 0.16,
+    "natural_desc": 0.18,
+    "clasificada": 0.16,
+    "adversaria": 0.08,
+    "ing_inversa": 0.02,
+    "interdimensional": 0.10,
+    "ontologico": 0.03,
+    "tratado": 0.02,
+    "indet": 0.25
+  }
 }

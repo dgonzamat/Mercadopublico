@@ -86,5 +86,16 @@
       "name": "Velasco, J.-J. — Director GEPAN testimony",
       "note": "Institutional reconstruction"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.12,
+    "natural_desc": 0.05,
+    "clasificada": 0.22,
+    "adversaria": 0.03,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.13,
+    "ontologico": 0.04,
+    "tratado": 0.01,
+    "indet": 0.4
+  }
 }

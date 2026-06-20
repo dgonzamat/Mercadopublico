@@ -21,6 +21,17 @@
     "8a"
   ],
   "category": "incident",
+  "posterior": {
+    "mundano": 0.46,
+    "natural_desc": 0.05,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.09,
+    "ontologico": 0.10,
+    "tratado": 0.02,
+    "indet": 0.24
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

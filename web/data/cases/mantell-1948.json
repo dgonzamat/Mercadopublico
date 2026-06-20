@@ -89,5 +89,16 @@
       "rationaleEn": "The Skyhook explanation is plausible, consistent with the trajectory and widely accepted — the case does not sustain an anomalous reading."
     }
   ],
-  "name_en": "Mantell crash"
+  "name_en": "Mantell crash",
+  "posterior": {
+    "mundano": 0.10,
+    "natural_desc": 0.04,
+    "clasificada": 0.62,
+    "adversaria": 0.02,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.02,
+    "ontologico": 0.01,
+    "tratado": 0.005,
+    "indet": 0.18
+  }
 }

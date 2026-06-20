@@ -53,6 +53,17 @@
       "note_en": "Skeptical reading of the account."
     }
   ],
+  "posterior": {
+    "mundano": 0.55,
+    "natural_desc": 0.03,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.08,
+    "ontologico": 0.12,
+    "tratado": 0.04,
+    "indet": 0.14
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "misidentificacion",

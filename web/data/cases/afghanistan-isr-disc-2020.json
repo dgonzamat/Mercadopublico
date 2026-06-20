@@ -42,6 +42,17 @@
       "url": "https://www.nbcnews.com/now/video/disc-shaped-uap-caught-on-camera-by-the-military-in-2020-241946693913"
     }
   ],
+  "posterior": {
+    "mundano": 0.22,
+    "natural_desc": 0.08,
+    "clasificada": 0.14,
+    "adversaria": 0.14,
+    "ing_inversa": 0.02,
+    "interdimensional": 0.07,
+    "ontologico": 0.03,
+    "tratado": 0.02,
+    "indet": 0.28
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

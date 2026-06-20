@@ -62,5 +62,16 @@
       "rationale": "Dos testigos describieron un encuentro con ocupantes y mantuvieron su relato de forma consistente, y la grabación secreta del sheriff captó angustia genuina en lugar de un montaje — lo que distingue el caso de un fraude ordinario. Minimal porque es una experiencia subjetiva de abducción sin ninguna evidencia física, fotográfica ni instrumental: sinceridad no es confirmación.",
       "rationaleEn": "Two witnesses described an encounter with occupants and held their account consistently, and the sheriff's secret recording captured genuine distress rather than a hoax — which distinguishes the case from an ordinary fraud. Minimal because it is a subjective abduction experience with no physical, photographic or instrumental evidence: sincerity is not confirmation."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.42,
+    "natural_desc": 0.03,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.06,
+    "ontologico": 0.07,
+    "tratado": 0.05,
+    "indet": 0.33
+  }
 }

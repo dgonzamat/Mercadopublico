@@ -48,6 +48,17 @@
       "note": "Síntesis del registro Blue Book/Sign."
     }
   ],
+  "posterior": {
+    "mundano": 0.55,
+    "natural_desc": 0.08,
+    "clasificada": 0.05,
+    "adversaria": 0.03,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.04,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.21
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "misidentificacion",

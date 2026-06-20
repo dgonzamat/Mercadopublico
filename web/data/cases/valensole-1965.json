@@ -36,6 +36,17 @@
     "Vegetation inhibited in a geometric pattern for approximately a decade",
     "GEIPAN/CNES classification 'D1 — non-identifié' in the 1979 review"
   ],
+  "posterior": {
+    "mundano": 0.22,
+    "natural_desc": 0.03,
+    "clasificada": 0.03,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.16,
+    "ontologico": 0.10,
+    "tratado": 0.09,
+    "indet": 0.35
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

@@ -48,6 +48,17 @@
       "url": "https://ufologie.patrickgross.org/ufology/af3532rt.htm"
     }
   ],
+  "posterior": {
+    "mundano": 0.30,
+    "natural_desc": 0.20,
+    "clasificada": 0.06,
+    "adversaria": 0.04,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.06,
+    "ontologico": 0.03,
+    "tratado": 0.01,
+    "indet": 0.29
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

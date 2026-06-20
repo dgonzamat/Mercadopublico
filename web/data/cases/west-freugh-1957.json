@@ -71,5 +71,16 @@
       "rationale": "El track de radar militar con ascenso de 50.000 a 70.000 pies excedía el envelope de cualquier aeronave de 1957 conocida; queda como dato instrumental sin resolver.",
       "rationaleEn": "The military radar track with a climb from 50,000 to 70,000 feet exceeded the envelope of any known 1957 aircraft; it remains an unresolved instrumental datum."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.10,
+    "natural_desc": 0.06,
+    "clasificada": 0.12,
+    "adversaria": 0.22,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.06,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.40
+  }
 }

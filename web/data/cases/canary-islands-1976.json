@@ -69,5 +69,16 @@
       "name": "Wikipedia: UFO sightings in the Canary Islands",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_the_Canary_Islands"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.12,
+    "natural_desc": 0.40,
+    "clasificada": 0.10,
+    "adversaria": 0.03,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.05,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.26
+  }
 }

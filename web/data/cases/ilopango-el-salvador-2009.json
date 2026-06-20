@@ -67,5 +67,16 @@
       "rationale": "Como evidencia de entidades no humanas, el caso es de los más débiles del corpus: fuente única entusiasta, fotógrafo anónimo, un solo fotograma sin metadata verificable. No resta probabilidad real a una afirmación existencial — por eso minimal — pero deja constancia de que este expediente, por sí mismo, no aporta nada a favor de la hipótesis.",
       "rationaleEn": "As evidence of something non-human, the case is among the weakest in the corpus: a single enthusiast source, an anonymous photographer, one frame with no verifiable metadata. It does not subtract real probability from an existential claim — hence minimal — but it records that this file, on its own, contributes nothing in favor of the hypothesis."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.62,
+    "natural_desc": 0.08,
+    "clasificada": 0.02,
+    "adversaria": 0.015,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.015,
+    "ontologico": 0.01,
+    "tratado": 0.005,
+    "indet": 0.23
+  }
 }

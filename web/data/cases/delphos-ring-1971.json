@@ -74,5 +74,16 @@
       "rationale": "Un 'anillo de hadas' fúngico explica de forma económica la forma circular y la hidrofobicidad del suelo —el efecto se reprodujo en laboratorio—, un candidato prosaico serio para la traza. Minimal porque no da cuenta de forma concluyente del brillo persistente ni del avistamiento del objeto.",
       "rationaleEn": "A fungal 'fairy ring' economically explains the circular shape and the soil hydrophobicity —the effect was reproduced in the lab— a serious prosaic candidate for the trace. Minimal because it does not conclusively account for the persistent glow or the object sighting."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.20,
+    "natural_desc": 0.30,
+    "clasificada": 0.04,
+    "adversaria": 0.02,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.08,
+    "ontologico": 0.05,
+    "tratado": 0.02,
+    "indet": 0.28
+  }
 }

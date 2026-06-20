@@ -66,5 +66,16 @@
       "rationale": "Las explicaciones prosaicas que Blue Book intentó —el ejercicio Operación Big Blast y la confusión de estrellas/planetas— fallaron por desajuste horario y no encajan con un objeto a baja altura que tres testigos vieron maniobrar. Minimal porque, sin instrumentación, no puede excluirse del todo alguna confusión no identificada.",
       "rationaleEn": "The prosaic explanations Blue Book attempted —the Operation Big Blast exercise and confusion of stars/planets— failed on timing and do not fit a low-altitude object three witnesses saw maneuver. Minimal because, without instrumentation, some unidentified confusion cannot be entirely excluded."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.30,
+    "natural_desc": 0.06,
+    "clasificada": 0.07,
+    "adversaria": 0.03,
+    "ing_inversa": 0.02,
+    "interdimensional": 0.08,
+    "ontologico": 0.04,
+    "tratado": 0.02,
+    "indet": 0.38
+  }
 }

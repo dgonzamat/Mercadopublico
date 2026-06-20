@@ -74,5 +74,16 @@
       "rationale": "La hipótesis de un episodio médico —Taylor padecía epilepsia; un ataque podría producir colapso, alucinación olfativa y caída— es un candidato prosaico serio que explicaría la experiencia y parte de las lesiones. Minimal porque no da cuenta de forma concluyente de las marcas en el suelo documentadas por la policía.",
       "rationaleEn": "The medical-episode hypothesis —Taylor had epilepsy; a seizure could produce collapse, olfactory hallucination and a fall— is a serious prosaic candidate that would explain the experience and part of the injuries. Minimal because it does not conclusively account for the ground marks documented by police."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.42,
+    "natural_desc": 0.04,
+    "clasificada": 0.03,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.10,
+    "ontologico": 0.06,
+    "tratado": 0.03,
+    "indet": 0.30
+  }
 }

@@ -53,6 +53,17 @@
       "name": "CUFOS — Hudson Valley Case File"
     }
   ],
+  "posterior": {
+    "mundano": 0.42,
+    "natural_desc": 0.05,
+    "clasificada": 0.12,
+    "adversaria": 0.02,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.07,
+    "ontologico": 0.03,
+    "tratado": 0.01,
+    "indet": 0.27
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "misidentificacion",

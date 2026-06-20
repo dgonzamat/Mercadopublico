@@ -65,6 +65,17 @@
       "url": "http://www.nicap.org/731018coyne_dir.htm"
     }
   ],
+  "posterior": {
+    "mundano": 0.32,
+    "natural_desc": 0.08,
+    "clasificada": 0.10,
+    "adversaria": 0.04,
+    "ing_inversa": 0.03,
+    "interdimensional": 0.13,
+    "ontologico": 0.04,
+    "tratado": 0.01,
+    "indet": 0.25
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

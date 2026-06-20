@@ -49,6 +49,17 @@
       "note_en": "Coverage of the phenomenon and the field investigation."
     }
   ],
+  "posterior": {
+    "mundano": 0.40,
+    "natural_desc": 0.42,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.02,
+    "ontologico": 0.01,
+    "tratado": 0.01,
+    "indet": 0.10
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "fenomenos-naturales",

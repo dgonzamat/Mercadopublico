@@ -18,6 +18,17 @@
   "summary_en": "On 16 September 1994, 62 children at the Ariel School (Ruwa, Zimbabwe) watched a silver object settle beside the playground and small humanoid figures; Dr. John Mack of Harvard Medical School interviewed them with formal psychiatric methodology, and their accounts stayed consistent for three decades. The best-documented child-witness case in the corpus.",
   "patterns": [],
   "category": "incident",
+  "posterior": {
+    "mundano": 0.38,
+    "natural_desc": 0.10,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.14,
+    "ontologico": 0.13,
+    "tratado": 0.05,
+    "indet": 0.16
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

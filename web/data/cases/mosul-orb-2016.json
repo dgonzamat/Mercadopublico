@@ -63,5 +63,16 @@
       "rationale": "Irak 2016, zona de guerra con múltiples actores estatales operando plataformas pequeñas de vigilancia: una esfera metálica sobre Mosul tiene lectura viva como dron de otro Estado, sin atribución oficial.",
       "rationaleEn": "Iraq 2016, a war zone with multiple state actors operating small surveillance platforms: a metallic orb over Mosul has a live reading as another state's drone, officially unattributed."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.28,
+    "natural_desc": 0.05,
+    "clasificada": 0.08,
+    "adversaria": 0.18,
+    "ing_inversa": 0.02,
+    "interdimensional": 0.05,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.31
+  }
 }

@@ -52,6 +52,17 @@
       "url": "https://praguepig.com/2018/08/vranov-nad-dyji-ufo-case/"
     }
   ],
+  "posterior": {
+    "mundano": 0.10,
+    "natural_desc": 0.05,
+    "clasificada": 0.14,
+    "adversaria": 0.16,
+    "ing_inversa": 0.02,
+    "interdimensional": 0.18,
+    "ontologico": 0.05,
+    "tratado": 0.03,
+    "indet": 0.27
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

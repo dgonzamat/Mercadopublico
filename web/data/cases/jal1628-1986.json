@@ -66,6 +66,17 @@
       "url": "http://www.nicap.org/jal1628dir.htm"
     }
   ],
+  "posterior": {
+    "mundano": 0.30,
+    "natural_desc": 0.10,
+    "clasificada": 0.12,
+    "adversaria": 0.05,
+    "ing_inversa": 0.03,
+    "interdimensional": 0.10,
+    "ontologico": 0.04,
+    "tratado": 0.02,
+    "indet": 0.24
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

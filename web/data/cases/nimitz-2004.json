@@ -83,6 +83,17 @@
       "note": "Journalistic claim (Lockheed Martin program) and Fravor public rejection; single-source, contested, no primary documentation."
     }
   ],
+  "posterior": {
+    "mundano": 0.05,
+    "natural_desc": 0.04,
+    "clasificada": 0.20,
+    "adversaria": 0.14,
+    "ing_inversa": 0.06,
+    "interdimensional": 0.16,
+    "ontologico": 0.06,
+    "tratado": 0.04,
+    "indet": 0.25
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

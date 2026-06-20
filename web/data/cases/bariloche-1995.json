@@ -54,6 +54,17 @@
       "url": "https://www.lanacion.com.ar"
     }
   ],
+  "posterior": {
+    "mundano": 0.42,
+    "natural_desc": 0.12,
+    "clasificada": 0.08,
+    "adversaria": 0.04,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.05,
+    "ontologico": 0.03,
+    "tratado": 0.01,
+    "indet": 0.24
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

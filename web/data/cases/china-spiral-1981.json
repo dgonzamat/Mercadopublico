@@ -72,5 +72,16 @@
       "rationale": "Como evidencia de entidades no humanas el caso es casi nulo: la firma física apunta a un objeto humano en régimen espacial, no a una nave bajo control anómalo. Minimal porque una afirmación existencial no baja por un candidato descartado; queda como verdicto escéptico por caso.",
       "rationaleEn": "As evidence of non-human entities the case is nearly null: the physical signature points to a human object in a space regime, not a craft under anomalous control. Minimal because an existential claim does not drop for one ruled-out candidate; it stands as a per-case skeptical verdict."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.55,
+    "natural_desc": 0.33,
+    "clasificada": 0.03,
+    "adversaria": 0.01,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.01,
+    "ontologico": 0.005,
+    "tratado": 0.005,
+    "indet": 0.055
+  }
 }

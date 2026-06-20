@@ -51,6 +51,17 @@
       "note": "Síntesis del caso y testimonios."
     }
   ],
+  "posterior": {
+    "mundano": 0.62,
+    "natural_desc": 0.12,
+    "clasificada": 0.03,
+    "adversaria": 0.02,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.03,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.14
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "misidentificacion",

@@ -50,6 +50,17 @@
       "url": "https://www.war.gov/ufo/"
     }
   ],
+  "posterior": {
+    "mundano": 0.20,
+    "natural_desc": 0.68,
+    "clasificada": 0.01,
+    "adversaria": 0.01,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.005,
+    "ontologico": 0.01,
+    "tratado": 0.0,
+    "indet": 0.08
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

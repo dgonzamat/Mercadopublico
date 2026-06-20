@@ -22,6 +22,17 @@
     "8m"
   ],
   "category": "incident",
+  "posterior": {
+    "mundano": 0.18,
+    "natural_desc": 0.04,
+    "clasificada": 0.34,
+    "adversaria": 0.03,
+    "ing_inversa": 0.05,
+    "interdimensional": 0.10,
+    "ontologico": 0.03,
+    "tratado": 0.01,
+    "indet": 0.22
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "fenomenos-naturales",

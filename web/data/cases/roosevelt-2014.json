@@ -81,5 +81,16 @@
       "rationale": "La persistencia espacial y temporal (mismas áreas, casi a diario, durante meses) y la confirmación simultánea en radar e infrarrojo no encajan con fenómenos atmosféricos transitorios. Minimal porque el caso no resuelve la hipótesis por sí solo.",
       "rationaleEn": "The spatial and temporal persistence (same areas, near-daily, over months) and simultaneous radar-plus-infrared confirmation do not fit transient atmospheric phenomena. Minimal because the case does not resolve the hypothesis on its own."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.1,
+    "natural_desc": 0.04,
+    "clasificada": 0.16,
+    "adversaria": 0.14,
+    "ing_inversa": 0.04,
+    "interdimensional": 0.14,
+    "ontologico": 0.05,
+    "tratado": 0.03,
+    "indet": 0.3
+  }
 }

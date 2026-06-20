@@ -69,5 +69,16 @@
       "rationale": "Absorción de 64 obuses de 30mm sin daño ni respuesta defensiva no es atribuible a tecnología terrestre conocida",
       "rationaleEn": "Absorption of 64×30mm rounds with no damage or defensive response is not attributable to known terrestrial technology"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.14,
+    "natural_desc": 0.05,
+    "clasificada": 0.12,
+    "adversaria": 0.06,
+    "ing_inversa": 0.03,
+    "interdimensional": 0.18,
+    "ontologico": 0.05,
+    "tratado": 0.03,
+    "indet": 0.34
+  }
 }

@@ -41,5 +41,16 @@
       "name": "Wikipedia — Greifswald lights (Greifswalder Vorkommnis, 24 ago 1990)",
       "url": "https://en.wikipedia.org/wiki/Greifswald_lights"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.58,
+    "natural_desc": 0.05,
+    "clasificada": 0.10,
+    "adversaria": 0.04,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.03,
+    "ontologico": 0.015,
+    "tratado": 0.01,
+    "indet": 0.17
+  }
 }

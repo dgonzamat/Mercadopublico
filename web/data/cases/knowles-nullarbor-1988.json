@@ -66,6 +66,17 @@
       "note": "Investigación del ufólogo australiano más riguroso del periodo."
     }
   ],
+  "posterior": {
+    "mundano": 0.34,
+    "natural_desc": 0.18,
+    "clasificada": 0.06,
+    "adversaria": 0.03,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.09,
+    "ontologico": 0.04,
+    "tratado": 0.03,
+    "indet": 0.22
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

@@ -131,6 +131,17 @@
       "rationaleEn": "AAWSAP commissioned 38 DIRDs including analyses of warp drives, metric engineering, negative energy and wormholes (Puthoff, Davis, Maccone) — exactly the theoretical frames that a reverse-engineering program of non-human technology would need as a scientific basis. The book 'Skinwalkers at the Pentagon' (Lacatski/Kelleher/Knapp 2021), written by the program's DIA director, describes internal testimony about attempts to understand recovered technology. It does not prove the RE program exists, but it institutionally documents that the DIA paid for the theoretical basis that program would need — the corpus's strongest documentary coherence for the hypothesis."
     }
   ],
+  "posterior": {
+    "mundano": 0.10,
+    "natural_desc": 0.05,
+    "clasificada": 0.34,
+    "adversaria": 0.03,
+    "ing_inversa": 0.08,
+    "interdimensional": 0.10,
+    "ontologico": 0.12,
+    "tratado": 0.03,
+    "indet": 0.15
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skinwalker_Ranch_(10393732103).jpg?width=800",
     "alt": "Letreros de «prohibido el paso» a la entrada del Skinwalker Ranch, Utah.",

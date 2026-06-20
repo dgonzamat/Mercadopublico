@@ -70,6 +70,17 @@
       "rationaleEn": "Some anomalies (directional jets, atypical chemistry, trajectory) were flagged as not predicted by standard models. Minimal —and deliberately low— because even Loeb, who documented them, concluded they do not necessarily point to a technological origin."
     }
   ],
+  "posterior": {
+    "mundano": 0.05,
+    "natural_desc": 0.72,
+    "clasificada": 0.0,
+    "adversaria": 0.0,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.05,
+    "ontologico": 0.01,
+    "tratado": 0.0,
+    "indet": 0.17
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Deep_VLT_image_of_3I-ATLAS,_a_new_interstellar_object_(potw2527a).jpg?width=800",
     "alt": "Imagen profunda del VLT de ESO del objeto interestelar 3I/ATLAS.",

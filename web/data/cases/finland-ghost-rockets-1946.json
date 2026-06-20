@@ -61,5 +61,16 @@
       "rationale": "Análisis posteriores atribuyen una fracción sustancial de los ~2.000 reportes a bólidos y meteoros — la explicación natural cubre parte de la ola sin agotar los reportes con trayectoria horizontal y caída en lagos.",
       "rationaleEn": "Later analyses attribute a substantial fraction of the ~2,000 reports to bolides and meteors — the natural explanation covers part of the wave without exhausting the reports with horizontal trajectories and lake impacts."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.10,
+    "natural_desc": 0.34,
+    "clasificada": 0.03,
+    "adversaria": 0.22,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.03,
+    "ontologico": 0.015,
+    "tratado": 0.005,
+    "indet": 0.25
+  }
 }

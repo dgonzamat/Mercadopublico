@@ -87,5 +87,16 @@
       "name": "Coulthart, R. — NewsNation Reality Check 2024 coverage",
       "note": "Sustained coverage of the program"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.08,
+    "natural_desc": 0.04,
+    "clasificada": 0.17,
+    "adversaria": 0.24,
+    "ing_inversa": 0.04,
+    "interdimensional": 0.1,
+    "ontologico": 0.04,
+    "tratado": 0.02,
+    "indet": 0.27
+  }
 }

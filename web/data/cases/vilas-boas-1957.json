@@ -62,5 +62,16 @@
       "name": "Unidentified Phenomena — 'Antonio Villas Boas Abduction (1957)'",
       "url": "https://unidentifiedphenomena.com/abductions/antonio-vilas-boas-abduction-1957/"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.55,
+    "natural_desc": 0.02,
+    "clasificada": 0.02,
+    "adversaria": 0.0,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.06,
+    "ontologico": 0.07,
+    "tratado": 0.08,
+    "indet": 0.2
+  }
 }

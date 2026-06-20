@@ -84,6 +84,17 @@
       "rationaleEn": "The case shows that NORAD and AARO had not publicly detected/reported four prior Chinese overflights. This slightly tensions the 'U.S. classified programs explain prior UAP cases' hypothesis because it reveals that part of the record was adversary-origin, not domestic. Minimal weakens: U.S. detection failure does not refute U.S. programs, only reveals that the explanation universe is broader."
     }
   ],
+  "posterior": {
+    "mundano": 0.04,
+    "natural_desc": 0.0,
+    "clasificada": 0.02,
+    "adversaria": 0.92,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.0,
+    "ontologico": 0.0,
+    "tratado": 0.0,
+    "indet": 0.02
+  },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Chinese_Balloon_route.svg?width=800",
     "alt": "Mapa de la trayectoria del globo de vigilancia chino de 2023.",

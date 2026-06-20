@@ -50,6 +50,17 @@
       "note": "Capítulo sobre Yukon"
     }
   ],
+  "posterior": {
+    "mundano": 0.20,
+    "natural_desc": 0.50,
+    "clasificada": 0.03,
+    "adversaria": 0.02,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.04,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.17
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "misidentificacion",

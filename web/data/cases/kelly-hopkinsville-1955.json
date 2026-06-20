@@ -65,5 +65,16 @@
       "name": "Center for Inquiry / Skeptical Inquirer — 'Siege of the Little Green Men: The 1955 Kelly, Kentucky, Incident'",
       "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2006/11/22164554/p12.pdf"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.53,
+    "natural_desc": 0.04,
+    "clasificada": 0.01,
+    "adversaria": 0.005,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.08,
+    "ontologico": 0.06,
+    "tratado": 0.06,
+    "indet": 0.21
+  }
 }

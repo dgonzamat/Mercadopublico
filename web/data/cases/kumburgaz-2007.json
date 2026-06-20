@@ -80,5 +80,16 @@
       "rationale": "La hipótesis de cruceros fondeados (cubiertas iluminadas, bokeh de lente) es geométrica y ópticamente consistente con los frames más citados.",
       "rationaleEn": "The anchored-cruise-ship hypothesis (lit decks, lens bokeh) is geometrically and optically consistent with the most-cited frames."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.50,
+    "natural_desc": 0.06,
+    "clasificada": 0.02,
+    "adversaria": 0.015,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.04,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.33
+  }
 }

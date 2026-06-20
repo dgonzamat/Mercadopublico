@@ -55,5 +55,16 @@
       "rationale": "Encuentro cercano con múltiples testigos sostenidos, larga duración y un residuo físico recogido y analizado en universidad. Minimal porque el residuo (carbonatos de calcio y potasio) no es una firma exótica y el relato incorporó adornos dramáticos en versiones posteriores, lo que erosiona el peso probatorio.",
       "rationaleEn": "Close encounter with multiple sustained witnesses, long duration, and a physical residue collected and analyzed at a university. Minimal because the residue (calcium and potassium carbonates) is not an exotic signature and the account incorporated dramatic embellishments in later versions, which erodes its evidentiary weight."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.46,
+    "natural_desc": 0.06,
+    "clasificada": 0.04,
+    "adversaria": 0.02,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.08,
+    "ontologico": 0.05,
+    "tratado": 0.03,
+    "indet": 0.25
+  }
 }

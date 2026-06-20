@@ -73,5 +73,16 @@
       "note": "Annual proceedings 2010-2024"
     }
   ],
+  "posterior": {
+    "mundano": 0.08,
+    "natural_desc": 0.62,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.02,
+    "ontologico": 0.015,
+    "tratado": 0.005,
+    "indet": 0.225
+  },
   "name_en": "Hessdalen lights"
 }

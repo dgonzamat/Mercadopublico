@@ -54,5 +54,16 @@
       "rationale": "La evidencia visual más difundida del caso —un trazo luminoso con cola— es característica de una estela de larga exposición de una aeronave o cohete de noche, y las propias autoridades insinuaron un origen en actividad militar no divulgada. La respuesta institucional (cierre del aeropuerto) es real, pero el 'objeto' admite con holgura una lectura convencional.",
       "rationaleEn": "The case's most circulated visual evidence —a luminous streak with a tail— is characteristic of a nighttime long-exposure trail of an aircraft or rocket, and the authorities themselves hinted at an origin in undisclosed military activity. The institutional response (airport closure) is real, but the 'object' comfortably admits a conventional reading."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.55,
+    "natural_desc": 0.05,
+    "clasificada": 0.15,
+    "adversaria": 0.01,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.03,
+    "ontologico": 0.01,
+    "tratado": 0.0,
+    "indet": 0.2
+  }
 }

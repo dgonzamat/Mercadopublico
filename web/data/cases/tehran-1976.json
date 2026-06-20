@@ -77,6 +77,17 @@
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:Tehran_ufo_1976_1.jpg"
   },
+  "posterior": {
+    "mundano": 0.09,
+    "natural_desc": 0.06,
+    "clasificada": 0.17,
+    "adversaria": 0.12,
+    "ing_inversa": 0.05,
+    "interdimensional": 0.15,
+    "ontologico": 0.05,
+    "tratado": 0.04,
+    "indet": 0.27
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "programas-clasificados",

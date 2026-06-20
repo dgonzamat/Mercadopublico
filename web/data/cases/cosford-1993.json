@@ -65,5 +65,16 @@
       "rationale": "En su momento, un oficial militar reportó un objeto grande a corta distancia y el MoD registró internamente que algo había operado en el espacio aéreo sin ser detectado por radar ('considerable importancia para la defensa'). Minimal porque la explicación prosaica mayoritaria y la posterior reevaluación del testigo erosionan el residuo anómalo.",
       "rationaleEn": "At the time, a military officer reported a large object at close range and the MoD internally recorded that something had operated in the airspace without radar detection ('considerable defence significance'). Minimal because the majority prosaic explanation and the witness's later reassessment erode the anomalous residue."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.30,
+    "natural_desc": 0.38,
+    "clasificada": 0.03,
+    "adversaria": 0.02,
+    "ing_inversa": 0.005,
+    "interdimensional": 0.02,
+    "ontologico": 0.01,
+    "tratado": 0.005,
+    "indet": 0.23
+  }
 }

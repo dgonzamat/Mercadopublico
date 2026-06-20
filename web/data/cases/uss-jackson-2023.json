@@ -81,5 +81,16 @@
       "rationale": "El comportamiento transmedium — transición fluida entre el dominio oceánico y el atmosférico sin cambio visible de morfología ni propulsión — es consistente con el marco interdimensional de Puthoff/Davis que postula entidades capaces de atravesar barreras de estado físico. Minimal porque la consistencia con el marco no equivale a confirmación.",
       "rationaleEn": "The transmedium behavior — fluid transition between the oceanic and atmospheric domains with no visible morphological change or propulsion — is consistent with the Puthoff/Davis interdimensional framework postulating entities capable of traversing physical-state barriers. Minimal because consistency with the framework does not equal confirmation."
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.10,
+    "natural_desc": 0.05,
+    "clasificada": 0.15,
+    "adversaria": 0.13,
+    "ing_inversa": 0.05,
+    "interdimensional": 0.13,
+    "ontologico": 0.05,
+    "tratado": 0.03,
+    "indet": 0.31
+  }
 }

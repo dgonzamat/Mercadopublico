@@ -45,5 +45,16 @@
       "name": "Foreign Policy — 'WikiLeaked: The Soviet space junk that became a Moroccan UFO' (2013)",
       "url": "https://foreignpolicy.com/2013/04/11/wikileaked-the-soviet-space-junk-that-became-a-moroccan-ufo/"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano": 0.18,
+    "natural_desc": 0.65,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.0,
+    "interdimensional": 0.02,
+    "ontologico": 0.01,
+    "tratado": 0.0,
+    "indet": 0.11
+  }
 }

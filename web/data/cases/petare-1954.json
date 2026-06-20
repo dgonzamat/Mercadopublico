@@ -57,6 +57,17 @@
       "note": "Obra venezolana que recogió y difundió el caso; fuente primaria de la casuística nacional temprana."
     }
   ],
+  "posterior": {
+    "mundano": 0.48,
+    "natural_desc": 0.05,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.09,
+    "ontologico": 0.06,
+    "tratado": 0.05,
+    "indet": 0.23
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "entidades-no-humanas",

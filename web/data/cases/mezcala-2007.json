@@ -50,6 +50,17 @@
       "note_en": "Material from the investigator who documented the case."
     }
   ],
+  "posterior": {
+    "mundano": 0.68,
+    "natural_desc": 0.08,
+    "clasificada": 0.02,
+    "adversaria": 0.01,
+    "ing_inversa": 0.01,
+    "interdimensional": 0.02,
+    "ontologico": 0.02,
+    "tratado": 0.01,
+    "indet": 0.15
+  },
   "evidenceContribution": [
     {
       "hypothesisId": "misidentificacion",
