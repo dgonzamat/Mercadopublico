@@ -41,58 +41,61 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
   const activeRow = rows.find((x) => x.key === active) ?? null;
   const clear = () => setActive(null);
 
+  const maxFrac = Math.max(...rows.map((row) => row.count / N), 1e-9);
+
   return (
     <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-10">
       {/* Donut */}
       <div className="relative h-60 w-60 shrink-0">
         <svg
           viewBox={`0 0 ${size} ${size}`}
-          className="h-60 w-60 -rotate-90"
+          className="donut-in h-60 w-60 overflow-visible"
           role="img"
           aria-label={rows.map((rw) => `${rw.label} ${share(rw.count / N)}%`).join(", ")}
         >
-          {rows.map((row, i) => {
-            const frac = row.count / N;
-            const len = Math.max(frac * C - gap, 0.5);
-            const isActive = active === row.key;
-            const dim = active !== null && !isActive;
-            const circle = (
-              <circle
-                cx={c}
-                cy={c}
-                r={r}
-                fill="none"
-                stroke={row.color}
-                strokeWidth={isActive ? stroke + 7 : stroke}
-                strokeDasharray={`${len} ${C - len}`}
-                strokeDashoffset={-offsets[i]}
-                className="cursor-pointer transition-all duration-150"
-                style={{ opacity: dim ? 0.35 : 1 }}
-                onMouseEnter={() => setActive(row.key)}
-                onMouseLeave={clear}
-              >
-                <title>{`${row.label}: ${share(frac)}%`}</title>
-              </circle>
-            );
-            return row.href ? (
-              <a
-                key={row.key}
-                href={row.href}
-                aria-label={`${row.label}: ${share(frac)}%`}
-                onFocus={() => setActive(row.key)}
-                onBlur={clear}
-              >
-                {circle}
-              </a>
-            ) : (
-              <g key={row.key}>{circle}</g>
-            );
-          })}
+          <defs>
+            {/* Lift sutil para el segmento activo (profundidad, no glow chillón) */}
+            <filter id="donut-lift" x="-30%" y="-30%" width="160%" height="160%">
+              <feDropShadow dx="0" dy="1" stdDeviation="2.5" floodOpacity="0.35" />
+            </filter>
+          </defs>
+          {/* La rotación −90° vive en un <g> para no chocar con la animación de
+              entrada (que anima el transform del <svg>). */}
+          <g transform={`rotate(-90 ${c} ${c})`}>
+            {/* Anillo de fondo — da profundidad y rellena los gaps */}
+            <circle cx={c} cy={c} r={r} fill="none" strokeWidth={stroke} className="stroke-border opacity-40" />
+            {rows.map((row, i) => {
+              const frac = row.count / N;
+              const len = Math.max(frac * C - gap, 0.5);
+              const isActive = active === row.key;
+              const dim = active !== null && !isActive;
+              const dasharray = `${len} ${C - len}`;
+              const dashoffset = -offsets[i];
+              return (
+                <Segment
+                  key={row.key}
+                  cx={c}
+                  cy={c}
+                  r={r}
+                  stroke={row.color}
+                  baseWidth={stroke}
+                  isActive={isActive}
+                  dim={dim}
+                  dasharray={dasharray}
+                  dashoffset={dashoffset}
+                  title={`${row.label}: ${share(frac)}%`}
+                  href={row.href}
+                  onActivate={() => setActive(row.key)}
+                  onDeactivate={clear}
+                />
+              );
+            })}
+          </g>
         </svg>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           {activeRow ? (
             <>
-              <span className="font-mono text-3xl font-semibold tabular-nums" style={{ color: activeRow.color }}>
+              <span className="font-mono text-3xl font-semibold tabular-nums transition-colors" style={{ color: activeRow.color }}>
                 {share(activeRow.count / N)}%
               </span>
               <span className="mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider text-muted">
@@ -110,42 +113,125 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
         </div>
       </div>
 
-      {/* Leyenda — sincronizada con el donut */}
-      <ol className="w-full flex-1 space-y-0.5">
+      {/* Leyenda — sincronizada con el donut, con mini-barra de proporción */}
+      <ol className="w-full flex-1 space-y-1.5">
         {rows.map((row, i) => {
           const isActive = active === row.key;
           const dim = active !== null && !isActive;
-          const inner = (
+          const frac = row.count / N;
+          const body = (
             <>
-              <span className="flex min-w-0 items-center gap-2">
-                <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: row.color }} aria-hidden />
-                <span className={`uppercase tracking-wider ${i === 0 || isActive ? "font-semibold text-text" : "text-text"}`}>
-                  <T es={row.label} en={row.labelEn} />
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="flex min-w-0 items-center gap-2">
+                  <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: row.color }} aria-hidden />
+                  <span className={`uppercase tracking-wider ${i === 0 || isActive ? "font-semibold text-text" : "text-text"}`}>
+                    <T es={row.label} en={row.labelEn} />
+                  </span>
                 </span>
-              </span>
-              <span className="shrink-0 whitespace-nowrap text-right tabular-nums text-muted">
-                <span className={i === 0 || isActive ? "text-text" : ""}>{share(row.count / N)}%</span>
-                {" · "}
-                {row.count.toFixed(1)} <T es="casos" en="cases" />
-              </span>
+                <span className="shrink-0 whitespace-nowrap text-right tabular-nums text-muted">
+                  <span className={i === 0 || isActive ? "text-text" : ""}>{share(frac)}%</span>
+                  {" · "}
+                  {row.count.toFixed(1)} <T es="casos" en="cases" />
+                </span>
+              </div>
+              {/* Mini-barra: longitud relativa a la hipótesis más grande */}
+              <div className="mt-1 h-[3px] w-full overflow-hidden rounded-full bg-border/40">
+                <div
+                  className="h-full rounded-full transition-[width] duration-300"
+                  style={{ width: `${(frac / maxFrac) * 100}%`, backgroundColor: row.color }}
+                />
+              </div>
             </>
           );
-          const rowClass = `flex items-baseline justify-between gap-3 rounded-sm px-2 py-1 transition-colors ${
+          const rowClass = `block rounded-sm px-2 py-1 transition-all ${
             isActive ? "bg-border/40" : dim ? "opacity-50" : ""
           }`;
           return (
             <li key={row.key} className="-mx-2 font-mono text-xs" onMouseEnter={() => setActive(row.key)} onMouseLeave={clear}>
               {row.href ? (
                 <a href={row.href} className={`${rowClass} hover:bg-border/40`} onFocus={() => setActive(row.key)} onBlur={clear}>
-                  {inner}
+                  {body}
                 </a>
               ) : (
-                <div className={rowClass}>{inner}</div>
+                <div className={rowClass}>{body}</div>
               )}
             </li>
           );
         })}
       </ol>
     </div>
+  );
+}
+
+/** Un segmento del donut: arco principal + halo de color cuando está activo. */
+function Segment({
+  cx,
+  cy,
+  r,
+  stroke,
+  baseWidth,
+  isActive,
+  dim,
+  dasharray,
+  dashoffset,
+  title,
+  href,
+  onActivate,
+  onDeactivate,
+}: {
+  cx: number;
+  cy: number;
+  r: number;
+  stroke: string;
+  baseWidth: number;
+  isActive: boolean;
+  dim: boolean;
+  dasharray: string;
+  dashoffset: number;
+  title: string;
+  href?: string;
+  onActivate: () => void;
+  onDeactivate: () => void;
+}) {
+  const content = (
+    <g className="cursor-pointer" onMouseEnter={onActivate} onMouseLeave={onDeactivate}>
+      {/* Halo de color difuminado, solo cuando está activo */}
+      {isActive && (
+        <circle
+          cx={cx}
+          cy={cy}
+          r={r}
+          fill="none"
+          stroke={stroke}
+          strokeWidth={baseWidth + 14}
+          strokeDasharray={dasharray}
+          strokeDashoffset={dashoffset}
+          style={{ opacity: 0.4, filter: "blur(5px)" }}
+          aria-hidden
+        />
+      )}
+      <circle
+        data-segment
+        cx={cx}
+        cy={cy}
+        r={r}
+        fill="none"
+        stroke={stroke}
+        strokeWidth={isActive ? baseWidth + 6 : baseWidth}
+        strokeDasharray={dasharray}
+        strokeDashoffset={dashoffset}
+        className="transition-all duration-200"
+        style={{ opacity: dim ? 0.35 : 1, filter: isActive ? "url(#donut-lift)" : undefined }}
+      >
+        <title>{title}</title>
+      </circle>
+    </g>
+  );
+  return href ? (
+    <a href={href} aria-label={title} onFocus={onActivate} onBlur={onDeactivate}>
+      {content}
+    </a>
+  ) : (
+    content
   );
 }

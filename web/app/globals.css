@@ -79,6 +79,30 @@ html[data-locale="en"] [data-lang="es"] {
   display: none;
 }
 
+/* ── Donut de /probabilidades — entrada de "nueva generación" ──────────────
+   Animación de entrada CSS-pura (corre sin JS, compatible con SSG). El donut
+   aparece con un leve giro + escala; la interactividad (hover) la maneja el
+   componente cliente. Respeta prefers-reduced-motion. */
+@keyframes donut-in {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.donut-in {
+  animation: donut-in 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  transform-origin: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .donut-in {
+    animation: none;
+  }
+}
+
 /* ── Filtro por región (data-region-filter en el contenedor) ───────────────
    Patrón CSS-puro, hermano del toggle de idioma. El contenedor activo oculta
    los ítems [data-region] que no matchean, y las secciones [data-group] que
