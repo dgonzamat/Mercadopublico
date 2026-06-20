@@ -46,64 +46,81 @@ export function MecePartition({
 
   const enh = scored.reduce((s, c) => s + entidadesNoHumanas(classifiedPosterior(c.posterior)), 0);
   const het = scored.reduce((s, c) => s + heterogeneidad(classifiedPosterior(c.posterior)), 0);
+  const anomalo = het;            // 1 − prosaico, sumado
+  const prosaico = N - het;       // misid + natural + fraude
+  const colorOf = Object.fromEntries(rows.map((r) => [r.key, r.color])) as Record<string, string>;
+  const prosaicoColor = colorOf.misid ?? rows[0].color;
+  const anomaloColor = colorOf.nohumano ?? colorOf.nohumano_encubierto ?? rows[rows.length - 1].color;
 
   return (
     <div>
-      <div className="space-y-2.5">
+      {/* Cinta apilada 100% — la partición como un entero */}
+      <div
+        className="flex h-9 w-full gap-px overflow-hidden rounded-md bg-panel"
+        role="img"
+        aria-label={`${rows.map((r) => `${r.label} ${share(r.count / N)}%`).join(", ")}`}
+      >
         {rows.map((c) => (
-          <div key={c.key}>
-            <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
-              <span className="min-w-0 uppercase tracking-wider text-text">
-                <T es={c.label} en={c.labelEn} />
-              </span>
-              <span className="shrink-0 whitespace-nowrap text-right text-muted">
-                {share(c.count / N)}%
-                {!compact && (
-                  <>
-                    {" · "}
-                    {c.count.toFixed(1)} <T es="casos" en="cases" />
-                  </>
-                )}
-              </span>
-            </div>
-            <div className="mt-1 h-2 w-full bg-border/40">
-              <div className="h-2" style={{ width: `${(c.count / N) * 100}%`, backgroundColor: c.color }} />
-            </div>
-          </div>
+          <div
+            key={c.key}
+            title={`${c.label}: ${share(c.count / N)}%`}
+            style={{ width: `${(c.count / N) * 100}%`, backgroundColor: c.color }}
+          />
         ))}
       </div>
-      <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
+
+      {/* Leyenda jerárquica */}
+      <ol className="mt-5 space-y-2.5">
+        {rows.map((c, i) => (
+          <li key={c.key} className="flex items-baseline justify-between gap-3 font-mono text-xs">
+            <span className="flex min-w-0 items-center gap-2">
+              <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: c.color }} aria-hidden />
+              <span className={`uppercase tracking-wider ${i === 0 ? "font-semibold text-text" : "text-text"}`}>
+                <T es={c.label} en={c.labelEn} />
+              </span>
+            </span>
+            <span className="shrink-0 whitespace-nowrap text-right tabular-nums text-muted">
+              <span className={i === 0 ? "text-text" : ""}>{share(c.count / N)}%</span>
+              {!compact && (
+                <>
+                  {" · "}
+                  {c.count.toFixed(1)} <T es="casos" en="cases" />
+                </>
+              )}
+            </span>
+          </li>
+        ))}
+      </ol>
+
+      <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
         <T
           es={totalLabelEs ?? `Suman 100% · ${N} casos de incidente · partición exhaustiva`}
           en={totalLabelEn ?? `Sum to 100% · ${N} incident cases · exhaustive partition`}
         />
       </p>
+
       {!compact && showDerived && (
-        <div className="mt-4 space-y-3 border-t border-border pt-3 font-mono text-[11px]">
-          {!consolidateNonHuman && (
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
-                <div className="uppercase tracking-wider text-text">
-                  <T es="Entidades no humanas" en="Non-human entities" />
-                </div>
-                <div className="text-muted">
-                  <T es="derivada = encubierto + abierto" en="derived = covert + open" />
-                </div>
-              </div>
-              <span className="shrink-0 text-muted">{pct(enh / N)}%</span>
-            </div>
-          )}
-          <div className="flex items-start justify-between gap-3">
-            <div className="min-w-0">
-              <div className="uppercase tracking-wider text-text">
-                <T es="Heterogeneidad" en="Heterogeneity" />
-              </div>
-              <div className="text-muted">
-                <T es="derivada = 1 − prosaico (misid+natural+fraude)" en="derived = 1 − prosaic (misid+natural+hoax)" />
-              </div>
-            </div>
-            <span className="shrink-0 text-muted">{pct(het / N)}%</span>
+        <div className="mt-4 border-t border-border pt-4">
+          {/* Eje macro: prosaico vs anómalo/secreto */}
+          <div className="flex h-2 w-full gap-px overflow-hidden rounded-full bg-panel">
+            <div style={{ width: `${(prosaico / N) * 100}%`, backgroundColor: prosaicoColor }} />
+            <div style={{ width: `${(anomalo / N) * 100}%`, backgroundColor: anomaloColor }} />
           </div>
+          <div className="mt-2 flex items-baseline justify-between gap-3 font-mono text-[11px]">
+            <span className="uppercase tracking-wider text-text">
+              <T es="Prosaico" en="Prosaic" />{" "}
+              <span className="text-muted">{pct(prosaico / N)}% · misid+natural+fraude</span>
+            </span>
+            <span className="text-right uppercase tracking-wider text-text">
+              <span className="text-muted">clasificado+adversaria+no-humano ·</span> <T es="Anómalo" en="Anomalous" />{" "}
+              {pct(anomalo / N)}%
+            </span>
+          </div>
+          {!consolidateNonHuman && (
+            <p className="mt-3 font-mono text-[11px] text-muted">
+              <T es="Entidades no humanas (encubierto + abierto)" en="Non-human entities (covert + open)" />: {pct(enh / N)}%
+            </p>
+          )}
         </div>
       )}
     </div>
