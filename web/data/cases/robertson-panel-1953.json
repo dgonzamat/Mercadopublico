@@ -16,12 +16,12 @@
   "epistemicStatus": "documented",
   "probability": 95,
   "posterior": {
-    "mundano_natural": 0.4,
-    "humana_clasificada": 0,
-    "adversaria": 0,
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.03,
     "nohumano_encubierto": 0,
-    "nohumano_abierto": 0,
-    "indet": 0.6
+    "nohumano_abierto": 0.07,
+    "indet": 0.2
   },
   "summary": "Un panel de cinco científicos convocado por la CIA en 1953 recomendó por escrito un programa de 'debunking' y el monitoreo de grupos civiles para reducir el interés público en los UFO: la política de desacreditación quedó prescrita en un documento, no inferida.",
   "summary_en": "A five-scientist panel convened by the CIA in 1953 recommended in writing a 'debunking' program and the monitoring of civilian groups to reduce public interest in UFOs: the discrediting policy is prescribed on paper, not inferred.",

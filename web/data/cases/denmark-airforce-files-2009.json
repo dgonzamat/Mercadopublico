@@ -18,12 +18,12 @@
   "epistemicStatus": "documented",
   "probability": 45,
   "posterior": {
-    "mundano_natural": 0.35,
-    "humana_clasificada": 0,
-    "adversaria": 0,
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.05,
     "nohumano_encubierto": 0,
-    "nohumano_abierto": 0,
-    "indet": 0.65
+    "nohumano_abierto": 0.1,
+    "indet": 0.25
   },
   "summary": "En 2009, la Fuerza Aérea Real de Dinamarca desclasificó y abrió al público sus archivos UFO: 329 páginas de reportes (1978–2002) entregadas a la asociación SUFOI, con más de 200 avistamientos no resueltos sobre un total de ~15.000 reportes acumulados en tres décadas. La razón oficial: 'no había nada secreto en los archivos'. Entre los casos figuran un objeto triangular luminoso al norte de Bornholm durante el ejercicio OTAN Mainbrace (1952) y ecos de radar inexplicados sobre el Báltico (1956). Primer registro de Dinamarca: el valor es la desclasificación institucional, encuadrada con honestidad sobre que la mayoría se explicó.",
   "summary_en": "In 2009, the Royal Danish Air Force declassified and opened its UFO files to the public: 329 pages of reports (1978–2002) handed to the SUFOI association, with over 200 unresolved sightings out of ~15,000 reports accumulated over three decades. The official reason: 'there was nothing secret in the files.' Among the cases: a luminous triangular object north of Bornholm during the NATO Mainbrace exercise (1952) and unexplained radar echoes over the Baltic (1956). Denmark's first record: the value is the institutional declassification, framed honestly that most were explained.",

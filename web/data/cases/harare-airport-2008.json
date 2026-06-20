@@ -17,12 +17,12 @@
   "epistemicStatus": "documented",
   "probability": 50,
   "posterior": {
-    "mundano_natural": 0.05,
+    "mundano_natural": 0.15,
     "humana_clasificada": 0,
-    "adversaria": 0.25,
+    "adversaria": 0.35,
     "nohumano_encubierto": 0,
-    "nohumano_abierto": 0.20,
-    "indet": 0.50
+    "nohumano_abierto": 0.2,
+    "indet": 0.3
   },
   "summary": "El 2 de julio de 2008, un objeto no identificado fue observado sobre el Aeropuerto Internacional de Harare, en Zimbabwe, posiblemente por radar y por medios ópticos. Un cable de la CIA fechado al día siguiente —clasificado 'Secret' y desclasificado solo en 2026 a través del tercer release de PURSUE— describe un objeto 'tipo disco' con centro hueco, una serie de luces rotativas en la parte inferior y 'haces' emanando de él, suspendido a altitud indeterminada. El reporte escaló al White House Situation Room y a la comunidad de inteligencia, poniendo a los activos de la CIA en Zimbabwe en alerta alta; internamente se debatió si era una plataforma de vigilancia de un gobierno extranjero o un objeto de origen no humano. No hay evidencia independiente verificable más allá del propio documento de inteligencia.",
   "summary_en": "On July 2, 2008, an unidentified object was observed over Harare International Airport in Zimbabwe, possibly by both radar and optical means. A CIA cable dated the next day —classified 'Secret' and declassified only in 2026 through the third PURSUE release— describes a 'disc-like' object with a hollow center, a series of rotating lights on the underside and 'beams' emanating from it, hovering at an undetermined altitude. The report escalated to the White House Situation Room and the intelligence community, putting CIA assets in Zimbabwe on high alert; internally there was debate over whether it was a foreign government's surveillance platform or an object of non-human origin. There is no independently verifiable evidence beyond the intelligence document itself.",
