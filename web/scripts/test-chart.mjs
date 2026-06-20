@@ -39,8 +39,9 @@ const fail = (msg) => {
 };
 const approx = (a, b, tol) => Math.abs(a - b) <= tol;
 
-// --- Parse de los segmentos del donut (stroke-width="38") -----------------
-const circleRe = /<circle\b[^>]*stroke-width="38"[^>]*>/g;
+// --- Parse de los segmentos del donut (marcados con data-segment) ---------
+// data-segment distingue los arcos de hipótesis del anillo de fondo y del halo.
+const circleRe = /<circle\b[^>]*\bdata-segment\b[^>]*>/g;
 const circles = html.match(circleRe) ?? [];
 
 const num = (tag, attr) => {
