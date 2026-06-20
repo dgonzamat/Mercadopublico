@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 50,
+  "posterior": {
+    "mundano_natural": 0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 1.0
+  },
   "summary": "El Arquivo Nacional de Brasil mantiene público —vía la plataforma SIAN— el 'Fundo Óvnis': un acervo de registros de OVNIs producido por el Comando da Aeronáutica (FAB) que abarca de 1952 a 2023 (informes, comunicaciones oficiales, imágenes, audios y dibujos). El flujo institucional arranca en 2008, cuando la FAB empezó a derivar al archivo el material desclasificado. La cifra oficial del Arquivo Nacional ronda los 743 registros; la prensa de 2026 la reportó como cerca de 900. En 2026, en pleno empuje de divulgación global, fue destacado por la prensa como uno de los archivos UAP estatales más abiertos del mundo — un contraste con la ambigüedad estratégica de EE.UU.",
   "summary_en": "Brazil's National Archives keeps public —via the SIAN platform— the 'Óvnis Fund': a collection of UFO records produced by the Air Force Command (FAB) spanning 1952 to 2023 (reports, official communications, images, audio and drawings). The institutional flow begins in 2008, when the FAB started routing declassified material to the archive. The National Archives' official figure is around 743 records; the 2026 press reported it as close to 900. In 2026, amid the global disclosure push, it was highlighted by the press as one of the world's most open state UAP archives — a contrast with U.S. strategic ambiguity.",
   "patterns": [

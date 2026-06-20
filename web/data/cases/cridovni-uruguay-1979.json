@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 65,
+  "posterior": {
+    "mundano_natural": 0.30,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.70
+  },
   "summary": "El 7 de agosto de 1979, la Fuerza Aérea Uruguaya creó la CRIDOVNI, comisión oficial bajo el Ministerio de Defensa que investiga denuncias con recursos militares —radar, controladores— y las clasifica. Activa sin interrupción por más de cuatro décadas, es la comisión UAP gubernamental de mayor continuidad del mundo, con una categoría explícita de casos «no convencionales».",
   "summary_en": "On 7 August 1979, the Uruguayan Air Force created CRIDOVNI, an official commission under the Ministry of Defense that investigates reports using military assets —radar, controllers— and classifies them. Active without interruption for over four decades, it is the world's longest-running government UAP commission, with an explicit \"non-conventional\" case category.",
   "patterns": [

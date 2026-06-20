@@ -15,6 +15,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 75,
+  "posterior": {
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.85
+  },
   "summary": "El GEIPAN, dentro de la agencia espacial francesa (CNES), es el único organismo gubernamental permanente, público y con financiamiento estatal dedicado al estudio científico de los UAP en el mundo. Operativo desde 1977 (como GEPAN, luego SEPRA, luego GEIPAN), recoge denuncias, investiga con gendarmería y meteorología, publica sus expedientes y clasifica un residuo persistente (~3% de tipo D) como inexplicado.",
   "summary_en": "GEIPAN, within the French space agency (CNES), is the only permanent, public, state-funded government body dedicated to the scientific study of UAP in the world. Operational since 1977 (as GEPAN, then SEPRA, then GEIPAN), it collects reports, investigates with gendarmerie and meteorology, publishes its case files, and classifies a persistent residue (~3% type D) as unexplained.",
   "patterns": [

@@ -170,3 +170,23 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
       seeded: !c.posterior,
     }));
 }
+
+/**
+ * Casos-documento con su "lean" evidencial: a qué narrativa inclina el
+ * contenido del documento (NO «qué era el objeto» — un documento no tiene
+ * objeto). Es un eje distinto del de incidentes; se muestra aparte y NUNCA
+ * se suma con `corpusPosteriors`. Los documentos sin posterior declarado caen
+ * en `indet` (no inclinan a ninguna narrativa: puro proceso/inconcluso).
+ */
+export function documentPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): ScoredCase[] {
+  return cases
+    .filter((c) => c.category === "document")
+    .map((c) => ({
+      id: c.id,
+      name: c.name,
+      tier: c.tier,
+      category: c.category,
+      posterior: c.posterior ? normalize(c.posterior) : { ...emptyPosterior(), indet: 1 },
+      seeded: !c.posterior,
+    }));
+}

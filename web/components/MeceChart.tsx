@@ -5,6 +5,7 @@ import {
   expectedCounts,
   entidadesNoHumanas,
   heterogeneidad,
+  type ScoredCase,
 } from "@/lib/meceModel";
 import type { Posterior } from "@/lib/types";
 
@@ -17,8 +18,23 @@ const share = (x: number) => (x * 100).toFixed(1);
  * Partición comparable del corpus: las 6 narrativas reparten el 100%.
  * + vistas derivadas (entidades-no-humanas, heterogeneidad).
  */
-export function MecePartition({ compact = false }: { compact?: boolean }) {
-  const scored = corpusPosteriors();
+export function MecePartition({
+  compact = false,
+  items,
+  totalLabelEs,
+  totalLabelEn,
+  showDerived = true,
+}: {
+  compact?: boolean;
+  /** Dataset a graficar; por defecto los incidentes (corpusPosteriors). */
+  items?: ScoredCase[];
+  /** Pie de gráfico ES/EN; por defecto "Suman 100% · N casos de incidente…". */
+  totalLabelEs?: string;
+  totalLabelEn?: string;
+  /** Vistas derivadas (solo aplican a la partición de incidentes). */
+  showDerived?: boolean;
+}) {
+  const scored = items ?? corpusPosteriors();
   const N = scored.length;
   const counts = expectedCounts(scored);
   const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
@@ -52,9 +68,12 @@ export function MecePartition({ compact = false }: { compact?: boolean }) {
         ))}
       </div>
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T es={`Suman 100% · ${N} casos de incidente · partición exhaustiva`} en={`Sum to 100% · ${N} incident cases · exhaustive partition`} />
+        <T
+          es={totalLabelEs ?? `Suman 100% · ${N} casos de incidente · partición exhaustiva`}
+          en={totalLabelEn ?? `Sum to 100% · ${N} incident cases · exhaustive partition`}
+        />
       </p>
-      {!compact && (
+      {!compact && showDerived && (
         <div className="mt-4 space-y-3 border-t border-border pt-3 font-mono text-[11px]">
           <div className="flex items-start justify-between gap-3">
             <div className="min-w-0">

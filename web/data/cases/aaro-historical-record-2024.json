@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 70,
+  "posterior": {
+    "mundano_natural": 0.75,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.25
+  },
   "summary": "El 8 de marzo de 2024 la AARO publicó el Volumen 1 de su 'Report on the Historical Record of U.S. Government Involvement with UAP'. Tras revisar el período 1945–2023, concluyó que no halló evidencia de que ninguna investigación oficial confirmara tecnología extraterrestre ni de programas de ingeniería inversa — atribuyendo las creencias a identificaciones erróneas, confusión burocrática y reportes circulares. Es el ancla institucional escéptica más fuerte del corpus.",
   "summary_en": "On March 8, 2024, AARO published Volume 1 of its 'Report on the Historical Record of U.S. Government Involvement with UAP'. After reviewing the 1945–2023 period, it concluded it found no evidence that any official investigation confirmed extraterrestrial technology or reverse-engineering programs — attributing the beliefs to misidentifications, bureaucratic confusion and circular reporting. It is the corpus's strongest skeptical institutional anchor.",
   "patterns": [

@@ -14,6 +14,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 75,
+  "posterior": {
+    "mundano_natural": 0.05,
+    "humana_clasificada": 0.20,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.40,
+    "indet": 0.35
+  },
   "summary": "El equipo de Project Sign concluyó en un documento TOP SECRET de 1948 que la hipótesis interplanetaria era la explicación más probable del fenómeno; el General Vandenberg rechazó la evaluación y ordenó destruirla, sin refutación científica documentada.",
   "summary_en": "In a 1948 TOP SECRET document, the Project Sign team concluded the interplanetary hypothesis was the most probable explanation of the phenomenon; General Vandenberg rejected the estimate and ordered it destroyed, with no documented scientific rebuttal.",
   "patterns": [

@@ -157,7 +157,9 @@ for (const file of caseFiles) {
     err(w, `epistemicStatus inválido "${c.epistemicStatus}"`);
   if (!CATEGORIES.has(c.category)) err(w, `category inválida "${c.category}"`);
   if (!isNum(c.probability)) err(w, "probability obligatorio (number)");
-  // posterior (modelo MECE): si está presente, valida 9 claves y suma ≈ 1.
+  // posterior (modelo MECE): si está presente, valida 6 claves y suma ≈ 1.
+  // En incidentes es P(narrativa|objeto); en documentos es el "lean" evidencial
+  // (a qué narrativa inclina el documento). Ambos usos son válidos.
   if (c.posterior !== undefined) {
     const MECE_KEYS = ["mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet"];
     const miss = MECE_KEYS.filter((k) => typeof c.posterior[k] !== "number");
@@ -168,7 +170,6 @@ for (const file of caseFiles) {
       const tot = MECE_KEYS.reduce((acc, k) => acc + c.posterior[k], 0);
       if (Math.abs(tot - 1) > 0.005) err(w, `posterior suma ${tot.toFixed(4)} (debe ser 1)`);
     }
-    if (c.category === "document") err(w, "posterior no aplica a casos category=document");
   }
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");

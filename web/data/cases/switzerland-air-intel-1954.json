@@ -16,6 +16,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 35,
+  "posterior": { "mundano_natural": 0, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 1.0 },
   "summary": "Un expediente de 1954 (código E5465B) del Servicio de Inteligencia de la Fuerza Aérea suiza contiene directivas para que pilotos y funcionarios reportaran avistamientos de OVNIs de forma sistemática. Se desarrollaron formularios de observación en tres idiomas —posición, dirección, elevación, tamaño, forma, propulsión aparente, velocidad— que ex pilotos del ejército confirman se usaron hasta los años 90. La mayoría de esos documentos fueron destruidos. Primer registro de Suiza: el valor es la infraestructura institucional de reporte, no un caso anómalo, en un país neutral.",
   "summary_en": "A 1954 file (code E5465B) of the Swiss Air Force Intelligence Service contains directives for pilots and officials to report UFO sightings systematically. Observation forms in three languages were developed —position, direction, elevation, size, shape, apparent propulsion, speed— which former army pilots confirm were used until the 1990s. Most of those documents were destroyed. Switzerland's first record: the value is the institutional reporting infrastructure, not an anomalous case, in a neutral country.",
   "patterns": [],

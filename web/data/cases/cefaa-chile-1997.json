@@ -15,6 +15,14 @@
   },
   "tier": "A",
   "probability": 48,
+  "posterior": {
+    "mundano_natural": 0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 1.0
+  },
   "epistemicStatus": "documented",
   "category": "document",
   "summary": "Tras dos noches de avistamientos en el aeropuerto de Chacalluta (Arica) en marzo de 1997, la Dirección General de Aeronáutica Civil (DGAC) creó ese año el CEFAA (Comité de Estudios de Fenómenos Aéreos Anómalos), dependiente de la aviación civil chilena. Reúne un panel multidisciplinario (astrónomos, físicos, psicólogos, expertos aeronáuticos) para analizar reportes de FANI con método científico. Bajo la dirección del general (R) Ricardo Bermúdez (2009–2016) investigó y reconoció públicamente casos como El Bosque (2010) y el helicóptero naval (2014). Completa el cuarteto de comisiones oficiales latinoamericanas junto a CRIDOVNI, OIFAA y CIAE.",

@@ -16,6 +16,14 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 75,
+  "posterior": {
+    "mundano_natural": 0.40,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.60
+  },
   "summary": "El 7 de marzo de 1975, el coronel Abdelhamid Latreche, Secretario General del Ministerio de Defensa Nacional de Argelia, convocó a la embajada de Estados Unidos en Argel para exigir explicaciones sobre 'máquinas' no identificadas en el espacio aéreo argelino, incluido un avistamiento confirmado por radar el día anterior.",
   "summary_en": "On 7 March 1975, Colonel Abdelhamid Latreche, Secretary General of Algeria's Ministry of National Defence, summoned the U.S. embassy in Algiers to demand an explanation for unidentified 'machines' in Algerian airspace, including a radar-confirmed sighting the day before.",
   "patterns": [

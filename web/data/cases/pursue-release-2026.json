@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "developing",
   "probability": 95,
+  "posterior": {
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.1,
+    "indet": 0.75
+  },
   "summary": "PURSUE — siglas de un sistema presidencial estadounidense de release UAP — es la directiva ejecutiva firmada por la administración Trump en mayo 2026 que ordena al recién renombrado Departamento de Guerra (ex-DoD) ejecutar un release interagencial 'expeditivo' de registros UAP no resueltos. El portal war.gov/ufo/ abrió el 8 de mayo de 2026 y publicó en tandas sucesivas: Release 1 (8 may), Release 2 (22 may) y Release 3 (12 jun) — esta última con 53 documentos, 10 renders digitales, 6 videos y 3 audios de NASA, provenientes de CIA, FBI, NASA y el Pentágono. A mediados de junio el portal superaba los 1.700 millones de accesos. El reporte de AARO que acompaña al tercer release (firmado por su director Jon Kosloski, 5 jun) acentúa orbes 'plasma-like' —incluida una 'mother orb' naranja que libera orbes rojos menores— y admite que ~40% de los casos siguen sin explicación. Es la primera infraestructura federal estadounidense de release UAP con mandato presidencial directo y URL pública estable. El contenido sigue siendo más procedural que probatorio —videos de orbes, audios históricos y documentos desclasificados, sin la pieza concluyente que zanjaría la pregunta material— pero ya no es un canal vacío.",
   "summary_en": "PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) is the executive directive signed by the Trump administration in May 2026 ordering the newly renamed Department of War (formerly DoD) to execute an 'expeditious' interagency release of unresolved UAP records. The war.gov/ufo/ portal opened on May 8, 2026 and published in successive tranches: Release 1 (May 8), Release 2 (May 22) and Release 3 (June 12) — the latter with 53 documents, 10 digital renderings, 6 videos and 3 NASA audio recordings, sourced from the CIA, FBI, NASA and the Pentagon. By mid-June the portal had surpassed 1.7 billion accesses. The AARO assessment accompanying the third release (signed by its director Jon Kosloski, June 5) emphasizes 'plasma-like' orbs —including an orange 'mother orb' releasing smaller red orbs— and concedes that ~40% of cases remain unexplained. It is the first U.S. federal UAP-release infrastructure with a direct presidential mandate and a stable public URL. The content remains more procedural than probative —orb videos, historical audio and declassified documents, without the conclusive piece that would settle the material question— but it is no longer an empty channel.",
   "patterns": [

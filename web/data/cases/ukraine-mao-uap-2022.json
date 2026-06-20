@@ -16,6 +16,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 22,
+  "posterior": { "mundano_natural": 0.8, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 0.2 },
   "summary": "En 2022, en plena invasión rusa, astrónomos del Observatorio Astronómico Principal (MAO) de la Academia Nacional de Ciencias de Ucrania publicaron dos papers (arXiv) reportando observaciones de UAP sobre Kyiv con dos estaciones de meteoros (Kyiv y Vinarivka, base de 120 km). Clasificaron objetos en 'Cosmics' (luminosos) y 'Phantoms' (oscuros), con velocidades y altitudes extraordinarias. Encuadre honesto: la propia Academia Nacional de Ciencias desacreditó oficialmente el estudio por falta de rigor y errores graves en la estimación de distancias. Primer registro de Ucrania: documenta el episodio institucional —y su corrección—, no una anomalía probada.",
   "summary_en": "In 2022, amid the Russian invasion, astronomers at the Main Astronomical Observatory (MAO) of the National Academy of Sciences of Ukraine published two papers (arXiv) reporting UAP observations over Kyiv using two meteor stations (Kyiv and Vinarivka, 120 km baseline). They classified objects into 'Cosmics' (luminous) and 'Phantoms' (dark), with extraordinary speeds and altitudes. Honest framing: the National Academy of Sciences itself officially discredited the study for lack of rigor and serious errors in distance estimation. Ukraine's first record: it documents the institutional episode —and its correction— not a proven anomaly.",
   "patterns": [],

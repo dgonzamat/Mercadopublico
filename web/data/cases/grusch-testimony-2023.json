@@ -14,6 +14,14 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 78,
+  "posterior": {
+    "mundano_natural": 0.05,
+    "humana_clasificada": 0.10,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.40,
+    "nohumano_abierto": 0,
+    "indet": 0.45
+  },
   "summary": "El ex oficial de inteligencia David Grusch testificó bajo juramento ante el Congreso que múltiples fuentes primarias le describieron programas no divulgados de recuperación de material no humano; el Inspector General de la IC calificó su denuncia de 'creíble y urgente'. Testimonio de oídas, pero multifuente.",
   "summary_en": "Former intelligence officer David Grusch testified under oath before Congress that multiple firsthand sources described undisclosed programs recovering non-human material; the IC Inspector General deemed his complaint 'credible and urgent'. Hearsay testimony, but multi-source.",
   "patterns": [

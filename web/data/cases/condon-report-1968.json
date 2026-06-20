@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 60,
+  "posterior": {
+    "mundano_natural": 0.70,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.30
+  },
   "summary": "'Scientific Study of Unidentified Flying Objects' (1968), dirigido por el físico Edward Condon en la Universidad de Colorado con financiamiento de la USAF. Su conclusión —que el estudio de los OVNIs no aporta valor científico— cerró el Project Blue Book en 1969. Pero su credibilidad quedó dañada: el 'memo Low' reveló un sesgo de diseño, y cerca de un tercio de los casos quedó sin explicación pese a la conclusión.",
   "summary_en": "'Scientific Study of Unidentified Flying Objects' (1968), led by physicist Edward Condon at the University of Colorado with USAF funding. Its conclusion —that studying UFOs offers no scientific value— closed Project Blue Book in 1969. But its credibility was damaged: the 'Low memo' revealed a design bias, and roughly a third of cases remained unexplained despite the conclusion.",
   "patterns": [

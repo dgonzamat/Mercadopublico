@@ -16,6 +16,14 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 28,
+  "posterior": {
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.15,
+    "nohumano_abierto": 0,
+    "indet": 0.70
+  },
   "summary": "Memos del FBI de los años 60, desclasificados en la entrega PURSUE (2026), que recogen reportes de testigos sobre 'crewmen' humanoides pequeños —con traje y casco— saliendo de craft no identificados. Pertenecen a la categoría de encuentros con ocupantes (CE3): valor evidencial bajo (testimonial, sin corroboración física), incluidos por completitud documental y como muestra del tipo de material que el FBI archivó.",
   "summary_en": "FBI memos from the 1960s, declassified in the PURSUE release (2026), that log witness reports of small humanoid 'crewmen' —wearing suits and helmets— emerging from unidentified craft. They belong to the occupant-encounter category (CE3): low evidential value (testimonial, no physical corroboration), included for documentary completeness and as a sample of the kind of material the FBI archived.",
   "patterns": [],

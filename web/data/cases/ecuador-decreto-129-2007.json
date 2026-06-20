@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 75,
+  "posterior": {
+    "mundano_natural": 0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 1.0
+  },
   "summary": "El 17 de mayo de 2007, el Decreto Ejecutivo N° 129 ordenó la desclasificación de los archivos de la Fuerza Aérea Ecuatoriana (FAE) sobre observaciones aéreas anómalas, incluido el encuentro de 1989 entre un caza Mirage F.1 y un objeto no identificado sobre la Amazonía ecuatoriana.",
   "summary_en": "On 17 May 2007, Executive Decree No. 129 ordered the declassification of the Ecuadorian Air Force (FAE) files on anomalous aerial observations, including the 1989 encounter between a Mirage F.1 fighter and an unidentified object over the Ecuadorian Amazon.",
   "patterns": [

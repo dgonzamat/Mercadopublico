@@ -16,6 +16,7 @@
   "tier": "A",
   "epistemicStatus": "developing",
   "probability": 80,
+  "posterior": { "mundano_natural": 0, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0, "indet": 1.0 },
   "summary": "El 12 de junio de 2026, el astrofísico de Harvard Avi Loeb anunció que la Casa Blanca, AARO, la ODNI y el FBI le pidieron formar y presidir un Consejo Asesor Científico sobre UAP. Reúne un equipo de datos (Cloete, Sarmiento, Szydagis, Nandal, Eldadi) y un panel más amplio con escépticos y defensores, con el mandato de aplicar método científico priorizando datos nuevos de alta calidad sobre material viejo no verificable.",
   "summary_en": "On June 12, 2026, Harvard astrophysicist Avi Loeb announced that the White House, AARO, ODNI and the FBI asked him to assemble and chair a UAP Science Advisory Council. It brings together a data team (Cloete, Sarmiento, Szydagis, Nandal, Eldadi) and a broader panel spanning skeptics and advocates, mandated to apply scientific method by prioritizing new high-quality data over old, unverifiable material.",
   "patterns": [

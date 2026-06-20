@@ -15,6 +15,14 @@
   },
   "tier": "A",
   "probability": 38,
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.55
+  },
   "epistemicStatus": "documented",
   "summary": "La Fuerza Aérea Argentina creó el 6 de mayo de 2011 la CEFAe (Comisión de Estudio de Fenómenos Aeroespaciales) para analizar reportes de fenómenos aéreos no identificados. Desde 2014, bajo el comodoro (R) Rubén Lianza, adoptó un enfoque científico-técnico y resolvió la mayoría de los casos como fenómenos prosaicos (astros, drones, reflejos, satélites). En 2019 se reorganizó como CIAE (Centro de Identificación Aeroespacial). Es el organismo oficial argentino, que completa el cuarteto latinoamericano junto a CRIDOVNI (Uruguay), OIFAA (Perú) y CEFAA (Chile).",
   "summary_en": "The Argentine Air Force created CEFAe (Commission for the Study of Aerospace Phenomena) on 6 May 2011 to analyze reports of unidentified aerial phenomena. From 2014, under Commodore (ret.) Rubén Lianza, it adopted a scientific-technical approach and resolved most cases as prosaic phenomena (celestial bodies, drones, reflections, satellites). In 2019 it was reorganized as CIAE (Aerospace Identification Center). It is Argentina's official body, completing the Latin American quartet alongside CRIDOVNI (Uruguay), OIFAA (Peru) and CEFAA (Chile).",
