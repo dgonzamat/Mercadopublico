@@ -56,7 +56,7 @@ export function websiteJsonLd() {
     name: "UAP Codex",
     alternateName: "UAP Codex — Institutional analysis",
     url: SITE_URL,
-    description: `${STATS.years} años de fenómeno UAP documentado institucionalmente. ${STATS.cases} casos en ${STATS.countries} países, calibrados bajo ICD-203.`,
+    description: `${STATS.years} años de fenómeno UAP documentado institucionalmente. ${STATS.cases} casos en ${STATS.countries} países, con un modelo de probabilidad comparable (MECE).`,
     inLanguage: ["es", "en"],
     publisher: {
       "@type": "Organization",

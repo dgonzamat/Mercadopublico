@@ -517,7 +517,10 @@ export default async function CaseDetailPage(
                   <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     partición comparable
                   </Link>
-                  .
+                  . Es una pregunta distinta de la{" "}
+                  <em>Probabilidad</em> de arriba: aquella estima qué tan
+                  probable es que el caso sea un fenómeno genuinamente no
+                  explicado; esta reparte <em>cuál</em> sería la explicación.
                 </>
               }
               en={
@@ -528,7 +531,10 @@ export default async function CaseDetailPage(
                   <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     comparable partition
                   </Link>
-                  .
+                  . It is a different question from the{" "}
+                  <em>Probability</em> above: that one estimates how likely the
+                  case is a genuinely unexplained phenomenon; this one splits{" "}
+                  <em>which</em> the explanation would be.
                 </>
               }
             />

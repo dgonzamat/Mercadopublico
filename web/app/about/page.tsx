@@ -30,8 +30,8 @@ const CHAPTERS = [
   {
     id: "bayes",
     n: "2",
-    es: { eyebrow: "Capítulo 2", h2: "Por qué el caso número 50 ya no agrega nada", tldr: "Un caso militar con sensor mueve la aguja; el caso 50 del mismo patrón ya no aporta evidencia nueva" },
-    en: { eyebrow: "Chapter 2", h2: "Why case number 50 no longer adds anything", tldr: "A military case with sensor moves the needle; case 50 of the same pattern adds no new evidence" },
+    es: { eyebrow: "Capítulo 2", h2: "Por qué el caso número 50 ya no agrega nada nuevo", tldr: "Un caso con sensor produce un posterior nítido que mueve masa entre narrativas; el caso 50 del mismo patrón solo refuerza la que ya dominaba" },
+    en: { eyebrow: "Chapter 2", h2: "Why case number 50 adds nothing new", tldr: "A sensor case yields a sharp posterior that moves mass between narratives; case 50 of the same pattern only reinforces the one already dominant" },
   },
   {
     id: "non-exclusive",
@@ -169,47 +169,47 @@ export default function AboutPage() {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="No todos los casos añaden evidencia igualmente. Algunos mueven la aguja; otros ya no aportan nada nuevo porque repiten un patrón ya documentado."
-                  en="Not all cases add evidence equally. Some move the needle; others no longer add anything new because they repeat an already-documented pattern."
+                  es="Cada caso suma su posterior completo a la partición —el agregado es lineal, sin «rendimientos decrecientes» ocultos—. Lo que cambia es qué tan informativo es ese posterior: un caso institucional con sensor produce un posterior nítido que puede desplazar masa hacia una narrativa antes casi vacía; el caso número cincuenta del mismo patrón solo refuerza la narrativa que ya dominaba, sin enseñarnos nada nuevo sobre la forma de la partición."
+                  en="Each case adds its full posterior to the partition —the aggregate is linear, with no hidden 'diminishing returns'—. What changes is how informative that posterior is: an institutional case with a sensor yields a sharp posterior that can move mass toward a previously near-empty narrative; case number fifty of the same pattern only reinforces the narrative that was already dominant, teaching us nothing new about the shape of the partition."
                 />
               </Body>
               <div className="grid gap-4 sm:grid-cols-2">
                 <MoveList
-                  es="Mueve mucho"
-                  en="Moves a lot"
+                  es="Desplaza masa entre narrativas"
+                  en="Moves mass between narratives"
                   items={[
-                    "Tier 1/2 con multi-sensor (Tehran +5%)",
-                    "Categoría nueva (Hessdalen +categoría)",
-                    "Caso que contradice patrón establecido",
-                    "Sensores oficiales + video (Lake Huron +2%)",
+                    "Tier 1/2 con multi-sensor → posterior nítido (Tehran, Nimitz)",
+                    "Categoría de evidencia nueva (Hessdalen, Lake Huron)",
+                    "Caso que contradice el patrón establecido",
+                    "Sensores oficiales + video correlacionado",
                   ]}
                   itemsEn={[
-                    "Tier 1/2 with multi-sensor (Tehran +5%)",
-                    "New category (Hessdalen +category)",
-                    "Case that contradicts established pattern",
-                    "Official sensors + video (Lake Huron +2%)",
+                    "Tier 1/2 with multi-sensor → sharp posterior (Tehran, Nimitz)",
+                    "New class of evidence (Hessdalen, Lake Huron)",
+                    "Case that contradicts the established pattern",
+                    "Official sensors + correlated video",
                   ]}
                   accent
                 />
                 <MoveList
-                  es="Mueve poco o nada"
-                  en="Barely moves"
+                  es="Solo refuerza lo dominante"
+                  en="Only reinforces the dominant"
                   items={[
-                    "Contactado aislado Tier 4 (Meier 1–2%)",
-                    "Caso #50 del mismo patrón (~0%)",
-                    "Nueva predicción de contactado fallida (baja, no sube)",
+                    "Contactado aislado Tier 4 → casi todo mundano/indet (Meier)",
+                    "Caso #50 del mismo patrón (escala la narrativa dominante)",
+                    "Predicción de contactado fallida (carga mundano_natural)",
                   ]}
                   itemsEn={[
-                    "Isolated Tier 4 contactee (Meier 1-2%)",
-                    "Case #50 of the same pattern (~0%)",
-                    "New failed contactee prediction (lowers, doesn't raise)",
+                    "Isolated Tier 4 contactee → mostly mundane/indet (Meier)",
+                    "Case #50 of the same pattern (scales the dominant narrative)",
+                    "Failed contactee prediction (loads mundano_natural)",
                   ]}
                 />
               </div>
               <Caption>
                 <T
-                  es={<><strong className="text-text">Estado:</strong> los casos individuales de tipo &quot;contactado&quot; ya no agregan evidencia útil. En cambio, los institucionales con sensor militar (Tier 1/2) siguen acumulando información valiosa.</>}
-                  en={<><strong className="text-text">Status:</strong> individual &quot;contactee&quot; cases no longer add useful evidence. By contrast, institutional cases with military sensors (Tier 1/2) keep accumulating valuable information.</>}
+                  es={<><strong className="text-text">Estado:</strong> los casos &quot;contactado&quot; aislados aportan posteriores dominados por <em>mundano_natural</em> e <em>indeterminable</em> — no redistribuyen la partición. Los institucionales con sensor (Tier 1/2) producen posteriores nítidos que sí mueven masa entre narrativas.</>}
+                  en={<><strong className="text-text">Status:</strong> isolated &quot;contactee&quot; cases contribute posteriors dominated by <em>mundano_natural</em> and <em>indeterminable</em> — they do not redistribute the partition. Institutional sensor cases (Tier 1/2) yield sharp posteriors that do move mass between narratives.</>}
                 />
               </Caption>
             </div>
