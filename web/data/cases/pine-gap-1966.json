@@ -16,6 +16,14 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 70,
+  "posterior": {
+    "mundano_natural": 0.05,
+    "humana_clasificada": 0.65,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.3
+  },
   "summary": "Joint Defence Facility Pine Gap, base de inteligencia conjunta Australia–EE.UU. establecida en 1966 bajo el código 'Rainfall', presentada inicialmente como sitio de investigación espacial y convertida en uno de los nodos satelitales más importantes del 5-Eyes. Es el equivalente estructural australiano de los grandes programas clasificados estadounidenses: contrato bilateral firmado, presupuesto continuo, mandato escrito y reconocimiento institucional sostenido por seis décadas. Los reportes UAP recurrentes en la región circundante (Wycliffe Well, Alice Springs) — incluyendo el incidente de tres testigos en diciembre 1989 con descripción de craft metálico saliendo de una puerta camuflada — son tracking periférico de su importancia institucional, no su núcleo.",
   "summary_en": "Pine Gap Joint Defence Facility, a joint Australia–U.S. intelligence base established in 1966 under the code name 'Rainfall', initially presented as a space research site and later one of the most important satellite nodes of the 5-Eyes alliance. It is the Australian structural equivalent of major U.S. classified programs: signed bilateral agreement, continuous budget, written mandate and sustained institutional recognition over six decades. The recurring UAP reports in the surrounding region (Wycliffe Well, Alice Springs) — including the December 1989 three-witness incident describing a metallic craft emerging from a camouflaged door — are peripheral tracking of its institutional importance, not its core.",
   "patterns": [

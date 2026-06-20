@@ -15,6 +15,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 75,
+  "posterior": {
+    "mundano_natural": 0.07,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.07,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.8
+  },
   "summary": "El primer informe público moderno del gobierno de EE.UU. sobre UAP: la 'Preliminary Assessment' de la ODNI, entregada al Congreso el 25 de junio de 2021. Revisó 144 reportes de fuentes oficiales (2004–2021); explicó solo uno (un globo desinflándose) y dejó 143 sin resolver por datos insuficientes, sin atribuirlos a tecnología extranjera ni descartar nada.",
   "summary_en": "The first modern public U.S. government report on UAP: the ODNI 'Preliminary Assessment', delivered to Congress on June 25, 2021. It reviewed 144 reports from official sources (2004–2021); explained only one (a deflating balloon) and left 143 unresolved due to insufficient data, without attributing them to foreign technology or ruling anything out.",
   "patterns": [

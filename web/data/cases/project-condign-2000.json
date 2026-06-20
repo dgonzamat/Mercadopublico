@@ -16,6 +16,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 60,
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.45
+  },
   "summary": "Estudio secreto del Defence Intelligence Staff del Ministerio de Defensa británico ('Unidentified Aerial Phenomena in the UK Air Defence Region'), completado en 2000 y desclasificado en 2006 vía FOIA. Concluyó que los UAP son reales pero sin evidencia de origen no humano ni intención hostil — y atribuyó muchos a plasmas atmosféricos poco comprendidos ('buoyant plasmas').",
   "summary_en": "Secret study by the UK Ministry of Defence's Defence Intelligence Staff ('Unidentified Aerial Phenomena in the UK Air Defence Region'), completed in 2000 and declassified in 2006 via FOIA. It concluded UAP are real but with no evidence of non-human origin or hostile intent — and attributed many to poorly understood atmospheric plasmas ('buoyant plasmas').",
   "patterns": [

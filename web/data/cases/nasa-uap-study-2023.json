@@ -15,6 +15,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 60,
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.7
+  },
   "summary": "El 14 de septiembre de 2023, NASA publicó el informe de su UAP Independent Study Team: un panel de 16 científicos concluyó que no hay evidencia de origen extraterrestre en los UAP, pero tampoco una explicación concluyente; pidió datos de mayor calidad, rigor científico y des-estigmatización, y NASA nombró un director de investigación de UAP.",
   "summary_en": "On September 14, 2023, NASA released the report of its UAP Independent Study Team: a 16-scientist panel concluded there is no evidence of extraterrestrial origin for UAP, but no conclusive explanation either; it called for higher-quality data, scientific rigor and destigmatization, and NASA appointed a director of UAP research.",
   "patterns": [

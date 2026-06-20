@@ -15,6 +15,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 42,
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.45
+  },
   "summary": "Battelle, instituto que gestiona laboratorios nacionales del DoE (incl. Oak Ridge), ejecutó bajo contrato USAF el Project Blue Book Special Report 14 (1952–1955) — el mayor estudio estadístico UAP de su época, que dejó ~22% de casos 'desconocidos', con mayor tasa entre los reportes de mejor calidad. Décadas después reaparece en el análisis de materiales del fenómeno. El contratista-analista de mayor recorrido histórico.",
   "summary_en": "Battelle, the institute that manages DoE national labs (incl. Oak Ridge), executed under USAF contract the Project Blue Book Special Report 14 (1952–1955) — the largest statistical UAP study of its era, which left ~22% of cases 'unknown', with a higher rate among the best-quality reports. Decades later it reappears in phenomenon material analysis. The contractor-analyst with the longest historical track record.",
   "patterns": [],

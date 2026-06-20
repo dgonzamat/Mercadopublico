@@ -392,19 +392,19 @@ const MECE_CLASSES_AUDIT = [
   "mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet",
 ];
 let mecePosteriorCount = 0;
+let docPosteriorCount = 0;
 const meceAgg = Object.fromEntries(MECE_CLASSES_AUDIT.map((k) => [k, 0]));
 for (const c of cases) {
   const file = path.join(casesDir, c.id + ".json");
   const isDoc = c.category === "document";
   const p = c.posterior;
-  if (isDoc) {
-    if (p) record("WARN", file, 0, `M1: caso-documento "${c.id}" tiene posterior — el modelo MECE no aplica a documentos`);
-    continue;
-  }
-  if (!p) {
+  // Incidente: posterior obligatorio (P(narrativa|objeto)).
+  // Documento: posterior OPCIONAL (= "lean" evidencial; ausente → indet en runtime).
+  if (!isDoc && !p) {
     record("ERROR", file, 0, `M1: caso no-documento "${c.id}" sin posterior (modelo MECE)`);
     continue;
   }
+  if (!p) continue; // documento sin lean declarado: válido
   const missing = MECE_CLASSES_AUDIT.filter((k) => !(k in p));
   const extra = Object.keys(p).filter((k) => !MECE_CLASSES_AUDIT.includes(k));
   if (missing.length || extra.length) {
@@ -416,6 +416,7 @@ for (const c of cases) {
     record("ERROR", file, 0, `M1: posterior de "${c.id}" suma ${total.toFixed(4)} (debe ser 1)`);
     continue;
   }
+  if (isDoc) { docPosteriorCount++; continue; }
   mecePosteriorCount++;
   for (const k of MECE_CLASSES_AUDIT) meceAgg[k] += p[k];
 }

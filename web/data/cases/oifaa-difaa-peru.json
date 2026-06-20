@@ -15,6 +15,14 @@
   },
   "tier": "A",
   "probability": 46,
+  "posterior": {
+    "mundano_natural": 0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 1
+  },
   "epistemicStatus": "documented",
   "category": "document",
   "summary": "La oficina oficial de la Fuerza Aérea del Perú para fenómenos aéreos anómalos: nacida a fines de los 90 como OIFAA (impulsada por el comandante Julio Chamorro), formalizada como DIFAA (Departamento de Investigación de Fenómenos Aéreos Anómalos) en 2001, cerrada en 2005 por presupuesto y reactivada en octubre de 2013. Investigó casos como la oleada de Chulucanas (2002), las 'luces' de Pucallpa (2008) y el doble avistamiento con radar frente al aeropuerto de Lima (2019). Completa el cuarteto de comisiones oficiales latinoamericanas junto a CRIDOVNI, CEFAA y CIAE.",

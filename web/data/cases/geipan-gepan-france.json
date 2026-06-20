@@ -15,6 +15,14 @@
   },
   "tier": "A",
   "probability": 45,
+  "posterior": {
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.85
+  },
   "epistemicStatus": "documented",
   "category": "document",
   "summary": "En 1977 la agencia espacial francesa (CNES) creó el GEPAN (Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés), dirigido inicialmente por Claude Poher. Renombrado SEPRA (1988) y luego GEIPAN (2005), es el único organismo del mundo dentro de una agencia espacial nacional dedicado de forma pública y sostenida —casi medio siglo— a recibir, investigar y publicar reportes de fenómenos aeroespaciales no identificados. Clasifica cada caso (A–D) según cuánto se explica; un pequeño porcentaje queda como 'PAN D', no identificado pese a buena información. Es el patrón oro institucional, y el organismo que estudió la traza física de Trans-en-Provence.",

@@ -16,6 +16,14 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 35,
+  "posterior": {
+    "mundano_natural": 0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 1.0
+  },
   "summary": "Indonesia tiene una huella institucional UAP de décadas. Jacob Salatun —mariscal del aire de la Fuerza Aérea (TNI-AU), fundador y director del instituto aeroespacial nacional (LAPAN) y ministro— fue pionero del estudio del fenómeno desde la óptica aeroespacial y de seguridad nacional, con dos libros sobre el tema. En 2022, un oficial de la TNI-AU declaró públicamente que los F-16 detectan en radar objetos no visibles a simple vista, a ~10 millas náuticas, a velocidades cercanas a las de un cohete y con maniobras en zigzag. Primer registro de Indonesia: el valor es el involucramiento institucional sostenido, no un incidente único —encuadrado con honestidad sobre la ausencia de un expediente público detallado.",
   "summary_en": "Indonesia has a decades-long institutional UAP footprint. Jacob Salatun —an Air Force (TNI-AU) air marshal, founder and director of the national aerospace institute (LAPAN) and a government minister— pioneered the study of the phenomenon from an aerospace and national-security angle, with two books on the subject. In 2022, a TNI-AU officer publicly stated that F-16s detect on radar objects not visible to the naked eye, at ~10 nautical miles, at near-rocket speeds and with zigzag maneuvers. Indonesia's first record: the value is the sustained institutional engagement, not a single incident —framed honestly about the absence of a detailed public file.",
   "patterns": [
