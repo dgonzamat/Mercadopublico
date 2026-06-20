@@ -1,36 +1,23 @@
-import { MECE_CLASSES, corpusPosteriors, documentPosteriors, expectedCounts, classifiedPosterior } from "@/lib/meceModel";
+import { corpusPosteriors, documentPosteriors, expandedHypotheses } from "@/lib/meceModel";
 import { T } from "@/components/T";
 
 /**
- * Snapshot de la partición MECE para la Home (fondo oscuro bg-text).
- * Las seis narrativas mutuamente excluyentes reparten el 100% del corpus
- * (incidentes por objeto + documentos por lean) — distribución COMPARABLE.
+ * Snapshot de las hipótesis para la Home (fondo oscuro bg-text).
+ * Clasificación forzada sobre el corpus (incidentes por objeto + documentos por
+ * lean), con mundano/natural abierto en sus 3 sub-tipos y no-humano consolidado.
  * Barras crema sobre oscuro; server component, cero JS.
  */
 export function HypothesesSnapshot() {
-  const scored = [...corpusPosteriors(), ...documentPosteriors()].map((s) => ({ ...s, posterior: classifiedPosterior(s.posterior) }));
+  const scored = [...corpusPosteriors(), ...documentPosteriors()];
   const N = scored.length;
-  const counts = expectedCounts(scored);
-  // Vista consolidada: las dos narrativas no-humanas se muestran como una sola
-  // barra "No-humano" (los datos por caso conservan la distinción).
-  type Row = { key: string; label: string; labelEn: string; count: number };
-  const rows: Row[] = [];
-  for (const c of MECE_CLASSES) {
-    if (c.id === "nohumano_encubierto") continue;
-    if (c.id === "nohumano_abierto") {
-      rows.push({ key: "nohumano", label: "No-humano", labelEn: "Non-human", count: counts.nohumano_encubierto + counts.nohumano_abierto });
-    } else {
-      rows.push({ key: c.id, label: c.label, labelEn: c.labelEn, count: counts[c.id] });
-    }
-  }
-  const visibleRows = rows.filter((r) => r.count > 0.001).sort((a, b) => b.count - a.count);
+  const visibleRows = expandedHypotheses(scored, { consolidateNonHuman: true });
 
   return (
     <div>
       <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es={`Cómo se reparten los ${N} casos del corpus entre las seis narrativas — suman 100%`}
-          en={`How the corpus's ${N} cases split among the six narratives — they sum to 100%`}
+          es={`Cómo se clasifican los ${N} casos del corpus entre las hipótesis — suman 100%`}
+          en={`How the corpus's ${N} cases classify among the hypotheses — they sum to 100%`}
         />
       </p>
       {visibleRows.map((c, i) => (
@@ -54,8 +41,8 @@ export function HypothesesSnapshot() {
       ))}
       <p className="pt-4 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es="Partición exhaustiva y comparable — las narrativas reparten el 100% del corpus (incidentes por objeto + documentos por lean del registro)"
-          en="Exhaustive, comparable partition — the narratives split 100% of the corpus (incidents by object + documents by record lean)"
+          es="Clasificación forzada y comparable — las hipótesis reparten el 100% del corpus (mundano abierto en misid/natural/fraude; no-humano consolidado)"
+          en="Forced, comparable classification — the hypotheses split 100% of the corpus (mundane opened into misid/natural/hoax; non-human consolidated)"
         />
       </p>
     </div>

@@ -1,8 +1,7 @@
 import { T } from "@/components/T";
 import {
-  MECE_CLASSES,
   corpusPosteriors,
-  expectedCounts,
+  expandedHypotheses,
   entidadesNoHumanas,
   heterogeneidad,
   classifiedPosterior,
@@ -39,37 +38,14 @@ export function MecePartition({
    *  Solo afecta la VISTA agregada; los datos por caso conservan la distinción. */
   consolidateNonHuman?: boolean;
 }) {
-  // Clasificación forzada: ningún caso queda en indeterminable (la masa indet
-  // se redistribuye sobre las narrativas sustantivas que el caso apoya).
-  const scored = (items ?? corpusPosteriors()).map((s) => ({ ...s, posterior: classifiedPosterior(s.posterior) }));
+  const scored = items ?? corpusPosteriors();
   const N = scored.length;
-  const counts = expectedCounts(scored);
+  // Clasificación forzada + mundano/natural abierto en sus 3 sub-tipos (hipótesis
+  // de primer nivel). Ningún caso queda en indeterminable.
+  const rows = expandedHypotheses(scored, { consolidateNonHuman });
 
-  type Row = { key: string; label: string; labelEn: string; color: string; count: number };
-  let rows: Row[];
-  if (consolidateNonHuman) {
-    rows = [];
-    for (const c of MECE_CLASSES) {
-      if (c.id === "nohumano_encubierto") continue; // se fusiona en la barra "No-humano"
-      if (c.id === "nohumano_abierto") {
-        rows.push({
-          key: "nohumano",
-          label: "No-humano",
-          labelEn: "Non-human",
-          color: c.color,
-          count: counts.nohumano_encubierto + counts.nohumano_abierto,
-        });
-      } else {
-        rows.push({ key: c.id, label: c.label, labelEn: c.labelEn, color: c.color, count: counts[c.id] });
-      }
-    }
-  } else {
-    rows = MECE_CLASSES.map((c) => ({ key: c.id, label: c.label, labelEn: c.labelEn, color: c.color, count: counts[c.id] }));
-  }
-  rows = rows.filter((r) => r.count > 0.001).sort((a, b) => b.count - a.count);
-
-  const enh = scored.reduce((s, c) => s + entidadesNoHumanas(c.posterior), 0);
-  const het = scored.reduce((s, c) => s + heterogeneidad(c.posterior), 0);
+  const enh = scored.reduce((s, c) => s + entidadesNoHumanas(classifiedPosterior(c.posterior)), 0);
+  const het = scored.reduce((s, c) => s + heterogeneidad(classifiedPosterior(c.posterior)), 0);
 
   return (
     <div>
@@ -134,57 +110,35 @@ export function MecePartition({
   );
 }
 
-/** Posterior de un caso: barra apilada al 100% + clase modal. */
-export function CasePosterior({ posterior: raw }: { posterior: Posterior }) {
-  // Clasificación forzada: se redistribuye la masa indet sobre las narrativas
-  // sustantivas (se conserva la distinción no-humano encubierto/abierto).
-  const posterior = classifiedPosterior(raw);
-  const entries = MECE_CLASSES.map((c) => ({ c, v: posterior[c.id] || 0 })).filter((e) => e.v > 0);
-  const top = [...entries].sort((a, b) => b.v - a.v);
-  const m = top[0];
+/** Posterior de un caso: barra apilada al 100% + hipótesis modal (clasificación
+ *  forzada; mundano/natural abierto en su sub-tipo). */
+export function CasePosterior({ posterior, mundanoType }: { posterior: Posterior; mundanoType?: ScoredCase["mundanoType"] }) {
+  const rows = expandedHypotheses([{ posterior, mundanoType }]);
+  const m = rows[0];
   return (
     <div>
       <div className="flex h-4 w-full overflow-hidden rounded-sm">
-        {entries.map(({ c, v }) => (
-          <div key={c.id} title={`${c.label}: ${pct(v)}%`} style={{ width: `${v * 100}%`, backgroundColor: c.color }} />
+        {rows.map((r) => (
+          <div key={r.key} title={`${r.label}: ${pct(r.count)}%`} style={{ width: `${r.count * 100}%`, backgroundColor: r.color }} />
         ))}
       </div>
       <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
-        {top.map(({ c, v }) => (
-          <div key={c.id} className="flex items-baseline justify-between font-mono text-[11px]">
+        {rows.map((r) => (
+          <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px]">
             <span className="flex items-center gap-1.5 text-text">
-              <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: c.color }} />
-              <T es={c.label} en={c.labelEn} />
+              <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: r.color }} />
+              <T es={r.label} en={r.labelEn} />
             </span>
-            <span className="text-muted">{pct(v)}%</span>
+            <span className="text-muted">{pct(r.count)}%</span>
           </div>
         ))}
       </div>
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        {m.c.id === "indet" ? (
-          <>
-            <span style={{ color: m.c.color }} className="font-semibold">
-              <T es="Indeterminable" en="Indeterminable" />
-            </span>{" "}
-            {pct(m.v)}% ·{" "}
-            {top[1] ? (
-              <T
-                es={`ninguna narrativa domina (2ª: ${top[1].c.label}, ${pct(top[1].v)}%)`}
-                en={`no dominant narrative (2nd: ${top[1].c.labelEn}, ${pct(top[1].v)}%)`}
-              />
-            ) : (
-              <T es="sin señal hacia ninguna narrativa" en="no signal toward any narrative" />
-            )}
-          </>
-        ) : (
-          <>
-            <T es="Explicación modal" en="Modal explanation" />:{" "}
-            <span style={{ color: m.c.color }} className="font-semibold">
-              <T es={m.c.label} en={m.c.labelEn} />
-            </span>{" "}
-            {pct(m.v)}% · <T es="suma 100%" en="sums to 100%" />
-          </>
-        )}
+        <T es="Hipótesis modal" en="Modal hypothesis" />:{" "}
+        <span style={{ color: m.color }} className="font-semibold">
+          <T es={m.label} en={m.labelEn} />
+        </span>{" "}
+        {pct(m.count)}% · <T es="suma 100%" en="sums to 100%" />
       </p>
     </div>
   );

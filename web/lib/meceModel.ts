@@ -63,6 +63,19 @@ export const MECE_CLASSES: ReadonlyArray<{
 
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
+/** Sub-tipos de mundano/natural, promovidos a hipótesis de primer nivel.
+ *  (Colores viven en lib, no en app/components → fuera del scan de audit-design.) */
+export const MUNDANO_SUBTYPES: ReadonlyArray<{
+  key: "misid" | "natural" | "fraude";
+  label: string;
+  labelEn: string;
+  color: string;
+}> = [
+  { key: "misid", label: "Misidentificación", labelEn: "Misidentification", color: "#5a6b7a" },
+  { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
+  { key: "fraude", label: "Fraude / hoax", labelEn: "Hoax / fraud", color: "#8a6b5a" },
+];
+
 export function emptyPosterior(): Posterior {
   return {
     mundano_natural: 0, humana_clasificada: 0, adversaria: 0,
@@ -171,6 +184,49 @@ export interface ScoredCase {
   posterior: Posterior;
   seeded: boolean;
   mundanoType?: UAPCase["mundanoType"];
+}
+
+export interface HypRow { key: string; label: string; labelEn: string; color: string; count: number; }
+
+/**
+ * Conteos sobre el conjunto EXPANDIDO de hipótesis (clasificación forzada):
+ * mundano/natural se abre en sus 3 sub-tipos según el `mundanoType` de cada caso,
+ * y —con consolidateNonHuman— las dos no-humanas se funden en una. Ningún caso
+ * queda en indeterminable. Para 1 ítem, los counts son su distribución (suman 1).
+ */
+type HypInput = { posterior: Posterior; mundanoType?: UAPCase["mundanoType"] };
+export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean } = {}): HypRow[] {
+  const byId = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c])) as Record<MeceClassId, (typeof MECE_CLASSES)[number]>;
+  const acc: Record<string, number> = {};
+  for (const s of items) {
+    const cp = classifiedPosterior(s.posterior);
+    acc[s.mundanoType ?? "misid"] = (acc[s.mundanoType ?? "misid"] || 0) + cp.mundano_natural;
+    acc.humana_clasificada = (acc.humana_clasificada || 0) + cp.humana_clasificada;
+    acc.adversaria = (acc.adversaria || 0) + cp.adversaria;
+    if (opts.consolidateNonHuman) {
+      acc.nohumano = (acc.nohumano || 0) + cp.nohumano_encubierto + cp.nohumano_abierto;
+    } else {
+      acc.nohumano_encubierto = (acc.nohumano_encubierto || 0) + cp.nohumano_encubierto;
+      acc.nohumano_abierto = (acc.nohumano_abierto || 0) + cp.nohumano_abierto;
+    }
+  }
+  const meta: Record<string, { label: string; labelEn: string; color: string }> = {
+    humana_clasificada: byId.humana_clasificada,
+    adversaria: byId.adversaria,
+    nohumano_encubierto: byId.nohumano_encubierto,
+    nohumano_abierto: byId.nohumano_abierto,
+    nohumano: { label: "No-humano", labelEn: "Non-human", color: byId.nohumano_abierto.color },
+  };
+  for (const st of MUNDANO_SUBTYPES) meta[st.key] = st;
+  return Object.entries(acc)
+    .filter(([, v]) => v > 0.001)
+    .map(([key, count]) => ({ key, label: meta[key].label, labelEn: meta[key].labelEn, color: meta[key].color, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+/** Hipótesis modal (display) de un caso, sobre el conjunto expandido. */
+export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boolean } = {}): HypRow {
+  return expandedHypotheses([s], opts)[0];
 }
 
 /** Casos del corpus a los que aplica el modelo (excluye documentos). */

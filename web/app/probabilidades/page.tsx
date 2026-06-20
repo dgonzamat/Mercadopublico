@@ -2,9 +2,8 @@ import Link from "next/link";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
-import { MECE_CLASSES, corpusPosteriors, documentPosteriors, modal, classifiedPosterior } from "@/lib/meceModel";
+import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis } from "@/lib/meceModel";
 import { STATS } from "@/lib/siteStats";
-import type { MeceClassId } from "@/lib/types";
 
 export const metadata = {
   title: "Probabilidades por explicación (modelo MECE)",
@@ -13,11 +12,19 @@ export const metadata = {
   alternates: { canonical: "/probabilidades/" },
 };
 
-/** Qué significa cada clase (y qué hipótesis del marco anterior preserva). */
-const BLURB: Record<MeceClassId, { es: string; en: string }> = {
-  mundano_natural: {
-    es: "Objeto conocido, ilusión, error o fraude, o un fenómeno natural. Sin anomalía ni encubrimiento. Absorbe «misidentificación» y «fenómenos naturales».",
-    en: "Known object, illusion, error or hoax, or a natural phenomenon. No anomaly, no cover-up. Absorbs 'misidentification' and 'natural phenomena'.",
+/** Qué significa cada hipótesis (y qué hipótesis del marco anterior preserva). */
+const BLURB: Record<string, { es: string; en: string }> = {
+  misid: {
+    es: "Misidentificación de un objeto conocido (avión, globo, satélite, planeta, dron) o error perceptual / ilusión. Error humano sobre algo ordinario.",
+    en: "Misidentification of a known object (aircraft, balloon, satellite, planet, drone) or perceptual error / illusion. Human error about something ordinary.",
+  },
+  natural: {
+    es: "Fenómeno natural genuino poco entendido: plasma atmosférico, rayo en bola, bólido / meteoro, óptica atmosférica. Física real, no una nave ni un engaño.",
+    en: "A genuine, poorly-understood natural phenomenon: atmospheric plasma, ball lightning, bolide / meteor, atmospheric optics. Real physics, not a craft or a hoax.",
+  },
+  fraude: {
+    es: "Engaño deliberado: montaje, fabricación o hoax.",
+    en: "Deliberate deception: staging, fabrication or hoax.",
   },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
@@ -27,17 +34,9 @@ const BLURB: Record<MeceClassId, { es: string; en: string }> = {
     es: "Tecnología de vigilancia de otro Estado. Antigua hipótesis «tecnología adversaria».",
     en: "Another state's surveillance technology. Former 'adversary technology' hypothesis.",
   },
-  nohumano_encubierto: {
-    es: "Inteligencia o tecnología no humana que un Estado conoce, controla u oculta — incluye ingeniería inversa y la narrativa de tratado. Es la combinación «no-humano + ocultación militar» como clase propia.",
-    en: "Non-human intelligence or technology that a state knows, controls or hides — includes reverse-engineering and the treaty narrative. The 'non-human + military cover-up' combination as its own class.",
-  },
-  nohumano_abierto: {
-    es: "Fenómeno genuinamente no humano que ninguna institución controla ni oculta (el «sistema de control» tipo Vallée; interdimensional / ontológico).",
-    en: "A genuinely non-human phenomenon that no institution controls or hides (the Vallée-style 'control system'; interdimensional / ontological).",
-  },
-  indet: {
-    es: "Evidencia insuficiente para asignar una narrativa. La honestidad del modelo: no todo se puede resolver.",
-    en: "Insufficient evidence to assign a narrative. The model's honesty: not everything can be resolved.",
+  nohumano: {
+    es: "Inteligencia o tecnología no humana — ya sea que un Estado la controle u oculte (ingeniería inversa, tratado) o que nadie la controle (tipo Vallée, interdimensional / ontológico).",
+    en: "Non-human intelligence or technology — whether a state controls or hides it (reverse-engineering, treaty) or no one controls it (Vallée-style, interdimensional / ontological).",
   },
 };
 
@@ -46,34 +45,18 @@ export default function ProbabilidadesPage() {
   const docScored = documentPosteriors();
   const allScored = [...scored, ...docScored];
 
-  type ModalCase = { id: string; name: string; tier: string; p: number };
-  const casesByModal = Object.fromEntries(
-    MECE_CLASSES.map((c) => [c.id, [] as ModalCase[]]),
-  ) as Record<MeceClassId, ModalCase[]>;
-  for (const s of allScored) {
-    const m = modal(classifiedPosterior(s.posterior));
-    casesByModal[m.id].push({ id: s.id, name: s.name, tier: s.tier, p: m.prob });
-  }
-  for (const id of Object.keys(casesByModal) as MeceClassId[]) {
-    casesByModal[id].sort((a, b) => b.p - a.p);
-  }
+  // Conjunto expandido de hipótesis (mundano abierto en 3 sub-tipos, no-humano
+  // consolidado), clasificación forzada. Ordenado por masa.
+  const hypRows = expandedHypotheses(allScored, { consolidateNonHuman: true });
 
-  // Apertura de "mundano/natural": su masa clasificada, por sub-tipo de
-  // explicación prosaica (misidentificación / fenómeno natural / fraude).
-  const MUNDANO_TYPES: { key: "misid" | "natural" | "fraude"; es: string; en: string }[] = [
-    { key: "misid", es: "Misidentificación", en: "Misidentification" },
-    { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
-    { key: "fraude", es: "Fraude / hoax", en: "Hoax / fraud" },
-  ];
-  const mundanoBy: Record<string, number> = { misid: 0, natural: 0, fraude: 0 };
-  let mundanoTotal = 0;
+  type ModalCase = { id: string; name: string; tier: string; p: number };
+  const casesByModal: Record<string, ModalCase[]> = {};
+  for (const r of hypRows) casesByModal[r.key] = [];
   for (const s of allScored) {
-    const m = classifiedPosterior(s.posterior).mundano_natural || 0;
-    if (m <= 0) continue;
-    mundanoTotal += m;
-    mundanoBy[s.mundanoType ?? "misid"] += m;
+    const m = modalHypothesis(s, { consolidateNonHuman: true });
+    (casesByModal[m.key] ??= []).push({ id: s.id, name: s.name, tier: s.tier, p: m.count });
   }
-  const mundColor = MECE_CLASSES.find((c) => c.id === "mundano_natural")!.color;
+  for (const k of Object.keys(casesByModal)) casesByModal[k].sort((a, b) => b.p - a.p);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
@@ -85,68 +68,34 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Las ${STATS.cases} piezas del corpus se clasifican cada una entre las narrativas mutuamente excluyentes: los ${scored.length} casos de incidente por la naturaleza del objeto, y los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) por el lean evidencial de su contenido —hacia qué explicación pesan—. Es una clasificación forzada: ningún caso queda en «indeterminable»; la incertidumbre de cada caso se reparte entre las narrativas que efectivamente apoya. Sumadas, reparten el corpus de forma comparable: se puede decir qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano» agrupa encubierto + abierto en la vista. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa).`}
-          en={`Each of the corpus's ${STATS.cases} pieces is classified among the mutually-exclusive narratives: the ${scored.length} incident cases by the nature of the object, and the ${STATS.cases - scored.length} document cases (memos, hearings, leaks) by the evidential lean of their content —which explanation they weigh toward. It is a forced classification: no case rests in 'indeterminable'; each case's uncertainty is spread across the narratives it actually supports. Summed, they partition the corpus comparably: one can say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human' groups covert + open in this view. The prior framework's hypotheses are preserved as a mapping (see each narrative).`}
+          es={`Cada una de las ${STATS.cases} piezas del corpus se clasifica en una hipótesis: los ${scored.length} casos de incidente por la naturaleza del objeto, y los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) por el lean evidencial de su contenido. Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten el corpus de forma comparable: se puede decir qué hipótesis da cuenta de más casos.`}
+          en={`Each of the corpus's ${STATS.cases} pieces is classified into one hypothesis: the ${scored.length} incident cases by the nature of the object, and the ${STATS.cases - scored.length} document cases (memos, hearings, leaks) by the evidential lean of their content. It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and hoax— and 'non-human' groups covert + open. Summed, they partition the corpus comparably: one can say which hypothesis accounts for more cases.`}
         />
       </Lede>
 
       <section className="mt-12">
         <H2>
-          <T es="La partición del corpus" en="The corpus partition" />
+          <T es="Las hipótesis del corpus" en="The corpus hypotheses" />
         </H2>
         <Caption>
           <T
-            es={`Las ${STATS.cases} piezas: ${scored.length} incidentes (por objeto) + ${STATS.cases - scored.length} documentos (por lean del registro). Una sola partición comparable.`}
-            en={`All ${STATS.cases} pieces: ${scored.length} incidents (by object) + ${STATS.cases - scored.length} documents (by record lean). A single comparable partition.`}
+            es={`Las ${STATS.cases} piezas: ${scored.length} incidentes (por objeto) + ${STATS.cases - scored.length} documentos (por lean del registro). Clasificación forzada, sin indeterminable.`}
+            en={`All ${STATS.cases} pieces: ${scored.length} incidents (by object) + ${STATS.cases - scored.length} documents (by record lean). Forced classification, no indeterminable.`}
           />
         </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
             items={allScored}
             consolidateNonHuman
-            totalLabelEs={`Suman 100% · ${allScored.length} casos · «No-humano» agrupa encubierto + abierto`}
-            totalLabelEn={`Sum to 100% · ${allScored.length} cases · 'Non-human' groups covert + open`}
+            totalLabelEs={`Suman 100% · ${allScored.length} casos · mundano abierto en 3 · no-humano agrupado`}
+            totalLabelEn={`Sum to 100% · ${allScored.length} cases · mundane opened into 3 · non-human grouped`}
           />
         </div>
       </section>
 
       <section className="mt-16">
         <H2>
-          <T es="Dentro de mundano / natural" en="Inside mundane / natural" />
-        </H2>
-        <Caption>
-          <T
-            es={`«Mundano/natural» (${(mundanoTotal / allScored.length * 100).toFixed(0)}% del corpus) no es una sola cosa: separa el error humano sobre algo conocido, la física natural genuina y el engaño deliberado. Son lecturas prosaicas epistémicamente distintas.`}
-            en={`'Mundane/natural' (${(mundanoTotal / allScored.length * 100).toFixed(0)}% of the corpus) is not one thing: it separates human error about a known object, genuine natural physics, and deliberate hoax. These are epistemically distinct prosaic readings.`}
-          />
-        </Caption>
-        <div className="mt-6 rounded-sm border border-border bg-panel p-5">
-          <div className="space-y-2.5">
-            {MUNDANO_TYPES.map((t) => (
-              <div key={t.key}>
-                <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
-                  <span className="min-w-0 uppercase tracking-wider text-text">
-                    <T es={t.es} en={t.en} />
-                  </span>
-                  <span className="shrink-0 whitespace-nowrap text-right text-muted">
-                    {(mundanoBy[t.key] / mundanoTotal * 100).toFixed(0)}% · {mundanoBy[t.key].toFixed(1)} <T es="casos" en="cases" />
-                  </span>
-                </div>
-                <div className="mt-1 h-2 w-full bg-border/40">
-                  <div className="h-2" style={{ width: `${(mundanoBy[t.key] / mundanoTotal) * 100}%`, backgroundColor: mundColor }} />
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-            <T es={`${mundanoTotal.toFixed(0)} casos-equivalentes · sub-tipo de la explicación prosaica`} en={`${mundanoTotal.toFixed(0)} case-equivalents · sub-type of the prosaic explanation`} />
-          </p>
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <H2>
-          <T es="Las narrativas" en="The narratives" />
+          <T es="Las hipótesis, una por una" en="The hypotheses, one by one" />
         </H2>
         <Caption>
           <T
@@ -155,18 +104,18 @@ export default function ProbabilidadesPage() {
           />
         </Caption>
         <div className="mt-6 space-y-8">
-          {MECE_CLASSES.filter((c) => c.id !== "indet").map((c) => {
-            const top = casesByModal[c.id].slice(0, 6);
+          {hypRows.map((c) => {
+            const top = casesByModal[c.key].slice(0, 6);
             return (
-              <div key={c.id} className="border-l-4 pl-4" style={{ borderColor: c.color }}>
+              <div key={c.key} className="border-l-4 pl-4" style={{ borderColor: c.color }}>
                 <h3 className="font-mono text-sm uppercase tracking-wider text-text">
                   <T es={c.label} en={c.labelEn} />
                   <span className="ml-2 font-normal text-muted">
-                    · {casesByModal[c.id].length} <T es="casos modales" en="modal cases" />
+                    · {casesByModal[c.key].length} <T es="casos modales" en="modal cases" />
                   </span>
                 </h3>
                 <Body className="mt-1 text-sm text-muted">
-                  <T es={BLURB[c.id].es} en={BLURB[c.id].en} />
+                  <T es={BLURB[c.key].es} en={BLURB[c.key].en} />
                 </Body>
                 {top.length > 0 && (
                   <p className="mt-2 font-mono text-[11px] text-muted">
