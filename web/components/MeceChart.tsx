@@ -5,6 +5,7 @@ import {
   expectedCounts,
   entidadesNoHumanas,
   heterogeneidad,
+  classifiedPosterior,
   type ScoredCase,
 } from "@/lib/meceModel";
 import type { Posterior } from "@/lib/types";
@@ -38,7 +39,9 @@ export function MecePartition({
    *  Solo afecta la VISTA agregada; los datos por caso conservan la distinción. */
   consolidateNonHuman?: boolean;
 }) {
-  const scored = items ?? corpusPosteriors();
+  // Clasificación forzada: ningún caso queda en indeterminable (la masa indet
+  // se redistribuye sobre las narrativas sustantivas que el caso apoya).
+  const scored = (items ?? corpusPosteriors()).map((s) => ({ ...s, posterior: classifiedPosterior(s.posterior) }));
   const N = scored.length;
   const counts = expectedCounts(scored);
 
@@ -63,7 +66,7 @@ export function MecePartition({
   } else {
     rows = MECE_CLASSES.map((c) => ({ key: c.id, label: c.label, labelEn: c.labelEn, color: c.color, count: counts[c.id] }));
   }
-  rows.sort((a, b) => b.count - a.count);
+  rows = rows.filter((r) => r.count > 0.001).sort((a, b) => b.count - a.count);
 
   const enh = scored.reduce((s, c) => s + entidadesNoHumanas(c.posterior), 0);
   const het = scored.reduce((s, c) => s + heterogeneidad(c.posterior), 0);
@@ -132,7 +135,10 @@ export function MecePartition({
 }
 
 /** Posterior de un caso: barra apilada al 100% + clase modal. */
-export function CasePosterior({ posterior }: { posterior: Posterior }) {
+export function CasePosterior({ posterior: raw }: { posterior: Posterior }) {
+  // Clasificación forzada: se redistribuye la masa indet sobre las narrativas
+  // sustantivas (se conserva la distinción no-humano encubierto/abierto).
+  const posterior = classifiedPosterior(raw);
   const entries = MECE_CLASSES.map((c) => ({ c, v: posterior[c.id] || 0 })).filter((e) => e.v > 0);
   const top = [...entries].sort((a, b) => b.v - a.v);
   const m = top[0];

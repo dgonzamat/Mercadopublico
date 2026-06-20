@@ -2,7 +2,7 @@ import Link from "next/link";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
-import { MECE_CLASSES, corpusPosteriors, documentPosteriors, modal } from "@/lib/meceModel";
+import { MECE_CLASSES, corpusPosteriors, documentPosteriors, modal, classifiedPosterior } from "@/lib/meceModel";
 import { STATS } from "@/lib/siteStats";
 import type { MeceClassId } from "@/lib/types";
 
@@ -51,42 +51,12 @@ export default function ProbabilidadesPage() {
     MECE_CLASSES.map((c) => [c.id, [] as ModalCase[]]),
   ) as Record<MeceClassId, ModalCase[]>;
   for (const s of allScored) {
-    const m = modal(s.posterior);
+    const m = modal(classifiedPosterior(s.posterior));
     casesByModal[m.id].push({ id: s.id, name: s.name, tier: s.tier, p: m.prob });
   }
   for (const id of Object.keys(casesByModal) as MeceClassId[]) {
     casesByModal[id].sort((a, b) => b.p - a.p);
   }
-
-  // Descomposición de la masa indeterminable por su 2ª narrativa más probable
-  // (las dos no-humanas se agrupan, igual que en la partición consolidada).
-  const NONHUMAN = new Set<MeceClassId>(["nohumano_encubierto", "nohumano_abierto"]);
-  const CLASS_COLOR = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c.color])) as Record<MeceClassId, string>;
-  const indetParts: Record<string, { label: string; labelEn: string; color: string; mass: number }> = {};
-  let indetTotal = 0;
-  for (const s of allScored) {
-    const im = s.posterior.indet || 0;
-    if (im <= 0) continue;
-    indetTotal += im;
-    let best: (typeof MECE_CLASSES)[number] | null = null;
-    let bestV = 0;
-    for (const c of MECE_CLASSES) {
-      if (c.id === "indet") continue;
-      const v = s.posterior[c.id] || 0;
-      if (v > bestV) { bestV = v; best = c; }
-    }
-    let key: string, label: string, labelEn: string, color: string;
-    if (!best || bestV <= 0) {
-      key = "none"; label = "Sin 2ª — puro proceso/canal"; labelEn = "No 2nd — pure process/channel"; color = CLASS_COLOR.indet;
-    } else if (NONHUMAN.has(best.id)) {
-      key = "nohumano"; label = "Inclina a No-humano"; labelEn = "Leans non-human"; color = CLASS_COLOR.nohumano_abierto;
-    } else {
-      key = best.id; label = `Inclina a ${best.label}`; labelEn = `Leans ${best.labelEn}`; color = best.color;
-    }
-    (indetParts[key] ??= { label, labelEn, color, mass: 0 }).mass += im;
-  }
-  const indetRows = Object.values(indetParts).sort((a, b) => b.mass - a.mass);
-  const indetIncident = allScored.filter((s) => s.category !== "document").reduce((t, s) => t + (s.posterior.indet || 0), 0);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
@@ -98,8 +68,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Las ${STATS.cases} piezas del corpus reparten cada una el 100% entre las mismas seis narrativas mutuamente excluyentes: los ${scored.length} casos de incidente por la naturaleza del objeto, y los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) por el lean evidencial de su contenido —hacia qué explicación pesan—. Sumadas, reparten el corpus de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano + encubrimiento estatal» es una clase propia. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa) y como vistas derivadas.`}
-          en={`Each of the corpus's ${STATS.cases} pieces splits 100% among the same six mutually-exclusive narratives: the ${scored.length} incident cases by the nature of the object, and the ${STATS.cases - scored.length} document cases (memos, hearings, leaks) by the evidential lean of their content —which explanation they weigh toward. Summed, they partition the corpus comparably: one can coherently say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human + state cover-up' is its own class. The prior framework's hypotheses are preserved as a mapping (see each narrative) and as derived views.`}
+          es={`Las ${STATS.cases} piezas del corpus se clasifican cada una entre las narrativas mutuamente excluyentes: los ${scored.length} casos de incidente por la naturaleza del objeto, y los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) por el lean evidencial de su contenido —hacia qué explicación pesan—. Es una clasificación forzada: ningún caso queda en «indeterminable»; la incertidumbre de cada caso se reparte entre las narrativas que efectivamente apoya. Sumadas, reparten el corpus de forma comparable: se puede decir qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano» agrupa encubierto + abierto en la vista. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa).`}
+          en={`Each of the corpus's ${STATS.cases} pieces is classified among the mutually-exclusive narratives: the ${scored.length} incident cases by the nature of the object, and the ${STATS.cases - scored.length} document cases (memos, hearings, leaks) by the evidential lean of their content —which explanation they weigh toward. It is a forced classification: no case rests in 'indeterminable'; each case's uncertainty is spread across the narratives it actually supports. Summed, they partition the corpus comparably: one can say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human' groups covert + open in this view. The prior framework's hypotheses are preserved as a mapping (see each narrative).`}
         />
       </Lede>
 
@@ -125,44 +95,7 @@ export default function ProbabilidadesPage() {
 
       <section className="mt-16">
         <H2>
-          <T es="Dentro de lo indeterminable" en="Inside the indeterminable" />
-        </H2>
-        <Caption>
-          <T
-            es={`«Indeterminable» (${(indetTotal / allScored.length * 100).toFixed(0)}% del corpus) no es «podría ser cualquier cosa». Descompuesta por la 2ª narrativa más probable de cada caso, la masa inclina así — y mayoritariamente hacia lo prosaico, no lo exótico.`}
-            en={`'Indeterminable' (${(indetTotal / allScored.length * 100).toFixed(0)}% of the corpus) is not 'could be anything'. Broken down by each case's second-most-probable narrative, the mass leans like this — and mostly toward the prosaic, not the exotic.`}
-          />
-        </Caption>
-        <div className="mt-6 rounded-sm border border-border bg-panel p-5">
-          <div className="space-y-2.5">
-            {indetRows.map((r) => (
-              <div key={r.label}>
-                <div className="flex items-baseline justify-between gap-3 font-mono text-xs">
-                  <span className="min-w-0 uppercase tracking-wider text-text">
-                    <T es={r.label} en={r.labelEn} />
-                  </span>
-                  <span className="shrink-0 whitespace-nowrap text-right text-muted">
-                    {(r.mass / indetTotal * 100).toFixed(0)}% · {r.mass.toFixed(1)} <T es="casos" en="cases" />
-                  </span>
-                </div>
-                <div className="mt-1 h-2 w-full bg-border/40">
-                  <div className="h-2" style={{ width: `${(r.mass / indetTotal) * 100}%`, backgroundColor: r.color }} />
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-            <T
-              es={`Fuente: ${(indetIncident / indetTotal * 100).toFixed(0)}% ambigüedad evidencial (incidentes) · ${(100 - indetIncident / indetTotal * 100).toFixed(0)}% proceso/canal (documentos)`}
-              en={`Source: ${(indetIncident / indetTotal * 100).toFixed(0)}% evidential ambiguity (incidents) · ${(100 - indetIncident / indetTotal * 100).toFixed(0)}% process/channel (documents)`}
-            />
-          </p>
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <H2>
-          <T es="Las seis narrativas" en="The six narratives" />
+          <T es="Las narrativas" en="The narratives" />
         </H2>
         <Caption>
           <T
@@ -171,7 +104,7 @@ export default function ProbabilidadesPage() {
           />
         </Caption>
         <div className="mt-6 space-y-8">
-          {MECE_CLASSES.map((c) => {
+          {MECE_CLASSES.filter((c) => c.id !== "indet").map((c) => {
             const top = casesByModal[c.id].slice(0, 6);
             return (
               <div key={c.id} className="border-l-4 pl-4" style={{ borderColor: c.color }}>
@@ -209,8 +142,8 @@ export default function ProbabilidadesPage() {
         </H2>
         <Body className="mt-2 text-sm text-muted">
           <T
-            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. El agregado «nº esperado de casos por explicación» es lineal, así que es válido aunque los casos estén correlacionados. Una nota sobre la partición única: para los incidentes el posterior mide la naturaleza del objeto; para los casos-documento mide el «lean» evidencial (hacia qué explicación pesa el documento, no qué era un objeto). Son preguntas distintas que comparten el mismo vocabulario de seis narrativas, y se grafican juntas para ver el corpus completo — pero esa diferencia de sentido conviene tenerla presente al leer el total."
-            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. The 'expected number of cases per explanation' aggregate is linear, so it holds even if cases are correlated. A note on the single partition: for incidents the posterior measures the nature of the object; for document cases it measures the evidential 'lean' (which explanation the document weighs toward, not what an object was). These are different questions sharing the same six-narrative vocabulary, charted together to see the whole corpus — but that difference in meaning is worth keeping in mind when reading the total."
+            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. El agregado «nº esperado de casos por explicación» es lineal, así que es válido aunque los casos estén correlacionados. Esta vista usa clasificación forzada: la masa de incertidumbre de cada caso (la antigua «indeterminable») se reparte entre las narrativas que el caso efectivamente apoya, de modo que ningún caso queda sin clasificar. Para los incidentes el posterior mide la naturaleza del objeto; para los casos-documento, el lean evidencial de su contenido. La incertidumbre subyacente sigue en el análisis de cada caso; aquí se compromete a la lectura más sostenida."
+            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. The 'expected number of cases per explanation' aggregate is linear, so it holds even if cases are correlated. This view uses forced classification: each case's uncertainty mass (the former 'indeterminable') is spread across the narratives the case actually supports, so no case is left unclassified. For incidents the posterior measures the nature of the object; for document cases, the evidential lean of their content. The underlying uncertainty still lives in each case's analysis; here it is committed to the best-supported reading."
           />
         </Body>
       </section>
