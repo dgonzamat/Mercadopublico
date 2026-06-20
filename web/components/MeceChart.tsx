@@ -84,7 +84,7 @@ export function MecePartition({
             <>
               <span className="flex min-w-0 items-center gap-2">
                 <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: c.color }} aria-hidden />
-                <span className={`uppercase tracking-wider ${i === 0 ? "font-semibold text-text" : "text-text"} ${href ? "group-hover:text-accent group-hover:underline" : ""}`}>
+                <span className={`uppercase tracking-wider ${i === 0 ? "font-semibold text-text" : "text-text"}`}>
                   <T es={c.label} en={c.labelEn} />
                 </span>
               </span>
@@ -121,20 +121,18 @@ export function MecePartition({
       </p>
 
       {!compact && showDerived && (
-        <div className="mt-4 border-t border-border pt-4">
+        <div className="mt-5 border-t border-border pt-4">
           {/* Eje macro: prosaico vs anómalo/secreto */}
           <div className="flex h-2 w-full gap-px overflow-hidden rounded-full bg-panel">
             <div style={{ width: `${(prosaico / N) * 100}%`, backgroundColor: prosaicoColor }} />
             <div style={{ width: `${(anomalo / N) * 100}%`, backgroundColor: anomaloColor }} />
           </div>
-          <div className="mt-2 flex items-baseline justify-between gap-3 font-mono text-[11px]">
-            <span className="uppercase tracking-wider text-text">
-              <T es="Prosaico" en="Prosaic" />{" "}
-              <span className="text-muted">{pct(prosaico / N)}% · misid+natural+fraude</span>
+          <div className="mt-2 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-wider">
+            <span className="text-text">
+              <T es="Prosaico" en="Prosaic" /> <span className="tabular-nums text-muted">{pct(prosaico / N)}%</span>
             </span>
-            <span className="text-right uppercase tracking-wider text-text">
-              <span className="text-muted">clasificado+adversaria+no-humano ·</span> <T es="Anómalo" en="Anomalous" />{" "}
-              {pct(anomalo / N)}%
+            <span className="text-text">
+              <span className="tabular-nums text-muted">{pct(anomalo / N)}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" />
             </span>
           </div>
           {!consolidateNonHuman && (
