@@ -44,12 +44,13 @@ const BLURB: Record<MeceClassId, { es: string; en: string }> = {
 export default function ProbabilidadesPage() {
   const scored = corpusPosteriors();
   const docScored = documentPosteriors();
+  const allScored = [...scored, ...docScored];
 
   type ModalCase = { id: string; name: string; tier: string; p: number };
   const casesByModal = Object.fromEntries(
     MECE_CLASSES.map((c) => [c.id, [] as ModalCase[]]),
   ) as Record<MeceClassId, ModalCase[]>;
-  for (const s of scored) {
+  for (const s of allScored) {
     const m = modal(s.posterior);
     casesByModal[m.id].push({ id: s.id, name: s.name, tier: s.tier, p: m.prob });
   }
@@ -67,8 +68,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`El corpus tiene ${STATS.cases} casos. Los ${scored.length} de incidente reparten cada uno el 100% entre las mismas seis narrativas mutuamente excluyentes (qué era el objeto). Sumadas, reparten ese conjunto de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) no tienen objeto que clasificar, pero su contenido inclina hacia una narrativa u otra: van en una partición aparte, más abajo. Cada narrativa bundlea objeto + postura institucional; «no-humano + encubrimiento estatal» es una clase propia. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa) y como vistas derivadas.`}
-          en={`The corpus has ${STATS.cases} cases. Each of the ${scored.length} incident cases splits 100% among the same six mutually-exclusive narratives (what the object was). Summed, they partition that set comparably: one can coherently say which explanation accounts for more cases. The ${STATS.cases - scored.length} document cases (memos, hearings, leaks) have no object to classify, but their content leans toward one narrative or another: they go in a separate partition, below. Each narrative bundles object + institutional stance; 'non-human + state cover-up' is its own class. The prior framework's hypotheses are preserved as a mapping (see each narrative) and as derived views.`}
+          es={`Las ${STATS.cases} piezas del corpus reparten cada una el 100% entre las mismas seis narrativas mutuamente excluyentes: los ${scored.length} casos de incidente por la naturaleza del objeto, y los ${STATS.cases - scored.length} casos-documento (memos, audiencias, filtraciones) por el lean evidencial de su contenido —hacia qué explicación pesan—. Sumadas, reparten el corpus de forma comparable: se puede decir, coherentemente, qué explicación da cuenta de más casos. Cada narrativa bundlea objeto + postura institucional; «no-humano + encubrimiento estatal» es una clase propia. Las hipótesis del marco anterior se preservan como mapeo (ver cada narrativa) y como vistas derivadas.`}
+          en={`Each of the corpus's ${STATS.cases} pieces splits 100% among the same six mutually-exclusive narratives: the ${scored.length} incident cases by the nature of the object, and the ${STATS.cases - scored.length} document cases (memos, hearings, leaks) by the evidential lean of their content —which explanation they weigh toward. Summed, they partition the corpus comparably: one can coherently say which explanation accounts for more cases. Each narrative bundles object + institutional stance; 'non-human + state cover-up' is its own class. The prior framework's hypotheses are preserved as a mapping (see each narrative) and as derived views.`}
         />
       </Lede>
 
@@ -76,27 +77,17 @@ export default function ProbabilidadesPage() {
         <H2>
           <T es="La partición del corpus" en="The corpus partition" />
         </H2>
-        <div className="mt-6 rounded-sm border border-border bg-panel p-5">
-          <MecePartition />
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <H2>
-          <T es="El registro institucional" en="The institutional record" />
-        </H2>
         <Caption>
           <T
-            es={`Los ${docScored.length} casos-documento no tienen objeto que clasificar, pero su contenido inclina hacia una narrativa u otra. Es un eje distinto —«hacia qué explicación pesa el documento», no «qué era el objeto»— y no se suma con la partición de incidentes. La mayoría cae en «indeterminable»: el grueso del registro es proceso o canal, no prueba sobre la naturaleza del fenómeno.`}
-            en={`The ${docScored.length} document cases have no object to classify, but their content leans toward one narrative or another. It is a distinct axis —'which explanation the document weighs toward', not 'what the object was'— and is not summed with the incident partition. Most land in 'indeterminable': the bulk of the record is process or channel, not proof about the phenomenon's nature.`}
+            es={`Las ${STATS.cases} piezas: ${scored.length} incidentes (por objeto) + ${STATS.cases - scored.length} documentos (por lean del registro). Una sola partición comparable.`}
+            en={`All ${STATS.cases} pieces: ${scored.length} incidents (by object) + ${STATS.cases - scored.length} documents (by record lean). A single comparable partition.`}
           />
         </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
-            items={docScored}
-            showDerived={false}
-            totalLabelEs={`Suman 100% · ${docScored.length} casos-documento · lean del registro`}
-            totalLabelEn={`Sum to 100% · ${docScored.length} document cases · record lean`}
+            items={allScored}
+            totalLabelEs={`Suman 100% · ${allScored.length} casos · partición exhaustiva`}
+            totalLabelEn={`Sum to 100% · ${allScored.length} cases · exhaustive partition`}
           />
         </div>
       </section>
@@ -150,8 +141,8 @@ export default function ProbabilidadesPage() {
         </H2>
         <Body className="mt-2 text-sm text-muted">
           <T
-            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. El agregado «nº esperado de casos por explicación» es lineal, así que es válido aunque los casos estén correlacionados. Los casos-documento llevan un posterior distinto —el «lean» evidencial: hacia qué explicación pesa el documento, no qué era un objeto— y se grafican aparte; los dos ejes nunca se suman."
-            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. The 'expected number of cases per explanation' aggregate is linear, so it holds even if cases are correlated. Document cases carry a different posterior —the evidential 'lean': which explanation the document weighs toward, not what an object was— and are charted separately; the two axes are never summed."
+            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. El agregado «nº esperado de casos por explicación» es lineal, así que es válido aunque los casos estén correlacionados. Una nota sobre la partición única: para los incidentes el posterior mide la naturaleza del objeto; para los casos-documento mide el «lean» evidencial (hacia qué explicación pesa el documento, no qué era un objeto). Son preguntas distintas que comparten el mismo vocabulario de seis narrativas, y se grafican juntas para ver el corpus completo — pero esa diferencia de sentido conviene tenerla presente al leer el total."
+            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. The 'expected number of cases per explanation' aggregate is linear, so it holds even if cases are correlated. A note on the single partition: for incidents the posterior measures the nature of the object; for document cases it measures the evidential 'lean' (which explanation the document weighs toward, not what an object was). These are different questions sharing the same six-narrative vocabulary, charted together to see the whole corpus — but that difference in meaning is worth keeping in mind when reading the total."
           />
         </Body>
       </section>

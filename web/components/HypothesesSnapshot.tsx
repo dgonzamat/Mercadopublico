@@ -1,14 +1,14 @@
-import { MECE_CLASSES, corpusPosteriors, expectedCounts } from "@/lib/meceModel";
+import { MECE_CLASSES, corpusPosteriors, documentPosteriors, expectedCounts } from "@/lib/meceModel";
 import { T } from "@/components/T";
 
 /**
  * Snapshot de la partición MECE para la Home (fondo oscuro bg-text).
- * Las seis narrativas mutuamente excluyentes reparten el 100% de los casos de incidente
- * — distribución COMPARABLE (a diferencia del marco anterior, donde los % no
- * sumaban 100). Barras crema sobre oscuro; server component, cero JS.
+ * Las seis narrativas mutuamente excluyentes reparten el 100% del corpus
+ * (incidentes por objeto + documentos por lean) — distribución COMPARABLE.
+ * Barras crema sobre oscuro; server component, cero JS.
  */
 export function HypothesesSnapshot() {
-  const scored = corpusPosteriors();
+  const scored = [...corpusPosteriors(), ...documentPosteriors()];
   const N = scored.length;
   const counts = expectedCounts(scored);
   const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
@@ -17,8 +17,8 @@ export function HypothesesSnapshot() {
     <div>
       <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es={`Cómo se reparten los ${N} casos de incidente entre las seis narrativas — suman 100%`}
-          en={`How the ${N} incident cases split among the six narratives — they sum to 100%`}
+          es={`Cómo se reparten los ${N} casos del corpus entre las seis narrativas — suman 100%`}
+          en={`How the corpus's ${N} cases split among the six narratives — they sum to 100%`}
         />
       </p>
       {ranked.map((c, i) => (
@@ -42,8 +42,8 @@ export function HypothesesSnapshot() {
       ))}
       <p className="pt-4 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es="Partición exhaustiva y comparable — las narrativas reparten el 100% de los casos de incidente (los casos-documento quedan fuera)"
-          en="Exhaustive, comparable partition — the narratives split 100% of the incident cases (document cases excluded)"
+          es="Partición exhaustiva y comparable — las narrativas reparten el 100% del corpus (incidentes por objeto + documentos por lean del registro)"
+          en="Exhaustive, comparable partition — the narratives split 100% of the corpus (incidents by object + documents by record lean)"
         />
       </p>
     </div>
