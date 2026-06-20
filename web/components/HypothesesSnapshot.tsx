@@ -13,7 +13,6 @@ export function HypothesesSnapshot() {
   const counts = expectedCounts(scored);
   const shares = roundedShares(scored);
   const ranked = [...MECE_CLASSES].sort((a, b) => counts[b.id] - counts[a.id]);
-  const max = Math.max(...MECE_CLASSES.map((c) => counts[c.id]));
 
   return (
     <div>
@@ -35,7 +34,7 @@ export function HypothesesSnapshot() {
             <T es={c.label} en={c.labelEn} />
           </p>
           <div className="col-start-2 h-1.5 bg-bg/10 md:col-start-3">
-            <div className="h-full bg-bg/80" style={{ width: `${(counts[c.id] / max) * 100}%` }} />
+            <div className="h-full bg-bg/80" style={{ width: `${(counts[c.id] / N) * 100}%` }} />
           </div>
           <p className="col-start-2 font-mono text-[11px] uppercase tracking-wider text-accent-bright md:col-start-4 md:text-right">
             {shares[c.id]}%
