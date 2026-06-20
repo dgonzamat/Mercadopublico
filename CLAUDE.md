@@ -10,7 +10,7 @@ Contexto y reglas operativas específicas de este repositorio. Las reglas de com
 - Tailwind CSS 3.4 (dark theme custom)
 - `output: "export"` — SSG puro, deploy a GitHub Pages
 - react-leaflet para `/atlas` (dynamic import, ssr: false)
-- 1 client component: `components/MobileNav.tsx` (focus trap, Escape, body scroll lock)
+- Client components (mínimos): `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades: hover sincroniza segmento↔leyenda; SSR deja el donut completo, la interactividad es progresiva).
 
 ## Estructura
 
