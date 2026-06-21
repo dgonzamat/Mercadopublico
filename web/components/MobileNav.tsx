@@ -142,7 +142,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                   type="button"
                   aria-label={closeLabel}
                   onClick={() => setOpen(false)}
-                  className="inline-flex h-10 items-center gap-2 border-2 border-bg bg-text px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
+                  className="inline-flex h-11 items-center gap-2 border-2 border-bg bg-text px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
                 >
                   <span aria-hidden className="text-base leading-none">
                     ✕

@@ -113,15 +113,26 @@ for (const f of FILES) {
 }
 
 // ── D4 · Touch targets (min interactivo) ─────────────────────────────────────
+// Lee la altura DECLARADA de un interactivo: min-h-[Npx], h-[Npx] y h-N de
+// Tailwind (N·4 px). Antes solo miraba min-h-[…] y era ciego a `h-10` (40px) y
+// similares. Si no hay altura declarada, no se puede inferir estáticamente
+// (muchos dependen de padding) → no se reporta.
 const WCAG_MIN = 24; // WCAG 2.2 AA (2.5.8)
 const RECOMMENDED = 44;
 const INTERACTIVE = /(<button|<a\s|<Link|role="button"|cursor-pointer|onClick|href=)/;
+function declaredHeightPx(line) {
+  const px = [];
+  for (const m of line.matchAll(/min-h-\[(\d+)px\]/g)) px.push(Number(m[1]));
+  for (const m of line.matchAll(/\bh-\[(\d+)px\]/g)) px.push(Number(m[1]));
+  for (const m of line.matchAll(/\bh-(\d+(?:\.\d+)?)\b/g)) px.push(Number(m[1]) * 4);
+  return px.length ? Math.max(...px) : null; // mayor altura declarada = la del elemento
+}
 for (const f of FILES) {
   const lines = read(f).split("\n");
   lines.forEach((line, i) => {
-    const mh = line.match(/min-h-\[(\d+)px\]/);
-    if (!mh || !INTERACTIVE.test(line)) return;
-    const px = Number(mh[1]);
+    if (!INTERACTIVE.test(line)) return;
+    const px = declaredHeightPx(line);
+    if (px == null) return;
     const where = `${f}:${i + 1}`;
     if (px < WCAG_MIN) errors.push(`D4 touch target: ${px}px < WCAG ${WCAG_MIN}px en ${where}`);
     else if (px < RECOMMENDED) warns.push(`D4 touch target: ${px}px < recomendado ${RECOMMENDED}px en ${where}`);
