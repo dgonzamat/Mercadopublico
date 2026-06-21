@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
 import { ShareButton } from "@/components/ShareButton";
+import { InstagramLink } from "@/components/InstagramLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
@@ -121,30 +122,7 @@ export default function RootLayout({
                 </p>
                 <div className="flex items-center gap-3 pt-2">
                   <ShareButton title="UAP Codex" />
-                  <a
-                    href="https://www.instagram.com/uapcodex2026"
-                    target="_blank"
-                    rel="me noopener noreferrer"
-                    aria-label="UAP Codex en Instagram (@uapcodex2026)"
-                    title="Instagram · @uapcodex2026"
-                    className="inline-flex min-h-[36px] min-w-[36px] items-center justify-center rounded-md text-muted transition-colors hover:text-accent"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                    </svg>
-                  </a>
+                  <InstagramLink tone="light" />
                 </div>
               </div>
 

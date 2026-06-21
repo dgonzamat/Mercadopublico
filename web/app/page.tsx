@@ -3,6 +3,7 @@ import { Cta } from "@/components/Cta";
 import { HeroRadar } from "@/components/HeroRadar";
 import { CountUp } from "@/components/CountUp";
 import { HypothesesSnapshot } from "@/components/HypothesesSnapshot";
+import { InstagramLink } from "@/components/InstagramLink";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
@@ -87,6 +88,14 @@ export default function HomePage() {
                 />
                 <span aria-hidden>→</span>
               </Cta>
+            </div>
+            {/* Social · Instagram. Tono "dark" por el hero oscuro (D1 contraste);
+                target 44px en el componente (D4). */}
+            <div className="flex items-center gap-3 pt-2">
+              <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55">
+                <T es="Síguenos" en="Follow" />
+              </span>
+              <InstagramLink tone="dark" />
             </div>
           </div>
         </div>
