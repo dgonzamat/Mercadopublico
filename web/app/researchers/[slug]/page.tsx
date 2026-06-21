@@ -20,8 +20,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) return { title: "No encontrado" };
   return {
-    title: r.name,
-    description: r.bio_short.slice(0, 160),
+    title: r.seoTitle ? { absolute: r.seoTitle } : r.name,
+    description: r.seoDescription ?? r.bio_short.slice(0, 160),
     alternates: { canonical: `/researchers/${r.id}/` },
   };
 }
@@ -117,14 +117,32 @@ export default async function ResearcherDetailPage(
         )}
       </header>
 
-      {/* Zone B — Narrative */}
+      {/* Zone B — Narrative. Bio larga (párrafos \n\n) cuando existe; si no,
+          el bio_short de una línea. */}
       <section className="space-y-3">
         <Eyebrow>
           <T es="Biografía" en="Biography" />
         </Eyebrow>
-        <Body>
-          <T es={r.bio_short} en={r.bio_short_en} />
-        </Body>
+        {r.bio ? (
+          <div className="space-y-5">
+            <div lang="es" data-lang="es" className="space-y-5">
+              {r.bio.split("\n\n").map((para, i) => (
+                <Body key={i}>{para}</Body>
+              ))}
+            </div>
+            {r.bio_en && (
+              <div lang="en" data-lang="en" className="space-y-5">
+                {r.bio_en.split("\n\n").map((para, i) => (
+                  <Body key={i}>{para}</Body>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : (
+          <Body>
+            <T es={r.bio_short} en={r.bio_short_en} />
+          </Body>
+        )}
       </section>
 
       {/* Zone C — Apparatus: works as timeline */}

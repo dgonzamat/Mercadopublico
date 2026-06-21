@@ -173,6 +173,16 @@ export interface Researcher {
   framework?: string;
   bio_short: string;
   bio_short_en: string;
+  // Biografía larga opcional (~estándar de página, párrafos separados por
+  // "\n\n"). Cuando existe, la página de actor la renderiza en vez del
+  // bio_short — para investigadores con demanda real de búsqueda por nombre,
+  // donde el párrafo corto rankeaba en posición 30-90 por contenido delgado.
+  bio?: string;
+  bio_en?: string;
+  // Overrides SEO opcionales (mismo patrón que UAPCase). Apuntan al ángulo
+  // ganable "<nombre> UAP" en vez del nombre puro (que compite con Wikipedia).
+  seoTitle?: string;
+  seoDescription?: string;
   works: ResearcherWork[];
   // Optional portrait. `photo` is a path under /public (e.g.
   // "/researchers/luna.jpg"). Only freely-licensed images (PD/CC) are used;
