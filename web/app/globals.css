@@ -50,6 +50,21 @@ a {
   box-sizing: border-box;
 }
 
+/* Accesibilidad — respeta la preferencia de movimiento reducido en TODO el
+   sitio: anula animaciones y transiciones (donut, hover, tooltip, mini-barras,
+   etc.) para quienes lo piden a nivel SO. Reset estándar recomendado por WCAG
+   2.3.3 / web.dev. El guard específico de .donut-in queda como refuerzo. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Full-bleed: break out of a constrained parent and span the viewport.
    Used on home for inverted dark blocks and edge-to-edge visualizations. */
 .full-bleed {
