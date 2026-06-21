@@ -23,9 +23,12 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Caso no encontrado" };
   const path = `/cases/${c.id}/`;
-  const description = c.summary;
+  const description = c.seoDescription ?? c.summary;
   return {
-    title: `${c.name}`,
+    // `seoTitle` (cuando existe) reemplaza el título completo, sin el sufijo
+    // "· UAP Codex" del template, para controlar la longitud del snippet y
+    // poner las keywords de la query primero. Si no, se usa el name + template.
+    title: c.seoTitle ? { absolute: c.seoTitle } : `${c.name}`,
     description,
     alternates: {
       canonical: path,

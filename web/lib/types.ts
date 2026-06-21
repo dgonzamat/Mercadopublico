@@ -84,6 +84,15 @@ export interface UAPCase {
   probability: number;
   summary: string;
   summary_en?: string;
+  // Overrides SEO opcionales. Cuando la query real con la que la gente
+  // encuentra el caso no coincide con `name`/`summary` (ej. buscan "AARO
+  // Historical Record Report" pero el name es "AAWSAP / Skinwalker Ranch"),
+  // estos campos alimentan el <title> y la meta description con las palabras
+  // que el usuario escribe, sin tocar el H1 ni la prosa. Ausentes = se usa
+  // name/summary. `seoTitle` reemplaza el título completo (sin el sufijo
+  // "· UAP Codex"), así que conviene mantenerlo ≤60 caracteres.
+  seoTitle?: string;
+  seoDescription?: string;
   patterns: string[];
   category: Category;
   // Optional rich-content fields. When present, the case detail page
