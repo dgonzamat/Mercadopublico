@@ -1,0 +1,63 @@
+{
+  "id": "cuba-mig-1967",
+  "num": 210,
+  "name": "Cuba · MiG-21 (reporte NSA)",
+  "name_en": "Cuba · MiG-21 (NSA report)",
+  "year_start": 1967,
+  "country": "CU",
+  "country_name": "Cuba",
+  "flag": "🇨🇺",
+  "location": {
+    "lat": 22.0,
+    "lng": -79.5,
+    "place": "Espacio aéreo de Cuba",
+    "place_en": "Cuban airspace"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 20,
+  "patterns": [
+    "8c",
+    "8s"
+  ],
+  "posterior": {
+    "mundano_natural": 0.25,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.17,
+    "indet": 0.35
+  },
+  "summary": "Según un relato atribuido a un ex-analista de la Agencia de Seguridad Nacional (NSA) de EE.UU., en marzo de 1967 dos MiG-21 de la Fuerza Aérea cubana fueron enviados a interceptar un objeto no identificado; uno habría sido destruido en el aire al disponerse a disparar, y la pérdida se registró como 'falla de equipo'. La historia, recogida por NICAP, descansa en una sola fuente y la NSA nunca la confirmó. Es el caso de Cuba en el corpus — y un ejemplo de la fragilidad de los relatos de fuente única.",
+  "summary_en": "According to an account attributed to a former U.S. National Security Agency (NSA) analyst, in March 1967 two MiG-21s of the Cuban Air Force were sent to intercept an unidentified object; one was supposedly destroyed in mid-air as it prepared to fire, and the loss was logged as 'equipment malfunction'. The story, collected by NICAP, rests on a single source and the NSA never confirmed it. It is Cuba's case in the corpus — and an example of the fragility of single-source accounts.",
+  "whatHappened": "El caso del MiG cubano de 1967 es conocido casi por entero a través de un único relato: el de un hombre que se identificó como ex-analista de inteligencia de señales destinado en una unidad estadounidense que monitoreaba las comunicaciones militares cubanas durante la Guerra Fría. Según ese testimonio, recogido por la organización civil estadounidense NICAP a finales de la década de 1970, en marzo de 1967 los radares de defensa aérea cubana detectaron un objeto no identificado que entró en el espacio aéreo de la isla a gran velocidad y altitud. Dos cazas MiG-21 de la Fuerza Aérea Revolucionaria cubana, de fabricación soviética, fueron enviados a interceptarlo.\n\nEl relato continúa así: los pilotos alcanzaron al objeto y lo describieron por radio como una esfera metálica brillante, sin alas ni superficies de control visibles. El líder de la formación recibió orden de derribarlo y, según el testimonio, cuando se disponía a abrir fuego —con el radar de tiro fijado en el blanco— su avión se desintegró en el aire. El segundo piloto reportó que el objeto ascendió entonces verticalmente y se perdió de vista a una altitud imposible para una aeronave convencional. Según el ex-analista, su unidad transmitió un 'Intelligence Spot Report' a la sede de la NSA, y en pocas horas recibieron la orden de enviar todas las cintas y datos a la agencia y de registrar la pérdida del MiG en los archivos de la escuadrilla como debida a una 'falla de equipo'.\n\nEl problema del caso es estructural: prácticamente todo depende de esa única fuente. La NSA nunca confirmó la existencia del reporte; cuando años después se le preguntó por documentos relacionados, respondió en términos que ni confirmaban ni desmentían un incidente concreto. No hay registros cubanos públicos de la pérdida de la aeronave, ni un segundo testigo independiente del episodio, ni documentación primaria liberada que corrobore la secuencia. La cadena de custodia de la historia —de un analista anónimo a una organización civil y de ahí a la literatura— es exactamente la que más cuidado exige, porque no permite verificar ni el cargo del testigo ni el contenido de los supuestos reportes.\n\nLas lecturas posibles abarcan todo el espectro. En el extremo prosaico, la pérdida de un MiG-21 en 1967 podría tener una causa ordinaria —falla mecánica real, error de pilotaje, accidente— sobre la que se construyó después una narrativa extraordinaria; en el límite, el relato completo podría ser una invención. En el extremo anómalo, sería uno de los pocos casos donde se afirma una interacción hostil con pérdida de una aeronave militar y una respuesta de inteligencia documentada. Sin la corroboración que el corpus exige, el caso no puede inclinarse a ninguno de los dos lados: por eso su mayor masa cae en 'indeterminado'. Su interés no es probatorio sino metodológico y geográfico: es el único caso cubano del corpus, y un recordatorio nítido de que un relato de fuente única, por dramático que sea, no es evidencia hasta que algo externo lo sostiene.",
+  "whatHappened_en": "The 1967 Cuban MiG case is known almost entirely through a single account: that of a man who identified himself as a former signals-intelligence analyst posted to a U.S. unit monitoring Cuban military communications during the Cold War. According to that testimony, collected by the U.S. civilian organization NICAP in the late 1970s, in March 1967 Cuban air-defence radars detected an unidentified object that entered the island's airspace at high speed and altitude. Two Soviet-built MiG-21 fighters of the Cuban Revolutionary Air Force were sent to intercept it.\n\nThe account continues thus: the pilots reached the object and described it by radio as a bright metallic sphere, with no visible wings or control surfaces. The formation leader was ordered to shoot it down and, per the testimony, as he prepared to open fire — with his gun radar locked on the target — his aircraft disintegrated in mid-air. The second pilot reported that the object then climbed vertically and was lost from sight at an altitude impossible for a conventional aircraft. According to the former analyst, his unit transmitted an 'Intelligence Spot Report' to NSA headquarters, and within hours they received orders to send all tapes and data to the agency and to log the MiG's loss in squadron files as due to 'equipment malfunction'.\n\nThe case's problem is structural: virtually everything depends on that single source. The NSA never confirmed the report's existence; when asked years later about related documents, it responded in terms that neither confirmed nor denied a specific incident. There are no public Cuban records of the aircraft's loss, no independent second witness of the episode, no released primary documentation corroborating the sequence. The story's chain of custody — from an anonymous analyst to a civilian organization and thence to the literature — is exactly the kind that demands most caution, because it allows verification neither of the witness's role nor of the content of the supposed reports.\n\nThe possible readings span the whole spectrum. At the prosaic end, the loss of a MiG-21 in 1967 could have an ordinary cause — a real mechanical failure, pilot error, an accident — on which an extraordinary narrative was later built; at the limit, the whole account could be an invention. At the anomalous end, it would be one of the few cases asserting a hostile interaction with the loss of a military aircraft and a documented intelligence response. Without the corroboration the corpus requires, the case cannot lean either way: that is why its greatest mass falls on 'indeterminate'. Its interest is not evidential but methodological and geographic: it is the corpus's only Cuban case, and a sharp reminder that a single-source account, however dramatic, is not evidence until something external sustains it.",
+  "whyMatters": "El caso del MiG cubano importa por dos razones que no son su evidencia. La primera es geográfica: es el único caso de Cuba en el corpus, y amplía el mapa a un actor de la Guerra Fría rara vez representado en la literatura UAP. La segunda es metodológica: es el ejemplo de manual del relato de fuente única —un testigo anónimo, sin documentación primaria liberada, sin segundo testigo, sin confirmación de la agencia citada—. El corpus lo incluye precisamente para marcar ese límite: por dramático que sea (un caza destruido, una respuesta de inteligencia, una orden de encubrir la pérdida), nada de eso puede verificarse, y por eso su reparto carga en 'indeterminado' y su Tier es B. Es el contrapunto de los casos con cadena documental (AAWSAP, los archivos del MoD): muestra qué aspecto tiene un caso cuando esa cadena falta por completo. Tratarlo con escepticismo no es desdén; es la única forma honesta de archivar una historia que podría ser real, prosaica o inventada, sin los medios para distinguir cuál.",
+  "whyMatters_en": "The Cuban MiG case matters for two reasons that are not its evidence. The first is geographic: it is the corpus's only Cuban case, extending the map to a Cold War actor rarely represented in the UAP literature. The second is methodological: it is the textbook example of the single-source account — an anonymous witness, no released primary documentation, no second witness, no confirmation from the cited agency. The corpus includes it precisely to mark that limit: however dramatic (a fighter destroyed, an intelligence response, an order to cover up the loss), none of it can be verified, which is why its distribution loads on 'indeterminate' and its tier is B. It is the counterpoint to the cases with a documentary chain (AAWSAP, the MoD files): it shows what a case looks like when that chain is entirely absent. Treating it with skepticism is not disdain; it is the only honest way to file a story that could be real, prosaic or invented, without the means to tell which.",
+  "evidence": [
+    "Relato único atribuido a un ex-analista de inteligencia de señales de EE.UU. que monitoreaba comunicaciones cubanas; recogido por NICAP (fines de los 1970s).",
+    "Afirmación de un 'Intelligence Spot Report' enviado a la NSA y de la orden de registrar la pérdida del MiG como 'falla de equipo'.",
+    "Ausencia de confirmación de la NSA; sin registros cubanos públicos de la pérdida ni segundo testigo independiente.",
+    "Sin documentación primaria liberada que corrobore la secuencia — el caso descansa por completo en una sola fuente."
+  ],
+  "evidence_en": [
+    "Single account attributed to a former U.S. signals-intelligence analyst monitoring Cuban communications; collected by NICAP (late 1970s).",
+    "Claim of an 'Intelligence Spot Report' sent to the NSA and of an order to log the MiG's loss as 'equipment malfunction'.",
+    "Absence of NSA confirmation; no public Cuban records of the loss and no independent second witness.",
+    "No released primary documentation corroborating the sequence — the case rests entirely on a single source."
+  ],
+  "sources": [
+    {
+      "name": "The 1967 Cuban Jet Incident — NICAP",
+      "url": "http://www.nicap.org/reports/cuban1.htm",
+      "note": "Versión de referencia del relato, basada en el testimonio del ex-analista; fuente única, sin corroboración independiente."
+    },
+    {
+      "name": "Cuban MiG / 1967 incident — discusión crítica",
+      "url": "https://ufoac.com/the-incident-with-the-cuban-jet-ufo.html",
+      "note": "Resumen del caso y de sus problemas de verificación (NSA nunca confirmó)."
+    }
+  ]
+}
