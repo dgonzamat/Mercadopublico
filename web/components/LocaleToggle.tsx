@@ -79,7 +79,7 @@ export function LocaleToggle({
       aria-label={
         locale === "es" ? "Switch to English" : "Cambiar a español"
       }
-      className={`inline-flex items-center gap-1 font-mono text-xs uppercase tracking-widest ${chrome}`}
+      className={`inline-flex min-h-[44px] items-center gap-1 font-mono text-xs uppercase tracking-widest ${chrome}`}
     >
       <span aria-hidden className={locale === "es" ? activeColor : ""}>
         ES
