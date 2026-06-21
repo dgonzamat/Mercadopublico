@@ -105,9 +105,39 @@ else fail(`fórmulas filtradas en el HTML: ${leaked.join(", ")}`);
 if (!html.includes("group-hover:text-accent")) ok(`sin hover rojo (group-hover:text-accent)`);
 else fail(`reapareció el hover rojo group-hover:text-accent`);
 
+// ── Otros gráficos del corpus (smoke tests) ───────────────────────────────
+function readOut(rel) {
+  try {
+    return readFileSync(join(__dirname, "..", "out", rel), "utf8");
+  } catch {
+    return null;
+  }
+}
+function check(label, present) {
+  if (present) ok(label);
+  else fail(label);
+}
+
+console.log("\nHome · snapshot de hipótesis");
+const home = readOut("index.html");
+if (home == null) fail("no existe out/index.html");
+else {
+  check("renderiza el snapshot de hipótesis (header)", /Cómo se clasifican|How the corpus/.test(home));
+  check("declara que suman 100%", home.includes("suman 100%") || home.includes("sum to 100%"));
+}
+
+console.log("\nCaso · CasePosterior");
+// roswell-1947 es un caso estable con posterior MECE.
+const casePage = readOut("cases/roswell-1947/index.html");
+if (casePage == null) fail("no existe out/cases/roswell-1947/index.html");
+else {
+  check("renderiza la hipótesis modal del caso", /Hipótesis modal|Modal hypothesis/.test(casePage));
+  check("la barra por caso suma 100%", casePage.includes("suma 100%") || casePage.includes("sums to 100%"));
+}
+
 console.log("");
 if (failures === 0) {
-  console.log("✓ test-chart: todos los invariantes del donut OK");
+  console.log("✓ test-chart: todos los gráficos del corpus OK");
   process.exit(0);
 } else {
   console.error(`✗ test-chart: ${failures} fallo(s)`);
