@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { T } from "@/components/T";
 import { SiteSearch } from "@/components/SiteSearch";
 import { LocaleToggle } from "@/components/LocaleToggle";
+import { InstagramLink } from "@/components/InstagramLink";
 import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
@@ -234,7 +235,16 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 ))}
               </ul>
 
-              <p className="mt-12 border-t border-bg/15 pt-5 font-mono text-[11px] uppercase tracking-widest text-bg/60">
+              {/* SOCIAL — Instagram visible en mobile (el del hero queda bajo
+                  el pliegue). Drawer oscuro → tono "dark". */}
+              <div className="mt-12 flex items-center gap-3 border-t border-bg/15 pt-5">
+                <span className="font-mono text-[11px] uppercase tracking-widest text-bg/60">
+                  <T es="Síguenos" en="Follow" />
+                </span>
+                <InstagramLink tone="dark" />
+              </div>
+
+              <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-bg/60">
                 <T
                   es="UAP Codex · análisis institucional · 1947–2026"
                   en="UAP Codex · institutional analysis · 1947–2026"
