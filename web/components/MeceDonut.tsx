@@ -22,7 +22,16 @@ const share = (x: number) => (x * 100).toFixed(1);
  * muestra el total. El render del servidor (estado inicial) deja el donut
  * completo y el total — la interactividad es progresiva.
  */
-export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
+export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: number; tone?: "light" | "dark" }) {
+  // Tokens de "chrome" según el fondo. Clases literales (no concatenadas) para
+  // que el JIT de Tailwind las compile. Los colores de segmento no cambian.
+  const dark = tone === "dark";
+  const txt = dark ? "text-bg" : "text-text";
+  const muted = dark ? "text-bg/60" : "text-muted";
+  const track = dark ? "stroke-bg opacity-20" : "stroke-border opacity-40";
+  const fill = dark ? "bg-bg/15" : "bg-border/40"; // pista de mini-barra + fila activa
+  const rowHover = dark ? "hover:bg-bg/15" : "hover:bg-border/40";
+
   const [active, setActive] = useState<string | null>(null);
   // Posición del cursor (relativa al donut) para el tooltip flotante.
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -99,7 +108,7 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
               entrada (que anima el transform del <svg>). */}
           <g transform={`rotate(-90 ${c} ${c})`}>
             {/* Anillo de fondo — da profundidad y rellena los gaps */}
-            <circle cx={c} cy={c} r={r} fill="none" strokeWidth={stroke} className="stroke-border opacity-40" />
+            <circle cx={c} cy={c} r={r} fill="none" strokeWidth={stroke} className={track} />
             {rows.map((row, i) => {
               const frac = row.count / N;
               const len = Math.max(frac * C - gap, 0.5);
@@ -133,14 +142,14 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
               <span className="font-mono text-3xl font-semibold tabular-nums transition-colors" style={{ color: activeRow.color }}>
                 {share(activeRow.count / N)}%
               </span>
-              <span className="mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider text-muted">
+              <span className={`mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider ${muted}`}>
                 <T es={activeRow.label} en={activeRow.labelEn} />
               </span>
             </>
           ) : (
             <>
-              <span className="font-mono text-4xl font-semibold tabular-nums text-text">{N}</span>
-              <span className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted">
+              <span className={`font-mono text-4xl font-semibold tabular-nums ${txt}`}>{N}</span>
+              <span className={`mt-1 font-mono text-[10px] uppercase tracking-widest ${muted}`}>
                 <T es="casos" en="cases" />
               </span>
             </>
@@ -159,18 +168,18 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
               <div className="flex items-baseline justify-between gap-3">
                 <span className="flex min-w-0 items-center gap-2">
                   <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: row.color }} aria-hidden />
-                  <span className={`uppercase tracking-wider ${i === 0 || isActive ? "font-semibold text-text" : "text-text"}`}>
+                  <span className={`uppercase tracking-wider ${i === 0 || isActive ? `font-semibold ${txt}` : txt}`}>
                     <T es={row.label} en={row.labelEn} />
                   </span>
                 </span>
-                <span className="shrink-0 whitespace-nowrap text-right tabular-nums text-muted">
-                  <span className={i === 0 || isActive ? "text-text" : ""}>{share(frac)}%</span>
+                <span className={`shrink-0 whitespace-nowrap text-right tabular-nums ${muted}`}>
+                  <span className={i === 0 || isActive ? txt : ""}>{share(frac)}%</span>
                   {" · "}
                   {row.count.toFixed(1)} <T es="casos" en="cases" />
                 </span>
               </div>
               {/* Mini-barra: longitud relativa a la hipótesis más grande */}
-              <div className="mt-1 h-[3px] w-full overflow-hidden rounded-full bg-border/40">
+              <div className={`mt-1 h-[3px] w-full overflow-hidden rounded-full ${fill}`}>
                 <div
                   className="h-full rounded-full transition-[width] duration-300"
                   style={{ width: `${(frac / maxFrac) * 100}%`, backgroundColor: row.color }}
@@ -179,12 +188,12 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
             </>
           );
           const rowClass = `block rounded-sm px-2 py-1 transition-all ${
-            isActive ? "bg-border/40" : dim ? "opacity-50" : ""
+            isActive ? fill : dim ? "opacity-50" : ""
           }`;
           return (
             <li key={row.key} className="-mx-2 font-mono text-xs" onMouseEnter={() => setActive(row.key)} onMouseLeave={clear}>
               {row.href ? (
-                <a href={row.href} className={`${rowClass} hover:bg-border/40`} onFocus={() => setActive(row.key)} onBlur={clear}>
+                <a href={row.href} className={`${rowClass} ${rowHover}`} onFocus={() => setActive(row.key)} onBlur={clear}>
                   {body}
                 </a>
               ) : (
