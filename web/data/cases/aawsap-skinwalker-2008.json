@@ -87,6 +87,7 @@
       "note": "Serie de investigación periodística sostenida desde 1996."
     }
   ],
+  "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.15,
     "humana_clasificada": 0.34,

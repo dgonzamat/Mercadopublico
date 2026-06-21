@@ -381,13 +381,16 @@ if (shortBodies.length > 0) {
   );
 }
 
-// ─── 9g. RULE M1: invariante del modelo MECE (posterior) ─────────────────
+// ─── 9g. RULES M1/M2: invariantes del modelo MECE (posterior) ────────────
 //
 // Modelo MECE (lib/meceModel.ts): cada caso de incidente reparte el
-// 100% sobre 6 narrativas mutuamente excluyentes. Invariante duro:
-//   - todo caso category!=="document" DEBE tener `posterior` con las 6 claves
-//     exactas, sumando 1 (±0.005). ERROR si no.
-//   - los casos-documento NO deben tener posterior (la partición no aplica). WARN.
+// 100% sobre 6 narrativas mutuamente excluyentes. Invariantes duros:
+//   M1 · todo caso category!=="document" DEBE tener `posterior` con las 6
+//        claves exactas, sumando 1 (±0.005). ERROR si no.
+//   M1 · los documentos pueden traer posterior (= "lean" evidencial). OK.
+//   M2 · si la masa mundano_natural ≥ 15%, el caso DEBE declarar `mundanoType`
+//        (misid|natural|fraude): la vista expandida abre esa masa por sub-tipo
+//        y sin el campo cae en "misid" por default (misclasificación silenciosa).
 const MECE_CLASSES_AUDIT = [
   "mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet",
 ];
@@ -414,6 +417,20 @@ for (const c of cases) {
   if (Math.abs(total - 1) > 0.005) {
     record("ERROR", file, 0, `M1: posterior de "${c.id}" suma ${total.toFixed(4)} (debe ser 1)`);
     continue;
+  }
+  // M2 · clasificación forzada sin default silencioso: si un caso tiene masa
+  // mundano_natural significativa (≥15%), en la vista expandida esa masa se
+  // abre en misid/natural/fraude según `mundanoType`. Sin el campo, el código
+  // cae en "misid" por defecto (lib/meceModel.ts) → misclasificación silenciosa.
+  // Se exige declararlo explícitamente.
+  const MUNDANO_TYPES = ["misid", "natural", "fraude"];
+  if (total > 0 && p.mundano_natural / total >= 0.15 && !MUNDANO_TYPES.includes(c.mundanoType)) {
+    record(
+      "ERROR",
+      file,
+      0,
+      `M2: "${c.id}" tiene mundano_natural=${(p.mundano_natural / total).toFixed(2)} pero sin mundanoType (caería en "misid" por default) — declarar misid|natural|fraude`,
+    );
   }
   if (isDoc) continue;
   mecePosteriorCount++;
