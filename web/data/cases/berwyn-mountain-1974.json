@@ -1,0 +1,64 @@
+{
+  "id": "berwyn-mountain-1974",
+  "num": 203,
+  "name": "Berwyn Mountain · Llandrillo",
+  "name_en": "Berwyn Mountain · Llandrillo",
+  "year_start": 1974,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 52.943,
+    "lng": -3.433,
+    "place": "Montes Berwyn, Llandrillo (Gales)",
+    "place_en": "Berwyn Mountains, Llandrillo (Wales)"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "natural",
+  "probability": 12,
+  "patterns": [
+    "8o"
+  ],
+  "posterior": {
+    "mundano_natural": 0.78,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.04,
+    "indet": 0.1
+  },
+  "summary": "La noche del 23 de enero de 1974, los montes Berwyn de Llandrillo (Gales) temblaron con un estruendo y un resplandor que muchos tomaron por un OVNI estrellado. La evidencia oficial —archivos del MoD desclasificados en 2010 y datos del servicio geológico— apunta a la coincidencia de un terremoto de magnitud 3.5 (20:38) con un meteoro brillante visto sobre el norte de Gales e Inglaterra. Apodado el 'Roswell galés', es un caso modelo de cómo dos eventos naturales simultáneos engendran una leyenda de recuperación encubierta.",
+  "summary_en": "On the night of 23 January 1974, the Berwyn Mountains at Llandrillo (Wales) shook with a roar and a glow that many took for a crashed UFO. The official evidence — MoD files declassified in 2010 and geological-survey data — points to the coincidence of a magnitude 3.5 earthquake (20:38) with a bright meteor seen over north Wales and England. Nicknamed the 'Welsh Roswell', it is a model case of how two simultaneous natural events spawn a cover-up retrieval legend.",
+  "whatHappened": "A las 20:38 del 23 de enero de 1974, una parte del norte de Gales sintió un fuerte temblor. En la zona de los montes Berwyn, sobre el pueblo de Llandrillo en Merionethshire, los vecinos describieron un estruendo seguido de la casa 'sacudiéndose violentamente' y, para varios, una luz brillante en el cielo. La combinación —ruido, vibración y resplandor en una noche de montaña— bastó para que cundiera de inmediato la idea de que algo se había estrellado en las laderas. Una enfermera local condujo hacia las colinas creyendo que había caído un avión y podría haber heridos; no encontró restos, sino, según algunos relatos posteriores, luces y actividad que alimentarían la versión más dramática.\n\nLa explicación que la evidencia sostiene es la concurrencia de dos fenómenos naturales independientes. El Institute of Geological Sciences (hoy British Geological Survey) registró esa noche un terremoto de magnitud 3.5 con epicentro en la región, sentido en un área amplia del norte de Gales y hasta Formby, en Inglaterra, a unos 20 km al norte de Liverpool. Por separado, numerosos observadores de Gales y el norte de Inglaterra reportaron a esa misma hora un meteoro brillante —un bólido— cruzando el cielo. Un terremoto explica el estruendo y la vibración; un bólido explica la luz en movimiento. Que ambos ocurrieran casi simultáneamente sobre una comarca rural y oscura creó la ilusión perfecta de un objeto que cae, impacta y se ilumina.\n\nLa leyenda creció en la dirección opuesta a la evidencia. Con los años, relatos de segunda y tercera mano hablaron de un cordón militar en las colinas, de cuerpos retirados en camiones y trasladados a instalaciones de defensa, de una recuperación encubierta de nave y tripulación no humana. Algunos tabloides bautizaron el episodio, medio en broma, como 'el incidente Roswelsh'. El problema de esa versión es que ninguna de sus piezas duras se materializó: no aparecieron restos, ni testigos militares verificables del supuesto operativo, ni documentación de una recuperación. Cuando el Ministerio de Defensa británico comenzó a desclasificar sus 'archivos OVNI' a finales de la década de 2000, los documentos liberados por los National Archives en 2010 mostraron justamente lo contrario de un encubrimiento: el MoD había recogido declaraciones de testigos y atribuido el episodio a la combinación de terremoto y meteoro, sin rastro de operación de recuperación.\n\nQueda un residuo humano interesante, aunque no anómalo. Parte de las 'luces en la ladera' que vieron quienes subieron esa noche podrían corresponder a cazadores furtivos de liebres con linternas, habituales en la zona, y a los propios faros de quienes acudieron a investigar. La fuerza del caso no está, por tanto, en lo que cayó —nada cayó—, sino en lo que revela sobre la formación de mitos: un evento sensorial intenso pero prosaico, sin explicación inmediata disponible para los testigos en el momento, se convierte con el tiempo, y con la ayuda de la prensa y la cultura OVNI, en una historia de encubrimiento que ya nadie puede 'desestrellar'.",
+  "whyMatters": "Berwyn es el caso de control del corpus: el ejemplo limpio de cómo nace un mito de recuperación encubierta sin que haya nada que recuperar. Su valor analítico es doble. Primero, está extraordinariamente bien explicado —terremoto M3.5 registrado instrumentalmente más un bólido visto por muchos testigos independientes—, lo que lo convierte en una vara para medir otros casos: si un episodio 'inexplicable' tiene esta calidad de evidencia mundana, no es un misterio. Segundo, su trayectoria pública es un laboratorio de cómo la ausencia de explicación inmediata, la prensa y el imaginario de Roswell fabrican, en años, un relato de cuerpos y camiones militares que la desclasificación del propio MoD desmiente. Por eso su probabilidad es baja y su masa mundano_natural domina: incluirlo no debilita el corpus, lo calibra. Es el recordatorio de que la postura por defecto ante un 'OVNI estrellado' debe ser el escepticismo, y de que a veces el cielo simplemente hizo dos cosas a la vez.",
+  "evidence": [
+    "Terremoto de magnitud 3.5 registrado por el Institute of Geological Sciences a las 20:38 del 23 ene 1974, sentido del norte de Gales hasta Formby (Inglaterra).",
+    "Múltiples reportes independientes de un meteoro/bólido brillante sobre Gales y el norte de Inglaterra a la misma hora.",
+    "Archivos OVNI del MoD desclasificados por los National Archives (2010): atribuyen el evento a terremoto + meteoro; sin rastro de operación de recuperación.",
+    "Ausencia de restos físicos, de testigos militares verificables del supuesto cordón y de documentación de una recuperación encubierta.",
+    "Explicación plausible de las 'luces en la ladera': cazadores furtivos con linternas y faros de quienes acudieron a investigar."
+  ],
+  "evidence_en": [
+    "Magnitude 3.5 earthquake logged by the Institute of Geological Sciences at 20:38 on 23 Jan 1974, felt from north Wales to Formby (England).",
+    "Multiple independent reports of a bright meteor/bolide over Wales and northern England at the same hour.",
+    "MoD UFO files declassified by the National Archives (2010): attribute the event to earthquake + meteor; no trace of a retrieval operation.",
+    "Absence of physical debris, verifiable military witnesses of the alleged cordon, and documentation of a covert recovery.",
+    "Plausible explanation of the 'lights on the hillside': poachers with torches and the headlights of those who drove up to investigate."
+  ],
+  "sources": [
+    {
+      "name": "Berwyn Mountain UFO incident — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Berwyn_Mountain_UFO_incident",
+      "note": "Síntesis con el terremoto M3.5, el meteoro y los archivos del MoD desclasificados en 2010."
+    },
+    {
+      "name": "The National Archives (UK) — MoD UFO files (release 2010)",
+      "url": "https://www.nationalarchives.gov.uk/ufos/",
+      "note": "Documentación oficial que atribuye el episodio a la coincidencia de terremoto y meteoro."
+    }
+  ],
+  "whatHappened_en": "At 8:38 p.m. on 23 January 1974, part of north Wales felt a strong tremor. In the area of the Berwyn Mountains, above the village of Llandrillo in Merionethshire, residents described a roar followed by the house 'shaking violently' and, for several, a bright light in the sky. The combination — noise, vibration and glow on a mountain night — was enough for the idea to spread at once that something had crashed on the slopes. A local nurse drove toward the hills believing a plane had come down and there might be injured people; she found no wreckage but, according to some later accounts, lights and activity that would feed the more dramatic version.\n\nThe explanation the evidence supports is the concurrence of two independent natural phenomena. The Institute of Geological Sciences (now the British Geological Survey) recorded a magnitude 3.5 earthquake that night with its epicentre in the region, felt across a wide area of north Wales and as far as Formby, in England, about 20 km north of Liverpool. Separately, numerous observers in Wales and northern England reported at that same hour a bright meteor — a bolide — crossing the sky. An earthquake explains the roar and the vibration; a bolide explains the moving light. That both occurred almost simultaneously over a dark, rural district created the perfect illusion of an object falling, impacting and lighting up.\n\nThe legend grew in the opposite direction to the evidence. Over the years, second- and third-hand accounts spoke of a military cordon on the hills, of bodies removed in trucks and taken to defence facilities, of a covert recovery of craft and non-human crew. Some tabloids dubbed the episode, half in jest, 'the Roswelsh incident'. The problem with that version is that none of its hard pieces materialized: no debris appeared, nor verifiable military witnesses of the alleged operation, nor documentation of a recovery. When the British Ministry of Defence began declassifying its 'UFO files' in the late 2000s, the documents released by the National Archives in 2010 showed precisely the opposite of a cover-up: the MoD had collected witness statements and attributed the episode to the combination of earthquake and meteor, with no trace of a recovery operation.\n\nAn interesting human residue remains, though not an anomalous one. Some of the 'lights on the hillside' seen by those who climbed that night may correspond to hare poachers with torches, common in the area, and to the headlights of those who drove up to investigate. The strength of the case lies, therefore, not in what fell — nothing fell — but in what it reveals about myth-formation: an intense but prosaic sensory event, with no immediate explanation available to witnesses at the time, becomes over the years, helped by the press and UFO culture, a cover-up story that no one can 'un-crash'.",
+  "whyMatters_en": "Berwyn is the corpus's control case: the clean example of how a covert-recovery myth is born with nothing to recover. Its analytical value is twofold. First, it is extraordinarily well explained — an instrumentally recorded M3.5 earthquake plus a bolide seen by many independent witnesses — which makes it a yardstick for other cases: if an 'inexplicable' episode has this quality of mundane evidence, it is no mystery. Second, its public trajectory is a laboratory of how the absence of an immediate explanation, the press and the Roswell imaginary manufacture, over years, a story of bodies and military trucks that the MoD's own declassification disproves. That is why its probability is low and its mundane mass dominates: including it does not weaken the corpus, it calibrates it. It is the reminder that the default stance toward a 'crashed UFO' should be skepticism, and that sometimes the sky simply did two things at once."
+}
