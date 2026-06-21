@@ -1,0 +1,67 @@
+{
+  "id": "dr-x-1968",
+  "num": 204,
+  "name": "Caso Dr. X",
+  "name_en": "The Dr. X Case",
+  "year_start": 1968,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 43.7,
+    "lng": 5.9,
+    "place": "Sureste de Francia (ubicación reservada)",
+    "place_en": "South-eastern France (location withheld)"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 26,
+  "patterns": [
+    "8a",
+    "8b",
+    "8k"
+  ],
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.39,
+    "indet": 0.2
+  },
+  "summary": "En noviembre de 1968, un médico francés (anonimizado como 'Dr. X') vio desde su ventana dos discos luminosos que se fundieron en uno y emitieron un haz. Tras el encuentro, una herida de hacha y una vieja lesión de guerra desaparecieron, y semanas después le brotó un sarpullido triangular que también apareció en su hijo de catorce meses. Documentado por Aimé Michel y Jacques Vallée y publicado en la revista «Flying Saucer Review» (1969), es uno de los casos de 'efectos físicos' más citados — y más difíciles de cerrar.",
+  "summary_en": "In November 1968, a French physician (anonymized as 'Dr. X') saw from his window two luminous disks that merged into one and emitted a beam. After the encounter an axe wound and an old war injury vanished, and weeks later a triangular rash appeared on him and on his fourteen-month-old son. Documented by Aimé Michel and Jacques Vallée and published in Flying Saucer Review (1969), it is one of the most cited — and hardest to close — 'physical effects' cases.",
+  "whatHappened": "En la madrugada de un día de principios de noviembre de 1968, un médico del sureste de Francia —cuya identidad los investigadores protegieron bajo el seudónimo 'Dr. X'— fue despertado por el llanto de su hijo de catorce meses. Se levantó con dificultad: días antes se había herido una pierna cortando leña con un hacha, y arrastraba además una vieja lesión de la guerra de Argelia. El niño señalaba hacia destellos que entraban por los postigos. Al asomarse, el médico dijo ver dos objetos en forma de disco, horizontales, blanco plateados por arriba y de un rojo brillante por debajo, con antenas y haces de luz. Los dos discos se aproximaron, se fundieron en uno solo y, tras un periodo de observación, el objeto emitió un haz de luz hacia la casa antes de desaparecer con un estallido, dejando una especie de filamento o nube que se disipó.\n\nLo que hace memorable al caso no es el avistamiento en sí, sino la secuencia de efectos físicos que el médico y su familia reportaron después, y que quedó documentada por la investigación. En las horas siguientes, el dolor y la inflamación de la herida de hacha desaparecieron; también remitieron las secuelas de la antigua lesión de guerra, algo que —según el seguimiento— se mantuvo durante el periodo observado. Pero el elemento más desconcertante llegó días después: al médico le brotó en el abdomen un sarpullido con forma de triángulo, y poco después un sarpullido triangular idéntico apareció en el vientre de su hijo, que no había presenciado el encuentro de la misma forma. Esas marcas, según el relato, aparecían y desaparecían de manera intermitente durante meses, desconcertando a los médicos que las examinaron. Se reportaron además efectos asociados —relojes y circuitos eléctricos alterados, y un episodio de presunta levitación—, de naturaleza mucho más anecdótica.\n\nLa investigación corrió a cargo de dos figuras de peso. El escritor científico Aimé Michel, referente de la ufología francesa, conoció al médico, documentó el caso y lo publicó en «Flying Saucer Review» en 1969. El astrofísico e informático Jacques Vallée —que por entonces construía su 'colegio invisible' de científicos interesados en el fenómeno— lo estudió y lo incorporó a su corpus como ejemplo de los 'efectos físicos y médicos' que, a su juicio, distinguían a los casos serios de la simple confusión perceptiva. Para Vallée, el sarpullido triangular compartido por padre e hijo era especialmente significativo: un efecto físico, fechable, sobre un testigo secundario que no había vivido el avistamiento, difícil de reducir a sugestión.\n\nEl expediente escéptico es serio y necesario. Es un caso de testigo esencialmente único, sin instrumentación, sin fotografía y sin testigos externos del objeto; depende por completo de la credibilidad de un hombre y de la documentación de dos investigadores no neutrales. La desaparición del dolor puede leerse como efecto psicosomático o coincidencia con la curación natural de una herida reciente; las luces, como mala identificación de un fenómeno atmosférico o astronómico amplificado por el despertar abrupto. El sarpullido triangular es el punto más resistente —una marca dermatológica compartida es rara—, pero sin expediente médico independiente y contemporáneo publicado, su valor probatorio queda atado a la cadena testimonial. El caso vive, así, en la categoría que Vallée defendía y que el corpus trata con pinzas: testimonio articulado y de buena fe, con un efecto físico que no encaja del todo en lo prosaico, pero sin la evidencia objetiva que lo sacaría de la duda.",
+  "whyMatters": "El Caso Dr. X es el arquetipo europeo del incidente de 'efectos físicos': su interés no está en las luces, sino en lo que el cuerpo de los testigos hizo después —la curación reportada y, sobre todo, el sarpullido triangular compartido por el médico y su hijo de catorce meses—. Importa para el corpus porque marca el límite superior de lo que un caso de testigo único puede aspirar a aportar: un efecto físico fechado sobre un testigo secundario es más difícil de explicar por sugestión que un simple relato, y por eso Vallée lo elevó a pieza de su 'colegio invisible'. Pero también marca el límite inferior de la evidencia objetiva: sin instrumentación, sin expediente médico independiente publicado y sin testigos externos del objeto, todo descansa en una cadena testimonial con investigadores comprometidos. Su Tier B y su reparto —con una masa apreciable en 'no-humano abierto', el territorio ontológico de Vallée, equilibrada por un 30% mundano— reflejan exactamente esa tensión: el mejor de los casos puramente testimoniales sigue siendo, por definición, insuficiente para concluir, y a la vez demasiado anómalo para descartar.",
+  "evidence": [
+    "Relato detallado y consistente del médico, documentado por Aimé Michel y publicado en Flying Saucer Review (1969).",
+    "Dos discos que se fusionan en uno y emiten un haz — morfología 'madre + sub-objetos' registrada en el encuentro.",
+    "Desaparición reportada del dolor de una herida de hacha reciente y de secuelas de una lesión de guerra, con seguimiento de ~2 años.",
+    "Sarpullido en forma de triángulo en el abdomen del médico y, después, idéntico en su hijo de 14 meses; intermitente durante meses.",
+    "Efectos asociados anecdóticos: alteración de relojes y circuitos eléctricos; un episodio de presunta levitación.",
+    "Caso de testigo esencialmente único: sin instrumentación, fotografía ni testigos externos del objeto."
+  ],
+  "evidence_en": [
+    "Detailed, consistent account by the physician, documented by Aimé Michel and published in Flying Saucer Review (1969).",
+    "Two disks merging into one and emitting a beam — a 'mothership + sub-objects' morphology recorded in the encounter.",
+    "Reported disappearance of pain from a recent axe wound and from old war-injury sequelae, with ~2-year follow-up.",
+    "A triangular rash on the physician's abdomen and, later, an identical one on his 14-month-old son; intermittent for months.",
+    "Anecdotal associated effects: disrupted clocks and electrical circuits; one reported levitation episode.",
+    "Essentially single-witness case: no instrumentation, photography or external witnesses of the object."
+  ],
+  "sources": [
+    {
+      "name": "Michel, Aimé — 'The Strange Case of Dr. X' (Flying Saucer Review, 1969)",
+      "note": "Documentación primaria del caso por el investigador que conoció al médico."
+    },
+    {
+      "name": "Vallée, Jacques — 'The Invisible College' (1975)",
+      "url": "https://archive.org/details/the-strange-case-of-dr-x",
+      "note": "Análisis del caso como ejemplo de 'efectos físicos y médicos'; fuente clave (e investigador comprometido, a ponderar)."
+    }
+  ],
+  "whatHappened_en": "In the early hours of a day in early November 1968, a physician from south-eastern France — whose identity investigators protected under the pseudonym 'Dr. X' — was woken by the crying of his fourteen-month-old son. He got up with difficulty: days earlier he had injured his leg chopping wood with an axe, and he also carried an old wound from the Algerian war. The child was pointing toward flashes coming through the shutters. Looking out, the physician said he saw two horizontal, disk-shaped objects, silvery white above and bright red below, with antennae and beams of light. The two disks approached, merged into a single one and, after a period of observation, the object emitted a beam of light toward the house before vanishing with a bang, leaving a kind of filament or cloud that dissipated.\n\nWhat makes the case memorable is not the sighting itself but the sequence of physical effects the physician and his family reported afterward, which the investigation documented. In the following hours, the pain and swelling of the axe wound disappeared; the sequelae of the old war injury also subsided, something that — according to the follow-up — held throughout the observed period. But the most disconcerting element came days later: a triangle-shaped rash erupted on the physician's abdomen, and shortly after an identical triangular rash appeared on his son's belly, although the child had not witnessed the encounter in the same way. Those marks, according to the account, appeared and disappeared intermittently for months, baffling the physicians who examined them. Associated effects were also reported — disrupted clocks and electrical circuits, and an episode of alleged levitation — of a far more anecdotal nature.\n\nThe investigation was carried out by two heavyweight figures. Science writer Aimé Michel, a reference of French ufology, met the physician, documented the case and published it in Flying Saucer Review in 1969. The astrophysicist and computer scientist Jacques Vallée — who was then building his 'invisible college' of scientists interested in the phenomenon — studied it and incorporated it into his corpus as an example of the 'physical and medical effects' that, in his view, distinguished serious cases from mere perceptual confusion. For Vallée, the triangular rash shared by father and son was especially significant: a physical, datable effect on a secondary witness who had not lived through the sighting, hard to reduce to suggestion.\n\nThe skeptical file is serious and necessary. It is an essentially single-witness case, with no instrumentation, no photograph and no external witnesses of the object; it depends entirely on the credibility of one man and on the documentation of two non-neutral investigators. The disappearance of the pain can be read as a psychosomatic effect or a coincidence with the natural healing of a recent wound; the lights, as a misidentification of an atmospheric or astronomical phenomenon amplified by abrupt waking. The triangular rash is the most resistant point — a shared dermatological mark is rare — but without an independent, contemporary, published medical file, its evidential value remains tied to the testimonial chain. The case thus lives in the category Vallée defended and that the corpus handles with tongs: articulate, good-faith testimony, with a physical effect that does not fully fit the prosaic, but without the objective evidence that would lift it out of doubt.",
+  "whyMatters_en": "The Dr. X case is the European archetype of the 'physical effects' incident: its interest lies not in the lights but in what the witnesses' bodies did afterward — the reported healing and, above all, the triangular rash shared by the physician and his fourteen-month-old son. It matters to the corpus because it marks the upper limit of what a single-witness case can aspire to contribute: a datable physical effect on a secondary witness is harder to explain by suggestion than a mere account, which is why Vallée elevated it to a centrepiece of his 'invisible college'. But it also marks the lower limit of objective evidence: without instrumentation, without an independent published medical file and without external witnesses of the object, everything rests on a testimonial chain with committed investigators. Its Tier B and its distribution — with appreciable mass in 'open non-human', Vallée's ontological territory, balanced by 30% mundane — reflect exactly that tension: the best of the purely testimonial cases is still, by definition, insufficient to conclude, and at the same time too anomalous to dismiss."
+}

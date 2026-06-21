@@ -1,0 +1,66 @@
+{
+  "id": "project-grudge-1949",
+  "num": 202,
+  "name": "Project Grudge — USAF",
+  "name_en": "Project Grudge — USAF",
+  "year_start": 1949,
+  "year_end": 1952,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.813,
+    "lng": -84.049,
+    "place": "Wright-Patterson AFB, Ohio",
+    "place_en": "Wright-Patterson AFB, Ohio"
+  },
+  "tier": "A",
+  "category": "document",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 70,
+  "patterns": [
+    "8m",
+    "8n"
+  ],
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.04,
+    "indet": 0.3
+  },
+  "summary": "Sucesor de Project Sign, Project Grudge (1949–1952) fue el segundo programa oficial de la USAF sobre 'platillos volantes', con una premisa invertida: en vez de investigar, debunkear. Su informe de 1949 concluyó que los avistamientos eran identificaciones erróneas, fenómenos naturales, histeria o engaños, y recomendó reducir el interés público. Cerró desacreditado tras la oleada de 1952 y fue reemplazado por Project Blue Book. Es el eslabón institucional —y la postura— que la divulgación posterior tomaría como ejemplo del 'debunking' de Estado.",
+  "summary_en": "Successor to Project Sign, Project Grudge (1949–1952) was the U.S. Air Force's second official 'flying saucer' program, with an inverted premise: not to investigate but to debunk. Its 1949 report concluded that sightings were misidentifications, natural phenomena, hysteria or hoaxes, and recommended reducing public interest. It closed discredited after the 1952 wave and was replaced by Project Blue Book. It is the institutional link — and the posture — that later disclosure would cite as the template of state 'debunking'.",
+  "whatHappened": "Para febrero de 1949, la USAF cerró Project Sign, su primer estudio formal de los 'platillos volantes', y lo reemplazó por Project Grudge. El cambio no fue solo de nombre. Sign había llegado, en su clasificada 'Estimate of the Situation' de 1948, a inclinarse por la hipótesis interplanetaria; el general Hoyt Vandenberg rechazó esa evaluación y ordenó destruirla. Grudge nació de esa derrota: su premisa operativa ya no era averiguar qué eran los objetos, sino demostrar que no eran nada. El nombre mismo —'rencor'— captó el tono. El programa partía de la conclusión y buscaba la evidencia que la sostuviera, invirtiendo la carga que un estudio genuino habría asumido.\n\nEl producto central fue el Informe Técnico de Project Grudge, publicado en agosto de 1949. Revisó unos 244 casos y los atribuyó a globos meteorológicos, cuerpos astronómicos, aviones, reflejos, ilusiones ópticas, histeria colectiva y engaños deliberados. Reconoció que un porcentaje —en torno al 23%— quedaba sin explicación, pero argumentó que esos residuos no implicaban nada extraordinario y que el fenómeno no representaba una amenaza a la seguridad nacional. Una recomendación fue tan reveladora como las conclusiones: sugería reducir el alcance de la investigación y, en la práctica, desincentivar el reporte público, con el argumento de que la atención mediática alimentaba la histeria. El astrónomo J. Allen Hynek, contratado como consultor científico, aportó explicaciones astronómicas para parte de la casuística; años después describiría el clima de Grudge como de desinterés institucional deliberado.\n\nTras el informe, Grudge entró en una fase casi nominal. Entre finales de 1949 y 1951 el programa se mantuvo con personal mínimo y baja prioridad; los reportes seguían llegando pero se procesaban con desgana. Ese letargo se rompió de golpe en 1952. La gran oleada de avistamientos de ese año —que culminó en julio con los ecos de radar sobre Washington D.C. y la intercepción de cazas— hizo insostenible la postura de minimización: la Fuerza Aérea recibía cientos de reportes, algunos de pilotos y operadores de radar, en pleno clima de Guerra Fría y nervios por una posible sorpresa tecnológica soviética. La presión obligó a reorganizar el esfuerzo. A finales de 1951 el capitán Edward Ruppelt había comenzado a profesionalizar el manejo de casos, y en marzo de 1952 el programa fue refundado y rebautizado como Project Blue Book, con un mandato —al menos sobre el papel— más serio y sistemático.\n\nLa existencia y el contenido de Grudge no están en disputa: el informe es un documento desclasificado y citado, y la secuencia Sign → Grudge → Blue Book es el esqueleto reconocido de la respuesta oficial estadounidense entre 1948 y 1969. Lo que sí se discute es su significado. Para una lectura, Grudge es simplemente lo que parece: una burocracia de posguerra concluyendo, con cierta pereza pero sin conspiración, que casi todo era prosaico. Para otra, es la primera institucionalización de una política de gestión de la percepción —decidir el resultado por adelantado y orientar al público a dejar de mirar—, el patrón que el panel Robertson de 1953 formalizaría y que la corriente de divulgación posterior señalaría como el origen del 'debunking' de Estado.",
+  "whyMatters": "Grudge importa como pieza institucional, no como avistamiento: es el momento en que la respuesta oficial de EE.UU. pasa de investigar (Sign) a desacreditar, y deja constancia escrita de esa inversión. Su Informe Técnico de 1949 es el primer documento donde el Estado adopta explícitamente la postura de minimizar el fenómeno y desalentar el reporte público —el ADN del patrón de 'cover-up' y de 'ambigüedad estratégica' que recorre el corpus—. Sin Grudge, la trilogía Sign–Grudge–Blue Book queda coja: faltaría justamente el eslabón que explica por qué Blue Book nació ya con un sesgo hacia la explicación tranquilizadora. Su Tier A y su alta certeza documental reflejan que el hecho del programa es incontrovertible; lo que el caso aporta no es 'qué eran los objetos', sino la prueba de que la política de gestión de la creencia es tan antigua como el fenómeno mismo.",
+  "evidence": [
+    "Informe Técnico de Project Grudge (agosto 1949): ~244 casos revisados; ~23% reconocido como inexplicado pero declarado sin significancia.",
+    "Cadena institucional documentada Project Sign (1948) → Project Grudge (1949–52) → Project Blue Book (1952–69).",
+    "Recomendación explícita de reducir la investigación y desincentivar el reporte público para no alimentar la 'histeria'.",
+    "Participación de J. Allen Hynek como consultor astronómico, quien luego criticó el desinterés institucional del periodo.",
+    "Refundación en Project Blue Book (marzo 1952) bajo el capitán Edward Ruppelt tras la oleada de 1952."
+  ],
+  "evidence_en": [
+    "Project Grudge Technical Report (August 1949): ~244 cases reviewed; ~23% acknowledged as unexplained but declared insignificant.",
+    "Documented institutional chain Project Sign (1948) → Project Grudge (1949–52) → Project Blue Book (1952–69).",
+    "Explicit recommendation to scale back investigation and discourage public reporting so as not to feed 'hysteria'.",
+    "J. Allen Hynek's role as astronomical consultant, who later criticized the period's institutional disinterest.",
+    "Reorganization into Project Blue Book (March 1952) under Captain Edward Ruppelt after the 1952 wave."
+  ],
+  "sources": [
+    {
+      "name": "Project Grudge — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Project_Grudge",
+      "note": "Cronología del programa, el informe de 1949 y la transición a Blue Book."
+    },
+    {
+      "name": "Ruppelt, Edward J. — 'The Report on Unidentified Flying Objects' (1956)",
+      "url": "https://sacred-texts.com/ufo/rufo/index.htm",
+      "note": "Relato de primera mano del oficial que reorganizó el esfuerzo y fundó Blue Book; describe el clima de Grudge."
+    }
+  ],
+  "whatHappened_en": "By February 1949, the USAF closed Project Sign, its first formal study of the 'flying saucers', and replaced it with Project Grudge. The change was not only of name. Sign had, in its classified 1948 'Estimate of the Situation', leaned toward the interplanetary hypothesis; General Hoyt Vandenberg rejected that assessment and ordered it destroyed. Grudge was born of that defeat: its operating premise was no longer to find out what the objects were, but to demonstrate that they were nothing. The name itself captured the tone. The program started from the conclusion and sought the evidence to support it, inverting the burden a genuine study would have assumed.\n\nThe central product was the Project Grudge Technical Report, published in August 1949. It reviewed some 244 cases and attributed them to weather balloons, astronomical bodies, aircraft, reflections, optical illusions, mass hysteria and deliberate hoaxes. It acknowledged that a share — around 23% — remained unexplained, but argued that those residues implied nothing extraordinary and that the phenomenon posed no national-security threat. One recommendation was as telling as the conclusions: it suggested reducing the scope of the investigation and, in practice, discouraging public reporting, on the grounds that media attention fed hysteria. Astronomer J. Allen Hynek, hired as scientific consultant, supplied astronomical explanations for part of the casuistry; years later he would describe the climate of Grudge as one of deliberate institutional disinterest.\n\nAfter the report, Grudge entered a near-nominal phase. From late 1949 to 1951 the program ran with minimal staff and low priority; reports kept arriving but were processed listlessly. That lethargy broke abruptly in 1952. That year's great wave of sightings — culminating in July with the radar returns over Washington, D.C. and the scrambling of fighters — made the minimizing posture untenable: the Air Force was receiving hundreds of reports, some from pilots and radar operators, amid Cold War nerves about a possible technological surprise from the Soviets. The pressure forced a reorganization. By late 1951 Captain Edward Ruppelt had begun to professionalize case handling, and in March 1952 the program was refounded and renamed Project Blue Book, with a mandate — at least on paper — more serious and systematic.\n\nThe existence and content of Grudge are not in dispute: the report is a declassified, cited document, and the sequence Sign → Grudge → Blue Book is the acknowledged skeleton of the U.S. official response between 1948 and 1969. What is debated is its meaning. On one reading, Grudge is simply what it appears to be: a postwar bureaucracy concluding, somewhat lazily but without conspiracy, that almost everything was prosaic. On another, it is the first institutionalization of a perception-management policy — deciding the outcome in advance and steering the public to stop looking — the pattern the 1953 Robertson Panel would formalize and that later disclosure would point to as the origin of state 'debunking'.",
+  "whyMatters_en": "Grudge matters as an institutional piece, not as a sighting: it is the moment the U.S. official response shifts from investigating (Sign) to discrediting, and leaves a written record of that inversion. Its 1949 Technical Report is the first document in which the state explicitly adopts the posture of minimizing the phenomenon and discouraging public reporting — the DNA of the 'cover-up' and 'strategic ambiguity' pattern that runs through the corpus. Without Grudge, the Sign–Grudge–Blue Book trilogy is lame: it would be missing precisely the link that explains why Blue Book was born already biased toward the reassuring explanation. Its Tier A and high documentary certainty reflect that the fact of the program is incontrovertible; what the case contributes is not 'what the objects were', but proof that the politics of managing belief is as old as the phenomenon itself."
+}
