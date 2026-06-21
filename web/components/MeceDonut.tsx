@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import { T } from "@/components/T";
 
 export type DonutDatum = {
@@ -27,7 +27,7 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
   // Posición del cursor (relativa al donut) para el tooltip flotante.
   const wrapRef = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const onMove = (e: React.MouseEvent) => {
+  const onMove = (e: ReactPointerEvent) => {
     const rect = wrapRef.current?.getBoundingClientRect();
     if (rect) setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
   };
@@ -52,8 +52,15 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
 
   return (
     <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-10">
-      {/* Donut */}
-      <div ref={wrapRef} onMouseMove={onMove} className="relative h-60 w-60 shrink-0">
+      {/* Donut — puntero (mouse) y táctil (tap) */}
+      <div
+        ref={wrapRef}
+        onPointerMove={onMove}
+        onPointerDown={onMove}
+        onMouseLeave={clear}
+        onClick={clear}
+        className="relative h-60 w-60 shrink-0"
+      >
         {/* Tooltip flotante: sigue al cursor sobre el gráfico */}
         {activeRow && (
           <div
@@ -113,7 +120,6 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
                   dasharray={dasharray}
                   dashoffset={dashoffset}
                   title={`${row.label}: ${share(frac)}%`}
-                  href={row.href}
                   onActivate={() => setActive(row.key)}
                   onDeactivate={clear}
                 />
@@ -204,7 +210,6 @@ function Segment({
   dasharray,
   dashoffset,
   title,
-  href,
   onActivate,
   onDeactivate,
 }: {
@@ -218,12 +223,20 @@ function Segment({
   dasharray: string;
   dashoffset: number;
   title: string;
-  href?: string;
   onActivate: () => void;
   onDeactivate: () => void;
 }) {
-  const content = (
-    <g className="cursor-pointer" onMouseEnter={onActivate} onMouseLeave={onDeactivate}>
+  return (
+    <g
+      className="cursor-pointer"
+      // Mouse: hover. Táctil: el tap dispara onClick (sin pointerenter/leave).
+      onPointerEnter={(e) => e.pointerType === "mouse" && onActivate()}
+      onPointerLeave={(e) => e.pointerType === "mouse" && onDeactivate()}
+      onClick={(e) => {
+        e.stopPropagation(); // no burbujear al onClick del contenedor (que limpia)
+        onActivate();
+      }}
+    >
       {/* Halo de color difuminado, solo cuando está activo */}
       {isActive && (
         <circle
@@ -255,12 +268,5 @@ function Segment({
         <title>{title}</title>
       </circle>
     </g>
-  );
-  return href ? (
-    <a href={href} aria-label={title} onFocus={onActivate} onBlur={onDeactivate}>
-      {content}
-    </a>
-  ) : (
-    content
   );
 }
