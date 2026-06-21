@@ -392,7 +392,6 @@ const MECE_CLASSES_AUDIT = [
   "mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet",
 ];
 let mecePosteriorCount = 0;
-let docPosteriorCount = 0;
 const meceAgg = Object.fromEntries(MECE_CLASSES_AUDIT.map((k) => [k, 0]));
 for (const c of cases) {
   const file = path.join(casesDir, c.id + ".json");
@@ -416,7 +415,7 @@ for (const c of cases) {
     record("ERROR", file, 0, `M1: posterior de "${c.id}" suma ${total.toFixed(4)} (debe ser 1)`);
     continue;
   }
-  if (isDoc) { docPosteriorCount++; continue; }
+  if (isDoc) continue;
   mecePosteriorCount++;
   for (const k of MECE_CLASSES_AUDIT) meceAgg[k] += p[k];
 }
