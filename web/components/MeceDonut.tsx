@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { T } from "@/components/T";
 
 export type DonutDatum = {
@@ -24,6 +24,13 @@ const share = (x: number) => (x * 100).toFixed(1);
  */
 export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
   const [active, setActive] = useState<string | null>(null);
+  // Posición del cursor (relativa al donut) para el tooltip flotante.
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const onMove = (e: React.MouseEvent) => {
+    const rect = wrapRef.current?.getBoundingClientRect();
+    if (rect) setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  };
 
   const size = 240;
   const stroke = 38;
@@ -46,7 +53,29 @@ export function MeceDonut({ rows, N }: { rows: DonutDatum[]; N: number }) {
   return (
     <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-10">
       {/* Donut */}
-      <div className="relative h-60 w-60 shrink-0">
+      <div ref={wrapRef} onMouseMove={onMove} className="relative h-60 w-60 shrink-0">
+        {/* Tooltip flotante: sigue al cursor sobre el gráfico */}
+        {activeRow && (
+          <div
+            className="pointer-events-none absolute z-20 -translate-x-1/2 -translate-y-[calc(100%+14px)] whitespace-nowrap"
+            style={{ left: pos.x, top: pos.y }}
+          >
+            <div className="rounded-md border border-border bg-panel/95 px-3 py-2 shadow-lg backdrop-blur">
+              <div className="flex items-center gap-2">
+                <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: activeRow.color }} aria-hidden />
+                <span className="font-mono text-xs uppercase tracking-wider text-text">
+                  <T es={activeRow.label} en={activeRow.labelEn} />
+                </span>
+              </div>
+              <div className="mt-1 font-mono text-[11px] text-muted">
+                <span className="font-semibold tabular-nums" style={{ color: activeRow.color }}>
+                  {share(activeRow.count / N)}%
+                </span>{" "}
+                · {activeRow.count.toFixed(1)} <T es="casos" en="cases" />
+              </div>
+            </div>
+          </div>
+        )}
         <svg
           viewBox={`0 0 ${size} ${size}`}
           className="donut-in h-60 w-60 overflow-visible"
