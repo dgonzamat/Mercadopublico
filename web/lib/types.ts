@@ -93,6 +93,18 @@ export interface UAPCase {
   // "· UAP Codex"), así que conviene mantenerlo ≤60 caracteres.
   seoTitle?: string;
   seoDescription?: string;
+  // Documento primario destacado. Se renderiza como bloque prominente bajo el
+  // hero (arriba del fold), para casos cuya query dominante tiene intención
+  // "descargar el PDF" (ej. AAWSAP ↔ "AARO Historical Record Report pdf"):
+  // convierte la página en el mejor puente hacia el documento en vez de
+  // dejar al usuario rebotar buscando el PDF. Ausente = no se renderiza.
+  featuredDoc?: {
+    label: string;
+    label_en?: string;
+    url: string;
+    note?: string;
+    note_en?: string;
+  };
   patterns: string[];
   category: Category;
   // Optional rich-content fields. When present, the case detail page
