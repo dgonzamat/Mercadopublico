@@ -246,6 +246,42 @@ export default async function CaseDetailPage(
         </Caption>
       </header>
 
+      {/* ────────── ZONE A2 — DOCUMENTO PRIMARIO DESTACADO ────────── */}
+      {/* Para casos cuya búsqueda dominante tiene intención "descargar el
+          PDF": se ofrece el documento arriba del fold para satisfacer esa
+          intención y reducir el rebote (pogo-sticking) hacia el SERP. */}
+      {c.featuredDoc && (
+        <a
+          href={c.featuredDoc.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group block border-2 border-accent bg-panel p-6 no-underline transition-colors hover:bg-accent/5 md:p-8"
+        >
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+            <T es="Documento primario · PDF" en="Primary source · PDF" />
+          </p>
+          <p className="mt-3 flex items-start gap-3 font-display text-xl font-medium leading-snug text-text md:text-2xl">
+            <span aria-hidden className="shrink-0 text-accent">
+              ↓
+            </span>
+            <span className="underline decoration-accent/40 underline-offset-4 group-hover:decoration-accent">
+              <T
+                es={c.featuredDoc.label}
+                en={c.featuredDoc.label_en ?? c.featuredDoc.label}
+              />
+            </span>
+          </p>
+          {c.featuredDoc.note && (
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              <T
+                es={c.featuredDoc.note}
+                en={c.featuredDoc.note_en ?? c.featuredDoc.note}
+              />
+            </p>
+          )}
+        </a>
+      )}
+
       {/* EN-only disclaimer when no EN narrative available */}
       {hasNarrative && !c.whatHappened_en && (
         <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">

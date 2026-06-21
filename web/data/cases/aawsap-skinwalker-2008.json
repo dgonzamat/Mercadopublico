@@ -55,7 +55,7 @@
   "sources": [
     {
       "name": "AARO — Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1 (febrero 2024)",
-      "url": "https://www.aaro.mil/",
+      "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
       "note": "Historical Record Report (Vol. 1) de AARO: revisa AAWSAP/AATIP y concluye que no encontró evidencia de tecnología de origen no humano. El PDF se distribuye vía media.defense.gov."
     },
     {
@@ -111,5 +111,12 @@
     "href": "https://commons.wikimedia.org/wiki/File:Skinwalker_Ranch_(10393732103).jpg"
   },
   "seoTitle": "AAWSAP / Skinwalker Ranch: AARO Historical Record Report",
-  "seoDescription": "El programa AAWSAP del DoD en Skinwalker Ranch: 38 DIRDs, USD 22M vía DIA y su revisión en el AARO Historical Record Report (Vol. 1, 2024). Fuentes y PDF primarios."
+  "seoDescription": "El programa AAWSAP del DoD en Skinwalker Ranch: 38 DIRDs, USD 22M vía DIA y su revisión en el AARO Historical Record Report (Vol. 1, 2024). Fuentes y PDF primarios.",
+  "featuredDoc": {
+    "label": "AARO Historical Record Report, Volumen 1 (PDF oficial, feb 2024)",
+    "label_en": "AARO Historical Record Report, Volume 1 (official PDF, Feb 2024)",
+    "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
+    "note": "Informe oficial de AARO que revisa AAWSAP/AATIP y todo el registro del Gobierno de EE.UU. sobre UAP desde 1945. Concluye que no halló evidencia de tecnología de origen no humano ni de programas de ingeniería inversa. PDF alojado en aaro.mil.",
+    "note_en": "Official AARO report reviewing AAWSAP/AATIP and the entire U.S. Government UAP record since 1945. Concludes it found no evidence of non-human technology or reverse-engineering programs. PDF hosted on aaro.mil."
+  }
 }
