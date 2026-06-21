@@ -3,6 +3,7 @@ import { Cta } from "@/components/Cta";
 import { HeroRadar } from "@/components/HeroRadar";
 import { CountUp } from "@/components/CountUp";
 import { HypothesesSnapshot } from "@/components/HypothesesSnapshot";
+import { InstagramLink } from "@/components/InstagramLink";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
@@ -88,36 +89,13 @@ export default function HomePage() {
                 <span aria-hidden>→</span>
               </Cta>
             </div>
-            {/* Social · Instagram. Tono claro (text-bg) por el hero oscuro —
-                D1 contraste OK; target 44px — D4 sin warning. */}
+            {/* Social · Instagram. Tono "dark" por el hero oscuro (D1 contraste);
+                target 44px en el componente (D4). */}
             <div className="flex items-center gap-3 pt-2">
               <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55">
                 <T es="Síguenos" en="Follow" />
               </span>
-              <a
-                href="https://www.instagram.com/uapcodex2026"
-                target="_blank"
-                rel="me noopener noreferrer"
-                aria-label="UAP Codex en Instagram (@uapcodex2026)"
-                title="Instagram · @uapcodex2026"
-                className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md text-bg/70 transition-colors hover:text-accent-bright"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  width="22"
-                  height="22"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </a>
+              <InstagramLink tone="dark" />
             </div>
           </div>
         </div>
