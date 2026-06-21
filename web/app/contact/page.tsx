@@ -77,6 +77,26 @@ export default function ContactPage() {
         </span>
       </a>
 
+      <a
+        href="https://www.pinterest.com/uapcodex2026"
+        target="_blank"
+        rel="me noopener noreferrer"
+        className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      >
+        <span className="font-mono text-[11px] uppercase tracking-widest text-muted">
+          Pinterest
+        </span>
+        <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
+          @uapcodex2026
+        </span>
+        <span className="text-sm text-muted">
+          <T
+            es="Tableros visuales de casos, patrones y evidencia UAP."
+            en="Visual boards of UAP cases, patterns and evidence."
+          />
+        </span>
+      </a>
+
       <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
         <T
           es="No se recopilan datos de quien escribe — no hay formulario, ni tracking, ni base de datos."
