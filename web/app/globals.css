@@ -145,7 +145,10 @@ html[data-locale="en"] [data-lang="es"] {
 [data-era-filter="1960"] [data-era]:not([data-era="1960"]),
 [data-era-filter="1980"] [data-era]:not([data-era="1980"]),
 [data-era-filter="1996"] [data-era]:not([data-era="1996"]),
-[data-era-filter="2017"] [data-era]:not([data-era="2017"]) {
+[data-era-filter="2017"] [data-era]:not([data-era="2017"]),
+[data-tier-filter="S"] [data-tier]:not([data-tier="S"]),
+[data-tier-filter="A"] [data-tier]:not([data-tier="A"]),
+[data-tier-filter="B"] [data-tier]:not([data-tier="B"]) {
   display: none !important;
 }
 

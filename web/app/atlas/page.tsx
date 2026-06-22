@@ -70,7 +70,7 @@ export default function AtlasPage() {
           />
         </Link>
         <Link
-          href="/researchers#agencias"
+          href="/researchers/#agencias"
           className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
         >
           <T es="Agencias oficiales del fenómeno" en="Official agencies for the phenomenon" />

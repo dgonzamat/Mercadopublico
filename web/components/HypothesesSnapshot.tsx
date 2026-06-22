@@ -36,7 +36,7 @@ export function HypothesesSnapshot() {
             // listan los casos donde es la explicación más probable. Sin esto
             // las filas del donut de la home no eran clicables (a diferencia
             // del MecePartition de /probabilidades).
-            href: `/probabilidades#hyp-${r.key}`,
+            href: `/probabilidades/#hyp-${r.key}`,
           }))}
         />
       </div>

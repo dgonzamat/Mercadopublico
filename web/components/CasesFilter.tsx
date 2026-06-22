@@ -38,24 +38,27 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
 
 const HYP_KEYS = new Set<string>(HYP_ORDER.map((h) => h.key));
 
-export type EraOption = { key: string; es: string; en: string; count: number };
+export type FacetOption = { key: string; es: string; en: string; count: number };
 
 export function CasesFilter({
   regionCounts,
   hypCounts,
   eras,
+  tiers,
   total,
   children,
 }: {
   regionCounts: Partial<Record<Region, number>>;
   hypCounts: Partial<Record<HypKey, number>>;
-  eras: EraOption[];
+  eras: FacetOption[];
+  tiers: FacetOption[];
   total: number;
   children: React.ReactNode;
 }) {
   const [region, setRegion] = useState<Region | "all">("all");
   const [hyp, setHyp] = useState<HypKey | "all">("all");
   const [era, setEra] = useState<string | "all">("all");
+  const [tier, setTier] = useState<string | "all">("all");
   const [matchCount, setMatchCount] = useState(total);
   const [locale, setLocale] = useState<"es" | "en">("es");
   const rootRef = useRef<HTMLDivElement>(null);
@@ -92,7 +95,8 @@ export function CasesFilter({
       const sel =
         (region !== "all" ? `[data-region="${region}"]` : "") +
         (hyp !== "all" ? `[data-hyp="${hyp}"]` : "") +
-        (era !== "all" ? `[data-era="${era}"]` : "");
+        (era !== "all" ? `[data-era="${era}"]` : "") +
+        (tier !== "all" ? `[data-tier="${tier}"]` : "");
       const itemSel = `[data-region]${sel}`; // todo wrapper de caso lleva data-region
       setMatchCount(root.querySelectorAll(itemSel).length);
       root.querySelectorAll<HTMLElement>("[data-group]").forEach((g) => {
@@ -101,30 +105,33 @@ export function CasesFilter({
       });
     };
     measure();
-  }, [region, hyp, era]);
+  }, [region, hyp, era, tier]);
 
   const availRegions = REGION_ORDER.filter((r) => (regionCounts[r] ?? 0) > 0);
   const availHyps = HYP_ORDER.filter((h) => (hypCounts[h.key] ?? 0) > 0);
 
   const regionLabel = (r: Region) => REGION_LABELS[r][locale];
   const hypLabel = (k: HypKey) => HYP_ORDER.find((h) => h.key === k)![locale];
-  const eraLabel = (k: string) => {
-    const e = eras.find((x) => x.key === k);
-    return e ? e[locale] : k;
+  const optLabel = (opts: FacetOption[], k: string) => {
+    const o = opts.find((x) => x.key === k);
+    return o ? o[locale] : k;
   };
 
   const active: Array<{ key: string; label: string; clear: () => void }> = [];
   if (era !== "all")
-    active.push({ key: `era:${era}`, label: eraLabel(era), clear: () => setEra("all") });
+    active.push({ key: `era:${era}`, label: optLabel(eras, era), clear: () => setEra("all") });
   if (region !== "all")
     active.push({ key: `region:${region}`, label: regionLabel(region), clear: () => setRegion("all") });
   if (hyp !== "all")
     active.push({ key: `hyp:${hyp}`, label: hypLabel(hyp), clear: () => setHyp("all") });
+  if (tier !== "all")
+    active.push({ key: `tier:${tier}`, label: optLabel(tiers, tier), clear: () => setTier("all") });
 
   const clearAll = () => {
     setEra("all");
     setRegion("all");
     setHyp("all");
+    setTier("all");
   };
 
   const anyActive = active.length > 0;
@@ -136,6 +143,7 @@ export function CasesFilter({
       data-region-filter={region}
       data-hyp-filter={hyp}
       data-era-filter={era}
+      data-tier-filter={tier}
       className="space-y-4"
     >
       {/* Fila de selects facetados — combinables (AND). */}
@@ -167,6 +175,13 @@ export function CasesFilter({
           ariaLabel={locale === "es" ? "Filtrar por explicación" : "Filter by explanation"}
           allLabel={locale === "es" ? "Explicación · todas" : "Explanation · all"}
           options={availHyps.map((h) => ({ value: h.key, label: `${hypLabel(h.key)} · ${hypCounts[h.key] ?? 0}` }))}
+        />
+        <FacetSelect
+          value={tier}
+          onChange={setTier}
+          ariaLabel={locale === "es" ? "Filtrar por nivel de evidencia" : "Filter by evidence level"}
+          allLabel={locale === "es" ? "Evidencia · toda" : "Evidence · all"}
+          options={tiers.map((t) => ({ value: t.key, label: `${t[locale]} · ${t.count}` }))}
         />
       </div>
 

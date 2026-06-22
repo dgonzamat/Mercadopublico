@@ -7,9 +7,12 @@ import {
   modalHypothesis,
 } from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
+import { TIER_META } from "@/lib/ui";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
+
+const TIER_ORDER = ["S", "A", "B"] as const;
 
 export const metadata = {
   title: "Casos UAP institucionales (1947–2026)",
@@ -84,6 +87,17 @@ export default function CasesPage() {
     hypCounts[h] = (hypCounts[h] ?? 0) + 1;
   }
 
+  const tierCounts: Record<string, number> = {};
+  for (const c of cases) tierCounts[c.tier] = (tierCounts[c.tier] ?? 0) + 1;
+  const tierOpts = TIER_ORDER.filter((t) => (tierCounts[t] ?? 0) > 0).map(
+    (t) => ({
+      key: t,
+      es: `${TIER_META[t].label} · ${TIER_META[t].plain}`,
+      en: `${TIER_META[t].label} · ${TIER_META[t].plain_en}`,
+      count: tierCounts[t] ?? 0,
+    }),
+  );
+
   return (
     <div data-cases-root className="space-y-12 py-8">
       <header className="space-y-4">
@@ -127,6 +141,7 @@ export default function CasesPage() {
           en: `${era.start}–${era.end}`,
           count: eraCases.length,
         }))}
+        tiers={tierOpts}
         total={cases.length}
       >
         <div className="space-y-8 pt-2">
@@ -177,6 +192,7 @@ export default function CasesPage() {
                       data-region={regionOf(c.country) ?? "otro"}
                       data-hyp={modalById.get(c.id) ?? "misid"}
                       data-era={String(era.start)}
+                      data-tier={c.tier}
                       className="contents"
                     >
                       <CaseRow caseData={c} />

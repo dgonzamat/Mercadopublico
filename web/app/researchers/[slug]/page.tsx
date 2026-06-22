@@ -98,7 +98,7 @@ export default async function ResearcherDetailPage(
                   <T es="Marco teórico principal:" en="Primary framework:" />
                 </span>{" "}
                 <Link
-                  href={`/frameworks#${fw.id}`}
+                  href={`/frameworks/#${fw.id}`}
                   className="text-accent hover:underline"
                 >
                   <T es={fw.name} en={fw.name_en} />
