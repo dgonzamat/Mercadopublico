@@ -15,7 +15,7 @@ import { STATS } from "@/lib/siteStats";
 export const metadata = {
   title: "Metodología — cómo se pesa la evidencia",
   description:
-    "Cómo se pesa la evidencia: cuatro niveles de fuerza probatoria, retornos decrecientes por caso, y por qué las seis narrativas reparten el 100% de forma comparable.",
+    "Cómo se pesa la evidencia: tres niveles de fuerza probatoria (Tier S/A/B), retornos decrecientes por caso, y por qué las seis narrativas reparten el 100% de forma comparable.",
 
   alternates: { canonical: "/about/" },
 };
@@ -24,8 +24,8 @@ const CHAPTERS = [
   {
     id: "tiers",
     n: "1",
-    es: { eyebrow: "Capítulo 1", h2: "Por qué Roswell no equivale a Meier", tldr: "4 niveles de evidencia — Tier 1 (militar+sensor) no pesa lo mismo que Tier 4 (contactado)" },
-    en: { eyebrow: "Chapter 1", h2: "Why Roswell isn't equivalent to Meier", tldr: "4 evidence tiers — Tier 1 military+sensor weighs differently than Tier 4 contactee" },
+    es: { eyebrow: "Capítulo 1", h2: "Por qué Roswell no equivale a Meier", tldr: "3 niveles de evidencia (S/A/B) — Tier S (militar+sensor) no pesa lo mismo que Tier B (testigo único); y el tier no es un veredicto" },
+    en: { eyebrow: "Chapter 1", h2: "Why Roswell isn't equivalent to Meier", tldr: "3 evidence tiers (S/A/B) — Tier S (military+sensor) weighs differently than Tier B (single-witness); and the tier is not a verdict" },
   },
   {
     id: "bayes",
@@ -133,23 +133,52 @@ export default function AboutPage() {
                       <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted">Tier</th>
                       <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted"><T es="Categoría" en="Category" /></th>
                       <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted"><T es="Ejemplos" en="Examples" /></th>
-                      <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted"><T es="Confiabilidad" en="Reliability" /></th>
                     </tr>
                   </thead>
                   <tbody>
-                    <TierRow tier="1" es="Institucional militar + sensor" en="Institutional military + sensor" examples="Tehran 1976, Belgian Wave, USPER 2025, Lake Huron" conf="75–88%" color="text-tierS" />
-                    <TierRow tier="2" es="Institucional civil / multi-witness" en="Institutional civil / multi-witness" examples="Ariel School, JAL 1628, Manises, Westall, Roswell" conf="65–85%" color="text-tierS" />
-                    <TierRow tier="3" es="Folklórico / recurrente local" en="Folkloric / local recurring" examples="Hessdalen, Popocatépetl, Marfa" conf="50–65%" color="text-tierA" />
-                    <TierRow tier="4" es="Contactee / individual" en="Contactee / individual" examples="Meier, Sixto Paz, Adamski, Parkes" conf="40% exp. / <5% cosmología" color="text-tierB" />
+                    <TierRow tier="S" es="Evidencia fuerte: sensor instrumental + múltiples testigos (típicamente militar)" en="Strong evidence: instrumental sensor + multiple witnesses (typically military)" examples="Tehran 1976, Nimitz, Belgian Wave, Lake Huron" color="text-tierS" />
+                    <TierRow tier="A" es="Evidencia institucional: múltiples testigos verificables o documentación oficial" en="Institutional evidence: multiple verifiable witnesses or official documentation" examples="Ariel School, JAL 1628, Manises, Westall, Roswell" color="text-tierA" />
+                    <TierRow tier="B" es="Evidencia limitada: testigo único, local o sin verificación primaria" en="Limited evidence: single-witness, local or without primary verification" examples="Hessdalen, Communion, Maury Island, Bonnybridge" color="text-tierB" />
                   </tbody>
                 </table>
               </div>
               <PullQuote>
                 <T
-                  es={`Una "evidencia" Tier 4 no debería usarse para sustentar conclusiones que exigen Tier 1. El sistema deriva de las categorías de encuentros cercanos de Hynek.`}
-                  en={`A Tier 4 "evidence" should not be used to support conclusions that require Tier 1. The system derives from Hynek's Close Encounter Categories.`}
+                  es={`Una "evidencia" Tier B no debería usarse para sustentar conclusiones que exigen Tier S. La escala (heredera de las categorías de encuentros cercanos de Hynek) mide solo la fuerza de la evidencia — no qué fue el caso.`}
+                  en={`A Tier B "evidence" should not be used to support conclusions that require Tier S. The scale (descended from Hynek's Close Encounter Categories) measures only the strength of the evidence — not what the case was.`}
                 />
               </PullQuote>
+
+              {/* Los tres ejes — unifica tier / probabilidad / partición y dónde se ve cada uno.
+                  Responde a la confusión de que cada vista habla solo de "su" eje. */}
+              <div className="border-l-4 border-accent bg-surface-2 p-5">
+                <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                  <T es="Tres ejes independientes — no confundir" en="Three independent axes — don't conflate" />
+                </p>
+                <Body className="mt-3 text-sm text-muted">
+                  <T
+                    es="Cada caso se describe con tres medidas distintas, repartidas entre las vistas del sitio. Es fácil confundirlas porque las tres suenan a «calidad»:"
+                    en="Each case is described with three distinct measures, spread across the site's views. They are easy to conflate because all three sound like «quality»:"
+                  />
+                </Body>
+                <ul className="mt-3 space-y-2 text-sm text-text">
+                  <li>
+                    <strong className="text-tierS"><T es="Tier (S/A/B)" en="Tier (S/A/B)" /></strong> — <T es="la fuerza de la evidencia. Se ve como badge en cada caso y como color del marcador en el mapa." en="the strength of the evidence. Shown as a badge on each case and as the marker color on the map." />
+                  </li>
+                  <li>
+                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" /></strong> — <T es="cuán genuinamente inexplicado está el caso. Un fenómeno natural puede seguir sin explicación, así que NO equivale a «no-prosaico». Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how genuinely unexplained the case is. A natural phenomenon can remain unexplained, so it does NOT equal «non-prosaic». Shown as «%» on each case and as the marker size on the map." />
+                  </li>
+                  <li>
+                    <strong className="text-text"><T es="Partición MECE" en="MECE partition" /></strong> — <T es="qué fue: la distribución sobre seis narrativas excluyentes." en="what it was: the distribution over six mutually exclusive narratives." /> <Link href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" /></Link>
+                  </li>
+                </ul>
+                <Body className="mt-3 text-sm text-muted">
+                  <T
+                    es="Son ortogonales: un caso bien documentado (Tier S/A) puede tener como explicación más plausible un posible fraude, y un Tier B no es, por eso, un fraude."
+                    en="They are orthogonal: a well-documented case (Tier S/A) can have a possible hoax as its most plausible explanation, and a Tier B is not, for that reason, a hoax."
+                  />
+                </Body>
+              </div>
             </div>
           </details>
         </section>
@@ -178,13 +207,13 @@ export default function AboutPage() {
                   es="Desplaza masa entre narrativas"
                   en="Moves mass between narratives"
                   items={[
-                    "Tier 1/2 con multi-sensor → posterior nítido (Tehran, Nimitz)",
+                    "Tier S/A con multi-sensor → posterior nítido (Tehran, Nimitz)",
                     "Categoría de evidencia nueva (Hessdalen, Lake Huron)",
                     "Caso que contradice el patrón establecido",
                     "Sensores oficiales + video correlacionado",
                   ]}
                   itemsEn={[
-                    "Tier 1/2 with multi-sensor → sharp posterior (Tehran, Nimitz)",
+                    "Tier S/A with multi-sensor → sharp posterior (Tehran, Nimitz)",
                     "New class of evidence (Hessdalen, Lake Huron)",
                     "Case that contradicts the established pattern",
                     "Official sensors + correlated video",
@@ -195,12 +224,12 @@ export default function AboutPage() {
                   es="Solo refuerza lo dominante"
                   en="Only reinforces the dominant"
                   items={[
-                    "Contactado aislado Tier 4 → casi todo mundano/indet (Meier)",
+                    "Contactado aislado Tier B → casi todo mundano/indet (Meier)",
                     "Caso #50 del mismo patrón (escala la narrativa dominante)",
                     "Predicción de contactado fallida (carga mundano_natural)",
                   ]}
                   itemsEn={[
-                    "Isolated Tier 4 contactee → mostly mundane/indet (Meier)",
+                    "Isolated Tier B contactee → mostly mundane/indet (Meier)",
                     "Case #50 of the same pattern (scales the dominant narrative)",
                     "Failed contactee prediction (loads mundano_natural)",
                   ]}
@@ -208,8 +237,8 @@ export default function AboutPage() {
               </div>
               <Caption>
                 <T
-                  es={<><strong className="text-text">Estado:</strong> los casos &quot;contactado&quot; aislados aportan posteriores dominados por <em>mundano_natural</em> e <em>indeterminable</em> — no redistribuyen la partición. Los institucionales con sensor (Tier 1/2) producen posteriores nítidos que sí mueven masa entre narrativas.</>}
-                  en={<><strong className="text-text">Status:</strong> isolated &quot;contactee&quot; cases contribute posteriors dominated by <em>mundano_natural</em> and <em>indeterminable</em> — they do not redistribute the partition. Institutional sensor cases (Tier 1/2) yield sharp posteriors that do move mass between narratives.</>}
+                  es={<><strong className="text-text">Estado:</strong> los casos &quot;contactado&quot; aislados aportan posteriores dominados por <em>mundano_natural</em> e <em>indeterminable</em> — no redistribuyen la partición. Los institucionales con sensor (Tier S/A) producen posteriores nítidos que sí mueven masa entre narrativas.</>}
+                  en={<><strong className="text-text">Status:</strong> isolated &quot;contactee&quot; cases contribute posteriors dominated by <em>mundano_natural</em> and <em>indeterminable</em> — they do not redistribute the partition. Institutional sensor cases (Tier S/A) yield sharp posteriors that do move mass between narratives.</>}
                 />
               </Caption>
             </div>
@@ -375,14 +404,12 @@ function TierRow({
   es,
   en,
   examples,
-  conf,
   color,
 }: {
   tier: string;
   es: string;
   en: string;
   examples: string;
-  conf: string;
   color: string;
 }) {
   return (
@@ -392,7 +419,6 @@ function TierRow({
       </td>
       <td className="px-3 py-3 align-top text-sm text-text"><T es={es} en={en} /></td>
       <td className="px-3 py-3 align-top text-xs text-muted">{examples}</td>
-      <td className="px-3 py-3 align-top font-mono text-xs tabular-nums text-text">{conf}</td>
     </tr>
   );
 }
