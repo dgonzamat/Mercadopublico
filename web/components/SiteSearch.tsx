@@ -51,7 +51,7 @@ function hrefFor(e: IndexEntry): string {
     case "pattern":
       return `/patterns/${e.id}`;
     case "framework":
-      return `/frameworks#${e.id}`;
+      return `/frameworks/#${e.id}`;
     case "page":
       return `/${e.id}`;
     default:

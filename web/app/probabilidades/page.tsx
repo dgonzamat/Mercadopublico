@@ -129,7 +129,7 @@ export default function ProbabilidadesPage() {
 
                 {total > 0 && (
                   <Link
-                    href={`/cases#${c.key}`}
+                    href={`/cases/#${c.key}`}
                     className="group mt-4 inline-flex min-h-[44px] items-center gap-2 font-mono text-xs uppercase tracking-widest text-text underline-offset-4 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     <span className="group-hover:underline">
