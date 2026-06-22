@@ -104,36 +104,88 @@ export default function ProbabilidadesPage() {
             en="What each means, which prior-framework hypothesis it preserves, and the cases where it is the most probable explanation."
           />
         </Caption>
-        <div className="mt-6 space-y-8">
+        <p className="mt-2 font-mono text-[11px] uppercase tracking-widest text-muted">
+          <T es="Toca un caso para abrir su ficha." en="Tap a case to open its page." />
+        </p>
+
+        <div className="mt-8 space-y-12">
           {hypRows.map((c) => {
+            const total = casesByModal[c.key].length;
             const top = casesByModal[c.key].slice(0, 6);
             return (
-              <div key={c.key} id={`hyp-${c.key}`} className="scroll-mt-24 border-l-4 pl-4" style={{ borderColor: c.color }}>
-                <h3 className="font-mono text-sm uppercase tracking-wider text-text">
-                  <T es={c.label} en={c.labelEn} />
-                  <span className="ml-2 font-normal text-muted">
-                    · {casesByModal[c.key].length} <T es="casos modales" en="modal cases" />
+              <div key={c.key} id={`hyp-${c.key}`} className="scroll-mt-24">
+                {/* Cabecera: barra de color de la hipótesis + nombre + nº de casos */}
+                <div
+                  className="flex items-baseline justify-between gap-3 border-b-2 pb-2"
+                  style={{ borderColor: c.color }}
+                >
+                  <h3 className="font-mono text-sm font-medium uppercase tracking-wider text-text">
+                    <T es={c.label} en={c.labelEn} />
+                  </h3>
+                  <span className="shrink-0 font-mono text-xs tabular-nums text-muted">
+                    {total} <T es="casos" en="cases" />
                   </span>
-                </h3>
-                <Body className="mt-1 text-sm text-muted">
+                </div>
+
+                <Body className="mt-3 text-sm leading-relaxed text-muted">
                   <T es={BLURB[c.key].es} en={BLURB[c.key].en} />
                 </Body>
+
                 {top.length > 0 && (
-                  <p className="mt-2 font-mono text-[11px] text-muted">
-                    {top.map((t, i) => (
-                      <span key={t.id}>
-                        {i > 0 && " · "}
-                        <Link href={`/cases/${t.id}`} className="hover:text-accent hover:underline">
-                          {t.name}
-                        </Link>{" "}
-                        ({(t.p * 100).toFixed(0)}%)
-                      </span>
-                    ))}
-                  </p>
+                  <>
+                    <p className="mt-5 font-mono text-[10px] uppercase tracking-widest text-muted">
+                      <T es="Casos donde es la explicación más probable" en="Cases where it is the most probable explanation" />
+                    </p>
+                    <ul className="mt-1 divide-y divide-border/70">
+                      {top.map((t) => (
+                        <li key={t.id}>
+                          <Link
+                            href={`/cases/${t.id}`}
+                            className="group flex items-center gap-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                          >
+                            <span className="min-w-0 flex-1 truncate text-sm leading-snug text-text underline-offset-4 group-hover:underline">
+                              {t.name}
+                            </span>
+                            <span className="shrink-0 font-mono text-[10px] uppercase tabular-nums text-muted">
+                              T{t.tier}
+                            </span>
+                            <span className="w-10 shrink-0 text-right font-mono text-xs tabular-nums text-text">
+                              {(t.p * 100).toFixed(0)}%
+                            </span>
+                            <span
+                              aria-hidden
+                              className="shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-text"
+                            >
+                              →
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    {total > top.length && (
+                      <p className="mt-2 font-mono text-[11px] text-muted">
+                        <T
+                          es={`+${total - top.length} casos más con esta explicación`}
+                          en={`+${total - top.length} more cases with this explanation`}
+                        />
+                      </p>
+                    )}
+                  </>
                 )}
               </div>
             );
           })}
+        </div>
+
+        {/* CTA: explorar el corpus completo */}
+        <div className="mt-12 border-t border-border pt-6">
+          <Link
+            href="/cases"
+            className="group inline-flex min-h-[44px] items-center gap-2 border-2 border-text px-5 font-display text-base font-medium text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            <T es="Explorar los casos en orden cronológico" en="Explore the cases in chronological order" />
+            <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+          </Link>
         </div>
       </section>
 
