@@ -49,14 +49,14 @@ export default function ProbabilidadesPage() {
   // consolidado), clasificación forzada. Ordenado por masa.
   const hypRows = expandedHypotheses(allScored, { consolidateNonHuman: true });
 
-  type ModalCase = { id: string; name: string; tier: string; p: number };
-  const casesByModal: Record<string, ModalCase[]> = {};
-  for (const r of hypRows) casesByModal[r.key] = [];
+  // Nº de casos donde cada hipótesis es la explicación modal (misma lógica que
+  // el filtro de /cases). Solo necesitamos el conteo: el listado vive en /cases.
+  const modalCount: Record<string, number> = {};
+  for (const r of hypRows) modalCount[r.key] = 0;
   for (const s of allScored) {
     const m = modalHypothesis(s, { consolidateNonHuman: true });
-    (casesByModal[m.key] ??= []).push({ id: s.id, name: s.name, tier: s.tier, p: m.count });
+    modalCount[m.key] = (modalCount[m.key] ?? 0) + 1;
   }
-  for (const k of Object.keys(casesByModal)) casesByModal[k].sort((a, b) => b.p - a.p);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
@@ -100,19 +100,14 @@ export default function ProbabilidadesPage() {
         </H2>
         <Caption>
           <T
-            es="Qué significa cada una, qué hipótesis del marco anterior preserva, y los casos donde es la explicación más probable."
-            en="What each means, which prior-framework hypothesis it preserves, and the cases where it is the most probable explanation."
+            es="Qué significa cada una y qué hipótesis del marco anterior preserva. Cada bloque enlaza al listado de casos donde es la explicación más probable, ya filtrado."
+            en="What each means and which prior-framework hypothesis it preserves. Each block links to the list of cases where it is the most probable explanation, pre-filtered."
           />
         </Caption>
-        <p className="mt-2 font-mono text-[11px] uppercase tracking-widest text-muted">
-          <T es="Toca un caso para abrir su ficha." en="Tap a case to open its page." />
-        </p>
 
-        <div className="mt-8 space-y-12">
+        <div className="mt-8 space-y-10">
           {hypRows.map((c) => {
-            const total = casesByModal[c.key].length;
-            const top = casesByModal[c.key].slice(0, 6);
-            const rest = casesByModal[c.key].slice(6);
+            const total = modalCount[c.key] ?? 0;
             return (
               <div key={c.key} id={`hyp-${c.key}`} className="scroll-mt-24">
                 {/* Cabecera: barra de color de la hipótesis + nombre + nº de casos */}
@@ -132,40 +127,16 @@ export default function ProbabilidadesPage() {
                   <T es={BLURB[c.key].es} en={BLURB[c.key].en} />
                 </Body>
 
-                {top.length > 0 && (
-                  <>
-                    <p className="mt-5 font-mono text-[10px] uppercase tracking-widest text-muted">
-                      <T es="Casos donde es la explicación más probable" en="Cases where it is the most probable explanation" />
-                    </p>
-                    <ul className="mt-1 divide-y divide-border/70">
-                      {top.map((t) => (
-                        <HypCaseRow key={t.id} t={t} />
-                      ))}
-                    </ul>
-                    {rest.length > 0 && (
-                      <details className="group/exp border-t border-border/70">
-                        <summary className="flex cursor-pointer list-none items-center gap-2 py-3 font-mono text-[11px] uppercase tracking-widest text-muted hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-                          <span
-                            aria-hidden
-                            className="inline-block transition-transform group-open/exp:rotate-90"
-                          >
-                            ▸
-                          </span>
-                          <span className="group-open/exp:hidden">
-                            <T es={`Ver los otros ${rest.length} casos`} en={`Show the other ${rest.length} cases`} />
-                          </span>
-                          <span className="hidden group-open/exp:inline">
-                            <T es="Ocultar" en="Hide" />
-                          </span>
-                        </summary>
-                        <ul className="divide-y divide-border/70">
-                          {rest.map((t) => (
-                            <HypCaseRow key={t.id} t={t} />
-                          ))}
-                        </ul>
-                      </details>
-                    )}
-                  </>
+                {total > 0 && (
+                  <Link
+                    href={`/cases#${c.key}`}
+                    className="group mt-4 inline-flex min-h-[44px] items-center gap-2 font-mono text-xs uppercase tracking-widest text-text underline-offset-4 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  >
+                    <span className="group-hover:underline">
+                      <T es={`Ver los ${total} casos`} en={`See the ${total} cases`} />
+                    </span>
+                    <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+                  </Link>
                 )}
               </div>
             );
@@ -202,34 +173,5 @@ export default function ProbabilidadesPage() {
         </Body>
       </section>
     </main>
-  );
-}
-
-/** Una fila de caso dentro de una hipótesis: nombre · tier · % modal · flecha.
- *  Reutilizada para los 6 visibles y para el resto dentro del <details>. */
-function HypCaseRow({ t }: { t: { id: string; name: string; tier: string; p: number } }) {
-  return (
-    <li>
-      <Link
-        href={`/cases/${t.id}`}
-        className="group flex items-center gap-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-      >
-        <span className="min-w-0 flex-1 truncate text-sm leading-snug text-text underline-offset-4 group-hover:underline">
-          {t.name}
-        </span>
-        <span className="shrink-0 font-mono text-[10px] uppercase tabular-nums text-muted">
-          T{t.tier}
-        </span>
-        <span className="w-10 shrink-0 text-right font-mono text-xs tabular-nums text-text">
-          {(t.p * 100).toFixed(0)}%
-        </span>
-        <span
-          aria-hidden
-          className="shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-text"
-        >
-          →
-        </span>
-      </Link>
-    </li>
   );
 }
