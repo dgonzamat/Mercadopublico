@@ -73,7 +73,7 @@ export const MUNDANO_SUBTYPES: ReadonlyArray<{
 }> = [
   { key: "misid", label: "Misidentificación", labelEn: "Misidentification", color: "#5a6b7a" },
   { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
-  { key: "fraude", label: "Fraude / hoax", labelEn: "Hoax / fraud", color: "#8a6b5a" },
+  { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
 ];
 
 export function emptyPosterior(): Posterior {
