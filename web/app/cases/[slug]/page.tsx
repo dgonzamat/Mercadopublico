@@ -240,8 +240,8 @@ export default async function CaseDetailPage(
         </div>
         <Caption>
           <T
-            es={TIER_META[c.tier].description}
-            en={TIER_META[c.tier].description_en}
+            es={`${TIER_META[c.tier].description}. El tier mide la fuerza de la evidencia, no la explicación: un caso bien documentado puede tener como causa más plausible un posible fraude. La «probabilidad» es un eje aparte — estima cuán genuinamente inexplicado es el caso.`}
+            en={`${TIER_META[c.tier].description_en}. The tier measures evidence strength, not the explanation: a well-documented case can have a possible hoax as its most plausible cause. The «probability» is a separate axis — it estimates how genuinely unexplained the case is.`}
           />
         </Caption>
       </header>
