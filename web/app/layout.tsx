@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
 import { ShareButton } from "@/components/ShareButton";
 import { InstagramLink } from "@/components/InstagramLink";
+import { PinterestLink } from "@/components/PinterestLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
@@ -123,6 +124,7 @@ export default function RootLayout({
                 <div className="flex items-center gap-3 pt-2">
                   <ShareButton title="UAP Codex" />
                   <InstagramLink tone="light" />
+                  <PinterestLink tone="light" />
                 </div>
               </div>
 

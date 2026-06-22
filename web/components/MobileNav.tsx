@@ -7,6 +7,7 @@ import { T } from "@/components/T";
 import { SiteSearch } from "@/components/SiteSearch";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { InstagramLink } from "@/components/InstagramLink";
+import { PinterestLink } from "@/components/PinterestLink";
 import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
@@ -242,6 +243,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                   <T es="Síguenos" en="Follow" />
                 </span>
                 <InstagramLink tone="dark" />
+                <PinterestLink tone="dark" />
               </div>
 
               <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-bg/60">

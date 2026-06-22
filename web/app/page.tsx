@@ -4,6 +4,7 @@ import { HeroRadar } from "@/components/HeroRadar";
 import { CountUp } from "@/components/CountUp";
 import { HypothesesSnapshot } from "@/components/HypothesesSnapshot";
 import { InstagramLink } from "@/components/InstagramLink";
+import { PinterestLink } from "@/components/PinterestLink";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
@@ -96,6 +97,7 @@ export default function HomePage() {
                 <T es="Síguenos" en="Follow" />
               </span>
               <InstagramLink tone="dark" />
+              <PinterestLink tone="dark" />
             </div>
           </div>
         </div>
