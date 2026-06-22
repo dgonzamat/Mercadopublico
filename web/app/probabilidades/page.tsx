@@ -112,6 +112,7 @@ export default function ProbabilidadesPage() {
           {hypRows.map((c) => {
             const total = casesByModal[c.key].length;
             const top = casesByModal[c.key].slice(0, 6);
+            const rest = casesByModal[c.key].slice(6);
             return (
               <div key={c.key} id={`hyp-${c.key}`} className="scroll-mt-24">
                 {/* Cabecera: barra de color de la hipótesis + nombre + nº de casos */}
@@ -138,37 +139,31 @@ export default function ProbabilidadesPage() {
                     </p>
                     <ul className="mt-1 divide-y divide-border/70">
                       {top.map((t) => (
-                        <li key={t.id}>
-                          <Link
-                            href={`/cases/${t.id}`}
-                            className="group flex items-center gap-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                          >
-                            <span className="min-w-0 flex-1 truncate text-sm leading-snug text-text underline-offset-4 group-hover:underline">
-                              {t.name}
-                            </span>
-                            <span className="shrink-0 font-mono text-[10px] uppercase tabular-nums text-muted">
-                              T{t.tier}
-                            </span>
-                            <span className="w-10 shrink-0 text-right font-mono text-xs tabular-nums text-text">
-                              {(t.p * 100).toFixed(0)}%
-                            </span>
-                            <span
-                              aria-hidden
-                              className="shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-text"
-                            >
-                              →
-                            </span>
-                          </Link>
-                        </li>
+                        <HypCaseRow key={t.id} t={t} />
                       ))}
                     </ul>
-                    {total > top.length && (
-                      <p className="mt-2 font-mono text-[11px] text-muted">
-                        <T
-                          es={`+${total - top.length} casos más con esta explicación`}
-                          en={`+${total - top.length} more cases with this explanation`}
-                        />
-                      </p>
+                    {rest.length > 0 && (
+                      <details className="group/exp border-t border-border/70">
+                        <summary className="flex cursor-pointer list-none items-center gap-2 py-3 font-mono text-[11px] uppercase tracking-widest text-muted hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+                          <span
+                            aria-hidden
+                            className="inline-block transition-transform group-open/exp:rotate-90"
+                          >
+                            ▸
+                          </span>
+                          <span className="group-open/exp:hidden">
+                            <T es={`Ver los otros ${rest.length} casos`} en={`Show the other ${rest.length} cases`} />
+                          </span>
+                          <span className="hidden group-open/exp:inline">
+                            <T es="Ocultar" en="Hide" />
+                          </span>
+                        </summary>
+                        <ul className="divide-y divide-border/70">
+                          {rest.map((t) => (
+                            <HypCaseRow key={t.id} t={t} />
+                          ))}
+                        </ul>
+                      </details>
                     )}
                   </>
                 )}
@@ -207,5 +202,34 @@ export default function ProbabilidadesPage() {
         </Body>
       </section>
     </main>
+  );
+}
+
+/** Una fila de caso dentro de una hipótesis: nombre · tier · % modal · flecha.
+ *  Reutilizada para los 6 visibles y para el resto dentro del <details>. */
+function HypCaseRow({ t }: { t: { id: string; name: string; tier: string; p: number } }) {
+  return (
+    <li>
+      <Link
+        href={`/cases/${t.id}`}
+        className="group flex items-center gap-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      >
+        <span className="min-w-0 flex-1 truncate text-sm leading-snug text-text underline-offset-4 group-hover:underline">
+          {t.name}
+        </span>
+        <span className="shrink-0 font-mono text-[10px] uppercase tabular-nums text-muted">
+          T{t.tier}
+        </span>
+        <span className="w-10 shrink-0 text-right font-mono text-xs tabular-nums text-text">
+          {(t.p * 100).toFixed(0)}%
+        </span>
+        <span
+          aria-hidden
+          className="shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-text"
+        >
+          →
+        </span>
+      </Link>
+    </li>
   );
 }
