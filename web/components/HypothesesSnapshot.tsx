@@ -26,7 +26,18 @@ export function HypothesesSnapshot() {
         <MeceDonut
           tone="dark"
           N={N}
-          rows={rows.map((r) => ({ key: r.key, color: r.color, count: r.count, label: r.label, labelEn: r.labelEn }))}
+          rows={rows.map((r) => ({
+            key: r.key,
+            color: r.color,
+            count: r.count,
+            label: r.label,
+            labelEn: r.labelEn,
+            // Cada hipótesis enlaza a su sección en /probabilidades, donde se
+            // listan los casos donde es la explicación más probable. Sin esto
+            // las filas del donut de la home no eran clicables (a diferencia
+            // del MecePartition de /probabilidades).
+            href: `/probabilidades#hyp-${r.key}`,
+          }))}
         />
       </div>
       <p className="mt-8 font-mono text-[11px] uppercase tracking-widest text-bg/50">
