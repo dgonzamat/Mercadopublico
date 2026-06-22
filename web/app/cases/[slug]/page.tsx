@@ -240,8 +240,8 @@ export default async function CaseDetailPage(
         </div>
         <Caption>
           <T
-            es={`${TIER_META[c.tier].description}. El tier mide la fuerza de la evidencia, no la explicación: un caso bien documentado puede tener como causa más plausible un posible fraude. La «probabilidad» es un eje aparte — estima cuán genuinamente inexplicado es el caso.`}
-            en={`${TIER_META[c.tier].description_en}. The tier measures evidence strength, not the explanation: a well-documented case can have a possible hoax as its most plausible cause. The «probability» is a separate axis — it estimates how genuinely unexplained the case is.`}
+            es={`${TIER_META[c.tier].description}. Tres ejes independientes: el «tier» mide la fuerza de la evidencia; la «probabilidad» estima cuán genuinamente inexplicado está el caso —un fenómeno natural puede seguir sin explicación, así que no equivale a «no-prosaico»—; y la partición de explicaciones (abajo) dice qué fue más plausiblemente. Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude.`}
+            en={`${TIER_META[c.tier].description_en}. Three independent axes: the «tier» measures the strength of the evidence; the «probability» estimates how genuinely unexplained the case is —a natural phenomenon can remain unexplained, so it does not equal «non-prosaic»—; and the partition of explanations (below) says what it most plausibly was. So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax.`}
           />
         </Caption>
       </header>
