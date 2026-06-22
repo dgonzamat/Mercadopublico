@@ -118,53 +118,38 @@ html[data-locale="en"] [data-lang="es"] {
   }
 }
 
-/* ── Filtro por región (data-region-filter en el contenedor) ───────────────
-   Patrón CSS-puro, hermano del toggle de idioma. El contenedor activo oculta
-   los ítems [data-region] que no matchean, y las secciones [data-group] que
-   quedan sin ningún ítem del filtro (vía :has). Cero data al cliente. */
+/* ── Filtros facetados de /cases (data-*-filter en el contenedor) ──────────
+   Tres facetas COMBINABLES (AND): región · hipótesis · era. Cada caso lleva
+   [data-region] [data-hyp] [data-era] en el mismo wrapper; cada faceta activa
+   añade una regla de ocultación de ítems, y como todas aplican sobre el mismo
+   elemento, componen en intersección sin selectores combinatorios.
+
+   El ocultamiento de ENCABEZADOS de era vacíos y el conteo/estado-vacío los
+   maneja CasesFilter en JS (un :has() por faceta no basta para combinaciones
+   arbitrarias: un grupo puede tener un ítem de cada faceta pero ninguno que
+   cumpla las dos). Cero data duplicada: el JS solo lee los data-attrs del DOM. */
 [data-region-filter="norteamerica"] [data-region]:not([data-region="norteamerica"]),
 [data-region-filter="latinoamerica"] [data-region]:not([data-region="latinoamerica"]),
 [data-region-filter="europa"] [data-region]:not([data-region="europa"]),
 [data-region-filter="asia"] [data-region]:not([data-region="asia"]),
 [data-region-filter="medio-oriente"] [data-region]:not([data-region="medio-oriente"]),
 [data-region-filter="oceania"] [data-region]:not([data-region="oceania"]),
-[data-region-filter="africa"] [data-region]:not([data-region="africa"]) {
-  display: none !important;
-}
-[data-region-filter="norteamerica"] [data-group]:not(:has([data-region="norteamerica"])),
-[data-region-filter="latinoamerica"] [data-group]:not(:has([data-region="latinoamerica"])),
-[data-region-filter="europa"] [data-group]:not(:has([data-region="europa"])),
-[data-region-filter="asia"] [data-group]:not(:has([data-region="asia"])),
-[data-region-filter="medio-oriente"] [data-group]:not(:has([data-region="medio-oriente"])),
-[data-region-filter="oceania"] [data-group]:not(:has([data-region="oceania"])),
-[data-region-filter="africa"] [data-group]:not(:has([data-region="africa"])) {
-  display: none;
-}
-
-/* ── Filtro por hipótesis (data-hyp-filter en el MISMO contenedor) ─────────
-   Faceta hermana de la región: la hipótesis modal de cada caso vive en
-   [data-hyp]. Misma mecánica — oculta ítems que no matchean y grupos vacíos. */
+[data-region-filter="africa"] [data-region]:not([data-region="africa"]),
 [data-hyp-filter="misid"] [data-hyp]:not([data-hyp="misid"]),
 [data-hyp-filter="natural"] [data-hyp]:not([data-hyp="natural"]),
 [data-hyp-filter="fraude"] [data-hyp]:not([data-hyp="fraude"]),
 [data-hyp-filter="humana_clasificada"] [data-hyp]:not([data-hyp="humana_clasificada"]),
 [data-hyp-filter="adversaria"] [data-hyp]:not([data-hyp="adversaria"]),
-[data-hyp-filter="nohumano"] [data-hyp]:not([data-hyp="nohumano"]) {
+[data-hyp-filter="nohumano"] [data-hyp]:not([data-hyp="nohumano"]),
+[data-era-filter="1946"] [data-era]:not([data-era="1946"]),
+[data-era-filter="1960"] [data-era]:not([data-era="1960"]),
+[data-era-filter="1980"] [data-era]:not([data-era="1980"]),
+[data-era-filter="1996"] [data-era]:not([data-era="1996"]),
+[data-era-filter="2017"] [data-era]:not([data-era="2017"]) {
   display: none !important;
 }
-[data-hyp-filter="misid"] [data-group]:not(:has([data-hyp="misid"])),
-[data-hyp-filter="natural"] [data-group]:not(:has([data-hyp="natural"])),
-[data-hyp-filter="fraude"] [data-group]:not(:has([data-hyp="fraude"])),
-[data-hyp-filter="humana_clasificada"] [data-group]:not(:has([data-hyp="humana_clasificada"])),
-[data-hyp-filter="adversaria"] [data-group]:not(:has([data-hyp="adversaria"])),
-[data-hyp-filter="nohumano"] [data-group]:not(:has([data-hyp="nohumano"])) {
-  display: none;
-}
 
-/* CA-5 · con filtro regional o de hipótesis activo, las anclas de era pueden
-   apuntar a secciones ocultas por :has() — se oculta el índice de eras
-   mientras haya un filtro distinto de "all". Cero JS, mismo patrón del resto. */
-[data-cases-root]:has([data-region-filter]:not([data-region-filter="all"])) [data-era-nav],
-[data-cases-root]:has([data-hyp-filter]:not([data-hyp-filter="all"])) [data-era-nav] {
+/* Encabezado de era oculto cuando JS marca su sección sin resultados. */
+[data-group][data-empty] {
   display: none;
 }

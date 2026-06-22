@@ -1,6 +1,5 @@
 import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
-import { CategoryNav } from "@/components/CategoryNav";
 import { CasesFilter, type HypKey } from "@/components/CasesFilter";
 import {
   corpusPosteriors,
@@ -105,19 +104,6 @@ export default function CasesPage() {
         </Lede>
       </header>
 
-      {/* CA-5 · [data-era-nav]: se oculta vía CSS cuando hay filtro regional activo */}
-      <div data-era-nav>
-        <CategoryNav
-          label={{ es: "Saltar a una era", en: "Jump to an era" }}
-          items={eras.map(({ era, eraCases }) => ({
-            anchor: `era-${era.start}`,
-            es: `${era.start}–${era.end}`,
-            en: `${era.start}–${era.end}`,
-            count: eraCases.length,
-          }))}
-        />
-      </div>
-
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
         <span className="font-mono uppercase tracking-widest text-muted/70">
           <T es="Sin marca = documentado." en="No marker = documented." />
@@ -135,6 +121,12 @@ export default function CasesPage() {
       <CasesFilter
         regionCounts={regionCounts}
         hypCounts={hypCounts}
+        eras={eras.map(({ era, eraCases }) => ({
+          key: String(era.start),
+          es: `${era.start}–${era.end}`,
+          en: `${era.start}–${era.end}`,
+          count: eraCases.length,
+        }))}
         total={cases.length}
       >
         <div className="space-y-8 pt-2">
@@ -184,6 +176,7 @@ export default function CasesPage() {
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
                       data-hyp={modalById.get(c.id) ?? "misid"}
+                      data-era={String(era.start)}
                       className="contents"
                     >
                       <CaseRow caseData={c} />
