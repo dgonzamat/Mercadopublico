@@ -1,0 +1,65 @@
+{
+  "id": "maury-island-1947",
+  "num": 209,
+  "name": "Isla Maury",
+  "name_en": "Maury Island",
+  "year_start": 1947,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 47.36,
+    "lng": -122.43,
+    "place": "Isla Maury, Puget Sound (Washington)",
+    "place_en": "Maury Island, Puget Sound (Washington)"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "fraude",
+  "probability": 10,
+  "patterns": [
+    "8c",
+    "8o"
+  ],
+  "posterior": {
+    "mundano_natural": 0.8,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.04,
+    "indet": 0.12
+  },
+  "summary": "En junio de 1947, días antes del avistamiento de Kenneth Arnold, Harold Dahl y Fred Crisman afirmaron haber visto seis objetos en forma de dona sobre Isla Maury (Washington); uno habría arrojado escoria metálica que hirió a su hijo y mató a su perro. Dahl dijo haber sido visitado por un 'hombre de negro' que le advirtió callar. Dos oficiales de inteligencia murieron al estrellarse el B-25 que llevaba las 'muestras'. La FBI lo calificó de engaño — y el propio Dahl admitió que lo llamaría fraude. Es el caso fundacional del mito de los 'hombres de negro'.",
+  "summary_en": "In June 1947, days before Kenneth Arnold's sighting, Harold Dahl and Fred Crisman claimed to have seen six doughnut-shaped objects over Maury Island (Washington); one supposedly dropped metallic slag that injured his son and killed his dog. Dahl said he was visited by a 'man in black' who warned him to stay quiet. Two intelligence officers died when the B-25 carrying the 'samples' crashed. The FBI rated it a hoax — and Dahl himself admitted he would call it a fraud. It is the foundational case of the 'men in black' myth.",
+  "whatHappened": "El caso Isla Maury es, cronológicamente, uno de los primeros de la era moderna de los 'platillos volantes', anterior por unos días al avistamiento de Kenneth Arnold del 24 de junio de 1947 que acuñó el término. Harold Dahl, un patrón de embarcación de Tacoma (Washington), afirmó que el 21 de junio de 1947, mientras patrullaba aguas de Puget Sound cerca de Isla Maury con su hijo, un empleado y su perro, vio seis grandes objetos con forma de dona sobre la bahía. Según su relato, uno de ellos pareció averiarse y arrojó primero una lluvia de un metal blanco muy ligero, 'como miles de periódicos', y luego fragmentos más pesados, similares a escoria, que golpearon su barco, hirieron el brazo de su hijo y mataron al perro.\n\nLo que convirtió a un relato dudoso en un episodio histórico fue lo que vino después. Dahl dijo que, a la mañana siguiente, un hombre vestido con un traje oscuro lo citó a desayunar, le recitó con detalle lo que había visto —pese a no haber estado allí— y le advirtió que no hablara del asunto por su propio bien y el de su familia. Esa escena es citada de forma recurrente como el ladrillo fundacional de lo que la cultura popular llamaría después 'hombres de negro'. El superior de Dahl, Fred Crisman, fue a la isla a 'verificar' y dijo haber visto él también un objeto. Crisman llevó muestras de la escoria a la revista de Ray Palmer, que envió al caso al propio Kenneth Arnold, ya célebre.\n\nArnold, abrumado, contactó a la inteligencia militar. Dos oficiales de la Cuarta Fuerza Aérea —el teniente Frank Brown y el capitán William Davidson— viajaron a Tacoma, entrevistaron a los testigos y partieron con muestras del material. En la madrugada del 1 de agosto de 1947, el bombardero B-25 Mitchell que pilotaban se estrelló cerca de Kelso (Washington), y ambos murieron. La muerte de dos oficiales que volvían con 'evidencia' inyectó al caso una carga conspirativa duradera: si el episodio era una tontería, ¿por qué habían muerto? Esa pregunta, más que el avistamiento en sí, es lo que mantuvo vivo el caso durante décadas.\n\nLa evidencia, sin embargo, apunta con fuerza al engaño. La FBI investigó y concluyó que las afirmaciones eran falsas; según los registros, el propio Dahl declaró que, si las autoridades lo presionaban, diría que todo había sido un fraude, porque no quería más problemas. La 'escoria' resultó ser desecho industrial común —residuo de fundición—, no material exótico. El caso es hoy ampliamente considerado un engaño incluso por la mayoría de los investigadores OVNI, y la trágica muerte de Brown y Davidson tiene una explicación prosaica: un incendio de motor en un B-25, un accidente de aviación nada infrecuente en la época. Crisman, además, reaparecería años después en márgenes extraños de la historia estadounidense, lo que alimentó el folclore sin aportar evidencia. Isla Maury sobrevive, por tanto, no como misterio sino como objeto de estudio: el molde del que salieron varios tropos —los hombres de negro, la muestra que desaparece, el investigador que muere— que reaparecerían una y otra vez en la mitología OVNI.",
+  "whatHappened_en": "The Maury Island case is, chronologically, one of the first of the modern 'flying saucer' era, predating by a few days Kenneth Arnold's 24 June 1947 sighting that coined the term. Harold Dahl, a boat skipper from Tacoma (Washington), claimed that on 21 June 1947, while patrolling Puget Sound waters near Maury Island with his son, an employee and his dog, he saw six large doughnut-shaped objects over the bay. By his account, one of them seemed to malfunction and dropped first a shower of very light white metal, 'like thousands of newspapers', and then heavier, slag-like fragments that struck his boat, injured his son's arm and killed the dog.\n\nWhat turned a dubious account into a historic episode was what came next. Dahl said that the next morning a man dressed in a dark suit met him for breakfast, recounted in detail what he had seen — despite not having been there — and warned him not to talk about it for his own and his family's sake. That scene is recurrently cited as the founding brick of what popular culture would later call 'men in black'. Dahl's superior, Fred Crisman, went to the island to 'verify' and said he too had seen an object. Crisman took samples of the slag to Ray Palmer's magazine, which sent the case to the already-famous Kenneth Arnold himself.\n\nArnold, overwhelmed, contacted military intelligence. Two officers of the Fourth Air Force — Lieutenant Frank Brown and Captain William Davidson — travelled to Tacoma, interviewed the witnesses and left with samples of the material. In the early hours of 1 August 1947, the B-25 Mitchell bomber they were flying crashed near Kelso (Washington), killing both. The death of two officers returning with 'evidence' injected a lasting conspiratorial charge into the case: if the episode was nonsense, why had they died? That question, more than the sighting itself, kept the case alive for decades.\n\nThe evidence, however, points strongly to a hoax. The FBI investigated and concluded the claims were false; per the records, Dahl himself stated that, if pressed by the authorities, he would say it had all been a hoax, because he wanted no more trouble. The 'slag' turned out to be common industrial waste — foundry residue — not exotic material. The case is today widely regarded as a hoax even by most UFO researchers, and the tragic death of Brown and Davidson has a prosaic explanation: an engine fire on a B-25, an aircraft accident far from rare at the time. Crisman, moreover, would resurface years later at strange margins of American history, which fed the folklore without adding evidence. Maury Island survives, therefore, not as a mystery but as an object of study: the mould from which several tropes emerged — the men in black, the sample that disappears, the investigator who dies — that would reappear again and again in UFO mythology.",
+  "whyMatters": "Isla Maury importa por su lugar fundacional, no por su evidencia: es uno de los primeros casos de la era moderna y la cuna documentada de varios tropos que estructurarían toda la mitología posterior —el 'hombre de negro' que advierte al testigo, la muestra física que se pierde, los investigadores que mueren con la 'evidencia'—. Su valor para el corpus es el de un caso de control sobre el folclore: muestra cómo un engaño bien temporizado, amplificado por una muerte real pero accidental (el B-25), genera una conspiración autosostenida que sobrevive a su propio desmentido. La FBI lo cerró como falso y el propio Dahl admitió que lo llamaría fraude; la 'escoria' era desecho de fundición. Por eso su mundanoType es 'fraude', su masa mundano domina y su probabilidad es baja. Incluirlo no infla el corpus: lo vacuna, dejando explícito que el patrón 'hombres de negro + muestra desaparecida + testigo muerto' nació de un caso reconocidamente falso, y que su reaparición posterior debe leerse a esa luz.",
+  "whyMatters_en": "Maury Island matters for its foundational place, not its evidence: it is one of the first cases of the modern era and the documented cradle of several tropes that would structure all later mythology — the 'man in black' who warns the witness, the physical sample that is lost, the investigators who die with the 'evidence'. Its value to the corpus is that of a control case on folklore: it shows how a well-timed hoax, amplified by a real but accidental death (the B-25), generates a self-sustaining conspiracy that outlives its own debunking. The FBI closed it as false and Dahl himself admitted he would call it a hoax; the 'slag' was foundry waste. That is why its mundanoType is 'fraude', its mundane mass dominates and its probability is low. Including it does not inflate the corpus: it inoculates it, making explicit that the 'men in black + vanished sample + dead witness' pattern was born from an admittedly false case, and that its later reappearances should be read in that light.",
+  "evidence": [
+    "Relato de Harold Dahl y Fred Crisman (jun 1947): seis objetos en forma de dona y caída de 'escoria' que hirió a su hijo y mató al perro.",
+    "Investigación de la FBI que concluyó que las afirmaciones eran falsas; Dahl declaró que diría que era un engaño si lo presionaban.",
+    "La 'escoria' identificada como desecho industrial común (residuo de fundición), no material exótico.",
+    "Muerte del teniente Frank Brown y el capitán William Davidson al estrellarse su B-25 (1 ago 1947) con muestras del material — accidente atribuido a incendio de motor.",
+    "Primera aparición documentada del motivo del 'hombre de negro' que advierte al testigo."
+  ],
+  "evidence_en": [
+    "Account of Harold Dahl and Fred Crisman (June 1947): six doughnut-shaped objects and a fall of 'slag' that injured his son and killed the dog.",
+    "FBI investigation concluding the claims were false; Dahl stated he would say it was a hoax if pressed.",
+    "The 'slag' identified as common industrial waste (foundry residue), not exotic material.",
+    "Death of Lt. Frank Brown and Capt. William Davidson when their B-25 crashed (1 Aug 1947) carrying samples — accident attributed to an engine fire.",
+    "First documented appearance of the 'man in black' motif warning the witness."
+  ],
+  "sources": [
+    {
+      "name": "Maury Island incident — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maury_Island_incident",
+      "note": "Cronología del caso, el veredicto de fraude de la FBI y la muerte de los oficiales."
+    },
+    {
+      "name": "HistoryLink.org — 'Dahl and Crisman report a flying saucer over Maury Island (1947)'",
+      "url": "https://www.historylink.org/File/2068",
+      "note": "Reseña histórica documentada del estado de Washington."
+    }
+  ]
+}
