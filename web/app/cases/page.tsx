@@ -1,7 +1,12 @@
 import { cases, TOTAL_CASES } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { CategoryNav } from "@/components/CategoryNav";
-import { RegionFilter } from "@/components/RegionFilter";
+import { CasesFilter, type HypKey } from "@/components/CasesFilter";
+import {
+  corpusPosteriors,
+  documentPosteriors,
+  modalHypothesis,
+} from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -65,6 +70,21 @@ export default function CasesPage() {
     if (r) regionCounts[r] = (regionCounts[r] ?? 0) + 1;
   }
 
+  // Hipótesis modal por caso (misma lógica consolidada que /probabilidades y
+  // que el donut de la home). Documentos incluidos vía documentPosteriors.
+  const modalById = new Map<string, HypKey>();
+  for (const s of [...corpusPosteriors(), ...documentPosteriors()]) {
+    modalById.set(
+      s.id,
+      modalHypothesis(s, { consolidateNonHuman: true }).key as HypKey,
+    );
+  }
+  const hypCounts: Partial<Record<HypKey, number>> = {};
+  for (const c of cases) {
+    const h = modalById.get(c.id) ?? "misid";
+    hypCounts[h] = (hypCounts[h] ?? 0) + 1;
+  }
+
   return (
     <div data-cases-root className="space-y-12 py-8">
       <header className="space-y-4">
@@ -112,7 +132,11 @@ export default function CasesPage() {
         </span>
       </div>
 
-      <RegionFilter counts={regionCounts} total={cases.length}>
+      <CasesFilter
+        regionCounts={regionCounts}
+        hypCounts={hypCounts}
+        total={cases.length}
+      >
         <div className="space-y-8 pt-2">
           {/* CA-2 · cabecera de columnas — una sola vez, estilo tabla editorial */}
           <div
@@ -159,6 +183,7 @@ export default function CasesPage() {
                     <div
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
+                      data-hyp={modalById.get(c.id) ?? "misid"}
                       className="contents"
                     >
                       <CaseRow caseData={c} />
@@ -169,7 +194,7 @@ export default function CasesPage() {
             );
           })}
         </div>
-      </RegionFilter>
+      </CasesFilter>
     </div>
   );
 }

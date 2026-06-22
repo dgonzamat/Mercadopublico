@@ -141,9 +141,30 @@ html[data-locale="en"] [data-lang="es"] {
   display: none;
 }
 
-/* CA-5 · con filtro regional activo, las anclas de era pueden apuntar a
-   secciones ocultas por :has() — se oculta el índice de eras mientras
-   haya un filtro distinto de "all". Cero JS, mismo patrón del resto. */
-[data-cases-root]:has([data-region-filter]:not([data-region-filter="all"])) [data-era-nav] {
+/* ── Filtro por hipótesis (data-hyp-filter en el MISMO contenedor) ─────────
+   Faceta hermana de la región: la hipótesis modal de cada caso vive en
+   [data-hyp]. Misma mecánica — oculta ítems que no matchean y grupos vacíos. */
+[data-hyp-filter="misid"] [data-hyp]:not([data-hyp="misid"]),
+[data-hyp-filter="natural"] [data-hyp]:not([data-hyp="natural"]),
+[data-hyp-filter="fraude"] [data-hyp]:not([data-hyp="fraude"]),
+[data-hyp-filter="humana_clasificada"] [data-hyp]:not([data-hyp="humana_clasificada"]),
+[data-hyp-filter="adversaria"] [data-hyp]:not([data-hyp="adversaria"]),
+[data-hyp-filter="nohumano"] [data-hyp]:not([data-hyp="nohumano"]) {
+  display: none !important;
+}
+[data-hyp-filter="misid"] [data-group]:not(:has([data-hyp="misid"])),
+[data-hyp-filter="natural"] [data-group]:not(:has([data-hyp="natural"])),
+[data-hyp-filter="fraude"] [data-group]:not(:has([data-hyp="fraude"])),
+[data-hyp-filter="humana_clasificada"] [data-group]:not(:has([data-hyp="humana_clasificada"])),
+[data-hyp-filter="adversaria"] [data-group]:not(:has([data-hyp="adversaria"])),
+[data-hyp-filter="nohumano"] [data-group]:not(:has([data-hyp="nohumano"])) {
+  display: none;
+}
+
+/* CA-5 · con filtro regional o de hipótesis activo, las anclas de era pueden
+   apuntar a secciones ocultas por :has() — se oculta el índice de eras
+   mientras haya un filtro distinto de "all". Cero JS, mismo patrón del resto. */
+[data-cases-root]:has([data-region-filter]:not([data-region-filter="all"])) [data-era-nav],
+[data-cases-root]:has([data-hyp-filter]:not([data-hyp-filter="all"])) [data-era-nav] {
   display: none;
 }
