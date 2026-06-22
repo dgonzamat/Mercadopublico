@@ -75,8 +75,8 @@ export function CorpusStats() {
             colorClass="text-tierA"
           />
           <TierStat
-            es="Folklórico"
-            en="Folkloric"
+            es="Indiciario"
+            en="Indicative"
             count={tiers.B}
             total={tiers.total}
             colorClass="text-tierB"
@@ -86,22 +86,22 @@ export function CorpusStats() {
           <T
             es={
               <>
-                <strong className="text-text">Sólido (S)</strong> caso militar
-                con sensor y múltiples testigos ·{" "}
-                <strong className="text-text">Aceptable (A)</strong> caso civil
+                <strong className="text-text">Sólido (S)</strong> evidencia
+                fuerte: sensor + múltiples testigos ·{" "}
+                <strong className="text-text">Aceptable (A)</strong> evidencia
                 institucional verificable ·{" "}
-                <strong className="text-text">Folklórico (B)</strong> fenómeno
-                recurrente local
+                <strong className="text-text">Indiciario (B)</strong> evidencia
+                limitada: testigo único o sin verificación primaria
               </>
             }
             en={
               <>
-                <strong className="text-text">Solid (S)</strong> military case
-                with sensor and multiple witnesses ·{" "}
+                <strong className="text-text">Solid (S)</strong> strong
+                evidence: sensor + multiple witnesses ·{" "}
                 <strong className="text-text">Acceptable (A)</strong> verifiable
-                institutional civil case ·{" "}
-                <strong className="text-text">Folkloric (B)</strong> recurring
-                local phenomenon
+                institutional evidence ·{" "}
+                <strong className="text-text">Indicative (B)</strong> limited
+                evidence: single-witness or without primary verification
               </>
             }
           />
