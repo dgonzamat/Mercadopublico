@@ -31,8 +31,8 @@ export function HypothesesSnapshot() {
       </div>
       <p className="mt-8 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es="Clasificación forzada y comparable — las hipótesis reparten el 100% del corpus (mundano abierto en misid/natural/fraude; no-humano consolidado)"
-          en="Forced, comparable classification — the hypotheses split 100% of the corpus (mundane opened into misid/natural/hoax; non-human consolidated)"
+          es="Clasificación forzada y comparable — las hipótesis reparten el 100% del corpus (mundano abierto en misid/natural/posible fraude; no-humano consolidado)"
+          en="Forced, comparable classification — the hypotheses split 100% of the corpus (mundane opened into misid/natural/possible hoax; non-human consolidated)"
         />
       </p>
     </div>
