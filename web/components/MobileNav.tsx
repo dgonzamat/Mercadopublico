@@ -11,8 +11,8 @@ import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
   href: "/probabilidades",
-  es: { label: "Ver probabilidades", sub: "Las 8 hipótesis y dónde está la frontera real" },
-  en: { label: "See probabilities", sub: "The 8 hypotheses and where the real frontier is" },
+  es: { label: "Ver probabilidades", sub: "El reparto de explicaciones del corpus y dónde está la frontera" },
+  en: { label: "See probabilities", sub: "How the corpus splits among explanations, and where the frontier is" },
 };
 
 const NAV_LINKS = [

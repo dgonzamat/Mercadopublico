@@ -18,7 +18,7 @@ type Tier = "S" | "A" | "B";
 const TIERS: { key: Tier; color: string; es: string; en: string }[] = [
   { key: "S", color: "#8b0000", es: "Sólido (S)", en: "Solid (S)" },
   { key: "A", color: "#9c5a18", es: "Aceptable (A)", en: "Acceptable (A)" },
-  { key: "B", color: "#1e4f8b", es: "Folklórico (B)", en: "Folkloric (B)" },
+  { key: "B", color: "#1e4f8b", es: "Indiciario (B)", en: "Indicative (B)" },
 ];
 const TIER_COLOR: Record<Tier, string> = { S: "#8b0000", A: "#9c5a18", B: "#1e4f8b" };
 
