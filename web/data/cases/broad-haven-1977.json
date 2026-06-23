@@ -1,0 +1,79 @@
+{
+  "id": "broad-haven-1977",
+  "num": 222,
+  "name": "Escuela de Broad Haven · Gales",
+  "name_en": "Broad Haven School · Wales",
+  "year_start": 1977,
+  "country": "GB",
+  "country_name": "Reino Unido · Gales",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 51.7795,
+    "lng": -5.1012,
+    "place": "Broad Haven, Pembrokeshire, Gales, Reino Unido",
+    "place_en": "Broad Haven, Pembrokeshire, Wales, United Kingdom"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 35,
+  "summary": "El 4 de febrero de 1977, durante el recreo, unos catorce alumnos de la escuela primaria de Broad Haven (Pembrokeshire, Gales) dijeron ver un objeto plateado, alargado, posarse en un campo junto al patio; algunos describieron una figura humanoide con traje plateado. El director los hizo escribir y dibujar por separado, y los dibujos coincidían. El episodio abrió la oleada del 'Triángulo de Dyfed' de 1977; el Ministerio de Defensa indagó sin dar explicación. Caso Tier B: testigos múltiples pero infantiles, sin evidencia física.",
+  "summary_en": "On February 4, 1977, during recess, about fourteen pupils of Broad Haven Primary School (Pembrokeshire, Wales) said they saw a silver, elongated object land in a field next to the playground; some described a humanoid figure in a silver suit. The headmaster had them write and draw separately, and the drawings matched. The episode opened the 'Dyfed Triangle' wave of 1977; the Ministry of Defence looked into it without giving an explanation. A Tier B case: multiple but child witnesses, no physical evidence.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "La mañana del 4 de febrero de 1977, en el recreo de la escuela primaria de Broad Haven, una aldea costera del condado de Pembrokeshire en el suroeste de Gales, un grupo de alumnos —unos catorce niños, de alrededor de nueve a once años— dijo ver algo extraño en un campo contiguo al patio de juegos, detrás de unos arbustos y al borde de un terreno en pendiente. Lo describieron como un objeto plateado, de forma alargada o elíptica —varios lo compararon con un cigarro o un platillo—, de quizás doce metros de largo, posado o semioculto en la vegetación. Algunos niños añadieron haber visto, cerca del objeto, una figura humanoide vestida con un traje plateado. Los niños corrieron a avisar; al principio los adultos lo tomaron como una travesura, pero la insistencia y la coincidencia de los relatos llevaron al director de la escuela a tomar una decisión metodológicamente astuta: separó a los alumnos y les pidió que, de forma individual y sin comunicarse entre sí, escribieran lo que habían visto y lo dibujaran.\n\nEl resultado es lo que dio peso al caso. Los dibujos, hechos por separado, mostraban una forma básica concordante: un objeto plateado con una protuberancia o cúpula y, en varios, una entrada o escotilla. La consistencia entre relatos independientes de niños que no habían tenido tiempo de coordinar una historia es el rasgo que ha hecho difícil despachar el episodio como una simple broma. Broad Haven no fue además un hecho aislado: inauguró —o se volvió el caso emblemático de— una oleada de avistamientos en la zona a lo largo de 1977, conocida como el 'Triángulo de Dyfed' o el 'Triángulo galés', con reportes de adultos y niños, incluida la granja Ripperston y la figura del 'hombre plateado' que habría aparecido cerca de casas y hoteles de la comarca.\n\nEl episodio llegó a la prensa nacional británica y al Ministerio de Defensa (MoD), que en esa época mantenía un registro de reportes de objetos no identificados. El MoD indagó pero nunca emitió una explicación, y el caso se cerró sin conclusión; décadas después, parte de los archivos del MoD sobre la oleada galesa fueron desclasificados y transferidos a los Archivos Nacionales, lo que permitió documentar el interés oficial aunque no aportó una resolución. Las explicaciones prosaicas son las habituales para un avistamiento escolar masivo: la identificación errónea de algo ordinario en el campo (un vehículo, un tanque de agua, reflejos), una broma que se amplificó, y sobre todo el contagio social —un niño señala, otros 'ven', y la expectativa colectiva moldea los relatos y hasta los dibujos posteriores—. Ninguna se probó, pero ninguna requiere nada extraordinario. El caso quedó como un avistamiento múltiple memorable y sin evidencia física: fuerte en número de testigos, débil en todo lo demás.",
+  "whatHappened_en": "On the morning of February 4, 1977, during recess at Broad Haven Primary School, a coastal village in Pembrokeshire county in southwest Wales, a group of pupils —about fourteen children, roughly nine to eleven years old— said they saw something strange in a field next to the playground, behind some bushes and at the edge of a sloping plot. They described it as a silver object, elongated or elliptical in shape —several compared it to a cigar or a saucer—, perhaps twelve meters long, settled or half-hidden in the vegetation. Some children added that they had seen, near the object, a humanoid figure dressed in a silver suit. The children ran to tell; at first the adults took it as a prank, but the insistence and the agreement among accounts led the school's headmaster to make a methodologically shrewd decision: he separated the pupils and asked them, individually and without communicating with one another, to write down what they had seen and draw it.\n\nThe result is what gave the case weight. The drawings, made separately, showed a concordant basic shape: a silver object with a bump or dome and, in several, an entrance or hatch. The consistency among independent accounts by children who had had no time to coordinate a story is the feature that has made the episode hard to dismiss as a mere joke. Broad Haven was, moreover, not an isolated event: it opened —or became the emblematic case of— a wave of sightings in the area throughout 1977, known as the 'Dyfed Triangle' or the 'Welsh Triangle', with reports from adults and children, including Ripperston farm and the figure of the 'silver man' said to have appeared near homes and hotels in the district.\n\nThe episode reached the British national press and the Ministry of Defence (MoD), which at the time kept a record of reports of unidentified objects. The MoD looked into it but never issued an explanation, and the case closed without conclusion; decades later, part of the MoD's files on the Welsh wave were declassified and transferred to the National Archives, documenting the official interest though not providing a resolution. The prosaic explanations are the usual ones for a mass school sighting: the misidentification of something ordinary in the field (a vehicle, a water tank, reflections), a prank that amplified, and above all social contagion —one child points, others 'see', and collective expectation shapes the accounts and even the later drawings. None was proven, but none requires anything extraordinary. The case stood as a memorable multiple sighting with no physical evidence: strong in witness numbers, weak in everything else.",
+  "whyMatters": "Importa como el caso paradigmático de avistamiento escolar masivo, una categoría que reaparece en el corpus (de Broad Haven en Gales a la escuela Ariel en Zimbabue) y que plantea un problema metodológico fascinante: ¿cuánto vale la coincidencia entre muchos testigos cuando todos son niños y comparten el mismo entorno y la misma expectativa? La decisión del director de separarlos y hacerlos dibujar por su cuenta es, de hecho, un pequeño experimento de campo improvisado, y la concordancia de los dibujos es lo que eleva el caso por encima de la anécdota. Por eso es Tier B y no más bajo: hay multiplicidad de testigos y un intento honesto de aislar sus relatos.\n\nPero su valor real para el corpus es como recordatorio de los límites de ese tipo de evidencia. Los niños son observadores sinceros pero altamente susceptibles al contagio social: basta que uno señale para que la expectativa colectiva moldee lo que los demás 'ven' y, después, lo que dibujan. La concordancia de los dibujos puede reflejar tanto un objeto real como una imagen compartida que se cristalizó en el grupo en cuestión de minutos. No hubo evidencia física, marca en el terreno, fotografía ni registro instrumental; el MoD indagó y no explicó nada, lo que en la mitología del caso se lee como misterio pero en rigor solo significa que un avistamiento sin pruebas materiales no es resoluble. Las explicaciones prosaicas —identificación errónea de algo mundano más contagio social— cubren los hechos sin esfuerzo. Para un catálogo que distingue la fuerza de la evidencia de la naturaleza del objeto, Broad Haven es un Tier B honesto: testigos múltiples y un episodio cultural genuino (la oleada del Triángulo de Dyfed), sobre un objeto que con toda probabilidad fue mundano y que ninguna prueba material permitió fijar.",
+  "whyMatters_en": "It matters as the paradigmatic case of a mass school sighting, a category that recurs in the corpus (from Broad Haven in Wales to the Ariel school in Zimbabwe) and that poses a fascinating methodological problem: how much is agreement among many witnesses worth when they are all children sharing the same environment and the same expectation? The headmaster's decision to separate them and have them draw on their own is, in fact, a small improvised field experiment, and the concordance of the drawings is what lifts the case above anecdote. That is why it is Tier B and not lower: there is multiplicity of witnesses and an honest attempt to isolate their accounts.\n\nBut its real value for the corpus is as a reminder of the limits of that kind of evidence. Children are sincere observers but highly susceptible to social contagion: one only has to point for collective expectation to shape what the others 'see' and, afterward, what they draw. The concordance of the drawings can reflect a real object just as much as a shared image that crystallized in the group within minutes. There was no physical evidence, ground mark, photograph or instrumental record; the MoD looked into it and explained nothing, which in the case's mythology reads as mystery but strictly only means that a sighting with no material proof is not resolvable. The prosaic explanations —misidentification of something mundane plus social contagion— cover the facts effortlessly. For a catalogue that distinguishes the strength of the evidence from the nature of the object, Broad Haven is an honest Tier B: multiple witnesses and a genuine cultural episode (the Dyfed Triangle wave), about an object that in all probability was mundane and that no material proof managed to pin down.",
+  "evidence": [
+    "Avistamiento durante el recreo del 4 de febrero de 1977 por ~14 alumnos (9–11 años) de la escuela primaria de Broad Haven, Pembrokeshire (Gales): objeto plateado alargado/elíptico de ~12 m junto al patio",
+    "Relatos de algunos niños sobre una figura humanoide con traje plateado cerca del objeto",
+    "Procedimiento del director: separó a los alumnos y les pidió describir y dibujar el objeto por separado; los dibujos independientes coincidían en la forma básica",
+    "Contexto de oleada: el caso inauguró el 'Triángulo de Dyfed' (Triángulo galés) de 1977, con múltiples reportes posteriores de adultos y niños (granja Ripperston, el 'hombre plateado')",
+    "Interés oficial: el Ministerio de Defensa indagó sin emitir explicación; parte de los archivos sobre la oleada galesa fue desclasificada y transferida a los Archivos Nacionales",
+    "Límite evidencial: sin evidencia física, marca en el terreno, fotografía ni registro instrumental; explicaciones prosaicas (identificación errónea + contagio social) plausibles"
+  ],
+  "evidence_en": [
+    "Sighting during the February 4, 1977 recess by ~14 pupils (9–11 years old) of Broad Haven Primary School, Pembrokeshire (Wales): a silver elongated/elliptical object ~12 m next to the playground",
+    "Accounts by some children of a humanoid figure in a silver suit near the object",
+    "Headmaster's procedure: he separated the pupils and asked them to describe and draw the object separately; the independent drawings agreed on the basic shape",
+    "Wave context: the case opened the 1977 'Dyfed Triangle' (Welsh Triangle), with multiple later reports from adults and children (Ripperston farm, the 'silver man')",
+    "Official interest: the Ministry of Defence looked into it without issuing an explanation; part of the files on the Welsh wave was declassified and transferred to the National Archives",
+    "Evidential limit: no physical evidence, ground mark, photograph or instrumental record; prosaic explanations (misidentification + social contagion) plausible"
+  ],
+  "sources": [
+    {
+      "name": "The National Archives (UK) — expedientes del Ministerio de Defensa sobre reportes de objetos no identificados (oleada de Dyfed/Gales, 1977)",
+      "note": "Archivos oficiales desclasificados que documentan el interés del MoD en la oleada galesa, sin conclusión emitida."
+    },
+    {
+      "name": "Herald.Wales — «The Welsh Triangle: What was seen in the sky back in 1977?»",
+      "url": "https://herald.wales/west-wales/pembrokeshire/the-welsh-triangle-what-was-seen-in-the-sky-back-in-1977/",
+      "note": "Reseña regional del caso de Broad Haven y de la oleada del Triángulo de Dyfed, con testimonios."
+    },
+    {
+      "name": "UFO Insight — «The Bizarre And Forgotten Broad Haven School UFO Incident Of 1977»",
+      "url": "https://www.ufoinsight.com/ufos/close-encounters/broad-haven-school-ufo-incident",
+      "note": "Síntesis del avistamiento escolar, el procedimiento de los dibujos y el contexto de la oleada."
+    }
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.50,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.09,
+    "indet": 0.30
+  },
+  "seoTitle": "Broad Haven 1977: la escuela galesa, los dibujos de los niños y el Triángulo de Dyfed",
+  "seoDescription": "En 1977, ~14 alumnos de Broad Haven (Gales) dibujaron por separado un objeto plateado junto al patio; el episodio abrió la oleada del Triángulo de Dyfed. El MoD indagó sin explicar. Fuentes y lectura crítica.",
+  "featuredDoc": {
+    "label": "El Triángulo galés de 1977: reseña del caso de Broad Haven (Herald.Wales)",
+    "label_en": "The 1977 Welsh Triangle: review of the Broad Haven case (Herald.Wales)",
+    "url": "https://herald.wales/west-wales/pembrokeshire/the-welsh-triangle-what-was-seen-in-the-sky-back-in-1977/",
+    "note": "Reseña regional con la cronología del avistamiento escolar y de la oleada del Triángulo de Dyfed.",
+    "note_en": "Regional review with the timeline of the school sighting and the Dyfed Triangle wave."
+  }
+}
