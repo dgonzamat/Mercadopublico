@@ -135,6 +135,41 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
               );
             })}
           </g>
+          {/* Etiquetas de porcentaje sobre cada segmento — fuera del <g> rotado
+              para que el texto quede horizontal. Halo oscuro (paint-order) para
+              legibilidad sobre cualquier color de arco. Se omiten los arcos muy
+              pequeños (quedan en la leyenda) para no saturar. */}
+          {rows.map((row, i) => {
+            const frac = row.count / N;
+            if (frac * C < 36) return null;
+            const mid = offsets[i] / C + frac / 2;
+            const a = mid * 2 * Math.PI;
+            const lx = c + r * Math.sin(a);
+            const ly = c - r * Math.cos(a);
+            const dim = active !== null && active !== row.key;
+            return (
+              <text
+                key={row.key}
+                x={lx}
+                y={ly}
+                textAnchor="middle"
+                dominantBaseline="central"
+                className="pointer-events-none select-none font-mono tabular-nums"
+                style={{
+                  fill: "#fff",
+                  fontSize: 11,
+                  fontWeight: 600,
+                  opacity: dim ? 0.4 : 1,
+                  paintOrder: "stroke",
+                  stroke: "rgba(0,0,0,0.4)",
+                  strokeWidth: 2.6,
+                  transition: "opacity 200ms",
+                }}
+              >
+                {share(frac)}%
+              </text>
+            );
+          })}
         </svg>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           {activeRow ? (
