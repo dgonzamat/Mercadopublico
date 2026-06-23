@@ -1,0 +1,79 @@
+{
+  "id": "campeche-fam-2004",
+  "num": 221,
+  "name": "Campeche · infrarrojo de la Fuerza Aérea Mexicana",
+  "name_en": "Campeche · Mexican Air Force infrared",
+  "year_start": 2004,
+  "country": "MX",
+  "country_name": "México",
+  "flag": "🇲🇽",
+  "location": {
+    "lat": 18.65,
+    "lng": -91.8,
+    "place": "Bahía de Campeche, cerca de Ciudad del Carmen, México",
+    "place_en": "Bay of Campeche, near Ciudad del Carmen, Mexico"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 42,
+  "summary": "El 5 de marzo de 2004, la tripulación de un Merlin C26A de la Fuerza Aérea Mexicana (escuadrón 501), en patrulla antinarcóticos sobre la Bahía de Campeche, grabó con su sensor infrarrojo StarSAFIRE II hasta once objetos que parecían rodear al avión; solo algunos aparecían en el radar. La Secretaría de la Defensa entregó el material al periodista Jaime Maussan, que lo difundió en mayo de 2004. La explicación más sólida —flamas de los pozos petroleros de Cantarell, mar adentro— es prosaica pero discutida. Caso Tier A: datos de sensor militar oficial, objeto con lectura mundana probable.",
+  "summary_en": "On March 5, 2004, the crew of a Mexican Air Force Merlin C26A (501st squadron), on an anti-drug patrol over the Bay of Campeche, recorded with its StarSAFIRE II infrared sensor as many as eleven objects that seemed to surround the aircraft; only some appeared on radar. The Secretariat of National Defense handed the footage to journalist Jaime Maussan, who released it in May 2004. The strongest explanation —flares from the offshore Cantarell oil wells— is prosaic but disputed. A Tier A case: official military sensor data, object with a probable mundane reading.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El 5 de marzo de 2004, un avión bimotor Merlin C26A del escuadrón aéreo 501 de la Fuerza Aérea Mexicana realizaba un vuelo rutinario de vigilancia antinarcóticos cerca de Ciudad del Carmen, en el estado de Campeche, sobre el golfo. La aeronave estaba equipada con dos sensores de interés: un sistema de imagen infrarroja FLIR StarSAFIRE II, usado para detectar el calor de embarcaciones o aviones clandestinos, y un radar APS-143. Mientras el operador del sensor barría la zona, el infrarrojo empezó a registrar fuentes de calor que no correspondían a ningún tráfico identificado. En el punto culminante de la secuencia, el FLIR mostraba hasta once objetos luminosos —puntos calientes— que parecían moverse y, según la lectura de la tripulación, situarse alrededor del avión. Lo desconcertante para los pilotos fue que la mayoría de esos objetos no aparecía en el radar: inicialmente el radar detectó uno, mientras el infrarrojo veía muchos. La tripulación reportó la situación y continuó grabando varios minutos de la secuencia térmica.\n\nEl episodio tomó dimensión nacional por la vía institucional. En abril de 2004, el periodista y productor de televisión Jaime Maussan recibió una llamada de la Secretaría de la Defensa Nacional (SEDENA) y se reunió con el general Clemente Vega García, secretario de la Defensa, y su estado mayor, que le entregaron el video infrarrojo para su difusión. Maussan lo presentó públicamente en mayo de 2004, y el hecho de que el material proviniera oficialmente de las fuerzas armadas —no de un aficionado— le dio un peso inusual: era, ocho meses antes del célebre incidente Nimitz del Tic Tac, un caso de sensor militar entregado por el propio Estado.\n\nLa explicación prosaica más sólida llegó pronto y es robusta. Varios investigadores —entre ellos el capitán y analista Alejandro Franz y el escéptico Robert Sheaffer— concluyeron que los 'objetos' eran las flamas de las plataformas petroleras del complejo Cantarell, el mayor campo de México, ubicado a unos 80 kilómetros mar adentro en la misma Bahía de Campeche. Esas torres queman gas excedente con flamas que pueden superar los 30 metros de altura y cuya firma térmica es visible para un sensor infrarrojo a varios kilómetros de distancia. La aparente 'persecución' o 'rodeo' al avión sería un efecto de paralaje: al moverse la aeronave, las fuentes fijas en el horizonte parecen desplazarse unas respecto de otras en la imagen bidimensional del sensor, sin profundidad. Que el radar no las detectara es consistente con fuentes de calor en superficie y no con objetos sólidos en vuelo. La hipótesis de las flamas no está universalmente aceptada —parte de la tripulación describió movimientos que considera incompatibles con fuentes fijas—, pero explica de forma económica la firma térmica, la ausencia en radar y la geometría aparente. El caso quedó como lo que es: un registro de sensor militar oficial, con una lectura mundana fuerte aunque no unánime.",
+  "whatHappened_en": "On March 5, 2004, a twin-engine Merlin C26A aircraft of the Mexican Air Force's 501st air squadron was on a routine anti-drug surveillance flight near Ciudad del Carmen, in the state of Campeche, over the gulf. The aircraft carried two sensors of interest: a FLIR StarSAFIRE II infrared imaging system, used to detect the heat of clandestine boats or planes, and an APS-143 radar. As the sensor operator swept the area, the infrared began registering heat sources that matched no identified traffic. At the peak of the sequence, the FLIR showed as many as eleven luminous objects —hot spots— that seemed to move and, by the crew's reading, position themselves around the aircraft. What baffled the pilots was that most of those objects did not appear on radar: initially the radar detected one, while the infrared saw many. The crew reported the situation and kept recording several minutes of the thermal sequence.\n\nThe episode took on national scale through the institutional route. In April 2004, journalist and TV producer Jaime Maussan received a call from the Secretariat of National Defense (SEDENA) and met with General Clemente Vega García, Secretary of Defense, and his staff, who handed him the infrared video for release. Maussan presented it publicly in May 2004, and the fact that the material came officially from the armed forces —not from an amateur— gave it unusual weight: it was, eight months before the famous Nimitz Tic Tac incident, a case of military sensor data handed over by the state itself.\n\nThe strongest prosaic explanation came soon and is robust. Several investigators —among them analyst and captain Alejandro Franz and skeptic Robert Sheaffer— concluded the 'objects' were flares from the oil platforms of the Cantarell complex, Mexico's largest field, located about 80 kilometers offshore in the same Bay of Campeche. Those towers burn excess gas with flames that can exceed 30 meters in height, whose thermal signature is visible to an infrared sensor several kilometers away. The apparent 'chase' or 'encirclement' of the aircraft would be a parallax effect: as the aircraft moves, fixed sources on the horizon seem to shift relative to one another in the sensor's two-dimensional image, with no depth. That the radar did not detect them is consistent with surface heat sources rather than solid objects in flight. The flares hypothesis is not universally accepted —part of the crew described motions it considers incompatible with fixed sources— but it economically explains the thermal signature, the radar absence and the apparent geometry. The case stood as what it is: an official military sensor record, with a strong though not unanimous mundane reading.",
+  "whyMatters": "Importa porque es uno de los pocos casos del corpus donde un Estado entrega motu proprio datos de un sensor militar y los pone en circulación pública — un acto de transparencia inusual que, paradójicamente, terminó favoreciendo una explicación prosaica. Su pedigrí es de primera: aeronave militar, sensor calibrado (FLIR StarSAFIRE II), cadena de custodia institucional, entrega por el propio secretario de Defensa. Eso lo coloca en Tier A por la calidad de la evidencia, con total independencia de qué fueran las luces. Y es un antecedente cronológico notable: ocurrió en marzo de 2004, meses antes del incidente Nimitz, y prefiguró el patrón que dominaría la década siguiente —imágenes infrarrojas militares de 'objetos' que el sensor ve pero el radar no—.\n\nSu segunda lección es la más valiosa para el método del corpus: muestra que un dato de sensor militar, por sí solo, no resuelve nada. Campeche es el contraejemplo perfecto a la idea de que 'si lo grabó un FLIR militar, debe ser real y anómalo'. La hipótesis de las flamas de Cantarell —fuentes de calor fijas en plataformas petroleras, vistas en una imagen sin profundidad— explica de forma económica la firma térmica, la ausencia en radar y el aparente movimiento por paralaje, y es la lectura más probable. No es segura: parte de la tripulación insiste en movimientos incompatibles con fuentes fijas, y sin la telemetría completa el cierre no es definitivo. Pero el peso recae en lo prosaico. Para un catálogo que separa la fuerza de la evidencia de la naturaleza del objeto, Campeche es un Tier A cuyo objeto probablemente fue mundano: evidencia institucional impecable sobre un fenómeno que el análisis técnico explica sin necesidad de nada exótico — exactamente el tipo de caso que un corpus honesto debe registrar con su explicación más fuerte a la vista, no esconder.",
+  "whyMatters_en": "It matters because it is one of the few cases in the corpus where a state hands over military sensor data of its own accord and puts it into public circulation —an unusual act of transparency that, paradoxically, ended up favoring a prosaic explanation. Its pedigree is first-rate: military aircraft, calibrated sensor (FLIR StarSAFIRE II), institutional chain of custody, release by the Secretary of Defense himself. That places it in Tier A for evidence quality, entirely independent of what the lights were. And it is a notable chronological precedent: it happened in March 2004, months before the Nimitz incident, and prefigured the pattern that would dominate the following decade —military infrared images of 'objects' the sensor sees but the radar does not.\n\nIts second lesson is the most valuable for the corpus's method: it shows that military sensor data, by itself, resolves nothing. Campeche is the perfect counterexample to the idea that 'if a military FLIR recorded it, it must be real and anomalous'. The Cantarell flares hypothesis —fixed heat sources on oil platforms, seen in a depthless image— economically explains the thermal signature, the radar absence and the apparent motion through parallax, and is the most probable reading. It is not certain: part of the crew insists on motions incompatible with fixed sources, and without the full telemetry the closure is not definitive. But the weight falls on the prosaic. For a catalogue that separates the strength of the evidence from the nature of the object, Campeche is a Tier A whose object was probably mundane: impeccable institutional evidence about a phenomenon that technical analysis explains without anything exotic —exactly the kind of case an honest corpus must record with its strongest explanation in view, not hide.",
+  "evidence": [
+    "Grabación con sensor infrarrojo FLIR StarSAFIRE II desde un Merlin C26A de la Fuerza Aérea Mexicana (escuadrón 501), 5 de marzo de 2004, en patrulla antinarcóticos sobre la Bahía de Campeche",
+    "Hasta once fuentes de calor visibles en el infrarrojo que parecían rodear al avión; la mayoría no aparecía en el radar APS-143 (inicialmente solo un blanco en radar)",
+    "Entrega institucional: la SEDENA convocó al periodista Jaime Maussan y, a través del secretario de Defensa Clemente Vega García, le proporcionó el video para su difusión (mayo 2004)",
+    "Explicación prosaica robusta: flamas de las plataformas petroleras del complejo Cantarell (~80 km mar adentro), con firma térmica visible a varios km y 'movimiento' aparente por paralaje en la imagen 2D",
+    "Consistencia con la lectura mundana: la ausencia en radar concuerda con fuentes de calor en superficie, no con objetos sólidos en vuelo",
+    "Disputa residual: parte de la tripulación describió movimientos que considera incompatibles con fuentes fijas; sin la telemetría completa el cierre no es unánime"
+  ],
+  "evidence_en": [
+    "Recording with a FLIR StarSAFIRE II infrared sensor from a Mexican Air Force Merlin C26A (501st squadron), March 5, 2004, on an anti-drug patrol over the Bay of Campeche",
+    "As many as eleven heat sources visible on infrared that seemed to surround the aircraft; most did not appear on the APS-143 radar (initially only one radar target)",
+    "Institutional handover: SEDENA summoned journalist Jaime Maussan and, through Secretary of Defense Clemente Vega García, provided him the video for release (May 2004)",
+    "Robust prosaic explanation: flares from the Cantarell complex oil platforms (~80 km offshore), with a thermal signature visible for several km and apparent 'motion' from parallax in the 2D image",
+    "Consistency with the mundane reading: the radar absence agrees with surface heat sources, not solid objects in flight",
+    "Residual dispute: part of the crew described motions it considers incompatible with fixed sources; without the full telemetry the closure is not unanimous"
+  ],
+  "sources": [
+    {
+      "name": "Sheaffer, R. — «The Campeche, Mexico 'Infrared UFO' Video» (Skeptical Inquirer, sep 2004)",
+      "url": "https://skepticalinquirer.org/2004/09/the-campeche-mexico-infrared-ufo-video/",
+      "note": "Análisis escéptico que desarrolla la hipótesis de las flamas de Cantarell y el efecto de paralaje."
+    },
+    {
+      "name": "Gross, P. — dossier «The big news Mexican military UFO report of 2004» (ufologie.patrickgross.org)",
+      "url": "https://ufologie.patrickgross.org/htm/sedena01.htm",
+      "note": "Recopilación documental del caso: la patrulla, los sensores, la entrega de la SEDENA y las interpretaciones encontradas."
+    },
+    {
+      "name": "Franz, A. — análisis técnico del video infrarrojo de Campeche (alcione.org)",
+      "note": "Reconstrucción que identifica las fuentes de calor con las plataformas de Cantarell a partir de la geometría del vuelo."
+    }
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.52,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.05,
+    "indet": 0.30
+  },
+  "seoTitle": "Campeche 2004: el infrarrojo militar mexicano y las flamas de Cantarell",
+  "seoDescription": "La Fuerza Aérea Mexicana grabó 11 objetos en infrarrojo sobre la Bahía de Campeche en 2004; la SEDENA entregó el video a Jaime Maussan. La explicación más sólida: flamas de los pozos de Cantarell. Fuentes y análisis.",
+  "featuredDoc": {
+    "label": "Análisis del video infrarrojo de Campeche (Skeptical Inquirer, 2004)",
+    "label_en": "Analysis of the Campeche infrared video (Skeptical Inquirer, 2004)",
+    "url": "https://skepticalinquirer.org/2004/09/the-campeche-mexico-infrared-ufo-video/",
+    "note": "Desarrolla la hipótesis de las flamas de Cantarell, el efecto de paralaje y por qué el radar no detectó las fuentes de calor.",
+    "note_en": "Develops the Cantarell flares hypothesis, the parallax effect and why the radar did not detect the heat sources."
+  }
+}
