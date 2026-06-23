@@ -4,6 +4,7 @@ import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
 import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis } from "@/lib/meceModel";
 import { STATS } from "@/lib/siteStats";
+import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 export const metadata = {
   title: "Probabilidades por explicación (modelo MECE)",
@@ -93,6 +94,10 @@ export default function ProbabilidadesPage() {
           />
         </div>
       </section>
+
+      <div className="mt-12">
+        <AnalyzerCta />
+      </div>
 
       <section className="mt-16">
         <H2>

@@ -8,6 +8,8 @@ import { SiteSearch } from "@/components/SiteSearch";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { InstagramLink } from "@/components/InstagramLink";
 import { PinterestLink } from "@/components/PinterestLink";
+import { AccountControl } from "@/components/auth/AccountControl";
+import { useAuth } from "@/components/auth/AuthProvider";
 import { STATS } from "@/lib/siteStats";
 
 const PRIMARY_CTA = {
@@ -60,6 +62,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
+  const { user } = useAuth();
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);
 
@@ -139,6 +142,10 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 <T es="Menú · UAP Codex" en="Menu · UAP Codex" />
               </p>
               <div className="flex items-center gap-2">
+                {/* Acceso/cuenta · esquina superior (convención), discreto */}
+                <span onClick={() => { if (!user) setOpen(false); }}>
+                  <AccountControl variant="drawer" />
+                </span>
                 <LocaleToggle variant="drawer" />
                 <button
                   type="button"
@@ -184,6 +191,26 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 <T es={`Explorar los ${STATS.cases} casos`} en={`Explore the ${STATS.cases} cases`} />
               </p>
               <ul className="mt-4 divide-y divide-bg/15 border-y border-bg/15">
+                {user && (
+                  <li>
+                    <Link
+                      href="/laboratorio"
+                      onClick={() => setOpen(false)}
+                      aria-current={isActive("/laboratorio") ? "page" : undefined}
+                      className="group flex min-h-[68px] items-center justify-between gap-4 py-5 hover:bg-bg hover:px-4 hover:-mx-4 hover:text-text"
+                    >
+                      <div className="min-w-0 space-y-1">
+                        <p className="font-display text-2xl font-medium leading-tight text-accent group-hover:text-text">
+                          ◆ <T es="Laboratorio" en="Data Lab" />
+                        </p>
+                        <p className="text-xs text-bg/60 group-hover:text-muted">
+                          <T es="Tu tablero: gráficos, KPIs y reportes" en="Your dashboard: charts, KPIs and reports" />
+                        </p>
+                      </div>
+                      <span aria-hidden className="shrink-0 font-mono text-lg text-accent">→</span>
+                    </Link>
+                  </li>
+                )}
                 {NAV_LINKS.map((l) => (
                   <li key={l.href}>
                     <Link

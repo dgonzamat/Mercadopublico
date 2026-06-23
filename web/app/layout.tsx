@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { CookieConsent } from "@/components/CookieConsent";
+import { AuthProvider } from "@/components/auth/AuthProvider";
 import { STATS } from "@/lib/siteStats";
 import { BUILD_VERSION } from "@/lib/version";
 import { SITE_URL } from "@/lib/site";
@@ -92,6 +93,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen font-sans">
+        <AuthProvider>
         <AnchorExpander />
         <SiteHeader />
 
@@ -201,6 +203,7 @@ export default function RootLayout({
           </div>
         </footer>
         <CookieConsent />
+        </AuthProvider>
       </body>
     </html>
   );

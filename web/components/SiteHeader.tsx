@@ -9,6 +9,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { HeaderNav } from "@/components/HeaderNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { MobileNav } from "@/components/MobileNav";
+import { AccountControl } from "@/components/auth/AccountControl";
 
 /**
  * Site header. On the Home it floats transparent over the dark radar hero
@@ -85,6 +86,7 @@ export function SiteHeader() {
             <T es="Ver probabilidades" en="See probabilities" />
             <span aria-hidden>→</span>
           </Link>
+          <AccountControl dark={dark} />
           <LocaleToggle dark={dark} />
         </div>
 

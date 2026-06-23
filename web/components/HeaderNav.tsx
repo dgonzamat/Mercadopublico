@@ -3,12 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { T } from "@/components/T";
+import { useAuth } from "@/components/auth/AuthProvider";
 
 /**
  * Links secundarios del header desktop, con estado "página activa".
  * Client component (necesita usePathname) — extraído del layout (server)
  * solo por eso. Marca aria-current y resalta el link de la ruta actual,
  * incluyendo páginas de detalle (/cases/nimitz resalta "Casos").
+ *
+ * El Laboratorio (reporting) NO va como ítem fijo: solo aparece — y
+ * destacado — cuando hay sesión, para no mandar a los anónimos contra el
+ * muro de login. Los anónimos llegan vía los CTA contextuales en /cases y
+ * /probabilidades.
  */
 const NAV: Array<{ href: string; es: string; en: string }> = [
   { href: "/cases", es: "Casos", en: "Cases" },
@@ -22,26 +28,45 @@ const NAV: Array<{ href: string; es: string; en: string }> = [
 
 export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
   const pathname = usePathname();
+  const { user } = useAuth();
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
+
+  const linkClass = (active: boolean) =>
+    `inline-flex items-center border-l px-3 font-display text-base font-medium ${
+      dark
+        ? `border-bg/15 hover:bg-bg hover:text-text ${active ? "text-accent-bright" : "text-bg/85"}`
+        : `border-text/15 hover:bg-text hover:text-bg ${active ? "text-accent" : "text-text"}`
+    }`;
+
   return (
     <>
-      {NAV.map((l) => {
-        const active =
-          pathname === l.href || pathname.startsWith(`${l.href}/`);
-        return (
-          <Link
-            key={l.href}
-            href={l.href}
-            aria-current={active ? "page" : undefined}
-            className={`inline-flex items-center border-l px-3 font-display text-base font-medium ${
-              dark
-                ? `border-bg/15 hover:bg-bg hover:text-text ${active ? "text-accent-bright" : "text-bg/85"}`
-                : `border-text/15 hover:bg-text hover:text-bg ${active ? "text-accent" : "text-text"}`
-            }`}
-          >
-            <T es={l.es} en={l.en} />
-          </Link>
-        );
-      })}
+      {NAV.map((l) => (
+        <Link
+          key={l.href}
+          href={l.href}
+          aria-current={isActive(l.href) ? "page" : undefined}
+          className={linkClass(isActive(l.href))}
+        >
+          <T es={l.es} en={l.en} />
+        </Link>
+      ))}
+
+      {/* Laboratorio · solo con sesión, siempre en acento (atajo destacado) */}
+      {user && (
+        <Link
+          href="/laboratorio"
+          aria-current={isActive("/laboratorio") ? "page" : undefined}
+          className={`inline-flex items-center gap-1.5 border-l px-3 font-display text-base font-medium ${
+            dark
+              ? "border-bg/15 text-accent-bright hover:bg-bg hover:text-text"
+              : "border-text/15 text-accent hover:bg-text hover:text-bg"
+          }`}
+        >
+          <span aria-hidden>◆</span>
+          <T es="Laboratorio" en="Data Lab" />
+        </Link>
+      )}
     </>
   );
 }

@@ -100,6 +100,17 @@ for (const [key, token] of [["S", "tierS"], ["A", "tierA"], ["B", "tierB"]]) {
 const TOKEN_VALUES = new Set(Object.values(tokens));
 const HEX_ALLOWLIST = new Set([
   "#e8e4da", // fondo del canvas Leaflet (WorldMap) — base de mapa decorativa, no es token de texto
+  // Paleta categórica de data-viz (ChartCard): tras los tokens de marca se
+  // necesitan colores distinguibles adicionales para series múltiples.
+  "#3a7d44", // verde — serie 6
+  "#7a4fb8", // morado — serie 7
+  "#0f8b8d", // teal — serie 8
+  // Logo oficial de Google en el botón "Continuar con Google" (AccessForm):
+  // los colores de marca son obligatorios por las guías de Google, no decorativos.
+  "#4285f4", // Google blue
+  "#34a853", // Google green
+  "#fbbc05", // Google yellow
+  "#ea4335", // Google red
 ]);
 for (const f of FILES) {
   read(f).split("\n").forEach((line, i) => {

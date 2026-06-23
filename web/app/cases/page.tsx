@@ -11,6 +11,7 @@ import { TIER_META } from "@/lib/ui";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
+import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 const TIER_ORDER = ["S", "A", "B"] as const;
 
@@ -131,6 +132,8 @@ export default function CasesPage() {
           <T es="proyectado / especulativo" en="projected / speculative" />
         </span>
       </div>
+
+      <AnalyzerCta />
 
       <CasesFilter
         regionCounts={regionCounts}
