@@ -10,6 +10,7 @@ import { HeaderNav } from "@/components/HeaderNav";
 import { LocaleToggle } from "@/components/LocaleToggle";
 import { MobileNav } from "@/components/MobileNav";
 import { AccountControl } from "@/components/auth/AccountControl";
+import { useAuth } from "@/components/auth/AuthProvider";
 
 /**
  * Site header. On the Home it floats transparent over the dark radar hero
@@ -21,6 +22,7 @@ import { AccountControl } from "@/components/auth/AccountControl";
  */
 export function SiteHeader() {
   const pathname = usePathname();
+  const { user } = useAuth();
   const isHome = pathname === "/";
   const [atTop, setAtTop] = useState(true);
 
@@ -46,7 +48,9 @@ export function SiteHeader() {
     >
       <nav
         aria-label="Navegación principal"
-        className="mx-auto flex max-w-7xl items-stretch justify-between gap-x-2 px-4 sm:gap-x-6 sm:px-6"
+        className={`mx-auto flex items-stretch justify-between gap-x-2 px-4 sm:gap-x-6 sm:px-6 ${
+          user ? "max-w-screen-2xl" : "max-w-7xl"
+        }`}
       >
         <Link
           href="/"
@@ -69,7 +73,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <div className="hidden items-stretch gap-3 xl:flex">
+        <div className={`hidden items-stretch gap-3 ${user ? "2xl:flex" : "xl:flex"}`}>
           <div className="flex items-center gap-2">
             <SiteSearch dark={dark} />
             <ShareButton variant="icon" dark={dark} />
