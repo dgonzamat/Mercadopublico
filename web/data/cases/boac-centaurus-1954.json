@@ -1,0 +1,86 @@
+{
+  "id": "boac-centaurus-1954",
+  "num": 218,
+  "name": "BOAC «Centaurus» · sobre Labrador",
+  "name_en": "BOAC 'Centaurus' · over Labrador",
+  "year_start": 1954,
+  "country": "GB",
+  "country_name": "Reino Unido · sobre Labrador (Canadá)",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 53.3,
+    "lng": -60.42,
+    "place": "Sobre Labrador, Canadá (vuelo BOAC 510-196 a Goose Bay)",
+    "place_en": "Over Labrador, Canada (BOAC flight 510-196 to Goose Bay)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "El 29–30 de junio de 1954, el Boeing Stratocruiser «Centaurus» de BOAC, con el capitán James Howard —ex jefe de escuadrón de la RAF— al mando, fue acompañado durante unos 18 minutos y ~130 km sobre Labrador por un gran objeto oscuro que cambiaba de forma, seguido por seis o siete objetos menores en formación. Lo vieron los 11 tripulantes y parte de los 51 pasajeros; se habría detectado en el radar de la estación USAF de Cartwright y se reportó el despegue de un caza desde Goose Bay. En tierra, inteligencia de la USAF interrogó a la tripulación. Caso Tier A: testigos profesionales múltiples, objeto sin explicación firme.",
+  "summary_en": "On June 29–30, 1954, BOAC's Boeing Stratocruiser 'Centaurus', with Captain James Howard —a former RAF squadron leader— in command, was escorted for about 18 minutes and ~130 km over Labrador by a large dark object that changed shape, trailed by six or seven smaller objects in formation. All 11 crew and some of the 51 passengers saw it; it was reportedly tracked on radar at the USAF Cartwright station, and a fighter was reported scrambled from Goose Bay. On the ground, USAF intelligence interviewed the crew. A Tier A case: multiple professional witnesses, object with no firm explanation.",
+  "patterns": [
+    "8b",
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El vuelo 510-196 de la British Overseas Airways Corporation (BOAC) había despegado de Nueva York la tarde del 29 de junio de 1954, rumbo a Londres con escala de reabastecimiento en Goose Bay, Labrador. A bordo del Boeing 377 Stratocruiser bautizado «Centaurus» viajaban 51 pasajeros y 11 tripulantes, al mando del capitán James Howard, un piloto de enorme experiencia: ex jefe de escuadrón de la Real Fuerza Aérea británica, con unas 7.500 horas de vuelo comercial y 256 cruces del Atlántico a su haber. Hacia el atardecer, volando a unos 5.800 metros (19.000 pies) sobre la costa de Labrador, Howard y su primer oficial Lee Boyd notaron, contra el cielo todavía luminoso por el lado izquierdo del avión, una formación extraña: una gran masa oscura que parecía cambiar de forma —alargándose, encogiéndose, mutando de silueta— acompañada por seis o siete objetos más pequeños que se desplazaban a su alrededor como un enjambre disciplinado.\n\nLos objetos mantuvieron la posición relativa respecto al avión durante unos dieciocho minutos, a lo largo de aproximadamente 130 kilómetros de vuelo, igualando sin esfuerzo la velocidad del Stratocruiser. Howard describió que el objeto grande cambiaba de forma de manera continua, y que los pequeños parecían entrar y salir de él o reordenarse a su lado. No era un fenómeno que un piloto con su trayectoria pudiera confundir fácilmente con una nube o un reflejo: lo observó el grueso de la tripulación de cabina y varios pasajeros, y Howard tuvo la presencia de ánimo de dibujar a mano lo que veían mientras ocurría. La tripulación informó por radio a Goose Bay; según los relatos de época, un caza —un F-94— fue puesto en alerta o despegó para interceptar, y al acercarse el avión a su destino los objetos pequeños parecieron fundirse con el grande, que luego se encogió y desapareció.\n\nEn tierra, durante la escala en Goose Bay, oficiales de inteligencia de la Fuerza Aérea de Estados Unidos interrogaron a Howard y su tripulación. De camino a Londres, la historia ya había llegado a la prensa británica, y a su llegada Howard concedió entrevistas —la BBC conserva el metraje en el que reproduce su dibujo del objeto—. Hubo además un componente instrumental disputado: varias fuentes sostienen que los objetos fueron detectados en el radar de la estación aérea de la USAF en Cartwright, Labrador, lo que elevaría el caso de 'avistamiento visual de tripulación' a 'visual más radar'. Ese punto nunca quedó documentado con un registro radar primario accesible, así que se cita con cautela. Las explicaciones prosaicas propuestas a lo largo de los años —un espejismo, una nube lenticular deformándose con la luz del atardecer, una ilusión óptica atmosférica— explican el cambio de forma del objeto grande pero encajan peor con los objetos pequeños que mantenían formación y con la persistencia del fenómeno durante 18 minutos. El caso quedó sin una explicación que cerrara el expediente a satisfacción de la tripulación.",
+  "whatHappened_en": "British Overseas Airways Corporation (BOAC) flight 510-196 had departed New York on the afternoon of June 29, 1954, bound for London with a refueling stop at Goose Bay, Labrador. Aboard the Boeing 377 Stratocruiser named 'Centaurus' were 51 passengers and 11 crew, commanded by Captain James Howard, a vastly experienced pilot: a former squadron leader of the British Royal Air Force, with some 7,500 hours of commercial flying and 256 Atlantic crossings to his name. Toward dusk, flying at about 5,800 meters (19,000 feet) over the Labrador coast, Howard and his first officer Lee Boyd noticed, against the still-bright sky off the aircraft's left side, a strange formation: a large dark mass that seemed to change shape —stretching, shrinking, mutating in silhouette— accompanied by six or seven smaller objects moving around it like a disciplined swarm.\n\nThe objects held their relative position to the aircraft for about eighteen minutes, over roughly 130 kilometers of flight, effortlessly matching the Stratocruiser's speed. Howard described the large object as continuously changing shape, with the smaller ones seeming to enter and leave it or rearrange beside it. This was not a phenomenon a pilot of his record would easily mistake for a cloud or a reflection: most of the flight deck crew and several passengers watched it, and Howard had the presence of mind to sketch by hand what they saw as it happened. The crew reported by radio to Goose Bay; according to period accounts, a fighter —an F-94— was put on alert or scrambled to intercept, and as the aircraft neared its destination the small objects seemed to merge into the large one, which then shrank and vanished.\n\nOn the ground, during the Goose Bay stop, U.S. Air Force intelligence officers interviewed Howard and his crew. By the time they reached London the story had already hit the British press, and on arrival Howard gave interviews —the BBC preserves footage in which he reproduces his sketch of the object. There was also a disputed instrumental component: several sources hold that the objects were detected on radar at the USAF air station in Cartwright, Labrador, which would raise the case from 'crew visual sighting' to 'visual plus radar'. That point was never documented with an accessible primary radar record, so it is cited with caution. The prosaic explanations offered over the years —a mirage, a lenticular cloud deforming in the dusk light, an atmospheric optical illusion— account for the large object's shape-shifting but fit less well with the small objects holding formation and with the phenomenon's persistence over 18 minutes. The case was left without an explanation that closed the file to the crew's satisfaction.",
+  "whyMatters": "Importa porque combina las dos cosas que el corpus más valora en un avistamiento: la calidad del observador y la multiplicidad de testigos. James Howard no era un automovilista solitario sino un ex jefe de escuadrón de la RAF al mando de un avión de línea, entrenado precisamente para identificar lo que hay en el cielo; y no observó solo, sino junto a toda su tripulación de cabina y parte del pasaje, durante dieciocho minutos continuos, con tiempo para dibujar el fenómeno mientras ocurría. Esa combinación —testigo experto, duración larga, observación colectiva— es justo lo que hace difícil despachar el caso como ilusión momentánea o error de un único ojo. Por eso es Tier A, con independencia de qué fuera el objeto.\n\nSu segundo valor es que ilustra el límite de la evidencia visual incluso en condiciones óptimas. A diferencia de un caso con sensor calibrado, aquí el registro es un dibujo a mano y el testimonio concordante de profesionales: fuerte, pero no dirimente. La hipótesis prosaica más seria —una nube lenticular o un espejismo atmosférico de la luz del atardecer— explica de forma elegante el objeto grande que 'cambia de forma', y no debe descartarse; su punto débil es el cortejo de seis o siete objetos pequeños que mantenían formación, que una nube no produce. El elemento que habría cerrado el caso en un sentido u otro —el supuesto contacto de radar en Cartwright— se cita en la literatura pero nunca apareció como registro primario verificable, así que el expediente queda con un visual múltiple de primer nivel y un instrumental no confirmado. Para un corpus que distingue la fuerza de la evidencia de la naturaleza del objeto, el «Centaurus» es un Tier A honesto: testigos inmejorables sobre un objeto que probablemente tiene una lectura atmosférica pero que ningún análisis logró fijar, y un recordatorio de por qué los reportes de pilotos —repetidos y consistentes durante décadas— son la columna del problema UAP.",
+  "whyMatters_en": "It matters because it combines the two things the corpus most values in a sighting: the quality of the observer and the multiplicity of witnesses. James Howard was not a lone motorist but a former RAF squadron leader commanding an airliner, trained precisely to identify what is in the sky; and he did not observe alone, but together with his entire flight-deck crew and part of the passengers, for eighteen continuous minutes, with time to sketch the phenomenon as it happened. That combination —expert witness, long duration, collective observation— is exactly what makes the case hard to dismiss as a momentary illusion or a single eye's error. That is why it is Tier A, regardless of what the object was.\n\nIts second value is that it illustrates the limit of visual evidence even under optimal conditions. Unlike a case with a calibrated sensor, here the record is a hand drawing and the concordant testimony of professionals: strong, but not decisive. The most serious prosaic hypothesis —a lenticular cloud or an atmospheric mirage of the dusk light— elegantly explains the large 'shape-shifting' object, and should not be dismissed; its weak point is the retinue of six or seven small objects holding formation, which a cloud does not produce. The element that would have closed the case one way or the other —the alleged radar contact at Cartwright— is cited in the literature but never surfaced as a verifiable primary record, so the file is left with a first-rate multiple visual and an unconfirmed instrumental. For a corpus that distinguishes the strength of the evidence from the nature of the object, the 'Centaurus' is an honest Tier A: unbeatable witnesses over an object that probably has an atmospheric reading but that no analysis managed to pin down, and a reminder of why pilot reports —repeated and consistent over decades— are the backbone of the UAP problem.",
+  "evidence": [
+    "Observación de ~18 minutos sobre ~130 km por la tripulación completa (11) del Stratocruiser «Centaurus» y parte de los 51 pasajeros, al mando del capitán James Howard, ex jefe de escuadrón de la RAF con ~7.500 horas y 256 cruces atlánticos",
+    "Morfología característica: un objeto grande que cambiaba de forma de manera continua, acompañado por 6–7 objetos menores que mantenían formación a su alrededor",
+    "Dibujo a mano hecho por Howard durante el avistamiento, reproducido luego en prensa y televisión (metraje conservado por la BBC)",
+    "Interrogatorio de la tripulación por oficiales de inteligencia de la USAF durante la escala en Goose Bay; reporte de época de un caza F-94 en alerta o despegue",
+    "Componente de radar disputado: varias fuentes mencionan detección en la estación USAF de Cartwright (Labrador), pero sin registro radar primario verificable accesible",
+    "Límite evidencial: la hipótesis prosaica (nube lenticular / espejismo atmosférico) explica el objeto grande pero encaja peor con los objetos pequeños en formación; el caso quedó sin cierre firme"
+  ],
+  "evidence_en": [
+    "~18-minute observation over ~130 km by the full crew (11) of the Stratocruiser 'Centaurus' and part of the 51 passengers, commanded by Captain James Howard, a former RAF squadron leader with ~7,500 hours and 256 Atlantic crossings",
+    "Characteristic morphology: a large object continuously changing shape, accompanied by 6–7 smaller objects holding formation around it",
+    "Hand sketch made by Howard during the sighting, later reproduced in press and television (footage preserved by the BBC)",
+    "Crew interviewed by USAF intelligence officers during the Goose Bay stop; period report of an F-94 fighter on alert or scrambled",
+    "Disputed radar component: several sources mention detection at the USAF Cartwright station (Labrador), but with no accessible verifiable primary radar record",
+    "Evidential limit: the prosaic hypothesis (lenticular cloud / atmospheric mirage) explains the large object but fits the small objects in formation less well; the case was left without a firm closure"
+  ],
+  "sources": [
+    {
+      "name": "NICAP — «The BOAC Labrador Sighting» (caso documentado)",
+      "url": "http://www.nicap.org/reports/boac.htm",
+      "note": "Ficha del caso con el relato de Howard, la cronología del vuelo y las referencias de prensa de 1954."
+    },
+    {
+      "name": "Study of an Unusual Phenomenon Observed by BOAC Aircrew over Labrador (NARCAP / M. Shough)",
+      "url": "http://www.martinshough.com/aerialphenomena/BOAC%20aircrew%20sighting.pdf",
+      "note": "Estudio técnico que reconstruye la geometría del avistamiento y discute las hipótesis atmosféricas y el supuesto radar."
+    },
+    {
+      "name": "FATE Magazine — «BOAC's Flying Jellyfish» (noviembre 1954, vía Project 1947)",
+      "url": "http://www.project1947.com/fig/fate_11_54.htm",
+      "note": "Reportaje de época con el testimonio directo del capitán Howard."
+    },
+    {
+      "name": "CAELESTIA — «The BOAC Labrador sighting» (análisis crítico)",
+      "url": "https://www.caelestia.be/BOAC.html",
+      "note": "Revisión escéptica que evalúa la hipótesis de nube/espejismo y los límites del caso."
+    }
+  ],
+  "mundanoType": "natural",
+  "posterior": {
+    "mundano_natural": 0.34,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.15,
+    "indet": 0.35
+  },
+  "seoTitle": "BOAC «Centaurus» 1954: el OVNI que escoltó un avión sobre Labrador",
+  "seoDescription": "El capitán James Howard (ex-RAF) y la tripulación del Stratocruiser «Centaurus» de BOAC fueron acompañados 18 minutos por un objeto que cambiaba de forma con 6-7 satélites sobre Labrador en 1954. Fuentes primarias.",
+  "featuredDoc": {
+    "label": "Estudio técnico del avistamiento BOAC sobre Labrador (NARCAP, PDF)",
+    "label_en": "Technical study of the BOAC Labrador sighting (NARCAP, PDF)",
+    "url": "http://www.martinshough.com/aerialphenomena/BOAC%20aircrew%20sighting.pdf",
+    "note": "Reconstrucción de la geometría del avistamiento y discusión de las hipótesis atmosféricas y del supuesto contacto de radar.",
+    "note_en": "Reconstruction of the sighting geometry and discussion of the atmospheric hypotheses and the alleged radar contact."
+  }
+}
