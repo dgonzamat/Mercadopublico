@@ -26,6 +26,7 @@ interface IndexEntry {
   id: string;
   num: number;
   name: string;
+  name_en?: string;
   subtitle: string;
   meta: string;
   flag: string;
@@ -266,7 +267,9 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
                 className={`${itemBaseClass} ${i === selected ? itemActiveOn : itemIdle}`}
               >
                 <p className="flex items-center gap-2 font-display font-medium leading-tight">
-                  <span className="truncate">{r.name}</span>
+                  <span className="truncate">
+                    {locale === "en" && r.name_en ? r.name_en : r.name}
+                  </span>
                   <span
                     className={`ml-auto shrink-0 font-mono text-[9px] uppercase tracking-widest ${
                       i === selected ? metaActive : metaIdle

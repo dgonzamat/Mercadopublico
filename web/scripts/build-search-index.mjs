@@ -32,6 +32,7 @@ const caseEntries = cases
     id: c.id,
     num: c.num,
     name: c.name,
+    name_en: c.name_en,
     subtitle: c.country_name,
     meta:
       (c.year_end ? `${c.year_start}–${c.year_end}` : String(c.year_start)) +
