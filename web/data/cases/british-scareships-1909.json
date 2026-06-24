@@ -1,0 +1,68 @@
+{
+  "id": "british-scareships-1909",
+  "num": 244,
+  "name": "Scareships británicos · 1909",
+  "name_en": "British Scareships · 1909",
+  "year_start": 1909,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 52.57,
+    "lng": -0.24,
+    "place": "Anglia Oriental, Gales y todo el Reino Unido",
+    "place_en": "East Anglia, Wales and across the United Kingdom"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 18,
+  "summary": "En la primavera de 1909, decenas de británicos —entre ellos un policía en Peterborough— reportaron 'naves aéreas' con forma de cigarro o torpedo y potentes reflectores cruzando el cielo de noche, sobre todo en Anglia Oriental y Gales. La prensa los bautizó 'scareships' y muchos supusieron que eran zepelines alemanes espiando, pese a que la aviación alemana no podía alcanzar Gran Bretaña en 1909.",
+  "summary_en": "In spring 1909, dozens of Britons —including a policeman in Peterborough— reported cigar- or torpedo-shaped 'airships' with powerful searchlights crossing the night sky, mostly over East Anglia and Wales. The press dubbed them 'scareships' and many assumed they were German Zeppelins spying, despite German aviation being unable to reach Britain in 1909.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El pánico de los 'scareships' fue la versión británica —y con tintes de ansiedad bélica— de la ola de dirigibles misteriosos que había recorrido Estados Unidos en 1896-1897. Comenzó con un avistamiento notable: la noche del 23 de marzo de 1909, un agente de policía llamado Kettle vio pasar sobre Peterborough, en Cambridgeshire, una extraña nave con forma de cigarro. A lo largo de abril y, sobre todo, mayo de 1909, las denuncias se multiplicaron por el este de Inglaterra (Anglia Oriental) y el sur de Gales: en mayo, los periódicos de Londres recogieron 49 avistamientos, incluido el de unos guardagujas ferroviarios que el 18 de mayo describieron 'una forma de barco o cigarro' sobre Cardiff.\n\nLas descripciones eran notablemente uniformes. El London Standard resumió en mayo que todos los testigos hablaban de un objeto con forma de torpedo, dotado de dos potentes reflectores, que aparecía temprano en la noche. Un tal Egerton Free, de Clacton-on-Sea (Essex), relató haber visto una larga nave 'con forma de salchicha' maniobrando sobre los acantilados al anochecer. La consistencia de los relatos —cilindro o torpedo, luces de búsqueda, vuelo nocturno— alimentó la sensación de que algo real surcaba los cielos británicos.\n\nLa interpretación dominante en la prensa y la opinión pública fue inmediata y reveladora del momento histórico: se asumió que los 'scareships' eran zepelines alemanes que probaban las defensas británicas en vísperas de la guerra que muchos veían venir. Sin embargo, esa explicación era técnicamente imposible. En 1909 los dirigibles alemanes eran lentos, de poca autonomía y potencia, y habría sido extraordinariamente peligroso —de hecho, inviable— que cruzaran el Mar del Norte hasta Gran Bretaña; no existe ningún registro alemán de tales vuelos. Una segunda oleada, aún más cargada de paranoia anti-germana, volvería a sacudir al Reino Unido en 1912-1913, ya estudiada por los historiadores como un fenómeno de psicología colectiva pre-bélica más que de aeronáutica.",
+  "whatHappened_en": "The 'scareship' panic was the British version —tinged with war anxiety— of the mystery-airship wave that had swept the United States in 1896-1897. It began with a notable sighting: on the night of 23 March 1909, a policeman named Kettle saw a strange cigar-shaped craft pass over Peterborough, in Cambridgeshire. Through April and especially May 1909, reports multiplied across eastern England (East Anglia) and South Wales: in May, London newspapers carried 49 sightings, including railway signalmen who on 18 May described 'a boat or cigar shape' over Cardiff.\n\nThe descriptions were remarkably uniform. The London Standard summarized in May that all witnesses spoke of a torpedo-shaped object, fitted with two powerful searchlights, appearing early in the night. One Egerton Free, of Clacton-on-Sea (Essex), reported seeing a long 'sausage-shaped' craft maneuvering over the cliffs at dusk. The consistency of the accounts —cylinder or torpedo, searchlights, night flight— fed the sense that something real was crossing British skies.\n\nThe dominant interpretation in the press and public opinion was immediate and revealing of the historical moment: it was assumed the 'scareships' were German Zeppelins testing British defenses on the eve of the war many saw coming. Yet that explanation was technically impossible. In 1909 German airships were slow, with little range and power, and it would have been extraordinarily dangerous —indeed unfeasible— for them to cross the North Sea to Britain; no German record of such flights exists. A second wave, even more charged with anti-German paranoia, would shake the United Kingdom again in 1912-1913, already studied by historians as a phenomenon of pre-war collective psychology rather than of aeronautics.",
+  "whyMatters": "Los scareships de 1909 importan al corpus como el segundo gran caso —tras la ola estadounidense de 1896-1897— que demuestra cómo una oleada de avistamientos puede ser un fenómeno social robusto y bien documentado sin que medie ningún objeto anómalo. Su valor añadido es que aísla con claridad la variable de la ansiedad geopolítica: a diferencia de la ola estadounidense, impulsada por la expectativa tecnológica optimista, la británica está teñida de miedo a una potencia rival, y eso permite ver el mismo mecanismo perceptivo operando bajo una emoción distinta. Para un corpus que rastrea la dimensión cultural-institucional del fenómeno, tener ambas variantes —esperanza y miedo— es metodológicamente valioso.\n\nPor eso el posterior carga de forma dominante sobre la narrativa mundano/misid. La explicación más sólida es un compuesto: identificación errónea de cuerpos celestes brillantes (Venus, estrellas) y de luces terrestres, sembrada por un primer relato y amplificada por una prensa que vendía con el pánico, todo sobre un sustrato de pavor a un ataque alemán que predisponía a 'ver' zepelines enemigos. La hipótesis de los zepelines —la lectura adversaria de la época— queda técnicamente descartada: la aeronáutica alemana de 1909 no podía hacerlo, y no hay registro de que lo hiciera. La pequeña masa de indeterminación reconoce solo que no podemos auditar a los testigos de hace más de un siglo. En el corpus, los scareships son la prueba histórica de que la atribución a un adversario puede ser tan infundada como la atribución a lo no humano: el recordatorio de que el cielo se llena de lo que la sociedad teme o desea.",
+  "whyMatters_en": "The 1909 scareships matter to the corpus as the second great case —after the U.S. wave of 1896-1897— demonstrating how a sighting wave can be a robust, well-documented social phenomenon without any anomalous object involved. Its added value is that it cleanly isolates the variable of geopolitical anxiety: unlike the U.S. wave, driven by optimistic technological expectation, the British one is tinged with fear of a rival power, and that lets us see the same perceptual mechanism operating under a different emotion. For a corpus tracking the cultural-institutional dimension of the phenomenon, having both variants —hope and fear— is methodologically valuable.\n\nThat is why the posterior loads dominantly onto the mundane/misid narrative. The strongest explanation is a compound: misidentification of bright celestial bodies (Venus, stars) and ground lights, seeded by a first account and amplified by a press that sold on panic, all over a substrate of dread of a German attack that predisposed people to 'see' enemy Zeppelins. The Zeppelin hypothesis —the era's adversarial reading— is technically ruled out: 1909 German aviation could not do it, and there is no record that it did. The small mass of indeterminacy acknowledges only that we cannot audit witnesses from over a century ago. In the corpus, the scareships are the historical proof that attribution to an adversary can be as unfounded as attribution to the non-human: the reminder that the sky fills with what a society fears or desires.",
+  "evidence": [
+    "Avistamiento del agente Kettle sobre Peterborough (23 mar 1909), una nave con forma de cigarro",
+    "49 avistamientos recogidos por la prensa de Londres en mayo de 1909, sobre todo en Anglia Oriental y el sur de Gales",
+    "Relato de guardagujas en Cardiff (18 may 1909): 'una forma de barco o cigarro'",
+    "Descripciones uniformes (London Standard): objeto tipo torpedo con dos potentes reflectores, de noche",
+    "Imposibilidad técnica de que zepelines alemanes alcanzaran Gran Bretaña en 1909; sin registro alemán de tales vuelos",
+    "Segunda oleada de pánico en 1912-1913, estudiada como psicología colectiva pre-bélica"
+  ],
+  "evidence_en": [
+    "Sighting by PC Kettle over Peterborough (23 Mar 1909), a cigar-shaped craft",
+    "49 sightings carried by the London press in May 1909, mostly in East Anglia and South Wales",
+    "Railway signalmen's account at Cardiff (18 May 1909): 'a boat or cigar shape'",
+    "Uniform descriptions (London Standard): torpedo-type object with two powerful searchlights, at night",
+    "Technical impossibility of German Zeppelins reaching Britain in 1909; no German record of such flights",
+    "Second panic wave in 1912-1913, studied as pre-war collective psychology"
+  ],
+  "sources": [
+    {
+      "name": "Airminded — 'The Scareship Age'",
+      "url": "https://airminded.org/2006/12/22/the-scareship-age/"
+    },
+    {
+      "name": "Smithsonian Air & Space — 'Fear of Floating'",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/fear-of-floating-137226392/"
+    },
+    {
+      "name": "Mysterious Britain & Ireland — 'Scareships or Motherships: The British phantom airship scare 1909-1918'",
+      "url": "https://www.mysteriousbritain.co.uk/ufos/scareships-or-motherships-the-british-phantom-airship-scare-1909-1918/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.68,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.06,
+    "indet": 0.22
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "bob-lazar-s4-1989",
+  "num": 243,
+  "name": "Bob Lazar · S-4 / Área 51",
+  "name_en": "Bob Lazar · S-4 / Area 51",
+  "year_start": 1989,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 37.235,
+    "lng": -115.811,
+    "place": "S-4 / Groom Lake (Área 51), Nevada",
+    "place_en": "S-4 / Groom Lake (Area 51), Nevada"
+  },
+  "tier": "B",
+  "mundanoType": "fraude",
+  "epistemicStatus": "documented",
+  "probability": 26,
+  "summary": "En 1989, Bob Lazar declaró ante el periodista George Knapp —al principio con el rostro oculto— haber trabajado en S-4, una instalación cerca de Groom Lake (Área 51), donde dijo haber visto nueve platillos volantes intactos de origen extraterrestre y haber sido contratado para hacer ingeniería inversa de su propulsión, alimentada por el 'elemento 115'. Sus credenciales académicas y laborales nunca pudieron verificarse.",
+  "summary_en": "In 1989, Bob Lazar told journalist George Knapp —initially with his face hidden— that he had worked at S-4, a facility near Groom Lake (Area 51), where he said he saw nine intact flying saucers of extraterrestrial origin and was hired to reverse-engineer their propulsion, powered by 'element 115'. His academic and employment credentials could never be verified.",
+  "patterns": [
+    "8r"
+  ],
+  "category": "incident",
+  "whatHappened": "En la primavera de 1989, un hombre que se presentaba bajo el seudónimo 'Dennis' y con el rostro oscurecido apareció en la televisión de Las Vegas, entrevistado por el periodista de investigación George Knapp. Poco después dio la cara con su nombre real: Robert 'Bob' Lazar. Su relato reconfiguró para siempre la mitología del Área 51. Lazar afirmó haber sido contratado para trabajar en una instalación secreta llamada S-4, situada al sur de Groom Lake, en el desierto de Nevada, donde —según dijo— se guardaban nueve platillos volantes completos de origen no humano, ocultos al público.\n\nSu testimonio era técnicamente detallado, lo que le dio fuerza. Lazar describió haber examinado de cerca una de las naves, apodada el 'Sport Model' por su diseño aerodinámico, con un interior de escala pequeña —como diseñado para seres menores que un humano— y sin controles convencionales (botones o diales). Sostuvo que la propulsión funcionaba mediante manipulación de la gravedad, generando un campo a partir de un combustible exótico: el 'elemento 115', entonces inexistente en la tabla periódica. Afirmó haber estudiado en el MIT y haber trabajado en Los Álamos.\n\nDesde el principio, la verificación de su historia tropezó con problemas graves. George Knapp no pudo confirmar que Lazar hubiera estudiado en el MIT, y Los Álamos respondió que no constaba que hubiera trabajado allí, aunque aparecieron indicios indirectos (una guía telefónica del laboratorio, un recorte) que sus defensores esgrimen como prueba de un borrado de su expediente. El elemento 115 ofrece el caso de estudio más nítido: en 2003 científicos rusos sintetizaron efectivamente el elemento 115, hoy llamado moscovio, lo que sus partidarios celebraron como una confirmación; pero el moscovio real es un elemento radiactivo sintético, fugaz e inestable, sin ninguna de las propiedades de generación de gravedad ni la estabilidad que Lazar le atribuía. El consenso escéptico —recogido en análisis como los de la revista Skeptic— considera que el conjunto apunta a una fabricación, mientras que el testimonio de Lazar permanece, tres décadas después, tan persuasivo como inverificable.",
+  "whatHappened_en": "In the spring of 1989, a man presenting himself under the pseudonym 'Dennis' and with his face darkened appeared on Las Vegas television, interviewed by investigative journalist George Knapp. Soon after he went public under his real name: Robert 'Bob' Lazar. His account reshaped the mythology of Area 51 forever. Lazar claimed to have been hired to work at a secret facility called S-4, located south of Groom Lake, in the Nevada desert, where —he said— nine complete flying saucers of non-human origin were kept, hidden from the public.\n\nHis testimony was technically detailed, which lent it force. Lazar described closely examining one of the craft, nicknamed the 'Sport Model' for its aerodynamic design, with a small-scale interior —as if designed for beings smaller than a human— and without conventional controls (buttons or dials). He maintained that the propulsion worked by gravity manipulation, generating a field from an exotic fuel: 'element 115', then nonexistent on the periodic table. He claimed to have studied at MIT and worked at Los Alamos.\n\nFrom the start, verifying his story hit serious problems. George Knapp could not confirm that Lazar had studied at MIT, and Los Alamos responded that there was no record of his having worked there, though indirect indications appeared (a lab phone directory, a clipping) that his defenders cite as proof of a scrubbed record. Element 115 offers the cleanest case study: in 2003 Russian scientists did synthesize element 115, today called moscovium, which his supporters celebrated as a confirmation; but real moscovium is a synthetic, fleeting and unstable radioactive element, with none of the gravity-generating properties or the stability Lazar ascribed to it. The skeptical consensus —recorded in analyses such as those in Skeptic magazine— holds that the whole points to a fabrication, while Lazar's testimony remains, three decades later, as persuasive as it is unverifiable.",
+  "whyMatters": "Bob Lazar importa al corpus no como evidencia de ingeniería inversa, sino como el documento fundacional de la narrativa nohumano_encubierto en la cultura del Área 51: fue el relato que instaló en la imaginación pública la idea de un Estado que posee, oculta y estudia naves no humanas. Casi todo el ecosistema posterior de filtraciones, denunciantes y 'programas de recuperación' —hasta Grusch en 2023— dialoga, consciente o no, con el molde que Lazar fijó en 1989. Tratarlo es obligatorio para un corpus que rastrea esa narrativa; ignorarlo dejaría sin ancla el origen cultural de la hipótesis.\n\nPero la honestidad analítica obliga a cargar el posterior sobre la narrativa mundano/natural en su variante de fabricación. La cadena de problemas es seria y convergente: credenciales académicas y laborales no verificadas (MIT, Los Álamos), y una descripción del elemento 115 que la química real contradice —el moscovio existe pero es lo contrario de lo que Lazar prometía—. La masa que se concede a nohumano_encubierto no premia su veracidad, sino que reconoce que su afirmación ES, por definición, esa narrativa, y que el caso no puede falsarse del todo: la opacidad genuina de las instalaciones de Nevada hace imposible probar un negativo absoluto, y algunos detalles (su conocimiento del terreno, los avistamientos que coordinó en la ruta del desierto) no se explican trivialmente. La indeterminación recoge ese margen. En el corpus, Lazar es el caso límite entre el denunciante y el fabulador: la prueba de que una narrativa puede ser culturalmente decisiva y epistémicamente débil a la vez, y de que ambas cosas deben sostenerse sin colapsar una en la otra.",
+  "whyMatters_en": "Bob Lazar matters to the corpus not as evidence of reverse engineering, but as the founding document of the nohumano_encubierto narrative in Area 51 culture: it was the account that installed in the public imagination the idea of a state that possesses, hides and studies non-human craft. Almost the entire later ecosystem of leaks, whistleblowers and 'recovery programs' —up to Grusch in 2023— dialogues, knowingly or not, with the mold Lazar set in 1989. Addressing it is mandatory for a corpus that tracks that narrative; ignoring it would leave the hypothesis's cultural origin unanchored.\n\nBut analytical honesty requires loading the posterior onto the mundane/natural narrative in its fabrication variant. The chain of problems is serious and convergent: unverified academic and employment credentials (MIT, Los Alamos), and a description of element 115 that real chemistry contradicts —moscovium exists but is the opposite of what Lazar promised. The mass granted to nohumano_encubierto does not reward his veracity, but acknowledges that his claim IS, by definition, that narrative, and that the case cannot be fully falsified: the genuine opacity of the Nevada facilities makes it impossible to prove an absolute negative, and some details (his knowledge of the terrain, the sightings he coordinated on the desert route) are not trivially explained. Indeterminacy captures that margin. In the corpus, Lazar is the borderline case between whistleblower and fabulist: the proof that a narrative can be culturally decisive and epistemically weak at once, and that both must be held without collapsing one into the other.",
+  "evidence": [
+    "Entrevistas de George Knapp (KLAS-TV, Las Vegas, 1989), primero con el rostro oculto ('Dennis') y luego con su nombre real",
+    "Relato detallado de nueve platillos en S-4, una nave 'Sport Model' de interior a pequeña escala y propulsión por manipulación de gravedad",
+    "Afirmación del 'elemento 115' como combustible; el moscovio (elemento 115) se sintetizó en 2003 pero es radiactivo, inestable y sin las propiedades descritas",
+    "Imposibilidad de verificar sus credenciales: el MIT y Los Álamos no confirmaron estudios/empleo",
+    "Análisis escépticos (p. ej. revista Skeptic) que concluyen probable fabricación",
+    "Opacidad genuina de S-4/Groom Lake que impide probar un negativo absoluto"
+  ],
+  "evidence_en": [
+    "George Knapp interviews (KLAS-TV, Las Vegas, 1989), first with face hidden ('Dennis') and later under his real name",
+    "Detailed account of nine saucers at S-4, a 'Sport Model' craft with small-scale interior and gravity-manipulation propulsion",
+    "Claim of 'element 115' as fuel; moscovium (element 115) was synthesized in 2003 but is radioactive, unstable and lacks the described properties",
+    "Inability to verify his credentials: MIT and Los Alamos did not confirm study/employment",
+    "Skeptical analyses (e.g. Skeptic magazine) concluding probable fabrication",
+    "Genuine opacity of S-4/Groom Lake that prevents proving an absolute negative"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Bob Lazar",
+      "url": "https://en.wikipedia.org/wiki/Bob_Lazar"
+    },
+    {
+      "name": "Skeptic — 'The Strange Case of Bob Lazar'",
+      "url": "https://www.skeptic.com/article/the-strange-case-of-bob-lazar/"
+    },
+    {
+      "name": "HowStuffWorks — 'Bob Lazar, UFO Hoaxster'",
+      "url": "https://science.howstuffworks.com/space/aliens-ufos/bob-lazar.htm"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.12,
+    "nohumano_abierto": 0.01,
+    "indet": 0.22
+  }
+}
