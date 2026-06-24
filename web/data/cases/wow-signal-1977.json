@@ -1,0 +1,66 @@
+{
+  "id": "wow-signal-1977",
+  "num": 227,
+  "name": "Señal Wow! · Big Ear",
+  "name_en": "Wow! Signal · Big Ear",
+  "year_start": 1977,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.066,
+    "lng": -83.073,
+    "place": "Radiotelescopio Big Ear, Delaware, Ohio",
+    "place_en": "Big Ear radio telescope, Delaware, Ohio"
+  },
+  "tier": "A",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 38,
+  "summary": "El 15 de agosto de 1977, el radiotelescopio Big Ear de la Universidad Estatal de Ohio registró una señal de banda estrecha 30 veces más intensa que el ruido de fondo, cerca de la línea del hidrógeno (1420 MHz), proveniente de Sagitario. El astrónomo Jerry Ehman circuló el código '6EQUJ5' en la impresora y anotó al margen 'Wow!'. Nunca se repitió pese a búsquedas posteriores.",
+  "summary_en": "On 15 August 1977, Ohio State University's Big Ear radio telescope logged a narrow-band signal 30 times stronger than the background noise, near the hydrogen line (1420 MHz), coming from Sagittarius. Astronomer Jerry Ehman circled the code '6EQUJ5' on the printout and wrote 'Wow!' in the margin. It never recurred despite later searches.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En la madrugada del 15 de agosto de 1977, el radiotelescopio Big Ear de la Universidad Estatal de Ohio —entonces dedicado al proyecto SETI de la institución— registró de forma automática una señal de radio extraordinariamente intensa. El instrumento no apuntaba mecánicamente, sino que dejaba que la rotación de la Tierra barriera el cielo, de modo que cualquier fuente puntual permanecía en el lóbulo de la antena unos 72 segundos. La señal entró y salió con exactamente ese perfil temporal: ascendió hasta un pico y volvió a descender siguiendo la curva de respuesta esperada para una fuente celeste fija, no para una interferencia terrestre.\n\nUnos días después, el astrónomo voluntario Jerry R. Ehman revisó las impresiones de papel continuo que el computador del observatorio generaba. La intensidad se codificaba con un solo carácter por intervalo —números 0-9 y luego letras para los valores más altos—. En una de las columnas leyó la secuencia '6EQUJ5': una intensidad que trepaba muy por encima de todo lo registrado habitualmente, unas 30 veces el ruido de fondo. Impresionado, rodeó la secuencia con un bolígrafo rojo y escribió al margen una sola palabra: 'Wow!'. Ese gesto bautizó el caso para siempre.\n\nLa señal tenía las características que cualquier programa SETI consideraba prometedoras. Era de banda muy estrecha —del orden de 10 kHz o menos—, algo difícil de producir por fenómenos naturales de banda ancha y más propio de un transmisor deliberado. Su frecuencia, cercana a los 1420 MHz, caía en torno a la línea de emisión del hidrógeno neutro, la región del espectro que los teóricos habían señalado durante décadas como el 'canal natural' donde una civilización buscaría comunicar. La dirección apuntaba hacia la constelación de Sagitario, en las inmediaciones del cúmulo globular M55.\n\nEl problema decisivo llegó después: la señal nunca se repitió. Ehman y otros volvieron a apuntar Big Ear a la misma región en múltiples ocasiones, y posteriormente otros instrumentos —incluido el Very Large Array y, en 1995-1999, búsquedas dedicadas— rastrearon la zona sin recuperar nada. Una señal irrepetible no puede confirmarse ni atribuirse con seguridad. Durante décadas se barajaron explicaciones mundanas: reflexión de una transmisión terrestre en basura espacial, un satélite, o interferencia de radiofrecuencia. En 2017 se propuso que una nube de hidrógeno de un cometa (266P/Christensen) podría haber producido la emisión, hipótesis criticada por no ajustar bien la banda estrecha. En 2024, un equipo que reanalizó datos del proyecto Arecibo Wow! propuso un mecanismo astrofísico —un destello de máser estimulado de hidrógeno por una fuente transitoria— como candidato más sólido. Ninguna explicación ha cerrado el caso de forma concluyente.",
+  "whatHappened_en": "In the early hours of 15 August 1977, Ohio State University's Big Ear radio telescope —then dedicated to the institution's SETI project— automatically logged an extraordinarily strong radio signal. The instrument did not steer mechanically; it let Earth's rotation sweep the sky, so any point source stayed within the antenna's beam for about 72 seconds. The signal rose and fell with exactly that temporal profile: climbing to a peak and back down along the response curve expected for a fixed celestial source, not for terrestrial interference.\n\nA few days later, volunteer astronomer Jerry R. Ehman reviewed the continuous-feed paper printouts the observatory's computer generated. Intensity was encoded with a single character per interval —digits 0-9 and then letters for the highest values. In one column he read the sequence '6EQUJ5': an intensity climbing far above anything normally recorded, about 30 times the background noise. Struck, he circled the sequence in red pen and wrote a single word in the margin: 'Wow!'. That gesture named the case forever.\n\nThe signal had the characteristics any SETI program deemed promising. It was very narrow-band —on the order of 10 kHz or less— something hard to produce by broadband natural phenomena and more typical of a deliberate transmitter. Its frequency, near 1420 MHz, fell around the neutral-hydrogen emission line, the spectral region theorists had pointed to for decades as the 'natural channel' where a civilization would seek to communicate. The direction pointed toward the constellation Sagittarius, near the globular cluster M55.\n\nThe decisive problem came afterward: the signal never recurred. Ehman and others re-pointed Big Ear at the same region on multiple occasions, and later other instruments —including the Very Large Array and, in 1995-1999, dedicated searches— scanned the area without recovering anything. An unrepeatable signal can be neither confirmed nor confidently attributed. For decades, mundane explanations circulated: reflection of a terrestrial transmission off space debris, a satellite, or radio-frequency interference. In 2017 it was proposed that a hydrogen cloud from a comet (266P/Christensen) could have produced the emission, a hypothesis criticized for failing to fit the narrow band. In 2024, a team reanalyzing data from the Arecibo Wow! project proposed an astrophysical mechanism —a stimulated hydrogen maser flash from a transient source— as the stronger candidate. No explanation has conclusively closed the case.",
+  "whyMatters": "La Señal Wow! importa porque es el caso fronterizo más limpio entre la astronomía rigurosa y la pregunta sobre inteligencias no humanas: lo registró un instrumento científico calibrado, en un proyecto formal, con un perfil temporal compatible con una fuente celeste real, y aun así resiste cuarenta años de intentos de explicación. Su valor para el corpus no es que 'fuera un mensaje' —no hay base para afirmarlo— sino que delimita con precisión qué exige la evidencia: una detección única, irrepetible, por sólida que sea su firma, no puede ascender de anomalía a hecho. Es el contraejemplo perfecto frente al entusiasmo: la mejor señal candidata jamás registrada sigue siendo, técnicamente, indeterminada.\n\nPor eso su posterior carga sobre la narrativa mundano/natural y sobre la indeterminación, no sobre las entidades no humanas. Las hipótesis astrofísicas recientes —máser de hidrógeno estimulado, emisión transitoria— son las explicaciones más fuertes en pie, y la incapacidad de reproducir la señal favorece tanto un fenómeno natural raro como una interferencia no identificada antes que una transmisión deliberada. La pequeña masa que el caso concede a 'no-humano abierto' refleja exactamente lo que la línea del hidrógeno y la banda estrecha mantienen vivo: una posibilidad residual, no una conclusión. La Señal Wow! es, en el corpus, el ancla metodológica del lado científico —el recordatorio de que la disciplina de exigir repetición es lo que separa el dato del deseo.",
+  "whyMatters_en": "The Wow! Signal matters because it is the cleanest borderline case between rigorous astronomy and the question of non-human intelligence: it was logged by a calibrated scientific instrument, in a formal project, with a temporal profile consistent with a real celestial source, and it still resists forty years of attempts at explanation. Its value to the corpus is not that 'it was a message' —there is no basis for that claim— but that it precisely delimits what evidence demands: a single, unrepeatable detection, however solid its signature, cannot rise from anomaly to fact. It is the perfect counterexample to enthusiasm: the best candidate signal ever recorded remains, technically, undetermined.\n\nThat is why its posterior loads onto the mundane/natural narrative and onto indeterminacy, not onto non-human entities. Recent astrophysical hypotheses —stimulated hydrogen maser, transient emission— are the strongest explanations standing, and the inability to reproduce the signal favors a rare natural phenomenon or unidentified interference over a deliberate transmission. The small mass the case grants to 'non-human, open' reflects exactly what the hydrogen line and narrow band keep alive: a residual possibility, not a conclusion. The Wow! Signal is, in the corpus, the methodological anchor on the scientific side —the reminder that the discipline of demanding repetition is what separates data from desire.",
+  "evidence": [
+    "Impresión original del computador de Big Ear con la secuencia '6EQUJ5' rodeada y la anotación manuscrita 'Wow!' de Jerry Ehman (15 ago 1977)",
+    "Perfil temporal de ~72 s compatible con una fuente celeste fija barrida por la rotación terrestre, no con interferencia local",
+    "Ancho de banda estrecho (~10 kHz) próximo a la línea del hidrógeno neutro (1420 MHz)",
+    "Dirección hacia Sagitario, cerca del cúmulo globular M55",
+    "Búsquedas de reobservación (Big Ear, VLA, META, 1995-1999) sin recuperar la señal",
+    "Reanálisis Arecibo Wow! (2024) proponiendo un máser de hidrógeno estimulado como fuente astrofísica candidata"
+  ],
+  "evidence_en": [
+    "Original Big Ear computer printout with the sequence '6EQUJ5' circled and Jerry Ehman's handwritten 'Wow!' note (15 Aug 1977)",
+    "~72 s temporal profile consistent with a fixed celestial source swept by Earth's rotation, not with local interference",
+    "Narrow bandwidth (~10 kHz) near the neutral-hydrogen line (1420 MHz)",
+    "Direction toward Sagittarius, near globular cluster M55",
+    "Re-observation searches (Big Ear, VLA, META, 1995-1999) failing to recover the signal",
+    "Arecibo Wow! reanalysis (2024) proposing a stimulated hydrogen maser as a candidate astrophysical source"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Wow! signal",
+      "url": "https://en.wikipedia.org/wiki/Wow!_signal"
+    },
+    {
+      "name": "Smithsonian Magazine — 'Forty Years Later, SETI's Famous Wow! Signal May Have an Explanation' (2017)",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/forty-years-later-setis-famous-wow-signal-may-have-explanation-180963628/"
+    },
+    {
+      "name": "Méndez et al. — 'Arecibo Wow! I: An Astrophysical Explanation for the Wow! Signal' (arXiv, 2024)",
+      "url": "https://arxiv.org/html/2408.08513v1"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.1,
+    "indet": 0.31
+  }
+}

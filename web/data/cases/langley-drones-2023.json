@@ -1,0 +1,68 @@
+{
+  "id": "langley-drones-2023",
+  "num": 229,
+  "name": "Incursiones de drones · Langley AFB",
+  "name_en": "Drone Incursions · Langley AFB",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 37.0828,
+    "lng": -76.3603,
+    "place": "Joint Base Langley-Eustis, Virginia",
+    "place_en": "Joint Base Langley-Eustis, Virginia"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "summary": "Entre el 6 y el 22 de diciembre de 2023, enjambres de drones no identificados sobrevolaron durante 17 noches la base de la Fuerza Aérea de Langley (Virginia), sede de escuadrones F-22 y del Air Combat Command. Algunos medían hasta 6 metros. Pese a reuniones de alto nivel del DoD, el FBI y la AARO, y al despliegue del NASA WB-57, el origen nunca se determinó públicamente.",
+  "summary_en": "Between 6 and 22 December 2023, swarms of unidentified drones overflew Langley Air Force Base (Virginia) —home to F-22 squadrons and Air Combat Command— for 17 nights. Some were up to 20 feet long. Despite high-level DoD, FBI and AARO meetings, and the deployment of NASA's WB-57, the origin was never publicly determined.",
+  "patterns": [
+    "8s"
+  ],
+  "category": "incident",
+  "whatHappened": "A partir de la noche del 6 de diciembre de 2023, personal de la base conjunta Langley-Eustis, en el sureste de Virginia, comenzó a observar sistemas aéreos no tripulados entrando en el espacio aéreo restringido de la instalación. Langley no es una base cualquiera: alberga escuadrones de cazas furtivos F-22 Raptor y el cuartel general del Air Combat Command, lo que la convierte en uno de los activos más sensibles de la Fuerza Aérea estadounidense. Las incursiones se repitieron durante 17 noches, hasta el 22 de diciembre, generalmente en la franja de 45 minutos a una hora tras el ocaso.\n\nLos relatos describen un comportamiento llamativamente coordinado y heterogéneo. No se trataba de un único aparato, sino de grupos de drones de tamaños muy diversos: desde pequeños cuadricópteros hasta plataformas de ala fija de gran porte, algunas estimadas en torno a 6 metros (20 pies) de longitud, con luces fijas y de navegación. Volaban con rumbo definido sobre la base y sus inmediaciones y, según los testimonios filtrados a la prensa, no respondían a patrones de aeromodelismo recreativo. La Fuerza Aérea optó por no derribarlos: hacerlo sobre suelo estadounidense, en zona poblada y sin saber qué eran, planteaba riesgos legales y de seguridad. Como medida de precaución, el Pentágono llegó a reubicar temporalmente cazas F-22 a otra base.\n\nLa respuesta institucional fue significativa. El Departamento de Defensa, el FBI y la All-domain Anomaly Resolution Office (AARO) —la oficina creada para resolver incidentes de objetos no identificados— mantuvieron dos semanas de reuniones para tratar de determinar el origen. La NASA desplegó su avión de investigación de gran altitud WB-57F (matrícula N927NA), que voló órbitas circulares centradas en Langley con instrumentación de sensores. Pese a todo ese despliegue, meses después el Pentágono seguía declarando públicamente que no sabía de dónde procedían los drones.\n\nEl episodio se inscribe en una oleada más amplia de incursiones sobre instalaciones militares estadounidenses en 2023-2024. En un caso conexo pero distinto, en enero de 2024 un ciudadano chino, estudiante en Minnesota, fue detenido volando un dron cerca de Langley; el FBI recuperó el aparato y halló fotografías de buques de la Armada, lo que llevó a una condena de seis meses de prisión. Ese incidente, sin embargo, no explica las incursiones masivas y coordinadas de diciembre, que permanecen formalmente sin atribuir.",
+  "whatHappened_en": "Starting the night of 6 December 2023, personnel at Joint Base Langley-Eustis, in southeastern Virginia, began observing unmanned aerial systems entering the installation's restricted airspace. Langley is no ordinary base: it hosts F-22 Raptor stealth fighter squadrons and the headquarters of Air Combat Command, making it one of the U.S. Air Force's most sensitive assets. The incursions recurred over 17 nights, until 22 December, generally in the window of 45 minutes to an hour after sunset.\n\nAccounts describe strikingly coordinated and heterogeneous behavior. It was not a single craft but groups of drones of widely varying sizes: from small quadcopters to large fixed-wing platforms, some estimated at around 20 feet (6 metres) in length, with steady and navigation lights. They flew on a defined heading over the base and its surroundings and, according to testimony leaked to the press, did not match recreational hobbyist patterns. The Air Force chose not to shoot them down: doing so over U.S. soil, in a populated area and without knowing what they were, posed legal and safety risks. As a precaution, the Pentagon temporarily relocated F-22 fighters to another base.\n\nThe institutional response was significant. The Department of Defense, the FBI and the All-domain Anomaly Resolution Office (AARO) —the office created to resolve unidentified-object incidents— held two weeks of meetings to try to determine the origin. NASA deployed its high-altitude research aircraft WB-57F (registration N927NA), which flew circular orbits centered on Langley with sensor instrumentation. Despite all that effort, months later the Pentagon still publicly stated it did not know where the drones came from.\n\nThe episode belongs to a broader wave of incursions over U.S. military installations in 2023-2024. In a related but distinct case, in January 2024 a Chinese national, a student in Minnesota, was arrested flying a drone near Langley; the FBI recovered the device and found photographs of Navy ships, leading to a six-month prison sentence. That incident, however, does not explain the massive, coordinated December incursions, which remain formally unattributed.",
+  "whyMatters": "Langley importa porque es un caso casi puro de la narrativa de vigilancia aérea de otro Estado, documentado en tiempo real por la institución afectada y no por aficionados. A diferencia de los clásicos visuales del corpus, aquí no hay duda de que los objetos eran aparatos físicos —drones— ni de que penetraron repetidamente el espacio aéreo de un activo militar de primer nivel. La anomalía no es ontológica sino estratégica y operativa: cómo es posible que enjambres coordinados sobrevolaran durante 17 noches la sede del Air Combat Command sin que Estados Unidos lograra identificarlos, interceptarlos ni atribuirlos. El caso expone un vacío de doctrina y de capacidad contra-dron sobre suelo propio que las propias autoridades reconocieron.\n\nPor eso el posterior se reparte casi enteramente entre hipótesis humanas: vigilancia de un adversario estatal (la lectura más inquietante y la que encaja con el patrón 8s), un programa o ejercicio propio o aliado no comunicado a la base, o incursiones de operadores civiles —recreativos o comerciales— malinterpretadas como amenaza coordinada. La masa mundano/misid recoge esta última posibilidad, real dada la proliferación de drones comerciales. La indeterminación captura lo que de verdad quedó sin cerrar: la atribución. Lo que Langley no aporta es base para narrativas no humanas; su valor es otro —es el caso testigo de que, en 2023, el fenómeno 'objetos no identificados sobre instalaciones sensibles' se había vuelto un problema de seguridad nacional convencional, con drones manifiestamente tecnológicos, y aun así irresuelto en su autoría.",
+  "whyMatters_en": "Langley matters because it is an almost pure case of the foreign-state aerial surveillance narrative, documented in real time by the affected institution and not by amateurs. Unlike the corpus's visual classics, here there is no doubt the objects were physical craft —drones— nor that they repeatedly penetrated the airspace of a top-tier military asset. The anomaly is not ontological but strategic and operational: how could coordinated swarms overfly the Air Combat Command headquarters for 17 nights without the United States managing to identify, intercept or attribute them. The case exposes a doctrine and counter-drone capability gap over its own soil that the authorities themselves acknowledged.\n\nThat is why the posterior splits almost entirely among human hypotheses: surveillance by a state adversary (the most unsettling reading and the one fitting pattern 8s), an own or allied program or exercise not communicated to the base, or incursions by civilian operators —recreational or commercial— misread as a coordinated threat. The mundane/misid mass captures the latter possibility, real given the proliferation of commercial drones. Indeterminacy captures what truly remained open: attribution. What Langley does not provide is a basis for non-human narratives; its value is different —it is the witness case that, by 2023, the phenomenon of 'unidentified objects over sensitive installations' had become a conventional national-security problem, with manifestly technological drones, and still unresolved as to authorship.",
+  "evidence": [
+    "17 noches consecutivas de incursiones (6-22 dic 2023) sobre Joint Base Langley-Eustis, documentadas por personal militar",
+    "Drones de tamaños diversos, algunos estimados en ~6 m (20 pies), con luces de navegación y rumbo definido",
+    "Reubicación temporal de cazas F-22 como precaución por parte del Pentágono",
+    "Dos semanas de reuniones de DoD, FBI y AARO sin determinar el origen",
+    "Despliegue del avión de investigación NASA WB-57F (N927NA) en órbitas centradas en Langley",
+    "Reconocimiento público del Pentágono, meses después, de que el origen seguía sin determinarse"
+  ],
+  "evidence_en": [
+    "17 consecutive nights of incursions (6-22 Dec 2023) over Joint Base Langley-Eustis, documented by military personnel",
+    "Drones of varying sizes, some estimated at ~20 feet (6 m), with navigation lights and a defined heading",
+    "Temporary relocation of F-22 fighters as a Pentagon precaution",
+    "Two weeks of DoD, FBI and AARO meetings without determining the origin",
+    "Deployment of NASA's WB-57F research aircraft (N927NA) in orbits centered on Langley",
+    "Pentagon public acknowledgment, months later, that the origin remained undetermined"
+  ],
+  "sources": [
+    {
+      "name": "The War Zone (TWZ) — 'Mysterious Drones Swarmed Langley AFB For Weeks'",
+      "url": "https://www.twz.com/air/mysterious-drones-swarmed-langley-afb-for-weeks"
+    },
+    {
+      "name": "Task & Purpose — 'Drones swarmed an air base for days. They're still a mystery.'",
+      "url": "https://taskandpurpose.com/news/mystery-drones-langley-afb/"
+    },
+    {
+      "name": "Washington Examiner — 'Mystery drones swarmed Langley Air Force Base for weeks'",
+      "url": "https://www.washingtonexaminer.com/policy/defense/2923903/mystery-drones-swarmed-langley-air-force-base-for-weeks/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.22,
+    "humana_clasificada": 0.2,
+    "adversaria": 0.34,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.02,
+    "indet": 0.2
+  }
+}
