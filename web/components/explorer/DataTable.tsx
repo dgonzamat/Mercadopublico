@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { UAPCase } from "@/lib/types";
 import { T } from "@/components/T";
@@ -63,9 +63,19 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
   }, [rows, query, sortKey, sortDir]);
 
   // Paginación: volver a la página 1 cuando cambia el conjunto o el orden.
-  useEffect(() => {
+  // Ajuste de estado durante el render (patrón soportado por React) en lugar de
+  // un efecto con setState síncrono.
+  const [prevDeps, setPrevDeps] = useState({ rows, query, sortKey, sortDir, pageSize });
+  if (
+    prevDeps.rows !== rows ||
+    prevDeps.query !== query ||
+    prevDeps.sortKey !== sortKey ||
+    prevDeps.sortDir !== sortDir ||
+    prevDeps.pageSize !== pageSize
+  ) {
+    setPrevDeps({ rows, query, sortKey, sortDir, pageSize });
     setPage(0);
-  }, [rows, query, sortKey, sortDir, pageSize]);
+  }
 
   const totalPages = Math.max(1, Math.ceil(display.length / pageSize));
   const safePage = Math.min(page, totalPages - 1);
