@@ -1,0 +1,66 @@
+{
+  "id": "glenn-fireflies-1962",
+  "num": 241,
+  "name": "Luciérnagas de Glenn · Friendship 7",
+  "name_en": "Glenn's Fireflies · Friendship 7",
+  "year_start": 1962,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 28.5,
+    "lng": -80.6,
+    "place": "Órbita terrestre baja · misión Mercury-Atlas 6 / Friendship 7 (NASA)",
+    "place_en": "Low Earth orbit · Mercury-Atlas 6 / Friendship 7 mission (NASA)"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 14,
+  "summary": "El 20 de febrero de 1962, durante el primer vuelo orbital tripulado de EE.UU. (Friendship 7), John Glenn describió a Houston miles de partículas luminosas 'amarillo-verdosas, del tamaño y brillo de luciérnagas' flotando alrededor de la cápsula. El fenómeno desconcertó al inicio, pero se identificó pronto como cristales de hielo venteados por los sistemas de la propia nave.",
+  "summary_en": "On 20 February 1962, during the first U.S. crewed orbital flight (Friendship 7), John Glenn described to Houston thousands of luminous 'yellowish-green particles, the size and brightness of fireflies' floating around the capsule. The phenomenon puzzled at first, but was soon identified as ice crystals vented by the spacecraft's own systems.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El 20 de febrero de 1962, John Glenn se convirtió en el primer estadounidense en orbitar la Tierra a bordo de la cápsula Friendship 7, en la misión Mercury-Atlas 6. Durante uno de sus amaneceres orbitales, al salir el Sol tras un periodo de oscuridad, Glenn comunicó a la sala de control en Florida una observación inesperada: la cápsula estaba rodeada por una nube de pequeñas partículas luminosas. Las describió como 'partículas amarillo-verdosas brillantes, del tamaño y la intensidad de luciérnagas en una noche muy oscura', y precisó que había 'literalmente miles de ellas' a cada lado de la nave, que parecían flotar y desplazarse lentamente sin provenir aparentemente de ninguna parte concreta del vehículo.\n\nEl fenómeno desconcertó momentáneamente tanto a Glenn como a Houston, en un vuelo que era ya de por sí el salto más arriesgado del programa espacial estadounidense hasta la fecha. El propio Glenn, piloto e ingeniero, ofreció enseguida una hipótesis técnica: especuló que los pequeños propulsores de vapor del sistema de estabilización de la cápsula podían ser la fuente, y que a unos 190 kilómetros de altitud el vapor se solidificaría en hielo, fluoresciendo al ser iluminado por la radiación solar. Otra hipótesis contemporánea apuntaba a cristales formados a partir de la orina venteada por el sistema de gestión de residuos. Un detalle clave reforzó el origen local: las 'luciérnagas' desaparecían a medida que la cápsula entraba en luz solar más intensa, justo lo que cabe esperar de minúsculos cristales que dejan de destacar contra un fondo brillante.\n\nCon las misiones posteriores y el análisis de los sistemas, el enigma se cerró. Se determinó que las partículas eran, casi con certeza, cristales de hielo desprendidos de la propia nave —en particular venteos del intercambiador de calor del traje y de los sistemas de soporte vital—, iluminados por el Sol contra el negro del espacio. El mismo fenómeno se observaría en vuelos siguientes, incluido el 'enjambre' descrito por Borman y Lovell en Gemini 7 tres años después, consolidando las 'luciérnagas' como un efecto rutinario y bien comprendido de los vuelos tripulados en órbita baja.",
+  "whatHappened_en": "On 20 February 1962, John Glenn became the first American to orbit the Earth aboard the Friendship 7 capsule, on the Mercury-Atlas 6 mission. During one of his orbital sunrises, as the Sun rose after a period of darkness, Glenn radioed the control room in Florida an unexpected observation: the capsule was surrounded by a cloud of small luminous particles. He described them as 'bright yellowish-green particles, the size and intensity of fireflies on a very dark night', and noted there were 'literally thousands of them' on each side of the craft, seeming to float and drift slowly without apparently coming from any specific part of the vehicle.\n\nThe phenomenon momentarily puzzled both Glenn and Houston, on a flight that was already the riskiest leap of the U.S. space program to date. Glenn himself, a pilot and engineer, quickly offered a technical hypothesis: he speculated that the capsule's small stabilization-system steam jets might be the source, and that at about 190 kilometres altitude the vapor would solidify into ice, fluorescing when lit by solar radiation. Another contemporary hypothesis pointed to crystals formed from urine vented by the waste-management system. One key detail reinforced the local origin: the 'fireflies' disappeared as the capsule moved into brighter sunlight, exactly what one expects of tiny crystals that cease to stand out against a bright background.\n\nWith later missions and analysis of the systems, the puzzle closed. The particles were determined to be, almost certainly, ice crystals shed from the craft itself —in particular vents from the suit heat exchanger and life-support systems— lit by the Sun against the black of space. The same phenomenon would be observed on subsequent flights, including the 'swarm' described by Borman and Lovell on Gemini 7 three years later, cementing the 'fireflies' as a routine, well-understood effect of crewed low-orbit flight.",
+  "whyMatters": "Las 'luciérnagas' de Glenn importan al corpus como el caso semilla de la categoría de avistamientos astronáuticos y, a la vez, como su explicación canónica: el episodio que estableció, ya en 1962, que un astronauta entrenado puede observar un fenómeno genuinamente desconcertante en órbita que resulta tener una causa local y mundana. Junto con Gemini 4 (McDivitt) y Gemini 7 (Borman), completa la tríada de observaciones espaciales tempranas del corpus y fija el marco para interpretarlas: no toda anomalía reportada por un astronauta apunta hacia fuera; muchas apuntan hacia la propia nave.\n\nPor eso el posterior carga abrumadoramente sobre la narrativa mundano/natural. La explicación de los cristales de hielo —venteados por los sistemas de soporte vital e iluminados por el Sol— es sólida, repetible y confirmada por décadas de vuelos tripulados que observaron el mismo efecto; el propio Glenn la anticipó en tiempo real, y el detalle de que las partículas se desvanecían al aumentar la luz solar la corrobora. La pequeña masa de indeterminación no refleja una duda seria sobre el mecanismo, sino la prudencia de no clausurar al 100% un fenómeno descrito verbalmente desde una cápsula hace seis décadas. En el corpus, Glenn es el ancla del lado luminoso de los vuelos espaciales: la prueba de que el escenario más exótico imaginable —miles de luces rodeando a un humano en órbita— puede tener, y tuvo, la explicación más doméstica posible.",
+  "whyMatters_en": "Glenn's 'fireflies' matter to the corpus as the seed case of the astronaut-sighting category and, at the same time, as its canonical explanation: the episode that established, as early as 1962, that a trained astronaut can observe a genuinely puzzling phenomenon in orbit that turns out to have a local, mundane cause. Together with Gemini 4 (McDivitt) and Gemini 7 (Borman), it completes the corpus's triad of early space observations and sets the frame for interpreting them: not every anomaly reported by an astronaut points outward; many point at the craft itself.\n\nThat is why the posterior loads overwhelmingly onto the mundane/natural narrative. The ice-crystal explanation —vented by life-support systems and lit by the Sun— is solid, repeatable and confirmed by decades of crewed flights observing the same effect; Glenn himself anticipated it in real time, and the detail that the particles faded as sunlight increased corroborates it. The small mass of indeterminacy reflects not serious doubt about the mechanism but the prudence of not closing at 100% a phenomenon described verbally from a capsule six decades ago. In the corpus, Glenn is the anchor on the luminous side of spaceflight: the proof that the most exotic conceivable scenario —thousands of lights surrounding a human in orbit— can have, and did have, the most domestic possible explanation.",
+  "evidence": [
+    "Transcripciones aire-tierra de Friendship 7 (20 feb 1962) con la descripción de Glenn de 'miles' de partículas tipo luciérnaga",
+    "Descripción precisa: partículas amarillo-verdosas, tamaño/brillo de luciérnagas, a ambos lados de la cápsula al amanecer orbital",
+    "Hipótesis del propio Glenn en tiempo real: vapor de los propulsores de estabilización solidificado en hielo a ~190 km",
+    "Las partículas se desvanecían al entrar la cápsula en luz solar más intensa (coherente con cristales locales)",
+    "Identificación posterior: cristales de hielo venteados por el intercambiador de calor/soporte vital de la nave",
+    "Fenómeno repetido en vuelos posteriores (p. ej. Gemini 7, 1965), confirmando su carácter rutinario"
+  ],
+  "evidence_en": [
+    "Friendship 7 air-to-ground transcripts (20 Feb 1962) with Glenn's description of 'thousands' of firefly-like particles",
+    "Precise description: yellowish-green particles, firefly size/brightness, on both sides of the capsule at orbital sunrise",
+    "Glenn's own real-time hypothesis: stabilization-jet vapor solidified into ice at ~190 km",
+    "The particles faded as the capsule entered brighter sunlight (consistent with local crystals)",
+    "Later identification: ice crystals vented by the craft's heat exchanger/life support",
+    "Phenomenon repeated on later flights (e.g. Gemini 7, 1965), confirming its routine nature"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Mercury-Atlas 6 (Friendship 7)",
+      "url": "https://en.wikipedia.org/wiki/Mercury-Atlas_6"
+    },
+    {
+      "name": "ExplorersWeb — 'Exploration Mysteries: John Glenn and the Fireflies in Space'",
+      "url": "https://explorersweb.com/exploration-mysteries-john-glenn-and-the-fireflies-in-space/"
+    },
+    {
+      "name": "AmericaSpace — 'Americans in Orbit: The Flight of John Glenn (Part 2)'",
+      "url": "https://www.americaspace.com/2013/02/17/americans-in-orbit-the-flight-of-john-glenn-part-2/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.82,
+    "humana_clasificada": 0.0,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.02,
+    "indet": 0.15
+  }
+}
