@@ -1,0 +1,68 @@
+{
+  "id": "wanaque-reservoir-1966",
+  "num": 237,
+  "name": "Embalse de Wanaque · Nueva Jersey",
+  "name_en": "Wanaque Reservoir · New Jersey",
+  "year_start": 1966,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 41.06,
+    "lng": -74.29,
+    "place": "Embalse de Wanaque, Nueva Jersey",
+    "place_en": "Wanaque Reservoir, New Jersey"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 34,
+  "summary": "Entre enero y octubre de 1966, policías, autoridades municipales y cientos de vecinos de Wanaque (Nueva Jersey) reportaron objetos luminosos sobre el mayor embalse del estado. El 11 de enero, un objeto brillante y silencioso estuvo unas dos horas y media proyectando luz sobre el hielo; la policía recibió más de 150 llamadas. El alcalde y concejales acudieron a verlo.",
+  "summary_en": "Between January and October 1966, police, municipal officials and hundreds of residents of Wanaque (New Jersey) reported luminous objects over the state's largest reservoir. On 11 January, a bright, silent object spent about two and a half hours beaming light onto the ice; police received over 150 calls. The mayor and councilmen came to see it.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El embalse de Wanaque, el mayor reservorio de agua de Nueva Jersey, fue escenario en 1966 de una de las oleadas de avistamientos colectivos mejor atestiguadas de la costa este de Estados Unidos. El episodio más intenso comenzó la noche del 11 de enero de 1966. Hacia las 18:20, agentes de policía de Wanaque y de Pompton Lakes empezaron a recibir llamadas —más de 150 a lo largo de la velada— de vecinos que describían un objeto 'muy blanco, muy brillante y mucho más grande que una estrella' suspendido sobre el agua helada. El fenómeno se prolongó unas dos horas y media, hasta cerca de las 21:00.\n\nLos testigos no eran anónimos ni aislados. El patrullero David 'Joe' Cisco (Sisco), de servicio esa noche, relató que el objeto entró en escena en silencio, 'planeó y luego salió disparado más rápido que un jet', y que al elevarse 'subió en línea recta'. El guarda del embalse y ex policía Charles Theodora subió con él a la coronación de la presa Raymond y ambos describieron, sobre el agua, una forma cilíndrica que se mecía 'como una mecedora'. La autoridad municipal se implicó directamente: el alcalde Harry T. Wolfe, los concejales Warren Hagstrom y Arthur Barton y el hijo del alcalde, que se dirigían a supervisar la quema de árboles de Navidad del municipio, se desviaron hasta un arenal junto a la presa para observar el objeto. Al día siguiente, el patrullero Jack Wardlaw reportó cerca de su casa un 'disco blanco brillante' que 'se desplazaba lateralmente a derecha e izquierda, se detenía, subía recto y desaparecía', y que describió como 'definitivamente con forma de disco y, en ciertos ángulos, de huevo'.\n\nLa actividad no se limitó a enero. El 10 de octubre de 1966 se repitió con fuerza: la policía recibió de nuevo cientos de llamadas, y el sargento Ben Thompson, de la policía del embalse, describió una luz intensamente brillante ejecutando movimientos angulares rápidos y quedando suspendida a unos 23 metros sobre Windbeam Mountain. La cercanía del embalse a infraestructura sensible y la insistencia de testigos uniformados dieron al caso una notoriedad nacional. Un dato que complica la lectura: aunque las bases aéreas de Stewart y McGuire negaron interés, la propia policía de Wanaque reportó haber visto un par de reactores sobrevolar el embalse poco después del primer aviso, y el patrullero Cisco recordaba helicópteros en el cielo esa noche.",
+  "whatHappened_en": "Wanaque Reservoir, New Jersey's largest water reservoir, was in 1966 the scene of one of the best-attested collective sighting waves on the U.S. East Coast. The most intense episode began on the night of 11 January 1966. Around 6:20 PM, police in Wanaque and Pompton Lakes began receiving calls —over 150 across the evening— from residents describing an object 'very white, very bright and much bigger than a star' hovering over the frozen water. The phenomenon lasted about two and a half hours, until close to 9:00 PM.\n\nThe witnesses were neither anonymous nor isolated. Patrolman David 'Joe' Cisco (Sisco), on duty that night, recounted that the object came into view silently, 'glided and then streaked faster than a jet', and that as it rose 'it went straight up'. Reservoir guard and former policeman Charles Theodora climbed with him to the crest of the Raymond Dam and both described, over the water, a cylindrical shape rocking 'like a rocking chair'. Municipal authority was directly involved: Mayor Harry T. Wolfe, councilmen Warren Hagstrom and Arthur Barton, and the mayor's son, who were on their way to oversee the borough's Christmas-tree burning, detoured to a sandpit near the dam to observe the object. The next day, Patrolman Jack Wardlaw reported near his home a 'bright white disk' that 'moved laterally right and left, stopped, rose straight up and disappeared', which he described as 'definitely disc-shaped and, at certain angles, egg-shaped'.\n\nThe activity was not limited to January. On 10 October 1966 it recurred strongly: police again received hundreds of calls, and Sergeant Ben Thompson of the reservoir police described an intensely bright light executing rapid angular movements and hovering about 75 feet above Windbeam Mountain. The reservoir's proximity to sensitive infrastructure and the insistence of uniformed witnesses gave the case national notoriety. One detail that complicates the reading: although Stewart and McGuire air bases denied interest, Wanaque's own police reported seeing a pair of jets overfly the reservoir shortly after the first report, and Patrolman Cisco recalled helicopters in the sky that night.",
+  "whyMatters": "Wanaque importa al corpus como un caso de avistamiento de masas con testigos institucionales —policías, un guarda, el alcalde y concejales— sostenido en el tiempo y registrado por más de 150 llamadas a centralitas oficiales. Esa estructura de evidencia (muchos observadores, algunos entrenados, documentación contemporánea en partes policiales y prensa) lo coloca por encima del avistamiento anecdótico y justifica el Tier A: no porque lo visto fuera necesariamente exótico, sino porque la calidad y cantidad del testimonio convierten el episodio en un dato robusto que cualquier explicación tiene que abarcar entero, incluidas las dos oleadas separadas de enero y octubre.\n\nAhora bien, la honestidad analítica reparte el posterior entre la indeterminación y la narrativa mundano/misid, sin cargar sobre lo no humano. Hay un hecho del propio expediente que tira con fuerza hacia lo prosaico: la presencia reconocida de reactores y helicópteros sobre el embalse esa misma noche. Luces de aeronaves maniobrando de noche sobre agua helada —con reflejos sobre el hielo, pérdida de referencias de distancia y el efecto autocinético sobre una luz puntual brillante— reproducen buena parte de lo descrito (movimientos 'angulares', ascensos 'rectos', oscilación 'de mecedora'). Un objeto astronómico brillante bajo en el horizonte pudo sembrar los primeros avisos, amplificados luego por contagio social una vez que la historia llegó a la prensa. Lo que sostiene la masa de indeterminación es que ninguna de esas piezas explica con limpieza la totalidad —la duración, la forma cilíndrica sobre la presa, la repetición en octubre—, y que el caso nunca recibió una investigación oficial concluyente. Wanaque es, en el corpus, el modelo de avistamiento colectivo serio que permanece abierto sin por ello apuntar a una nave.",
+  "whyMatters_en": "Wanaque matters to the corpus as a mass-sighting case with institutional witnesses —police, a guard, the mayor and councilmen— sustained over time and recorded by more than 150 calls to official switchboards. That evidence structure (many observers, some trained, contemporary documentation in police reports and press) places it above the anecdotal sighting and justifies Tier A: not because what was seen was necessarily exotic, but because the quality and quantity of testimony make the episode a robust datum any explanation must encompass whole, including the two separate waves of January and October.\n\nThat said, analytical honesty splits the posterior between indeterminacy and the mundane/misid narrative, without loading onto the non-human. There is a fact in the record itself that pulls strongly toward the prosaic: the acknowledged presence of jets and helicopters over the reservoir that same night. Aircraft lights maneuvering at night over frozen water —with reflections on the ice, loss of distance cues and the autokinetic effect on a bright point light— reproduce much of what was described (the 'angular' movements, 'straight' ascents, 'rocking-chair' oscillation). A bright astronomical object low on the horizon could have seeded the first reports, then amplified by social contagion once the story reached the press. What sustains the indeterminacy mass is that none of those pieces cleanly explains the totality —the duration, the cylindrical shape over the dam, the October recurrence— and that the case never received a conclusive official investigation. Wanaque is, in the corpus, the model of a serious collective sighting that remains open without thereby pointing to a craft.",
+  "evidence": [
+    "Más de 150 llamadas a la policía de Wanaque y Pompton Lakes la noche del 11 de enero de 1966",
+    "Testimonios uniformados: patrullero Joe Cisco, guarda/ex policía Charles Theodora (forma cilíndrica 'de mecedora' sobre la presa)",
+    "Avistamiento del alcalde Harry T. Wolfe y concejales, que se desviaron a observar el objeto",
+    "Reporte del patrullero Jack Wardlaw al día siguiente: 'disco blanco' con maniobras laterales y ascenso vertical",
+    "Segunda oleada el 10 de octubre de 1966; sargento Ben Thompson describe luz angular sobre Windbeam Mountain",
+    "Presencia reconocida de reactores y helicópteros sobre el embalse esa noche (elemento prosaico del expediente)"
+  ],
+  "evidence_en": [
+    "Over 150 calls to Wanaque and Pompton Lakes police on the night of 11 January 1966",
+    "Uniformed testimony: Patrolman Joe Cisco, guard/ex-policeman Charles Theodora (cylindrical 'rocking-chair' shape over the dam)",
+    "Sighting by Mayor Harry T. Wolfe and councilmen, who detoured to observe the object",
+    "Patrolman Jack Wardlaw's report the next day: 'white disk' with lateral maneuvers and vertical ascent",
+    "Second wave on 10 October 1966; Sergeant Ben Thompson describes an angular light over Windbeam Mountain",
+    "Acknowledged presence of jets and helicopters over the reservoir that night (prosaic element in the record)"
+  ],
+  "sources": [
+    {
+      "name": "Weird NJ — 'UFOs Over The Wanaque Reservoir: The Roswell of the Ramapos'",
+      "url": "https://weirdnj.com/stories/unexplained-phenomena/wanaque-reservoir-ufo/"
+    },
+    {
+      "name": "UFO Casebook — '1966 - The Wanaque Reservoir Incident'",
+      "url": "https://www.ufocasebook.com/2011/1966wanaque.html"
+    },
+    {
+      "name": "Think AboutIt — '1966: Wanaque Reservoir Incident'",
+      "url": "https://www.thinkaboutitdocs.com/1966-wanaque-reservoir-incident/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.07,
+    "indet": 0.38
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "norwegian-spiral-2009",
+  "num": 238,
+  "name": "Espiral noruega",
+  "name_en": "Norwegian Spiral",
+  "year_start": 2009,
+  "country": "NO",
+  "country_name": "Noruega",
+  "flag": "🇳🇴",
+  "location": {
+    "lat": 69.66,
+    "lng": 18.96,
+    "place": "Cielo del norte de Noruega (visible desde Tromsø y Trøndelag)",
+    "place_en": "Northern Norway sky (visible from Tromsø and Trøndelag)"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 8,
+  "summary": "El 9 de diciembre de 2009, al amanecer, una enorme espiral gris con un haz azul brotando de un extremo apareció sobre el norte de Noruega, visible durante unos 10 minutos en miles de kilómetros cuadrados. Al día siguiente, el Ministerio de Defensa ruso reconoció que se trataba de una prueba fallida del misil Bulava: la tercera etapa giró y el combustible venteado, iluminado por el Sol, dibujó la espiral.",
+  "summary_en": "On 9 December 2009, at dawn, an enormous grey spiral with a blue beam emerging from one end appeared over northern Norway, visible for about 10 minutes across thousands of square kilometres. The next day, the Russian Defence Ministry acknowledged it was a failed Bulava missile test: the third stage spun and the vented fuel, lit by the Sun, drew the spiral.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En la mañana del 9 de diciembre de 2009, todavía de noche en el extremo norte, miles de personas en Noruega presenciaron uno de los fenómenos luminosos más espectaculares y fotografiados de la historia reciente. Del cielo surgió un haz de luz azul que ascendía en curva y, en su extremo, comenzó a girar una gran espiral de tono grisáceo-blanco, de geometría casi perfecta, que se expandió hasta cubrir una porción enorme del firmamento. El espectáculo fue visible en toda la región de Trøndelag, en los tres condados del norte de Noruega e incluso desde el norte de Suecia, y se prolongó alrededor de diez minutos antes de desvanecerse, dejando por un momento un anillo oscuro en el lugar de la espiral.\n\nLa nitidez y rareza de la forma —una espiral matemática perfecta en el cielo nocturno— desató de inmediato una avalancha de especulaciones. Antes de cualquier confirmación oficial circularon hipótesis de todo tipo: auroras boreales anómalas, agujeros de gusano, intervención extraterrestre, e incluso una supuesta conexión con los experimentos de alta energía que por entonces realizaba el Gran Colisionador de Hadrones (LHC) en Suiza. La proximidad geográfica con instalaciones como el proyecto HAARP alimentó otras teorías.\n\nLa explicación, sin embargo, llegó con rapidez y fue inequívoca. El 10 de diciembre de 2009, apenas un día después, el Ministerio de Defensa de Rusia reconoció que había realizado una prueba del misil balístico intercontinental lanzado desde submarino RSM-56 Bulava, y que esta había fracasado. Según el comunicado, las dos primeras etapas funcionaron con normalidad, pero la tercera sufrió un fallo técnico: el motor se desvió y expulsó su combustible lateralmente, lo que hizo que el misil entrara en una rotación descontrolada. A gran altitud —por encima de los 100 kilómetros, ya en el límite con el espacio— las partículas de combustible venteado fueron iluminadas por el Sol, que aún estaba bajo el horizonte para los observadores en tierra; el giro del misil distribuyó ese combustible reflectante en la forma de espiral perfecta que se vio desde el suelo. El haz azul correspondía a la fase propulsiva visible del cohete fallido. La ausencia de arrastre atmosférico aparente confirmaba que el fenómeno ocurría en la alta atmósfera, coherente con la trayectoria del misil.",
+  "whatHappened_en": "On the morning of 9 December 2009, still dark in the far north, thousands of people in Norway witnessed one of the most spectacular and photographed light phenomena of recent history. From the sky emerged a blue beam of light rising in a curve and, at its end, a large greyish-white spiral of almost perfect geometry began to turn, expanding to cover an enormous portion of the firmament. The spectacle was visible across the entire Trøndelag region, in the three northern counties of Norway and even from northern Sweden, and lasted about ten minutes before fading, leaving for a moment a dark ring where the spiral had been.\n\nThe sharpness and rarity of the shape —a perfect mathematical spiral in the night sky— immediately set off an avalanche of speculation. Before any official confirmation, hypotheses of every kind circulated: anomalous auroras, wormholes, extraterrestrial intervention, and even a supposed connection to the high-energy experiments the Large Hadron Collider (LHC) was then running in Switzerland. Geographic proximity to facilities like the HAARP project fed other theories.\n\nThe explanation, however, came quickly and was unequivocal. On 10 December 2009, barely a day later, Russia's Defence Ministry acknowledged that it had conducted a test of the submarine-launched intercontinental ballistic missile RSM-56 Bulava, and that it had failed. According to the statement, the first two stages worked normally, but the third suffered a technical malfunction: the engine deflected and expelled its fuel sideways, sending the missile into an uncontrolled spin. At high altitude —above 100 kilometres, already at the edge of space— the vented fuel particles were lit by the Sun, which was still below the horizon for ground observers; the missile's spin distributed that reflective fuel into the perfect spiral seen from the ground. The blue beam corresponded to the failed rocket's visible propulsive phase. The apparent absence of atmospheric drag confirmed the phenomenon occurred in the upper atmosphere, consistent with the missile's trajectory.",
+  "whyMatters": "La espiral noruega importa al corpus precisamente porque está resuelta, y por eso funciona como ancla de calibración: es el ejemplo de manual de un fenómeno aéreo extraordinario —visualmente imposible, masivo, fotografiado por miles— que tenía, sin embargo, una explicación humana mundana y verificable, confirmada por la propia fuente en menos de 24 horas. Su lugar no es el de un enigma sino el de un patrón de referencia contra el que medir otros casos: cuando algo parece desafiar toda física conocida, la espiral recuerda que una causa prosaica (un misil fallido, combustible girando iluminado por el Sol) puede producir exactamente esa impresión de imposibilidad.\n\nPor eso su posterior es casi enteramente mundano/misid, con apenas una traza de indeterminación que no refleja duda real sobre la causa —el reconocimiento ruso la cierra— sino la prudencia de no asignar nunca un 100% absoluto. El caso es doblemente útil para el corpus: como complemento de la 'espiral china' de 1981 (otro reingreso/lanzamiento mal interpretado), establece que las espirales celestes son una clase morfológica con explicación tecnológica conocida, y desactiva de antemano la lectura exótica de futuros eventos similares. En un corpus que se toma en serio la posibilidad de lo anómalo, la espiral noruega cumple la función imprescindible de marcar dónde NO hay misterio: la disciplina de reconocer un caso resuelto con la misma firmeza con que se señala uno abierto.",
+  "whyMatters_en": "The Norwegian spiral matters to the corpus precisely because it is resolved, and so functions as a calibration anchor: it is the textbook example of an extraordinary aerial phenomenon —visually impossible, massive, photographed by thousands— that nonetheless had a mundane, verifiable human explanation, confirmed by the source itself within 24 hours. Its place is not that of a puzzle but of a reference pattern against which to measure other cases: when something seems to defy all known physics, the spiral recalls that a prosaic cause (a failed missile, spinning fuel lit by the Sun) can produce exactly that impression of impossibility.\n\nThat is why its posterior is almost entirely mundane/misid, with barely a trace of indeterminacy that reflects not real doubt about the cause —the Russian acknowledgment closes it— but the prudence of never assigning an absolute 100%. The case is doubly useful for the corpus: as a complement to the 1981 'China spiral' (another misinterpreted reentry/launch), it establishes that celestial spirals are a morphological class with a known technological explanation, and pre-empts the exotic reading of future similar events. In a corpus that takes the possibility of the anomalous seriously, the Norwegian spiral fulfills the indispensable role of marking where there is NO mystery: the discipline of acknowledging a resolved case with the same firmness with which one flags an open one.",
+  "evidence": [
+    "Centenares de fotografías y vídeos de la espiral sobre el norte de Noruega, 9 de diciembre de 2009, visible ~10 minutos",
+    "Geometría de espiral casi perfecta con haz azul ascendente, visible desde Trøndelag, el norte de Noruega y el norte de Suecia",
+    "Reconocimiento oficial del Ministerio de Defensa ruso (10 dic 2009) de una prueba fallida del misil Bulava",
+    "Mecanismo: fallo de la tercera etapa → giro descontrolado → combustible venteado iluminado por el Sol a >100 km de altitud",
+    "Ausencia de arrastre atmosférico aparente, coherente con un fenómeno en la alta atmósfera"
+  ],
+  "evidence_en": [
+    "Hundreds of photographs and videos of the spiral over northern Norway, 9 December 2009, visible for ~10 minutes",
+    "Almost perfect spiral geometry with a rising blue beam, visible from Trøndelag, northern Norway and northern Sweden",
+    "Official acknowledgment by the Russian Defence Ministry (10 Dec 2009) of a failed Bulava missile test",
+    "Mechanism: third-stage failure → uncontrolled spin → vented fuel lit by the Sun above 100 km altitude",
+    "Apparent absence of atmospheric drag, consistent with an upper-atmosphere phenomenon"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — 2009 Norwegian spiral anomaly",
+      "url": "https://en.wikipedia.org/wiki/2009_Norwegian_spiral_anomaly"
+    },
+    {
+      "name": "NBC News — 'Russia admits missile caused UFO lights'",
+      "url": "https://www.nbcnews.com/id/wbna34362960"
+    },
+    {
+      "name": "Christian Science Monitor — 'Norway spiral: A rocket scientist explains the mystery'",
+      "url": "https://www.csmonitor.com/World/Global-News/2009/1210/norway-spiral-a-rocket-scientist-explains-the-mystery"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.9,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.0,
+    "indet": 0.04
+  }
+}
