@@ -38,13 +38,12 @@ function redirect(path: string): string | undefined {
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
-  const [loading, setLoading] = useState(true);
+  // Sin Supabase no hay sesión que cargar: arranca en `false` para no
+  // tener que llamar setLoading síncronamente dentro del efecto.
+  const [loading, setLoading] = useState<boolean>(() => Boolean(supabase));
 
   useEffect(() => {
-    if (!supabase) {
-      setLoading(false);
-      return;
-    }
+    if (!supabase) return;
     supabase.auth.getSession().then(({ data }) => {
       setSession(data.session);
       setUser(data.session?.user ?? null);

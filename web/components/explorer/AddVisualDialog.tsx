@@ -100,10 +100,14 @@ export function AddVisualDialog({
   const allowedAggs = getMeasure(measure)?.aggs ?? ["count"];
   const canCumulate = kind === "chart" && (chartType === "line" || chartType === "area");
 
-  useEffect(() => {
+  // Al cambiar la medida, si la agregación actual ya no es válida, volver a la
+  // primera permitida. Ajuste de estado durante el render (patrón soportado por
+  // React) en lugar de un efecto con setState síncrono.
+  const [prevMeasure, setPrevMeasure] = useState(measure);
+  if (prevMeasure !== measure) {
+    setPrevMeasure(measure);
     if (!allowedAggs.includes(agg)) setAgg(allowedAggs[0]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [measure]);
+  }
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
