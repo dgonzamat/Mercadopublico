@@ -1,0 +1,66 @@
+{
+  "id": "chelyabinsk-2013",
+  "num": 252,
+  "name": "Meteoro de Cheliábinsk",
+  "name_en": "Chelyabinsk Meteor",
+  "year_start": 2013,
+  "country": "RU",
+  "country_name": "Rusia",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 55.15,
+    "lng": 61.43,
+    "place": "Cheliábinsk, Rusia",
+    "place_en": "Chelyabinsk, Russia"
+  },
+  "tier": "A",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 6,
+  "summary": "El 15 de febrero de 2013, un meteoroide de unos 20 metros entró en la atmósfera sobre Cheliábinsk (Rusia) y explotó a ~30 km de altura con una energía de 20-30 bombas de Hiroshima. La onda expansiva rompió ventanas en seis ciudades e hirió a unas 1.500 personas. Fue el primer impacto de esa magnitud documentado masivamente en vídeo (dashcams).",
+  "summary_en": "On 15 February 2013, a meteoroid about 20 metres across entered the atmosphere over Chelyabinsk (Russia) and exploded at ~30 km altitude with the energy of 20-30 Hiroshima bombs. The shock wave broke windows in six cities and injured some 1,500 people. It was the first impact of that magnitude documented massively on video (dashcams).",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La mañana del 15 de febrero de 2013, poco después del amanecer, un objeto extraordinariamente brillante cruzó el cielo del óblast de Cheliábinsk, en los Urales rusos, dejando una larga estela de humo. Se trataba de un meteoroide de aproximadamente 20 metros de diámetro que entró en la atmósfera terrestre a unos 19 kilómetros por segundo. A una altura cercana a los 30 kilómetros sobre la superficie, la enorme presión y el calor lo hicieron estallar en un airburst —una explosión en el aire— que liberó una energía estimada entre 20 y 30 veces la de la bomba atómica de Hiroshima.\n\nA diferencia de un impacto directo contra el suelo, el estallido en altura proyectó una potentísima onda de choque que tardó unos minutos en alcanzar el suelo. Esa onda rompió ventanas y derribó partes de edificios en seis ciudades rusas; más de 7.300 edificios resultaron afectados. Unas 1.500 personas —según algunas fuentes 1.613— buscaron asistencia médica, en su gran mayoría por cortes producidos por los cristales rotos al asomarse a las ventanas tras ver el destello; 112 fueron hospitalizadas, dos en estado grave. No hubo víctimas mortales, en buena medida por la altura del estallido.\n\nLo que hace de Cheliábinsk un caso excepcional para la ciencia es su documentación. Fue el primer impacto de esta magnitud registrado de forma masiva en vídeo: decenas de cámaras de salpicadero (dashcams), muy comunes en Rusia, y cámaras de seguridad y de tráfico captaron la entrada y el estallido desde múltiples ángulos. Los investigadores calibraron ese metraje tomando fotografías del fondo estelar en los mismos lugares y midieron los tiempos de llegada del sonido y la onda a partir de 34 cámaras de tráfico sincronizadas con un servidor, reconstruyendo con precisión la trayectoria, la altura del estallido y la deposición de energía. Fragmentos del meteorito se recuperaron en tierra, incluido uno de gran tamaño extraído del fondo del lago Chebarkul. El análisis confirmó que se trataba de un asteroide condrítico ordinario, sin relación con ningún satélite o cohete y sin advertencia previa, ya que su órbita lo había traído desde la dirección del Sol, oculto al seguimiento astronómico.",
+  "whatHappened_en": "On the morning of 15 February 2013, shortly after dawn, an extraordinarily bright object crossed the sky over Chelyabinsk Oblast, in the Russian Urals, leaving a long smoke trail. It was a meteoroid roughly 20 metres in diameter that entered Earth's atmosphere at about 19 kilometres per second. At an altitude near 30 kilometres above the surface, the enormous pressure and heat made it explode in an airburst —an explosion in the air— releasing energy estimated at 20 to 30 times that of the Hiroshima atomic bomb.\n\nUnlike a direct ground impact, the high-altitude blast projected a very powerful shock wave that took a few minutes to reach the ground. That wave broke windows and knocked down parts of buildings in six Russian cities; more than 7,300 buildings were affected. Some 1,500 people —by some sources 1,613— sought medical attention, the great majority for cuts from glass shattered as they leaned toward windows after seeing the flash; 112 were hospitalized, two in serious condition. There were no fatalities, largely because of the height of the blast.\n\nWhat makes Chelyabinsk an exceptional case for science is its documentation. It was the first impact of this magnitude recorded massively on video: dozens of dash-cams, very common in Russia, plus security and traffic cameras captured the entry and the blast from multiple angles. Researchers calibrated that footage by taking star-background photographs at the same sites and measured the arrival times of sound and the wave from 34 traffic cameras synchronized with a server, accurately reconstructing the trajectory, the blast altitude and the energy deposition. Meteorite fragments were recovered on the ground, including a large one extracted from the bottom of Lake Chebarkul. Analysis confirmed it was an ordinary chondritic asteroid, unrelated to any satellite or rocket and without prior warning, since its orbit had brought it from the direction of the Sun, hidden from astronomical tracking.",
+  "whyMatters": "Cheliábinsk importa al corpus precisamente porque está resuelto al máximo nivel de certeza posible, y por eso es uno de sus anclajes de calibración más valiosos: un evento aéreo espectacular —un destello más brillante que el Sol, una explosión de decenas de kilotones, ondas de choque que hirieron a mil quinientas personas— con una explicación natural completa, cuantitativa y reconstruida a partir de evidencia física y videográfica abundante. Es el contraejemplo perfecto frente a la tentación de leer todo fenómeno aéreo extraordinario como anómalo: aquí la ciencia recuperó los fragmentos, calculó la órbita y cerró el caso.\n\nPor eso su posterior es casi enteramente mundano/natural, con apenas una traza de indeterminación que no refleja duda real —el meteorito está en los museos— sino la prudencia de no asignar nunca un 100% absoluto. Su utilidad en el corpus es doble. Primero, calibra la magnitud: muestra qué aspecto tiene en el cielo y en los sensores un objeto natural de 20 metros, un patrón contra el que contrastar reportes de 'bólidos' o 'explosiones' inexplicadas. Segundo, ilustra un punto de seguridad real: Cheliábinsk llegó sin aviso desde la dirección del Sol, un ángulo ciego para los telescopios, lo que recalibró al alza la estimación del riesgo de impactos de ese tamaño. En el corpus, Cheliábinsk es el recordatorio de que el cielo produce, de tanto en tanto, espectáculos genuinamente apocalípticos que son, sin embargo, perfectamente naturales.",
+  "whyMatters_en": "Chelyabinsk matters to the corpus precisely because it is resolved at the highest possible level of certainty, and so it is one of its most valuable calibration anchors: a spectacular aerial event —a flash brighter than the Sun, an explosion of tens of kilotons, shock waves that injured fifteen hundred people— with a complete, quantitative natural explanation reconstructed from abundant physical and video evidence. It is the perfect counterexample to the temptation to read every extraordinary aerial phenomenon as anomalous: here science recovered the fragments, computed the orbit and closed the case.\n\nThat is why its posterior is almost entirely mundane/natural, with barely a trace of indeterminacy that reflects not real doubt —the meteorite is in museums— but the prudence of never assigning an absolute 100%. Its usefulness in the corpus is twofold. First, it calibrates magnitude: it shows what a natural 20-metre object looks like in the sky and on sensors, a pattern against which to contrast reports of unexplained 'fireballs' or 'explosions'. Second, it illustrates a real safety point: Chelyabinsk arrived without warning from the direction of the Sun, a blind angle for telescopes, which revised upward the estimated risk of impacts of that size. In the corpus, Chelyabinsk is the reminder that the sky occasionally produces genuinely apocalyptic spectacles that are, nonetheless, perfectly natural.",
+  "evidence": [
+    "Decenas de vídeos de dashcams y cámaras de seguridad/tráfico de la entrada y el estallido (15 feb 2013)",
+    "Reconstrucción científica de la trayectoria y la altura del airburst (~30 km) a partir de 34 cámaras de tráfico sincronizadas",
+    "Energía estimada en 20-30 veces la bomba de Hiroshima; meteoroide de ~20 m",
+    "~1.500 heridos (mayoría por cristales) y 7.300+ edificios afectados en seis ciudades",
+    "Fragmentos del meteorito recuperados, incluido uno grande extraído del lago Chebarkul",
+    "Análisis que confirma un asteroide condrítico ordinario, llegado desde la dirección del Sol sin aviso"
+  ],
+  "evidence_en": [
+    "Dozens of dash-cam and security/traffic camera videos of the entry and blast (15 Feb 2013)",
+    "Scientific reconstruction of the trajectory and airburst altitude (~30 km) from 34 synchronized traffic cameras",
+    "Energy estimated at 20-30 times the Hiroshima bomb; meteoroid ~20 m",
+    "~1,500 injured (mostly from glass) and 7,300+ buildings affected in six cities",
+    "Recovered meteorite fragments, including a large one extracted from Lake Chebarkul",
+    "Analysis confirming an ordinary chondritic asteroid, arriving from the direction of the Sun without warning"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Chelyabinsk meteor",
+      "url": "https://en.wikipedia.org/wiki/Chelyabinsk_meteor"
+    },
+    {
+      "name": "EarthSky — 'Chelyabinsk meteor: February 15, 2013'",
+      "url": "https://earthsky.org/space/chelyabinsk-meteor-exploded-over-russia-feb-15-2013/"
+    },
+    {
+      "name": "Popova et al. — 'Chelyabinsk Airburst, Damage Assessment, Meteorite Recovery, and Characterization' (Science, 2013)",
+      "url": "https://www.researchgate.net/publication/260122967_Chelyabinsk_meteoroid_entry_and_airburst_damage"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.95,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.0,
+    "indet": 0.04
+  }
+}

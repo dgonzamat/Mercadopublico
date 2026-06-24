@@ -1,0 +1,66 @@
+{
+  "id": "tunguska-1908",
+  "num": 253,
+  "name": "Evento de Tunguska",
+  "name_en": "Tunguska Event",
+  "year_start": 1908,
+  "country": "RU",
+  "country_name": "Rusia (Imperio ruso)",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 60.886,
+    "lng": 101.894,
+    "place": "Río Podkámennaya Tunguska, Siberia",
+    "place_en": "Podkamennaya Tunguska River, Siberia"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 8,
+  "summary": "El 30 de junio de 1908, una colosal explosión en el aire sobre el río Tunguska, en la remota Siberia, derribó unos 80 millones de árboles en unos 2.000 km² sin dejar cráter. El consenso científico lo atribuye al estallido atmosférico de un asteroide o cometa pequeño. Décadas después, una novela soviética de 1946 popularizó la idea de una nave extraterrestre, que la ciencia descartó.",
+  "summary_en": "On 30 June 1908, a colossal explosion in the air over the Tunguska River, in remote Siberia, flattened some 80 million trees across about 2,000 km² without leaving a crater. The scientific consensus attributes it to the atmospheric burst of a small asteroid or comet. Decades later, a 1946 Soviet novel popularized the idea of an extraterrestrial craft, which science discarded.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En la mañana del 30 de junio de 1908, sobre la cuenca del río Podkámennaya Tunguska, en una región casi deshabitada de la Siberia central, se produjo la mayor explosión de origen cósmico registrada en la historia. Testigos lejanos describieron una columna de luz azulada casi tan brillante como el Sol, seguida de un destello, una onda de calor y una serie de detonaciones que se oyeron a cientos de kilómetros. La onda expansiva derribó alrededor de 80 millones de árboles en una superficie de unos 2.000 kilómetros cuadrados, disponiéndolos radialmente en torno a un epicentro. Curiosamente, en el centro mismo algunos árboles quedaron en pie pero despojados de ramas y corteza —el llamado 'bosque de postes de telégrafo'—, un patrón que indica que la fuerza llegó desde arriba, casi vertical.\n\nLa lejanía y el caos político de la Rusia de inicios del siglo XX retrasaron las expediciones científicas. La primera importante, liderada por Leonid Kulik, no llegó a la zona hasta 1927. Para sorpresa de los investigadores, no hallaron ningún cráter de impacto ni un meteorito principal: solo el vasto bosque arrasado. Esa ausencia de cráter alimentó durante décadas el misterio y un abanico de hipótesis exóticas.\n\nEl consenso científico moderno es, sin embargo, sólido: el evento fue un airburst, la desintegración explosiva de un cuerpo cósmico —un asteroide pétreo pequeño, de algunas decenas de metros, o un fragmento cometario— a una altura de entre 5 y 10 kilómetros. La explosión en altura explica a la vez la devastación masiva y la falta de cráter, así como el patrón del bosque de postes. La presencia de material rico en elementos propios de asteroides rocosos apoya la hipótesis del asteroide, mientras que las nubes noctilucentes observadas en Europa tras el evento se han usado como argumento para un cometa rico en agua. La lectura no humana —la idea de que fue la explosión del motor nuclear de una nave marciana— no surgió de la investigación, sino de un relato de ciencia ficción del escritor soviético Alexander Kazantsev en 1946; pocos años después, el respaldo científico a la teoría del airburst limitó esa especulación, que hoy se conserva solo como curiosidad histórica del folclore ovni.",
+  "whatHappened_en": "On the morning of 30 June 1908, over the basin of the Podkamennaya Tunguska River, in an almost uninhabited region of central Siberia, the largest explosion of cosmic origin recorded in history occurred. Distant witnesses described a column of bluish light nearly as bright as the Sun, followed by a flash, a wave of heat and a series of detonations heard hundreds of kilometres away. The shock wave flattened around 80 million trees across some 2,000 square kilometres, arranging them radially around an epicenter. Curiously, at the very center some trees were left standing but stripped of branches and bark —the so-called 'telegraph pole forest'— a pattern indicating the force came from above, almost vertically.\n\nThe remoteness and the political chaos of early-20th-century Russia delayed scientific expeditions. The first major one, led by Leonid Kulik, did not reach the area until 1927. To the investigators' surprise, they found no impact crater and no main meteorite: only the vast flattened forest. That absence of a crater fed the mystery for decades and a range of exotic hypotheses.\n\nThe modern scientific consensus is, however, solid: the event was an airburst, the explosive disintegration of a cosmic body —a small stony asteroid, some tens of metres across, or a cometary fragment— at an altitude of between 5 and 10 kilometres. The high-altitude explosion explains both the massive devastation and the lack of a crater, as well as the telegraph-pole forest pattern. The presence of material rich in elements typical of rocky asteroids supports the asteroid hypothesis, while the noctilucent clouds observed over Europe after the event have been used as an argument for a water-rich comet. The non-human reading —the idea that it was the explosion of a Martian craft's nuclear engine— did not arise from the research, but from a 1946 science-fiction story by the Soviet writer Alexander Kazantsev; a few years later, scientific support for the airburst theory limited that speculation, which today survives only as a historical curiosity of UFO folklore.",
+  "whyMatters": "Tunguska importa al corpus como el caso histórico que ilustra con más claridad cómo una ausencia —la falta de un cráter— puede generar décadas de especulación exótica sobre un fenómeno que, bien entendido, es enteramente natural. Su valor es metodológico y pedagógico: muestra que un rasgo aparentemente anómalo (devastación masiva sin punto de impacto) tiene una explicación física precisa (un estallido en el aire) que el sentido común inicial no anticipaba, y que la hipótesis de la nave extraterrestre no nació de ningún dato de campo, sino de una obra de ficción que la cultura popular convirtió en 'teoría'. Rastrear esa genealogía —de la ciencia ficción al mito 'ovni'— es justo el tipo de higiene narrativa que el corpus practica.\n\nPor eso el posterior carga abrumadoramente sobre la narrativa mundano/natural. El airburst de un asteroide o cometa pequeño explica todos los rasgos observados: el destello, las detonaciones, el patrón radial de árboles caídos y el bosque de postes central. La masa de indeterminación que se conserva no concede crédito a lo no humano, sino que recoge la genuina —y acotada— discusión científica que aún persiste sobre la naturaleza exacta del cuerpo (asteroide pétreo frente a fragmento cometario) y el hecho de que no se recuperara un meteorito principal. La traza mínima asignada a lo no humano abierto es un residuo histórico, no una hipótesis viva. En el corpus, Tunguska es el ancla que enseña que 'inexplicado en su momento' no es 'inexplicable', y que el mayor impacto cósmico de la historia documentada es, también, uno de sus casos mejor resueltos.",
+  "whyMatters_en": "Tunguska matters to the corpus as the historical case that most clearly illustrates how an absence —the lack of a crater— can generate decades of exotic speculation about a phenomenon that, properly understood, is entirely natural. Its value is methodological and pedagogical: it shows that an apparently anomalous feature (massive devastation with no impact point) has a precise physical explanation (an airburst) that initial common sense did not anticipate, and that the extraterrestrial-craft hypothesis arose from no field datum but from a work of fiction that popular culture turned into a 'theory'. Tracing that genealogy —from science fiction to the 'UFO' myth— is exactly the kind of narrative hygiene the corpus practices.\n\nThat is why the posterior loads overwhelmingly onto the mundane/natural narrative. The airburst of a small asteroid or comet explains all the observed features: the flash, the detonations, the radial pattern of fallen trees and the central pole forest. The indeterminacy mass retained grants no credit to the non-human, but captures the genuine —and bounded— scientific discussion that still persists about the exact nature of the body (stony asteroid versus cometary fragment) and the fact that no main meteorite was recovered. The minimal trace assigned to the non-human open is a historical residue, not a live hypothesis. In the corpus, Tunguska is the anchor that teaches that 'unexplained at the time' is not 'inexplicable', and that the largest cosmic impact in documented history is also one of its best-resolved cases.",
+  "evidence": [
+    "~80 millones de árboles derribados en ~2.000 km² en un patrón radial (30 jun 1908)",
+    "'Bosque de postes de telégrafo' central: árboles en pie sin ramas, indicando fuerza desde arriba (airburst)",
+    "Testimonios de un destello casi tan brillante como el Sol y detonaciones audibles a cientos de km",
+    "Expedición de Leonid Kulik (1927): no halló cráter ni meteorito principal",
+    "Material con elementos propios de asteroides rocosos; nubes noctilucentes en Europa tras el evento (argumento cometario)",
+    "Origen de la hipótesis 'ovni': relato de ciencia ficción de Alexander Kazantsev (1946), no datos de campo"
+  ],
+  "evidence_en": [
+    "~80 million trees flattened across ~2,000 km² in a radial pattern (30 Jun 1908)",
+    "Central 'telegraph pole forest': trees left standing without branches, indicating force from above (airburst)",
+    "Testimony of a flash nearly as bright as the Sun and detonations audible hundreds of km away",
+    "Leonid Kulik's expedition (1927): found no crater or main meteorite",
+    "Material with elements typical of rocky asteroids; noctilucent clouds over Europe after the event (cometary argument)",
+    "Origin of the 'UFO' hypothesis: science-fiction story by Alexander Kazantsev (1946), not field data"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Tunguska event",
+      "url": "https://en.wikipedia.org/wiki/Tunguska_event"
+    },
+    {
+      "name": "Scientific American — 'The Tunguska Mystery, 100 Years Later'",
+      "url": "https://www.scientificamerican.com/article/the-tunguska-mystery-100-years-later/"
+    },
+    {
+      "name": "Space.com — 'Russian Alien Spaceship Claims Raise Eyebrows, Skepticism' (origen Kazantsev)",
+      "url": "https://www.space.com/250-russian-alien-spaceship-claims-raise-eyebrows-skepticism.html"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.9,
+    "humana_clasificada": 0.0,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.02,
+    "indet": 0.08
+  }
+}
