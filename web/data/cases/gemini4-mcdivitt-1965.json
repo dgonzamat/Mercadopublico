@@ -1,0 +1,66 @@
+{
+  "id": "gemini4-mcdivitt-1965",
+  "num": 234,
+  "name": "Gemini 4 · McDivitt",
+  "name_en": "Gemini 4 · McDivitt",
+  "year_start": 1965,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 28.5,
+    "lng": -80.6,
+    "place": "Órbita terrestre baja · misión Gemini 4 (NASA)",
+    "place_en": "Low Earth orbit · Gemini 4 mission (NASA)"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 34,
+  "summary": "En junio de 1965, durante la misión Gemini 4, el astronauta James McDivitt observó y trató de fotografiar un objeto cilíndrico blanco con un 'brazo' que salía de un lado, mientras la cápsula derivaba sin instrumentos sobre el Pacífico. El Informe Condon lo listó entre las pocas observaciones de astronautas 'no explicadas adecuadamente'. McDivitt siempre negó que fuera el cohete Titan II.",
+  "summary_en": "In June 1965, during the Gemini 4 mission, astronaut James McDivitt observed and tried to photograph a white cylindrical object with an 'arm' protruding from one side, while the capsule drifted with its instruments off over the Pacific. The Condon Report listed it among the few astronaut observations 'not adequately explained'. McDivitt always denied it was the Titan II rocket.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La misión Gemini 4 (3-7 de junio de 1965), tripulada por James McDivitt y Edward White, es recordada sobre todo por el primer 'paseo espacial' estadounidense, el de White. Pero durante el vuelo McDivitt protagonizó además una de las observaciones astronáuticas más discutidas de la era espacial. En un momento en que la cápsula derivaba 'a la deriva' —con los motores de control apagados y buena parte de la instrumentación desconectada— y mientras White dormía, McDivitt vio aparecer en la ventanilla un objeto que no supo identificar.\n\nSu descripción fue precisa y se mantuvo constante a lo largo de los años: un objeto blanco, de forma 'definitivamente cilíndrica', con 'un brazo largo que sobresalía por un lado'. En una de sus formulaciones más citadas lo comparó con 'una lata de cerveza con un lápiz saliendo de ella en ángulo', y estimó que su longitud era unas tres veces su diámetro. McDivitt intentó documentarlo: tomó fotografías y trató de maniobrar, pero el objeto se perdió cuando el Sol incidió en la ventanilla. Las imágenes que la NASA difundió después como candidatas a 'la foto de McDivitt' fueron rechazadas por el propio astronauta, que dijo que no correspondían a lo que había visto —probablemente eran reflejos o tomas de otra parte del vuelo—, de modo que el registro fotográfico del objeto real nunca se confirmó.\n\nEl caso adquirió un peso inusual porque el Informe Condon (1968), el estudio financiado por la Fuerza Aérea y dirigido por Edward Condon —cuya conclusión general fue escéptica—, lo incluyó explícitamente entre las tres observaciones de astronautas en órbita que, en palabras del redactor, 'no han sido explicadas adecuadamente', citando la 'observación de un objeto cilíndrico con una protuberancia' de McDivitt en Gemini 4. La hipótesis escéptica más fuerte, defendida después por el especialista en vuelo espacial James Oberg, es que McDivitt vio un satélite o una etapa de cohete —posiblemente el segundo satélite Pegasus o la propia etapa Titan II— deformado por reflejos en la ventanilla rayada de la cápsula. McDivitt, por su parte, siempre rechazó específicamente que fuera el Titan II que lo había puesto en órbita, no presentó ningún informe de 'ovni' y se negó a especular sobre la naturaleza del objeto: dijo simplemente que no sabía qué era.",
+  "whatHappened_en": "The Gemini 4 mission (3-7 June 1965), crewed by James McDivitt and Edward White, is remembered above all for the first American 'spacewalk', White's. But during the flight McDivitt also had one of the most debated astronaut observations of the space age. At a moment when the capsule was drifting —with its control engines off and much of the instrumentation disconnected— and while White slept, McDivitt saw an object he could not identify appear in the window.\n\nHis description was precise and stayed constant over the years: a white object, 'definitely cylindrical' in shape, with 'a long arm that stuck out on one side'. In one of his most-cited formulations he compared it to 'a beer can with a pencil sticking out of it at an angle', and estimated its length at about three times its diameter. McDivitt tried to document it: he took photographs and attempted to maneuver, but the object was lost when the Sun struck the window. The images NASA later circulated as candidates for 'the McDivitt photo' were rejected by the astronaut himself, who said they did not match what he had seen —probably reflections or shots from another part of the flight— so a photographic record of the real object was never confirmed.\n\nThe case took on unusual weight because the Condon Report (1968), the Air Force-funded study directed by Edward Condon —whose overall conclusion was skeptical— explicitly included it among the three in-orbit astronaut observations that, in the writer's words, 'have not been adequately explained', citing McDivitt's 'observation of a cylindrical object with a protuberance' on Gemini 4. The strongest skeptical hypothesis, later argued by spaceflight specialist James Oberg, is that McDivitt saw a satellite or rocket stage —possibly the second Pegasus satellite or the Titan II stage itself— distorted by reflections in the capsule's scratched window. McDivitt, for his part, always specifically rejected that it was the Titan II that had placed him in orbit, filed no 'UFO' report, and declined to speculate on the object's nature: he simply said he did not know what it was.",
+  "whyMatters": "Gemini 4 importa porque es uno de los pocos casos de testigo astronáutico que un estudio oficial escéptico —el Informe Condon— se vio obligado a clasificar como no explicado, y eso lo distingue de la mayoría de avistamientos espaciales del corpus, que tienen explicaciones cerradas (booster acompañante, 'luciérnagas' de hielo). Su valor analítico está en la calidad del testigo y en la postura del propio McDivitt: un piloto de pruebas e ingeniero entrenado, que describió una geometría concreta y consistente durante décadas, que rechazó las fotos espurias que se le atribuyeron y que se negó por igual a llamarlo 'ovni' o a explicarlo. Es el modelo del testigo que no contamina el dato con interpretación.\n\nAun así, la honestidad obliga a no sobreleer el sello de Condon: 'no explicado adecuadamente' no es 'inexplicable'. Por eso el posterior reparte su masa entre la narrativa mundano/misid y una indeterminación alta, sin cargar sobre lo no humano. La hipótesis de un satélite o etapa de cohete —Pegasus B, u otro objeto orbital— deformado por reflejos en una ventanilla rayada es sólida y específica, y explica tanto la forma cilíndrica como el 'brazo' (un panel o antena) sin invocar nada exótico; el propio entorno orbital de 1965, ya poblado de hardware, la hace plausible. Lo que sostiene la indeterminación es que McDivitt descartó el candidato más obvio (su Titan II) y que nunca se confirmó una correlación orbital concluyente. Gemini 4 es, en el corpus, el caso espacial que marca el límite superior de lo que un testigo entrenado puede legar sin cierre: una observación seria, irreducida a relleno, que sigue abierta sin por ello apuntar a una nave.",
+  "whyMatters_en": "Gemini 4 matters because it is one of the few astronaut-witness cases that a skeptical official study —the Condon Report— was compelled to classify as unexplained, and that sets it apart from most of the corpus's space sightings, which have closed explanations (companion booster, ice 'fireflies'). Its analytical value lies in the quality of the witness and in McDivitt's own stance: a trained test pilot and engineer, who described a concrete, consistent geometry over decades, who rejected the spurious photos attributed to him, and who equally refused to call it a 'UFO' or to explain it. He is the model of the witness who does not contaminate the datum with interpretation.\n\nEven so, honesty requires not over-reading the Condon stamp: 'not adequately explained' is not 'inexplicable'. That is why the posterior splits its mass between the mundane/misid narrative and a high indeterminacy, without loading onto the non-human. The hypothesis of a satellite or rocket stage —Pegasus B, or another orbital object— distorted by reflections in a scratched window is solid and specific, and explains both the cylindrical shape and the 'arm' (a panel or antenna) without invoking anything exotic; the 1965 orbital environment, already populated with hardware, makes it plausible. What sustains indeterminacy is that McDivitt ruled out the most obvious candidate (his own Titan II) and that a conclusive orbital correlation was never confirmed. Gemini 4 is, in the corpus, the space case that marks the upper bound of what a trained witness can bequeath without closure: a serious observation, irreducible to filler, that remains open without thereby pointing to a craft.",
+  "evidence": [
+    "Testimonio consistente de James McDivitt: objeto blanco cilíndrico con un 'brazo' lateral, ~3 veces más largo que su diámetro, durante deriva sin instrumentos (junio 1965)",
+    "Intento de fotografiarlo; objeto perdido al incidir el Sol en la ventanilla",
+    "Rechazo del propio McDivitt a las fotos que la NASA difundió como 'la foto de McDivitt' (no correspondían a lo visto)",
+    "Informe Condon (1968): lista la observación de Gemini 4 entre las de astronautas 'no explicadas adecuadamente'",
+    "Negativa explícita de McDivitt a que fuera el cohete Titan II",
+    "Hipótesis escéptica de James Oberg: satélite/etapa de cohete (p. ej. Pegasus B) deformado por reflejos en ventanilla rayada"
+  ],
+  "evidence_en": [
+    "Consistent testimony from James McDivitt: white cylindrical object with a lateral 'arm', ~3 times longer than its diameter, during instrument-off drift (June 1965)",
+    "Attempt to photograph it; object lost when the Sun struck the window",
+    "McDivitt's own rejection of the photos NASA circulated as 'the McDivitt photo' (they did not match what he saw)",
+    "Condon Report (1968): lists the Gemini 4 observation among astronaut sightings 'not adequately explained'",
+    "McDivitt's explicit denial that it was the Titan II rocket",
+    "James Oberg's skeptical hypothesis: satellite/rocket stage (e.g. Pegasus B) distorted by reflections in a scratched window"
+  ],
+  "sources": [
+    {
+      "name": "Condon Report — Scientific Study of Unidentified Flying Objects (1968), sección sobre observaciones de astronautas",
+      "url": "https://en.wikipedia.org/wiki/Condon_Committee"
+    },
+    {
+      "name": "UFO Evidence — 'Gemini 4 / Astronaut James McDivitt sighting of cylindrical object in space'",
+      "url": "http://www.ufoevidence.org/cases/case977.htm"
+    },
+    {
+      "name": "James Oberg — 'The Gemini 4 UFO' (análisis escéptico)",
+      "url": "http://www.ufoevidence.org/cases/case978.htm"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.05,
+    "indet": 0.38
+  }
+}

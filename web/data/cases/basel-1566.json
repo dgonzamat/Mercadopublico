@@ -1,0 +1,68 @@
+{
+  "id": "basel-1566",
+  "num": 236,
+  "name": "Fenómeno celeste · Basilea",
+  "name_en": "Celestial Phenomenon · Basel",
+  "year_start": 1566,
+  "country": "CH",
+  "country_name": "Suiza",
+  "flag": "🇨🇭",
+  "location": {
+    "lat": 47.5596,
+    "lng": 7.5886,
+    "place": "Basilea, Confederación Suiza",
+    "place_en": "Basel, Swiss Confederation"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 22,
+  "summary": "Al amanecer del 7 de agosto de 1566, numerosos habitantes de Basilea (Suiza) dijeron ver grandes esferas negras que cruzaban veloces el cielo frente al sol, 'como si combatieran', algunas tornándose rojas y consumiéndose. El hecho se sumó a otros prodigios solares y lunares de ese verano. El impresor Samuel Apiarius y el artista Samuel Coccius lo fijaron en una hoja volante con grabado.",
+  "summary_en": "At dawn on 7 August 1566, many inhabitants of Basel (Switzerland) reported large black spheres crossing the sky swiftly in front of the sun, 'as if fighting', some turning red and burning up. The event joined other solar and lunar prodigies of that summer. The printer Samuel Apiarius and the artist Samuel Coccius fixed it in a broadsheet with a woodcut.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El caso de Basilea pertenece, como el de Núremberg cinco años antes, al género de las hojas volantes (Flugblätter) de prodigios celestes que florecieron en la Europa de la Reforma. Según el relato recogido por el artista e impresor Samuel Coccius, los habitantes de Basilea presenciaron a lo largo de varios días —el 27 y 28 de julio y el 7 de agosto de 1566— una serie de fenómenos extraños en el cielo. Los dos primeros se describen como un amanecer anómalo y un episodio en torno al sol y la luna teñidos de rojo; el tercero, el más célebre, ocurrió al alba del 7 de agosto.\n\nEse día, según el texto, al salir el sol se vieron 'grandes esferas negras' que iban y venían ante el disco solar con gran velocidad y precisión, como si se enfrentaran en un combate. Algunas de esas esferas, relata la crónica, se volvían de color rojo y fuego y parecían consumirse o extinguirse. La escena —esferas oscuras girando y chocando frente a un sol intensamente brillante— quedó plasmada en un grabado en madera que ilustra la hoja volante, mostrando el cielo lleno de orbes blancos y negros en aparente desorden alrededor del astro.\n\nLa hoja fue impresa en Basilea ese mismo año por Samuel Apiarius (c. 1530-1590), un impresor itinerante activo entre Berna, Basilea y Soleura, con el diseño del grabado a cargo de Samuel Coccius (1548-1626). El pliego, de unos 18 por 24 centímetros, se conserva hoy en la Zentralbibliothek de Zúrich, integrado en la célebre colección Wickiana —el archivo de prodigios, noticias y 'señales' reunido por el clérigo zuriqués Johann Jakob Wick—. Como en Núremberg, el suceso se leyó en clave providencial: una advertencia divina en un tiempo de tensión religiosa y política. La interpretación dominante entre los historiadores, retomada por Carl Jung al estudiar el corpus de prodigios europeos junto con el grabado de Núremberg, es que la escena corresponde a fenómenos ópticos atmosféricos —halos, parhelios y efectos de refracción solar al amanecer— traducidos por los testigos al lenguaje bélico y religioso de su época.",
+  "whatHappened_en": "The Basel case belongs, like Nuremberg five years earlier, to the genre of celestial-prodigy broadsheets (Flugblätter) that flourished in Reformation Europe. According to the account recorded by the artist and printer Samuel Coccius, the inhabitants of Basel witnessed over several days —27 and 28 July and 7 August 1566— a series of strange phenomena in the sky. The first two are described as an anomalous sunrise and an episode involving the sun and moon tinged red; the third, the most famous, occurred at dawn on 7 August.\n\nThat day, according to the text, as the sun rose 'large black spheres' were seen coming and going before the solar disk with great speed and precision, as if engaged in combat. Some of those spheres, the chronicle recounts, turned red and fiery and seemed to consume or extinguish themselves. The scene —dark spheres whirling and colliding before an intensely bright sun— was captured in a woodcut illustrating the broadsheet, showing the sky filled with white and black orbs in apparent disorder around the star.\n\nThe sheet was printed in Basel that same year by Samuel Apiarius (c. 1530-1590), an itinerant printer active between Bern, Basel and Solothurn, with the woodcut designed by Samuel Coccius (1548-1626). The leaflet, about 18 by 24 centimetres, is held today in the Zentralbibliothek in Zurich, part of the famous Wickiana collection —the archive of prodigies, news and 'signs' assembled by the Zurich cleric Johann Jakob Wick. As in Nuremberg, the event was read providentially: a divine warning in a time of religious and political tension. The dominant interpretation among historians, taken up by Carl Jung in studying the corpus of European prodigies alongside the Nuremberg woodcut, is that the scene corresponds to atmospheric optical phenomena —halos, parhelia and solar-refraction effects at dawn— translated by witnesses into the martial and religious language of their time.",
+  "whyMatters": "Basilea 1566 importa al corpus por la misma razón que Núremberg 1561 y como su complemento: juntos forman el ancla histórica que documenta cómo, mucho antes de la fotografía y el radar, comunidades europeas percibían, narraban e imprimían observaciones de objetos en el cielo organizadas como un 'evento' significativo. Dos pliegos independientes, de ciudades y talleres distintos, separados por cinco años, describiendo enjambres de esferas que se 'enfrentan' frente al sol al amanecer, muestran que el fenómeno-relato tiene raíces profundas y recurrentes en la cultura, no que haya naves. La conservación del original en la colección Wickiana de Zúrich le da, además, una procedencia documental sólida poco habitual para un caso del siglo XVI.\n\nPor eso, igual que en Núremberg, el posterior carga abrumadoramente sobre la narrativa mundano/natural. La explicación más económica es la óptica atmosférica: halos solares, parhelios ('soles' y arcos múltiples) y efectos de refracción en cristales de hielo a baja altura del sol producen exactamente discos, orbes y manchas oscuras que un observador del XVI, sin marco físico, traduciría como esferas en combate; a ello se suman la capa interpretativa providencial del impresor y el incentivo comercial de una hoja que se vendía mejor cuanto más portentosa. La pequeña masa que el caso deja a la indeterminación reconoce únicamente que no podemos interrogar a testigos de hace cuatro siglos y medio, no que exista base para inferir tecnología. En el corpus, Basilea es el segundo testigo de la longue durée —el que confirma que Núremberg no fue un unicum sino parte de una tradición— y, con él, un recordatorio de que la antigüedad de un relato refuerza su valor histórico sin elevar su probabilidad ontológica.",
+  "whyMatters_en": "Basel 1566 matters to the corpus for the same reason as Nuremberg 1561 and as its complement: together they form the historical anchor documenting how, long before photography and radar, European communities perceived, narrated and printed observations of objects in the sky organized as a meaningful 'event'. Two independent broadsheets, from different cities and workshops, five years apart, describing swarms of spheres 'fighting' before the sun at dawn, show that the phenomenon-as-account has deep, recurring cultural roots, not that there were craft. The preservation of the original in Zurich's Wickiana collection also gives it a solid documentary provenance uncommon for a 16th-century case.\n\nThat is why, as with Nuremberg, the posterior loads overwhelmingly onto the mundane/natural narrative. The most economical explanation is atmospheric optics: solar halos, parhelia (multiple 'suns' and arcs) and refraction effects in ice crystals with the sun low produce exactly the discs, orbs and dark spots that a 16th-century observer, lacking a physical framework, would translate as spheres in combat; added to that are the printer's providential interpretive layer and the commercial incentive of a sheet that sold better the more portentous it was. The small mass the case leaves to indeterminacy acknowledges only that we cannot interrogate witnesses from four and a half centuries ago, not that there is a basis to infer technology. In the corpus, Basel is the second witness to the longue durée —the one that confirms Nuremberg was not a unicum but part of a tradition— and, with it, a reminder that a tale's antiquity strengthens its historical value without raising its ontological probability.",
+  "evidence": [
+    "Hoja volante (Flugblatt) impresa en Basilea en 1566 por Samuel Apiarius, con grabado en madera diseñado por Samuel Coccius (~18 × 24 cm)",
+    "Texto que data el fenómeno principal al amanecer del 7 de agosto de 1566 y describe 'grandes esferas negras' veloces frente al sol",
+    "Mención de esferas que se tornan rojas y se consumen, sumadas a prodigios solares/lunares del 27-28 de julio",
+    "Original conservado en la colección Wickiana de la Zentralbibliothek de Zúrich",
+    "Caso paralelo y previo de Núremberg (1561), del mismo género de pliegos de prodigios celestes",
+    "Interpretación historiográfica dominante: óptica atmosférica (halos/parhelios) traducida a imaginería bélico-religiosa"
+  ],
+  "evidence_en": [
+    "Broadsheet (Flugblatt) printed in Basel in 1566 by Samuel Apiarius, with a woodcut designed by Samuel Coccius (~18 × 24 cm)",
+    "Text dating the main phenomenon to dawn on 7 August 1566 and describing swift 'large black spheres' before the sun",
+    "Mention of spheres turning red and burning up, alongside solar/lunar prodigies of 27-28 July",
+    "Original held in the Wickiana collection of the Zentralbibliothek, Zurich",
+    "Parallel and earlier Nuremberg case (1561), of the same celestial-prodigy broadsheet genre",
+    "Dominant historiographic interpretation: atmospheric optics (halos/parhelia) translated into martial-religious imagery"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — 1566 celestial phenomenon over Basel",
+      "url": "https://en.wikipedia.org/wiki/1566_celestial_phenomenon_over_Basel"
+    },
+    {
+      "name": "Swiss National Museum blog — 'The celestial event over Basel in 1566'",
+      "url": "https://blog.nationalmuseum.ch/en/2024/07/the-celestial-event-over-basel-in-1566/"
+    },
+    {
+      "name": "Zentralbibliothek Zürich — colección Wickiana (procedencia del pliego)",
+      "url": "https://www.zb.uzh.ch/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.62,
+    "humana_clasificada": 0.0,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.1,
+    "indet": 0.28
+  }
+}
