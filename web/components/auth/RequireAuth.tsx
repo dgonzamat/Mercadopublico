@@ -38,8 +38,8 @@ export function RequireAuth({ children }: { children: ReactNode }) {
       <Panel
         title={{ es: "Regístrate para usar el reporting", en: "Sign up to use reporting" }}
         body={{
-          es: "Crea tu cuenta con Google o email para crear gráficos, KPIs y reportes guardados.",
-          en: "Create your account with Google or email to build charts, KPIs and saved reports.",
+          es: "Crea tu cuenta con tu email para crear gráficos, KPIs y reportes guardados.",
+          en: "Create your account with your email to build charts, KPIs and saved reports.",
         }}
         cta
       />

@@ -21,8 +21,8 @@ export default function AccesoPage() {
         </H1>
         <Lede className="text-muted">
           <T
-            es="Crea tu cuenta con Google o email para usar la herramienta de reporting."
-            en="Create your account with Google or email to use the reporting tool."
+            es="Crea tu cuenta con tu email para usar la herramienta de reporting."
+            en="Create your account with your email to use the reporting tool."
           />
         </Lede>
       </header>
