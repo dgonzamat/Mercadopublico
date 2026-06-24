@@ -1,0 +1,68 @@
+{
+  "id": "new-zealand-airships-1909",
+  "num": 247,
+  "name": "Ola de dirigibles · Nueva Zelanda",
+  "name_en": "Airship Wave · New Zealand",
+  "year_start": 1909,
+  "country": "NZ",
+  "country_name": "Nueva Zelanda",
+  "flag": "🇳🇿",
+  "location": {
+    "lat": -45.91,
+    "lng": 169.24,
+    "place": "Isla Sur (Southland y Otago), Nueva Zelanda",
+    "place_en": "South Island (Southland and Otago), New Zealand"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 18,
+  "summary": "Entre junio y agosto de 1909, Nueva Zelanda vivió su propia ola de 'dirigibles' misteriosos, concentrada en el sur de la Isla Sur. El caso más citado es el de Kelso (23 de julio): varios escolares y vecinos vieron una nave sobre la escuela; un periodista los interrogó por separado y obtuvo seis dibujos sorprendentemente coincidentes de un cigarro romo con dos reflectores.",
+  "summary_en": "Between June and August 1909, New Zealand had its own wave of mysterious 'airships', concentrated in the south of the South Island. The most cited case is Kelso (23 July): several schoolchildren and residents saw a craft over the school; a reporter interviewed them separately and obtained six strikingly consistent drawings of a blunt-headed cigar with two searchlights.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "Casi en paralelo al pánico de los 'scareships' británicos, Nueva Zelanda vivió en 1909 su propia oleada de avistamientos de naves aéreas imposibles para la tecnología de la época. La actividad comenzó —y fue más intensa— en el extremo sur de la Isla Sur, en las regiones de Southland y Otago, donde habían florecido numerosos asentamientos durante la fiebre del oro de décadas anteriores. Hubo indicios previos: un corresponsal escribió a un periódico de Otago que él y otros dos hombres habían visto una extraña luz aérea en tres ocasiones durante el invierno de 1908, mientras ponían trampas en Southland. La ola propiamente dicha estalló entre junio y agosto de 1909 y, con el paso de las semanas, los avistamientos parecieron desplazarse hacia el norte del país antes de 'pasar' a Australia.\n\nEl episodio mejor investigado es el de Kelso, el 23 de julio de 1909. Un grupo de escolares y algunos residentes denunciaron que una nave aérea había descendido y se había mantenido 'cabeceando' en el cielo sobre la escuela durante unos minutos. Un reportero del Otago Daily Times se trasladó al pueblo y, en un ejercicio metodológicamente notable para la época, interrogó a los escolares uno por uno, de forma independiente, y les pidió que dibujaran lo que habían visto. El resultado fueron seis dibujos cuyo grado de coincidencia y unanimidad —en palabras del propio reportero— resultó 'desconcertante incluso para los escépticos'. Todos coincidían en una nave con forma de cigarro de cabeza roma, dotada de dos reflectores que barrían el cielo hacia arriba y en distintas direcciones.\n\nEn el punto álgido, los reportes inundaban los periódicos de la mitad sur de la Isla Sur; los dos diarios de Dunedin —el Star y el Otago Daily Times— dieron una cobertura intensa al fenómeno. Y entonces, de forma tan abrupta como había empezado, a mediados de agosto de 1909 la oleada cesó en Nueva Zelanda. El 'fenómeno' pareció migrar: a partir de septiembre se registraron avistamientos en Australia, y la cadena de oleadas de dirigibles fantasma continuaría en el Reino Unido en 1912-1913, en plena escalada de temor a una guerra con Alemania.",
+  "whatHappened_en": "Almost in parallel with the British 'scareship' panic, New Zealand experienced in 1909 its own wave of sightings of aerial craft impossible for the technology of the time. The activity began —and was most intense— at the far south of the South Island, in the Southland and Otago regions, where many settlements had flourished during the gold rush of earlier decades. There were earlier hints: a correspondent wrote to an Otago newspaper that he and two other men had seen a strange aerial light on three occasions during the winter of 1908, while trapping in Southland. The wave proper broke out between June and August 1909 and, as the weeks passed, the sightings seemed to move northward through the country before 'passing on' to Australia.\n\nThe best-investigated episode is Kelso, on 23 July 1909. A group of schoolchildren and some residents reported that an airship had come down and stayed 'bobbing' in the sky over the school for a few minutes. An Otago Daily Times reporter traveled to the town and, in a methodologically remarkable exercise for the era, interviewed the schoolchildren one by one, independently, and asked them to draw what they had seen. The result was six drawings whose degree of agreement and unanimity —in the reporter's own words— was 'dumbfounding even to skeptics'. All agreed on a blunt-headed cigar-shaped craft, fitted with two searchlights that swept the sky upward and in various directions.\n\nAt its peak, reports flooded the newspapers of the southern half of the South Island; the two Dunedin dailies —the Star and the Otago Daily Times— gave the phenomenon intense coverage. And then, as abruptly as it had begun, in mid-August 1909 the wave ceased in New Zealand. The 'phenomenon' seemed to migrate: from September, sightings were recorded in Australia, and the chain of phantom-airship waves would continue in the United Kingdom in 1912-1913, amid the escalating fear of a war with Germany.",
+  "whyMatters": "La ola neozelandesa de 1909 importa al corpus porque completa una tríada geográfica decisiva —Estados Unidos en 1896-1897, Reino Unido y Nueva Zelanda en 1909— que demuestra que el fenómeno de las oleadas de dirigibles fantasma fue global y prácticamente simultáneo en el hemisferio anglosajón, años antes de que existiera aviación capaz de producirlas. Su rasgo distintivo y más valioso es el episodio de Kelso: el reportero que interrogó por separado a los escolares y obtuvo seis dibujos concordantes ejecutó, sin saberlo, un protocolo de corroboración cruzada que sigue siendo el estándar de oro para evaluar avistamientos de masas. Ese detalle convierte a Kelso en un caso de estudio sobre qué significa —y qué no— la coincidencia entre testigos.\n\nPorque la concordancia de los dibujos es real, pero no implica un objeto real: prueba que los niños vieron y describieron lo mismo, no que ese 'mismo' fuera una nave. Por eso el posterior carga sobre la narrativa mundano/misid. La explicación más económica combina la identificación errónea de un cuerpo celeste brillante (Venus dominaba el cielo invernal del sur) o de luces terrestres, con el potente marco cultural de 'la nave aérea' ya instalado por la prensa internacional, que daba forma a lo ambiguo y unificaba las descripciones —incluida la morfología recurrente de cigarro con reflectores, importada de los relatos previos—. La pequeña masa de indeterminación reconoce que no podemos auditar a testigos de hace más de un siglo ni reconstruir las condiciones exactas de cada cielo. En el corpus, Nueva Zelanda 1909 es la prueba de que una oleada puede ser internacional, metodológicamente bien registrada y aun así enteramente explicable como fenómeno perceptivo y cultural.",
+  "whyMatters_en": "The 1909 New Zealand wave matters to the corpus because it completes a decisive geographic triad —the United States in 1896-1897, the United Kingdom and New Zealand in 1909— demonstrating that the phantom-airship wave phenomenon was global and almost simultaneous across the Anglosphere, years before any aviation capable of producing it existed. Its distinctive and most valuable feature is the Kelso episode: the reporter who interviewed the schoolchildren separately and obtained six concordant drawings executed, unknowingly, a cross-corroboration protocol that remains the gold standard for evaluating mass sightings. That detail makes Kelso a case study in what witness agreement does —and does not— mean.\n\nBecause the drawings' agreement is real, but it does not imply a real object: it proves the children saw and described the same thing, not that that 'same thing' was a craft. That is why the posterior loads onto the mundane/misid narrative. The most economical explanation combines the misidentification of a bright celestial body (Venus dominated the southern winter sky) or ground lights with the powerful cultural frame of 'the airship' already installed by the international press, which gave shape to the ambiguous and unified the descriptions —including the recurring cigar-with-searchlights morphology, imported from earlier accounts. The small mass of indeterminacy acknowledges that we cannot audit witnesses from over a century ago nor reconstruct the exact conditions of each sky. In the corpus, New Zealand 1909 is the proof that a wave can be international, methodologically well recorded and yet entirely explicable as a perceptual and cultural phenomenon.",
+  "evidence": [
+    "Oleada de avistamientos de 'dirigibles' entre junio y agosto de 1909, concentrada en Southland y Otago (Isla Sur)",
+    "Indicio previo: luz aérea vista por tres tramperos en Southland durante el invierno de 1908",
+    "Caso de Kelso (23 jul 1909): escolares y vecinos ven una nave sobre la escuela",
+    "Seis dibujos independientes y concordantes obtenidos por un reportero del Otago Daily Times tras interrogar por separado a los niños",
+    "Morfología recurrente: cigarro de cabeza roma con dos reflectores que barren el cielo",
+    "Cese abrupto a mediados de agosto y 'migración' del fenómeno a Australia (sept 1909) y luego al Reino Unido (1912-1913)"
+  ],
+  "evidence_en": [
+    "Wave of 'airship' sightings between June and August 1909, concentrated in Southland and Otago (South Island)",
+    "Earlier hint: aerial light seen by three trappers in Southland during the winter of 1908",
+    "Kelso case (23 Jul 1909): schoolchildren and residents see a craft over the school",
+    "Six independent, concordant drawings obtained by an Otago Daily Times reporter after interviewing the children separately",
+    "Recurring morphology: blunt-headed cigar with two searchlights sweeping the sky",
+    "Abrupt end in mid-August and 'migration' of the phenomenon to Australia (Sept 1909) and then to the UK (1912-1913)"
+  ],
+  "sources": [
+    {
+      "name": "NZ Skeptics — 'The Great Zeppelin Scare of 1909'",
+      "url": "https://articles.skeptics.nz/1998/05/01/the-great-zeppelin-scare-of-1909/"
+    },
+    {
+      "name": "Tony Brunt — 'The New Zealand UFO Wave of 1909' (Haunted Auckland)",
+      "url": "https://hauntedauckland.com/site/the-new-zealand-ufo-wave-of-1909-by-tony-brunt1967/"
+    },
+    {
+      "name": "UFOCUS NZ — 'The 1909 Kelso Airships of New Zealand'",
+      "url": "https://ufocusnz.org.nz/2020/07/22/the-1909-kelso-airships-of-new-zealand/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.68,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.07,
+    "indet": 0.22
+  }
+}
