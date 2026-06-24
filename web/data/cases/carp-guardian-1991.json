@@ -1,0 +1,68 @@
+{
+  "id": "carp-guardian-1991",
+  "num": 263,
+  "name": "Carp / Guardian · Ontario",
+  "name_en": "Carp / Guardian · Ontario",
+  "year_start": 1991,
+  "country": "CA",
+  "country_name": "Canadá",
+  "flag": "🇨🇦",
+  "location": {
+    "lat": 45.35,
+    "lng": -76.05,
+    "place": "West Carleton / Carp, Ontario, Canadá",
+    "place_en": "West Carleton / Carp, Ontario, Canada"
+  },
+  "tier": "B",
+  "mundanoType": "fraude",
+  "epistemicStatus": "documented",
+  "probability": 14,
+  "summary": "Desde 1991, el ufólogo Bob Oechsler recibió paquetes anónimos firmados 'Guardian' con fotos, documentos gubernamentales falsificados y un vídeo VHS que mostraba un gran ovni aterrizando entre llamas cerca de Carp (Ontario). Una vecina, Diane Labenek, había visto luces esa noche. Tras años de polémica, MUFON Ontario concluyó en 1995 que el caso era casi con certeza un fraude.",
+  "summary_en": "From 1991, ufologist Bob Oechsler received anonymous parcels signed 'Guardian' with photos, forged government documents and a VHS video showing a large UFO landing amid flames near Carp (Ontario). A neighbour, Diane Labenek, had seen lights that night. After years of controversy, MUFON Ontario concluded in 1995 that the case was almost certainly a hoax.",
+  "patterns": [
+    "8r"
+  ],
+  "category": "incident",
+  "whatHappened": "El 'caso Carp', o 'caso Guardian', es considerado uno de los más controvertidos de la historia ufológica canadiense, y un ejemplo de manual de fraude construido con documentación falsificada. Su semilla 'real' fue modesta: la noche del 18 de agosto de 1991, Diane Labenek, vecina de West Carleton, cerca de la localidad de Carp (Ontario), oyó ladrar a sus perros y vio hacia las 22:00 unas llamas rojas y humo en un campo cercano, además de luces que interpretó como un objeto inusual.\n\nLo que transformó ese avistamiento ordinario en un caso célebre fue una campaña de envíos anónimos. El ufólogo Bob Oechsler, un antiguo contratista de la NASA reconvertido en investigador, comenzó a recibir paquetes sin remitente firmados con el nombre 'Guardian'. Contenían fotografías, mapas de la zona de Ontario, documentos que aparentaban ser gubernamentales —y que resultaron falsificados— y, sobre todo, una cinta de vídeo VHS, etiquetada con una huella dactilar y la palabra 'Guardian', que mostraba lo que parecía un gran ovni descendiendo en un campo junto a unas llamas rojas. El material parecía dar respaldo documental y audiovisual al avistamiento de Labenek.\n\nLa evaluación dividió a la comunidad. Oechsler y el investigador Graham Lightfoot creyeron que Labenek decía la verdad y que la cinta mostraba lo que ella había visto; incluso analistas de imagen como Bruce Maccabee y Robert Nathan llegaron a opinar que el vídeo no era un montaje evidente. Sin embargo, el conjunto se desmoronó bajo escrutinio: los 'documentos gubernamentales' eran falsificaciones, la procedencia anónima impedía toda verificación, y el vídeo presentaba rasgos compatibles con una escena montada. En agosto de 1995, MUFON Ontario publicó un informe concluyendo que el caso era, con toda probabilidad, un fraude elaborado. La reputación de Oechsler quedó dañada —se retiró de la investigación ovni en 1994— por su manejo de este caso y del de Gulf Breeze.",
+  "whatHappened_en": "The 'Carp case', or 'Guardian case', is considered one of the most controversial in Canadian ufological history, and a textbook example of a hoax built with forged documentation. Its 'real' seed was modest: on the night of 18 August 1991, Diane Labenek, a resident of West Carleton, near the town of Carp (Ontario), heard her dogs bark and saw around 10 pm some red flames and smoke in a nearby field, plus lights she interpreted as an unusual object.\n\nWhat transformed that ordinary sighting into a famous case was a campaign of anonymous mailings. Ufologist Bob Oechsler, a former NASA contractor turned investigator, began receiving parcels with no return address signed with the name 'Guardian'. They contained photographs, maps of the Ontario area, documents that appeared to be governmental —and proved forged— and, above all, a VHS videotape, labeled with a fingerprint and the word 'Guardian', showing what looked like a large UFO descending in a field beside red flames. The material seemed to give documentary and audiovisual backing to Labenek's sighting.\n\nThe assessment divided the community. Oechsler and investigator Graham Lightfoot believed Labenek was telling the truth and that the tape showed what she had seen; even image analysts like Bruce Maccabee and Robert Nathan came to opine that the video was not an obvious fabrication. However, the whole collapsed under scrutiny: the 'government documents' were forgeries, the anonymous provenance precluded any verification, and the video had features consistent with a staged scene. In August 1995, MUFON Ontario published a report concluding the case was, in all likelihood, an elaborate hoax. Oechsler's reputation was damaged —he retired from UFO investigation in 1994— by his handling of this case and the Gulf Breeze one.",
+  "whyMatters": "El caso Carp/Guardian importa al corpus como un estudio de cómo un avistamiento banal puede ser secuestrado y amplificado por una campaña deliberada de documentación falsa hasta convertirse en un 'gran caso', y como advertencia sobre el eslabón más débil de la evidencia ufológica: la procedencia. Su valor es metodológico y se emparenta directamente con Gulf Breeze, Aztec y RS/33, los otros anclajes de fraude del corpus: en todos, la lección es que un material espectacular —un vídeo, una foto, un documento 'secreto'— vale exactamente lo que valga su cadena de custodia, y la de Guardian era nula por anónima.\n\nPor eso el posterior carga de forma dominante sobre la narrativa mundano/natural en su variante de fraude. Hay que separar dos capas. La capa de base —el avistamiento de Diane Labenek de llamas y luces en un campo— es probablemente una experiencia real pero mundana (un fuego, luces de algún tipo) que por sí sola nunca habría trascendido. La capa construida —los paquetes 'Guardian' con documentos falsificados y el vídeo del 'aterrizaje'— es el fraude propiamente dicho, confirmado por la falsedad demostrada de los documentos y el dictamen de MUFON Ontario. Que algunos analistas no detectaran de inmediato el truco en el vídeo no acredita su autenticidad; subraya, al contrario, lo difícil que es refutar un montaje sin acceso a los originales y al contexto. La pequeña masa de indeterminación recoge esa dificultad técnica residual, no una hipótesis viva. En el corpus, Carp/Guardian es el caso que enseña que un buen fraude no necesita ser perfecto: le basta con explotar el deseo de creer y la imposibilidad de auditar una fuente anónima.",
+  "whyMatters_en": "The Carp/Guardian case matters to the corpus as a study of how a banal sighting can be hijacked and amplified by a deliberate campaign of false documentation into a 'great case', and as a warning about the weakest link in ufological evidence: provenance. Its value is methodological and directly akin to Gulf Breeze, Aztec and RS/33, the corpus's other fraud anchors: in all of them, the lesson is that spectacular material —a video, a photo, a 'secret' document— is worth exactly what its chain of custody is worth, and Guardian's was nil because anonymous.\n\nThat is why the posterior loads dominantly onto the mundane/natural narrative in its fraud variant. Two layers must be separated. The base layer —Diane Labenek's sighting of flames and lights in a field— is probably a real but mundane experience (a fire, lights of some kind) that on its own would never have made waves. The constructed layer —the 'Guardian' parcels with forged documents and the 'landing' video— is the fraud proper, confirmed by the demonstrated falsity of the documents and MUFON Ontario's ruling. That some analysts did not immediately detect the trick in the video does not certify its authenticity; on the contrary, it underscores how hard it is to refute a fabrication without access to the originals and the context. The small mass of indeterminacy captures that residual technical difficulty, not a live hypothesis. In the corpus, Carp/Guardian is the case that teaches that a good hoax need not be perfect: it suffices to exploit the desire to believe and the impossibility of auditing an anonymous source.",
+  "evidence": [
+    "Avistamiento de Diane Labenek (West Carleton, Ontario) de llamas y luces en un campo (18 ago 1991)",
+    "Paquetes anónimos firmados 'Guardian' enviados al ufólogo Bob Oechsler: fotos, mapas, documentos gubernamentales falsificados",
+    "Cinta VHS etiquetada 'Guardian' con una huella dactilar, que mostraba un gran ovni 'aterrizando' entre llamas",
+    "Documentos demostradamente falsos y procedencia anónima no verificable",
+    "Análisis dispares: Oechsler/Lightfoot a favor; MUFON Ontario concluye fraude en agosto de 1995",
+    "Deterioro de la reputación de Oechsler, que se retiró de la investigación ovni (1994)"
+  ],
+  "evidence_en": [
+    "Diane Labenek's sighting (West Carleton, Ontario) of flames and lights in a field (18 Aug 1991)",
+    "Anonymous parcels signed 'Guardian' sent to ufologist Bob Oechsler: photos, maps, forged government documents",
+    "VHS tape labeled 'Guardian' with a fingerprint, showing a large UFO 'landing' amid flames",
+    "Demonstrably false documents and unverifiable anonymous provenance",
+    "Divergent analyses: Oechsler/Lightfoot in favor; MUFON Ontario concludes hoax in August 1995",
+    "Damage to Oechsler's reputation, who retired from UFO investigation (1994)"
+  ],
+  "sources": [
+    {
+      "name": "Unsolved Mysteries Wiki — Guardian UFO",
+      "url": "https://unsolvedmysteries.fandom.com/wiki/Guardian_UFO"
+    },
+    {
+      "name": "UFO Casebook — 'The Carp, Canada Case (The Guardian)'",
+      "url": "https://www.ufocasebook.com/carpcanada.html"
+    },
+    {
+      "name": "CBC Docs — 'We investigated an alleged UFO sighting near Ottawa'",
+      "url": "https://www.cbc.ca/documentaries/cbc-docs-pov/we-investigated-an-alleged-ufo-sighting-near-ottawa-1.5954765"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.83,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.02,
+    "indet": 0.11
+  }
+}
