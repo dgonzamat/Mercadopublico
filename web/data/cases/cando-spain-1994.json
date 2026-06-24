@@ -1,0 +1,66 @@
+{
+  "id": "cando-spain-1994",
+  "num": 256,
+  "name": "Evento de Cando · Galicia",
+  "name_en": "Cando Event · Galicia",
+  "year_start": 1994,
+  "country": "ES",
+  "country_name": "España",
+  "flag": "🇪🇸",
+  "location": {
+    "lat": 42.69,
+    "lng": -8.29,
+    "place": "Cando, A Estrada, Galicia, España",
+    "place_en": "Cando, A Estrada, Galicia, Spain"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 16,
+  "summary": "En la mañana del 18 de enero de 1994, vecinos de Cando, en Galicia (España), vieron una bola de fuego en el cielo durante casi un minuto. En una ladera cercana apareció un socavón con unos 200 m³ de terreno arrancado y árboles desplazados 100 m, pero sin fragmentos ni meteorito. Descrito como un 'pequeño Tunguska', se barajó un meteoro o un reventón de gas subterráneo.",
+  "summary_en": "On the morning of 18 January 1994, residents of Cando, in Galicia (Spain), saw a fireball in the sky for nearly a minute. On a nearby hillside a gouge appeared with about 200 m³ of terrain torn out and trees displaced 100 m, but with no fragments or meteorite. Described as a 'small Tunguska', a meteor or a subterranean gas burst were considered.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La mañana del 18 de enero de 1994, varios vecinos de la aldea de Cando, en el municipio de A Estrada (Pontevedra, Galicia), presenciaron el paso de una bola de fuego que cruzó el cielo durante casi un minuto. El fenómeno luminoso por sí solo habría quedado como un avistamiento de bólido más, de no ser por lo que se encontró después en tierra. La aldea, en el rural gallego de A Estrada, era un escenario tranquilo y poco propenso a la confusión: el avistamiento ocurrió a plena luz de la mañana invernal, con varios testigos independientes que coincidieron en la trayectoria y la duración inusualmente larga del objeto.\n\nUn residente local llamó a la Universidad de Santiago de Compostela para informar de un extraño socavón aparecido en una ladera próxima a la aldea. Al inspeccionarlo, los investigadores hallaron una marca notable: faltaban hasta unos 200 metros cúbicos de terreno, y varios árboles habían sido arrancados y desplazados unos 100 metros ladera abajo. La escena evocaba una explosión o un impacto, pero con una ausencia desconcertante: no aparecieron fragmentos, restos de meteorito ni metralla de ningún tipo. Esa combinación —gran energía liberada, daño físico evidente y cero material recuperable— hizo que el episodio se describiera como un 'pequeño Tunguska', en alusión al célebre evento siberiano de 1908.\n\nLas explicaciones propuestas se mantuvieron dentro del terreno natural, con dos hipótesis principales. La primera, la más intuitiva dada la bola de fuego, es la caída de un meteorito que habría excavado la ladera; el problema es la falta de fragmentos. La segunda, planteada por el astrónomo Zdeněk Ceplecha, del Observatorio de Ondřejov (República Checa), propone que el socavón pudo deberse al reventón súbito de gases subterráneos que, al expulsar de golpe la capa superficial del terreno, ventearon hacia el aire —un mecanismo geofísico que explicaría tanto el cráter como la ausencia de meteorito y que conecta de forma directa con las hipótesis barajadas para la explosión de Sasovo en Rusia—. También circularon especulaciones sobre operaciones militares secretas, alimentadas por la cercanía de rutas aéreas y por la ausencia de un cráter de impacto clásico. El caso fue objeto de un estudio formal publicado en la literatura científica especializada (Meteoritics & Planetary Science, 1998), que documentó la morfología del socavón y las posibles causas sin alcanzar un veredicto único. Ninguna explicación se impuso de forma concluyente, y el episodio quedó como una pequeña anomalía geofísica española sin cierre formal, citada desde entonces como caso de referencia europeo de daño en tierra asociado a un bólido sin meteorito recuperado.",
+  "whatHappened_en": "On the morning of 18 January 1994, several residents of the village of Cando, in the municipality of A Estrada (Pontevedra, Galicia), witnessed the passage of a fireball that crossed the sky for nearly a minute. The luminous phenomenon alone would have remained just another bolide sighting, were it not for what was found afterward on the ground. The village, in rural Galicia near A Estrada, was a quiet setting unlikely to breed confusion: the sighting occurred in full winter-morning light, with several independent witnesses agreeing on the object's trajectory and unusually long duration.\n\nA local resident called the University of Santiago de Compostela to report a strange gouge that had appeared on a hillside near the village. On inspecting it, investigators found a notable mark: up to about 200 cubic metres of terrain were missing, and several trees had been torn out and displaced some 100 metres down the slope. The scene evoked an explosion or an impact, but with a baffling absence: no fragments, meteorite remains or shrapnel of any kind appeared. That combination —large energy released, evident physical damage and zero recoverable material— led the episode to be described as a 'small Tunguska', in reference to the famous 1908 Siberian event.\n\nThe proposed explanations remained within the natural domain, with two main hypotheses. The first, the most intuitive given the fireball, is the fall of a meteorite that would have excavated the hillside; the problem is the lack of fragments. The second, put forward by astronomer Zdeněk Ceplecha, of the Ondřejov Observatory (Czech Republic), proposes that the gouge may have been due to the sudden bursting of subterranean gases which, abruptly expelling the surface layer of terrain, vented into the air —a geophysical mechanism that would explain both the crater and the absence of a meteorite, and which connects directly to the hypotheses considered for the Sasovo explosion in Russia. Speculation about secret military operations also circulated, fed by the proximity of air routes and by the absence of a classic impact crater. The case was the subject of a formal study published in the specialized scientific literature (Meteoritics & Planetary Science, 1998), which documented the gouge's morphology and the possible causes without reaching a single verdict. No explanation prevailed conclusively, and the episode remained a small Spanish geophysical anomaly without formal closure, cited ever since as a European reference case of ground damage associated with a bolide with no recovered meteorite.",
+  "whyMatters": "Cando importa al corpus como una réplica a pequeña escala —y en suelo europeo— del problema que plantean Tunguska y Sasovo: un evento que combina un fenómeno luminoso aéreo con un daño físico considerable en tierra y, sin embargo, no deja el material que cabría esperar. Su valor es que refuerza, con un tercer caso independiente, que existe una clase de anomalías terrestres genuinas —socavones, devastación localizada, bólidos— cuya causa exacta puede quedar sin determinar sin que ello implique nada extraordinario en el sentido ufológico.\n\nPor eso el posterior carga sobre la narrativa mundano/natural, con una indeterminación apreciable que recae sobre el mecanismo, no sobre la naturaleza terrestre del suceso. Las dos hipótesis en liza —impacto de meteorito y reventón de gas subterráneo— son ambas prosaicas; el debate es cuál de ellas, y la falta de fragmentos inclina la balanza hacia la explicación geofísica de Ceplecha, la misma familia de mecanismos (emisiones súbitas de gas en plataformas continentales) que se invoca para Sasovo. La pequeña masa residual reconoce que el caso no se cerró con un veredicto único. En el corpus, Cando cumple una función de coherencia: junto a Tunguska, Cheliábinsk y Sasovo, delimita un 'género' de eventos energéticos naturales que conviene tener bien caracterizado, precisamente para no confundir un bólido o un venteo de gas con una manifestación anómala.",
+  "whyMatters_en": "Cando matters to the corpus as a small-scale replica —on European soil— of the problem posed by Tunguska and Sasovo: an event that combines an aerial luminous phenomenon with considerable physical ground damage and yet leaves none of the material one would expect. Its value is that it reinforces, with a third independent case, that there exists a class of genuine terrestrial anomalies —gouges, localized devastation, bolides— whose exact cause may remain undetermined without that implying anything extraordinary in the ufological sense.\n\nThat is why the posterior loads onto the mundane/natural narrative, with appreciable indeterminacy falling on the mechanism, not on the terrestrial nature of the event. The two competing hypotheses —meteorite impact and subterranean gas burst— are both prosaic; the debate is which one, and the lack of fragments tilts the balance toward Ceplecha's geophysical explanation, the same family of mechanisms (sudden gas emissions on continental platforms) invoked for Sasovo. The small residual mass acknowledges that the case was not closed with a single verdict. In the corpus, Cando serves a coherence function: alongside Tunguska, Chelyabinsk and Sasovo, it delimits a 'genre' of natural energetic events worth characterizing well, precisely so as not to mistake a bolide or a gas vent for an anomalous manifestation.",
+  "evidence": [
+    "Bola de fuego vista por vecinos de Cando (A Estrada, Galicia) durante casi un minuto (18 ene 1994)",
+    "Socavón en una ladera con ~200 m³ de terreno arrancado y árboles desplazados ~100 m",
+    "Ausencia total de fragmentos, meteorito o metralla en el lugar",
+    "Investigación de la Universidad de Santiago de Compostela tras el aviso de un residente",
+    "Hipótesis de Zdeněk Ceplecha (Observatorio de Ondřejov): reventón de gases subterráneos (paralelo a Sasovo)",
+    "Descripción del caso como un 'pequeño Tunguska'; sin explicación concluyente"
+  ],
+  "evidence_en": [
+    "Fireball seen by Cando residents (A Estrada, Galicia) for nearly a minute (18 Jan 1994)",
+    "Hillside gouge with ~200 m³ of terrain torn out and trees displaced ~100 m",
+    "Total absence of fragments, meteorite or shrapnel at the site",
+    "University of Santiago de Compostela investigation after a resident's report",
+    "Zdeněk Ceplecha (Ondřejov Observatory) hypothesis: subterranean gas burst (paralleling Sasovo)",
+    "Description of the case as a 'small Tunguska'; no conclusive explanation"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Cando, Spain (1994 Cando event)",
+      "url": "https://en.wikipedia.org/wiki/Cando,_Spain"
+    },
+    {
+      "name": "Docobo et al. — análisis del evento de Cando (Meteoritics & Planetary Science, 1998)",
+      "url": "http://adsabs.harvard.edu/full/1998M%26PS...33...57D"
+    },
+    {
+      "name": "Virtual Globetrotting — '1994 Cando event site'",
+      "url": "https://virtualglobetrotting.com/map/1994-cando-event-site/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.7,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.0,
+    "nohumano_abierto": 0.01,
+    "indet": 0.27
+  }
+}
