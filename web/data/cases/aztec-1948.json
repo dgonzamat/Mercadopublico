@@ -1,0 +1,68 @@
+{
+  "id": "aztec-1948",
+  "num": 248,
+  "name": "Aztec · Nuevo México",
+  "name_en": "Aztec · New Mexico",
+  "year_start": 1948,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 36.822,
+    "lng": -107.993,
+    "place": "Aztec, Nuevo México",
+    "place_en": "Aztec, New Mexico"
+  },
+  "tier": "B",
+  "mundanoType": "fraude",
+  "epistemicStatus": "documented",
+  "probability": 12,
+  "summary": "El llamado 'otro Roswell': la afirmación de que en marzo de 1948 un platillo de 30 metros con 16 cuerpos humanoides se estrelló cerca de Aztec, Nuevo México, y fue recuperado por el ejército. Lo publicó el periodista Frank Scully en 'Behind the Flying Saucers' (1950). A mediados de los años cincuenta se destapó como un fraude de dos estafadores, Silas Newton y Leo GeBauer.",
+  "summary_en": "The so-called 'other Roswell': the claim that in March 1948 a 99-foot saucer with 16 humanoid bodies crashed near Aztec, New Mexico, and was recovered by the military. Journalist Frank Scully published it in 'Behind the Flying Saucers' (1950). In the mid-1950s it was exposed as a hoax by two con men, Silas Newton and Leo GeBauer.",
+  "patterns": [
+    "8m"
+  ],
+  "category": "incident",
+  "whatHappened": "El caso Aztec, a veces llamado 'el otro Roswell', nació en las columnas del periodista de la revista Variety Frank Scully en 1949 y alcanzó difusión masiva con su libro de 1950 'Behind the Flying Saucers' (Detrás de los platillos volantes). Según Scully, en marzo de 1948 una aeronave no identificada se había estrellado cerca de Aztec, en el noroeste de Nuevo México, y el ejército había recuperado el aparato con dieciséis cuerpos humanoides en su interior. El relato era espectacular y minucioso: la nave medía unos 30 metros de diámetro —el mayor 'platillo' descrito hasta entonces—, provenía supuestamente de Venus, funcionaba según 'principios magnéticos', y cada una de sus dimensiones era 'divisible por nueve'; sus tripulantes habrían llevado obleas de comida concentrada y 'agua pesada' para beber.\n\nDetrás de esa narrativa había, en realidad, una estafa. Las fuentes de Scully eran dos hombres, Silas M. Newton y Leo A. GeBauer, que durante los años cuarenta y cincuenta recorrían el suroeste de Estados Unidos intentando vender unos aparatos conocidos en la industria petrolera como 'doodlebugs', que decían capaces de localizar petróleo, gas y oro. Su argumento de venta era que esos dispositivos se basaban en 'tecnología alienígena' recuperada del platillo estrellado: la historia de Aztec era, esencialmente, el envoltorio publicitario de un timo financiero.\n\nEl desmontaje llegó por el periodismo de investigación. El reportero J. P. Cahn, del San Francisco Chronicle, pidió a los estafadores una muestra del metal 'alienígena' de sus aparatos; la pieza que le entregaron resultó ser aluminio corriente. En 1952, la revista True publicó la exposición del fraude, y a mediados de los cincuenta el caso estaba ampliamente desacreditado; Newton y GeBauer acabarían enfrentando cargos por estafa. Pese a ello, el relato de Aztec ha resurgido periódicamente en la literatura ufológica, reciclado por autores que defienden un núcleo real tras el timo, sin que haya aparecido nunca evidencia física, documental ni testimonial verificable de un estrellamiento.",
+  "whatHappened_en": "The Aztec case, sometimes called 'the other Roswell', was born in the columns of Variety journalist Frank Scully in 1949 and reached mass circulation with his 1950 book 'Behind the Flying Saucers'. According to Scully, in March 1948 an unidentified craft had crashed near Aztec, in northwestern New Mexico, and the military had recovered the craft with sixteen humanoid bodies inside. The account was spectacular and detailed: the craft was about 99 feet (30 m) in diameter —the largest 'saucer' described to date— supposedly came from Venus, worked on 'magnetic principles', and each of its dimensions was 'divisible by nine'; its crew were said to have carried concentrated food wafers and 'heavy water' to drink.\n\nBehind that narrative was, in reality, a swindle. Scully's sources were two men, Silas M. Newton and Leo A. GeBauer, who during the 1940s and 1950s traveled the U.S. Southwest trying to sell devices known in the oil industry as 'doodlebugs', which they claimed could locate oil, gas and gold. Their sales pitch was that these devices were based on 'alien technology' recovered from the crashed saucer: the Aztec story was, essentially, the advertising wrapper for a financial con.\n\nThe takedown came through investigative journalism. Reporter J. P. Cahn, of the San Francisco Chronicle, asked the con men for a sample of the 'alien' metal from their devices; the piece they handed over turned out to be ordinary aluminum. In 1952, True magazine published the exposure of the hoax, and by the mid-1950s the case was widely discredited; Newton and GeBauer would face fraud charges. Even so, the Aztec story has periodically resurfaced in ufological literature, recycled by authors who defend a real core behind the con, without any verifiable physical, documentary or testimonial evidence of a crash ever appearing.",
+  "whyMatters": "Aztec importa al corpus como el caso de crash-retrieval que sí está resuelto, y por eso funciona como ancla de calibración para toda la familia de relatos de 'naves estrelladas y cuerpos recuperados' —Roswell incluido—. Su valor es doble: documenta con nitidez el mecanismo por el que nace y se difunde una historia de recuperación (una fuente con un incentivo económico, un periodista crédulo, un libro de éxito), y registra también cómo se desmonta (el periodismo que pide la muestra física y obtiene aluminio). En un corpus que toma en serio la narrativa nohumano_encubierto, Aztec es el recordatorio imprescindible de que esa narrativa tiene, al menos una vez, un origen probadamente fraudulento.\n\nPor eso el posterior carga de forma abrumadora sobre la narrativa mundano/natural en su variante de fraude. La cadena es concluyente: las fuentes eran estafadores con un timo de 'doodlebugs' que vender, el 'metal alienígena' resultó ser aluminio, el fraude se expuso en prensa y derivó en cargos penales, y nunca apareció el menor rastro material o documental del supuesto estrellamiento. La masa mínima de indeterminación no refleja una duda seria sobre el fraude, sino la imposibilidad de demostrar un negativo absoluto sobre lo que pudo ocurrir en el desierto en 1948. El contraste con Roswell es deliberadamente instructivo: muestra que dos relatos de estructura casi idéntica pueden tener estatus epistémico opuesto según la evidencia, y que la etiqueta 'crash-retrieval' no confiere por sí misma credibilidad. En el corpus, Aztec es el caso que enseña a pedir la muestra de metal antes de creer en la nave.",
+  "whyMatters_en": "Aztec matters to the corpus as the crash-retrieval case that is actually resolved, and so it functions as a calibration anchor for the whole family of 'crashed craft and recovered bodies' accounts —Roswell included. Its value is twofold: it cleanly documents the mechanism by which a retrieval story is born and spreads (a source with a financial incentive, a credulous journalist, a hit book), and it also records how it is dismantled (the journalism that asks for the physical sample and gets aluminum). In a corpus that takes the nohumano_encubierto narrative seriously, Aztec is the indispensable reminder that this narrative has, at least once, a provenly fraudulent origin.\n\nThat is why the posterior loads overwhelmingly onto the mundane/natural narrative in its hoax variant. The chain is conclusive: the sources were con men with a 'doodlebug' swindle to sell, the 'alien metal' turned out to be aluminum, the hoax was exposed in the press and led to criminal charges, and not the slightest material or documentary trace of the alleged crash ever appeared. The minimal mass of indeterminacy reflects not serious doubt about the hoax but the impossibility of proving an absolute negative about what may have happened in the desert in 1948. The contrast with Roswell is deliberately instructive: it shows that two accounts of almost identical structure can have opposite epistemic status depending on the evidence, and that the 'crash-retrieval' label does not by itself confer credibility. In the corpus, Aztec is the case that teaches one to ask for the metal sample before believing in the craft.",
+  "evidence": [
+    "Columnas de Frank Scully (Variety, 1949) y su libro 'Behind the Flying Saucers' (1950) con el relato del estrellamiento de Aztec",
+    "Afirmación de un platillo de ~30 m con 16 cuerpos humanoides, 'de Venus', con dimensiones 'divisibles por nueve'",
+    "Fuentes reales: Silas Newton y Leo GeBauer, vendedores de 'doodlebugs' presentados como tecnología alienígena",
+    "Investigación de J. P. Cahn (San Francisco Chronicle): la muestra de 'metal alienígena' era aluminio corriente",
+    "Exposición del fraude en la revista True (1952); posteriores cargos por estafa contra Newton y GeBauer",
+    "Ausencia total de evidencia física, documental o testimonial verificable de un estrellamiento"
+  ],
+  "evidence_en": [
+    "Frank Scully's columns (Variety, 1949) and his book 'Behind the Flying Saucers' (1950) with the Aztec crash account",
+    "Claim of a ~99-foot saucer with 16 humanoid bodies, 'from Venus', with dimensions 'divisible by nine'",
+    "Real sources: Silas Newton and Leo GeBauer, sellers of 'doodlebugs' presented as alien technology",
+    "J. P. Cahn's investigation (San Francisco Chronicle): the 'alien metal' sample was ordinary aluminum",
+    "Exposure of the hoax in True magazine (1952); subsequent fraud charges against Newton and GeBauer",
+    "Total absence of verifiable physical, documentary or testimonial evidence of a crash"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — Aztec crashed saucer hoax",
+      "url": "https://en.wikipedia.org/wiki/Aztec_crashed_saucer_hoax"
+    },
+    {
+      "name": "SMU Physics — 'Flying Saucers and Frank Scully'",
+      "url": "https://www.physics.smu.edu/pseudo/UFOs/Scully/"
+    },
+    {
+      "name": "J. P. Cahn — 'The Flying Saucers and the Mysterious Little Men' (True, 1952; exposición del fraude)",
+      "url": "https://en.wikipedia.org/wiki/Aztec_crashed_saucer_hoax"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.86,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.0,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.0,
+    "indet": 0.1
+  }
+}
