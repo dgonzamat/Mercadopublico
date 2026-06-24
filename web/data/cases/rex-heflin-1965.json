@@ -1,0 +1,69 @@
+{
+  "id": "rex-heflin-1965",
+  "num": 250,
+  "name": "Rex Heflin · Santa Ana",
+  "name_en": "Rex Heflin · Santa Ana",
+  "year_start": 1965,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 33.745,
+    "lng": -117.868,
+    "place": "Santa Ana, Condado de Orange, California",
+    "place_en": "Santa Ana, Orange County, California"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 34,
+  "summary": "El 3 de agosto de 1965, el investigador de accidentes viales Rex Heflin tomó cuatro fotografías Polaroid de un objeto con forma de sombrero sobre una carretera de Santa Ana (California); su radio dejó de funcionar durante el avistamiento. Días después, dos hombres que decían ser de NORAD se llevaron tres originales y nunca los devolvieron. Análisis posteriores descartaron una maqueta colgada de un hilo.",
+  "summary_en": "On 3 August 1965, road-accident investigator Rex Heflin took four Polaroid photographs of a hat-shaped object over a road in Santa Ana (California); his radio failed during the sighting. Days later, two men claiming to be from NORAD took three originals and never returned them. Later analyses ruled out a model suspended by a string.",
+  "patterns": [
+    "8k",
+    "8m"
+  ],
+  "category": "incident",
+  "whatHappened": "El 3 de agosto de 1965, hacia las 12:30 del mediodía, Rex Heflin, investigador de accidentes de la Comisión de Carreteras del Condado de Los Ángeles, conducía por una zona rural de Santa Ana, en el Condado de Orange (California), cuando vio un objeto con forma de sombrero o disco invertido suspendido sobre la carretera. Heflin llevaba en el asiento una cámara Polaroid (modelo 101, película Type 107 de alta sensibilidad) y, deteniendo el camión, tomó tres fotografías en rápida sucesión a través del parabrisas; al alejarse el objeto, bajó del vehículo y tomó una cuarta y última imagen. Un detalle que reforzó su relato: intentó comunicar el avistamiento por la radio del camión y esta se negó a funcionar mientras el objeto estuvo cerca, una posible interferencia electromagnética.\n\nLas cuatro fotografías, de una nitidez inusual para la época, mostraban un objeto compacto con un reborde y, en la cuarta, un anillo de humo o vapor que dejó tras de sí. Su publicación en la prensa local desató un interés inmediato. El componente más turbio del caso llegó el 22 de septiembre de 1965: dos hombres vestidos de civil llegaron a casa de Heflin en un coche oscuro, se identificaron verbalmente como representantes de NORAD y pidieron los originales 'para análisis'. Se llevaron las tres primeras fotografías sin entregar identificación, recibo ni papeleo oficial, y prometieron devolverlas. Nunca lo hicieron. Heflin reclamó a NORAD durante años; el organismo negó cualquier implicación o conocimiento de las imágenes, igual que la Fuerza Aérea, que por su parte calificó las fotos de fraude.\n\nLa investigación civil, en cambio, fue más favorable. El NICAP y su subcomité de Los Ángeles entrevistaron a Heflin desde septiembre de 1965, verificaron su fiabilidad con jefes y compañeros —lo describieron como técnicamente competente y nada propenso a la fabulación— y aplicaron fotogrametría para concluir que el objeto no podía ser una maqueta sostenida por hilos. Un análisis temprano de Robert Nathan, del Jet Propulsion Laboratory de la NASA, trabajando con copias de prensa, apoyó la presencia de una fuente de luz en la cara inferior del objeto, coherente con el haz giratorio verdoso que Heflin describió, y descartó específicamente el modelo colgado de un hilo. El caso quedó así dividido entre el veredicto de fraude de la Fuerza Aérea y la defensa de la autenticidad por parte de los investigadores civiles, sin un cierre concluyente.",
+  "whatHappened_en": "On 3 August 1965, around 12:30 noon, Rex Heflin, an accident investigator for the Los Angeles County Highway Commission, was driving through a rural area of Santa Ana, in Orange County (California), when he saw a hat-shaped or inverted-disc object hovering over the road. Heflin had a Polaroid camera on the seat (model 101, high-speed Type 107 film) and, stopping the truck, took three photographs in rapid succession through the windshield; as the object moved away, he got out of the vehicle and took a fourth and final image. One detail reinforced his account: he tried to report the sighting over the truck's radio and it refused to work while the object was nearby, a possible electromagnetic interference.\n\nThe four photographs, of unusual sharpness for the era, showed a compact object with a rim and, in the fourth, a ring of smoke or vapor it left behind. Their publication in the local press triggered immediate interest. The murkiest part of the case came on 22 September 1965: two men in civilian clothes arrived at Heflin's home in a dark car, verbally identified themselves as NORAD representatives and asked for the originals 'for analysis'. They took the first three photographs without providing identification, receipt or official paperwork, and promised to return them. They never did. Heflin appealed to NORAD for years; the agency denied any involvement or knowledge of the images, as did the Air Force, which for its part labeled the photos a fraud.\n\nThe civilian investigation, by contrast, was more favorable. NICAP and its Los Angeles subcommittee interviewed Heflin from September 1965, verified his reliability with supervisors and coworkers —describing him as technically competent and not prone to fabrication— and applied photogrammetry to conclude that the object could not be a model held by strings. An early analysis by Robert Nathan, of NASA's Jet Propulsion Laboratory, working with press copies, supported the presence of a light source on the object's underside, consistent with the greenish rotating beam Heflin described, and specifically ruled out the string-suspended model. The case thus remained split between the Air Force's fraud verdict and the civilian investigators' defense of authenticity, without a conclusive close.",
+  "whyMatters": "Heflin importa al corpus por la rara combinación de dos rasgos que pocas veces coinciden en un caso fotográfico: una imagen de calidad sometida a análisis técnico serio, y un componente de conducta institucional anómala —la incautación de los originales por hombres que decían ser de NORAD y nunca los devolvieron, seguida de la negación oficial de toda implicación—. Ese segundo elemento, que conecta con el patrón de gestión opaca (8m) y, junto al fallo de la radio, con la interferencia electromagnética (8k), es lo que lo eleva por encima de la simple foto de disco: el caso documenta no solo lo que Heflin vio, sino lo que el aparato oficial hizo con la evidencia.\n\nAhora bien, la honestidad analítica reparte el posterior entre la indeterminación y la narrativa mundano/misid, sin cargar sobre lo no humano. La fotogrametría del NICAP y el análisis de Nathan debilitan la hipótesis más obvia —una maqueta colgada de un hilo cerca de la cámara—, pero no la cierran del todo, y a lo largo de los años han persistido análisis que reabren la posibilidad de un modelo pequeño fotografiado a corta distancia, lo que mantiene viva la lectura de fraude que defendió la Fuerza Aérea. La pérdida de los negativos originales —exactamente como en Calvine— impide un veredicto forense definitivo y es, irónicamente, lo que impide cerrar el caso en cualquier dirección. La masa de indeterminación recoge ese empate técnico; la pequeña porción no humana, el hecho de que ningún análisis ha demostrado el truco. En el corpus, Heflin es el caso fotográfico que ilustra cómo la desaparición de los originales convierte una buena imagen en una pregunta permanentemente abierta.",
+  "whyMatters_en": "Heflin matters to the corpus for the rare combination of two features that seldom coincide in a photographic case: a quality image subjected to serious technical analysis, and a component of anomalous institutional behavior —the seizure of the originals by men claiming to be from NORAD who never returned them, followed by the official denial of any involvement. That second element, connecting to the opaque-handling pattern (8m) and, together with the radio failure, to electromagnetic interference (8k), is what raises it above a simple disc photo: the case documents not only what Heflin saw, but what the official apparatus did with the evidence.\n\nThat said, analytical honesty splits the posterior between indeterminacy and the mundane/misid narrative, without loading onto the non-human. NICAP's photogrammetry and Nathan's analysis weaken the most obvious hypothesis —a model suspended by a string near the camera— but do not fully close it, and over the years analyses have persisted that reopen the possibility of a small model photographed at close range, keeping alive the fraud reading the Air Force defended. The loss of the original negatives —exactly as in Calvine— precludes a definitive forensic verdict and is, ironically, what prevents closing the case in any direction. The indeterminacy mass captures that technical tie; the small non-human portion, the fact that no analysis has demonstrated the trick. In the corpus, Heflin is the photographic case that illustrates how the disappearance of the originals turns a good image into a permanently open question.",
+  "evidence": [
+    "Cuatro fotografías Polaroid de Rex Heflin de un objeto tipo sombrero sobre una carretera de Santa Ana (3 ago 1965)",
+    "Fallo de la radio del camión durante el avistamiento (posible interferencia electromagnética)",
+    "Anillo de humo/vapor dejado por el objeto en la cuarta imagen",
+    "Incautación de tres originales (22 sep 1965) por dos hombres que decían ser de NORAD, sin recibo; nunca devueltos; NORAD negó implicación",
+    "Veredicto de fraude de la Fuerza Aérea, disputado por el NICAP",
+    "Fotogrametría del NICAP y análisis de Robert Nathan (JPL) que descartan una maqueta colgada de un hilo"
+  ],
+  "evidence_en": [
+    "Four Polaroid photographs by Rex Heflin of a hat-shaped object over a Santa Ana road (3 Aug 1965)",
+    "Truck radio failure during the sighting (possible electromagnetic interference)",
+    "Ring of smoke/vapor left by the object in the fourth image",
+    "Seizure of three originals (22 Sep 1965) by two men claiming to be from NORAD, without receipt; never returned; NORAD denied involvement",
+    "Air Force fraud verdict, disputed by NICAP",
+    "NICAP photogrammetry and Robert Nathan (JPL) analysis ruling out a model suspended by a string"
+  ],
+  "sources": [
+    {
+      "name": "Patrick Gross / UFO-Logie — 'The Rex Heflin photographs case, Santa Ana, 1965'",
+      "url": "https://ufologie.patrickgross.org/htm/heflin65.htm"
+    },
+    {
+      "name": "A. Druffel et al. — 'Reanalysis of the 1965 Heflin UFO Photos' (Journal of Scientific Exploration)",
+      "url": "https://tustinhistory.com/wp-content/uploads/2019/01/Reanalysis-of-the-1965-Heflin-UFO-Photos-Society-for-Scientific-.pdf"
+    },
+    {
+      "name": "UFO Evidence — 'Rex Heflin UFO Photographs - Santa Ana, California, August 3, 1965'",
+      "url": "http://www.ufoevidence.org/cases/case253.htm"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.46,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.08,
+    "indet": 0.39
+  }
+}
