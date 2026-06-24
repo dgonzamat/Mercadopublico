@@ -13,6 +13,10 @@ const eslintConfig = [
       "node_modules/**",
       "public/**",
       "next-env.d.ts",
+      // Cloudflare Worker (contador de visitas): se despliega aparte con
+      // wrangler, no forma parte del build/lint de la web (runtime Workers,
+      // no Next). Ver workers/visitors/README.md.
+      "workers/**",
     ],
   },
   ...coreWebVitals,
