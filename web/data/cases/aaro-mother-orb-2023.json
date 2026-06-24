@@ -1,0 +1,70 @@
+{
+  "id": "aaro-mother-orb-2023",
+  "num": 232,
+  "name": "Orbe madre · Oeste de EE.UU.",
+  "name_en": "Mother Orb · Western U.S.",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.0,
+    "lng": -116.0,
+    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
+    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "Durante dos días de octubre de 2023, seis agentes federales (tres equipos de dos) observaron cerca de un sitio de seguridad nacional sensible en el oeste de EE.UU. un orbe naranja 'madre' que aparecía 1-2 segundos y liberaba racimos de 2-4 orbes rojos. AARO publicó el informe el 5 de junio de 2026 (director Jon Kosloski): ~60% se correlaciona con bengalas IR y radar; ~40% permanece sin explicar.",
+  "summary_en": "Over two days in October 2023, six federal agents (three two-person teams) observed near a sensitive national security site in the western U.S. an orange 'mother' orb that appeared for 1-2 seconds and released clusters of 2-4 red orbs. AARO published the report on 5 June 2026 (director Jon Kosloski): ~60% correlates with IR flares and radar; ~40% remains unexplained.",
+  "patterns": [
+    "8b"
+  ],
+  "category": "incident",
+  "whatHappened": "El caso, designado oficialmente por AARO como el 'Western United States Event', se conoció públicamente el 12 de junio de 2026, cuando el sistema PURSUE liberó su tercera tanda de archivos UAP. Entre ese material figuraba un informe de análisis de caso fechado el 5 de junio de 2026 y firmado por el Dr. Jon Kosloski, director de la All-domain Anomaly Resolution Office (AARO). El documento reconstruye un episodio ocurrido a lo largo de dos días de octubre de 2023 en las inmediaciones de un sitio de seguridad nacional sensible del oeste de Estados Unidos, cuya ubicación exacta no se reveló.\n\nLos testigos fueron seis agentes especiales de fuerzas del orden federales, organizados en tres equipos de dos personas que observaron desde posiciones y ángulos distintos. Según sus relatos, un orbe de color naranja —descrito como 'madre'— aparecía durante apenas uno o dos segundos y, en ese breve lapso, liberaba un racimo de entre dos y cuatro orbes rojos más pequeños, tras lo cual el orbe naranja desaparecía. Los orbes rojos exhibían perfiles cinemáticos variados: movimiento horizontal aparentemente coordinado entre ellos, cambios de altitud y persistencia de varios segundos antes de esfumarse. El detalle más llamativo —y el más difícil de explicar— es que en al menos una ocasión los agentes describieron un orbe rojo que permaneció estacionario sobre una cresta montañosa durante varias horas. Debido a la naturaleza secuencial de los avistamientos desde varios puntos, el informe advierte que no puede determinarse si hubo un único orbe 'madre' naranja liberando los grupos rojos o varios orbes naranjas actuando en momentos distintos.\n\nLa disposición de AARO es matizada y constituye el núcleo analítico del caso. La oficina correlacionó los datos con registros de radar y ADS-B y con bitácoras de vuelo, y concluyó que aproximadamente un 60% de la actividad reportada 'se alinea fuertemente' con una explicación prosaica: aeronaves militares dispensando bengalas de contramedida infrarroja (flares) en la zona como parte de un ejercicio estándar. Las bengalas, lanzadas en racimos desde una aeronave, reproducen con verosimilitud la imagen de una 'fuente' que libera múltiples puntos brillantes que luego se apagan. Sin embargo, AARO cifró en torno al 40% la porción de los fenómenos que no logró resolver con esa ni con ninguna otra explicación conocida, y mantuvo el caso formalmente como 'no resuelto', señalando que 'tecnología no reconocida' podría dar cuenta de hasta ese 40%. El orbe rojo estacionario durante horas es precisamente el tipo de observación que las bengalas —que arden y caen en segundos— no explican.",
+  "whatHappened_en": "The case, officially designated by AARO as the 'Western United States Event', became public on 12 June 2026, when the PURSUE system released its third batch of UAP files. Among that material was a case-analysis report dated 5 June 2026 and signed by Dr. Jon Kosloski, director of the All-domain Anomaly Resolution Office (AARO). The document reconstructs an episode that unfolded over two days in October 2023 near a sensitive national security site in the western United States, whose exact location was not disclosed.\n\nThe witnesses were six federal law-enforcement special agents, organized into three two-person teams who observed from different positions and angles. By their accounts, an orange orb —described as a 'mother'— appeared for just one or two seconds and, in that brief span, released a cluster of two to four smaller red orbs, after which the orange orb vanished. The red orbs showed varied kinematic profiles: seemingly coordinated horizontal motion among them, altitude changes, and persistence of several seconds before fading. The most striking detail —and the hardest to explain— is that on at least one occasion the agents described a red orb that remained stationary above a mountain ridgeline for several hours. Because of the sequential nature of the sightings from multiple vantage points, the report cautions that it cannot be determined whether there was a single orange 'mother' orb releasing the red groups or several orange orbs acting at different moments.\n\nAARO's disposition is nuanced and constitutes the case's analytical core. The office correlated the data with radar and ADS-B records and with flight logs, concluding that roughly 60% of the reported activity 'strongly aligns' with a prosaic explanation: military aircraft dispensing infrared countermeasure flares in the area as part of a standard exercise. Flares, released in clusters from an aircraft, plausibly reproduce the image of a 'source' releasing multiple bright points that then extinguish. However, AARO put at around 40% the portion of the phenomena it could not resolve with that or any other known explanation, and kept the case formally 'unresolved', noting that 'unrecognized technology' could account for up to that 40%. The red orb stationary for hours is precisely the kind of observation that flares —which burn and fall within seconds— do not explain.",
+  "whyMatters": "El 'Western United States Event' importa porque es un caso de manual de cómo debería verse un análisis institucional honesto, y por eso ancla la discusión sobre el patrón 8b (madre + sub-objetos) en evidencia de máxima calidad: testigos entrenados y múltiples (seis agentes federales), correlación con radar/ADS-B y bitácoras, y una disposición que cuantifica explícitamente lo que se explica y lo que no. La oficina no cae ni en el descarte total ni en la promoción de lo exótico: atribuye el grueso (~60%) a bengalas de un ejercicio militar real y deja constancia de un residuo (~40%) que no cierra. Esa transparencia metodológica es exactamente lo que el corpus valora.\n\nPor eso el posterior carga sobre la narrativa mundano/misid, pero con una indeterminación sustancial que el propio AARO avala. La explicación de las bengalas es sólida para el comportamiento de 'orbe madre que libera orbes rojos': un avión soltando racimos de flares produce justo esa firma visual, y la coincidencia con bitácoras de vuelo es difícil de descartar. Lo que impide cerrar el caso es el residuo cinemático —sobre todo el orbe rojo inmóvil sobre una cresta durante horas, incompatible con bengalas que arden y caen en segundos—, que sostiene la masa de indeterminación y una porción menor para hipótesis de programa propio (humana_clasificada) o no-humanas. El caso es el contrapunto institucional de 2026 a los avistamientos de testigo único: cuando seis observadores entrenados, radar y bitácoras convergen, lo mundano explica mucho —pero no todo—, y la honestidad está en nombrar el resto como no resuelto en vez de forzar un veredicto.",
+  "whyMatters_en": "The 'Western United States Event' matters because it is a textbook case of what an honest institutional analysis should look like, and so it anchors the discussion of pattern 8b (mother + sub-objects) in top-quality evidence: trained, multiple witnesses (six federal agents), correlation with radar/ADS-B and flight logs, and a disposition that explicitly quantifies what is explained and what is not. The office falls neither into total dismissal nor into promotion of the exotic: it attributes the bulk (~60%) to flares from a real military exercise and records a residue (~40%) that does not close. That methodological transparency is exactly what the corpus values.\n\nThat is why the posterior loads onto the mundane/misid narrative, but with a substantial indeterminacy that AARO itself endorses. The flare explanation is solid for the 'mother orb releasing red orbs' behavior: an aircraft dropping clusters of flares produces just that visual signature, and the match with flight logs is hard to dismiss. What prevents closing the case is the kinematic residue —above all the red orb motionless over a ridgeline for hours, incompatible with flares that burn and fall within seconds— which sustains the indeterminacy mass and a smaller portion for own-program (humana_clasificada) or non-human hypotheses. The case is the 2026 institutional counterpoint to single-witness sightings: when six trained observers, radar and flight logs converge, the mundane explains much —but not all—, and the honesty lies in naming the rest as unresolved rather than forcing a verdict.",
+  "evidence": [
+    "Informe de análisis de caso de AARO fechado el 5 de junio de 2026, firmado por el director Dr. Jon Kosloski, liberado en la tercera tanda de PURSUE (12 jun 2026)",
+    "Seis agentes especiales federales (tres equipos de dos) como testigos, desde posiciones y ángulos distintos, durante dos días de octubre de 2023",
+    "Orbe naranja 'madre' que aparecía 1-2 s y liberaba racimos de 2-4 orbes rojos cerca de un sitio de seguridad nacional sensible",
+    "Orbe rojo descrito como estacionario sobre una cresta durante varias horas (no explicable por bengalas)",
+    "Correlación de AARO con radar/ADS-B y bitácoras de vuelo: ~60% alineado con bengalas IR de un ejercicio militar estándar",
+    "Disposición oficial: caso 'no resuelto'; 'tecnología no reconocida' podría explicar hasta el ~40% restante"
+  ],
+  "evidence_en": [
+    "AARO case-analysis report dated 5 June 2026, signed by director Dr. Jon Kosloski, released in PURSUE's third batch (12 Jun 2026)",
+    "Six federal special agents (three two-person teams) as witnesses, from different positions and angles, over two days in October 2023",
+    "Orange 'mother' orb appearing 1-2 s and releasing clusters of 2-4 red orbs near a sensitive national security site",
+    "Red orb described as stationary above a ridgeline for several hours (not explicable by flares)",
+    "AARO correlation with radar/ADS-B and flight logs: ~60% aligned with IR flares from a standard military exercise",
+    "Official disposition: case 'unresolved'; 'unrecognized technology' could account for up to the remaining ~40%"
+  ],
+  "sources": [
+    {
+      "name": "Department of War / AARO — 'Unresolved Case Analysis Update — Western United States Event' (PDF, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf",
+      "note": "Documento primario firmado por Jon Kosloski, 5 jun 2026.",
+      "note_en": "Primary document signed by Jon Kosloski, 5 Jun 2026."
+    },
+    {
+      "name": "Fox News — 'Pentagon UFO files describe mother orb releasing smaller objects in 2023 incident that remains unexplained'",
+      "url": "https://www.foxnews.com/media/pentagon-ufo-files-describe-mother-orb-releasing-smaller-objects-2023-incident-remains-unexplained"
+    },
+    {
+      "name": "EarthSky — '3rd batch of Pentagon UAP files: Orbs and more'",
+      "url": "https://earthsky.org/human-world/pentagon-uap-files-ufos-pursue/"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.04,
+    "indet": 0.33
+  }
+}
