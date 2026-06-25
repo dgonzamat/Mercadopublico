@@ -28,6 +28,12 @@
  *   E11 (WARN) Campos de nombre propio con español pero sin *_en.
  *   E12 (WARN) Robustez del lede: summary demasiado corto.
  *   E13 (WARN) Estándar editorial: descripción narrativa ≥ ~1 página A4.
+ *   E14 (WARN) Taxonomía huérfana: patrones de patterns.json que ningún caso
+ *       referencia (vía case.patterns) — candidatos a enlazar o retirar.
+ *   E15 (ERROR) JSON-LD prohibido: ningún `@type: "Event"` (Google aplica el
+ *       validador de eventos comerciales; usar Article + contentLocation).
+ *   E16 (WARN) Presupuesto SSG: nº de client components ("use client") bajo un
+ *       techo — protege el "zero JS shipped" del proyecto (crecimiento visible).
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -60,6 +66,13 @@ const researchers = JSON.parse(
   fs.readFileSync(path.join(root, "data", "researchers.json"), "utf-8"),
 );
 
+const readJsonList = (file, key) => {
+  const data = JSON.parse(fs.readFileSync(path.join(root, "data", file), "utf-8"));
+  return Array.isArray(data) ? data : data[key] || [];
+};
+const patternList = readJsonList("patterns.json", "patterns");
+const frameworkList = readJsonList("frameworks.json", "frameworks");
+
 const STATS = {
   cases: cases.length,
   countries: new Set(cases.map((c) => c.country)).size,
@@ -68,6 +81,8 @@ const STATS = {
   tierB: cases.filter((c) => c.tier === "B").length,
   years: Math.max(...cases.map((c) => c.year_start)) - 1947,
   researchers: researchers.length,
+  patterns: patternList.length,
+  frameworks: frameworkList.length,
 };
 
 // ─── 4. REGLAS DE DRIFT ──────────────────────────────────────────────────
@@ -437,6 +452,81 @@ for (const c of cases) {
   for (const k of MECE_CLASSES_AUDIT) meceAgg[k] += p[k];
 }
 
+// ─── 9h. RULE E14: orphan taxonomy — patterns sin caso (WARN) ────────────
+//
+// Un patrón vive en patterns.json y se referencia desde case.patterns. Un
+// patrón que ningún caso usa es taxonomía muerta: o falta enlazarlo a casos
+// que lo ejemplifican, o sobra. WARN agregado (mismo patrón que E9/E13). Los
+// frameworks NO se referencian a nivel de caso, así que esta regla solo aplica
+// a patterns (la integridad referencial de los ids usados la cubre el schema).
+
+const usedPatterns = new Set();
+for (const c of cases) for (const p of c.patterns || []) usedPatterns.add(p);
+const orphanPatterns = patternList
+  .map((p) => p.id || p.slug)
+  .filter((id) => id && !usedPatterns.has(id));
+if (orphanPatterns.length > 0) {
+  record(
+    "WARN",
+    path.join(root, "data", "patterns.json"),
+    0,
+    `E14 taxonomía: ${orphanPatterns.length}/${patternList.length} patrones sin ningún caso que los use: ${orphanPatterns.join(", ")} — enlazar a casos que los ejemplifiquen o retirar`,
+  );
+}
+
+// ─── 9i. RULE E15: JSON-LD prohibido — @type "Event" (ERROR) ─────────────
+//
+// Anti-pattern documentado (CLAUDE.md): Google aplica el validador de eventos
+// comerciales a `Event` y exige organizer/performer/offers. Los casos usan
+// Article + contentLocation:Place. Esta regla rompe el build si reaparece un
+// JSON-LD `@type: "Event"` en cualquier .ts/.tsx (no caza addEventListener ni
+// tipos de React: exige el par `@type … "Event"` propio del JSON-LD).
+
+const EVENT_LD_RE = /["']?@type["']?\s*:\s*["']Event["']/;
+const ldScanFiles = [
+  ...tsxFiles,
+  ...walk(path.join(root, "components"), [".tsx"]),
+  ...walk(path.join(root, "lib"), [".ts", ".tsx"]),
+];
+for (const file of ldScanFiles) {
+  const lines = fs.readFileSync(file, "utf-8").split("\n");
+  lines.forEach((line, i) => {
+    if (EVENT_LD_RE.test(line)) {
+      record(
+        "ERROR",
+        file,
+        i + 1,
+        `E15 JSON-LD: '@type: "Event"' prohibido (Google exige organizer/performer/offers) — usar Article + contentLocation:Place`,
+      );
+    }
+  });
+}
+
+// ─── 9j. RULE E16: presupuesto SSG — client components (WARN) ────────────
+//
+// El proyecto prioriza server components (zero JS shipped). Cada "use client"
+// envía JS al cliente. No se prohíben (el explorador BI los necesita), pero se
+// vigila el total contra un techo para que el crecimiento sea visible y
+// deliberado, no por goteo. WARN, no ERROR.
+
+const CLIENT_BUDGET = 45;
+const CLIENT_DIRECTIVE = /^\s*["']use client["']/;
+const clientScanFiles = [
+  ...walk(path.join(root, "app"), [".tsx", ".ts"]),
+  ...walk(path.join(root, "components"), [".tsx", ".ts"]),
+];
+const clientComponents = clientScanFiles.filter((f) =>
+  CLIENT_DIRECTIVE.test(fs.readFileSync(f, "utf-8")),
+);
+if (clientComponents.length > CLIENT_BUDGET) {
+  record(
+    "WARN",
+    path.join(root, "components"),
+    0,
+    `E16 SSG: ${clientComponents.length} client components (techo ${CLIENT_BUDGET}) — revisar si alguno puede ser server component; subir el techo solo si el crecimiento es deliberado`,
+  );
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
@@ -454,6 +544,8 @@ out.push(` Countries:    ${STATS.countries}`);
 out.push(` Years:        ${STATS.years}`);
 out.push(` Tier S/A/B:   ${STATS.tierS} / ${STATS.tierA} / ${STATS.tierB}`);
 out.push(` Researchers linked to ≥1 case: ${linkedCount} / ${STATS.researchers}`);
+out.push(` Patterns usados / total: ${STATS.patterns - orphanPatterns.length} / ${STATS.patterns}`);
+out.push(` Client components ("use client"): ${clientComponents.length} / techo ${CLIENT_BUDGET}`);
 out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${STATS.cases - shortBodies.length} / ${STATS.cases}`);
 out.push(` Casos con posterior MECE (no-documento): ${mecePosteriorCount}`);
 {
