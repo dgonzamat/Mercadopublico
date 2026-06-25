@@ -5,7 +5,6 @@ import { T } from "@/components/T";
 import { supabase } from "@/lib/supabase/client";
 import { fmtDateTime } from "@/lib/visitorsFormat";
 import { VisitorsTable, type VisitorRow } from "@/components/VisitorsTable";
-import { VisitorsMapLazy } from "@/components/VisitorsMapLazy";
 
 interface DailyRow {
   day: string; // YYYY-MM-DD
@@ -140,8 +139,6 @@ export function VisitorsPanel() {
     );
   }
 
-  const max = rows.length ? rows[0].count : 1;
-
   return (
     <section className="space-y-5">
       {/* Filtro de periodo */}
@@ -169,9 +166,6 @@ export function VisitorsPanel() {
           );
         })}
       </div>
-
-      {/* Mapa */}
-      <VisitorsMapLazy points={rows} max={max} />
 
       {/* Total */}
       <p className="font-mono text-xs uppercase tracking-widest text-muted">
