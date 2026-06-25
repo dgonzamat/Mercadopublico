@@ -28,6 +28,19 @@ export function countryName(cc: string, locale: "es" | "en"): string {
   }
 }
 
+/** Día (YYYY-MM-DD) → "25 jun" en es/en, fijado a UTC para no desfasar. */
+export function fmtDay(day: string, locale: string): string {
+  try {
+    return new Date(`${day}T00:00:00Z`).toLocaleDateString(locale, {
+      day: "2-digit",
+      month: "short",
+      timeZone: "UTC",
+    });
+  } catch {
+    return day;
+  }
+}
+
 /** Fecha + hora en formato 12h (AM/PM), en la zona horaria del visitante. */
 export function fmtDateTime(iso: string, locale: string): string {
   try {
