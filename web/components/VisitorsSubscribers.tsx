@@ -56,7 +56,11 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
           <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted">
             <T es="Suscriptores activos / día" en="Active subscribers / day" />
           </p>
-          <div className="flex h-16 items-end gap-[2px]">
+          <div
+            className="flex h-16 items-end gap-[2px]"
+            role="img"
+            aria-label={`Suscriptores activos por día · ${daily.length} días · pico ${maxDay}`}
+          >
             {daily.map((d) => (
               <div
                 key={d.day}

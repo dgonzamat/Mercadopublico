@@ -66,8 +66,17 @@ export function VisitorsPanel() {
     const sb = supabase;
     if (!sb) return;
     let alive = true;
+    let lastLoad = 0;
+
+    // El total de suscriptores casi no cambia: se consulta una sola vez, no en
+    // cada refetch del conteo de visitas.
+    void sb.rpc("subscriber_total").then(({ data, error }) => {
+      if (!alive || error) return;
+      setSubTotal(Number(data));
+    });
 
     const load = () => {
+      lastLoad = Date.now();
       void sb
         .from("visits_daily")
         .select("day,country,count")
@@ -120,11 +129,6 @@ export function VisitorsPanel() {
           );
         });
 
-      void sb.rpc("subscriber_total").then(({ data, error }) => {
-        if (!alive || error) return;
-        setSubTotal(Number(data));
-      });
-
       void sb
         .from("visits_by_country")
         .select("updated_at")
@@ -143,9 +147,15 @@ export function VisitorsPanel() {
     // la geo-IP encadena varios proveedores y puede tardar unos segundos, así
     // que un solo refetch a los 3.5s a veces llega antes que el increment.
     const timers = [3500, 7000, 12000].map((ms) => setTimeout(load, ms));
-    // También al volver a la pestaña (p. ej. tras navegar y regresar).
+    // También al volver a la pestaña, pero con throttle: si recién cargamos
+    // (<20s) no repetimos las consultas en cada cambio de foco.
     const onVisible = () => {
-      if (document.visibilityState === "visible") load();
+      if (
+        document.visibilityState === "visible" &&
+        Date.now() - lastLoad > 20000
+      ) {
+        load();
+      }
     };
     document.addEventListener("visibilitychange", onVisible);
     return () => {

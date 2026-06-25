@@ -92,7 +92,11 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
           <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted">
             <T es="Tendencia diaria" en="Daily trend" />
           </p>
-          <div className="flex h-20 items-end gap-[2px]">
+          <div
+            className="flex h-20 items-end gap-[2px]"
+            role="img"
+            aria-label={`Tendencia diaria de visitas · ${dailyTotals.length} días · pico ${maxDay}`}
+          >
             {dailyTotals.map((d) => (
               <div
                 key={d.day}
