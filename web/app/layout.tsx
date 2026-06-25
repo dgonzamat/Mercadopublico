@@ -7,6 +7,7 @@ import { PinterestLink } from "@/components/PinterestLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
+import { VisitorBeacon } from "@/components/VisitorBeacon";
 import { CookieConsent } from "@/components/CookieConsent";
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import { STATS } from "@/lib/siteStats";
@@ -95,6 +96,7 @@ export default function RootLayout({
       <body className="min-h-screen font-sans">
         <AuthProvider>
         <AnchorExpander />
+        <VisitorBeacon />
         <SiteHeader />
 
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
@@ -181,6 +183,7 @@ export default function RootLayout({
                   />
                   <FooterLink href="/about" es="Metodología" en="Method" />
                   <FooterLink href="/contact" es="Contacto" en="Contact" />
+                  <FooterLink href="/visitantes" es="Visitantes" en="Visitors" />
                   <FooterLink
                     href="/fuentes"
                     es="Fuentes (bibliografía)"

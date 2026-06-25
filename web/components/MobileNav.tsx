@@ -56,6 +56,7 @@ const SECONDARY_LINKS = [
   { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
   { href: "/contact", es: "Contacto", en: "Contact" },
+  { href: "/visitantes", es: "Visitantes", en: "Visitors" },
 ];
 
 export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
