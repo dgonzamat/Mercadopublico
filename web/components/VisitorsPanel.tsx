@@ -9,11 +9,18 @@ import {
   VisitorsStats,
   type VisitorsStatsData,
 } from "@/components/VisitorsStats";
+import { VisitorsPages, type PageRow } from "@/components/VisitorsPages";
 import { continentOf, type Continent } from "@/lib/continents";
 
 interface DailyRow {
   day: string; // YYYY-MM-DD
   country: string;
+  count: number;
+}
+
+interface PageDailyRow {
+  day: string; // YYYY-MM-DD
+  path: string;
   count: number;
 }
 
@@ -36,6 +43,7 @@ function utcDayMinus(days: number): string {
 
 export function VisitorsPanel() {
   const [daily, setDaily] = useState<DailyRow[]>([]);
+  const [pagesDaily, setPagesDaily] = useState<PageDailyRow[]>([]);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [period, setPeriod] = useState<Period>("all");
   const [state, setState] = useState<State>(
@@ -71,6 +79,24 @@ export function VisitorsPanel() {
         });
 
       void sb
+        .from("visits_pages_daily")
+        .select("day,path,count")
+        .then(({ data }) => {
+          if (!alive || !data) return;
+          setPagesDaily(
+            (data as Array<{
+              day: string;
+              path: string;
+              count: number | string;
+            }>).map((r) => ({
+              day: r.day,
+              path: r.path,
+              count: Number(r.count),
+            })),
+          );
+        });
+
+      void sb
         .from("visits_by_country")
         .select("updated_at")
         .then(({ data }) => {
@@ -92,7 +118,7 @@ export function VisitorsPanel() {
     };
   }, []);
 
-  const { rows, total, stats } = useMemo(() => {
+  const { rows, total, stats, pageRows } = useMemo(() => {
     const today = utcDayMinus(0);
     const cutoff =
       period === "today"
@@ -102,6 +128,15 @@ export function VisitorsPanel() {
           : period === "30d"
             ? utcDayMinus(29)
             : "0000-01-01";
+    const inPeriod = (day: string) => (period === "all" ? true : day >= cutoff);
+
+    const byPath: Record<string, number> = {};
+    for (const r of pagesDaily) {
+      if (inPeriod(r.day)) byPath[r.path] = (byPath[r.path] ?? 0) + r.count;
+    }
+    const pages: PageRow[] = Object.entries(byPath)
+      .map(([path, count]) => ({ path, count }))
+      .sort((a, b) => b.count - a.count);
 
     const byCountry: Record<string, number> = {};
     const byDay: Record<string, number> = {};
@@ -140,8 +175,13 @@ export function VisitorsPanel() {
       byContinent,
     };
 
-    return { rows: list, total: totalVisits, stats: statsData };
-  }, [daily, period]);
+    return {
+      rows: list,
+      total: totalVisits,
+      stats: statsData,
+      pageRows: pages,
+    };
+  }, [daily, pagesDaily, period]);
 
   if (state === "unconfigured" || state === "error") {
     return (
@@ -209,6 +249,9 @@ export function VisitorsPanel() {
         <T es="Por país" en="By country" />
       </p>
       <VisitorsTable rows={rows} total={total} />
+
+      {/* Páginas más visitadas */}
+      <VisitorsPages rows={pageRows} />
 
       {updatedAt && (
         <p className="font-mono text-[11px] uppercase tracking-widest text-muted">

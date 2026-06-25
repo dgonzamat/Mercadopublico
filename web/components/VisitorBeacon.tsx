@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { supabase } from "@/lib/supabase/client";
 
 /**
@@ -35,6 +36,20 @@ async function detectCountry(): Promise<string> {
  * Supabase configurado, no hace nada.
  */
 export function VisitorBeacon() {
+  const pathname = usePathname();
+  const lastPath = useRef<string | null>(null);
+
+  // Conteo de página: una vez por navegación (cada cambio de ruta). A diferencia
+  // del país, NO se deduplica por sesión — queremos pageviews. El ref evita
+  // doble disparo para la misma ruta (re-render / StrictMode en dev).
+  useEffect(() => {
+    const sb = supabase;
+    if (!sb || !pathname) return;
+    if (lastPath.current === pathname) return;
+    lastPath.current = pathname;
+    void sb.rpc("increment_page", { p: pathname });
+  }, [pathname]);
+
   useEffect(() => {
     const sb = supabase;
     if (!sb) return;
