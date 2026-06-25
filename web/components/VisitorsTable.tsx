@@ -26,6 +26,22 @@ function nameOf(cc: string, dn: Intl.DisplayNames, fallback: string): string {
   }
 }
 
+/** Fecha + hora en formato 12h (AM/PM), en la zona horaria del visitante. */
+function fmtDateTime(iso: string, locale: string): string {
+  try {
+    return new Date(iso).toLocaleString(locale, {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+  } catch {
+    return iso;
+  }
+}
+
 interface Row {
   country: string;
   count: number;
@@ -36,6 +52,7 @@ type State = "loading" | "ok" | "empty" | "error" | "unconfigured";
 export function VisitorsTable() {
   const [rows, setRows] = useState<Row[]>([]);
   const [total, setTotal] = useState(0);
+  const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [state, setState] = useState<State>(
     supabase ? "loading" : "unconfigured",
   );
@@ -48,19 +65,29 @@ export function VisitorsTable() {
     const load = () => {
       void sb
         .from("visits_by_country")
-        .select("country,count")
+        .select("country,count,updated_at")
         .then(({ data, error }) => {
           if (!alive) return;
           if (error || !data) {
             setState("error");
             return;
           }
-          const sorted: Row[] = (data as Array<{ country: string; count: number | string }>)
+          const raw = data as Array<{
+            country: string;
+            count: number | string;
+            updated_at: string;
+          }>;
+          const sorted: Row[] = raw
             .map((r) => ({ country: r.country, count: Number(r.count) }))
             .sort((a, b) => b.count - a.count);
           const t = sorted.reduce((s, r) => s + r.count, 0);
+          const last = raw.reduce(
+            (m, r) => (r.updated_at > m ? r.updated_at : m),
+            "",
+          );
           setRows(sorted);
           setTotal(t);
+          setUpdatedAt(last || null);
           setState(t > 0 ? "ok" : "empty");
         });
     };
@@ -151,6 +178,18 @@ export function VisitorsTable() {
           );
         })}
       </ul>
+
+      {updatedAt && (
+        <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+          <T es="Actualizado" en="Updated" />{": "}
+          <span className="text-text">
+            <T
+              es={fmtDateTime(updatedAt, "es")}
+              en={fmtDateTime(updatedAt, "en")}
+            />
+          </span>
+        </p>
+      )}
 
       <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
         <T
