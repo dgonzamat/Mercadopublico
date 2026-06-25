@@ -17,6 +17,28 @@ function trackingDisabled(): boolean {
 }
 
 /**
+ * ¿Es un bot / crawler? Googlebot y similares ejecutan JS y dispararían el
+ * beacon, inflando el conteo (p. ej. "visita desde EE.UU." = Googlebot). Se
+ * detectan por user-agent y por `navigator.webdriver` (automatización).
+ */
+function isBot(): boolean {
+  try {
+    if (navigator.webdriver) return true;
+    const ua = navigator.userAgent || "";
+    return /bot|crawl|spider|slurp|mediapartners|adsbot|bingpreview|facebookexternalhit|embedly|quora|pinterest|read-aloud|headless|phantom|puppeteer|playwright|lighthouse|chrome-lighthouse|gptbot|claudebot|ccbot|petalbot|yandex|baidu/i.test(
+      ua,
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** No contar: opt-out del visitante o bot detectado. */
+function skipTracking(): boolean {
+  return trackingDisabled() || isBot();
+}
+
+/**
  * Proveedores de geo-IP gratuitos (sin clave, con CORS). Se prueban en orden:
  * un solo servicio falla a menudo (timeout, rate-limit, bloqueado por adblock)
  * y deja la visita como "XX"; con varios fallbacks muchas menos quedan sin país.
@@ -77,7 +99,7 @@ export function VisitorBeacon() {
   // doble disparo para la misma ruta (re-render / StrictMode en dev).
   useEffect(() => {
     const sb = supabase;
-    if (!sb || !pathname || trackingDisabled()) return;
+    if (!sb || !pathname || skipTracking()) return;
     if (lastPath.current === pathname) return;
     lastPath.current = pathname;
     void sb.rpc("increment_page", { p: pathname });
@@ -88,7 +110,7 @@ export function VisitorBeacon() {
   // un login posterior (alguien que navega y luego entra a /laboratorio).
   useEffect(() => {
     const sb = supabase;
-    if (!sb || trackingDisabled()) return;
+    if (!sb || skipTracking()) return;
     const FLAG = "uap-sub-seen";
     let done = false;
 
@@ -120,7 +142,7 @@ export function VisitorBeacon() {
 
   useEffect(() => {
     const sb = supabase;
-    if (!sb || trackingDisabled()) return;
+    if (!sb || skipTracking()) return;
 
     const FLAG = "uap-visit-pinged";
     let already = false;
