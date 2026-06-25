@@ -21,7 +21,21 @@ export function VisitorsPages({
   rows: PageRow[];
   limit?: number;
 }) {
-  if (rows.length === 0) return null;
+  if (rows.length === 0) {
+    return (
+      <div className="space-y-1.5">
+        <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+          <T es="Páginas más visitadas" en="Most visited pages" />
+        </p>
+        <p className="rounded border border-border bg-panel px-4 py-4 text-sm text-muted">
+          <T
+            es="Aún sin datos de páginas en este periodo."
+            en="No page data in this period yet."
+          />
+        </p>
+      </div>
+    );
+  }
 
   const top = rows.slice(0, limit);
   const total = rows.reduce((s, r) => s + r.count, 0);

@@ -4,6 +4,18 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { supabase } from "@/lib/supabase/client";
 
+/** Clave del opt-out: si está en "1" el visitante pidió no ser contado. */
+const NOTRACK_KEY = "uap-notrack";
+
+/** ¿El visitante desactivó el conteo? (toggle en /visitantes). */
+function trackingDisabled(): boolean {
+  try {
+    return localStorage.getItem(NOTRACK_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
 /**
  * Proveedores de geo-IP gratuitos (sin clave, con CORS). Se prueban en orden:
  * un solo servicio falla a menudo (timeout, rate-limit, bloqueado por adblock)
@@ -65,7 +77,7 @@ export function VisitorBeacon() {
   // doble disparo para la misma ruta (re-render / StrictMode en dev).
   useEffect(() => {
     const sb = supabase;
-    if (!sb || !pathname) return;
+    if (!sb || !pathname || trackingDisabled()) return;
     if (lastPath.current === pathname) return;
     lastPath.current = pathname;
     void sb.rpc("increment_page", { p: pathname });
@@ -76,7 +88,7 @@ export function VisitorBeacon() {
   // un login posterior (alguien que navega y luego entra a /laboratorio).
   useEffect(() => {
     const sb = supabase;
-    if (!sb) return;
+    if (!sb || trackingDisabled()) return;
     const FLAG = "uap-sub-seen";
     let done = false;
 
@@ -108,7 +120,7 @@ export function VisitorBeacon() {
 
   useEffect(() => {
     const sb = supabase;
-    if (!sb) return;
+    if (!sb || trackingDisabled()) return;
 
     const FLAG = "uap-visit-pinged";
     let already = false;
