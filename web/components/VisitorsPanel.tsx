@@ -10,6 +10,11 @@ import {
   type VisitorsStatsData,
 } from "@/components/VisitorsStats";
 import { VisitorsPages, type PageRow } from "@/components/VisitorsPages";
+import {
+  VisitorsSubscribers,
+  type VisitorsSubscribersData,
+} from "@/components/VisitorsSubscribers";
+import { TrackingToggle } from "@/components/TrackingToggle";
 import { continentOf, type Continent } from "@/lib/continents";
 
 interface DailyRow {
@@ -21,6 +26,11 @@ interface DailyRow {
 interface PageDailyRow {
   day: string; // YYYY-MM-DD
   path: string;
+  count: number;
+}
+
+interface SubDailyRow {
+  day: string; // YYYY-MM-DD
   count: number;
 }
 
@@ -44,6 +54,8 @@ function utcDayMinus(days: number): string {
 export function VisitorsPanel() {
   const [daily, setDaily] = useState<DailyRow[]>([]);
   const [pagesDaily, setPagesDaily] = useState<PageDailyRow[]>([]);
+  const [subDaily, setSubDaily] = useState<SubDailyRow[]>([]);
+  const [subTotal, setSubTotal] = useState<number | null>(null);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [period, setPeriod] = useState<Period>("all");
   const [state, setState] = useState<State>(
@@ -97,6 +109,23 @@ export function VisitorsPanel() {
         });
 
       void sb
+        .from("subscriber_active_daily")
+        .select("day,count")
+        .then(({ data }) => {
+          if (!alive || !data) return;
+          setSubDaily(
+            (data as Array<{ day: string; count: number | string }>).map(
+              (r) => ({ day: r.day, count: Number(r.count) }),
+            ),
+          );
+        });
+
+      void sb.rpc("subscriber_total").then(({ data, error }) => {
+        if (!alive || error) return;
+        setSubTotal(Number(data));
+      });
+
+      void sb
         .from("visits_by_country")
         .select("updated_at")
         .then(({ data }) => {
@@ -118,7 +147,7 @@ export function VisitorsPanel() {
     };
   }, []);
 
-  const { rows, total, stats, pageRows } = useMemo(() => {
+  const { rows, total, stats, pageRows, subscribers } = useMemo(() => {
     const today = utcDayMinus(0);
     const cutoff =
       period === "today"
@@ -175,13 +204,24 @@ export function VisitorsPanel() {
       byContinent,
     };
 
+    const subDailyInPeriod = subDaily
+      .filter((r) => inPeriod(r.day))
+      .map((r) => ({ day: r.day, count: r.count }))
+      .sort((a, b) => a.day.localeCompare(b.day));
+    const subsData: VisitorsSubscribersData = {
+      total: subTotal,
+      activeToday: subDaily.find((r) => r.day === today)?.count ?? 0,
+      daily: subDailyInPeriod,
+    };
+
     return {
       rows: list,
       total: totalVisits,
       stats: statsData,
       pageRows: pages,
+      subscribers: subsData,
     };
-  }, [daily, pagesDaily, period]);
+  }, [daily, pagesDaily, subDaily, subTotal, period]);
 
   if (state === "unconfigured" || state === "error") {
     return (
@@ -244,6 +284,9 @@ export function VisitorsPanel() {
       {/* Estadísticas derivadas */}
       <VisitorsStats data={stats} />
 
+      {/* Suscriptores (usuarios autenticados) */}
+      <VisitorsSubscribers data={subscribers} />
+
       {/* Tabla por país */}
       <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
         <T es="Por país" en="By country" />
@@ -265,12 +308,15 @@ export function VisitorsPanel() {
         </p>
       )}
 
-      <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T
-          es="Agregado por país · sin cookies ni IPs"
-          en="Aggregated by country · no cookies or IPs"
-        />
-      </p>
+      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border/60 pt-4">
+        <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+          <T
+            es="Agregado por país · sin cookies ni IPs"
+            en="Aggregated by country · no cookies or IPs"
+          />
+        </p>
+        <TrackingToggle />
+      </div>
     </section>
   );
 }
