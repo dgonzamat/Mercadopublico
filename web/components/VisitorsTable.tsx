@@ -45,26 +45,34 @@ export function VisitorsTable() {
     if (!sb) return;
     let alive = true;
 
-    void sb
-      .from("visits_by_country")
-      .select("country,count")
-      .then(({ data, error }) => {
-        if (!alive) return;
-        if (error || !data) {
-          setState("error");
-          return;
-        }
-        const sorted: Row[] = (data as Array<{ country: string; count: number | string }>)
-          .map((r) => ({ country: r.country, count: Number(r.count) }))
-          .sort((a, b) => b.count - a.count);
-        const t = sorted.reduce((s, r) => s + r.count, 0);
-        setRows(sorted);
-        setTotal(t);
-        setState(t > 0 ? "ok" : "empty");
-      });
+    const load = () => {
+      void sb
+        .from("visits_by_country")
+        .select("country,count")
+        .then(({ data, error }) => {
+          if (!alive) return;
+          if (error || !data) {
+            setState("error");
+            return;
+          }
+          const sorted: Row[] = (data as Array<{ country: string; count: number | string }>)
+            .map((r) => ({ country: r.country, count: Number(r.count) }))
+            .sort((a, b) => b.count - a.count);
+          const t = sorted.reduce((s, r) => s + r.count, 0);
+          setRows(sorted);
+          setTotal(t);
+          setState(t > 0 ? "ok" : "empty");
+        });
+    };
+
+    load();
+    // Recarga una vez tras el conteo del beacon (geo-IP hasta 2.5s + rpc), para
+    // que la propia visita del usuario aparezca sin tener que recargar a mano.
+    const refetch = setTimeout(load, 3500);
 
     return () => {
       alive = false;
+      clearTimeout(refetch);
     };
   }, []);
 

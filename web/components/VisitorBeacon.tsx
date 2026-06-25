@@ -4,25 +4,35 @@ import { useEffect } from "react";
 import { supabase } from "@/lib/supabase/client";
 
 /**
- * Detecta el país del visitante con una API de geo-IP gratuita (sin clave).
- * Solo se usa para obtener el código ISO-2; no guardamos la IP. Si falla,
- * devuelve "XX" (desconocido).
+ * Detecta el país del visitante con una API de geo-IP gratuita (sin clave),
+ * con un timeout duro: si la red es lenta o el servicio no responde, no se
+ * cuelga — devuelve "XX" (desconocido) y la visita se cuenta igual. Solo se
+ * usa para obtener el código ISO-2; no guardamos la IP.
  */
 async function detectCountry(): Promise<string> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 2500);
   try {
-    const res = await fetch("https://ipwho.is/", { cache: "no-store" });
+    const res = await fetch("https://ipwho.is/", {
+      cache: "no-store",
+      signal: controller.signal,
+    });
     const data: { country_code?: string } = await res.json();
     const cc = data.country_code ?? "";
     return /^[A-Za-z]{2}$/.test(cc) ? cc.toUpperCase() : "XX";
   } catch {
     return "XX";
+  } finally {
+    clearTimeout(timer);
   }
 }
 
 /**
- * Cuenta una visita por país (una vez por sesión). Detecta el país y llama a
- * la función `increment_visit` de Supabase, que hace el upsert atómico en
- * `visits_by_country`. Render nulo. Sin Supabase configurado, no hace nada.
+ * Cuenta una visita por país (una vez por sesión). Detecta el país (con
+ * timeout, nunca bloquea) y llama a la función `increment_visit` de Supabase,
+ * que hace el upsert atómico en `visits_by_country`. El conteo se dispara
+ * siempre, aunque la geo-IP falle (cuenta como "XX"). Render nulo. Sin
+ * Supabase configurado, no hace nada.
  */
 export function VisitorBeacon() {
   useEffect(() => {
@@ -39,9 +49,19 @@ export function VisitorBeacon() {
     }
     if (already) return;
 
-    void detectCountry().then((cc) => {
-      void sb.rpc("increment_visit", { cc });
-    });
+    void (async () => {
+      const cc = await detectCountry();
+      const { error } = await sb.rpc("increment_visit", { cc });
+      if (error) {
+        // Reintento defensivo: si falló (p. ej. red intermitente), no se
+        // marca la sesión como contada para que un reload lo reintente.
+        try {
+          sessionStorage.removeItem(FLAG);
+        } catch {
+          // sessionStorage no disponible: nada que limpiar.
+        }
+      }
+    })();
   }, []);
 
   return null;
