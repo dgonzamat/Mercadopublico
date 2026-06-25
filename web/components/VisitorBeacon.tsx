@@ -48,7 +48,7 @@ async function fetchCountry(
 async function detectCountry(): Promise<string> {
   for (const p of GEO_PROVIDERS) {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 2500);
+    const timer = setTimeout(() => controller.abort(), 1800);
     try {
       const cc = await fetchCountry(p.url, p.pick, controller.signal);
       if (cc) return cc;
