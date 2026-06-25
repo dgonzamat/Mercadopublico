@@ -28,6 +28,41 @@ export function countryName(cc: string, locale: "es" | "en"): string {
   }
 }
 
+const SECTION_LABEL: Record<string, { es: string; en: string }> = {
+  "": { es: "Inicio", en: "Home" },
+  cases: { es: "Casos", en: "Cases" },
+  probabilidades: { es: "Probabilidades", en: "Probabilities" },
+  atlas: { es: "Atlas", en: "Atlas" },
+  patterns: { es: "Patrones", en: "Patterns" },
+  researchers: { es: "Investigadores", en: "Researchers" },
+  frameworks: { es: "Frameworks", en: "Frameworks" },
+  about: { es: "Acerca", en: "About" },
+  resumen: { es: "Resumen", en: "Summary" },
+  visitantes: { es: "Visitantes", en: "Visitors" },
+  posts: { es: "Blog", en: "Blog" },
+};
+
+/** Convierte un slug ("rendlesham-1980") en texto legible ("Rendlesham 1980"). */
+function prettySlug(slug: string): string {
+  const s = decodeURIComponent(slug).replace(/-/g, " ").trim();
+  return s.replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+/**
+ * Ruta → etiqueta legible en es/en. "/" → Inicio; "/cases" → Casos;
+ * "/cases/rendlesham-1980" → "Casos · Rendlesham 1980". Rutas desconocidas
+ * caen al propio path.
+ */
+export function pageLabel(path: string, locale: "es" | "en"): string {
+  const clean = path.split("?")[0].split("#")[0];
+  const parts = clean.split("/").filter(Boolean); // ["cases","slug"]
+  const section = SECTION_LABEL[parts[0] ?? ""];
+  if (!section) return clean || "/";
+  const head = section[locale];
+  if (parts.length <= 1) return head;
+  return `${head} · ${prettySlug(parts.slice(1).join("/"))}`;
+}
+
 /** Día (YYYY-MM-DD) → "25 jun" en es/en, fijado a UTC para no desfasar. */
 export function fmtDay(day: string, locale: string): string {
   try {
