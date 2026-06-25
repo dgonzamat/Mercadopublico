@@ -1,6 +1,6 @@
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
-import { VisitorsTable } from "@/components/VisitorsTable";
+import { VisitorsPanel } from "@/components/VisitorsPanel";
 
 export const metadata = {
   title: "Visitantes por país",
@@ -27,7 +27,7 @@ export default function VisitantesPage() {
         </Lede>
       </header>
 
-      <VisitorsTable />
+      <VisitorsPanel />
     </article>
   );
 }
