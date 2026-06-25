@@ -250,16 +250,9 @@ export function VisitorsPanel() {
     );
   }
 
-  if (state === "empty") {
-    return (
-      <p className="rounded border border-border bg-panel px-4 py-6 text-sm text-muted">
-        <T
-          es="Aún no hay visitas registradas. Vuelve en un rato."
-          en="No visits recorded yet. Check back later."
-        />
-      </p>
-    );
-  }
+  // Nota: con state === "empty" (cero visitas) NO cortamos: mostramos el panel
+  // completo igual, así se ven los filtros, el bloque de suscriptores y el
+  // toggle. Cada sección tiene su propio estado vacío.
 
   return (
     <section className="space-y-5">
