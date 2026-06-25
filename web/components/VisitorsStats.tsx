@@ -1,0 +1,166 @@
+"use client";
+
+import { T } from "@/components/T";
+import { fmtDay } from "@/lib/visitorsFormat";
+import { CONTINENT_NAME, CONTINENT_GLYPH, type Continent } from "@/lib/continents";
+
+export interface DayTotal {
+  day: string; // YYYY-MM-DD
+  count: number;
+}
+
+export interface RegionTotal {
+  key: Continent | "XX";
+  count: number;
+}
+
+export interface VisitorsStatsData {
+  total: number;
+  countries: number;
+  avgPerDay: number;
+  peak: DayTotal | null;
+  dailyTotals: DayTotal[]; // ascendente por día
+  byContinent: RegionTotal[]; // descendente por count
+}
+
+function Card({
+  label,
+  value,
+  sub,
+}: {
+  label: React.ReactNode;
+  value: React.ReactNode;
+  sub?: React.ReactNode;
+}) {
+  return (
+    <div className="rounded border border-border bg-panel px-3 py-3">
+      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+        {label}
+      </p>
+      <p className="mt-1 text-xl font-semibold text-text">{value}</p>
+      {sub && (
+        <p className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-muted">
+          {sub}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Estadísticas derivadas (sin tracking extra): tarjetas de totales, tendencia
+ * diaria y desglose por continente. Todo se recalcula según el periodo elegido
+ * en VisitorsPanel, que pasa los agregados ya listos.
+ */
+export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
+  const { total, countries, avgPerDay, peak, dailyTotals, byContinent } = data;
+  const maxDay = dailyTotals.reduce((m, d) => Math.max(m, d.count), 0) || 1;
+  const regionMax = byContinent.reduce((m, r) => Math.max(m, r.count), 0) || 1;
+
+  return (
+    <div className="space-y-5">
+      {/* Tarjetas de totales */}
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <Card
+          label={<T es="Visitas" en="Visits" />}
+          value={total.toLocaleString()}
+        />
+        <Card
+          label={<T es="Países" en="Countries" />}
+          value={countries.toLocaleString()}
+        />
+        <Card
+          label={<T es="Promedio/día" en="Avg/day" />}
+          value={avgPerDay.toLocaleString(undefined, {
+            maximumFractionDigits: 1,
+          })}
+        />
+        <Card
+          label={<T es="Día más activo" en="Busiest day" />}
+          value={peak ? peak.count.toLocaleString() : "—"}
+          sub={
+            peak ? (
+              <T es={fmtDay(peak.day, "es")} en={fmtDay(peak.day, "en")} />
+            ) : undefined
+          }
+        />
+      </div>
+
+      {/* Tendencia diaria */}
+      {dailyTotals.length >= 2 && (
+        <div className="rounded border border-border bg-panel px-3 py-3">
+          <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted">
+            <T es="Tendencia diaria" en="Daily trend" />
+          </p>
+          <div className="flex h-20 items-end gap-[2px]">
+            {dailyTotals.map((d) => (
+              <div
+                key={d.day}
+                className="flex-1 rounded-t bg-accent/70"
+                style={{ height: `${Math.max((d.count / maxDay) * 100, 3)}%` }}
+                title={`${fmtDay(d.day, "es")} · ${d.count}`}
+                aria-hidden
+              />
+            ))}
+          </div>
+          <div className="mt-1 flex justify-between font-mono text-[10px] uppercase tracking-widest text-muted">
+            <T
+              es={fmtDay(dailyTotals[0].day, "es")}
+              en={fmtDay(dailyTotals[0].day, "en")}
+            />
+            <T
+              es={fmtDay(dailyTotals[dailyTotals.length - 1].day, "es")}
+              en={fmtDay(dailyTotals[dailyTotals.length - 1].day, "en")}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Desglose por continente */}
+      {byContinent.length > 1 && (
+        <div className="space-y-1.5">
+          <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+            <T es="Por continente" en="By continent" />
+          </p>
+          <ul className="space-y-1.5">
+            {byContinent.map((r) => {
+              const name =
+                r.key === "XX"
+                  ? { es: "Desconocido", en: "Unknown" }
+                  : CONTINENT_NAME[r.key];
+              const glyph = r.key === "XX" ? "🏳️" : CONTINENT_GLYPH[r.key];
+              const pct = total ? (r.count / total) * 100 : 0;
+              const barPct = (r.count / regionMax) * 100;
+              return (
+                <li
+                  key={r.key}
+                  className="grid grid-cols-[1.5rem_1fr_auto] items-center gap-3 border-b border-border/60 py-1.5"
+                >
+                  <span className="text-base leading-none" aria-hidden>
+                    {glyph}
+                  </span>
+                  <div className="min-w-0">
+                    <span className="block truncate text-sm text-text">
+                      <T es={name.es} en={name.en} />
+                    </span>
+                    <span
+                      className="mt-1 block h-1 rounded bg-accent"
+                      style={{ width: `${Math.max(barPct, 2)}%` }}
+                      aria-hidden
+                    />
+                  </div>
+                  <span className="whitespace-nowrap text-right font-mono text-xs text-muted">
+                    <span className="text-text">
+                      {r.count.toLocaleString()}
+                    </span>{" "}
+                    {pct.toFixed(1)}%
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}

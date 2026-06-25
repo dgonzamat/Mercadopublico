@@ -5,6 +5,11 @@ import { T } from "@/components/T";
 import { supabase } from "@/lib/supabase/client";
 import { fmtDateTime } from "@/lib/visitorsFormat";
 import { VisitorsTable, type VisitorRow } from "@/components/VisitorsTable";
+import {
+  VisitorsStats,
+  type VisitorsStatsData,
+} from "@/components/VisitorsStats";
+import { continentOf, type Continent } from "@/lib/continents";
 
 interface DailyRow {
   day: string; // YYYY-MM-DD
@@ -87,7 +92,7 @@ export function VisitorsPanel() {
     };
   }, []);
 
-  const { rows, total } = useMemo(() => {
+  const { rows, total, stats } = useMemo(() => {
     const today = utcDayMinus(0);
     const cutoff =
       period === "today"
@@ -99,14 +104,43 @@ export function VisitorsPanel() {
             : "0000-01-01";
 
     const byCountry: Record<string, number> = {};
+    const byDay: Record<string, number> = {};
+    const byRegion: Record<string, number> = {};
     for (const r of daily) {
       const inRange = period === "all" ? true : r.day >= cutoff;
-      if (inRange) byCountry[r.country] = (byCountry[r.country] ?? 0) + r.count;
+      if (!inRange) continue;
+      byCountry[r.country] = (byCountry[r.country] ?? 0) + r.count;
+      byDay[r.day] = (byDay[r.day] ?? 0) + r.count;
+      const region: Continent | "XX" = continentOf(r.country) ?? "XX";
+      byRegion[region] = (byRegion[region] ?? 0) + r.count;
     }
+
     const list: VisitorRow[] = Object.entries(byCountry)
       .map(([country, count]) => ({ country, count }))
       .sort((a, b) => b.count - a.count);
-    return { rows: list, total: list.reduce((s, r) => s + r.count, 0) };
+    const totalVisits = list.reduce((s, r) => s + r.count, 0);
+
+    const dailyTotals = Object.entries(byDay)
+      .map(([day, count]) => ({ day, count }))
+      .sort((a, b) => a.day.localeCompare(b.day));
+    const peak = dailyTotals.reduce<{ day: string; count: number } | null>(
+      (best, d) => (!best || d.count > best.count ? d : best),
+      null,
+    );
+    const byContinent = Object.entries(byRegion)
+      .map(([key, count]) => ({ key: key as Continent | "XX", count }))
+      .sort((a, b) => b.count - a.count);
+
+    const statsData: VisitorsStatsData = {
+      total: totalVisits,
+      countries: list.length,
+      avgPerDay: dailyTotals.length ? totalVisits / dailyTotals.length : 0,
+      peak,
+      dailyTotals,
+      byContinent,
+    };
+
+    return { rows: list, total: totalVisits, stats: statsData };
   }, [daily, period]);
 
   if (state === "unconfigured" || state === "error") {
@@ -167,16 +201,13 @@ export function VisitorsPanel() {
         })}
       </div>
 
-      {/* Total */}
-      <p className="font-mono text-xs uppercase tracking-widest text-muted">
-        <T es="Total" en="Total" />{" "}
-        <span className="text-text">{total.toLocaleString()}</span>
-        {" · "}
-        <T es="países" en="countries" />{" "}
-        <span className="text-text">{rows.length}</span>
-      </p>
+      {/* Estadísticas derivadas */}
+      <VisitorsStats data={stats} />
 
-      {/* Tabla */}
+      {/* Tabla por país */}
+      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+        <T es="Por país" en="By country" />
+      </p>
       <VisitorsTable rows={rows} total={total} />
 
       {updatedAt && (
