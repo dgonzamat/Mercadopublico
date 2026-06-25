@@ -139,11 +139,19 @@ export function VisitorsPanel() {
     };
 
     load();
-    // Recarga una vez tras el conteo del beacon, para ver la propia visita.
-    const refetch = setTimeout(load, 3500);
+    // Recarga varias veces tras el conteo del beacon para ver la propia visita:
+    // la geo-IP encadena varios proveedores y puede tardar unos segundos, así
+    // que un solo refetch a los 3.5s a veces llega antes que el increment.
+    const timers = [3500, 7000, 12000].map((ms) => setTimeout(load, ms));
+    // También al volver a la pestaña (p. ej. tras navegar y regresar).
+    const onVisible = () => {
+      if (document.visibilityState === "visible") load();
+    };
+    document.addEventListener("visibilitychange", onVisible);
     return () => {
       alive = false;
-      clearTimeout(refetch);
+      timers.forEach(clearTimeout);
+      document.removeEventListener("visibilitychange", onVisible);
     };
   }, []);
 
