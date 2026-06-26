@@ -3021,5 +3021,102 @@
         "url": "https://www.youtube.com/watch?v=nqLnEVcZ8vE"
       }
     ]
+  },
+  {
+    "id": "randles",
+    "name": "Jenny Randles",
+    "flag": "🇬🇧",
+    "born": 1951,
+    "section": "A",
+    "section_label": "Ufología de campo (Reino Unido)",
+    "section_label_en": "Field ufology (United Kingdom)",
+    "credentials": "Investigadora y autora británica · ex directora de investigaciones de BUFORA · ~50 libros sobre el fenómeno",
+    "credentials_en": "British investigator and author · former BUFORA Director of Investigations · ~50 books on the phenomenon",
+    "bio_short": "Una de las investigadoras de campo británicas más prolíficas y rigurosas. Documentó la oleada de los Peninos y el caso del agente Alan Godfrey (Todmorden), y coescribió la primera investigación extensa de Rendlesham Forest. Acuñó el 'Oz Factor' para describir el estado de conciencia alterado de los testigos en encuentros cercanos. Su método —abierto pero crítico, separando el avistamiento en vigilia del material recuperado bajo hipnosis— es referencia para el tratamiento prudente del testimonio.",
+    "bio_short_en": "One of the most prolific and rigorous British field investigators. She documented the Pennine wave and the PC Alan Godfrey (Todmorden) case, and co-wrote the first extensive investigation of the Rendlesham Forest incident. She coined the 'Oz Factor' to describe the altered state of awareness of witnesses in close encounters. Her method —open but critical, separating the waking sighting from material recovered under hypnosis— is a reference for the prudent handling of testimony.",
+    "works": [
+      {
+        "year": 1983,
+        "title": "The Pennine UFO Mystery",
+        "contribution": "Investigación de campo de la oleada de los Peninos, incluido el caso del agente Alan Godfrey (Todmorden)",
+        "contribution_en": "Field investigation of the Pennine wave, including the PC Alan Godfrey (Todmorden) case"
+      },
+      {
+        "year": 1984,
+        "title": "Sky Crash (con Brenda Butler y Dot Street)",
+        "contribution": "Primera investigación extensa del incidente de Rendlesham Forest",
+        "contribution_en": "First extensive investigation of the Rendlesham Forest incident"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia — Jenny Randles",
+        "url": "https://en.wikipedia.org/wiki/Jenny_Randles"
+      }
+    ]
+  },
+  {
+    "id": "hastings",
+    "name": "Robert Hastings",
+    "flag": "🇺🇸",
+    "section": "A",
+    "section_label": "Investigación UFO-nuclear",
+    "section_label_en": "Nuclear-UFO research",
+    "credentials": "Investigador estadounidense · autor de 'UFOs and Nukes' · entrevistó a 150+ veteranos militares sobre incidentes en sitios nucleares",
+    "credentials_en": "American researcher · author of 'UFOs and Nukes' · interviewed 150+ military veterans about incidents at nuclear sites",
+    "bio_short": "Dedicó décadas a documentar el patrón recurrente de actividad UAP sobre instalaciones de armas nucleares de EE.UU. Recopiló los testimonios de más de 150 veteranos militares y organizó en 2010 un evento en el National Press Club donde ex oficiales de misiles de la USAF declararon sobre UAP que afectaron silos de ICBM (Malmstrom, entre otros). Su trabajo es la base documental del patrón 'monitoreo de fuentes de riesgo catastrófico' que el corpus rastrea.",
+    "bio_short_en": "He spent decades documenting the recurring pattern of UAP activity over U.S. nuclear weapons facilities. He compiled the testimony of more than 150 military veterans and in 2010 organized a National Press Club event where former USAF missile officers testified about UAP that affected ICBM silos (Malmstrom, among others). His work is the documentary basis for the 'monitoring of catastrophic-risk sources' pattern the corpus tracks.",
+    "works": [
+      {
+        "year": 2008,
+        "title": "UFOs and Nukes",
+        "contribution": "Compendio de testimonios militares sobre incidentes UAP en bases nucleares de EE.UU.",
+        "contribution_en": "Compendium of military testimony on UAP incidents at U.S. nuclear bases"
+      },
+      {
+        "year": 2010,
+        "title": "National Press Club event (ex misileros USAF)",
+        "contribution": "Reunió a ex oficiales que declararon sobre UAP afectando misiles ICBM (Malmstrom y otros)",
+        "contribution_en": "Convened former officers who testified about UAP affecting ICBM missiles (Malmstrom and others)"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Hastings, Robert — UFOs and Nukes (sitio del autor)",
+        "url": "https://www.ufohastings.com/"
+      }
+    ]
+  },
+  {
+    "id": "kevin-day",
+    "name": "Kevin Day",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Testigo militar (US Navy · radar)",
+    "section_label_en": "Military witness (US Navy · radar)",
+    "credentials": "Senior Chief Petty Officer (ret.) · operador de radar Aegis / air intercept controller a bordo del USS Princeton (CG-59) · testigo del encuentro Nimitz 2004",
+    "credentials_en": "Senior Chief Petty Officer (ret.) · Aegis radar operator / air intercept controller aboard USS Princeton (CG-59) · witness to the 2004 Nimitz encounter",
+    "bio_short": "Operador de radar más antiguo del USS Princeton durante los encuentros del grupo de combate Nimitz en noviembre de 2004. Detectó y rastreó los objetos 'Tic-Tac' en el radar Aegis SPY-1 a lo largo de varios días y dirigió la interceptación de los F/A-18 del comandante Fravor. Su testimonio aporta la capa instrumental —retornos de radar persistentes y maniobras anómalas— que distingue al caso Nimitz de un avistamiento puramente visual.",
+    "bio_short_en": "The senior radar operator aboard USS Princeton during the Nimitz Carrier Strike Group encounters of November 2004. He detected and tracked the 'Tic-Tac' objects on the Aegis SPY-1 radar over several days and directed the intercept by Commander Fravor's F/A-18s. His testimony provides the instrumental layer —persistent radar returns and anomalous maneuvers— that distinguishes the Nimitz case from a purely visual sighting.",
+    "works": [
+      {
+        "year": 2004,
+        "title": "Encuentro Nimitz / Tic-Tac (USS Princeton)",
+        "contribution": "Detectó y rastreó los objetos en el radar Aegis SPY-1 y dirigió la interceptación de los F/A-18",
+        "contribution_en": "Detected and tracked the objects on the Aegis SPY-1 radar and directed the F/A-18 intercept"
+      },
+      {
+        "year": 2019,
+        "title": "Testimonio público",
+        "contribution": "Describió en entrevistas la persistencia y el comportamiento anómalo de los retornos de radar",
+        "contribution_en": "Described in interviews the persistence and anomalous behavior of the radar returns"
+      }
+    ],
+    "sources": [
+      {
+        "name": "The War Zone (The Drive) — testimonios del encuentro Nimitz 2004",
+        "url": "https://www.twz.com/the-war-zone"
+      }
+    ]
   }
 ]
