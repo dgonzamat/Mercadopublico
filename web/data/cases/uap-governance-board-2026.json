@@ -1,0 +1,83 @@
+{
+  "id": "uap-governance-board-2026",
+  "num": 275,
+  "name": "UAP Governance Board · ODNI (15 jun 2026)",
+  "name_en": "UAP Governance Board · ODNI (June 15, 2026)",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.9425,
+    "lng": -77.1437,
+    "place": "Liberty Crossing Intelligence Campus, McLean, Virginia",
+    "place_en": "Liberty Crossing Intelligence Campus, McLean, Virginia"
+  },
+  "tier": "A",
+  "epistemicStatus": "developing",
+  "probability": 72,
+  "posterior": {
+    "mundano_natural": 0.03,
+    "humana_clasificada": 0.3,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.25,
+    "nohumano_abierto": 0.02,
+    "indet": 0.38
+  },
+  "summary": "En junio de 2026, la ODNI, el FBI y el Departamento de Guerra (DOW) establecieron el UAP Governance Board (GB), órgano interagencial creado para coordinar la investigación, el análisis de datos y la desclasificación de fenómenos UAP entre agencias federales. La primera reunión del GB tuvo lugar el 15 de junio de 2026. Su charter oficial define su misión como servir de 'órgano interagencial que puede usar las capacidades y autoridades únicas de cada miembro para abordar de forma cohesiva las amenazas a la seguridad nacional planteadas por los UAP', integrar y optimizar los procesos interagenciales de investigación UAP en apoyo directo a AARO, y coordinar la desclasificación bajo el E.O. 13526. La composición del GB no es pública. El GB es la autoridad superior sobre el UAP Science Advisory Council (SAC) liderado por Avi Loeb, cuyos miembros operan exclusivamente con datos no clasificados.",
+  "summary_en": "In June 2026, ODNI, the FBI, and the Department of War (DOW) established the UAP Governance Board (GB), an interagency body created to coordinate UAP investigation, data analysis, and declassification across federal agencies. The GB held its first meeting on June 15, 2026. Its official charter defines its mission as serving as an 'interagency body that can use each member's capabilities and unique authorities to cohesively address national security threats posed by UAP,' integrating and optimizing interagency UAP investigation processes in direct support of AARO, and coordinating declassification under E.O. 13526. The GB's composition is not public. The GB sits above the UAP Science Advisory Council (SAC) led by Avi Loeb, whose members operate exclusively with unclassified data.",
+  "patterns": [
+    "8e",
+    "8q",
+    "8n"
+  ],
+  "category": "document",
+  "whatHappened": "El 17 de junio de 2026, un funcionario de la ODNI confirmó a DefenseScoop la existencia del UAP Governance Board (GB) e indicó que había celebrado su primera reunión el 15 de junio. Según la declaración oficial, el GB fue establecido por la ODNI, el FBI y el Departamento de Guerra (DOW) en respuesta a la directiva ejecutiva firmada por el presidente Trump el 20 de febrero de 2026, que ordenó la identificación y publicación de registros gubernamentales sobre UAP. El charter público del GB define tres objetivos: (1) servir como órgano interagencial cohesivo frente a las amenazas a la seguridad nacional planteadas por los UAP, usando las capacidades y autoridades únicas de cada agencia miembro; (2) integrar y optimizar los procesos interagenciales de investigación de incidentes UAP y los procedimientos de recolección de datos para dar apoyo más efectivo a AARO; (3) coordinar la desclasificación oportuna de información UAP bajo el E.O. 13526. La composición del GB no fue revelada: la declaración de la ODNI no nombra a ningún integrante. El GB convoca a representantes de militar, fuerzas del orden, Comunidad de Inteligencia (IC) y agencias civiles.\n\nEl GB está estructurado como la autoridad superior sobre los grupos asesores externos, entre ellos el UAP Science Advisory Council (SAC) presidido por Avi Loeb (Harvard), quien fue nombrado el 12 de junio de 2026 tras ser convocado por la Casa Blanca, AARO, la ODNI, el FBI y la IC para constituir y presidir ese consejo. La relación jerárquica está documentada por el propio Loeb: el SAC reporta al GB y sus miembros no tienen acceso a información clasificada ni autoridad legal alguna; toda la data compartida con el SAC es no clasificada. Según Loeb, el equipo 'holds no access to any classified information and no legal authority whatsoever'.\n\nEl establecimiento del GB fue cubierto el 16 de junio de 2026 por Above the Norm News bajo el titular 'A New Board Now Controls the UFO Files. Its Own Scientists Aren't Allowed to See Them', que destacó la asimetría estructural: el GB —con acceso clasificado completo— controla qué se desclasifica y cuándo, mientras que el SAC de científicos opera sobre datos no clasificados. Liberation Times cubrió el anuncio como el establecimiento de una nueva arquitectura interagencial para coordinar investigaciones y desclasificación. MeriTalk lo cubrió desde la perspectiva de gobernanza de tecnología federal.",
+  "whatHappened_en": "On June 17, 2026, an ODNI official confirmed to DefenseScoop the existence of the UAP Governance Board (GB) and indicated it had held its first meeting on June 15. According to the official statement, the GB was established by ODNI, the FBI, and the Department of War (DOW) in response to the executive directive signed by President Trump on February 20, 2026, which ordered the identification and public release of government UAP records. The GB's public charter defines three objectives: (1) serve as a cohesive interagency body against national security threats posed by UAP, using each member agency's unique capabilities and authorities; (2) integrate and optimize interagency processes for investigating UAP incidents and data collection procedures to provide more effective support to AARO; (3) coordinate the timely declassification of UAP information under E.O. 13526. The GB's composition was not disclosed: the ODNI statement names no member. The GB convenes representatives from military, law enforcement, the Intelligence Community (IC), and civilian agencies.\n\nThe GB is structured as the superior authority over external advisory groups, including the UAP Science Advisory Council (SAC) chaired by Avi Loeb (Harvard), who was appointed on June 12, 2026 after being tasked by the White House, AARO, ODNI, the FBI, and the IC to constitute and chair that council. The hierarchical relationship is documented by Loeb himself: the SAC reports to the GB and its members hold no access to classified information nor any legal authority; all data shared with the SAC is unclassified. Per Loeb, the team 'holds no access to any classified information and no legal authority whatsoever.'\n\nThe establishment of the GB was covered on June 16, 2026 by Above the Norm News under the headline 'A New Board Now Controls the UFO Files. Its Own Scientists Aren't Allowed to See Them,' which highlighted the structural asymmetry: the GB — with full classified access — controls what is declassified and when, while the scientists' SAC operates on unclassified data only. Liberation Times covered the announcement as the establishment of a new interagency architecture for coordinating investigations and declassification. MeriTalk covered it from a federal technology governance perspective.",
+  "whyMatters": "El UAP Governance Board es el nodo de control institucional de mayor jerarquía en la arquitectura de disclosure UAP de la administración Trump en 2026, ubicado entre la directiva presidencial (feb 2026), el PURSUE portal (may-jun 2026), AARO y el SAC. Su peso analítico es triple. Primero, el GB centraliza la autoridad de desclasificación: mientras PURSUE publicó tres tandas de archivos revisados (may-jun 2026) y el SAC delibera sobre datos no clasificados, el GB controla qué pasa del régimen clasificado al régimen público, con qué ritmo, y en qué formato. Es la cámara de paso de la información. Segundo, el anonimato de sus miembros es una señal de diseño, no una omisión: la ODNI declaró el charter pero no nombró a nadie, lo que reproduce el modelo de opacidad que caracteriza a los componentes de la IC (SIGINT, HUMINT) frente al escrutinio público. Que el GB opere sin nominación pública significa que no es políticamente responsable ante los medios ni ante el ecosistema de disclosure, solo ante la cadena de mando interagencial. Tercero, la asimetría clasificada/no-clasificada entre el GB y el SAC es analíticamente reveladora: pone al SAC en posición de legitimar el proceso de disclosure sin tener acceso a la sustancia que se está divulgando. Si el GB retiene material significativo, el SAC no puede detectarlo; si el GB libera material curado, el SAC lo recibe como si fuera completo. Esto hace del SAC una interfaz epistémica controlada, no un órgano verificador independiente.",
+  "whyMatters_en": "The UAP Governance Board is the highest-ranking institutional control node in the Trump administration's 2026 UAP disclosure architecture, positioned between the presidential directive (Feb 2026), the PURSUE portal (May–Jun 2026), AARO, and the SAC. Its analytical weight is threefold. First, the GB centralizes declassification authority: while PURSUE published three tranches of reviewed files (May–Jun 2026) and the SAC deliberates on unclassified data, the GB controls what moves from the classified to the public regime, at what pace, and in what format — it is the information gate. Second, the anonymity of its members is a design signal, not an omission: ODNI declared the charter but named no one, reproducing the opacity model that characterizes IC components (SIGINT, HUMINT) vis-à-vis public scrutiny. A GB operating without public nomination means it is not politically accountable to media or the disclosure ecosystem, only to the interagency chain of command. Third, the classified/unclassified asymmetry between the GB and the SAC is analytically revealing: it places the SAC in a position to legitimize the disclosure process without having access to the substance being disclosed. If the GB retains significant material, the SAC cannot detect it; if the GB releases curated material, the SAC receives it as if complete. This makes the SAC a controlled epistemic interface, not an independent verification body.",
+  "evidence": [
+    "Declaración de funcionario ODNI a DefenseScoop (17 jun 2026): 'The UAP Governance Board met for the first time yesterday' — confirmación institucional de primera reunión el 15 jun 2026",
+    "Charter oficial del GB (publicado vía ODNI): 'The mission of the GB is to serve as an interagency body that can use each member's capabilities and unique authorities to cohesively address national security threats posed by UAP. The GB will also integrate and optimize interagency processes involved in the investigation of UAP incidents and collection procedures used to analyze UAP data to ensure more effective support to the All-domain Anomaly Resolution Office.'",
+    "Agencias fundadoras confirmadas por ODNI: Office of the Director of National Intelligence (ODNI), Federal Bureau of Investigation (FBI), Department of War (DOW)",
+    "Declaración de Avi Loeb confirmando jerarquía SAC→GB: el SAC 'holds no access to any classified information and no legal authority whatsoever' y reporta al GB",
+    "Mandato de desclasificación: el GB facilita la desclasificación coordinada bajo Executive Order 13526 (Classification and Declassification of National Security Information)",
+    "Composición del GB: representantes de military, law enforcement, Intelligence Community (IC) y agencias civiles — sin nominación pública de ningún miembro según declaración ODNI",
+    "Above the Norm News (16 jun 2026): 'A New Board Now Controls the UFO Files. Its Own Scientists Aren't Allowed to See Them' — documenta asimetría acceso clasificado/no-clasificado entre GB y SAC"
+  ],
+  "evidence_en": [
+    "ODNI official statement to DefenseScoop (June 17, 2026): 'The UAP Governance Board met for the first time yesterday' — institutional confirmation of first meeting on June 15, 2026",
+    "Official GB charter (published via ODNI): 'The mission of the GB is to serve as an interagency body that can use each member's capabilities and unique authorities to cohesively address national security threats posed by UAP. The GB will also integrate and optimize interagency processes involved in the investigation of UAP incidents and collection procedures used to analyze UAP data to ensure more effective support to the All-domain Anomaly Resolution Office.'",
+    "Founding agencies confirmed by ODNI: Office of the Director of National Intelligence (ODNI), Federal Bureau of Investigation (FBI), Department of War (DOW)",
+    "Avi Loeb statement confirming SAC→GB hierarchy: the SAC 'holds no access to any classified information and no legal authority whatsoever' and reports to the GB",
+    "Declassification mandate: the GB facilitates timely coordinated declassification under Executive Order 13526 (Classification and Declassification of National Security Information)",
+    "GB composition: representatives from military, law enforcement, Intelligence Community (IC), and civilian agencies — no public nomination of any member per ODNI statement",
+    "Above the Norm News (June 16, 2026): 'A New Board Now Controls the UFO Files. Its Own Scientists Aren't Allowed to See Them' — documents classified/unclassified access asymmetry between GB and SAC"
+  ],
+  "sources": [
+    {
+      "name": "DefenseScoop — 'New science advisory council forms to help US government resolve the UAP mystery' (17 jun 2026)",
+      "url": "https://defensescoop.com/2026/06/17/new-science-advisory-council-forms-to-help-us-government-resolve-the-uap-mystery/"
+    },
+    {
+      "name": "Liberation Times — 'U.S. Government Establishes New Interagency UAP Governance Board to Coordinate Investigations and Declassification'",
+      "url": "https://www.liberationtimes.com/home/us-establishes-new-interagency-uap-governance-board-to-coordinate-investigations-and-declassification"
+    },
+    {
+      "name": "Above the Norm News — 'A New Board Now Controls the UFO Files. Its Own Scientists Aren't Allowed to See Them' (16 jun 2026)",
+      "url": "https://www.abovethenormnews.com/2026/06/16/uap-governance-board/"
+    },
+    {
+      "name": "MeriTalk — 'ODNI Launches Interagency UAP Governance Board'",
+      "url": "https://www.meritalk.com/articles/odni-launches-interagency-uap-governance-board/"
+    },
+    {
+      "name": "The Sentinel Network — 'UAP Governance Board: Avi Loeb's Council Advises It'",
+      "url": "https://thesentinel.network/p/uap-governance-board-loeb-council"
+    },
+    {
+      "name": "IBTimes UK — 'Trump Forms UFO Board to Investigate Mothership Orb Threat Over Sensitive National Security Site'",
+      "url": "https://www.ibtimes.co.uk/white-house-uap-governance-board-avi-loeb-1804002"
+    }
+  ]
+}
