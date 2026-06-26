@@ -3118,5 +3118,41 @@
         "url": "https://www.twz.com/the-war-zone"
       }
     ]
+  },
+  {
+    "id": "mcconnell-kirk",
+    "name": "Kirk McConnell",
+    "flag": "🇺🇸",
+    "section": "C",
+    "section_label": "Ex staffer del Congreso (Servicios Armados / Inteligencia) · divulgación",
+    "section_label_en": "Former congressional staffer (Armed Services / Intelligence) · disclosure",
+    "credentials": "~37 años como asesor de los comités de Servicios Armados e Inteligencia del Senado y la Cámara (SASC, SSCI, HPSCI) · habilitaciones compartimentadas · retirado del Senado en 2024",
+    "credentials_en": "~37 years as adviser to the Senate and House Armed Services and Intelligence committees (SASC, SSCI, HPSCI) · compartmented clearances · retired from the Senate in 2024",
+    "bio_short": "Arquitecto entre bambalinas de la supervisión legislativa del fenómeno: durante casi cuatro décadas fue uno de los principales staffers del Senado en materia UAP, redactando y sosteniendo los mecanismos de oversight desde dentro de la maquinaria de los comités. Retirado en 2024, pasó a abogar públicamente por la desclasificación (con Coulthart, el New Paradigm Institute, foros). Es el arquetipo del insider institucional creíble: a diferencia de los claimants de naves y cuerpos, su preocupación pública es el secreto y el proceso —que la sociedad podría perder los beneficios de una 'ciencia exótica' si el ocultamiento continúa—, una postura más mesurada pero que, ya como advocate, sigue siendo afirmación y no evidencia.",
+    "bio_short_en": "A behind-the-scenes architect of the legislative oversight of the phenomenon: for nearly four decades he was one of the Senate's lead staffers on UAP, drafting and sustaining oversight mechanisms from within the committee machinery. Retired in 2024, he became a public advocate for declassification (with Coulthart, the New Paradigm Institute, forums). He is the archetype of the credible institutional insider: unlike the craft-and-bodies claimants, his public concern is secrecy and process —that society may lose the benefits of an 'exotic science' if concealment continues—, a more measured stance that, now as an advocate, remains assertion rather than evidence.",
+    "works": [
+      {
+        "year": 2023,
+        "title": "Arquitectura legislativa UAP (Senado)",
+        "contribution": "Staff senior detrás de los mecanismos de oversight y release del ciclo UAP Disclosure Act / NDAA",
+        "contribution_en": "Senior staff behind the oversight and release mechanisms of the UAP Disclosure Act / NDAA cycle"
+      },
+      {
+        "year": 2025,
+        "title": "Divulgación pública post-retiro",
+        "contribution": "Declara en el registro público sobre el secreto UAP y la pérdida de beneficios de la 'ciencia exótica'",
+        "contribution_en": "Goes on record about UAP secrecy and the loss of benefits from 'exotic science'"
+      }
+    ],
+    "sources": [
+      {
+        "name": "New Paradigm Institute / Just A Minute Left — el rol de Kirk McConnell en la divulgación (2026)",
+        "url": "https://jaml.org/2026/04/29/ufo-disclosure-the-role-of-congress-and-npi/"
+      },
+      {
+        "name": "Ross Coulthart (X) — sobre las preocupaciones públicas de Kirk McConnell",
+        "url": "https://x.com/rosscoulthart/status/1907566147966480403"
+      }
+    ]
   }
 ]
