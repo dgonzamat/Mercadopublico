@@ -137,10 +137,10 @@
     {
         "id": "8p",
         "letter": "p",
-        "name": "Marcadores geométricos masivos (crop circles)",
-        "name_en": "Geometric Mass Markers (crop circles)",
-        "description": "Subpoblación con anomalías físicas peer-reviewed (Levengood/BLT 1994-99). 5% del total.",
-        "description_en": "Subpopulation with peer-reviewed physical anomalies (Levengood/BLT 1994-99). 5% of total.",
+        "name": "Marcadores geométricos en vegetación (nidos → crop circles)",
+        "name_en": "Geometric Vegetation Markers (saucer nests → crop circles)",
+        "description": "Patrones circulares de vegetación aplanada, del precursor documentado (nidos de Tully, RAAF 1966) a la subpoblación con anomalías físicas reportadas (Levengood/BLT 1994-99).",
+        "description_en": "Circular flattened-vegetation patterns, from the documented precursor (Tully saucer nests, RAAF 1966) to the subpopulation with reported physical anomalies (Levengood/BLT 1994-99).",
         "color": "#66ffaa"
     },
     {
