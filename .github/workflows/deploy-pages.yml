@@ -5,8 +5,14 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Mínimo privilegio: cada job declara solo lo que usa (ver permissions por
-# job). El default a nivel workflow queda en solo-lectura.
+# Fuente ÚNICA de publicación: peaceiris empuja el export a la rama gh-pages.
+# Antes había DOS caminos (rama gh-pages + deploy oficial de Actions) más
+# `configure-pages enablement:true`, que alternaba la "Source" de Pages en cada
+# deploy y dejaba el dominio custom (uapcodex.org) sin verificar → 404
+# intermitente (incidente del 26 jun 2026). Con un solo camino, la Source deja
+# de saltar. REQUISITO en GitHub: Settings → Pages → Source = "Deploy from a
+# branch" → gh-pages / (root).
+
 permissions:
   contents: read
 
@@ -18,13 +24,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # peaceiris empuja a la branch gh-pages
-      pages: write      # configure-pages con enablement: true
+      contents: write   # peaceiris empuja a la rama gh-pages
     defaults:
       run:
         working-directory: ./web
-    outputs:
-      base_path: ${{ steps.pages.outputs.base_path }}
     steps:
       - name: Checkout
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -36,17 +39,6 @@ jobs:
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '20'
-
-      # configure-pages no debe ser fatal: si Pages está deshabilitado o el
-      # token no puede crearlo, la ruta de respaldo (peaceiris → gh-pages)
-      # igual debe publicar. Sin esto, un fallo aquí aborta todo el job y
-      # tumba el deploy completo (incidente del 16 jun 2026).
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
-        continue-on-error: true
-        with:
-          enablement: true
 
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
@@ -71,10 +63,8 @@ jobs:
             echo "version=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
           fi
 
-      # Force base_path empty because the site is served from the apex of
-      # a custom domain (uapcodex.org). `actions/configure-pages` only
-      # returns the empty base_path once Settings → Pages → Custom domain
-      # is filled in by hand — we don't depend on that here.
+      # base_path vacío: el sitio se sirve desde la raíz del dominio custom
+      # (uapcodex.org). No dependemos de configure-pages para esto.
       - name: Build Next.js static export
         run: npm run build
         env:
@@ -89,7 +79,9 @@ jobs:
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
-      # Path 1: push to gh-pages branch (works if Pages source = "Deploy from a branch")
+      # Único camino de publicación: rama gh-pages. `cname` reafirma el dominio
+      # custom en cada deploy (además del public/CNAME que Next copia al export),
+      # para que la verificación del dominio no se pierda.
       - name: Deploy to gh-pages branch (peaceiris)
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
         with:
@@ -97,29 +89,5 @@ jobs:
           publish_dir: ./web/out
           publish_branch: gh-pages
           force_orphan: true
+          cname: uapcodex.org
           commit_message: "deploy: ${{ github.event.head_commit.message }}"
-
-      # Path 2: upload as Pages artifact (works if Pages source = "GitHub Actions")
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
-        with:
-          path: ./web/out
-
-  # Deploy via official Pages — only completes if source = "GitHub Actions"
-  # If source is "branch", this job errors silently but path 1 above already
-  # published the site.
-  deploy-official:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write      # deploy del artifact
-      id-token: write   # OIDC que exige actions/deploy-pages
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    continue-on-error: true
-    steps:
-      - name: Deploy to GitHub Pages (official)
-        id: deployment
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
-        continue-on-error: true
