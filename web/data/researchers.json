@@ -2984,5 +2984,42 @@
         "url": "https://www.themoscowtimes.com/2016/03/31/little-green-men-a-look-at-the-official-soviet-x-files-investigation-a52335"
       }
     ]
+  },
+  {
+    "id": "rebelo",
+    "name": "Aldo Rebelo",
+    "flag": "🇧🇷",
+    "born": 1956,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Ex ministro de Defensa de Brasil (2015-2016) · ex ministro de Deportes · diputado federal · pre-candidato presidencial 2026 (Democracia Cristã)",
+    "credentials_en": "Former Minister of Defense of Brazil (2015-2016) · former Minister of Sport · federal deputy · 2026 presidential pre-candidate (Christian Democracy)",
+    "bio_short": "Ex ministro de Defensa de Brasil y figura política de larga trayectoria. En 2026 se volvió la voz institucional de mayor rango del ecosistema de divulgación brasileño: afirmó en público que el incidente de Varginha (1996) fue real —nave estrellada y seres no humanos— y prometió liberar documentos militares de la FAB si Brasil sigue la ola de desclasificación de EE.UU. Su intervención eleva el debate por su jerarquía, pero llega como testimonio sin documento y dentro de una campaña presidencial: un incentivo que obliga a descontar la afirmación.",
+    "bio_short_en": "Former Minister of Defense of Brazil and a long-standing political figure. In 2026 he became the highest-ranking institutional voice of the Brazilian disclosure ecosystem: he publicly asserted that the 1996 Varginha incident was real —a crashed craft and non-human beings— and promised to release FAB military documents if Brazil follows the U.S. declassification wave. His intervention raises the debate by virtue of his rank, but it arrives as testimony without a document and within a presidential campaign: an incentive that requires discounting the claim.",
+    "works": [
+      {
+        "year": 2015,
+        "title": "Ministro de Defensa de Brasil (2015-2016)",
+        "contribution": "Cúspide de la cadena de mando de las Fuerzas Armadas, incluido el Comando da Aeronáutica (FAB)",
+        "contribution_en": "Top of the Armed Forces chain of command, including the Aeronautics Command (FAB)"
+      },
+      {
+        "year": 2026,
+        "title": "Confirmación pública de Varginha y promesa de disclosure",
+        "contribution": "Afirma que Varginha fue real y que conoce documentos de la FAB que liberaría si Brasil sigue a EE.UU.",
+        "contribution_en": "Asserts Varginha was real and that he is aware of FAB documents he would release if Brazil follows the U.S."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Revista Sociedade Militar — Former Defense Minister says he knows what the military is hiding about UFOs (2026)",
+        "url": "https://en.sociedademilitar.com.br/2026/02/Secret-files-in-Brazil:-Former-defense-minister-says-he-knows-what-the-military-is-hiding-about-UFOs-and-promises-to-reveal-everything-in-2026..html"
+      },
+      {
+        "name": "American Alchemy (Jesse Michels) — entrevista a Aldo Rebelo (YouTube)",
+        "url": "https://www.youtube.com/watch?v=nqLnEVcZ8vE"
+      }
+    ]
   }
 ]
