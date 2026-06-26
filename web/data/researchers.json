@@ -3154,5 +3154,45 @@
         "url": "https://x.com/rosscoulthart/status/1907566147966480403"
       }
     ]
+  },
+  {
+    "id": "ramirez",
+    "name": "John Ramirez",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Informante institucional (CIA / ELINT)",
+    "section_label_en": "Institutional whistleblower (CIA / ELINT)",
+    "credentials": "Analista de inteligencia de la CIA (1984–2009) · ex jefe de la Rama de Análisis ELINT (defensa antimisiles balísticos) · Directorate of Science & Technology, Directorate of Intelligence y ODNI/National Counterproliferation Center · ex técnico de guerra electrónica de la US Navy · graduado de George Washington University",
+    "credentials_en": "CIA intelligence analyst (1984–2009) · former Chief of the ELINT Analysis Branch (ballistic missile defense) · Directorate of Science & Technology, Directorate of Intelligence and ODNI/National Counterproliferation Center · former US Navy Electronics Warfare Technician · George Washington University graduate",
+    "bio_short": "Pasó 25 años en la CIA como analista de inteligencia de señales (ELINT), especializado en radares de sistemas de armas, semilladores de misiles y defensa antimisiles balísticos; fue jefe de la Rama de Análisis ELINT, jefe de base en una instalación de recolección técnica en el extranjero y miembro fundador del ODNI National Counterproliferation Center. Antes de la CIA sirvió en la US Navy como técnico de guerra electrónica. Desde ~2021 se convirtió en una voz pública recurrente del ecosistema de divulgación UAP a través de podcasts y conferencias, donde sostiene una tesis de 'disclosure controlado por el propio fenómeno' ('no lo controlan ustedes, lo controlan ellos'), describe un 'orb working group' interagencial liderado por la NGA hacia 2003–04 con participación de CIA/DIA/NSA, afirma haber visto un manual de operación de un sistema de propulsión de ingeniería inversa y plantea un horizonte de eventos para 2027. CAVEAT DE FIABILIDAD: su trayectoria en la CIA es documentable, pero sus afirmaciones sobre programas, ingeniería inversa, ADN no humano y el horizonte 2027 no están corroboradas por documentos públicos y se ubican en el extremo especulativo del testimonio insider; el corpus lo registra como actor del ecosistema, no como fuente probatoria.",
+    "bio_short_en": "He spent 25 years at the CIA as a signals-intelligence (ELINT) analyst specializing in weapon-system radars, missile seekers and ballistic missile defense; he was Chief of the ELINT Analysis Branch, Chief of Base at an overseas technical-collection facility, and a founding member of the ODNI National Counterproliferation Center. Before the CIA he served in the US Navy as an Electronics Warfare Technician. Since ~2021 he has become a recurring public voice in the UAP disclosure ecosystem through podcasts and conferences, where he advances a thesis of 'disclosure controlled by the phenomenon itself' ('you guys don't control disclosure, they do'), describes an interagency 'orb working group' led by the NGA around 2003–04 with CIA/DIA/NSA participation, claims to have seen an operations manual for a reverse-engineered propulsion system, and posits a 2027 events horizon. RELIABILITY CAVEAT: his CIA career is documentable, but his claims about programs, reverse engineering, non-human DNA and the 2027 horizon are not corroborated by public documents and sit at the speculative end of insider testimony; the corpus records him as an ecosystem actor, not as an evidentiary source.",
+    "works": [
+      {
+        "year": 2021,
+        "title": "Emergencia pública como ex-CIA en el debate UAP",
+        "contribution": "Introduce la tesis del 'disclosure controlado por el fenómeno' y describe un 'orb working group' interagencial (~2003–04) liderado por la NGA",
+        "contribution_en": "Introduces the 'disclosure controlled by the phenomenon' thesis and describes an interagency 'orb working group' (~2003–04) led by the NGA"
+      },
+      {
+        "year": 2025,
+        "title": "UAP Files Podcast S3E21 · 'UFOs, UAPs & 2027'",
+        "contribution": "Populariza el horizonte 2027 y afirma haber visto un manual de operación de propulsión de ingeniería inversa, sin aportar prueba documental",
+        "contribution_en": "Popularizes the 2027 horizon and claims to have seen a reverse-engineered propulsion operations manual, without providing documentary proof"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Anomaly Archives — ficha biográfica de John Ramirez (carrera CIA/ELINT)",
+        "url": "https://anomalyarchives.org/collections/file/ramirez-john/"
+      },
+      {
+        "name": "The Sentinel — 'Former CIA ELINT John Ramirez: You guys don't control Disclosure, they do'",
+        "url": "https://www.sentinel-news.org/p/former-cia-elint-john-ramirez-you"
+      },
+      {
+        "name": "UAP Files Podcast S3E21 — 'UFOs, UAPs & 2027: Former CIA Agent John Ramirez Tells All' (2025)",
+        "url": "https://www.imdb.com/title/tt37000193/"
+      }
+    ]
   }
 ]
