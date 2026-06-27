@@ -34,6 +34,10 @@
  *       validador de eventos comerciales; usar Article + contentLocation).
  *   E16 (WARN) Presupuesto SSG: nº de client components ("use client") bajo un
  *       techo — protege el "zero JS shipped" del proyecto (crecimiento visible).
+ *   E17 (WARN) Visor de documentos: cada asset same-origin embebido
+ *       (documents[].src / primaryDocument.url bajo /pursue/) debe existir en
+ *       web/public/ — si falta, el iframe/img queda roto. Backlog medible de
+ *       subida que se pone en verde al subir los binarios.
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -527,6 +531,39 @@ if (clientComponents.length > CLIENT_BUDGET) {
   );
 }
 
+// ─── 9k. RULE E17: visor de documentos — assets same-origin en disco (WARN) ─
+//
+// El visor inline (UAPCase.documents[] + primaryDocument) embebe documentos
+// auto-hospedados bajo web/public/pursue/ (same-origin, porque war.gov bloquea
+// el framing). Un `src`/`url` same-origin que apunta a un archivo inexistente
+// renderiza un iframe/img roto. Esta regla cruza cada referencia local contra
+// el disco y reporta las que faltan en un WARN agregado: hace medible el
+// backlog de subida (mismo patrón que E9/E13) y se pone en verde al subir los
+// binarios. Las URLs externas (http/https, p. ej. Commons) se eximen: su
+// disponibilidad no es verificable en build.
+const publicDir = path.join(root, "public");
+const docAssetRefs = []; // {caseId, ref}
+for (const c of cases) {
+  for (const d of c.documents || []) {
+    if (typeof d.src === "string" && d.src.startsWith("/")) docAssetRefs.push({ caseId: c.id, ref: d.src });
+  }
+  const pdUrl = c.primaryDocument && c.primaryDocument.url;
+  if (typeof pdUrl === "string" && pdUrl.startsWith("/")) docAssetRefs.push({ caseId: c.id, ref: pdUrl });
+}
+const missingAssets = docAssetRefs.filter(
+  ({ ref }) => !fs.existsSync(path.join(publicDir, ref)),
+);
+const presentAssets = docAssetRefs.length - missingAssets.length;
+if (missingAssets.length > 0) {
+  const list = missingAssets.map((m) => `${m.ref} (${m.caseId})`).join(", ");
+  record(
+    "WARN",
+    publicDir,
+    0,
+    `E17 visor: ${missingAssets.length}/${docAssetRefs.length} assets de documento same-origin no existen aún en web/public/ — el visor queda roto hasta subirlos: ${list}`,
+  );
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
@@ -548,6 +585,7 @@ out.push(` Patterns usados / total: ${STATS.patterns - orphanPatterns.length} / 
 out.push(` Client components ("use client"): ${clientComponents.length} / techo ${CLIENT_BUDGET}`);
 out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${STATS.cases - shortBodies.length} / ${STATS.cases}`);
 out.push(` Casos con posterior MECE (no-documento): ${mecePosteriorCount}`);
+out.push(` Assets de visor same-origin presentes en disco: ${presentAssets} / ${docAssetRefs.length}`);
 {
   const meceTotal = Object.values(meceAgg).reduce((a, b) => a + b, 0) || 1;
   out.push(" MECE · partición del corpus (Σ esperado · %):");
