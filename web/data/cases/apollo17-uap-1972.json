@@ -1,0 +1,75 @@
+{
+  "id": "apollo17-uap-1972",
+  "num": 277,
+  "name": "Apollo 17 · Formación triangular lunar y 'Cuarto de Julio' (dic 1972)",
+  "name_en": "Apollo 17 · Lunar Triangular Formation and 'Fourth of July' (Dec 1972)",
+  "year_start": 1972,
+  "country": "US",
+  "country_name": "Estados Unidos / órbita lunar",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 29.5593,
+    "lng": -95.0933,
+    "place": "NASA JSC / órbita lunar, misión Apollo 17",
+    "place_en": "NASA JSC / lunar orbit, Apollo 17 mission"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 32,
+  "summary": "Durante tres periodos separados de la misión Apollo 17 (diciembre 1972), los astronautas Ronald Evans y Harrison Schmitt observaron en órbita lunar objetos luminosos no identificados —descritos como 'partículas brillantes que tumban' y un espectáculo 'como el Cuatro de Julio'—. Una fotografía tomada durante la misión muestra tres 'puntos' en formación triangular en el cuadrante inferior derecho del cielo lunar. El Departamento de Guerra de EE.UU. publicó los documentos en PURSUE R1 (8 may 2026) y emitió un análisis preliminar declarando que la formación 'podría ser un objeto físico', con reporte forense definitivo pendiente para finales de 2026.",
+  "summary_en": "During three separate periods of the Apollo 17 mission (December 1972), astronauts Ronald Evans and Harrison Schmitt observed unidentified luminous objects in lunar orbit—described as 'bright tumbling particles' and a spectacle 'like the Fourth of July'. A photograph from the mission shows three 'dots' in a triangular formation in the lower right quadrant of the lunar sky. The U.S. Department of War published the documents in PURSUE R1 (May 8, 2026) and issued a preliminary analysis stating that the formation 'could be a physical object', with a final forensic report expected by end of 2026.",
+  "patterns": ["8n"],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.60,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.12,
+    "indet": 0.18
+  },
+  "whatHappened": "La misión Apollo 17 fue el sexto y último alunizaje tripulado del programa Apollo, con tripulación: Eugene Cernan (comandante), Harrison Schmitt (geólogo, módulo lunar) y Ronald Evans (piloto del módulo de mando). La misión transcurrió del 7 al 19 de diciembre de 1972.\n\nLos documentos publicados en PURSUE R1 (8 de mayo de 2026) incluyen la transcripción de audio de misión identificada como NASA-UAP-D2, que documenta tres periodos de observaciones anómalas: un periodo de nueve minutos durante el primer día de vuelo, un periodo de tres horas durante el segundo día, y un periodo de seis minutos el tercer día. El periodo más extenso corresponde al segundo día, en órbita lunar alta.\n\nDurante el segundo periodo, Ronald Evans reportó: 'Now we've got a few very bright particles or fragments or something that go drifting by as we maneuver' (hay partículas o fragmentos muy brillantes que pasan flotando a la deriva mientras maniobramos). Harrison Schmitt describió el fenómeno comparándolo con el Cuatro de Julio —la festividad estadounidense de fuegos artificiales—. El volumen y brillo de los objetos observados sorprendió a la tripulación durante varias horas consecutivas.\n\nParalelamente, el paquete PURSUE R1 incluye una fotografía de la NASA tomada durante la misión (diciembre 1972) que muestra tres 'puntos' en formación triangular en el cuadrante inferior derecho del cielo lunar, claramente visibles al magnificar la imagen. El Departamento de Guerra emitió un análisis preliminar oficial declarando que 'no existe consenso sobre la naturaleza de la anomalía' pero que una revisión inicial indica que el elemento podría ser 'un objeto físico'. El Departamento anunció la publicación de un reporte forense definitivo antes de finales de 2026.\n\nLa explicación prosaica más sólida para las observaciones de Evans y Schmitt es la contaminación por partículas del propio vehículo: fragmentos de pintura, escapes de agua o residuos de propulsión que se iluminan en la oscuridad del espacio al recibir luz solar directa. Este fenómeno fue documentado en misiones Apollo anteriores (el Apollo 12 registró 'flashes of light' similares, atribuidos a rayos cósmicos interactuando con la retina). Para la fotografía triangular, las hipótesis prosáicas incluyen artefactos ópticos, reflexiones de la ventana del módulo de mando o defectos del sensor fotográfico. Sin embargo, ninguna hipótesis fue considerada definitiva por el análisis del Departamento de Guerra, que clasificó ambos elementos como no resueltos.",
+  "whatHappened_en": "The Apollo 17 mission was the sixth and final crewed Moon landing in the Apollo program, with a crew of Eugene Cernan (commander), Harrison Schmitt (geologist, lunar module) and Ronald Evans (command module pilot). The mission ran from December 7 to 19, 1972.\n\nDocuments published in PURSUE R1 (May 8, 2026) include the mission audio transcript identified as NASA-UAP-D2, documenting three periods of anomalous observations: a nine-minute period on the first day of flight, a three-hour period on the second day, and a six-minute period on the third day. The longest period falls on the second day, in high lunar orbit.\n\nDuring the second period, Ronald Evans reported: 'Now we've got a few very bright particles or fragments or something that go drifting by as we maneuver.' Harrison Schmitt described the spectacle as looking like the Fourth of July—the U.S. fireworks holiday. The volume and brightness of the objects surprised the crew for several consecutive hours.\n\nSeparately, the PURSUE R1 package includes a NASA photograph taken during the mission (December 1972) showing three 'dots' in a triangular formation in the lower right quadrant of the lunar sky, clearly visible upon magnification. The Department of War issued an official preliminary analysis stating there is 'no consensus about the nature of the anomaly' but that an initial review indicates the feature could be 'a physical object.' The Department announced the publication of a final forensic report before the end of 2026.\n\nThe strongest prosaic explanation for Evans and Schmitt's observations is vehicle-derived particle contamination: paint flakes, water venting, or propulsion residue illuminated in the darkness of space by direct sunlight. This phenomenon was documented in earlier Apollo missions (Apollo 12 recorded similar 'flashes of light,' attributed to cosmic rays interacting with the retina). For the triangular photograph, prosaic hypotheses include optical artifacts, window reflections, or photographic sensor defects. However, no hypothesis was deemed definitive by the Department of War analysis, which classified both elements as unresolved.",
+  "whyMatters": "El caso Apollo 17 · PURSUE R1 tiene importancia dual: como evidencia astronómica y como hecho institucional.\n\nComo evidencia astronómica, la fotografía triangular es el elemento analíticamente más significativo. El contexto del espacio cislunar en diciembre de 1972 reduce drásticamente el espacio de hipótesis convencionales: no existía capacidad espacial de ningún actor adversario cerca de la Luna, lo que elimina 'humana_clasificada' y 'adversaria' casi completamente. Si el análisis forense del DoD confirma que el elemento fotografiado es un objeto físico —y no un artefacto de imagen—, las alternativas disponibles se reducen a debris del propio vehículo (mundano_natural) o a un fenómeno de otra categoría. Esa bifurcación es la que el reporte forense prometido deberá resolver.\n\nComo hecho institucional, el caso ilustra la tensión que estructura al programa PURSUE: el Departamento de Guerra publicó estos documentos con transparencia formal pero mantuvo ambigüedad deliberada —'no consensus'— en lugar de emitir un veredicto definitivo. La estrategia de divulgación de ambigüedad (patrón 8n del corpus) es analíticamente relevante: determinar si esa ambigüedad refleja incertidumbre genuina o gestión de narrativa tiene consecuencias directas sobre cómo interpretar futuras declaraciones institucionales sobre UAP. El corpus asigna Tier A —no S— porque la evidencia fotográfica no cuenta aún con correlato de radar ni sensor secundario independiente; el reporte forense pendiente es el criterio de actualización.",
+  "whyMatters_en": "The Apollo 17 · PURSUE R1 case has dual importance: as astronomical evidence and as an institutional fact.\n\nAs astronomical evidence, the triangular photograph is the most analytically significant element. The cislunar space context in December 1972 drastically narrows the conventional hypothesis space: no adversary actor had space capability near the Moon, nearly eliminating 'humana_clasificada' and 'adversaria.' If the DoD forensic analysis confirms that the photographed feature is a physical object—and not an image artifact—the available alternatives reduce to vehicle-derived debris (mundano_natural) or a phenomenon of another category. That bifurcation is what the promised forensic report must resolve.\n\nAs an institutional fact, the case illustrates the tension structuring the PURSUE program: the Department of War released these documents with formal transparency while maintaining deliberate ambiguity—'no consensus'—rather than issuing a definitive verdict. The strategic ambiguity disclosure (corpus pattern 8n) is analytically relevant: determining whether that ambiguity reflects genuine uncertainty or narrative management has direct consequences for how to interpret future institutional statements on UAP. The corpus assigns Tier A—not S—because the photographic evidence does not yet have a radar correlate or independent secondary sensor; the pending forensic report is the key update criterion.",
+  "evidence": [
+    "Transcripción de audio NASA-UAP-D2, publicada en PURSUE R1 (8 may 2026): tres periodos de observación anómala documentados (9 min día 1, 3 horas día 2, 6 min día 3)",
+    "Evans reportó 'partículas o fragmentos muy brillantes' en tránsito durante maniobras orbitales; Schmitt comparó el fenómeno con los fuegos artificiales del Cuatro de Julio",
+    "Fotografía NASA (dic 1972): tres 'puntos' en formación triangular en cuadrante inferior derecho del cielo lunar, visibles en magnificación",
+    "Análisis preliminar del Departamento de Guerra (PURSUE R1): 'no existe consenso sobre la naturaleza de la anomalía; podría ser un objeto físico'",
+    "Reporte forense definitivo anunciado por el Departamento de Guerra para antes de finales de 2026"
+  ],
+  "evidence_en": [
+    "NASA-UAP-D2 audio transcript, published in PURSUE R1 (May 8, 2026): three anomalous observation periods documented (9 min day 1, 3 hours day 2, 6 min day 3)",
+    "Evans reported 'very bright particles or fragments' transiting during orbital maneuvers; Schmitt compared the spectacle to Fourth of July fireworks",
+    "NASA photograph (Dec 1972): three 'dots' in triangular formation in the lower right quadrant of the lunar sky, visible upon magnification",
+    "Preliminary analysis by the Department of War (PURSUE R1): 'no consensus about the nature of the anomaly; could be a physical object'",
+    "Final forensic report announced by the Department of War for before end of 2026"
+  ],
+  "sources": [
+    {
+      "name": "Departamento de Guerra EE.UU. — Apollo 17 UAP Transcript (NASA-UAP-D2), PURSUE Release 1, 8 may 2026",
+      "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d2-apollo-17-transcript-1972.pdf"
+    },
+    {
+      "name": "Departamento de Guerra EE.UU. — PURSUE Release 1 (portal oficial)",
+      "url": "https://www.war.gov/ufo/"
+    },
+    {
+      "name": "CBS News — 'UFO files reveal Apollo 17 crew saw mysterious objects, lights during 1972 mission: \"Looks like the Fourth of July\"'",
+      "url": "https://www.cbsnews.com/news/ufo-files-apollo-17-crew-mysterious-objects-1972-mission/"
+    },
+    {
+      "name": "NBC News — 'UFO sightings from Apollo missions and other unexplained phenomena unveiled in Pentagon drop'",
+      "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204"
+    },
+    {
+      "name": "NewsNation — 'UFO files: What did the Apollo 17 astronauts see on mission to the moon?'",
+      "url": "https://www.newsnationnow.com/space/ufo/ufos-on-the-moon-apollo-17-astronauts/"
+    },
+    {
+      "name": "WION News — 'Declassified: The Bizarre Truth Behind Apollo 17's Lunar Triangular Formation'",
+      "url": "https://www.wionews.com/photos/declassified-the-bizarre-truth-behind-apollo-17-s-lunar-triangular-ation-1778428202390"
+    }
+  ]
+}
