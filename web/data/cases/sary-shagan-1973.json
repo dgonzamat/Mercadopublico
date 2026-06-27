@@ -27,6 +27,17 @@
   },
   "summary": "A fines del verano de 1973, en el Sitio 7 del campo de pruebas de armas de Sary Shagan —el polígono soviético de defensa antimisiles y energía dirigida cerca del lago Baljash—, un trabajador del recinto observó al oeste, a unos 70° de elevación, un nítido objeto circular verde. En 10-15 segundos el círculo se ensanchó y se formaron varios círculos verdes concéntricos alrededor de la masa; el color se desvaneció en minutos, sin sonido ni explosión, con cielo despejado. El relato llegó a Occidente como un informe HUMINT de la CIA (CONFIDENTIAL) y reapareció desclasificado en el segundo release del sistema PURSUE (22 may 2026). La firma —cloud verde en expansión concéntrica— es compatible con un ensayo soviético de altitud (liberación química o pluma de cohete) tanto como con un fenómeno óptico-atmosférico.",
   "summary_en": "In late summer 1973, at Site 7 of the Sary Shagan weapons testing range —the Soviet anti-ballistic-missile and directed-energy proving ground near Lake Balkhash—, a worker at the facility observed to the west, at about 70° elevation, a sharp green circular object. Within 10-15 seconds the circle widened and several concentric green circles formed around the mass; the color faded within minutes, with no sound or explosion, under a clear sky. The account reached the West as a CIA HUMINT report (CONFIDENTIAL) and resurfaced declassified in the second release of the PURSUE system (May 22, 2026). The signature —an expanding concentric green cloud— is consistent with a Soviet high-altitude test (chemical release or rocket plume) as much as with an optical-atmospheric phenomenon.",
+  "documents": [
+    {
+      "src": "/pursue/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-D001 — informe HUMINT de inteligencia, URSS (1973)",
+      "title_en": "CIA-UAP-D001 — HUMINT intelligence report, USSR (1973)",
+      "source": "CIA · Department of War (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/?releaseDate=Release+02#records"
+    }
+  ],
   "patterns": [
     "8f",
     "8h"

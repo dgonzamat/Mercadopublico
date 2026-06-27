@@ -14,9 +14,27 @@
   "tier": "A",
   "epistemicStatus": "projected",
   "probability": 80,
-  "posterior": { "mundano_natural": 0.1, "humana_clasificada": 0.35, "adversaria": 0, "nohumano_encubierto": 0.25, "nohumano_abierto": 0, "indet": 0.3 },
+  "posterior": {
+    "mundano_natural": 0.1,
+    "humana_clasificada": 0.35,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.25,
+    "nohumano_abierto": 0,
+    "indet": 0.3
+  },
   "summary": "En el marco del release PURSUE, AARO publicó declaraciones formales de un 'USPER' — testigo con credenciales de seguridad e identidad protegida — que describe acceso operacional a programas compartimentados con material aeroespacial recuperado de origen no convencional.",
   "summary_en": "Under the PURSUE release, AARO published formal statements by a 'USPER' — a security-credentialed witness with protected identity — describing operational access to compartmented programs involving recovered aerospace material of unconventional origin.",
+  "documents": [
+    {
+      "src": "/pursue/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
+      "type": "pdf",
+      "title": "ODNI-UAP-D001 — narrativa USPER de un alto oficial de la comunidad de inteligencia",
+      "title_en": "ODNI-UAP-D001 — USPER narrative by a senior intelligence-community officer",
+      "source": "ODNI · Department of War (PURSUE)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    }
+  ],
   "patterns": [
     "8b"
   ],

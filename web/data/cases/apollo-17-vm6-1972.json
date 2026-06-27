@@ -27,6 +27,26 @@
   },
   "summary": "La placa VM6 del archivo fotográfico de Apollo 17 (diciembre de 1972) muestra, al ampliar el cuadrante inferior derecho del cielo lunar, tres puntos luminosos en formación triangular regular. La fotografía circulaba desde hacía décadas en catálogos amateur, pero el cambio de 2026 fue institucional: dentro del release PURSUE del Departamento de Guerra, la AARO la catalogó como caso NASA-UAP-VM6 y la evaluó con un lenguaje inusualmente directo —'potencialmente el resultado de un objeto físico en la escena'—, recuperando el film original para reanálisis. Las explicaciones escépticas (hielo, desprendimiento de pintura, artefacto óptico) siguen siendo las más probables.",
   "summary_en": "The VM6 plate from the Apollo 17 photographic archive (December 1972) shows, when the lower-right quadrant of the lunar sky is magnified, three luminous dots in a regular triangular formation. The photograph had circulated for decades in amateur catalogs, but the 2026 shift was institutional: within the Department of War's PURSUE release, AARO cataloged it as case NASA-UAP-VM6 and assessed it with unusually direct language —'potentially the result of a physical object in the scene'—, retrieving the original film for reanalysis. The skeptical explanations (ice, paint flaking, optical artifact) remain the most likely.",
+  "documents": [
+    {
+      "src": "/pursue/nasa-uap-vm6-apollo-17-1972.jpg",
+      "type": "image",
+      "title": "NASA-UAP-VM6 — placa de Apollo 17 con la formación triangular",
+      "title_en": "NASA-UAP-VM6 — Apollo 17 plate with the triangular formation",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg"
+    },
+    {
+      "src": "/pursue/nasa-uap-d2-apollo-17-transcript-1972.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D2 — transcripción de Apollo 17 (1972)",
+      "title_en": "NASA-UAP-D2 — Apollo 17 transcript (1972)",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    }
+  ],
   "patterns": [
     "8e",
     "8h"

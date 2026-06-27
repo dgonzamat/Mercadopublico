@@ -18,6 +18,17 @@
   "probability": 60,
   "summary": "Un cable diplomático del Departamento de Estado de EE.UU. (documento #059UAP00013, archivado el 16 de septiembre de 2003) registra que, el 12 de septiembre de 2003, el Congreso de México escuchó testimonio sobre fenómenos aéreos no identificados como parte del debate de una proyectada 'Ley de Protección del Espacio Aéreo'. Según el cable, los expositores presentaron 'dos supuestos cadáveres alienígenas' y videos de encuentros de pilotos mexicanos. El propio documento consigna el desacuerdo sobre la validez de los presuntos cadáveres, no toma posición analítica y la ley no prosperó. El cable reapareció desclasificado en el primer release del sistema PURSUE (8 may 2026): es un registro diplomático del evento, no una verificación de las afirmaciones, y precede en veinte años a la audiencia de Jaime Maussan de 2023.",
   "summary_en": "A U.S. State Department diplomatic cable (document #059UAP00013, filed September 16, 2003) records that, on September 12, 2003, the Mexican Congress heard testimony on unidentified aerial phenomena as part of debate over a proposed 'Aerial Space Protection Law'. According to the cable, presenters showed 'two alleged alien corpses' and videos of Mexican pilots' encounters. The document itself notes the disagreement over the validity of the purported corpses, takes no analytical position, and the law did not pass. The cable resurfaced declassified in the first release of the PURSUE system (May 8, 2026): it is a diplomatic record of the event, not a verification of the claims, and it precedes Jaime Maussan's 2023 hearing by twenty years.",
+  "documents": [
+    {
+      "src": "/pursue/059uap00013.pdf",
+      "type": "pdf",
+      "title": "Cable del Departamento de Estado #059UAP00013 (2003)",
+      "title_en": "State Department cable #059UAP00013 (2003)",
+      "source": "U.S. Department of State · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf"
+    }
+  ],
   "patterns": [
     "8q",
     "8o"

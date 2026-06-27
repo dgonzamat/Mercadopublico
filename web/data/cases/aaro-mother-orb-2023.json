@@ -19,6 +19,26 @@
   "probability": 40,
   "summary": "Durante dos días de octubre de 2023, seis agentes federales (tres equipos de dos) observaron cerca de un sitio de seguridad nacional sensible en el oeste de EE.UU. un orbe naranja 'madre' que aparecía 1-2 segundos y liberaba racimos de 2-4 orbes rojos. AARO publicó el informe el 5 de junio de 2026 (director Jon Kosloski): ~60% se correlaciona con bengalas IR y radar; ~40% permanece sin explicar.",
   "summary_en": "Over two days in October 2023, six federal agents (three two-person teams) observed near a sensitive national security site in the western U.S. an orange 'mother' orb that appeared for 1-2 seconds and released clusters of 2-4 red orbs. AARO published the report on 5 June 2026 (director Jon Kosloski): ~60% correlates with IR flares and radar; ~40% remains unexplained.",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D009 — FD-302 del avistamiento de orbes (oeste de EE.UU.)",
+      "title_en": "FBI-UAP-D009 — FD-302 of the orb sighting (Western US)",
+      "source": "FBI · Department of War (PURSUE)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D014 — render digital del evento del oeste de EE.UU. (2023)",
+      "title_en": "FBI-UAP-D014 — digital rendering of the Western US event (2023)",
+      "source": "FBI · Department of War (PURSUE)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    }
+  ],
   "patterns": [
     "8b"
   ],
