@@ -28,6 +28,17 @@
     "license": "Dominio público · US Government work",
     "href": "https://www.war.gov/UFO/"
   },
+  "documents": [
+    {
+      "src": "/pursue/serial-3_redacted.pdf",
+      "type": "pdf",
+      "title": "FBI 302 — avistamiento del sitio de prueba, septiembre 2023 (Serial 004, redactado)",
+      "title_en": "FBI 302 — test-site sighting, September 2023 (Serial 004, redacted)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf"
+    }
+  ],
   "patterns": [
     "8h",
     "8n"

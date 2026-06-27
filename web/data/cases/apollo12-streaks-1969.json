@@ -19,6 +19,17 @@
   "probability": 22,
   "summary": "Audio del debrief médico post-misión del Apolo 12 (1969), desclasificado en la segunda entrega PURSUE (22 may 2026): los astronautas Conrad, Gordon y Bean describen 'streaks/flashes of light' que veían al intentar dormir en espacio profundo. La ciencia lo explica bien como rayos cósmicos interactuando con la retina — caso incluido por transparencia documental, no por anomalía.",
   "summary_en": "Audio from the Apollo 12 post-mission medical debrief (1969), declassified in the second PURSUE tranche (May 22, 2026): astronauts Conrad, Gordon and Bean describe 'streaks/flashes of light' they saw while trying to sleep in deep space. Science explains it well as cosmic rays interacting with the retina — a case included for documentary transparency, not for anomaly.",
+  "documents": [
+    {
+      "src": "/pursue/nasa-uap-d1-apollo-12-transcript-1969.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D1 — transcripción aire-tierra de Apollo 12 (nov 1969): partículas vía telescopio y debris",
+      "title_en": "NASA-UAP-D1 — Apollo 12 air-to-ground transcript (Nov 1969): particles via telescope and debris",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d1-apollo-12-transcript-1969.pdf"
+    }
+  ],
   "patterns": [],
   "category": "incident",
   "whatHappened": "En el debrief médico posterior a la misión Apolo 12 (noviembre de 1969), los astronautas Pete Conrad, Richard Gordon y Alan Bean describieron haber visto 'streaks' y 'flashes of light' mientras intentaban dormir en el trayecto a la Luna. Según la transcripción, un tripulante señaló que 'los streaks que vi eran horizontales… siempre un poco por encima del centro'; Bean los describió como destellos que 'navegaban hacia el espacio'. En la conversación, la tripulación y el personal médico discutieron si los destellos eran aleatorios o direccionales y si aparecían en uno o ambos ojos, y un astronauta comentó que, tras observar lo suficiente, podía distinguir en qué ojo se había registrado cada destello. El audio fue desclasificado el 22 de mayo de 2026 como parte de la segunda entrega del sistema PURSUE (war.gov/ufo).\n\nA diferencia de los casos de sensor militar, este tiene una explicación científica robusta y de larga data: el fenómeno conocido como 'light flashes' o fosfenos cósmicos, reportado por astronautas en espacio profundo, se atribuye a partículas cargadas de alta energía (rayos cósmicos galácticos, en su mayoría protones y núcleos pesados) que atraviesan el globo ocular e interactúan con la retina y el nervio óptico, generando la percepción de destellos sin fuente externa de luz. Fuera del campo magnético terrestre, que en la superficie nos protege de buena parte de este flujo, la exposición es mucho mayor, lo que explica por qué el efecto es notorio precisamente en el trayecto translunar. La hipótesis fue planteada ya en los años 50 (Cornelius Tobias) y se documentó sistemáticamente en misiones posteriores (el resto del programa Apolo, Skylab, y más tarde experimentos a bordo como ALTEA en la ISS), además de reproducirse parcialmente en aceleradores de partículas. Es, por tanto, un caso 'no resuelto' en el sentido administrativo del PURSUE, pero bien caracterizado en el sentido físico, aun cuando el mecanismo neuronal exacto (ionización directa frente a radiación Cherenkov en el humor vítreo) siga siendo objeto de estudio.",

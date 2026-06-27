@@ -40,11 +40,20 @@
     {
       "src": "/pursue/nasa-uap-d2-apollo-17-transcript-1972.pdf",
       "type": "pdf",
-      "title": "NASA-UAP-D2 — transcripción de Apollo 17 (1972)",
-      "title_en": "NASA-UAP-D2 — Apollo 17 transcript (1972)",
+      "title": "NASA-UAP-D2 — transcripción aire-tierra de Apollo 17 (dic 1972): partículas, destellos y 'streaks'",
+      "title_en": "NASA-UAP-D2 — Apollo 17 air-to-ground transcript (Dec 1972): particles, flashes and streaks",
       "source": "NASA · Department of War (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
-      "fallbackUrl": "https://www.war.gov/UFO/"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d2-apollo-17-transcript-1972.pdf"
+    },
+    {
+      "src": "/pursue/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D5 — debriefing científico de Apollo 17 (8 ene 1973): fondo UV/rayos-X inesperado",
+      "title_en": "NASA-UAP-D5 — Apollo 17 Crew Debriefing for Science (Jan 8, 1973): unexpected UV/X-ray background",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf"
     }
   ],
   "patterns": [

@@ -1,0 +1,80 @@
+{
+  "id": "skylab-observations-1973",
+  "num": 280,
+  "name": "Skylab · destellos y objeto rojizo (NASA, PURSUE)",
+  "name_en": "Skylab · light flashes and reddish object (NASA, PURSUE)",
+  "year_start": 1973,
+  "year_end": 1974,
+  "country": "US",
+  "country_name": "Estados Unidos / órbita terrestre baja",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 29.56,
+    "lng": -95.09,
+    "place": "NASA · estación espacial Skylab (órbita terrestre baja) — debriefs de tripulación, Houston",
+    "place_en": "NASA · Skylab space station (low Earth orbit) — crew debriefings, Houston"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "posterior": {
+    "mundano_natural": 0.78,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
+    "indet": 0.14
+  },
+  "summary": "El documento NASA-UAP-D7, desclasificado en el primer release PURSUE, reúne extractos de los debriefings técnicos de las tres tripulaciones que ocuparon Skylab —la primera estación espacial de EE.UU.— entre 1973 y 1974. Recoge tres tipos de observación: destellos de luz que los astronautas veían con los ojos cerrados (el conocido fenómeno de fosfenos por rayos cósmicos), un objeto rojizo brillante que la tripulación de Skylab 3 rastreó 5-10 minutos y describió ella misma como 'obviamente un satélite en órbita muy similar a la nuestra', y luces parpadeantes en el exterior con movimiento relativo que la tripulación de Skylab 4 atribuyó a fragmentos de la propia estación u otros satélites. Es un caso de transparencia documental: las tres observaciones tienen explicación prosaica reconocida por los propios testigos.",
+  "summary_en": "Document NASA-UAP-D7, declassified in the first PURSUE release, gathers excerpts from the technical debriefings of the three crews that occupied Skylab —the first U.S. space station— between 1973 and 1974. It records three kinds of observation: light flashes the astronauts saw with their eyes closed (the well-known cosmic-ray phosphene phenomenon), a bright reddish object the Skylab 3 crew tracked for 5-10 minutes and themselves described as 'obviously a satellite in a very similar orbit to our own', and flashing lights outside with relative motion that the Skylab 4 crew attributed to pieces of the station itself or other satellites. It is a documentary-transparency case: all three observations have a prosaic explanation acknowledged by the witnesses themselves.",
+  "documents": [
+    {
+      "src": "/pursue/nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D7 — debriefings técnicos de las tres tripulaciones de Skylab (1973-1974)",
+      "title_en": "NASA-UAP-D7 — technical debriefings of the three Skylab crews (1973-1974)",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf"
+    }
+  ],
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "Skylab, lanzada el 14 de mayo de 1973, fue la primera estación espacial de Estados Unidos. Entre 1973 y 1974 la ocuparon tres tripulaciones sucesivas, y el documento NASA-UAP-D7 —desclasificado el 8 de mayo de 2026 en el primer release del sistema PURSUE— reúne extractos de los debriefings técnicos de las tres en los que los astronautas describen observaciones de fenómenos no identificados. Son tres tipos de observación distintos, y conviene tratarlos por separado porque su naturaleza es diferente.\n\nLa primera es la de los destellos de luz. En el debriefing de Skylab 2 (la primera tripulación, 30 de junio de 1973), el science pilot Joseph Kerwin relató: 'Vimos destellos de luz. Creo que todos los vimos. Yo los veía más a menudo cuando estaba en el saco de dormir por la noche, con los ojos cerrados pero despierto. Tendían a aumentar y disminuir en frecuencia.' Que un astronauta vea destellos con los ojos cerrados es la firma inconfundible del fenómeno de 'light flashes' o fosfenos cósmicos: partículas cargadas de alta energía —rayos cósmicos galácticos— que atraviesan el globo ocular e interactúan con la retina y el nervio óptico, generando la percepción de luz sin fuente externa. El efecto, ya planteado en los años 50 y confirmado en el programa Apolo, es más intenso fuera del campo magnético terrestre; en órbita baja Skylab seguía expuesta a un flujo apreciable, sobre todo al cruzar la Anomalía del Atlántico Sur.\n\nLa segunda observación es la más llamativa y, a la vez, la que los propios testigos resolvieron. En el debriefing de Skylab 3 (4 de octubre de 1973), el science pilot Owen Garriott describió un objeto que la tripulación rastreó durante cinco a diez minutos aproximadamente una semana antes del amerizaje: 'Este objeto rojizo brillante estaba ahí fuera y lo seguimos... era obviamente un satélite en una órbita muy similar a la nuestra.' En otro pasaje añadió que Jack Lousma notó primero 'una estrella roja bastante grande' por la ventana del wardroom, mucho más brillante que Júpiter, con un tono rojizo, y bien por encima del horizonte. La descripción —un objeto en órbita similar, seguido visualmente varios minutos— encaja con un satélite o una etapa de cohete iluminados por el Sol, y la propia tripulación lo identificó así.\n\nLa tercera, en el debriefing de Skylab 4 (22 de febrero de 1974), la aportó el comandante Gerald Carr: 'En ocasiones vimos algunas luces parpadeando afuera con un movimiento muy definido respecto al nuestro. Presumimos que eran otros fragmentos de Skylab, o posiblemente otros satélites.' De nuevo, los testigos ofrecen ellos mismos la explicación prosaica: debris orbital propio o tráfico de satélites, ambos abundantes en órbita baja y fáciles de confundir con objetos anómalos cuando reflejan la luz solar contra el fondo negro.\n\nEl documento, por tanto, no presenta un enigma sin resolver sino un registro honesto: tres clases de observación que las propias tripulaciones interpretaron, en el momento, como un fenómeno fisiológico conocido (los destellos), un satélite (el objeto rojizo) y debris o satélites (las luces parpadeantes). Su inclusión en PURSUE responde a la lógica del programa de publicar todo lo catalogado internamente como UAP, no a que el material desafíe una explicación.",
+  "whatHappened_en": "Skylab, launched on May 14, 1973, was the United States' first space station. Between 1973 and 1974 three successive crews occupied it, and document NASA-UAP-D7 —declassified on May 8, 2026 in the first PURSUE release— gathers excerpts from the technical debriefings of all three in which the astronauts describe observations of unidentified phenomena. They are three distinct kinds of observation, and it is worth treating them separately because their nature differs.\n\nThe first is the light flashes. In the Skylab 2 debriefing (the first crew, June 30, 1973), science pilot Joseph Kerwin reported: 'We saw light flashes. I think all of us saw them. I saw them most often when I was in the sack at night with my eyes closed but awake. They tended to wax and wane in frequency.' An astronaut seeing flashes with his eyes closed is the unmistakable signature of the 'light flashes' or cosmic phosphene phenomenon: high-energy charged particles —galactic cosmic rays— that cross the eyeball and interact with the retina and optic nerve, producing the perception of light with no external source. The effect, proposed in the 1950s and confirmed during Apollo, is stronger outside Earth's magnetic field; in low orbit Skylab was still exposed to an appreciable flux, especially when crossing the South Atlantic Anomaly.\n\nThe second observation is the most striking and, at the same time, the one the witnesses themselves resolved. In the Skylab 3 debriefing (October 4, 1973), science pilot Owen Garriott described an object the crew tracked for about five to ten minutes roughly a week before splashdown: 'This bright reddish object was out there and we tracked it... it was obviously a satellite in a very similar orbit to our own.' In another passage he added that Jack Lousma first noticed 'a rather large red star' out the wardroom window, much brighter than Jupiter, with a reddish hue, and well above the horizon. The description —an object in a similar orbit, followed visually for several minutes— fits a sunlit satellite or rocket stage, and the crew itself identified it as such.\n\nThe third, in the Skylab 4 debriefing (February 22, 1974), came from commander Gerald Carr: 'On occasion we saw some lights flashing outside with very definite motion relative to ours. We presumed that they were other pieces of Skylab, or possibly other satellites.' Again, the witnesses themselves offer the prosaic explanation: the station's own orbital debris or satellite traffic, both abundant in low orbit and easy to mistake for anomalous objects when they reflect sunlight against the black background.\n\nThe document, then, presents not an unresolved enigma but an honest record: three classes of observation that the crews themselves interpreted, at the time, as a known physiological phenomenon (the flashes), a satellite (the reddish object) and debris or satellites (the flashing lights). Its inclusion in PURSUE follows the program's logic of publishing everything internally cataloged as UAP, not from the material defying explanation.",
+  "whyMatters": "El valor de Skylab en el corpus no es evidencial sino metodológico y de cobertura, y conviene decirlo sin adornos: es un caso cuya explicación prosaica es robusta y, en su mayor parte, fue ofrecida por los propios astronautas en el momento. Los destellos con los ojos cerrados son el fenómeno de fosfenos cósmicos, documentado desde Apolo; el objeto rojizo que la tripulación de Skylab 3 siguió durante minutos fue identificado por ella misma como 'obviamente un satélite'; y las luces parpadeantes de Skylab 4 fueron atribuidas por el comandante a debris o satélites. Por eso el posterior concentra la masa en 'mundano_natural' y la ficha entra como tier B con probabilidad baja: no es un enigma, es un registro.\n\nDicho esto, su inclusión cumple tres funciones legítimas. Primero, completa el nodo Skylab en el hilo de observaciones astronáuticas del corpus, junto a Gemini, Apolo 12 y Apolo 17, mostrando que el mismo repertorio de fenómenos —fosfenos, partículas, debris, satélites— reaparece de misión en misión con explicación estable. Segundo, es un calibrador de honestidad: un corpus que solo recogiera los casos espectaculares y descartara los bien explicados estaría sesgado; incluir Skylab, y declarar abiertamente que sus tres observaciones son prosaicas, mantiene la disciplina de tratar la evidencia por su fuerza real y no por su atractivo. Tercero, ilustra una característica del propio sistema PURSUE: el programa publica todo lo que en algún momento se catalogó internamente como UAP, de modo que el acervo mezcla, sin jerarquizar, material genuinamente anómalo con observaciones resueltas; saber distinguir unas de otras es precisamente la tarea analítica. Skylab es, en ese sentido, el contraejemplo útil: el documento desclasificado que, leído con cuidado, se explica a sí mismo.",
+  "whyMatters_en": "Skylab's value in the corpus is not evidential but methodological and one of coverage, and it is worth saying plainly: it is a case whose prosaic explanation is robust and, for the most part, was offered by the astronauts themselves at the time. The flashes with eyes closed are the cosmic phosphene phenomenon, documented since Apollo; the reddish object the Skylab 3 crew tracked for minutes was identified by them as 'obviously a satellite'; and the Skylab 4 flashing lights were attributed by the commander to debris or satellites. Hence the posterior concentrates its mass in 'mundano_natural' and the file enters as tier B with low probability: it is not an enigma, it is a record.\n\nThat said, its inclusion serves three legitimate functions. First, it completes the Skylab node in the corpus's thread of astronaut observations, alongside Gemini, Apollo 12 and Apollo 17, showing that the same repertoire of phenomena —phosphenes, particles, debris, satellites— recurs mission after mission with a stable explanation. Second, it is a calibration check: a corpus that recorded only the spectacular cases and discarded the well-explained ones would be biased; including Skylab, and openly declaring its three observations prosaic, preserves the discipline of treating evidence by its real strength rather than its allure. Third, it illustrates a feature of the PURSUE system itself: the program publishes everything once internally cataloged as UAP, so the holdings mix, without ranking, genuinely anomalous material with resolved observations; knowing how to tell them apart is precisely the analytical task. Skylab is, in that sense, the useful counterexample: the declassified document that, read carefully, explains itself.",
+  "evidence": [
+    "Documento NASA-UAP-D7 (PURSUE Release 01): extractos de los debriefings técnicos de las tres tripulaciones de Skylab (1973-1974)",
+    "Skylab 2 — Joseph Kerwin (30 jun 1973): destellos de luz vistos con los ojos cerrados (firma de fosfenos por rayos cósmicos)",
+    "Skylab 3 — Owen Garriott (4 oct 1973): objeto rojizo brillante rastreado 5-10 min, identificado por la propia tripulación como 'obviamente un satélite en órbita similar'",
+    "Skylab 4 — Gerald Carr (22 feb 1974): luces parpadeantes con movimiento relativo, atribuidas por el comandante a fragmentos de Skylab u otros satélites",
+    "Las tres observaciones tienen explicación prosaica reconocida por los propios testigos en el momento"
+  ],
+  "evidence_en": [
+    "Document NASA-UAP-D7 (PURSUE Release 01): excerpts from the technical debriefings of the three Skylab crews (1973-1974)",
+    "Skylab 2 — Joseph Kerwin (Jun 30, 1973): light flashes seen with eyes closed (signature of cosmic-ray phosphenes)",
+    "Skylab 3 — Owen Garriott (Oct 4, 1973): bright reddish object tracked 5-10 min, identified by the crew itself as 'obviously a satellite in a similar orbit'",
+    "Skylab 4 — Gerald Carr (Feb 22, 1974): flashing lights with relative motion, attributed by the commander to pieces of Skylab or other satellites",
+    "All three observations have a prosaic explanation acknowledged by the witnesses themselves at the time"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — NASA-UAP-D7, Skylab Technical Crew Debriefing 1973 (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf",
+      "note": "Documento primario con los extractos de las tres tripulaciones."
+    },
+    {
+      "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro NASA-UAP-D007)",
+      "url": "https://github.com/abigailhaddad/ufo-releases",
+      "note": "Mirror del índice con descripción y citas verbatim de los debriefings."
+    },
+    {
+      "name": "NASA — Apollo Light Flash Moving Emulsion Detector / cosmic-ray visual phenomena",
+      "note": "Base científica del fenómeno de fosfenos cósmicos reportado por astronautas."
+    }
+  ]
+}
