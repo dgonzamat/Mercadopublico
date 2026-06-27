@@ -37,6 +37,15 @@
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf"
+    },
+    {
+      "src": "/pursue/2024-04-30-composite-sketch.pdf",
+      "type": "pdf",
+      "title": "Boceto compuesto FBI (oficial) — foto del sitio con overlay del Laboratorio (30 abr 2024)",
+      "title_en": "FBI composite sketch (official) — site photo with FBI Lab overlay (Apr 30, 2024)",
+      "source": "FBI Laboratory (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf"
     }
   ],
   "patterns": [
