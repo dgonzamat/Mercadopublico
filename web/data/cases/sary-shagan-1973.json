@@ -1,0 +1,88 @@
+{
+  "id": "sary-shagan-1973",
+  "num": 278,
+  "name": "Sary Shagan · objeto verde sobre campo de armas soviético (CIA-UAP-D001)",
+  "name_en": "Sary Shagan · green object over Soviet weapons range (CIA-UAP-D001)",
+  "year_start": 1973,
+  "country": "SU",
+  "country_name": "Unión Soviética (RSS de Kazajistán)",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 46.0,
+    "lng": 73.6,
+    "place": "Sitio 7 · campo de pruebas de armas de Sary Shagan, cerca del lago Baljash",
+    "place_en": "Site 7 · Sary Shagan weapons testing range, near Lake Balkhash"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 45,
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.3,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.05,
+    "indet": 0.2
+  },
+  "summary": "A fines del verano de 1973, en el Sitio 7 del campo de pruebas de armas de Sary Shagan —el polígono soviético de defensa antimisiles y energía dirigida cerca del lago Baljash—, un trabajador del recinto observó al oeste, a unos 70° de elevación, un nítido objeto circular verde. En 10-15 segundos el círculo se ensanchó y se formaron varios círculos verdes concéntricos alrededor de la masa; el color se desvaneció en minutos, sin sonido ni explosión, con cielo despejado. El relato llegó a Occidente como un informe HUMINT de la CIA (CONFIDENTIAL) y reapareció desclasificado en el segundo release del sistema PURSUE (22 may 2026). La firma —cloud verde en expansión concéntrica— es compatible con un ensayo soviético de altitud (liberación química o pluma de cohete) tanto como con un fenómeno óptico-atmosférico.",
+  "summary_en": "In late summer 1973, at Site 7 of the Sary Shagan weapons testing range —the Soviet anti-ballistic-missile and directed-energy proving ground near Lake Balkhash—, a worker at the facility observed to the west, at about 70° elevation, a sharp green circular object. Within 10-15 seconds the circle widened and several concentric green circles formed around the mass; the color faded within minutes, with no sound or explosion, under a clear sky. The account reached the West as a CIA HUMINT report (CONFIDENTIAL) and resurfaced declassified in the second release of the PURSUE system (May 22, 2026). The signature —an expanding concentric green cloud— is consistent with a Soviet high-altitude test (chemical release or rocket plume) as much as with an optical-atmospheric phenomenon.",
+  "documents": [
+    {
+      "src": "/pursue/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-D001 — informe HUMINT de inteligencia, URSS (1973)",
+      "title_en": "CIA-UAP-D001 — HUMINT intelligence report, USSR (1973)",
+      "source": "CIA · Department of War (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/?releaseDate=Release+02#records"
+    }
+  ],
+  "patterns": [
+    "8f",
+    "8h"
+  ],
+  "category": "incident",
+  "featuredDoc": {
+    "label": "CIA-UAP-D001 · informe HUMINT (PURSUE Release 02)",
+    "label_en": "CIA-UAP-D001 · HUMINT report (PURSUE Release 02)",
+    "url": "https://www.war.gov/UFO/?releaseDate=Release+02#records",
+    "note": "Documento primario oficial en war.gov/UFO (Release 02). Mirror con transcripción OCR: github.com/wretcher207/the-ufo-files.",
+    "note_en": "Official primary document on war.gov/UFO (Release 02). Mirror with OCR transcript: github.com/wretcher207/the-ufo-files."
+  },
+  "whatHappened": "El expediente CIA-UAP-D001 es un informe de inteligencia de fuente humana (HUMINT) de la CIA, clasificado en su día como CONFIDENTIAL, con periodo de reporte de noviembre de 1972 a noviembre de 1973 y fuente adquirida en Alemania. Reapareció desclasificado dentro de la segunda tanda del sistema PURSUE —el release federal de archivos UAP del Departamento de Guerra—, publicada en war.gov/UFO el 22 de mayo de 2026. Su valor singular es el emplazamiento: el avistamiento ocurrió dentro del Sitio 7 del campo de pruebas de Sary Shagan, en la RSS de Kazajistán, cerca del lago Baljash. Sary Shagan no era un lugar cualquiera: fue el principal polígono soviético de ensayos de defensa antimisiles (ABM) y, durante la Guerra Fría, sede de programas de armas de energía dirigida y láseres de alta potencia. Un objeto luminoso anómalo sobre ese recinto tiene, por contexto, una lectura de ensayo de armas que un avistamiento sobre campo abierto no tendría.\n\nSegún el informe, un antiguo ciudadano soviético que trabajaba en el rango salió al exterior durante la transmisión televisada de un evento deportivo y vio, al oeste del sitio y a unos 70 grados de elevación, un 'objeto circular verde nítido (brillante)'. En 10 a 15 segundos 'el círculo verde se ensanchó y se formaron varios círculos verdes concéntricos alrededor de la masa'. La coloración se desvaneció en cuestión de minutos. No hubo sonido asociado ni explosión; el cielo estaba despejado, y tanto la altitud como el diámetro resultaron indeterminables. El testigo no ofreció ninguna teoría sobre lo que había visto, y el propio informe de la CIA no adelanta explicación: se limita a registrar el relato de la fuente.\n\nLa morfología descrita —un disco verde que se expande generando anillos concéntricos antes de apagarse— es exactamente la firma visual de varios fenómenos conocidos vinculados a actividad de cohetería y armas de altitud. Las liberaciones químicas de altitud (nubes de bario, litio o sustancias asociadas a experimentos ionosféricos y a la calibración de sensores) producen nubes luminosas que se expanden y cambian de color al difundirse en la alta atmósfera. Las plumas y venteos de combustible de un cohete o de un interceptor ABM, iluminados por el sol bajo el horizonte mientras el observador ya está en penumbra, generan halos y anillos en expansión. Un ensayo de energía dirigida o un evento de plasma a gran altitud entra en el mismo registro. Cualquiera de estas causas situaría el evento en el terreno de la tecnología clasificada soviética, no de lo anómalo. La alternativa puramente natural —un fenómeno óptico-atmosférico, airglow o un artefacto de percepción— también es viable dada la indeterminación de altitud y tamaño.\n\nLo que el documento no permite es cerrar la cuestión. Es un relato de un único testigo, de segunda mano para la CIA, sin instrumentación, sin fotografía y sin fecha exacta más allá del 'fines del verano de 1973'. La fuente correctamente vio 'algo' real y estructurado —un objeto que se expande en anillos no es una alucinación trivial—, pero la cadena que va desde esa observación hasta una identificación concreta (qué ensayo, qué sistema, qué fecha) no existe en el material liberado. Por eso el caso pesa: aporta un dato HUMINT de la CIA sobre actividad anómala en el corazón del complejo de armas soviético, sin entregar la pieza que lo resolvería.",
+  "whatHappened_en": "The CIA-UAP-D001 file is a CIA human-source intelligence (HUMINT) report, classified at the time as CONFIDENTIAL, with a reporting period from November 1972 to November 1973 and a source acquired in Germany. It resurfaced declassified within the second tranche of the PURSUE system —the Department of War's federal UAP-records release— published on war.gov/UFO on May 22, 2026. Its singular value is the location: the sighting occurred inside Site 7 of the Sary Shagan testing range, in the Kazakh SSR, near Lake Balkhash. Sary Shagan was no ordinary place: it was the principal Soviet anti-ballistic-missile (ABM) proving ground and, during the Cold War, home to directed-energy weapons programs and high-power lasers. An anomalous luminous object over that facility carries, by context, a weapons-test reading that a sighting over open country would not.\n\nAccording to the report, a former Soviet citizen working at the range stepped outside during the televised broadcast of a sporting event and saw, to the west of the site and at about 70 degrees elevation, a 'sharp (bright) green circular object'. Within 10 to 15 seconds 'the green circle widened and several concentric green circles formed around the mass'. The coloring faded within minutes. There was no associated sound or explosion; the sky was clear, and both altitude and diameter were indeterminable. The witness offered no theory about what he had seen, and the CIA report itself advances no explanation: it merely records the source's account.\n\nThe described morphology —a green disc expanding into concentric rings before dimming— is exactly the visual signature of several known phenomena tied to rocketry and high-altitude weapons activity. High-altitude chemical releases (barium, lithium, or substances associated with ionospheric experiments and sensor calibration) produce luminous clouds that expand and shift color as they diffuse in the upper atmosphere. The plumes and fuel venting of a rocket or an ABM interceptor, sunlit below the horizon while the observer is already in shadow, generate expanding halos and rings. A directed-energy test or a high-altitude plasma event falls in the same register. Any of these causes would place the event in the realm of Soviet classified technology, not the anomalous. The purely natural alternative —an optical-atmospheric phenomenon, airglow, or a perceptual artifact— is also viable given the indeterminate altitude and size.\n\nWhat the document does not allow is closing the question. It is a single-witness account, secondhand to the CIA, with no instrumentation, no photograph, and no exact date beyond 'late summer 1973'. The source correctly saw 'something' real and structured —an object expanding into rings is not a trivial hallucination—, but the chain running from that observation to a concrete identification (which test, which system, which date) does not exist in the released material. That is why the case carries weight: it contributes a CIA HUMINT datum on anomalous activity at the heart of the Soviet weapons complex, without delivering the piece that would resolve it.",
+  "whyMatters": "La importancia de Sary Shagan reside en dónde ocurrió, no en qué probó. El emplazamiento —el polígono soviético de defensa antimisiles y energía dirigida— convierte un avistamiento que en campo abierto sería marginal en un dato de inteligencia con contexto: un objeto verde que se expande en anillos concéntricos sobre el principal rango de ensayos de armas exóticas de la URSS encaja, antes que en cualquier hipótesis no humana, en la actividad clasificada del propio recinto. Por eso el caso reparte su masa de probabilidad entre dos baldes prosaicos: un fenómeno óptico-atmosférico genuino (mundano_natural) y, con peso casi igual, un ensayo soviético de altitud —liberación química, pluma de cohete o interceptor ABM, evento de energía dirigida— que cae en 'humana_clasificada' como tecnología estatal encubierta. La fracción no humana es deliberadamente baja: nada en el relato exige salir del repertorio de la cohetería de Guerra Fría. Lo que mantiene un residuo indeterminado es la pobreza probatoria —un solo testigo, sin instrumentos, sin fecha exacta, secondhand para la CIA— que impide confirmar cuál de las explicaciones prosaicas fue la correcta. Para el corpus, el valor del expediente es triple: amplía la geografía del fenómeno hacia el bloque soviético con fuente primaria occidental (CIA HUMINT), refuerza el patrón de eventos anómalos sobre infraestructura estratégica y de armas —el mismo patrón que articula Sandia 1948, Malmstrom 1967 o el corredor nuclear—, y ejemplifica cómo PURSUE está liberando no solo material propio estadounidense sino reporting de inteligencia sobre terceros Estados. No mueve las narrativas de fondo, pero ancla un nodo geográfico e institucional que antes faltaba.",
+  "whyMatters_en": "Sary Shagan's importance lies in where it happened, not in what it proved. The location —the Soviet anti-ballistic-missile and directed-energy proving ground— turns a sighting that would be marginal over open country into an intelligence datum with context: a green object expanding into concentric rings over the USSR's principal exotic-weapons test range fits, before any non-human hypothesis, the classified activity of the facility itself. That is why the case splits its probability mass between two prosaic buckets: a genuine optical-atmospheric phenomenon (mundano_natural) and, with almost equal weight, a Soviet high-altitude test —chemical release, rocket or ABM-interceptor plume, directed-energy event— which falls under 'humana_clasificada' as covert state technology. The non-human fraction is deliberately low: nothing in the account requires leaving the Cold War rocketry repertoire. What keeps an indeterminate residue is the evidential poverty —a single witness, no instruments, no exact date, secondhand to the CIA— that prevents confirming which prosaic explanation was correct. For the corpus, the file's value is threefold: it extends the phenomenon's geography into the Soviet bloc with a Western primary source (CIA HUMINT), reinforces the pattern of anomalous events over strategic and weapons infrastructure —the same pattern that organizes Sandia 1948, Malmstrom 1967, or the nuclear corridor—, and exemplifies how PURSUE is releasing not only U.S.-origin material but intelligence reporting on third States. It does not move the underlying narratives, but it anchors a geographic and institutional node that was previously missing.",
+  "evidence": [
+    "Informe HUMINT de la CIA (CIA-UAP-D001), clasificado CONFIDENTIAL, periodo de reporte nov 1972 - nov 1973, fuente adquirida en Alemania",
+    "Emplazamiento: Sitio 7 del campo de pruebas de Sary Shagan (RSS de Kazajistán), polígono soviético ABM y de energía dirigida",
+    "Descripción del testigo: objeto circular verde nítido al oeste, ~70° de elevación, que en 10-15 s se ensancha formando círculos verdes concéntricos y se desvanece en minutos",
+    "Sin sonido ni explosión; cielo despejado; altitud y diámetro indeterminables; el testigo no ofrece teoría",
+    "Desclasificado en el segundo release del sistema PURSUE (war.gov/UFO, 22 may 2026)"
+  ],
+  "evidence_en": [
+    "CIA HUMINT report (CIA-UAP-D001), classified CONFIDENTIAL, reporting period Nov 1972 - Nov 1973, source acquired in Germany",
+    "Location: Site 7 of the Sary Shagan testing range (Kazakh SSR), Soviet ABM and directed-energy proving ground",
+    "Witness description: sharp green circular object to the west, ~70° elevation, widening within 10-15 s into concentric green circles and fading within minutes",
+    "No sound or explosion; clear sky; altitude and diameter indeterminable; the witness offers no theory",
+    "Declassified in the second release of the PURSUE system (war.gov/UFO, May 22, 2026)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — CIA-UAP-D001 (PURSUE Release 02, documento primario)",
+      "url": "https://www.war.gov/UFO/?releaseDate=Release+02#records",
+      "note": "Informe HUMINT publicado en el portal del Departamento de Guerra (Release 02)."
+    },
+    {
+      "name": "the-ufo-files — cia-ussr-sary-shagan-1973 (mirror con OCR)",
+      "url": "https://github.com/wretcher207/the-ufo-files/blob/main/pursue-release-02/cases/cia-ussr-sary-shagan-1973.md",
+      "note": "Mirror curado con transcripción OCR del documento primario."
+    },
+    {
+      "name": "Department of War — 'Publishes Second Release of Unidentified Anomalous Phenomena Files'",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal oficial del sistema PURSUE."
+    }
+  ]
+}

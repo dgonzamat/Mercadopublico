@@ -282,6 +282,62 @@ export default async function CaseDetailPage(
         </a>
       )}
 
+      {/* ────────── ZONE A3 — VISOR DE DOCUMENTOS PRIMARIOS ────────── */}
+      {/* Documentos auto-hospedados (PDF/imagen) embebidos inline. Same-origin
+          porque war.gov bloquea el framing/fetch de terceros; fallbackUrl deja
+          siempre el original oficial accesible. Server component: zero JS. */}
+      {c.documents && c.documents.length > 0 && (
+        <section className="space-y-6">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+            <T
+              es="Documentos primarios · visor"
+              en="Primary documents · viewer"
+            />
+          </p>
+          {c.documents.map((doc, i) => (
+            <figure key={i} className="space-y-2">
+              {doc.type === "pdf" ? (
+                <iframe
+                  src={doc.src}
+                  title={doc.title}
+                  loading="lazy"
+                  className="h-[80vh] min-h-[480px] w-full border border-text/15 bg-surface-2"
+                />
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={doc.src}
+                  alt={doc.title}
+                  loading="lazy"
+                  className="w-full border border-text/15 bg-surface-2"
+                />
+              )}
+              <figcaption className="space-y-1">
+                <p className="text-sm leading-snug text-text">
+                  <T es={doc.title} en={doc.title_en ?? doc.title} />
+                </p>
+                <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                  {[doc.source, doc.license].filter(Boolean).join(" · ")}
+                  {doc.fallbackUrl && (
+                    <>
+                      {doc.source || doc.license ? " · " : ""}
+                      <a
+                        href={doc.fallbackUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
+                      >
+                        <T es="abrir original" en="open original" />
+                      </a>
+                    </>
+                  )}
+                </p>
+              </figcaption>
+            </figure>
+          ))}
+        </section>
+      )}
+
       {/* EN-only disclaimer when no EN narrative available */}
       {hasNarrative && !c.whatHappened_en && (
         <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">

@@ -197,6 +197,33 @@ for (const file of caseFiles) {
         err(w, `pattern "${p}" no existe en patterns.json`);
     });
 
+  // VISOR DE DOCUMENTOS (DocEmbed[]): documentos primarios embebidos inline.
+  // Invariante clave del diseño: `src` debe ser SAME-ORIGIN (bajo /pursue/),
+  // porque war.gov bloquea el framing/fetch de terceros y solo un asset
+  // auto-hospedado se embebe con garantía. El tipo decide el render (iframe
+  // para pdf, img para imagen), así que la extensión debe ser coherente.
+  if (c.documents !== undefined) {
+    if (!isArr(c.documents)) err(w, "documents debe ser array (DocEmbed[])");
+    else
+      c.documents.forEach((d, j) => {
+        const dw = `${w}.documents[${j}]`;
+        if (!isStr(d.src)) err(dw, "src obligatorio (string)");
+        else if (!d.src.startsWith("/pursue/"))
+          err(dw, `src debe ser same-origin bajo /pursue/ (war.gov no se puede embeber): "${d.src}"`);
+        if (!["pdf", "image"].includes(d.type))
+          err(dw, `type inválido "${d.type}" (pdf|image)`);
+        if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))
+          err(dw, `type "pdf" exige src con extensión .pdf: "${d.src}"`);
+        if (isStr(d.src) && d.type === "image" && !/\.(jpe?g|png|webp|gif)$/i.test(d.src))
+          err(dw, `type "image" exige src con extensión de imagen (.jpg/.png/.webp/.gif): "${d.src}"`);
+        if (!isStr(d.title)) err(dw, "title obligatorio (string)");
+        for (const f of ["title_en", "source", "license"])
+          if (d[f] !== undefined && !isStr(d[f])) err(dw, `${f} debe ser string`);
+        if (d.fallbackUrl !== undefined && !isHttpUrl(d.fallbackUrl))
+          err(dw, `fallbackUrl malformada: "${d.fallbackUrl}"`);
+      });
+  }
+
   // BIBLIOGRAFÍA: todo caso debe citar al menos una fuente; url bien formada
   if (!isArr(c.sources) || c.sources.length === 0) {
     err(w, "sources obligatorio (bibliografía): al menos una fuente");

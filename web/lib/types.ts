@@ -30,6 +30,23 @@ export interface CaseDocument {
 }
 
 /**
+ * Documento embebido en el visor inline del caso. `src` es same-origin
+ * (ruta bajo /pursue/) porque war.gov bloquea el framing/fetch de terceros:
+ * solo un asset auto-hospedado se puede embeber con garantía. `type` decide
+ * el render (iframe para pdf, img para imagen). `fallbackUrl` apunta al
+ * documento oficial original como respaldo navegable.
+ */
+export interface DocEmbed {
+  src: string;
+  type: "pdf" | "image";
+  title: string;
+  title_en?: string;
+  source?: string;
+  license?: string;
+  fallbackUrl?: string;
+}
+
+/**
  * MODELO MECE — narrativas conjuntas (objeto + postura institucional).
  * Cada caso reparte 100% sobre 6 narrativas mutuamente excluyentes y
  * exhaustivas. A diferencia de un eje de solo-objeto, estas bundlean el
@@ -105,6 +122,9 @@ export interface UAPCase {
     note?: string;
     note_en?: string;
   };
+  // Documentos primarios embebidos en el visor inline (PDF/imagen
+  // auto-hospedados bajo /pursue/). Ausente = no se renderiza el visor.
+  documents?: DocEmbed[];
   patterns: string[];
   category: Category;
   // Optional rich-content fields. When present, the case detail page

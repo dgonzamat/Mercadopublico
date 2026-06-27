@@ -19,6 +19,17 @@
   "probability": 40,
   "summary": "El 27 de enero de 1994, el capitán Edward Rhodes y dos copilotos de un Boeing 747 de Tajik Air reportaron, a 41.000 pies sobre Kazajistán, un objeto luminoso que los sobrepasó a mayor velocidad y altura y maniobró durante más de 40 minutos en círculos, espirales y giros de 90°. El episodio quedó documentado en un cable del Departamento de Estado de EE.UU. y figura entre los archivos desclasificados PURSUE (2026).",
   "summary_en": "On January 27, 1994, Captain Edward Rhodes and two co-pilots of a Tajik Air Boeing 747 reported, at 41,000 feet over Kazakhstan, a luminous object that overtook them at greater speed and altitude and maneuvered for over 40 minutes in circles, corkscrews and 90° turns. The episode was documented in a U.S. State Department cable and appears among the declassified PURSUE files (2026).",
+  "documents": [
+    {
+      "src": "/pursue/dos-uap-d2-cable-2-kazakhstan-january-1994.pdf",
+      "type": "pdf",
+      "title": "DOS-UAP-D2 — cable del Departamento de Estado, Kazajistán (enero 1994)",
+      "title_en": "DOS-UAP-D2 — State Department cable, Kazakhstan (January 1994)",
+      "source": "U.S. Department of State · Department of War (PURSUE)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    }
+  ],
   "patterns": [],
   "category": "incident",
   "posterior": {
