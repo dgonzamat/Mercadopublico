@@ -54,6 +54,15 @@
       "source": "NASA · Department of War (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf"
+    },
+    {
+      "src": "/pursue/nasa-uap-d6-apollo-17-technical-crew-debriefing-1973.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D6 — debriefing técnico de tripulación de Apollo 17 (1973)",
+      "title_en": "NASA-UAP-D6 — Apollo 17 Technical Crew Debriefing (1973)",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d6-apollo-17-technical-crew-debriefing-1973.pdf"
     }
   ],
   "patterns": [

@@ -1,0 +1,76 @@
+{
+  "id": "state-dept-misc-uap-cables",
+  "num": 291,
+  "name": "Departamento de Estado · cables UAP tangenciales (Georgia 2001, Turkmenistán 2004, PURSUE)",
+  "name_en": "State Department · tangential UAP cables (Georgia 2001, Turkmenistan 2004, PURSUE)",
+  "year_start": 2001,
+  "year_end": 2004,
+  "country": "US",
+  "country_name": "Estados Unidos / Georgia / Turkmenistán",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 41.7151,
+    "lng": 44.8271,
+    "place": "Embajadas de EE.UU. en Tbilisi (Georgia) y Ashgabat (Turkmenistán)",
+    "place_en": "U.S. embassies in Tbilisi (Georgia) and Ashgabat (Turkmenistan)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 12,
+  "summary": "Dos cables diplomáticos del Departamento de Estado de EE.UU. desclasificados en la primera entrega PURSUE (8 may 2026) que comparten serie con el célebre cable de México 2003 (#059UAP00013), pero cuyo contenido apenas roza el fenómeno UAP. El #059UAP00011 (Tbilisi, oct 2001) reporta una disputa de espacio aéreo: Georgia acusó a aviación rusa de violar su espacio y bombardear el desfiladero de Kodori, acusación que Rusia negó. El #059UAP00012 (Ashgabat, nov 2004) describe, con tono divertido, cómo una ONG de ufólogos de Turkmenistán se había convertido en «socio fiable» de EE.UU. en la construcción de sociedad civil. Caso-documento tier B: su interés no es un avistamiento sino mostrar cómo una desclasificación por palabra clave arrastra material diplomático sólo tangencialmente relacionado con UAP.",
+  "summary_en": "Two U.S. State Department diplomatic cables declassified in the first PURSUE tranche (May 8, 2026) that share a series with the famous Mexico 2003 cable (#059UAP00013), but whose content barely touches the UAP phenomenon. #059UAP00011 (Tbilisi, Oct 2001) reports an airspace dispute: Georgia accused Russian aircraft of violating its airspace and bombing the Kodori Gorge, an accusation Russia denied. #059UAP00012 (Ashgabat, Nov 2004) describes, in an amused tone, how a Turkmen UFOlogist NGO had become a 'reliable partner' of the U.S. in civil-society building. A tier-B document-case: its interest is not a sighting but showing how a keyword-based declassification drags in diplomatic material only tangentially related to UAP.",
+  "documents": [
+    {
+      "src": "/pursue/059uap00011.pdf",
+      "type": "pdf",
+      "title": "Cable del Departamento de Estado #059UAP00011 — Tbilisi, Georgia (30 oct 2001): incidente de espacio aéreo en el desfiladero de Kodori",
+      "title_en": "State Department cable #059UAP00011 — Tbilisi, Georgia (Oct 30, 2001): Kodori Gorge airspace incident",
+      "source": "Department of State (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/059uap00011.pdf"
+    },
+    {
+      "src": "/pursue/059uap00012.pdf",
+      "type": "pdf",
+      "title": "Cable del Departamento de Estado #059UAP00012 — Ashgabat, Turkmenistán (5 nov 2004): ONG de ufólogos y sociedad civil",
+      "title_en": "State Department cable #059UAP00012 — Ashgabat, Turkmenistan (Nov 5, 2004): UFOlogist NGO and civil society",
+      "source": "Department of State (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/059uap00012.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "El sistema PURSUE desclasificó, en su primera entrega del 8 de mayo de 2026, una pequeña serie de cables diplomáticos del Departamento de Estado de EE.UU. catalogados con la signatura 059UAP. El más conocido es el cable de México de septiembre de 2003 (#059UAP00013), que reporta la audiencia del Congreso mexicano sobre fenómenos aéreos y que el corpus analiza en ficha propia. Los otros dos miembros de la serie, en cambio, tienen una relación con el fenómeno tan tenue que ilustran mejor el método de la desclasificación que cualquier avistamiento.\n\nEl cable #059UAP00011, emitido desde la embajada en Tbilisi el 30 de octubre de 2001, no trata de un objeto no identificado en sentido ufológico: reporta que, los días 28 y 29 de octubre, el Ministerio de Exteriores de Georgia denunció que aviación rusa había violado su espacio aéreo y bombardeado zonas del desfiladero de Kodori —un escenario de tensión en el conflicto de Abjasia—, acusación que Rusia negó. La pieza entra en la categoría «UAP» por la naturaleza disputada e inicialmente no identificada de las aeronaves o explosiones reportadas, no porque describa tecnología anómala; es, en rigor, un incidente de espacio aéreo y de inteligencia política.\n\nEl cable #059UAP00012, emitido desde Ashgabat el 5 de noviembre de 2004, es aún más tangencial. Describe, con un tono entre divertido y perplejo por parte de su autor, cómo una organización de ufólogos de Turkmenistán se había ganado la reputación de «socio fiable» de Estados Unidos en el frágil ecosistema de organizaciones de sociedad civil del país. No hay avistamiento alguno: el cable es un retrato diplomático del peculiar tejido asociativo turcomano bajo el régimen de Niyazov, en el que un club de entusiastas de los OVNIs resultaba ser uno de los pocos interlocutores civiles disponibles. Su aparición en el corpus UAP se debe exclusivamente a que la palabra clave de búsqueda lo capturó.",
+  "whatHappened_en": "In its first tranche of May 8, 2026, the PURSUE system declassified a small series of U.S. State Department diplomatic cables catalogued under the 059UAP designation. The best known is the Mexico cable of September 2003 (#059UAP00013), which reports the Mexican Congress's hearing on aerial phenomena and which the corpus analyzes in its own file. The other two members of the series, by contrast, have a connection to the phenomenon so faint that they better illustrate the declassification method than any sighting.\n\nCable #059UAP00011, issued from the Tbilisi embassy on October 30, 2001, is not about an unidentified object in the ufological sense: it reports that, on October 28-29, Georgia's Foreign Ministry alleged that Russian aircraft had violated its airspace and bombed areas of the Kodori Gorge —a flashpoint in the Abkhazia conflict—, an accusation Russia denied. The piece falls into the 'UAP' category because of the disputed and initially unidentified nature of the reported aircraft or explosions, not because it describes anomalous technology; it is, strictly, an airspace and political-intelligence incident.\n\nCable #059UAP00012, issued from Ashgabat on November 5, 2004, is even more tangential. It describes, in a tone between amused and perplexed on its author's part, how a Turkmen UFOlogist organization had earned a reputation as a 'reliable partner' of the United States in the country's fragile ecosystem of civil-society organizations. There is no sighting at all: the cable is a diplomatic portrait of Turkmenistan's peculiar associational fabric under the Niyazov regime, in which a club of UFO enthusiasts turned out to be one of the few available civil interlocutors. Its appearance in the UAP corpus is due exclusively to the search keyword having captured it.",
+  "whyMatters": "Estos dos cables valen, para el corpus, como el reverso del cable de México con el que comparten serie. Aquel documenta un hecho institucional sustantivo —un congreso nacional debatiendo el reconocimiento del fenómeno—; estos dos son lo que queda cuando la misma red de búsqueda por palabra clave se arrastra por el archivo diplomático y captura todo lo que menciona «UAP», «UFO» o «unidentified», con independencia de su relevancia. Uno es una disputa de soberanía aérea entre Georgia y Rusia; el otro, una viñeta sobre el papel inesperado de un club de ufólogos en la diplomacia de sociedad civil en Asia Central. Ninguno aporta nada sobre la naturaleza del fenómeno.\n\nPrecisamente por eso son útiles. Documentan una propiedad estructural del proceso PURSUE que conviene tener presente al leer las cifras del release: la categoría «UAP» del gobierno estadounidense es una etiqueta administrativa amplia, generada en buena parte por búsquedas de términos, no un conjunto curado de avistamientos verificados. Una fracción de los archivos liberados —como estos cables o los documentos de cohetería que el corpus agrupa aparte— son material tangencial o de contexto que el barrido capturó. Contarlos como «casos UAP» equivaldría a confundir el ruido del método con la señal del fenómeno. El corpus los conserva como caso-documento tier B, navegables y con su procedencia correcta, no por lo que dicen del cielo sino por lo que dicen del archivo: que la transparencia por volumen incluye, inevitablemente, mucho que no es lo que su etiqueta promete. Mantenerlos visibles, y nombrados como lo que son, es parte de la disciplina de no inflar el corpus con falsos positivos.",
+  "whyMatters_en": "These two cables are worth, for the corpus, the flip side of the Mexico cable with which they share a series. That one documents a substantive institutional fact —a national congress debating recognition of the phenomenon—; these two are what remains when the same keyword search net drags through the diplomatic archive and captures everything mentioning 'UAP', 'UFO' or 'unidentified', regardless of relevance. One is a dispute over airspace sovereignty between Georgia and Russia; the other, a vignette about the unexpected role of a UFOlogist club in civil-society diplomacy in Central Asia. Neither contributes anything about the phenomenon's nature.\n\nThat is precisely why they are useful. They document a structural property of the PURSUE process worth keeping in mind when reading the release's figures: the U.S. government's 'UAP' category is a broad administrative label, generated in large part by term searches, not a curated set of verified sightings. A fraction of the released files —like these cables or the rocketry documents the corpus groups separately— are tangential or contextual material the sweep captured. Counting them as 'UAP cases' would mean confusing the method's noise with the phenomenon's signal. The corpus keeps them as a tier-B document-case, navigable and with correct provenance, not for what they say about the sky but for what they say about the archive: that transparency-by-volume inevitably includes much that is not what its label promises. Keeping them visible, and named as what they are, is part of the discipline of not inflating the corpus with false positives.",
+  "evidence": [
+    "Cable #059UAP00011 (Tbilisi, Georgia, 30 oct 2001): denuncia georgiana de violación de espacio aéreo y bombardeo del desfiladero de Kodori por aviación rusa; Rusia lo negó",
+    "Cable #059UAP00012 (Ashgabat, Turkmenistán, 5 nov 2004): retrato de una ONG de ufólogos como «socio fiable» de EE.UU. en la sociedad civil turcomana; sin avistamiento",
+    "Ambos comparten serie (059UAP) con el cable de México 2003 (#059UAP00013), analizado en ficha propia",
+    "Desclasificados en la primera entrega PURSUE (war.gov/UFO, 8 may 2026), agencia Departamento de Estado",
+    "Relevancia UAP tangencial: capturados por la búsqueda de palabra clave, no por describir tecnología anómala",
+    "Ilustran que la categoría administrativa «UAP» del release incluye material diplomático de contexto, no solo avistamientos"
+  ],
+  "evidence_en": [
+    "Cable #059UAP00011 (Tbilisi, Georgia, Oct 30, 2001): Georgian allegation of airspace violation and bombing of the Kodori Gorge by Russian aircraft; Russia denied it",
+    "Cable #059UAP00012 (Ashgabat, Turkmenistan, Nov 5, 2004): portrait of a UFOlogist NGO as a 'reliable partner' of the U.S. in Turkmen civil society; no sighting",
+    "Both share a series (059UAP) with the Mexico 2003 cable (#059UAP00013), analyzed in its own file",
+    "Declassified in the first PURSUE tranche (war.gov/UFO, May 8, 2026), State Department agency",
+    "Tangential UAP relevance: captured by the keyword search, not by describing anomalous technology",
+    "They illustrate that the release's administrative 'UAP' category includes contextual diplomatic material, not only sightings"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — State Department UAP Cables 3 y 4 (059UAP00011, 059UAP00012), PURSUE Release 01",
+      "url": "https://www.war.gov/medialink/ufo/release_1/059uap00011.pdf",
+      "note": "Cables diplomáticos primarios incorporados al visor."
+    },
+    {
+      "name": "war.gov/UFO — State Department UAP Cable 5, Mexico (059UAP00013)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf",
+      "note": "Tercer cable de la serie, analizado en el caso state-cable-mexico-congreso-2003."
+    }
+  ]
+}

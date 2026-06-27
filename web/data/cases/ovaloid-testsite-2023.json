@@ -39,6 +39,24 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf"
     },
     {
+      "src": "/pursue/serial-4_redacted.pdf",
+      "type": "pdf",
+      "title": "FBI 302 — avistamiento del sitio de prueba, septiembre 2023 (Serial 4, redactado): objeto «metálico/gris»",
+      "title_en": "FBI 302 — test-site sighting, September 2023 (Serial 4, redacted): \"metallic/gray\" object",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/serial-4_redacted.pdf"
+    },
+    {
+      "src": "/pursue/serial-5_redacted.pdf",
+      "type": "pdf",
+      "title": "FBI 302 — avistamiento del sitio de prueba, septiembre 2023 (Serial 5, redactado): objeto «luz brillante sobre el horizonte»",
+      "title_en": "FBI 302 — test-site sighting, September 2023 (Serial 5, redacted): \"bright light over the horizon\" object",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/serial-5_redacted.pdf"
+    },
+    {
       "src": "/pursue/2024-04-30-composite-sketch.pdf",
       "type": "pdf",
       "title": "Boceto compuesto FBI (oficial) — foto del sitio con overlay del Laboratorio (30 abr 2024)",

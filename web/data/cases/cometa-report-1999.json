@@ -60,5 +60,16 @@
       "name": "COMETA report — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/COMETA_Report"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
+      "type": "pdf",
+      "title": "«UFO's and Defense: What Should We Prepare For» — informe COMETA (1999) + carta de Carol Rosin",
+      "title_en": "'UFO's and Defense: What Should We Prepare For' — COMETA report (1999) + Carol Rosin letter",
+      "source": "NASA (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf"
+    }
   ]
 }

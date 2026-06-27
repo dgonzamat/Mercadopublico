@@ -1,0 +1,85 @@
+{
+  "id": "apollo11-debriefing-1969",
+  "num": 285,
+  "name": "Apolo 11 · observaciones del Technical Crew Debriefing (NASA, PURSUE)",
+  "name_en": "Apollo 11 · Technical Crew Debriefing observations (NASA, PURSUE)",
+  "year_start": 1969,
+  "country": "US",
+  "country_name": "Estados Unidos / espacio cislunar",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 29.55,
+    "lng": -95.09,
+    "place": "NASA · Technical Crew Debriefing, Houston (tránsito Tierra-Luna)",
+    "place_en": "NASA · Technical Crew Debriefing, Houston (Earth-Moon transit)"
+  },
+  "tier": "B",
+  "mundanoType": "natural",
+  "epistemicStatus": "documented",
+  "probability": 27,
+  "summary": "El Technical Crew Debriefing del Apolo 11 (31 jul 1969), desclasificado en la primera entrega PURSUE (8 may 2026, signatura NASA-UAP-D4), recoge observaciones de Armstrong, Collins y Aldrin durante el tránsito translunar y el regreso: un objeto de tamaño apreciable a ~un día de la Luna, «pequeños destellos» dentro de la cabina al intentar dormir, y una «fuente de luz bastante brillante» en el viaje de vuelta descrita como «posible láser». La cobertura de mayo 2026 lo amplificó como «OVNIs de Apolo 11», pero el contenido apunta en otra dirección: el objeto es con alta probabilidad un panel del adaptador SLA del propio cohete, y los destellos son el fenómeno conocido de light flashes por rayos cósmicos. Caso tier B incluido por la solidez de su procedencia documental, no por anomalía.",
+  "summary_en": "Apollo 11's Technical Crew Debriefing (Jul 31, 1969), declassified in the first PURSUE tranche (May 8, 2026, designation NASA-UAP-D4), records observations by Armstrong, Collins and Aldrin during the translunar coast and the return: an object of noticeable size about a day from the Moon, 'little flashes' inside the cabin while trying to sleep, and a 'fairly bright light source' on the way back described as a 'possible laser'. May 2026 coverage amplified it as 'Apollo 11 UFOs', but the content points elsewhere: the object is most likely one of the rocket's own SLA adapter panels, and the flashes are the known cosmic-ray light-flash phenomenon. A tier-B case included for the solidity of its documentary provenance, not for anomaly.",
+  "documents": [
+    {
+      "src": "/pursue/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D4 — Apollo 11 Technical Crew Debriefing (31 jul 1969)",
+      "title_en": "NASA-UAP-D4 — Apollo 11 Technical Crew Debriefing (Jul 31, 1969)",
+      "source": "NASA · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.8,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.005,
+    "nohumano_abierto": 0.015,
+    "indet": 0.16
+  },
+  "whatHappened": "El Technical Crew Debriefing del Apolo 11 —la sesión técnica de interrogatorio posterior al vuelo, conducida el 31 de julio de 1969, una semana después del amerizaje del 24 de julio— recoge, entre cientos de páginas de datos operativos, varias observaciones visuales de los astronautas Neil Armstrong, Michael Collins y Edwin «Buzz» Aldrin. El sistema PURSUE las desclasificó e incorporó a war.gov/UFO en su primera entrega del 8 de mayo de 2026, bajo la signatura NASA-UAP-D4. El documento no describe un único incidente sino un puñado de fenómenos reportados durante el tránsito translunar y el regreso, que el corpus reúne aquí por su procedencia común.\n\nLa observación más citada es la de un objeto de tamaño apreciable que la tripulación advirtió aproximadamente a un día de distancia de la Luna, durante la fase de crucero. Aldrin describió haberlo visto por la escotilla y mediante el sextante de navegación, y la tripulación discutió en tiempo real si podía tratarse de uno de los cuatro paneles del adaptador SLA (Spacecraft-LM Adapter), que se habían separado del cohete S-IVB tras la maniobra de transposición y acoplamiento y viajaban en trayectorias cercanas a la nave. El propio Aldrin, en relatos posteriores, atribuyó el avistamiento precisamente a uno de esos paneles iluminados por el Sol: la geometría, la distancia estimada y la ausencia de cualquier seguimiento por radar son consistentes con un fragmento conocido del propio vehículo, no con un objeto independiente.\n\nEl debriefing recoge además dos fenómenos de iluminación. El primero son «pequeños destellos» que Aldrin percibía dentro de la cabina, espaciados un par de minutos, mientras intentaba dormir —el mismo efecto que la tripulación del Apolo 12 reportaría meses después—. El segundo es una «fuente de luz bastante brillante» observada en el viaje de regreso, que la tripulación describió tentativamente como un «posible láser». Ninguno de los tres fue presentado por los astronautas como evidencia de entidades no humanas: el debriefing es un registro técnico de ingeniería y operaciones, no un reporte de anomalía, y así debe leerse.",
+  "whatHappened_en": "Apollo 11's Technical Crew Debriefing —the post-flight technical interrogation session, conducted on July 31, 1969, a week after the July 24 splashdown— records, among hundreds of pages of operational data, several visual observations by astronauts Neil Armstrong, Michael Collins and Edwin 'Buzz' Aldrin. The PURSUE system declassified them and posted them to war.gov/UFO in its first tranche of May 8, 2026, under the designation NASA-UAP-D4. The document describes not a single incident but a handful of phenomena reported during the translunar coast and the return, which the corpus gathers here for their common provenance.\n\nThe most cited observation is of an object of noticeable size that the crew noticed roughly a day out from the Moon, during the cruise phase. Aldrin described seeing it through the hatch window and via the navigation sextant, and the crew discussed in real time whether it could be one of the four SLA (Spacecraft-LM Adapter) panels, which had separated from the S-IVB rocket after the transposition-and-docking maneuver and were traveling on trajectories near the spacecraft. Aldrin himself, in later accounts, attributed the sighting precisely to one of those Sun-lit panels: the geometry, the estimated distance and the absence of any radar tracking are consistent with a known fragment of the vehicle itself, not with an independent object.\n\nThe debriefing also records two illumination phenomena. The first are 'little flashes' Aldrin perceived inside the cabin, spaced a couple of minutes apart, while trying to sleep —the same effect the Apollo 12 crew would report months later—. The second is a 'fairly bright light source' observed on the return trip, which the crew tentatively described as a 'possible laser'. None of the three was presented by the astronauts as evidence of anything non-human: the debriefing is a technical engineering-and-operations record, not an anomaly report, and should be read as such.",
+  "whyMatters": "El valor del documento es doble y conviene separarlo con cuidado, porque la cobertura mediática de mayo de 2026 lo amplificó como «OVNIs de Apolo 11» cuando su contenido apunta en otra dirección. Primero, la mayoría de lo descrito tiene explicación física sólida. Los «destellos en la cabina» son el fenómeno de los light flashes inducidos por rayos cósmicos: partículas cargadas de alta energía que atraviesan el ojo e interactúan con la retina produciendo sensaciones luminosas sin luz real, un efecto que la NASA estudió formalmente con el experimento ALFMED en Apolo 16 y 17 y de nuevo en Skylab. El «objeto» a un día de la Luna es, con alta probabilidad, un panel del SLA —hardware del propio cohete—, según la reconstrucción de la tripulación y el testimonio posterior de Aldrin. La «fuente de luz brillante» del regreso es la pieza más débilmente caracterizada, pero un único reflejo no identificado, sin radar ni fotografía, no sostiene una inferencia extraordinaria.\n\nSegundo —y esto es lo que justifica su entrada al corpus— el documento es un registro primario de cómo el programa espacial tripulado estadounidense observaba, anotaba y procesaba fenómenos visuales en el entorno más controlado y mejor instrumentado imaginable. Su inclusión en PURSUE, junto con los debriefings de Apolo 12, Apolo 17 y Skylab, muestra que la categoría «UAP» del gobierno estadounidense de 2026 absorbe retroactivamente observaciones astronáuticas que en su día se entendieron como efectos ópticos, de radiación o de hardware conocido. Por eso el caso entra como tier B, valorado por la solidez de su procedencia documental y no por su contenido probatorio: es un buen ejemplo de cómo una desclasificación con etiqueta «UAP» puede revestir de misterio observaciones que la propia ciencia de la misión ya había explicado. El corpus lo enmarca con esa cautela, evitando convertir el grosor de un debriefing técnico en peso de evidencia anómala.",
+  "whyMatters_en": "The document's value is twofold and worth separating carefully, because the May 2026 media coverage amplified it as 'Apollo 11 UFOs' when its content points elsewhere. First, most of what is described has a solid physical explanation. The 'cabin flashes' are the cosmic-ray-induced light-flash phenomenon: high-energy charged particles passing through the eye and interacting with the retina to produce luminous sensations without real light, an effect NASA formally studied with the ALFMED experiment on Apollo 16 and 17 and again on Skylab. The 'object' a day from the Moon is, with high probability, an SLA panel —the rocket's own hardware— per the crew's reconstruction and Aldrin's later testimony. The 'bright light source' on the return is the most weakly characterized piece, but a single unidentified reflection, without radar or photography, does not sustain an extraordinary inference.\n\nSecond —and this is what justifies its inclusion in the corpus— the document is a primary record of how the U.S. crewed space program observed, noted and processed visual phenomena in the most controlled and best-instrumented environment imaginable. Its inclusion in PURSUE, alongside the Apollo 12, Apollo 17 and Skylab debriefings, shows that the 2026 U.S. government's 'UAP' category retroactively absorbs astronaut observations that were understood at the time as optical, radiation or known-hardware effects. Hence the case enters as tier B, valued for the solidity of its documentary provenance and not for its probative content: it is a good example of how a 'UAP'-labeled declassification can cloak in mystery observations that the mission's own science had already explained. The corpus frames it with that caution, avoiding turning the thickness of a technical debriefing into the weight of anomalous evidence.",
+  "evidence": [
+    "Technical Crew Debriefing del Apolo 11 (31 jul 1969), desclasificado como NASA-UAP-D4 en la primera entrega PURSUE (war.gov/UFO, 8 may 2026)",
+    "Aldrin: objeto de tamaño apreciable a ~un día de la Luna, observado por escotilla y sextante; la tripulación lo discutió como posible panel del adaptador SLA del S-IVB",
+    "Aldrin: «pequeños destellos» dentro de la cabina al intentar dormir (mismo fenómeno reportado por Apolo 12)",
+    "Aldrin: «fuente de luz bastante brillante» en el viaje de regreso, descrita tentativamente como «posible láser»",
+    "Explicación física dominante: light flashes por rayos cósmicos (estudiados por NASA en ALFMED, Apolo 16/17 y Skylab) para los destellos; panel SLA conocido para el objeto",
+    "Sin radar ni fotografía que respalden una fuente independiente; el debriefing es un registro técnico, no un reporte de anomalía"
+  ],
+  "evidence_en": [
+    "Apollo 11 Technical Crew Debriefing (Jul 31, 1969), declassified as NASA-UAP-D4 in the first PURSUE tranche (war.gov/UFO, May 8, 2026)",
+    "Aldrin: object of noticeable size ~a day from the Moon, seen through the hatch window and sextant; the crew discussed it as a possible S-IVB SLA adapter panel",
+    "Aldrin: 'little flashes' inside the cabin while trying to sleep (same phenomenon reported by Apollo 12)",
+    "Aldrin: 'fairly bright light source' on the return trip, tentatively described as a 'possible laser'",
+    "Dominant physical explanation: cosmic-ray light flashes (studied by NASA in ALFMED, Apollo 16/17 and Skylab) for the flashes; a known SLA panel for the object",
+    "No radar or photography supporting an independent source; the debriefing is a technical record, not an anomaly report"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — NASA-UAP-D4, Apollo 11 Technical Crew Debriefing, 1969 (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
+      "note": "Documento primario desclasificado, incorporado al visor."
+    },
+    {
+      "name": "Fortune — 'UFO files show Buzz Aldrin saw a sizeable object close to the moon and a fairly bright light source' (9 may 2026)",
+      "url": "https://fortune.com/2026/05/09/ufo-files-pentagon-buzz-aldrin-moon-apollo-11-crew-laser/",
+      "note": "Cobertura del contenido del debriefing en el primer release."
+    },
+    {
+      "name": "NBC News — 'UFO/UAP files: Pentagon release' (8 may 2026)",
+      "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204",
+      "note": "Contexto del primer release PURSUE y los materiales NASA."
+    },
+    {
+      "name": "NASA — Apollo Light Flash investigations (ALFMED) y fenómeno de light flashes por rayos cósmicos",
+      "url": "https://www.nasa.gov/history/afj/aplfltjnl/index.html",
+      "note": "Base científica para los destellos reportados en cabina."
+    }
+  ]
+}

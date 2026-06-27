@@ -1,0 +1,76 @@
+{
+  "id": "pursue-rocketry-reference-docs",
+  "num": 290,
+  "name": "PURSUE · documentos de referencia de cohetería (fallos de lanzamiento, PURSUE)",
+  "name_en": "PURSUE · rocketry reference documents (launch failures, PURSUE)",
+  "year_start": 1996,
+  "year_end": 2000,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 34.742,
+    "lng": -120.5724,
+    "place": "USAF · Vandenberg AFB y modelado de fiabilidad de lanzadores (referencia)",
+    "place_en": "USAF · Vandenberg AFB and launch-vehicle reliability modeling (reference)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 8,
+  "summary": "Dos informes técnicos de la Fuerza Aérea que PURSUE incluyó en su primera entrega (8 may 2026) bajo las signaturas DOW-UAP-D48 y D49, pero que no son reportes de avistamientos: uno (1996) modela modos de fallo improbables de cohetes propulsores con técnicas de cálculo de riesgo; el otro (2000) resume el historial de lanzamientos de la Base Vandenberg entre 1958 y 2000. El corpus los reúne como material de referencia de cohetería: el tipo de documento que explica por qué muchos «UAP» reportados cerca de rangos de prueba son en realidad lanzamientos, reentradas, venteos de combustible o fallos de booster. Caso-documento tier B, valorado como contexto de la hipótesis mundana, no como evidencia de anomalía.",
+  "summary_en": "Two USAF technical reports that PURSUE included in its first tranche (May 8, 2026) under the designations DOW-UAP-D48 and D49, but which are not sighting reports: one (1996) models unlikely space-booster failure modes with risk-calculation techniques; the other (2000) summarizes the launch history of Vandenberg AFB between 1958 and 2000. The corpus gathers them as rocketry reference material: the kind of document that explains why many 'UAP' reported near test ranges are in fact launches, reentries, fuel venting or booster failures. A tier-B document-case, valued as context for the mundane hypothesis, not as evidence of anomaly.",
+  "documents": [
+    {
+      "src": "/pursue/dow-uap-d48-report-september-1996.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D48 — Department of the Air Force Report (1996): modelado de fallos improbables de cohetes propulsores",
+      "title_en": "DOW-UAP-D48 — Department of the Air Force Report (1996): modeling of unlikely space-booster failures",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d48-report-september-1996.pdf"
+    },
+    {
+      "src": "/pursue/dow-uap-d49-launch-summary-february-2000.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D49 — Launch Summary, Vandenberg AFB (2000): histórico de lanzamientos 1958-2000",
+      "title_en": "DOW-UAP-D49 — Launch Summary, Vandenberg AFB (2000): launch history 1958-2000",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "No todos los documentos que el sistema PURSUE etiquetó como «UAP» en su primera entrega del 8 de mayo de 2026 son reportes de avistamientos. Dos de ellos, catalogados como DOW-UAP-D48 y DOW-UAP-D49, son informes técnicos de la Fuerza Aérea cuyo contenido es de ingeniería aeroespacial, no de fenómenos anómalos. El corpus los reúne en una sola ficha precisamente para hacer explícita esa distinción, que la etiqueta común tiende a borrar.\n\nEl primero, DOW-UAP-D48 (10 de septiembre de 1996), es un «Department of the Air Force Report» dedicado al modelado de modos de fallo improbables de cohetes propulsores en cálculos de riesgo: documenta históricos de fallos de lanzamiento y recomienda acciones correctivas mediante técnicas de modelado novedosas. El segundo, DOW-UAP-D49 (3 de febrero de 2000), es un «Launch Summary» de la Base de la Fuerza Aérea de Vandenberg que resume el registro histórico de lanzamientos efectuados allí entre 1958 y 2000. Ninguno describe un objeto no identificado; ambos son referencias de cohetería y de operaciones de rango.\n\nSu inclusión bajo la signatura «DOW-UAP» se entiende mejor por su función explicativa que por su contenido. Una fracción significativa de los reportes de UAP —sobre todo los observados cerca de campos de prueba, costas con actividad espacial o corredores de reentrada— corresponde a lanzamientos de cohetes, separaciones de etapas, venteos de combustible en órbita, reentradas controladas o fallos de booster, fenómenos que producen luces, estelas y trayectorias llamativas fácilmente confundibles con objetos anómalos. Documentos como estos dos son las piezas de referencia con que un analista descarta esa familia de causas. Por eso aparecen en el mismo cuerpo de archivos que los avistamientos: forman parte del aparato de resolución, no del catálogo de misterios.",
+  "whatHappened_en": "Not every document the PURSUE system labeled 'UAP' in its first tranche of May 8, 2026 is a sighting report. Two of them, catalogued as DOW-UAP-D48 and DOW-UAP-D49, are USAF technical reports whose content is aerospace engineering, not anomalous phenomena. The corpus gathers them in a single file precisely to make explicit that distinction, which the common label tends to erase.\n\nThe first, DOW-UAP-D48 (September 10, 1996), is a 'Department of the Air Force Report' devoted to modeling unlikely space-booster failure modes in risk calculations: it documents launch-failure histories and recommends corrective actions through novel modeling techniques. The second, DOW-UAP-D49 (February 3, 2000), is a Vandenberg Air Force Base 'Launch Summary' that summarizes the historical record of launches conducted there between 1958 and 2000. Neither describes an unidentified object; both are rocketry and range-operations references.\n\nTheir inclusion under the 'DOW-UAP' designation is better understood by their explanatory function than by their content. A significant fraction of UAP reports —especially those observed near test ranges, coastlines with space activity or reentry corridors— correspond to rocket launches, stage separations, on-orbit fuel venting, controlled reentries or booster failures, phenomena that produce conspicuous lights, trails and trajectories easily confused with anomalous objects. Documents like these two are the reference pieces with which an analyst rules out that family of causes. That is why they appear in the same body of files as the sightings: they are part of the resolution apparatus, not the catalog of mysteries.",
+  "whyMatters": "La utilidad de esta ficha es metodológica y casi pedagógica: recordar que «aparecer en el archivo UAP» no equivale a «ser un UAP». La etiqueta administrativa de PURSUE agrupa, bajo la signatura DOW-UAP, tanto reportes de avistamientos como material de referencia técnico; tratar ambos como equivalentes —contar cada PDF del release como un «caso» de fenómeno anómalo— es un error de lectura frecuente en la cobertura, y estos dos documentos son el contraejemplo más limpio. Su probabilidad de anomalía es, a efectos prácticos, nula: son cálculos de fiabilidad de cohetes y un historial de lanzamientos.\n\nDicho esto, su valor para el corpus es real y doble. Primero, hacen visible el aparato de resolución: el lado menos glamuroso pero más sustantivo de cualquier programa serio de estudio de UAP es la biblioteca de causas mundanas conocidas —cohetería, globos, tráfico aéreo, fenómenos atmosféricos— contra la que se contrastan los reportes. Que el Estado libere estos materiales junto a los avistamientos confirma que la categoría «unidentified» es, en buena parte, un problema de identificación pendiente, no de tecnología exótica. Segundo, anclan empíricamente la narrativa mundana del corpus: muchos de los casos costeros y de rango que se resuelven en lanzamientos o reentradas encuentran aquí su sustrato documental. La ficha entra como caso-documento tier B y con probabilidad de anomalía deliberadamente baja, no porque el contenido sea débil, sino porque su contenido es, con toda intención, prosaico: es la regla contra la que se mide la excepción. Distinguir el reporte del fenómeno de la referencia técnica que lo explica es, en el fondo, la disciplina mínima que separa un catálogo razonado de anomalías de un montón de PDFs unificados solo por una etiqueta administrativa común. Estos dos documentos, prosaicos por diseño, son el recordatorio permanente de esa frontera: pertenecen al lado de las causas conocidas, y el corpus los conserva ahí, navegables y correctamente provenientes, como parte del instrumental con que se resuelve —no se multiplica— el misterio.",
+  "whyMatters_en": "This file's usefulness is methodological and almost pedagogical: a reminder that 'appearing in the UAP archive' is not the same as 'being a UAP'. PURSUE's administrative label groups, under the DOW-UAP designation, both sighting reports and technical reference material; treating both as equivalent —counting every PDF in the release as a 'case' of anomalous phenomenon— is a frequent reading error in coverage, and these two documents are the cleanest counterexample. Their anomaly probability is, for practical purposes, nil: they are rocket-reliability calculations and a launch history.\n\nThat said, their value to the corpus is real and twofold. First, they make the resolution apparatus visible: the less glamorous but more substantive side of any serious UAP-study program is the library of known mundane causes —rocketry, balloons, air traffic, atmospheric phenomena— against which reports are checked. That the state releases these materials alongside the sightings confirms that the 'unidentified' category is, in large part, a problem of pending identification, not of exotic technology. Second, they empirically anchor the corpus's mundane narrative: many coastal and range cases that resolve into launches or reentries find their documentary substrate here. The file enters as a tier-B document-case with a deliberately low anomaly probability, not because its content is weak, but because its content is, quite intentionally, prosaic: it is the rule against which the exception is measured. Distinguishing the report of the phenomenon from the technical reference that explains it is, at bottom, the minimal discipline separating a reasoned catalog of anomalies from a pile of PDFs unified only by a common administrative label. These two documents, prosaic by design, are the permanent reminder of that boundary: they belong on the side of known causes, and the corpus keeps them there, navigable and correctly sourced, as part of the toolkit with which mystery is resolved —not multiplied—.",
+  "evidence": [
+    "DOW-UAP-D48 (10 sep 1996): «Department of the Air Force Report» sobre modelado de modos de fallo improbables de cohetes propulsores en cálculos de riesgo",
+    "DOW-UAP-D49 (3 feb 2000): «Launch Summary» de Vandenberg AFB con el historial de lanzamientos 1958-2000",
+    "Ninguno de los dos describe un objeto no identificado; son referencias de cohetería y operaciones de rango",
+    "Incluidos en la primera entrega PURSUE (war.gov/UFO, 8 may 2026) bajo la signatura DOW-UAP pese a no ser reportes de avistamientos",
+    "Función analítica: material de referencia para descartar lanzamientos, reentradas, venteos y fallos de booster como causa de reportes de UAP",
+    "Ilustran que la etiqueta administrativa «UAP» agrupa avistamientos y material de resolución, que no deben contarse como equivalentes"
+  ],
+  "evidence_en": [
+    "DOW-UAP-D48 (Sep 10, 1996): 'Department of the Air Force Report' on modeling unlikely space-booster failure modes in risk calculations",
+    "DOW-UAP-D49 (Feb 3, 2000): Vandenberg AFB 'Launch Summary' with the 1958-2000 launch history",
+    "Neither describes an unidentified object; they are rocketry and range-operations references",
+    "Included in the first PURSUE tranche (war.gov/UFO, May 8, 2026) under the DOW-UAP designation despite not being sighting reports",
+    "Analytical function: reference material to rule out launches, reentries, venting and booster failures as a cause of UAP reports",
+    "They illustrate that the administrative 'UAP' label groups sightings and resolution material, which should not be counted as equivalent"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D48 (1996) y DOW-UAP-D49 (2000) (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf",
+      "note": "Informes técnicos primarios incorporados al visor."
+    },
+    {
+      "name": "Department of War — 'Releases Unidentified Anomalous Phenomena Files' (8 may 2026)",
+      "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
+      "note": "Comunicado del primer release que agrupa estos materiales bajo la etiqueta UAP."
+    }
+  ]
+}

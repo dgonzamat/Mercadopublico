@@ -1,0 +1,90 @@
+{
+  "id": "usaf-amc-early-disc-records-1946-1950",
+  "num": 288,
+  "name": "Registros tempranos de la USAF/AMC sobre discos voladores (1946-1950, PURSUE)",
+  "name_en": "Early USAF/AMC flying-disc records (1946-1950, PURSUE)",
+  "year_start": 1946,
+  "year_end": 1950,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.7589,
+    "lng": -84.1916,
+    "place": "USAF · Air Materiel Command, Wright-Patterson (Dayton) e inteligencia aérea",
+    "place_en": "USAF · Air Materiel Command, Wright-Patterson (Dayton) and air intelligence"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 42,
+  "summary": "Cuatro expedientes de las Fuerzas Aéreas estadounidenses (AAF/USAF) sobre la primera ola de «discos voladores», desclasificados en la primera entrega PURSUE (8 may 2026): correspondencia «General» del Air Materiel Command de 1946-47 y de 1948, un reporte de inteligencia aérea de noviembre de 1948 (Países Bajos) y el archivo «319.1 Flying Discs 1949» con reportes de incidentes redactados bajo la regulación FSR 200-4, por testigos militares y de la Civil Aviation Authority (este último, por su tamaño, queda enlazado en war.gov). El conjunto documenta el arranque institucional del problema OVNI —del memo Twining (1947) al Proyecto Grudge (1949)— en su sustrato administrativo. Caso-documento tier B: registro primario del proceso, no evidencia de anomalía.",
+  "summary_en": "Four U.S. Army/Air Force (AAF/USAF) files on the first 'flying disc' wave, declassified in the first PURSUE tranche (May 8, 2026): Air Materiel Command 'General' correspondence from 1946-47 and 1948, a November 1948 air-intelligence report (Netherlands) and the '319.1 Flying Discs 1949' file with incident reports filed under FSR 200-4 regulation, by military and Civil Aviation Authority witnesses (the latter, due to its size, is linked at war.gov). The set documents the institutional onset of the UFO problem —from the Twining memo (1947) to Project Grudge (1949)— in its administrative substrate. A tier-B document-case: a primary record of the process, not evidence of anomaly.",
+  "documents": [
+    {
+      "src": "/pursue/18_100754_general_1946-7_vol_2.pdf",
+      "type": "pdf",
+      "title": "Air Materiel Command — correspondencia «General» 1946-47, Vol. 2 (discos voladores)",
+      "title_en": "Air Materiel Command — 'General' correspondence 1946-47, Vol. 2 (flying discs)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/18_100754_general_1946-7_vol_2.pdf"
+    },
+    {
+      "src": "/pursue/18_6369445_general_1948_vol_1.pdf",
+      "type": "pdf",
+      "title": "Correspondencia «General» 1948, Vol. 1 — reportes e investigaciones de discos voladores",
+      "title_en": "'General' correspondence 1948, Vol. 1 — flying-disc reporting and investigations",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/18_6369445_general_1948_vol_1.pdf"
+    },
+    {
+      "src": "/pursue/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf",
+      "type": "pdf",
+      "title": "Reporte de inteligencia de la USAF, nov 1948 (objetos no identificados / platillos voladores, Países Bajos)",
+      "title_en": "USAF intelligence report, Nov 1948 (unidentified objects / flying saucers, Netherlands)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "Esta ficha reúne cuatro expedientes que documentan cómo el aparato aéreo militar estadounidense —las Army Air Forces y, desde su independencia en septiembre de 1947, la United States Air Force— recibió, tramitó e investigó la primera ola de reportes de «discos voladores» entre 1946 y 1950. PURSUE los desclasificó en su primera entrega del 8 de mayo de 2026, procedentes de los grupos de registros del Departamento de Guerra y de la USAF en los Archivos Nacionales (NARA). No describen un incidente único, sino el contenedor documental del problema en su fase fundacional.\n\nLos dos primeros expedientes son correspondencia «General» del Air Materiel Command (AMC), con sede en Wright Field (Dayton, Ohio): un volumen de 1946-47 y otro de 1948, con memorandos y correspondencia que tratan los avistamientos de discos como «materia de interés» para el comando técnico encargado de evaluar tecnología extranjera y propia. Es el AMC el que, en septiembre de 1947, produce el célebre memo del general Nathan Twining recomendando tomar en serio el fenómeno, y el que alberga los Proyectos Sign y Grudge. El tercer expediente es un reporte de inteligencia aérea de noviembre de 1948 relacionado con objetos no identificados y platillos voladores, con una referencia a los Países Bajos, que ilustra la dimensión de inteligencia exterior del asunto en plena Guerra Fría temprana. El cuarto, «319.1 Flying Discs 1949», recopila reportes de incidentes redactados en cumplimiento de la Flight Service Regulation (FSR) 200-4 de 1948, con avistamientos atestiguados por personal militar y por fuentes de la Civil Aviation Authority (CAA), cada uno con su formato de reporte.\n\nLeídos juntos, los cuatro expedientes trazan el itinerario administrativo del fenómeno: del desconcierto de 1946-47, a la formalización de un canal de reporte en 1948 (la FSR 200-4 y los Proyectos Sign), a la consolidación de un criterio mayoritariamente escéptico en 1949 (Grudge). Son el andamiaje burocrático sobre el que se apoyan los casos célebres de la época —Arnold, Mantell, Chiles-Whitted, Gorman— que el corpus analiza en fichas propias.",
+  "whatHappened_en": "This file gathers four record sets documenting how the U.S. military air apparatus —the Army Air Forces and, from its independence in September 1947, the United States Air Force— received, processed and investigated the first wave of 'flying disc' reports between 1946 and 1950. PURSUE declassified them in its first tranche of May 8, 2026, drawn from the Department of War and USAF record groups at the National Archives (NARA). They describe not a single incident but the documentary container of the problem in its founding phase.\n\nThe first two files are 'General' correspondence of the Air Materiel Command (AMC), based at Wright Field (Dayton, Ohio): a 1946-47 volume and a 1948 one, with memoranda and correspondence treating disc sightings as 'a matter of concern' for the technical command charged with assessing foreign and domestic technology. It is the AMC that, in September 1947, produces the famous memo by General Nathan Twining recommending the phenomenon be taken seriously, and that houses Projects Sign and Grudge. The third file is a November 1948 air-intelligence report relating to unidentified objects and flying saucers, with a reference to the Netherlands, illustrating the foreign-intelligence dimension of the matter in the early Cold War. The fourth, '319.1 Flying Discs 1949', compiles incident reports filed in compliance with the 1948 Flight Service Regulation (FSR) 200-4, with sightings attested by military personnel and by Civil Aviation Authority (CAA) sources, each in its reporting format.\n\nRead together, the four files trace the phenomenon's administrative itinerary: from the bewilderment of 1946-47, to the formalization of a reporting channel in 1948 (FSR 200-4 and Project Sign), to the consolidation of a mostly skeptical standard in 1949 (Grudge). They are the bureaucratic scaffolding underpinning the era's famous cases —Arnold, Mantell, Chiles-Whitted, Gorman— which the corpus analyzes in their own files.",
+  "whyMatters": "El interés de estos expedientes es de contexto institucional, y su lectura honesta exige separar el registro del proceso de la evidencia del fenómeno. En su grueso son memorandos, correspondencia y reportes de incidentes que las Fuerzas Aéreas tramitaban con un criterio cada vez más escéptico: hacia 1949, el Proyecto Grudge concluía que la mayoría de los reportes eran misidentificaciones, globos, fenómenos astronómicos o, en pocos casos, fraudes, y que ninguno acreditaba tecnología extraterrestre. Estos archivos son el sustrato de esa conclusión, no su refutación: documentan que el Estado construyó muy pronto una rutina para absorber el fenómeno, no que el fenómeno fuera anómalo.\n\nSu valor para el corpus es triple. Primero, exhiben el origen del aparato: el Air Materiel Command de Wright-Patterson como cuna de los Proyectos Sign y Grudge, y la FSR 200-4 como el primer formulario de reporte obligatorio —el antecedente normativo de la maquinaria que culminaría en Blue Book—. Segundo, muestran la dimensión de inteligencia: el reporte de 1948 con referencia a los Países Bajos recuerda que, en plena Guerra Fría temprana, la hipótesis dominante de la USAF no era extraterrestre sino adversaria (tecnología soviética), un encuadre que el corpus rastrea en su narrativa correspondiente. Tercero, anclan cronológicamente los casos célebres que el corpus trata por separado, dándoles su contenedor documental común. Por todo ello la ficha entra como caso-documento tier B: se valora por la solidez de su procedencia archivística y por lo que revela del método institucional, no por aportar una pieza probatoria sobre la naturaleza del fenómeno.",
+  "whyMatters_en": "The interest of these files is one of institutional context, and an honest reading requires separating the record of the process from evidence of the phenomenon. In bulk they are memoranda, correspondence and incident reports the Air Forces processed with an increasingly skeptical standard: by 1949, Project Grudge concluded that most reports were misidentifications, balloons, astronomical phenomena or, in a few cases, hoaxes, and that none attested extraterrestrial technology. These files are the substrate of that conclusion, not its refutation: they document that the state built a routine to absorb the phenomenon very early, not that the phenomenon was anomalous.\n\nTheir value to the corpus is threefold. First, they exhibit the apparatus's origin: the Air Materiel Command at Wright-Patterson as the cradle of Projects Sign and Grudge, and FSR 200-4 as the first mandatory reporting form —the regulatory antecedent of the machinery that would culminate in Blue Book—. Second, they show the intelligence dimension: the 1948 report referencing the Netherlands recalls that, in the early Cold War, the USAF's dominant hypothesis was not extraterrestrial but adversarial (Soviet technology), a framing the corpus tracks in its corresponding narrative. Third, they chronologically anchor the famous cases the corpus treats separately, giving them their common documentary container. For all this the file enters as a tier-B document-case: valued for the solidity of its archival provenance and for what it reveals of the institutional method, not for providing a probative piece about the phenomenon's nature.",
+  "evidence": [
+    "Cuatro expedientes AAF/USAF sobre discos voladores (1946-1950), desclasificados en la primera entrega PURSUE (war.gov/UFO, 8 may 2026)",
+    "Correspondencia «General» del Air Materiel Command (Wright Field): Vol. 2 de 1946-47 y Vol. 1 de 1948, que tratan los avistamientos como materia de interés del comando técnico",
+    "Reporte de inteligencia aérea de noviembre de 1948 sobre objetos no identificados / platillos voladores, con referencia a los Países Bajos (dimensión de inteligencia exterior)",
+    "Archivo «319.1 Flying Discs 1949»: reportes de incidentes bajo la FSR 200-4 (1948), con testigos militares y de la Civil Aviation Authority (CAA)",
+    "Contexto: del memo Twining (1947) y el Proyecto Sign (1948) al Proyecto Grudge (1949), mayoritariamente escéptico",
+    "Procedencia: grupos de registros del Departamento de Guerra y la USAF en los Archivos Nacionales (NARA)"
+  ],
+  "evidence_en": [
+    "Four AAF/USAF flying-disc files (1946-1950), declassified in the first PURSUE tranche (war.gov/UFO, May 8, 2026)",
+    "Air Materiel Command 'General' correspondence (Wright Field): 1946-47 Vol. 2 and 1948 Vol. 1, treating sightings as a matter of concern for the technical command",
+    "November 1948 air-intelligence report on unidentified objects / flying saucers, referencing the Netherlands (foreign-intelligence dimension)",
+    "'319.1 Flying Discs 1949' file: incident reports under FSR 200-4 (1948), with military and Civil Aviation Authority (CAA) witnesses",
+    "Context: from the Twining memo (1947) and Project Sign (1948) to the mostly skeptical Project Grudge (1949)",
+    "Provenance: Department of War and USAF record groups at the National Archives (NARA)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — registros tempranos USAF sobre discos voladores (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf",
+      "note": "Expediente «319.1 Flying Discs 1949» incorporado al visor."
+    },
+    {
+      "name": "NARA — Army Air Forces / USAF records on flying discs and UFOs",
+      "url": "https://www.archives.gov/research/military/air-force/ufos",
+      "note": "Contexto archivístico de los grupos de registros (RG18 / RG341 / RG342)."
+    },
+    {
+      "name": "USAF — memo del general Nathan Twining (23 sep 1947) y Proyectos Sign/Grudge",
+      "url": "https://www.nicap.org/twining_letter_docs.htm",
+      "note": "Hito que enmarca la correspondencia del Air Materiel Command."
+    }
+  ]
+}

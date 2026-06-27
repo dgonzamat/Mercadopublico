@@ -1,0 +1,72 @@
+{
+  "id": "usaf-incident-summaries-1947-1950",
+  "num": 287,
+  "name": "«Incident Summaries» de la USAF · fichas «Check-List UFO» (Sign/Grudge, PURSUE)",
+  "name_en": "USAF Incident Summaries · 'Check-List UFO' cards (Sign/Grudge, PURSUE)",
+  "year_start": 1947,
+  "year_end": 1950,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39.7589,
+    "lng": -84.1916,
+    "place": "USAF · Air Materiel Command / Wright-Patterson, Dayton (procesamiento de reportes)",
+    "place_en": "USAF · Air Materiel Command / Wright-Patterson, Dayton (report processing)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "Tres volúmenes (incidentes 1-100, 101-172 y 173-233) de «Incident Summaries» —el visor embebe el volumen 101-172; los volúmenes 1-100 y 173-233, por su tamaño, quedan enlazados en war.gov— de la Fuerza Aérea de EE.UU., desclasificados en la primera entrega PURSUE (8 may 2026). Cada resumen se organiza en torno a una ficha estandarizada —«Check-List: Unidentified Flying Objects»— con datos del avistamiento, y muchos incluyen listas de testigos, declaraciones y reportes narrativos. Son el artefacto burocrático con que la USAF de los Proyectos Sign (1948) y Grudge (1949) tabuló cientos de reportes de discos voladores para evaluarlos sistemáticamente. Caso-documento tier B: su valor es mostrar el método —la maquinaria de registro y triage que precedió a Blue Book— más que un incidente concreto; el grueso se resolvía en globos, astros, aeronaves y misidentificaciones.",
+  "summary_en": "Three volumes (incidents 1-100, 101-172 and 173-233) of U.S. Air Force 'Incident Summaries' —the viewer embeds the 101-172 volume; the 1-100 and 173-233 volumes, due to their size, are linked at war.gov—, declassified in the first PURSUE tranche (May 8, 2026). Each summary is organized around a standardized form —'Check-List: Unidentified Flying Objects'— with sighting data, and many include witness lists, statements and narrative reports. They are the bureaucratic artifact with which the USAF of Projects Sign (1948) and Grudge (1949) tabulated hundreds of flying-disc reports for systematic evaluation. A tier-B document-case: its value is to show the method —the recording-and-triage machinery that preceded Blue Book— more than any single incident; the bulk resolved into balloons, stars, aircraft and misidentifications.",
+  "documents": [
+    {
+      "src": "/pursue/38_143685_box7_incident_summaries_101-172.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 101-172 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 101-172 — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_101-172.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "Las «Incident Summaries» son una serie de resúmenes de incidentes que la Fuerza Aérea de Estados Unidos compiló para tabular reportes de objetos voladores no identificados en los años fundacionales del problema OVNI. PURSUE desclasificó tres de sus volúmenes en la primera entrega del 8 de mayo de 2026 —los incidentes numerados 1-100, 101-172 y 173-233—, procedentes de los grupos documentales de la USAF en los Archivos Nacionales (NARA). El corpus los reúne en una sola ficha porque comparten formato, origen y función: no son un incidente, sino el instrumento con que la institución procesaba todos los incidentes.\n\nEl núcleo de cada resumen es una ficha estandarizada titulada «Check-List - Unidentified Flying Objects», que fuerza al analista a consignar de manera uniforme los datos del avistamiento: fecha y hora, lugar, descripción del objeto, dirección y velocidad aparentes, condiciones meteorológicas, fiabilidad del testigo y, cuando existía, la conclusión o explicación tentativa. Muchos resúmenes adjuntan además listas de testigos, declaraciones firmadas y reportes narrativos más extensos. Es, en esencia, el antecedente directo de las «Record Cards» que el Proyecto Blue Book usaría durante dos décadas: un formulario diseñado para convertir relatos heterogéneos en filas comparables de una tabla.\n\nLa cronología sitúa estos volúmenes en el arco que va del Proyecto Sign (creado a fines de 1947 / inicios de 1948 en el Air Materiel Command de Wright-Patterson) al Proyecto Grudge (1949). Es el momento en que la Fuerza Aérea decidió que la avalancha de reportes de «discos voladores» —disparada por el avistamiento de Kenneth Arnold en junio de 1947— exigía un canal formal de recolección y evaluación, antes de que el escepticismo institucional de Grudge y, más tarde, el aparato más estable de Blue Book (1952-1969) tomaran el relevo. Los incidentes catalogados en estas fichas son, en su mayoría, los reportes rutinarios de esos años, no los casos célebres que el corpus analiza por separado.",
+  "whatHappened_en": "The 'Incident Summaries' are a series of incident abstracts the U.S. Air Force compiled to tabulate reports of unidentified flying objects in the founding years of the UFO problem. PURSUE declassified three of their volumes in the first tranche of May 8, 2026 —incidents numbered 1-100, 101-172 and 173-233—, drawn from the USAF record groups at the National Archives (NARA). The corpus gathers them in a single file because they share format, origin and function: they are not an incident, but the instrument with which the institution processed all incidents.\n\nThe core of each summary is a standardized form titled 'Check-List - Unidentified Flying Objects', which forces the analyst to record sighting data uniformly: date and time, location, object description, apparent direction and speed, weather conditions, witness reliability and, where it existed, the tentative conclusion or explanation. Many summaries also attach witness lists, signed statements and longer narrative reports. It is, in essence, the direct antecedent of the 'Record Cards' Project Blue Book would use for two decades: a form designed to turn heterogeneous accounts into comparable rows of a table.\n\nThe chronology places these volumes in the arc from Project Sign (created in late 1947 / early 1948 at the Air Materiel Command at Wright-Patterson) to Project Grudge (1949). It is the moment when the Air Force decided that the avalanche of 'flying disc' reports —triggered by Kenneth Arnold's June 1947 sighting— required a formal collection-and-evaluation channel, before Grudge's institutional skepticism and, later, the more stable Blue Book apparatus (1952-1969) took over. The incidents catalogued in these cards are mostly the routine reports of those years, not the famous cases the corpus analyzes separately.",
+  "whyMatters": "El valor de estos volúmenes para el corpus es metodológico, no probatorio, y conviene decirlo con claridad para no caer en la falacia de leer el grosor de un archivo como peso de su evidencia. Las «Incident Summaries» son, en su masa, trabajo de triage: reportes que la propia USAF clasificaba mayoritariamente como globos meteorológicos, cuerpos astronómicos (Venus, estrellas brillantes, meteoros), aeronaves convencionales, fenómenos meteorológicos y misidentificaciones de buena fe. La existencia de una ficha no acredita una anomalía; acredita que un reporte se recibió y se procesó. Esa es justamente la lección que el formulario «Check-List» encarna: un dispositivo para imponer disciplina y comparabilidad a un fenómeno social —la ola de avistamientos— antes que para certificar nada extraordinario.\n\nDicho esto, su incorporación cumple una función legítima. Primero, hace visible la maquinaria: el corpus analiza por separado los hitos institucionales de la época (el memo Twining de 1947, el Estimate of the Situation de 1948, el Proyecto Grudge de 1949), pero hasta ahora no mostraba el sustrato administrativo cotidiano sobre el que esos hitos se apoyaban. Segundo, documenta la continuidad del método: la ficha estandarizada de 1948-1950 es el eslabón entre la improvisación de 1947 y la burocracia madura de Blue Book, y permite ver cómo el Estado construyó una categoría administrativa —«unidentified»— que sigue vigente, rebautizada como «UAP», en el sistema PURSUE de 2026. El corpus enmarca la serie con esa cautela: la valora como registro primario de un proceso institucional, no como un repositorio de evidencia anómala.",
+  "whyMatters_en": "The value of these volumes to the corpus is methodological, not probative, and it is worth saying clearly so as not to fall into the fallacy of reading a file's thickness as the weight of its evidence. The 'Incident Summaries' are, in bulk, triage work: reports the USAF itself mostly classified as weather balloons, astronomical bodies (Venus, bright stars, meteors), conventional aircraft, weather phenomena and good-faith misidentifications. The existence of a card does not attest an anomaly; it attests that a report was received and processed. That is precisely the lesson the 'Check-List' form embodies: a device to impose discipline and comparability on a social phenomenon —the sighting wave— rather than to certify anything extraordinary.\n\nThat said, their inclusion serves a legitimate function. First, it makes the machinery visible: the corpus analyzes separately the institutional milestones of the era (the 1947 Twining memo, the 1948 Estimate of the Situation, the 1949 Project Grudge), but until now it did not show the everyday administrative substrate on which those milestones rested. Second, it documents the continuity of method: the standardized 1948-1950 form is the link between the improvisation of 1947 and the mature bureaucracy of Blue Book, and lets one see how the state built an administrative category —'unidentified'— that remains in force, rebranded as 'UAP', in the 2026 PURSUE system. The corpus frames the series with that caution: it values it as a primary record of an institutional process, not as a repository of anomalous evidence.",
+  "evidence": [
+    "Tres volúmenes de «Incident Summaries» de la USAF (incidentes 1-100, 101-172, 173-233), desclasificados en la primera entrega PURSUE (war.gov/UFO, 8 may 2026)",
+    "Cada resumen se estructura en torno a la ficha «Check-List - Unidentified Flying Objects» con datos del avistamiento; muchos incluyen listas de testigos y declaraciones",
+    "Origen institucional: procesamiento de reportes de discos voladores en los Proyectos Sign (1948) y Grudge (1949), antecesores de Blue Book (1952-1969)",
+    "Naturaleza dominante: trabajo de triage que resolvía la mayoría de los reportes en globos, astros, aeronaves y misidentificaciones",
+    "Procedencia documental: grupos de registros de la USAF en los Archivos Nacionales (NARA)",
+    "Continuidad: la ficha estandarizada es el antecedente directo de las Record Cards de Blue Book y de la categoría administrativa hoy rebautizada «UAP»"
+  ],
+  "evidence_en": [
+    "Three USAF 'Incident Summaries' volumes (incidents 1-100, 101-172, 173-233), declassified in the first PURSUE tranche (war.gov/UFO, May 8, 2026)",
+    "Each summary is structured around the 'Check-List - Unidentified Flying Objects' form with sighting data; many include witness lists and statements",
+    "Institutional origin: processing of flying-disc reports in Projects Sign (1948) and Grudge (1949), antecedents of Blue Book (1952-1969)",
+    "Dominant nature: triage work that resolved most reports into balloons, stars, aircraft and misidentifications",
+    "Documentary provenance: USAF record groups at the National Archives (NARA)",
+    "Continuity: the standardized form is the direct antecedent of the Blue Book Record Cards and of the administrative category now rebranded 'UAP'"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — USAF Incident Summaries 1-100 / 101-172 / 173-233 (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf",
+      "note": "Volúmenes primarios incorporados al visor."
+    },
+    {
+      "name": "NARA — USAF UFO project records (Sign / Grudge / Blue Book)",
+      "url": "https://www.archives.gov/research/military/air-force/ufos",
+      "note": "Contexto archivístico de los registros de proyectos OVNI de la USAF."
+    },
+    {
+      "name": "Department of War — 'Releases Unidentified Anomalous Phenomena Files in Historic Transparency Effort' (8 may 2026)",
+      "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
+      "note": "Comunicado oficial del primer release."
+    }
+  ]
+}

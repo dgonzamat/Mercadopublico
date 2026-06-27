@@ -1,0 +1,75 @@
+{
+  "id": "detroit-dome-object-1958",
+  "num": 289,
+  "name": "Detroit · objeto circular con «cúpula de cristal» (memo FBI, 1958)",
+  "name_en": "Detroit · circular object with a 'crystal-type dome' (FBI memo, 1958)",
+  "year_start": 1958,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "place": "Detroit, Michigan",
+    "place_en": "Detroit, Michigan"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "summary": "Un memorándum del FBI fechado el 17 de abril de 1958 (expediente de oficina de campo 100-DE-18221, Serial 844), desclasificado en la primera entrega PURSUE (8 may 2026), registra el reporte de un hombre de Detroit que describió un «objeto circular con una cúpula de tipo cristal» y recomienda remitir la información «a las autoridades aéreas correspondientes». Es un caso-incidente tier B típico del flujo de avistamientos ciudadanos que el FBI canalizaba hacia la Fuerza Aérea: un único testigo, una descripción estructurada pero sin corroboración instrumental, y la derivación administrativa de rigor. El valor es documental —cómo se tramitaba un reporte— más que probatorio.",
+  "summary_en": "An FBI memorandum dated April 17, 1958 (field-office file 100-DE-18221, Serial 844), declassified in the first PURSUE tranche (May 8, 2026), records the report of a Detroit man who described a 'circular object with a crystal-type dome' and recommends forwarding the information 'to proper air force authorities'. It is a typical tier-B incident case from the flow of citizen sightings the FBI channeled to the Air Force: a single witness, a structured description but no instrumental corroboration, and the routine administrative referral. Its value is documentary —how a report was processed— more than probative.",
+  "documents": [
+    {
+      "src": "/pursue/65_hs1-101634279_100-de-18221_serial_844.pdf",
+      "type": "pdf",
+      "title": "Memo FBI 100-DE-18221 · Serial 844 (17 abr 1958) — avistamiento de Detroit",
+      "title_en": "FBI memo 100-DE-18221 · Serial 844 (Apr 17, 1958) — Detroit sighting",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.78,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.005,
+    "nohumano_abierto": 0.015,
+    "indet": 0.18
+  },
+  "whatHappened": "Entre los serials que PURSUE desclasificó en su primera entrega del 8 de mayo de 2026 figura un memorándum del FBI fechado el 17 de abril de 1958, perteneciente al expediente de la oficina de campo de Detroit 100-DE-18221 (Serial 844). El documento recoge el reporte de un vecino de Detroit, Michigan, que afirmó haber observado un «objeto circular con una cúpula de tipo cristal» (circular object with a crystal-type dome). Como era práctica habitual del Bureau ante este tipo de avistamientos, el memo no abre una investigación propia: registra el testimonio y recomienda que la información se remita «a las autoridades aéreas correspondientes» —es decir, a la Fuerza Aérea, que desde 1952 centralizaba el estudio de objetos no identificados en el Proyecto Blue Book—.\n\nEl episodio es modesto y conviene describirlo sin inflarlo. Se trata de un único testigo civil, sin corroboración por radar, fotografía ni segundos observadores documentados en la pieza desclasificada, y de una descripción que, aunque estructurada —forma circular, cúpula translúcida—, corresponde a un repertorio visual muy extendido en la cultura OVNI de los años cincuenta, alimentado por la prensa, el cine y los reportes previos de «platillos». La función del FBI aquí es de conducto administrativo: recibir la denuncia ciudadana, anotarla en el expediente de la oficina de campo y derivarla al organismo competente, sin emitir juicio sobre su naturaleza.\n\nEl corpus incorpora el caso por su procedencia documental limpia —un memo oficial, fechado y localizado, con una descripción textual concreta— y como muestra representativa del enorme volumen de reportes rutinarios que el aparato de seguridad estadounidense tramitó durante la Guerra Fría. No es uno de los casos célebres de 1958, sino el tipo de avistamiento ordinario que constituía el grueso del flujo y que, casi siempre, se resolvía o se archivaba sin conclusión anómala.",
+  "whatHappened_en": "Among the serials PURSUE declassified in its first tranche of May 8, 2026 is an FBI memorandum dated April 17, 1958, belonging to the Detroit field-office file 100-DE-18221 (Serial 844). The document records the report of a Detroit, Michigan resident who claimed to have observed a 'circular object with a crystal-type dome'. As was the Bureau's usual practice with such sightings, the memo does not open its own investigation: it records the testimony and recommends the information be forwarded 'to proper air force authorities' —that is, to the Air Force, which since 1952 centralized the study of unidentified objects in Project Blue Book—.\n\nThe episode is modest and worth describing without inflating it. It involves a single civilian witness, with no radar, photographic or documented second-observer corroboration in the declassified piece, and a description that, though structured —circular shape, translucent dome—, corresponds to a visual repertoire very widespread in 1950s UFO culture, fed by the press, cinema and prior 'saucer' reports. The FBI's role here is that of an administrative conduit: receive the citizen complaint, note it in the field-office file and refer it to the competent body, without judging its nature.\n\nThe corpus includes the case for its clean documentary provenance —an official memo, dated and located, with a concrete textual description— and as a representative sample of the enormous volume of routine reports the U.S. security apparatus processed during the Cold War. It is not one of the famous cases of 1958, but the kind of ordinary sighting that made up the bulk of the flow and that, almost always, was resolved or filed without an anomalous conclusion.",
+  "whyMatters": "El valor de este memo no está en su contenido probatorio —que es mínimo— sino en lo que representa, y por eso entra como caso-incidente tier B con una distribución dominada por la explicación mundana. Un único testigo, sin instrumentación que respalde el relato, y una descripción que encaja en el imaginario de la época no sostienen una inferencia extraordinaria. La hipótesis más económica es la misidentificación —un globo, una aeronave con configuración de luces inusual, un reflejo, un objeto astronómico— eventualmente enriquecida por la expectativa cultural del «platillo con cúpula»; el residuo indeterminado refleja únicamente que, con la información disponible, no se puede cerrar el caso con una causa única verificada.\n\nSu incorporación cumple dos funciones. Primero, ilustra el rol institucional del FBI en la era Blue Book: no el de investigador del fenómeno, sino el de conducto que recibía denuncias ciudadanas y las derivaba a la Fuerza Aérea, un patrón que el corpus documenta también en el expediente central 62-HQ-83894 y en los memos de ocupantes de los años sesenta. Segundo, es un calibrador de escala: por cada caso célebre y bien instrumentado, los archivos contienen cientos de reportes como este —ordinarios, de un solo testigo, sin seguimiento—, y tenerlos presentes evita el sesgo de muestreo que sobrerrepresenta lo anómalo. El corpus lo enmarca con esa cautela: registra el avistamiento y su cadena documental, sin convertir una descripción evocadora en peso de evidencia sobre la naturaleza del fenómeno. En términos del modelo del corpus, el caso ilustra cómo un reporte individual de bajo contenido instrumental se asienta abrumadoramente en la narrativa mundana, dejando un margen indeterminado que no debe confundirse con apoyo a una hipótesis exótica: la falta de cierre no es evidencia de anomalía, sino ausencia de datos suficientes para descartar la causa prosaica más probable. Es, en suma, una pieza de archivo valiosa por su trazabilidad y su fecha, no por su carga probatoria, y así se cataloga.",
+  "whyMatters_en": "The value of this memo lies not in its probative content —which is minimal— but in what it represents, and hence it enters as a tier-B incident case with a distribution dominated by the mundane explanation. A single witness, with no instrumentation backing the account, and a description that fits the era's imagery do not sustain an extraordinary inference. The most economical hypothesis is misidentification —a balloon, an aircraft with an unusual light configuration, a reflection, an astronomical object— possibly enriched by the cultural expectation of the 'domed saucer'; the indeterminate residue reflects only that, with the available information, the case cannot be closed with a single verified cause.\n\nIts inclusion serves two functions. First, it illustrates the FBI's institutional role in the Blue Book era: not that of investigator of the phenomenon, but that of a conduit receiving citizen complaints and referring them to the Air Force, a pattern the corpus also documents in the central file 62-HQ-83894 and in the 1960s occupant memos. Second, it is a scale calibrator: for every famous, well-instrumented case, the archives contain hundreds of reports like this one —ordinary, single-witness, without follow-up—, and keeping them in view avoids the sampling bias that over-represents the anomalous. The corpus frames it with that caution: it records the sighting and its documentary chain, without turning an evocative description into the weight of evidence about the phenomenon's nature. In the corpus's model terms, the case illustrates how an individual report of low instrumental content rests overwhelmingly on the mundane narrative, leaving an indeterminate margin that should not be confused with support for an exotic hypothesis: the lack of closure is not evidence of anomaly but absence of data sufficient to rule out the most probable prosaic cause. It is, in sum, an archival piece valuable for its traceability and date, not for its evidential weight, and is catalogued as such.",
+  "evidence": [
+    "Memorándum del FBI del 17 de abril de 1958 (expediente de oficina de campo 100-DE-18221, Serial 844), desclasificado en la primera entrega PURSUE (war.gov/UFO, 8 may 2026)",
+    "Testigo: un hombre de Detroit, Michigan, que describió un «objeto circular con una cúpula de tipo cristal»",
+    "El memo recomienda remitir la información «a las autoridades aéreas correspondientes» (Fuerza Aérea / Proyecto Blue Book)",
+    "Un único testigo; sin corroboración por radar, fotografía ni segundos observadores en la pieza desclasificada",
+    "Rol del FBI: conducto administrativo de denuncias ciudadanas hacia la USAF, no investigador del fenómeno",
+    "Descripción consistente con el imaginario «platillo con cúpula» de los años cincuenta; hipótesis dominante de misidentificación"
+  ],
+  "evidence_en": [
+    "FBI memorandum of April 17, 1958 (field-office file 100-DE-18221, Serial 844), declassified in the first PURSUE tranche (war.gov/UFO, May 8, 2026)",
+    "Witness: a Detroit, Michigan man who described a 'circular object with a crystal-type dome'",
+    "The memo recommends forwarding the information 'to proper air force authorities' (Air Force / Project Blue Book)",
+    "A single witness; no radar, photographic or second-observer corroboration in the declassified piece",
+    "FBI role: administrative conduit of citizen complaints to the USAF, not investigator of the phenomenon",
+    "Description consistent with the 1950s 'domed saucer' imagery; dominant misidentification hypothesis"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI 100-DE-18221, Serial 844, 1958 (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf",
+      "note": "Memo primario desclasificado, incorporado al visor."
+    },
+    {
+      "name": "FBI Records: The Vault — 'Unidentified Flying Objects'",
+      "url": "https://vault.fbi.gov/UFO",
+      "note": "Contexto del rol del FBI como conducto de reportes hacia la USAF."
+    }
+  ]
+}

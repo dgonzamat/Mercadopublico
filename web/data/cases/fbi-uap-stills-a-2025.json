@@ -1,0 +1,134 @@
+{
+  "id": "fbi-uap-stills-a-2025",
+  "num": 286,
+  "name": "Imágenes fijas UAP del FBI · serie A (PURSUE)",
+  "name_en": "FBI UAP still images · A series (PURSUE)",
+  "year_start": 2025,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.895,
+    "lng": -77.025,
+    "place": "FBI · sumisión a la AARO (origen del evento no provisto)",
+    "place_en": "FBI · submission to AARO (event origin not provided)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 58,
+  "summary": "La «serie A» son ocho imágenes fijas (A1–A8) que el FBI remitió a la AARO como reporte de un fenómeno anómalo no identificado, desclasificadas en la primera entrega PURSUE (8 may 2026). A diferencia de la serie B —capturada por un sistema militar sobre el oeste de EE.UU. en 2025—, la serie A procede de un «sistema del gobierno de EE.UU.» y se publica sin fecha ni lugar del evento, con la imagen original alterada por redacciones antes de su envío y sin reporte de misión adjunto; el operador declaró no poder identificar positivamente el objeto. Es un caso-documento tier B: su valor es ilustrar los límites del propio canal de release —imágenes sin contexto verificable no son, por sí solas, evidencia interpretable— más que aportar una pieza probatoria.",
+  "summary_en": "The 'A series' is eight still images (A1–A8) the FBI submitted to AARO as a report of an unidentified anomalous phenomenon, declassified in the first PURSUE tranche (May 8, 2026). Unlike the B series —captured by a military system over the western United States in 2025—, the A series comes from a 'U.S. government system' and is published with no event date or location, with the original imagery altered by redactions before submission and no accompanying mission report; the operator stated they could not positively identify the object. It is a tier-B document-case: its value is to illustrate the limits of the release channel itself —context-free images are not, on their own, interpretable evidence— rather than to provide a probative piece.",
+  "documents": [
+    {
+      "src": "/pursue/fbi-photo-a1.png",
+      "type": "image",
+      "title": "Foto FBI A001 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A001 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a1.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a2.png",
+      "type": "image",
+      "title": "Foto FBI A002 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A002 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a2.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a3.png",
+      "type": "image",
+      "title": "Foto FBI A003 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A003 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a3.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a4.png",
+      "type": "image",
+      "title": "Foto FBI A004 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A004 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a4.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a5.png",
+      "type": "image",
+      "title": "Foto FBI A005 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A005 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a5.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a6.png",
+      "type": "image",
+      "title": "Foto FBI A006 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A006 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a6.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a7.png",
+      "type": "image",
+      "title": "Foto FBI A007 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A007 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a7.png"
+    },
+    {
+      "src": "/pursue/fbi-photo-a8.png",
+      "type": "image",
+      "title": "Foto FBI A008 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
+      "title_en": "FBI Photo A008 — UAP still from a government system (date and location not provided)",
+      "source": "FBI · AARO (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a8.png"
+    }
+  ],
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "En la primera entrega del sistema PURSUE (war.gov/UFO, 8 de mayo de 2026), el FBI aportó dos conjuntos de imágenes fijas de fenómenos anómalos no identificados que había remitido a la All-domain Anomaly Resolution Office (AARO). El corpus trata por separado la serie B —veintitantas tomas en infrarrojo/visión nocturna de un sistema militar sobre el oeste de Estados Unidos en 2025, asociadas al evento USPER—. Esta ficha cubre la serie A: ocho imágenes (A1 a A8) de procedencia y contexto deliberadamente más escuetos.\n\nLa descripción oficial de la serie A es notablemente parca. El FBI remitió a la AARO «una imagen fija derivada de un sistema del gobierno de EE.UU.»; la fecha y el lugar del evento «no fueron provistos»; la imagen original «fue alterada con redacciones» antes de entregarse, y no se acompañó de un reporte de misión. El operador que generó el material declaró no haber podido «identificar positivamente» el fenómeno. Es decir: ocho fotogramas sin estampa temporal, sin geolocalización, sin cadena narrativa y con parte del cuadro tachado por razones de seguridad. Según el comunicado de war.gov, las redacciones de este release se limitan a identidades de testigos, ubicaciones de instalaciones gubernamentales e información militarmente sensible ajena al UAP en sí —pero el efecto neto, para quien examina la serie A, es que apenas queda contexto sobre el que apoyar una interpretación.\n\nLa distinción con la serie B importa y conviene fijarla. La serie B viene de un «sistema militar», está fechada (2025) y localizada (oeste de EE.UU.), y se enmarca en un evento con testigos y una entrevista FBI-302 (el caso USPER). La serie A, en cambio, viene de un «sistema del gobierno» genérico, sin fecha ni lugar y sin testimonio asociado. No hay base pública para vincularlas al mismo incidente, de modo que el corpus las mantiene como nodos distintos y evita la tentación —frecuente en la cobertura— de fundir todas las «fotos del FBI» en un único avistamiento.",
+  "whatHappened_en": "In the first tranche of the PURSUE system (war.gov/UFO, May 8, 2026), the FBI contributed two sets of still images of unidentified anomalous phenomena it had submitted to the All-domain Anomaly Resolution Office (AARO). The corpus treats the B series separately —two dozen-odd infrared/night-vision frames from a military system over the western United States in 2025, associated with the USPER event—. This file covers the A series: eight images (A1 to A8) of deliberately sparser provenance and context.\n\nThe official description of the A series is strikingly terse. The FBI submitted to AARO 'a still image derived from a U.S. government system'; the event's date and location 'were not provided'; the original imagery 'was altered with redactions' before submission, and it was not accompanied by a mission report. The operator who generated the material stated they could not 'positively identify' the phenomenon. That is: eight frames with no timestamp, no geolocation, no narrative chain and part of the field blacked out for security reasons. Per the war.gov statement, redactions in this release are confined to witness identities, government-facility locations and military-sensitive information unrelated to the UAP itself —but the net effect, for anyone examining the A series, is that almost no context remains on which to ground an interpretation.\n\nThe distinction from the B series matters and is worth pinning down. The B series comes from a 'military system', is dated (2025) and located (western U.S.), and sits within an event that has witnesses and an FBI-302 interview (the USPER case). The A series, by contrast, comes from a generic 'government system', with no date or location and no associated testimony. There is no public basis to link them to the same incident, so the corpus keeps them as distinct nodes and avoids the temptation —common in coverage— to merge all 'FBI photos' into a single sighting.",
+  "whyMatters": "El interés de la serie A no está en lo que muestra sino en lo que le falta, y por eso es un buen calibrador de qué significa «release» en el ciclo PURSUE. Ocho imágenes anómalas suenan a evidencia; ocho imágenes anómalas sin fecha, sin lugar, sin sensor identificable, sin reporte de misión y parcialmente redactadas son, en términos analíticos, casi inservibles para inferir la naturaleza del objeto. No se puede geolocalizar, no se puede correlacionar con radar o tráfico aéreo, no se puede fechar contra efemérides ni reconstruir la geometría de observación. La honestidad obliga a decir que el operador del propio sistema gubernamental no logró identificar el fenómeno —lo que descarta una misidentificación trivial documentada—, pero esa misma ausencia de contexto impide tanto confirmar una anomalía como descartarla: el caso se queda, por construcción, en lo indeterminado.\n\nPor eso entra como caso-documento tier B, valorado por la solidez de su procedencia institucional (una sumisión formal FBI→AARO publicada en el canal oficial) y no por su contenido probatorio. Su función en el corpus es doble. Primero, completa el registro fotográfico de la primera entrega PURSUE junto a la serie B, dejando ambos conjuntos navegables en el visor con su provenance correcta. Segundo, y más importante, ilustra una crítica recurrente al diseño del sistema: que «dato no es divulgación». Liberar imágenes despojadas del metadato que las haría interpretables traslada al público la apariencia de transparencia sin su sustancia. El corpus enmarca la serie A con esa cautela: registra que el material existe y de dónde viene, sin convertir ocho fotogramas sin contexto en peso de evidencia sobre la naturaleza del fenómeno.",
+  "whyMatters_en": "The A series's interest lies not in what it shows but in what it lacks, which makes it a good calibrator of what 'release' means in the PURSUE cycle. Eight anomalous images sound like evidence; eight anomalous images with no date, no location, no identifiable sensor, no mission report and partial redaction are, analytically, almost useless for inferring the object's nature. They cannot be geolocated, cannot be correlated with radar or air traffic, cannot be dated against ephemerides nor have their observation geometry reconstructed. Honesty requires noting that the government system's own operator failed to identify the phenomenon —which rules out a trivially documented misidentification—, but that very absence of context prevents both confirming an anomaly and dismissing one: the case remains, by construction, indeterminate.\n\nHence it enters as a tier-B document-case, valued for the solidity of its institutional provenance (a formal FBI→AARO submission published on the official channel) and not for its probative content. Its function in the corpus is twofold. First, it completes the photographic record of the first PURSUE tranche alongside the B series, leaving both sets navigable in the viewer with their correct provenance. Second, and more important, it illustrates a recurring critique of the system's design: that 'data is not disclosure'. Releasing images stripped of the metadata that would make them interpretable hands the public the appearance of transparency without its substance. The corpus frames the A series with that caution: it records that the material exists and where it comes from, without turning eight context-free frames into the weight of evidence about the phenomenon's nature.",
+  "evidence": [
+    "Ocho imágenes fijas FBI (serie A, A1–A8) remitidas a la AARO, desclasificadas en la primera entrega PURSUE (war.gov/UFO, 8 may 2026)",
+    "Descripción oficial: «imagen fija derivada de un sistema del gobierno de EE.UU.»; fecha y lugar del evento no provistos; sin reporte de misión adjunto",
+    "Imagen original alterada con redacciones antes de la sumisión a la AARO; el operador declaró no poder identificar positivamente el fenómeno",
+    "Distinción con la serie B (sistema militar, oeste de EE.UU., 2025, evento USPER con entrevista FBI-302): sin base pública para unificarlas",
+    "Comunicado war.gov: las redacciones se limitan a identidades de testigos, ubicaciones de instalaciones e información militarmente sensible ajena al UAP",
+    "Ausencia de metadato (fecha/lugar/sensor) que impide geolocalizar, correlacionar con radar o fechar — material indeterminado por construcción"
+  ],
+  "evidence_en": [
+    "Eight FBI still images (A series, A1–A8) submitted to AARO, declassified in the first PURSUE tranche (war.gov/UFO, May 8, 2026)",
+    "Official description: 'still image derived from a U.S. government system'; event date and location not provided; no accompanying mission report",
+    "Original imagery altered with redactions before submission to AARO; the operator stated they could not positively identify the phenomenon",
+    "Distinction from the B series (military system, western U.S., 2025, USPER event with FBI-302 interview): no public basis to unify them",
+    "war.gov statement: redactions confined to witness identities, facility locations and military-sensitive information unrelated to the UAP",
+    "Absence of metadata (date/location/sensor) prevents geolocation, radar correlation or dating — indeterminate material by construction"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI Photo A series (A1–A8), PURSUE Release 01",
+      "url": "https://www.war.gov/ufo/",
+      "note": "Portal oficial; descripción y assets de la sumisión FBI a la AARO."
+    },
+    {
+      "name": "NBC News — 'Pentagon releases declassified UFO files including videos and photos' (8 may 2026)",
+      "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204",
+      "note": "Cobertura del primer release y de las imágenes fijas del FBI."
+    },
+    {
+      "name": "DefenseScoop — '‘Data alone is not disclosure’: UAP research community reacts to Trump’s first PURSUE file drop' (14 may 2026)",
+      "url": "https://defensescoop.com/2026/05/14/uap-trump-first-pursue-ufo-file-drop/",
+      "note": "Crítica al diseño del canal: material sin contexto no equivale a divulgación."
+    }
+  ]
+}
