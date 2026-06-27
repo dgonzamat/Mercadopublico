@@ -1,0 +1,75 @@
+{
+  "id": "trans-caucasus-1955",
+  "num": 282,
+  "name": "Trans-Cáucaso · discos ascendentes sobre la URSS (Agregado Aéreo, 1955)",
+  "name_en": "Trans-Caucasus · ascending discs over the USSR (Air Attaché, 1955)",
+  "year_start": 1955,
+  "country": "SU",
+  "country_name": "Unión Soviética (RSS de Azerbaiyán)",
+  "flag": "🇷🇺",
+  "location": {
+    "lat": 39.95,
+    "lng": 49.4,
+    "place": "Línea férrea entre Aliaty (Ələt) y Adzhijabul, RSS de Azerbaiyán — al sur de Bakú",
+    "place_en": "Railway between Aliaty (Ələt) and Adzhijabul, Azerbaijan SSR — south of Baku"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "posterior": {
+    "mundano_natural": 0.34,
+    "humana_clasificada": 0.4,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.04,
+    "indet": 0.13
+  },
+  "summary": "El documento 341_110677 (PURSUE Release 01) contiene el Air Intelligence Information Report IR 193-55, firmado el 14 de octubre de 1955 por el agregado aéreo de EE.UU. Lt. Col. Thomas S. Ryan. Recoge el relato de tres observadores estadounidenses 'altamente fiables' que, viajando en tren por el trans-Cáucaso (entre Aliaty y Adzhijabul, al sur de Bakú) el 4 de octubre de 1955 a las 19:10, vieron dos objetos en forma de disco ascender casi verticalmente —con la superficie exterior girando lentamente hacia la derecha— hasta unos 6.000 pies, momento en que aceleraron bruscamente rumbo al norte. El área de despegue, a 1-2 millas al sur de la vía, mostraba dos haces de reflector apuntando casi verticalmente. El agregado lo evaluó como significativo para el proyecto OVNI de la USAF.",
+  "summary_en": "Document 341_110677 (PURSUE Release 01) contains Air Intelligence Information Report IR 193-55, signed on October 14, 1955 by U.S. air attaché Lt. Col. Thomas S. Ryan. It records the account of three 'highly reliable' U.S. observers who, traveling by rail through the Trans-Caucasus (between Aliaty and Adzhijabul, south of Baku) on October 4, 1955 at 19:10, saw two disc-shaped objects ascend almost vertically —with the outer surface revolving slowly to the right— to about 6,000 feet, at which point they sharply accelerated northward. The take-off area, 1-2 miles south of the line, showed two searchlight beams pointing almost vertically. The attaché assessed it as significant for the USAF's UFO project.",
+  "documents": [
+    {
+      "src": "/pursue/341_110677_numerical_file_5-2500.pdf",
+      "type": "pdf",
+      "title": "Air Intelligence Information Report IR 193-55 — Agregado Aéreo de EE.UU. (14 oct 1955)",
+      "title_en": "Air Intelligence Information Report IR 193-55 — U.S. Air Attaché (Oct 14, 1955)",
+      "source": "U.S. Air Attaché · Department of War (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf"
+    }
+  ],
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El documento, catalogado en el archivo numérico 341_110677 y desclasificado en el primer release del sistema PURSUE, es un Air Intelligence Information Report (IR 193-55) de la inteligencia aérea de Estados Unidos, fechado el 14 de octubre de 1955 y preparado por el agregado aéreo Lt. Col. Thomas S. Ryan; la fuente se identifica como el Lt. Col. E. U. Hathaway y la evaluación de fiabilidad es 'B-2'. El reporte se canalizó a través de la oficina del agregado en Praga y su asunto es escueto: 'Observations of Traveller in USSR'.\n\nEl núcleo es el testimonio de tres observadores estadounidenses, calificados en el documento de 'altamente fiables', que el 4 de octubre de 1955 viajaban en tren por la región del trans-Cáucaso, en la RSS de Azerbaiyán al sur de Bakú. A las 19:10, unos diez minutos después de partir de la estación de Aliaty (Ələt) y antes de llegar a Adzhijabul, presenciaron lo que estaban 'firmemente convencidos' de que era un genuino platillo o disco volante. Según el relato, un primer objeto en forma de disco ascendió casi verticalmente, a velocidad relativamente baja y con su superficie exterior girando lentamente hacia la derecha, hasta una altitud de unos 6.000 pies; allí su velocidad aumentó bruscamente y se alejó rumbo al norte. Aproximadamente un minuto después, un segundo disco repitió la misma maniobra. El detalle decisivo es el emplazamiento: el área de despegue se situaba a una o dos millas al sur de la vía férrea, y desde ese punto dos haces de reflector apuntaban hacia arriba, casi en vertical.\n\nEse conjunto de rasgos —ascenso casi vertical, aceleración tras alcanzar cierta altura, salida hacia el norte y, sobre todo, dos reflectores marcando el punto de origen en tierra— es justamente el perfil de un lanzamiento. Un cohete, un misil en ensayo o una aeronave de despegue inusual, vistos al anochecer desde un tren en movimiento por observadores sin instrumentos, producen con facilidad la impresión de un 'disco' que sube girando: la pluma de escape iluminada por el sol bajo el horizonte, la rotación aparente y el cambio de régimen de velocidad al ganar altura son artefactos perceptivos bien conocidos. El sur de Bakú y la franja del Caspio formaban parte de la geografía militar soviética de la época, y dos reflectores fijos apuntando al cielo son más coherentes con la señalización o el seguimiento de un sitio de lanzamiento que con un objeto que aparece de la nada.\n\nEl propio documento no oculta su lectura institucional. En su comentario, la oficina del agregado (USAIRA) subraya que 'la significación de este reporte para el proyecto de la USAF Unidentified Flying Objects es notable y da credibilidad a muchos reportes de platillos'. Es decir, en plena Guerra Fría la inteligencia aérea estadounidense trataba estos avistamientos sobre territorio soviético no como folclore, sino como datos potencialmente relevantes —tanto por lo que pudieran revelar de la tecnología soviética como por su encaje en el problema OVNI que la USAF estudiaba formalmente. El reporte registra observación y evaluación; no resuelve qué eran exactamente los dos discos.",
+  "whatHappened_en": "The document, cataloged in numerical file 341_110677 and declassified in the first PURSUE release, is a U.S. air-intelligence Air Intelligence Information Report (IR 193-55), dated October 14, 1955 and prepared by air attaché Lt. Col. Thomas S. Ryan; the source is identified as Lt. Col. E. U. Hathaway and the reliability evaluation is 'B-2'. The report was channeled through the attaché's office in Prague and its subject is terse: 'Observations of Traveller in USSR'.\n\nThe core is the testimony of three U.S. observers, described in the document as 'highly reliable', who on October 4, 1955 were traveling by rail through the Trans-Caucasus region, in the Azerbaijan SSR south of Baku. At 19:10, about ten minutes after departing the Aliaty (Ələt) station and before reaching Adzhijabul, they witnessed what they were 'firmly convinced' was a genuine flying saucer or disc. According to the account, a first disc-shaped object ascended almost vertically, at relatively low speed and with its outer surface revolving slowly to the right, to an altitude of about 6,000 feet; there its speed increased sharply and it departed northward. About one minute later, a second disc repeated the same maneuver. The decisive detail is the location: the take-off area lay one to two miles south of the railway line, and from that point two searchlight beams pointed upward, almost vertically.\n\nThat set of features —near-vertical ascent, acceleration after reaching a certain height, departure to the north, and above all two searchlights marking the point of origin on the ground— is precisely the profile of a launch. A rocket, a missile under test or an aircraft on an unusual takeoff, seen at dusk from a moving train by observers without instruments, readily produce the impression of a 'disc' rising while spinning: the exhaust plume sunlit below the horizon, the apparent rotation and the change in speed regime as it gains altitude are well-known perceptual artifacts. South of Baku and the Caspian fringe were part of the Soviet military geography of the era, and two fixed searchlights pointing skyward are more consistent with the marking or tracking of a launch site than with an object appearing from nowhere.\n\nThe document does not hide its institutional reading. In its comment, the attaché's office (USAIRA) stresses that 'the significance of this report for the USAF project Unidentified Flying Objects is remarkable and lends credence to many saucer reports'. That is, in the midst of the Cold War U.S. air intelligence treated these sightings over Soviet territory not as folklore but as potentially relevant data —both for what they might reveal about Soviet technology and for their fit within the UFO problem the USAF was formally studying. The report records observation and evaluation; it does not resolve what exactly the two discs were.",
+  "whyMatters": "El caso del trans-Cáucaso de 1955 es valioso por su procedencia y por lo que ilustra del problema OVNI de la Guerra Fría, no por probar tecnología anómala. La procedencia es de primer orden: un Air Intelligence Information Report del agregado aéreo de EE.UU., con fuente identificada y evaluación de fiabilidad formal ('B-2'), basado en tres observadores que la propia inteligencia calificó de altamente fiables. No es un rumor de prensa: es un canal de inteligencia estatal documentando un avistamiento sobre territorio soviético y considerándolo relevante para el proyecto OVNI de la USAF.\n\nDicho esto, la honestidad analítica empuja la masa hacia las explicaciones humanas. El perfil descrito —ascenso casi vertical, giro aparente, aceleración al ganar altura, rumbo norte y dos reflectores marcando un punto de origen en tierra a una o dos millas— es el de un lanzamiento visto al anochecer desde un tren en marcha. El sur de Bakú era geografía militar soviética, y la combinación de reflectores fijos más objetos que 'despegan' apunta antes a un ensayo de cohete, misil o aeronave que a un objeto sin origen. Por eso el posterior reparte la masa principal entre 'humana_clasificada' (un ensayo soviético clasificado, la lectura más económica del conjunto reflectores-más-ascenso) y 'mundano_natural' (la misperción de ese lanzamiento como un 'disco giratorio'), con una fracción no humana baja y un residuo indeterminado por la ausencia de instrumentación: tres testigos visuales desde un tren, sin radar, foto ni telemetría. Para el corpus, su aporte es triple: ancla un nodo de 1955 en el hilo de avistamientos sobre la URSS (junto a Sary Shagan 1973), documenta cómo la inteligencia aérea estadounidense integraba estos reportes en su análisis técnico de la amenaza soviética, y ejemplifica el tipo de evento que el sesgo de patrón hace parecer exótico cuando la explicación más sobria —un lanzamiento en un polígono— está escrita en el propio documento.",
+  "whyMatters_en": "The 1955 Trans-Caucasus case is valuable for its provenance and for what it illustrates about the Cold War UFO problem, not for proving anomalous technology. The provenance is first-rate: a U.S. air attaché's Air Intelligence Information Report, with an identified source and a formal reliability evaluation ('B-2'), based on three observers whom intelligence itself rated highly reliable. It is not a press rumor: it is a state intelligence channel documenting a sighting over Soviet territory and deeming it relevant to the USAF's UFO project.\n\nThat said, analytical honesty pushes the mass toward human explanations. The described profile —near-vertical ascent, apparent spin, acceleration on gaining height, northward course, and two searchlights marking a point of origin on the ground one to two miles away— is that of a launch seen at dusk from a moving train. South of Baku was Soviet military geography, and the combination of fixed searchlights plus objects that 'take off' points sooner to a rocket, missile or aircraft test than to an object without origin. Hence the posterior splits the main mass between 'humana_clasificada' (a classified Soviet test, the most economical reading of the searchlights-plus-ascent ensemble) and 'mundano_natural' (the misperception of that launch as a 'spinning disc'), with a low non-human fraction and an indeterminate residue owing to the absence of instrumentation: three visual witnesses from a train, with no radar, photo or telemetry. For the corpus, its contribution is threefold: it anchors a 1955 node in the thread of sightings over the USSR (alongside Sary Shagan 1973), documents how U.S. air intelligence folded these reports into its technical analysis of the Soviet threat, and exemplifies the kind of event that pattern bias makes seem exotic when the soberer explanation —a launch at a test range— is written into the document itself.",
+  "evidence": [
+    "Air Intelligence Information Report IR 193-55 del agregado aéreo de EE.UU. (Lt. Col. Thomas S. Ryan), 14 de octubre de 1955; fuente Lt. Col. E. U. Hathaway; evaluación de fiabilidad 'B-2'",
+    "Tres observadores estadounidenses 'altamente fiables' en tren por el trans-Cáucaso (entre Aliaty y Adzhijabul, RSS de Azerbaiyán) el 4 oct 1955, 19:10",
+    "Dos objetos en forma de disco ascienden casi verticalmente con la superficie exterior girando, hasta ~6.000 pies, luego aceleran rumbo al norte (con ~1 min de diferencia)",
+    "Área de despegue a 1-2 millas al sur de la vía, con dos haces de reflector apuntando casi verticalmente",
+    "Comentario USAIRA: significación 'notable' para el proyecto OVNI de la USAF; da credibilidad a muchos reportes de platillos"
+  ],
+  "evidence_en": [
+    "Air Intelligence Information Report IR 193-55 by the U.S. air attaché (Lt. Col. Thomas S. Ryan), October 14, 1955; source Lt. Col. E. U. Hathaway; reliability evaluation 'B-2'",
+    "Three 'highly reliable' U.S. observers by rail through the Trans-Caucasus (between Aliaty and Adzhijabul, Azerbaijan SSR) on Oct 4, 1955, 19:10",
+    "Two disc-shaped objects ascend almost vertically with the outer surface revolving, to ~6,000 feet, then accelerate northward (about 1 min apart)",
+    "Take-off area 1-2 miles south of the line, with two searchlight beams pointing almost vertically",
+    "USAIRA comment: 'remarkable' significance for the USAF's UFO project; lends credence to many saucer reports"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — 341_110677 Numerical File 5-2500 (IR 193-55, PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf",
+      "note": "Reporte primario del agregado aéreo de EE.UU."
+    },
+    {
+      "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro 341_110677)",
+      "url": "https://github.com/abigailhaddad/ufo-releases",
+      "note": "Mirror del índice con descripción y metadatos del reporte."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "papua-new-guinea-1985",
+  "num": 281,
+  "name": "Papúa Nueva Guinea · aeronaves de gran altitud y estelas (cable DoS, 1985)",
+  "name_en": "Papua New Guinea · high-altitude aircraft and contrails (DoS cable, 1985)",
+  "year_start": 1985,
+  "country": "PG",
+  "country_name": "Papúa Nueva Guinea",
+  "flag": "🇵🇬",
+  "location": {
+    "lat": -4.06,
+    "lng": 144.07,
+    "place": "Espacio aéreo de Papúa Nueva Guinea (vic. Angoram, prov. de Sepik Oriental) — cable de la embajada de EE.UU. en Port Moresby",
+    "place_en": "Papua New Guinea airspace (vic. Angoram, East Sepik Province) — U.S. Embassy Port Moresby cable"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "posterior": {
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.17,
+    "adversaria": 0.12,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.04,
+    "indet": 0.14
+  },
+  "summary": "El documento DOS-UAP-D1, desclasificado en el primer release PURSUE, es un cable diplomático del 28 de enero de 1985 de la embajada de EE.UU. en Port Moresby al Mando del Indo-Pacífico (USCINCPAC). El servicio de inteligencia de Papúa Nueva Guinea había preguntado a la embajada por reportes de la noche del 24 de enero: objetos veloces con luces, estelas y ruido. El reporte al que el NIO daba crédito venía de un piloto de Air Niugini que, recién despegado de Wewak, detectó por radar tráfico a gran altitud y alta velocidad sobre Angoram; testigos en tierra reportaron estelas de una aeronave de norte a sur a las 19:00 y de seis a ocho aeronaves de sur a norte a las 22:00. La embajada respondió que no tenía constancia de vuelos B-52 ni de aeronaves estadounidenses en el espacio aéreo de PNG ese día, calificó la información de 'muy fragmentaria' y pidió confirmación a USCINCPAC.",
+  "summary_en": "Document DOS-UAP-D1, declassified in the first PURSUE release, is a diplomatic cable dated January 28, 1985 from the U.S. Embassy in Port Moresby to the Indo-Pacific Command (USCINCPAC). Papua New Guinea's intelligence service had asked the embassy about reports from the night of January 24: fast-moving objects with lights, contrails and noise. The report the NIO gave some credence to came from an Air Niugini pilot who, having just taken off from Wewak, detected by radar high-altitude, high-speed traffic over Angoram; ground witnesses reported contrails of one aircraft north-to-south at 19:00 and of six to eight aircraft south-to-north at 22:00. The embassy replied that it had no record of B-52 overflights or U.S. aircraft in PNG airspace that day, called the information 'very sketchy', and requested confirmation from USCINCPAC.",
+  "documents": [
+    {
+      "src": "/pursue/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
+      "type": "pdf",
+      "title": "DOS-UAP-D1 — cable de la embajada de EE.UU. en Port Moresby a USCINCPAC (28 ene 1985)",
+      "title_en": "DOS-UAP-D1 — U.S. Embassy Port Moresby cable to USCINCPAC (Jan 28, 1985)",
+      "source": "U.S. Department of State (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf"
+    }
+  ],
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "El expediente DOS-UAP-D1 es un cable diplomático del Departamento de Estado de EE.UU., enviado el 28 de enero de 1985 desde la embajada estadounidense en Port Moresby (Papúa Nueva Guinea) al Mando de Estados Unidos para el Indo-Pacífico (USCINCPAC), en Honolulu. Reapareció desclasificado dentro de la primera tanda del sistema PURSUE el 8 de mayo de 2026. Su origen es una consulta formal: la National Intelligence Organization (NIO) de Papúa Nueva Guinea se dirigió a la embajada para preguntar por una serie de reportes de fenómenos aéreos ocurridos la noche del 24 de enero de 1985 —objetos de movimiento rápido con luces, estelas de condensación y ruido— y para sondear si correspondían a actividad aérea estadounidense.\n\nEl cable detalla el reporte concreto al que el propio NIO daba 'cierto crédito'. Provenía de un piloto de la aerolínea Air Niugini que acababa de despegar de Wewak con rumbo a Port Moresby: su radar de a bordo captó, mientras sobrevolaba Angoram (aproximadamente 4° S, 144° E), tráfico que volaba de sur a norte a gran altitud y alta velocidad. A ese contacto instrumental se sumaron varios avistamientos visuales desde distintos puntos del país: estelas de una aeronave que se movía de norte a sur hacia las 19:00 hora local, y de entre seis y ocho aeronaves que viajaban de sur a norte hacia las 22:00 hora local. El patrón —tráfico de gran altitud, en formación o sucesión, dejando estelas nocturnas visibles— es el de aeronaves reales más que el de un objeto puntual anómalo.\n\nLa respuesta de la embajada es la parte institucionalmente interesante. Tras consultar sus propios registros y mantener una conversación telefónica con el 43rd Strategic Wing (43SW), comunicó al NIO que no tenía constancia de vuelos de B-52 ni de ninguna aeronave estadounidense en el espacio aéreo de Papúa Nueva Guinea el 24 de enero. Es decir, la actividad observada no se correspondía —según los registros disponibles a la embajada— con operaciones estadounidenses conocidas. El cable se cierra reconociendo que la información era 'muy fragmentaria' y que las fuentes no estaban seguras de las direcciones de vuelo, y pide a USCINCPAC que confirme el punto 3 (la ausencia de vuelos propios) y aporte cualquier luz sobre los reportes. Lo firma GARDNER.\n\nLeído con cautela, el episodio admite varias explicaciones prosaicas convergentes. El tráfico de gran altitud con estelas nocturnas encaja con aeronaves militares o de reconocimiento —propias no reconocidas en el primer nivel, aliadas, o de un tercer Estado— y con fenómenos de altitud fácilmente confundibles de noche (satélites, reentradas, meteoros, o incluso estelas iluminadas por la luna). La negación de vuelos estadounidenses no cierra la cuestión en ninguna dirección: puede reflejar genuina ausencia de operaciones propias, o el desconocimiento de la embajada sobre misiones compartimentadas. Lo que el documento fija con solidez no es la naturaleza de los objetos sino el hecho institucional: un servicio de inteligencia aliado pidió cuentas, la embajada documentó la consulta y su propia respuesta negativa, y el conjunto quedó archivado como registro UAP que PURSUE liberó cuatro décadas después.",
+  "whatHappened_en": "The DOS-UAP-D1 file is a U.S. Department of State diplomatic cable, sent on January 28, 1985 from the U.S. Embassy in Port Moresby (Papua New Guinea) to United States Indo-Pacific Command (USCINCPAC) in Honolulu. It resurfaced declassified within the first PURSUE tranche on May 8, 2026. Its origin is a formal inquiry: Papua New Guinea's National Intelligence Organization (NIO) approached the embassy to ask about a series of aerial-phenomena reports from the night of January 24, 1985 —fast-moving objects with lights, condensation contrails and noise— and to probe whether they corresponded to U.S. air activity.\n\nThe cable details the specific report the NIO itself gave 'some credence' to. It came from an Air Niugini airline pilot who had just taken off from Wewak bound for Port Moresby: his onboard radar picked up, while overflying Angoram (approximately 4° S, 144° E), traffic flying south to north at high altitude and high speed. To that instrumental contact were added several visual sightings from different points in the country: contrails of one aircraft moving north to south around 19:00 local time, and of between six and eight aircraft traveling south to north around 22:00 local time. The pattern —high-altitude traffic, in formation or succession, leaving visible night contrails— is that of real aircraft rather than a discrete anomalous object.\n\nThe embassy's response is the institutionally interesting part. After checking its own records and holding a telephone conversation with the 43rd Strategic Wing (43SW), it told the NIO it had no record of B-52 overflights or any U.S. aircraft in Papua New Guinea airspace on January 24. That is, the observed activity did not correspond —per the records available to the embassy— to known U.S. operations. The cable closes by acknowledging that the information was 'very sketchy' and that sources were unsure of the flight directions, and asks USCINCPAC to confirm point 3 (the absence of U.S. flights) and shed any light on the reports. It is signed GARDNER.\n\nRead cautiously, the episode admits several converging prosaic explanations. High-altitude traffic with night contrails fits military or reconnaissance aircraft —one's own unacknowledged at the first level, allied, or a third State's— and altitude phenomena easily confused at night (satellites, reentries, meteors, or even moonlit contrails). The denial of U.S. flights does not settle the question in any direction: it may reflect a genuine absence of one's own operations, or the embassy's ignorance of compartmented missions. What the document fixes solidly is not the nature of the objects but the institutional fact: an allied intelligence service sought answers, the embassy documented the inquiry and its own negative response, and the whole was filed as a UAP record that PURSUE released four decades later.",
+  "whyMatters": "El interés de Papúa Nueva Guinea 1985 es de procedencia y de patrón, no de fuerza probatoria. Como evidencia del fenómeno es modesto: lo observado —tráfico de gran altitud, alta velocidad y estelas nocturnas, captado por un radar de aerolínea y por testigos en tierra desde varios puntos— es exactamente lo que producen aeronaves reales, y la explicación mundana cubre el grueso del caso. Por eso el posterior concentra la masa en 'mundano_natural' (misidentificación de aeronaves o de fenómenos de altitud) y reparte el resto entre tecnología propia no reconocida y actividad de un tercer Estado, dejando una fracción no humana baja y un residuo indeterminado. Tier B.\n\nLo que lo mantiene en el corpus es triple. Primero, la procedencia: es reporting diplomático primario —una embajada documentando una consulta de inteligencia aliada y su propia respuesta—, una fuente con incentivos de precisión distintos a los de la prensa. Segundo, el dato institucional concreto: la embajada negó, tras consultar al 43rd Strategic Wing, conocer vuelos estadounidenses en ese espacio aéreo ese día; esa negación no prueba que los objetos fueran anómalos —puede reflejar misiones compartimentadas que la embajada no veía— pero documenta el tipo de hueco de conocimiento que alimenta los casos UAP de la Guerra Fría. Tercero, amplía la geografía del corpus hacia el Pacífico suroccidental con fuente occidental, mostrando que el reporting UAP institucional es global y que PURSUE está liberando no solo material propio sino el registro diplomático con que EE.UU. observaba inquietudes de terceros países. La lección de calibración es la habitual: un documento oficial acredita que el reporte se hizo y se gestionó, no que el objeto fuera inexplicable.",
+  "whyMatters_en": "Papua New Guinea 1985's interest is one of provenance and pattern, not probative strength. As evidence of the phenomenon it is modest: what was observed —high-altitude, high-speed traffic and night contrails, picked up by an airline radar and by ground witnesses from several points— is exactly what real aircraft produce, and the mundane explanation covers the bulk of the case. Hence the posterior concentrates its mass on 'mundano_natural' (misidentification of aircraft or altitude phenomena) and splits the rest between unacknowledged own technology and a third State's activity, leaving a low non-human fraction and an indeterminate residue. Tier B.\n\nWhat keeps it in the corpus is threefold. First, provenance: it is primary diplomatic reporting —an embassy documenting an allied intelligence inquiry and its own response—, a source with accuracy incentives distinct from the press's. Second, the concrete institutional datum: the embassy denied, after consulting the 43rd Strategic Wing, knowing of U.S. flights in that airspace that day; that denial does not prove the objects were anomalous —it may reflect compartmented missions the embassy could not see— but it documents the kind of knowledge gap that feeds Cold War UAP cases. Third, it extends the corpus's geography into the southwestern Pacific with a Western source, showing that institutional UAP reporting is global and that PURSUE is releasing not only its own material but the diplomatic record with which the U.S. observed third countries' concerns. The calibration lesson is the usual one: an official document attests that the report was made and handled, not that the object was inexplicable.",
+  "evidence": [
+    "Cable del Departamento de Estado de EE.UU. (DOS-UAP-D1), embajada en Port Moresby a USCINCPAC, 28 de enero de 1985",
+    "Consulta de la National Intelligence Organization (NIO) de Papúa Nueva Guinea sobre fenómenos aéreos de la noche del 24 ene 1985: objetos veloces con luces, estelas y ruido",
+    "Reporte de un piloto de Air Niugini: radar de a bordo capta tráfico de sur a norte a gran altitud y alta velocidad sobre Angoram (≈4° S, 144° E)",
+    "Avistamientos visuales de estelas: una aeronave de N a S a las ~19:00 local; seis a ocho aeronaves de S a N a las ~22:00 local",
+    "Respuesta de la embajada (tras consulta al 43rd Strategic Wing): sin constancia de vuelos B-52 ni aeronaves de EE.UU. en el espacio aéreo de PNG el 24 ene; información 'muy fragmentaria'"
+  ],
+  "evidence_en": [
+    "U.S. State Department cable (DOS-UAP-D1), Embassy Port Moresby to USCINCPAC, January 28, 1985",
+    "Inquiry by Papua New Guinea's National Intelligence Organization (NIO) about aerial phenomena on the night of Jan 24, 1985: fast-moving objects with lights, contrails and noise",
+    "Air Niugini pilot report: onboard radar detects south-to-north traffic at high altitude and high speed over Angoram (≈4° S, 144° E)",
+    "Visual contrail sightings: one aircraft N to S around 19:00 local; six to eight aircraft S to N around 22:00 local",
+    "Embassy response (after consulting the 43rd Strategic Wing): no record of B-52 overflights or U.S. aircraft in PNG airspace on Jan 24; information 'very sketchy'"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DOS-UAP-D1, cable de Papúa Nueva Guinea (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
+      "note": "Cable diplomático primario."
+    },
+    {
+      "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro DOS-UAP Cable 001)",
+      "url": "https://github.com/abigailhaddad/ufo-releases",
+      "note": "Mirror del índice con descripción y metadatos del cable."
+    }
+  ]
+}
