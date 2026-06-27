@@ -17,9 +17,18 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 40,
-  "summary": "Tres volúmenes (incidentes 1-100, 101-172 y 173-233) de «Incident Summaries» —el visor embebe el volumen 101-172; los volúmenes 1-100 y 173-233, por su tamaño, quedan enlazados en war.gov— de la Fuerza Aérea de EE.UU., desclasificados en la primera entrega PURSUE (8 may 2026). Cada resumen se organiza en torno a una ficha estandarizada —«Check-List: Unidentified Flying Objects»— con datos del avistamiento, y muchos incluyen listas de testigos, declaraciones y reportes narrativos. Son el artefacto burocrático con que la USAF de los Proyectos Sign (1948) y Grudge (1949) tabuló cientos de reportes de discos voladores para evaluarlos sistemáticamente. Caso-documento tier B: su valor es mostrar el método —la maquinaria de registro y triage que precedió a Blue Book— más que un incidente concreto; el grueso se resolvía en globos, astros, aeronaves y misidentificaciones.",
-  "summary_en": "Three volumes (incidents 1-100, 101-172 and 173-233) of U.S. Air Force 'Incident Summaries' —the viewer embeds the 101-172 volume; the 1-100 and 173-233 volumes, due to their size, are linked at war.gov—, declassified in the first PURSUE tranche (May 8, 2026). Each summary is organized around a standardized form —'Check-List: Unidentified Flying Objects'— with sighting data, and many include witness lists, statements and narrative reports. They are the bureaucratic artifact with which the USAF of Projects Sign (1948) and Grudge (1949) tabulated hundreds of flying-disc reports for systematic evaluation. A tier-B document-case: its value is to show the method —the recording-and-triage machinery that preceded Blue Book— more than any single incident; the bulk resolved into balloons, stars, aircraft and misidentifications.",
+  "summary": "Tres volúmenes (incidentes 1-100, 101-172 y 173-233) de «Incident Summaries» —el visor embebe los volúmenes 1-100 y 101-172; el volumen 173-233, por su tamaño, queda enlazado en war.gov— de la Fuerza Aérea de EE.UU., desclasificados en la primera entrega PURSUE (8 may 2026). Cada resumen se organiza en torno a una ficha estandarizada —«Check-List: Unidentified Flying Objects»— con datos del avistamiento, y muchos incluyen listas de testigos, declaraciones y reportes narrativos. Son el artefacto burocrático con que la USAF de los Proyectos Sign (1948) y Grudge (1949) tabuló cientos de reportes de discos voladores para evaluarlos sistemáticamente. Caso-documento tier B: su valor es mostrar el método —la maquinaria de registro y triage que precedió a Blue Book— más que un incidente concreto; el grueso se resolvía en globos, astros, aeronaves y misidentificaciones.",
+  "summary_en": "Three volumes (incidents 1-100, 101-172 and 173-233) of U.S. Air Force 'Incident Summaries' —the viewer embeds the 1-100 and 101-172 volumes; the 173-233 volume, due to its size, is linked at war.gov—, declassified in the first PURSUE tranche (May 8, 2026). Each summary is organized around a standardized form —'Check-List: Unidentified Flying Objects'— with sighting data, and many include witness lists, statements and narrative reports. They are the bureaucratic artifact with which the USAF of Projects Sign (1948) and Grudge (1949) tabulated hundreds of flying-disc reports for systematic evaluation. A tier-B document-case: its value is to show the method —the recording-and-triage machinery that preceded Blue Book— more than any single incident; the bulk resolved into balloons, stars, aircraft and misidentifications.",
   "documents": [
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_1-100.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 1-100 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 1-100 — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf"
+    },
     {
       "src": "/pursue/38_143685_box7_incident_summaries_101-172.pdf",
       "type": "pdf",
@@ -53,11 +62,6 @@
     "Continuity: the standardized form is the direct antecedent of the Blue Book Record Cards and of the administrative category now rebranded 'UAP'"
   ],
   "sources": [
-    {
-      "name": "war.gov/UFO — USAF Incident Summaries 1-100 / 101-172 / 173-233 (PURSUE Release 01)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf",
-      "note": "Volúmenes primarios incorporados al visor."
-    },
     {
       "name": "NARA — USAF UFO project records (Sign / Grudge / Blue Book)",
       "url": "https://www.archives.gov/research/military/air-force/ufos",

@@ -17,8 +17,8 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 68,
-  "summary": "El expediente 62-HQ-83894 es el archivo central del FBI sobre 'discos voladores', abierto en 1947 y nutrido hasta los años setenta con reportes de investigación, testimonios de testigos, recortes de prensa y correspondencia entre el FBI y las Fuerzas Aéreas. PURSUE desclasificó sus serials en el primer release; este expediente incorpora a su visor una muestra del Volumen 1 (la Sección 1 y los Serials 130, 153, 164, 220, 403, 438 y 449 (las Secciones 2-10 y el sub-expediente SUB A, por su tamaño, quedan enlazados en war.gov)), correspondencia investigativa de la ola de 1947. El archivo contiene piezas célebres —como el memo Hottel de 1950 sobre 'tres platillos recuperados', que el corpus trata aparte— pero su masa es trabajo de campo que resolvía la mayoría de los reportes en globos, fraudes y misidentificaciones. Su valor es institucional: documenta cómo el aparato de seguridad estadounidense procesó el pánico de los discos voladores, no que estos fueran anómalos.",
-  "summary_en": "File 62-HQ-83894 is the FBI's central 'flying discs' archive, opened in 1947 and fed through the 1970s with investigative reports, witness testimonies, press clippings and correspondence between the FBI and the Air Forces. PURSUE declassified its serials in the first release; this file embeds in its viewer a sample of Volume 1 (Section 1 and Serials 130, 153, 164, 220, 403, 438 and 449 (Sections 2-10 and subfile SUB A, due to their size, are linked at war.gov)), investigative correspondence from the 1947 wave. The archive contains famous pieces —such as the 1950 Hottel memo on 'three saucers recovered', which the corpus treats separately— but its bulk is fieldwork that resolved most reports into balloons, hoaxes and misidentifications. Its value is institutional: it documents how the U.S. security apparatus processed the flying-disc panic, not that the discs were anomalous.",
+  "summary": "El expediente 62-HQ-83894 es el archivo central del FBI sobre 'discos voladores', abierto en 1947 y nutrido hasta los años setenta con reportes de investigación, testimonios de testigos, recortes de prensa y correspondencia entre el FBI y las Fuerzas Aéreas. PURSUE desclasificó sus serials en el primer release; este expediente incorpora a su visor una muestra del Volumen 1 (las Secciones 1-5, 7 y 9, el sub-expediente SUB A y los Serials 130, 153, 164, 220, 403, 438 y 449 (las Secciones 6, 8 y 10, por su mayor tamaño, quedan enlazadas en war.gov)), correspondencia investigativa de la ola de 1947. El archivo contiene piezas célebres —como el memo Hottel de 1950 sobre 'tres platillos recuperados', que el corpus trata aparte— pero su masa es trabajo de campo que resolvía la mayoría de los reportes en globos, fraudes y misidentificaciones. Su valor es institucional: documenta cómo el aparato de seguridad estadounidense procesó el pánico de los discos voladores, no que estos fueran anómalos.",
+  "summary_en": "File 62-HQ-83894 is the FBI's central 'flying discs' archive, opened in 1947 and fed through the 1970s with investigative reports, witness testimonies, press clippings and correspondence between the FBI and the Air Forces. PURSUE declassified its serials in the first release; this file embeds in its viewer a sample of Volume 1 (Sections 1-5, 7 and 9, subfile SUB A and Serials 130, 153, 164, 220, 403, 438 and 449 (Sections 6, 8 and 10, due to their larger size, are linked at war.gov)), investigative correspondence from the 1947 wave. The archive contains famous pieces —such as the 1950 Hottel memo on 'three saucers recovered', which the corpus treats separately— but its bulk is fieldwork that resolved most reports into balloons, hoaxes and misidentifications. Its value is institutional: it documents how the U.S. security apparatus processed the flying-disc panic, not that the discs were anomalous.",
   "documents": [
     {
       "src": "/pursue/65_hs1-834228961_62-hq-83894_section_1.pdf",
@@ -28,6 +28,60 @@
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_1.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_2.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 2 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 2 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_3.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 3 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 3 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_3.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_4.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 4 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 4 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_5.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 5 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 5 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_5.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_7.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 7 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 7 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_7.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_9.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 9 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 9 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf"
     },
     {
       "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_130.pdf",
@@ -91,6 +145,15 @@
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_449.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_sub_a.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sub-expediente A (SUB A) — material adjunto del expediente FBI",
+      "title_en": "62-HQ-83894 · Subfile A (SUB A) — FBI file attached material",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_sub_a.pdf"
     }
   ],
   "patterns": [
@@ -98,13 +161,13 @@
     "8m"
   ],
   "category": "document",
-  "whatHappened": "El número 62-HQ-83894 identifica el expediente central que el FBI abrió en 1947, en plena ola de avistamientos de 'discos voladores', y que siguió acumulando material hasta los años setenta. No es un caso en el sentido de un único incidente: es un archivo —investigative records, testimonios de testigos, reportes públicos y correspondencia interna— que documenta cómo la principal agencia de investigación criminal de Estados Unidos se relacionó con el fenómeno en su fase fundacional. PURSUE desclasificó sus serials en la primera tanda del 8 de mayo de 2026, y este expediente del corpus incorpora a su visor una muestra del Volumen 1: los la Sección 1 y los Serials 130, 153, 164, 220, 403, 438 y 449 (las Secciones 2-10 y el sub-expediente SUB A, por su tamaño, quedan enlazados en war.gov), correspondencia de la oleada de 1947 que llega a war.gov dentro de los sobres originales del FBI Central Records Center.\n\nEl origen del expediente está en el verano de 1947. Tras el avistamiento de Kenneth Arnold (24 de junio) y la cascada de reportes que lo siguió, las Fuerzas Aéreas del Ejército pidieron ayuda al FBI para investigar la avalancha de 'discos'. J. Edgar Hoover aceptó —con la reticencia, anotada de su puño, de que el Ejército no le ocultara los discos efectivamente recuperados— y durante unos meses agentes del FBI entrevistaron testigos, examinaron supuestos artefactos y reenviaron sus hallazgos. La colaboración fue breve: a fines de 1947 Hoover retiró al FBI de la investigación activa, molesto por la cooperación desigual, pero el expediente siguió recibiendo reportes ciudadanos, recortes y consultas durante décadas. Entre sus piezas más conocidas está el memorándum de Guy Hottel (marzo de 1950, Serial 209) que repetía el rumor de 'tres platillos recuperados en Nuevo México' —el documento del FBI más consultado en línea—, que el propio Bureau subraya como un relato de tercera mano nunca verificado, y que el corpus trata en su propio expediente (`hottel-memo-1950`).\n\nLos serials que aquí se incorporan ilustran la textura del archivo más que un incidente concreto: son sobres del FBI Central Records Center (62-HQ-83894, Vol. 1) con correspondencia investigativa de 1947, del tipo que el Bureau generaba al recibir, cotejar y casi siempre desestimar reportes de discos. Esa es, precisamente, la naturaleza dominante del expediente completo: trabajo de campo que resolvía la inmensa mayoría de los avistamientos en globos meteorológicos, bromas, reflejos, aviones convencionales y confusiones de buena fe. El archivo contiene también material fotográfico (por ejemplo, de la zona de Oak Ridge) y propuestas técnicas sobre posibles sistemas de propulsión, pero su volumen es administrativo e investigativo, no probatorio.\n\nPor eso conviene leer el expediente por lo que es. No es un dossier de evidencia anómala guardado por el FBI, sino el registro de cómo el aparato de seguridad estadounidense de posguerra absorbió, tramitó y mayormente desinfló el pánico de los discos voladores. Los incidentes genuinamente notables que pasaron por sus páginas —Arnold, Maury Island, el memo Hottel— el corpus los analiza en fichas propias; este expediente cumple la función complementaria de hacer visible el contenedor institucional que los alojó y el criterio escéptico con que el FBI los trabajó.",
-  "whatHappened_en": "The number 62-HQ-83894 identifies the central file the FBI opened in 1947, at the height of the 'flying discs' sighting wave, and which kept accreting material through the 1970s. It is not a case in the sense of a single incident: it is an archive —investigative records, witness testimonies, public reports and internal correspondence— documenting how the United States' principal criminal-investigation agency engaged with the phenomenon in its founding phase. PURSUE declassified its serials in the first tranche of May 8, 2026, and this corpus file embeds in its viewer a sample of Volume 1: Section 1 and Serials 130, 153, 164, 220, 403, 438 and 449 (Sections 2-10 and subfile SUB A, due to their size, are linked at war.gov), correspondence from the 1947 wave that reaches war.gov inside the original FBI Central Records Center envelopes.\n\nThe file's origin lies in the summer of 1947. After Kenneth Arnold's sighting (June 24) and the cascade of reports that followed, the Army Air Forces asked the FBI to help investigate the avalanche of 'discs'. J. Edgar Hoover agreed —with the reservation, noted in his own hand, that the Army not withhold from him the discs actually recovered— and for a few months FBI agents interviewed witnesses, examined alleged artifacts and forwarded their findings. The collaboration was brief: by late 1947 Hoover withdrew the FBI from active investigation, annoyed by the uneven cooperation, but the file kept receiving citizen reports, clippings and inquiries for decades. Among its best-known pieces is the Guy Hottel memorandum (March 1950, Serial 209) repeating the rumor of 'three saucers recovered in New Mexico' —the FBI's most-viewed online document—, which the Bureau itself stresses is an unverified third-hand account, and which the corpus treats in its own file (`hottel-memo-1950`).\n\nThe serials embedded here illustrate the archive's texture more than a specific incident: they are FBI Central Records Center envelopes (62-HQ-83894, Vol. 1) with 1947 investigative correspondence, of the kind the Bureau generated as it received, cross-checked and almost always dismissed disc reports. That is precisely the dominant nature of the full file: fieldwork that resolved the vast majority of sightings into weather balloons, hoaxes, reflections, conventional aircraft and good-faith confusions. The archive also contains photographic material (for example, from the Oak Ridge area) and technical proposals on possible propulsion systems, but its volume is administrative and investigative, not probative.\n\nHence the file should be read for what it is. It is not a dossier of anomalous evidence kept by the FBI, but the record of how the postwar U.S. security apparatus absorbed, processed and mostly deflated the flying-disc panic. The genuinely notable incidents that passed through its pages —Arnold, Maury Island, the Hottel memo— the corpus analyzes in their own files; this file performs the complementary function of making visible the institutional container that housed them and the skeptical standard with which the FBI worked them.",
+  "whatHappened": "El número 62-HQ-83894 identifica el expediente central que el FBI abrió en 1947, en plena ola de avistamientos de 'discos voladores', y que siguió acumulando material hasta los años setenta. No es un caso en el sentido de un único incidente: es un archivo —investigative records, testimonios de testigos, reportes públicos y correspondencia interna— que documenta cómo la principal agencia de investigación criminal de Estados Unidos se relacionó con el fenómeno en su fase fundacional. PURSUE desclasificó sus serials en la primera tanda del 8 de mayo de 2026, y este expediente del corpus incorpora a su visor una muestra del Volumen 1: los las Secciones 1-5, 7 y 9, el sub-expediente SUB A y los Serials 130, 153, 164, 220, 403, 438 y 449 (las Secciones 6, 8 y 10, por su mayor tamaño, quedan enlazadas en war.gov), correspondencia de la oleada de 1947 que llega a war.gov dentro de los sobres originales del FBI Central Records Center.\n\nEl origen del expediente está en el verano de 1947. Tras el avistamiento de Kenneth Arnold (24 de junio) y la cascada de reportes que lo siguió, las Fuerzas Aéreas del Ejército pidieron ayuda al FBI para investigar la avalancha de 'discos'. J. Edgar Hoover aceptó —con la reticencia, anotada de su puño, de que el Ejército no le ocultara los discos efectivamente recuperados— y durante unos meses agentes del FBI entrevistaron testigos, examinaron supuestos artefactos y reenviaron sus hallazgos. La colaboración fue breve: a fines de 1947 Hoover retiró al FBI de la investigación activa, molesto por la cooperación desigual, pero el expediente siguió recibiendo reportes ciudadanos, recortes y consultas durante décadas. Entre sus piezas más conocidas está el memorándum de Guy Hottel (marzo de 1950, Serial 209) que repetía el rumor de 'tres platillos recuperados en Nuevo México' —el documento del FBI más consultado en línea—, que el propio Bureau subraya como un relato de tercera mano nunca verificado, y que el corpus trata en su propio expediente (`hottel-memo-1950`).\n\nLos serials que aquí se incorporan ilustran la textura del archivo más que un incidente concreto: son sobres del FBI Central Records Center (62-HQ-83894, Vol. 1) con correspondencia investigativa de 1947, del tipo que el Bureau generaba al recibir, cotejar y casi siempre desestimar reportes de discos. Esa es, precisamente, la naturaleza dominante del expediente completo: trabajo de campo que resolvía la inmensa mayoría de los avistamientos en globos meteorológicos, bromas, reflejos, aviones convencionales y confusiones de buena fe. El archivo contiene también material fotográfico (por ejemplo, de la zona de Oak Ridge) y propuestas técnicas sobre posibles sistemas de propulsión, pero su volumen es administrativo e investigativo, no probatorio.\n\nPor eso conviene leer el expediente por lo que es. No es un dossier de evidencia anómala guardado por el FBI, sino el registro de cómo el aparato de seguridad estadounidense de posguerra absorbió, tramitó y mayormente desinfló el pánico de los discos voladores. Los incidentes genuinamente notables que pasaron por sus páginas —Arnold, Maury Island, el memo Hottel— el corpus los analiza en fichas propias; este expediente cumple la función complementaria de hacer visible el contenedor institucional que los alojó y el criterio escéptico con que el FBI los trabajó.",
+  "whatHappened_en": "The number 62-HQ-83894 identifies the central file the FBI opened in 1947, at the height of the 'flying discs' sighting wave, and which kept accreting material through the 1970s. It is not a case in the sense of a single incident: it is an archive —investigative records, witness testimonies, public reports and internal correspondence— documenting how the United States' principal criminal-investigation agency engaged with the phenomenon in its founding phase. PURSUE declassified its serials in the first tranche of May 8, 2026, and this corpus file embeds in its viewer a sample of Volume 1: Sections 1-5, 7 and 9, subfile SUB A and Serials 130, 153, 164, 220, 403, 438 and 449 (Sections 6, 8 and 10, due to their larger size, are linked at war.gov), correspondence from the 1947 wave that reaches war.gov inside the original FBI Central Records Center envelopes.\n\nThe file's origin lies in the summer of 1947. After Kenneth Arnold's sighting (June 24) and the cascade of reports that followed, the Army Air Forces asked the FBI to help investigate the avalanche of 'discs'. J. Edgar Hoover agreed —with the reservation, noted in his own hand, that the Army not withhold from him the discs actually recovered— and for a few months FBI agents interviewed witnesses, examined alleged artifacts and forwarded their findings. The collaboration was brief: by late 1947 Hoover withdrew the FBI from active investigation, annoyed by the uneven cooperation, but the file kept receiving citizen reports, clippings and inquiries for decades. Among its best-known pieces is the Guy Hottel memorandum (March 1950, Serial 209) repeating the rumor of 'three saucers recovered in New Mexico' —the FBI's most-viewed online document—, which the Bureau itself stresses is an unverified third-hand account, and which the corpus treats in its own file (`hottel-memo-1950`).\n\nThe serials embedded here illustrate the archive's texture more than a specific incident: they are FBI Central Records Center envelopes (62-HQ-83894, Vol. 1) with 1947 investigative correspondence, of the kind the Bureau generated as it received, cross-checked and almost always dismissed disc reports. That is precisely the dominant nature of the full file: fieldwork that resolved the vast majority of sightings into weather balloons, hoaxes, reflections, conventional aircraft and good-faith confusions. The archive also contains photographic material (for example, from the Oak Ridge area) and technical proposals on possible propulsion systems, but its volume is administrative and investigative, not probative.\n\nHence the file should be read for what it is. It is not a dossier of anomalous evidence kept by the FBI, but the record of how the postwar U.S. security apparatus absorbed, processed and mostly deflated the flying-disc panic. The genuinely notable incidents that passed through its pages —Arnold, Maury Island, the Hottel memo— the corpus analyzes in their own files; this file performs the complementary function of making visible the institutional container that housed them and the skeptical standard with which the FBI worked them.",
   "whyMatters": "El valor del expediente 62-HQ-83894 para el corpus es de contexto institucional, no de evidencia. Conviene decirlo sin rodeos: el archivo es, en su grueso, correspondencia investigativa y reportes de campo que el FBI resolvía mayoritariamente como globos, fraudes, reflejos o confusiones de buena fe. No hay en estos serials una pieza concluyente que mueva las narrativas de fondo sobre la naturaleza del fenómeno; por eso entra como caso-documento de tier B, valorado por su solidez como registro primario y no por su contenido probatorio.\n\nDicho esto, su incorporación cumple tres funciones legítimas. Primero, hace visible el contenedor: el corpus ya analiza por separado los incidentes célebres que pasaron por este expediente —Kenneth Arnold, Maury Island, el memo Hottel—, pero hasta ahora no mostraba el archivo que los alojó ni el criterio con que el FBI los trabajó. Tener el expediente como nodo permite enlazar esos casos a su origen documental común. Segundo, ilustra el patrón de procesamiento institucional temprano: la relación FBI-Fuerzas Aéreas en 1947, la breve colaboración y su ruptura por la desconfianza de Hoover sobre los discos 'recuperados', y la deriva del archivo hacia un repositorio pasivo de reportes ciudadanos. Tercero, es un calibrador de escepticismo: el documento del FBI más famoso del archivo —el memo Hottel— es justamente un rumor de tercera mano que el propio Bureau marca como no verificado, un recordatorio permanente de que la presencia de una afirmación extraordinaria en un archivo oficial acredita que la afirmación se registró, no que sea cierta. PURSUE liberó los serials; el corpus los enmarca con esa cautela, evitando el error —común en la literatura OVNI— de tratar el grosor de un expediente del FBI como si fuera el peso de su evidencia.",
   "whyMatters_en": "File 62-HQ-83894's value to the corpus is one of institutional context, not evidence. It should be said plainly: the archive is, in its bulk, investigative correspondence and field reports that the FBI mostly resolved as balloons, hoaxes, reflections or good-faith confusions. There is in these serials no conclusive piece that moves the underlying narratives about the nature of the phenomenon; hence it enters as a tier-B document-case, valued for its solidity as a primary record and not for its probative content.\n\nThat said, its inclusion serves three legitimate functions. First, it makes the container visible: the corpus already analyzes separately the famous incidents that passed through this file —Kenneth Arnold, Maury Island, the Hottel memo—, but until now it did not show the archive that housed them or the standard with which the FBI worked them. Having the file as a node lets those cases be linked to their common documentary origin. Second, it illustrates the pattern of early institutional processing: the FBI–Air Forces relationship in 1947, the brief collaboration and its rupture over Hoover's distrust about the 'recovered' discs, and the file's drift into a passive repository of citizen reports. Third, it is a skepticism calibrator: the archive's most famous FBI document —the Hottel memo— is precisely a third-hand rumor that the Bureau itself flags as unverified, a permanent reminder that the presence of an extraordinary claim in an official archive attests that the claim was recorded, not that it is true. PURSUE released the serials; the corpus frames them with that caution, avoiding the error —common in UFO literature— of treating the thickness of an FBI file as if it were the weight of its evidence.",
   "evidence": [
     "Expediente central del FBI 62-HQ-83894 ('flying discs'), abierto en 1947, con investigative records, testimonios y reportes públicos hasta los años setenta",
-    "Muestra del Volumen 1 incorporada al visor: Sección 1 y Serials 130, 153, 164, 220, 403, 438, 449 (Secciones 2-10 y SUB A enlazados en war.gov) (correspondencia investigativa de 1947), en sobres del FBI Central Records Center",
+    "Muestra del Volumen 1 incorporada al visor: Secciones 1-5, 7, 9 y SUB A más Serials 130-449 en el visor (Secciones 6, 8 y 10 enlazadas en war.gov) (correspondencia investigativa de 1947), en sobres del FBI Central Records Center",
     "Origen: colaboración FBI-Fuerzas Aéreas del Ejército en el verano de 1947 (con la reticencia de J. Edgar Hoover sobre los discos 'recuperados'); retiro del FBI a fines de 1947",
     "Pieza célebre del archivo: memo Hottel (1950, Serial 209) sobre 'tres platillos recuperados' — rumor de tercera mano no verificado (tratado en `hottel-memo-1950`)",
     "Naturaleza dominante del expediente: trabajo de campo que resolvía la mayoría de los reportes en globos, fraudes y misidentificaciones; valor institucional, no probatorio",
@@ -112,7 +175,7 @@
   ],
   "evidence_en": [
     "FBI central file 62-HQ-83894 ('flying discs'), opened in 1947, with investigative records, testimonies and public reports through the 1970s",
-    "Volume 1 sample embedded in the viewer: Section 1 and Serials 130, 153, 164, 220, 403, 438, 449 (Sections 2-10 and SUB A linked at war.gov) (1947 investigative correspondence), in FBI Central Records Center envelopes",
+    "Volume 1 sample embedded in the viewer: Sections 1-5, 7, 9 and SUB A plus Serials 130-449 in the viewer (Sections 6, 8 and 10 linked at war.gov) (1947 investigative correspondence), in FBI Central Records Center envelopes",
     "Origin: FBI–Army Air Forces collaboration in the summer of 1947 (with J. Edgar Hoover's reservation about the 'recovered' discs); FBI withdrawal in late 1947",
     "Famous archive piece: Hottel memo (1950, Serial 209) on 'three saucers recovered' — an unverified third-hand rumor (treated in `hottel-memo-1950`)",
     "Dominant nature of the file: fieldwork resolving most reports into balloons, hoaxes and misidentifications; institutional value, not probative",
@@ -135,49 +198,14 @@
       "note": "Mirror del índice con metadatos de los serials del expediente."
     },
     {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sección 2 (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf",
-      "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sección 3 (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_3.pdf",
-      "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sección 4 (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf",
-      "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sección 5 (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_5.pdf",
-      "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sección 7 (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_7.pdf",
-      "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
       "name": "war.gov/UFO — 62-HQ-83894 · Sección 8 (escaneo completo, >30 MB)",
       "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf",
-      "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sección 9 (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf",
       "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
     },
     {
       "name": "war.gov/UFO — 62-HQ-83894 · Sección 10 (escaneo completo, >30 MB)",
       "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf",
       "note": "Sección del expediente alojada en war.gov por su tamaño (no embebida en el visor)."
-    },
-    {
-      "name": "war.gov/UFO — 62-HQ-83894 · Sub-expediente SUB A (escaneo completo, >30 MB)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_sub_a.pdf",
-      "note": "Sub-expediente alojado en war.gov por su tamaño (no embebido en el visor)."
     },
     {
       "name": "62-HQ-83894 · Sección 6 — sin enlace público en war.gov",
