@@ -18,7 +18,17 @@
   "probability": 75,
   "summary": "Entre 1948 y 1950 se registraron 209 avistamientos de esferas verdes sobre el corredor nuclear Albuquerque–Los Álamos, investigados con patrocinio militar y reconocidos por AARO en el release PURSUE R02: la primera ola documentada sobre infraestructura nuclear estadounidense.",
   "summary_en": "Between 1948 and 1950, 209 sightings of green spheres were logged over the Albuquerque–Los Alamos nuclear corridor, investigated under military sponsorship and acknowledged by AARO in the PURSUE R02 release: the first documented wave over US nuclear infrastructure.",
-  "documents": [],
+  "documents": [
+    {
+      "src": "/pursue/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D017 — correspondencia general de Sandia (green fireballs)",
+      "title_en": "DOW-UAP-D017 — general correspondence of Sandia (green fireballs)",
+      "source": "Department of War (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf"
+    }
+  ],
   "patterns": [
     "8b",
     "8f"
@@ -60,11 +70,6 @@
     {
       "name": "La Paz, L. — 'Green Fireballs of New Mexico' (LANL archive)",
       "note": "Análisis astronómico contemporáneo"
-    },
-    {
-      "name": "war.gov/UFO — DOW-UAP-D017, correspondencia general de Sandia (PURSUE Release 02)",
-      "url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
-      "note": "Documento primario (116 págs). No embebido en el visor: es de Release 02 y war.gov no permite framing de terceros; enlazado al original oficial."
     }
   ],
   "sources_en": [
