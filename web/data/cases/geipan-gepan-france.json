@@ -17,7 +17,7 @@
   "mundanoType": "misid",
   "probability": 45,
   "posterior": {
-    "mundano_natural": 0.50,
+    "mundano_natural": 0.5,
     "humana_clasificada": 0.05,
     "adversaria": 0.05,
     "nohumano_encubierto": 0,
@@ -37,13 +37,15 @@
     "Creación del GEPAN por el CNES en 1977 (dirección de Claude Poher); renombrado SEPRA (1988) y GEIPAN (2005)",
     "Sistema de clasificación PAN A–D; ~3% queda como PAN D (no identificado con datos de buena calidad)",
     "Único organismo en una agencia espacial nacional dedicado al fenómeno de forma pública y continua (~50 años)",
-    "Publicación en línea de expedientes desde 2007; investigación de referencia: Trans-en-Provence (1981)"
+    "Publicación en línea de expedientes desde 2007; investigación de referencia: Trans-en-Provence (1981)",
+    "Investiga junto a la Gendarmerie Nationale, Météo-France y la aviación civil (clasificación PAN A–D)"
   ],
   "evidence_en": [
     "Creation of GEPAN by CNES in 1977 (directed by Claude Poher); renamed SEPRA (1988) and GEIPAN (2005)",
     "PAN A–D classification system; ~3% remains PAN D (unidentified with good-quality data)",
     "Only body within a national space agency dedicated to the phenomenon publicly and continuously (~50 years)",
-    "Online publication of files since 2007; reference investigation: Trans-en-Provence (1981)"
+    "Online publication of files since 2007; reference investigation: Trans-en-Provence (1981)",
+    "Investigates alongside the Gendarmerie Nationale, Météo-France and civil aviation (PAN A–D classification)"
   ],
   "sources": [
     {

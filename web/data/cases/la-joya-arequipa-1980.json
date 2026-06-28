@@ -42,7 +42,8 @@
     "Cientos de testigos del personal de la Base Aérea de La Joya (Arequipa)",
     "Descripción del objeto: ~10 m, cúpula superior color crema tipo bombilla cortada sobre base circular plateada",
     "Sospecha institucional inicial de globo de vigilancia extranjero — descartada por el comportamiento observado",
-    "Sin registro instrumental sobreviviente conocido (sin película de cámara de disparo ni trazas de radar publicadas)"
+    "Sin registro instrumental sobreviviente conocido (sin película de cámara de disparo ni trazas de radar publicadas)",
+    "Debrief inicial por el Servicio de Inteligencia de la FAP (1980)"
   ],
   "evidence_en": [
     "Decades-long sustained testimony of FAP lieutenant Óscar Santa María Huertas, the intercepting pilot",
@@ -52,7 +53,8 @@
     "Hundreds of witnesses among La Joya Air Base (Arequipa) personnel",
     "Object description: ~10 m, cream-colored upper dome like a cut light bulb over a silver circular base",
     "Initial institutional suspicion of a foreign surveillance balloon — ruled out by the observed behavior",
-    "No known surviving instrumental record (no gun-camera film or published radar tracks)"
+    "No known surviving instrumental record (no gun-camera film or published radar tracks)",
+    "Initial debrief by the FAP Intelligence Service (1980)"
   ],
   "sources": [
     {
@@ -64,6 +66,10 @@
       "name": "Inexplicata (Journal of Hispanic Ufology) — 'Peru: La Joya AFB, The Perfect UFO Case (1980)'",
       "url": "https://inexplicata.blogspot.com/2016/11/peru-la-joya-afb-perfect-ufo-case-1980.html",
       "note": "Análisis del caso en la ufología hispana."
+    },
+    {
+      "name": "Haines, R. F. & Vallée, J. — \"Aerial Phenomena: Pilot Reports\" (Journal of Scientific Exploration)",
+      "note": "Análisis científico del caso La Joya / Santa María (procedente del archivo NARCAP)."
     }
   ]
 }
