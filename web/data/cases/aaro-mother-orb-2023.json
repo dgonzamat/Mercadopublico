@@ -8,8 +8,8 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 39.0,
-    "lng": -116.0,
+    "lat": 39,
+    "lng": -116,
     "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
     "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
   },
@@ -28,6 +28,159 @@
       "source": "Department of War · AARO (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/western_us_event_slides_5.08.2026.pdf"
+    },
+    {
+      "src": "/pursue/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D077 — AARO · actualización de análisis de caso no resuelto, Western US Event",
+      "title_en": "DOW-UAP-D077 — AARO · unresolved case analysis update, Western US Event",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf"
+    },
+    {
+      "src": "/pursue/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D078 — mapa nocional del evento, Western US Event",
+      "title_en": "DOW-UAP-D078 — notional map, Western US Event",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf"
+    },
+    {
+      "src": "/pursue/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D079 — narrativa de testigo 1, Western US Event (2023)",
+      "title_en": "DOW-UAP-D079 — witness narrative 1, Western US Event (2023)",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf"
+    },
+    {
+      "src": "/pursue/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D080 — narrativa de testigo 2, Western US Event (2023)",
+      "title_en": "DOW-UAP-D080 — witness narrative 2, Western US Event (2023)",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf"
+    },
+    {
+      "src": "/pursue/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D081 — narrativa de testigo 3, Western US Event (2023)",
+      "title_en": "DOW-UAP-D081 — witness narrative 3, Western US Event (2023)",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf"
+    },
+    {
+      "src": "/pursue/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D082 — narrativa de testigo 4, Western US Event (2023)",
+      "title_en": "DOW-UAP-D082 — witness narrative 4, Western US Event (2023)",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf"
+    },
+    {
+      "src": "/pursue/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D083 — narrativa de testigo 5, Western US Event (2023)",
+      "title_en": "DOW-UAP-D083 — witness narrative 5, Western US Event (2023)",
+      "source": "Department of War · AARO (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D014 — representación digital, incidente 1-1, Western US Event",
+      "title_en": "FBI-UAP-D014 — digital rendering, incident 1-1, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D015_Digital-Rendering_Incident-1-2_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D015 — representación digital, incidente 1-2, Western US Event",
+      "title_en": "FBI-UAP-D015 — digital rendering, incident 1-2, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D015_Digital-Rendering_Incident-1-2_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D016 — representación digital, incidente 2-1, Western US Event",
+      "title_en": "FBI-UAP-D016 — digital rendering, incident 2-1, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D017 — representación digital, incidente 2-2, Western US Event",
+      "title_en": "FBI-UAP-D017 — digital rendering, incident 2-2, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D018 — representación digital, incidente 2-3, Western US Event",
+      "title_en": "FBI-UAP-D018 — digital rendering, incident 2-3, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D019 — representación digital, incidente 2-4, Western US Event",
+      "title_en": "FBI-UAP-D019 — digital rendering, incident 2-4, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D020 — representación digital, incidente 2-5, Western US Event",
+      "title_en": "FBI-UAP-D020 — digital rendering, incident 2-5, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D021 — representación digital, incidente 1-3, Western US Event",
+      "title_en": "FBI-UAP-D021 — digital rendering, incident 1-3, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D022 — representación digital, incidente 2-6, Western US Event",
+      "title_en": "FBI-UAP-D022 — digital rendering, incident 2-6, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D023 — representación digital, incidente 2-7, Western US Event",
+      "title_en": "FBI-UAP-D023 — digital rendering, incident 2-7, Western US Event",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg"
     }
   ],
   "patterns": [
