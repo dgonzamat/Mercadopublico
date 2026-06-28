@@ -38,6 +38,15 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/usper-statement-redacted.pdf"
     },
     {
+      "src": "/pursue/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
+      "type": "pdf",
+      "title": "ODNI-UAP-D001 — narrativa en primera persona del mismo oficial (PURSUE R02)",
+      "title_en": "ODNI-UAP-D001 — first-hand narrative by the same official (PURSUE R02)",
+      "source": "ODNI (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf"
+    },
+    {
       "src": "/pursue/fbi-photo-b1.png",
       "type": "image",
       "title": "Foto FBI B001 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -294,11 +303,6 @@
       "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro USPER + ODNI-UAP-D001)",
       "url": "https://github.com/abigailhaddad/ufo-releases",
       "note": "Mirror del índice oficial con descripción y metadatos de ambos documentos."
-    },
-    {
-      "name": "war.gov/UFO — ODNI-UAP-D001, narrativa USPER en primera persona (PURSUE Release 02)",
-      "url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
-      "note": "Narrativa complementaria del mismo oficial (2 págs). No embebida en el visor: es de Release 02 y war.gov no permite framing de terceros; enlazada al original oficial."
     }
   ]
 }
