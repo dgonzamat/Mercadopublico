@@ -11,6 +11,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { EpistemicBadge } from "@/components/Badge";
+import PdfDoc from "@/components/PdfDoc";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { breadcrumbJsonLd, caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 
@@ -285,7 +286,9 @@ export default async function CaseDetailPage(
       {/* ────────── ZONE A3 — VISOR DE DOCUMENTOS PRIMARIOS ────────── */}
       {/* Documentos auto-hospedados (PDF/imagen) embebidos inline. Same-origin
           porque war.gov bloquea el framing/fetch de terceros; fallbackUrl deja
-          siempre el original oficial accesible. Server component: zero JS. */}
+          siempre el original oficial accesible. Los PDF se renderizan con un
+          visor cliente (PdfDoc → react-pdf, dynamic ssr:false) que funciona
+          también en móvil; las imágenes siguen como <img> server. */}
       {c.documents && c.documents.length > 0 && (
         <section className="space-y-6">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
@@ -297,12 +300,7 @@ export default async function CaseDetailPage(
           {c.documents.map((doc, i) => (
             <figure key={i} className="space-y-2">
               {doc.type === "pdf" ? (
-                <iframe
-                  src={doc.src}
-                  title={doc.title}
-                  loading="lazy"
-                  className="h-[80vh] min-h-[480px] w-full border border-text/15 bg-surface-2"
-                />
+                <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} />
               ) : (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
