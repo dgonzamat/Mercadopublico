@@ -19,7 +19,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   // A — científicos
   "wang-sichao": ["china-spiral-1981"],
   ziegel: ["setka-ussr-1978"],
-  vallee: ["pampa-joya-1980", "valdes-1977", "voronezh-1989"],
+  vallee: ["la-joya-arequipa-1980", "valdes-1977", "voronezh-1989"],
   hynek: ["socorro-1964", "valensole-1965", "hudson-valley-1983"],
   mcdonald: ["levelland-1957", "rb47-1957", "washington-dc-1952", "lakenheath-bentwaters-1956"],
   friedman: ["falcon-lake-1967", "varginha-1996", "roswell-1947"],
@@ -84,7 +84,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   mellon: ["wilson-davis-2002"],
   fravor: ["nimitz-2004", "grusch-testimony-2023"],
   dietrich: ["nimitz-2004"],
-  "santa-maria": ["pampa-joya-1980"],
+  "santa-maria": ["la-joya-arequipa-1980"],
   choy: ["chulucanas-2001", "oifaa-difaa-peru", "lima-difaa-2019"],
   pope: ["rendlesham-1980", "cosford-1993"],
   graves: ["roosevelt-2014", "nimitz-2004", "grusch-testimony-2023"],
