@@ -1,0 +1,105 @@
+{
+  "id": "dow-early-disc-studies-1948-1953",
+  "num": 296,
+  "name": "Estudios militares tempranos de discos voladores (1948-1953, PURSUE)",
+  "name_en": "Early military flying-disc studies (1948-1953, PURSUE)",
+  "year_start": 1948,
+  "year_end": 1953,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.9,
+    "lng": -77.0,
+    "place": "EE.UU. — Marina (Quinto Distrito Naval), Ejército (Army Field Forces), USAF y panel científico de la CIA",
+    "place_en": "USA — Navy (Fifth Naval District), Army (Army Field Forces), USAF and CIA scientific panel"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 35,
+  "summary": "Cinco documentos desclasificados en PURSUE Release 03 (12 jun 2026) que retratan los años fundacionales del estudio militar de los 'discos voladores' en EE.UU. (1948-1953): un 'Report of Flying Discs' de la Marina (Quinto Distrito Naval, Norfolk, dic 1948), un 'Flying Saucer Study' del Ejército (Army Field Forces, 1949), la 'Analysis of Flying Objects in the United States' de la USAF en formato 'Check-List UFO' (objetos 1-172, era Sign/Grudge) y la transmisión interna de 1953 del informe del panel científico de la CIA —el Panel Robertson—, que orientó la política oficial hacia el 'debunking' público. Su valor es institucional e histórico: documentan cómo el aparato de seguridad de posguerra estudió y luego encuadró el fenómeno, no que los objetos fueran anómalos.",
+  "summary_en": "Five documents declassified in PURSUE Release 03 (June 12, 2026) portraying the founding years of the U.S. military study of 'flying discs' (1948-1953): a Navy Report of Flying Discs (Fifth Naval District, Norfolk, Dec 1948), an Army Flying Saucer Study (Army Field Forces, 1949), the USAF 'Analysis of Flying Objects in the United States' in 'Check-List UFO' format (objects 1-172, the Sign/Grudge era), and the 1953 internal transmission of the CIA scientific panel report —the Robertson Panel—, which steered official policy toward public 'debunking'. Its value is institutional and historical: it documents how the postwar security apparatus studied and then framed the phenomenon, not that the objects were anomalous.",
+  "documents": [
+    {
+      "src": "/pursue/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D086 — Report of Flying Discs, Marina de EE.UU. (Quinto Distrito Naval, dic 1948)",
+      "title_en": "DOW-UAP-D086 — U.S. Navy Report of Flying Discs (Fifth Naval District, Dec 1948)",
+      "source": "Department of War / U.S. Navy (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf"
+    },
+    {
+      "src": "/pursue/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D084 — Flying Saucer Study, Ejército de EE.UU. (Army Field Forces, 1949)",
+      "title_en": "DOW-UAP-D084 — U.S. Army Flying Saucer Study (Army Field Forces, 1949)",
+      "source": "Department of War / U.S. Army (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf"
+    },
+    {
+      "src": "/pursue/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D087 — Analysis of Flying Objects in the US, objetos 1-100 (Check-List UFO, USAF)",
+      "title_en": "DOW-UAP-D087 — Analysis of Flying Objects in the US, objects 1-100 (Check-List UFO, USAF)",
+      "source": "Department of War / USAF (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf"
+    },
+    {
+      "src": "/pursue/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D088 — Analysis of Flying Objects in the US, objetos 101-172 (Check-List UFO, USAF)",
+      "title_en": "DOW-UAP-D088 — Analysis of Flying Objects in the US, objects 101-172 (Check-List UFO, USAF)",
+      "source": "Department of War / USAF (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf"
+    },
+    {
+      "src": "/pursue/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D085 — transmisión del informe del panel científico de la CIA (Panel Robertson, 1953)",
+      "title_en": "DOW-UAP-D085 — transmission of the CIA scientific advisory panel report (Robertson Panel, 1953)",
+      "source": "Department of War / CIA (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf"
+    }
+  ],
+  "patterns": [
+    "8m"
+  ],
+  "category": "document",
+  "whatHappened": "Cinco documentos desclasificados en la tercera entrega de PURSUE (Release 03, 12 de junio de 2026) retratan, juntos, los años fundacionales del estudio militar estadounidense de los 'discos voladores': el arco que va de 1948 —cuando las distintas ramas tomaron el fenómeno lo bastante en serio como para estudiarlo formalmente— a 1953, cuando la política oficial viró hacia el escepticismo activo.\n\nEl punto de partida es la cautela operativa. El Report of Flying Discs de la Marina (DOW-UAP-D086) es correspondencia del Quinto Distrito Naval, en Norfolk (Virginia), fechada el 13 de diciembre de 1948 y clasificada en su día como Confidential/Secret: muestra a la Marina recogiendo y tramitando reportes de discos como un asunto de inteligencia, no de curiosidad. En paralelo, el Flying Saucer Study del Ejército (DOW-UAP-D084, Army Field Forces, 1949) documenta el esfuerzo análogo del Army por evaluar la oleada.\n\nEl núcleo cuantitativo son los dos volúmenes de la 'Analysis of Flying Objects in the United States' de la Fuerza Aérea (DOW-UAP-D087 y D088), que recogen objeto por objeto, en el formato de fichas 'Check-List UFO', los incidentes numerados del 1 al 172. Es el trabajo de campo de la era de los Proyectos Sign y Grudge: cada ficha consigna testigo, hora, descripción y la evaluación del analista (mayormente globos, aviones, fenómenos astronómicos y meteorológicos, con un residuo sin explicar). Estos volúmenes son la contraparte analítica de los 'Incident Summaries' que el corpus ya incorpora desde NARA (ver `usaf-incident-summaries-1947-1950` y `usaf-amc-early-disc-records-1946-1950`); aquí llegan en su re-publicación oficial dentro de PURSUE.\n\nLa pieza que cierra y reencuadra el conjunto es la transmisión interna, de marzo de 1953, del informe del panel científico de la CIA (DOW-UAP-D085): el llamado Panel Robertson. Convocado por la CIA en enero de 1953 y presidido por el físico H. P. Robertson, el panel revisó los mejores casos disponibles y concluyó que los OVNIs no representaban una amenaza física directa, pero sí un riesgo para la seguridad nacional por vía indirecta: el volumen de reportes podía saturar los canales de inteligencia y ser explotado para inducir histeria. Su recomendación fue una política de 'desmitificación' (debunking) pública y educación para reducir el interés ciudadano. Esa transmisión dentro del Departamento muestra cómo la recomendación del panel se difundió en el aparato oficial.\n\nLa lectura calibrada es directa: ninguno de los cinco documentos prueba un origen anómalo. Su valor es de procedencia y de historia institucional —son el registro primario de cómo el gobierno de posguerra estudió, catalogó y finalmente decidió encuadrar el fenómeno de los discos, sentando el molde escéptico-administrativo que dominaría la política UAP estadounidense durante décadas.",
+  "whatHappened_en": "Five documents declassified in PURSUE's third tranche (Release 03, June 12, 2026) together portray the founding years of the U.S. military study of 'flying discs': the arc running from 1948 —when the various branches took the phenomenon seriously enough to study it formally— to 1953, when official policy turned toward active skepticism.\n\nThe starting point is operational caution. The Navy's Report of Flying Discs (DOW-UAP-D086) is correspondence from the Fifth Naval District, in Norfolk (Virginia), dated December 13, 1948 and classified at the time as Confidential/Secret: it shows the Navy collecting and processing disc reports as an intelligence matter, not a curiosity. In parallel, the Army's Flying Saucer Study (DOW-UAP-D084, Army Field Forces, 1949) documents the Army's analogous effort to assess the wave.\n\nThe quantitative core is the two volumes of the Air Force's 'Analysis of Flying Objects in the United States' (DOW-UAP-D087 and D088), which record object by object, in the 'Check-List UFO' card format, the numbered incidents from 1 to 172. It is the fieldwork of the Project Sign and Grudge era: each card logs witness, time, description and the analyst's assessment (mostly balloons, aircraft, astronomical and weather phenomena, with an unexplained residue). These volumes are the analytical counterpart of the 'Incident Summaries' the corpus already incorporates from NARA (see `usaf-incident-summaries-1947-1950` and `usaf-amc-early-disc-records-1946-1950`); here they arrive in their official PURSUE re-release.\n\nThe piece that closes and reframes the set is the March 1953 internal transmission of the CIA scientific panel report (DOW-UAP-D085): the so-called Robertson Panel. Convened by the CIA in January 1953 and chaired by physicist H. P. Robertson, the panel reviewed the best available cases and concluded that UFOs posed no direct physical threat, but did pose an indirect national-security risk: the volume of reports could clog intelligence channels and be exploited to induce hysteria. Its recommendation was a policy of public 'debunking' and education to reduce civilian interest. That transmission within the Department shows how the panel's recommendation propagated through the official apparatus.\n\nThe calibrated reading is straightforward: none of the five documents proves an anomalous origin. Their value is provenance and institutional history —they are the primary record of how the postwar government studied, cataloged and ultimately decided to frame the disc phenomenon, setting the skeptical-administrative mold that would dominate U.S. UAP policy for decades.",
+  "whyMatters": "El conjunto importa como cimiento documental del corpus, no como evidencia fenoménica. Reúne, con fuentes primarias, las tres cosas que suelen afirmarse sobre los primeros años y rara vez se citan: que la Marina y el Ejército —no solo la Fuerza Aérea— estudiaron los discos; que la USAF los catalogó caso por caso en fichas 'Check-List' resolviendo la mayoría en causas prosaicas; y que, en 1953, el Panel Robertson de la CIA fijó la política de 'debunking' que encuadraría la postura oficial durante una generación.\n\nSu lección es la del molde institucional. El Panel Robertson es la pieza clave: no negó que hubiera reportes reales, sino que decidió tratarlos como un problema de gestión de la opinión y de saturación de canales de inteligencia, recomendando minimizarlos públicamente. Entender ese documento explica buena parte del escepticismo oficial posterior y de la desconfianza ciudadana que generó. El corpus incorpora los cinco como registro primario, enlazado a los casos hermanos de incident summaries de NARA, y enmarcado con la cautela debida: son la historia de cómo se procesó el fenómeno, no una prueba de su naturaleza.",
+  "whyMatters_en": "The set matters as a documentary foundation for the corpus, not as phenomenal evidence. It gathers, with primary sources, the three things often asserted about the early years and seldom cited: that the Navy and the Army —not only the Air Force— studied the discs; that the USAF cataloged them case by case in 'Check-List' cards, resolving most into prosaic causes; and that, in 1953, the CIA's Robertson Panel set the 'debunking' policy that would frame the official posture for a generation.\n\nIts lesson is that of the institutional mold. The Robertson Panel is the key piece: it did not deny there were real reports, but decided to treat them as a problem of opinion management and intelligence-channel saturation, recommending they be publicly minimized. Understanding that document explains much of the later official skepticism and the public distrust it generated. The corpus incorporates all five as a primary record, linked to the sibling NARA incident-summary cases, and framed with due caution: they are the history of how the phenomenon was processed, not proof of its nature.",
+  "evidence": [
+    "DOW-UAP-D086 — Report of Flying Discs de la Marina (Quinto Distrito Naval, Norfolk, 13 dic 1948), originalmente Confidential/Secret",
+    "DOW-UAP-D084 — Flying Saucer Study del Ejército (Army Field Forces, 1949)",
+    "DOW-UAP-D087 y D088 — 'Analysis of Flying Objects in the United States' de la USAF, fichas 'Check-List UFO' (objetos 1-172, era Sign/Grudge)",
+    "DOW-UAP-D085 — transmisión interna (mar 1953) del informe del Panel Robertson de la CIA: política de 'debunking' público",
+    "Contraparte de los 'Incident Summaries' de NARA ya en el corpus (usaf-incident-summaries-1947-1950, usaf-amc-early-disc-records-1946-1950)",
+    "Desclasificados en PURSUE Release 03 (war.gov/UFO, 12 jun 2026); D087/D088 recomprimidos para el visor, páginas intactas"
+  ],
+  "evidence_en": [
+    "DOW-UAP-D086 — U.S. Navy Report of Flying Discs (Fifth Naval District, Norfolk, Dec 13, 1948), originally Confidential/Secret",
+    "DOW-UAP-D084 — U.S. Army Flying Saucer Study (Army Field Forces, 1949)",
+    "DOW-UAP-D087 and D088 — USAF 'Analysis of Flying Objects in the United States', 'Check-List UFO' cards (objects 1-172, Sign/Grudge era)",
+    "DOW-UAP-D085 — internal transmission (Mar 1953) of the CIA Robertson Panel report: public 'debunking' policy",
+    "Counterpart of the NARA 'Incident Summaries' already in the corpus (usaf-incident-summaries-1947-1950, usaf-amc-early-disc-records-1946-1950)",
+    "Declassified in PURSUE Release 03 (war.gov/UFO, June 12, 2026); D087/D088 recompressed for the viewer, pages intact"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DoW/Navy/Army/USAF/CIA, estudios tempranos de discos (DOW-UAP-D084 a D088, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
+      "note": "Los cinco documentos están embebidos en el visor de este caso."
+    },
+    {
+      "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal del Departamento de Guerra."
+    }
+  ]
+}
