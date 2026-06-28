@@ -1,0 +1,223 @@
+{
+  "id": "cia-historical-uap-archive",
+  "num": 298,
+  "name": "CIA · archivo histórico UAP (Panel Robertson, U-2, Blue Book SR-14, inteligencia exterior) — PURSUE",
+  "name_en": "CIA · historical UAP archive (Robertson Panel, U-2, Blue Book SR-14, foreign intelligence) — PURSUE",
+  "year_start": 1949,
+  "year_end": 2008,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.951,
+    "lng": -77.146,
+    "place": "Central Intelligence Agency (Langley) — análisis de UFOs y recolección de inteligencia exterior",
+    "place_en": "Central Intelligence Agency (Langley) — UFO analysis and foreign-intelligence collection"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 32,
+  "patterns": [
+    "8m",
+    "8s"
+  ],
+  "category": "document",
+  "summary": "Dieciocho documentos de la CIA desclasificados en PURSUE Release 03 (12 jun 2026) que retratan el doble papel de la Agencia frente a los OVNIs: orientar la política de EE.UU. y recolectar inteligencia exterior. Incluye el Scientific Advisory Panel (Panel Robertson, 1952-53), el Project Blue Book Special Report No. 14 (análisis estadístico de Battelle), el informe sobre los programas U-2 y OXCART (1954-1974) —que reconoce que muchos reportes OVNI de la época eran vuelos de espionaje propios—, el 'estado actual del proyecto OVNI' y el caso de Leon Davidson; más una amplia colección de inteligencia sobre avistamientos en el bloque soviético y el extranjero (Budapest, científicos soviéticos, Sary Shagan, Ladakh/Himalaya, actividad británica y australiana) y un caso moderno en Harare (2008). Su valor es de procedencia: documentan cómo la CIA gestionó y vigiló el fenómeno como asunto de contrainteligencia, no que los objetos fueran anómalos.",
+  "summary_en": "Eighteen CIA documents declassified in PURSUE Release 03 (June 12, 2026) portraying the Agency's dual role toward UFOs: steering U.S. policy and collecting foreign intelligence. It includes the Scientific Advisory Panel (Robertson Panel, 1952-53), Project Blue Book Special Report No. 14 (Battelle's statistical analysis), the report on the U-2 and OXCART programs (1954-1974) —which acknowledges that many UFO reports of the era were the CIA's own spy flights—, the 'current status of the UFO project', and the Leon Davidson case; plus a broad collection of intelligence on sightings in the Soviet bloc and abroad (Budapest, Soviet scientists, Sary Shagan, Ladakh/Himalaya, British and Australian activity) and a modern Harare case (2008). Its value is provenance: it documents how the CIA managed and monitored the phenomenon as a counterintelligence matter, not that the objects were anomalous.",
+  "documents": [
+    {
+      "src": "/pursue/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-002 — Scientific Advisory Panel on UFOs (Panel Robertson), 1952-53",
+      "title_en": "CIA-UAP-002 — Scientific Advisory Panel on UFOs (Robertson Panel), 1952-53",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-003-THE_CENTRAL_INTELLIGENCE_AGENCY_AND_OVERHEAD_RECONNAISSANCE-THE_U-2_AND_OXCART_PROGRAMS_1954-1974.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-003 — la CIA y el reconocimiento aéreo: programas U-2 y OXCART (1954-1974)",
+      "title_en": "CIA-UAP-003 — the CIA and overhead reconnaissance: U-2 and OXCART (1954-1974)",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-003-THE_CENTRAL_INTELLIGENCE_AGENCY_AND_OVERHEAD_RECONNAISSANCE-THE_U-2_AND_OXCART_PROGRAMS_1954-1974.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-007 — estado actual del proyecto OVNI (UFO)",
+      "title_en": "CIA-UAP-007 — current status of the UFO project",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-015 — Project Blue Book Special Report No. 14 (análisis estadístico)",
+      "title_en": "CIA-UAP-015 — Project Blue Book Special Report No. 14 (statistical analysis)",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-004-CASE_17708_CLOSED_AND_DR_LEON_DAVIDSON.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-004 — Case 17708 (cerrado) y el Dr. Leon Davidson",
+      "title_en": "CIA-UAP-004 — Case 17708 (closed) and Dr. Leon Davidson",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-004-CASE_17708_CLOSED_AND_DR_LEON_DAVIDSON.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-012-Combatting_Fatigue_in_Crewmembers.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-012 — combatir la fatiga en tripulaciones",
+      "title_en": "CIA-UAP-012 — combatting fatigue in crewmembers",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-012-Combatting_Fatigue_in_Crewmembers.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-005-GERMAN_SCIENTISTS_ARTICLE_ON_FLYING_DISCS.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-005 — artículo de un científico alemán sobre 'discos voladores'",
+      "title_en": "CIA-UAP-005 — German scientist's article on 'flying discs'",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-005-GERMAN_SCIENTISTS_%20ARTICLE_ON_FLYING_DISCS.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-006 — avistamiento de aeronave no convencional",
+      "title_en": "CIA-UAP-006 — sighting of unconventional aircraft",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-008_SPECULATIVE_PAPER_BY_N_KARDASHEV_AND_A_SAKHAROV.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-008 — paper especulativo de Kardashev y Sájarov sobre masa cargada en el espacio",
+      "title_en": "CIA-UAP-008 — speculative paper by Kardashev and Sakharov on charged mass in space",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-008_SPECULATIVE_PAPER_BY_N_KARDASHEV_AND_A_SAKHAROV.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-009-UNKNOWN-FLYING_OBJECTS_OBERVED_OVER_BUDAPEST.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-009 — objetos voladores desconocidos sobre Budapest",
+      "title_en": "CIA-UAP-009 — unknown flying objects observed over Budapest",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-009-UNKNOWN-FLYING_OBJECTS_OBERVED_OVER_BUDAPEST.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-010_REPORT_ON_CONVERSATIONS_WITH_SOVIET_SCIENTISTS_ON_SUBJECT_OF_UNIDENTIFIED_FLYING_OBJECTS_IS_THE_USSR.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-010 — conversaciones con científicos soviéticos sobre OVNIs",
+      "title_en": "CIA-UAP-010 — conversations with Soviet scientists on UFOs",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-010_REPORT_ON_CONVERSATIONS_WITH_SOVIET_SCIENTISTS_ON_SUBJECT_OF_UNIDENTIFIED_FLYING_OBJECTS_IS_THE_USSR.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-011 — el campo de pruebas de armas de Sary Shagan",
+      "title_en": "CIA-UAP-011 — the Sary Shagan weapons testing range",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-013-Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-013 — reporte de avistamientos inusuales y actividad científica asociada",
+      "title_en": "CIA-UAP-013 — report of unusual flying object sightings and attendant scientific activity",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-013-Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-014 — actividad británica en el campo de los OVNIs",
+      "title_en": "CIA-UAP-014 — British activity in the field of UFOs",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-016 — avistamientos de OVNIs en Ladakh, Nepal, Sikkim y Bután",
+      "title_en": "CIA-UAP-016 — UFO sightings in Ladakh, Nepal, Sikkim and Bhutan",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-018_Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-018 — reporte de avistamientos inusuales y actividad científica asociada",
+      "title_en": "CIA-UAP-018 — report of unusual flying object sightings and attendant scientific activity",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-018_Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-019 — aspectos científicos y de inteligencia del problema OVNI (Dept. de Defensa australiano)",
+      "title_en": "CIA-UAP-019 — scientific and intelligence aspects of the UFO problem (Australian DoD)",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-017 — alerta alta por postura agresiva extranjera percibida (Harare, 2008)",
+      "title_en": "CIA-UAP-017 — high alert due to perceived aggressive foreign posturing (Harare, 2008)",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf"
+    }
+  ],
+  "whatHappened": "PURSUE liberó, en su tercera entrega (Release 03, 12 de junio de 2026), dieciocho documentos de la CIA que, juntos, retratan el doble papel histórico de la Agencia frente a los 'objetos voladores no identificados': por un lado, orientar la política interna de Estados Unidos; por otro, recolectar inteligencia sobre cómo el fenómeno se manifestaba —y se trataba— en el extranjero.\n\nEl primer eje es el de la política y el análisis. El documento del Scientific Advisory Panel (CIA-UAP-002) es la fuente del célebre Panel Robertson de enero de 1953, el comité de científicos convocado por la CIA que revisó los mejores casos y recomendó una política de 'desmitificación' pública para reducir el volumen de reportes (el corpus trata su transmisión al Departamento de Guerra en `dow-early-disc-studies-1948-1953`). El Project Blue Book Special Report No. 14 (CIA-UAP-015) es el gran análisis estadístico que el Battelle Memorial Institute preparó para la Fuerza Aérea, clasificando cientos de casos y midiendo qué fracción quedaba sin explicar (el corpus lo analiza en `battelle-special-report-1952`). El 'Current Status of the UFO Project' (CIA-UAP-007) y el expediente de Leon Davidson (CIA-UAP-004), el químico que acusó a la propia CIA de estar detrás de los OVNIs, completan el retrato de la gestión interna.\n\nLa pieza más reveladora de este eje es CIA-UAP-003, la historia oficial de los programas U-2 y OXCART (1954-1974): reconoce que un porcentaje alto de los reportes OVNI de los años cincuenta y sesenta correspondía, en realidad, a los propios aviones espía de la CIA volando a altitudes entonces inéditas, cuyo fuselaje plateado reflejaba el sol del atardecer. Es la confirmación documental de que parte sustancial del 'misterio' de esa era tenía una causa terrestre y clasificada.\n\nEl segundo eje es la inteligencia exterior. Una colección de informes muestra a la CIA siguiendo el fenómeno como indicador de la Guerra Fría: conversaciones con científicos soviéticos (CIA-UAP-010), objetos sobre Budapest (009), el paper especulativo de Kardashev y Sájarov (008), el campo de pruebas de armas de Sary Shagan (011, que enlaza con `sary-shagan-1973`), avistamientos en Ladakh, Nepal, Sikkim y Bután (016), la actividad británica (014) y los aspectos científicos y de inteligencia del problema según el Departamento de Defensa australiano (019). El interés no era ontológico sino de contrainteligencia: qué veían y cómo reaccionaban otros Estados. Un documento moderno, CIA-UAP-017 (Harare, 2008), sobre una alerta por 'postura agresiva extranjera percibida', extiende el patrón hasta el siglo XXI.\n\nLa lectura calibrada es directa: ninguno de los dieciocho prueba un origen anómalo. Tomados en conjunto, son el registro primario de cómo la principal agencia de inteligencia de EE.UU. estudió, encuadró y vigiló el fenómeno —con el dato sobresaliente de que ella misma, vía U-2 y OXCART, generó buena parte de los reportes que luego analizaba.",
+  "whatHappened_en": "PURSUE released, in its third tranche (Release 03, June 12, 2026), eighteen CIA documents that together portray the Agency's historical dual role toward 'unidentified flying objects': on one hand, steering U.S. domestic policy; on the other, collecting intelligence on how the phenomenon manifested —and was handled— abroad.\n\nThe first axis is policy and analysis. The Scientific Advisory Panel document (CIA-UAP-002) is the source for the famous Robertson Panel of January 1953, the committee of scientists the CIA convened that reviewed the best cases and recommended a public 'debunking' policy to reduce report volume (the corpus treats its transmission to the Department of War in `dow-early-disc-studies-1948-1953`). Project Blue Book Special Report No. 14 (CIA-UAP-015) is the major statistical analysis the Battelle Memorial Institute prepared for the Air Force, classifying hundreds of cases and measuring the fraction left unexplained (the corpus analyzes it in `battelle-special-report-1952`). The 'Current Status of the UFO Project' (CIA-UAP-007) and the Leon Davidson file (CIA-UAP-004) —the chemist who accused the CIA itself of being behind the UFOs— round out the internal-management picture.\n\nThe most revealing piece on this axis is CIA-UAP-003, the official history of the U-2 and OXCART programs (1954-1974): it acknowledges that a high percentage of the UFO reports of the 1950s and 1960s in fact corresponded to the CIA's own spy planes flying at then-unprecedented altitudes, their silver fuselage reflecting the evening sun. It is the documentary confirmation that a substantial part of that era's 'mystery' had a terrestrial, classified cause.\n\nThe second axis is foreign intelligence. A collection of reports shows the CIA tracking the phenomenon as a Cold War indicator: conversations with Soviet scientists (CIA-UAP-010), objects over Budapest (009), the speculative Kardashev-Sakharov paper (008), the Sary Shagan weapons testing range (011, which links to `sary-shagan-1973`), sightings in Ladakh, Nepal, Sikkim and Bhutan (016), British activity (014) and the scientific and intelligence aspects of the problem per the Australian Department of Defense (019). The interest was not ontological but counterintelligence: what other states saw and how they reacted. A modern document, CIA-UAP-017 (Harare, 2008), on an alert over 'perceived aggressive foreign posturing', extends the pattern into the 21st century.\n\nThe calibrated reading is straightforward: none of the eighteen proves an anomalous origin. Taken together, they are the primary record of how the principal U.S. intelligence agency studied, framed and monitored the phenomenon —with the standout fact that it itself, via U-2 and OXCART, generated much of the reporting it later analyzed.",
+  "whyMatters": "El archivo importa como cimiento de procedencia y como correctivo. Reúne, en fuentes primarias, las tres claves para leer la relación de la CIA con los OVNIs. Primera: la Agencia trató el tema sobre todo como un problema de gestión —el Panel Robertson recomendó minimizarlo públicamente, no investigarlo a fondo—, lo que explica buena parte del escepticismo oficial posterior. Segunda: el informe del U-2/OXCART es un antídoto contra la sobreinterpretación, porque documenta que la propia CIA fue una fuente mayor de 'OVNIs' de la era —un recordatorio de que la causa más exótica rara vez es la correcta. Tercera: la nutrida colección de inteligencia exterior muestra que el valor del fenómeno para la CIA era el de un indicador geopolítico, no el de una prueba de visitantes.\n\nPor eso su incorporación calibra. Permite enlazar a documento primario los casos que el corpus ya analiza —`battelle-special-report-1952` (el SR-14) y `sary-shagan-1973` (el campo de pruebas)— y enmarca el conjunto con la cautela debida: es la historia de cómo la inteligencia estadounidense procesó el fenómeno, con el giro irónico de haberlo alimentado en parte con sus propios aviones secretos.",
+  "whyMatters_en": "The archive matters as a provenance foundation and as a corrective. It gathers, in primary sources, the three keys to reading the CIA's relationship with UFOs. First: the Agency treated the topic mainly as a management problem —the Robertson Panel recommended minimizing it publicly, not investigating it deeply—, which explains much of the later official skepticism. Second: the U-2/OXCART report is an antidote to overinterpretation, because it documents that the CIA itself was a major source of the era's 'UFOs' —a reminder that the most exotic cause is rarely the right one. Third: the rich foreign-intelligence collection shows that the phenomenon's value to the CIA was that of a geopolitical indicator, not proof of visitors.\n\nHence its incorporation calibrates. It lets the corpus anchor to a primary document the cases it already analyzes —`battelle-special-report-1952` (SR-14) and `sary-shagan-1973` (the testing range)— and frames the set with due caution: it is the history of how U.S. intelligence processed the phenomenon, with the ironic twist of having partly fed it with its own secret aircraft.",
+  "evidence": [
+    "Scientific Advisory Panel / Panel Robertson, 1952-53 (CIA-UAP-002): recomendó política de 'debunking' público",
+    "Project Blue Book Special Report No. 14 (CIA-UAP-015): análisis estadístico de Battelle (enlaza con battelle-special-report-1952)",
+    "Historia oficial de los programas U-2 y OXCART (CIA-UAP-003, 1954-1974): muchos reportes OVNI de la época eran vuelos de espionaje propios de la CIA",
+    "Inteligencia exterior: científicos soviéticos (010), Budapest (009), Kardashev/Sájarov (008), Sary Shagan (011, ver sary-shagan-1973), Ladakh/Himalaya (016), actividad británica (014) y australiana (019)",
+    "Caso moderno: Harare 2008, alerta por 'postura agresiva extranjera percibida' (CIA-UAP-017)",
+    "Dieciocho documentos desclasificados en PURSUE Release 03 (war.gov/UFO, 12 jun 2026); el U-2/OXCART recomprimido para el visor, páginas intactas"
+  ],
+  "evidence_en": [
+    "Scientific Advisory Panel / Robertson Panel, 1952-53 (CIA-UAP-002): recommended a public 'debunking' policy",
+    "Project Blue Book Special Report No. 14 (CIA-UAP-015): Battelle's statistical analysis (links to battelle-special-report-1952)",
+    "Official history of the U-2 and OXCART programs (CIA-UAP-003, 1954-1974): many UFO reports of the era were the CIA's own spy flights",
+    "Foreign intelligence: Soviet scientists (010), Budapest (009), Kardashev/Sakharov (008), Sary Shagan (011, see sary-shagan-1973), Ladakh/Himalaya (016), British (014) and Australian (019) activity",
+    "Modern case: Harare 2008, alert over 'perceived aggressive foreign posturing' (CIA-UAP-017)",
+    "Eighteen documents declassified in PURSUE Release 03 (war.gov/UFO, June 12, 2026); the U-2/OXCART recompressed for the viewer, pages intact"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — archivo histórico CIA (CIA-UAP-002 a 019, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
+      "note": "Los 18 documentos están embebidos en el visor de este caso."
+    },
+    {
+      "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal del Departamento de Guerra."
+    }
+  ]
+}
