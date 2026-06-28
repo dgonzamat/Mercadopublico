@@ -1,0 +1,104 @@
+{
+  "id": "fbi-colorado-springs-2022",
+  "num": 294,
+  "name": "Colorado Springs 2022 · objeto sobre Cheyenne Mountain (FBI/IC, PURSUE)",
+  "name_en": "Colorado Springs 2022 · object over Cheyenne Mountain (FBI/IC, PURSUE)",
+  "year_start": 2022,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.744,
+    "lng": -104.846,
+    "place": "Cheyenne Mountain / Fort Carson, Colorado Springs (Colorado)",
+    "place_en": "Cheyenne Mountain / Fort Carson, Colorado Springs (Colorado)"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "summary": "El 15 de febrero de 2022, a las 09:35 (hora de montaña), cinco militares del Ejército de EE.UU. en Fort Carson observaron un objeto aéreo sobre Cheyenne Mountain (Colorado Springs), sede del complejo de mando endurecido del NORAD. PURSUE desclasificó el expediente en su tercera entrega (Release 03, 12 jun 2026): un FBI FD-302 (entrevista), un FD-1057 (reporte interno del UAP), una representación digital del objeto y un análisis de la comunidad de inteligencia (ICA-UAP-D001). La evaluación concluyó que el objeto fue 'posiblemente retrodispersión (backscattering) de luz solar', pero con 'baja confianza' — combinación que deja el caso formalmente no resuelto. Su valor es la procedencia institucional y la honestidad analítica, no una anomalía probada.",
+  "summary_en": "On February 15, 2022, at 09:35 (Mountain Time), five U.S. Army service members at Fort Carson observed an airborne object over Cheyenne Mountain (Colorado Springs), home to NORAD's hardened command complex. PURSUE declassified the file in its third tranche (Release 03, June 12, 2026): an FBI FD-302 (interview), an FD-1057 (internal UAP report), a digital rendering of the object, and an intelligence-community analysis (ICA-UAP-D001). The assessment concluded the object was 'possibly backscattering of sunlight', but with 'low confidence' — a combination that leaves the case formally unresolved. Its value is institutional provenance and analytical honesty, not a proven anomaly.",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D001 — FD-302, reporte de UAP no resuelto, Colorado Springs (2022)",
+      "title_en": "FBI-UAP-D001 — FD-302, Unresolved UAP Report, Colorado Springs (2022)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D002 — FD-1057, reporte de UAP no resuelto, Colorado Springs (2022)",
+      "title_en": "FBI-UAP-D002 — FD-1057, Unresolved UAP Report, Colorado Springs (2022)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D003 — representación digital del objeto, Colorado Springs (2022)",
+      "title_en": "FBI-UAP-D003 — digital rendering of the object, Colorado Springs (2022)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"
+    },
+    {
+      "src": "/pursue/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf",
+      "type": "pdf",
+      "title": "ICA-UAP-D001 — análisis de inteligencia del incidente de Colorado Springs",
+      "title_en": "ICA-UAP-D001 — intelligence analysis of the Colorado Springs incident",
+      "source": "Intelligence Community (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf"
+    }
+  ],
+  "patterns": [
+    "8f"
+  ],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.58,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.06,
+    "indet": 0.24
+  },
+  "whatHappened": "El 15 de febrero de 2022, a las 09:35 (hora de montaña), cinco militares del Ejército de Estados Unidos destacados en Fort Carson (Colorado) observaron un objeto aéreo no identificado sobre la zona de Cheyenne Mountain, en las afueras de Colorado Springs. El emplazamiento no es trivial: Cheyenne Mountain alberga el complejo subterráneo endurecido del NORAD / Cheyenne Mountain Space Force Station, uno de los nodos de mando y alerta temprana más sensibles del país, y Fort Carson es una gran base del Ejército contigua. Un objeto anómalo sobre ese espacio activa, por contexto, una lectura de seguridad que un avistamiento sobre campo abierto no tendría.\n\nEl episodio quedó documentado en el sistema federal con varias piezas que PURSUE desclasificó en su tercera entrega (Release 03, 12 de junio de 2026): un FBI FD-302 —el formato estándar con que un agente del FBI registra una entrevista o declaración—, un FD-1057 (la comunicación electrónica interna del Bureau que contiene el reporte del UAP), una representación digital (digital rendering) del objeto reconstruida a partir de los testimonios, y un análisis de la comunidad de inteligencia (ICA-UAP-D001, cuatro páginas).\n\nEl núcleo del expediente es la evaluación analítica, y conviene citarla con precisión porque marca el tono. El análisis concluyó que el objeto aéreo sobre Cheyenne Mountain, observado por los cinco militares a las 0935 del 15 de febrero de 2022, fue 'posiblemente retrodispersión de luz solar' (backscattering of sunlight) —es decir, un artefacto óptico producido por la dispersión de la luz del sol—, pero el propio documento califica esa conclusión con 'baja confianza' (low confidence). Esa combinación —una explicación prosaica plausible sostenida con baja confianza— es exactamente lo que mantiene el caso en la categoría de no resuelto.\n\nLa lectura calibrada parte de esa autoevaluación. La retrodispersión de luz solar es un mecanismo real: en determinadas geometrías entre el sol y el observador, partículas atmosféricas, cristales de hielo o la propia óptica del ojo o de una cámara pueden generar puntos o halos luminosos que un testigo entrenado interpreta como un objeto sólido. Es una causa mundana verosímil para un avistamiento diurno y sin instrumentación corroborante: el expediente no incluye radar ni telemetría publicados. Pero la 'baja confianza' con que la propia comunidad de inteligencia sostiene esa hipótesis impide cerrarla: cinco testigos militares, en un emplazamiento de máxima sensibilidad, vieron algo que el analista no pudo explicar con seguridad. El valor del caso reside en esa tensión documentada, no en una anomalía probada.",
+  "whatHappened_en": "On February 15, 2022, at 09:35 (Mountain Time), five U.S. Army service members stationed at Fort Carson (Colorado) observed an unidentified airborne object over the Cheyenne Mountain area, on the outskirts of Colorado Springs. The location is not trivial: Cheyenne Mountain houses the hardened underground complex of NORAD / Cheyenne Mountain Space Force Station, one of the country's most sensitive command and early-warning nodes, and Fort Carson is a large adjacent Army base. An anomalous object over that airspace carries, by context, a security reading that a sighting over open country would not.\n\nThe episode was documented in the federal system with several pieces that PURSUE declassified in its third tranche (Release 03, June 12, 2026): an FBI FD-302 —the standard format an FBI agent uses to record an interview or statement—, an FD-1057 (the Bureau's internal electronic communication containing the UAP report), a digital rendering of the object reconstructed from the testimonies, and an intelligence-community analysis (ICA-UAP-D001, four pages).\n\nThe core of the file is the analytical assessment, and it is worth quoting precisely because it sets the tone. The analysis concluded that the airborne object over Cheyenne Mountain, observed by the five service members at 0935 on February 15, 2022, was 'possibly backscattering of sunlight' —that is, an optical artifact produced by the scattering of sunlight—, but the document itself qualifies that conclusion with 'low confidence'. That combination —a plausible prosaic explanation held with low confidence— is exactly what keeps the case in the unresolved category.\n\nThe calibrated reading starts from that self-assessment. Sunlight backscattering is a real mechanism: in certain sun-observer geometries, atmospheric particles, ice crystals or the optics of the eye or a camera can generate luminous points or halos that a trained witness interprets as a solid object. It is a plausible mundane cause for a daytime sighting with no corroborating instrumentation: the file includes no published radar or telemetry. But the 'low confidence' with which the intelligence community itself holds that hypothesis prevents closing it: five military witnesses, at a maximally sensitive site, saw something the analyst could not explain with certainty. The case's value lies in that documented tension, not in a proven anomaly.",
+  "whyMatters": "El expediente de Colorado Springs importa por su procedencia y su honestidad analítica más que por su contenido fenoménico. Es un caso institucional moderno y bien encadenado: cinco testigos militares, documentación del FBI (FD-302 + FD-1057), una reconstrucción visual y un análisis formal de la comunidad de inteligencia, todo sobre uno de los sitios de mando más sensibles de Estados Unidos. Esa cadena de custodia es justamente lo que el corpus valora.\n\nPero su lección principal es metodológica. El propio análisis ofrece una explicación mundana —retrodispersión de luz solar— y, en lugar de presentarla como veredicto, la marca con 'baja confianza'. Esa franqueza es infrecuente y ejemplar: reconoce que un fenómeno puede ser probablemente prosaico y, a la vez, quedar formalmente sin resolver por falta de datos. El caso calibra así dos errores opuestos: ni inflarlo como evidencia de entidades no humanas (no lo es), ni cerrarlo como 'caso explicado' (la propia agencia no lo cierra). Pertenece al grueso del fenómeno: avistamientos sinceros, de testigos creíbles, sobre infraestructura sensible, que la mejor evaluación disponible deja en un 'posiblemente, con baja confianza'.",
+  "whyMatters_en": "The Colorado Springs file matters for its provenance and analytical honesty more than for its phenomenal content. It is a modern, well-chained institutional case: five military witnesses, FBI documentation (FD-302 + FD-1057), a visual reconstruction, and a formal intelligence-community analysis, all over one of the most sensitive command sites in the United States. That chain of custody is precisely what the corpus values.\n\nBut its main lesson is methodological. The analysis itself offers a mundane explanation —sunlight backscattering— and, instead of presenting it as a verdict, flags it with 'low confidence'. That candor is uncommon and exemplary: it acknowledges that a phenomenon can be probably prosaic and, at the same time, remain formally unresolved for lack of data. The case thus calibrates two opposite errors: neither inflating it as evidence of something non-human (it is not), nor closing it as a 'solved case' (the agency itself does not close it). It belongs to the bulk of the phenomenon: sincere sightings, by credible witnesses, over sensitive infrastructure, that the best available assessment leaves at a 'possibly, with low confidence'.",
+  "evidence": [
+    "Avistamiento del 15 de febrero de 2022, 09:35 hora de montaña, sobre Cheyenne Mountain (Colorado Springs), sede del complejo de mando del NORAD",
+    "Cinco testigos: militares del Ejército de EE.UU. destacados en Fort Carson (Colorado)",
+    "Documentación FBI: FD-302 (entrevista/declaración) y FD-1057 (comunicación electrónica con el reporte del UAP)",
+    "Representación digital del objeto reconstruida a partir de los testimonios (FBI-UAP-D003)",
+    "Análisis de la comunidad de inteligencia (ICA-UAP-D001): 'posiblemente retrodispersión de luz solar', con 'baja confianza'",
+    "Desclasificado en PURSUE Release 03 (war.gov/UFO, 12 jun 2026); sin radar ni telemetría publicados en el expediente"
+  ],
+  "evidence_en": [
+    "Sighting on February 15, 2022, 09:35 Mountain Time, over Cheyenne Mountain (Colorado Springs), home to NORAD's command complex",
+    "Five witnesses: U.S. Army service members stationed at Fort Carson (Colorado)",
+    "FBI documentation: FD-302 (interview/statement) and FD-1057 (electronic communication with the UAP report)",
+    "Digital rendering of the object reconstructed from the testimonies (FBI-UAP-D003)",
+    "Intelligence-community analysis (ICA-UAP-D001): 'possibly backscattering of sunlight', with 'low confidence'",
+    "Declassified in PURSUE Release 03 (war.gov/UFO, June 12, 2026); no published radar or telemetry in the file"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — expediente Colorado Springs 2022 (FBI-UAP-D001/002/003 + ICA-UAP-D001, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf",
+      "note": "FD-302, FD-1057, representación digital y análisis de inteligencia (objeto sobre Cheyenne Mountain, 15 feb 2022)."
+    },
+    {
+      "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal del Departamento de Guerra; los 4 documentos están embebidos en el visor de este caso."
+    }
+  ]
+}
