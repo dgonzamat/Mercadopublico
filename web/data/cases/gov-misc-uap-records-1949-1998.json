@@ -1,0 +1,94 @@
+{
+  "id": "gov-misc-uap-records-1949-1998",
+  "num": 299,
+  "name": "Registros administrativos UAP del gobierno de EE.UU. (FBI field offices + Congreso/Casa Blanca, 1949-1998, PURSUE)",
+  "name_en": "U.S. government administrative UAP records (FBI field offices + Congress/White House, 1949-1998, PURSUE)",
+  "year_start": 1949,
+  "year_end": 1998,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.9,
+    "lng": -77.0,
+    "place": "EE.UU. — oficinas de campo del FBI (Newark, Washington State) y correspondencia del Congreso/Casa Blanca",
+    "place_en": "USA — FBI field offices (Newark, Washington State) and Congress/White House correspondence"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 22,
+  "summary": "Cuatro documentos administrativos desclasificados en PURSUE Release 03 (12 jun 2026) que muestran la 'cola larga' de cómo el gobierno de EE.UU. tramitó el interés por los OVNIs durante medio siglo: un referral de correspondencia del FBI (1949), el expediente de la oficina de campo del FBI en Newark (1952-1967), la investigación del FBI sobre 'OVNIs' en el estado de Washington (1952-1960) y un legajo de correspondencia entre el Congreso, la Casa Blanca y ciudadanos sobre OVNIs (1998). No documentan un incidente ni evidencia anómala: documentan el procesamiento burocrático del tema —referrals, archivo de reportes ciudadanos, respuestas de oficina— a lo largo de décadas. Su valor es de textura institucional, no probatorio.",
+  "summary_en": "Four administrative documents declassified in PURSUE Release 03 (June 12, 2026) showing the 'long tail' of how the U.S. government handled UFO interest over half a century: an FBI correspondence referral (1949), the file of the FBI's Newark field office (1952-1967), the FBI's 'UFO' investigation in Washington State (1952-1960), and a file of correspondence among Congress, the White House and citizens about UFOs (1998). They document no incident or anomalous evidence: they document the bureaucratic processing of the topic —referrals, filing of citizen reports, office responses— across decades. Their value is institutional texture, not probative.",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D011 — referral de correspondencia D/FBI (1949)",
+      "title_en": "FBI-UAP-D011 — D/FBI correspondence referral (1949)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D012_Newark-Field-Office_1952-1967.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D012 — oficina de campo del FBI en Newark (1952-1967)",
+      "title_en": "FBI-UAP-D012 — FBI Newark field office (1952-1967)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D012_Newark-Field-Office_1952-1967.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D013_WA-UFO-Investigation_1952-1960.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D013 — investigación del FBI sobre 'OVNIs', estado de Washington (1952-1960)",
+      "title_en": "FBI-UAP-D013 — FBI 'UFO' investigation, Washington State (1952-1960)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D013_WA-UFO-Investigation_1952-1960.pdf"
+    },
+    {
+      "src": "/pursue/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf",
+      "type": "pdf",
+      "title": "USG-UAP-D001 — correspondencia Congreso/Casa Blanca/ciudadanos sobre OVNIs (1998)",
+      "title_en": "USG-UAP-D001 — Congress/White House/constituent UFO correspondence (1998)",
+      "source": "U.S. Government (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf"
+    }
+  ],
+  "patterns": [],
+  "category": "document",
+  "whatHappened": "PURSUE liberó, en su tercera entrega (Release 03, 12 de junio de 2026), cuatro documentos que rara vez protagonizan la conversación OVNI pero que la explican mejor que muchos avistamientos: el papeleo. Son registros administrativos que muestran la 'cola larga' del fenómeno —cómo el aparato del Estado de EE.UU. recibió, derivó, archivó y respondió el interés ciudadano por los 'discos voladores' a lo largo de medio siglo.\n\nEl más antiguo, FBI-UAP-D011 (1949), es un referral de correspondencia: el mecanismo rutinario por el que el FBI reenviaba a otra agencia —típicamente la Fuerza Aérea— las cartas y reportes de OVNIs que le llegaban, tras la retirada del Bureau de la investigación activa a fines de 1947. Es un documento de procedimiento, no de contenido, y por eso ilustra bien la postura institucional: registrar y derivar, no investigar.\n\nLos dos expedientes de campo amplían la escala temporal. FBI-UAP-D012 reúne el material de la oficina de campo del FBI en Newark entre 1952 y 1967: quince años de reportes locales, recortes y consultas que la oficina archivó. FBI-UAP-D013 documenta la 'investigación' del FBI sobre OVNIs en el estado de Washington entre 1952 y 1960 —la región donde Kenneth Arnold había detonado la era de los platillos en 1947—. Ninguno de los dos contiene un caso resolutorio; son la sedimentación burocrática de una década y media de inquietud pública procesada como rutina de oficina.\n\nEl cuarto documento salta de agencia y de época: USG-UAP-D001 es un legajo de correspondencia de 1998 entre el Congreso, la Casa Blanca y ciudadanos sobre OVNIs. Muestra el otro canal por el que el tema circula por el Estado —no el investigativo, sino el político-representativo: el constituyente que escribe a su congresista, el congresista que traslada la consulta al ejecutivo, la respuesta formal. Es la versión de los noventa del mismo fenómeno administrativo que los expedientes del FBI capturan en los cincuenta.\n\nLa lectura calibrada es la más simple del corpus: estos cuatro documentos no aportan evidencia de nada anómalo, y no pretenden hacerlo. Su valor es mostrar el envés institucional —el flujo de papel— que rodeó al fenómeno durante cincuenta años, un recordatorio de que la mayor parte del 'expediente OVNI' del gobierno de EE.UU. no es evidencia guardada, sino administración acumulada.",
+  "whatHappened_en": "PURSUE released, in its third tranche (Release 03, June 12, 2026), four documents that rarely star in the UFO conversation but explain it better than many sightings: the paperwork. They are administrative records showing the phenomenon's 'long tail' —how the U.S. state apparatus received, referred, filed and answered citizen interest in 'flying discs' over half a century.\n\nThe oldest, FBI-UAP-D011 (1949), is a correspondence referral: the routine mechanism by which the FBI forwarded to another agency —typically the Air Force— the UFO letters and reports it received, after the Bureau withdrew from active investigation in late 1947. It is a procedural document, not a content one, and that is exactly why it illustrates the institutional posture so well: record and refer, do not investigate.\n\nThe two field files broaden the time scale. FBI-UAP-D012 gathers the material of the FBI's Newark field office between 1952 and 1967: fifteen years of local reports, clippings and inquiries the office filed. FBI-UAP-D013 documents the FBI's 'investigation' of UFOs in Washington State between 1952 and 1960 —the region where Kenneth Arnold had detonated the saucer era in 1947. Neither contains a resolving case; they are the bureaucratic sedimentation of a decade and a half of public concern processed as office routine.\n\nThe fourth document jumps agency and era: USG-UAP-D001 is a 1998 file of correspondence among Congress, the White House and citizens about UFOs. It shows the other channel by which the topic moves through the state —not the investigative one, but the political-representative one: the constituent who writes to their congressman, the congressman who relays the inquiry to the executive, the formal reply. It is the 1990s version of the same administrative phenomenon the FBI files capture in the 1950s.\n\nThe calibrated reading is the simplest in the corpus: these four documents provide no evidence of anything anomalous, and do not claim to. Their value is to show the institutional underside —the flow of paper— that surrounded the phenomenon for fifty years, a reminder that most of the U.S. government's 'UFO file' is not stored evidence, but accumulated administration.",
+  "whyMatters": "El conjunto importa como contrapeso. La literatura OVNI tiende a tratar el grosor de los archivos gubernamentales como si fuera el peso de su evidencia: 'el FBI tiene expedientes', 'el Congreso se interesó'. Estos cuatro documentos muestran qué hay realmente en esa masa —referrals, archivo de reportes ciudadanos, correspondencia política— y la respuesta es: administración, no pruebas. Tenerlos en el corpus permite citar esa realidad en la fuente.\n\nSu segunda función es completar el mapa institucional. Junto con los expedientes ya incorporados (el archivo central 62-HQ-83894 del FBI, los estudios tempranos del DoW, el archivo histórico de la CIA), estos registros de oficina de campo y de correspondencia política cierran el cuadro de cómo el Estado de EE.UU. tramitó el fenómeno a todos los niveles —central y local, investigativo y representativo, de 1949 a 1998. Es textura, no evidencia, y el corpus los enmarca exactamente así.",
+  "whyMatters_en": "The set matters as a counterweight. UFO literature tends to treat the thickness of government files as if it were the weight of their evidence: 'the FBI has files', 'Congress took an interest'. These four documents show what is actually in that mass —referrals, filing of citizen reports, political correspondence— and the answer is: administration, not proof. Having them in the corpus lets that reality be cited at the source.\n\nTheir second function is to complete the institutional map. Together with the files already incorporated (the FBI's central 62-HQ-83894 file, the DoW's early studies, the CIA's historical archive), these field-office and political-correspondence records close the picture of how the U.S. state handled the phenomenon at every level —central and local, investigative and representative, from 1949 to 1998. It is texture, not evidence, and the corpus frames them exactly that way.",
+  "evidence": [
+    "FBI-UAP-D011 — referral de correspondencia del FBI (1949): mecanismo de derivación tras el retiro del Bureau de la investigación activa",
+    "FBI-UAP-D012 — expediente de la oficina de campo del FBI en Newark (1952-1967), 66 páginas",
+    "FBI-UAP-D013 — investigación del FBI sobre 'OVNIs' en el estado de Washington (1952-1960)",
+    "USG-UAP-D001 — correspondencia Congreso/Casa Blanca/ciudadanos sobre OVNIs (1998)",
+    "Sin contenido probatorio: registros administrativos (referrals, archivo de reportes, correspondencia política), no evidencia anómala",
+    "Desclasificados en PURSUE Release 03 (war.gov/UFO, 12 jun 2026)"
+  ],
+  "evidence_en": [
+    "FBI-UAP-D011 — FBI correspondence referral (1949): forwarding mechanism after the Bureau's withdrawal from active investigation",
+    "FBI-UAP-D012 — FBI Newark field office file (1952-1967), 66 pages",
+    "FBI-UAP-D013 — FBI 'UFO' investigation in Washington State (1952-1960)",
+    "USG-UAP-D001 — Congress/White House/constituent UFO correspondence (1998)",
+    "No probative content: administrative records (referrals, report filing, political correspondence), not anomalous evidence",
+    "Declassified in PURSUE Release 03 (war.gov/UFO, June 12, 2026)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — registros administrativos FBI/USG (FBI-UAP-D011/D012/D013, USG-UAP-D001, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D012_Newark-Field-Office_1952-1967.pdf",
+      "note": "Los cuatro documentos están embebidos en el visor de este caso."
+    },
+    {
+      "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal del Departamento de Guerra."
+    }
+  ]
+}
