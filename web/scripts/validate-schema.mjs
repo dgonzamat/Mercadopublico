@@ -198,18 +198,21 @@ for (const file of caseFiles) {
     });
 
   // VISOR DE DOCUMENTOS (DocEmbed[]): documentos primarios embebidos inline.
-  // Invariante clave del diseño: `src` debe ser SAME-ORIGIN (bajo /pursue/),
-  // porque war.gov bloquea el framing/fetch de terceros y solo un asset
-  // auto-hospedado se embebe con garantía. El tipo decide el render (iframe
-  // para pdf, img para imagen), así que la extensión debe ser coherente.
+  // Invariante clave del diseño: `src` debe ser embebible — war.gov bloquea el
+  // framing/fetch de terceros, así que solo se admiten dos orígenes que SÍ se
+  // embeben con garantía: (1) same-origin bajo /pursue/ (≤30MB, en el repo) y
+  // (2) el bucket público Supabase `pursue` (archivos 30-50MB / partes de los
+  // grandes, que GitHub no puede alojar). El tipo decide el render (iframe para
+  // pdf, img para imagen), así que la extensión debe ser coherente.
+  const SUPA_PURSUE = "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
   if (c.documents !== undefined) {
     if (!isArr(c.documents)) err(w, "documents debe ser array (DocEmbed[])");
     else
       c.documents.forEach((d, j) => {
         const dw = `${w}.documents[${j}]`;
         if (!isStr(d.src)) err(dw, "src obligatorio (string)");
-        else if (!d.src.startsWith("/pursue/"))
-          err(dw, `src debe ser same-origin bajo /pursue/ (war.gov no se puede embeber): "${d.src}"`);
+        else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE))
+          err(dw, `src debe ser same-origin (/pursue/) o el bucket Supabase pursue (war.gov no se puede embeber): "${d.src}"`);
         if (!["pdf", "image"].includes(d.type))
           err(dw, `type inválido "${d.type}" (pdf|image)`);
         if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))

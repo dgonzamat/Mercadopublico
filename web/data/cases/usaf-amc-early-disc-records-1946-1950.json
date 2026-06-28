@@ -17,8 +17,8 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 42,
-  "summary": "Cuatro expedientes de las Fuerzas Aéreas estadounidenses (AAF/USAF) sobre la primera ola de «discos voladores», desclasificados en la primera entrega PURSUE (8 may 2026): correspondencia «General» del Air Materiel Command de 1946-47 y de 1948, un reporte de inteligencia aérea de noviembre de 1948 (Países Bajos) y el archivo «319.1 Flying Discs 1949» con reportes de incidentes redactados bajo la regulación FSR 200-4, por testigos militares y de la Civil Aviation Authority (este último, por su tamaño, queda enlazado en war.gov). El conjunto documenta el arranque institucional del problema OVNI —del memo Twining (1947) al Proyecto Grudge (1949)— en su sustrato administrativo. Caso-documento tier B: registro primario del proceso, no evidencia de anomalía.",
-  "summary_en": "Four U.S. Army/Air Force (AAF/USAF) files on the first 'flying disc' wave, declassified in the first PURSUE tranche (May 8, 2026): Air Materiel Command 'General' correspondence from 1946-47 and 1948, a November 1948 air-intelligence report (Netherlands) and the '319.1 Flying Discs 1949' file with incident reports filed under FSR 200-4 regulation, by military and Civil Aviation Authority witnesses (the latter, due to its size, is linked at war.gov). The set documents the institutional onset of the UFO problem —from the Twining memo (1947) to Project Grudge (1949)— in its administrative substrate. A tier-B document-case: a primary record of the process, not evidence of anomaly.",
+  "summary": "Cuatro expedientes de las Fuerzas Aéreas estadounidenses (AAF/USAF) sobre la primera ola de «discos voladores», desclasificados en la primera entrega PURSUE (8 may 2026): correspondencia «General» del Air Materiel Command de 1946-47 y de 1948, un reporte de inteligencia aérea de noviembre de 1948 (Países Bajos) y el archivo «319.1 Flying Discs 1949» con reportes de incidentes redactados bajo la regulación FSR 200-4, por testigos militares y de la Civil Aviation Authority. El conjunto documenta el arranque institucional del problema OVNI —del memo Twining (1947) al Proyecto Grudge (1949)— en su sustrato administrativo. Caso-documento tier B: registro primario del proceso, no evidencia de anomalía.",
+  "summary_en": "Four U.S. Army/Air Force (AAF/USAF) files on the first 'flying disc' wave, declassified in the first PURSUE tranche (May 8, 2026): Air Materiel Command 'General' correspondence from 1946-47 and 1948, a November 1948 air-intelligence report (Netherlands) and the '319.1 Flying Discs 1949' file with incident reports filed under FSR 200-4 regulation, by military and Civil Aviation Authority witnesses. The set documents the institutional onset of the UFO problem —from the Twining memo (1947) to Project Grudge (1949)— in its administrative substrate. A tier-B document-case: a primary record of the process, not evidence of anomaly.",
   "documents": [
     {
       "src": "/pursue/18_100754_general_1946-7_vol_2.pdf",
@@ -46,6 +46,24 @@
       "source": "Department of War / USAF (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/342_hs1-416511228_box186_319.1-flying-discs-1949__part1of2.pdf",
+      "type": "pdf",
+      "title": "319.1 Flying Discs 1949 (parte 1/2) — reportes de incidentes bajo la FSR 200-4",
+      "title_en": "319.1 Flying Discs 1949 (part 1/2) — incident reports under FSR 200-4",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/342_hs1-416511228_box186_319.1-flying-discs-1949__part2of2.pdf",
+      "type": "pdf",
+      "title": "319.1 Flying Discs 1949 (parte 2/2) — reportes de incidentes bajo la FSR 200-4",
+      "title_en": "319.1 Flying Discs 1949 (part 2/2) — incident reports under FSR 200-4",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf"
     }
   ],
   "patterns": [],
@@ -71,11 +89,6 @@
     "Provenance: Department of War and USAF record groups at the National Archives (NARA)"
   ],
   "sources": [
-    {
-      "name": "war.gov/UFO — registros tempranos USAF sobre discos voladores (PURSUE Release 01)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf",
-      "note": "Expediente «319.1 Flying Discs 1949» incorporado al visor."
-    },
     {
       "name": "NARA — Army Air Forces / USAF records on flying discs and UFOs",
       "url": "https://www.archives.gov/research/military/air-force/ufos",
