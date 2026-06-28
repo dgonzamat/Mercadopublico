@@ -1,0 +1,134 @@
+{
+  "id": "fbi-northeast-orbs-2024",
+  "num": 295,
+  "name": "Orbes en el noreste de EE.UU. · expediente FBI corroborado por agentes (PURSUE)",
+  "name_en": "Northeastern US orbs · FBI file corroborated by agents (PURSUE)",
+  "year_start": 2021,
+  "year_end": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 43.0,
+    "lng": -72.0,
+    "place": "Noreste de EE.UU. (ubicación exacta redactada)",
+    "place_en": "Northeastern US (exact location redacted)"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 38,
+  "summary": "Siete documentos del FBI desclasificados en PURSUE Release 03 (12 jun 2026) conforman un mismo expediente: observaciones repetidas de 'orbes' en el noreste de EE.UU. durante años (~2021-2024), cerca de una residencia con ubicación redactada. Cinco FD-1057 (2024) y dos FD-302 (2026) recogen el relato de testigos —'orbes de plasma', una 'esfera roja' bajo la línea de árboles, objetos que se mueven lateralmente, captados por una cámara doméstica— y, de forma poco habitual, la corroboración por agentes especiales del FBI que observaron la actividad in situ en 2024 con plena línea de visión. Material muy redactado, sin radar ni telemetría publicados; la morfología coincide con la oleada de drones/UAS del noreste de ese periodo. Valor: testimonio cualificado y cadena FBI, no origen anómalo probado.",
+  "summary_en": "Seven FBI documents declassified in PURSUE Release 03 (June 12, 2026) make up a single file: repeated 'orb' observations in the Northeastern US over years (~2021-2024), near a residence whose location is redacted. Five FD-1057s (2024) and two FD-302s (2026) capture the witness account —'plasma orbs', a 'red sphere' below the tree line, objects moving laterally, caught on a home camera— and, unusually, corroboration by FBI special agents who observed the activity on-site in 2024 with full line of sight. Heavily redacted material, no published radar or telemetry; the morphology matches the Northeastern drone/UAS wave of that period. Value: qualified testimony and FBI chain of custody, not a proven anomalous origin.",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D004 — FD-1057-02, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D004 — FD-1057-02, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D005 — FD-1057-04, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D005 — FD-1057-04, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D006 — FD-1057-05, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D006 — FD-1057-05, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D007 — FD-1057-06, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D007 — FD-1057-06, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D008 — FD-1057-07, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D008 — FD-1057-07, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D009 — FD-302-67, entrevista 'Northeastern Orb Sighting' (2026)",
+      "title_en": "FBI-UAP-D009 — FD-302-67, 'Northeastern Orb Sighting' interview (2026)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D010 — FD-302-71, entrevista 'Northeastern Orb Sighting' (2026)",
+      "title_en": "FBI-UAP-D010 — FD-302-71, 'Northeastern Orb Sighting' interview (2026)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf"
+    }
+  ],
+  "patterns": [
+    "8g"
+  ],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.12,
+    "indet": 0.3
+  },
+  "whatHappened": "PURSUE liberó, en su tercera entrega (Release 03, 12 de junio de 2026), un grupo de siete documentos del FBI que conforman un mismo expediente: observaciones repetidas de 'orbes' en el noreste de Estados Unidos. La ubicación exacta está redactada en todas las piezas, pero el conjunto traza un patrón coherente: avistamientos sostenidos durante años de esferas y luces anómalas cerca de una propiedad residencial, documentados por el FBI en dos formatos —cinco FD-1057 (2024), el formato de comunicación interna con que un agente reporta y tramita información, y dos FD-302 (2026), las entrevistas formales a testigos.\n\nEl relato civil es consistente. Un testigo describe 'observaciones repetidas de UAS o UAP que aparecen como orbes de plasma' cerca de su residencia; otro sitúa la primera observación hacia 2021 y describe actividad 'a lo largo de los últimos tres años', captada incluso por una cámara fija orientada al oeste de la propiedad. Los FD-302 añaden detalle sensorial: una 'luz intensa y brillante' suspendida bajo la línea de los árboles, descrita como una 'esfera roja'; dos testigos viendo los objetos desplazarse lateralmente; orbes que 'viajan sobre' una zona redactada.\n\nEl elemento que distingue a este expediente de un reporte ciudadano más es que los propios agentes lo corroboraron. Uno de los FD-1057 registra que 'los agentes especiales [redactado] y [redactado] observaron actividad UAP' en una fecha de 2024, con 'plena línea de visión' y sin obstrucción, en la vecindad donde el testigo había reportado la actividad. Es decir: personal del FBI, desplazado a verificar, vio por sí mismo lo que se estaba reportando.\n\nLa lectura calibrada debe sostener la fuerza y los límites. La corroboración por agentes y la persistencia plurianual con registro en cámara elevan el caso por encima del avistamiento aislado. Pero el material está fuertemente redactado (ubicaciones, nombres y varias fechas tachadas), no hay datos instrumentales duros publicados (radar, telemetría, análisis del vídeo) y la morfología descrita —esferas y luces que se mueven lateralmente, a baja altura, cerca de una vivienda— es exactamente la firma de la oleada de drones e incursiones de UAS que afectó al noreste de EE.UU. en ese mismo periodo. Orbes de 'plasma' a baja altura admiten desde drones hasta luces convencionales mal identificadas. El expediente acredita que el fenómeno fue real y observado por testigos cualificados, no que su origen sea anómalo.",
+  "whatHappened_en": "PURSUE released, in its third tranche (Release 03, June 12, 2026), a group of seven FBI documents that make up a single file: repeated 'orb' observations in the Northeastern United States. The exact location is redacted in every piece, but the set traces a coherent pattern: sustained sightings over years of anomalous spheres and lights near a residential property, documented by the FBI in two formats —five FD-1057s (2024), the internal communication format an agent uses to report and process information, and two FD-302s (2026), the formal witness interviews.\n\nThe civilian account is consistent. One witness describes 'repeated observations of UAS or UAP appearing as plasma orbs' near their residence; another places the first observation around 2021 and describes activity 'over the last three years', even captured by a fixed camera facing west of the property. The FD-302s add sensory detail: an 'intense, bright light' hovering below the tree line, described as a 'red sphere'; two witnesses seeing the objects move laterally; orbs that 'travel over' a redacted area.\n\nWhat sets this file apart from one more citizen report is that the agents themselves corroborated it. One of the FD-1057s records that 'special agents [redacted] and [redacted] observed UAP activity' on a date in 2024, with 'full line of sight' and no obstruction, in the vicinity where the witness had reported the activity. That is: FBI personnel, dispatched to verify, saw for themselves what was being reported.\n\nThe calibrated reading must hold both the strength and the limits. Corroboration by agents and the multi-year persistence with camera footage raise the case above an isolated sighting. But the material is heavily redacted (locations, names and several dates blacked out), there is no published hard instrumental data (radar, telemetry, video analysis), and the described morphology —spheres and lights moving laterally, at low altitude, near a home— is exactly the signature of the drone and UAS-incursion wave that hit the Northeastern US in that same period. Low-altitude 'plasma' orbs admit anything from drones to misidentified conventional lights. The file attests that the phenomenon was real and observed by qualified witnesses, not that its origin is anomalous.",
+  "whyMatters": "El expediente del noreste vale por la calidad del testimonio y la cadena institucional, no por una firma anómala. Su rasgo más citable es la corroboración por agentes del FBI: en un campo dominado por reportes de testigo único, tener personal federal que verifica in situ y registra lo observado en un FD-1057 es un dato de procedencia fuerte. La persistencia durante años y el vídeo doméstico añaden densidad.\n\nA la vez, el caso ilustra el problema central del periodo 2024-2025: una oleada de 'orbes' y drones sobre el noreste estadounidense que mezcló incursiones reales de UAS, tráfico aéreo convencional mal identificado y genuina incertidumbre. Sin telemetría ni análisis del vídeo publicados —y con el expediente redactado—, la mejor lectura es la prudente: actividad real y multi-testigo, de origen indeterminado, con el dron no reconocido y la mala identificación como las hipótesis prosaicas más fuertes. El corpus lo incorpora como registro primario del FBI, enmarcado con esa cautela. Conviene además fijar el dato institucional: que el FBI —y no un grupo de aficionados— abriera y tramitara un expediente sobre orbes recurrentes junto a una vivienda particular, y que sus propios agentes se desplazaran a verificarlo y lo registraran, marca cuánto se ha normalizado el reporte de UAP dentro de las fuerzas del orden tras la creación de AARO y la apertura de cauces formales como PURSUE.",
+  "whyMatters_en": "The Northeastern file matters for the quality of the testimony and the institutional chain, not for an anomalous signature. Its most quotable feature is the corroboration by FBI agents: in a field dominated by single-witness reports, having federal personnel verify on-site and record what they observed in an FD-1057 is a strong provenance datum. The multi-year persistence and the home video add density.\n\nAt the same time, the case illustrates the central problem of the 2024-2025 period: a wave of 'orbs' and drones over the Northeastern US that mixed real UAS incursions, misidentified conventional air traffic and genuine uncertainty. With no published telemetry or video analysis —and with the file redacted— the best reading is the prudent one: real, multi-witness activity of indeterminate origin, with the unrecognized drone and misidentification as the strongest prosaic hypotheses. The corpus incorporates it as a primary FBI record, framed with that caution. It is also worth fixing the institutional fact: that the FBI —not a group of hobbyists— opened and processed a file on recurring orbs next to a private home, and that its own agents went out to verify and record it, marks how far UAP reporting has been normalized within law enforcement after the creation of AARO and the opening of formal channels like PURSUE.",
+  "evidence": [
+    "Siete documentos FBI de un mismo expediente: 5 FD-1057 (2024) + 2 FD-302 (2026), 'Northeastern Orb Sighting'",
+    "Observaciones repetidas de 'orbes de plasma' / esferas cerca de una residencia (ubicación redactada), desde ~2021 y 'a lo largo de tres años'",
+    "Cámara doméstica fija que captó actividad UAP al oeste de la propiedad",
+    "Corroboración por agentes especiales del FBI: observaron la actividad in situ en 2024 con plena línea de visión",
+    "Descripciones: 'luz intensa' bajo la línea de árboles, 'esfera roja', movimiento lateral de los objetos",
+    "Sin radar/telemetría/análisis de vídeo publicados; material muy redactado; morfología coincidente con la oleada de drones/UAS del noreste 2024",
+    "Desclasificado en PURSUE Release 03 (war.gov/UFO, 12 jun 2026)"
+  ],
+  "evidence_en": [
+    "Seven FBI documents from a single file: 5 FD-1057 (2024) + 2 FD-302 (2026), 'Northeastern Orb Sighting'",
+    "Repeated 'plasma orb' / sphere observations near a residence (redacted location), since ~2021 and 'over three years'",
+    "Fixed home camera that captured UAP activity west of the property",
+    "Corroboration by FBI special agents: they observed the activity on-site in 2024 with full line of sight",
+    "Descriptions: 'intense light' below the tree line, 'red sphere', lateral movement of the objects",
+    "No published radar/telemetry/video analysis; heavily redacted material; morphology consistent with the 2024 Northeastern drone/UAS wave",
+    "Declassified in PURSUE Release 03 (war.gov/UFO, June 12, 2026)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — expediente 'Northeastern Orb Sighting' (FBI-UAP-D004 a D010, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
+      "note": "Cinco FD-1057 (2024) y dos FD-302 (2026); los siete están embebidos en el visor de este caso."
+    },
+    {
+      "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal del Departamento de Guerra."
+    }
+  ]
+}
