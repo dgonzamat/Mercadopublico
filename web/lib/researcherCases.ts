@@ -88,6 +88,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   fravor: ["nimitz-2004", "grusch-testimony-2023"],
   dietrich: ["nimitz-2004"],
   "kevin-day": ["nimitz-2004"],
+  barber: ["capitol-press-conference-2026"],
+  ramirez: ["disclosure-forum-2026"],
   "santa-maria": ["la-joya-arequipa-1980"],
   choy: ["chulucanas-2001", "oifaa-difaa-peru", "lima-difaa-2019"],
   pope: ["rendlesham-1980", "cosford-1993"],
@@ -107,6 +109,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   schumer: ["uap-disclosure-act-2025"],
   gillibrand: ["uap-disclosure-act-2025"],
   rebelo: ["aldo-rebelo-disclosure-2026"],
+  sheehan: ["capitol-press-conference-2026"],
+  "mcconnell-kirk": ["uap-disclosure-act-2025"],
 
   // D — periodistas
   coulthart: [
@@ -121,6 +125,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   clarke: ["rendlesham-1980", "calvine-1990", "howden-moor-1997"],
   blumenthal: ["nimitz-2004"],
   gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986", "arquivo-nacional-brasil-2026"],
+  farah: ["capitol-press-conference-2026"],
 
   // E — comisiones oficiales latinoamericanas
   chamorro: ["pucallpa-2008", "chulucanas-2001", "oifaa-difaa-peru"],
