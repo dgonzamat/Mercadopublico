@@ -1,0 +1,72 @@
+{
+  "id": "f15e-jellyfish-drones-iran-2026",
+  "num": 301,
+  "name": "F-15E derribado sobre Irán · formación de drones 'medusa' (Operation Epic Fury, 2026)",
+  "name_en": "F-15E downed over Iran · 'jellyfish' drone formation (Operation Epic Fury, 2026)",
+  "year_start": 2026,
+  "country": "IR",
+  "country_name": "Irán",
+  "flag": "🇮🇷",
+  "location": {
+    "lat": 32.4,
+    "lng": 53.7,
+    "place": "Espacio aéreo de Irán (ubicación exacta no divulgada)",
+    "place_en": "Iranian airspace (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 28,
+  "posterior": {
+    "mundano_natural": 0.05,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.55,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.07,
+    "indet": 0.25
+  },
+  "summary": "El 3 de abril de 2026, durante la Operation Epic Fury, un F-15E Strike Eagle de EE.UU. fue derribado sobre Irán —la primera pérdida confirmada de un caza estadounidense sobre territorio iraní en el conflicto. Según un reporte exclusivo de CNN (23 jun 2026, citando cuatro fuentes), el piloto describió en sus debriefings de inteligencia una formación de drones iraníes que se movían como una sola unidad con forma de 'medusa': drones mayores arriba y drones menores debajo a modo de tentáculos. El piloto fue rescatado en horas; el oficial de sistemas de armas (WSO) evadió captura más de un día antes de ser extraído. La cuenta abrió un debate en la comunidad de inteligencia: ¿una red de enjambre de drones iraní más avanzada de lo estimado, o un UAP? El propio expediente queda matizado: el piloto sufrió una conmoción en la eyección, lo que llevó a algunos analistas a cuestionar la fiabilidad del relato. La lectura calibrada apunta a tecnología de enjambre adversaria, no a un fenómeno no humano.",
+  "summary_en": "On April 3, 2026, during Operation Epic Fury, a U.S. F-15E Strike Eagle was shot down over Iran —the first confirmed loss of a U.S. fighter over Iranian territory in the conflict. According to an exclusive CNN report (June 23, 2026, citing four sources), the pilot described in his intelligence debriefings a formation of Iranian drones moving as a single unit in a 'jellyfish' shape: larger drones above and smaller drones below like tentacles. The pilot was rescued within hours; the weapons systems officer (WSO) evaded capture for more than a day before extraction. The account sparked debate in the intelligence community: a more advanced Iranian drone-swarm network than assessed, or a UAP? The file itself is qualified: the pilot suffered a concussion during ejection, leading some analysts to question the account's reliability. The calibrated reading points to adversarial swarm technology, not a non-human phenomenon.",
+  "patterns": [
+    "8s"
+  ],
+  "category": "incident",
+  "whatHappened": "El 3 de abril de 2026, en el punto álgido de la Operation Epic Fury —la campaña aérea estadounidense sobre Irán—, un caza F-15E Strike Eagle de la Fuerza Aérea de EE.UU. fue derribado sobre territorio iraní. Fue, según las primeras evaluaciones, la primera pérdida confirmada de un caza estadounidense sobre Irán en el conflicto. La tripulación sobrevivió: el piloto eyectó y fue rescatado por fuerzas de operaciones especiales en cuestión de horas, mientras que el oficial de sistemas de armas (WSO) evadió la captura durante más de un día antes de ser extraído con éxito.\n\nEl elemento que llevó el episodio del parte militar a la conversación UAP apareció en los debriefings de inteligencia posteriores. Según un reporte exclusivo de CNN del 23 de junio de 2026 —que cita a cuatro fuentes familiarizadas con el asunto—, el piloto describió haber visto, antes del derribo, una formación de drones iraníes que se desplazaba como una sola unidad con una morfología llamativa: varios drones mayores en lo alto y drones más pequeños suspendidos por debajo, a modo de tentáculos, lo que en conjunto evocaba una 'medusa'. Una de las fuentes lo resumió a CNN como 'múltiples drones interconectados moviéndose como uno, con drones más chicos debajo de los grandes como patas'. La crudeza de la descripción —y la reacción atribuida al piloto ('real alien sh*t')— alimentó titulares sobre un posible fenómeno anómalo.\n\nDentro de la comunidad de inteligencia, sin embargo, el debate giró sobre todo en torno a una pregunta técnica, no ontológica: si Irán ha desarrollado una capacidad de enjambre en red —drones coordinados que vuelan y maniobran como un sistema único— más avanzada de lo que se había estimado, y si esa formación tuvo un papel en el derribo del caza. Esa es la hipótesis dominante entre los analistas: una demostración de mando-y-control de enjambre, no una nave no humana.\n\nLa lectura calibrada debe sostener a la vez la novedad y los límites. La novedad es real y de peso militar: si la descripción es exacta, documenta un salto en la guerra de drones iraní con implicaciones directas para la supervivencia de aeronaves tripuladas. Pero los límites son serios. Es un testimonio de un único testigo, sin material instrumental publicado (no hay vídeo de sensor, telemetría ni radar liberados que respalden la morfología); la fuente es un reporte periodístico sobre debriefings clasificados, no un documento primario; y —el matiz decisivo— el piloto sufrió una conmoción cerebral durante la eyección y el rescate, por lo que varios oficiales de inteligencia han cuestionado expresamente la fiabilidad de su percepción en ese momento de extrema tensión. La 'medusa' es, con mucha probabilidad, una formación real de drones adversarios interpretada bajo estrés extremo; el marco 'UAP/alien' es amplificación mediática que el propio aparato de inteligencia no respalda.",
+  "whatHappened_en": "On April 3, 2026, at the height of Operation Epic Fury —the U.S. air campaign over Iran—, a U.S. Air Force F-15E Strike Eagle was shot down over Iranian territory. By initial assessments, it was the first confirmed loss of a U.S. fighter over Iran in the conflict. The crew survived: the pilot ejected and was rescued by special operations forces within hours, while the weapons systems officer (WSO) evaded capture for more than a day before being successfully extracted.\n\nThe element that moved the episode from the after-action report into the UAP conversation appeared in the later intelligence debriefings. According to an exclusive CNN report of June 23, 2026 —citing four sources familiar with the matter—, the pilot described having seen, before the shootdown, a formation of Iranian drones moving as a single unit with a striking morphology: several larger drones up high and smaller drones suspended beneath them, like tentacles, together evoking a 'jellyfish'. One source summarized it to CNN as 'multiple drones interconnected and moving as one, with smaller drones below the bigger drones like legs'. The starkness of the description —and the reaction attributed to the pilot ('real alien sh*t')— fueled headlines about a possible anomalous phenomenon.\n\nWithin the intelligence community, however, the debate turned mainly on a technical, not ontological, question: whether Iran has developed a networked swarm capability —coordinated drones flying and maneuvering as a single system— more advanced than assessed, and whether that formation played a role in the jet's downing. That is the dominant hypothesis among analysts: a demonstration of swarm command-and-control, not a non-human craft.\n\nThe calibrated reading must hold both the novelty and the limits. The novelty is real and militarily weighty: if the description is accurate, it documents a leap in Iranian drone warfare with direct implications for the survivability of crewed aircraft. But the limits are serious. It is a single-witness account, with no published instrumental material (no released sensor video, telemetry or radar backing the morphology); the source is a news report about classified debriefings, not a primary document; and —the decisive caveat— the pilot suffered a concussion during ejection and rescue, leading several intelligence officials to expressly question the reliability of his perception at that moment of extreme stress. The 'jellyfish' is most likely a real adversarial drone formation interpreted under extreme stress; the 'UAP/alien' frame is media amplification that the intelligence apparatus itself does not endorse.",
+  "whyMatters": "El caso importa más por lo que dice de la guerra de drones que por lo que aporta al fenómeno UAP. Si la descripción del piloto es correcta, la formación 'medusa' sería evidencia de una capacidad iraní de enjambre en red —drones coordinados como un sistema único, con jerarquía de plataformas grandes y pequeñas— que excede lo previamente atribuido a Teherán y que tiene consecuencias tácticas inmediatas: degrada la supervivencia de cazas tripulados y obliga a repensar la defensa aérea. Ese es el contenido sustantivo, y es de naturaleza adversaria (tecnología de otro Estado), no anómala.\n\nSu valor para el corpus es doble y calibrador. Primero, ilustra cómo un evento de combate real se convierte en relato UAP por la vía del lenguaje ('medusa', 'real alien sh*t') y la amplificación mediática, cuando la propia comunidad de inteligencia lee el episodio como un problema de capacidades enemigas. Segundo, es un recordatorio metodológico sobre la fiabilidad del testigo: un piloto con conmoción cerebral, bajo fuego y en plena eyección, es exactamente el escenario donde la percepción es menos confiable —algo que los propios analistas señalaron. El corpus lo incorpora como incidente de tier B con posterior dominado por la hipótesis adversaria, distinguiéndolo del vídeo 'medusa' de Irak 2018 (`jellyfish-iraq-2018`), que es un objeto captado por sensor infrarrojo y no una formación de drones reportada por un testigo.",
+  "whyMatters_en": "The case matters more for what it says about drone warfare than for what it adds to the UAP phenomenon. If the pilot's description is correct, the 'jellyfish' formation would be evidence of an Iranian networked-swarm capability —drones coordinated as a single system, with a hierarchy of large and small platforms— exceeding what had been attributed to Tehran, with immediate tactical consequences: it degrades the survivability of crewed fighters and forces a rethink of air defense. That is the substantive content, and it is adversarial in nature (another state's technology), not anomalous.\n\nIts value to the corpus is twofold and calibrating. First, it illustrates how a real combat event becomes a UAP story through language ('jellyfish', 'real alien sh*t') and media amplification, when the intelligence community itself reads the episode as a question of enemy capabilities. Second, it is a methodological reminder about witness reliability: a concussed pilot, under fire and mid-ejection, is exactly the scenario where perception is least reliable —something the analysts themselves flagged. The corpus incorporates it as a tier-B incident with a posterior dominated by the adversarial hypothesis, distinguishing it from the 2018 Iraq 'jellyfish' video (`jellyfish-iraq-2018`), which is an object captured by an infrared sensor rather than a drone formation reported by a witness.",
+  "evidence": [
+    "3 abr 2026: F-15E Strike Eagle de EE.UU. derribado sobre Irán durante la Operation Epic Fury (primera pérdida confirmada de un caza de EE.UU. sobre territorio iraní)",
+    "Tripulación rescatada: el piloto en horas por operaciones especiales; el WSO evadió captura >1 día antes de la extracción",
+    "Reporte exclusivo de CNN (23 jun 2026, 4 fuentes): el piloto describió en debriefings una formación de drones iraníes en forma de 'medusa' (drones mayores arriba, menores debajo como tentáculos)",
+    "Debate en la comunidad de inteligencia: capacidad de enjambre en red iraní más avanzada de lo estimado vs. UAP",
+    "Caveat de fiabilidad: el piloto sufrió una conmoción cerebral en la eyección; oficiales cuestionan la percepción en ese momento",
+    "Sin vídeo de sensor, telemetría ni radar publicados; testimonio de testigo único vía reporte periodístico, no documento primario",
+    "Lectura calibrada: hipótesis dominante = formación de drones adversarios (Irán), no fenómeno no humano; distinto del vídeo 'medusa' de Irak 2018"
+  ],
+  "evidence_en": [
+    "Apr 3, 2026: U.S. F-15E Strike Eagle shot down over Iran during Operation Epic Fury (first confirmed loss of a U.S. fighter over Iranian territory)",
+    "Crew rescued: the pilot within hours by special operations; the WSO evaded capture >1 day before extraction",
+    "Exclusive CNN report (Jun 23, 2026, 4 sources): the pilot described in debriefings an Iranian drone formation in a 'jellyfish' shape (larger drones above, smaller below like tentacles)",
+    "Intelligence-community debate: a more advanced Iranian networked-swarm capability than assessed vs. a UAP",
+    "Reliability caveat: the pilot suffered a concussion during ejection; officials question the perception at that moment",
+    "No published sensor video, telemetry or radar; single-witness account via a news report, not a primary document",
+    "Calibrated reading: dominant hypothesis = adversarial (Iranian) drone formation, not a non-human phenomenon; distinct from the 2018 Iraq 'jellyfish' video"
+  ],
+  "sources": [
+    {
+      "name": "CNN — Exclusive: Downed US pilot reported seeing Iranian drones swarm in 'jellyfish' formation (23 jun 2026)",
+      "url": "https://www.cnn.com/2026/06/23/politics/iran-drones-f-15-pilot-intelligence",
+      "note": "Reporte original (cuatro fuentes) sobre los debriefings de inteligencia del piloto."
+    },
+    {
+      "name": "The War Zone (TWZ) — What Was The 'Jellyfish-Like' Drone Swarm The Downed F-15E Pilot Reportedly Saw Over Iran?",
+      "url": "https://www.twz.com/air/what-was-the-jellyfish-like-drone-swarm-the-downed-f-15e-pilot-reportedly-saw-over-iran",
+      "note": "Análisis técnico de la hipótesis de enjambre en red y del contexto del derribo."
+    },
+    {
+      "name": "The Times of Israel — US pilot downed over Iran reported seeing jellyfish-like drone formation",
+      "url": "https://www.timesofisrael.com/us-pilot-downed-over-iran-reported-seeing-jellyfish-like-drone-formation-report/",
+      "note": "Cobertura corroborante con contexto del conflicto."
+    }
+  ]
+}
