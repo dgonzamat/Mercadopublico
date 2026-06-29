@@ -59,5 +59,14 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.06,
     "indet": 0.14
+  },
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Project%20Blue%20Book%20report%20-%201951-08-7273504-Lubbuck-Texas-978-.pdf?page=1&width=600",
+    "alt": "Primera página del expediente Project Blue Book sobre las Luces de Lubbock (Texas), agosto de 1951.",
+    "caption": "Expediente original Project Blue Book del caso Luces de Lubbock (agosto 1951) — investigación oficial de la USAF.",
+    "caption_en": "Original Project Blue Book case file for the Lubbock Lights (August 1951) — the USAF official investigation.",
+    "source": "USAF Project Blue Book (vía Wikimedia Commons)",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book_report_-_1951-08-7273504-Lubbuck-Texas-978-.pdf"
   }
 }
