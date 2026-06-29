@@ -63,6 +63,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   west: ["roosevelt-2014", "nimitz-2004"],
   knuth: ["nimitz-2004"],
   sturrock: ["trans-en-provence-1981"],
+  nickell: ["kelly-hopkinsville-1955"],
 
   // A — teóricos anclados al caso que estudiaron
   nolan: ["council-bluffs-1977", "american-cosmic-2017"],

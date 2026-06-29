@@ -3194,5 +3194,51 @@
         "url": "https://www.imdb.com/title/tt37000193/"
       }
     ]
+  },
+  {
+    "id": "nickell",
+    "name": "Joe Nickell",
+    "flag": "🇺🇸",
+    "born": 1944,
+    "death": 2024,
+    "section": "A",
+    "section_label": "Investigadores científicos (histórico)",
+    "section_label_en": "Scientific researchers (historical)",
+    "credentials": "PhD literatura/folklore Univ. Kentucky · Senior Research Fellow del Committee for Skeptical Inquiry (CSI)",
+    "credentials_en": "PhD in literature/folklore, Univ. of Kentucky · Senior Research Fellow at the Committee for Skeptical Inquiry (CSI)",
+    "bio_short": "El investigador escéptico más prolífico de su generación: durante más de cuatro décadas examinó in situ cientos de afirmaciones paranormales —del sudario de Turín a apariciones marianas y casos OVNI— bajo un método que llamó 'investigación, no debunking'. Como Senior Research Fellow del Committee for Skeptical Inquiry y autor de la columna 'Investigative Files' en la revista 'Skeptical Inquirer', sostuvo que casi todo misterio cede ante una explicación prosaica cuando se reconstruye con cuidado el episodio original. Para el asedio de Kelly-Hopkinsville (1955) propuso que las 'criaturas' fueron búhos cornudos ('great horned owls') defendiendo su nido, hipótesis hoy estándar entre los escépticos.",
+    "bio_short_en": "The most prolific skeptical investigator of his generation: for more than four decades he examined hundreds of paranormal claims on-site —from the Shroud of Turin to Marian apparitions and UFO cases— under a method he called 'investigation, not debunking'. As Senior Research Fellow at the Committee for Skeptical Inquiry and author of the 'Investigative Files' column in Skeptical Inquirer magazine, he argued that nearly every mystery yields to a prosaic explanation once the original episode is carefully reconstructed. For the Kelly-Hopkinsville siege (1955) he proposed that the 'creatures' were great horned owls defending their nest, a hypothesis now standard among skeptics.",
+    "works": [
+      {
+        "year": 1983,
+        "title": "Inquest on the Shroud of Turin",
+        "contribution": "Investigación forense que concluye que la imagen es una obra medieval, no una impronta milagrosa",
+        "contribution_en": "Forensic investigation concluding the image is a medieval artwork, not a miraculous imprint"
+      },
+      {
+        "year": 1995,
+        "title": "Entities: Angels, Spirits, Demons, and Other Alien Beings",
+        "contribution": "Marco perceptual-psicológico de los encuentros con 'entidades' (parálisis del sueño, hipnagogia, expectativa)",
+        "contribution_en": "Perceptual-psychological framework for 'entity' encounters (sleep paralysis, hypnagogia, expectation)"
+      },
+      {
+        "year": 2006,
+        "title": "Siege of the 'Little Green Men' (Skeptical Inquirer)",
+        "contribution": "Reexamen de Kelly-Hopkinsville: las 'criaturas' como búhos cornudos territoriales",
+        "contribution_en": "Re-examination of Kelly-Hopkinsville: the 'creatures' as territorial great horned owls"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Joe Nickell, 'Siege of the \"Little Green Men\": The 1955 Kelly, Kentucky, Incident', Skeptical Inquirer (2006)",
+        "note": "Fuente de la hipótesis del búho cornudo para el caso.",
+        "note_en": "Source of the great-horned-owl hypothesis for the case."
+      },
+      {
+        "name": "Committee for Skeptical Inquiry — perfil de Senior Research Fellow",
+        "note": "Afiliación institucional y rol editorial en Skeptical Inquirer.",
+        "note_en": "Institutional affiliation and editorial role at Skeptical Inquirer."
+      }
+    ]
   }
 ]
