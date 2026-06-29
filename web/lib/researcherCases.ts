@@ -49,6 +49,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
   haines: ["lago-de-cote-1971", "chicago-ohare-2006"],
   maccabee: ["jal1628-1986", "kaikoura-1978"],
+  villarroel: ["poss-i-transients-2025"],
+  hastings: ["malmstrom-1967", "minot-afb-1968", "loring-afb-1975"],
+  randles: ["todmorden-godfrey-1980", "rendlesham-1980"],
   salas: ["malmstrom-1967"],
   callahan: ["jal1628-1986"],
   schuessler: ["cash-landrum-1980"],
@@ -84,6 +87,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   mellon: ["wilson-davis-2002"],
   fravor: ["nimitz-2004", "grusch-testimony-2023"],
   dietrich: ["nimitz-2004"],
+  "kevin-day": ["nimitz-2004"],
   "santa-maria": ["la-joya-arequipa-1980"],
   choy: ["chulucanas-2001", "oifaa-difaa-peru", "lima-difaa-2019"],
   pope: ["rendlesham-1980", "cosford-1993"],
@@ -100,6 +104,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   luna: ["grusch-testimony-2023", "yemen-orb-2024"],
   burchett: ["grusch-testimony-2023"],
   moskowitz: ["grusch-testimony-2023"],
+  schumer: ["uap-disclosure-act-2025"],
+  gillibrand: ["uap-disclosure-act-2025"],
+  rebelo: ["aldo-rebelo-disclosure-2026"],
 
   // D — periodistas
   coulthart: [
