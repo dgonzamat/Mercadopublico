@@ -87,5 +87,14 @@
       "name": "Hynek, J. A. — 'The UFO Experience: A Scientific Inquiry' (1972)",
       "note": "Reporte del consultor científico oficial tras dejar el programa."
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Project%20Blue%20Book%2C%20complete%20status%20reports.pdf?page=1&width=600",
+    "alt": "Portada del compilado de informes de estado de Project Blue Book (USAF).",
+    "caption": "Compilado oficial de los Status Reports de Project Blue Book — el programa de la USAF que investigó OVNIs entre 1952 y 1969.",
+    "caption_en": "Official compilation of Project Blue Book Status Reports — the USAF program that investigated UFOs from 1952 to 1969.",
+    "source": "USAF Project Blue Book (vía Wikimedia Commons)",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Project_Blue_Book,_complete_status_reports.pdf"
+  }
 }

@@ -16,10 +16,10 @@
   "probability": 75,
   "posterior": {
     "mundano_natural": 0.05,
-    "humana_clasificada": 0.20,
+    "humana_clasificada": 0.2,
     "adversaria": 0,
     "nohumano_encubierto": 0,
-    "nohumano_abierto": 0.40,
+    "nohumano_abierto": 0.4,
     "indet": 0.35
   },
   "summary": "El equipo de Project Sign concluyó en un documento TOP SECRET de 1948 que la hipótesis interplanetaria era la explicación más probable del fenómeno; el General Vandenberg rechazó la evaluación y ordenó destruirla, sin refutación científica documentada.",
@@ -71,5 +71,14 @@
       "name": "Hall, R. — UFO Evidence Vol. II (NICAP 2001)",
       "note": "Reconstruction of the document"
     }
-  ]
+  ],
+  "primaryDocument": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Project%20Sign%20report.pdf?page=1&width=600",
+    "alt": "Portada del informe final del Project Sign (USAF, feb 1949).",
+    "caption": "Informe final del Project Sign (USAF, feb 1949), el programa que produjo el célebre ‘Estimate of the Situation’ (cuyo original fue destruido); es la fuente primaria superviviente más cercana.",
+    "caption_en": "Final report of Project Sign (USAF, Feb 1949), the program that produced the famous ‘Estimate of the Situation’ (whose original was destroyed); it is the closest surviving primary source.",
+    "source": "USAF Project Sign (vía Wikimedia Commons)",
+    "license": "Dominio público · US Government work",
+    "href": "https://commons.wikimedia.org/wiki/File:Project_Sign_report.pdf"
+  }
 }
