@@ -50,7 +50,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   haines: ["lago-de-cote-1971", "chicago-ohare-2006"],
   maccabee: ["jal1628-1986", "kaikoura-1978"],
   villarroel: ["poss-i-transients-2025"],
-  hastings: ["malmstrom-1967", "minot-afb-1968", "loring-afb-1975"],
+  hastings: ["malmstrom-1967", "minot-afb-1968", "loring-afb-1975", "big-sur-vandenberg-1964"],
   randles: ["todmorden-godfrey-1980", "rendlesham-1980"],
   salas: ["malmstrom-1967"],
   callahan: ["jal1628-1986"],
