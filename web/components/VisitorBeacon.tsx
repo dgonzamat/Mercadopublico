@@ -102,7 +102,14 @@ export function VisitorBeacon() {
     if (!sb || !pathname || skipTracking()) return;
     if (lastPath.current === pathname) return;
     lastPath.current = pathname;
-    void sb.rpc("increment_page", { p: pathname });
+    // supabase-js v2: `.rpc()` devuelve un builder PEREZOSO (thenable) que solo
+    // dispara la petición HTTP al hacer `.then()`/`await`. Un `void sb.rpc(...)`
+    // suelto NUNCA enviaba el request (por eso el país —que sí hace await—
+    // contaba y las páginas no). Encadenamos `.then` para ejecutarlo.
+    void sb.rpc("increment_page", { p: pathname }).then(
+      () => {},
+      () => {},
+    );
   }, [pathname]);
 
   // Suscriptor activo: si el visitante tiene sesión (usuario autenticado), lo
