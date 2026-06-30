@@ -146,9 +146,6 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   velasco: ["geipan-gepan-france", "trans-en-provence-1981"],
   "de-brouwer": ["belgian-wave-1989"],
   strand: ["hessdalen-1981"],
-
-  // Canadá — actor político / ecosistema de divulgación
-  hellyer: ["paul-hellyer-disclosure-claims"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
