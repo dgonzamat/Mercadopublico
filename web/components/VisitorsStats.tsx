@@ -33,13 +33,13 @@ function Card({
   sub?: React.ReactNode;
 }) {
   return (
-    <div className="rounded border border-border bg-panel px-3 py-3">
-      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+    <div className="border-2 border-text bg-panel px-3 py-3">
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
         {label}
       </p>
       <p className="mt-1 text-xl font-semibold text-text">{value}</p>
       {sub && (
-        <p className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-muted">
+        <p className="mt-0.5 font-mono text-xs uppercase tracking-widest text-muted">
           {sub}
         </p>
       )}
@@ -88,8 +88,8 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
 
       {/* Tendencia diaria */}
       {dailyTotals.length >= 2 && (
-        <div className="rounded border border-border bg-panel px-3 py-3">
-          <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted">
+        <div className="border-2 border-text bg-panel px-3 py-3">
+          <p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted">
             <T es="Tendencia diaria" en="Daily trend" />
           </p>
           <div
@@ -100,14 +100,14 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
             {dailyTotals.map((d) => (
               <div
                 key={d.day}
-                className="flex-1 rounded-t bg-accent/70"
+                className="flex-1 bg-accent/70"
                 style={{ height: `${Math.max((d.count / maxDay) * 100, 3)}%` }}
                 title={`${fmtDay(d.day, "es")} · ${d.count}`}
                 aria-hidden
               />
             ))}
           </div>
-          <div className="mt-1 flex justify-between font-mono text-[10px] uppercase tracking-widest text-muted">
+          <div className="mt-1 flex justify-between font-mono text-xs uppercase tracking-widest text-muted">
             <T
               es={fmtDay(dailyTotals[0].day, "es")}
               en={fmtDay(dailyTotals[0].day, "en")}
@@ -123,7 +123,7 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
       {/* Desglose por continente */}
       {byContinent.length > 1 && (
         <div className="space-y-1.5">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
             <T es="Por continente" en="By continent" />
           </p>
           <ul className="space-y-1.5">
@@ -138,7 +138,7 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
               return (
                 <li
                   key={r.key}
-                  className="grid grid-cols-[1.5rem_1fr_auto] items-center gap-3 border-b border-border/60 py-1.5"
+                  className="grid grid-cols-[1.5rem_1fr_auto] items-center gap-3 border-b border-text/15 py-1.5"
                 >
                   <span className="text-base leading-none" aria-hidden>
                     {glyph}
@@ -148,7 +148,7 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
                       <T es={name.es} en={name.en} />
                     </span>
                     <span
-                      className="mt-1 block h-1 rounded bg-accent"
+                      className="mt-1 block h-1.5 bg-accent"
                       style={{ width: `${Math.max(barPct, 2)}%` }}
                       aria-hidden
                     />

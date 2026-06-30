@@ -242,7 +242,7 @@ export function VisitorsPanel() {
 
   if (state === "unconfigured" || state === "error") {
     return (
-      <p className="rounded border border-border bg-panel px-4 py-6 text-sm text-muted">
+      <p className="border-2 border-text bg-panel px-4 py-6 text-sm text-muted">
         <T
           es="No se pudieron cargar las estadísticas en este momento."
           en="Could not load the statistics right now."
@@ -252,10 +252,42 @@ export function VisitorsPanel() {
   }
 
   if (state === "loading") {
+    // Skeleton que imita el layout (filtros + tarjetas + listas) para evitar
+    // el salto de contenido cuando llegan los datos. animate-pulse en bloques.
     return (
-      <p className="px-1 py-6 font-mono text-xs uppercase tracking-widest text-muted">
-        <T es="Cargando…" en="Loading…" />
-      </p>
+      <section
+        className="space-y-5"
+        aria-busy="true"
+        aria-label="Cargando estadísticas"
+      >
+        <div className="flex flex-wrap gap-2">
+          {PERIODS.map((p) => (
+            <div
+              key={p.key}
+              className="h-11 w-20 animate-pulse border-2 border-text/30 bg-panel"
+            />
+          ))}
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {[0, 1, 2, 3].map((i) => (
+            <div
+              key={i}
+              className="h-20 animate-pulse border-2 border-text/30 bg-panel"
+            />
+          ))}
+        </div>
+        <div className="space-y-2">
+          {[0, 1, 2, 3, 4].map((i) => (
+            <div
+              key={i}
+              className="h-8 animate-pulse border-b border-text/15 bg-panel/60"
+            />
+          ))}
+        </div>
+        <span className="sr-only">
+          <T es="Cargando…" en="Loading…" />
+        </span>
+      </section>
     );
   }
 
@@ -282,7 +314,7 @@ export function VisitorsPanel() {
               className={`inline-flex min-h-[44px] items-center border px-4 font-mono text-xs uppercase tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                 active
                   ? "border-accent bg-accent text-bg"
-                  : "border-border bg-panel text-muted hover:text-text"
+                  : "border-text/30 bg-panel text-muted hover:text-text"
               }`}
             >
               <T es={p.es} en={p.en} />
@@ -298,7 +330,7 @@ export function VisitorsPanel() {
       <VisitorsSubscribers data={subscribers} />
 
       {/* Tabla por país */}
-      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
         <T es="Por país" en="By country" />
       </p>
       <VisitorsTable rows={rows} total={total} />
@@ -318,7 +350,7 @@ export function VisitorsPanel() {
         </p>
       )}
 
-      <div className="border-t border-border/60 pt-4">
+      <div className="border-t-2 border-text pt-4">
         <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
           <T
             es="Agregado por país · sin cookies ni IPs"

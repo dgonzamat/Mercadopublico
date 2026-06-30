@@ -21,7 +21,7 @@ export function VisitorsTable({
 }) {
   if (rows.length === 0) {
     return (
-      <p className="rounded border border-border bg-panel px-4 py-6 text-sm text-muted">
+      <p className="border-2 border-text bg-panel px-4 py-6 text-sm text-muted">
         <T
           es="Sin visitas en este periodo."
           en="No visits in this period."
@@ -40,7 +40,7 @@ export function VisitorsTable({
         return (
           <li
             key={r.country}
-            className="grid grid-cols-[2rem_1fr_auto] items-center gap-3 border-b border-border/60 py-1.5"
+            className="grid grid-cols-[2rem_1fr_auto] items-center gap-3 border-b border-text/15 py-1.5"
           >
             <span className="text-xl leading-none" aria-hidden>
               {flagEmoji(r.country)}
@@ -53,7 +53,7 @@ export function VisitorsTable({
                 />
               </span>
               <span
-                className="mt-1 block h-1 rounded bg-accent"
+                className="mt-1 block h-1.5 bg-accent"
                 style={{ width: `${Math.max(barPct, 2)}%` }}
                 aria-hidden
               />
