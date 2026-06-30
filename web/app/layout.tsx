@@ -83,15 +83,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(websiteJsonLd()) }}
         />
-        {/* Cloudflare Web Analytics — sin cookies ni datos personales, así que
-            no requiere el banner de consentimiento (a diferencia de GA4) y se
-            carga en todas las páginas. Mide visitas reales de todas las fuentes.
-            El token es público por diseño (va en el cliente). */}
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "7bd682d9ce32465087e80f899114d2a8"}'
-        />
       </head>
       <body className="min-h-screen font-sans">
         <AuthProvider>
