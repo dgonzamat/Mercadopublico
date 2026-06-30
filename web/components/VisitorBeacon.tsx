@@ -5,18 +5,6 @@ import { usePathname } from "next/navigation";
 import { supabase } from "@/lib/supabase/client";
 import { fireRpc } from "@/lib/supabase/track";
 
-/** Clave del opt-out: si está en "1" el visitante pidió no ser contado. */
-const NOTRACK_KEY = "uap-notrack";
-
-/** ¿El visitante desactivó el conteo? (toggle en /visitantes). */
-function trackingDisabled(): boolean {
-  try {
-    return localStorage.getItem(NOTRACK_KEY) === "1";
-  } catch {
-    return false;
-  }
-}
-
 /**
  * ¿Es un bot / crawler? Googlebot y similares ejecutan JS y dispararían el
  * beacon, inflando el conteo (p. ej. "visita desde EE.UU." = Googlebot). Se
@@ -34,9 +22,9 @@ function isBot(): boolean {
   }
 }
 
-/** No contar: opt-out del visitante o bot detectado. */
+/** No contar: solo bots/crawlers (el sitio es público; no hay opt-out propio). */
 function skipTracking(): boolean {
-  return trackingDisabled() || isBot();
+  return isBot();
 }
 
 /**
