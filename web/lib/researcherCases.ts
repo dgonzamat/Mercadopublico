@@ -72,6 +72,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
 
   // B — insiders / militares
   ruppelt: [
+    "kenneth-arnold-1947",
     "twining-memo-1947",
     "estimate-situation-1948",
     "mantell-1948",
