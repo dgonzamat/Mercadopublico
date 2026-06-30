@@ -22,9 +22,28 @@ function isBot(): boolean {
   }
 }
 
-/** No contar: solo bots/crawlers (el sitio es público; no hay opt-out propio). */
+/**
+ * Opt-out del DUEÑO (no público, sin banner): excluye las visitas propias del
+ * conteo. Se activa una vez por dispositivo visitando `?notrack=1` (y se
+ * revierte con `?notrack=0`); la marca persiste en localStorage. Al leerla,
+ * primero sincroniza el parámetro de URL → localStorage, así la propia visita
+ * que activa el opt-out ya no se cuenta.
+ */
+const NOTRACK_KEY = "uap-notrack";
+function ownerOptedOut(): boolean {
+  try {
+    const p = new URLSearchParams(window.location.search).get("notrack");
+    if (p === "1") localStorage.setItem(NOTRACK_KEY, "1");
+    else if (p === "0") localStorage.removeItem(NOTRACK_KEY);
+    return localStorage.getItem(NOTRACK_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+/** No contar: bots/crawlers o el opt-out del dueño (`?notrack=1`). */
 function skipTracking(): boolean {
-  return isBot();
+  return isBot() || ownerOptedOut();
 }
 
 /**
