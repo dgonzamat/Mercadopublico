@@ -24,10 +24,10 @@ export function VisitorsPages({
   if (rows.length === 0) {
     return (
       <div className="space-y-1.5">
-        <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+        <p className="font-mono text-xs uppercase tracking-widest text-muted">
           <T es="Páginas más visitadas" en="Most visited pages" />
         </p>
-        <p className="rounded border border-border bg-panel px-4 py-4 text-sm text-muted">
+        <p className="border-2 border-text bg-panel px-4 py-4 text-sm text-muted">
           <T
             es="Aún sin datos de páginas en este periodo."
             en="No page data in this period yet."
@@ -43,7 +43,7 @@ export function VisitorsPages({
 
   return (
     <div className="space-y-1.5">
-      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
         <T es="Páginas más visitadas" en="Most visited pages" />
       </p>
       <ul className="space-y-1.5">
@@ -53,7 +53,7 @@ export function VisitorsPages({
           return (
             <li
               key={r.path}
-              className="grid grid-cols-[1fr_auto] items-center gap-3 border-b border-border/60 py-1.5"
+              className="grid grid-cols-[1fr_auto] items-center gap-3 border-b border-text/15 py-1.5"
             >
               <div className="min-w-0">
                 <Link
@@ -66,7 +66,7 @@ export function VisitorsPages({
                   />
                 </Link>
                 <span
-                  className="mt-1 block h-1 rounded bg-accent"
+                  className="mt-1 block h-1.5 bg-accent"
                   style={{ width: `${Math.max(barPct, 2)}%` }}
                   aria-hidden
                 />

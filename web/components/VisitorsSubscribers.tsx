@@ -28,21 +28,21 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
 
   return (
     <div className="space-y-3">
-      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
         <T es="Suscriptores" en="Subscribers" />
       </p>
 
       <div className="grid grid-cols-2 gap-2">
-        <div className="rounded border border-border bg-panel px-3 py-3">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+        <div className="border-2 border-text bg-panel px-3 py-3">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
             <T es="Registrados" en="Registered" />
           </p>
           <p className="mt-1 text-xl font-semibold text-text">
             {total === null ? "—" : total.toLocaleString()}
           </p>
         </div>
-        <div className="rounded border border-border bg-panel px-3 py-3">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+        <div className="border-2 border-text bg-panel px-3 py-3">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
             <T es="Activos hoy" en="Active today" />
           </p>
           <p className="mt-1 text-xl font-semibold text-text">
@@ -52,8 +52,8 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
       </div>
 
       {daily.length >= 2 && (
-        <div className="rounded border border-border bg-panel px-3 py-3">
-          <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted">
+        <div className="border-2 border-text bg-panel px-3 py-3">
+          <p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted">
             <T es="Suscriptores activos / día" en="Active subscribers / day" />
           </p>
           <div
@@ -64,7 +64,7 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
             {daily.map((d) => (
               <div
                 key={d.day}
-                className="flex-1 rounded-t bg-accent/70"
+                className="flex-1 bg-accent/70"
                 style={{ height: `${Math.max((d.count / maxDay) * 100, 3)}%` }}
                 title={`${fmtDay(d.day, "es")} · ${d.count}`}
                 aria-hidden
