@@ -16,19 +16,11 @@ import {
 } from "@/components/VisitorsSubscribers";
 import { continentOf, type Continent } from "@/lib/continents";
 
-interface DailyRow {
-  day: string; // YYYY-MM-DD
+interface CountryRow {
   country: string;
   count: number;
 }
-
-interface PageDailyRow {
-  day: string; // YYYY-MM-DD
-  path: string;
-  count: number;
-}
-
-interface SubDailyRow {
+interface DayRow {
   day: string; // YYYY-MM-DD
   count: number;
 }
@@ -50,10 +42,28 @@ function utcDayMinus(days: number): string {
   return d.toISOString().slice(0, 10);
 }
 
+/** Fecha de corte (UTC) para cada periodo; null = todo el histórico. */
+function cutoffFor(period: Period): string | null {
+  switch (period) {
+    case "today":
+      return utcDayMinus(0);
+    case "7d":
+      return utcDayMinus(6);
+    case "30d":
+      return utcDayMinus(29);
+    default:
+      return null;
+  }
+}
+
 export function VisitorsPanel() {
-  const [daily, setDaily] = useState<DailyRow[]>([]);
-  const [pagesDaily, setPagesDaily] = useState<PageDailyRow[]>([]);
-  const [subDaily, setSubDaily] = useState<SubDailyRow[]>([]);
+  // Agregados YA calculados por el servidor para el periodo activo (RPCs
+  // *_agg). No traemos filas crudas: PostgREST corta en 1000 filas y la
+  // agregación en cliente se truncaba en silencio al crecer las tablas.
+  const [countryRows, setCountryRows] = useState<CountryRow[]>([]);
+  const [dayRows, setDayRows] = useState<DayRow[]>([]);
+  const [pageRowsRaw, setPageRowsRaw] = useState<PageRow[]>([]);
+  const [subDayRows, setSubDayRows] = useState<DayRow[]>([]);
   const [subTotal, setSubTotal] = useState<number | null>(null);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [period, setPeriod] = useState<Period>("all");
@@ -61,72 +71,80 @@ export function VisitorsPanel() {
     supabase ? "loading" : "unconfigured",
   );
 
+  // El total de suscriptores casi no cambia: una sola vez, no por periodo.
+  useEffect(() => {
+    const sb = supabase;
+    if (!sb) return;
+    let alive = true;
+    void sb.rpc("subscriber_total").then(({ data, error }) => {
+      if (!alive || error) return;
+      setSubTotal(Number(data));
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  // Carga de agregados por periodo (re-fetch al cambiar de periodo). No
+  // reseteamos a "loading" en cada cambio para no parpadear el skeleton: se
+  // mantienen los datos previos hasta que llegan los nuevos.
   useEffect(() => {
     const sb = supabase;
     if (!sb) return;
     let alive = true;
     let lastLoad = 0;
+    const since = cutoffFor(period);
 
-    // El total de suscriptores casi no cambia: se consulta una sola vez, no en
-    // cada refetch del conteo de visitas.
-    void sb.rpc("subscriber_total").then(({ data, error }) => {
-      if (!alive || error) return;
-      setSubTotal(Number(data));
-    });
+    const num = (v: unknown) => Number(v);
 
     const load = () => {
       lastLoad = Date.now();
       void sb
-        .from("visits_daily")
-        .select("day,country,count")
+        .rpc("visits_country_agg", { p_since: since })
         .then(({ data, error }) => {
           if (!alive) return;
           if (error || !data) {
             setState("error");
             return;
           }
-          const rows = (data as Array<{
-            day: string;
-            country: string;
-            count: number | string;
-          }>).map((r) => ({
-            day: r.day,
-            country: r.country,
-            count: Number(r.count),
-          }));
-          setDaily(rows);
+          const rows = (data as Array<{ country: string; count: unknown }>).map(
+            (r) => ({ country: r.country, count: num(r.count) }),
+          );
+          setCountryRows(rows);
           setState(rows.length ? "ok" : "empty");
         });
 
+      void sb.rpc("visits_day_agg", { p_since: since }).then(({ data }) => {
+        if (!alive || !data) return;
+        setDayRows(
+          (data as Array<{ day: string; count: unknown }>).map((r) => ({
+            day: r.day,
+            count: num(r.count),
+          })),
+        );
+      });
+
       void sb
-        .from("visits_pages_daily")
-        .select("day,path,count")
+        .rpc("visits_pages_agg", { p_since: since, p_limit: 50 })
         .then(({ data }) => {
           if (!alive || !data) return;
-          setPagesDaily(
-            (data as Array<{
-              day: string;
-              path: string;
-              count: number | string;
-            }>).map((r) => ({
-              day: r.day,
+          setPageRowsRaw(
+            (data as Array<{ path: string; count: unknown }>).map((r) => ({
               path: r.path,
-              count: Number(r.count),
+              count: num(r.count),
             })),
           );
         });
 
-      void sb
-        .from("subscriber_active_daily")
-        .select("day,count")
-        .then(({ data }) => {
-          if (!alive || !data) return;
-          setSubDaily(
-            (data as Array<{ day: string; count: number | string }>).map(
-              (r) => ({ day: r.day, count: Number(r.count) }),
-            ),
-          );
-        });
+      void sb.rpc("subscriber_day_agg", { p_since: since }).then(({ data }) => {
+        if (!alive || !data) return;
+        setSubDayRows(
+          (data as Array<{ day: string; count: unknown }>).map((r) => ({
+            day: r.day,
+            count: num(r.count),
+          })),
+        );
+      });
 
       void sb
         .from("visits_by_country")
@@ -142,12 +160,9 @@ export function VisitorsPanel() {
     };
 
     load();
-    // Recarga varias veces tras el conteo del beacon para ver la propia visita:
-    // la geo-IP encadena varios proveedores y puede tardar unos segundos, así
-    // que un solo refetch a los 3.5s a veces llega antes que el increment.
+    // Recarga unas veces tras el beacon para ver la propia visita: la geo-IP
+    // encadena proveedores y puede tardar unos segundos.
     const timers = [3500, 7000, 12000].map((ms) => setTimeout(load, ms));
-    // También al volver a la pestaña, pero con throttle: si recién cargamos
-    // (<20s) no repetimos las consultas en cada cambio de foco.
     const onVisible = () => {
       if (
         document.visibilityState === "visible" &&
@@ -162,52 +177,25 @@ export function VisitorsPanel() {
       timers.forEach(clearTimeout);
       document.removeEventListener("visibilitychange", onVisible);
     };
-  }, []);
+  }, [period]);
 
   const { rows, total, stats, pageRows, subscribers } = useMemo(() => {
     const today = utcDayMinus(0);
-    const cutoff =
-      period === "today"
-        ? today
-        : period === "7d"
-          ? utcDayMinus(6)
-          : period === "30d"
-            ? utcDayMinus(29)
-            : "0000-01-01";
-    const inPeriod = (day: string) => (period === "all" ? true : day >= cutoff);
 
-    const byPath: Record<string, number> = {};
-    for (const r of pagesDaily) {
-      if (inPeriod(r.day)) byPath[r.path] = (byPath[r.path] ?? 0) + r.count;
-    }
-    const pages: PageRow[] = Object.entries(byPath)
-      .map(([path, count]) => ({ path, count }))
-      .sort((a, b) => b.count - a.count);
-
-    const byCountry: Record<string, number> = {};
-    const byDay: Record<string, number> = {};
-    const byRegion: Record<string, number> = {};
-    for (const r of daily) {
-      const inRange = period === "all" ? true : r.day >= cutoff;
-      if (!inRange) continue;
-      byCountry[r.country] = (byCountry[r.country] ?? 0) + r.count;
-      byDay[r.day] = (byDay[r.day] ?? 0) + r.count;
-      const region: Continent | "XX" = continentOf(r.country) ?? "XX";
-      byRegion[region] = (byRegion[region] ?? 0) + r.count;
-    }
-
-    const list: VisitorRow[] = Object.entries(byCountry)
-      .map(([country, count]) => ({ country, count }))
-      .sort((a, b) => b.count - a.count);
+    const list: VisitorRow[] = countryRows; // ya viene ordenado desc del server
     const totalVisits = list.reduce((s, r) => s + r.count, 0);
 
-    const dailyTotals = Object.entries(byDay)
-      .map(([day, count]) => ({ day, count }))
-      .sort((a, b) => a.day.localeCompare(b.day));
+    const dailyTotals = dayRows; // ya viene ascendente por día
     const peak = dailyTotals.reduce<{ day: string; count: number } | null>(
       (best, d) => (!best || d.count > best.count ? d : best),
       null,
     );
+
+    const byRegion: Record<string, number> = {};
+    for (const r of countryRows) {
+      const region: Continent | "XX" = continentOf(r.country) ?? "XX";
+      byRegion[region] = (byRegion[region] ?? 0) + r.count;
+    }
     const byContinent = Object.entries(byRegion)
       .map(([key, count]) => ({ key: key as Continent | "XX", count }))
       .sort((a, b) => b.count - a.count);
@@ -221,24 +209,20 @@ export function VisitorsPanel() {
       byContinent,
     };
 
-    const subDailyInPeriod = subDaily
-      .filter((r) => inPeriod(r.day))
-      .map((r) => ({ day: r.day, count: r.count }))
-      .sort((a, b) => a.day.localeCompare(b.day));
     const subsData: VisitorsSubscribersData = {
       total: subTotal,
-      activeToday: subDaily.find((r) => r.day === today)?.count ?? 0,
-      daily: subDailyInPeriod,
+      activeToday: subDayRows.find((r) => r.day === today)?.count ?? 0,
+      daily: subDayRows,
     };
 
     return {
       rows: list,
       total: totalVisits,
       stats: statsData,
-      pageRows: pages,
+      pageRows: pageRowsRaw,
       subscribers: subsData,
     };
-  }, [daily, pagesDaily, subDaily, subTotal, period]);
+  }, [countryRows, dayRows, pageRowsRaw, subDayRows, subTotal]);
 
   if (state === "unconfigured" || state === "error") {
     return (
@@ -292,17 +276,13 @@ export function VisitorsPanel() {
   }
 
   // Nota: con state === "empty" (cero visitas) NO cortamos: mostramos el panel
-  // completo igual, así se ven los filtros, el bloque de suscriptores y el
-  // toggle. Cada sección tiene su propio estado vacío.
+  // completo igual, así se ven los filtros y el bloque de suscriptores. Cada
+  // sección tiene su propio estado vacío.
 
   return (
     <section className="space-y-5">
       {/* Filtro de periodo */}
-      <div
-        className="flex flex-wrap gap-2"
-        role="group"
-        aria-label="Periodo"
-      >
+      <div className="flex flex-wrap gap-2" role="group" aria-label="Periodo">
         {PERIODS.map((p) => {
           const active = p.key === period;
           return (
