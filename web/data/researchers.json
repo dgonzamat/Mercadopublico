@@ -3286,5 +3286,38 @@
         "note_en": "Primary source of the alien-species claims."
       }
     ]
+  },
+  {
+    "id": "kono",
+    "name": "Taro Kono",
+    "flag": "🇯🇵",
+    "born": 1963,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Ministro de Defensa de Japón (2019-2020) · canciller (2017-2019) · figura del Partido Liberal Democrático (PLD)",
+    "credentials_en": "Minister of Defense of Japan (2019-2020) · Foreign Minister (2017-2019) · figure of the Liberal Democratic Party (LDP)",
+    "bio_short": "Político japonés del PLD, conocido por su estilo directo y su presencia internacional. Como Ministro de Defensa, en septiembre de 2020 —días después de que la Marina de EE.UU. liberara oficialmente los videos FLIR— ordenó a las Fuerzas Aéreas de Autodefensa estandarizar el registro y reporte de fenómenos aéreos no identificados, lo que se concretó en la directiva formal del Ministerio de Defensa del 14 de septiembre de 2020. Es el primer paso institucional de Japón hacia un protocolo UAP, hecho desde la lógica de seguridad del espacio aéreo —no de la creencia: el propio Kono se declaró escéptico sobre los OVNIs, pero juzgó que la cadena de mando debía estar preparada.",
+    "bio_short_en": "Japanese LDP politician, known for his direct style and international presence. As Minister of Defense, in September 2020 —days after the U.S. Navy officially released the FLIR videos— he ordered the Air Self-Defense Force to standardize the recording and reporting of unidentified aerial phenomena, which took shape in the Ministry of Defense's formal directive of September 14, 2020. It is Japan's first institutional step toward a UAP protocol, taken from an airspace-security logic —not from belief: Kono himself declared he was skeptical about UFOs, but judged that the chain of command should be prepared.",
+    "works": [
+      {
+        "year": 2020,
+        "title": "Directiva UAP del Ministerio de Defensa de Japón (JASDF)",
+        "contribution": "Ordenó el primer procedimiento formal japonés para filmar, documentar y reportar fenómenos aéreos no identificados",
+        "contribution_en": "Ordered Japan's first formal procedure to film, document, and report unidentified aerial phenomena"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Reuters — Japan's military to develop procedures for UFO encounters (2020)",
+        "note": "Fuente primaria del anuncio de Kono y la directiva del Ministerio de Defensa.",
+        "note_en": "Primary source of Kono's announcement and the Ministry of Defense directive."
+      },
+      {
+        "name": "The Japan Times — Defense Minister Taro Kono on UFO protocols (2020)",
+        "note": "Cobertura del contexto (videos FLIR de la Marina de EE.UU.) y del escepticismo declarado de Kono.",
+        "note_en": "Coverage of the context (U.S. Navy FLIR videos) and Kono's declared skepticism."
+      }
+    ]
   }
 ]

@@ -146,6 +146,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   velasco: ["geipan-gepan-france", "trans-en-provence-1981"],
   "de-brouwer": ["belgian-wave-1989"],
   strand: ["hessdalen-1981"],
+
+  // Japón — actor político / directiva UAP del Ministerio de Defensa
+  kono: ["japan-jai-directive-2020"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
