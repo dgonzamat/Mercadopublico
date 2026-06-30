@@ -83,3 +83,8 @@ grant execute on function public.visits_country_agg(date) to anon, authenticated
 grant execute on function public.visits_day_agg(date) to anon, authenticated;
 grant execute on function public.visits_pages_agg(date, int) to anon, authenticated;
 grant execute on function public.subscriber_day_agg(date) to anon, authenticated;
+
+-- Forzar el reload del schema-cache de PostgREST: sin esto, justo tras aplicar
+-- la migración las RPCs nuevas pueden no exponerse aún (404) y el panel cae a
+-- estado "error" hasta el siguiente reload automático.
+notify pgrst, 'reload schema';
