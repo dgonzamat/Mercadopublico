@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { supabase } from "@/lib/supabase/client";
+import { fireRpc } from "@/lib/supabase/track";
 
 /** Clave del opt-out: si está en "1" el visitante pidió no ser contado. */
 const NOTRACK_KEY = "uap-notrack";
@@ -102,14 +103,10 @@ export function VisitorBeacon() {
     if (!sb || !pathname || skipTracking()) return;
     if (lastPath.current === pathname) return;
     lastPath.current = pathname;
-    // supabase-js v2: `.rpc()` devuelve un builder PEREZOSO (thenable) que solo
-    // dispara la petición HTTP al hacer `.then()`/`await`. Un `void sb.rpc(...)`
-    // suelto NUNCA enviaba el request (por eso el país —que sí hace await—
-    // contaba y las páginas no). Encadenamos `.then` para ejecutarlo.
-    void sb.rpc("increment_page", { p: pathname }).then(
-      () => {},
-      () => {},
-    );
+    // `fireRpc` ejecuta el builder perezoso de supabase-js (ver lib/supabase/track):
+    // un `void sb.rpc(...)` suelto no enviaba la petición y el conteo de páginas
+    // se perdía en silencio.
+    fireRpc(sb, "increment_page", { p: pathname });
   }, [pathname]);
 
   // Suscriptor activo: si el visitante tiene sesión (usuario autenticado), lo
