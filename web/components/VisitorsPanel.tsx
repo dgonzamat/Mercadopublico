@@ -14,7 +14,6 @@ import {
   VisitorsSubscribers,
   type VisitorsSubscribersData,
 } from "@/components/VisitorsSubscribers";
-import { TrackingToggle } from "@/components/TrackingToggle";
 import { continentOf, type Continent } from "@/lib/continents";
 
 interface DailyRow {
@@ -319,14 +318,13 @@ export function VisitorsPanel() {
         </p>
       )}
 
-      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border/60 pt-4">
+      <div className="border-t border-border/60 pt-4">
         <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
           <T
             es="Agregado por país · sin cookies ni IPs"
             en="Aggregated by country · no cookies or IPs"
           />
         </p>
-        <TrackingToggle />
       </div>
     </section>
   );
