@@ -8,7 +8,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { VisitorBeacon } from "@/components/VisitorBeacon";
-import { CookieConsent } from "@/components/CookieConsent";
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import { STATS } from "@/lib/siteStats";
 import { BUILD_VERSION } from "@/lib/version";
@@ -84,8 +83,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(websiteJsonLd()) }}
         />
         {/* Cloudflare Web Analytics — sin cookies ni datos personales, así que
-            no requiere el banner de consentimiento (a diferencia de GA4) y se
-            carga en todas las páginas. Mide visitas reales de todas las fuentes.
+            no requiere banner de consentimiento y se carga en todas las páginas.
+            Mide visitas reales de todas las fuentes. Junto al contador propio
+            (Supabase, también sin cookies), es la analítica del sitio: por eso
+            no usamos Google Analytics ni banner de cookies.
             El token es público por diseño (va en el cliente). */}
         <script
           defer
@@ -205,7 +206,6 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
-        <CookieConsent />
         </AuthProvider>
       </body>
     </html>
