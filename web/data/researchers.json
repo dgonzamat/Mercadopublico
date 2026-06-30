@@ -3240,5 +3240,51 @@
         "note_en": "Institutional affiliation and editorial role at Skeptical Inquirer."
       }
     ]
+  },
+  {
+    "id": "hellyer",
+    "name": "Paul Hellyer",
+    "flag": "🇨🇦",
+    "born": 1923,
+    "death": 2021,
+    "section": "C",
+    "section_label": "Actores políticos formales",
+    "section_label_en": "Formal political actors",
+    "credentials": "Ministro de Defensa Nacional de Canadá (1963-1967) · vice primer ministro · miembro decano del Consejo Privado de la Reina para Canadá",
+    "credentials_en": "Minister of National Defence of Canada (1963-1967) · deputy prime minister · dean of the Queen's Privy Council for Canada",
+    "bio_short": "El funcionario de gobierno de mayor rango del mundo en afirmar públicamente que los extraterrestres existen y visitan la Tierra. Político liberal canadiense de larga trayectoria —dirigió la unificación de las Fuerzas Armadas como Ministro de Defensa en los años sesenta—, desde 2005 hasta su muerte sostuvo en simposios, audiencias y entrevistas que el complejo militar-industrial oculta naves recuperadas, llegando a nombrar supuestas especies y 'federaciones' alienígenas. Su singularidad es el rango del declarante; su límite, que nunca exhibió un solo documento y que su cosmología específica pertenece a la tradición contactee, no a la evidencia institucional.",
+    "bio_short_en": "The highest-ranking government official in the world to publicly state that extraterrestrials exist and visit Earth. A long-serving Canadian Liberal politician —he led the unification of the Armed Forces as Defence Minister in the 1960s— from 2005 until his death he maintained at symposia, hearings, and interviews that the military-industrial complex conceals recovered craft, going so far as to name alleged species and alien 'federations'. His singularity is the declarant's rank; his limit, that he never displayed a single document and that his specific cosmology belongs to the contactee tradition, not to institutional evidence.",
+    "works": [
+      {
+        "year": 2005,
+        "title": "Discurso en el Exopolitics Symposium (Universidad de Toronto)",
+        "contribution": "Primer pronunciamiento público: 'los OVNIs son tan reales como los aviones que vuelan sobre nuestras cabezas'",
+        "contribution_en": "First public pronouncement: 'UFOs are as real as the airplanes flying overhead'"
+      },
+      {
+        "year": 2013,
+        "title": "Citizen Hearing on Disclosure (National Press Club)",
+        "contribution": "Testimonio ante ex congresistas sobre la presencia extraterrestre y el encubrimiento",
+        "contribution_en": "Testimony before former members of Congress on the extraterrestrial presence and the cover-up"
+      },
+      {
+        "year": 2014,
+        "title": "The Money Mafia: A World in Crisis",
+        "contribution": "Sistematiza sus tesis sobre OVNIs y exopolítica junto a propuestas de reforma monetaria",
+        "contribution_en": "Systematizes his UFO and exopolitics theses alongside monetary-reform proposals"
+      }
+    ],
+    "sources": [
+      {
+        "name": "CBC News — Paul Hellyer, former defence minister and UFO believer, dies at 98 (2021)",
+        "note": "Obituario que documenta su cargo y sus afirmaciones.",
+        "note_en": "Obituary documenting his office and his claims."
+      },
+      {
+        "name": "RT — SophieCo, entrevista a Paul Hellyer (2014)",
+        "note": "Fuente primaria de las afirmaciones sobre especies alienígenas.",
+        "note_en": "Primary source of the alien-species claims."
+      }
+    ]
   }
 ]
