@@ -13,6 +13,19 @@ export function flagEmoji(cc: string): string {
   );
 }
 
+/**
+ * Número formateado según el idioma activo (no el del navegador). es-ES usa
+ * "1.000"; en-US usa "1,000". Pensado para envolver en <T es={..} en={..}/>
+ * y que el separador de miles siga al toggle de idioma, no al locale del SO.
+ */
+export function fmtNum(
+  n: number,
+  locale: "es" | "en",
+  opts?: Intl.NumberFormatOptions,
+): string {
+  return n.toLocaleString(locale === "es" ? "es-ES" : "en-US", opts);
+}
+
 const NAME_ES = new Intl.DisplayNames(["es"], { type: "region" });
 const NAME_EN = new Intl.DisplayNames(["en"], { type: "region" });
 

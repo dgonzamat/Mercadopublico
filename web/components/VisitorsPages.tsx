@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { T } from "@/components/T";
-import { pageLabel } from "@/lib/visitorsFormat";
+import { pageLabel, fmtNum } from "@/lib/visitorsFormat";
 
 export interface PageRow {
   path: string;
@@ -72,7 +72,9 @@ export function VisitorsPages({
                 />
               </div>
               <span className="whitespace-nowrap text-right font-mono text-xs text-muted">
-                <span className="text-text">{r.count.toLocaleString()}</span>{" "}
+                <span className="text-text">
+                  <T es={fmtNum(r.count, "es")} en={fmtNum(r.count, "en")} />
+                </span>{" "}
                 {pct.toFixed(1)}%
               </span>
             </li>

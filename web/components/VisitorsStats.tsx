@@ -1,7 +1,7 @@
 "use client";
 
 import { T } from "@/components/T";
-import { fmtDay } from "@/lib/visitorsFormat";
+import { fmtDay, fmtNum } from "@/lib/visitorsFormat";
 import { CONTINENT_NAME, CONTINENT_GLYPH, type Continent } from "@/lib/continents";
 
 export interface DayTotal {
@@ -63,21 +63,30 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         <Card
           label={<T es="Visitas" en="Visits" />}
-          value={total.toLocaleString()}
+          value={<T es={fmtNum(total, "es")} en={fmtNum(total, "en")} />}
         />
         <Card
           label={<T es="Países" en="Countries" />}
-          value={countries.toLocaleString()}
+          value={<T es={fmtNum(countries, "es")} en={fmtNum(countries, "en")} />}
         />
         <Card
           label={<T es="Promedio/día" en="Avg/day" />}
-          value={avgPerDay.toLocaleString(undefined, {
-            maximumFractionDigits: 1,
-          })}
+          value={
+            <T
+              es={fmtNum(avgPerDay, "es", { maximumFractionDigits: 1 })}
+              en={fmtNum(avgPerDay, "en", { maximumFractionDigits: 1 })}
+            />
+          }
         />
         <Card
           label={<T es="Día más activo" en="Busiest day" />}
-          value={peak ? peak.count.toLocaleString() : "—"}
+          value={
+            peak ? (
+              <T es={fmtNum(peak.count, "es")} en={fmtNum(peak.count, "en")} />
+            ) : (
+              "—"
+            )
+          }
           sub={
             peak ? (
               <T es={fmtDay(peak.day, "es")} en={fmtDay(peak.day, "en")} />
@@ -155,7 +164,7 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
                   </div>
                   <span className="whitespace-nowrap text-right font-mono text-xs text-muted">
                     <span className="text-text">
-                      {r.count.toLocaleString()}
+                      <T es={fmtNum(r.count, "es")} en={fmtNum(r.count, "en")} />
                     </span>{" "}
                     {pct.toFixed(1)}%
                   </span>

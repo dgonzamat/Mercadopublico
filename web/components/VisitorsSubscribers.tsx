@@ -1,7 +1,7 @@
 "use client";
 
 import { T } from "@/components/T";
-import { fmtDay } from "@/lib/visitorsFormat";
+import { fmtDay, fmtNum } from "@/lib/visitorsFormat";
 
 export interface SubDayTotal {
   day: string; // YYYY-MM-DD
@@ -38,7 +38,11 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
             <T es="Registrados" en="Registered" />
           </p>
           <p className="mt-1 text-xl font-semibold text-text">
-            {total === null ? "—" : total.toLocaleString()}
+            {total === null ? (
+              "—"
+            ) : (
+              <T es={fmtNum(total, "es")} en={fmtNum(total, "en")} />
+            )}
           </p>
         </div>
         <div className="border-2 border-text bg-panel px-3 py-3">
@@ -46,7 +50,7 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
             <T es="Activos hoy" en="Active today" />
           </p>
           <p className="mt-1 text-xl font-semibold text-text">
-            {activeToday.toLocaleString()}
+            <T es={fmtNum(activeToday, "es")} en={fmtNum(activeToday, "en")} />
           </p>
         </div>
       </div>
