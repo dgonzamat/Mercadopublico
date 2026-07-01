@@ -34,12 +34,12 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: ~137 archivos JSON, uno por caso
+    cases/              # SOURCE OF TRUTH: ~304 archivos JSON, uno por caso
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
     frameworks.json
-    researchers.json    # 81 actores
+    researchers.json    # 91 actores
   scripts/
     build-cases.mjs     # agrega data/cases/*.json → data/cases.json
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
@@ -124,7 +124,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 ## Deuda pendiente · fotos de actores
 
-Estado (jun 2026, post-análisis): **22/81 actores tienen foto**. El techo real NO son los 59 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada: ~30-35/81.
+Estado (jul 2026): **21/91 actores tienen foto**. El techo real NO son los 70 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35.
 
 Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles**, así que **hay que verificarlos, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
 
