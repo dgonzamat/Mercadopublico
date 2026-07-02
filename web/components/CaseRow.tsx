@@ -2,14 +2,10 @@ import Link from "next/link";
 import type { UAPCase } from "@/lib/types";
 import { EpistemicBadge } from "@/components/Badge";
 import { T } from "@/components/T";
+import { TIER_META } from "@/lib/ui";
 
 export function CaseRow({ caseData }: { caseData: UAPCase }) {
-  const tierColor =
-    caseData.tier === "S"
-      ? "text-tierS"
-      : caseData.tier === "A"
-        ? "text-tierA"
-        : "text-tierB";
+  const tierColor = TIER_META[caseData.tier].color;
   const year = caseData.year_end
     ? `${caseData.year_start}–${String(caseData.year_end).slice(-2)}`
     : caseData.year_start.toString();

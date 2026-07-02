@@ -51,9 +51,12 @@ export const TIER_META: Record<TierKey, {
   },
 };
 
-export const CATEGORY_META: Record<string, { icon: string; label: string }> = {
-  document: { icon: "📄", label: "Documento" },
-  incident: { icon: "👁", label: "Incidente" },
-  contactee: { icon: "🧑", label: "Contactado" },
-  crop_circle: { icon: "🌾", label: "Círculo de cultivo" },
+export const CATEGORY_META: Record<
+  string,
+  { icon: string; label: string; label_en: string }
+> = {
+  document: { icon: "📄", label: "Documento", label_en: "Document" },
+  incident: { icon: "👁", label: "Incidente", label_en: "Incident" },
+  contactee: { icon: "🧑", label: "Contactado", label_en: "Contactee" },
+  crop_circle: { icon: "🌾", label: "Círculo de cultivo", label_en: "Crop circle" },
 };

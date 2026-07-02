@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
-import { TIER_META } from "@/lib/ui";
+import { CATEGORY_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
@@ -136,6 +137,23 @@ export default async function CaseDetailPage(
     : [];
   const pullQuote = findPullQuote(c.whatHappened);
 
+  // «La noche en cuestión» asume incidente puntual; los expedientes y los
+  // casos que abarcan años piden otro encabezado.
+  const whTitle =
+    c.category === "document"
+      ? { es: "El expediente en cuestión", en: "The file in question" }
+      : c.year_end && c.year_end > c.year_start
+        ? { es: "Los años en cuestión", en: "The years in question" }
+        : { es: "La noche en cuestión", en: "The night in question" };
+
+  // whyMatters es prosa multi-párrafo en ~80% del corpus: se divide por \n\n
+  // igual que whatHappened. El display font solo aguanta textos cortos; sobre
+  // ~800 chars se baja a la tipografía de lectura del cuerpo.
+  const whyMattersLong = (c.whyMatters?.length ?? 0) > 800;
+  const wmClass = whyMattersLong
+    ? "text-lg leading-relaxed text-text md:text-xl"
+    : "font-display text-xl leading-snug text-text md:text-2xl";
+
   // CD-2 · numeración de partes secuencial y honesta. Antes "Parte 01/02/03"
   // estaban hard-codeadas: un caso sin `whatHappened` saltaba a "Parte 02" o
   // empezaba en "Parte 03". Ahora el contador solo cuenta las partes presentes
@@ -184,8 +202,8 @@ export default async function CaseDetailPage(
         <div className="space-y-4">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
             <T
-              es={`Caso ${String(idx + 1).padStart(2, "0")} de ${TOTAL_CASES}`}
-              en={`Case ${String(idx + 1).padStart(2, "0")} of ${TOTAL_CASES}`}
+              es={`Caso Nº ${String(c.num).padStart(2, "0")}`}
+              en={`Case No. ${String(c.num).padStart(2, "0")}`}
             />
             <span className="mx-2 text-text/30">·</span>
             <T es={c.country_name} en={countryEn(c.country_name)} />
@@ -200,7 +218,7 @@ export default async function CaseDetailPage(
             aria-hidden
             className="font-display text-6xl leading-none tabular-nums text-accent md:text-8xl"
           >
-            {String(idx + 1).padStart(2, "0")}
+            {String(c.num).padStart(2, "0")}
           </span>
           <div className="space-y-3">
             <p className="font-mono text-xs uppercase tracking-widest text-muted">
@@ -237,7 +255,16 @@ export default async function CaseDetailPage(
             value={`${c.probability}%`}
             mono
           />
-          <KeyFact es="Categoría" en="Category" value={c.category} />
+          <KeyFact
+            es="Categoría"
+            en="Category"
+            value={
+              <T
+                es={CATEGORY_META[c.category]?.label ?? c.category}
+                en={CATEGORY_META[c.category]?.label_en ?? c.category}
+              />
+            }
+          />
         </div>
         <Caption>
           <T
@@ -359,7 +386,7 @@ export default async function CaseDetailPage(
                   <T es={`Parte ${partNo.whatHappened}`} en={`Part ${partNo.whatHappened}`} />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  <T es="La noche en cuestión" en="The night in question" />
+                  <T es={whTitle.es} en={whTitle.en} />
                 </h2>
               </header>
 
@@ -418,9 +445,20 @@ export default async function CaseDetailPage(
                   />
                 </h2>
               </header>
-              <p className="font-display text-xl leading-snug text-text md:text-2xl">
-                <T es={c.whyMatters} en={c.whyMatters_en ?? c.whyMatters} />
-              </p>
+              <div lang="es" data-lang="es" className="space-y-6">
+                {c.whyMatters.split("\n\n").map((para, i) => (
+                  <p key={i} className={wmClass}>
+                    {para}
+                  </p>
+                ))}
+              </div>
+              <div lang="en" data-lang="en" className="space-y-6">
+                {(c.whyMatters_en ?? c.whyMatters).split("\n\n").map((para, i) => (
+                  <p key={i} className={wmClass}>
+                    {para}
+                  </p>
+                ))}
+              </div>
             </div>
           )}
         </section>
@@ -778,7 +816,7 @@ function KeyFact({
 }: {
   es: string;
   en: string;
-  value: string;
+  value: ReactNode;
   mono?: boolean;
 }) {
   return (
