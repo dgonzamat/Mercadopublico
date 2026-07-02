@@ -106,7 +106,9 @@ export function CategoryBadge({ category }: { category: string }) {
   return (
     <Badge variant="outline">
       <span aria-hidden>{meta.icon}</span>
-      <span>{meta.label}</span>
+      <span>
+        <T es={meta.label} en={meta.label_en} />
+      </span>
     </Badge>
   );
 }
