@@ -7,10 +7,10 @@ Contexto y reglas operativas específicas de este repositorio. Las reglas de com
 ## Stack
 
 - Next.js 14.2.35 App Router + TypeScript strict
-- Tailwind CSS 3.4 (dark theme custom)
+- Tailwind CSS 3.4 (theme claro editorial custom: fondo crema `#f7f2e8`, tinta `#1a1a1a`, acento `#c41e3a` — tokens en `tailwind.config.ts`)
 - `output: "export"` — SSG puro, deploy a GitHub Pages
 - react-leaflet para `/atlas` (dynamic import, ssr: false)
-- Client components (mínimos): `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades y de la home vía `HypothesesSnapshot`, con prop `tone` light/dark; hover/tap sincroniza segmento↔leyenda + tooltip; SSR deja el donut completo, la interactividad es progresiva).
+- Client components: ~39 con `"use client"` (techo 45, vigilado por `audit-consistency.mjs`); la mayoría vive en `components/` y `components/explorer/` (laboratorio de visualización). Los interactivos clave: `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades y de la home vía `HypothesesSnapshot`, con prop `tone` light/dark; hover/tap sincroniza segmento↔leyenda + tooltip; SSR deja el donut completo, la interactividad es progresiva).
 
 ## Estructura
 
@@ -19,7 +19,7 @@ Todo el código de la web vive en `web/`. Trabajar desde ahí, no desde la raíz
 ```
 web/
   app/                  # rutas App Router (server components por default)
-    page.tsx            # home minimalista: title + IcdProbabilityChart + CTA
+    page.tsx            # home: HeroRadar + stats (CountUp) + TimelineByYear + HypothesesSnapshot + CTA
     cases/              # listado + detalle [slug]
     probabilidades/     # transparencia del juicio ICD-203
     atlas/              # Leaflet map (client)
@@ -34,12 +34,12 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: ~137 archivos JSON, uno por caso
+    cases/              # SOURCE OF TRUTH: ~304 archivos JSON, uno por caso
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
     frameworks.json
-    researchers.json    # 81 actores
+    researchers.json    # 91 actores
   scripts/
     build-cases.mjs     # agrega data/cases/*.json → data/cases.json
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
@@ -98,7 +98,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - Server components puros donde sea posible (zero JS shipped).
 - Headers de section: `font-mono text-xs uppercase tracking-widest text-muted`.
 - Theme tokens en `tailwind.config.ts`: `bg`, `panel`, `border`, `text`, `muted`, `accent`, `tierS/A/B`.
-- Badges: usar `TIER_BADGE` static lookup (Tailwind JIT no compila clases dinámicas como `bg-${color}/10`).
+- Badges: usar el static lookup `TIER_META` de `lib/ui.ts` (Tailwind JIT no compila clases dinámicas como `bg-${color}/10`).
 - max-w container del detalle: `mx-auto max-w-3xl`.
 
 ## Deploy
@@ -124,7 +124,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 ## Deuda pendiente · fotos de actores
 
-Estado (jun 2026, post-análisis): **22/81 actores tienen foto**. El techo real NO son los 59 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada: ~30-35/81.
+Estado (jul 2026): **21/91 actores tienen foto**. El techo real NO son los 70 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35.
 
 Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles**, así que **hay que verificarlos, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
 
