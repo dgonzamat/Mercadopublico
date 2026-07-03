@@ -124,14 +124,16 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 ## Deuda pendiente · fotos de actores
 
-Estado (jul 2026): **21/91 actores tienen foto**. El techo real NO son los 70 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35.
+Estado (jul 2026): **28/91 actores tienen foto**. El techo real NO son los 63 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35.
 
 Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles**, así que **hay que verificarlos, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
 
 **Ruta de resolución que funciona** (descubierta jun 2026): la API de Commons y Wikipedia siguen bloqueadas por allowlist (`Host not in allowlist` / 403), pero **WebSearch con `site:commons.wikimedia.org` sí funciona** como resolución indirecta. Protocolo: (1) búsqueda de descubrimiento por persona, (2) búsqueda de verificación con el filename exacto entre comillas, (3) solo commitear filenames corroborados por links literales `File:...` o metadata consistente entre búsquedas independientes.
 
-**Registro de búsqueda (jun 2026) — NO re-buscar**:
-- ✅ Verificados y aplicados: reid (`Harry Reid official portrait 2009.jpg`), gillibrand (`Kirsten Gillibrand, official portrait, 112th Congress.jpg`).
-- ❌ Confirmados SIN foto libre en Commons: Mack, McDonald, Sturrock, Sheehan, Salas, Nell, Gallaudet, Fravor, Graves. Puthoff tiene categoría pero sin retrato (solo una foto de equipo de laboratorio).
-- ❓ Categoría existe pero el filename del retrato no se resolvió vía search index: Ruppelt, Keyhoe. Candidatos si se habilita el allowlist algún día.
-- Sin buscar aún (tier media/baja): Nolan, Pasulka, Kean, Blumenthal, Fox, Pope, West, Velasco, De Brouwer, Villarroel, Knuth, Maccabee, y ~35 investigadores regionales con probabilidad baja.
+**Registro de búsqueda (jun 2026, ampliado jul 2026) — NO re-buscar**:
+- ✅ Verificados y aplicados (jun 2026): reid (`Harry Reid official portrait 2009.jpg`), gillibrand (`Kirsten Gillibrand, official portrait, 112th Congress.jpg`).
+- ✅ Verificados y aplicados (jul 2026): hellyer (`Paul Hellyer portrait (3x4).jpg`), kono (`Tarō Kōno 20190912.jpg`), rebelo (`Aldo Rebelo (16654292721) (cropped).jpg`, CC-BY 2.0 Agência Senado/Marcos Oliveira — metadata completa verificada), west (`Mick West CSICon 2018 Debunking 9-11 Microsphere Myths.jpg`), nickell (`Joe Nickell CSICon 2018 (cropped).jpg`), pope (`Nick Pope (journalist).png`), james-fox (`James C. Fox.jpg`). Nota: los filenames están doble-corroborados por links literales `File:...`; las licencias de west/nickell/pope/james-fox son best-effort ("CC-BY-SA", patrón de la casa para fotos de conferencia) porque los snippets de búsqueda no exponen el template de licencia — el detalle exacto es verificable en la página Commons de cada archivo.
+- ❌ Confirmados SIN foto libre en Commons (jun 2026): Mack, McDonald, Sturrock, Sheehan, Salas, Nell, Gallaudet, Fravor, Graves. Puthoff tiene categoría pero sin retrato (solo una foto de equipo de laboratorio).
+- ❌ Confirmados SIN retrato libre (jul 2026): Nolan (solo un video webm), Kean, Pasulka, Blumenthal, Villarroel, Velasco, De Brouwer, Knuth, Maccabee, Corbell (solo video ogv), Clarke, Randles, Rutkowski, Dietrich, Stratton, Gevaerd, Hourcade, Ballester Olmos. Ziegel tiene categoría (`Feliks Zigel'`) pero el filename del retrato no se resolvió vía búsqueda.
+- ❓ Categoría existe pero el filename del retrato no se resolvió vía search index: Ruppelt, Keyhoe, Ziegel. Candidatos si se habilita el allowlist algún día. (jul 2026: también se probaron `api.wikimedia.org`, Wikidata `Special:EntityData` y toolforge — todos 403; WebFetch a `*.wikimedia.org` también 403, aparentemente Wikimedia bloquea el fetcher.)
+- Sin buscar aún: Haines, Hastings, Ramirez, Day, Callahan, Barber, Farah, McConnell, Wang Sichao, Hind, Zeidman, Schuessler, Powell, Chalker, Poher, Strand, y ~20 investigadores regionales con probabilidad baja.
