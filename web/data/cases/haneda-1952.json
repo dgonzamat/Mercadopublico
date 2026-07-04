@@ -1,0 +1,70 @@
+{
+  "id": "haneda-1952",
+  "num": 309,
+  "name": "Haneda AFB · radar-visual sobre Tokio",
+  "name_en": "Haneda AFB · Radar-Visual over Tokyo",
+  "year_start": 1952,
+  "country": "JP",
+  "country_name": "Japón",
+  "flag": "🇯🇵",
+  "location": {
+    "lat": 35.553,
+    "lng": 139.781,
+    "place": "Haneda AFB, bahía de Tokio",
+    "place_en": "Haneda AFB, Tokyo Bay"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 75,
+  "summary": "La noche del 5 al 6 de agosto de 1952, controladores de la torre de Haneda AFB (Tokio) observaron con binoculares una luz brillante con cuerpo oscuro circular sobre la bahía; el radar de intercepción de Shiroi rastreó un blanco no identificado en la misma zona y un F-94 enviado a interceptar logró bloqueo de radar durante unos 90 segundos antes de que el blanco acelerara y se perdiera. Triple canal —visual, radar de tierra, radar aerotransportado— y clasificación oficial de Blue Book: «unknown».",
+  "summary_en": "On the night of August 5-6, 1952, tower controllers at Haneda AFB (Tokyo) observed through binoculars a brilliant light with a dark circular body over the bay; Shiroi GCI radar tracked an unidentified target in the same area, and an F-94 sent to intercept achieved radar lock for about 90 seconds before the target accelerated away. Triple channel — visual, ground radar, airborne radar — and Blue Book's official classification: 'unknown.'",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "Hacia las 23:30 del 5 de agosto de 1952, dos controladores de la torre de Haneda Air Force Base —el aeropuerto de Tokio, entonces bajo operación estadounidense durante la ocupación— caminaban hacia su turno cuando notaron una luz excepcionalmente brillante sobre la bahía de Tokio. Desde la torre, con binoculares de 7x50, la examinaron durante varios minutos: describieron una luz circular blanca-azulada que parecía ocupar la porción inferior de un cuerpo oscuro redondeado, cuyo contorno era discernible contra el cielo —una estructura, no un punto luminoso—. La luz variaba de intensidad y el conjunto se desplazaba lentamente, a veces quedándose estacionario.\n\nLa torre alertó al centro de intercepción controlada desde tierra (GCI) de Shiroi, al noreste de Tokio. El radar de Shiroi detectó un blanco no identificado en la misma zona sobre la bahía, con comportamiento errático: períodos estacionarios, órbitas lentas y aceleraciones súbitas. Con visual desde la torre y pista de radar simultáneas, el GCI ordenó el despegue de un caza nocturno F-94 desde la base de Johnson. Guiado por Shiroi hacia el blanco, el operador de radar del F-94 obtuvo bloqueo sobre un objetivo aéreo a corto alcance y lo mantuvo durante aproximadamente 90 segundos, mientras el radar de tierra seguía el mismo encuentro; el blanco entonces aceleró bruscamente, rompió el bloqueo y se alejó a una velocidad que el radar de Shiroi registró en ráfagas muy superiores a la de cualquier tráfico conocido en la zona, antes de desaparecer del alcance. Los controladores de la torre perdieron la luz aproximadamente en el mismo intervalo. El episodio completo duró entre 30 y 50 minutos.\n\nEl caso fue investigado por el Project Blue Book en plena oleada de 1952 —semanas después de los incidentes de Washington D.C.— y quedó clasificado oficialmente como «unknown», una de las entradas radar-visuales más citadas del catálogo. Años después, el Condon Report propuso una explicación compuesta: la estrella Capella distorsionada por condiciones atmosféricas para el canal visual, y propagación anómala (ducting) para los retornos de radar. La combinación fue criticada desde entonces por tener que postular dos mecanismos independientes fallando a la vez en la misma dirección, y por no dar cuenta del bloqueo sostenido del radar aerotransportado a corto alcance ni de la correlación temporal entre los tres canales. Blue Book, que evaluó el caso con los datos frescos, nunca lo reclasificó.",
+  "whatHappened_en": "Around 11:30 p.m. on August 5, 1952, two tower controllers at Haneda Air Force Base — Tokyo's airport, then under American operation during the occupation — were walking to their shift when they noticed an exceptionally bright light over Tokyo Bay. From the tower, with 7x50 binoculars, they examined it for several minutes: they described a circular blue-white light that seemed to occupy the lower portion of a dark rounded body whose outline was discernible against the sky — a structure, not a point of light. The light varied in intensity and the whole drifted slowly, at times remaining stationary.\n\nThe tower alerted the ground-controlled intercept (GCI) center at Shiroi, northeast of Tokyo. Shiroi's radar detected an unidentified target in the same area over the bay, with erratic behavior: stationary periods, slow orbits and sudden accelerations. With simultaneous tower visual and radar track, the GCI ordered an F-94 night fighter scrambled from Johnson Air Base. Vectored by Shiroi onto the target, the F-94's radar operator obtained a lock on an airborne target at short range and held it for approximately 90 seconds while ground radar followed the same encounter; the target then accelerated sharply, broke the lock and departed at a speed Shiroi's radar registered in bursts far above any known traffic in the area, before disappearing off the scope. The tower controllers lost the light at roughly the same interval. The full episode lasted between 30 and 50 minutes.\n\nThe case was investigated by Project Blue Book at the height of the 1952 wave — weeks after the Washington, D.C. incidents — and was officially classified 'unknown,' one of the most cited radar-visual entries in the catalog. Years later, the Condon Report proposed a composite explanation: the star Capella distorted by atmospheric conditions for the visual channel, and anomalous propagation (ducting) for the radar returns. The combination has been criticized ever since for having to postulate two independent mechanisms failing simultaneously in the same direction, and for not accounting for the sustained short-range airborne radar lock or the temporal correlation among the three channels. Blue Book, which evaluated the case with fresh data, never reclassified it.",
+  "whyMatters": "Haneda es uno de los ejemplares más limpios de la clase evidencial que define el techo de los casos históricos: el radar-visual de triple canal. Un solo sensor engaña —los ojos ven a Capella titilar, un radar con ducting pinta fantasmas—, pero aquí los tres canales (visual con binoculares y cuerpo estructurado, radar de tierra con pista errática, radar aerotransportado con bloqueo sostenido a corto alcance) coincidieron en el mismo volumen de espacio y en la misma ventana temporal, incluida la salida: el blanco aceleró, rompió el bloqueo y los tres canales lo perdieron a la vez. La probabilidad de que tres mecanismos de error independientes se sincronicen así es el argumento que los analistas de Blue Book encontraron insalvable, y por eso el caso quedó en «unknown» pese a la presión clasificatoria de la oleada de 1952.\n\nEl contraste entre la evaluación contemporánea (unknown, con datos frescos y acceso a los operadores) y la reevaluación del Condon Report quince años después (Capella + ducting, sin acceso comparable) es en sí mismo materia del corpus: ilustra cómo el veredicto de un caso depende menos de los datos que del mandato institucional del evaluador — Blue Book en 1952 debía identificar amenazas; Condon en 1968 debía cerrar el expediente. Haneda también fija el contexto geopolítico que este corpus pondera en la narrativa adversaria: Tokio en 1952 era la retaguardia de la guerra de Corea, con defensas aéreas en alerta real; un artefacto de reconocimiento soviético era la primera hipótesis operativa, y aun así el rendimiento cinemático registrado —estacionario a ráfagas de cientos de nudos— no correspondía a nada del inventario conocido de la época.",
+  "whyMatters_en": "Haneda is one of the cleanest exemplars of the evidential class that defines the ceiling of historical cases: the triple-channel radar-visual. A single sensor deceives — eyes see Capella twinkle, a ducting radar paints ghosts — but here the three channels (binocular visual with a structured body, ground radar with an erratic track, airborne radar with a sustained short-range lock) coincided in the same volume of space and the same time window, including the exit: the target accelerated, broke the lock, and all three channels lost it at once. The improbability of three independent error mechanisms synchronizing like that is the argument Blue Book's analysts found insurmountable, which is why the case remained 'unknown' despite the classificatory pressure of the 1952 wave.\n\nThe contrast between the contemporary evaluation (unknown, with fresh data and access to the operators) and the Condon Report's reevaluation fifteen years later (Capella + ducting, without comparable access) is itself corpus material: it illustrates how a case's verdict depends less on the data than on the evaluator's institutional mandate — Blue Book in 1952 had to identify threats; Condon in 1968 had to close the file. Haneda also fixes the geopolitical context this corpus weighs in the adversary narrative: Tokyo in 1952 was the rear area of the Korean War, with air defenses on real alert; a Soviet reconnaissance craft was the first operational hypothesis, and even so the recorded kinematic performance — stationary to bursts of hundreds of knots — matched nothing in the known inventory of the era.",
+  "evidence": [
+    "Observación visual prolongada con binoculares 7x50 por dos controladores de torre: cuerpo oscuro circular con luz inferior brillante, sobre la bahía de Tokio",
+    "Pista de radar del GCI de Shiroi sobre blanco no identificado en la misma zona: períodos estacionarios, órbitas y aceleraciones súbitas",
+    "Bloqueo de radar aerotransportado del F-94 durante ~90 segundos a corto alcance, roto por aceleración del blanco",
+    "Correlación temporal de los tres canales, incluida la desaparición simultánea del blanco",
+    "Clasificación oficial de Project Blue Book: «unknown» (oleada de 1952), nunca reclasificada por el proyecto",
+    "Reevaluación del Condon Report (Capella + propagación anómala), criticada por requerir dos mecanismos de error independientes y simultáneos"
+  ],
+  "evidence_en": [
+    "Prolonged visual observation with 7x50 binoculars by two tower controllers: dark circular body with a bright lower light, over Tokyo Bay",
+    "Shiroi GCI radar track of an unidentified target in the same area: stationary periods, orbits and sudden accelerations",
+    "F-94 airborne radar lock for ~90 seconds at short range, broken by the target's acceleration",
+    "Temporal correlation of all three channels, including the target's simultaneous disappearance",
+    "Project Blue Book's official classification: 'unknown' (1952 wave), never reclassified by the project",
+    "Condon Report reevaluation (Capella + anomalous propagation), criticized for requiring two independent, simultaneous error mechanisms"
+  ],
+  "sources": [
+    {
+      "name": "Expediente de Project Blue Book — Haneda AFB, 5-6 de agosto de 1952 (NARA)",
+      "note": "Caso oficial «unknown»; incluye los reportes de torre, GCI e interceptor"
+    },
+    {
+      "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
+      "note": "Relato del caso por el entonces jefe de Blue Book"
+    },
+    {
+      "name": "Condon Report (1968) — sección de casos de radar",
+      "note": "Reevaluación tardía (Capella + ducting) y base de la crítica metodológica posterior"
+    },
+    {
+      "name": "NICAP — expediente Haneda/Tokyo Bay 1952",
+      "note": "Compilación documental y análisis del canal triple"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.25,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.12,
+    "nohumano_abierto": 0.13,
+    "indet": 0.35
+  }
+}
