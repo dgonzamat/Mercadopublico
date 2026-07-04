@@ -1,0 +1,70 @@
+{
+  "id": "edwards-afb-1965",
+  "num": 310,
+  "name": "Edwards AFB · las cintas de 1965",
+  "name_en": "Edwards AFB · The 1965 Tapes",
+  "year_start": 1965,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 34.905,
+    "lng": -117.884,
+    "place": "Edwards AFB, desierto de Mojave, California",
+    "place_en": "Edwards AFB, Mojave Desert, California"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 70,
+  "summary": "En la madrugada del 7 de octubre de 1965, controladores y policías militares de Edwards AFB —el centro de pruebas de vuelo de la USAF— reportaron hasta una docena de luces que cambiaban de color y se movían erráticamente sobre la base; hubo retornos de radar y se ordenó el despegue de un interceptor F-106. Todo quedó grabado: horas de cintas de las comunicaciones entre la torre, el sector de defensa aérea y los operadores, luego liberadas al público. Blue Book lo cerró como «estrellas», explicación difícil de conciliar con el radar y con el scramble.",
+  "summary_en": "In the early hours of October 7, 1965, controllers and air police at Edwards AFB — the USAF's flight test center — reported up to a dozen lights changing color and moving erratically over the base; there were radar returns and an F-106 interceptor was scrambled. Everything was recorded: hours of tapes of the communications among the tower, the air defense sector and the operators, later released to the public. Blue Book closed it as 'stars,' an explanation hard to reconcile with the radar and the scramble.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "Edwards Air Force Base, en el desierto de Mojave, era en 1965 el corazón de las pruebas de vuelo estadounidenses: la pista donde se rompían récords con el X-15 y donde el personal de torre veía a diario lo más avanzado del inventario aeronáutico del país. En la madrugada del 7 de octubre de 1965, alrededor de la 1:30, policías militares de la base comenzaron a reportar luces anómalas; la torre de control confirmó la observación y, durante las horas siguientes, controladores de Edwards y de instalaciones vecinas del complejo describieron hasta una docena de objetos luminosos que cambiaban de color —blanco, rojo, verde—, se desplazaban de forma errática, se detenían y retomaban movimiento sobre y alrededor del espacio aéreo de la base.\n\nLo que convierte el episodio en un caso de primer orden es su registro: las comunicaciones entre la torre de Edwards (con el sargento Charles Sorrels como voz principal), el sector de defensa aérea de Los Ángeles y otros puestos quedaron grabadas en cinta —horas de audio operacional contemporáneo, sin mediación de memoria ni reconstrucción—. En las cintas se escucha a los operadores describir los objetos en tiempo real, cotejar observaciones entre puestos separados por kilómetros, discutir retornos de radar sobre los blancos y gestionar la decisión de alertar a la cadena de defensa aérea, que culminó con la orden de despegue de un interceptor F-106. El caza no logró un contacto concluyente: para cuando estuvo en posición, los objetos se habían desplazado o atenuado, un patrón recurrente en las intercepciones nocturnas del período.\n\nEl Project Blue Book investigó y cerró el caso atribuyendo las luces a estrellas brillantes distorsionadas por el centelleo y las condiciones atmosféricas del desierto. La explicación nunca convenció ni siquiera dentro del propio sistema: los observadores eran personal de torre de la base de pruebas más exigente de la USAF, entrenado precisamente para distinguir tráfico, astros y fenómenos de refracción; las luces se movieron contra el patrón fijo de las estrellas; hubo correlación —parcial pero registrada en las cintas— con radar; y ninguna guarnición ordena un scramble de madrugada por Arturo titilando. Las cintas fueron posteriormente liberadas y difundidas públicamente en los años noventa, y Sorrels, ya retirado, ratificó en entrevistas lo que su voz de 1965 dice en la grabación.",
+  "whatHappened_en": "Edwards Air Force Base, in the Mojave Desert, was in 1965 the heart of American flight testing: the runway where records were broken with the X-15 and where tower personnel saw the most advanced aircraft in the country's inventory daily. In the early hours of October 7, 1965, around 1:30 a.m., air police on the base began reporting anomalous lights; the control tower confirmed the observation and, over the following hours, controllers at Edwards and at neighboring installations of the complex described up to a dozen luminous objects changing color — white, red, green — moving erratically, stopping and resuming motion over and around the base's airspace.\n\nWhat makes the episode a first-order case is its record: the communications among the Edwards tower (with Sergeant Charles Sorrels as the main voice), the Los Angeles air defense sector and other posts were recorded on tape — hours of contemporaneous operational audio, unmediated by memory or reconstruction. On the tapes the operators can be heard describing the objects in real time, cross-checking observations between posts kilometers apart, discussing radar returns on the targets and managing the decision to alert the air defense chain, which culminated in the scramble order for an F-106 interceptor. The fighter achieved no conclusive contact: by the time it was in position, the objects had moved off or dimmed, a recurring pattern in the period's nighttime intercepts.\n\nProject Blue Book investigated and closed the case attributing the lights to bright stars distorted by scintillation and desert atmospheric conditions. The explanation never convinced even within the system itself: the observers were tower personnel at the USAF's most demanding test base, trained precisely to distinguish traffic, celestial bodies and refraction phenomena; the lights moved against the fixed pattern of the stars; there was correlation — partial but recorded on the tapes — with radar; and no garrison orders a pre-dawn scramble over Arcturus twinkling. The tapes were later released and publicly circulated in the 1990s, and Sorrels, by then retired, confirmed in interviews what his 1965 voice says on the recording.",
+  "whyMatters": "Edwards 1965 aporta al corpus algo que casi ningún caso histórico tiene: evidencia primaria auditiva contemporánea. La mayoría de los casos clásicos dependen de reportes escritos después del hecho y de memorias recogidas años más tarde; aquí existe la grabación operacional del evento mientras ocurre, con múltiples voces, puestos independientes y la fricción burocrática real de una defensa aérea decidiendo si lo que ve amerita despegar un interceptor. Para la metodología del corpus, ese material tiene un valor equivalente al de los datos FLIR modernos: no prueba qué eran los objetos, pero prueba de forma irrefutable qué observaron y qué hicieron los operadores, eliminando la capa de duda que erosiona el testimonio puro.\n\nEl caso es también un ejemplar nítido del desajuste entre la evidencia y el veredicto institucional en la fase tardía de Blue Book: para 1965 el proyecto operaba bajo presión explícita de reducir «unknowns», y la explicación «estrellas» —aplicada a observadores profesionales del principal centro de pruebas del país, con radar y scramble de por medio— ilustra el patrón que un año después detonaría la crisis pública del proyecto y el encargo del Condon Report. Que el episodio ocurriera sobre Edwards importa además por la hipótesis humana-clasificada: era el lugar del mundo con mayor densidad de prototipos secretos, y aun así ni la base ni el sector de defensa reconocieron los objetos como tráfico propio — si algo volaba de la casa, la mano derecha no le avisó a la izquierda; si no, el inventario más avanzado del planeta tenía encima algo que no era suyo.",
+  "whyMatters_en": "Edwards 1965 contributes to the corpus something almost no historical case has: contemporaneous primary audio evidence. Most classic cases depend on reports written after the fact and memories collected years later; here there exists the operational recording of the event as it happens, with multiple voices, independent posts and the real bureaucratic friction of an air defense deciding whether what it sees warrants scrambling an interceptor. For the corpus's methodology, that material has value equivalent to modern FLIR data: it does not prove what the objects were, but it proves irrefutably what the operators observed and did, removing the layer of doubt that erodes pure testimony.\n\nThe case is also a sharp exemplar of the mismatch between evidence and institutional verdict in Blue Book's late phase: by 1965 the project operated under explicit pressure to reduce 'unknowns,' and the 'stars' explanation — applied to professional observers at the country's premier test center, with radar and a scramble involved — illustrates the pattern that a year later would detonate the project's public crisis and the commissioning of the Condon Report. That the episode occurred over Edwards also matters for the human-classified hypothesis: it was the place on Earth with the highest density of secret prototypes, and even so neither the base nor the defense sector recognized the objects as friendly traffic — if something of the house was flying, the right hand did not tell the left; if not, the most advanced inventory on the planet had something overhead that was not its own.",
+  "evidence": [
+    "Horas de cintas de audio operacional contemporáneo: torre de Edwards (sgto. Charles Sorrels), sector de defensa aérea de Los Ángeles y puestos vecinos, liberadas públicamente en los años noventa",
+    "Observación por múltiples puestos independientes separados por kilómetros, con cotejo en tiempo real registrado en las cintas",
+    "Retornos de radar sobre los blancos discutidos en las comunicaciones grabadas",
+    "Orden de scramble de un interceptor F-106 en plena madrugada, registrada en las cintas",
+    "Cierre oficial de Blue Book como «estrellas», en tensión con el movimiento observado, el radar y la decisión de intercepción",
+    "Ratificación posterior del testigo principal (Sorrels) en entrevistas, consistente con el audio de 1965"
+  ],
+  "evidence_en": [
+    "Hours of contemporaneous operational audio tape: Edwards tower (Sgt. Charles Sorrels), Los Angeles air defense sector and neighboring posts, publicly released in the 1990s",
+    "Observation by multiple independent posts kilometers apart, with real-time cross-checking recorded on the tapes",
+    "Radar returns on the targets discussed in the recorded communications",
+    "Scramble order for an F-106 interceptor in the middle of the night, recorded on the tapes",
+    "Blue Book's official closure as 'stars,' in tension with the observed motion, the radar and the intercept decision",
+    "Later confirmation by the main witness (Sorrels) in interviews, consistent with the 1965 audio"
+  ],
+  "sources": [
+    {
+      "name": "Cintas de comunicaciones de Edwards AFB, 7 de octubre de 1965",
+      "note": "Audio operacional del evento, liberado y difundido públicamente en los años noventa (edición documental de Sam Sherman)"
+    },
+    {
+      "name": "Expediente de Project Blue Book — Edwards AFB, octubre de 1965 (NARA)",
+      "note": "Investigación oficial y cierre como «estrellas»"
+    },
+    {
+      "name": "Entrevistas posteriores a Charles Sorrels",
+      "note": "El controlador principal ratificó la observación en documentales, consistente con su voz en las cintas"
+    },
+    {
+      "name": "NICAP — expediente Edwards AFB 1965",
+      "note": "Compilación documental del caso y análisis del audio"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.08,
+    "indet": 0.35
+  }
+}
