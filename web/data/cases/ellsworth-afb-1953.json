@@ -1,0 +1,68 @@
+{
+  "id": "ellsworth-afb-1953",
+  "num": 311,
+  "name": "Ellsworth AFB · el 'mejor reporte' de Blue Book",
+  "name_en": "Ellsworth AFB · Blue Book's 'best report'",
+  "year_start": 1953,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 44.145,
+    "lng": -103.104,
+    "place": "Ellsworth AFB, Rapid City, Dakota del Sur",
+    "place_en": "Ellsworth AFB, Rapid City, South Dakota"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 78,
+  "summary": "La noche del 5 al 6 de agosto de 1953, un objeto luminoso sobre Rapid City (Dakota del Sur) fue observado en simultáneo por una voluntaria del Ground Observer Corps, por operadores de radar del GCI de Ellsworth AFB y por dos cazas F-84 enviados a interceptar: uno lo persiguió más de 190 km hasta Dakota del Norte antes de romper por combustible, con blips de radar sólidos correlacionados con el contacto visual. Edward Ruppelt, primer jefe de Project Blue Book, lo describió como «el mejor reporte OVNI en los archivos de la Fuerza Aérea». Cuádruple canal —visual de tierra, visual aéreo, radar de tierra, radar aerotransportado— y clasificación «unknown».",
+  "summary_en": "On the night of August 5-6, 1953, a luminous object over Rapid City, South Dakota, was observed simultaneously by a Ground Observer Corps volunteer, by GCI radar operators at Ellsworth AFB, and by two F-84 jets sent to intercept it: one chased it more than 190 km into North Dakota before breaking off for fuel, with solid radar blips correlated to the visual contact. Edward Ruppelt, first head of Project Blue Book, described it as 'the best UFO report in the Air Force files.' Quadruple channel — ground visual, air visual, ground radar, airborne radar — and an 'unknown' classification.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "La secuencia empezó en tierra. Hacia las 20:05 del 5 de agosto de 1953, la señora Phyllis Killian, voluntaria entrenada del Ground Observer Corps —la red civil de vigilancia aérea de la Guerra Fría— reportó desde su puesto en Blackhawk, a unos 16 km al oeste de Rapid City, una luz roja anómala que se movía sobre el horizonte. El filtro del GOC pasó el aviso al centro de intercepción controlada desde tierra (GCI) de Ellsworth Air Force Base, sede del Comando Aéreo Estratégico en la zona. El radar de Ellsworth adquirió un blanco no identificado en la dirección reportada, y con visual de tierra y pista de radar simultáneas se ordenó el despegue de un caza F-84 que hacía patrulla aérea de combate en las cercanías.\n\nGuiado por el GCI hacia el contacto, el piloto adquirió visualmente una luz plateada brillante —más brillante que cualquier estrella— y cerró la distancia hasta unos 5 km. El objeto entonces aceleró hacia el noroeste manteniendo la separación; el radar de tierra registró blips sólidos correlacionados con la luz durante toda la persecución, que se extendió más de 190 km hasta bien entrado el espacio aéreo de Dakota del Norte antes de que el piloto rompiera el contacto por nivel de combustible. Cuando el primer interceptor se retiró, el objeto pareció detenerse. Un segundo F-84 fue enviado y su piloto también lo adquirió visualmente, reportando un cambio de color de blanco a verde a unos 4.500 metros; en la persecución subió a 8.000 metros y la luz de bloqueo de su radar de a bordo (el sistema de puntería A-4) se encendió y permaneció encendida sobre el blanco. El operador de radar de tierra intentó fotografiar el osciloscopio con el eco visible: los negativos salieron velados por un fallo de la cámara, uno de los pocos registros instrumentales del caso que se perdió.\n\nProject Blue Book investigó el incidente con los datos frescos —Ruppelt viajó personalmente a evaluarlo— y lo mantuvo en la categoría «unknown». La explicación mundana ofrecida años después combinaba la estrella Capella o Marte para los canales visuales y propagación anómala (ground/AP) para los ecos de radar, la misma pareja de mecanismos invocada en Haneda el año anterior. La objeción de Ruppelt y de los analistas de la época fue idéntica: ningún cuerpo astronómico se desplaza 190 km a través de dos estados manteniéndose por delante de un caza, y la coincidencia del canal visual de tierra, el visual de dos pilotos, el radar de tierra y el bloqueo de radar aerotransportado sobre el mismo blanco y en la misma ventana temporal no se explica sumando errores independientes.",
+  "whatHappened_en": "The sequence began on the ground. Around 8:05 p.m. on August 5, 1953, Mrs. Phyllis Killian, a trained Ground Observer Corps volunteer — the Cold War civilian air-watch network — reported from her post at Blackhawk, about 16 km west of Rapid City, an anomalous red light moving over the horizon. The GOC filter center passed the alert to the ground-controlled intercept (GCI) center at Ellsworth Air Force Base, the local Strategic Air Command hub. Ellsworth's radar acquired an unidentified target in the reported direction, and with simultaneous ground visual and radar track, an F-84 on combat air patrol nearby was ordered to intercept.\n\nVectored by the GCI onto the contact, the pilot visually acquired a bright silver light — brighter than any star — and closed to about 5 km. The object then accelerated to the northwest, maintaining separation; ground radar registered solid blips correlated with the light throughout the pursuit, which extended more than 190 km well into North Dakota airspace before the pilot broke off for fuel. When the first interceptor withdrew, the object appeared to halt. A second F-84 was scrambled and its pilot also acquired it visually, reporting a color change from white to green at about 4,500 meters; climbing to 8,000 meters in pursuit, the lock-on light of his onboard radar (the A-4 gunsight system) came on and stayed on over the target. The ground radar operator tried to photograph the scope with the echo visible: the negatives came out fogged by a camera malfunction, one of the few instrumental records of the case that was lost.\n\nProject Blue Book investigated the incident with fresh data — Ruppelt traveled personally to evaluate it — and kept it in the 'unknown' category. The mundane explanation offered years later combined the star Capella or Mars for the visual channels and anomalous (ground/AP) propagation for the radar echoes, the same pair of mechanisms invoked at Haneda the year before. The objection from Ruppelt and the analysts of the time was identical: no astronomical body travels 190 km across two states staying ahead of a jet, and the coincidence of the ground visual, the two-pilot visual, the ground radar and the airborne radar lock on the same target within the same time window is not explained by summing independent errors.",
+  "whyMatters": "Ellsworth ocupa un lugar único porque es el propio jefe de Blue Book quien lo canoniza: Ruppelt lo llamó «el mejor reporte OVNI en los archivos de la Fuerza Aérea», y esa frase convierte al caso en un patrón de referencia para todo el corpus histórico. Reúne los cuatro canales que el análisis de este proyecto considera el techo evidencial de la era pre-digital —testigo de tierra entrenado, dos pilotos, radar de GCI y radar de intercepción— y los correlaciona no en un punto sino a lo largo de una persecución de 190 km, lo que elimina de raíz la explicación por objeto fijo mal interpretado. La única fotografía del osciloscopio que habría fijado el eco de radar se perdió por un fallo de cámara: un recordatorio de cuán frágil era la cadena instrumental de 1953 y de por qué los casos que sí cerraron los cuatro canales pesan tanto.\n\nEl caso también documenta el sesgo evaluador que este corpus rastrea. Con los datos frescos, Blue Book lo dejó en «unknown»; la reevaluación posterior lo quiso reducir a Capella más propagación anómala, la misma receta compuesta que el Condon Report aplicó a Haneda, y que exige que dos mecanismos de error independientes fallen a la vez y en la misma dirección durante casi una hora. Ellsworth fija además el contexto de amenaza real que pondera la narrativa adversaria: agosto de 1953, plena Guerra Fría, y el objeto sobrevoló el espacio aéreo de Ellsworth AFB, una base del Comando Aéreo Estratégico con bombarderos nucleares. Que la primera hipótesis operativa —un artefacto de reconocimiento soviético— tampoco encajara con un rendimiento cinemático que dejó atrás a dos F-84 es exactamente lo que mantiene el caso en la casilla indeterminada.",
+  "whyMatters_en": "Ellsworth holds a unique place because it is Blue Book's own chief who canonizes it: Ruppelt called it 'the best UFO report in the Air Force files,' and that phrase makes the case a reference standard for the whole historical corpus. It assembles the four channels this project's analysis treats as the evidential ceiling of the pre-digital era — a trained ground witness, two pilots, GCI radar and intercept radar — and correlates them not at a point but across a 190-km pursuit, which uproots the misinterpreted-fixed-object explanation. The one oscilloscope photograph that would have fixed the radar echo was lost to a camera failure: a reminder of how fragile the instrumental chain of 1953 was, and of why the cases that did close all four channels weigh so much.\n\nThe case also documents the evaluator bias this corpus tracks. With fresh data, Blue Book left it 'unknown'; the later reevaluation sought to reduce it to Capella plus anomalous propagation, the same composite recipe the Condon Report applied to Haneda, which requires two independent error mechanisms to fail at once and in the same direction for nearly an hour. Ellsworth also fixes the real-threat context the adversary narrative weighs: August 1953, the height of the Cold War, and the object overflew the airspace of Ellsworth AFB, a Strategic Air Command base with nuclear bombers. That the first operational hypothesis — a Soviet reconnaissance craft — also failed to fit a kinematic performance that outran two F-84s is exactly what keeps the case in the indeterminate box.",
+  "evidence": [
+    "Reporte inicial de una voluntaria entrenada del Ground Observer Corps (Blackhawk, DS) sobre luz roja anómala en movimiento",
+    "Adquisición del blanco por el radar de GCI de Ellsworth AFB en la dirección reportada",
+    "Contacto visual de dos pilotos de F-84: luz plateada brillante, cambio de color blanco→verde en el segundo interceptor",
+    "Persecución de más de 190 km hasta Dakota del Norte con blips de radar sólidos correlacionados, roto por combustible",
+    "Bloqueo del radar aerotransportado (sistema de puntería A-4) sostenido sobre el blanco por el segundo caza",
+    "Intento de fotografiar el osciloscopio con el eco visible, frustrado por fallo de la cámara (registro perdido)",
+    "Clasificación oficial de Project Blue Book: «unknown»; Edward Ruppelt lo calificó como el mejor reporte de los archivos"
+  ],
+  "evidence_en": [
+    "Initial report by a trained Ground Observer Corps volunteer (Blackhawk, SD) of an anomalous moving red light",
+    "Target acquisition by Ellsworth AFB GCI radar in the reported direction",
+    "Visual contact by two F-84 pilots: bright silver light, white→green color change for the second interceptor",
+    "Pursuit of more than 190 km into North Dakota with correlated solid radar blips, broken off for fuel",
+    "Airborne radar lock (A-4 gunsight system) sustained on the target by the second jet",
+    "Attempt to photograph the oscilloscope with the echo visible, defeated by camera malfunction (record lost)",
+    "Project Blue Book official classification: 'unknown'; Edward Ruppelt rated it the best report in the files"
+  ],
+  "sources": [
+    {
+      "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
+      "note": "El entonces jefe de Blue Book lo llama «el mejor reporte OVNI en los archivos de la Fuerza Aérea»"
+    },
+    {
+      "name": "Expediente de Project Blue Book — Ellsworth AFB / Rapid City, 5-6 de agosto de 1953 (NARA)",
+      "note": "Caso oficial «unknown»; incluye reportes de GOC, GCI e interceptores"
+    },
+    {
+      "name": "NICAP — expediente Ellsworth/Rapid City 1953",
+      "note": "Compilación documental del caso radar-visual y análisis del canal múltiple"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.22,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.12,
+    "nohumano_abierto": 0.13,
+    "indet": 0.38
+  }
+}

@@ -229,6 +229,27 @@ export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boole
   return expandedHypotheses([s], opts)[0];
 }
 
+/**
+ * Conteo por hipótesis MODAL (argmax): cada ítem cuenta 1 (entero) en su
+ * narrativa más probable del conjunto expandido. Suma = nº de ítems. Es la
+ * clasificación forzada NAVEGABLE: coincide con el filtro de /cases (cada caso
+ * cae en un solo bucket) y con el CTA «Ver los N casos». Difiere del
+ * `expandedHypotheses` (nº ESPERADO, fraccional): esa es la partición
+ * comparable del modelo; ésta es la que se puede listar. `count` es entero.
+ */
+export function modalCounts(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean } = {}): HypRow[] {
+  const meta = new Map<string, HypRow>();
+  const counts: Record<string, number> = {};
+  for (const s of items) {
+    const m = modalHypothesis(s, opts);
+    counts[m.key] = (counts[m.key] ?? 0) + 1;
+    if (!meta.has(m.key)) meta.set(m.key, m);
+  }
+  return [...meta.values()]
+    .map((r) => ({ ...r, count: counts[r.key] }))
+    .sort((a, b) => b.count - a.count);
+}
+
 /** Casos del corpus a los que aplica el modelo (excluye documentos). */
 export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): ScoredCase[] {
   return cases

@@ -1,0 +1,66 @@
+{
+  "id": "fort-monmouth-1951",
+  "num": 314,
+  "name": "Fort Monmouth · el caso que refundó Blue Book",
+  "name_en": "Fort Monmouth · the case that refounded Blue Book",
+  "year_start": 1951,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40.31,
+    "lng": -74.03,
+    "place": "Fort Monmouth, Nueva Jersey",
+    "place_en": "Fort Monmouth, New Jersey"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 74,
+  "summary": "El 10 de septiembre de 1951, durante una demostración de radar del Signal Corps del Ejército ante dignatarios en Fort Monmouth (Nueva Jersey), un operador rastreó un blanco a baja altura demasiado rápido para el modo automático del set AN/MPG-1 —más de 1.100 km/h—; quince minutos antes, dos pilotos de un T-33 cerca de Sandy Hook habían visto un objeto plateado de 12-15 metros moviéndose de forma independiente bajo su avión. La secuencia de radar y visual de pilotos, ocurrida ante testigos militares, fue el detonante directo de la reorganización de Project Grudge en Project Blue Book bajo Edward Ruppelt.",
+  "summary_en": "On September 10, 1951, during an Army Signal Corps radar demonstration for dignitaries at Fort Monmouth, New Jersey, an operator tracked a low-flying target too fast for the AN/MPG-1 set's automatic mode — more than 1,100 km/h; fifteen minutes earlier, two pilots of a T-33 near Sandy Hook had seen a silver object 12-15 meters across moving independently below their aircraft. The radar-and-pilot-visual sequence, occurring before military witnesses, was the direct trigger for the reorganization of Project Grudge into Project Blue Book under Edward Ruppelt.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "whatHappened": "La mañana del 10 de septiembre de 1951, el radar de seguimiento AN/MPG-1 de la Evans Signal Laboratory, en Fort Monmouth, Nueva Jersey, estaba siendo operado ante un grupo de dignatarios del Ejército en una demostración de capacidades. El técnico intentó seguir en modo automático un blanco que apareció a baja altura sobre la costa, pero el objeto se movía tan rápido que el sistema no lograba engancharlo: tuvo que pasar a seguimiento manual. La velocidad implícita superaba los 1.100 km/h, el límite superior de los cazas a reacción de la época, y el blanco maniobraba de un modo que el operador —entrenado, delante de oficiales— describió como no correspondiente a una aeronave conocida.\n\nLa secuencia, sin embargo, no había empezado en la pantalla. Unos quince minutos antes, dos tripulantes de un entrenador a reacción T-33 que volaba cerca de Sandy Hook, a poca distancia, habían visto un objeto grande y plateado por debajo de su aparato. Lo estimaron en unos 12 a 15 metros de diámetro, desplazándose a gran velocidad y con un movimiento que parecía independiente del viento y de su propia trayectoria; descendieron para intentar acercarse y el objeto se alejó. A lo largo de ese día y del siguiente, el radar de Fort Monmouth registró varios contactos adicionales, algunos a altitudes y velocidades que el personal no pudo conciliar con el tráfico conocido ni con globos.\n\nLo decisivo del caso fue institucional. En septiembre de 1951, la investigación de la Fuerza Aérea estaba en manos de Project Grudge, cuya postura era de desestimación sistemática: casi todo se cerraba como error o ilusión. Pero el reporte de Fort Monmouth —testigos militares, radar del Ejército delante de dignatarios, dos pilotos con contacto visual— llegó al Pentágono con un peso que no podía despacharse con una nota. La revisión que provocó llevó, semanas después, a relevar a Grudge y a reconstituir el programa como Project Blue Book, con Edward Ruppelt al frente y un mandato de investigación metódica. Grudge, en su evaluación final, atribuyó las observaciones a dos globos liberados por la Evans Signal Laboratory a las 11:12 de ese día y el contacto de radar a un error del operador; Ruppelt y otros analistas anotaron que esa explicación no daba cuenta ni del blanco de más de 1.100 km/h en modo manual ni de la observación de los pilotos del T-33, ocurrida antes y en otra posición.",
+  "whatHappened_en": "On the morning of September 10, 1951, the AN/MPG-1 tracking radar of the Evans Signal Laboratory at Fort Monmouth, New Jersey, was being operated before a group of Army dignitaries in a capabilities demonstration. The technician tried to track in automatic mode a target that appeared at low altitude over the coast, but the object moved so fast that the system could not lock it: he had to switch to manual tracking. The implied speed exceeded 1,100 km/h, the upper limit of the era's jet fighters, and the target maneuvered in a way the operator — trained, in front of officers — described as not matching any known aircraft.\n\nThe sequence, however, had not begun on the scope. About fifteen minutes earlier, two crewmen of a T-33 jet trainer flying near Sandy Hook, a short distance away, had seen a large silver object below their craft. They estimated it at some 12 to 15 meters in diameter, moving at high speed and with a motion that seemed independent of the wind and of their own trajectory; they descended to try to close in and the object pulled away. Over that day and the next, the Fort Monmouth radar recorded several additional contacts, some at altitudes and speeds the personnel could not reconcile with known traffic or with balloons.\n\nThe decisive part of the case was institutional. In September 1951, the Air Force's investigation was in the hands of Project Grudge, whose stance was systematic dismissal: almost everything was closed as error or illusion. But the Fort Monmouth report — military witnesses, Army radar in front of dignitaries, two pilots with visual contact — reached the Pentagon with a weight that could not be waved off in a memo. The review it prompted led, weeks later, to relieving Grudge and reconstituting the program as Project Blue Book, with Edward Ruppelt at its head and a mandate for methodical investigation. Grudge, in its final assessment, attributed the observations to two balloons released by the Evans Signal Laboratory at 11:12 that day and the radar contact to operator error; Ruppelt and other analysts noted that this explanation accounted neither for the 1,100-plus km/h target in manual mode nor for the T-33 pilots' observation, which occurred earlier and in a different position.",
+  "whyMatters": "Fort Monmouth importa menos por lo que se vio que por lo que provocó: es el caso que refundó la investigación oficial estadounidense. La cadena de acontecimientos —radar del Ejército delante de dignatarios, incapacidad del set automático para seguir el blanco, y el contacto visual previo de dos pilotos militares— tuvo la densidad de testimonio institucional que Grudge no podía disolver con su fórmula habitual, y de ahí salió Project Blue Book bajo Ruppelt. Para un corpus que rastrea cómo el aparato estatal decide qué mirar y qué archivar, este es un punto de inflexión: el momento en que el propio sistema reconoció que la desestimación por defecto era insostenible y montó, aunque fuera brevemente, un programa con pretensión metódica.\n\nEl caso también fija el patrón evaluador que reaparece en todo el corpus. La explicación mundana —dos globos de la Evans Signal Laboratory más un error de operador— es plausible para parte de los contactos y hay que ponderarla en serio: Fort Monmouth liberaba globos meteorológicos, y un operador puede malinterpretar un retorno. Pero la explicación tropieza con dos hechos duros: el blanco que obligó a pasar a seguimiento manual implicaba una velocidad superior a la de cualquier globo o avión de 1951, y la observación de los pilotos del T-33 precedió a la liberación de los globos de las 11:12 y ocurrió en otra geometría. Que la mejor explicación disponible cubra unos elementos y deje otros sin cerrar es exactamente la firma de los casos que Blue Book, ya reconstituido, terminaría catalogando como «unknown». Fort Monmouth es así doblemente fundacional: como evento que forzó la creación del programa y como ejemplar temprano del tipo de residuo evidencial que ese programa nunca logró disolver.",
+  "whyMatters_en": "Fort Monmouth matters less for what was seen than for what it triggered: it is the case that refounded the U.S. official investigation. The chain of events — Army radar in front of dignitaries, the automatic set's inability to track the target, and the prior visual contact by two military pilots — had the density of institutional testimony that Grudge could not dissolve with its usual formula, and out of it came Project Blue Book under Ruppelt. For a corpus that tracks how the state apparatus decides what to look at and what to file away, this is an inflection point: the moment the system itself acknowledged that default dismissal was untenable and stood up, however briefly, a program with a claim to method.\n\nThe case also fixes the evaluator pattern that recurs throughout the corpus. The mundane explanation — two Evans Signal Laboratory balloons plus operator error — is plausible for part of the contacts and must be weighed seriously: Fort Monmouth released weather balloons, and an operator can misread a return. But the explanation stumbles on two hard facts: the target that forced a switch to manual tracking implied a speed beyond any 1951 balloon or aircraft, and the T-33 pilots' observation preceded the 11:12 balloon release and occurred in a different geometry. That the best available explanation covers some elements and leaves others unclosed is exactly the signature of the cases Blue Book, once reconstituted, would end up cataloging as 'unknown.' Fort Monmouth is thus doubly foundational: as the event that forced the program's creation, and as an early exemplar of the kind of evidential residue that program never managed to dissolve.",
+  "evidence": [
+    "Seguimiento de radar AN/MPG-1 del Signal Corps ante dignatarios: blanco a baja altura demasiado rápido para el modo automático (>1.100 km/h), seguido en manual",
+    "Contacto visual de dos tripulantes de un T-33 cerca de Sandy Hook ~15 min antes: objeto plateado de 12-15 m con movimiento independiente",
+    "Contactos de radar adicionales durante el 10 y el 11 de septiembre a velocidades/altitudes no conciliables con el tráfico conocido",
+    "Testigos militares y contexto de demostración oficial, que impidieron la desestimación rutinaria de Project Grudge",
+    "Detonante documentado de la reorganización de Grudge en Project Blue Book bajo Edward Ruppelt",
+    "Explicación final de Grudge (dos globos de la Evans Signal Laboratory + error de operador), que no cubre el blanco de alta velocidad ni la observación previa de los pilotos"
+  ],
+  "evidence_en": [
+    "Signal Corps AN/MPG-1 radar tracking before dignitaries: low-altitude target too fast for automatic mode (>1,100 km/h), followed in manual",
+    "Visual contact by two T-33 crewmen near Sandy Hook ~15 min earlier: silver object 12-15 m across with independent motion",
+    "Additional radar contacts during September 10 and 11 at speeds/altitudes irreconcilable with known traffic",
+    "Military witnesses and an official-demonstration context, which blocked Project Grudge's routine dismissal",
+    "Documented trigger for the reorganization of Grudge into Project Blue Book under Edward Ruppelt",
+    "Grudge's final explanation (two Evans Signal Laboratory balloons + operator error), which does not cover the high-speed target or the pilots' prior observation"
+  ],
+  "sources": [
+    {
+      "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
+      "note": "Relato del caso por el primer jefe de Blue Book y de su papel en la reorganización de Grudge"
+    },
+    {
+      "name": "Expediente de Project Grudge/Blue Book — Fort Monmouth, 10-11 de septiembre de 1951 (NARA)",
+      "note": "Reportes de radar del Signal Corps, observación del T-33 y evaluación por globos"
+    },
+    {
+      "name": "NICAP — cronología de Project Blue Book 1951-1969",
+      "note": "Contextualiza Fort Monmouth como detonante de la reconstitución del programa"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.1,
+    "indet": 0.32
+  }
+}

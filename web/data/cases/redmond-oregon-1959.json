@@ -1,0 +1,68 @@
+{
+  "id": "redmond-oregon-1959",
+  "num": 313,
+  "name": "Redmond, Oregon · policía, FAA y seis F-102",
+  "name_en": "Redmond, Oregon · police, FAA and six F-102s",
+  "year_start": 1959,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 44.272,
+    "lng": -121.174,
+    "place": "Redmond, Oregon",
+    "place_en": "Redmond, Oregon"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 74,
+  "summary": "Antes del amanecer del 24 de septiembre de 1959, el policía Robert Dickerson vio un objeto brillante descender sobre Redmond (Oregon) y quedar estacionario a unos 60 metros, con las copas de los árboles iluminadas. Alertó a la oficina de la FAA en el aeropuerto; los controladores lo observaron y el radar del GCI de Klamath Falls lo rastreó, tras lo cual se ordenó el despegue de seis cazas F-102 y se sumaron a la persecución un B-47 y un F-89 en vuelo de rutina. El radar siguió al objeto unas dos horas, con cambios de altitud entre 1.500 y 15.800 metros. La Fuerza Aérea osciló entre «Venus», «un globo» y «datos insuficientes».",
+  "summary_en": "Before dawn on September 24, 1959, police officer Robert Dickerson saw a bright object descend over Redmond, Oregon, and hover at about 60 meters, with the treetops lit up. He alerted the FAA office at the airport; the controllers observed it and the Klamath Falls GCI radar tracked it, after which six F-102 fighters were scrambled and a B-47 and an F-89 on routine flights joined the pursuit. Radar followed the object for about two hours, with altitude changes between 1,500 and 15,800 meters. The Air Force wavered between 'Venus,' 'a balloon' and 'insufficient data.'",
+  "patterns": ["8e", "8m"],
+  "category": "incident",
+  "whatHappened": "Poco antes del amanecer del 24 de septiembre de 1959, el oficial de policía Robert Dickerson patrullaba las calles de Redmond, en el centro de Oregon, cuando vio un objeto grande y brillante descender sobre la ciudad, detenerse en seco y quedar estacionario a unos 60 metros de altura. Estaba lo bastante bajo como para que las copas de los árboles cercanos brillaran con su luz. Dickerson —un testigo entrenado, con la credibilidad institucional que el corpus pondera— condujo de inmediato a la oficina de la Administración Federal de Aviación (FAA) en el aeropuerto de Redmond para reportarlo con testigos adicionales.\n\nHacia las 05:10, los controladores de la FAA, que ya observaban el objeto, transmitieron el reporte al Centro de Control de Ruta Aérea de Seattle, que a su vez lo escaló a la Base Aérea de Hamilton, en California. El objeto fue detectado también en el radar del sitio de intercepción controlada desde tierra (GCI) de Klamath Falls. Con visual de un policía, visual de controladores y pista de radar convergiendo, se ordenó el despegue de seis cazas F-102 desde Portland; mientras subían, el control aéreo contactó por radio a las tripulaciones de un bombardero B-47 y un caza F-89 que hacían vuelos de rutina en la zona y les ordenó sumarse a la búsqueda. Los controladores de la FAA describieron el objeto como un cuerpo en forma de disco con protuberancias de las que parecían emanar llamas de colores cuando maniobraba. El radar mantuvo al blanco al sur de Redmond durante aproximadamente dos horas, con cambios de altitud registrados entre unos 1.500 y 15.800 metros —un perfil vertical incompatible con un globo a la deriva.\n\nLa explicación oficial de la Fuerza Aérea mutó con el tiempo, y esa mutación es parte del expediente. Primero se atribuyó el avistamiento al planeta Venus; luego a «un globo»; cuando NICAP confrontó a la Fuerza Aérea con los registros (logs) de la FAA y los relatos de los testigos que hacían inconsistentes ambas explicaciones, la conclusión pasó a «datos insuficientes»; y en 1963 el veredicto volvió a «Venus». Ninguna de las versiones daba cuenta a la vez del descenso y estacionamiento a baja altura visto por el policía, del despliegue simultáneo de seis interceptores más dos aviones desviados, y de una pista de radar de dos horas con maniobras verticales de más de 14 kilómetros de amplitud.",
+  "whatHappened_en": "Shortly before dawn on September 24, 1959, police officer Robert Dickerson was patrolling the streets of Redmond, in central Oregon, when he saw a large, bright object descend over the town, stop abruptly and hover at about 60 meters. It was low enough that the tops of nearby trees glowed with its light. Dickerson — a trained witness, with the institutional credibility the corpus weighs — immediately drove to the Federal Aviation Administration (FAA) office at Redmond airport to report it before additional witnesses.\n\nAround 5:10 a.m., the FAA controllers, who were already watching the object, relayed the report to the Seattle Air Route Traffic Control Center, which in turn escalated it to Hamilton Air Force Base in California. The object was also detected on the radar of the Klamath Falls ground-controlled intercept (GCI) site. With a police officer's visual, controllers' visual and radar track converging, six F-102 fighters were scrambled from Portland; as they climbed, air control radioed the crews of a B-47 bomber and an F-89 fighter on routine flights in the area and ordered them to join the search. The FAA controllers described the object as a disc-shaped body with protrusions from which colored flames seemed to emanate as it maneuvered. Radar held the target south of Redmond for about two hours, with altitude changes recorded between roughly 1,500 and 15,800 meters — a vertical profile incompatible with a drifting balloon.\n\nThe Air Force's official explanation mutated over time, and that mutation is part of the record. First the sighting was attributed to the planet Venus; then to 'a balloon'; when NICAP confronted the Air Force with the FAA logs and the witness accounts that made both explanations inconsistent, the conclusion became 'insufficient data'; and in 1963 the verdict reverted to 'Venus.' None of the versions accounted at once for the low descent and hover seen by the officer, the simultaneous deployment of six interceptors plus two diverted aircraft, and a two-hour radar track with vertical maneuvers of more than 14 kilometers in amplitude.",
+  "whyMatters": "Redmond concentra en un solo episodio dos de las señas que este corpus usa para pesar un caso: la calidad institucional de los testigos y la respuesta desproporcionada del aparato militar. El primer observador fue un policía; los siguientes, controladores de la FAA; el blanco entró en el radar del GCI de Klamath Falls; y el sistema de defensa respondió lanzando seis F-102 y desviando dos aviones más en vuelo. Ese nivel de movilización no se ordena por Venus. La pista de radar de dos horas con excursiones verticales de casi 15 kilómetros descarta de plano el globo, la otra explicación oficial: ningún globo asciende y desciende de ese modo, ni permanece estacionario a 60 metros iluminando las copas de los árboles como lo describió el primer testigo.\n\nEl valor analítico del caso está tanto en el evento como en su tratamiento posterior, que es un ejemplar de manual del patrón de explicación oscilante. La Fuerza Aérea recorrió Venus → globo → «datos insuficientes» → de vuelta a Venus, cada paso forzado por la evidencia que NICAP iba aportando —los logs de la FAA, los relatos de los controladores— y cada retroceso revelando que el veredicto respondía menos a los datos que a la necesidad institucional de cerrar el expediente. Redmond es así un doble documento: del fenómeno radar-visual multi-testigo que define el techo de la era Blue Book, y del mecanismo burocrático de disolución que este proyecto rastrea como sesgo sistemático del registro oficial. La franqueza obliga a anotar la contra-hipótesis que le da peso al canal mundano: el avistamiento ocurrió antes del amanecer, cuando Venus era un lucero matutino brillante, y una misidentificación inicial del cuerpo estacionario no puede excluirse del todo —pero no explica ni el descenso a baja altura, ni las maniobras de radar, ni la escalada de seis interceptores.",
+  "whyMatters_en": "Redmond concentrates in a single episode two of the markers this corpus uses to weigh a case: the institutional quality of the witnesses and the disproportionate response of the military apparatus. The first observer was a police officer; the next, FAA controllers; the target entered the Klamath Falls GCI radar; and the defense system responded by scrambling six F-102s and diverting two more aircraft in flight. That level of mobilization is not ordered over Venus. The two-hour radar track with vertical excursions of nearly 15 kilometers flatly rules out the balloon, the other official explanation: no balloon climbs and descends like that, nor hovers at 60 meters lighting up the treetops as the first witness described.\n\nThe case's analytical value lies as much in the event as in its subsequent handling, a textbook exemplar of the oscillating-explanation pattern. The Air Force ran through Venus → balloon → 'insufficient data' → back to Venus, each step forced by the evidence NICAP kept supplying — the FAA logs, the controllers' accounts — and each reversal revealing that the verdict answered less to the data than to the institutional need to close the file. Redmond is thus a double document: of the multi-witness radar-visual phenomenon that defines the ceiling of the Blue Book era, and of the bureaucratic dissolution mechanism this project tracks as a systematic bias of the official record. Candor requires noting the counter-hypothesis that gives the mundane channel its weight: the sighting occurred before dawn, when Venus was a bright morning star, and an initial misidentification of the stationary body cannot be entirely excluded — but it explains neither the low descent, nor the radar maneuvers, nor the scramble of six interceptors.",
+  "evidence": [
+    "Contacto visual inicial de un policía (Robert Dickerson): objeto brillante que desciende y queda estacionario a ~60 m, con copas de árboles iluminadas",
+    "Observación por controladores de la FAA en el aeropuerto de Redmond, con reporte a Seattle ARTCC y a Hamilton AFB",
+    "Detección en el radar del GCI de Klamath Falls",
+    "Despliegue de seis cazas F-102 desde Portland, más un B-47 y un F-89 desviados de vuelos de rutina",
+    "Pista de radar de ~2 horas con cambios de altitud entre ~1.500 y 15.800 m (incompatible con globo)",
+    "Explicación oficial oscilante de la USAF: Venus → globo → «datos insuficientes» → Venus (1963)",
+    "Documentación de NICAP con los logs de la FAA y relatos de los controladores que contradicen las explicaciones oficiales"
+  ],
+  "evidence_en": [
+    "Initial visual contact by a police officer (Robert Dickerson): bright object descending and hovering at ~60 m, with treetops lit up",
+    "Observation by FAA controllers at Redmond airport, with report to Seattle ARTCC and Hamilton AFB",
+    "Detection on the Klamath Falls GCI radar",
+    "Deployment of six F-102 fighters from Portland, plus a B-47 and an F-89 diverted from routine flights",
+    "~2-hour radar track with altitude changes between ~1,500 and 15,800 m (incompatible with a balloon)",
+    "USAF's oscillating official explanation: Venus → balloon → 'insufficient data' → Venus (1963)",
+    "NICAP documentation with the FAA logs and controllers' accounts contradicting the official explanations"
+  ],
+  "sources": [
+    {
+      "name": "Expediente de Project Blue Book — Redmond, Oregon, 24 de septiembre de 1959 (NARA)",
+      "note": "Incluye la secuencia de explicaciones oficiales (Venus / globo / datos insuficientes)"
+    },
+    {
+      "name": "NICAP — expediente Redmond 1959",
+      "note": "Compila los logs de la FAA y los relatos de controladores que contradicen las explicaciones de la USAF"
+    },
+    {
+      "name": "Registros de la FAA — Redmond Airport / Seattle ARTCC, 24 de septiembre de 1959",
+      "note": "Logs contemporáneos del reporte y del escalado a la defensa aérea"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.28,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.08,
+    "nohumano_encubierto": 0.12,
+    "nohumano_abierto": 0.12,
+    "indet": 0.35
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "falconbridge-norad-1975",
+  "num": 315,
+  "name": "Falconbridge · radar de NORAD y la oleada del Northern Tier",
+  "name_en": "Falconbridge · NORAD radar and the Northern Tier wave",
+  "year_start": 1975,
+  "country": "CA",
+  "country_name": "Canadá",
+  "flag": "🇨🇦",
+  "location": {
+    "lat": 46.59,
+    "lng": -80.81,
+    "place": "CFS Falconbridge, Ontario (cerca de Sudbury)",
+    "place_en": "CFS Falconbridge, Ontario (near Sudbury)"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 75,
+  "summary": "El 11 de noviembre de 1975, la estación de radar de las Fuerzas Canadienses en Falconbridge (Ontario) rastreó objetos a 40-50 km al sur que ascendían de 8.000 a 14.000 y luego a 22.000 metros, se detenían y volvían a subir; el comandante, mayor Robert Oliver, y otros cinco militares los vieron con binoculares, y siete policías de la OPP los observaron. NORAD hizo despegar cazas F-106 que no encontraron nada, y emitió un comunicado que enmarcaba el evento en una oleada de reportes desde el 28 de octubre sobre las bases nucleares del 'Northern Tier': Loring, Wurtsmith, Malmstrom, Minot y Falconbridge.",
+  "summary_en": "On November 11, 1975, the Canadian Forces radar station at Falconbridge, Ontario, tracked objects 40-50 km to the south that climbed from 8,000 to 14,000 and then to 22,000 meters, stopped, and climbed again; the commanding officer, Major Robert Oliver, and five other military personnel saw them through binoculars, and seven OPP officers observed them. NORAD scrambled F-106 fighters that found nothing, and issued a statement framing the event within a wave of reports since October 28 over the 'Northern Tier' nuclear bases: Loring, Wurtsmith, Malmstrom, Minot and Falconbridge.",
+  "patterns": ["8f", "8e"],
+  "category": "incident",
+  "whatHappened": "En el otoño de 1975, el sistema de defensa aérea de Norteamérica registró una serie sostenida de intrusiones no identificadas sobre sus instalaciones más sensibles. Desde el 28 de octubre, según un mensaje del Centro de Operaciones de Combate de NORAD, «personal militar confiable» había avistado objetos sospechosos sobre las bases de la línea nuclear del norte: Loring AFB (Maine), Wurtsmith AFB (Michigan), Malmstrom AFB (Montana), Minot AFB (Dakota del Norte) y la estación canadiense de Falconbridge, en Ontario. Era una oleada coordinada sobre depósitos y silos de armas nucleares, y provocó despliegues de intercepción repetidos que en general no lograban establecer contacto.\n\nEl episodio de Falconbridge del 11 de noviembre es el mejor documentado de la serie por su combinación de radar y testigos institucionales. La estación rastreó en su radar objetos a unos 40-50 km al sur del sitio, con un perfil de vuelo anómalo: ascendieron desde unos 8.000 hasta 14.000 metros, se mantuvieron detenidos un tiempo y luego subieron abruptamente hasta cerca de 22.000 metros —maniobras verticales que ningún globo ni aeronave convencional ejecuta. El comandante de la estación, el mayor Robert Oliver, junto con otros cinco militares, observó tres objetos a través de binoculares sin poder identificarlos; siete agentes de la Policía Provincial de Ontario (OPP) los vieron también desde tierra. NORAD ordenó el despegue de dos cazas F-106 para interceptar; los aviones llegaron a la zona pero no encontraron nada que correlacionara con los ecos y las luces observadas.\n\nLa respuesta oficial siguió el patrón conocido. Un comunicado atribuyó las luces al planeta Júpiter, «inusualmente brillante esa mañana», y otro recurrió a la fórmula de los «fenómenos atmosféricos». Ninguna de las dos versiones daba cuenta del perfil de radar —los saltos de altitud de más de 13.000 metros con parada intermedia— ni de la coincidencia entre el radar, el avistamiento de seis militares con binoculares y el de siete policías. El expediente sobrevivió porque el investigador canadiense Palmiro Campagna recuperó, vía acceso a documentos, los mensajes de NORAD y del Departamento de Defensa Nacional que fijan la secuencia con hora, altitud y unidades intervinientes.",
+  "whatHappened_en": "In the fall of 1975, the North American air defense system recorded a sustained series of unidentified intrusions over its most sensitive installations. Since October 28, according to a message from NORAD's Combat Operations Center, 'reliable military personnel' had sighted suspicious objects over the northern nuclear-line bases: Loring AFB (Maine), Wurtsmith AFB (Michigan), Malmstrom AFB (Montana), Minot AFB (North Dakota) and the Canadian station at Falconbridge, Ontario. It was a coordinated wave over nuclear-weapons depots and silos, and it prompted repeated intercept deployments that generally failed to establish contact.\n\nThe Falconbridge episode of November 11 is the best-documented of the series for its combination of radar and institutional witnesses. The station tracked on its radar objects some 40-50 km south of the site, with an anomalous flight profile: they climbed from about 8,000 to 14,000 meters, held stationary for a time, and then rose abruptly to near 22,000 meters — vertical maneuvers no balloon or conventional aircraft performs. The station's commanding officer, Major Robert Oliver, together with five other military personnel, observed three objects through binoculars without being able to identify them; seven Ontario Provincial Police (OPP) officers saw them too from the ground. NORAD ordered two F-106 fighters scrambled to intercept; the aircraft reached the area but found nothing that correlated with the echoes and the observed lights.\n\nThe official response followed the familiar pattern. One statement attributed the lights to the planet Jupiter, 'unusually bright that morning,' and another resorted to the 'atmospheric phenomena' formula. Neither version accounted for the radar profile — the altitude jumps of more than 13,000 meters with an intermediate stop — nor for the concurrence of the radar, the sighting by six military personnel with binoculars, and that of seven police officers. The file survived because the Canadian researcher Palmiro Campagna recovered, via document access, the NORAD and Department of National Defence messages that fix the sequence with time, altitude and units involved.",
+  "whyMatters": "Falconbridge condensa dos de las líneas que este corpus considera de máximo peso: el radar-visual con testigos institucionales múltiples y el patrón de intrusiones sobre infraestructura nuclear. No es un avistamiento aislado sino el nodo mejor documentado de una oleada que NORAD misma reconoció por escrito —«personal militar confiable»— sobre cinco instalaciones de armas nucleares en apenas dos semanas. Que un mando de defensa aérea deje constancia interna de intrusiones repetidas sobre sus silos, ordene intercepciones y no logre resolver los contactos es, en la lógica de amenaza de la Guerra Fría, un fallo operativo que no se admite a la ligera; el hecho de que el registro exista y haya sido recuperado documentalmente es lo que sostiene el caso frente al escepticismo.\n\nEl perfil de radar es la clave analítica. Las dos explicaciones oficiales —Júpiter para el canal visual, fenómenos atmosféricos para el radar— chocan con un dato que ninguna cubre: un objeto que sube de 8.000 a 14.000 metros, se detiene y luego salta a 22.000 no es un planeta ni una inversión térmica, y la parada intermedia descarta también un meteoro o un reingreso. Falconbridge alimenta con fuerza la narrativa adversaria del corpus —una oleada sistemática sobre bases nucleares en 1975 es exactamente lo que un programa de reconocimiento de otro Estado buscaría—, pero la deja igualmente abierta: ningún inventario conocido de la época, propio o soviético, incluía una plataforma capaz de esas maniobras verticales y de evadir a los F-106. El caso es además el complemento canadiense de las entradas de Loring, Malmstrom y Minot ya presentes en el corpus, y ancla la oleada del Northern Tier como un fenómeno transfronterizo con un mismo comando integrado observándola desde adentro.",
+  "whyMatters_en": "Falconbridge condenses two of the lines this corpus treats as carrying maximum weight: radar-visual with multiple institutional witnesses, and the pattern of intrusions over nuclear infrastructure. It is not an isolated sighting but the best-documented node of a wave that NORAD itself acknowledged in writing — 'reliable military personnel' — over five nuclear-weapons installations in barely two weeks. That an air-defense command leaves an internal record of repeated intrusions over its silos, orders intercepts, and fails to resolve the contacts is, in Cold War threat logic, an operational failure not admitted lightly; the fact that the record exists and has been documentarily recovered is what sustains the case against skepticism.\n\nThe radar profile is the analytical key. The two official explanations — Jupiter for the visual channel, atmospheric phenomena for the radar — collide with a datum neither covers: an object that climbs from 8,000 to 14,000 meters, halts, and then jumps to 22,000 is not a planet or a thermal inversion, and the intermediate stop also rules out a meteor or a reentry. Falconbridge strongly feeds the corpus's adversary narrative — a systematic wave over nuclear bases in 1975 is exactly what another state's reconnaissance program would seek — but leaves it equally open: no known inventory of the era, American or Soviet, included a platform capable of those vertical maneuvers and of evading the F-106s. The case is also the Canadian complement to the Loring, Malmstrom and Minot entries already present in the corpus, and anchors the Northern Tier wave as a cross-border phenomenon with a single integrated command observing it from within.",
+  "evidence": [
+    "Pista de radar de la estación de las Fuerzas Canadienses en Falconbridge: objetos a 40-50 km al sur con saltos de altitud de ~8.000 → 14.000 → 22.000 m y parada intermedia",
+    "Observación visual con binoculares por el comandante mayor Robert Oliver y otros cinco militares: tres objetos no identificables",
+    "Avistamiento por siete agentes de la Policía Provincial de Ontario (OPP)",
+    "Despegue de dos cazas F-106 de NORAD que no lograron correlacionar contacto",
+    "Mensaje del Combat Operations Center de NORAD sobre reportes desde el 28 de octubre por «personal militar confiable» en Loring, Wurtsmith, Malmstrom, Minot y Falconbridge",
+    "Explicaciones oficiales (Júpiter / fenómenos atmosféricos) que no cubren el perfil vertical de radar",
+    "Documentos de NORAD y del DND recuperados por el investigador Palmiro Campagna"
+  ],
+  "evidence_en": [
+    "Radar track from the Canadian Forces station at Falconbridge: objects 40-50 km south with altitude jumps of ~8,000 → 14,000 → 22,000 m and an intermediate stop",
+    "Visual observation through binoculars by commanding officer Major Robert Oliver and five other military personnel: three unidentifiable objects",
+    "Sighting by seven Ontario Provincial Police (OPP) officers",
+    "Scramble of two NORAD F-106 fighters that failed to correlate contact",
+    "NORAD Combat Operations Center message on reports since October 28 by 'reliable military personnel' at Loring, Wurtsmith, Malmstrom, Minot and Falconbridge",
+    "Official explanations (Jupiter / atmospheric phenomena) that do not cover the vertical radar profile",
+    "NORAD and DND documents recovered by researcher Palmiro Campagna"
+  ],
+  "sources": [
+    {
+      "name": "Mensajes del Combat Operations Center de NORAD, oct.-nov. 1975",
+      "note": "Registran la oleada del Northern Tier sobre bases nucleares y el evento de Falconbridge con hora y altitud"
+    },
+    {
+      "name": "Palmiro Campagna — documentación del DND canadiense sobre Falconbridge 1975",
+      "note": "Recuperación vía acceso a documentos de los mensajes militares que fijan la secuencia"
+    },
+    {
+      "name": "Comunicado de prensa de NORAD sobre el incidente de Falconbridge (11 de noviembre de 1975)",
+      "note": "Incluye la explicación por Júpiter / fenómenos atmosféricos"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.25,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.13,
+    "nohumano_encubierto": 0.12,
+    "nohumano_abierto": 0.11,
+    "indet": 0.32
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "manston-torres-1957",
+  "num": 312,
+  "name": "RAF Manston · la orden de disparar (Milton Torres)",
+  "name_en": "RAF Manston · the order to fire (Milton Torres)",
+  "year_start": 1957,
+  "country": "GB",
+  "country_name": "Reino Unido",
+  "flag": "🇬🇧",
+  "location": {
+    "lat": 51.342,
+    "lng": 1.346,
+    "place": "RAF Manston, Kent, sobre East Anglia",
+    "place_en": "RAF Manston, Kent, over East Anglia"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 70,
+  "summary": "La noche del 20 de mayo de 1957, el teniente de la USAF Milton Torres despegó desde RAF Manston (Kent) en un F-86D con la orden de disparar una salva completa de 24 cohetes contra un blanco de radar estacionario sobre East Anglia que el control de tierra seguía desde hacía tiempo. Torres obtuvo bloqueo a 24 km sobre un eco «con las proporciones de un portaaviones volador»; antes de disparar, el objeto se movió a una velocidad que estimó en Mach 10 y desapareció del radar. Al día siguiente un hombre de civil le ordenó silencio; Torres habló recién décadas después, cuando el MoD británico desclasificó el expediente en 2008.",
+  "summary_en": "On the night of May 20, 1957, USAF Lieutenant Milton Torres scrambled from RAF Manston (Kent) in an F-86D with orders to fire a full salvo of 24 rockets at a stationary radar target over East Anglia that ground control had been tracking for some time. Torres locked on at 24 km to an echo 'with the proportions of a flying aircraft carrier'; before he could fire, the object moved at a speed he estimated at Mach 10 and vanished from radar. The next day a man in civilian clothes ordered him to keep silent; Torres spoke only decades later, when the UK MoD declassified the file in 2008.",
+  "patterns": ["8e", "8m"],
+  "category": "incident",
+  "whatHappened": "En mayo de 1957, East Anglia era uno de los cielos más militarizados del planeta: una densidad extraordinaria de bases de la USAF y la RAF, radares de alerta temprana y cazas en alerta de reacción por la amenaza de bombarderos soviéticos. Esa noche, dos F-86D Sabre estaban en alerta de cinco minutos al sur de la pista de RAF Manston, en Kent. El control de intercepción de tierra llevaba tiempo siguiendo un eco de radar que orbitaba la región con un comportamiento anómalo: permanecía inmóvil durante intervalos largos, algo que ningún avión de la época podía hacer. Descartados los procedimientos normales de identificación, el blanco quedó clasificado como no identificado y se ordenó el despegue.\n\nGuiado por el GCI, el teniente Milton Torres —25 años, piloto de caza— fue vectoreado hacia el contacto. La orden que recibió fue inusualmente tajante: disparar una salva completa de sus 24 cohetes Mighty Mouse contra el blanco. Torres describió después el eco en su propio radar de a bordo como algo «con las proporciones de un portaaviones volador»: un retorno enorme y sólido, estacionario. Consiguió bloqueo casi de inmediato, a exactamente 24 km (15 millas), con el sistema de puntería listo para el lanzamiento automático. En el instante previo a disparar, el objeto se movió. Torres lo vio salir del bloqueo y barrer la pantalla a una velocidad que estimó en no menos de Mach 10 —del orden de 11.000 km/h— antes de desaparecer del alcance del radar. Regresó a Manston sin haber disparado.\n\nLo que siguió es la parte que convierte al caso en material del corpus. Al día siguiente, según el relato consistente de Torres, un hombre vestido de civil —que se identificó vagamente como de una agencia estadounidense— lo interrogó, le advirtió que el incidente estaba clasificado y que hablar de él le costaría la carrera. Torres guardó silencio durante unos treinta años. El episodio salió a la luz cuando el Ministerio de Defensa británico comenzó, en 2008, la liberación pública de sus archivos UFO acumulados durante medio siglo; entre ellos había documentación de reportes de radar de la RAF de la época que encuadraban el relato. Torres —para entonces profesor de ingeniería en Estados Unidos— dio testimonio en firme, por escrito y grabado, ratificando el episodio con nombre, fecha y base.",
+  "whatHappened_en": "In May 1957, East Anglia was one of the most militarized skies on the planet: an extraordinary density of USAF and RAF bases, early-warning radars and fighters on reaction alert against the Soviet bomber threat. That night, two F-86D Sabres were on five-minute alert at the south end of the runway at RAF Manston, Kent. The ground intercept control had for some time been tracking a radar echo that orbited the region with anomalous behavior: it stayed motionless for long intervals, something no aircraft of the era could do. With the normal identification procedures exhausted, the target was classified unidentified and the scramble was ordered.\n\nVectored by the GCI, Lieutenant Milton Torres — 25 years old, a fighter pilot — was directed onto the contact. The order he received was unusually blunt: fire a full salvo of his 24 Mighty Mouse rockets at the target. Torres later described the echo on his own onboard radar as something 'with the proportions of a flying aircraft carrier': a huge, solid, stationary return. He obtained a lock almost immediately, at exactly 24 km (15 miles), with the gunsight system ready for automatic launch. In the instant before firing, the object moved. Torres watched it break the lock and sweep across the screen at a speed he estimated at no less than Mach 10 — on the order of 11,000 km/h — before disappearing off the radar's range. He returned to Manston without having fired.\n\nWhat followed is the part that makes the case corpus material. The next day, by Torres's consistent account, a man in civilian clothes — who vaguely identified himself as being from an American agency — interrogated him, warned him the incident was classified and that speaking of it would cost him his career. Torres kept silent for roughly thirty years. The episode surfaced when the UK Ministry of Defence began, in 2008, the public release of its UFO files accumulated over half a century; among them was documentation of RAF radar reports of the era that framed the account. Torres — by then an engineering professor in the United States — gave firm testimony, in writing and on the record, ratifying the episode with name, date and base.",
+  "whyMatters": "Manston es el caso donde el Estado no solo observa sino que decide abrir fuego: la orden de lanzar una salva completa de cohetes contra el blanco es, en sí misma, la mejor medida de cuán real era el contacto para el mando aéreo de la época. No se ordena gastar 24 cohetes sobre East Anglia poblada por una anomalía atmosférica; se ordena cuando el radar de tierra, tras agotar los procedimientos de identificación, trata al eco como un intruso hostil. Que el objeto quebrara el bloqueo y desapareciera a una velocidad estimada en Mach 10 fija el mismo perfil cinemático imposible-para-la-época que reaparece en Ellsworth, Haneda y el RB-47: estacionario y luego una aceleración fuera de todo inventario conocido.\n\nEl caso pesa además por su cadena de custodia atípica. A diferencia de un rumor, aquí hay tres capas que se sostienen mutuamente: el testimonio nominal y grabado de un piloto identificable con carrera posterior como ingeniero, la existencia documentada del expediente en la liberación del MoD de 2008, y el contexto operativo verificable de la alerta de reacción de la USAF en Manston. La advertencia de silencio del hombre de civil —el patrón de cover-up institucional documentado que este corpus rastrea— explica por qué un episodio de esta gravedad tardó treinta años en aflorar, y por qué buena parte del registro histórico está estructuralmente sesgado hacia el subreporte. La debilidad del caso es honesta y hay que nombrarla: el contacto del interceptor fue radar-solo, sin adquisición visual, lo que deja a la propagación anómala como candidato mundano con más fuerza que en un caso radar-visual; pero un eco estacionario del tamaño reportado que luego acelera a Mach 10 es precisamente el tipo de retorno que la propagación anómala no produce.",
+  "whyMatters_en": "Manston is the case where the state does not merely observe but decides to open fire: the order to launch a full salvo of rockets at the target is itself the best measure of how real the contact was to the era's air command. You do not order 24 rockets spent over populated East Anglia on an atmospheric anomaly; you order it when ground radar, having exhausted the identification procedures, treats the echo as a hostile intruder. That the object broke the lock and disappeared at an estimated Mach 10 fixes the same impossible-for-the-era kinematic profile that recurs at Ellsworth, Haneda and the RB-47: stationary and then an acceleration beyond any known inventory.\n\nThe case also weighs for its atypical chain of custody. Unlike a rumor, here three layers hold each other up: the named, recorded testimony of an identifiable pilot with a subsequent career as an engineer; the documented existence of the file in the MoD's 2008 release; and the verifiable operational context of the USAF reaction alert at Manston. The silence warning from the man in civilian clothes — the documented institutional cover-up pattern this corpus tracks — explains why an episode of this gravity took thirty years to surface, and why much of the historical record is structurally biased toward underreporting. The case's weakness is honest and must be named: the interceptor's contact was radar-only, without visual acquisition, which leaves anomalous propagation as a stronger mundane candidate than in a radar-visual case; but a stationary echo of the reported size that then accelerates to Mach 10 is precisely the kind of return anomalous propagation does not produce.",
+  "evidence": [
+    "Pista de radar del GCI sobre un eco no identificado que orbitaba East Anglia y permanecía inmóvil por intervalos largos",
+    "Orden operativa de disparar una salva completa de 24 cohetes Mighty Mouse contra el blanco",
+    "Bloqueo del radar aerotransportado del F-86D a 24 km sobre un retorno enorme «con las proporciones de un portaaviones volador»",
+    "Salida del objeto a velocidad estimada en ~Mach 10, quebrando el bloqueo y desapareciendo del radar",
+    "Testimonio nominal, escrito y grabado del piloto Milton Torres, ratificado décadas después con fecha y base",
+    "Advertencia de silencio por un hombre de civil al día siguiente (patrón de cover-up documentado)",
+    "Liberación pública del expediente en los archivos UFO del MoD británico (desde 2008)"
+  ],
+  "evidence_en": [
+    "GCI radar track of an unidentified echo orbiting East Anglia and remaining motionless for long intervals",
+    "Operational order to fire a full salvo of 24 Mighty Mouse rockets at the target",
+    "F-86D airborne radar lock at 24 km on a huge return 'with the proportions of a flying aircraft carrier'",
+    "Object's departure at an estimated ~Mach 10, breaking the lock and disappearing from radar",
+    "Named, written and recorded testimony from pilot Milton Torres, ratified decades later with date and base",
+    "Silence warning by a man in civilian clothes the next day (documented cover-up pattern)",
+    "Public release of the file in the UK MoD's UFO archives (from 2008)"
+  ],
+  "sources": [
+    {
+      "name": "Archivos UFO del Ministerio de Defensa británico — liberación pública (2008–)",
+      "note": "Serie de expedientes desclasificados que encuadran los reportes de radar de la RAF de la época"
+    },
+    {
+      "name": "Testimonio de Milton Torres — declaración escrita y grabada",
+      "note": "Relato nominal del piloto con fecha, base y detalle operativo, ratificado décadas después"
+    },
+    {
+      "name": "The National Archives (UK) — expedientes UFO del MoD, sección de reportes de 1957",
+      "note": "Documentación de contexto sobre el sistema de alerta e intercepción del periodo"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.32,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.1,
+    "indet": 0.3
+  }
+}

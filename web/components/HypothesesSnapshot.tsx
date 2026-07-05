@@ -1,4 +1,4 @@
-import { corpusPosteriors, documentPosteriors, expandedHypotheses } from "@/lib/meceModel";
+import { corpusPosteriors, documentPosteriors, modalCounts } from "@/lib/meceModel";
 import { MeceDonut } from "@/components/MeceDonut";
 import { T } from "@/components/T";
 
@@ -12,7 +12,9 @@ import { T } from "@/components/T";
 export function HypothesesSnapshot() {
   const scored = [...corpusPosteriors(), ...documentPosteriors()];
   const N = scored.length;
-  const rows = expandedHypotheses(scored, { consolidateNonHuman: true });
+  // Conteo por hipótesis MODAL (argmax): enteros y consistentes con /cases y con
+  // /probabilidades. Cada caso cuenta 1 en su narrativa más probable.
+  const rows = modalCounts(scored, { consolidateNonHuman: true });
 
   return (
     <div>
