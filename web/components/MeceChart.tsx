@@ -3,9 +3,8 @@ import { MeceDonut } from "@/components/MeceDonut";
 import {
   corpusPosteriors,
   expandedHypotheses,
-  entidadesNoHumanas,
-  heterogeneidad,
-  classifiedPosterior,
+  modalCounts,
+  modalHypothesis,
   type ScoredCase,
 } from "@/lib/meceModel";
 import type { Posterior } from "@/lib/types";
@@ -42,14 +41,19 @@ export function MecePartition({
 }) {
   const scored = items ?? corpusPosteriors();
   const N = scored.length;
-  // Clasificación forzada + mundano/natural abierto en sus 3 sub-tipos (hipótesis
-  // de primer nivel). Ningún caso queda en indeterminable.
-  const rows = expandedHypotheses(scored, { consolidateNonHuman });
+  // Clasificación forzada por hipótesis MODAL (argmax): cada caso cuenta 1 en su
+  // narrativa más probable, de modo que los conteos son enteros y coinciden con
+  // el filtro de /cases y con el CTA «Ver los N casos». (El nº ESPERADO —Σ P—
+  // sigue siendo el agregado comparable del modelo; se explica en /probabilidades.)
+  const rows = modalCounts(scored, { consolidateNonHuman });
 
-  const enh = scored.reduce((s, c) => s + entidadesNoHumanas(classifiedPosterior(c.posterior)), 0);
-  const het = scored.reduce((s, c) => s + heterogeneidad(classifiedPosterior(c.posterior)), 0);
-  const anomalo = het;            // 1 − prosaico, sumado
-  const prosaico = N - het;       // misid + natural + fraude
+  // Vistas derivadas, también por hipótesis modal para no chocar con el gráfico.
+  const modalKeys = scored.map((c) => modalHypothesis(c, { consolidateNonHuman }).key);
+  const PROSAIC = new Set(["misid", "natural", "fraude"]);
+  const NONHUMAN = new Set(["nohumano", "nohumano_encubierto", "nohumano_abierto"]);
+  const prosaico = modalKeys.filter((k) => PROSAIC.has(k)).length; // misid + natural + fraude
+  const anomalo = N - prosaico;   // 1 − prosaico
+  const enh = modalKeys.filter((k) => NONHUMAN.has(k)).length;
   const colorOf = Object.fromEntries(rows.map((r) => [r.key, r.color])) as Record<string, string>;
   const prosaicoColor = colorOf.misid ?? rows[0].color;
   const anomaloColor = colorOf.nohumano ?? colorOf.nohumano_encubierto ?? rows[rows.length - 1].color;

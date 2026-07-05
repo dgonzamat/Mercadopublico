@@ -14,6 +14,8 @@ export type DonutDatum = {
 };
 
 const share = (x: number) => (x * 100).toFixed(1);
+// Conteo modal (argmax) → entero; red de seguridad para un count fraccional.
+const fmtCount = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
 /**
  * Donut interactivo (componente cliente). El hover/focus sobre un segmento o
@@ -87,7 +89,7 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
                 <span className="font-semibold tabular-nums" style={{ color: activeRow.color }}>
                   {share(activeRow.count / N)}%
                 </span>{" "}
-                · {activeRow.count.toFixed(1)} <T es="casos" en="cases" />
+                · {fmtCount(activeRow.count)} <T es="casos" en="cases" />
               </div>
             </div>
           </div>
@@ -210,7 +212,7 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
                 <span className={`shrink-0 whitespace-nowrap text-right tabular-nums ${muted}`}>
                   <span className={i === 0 || isActive ? txt : ""}>{share(frac)}%</span>
                   {" · "}
-                  {row.count.toFixed(1)} <T es="casos" en="cases" />
+                  {fmtCount(row.count)} <T es="casos" en="cases" />
                 </span>
               </div>
               {/* Mini-barra: longitud relativa a la hipótesis más grande */}
