@@ -24,6 +24,8 @@ Este archivo es **memoria viva**, no documentación estática. La regla de compo
 
 El slash command **`/learn`** automatiza este loop: destila la corrección de la conversación en una lección con el formato correcto y la inserta en la sección adecuada. Ver `.claude/commands/learn.md`.
 
+**Hook de validación de schema** (`.claude/hooks/validate-schema-on-edit.sh`, registrado como `PostToolUse` en `.claude/settings.json`): al editar un `data/cases/*.json` o `data/researchers.json`, corre `validate-schema.mjs` en el acto y **bloquea** (exit 2) si el schema se rompe. Adelanta al momento del edit el mismo gate que antes solo corría en prebuild/CI — un `posterior` MECE que no suma 1, un `id`/`num` duplicado, un JSON roto o una foto sin licencia se ven al instante.
+
 ---
 
 ## Stack
