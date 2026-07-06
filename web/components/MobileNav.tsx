@@ -54,6 +54,7 @@ const NAV_LINKS = [
 const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
   { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
+  { href: "/cobertura", es: "Cobertura", en: "Coverage" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
   { href: "/contact", es: "Contacto", en: "Contact" },
   { href: "/visitantes", es: "Visitantes", en: "Visitors" },
