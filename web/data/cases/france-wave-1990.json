@@ -1,0 +1,87 @@
+{
+  "id": "france-wave-1990",
+  "num": 319,
+  "name": "Oleada francesa del 5 de noviembre de 1990",
+  "year_start": 1990,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 47.08,
+    "lng": 2.4,
+    "place": "Francia · trayectoria SO→NE",
+    "place_en": "France · SW→NE track"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 52,
+  "summary": "La mayor oleada OVNI de la historia de Francia: la noche del 5 de noviembre de 1990, miles de testigos en todo el país vieron un gran 'triángulo' oscuro y silencioso cruzar el cielo de suroeste a noreste. Era la reentrada de la tercera etapa de un cohete Protón soviético, identificada en días por el SEPRA y por rastreadores independientes.",
+  "summary_en": "France's largest UFO wave: on the night of 5 November 1990, thousands of witnesses across the country saw a large, dark, silent 'triangle' cross the sky from southwest to northeast. It was the atmospheric re-entry of the third stage of a Soviet Proton rocket, identified within days by SEPRA and independent satellite trackers.",
+  "patterns": ["8l", "8k"],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.8,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
+    "indet": 0.13
+  },
+  "whatHappened": "La noche del 5 de noviembre de 1990, entre las 19:00 y las 19:10 aproximadamente, miles de personas en toda Francia —de la costa atlántica al noreste— vieron cruzar el cielo un objeto luminoso, lento y silencioso. Las gendarmerías y los medios quedaron desbordados por las llamadas: en cuestión de horas se acumularon más de mil testimonios, una de las mayores oleadas OVNI de la historia francesa.\n\nLas descripciones convergían en una forma inquietante: una gran estructura oscura, triangular o en boomerang, que se desplazaba majestuosamente de suroeste a noreste con puntos luminosos en los vértices, estelas detrás y, según algunos, 'ventanas' iluminadas. Varios testigos insistieron en que avanzaba sin ruido alguno; unos pocos describieron interferencias en radios de automóvil y aparatos eléctricos. La prensa nacional abrió con la noticia y durante días el país debatió si había presenciado una nave.\n\nLa explicación llegó rápido y desde frentes independientes. Esa misma noche, el rastreador de satélites Pierre Neirinck identificó el fenómeno como la reentrada de chatarra espacial. Los datos orbitales lo confirmaron: era la reentrada de la tercera etapa de un cohete Protón soviético —lanzado días antes desde Baikonur para poner en órbita el satélite Gorizont 21— que se desintegró sobre Francia esa tarde. El tren de fragmentos incandescentes, avanzando en formación a gran altura, fue reconstruido por la percepción de los testigos como un único objeto sólido y estructurado: el 'triángulo' era la estela fragmentada leída como los bordes de una nave.\n\nEl SEPRA —el organismo oficial francés dirigido entonces por Jean-Jacques Velasco— comunicó la explicación de la reentrada a las agencias de noticias el 9 de noviembre. Velasco reafirmaría el diagnóstico en un libro de 1993 con el periodista Jean-Claude Bourret. Un análisis clásico de James Oberg documentó, casi de manual, cómo una reentrada genera reportes masivos de 'naves estructuradas'.",
+  "whatHappened_en": "On the night of 5 November 1990, roughly between 19:00 and 19:10, thousands of people across France — from the Atlantic coast to the northeast — watched a slow, silent, luminous object cross the sky. Gendarmerie stations and newsrooms were overwhelmed with calls: within hours more than a thousand reports had piled up, one of the largest UFO waves in French history.\n\nThe descriptions converged on an unsettling shape: a large dark structure, triangular or boomerang-like, moving majestically from southwest to northeast with luminous points at its corners, trails behind it and, for some, lit 'windows'. Several witnesses insisted it made no sound at all; a few described interference on car radios and electrical devices. The national press led with the story, and for days the country debated whether it had watched a craft.\n\nThe explanation came quickly and from independent directions. That same night, satellite tracker Pierre Neirinck identified the phenomenon as re-entering space debris. Orbital data confirmed it: this was the re-entry of the third stage of a Soviet Proton rocket — launched days earlier from Baikonur to place the Gorizont 21 satellite in orbit — that disintegrated over France that evening. The train of glowing fragments, advancing in formation at high altitude, was reconstructed by witnesses' perception into a single solid, structured object: the 'triangle' was the fragmented trail read as the edges of a craft.\n\nSEPRA — the official French body then led by Jean-Jacques Velasco — communicated the re-entry explanation to news agencies on 9 November. Velasco would reaffirm the diagnosis in a 1993 book with journalist Jean-Claude Bourret. A classic analysis by James Oberg documented, almost as a textbook, how a re-entry generates mass reports of 'structured craft'.",
+  "whyMatters": "Trans-en-Provence o Valensole son los casos franceses de trazas físicas; esta oleada es lo opuesto, y por eso igual de valiosa: el caso-control de la narrativa mundana. Demuestra, con miles de testigos sinceros, que un evento de masas con forma de 'triángulo gigante silencioso' puede surgir por completo de una sola reentrada más la reconstrucción perceptiva. Ningún fraude, ninguna nave: física orbital conocida leída mal a escala nacional.\n\nSu peso analítico es de calibración. Fija cuánto crédito conceder a los reportes multitudinarios de triángulos en otros casos —la oleada belga de 1989, las Luces de Phoenix— donde el número de testigos se invoca como prueba de anomalía. La lección de 1990 es que el conteo de testigos no mide anomalía: mide la visibilidad del estímulo. Mil personas pueden equivocarse a la vez, con total honestidad, ante un objeto real pero prosaico.\n\nTambién es un caso de éxito institucional. Un organismo estatal (SEPRA), sumado a un rastreador aficionado y a los catálogos orbitales de NORAD, tuvo la explicación correcta en días, no en décadas. Es el reverso del cover-up: transparencia y método resolviendo el caso casi en tiempo real.\n\nQueda un residuo delgado —una minoría de avistamientos a corta distancia cuya geometría o cronología no encaja limpiamente con la ventana de la reentrada—, suficiente para no cerrarlo al 100% pero no para sostener una hipótesis exótica. Por eso su posterior se inclina fuerte a lo mundano con un margen de indeterminación, y por eso el corpus lo clasifica Tier S: no por anómalo, sino por su documentación, su escala y su valor probatorio como ancla de la explicación más común del fenómeno.",
+  "whyMatters_en": "Trans-en-Provence and Valensole are France's physical-trace cases; this wave is the opposite, and just as valuable for it: the control case of the mundane narrative. It demonstrates, with thousands of sincere witnesses, that a mass event shaped like a 'giant silent triangle' can arise entirely from a single re-entry plus perceptual reconstruction. No hoax, no craft: known orbital physics misread at national scale.\n\nIts analytical weight is calibration. It sets how much credit to grant mass triangle reports in other cases — the 1989 Belgian wave, the Phoenix Lights — where witness count is invoked as proof of anomaly. The lesson of 1990 is that witness count does not measure anomaly: it measures the visibility of the stimulus. A thousand people can be wrong at once, in complete good faith, before a real but prosaic object.\n\nIt is also an institutional success story. A state body (SEPRA), together with an amateur tracker and NORAD's orbital catalogues, had the correct explanation in days, not decades. It is the reverse of a cover-up: transparency and method solving the case almost in real time.\n\nA thin residue remains — a minority of close-range sightings whose geometry or timing does not fit cleanly within the re-entry window — enough to keep it from being 100% closed, but not to sustain an exotic hypothesis. That is why its posterior leans strongly mundane with a margin of indeterminacy, and why the corpus files it as Tier S: not for being anomalous, but for its documentation, its scale, and its evidentiary value as an anchor for the most common explanation of the phenomenon. In a corpus where mundane misidentification already carries roughly half of the expected weight, a case this well attested is not a footnote but a load-bearing pillar of the baseline against which the genuine unknowns must be measured.",
+  "evidence": [
+    "Más de mil testimonios recogidos en toda Francia entre las 19:00 y 19:10 del 5 nov 1990",
+    "Trayectoria suroeste→noreste consistente con una reentrada, no con vuelo controlado",
+    "Identificación independiente esa misma noche por el rastreador de satélites Pierre Neirinck",
+    "Datos orbitales: reentrada de la 3ª etapa de un cohete Protón (lanzamiento del satélite Gorizont 21 desde Baikonur)",
+    "Comunicado oficial del SEPRA (CNES) a las agencias de noticias el 9 de noviembre de 1990",
+    "Reafirmación de J.-J. Velasco, jefe del SEPRA, en un libro de 1993 con J.-C. Bourret",
+    "Análisis técnico de James Oberg sobre cómo las reentradas generan reportes de 'naves estructuradas'"
+  ],
+  "evidence_en": [
+    "More than a thousand reports gathered across France between 19:00 and 19:10 on 5 Nov 1990",
+    "Southwest→northeast trajectory consistent with a re-entry, not with controlled flight",
+    "Independent identification that same night by satellite tracker Pierre Neirinck",
+    "Orbital data: re-entry of the 3rd stage of a Proton rocket (Gorizont 21 launch from Baikonur)",
+    "Official SEPRA (CNES) statement to news agencies on 9 November 1990",
+    "Reaffirmation by J.-J. Velasco, head of SEPRA, in a 1993 book with J.-C. Bourret",
+    "Technical analysis by James Oberg on how re-entries generate 'structured craft' reports"
+  ],
+  "sources": [
+    {
+      "name": "Oberg, James — 'The November 5, 1990 French UFO wave' (SEESAT / satobs.org)",
+      "url": "http://satobs.org/seesat_ref/Oberg/901105-French_wave.pdf"
+    },
+    {
+      "name": "GEIPAN / SEPRA (CNES) — archivo oficial y comunicado de reentrada (nov 1990)",
+      "url": "https://www.cnes-geipan.fr/"
+    },
+    {
+      "name": "Velasco, J.-J. & Bourret, J.-C. — 'Ovnis: la science avance' (Robert Laffont, 1993)"
+    },
+    {
+      "name": "Gross, Patrick — ALSACAT, expedientes del 5 nov 1990 (Colmar)",
+      "url": "https://www.ufologie.patrickgross.org/alsacat/1990-11-05-colmar2.htm"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Oberg, James — 'The November 5, 1990 French UFO wave' (SEESAT / satobs.org)",
+      "url": "http://satobs.org/seesat_ref/Oberg/901105-French_wave.pdf"
+    },
+    {
+      "name": "GEIPAN / SEPRA (CNES) — official archive and re-entry statement (Nov 1990)",
+      "url": "https://www.cnes-geipan.fr/"
+    },
+    {
+      "name": "Velasco, J.-J. & Bourret, J.-C. — 'Ovnis: la science avance' (Robert Laffont, 1993)"
+    },
+    {
+      "name": "Gross, Patrick — ALSACAT, 5 Nov 1990 case files (Colmar)",
+      "url": "https://www.ufologie.patrickgross.org/alsacat/1990-11-05-colmar2.htm"
+    }
+  ]
+}
