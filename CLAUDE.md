@@ -4,6 +4,30 @@ Contexto y reglas operativas específicas de este repositorio. Las reglas de com
 
 ---
 
+## Protocolo de aprendizaje (self-learning)
+
+Este archivo es **memoria viva**, no documentación estática. La regla de compounding engineering de Boris Cherny: *cuando Claude se equivoca o descubre una convención frágil del repo, esa lección se escribe de vuelta aquí para no repetirla*. El corpus de reglas se afina "ruthlessly" hasta que baja la tasa de error.
+
+**Cuándo capturar una lección** (dispara el loop):
+- El usuario corrige algo que Claude hizo mal.
+- Una convención/gotcha del codebase costó descubrirla (webpack falla, JIT no compila, allowlist bloquea, invariante de audit se rompió).
+- Una investigación cara produjo un resultado que no debe repetirse (ej. el *Registro de búsqueda* de fotos de actores).
+
+**Dónde va cada lección** (no crear secciones nuevas si encaja en una existente):
+- Gotcha técnico reproducible → **`## Anti-patterns conocidos`**, una línea `**No** … (porque …)`.
+- Regla de dominio (schema, MECE, línea editorial) → la sección temática correspondiente.
+- Resultado de investigación que no re-hacer → un bloque tipo *Registro (NO re-buscar)* con fecha.
+
+**Formato de una lección**: una línea, imperativa, con el *porqué* entre paréntesis. La causa importa más que la regla — sin ella la regla se borra en la próxima limpieza. Fechar los registros de investigación (`(mmm aaaa)`).
+
+**Mantención**: consolidar duplicados, borrar reglas obsoletas, afilar el lenguaje. Menos reglas y más nítidas > muchas y difusas.
+
+El slash command **`/learn`** automatiza este loop: destila la corrección de la conversación en una lección con el formato correcto y la inserta en la sección adecuada. Ver `.claude/commands/learn.md`.
+
+**Hook de validación de schema** (`.claude/hooks/validate-schema-on-edit.sh`, registrado como `PostToolUse` en `.claude/settings.json`): al editar un `data/cases/*.json` o `data/researchers.json`, corre `validate-schema.mjs` en el acto y **bloquea** (exit 2) si el schema se rompe. Adelanta al momento del edit el mismo gate que antes solo corría en prebuild/CI — un `posterior` MECE que no suma 1, un `id`/`num` duplicado, un JSON roto o una foto sin licencia se ven al instante.
+
+---
+
 ## Stack
 
 - Next.js 14.2.35 App Router + TypeScript strict
@@ -34,7 +58,7 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: ~304 archivos JSON, uno por caso
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~316 a jul 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
@@ -117,7 +141,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 ## Anti-patterns conocidos
 
 - **No** importar `fs` desde `lib/data.ts` (lo importa `WorldMap.tsx` que es client component → webpack falla).
-- **No** hardcodear el número total de casos — derivar de `cases.length` (vive en `lib/siteStats.ts` como `STATS.cases`).
+- **No** hardcodear el número total de casos — derivar de `cases.length` (vive en `lib/siteStats.ts` como `STATS.cases`). Esto incluye la **prosa y comentarios de este mismo CLAUDE.md**: toda cifra del corpus citada a mano driftea (el `~304` de la sección Estructura ya era 316 en jul 2026) — al citarla, márcala aproximada + fechada, o remite a `STATS.cases`.
 - **No** usar `node:` scheme en imports de Next.js (`node:fs` falla; usar `fs`).
 - **No** generar `cases.json` manualmente para commitear — siempre vía `npm run build` / `scripts/build-cases.mjs`.
 - **No** emitir `Event` JSON-LD en casos (Google aplica el validador de eventos comerciales y exige `organizer`/`performer`/`offers`). Usar `Article` + `contentLocation: Place`.
