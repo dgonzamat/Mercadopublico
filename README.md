@@ -1,7 +1,7 @@
 # UAP Codex — institutional analysis of UAP phenomena
 
-> Bilingual (ES/EN) editorial corpus of 200 institutional UAP cases, 1947–2026.
-> 19 recurring patterns, 11 theoretical frameworks compared, 82 disclosure
+> Bilingual (ES/EN) editorial corpus of 300+ institutional UAP cases, 1947–2026.
+> 19 recurring patterns, 11 theoretical frameworks compared, 90+ disclosure
 > actors, and a comparable probability model (MECE: each incident case splits
 > 100% over 6 mutually-exclusive narratives).
 
@@ -25,18 +25,18 @@ The workflow publishes the built site **two ways** (belt-and-suspenders):
 web/
   app/                Next.js App Router
     page.tsx          Hero · corpus stats · MECE snapshot · CTAs
-    cases/            200 chronological cases (by era)
+    cases/            300+ chronological cases (by era)
     cases/[slug]      Editorial detail: hero · narrative · evidence + sources · per-case posterior · prev/next
     probabilidades/   MECE partition (6 narratives) + per-narrative modal cases
     atlas/            Leaflet world map of cases
     patterns/         19 recurring patterns
-    researchers/      Disclosure ecosystem (82 actors)
+    researchers/      Disclosure ecosystem (90+ actors)
     frameworks/       11 theoretical frameworks compared
     about/            methodology
     resumen/          plain-language summary
   components/         T.tsx (bilingual primitive) · MobileNav · Badge · MeceChart · HypothesesSnapshot · CorpusStats · WorldMap …
   lib/                data.ts · types.ts · meceModel.ts · siteStats.ts · typography.tsx
-  data/cases/         ~200 per-case JSON files (source of truth)
+  data/cases/         300+ per-case JSON files (source of truth)
   scripts/build-cases.mjs   Build-time aggregator → data/cases.json (gitignored)
 ```
 
