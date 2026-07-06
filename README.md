@@ -54,6 +54,23 @@ npm run build  # static export to ./out/
 audits. To add a case, drop a new JSON under `data/cases/<id>.json` with schema
 `UAPCase` (see `lib/types.ts`) and a unique sequential `num`.
 
+## Self-learning loop
+
+This repo runs a self-learning / compounding-engineering loop (à la Boris Cherny):
+every correction or hard-won convention is written back into `CLAUDE.md` so it is
+never rediscovered. The tooling lives in `.claude/`:
+
+| Piece | Moment | What it does |
+| --- | --- | --- |
+| **`/learn`** | one correction, live | Distills a mistake or gotcha into a rule and files it in the right `CLAUDE.md` section. |
+| **`/retro`** | end of session, batch | Mines the whole session (conversation + diff) for lessons not captured live, dedupes against `CLAUDE.md`, proposes them together. |
+| **`/curar-memoria`** | memory health | Audits `CLAUDE.md`'s numeric/factual claims against the live repo (self-verifying probes) and flags duplicate/obsolete/contradictory rules. |
+| **`/nuevo-caso`** | guided authoring | Creates a case honoring the `UAPCase` schema, sequential `num`, MECE `posterior` = 1, and the editorial length standard. |
+| **PostToolUse hook** | prevention, on edit | Validates the corpus schema the instant a `data/cases/*.json` or `data/researchers.json` file is edited — blocks on a broken schema instead of waiting for CI. |
+| **SessionEnd hook** | reminder, on close | When a session made changes, nudges you to run `/retro` before closing so nothing learned is lost. |
+
+See `CLAUDE.md` → *Protocolo de aprendizaje* for the rules each command follows.
+
 ## Probability model (MECE)
 
 Each incident case carries a `posterior`: a distribution over 6 mutually-exclusive,
