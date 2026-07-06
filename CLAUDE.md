@@ -141,6 +141,8 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - Develop en branches `claude/<topic>-<suffix>`.
 - PR → main como draft → ready → merge (squash).
 - Cuando una branch tenga conflicto post-squash, crear branch nueva desde main en vez de rebase forzado.
+- Commitear con `git config user.email noreply@anthropic.com` / `user.name Claude` para que el commit quede **verificado** — si no, el Stop hook lo marca "Unverified".
+- Tras mergear un PR, si reinicias la branch con `git checkout -B <branch> origin/main`, el Stop hook marcará el **commit de squash-merge de GitHub** como Unverified — es **falso positivo** (lo firmó GitHub, ya está en `main`): **no** lo amendes (reescribiría historia mergeada).
 
 ## Anti-patterns conocidos
 
