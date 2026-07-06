@@ -4,6 +4,28 @@ Contexto y reglas operativas específicas de este repositorio. Las reglas de com
 
 ---
 
+## Protocolo de aprendizaje (self-learning)
+
+Este archivo es **memoria viva**, no documentación estática. La regla de compounding engineering de Boris Cherny: *cuando Claude se equivoca o descubre una convención frágil del repo, esa lección se escribe de vuelta aquí para no repetirla*. El corpus de reglas se afina "ruthlessly" hasta que baja la tasa de error.
+
+**Cuándo capturar una lección** (dispara el loop):
+- El usuario corrige algo que Claude hizo mal.
+- Una convención/gotcha del codebase costó descubrirla (webpack falla, JIT no compila, allowlist bloquea, invariante de audit se rompió).
+- Una investigación cara produjo un resultado que no debe repetirse (ej. el *Registro de búsqueda* de fotos de actores).
+
+**Dónde va cada lección** (no crear secciones nuevas si encaja en una existente):
+- Gotcha técnico reproducible → **`## Anti-patterns conocidos`**, una línea `**No** … (porque …)`.
+- Regla de dominio (schema, MECE, línea editorial) → la sección temática correspondiente.
+- Resultado de investigación que no re-hacer → un bloque tipo *Registro (NO re-buscar)* con fecha.
+
+**Formato de una lección**: una línea, imperativa, con el *porqué* entre paréntesis. La causa importa más que la regla — sin ella la regla se borra en la próxima limpieza. Fechar los registros de investigación (`(mmm aaaa)`).
+
+**Mantención**: consolidar duplicados, borrar reglas obsoletas, afilar el lenguaje. Menos reglas y más nítidas > muchas y difusas.
+
+El slash command **`/learn`** automatiza este loop: destila la corrección de la conversación en una lección con el formato correcto y la inserta en la sección adecuada. Ver `.claude/commands/learn.md`.
+
+---
+
 ## Stack
 
 - Next.js 14.2.35 App Router + TypeScript strict
