@@ -58,7 +58,7 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: ~304 archivos JSON, uno por caso
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~316 a jul 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
@@ -141,7 +141,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 ## Anti-patterns conocidos
 
 - **No** importar `fs` desde `lib/data.ts` (lo importa `WorldMap.tsx` que es client component → webpack falla).
-- **No** hardcodear el número total de casos — derivar de `cases.length` (vive en `lib/siteStats.ts` como `STATS.cases`).
+- **No** hardcodear el número total de casos — derivar de `cases.length` (vive en `lib/siteStats.ts` como `STATS.cases`). Esto incluye la **prosa y comentarios de este mismo CLAUDE.md**: toda cifra del corpus citada a mano driftea (el `~304` de la sección Estructura ya era 316 en jul 2026) — al citarla, márcala aproximada + fechada, o remite a `STATS.cases`.
 - **No** usar `node:` scheme en imports de Next.js (`node:fs` falla; usar `fs`).
 - **No** generar `cases.json` manualmente para commitear — siempre vía `npm run build` / `scripts/build-cases.mjs`.
 - **No** emitir `Event` JSON-LD en casos (Google aplica el validador de eventos comerciales y exige `organizer`/`performer`/`offers`). Usar `Article` + `contentLocation: Place`.
