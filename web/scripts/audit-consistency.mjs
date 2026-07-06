@@ -531,6 +531,52 @@ if (clientComponents.length > CLIENT_BUDGET) {
   );
 }
 
+// ─── 9j-bis. RULE E18: guardrails de anti-patterns (enforce lo documentado) ─
+//
+// Promueve tres anti-patterns de `## Anti-patterns conocidos` (CLAUDE.md) de
+// "desaconsejado" a "rompe el build": una violación es ERROR en CI en vez de
+// depender de que alguien recuerde la regla. Sondas deterministas y baratas
+// (lectura + regex), sin node_modules. La cuarta candidata —clases Tailwind
+// dinámicas— se deja como doc: chequearla sin falsos positivos (comentarios,
+// strings) es frágil, así que no se blinda.
+
+// 18a — lib/data.ts no debe importar fs (lo bundlea WorldMap.tsx, client → webpack falla)
+const dataTsPath = path.join(root, "lib", "data.ts");
+if (fs.existsSync(dataTsPath)) {
+  const src = fs.readFileSync(dataTsPath, "utf-8");
+  if (/\bfrom\s+["']node:fs["']|\bfrom\s+["']fs["']|require\(\s*["']fs["']\s*\)/.test(src)) {
+    record("ERROR", dataTsPath, 0, "E18a: lib/data.ts importa fs — lo bundlea un client component (WorldMap.tsx) y webpack falla. Cargar datos vía JSON import, no fs.");
+  }
+}
+
+// 18b — sin `node:` scheme en imports del código bundleado por Next (app/components/lib).
+// scripts/ SÍ usa node: legítimamente (no lo bundlea Next) y queda excluido.
+const NODE_SCHEME = /\bfrom\s+["']node:/;
+for (const f of [
+  ...walk(path.join(root, "app"), [".tsx", ".ts"]),
+  ...walk(path.join(root, "components"), [".tsx", ".ts"]),
+  ...walk(path.join(root, "lib"), [".tsx", ".ts"]),
+]) {
+  fs.readFileSync(f, "utf-8").split("\n").forEach((ln, i) => {
+    if (NODE_SCHEME.test(ln) && !ln.trimStart().startsWith("//")) {
+      record("ERROR", f, i + 1, `E18b: import con \`node:\` scheme (${ln.trim()}) — Next no lo resuelve en el bundle. Usar el especificador sin prefijo (fs, path…).`);
+    }
+  });
+}
+
+// 18c — sin `Event` JSON-LD (Google exige organizer/performer/offers; usar Article + Place)
+const EVENT_LD = /["']@type["']\s*:\s*["']Event["']/;
+for (const f of [
+  ...walk(path.join(root, "app"), [".tsx", ".ts"]),
+  ...walk(path.join(root, "lib"), [".tsx", ".ts"]),
+]) {
+  fs.readFileSync(f, "utf-8").split("\n").forEach((ln, i) => {
+    if (EVENT_LD.test(ln)) {
+      record("ERROR", f, i + 1, `E18c: JSON-LD "@type":"Event" — Google aplica el validador de eventos comerciales (organizer/performer/offers). Usar Article + contentLocation: Place.`);
+    }
+  });
+}
+
 // ─── 9k. RULE E17: visor de documentos — assets same-origin en disco (WARN) ─
 //
 // El visor inline (UAPCase.documents[] + primaryDocument) embebe documentos
