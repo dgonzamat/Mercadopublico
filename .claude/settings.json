@@ -1,4 +1,29 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/build-cases.mjs:*)",
+      "Bash(node scripts/build-posts.mjs:*)",
+      "Bash(node scripts/build-rss.mjs:*)",
+      "Bash(node scripts/build-search-index.mjs:*)",
+      "Bash(node scripts/validate-schema.mjs:*)",
+      "Bash(node scripts/audit-consistency.mjs:*)",
+      "Bash(node scripts/audit-design.mjs:*)",
+      "Bash(node scripts/check-links.mjs:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run validate-schema:*)",
+      "Bash(npm run audit:*)",
+      "Bash(npm run audit-design:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run check-links:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Read(//home/user/Mercadopublico/web/data/**)"
+    ]
+  },
   "hooks": {
     "PostToolUse": [
       {
