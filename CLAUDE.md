@@ -157,6 +157,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - **No** asumir `node_modules` instalado (las sesiones remotas / CI fresco parten sin él) — para regenerar o validar el corpus corre los scripts node directos desde `web/` (`node scripts/build-cases.mjs`, `validate-schema.mjs`, `audit-consistency.mjs`; todos sin dependencias), no `npm run build`/`next build` (que sí requieren `next`).
 - **No** dejar archivos de prueba temporales en `data/cases/` — `validate-schema.mjs`, `build-cases.mjs` y el conteo `cases:` los recogen por `readdirSync`, así que inflan el número y pueden romper el build (un `_test.json` hizo reportar 317 en vez de 316); bórralos antes de confiar en el conteo.
 - **No** emitir `Event` JSON-LD en casos (Google aplica el validador de eventos comerciales y exige `organizer`/`performer`/`offers`). Usar `Article` + `contentLocation: Place`. *(enforzado: `audit-consistency.mjs` E18c)*
+- **No** proponer (ni empezar a construir) una vista/feature nueva en `/innovar` sin antes listar `app/*/page.tsx` + grepear `lib/` — las auditorías numéricas (`audit-consistency`/`audit-design`) miden salud, no revelan qué ya está construido; casi se duplicó `/cobertura` (matriz país×década) reimplementando `lib/regions.ts` desde cero (jul 2026).
 
 ## Deuda pendiente · fotos de actores
 
