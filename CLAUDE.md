@@ -65,7 +65,7 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~316 a jul 2026; cifra viva = STATS.cases)
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~318 a jul 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
