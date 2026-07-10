@@ -1,0 +1,64 @@
+{
+  "id": "sts80-1996",
+  "num": 323,
+  "name": "STS-80 · objeto no identificado en fotografía orbital (1996)",
+  "name_en": "STS-80 · unidentified object in orbital photography (1996)",
+  "year_start": 1996,
+  "country": "US",
+  "country_name": "Estados Unidos / órbita terrestre baja",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 28.6,
+    "lng": -80.6,
+    "place": "Órbita terrestre baja · transbordador Columbia (STS-80), lanzado desde el Kennedy Space Center, Florida",
+    "place_en": "Low Earth orbit · Space Shuttle Columbia (STS-80), launched from Kennedy Space Center, Florida"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 22,
+  "summary": "Durante la misión STS-80 del transbordador Columbia (19 nov – 7 dic 1996, el vuelo más largo del programa), la fotografía de observación terrestre desde las ventanas captó un pequeño objeto brillante recortado contra el limbo diurno de la Tierra. La NASA catalogó tres de esos fotogramas como imágenes de «objeto no identificado» (NASA-UAP-D030/031/032), desclasificados en 2026 en el UAP Records de la AARO. Son fotos de una sola cámara, sin radar ni datos de distancia: la explicación estándar —y más fuerte— es un fragmento cercano al orbitador (hielo, restos de aislamiento o pintura) iluminado por el Sol, cuya escala y distancia no pueden juzgarse en una imagen monocular.",
+  "summary_en": "During the STS-80 mission of Space Shuttle Columbia (19 Nov – 7 Dec 1996, the longest flight of the program), Earth-observation photography from the windows captured a small bright object silhouetted against the daytime limb of the Earth. NASA cataloged three of those frames as 'unidentified object' images (NASA-UAP-D030/031/032), declassified in 2026 in AARO's UAP Records. They are single-camera photos, with no radar or ranging data: the standard —and strongest— explanation is a fragment near the orbiter (ice, insulation or paint debris) lit by the Sun, whose scale and distance cannot be judged from a monocular image.",
+  "patterns": [],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.04,
+    "indet": 0.30
+  },
+  "whatHappened": "La misión STS-80, del transbordador espacial Columbia, voló entre el 19 de noviembre y el 7 de diciembre de 1996 y fue —con más de 17 días— la más larga de todo el programa del transbordador. Como en casi todos los vuelos, la tripulación dedicó tiempo a la fotografía de observación de la Tierra con cámaras de 35 mm desde las ventanas de la cubierta de vuelo. En varios fotogramas de esa serie aparece un pequeño objeto brillante, de aspecto alargado o irregular, recortado contra el limbo diurno del planeta —la franja azul-blanquecina de nubes y atmósfera—, con la estructura de la ventana y de la bahía de carga visibles en el encuadre y con reflejos internos del cristal multicapa de las ventanas.\n\nLa NASA identificó y catalogó tres de estas tomas como imágenes de «objeto no identificado» de STS-80, que fueron desclasificadas en 2026 dentro del UAP Records de la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), con los códigos NASA-UAP-D030, D031 y D032. Es importante subrayar qué son y qué no son: son tres fotografías fijas, tomadas con una sola cámara, sin telemetría, sin radar y sin ningún dato de distancia o velocidad asociado. La etiqueta «no identificado» significa exactamente eso —que no se identificó el objeto en la foto—, no que se haya establecido nada anómalo sobre su naturaleza.\n\nLa explicación convencional para este tipo de imagen es sólida y está bien documentada por analistas del programa espacial. En órbita, el orbitador está permanentemente rodeado de una nube de partículas propias: escamas de hielo desprendidas de los propulsores de maniobra y de las líneas de agua, fragmentos de aislamiento o de pintura, y pequeños restos liberados por el vehículo. Iluminadas por el Sol contra el fondo oscuro del espacio o el fondo brillante de la Tierra, esas partículas cercanas aparecen como «objetos» luminosos cuyo tamaño y distancia son imposibles de estimar en una imagen monocular: una escama de milímetros a pocos metros de la ventana es ópticamente indistinguible de una nave grande a kilómetros. A ello se suman los reflejos y dobles imágenes que produce el cristal de varias capas de las ventanas del transbordador. Sin triangulación desde dos puntos, ni datos de radar, la fotografía por sí sola no puede resolver la ambigüedad —el mismo límite que gobierna el caso previo del corpus, STS-48 (1991)—.",
+  "whatHappened_en": "The STS-80 mission of Space Shuttle Columbia flew from 19 November to 7 December 1996 and was —at over 17 days— the longest of the entire Shuttle program. As on nearly every flight, the crew spent time on Earth-observation photography with 35 mm cameras from the flight-deck windows. Several frames of that series show a small bright object, elongated or irregular in appearance, silhouetted against the planet's daytime limb —the blue-white band of clouds and atmosphere—, with the window and payload-bay structure visible in the frame and with internal reflections from the multi-pane window glass.\n\nNASA identified and cataloged three of these shots as STS-80 'unidentified object' images, declassified in 2026 within the UAP Records of the All-domain Anomaly Resolution Office (AARO), under the codes NASA-UAP-D030, D031 and D032. It is important to stress what they are and are not: three still photographs, taken with a single camera, with no telemetry, no radar and no associated distance or velocity data. The 'unidentified' label means exactly that —that the object in the photo was not identified—, not that anything anomalous was established about its nature.\n\nThe conventional explanation for this kind of image is solid and well documented by space-program analysts. In orbit, the orbiter is permanently surrounded by a cloud of its own particles: ice flakes shed from the maneuvering thrusters and water lines, fragments of insulation or paint, and small debris released by the vehicle. Lit by the Sun against the dark background of space or the bright background of Earth, those nearby particles appear as luminous 'objects' whose size and distance are impossible to estimate in a monocular image: a millimeter-scale flake a few meters from the window is optically indistinguishable from a large craft kilometers away. Added to this are the reflections and double images produced by the multi-layer glass of the Shuttle windows. Without triangulation from two points, or radar data, the photograph alone cannot resolve the ambiguity —the same limit that governs the corpus's earlier STS-48 (1991) case.",
+  "whyMatters": "El caso importa por su valor de calibración, no por su contenido: es el ejemplo de manual de cómo una imagen espectacular puede tener casi nada de información utilizable. Pertenece legítimamente al corpus porque forma parte del lote de imágenes de la NASA en el release 04 de la AARO —es un ítem institucional documentado, con cadena de custodia—, pero vive en Tier B y con una probabilidad baja precisamente porque la explicación mundana (una partícula cercana al orbitador) es fuerte, reproducible y suficiente. Ponerlo junto a STS-48 (1991) permite al lector comparar dos episodios del mismo tipo y ver que la etiqueta oficial «no identificado» describe una limitación de los datos, no una propiedad del objeto.\n\nEl error que este caso corrige es el más común en la cobertura popular de UAP: tratar «no identificado» como sinónimo de «anómalo» o «no humano». Una sola cámara, sin distancia ni radar, no puede distinguir una escama de hielo de una nave; y la historia del programa del transbordador está llena de estas «apariciones» que, cuando hubo datos adicionales, resultaron ser desechos orbitales o de la propia nave. Lo que queda como residuo honesto es modesto: la NASA fotografió algo que no identificó positivamente, y sin más sensores no se puede cerrar al 100%. Esa incertidumbre irreductible —pequeña— es lo que impide catalogarlo directamente como resuelto, pero no alcanza para elevarlo. Es el estándar del sitio aplicado a la baja: cuando la evidencia es débil, la probabilidad baja y el caso lo dice con todas las letras.",
+  "whyMatters_en": "The case matters for its calibration value, not its content: it is the textbook example of how a spectacular image can carry almost no usable information. It legitimately belongs to the corpus because it is part of NASA's imagery batch in AARO's release 04 —a documented institutional item with a chain of custody—, but it lives in Tier B and with a low probability precisely because the mundane explanation (a particle near the orbiter) is strong, reproducible and sufficient. Placing it next to STS-48 (1991) lets the reader compare two episodes of the same type and see that the official 'unidentified' label describes a limitation of the data, not a property of the object.\n\nThe error this case corrects is the most common in popular UAP coverage: treating 'unidentified' as a synonym for 'anomalous' or 'non-human.' A single camera, with no distance or radar, cannot distinguish an ice flake from a craft; and the history of the Shuttle program is full of these 'appearances' that, when additional data existed, turned out to be orbital or vehicle debris. What remains as an honest residue is modest: NASA photographed something it did not positively identify, and without more sensors it cannot be closed 100%. That small, irreducible uncertainty is what stops it being cataloged as outright solved, but it is not enough to elevate it. It is the site's standard applied downward: when the evidence is weak, the probability drops and the case says so plainly.",
+  "evidence": [
+    "Tres fotografías fijas de «objeto no identificado» de STS-80 (NASA-UAP-D030/031/032, 1996), desclasificadas en 2026 (AARO release 04)",
+    "Contexto: misión STS-80 del Columbia (19 nov – 7 dic 1996), la más larga del programa del transbordador",
+    "Objeto brillante recortado contra el limbo diurno; estructura de ventana/bahía de carga y reflejos del cristal visibles en el encuadre",
+    "Sin radar, telemetría ni datos de distancia — imagen de una sola cámara (monocular)",
+    "Explicación estándar: partícula cercana al orbitador (hielo / aislamiento / pintura) iluminada por el Sol, indistinguible de un objeto lejano sin triangulación"
+  ],
+  "evidence_en": [
+    "Three STS-80 'unidentified object' still photographs (NASA-UAP-D030/031/032, 1996), declassified in 2026 (AARO release 04)",
+    "Context: Columbia's STS-80 mission (19 Nov – 7 Dec 1996), the longest of the Shuttle program",
+    "Bright object silhouetted against the daytime limb; window/payload-bay structure and glass reflections visible in the frame",
+    "No radar, telemetry or ranging data — single-camera (monocular) image",
+    "Standard explanation: particle near the orbiter (ice / insulation / paint) lit by the Sun, indistinguishable from a distant object without triangulation"
+  ],
+  "sources": [
+    {
+      "name": "NASA / AARO — «STS-80 Unidentified Object» (imágenes 1–3, 1996)",
+      "note": "Fotografías desclasificadas en 2026 en el UAP Records de la AARO, release 04, códigos NASA-UAP-D030, D031 y D032."
+    },
+    {
+      "name": "NASA — misión STS-80 (Columbia, 19 nov – 7 dic 1996)",
+      "url": "https://en.wikipedia.org/wiki/STS-80"
+    },
+    {
+      "name": "James Oberg — análisis de 'OVNIs' en imágenes del transbordador",
+      "note": "Explicación estándar de los objetos de ventana de transbordador como partículas próximas al orbitador (hielo/desechos)."
+    }
+  ]
+}
