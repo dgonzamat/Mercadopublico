@@ -2,6 +2,10 @@
 
 Contexto y reglas operativas específicas de este repositorio. Las reglas de comportamiento generales (Karpathy guidelines: think before coding, simplicity first, surgical changes, goal-driven execution) viven en `~/.claude/CLAUDE.md` global.
 
+## Estilo de comunicación
+
+- Hablar con el usuario en **español neutro**, no rioplatense/argentino (preferencia explícita del usuario). Evitar voseo y modismos: nada de «vos/tenés/dale/acá/che» — usar «tú/tienes/de acuerdo/aquí». Aplica solo a la conversación; el contenido editorial del corpus mantiene su propia línea.
+
 ---
 
 ## Protocolo de aprendizaje (self-learning)
