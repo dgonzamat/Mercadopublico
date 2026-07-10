@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { cases } from "@/lib/data";
+import { casesClient as cases } from "@/lib/dataClient";
 import type { UAPCase } from "@/lib/types";
 import { T } from "@/components/T";
 import {

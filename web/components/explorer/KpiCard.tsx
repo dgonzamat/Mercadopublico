@@ -1,7 +1,7 @@
 "use client";
 
 import type { UAPCase } from "@/lib/types";
-import { cases as allCases } from "@/lib/data";
+import { casesClient as allCases } from "@/lib/dataClient";
 import {
   kpiValue,
   kpiShare,

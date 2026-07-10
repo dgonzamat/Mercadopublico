@@ -9,7 +9,7 @@ import {
   useMap,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { cases } from "@/lib/data";
+import { casesClient as cases } from "@/lib/dataClient";
 import { T } from "@/components/T";
 
 type Tier = "S" | "A" | "B";
