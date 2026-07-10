@@ -12,6 +12,11 @@ const nextConfig = {
   images: { unoptimized: true },
   basePath,
   assetPrefix: basePath ? `${basePath}/` : "",
+  // Tree-shake barrel imports de las libs pesadas (solo cargan en sus rutas:
+  // recharts en /laboratorio, leaflet en /atlas), reduciendo su JS por ruta.
+  experimental: {
+    optimizePackageImports: ["recharts", "react-leaflet"],
+  },
 };
 
 export default nextConfig;
