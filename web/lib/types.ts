@@ -92,6 +92,12 @@ export interface UAPCase {
   flag: string;
   location: Location;
   tier: Tier;
+  /**
+   * Releases del PURSUE/AARO de las que el caso extrae documentos (1–4+).
+   * Derivado de las citas en sources/documents; permite filtrar y promocionar
+   * el contenido por release. Ausente = el caso no cita ninguna release PURSUE.
+   */
+  pursueReleases?: number[];
   /** Sub-tipo de la explicación prosaica si el caso carga masa mundano/natural. */
   mundanoType?: MundanoType;
   // Estatus epistémico del caso. Ausente = "documented" (evidencia

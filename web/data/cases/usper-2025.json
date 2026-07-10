@@ -1,6 +1,7 @@
 {
   "id": "usper-2025",
   "num": 45,
+  "pursueReleases": [1, 2],
   "name": "USPER · orbes sobre un sitio de prueba del oeste de EE.UU. (FBI-302)",
   "name_en": "USPER · orbs over a Western US test site (FBI-302)",
   "year_start": 2025,

@@ -1,6 +1,7 @@
 {
   "id": "cia-historical-uap-archive",
   "num": 298,
+  "pursueReleases": [3, 4],
   "name": "CIA · archivo histórico UAP (Panel Robertson, U-2, Blue Book SR-14, inteligencia exterior) — PURSUE",
   "name_en": "CIA · historical UAP archive (Robertson Panel, U-2, Blue Book SR-14, foreign intelligence) — PURSUE",
   "year_start": 1949,

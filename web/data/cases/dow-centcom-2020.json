@@ -1,6 +1,7 @@
 {
   "id": "dow-centcom-2020",
   "num": 43,
+  "pursueReleases": [1],
   "name": "DOW CENTCOM mission reports",
   "year_start": 2020,
   "year_end": 2024,

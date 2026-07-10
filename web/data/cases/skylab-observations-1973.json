@@ -1,6 +1,7 @@
 {
   "id": "skylab-observations-1973",
   "num": 280,
+  "pursueReleases": [1],
   "name": "Skylab · destellos y objeto rojizo (NASA, PURSUE)",
   "name_en": "Skylab · light flashes and reddish object (NASA, PURSUE)",
   "year_start": 1973,
