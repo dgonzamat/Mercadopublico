@@ -1,0 +1,68 @@
+{
+  "id": "pantex-2015",
+  "num": 322,
+  "name": "Pantex · objeto no identificado sobre la planta nuclear (2015)",
+  "name_en": "Pantex · unidentified object over the nuclear plant (2015)",
+  "year_start": 2015,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 35.32,
+    "lng": -101.56,
+    "place": "Planta Pantex, Amarillo (condado de Carson), Texas",
+    "place_en": "Pantex Plant, Amarillo (Carson County), Texas"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 55,
+  "summary": "El 1 de septiembre de 2015, el radar de vigilancia terrestre (GSR) de la planta Pantex —la principal instalación de ensamblaje de armas nucleares de EE.UU., en Amarillo, Texas— detectó un objeto no identificado al oeste de las instalaciones, volando hacia el norte a 10–15 mph. La Fuerza Protectora activó el plan de respuesta ante drones (UAS), aseguró todas las puertas y persiguió el objeto en vehículo. Testigos con binoculares no hallaron propulsión ni oyeron sonido; el objeto —forma de «diamante», ~4 pies, que aceleró y cambió de rumbo al ser seguido— fue rastreado también por la cámara CROWS de un Bearcat y filmado desde la torre GSR. El video se envió a Sandia National Labs y la evidencia se entregó al FBI. Informe UCNI desclasificado en 2026 (AARO, DOEUAPD005).",
+  "summary_en": "On 1 September 2015, the Ground Surveillance Radar (GSR) at the Pantex Plant —the primary U.S. nuclear-weapons assembly facility, in Amarillo, Texas— detected an unidentified object west of the facilities, flying north at 10–15 mph. The Protective Force activated the drone (UAS) response plan, secured all gates and pursued the object by vehicle. Witnesses with binoculars found no propulsion and heard no sound; the object —'diamond'-shaped, ~4 ft, which sped up and changed course when followed— was also tracked by the CROWS camera on a Bearcat and filmed from the GSR tower. The video was sent to Sandia National Labs and the evidence handed to the FBI. UCNI report declassified in 2026 (AARO, DOEUAPD005).",
+  "patterns": ["8f", "8s"],
+  "category": "incident",
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.18,
+    "humana_clasificada": 0.18,
+    "adversaria": 0.30,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.05,
+    "indet": 0.23
+  },
+  "whatHappened": "El 1 de septiembre de 2015, alrededor de las 07:08–07:10, el sistema de radar de vigilancia terrestre (Ground Surveillance Radar, GSR) de la planta Pantex —la principal instalación de ensamblaje y desensamblaje de armas nucleares de Estados Unidos, en Amarillo, Texas— detectó un objeto no identificado que volaba de forma «no amenazante» al oeste de las instalaciones, en trayectoria hacia el norte y a unos 10–15 mph (16–24 km/h). El objeto apareció a aproximadamente 1,75 millas al suroeste del edificio de la Zona 12 Sur, cerca de la autopista 60. La Fuerza Protectora (Protective Force) activó el plan de respuesta ante sistemas aéreos no tripulados (UAS) aprobado por la oficina de producción de la NNSA: se aseguraron de inmediato todas las puertas peatonales y vehiculares de las áreas de seguridad y se reposicionaron patrullas para proteger los activos.\n\nUn teniente y un oficial de policía de seguridad (SPO) persiguieron el objeto en vehículo por Pantex Drive, intentando ubicarse justo debajo para observarlo. No lograron alcanzarlo; al detenerse y bajar del vehículo, constataron que el objeto no emitía ningún sonido y que, incluso con binoculares, no podían identificar ningún sistema de propulsión. Lo observaron 1–2 minutos antes de que continuara hacia el norte fuera del sitio; lo siguieron varias millas hasta perderlo por falta de caminos, cerca del County Road G y la FM 1342. Notaron que el objeto «pareció aumentar la velocidad y cambiar de dirección mientras era seguido», con rumbo final ENE. El sheriff del condado de Carson fue notificado y un ayudante acudió, pero no llegó a ver el objeto.\n\nLas descripciones fueron parcialmente discrepantes: una forma de «diamante», más redondeada arriba y más delgada en la parte superior, de unos 4 pies de alto por 2 de ancho en la base; el color varió entre negro, plateado, rojo y azul según el testigo. Otro equipo de SPO, en un vehículo blindado Bearcat equipado con un sistema de arma operado remotamente (CROWS), rastreó el objeto con la cámara del CROWS durante 3–5 minutos a 75–100 metros de distancia, estimándolo a 100–200 pies de altura. Se obtuvo video de la torre GSR más cercana, que se envió a los Sandia National Laboratories para su realce y estudio, aunque la distancia dejó poco detalle. Toda la evidencia —declaraciones y video— se entregó a un agente del FBI. El informe, clasificado como Información Nuclear Controlada No Clasificada (UCNI), fue desclasificado en 2026 dentro del UAP Records de la AARO (código DOEUAPD005).",
+  "whatHappened_en": "On 1 September 2015, at around 07:08–07:10, the Ground Surveillance Radar (GSR) system at the Pantex Plant —the primary U.S. nuclear-weapons assembly and disassembly facility, in Amarillo, Texas— detected an unidentified object flying in a 'non-threatening' manner west of the facilities, on a northerly trajectory at about 10–15 mph (16–24 km/h). The object appeared roughly 1.75 miles southwest of the Zone 12 South building, near Highway 60. The Protective Force activated the unmanned aerial systems (UAS) response plan approved by the NNSA production office: all pedestrian and vehicle gates in the security areas were immediately secured and patrols repositioned to protect assets.\n\nA lieutenant and a security police officer (SPO) pursued the object by vehicle along Pantex Drive, trying to position themselves directly beneath it to observe it. They could not catch up; when they stopped and got out, they noted that the object made no sound and that, even with binoculars, they could not identify any propulsion system. They watched it for 1–2 minutes before it continued north offsite; they followed it several miles until they lost it for lack of roads, near County Road G and FM 1342. They noted the object 'seemed to increase speed and change direction while being followed,' its final heading ENE. The Carson County Sheriff's office was notified and a deputy responded, but never saw the object.\n\nThe descriptions were partly inconsistent: a 'diamond' shape, more rounded and thinner at the top, about 4 feet tall by 2 feet wide at the base; the color varied between black, silver, red and blue depending on the witness. Another SPO team, in an armored Bearcat vehicle equipped with a Common Remotely Operated Weapon System (CROWS), tracked the object with the CROWS camera for 3–5 minutes at 75–100 meters, estimating it at 100–200 feet altitude. Video was obtained from the nearest GSR tower and sent to Sandia National Laboratories for enhancement and study, though the distance left little detail. All evidence —statements and video— was turned over to an FBI agent. The report, classified as Unclassified Controlled Nuclear Information (UCNI), was declassified in 2026 within AARO's UAP Records (code DOEUAPD005).",
+  "whyMatters": "El valor del caso está en su cadena de custodia, no en una conclusión: es un incidente multisensor documentado por la institución que menos margen tiene para el folclore. Lo detectó un radar de seguridad (GSR), lo confirmaron por separado varios oficiales entrenados a corto alcance —uno con binoculares—, lo rastreó la cámara CROWS de un vehículo blindado, se filmó desde una torre y el video se remitió a los Sandia National Laboratories; la evidencia terminó en manos del FBI y el papeleo quedó como Información Nuclear Controlada en la planta de ensamblaje de ojivas de Estados Unidos. Pocos avistamientos llegan con ese respaldo procesal. Y ocurre en el lugar exacto donde el patrón «UAP sobre infraestructura nuclear» —recurrente en el corpus desde los años 40— tiene la mayor carga: la instalación que arma y desarma el arsenal.\n\nAl mismo tiempo, la lectura honesta obliga a marcar que el propio sitio lo trató como una incursión de dron: activó su plan de respuesta ante UAS y en ningún momento el objeto amenazó activos sensibles. En 2015, en plena ola de incursiones de drones sobre instalaciones militares y nucleares estadounidenses, la hipótesis más sobria —y más seria como problema de seguridad nacional— es un sistema no tripulado, quizá de vigilancia adversaria. Lo que resiste a esa lectura son los detalles reportados por los observadores: ausencia de sonido y de sistema de propulsión visible, una forma de «diamante» de apenas metro y pico, discrepancias de color, y el dato de que el objeto habría acelerado y cambiado de dirección al ser perseguido. Ninguno es concluyente por separado —la percepción a distancia con un solo sensor visual es notoriamente engañosa—, pero en conjunto mantienen el caso en Tier A y no lo cierran como dron trivial. Es el estándar del sitio en su versión más útil: documentación institucional impecable, conclusión en suspenso.",
+  "whyMatters_en": "The case's value lies in its chain of custody, not in a conclusion: it is a multi-sensor incident documented by the institution with the least room for folklore. A security radar (GSR) detected it, several trained officers confirmed it separately at close range —one with binoculars—, a CROWS camera on an armored vehicle tracked it, it was filmed from a tower and the video sent to Sandia National Laboratories; the evidence ended up with the FBI and the paperwork was filed as Controlled Nuclear Information at the facility that assembles the U.S. warhead stockpile. Few sightings arrive with that procedural backing. And it happens at the exact place where the 'UAP over nuclear infrastructure' pattern —recurring in the corpus since the 1940s— carries the most weight: the installation that arms and disarms the arsenal.\n\nAt the same time, an honest reading requires noting that the site itself treated it as a drone incursion: it activated its UAS response plan, and at no point did the object threaten sensitive assets. In 2015, amid a wave of drone incursions over U.S. military and nuclear installations, the soberest hypothesis —and the most serious as a national-security problem— is an unmanned system, perhaps adversary surveillance. What resists that reading are the details reported by the observers: no sound and no visible propulsion system, a 'diamond' shape barely over a meter tall, color discrepancies, and the datum that the object reportedly sped up and changed direction when pursued. None is conclusive on its own —perception at a distance with a single visual sensor is notoriously deceptive— but together they keep the case at Tier A and stop short of closing it as a trivial drone. It is the site's standard in its most useful form: impeccable institutional documentation, conclusion suspended.",
+  "evidence": [
+    "Informe oficial «Pantex Unidentified Object Incident Report» (DOE/NNSA, 2 sep 2015), clasificado UCNI — evento del 1 sep 2015 ~07:08–07:10",
+    "Detección por radar de vigilancia terrestre (GSR) al oeste de la planta; puertas aseguradas bajo el plan de respuesta ante UAS de la NNSA",
+    "Persecución vehicular por un teniente y un SPO: sin sonido, sin sistema de propulsión visible con binoculares; observado 1–2 minutos",
+    "Rastreo con cámara CROWS desde un Bearcat durante 3–5 minutos a 75–100 m; altura estimada 100–200 pies",
+    "Forma de «diamante» (~4 pies de alto), discrepancias de color (negro / plateado / rojo / azul); aceleró y cambió de rumbo al ser seguido",
+    "Video de la torre GSR enviado a Sandia National Laboratories para realce; evidencia entregada a un agente del FBI",
+    "Sheriff del condado de Carson notificado; el ayudante no llegó a ver el objeto"
+  ],
+  "evidence_en": [
+    "Official 'Pantex Unidentified Object Incident Report' (DOE/NNSA, 2 Sep 2015), classified UCNI — event of 1 Sep 2015 ~07:08–07:10",
+    "Ground Surveillance Radar (GSR) detection west of the plant; gates secured under the NNSA UAS response plan",
+    "Vehicle pursuit by a lieutenant and an SPO: no sound, no propulsion system visible through binoculars; watched 1–2 minutes",
+    "CROWS-camera tracking from a Bearcat for 3–5 minutes at 75–100 m; estimated altitude 100–200 ft",
+    "'Diamond' shape (~4 ft tall), color discrepancies (black / silver / red / blue); sped up and changed course when followed",
+    "GSR-tower video sent to Sandia National Laboratories for enhancement; evidence turned over to an FBI agent",
+    "Carson County Sheriff notified; the deputy never saw the object"
+  ],
+  "sources": [
+    {
+      "name": "DOE/NNSA — «Pantex Unidentified Object Incident Report» (2 sep 2015), Unclassified Controlled Nuclear Information",
+      "note": "Documento primario. Desclasificado en 2026 en el UAP Records de la AARO, release 04, código DOEUAPD005."
+    },
+    {
+      "name": "AARO (All-domain Anomaly Resolution Office) — UAP Records / Cases Library",
+      "url": "https://www.aaro.mil/"
+    },
+    {
+      "name": "The Black Vault — archivo del incidente de Pantex (2015)",
+      "note": "Cobertura secundaria de una versión previa del informe obtenida por FOIA; corrobora fecha, lugar y descripción."
+    }
+  ]
+}

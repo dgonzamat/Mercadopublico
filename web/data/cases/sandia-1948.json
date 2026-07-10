@@ -50,13 +50,15 @@
     "209 reportes catalogados AFSWP (diciembre 1948 - abril 1950)",
     "Investigación La Paz (NM University) descartando origen meteorítico",
     "Project Twinkle USAF (1949-1951) — primer proyecto formal instrumental sobre UAP",
-    "Designación AARO PURSUE R02 (2024) ratificando el corpus"
+    "Designación AARO PURSUE R02 (2024) ratificando el corpus",
+    "Actas de la «Conference on Aerial Phenomena» de Los Álamos (sala P-162, 16 feb 1949): reúne a La Paz, Edward Teller, Norris Bradbury, Frederick Reines, el 4.º Ejército, el FBI y la USAEC/Sandia (AARO DOEUAPD004)"
   ],
   "evidence_en": [
     "209 reports cataloged by AFSWP (December 1948 - April 1950)",
     "La Paz investigation (NM University) ruling out meteoric origin",
     "USAF Project Twinkle (1949-1951) — first formal instrumented UAP project",
-    "AARO PURSUE R02 designation (2024) ratifying the corpus"
+    "AARO PURSUE R02 designation (2024) ratifying the corpus",
+    "Minutes of the Los Alamos «Conference on Aerial Phenomena» (room P-162, 16 Feb 1949): brings together La Paz, Edward Teller, Norris Bradbury, Frederick Reines, the 4th Army, the FBI and USAEC/Sandia (AARO DOEUAPD004)"
   ],
   "sources": [
     {
@@ -70,6 +72,10 @@
     {
       "name": "La Paz, L. — 'Green Fireballs of New Mexico' (LANL archive)",
       "note": "Análisis astronómico contemporáneo"
+    },
+    {
+      "name": "USAEC / Los Alamos — actas de la «Conference on Aerial Phenomena» (16 feb 1949, sala P-162)",
+      "note": "Documento primario con los asistentes (La Paz, Teller, Bradbury, Reines, 4.º Ejército, FBI). Desclasificado en 2026 en el UAP Records de la AARO, release 04, código DOEUAPD004."
     }
   ],
   "sources_en": [
@@ -84,6 +90,10 @@
     {
       "name": "La Paz, L. — 'Green Fireballs of New Mexico' (LANL archive)",
       "note": "Contemporary astronomical analysis"
+    },
+    {
+      "name": "USAEC / Los Alamos — minutes of the «Conference on Aerial Phenomena» (16 Feb 1949, room P-162)",
+      "note": "Primary document listing attendees (La Paz, Teller, Bradbury, Reines, 4th Army, FBI). Declassified in 2026 in AARO's UAP Records, release 04, code DOEUAPD004."
     }
   ]
 }
