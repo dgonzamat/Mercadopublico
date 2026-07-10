@@ -1,6 +1,7 @@
 {
   "id": "pursue-release-2026",
   "num": 142,
+  "pursueReleases": [1, 2, 3],
   "name": "PURSUE · sistema presidencial de release UAP",
   "name_en": "PURSUE · Presidential Unsealing and Reporting System for UAP Encounters",
   "year_start": 2026,

@@ -1,6 +1,7 @@
 {
   "id": "gemini7-borman-1965",
   "num": 233,
+  "pursueReleases": [1],
   "name": "Gemini 7 · Borman & Lovell",
   "name_en": "Gemini 7 · Borman & Lovell",
   "year_start": 1965,

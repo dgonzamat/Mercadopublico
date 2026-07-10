@@ -1,6 +1,7 @@
 {
   "id": "sandia-1948",
   "num": 5,
+  "pursueReleases": [2, 4],
   "name": "Sandia 'green orbs'",
   "year_start": 1948,
   "year_end": 1950,

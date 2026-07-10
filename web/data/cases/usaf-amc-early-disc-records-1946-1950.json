@@ -1,6 +1,7 @@
 {
   "id": "usaf-amc-early-disc-records-1946-1950",
   "num": 288,
+  "pursueReleases": [1],
   "name": "Registros tempranos de la USAF/AMC sobre discos voladores (1946-1950, PURSUE)",
   "name_en": "Early USAF/AMC flying-disc records (1946-1950, PURSUE)",
   "year_start": 1946,

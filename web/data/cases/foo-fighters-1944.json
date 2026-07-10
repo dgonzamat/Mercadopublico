@@ -1,6 +1,7 @@
 {
   "id": "foo-fighters-1944",
   "num": 213,
+  "pursueReleases": [1],
   "name": "Foo Fighters",
   "name_en": "Foo Fighters",
   "year_start": 1944,

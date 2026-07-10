@@ -1,6 +1,7 @@
 {
   "id": "cometa-report-1999",
   "num": 187,
+  "pursueReleases": [1],
   "name": "Informe COMETA · ex-oficiales franceses (1999)",
   "name_en": "COMETA Report · French ex-officials (1999)",
   "year_start": 1999,

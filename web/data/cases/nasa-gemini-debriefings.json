@@ -1,6 +1,7 @@
 {
   "id": "nasa-gemini-debriefings",
   "num": 297,
+  "pursueReleases": [3],
   "name": "NASA · debriefings de tripulación Gemini y era Mercury (1962-1966, PURSUE)",
   "name_en": "NASA · Gemini and Mercury-era crew debriefings (1962-1966, PURSUE)",
   "year_start": 1962,

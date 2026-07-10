@@ -1,6 +1,7 @@
 {
   "id": "doe-nuclear-facility-uap-docs",
   "num": 293,
+  "pursueReleases": [2],
   "name": "DOE · registros UAP del complejo nuclear (Pantex, Los Alamos — PURSUE R02)",
   "name_en": "DOE · UAP records from the nuclear complex (Pantex, Los Alamos — PURSUE R02)",
   "year_start": 1976,

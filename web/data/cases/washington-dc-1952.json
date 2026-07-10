@@ -1,6 +1,7 @@
 {
   "id": "washington-dc-1952",
   "num": 51,
+  "pursueReleases": [1],
   "name": "Washington Flap",
   "year_start": 1952,
   "country": "US",

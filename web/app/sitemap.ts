@@ -66,6 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/patterns/",
     "/frameworks/",
     "/researchers/",
+    "/releases/",
     "/about/",
     "/resumen/",
     "/fuentes/",
@@ -112,11 +113,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const releaseRoutes = Array.from(
+    new Set(cases.flatMap((c) => c.pursueReleases ?? [])),
+  )
+    .sort((a, b) => a - b)
+    .map((n) => ({
+      url: `${SITE_URL}/releases/${String(n).padStart(2, "0")}/`,
+      lastModified: corpusLatest,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    }));
+
   return [
     ...staticRoutes,
     ...caseRoutes,
     ...patternRoutes,
     ...researcherRoutes,
     ...postRoutes,
+    ...releaseRoutes,
   ];
 }
