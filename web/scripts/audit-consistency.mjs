@@ -21,6 +21,9 @@
  *   E7  Spanglish: los campos ES-first de casos (name, summary) no deben
  *       contener inglés descriptivo — el inglés vive en *_en. Heurística
  *       curada con exenciones para nombres propios y texto entre comillas.
+ *   E7b (WARN) Spanglish en PROSA (whatHappened/whyMatters/evidence): detecta
+ *       una racha de inglés sin traducir por densidad verbal, robusta a nombres
+ *       propios y citas. Cubre el hueco de E7 (que solo ve name/summary).
  *   E9  (WARN) Cobertura investigador↔caso: marca los investigadores de
  *       researchers.json sin mención (por nombre/apellido) en ningún caso.
  *       Heurística por substring, conservadora (ver nota en la regla).
@@ -294,6 +297,96 @@ for (const c of cases) {
       );
     }
   }
+}
+
+// ─── 9b-bis. RULE E7b: Spanglish in ES-facing PROSE fields (WARN) ────────
+//
+// E7 solo cubría `name`/`summary` (cortos, alta visibilidad → ERROR). El grueso
+// del texto vive en `whatHappened`/`whyMatters`/`evidence`, y ahí puede colarse
+// un párrafo en inglés SIN traducir (p. ej. pegar el charter de un documento tal
+// cual). La lista-negra de palabras de E7 no sirve para prosa: daría falsos
+// positivos con cada título de documento y nombre de institución en inglés.
+//
+// Detector por RACHA + densidad verbal, robusto a nombres propios y citas:
+//   1. Se eximen las citas (comillas simples con apóstrofos internos tolerados,
+//      dobles, guillemets) y los nombres propios canónicos.
+//   2. Racha = tokens consecutivos que NO son stopword española ni llevan tilde/ñ.
+//      En español no se encadenan ~10 palabras sin `de/la/que/en/y/por/el`; en
+//      inglés sí. Los nombres propios de instituciones ("Office of the Director
+//      of National Intelligence") forman rachas, así que además exigimos…
+//   3. …≥4 palabras VERBALES/CONECTORAS (is/was/will/that/to/and/which/by…, pero
+//      NO of/the/in) dentro de la racha — presentes en FRASES inglesas, ausentes
+//      en listas de nombres propios. Eso separa prosa inglesa real de una lista
+//      de agencias/fuentes.
+// WARN agregado (mismo patrón que E13): no rompe el build, deja backlog medible.
+// Heurística conservadora (como E9): 0 falsos positivos sobre el corpus actual y
+// dispara con inglés inyectado — puede promoverse a ERROR si se prueba estable.
+
+const E7B_ES_STOP = new Set(
+  "de la el que en y a los se del las un por con no una su para es al lo como mas o este esta fue son entre sobre cuando ya le ha han sus pero sin tras desde hasta fueron era eran dos tres muy tambien donde segun solo ni cada ese esa esos esas estos estas aquel dentro ante bajo hacia durante mientras porque aunque cuyo cuya les nos me te si asi aqui alli ahi otro otra otros otras todo toda todos todas poco mucho gran primer primera cabo vez anos ano".split(
+    " ",
+  ),
+);
+// Verbos/auxiliares/conectores ingleses. Excluye a propósito of/the/in/on/at/an:
+// esos aparecen en nombres propios de instituciones y no distinguen prosa.
+const E7B_VERB_CONN = new Set(
+  "is was were are be been being will would shall can could may might must has have had do does did that which who whose and or but to by from with as for not into than then when where while because however although therefore this these those their its it they we also".split(
+    " ",
+  ),
+);
+const E7B_RUN_MIN = 10;
+const E7B_VERB_MIN = 4;
+
+function e7bStrip(s) {
+  // Comillas simples tolerando apóstrofos internos (member's), dobles, guillemets.
+  let t = s.replace(
+    /'(?:[^']|'(?=[A-Za-z]))*'|"[^"]*"|«[^»]*»|“[^”]*”|‘[^’]*’/g,
+    " ",
+  );
+  for (const k of SPANGLISH_PROPER_OK) t = t.split(k).join(" ");
+  return t;
+}
+function e7bSuspect(text) {
+  const toks = e7bStrip(text).match(/[a-záéíóúñü]+/gi) || [];
+  let run = [];
+  let best = [];
+  for (const raw of toks) {
+    const w = raw.toLowerCase();
+    if (E7B_ES_STOP.has(w) || /[áéíóúñ]/.test(w)) {
+      if (run.length > best.length) best = run;
+      run = [];
+    } else {
+      run.push(w);
+    }
+  }
+  if (run.length > best.length) best = run;
+  const verbs = best.filter((w) => E7B_VERB_CONN.has(w)).length;
+  return best.length >= E7B_RUN_MIN && verbs >= E7B_VERB_MIN;
+}
+
+const e7bHits = [];
+for (const c of cases) {
+  const fields = [
+    ["whatHappened", c.whatHappened],
+    ["whyMatters", c.whyMatters],
+  ];
+  if (Array.isArray(c.evidence))
+    c.evidence.forEach((e, i) => fields.push([`evidence[${i}]`, e]));
+  for (const [f, v] of fields) {
+    if (typeof v === "string" && v && e7bSuspect(v)) {
+      e7bHits.push(`${c.id}·${f}`);
+    }
+  }
+}
+if (e7bHits.length > 0) {
+  record(
+    "WARN",
+    casesDir,
+    0,
+    `E7b spanglish en prosa: ${e7bHits.length} campo(s) ES con una racha de ` +
+      `inglés sin traducir (≥${E7B_RUN_MIN} palabras, ≥${E7B_VERB_MIN} verbales). ` +
+      `Traducir al campo o citar entre comillas. Campos: ${e7bHits.join(", ")}`,
+  );
 }
 
 // ─── 9c. RULE E10: prose bilingual completeness (ERROR) ──────────────────
