@@ -32,3 +32,32 @@ const clientCases = cases.map((c) => {
 const clientOutFile = path.join(__dirname, "..", "data", "cases-client.json");
 fs.writeFileSync(clientOutFile, JSON.stringify(clientCases) + "\n");
 console.log(`build-cases: client bundle (no prose) → data/cases-client.json`);
+
+// Site stats: a tiny JSON of the aggregate corpus counts that lib/siteStats.ts
+// exposes as STATS. It exists so siteStats — which MobileNav (a CLIENT component
+// in the global layout) imports for a single number — does NOT pull the full
+// corpus into a client chunk shipped on every page. Without this, importing
+// cases/patterns/etc. into siteStats bundled the entire 4 MB corpus site-wide.
+const dataDir = path.join(__dirname, "..", "data");
+const readArr = (f) => JSON.parse(fs.readFileSync(path.join(dataDir, f), "utf-8"));
+const patterns = readArr("patterns.json");
+const frameworks = readArr("frameworks.json");
+const researchers = readArr("researchers.json");
+const CORPUS_START_YEAR = 1947;
+const corpusEndYear = Math.max(...cases.map((c) => c.year_start));
+const siteStats = {
+  cases: cases.length,
+  patterns: patterns.length,
+  frameworks: frameworks.length,
+  researchers: researchers.length,
+  tierS: cases.filter((c) => c.tier === "S").length,
+  tierA: cases.filter((c) => c.tier === "A").length,
+  tierB: cases.filter((c) => c.tier === "B").length,
+  countries: new Set(cases.map((c) => c.country)).size,
+  startYear: CORPUS_START_YEAR,
+  endYear: corpusEndYear,
+  years: corpusEndYear - CORPUS_START_YEAR,
+};
+const statsOutFile = path.join(dataDir, "site-stats.json");
+fs.writeFileSync(statsOutFile, JSON.stringify(siteStats, null, 2) + "\n");
+console.log(`build-cases: site stats → data/site-stats.json`);
