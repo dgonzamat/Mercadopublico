@@ -41,6 +41,11 @@
  *       (documents[].src / primaryDocument.url bajo /pursue/) debe existir en
  *       web/public/ — si falta, el iframe/img queda roto. Backlog medible de
  *       subida que se pone en verde al subir los binarios.
+ *   E19 (ERROR) Guardrails del módulo de tracking (contador de visitas):
+ *       dedup de 24 h presente en el beacon, filtro de datacenter sin
+ *       bloquear el egress de iCloud Private Relay, /visitantes fuera del
+ *       conteo de pageviews, y migraciones 0005/0006 presentes como registro
+ *       reproducible de lo aplicado en Supabase.
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -668,6 +673,55 @@ for (const f of [
       record("ERROR", f, i + 1, `E18c: JSON-LD "@type":"Event" — Google aplica el validador de eventos comerciales (organizer/performer/offers). Usar Article + contentLocation: Place.`);
     }
   });
+}
+
+// ─── 9j-ter. RULE E19: guardrails del módulo de tracking (ERROR) ────────────
+//
+// Blinda las lecciones del blindaje anti-bot del contador (jul 2026, PRs
+// #577/#578) contra regresiones. Sondas deterministas (lectura + regex), sin
+// node_modules ni red — verifican el CÓDIGO cliente y el registro de
+// migraciones; la salud del gate server-side (Supabase) no es verificable en
+// build y se vigila con la sonda viva (Routine diaria de la sesión).
+{
+  const beaconPath = path.join(root, "components", "VisitorBeacon.tsx");
+  if (!fs.existsSync(beaconPath)) {
+    record("ERROR", beaconPath, 0, "E19: components/VisitorBeacon.tsx no existe — el contador de visitas perdió su beacon.");
+  } else {
+    const beacon = fs.readFileSync(beaconPath, "utf-8");
+
+    // 19a — dedup de 24 h por dispositivo. Sin él, el contador vuelve a medir
+    // sesiones (sessionStorage) en vez de ~visitantes únicos diarios.
+    if (!/VISIT_TTL_MS/.test(beacon) || !/localStorage\.setItem\(VISIT_AT_KEY/.test(beacon)) {
+      record("ERROR", beaconPath, 0, "E19a: el beacon perdió el dedup de visita de 24 h (VISIT_TTL_MS / VISIT_AT_KEY en localStorage) — sin él vuelve a contar sesiones, no visitantes.");
+    }
+
+    // 19b — el filtro de datacenter NO debe bloquear cloudflare/fastly/akamai:
+    // son el egress de iCloud Private Relay y VPNs de consumidor (Safaris
+    // humanos reales). La lección vive como comentario; esto la hace mecánica.
+    const hostingRe = beacon.match(/const HOSTING_RE\s*=\s*\/([^/]+)\//);
+    if (!hostingRe) {
+      record("ERROR", beaconPath, 0, "E19b: el beacon perdió HOSTING_RE (filtro de IP de datacenter) — era la defensa contra crawlers con Chrome real (patrón Singapur, jul 2026).");
+    } else if (/cloudflare|fastly|akamai/i.test(hostingRe[1])) {
+      record("ERROR", beaconPath, 0, "E19b: HOSTING_RE bloquea cloudflare/fastly/akamai — es el egress de iCloud Private Relay (humanos reales con Safari). Quitarlos del patrón.");
+    }
+
+    // 19c — /visitantes fuera del conteo de pageviews (el panel se
+    // auto-inflaba: era la #2 en pageviews con puro ruido interno).
+    if (!/UNTRACKED_PATHS\s*=\s*new Set\(\[[^\]]*"\/visitantes"/.test(beacon)) {
+      record("ERROR", beaconPath, 0, 'E19c: "/visitantes" no está en UNTRACKED_PATHS del beacon — el panel de stats vuelve a contarse a sí mismo.');
+    }
+  }
+
+  // 19d — registro reproducible: las migraciones aplicadas vía MCP deben
+  // existir como archivo en supabase/migrations/ (si se pierden, el estado de
+  // la base ya no es reconstruible desde el repo).
+  const migDir = path.join(root, "supabase", "migrations");
+  for (const prefix of ["0005", "0006"]) {
+    const found = fs.existsSync(migDir) && fs.readdirSync(migDir).some((f) => f.startsWith(prefix) && f.endsWith(".sql") && fs.statSync(path.join(migDir, f)).size > 0);
+    if (!found) {
+      record("ERROR", migDir, 0, `E19d: falta la migración ${prefix}_*.sql en supabase/migrations/ — es el registro reproducible del gate anti-bot aplicado en Supabase.`);
+    }
+  }
 }
 
 // ─── 9k. RULE E17: visor de documentos — assets same-origin en disco (WARN) ─
