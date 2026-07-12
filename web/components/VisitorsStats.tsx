@@ -61,8 +61,10 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
     <div className="space-y-5">
       {/* Tarjetas de totales */}
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        {/* Con el dedup por dispositivo (24 h) + por IP (server, migración
+            0005), la métrica es ~visitantes únicos diarios, no sesiones. */}
         <Card
-          label={<T es="Visitas" en="Visits" />}
+          label={<T es="Visitantes" en="Visitors" />}
           value={<T es={fmtNum(total, "es")} en={fmtNum(total, "en")} />}
         />
         <Card
