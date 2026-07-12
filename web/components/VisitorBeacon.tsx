@@ -6,17 +6,42 @@ import { supabase } from "@/lib/supabase/client";
 import { fireRpc } from "@/lib/supabase/track";
 
 /**
- * ¿Es un bot / crawler? Googlebot y similares ejecutan JS y dispararían el
- * beacon, inflando el conteo (p. ej. "visita desde EE.UU." = Googlebot). Se
- * detectan por user-agent y por `navigator.webdriver` (automatización).
+ * ¿Es un bot / crawler / cliente automatizado? Googlebot y similares ejecutan
+ * JS y dispararían el beacon, inflando el conteo (p. ej. "visita desde EE.UU." =
+ * Googlebot). Se detectan por:
+ *   1. `navigator.webdriver` (automatización declarada).
+ *   2. User-agent conocido de crawler.
+ *   3. Señales de entorno que un navegador humano real no da: UA vacío,
+ *      `navigator.languages` vacío, `hardwareConcurrency === 0` — típicas de
+ *      clientes headless/monitores con UA "normal" que el filtro por UA no pilla
+ *      (fue el patrón de las visitas fantasma desde un solo origen, jul 2026).
+ * Conservador a propósito: solo señales de FP casi nulo (no se usa WebGL
+ * software ni `window.chrome`, que descartarían VMs o webviews de apps reales).
  */
 function isBot(): boolean {
   try {
-    if (navigator.webdriver) return true;
-    const ua = navigator.userAgent || "";
-    return /bot|crawl|spider|slurp|mediapartners|adsbot|bingpreview|facebookexternalhit|embedly|quora|pinterest|read-aloud|headless|phantom|puppeteer|playwright|lighthouse|chrome-lighthouse|gptbot|claudebot|ccbot|petalbot|yandex|baidu/i.test(
-      ua,
-    );
+    const nav = navigator;
+    if (nav.webdriver) return true;
+
+    const ua = nav.userAgent || "";
+    if (!ua) return true; // cliente sin UA → no es un navegador humano
+    if (
+      /bot|crawl|spider|slurp|mediapartners|adsbot|bingpreview|facebookexternalhit|embedly|quora|pinterest|read-aloud|headless|phantom|puppeteer|playwright|lighthouse|chrome-lighthouse|gptbot|claudebot|ccbot|petalbot|yandex|baidu|monitor|uptime|pingdom|statuscake|datadog|http-client|python-requests|axios|curl|wget|okhttp|go-http/i.test(
+        ua,
+      )
+    ) {
+      return true;
+    }
+
+    // Tells de headless con UA "normal":
+    if (nav.languages && nav.languages.length === 0) return true;
+    if (
+      typeof nav.hardwareConcurrency === "number" &&
+      nav.hardwareConcurrency === 0
+    ) {
+      return true;
+    }
+    return false;
   } catch {
     return false;
   }
@@ -56,6 +81,63 @@ function skipTracking(): boolean {
  * no perder a un visitante real que aterrice aquí.
  */
 const UNTRACKED_PATHS = new Set(["/visitantes", "/visitantes/"]);
+
+/**
+ * Gate de engagement para el conteo de VISITA por país. Llama a `onEngaged` solo
+ * cuando la visita muestra señales humanas: la página está visible Y o bien
+ * lleva ≥ DWELL_MS visible, o bien hubo una interacción (puntero/tecla/scroll/
+ * touch). Un monitor o scraper que carga y se va sin interactuar —el patrón de
+ * las visitas fantasma desde un solo origen (jul 2026)— nunca cumple, así que su
+ * visita no se cuenta. Tampoco dispara en prerender ni en pestañas de fondo que
+ * nunca se muestran. Devuelve un `cancel` para limpiar al desmontar.
+ *
+ * Solo gatea la VISITA (una vez por sesión), no el pageview por navegación —
+ * gatear cada pageview con dwell descartaría lectores que hojean rápido.
+ */
+const ENGAGE_DWELL_MS = 2500;
+function whenEngaged(onEngaged: () => void): () => void {
+  let done = false;
+  let timer: ReturnType<typeof setTimeout> | null = null;
+  const isPrerender = "prerendering" in document &&
+    (document as { prerendering?: boolean }).prerendering === true;
+
+  const cleanupFns: Array<() => void> = [];
+  const cleanup = () => {
+    if (timer) clearTimeout(timer);
+    timer = null;
+    for (const fn of cleanupFns) fn();
+    cleanupFns.length = 0;
+  };
+  const fire = () => {
+    if (done) return;
+    done = true;
+    cleanup();
+    onEngaged();
+  };
+  const startDwell = () => {
+    if (done || timer) return;
+    timer = setTimeout(fire, ENGAGE_DWELL_MS);
+  };
+  const onVisibility = () => {
+    if (document.visibilityState === "visible") startDwell();
+    else if (timer) {
+      clearTimeout(timer); // pausa el dwell si la pestaña se oculta
+      timer = null;
+    }
+  };
+
+  for (const ev of ["pointerdown", "keydown", "scroll", "touchstart"]) {
+    window.addEventListener(ev, fire, { once: true, passive: true });
+    cleanupFns.push(() => window.removeEventListener(ev, fire));
+  }
+  document.addEventListener("visibilitychange", onVisibility);
+  cleanupFns.push(() =>
+    document.removeEventListener("visibilitychange", onVisibility),
+  );
+  if (!isPrerender && document.visibilityState === "visible") startDwell();
+
+  return cleanup;
+}
 
 /**
  * Proveedores de geo-IP gratuitos (sin clave, con CORS). Se prueban en orden:
@@ -168,28 +250,36 @@ export function VisitorBeacon() {
     if (!sb || skipTracking()) return;
 
     const FLAG = "uap-visit-pinged";
-    let already = false;
     try {
-      already = sessionStorage.getItem(FLAG) === "1";
-      if (!already) sessionStorage.setItem(FLAG, "1");
+      if (sessionStorage.getItem(FLAG) === "1") return; // ya contada esta sesión
     } catch {
-      already = false; // sessionStorage no disponible (modo privado)
+      // sessionStorage no disponible (modo privado): seguimos.
     }
-    if (already) return;
 
-    void (async () => {
-      const cc = await detectCountry();
-      const { error } = await sb.rpc("increment_visit", { cc });
-      if (error) {
-        // Reintento defensivo: si falló (p. ej. red intermitente), no se
-        // marca la sesión como contada para que un reload lo reintente.
-        try {
-          sessionStorage.removeItem(FLAG);
-        } catch {
-          // sessionStorage no disponible: nada que limpiar.
-        }
+    // Solo cuenta cuando la visita se muestra humana (visible + dwell o
+    // interacción). El flag se marca al COMPROMETERSE a contar, no antes: así
+    // una carga sin engagement no bloquea que una recarga con engagement cuente.
+    const cancel = whenEngaged(() => {
+      try {
+        sessionStorage.setItem(FLAG, "1");
+      } catch {
+        // sessionStorage no disponible: nada que persistir.
       }
-    })();
+      void (async () => {
+        const cc = await detectCountry();
+        const { error } = await sb.rpc("increment_visit", { cc });
+        if (error) {
+          // Reintento defensivo: si falló (p. ej. red intermitente), no se
+          // marca la sesión como contada para que un reload lo reintente.
+          try {
+            sessionStorage.removeItem(FLAG);
+          } catch {
+            // sessionStorage no disponible: nada que limpiar.
+          }
+        }
+      })();
+    });
+    return cancel;
   }, []);
 
   return null;
