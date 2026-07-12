@@ -295,8 +295,12 @@ function unmarkVisitCounted(): void {
  * señal de datacenter (con timeout, nunca bloquea) y llama a la función
  * `increment_visit` de Supabase, que aplica el gate server-side (UA, dedup por
  * IP, exención del dueño — migración 0005) y hace el upsert atómico en
- * `visits_by_country`. El conteo se dispara aunque la geo-IP falle (cuenta
- * como "XX"). Render nulo. Sin Supabase configurado, no hace nada.
+ * `visits_by_country`. El PAÍS que registra el servidor viene de
+ * `cf-ipcountry` (Cloudflare, migración 0006); el `cc` detectado aquí es solo
+ * fallback — la consulta geo-IP del cliente importa sobre todo por la señal
+ * de datacenter (org/ISP), que no viene en los headers. El conteo se dispara
+ * aunque la geo-IP falle (fallback "XX"). Render nulo. Sin Supabase
+ * configurado, no hace nada.
  */
 export function VisitorBeacon() {
   const pathname = usePathname();
