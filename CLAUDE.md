@@ -150,6 +150,13 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - **Para verificar qué se desplegó**, lee el artefacto construido desde la branch `gh-pages` vía GitHub MCP (`get_file_contents`, ref `gh-pages`) — el saliente a la URL viva (`uapcodex.org`/`github.io`) y a Google lo bloquea la allowlist del proxy (403 a CONNECT; `curl` da 000, `WebFetch` 403, Playwright no llega), pero `raw.githubusercontent.com` y la API de GitHub sí. Los chunks del `initial load` salen de los `<script>` de `index.html` en `gh-pages`. (jul 2026)
 - **GA4 está consent-gated** (`components/CookieConsent.tsx`, ID `G-MZHZC5ZLY5`): `gtag.js` no carga hasta que el visitante toca «Aceptar», así que el HTML estático nunca dispara el hit y GA marca "No data received" hasta que alguien acepta — verificar con **Realtime en incógnito** (el Home de GA tarda 24–48 h), no asumir que falta el tag. (jul 2026)
 
+## Contador de visitas (/visitantes) (jul 2026)
+
+- **Arquitectura de dos capas**: beacon cliente (`components/VisitorBeacon.tsx`: dedup 24 h en localStorage, filtro de datacenter por org/ISP de la geo-IP, gate de engagement, opt-out `?notrack=1`) + **gate server-side** en Supabase proyecto `uap-codex` (migraciones `web/supabase/migrations/0005`/`0006`: filtro de UA, 1 visita/día por IP hasheada —sha256 con salt secreto + fecha, purga a 2 días, nunca IP cruda—, tope 50 pageviews/día/IP, exención `tracking_exempt` para dueño+demo). La capa server es la única inescapable: el filtrado solo-cliente lo saltaba un crawler con Chrome real (patrón Singapur, jul 2026) o cualquier `curl` con la anon key.
+- **El país lo resuelve el servidor**: la API de Supabase pasa por Cloudflare y PostgREST recibe `cf-ipcountry` y `cf-connecting-ip` en `request.headers` — el `cc` del cliente es solo fallback (migración 0006). No confiar en país enviado por el cliente.
+- **Cómo probar el gate end-to-end desde una sesión remota** (la allowlist bloquea `supabase.co` para curl/WebFetch): usar **`pg_net`** — la base llama a su propia API REST con `net.http_post(...)` (UA arbitrario incluido) y las respuestas quedan en `net._http_response`. Para aserciones deterministas sin tocar la API: simular headers con `set_config('request.headers', '…', true)` dentro de un DO block, y limpiar el rastro (países de prueba `ZY`/`ZX`, borrar hashes de IPs de prueba).
+- **Sondas**: regla **E19** de `audit-consistency.mjs` (build: dedup 24 h presente, HOSTING_RE sin cloudflare/fastly/akamai, `/visitantes` sin auto-conteo, migraciones 0005/0006 en el repo) + **Routine diaria** en la sesión CCR (15:00 UTC) que vigila la salud del gate en la base viva (dedup poblándose, sin patrón mono-país nuevo, funciones íntegras) y solo reporta anomalías.
+
 ## Branch protocol
 
 - Develop en branches `claude/<topic>-<suffix>`.
@@ -169,6 +176,8 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - **No** dejar archivos de prueba temporales en `data/cases/` — `validate-schema.mjs`, `build-cases.mjs` y el conteo `cases:` los recogen por `readdirSync`, así que inflan el número y pueden romper el build (un `_test.json` hizo reportar 317 en vez de 316); bórralos antes de confiar en el conteo.
 - **No** emitir `Event` JSON-LD en casos (Google aplica el validador de eventos comerciales y exige `organizer`/`performer`/`offers`). Usar `Article` + `contentLocation: Place`. *(enforzado: `audit-consistency.mjs` E18c)*
 - **No** proponer (ni empezar a construir) una vista/feature nueva en `/innovar` sin antes listar `app/*/page.tsx` + grepear `lib/` — las auditorías numéricas (`audit-consistency`/`audit-design`) miden salud, no revelan qué ya está construido; casi se duplicó `/cobertura` (matriz país×década) reimplementando `lib/regions.ts` desde cero (jul 2026).
+- **No** clasificar `cloudflare|fastly|akamai` como "IP de datacenter" en filtros anti-bot (son el egress de iCloud Private Relay y VPNs de consumidor — bloquearlos descarta Safaris humanos reales). *(enforzado: `audit-consistency.mjs` E19b)*
+- **No** filtrar bots solo en el cliente — cualquier cliente con la anon key llama los RPC de conteo directo, y un crawler con Chrome "real" pasa UA + engagement; el gate tiene que vivir en la función SECURITY DEFINER (ver sección Contador de visitas). *(enforzado: sonda viva diaria; jul 2026)*
 
 ## Deuda pendiente · fotos de actores
 
