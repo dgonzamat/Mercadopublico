@@ -47,6 +47,17 @@ function skipTracking(): boolean {
 }
 
 /**
+ * Rutas meta excluidas del conteo de pageviews: `/visitantes` es el propio
+ * panel de estadísticas, visto sobre todo por el dueño revisando las cifras, así
+ * que se auto-inflaba (era la #2 en pageviews, casi todo ruido interno). El
+ * opt-out `?notrack=1` cubre al dueño en general; esto además evita que el panel
+ * de stats se cuente a sí mismo aunque lo mire un visitante externo. Solo aplica
+ * al conteo de PÁGINA — la visita por país (una vez por sesión) sí cuenta, para
+ * no perder a un visitante real que aterrice aquí.
+ */
+const UNTRACKED_PATHS = new Set(["/visitantes", "/visitantes/"]);
+
+/**
  * Proveedores de geo-IP gratuitos (sin clave, con CORS). Se prueban en orden:
  * un solo servicio falla a menudo (timeout, rate-limit, bloqueado por adblock)
  * y deja la visita como "XX"; con varios fallbacks muchas menos quedan sin país.
@@ -107,7 +118,8 @@ export function VisitorBeacon() {
   // doble disparo para la misma ruta (re-render / StrictMode en dev).
   useEffect(() => {
     const sb = supabase;
-    if (!sb || !pathname || skipTracking()) return;
+    if (!sb || !pathname || skipTracking() || UNTRACKED_PATHS.has(pathname))
+      return;
     if (lastPath.current === pathname) return;
     lastPath.current = pathname;
     // `fireRpc` ejecuta el builder perezoso de supabase-js (ver lib/supabase/track):
