@@ -41,6 +41,10 @@
  *       (documents[].src / primaryDocument.url bajo /pursue/) debe existir en
  *       web/public/ — si falta, el iframe/img queda roto. Backlog medible de
  *       subida que se pone en verde al subir los binarios.
+ *   E20 (ERROR) Visor de documentos · bucket Supabase: todo documento cuyo
+ *       `src` apunta al bucket Storage `pursue` debe tener su objeto listado
+ *       en data/pursue-bucket-manifest.json (verificación offline; la sonda
+ *       viva diaria mantiene el manifiesto contra storage.objects).
  *   E19 (ERROR) Guardrails del módulo de tracking (contador de visitas):
  *       dedup de 24 h presente en el beacon, filtro de datacenter sin
  *       bloquear el egress de iCloud Private Relay, /visitantes fuera del
@@ -755,6 +759,56 @@ if (missingAssets.length > 0) {
     0,
     `E17 visor: ${missingAssets.length}/${docAssetRefs.length} assets de documento same-origin no existen aún en web/public/ — el visor queda roto hasta subirlos: ${list}`,
   );
+}
+
+// ─── 9l. RULE E20: visor de documentos — objetos del bucket Supabase (ERROR) ─
+//
+// Hermana de E17 para el OTRO origen embebible del visor: el bucket Supabase
+// Storage `pursue` (archivos 30-50 MB / partes de los grandes que GitHub no
+// aloja; `src` = .../storage/v1/object/public/pursue/<name>). E17 solo cruza
+// los assets same-origin contra el disco; los del bucket no son verificables
+// en build (la allowlist bloquea supabase.co). Por eso el bucket lleva un
+// MANIFIESTO commiteado (data/pursue-bucket-manifest.json) que E20 cruza
+// OFFLINE: todo documento que referencia el bucket debe tener su objeto en el
+// manifiesto — si no, el visor queda roto (subida olvidada o typo en el src).
+// La sonda viva diaria (Routine CCR) mantiene el manifiesto honesto contra
+// storage.objects; E20 lo convierte en un gate de build determinista. ERROR
+// (no WARN) porque un bucket-src sin objeto es un visor roto seguro, no un
+// backlog. Los `part1of6` etc. son partes legítimas de un PDF grande partido.
+const SUPA_PURSUE_PREFIX =
+  "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
+const bucketManifestPath = path.join(root, "data", "pursue-bucket-manifest.json");
+const bucketRefs = []; // {caseId, name}
+for (const c of cases) {
+  for (const d of c.documents || []) {
+    if (typeof d.src === "string" && d.src.startsWith(SUPA_PURSUE_PREFIX)) {
+      bucketRefs.push({ caseId: c.id, name: d.src.slice(SUPA_PURSUE_PREFIX.length) });
+    }
+  }
+  const pdUrl = c.primaryDocument && c.primaryDocument.url;
+  if (typeof pdUrl === "string" && pdUrl.startsWith(SUPA_PURSUE_PREFIX)) {
+    bucketRefs.push({ caseId: c.id, name: pdUrl.slice(SUPA_PURSUE_PREFIX.length) });
+  }
+}
+if (bucketRefs.length > 0) {
+  if (!fs.existsSync(bucketManifestPath)) {
+    record("ERROR", bucketManifestPath, 0, `E20 visor: ${bucketRefs.length} documentos referencian el bucket Supabase pero falta data/pursue-bucket-manifest.json — no se puede verificar que los objetos existan. Regenerar con: select name from storage.objects where bucket_id='pursue'.`);
+  } else {
+    let manifest;
+    try {
+      manifest = new Set(JSON.parse(fs.readFileSync(bucketManifestPath, "utf-8")).objects || []);
+    } catch {
+      manifest = null;
+      record("ERROR", bucketManifestPath, 0, "E20 visor: pursue-bucket-manifest.json ilegible o sin campo `objects` (array).");
+    }
+    if (manifest) {
+      const missingInBucket = bucketRefs.filter((r) => !manifest.has(r.name));
+      if (missingInBucket.length > 0) {
+        const list = missingInBucket.map((m) => `${m.name} (${m.caseId})`).join(", ");
+        record("ERROR", bucketManifestPath, 0, `E20 visor: ${missingInBucket.length}/${bucketRefs.length} documentos referencian objetos que NO están en el bucket Supabase (visor roto) — subir el archivo o corregir el src: ${list}`);
+      }
+    }
+  }
 }
 
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
