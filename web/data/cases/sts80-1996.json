@@ -48,6 +48,35 @@
     "No radar, telemetry or ranging data — single-camera (monocular) image",
     "Standard explanation: particle near the orbiter (ice / insulation / paint) lit by the Sun, indistinguishable from a distant object without triangulation"
   ],
+  "documents": [
+    {
+      "src": "/pursue/NASA-UAP-D030_STS-80-Unidentified-Object-Image1_1996.jpg",
+      "type": "image",
+      "title": "NASA-UAP-D030 — STS-80, objeto no identificado (imagen 1, 1996)",
+      "title_en": "NASA-UAP-D030 — STS-80, unidentified object (image 1, 1996)",
+      "source": "NASA / AARO (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    },
+    {
+      "src": "/pursue/NASA-UAP-D031_STS-80-Unidentified-Object-Image2_1996.jpg",
+      "type": "image",
+      "title": "NASA-UAP-D031 — STS-80, objeto no identificado (imagen 2, 1996)",
+      "title_en": "NASA-UAP-D031 — STS-80, unidentified object (image 2, 1996)",
+      "source": "NASA / AARO (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    },
+    {
+      "src": "/pursue/NASA-UAP-D032_STS-80-Unidentified-Object-Image3_1996.jpg",
+      "type": "image",
+      "title": "NASA-UAP-D032 — STS-80, objeto no identificado (imagen 3, 1996)",
+      "title_en": "NASA-UAP-D032 — STS-80, unidentified object (image 3, 1996)",
+      "source": "NASA / AARO (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/UFO/"
+    }
+  ],
   "sources": [
     {
       "name": "NASA / AARO — «STS-80 Unidentified Object» (imágenes 1–3, 1996)",
