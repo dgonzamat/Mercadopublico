@@ -1,0 +1,82 @@
+{
+  "id": "talavera-la-real-1976",
+  "num": 324,
+  "name": "Talavera la Real · el «Hombre Verde» (1976)",
+  "name_en": "Talavera la Real · the 'Green Man' (1976)",
+  "year_start": 1976,
+  "country": "ES",
+  "country_name": "España",
+  "flag": "🇪🇸",
+  "location": {
+    "lat": 38.893,
+    "lng": -6.813,
+    "place": "Base Aérea de Talavera la Real (Ala 23), Badajoz, Extremadura",
+    "place_en": "Talavera la Real Air Base (Ala 23), Badajoz, Extremadura, Spain"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 20,
+  "summary": "En la madrugada del 12 de noviembre de 1976, dos centinelas de reemplazo en la zona de combustible de la Base Aérea de Talavera la Real (Badajoz) reportaron interferencias, un silbido agudo, un apagón parcial y un perro militar alterado. Uno de ellos, José María Trejo, describió una figura humanoide de unos tres metros formada por puntos de luz verde, con brazos largos sin manos ni pies, antes de perder el conocimiento; sus compañeros abrieron fuego contra la aparición, que se desvaneció. El Ejército del Aire abrió un expediente que el Ministerio de Defensa desclasificó en los años noventa. La documentación confirma que hubo una alarma real, pero no respalda de forma concluyente la presencia de un objeto o un ser; la lectura más sólida apunta a alteración perceptiva e histeria de contagio en una guardia nocturna.",
+  "summary_en": "In the early hours of 12 November 1976, two conscript sentries in the fuel area of Talavera la Real Air Base (Badajoz, Spain) reported interference, a high-pitched whistle, a partial blackout and an agitated military dog. One of them, José María Trejo, described a humanoid figure some three meters tall formed by points of green light, with long arms and no hands or feet, before losing consciousness; his companions opened fire on the apparition, which vanished. The Spanish Air Force opened a file that the Ministry of Defense declassified in the 1990s. The documentation confirms a real alarm occurred, but does not conclusively support the presence of an object or a being; the strongest reading points to perceptual disturbance and contagious hysteria during a night watch.",
+  "patterns": ["8a", "8h"],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.08,
+    "indet": 0.27
+  },
+  "whatHappened": "La madrugada del 12 de noviembre de 1976, en la Base Aérea de Talavera la Real (Badajoz, Extremadura), dos soldados de reemplazo —José María Trejo y Juan Carrizosa Luján— cubrían la guardia nocturna en la zona de combustible, cada uno en su garita, separados por unos sesenta metros. Según los testimonios recogidos después, la secuencia empezó con un ruido anómalo, primero comparable a una interferencia de radio y luego a un silbido agudo que se prolongó varios minutos, acompañado de un apagón parcial del alumbrado del perímetro e interferencias en las comunicaciones. Un perro militar de la unidad se mostró intensamente alterado.\n\nEn ese contexto de tensión, Trejo describió haber visto a su izquierda una figura de gran tamaño —cercana a los tres metros de altura—, aparentemente formada por pequeños puntos de luz verde, con brazos de proporciones anómalas y sin manos ni pies definidos. El soldado perdió el conocimiento. Sus compañeros, alarmados, abrieron fuego con su armamento reglamentario en dirección a la aparición, que —según el relato— se desvaneció acto seguido. Varios integrantes del destacamento declararon haber percibido una luz o una silueta luminosa junto al vallado de la base.\n\nEl episodio no quedó como una anécdota de cuartel: fue objeto de un parte e investigación internos del Ejército del Aire, que abrió un expediente formal bajo el epígrafe de avistamiento de fenómenos extraños en la base. Décadas más tarde, en el proceso de desclasificación de los «expedientes OVNI» que el Ministerio de Defensa español llevó a cabo en los años noventa, ese expediente se hizo público y hoy es consultable en la Biblioteca Virtual de Defensa. La documentación oficial confirma que aquella madrugada se produjo una alarma real —hubo disparos, un parte y testigos militares—, pero no establece qué la provocó ni respalda de forma concluyente la presencia de un objeto o de un ser desconocido dentro de la instalación.",
+  "whatHappened_en": "In the early hours of 12 November 1976, at Talavera la Real Air Base (Badajoz, Extremadura), two conscript soldiers —José María Trejo and Juan Carrizosa Luján— stood the night watch in the fuel area, each in his own sentry box, about sixty meters apart. According to the testimonies gathered afterward, the sequence began with an anomalous noise, first comparable to radio interference and then to a high-pitched whistle that lasted several minutes, accompanied by a partial blackout of the perimeter lighting and interference in communications. A unit military dog became intensely agitated.\n\nIn that tense context, Trejo described seeing to his left a large figure —close to three meters tall—, apparently formed by small points of green light, with arms of anomalous proportions and no defined hands or feet. The soldier lost consciousness. His companions, alarmed, opened fire with their service weapons in the direction of the apparition, which —by the account— vanished immediately afterward. Several members of the detachment stated they had perceived a light or a luminous silhouette by the base fence.\n\nThe episode did not remain a barracks anecdote: it was the subject of an internal report and investigation by the Air Force, which opened a formal file under the heading of a sighting of strange phenomena at the base. Decades later, during the declassification of the 'UFO files' carried out by the Spanish Ministry of Defense in the 1990s, that file was made public and can today be consulted in the Virtual Library of Defense. The official documentation confirms that a real alarm occurred that morning —there were gunshots, a report and military witnesses—, but it does not establish what caused it, nor does it conclusively support the presence of an object or an unknown being inside the installation.",
+  "whyMatters": "Talavera la Real es uno de los casos españoles más citados precisamente por su naturaleza mixta: un relato de encuentro cercano extraordinario envuelto en una cadena de custodia institucional real. Esa combinación es rara y valiosa para el corpus. Lo instructivo no es la figura de tres metros de luz verde, sino la distancia entre dos hechos que suelen confundirse: que exista un expediente militar desclasificado no significa que el Ejército del Aire validara un fenómeno anómalo; significa que hubo una alarma que la cadena de mando consideró digna de registro.\n\nEl análisis más sólido apunta a una explicación mundana de raíz psicológica. Juan Ballester Olmos —investigador que participó en la propia desclasificación de los expedientes— sostiene que lo ocurrido es compatible con un episodio de alteración perceptiva de un soldado de guardia que, sumado al miedo, la sugestión y una histeria de contagio entre reclutas jóvenes en plena noche, degeneró en el relato reportado. La guardia nocturna aislada, el armamento cargado, la tensión de una base militar en el tardofranquismo y la ausencia de cualquier evidencia física concluyente —ni traza, ni fotografía, ni contacto radar— encajan con ese cuadro.\n\nPor eso el caso vive en el corpus con un peso documental alto pero una probabilidad de anomalía baja: el expediente le da trazabilidad, mientras que la evidencia interna —testimonio de guardia, sin corroboración instrumental— es débil. Es un ejemplo de manual de por qué «documentado por un ejército» e «inexplicado» no son sinónimos de «no humano», y de cómo un episodio de percepción y sugestión puede quedar fijado para siempre en un archivo oficial.",
+  "whyMatters_en": "Talavera la Real is one of the most cited Spanish cases precisely because of its mixed nature: an extraordinary close-encounter account wrapped in a real institutional chain of custody. That combination is rare and valuable for the corpus. What is instructive is not the three-meter figure of green light, but the distance between two facts that are often confused: the existence of a declassified military file does not mean the Air Force validated an anomalous phenomenon; it means there was an alarm that the chain of command deemed worth recording.\n\nThe strongest analysis points to a mundane explanation of psychological root. Juan Ballester Olmos —a researcher who took part in the declassification of the files themselves— holds that what happened is compatible with an episode of perceptual disturbance in a sentry that, combined with fear, suggestion and contagious hysteria among young recruits in the dead of night, degenerated into the reported account. The isolated night watch, the loaded weapons, the tension of a military base in late-Franco Spain, and the absence of any conclusive physical evidence —no trace, no photograph, no radar contact— all fit that picture.\n\nThat is why the case lives in the corpus with high documentary weight but a low probability of anomaly: the file gives it traceability, while the internal evidence —a sentry's testimony, with no instrumental corroboration— is weak. It is a textbook example of why 'documented by a military' and 'unexplained' are not synonyms for 'non-human,' and of how an episode of perception and suggestion can be fixed forever in an official archive.",
+  "evidence": [
+    "Expediente OVNI del Ejército del Aire sobre el avistamiento de fenómenos extraños en la base aérea de Talavera la Real, desclasificado en los años noventa (Biblioteca Virtual de Defensa)",
+    "Dos centinelas de reemplazo en la zona de combustible (José María Trejo y Juan Carrizosa Luján), garitas separadas ~60 m",
+    "Secuencia reportada: interferencia de radio / silbido agudo, apagón parcial del perímetro, perro militar alterado, disparos con arma reglamentaria",
+    "Descripción del humanoide: ~3 m de altura, puntos de luz verde, brazos largos sin manos ni pies; Trejo perdió el conocimiento",
+    "Sin evidencia física concluyente: ni traza material, ni fotografía, ni contacto radar",
+    "Lectura escéptica (J. Ballester Olmos): alteración perceptiva de un centinela + histeria de contagio entre reclutas"
+  ],
+  "evidence_en": [
+    "Spanish Air Force UFO file on the sighting of strange phenomena at Talavera la Real air base, declassified in the 1990s (Virtual Library of Defense)",
+    "Two conscript sentries in the fuel area (José María Trejo and Juan Carrizosa Luján), sentry boxes ~60 m apart",
+    "Reported sequence: radio interference / high-pitched whistle, partial perimeter blackout, agitated military dog, gunfire with service weapons",
+    "Humanoid description: ~3 m tall, points of green light, long arms with no hands or feet; Trejo lost consciousness",
+    "No conclusive physical evidence: no material trace, no photograph, no radar contact",
+    "Skeptical reading (J. Ballester Olmos): a sentry's perceptual disturbance + contagious hysteria among recruits"
+  ],
+  "sources": [
+    {
+      "name": "Biblioteca Virtual de Defensa — Expediente OVNI, avistamiento en la base aérea de Talavera la Real (Ejército del Aire, desclasificado)",
+      "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395902",
+      "note": "Fuente primaria: el expediente oficial desclasificado por el Ministerio de Defensa."
+    },
+    {
+      "name": "Extremadura Misteriosa — «El Hombre Verde de Talavera la Real»",
+      "url": "https://www.extremaduramisteriosa.com/el-hombre-verde-de-talavera-la-real"
+    },
+    {
+      "name": "Planvex — «José Manuel Trejo, principal testigo del caso OVNI de Talavera la Real» (2017)",
+      "url": "https://planvex.es/web/2017/08/humanoide-talavera-la-real/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Virtual Library of Defense — UFO file, sighting at Talavera la Real air base (Spanish Air Force, declassified)",
+      "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395902",
+      "note": "Primary source: the official file declassified by the Ministry of Defense."
+    },
+    {
+      "name": "Extremadura Misteriosa — 'El Hombre Verde de Talavera la Real'",
+      "url": "https://www.extremaduramisteriosa.com/el-hombre-verde-de-talavera-la-real"
+    },
+    {
+      "name": "Planvex — 'José Manuel Trejo, principal testigo del caso OVNI de Talavera la Real' (2017)",
+      "url": "https://planvex.es/web/2017/08/humanoide-talavera-la-real/"
+    }
+  ]
+}
