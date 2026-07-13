@@ -125,6 +125,17 @@ Esto extiende la regla anterior ("2-3 párrafos") porque el corpus dejó casos d
 
 Si un caso no tiene rich content, la página de detalle muestra fallback "⏳ Caso pendiente de explicación detallada".
 
+### Visor de documentos (`documents[]` / `primaryDocument`)
+
+El detalle embebe documentos primarios inline (`components/PdfDoc.tsx` → react-pdf `dynamic(ssr:false)` para `type:"pdf"`; `<img>` server para `type:"image"`). **`src` debe ser embebible** — war.gov bloquea el framing de terceros, así que solo se admiten dos orígenes con garantía de embed:
+1. **Same-origin `/pursue/`** — archivos ≤30 MB commiteados en `web/public/pursue/` (viajan con el repo, se despliegan a gh-pages).
+2. **Bucket Supabase Storage `pursue`** — `src` = `…/storage/v1/object/public/pursue/<name>`, para los 30-50 MB (o partes `__partNofM`) que GitHub no aloja.
+
+Tres capas de sonda protegen el visor (todas corren en prebuild salvo la viva):
+- **`validate-schema.mjs`** (ERROR): `type` ∈ {pdf,image} coherente con la extensión de `src`; `src` debe ser `/pursue/` o el bucket (nada de war.gov); `fallbackUrl` bien formada.
+- **`audit-consistency.mjs` E17** (WARN): cada asset `/pursue/` same-origin existe en `web/public/`.
+- **`audit-consistency.mjs` E20** (ERROR): cada documento que referencia el **bucket Supabase** está en `data/pursue-bucket-manifest.json`. El build no puede consultar `supabase.co` (allowlist), así que el manifiesto es la verdad offline; la **sonda viva diaria** (Routine CCR) lo mantiene honesto contra `storage.objects`. Regenerar el manifiesto: `select name from storage.objects where bucket_id='pursue' order by name`.
+
 ## Modelo de probabilidad (MECE)
 
 Las probabilidades son **comparables**: cada caso de incidente reparte el 100% sobre 6 narrativas **mutuamente excluyentes y exhaustivas** (campo `posterior`, suma 1). El corpus las agrega en el nº esperado de casos por narrativa —`Eⱼ = Σᵢ P(narrativaⱼ | casoᵢ)`—, que reparte el 100% y es comparable entre narrativas; al ser una esperanza (lineal) es válido aunque los casos estén correlacionados.

@@ -1,0 +1,31 @@
+{
+  "_comment": "Manifiesto de objetos en el bucket Supabase Storage `pursue` (proyecto uap-codex). Verdad de qué archivos existen en el bucket, para que la regla E20 de audit-consistency.mjs valide OFFLINE que todo documento que referencia el bucket (src = .../storage/v1/object/public/pursue/<name>) tenga su objeto — el build no puede consultar supabase.co (allowlist). La sonda viva diaria (Routine CCR) mantiene este manifiesto honesto contra storage.objects; si driftea, avisa. Regenerar con: select name from storage.objects where bucket_id='pursue' order by name.",
+  "bucket": "pursue",
+  "generated_note": "24 objetos · ~866 MB · verificado contra storage.objects 2026-07-14",
+  "objects": [
+    "342_hs1-416511228_box186_319.1-flying-discs-1949__part1of2.pdf",
+    "342_hs1-416511228_box186_319.1-flying-discs-1949__part2of2.pdf",
+    "38_143685_box7_incident_summaries_1-100.pdf",
+    "38_143685_box7_incident_summaries_173-233__part1of4.pdf",
+    "38_143685_box7_incident_summaries_173-233__part2of4.pdf",
+    "38_143685_box7_incident_summaries_173-233__part3of4.pdf",
+    "38_143685_box7_incident_summaries_173-233__part4of4.pdf",
+    "65_hs1-834228961_62-hq-83894_section_10__part1of2.pdf",
+    "65_hs1-834228961_62-hq-83894_section_10__part2of2.pdf",
+    "65_hs1-834228961_62-hq-83894_section_2.pdf",
+    "65_hs1-834228961_62-hq-83894_section_3.pdf",
+    "65_hs1-834228961_62-hq-83894_section_4.pdf",
+    "65_hs1-834228961_62-hq-83894_section_5.pdf",
+    "65_hs1-834228961_62-hq-83894_section_6__part1of2.pdf",
+    "65_hs1-834228961_62-hq-83894_section_6__part2of2.pdf",
+    "65_hs1-834228961_62-hq-83894_section_7.pdf",
+    "65_hs1-834228961_62-hq-83894_section_8__part1of6.pdf",
+    "65_hs1-834228961_62-hq-83894_section_8__part2of6.pdf",
+    "65_hs1-834228961_62-hq-83894_section_8__part3of6.pdf",
+    "65_hs1-834228961_62-hq-83894_section_8__part4of6.pdf",
+    "65_hs1-834228961_62-hq-83894_section_8__part5of6.pdf",
+    "65_hs1-834228961_62-hq-83894_section_8__part6of6.pdf",
+    "65_hs1-834228961_62-hq-83894_section_9.pdf",
+    "65_hs1-834228961_62-hq-83894_sub_a.pdf"
+  ]
+}
