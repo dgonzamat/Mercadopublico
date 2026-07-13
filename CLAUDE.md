@@ -136,6 +136,8 @@ Tres capas de sonda protegen el visor (todas corren en prebuild salvo la viva):
 - **`audit-consistency.mjs` E17** (WARN): cada asset `/pursue/` same-origin existe en `web/public/`.
 - **`audit-consistency.mjs` E20** (ERROR): cada documento que referencia el **bucket Supabase** está en `data/pursue-bucket-manifest.json`. El build no puede consultar `supabase.co` (allowlist), así que el manifiesto es la verdad offline; la **sonda viva diaria** (Routine CCR) lo mantiene honesto contra `storage.objects`. Regenerar el manifiesto: `select name from storage.objects where bucket_id='pursue' order by name`.
 
+**Registro (NO re-buscar) · origen de los binarios PURSUE (jul 2026)**: los documentos/imágenes de los releases PURSUE viven en el **Google Drive del dueño** (carpeta `release_04_documents_071026` para R04; conector Google Drive MCP conectado). Es la vía para (re)hostear cualquier asset que `war.gov` bloquee desde el entorno (la allowlist rechaza el fetcher). Protocolo probado: buscar en Drive por doc-ID (`NASA-UAP-D030…`), `download_file_content` devuelve base64 (se guarda a un tool-result file), decodificar con python a `web/public/pursue/` (< 30 MB) o subir al bucket Supabase (≥ 30 MB), y montar en `documents[]`. Así se cerró el hueco de las 3 imágenes STS-80 (D030/031/032) que war.gov no dejaba hostear.
+
 ## Modelo de probabilidad (MECE)
 
 Las probabilidades son **comparables**: cada caso de incidente reparte el 100% sobre 6 narrativas **mutuamente excluyentes y exhaustivas** (campo `posterior`, suma 1). El corpus las agrega en el nº esperado de casos por narrativa —`Eⱼ = Σᵢ P(narrativaⱼ | casoᵢ)`—, que reparte el 100% y es comparable entre narrativas; al ser una esperanza (lineal) es válido aunque los casos estén correlacionados.
