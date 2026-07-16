@@ -3,7 +3,8 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { researchers, getFramework } from "@/lib/data";
-import { breadcrumbJsonLd, researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { casesForResearcher } from "@/lib/researcherCases";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
@@ -67,17 +68,12 @@ export default async function ResearcherDetailPage(
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(researcherJsonLd(r)) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(
-            breadcrumbJsonLd([
-              { href: "/", label: "Inicio" },
-              { href: "/researchers/", label: "Actores" },
-              { label: r.name },
-            ]),
-          ),
-        }}
+      <BreadcrumbJsonLd
+        items={[
+          { href: "/", label: "Inicio" },
+          { href: "/researchers/", label: "Actores" },
+          { label: r.name },
+        ]}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
