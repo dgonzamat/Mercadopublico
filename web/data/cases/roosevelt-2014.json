@@ -72,5 +72,16 @@
     "nohumano_encubierto": 0.16,
     "nohumano_abierto": 0.1,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/roosevelt-2014-context.jpg",
+      "type": "image",
+      "title": "Contexto · el portaaviones USS Theodore Roosevelt, cuyos pilotos registraron los objetos (Gimbal/GoFast)",
+      "title_en": "Context · the carrier USS Theodore Roosevelt, whose pilots recorded the objects (Gimbal/GoFast)",
+      "source": "USS Theodore Roosevelt at sea.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Theodore%20Roosevelt%20at%20sea.jpg"
+    }
+  ]
 }

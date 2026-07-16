@@ -72,5 +72,16 @@
       "url": "http://www.ufoevidence.org/cases/case60.htm",
       "note": "Compilación de la cronología del episodio de la DMZ."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/vietnam-dmz-1968-context.jpg",
+      "type": "image",
+      "title": "Contexto · el crucero USS Boston, alcanzado por fuego amigo durante el incidente de la DMZ",
+      "title_en": "Context · the cruiser USS Boston, hit by friendly fire during the DMZ incident",
+      "source": "USS Boston (CAG-1) and USS Canberra (CAG-2) underway in the Caribbean Sea on 22 April 1958 (NH 98289).jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Boston%20(CAG-1)%20and%20USS%20Canberra%20(CAG-2)%20underway%20in%20the%20Caribbean%20Sea%20on%2022%20April%201958%20(NH%2098289).jpg"
+    }
   ]
 }

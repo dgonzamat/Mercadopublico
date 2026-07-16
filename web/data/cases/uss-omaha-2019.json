@@ -55,5 +55,16 @@
       "name": "Wikipedia — 'Pentagon UFO videos' (confirmación de autenticidad, abril 2021)",
       "url": "https://en.wikipedia.org/wiki/Pentagon_UFO_videos"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/uss-omaha-2019-context.jpg",
+      "type": "image",
+      "title": "Contexto · el USS Omaha (LCS-12), buque de la esfera transmedium filmada en 2019",
+      "title_en": "Context · USS Omaha (LCS-12), ship of the 2019 transmedium sphere footage",
+      "source": "USS Omaha (LCS 12) Commissioning Ceremony (4119951).jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Omaha%20(LCS%2012)%20Commissioning%20Ceremony%20(4119951).jpg"
+    }
   ]
 }

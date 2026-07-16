@@ -67,5 +67,16 @@
     "nohumano_encubierto": 0.17,
     "nohumano_abierto": 0.09,
     "indet": 0.31
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/uss-jackson-2023-context.png",
+      "type": "image",
+      "title": "Contexto · el USS Jackson (LCS-6), buque del incidente transmedium reportado por Wiggins",
+      "title_en": "Context · USS Jackson (LCS-6), ship of the transmedium incident reported by Wiggins",
+      "source": "USS Jackson (LCS-6) at Guam.png · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Jackson%20(LCS-6)%20at%20Guam.png"
+    }
+  ]
 }

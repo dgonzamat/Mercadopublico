@@ -60,5 +60,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.025,
     "indet": 0.23
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/ilopango-el-salvador-2009-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto de Ilopango (El Salvador)",
+      "title_en": "Context · Ilopango Airport (El Salvador)",
+      "source": "32-0001 Aeropuerto de Ilopango.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3A32-0001%20Aeropuerto%20de%20Ilopango.jpg"
+    }
+  ]
 }
