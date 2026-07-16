@@ -72,5 +72,16 @@
       "name": "Condon Report — Case 22 (Falcon Lake)",
       "url": "https://files.ncas.org/condon/text/case22.htm"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/falcon-lake-1967-context.jpg",
+      "type": "image",
+      "title": "Contexto · el parque Whiteshell (Manitoba, Canadá), zona del encuentro de Stefan Michalak",
+      "title_en": "Context · Whiteshell Provincial Park (Manitoba, Canada), area of Stefan Michalak's encounter",
+      "source": "Whiteshell River, Pine Point Trail, Whiteshell Provincial Park, Manitoba (492603) (9501380732).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWhiteshell%20River%2C%20Pine%20Point%20Trail%2C%20Whiteshell%20Provincial%20Park%2C%20Manitoba%20(492603)%20(9501380732).jpg"
+    }
   ]
 }
