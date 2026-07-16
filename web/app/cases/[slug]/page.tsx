@@ -14,7 +14,8 @@ import { researchersForCase } from "@/lib/researcherCases";
 import { EpistemicBadge } from "@/components/Badge";
 import PdfDoc from "@/components/PdfDoc";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
-import { breadcrumbJsonLd, caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
@@ -174,17 +175,12 @@ export default async function CaseDetailPage(
         // the case's geographic location.
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(caseJsonLd(c)) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(
-            breadcrumbJsonLd([
-              { href: "/", label: "Inicio" },
-              { href: "/cases/", label: "Casos" },
-              { label: c.name },
-            ]),
-          ),
-        }}
+      <BreadcrumbJsonLd
+        items={[
+          { href: "/", label: "Inicio" },
+          { href: "/cases/", label: "Casos" },
+          { label: c.name },
+        ]}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb

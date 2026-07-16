@@ -7,7 +7,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { T } from "@/components/T";
 import { Eyebrow, H1 } from "@/lib/typography";
-import { breadcrumbJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export function generateStaticParams() {
   return patterns.map((p) => ({ letter: p.letter }));
@@ -51,17 +51,12 @@ export default async function PatternDetailPage(
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(
-            breadcrumbJsonLd([
-              { href: "/", label: "Inicio" },
-              { href: "/patterns/", label: "Patrones" },
-              { label: `${p.id} ${p.name}` },
-            ]),
-          ),
-        }}
+      <BreadcrumbJsonLd
+        items={[
+          { href: "/", label: "Inicio" },
+          { href: "/patterns/", label: "Patrones" },
+          { label: `${p.id} ${p.name}` },
+        ]}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb

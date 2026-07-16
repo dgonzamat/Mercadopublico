@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { posts, getPost } from "@/lib/posts";
-import { breadcrumbJsonLd, postJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { postJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
@@ -53,17 +54,12 @@ export default async function PostDetailPage(
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(postJsonLd(p)) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(
-            breadcrumbJsonLd([
-              { href: "/", label: "Inicio" },
-              { href: "/blog/", label: "Blog" },
-              { label: p.title },
-            ]),
-          ),
-        }}
+      <BreadcrumbJsonLd
+        items={[
+          { href: "/", label: "Inicio" },
+          { href: "/blog/", label: "Blog" },
+          { label: p.title },
+        ]}
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
