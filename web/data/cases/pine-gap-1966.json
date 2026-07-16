@@ -78,5 +78,16 @@
       "url": "https://www.australiangeographic.com.au/blogs/tim-the-yowie-man/2025/06/wycliffe-well-australias-outback-ufo-hotspot/",
       "note": "Documentación del hotspot UAP regional."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/pine-gap-1966-context.jpg",
+      "type": "image",
+      "title": "Contexto · la instalación de Pine Gap, cerca de Alice Springs (Australia)",
+      "title_en": "Context · the Pine Gap facility, near Alice Springs (Australia)",
+      "source": "Pine Gap by Skyring.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APine%20Gap%20by%20Skyring.jpg"
+    }
   ]
 }

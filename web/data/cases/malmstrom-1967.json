@@ -78,5 +78,16 @@
       "note": "7 military officers including Salas"
     }
   ],
-  "name_en": "Malmstrom ICBM shutdown"
+  "name_en": "Malmstrom ICBM shutdown",
+  "documents": [
+    {
+      "src": "/pursue/malmstrom-1967-context.jpg",
+      "type": "image",
+      "title": "Contexto · la base aérea de Malmstrom (Montana), sede del apagón de misiles Minuteman",
+      "title_en": "Context · Malmstrom Air Force Base (Montana), site of the Minuteman missile shutdown",
+      "source": "Launch Control Facility after construction at Malmstrom AFB, Montana.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALaunch%20Control%20Facility%20after%20construction%20at%20Malmstrom%20AFB%2C%20Montana.jpg"
+    }
+  ]
 }

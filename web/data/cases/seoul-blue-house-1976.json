@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.08,
     "nohumano_abierto": 0.1,
     "indet": 0.22
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/seoul-blue-house-1976-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Casa Azul (Cheong Wa Dae), Seúl",
+      "title_en": "Context · the Blue House (Cheong Wa Dae), Seoul",
+      "source": "Blue House Seoul 3.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABlue%20House%20Seoul%203.jpg"
+    }
+  ]
 }

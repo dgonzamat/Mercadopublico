@@ -73,5 +73,16 @@
     "nohumano_encubierto": 0.015,
     "nohumano_abierto": 0.06,
     "indet": 0.33
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/kumburgaz-2007-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kumburgaz (Estambul), la costa desde donde se grabó el vídeo de 2007",
+      "title_en": "Context · Kumburgaz (Istanbul), the coast from which the 2007 video was recorded",
+      "source": "Sunset Kumburgaz.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASunset%20Kumburgaz.jpg"
+    }
+  ]
 }
