@@ -72,5 +72,16 @@
       "url": "https://disclosure.org/news/1971-australian-ufo-assessment-us-intelligence",
       "note": "Contextualización del documento dentro del ciclo divulgación post-Grusch."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/turner-report-1971-context.jpg",
+      "type": "image",
+      "title": "Contexto · los Russell Offices en Canberra, sede del Departamento de Defensa australiano",
+      "title_en": "Context · the Russell Offices in Canberra, seat of the Australian Department of Defence",
+      "source": "Russell Offices.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ARussell%20Offices.JPG"
+    }
   ]
 }

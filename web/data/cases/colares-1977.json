@@ -74,5 +74,16 @@
       "name": "Stratton, K. & Powell, R. — Colares UAP Event (SCU 2022)",
       "url": "https://www.explorescu.org/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/colares-1977-context.jpg",
+      "type": "image",
+      "title": "Contexto · la costa del Pará (Brasil), región de la Operação Prato en Colares",
+      "title_en": "Context · the Pará coast (Brazil), region of Operação Prato in Colares",
+      "source": "Ilha de Mosqueiro (Mosqueiro Island) - Belém - Pará - Brazil.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AIlha%20de%20Mosqueiro%20(Mosqueiro%20Island)%20-%20Bel%C3%A9m%20-%20Par%C3%A1%20-%20Brazil.jpg"
+    }
   ]
 }

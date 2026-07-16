@@ -65,5 +65,16 @@
       "name": "Unknown Country — 'FOIA Appeal Forces Release of Highly Classified NSA UAP Records' (mayo 2026)",
       "url": "https://unknowncountry.com/headline-news/foia-appeal-forces-release-of-highly-classified-nsa-uap-records/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/nsa-umbra-foia-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · la sede de la NSA en Fort Meade (Maryland)",
+      "title_en": "Context · NSA headquarters at Fort Meade (Maryland)",
+      "source": "National Security Agency headquarters, Fort Meade, Maryland.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ANational%20Security%20Agency%20headquarters%2C%20Fort%20Meade%2C%20Maryland.jpg"
+    }
   ]
 }

@@ -58,5 +58,16 @@
       "name": "CIA CREST — Unidentified Flying Objects Over Morocco and Algeria",
       "url": "https://www.cia.gov/readingroom/docs/DOC_0000015466.pdf"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/algeria-min-defense-1975-context.jpg",
+      "type": "image",
+      "title": "Contexto · Argel (Argelia), sede del Ministerio de Defensa Nacional",
+      "title_en": "Context · Algiers (Algeria), seat of the Ministry of National Defence",
+      "source": "At night in Algiers, Algeria.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAt%20night%20in%20Algiers%2C%20Algeria.jpg"
+    }
   ]
 }

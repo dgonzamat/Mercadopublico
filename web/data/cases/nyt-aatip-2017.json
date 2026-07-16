@@ -54,5 +54,16 @@
       "url": "https://theintercept.com/2019/06/01/ufo-unidentified-history-channel-luis-elizondo-pentagon/",
       "note": "Contrapeso escéptico sobre el rol de Elizondo y el alcance real del AATIP."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/nyt-aatip-2017-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Pentágono (Arlington, Virginia), sede del programa AATIP",
+      "title_en": "Context · the Pentagon (Arlington, Virginia), home of the AATIP programme",
+      "source": "Aerial view of the Pentagon during rescue operations post-September 11 attack.JPEG · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAerial%20view%20of%20the%20Pentagon%20during%20rescue%20operations%20post-September%2011%20attack.JPEG"
+    }
   ]
 }

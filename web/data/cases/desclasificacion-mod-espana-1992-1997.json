@@ -81,5 +81,16 @@
       "name": "Anuario Estadístico del Ejército del Aire — series 1990s",
       "note": "Documentación oficial del MOA con referencias institucionales al proceso."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/desclasificacion-mod-espana-1992-1997-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Base Aérea de Torrejón (Madrid), donde se custodiaron los expedientes OVNI",
+      "title_en": "Context · Torrejón Air Base (Madrid), where the UFO files were kept",
+      "source": "Base Aérea de Torrejón.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABase%20A%C3%A9rea%20de%20Torrej%C3%B3n.jpg"
+    }
   ]
 }
