@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.07,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/fh227-pluna-1975-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Fairchild F-27, del tipo del avión de PLUNA escoltado por la luz",
+      "title_en": "Context · a Fairchild F-27, the type of the PLUNA aircraft escorted by the light",
+      "source": "2024 Milwaukee Air and Water Show 059 (United States Army Golden Knights Parachute Team Fokker F27 Friendship).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3A2024%20Milwaukee%20Air%20and%20Water%20Show%20059%20(United%20States%20Army%20Golden%20Knights%20Parachute%20Team%20Fokker%20F27%20Friendship).jpg"
+    }
+  ]
 }

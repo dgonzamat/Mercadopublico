@@ -78,5 +78,16 @@
       "url": "http://www.ufoevidence.org/Cases/case65.htm",
       "note": "Documentación primaria del caso."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/tully-saucer-nests-1966-context.jpg",
+      "type": "image",
+      "title": "Contexto · Tully (Queensland), cerca de la laguna de los 'nidos de platillo'",
+      "title_en": "Context · Tully (Queensland), near the lagoon of the 'saucer nests'",
+      "source": "Butler Street, Tully, Queensland, 1935.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AButler%20Street%2C%20Tully%2C%20Queensland%2C%201935.jpg"
+    }
   ]
 }

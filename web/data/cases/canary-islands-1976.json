@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.05,
     "indet": 0.23
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/canary-islands-1976-context.jpg",
+      "type": "image",
+      "title": "Contexto · las islas Canarias, sobre las que se vio el fenómeno de junio de 1976",
+      "title_en": "Context · the Canary Islands, over which the June 1976 phenomenon was seen",
+      "source": "Pajara (Fuerteventura, Spain), Mirador Astronómico de Sicasumbre, Ausblick -- 2025 -- 7140.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APajara%20(Fuerteventura%2C%20Spain)%2C%20Mirador%20Astron%C3%B3mico%20de%20Sicasumbre%2C%20Ausblick%20--%202025%20--%207140.jpg"
+    }
+  ]
 }

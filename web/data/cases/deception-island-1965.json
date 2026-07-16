@@ -56,5 +56,16 @@
       "url": "https://en.wikipedia.org/wiki/Deception_Island#UFO_sighting",
       "note": "Síntesis del registro tri-nacional y del comunicado argentino."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/deception-island-1965-context.jpg",
+      "type": "image",
+      "title": "Contexto · isla Decepción (Antártida), la caldera volcánica donde tres bases vieron el objeto",
+      "title_en": "Context · Deception Island (Antarctica), the volcanic caldera where three bases saw the object",
+      "source": "Deception Island (195760163).jpeg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADeception%20Island%20(195760163).jpeg"
+    }
   ]
 }

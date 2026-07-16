@@ -70,5 +70,16 @@
       "url": "http://www.greenwoodufoarchive.com/uhr/uhr16.pdf",
       "note": "Análisis de la fotografía asociada al caso."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/kilimanjaro-1951-context.jpg",
+      "type": "image",
+      "title": "Contexto · el monte Kilimanjaro (Tanzania), sobre el que la tripulación de EAA observó el objeto",
+      "title_en": "Context · Mount Kilimanjaro (Tanzania), over which the EAA crew observed the object",
+      "source": "Kilimanjaro, Tanzania, 2024-05-22, DD 110.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKilimanjaro%2C%20Tanzania%2C%202024-05-22%2C%20DD%20110.jpg"
+    }
   ]
 }

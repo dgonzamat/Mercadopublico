@@ -60,5 +60,16 @@
       "note": "Confirmación independiente francesa"
     }
   ],
-  "name_en": "Trindade Island"
+  "name_en": "Trindade Island",
+  "documents": [
+    {
+      "src": "/pursue/trindade-1958-context.jpg",
+      "type": "image",
+      "title": "Contexto · la isla de Trindade (Brasil), donde el buque escuela fotografió el objeto",
+      "title_en": "Context · Trindade Island (Brazil), where the training ship photographed the object",
+      "source": "Simone Marinho - Trindade - 2010 05 08 edited.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASimone%20Marinho%20-%20Trindade%20-%202010%2005%2008%20edited.jpg"
+    }
+  ]
 }

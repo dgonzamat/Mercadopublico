@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.12,
     "nohumano_abierto": 0.01,
     "indet": 0.22
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/bob-lazar-s4-1989-context.jpg",
+      "type": "image",
+      "title": "Contexto · Área 51 / Groom Lake (Nevada), cerca del alegado sitio S-4 de Bob Lazar",
+      "title_en": "Context · Area 51 / Groom Lake (Nevada), near Bob Lazar's alleged S-4 site",
+      "source": "Groom Lake, Area 51, North of Las Vegas, Nevada (17576998524).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGroom%20Lake%2C%20Area%2051%2C%20North%20of%20Las%20Vegas%2C%20Nevada%20(17576998524).jpg"
+    }
+  ]
 }

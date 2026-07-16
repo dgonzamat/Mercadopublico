@@ -65,5 +65,16 @@
       "url": "https://unsolvedmysteries.fandom.com/wiki/Mexico_City_UFO",
       "note": "Cronología del avistamiento, el papel de Arreola y Maussan y el número de videógrafos."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/mexico-eclipse-1991-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Zócalo de Ciudad de México, bajo el eclipse total del 11 de julio de 1991",
+      "title_en": "Context · the Zócalo of Mexico City, under the 11 July 1991 total eclipse",
+      "source": "Monumental Flag, Zocalo, Mexico 20250907 p1.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMonumental%20Flag%2C%20Zocalo%2C%20Mexico%2020250907%20p1.jpg"
+    }
   ]
 }
