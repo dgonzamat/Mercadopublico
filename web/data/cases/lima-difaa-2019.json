@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.07,
     "indet": 0.35
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/lima-difaa-2019-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto Jorge Chávez (Lima, Perú), donde ocurrió el doble avistamiento",
+      "title_en": "Context · Jorge Chávez Airport (Lima, Peru), site of the double sighting",
+      "source": "Aeropuerto Internacional Jorge Chávez en 2024.jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAeropuerto%20Internacional%20Jorge%20Ch%C3%A1vez%20en%202024.jpg"
+    }
+  ]
 }

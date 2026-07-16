@@ -62,5 +62,16 @@
       "url": "https://www.historicmysteries.com/unexplained-mysteries/kofu-ufo/33422/",
       "note": "Síntesis del caso y la explicación oficial (YS-11)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/kofu-japan-1975-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kōfu (Yamanashi, Japón), donde dos niños reportaron el encuentro",
+      "title_en": "Context · Kōfu (Yamanashi, Japan), where two children reported the encounter",
+      "source": "Kofu montage.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKofu%20montage.jpg"
+    }
   ]
 }

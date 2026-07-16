@@ -58,5 +58,16 @@
       "note": "Grabaciones piloto-controlador de la noche del 19/05/1986.",
       "note_en": "Pilot-controller recordings from the night of 19 May 1986."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/noite-oficial-1986-context.jpg",
+      "type": "image",
+      "title": "Contexto · São José dos Campos (Brasil), desde donde despegaron los cazas en la 'Noite Oficial'",
+      "title_en": "Context · São José dos Campos (Brazil), from where the fighters scrambled on the 'Official Night'",
+      "source": "Pararangaba River - Eugênio de Melo - São José dos Campos - Brazil.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APararangaba%20River%20-%20Eug%C3%AAnio%20de%20Melo%20-%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20Brazil.jpg"
+    }
   ]
 }
