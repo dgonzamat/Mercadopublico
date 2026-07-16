@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.06,
     "nohumano_abierto": 0.13,
     "indet": 0.33
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/pascagoula-1973-context.jpg",
+      "type": "image",
+      "title": "Contexto · Pascagoula (Misisipi), a orillas del río donde ocurrió la abducción reportada",
+      "title_en": "Context · Pascagoula (Mississippi), by the river where the reported abduction occurred",
+      "source": "East Pascagoula River Light.JPG · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEast%20Pascagoula%20River%20Light.JPG"
+    }
+  ]
 }

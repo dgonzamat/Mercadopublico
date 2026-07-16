@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.12,
     "nohumano_abierto": 0.11,
     "indet": 0.32
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/falconbridge-norad-1975-context.jpg",
+      "type": "image",
+      "title": "Contexto · Falconbridge (Sudbury, Ontario), sede de la estación de radar de NORAD",
+      "title_en": "Context · Falconbridge (Sudbury, Ontario), site of the NORAD radar station",
+      "source": "Sudbury fullsizeoutput 324a (30570597098).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASudbury%20fullsizeoutput%20324a%20(30570597098).jpg"
+    }
+  ]
 }

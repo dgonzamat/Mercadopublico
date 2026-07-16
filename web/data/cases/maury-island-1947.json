@@ -61,5 +61,16 @@
       "url": "https://www.historylink.org/File/2068",
       "note": "Reseña histórica documentada del estado de Washington."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/maury-island-1947-context.jpg",
+      "type": "image",
+      "title": "Contexto · Maury Island (Puget Sound, Washington)",
+      "title_en": "Context · Maury Island (Puget Sound, Washington)",
+      "source": "Des Moines, Washington with Puget Sounds and Maury and Vashon Island (1292124062).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADes%20Moines%2C%20Washington%20with%20Puget%20Sounds%20and%20Maury%20and%20Vashon%20Island%20(1292124062).jpg"
+    }
   ]
 }

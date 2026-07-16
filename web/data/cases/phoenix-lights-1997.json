@@ -73,5 +73,16 @@
       "name": "Kitei, L. — The Phoenix Lights (2010)",
       "note": "Witness compilation by a local physician"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/phoenix-lights-1997-context.jpg",
+      "type": "image",
+      "title": "Contexto · Phoenix (Arizona), sobre cuya área metropolitana se vieron las luces de 1997",
+      "title_en": "Context · Phoenix (Arizona), over whose metro area the 1997 lights were seen",
+      "source": "Downtown Phoenix Skyline Lights.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADowntown%20Phoenix%20Skyline%20Lights.jpg"
+    }
   ]
 }
