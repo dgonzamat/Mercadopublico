@@ -16,7 +16,7 @@ import { STATS } from "@/lib/siteStats";
 export const metadata = pageMeta({
   title: "Metodología — cómo se pesa la evidencia",
   description:
-    "Cómo se pesa la evidencia: tres niveles de fuerza probatoria (Tier S/A/B), retornos decrecientes por caso, y por qué las seis narrativas reparten el 100% de forma comparable.",
+    "Cómo se pesa la evidencia: tres niveles probatorios (Tier S/A/B), retornos decrecientes por caso, y por qué las seis narrativas son comparables.",
   path: "/about/",
 });
 

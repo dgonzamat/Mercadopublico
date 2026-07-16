@@ -10,7 +10,7 @@ import { AnalyzerCta } from "@/components/AnalyzerCta";
 export const metadata = pageMeta({
   title: "Probabilidades por explicación (modelo MECE)",
   description:
-    "Distribución comparable sobre narrativas mutuamente excluyentes (objeto + postura institucional): cada caso reparte 100% entre seis narrativas; el corpus las reparte de forma comparable. Preserva las hipótesis del marco anterior.",
+    "Seis narrativas mutuamente excluyentes (objeto + postura institucional): cada caso UAP reparte el 100% y el corpus las agrega de forma comparable (modelo MECE).",
   path: "/probabilidades/",
 });
 
