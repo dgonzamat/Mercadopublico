@@ -1,8 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type Locale = "es" | "en";
+
+/** ¿Estamos en una ruta del árbol inglés (/en o /en/…)? */
+function isEnRoute(pathname: string | null): boolean {
+  return pathname === "/en" || (pathname?.startsWith("/en/") ?? false);
+}
 
 /**
  * EN/ES toggle. Sets `[data-locale]` on the html element, persists in
@@ -45,6 +51,7 @@ export function LocaleToggle({
   variant?: keyof typeof VARIANT;
   dark?: boolean;
 }) {
+  const pathname = usePathname();
   const [locale, setLocale] = useState<Locale>("es");
   // Dark header (Home hero overlay): cream chrome + accent-bright active span.
   const chrome =
@@ -55,14 +62,20 @@ export function LocaleToggle({
   const sepColor = dark ? "text-bg/40" : "text-muted";
 
   useEffect(() => {
+    // En el árbol /en/ el idioma lo fija la URL (inglés), y así el chrome
+    // (header/footer del root layout, fuera del wrapper data-locale de
+    // app/en/layout) también se muestra en inglés. Fuera de /en/, gana la
+    // elección explícita (localStorage) y si no, la autodetección.
     const stored = localStorage.getItem("locale") as Locale | null;
-    const initial: Locale = stored ?? detectLocale();
-    // Locale leído de localStorage/navegador en mount (no disponible en SSR).
+    const initial: Locale = isEnRoute(pathname)
+      ? "en"
+      : (stored ?? detectLocale());
+    // Locale derivado en mount / al navegar (no disponible en SSR).
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLocale(initial);
     document.documentElement.dataset.locale = initial;
     document.documentElement.lang = initial;
-  }, []);
+  }, [pathname]);
 
   function toggle() {
     const next: Locale = locale === "es" ? "en" : "es";

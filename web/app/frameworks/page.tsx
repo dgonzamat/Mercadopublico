@@ -1,14 +1,17 @@
 import { frameworks } from "@/lib/data";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
-export const metadata = pageMeta({
+export const metadata = {
+  ...pageMeta({
   title: "Marcos teóricos comparados",
   description: `${STATS.frameworks} marcos teóricos serios sobre el fenómeno UAP, comparados por poder explicativo y evidencia.`,
   path: "/frameworks/",
-});
+}),
+  alternates: { canonical: "/frameworks/", languages: hreflangFor("/frameworks/") },
+};
 
 const verdictColor: Record<string, string> = {
   neutral: "text-tierB",
