@@ -65,5 +65,16 @@
       "name": "Project Blue Book File — RB-47 Case",
       "url": "https://www.archives.gov/research/military/air-force/ufos"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/rb47-1957-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Boeing RB-47, el tipo de avión del encuentro ECM de 1957",
+      "title_en": "Context · a Boeing RB-47, the aircraft type of the 1957 ECM encounter",
+      "source": "Strategic Air Command B-47 Stratojets - 020903-o-9999r-001.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AStrategic%20Air%20Command%20B-47%20Stratojets%20-%20020903-o-9999r-001.jpg"
+    }
   ]
 }

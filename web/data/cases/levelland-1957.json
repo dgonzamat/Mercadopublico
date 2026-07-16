@@ -72,5 +72,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.25,
     "indet": 0.28
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/levelland-1957-context.jpg",
+      "type": "image",
+      "title": "Contexto · Levelland (Texas), donde el objeto detuvo los motores de varios vehículos",
+      "title_en": "Context · Levelland (Texas), where the object stalled several vehicles",
+      "source": "Levelland Texas 2024 streets (28).jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALevelland%20Texas%202024%20streets%20(28).jpg"
+    }
+  ]
 }

@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.12,
     "nohumano_abierto": 0.13,
     "indet": 0.38
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/ellsworth-afb-1953-context.jpg",
+      "type": "image",
+      "title": "Contexto · Base Aérea de Ellsworth (Dakota del Sur)",
+      "title_en": "Context · Ellsworth Air Force Base (South Dakota)",
+      "source": "Ellsworth Air Force Base - 3Apr1997.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEllsworth%20Air%20Force%20Base%20-%203Apr1997.jpg"
+    }
+  ]
 }
