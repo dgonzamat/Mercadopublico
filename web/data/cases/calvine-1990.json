@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.07,
     "nohumano_abierto": 0.02,
     "indet": 0.34
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/calvine-1990-context.jpg",
+      "type": "image",
+      "title": "Contexto · Pitlochry (Perthshire, Escocia), cerca de donde se tomó la fotografía de Calvine",
+      "title_en": "Context · Pitlochry (Perthshire, Scotland), near where the Calvine photograph was taken",
+      "source": "Pitlochry, Perthshire (50248925367).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APitlochry%2C%20Perthshire%20(50248925367).jpg"
+    }
+  ]
 }

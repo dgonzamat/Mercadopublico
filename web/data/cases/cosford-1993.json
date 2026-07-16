@@ -58,5 +58,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.03,
     "indet": 0.23
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/cosford-1993-context.jpg",
+      "type": "image",
+      "title": "Contexto · RAF Cosford (Shropshire, Inglaterra)",
+      "title_en": "Context · RAF Cosford (Shropshire, England)",
+      "source": "RAF Cosford - Vickers VC10 - geograph.org.uk - 5047934.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ARAF%20Cosford%20-%20Vickers%20VC10%20-%20geograph.org.uk%20-%205047934.jpg"
+    }
+  ]
 }
