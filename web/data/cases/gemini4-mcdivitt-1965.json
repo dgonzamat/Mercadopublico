@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.05,
     "indet": 0.38
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/NASA-Gemini4-GT4-EarthSky-OuterSpace-1965.jpg",
+      "type": "image",
+      "title": "Gemini 4 · fotografía de la misión (GT-4, cielo y espacio exterior, junio de 1965)",
+      "title_en": "Gemini 4 · mission photograph (GT-4, Earth-sky and outer space, June 1965)",
+      "source": "NASA · imagen s65-34776 (dominio público)",
+      "license": "Dominio público · NASA / US Government work",
+      "fallbackUrl": "https://images.nasa.gov/details/s65-34776"
+    }
+  ]
 }
