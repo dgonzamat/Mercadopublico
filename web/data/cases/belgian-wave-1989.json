@@ -80,5 +80,16 @@
     "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0.12,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/belgian-wave-1989-context.jpg",
+      "type": "image",
+      "title": "Contexto · un F-16 de la Fuerza Aérea Belga, del tipo que interceptó durante la oleada",
+      "title_en": "Context · a Belgian Air Force F-16, of the type that scrambled during the wave",
+      "source": "Belgian Air Force General Dynamics F-16BM Fighting Falcon FB-24 Royal International Air Tattoo 2025 01.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABelgian%20Air%20Force%20General%20Dynamics%20F-16BM%20Fighting%20Falcon%20FB-24%20Royal%20International%20Air%20Tattoo%202025%2001.jpg"
+    }
+  ]
 }

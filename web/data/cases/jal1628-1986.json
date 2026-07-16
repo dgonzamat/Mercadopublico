@@ -74,5 +74,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.09,
     "indet": 0.24
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/jal1628-1986-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto de Anchorage (Alaska), destino del vuelo JAL 1628",
+      "title_en": "Context · Anchorage airport (Alaska), destination of JAL flight 1628",
+      "source": "Anchorage International Airport and Cook Inlet.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAnchorage%20International%20Airport%20and%20Cook%20Inlet.jpg"
+    }
+  ]
 }

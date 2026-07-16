@@ -67,5 +67,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.16,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/robert-taylor-livingston-1979-context.jpg",
+      "type": "image",
+      "title": "Contexto · Livingston (Escocia), donde Robert Taylor tuvo el encuentro de Dechmont Law",
+      "title_en": "Context · Livingston (Scotland), site of Robert Taylor's Dechmont Law encounter",
+      "source": "Livingston North railway station, West Lothian - geograph.org.uk - 3707656.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALivingston%20North%20railway%20station%2C%20West%20Lothian%20-%20geograph.org.uk%20-%203707656.jpg"
+    }
+  ]
 }

@@ -64,5 +64,16 @@
       "name": "Ukrainian Canadian / National Post — retrospectivas del caso Fuhr",
       "url": "https://nationalpost.com/news/canada"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/langenburg-1974-context.jpg",
+      "type": "image",
+      "title": "Contexto · Langenburg (Saskatchewan, Canadá)",
+      "title_en": "Context · Langenburg (Saskatchewan, Canada)",
+      "source": "Langenburg Saskatchewan crossing.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALangenburg%20Saskatchewan%20crossing.jpg"
+    }
   ]
 }

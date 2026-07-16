@@ -56,5 +56,16 @@
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.09,
     "indet": 0.37
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/nash-fortenberry-1952-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Douglas DC-4 de Pan American, el tipo de avión del avistamiento de Norfolk",
+      "title_en": "Context · a Pan American Douglas DC-4, the aircraft type of the Norfolk sighting",
+      "source": "Pan American World Airways - Pan Am McDonnell Douglas DC-10-10 N69NA.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APan%20American%20World%20Airways%20-%20Pan%20Am%20McDonnell%20Douglas%20DC-10-10%20N69NA.jpg"
+    }
+  ]
 }

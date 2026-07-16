@@ -56,5 +56,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.07,
     "indet": 0.29
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/air-france-3532-1994-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Airbus A320, el tipo de avión del vuelo Air France 3532",
+      "title_en": "Context · an Airbus A320, the aircraft type of Air France flight 3532",
+      "source": "Lufthansa Airbus A320-211 D-AIQT 01.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALufthansa%20Airbus%20A320-211%20D-AIQT%2001.jpg"
+    }
+  ]
 }

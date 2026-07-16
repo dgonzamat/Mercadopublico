@@ -78,5 +78,16 @@
       "name": "Planvex — 'José Manuel Trejo, principal testigo del caso OVNI de Talavera la Real' (2017)",
       "url": "https://planvex.es/web/2017/08/humanoide-talavera-la-real/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/talavera-la-real-1976-context.jpg",
+      "type": "image",
+      "title": "Contexto · Talavera la Real (Badajoz, España)",
+      "title_en": "Context · Talavera la Real (Badajoz, Spain)",
+      "source": "Base Aerea - Talavera la Real.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABase%20Aerea%20-%20Talavera%20la%20Real.JPG"
+    }
   ]
 }

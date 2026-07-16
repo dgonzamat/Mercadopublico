@@ -60,5 +60,16 @@
     "nohumano_encubierto": 0.17,
     "nohumano_abierto": 0.11,
     "indet": 0.27
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/vranov-dyji-1987-context.jpg",
+      "type": "image",
+      "title": "Contexto · un helicóptero Mil Mi-24, el tipo implicado en el incidente de Vranov nad Dyjí",
+      "title_en": "Context · a Mil Mi-24 helicopter, the type involved in the Vranov nad Dyjí incident",
+      "source": "Czech Air Force Mil Mi-24 Hind 3362 - Radom Air Show - 20180825 0926 4675 DxO.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACzech%20Air%20Force%20Mil%20Mi-24%20Hind%203362%20-%20Radom%20Air%20Show%20-%2020180825%200926%204675%20DxO.jpg"
+    }
+  ]
 }
