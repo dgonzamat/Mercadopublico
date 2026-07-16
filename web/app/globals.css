@@ -87,10 +87,14 @@ a {
 [data-lang="en"] {
   display: none;
 }
-html[data-locale="en"] [data-lang="en"] {
+/* Ancla en cualquier ancestro con [data-locale="en"], no solo <html>: el
+   toggle cliente lo pone en <html> (árbol ES en la raíz), y las rutas /en/
+   lo fijan server-side en un wrapper (app/en/layout.tsx) para servir inglés
+   estático sin JS. `html` sigue matcheando como ancestro → sin regresión. */
+[data-locale="en"] [data-lang="en"] {
   display: revert;
 }
-html[data-locale="en"] [data-lang="es"] {
+[data-locale="en"] [data-lang="es"] {
   display: none;
 }
 
