@@ -1,0 +1,76 @@
+{
+  "id": "vietnam-dmz-1968",
+  "num": 326,
+  "name": "Zona Desmilitarizada de Vietnam · las luces de la DMZ y el fuego amigo de junio de 1968",
+  "name_en": "Vietnam DMZ · the June 1968 lights and friendly-fire incident",
+  "year_start": 1968,
+  "country": "VN",
+  "country_name": "Vietnam",
+  "flag": "🇻🇳",
+  "location": {
+    "lat": 17.15,
+    "lng": 107.36,
+    "place": "Zona Desmilitarizada (DMZ) e isla del Tigre, costa central de Vietnam",
+    "place_en": "Demilitarized Zone (DMZ) and Tiger Island, central Vietnam coast"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 22,
+  "patterns": ["8g", "8s"],
+  "posterior": {
+    "mundano_natural": 0.60,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.20,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.05,
+    "indet": 0.12
+  },
+  "summary": "Durante la primavera de 1968 los infantes de marina de EE.UU. reportaron luces suspendidas de noche sobre la Zona Desmilitarizada vietnamita y el mar frente a la isla del Tigre; la noche del 15-16 de junio, unas 30 luces lentas desataron una alarma de incursión. La respuesta aliada degeneró en fuego amigo: los cazas F-4 Phantom hundieron la lancha PCF-19 y alcanzaron a los cruceros USS Boston y HMAS Hobart, con muertos. La investigación naval lo atribuyó a confusión de radar y misidentificación.",
+  "summary_en": "Through the spring of 1968 U.S. Marines reported hovering night-time lights over the Vietnamese Demilitarized Zone and the sea off Tiger Island; on the night of 15-16 June some 30 slow lights triggered an incursion alarm. The Allied response degenerated into friendly fire: F-4 Phantom fighters sank the swift boat PCF-19 and struck the cruisers USS Boston and HMAS Hobart, with fatalities. The naval inquiry blamed radar confusion and misidentification.",
+  "whatHappened": "A lo largo de la primavera de 1968, observadores de la Infantería de Marina de EE.UU. y otros puestos avanzados a lo largo de la Zona Desmilitarizada (DMZ) —la franja de unos 9,6 km que separaba el norte y el sur de Vietnam— venían reportando «luces» suspendidas que aparecían de noche justo al norte de la zona e incluso sobre el mar, entre Vietnam del Norte y la isla del Tigre (en manos norvietnamitas). Con el humor negro habitual de la tropa, esos contactos se apodaban «OVNIs». El contexto era el año de la Ofensiva del Tet: cualquier señal de concentración de fuerzas al otro lado de la frontera se leía como preludio de un ataque.\n\nLa noche del 15 al 16 de junio la alarma se disparó. Observadores aliados en el sector oriental de la DMZ describieron cerca de 30 luces lentas moviéndose en el cielo nocturno; la interpretación inmediata fue que se trataba de helicópteros norvietnamitas M-14 'Hound', de fabricación soviética, transportando hombres y material sobre la frontera. Temiendo otra concentración al estilo del Tet, el Mando Aliado envió más cañones antiaéreos a la frontera, puso en alerta a cazabombarderos F-4 Phantom en la base aérea de Da Nang y pidió a los buques de guerra disponibles que patrullaran la costa de la DMZ.\n\nLo que siguió fue una cascada de fuego amigo. Poco después de la medianoche, la lancha rápida PCF-19 de la Armada estadounidense fue alcanzada por dos cohetes disparados desde una fuente no identificada y se hundió en minutos; cinco de sus siete tripulantes murieron, y el guardacostas USCGC Point Dume rescató a dos supervivientes malheridos antes de recibir ella misma fuego de una aeronave no identificada. La noche del 16 al 17 de junio, el crucero USS Boston (CA-69) resultó dañado por la metralla de misiles aire-aire caídos cerca y por fuego automático; y frente a la isla del Tigre, el destructor australiano HMAS Hobart, tras detectar una aeronave evaluada como «amiga» que siguió acercándose, fue alcanzado por misiles que penetraron su costado de estribor, mataron a dos marineros —entre ellos el jefe electricista R. J. Hunt— e hirieron a varios más.\n\nLa Junta de Investigación de la Armada de EE.UU., que examinó el caso también para el gobierno australiano, recuperó fragmentos de misiles aire-aire Sparrow estadounidenses y concluyó que quienes habían atacado a los buques eran, por error, cazas F-4 Phantom de la Fuerza Aérea de EE.UU. Un factor técnico clave: para evitar que los blancos grandes saturaran la pantalla, el radar del Phantom tenía un mecanismo de corte, de modo que el eco de un buque de guerra y el de un helicóptero lento y bajo podían verse casi iguales. Registros de la USAF y la USN confirman la «actividad OVNI» que precedió a los ataques; el detonante fueron las luces, pero las muertes las causó el fuego propio.",
+  "whatHappened_en": "Through the spring of 1968, U.S. Marine Corps observers and other forward posts along the Demilitarized Zone (DMZ) —the roughly 9.6 km strip separating North and South Vietnam— had been reporting hovering «lights» that appeared at night just north of the zone and even out over the water between North Vietnam and Tiger Island (held by the North Vietnamese). In the troops' habitual black humour, these contacts were nicknamed «UFOs». The context was the year of the Tet Offensive: any sign of a build-up across the border read as the prelude to an attack.\n\nOn the night of 15-16 June the alarm went off. Allied observers in the eastern sector of the DMZ described about 30 slow lights moving in the night sky; the immediate reading was that these were North Vietnamese Soviet-built M-14 'Hound' helicopters ferrying men and materiel across the border. Fearing another Tet-style build-up, Allied Command rushed more anti-aircraft guns to the border, placed F-4 Phantom fighter-bombers on standby at Da Nang air base, and asked available warships to patrol the DMZ coast.\n\nWhat followed was a cascade of friendly fire. Shortly after midnight, the U.S. Navy swift boat PCF-19 was hit by two rockets fired from an unidentified source and sank within minutes; five of its seven crew died, and the cutter USCGC Point Dume pulled two badly wounded survivors from the water before itself coming under fire from an unidentified aircraft. On the night of 16-17 June, the cruiser USS Boston (CA-69) was damaged by shrapnel from near-miss air-to-air missiles and by automatic-weapons fire; and off Tiger Island the Australian destroyer HMAS Hobart, after detecting an aircraft evaluated as «friendly» that kept closing, was struck by missiles that penetrated her starboard side, killed two sailors —among them Chief Electrician R. J. Hunt— and wounded several more.\n\nThe U.S. Navy Board of Inquiry, which examined the case for the Australian government too, recovered fragments of American Sparrow air-to-air missiles and concluded that the ships had been attacked, by mistake, by U.S. Air Force F-4 Phantoms. One technical factor was decisive: to stop large targets flooding the scope, the Phantom's radar had a cut-off mechanism, so the return from a warship and that of a slow, low-flying helicopter could look nearly identical. USAF and USN records confirm the «UFO activity» that preceded the attacks; the lights were the trigger, but the deaths were caused by friendly fire.",
+  "whyMatters": "El caso importa por dos razones distintas. La primera es de cobertura: Vietnam no tenía ningún caso en el corpus y la década de 1960 asiática estaba rala; este episodio la ancla en un teatro de guerra con documentación oficial de primera mano (la investigación de la Armada de EE.UU. y los H-grams de la Naval History and Heritage Command).\n\nLa segunda es analítica, y es la que lo hace valioso más allá del exotismo. Este no es un caso donde la pregunta interesante sea «¿qué eran las luces?» —la respuesta más probable es prosaica: helicópteros norvietnamitas reales, ecos de radar ambiguos, inversiones de propagación, o una mezcla— sino un estudio de manual de cómo la ambigüedad de un fenómeno aéreo no identificado se convierte en letal en un entorno de combate. Las «luces» fueron el detonante, pero las muertes las causó el fuego amigo: cazas F-4 propios disparando contra blancos que su radar no podía distinguir de un buque. El corpus recoge una y otra vez esta cadena —contacto radar-visual ambiguo → respuesta armada → identificación equivocada— y la DMZ de 1968 es su expresión más trágica, con una lancha hundida, dos cruceros alcanzados y varios muertos.\n\nPor eso el reparto MECE no colapsa a «puro error». La mayor parte de la probabilidad va a lo mundano (misidentificación y anomalías de radar), pero una fracción sustancial va a la narrativa adversaria: la hipótesis contemporánea oficial —incursiones reales de helicópteros o aeronaves norvietnamitas— es tecnología de otro Estado y era plausible en ese frente. Queda un residuo menor de fenómeno genuinamente anómalo (las luces suspendidas sobre la isla del Tigre que se repitieron durante semanas nunca se fijaron del todo) y una indeterminación honesta. Es tier B: militar-documentado y bien explicado por candidatos prosaicos, significativo no como prueba de anomalía sino como caso testigo del peligro operacional de la ambigüedad UAP.",
+  "whyMatters_en": "The case matters for two distinct reasons. The first is coverage: Vietnam had no case in the corpus and the 1960s in Asia were thin; this episode anchors it in a war theatre with first-hand official documentation (the U.S. Navy inquiry and the Naval History and Heritage Command H-grams).\n\nThe second is analytical, and it is what makes the case valuable beyond the exotic. This is not a case where the interesting question is «what were the lights?» —the most likely answer is prosaic: real North Vietnamese helicopters, ambiguous radar returns, propagation inversions, or a mix— but a textbook study of how the ambiguity of an unidentified aerial phenomenon turns lethal in a combat environment. The «lights» were the trigger, but the deaths were caused by friendly fire: own F-4 fighters shooting at targets their radar could not tell apart from a warship. The corpus records this chain again and again —ambiguous radar-visual contact → armed response → mistaken identification— and the 1968 DMZ is its most tragic expression, with a boat sunk, two cruisers struck and several dead.\n\nThat is why the MECE split does not collapse to «pure error». Most of the probability goes to the mundane (misidentification and radar anomalies), but a substantial fraction goes to the adversary narrative: the contemporaneous official hypothesis —genuine incursions by North Vietnamese helicopters or aircraft— is another state's technology and was plausible on that front. A smaller residue is left for a genuinely anomalous phenomenon (the hovering lights over Tiger Island that recurred for weeks were never fully pinned down) and for honest indeterminacy. It is tier B: militarily documented and well explained by prosaic candidates, significant not as evidence of anomaly but as a witness case to the operational danger of UAP ambiguity.",
+  "evidence": [
+    "Reportes recurrentes de infantes de marina de EE.UU. durante la primavera de 1968 sobre luces suspendidas de noche al norte de la DMZ y sobre el mar frente a la isla del Tigre, apodadas «OVNIs» por la tropa.",
+    "Noche del 15-16 de junio de 1968: unas 30 luces lentas sobre el sector oriental de la DMZ, interpretadas como helicópteros norvietnamitas M-14 'Hound'.",
+    "Respuesta aliada: refuerzo de cañones antiaéreos en la frontera, cazas F-4 Phantom en alerta en Da Nang y buques de guerra patrullando la costa de la DMZ.",
+    "Hundimiento de la lancha rápida PCF-19 por dos cohetes de fuente no identificada; 5 de 7 tripulantes muertos; el USCGC Point Dume rescató a dos supervivientes y luego recibió fuego.",
+    "Daños al crucero USS Boston (CA-69) e impacto de misiles Sparrow sobre el HMAS Hobart frente a la isla del Tigre: 2 muertos (incl. el jefe electricista R. J. Hunt) y varios heridos.",
+    "Junta de Investigación de la Armada de EE.UU.: fragmentos de misiles aire-aire Sparrow estadounidenses → los atacantes fueron cazas F-4 Phantom de la USAF por error; el mecanismo de corte del radar del Phantom confundía el eco de un buque con el de un helicóptero lento.",
+    "Registros de la USAF y la USN que confirman la «actividad OVNI» previa a los ataques (documentos desclasificados de la era de Vietnam)."
+  ],
+  "evidence_en": [
+    "Recurring reports by U.S. Marines through the spring of 1968 of hovering night-time lights north of the DMZ and over the sea off Tiger Island, nicknamed «UFOs» by the troops.",
+    "Night of 15-16 June 1968: about 30 slow lights over the eastern sector of the DMZ, interpreted as North Vietnamese M-14 'Hound' helicopters.",
+    "Allied response: reinforcement of anti-aircraft guns at the border, F-4 Phantom fighters on standby at Da Nang, and warships patrolling the DMZ coast.",
+    "Sinking of the swift boat PCF-19 by two rockets from an unidentified source; 5 of 7 crew killed; USCGC Point Dume rescued two survivors and then came under fire.",
+    "Damage to the cruiser USS Boston (CA-69) and Sparrow-missile hits on HMAS Hobart off Tiger Island: 2 dead (incl. Chief Electrician R. J. Hunt) and several wounded.",
+    "U.S. Navy Board of Inquiry: fragments of American Sparrow air-to-air missiles → the attackers were USAF F-4 Phantoms by mistake; the Phantom radar's cut-off mechanism confused a warship's return with a slow helicopter's.",
+    "USAF and USN records confirming the «UFO activity» preceding the attacks (declassified Vietnam-era documents)."
+  ],
+  "sources": [
+    {
+      "name": "Naval History and Heritage Command, H-Gram 019-1: «Swift Boat Disappearance» (PCF-19 y el incidente de la DMZ, junio de 1968)",
+      "url": "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-019/h-019-1.html",
+      "note": "Fuente oficial de la Armada de EE.UU. sobre el hundimiento de la PCF-19 y el fuego amigo sobre Boston y Hobart."
+    },
+    {
+      "name": "Project 1947, UFO Historical Revue #14: «Air Force UFO Documents, Vietnam Era — HMAS Hobart»",
+      "url": "http://www.project1947.com/articles/hobart.htm",
+      "note": "Documentos de la USAF de la era de Vietnam sobre la 'actividad OVNI' asociada al incidente del Hobart."
+    },
+    {
+      "name": "Royal Australian Navy — «Hobart UFOs» (memorando de veteranos de la RAN)",
+      "url": "https://www.ranveteranswelfare.asn.au/news/Message%20Board/Hobart%20UFOs.pdf",
+      "note": "Relato australiano del impacto sobre el HMAS Hobart y sus bajas."
+    },
+    {
+      "name": "«Navy ship HMAS Hobart hit during Vietnam UFO encounter?» — UFO Evidence (archivo del caso, DMZ, 15 jun 1968)",
+      "url": "http://www.ufoevidence.org/cases/case60.htm",
+      "note": "Compilación de la cronología del episodio de la DMZ."
+    }
+  ]
+}
