@@ -1,0 +1,75 @@
+{
+  "id": "malaysia-tiny-humanoids-1970",
+  "num": 325,
+  "name": "Oleada de humanoides diminutos de Malasia",
+  "name_en": "Malaysia's tiny-humanoid wave",
+  "year_start": 1970,
+  "year_end": 1979,
+  "country": "MY",
+  "country_name": "Malasia",
+  "flag": "🇲🇾",
+  "location": {
+    "lat": 5.3626,
+    "lng": 100.4661,
+    "place": "Bukit Mertajam, Penang (y península malaya)",
+    "place_en": "Bukit Mertajam, Penang (and peninsular Malaysia)"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 20,
+  "patterns": ["8a", "8g", "8h"],
+  "posterior": {
+    "mundano_natural": 0.72,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.10,
+    "indet": 0.14
+  },
+  "summary": "Oleada de avistamientos de humanoides diminutos —de apenas unos centímetros— reportados sobre todo por escolares en la península malaya entre 1970 y 1979. Un recuento de prensa contó, en tres días de agosto de 1970, no menos de 39 OVNIs diminutos y 31 relatos de ocupantes de tres pulgadas. Sistematizada por Ahmad Jamaludin («Flying Saucer Review»; CUFOS, 1981).",
+  "summary_en": "A wave of tiny-humanoid sightings —only a few centimetres tall— reported mostly by schoolchildren across peninsular Malaysia between 1970 and 1979. Over three days in August 1970 a press count logged no fewer than 39 tiny UFOs and 31 reports of three-inch occupants. Catalogued by Ahmad Jamaludin (Flying Saucer Review; CUFOS, 1981).",
+  "whatHappened": "En el verano de 1970, en Johor Bahru, cuatro escolares dijeron haber visto un objeto plateado del tamaño de un plato posarse en el suelo y liberar a cinco figuras humanoides de apenas unos centímetros de altura, vestidas con trajes rojizos de una pieza. Los seres se metieron por un agujero y el objeto desapareció, dejando un pequeño parche de hierba quemada. Los niños se lo contaron a su director y, en cuestión de semanas, la costa occidental de la península malaya se llenó de relatos casi idénticos.\n\nEl episodio más citado ocurrió el 19 de agosto de 1970 en la escuela primaria Stowell de Bukit Mertajam, en el estado de Penang. Un grupo de alumnos describió a cinco «hombrecitos» de unos ocho centímetros que bajaban por una rampa desde un disco en miniatura: cuatro vestían uniformes azules y el quinto, una túnica amarilla con estrellas y una especie de cuernos o antenas en la cabeza. Según el relato, uno de los niños intentó atrapar a una de las criaturas y el ser de amarillo desenfundó un arma diminuta y le disparó un rayo en la mano, que —dijeron— quedó momentáneamente paralizada o marcada.\n\nEl fenómeno se comportó como una oleada. Un recuento de prensa de agosto de 1970 contabilizó, en apenas tres días, no menos de 39 avistamientos de OVNIs diminutos y 31 relatos de ocupantes de tres pulgadas. Más del 90 % de los testigos catalogados eran escolares, y buena parte de los encuentros se situó dentro de recintos escolares. La oleada no se agotó ese año: hacia 1975-76, en la base aérea de la Real Fuerza Aérea Malaya (RMAF) en Kuantan, un niño de nueve años dijo haber visto a una de estas criaturas bebiendo agua de un desagüe; la describió parda, «con dos antenas en la cabeza, una varilla metálica en la mano y una pistola al cinto», y afirmó haber vuelto esa misma noche con dos amigos para verla de nuevo. Los reportes rebrotaron en 1979.\n\nEl investigador malayo Ahmad Jamaludin recogió y sistematizó estos casos. Publicó el episodio de Kuantan en la Flying Saucer Review (Vol. 26, Nº 5, enero de 1981) y compiló la casuística nacional en «A Summary of Unidentified Flying Objects and Related Events in Malaysia (1950–1980)», editado por el Center for UFO Studies (CUFOS) en 1981. Su hallazgo más singular fue precisamente la miniatura: a diferencia de la casuística occidental, buena parte de los encuentros cercanos malayos involucraban OVNIs y entidades medidos en pulgadas, no en pies.",
+  "whatHappened_en": "In the summer of 1970, in Johor Bahru, four schoolboys said they had watched a silver, plate-sized object settle on the ground and disgorge five humanoid figures only a few centimetres tall, dressed in reddish one-piece suits. The beings crawled down a hole and the craft vanished, leaving behind a small patch of scorched grass. The boys told their headmaster and, within weeks, the west coast of peninsular Malaysia filled with near-identical reports.\n\nThe most cited episode took place on 19 August 1970 at Stowell Primary School in Bukit Mertajam, in the state of Penang. A group of pupils described five «little men» about eight centimetres tall marching down a ramp from a miniature disc: four wore blue uniforms and the fifth a yellow tunic decorated with stars, with a pair of horns or feelers on its head. According to the account, one of the boys tried to grab one of the creatures and the yellow-clad being drew a tiny weapon and shot a beam into his hand, which —they said— was momentarily paralysed or marked.\n\nThe phenomenon behaved like a wave. An August 1970 newspaper count logged, in just three days, no fewer than 39 sightings of tiny UFOs and 31 reports of three-inch occupants. Over 90 % of the catalogued witnesses were schoolchildren, and many encounters were placed on school premises. The wave did not end that year: around 1975-76, at the Royal Malaysian Air Force (RMAF) base in Kuantan, a nine-year-old boy said he had seen one of these creatures drinking water from a drain; he described it as brown, «with two feelers on its head, a steel-like rod in its hand and a pistol at its waist», and said he returned that same evening with two friends to see it again. Reports flared up once more in 1979.\n\nMalaysian researcher Ahmad Jamaludin collected and systematised these cases. He published the Kuantan episode in Flying Saucer Review (Vol. 26, No. 5, January 1981) and compiled the national casuistry in «A Summary of Unidentified Flying Objects and Related Events in Malaysia (1950–1980)», issued by the Center for UFO Studies (CUFOS) in 1981. His most distinctive finding was precisely the miniature scale: unlike Western casuistry, many Malaysian close encounters involved UFOs and entities measured in inches, not feet.",
+  "whyMatters": "El caso importa al corpus por tres razones. Primero, cierra un hueco de cobertura real: el sudeste asiático en la década de 1970, con un fenómeno que apenas figura en la literatura anglosajona dominante pero que fue masivo a escala local. Segundo, es un laboratorio casi puro de un mecanismo mundano concreto: el contagio cultural y la confabulación colectiva en población infantil. Cuando más del 90 % de los testigos son niños, los encuentros ocurren en escuelas y los detalles —seres de ocho centímetros con pistolas láser que beben de los desagües— violan de plano la física y la biología, la lectura de misidentificación y fabricación folklórica no es un descarte perezoso: es la hipótesis con más masa probatoria. La morfología misma —humanoides en miniatura, antenas, uniformes con estrellas— reproduce el imaginario de juguetes, cómics y series de la época, un marcador de construcción cultural más que de observación.\n\nTercero, y en tensión con lo anterior, la oleada malaya es un recordatorio metodológico: volumen no es evidencia. Decenas de reportes correlacionados por difusión mediática y por el boca a boca escolar no suman independientemente; por eso el caso es tier B (folklórico-institucional) pese a su escala. La agregación bayesiana del corpus lo trata como una sola oleada, no como treinta y nueve confirmaciones separadas.\n\nAun así, el episodio conserva un residuo de indeterminación que impide colapsarlo del todo a cero: algún testigo adulto, el encuentro repetido en una base militar y la persistencia del patrón a lo largo de casi una década. Por eso el reparto MECE envía la mayor parte de la probabilidad a lo mundano, una fracción menor a un fenómeno genuinamente anómalo de alta extrañeza (la lectura tipo Vallée, en la que la «miniatura» sería un rasgo del fenómeno y no del testigo), y deja el resto como indeterminado honesto. El valor del caso no es probar nada exótico, sino mostrar cómo se pondera con disciplina una oleada casi enteramente testimonial.",
+  "whyMatters_en": "The case matters to the corpus for three reasons. First, it closes a genuine coverage gap: Southeast Asia in the 1970s, with a phenomenon that barely appears in the dominant Anglophone literature yet was massive at the local scale. Second, it is an almost pure laboratory of one concrete mundane mechanism: cultural contagion and collective confabulation among children. When more than 90 % of the witnesses are children, the encounters happen at schools, and the details —eight-centimetre beings with laser pistols drinking from drains— flatly violate physics and biology, the misidentification-and-folkloric-fabrication reading is not a lazy dismissal: it is the hypothesis carrying the most evidential mass. The morphology itself —miniature humanoids, antennae, star-spangled uniforms— reproduces the imagery of the era's toys, comics and television, a marker of cultural construction rather than observation.\n\nThird, and in tension with the above, the Malaysian wave is a methodological reminder: volume is not evidence. Dozens of reports correlated by media diffusion and schoolyard word of mouth do not add up independently; that is why the case is tier B (folkloric-institutional) despite its scale. The corpus's Bayesian aggregation treats it as a single wave, not as thirty-nine separate confirmations.\n\nEven so, the episode keeps a residue of indeterminacy that prevents collapsing it entirely to zero: the occasional adult witness, the repeated encounter at a military base, and the persistence of the pattern across nearly a decade. That is why the MECE split sends most of the probability to the mundane, a smaller fraction to a genuinely anomalous high-strangeness phenomenon (the Vallée-style reading, in which the «miniature» would be a trait of the phenomenon rather than of the witness), and leaves the rest as honest indeterminacy. The case's value is not to prove anything exotic, but to show how an almost entirely testimonial wave is weighed with discipline.",
+  "evidence": [
+    "Recuento de prensa de agosto de 1970: no menos de 39 avistamientos de OVNIs diminutos y 31 relatos de ocupantes de tres pulgadas en solo tres días (cifra citada por Ahmad Jamaludin).",
+    "Caso escolar del 19 de agosto de 1970 en la escuela primaria Stowell, Bukit Mertajam (Penang): cinco humanoides de ~8 cm, uno de amarillo con estrellas, que habría disparado un rayo a la mano de un alumno.",
+    "Encuentro inicial de 1970 en Johor Bahru: cuatro escolares describen un disco del tamaño de un plato y cinco seres de trajes rojizos que se metieron por un agujero, dejando hierba quemada.",
+    "Encuentro en la base aérea de Kuantan (RMAF), ~1975-76: niño de nueve años describe a una criatura parda con antenas, varilla metálica y pistola bebiendo de un desagüe; reobservada esa noche con dos testigos más.",
+    "Más del 90 % de los testigos catalogados eran escolares; cinco de los reportes se situaron dentro de recintos escolares.",
+    "Sistematización de Ahmad Jamaludin en «A Summary of Unidentified Flying Objects and Related Events in Malaysia (1950–1980)», Center for UFO Studies (CUFOS), 1981.",
+    "Publicación del caso de Kuantan en Flying Saucer Review, Vol. 26, Nº 5 (enero de 1981)."
+  ],
+  "evidence_en": [
+    "August 1970 newspaper count: no fewer than 39 tiny-UFO sightings and 31 reports of three-inch occupants in just three days (figure cited by Ahmad Jamaludin).",
+    "School case of 19 August 1970 at Stowell Primary School, Bukit Mertajam (Penang): five ~8 cm humanoids, one in yellow with stars, said to have fired a beam into a pupil's hand.",
+    "Initial 1970 encounter in Johor Bahru: four schoolboys describe a plate-sized disc and five reddish-suited beings that crawled into a hole, leaving scorched grass.",
+    "Encounter at the Kuantan (RMAF) air base, ~1975-76: a nine-year-old boy describes a brown creature with feelers, a metal rod and a pistol drinking from a drain; re-observed that evening with two more witnesses.",
+    "Over 90 % of the catalogued witnesses were schoolchildren; five of the reports were placed on school premises.",
+    "Ahmad Jamaludin's systematisation in «A Summary of Unidentified Flying Objects and Related Events in Malaysia (1950–1980)», Center for UFO Studies (CUFOS), 1981.",
+    "Publication of the Kuantan case in Flying Saucer Review, Vol. 26, No. 5 (January 1981)."
+  ],
+  "sources": [
+    {
+      "name": "Ahmad Jamaludin, «A Summary of Unidentified Flying Objects and Related Events in Malaysia (1950–1980)», Center for UFO Studies (CUFOS), 1981",
+      "note": "Catálogo sistemático del investigador que documentó la oleada; base de la mayoría de las cifras."
+    },
+    {
+      "name": "Ahmad Jamaludin, «The Malaysian UFO Scene» / «A Further Report», Flying Saucer Review, Vol. 26, Nº 5 (enero de 1981)",
+      "note": "Incluye el encuentro en la base aérea de Kuantan."
+    },
+    {
+      "name": "«The Malaysian UFO Scene: A Further Report», archivo de UFO Evidence",
+      "url": "http://www.ufoevidence.org/documents/doc1119.htm",
+      "note": "Reproduce material de Jamaludin sobre la casuística malaya de humanoides diminutos."
+    },
+    {
+      "name": "«1970: Aerial Invasion in Malaysia», Think About It Docs",
+      "url": "https://www.thinkaboutitdocs.com/1970-aerial-invasion/",
+      "note": "Compilación del episodio escolar de agosto de 1970."
+    }
+  ]
+}
