@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.0,
     "indet": 0.04
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/Chelyabinsk-2013-meteor-trace.jpg",
+      "type": "image",
+      "title": "Meteoro de Cheliábinsk · rastro de vapor tras la entrada atmosférica (15 feb 2013)",
+      "title_en": "Chelyabinsk meteor · vapour trail after atmospheric entry (15 Feb 2013)",
+      "source": "Wikimedia Commons · Alex Alishevskikh (CC BY-SA 2.0)",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:2013_Chelyabinsk_meteor_trace.jpg"
+    }
+  ]
 }
