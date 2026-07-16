@@ -61,5 +61,16 @@
       "name": "DoW/USAF — «Joint US-Canadian Aviation Projects and UFO Sighting Reports» (1954–1955)",
       "note": "Correspondencia y reportes conjuntos EE.UU.–Canadá del período de Project Magnet / Second Storey. AARO UAP Records, release 04 (DOWUAPD095)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/project-magnet-canada-1950-context.jpg",
+      "type": "image",
+      "title": "Contexto · Ottawa (Canadá), sede del Department of Transport que dirigió Project Magnet",
+      "title_en": "Context · Ottawa (Canada), seat of the Department of Transport that ran Project Magnet",
+      "source": "Parliament Hill from the Ottawa River.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 2.5 ca",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AParliament%20Hill%20from%20the%20Ottawa%20River.JPG"
+    }
   ]
 }

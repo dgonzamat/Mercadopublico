@@ -62,5 +62,16 @@
       "name": "Cobertura El Comercio (Ecuador, mayo 2007)",
       "url": "https://www.elcomercio.com"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/ecuador-decreto-129-2007-context.jpg",
+      "type": "image",
+      "title": "Contexto · Quito (Ecuador), sede de la Fuerza Aérea Ecuatoriana",
+      "title_en": "Context · Quito (Ecuador), seat of the Ecuadorian Air Force",
+      "source": "Quito calle García Moreno.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AQuito%20calle%20Garc%C3%ADa%20Moreno.jpg"
+    }
   ]
 }

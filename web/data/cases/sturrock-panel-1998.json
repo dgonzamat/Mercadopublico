@@ -53,5 +53,16 @@
       "name": "Pocantico / Sturrock Panel — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/Sturrock_panel"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/sturrock-panel-1998-context.jpg",
+      "type": "image",
+      "title": "Contexto · Tarrytown (Nueva York), sede del panel Sturrock en Pocantico",
+      "title_en": "Context · Tarrytown (New York), venue of the Sturrock panel at Pocantico",
+      "source": "Lyndhurst Tarrytown NY - front facade.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALyndhurst%20Tarrytown%20NY%20-%20front%20facade.jpg"
+    }
   ]
 }
