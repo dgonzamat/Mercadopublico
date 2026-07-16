@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
@@ -6,12 +7,12 @@ import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothes
 import { STATS } from "@/lib/siteStats";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Probabilidades por explicación (modelo MECE)",
   description:
     "Distribución comparable sobre narrativas mutuamente excluyentes (objeto + postura institucional): cada caso reparte 100% entre seis narrativas; el corpus las reparte de forma comparable. Preserva las hipótesis del marco anterior.",
-  alternates: { canonical: "/probabilidades/" },
-};
+  path: "/probabilidades/",
+});
 
 /** Qué significa cada hipótesis (y qué hipótesis del marco anterior preserva). */
 const BLURB: Record<string, { es: string; en: string }> = {

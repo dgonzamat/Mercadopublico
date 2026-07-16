@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { pageMeta } from "@/lib/seo";
 import { researchers, getFramework } from "@/lib/data";
 import { breadcrumbJsonLd, researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { casesForResearcher } from "@/lib/researcherCases";
@@ -20,9 +21,12 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const r = researchers.find((x) => x.id === params.slug);
   if (!r) return { title: "No encontrado" };
   return {
-    title: r.seoTitle ? { absolute: r.seoTitle } : r.name,
-    description: r.seoDescription ?? r.bio_short.slice(0, 160),
-    alternates: { canonical: `/researchers/${r.id}/` },
+    ...pageMeta({
+      title: r.seoTitle ?? r.name,
+      description: r.seoDescription ?? r.bio_short.slice(0, 160),
+      path: `/researchers/${r.id}/`,
+    }),
+    ...(r.seoTitle ? { title: { absolute: r.seoTitle } } : {}),
   };
 }
 

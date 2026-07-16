@@ -1,13 +1,14 @@
 import { cases } from "@/lib/data";
+import { pageMeta } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Cobertura del corpus · país × década",
   description: `Matriz de cobertura de los ${STATS.cases} casos institucionales UAP por país y década — dónde el corpus es denso y dónde está flaco.`,
-  alternates: { canonical: "/cobertura/" },
-};
+  path: "/cobertura/",
+});
 
 // Columnas: todo lo anterior a 1940 se agrupa (décadas muy ralas: 1560s, 1800s…),
 // luego una columna por década 1940s…2020s. `0` es el bucket "‹1940".

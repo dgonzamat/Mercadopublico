@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { pageMeta } from "@/lib/seo";
 import { posts, getPost } from "@/lib/posts";
 import { breadcrumbJsonLd, postJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { T } from "@/components/T";
@@ -16,9 +17,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const p = getPost(params.slug);
   if (!p) return { title: "Post no encontrado" };
   return {
-    title: p.title,
-    description: p.summary,
-    alternates: { canonical: `/blog/${p.id}/` },
+    ...pageMeta({
+      title: p.title,
+      description: p.summary,
+      path: `/blog/${p.id}/`,
+    }),
   };
 }
 

@@ -1,14 +1,15 @@
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 import { cases } from "@/lib/data";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Releases del PURSUE / AARO — desclasificaciones UAP",
   description:
     "Las entregas de archivos UAP desclasificados por el Department of War (PURSUE / AARO) y los casos del corpus UAP Codex que citan cada una.",
-  alternates: { canonical: "/releases/" },
-};
+  path: "/releases/",
+});
 
 const pad = (n: number) => String(n).padStart(2, "0");
 

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 import { cases } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
@@ -68,9 +69,11 @@ export async function generateMetadata(props: {
   if (!n) return {};
   const count = cases.filter((c) => c.pursueReleases?.includes(n)).length;
   return {
-    title: `PURSUE Release ${pad(n)} — ${count} casos del corpus`,
-    description: `Los ${count} casos de UAP Codex que citan documentos de la Release ${pad(n)} del PURSUE/AARO (desclasificación del Department of War).`,
-    alternates: { canonical: `/releases/${pad(n)}/` },
+    ...pageMeta({
+      title: `PURSUE Release ${pad(n)} — ${count} casos del corpus`,
+      description: `Los ${count} casos de UAP Codex que citan documentos de la Release ${pad(n)} del PURSUE/AARO (desclasificación del Department of War).`,
+      path: `/releases/${pad(n)}/`,
+    }),
   };
 }
 
