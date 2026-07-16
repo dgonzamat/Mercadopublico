@@ -798,6 +798,36 @@ if (missingAssets.length > 0) {
   );
 }
 
+// ─── 9k-bis. RULE E17b: peso de los assets same-origin del visor ───────────
+//
+// Guardrail que nació de un incidente (jul 2026): las imágenes de contexto se
+// commitearon a resolución original de Commons —canary-islands pesaba 31 MB, por
+// encima del límite de 30 MB de /pursue, y varias >15 MB—; cargaban tan lento que
+// la página se veía en blanco ("no hay nada"). Se reescalaron a máx 2000px con
+// sharp (386MB→29MB). Esta sonda impide la recurrencia: ERROR si un asset supera
+// el límite duro de 30 MB (rompe el embed same-origin), WARN si supera 5 MB
+// (higiene de peso de página — reescalar con sharp a ~2000px q82 antes de subir).
+//
+// Alcance: SOLO imágenes (<img> inline). Los PDF se eximen a propósito: se
+// renderizan en un visor cliente paginado (react-pdf, lazy) donde el peso no es el
+// mismo asesino de LCP, y un facsímil escaneado (p. ej. un expediente FBI de 60MB)
+// es legítimamente grande; "reescalar a 2000px" es consejo específico de imagen.
+const HARD_MAX = 30 * 1024 * 1024;
+const SOFT_MAX = 5 * 1024 * 1024;
+const IMG_RE = /\.(jpe?g|png|webp|gif)$/i;
+for (const { caseId, ref } of docAssetRefs) {
+  if (!IMG_RE.test(ref)) continue; // PDFs exentos (ver nota)
+  const abs = path.join(publicDir, ref);
+  if (!fs.existsSync(abs)) continue; // ya lo cubre E17
+  const bytes = fs.statSync(abs).size;
+  const mb = (bytes / 1048576).toFixed(1);
+  if (bytes > HARD_MAX) {
+    record("ERROR", abs, 0, `E17b peso: la imagen ${ref} (${caseId}) pesa ${mb}MB, sobre el límite de 30MB del embed same-origin /pursue. Reescalar con sharp a máx 2000px.`);
+  } else if (bytes > SOFT_MAX) {
+    record("WARN", abs, 0, `E17b peso: la imagen ${ref} (${caseId}) pesa ${mb}MB (>5MB) — reescalar con sharp a máx 2000px q82 para no penalizar el LCP.`);
+  }
+}
+
 // ─── 9l. RULE E20: visor de documentos — objetos del bucket Supabase (ERROR) ─
 //
 // Hermana de E17 para el OTRO origen embebible del visor: el bucket Supabase
