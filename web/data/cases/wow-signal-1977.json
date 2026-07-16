@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.1,
     "indet": 0.31
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/Wow-signal-1977-Big-Ear-printout.jpg",
+      "type": "image",
+      "title": "Señal Wow! · el impreso original del radiotelescopio Big Ear con la anotación de Jerry Ehman (15 ago 1977)",
+      "title_en": "Wow! signal · the original Big Ear telescope printout with Jerry Ehman's annotation (15 Aug 1977)",
+      "source": "Big Ear Radio Observatory / North American AstroPhysical Observatory vía Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Wow_signal.jpg"
+    }
+  ]
 }
