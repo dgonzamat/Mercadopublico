@@ -59,5 +59,16 @@
       "name": "NASA — 'NASA Releases Independent Study Team Report on UAP'",
       "url": "https://www.nasa.gov/news-release/nasa-to-announce-results-findings-of-uap-independent-study/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/NASA-UAP-Independent-Study-Team-Final-Report-2023.pdf",
+      "type": "pdf",
+      "title": "NASA · Unidentified Anomalous Phenomena — Independent Study Team Report (sep 2023)",
+      "title_en": "NASA · Unidentified Anomalous Phenomena — Independent Study Team Report (Sep 2023)",
+      "source": "NASA · Independent Study Team",
+      "license": "Dominio público · NASA / US Government work",
+      "fallbackUrl": "https://smd-cms.nasa.gov/wp-content/uploads/2023/09/uap-independent-study-team-final-report.pdf"
+    }
   ]
 }
