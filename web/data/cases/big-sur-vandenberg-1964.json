@@ -64,5 +64,16 @@
       "note": "Fuente de las objeciones técnicas a la interpretación del avistamiento.",
       "note_en": "Source of the technical objections to the sighting's interpretation."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/big-sur-vandenberg-1964-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Base Aérea de Vandenberg (California), origen del lanzamiento de la ojiva de prueba",
+      "title_en": "Context · Vandenberg Air Force Base (California), origin of the test warhead launch",
+      "source": "2016 Falcon 9 at Vandenberg Air Force Base.jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3A2016%20Falcon%209%20at%20Vandenberg%20Air%20Force%20Base.jpg"
+    }
   ]
 }

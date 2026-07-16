@@ -58,5 +58,16 @@
       "name": "Chalker, B. — UFO archives Australia",
       "url": "http://www.theozfiles.com/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/westall-1966-context.jpg",
+      "type": "image",
+      "title": "Contexto · Westall (Melbourne, Australia), donde cientos de escolares vieron el objeto",
+      "title_en": "Context · Westall (Melbourne, Australia), where hundreds of schoolchildren saw the object",
+      "source": "WestallPlatform2.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWestallPlatform2.jpg"
+    }
   ]
 }

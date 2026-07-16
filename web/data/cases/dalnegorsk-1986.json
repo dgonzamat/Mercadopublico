@@ -60,5 +60,16 @@
     "nohumano_encubierto": 0.11,
     "nohumano_abierto": 0.05,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/dalnegorsk-1986-context.jpg",
+      "type": "image",
+      "title": "Contexto · Dalnegorsk (Primorie, Rusia), al pie de la Altura 611",
+      "title_en": "Context · Dalnegorsk (Primorye, Russia), below Height 611",
+      "source": "Dalnegorsk, Primorsky Krai, Russia - panoramio.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADalnegorsk%2C%20Primorsky%20Krai%2C%20Russia%20-%20panoramio.jpg"
+    }
+  ]
 }

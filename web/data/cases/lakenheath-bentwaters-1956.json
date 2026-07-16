@@ -72,5 +72,16 @@
       "name": "RAF Lakenheath case file — UK National Archives",
       "url": "https://discovery.nationalarchives.gov.uk/details/r/C2007"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/lakenheath-bentwaters-1956-context.jpg",
+      "type": "image",
+      "title": "Contexto · RAF Lakenheath (Inglaterra), base del incidente radar-visual",
+      "title_en": "Context · RAF Lakenheath (England), base of the radar-visual incident",
+      "source": "Lakenheath Military airfield - geograph.org.uk - 53241.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALakenheath%20Military%20airfield%20-%20geograph.org.uk%20-%2053241.jpg"
+    }
   ]
 }

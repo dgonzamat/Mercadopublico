@@ -71,5 +71,16 @@
       "name": "Haines, R. F. & Vallée, J. — \"Aerial Phenomena: Pilot Reports\" (Journal of Scientific Exploration)",
       "note": "Análisis científico del caso La Joya / Santa María (procedente del archivo NARCAP)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/la-joya-arequipa-1980-context.jpg",
+      "type": "image",
+      "title": "Contexto · Arequipa (Perú), cerca de La Joya donde un caza FAP disparó al objeto",
+      "title_en": "Context · Arequipa (Peru), near La Joya where a FAP fighter fired at the object",
+      "source": "Complejo San Francisco, Arequipa, Perú, 2015-08-02, DD 79-81 HDR.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AComplejo%20San%20Francisco%2C%20Arequipa%2C%20Per%C3%BA%2C%202015-08-02%2C%20DD%2079-81%20HDR.JPG"
+    }
   ]
 }

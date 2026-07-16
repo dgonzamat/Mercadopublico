@@ -73,5 +73,16 @@
     "nohumano_encubierto": 0.06,
     "nohumano_abierto": 0.15,
     "indet": 0.27
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/coyne-1973-context.png",
+      "type": "image",
+      "title": "Contexto · un Bell UH-1 Iroquois, el tipo de helicóptero del caso Coyne",
+      "title_en": "Context · a Bell UH-1 Iroquois, the helicopter type of the Coyne case",
+      "source": "Bell UH-1 Iroquois 3-view line drawing.png · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABell%20UH-1%20Iroquois%203-view%20line%20drawing.png"
+    }
+  ]
 }

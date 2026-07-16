@@ -65,5 +65,16 @@
     {
       "name": "Startup, B. & Illingworth, N. — The Kaikoura UFOs (1980)"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/kaikoura-1978-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kaikōura (Nueva Zelanda), donde el avión de carga filmó las luces",
+      "title_en": "Context · Kaikōura (New Zealand), where the cargo plane filmed the lights",
+      "source": "Kaikōura Peninsula coast, New Zealand (52385942035).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKaik%C5%8Dura%20Peninsula%20coast%2C%20New%20Zealand%20(52385942035).jpg"
+    }
   ]
 }

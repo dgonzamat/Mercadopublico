@@ -61,5 +61,16 @@
       "name": "Wikipedia: Petrozavodsk phenomenon",
       "url": "https://en.wikipedia.org/wiki/Petrozavodsk_phenomenon"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/petrozavodsk-1977-context.jpg",
+      "type": "image",
+      "title": "Contexto · Petrozavodsk (Carelia), donde se vio el fenómeno de la 'medusa'",
+      "title_en": "Context · Petrozavodsk (Karelia), where the 'jellyfish' phenomenon was seen",
+      "source": "Petrozavodsk Bay (2).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APetrozavodsk%20Bay%20(2).jpg"
+    }
   ]
 }

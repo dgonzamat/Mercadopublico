@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.1,
     "indet": 0.32
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/fort-monmouth-1951-context.jpg",
+      "type": "image",
+      "title": "Contexto · Fort Monmouth (Nueva Jersey), donde el radar detectó el objeto que refundó Blue Book",
+      "title_en": "Context · Fort Monmouth (New Jersey), where radar tracked the object that relaunched Blue Book",
+      "source": "Fort Monmouth main gate NJ1.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AFort%20Monmouth%20main%20gate%20NJ1.jpg"
+    }
+  ]
 }

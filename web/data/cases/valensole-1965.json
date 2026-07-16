@@ -58,5 +58,16 @@
       "name": "Hynek, J.A. — The UFO Experience (1972)",
       "note": "Capítulo de close encounter clasifica Valensole CE-III"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/valensole-1965-context.jpg",
+      "type": "image",
+      "title": "Contexto · Valensole (Provenza), donde Maurice Masse vio aterrizar el objeto",
+      "title_en": "Context · Valensole (Provence), where Maurice Masse saw the object land",
+      "source": "Coucher-de-soleil-plateau-Valensole-Provence-France.jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACoucher-de-soleil-plateau-Valensole-Provence-France.jpg"
+    }
   ]
 }

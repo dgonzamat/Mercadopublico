@@ -66,5 +66,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.08,
     "indet": 0.35
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/edwards-afb-1965-context.jpg",
+      "type": "image",
+      "title": "Contexto · Base Aérea de Edwards (California)",
+      "title_en": "Context · Edwards Air Force Base (California)",
+      "source": "T-7A Red Hawk over Edwards Air Force Base.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AT-7A%20Red%20Hawk%20over%20Edwards%20Air%20Force%20Base.jpg"
+    }
+  ]
 }

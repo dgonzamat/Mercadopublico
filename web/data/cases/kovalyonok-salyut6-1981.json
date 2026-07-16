@@ -71,5 +71,16 @@
     "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0.04,
     "indet": 0.29
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/kovalyonok-salyut6-1981-context.jpg",
+      "type": "image",
+      "title": "Contexto · la estación Salyut-6, desde donde el cosmonauta Kovalyonok observó el objeto",
+      "title_en": "Context · the Salyut-6 station, from which cosmonaut Kovalyonok observed the object",
+      "source": "Salyut 6 cine camera (53594100081).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASalyut%206%20cine%20camera%20(53594100081).jpg"
+    }
+  ]
 }

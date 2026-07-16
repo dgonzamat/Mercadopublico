@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.17,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/cluj-barnea-1968-context.jpg",
+      "type": "image",
+      "title": "Contexto · Cluj (Rumanía), donde Emil Barnea tomó las fotografías",
+      "title_en": "Context · Cluj (Romania), where Emil Barnea took the photographs",
+      "source": "Cluj-Napoca as seen from Cetățuia Park.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACluj-Napoca%20as%20seen%20from%20Cet%C4%83%C8%9Buia%20Park.jpg"
+    }
+  ]
 }

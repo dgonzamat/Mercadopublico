@@ -61,5 +61,16 @@
     {
       "name": "Ledger, Don & Styles, Chris — Dark Object (2001)"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/shag-harbour-1967-context.jpg",
+      "type": "image",
+      "title": "Contexto · Shag Harbour (Nueva Escocia, Canadá)",
+      "title_en": "Context · Shag Harbour (Nova Scotia, Canada)",
+      "source": "Shag Harbour.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AShag%20Harbour.jpg"
+    }
   ]
 }

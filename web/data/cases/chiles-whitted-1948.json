@@ -65,5 +65,16 @@
       "url": "http://www.ufoevidence.org/cases/case116.htm",
       "note": "Síntesis del caso y su rol en el Estimate of the Situation."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/chiles-whitted-1948-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Douglas DC-3 de Eastern Air Lines, el tipo de avión del avistamiento",
+      "title_en": "Context · an Eastern Air Lines Douglas DC-3, the aircraft type of the sighting",
+      "source": "Eastern Air Lines Douglas DC-3 NC18124 NASM.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEastern%20Air%20Lines%20Douglas%20DC-3%20NC18124%20NASM.jpg"
+    }
   ]
 }

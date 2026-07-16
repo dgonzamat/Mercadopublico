@@ -72,5 +72,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.17,
     "indet": 0.4
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/trans-en-provence-1981-context.jpg",
+      "type": "image",
+      "title": "Contexto · la región de Draguignan (Var, Francia), cerca de Trans-en-Provence",
+      "title_en": "Context · the Draguignan area (Var, France), near Trans-en-Provence",
+      "source": "Draguignan centre-ville, vue aérienne.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADraguignan%20centre-ville%2C%20vue%20a%C3%A9rienne.jpg"
+    }
+  ]
 }

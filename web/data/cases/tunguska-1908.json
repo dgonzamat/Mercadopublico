@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.02,
     "indet": 0.08
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/Tunguska-Kulik-expedition-flattened-trees-1908.jpg",
+      "type": "image",
+      "title": "Árboles derribados en Tunguska · fotografía de la expedición de Leonid Kulik",
+      "title_en": "Flattened trees at Tunguska · photograph from Leonid Kulik's expedition",
+      "source": "Expedición Kulik (1927-1938) vía Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Tunguska_Ereignis-1.jpg"
+    }
+  ]
 }

@@ -59,5 +59,16 @@
       "name": "ODNI — página oficial de informes UAP",
       "url": "https://www.dni.gov/index.php/newsroom/reports-publications"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/ODNI-Preliminary-Assessment-UAP-2021.pdf",
+      "type": "pdf",
+      "title": "ODNI · Preliminary Assessment: Unidentified Aerial Phenomena (25 jun 2021)",
+      "title_en": "ODNI · Preliminary Assessment: Unidentified Aerial Phenomena (25 Jun 2021)",
+      "source": "Office of the Director of National Intelligence (ODNI)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf"
+    }
   ]
 }

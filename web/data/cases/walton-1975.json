@@ -65,5 +65,16 @@
       "name": "Steiger, Brad & Steiger, Sherry. 'The Travis Walton Story' (1996)",
       "note": "Re-análisis del caso con evidencia post-1975."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/walton-1975-context.jpg",
+      "type": "image",
+      "title": "Contexto · Snowflake (Arizona), cerca de donde desapareció Travis Walton",
+      "title_en": "Context · Snowflake (Arizona), near where Travis Walton disappeared",
+      "source": "Snowflake, Arizona (16259708031).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASnowflake%2C%20Arizona%20(16259708031).jpg"
+    }
   ]
 }

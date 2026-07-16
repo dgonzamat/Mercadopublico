@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.02,
     "indet": 0.15
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/NASA-Friendship7-Glenn-Mercury-Atlas6-1962.jpg",
+      "type": "image",
+      "title": "Friendship 7 · cámara a bordo, John Glenn (Mercury-Atlas 6, febrero de 1962)",
+      "title_en": "Friendship 7 · onboard camera, John Glenn (Mercury-Atlas 6, February 1962)",
+      "source": "NASA · imagen s62-00303 (dominio público)",
+      "license": "Dominio público · NASA / US Government work",
+      "fallbackUrl": "https://images.nasa.gov/details/s62-00303"
+    }
+  ]
 }

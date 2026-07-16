@@ -74,5 +74,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.15,
     "indet": 0.22
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/knowles-nullarbor-1988-context.jpg",
+      "type": "image",
+      "title": "Contexto · la llanura de Nullarbor (Australia), escenario del caso de la familia Knowles",
+      "title_en": "Context · the Nullarbor Plain (Australia), scene of the Knowles family case",
+      "source": "Eyre Highway, South Australia (on Nullarbor Plain).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEyre%20Highway%2C%20South%20Australia%20(on%20Nullarbor%20Plain).jpg"
+    }
+  ]
 }

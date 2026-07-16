@@ -56,5 +56,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.06,
     "indet": 0.21
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/gorman-dogfight-1948-context.jpg",
+      "type": "image",
+      "title": "Contexto · un P-51 Mustang, el tipo de caza del 'dogfight' de Gorman",
+      "title_en": "Context · a P-51 Mustang, the fighter type of the Gorman dogfight",
+      "source": "P-51 Mustang edit1.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AP-51%20Mustang%20edit1.jpg"
+    }
+  ]
 }

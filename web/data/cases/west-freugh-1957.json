@@ -57,5 +57,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.08,
     "indet": 0.4
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/west-freugh-1957-context.jpg",
+      "type": "image",
+      "title": "Contexto · RAF West Freugh (Escocia)",
+      "title_en": "Context · RAF West Freugh (Scotland)",
+      "source": "West Freugh Airfield - geograph.org.uk - 434249.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWest%20Freugh%20Airfield%20-%20geograph.org.uk%20-%20434249.jpg"
+    }
+  ]
 }

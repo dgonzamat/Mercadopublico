@@ -56,5 +56,16 @@
       "name": "Enigma Labs — Soccer Match UAP Sighting Over Tuscany, Italy (1954)",
       "url": "https://enigmalabs.io/library/ad386be0-57b4-4b18-8757-73d61b2dc1c3"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/florence-stadium-1954-context.jpg",
+      "type": "image",
+      "title": "Contexto · el estadio de Florencia, sobre el que se vio el OVNI durante un partido",
+      "title_en": "Context · the Florence stadium, over which the UFO was seen during a match",
+      "source": "Firenze, stadio artemio franchi, campo da gioco, 10,0.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AFirenze%2C%20stadio%20artemio%20franchi%2C%20campo%20da%20gioco%2C%2010%2C0.jpg"
+    }
   ]
 }
