@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { patterns, getCasesByPattern } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -27,6 +27,10 @@ export async function generateMetadata(
       description: p.description,
       path: `/patterns/${p.letter}/`,
     }),
+    alternates: {
+      canonical: `/patterns/${p.letter}/`,
+      languages: hreflangFor(`/patterns/${p.letter}/`),
+    },
   };
 }
 
