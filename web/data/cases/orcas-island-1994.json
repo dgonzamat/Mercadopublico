@@ -58,5 +58,16 @@
       "name": "UFO Hunters — registro del avistamiento de Orcas Island, WA (24 septiembre 1994)",
       "url": "https://www.ufo-hunters.com/sightings/search/51439ad80ad2e1e9be450587"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/orcas-island-1994-context.jpg",
+      "type": "image",
+      "title": "Contexto · Orcas Island (Washington)",
+      "title_en": "Context · Orcas Island (Washington)",
+      "source": "Orcas Island, San Juan Islands, and Mount Baker, Washington State - panoramio.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AOrcas%20Island%2C%20San%20Juan%20Islands%2C%20and%20Mount%20Baker%2C%20Washington%20State%20-%20panoramio.jpg"
+    }
   ]
 }

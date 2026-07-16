@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.03,
     "indet": 0.27
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/lisbon-radar-2004-context.jpg",
+      "type": "image",
+      "title": "Contexto · Lisboa (Portugal), cuyo control aéreo registró el blanco de radar",
+      "title_en": "Context · Lisbon (Portugal), whose air control tracked the radar target",
+      "source": "Lisbon Skyline (217154099).jpeg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALisbon%20Skyline%20(217154099).jpeg"
+    }
+  ]
 }
