@@ -59,5 +59,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.12,
     "indet": 0.38
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/exeter-1965-context.jpg",
+      "type": "image",
+      "title": "Contexto · Exeter (Nuevo Hampshire), escenario del avistamiento a baja altura",
+      "title_en": "Context · Exeter (New Hampshire), scene of the low-altitude sighting",
+      "source": "Water Street, Exeter NH.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWater%20Street%2C%20Exeter%20NH.jpg"
+    }
+  ]
 }

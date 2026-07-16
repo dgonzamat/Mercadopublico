@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.1,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/manston-torres-1957-context.jpg",
+      "type": "image",
+      "title": "Contexto · RAF Manston (Kent, Inglaterra), base del interceptor con orden de disparar",
+      "title_en": "Context · RAF Manston (Kent, England), base of the interceptor ordered to fire",
+      "source": "Luftwaffe Photograph Of RAF Manston 1939.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALuftwaffe%20Photograph%20Of%20RAF%20Manston%201939.jpg"
+    }
+  ]
 }
