@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.015,
     "nohumano_abierto": 0.035,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/finland-ghost-rockets-1946-context.jpg",
+      "type": "image",
+      "title": "Contexto · Finlandia, escenario de los 'cohetes fantasma' de 1946",
+      "title_en": "Context · Finland, scene of the 1946 'ghost rockets'",
+      "source": "Äkäslompolo and Ylläs in Kolari, Lapland, Finland, 2018 September.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3A%C3%84k%C3%A4slompolo%20and%20Yll%C3%A4s%20in%20Kolari%2C%20Lapland%2C%20Finland%2C%202018%20September.jpg"
+    }
+  ]
 }

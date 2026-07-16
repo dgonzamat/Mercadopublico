@@ -83,5 +83,16 @@
       "name": "Gross, Patrick — ALSACAT, 5 Nov 1990 case files (Colmar)",
       "url": "https://www.ufologie.patrickgross.org/alsacat/1990-11-05-colmar2.htm"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/france-wave-1990-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Gendarmería francesa, que recopiló los reportes de la oleada del 5-nov-1990",
+      "title_en": "Context · the French Gendarmerie, which gathered the reports of the 5 Nov 1990 wave",
+      "source": "Gendarmerie-Nationale-Dinan-byRundvald.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGendarmerie-Nationale-Dinan-byRundvald.jpg"
+    }
   ]
 }

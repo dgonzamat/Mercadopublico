@@ -65,5 +65,16 @@
       "name": "The Black Vault — archivo del incidente de Pantex (2015)",
       "note": "Cobertura secundaria de una versión previa del informe obtenida por FOIA; corrobora fecha, lugar y descripción."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/pantex-2015-context.jpg",
+      "type": "image",
+      "title": "Contexto · la planta Pantex (Amarillo, Texas), sobre la que se reportaron drones",
+      "title_en": "Context · the Pantex Plant (Amarillo, Texas), over which drones were reported",
+      "source": "Pantex plant aeriel unknown data.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APantex%20plant%20aeriel%20unknown%20data.jpg"
+    }
   ]
 }

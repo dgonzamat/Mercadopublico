@@ -58,5 +58,16 @@
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.09,
     "indet": 0.26
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/voronezh-1989-context.jpg",
+      "type": "image",
+      "title": "Contexto · la ciudad de Vorónezh (Rusia), escenario del avistamiento del parque en 1989",
+      "title_en": "Context · the city of Voronezh (Russia), scene of the 1989 park sighting",
+      "source": "Voronezh. Central Market P7241263 3950.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AVoronezh.%20Central%20Market%20P7241263%203950.jpg"
+    }
+  ]
 }

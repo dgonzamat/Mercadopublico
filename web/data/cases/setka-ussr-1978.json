@@ -71,5 +71,16 @@
       "name": "Knapp, G. — 'Russian UFO files' coverage (KLAS-TV Las Vegas, 1993)",
       "note": "Acceso periodístico inicial al archivo soviético post-disolución."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/setka-ussr-1978-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Academia de Ciencias en Moscú, sede del programa soviético Setka",
+      "title_en": "Context · the Academy of Sciences in Moscow, seat of the Soviet Setka programme",
+      "source": "Moscow - 2025 - Building of the Russian Academy of Sciences.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMoscow%20-%202025%20-%20Building%20of%20the%20Russian%20Academy%20of%20Sciences.jpg"
+    }
   ]
 }

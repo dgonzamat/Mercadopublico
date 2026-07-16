@@ -58,5 +58,16 @@
     "nohumano_abierto": 0.02,
     "indet": 0.35
   },
-  "name_en": "El Taire / Bermejo crash"
+  "name_en": "El Taire / Bermejo crash",
+  "documents": [
+    {
+      "src": "/pursue/bolivia-el-taire-1978-context.jpg",
+      "type": "image",
+      "title": "Contexto · Bermejo (Tarija, Bolivia), cerca del cerro El Taire",
+      "title_en": "Context · Bermejo (Tarija, Bolivia), near El Taire hill",
+      "source": "Kirche in Bermejo.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKirche%20in%20Bermejo.jpg"
+    }
+  ]
 }

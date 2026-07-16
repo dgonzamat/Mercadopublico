@@ -72,5 +72,16 @@
       "name": "Benítez, J.J. — Erase una vez los OVNIs (1979)",
       "note": "Contemporary journalistic coverage"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/manises-1979-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Sud Aviation Caravelle, del tipo del avión de Aviaco desviado a Manises",
+      "title_en": "Context · a Sud Aviation Caravelle, the type of the Aviaco aircraft diverted to Manises",
+      "source": "Swissair Sud-Aviation Caravelle Soderstrom-1.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASwissair%20Sud-Aviation%20Caravelle%20Soderstrom-1.jpg"
+    }
   ]
 }

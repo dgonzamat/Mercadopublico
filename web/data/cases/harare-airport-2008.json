@@ -76,5 +76,16 @@
       "url": "https://www.war.gov/ufo/",
       "note": "Fuente primaria: el portal donde se publicó el documento desclasificado."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/harare-airport-2008-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto internacional de Harare (Zimbabue)",
+      "title_en": "Context · Harare International Airport (Zimbabwe)",
+      "source": "Harare International Airport.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHarare%20International%20Airport.jpg"
+    }
   ]
 }

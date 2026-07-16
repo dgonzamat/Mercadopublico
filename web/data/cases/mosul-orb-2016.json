@@ -56,5 +56,16 @@
     "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0.05,
     "indet": 0.31
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/mosul-orb-2016-context.png",
+      "type": "image",
+      "title": "Contexto · Mosul (Irak), sobre cuya área una plataforma de EE.UU. grabó la esfera",
+      "title_en": "Context · Mosul (Iraq), over whose area a US platform recorded the orb",
+      "source": "Collage of Mosul.png · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACollage%20of%20Mosul.png"
+    }
+  ]
 }
