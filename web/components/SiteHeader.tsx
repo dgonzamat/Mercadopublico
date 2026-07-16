@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { T } from "@/components/T";
+import { localizeHref } from "@/components/LocaleLink";
 import { SiteSearch } from "@/components/SiteSearch";
 import { ShareButton } from "@/components/ShareButton";
 import { HeaderNav } from "@/components/HeaderNav";
@@ -53,7 +54,7 @@ export function SiteHeader() {
         }`}
       >
         <Link
-          href="/"
+          href={localizeHref("/", pathname)}
           className={`group flex min-w-0 items-center gap-3 py-5 ${dark ? "text-bg" : "text-text"}`}
           aria-label="UAP Codex"
         >
@@ -80,7 +81,7 @@ export function SiteHeader() {
           </div>
           <HeaderNav dark={dark} />
           <Link
-            href="/probabilidades"
+            href={localizeHref("/probabilidades", pathname)}
             className={`inline-flex items-center gap-2 border-l-4 bg-accent px-4 font-display text-base font-medium text-bg ${
               dark
                 ? "border-bg/20 hover:bg-bg hover:text-text"

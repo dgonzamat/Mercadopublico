@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import Link from "next/link";
 import { Fraunces, Inter } from "next/font/google";
 import { ShareButton } from "@/components/ShareButton";
 import { InstagramLink } from "@/components/InstagramLink";
 import { PinterestLink } from "@/components/PinterestLink";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocaleLink } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { AnchorExpander } from "@/components/AnchorExpander";
 import { VisitorBeacon } from "@/components/VisitorBeacon";
@@ -237,12 +237,12 @@ function FooterLink({
 }) {
   return (
     <li>
-      <Link
+      <LocaleLink
         href={href}
         className="inline-block min-h-[36px] py-1 text-sm text-text underline-offset-4 hover:text-accent hover:underline"
       >
         <T es={es} en={en} />
-      </Link>
+      </LocaleLink>
     </li>
   );
 }

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { localizeHref } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { SiteSearch } from "@/components/SiteSearch";
 import { LocaleToggle } from "@/components/LocaleToggle";
@@ -65,8 +66,12 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
   const { user } = useAuth();
-  const isActive = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
+  // href efectivo según locale (en /en/ → /en/…); "activo" contra el localizado.
+  const hrefFor = (href: string) => localizeHref(href, pathname);
+  const isActive = (href: string) => {
+    const h = hrefFor(href);
+    return pathname === h || pathname.startsWith(`${h}/`);
+  };
 
   // Locale activo para los aria-label (atributos, no pueden usar <T>).
   const [locale, setLocale] = useState<"es" | "en">("es");
@@ -172,7 +177,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
               {/* PRIMARY CTA */}
               <Link
                 ref={firstLinkRef}
-                href={PRIMARY_CTA.href}
+                href={hrefFor(PRIMARY_CTA.href)}
                 onClick={() => setOpen(false)}
                 className="group mt-8 block bg-accent p-6 hover:bg-bg hover:text-text"
               >
@@ -216,7 +221,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 {NAV_LINKS.map((l) => (
                   <li key={l.href}>
                     <Link
-                      href={l.href}
+                      href={hrefFor(l.href)}
                       onClick={() => setOpen(false)}
                       aria-current={isActive(l.href) ? "page" : undefined}
                       className="group flex min-h-[68px] items-center justify-between gap-4 py-5 hover:bg-bg hover:px-4 hover:-mx-4 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -252,7 +257,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 {SECONDARY_LINKS.map((l) => (
                   <li key={l.href}>
                     <Link
-                      href={l.href}
+                      href={hrefFor(l.href)}
                       onClick={() => setOpen(false)}
                       aria-current={isActive(l.href) ? "page" : undefined}
                       className={`block min-h-[48px] py-3 text-sm font-medium underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${

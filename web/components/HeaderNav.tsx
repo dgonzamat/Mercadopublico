@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { T } from "@/components/T";
+import { localizeHref } from "@/components/LocaleLink";
 import { useAuth } from "@/components/auth/AuthProvider";
 
 /**
@@ -29,8 +30,13 @@ const NAV: Array<{ href: string; es: string; en: string }> = [
 export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
   const pathname = usePathname();
   const { user } = useAuth();
-  const isActive = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
+  // El href efectivo depende del locale (en /en/ apunta a /en/…). El estado
+  // "activo" se compara contra ese href localizado para resaltar bien en /en/.
+  const hrefFor = (href: string) => localizeHref(href, pathname);
+  const isActive = (href: string) => {
+    const h = hrefFor(href);
+    return pathname === h || pathname.startsWith(`${h}/`);
+  };
 
   const linkClass = (active: boolean) =>
     `inline-flex items-center border-l px-3 font-display text-base font-medium ${
@@ -44,7 +50,7 @@ export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
       {NAV.map((l) => (
         <Link
           key={l.href}
-          href={l.href}
+          href={hrefFor(l.href)}
           aria-current={isActive(l.href) ? "page" : undefined}
           className={linkClass(isActive(l.href))}
         >
