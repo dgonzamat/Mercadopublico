@@ -59,5 +59,16 @@
       "url": "https://ufoac.com/the-incident-with-the-cuban-jet-ufo.html",
       "note": "Resumen del caso y de sus problemas de verificación (NSA nunca confirmó)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/cuba-mig-1967-context.jpg",
+      "type": "image",
+      "title": "Contexto · un caza MiG-21, del tipo cubano implicado en el reporte de la NSA de 1967",
+      "title_en": "Context · a MiG-21 fighter, the Cuban type involved in the 1967 NSA report",
+      "source": "Czech MiG-21 at CAM.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACzech%20MiG-21%20at%20CAM.jpg"
+    }
   ]
 }

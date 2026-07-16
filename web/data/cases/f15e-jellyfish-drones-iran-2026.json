@@ -68,5 +68,16 @@
       "url": "https://www.timesofisrael.com/us-pilot-downed-over-iran-reported-seeing-jellyfish-like-drone-formation-report/",
       "note": "Cobertura corroborante con contexto del conflicto."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/f15e-jellyfish-drones-iran-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · un F-15 Strike Eagle de la USAF, del tipo derribado sobre Irán en 2026",
+      "title_en": "Context · a USAF F-15 Strike Eagle, of the type downed over Iran in 2026",
+      "source": "F-15EX Eagle II.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AF-15EX%20Eagle%20II.jpg"
+    }
   ]
 }

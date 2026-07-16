@@ -52,5 +52,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.03,
     "indet": 0.32
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/soesterberg-1979-context.jpg",
+      "type": "image",
+      "title": "Contexto · la base aérea de Soesterberg (Países Bajos)",
+      "title_en": "Context · Soesterberg Air Base (Netherlands)",
+      "source": "Vliegbasis Soesterberg 2.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AVliegbasis%20Soesterberg%202.jpg"
+    }
+  ]
 }
