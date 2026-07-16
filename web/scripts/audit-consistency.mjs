@@ -502,6 +502,43 @@ if (shortBodies.length > 0) {
   );
 }
 
+// ─── 9f-bis. RULE E21: cobertura de visual (PDF/imagen) por caso (WARN) ───
+//
+// Estándar (jul 2026): todo caso debería embeber al menos UN asset visual
+// —un documento en el visor (`documents[]`), un documento primario
+// (`primaryDocument`) o un destacado (`featuredDoc`)— para que el detalle no
+// sea solo prosa. Un caso "tiene visual" si cualquiera de esas tres vías
+// aporta un PDF o una imagen. WARN agregado —no ERROR— porque conseguir el
+// asset exige investigación/hosting caso por caso (war.gov bloquea el embed
+// de terceros: hay que rehostear en `/pursue` o el bucket Supabase; ver la
+// sección del visor en CLAUDE.md); el conteo deja el progreso medible y
+// prioriza Tier S→A→B, mismo patrón que E13.
+
+const hasVisualAsset = (c) =>
+  (Array.isArray(c.documents) && c.documents.length > 0) ||
+  (c.primaryDocument && (c.primaryDocument.url || c.primaryDocument.href)) ||
+  (c.featuredDoc && c.featuredDoc.url);
+
+const noVisual = cases.filter((c) => !hasVisualAsset(c));
+if (noVisual.length > 0) {
+  const byTier = { S: 0, A: 0, B: 0 };
+  for (const c of noVisual) byTier[c.tier] = (byTier[c.tier] || 0) + 1;
+  const sampleS = noVisual
+    .filter((c) => c.tier === "S")
+    .slice(0, 12)
+    .map((c) => `${c.id}`)
+    .join(", ");
+  record(
+    "WARN",
+    casesDir,
+    0,
+    `E21 visual: ${noVisual.length}/${cases.length} casos sin PDF ni imagen ` +
+      `(ni documents[] ni primaryDocument ni featuredDoc). Backlog por tier: ` +
+      `S×${byTier.S} A×${byTier.A} B×${byTier.B}. Rehostear en /pursue o el ` +
+      `bucket (war.gov bloquea el embed), prioridad S→A→B. Tier S pendientes: ${sampleS || "—"}`,
+  );
+}
+
 // ─── 9g. RULES M1/M2: invariantes del modelo MECE (posterior) ────────────
 //
 // Modelo MECE (lib/meceModel.ts): cada caso de incidente reparte el
