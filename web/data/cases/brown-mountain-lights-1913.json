@@ -64,5 +64,16 @@
       "note": "Documenta los puntos oficiales de observación y la tradición del fenómeno.",
       "note_en": "Documents the official observation points and the tradition of the phenomenon."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/brown-mountain-lights-1913-context.png",
+      "type": "image",
+      "title": "Contexto · Brown Mountain (Carolina del Norte), donde aparecen las 'luces' recurrentes",
+      "title_en": "Context · Brown Mountain (North Carolina), where the recurring 'lights' appear",
+      "source": "Brown mountain trails.png · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABrown%20mountain%20trails.png"
+    }
   ]
 }

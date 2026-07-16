@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.11,
     "indet": 0.33
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/cressy-tasmania-1960-context.jpg",
+      "type": "image",
+      "title": "Contexto · Cressy (Tasmania, Australia)",
+      "title_en": "Context · Cressy (Tasmania, Australia)",
+      "source": "Cressy - Tender.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACressy%20-%20Tender.jpg"
+    }
+  ]
 }
