@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
 import type { UAPCase } from "@/lib/types";
 import { EpistemicBadge } from "@/components/Badge";
 import { T } from "@/components/T";
@@ -10,7 +10,7 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
     ? `${caseData.year_start}–${String(caseData.year_end).slice(-2)}`
     : caseData.year_start.toString();
   return (
-    <Link
+    <LocaleLink
       href={`/cases/${caseData.id}`}
       className="group grid grid-cols-[auto_auto_1fr_auto_auto_auto] items-center gap-4 border-b border-border/50 py-3 transition hover:bg-panel/50"
     >
@@ -50,6 +50,6 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       >
         {caseData.probability}%
       </span>
-    </Link>
+    </LocaleLink>
   );
 }

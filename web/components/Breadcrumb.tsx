@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 
 type Crumb = { href?: string; es: string; en: string };
@@ -20,9 +20,9 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
           return (
             <li key={i} className="flex items-center gap-x-2">
               {it.href && !last ? (
-                <Link href={it.href} className="hover:text-accent">
+                <LocaleLink href={it.href} className="hover:text-accent">
                   <T es={it.es} en={it.en} />
-                </Link>
+                </LocaleLink>
               ) : (
                 <span
                   className={last ? "text-text" : undefined}

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
 import type { ReactNode } from "react";
 
 /**
@@ -43,11 +43,11 @@ export function Cta({
   const colors = onDark ? DARK[variant] : LIGHT[variant];
   const pad = variant === "ghost" ? "" : PAD;
   return (
-    <Link
+    <LocaleLink
       href={href}
       className={[BASE, pad, colors, className].filter(Boolean).join(" ")}
     >
       {children}
-    </Link>
+    </LocaleLink>
   );
 }

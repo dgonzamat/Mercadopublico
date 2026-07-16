@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { Cta } from "@/components/Cta";
 import { CorpusStats } from "@/components/CorpusStats";
@@ -154,13 +155,13 @@ export default function ResumenPage() {
               <>
                 Versión accesible del análisis completo. Para profundidad
                 técnica, ver{" "}
-                <Link href="/probabilidades" className="text-accent hover:underline">
+                <LocaleLink href="/probabilidades" className="text-accent hover:underline">
                   las probabilidades por explicación
-                </Link>{" "}
+                </LocaleLink>{" "}
                 y{" "}
-                <Link href="/about" className="text-accent hover:underline">
+                <LocaleLink href="/about" className="text-accent hover:underline">
                   la metodología
-                </Link>
+                </LocaleLink>
                 .
               </>
             }
@@ -168,13 +169,13 @@ export default function ResumenPage() {
               <>
                 Accessible version of the full analysis. For technical depth,
                 see{" "}
-                <Link href="/probabilidades" className="text-accent hover:underline">
+                <LocaleLink href="/probabilidades" className="text-accent hover:underline">
                   the per-explanation probabilities
-                </Link>{" "}
+                </LocaleLink>{" "}
                 and{" "}
-                <Link href="/about" className="text-accent hover:underline">
+                <LocaleLink href="/about" className="text-accent hover:underline">
                   the methodology
-                </Link>
+                </LocaleLink>
                 .
               </>
             }

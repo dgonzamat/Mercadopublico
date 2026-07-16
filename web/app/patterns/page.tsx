@@ -2,6 +2,7 @@ import { patterns, cases } from "@/lib/data";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
+import { LocaleLink } from "@/components/LocaleLink";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
@@ -41,9 +42,10 @@ export default function PatternsPage() {
         {patterns.map((p) => {
           const count = cases.filter((c) => c.patterns.includes(p.id)).length;
           return (
-            <a
+            <LocaleLink
               key={p.id}
               href={`/patterns/${p.letter}`}
+              prefetch={false}
               className="border border-border bg-panel p-4 transition hover:border-accent/50"
               style={{ borderLeftColor: p.color, borderLeftWidth: 4 }}
             >
@@ -59,7 +61,7 @@ export default function PatternsPage() {
                 </span>
               </div>
               <p className="mt-2 text-xs text-muted">{p.description}</p>
-            </a>
+            </LocaleLink>
           );
         })}
       </div>

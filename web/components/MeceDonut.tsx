@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
+import { usePathname } from "next/navigation";
+import { localizeHref } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 
 export type DonutDatum = {
@@ -25,6 +27,8 @@ const fmtCount = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1))
  * completo y el total — la interactividad es progresiva.
  */
 export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: number; tone?: "light" | "dark" }) {
+  // En el árbol /en/ las anclas de hipótesis apuntan a /en/probabilidades/…
+  const pathname = usePathname();
   // Tokens de "chrome" según el fondo. Clases literales (no concatenadas) para
   // que el JIT de Tailwind las compile. Los colores de segmento no cambian.
   const dark = tone === "dark";
@@ -230,7 +234,7 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
           return (
             <li key={row.key} className="-mx-2 font-mono text-xs" onMouseEnter={() => setActive(row.key)} onMouseLeave={clear}>
               {row.href ? (
-                <a href={row.href} className={`${rowClass} ${rowHover}`} onFocus={() => setActive(row.key)} onBlur={clear}>
+                <a href={localizeHref(row.href, pathname)} className={`${rowClass} ${rowHover}`} onFocus={() => setActive(row.key)} onBlur={clear}>
                   {body}
                 </a>
               ) : (

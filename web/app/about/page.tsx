@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { Cta } from "@/components/Cta";
 import {
@@ -172,7 +173,7 @@ export default function AboutPage() {
                     <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" /></strong> — <T es="cuán genuinamente inexplicado está el caso. Un fenómeno natural puede seguir sin explicación, así que NO equivale a «no-prosaico». Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how genuinely unexplained the case is. A natural phenomenon can remain unexplained, so it does NOT equal «non-prosaic». Shown as «%» on each case and as the marker size on the map." />
                   </li>
                   <li>
-                    <strong className="text-text"><T es="Partición MECE" en="MECE partition" /></strong> — <T es="qué fue: la distribución sobre seis narrativas excluyentes." en="what it was: the distribution over six mutually exclusive narratives." /> <Link href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" /></Link>
+                    <strong className="text-text"><T es="Partición MECE" en="MECE partition" /></strong> — <T es="qué fue: la distribución sobre seis narrativas excluyentes." en="what it was: the distribution over six mutually exclusive narratives." /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" /></LocaleLink>
                   </li>
                 </ul>
                 <Body className="mt-3 text-sm text-muted">
@@ -270,8 +271,8 @@ export default function AboutPage() {
               <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
                 <p className="text-sm text-text">
                   <T
-                    es={<>El detalle por explicación (con números y casos modales) vive en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}para no duplicar el contenido acá.</>}
-                    en={<>The per-explanation detail (with numbers and modal cases) lives in{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>{" "}to avoid duplicating content here.</>}
+                    es={<>El detalle por explicación (con números y casos modales) vive en{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>{" "}para no duplicar el contenido acá.</>}
+                    en={<>The per-explanation detail (with numbers and modal cases) lives in{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>{" "}to avoid duplicating content here.</>}
                   />
                 </p>
               </div>
@@ -300,8 +301,8 @@ export default function AboutPage() {
               </Body>
               <Caption className="pt-2">
                 <T
-                  es={<>La partición completa, las seis narrativas y los casos modales de cada una viven en{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
-                  en={<>The full partition, the six narratives and each one&apos;s modal cases live at{" "}<Link href="/probabilidades" className="text-accent hover:underline">/probabilidades →</Link>.</>}
+                  es={<>La partición completa, las seis narrativas y los casos modales de cada una viven en{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>.</>}
+                  en={<>The full partition, the six narratives and each one&apos;s modal cases live at{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>.</>}
                 />
               </Caption>
             </div>

@@ -2,6 +2,7 @@ import { researchers, getFramework } from "@/lib/data";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
+import { LocaleLink } from "@/components/LocaleLink";
 import { CategoryNav } from "@/components/CategoryNav";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { RegionFilter } from "@/components/RegionFilter";
@@ -143,8 +144,9 @@ export default function ResearchersPage() {
                     data-region={regionOf(flagToCountry(r.flag)) ?? "otro"}
                     className="contents"
                   >
-                  <a
+                  <LocaleLink
                     href={`/researchers/${r.id}`}
+                    prefetch={false}
                     className="flex gap-3 border border-border bg-panel p-4 transition hover:border-accent/50"
                   >
                     <ResearcherAvatar researcher={r} size="sm" />
@@ -171,7 +173,7 @@ export default function ResearchersPage() {
                         <T es={r.bio_short} en={r.bio_short_en} />
                       </p>
                     </div>
-                  </a>
+                  </LocaleLink>
                   </div>
                 );
               })}
