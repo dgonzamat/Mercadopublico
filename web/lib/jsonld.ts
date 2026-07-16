@@ -172,3 +172,32 @@ export function researcherJsonLd(r: Researcher) {
     subjectOf: { "@id": `${SITE_URL}/#website` },
   };
 }
+
+/**
+ * CollectionPage + ItemList para el índice /cases/. Anuncia la colección
+ * completa como lista ordenada de casos (nombre + URL) — para rich results de
+ * colección y para que crawlers/LLM lean el corpus como un conjunto
+ * estructurado, no solo una página de enlaces. Ligado al WebSite vía isPartOf.
+ */
+export function casesCollectionJsonLd(cases: UAPCase[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${SITE_URL}/cases/#collection`,
+    name: "Casos UAP institucionales",
+    url: `${SITE_URL}/cases/`,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    inLanguage: ["es", "en"],
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: cases.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: cases.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${SITE_URL}/cases/${c.id}/`,
+        name: c.name,
+      })),
+    },
+  };
+}

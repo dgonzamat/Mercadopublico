@@ -12,15 +12,16 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
+import { pageMeta } from "@/lib/seo";
+import { casesCollectionJsonLd, serializeJsonLd } from "@/lib/jsonld";
 
 const TIER_ORDER = ["S", "A", "B"] as const;
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Casos UAP institucionales (1947–2026)",
   description: `${TOTAL_CASES} casos UAP institucionales documentados entre 1947 y 2026 — archivo cronológico con nivel de evidencia y fuentes primarias.`,
-
-  alternates: { canonical: "/cases/" },
-};
+  path: "/cases/",
+});
 
 const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
   {
@@ -101,6 +102,12 @@ export default function CasesPage() {
 
   return (
     <div data-cases-root className="space-y-12 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(casesCollectionJsonLd(cases)),
+        }}
+      />
       <header className="space-y-4">
         <Eyebrow>
           <T es="El archivo · 1947–2026" en="The archive · 1947–2026" />

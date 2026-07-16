@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 import { Cta } from "@/components/Cta";
 import {
   Eyebrow,
@@ -12,13 +13,12 @@ import {
 import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Metodología — cómo se pesa la evidencia",
   description:
     "Cómo se pesa la evidencia: tres niveles de fuerza probatoria (Tier S/A/B), retornos decrecientes por caso, y por qué las seis narrativas reparten el 100% de forma comparable.",
-
-  alternates: { canonical: "/about/" },
-};
+  path: "/about/",
+});
 
 const CHAPTERS = [
   {

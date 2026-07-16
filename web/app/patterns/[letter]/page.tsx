@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { pageMeta } from "@/lib/seo";
 import { patterns, getCasesByPattern } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -21,9 +22,11 @@ export async function generateMetadata(
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) return { title: "Patrón no encontrado" };
   return {
-    title: `${p.id} ${p.name}`,
-    description: p.description,
-    alternates: { canonical: `/patterns/${p.letter}/` },
+    ...pageMeta({
+      title: `${p.id} ${p.name}`,
+      description: p.description,
+      path: `/patterns/${p.letter}/`,
+    }),
   };
 }
 

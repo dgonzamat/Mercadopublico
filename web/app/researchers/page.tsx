@@ -1,4 +1,5 @@
 import { researchers, getFramework } from "@/lib/data";
+import { pageMeta } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { CategoryNav } from "@/components/CategoryNav";
@@ -9,13 +10,12 @@ import { ContractorsShowcase } from "@/components/ContractorsShowcase";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Actores del ecosistema de divulgación UAP",
   description:
     "Investigadores, denunciantes, políticos, periodistas y figuras ontológico-religiosas que sostienen la divulgación UAP contemporánea.",
-
-  alternates: { canonical: "/researchers/" },
-};
+  path: "/researchers/",
+});
 
 const sections = [
   {

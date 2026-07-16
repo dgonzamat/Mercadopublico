@@ -1,12 +1,16 @@
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 import { posts } from "@/lib/posts";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
-  title: "Blog — notas del cuaderno de investigación",
-  description:
-    "Notas de método, decisiones de análisis y avances del cuaderno de investigación UAP Codex.",
+  ...pageMeta({
+    title: "Blog — notas del cuaderno de investigación",
+    description:
+      "Notas de método, decisiones de análisis y avances del cuaderno de investigación UAP Codex.",
+    path: "/blog/",
+  }),
   alternates: {
     canonical: "/blog/",
     types: { "application/rss+xml": "/feed.xml" },
