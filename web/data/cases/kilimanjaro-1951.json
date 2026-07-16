@@ -1,0 +1,74 @@
+{
+  "id": "kilimanjaro-1951",
+  "num": 327,
+  "name": "Monte Kilimanjaro · objeto metálico sobre Tanganica avistado por una tripulación de East African Airways (1951)",
+  "name_en": "Mount Kilimanjaro · metallic object over Tanganyika seen by an East African Airways crew (1951)",
+  "year_start": 1951,
+  "country": "TZ",
+  "country_name": "Tanzania",
+  "flag": "🇹🇿",
+  "location": {
+    "lat": -3.0674,
+    "lng": 37.3556,
+    "place": "Monte Kilimanjaro, Tanganica (hoy Tanzania)",
+    "place_en": "Mount Kilimanjaro, Tanganyika (today Tanzania)"
+  },
+  "tier": "A",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 34,
+  "patterns": ["8h"],
+  "posterior": {
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.18,
+    "indet": 0.20
+  },
+  "summary": "El 19 de febrero de 1951, la tripulación y siete pasajeros de un vuelo de East African Airways entre Nairobi y Mombasa observaron un objeto metálico tipo bala, de más de 60 metros, estacionario durante 17 minutos sobre el monte Kilimanjaro antes de ascender y desaparecer a unos 12.000 m. Nueve testigos firmaron una declaración jurada; los intentos de fotografiarlo no dieron nada concluyente. Caso clásico de aviación de la ola de 1950-51.",
+  "summary_en": "On 19 February 1951, the crew and seven passengers of an East African Airways flight between Nairobi and Mombasa watched a metallic, bullet-shaped object over 60 metres long hover for 17 minutes above Mount Kilimanjaro before rising and vanishing at about 12,000 m. Nine witnesses signed a sworn affidavit; attempts to photograph it yielded nothing conclusive. A classic aviation case of the 1950-51 wave.",
+  "whatHappened": "En la mañana del 19 de febrero de 1951, un avión de East African Airways cubría la ruta entre Nairobi y Mombasa cuando, alrededor de las 07:20, el radiooperador Dennis W. Merrifield avisó al comandante para señalarle un objeto brillante —como una estrella o una luz blanca— suspendido en el cielo a unos 3.000 metros de altura, en las inmediaciones del monte Kilimanjaro. El comandante, el capitán Jack V. Bicknell, un ex piloto de BOAC, tomó unos prismáticos y observó el objeto con detalle mientras la aeronave mantenía el rumbo.\n\nLo que describió no encajaba con ninguna aeronave conocida de la época. Se trataba de un objeto metálico con forma de bala o de cigarro, que debía medir más de 60 metros de largo. En uno de sus extremos tenía una aleta vertical de corte recto; su color era un plateado mate y, a intervalos regulares a lo largo del fuselaje, presentaba bandas verticales oscuras. Bicknell insistió en que el contorno era nítido y limpio, sin la menor bruma ni difuminado, lo que descartaba a su juicio un fenómeno atmosférico borroso. El objeto permaneció completamente estacionario durante unos 17 minutos —una inmovilidad prolongada difícil de reconciliar con un vehículo aerodinámico convencional— y luego comenzó a desplazarse hacia el este, ganando altura a medida que se alejaba, hasta desvanecerse a unos 12.000 metros.\n\nLo que distingue a este avistamiento de la mayoría de la casuística de la época es la calidad de los testigos y su formalización. Siete pasajeros y dos miembros de la tripulación firmaron una declaración jurada de lo que habían visto, un gesto poco común que dejó constancia documental del episodio. Dos pasajeros estadounidenses intentaron filmar el objeto con cámaras de cine equipadas con teleobjetivos, y un tercero lo fotografió con una cámara de bolsillo. Sin embargo, el resultado fotográfico fue decepcionante: la única imagen fija que se hizo pública mostraba apenas una mancha borrosa, y de la película de cine —descrita como «bastante clara» por quienes la vieron— se dijo después que se había perdido, junto con el pasajero que la guardaba. Este último detalle, imposible de verificar, pasó a formar parte del folclore del caso más que de su base probatoria.\n\nEl avistamiento ocurrió en pleno auge de la oleada mundial de «platillos volantes» de 1950-51 y en el contexto del África oriental británica colonial. Reseñado en la prensa de la época y recogido luego por los primeros catálogos ufológicos, se convirtió en uno de los casos africanos de referencia de la década, precisamente por combinar a un piloto experimentado, una observación diurna prolongada y una descripción estructurada del objeto.",
+  "whatHappened_en": "On the morning of 19 February 1951, an East African Airways aircraft was flying the Nairobi–Mombasa route when, at about 07:20, radio officer Dennis W. Merrifield called the captain to point out a bright object —like a star or a white light— suspended in the sky at some 3,000 metres, in the vicinity of Mount Kilimanjaro. The captain, Jack V. Bicknell, a former BOAC pilot, took a pair of binoculars and studied the object in detail while the aircraft held its course.\n\nWhat he described fitted no known aircraft of the era. It was a metallic, bullet- or cigar-shaped object that must have been over 60 metres long. At one end it had a square-cut vertical fin; its colour was a dull silver and, at regular intervals along the fuselage, it showed dark vertical bands. Bicknell insisted the outline was sharp and clean, without the slightest haze or blurring, which in his judgement ruled out a fuzzy atmospheric phenomenon. The object stayed completely stationary for about 17 minutes —a prolonged stillness hard to reconcile with a conventional aerodynamic craft— and then began moving eastwards, gaining height as it went, until it vanished at around 12,000 metres.\n\nWhat sets this sighting apart from most of the casuistry of the era is the quality of the witnesses and its formalisation. Seven passengers and two crew members signed a sworn affidavit of what they had seen, an unusual gesture that left a documentary record of the episode. Two American passengers tried to film the object with cine cameras fitted with telephoto lenses, and a third photographed it with a pocket camera. The photographic result, however, was disappointing: the only still image made public showed no more than a blurred spot, and the cine film —described as «quite clear» by those who saw it— was later said to have been lost, along with the passenger who kept it. This last detail, impossible to verify, became part of the case's folklore rather than of its evidential base.\n\nThe sighting took place at the height of the worldwide 1950-51 «flying saucer» wave and in the context of colonial British East Africa. Reported in the press of the day and later collected by the earliest UFO catalogues, it became one of the reference African cases of the decade, precisely because it combined an experienced pilot, a prolonged daytime observation and a structured description of the object.",
+  "whyMatters": "El caso importa por dos razones. La primera es de cobertura: Tanzania (entonces Tanganica) no tenía ningún caso en el corpus, y la década de 1950 africana estaba escasamente representada frente al peso norteamericano. Un avistamiento de aviación con testigos múltiples y declaración jurada ancla el atlas en el África oriental de mediados de siglo.\n\nLa segunda es analítica. Es un caso de manual del tipo «creíble pero explicable», y su valor está justamente en cómo se pondera. El candidato prosaico más fuerte es un globo de gran altitud: en 1950-51 circulaban globos científicos y de reconocimiento tipo Skyhook, y un objeto plateado, grande, estacionario, que luego asciende lentamente y se pierde a 12.000 metros encaja bien con el comportamiento de un globo visto desde un ángulo cambiante. A eso se suman las misidentificaciones atmosféricas o astronómicas al amanecer. Por eso la mayor parte de la probabilidad va a lo mundano. Y sin embargo, la descripción estructurada —aleta vertical de corte recto, bandas oscuras regulares, 60 metros de eslora, contorno nítido— y el peso de nueve testigos adultos, entre ellos un piloto experimentado, mantienen vivo un residuo de anomalía genuina que impide colapsar el caso a cero.\n\nEl episodio también sirve de advertencia metodológica sobre la evidencia fotográfica. Había cámaras a bordo y aun así el resultado fue una mancha borrosa; y la película «clara» que supuestamente desapareció con su dueño es exactamente el tipo de afirmación no verificable que infla la leyenda sin sumar prueba. El corpus la registra como folclore, no como dato. Por eso el caso es tier A y no S: es creíble, documentado y multi-testigo, pero puramente visual —sin confirmación de radar ni instrumentación— y con un candidato mundano robusto. Aceptable, no sólido: el reparto MECE deja la explicación abierta entre el globo/misidentificación, un residuo de fenómeno estructurado no explicado y una indeterminación honesta.",
+  "whyMatters_en": "The case matters for two reasons. The first is coverage: Tanzania (then Tanganyika) had no case in the corpus, and the 1950s in Africa were sparsely represented against the North American weight. An aviation sighting with multiple witnesses and a sworn affidavit anchors the atlas in mid-century East Africa.\n\nThe second is analytical. It is a textbook «credible but explicable» case, and its value lies precisely in how it is weighed. The strongest prosaic candidate is a high-altitude balloon: in 1950-51 scientific and reconnaissance balloons of the Skyhook type were aloft, and a large, silvery, stationary object that then rises slowly and is lost at 12,000 metres fits the behaviour of a balloon seen from a changing angle. Add atmospheric or astronomical misidentification at dawn. That is why most of the probability goes to the mundane. And yet, the structured description —square-cut vertical fin, regular dark bands, 60 metres long, sharp outline— and the weight of nine adult witnesses, among them an experienced pilot, keep alive a residue of genuine anomaly that prevents collapsing the case to zero.\n\nThe episode also serves as a methodological caution about photographic evidence. There were cameras on board and yet the result was a blurred spot; and the «clear» film that supposedly vanished with its owner is exactly the kind of unverifiable claim that inflates the legend without adding proof. The corpus records it as folklore, not data. That is why the case is tier A and not S: it is credible, documented and multi-witness, but purely visual —without radar or instrumented confirmation— and with a robust mundane candidate. Acceptable, not solid: the MECE split leaves the explanation open between balloon/misidentification, a residue of unexplained structured phenomenon and honest indeterminacy.",
+  "evidence": [
+    "Declaración jurada firmada por siete pasajeros y dos miembros de la tripulación del vuelo de East African Airways (Nairobi–Mombasa).",
+    "Observación diurna prolongada (~17 minutos) del objeto estacionario, iniciada por el radiooperador Dennis W. Merrifield y confirmada por el comandante Jack V. Bicknell, ex piloto de BOAC.",
+    "Descripción estructurada mediante prismáticos: objeto metálico tipo bala de más de 60 m, aleta vertical de corte recto en un extremo, plateado mate con bandas verticales oscuras a intervalos regulares, contorno nítido.",
+    "Trayectoria final: desplazamiento hacia el este ganando altura hasta desvanecerse a unos 12.000 m.",
+    "Intentos de registro fotográfico: dos pasajeros estadounidenses con cámaras de cine y teleobjetivo y un tercero con cámara de bolsillo; la única foto pública quedó como una mancha borrosa.",
+    "Cobertura de prensa de la época e inclusión posterior en los catálogos ufológicos como caso africano de referencia de los años 50."
+  ],
+  "evidence_en": [
+    "Sworn affidavit signed by seven passengers and two crew members of the East African Airways flight (Nairobi–Mombasa).",
+    "Prolonged daytime observation (~17 minutes) of the stationary object, initiated by radio officer Dennis W. Merrifield and confirmed by Captain Jack V. Bicknell, a former BOAC pilot.",
+    "Structured description through binoculars: metallic bullet-shaped object over 60 m long, square-cut vertical fin at one end, dull silver with dark vertical bands at regular intervals, sharp outline.",
+    "Final trajectory: eastward movement gaining altitude until vanishing at about 12,000 m.",
+    "Photographic attempts: two American passengers with cine cameras and telephoto lenses and a third with a pocket camera; the only public photo remained a blurred spot.",
+    "Contemporary press coverage and later inclusion in UFO catalogues as a reference African case of the 1950s."
+  ],
+  "sources": [
+    {
+      "name": "«Cigar-shaped UFO over Mt. Kilimanjaro witnessed by pilot and passengers» — UFO Evidence (caso 648)",
+      "url": "http://ufoevidence.org/cases/case648.htm",
+      "note": "Cronología del avistamiento, testigos y descripción del objeto."
+    },
+    {
+      "name": "Patrick Gross, «February 19, 1951, Mount Kilimanjaro, Africa» — ufologie.patrickgross.org",
+      "url": "https://ufologie.patrickgross.org/htm/kilimandjaro1951.htm",
+      "note": "Recopilación de las fuentes primarias y de prensa del caso."
+    },
+    {
+      "name": "Project 1947, «UFO Reports and Documents from 1951»",
+      "url": "http://www.project1947.com/fig/1951a.htm",
+      "note": "Registro documental del avistamiento en el contexto de la ola de 1951."
+    },
+    {
+      "name": "«Mt. Kilimanjaro, Tanganyika, February 19, 1951: Photo Located» — Greenwood UFO Archive (UHR #16)",
+      "url": "http://www.greenwoodufoarchive.com/uhr/uhr16.pdf",
+      "note": "Análisis de la fotografía asociada al caso."
+    }
+  ]
+}
