@@ -9,7 +9,7 @@
   "flag": "🇺🇸",
   "location": {
     "lat": 47.2528,
-    "lng": -85.0,
+    "lng": -85,
     "place": "Lago Superior (frente a Kinross AFB, Michigan)",
     "place_en": "Lake Superior (off Kinross AFB, Michigan)"
   },
@@ -59,13 +59,13 @@
   },
   "documents": [
     {
-      "src": "/pursue/kinross-incident-1953-context.svg",
+      "src": "/pursue/kinross-incident-1953-context.jpg",
       "type": "image",
       "title": "Contexto · un Northrop F-89 Scorpion, el tipo de caza desaparecido sobre el lago Superior",
       "title_en": "Context · a Northrop F-89 Scorpion, the interceptor type lost over Lake Superior",
-      "source": "Northrop F-89 Scorpion 3-view.svg · Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ANorthrop%20F-89%20Scorpion%203-view.svg"
+      "source": "Northrop F-89 Scorpion at the Heritage Flight Museum.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Northrop%20F-89%20Scorpion%20at%20the%20Heritage%20Flight%20Museum.jpg"
     }
   ]
 }
