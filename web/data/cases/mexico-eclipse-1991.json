@@ -1,0 +1,69 @@
+{
+  "id": "mexico-eclipse-1991",
+  "num": 328,
+  "name": "Oleada del eclipse de México · el objeto filmado durante la totalidad del 11 de julio de 1991",
+  "name_en": "Mexico eclipse wave · the object filmed during totality on 11 July 1991",
+  "year_start": 1991,
+  "country": "MX",
+  "country_name": "México",
+  "flag": "🇲🇽",
+  "location": {
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "place": "Ciudad de México y centro del país",
+    "place_en": "Mexico City and central Mexico"
+  },
+  "tier": "B",
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "mundanoType": "misid",
+  "probability": 16,
+  "patterns": ["8o", "8q"],
+  "posterior": {
+    "mundano_natural": 0.80,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.05,
+    "indet": 0.10
+  },
+  "summary": "El 11 de julio de 1991, durante la totalidad del último eclipse solar total del siglo XX sobre Ciudad de México, decenas de personas grabaron con videocámara un objeto brillante y aparentemente metálico suspendido en el cielo diurno oscurecido. Difundido en televisión por Jaime Maussan, desató la 'oleada de 1991-1993' y fundó el ecosistema mediático-OVNI latinoamericano. El análisis astronómico identifica el objeto como el planeta Venus.",
+  "summary_en": "On 11 July 1991, during the totality of the last total solar eclipse of the 20th century over Mexico City, dozens of people camcordered a bright, seemingly metallic object hovering in the darkened daytime sky. Broadcast on television by Jaime Maussan, it triggered the '1991-1993 wave' and founded the Latin American UFO-media ecosystem. Astronomical analysis identifies the object as the planet Venus.",
+  "whatHappened": "El 11 de julio de 1991, millones de mexicanos salieron a mirar el cielo para ver el último eclipse solar total del siglo XX sobre el centro del país: una totalidad excepcionalmente larga —casi siete minutos— que oscureció Ciudad de México a plena tarde. Entre quienes filmaban el fenómeno, el videoaficionado Guillermo Arreola captó un objeto brillante y aparentemente metálico, con aspecto de disco de base oscura, suspendido e inmóvil en el cielo ya en penumbra. Entregó la cinta al periodista Jaime Maussan, que la emitió en su espacio televisivo de reportajes.\n\nLa emisión tuvo un efecto de bola de nieve. Miles de televidentes llamaron para decir que ellos también habían visto —y en muchos casos grabado— un objeto igual o parecido ese mismo día. Con el tiempo se reunieron grabaciones de al menos una quincena de personas distintas, tomadas desde puntos separados por más de cien kilómetros dentro y alrededor de la zona metropolitana. El objeto se describía de forma consistente: metálico, con una parte superior redondeada y una base plana u oscura, a veces con luces, colgado bajo la capa de nubes. La coincidencia de tantos registros independientes se presentó como prueba de que algo físico y real estaba allí, y el episodio pasó a llamarse «el avistamiento masivo mejor documentado de la historia».\n\nEl análisis posterior, sin embargo, apunta con fuerza a una explicación prosaica. El escéptico y aficionado a la astronomía Tim Printy reconstruyó la posición de los astros durante el eclipse con software de planetario y concluyó que el objeto correspondía al planeta Venus, muy visible en el cielo oscurecido durante la totalidad. Venus ese día era un creciente parcial —de ahí que el «disco» se viera redondeado por arriba y plano por abajo— y los sensores CCD de las videocámaras de la época generaban una «sombra» artificial bajo cualquier objeto brillante, lo que producía la ilusión de un cuerpo tridimensional metálico iluminado por arriba y en sombra por debajo. Que el objeto se viera desde puntos tan distantes en la misma posición del cielo, lejos de indicar una nave cercana, es justo lo que cabe esperar de un cuerpo astronómico: un objeto próximo mostraría paralaje entre observadores separados cien kilómetros; Venus no. Y el objeto permaneció inmóvil y se «desvaneció» al final de la totalidad, cuando el cielo volvió a aclararse y Venus dejó de destacar.",
+  "whatHappened_en": "On 11 July 1991, millions of Mexicans went out to watch the sky for the last total solar eclipse of the 20th century over the centre of the country: an exceptionally long totality —almost seven minutes— that darkened Mexico City in mid-afternoon. Among those filming the event, amateur videographer Guillermo Arreola captured a bright, seemingly metallic object, shaped like a dark-based disc, hovering motionless in the already-dimmed sky. He handed the tape to journalist Jaime Maussan, who aired it on his television news-magazine slot.\n\nThe broadcast had a snowball effect. Thousands of viewers called in to say they too had seen —and in many cases recorded— an identical or similar object that same day. Over time, footage was gathered from at least fifteen different people, taken from points more than a hundred kilometres apart in and around the metropolitan area. The object was described consistently: metallic, with a rounded top and a flat or dark base, sometimes with lights, hanging below the cloud layer. The coincidence of so many independent recordings was presented as proof that something physical and real had been there, and the episode came to be called «the best-documented mass sighting in history».\n\nLater analysis, however, points strongly to a prosaic explanation. Sceptic and amateur astronomer Tim Printy reconstructed the positions of the celestial bodies during the eclipse with planetarium software and concluded that the object matched the planet Venus, highly visible in the darkened sky during totality. Venus that day was a partial crescent —hence the «disc» appearing rounded on top and flat on the bottom— and the CCD sensors of the era's camcorders generated an artificial «shadow» beneath any bright object, producing the illusion of a three-dimensional metallic body lit from above and shadowed below. That the object was seen from such distant points in the same part of the sky, far from indicating a nearby craft, is exactly what one expects of an astronomical body: a nearby object would show parallax between observers a hundred kilometres apart; Venus would not. And the object stayed motionless and «vanished» at the end of totality, when the sky brightened again and Venus stopped standing out.",
+  "whyMatters": "El caso importa menos por lo que fue el objeto —la evidencia converge en Venus— que por lo que desató. El avistamiento del eclipse de 1991 es el acta de nacimiento del ecosistema mediático-OVNI latinoamericano: fue el episodio que convirtió a Jaime Maussan en una figura nacional y luego continental, e inauguró un formato —el reportaje televisivo que pide al público sus propios videos— que alimentó una «oleada» sostenida entre 1991 y 1993 y un mercado de contenidos que sigue vivo décadas después (el corpus ya recoge su prolongación institucional en el caso del Congreso mexicano de 2023). Por eso se cataloga: es un nodo de red, no una prueba de anomalía.\n\nEs, además, un estudio de manual de dos mecanismos mundanos actuando a la vez. Primero, la misidentificación astronómica: un planeta brillante en un cielo anómalamente oscuro, deformado por la óptica y los sensores de las cámaras domésticas de la época, que se lee como una nave estructurada. Segundo, la sincronización cultural: una vez que la televisión mostró «el OVNI del eclipse» y pidió más cintas, miles de personas reinterpretaron lo que habían grabado a la luz de esa plantilla, y la coincidencia masiva se retroalimentó. El detalle que más se esgrimió como prueba —el mismo objeto visto desde puntos lejanos— es precisamente el que delata su origen astronómico: la ausencia de paralaje es la firma de algo que está a distancia planetaria, no sobre la ciudad.\n\nPor todo ello el reparto MECE carga con fuerza a lo mundano y el caso es tier B: masivo y extraordinariamente documentado en video, pero con una explicación prosaica robusta y contrastable. Su valor para el corpus es doble y honesto: mostrar cómo un fenómeno se explica con astronomía y artefactos de cámara, y cómo un medio de comunicación puede fabricar una «oleada» a partir de un cielo mal interpretado.",
+  "whyMatters_en": "The case matters less for what the object was —the evidence converges on Venus— than for what it triggered. The 1991 eclipse sighting is the birth certificate of the Latin American UFO-media ecosystem: it was the episode that turned Jaime Maussan into a national and then continental figure, and inaugurated a format —the television report that asks the public for their own videos— that fed a sustained «wave» between 1991 and 1993 and a content market still alive decades later (the corpus already records its institutional continuation in the 2023 Mexican Congress case). That is why it is catalogued: it is a network node, not proof of anomaly.\n\nIt is also a textbook study of two mundane mechanisms acting at once. First, astronomical misidentification: a bright planet in an anomalously dark sky, distorted by the optics and sensors of the era's home cameras, read as a structured craft. Second, cultural synchronisation: once television showed «the eclipse UFO» and asked for more tapes, thousands of people reinterpreted what they had filmed in light of that template, and the mass coincidence fed on itself. The detail most often cited as proof —the same object seen from distant points— is precisely the one that gives away its astronomical origin: the absence of parallax is the signature of something at planetary distance, not over the city.\n\nFor all that, the MECE split loads heavily toward the mundane and the case is tier B: massive and extraordinarily documented on video, but with a robust, testable prosaic explanation. Its value to the corpus is twofold and honest: to show how a phenomenon is explained by astronomy and camera artefacts, and how a media outlet can manufacture a «wave» out of a misread sky.",
+  "evidence": [
+    "Grabación original de Guillermo Arreola durante la totalidad del eclipse del 11 de julio de 1991, difundida en televisión por Jaime Maussan.",
+    "Al menos una quincena de videos independientes del mismo objeto, tomados desde puntos separados por más de 100 km dentro y alrededor de la zona metropolitana.",
+    "Descripción consistente del objeto: metálico, parte superior redondeada y base plana/oscura, inmóvil bajo la capa de nubes.",
+    "Reconstrucción astronómica (Tim Printy, con software de planetario): la posición del objeto coincide con el planeta Venus, visible durante la totalidad.",
+    "Venus era un creciente parcial ese día (explica la forma redondeada arriba y plana abajo); los sensores CCD de las videocámaras de la época añadían una 'sombra' artificial bajo los objetos brillantes.",
+    "Ausencia de paralaje entre observadores muy separados: firma de un cuerpo a distancia astronómica, no de una nave sobre la ciudad; el objeto se 'desvaneció' al aclararse el cielo tras la totalidad."
+  ],
+  "evidence_en": [
+    "Guillermo Arreola's original recording during the totality of the 11 July 1991 eclipse, broadcast on television by Jaime Maussan.",
+    "At least fifteen independent videos of the same object, taken from points more than 100 km apart in and around the metropolitan area.",
+    "Consistent description of the object: metallic, rounded top and flat/dark base, motionless below the cloud layer.",
+    "Astronomical reconstruction (Tim Printy, using planetarium software): the object's position matches the planet Venus, visible during totality.",
+    "Venus was a partial crescent that day (explaining the rounded-top, flat-bottom shape); the CCD sensors of the era's camcorders added an artificial 'shadow' beneath bright objects.",
+    "Absence of parallax between widely separated observers: the signature of a body at astronomical distance, not a craft over the city; the object 'vanished' as the sky brightened after totality."
+  ],
+  "sources": [
+    {
+      "name": "Tim Printy, «The July 11, 1991 Mexico City UFOs» — astronomyufo.com",
+      "url": "https://astronomyufo.com/UFO/mexico.htm",
+      "note": "Análisis astronómico que identifica el objeto como el planeta Venus (creciente parcial) y explica los artefactos de cámara."
+    },
+    {
+      "name": "«The 1991 Solar Eclipse Videos Taken over Mexico» — UFO Casebook",
+      "url": "https://www.ufocasebook.com/2012/videomexeclipse1991.html",
+      "note": "Compilación de los videos de la oleada del eclipse y de la difusión televisiva."
+    },
+    {
+      "name": "«Mexico City UFO» — Unsolved Mysteries (ficha del caso)",
+      "url": "https://unsolvedmysteries.fandom.com/wiki/Mexico_City_UFO",
+      "note": "Cronología del avistamiento, el papel de Arreola y Maussan y el número de videógrafos."
+    }
+  ]
+}
