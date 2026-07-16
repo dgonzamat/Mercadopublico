@@ -73,5 +73,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.04,
     "indet": 0.17
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/lake-huron-2023-context.jpg",
+      "type": "image",
+      "title": "Contexto · el lago Hurón, sobre el que un F-16 derribó un objeto en febrero de 2023",
+      "title_en": "Context · Lake Huron, over which an F-16 shot down an object in February 2023",
+      "source": "Lake Huron in winter.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Huron%20in%20winter.jpg"
+    }
+  ]
 }

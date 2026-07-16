@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.01,
     "indet": 0.27
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/cando-spain-1994-context.jpg",
+      "type": "image",
+      "title": "Contexto · Cando (Galicia, España), donde cayó el objeto que dejó el cráter",
+      "title_en": "Context · Cando (Galicia, Spain), where the object that left the crater fell",
+      "source": "Churche of San Tirso de Cando, Cando, Outes, A coruña.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AChurche%20of%20San%20Tirso%20de%20Cando%2C%20Cando%2C%20Outes%2C%20A%20coru%C3%B1a.jpg"
+    }
+  ]
 }

@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.02,
     "indet": 0.2
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/langley-drones-2023-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Base Aérea de Langley (Virginia), sobrevolada por las incursiones de drones",
+      "title_en": "Context · Langley Air Force Base (Virginia), overflown by the drone incursions",
+      "source": "A T-38 Talon taxis down the runway at Langley Air Force Base, Virginia. March 26, 2012.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AA%20T-38%20Talon%20taxis%20down%20the%20runway%20at%20Langley%20Air%20Force%20Base%2C%20Virginia.%20March%2026%2C%202012.jpg"
+    }
+  ]
 }

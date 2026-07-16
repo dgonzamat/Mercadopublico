@@ -90,5 +90,16 @@
     "nohumano_encubierto": 0.2,
     "nohumano_abierto": 0.14,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/nimitz-2004-context.jpg",
+      "type": "image",
+      "title": "Contexto · el portaaviones USS Nimitz (CVN-68), cuyo grupo de combate registró el objeto Tic-Tac en 2004",
+      "title_en": "Context · the aircraft carrier USS Nimitz (CVN-68), whose battle group tracked the Tic-Tac object in 2004",
+      "source": "USS Nimitz (CVN-68) underway at sea, circa in 1978.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Nimitz%20(CVN-68)%20underway%20at%20sea%2C%20circa%20in%201978.jpg"
+    }
+  ]
 }

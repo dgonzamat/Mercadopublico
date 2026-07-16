@@ -60,5 +60,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.03,
     "indet": 0.18
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/minsk-aeroflot-1984-context.jpg",
+      "type": "image",
+      "title": "Contexto · un Tupolev Tu-134 de Aeroflot, el tipo de avión del caso Minsk",
+      "title_en": "Context · an Aeroflot Tupolev Tu-134, the aircraft type of the Minsk case",
+      "source": "MercerMJ Aeroflot Tupolev Tu-134 (8664128490).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMercerMJ%20Aeroflot%20Tupolev%20Tu-134%20(8664128490).jpg"
+    }
+  ]
 }

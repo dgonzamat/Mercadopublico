@@ -62,5 +62,16 @@
     "nohumano_abierto": 0.09,
     "indet": 0.27
   },
-  "name_en": "Hudson Valley Boomerang"
+  "name_en": "Hudson Valley Boomerang",
+  "documents": [
+    {
+      "src": "/pursue/hudson-valley-1983-context.jpg",
+      "type": "image",
+      "title": "Contexto · el valle del Hudson (Nueva York), escenario de la oleada del 'Boomerang'",
+      "title_en": "Context · the Hudson Valley (New York), scene of the 'Boomerang' wave",
+      "source": "Entrance to Highlands, Hudson River, by Deloss Barnum.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEntrance%20to%20Highlands%2C%20Hudson%20River%2C%20by%20Deloss%20Barnum.jpg"
+    }
+  ]
 }

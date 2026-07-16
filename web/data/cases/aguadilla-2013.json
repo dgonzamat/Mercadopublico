@@ -72,5 +72,16 @@
       "name": "Knuth, K. — JSE 2019 'Estimating Flight Characteristics of UAP'",
       "note": "Complementary physical analysis"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/aguadilla-2013-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto de Aguadilla (Puerto Rico), donde una cámara de CBP filmó el objeto",
+      "title_en": "Context · Aguadilla Airport (Puerto Rico), where a CBP camera filmed the object",
+      "source": "Aguadilla airport.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAguadilla%20airport.jpg"
+    }
   ]
 }

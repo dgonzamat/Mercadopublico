@@ -60,5 +60,16 @@
     {
       "name": "FAA FOIA Release — November 2006 O'Hare Incident"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/chicago-ohare-2006-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto O'Hare de Chicago, donde el personal de United vio el disco sobre la puerta C17",
+      "title_en": "Context · Chicago O'Hare Airport, where United staff saw the disc over gate C17",
+      "source": "Concourse B, Chicago O'Hare airport.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AConcourse%20B%2C%20Chicago%20O'Hare%20airport.jpg"
+    }
   ]
 }

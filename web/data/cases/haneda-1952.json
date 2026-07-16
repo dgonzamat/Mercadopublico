@@ -66,5 +66,16 @@
     "nohumano_encubierto": 0.12,
     "nohumano_abierto": 0.13,
     "indet": 0.35
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/haneda-1952-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto de Haneda (Tokio), sede del contacto radar-visual de 1952",
+      "title_en": "Context · Haneda Airport (Tokyo), site of the 1952 radar-visual contact",
+      "source": "Haneda airport 4.jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHaneda%20airport%204.jpg"
+    }
+  ]
 }
