@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
@@ -7,12 +7,15 @@ import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothes
 import { STATS } from "@/lib/siteStats";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 
-export const metadata = pageMeta({
+export const metadata = {
+  ...pageMeta({
   title: "Probabilidades por explicación (modelo MECE)",
   description:
     "Seis narrativas mutuamente excluyentes (objeto + postura institucional): cada caso UAP reparte el 100% y el corpus las agrega de forma comparable (modelo MECE).",
   path: "/probabilidades/",
-});
+}),
+  alternates: { canonical: "/probabilidades/", languages: hreflangFor("/probabilidades/") },
+};
 
 /** Qué significa cada hipótesis (y qué hipótesis del marco anterior preserva). */
 const BLURB: Record<string, { es: string; en: string }> = {

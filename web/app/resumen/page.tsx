@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { Cta } from "@/components/Cta";
 import { CorpusStats } from "@/components/CorpusStats";
 import { STATS } from "@/lib/siteStats";
@@ -13,11 +13,14 @@ import {
   PullQuote,
 } from "@/lib/typography";
 
-export const metadata = pageMeta({
+export const metadata = {
+  ...pageMeta({
   title: "Resumen en 10 minutos",
   description: `Versión accesible del análisis: ${STATS.years} años de fenómeno UAP institucional, ${STATS.cases} casos en ${STATS.countries} países, en 10 minutos de lectura.`,
   path: "/resumen/",
-});
+}),
+  alternates: { canonical: "/resumen/", languages: hreflangFor("/resumen/") },
+};
 
 const FINDINGS = [
   {
