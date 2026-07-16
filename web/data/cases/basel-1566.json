@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.1,
     "indet": 0.28
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/Basel-1566-Seltsame-Gestalt-broadsheet.jpg",
+      "type": "image",
+      "title": "Panfleto de Basilea (1566) · «Seltsame Gestalt» — el fenómeno celeste sobre la ciudad",
+      "title_en": "Basel broadsheet (1566) · «Seltsame Gestalt» — the celestial phenomenon over the city",
+      "source": "Grabado de la época (Basler Chronik) vía Wikimedia Commons",
+      "license": "Dominio público · obra anterior a 1928",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:LinkSeltsame_Gestalt_so_in_disem_MDLXVI_Jar.jpg"
+    }
+  ]
 }

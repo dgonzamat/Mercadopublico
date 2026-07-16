@@ -56,5 +56,16 @@
       "url": "https://en.wikipedia.org/wiki/Battle_of_Los_Angeles",
       "note": "Síntesis de registros oficiales y prensa."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/Battle-of-Los-Angeles-LATimes-1942.jpg",
+      "type": "image",
+      "title": "«La batalla de Los Ángeles» · fotografía de Los Angeles Times (25 feb 1942)",
+      "title_en": "«Battle of Los Angeles» · Los Angeles Times photograph (25 Feb 1942)",
+      "source": "Los Angeles Times (1942) vía Wikimedia Commons",
+      "license": "Dominio público · obra de 1942, sin renovación de copyright",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Battle_of_Los_Angeles_LATimes.jpg"
+    }
   ]
 }
