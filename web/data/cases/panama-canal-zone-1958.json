@@ -72,5 +72,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.18,
     "indet": 0.37
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/panama-canal-zone-1958-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Canal de Panamá (esclusas), en cuya Zona el radar militar detectó el objeto",
+      "title_en": "Context · the Panama Canal locks, in whose Zone military radar tracked the object",
+      "source": "Miraflores Locks Panama 1914.JPG · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMiraflores%20Locks%20Panama%201914.JPG"
+    }
+  ]
 }

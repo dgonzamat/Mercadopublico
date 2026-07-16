@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.12,
     "nohumano_abierto": 0.12,
     "indet": 0.35
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/redmond-oregon-1959-context.jpg",
+      "type": "image",
+      "title": "Contexto · Redmond (Oregón), donde policía, FAA y seis F-102 siguieron el objeto",
+      "title_en": "Context · Redmond (Oregon), where police, FAA and six F-102s tracked the object",
+      "source": "Redmond, Oregon, Business Hwy 97.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ARedmond%2C%20Oregon%2C%20Business%20Hwy%2097.jpg"
+    }
+  ]
 }
