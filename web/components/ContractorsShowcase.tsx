@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { getCase } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { T } from "@/components/T";
@@ -39,7 +40,7 @@ export function ContractorsShowcase() {
         {contractors.map((c) => {
           const people = researchersForCase(c.id);
           return (
-            <Link
+            <LocaleLink
               key={c.id}
               href={`/cases/${c.id}`}
               className="block border border-border bg-panel p-4 transition hover:border-accent/50"
@@ -55,7 +56,7 @@ export function ContractorsShowcase() {
                   {people.map((d) => d.name).join(" · ")}
                 </p>
               )}
-            </Link>
+            </LocaleLink>
           );
         })}
       </div>

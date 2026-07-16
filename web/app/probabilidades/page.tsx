@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
@@ -137,7 +138,7 @@ export default function ProbabilidadesPage() {
                 </Body>
 
                 {total > 0 && (
-                  <Link
+                  <LocaleLink
                     href={`/cases/#${c.key}`}
                     className="group mt-4 inline-flex min-h-[44px] items-center gap-2 font-mono text-xs uppercase tracking-widest text-text underline-offset-4 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
@@ -145,7 +146,7 @@ export default function ProbabilidadesPage() {
                       <T es={`Ver los ${total} casos`} en={`See the ${total} cases`} />
                     </span>
                     <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
-                  </Link>
+                  </LocaleLink>
                 )}
               </div>
             );
@@ -154,13 +155,13 @@ export default function ProbabilidadesPage() {
 
         {/* CTA: explorar el corpus completo */}
         <div className="mt-12 border-t border-border pt-6">
-          <Link
+          <LocaleLink
             href="/cases"
             className="group inline-flex min-h-[44px] items-center gap-2 border-2 border-text px-5 font-display text-base font-medium text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <T es="Explorar los casos en orden cronológico" en="Explore the cases in chronological order" />
             <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
-          </Link>
+          </LocaleLink>
         </div>
       </section>
 

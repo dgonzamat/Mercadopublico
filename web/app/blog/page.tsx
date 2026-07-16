@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { posts } from "@/lib/posts";
 import { T } from "@/components/T";
@@ -45,7 +46,7 @@ export default function BlogPage() {
       <ul className="divide-y divide-text/15 border-y border-text/15">
         {posts.map((p) => (
           <li key={p.id}>
-            <Link
+            <LocaleLink
               href={`/blog/${p.id}`}
               className="group block py-6 hover:-mx-4 hover:bg-panel hover:px-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
@@ -59,7 +60,7 @@ export default function BlogPage() {
               <p className="mt-2 max-w-2xl text-sm text-muted">
                 <T es={p.summary} en={p.summary_en ?? p.summary} />
               </p>
-            </Link>
+            </LocaleLink>
           </li>
         ))}
       </ul>

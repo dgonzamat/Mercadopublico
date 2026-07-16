@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { cases, patterns } from "@/lib/data";
 import {
   tierDistribution,
@@ -153,7 +154,7 @@ export function CorpusStats() {
         <ol className="divide-y divide-text/10 border-t border-text/15">
           {top.map((p, i) => (
             <li key={p.id}>
-              <Link
+              <LocaleLink
                 href={`/patterns/${p.letter}`}
                 className="grid grid-cols-[3rem_1fr_auto] items-baseline gap-6 py-5 transition hover:bg-panel/50 md:gap-8"
               >
@@ -176,7 +177,7 @@ export function CorpusStats() {
                     <T es="casos" en="cases" />
                   </p>
                 </div>
-              </Link>
+              </LocaleLink>
             </li>
           ))}
         </ol>
@@ -185,23 +186,23 @@ export function CorpusStats() {
             es={
               <>
                 ¿Quieres ver los {patterns.length} patrones?{" "}
-                <Link
+                <LocaleLink
                   href="/patterns"
                   className="text-accent hover:underline"
                 >
                   Lista completa →
-                </Link>
+                </LocaleLink>
               </>
             }
             en={
               <>
                 Want to see all {patterns.length} patterns?{" "}
-                <Link
+                <LocaleLink
                   href="/patterns"
                   className="text-accent hover:underline"
                 >
                   Full list →
-                </Link>
+                </LocaleLink>
               </>
             }
           />

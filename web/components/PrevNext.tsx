@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 
 type PrevNextItem = {
@@ -31,7 +31,7 @@ export function PrevNext({
       className="grid grid-cols-2 gap-px border-y-2 border-text bg-text"
     >
       {prev ? (
-        <Link
+        <LocaleLink
           href={prev.href}
           className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
         >
@@ -41,12 +41,12 @@ export function PrevNext({
           <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
             {prev.title}
           </span>
-        </Link>
+        </LocaleLink>
       ) : (
         <div className="bg-bg p-5" aria-hidden />
       )}
       {next ? (
-        <Link
+        <LocaleLink
           href={next.href}
           className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
         >
@@ -56,7 +56,7 @@ export function PrevNext({
           <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
             {next.title}
           </span>
-        </Link>
+        </LocaleLink>
       ) : (
         <div className="bg-bg p-5" aria-hidden />
       )}

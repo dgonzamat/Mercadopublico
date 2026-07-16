@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { notFound } from "next/navigation";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { researchers, getFramework } from "@/lib/data";
@@ -105,12 +106,12 @@ export default async function ResearcherDetailPage(
                 <span className="text-muted">
                   <T es="Marco teórico principal:" en="Primary framework:" />
                 </span>{" "}
-                <Link
+                <LocaleLink
                   href={`/frameworks/#${fw.id}`}
                   className="text-accent hover:underline"
                 >
                   <T es={fw.name} en={fw.name_en} />
-                </Link>
+                </LocaleLink>
               </p>
             )}
           </div>

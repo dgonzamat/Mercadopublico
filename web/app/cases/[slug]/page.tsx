@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
 import { CATEGORY_META, TIER_META } from "@/lib/ui";
@@ -588,7 +588,7 @@ export default async function CaseDetailPage(
             </Eyebrow>
             <div className="flex flex-wrap gap-2">
               {casePatterns.map((p) => (
-                <Link
+                <LocaleLink
                   key={p.id}
                   href={`/patterns/${p.letter}`}
                   className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
@@ -597,7 +597,7 @@ export default async function CaseDetailPage(
                 >
                   <span className="font-mono">{p.id}</span>
                   <span className="ml-2">{p.name}</span>
-                </Link>
+                </LocaleLink>
               ))}
             </div>
           </div>
@@ -646,9 +646,9 @@ export default async function CaseDetailPage(
                   barra reparte el 100% según cuánto pesa cada explicación (la
                   incertidumbre se reparte entre las hipótesis que el caso
                   apoya). Sumadas en todo el corpus producen la{" "}
-                  <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
+                  <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     partición comparable
-                  </Link>
+                  </LocaleLink>
                   . Es una pregunta distinta de la{" "}
                   <em>Probabilidad</em> de arriba: aquella estima qué tan
                   probable es que el caso sea un fenómeno genuinamente no
@@ -661,9 +661,9 @@ export default async function CaseDetailPage(
                   the bar splits 100% by how much each explanation weighs (the
                   uncertainty is spread across the hypotheses the case
                   supports). Summed across the corpus they produce the{" "}
-                  <Link href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
+                  <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     comparable partition
-                  </Link>
+                  </LocaleLink>
                   . It is a different question from the{" "}
                   <em>Probability</em> above: that one estimates how likely the
                   case is a genuinely unexplained phenomenon; this one splits{" "}
@@ -706,7 +706,7 @@ export default async function CaseDetailPage(
                   .filter(Boolean)
                   .join(" · ");
               return (
-                <Link
+                <LocaleLink
                   key={s.caseData.id}
                   href={`/cases/${s.caseData.id}`}
                   className="group flex flex-col gap-2 bg-bg p-5 hover:bg-text hover:text-bg"
@@ -724,7 +724,7 @@ export default async function CaseDetailPage(
                     {s.caseData.year_start} · Tier {s.caseData.tier} ·{" "}
                     {s.caseData.probability}%
                   </p>
-                </Link>
+                </LocaleLink>
               );
             })}
           </div>
@@ -742,7 +742,7 @@ export default async function CaseDetailPage(
           </Eyebrow>
           <div className="grid gap-3 sm:grid-cols-2">
             {caseResearchers.map((r) => (
-              <Link
+              <LocaleLink
                 key={r.id}
                 href={`/researchers/${r.id}`}
                 className="flex items-center gap-3 border border-border bg-panel p-3 transition hover:border-accent/50"
@@ -756,7 +756,7 @@ export default async function CaseDetailPage(
                     <T es={r.section_label} en={r.section_label_en} />
                   </span>
                 </span>
-              </Link>
+              </LocaleLink>
             ))}
           </div>
         </section>
@@ -768,7 +768,7 @@ export default async function CaseDetailPage(
         className="grid grid-cols-2 gap-px border-y-2 border-text bg-text"
       >
         {prev ? (
-          <Link
+          <LocaleLink
             href={`/cases/${prev.id}`}
             className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
           >
@@ -781,12 +781,12 @@ export default async function CaseDetailPage(
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
               <T es={prev.name} en={prev.name_en ?? prev.name} />
             </span>
-          </Link>
+          </LocaleLink>
         ) : (
           <div className="bg-bg p-5" aria-hidden />
         )}
         {next ? (
-          <Link
+          <LocaleLink
             href={`/cases/${next.id}`}
             className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
           >
@@ -799,7 +799,7 @@ export default async function CaseDetailPage(
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
               <T es={next.name} en={next.name_en ?? next.name} />
             </span>
-          </Link>
+          </LocaleLink>
         ) : (
           <div className="bg-bg p-5" aria-hidden />
         )}

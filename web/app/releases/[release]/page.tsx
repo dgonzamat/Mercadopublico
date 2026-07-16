@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { pageMeta } from "@/lib/seo";
 import { cases } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
@@ -126,18 +127,18 @@ export default async function ReleasePage(props: {
       </section>
 
       <nav className="flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
-        <Link
+        <LocaleLink
           href="/releases"
           className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
         >
           <T es="← Todas las releases" en="← All releases" />
-        </Link>
-        <Link
+        </LocaleLink>
+        <LocaleLink
           href="/cases"
           className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
         >
           <T es="Todos los casos" en="All cases" />
-        </Link>
+        </LocaleLink>
         <a
           href="https://www.war.gov/UFO/"
           target="_blank"

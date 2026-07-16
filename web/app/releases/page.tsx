@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { cases } from "@/lib/data";
 import { T } from "@/components/T";
@@ -54,7 +55,7 @@ export default function ReleasesIndex() {
 
       <section className="grid gap-4 sm:grid-cols-2">
         {rows.map(({ n, count, t }) => (
-          <Link
+          <LocaleLink
             key={n}
             href={`/releases/${pad(n)}`}
             className="group flex flex-col gap-2 border border-border bg-panel p-5 transition hover:border-accent/50"
@@ -73,7 +74,7 @@ export default function ReleasesIndex() {
             <p className="font-mono text-xs text-muted">
               Tier S {t.S} · A {t.A} · B {t.B}
             </p>
-          </Link>
+          </LocaleLink>
         ))}
       </section>
 

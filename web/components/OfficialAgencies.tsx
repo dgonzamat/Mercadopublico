@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+
 import { getCase } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { T } from "@/components/T";
@@ -40,7 +41,7 @@ export function OfficialAgencies() {
         {agencies.map((a) => {
           const dirs = researchersForCase(a.id);
           return (
-            <Link
+            <LocaleLink
               key={a.id}
               href={`/cases/${a.id}`}
               className="block border border-border bg-panel p-4 transition hover:border-accent/50"
@@ -56,7 +57,7 @@ export function OfficialAgencies() {
                   {dirs.map((d) => d.name).join(" · ")}
                 </p>
               )}
-            </Link>
+            </LocaleLink>
           );
         })}
       </div>
