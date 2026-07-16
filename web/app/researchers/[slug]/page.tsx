@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { researchers, getFramework } from "@/lib/data";
 import { breadcrumbJsonLd, researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { casesForResearcher } from "@/lib/researcherCases";
@@ -27,6 +27,10 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       path: `/researchers/${r.id}/`,
     }),
     ...(r.seoTitle ? { title: { absolute: r.seoTitle } } : {}),
+    alternates: {
+      canonical: `/researchers/${r.id}/`,
+      languages: hreflangFor(`/researchers/${r.id}/`),
+    },
   };
 }
 

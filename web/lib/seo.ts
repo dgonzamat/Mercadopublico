@@ -44,3 +44,34 @@ export function pageMeta(opts: {
     },
   };
 }
+
+/**
+ * Mapa hreflang recíproco para una ruta ES y su espejo /en/. Se usa en AMBOS
+ * lados (la página ES y la /en/) para que apunten una a la otra + x-default=ES.
+ */
+export function hreflangFor(esPath: string) {
+  return { es: esPath, en: `/en${esPath}`, "x-default": esPath } as const;
+}
+
+/**
+ * Metadata de una página /en/ (espejo inglés): openGraph/twitter
+ * auto-referenciales en `/en${esPath}`, canonical propio y hreflang recíproco.
+ * `esPath` es la ruta ES (con trailing slash, p. ej. `/blog/`).
+ */
+export function enMeta(opts: {
+  title: string;
+  description: string;
+  esPath: string;
+  image?: string;
+}): Metadata {
+  const enPath = `/en${opts.esPath}`;
+  return {
+    ...pageMeta({
+      title: opts.title,
+      description: opts.description,
+      path: enPath,
+      image: opts.image,
+    }),
+    alternates: { canonical: enPath, languages: hreflangFor(opts.esPath) },
+  };
+}

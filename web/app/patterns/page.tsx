@@ -1,14 +1,20 @@
 import { patterns, cases } from "@/lib/data";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
-export const metadata = pageMeta({
-  title: "Patrones recurrentes del fenómeno",
-  description: `${STATS.patterns} patrones recurrentes (8a–8r) identificados a lo largo del corpus de casos UAP institucionales.`,
-  path: "/patterns/",
-});
+export const metadata = {
+  ...pageMeta({
+    title: "Patrones recurrentes del fenómeno",
+    description: `${STATS.patterns} patrones recurrentes (8a–8r) identificados a lo largo del corpus de casos UAP institucionales.`,
+    path: "/patterns/",
+  }),
+  alternates: {
+    canonical: "/patterns/",
+    languages: hreflangFor("/patterns/"),
+  },
+};
 
 export default function PatternsPage() {
   return (

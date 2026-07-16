@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { posts, getPost } from "@/lib/posts";
 import { breadcrumbJsonLd, postJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { T } from "@/components/T";
@@ -22,6 +22,10 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       description: p.summary,
       path: `/blog/${p.id}/`,
     }),
+    alternates: {
+      canonical: `/blog/${p.id}/`,
+      languages: hreflangFor(`/blog/${p.id}/`),
+    },
   };
 }
 

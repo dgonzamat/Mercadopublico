@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { posts } from "@/lib/posts";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -13,6 +13,7 @@ export const metadata = {
   }),
   alternates: {
     canonical: "/blog/",
+    languages: hreflangFor("/blog/"),
     types: { "application/rss+xml": "/feed.xml" },
   },
 };
