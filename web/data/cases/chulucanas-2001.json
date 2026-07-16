@@ -61,5 +61,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.09,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/chulucanas-2001-context.jpg",
+      "type": "image",
+      "title": "Contexto · Chulucanas (Piura, Perú), donde se filmaron las luces de 2001",
+      "title_en": "Context · Chulucanas (Piura, Peru), where the 2001 lights were filmed",
+      "source": "Ciudad de Chulucanas, Piura PERÙ.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACiudad%20de%20Chulucanas%2C%20Piura%20PER%C3%99.jpg"
+    }
+  ]
 }

@@ -60,5 +60,16 @@
       "name": "EuroUFO — 1978 Italian Wave retrospective",
       "url": "http://www.euroufo.net/2018/05/project1978/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/cecconi-treviso-1979-context.jpg",
+      "type": "image",
+      "title": "Contexto · Treviso (Italia), base del 2° Stormo cuyo piloto persiguió el objeto",
+      "title_en": "Context · Treviso (Italy), base of the 2° Stormo whose pilot chased the object",
+      "source": "Walls of Treviso (1).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWalls%20of%20Treviso%20(1).jpg"
+    }
   ]
 }

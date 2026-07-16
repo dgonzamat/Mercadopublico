@@ -59,5 +59,16 @@
     "nohumano_abierto": 0.06,
     "indet": 0.17
   },
-  "name_en": "Yukon Highway"
+  "name_en": "Yukon Highway",
+  "documents": [
+    {
+      "src": "/pursue/yukon-1996-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Territorio del Yukón (Canadá)",
+      "title_en": "Context · Yukon Territory (Canada)",
+      "source": "View of Ogilvie Mountains, Yukon, Canada.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Ogilvie%20Mountains%2C%20Yukon%2C%20Canada.jpg"
+    }
+  ]
 }
