@@ -72,5 +72,16 @@
       "name": "Hanks, A. — Stephenville Lights (2014)",
       "note": "Journalistic reconstruction"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/stephenville-2008-context.jpg",
+      "type": "image",
+      "title": "Contexto · Stephenville (Texas)",
+      "title_en": "Context · Stephenville (Texas)",
+      "source": "Downtown Stephenville 2024.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADowntown%20Stephenville%202024.jpg"
+    }
   ]
 }

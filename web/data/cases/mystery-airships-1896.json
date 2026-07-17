@@ -65,5 +65,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.08,
     "indet": 0.24
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/mystery-airships-1896-context.jpg",
+      "type": "image",
+      "title": "Ilustración de prensa de la ola de dirigibles misteriosos de 1896-97",
+      "title_en": "Press illustration of the 1896-97 mystery airship wave",
+      "source": "Mystery airship 1896.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMystery%20airship%201896.jpg"
+    }
+  ]
 }

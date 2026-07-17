@@ -55,5 +55,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.04,
     "indet": 0.22
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/ubatuba-1957-context.jpg",
+      "type": "image",
+      "title": "Contexto · Ubatuba (São Paulo, Brasil)",
+      "title_en": "Context · Ubatuba (São Paulo, Brazil)",
+      "source": "Brasil Ubatuba beaches.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABrasil%20Ubatuba%20beaches.jpg"
+    }
+  ]
 }

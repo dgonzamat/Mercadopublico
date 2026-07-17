@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.1,
     "indet": 0.31
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/molebka-m-triangle-1983-context.jpg",
+      "type": "image",
+      "title": "Contexto · el óblast de Perm (Rusia), región del 'triángulo M' de Molebka",
+      "title_en": "Context · Perm Krai (Russia), region of the Molebka 'M-triangle'",
+      "source": "Kungursky District, Perm Krai, Russia - panoramio (26).jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKungursky%20District%2C%20Perm%20Krai%2C%20Russia%20-%20panoramio%20(26).jpg"
+    }
+  ]
 }

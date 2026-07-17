@@ -65,5 +65,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.08,
     "indet": 0.12
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/mothman-1966-context.jpg",
+      "type": "image",
+      "title": "Contexto · la estatua del Mothman en Point Pleasant (Virginia Occidental)",
+      "title_en": "Context · the Mothman statue in Point Pleasant (West Virginia)",
+      "source": "Mothman Statue 2025.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMothman%20Statue%202025.jpg"
+    }
+  ]
 }
