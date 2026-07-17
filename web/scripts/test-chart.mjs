@@ -76,19 +76,23 @@ if (circles.length > 0) {
   else fail(`offsets no monótonos / con solape: ${offs.map((o) => o.toFixed(1)).join(", ")}`);
 }
 
-// 4) El centro del donut muestra el total de casos.
+// 4) El centro del donut muestra el total de casos CLASIFICADOS.
 //    El total NO se hardcodea (anti-pattern del repo): se deriva del corpus
 //    generado (data/cases.json) para que el test no se rompa al crecer el corpus.
+//    La clasificación forzada es SOLO sobre casos de incidente — los documentos
+//    se excluyen (partición canónica per CLAUDE.md; ver sonda E24). Por eso el
+//    centro muestra el nº de incidentes (no cases.length, que incluye documentos).
 let expectedN = null;
 try {
-  const cases = JSON.parse(readFileSync(join(__dirname, "..", "data", "cases.json"), "utf8"));
-  expectedN = Array.isArray(cases) ? cases.length : Array.isArray(cases?.cases) ? cases.cases.length : null;
+  const raw = JSON.parse(readFileSync(join(__dirname, "..", "data", "cases.json"), "utf8"));
+  const list = Array.isArray(raw) ? raw : Array.isArray(raw?.cases) ? raw.cases : null;
+  expectedN = list ? list.filter((c) => c.category !== "document").length : null;
 } catch {
   /* cases.json es artefacto de build; si falta, caemos al check laxo abajo */
 }
 if (expectedN != null) {
-  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro muestra el total derivado del corpus (${expectedN} casos)`);
-  else fail(`el centro no muestra el total del corpus (${expectedN})`);
+  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro muestra el total de incidentes derivado del corpus (${expectedN})`);
+  else fail(`el centro no muestra el total de incidentes del corpus (${expectedN})`);
 } else if (/>\s*\d{2,4}\s*</.test(html)) {
   ok(`el centro muestra un total numérico (no se pudo derivar del corpus)`);
 } else {
