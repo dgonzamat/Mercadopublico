@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.12,
     "indet": 0.32
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/buff-ledge-1968-context.jpg",
+      "type": "image",
+      "title": "Contexto · el lago Champlain (Vermont), junto al campamento Buff Ledge",
+      "title_en": "Context · Lake Champlain (Vermont), by Camp Buff Ledge",
+      "source": "Lake Champlain flooding.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Champlain%20flooding.jpg"
+    }
+  ]
 }

@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.04,
     "indet": 0.2
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/hangzhou-2010-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto internacional de Xiaoshan, Hangzhou (China)",
+      "title_en": "Context · Xiaoshan International Airport, Hangzhou (China)",
+      "source": "Hangzhou Xiaoshan Airport (7719450282).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHangzhou%20Xiaoshan%20Airport%20(7719450282).jpg"
+    }
+  ]
 }

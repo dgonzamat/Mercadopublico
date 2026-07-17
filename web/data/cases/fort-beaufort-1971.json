@@ -55,5 +55,16 @@
       "note": "Hind documentó casos africanos y desmintió el fraude de Kalahari (1989).",
       "note_en": "Hind documented African cases and debunked the Kalahari hoax (1989)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/fort-beaufort-1971-context.jpg",
+      "type": "image",
+      "title": "Contexto · Fort Beaufort (Cabo Oriental, Sudáfrica)",
+      "title_en": "Context · Fort Beaufort (Eastern Cape, South Africa)",
+      "source": "9 2 028 0011-Officers Mess Museum-Fort Beaufort-s.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3A9%202%20028%200011-Officers%20Mess%20Museum-Fort%20Beaufort-s.jpg"
+    }
   ]
 }

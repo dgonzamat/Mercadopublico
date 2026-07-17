@@ -50,5 +50,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.025,
     "indet": 0.285
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/alma-ata-1991-context.jpg",
+      "type": "image",
+      "title": "Contexto · Almaty (Alma-Atá, Kazajistán), cerca del monte Kok-Tyube",
+      "title_en": "Context · Almaty (Alma-Ata, Kazakhstan), near Kok-Tyube mountain",
+      "source": "Almaty, Kok-tobe exposition 3.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAlmaty%2C%20Kok-tobe%20exposition%203.jpg"
+    }
+  ]
 }

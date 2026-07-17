@@ -58,5 +58,16 @@
       "note": "Perfil del comandante FAP y director de la OIFAA.",
       "note_en": "Profile of the FAP commander and OIFAA director."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/pucallpa-2008-context.jpg",
+      "type": "image",
+      "title": "Contexto · Pucallpa (Ucayali, Perú)",
+      "title_en": "Context · Pucallpa (Ucayali, Peru)",
+      "source": "Pucallpa Plaza San Martín Fountain by Night.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APucallpa%20Plaza%20San%20Mart%C3%ADn%20Fountain%20by%20Night.jpg"
+    }
   ]
 }

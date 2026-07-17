@@ -65,5 +65,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.01,
     "indet": 0.06
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/boyd-bushman-2014-context.png",
+      "type": "image",
+      "title": "Contexto · Tucson (Arizona)",
+      "title_en": "Context · Tucson (Arizona)",
+      "source": "Charles Bolsius House, Tucson, Arizona, Old Fort Lowell, 2024.png · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACharles%20Bolsius%20House%2C%20Tucson%2C%20Arizona%2C%20Old%20Fort%20Lowell%2C%202024.png"
+    }
+  ]
 }
