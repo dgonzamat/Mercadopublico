@@ -50,6 +50,11 @@
  *       bloquear el egress de iCloud Private Relay, /visitantes fuera del
  *       conteo de pageviews, y migraciones 0005/0006 presentes como registro
  *       reproducible de lo aplicado en Supabase.
+ *   E24 (ERROR) Coherencia entre las dos vistas del modelo: /calidad (valor
+ *       esperado, conserva «indeterminable», solo incidentes = 248) debe
+ *       excluir documentos y rotular su método; la home (argmax forzado, 326,
+ *       sin indeterminable) debe rotularse y remitir a /calidad. Evita que se
+ *       lean como contradictorias (denominador 248 vs 326, esperado vs argmax).
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -953,6 +958,42 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(enDir)) {
         `E23 i18n: páginas app/en/<seccion>/ ausentes de MIRRORED en LocaleLink.tsx (sus links de contenido no se localizan, se fugan al árbol ES): ${pageNotMirrored.join(", ")}`,
       );
     }
+  }
+}
+
+// ─── 9o. RULE E24: coherencia entre las dos vistas del modelo (ERROR) ──────
+//
+// El corpus se presenta con DOS estimadores distintos y ambos son legítimos,
+// pero si no declaran su método + denominador se leen como contradictorios
+// (jul 2026, reportado por el usuario: /calidad decía «48% mundano, 25%
+// indeterminable» y la home «58% misid, 0% indeterminable»):
+//   · vista COMPARABLE (valor esperado Eⱼ=ΣP, conserva «indeterminable»,
+//     partición canónica = solo incidentes): app/calidad/page.tsx.
+//   · clasificación FORZADA navegable (argmax, sin indeterminable, cada caso
+//     listable): components/HypothesesSnapshot.tsx + /probabilidades + /cases.
+// Esta sonda evita la regresión: (a) /calidad debe excluir los documentos del
+// agregado MECE (antes sumaba sobre `c.posterior` incluyendo 62 docs → 310 en
+// vez de 248) y rotular su método; (b) la home debe rotularse como argmax y
+// remitir a /calidad. Es estructural (grep), no numérica.
+{
+  const calidadPath = path.join(root, "app", "calidad", "page.tsx");
+  const snapshotPath = path.join(root, "components", "HypothesesSnapshot.tsx");
+  const calidad = fs.existsSync(calidadPath) ? fs.readFileSync(calidadPath, "utf-8") : "";
+  const snapshot = fs.existsSync(snapshotPath) ? fs.readFileSync(snapshotPath, "utf-8") : "";
+  // (a) /calidad excluye documentos del agregado MECE.
+  if (calidad && !/category\s*!==\s*["']document["']/.test(calidad)) {
+    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad no excluye los documentos (falta `category !== \"document\"`). Debe sumar sobre los casos de incidente (partición canónica), no sobre `c.posterior`, o el denominador (248) no cuadra con la vista forzada. Ver CLAUDE.md · modelo MECE.");
+  }
+  // (a bis) /calidad declara su método (valor esperado).
+  if (calidad && !/[Vv]alor esperado|Expected value/.test(calidad)) {
+    record("ERROR", calidadPath, 0, "E24 modelo: /calidad no rotula su método (valor esperado Eⱼ=ΣP). Sin rótulo, su reparto se lee como contradictorio con la clasificación forzada de la home.");
+  }
+  // (b) la home se rotula como argmax y remite a /calidad.
+  if (snapshot && !/argmax/.test(snapshot)) {
+    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot (donut de la home) no se rotula como clasificación forzada (argmax). Debe declararlo para no leerse como contradictorio con /calidad.");
+  }
+  if (snapshot && !/\/calidad/.test(snapshot)) {
+    record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado con «indeterminable»). El puente entre ambas vistas es lo que evita que se lean como contradictorias.");
   }
 }
 
