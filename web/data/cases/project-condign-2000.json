@@ -60,5 +60,16 @@
       "name": "Clarke, D. — 'The UFO Files' (The National Archives) — análisis del Project Condign",
       "url": "https://drdavidclarke.co.uk/national-archives/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/project-condign-2000-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Ministerio de Defensa británico en Londres, donde se produjo el informe Condign",
+      "title_en": "Context · the UK Ministry of Defence in London, where the Condign report was produced",
+      "source": "Ministry of Defence Main Building Mars 2014.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMinistry%20of%20Defence%20Main%20Building%20Mars%202014.jpg"
+    }
   ]
 }

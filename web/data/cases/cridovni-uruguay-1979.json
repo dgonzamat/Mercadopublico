@@ -61,5 +61,16 @@
       "name": "Búsqueda — CRIDOVNI 1,570 denuncias",
       "url": "https://www.busqueda.com.uy/Secciones/Comision-de-la-Fuerza-Aerea-ha-investigado-mas-de-1-570-denuncias-sobre-ovnis-el-3-no-concluyo-con-una-explicacion-convencional--uc52920"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/cridovni-uruguay-1979-context.jpg",
+      "type": "image",
+      "title": "Contexto · Montevideo (Uruguay), sede del CRIDOVNI de la Fuerza Aérea",
+      "title_en": "Context · Montevideo (Uruguay), seat of the Air Force's CRIDOVNI",
+      "source": "Montevideo - Uruguay sunset.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMontevideo%20-%20Uruguay%20sunset.jpg"
+    }
   ]
 }

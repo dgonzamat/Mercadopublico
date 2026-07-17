@@ -56,5 +56,16 @@
       "name": "SUFOI — Scandinavian UFO Information (archivo receptor de los expedientes daneses)",
       "url": "https://www.sufoi.dk/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/denmark-airforce-files-2009-context.jpg",
+      "type": "image",
+      "title": "Contexto · Bornholm (Dinamarca), sede de las estaciones de radar de la Fuerza Aérea",
+      "title_en": "Context · Bornholm (Denmark), site of the Air Force radar stations",
+      "source": "Bornholm agricultural landscape - panoramio.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABornholm%20agricultural%20landscape%20-%20panoramio.jpg"
+    }
   ]
 }

@@ -73,5 +73,16 @@
     "nohumano_abierto": 0.035,
     "indet": 0.225
   },
-  "name_en": "Hessdalen lights"
+  "name_en": "Hessdalen lights",
+  "documents": [
+    {
+      "src": "/pursue/hessdalen-1981-context.jpg",
+      "type": "image",
+      "title": "Contexto · el valle de Hessdalen (Noruega), donde se estudian las luces desde 1981",
+      "title_en": "Context · the Hessdalen valley (Norway), where the lights have been studied since 1981",
+      "source": "Hessdalen - Fo30141603210119.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHessdalen%20-%20Fo30141603210119.jpg"
+    }
+  ]
 }
