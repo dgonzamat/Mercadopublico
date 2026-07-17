@@ -97,10 +97,13 @@ export function CasesFilter({
     const measure = () => {
       const root = rootRef.current;
       if (!root) return;
+      // El subtipo solo aplica bajo «Misidentificación»: fuera de ahí se ignora
+      // (el select ni se muestra), así un valor viejo nunca filtra de más.
+      const em = hyp === "misid" ? misid : "all";
       const sel =
         (region !== "all" ? `[data-region="${region}"]` : "") +
         (hyp !== "all" ? `[data-hyp="${hyp}"]` : "") +
-        (misid !== "all" ? `[data-misid="${misid}"]` : "") +
+        (em !== "all" ? `[data-misid="${em}"]` : "") +
         (era !== "all" ? `[data-era="${era}"]` : "") +
         (tier !== "all" ? `[data-tier="${tier}"]` : "");
       const itemSel = `[data-region]${sel}`; // todo wrapper de caso lleva data-region
@@ -113,11 +116,9 @@ export function CasesFilter({
     measure();
   }, [region, hyp, misid, era, tier]);
 
-  // La sub-faceta de subtipo solo tiene sentido bajo «Misidentificación»: al
-  // cambiar la hipótesis a cualquier otra (o a «todas»), se resetea.
-  useEffect(() => {
-    if (hyp !== "misid") setMisid("all");
-  }, [hyp]);
+  // El subtipo solo cuenta bajo «Misidentificación»: fuera de ahí se ignora sin
+  // resetear el estado (deriva > efecto → sin cascada de renders, lint-clean).
+  const effectiveMisid = hyp === "misid" ? misid : "all";
 
   const availRegions = REGION_ORDER.filter((r) => (regionCounts[r] ?? 0) > 0);
   const availHyps = HYP_ORDER.filter((h) => (hypCounts[h.key] ?? 0) > 0);
@@ -138,8 +139,8 @@ export function CasesFilter({
     active.push({ key: `region:${region}`, label: regionLabel(region), clear: () => setRegion("all") });
   if (hyp !== "all")
     active.push({ key: `hyp:${hyp}`, label: hypLabel(hyp), clear: () => setHyp("all") });
-  if (misid !== "all")
-    active.push({ key: `misid:${misid}`, label: misidLabel(misid), clear: () => setMisid("all") });
+  if (effectiveMisid !== "all")
+    active.push({ key: `misid:${effectiveMisid}`, label: misidLabel(effectiveMisid), clear: () => setMisid("all") });
   if (tier !== "all")
     active.push({ key: `tier:${tier}`, label: optLabel(tiers, tier), clear: () => setTier("all") });
 
@@ -159,7 +160,7 @@ export function CasesFilter({
       ref={rootRef}
       data-region-filter={region}
       data-hyp-filter={hyp}
-      data-misid-filter={misid}
+      data-misid-filter={effectiveMisid}
       data-era-filter={era}
       data-tier-filter={tier}
       className="space-y-4"
