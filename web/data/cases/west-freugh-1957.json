@@ -68,5 +68,6 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWest%20Freugh%20Airfield%20-%20geograph.org.uk%20-%20434249.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

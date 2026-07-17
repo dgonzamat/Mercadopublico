@@ -58,9 +58,9 @@
   "posterior": {
     "mundano_natural": 0.92,
     "humana_clasificada": 0.02,
-    "adversaria": 0.0,
-    "nohumano_encubierto": 0.0,
-    "nohumano_abierto": 0.0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
     "indet": 0.06
   },
   "documents": [
@@ -73,5 +73,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AFort%20George%20Island%2C%20Florida%20SAAM-1970.73%201.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

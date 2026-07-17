@@ -60,7 +60,7 @@
   "posterior": {
     "mundano_natural": 0.5,
     "humana_clasificada": 0.03,
-    "adversaria": 0.0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.12,
     "indet": 0.32
@@ -75,5 +75,6 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Champlain%20flooding.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

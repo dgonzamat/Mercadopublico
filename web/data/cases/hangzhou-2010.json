@@ -51,7 +51,7 @@
     "mundano_natural": 0.6,
     "humana_clasificada": 0.15,
     "adversaria": 0.01,
-    "nohumano_encubierto": 0.0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.04,
     "indet": 0.2
   },
@@ -65,5 +65,6 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHangzhou%20Xiaoshan%20Airport%20(7719450282).jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

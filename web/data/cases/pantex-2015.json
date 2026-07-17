@@ -1,7 +1,9 @@
 {
   "id": "pantex-2015",
   "num": 322,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "Pantex · objeto no identificado sobre la planta nuclear (2015)",
   "name_en": "Pantex · unidentified object over the nuclear plant (2015)",
   "year_start": 2015,
@@ -19,13 +21,16 @@
   "probability": 55,
   "summary": "El 1 de septiembre de 2015, el radar de vigilancia terrestre (GSR) de la planta Pantex —la principal instalación de ensamblaje de armas nucleares de EE.UU., en Amarillo, Texas— detectó un objeto no identificado al oeste de las instalaciones, volando hacia el norte a 10–15 mph. La Fuerza Protectora activó el plan de respuesta ante drones (UAS), aseguró todas las puertas y persiguió el objeto en vehículo. Testigos con binoculares no hallaron propulsión ni oyeron sonido; el objeto —forma de «diamante», ~4 pies, que aceleró y cambió de rumbo al ser seguido— fue rastreado también por la cámara CROWS de un Bearcat y filmado desde la torre GSR. El video se envió a Sandia National Labs y la evidencia se entregó al FBI. Informe UCNI desclasificado en 2026 (AARO, DOEUAPD005).",
   "summary_en": "On 1 September 2015, the Ground Surveillance Radar (GSR) at the Pantex Plant —the primary U.S. nuclear-weapons assembly facility, in Amarillo, Texas— detected an unidentified object west of the facilities, flying north at 10–15 mph. The Protective Force activated the drone (UAS) response plan, secured all gates and pursued the object by vehicle. Witnesses with binoculars found no propulsion and heard no sound; the object —'diamond'-shaped, ~4 ft, which sped up and changed course when followed— was also tracked by the CROWS camera on a Bearcat and filmed from the GSR tower. The video was sent to Sandia National Labs and the evidence handed to the FBI. UCNI report declassified in 2026 (AARO, DOEUAPD005).",
-  "patterns": ["8f", "8s"],
+  "patterns": [
+    "8f",
+    "8s"
+  ],
   "category": "incident",
   "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.18,
     "humana_clasificada": 0.18,
-    "adversaria": 0.30,
+    "adversaria": 0.3,
     "nohumano_encubierto": 0.06,
     "nohumano_abierto": 0.05,
     "indet": 0.23
@@ -76,5 +81,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APantex%20plant%20aeriel%20unknown%20data.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

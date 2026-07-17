@@ -83,5 +83,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAguadilla%20airport.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

@@ -1,7 +1,9 @@
 {
   "id": "tajik-air-1994",
   "num": 115,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Tajik Air · OVNI sobre Kazajistán (PURSUE)",
   "name_en": "Tajik Air · UFO over Kazakhstan (PURSUE)",
   "year_start": 1994,
@@ -9,7 +11,7 @@
   "country_name": "Kazajistán",
   "flag": "🇰🇿",
   "location": {
-    "lat": 48.0,
+    "lat": 48,
     "lng": 67.5,
     "place": "Espacio aéreo de Kazajistán (vuelo Tajik Air)",
     "place_en": "Kazakhstan airspace (Tajik Air flight)"
@@ -68,5 +70,6 @@
       "name": "PURSUE — war.gov/ufo (cable del Departamento de Estado, reporte Tajik Air 1994)",
       "url": "https://www.war.gov/ufo/"
     }
-  ]
+  ],
+  "misidSubtype": "astronomico"
 }

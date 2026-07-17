@@ -71,7 +71,7 @@
     "adversaria": 0.15,
     "nohumano_encubierto": 0.08,
     "nohumano_abierto": 0.07,
-    "indet": 0.40
+    "indet": 0.4
   },
   "seoTitle": "Sobrevuelos de Loring AFB 1975: UAP sobre bases nucleares del SAC",
   "seoDescription": "En oct–nov de 1975, objetos no identificados penetraron Loring, Wurtsmith, Malmstrom y Minot AFB. Teletipos al NMCC, radar de NORAD y documentos FOIA lo confirman; la USAF lo cerró como 'helicópteros'. Fuentes primarias.",
@@ -81,5 +81,6 @@
     "url": "https://www.twz.com/35674/the-bizarre-mystery-of-unexplained-aerial-incursions-over-loring-air-force-base",
     "note": "Revisa los teletipos al NMCC, los ecos de radar de NORAD y por qué la etiqueta oficial de 'helicópteros' no encaja con el comportamiento reportado.",
     "note_en": "Reviews the NMCC teletypes, NORAD radar returns and why the official 'helicopters' label does not fit the reported behavior."
-  }
+  },
+  "misidSubtype": "aeronave"
 }

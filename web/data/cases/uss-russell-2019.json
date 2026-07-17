@@ -73,5 +73,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUS%20Navy%20030901-N-4033C-023%20Guided%20missile%20destroyer%20USS%20Russell%20(DDG%2059)%20passes%20Hospital%20Point%2C%20Hawaii%2C%20after%20returning%20from%20a%20routine%20four-month%20deployment%20to%20the%20Western%20Pacific%20Ocean.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

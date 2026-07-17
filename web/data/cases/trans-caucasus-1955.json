@@ -1,7 +1,9 @@
 {
   "id": "trans-caucasus-1955",
   "num": 282,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Trans-Cáucaso · discos ascendentes sobre la URSS (Agregado Aéreo, 1955)",
   "name_en": "Trans-Caucasus · ascending discs over the USSR (Air Attaché, 1955)",
   "year_start": 1955,
@@ -72,5 +74,6 @@
       "url": "https://github.com/abigailhaddad/ufo-releases",
       "note": "Mirror del índice con descripción y metadatos del reporte."
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }

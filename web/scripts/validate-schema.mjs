@@ -175,6 +175,15 @@ for (const file of caseFiles) {
   if (c.mundanoType !== undefined && !["misid", "natural", "fraude"].includes(c.mundanoType)) {
     err(w, `mundanoType inválido "${c.mundanoType}" (misid|natural|fraude)`);
   }
+  // misidSubtype (opcional): con qué objeto conocido se confundió. Solo válido en
+  // casos misid (drill-down bajo «Misidentificación»).
+  if (c.misidSubtype !== undefined) {
+    if (!["astronomico", "aeronave", "espacial", "terrestre_otros"].includes(c.misidSubtype)) {
+      err(w, `misidSubtype inválido "${c.misidSubtype}" (astronomico|aeronave|espacial|terrestre_otros)`);
+    } else if (c.mundanoType !== "misid") {
+      err(w, `misidSubtype presente pero mundanoType no es "misid" (es "${c.mundanoType ?? "ausente"}") — el subtipo solo aplica a misidentificaciones`);
+    }
+  }
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");
 

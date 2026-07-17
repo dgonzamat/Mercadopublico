@@ -1,7 +1,9 @@
 {
   "id": "fbi-colorado-springs-2022",
   "num": 294,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "Colorado Springs 2022 · objeto sobre Cheyenne Mountain (FBI/IC, PURSUE)",
   "name_en": "Colorado Springs 2022 · object over Cheyenne Mountain (FBI/IC, PURSUE)",
   "year_start": 2022,
@@ -101,5 +103,6 @@
       "url": "https://www.war.gov/UFO/",
       "note": "Portal del Departamento de Guerra; los 4 documentos están embebidos en el visor de este caso."
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

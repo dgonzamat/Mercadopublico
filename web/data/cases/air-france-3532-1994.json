@@ -67,5 +67,6 @@
       "license": "CC BY 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALufthansa%20Airbus%20A320-211%20D-AIQT%2001.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

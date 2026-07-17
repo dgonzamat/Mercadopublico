@@ -60,7 +60,7 @@
   "posterior": {
     "mundano_natural": 0.56,
     "humana_clasificada": 0.02,
-    "adversaria": 0.0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.1,
     "indet": 0.3
@@ -75,5 +75,6 @@
       "license": "CC BY 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALa%20pietra%20tagliata%20-%20Cennina%20-%20Bucine.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

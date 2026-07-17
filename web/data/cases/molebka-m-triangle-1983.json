@@ -60,7 +60,7 @@
   "posterior": {
     "mundano_natural": 0.56,
     "humana_clasificada": 0.01,
-    "adversaria": 0.0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.1,
     "indet": 0.31
@@ -75,5 +75,6 @@
       "license": "CC BY 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKungursky%20District%2C%20Perm%20Krai%2C%20Russia%20-%20panoramio%20(26).jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

@@ -69,7 +69,7 @@
     "adversaria": 0.03,
     "nohumano_encubierto": 0.08,
     "nohumano_abierto": 0.14,
-    "indet": 0.30
+    "indet": 0.3
   },
   "seoTitle": "Persecución de Portage County (1966): 4 policías, 138 km y la excusa de Venus",
   "seoDescription": "Cuatro oficiales persiguieron un objeto luminoso de Ohio a Pensilvania en 1966. Project Blue Book lo cerró como el satélite Echo y Venus tras una llamada de dos minutos; Hynek documentó el trato. Fuentes primarias.",
@@ -79,5 +79,6 @@
     "url": "https://ufologie.patrickgross.org/htm/portage66.htm",
     "note": "Recopilación con la cronología de la persecución, los testimonios de los cuatro oficiales, el manejo de Quintanilla y la prensa de época.",
     "note_en": "Compilation with the chase timeline, the four officers' testimony, Quintanilla's handling and period press."
-  }
+  },
+  "misidSubtype": "astronomico"
 }

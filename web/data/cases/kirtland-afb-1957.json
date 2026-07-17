@@ -73,5 +73,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADeb%20Haaland%20visits%20Kirtland%20Air%20Force%20Base%2C%20Albuquerque%2C%20New%20Mexico%20(2019-02-05)%2003.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

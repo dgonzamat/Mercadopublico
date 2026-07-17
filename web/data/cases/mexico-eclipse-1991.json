@@ -18,14 +18,17 @@
   "epistemicStatus": "documented",
   "mundanoType": "misid",
   "probability": 16,
-  "patterns": ["8o", "8q"],
+  "patterns": [
+    "8o",
+    "8q"
+  ],
   "posterior": {
-    "mundano_natural": 0.80,
+    "mundano_natural": 0.8,
     "humana_clasificada": 0.02,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.05,
-    "indet": 0.10
+    "indet": 0.1
   },
   "summary": "El 11 de julio de 1991, durante la totalidad del último eclipse solar total del siglo XX sobre Ciudad de México, decenas de personas grabaron con videocámara un objeto brillante y aparentemente metálico suspendido en el cielo diurno oscurecido. Difundido en televisión por Jaime Maussan, desató la 'oleada de 1991-1993' y fundó el ecosistema mediático-OVNI latinoamericano. El análisis astronómico identifica el objeto como el planeta Venus.",
   "summary_en": "On 11 July 1991, during the totality of the last total solar eclipse of the 20th century over Mexico City, dozens of people camcordered a bright, seemingly metallic object hovering in the darkened daytime sky. Broadcast on television by Jaime Maussan, it triggered the '1991-1993 wave' and founded the Latin American UFO-media ecosystem. Astronomical analysis identifies the object as the planet Venus.",
@@ -76,5 +79,6 @@
       "license": "CC BY 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMonumental%20Flag%2C%20Zocalo%2C%20Mexico%2020250907%20p1.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "astronomico"
 }

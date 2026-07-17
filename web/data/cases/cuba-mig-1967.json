@@ -8,7 +8,7 @@
   "country_name": "Cuba",
   "flag": "🇨🇺",
   "location": {
-    "lat": 22.0,
+    "lat": 22,
     "lng": -79.5,
     "place": "Espacio aéreo de Cuba",
     "place_en": "Cuban airspace"
@@ -70,5 +70,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACzech%20MiG-21%20at%20CAM.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

@@ -83,5 +83,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMiraflores%20Locks%20Panama%201914.JPG"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

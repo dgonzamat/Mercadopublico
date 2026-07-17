@@ -75,5 +75,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ANevada%20-%20Tahoe%20National%20Forest%2C%20California%20-%20NARA%20-%20543569.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

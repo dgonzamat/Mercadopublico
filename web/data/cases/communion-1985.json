@@ -61,5 +61,6 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.24,
     "indet": 0.14
-  }
+  },
+  "misidSubtype": "terrestre_otros"
 }

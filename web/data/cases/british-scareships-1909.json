@@ -61,8 +61,9 @@
     "mundano_natural": 0.68,
     "humana_clasificada": 0.01,
     "adversaria": 0.03,
-    "nohumano_encubierto": 0.0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.06,
     "indet": 0.22
-  }
+  },
+  "misidSubtype": "astronomico"
 }

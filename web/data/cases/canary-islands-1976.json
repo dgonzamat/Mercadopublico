@@ -73,5 +73,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APajara%20(Fuerteventura%2C%20Spain)%2C%20Mirador%20Astron%C3%B3mico%20de%20Sicasumbre%2C%20Ausblick%20--%202025%20--%207140.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }

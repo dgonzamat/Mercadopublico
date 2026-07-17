@@ -60,7 +60,7 @@
   "posterior": {
     "mundano_natural": 0.52,
     "humana_clasificada": 0.02,
-    "adversaria": 0.0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.1,
     "indet": 0.32
@@ -75,5 +75,6 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABrooklyn%20Bridge%20at%20Night.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

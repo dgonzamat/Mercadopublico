@@ -19,10 +19,13 @@
   "probability": 20,
   "summary": "En la madrugada del 12 de noviembre de 1976, dos centinelas de reemplazo en la zona de combustible de la Base Aérea de Talavera la Real (Badajoz) reportaron interferencias, un silbido agudo, un apagón parcial y un perro militar alterado. Uno de ellos, José María Trejo, describió una figura humanoide de unos tres metros formada por puntos de luz verde, con brazos largos sin manos ni pies, antes de perder el conocimiento; sus compañeros abrieron fuego contra la aparición, que se desvaneció. El Ejército del Aire abrió un expediente que el Ministerio de Defensa desclasificó en los años noventa. La documentación confirma que hubo una alarma real, pero no respalda de forma concluyente la presencia de un objeto o un ser; la lectura más sólida apunta a alteración perceptiva e histeria de contagio en una guardia nocturna.",
   "summary_en": "In the early hours of 12 November 1976, two conscript sentries in the fuel area of Talavera la Real Air Base (Badajoz, Spain) reported interference, a high-pitched whistle, a partial blackout and an agitated military dog. One of them, José María Trejo, described a humanoid figure some three meters tall formed by points of green light, with long arms and no hands or feet, before losing consciousness; his companions opened fire on the apparition, which vanished. The Spanish Air Force opened a file that the Ministry of Defense declassified in the 1990s. The documentation confirms a real alarm occurred, but does not conclusively support the presence of an object or a being; the strongest reading points to perceptual disturbance and contagious hysteria during a night watch.",
-  "patterns": ["8a", "8h"],
+  "patterns": [
+    "8a",
+    "8h"
+  ],
   "category": "incident",
   "posterior": {
-    "mundano_natural": 0.60,
+    "mundano_natural": 0.6,
     "humana_clasificada": 0.04,
     "adversaria": 0.03,
     "nohumano_encubierto": 0.03,
@@ -89,5 +92,6 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABase%20Aerea%20-%20Talavera%20la%20Real.JPG"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }
