@@ -69,5 +69,6 @@
       "license": "CC BY 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AOrcas%20Island%2C%20San%20Juan%20Islands%2C%20and%20Mount%20Baker%2C%20Washington%20State%20-%20panoramio.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

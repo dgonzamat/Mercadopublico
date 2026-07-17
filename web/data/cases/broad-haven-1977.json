@@ -60,12 +60,12 @@
   ],
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.50,
+    "mundano_natural": 0.5,
     "humana_clasificada": 0.04,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0.09,
-    "indet": 0.30
+    "indet": 0.3
   },
   "seoTitle": "Broad Haven 1977: la escuela galesa, los dibujos de los niños y el Triángulo de Dyfed",
   "seoDescription": "En 1977, ~14 alumnos de Broad Haven (Gales) dibujaron por separado un objeto plateado junto al patio; el episodio abrió la oleada del Triángulo de Dyfed. El MoD indagó sin explicar. Fuentes y lectura crítica.",
@@ -75,5 +75,6 @@
     "url": "https://herald.wales/west-wales/pembrokeshire/the-welsh-triangle-what-was-seen-in-the-sky-back-in-1977/",
     "note": "Reseña regional con la cronología del avistamiento escolar y de la oleada del Triángulo de Dyfed.",
     "note_en": "Regional review with the timeline of the school sighting and the Dyfed Triangle wave."
-  }
+  },
+  "misidSubtype": "terrestre_otros"
 }

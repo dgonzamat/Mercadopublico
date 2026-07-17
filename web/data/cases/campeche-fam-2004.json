@@ -65,7 +65,7 @@
     "adversaria": 0.02,
     "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0.05,
-    "indet": 0.30
+    "indet": 0.3
   },
   "seoTitle": "Campeche 2004: el infrarrojo militar mexicano y las flamas de Cantarell",
   "seoDescription": "La Fuerza Aérea Mexicana grabó 11 objetos en infrarrojo sobre la Bahía de Campeche en 2004; la SEDENA entregó el video a Jaime Maussan. La explicación más sólida: flamas de los pozos de Cantarell. Fuentes y análisis.",
@@ -75,5 +75,6 @@
     "url": "https://skepticalinquirer.org/2004/09/the-campeche-mexico-infrared-ufo-video/",
     "note": "Desarrolla la hipótesis de las flamas de Cantarell, el efecto de paralaje y por qué el radar no detectó las fuentes de calor.",
     "note_en": "Develops the Cantarell flares hypothesis, the parallax effect and why the radar did not detect the heat sources."
-  }
+  },
+  "misidSubtype": "terrestre_otros"
 }

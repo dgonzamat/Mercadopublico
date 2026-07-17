@@ -18,9 +18,9 @@
   "probability": 22,
   "posterior": {
     "mundano_natural": 0.78,
-    "humana_clasificada": 0.0,
-    "adversaria": 0.0,
-    "nohumano_encubierto": 0.0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.04,
     "indet": 0.18
   },
@@ -75,5 +75,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABrown%20mountain%20trails.png"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

@@ -78,5 +78,6 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALivingston%20North%20railway%20station%2C%20West%20Lothian%20-%20geograph.org.uk%20-%203707656.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

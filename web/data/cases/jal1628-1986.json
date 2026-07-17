@@ -85,5 +85,6 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAnchorage%20International%20Airport%20and%20Cook%20Inlet.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "astronomico"
 }

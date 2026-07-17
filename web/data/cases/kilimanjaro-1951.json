@@ -18,14 +18,16 @@
   "epistemicStatus": "documented",
   "mundanoType": "misid",
   "probability": 34,
-  "patterns": ["8h"],
+  "patterns": [
+    "8h"
+  ],
   "posterior": {
     "mundano_natural": 0.48,
     "humana_clasificada": 0.07,
     "adversaria": 0.04,
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.18,
-    "indet": 0.20
+    "indet": 0.2
   },
   "summary": "El 19 de febrero de 1951, la tripulación y siete pasajeros de un vuelo de East African Airways entre Nairobi y Mombasa observaron un objeto metálico tipo bala, de más de 60 metros, estacionario durante 17 minutos sobre el monte Kilimanjaro antes de ascender y desaparecer a unos 12.000 m. Nueve testigos firmaron una declaración jurada; los intentos de fotografiarlo no dieron nada concluyente. Caso clásico de aviación de la ola de 1950-51.",
   "summary_en": "On 19 February 1951, the crew and seven passengers of an East African Airways flight between Nairobi and Mombasa watched a metallic, bullet-shaped object over 60 metres long hover for 17 minutes above Mount Kilimanjaro before rising and vanishing at about 12,000 m. Nine witnesses signed a sworn affidavit; attempts to photograph it yielded nothing conclusive. A classic aviation case of the 1950-51 wave.",
@@ -81,5 +83,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKilimanjaro%2C%20Tanzania%2C%202024-05-22%2C%20DD%20110.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

@@ -75,5 +75,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AA%20T-38%20Talon%20taxis%20down%20the%20runway%20at%20Langley%20Air%20Force%20Base%2C%20Virginia.%20March%2026%2C%202012.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

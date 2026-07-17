@@ -59,9 +59,9 @@
   ],
   "posterior": {
     "mundano_natural": 0.62,
-    "humana_clasificada": 0.0,
-    "adversaria": 0.0,
-    "nohumano_encubierto": 0.0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.1,
     "indet": 0.28
   },
@@ -75,5 +75,6 @@
       "license": "Dominio público · obra anterior a 1928",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Utsuro-Bune-Manjud%C5%8D-Drifted-Ashore-on_Fief-of-Lord-Ogasawara.png"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

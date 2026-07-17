@@ -81,5 +81,6 @@
     "url": "https://en.wikipedia.org/wiki/Flatwoods_monster",
     "note": "Reúne los testimonios y la reconstrucción de Nickell (meteoro + baliza + búho) con sus referencias.",
     "note_en": "Gathers the testimonies and Nickell's reconstruction (meteor + beacon + owl) with its references."
-  }
+  },
+  "misidSubtype": "terrestre_otros"
 }

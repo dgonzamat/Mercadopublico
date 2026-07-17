@@ -71,5 +71,6 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMercerMJ%20Aeroflot%20Tupolev%20Tu-134%20(8664128490).jpg"
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }

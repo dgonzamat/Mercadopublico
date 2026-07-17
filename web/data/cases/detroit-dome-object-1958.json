@@ -1,7 +1,9 @@
 {
   "id": "detroit-dome-object-1958",
   "num": 289,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Detroit · objeto circular con «cúpula de cristal» (memo FBI, 1958)",
   "name_en": "Detroit · circular object with a 'crystal-type dome' (FBI memo, 1958)",
   "year_start": 1958,
@@ -72,5 +74,6 @@
       "url": "https://vault.fbi.gov/UFO",
       "note": "Contexto del rol del FBI como conducto de reportes hacia la USAF."
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

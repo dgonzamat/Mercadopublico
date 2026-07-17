@@ -51,7 +51,7 @@
     "mundano_natural": 0.83,
     "humana_clasificada": 0.02,
     "adversaria": 0.01,
-    "nohumano_encubierto": 0.0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.03,
     "indet": 0.11
   },
@@ -65,5 +65,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHonor%20guard%20at%20Mausoleum%20of%20Mohammed%20V%2C%20Rabat%2C%20Morocco.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }

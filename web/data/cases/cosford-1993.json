@@ -69,5 +69,6 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ARAF%20Cosford%20-%20Vickers%20VC10%20-%20geograph.org.uk%20-%205047934.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }

@@ -1,7 +1,9 @@
 {
   "id": "apollo-17-vm6-1972",
   "num": 277,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Apollo 17 · formación triangular VM6 (PURSUE)",
   "name_en": "Apollo 17 · VM6 triangular formation (PURSUE)",
   "year_start": 1972,
@@ -112,5 +114,6 @@
       "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
       "note": "Comunicado oficial del primer release que incluye el material NASA."
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

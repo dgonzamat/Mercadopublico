@@ -1,7 +1,9 @@
 {
   "id": "lake-huron-2023",
   "num": 44,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "Lake Huron F-16 shootdown",
   "year_start": 2023,
   "country": "US",
@@ -84,5 +86,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Huron%20in%20winter.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

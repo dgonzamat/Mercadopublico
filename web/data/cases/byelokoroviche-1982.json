@@ -9,7 +9,7 @@
   "flag": "🇷🇺",
   "location": {
     "lat": 50.95,
-    "lng": 28.0,
+    "lng": 28,
     "place": "Base de las Fuerzas de Cohetes Estratégicos · Byelokoroviche, RSS de Ucrania",
     "place_en": "Strategic Rocket Forces base · Byelokoroviche, Ukrainian SSR"
   },
@@ -56,5 +56,6 @@
       "url": "https://en.wikipedia.org/wiki/Identification_studies_of_UFOs#Soviet_Union",
       "note": "Síntesis del programa soviético y del incidente."
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

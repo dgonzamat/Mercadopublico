@@ -18,9 +18,9 @@
   "probability": 15,
   "posterior": {
     "mundano_natural": 0.85,
-    "humana_clasificada": 0.0,
-    "adversaria": 0.0,
-    "nohumano_encubierto": 0.0,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.03,
     "indet": 0.12
   },
@@ -75,5 +75,6 @@
       "license": "CC BY 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGood%20Shepherd%20Catholic%20Church%2C%20Boulia%2C%202019.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

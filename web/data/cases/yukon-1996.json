@@ -70,5 +70,6 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Ogilvie%20Mountains%2C%20Yukon%2C%20Canada.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }

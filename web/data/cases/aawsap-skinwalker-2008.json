@@ -109,7 +109,7 @@
     "mundano_natural": 0.18,
     "humana_clasificada": 0.32,
     "adversaria": 0.03,
-    "nohumano_encubierto": 0.20,
+    "nohumano_encubierto": 0.2,
     "nohumano_abierto": 0.12,
     "indet": 0.15
   },
@@ -130,5 +130,6 @@
     "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
     "note": "Informe oficial de AARO que revisa AAWSAP/AATIP y todo el registro del Gobierno de EE.UU. sobre UAP desde 1945. Concluye que no halló evidencia de tecnología de origen no humano ni de programas de ingeniería inversa. PDF alojado en aaro.mil.",
     "note_en": "Official AARO report reviewing AAWSAP/AATIP and the entire U.S. Government UAP record since 1945. Concludes it found no evidence of non-human technology or reverse-engineering programs. PDF hosted on aaro.mil."
-  }
+  },
+  "misidSubtype": "terrestre_otros"
 }

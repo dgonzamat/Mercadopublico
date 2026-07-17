@@ -65,5 +65,6 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.02,
     "indet": 0.23
-  }
+  },
+  "misidSubtype": "aeronave"
 }

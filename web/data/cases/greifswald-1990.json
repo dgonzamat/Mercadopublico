@@ -61,5 +61,6 @@
       "license": "CC BY-SA",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMobilitaetszentrale%2C%20Greifswald%20(LRM%2020220319%20153434).jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

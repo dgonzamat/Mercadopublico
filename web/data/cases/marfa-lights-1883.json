@@ -19,8 +19,8 @@
   "posterior": {
     "mundano_natural": 0.82,
     "humana_clasificada": 0.01,
-    "adversaria": 0.0,
-    "nohumano_encubierto": 0.0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.03,
     "indet": 0.14
   },
@@ -75,5 +75,6 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSA%20Marfa%20pano%20TX.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

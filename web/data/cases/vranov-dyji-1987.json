@@ -71,5 +71,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACzech%20Air%20Force%20Mil%20Mi-24%20Hind%203362%20-%20Radom%20Air%20Show%20-%2020180825%200926%204675%20DxO.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

@@ -4,7 +4,8 @@ import { pageMeta, hreflangFor } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
-import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis } from "@/lib/meceModel";
+import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis, MISID_SUBTYPES } from "@/lib/meceModel";
+import { cases } from "@/lib/data";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 export const metadata = {
@@ -70,6 +71,15 @@ export default function ProbabilidadesPage() {
     const m = modalHypothesis(s, { consolidateNonHuman: true, keepIndet: true });
     modalCount[m.key] = (modalCount[m.key] ?? 0) + 1;
   }
+
+  // Drill-down bajo «Misidentificación» (capa 2, MECE dentro de misid): con qué
+  // objeto conocido se confundió cada INCIDENTE misid. Los documentos no llevan
+  // subtipo. El bucket mayoritario («sin objeto único») se rotula con honestidad.
+  const misidSub = MISID_SUBTYPES.map((s) => ({
+    ...s,
+    count: cases.filter((c) => c.category !== "document" && c.misidSubtype === s.key).length,
+  })).sort((a, b) => b.count - a.count);
+  const misidSubTotal = misidSub.reduce((a, s) => a + s.count, 0);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
@@ -144,6 +154,45 @@ export default function ProbabilidadesPage() {
                 <Body className="mt-3 text-sm leading-relaxed text-muted">
                   <T es={BLURB[c.key].es} en={BLURB[c.key].en} />
                 </Body>
+
+                {c.key === "misid" && misidSubTotal > 0 && (
+                  <div className="mt-4 rounded-sm border border-border bg-panel/60 p-4">
+                    <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                      <T
+                        es={`¿Con qué se confundió? · ${misidSubTotal} incidentes`}
+                        en={`Mistaken for what? · ${misidSubTotal} incidents`}
+                      />
+                    </p>
+                    <div className="mt-3 flex h-2 w-full overflow-hidden rounded-full">
+                      {misidSub.filter((s) => s.count > 0).map((s) => (
+                        <div
+                          key={s.key}
+                          title={`${s.label}: ${s.count}`}
+                          style={{ width: `${(s.count / misidSubTotal) * 100}%`, backgroundColor: s.color }}
+                        />
+                      ))}
+                    </div>
+                    <ul className="mt-3 space-y-1">
+                      {misidSub.map((s) => (
+                        <li key={s.key} className="flex items-baseline justify-between gap-3 font-mono text-[11px]">
+                          <span className="flex items-center gap-1.5 text-text">
+                            <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: s.color }} />
+                            <T es={s.label} en={s.labelEn} />
+                          </span>
+                          <span className="tabular-nums text-muted">
+                            {s.count} · {Math.round((s.count / misidSubTotal) * 100)}%
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-3 font-mono text-[10px] leading-snug text-muted/80">
+                      <T
+                        es="Solo incidentes; los casos-documento misid no se sub-clasifican. «Sin objeto único» = el análisis inclina a lo prosaico pero no fija un objeto concreto (luz difusa, faro, o explicación mundana no determinada)."
+                        en="Incidents only; misid document-cases are not sub-classified. 'No single object' = the analysis leans prosaic but pins no specific object (diffuse light, lighthouse, or an undetermined mundane explanation)."
+                      />
+                    </p>
+                  </div>
+                )}
 
                 {total > 0 && (
                   <LocaleLink

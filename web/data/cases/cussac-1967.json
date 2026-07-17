@@ -17,7 +17,9 @@
   "probability": 24,
   "summary": "El 29 de agosto de 1967, en Cussac (Cantal, Francia), dos niños pastores —François Delpeuch, de 13 años, y su hermana Anne-Marie, de 9— dijeron haber visto una esfera brillante de unos dos metros y cuatro pequeñas figuras completamente negras cerca del suelo, que ascendieron al objeto antes de que despegara con un silbido. La gendarmería abrió investigación ese mismo día y constató un olor sulfuroso persistente y hierba reseca en el lugar. Años después, GEPAN —la agencia oficial francesa— revisó el caso y lo clasificó como 'digno de estudio adicional'.",
   "summary_en": "On 29 August 1967, in Cussac (Cantal, France), two shepherd children —François Delpeuch, 13, and his sister Anne-Marie, 9— said they saw a bright sphere about two meters across and four small, completely black figures near the ground, which rose into the object before it took off with a whistle. The gendarmerie opened an investigation that same day and noted a persistent sulfurous odor and dried grass at the spot. Years later GEPAN —the official French agency— reviewed the case and classified it as 'worthy of further study'.",
-  "patterns": ["8a"],
+  "patterns": [
+    "8a"
+  ],
   "epistemicStatus": "documented",
   "category": "contactee",
   "posterior": {
@@ -66,5 +68,6 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APlomb%20du%20Cantal%2C%20Auvergne%2C%20France%20(32694286988).jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

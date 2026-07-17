@@ -61,8 +61,8 @@
   "posterior": {
     "mundano_natural": 0.66,
     "humana_clasificada": 0.02,
-    "adversaria": 0.0,
-    "nohumano_encubierto": 0.0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
     "nohumano_abierto": 0.08,
     "indet": 0.24
   },
@@ -76,5 +76,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMystery%20airship%201896.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "astronomico"
 }

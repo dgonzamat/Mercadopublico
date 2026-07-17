@@ -3,6 +3,11 @@ export type EpistemicStatus = "documented" | "developing" | "projected";
 export type Category = "incident" | "document" | "contactee" | "crop_circle";
 /** Sub-tipo de la explicación prosaica (abre la narrativa mundano/natural). */
 export type MundanoType = "misid" | "natural" | "fraude";
+
+/** Subtipo de misidentificación: CON QUÉ objeto conocido se confundió el
+ *  avistamiento. Solo aplica a casos con mundanoType="misid" (drill-down, capa 2
+ *  bajo la narrativa «Misidentificación»; MECE dentro de misid). */
+export type MisidSubtype = "astronomico" | "aeronave" | "espacial" | "terrestre_otros";
 export type VerdictMoral = "neutral" | "hostile" | "positive" | "variable";
 
 export interface Location {
@@ -100,6 +105,9 @@ export interface UAPCase {
   pursueReleases?: number[];
   /** Sub-tipo de la explicación prosaica si el caso carga masa mundano/natural. */
   mundanoType?: MundanoType;
+  /** Subtipo de misidentificación (con qué objeto conocido se confundió). Solo
+   *  en casos mundanoType="misid"; es un drill-down bajo esa narrativa. */
+  misidSubtype?: MisidSubtype;
   // Estatus epistémico del caso. Ausente = "documented" (evidencia
   // primaria verificable). "developing" = reciente/en curso; "projected"
   // = contenido near-future del corpus (análisis, no hecho documentado).

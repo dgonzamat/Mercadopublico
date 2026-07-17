@@ -1,7 +1,9 @@
 {
   "id": "roosevelt-2014",
   "num": 80,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "USS Theodore Roosevelt (Gimbal/GoFast)",
   "name_en": "USS Theodore Roosevelt (Gimbal/GoFast)",
   "year_start": 2014,
@@ -83,5 +85,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Theodore%20Roosevelt%20at%20sea.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

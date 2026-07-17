@@ -19,13 +19,17 @@
   "epistemicStatus": "documented",
   "mundanoType": "misid",
   "probability": 20,
-  "patterns": ["8a", "8g", "8h"],
+  "patterns": [
+    "8a",
+    "8g",
+    "8h"
+  ],
   "posterior": {
     "mundano_natural": 0.72,
     "humana_clasificada": 0.01,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.02,
-    "nohumano_abierto": 0.10,
+    "nohumano_abierto": 0.1,
     "indet": 0.14
   },
   "summary": "Oleada de avistamientos de humanoides diminutos —de apenas unos centímetros— reportados sobre todo por escolares en la península malaya entre 1970 y 1979. Un recuento de prensa contó, en tres días de agosto de 1970, no menos de 39 OVNIs diminutos y 31 relatos de ocupantes de tres pulgadas. Sistematizada por Ahmad Jamaludin («Flying Saucer Review»; CUFOS, 1981).",
@@ -82,5 +86,6 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABukit%20Mertajam%20Recreational%20Forest.JPG"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

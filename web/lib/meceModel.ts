@@ -82,6 +82,24 @@ export const MUNDANO_SUBTYPES: ReadonlyArray<{
   { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
 ];
 
+/** Subtipos de «Misidentificación» (drill-down, capa 2): con qué objeto conocido
+ *  se confundió. MECE dentro de misid. Colores en lib → fuera del scan D3.
+ *  Rampa afín al azul-acero de misid (#5a6b7a) para leerse como sub-partición. */
+export const MISID_SUBTYPES: ReadonlyArray<{
+  key: "astronomico" | "aeronave" | "espacial" | "terrestre_otros";
+  label: string;
+  labelEn: string;
+  color: string;
+}> = [
+  { key: "astronomico", label: "Astronómico", labelEn: "Astronomical", color: "#5f7d94" },
+  { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#6b8ea3" },
+  { key: "espacial", label: "Espacial (satélite/reentrada)", labelEn: "Space (satellite/reentry)", color: "#4d6475" },
+  // El bucket mayoritario: casos misid cuyo texto no fija un objeto concreto
+  // (luz difusa, faro/bengala, o explicación prosaica no determinada). Etiqueta
+  // honesta —no un «otros» que finja precisión que no hay.
+  { key: "terrestre_otros", label: "Sin objeto único identificado", labelEn: "No single object identified", color: "#8a8172" },
+];
+
 export function emptyPosterior(): Posterior {
   return {
     mundano_natural: 0, humana_clasificada: 0, adversaria: 0,

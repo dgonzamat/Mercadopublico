@@ -18,7 +18,10 @@
   "probability": 52,
   "summary": "En abril de 2013, técnicos de la minera Doña Inés de Collahuasi —a más de 4.300 m en el altiplano de la Atacama— fotografiaron un objeto con forma de disco que permaneció cerca durante cerca de una hora antes de alejarse. La CEFAA, el comité oficial de la DGAC chilena bajo el general (r) Ricardo Bermúdez, investigó las imágenes con análisis óptico y térmico y un analista las calificó como un objeto o fenómeno de gran interés, no identificado. El propio Bermúdez pidió cautela: era la conclusión de un solo analista y los testigos no cooperaron.",
   "summary_en": "In April 2013, technicians at the Doña Inés de Collahuasi mine —over 4,300 m in the Atacama altiplano— photographed a disc-shaped object that lingered nearby for about an hour before moving off. CEFAA, the official committee of Chile's DGAC under General (ret.) Ricardo Bermúdez, investigated the images with optical and thermal analysis and one analyst rated them an object or phenomenon of great interest, unidentified. Bermúdez himself urged caution: it was a single analyst's conclusion and the witnesses did not cooperate.",
-  "patterns": ["8e", "8g"],
+  "patterns": [
+    "8e",
+    "8g"
+  ],
   "epistemicStatus": "documented",
   "category": "incident",
   "posterior": {
@@ -26,7 +29,7 @@
     "humana_clasificada": 0.04,
     "adversaria": 0.04,
     "nohumano_encubierto": 0.01,
-    "nohumano_abierto": 0.10,
+    "nohumano_abierto": 0.1,
     "indet": 0.28
   },
   "whatHappened": "En abril de 2013, un grupo de trabajadores —del orden de 35 personas, entre ellos varios técnicos especializados— de la mina de cobre Doña Inés de Collahuasi, en la región de Tarapacá —a más de 4.300 metros sobre el nivel del mar, en uno de los cielos más despejados y secos del planeta—, observó un objeto que se aproximó lentamente a la zona. Según el relato recogido por la CEFAA, el objeto permaneció en las cercanías durante alrededor de una hora, realizando movimientos cortos de ascenso, descenso y desplazamiento horizontal a unos 600 metros sobre la superficie, antes de alejarse hacia el este. Varios de los presentes lo fotografiaron con sus cámaras personales; lo describieron como un disco achatado, de color brillante, de entre 5 y 10 metros de diámetro.\n\nLas imágenes muestran un objeto de aspecto discoidal con un domo o sección superior. Dos de las fotografías más nítidas fueron sometidas por la CEFAA —el Comité de Estudios de Fenómenos Aéreos Anómalos, dependiente de la Dirección General de Aeronáutica Civil (DGAC) y bajo jurisdicción de la Fuerza Aérea de Chile— a una secuencia de análisis durante alrededor de un año: estudio visual, mediciones y procesamiento de imagen térmica, con participación de especialistas descritos como 'generalmente muy escépticos'. El analista que llevó el caso concluyó que el objeto 'emitía su propia energía, que no coincide con la luz solar natural que también se refleja en él': al mediodía, el brillo en la parte inferior no podía deberse al sol, que se reflejaba en la parte superior. Su dictamen fue que se trataba de 'un objeto o fenómeno de gran interés, que puede calificarse como un UFO', y se descartó explícitamente que fuera un dron.\n\nLa CEFAA fue, como en sus otros casos, transparente sobre los límites del expediente. Los testigos no quisieron cooperar con la investigación: 'Tratamos de contactarlos y no obtuvimos respuesta', señaló José Lay, director de relaciones internacionales del comité, lo que impidió reconstruir condiciones de cámara, hora exacta y geometría con precisión. Y el director de la CEFAA, general (r) Ricardo Bermúdez, subrayó que la conclusión 'UFO' provenía de un solo analista entre varios: 'Reconocemos que esta es la determinación de un único analista de la CEFAA entre varios, así que aún debemos ser cautelosos'. El material y el informe se hicieron públicos en julio de 2014, sumándose al historial de divulgación abierta del organismo chileno y dándole proyección internacional en prensa.",
@@ -71,5 +74,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APaisaje%20cerca%20de%20la%20mina%20de%20Collahuasi%2C%20Chile%2C%202016-02-10%2C%20DD%2016-21%20PAN.JPG"
     }
-  ]
+  ],
+  "misidSubtype": "terrestre_otros"
 }

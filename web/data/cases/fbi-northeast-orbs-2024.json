@@ -1,7 +1,9 @@
 {
   "id": "fbi-northeast-orbs-2024",
   "num": 295,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "Orbes en el noreste de EE.UU. · expediente FBI corroborado por agentes (PURSUE)",
   "name_en": "Northeastern US orbs · FBI file corroborated by agents (PURSUE)",
   "year_start": 2021,
@@ -10,8 +12,8 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 43.0,
-    "lng": -72.0,
+    "lat": 43,
+    "lng": -72,
     "place": "Noreste de EE.UU. (ubicación exacta redactada)",
     "place_en": "Northeastern US (exact location redacted)"
   },
@@ -131,5 +133,6 @@
       "url": "https://www.war.gov/UFO/",
       "note": "Portal del Departamento de Guerra."
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

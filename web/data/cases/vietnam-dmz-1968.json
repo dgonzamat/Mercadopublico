@@ -18,11 +18,14 @@
   "epistemicStatus": "documented",
   "mundanoType": "misid",
   "probability": 22,
-  "patterns": ["8g", "8s"],
+  "patterns": [
+    "8g",
+    "8s"
+  ],
   "posterior": {
-    "mundano_natural": 0.60,
+    "mundano_natural": 0.6,
     "humana_clasificada": 0.02,
-    "adversaria": 0.20,
+    "adversaria": 0.2,
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.05,
     "indet": 0.12
@@ -83,5 +86,6 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Boston%20(CAG-1)%20and%20USS%20Canberra%20(CAG-2)%20underway%20in%20the%20Caribbean%20Sea%20on%2022%20April%201958%20(NH%2098289).jpg"
     }
-  ]
+  ],
+  "misidSubtype": "aeronave"
 }

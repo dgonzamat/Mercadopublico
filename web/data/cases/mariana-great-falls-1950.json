@@ -63,7 +63,7 @@
   ],
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.50,
+    "mundano_natural": 0.5,
     "humana_clasificada": 0.08,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.05,
@@ -78,5 +78,6 @@
     "url": "https://en.wikipedia.org/wiki/Mariana_UFO_film",
     "note": "Reúne las distintas analíticas (USAF, Robertson Panel, Baker) y la controversia de los fotogramas faltantes con sus referencias.",
     "note_en": "Gathers the various analyses (USAF, Robertson Panel, Baker) and the missing-frames controversy with their references."
-  }
+  },
+  "misidSubtype": "aeronave"
 }

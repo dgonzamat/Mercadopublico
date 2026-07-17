@@ -18,7 +18,10 @@
   "probability": 52,
   "summary": "La mayor oleada OVNI de la historia de Francia: la noche del 5 de noviembre de 1990, miles de testigos en todo el país vieron un gran 'triángulo' oscuro y silencioso cruzar el cielo de suroeste a noreste. Era la reentrada de la tercera etapa de un cohete Protón soviético, identificada en días por el SEPRA y por rastreadores independientes.",
   "summary_en": "France's largest UFO wave: on the night of 5 November 1990, thousands of witnesses across the country saw a large, dark, silent 'triangle' cross the sky from southwest to northeast. It was the atmospheric re-entry of the third stage of a Soviet Proton rocket, identified within days by SEPRA and independent satellite trackers.",
-  "patterns": ["8l", "8k"],
+  "patterns": [
+    "8l",
+    "8k"
+  ],
   "category": "incident",
   "posterior": {
     "mundano_natural": 0.8,
@@ -94,5 +97,6 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGendarmerie-Nationale-Dinan-byRundvald.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "espacial"
 }
