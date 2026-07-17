@@ -126,7 +126,7 @@ console.log("\nHome · snapshot de hipótesis");
 const home = readOut("index.html");
 if (home == null) fail("no existe out/index.html");
 else {
-  check("renderiza el snapshot de hipótesis (header)", /Cómo se clasifican|How the corpus/.test(home));
+  check("renderiza el snapshot de hipótesis (header)", /casos del corpus|corpus's \d+ cases|Cómo se clasifican|How the corpus/.test(home));
   check("declara que suman 100%", home.includes("suman 100%") || home.includes("sum to 100%"));
 }
 
