@@ -55,5 +55,16 @@
       "url": "https://en.wikipedia.org/wiki/Majestic_12",
       "note": "Síntesis de la historia, la lista de miembros y el análisis de falsificación."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/majestic-12-documents-context.jpg",
+      "type": "image",
+      "title": "Uno de los documentos Majestic-12 en circulación, investigados por el FBI",
+      "title_en": "One of the circulating Majestic-12 documents, investigated by the FBI",
+      "source": "Majestic 12 Part 1 of 1 (page 4 crop).jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMajestic%2012%20Part%201%20of%201%20(page%204%20crop).jpg"
+    }
   ]
 }

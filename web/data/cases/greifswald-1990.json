@@ -50,5 +50,16 @@
     "nohumano_encubierto": 0.015,
     "nohumano_abierto": 0.045,
     "indet": 0.17
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/greifswald-1990-context.jpg",
+      "type": "image",
+      "title": "Contexto · Greifswald (Alemania), junto a cuya bahía se vieron las luces de 1990",
+      "title_en": "Context · Greifswald (Germany), by whose bay the 1990 lights were seen",
+      "source": "Mobilitaetszentrale, Greifswald (LRM 20220319 153434).jpg · Wikimedia Commons",
+      "license": "CC BY-SA",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMobilitaetszentrale%2C%20Greifswald%20(LRM%2020220319%20153434).jpg"
+    }
+  ]
 }

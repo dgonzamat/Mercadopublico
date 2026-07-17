@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.01,
     "indet": 0.1
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/maussan-congreso-mexico-2023-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Palacio Legislativo de San Lázaro (Cámara de Diputados), Ciudad de México",
+      "title_en": "Context · the San Lázaro Legislative Palace (Chamber of Deputies), Mexico City",
+      "source": "Palacio Legislativo de San Lázaro obtenido con dron 01.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APalacio%20Legislativo%20de%20San%20L%C3%A1zaro%20obtenido%20con%20dron%2001.jpg"
+    }
+  ]
 }

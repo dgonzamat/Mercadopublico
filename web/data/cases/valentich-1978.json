@@ -55,5 +55,16 @@
       "note": "Investigación oficial; causa no determinada.",
       "note_en": "Official investigation; cause undetermined."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/valentich-1978-context.jpg",
+      "type": "image",
+      "title": "Contexto · cabo Otway, sobre el estrecho de Bass donde desapareció Valentich",
+      "title_en": "Context · Cape Otway, over the Bass Strait where Valentich vanished",
+      "source": "Cape Otway (AU), Cape Otway Lighthouse, Telegraph Station -- 2019 -- 1179.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACape%20Otway%20(AU)%2C%20Cape%20Otway%20Lighthouse%2C%20Telegraph%20Station%20--%202019%20--%201179.jpg"
+    }
   ]
 }

@@ -60,5 +60,16 @@
       "name": "Bishop, Greg — 'Project Beta' (sobre la desinformación contra Paul Bennewitz)",
       "note": "Documenta el origen del mito de Dulce en una operación de desinformación de inteligencia de EE.UU."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/dulce-schneider-1979-context.jpg",
+      "type": "image",
+      "title": "Contexto · Dulce (Nuevo México), al pie de la Mesa Archuleta",
+      "title_en": "Context · Dulce (New Mexico), at the foot of Archuleta Mesa",
+      "source": "D&RGW Boxcars At Dulce, New Mexico.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AD%26RGW%20Boxcars%20At%20Dulce%2C%20New%20Mexico.jpg"
+    }
   ]
 }

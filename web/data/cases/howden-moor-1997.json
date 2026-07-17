@@ -54,5 +54,16 @@
       "name": "Wikipedia — UFO sightings in the United Kingdom (Howden Moor, 1997)",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_the_United_Kingdom"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/howden-moor-1997-context.jpg",
+      "type": "image",
+      "title": "Contexto · Howden (Peak District, Inglaterra)",
+      "title_en": "Context · Howden (Peak District, England)",
+      "source": "Howden Dam Upper Derwent Reservoir 2023 01.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHowden%20Dam%20Upper%20Derwent%20Reservoir%202023%2001.jpg"
+    }
   ]
 }

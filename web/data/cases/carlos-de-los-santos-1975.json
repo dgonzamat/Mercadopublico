@@ -61,5 +61,16 @@
       "url": "https://cufos.org/",
       "note": "Hynek entrevistó al piloto; el caso circuló en la literatura de investigación (no en Blue Book, cerrado en 1969)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/carlos-de-los-santos-1975-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto internacional de Ciudad de México",
+      "title_en": "Context · Mexico City International Airport",
+      "source": "Aeropuerto Internacional Benito Juárez.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAeropuerto%20Internacional%20Benito%20Ju%C3%A1rez.jpg"
+    }
   ]
 }

@@ -43,5 +43,16 @@
       "name": "SWI swissinfo.ch — 'Report highlights Swiss military's interest in alleged UFO sightings'",
       "url": "https://www.swissinfo.ch/eng/swiss-abroad/report-reveals-swiss-militarys-interest-in-alleged-ufo-sightings/87865501"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/switzerland-air-intel-1954-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Fuerza Aérea Suiza, cuyo servicio de inteligencia recopiló los reportes",
+      "title_en": "Context · the Swiss Air Force, whose intelligence service gathered the reports",
+      "source": "Swiss Air Force PC-21 A-102 parked.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASwiss%20Air%20Force%20PC-21%20A-102%20parked.jpg"
+    }
   ]
 }
