@@ -56,6 +56,8 @@
  *       forzado (sin indeterminable, navegable). Cada vista debe rotular su
  *       método, la home remite a /calidad, y la vista navegable NO debe volver a
  *       inyectar documentPosteriors (o el denominador 248 vuelve a divergir).
+ *       (d) El donut de la home debe puentear su 248 con el «STATS.cases» (326)
+ *       del contador de la home, para que no se lean como que no calzan.
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -1009,6 +1011,14 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(enDir)) {
   // aparte, pero no debe meterlos en el conjunto que clasifica (MecePartition).
   if (prob && /items=\{allScored\}|expandedHypotheses\(allScored/.test(prob)) {
     record("ERROR", probPath, 0, "E24 modelo: /probabilidades clasifica `allScored` (incidentes + documentos). La partición forzada debe ser sobre `scored` (solo incidentes, 248) para unificar el denominador con la home y /calidad; cuenta los documentos aparte.");
+  }
+  // (d) PUENTE CON EL CONTADOR DE LA HOME: el donut clasifica 248 incidentes,
+  // pero la home muestra el stat «STATS.cases» (326 = 248 + 78 documentos). Sin
+  // un puente en el copy del donut, ambos números se leen como que no cuadran
+  // (reportado por el usuario, jul 2026). El título del donut debe derivar el
+  // total (STATS.cases) para explicar el desglose 326 = incidentes + documentos.
+  if (snapshot && !/STATS\.cases/.test(snapshot)) {
+    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot no referencia STATS.cases — el donut clasifica solo incidentes (248) pero la home muestra el total (326). El título del donut debe puentear ambos (p. ej. «los N de incidente (de STATS.cases; los D documentos no se clasifican por objeto)») para que no se lean como que no calzan.");
   }
 }
 
