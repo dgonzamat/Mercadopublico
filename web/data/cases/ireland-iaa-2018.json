@@ -54,5 +54,16 @@
       "name": "Irish Examiner — 'UFO seen off Irish coast 'in all probability, were meteorites''",
       "url": "https://www.irishexaminer.com/news/arid-30884774.html"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/ireland-iaa-2018-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto de Shannon (Irlanda), cuyo control aéreo recibió los reportes",
+      "title_en": "Context · Shannon Airport (Ireland), whose ATC received the reports",
+      "source": "Shannon Airport 2020-07-12 01.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AShannon%20Airport%202020-07-12%2001.jpg"
+    }
   ]
 }

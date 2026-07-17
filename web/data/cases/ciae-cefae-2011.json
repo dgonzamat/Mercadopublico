@@ -54,5 +54,16 @@
       "name": "Zona Militar — entrevista al comodoro Rubén Lianza, a cargo del CIAE (2020)",
       "url": "https://www.zona-militar.com/2020/12/22/entrevista-a-ruben-lianza-quien-esta-a-cargo-del-centro-de-identificacion-aeroespacial/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/ciae-cefae-2011-context.jpg",
+      "type": "image",
+      "title": "Contexto · Buenos Aires, sede de la Fuerza Aérea Argentina (CIAE/CEFAE)",
+      "title_en": "Context · Buenos Aires, seat of the Argentine Air Force (CIAE/CEFAE)",
+      "source": "Casa Rosada, Buenos Aires, Argentina.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACasa%20Rosada%2C%20Buenos%20Aires%2C%20Argentina.jpg"
+    }
   ]
 }

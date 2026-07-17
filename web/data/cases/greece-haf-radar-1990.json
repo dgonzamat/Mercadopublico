@@ -56,5 +56,16 @@
       "name": "Wikipedia — UFO sightings in Greece",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_Greece"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/greece-haf-radar-1990-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Fuerza Aérea Helénica, que abrió expediente por el avistamiento de 1990",
+      "title_en": "Context · the Hellenic Air Force, which opened a file on the 1990 sighting",
+      "source": "Hellenic Air Force Mirage 2000.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHellenic%20Air%20Force%20Mirage%202000.jpg"
+    }
   ]
 }

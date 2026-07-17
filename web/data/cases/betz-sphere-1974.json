@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.0,
     "indet": 0.06
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/betz-sphere-1974-context.jpg",
+      "type": "image",
+      "title": "Contexto · Fort George Island (Florida), donde la familia Betz halló la esfera",
+      "title_en": "Context · Fort George Island (Florida), where the Betz family found the sphere",
+      "source": "Fort George Island, Florida SAAM-1970.73 1.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AFort%20George%20Island%2C%20Florida%20SAAM-1970.73%201.jpg"
+    }
+  ]
 }

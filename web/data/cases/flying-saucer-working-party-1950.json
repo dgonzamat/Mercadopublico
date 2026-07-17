@@ -60,5 +60,16 @@
       "name": "Flying Saucer Working Party — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/Flying_Saucer_Working_Party"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/flying-saucer-working-party-1950-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Ministerio de Defensa británico en Londres, sede del Flying Saucer Working Party",
+      "title_en": "Context · the UK Ministry of Defence in London, home of the Flying Saucer Working Party",
+      "source": "Ministry of Defence building - Whitehall - London.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMinistry%20of%20Defence%20building%20-%20Whitehall%20-%20London.jpg"
+    }
   ]
 }
