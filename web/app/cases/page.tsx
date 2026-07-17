@@ -5,6 +5,7 @@ import {
   corpusPosteriors,
   documentPosteriors,
   modalHypothesis,
+  MISID_SUBTYPES,
 } from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
 import { TIER_META } from "@/lib/ui";
@@ -97,6 +98,25 @@ export default function CasesPage() {
     if (h) hypCounts[h] = (hypCounts[h] ?? 0) + 1;
   }
 
+  // Sub-faceta de misidentificación (drill-down): con qué objeto conocido se
+  // confundió. Solo cuenta casos cuya narrativa MODAL es misid (los que quedan
+  // visibles al activar esa hipótesis), agrupados por su misidSubtype. Etiquetas
+  // resueltas aquí (server) para no arrastrar meceModel→cases al bundle cliente.
+  const misidCounts: Record<string, number> = {};
+  for (const c of cases) {
+    if (modalById.get(c.id) === "misid" && c.misidSubtype) {
+      misidCounts[c.misidSubtype] = (misidCounts[c.misidSubtype] ?? 0) + 1;
+    }
+  }
+  const misidSubtypeOpts = MISID_SUBTYPES.filter(
+    (s) => (misidCounts[s.key] ?? 0) > 0,
+  ).map((s) => ({
+    key: s.key,
+    es: s.label,
+    en: s.labelEn,
+    count: misidCounts[s.key] ?? 0,
+  }));
+
   const tierCounts: Record<string, number> = {};
   for (const c of cases) tierCounts[c.tier] = (tierCounts[c.tier] ?? 0) + 1;
   const tierOpts = TIER_ORDER.filter((t) => (tierCounts[t] ?? 0) > 0).map(
@@ -153,6 +173,7 @@ export default function CasesPage() {
       <CasesFilter
         regionCounts={regionCounts}
         hypCounts={hypCounts}
+        misidSubtypes={misidSubtypeOpts}
         eras={eras.map(({ era, eraCases }) => ({
           key: String(era.start),
           es: `${era.start}–${era.end}`,
@@ -209,6 +230,7 @@ export default function CasesPage() {
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
                       data-hyp={modalById.get(c.id) ?? "indet"}
+                      data-misid={c.misidSubtype ?? ""}
                       data-era={String(era.start)}
                       data-tier={c.tier}
                       className="contents"

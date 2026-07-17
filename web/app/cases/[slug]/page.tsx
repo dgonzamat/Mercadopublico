@@ -668,7 +668,7 @@ export default async function CaseDetailPage(
               }
             />
           </Body>
-          <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} />
+          <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} />
           <Caption className="italic">
             <T
               es="Juicio analítico estructurado, no frecuencia calibrada. Clasificación forzada: la masa que la evidencia no permite asignar se reparte entre las hipótesis que el caso sí apoya."

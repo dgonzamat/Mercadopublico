@@ -45,6 +45,7 @@ export type FacetOption = { key: string; es: string; en: string; count: number }
 export function CasesFilter({
   regionCounts,
   hypCounts,
+  misidSubtypes,
   eras,
   tiers,
   total,
@@ -52,6 +53,7 @@ export function CasesFilter({
 }: {
   regionCounts: Partial<Record<Region, number>>;
   hypCounts: Partial<Record<HypKey, number>>;
+  misidSubtypes: FacetOption[];
   eras: FacetOption[];
   tiers: FacetOption[];
   total: number;
@@ -59,6 +61,7 @@ export function CasesFilter({
 }) {
   const [region, setRegion] = useState<Region | "all">("all");
   const [hyp, setHyp] = useState<HypKey | "all">("all");
+  const [misid, setMisid] = useState<string | "all">("all");
   const [era, setEra] = useState<string | "all">("all");
   const [tier, setTier] = useState<string | "all">("all");
   const [matchCount, setMatchCount] = useState(total);
@@ -97,6 +100,7 @@ export function CasesFilter({
       const sel =
         (region !== "all" ? `[data-region="${region}"]` : "") +
         (hyp !== "all" ? `[data-hyp="${hyp}"]` : "") +
+        (misid !== "all" ? `[data-misid="${misid}"]` : "") +
         (era !== "all" ? `[data-era="${era}"]` : "") +
         (tier !== "all" ? `[data-tier="${tier}"]` : "");
       const itemSel = `[data-region]${sel}`; // todo wrapper de caso lleva data-region
@@ -107,13 +111,21 @@ export function CasesFilter({
       });
     };
     measure();
-  }, [region, hyp, era, tier]);
+  }, [region, hyp, misid, era, tier]);
+
+  // La sub-faceta de subtipo solo tiene sentido bajo «Misidentificación»: al
+  // cambiar la hipótesis a cualquier otra (o a «todas»), se resetea.
+  useEffect(() => {
+    if (hyp !== "misid") setMisid("all");
+  }, [hyp]);
 
   const availRegions = REGION_ORDER.filter((r) => (regionCounts[r] ?? 0) > 0);
   const availHyps = HYP_ORDER.filter((h) => (hypCounts[h.key] ?? 0) > 0);
 
   const regionLabel = (r: Region) => REGION_LABELS[r][locale];
   const hypLabel = (k: HypKey) => HYP_ORDER.find((h) => h.key === k)![locale];
+  const misidLabel = (k: string) =>
+    misidSubtypes.find((s) => s.key === k)?.[locale] ?? k;
   const optLabel = (opts: FacetOption[], k: string) => {
     const o = opts.find((x) => x.key === k);
     return o ? o[locale] : k;
@@ -126,6 +138,8 @@ export function CasesFilter({
     active.push({ key: `region:${region}`, label: regionLabel(region), clear: () => setRegion("all") });
   if (hyp !== "all")
     active.push({ key: `hyp:${hyp}`, label: hypLabel(hyp), clear: () => setHyp("all") });
+  if (misid !== "all")
+    active.push({ key: `misid:${misid}`, label: misidLabel(misid), clear: () => setMisid("all") });
   if (tier !== "all")
     active.push({ key: `tier:${tier}`, label: optLabel(tiers, tier), clear: () => setTier("all") });
 
@@ -133,6 +147,7 @@ export function CasesFilter({
     setEra("all");
     setRegion("all");
     setHyp("all");
+    setMisid("all");
     setTier("all");
   };
 
@@ -144,6 +159,7 @@ export function CasesFilter({
       ref={rootRef}
       data-region-filter={region}
       data-hyp-filter={hyp}
+      data-misid-filter={misid}
       data-era-filter={era}
       data-tier-filter={tier}
       className="space-y-4"
@@ -186,6 +202,26 @@ export function CasesFilter({
           options={tiers.map((t) => ({ value: t.key, label: `${t[locale]} · ${t.count}` }))}
         />
       </div>
+
+      {/* Sub-faceta (drill-down): con qué se confundió. Solo bajo «Misidentificación». */}
+      {hyp === "misid" && misidSubtypes.length > 0 && (
+        <div
+          className="flex flex-wrap items-center gap-2 border-l-2 border-accent/30 pl-3"
+          role="group"
+          aria-label={locale === "es" ? "Filtrar por subtipo de misidentificación" : "Filter by misidentification subtype"}
+        >
+          <span className="mr-1 font-mono text-xs uppercase tracking-widest text-muted">
+            <T es="¿Con qué?" en="With what?" />
+          </span>
+          <FacetSelect
+            value={misid}
+            onChange={setMisid}
+            ariaLabel={locale === "es" ? "Filtrar por subtipo de misidentificación" : "Filter by misidentification subtype"}
+            allLabel={locale === "es" ? "Subtipo · todos" : "Subtype · all"}
+            options={misidSubtypes.map((s) => ({ value: s.key, label: `${s[locale]} · ${s.count}` }))}
+          />
+        </div>
+      )}
 
       {/* Filtros activos (pills removibles) + conteo vivo + limpiar todo. */}
       {anyActive && (

@@ -5,8 +5,10 @@ import {
   expandedHypotheses,
   modalCounts,
   modalHypothesis,
+  MISID_SUBTYPES,
   type ScoredCase,
 } from "@/lib/meceModel";
+import type { MisidSubtype } from "@/lib/types";
 import type { Posterior } from "@/lib/types";
 
 const pct = (x: number) => (x * 100).toFixed(0);
@@ -120,9 +122,23 @@ export function MecePartition({
 
 /** Posterior de un caso: barra apilada al 100% + hipótesis modal (clasificación
  *  forzada; mundano/natural abierto en su sub-tipo). */
-export function CasePosterior({ posterior, mundanoType }: { posterior: Posterior; mundanoType?: ScoredCase["mundanoType"] }) {
+export function CasePosterior({
+  posterior,
+  mundanoType,
+  misidSubtype,
+}: {
+  posterior: Posterior;
+  mundanoType?: ScoredCase["mundanoType"];
+  misidSubtype?: MisidSubtype;
+}) {
   const rows = expandedHypotheses([{ posterior, mundanoType }]);
   const m = rows[0];
+  // Drill-down bajo «Misidentificación»: con qué objeto conocido se confundió.
+  // Solo se muestra si la hipótesis modal ES misid y el caso trae el subtipo.
+  const sub =
+    m.key === "misid" && misidSubtype
+      ? MISID_SUBTYPES.find((s) => s.key === misidSubtype)
+      : undefined;
   return (
     <div>
       <div className="flex h-4 w-full overflow-hidden rounded-sm">
@@ -148,6 +164,14 @@ export function CasePosterior({ posterior, mundanoType }: { posterior: Posterior
         </span>{" "}
         {pct(m.count)}% · <T es="suma 100%" en="sums to 100%" />
       </p>
+      {sub && (
+        <p className="mt-1.5 font-mono text-[11px] uppercase tracking-widest text-muted">
+          <T es="Se confundió con" en="Confused with" />:{" "}
+          <span style={{ color: sub.color }} className="font-semibold">
+            <T es={sub.label} en={sub.labelEn} />
+          </span>
+        </p>
+      )}
     </div>
   );
 }
