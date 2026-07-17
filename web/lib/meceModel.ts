@@ -61,6 +61,11 @@ export const MECE_CLASSES: ReadonlyArray<{
   { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—" },
 ];
 
+/** Color neutro/mudo de la porción «casos-documento» en el donut del corpus:
+ *  no son una hipótesis, solo se cuentan aparte para que el donut marque el
+ *  total. Vive en lib (no en app/components) → fuera del scan de audit-design D3. */
+export const DOCUMENT_COLOR = "#8a8172";
+
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
 /** Sub-tipos de mundano/natural, promovidos a hipótesis de primer nivel.

@@ -1,4 +1,4 @@
-import { corpusPosteriors, modalCounts } from "@/lib/meceModel";
+import { corpusPosteriors, modalCounts, DOCUMENT_COLOR } from "@/lib/meceModel";
 import { MeceDonut } from "@/components/MeceDonut";
 import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
@@ -35,7 +35,7 @@ export function HypothesesSnapshot() {
     ...hypRows,
     {
       key: "document",
-      color: "#8a8172", // neutro/mudo: los documentos no son una hipótesis
+      color: DOCUMENT_COLOR, // neutro/mudo: los documentos no son una hipótesis
       count: docs,
       label: "Casos-documento",
       labelEn: "Document cases",
