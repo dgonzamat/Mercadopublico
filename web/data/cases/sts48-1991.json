@@ -71,5 +71,16 @@
       "name": "Oberg, J. — Critique of Carlotto analysis (Skeptical Inquirer 2003)",
       "note": "Formal critique of the non-ballistic attribution"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/sts48-1991-context.jpg",
+      "type": "image",
+      "title": "La misión STS-48 del transbordador Discovery, cuyo vídeo en órbita originó el caso",
+      "title_en": "The STS-48 Space Shuttle Discovery mission, whose in-orbit video sparked the case",
+      "source": "STS-48 crew.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASTS-48%20crew.jpg"
+    }
   ]
 }

@@ -60,5 +60,16 @@
       "name": "The National Archives (UK) — MoD UFO files",
       "url": "https://www.nationalarchives.gov.uk/ufos/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/todmorden-godfrey-1980-context.jpg",
+      "type": "image",
+      "title": "Contexto · Todmorden (West Yorkshire, Inglaterra)",
+      "title_en": "Context · Todmorden (West Yorkshire, England)",
+      "source": "Todmorden Town Hall Interior.jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ATodmorden%20Town%20Hall%20Interior.jpg"
+    }
   ]
 }

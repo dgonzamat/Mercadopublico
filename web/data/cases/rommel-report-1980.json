@@ -54,5 +54,16 @@
       "note": "Archivo desclasificado del FBI con correspondencia y materiales relacionados al caso.",
       "note_en": "Declassified FBI archive with correspondence and case-related materials."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/rommel-report-1980-context.jpg",
+      "type": "image",
+      "title": "Contexto · Santa Fe (Nuevo México)",
+      "title_en": "Context · Santa Fe (New Mexico)",
+      "source": "Santa Fe Plaza.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASanta%20Fe%20Plaza.jpg"
+    }
   ]
 }

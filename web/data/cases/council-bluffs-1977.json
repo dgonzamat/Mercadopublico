@@ -54,5 +54,16 @@
       "note": "Documentación contemporánea de testigos y recolección del material.",
       "note_en": "Contemporary documentation of witnesses and material recovery."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/council-bluffs-1977-context.jpg",
+      "type": "image",
+      "title": "Contexto · Council Bluffs (Iowa)",
+      "title_en": "Context · Council Bluffs (Iowa)",
+      "source": "Greetings from Council Bluffs Iowa (NBY 1601).jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGreetings%20from%20Council%20Bluffs%20Iowa%20(NBY%201601).jpg"
+    }
   ]
 }

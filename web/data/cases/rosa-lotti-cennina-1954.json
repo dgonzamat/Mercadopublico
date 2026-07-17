@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.1,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/rosa-lotti-cennina-1954-context.jpg",
+      "type": "image",
+      "title": "Contexto · Cennina (Bucine, Toscana, Italia)",
+      "title_en": "Context · Cennina (Bucine, Tuscany, Italy)",
+      "source": "La pietra tagliata - Cennina - Bucine.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALa%20pietra%20tagliata%20-%20Cennina%20-%20Bucine.jpg"
+    }
+  ]
 }

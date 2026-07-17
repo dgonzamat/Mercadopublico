@@ -58,5 +58,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.04,
     "indet": 0.15
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/mezcala-2007-context.jpg",
+      "type": "image",
+      "title": "Contexto · Mezcala (Guerrero, México)",
+      "title_en": "Context · Mezcala (Guerrero, Mexico)",
+      "source": "Mezcala Bridge - Mexico edit1.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMezcala%20Bridge%20-%20Mexico%20edit1.jpg"
+    }
+  ]
 }
