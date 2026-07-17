@@ -62,5 +62,16 @@
       "name": "Reuters — Japan to study UFOs (Sept 2020)",
       "url": "https://www.reuters.com"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/japan-jai-directive-2020-context.png",
+      "type": "image",
+      "title": "Contexto · Ichigaya (Tokio), sede del Ministerio de Defensa de Japón",
+      "title_en": "Context · Ichigaya (Tokyo), seat of Japan's Ministry of Defense",
+      "source": "Japan Ministry of Defense in Ichigaya.png · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AJapan%20Ministry%20of%20Defense%20in%20Ichigaya.png"
+    }
   ]
 }

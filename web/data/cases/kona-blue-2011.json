@@ -63,5 +63,16 @@
       "name": "NewsNation — 'What was the Kona Blue program, and does it mean UFOs exist?'",
       "url": "https://www.newsnationnow.com/space/ufo/what-kona-blue-do-ufos-exist/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/kona-blue-2011-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Nebraska Avenue Complex (DHS), Washington D.C.",
+      "title_en": "Context · the Nebraska Avenue Complex (DHS), Washington D.C.",
+      "source": "Nebraska Avenue Complex 2017a.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ANebraska%20Avenue%20Complex%202017a.jpg"
+    }
   ]
 }
