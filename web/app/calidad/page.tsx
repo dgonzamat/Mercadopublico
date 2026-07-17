@@ -76,12 +76,19 @@ export default function CalidadPage() {
     .filter((x) => x.n > 0)
     .sort((a, b) => b.n - a.n);
 
-  // MECE agregado (Eⱼ = Σ P(narrativaⱼ | casoᵢ) sobre casos con posterior)
+  // MECE agregado (Eⱼ = Σ P(narrativaⱼ | casoᵢ)). Partición CANÓNICA: solo casos
+  // de incidente — los documentos se EXCLUYEN porque «qué era el objeto» no les
+  // aplica (misma regla que corpusPosteriors y CLAUDE.md). Antes se sumaba sobre
+  // `c.posterior` (310, incluía 62 documentos con posterior), lo que hacía que el
+  // denominador y el reparto no cuadraran con la clasificación forzada de la home
+  // /probabilidades. Aquí se conserva «indeterminable»: es la vista comparable.
+  const meceCases = cases.filter((c) => c.category !== "document" && c.posterior);
+  const meceN = meceCases.length;
   const agg: Record<string, number> = {};
   MECE_CLASSES.forEach((m) => {
     agg[m.id] = 0;
   });
-  cases.forEach((c) => {
+  meceCases.forEach((c) => {
     const p = c.posterior as Record<string, number> | undefined;
     if (p) MECE_CLASSES.forEach((m) => {
       agg[m.id] += p[m.id] || 0;
@@ -254,8 +261,8 @@ export default function CalidadPage() {
         </div>
         <p className="text-sm text-muted">
           <T
-            es={`Suma de las probabilidades sobre ${withPosterior} casos con posterior. Comparable, no una frecuencia calibrada.`}
-            en={`Sum of probabilities over ${withPosterior} cases with a posterior. Comparable, not a calibrated frequency.`}
+            es={`Valor esperado (Eⱼ = Σ P) sobre los ${meceN} casos de incidente —los documentos se excluyen, como en la partición canónica—. Conserva «indeterminable»: es la vista comparable del modelo. La clasificación forzada y navegable (cada caso en una hipótesis, sin indeterminable) vive en /probabilidades y en la home. Comparable, no una frecuencia calibrada.`}
+            en={`Expected value (Eⱼ = Σ P) over the ${meceN} incident cases —documents are excluded, as in the canonical partition—. It keeps 'indeterminable': this is the model's comparable view. The forced, navigable classification (each case in one hypothesis, no indeterminable) lives on /probabilidades and the home. Comparable, not a calibrated frequency.`}
           />
         </p>
       </section>

@@ -44,8 +44,8 @@ export function HypothesesSnapshot() {
       </div>
       <p className="mt-8 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es="Clasificación forzada y comparable — las hipótesis reparten el 100% del corpus (mundano abierto en misid/natural/posible fraude; no-humano consolidado)"
-          en="Forced, comparable classification — the hypotheses split 100% of the corpus (mundane opened into misid/natural/possible hoax; non-human consolidated)"
+          es="Clasificación forzada y navegable — cada caso cuenta 1 en su hipótesis más probable (argmax); mundano abierto en misid/natural/posible fraude, no-humano consolidado. No hay «indeterminable»: esa masa se reparte para que toda hipótesis sea listable. El reparto por valor esperado —que sí conserva la incertidumbre, sobre los casos de incidente— está en /calidad."
+          en="Forced, navigable classification — each case counts once in its most-likely hypothesis (argmax); mundane opened into misid/natural/possible hoax, non-human consolidated. There is no 'indeterminable': that mass is redistributed so every hypothesis is listable. The expected-value split —which does keep the uncertainty, over the incident cases— is on /calidad."
         />
       </p>
     </div>
