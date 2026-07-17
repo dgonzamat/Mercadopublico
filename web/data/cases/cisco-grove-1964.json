@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.11,
     "indet": 0.33
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/cisco-grove-1964-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Bosque Nacional de Tahoe (California), zona de Cisco Grove",
+      "title_en": "Context · Tahoe National Forest (California), the Cisco Grove area",
+      "source": "Nevada - Tahoe National Forest, California - NARA - 543569.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ANevada%20-%20Tahoe%20National%20Forest%2C%20California%20-%20NARA%20-%20543569.jpg"
+    }
+  ]
 }

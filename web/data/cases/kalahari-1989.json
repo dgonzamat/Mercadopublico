@@ -59,5 +59,16 @@
       "name": "Hind, Cynthia — 'Anatomy of a hoax: The UFO crash on the South African/Botswana border'",
       "note": "Investigación de referencia que expone a Van Greunen como originador del fraude."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/kalahari-1989-context.jpg",
+      "type": "image",
+      "title": "Contexto · el desierto del Kalahari, en la frontera Sudáfrica–Botsuana",
+      "title_en": "Context · the Kalahari desert, on the South Africa–Botswana border",
+      "source": "Kalahari PICT0036.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKalahari%20PICT0036.JPG"
+    }
   ]
 }

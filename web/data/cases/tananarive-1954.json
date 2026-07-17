@@ -63,5 +63,16 @@
       "url": "https://ufologie.patrickgross.org/htm/tana54.htm",
       "note": "Compilación crítica de fuentes y versiones del caso, incluido el testimonio de Campagnac."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/tananarive-1954-context.jpg",
+      "type": "image",
+      "title": "Contexto · Antananarivo (Madagascar)",
+      "title_en": "Context · Antananarivo (Madagascar)",
+      "source": "Lake Anosy, Central Antananarivo, Capital of Madagascar, Photo by Sascha Grabow.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Anosy%2C%20Central%20Antananarivo%2C%20Capital%20of%20Madagascar%2C%20Photo%20by%20Sascha%20Grabow.jpg"
+    }
   ]
 }

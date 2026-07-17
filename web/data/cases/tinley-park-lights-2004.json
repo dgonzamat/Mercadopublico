@@ -65,5 +65,16 @@
       "url": "https://chicago.suntimes.com/news/2014/7/2/18611840/happy-world-ufo-day-5-notable-ufo-sightings-in-illinois-history",
       "note": "Cobertura periodística del caso en contexto."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/tinley-park-lights-2004-context.jpg",
+      "type": "image",
+      "title": "Contexto · Tinley Park (Illinois)",
+      "title_en": "Context · Tinley Park (Illinois)",
+      "source": "Tinley Park, Ill..JPG · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ATinley%20Park%2C%20Ill..JPG"
+    }
   ]
 }

@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.1,
     "indet": 0.32
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/napolitano-brooklyn-1989-context.jpg",
+      "type": "image",
+      "title": "Contexto · el puente de Brooklyn, cerca del alegado suceso de Linda Napolitano",
+      "title_en": "Context · the Brooklyn Bridge, near Linda Napolitano's alleged event",
+      "source": "Brooklyn Bridge at Night.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABrooklyn%20Bridge%20at%20Night.jpg"
+    }
+  ]
 }
