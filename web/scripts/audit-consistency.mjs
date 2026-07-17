@@ -50,11 +50,12 @@
  *       bloquear el egress de iCloud Private Relay, /visitantes fuera del
  *       conteo de pageviews, y migraciones 0005/0006 presentes como registro
  *       reproducible de lo aplicado en Supabase.
- *   E24 (ERROR) Coherencia entre las dos vistas del modelo: /calidad (valor
- *       esperado, conserva «indeterminable», solo incidentes = 248) debe
- *       excluir documentos y rotular su método; la home (argmax forzado, 326,
- *       sin indeterminable) debe rotularse y remitir a /calidad. Evita que se
- *       lean como contradictorias (denominador 248 vs 326, esperado vs argmax).
+ *   E24 (ERROR) Coherencia entre las dos vistas del modelo: ambas sobre el mismo
+ *       conjunto de 248 incidentes (documentos excluidos). /calidad = valor
+ *       esperado (conserva «indeterminable»); home + /probabilidades = argmax
+ *       forzado (sin indeterminable, navegable). Cada vista debe rotular su
+ *       método, la home remite a /calidad, y la vista navegable NO debe volver a
+ *       inyectar documentPosteriors (o el denominador 248 vuelve a divergir).
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -994,6 +995,20 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(enDir)) {
   }
   if (snapshot && !/\/calidad/.test(snapshot)) {
     record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado con «indeterminable»). El puente entre ambas vistas es lo que evita que se lean como contradictorias.");
+  }
+  // (c) DENOMINADOR UNIFICADO: la vista navegable (home + /probabilidades) debe
+  // excluir los documentos —clasificar solo incidentes (248)— igual que /calidad.
+  // Si vuelve a inyectar documentPosteriors en la clasificación, los denominadores
+  // (248 vs 326) divergen y reaparece la inconsistencia que motivó E24.
+  if (snapshot && /documentPosteriors/.test(snapshot)) {
+    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot vuelve a incluir documentPosteriors — la clasificación forzada debe ser SOLO sobre incidentes (corpusPosteriors, 248) para que el denominador coincida con /calidad. Los documentos no tienen «objeto» que clasificar.");
+  }
+  const probPath = path.join(root, "app", "probabilidades", "page.tsx");
+  const prob = fs.existsSync(probPath) ? fs.readFileSync(probPath, "utf-8") : "";
+  // /probabilidades puede leer documentPosteriors().length para CONTAR los docs
+  // aparte, pero no debe meterlos en el conjunto que clasifica (MecePartition).
+  if (prob && /items=\{allScored\}|expandedHypotheses\(allScored/.test(prob)) {
+    record("ERROR", probPath, 0, "E24 modelo: /probabilidades clasifica `allScored` (incidentes + documentos). La partición forzada debe ser sobre `scored` (solo incidentes, 248) para unificar el denominador con la home y /calidad; cuenta los documentos aparte.");
   }
 }
 

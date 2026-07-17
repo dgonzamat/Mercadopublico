@@ -5,7 +5,6 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
 import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis } from "@/lib/meceModel";
-import { STATS } from "@/lib/siteStats";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 export const metadata = {
@@ -47,19 +46,21 @@ const BLURB: Record<string, { es: string; en: string }> = {
 };
 
 export default function ProbabilidadesPage() {
+  // SOLO casos de incidente: la partición «qué era el objeto» no aplica a los
+  // casos-documento, que se excluyen (canon CLAUDE.md). Denominador unificado en
+  // 248 con la home, /cases y /calidad. Los documentos se cuentan aparte.
   const scored = corpusPosteriors();
-  const docScored = documentPosteriors();
-  const allScored = [...scored, ...docScored];
+  const docCount = documentPosteriors().length;
 
   // Conjunto expandido de hipótesis (mundano abierto en 3 sub-tipos, no-humano
   // consolidado), clasificación forzada. Ordenado por masa.
-  const hypRows = expandedHypotheses(allScored, { consolidateNonHuman: true });
+  const hypRows = expandedHypotheses(scored, { consolidateNonHuman: true });
 
   // Nº de casos donde cada hipótesis es la explicación modal (misma lógica que
   // el filtro de /cases). Solo necesitamos el conteo: el listado vive en /cases.
   const modalCount: Record<string, number> = {};
   for (const r of hypRows) modalCount[r.key] = 0;
-  for (const s of allScored) {
+  for (const s of scored) {
     const m = modalHypothesis(s, { consolidateNonHuman: true });
     modalCount[m.key] = (modalCount[m.key] ?? 0) + 1;
   }
@@ -74,8 +75,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Las ${STATS.cases} piezas del corpus se clasifican, cada una, en una hipótesis (los casos de incidente por la naturaleza del objeto; los casos-documento por el lean evidencial de su contenido). Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y posible fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten el corpus de forma comparable: se puede decir qué hipótesis da cuenta de más casos.`}
-          en={`The corpus's ${STATS.cases} pieces are each classified into one hypothesis (incident cases by the nature of the object; document cases by the evidential lean of their content). It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and possible hoax— and 'non-human' groups covert + open. Summed, they partition the corpus comparably: one can say which hypothesis accounts for more cases.`}
+          es={`Los ${scored.length} casos de incidente se clasifican, cada uno, en una hipótesis por la naturaleza del objeto. Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y posible fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten los incidentes de forma comparable: se puede decir qué hipótesis da cuenta de más casos. Los ${docCount} casos-documento se excluyen —la partición «qué era el objeto» no les aplica— y se exploran aparte en /cases.`}
+          en={`The ${scored.length} incident cases are each classified into one hypothesis by the nature of the object. It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and possible hoax— and 'non-human' groups covert + open. Summed, they partition the incidents comparably: one can say which hypothesis accounts for more cases. The ${docCount} document cases are excluded —the 'what was the object' partition does not apply— and are explored separately in /cases.`}
         />
       </Lede>
 
@@ -85,17 +86,17 @@ export default function ProbabilidadesPage() {
         </H2>
         <Caption>
           <T
-            es={`Las ${STATS.cases} piezas del corpus, clasificadas. Clasificación forzada, sin indeterminable.`}
-            en={`All ${STATS.cases} corpus pieces, classified. Forced classification, no indeterminable.`}
+            es={`Los ${scored.length} casos de incidente, clasificados. Clasificación forzada, sin indeterminable (documentos excluidos).`}
+            en={`The ${scored.length} incident cases, classified. Forced classification, no indeterminable (documents excluded).`}
           />
         </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
-            items={allScored}
+            items={scored}
             consolidateNonHuman
             hrefFor={(key) => `#hyp-${key}`}
-            totalLabelEs={`Suman 100% · ${allScored.length} casos · mundano abierto en 3 · no-humano agrupado`}
-            totalLabelEn={`Sum to 100% · ${allScored.length} cases · mundane opened into 3 · non-human grouped`}
+            totalLabelEs={`Suman 100% · ${scored.length} incidentes · mundano abierto en 3 · no-humano agrupado`}
+            totalLabelEn={`Sum to 100% · ${scored.length} incidents · mundane opened into 3 · non-human grouped`}
           />
         </div>
       </section>
@@ -171,8 +172,8 @@ export default function ProbabilidadesPage() {
         </H2>
         <Body className="mt-2 text-sm text-muted">
           <T
-            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. Hay dos maneras de agregar el corpus: el «nº esperado de casos por explicación» (la suma de las probabilidades de cada narrativa) es lineal y comparable, válido aunque los casos estén correlacionados; y el conteo por hipótesis modal, que asigna cada caso —clasificación forzada, sin «indeterminable»— a su narrativa más probable. El gráfico de arriba y los enlaces a los casos usan este último: conteos enteros y navegables, coherentes con el filtro de «/cases». La distribución completa de cada caso —con su masa de incertidumbre repartida entre las narrativas que apoya— vive en el detalle del caso. Para los incidentes el posterior mide la naturaleza del objeto; para los casos-documento, el lean evidencial de su contenido. La incertidumbre subyacente sigue en el análisis de cada caso; aquí se compromete a la lectura más sostenida."
-            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. There are two ways to aggregate the corpus: the 'expected number of cases per explanation' (the sum of each narrative's probabilities) is linear and comparable, holding even if cases are correlated; and the modal-hypothesis count, which assigns each case —forced classification, no 'indeterminable'— to its single most probable narrative. The chart above and the links to the cases use the latter: integer, navigable counts, consistent with the '/cases' filter. Each case's full distribution —with its uncertainty mass spread across the narratives it supports— lives in the case detail. For incidents the posterior measures the nature of the object; for document cases, the evidential lean of their content. The underlying uncertainty still lives in each case's analysis; here it is committed to the best-supported reading."
+            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. Hay dos maneras de agregar el corpus, y ambas usan el mismo conjunto de casos de incidente (los casos-documento se excluyen: la partición «qué era el objeto» no les aplica). El «nº esperado de casos por explicación» (la suma de las probabilidades de cada narrativa) es lineal y comparable, válido aunque los casos estén correlacionados, y conserva la masa «indeterminable»: se muestra en /calidad. El conteo por hipótesis modal asigna cada caso —clasificación forzada, sin «indeterminable»— a su narrativa más probable; el gráfico de arriba y los enlaces a los casos usan este último: conteos enteros y navegables, coherentes con el filtro de «/cases». Las dos vistas dan cifras distintas porque son estimadores distintos, no porque se contradigan. La distribución completa de cada caso —con su masa de incertidumbre repartida entre las narrativas que apoya— vive en el detalle del caso."
+            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. There are two ways to aggregate the corpus, and both use the same set of incident cases (document cases are excluded: the 'what was the object' partition does not apply to them). The 'expected number of cases per explanation' (the sum of each narrative's probabilities) is linear and comparable, holding even if cases are correlated, and it keeps the 'indeterminable' mass: it is shown on /calidad. The modal-hypothesis count assigns each case —forced classification, no 'indeterminable'— to its single most probable narrative; the chart above and the links to the cases use the latter: integer, navigable counts, consistent with the '/cases' filter. The two views give different figures because they are different estimators, not because they contradict each other. Each case's full distribution —with its uncertainty mass spread across the narratives it supports— lives in the case detail."
           />
         </Body>
         <Body className="mt-4 text-sm text-muted">
