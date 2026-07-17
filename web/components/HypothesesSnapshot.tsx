@@ -1,6 +1,7 @@
 import { corpusPosteriors, modalCounts } from "@/lib/meceModel";
 import { MeceDonut } from "@/components/MeceDonut";
 import { T } from "@/components/T";
+import { STATS } from "@/lib/siteStats";
 
 /**
  * Snapshot de las hipótesis para la Home (fondo oscuro bg-text).
@@ -13,6 +14,10 @@ import { T } from "@/components/T";
 export function HypothesesSnapshot() {
   const scored = corpusPosteriors();
   const N = scored.length;
+  // Puente con el contador «STATS.cases» de la home: 326 total = N incidentes +
+  // docs documentos. Sin este puente, el «326 casos» del hero y el «248» del
+  // donut se leen como que no cuadran (reportado por el usuario, jul 2026).
+  const docs = STATS.cases - N;
   // Conteo por hipótesis MODAL (argmax): enteros y consistentes con /cases y con
   // /probabilidades. Cada caso cuenta 1 en su narrativa más probable.
   const rows = modalCounts(scored, { consolidateNonHuman: true });
@@ -21,8 +26,8 @@ export function HypothesesSnapshot() {
     <div>
       <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
-          es={`Cómo se clasifican los ${N} casos de incidente entre las hipótesis — suman 100%`}
-          en={`How the ${N} incident cases classify among the hypotheses — they sum to 100%`}
+          es={`Cómo se clasifican los ${N} casos de incidente (de ${STATS.cases}; los ${docs} casos-documento no se clasifican por objeto) — suman 100%`}
+          en={`How the ${N} incident cases classify (of ${STATS.cases}; the ${docs} document cases aren't classified by object) — they sum to 100%`}
         />
       </p>
       <div className="mt-8">
