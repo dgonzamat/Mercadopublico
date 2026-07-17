@@ -54,5 +54,16 @@
       "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC)",
       "url": "https://sefaa.dgac.gob.cl/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/cefaa-chile-1997-context.jpg",
+      "type": "image",
+      "title": "Contexto · Santiago de Chile, sede de la DGAC y del CEFAA",
+      "title_en": "Context · Santiago de Chile, seat of the DGAC and CEFAA",
+      "source": "Palacio de la Moneda I.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APalacio%20de%20la%20Moneda%20I.jpg"
+    }
   ]
 }
