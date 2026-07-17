@@ -51,9 +51,10 @@ const num = (tag, attr) => {
 
 console.log("Donut /probabilidades");
 
-// 1) Nº de segmentos = 6 (no-humano consolidado)
-if (circles.length === 6) ok(`6 segmentos en el donut`);
-else fail(`esperaba 6 segmentos, encontré ${circles.length}`);
+// 1) Nº de segmentos = 7: 6 hipótesis (no-humano consolidado) + 1 porción de
+//    casos-documento, para que el donut marque el TOTAL del corpus.
+if (circles.length === 7) ok(`7 segmentos en el donut (6 hipótesis + documentos)`);
+else fail(`esperaba 7 segmentos (6 hipótesis + documentos), encontré ${circles.length}`);
 
 if (circles.length > 0) {
   const r = parseFloat(num(circles[0], "r"));
@@ -76,23 +77,24 @@ if (circles.length > 0) {
   else fail(`offsets no monótonos / con solape: ${offs.map((o) => o.toFixed(1)).join(", ")}`);
 }
 
-// 4) El centro del donut muestra el total de casos CLASIFICADOS.
+// 4) El centro del donut marca el TOTAL del corpus.
 //    El total NO se hardcodea (anti-pattern del repo): se deriva del corpus
 //    generado (data/cases.json) para que el test no se rompa al crecer el corpus.
-//    La clasificación forzada es SOLO sobre casos de incidente — los documentos
-//    se excluyen (partición canónica per CLAUDE.md; ver sonda E24). Por eso el
-//    centro muestra el nº de incidentes (no cases.length, que incluye documentos).
+//    El donut reparte el corpus completo: incidentes por hipótesis + una porción
+//    para los casos-documento, de modo que el centro marca cases.length (el total).
+//    La clasificación POR HIPÓTESIS sigue siendo solo sobre incidentes (canon
+//    CLAUDE.md / sonda E24); los documentos son una porción neutra, no una hipótesis.
 let expectedN = null;
 try {
   const raw = JSON.parse(readFileSync(join(__dirname, "..", "data", "cases.json"), "utf8"));
   const list = Array.isArray(raw) ? raw : Array.isArray(raw?.cases) ? raw.cases : null;
-  expectedN = list ? list.filter((c) => c.category !== "document").length : null;
+  expectedN = list ? list.length : null;
 } catch {
   /* cases.json es artefacto de build; si falta, caemos al check laxo abajo */
 }
 if (expectedN != null) {
-  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro muestra el total de incidentes derivado del corpus (${expectedN})`);
-  else fail(`el centro no muestra el total de incidentes del corpus (${expectedN})`);
+  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro marca el total del corpus derivado (${expectedN})`);
+  else fail(`el centro no marca el total del corpus (${expectedN})`);
 } else if (/>\s*\d{2,4}\s*</.test(html)) {
   ok(`el centro muestra un total numérico (no se pudo derivar del corpus)`);
 } else {
@@ -126,7 +128,7 @@ console.log("\nHome · snapshot de hipótesis");
 const home = readOut("index.html");
 if (home == null) fail("no existe out/index.html");
 else {
-  check("renderiza el snapshot de hipótesis (header)", /Cómo se clasifican|How the corpus/.test(home));
+  check("renderiza el snapshot de hipótesis (header)", /casos del corpus|corpus's \d+ cases|Cómo se clasifican|How the corpus/.test(home));
   check("declara que suman 100%", home.includes("suman 100%") || home.includes("sum to 100%"));
 }
 
