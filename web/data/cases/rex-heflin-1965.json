@@ -65,5 +65,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.08,
     "indet": 0.39
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/rex-heflin-1965-context.jpg",
+      "type": "image",
+      "title": "Contexto · Santa Ana (condado de Orange, California)",
+      "title_en": "Context · Santa Ana (Orange County, California)",
+      "source": "Downtown Santa Ana, California 4 (6020584618).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADowntown%20Santa%20Ana%2C%20California%204%20(6020584618).jpg"
+    }
+  ]
 }

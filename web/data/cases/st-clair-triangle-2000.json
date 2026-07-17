@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.15,
     "nohumano_abierto": 0.15,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/st-clair-triangle-2000-context.jpg",
+      "type": "image",
+      "title": "Contexto · Belleville (condado de St. Clair, Illinois)",
+      "title_en": "Context · Belleville (St. Clair County, Illinois)",
+      "source": "Main Street, Belleville, IL.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMain%20Street%2C%20Belleville%2C%20IL.jpg"
+    }
+  ]
 }

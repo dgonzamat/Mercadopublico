@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.06,
     "indet": 0.2
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/lead-masks-niteroi-1966-context.jpg",
+      "type": "image",
+      "title": "Contexto · Niterói (Brasil), donde está el Morro do Vintém",
+      "title_en": "Context · Niterói (Brazil), site of the Morro do Vintém",
+      "source": "Boca da Baía de Guanabara e orlas artificiais - Parque do Flamengo, Fortes Históricos de Niterói, Monumento Natural do Pão de Açúcar, orla marítima de Copacabana - Rio de Janeiro - 20240623064031.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABoca%20da%20Ba%C3%ADa%20de%20Guanabara%20e%20orlas%20artificiais%20-%20Parque%20do%20Flamengo%2C%20Fortes%20Hist%C3%B3ricos%20de%20Niter%C3%B3i%2C%20Monumento%20Natural%20do%20P%C3%A3o%20de%20A%C3%A7%C3%BAcar%2C%20orla%20mar%C3%ADtima%20de%20Copacabana%20-%20Rio%20de%20Janeiro%20-%2020240623064031.jpg"
+    }
+  ]
 }

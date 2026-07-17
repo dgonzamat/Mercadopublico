@@ -72,5 +72,16 @@
       "note": "Newsletter dedicated to FOIA-recovered documents"
     }
   ],
-  "name_en": "NARA RG 38 incident summaries"
+  "name_en": "NARA RG 38 incident summaries",
+  "documents": [
+    {
+      "src": "/pursue/nara-rg38-1947-context.jpg",
+      "type": "image",
+      "title": "Contexto · Rogers Dry Lake (Muroc / Edwards, California), citado en los reportes de 1947",
+      "title_en": "Context · Rogers Dry Lake (Muroc / Edwards, California), cited in the 1947 reports",
+      "source": "Edwards Air Force Base - Rogers Dry Lake CA 2006.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEdwards%20Air%20Force%20Base%20-%20Rogers%20Dry%20Lake%20CA%202006.jpg"
+    }
+  ]
 }

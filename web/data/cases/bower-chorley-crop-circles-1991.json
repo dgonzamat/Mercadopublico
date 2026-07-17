@@ -65,5 +65,16 @@
       "note": "Atribución de las formaciones complejas posteriores a autoría humana organizada.",
       "note_en": "Attribution of later complex formations to organized human authorship."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/bower-chorley-crop-circles-1991-context.jpg",
+      "type": "image",
+      "title": "Contexto · un círculo de las cosechas en Wiltshire, del tipo que Bower y Chorley confesaron falsificar",
+      "title_en": "Context · a crop circle in Wiltshire, of the kind Bower and Chorley confessed to faking",
+      "source": "Crop Circle Visitor Centre ^ Exhibition - geograph.org.uk - 8241724.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACrop%20Circle%20Visitor%20Centre%20%5E%20Exhibition%20-%20geograph.org.uk%20-%208241724.jpg"
+    }
   ]
 }

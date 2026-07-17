@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.04,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/sasovo-1991-context.jpg",
+      "type": "image",
+      "title": "Contexto · Sasovo (óblast de Riazán, Rusia)",
+      "title_en": "Context · Sasovo (Ryazan Oblast, Russia)",
+      "source": "Welcome sign in Sasovo, Ryazan Oblast, Russia.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWelcome%20sign%20in%20Sasovo%2C%20Ryazan%20Oblast%2C%20Russia.jpg"
+    }
+  ]
 }

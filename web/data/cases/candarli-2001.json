@@ -56,5 +56,16 @@
       "name": "Hürriyet Daily News — 'UFOs continue to fascinate Turkey and the world'",
       "url": "https://www.hurriyetdailynews.com/ufos-continue-to-fascinate-turkey-and-the-world-------84526"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/candarli-2001-context.jpg",
+      "type": "image",
+      "title": "Contexto · Çandarlı (costa del Egeo, Turquía)",
+      "title_en": "Context · Çandarlı (Aegean coast, Turkey)",
+      "source": "Çandarlı Castle 09.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3A%C3%87andarl%C4%B1%20Castle%2009.jpg"
+    }
   ]
 }

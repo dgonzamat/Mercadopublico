@@ -62,5 +62,16 @@
       "note": "Entrevista en que Valdés desmiente el relato.",
       "note_en": "Interview in which Valdés denies the account."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/valdes-1977-context.jpg",
+      "type": "image",
+      "title": "Contexto · Arica (norte de Chile), cerca del avistamiento del cabo Valdés en Putre",
+      "title_en": "Context · Arica (northern Chile), near Corporal Valdés's sighting at Putre",
+      "source": "Arica - Chile - panoramio.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AArica%20-%20Chile%20-%20panoramio.jpg"
+    }
   ]
 }

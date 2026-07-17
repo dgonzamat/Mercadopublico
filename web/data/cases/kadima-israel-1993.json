@@ -60,5 +60,16 @@
       "url": "https://www.davidhalperin.net/ufos-in-israel-aliens-the-other-and-dr-tehiya-eshet/",
       "note": "Análisis académico del fenómeno UAP en Israel (incluye marco crítico)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/kadima-israel-1993-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kadima (cerca de Netanya, Israel)",
+      "title_en": "Context · Kadima (near Netanya, Israel)",
+      "source": "Tzoran-KadimaEntrance.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ATzoran-KadimaEntrance.jpg"
+    }
   ]
 }

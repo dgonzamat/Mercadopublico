@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.03,
     "indet": 0.11
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/morocco-gendarmerie-1976-context.jpg",
+      "type": "image",
+      "title": "Contexto · Rabat (Marruecos), sede de la Gendarmería Real",
+      "title_en": "Context · Rabat (Morocco), seat of the Royal Gendarmerie",
+      "source": "Honor guard at Mausoleum of Mohammed V, Rabat, Morocco.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHonor%20guard%20at%20Mausoleum%20of%20Mohammed%20V%2C%20Rabat%2C%20Morocco.jpg"
+    }
+  ]
 }
