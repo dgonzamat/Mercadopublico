@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.09,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/oloron-gaillac-1952-context.jpg",
+      "type": "image",
+      "title": "Contexto · Oloron-Sainte-Marie (Francia), donde cayeron los 'cabellos de ángel' de 1952",
+      "title_en": "Context · Oloron-Sainte-Marie (France), where the 1952 'angel hair' fell",
+      "source": "Cathedrale Sainte-Marie Oloron portail.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACathedrale%20Sainte-Marie%20Oloron%20portail.jpg"
+    }
+  ]
 }

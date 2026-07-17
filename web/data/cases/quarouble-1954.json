@@ -56,5 +56,16 @@
       "url": "https://en.wikipedia.org/wiki/Marius_Dewilde",
       "note": "Síntesis de la investigación oficial y las trazas."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/quarouble-1954-context.jpg",
+      "type": "image",
+      "title": "Contexto · Quarouble (Nord, Francia)",
+      "title_en": "Context · Quarouble (Nord, France)",
+      "source": "MairieQuarouble.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMairieQuarouble.jpg"
+    }
   ]
 }

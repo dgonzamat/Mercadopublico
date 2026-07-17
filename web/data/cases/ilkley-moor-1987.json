@@ -63,5 +63,16 @@
       "url": "https://www.ufocasebook.com/ilkleymoor.html",
       "note": "Relato detallado del testigo, la regresión hipnótica y la cronología de la investigación."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/ilkley-moor-1987-context.jpg",
+      "type": "image",
+      "title": "Contexto · Ilkley Moor (West Yorkshire, Inglaterra)",
+      "title_en": "Context · Ilkley Moor (West Yorkshire, England)",
+      "source": "Stream on Ilkley Moor.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AStream%20on%20Ilkley%20Moor.jpg"
+    }
   ]
 }

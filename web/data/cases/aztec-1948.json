@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.0,
     "indet": 0.1
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/aztec-1948-context.jpg",
+      "type": "image",
+      "title": "Contexto · Aztec (Nuevo México)",
+      "title_en": "Context · Aztec (New Mexico)",
+      "source": "Aztec New Mexico City Hall.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAztec%20New%20Mexico%20City%20Hall.jpg"
+    }
+  ]
 }
