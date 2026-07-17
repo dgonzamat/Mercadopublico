@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.03,
     "indet": 0.13
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/gulf-breeze-1987-context.jpg",
+      "type": "image",
+      "title": "Contexto · Gulf Breeze (Florida)",
+      "title_en": "Context · Gulf Breeze (Florida)",
+      "source": "Gulf Breeze, Florida storm chase March 17, 2023.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGulf%20Breeze%2C%20Florida%20storm%20chase%20March%2017%2C%202023.jpg"
+    }
+  ]
 }

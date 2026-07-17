@@ -64,5 +64,16 @@
       "note": "Recoge la tradición desde 1883 y el debate sobre las explicaciones.",
       "note_en": "Covers the tradition since 1883 and the debate over explanations."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/marfa-lights-1883-context.jpg",
+      "type": "image",
+      "title": "Contexto · Marfa (Texas), cerca de Mitchell Flat donde se ven las luces",
+      "title_en": "Context · Marfa (Texas), near Mitchell Flat where the lights appear",
+      "source": "USA Marfa pano TX.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSA%20Marfa%20pano%20TX.jpg"
+    }
   ]
 }

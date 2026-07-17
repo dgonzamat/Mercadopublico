@@ -55,5 +55,16 @@
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.13,
     "indet": 0.25
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/trancas-1963-context.jpg",
+      "type": "image",
+      "title": "Contexto · Trancas (Tucumán, Argentina)",
+      "title_en": "Context · Trancas (Tucumán, Argentina)",
+      "source": "Iglesia de Trancas.jpeg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AIglesia%20de%20Trancas.jpeg"
+    }
+  ]
 }

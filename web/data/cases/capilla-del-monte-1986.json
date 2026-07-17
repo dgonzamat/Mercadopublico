@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.1,
     "indet": 0.28
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/capilla-del-monte-1986-context.jpg",
+      "type": "image",
+      "title": "Contexto · Capilla del Monte (Córdoba, Argentina), al pie del cerro Uritorco",
+      "title_en": "Context · Capilla del Monte (Córdoba, Argentina), at the foot of Cerro Uritorco",
+      "source": "Allá.... Capilla del Monte- Córdoba.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAll%C3%A1....%20Capilla%20del%20Monte-%20C%C3%B3rdoba.JPG"
+    }
+  ]
 }

@@ -63,5 +63,16 @@
     "nohumano_encubierto": 0.0,
     "nohumano_abierto": 0.1,
     "indet": 0.28
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/nuremberg-1561-context.jpg",
+      "type": "image",
+      "title": "El grabado de Hans Glaser sobre el fenómeno celeste de Núremberg, 14 de abril de 1561",
+      "title_en": "Hans Glaser's broadsheet on the celestial phenomenon over Nuremberg, 14 April 1561",
+      "source": "Himmelserscheinung über Nürnberg vom 14. April 1561.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHimmelserscheinung%20%C3%BCber%20N%C3%BCrnberg%20vom%2014.%20April%201561.jpg"
+    }
+  ]
 }

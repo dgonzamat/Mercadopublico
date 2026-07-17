@@ -64,5 +64,16 @@
       "note": "Documenta la tradición oral y el origen del nombre en el Min Min Hotel.",
       "note_en": "Documents the oral tradition and the origin of the name at the Min Min Hotel."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/min-min-lights-1838-context.jpg",
+      "type": "image",
+      "title": "Contexto · Boulia (Queensland), en el Channel Country de las luces Min Min",
+      "title_en": "Context · Boulia (Queensland), in the Channel Country of the Min Min lights",
+      "source": "Good Shepherd Catholic Church, Boulia, 2019.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AGood%20Shepherd%20Catholic%20Church%2C%20Boulia%2C%202019.jpg"
+    }
   ]
 }
