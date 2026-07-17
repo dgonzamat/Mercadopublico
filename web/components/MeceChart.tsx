@@ -5,6 +5,7 @@ import {
   expandedHypotheses,
   modalCounts,
   modalHypothesis,
+  DOCUMENT_COLOR,
   type ScoredCase,
 } from "@/lib/meceModel";
 import type { Posterior } from "@/lib/types";
@@ -22,6 +23,7 @@ export function MecePartition({
   totalLabelEn,
   showDerived = true,
   consolidateNonHuman = false,
+  documentCount = 0,
   hrefFor,
 }: {
   compact?: boolean;
@@ -30,6 +32,11 @@ export function MecePartition({
   /** Pie de gráfico ES/EN; por defecto "Suman 100% · N casos de incidente…". */
   totalLabelEs?: string;
   totalLabelEn?: string;
+  /** Si > 0, añade una porción neutra «casos-documento» al donut para que el
+   *  centro marque el TOTAL del corpus (incidentes + documentos) y las porciones
+   *  sumen ese total. Los documentos NO reciben hipótesis; las vistas derivadas
+   *  y el conteo modal siguen solo sobre los incidentes. */
+  documentCount?: number;
   /** Vistas derivadas (solo aplican a la partición de incidentes). */
   showDerived?: boolean;
   /** Fusiona las dos narrativas no-humanas en una sola barra "No-humano".
@@ -47,6 +54,16 @@ export function MecePartition({
   // sigue siendo el agregado comparable del modelo; se explica en /probabilidades.)
   const rows = modalCounts(scored, { consolidateNonHuman });
 
+  // El donut marca el TOTAL del corpus: las hipótesis parten los incidentes (N)
+  // y —si documentCount>0— se añade una porción neutra para los documentos, de
+  // modo que las porciones sumen N+documentCount y el centro marque ese total.
+  // Las vistas derivadas y el conteo modal se quedan sobre los incidentes (N).
+  const donutN = N + documentCount;
+  const donutRows =
+    documentCount > 0
+      ? [...rows, { key: "document", color: DOCUMENT_COLOR, count: documentCount, label: "Casos-documento", labelEn: "Document cases" }]
+      : rows;
+
   // Vistas derivadas, también por hipótesis modal para no chocar con el gráfico.
   const modalKeys = scored.map((c) => modalHypothesis(c, { consolidateNonHuman }).key);
   const PROSAIC = new Set(["misid", "natural", "fraude"]);
@@ -61,15 +78,15 @@ export function MecePartition({
   return (
     <div>
       <MeceDonut
-        rows={rows.map((c) => ({
+        rows={donutRows.map((c) => ({
           key: c.key,
           color: c.color,
           count: c.count,
           label: c.label,
           labelEn: c.labelEn,
-          href: hrefFor?.(c.key),
+          href: c.key === "document" ? "/cases" : hrefFor?.(c.key),
         }))}
-        N={N}
+        N={donutN}
       />
 
       <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-muted">

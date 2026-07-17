@@ -75,8 +75,8 @@ export default function ProbabilidadesPage() {
       </H1>
       <Lede>
         <T
-          es={`Los ${scored.length} casos de incidente se clasifican, cada uno, en una hipótesis por la naturaleza del objeto. Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y posible fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten los incidentes de forma comparable: se puede decir qué hipótesis da cuenta de más casos. Los ${docCount} casos-documento se excluyen —la partición «qué era el objeto» no les aplica— y se exploran aparte en /cases.`}
-          en={`The ${scored.length} incident cases are each classified into one hypothesis by the nature of the object. It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and possible hoax— and 'non-human' groups covert + open. Summed, they partition the incidents comparably: one can say which hypothesis accounts for more cases. The ${docCount} document cases are excluded —the 'what was the object' partition does not apply— and are explored separately in /cases.`}
+          es={`Los ${scored.length} casos de incidente se clasifican, cada uno, en una hipótesis por la naturaleza del objeto. Es una clasificación forzada: ningún caso queda en «indeterminable». Lo prosaico se abre en tres hipótesis propias —misidentificación, fenómeno natural y posible fraude— y «no-humano» agrupa encubierto + abierto. Sumadas, reparten los incidentes de forma comparable: se puede decir qué hipótesis da cuenta de más casos. Los ${docCount} casos-documento no reciben hipótesis —la partición «qué era el objeto» no les aplica—: aparecen como una porción aparte del donut, para que el centro marque el total del corpus, y se exploran en /cases.`}
+          en={`The ${scored.length} incident cases are each classified into one hypothesis by the nature of the object. It is a forced classification: no case rests in 'indeterminable'. The prosaic opens into three hypotheses of its own —misidentification, natural phenomenon and possible hoax— and 'non-human' groups covert + open. Summed, they partition the incidents comparably: one can say which hypothesis accounts for more cases. The ${docCount} document cases get no hypothesis —the 'what was the object' partition does not apply to them—: they appear as a separate slice of the donut, so the center marks the corpus total, and are explored in /cases.`}
         />
       </Lede>
 
@@ -86,17 +86,18 @@ export default function ProbabilidadesPage() {
         </H2>
         <Caption>
           <T
-            es={`Los ${scored.length} casos de incidente, clasificados. Clasificación forzada, sin indeterminable (documentos excluidos).`}
-            en={`The ${scored.length} incident cases, classified. Forced classification, no indeterminable (documents excluded).`}
+            es={`El centro marca el total del corpus (${scored.length + docCount}): ${scored.length} incidentes clasificados por hipótesis (forzada, sin indeterminable) + ${docCount} casos-documento aparte, sin clasificar por objeto.`}
+            en={`The center marks the corpus total (${scored.length + docCount}): ${scored.length} incidents classified by hypothesis (forced, no indeterminable) + ${docCount} document cases counted separately, not classified by object.`}
           />
         </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
             items={scored}
+            documentCount={docCount}
             consolidateNonHuman
             hrefFor={(key) => `#hyp-${key}`}
-            totalLabelEs={`Suman 100% · ${scored.length} incidentes · mundano abierto en 3 · no-humano agrupado`}
-            totalLabelEn={`Sum to 100% · ${scored.length} incidents · mundane opened into 3 · non-human grouped`}
+            totalLabelEs={`Suman 100% · ${scored.length + docCount} del corpus · ${scored.length} incidentes por hipótesis + ${docCount} documentos`}
+            totalLabelEn={`Sum to 100% · ${scored.length + docCount} of the corpus · ${scored.length} incidents by hypothesis + ${docCount} documents`}
           />
         </div>
       </section>
