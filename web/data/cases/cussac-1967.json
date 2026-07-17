@@ -55,5 +55,16 @@
       "name": "UFO Evidence — 'Two children encounter UFO and small humanoid beings in Cussac, France (August 29, 1967)'",
       "url": "http://www.ufoevidence.org/cases/case705.htm"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/cussac-1967-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Cantal (Auvernia, Francia), donde está Cussac",
+      "title_en": "Context · the Cantal (Auvergne, France), where Cussac lies",
+      "source": "Plomb du Cantal, Auvergne, France (32694286988).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APlomb%20du%20Cantal%2C%20Auvergne%2C%20France%20(32694286988).jpg"
+    }
   ]
 }
