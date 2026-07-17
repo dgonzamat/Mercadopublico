@@ -54,5 +54,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.05,
     "indet": 0.27
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/bogota-t33-1964-context.jpg",
+      "type": "image",
+      "title": "Contexto · el aeropuerto El Dorado de Bogotá (Colombia)",
+      "title_en": "Context · El Dorado Airport in Bogotá (Colombia)",
+      "source": "Apron or Ramp internacional airport \"El Dorado\", Bogotá, Colombia.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AApron%20or%20Ramp%20internacional%20airport%20%22El%20Dorado%22%2C%20Bogot%C3%A1%2C%20Colombia.jpg"
+    }
+  ]
 }
