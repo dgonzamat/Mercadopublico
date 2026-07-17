@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.02,
     "indet": 0.11
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/carp-guardian-1991-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Diefenbunker en Carp (Ontario, Canadá)",
+      "title_en": "Context · the Diefenbunker in Carp (Ontario, Canada)",
+      "source": "Diefenbunker.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADiefenbunker.JPG"
+    }
+  ]
 }

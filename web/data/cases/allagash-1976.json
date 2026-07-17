@@ -61,5 +61,16 @@
       "url": "https://countdowntodisclosure.com/articles/allagash-abduction-1976-four-witnesses-separately-recall-alien-examination/",
       "note": "Incluye la admisión de Rak de que la abducción fue inventada."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/allagash-1976-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Reserva Fluvial de Allagash (Maine)",
+      "title_en": "Context · the Allagash Wilderness Waterway (Maine)",
+      "source": "Pancake ice on the Allagash River, Maine.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APancake%20ice%20on%20the%20Allagash%20River%2C%20Maine.jpg"
+    }
   ]
 }

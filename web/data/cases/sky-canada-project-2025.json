@@ -77,5 +77,16 @@
       "url": "https://earthsky.org/human-world/ufos-in-canada-chief-science-advisor-of-canada-uap/",
       "note": "Síntesis divulgativa del informe."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/sky-canada-project-2025-context.jpg",
+      "type": "image",
+      "title": "Contexto · el West Block del Parlamento en Ottawa (Canadá)",
+      "title_en": "Context · the West Block of Parliament in Ottawa (Canada)",
+      "source": "West Block, Parliament Hill, Ottawa, Ontario (29442366923).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWest%20Block%2C%20Parliament%20Hill%2C%20Ottawa%2C%20Ontario%20(29442366923).jpg"
+    }
   ]
 }

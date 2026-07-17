@@ -74,5 +74,16 @@
     "nohumano_encubierto": 0.015,
     "nohumano_abierto": 0.045,
     "indet": 0.38
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/naval-chile-2014-context.jpg",
+      "type": "image",
+      "title": "Contexto · la bahía de Valparaíso (Chile)",
+      "title_en": "Context · Valparaíso Bay (Chile)",
+      "source": "La ciudad de Valparaíso desde el Cerro Artillería, Chile 2019.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALa%20ciudad%20de%20Valpara%C3%ADso%20desde%20el%20Cerro%20Artiller%C3%ADa%2C%20Chile%202019.jpg"
+    }
+  ]
 }

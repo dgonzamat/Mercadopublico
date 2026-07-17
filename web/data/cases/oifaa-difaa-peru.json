@@ -54,5 +54,16 @@
       "name": "El Comercio (Perú) — 'Expedientes ovni' / desclasificación FAP",
       "url": "https://elcomercio.pe/archivo-elcomercio/ovnis-en-el-peru-ufo-avistamientos-platillos-voladores-ufologia-conflctos-de-potencias-eeuu-china-globos-seres-extraterrestres-nnsp-noticia/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/oifaa-difaa-peru-context.jpg",
+      "type": "image",
+      "title": "Contexto · Lima (Perú), sede de la Fuerza Aérea del Perú (OIFAA/DIFAA)",
+      "title_en": "Context · Lima (Peru), seat of the Peruvian Air Force (OIFAA/DIFAA)",
+      "source": "Miraflores Lima Peru cityscape.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMiraflores%20Lima%20Peru%20cityscape.jpg"
+    }
   ]
 }

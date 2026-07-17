@@ -62,5 +62,16 @@
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.0,
     "indet": 0.09
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/spitsbergen-1952-context.jpg",
+      "type": "image",
+      "title": "Contexto · Longyearbyen (Spitsbergen, Svalbard, Noruega)",
+      "title_en": "Context · Longyearbyen (Spitsbergen, Svalbard, Norway)",
+      "source": "Longyearbyen-as-of-2022.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALongyearbyen-as-of-2022.jpg"
+    }
+  ]
 }
