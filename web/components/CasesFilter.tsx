@@ -25,7 +25,8 @@ export type HypKey =
   | "fraude"
   | "humana_clasificada"
   | "adversaria"
-  | "nohumano";
+  | "nohumano"
+  | "indet";
 
 const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "misid", es: "Misidentificación", en: "Misidentification" },
@@ -34,6 +35,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
   { key: "adversaria", es: "Tecnología adversaria", en: "Adversary tech" },
   { key: "nohumano", es: "No-humano", en: "Non-human" },
+  { key: "indet", es: "Indeterminado", en: "Indeterminate" },
 ];
 
 const HYP_KEYS = new Set<string>(HYP_ORDER.map((h) => h.key));

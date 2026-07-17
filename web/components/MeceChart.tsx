@@ -5,7 +5,6 @@ import {
   expandedHypotheses,
   modalCounts,
   modalHypothesis,
-  DOCUMENT_COLOR,
   type ScoredCase,
 } from "@/lib/meceModel";
 import type { Posterior } from "@/lib/types";
@@ -23,7 +22,7 @@ export function MecePartition({
   totalLabelEn,
   showDerived = true,
   consolidateNonHuman = false,
-  documentCount = 0,
+  keepIndet = false,
   hrefFor,
 }: {
   compact?: boolean;
@@ -32,11 +31,10 @@ export function MecePartition({
   /** Pie de gráfico ES/EN; por defecto "Suman 100% · N casos de incidente…". */
   totalLabelEs?: string;
   totalLabelEn?: string;
-  /** Si > 0, añade una porción neutra «casos-documento» al donut para que el
-   *  centro marque el TOTAL del corpus (incidentes + documentos) y las porciones
-   *  sumen ese total. Los documentos NO reciben hipótesis; las vistas derivadas
-   *  y el conteo modal siguen solo sobre los incidentes. */
-  documentCount?: number;
+  /** Conserva «Indeterminado» como narrativa navegable propia (no reparte su
+   *  masa a la fuerza). Con el corpus completo esto deja que el centro marque el
+   *  total y que los documentos sin lean caigan en una categoría con sentido. */
+  keepIndet?: boolean;
   /** Vistas derivadas (solo aplican a la partición de incidentes). */
   showDerived?: boolean;
   /** Fusiona las dos narrativas no-humanas en una sola barra "No-humano".
@@ -52,25 +50,23 @@ export function MecePartition({
   // narrativa más probable, de modo que los conteos son enteros y coinciden con
   // el filtro de /cases y con el CTA «Ver los N casos». (El nº ESPERADO —Σ P—
   // sigue siendo el agregado comparable del modelo; se explica en /probabilidades.)
-  const rows = modalCounts(scored, { consolidateNonHuman });
-
-  // El donut marca el TOTAL del corpus: las hipótesis parten los incidentes (N)
-  // y —si documentCount>0— se añade una porción neutra para los documentos, de
-  // modo que las porciones sumen N+documentCount y el centro marque ese total.
-  // Las vistas derivadas y el conteo modal se quedan sobre los incidentes (N).
-  const donutN = N + documentCount;
-  const donutRows =
-    documentCount > 0
-      ? [...rows, { key: "document", color: DOCUMENT_COLOR, count: documentCount, label: "Casos-documento", labelEn: "Document cases" }]
-      : rows;
+  const rows = modalCounts(scored, { consolidateNonHuman, keepIndet });
+  const donutN = N;
+  const donutRows = rows;
 
   // Vistas derivadas, también por hipótesis modal para no chocar con el gráfico.
-  const modalKeys = scored.map((c) => modalHypothesis(c, { consolidateNonHuman }).key);
+  const modalKeys = scored.map((c) => modalHypothesis(c, { consolidateNonHuman, keepIndet }).key);
   const PROSAIC = new Set(["misid", "natural", "fraude"]);
   const NONHUMAN = new Set(["nohumano", "nohumano_encubierto", "nohumano_abierto"]);
+  // El eje macro prosaico-vs-anómalo solo tiene sentido sobre los casos
+  // CLASIFICABLES: «Indeterminado» no es ni prosaico ni anómalo, así que se
+  // excluye del denominador (si no, se contaría como anómalo/secreto, que es falso).
+  const indetCount = modalKeys.filter((k) => k === "indet").length;
+  const classifiable = N - indetCount;
   const prosaico = modalKeys.filter((k) => PROSAIC.has(k)).length; // misid + natural + fraude
-  const anomalo = N - prosaico;   // 1 − prosaico
+  const anomalo = classifiable - prosaico;
   const enh = modalKeys.filter((k) => NONHUMAN.has(k)).length;
+  const derivedBase = classifiable || 1;
   const colorOf = Object.fromEntries(rows.map((r) => [r.key, r.color])) as Record<string, string>;
   const prosaicoColor = colorOf.misid ?? rows[0].color;
   const anomaloColor = colorOf.nohumano ?? colorOf.nohumano_encubierto ?? rows[rows.length - 1].color;
@@ -84,7 +80,7 @@ export function MecePartition({
           count: c.count,
           label: c.label,
           labelEn: c.labelEn,
-          href: c.key === "document" ? "/cases" : hrefFor?.(c.key),
+          href: hrefFor?.(c.key),
         }))}
         N={donutN}
       />
@@ -100,20 +96,20 @@ export function MecePartition({
         <div className="mt-5 border-t border-border pt-4">
           {/* Eje macro: prosaico vs anómalo/secreto */}
           <div className="flex h-2 w-full gap-px overflow-hidden rounded-full bg-panel">
-            <div style={{ width: `${(prosaico / N) * 100}%`, backgroundColor: prosaicoColor }} />
-            <div style={{ width: `${(anomalo / N) * 100}%`, backgroundColor: anomaloColor }} />
+            <div style={{ width: `${(prosaico / derivedBase) * 100}%`, backgroundColor: prosaicoColor }} />
+            <div style={{ width: `${(anomalo / derivedBase) * 100}%`, backgroundColor: anomaloColor }} />
           </div>
           <div className="mt-2 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-wider">
             <span className="text-text">
-              <T es="Prosaico" en="Prosaic" /> <span className="tabular-nums text-muted">{pct(prosaico / N)}%</span>
+              <T es="Prosaico" en="Prosaic" /> <span className="tabular-nums text-muted">{pct(prosaico / derivedBase)}%</span>
             </span>
             <span className="text-text">
-              <span className="tabular-nums text-muted">{pct(anomalo / N)}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" />
+              <span className="tabular-nums text-muted">{pct(anomalo / derivedBase)}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" />
             </span>
           </div>
           {!consolidateNonHuman && (
             <p className="mt-3 font-mono text-[11px] text-muted">
-              <T es="Entidades no humanas (encubierto + abierto)" en="Non-human entities (covert + open)" />: {pct(enh / N)}%
+              <T es="Entidades no humanas (encubierto + abierto)" en="Non-human entities (covert + open)" />: {pct(enh / derivedBase)}%
             </p>
           )}
         </div>
