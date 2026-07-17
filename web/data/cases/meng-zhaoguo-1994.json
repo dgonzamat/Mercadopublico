@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.1,
     "indet": 0.3
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/meng-zhaoguo-1994-context.jpg",
+      "type": "image",
+      "title": "Contexto · Wuchang (Heilongjiang, China), cerca del campamento maderero Hongqi",
+      "title_en": "Context · Wuchang (Heilongjiang, China), near the Hongqi logging camp",
+      "source": "Wuchang, Harbin, Heilongjiang, China - panoramio (24).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWuchang%2C%20Harbin%2C%20Heilongjiang%2C%20China%20-%20panoramio%20(24).jpg"
+    }
+  ]
 }

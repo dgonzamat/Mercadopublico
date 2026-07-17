@@ -71,5 +71,16 @@
       "url": "https://www.thinkaboutitdocs.com/1970-aerial-invasion/",
       "note": "Compilación del episodio escolar de agosto de 1970."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/malaysia-tiny-humanoids-1970-context.jpg",
+      "type": "image",
+      "title": "Contexto · Bukit Mertajam (Penang, Malasia), epicentro de la oleada escolar de 1970",
+      "title_en": "Context · Bukit Mertajam (Penang, Malaysia), epicentre of the 1970 schoolyard wave",
+      "source": "Bukit Mertajam Recreational Forest.JPG · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABukit%20Mertajam%20Recreational%20Forest.JPG"
+    }
   ]
 }

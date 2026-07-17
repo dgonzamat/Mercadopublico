@@ -68,5 +68,16 @@
       "url": "https://www.ufocasebook.com/2012/videopretoriasouthafrica.html",
       "note": "Recopilación del caso y el material de video."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/pretoria-mamelodi-1996-context.jpg",
+      "type": "image",
+      "title": "Contexto · los Union Buildings en Pretoria (Sudáfrica)",
+      "title_en": "Context · the Union Buildings in Pretoria (South Africa)",
+      "source": "Union Buildings Pretoria 05.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUnion%20Buildings%20Pretoria%2005.jpg"
+    }
   ]
 }

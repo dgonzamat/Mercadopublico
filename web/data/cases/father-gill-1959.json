@@ -54,5 +54,16 @@
       "name": "Patrick Gross — 'Father Gill sighting, Papua-New Guinea, 1959'",
       "url": "http://ufologie.patrickgross.org/htm/papua59.htm"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/father-gill-1959-context.jpg",
+      "type": "image",
+      "title": "Contexto · Boianai (Papúa Nueva Guinea)",
+      "title_en": "Context · Boianai (Papua New Guinea)",
+      "source": "All Saints Church, Boianai, Papua New Guinea (9602443073).jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAll%20Saints%20Church%2C%20Boianai%2C%20Papua%20New%20Guinea%20(9602443073).jpg"
+    }
   ]
 }

@@ -64,5 +64,16 @@
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.0,
     "indet": 0.16
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/rs33-magenta-1933-context.jpg",
+      "type": "image",
+      "title": "Contexto · Magenta (Lombardía, Italia)",
+      "title_en": "Context · Magenta (Lombardy, Italy)",
+      "source": "Magenta-municipio1.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMagenta-municipio1.jpg"
+    }
+  ]
 }

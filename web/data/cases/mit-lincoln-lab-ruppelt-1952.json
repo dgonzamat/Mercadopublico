@@ -70,5 +70,16 @@
       "name": "NewsNation — 'UAP Disclosure Forum in DC: Key takeaways' (25 jun 2026)",
       "url": "https://www.newsnationnow.com/space/ufo/uap-disclosure-2026-forum-takeaways/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/mit-lincoln-lab-ruppelt-1952-context.jpg",
+      "type": "image",
+      "title": "Contexto · la base de Hanscom (Massachusetts), donde está el MIT Lincoln Laboratory",
+      "title_en": "Context · Hanscom Air Force Base (Massachusetts), home of MIT Lincoln Laboratory",
+      "source": "Aerial View of Hanscom Airforce Base, Massachusetts, United States.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAerial%20View%20of%20Hanscom%20Airforce%20Base%2C%20Massachusetts%2C%20United%20States.jpg"
+    }
   ]
 }

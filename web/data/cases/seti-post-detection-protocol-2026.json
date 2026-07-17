@@ -65,5 +65,16 @@
       "name": "Astronomy.com — 'The real disclosure day: the protocols for announcing extraterrestrial intelligence'",
       "url": "https://www.astronomy.com/science/the-real-disclosure-day-the-protocols-for-announcing-extraterrestrial-intelligence/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/seti-post-detection-protocol-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Observatorio de Jodrell Bank (Univ. de Manchester)",
+      "title_en": "Context · Jodrell Bank Observatory (University of Manchester)",
+      "source": "At Jodrell Bank Observatory 2024 005.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAt%20Jodrell%20Bank%20Observatory%202024%20005.jpg"
+    }
   ]
 }
