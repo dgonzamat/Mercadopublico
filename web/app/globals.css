@@ -152,7 +152,11 @@ a {
 [data-era-filter="2017"] [data-era]:not([data-era="2017"]),
 [data-tier-filter="S"] [data-tier]:not([data-tier="S"]),
 [data-tier-filter="A"] [data-tier]:not([data-tier="A"]),
-[data-tier-filter="B"] [data-tier]:not([data-tier="B"]) {
+[data-tier-filter="B"] [data-tier]:not([data-tier="B"]),
+[data-misid-filter="astronomico"] [data-misid]:not([data-misid="astronomico"]),
+[data-misid-filter="aeronave"] [data-misid]:not([data-misid="aeronave"]),
+[data-misid-filter="espacial"] [data-misid]:not([data-misid="espacial"]),
+[data-misid-filter="terrestre_otros"] [data-misid]:not([data-misid="terrestre_otros"]) {
   display: none !important;
 }
 
