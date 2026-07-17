@@ -3,7 +3,6 @@ import { CaseRow } from "@/components/CaseRow";
 import { CasesFilter, type HypKey } from "@/components/CasesFilter";
 import {
   corpusPosteriors,
-  documentPosteriors,
   modalHypothesis,
 } from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
@@ -81,18 +80,22 @@ export default function CasesPage() {
   }
 
   // Hipótesis modal por caso (misma lógica consolidada que /probabilidades y
-  // que el donut de la home). Documentos incluidos vía documentPosteriors.
+  // que el donut de la home). SOLO incidentes: los casos-documento se excluyen
+  // de la clasificación por objeto (partición canónica per CLAUDE.md), así el
+  // denominador queda unificado en 248 con la home, /probabilidades y /calidad.
   const modalById = new Map<string, HypKey>();
-  for (const s of [...corpusPosteriors(), ...documentPosteriors()]) {
+  for (const s of corpusPosteriors()) {
     modalById.set(
       s.id,
       modalHypothesis(s, { consolidateNonHuman: true }).key as HypKey,
     );
   }
+  // Los conteos del filtro por hipótesis solo cuentan incidentes; los documentos
+  // no tienen «objeto» que clasificar y no son filtrables por hipótesis.
   const hypCounts: Partial<Record<HypKey, number>> = {};
   for (const c of cases) {
-    const h = modalById.get(c.id) ?? "misid";
-    hypCounts[h] = (hypCounts[h] ?? 0) + 1;
+    const h = modalById.get(c.id);
+    if (h) hypCounts[h] = (hypCounts[h] ?? 0) + 1;
   }
 
   const tierCounts: Record<string, number> = {};
@@ -206,7 +209,7 @@ export default function CasesPage() {
                     <div
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
-                      data-hyp={modalById.get(c.id) ?? "misid"}
+                      data-hyp={modalById.get(c.id) ?? "document"}
                       data-era={String(era.start)}
                       data-tier={c.tier}
                       className="contents"
