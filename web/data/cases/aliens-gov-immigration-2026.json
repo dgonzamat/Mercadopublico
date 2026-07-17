@@ -85,5 +85,16 @@
       "note": "Contemporary investigative journalism"
     }
   ],
-  "name_en": "alien.gov — disclosure rhetoric weaponized for immigration"
+  "name_en": "alien.gov — disclosure rhetoric weaponized for immigration",
+  "documents": [
+    {
+      "src": "/pursue/aliens-gov-immigration-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Casa Blanca, Washington D.C.",
+      "title_en": "Context · the White House, Washington D.C.",
+      "source": "The White House June 2024.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AThe%20White%20House%20June%202024.jpg"
+    }
+  ]
 }

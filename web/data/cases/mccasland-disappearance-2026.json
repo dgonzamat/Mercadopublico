@@ -82,5 +82,16 @@
       "name": "USAF Biography — Maj Gen Donald McCasland (retired)",
       "url": "https://www.af.mil/About-Us/Biographies/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/mccasland-disappearance-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · Albuquerque (Nuevo México)",
+      "title_en": "Context · Albuquerque (New Mexico)",
+      "source": "Albuquerque, New Mexico skyline.jpg · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAlbuquerque%2C%20New%20Mexico%20skyline.jpg"
+    }
   ]
 }

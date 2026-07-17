@@ -72,5 +72,16 @@
       "name": "Franz, A. — Análisis alternativo de los quemadores de Cantarell (2004)",
       "note": "Mexican academic publication"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/mexico-flir-2004-context.jpg",
+      "type": "image",
+      "title": "Contexto · Campeche (México), zona del vídeo FLIR de la Fuerza Aérea Mexicana",
+      "title_en": "Context · Campeche (Mexico), area of the Mexican Air Force FLIR video",
+      "source": "San Francisco de Campeche, Campeche Mexico, dic 2023 - 13.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASan%20Francisco%20de%20Campeche%2C%20Campeche%20Mexico%2C%20dic%202023%20-%2013.jpg"
+    }
   ]
 }

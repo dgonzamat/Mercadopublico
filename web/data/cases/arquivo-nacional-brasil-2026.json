@@ -64,5 +64,16 @@
       "name": "Correio Braziliense — 'Arquivo Nacional do Brasil divulga 900 registros de OVNIs' (cifra de prensa 2026)",
       "url": "https://www.correiobraziliense.com.br/cbradar/arquivo-nacional-do-brasil-divulga-900-registros-de-ovnis-no-pais-veja-como-acessar/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/arquivo-nacional-brasil-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Arquivo Nacional en Río de Janeiro (Brasil)",
+      "title_en": "Context · the National Archives in Rio de Janeiro (Brazil)",
+      "source": "Arquivo Nacional (exterior).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AArquivo%20Nacional%20(exterior).jpg"
+    }
   ]
 }

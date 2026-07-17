@@ -50,5 +50,16 @@
       "name": "Mellon, C. — Comments on Wilson-Davis (2020)",
       "note": "Ex-Deputy Asst SecDef Intel"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/wilson-davis-2002-context.jpg",
+      "type": "image",
+      "title": "Contexto · la sede de la Agencia de Inteligencia de Defensa (DIA), Washington",
+      "title_en": "Context · the Defense Intelligence Agency (DIA) headquarters, Washington",
+      "source": "Defense Intelligence Agency headquarters, Bolling Air Force Base.JPEG · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADefense%20Intelligence%20Agency%20headquarters%2C%20Bolling%20Air%20Force%20Base.JPEG"
+    }
   ]
 }

@@ -76,5 +76,16 @@
       "name": "NewsNation — UFO experts, lawmakers to speak at Disclosure Forum",
       "url": "https://www.newsnationnow.com/space/ufo/ufo-experts-lawmakers-disclosure-forum/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/disclosure-forum-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Russell Senate Office Building, Washington D.C.",
+      "title_en": "Context · the Russell Senate Office Building, Washington D.C.",
+      "source": "Russell Senate Office Building and Dirksen Senate Office Building - Washington D.C..jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ARussell%20Senate%20Office%20Building%20and%20Dirksen%20Senate%20Office%20Building%20-%20Washington%20D.C..jpg"
+    }
   ]
 }

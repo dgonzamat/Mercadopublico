@@ -81,5 +81,16 @@
       "url": "https://www.archives.gov/research/jfk/legislative-history",
       "note": "Modelo legal sobre el que se construye el UAP Disclosure Act."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/uap-disclosure-act-2025-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Capitolio de EE.UU., sede del Senado que tramitó el UAP Disclosure Act",
+      "title_en": "Context · the U.S. Capitol, seat of the Senate that handled the UAP Disclosure Act",
+      "source": "US Capitol dome Jan 2006.jpg · Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUS%20Capitol%20dome%20Jan%202006.jpg"
+    }
   ]
 }
