@@ -47,5 +47,16 @@
       "name": "Snopes — 'Are There UFOs Over Kyiv?' (incl. NASU discrediting the report)",
       "url": "https://www.snopes.com/news/2022/09/14/ufos-over-kyiv/"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/ukraine-mao-uap-2022-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kyiv (Ucrania), sede del Observatorio Astronómico Principal (NASU)",
+      "title_en": "Context · Kyiv (Ukraine), seat of the Main Astronomical Observatory (NASU)",
+      "source": "Voskresenka, Kyiv, Kyiv city, Ukraine - panoramio.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AVoskresenka%2C%20Kyiv%2C%20Kyiv%20city%2C%20Ukraine%20-%20panoramio.jpg"
+    }
   ]
 }

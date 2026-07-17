@@ -85,5 +85,16 @@
       "url": "https://vladimi9.wixsite.com/vasco-citizen-science",
       "note": "Proyecto liderado por Villarroel. Datos públicos, código abierto, citizen science."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/poss-i-transients-2025-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Observatorio Palomar (California), fuente del conjunto de datos",
+      "title_en": "Context · Palomar Observatory (California), source of the data set",
+      "source": "Palomar Observatory 2012 01.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APalomar%20Observatory%202012%2001.jpg"
+    }
   ]
 }

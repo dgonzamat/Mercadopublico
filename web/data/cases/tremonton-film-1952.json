@@ -55,5 +55,16 @@
     "nohumano_encubierto": 0.05,
     "nohumano_abierto": 0.08,
     "indet": 0.4
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/tremonton-film-1952-context.jpg",
+      "type": "image",
+      "title": "Contexto · el valle del Bear River (Utah), cerca de Tremonton",
+      "title_en": "Context · the Bear River valley (Utah), near Tremonton",
+      "source": "Bear River Migratory Bird Refuge 2016-10-14 2428.jpg · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABear%20River%20Migratory%20Bird%20Refuge%202016-10-14%202428.jpg"
+    }
+  ]
 }
