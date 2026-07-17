@@ -71,5 +71,16 @@
       "name": "Air Force Manual 55-11 (CIRVIS)",
       "note": "Communications Instructions Reporting Vital Intelligence Sightings"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/bolender-memo-1969-context.jpg",
+      "type": "image",
+      "title": "Contexto · la base Wright-Patterson, donde el USAF gestionó el Proyecto Blue Book",
+      "title_en": "Context · Wright-Patterson AFB, where the USAF ran Project Blue Book",
+      "source": "Wright-Patterson Air Force Base - 10 Oct 2000.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWright-Patterson%20Air%20Force%20Base%20-%2010%20Oct%202000.jpg"
+    }
   ]
 }
