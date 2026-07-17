@@ -61,10 +61,11 @@ export const MECE_CLASSES: ReadonlyArray<{
   { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—" },
 ];
 
-/** Color neutro/mudo de la porción «casos-documento» en el donut del corpus:
- *  no son una hipótesis, solo se cuentan aparte para que el donut marque el
- *  total. Vive en lib (no en app/components) → fuera del scan de audit-design D3. */
-export const DOCUMENT_COLOR = "#8a8172";
+/** Color neutro/mudo de la narrativa «Indeterminado» en el donut navegable
+ *  (más claro que el #3a3a3a de MECE_CLASSES para que se vea sobre el fondo
+ *  oscuro de la home). Los documentos sin lean y los incidentes inconclusos caen
+ *  aquí. Vive en lib (no en app/components) → fuera del scan de audit-design D3. */
+export const INDET_COLOR = "#8a8172";
 
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
@@ -200,11 +201,14 @@ export interface HypRow { key: string; label: string; labelEn: string; color: st
  * queda en indeterminable. Para 1 ítem, los counts son su distribución (suman 1).
  */
 type HypInput = { posterior: Posterior; mundanoType?: UAPCase["mundanoType"] };
-export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean } = {}): HypRow[] {
+export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean; keepIndet?: boolean } = {}): HypRow[] {
   const byId = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c])) as Record<MeceClassId, (typeof MECE_CLASSES)[number]>;
   const acc: Record<string, number> = {};
   for (const s of items) {
-    const cp = classifiedPosterior(s.posterior);
+    // keepIndet: conserva la masa «indeterminado» como narrativa propia (usa el
+    // posterior crudo normalizado). Si no, se reparte a la fuerza sobre las 5
+    // sustantivas (clasificación forzada clásica, sin indeterminado).
+    const cp = opts.keepIndet ? normalize(s.posterior) : classifiedPosterior(s.posterior);
     acc[s.mundanoType ?? "misid"] = (acc[s.mundanoType ?? "misid"] || 0) + cp.mundano_natural;
     acc.humana_clasificada = (acc.humana_clasificada || 0) + cp.humana_clasificada;
     acc.adversaria = (acc.adversaria || 0) + cp.adversaria;
@@ -214,6 +218,7 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
       acc.nohumano_encubierto = (acc.nohumano_encubierto || 0) + cp.nohumano_encubierto;
       acc.nohumano_abierto = (acc.nohumano_abierto || 0) + cp.nohumano_abierto;
     }
+    if (opts.keepIndet) acc.indet = (acc.indet || 0) + cp.indet;
   }
   const meta: Record<string, { label: string; labelEn: string; color: string }> = {
     humana_clasificada: byId.humana_clasificada,
@@ -221,6 +226,8 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
     nohumano_encubierto: byId.nohumano_encubierto,
     nohumano_abierto: byId.nohumano_abierto,
     nohumano: { label: "No-humano", labelEn: "Non-human", color: byId.nohumano_abierto.color },
+    // «Indeterminado» como narrativa navegable propia (color visible sobre fondo oscuro).
+    indet: { label: "Indeterminado", labelEn: "Indeterminate", color: INDET_COLOR },
   };
   for (const st of MUNDANO_SUBTYPES) meta[st.key] = st;
   return Object.entries(acc)
@@ -230,7 +237,7 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
 }
 
 /** Hipótesis modal (display) de un caso, sobre el conjunto expandido. */
-export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boolean } = {}): HypRow {
+export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boolean; keepIndet?: boolean } = {}): HypRow {
   return expandedHypotheses([s], opts)[0];
 }
 
@@ -242,7 +249,7 @@ export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boole
  * `expandedHypotheses` (nº ESPERADO, fraccional): esa es la partición
  * comparable del modelo; ésta es la que se puede listar. `count` es entero.
  */
-export function modalCounts(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean } = {}): HypRow[] {
+export function modalCounts(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean; keepIndet?: boolean } = {}): HypRow[] {
   const meta = new Map<string, HypRow>();
   const counts: Record<string, number> = {};
   for (const s of items) {

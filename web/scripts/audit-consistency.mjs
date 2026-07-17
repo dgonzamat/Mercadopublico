@@ -50,14 +50,13 @@
  *       bloquear el egress de iCloud Private Relay, /visitantes fuera del
  *       conteo de pageviews, y migraciones 0005/0006 presentes como registro
  *       reproducible de lo aplicado en Supabase.
- *   E24 (ERROR) Coherencia entre las dos vistas del modelo: ambas sobre el mismo
- *       conjunto de 248 incidentes (documentos excluidos). /calidad = valor
- *       esperado (conserva «indeterminable»); home + /probabilidades = argmax
- *       forzado (sin indeterminable, navegable). Cada vista debe rotular su
- *       método, la home remite a /calidad, y la vista navegable NO debe volver a
- *       inyectar documentPosteriors (o el denominador 248 vuelve a divergir).
- *       (d) El donut de la home debe puentear su 248 con el «STATS.cases» (326)
- *       del contador de la home, para que no se lean como que no calzan.
+ *   E24 (ERROR) Coherencia entre las dos vistas del modelo: ambas sobre el
+ *       CORPUS COMPLETO (incidentes por su objeto + documentos por el lean de su
+ *       contenido), conservando «Indeterminado». /calidad = valor esperado
+ *       (fraccional); home + /probabilidades + /cases = conteo modal navegable
+ *       (argmax, entero). Cada vista rotula su método, la home remite a /calidad,
+ *       y las vistas navegables clasifican el corpus completo (documentPosteriors)
+ *       con keepIndet — si dejan de hacerlo, reaparece la inconsistencia original.
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -966,59 +965,53 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(enDir)) {
 
 // ─── 9o. RULE E24: coherencia entre las dos vistas del modelo (ERROR) ──────
 //
-// El corpus se presenta con DOS estimadores distintos y ambos son legítimos,
-// pero si no declaran su método + denominador se leen como contradictorios
-// (jul 2026, reportado por el usuario: /calidad decía «48% mundano, 25%
-// indeterminable» y la home «58% misid, 0% indeterminable»):
-//   · vista COMPARABLE (valor esperado Eⱼ=ΣP, conserva «indeterminable»,
-//     partición canónica = solo incidentes): app/calidad/page.tsx.
-//   · clasificación FORZADA navegable (argmax, sin indeterminable, cada caso
-//     listable): components/HypothesesSnapshot.tsx + /probabilidades + /cases.
-// Esta sonda evita la regresión: (a) /calidad debe excluir los documentos del
-// agregado MECE (antes sumaba sobre `c.posterior` incluyendo 62 docs → 310 en
-// vez de 248) y rotular su método; (b) la home debe rotularse como argmax y
-// remitir a /calidad. Es estructural (grep), no numérica.
+// El corpus se presenta con DOS estimadores del MISMO conjunto (los STATS.cases
+// casos: incidentes por su objeto + documentos por el lean de su contenido), y si
+// no declaran su método se leen como contradictorios (jul 2026, reportado por el
+// usuario). Ambas vistas clasifican el corpus COMPLETO y conservan «Indeterminado»
+// como narrativa propia (no como un tipo de caso aparte):
+//   · vista COMPARABLE (valor esperado Eⱼ=ΣP, fraccional): app/calidad/page.tsx.
+//   · conteo MODAL navegable (argmax, entero, listable en /cases):
+//     components/HypothesesSnapshot.tsx + /probabilidades + /cases.
+// Esta sonda evita la regresión: (a) /calidad agrega sobre el corpus completo
+// (incluye documentPosteriors) y rotula su método; (b) la home se rotula argmax y
+// remite a /calidad; (c) las vistas navegables clasifican el corpus completo con
+// keepIndet (documentos incluidos, «Indeterminado» conservado). Estructural (grep).
 {
   const calidadPath = path.join(root, "app", "calidad", "page.tsx");
   const snapshotPath = path.join(root, "components", "HypothesesSnapshot.tsx");
+  const probPath = path.join(root, "app", "probabilidades", "page.tsx");
+  const casesPath = path.join(root, "app", "cases", "page.tsx");
   const calidad = fs.existsSync(calidadPath) ? fs.readFileSync(calidadPath, "utf-8") : "";
   const snapshot = fs.existsSync(snapshotPath) ? fs.readFileSync(snapshotPath, "utf-8") : "";
-  // (a) /calidad excluye documentos del agregado MECE.
-  if (calidad && !/category\s*!==\s*["']document["']/.test(calidad)) {
-    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad no excluye los documentos (falta `category !== \"document\"`). Debe sumar sobre los casos de incidente (partición canónica), no sobre `c.posterior`, o el denominador (248) no cuadra con la vista forzada. Ver CLAUDE.md · modelo MECE.");
+  const prob = fs.existsSync(probPath) ? fs.readFileSync(probPath, "utf-8") : "";
+  const casesSrc = fs.existsSync(casesPath) ? fs.readFileSync(casesPath, "utf-8") : "";
+  // (a) /calidad agrega sobre el corpus COMPLETO (incluye documentos por su lean),
+  //     mismo conjunto que las vistas navegables.
+  if (calidad && !/documentPosteriors/.test(calidad)) {
+    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad no incluye documentPosteriors — debe sumar sobre el corpus completo (incidentes + documentos por su lean), mismo conjunto que la home y /probabilidades, o los denominadores divergen. Ver CLAUDE.md · modelo MECE.");
   }
   // (a bis) /calidad declara su método (valor esperado).
   if (calidad && !/[Vv]alor esperado|Expected value/.test(calidad)) {
-    record("ERROR", calidadPath, 0, "E24 modelo: /calidad no rotula su método (valor esperado Eⱼ=ΣP). Sin rótulo, su reparto se lee como contradictorio con la clasificación forzada de la home.");
+    record("ERROR", calidadPath, 0, "E24 modelo: /calidad no rotula su método (valor esperado Eⱼ=ΣP). Sin rótulo, su reparto se lee como contradictorio con el conteo modal de la home.");
   }
   // (b) la home se rotula como argmax y remite a /calidad.
   if (snapshot && !/argmax/.test(snapshot)) {
-    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot (donut de la home) no se rotula como clasificación forzada (argmax). Debe declararlo para no leerse como contradictorio con /calidad.");
+    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot (donut de la home) no se rotula como conteo modal (argmax). Debe declararlo para no leerse como contradictorio con /calidad.");
   }
   if (snapshot && !/\/calidad/.test(snapshot)) {
-    record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado con «indeterminable»). El puente entre ambas vistas es lo que evita que se lean como contradictorias.");
+    record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado). El puente entre ambas vistas evita que se lean como contradictorias.");
   }
-  // (c) DENOMINADOR UNIFICADO: la vista navegable (home + /probabilidades) debe
-  // excluir los documentos —clasificar solo incidentes (248)— igual que /calidad.
-  // Si vuelve a inyectar documentPosteriors en la clasificación, los denominadores
-  // (248 vs 326) divergen y reaparece la inconsistencia que motivó E24.
-  if (snapshot && /documentPosteriors/.test(snapshot)) {
-    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot vuelve a incluir documentPosteriors — la clasificación forzada debe ser SOLO sobre incidentes (corpusPosteriors, 248) para que el denominador coincida con /calidad. Los documentos no tienen «objeto» que clasificar.");
-  }
-  const probPath = path.join(root, "app", "probabilidades", "page.tsx");
-  const prob = fs.existsSync(probPath) ? fs.readFileSync(probPath, "utf-8") : "";
-  // /probabilidades puede leer documentPosteriors().length para CONTAR los docs
-  // aparte, pero no debe meterlos en el conjunto que clasifica (MecePartition).
-  if (prob && /items=\{allScored\}|expandedHypotheses\(allScored/.test(prob)) {
-    record("ERROR", probPath, 0, "E24 modelo: /probabilidades clasifica `allScored` (incidentes + documentos). La partición forzada debe ser sobre `scored` (solo incidentes, 248) para unificar el denominador con la home y /calidad; cuenta los documentos aparte.");
-  }
-  // (d) PUENTE CON EL CONTADOR DE LA HOME: el donut clasifica 248 incidentes,
-  // pero la home muestra el stat «STATS.cases» (326 = 248 + 78 documentos). Sin
-  // un puente en el copy del donut, ambos números se leen como que no cuadran
-  // (reportado por el usuario, jul 2026). El título del donut debe derivar el
-  // total (STATS.cases) para explicar el desglose 326 = incidentes + documentos.
-  if (snapshot && !/STATS\.cases/.test(snapshot)) {
-    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot no referencia STATS.cases — el donut clasifica solo incidentes (248) pero la home muestra el total (326). El título del donut debe puentear ambos (p. ej. «los N de incidente (de STATS.cases; los D documentos no se clasifican por objeto)») para que no se lean como que no calzan.");
+  // (c) las vistas NAVEGABLES clasifican el corpus completo (documentPosteriors)
+  //     conservando «Indeterminado» (keepIndet). Si dejan de incluir los documentos
+  //     o de conservar el indeterminado, reaparece la inconsistencia que motivó E24.
+  for (const [src, p, name] of [[snapshot, snapshotPath, "HypothesesSnapshot"], [prob, probPath, "/probabilidades"], [casesSrc, casesPath, "/cases"]]) {
+    if (src && !/documentPosteriors/.test(src)) {
+      record("ERROR", p, 0, `E24 modelo: ${name} no clasifica el corpus completo (falta documentPosteriors) — la vista navegable debe cubrir incidentes + documentos, igual que /calidad, o el denominador diverge.`);
+    }
+    if (src && !/keepIndet/.test(src)) {
+      record("ERROR", p, 0, `E24 modelo: ${name} no conserva «Indeterminado» (falta keepIndet) — sin él la masa indeterminada se reparte a la fuerza y los documentos sin lean caen en una hipótesis equivocada. Debe usar keepIndet para que «Indeterminado» sea una narrativa navegable.`);
+    }
   }
 }
 

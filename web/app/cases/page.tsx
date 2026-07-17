@@ -3,6 +3,7 @@ import { CaseRow } from "@/components/CaseRow";
 import { CasesFilter, type HypKey } from "@/components/CasesFilter";
 import {
   corpusPosteriors,
+  documentPosteriors,
   modalHypothesis,
 } from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
@@ -79,19 +80,17 @@ export default function CasesPage() {
     if (r) regionCounts[r] = (regionCounts[r] ?? 0) + 1;
   }
 
-  // Hipótesis modal por caso (misma lógica consolidada que /probabilidades y
-  // que el donut de la home). SOLO incidentes: los casos-documento se excluyen
-  // de la clasificación por objeto (partición canónica per CLAUDE.md), así el
-  // denominador queda unificado en 248 con la home, /probabilidades y /calidad.
+  // Narrativa modal por caso (misma lógica que /probabilidades y el donut de la
+  // home): el CORPUS COMPLETO —incidentes por su objeto, casos-documento por el
+  // lean de su contenido— conservando «Indeterminado» (keepIndet) para lo que no
+  // se puede decidir. Denominador unificado en STATS.cases con las demás vistas.
   const modalById = new Map<string, HypKey>();
-  for (const s of corpusPosteriors()) {
+  for (const s of [...corpusPosteriors(), ...documentPosteriors()]) {
     modalById.set(
       s.id,
-      modalHypothesis(s, { consolidateNonHuman: true }).key as HypKey,
+      modalHypothesis(s, { consolidateNonHuman: true, keepIndet: true }).key as HypKey,
     );
   }
-  // Los conteos del filtro por hipótesis solo cuentan incidentes; los documentos
-  // no tienen «objeto» que clasificar y no son filtrables por hipótesis.
   const hypCounts: Partial<Record<HypKey, number>> = {};
   for (const c of cases) {
     const h = modalById.get(c.id);
@@ -209,7 +208,7 @@ export default function CasesPage() {
                     <div
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
-                      data-hyp={modalById.get(c.id) ?? "document"}
+                      data-hyp={modalById.get(c.id) ?? "indet"}
                       data-era={String(era.start)}
                       data-tier={c.tier}
                       className="contents"
