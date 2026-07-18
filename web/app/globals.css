@@ -77,24 +77,25 @@ a {
 }
 
 /* Bilingual switching — paired with the <T es=".." en=".."/> primitive.
-   Default (no data-locale on html, or data-locale="es") hides EN content.
-   When LocaleToggle sets data-locale="en", we hide ES content and show EN.
+   Inglés es el idioma PRIMARIO: por defecto (sin data-locale, o data-locale="en")
+   se oculta el ES y se ve el EN. Cuando LocaleToggle o el wrapper /es/ ponen
+   data-locale="es", se oculta el EN y se muestra el ES.
 
    `revert` (not `inline`) restores each element's natural display: inline
    for the <span> from <T>, block for the <div data-lang> wrappers used by
    block content (translation note, narrative paragraphs). Forcing `inline`
-   collapsed those block divs into broken bordered boxes in EN mode. */
-[data-lang="en"] {
+   collapsed those block divs into broken bordered boxes. */
+[data-lang="es"] {
   display: none;
 }
-/* Ancla en cualquier ancestro con [data-locale="en"], no solo <html>: el
-   toggle cliente lo pone en <html> (árbol ES en la raíz), y las rutas /en/
-   lo fijan server-side en un wrapper (app/en/layout.tsx) para servir inglés
+/* Ancla en cualquier ancestro con [data-locale="es"], no solo <html>: el
+   toggle cliente lo pone en <html> (árbol EN en la raíz), y las rutas /es/
+   lo fijan server-side en un wrapper (app/es/layout.tsx) para servir español
    estático sin JS. `html` sigue matcheando como ancestro → sin regresión. */
-[data-locale="en"] [data-lang="en"] {
+[data-locale="es"] [data-lang="es"] {
   display: revert;
 }
-[data-locale="en"] [data-lang="es"] {
+[data-locale="es"] [data-lang="en"] {
   display: none;
 }
 

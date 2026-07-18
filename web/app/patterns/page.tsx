@@ -7,8 +7,8 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-    title: "Patrones recurrentes del fenómeno",
-    description: `${STATS.patterns} patrones recurrentes (8a–8r) identificados a lo largo del corpus de casos UAP institucionales.`,
+    title: "Recurring patterns of the phenomenon",
+    description: `${STATS.patterns} recurring patterns (8a–8r) identified across the corpus of institutional UAP cases.`,
     path: "/patterns/",
   }),
   alternates: {

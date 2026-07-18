@@ -10,9 +10,9 @@ import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 export const metadata = {
   ...pageMeta({
-  title: "Probabilidades por explicación (modelo MECE)",
+  title: "Probabilities by explanation (MECE model)",
   description:
-    "Seis narrativas mutuamente excluyentes (objeto + postura institucional): cada caso UAP reparte el 100% y el corpus las agrega de forma comparable (modelo MECE).",
+    "Six mutually exclusive narratives (object + institutional stance): each UAP case allocates 100% and the corpus aggregates them comparably (MECE model).",
   path: "/probabilidades/",
 }),
   alternates: { canonical: "/probabilidades/", languages: hreflangFor("/probabilidades/") },

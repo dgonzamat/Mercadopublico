@@ -10,15 +10,15 @@ import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
-  title: "UAP Codex — La evidencia institucional",
-  description: `${STATS.cases} casos UAP institucionales (${STATS.startYear}–${STATS.endYear}) que sobrevivieron filtros militares, congresionales y periodísticos; probabilidad comparable por caso (modelo MECE).`,
+  title: "UAP Codex — The institutional evidence",
+  description: `${STATS.cases} institutional UAP cases (${STATS.startYear}–${STATS.endYear}) that survived military, congressional and journalistic filters; comparable per-case probability (MECE model).`,
   // Canonical/hreflang específicos de la home. NO van en el layout: ahí se
   // heredan a todas las páginas y hacían que cada ruta canonicalizara a "/".
   alternates: {
     canonical: "/",
     languages: {
-      es: "/",
-      en: "/en/",
+      en: "/",
+      es: "/es/",
       "x-default": "/",
     },
   },

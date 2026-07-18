@@ -20,8 +20,10 @@ export function pageMeta(opts: {
   description: string;
   path: string;
   image?: string;
+  locale?: string;
 }): Metadata {
-  const { title, description, path, image = "/og.png" } = opts;
+  const { title, description, path, image = "/og.png", locale = "en_US" } = opts;
+  const alternateLocale = locale === "en_US" ? ["es_ES"] : ["en_US"];
   return {
     title,
     description,
@@ -32,8 +34,8 @@ export function pageMeta(opts: {
       title,
       description,
       url: path,
-      locale: "es_ES",
-      alternateLocale: ["en_US"],
+      locale,
+      alternateLocale,
       images: [{ url: image, width: 1200, height: 630, alt: title }],
     },
     twitter: {
@@ -46,35 +48,38 @@ export function pageMeta(opts: {
 }
 
 /**
- * Mapa hreflang recíproco para una ruta ES y su espejo /en/. Se usa en AMBOS
- * lados (la página ES y la /en/) para que apunten una a la otra. `x-default`
- * apunta al INGLÉS (`/en${esPath}`): es la versión que Google sirve a todo
- * usuario que no matchea un idioma específico —la audiencia global—, así que
- * el inglés (lingua franca) maximiza el alcance internacional.
+ * Mapa hreflang recíproco para una ruta EN (raíz, idioma primario) y su espejo
+ * /es/. Se usa en AMBOS lados (la página raíz y la /es/) para que apunten una a
+ * la otra. `x-default` apunta al INGLÉS (la ruta raíz): es la versión que Google
+ * sirve a todo usuario que no matchea un idioma específico —la audiencia
+ * global—, así que el inglés (lingua franca) maximiza el alcance internacional.
+ * El argumento es la ruta EN raíz (p. ej. `/about/`), igual que antes.
  */
-export function hreflangFor(esPath: string) {
-  return { es: esPath, en: `/en${esPath}`, "x-default": `/en${esPath}` } as const;
+export function hreflangFor(enPath: string) {
+  return { en: enPath, es: `/es${enPath}`, "x-default": enPath } as const;
 }
 
 /**
- * Metadata de una página /en/ (espejo inglés): openGraph/twitter
- * auto-referenciales en `/en${esPath}`, canonical propio y hreflang recíproco.
- * `esPath` es la ruta ES (con trailing slash, p. ej. `/blog/`).
+ * Metadata de una página /es/ (espejo español): openGraph/twitter
+ * auto-referenciales en `/es${enPath}`, canonical propio, hreflang recíproco y
+ * og:locale es_ES. `enPath` es la ruta EN raíz (con trailing slash, p. ej.
+ * `/blog/`).
  */
-export function enMeta(opts: {
+export function esMeta(opts: {
   title: string;
   description: string;
-  esPath: string;
+  enPath: string;
   image?: string;
 }): Metadata {
-  const enPath = `/en${opts.esPath}`;
+  const esPath = `/es${opts.enPath}`;
   return {
     ...pageMeta({
       title: opts.title,
       description: opts.description,
-      path: enPath,
+      path: esPath,
       image: opts.image,
+      locale: "es_ES",
     }),
-    alternates: { canonical: enPath, languages: hreflangFor(opts.esPath) },
+    alternates: { canonical: esPath, languages: hreflangFor(opts.enPath) },
   };
 }

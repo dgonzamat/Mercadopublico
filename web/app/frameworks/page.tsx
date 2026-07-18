@@ -6,8 +6,8 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-  title: "Marcos teóricos comparados",
-  description: `${STATS.frameworks} marcos teóricos serios sobre el fenómeno UAP, comparados por poder explicativo y evidencia.`,
+  title: "Theoretical frameworks compared",
+  description: `${STATS.frameworks} serious theoretical frameworks on the UAP phenomenon, compared by explanatory power and evidence.`,
   path: "/frameworks/",
 }),
   alternates: { canonical: "/frameworks/", languages: hreflangFor("/frameworks/") },

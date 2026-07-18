@@ -20,13 +20,13 @@ const TIER_ORDER = ["S", "A", "B"] as const;
 
 export const metadata = {
   ...pageMeta({
-    title: "Casos UAP institucionales (1947–2026)",
-    description: `${TOTAL_CASES} casos UAP institucionales documentados entre 1947 y 2026 — archivo cronológico con nivel de evidencia y fuentes primarias.`,
+    title: "Institutional UAP cases (1947–2026)",
+    description: `${TOTAL_CASES} documented institutional UAP cases (1947–2026) — a chronological archive with evidence tier and primary sources.`,
     path: "/cases/",
   }),
   alternates: {
     canonical: "/cases/",
-    languages: { es: "/cases/", en: "/en/cases/", "x-default": "/cases/" },
+    languages: { en: "/cases/", es: "/es/cases/", "x-default": "/cases/" },
   },
 };
 

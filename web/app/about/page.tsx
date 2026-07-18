@@ -16,9 +16,9 @@ import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
   ...pageMeta({
-  title: "Metodología — cómo se pesa la evidencia",
+  title: "Methodology — how the evidence is weighed",
   description:
-    "Cómo se pesa la evidencia: tres niveles probatorios (Tier S/A/B), retornos decrecientes por caso, y por qué las seis narrativas son comparables.",
+    "How the evidence is weighed: three evidentiary tiers (S/A/B), diminishing returns per case, and why the six narratives are comparable.",
   path: "/about/",
 }),
   alternates: { canonical: "/about/", languages: hreflangFor("/about/") },

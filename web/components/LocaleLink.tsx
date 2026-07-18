@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import type { ComponentProps } from "react";
 
 /**
- * Secciones con espejo inglés indexable (/en/…). Solo estas rutas se prefijan
- * con /en cuando el visitante está en el árbol inglés; las demás (atlas,
+ * Secciones con espejo español indexable (/es/…). Solo estas rutas se prefijan
+ * con /es cuando el visitante está en el árbol español; las demás (atlas,
  * laboratorio, contact, fuentes, visitantes, acceso) NO tienen página /en/, así
- * que sus links se quedan en ES para no romper (evita /en/atlas → 404).
+ * que sus links se quedan en la raíz (inglés) para no romper (evita /es/atlas → 404).
  * "" = home ("/").
  */
 const MIRRORED = new Set([
@@ -36,17 +36,17 @@ function topSegment(href: string): string {
  * cualquier otro caso lo deja igual. Puro (testeable), sin hooks.
  */
 export function localizeHref(href: string, pathname: string | null): string {
-  const onEn = pathname === "/en" || (pathname?.startsWith("/en/") ?? false);
-  if (!onEn) return href;
-  if (!href.startsWith("/") || href.startsWith("/en/") || href === "/en") {
+  const onEs = pathname === "/es" || (pathname?.startsWith("/es/") ?? false);
+  if (!onEs) return href;
+  if (!href.startsWith("/") || href.startsWith("/es/") || href === "/es") {
     return href;
   }
   if (!MIRRORED.has(topSegment(href))) return href;
-  return href === "/" ? "/en/" : `/en${href}`;
+  return href === "/" ? "/es/" : `/es${href}`;
 }
 
 /**
- * <Link> consciente del locale: en el árbol /en/ apunta a la versión inglesa
+ * <Link> consciente del locale: en el árbol /es/ apunta a la versión española
  * de la ruta (cuando existe). Drop-in de next/link para la nav del chrome.
  */
 export function LocaleLink({
