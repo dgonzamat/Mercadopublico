@@ -1052,6 +1052,41 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
+// ─── 9p. RULE E25: referencias cruzadas entre casos en la prosa (ERROR) ───
+//
+// La prosa enlaza otros casos con el markup `[[slug]]` (lo renderiza
+// lib/caseRefs.tsx). Invariante doble: (a) todo `[[slug]]` debe resolver a un
+// caso existente —un slug roto sería un enlace a 404—; (b) no debe reaparecer la
+// vieja forma numérica "(caso N)"/"(case N)", que era frágil: el "N" era el `num`
+// al momento de escribir y driftaba al renumerar el corpus (desfase no constante),
+// de modo que un enlace por número apuntaba al caso equivocado (jul 2026). Blinda
+// la migración a slugs estables. Barato y determinista (regex sobre la prosa).
+{
+  const validIds = new Set(cases.map((c) => c.id));
+  const PROSE = ["summary", "summary_en", "whatHappened", "whatHappened_en", "whyMatters", "whyMatters_en", "evidence", "evidence_en"];
+  const SLUG_REF = /\[\[([a-z0-9-]+)\]\]/g;
+  const NUM_REF = /\((?:caso|case)\s+\d+\)/gi;
+  for (const c of cases) {
+    const brokenSlugs = new Set();
+    let numHits = 0;
+    for (const k of PROSE) {
+      const vals = Array.isArray(c[k]) ? c[k] : [c[k]];
+      for (const v of vals) {
+        if (typeof v !== "string") continue;
+        for (const m of v.matchAll(SLUG_REF)) if (!validIds.has(m[1])) brokenSlugs.add(m[1]);
+        const nm = v.match(NUM_REF);
+        if (nm) numHits += nm.length;
+      }
+    }
+    if (brokenSlugs.size > 0) {
+      record("ERROR", path.join(casesDir, `${c.id}.json`), 0, `E25 xref: ${brokenSlugs.size} referencia(s) [[slug]] a un caso inexistente (enlace a 404): ${[...brokenSlugs].join(", ")}. Corregir el slug o crear el caso.`);
+    }
+    if (numHits > 0) {
+      record("ERROR", path.join(casesDir, `${c.id}.json`), 0, `E25 xref: ${numHits} referencia(s) numérica(s) "(caso N)"/"(case N)" en la prosa — forma frágil que driftea al renumerar. Migrar a "[[slug]]" (ver lib/caseRefs.tsx).`);
+    }
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

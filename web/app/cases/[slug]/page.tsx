@@ -16,10 +16,17 @@ import PdfDoc from "@/components/PdfDoc";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { linkCaseRefs } from "@/lib/caseRefs";
 
 export function generateStaticParams() {
   return cases.map((c) => ({ slug: c.id }));
 }
+
+// Mapa slug → nombre para el title/aria-label de las referencias cruzadas
+// "[[slug]]" que linkCaseRefs enlaza en la prosa. Se construye una vez a nivel de
+// módulo desde el corpus ya importado (server component), así el helper se
+// mantiene data-free y sin coste por render.
+const NAME_BY_SLUG = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
@@ -239,7 +246,10 @@ export default async function CaseDetailPage(
         </div>
 
         <p className="font-display text-2xl leading-snug text-text md:text-3xl">
-          <T es={c.summary} en={c.summary_en ?? c.summary} />
+          <T
+            es={linkCaseRefs(c.summary, NAME_BY_SLUG)}
+            en={linkCaseRefs(c.summary_en ?? c.summary, NAME_BY_SLUG)}
+          />
         </p>
 
         <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-4">
@@ -397,7 +407,7 @@ export default async function CaseDetailPage(
                           : "text-lg leading-relaxed text-text md:text-xl"
                       }
                     >
-                      {para}
+                      {linkCaseRefs(para, NAME_BY_SLUG)}
                     </p>
                     {pullQuote && i === 0 && (
                       <PullQuote className="border-l-4 text-2xl md:text-3xl">
@@ -420,7 +430,7 @@ export default async function CaseDetailPage(
                           : "text-lg leading-relaxed text-text md:text-xl"
                       }
                     >
-                      {para}
+                      {linkCaseRefs(para, NAME_BY_SLUG)}
                     </p>
                   ))}
                 </div>
@@ -444,14 +454,14 @@ export default async function CaseDetailPage(
               <div lang="es" data-lang="es" className="space-y-6">
                 {c.whyMatters.split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
-                    {para}
+                    {linkCaseRefs(para, NAME_BY_SLUG)}
                   </p>
                 ))}
               </div>
               <div lang="en" data-lang="en" className="space-y-6">
                 {(c.whyMatters_en ?? c.whyMatters).split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
-                    {para}
+                    {linkCaseRefs(para, NAME_BY_SLUG)}
                   </p>
                 ))}
               </div>
@@ -521,7 +531,10 @@ export default async function CaseDetailPage(
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <span>
-                        <T es={item} en={c.evidence_en?.[i] ?? item} />
+                        <T
+                          es={linkCaseRefs(item, NAME_BY_SLUG)}
+                          en={linkCaseRefs(c.evidence_en?.[i] ?? item, NAME_BY_SLUG)}
+                        />
                       </span>
                     </li>
                   ))}
