@@ -13,6 +13,7 @@
     "audit": "node scripts/audit-consistency.mjs",
     "audit-design": "node scripts/audit-design.mjs",
     "qa:shots": "node scripts/qa-screenshots.mjs",
+    "qa:shots:mobile": "node scripts/qa-screenshots.mjs --mobile",
     "check-links": "node scripts/check-links.mjs",
     "validate-schema": "node scripts/validate-schema.mjs",
     "lint": "eslint ."
