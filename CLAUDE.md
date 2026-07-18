@@ -1,6 +1,15 @@
 # CLAUDE.md — UAP Codex
 
-Contexto y reglas operativas específicas de este repositorio. Las reglas de comportamiento generales (Karpathy guidelines: think before coding, simplicity first, surgical changes, goal-driven execution) viven en `~/.claude/CLAUDE.md` global.
+Contexto y reglas operativas específicas de este repositorio. Las reglas de comportamiento generales (Karpathy guidelines) se versionan más abajo en este mismo archivo para que apliquen también en sesiones remotas/CI, donde el `~/.claude/CLAUDE.md` global no viaja al contenedor.
+
+## Karpathy guidelines (reglas de comportamiento generales)
+
+Principios de trabajo por defecto. Aplican a toda tarea, no solo a este repo.
+
+- **Think before coding** — entender el problema, el contexto y la intención real antes de tocar archivos. Leer el código vecino, mapear el grafo de dependencias cuando importa, y confirmar el objetivo si es ambiguo. La mayoría de los errores caros nacen de codear sobre una suposición no verificada.
+- **Simplicity first** — la solución más simple que resuelve el problema gana. Nada de abstracciones especulativas, capas «por si acaso» ni sobre-ingeniería. Menos código y más nítido > mucho y difuso (mismo espíritu que la mantención de esta memoria).
+- **Surgical changes** — tocar el mínimo necesario. No refactorizar de paso, no reformatear lo que no cambia, no renombrar por gusto. El diff debe leerse como el cambio pedido y nada más; escribir código que calce con el estilo, la densidad de comentarios y el idioma del código que lo rodea.
+- **Goal-driven execution** — cuando hay lo suficiente para actuar, actuar. No re-derivar hechos ya establecidos, no re-litigar decisiones ya tomadas, no narrar opciones que no se van a seguir. Dar una recomendación, no un catálogo. Reportar el resultado con honestidad: si algo falló o se saltó, decirlo con la evidencia.
 
 ## Estilo de comunicación
 
