@@ -46,10 +46,24 @@
     "May 27, 2026 (DefenseScoop): Rep. Eric Burlison formally demands UAP records and assets from MITRE dating to 1930; MITRE moves to comply.",
     "First explicit congressional records demand on a private FFRDC regarding phenomenon material."
   ],
+  "documents": [
+    {
+      "src": "/pursue/burlison-mitre-ffrdc-interrogatories-2026.pdf",
+      "type": "pdf",
+      "title": "El requerimiento en sí: interrogatorios legislativos y solicitudes de producción del congresista Eric Burlison a The MITRE Corporation (carta fechada 22 may 2026; reportada por DefenseScoop el 27 may). Exige identificar, preservar y producir todo record UAP en custodia de MITRE o sus FFRDCs desde 1930 —incluidos materiales recuperados, tecnologías de origen desconocido y programas heredados de recuperación de restos o ingeniería inversa— y transferir lo pertinente a NARA (Record Group 615). Incluye el pliego de 11 secciones de interrogatorios.",
+      "title_en": "The demand itself: legislative interrogatories and production requests from Rep. Eric Burlison to The MITRE Corporation (letter dated May 22, 2026; reported by DefenseScoop on May 27). Demands identifying, preserving and producing every UAP record in MITRE's or its FFRDCs' custody since 1930 —including recovered materials, technologies of unknown origin, and legacy crash-retrieval or reverse-engineering programs— and transferring the relevant ones to NARA (Record Group 615). Includes the 11-section enclosure of interrogatories.",
+      "source": "U.S. House of Representatives · Committee on Oversight and Government Reform",
+      "license": "Dominio público · US Government work (17 USC §105)"
+    }
+  ],
   "sources": [
     {
       "name": "DefenseScoop — 'MITRE moves to comply with lawmaker's request for UAP records and assets dating back to 1930' (27 may 2026)",
       "url": "https://defensescoop.com/2026/05/27/rep-eric-burlison-request-for-uap-records-mitre/"
+    },
+    {
+      "name": "Rep. Eric Burlison → The MITRE Corporation — interrogatorios legislativos y production requests UAP, 22 may 2026",
+      "note": "Documento primario embebido en el visor, con el pliego de 11 secciones (dominio público, US Government work)."
     },
     {
       "name": "MITRE Corporation — FFRDCs operados para el DoD y la comunidad de inteligencia",

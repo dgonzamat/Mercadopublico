@@ -53,6 +53,17 @@
       "url": "https://www.csmonitor.com/World/Global-News/2009/1210/norway-spiral-a-rocket-scientist-explains-the-mystery"
     }
   ],
+  "documents": [
+    {
+      "src": "/pursue/norwegian-spiral-2009-bulava.jpg",
+      "type": "image",
+      "title": "La causa, no el evento: un lanzamiento del misil balístico intercontinental Bulava (RSM-56) desde submarino. La espiral del 9 de diciembre de 2009 fue una prueba fallida de este mismo sistema —la tercera etapa giró y venteó su combustible, dibujando la espiral—; esta foto oficial muestra un lanzamiento nominal del arma cuyo fallo produjo el fenómeno.",
+      "title_en": "The cause, not the event: a launch of the submarine-launched Bulava (RSM-56) intercontinental ballistic missile. The 9 December 2009 spiral was a failed test of this same system —the third stage spun and vented its fuel, drawing the spiral—; this official photo shows a nominal launch of the weapon whose malfunction produced the phenomenon.",
+      "source": "Ministry of Defence of the Russian Federation (mil.ru) · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Bulava_SLBM_launched.jpg"
+    }
+  ],
   "posterior": {
     "mundano_natural": 0.9,
     "humana_clasificada": 0.04,
