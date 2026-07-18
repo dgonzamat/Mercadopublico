@@ -14,12 +14,15 @@
 // Por eso es ON-DEMAND (`npm run qa:shots`), no un gate del prebuild node-plain.
 //
 // Uso:
-//   npm run qa:shots                 # todas las vistas del manifiesto
+//   npm run qa:shots                 # todas las vistas del manifiesto (desktop)
+//   npm run qa:shots:mobile          # lo mismo en viewport móvil (391×844, @media)
 //   node scripts/qa-screenshots.mjs home case-xref     # solo esas vistas
-//   node scripts/qa-screenshots.mjs --route /cases/varginha-1996/ --name adhoc
+//   node scripts/qa-screenshots.mjs --mobile home cases-list
+//   node scripts/qa-screenshots.mjs --viewport 360x780 home
 //   node scripts/qa-screenshots.mjs --route /cases/x/ --phrase "public front"
 //
-// Salida: web/qa-shots/<name>.png (gitignored).
+// Salida: web/qa-shots/<name>[-mobile].png (gitignored). El viewport móvil se
+// emula por CDP (setDeviceMetricsOverride, mobile:true) → responden los @media.
 //
 // Lecciones incorporadas (descubiertas al fotografiar el visor de referencias):
 //   · JS DESHABILITADO por defecto → layout ESTÁTICO: los visores PDF (react-pdf,
@@ -64,15 +67,30 @@ const argv = process.argv.slice(2);
 let views = VIEWS;
 const adhoc = {};
 const names = [];
+let mobile = false;
+let viewportArg = null;
 for (let i = 0; i < argv.length; i++) {
   if (argv[i] === "--route") adhoc.route = argv[++i];
   else if (argv[i] === "--name") adhoc.name = argv[++i];
   else if (argv[i] === "--phrase") adhoc.phrase = argv[++i];
   else if (argv[i] === "--selector") adhoc.selector = argv[++i];
+  else if (argv[i] === "--mobile") mobile = true;
+  else if (argv[i] === "--viewport") viewportArg = argv[++i];
   else names.push(argv[i]);
 }
 if (adhoc.route) views = [{ name: adhoc.name || "adhoc", ...adhoc }];
 else if (names.length) views = VIEWS.filter((v) => names.includes(v.name));
+
+// Perfil de viewport. `--mobile` emula un teléfono (391×844, dpr 3, mobile:true →
+// aplican los @media y el chrome móvil, MobileNav incluido); default = desktop.
+// `--viewport 360x780` fuerza un ancho arbitrario. Se aplica por CDP
+// (setDeviceMetricsOverride), no solo por window-size, para que las media queries
+// respondan. El sufijo del nombre evita pisar la captura desktop.
+const VP = viewportArg
+  ? { width: Number(viewportArg.split("x")[0]) || 390, height: Number(viewportArg.split("x")[1]) || 844, dsf: 3, mobile: true, suffix: `-${viewportArg}` }
+  : mobile
+    ? { width: 391, height: 844, dsf: 3, mobile: true, suffix: "-mobile" }
+    : { width: 1440, height: 3000, dsf: 2, mobile: false, suffix: "" };
 
 // ── Resolver el binario de Chromium (sin hardcodear la versión) ──────────
 function findChrome() {
@@ -148,6 +166,12 @@ async function main() {
 
     await send("Page.enable");
     await send("Runtime.enable");
+    // Emulación de dispositivo por CDP: aplica el ancho ELEGIDO (desktop o móvil)
+    // de modo que respondan los @media — no basta window-size.
+    await send("Emulation.setDeviceMetricsOverride", {
+      width: VP.width, height: VP.height, deviceScaleFactor: VP.dsf, mobile: VP.mobile,
+    });
+    console.log(`qa-shots: viewport ${VP.width}×${VP.height} (${VP.mobile ? "móvil" : "desktop"})`);
 
     let ok = 0;
     for (const v of views) {
@@ -155,18 +179,19 @@ async function main() {
       await send("Page.navigate", { url: `http://localhost:${PORT}${v.route}` });
       await sleep(v.js ? 2600 : 1800);
 
+      const W = VP.width;
       const focus = v.phrase
-        ? `(() => { const ps=[...document.querySelectorAll('p')].filter(p=>p.getBoundingClientRect().height>0); const p=ps.find(x=>x.textContent.includes(${JSON.stringify(v.phrase)})); if(!p) return null; const r=p.getBoundingClientRect(); return JSON.stringify({x:0,y:r.top+scrollY-60,w:1440,h:r.height+120}); })()`
+        ? `(() => { const ps=[...document.querySelectorAll('p')].filter(p=>p.getBoundingClientRect().height>0); const p=ps.find(x=>x.textContent.includes(${JSON.stringify(v.phrase)})); if(!p) return null; const r=p.getBoundingClientRect(); return JSON.stringify({x:0,y:r.top+scrollY-60,w:${W},h:r.height+120}); })()`
         : v.selector
-          ? `(() => { const el=[...document.querySelectorAll(${JSON.stringify(v.selector)})].find(e=>e.getBoundingClientRect().height>0); if(!el) return null; const r=el.getBoundingClientRect(); return JSON.stringify({x:Math.max(0,r.left+scrollX-40),y:r.top+scrollY-40,w:Math.min(1440,r.width+80),h:r.height+80}); })()`
-          : `JSON.stringify({x:0,y:0,w:1440,h:${v.fullHeight || 2400}})`;
+          ? `(() => { const el=[...document.querySelectorAll(${JSON.stringify(v.selector)})].find(e=>e.getBoundingClientRect().height>0); if(!el) return null; const r=el.getBoundingClientRect(); return JSON.stringify({x:Math.max(0,r.left+scrollX-40),y:r.top+scrollY-40,w:Math.min(${W},r.width+80),h:r.height+80}); })()`
+          : `JSON.stringify({x:0,y:0,w:${W},h:${v.fullHeight || 2400}})`;
       const { result } = await send("Runtime.evaluate", { expression: focus, returnByValue: true });
       if (!result.value) { console.error(`  ✗ ${v.name}: no se encontró el foco (${v.phrase || v.selector})`); continue; }
       const box = JSON.parse(result.value);
       const shot = await send("Page.captureScreenshot", { format: "png", captureBeyondViewport: true, clip: { x: box.x, y: Math.max(0, box.y), width: box.w, height: box.h, scale: 1 } });
-      const outFile = path.join(SHOTS_DIR, `${v.name}.png`);
-      fs.writeFileSync(outFile, Buffer.from(shot.data, "base64"));
-      console.log(`  ✓ ${v.name} → qa-shots/${v.name}.png  (${box.w}×${box.h})`);
+      const outName = `${v.name}${VP.suffix}`;
+      fs.writeFileSync(path.join(SHOTS_DIR, `${outName}.png`), Buffer.from(shot.data, "base64"));
+      console.log(`  ✓ ${v.name} → qa-shots/${outName}.png  (${box.w}×${box.h})`);
       ok++;
     }
     ws.close();
