@@ -62,6 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/cases/",
     "/probabilidades/",
+    "/calidad/",
+    "/cobertura/",
     "/atlas/",
     "/patterns/",
     "/frameworks/",
