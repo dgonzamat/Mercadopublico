@@ -45,21 +45,11 @@ import {
 } from "./types";
 import { cases as ALL_CASES } from "./data";
 
-export const MECE_CLASSES: ReadonlyArray<{
-  id: MeceClassId;
-  label: string;
-  labelEn: string;
-  color: string;
-  /** Hipótesis del marco anterior que esta narrativa absorbe. */
-  legacyHypothesis: string;
-}> = [
-  { id: "mundano_natural", label: "Mundano / natural", labelEn: "Mundane / natural", color: "#5a6b7a", legacyHypothesis: "misidentificación + fenómenos-naturales" },
-  { id: "humana_clasificada", label: "Tecnología humana clasificada", labelEn: "Classified human technology", color: "#7a6b23", legacyHypothesis: "programas-clasificados" },
-  { id: "adversaria", label: "Tecnología adversaria", labelEn: "Adversary technology", color: "#8a4b23", legacyHypothesis: "tecnología-adversaria" },
-  { id: "nohumano_encubierto", label: "No-humano + encubrimiento estatal", labelEn: "Non-human + state cover-up", color: "#6b3a7a", legacyHypothesis: "ingeniería-inversa + tratado-greys + entidades con cover-up" },
-  { id: "nohumano_abierto", label: "No-humano sin gestión estatal", labelEn: "Non-human, no state management", color: "#5b3a8a", legacyHypothesis: "interdimensional + ontológico" },
-  { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—" },
-];
+// MECE_CLASSES vive en `./meceClasses` (data-free) para poder importarlo desde
+// el cliente sin arrastrar el corpus. Se re-exporta aquí para no romper a sus
+// consumidores existentes (app/calidad, este módulo).
+export { MECE_CLASSES } from "./meceClasses";
+import { MECE_CLASSES } from "./meceClasses";
 
 /** Color neutro/mudo de la narrativa «Indeterminado» en el donut navegable
  *  (más claro que el #3a3a3a de MECE_CLASSES para que se vea sobre el fondo
