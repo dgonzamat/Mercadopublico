@@ -29,12 +29,13 @@ const inter = Inter({
   display: "swap",
 });
 
-// Metadata por defecto en español: es el idioma base del sitio (<html lang="es">,
-// locale og es_ES). El inglés vive en el toggle del cliente, no en lo que
-// indexan los buscadores.
-const TITLE = "UAP Codex — Análisis institucional del fenómeno UAP";
-const DESCRIPTION = `${STATS.years} años de fenómeno UAP documentado institucionalmente. ${STATS.cases} casos, ${STATS.patterns} patrones, ${STATS.frameworks} marcos teóricos comparados.`;
-const SHORT_DESCRIPTION = `${STATS.years} años de fenómeno UAP, ${STATS.cases} casos, ${STATS.patterns} patrones.`;
+// Metadata por defecto en INGLÉS: es el idioma primario del sitio (<html lang="en">,
+// locale og en_US) para maximizar el alcance global. El español vive en el espejo
+// /es/ y en el toggle del cliente. (El español primario fue la decisión previa;
+// se invirtió por SEO internacional.)
+const TITLE = "UAP Codex — Institutional analysis of the UAP phenomenon";
+const DESCRIPTION = `${STATS.years} years of institutionally documented UAP phenomena. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} theoretical frameworks compared.`;
+const SHORT_DESCRIPTION = `${STATS.years} years of UAP phenomena, ${STATS.cases} cases, ${STATS.patterns} patterns.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
     title: TITLE,
     description: SHORT_DESCRIPTION,
     url: "/",
-    locale: "es_ES",
-    alternateLocale: ["en_US"],
+    locale: "en_US",
+    alternateLocale: ["es_ES"],
     images: [{ url: "/og.png", width: 1200, height: 630, alt: TITLE }],
   },
   twitter: {
@@ -71,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <head>
         <link
           rel="alternate"

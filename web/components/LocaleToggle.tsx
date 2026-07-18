@@ -5,26 +5,26 @@ import { usePathname } from "next/navigation";
 
 type Locale = "es" | "en";
 
-/** ¿Estamos en una ruta del árbol inglés (/en o /en/…)? */
-function isEnRoute(pathname: string | null): boolean {
-  return pathname === "/en" || (pathname?.startsWith("/en/") ?? false);
+/** ¿Estamos en una ruta del árbol español (/es o /es/…)? */
+function isEsRoute(pathname: string | null): boolean {
+  return pathname === "/es" || (pathname?.startsWith("/es/") ?? false);
 }
 
 /**
  * EN/ES toggle. Sets `[data-locale]` on the html element, persists in
  * localStorage. CSS in globals.css drives the per-span visibility.
  *
- * On first render, the server outputs ES (default). On mount we pick the
- * locale: an explicit prior choice (localStorage) wins; otherwise we
+ * On first render, the server outputs EN (idioma primario). On mount we pick
+ * the locale: an explicit prior choice (localStorage) wins; otherwise we
  * auto-detect from the browser's preferred languages. Detection is NOT
  * persisted — only an explicit toggle is — so it re-runs each visit until
  * the user actually picks one.
  */
 // Walk the browser's ordered language preferences and return whichever of
-// es/en the user prefers first. Defaults to ES (the site's base language)
+// es/en the user prefers first. Defaults to EN (the site's primary language)
 // for any other language.
 function detectLocale(): Locale {
-  if (typeof navigator === "undefined") return "es";
+  if (typeof navigator === "undefined") return "en";
   const langs = navigator.languages?.length
     ? navigator.languages
     : [navigator.language];
@@ -33,7 +33,7 @@ function detectLocale(): Locale {
     if (code === "es") return "es";
     if (code === "en") return "en";
   }
-  return "es";
+  return "en";
 }
 
 // Per-variant chrome. The header sits on the light paper bg; the drawer
@@ -52,7 +52,7 @@ export function LocaleToggle({
   dark?: boolean;
 }) {
   const pathname = usePathname();
-  const [locale, setLocale] = useState<Locale>("es");
+  const [locale, setLocale] = useState<Locale>("en");
   // Dark header (Home hero overlay): cream chrome + accent-bright active span.
   const chrome =
     dark && variant === "header"
@@ -62,13 +62,13 @@ export function LocaleToggle({
   const sepColor = dark ? "text-bg/40" : "text-muted";
 
   useEffect(() => {
-    // En el árbol /en/ el idioma lo fija la URL (inglés), y así el chrome
+    // En el árbol /es/ el idioma lo fija la URL (español), y así el chrome
     // (header/footer del root layout, fuera del wrapper data-locale de
-    // app/en/layout) también se muestra en inglés. Fuera de /en/, gana la
-    // elección explícita (localStorage) y si no, la autodetección.
+    // app/es/layout) también se muestra en español. Fuera de /es/, gana la
+    // elección explícita (localStorage) y si no, la autodetección (default EN).
     const stored = localStorage.getItem("locale") as Locale | null;
-    const initial: Locale = isEnRoute(pathname)
-      ? "en"
+    const initial: Locale = isEsRoute(pathname)
+      ? "es"
       : (stored ?? detectLocale());
     // Locale derivado en mount / al navegar (no disponible en SSR).
     // eslint-disable-next-line react-hooks/set-state-in-effect
