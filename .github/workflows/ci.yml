@@ -41,6 +41,23 @@ jobs:
       - name: Lint (ESLint)
         run: npm run lint
 
+      # Typecheck explícito ANTES del build: `tsc --noEmit` (~7 s) falla rápido
+      # y aísla los errores de tipo, en vez de descubrirlos al final de
+      # `next build` tras el webpack. Nace de #638, donde un error de resolución
+      # (re-export sin binding local) solo se vio tarde en el build de CI —
+      # y el tsc local sin node_modules daba falso verde.
+      #
+      # build-cases + build-posts se corren primero porque lib/data.ts,
+      # dataClient.ts, siteStats.ts y posts.ts importan JSON agregados
+      # (cases.json, cases-client.json, site-stats.json, posts.json) que son
+      # gitignored —los genera el prebuild—; sin ellos tsc no resuelve esos
+      # imports de módulo. El `npm run build` de abajo los regenera (idempotente).
+      - name: Typecheck (tsc --noEmit)
+        run: |
+          node scripts/build-cases.mjs
+          node scripts/build-posts.mjs
+          npm run typecheck
+
       # `npm run build` encadena el prebuild (build-cases + audit-consistency)
       # y luego next build. Si los JSON de casos están rotos, si hay drift
       # numérico/textual (auditoría E1–E6), o si falla el type-check, este
