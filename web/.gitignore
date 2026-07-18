@@ -15,3 +15,6 @@ public/feed.xml
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+
+# QA visual screenshots (on-demand, no versionar)
+qa-shots
