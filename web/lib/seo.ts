@@ -47,10 +47,13 @@ export function pageMeta(opts: {
 
 /**
  * Mapa hreflang recíproco para una ruta ES y su espejo /en/. Se usa en AMBOS
- * lados (la página ES y la /en/) para que apunten una a la otra + x-default=ES.
+ * lados (la página ES y la /en/) para que apunten una a la otra. `x-default`
+ * apunta al INGLÉS (`/en${esPath}`): es la versión que Google sirve a todo
+ * usuario que no matchea un idioma específico —la audiencia global—, así que
+ * el inglés (lingua franca) maximiza el alcance internacional.
  */
 export function hreflangFor(esPath: string) {
-  return { es: esPath, en: `/en${esPath}`, "x-default": esPath } as const;
+  return { es: esPath, en: `/en${esPath}`, "x-default": `/en${esPath}` } as const;
 }
 
 /**
