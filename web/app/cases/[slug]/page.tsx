@@ -28,6 +28,29 @@ export function generateStaticParams() {
 // mantiene data-free y sin coste por render.
 const NAME_BY_SLUG = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
 
+// Grafo INVERSO de citas: para cada caso, qué otros casos lo citan en su prosa vía
+// el markup "[[slug]]" (el mismo que linkCaseRefs enlaza hacia adelante). El grafo
+// era unidireccional —ibas de A→B por la cita, pero en B no sabías que A lo cita—;
+// esto cierra el bucle. Se construye una vez a nivel de módulo escaneando el corpus
+// (server component), sin coste por render.
+const BACKLINKS = (() => {
+  const REF = /\[\[([a-z0-9-]+)\]\]/g;
+  const map = new Map<string, Set<string>>();
+  for (const c of cases) {
+    const prose = [
+      c.summary, c.summary_en, c.whatHappened, c.whatHappened_en,
+      c.whyMatters, c.whyMatters_en, ...(c.evidence ?? []), ...(c.evidence_en ?? []),
+    ].filter(Boolean).join("\n");
+    for (const m of prose.matchAll(REF)) {
+      const target = m[1];
+      if (target === c.id) continue; // no auto-citas
+      if (!map.has(target)) map.set(target, new Set());
+      map.get(target)!.add(c.id);
+    }
+  }
+  return map;
+})();
+
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
   const c = cases.find((x) => x.id === params.slug);
@@ -134,6 +157,13 @@ export default async function CaseDetailPage(
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, 4);
+
+  // Backlinks: casos que CITAN a éste en su prosa (grafo inverso de [[slug]]).
+  // Distinto de `similar` (heurístico por patrones/país): esto es cita explícita.
+  const backlinks = [...(BACKLINKS.get(c.id) ?? [])]
+    .map((id) => cases.find((x) => x.id === id))
+    .filter((x): x is NonNullable<typeof x> => Boolean(x))
+    .sort((a, b) => b.year_start - a.year_start);
 
   const hasNarrative = Boolean(c.whatHappened || c.whyMatters);
   const hasEvidence = Boolean(c.evidence && c.evidence.length > 0);
@@ -688,6 +718,35 @@ export default async function CaseDetailPage(
               en="Structured analytical judgment, not a calibrated frequency. Forced classification: the mass the evidence cannot assign is spread across the hypotheses the case does support."
             />
           </Caption>
+        </section>
+      )}
+
+      {/* ────────── BACKLINKS (casos que citan a éste) ────────── */}
+      {backlinks.length > 0 && (
+        <section className="space-y-6 border-t-2 border-text pt-12">
+          <Eyebrow>
+            <T
+              es={`Citado por ${backlinks.length} ${backlinks.length === 1 ? "caso" : "casos"}`}
+              en={`Referenced by ${backlinks.length} ${backlinks.length === 1 ? "case" : "cases"}`}
+            />
+          </Eyebrow>
+          <ul className="grid gap-px bg-text sm:grid-cols-2">
+            {backlinks.map((b) => (
+              <li key={b.id} className="flex">
+                <LocaleLink
+                  href={`/cases/${b.id}`}
+                  className="group flex w-full flex-col gap-1 bg-bg p-4 hover:bg-text hover:text-bg"
+                >
+                  <p className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
+                    <T es={b.name} en={b.name_en ?? b.name} />
+                  </p>
+                  <p className="mt-auto font-mono text-xs tabular-nums text-muted group-hover:text-bg/60">
+                    {b.year_start} · Tier {b.tier}
+                  </p>
+                </LocaleLink>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 
