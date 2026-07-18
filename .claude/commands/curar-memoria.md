@@ -22,6 +22,7 @@ Corre cada sonda y compárala con la cifra que `CLAUDE.md` afirma a mano. Report
 | "28/91 actores tienen foto" | `node -e 'const r=require("./web/data/researchers.json");console.log(r.filter(x=>x.photo).length+"/"+r.length)'` |
 | "11 frameworks" | `node -e 'console.log(require("./web/data/frameworks.json").length)'` |
 | "19 patrones" | `node -e 'console.log(require("./web/data/patterns.json").length)'` |
+| Tiers S/A/B (subconjuntos citados en E21 y prosa) | `node -e 'const fs=require("fs"),d="web/data/cases",t={};fs.readdirSync(d).filter(f=>f.endsWith(".json")).forEach(f=>{const x=JSON.parse(fs.readFileSync(d+"/"+f));t[x.tier]=(t[x.tier]||0)+1});console.log(t)'` |
 
 Si aparecen cifras nuevas hardcodeadas en `CLAUDE.md` que no están en esta tabla, agrégalas mentalmente al chequeo y — si son estables — sugiere sumar su sonda a este mismo comando (el curador se mantiene a sí mismo).
 
