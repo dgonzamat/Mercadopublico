@@ -24,30 +24,30 @@ export function generateStaticParams() {
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
   const c = cases.find((x) => x.id === params.slug);
-  if (!c) return { title: "Caso no encontrado" };
+  if (!c) return { title: "Case not found" };
   const path = `/cases/${c.id}/`;
-  const description = c.seoDescription ?? c.summary;
+  const description = c.seoDescription ?? c.summary_en ?? c.summary;
   return {
     // `seoTitle` (cuando existe) reemplaza el título completo, sin el sufijo
     // "· UAP Codex" del template, para controlar la longitud del snippet y
     // poner las keywords de la query primero. Si no, se usa el name + template.
-    title: c.seoTitle ? { absolute: c.seoTitle } : `${c.name}`,
+    title: c.seoTitle ? { absolute: c.seoTitle } : `${c.name_en ?? c.name}`,
     description,
     alternates: {
       canonical: path,
       languages: {
-        es: path,
-        en: `/en${path}`,
+        en: path,
+        es: `/es${path}`,
         "x-default": path,
       },
     },
     openGraph: {
       type: "article",
-      title: `${c.name} — ${c.year_start}${c.year_end ? `–${c.year_end}` : ""}`,
+      title: `${c.name_en ?? c.name} — ${c.year_start}${c.year_end ? `–${c.year_end}` : ""}`,
       description,
       url: path,
-      locale: "es_ES",
-      alternateLocale: c.whatHappened_en ? ["en_US"] : [],
+      locale: "en_US",
+      alternateLocale: ["es_ES"],
       // Si el caso tiene documento primario (escaneo FOIA, foto oficial),
       // úsalo como tarjeta social: identifica el caso mejor que el OG genérico.
       images: c.primaryDocument?.url
@@ -56,8 +56,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     },
     twitter: {
       card: "summary_large_image",
-      title: `${c.name} — UAP Codex`,
-      description: c.summary,
+      title: `${c.name_en ?? c.name} — UAP Codex`,
+      description: c.summary_en ?? c.summary,
       images: c.primaryDocument?.url ? [c.primaryDocument.url] : ["/og.png"],
     },
   };

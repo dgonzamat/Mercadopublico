@@ -71,8 +71,8 @@ export async function generateMetadata(props: {
   const count = cases.filter((c) => c.pursueReleases?.includes(n)).length;
   return {
     ...pageMeta({
-      title: `PURSUE Release ${pad(n)} — ${count} casos del corpus`,
-      description: `Los ${count} casos de UAP Codex que citan documentos de la Release ${pad(n)} del PURSUE/AARO (desclasificación del Department of War).`,
+      title: `PURSUE Release ${pad(n)} — ${count} corpus cases`,
+      description: `The ${count} UAP Codex cases that cite documents from PURSUE/AARO Release ${pad(n)} (Department of War declassification).`,
       path: `/releases/${pad(n)}/`,
     }),
   };

@@ -21,11 +21,11 @@ export function generateStaticParams() {
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
   const r = researchers.find((x) => x.id === params.slug);
-  if (!r) return { title: "No encontrado" };
+  if (!r) return { title: "Not found" };
   return {
     ...pageMeta({
       title: r.seoTitle ?? r.name,
-      description: r.seoDescription ?? r.bio_short.slice(0, 160),
+      description: r.bio_short_en ?? r.seoDescription ?? r.bio_short.slice(0, 160),
       path: `/researchers/${r.id}/`,
     }),
     ...(r.seoTitle ? { title: { absolute: r.seoTitle } } : {}),

@@ -7,9 +7,9 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-  title: "Releases del PURSUE / AARO — desclasificaciones UAP",
+  title: "PURSUE / AARO releases — UAP declassifications",
   description:
-    "Las entregas de archivos UAP desclasificados por el Department of War (PURSUE / AARO) y los casos del corpus UAP Codex que citan cada una.",
+    "The batches of UAP files declassified by the Department of War (PURSUE / AARO) and the UAP Codex cases that cite each one.",
   path: "/releases/",
 }),
   alternates: { canonical: "/releases/", languages: hreflangFor("/releases/") },

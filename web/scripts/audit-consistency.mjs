@@ -947,18 +947,18 @@ if (junkCaseFiles.length > 0) {
   );
 }
 
-// ─── 9n. RULE E23: integridad del espejo /en (ERROR) ─────────────────────
+// ─── 9n. RULE E23: integridad del espejo /es (ERROR) ─────────────────────
 //
-// El árbol inglés /en/ reutiliza los componentes ES y localiza los links con
+// El árbol español /es/ reutiliza los componentes ES y localiza los links con
 // el set MIRRORED de components/LocaleLink.tsx. Invariante: MIRRORED (menos la
-// home "") debe corresponder 1:1 con los directorios app/en/<seccion>/ con
-// page.tsx. Si driftan —una sección en MIRRORED sin página /en (sus links → 404)
-// o una página /en fuera de MIRRORED (sus links de contenido no se localizan y
-// se fugan al árbol ES)— la navegación inglesa se rompe en silencio. Barato y
+// home "") debe corresponder 1:1 con los directorios app/es/<seccion>/ con
+// page.tsx. Si driftan —una sección en MIRRORED sin página /es (sus links → 404)
+// o una página /es fuera de MIRRORED (sus links de contenido no se localizan y
+// se fugan a la raíz (inglés))— la navegación inglesa se rompe en silencio. Barato y
 // determinista (lectura + regex), sin node_modules. ERROR.
 const localeLinkPath = path.join(root, "components", "LocaleLink.tsx");
-const enDir = path.join(root, "app", "en");
-if (fs.existsSync(localeLinkPath) && fs.existsSync(enDir)) {
+const esDir = path.join(root, "app", "es");
+if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   const llSrc = fs.readFileSync(localeLinkPath, "utf-8");
   const m = llSrc.match(/const MIRRORED = new Set\(\[([\s\S]*?)\]\)/);
   if (!m) {
@@ -966,35 +966,35 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(enDir)) {
       "ERROR",
       localeLinkPath,
       0,
-      "E23 i18n: no se pudo parsear el set MIRRORED en LocaleLink.tsx — la sonda del espejo /en no puede verificar la integridad.",
+      "E23 i18n: no se pudo parsear el set MIRRORED en LocaleLink.tsx — la sonda del espejo /es no puede verificar la integridad.",
     );
   } else {
     const mirrored = new Set(
       [...m[1].matchAll(/"([^"]*)"/g)].map((x) => x[1]).filter((s) => s !== ""),
     );
-    const enSections = fs
-      .readdirSync(enDir, { withFileTypes: true })
+    const esSections = fs
+      .readdirSync(esDir, { withFileTypes: true })
       .filter(
-        (d) => d.isDirectory() && fs.existsSync(path.join(enDir, d.name, "page.tsx")),
+        (d) => d.isDirectory() && fs.existsSync(path.join(esDir, d.name, "page.tsx")),
       )
       .map((d) => d.name);
-    const enSet = new Set(enSections);
-    const inMirroredNoPage = [...mirrored].filter((s) => !enSet.has(s));
-    const pageNotMirrored = enSections.filter((s) => !mirrored.has(s));
+    const esSet = new Set(esSections);
+    const inMirroredNoPage = [...mirrored].filter((s) => !esSet.has(s));
+    const pageNotMirrored = esSections.filter((s) => !mirrored.has(s));
     if (inMirroredNoPage.length > 0) {
       record(
         "ERROR",
         localeLinkPath,
         0,
-        `E23 i18n: secciones en MIRRORED sin página app/en/<seccion>/page.tsx (sus links → /en/… → 404): ${inMirroredNoPage.join(", ")}`,
+        `E23 i18n: secciones en MIRRORED sin página app/es/<seccion>/page.tsx (sus links → /es/… → 404): ${inMirroredNoPage.join(", ")}`,
       );
     }
     if (pageNotMirrored.length > 0) {
       record(
         "ERROR",
-        enDir,
+        esDir,
         0,
-        `E23 i18n: páginas app/en/<seccion>/ ausentes de MIRRORED en LocaleLink.tsx (sus links de contenido no se localizan, se fugan al árbol ES): ${pageNotMirrored.join(", ")}`,
+        `E23 i18n: páginas app/es/<seccion>/ ausentes de MIRRORED en LocaleLink.tsx (sus links de contenido no se localizan, se fugan a la raíz (inglés)): ${pageNotMirrored.join(", ")}`,
       );
     }
   }

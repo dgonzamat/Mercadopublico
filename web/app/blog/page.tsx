@@ -7,9 +7,9 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-    title: "Blog — notas del cuaderno de investigación",
+    title: "Blog — research notebook notes",
     description:
-      "Notas de método, decisiones de análisis y avances del cuaderno de investigación UAP Codex.",
+      "Method notes, analytical decisions and progress from the UAP Codex research notebook.",
     path: "/blog/",
   }),
   alternates: {

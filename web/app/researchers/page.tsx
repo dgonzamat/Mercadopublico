@@ -13,9 +13,9 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-    title: "Actores del ecosistema de divulgación UAP",
+    title: "Actors of the UAP disclosure ecosystem",
     description:
-      "Investigadores, denunciantes, políticos, periodistas y figuras ontológico-religiosas que sostienen la divulgación UAP contemporánea.",
+      "Researchers, whistleblowers, politicians, journalists and ontological-religious figures who sustain contemporary UAP disclosure.",
     path: "/researchers/",
   }),
   alternates: {

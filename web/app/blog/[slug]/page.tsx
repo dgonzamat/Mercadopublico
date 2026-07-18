@@ -16,11 +16,11 @@ export function generateStaticParams() {
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
   const p = getPost(params.slug);
-  if (!p) return { title: "Post no encontrado" };
+  if (!p) return { title: "Post not found" };
   return {
     ...pageMeta({
-      title: p.title,
-      description: p.summary,
+      title: p.title_en ?? p.title,
+      description: p.summary_en ?? p.summary,
       path: `/blog/${p.id}/`,
     }),
     alternates: {

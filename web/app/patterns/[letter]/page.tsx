@@ -20,11 +20,11 @@ export async function generateMetadata(
 ) {
   const params = await props.params;
   const p = patterns.find((x) => x.letter === params.letter);
-  if (!p) return { title: "Patrón no encontrado" };
+  if (!p) return { title: "Pattern not found" };
   return {
     ...pageMeta({
-      title: `${p.id} ${p.name}`,
-      description: p.description,
+      title: `${p.id} ${p.name_en ?? p.name}`,
+      description: p.description_en ?? p.description,
       path: `/patterns/${p.letter}/`,
     }),
     alternates: {

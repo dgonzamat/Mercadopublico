@@ -16,8 +16,8 @@ import {
 
 export const metadata = {
   ...pageMeta({
-  title: "Resumen en 10 minutos",
-  description: `Versión accesible del análisis: ${STATS.years} años de fenómeno UAP institucional, ${STATS.cases} casos en ${STATS.countries} países, en 10 minutos de lectura.`,
+  title: "10-minute summary",
+  description: `The accessible version of the analysis: ${STATS.years} years of institutional UAP phenomenon, ${STATS.cases} cases across ${STATS.countries} countries, in a 10-minute read.`,
   path: "/resumen/",
 }),
   alternates: { canonical: "/resumen/", languages: hreflangFor("/resumen/") },

@@ -6,8 +6,8 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-  title: "Cobertura del corpus · país × década",
-  description: `Matriz de cobertura de los ${STATS.cases} casos institucionales UAP por país y década — dónde el corpus es denso y dónde está flaco.`,
+  title: "Corpus coverage · country × decade",
+  description: `Coverage matrix of the ${STATS.cases} institutional UAP cases by country and decade — where the corpus is dense and where it is thin.`,
   path: "/cobertura/",
 }),
   alternates: { canonical: "/cobertura/", languages: hreflangFor("/cobertura/") },
