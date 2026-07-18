@@ -723,6 +723,43 @@ for (const f of [
   });
 }
 
+// 18d — la superficie del explorer (BI cliente) no debe importar el corpus
+// completo. `lib/data` y `lib/meceModel` (que hace `import { cases } from
+// "./data"`) arrastran los ~4 MB de cases.json; embutirlos en el chunk del
+// laboratorio es el anti-pattern del LCP (CLAUDE.md). El explorer debe usar el
+// slim `lib/dataClient` (permitido) y, para etiquetas MECE, `lib/meceClasses`
+// (data-free). Blinda el diseño del PR #636. La `["']` de cierre tras el
+// especificador evita falsos positivos con `dataClient`/`meceClasses`.
+const CORPUS_IMPORT = /\b(?:import|export)\b[^\n]*\bfrom\s+["'](?:@\/lib\/|\.\.?\/)(data|meceModel)["']/;
+for (const f of [
+  ...walk(path.join(root, "lib", "explorer"), [".ts", ".tsx"]),
+  ...walk(path.join(root, "components", "explorer"), [".ts", ".tsx"]),
+]) {
+  fs.readFileSync(f, "utf-8").split("\n").forEach((ln, i) => {
+    const m = ln.match(CORPUS_IMPORT);
+    if (m && !ln.trimStart().startsWith("//")) {
+      record("ERROR", f, i + 1, `E18d: ${path.relative(root, f)} importa lib/${m[1]} — el explorer es alcanzable por un client component; esto embutiría el corpus completo en el chunk del laboratorio (LCP killer). Usa lib/dataClient (slim) o lib/meceClasses (data-free).`);
+    }
+  });
+}
+
+// 18d-bis — `lib/meceClasses.ts` debe permanecer DATA-FREE (importar solo tipos)
+// para que el explorer cliente lo consuma sin arrastrar el corpus. Es la válvula
+// del PR #636: si alguien le agrega un import de datos, el blindaje 18d se rompe
+// en silencio. Permitido: `./types` / `@/lib/types` (y cualquier `import type`).
+const meceClassesPath = path.join(root, "lib", "meceClasses.ts");
+if (fs.existsSync(meceClassesPath)) {
+  fs.readFileSync(meceClassesPath, "utf-8").split("\n").forEach((ln, i) => {
+    const t = ln.trimStart();
+    if (!/^(import|export)\b/.test(t)) return; // ignora comentarios/JSDoc y prosa
+    if (/^import\s+type\b/.test(t)) return; // los type-only imports se borran en build
+    const imp = t.match(/\bfrom\s+["']([^"']+)["']/);
+    if (imp && !/^(\.\/types|@\/lib\/types)$/.test(imp[1])) {
+      record("ERROR", meceClassesPath, i + 1, `E18d: lib/meceClasses.ts importa valores de "${imp[1]}" — debe quedar data-free (solo tipos) para que el explorer cliente lo use sin arrastrar lib/data (anti-pattern del LCP). Mueve la lógica con dependencias de datos a lib/meceModel.`);
+    }
+  });
+}
+
 // ─── 9j-ter. RULE E19: guardrails del módulo de tracking (ERROR) ────────────
 //
 // Blinda las lecciones del blindaje anti-bot del contador (jul 2026, PRs
