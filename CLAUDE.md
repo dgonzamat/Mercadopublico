@@ -92,7 +92,14 @@ web/
     audit-consistency.mjs # corre en prebuild; verifica % editoriales vs priors
     audit-design.mjs      # corre en prebuild; contraste WCAG AA + drift de color de tier + touch targets
     validate-schema.mjs   # corre en prebuild; valida schema de cases/researchers
+    qa-screenshots.mjs    # sonda de QA VISUAL (on-demand: npm run qa:shots) — renderiza pixeles
 ```
+
+### Sonda de QA visual (`qa-screenshots.mjs` · `npm run qa:shots`)
+
+Las tres sondas de prebuild (`audit-consistency`, `audit-design`, `validate-schema`) son **node-plain sin `node_modules`** y revisan datos/schema/tokens, pero **nunca renderizan un pixel**. Esta sonda cierra esa brecha: construye no, pero **fotografía el sitio ya construido** (`out/`) con Chromium headless vía CDP, para revisión visual o para acompañar un PR de UI/UX. Por eso es **on-demand, no un gate del prebuild**: requiere `out/` (`npm run build` antes) + Chromium (`PLAYWRIGHT_BROWSERS_PATH`, ya en el entorno), que las node-plain deliberadamente evitan. Salida a `web/qa-shots/` (gitignored). Manifiesto de vistas extensible dentro del script; foco por `phrase`/`selector` o página completa; ad-hoc con `--route`/`--phrase`.
+
+**Gotchas del harness (aprendidos fotografiando el visor de referencias, jul 2026), ya codificados en el script**: (1) **JS deshabilitado por defecto** → layout ESTÁTICO — los visores PDF (`react-pdf`, `ssr:false`) no cargan ni desplazan la página tras medir, y el HTML server-rendered (prosa, enlaces ↗, donut SSR) se ve completo; usar `js:true` por vista solo si se necesita interactividad. (2) El DOM trae **ES+EN a la vez** (el CSS oculta uno) — al enfocar un elemento hay que tomar el VISIBLE (`rect.height > 0`), no el del idioma oculto. (3) Clip con **coords ABSOLUTAS de página + `captureBeyondViewport`** (no `scrollIntoView` + coords de viewport, que se pelean con el clip y dan capturas en blanco). (4) El `basePath /Mercadopublico` rompe `file://`; el script sirve `out/` por http para que `/_next` resuelva.
 
 ## Workflow de datos para casos
 
