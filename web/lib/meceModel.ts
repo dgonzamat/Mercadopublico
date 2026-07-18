@@ -59,36 +59,15 @@ export const INDET_COLOR = "#8a8172";
 
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
-/** Sub-tipos de mundano/natural, promovidos a hipótesis de primer nivel.
- *  (Colores viven en lib, no en app/components → fuera del scan de audit-design.) */
-export const MUNDANO_SUBTYPES: ReadonlyArray<{
-  key: "misid" | "natural" | "fraude";
-  label: string;
-  labelEn: string;
-  color: string;
-}> = [
-  { key: "misid", label: "Misidentificación", labelEn: "Misidentification", color: "#5a6b7a" },
-  { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
-  { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
-];
-
-/** Subtipos de «Misidentificación» (drill-down, capa 2): con qué objeto conocido
- *  se confundió. MECE dentro de misid. Colores en lib → fuera del scan D3.
- *  Rampa afín al azul-acero de misid (#5a6b7a) para leerse como sub-partición. */
-export const MISID_SUBTYPES: ReadonlyArray<{
-  key: "astronomico" | "aeronave" | "espacial" | "terrestre_otros";
-  label: string;
-  labelEn: string;
-  color: string;
-}> = [
-  { key: "astronomico", label: "Astronómico", labelEn: "Astronomical", color: "#5f7d94" },
-  { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#6b8ea3" },
-  { key: "espacial", label: "Espacial (satélite/reentrada)", labelEn: "Space (satellite/reentry)", color: "#4d6475" },
-  // El bucket mayoritario: casos misid cuyo texto no fija un objeto concreto
-  // (luz difusa, faro/bengala, o explicación prosaica no determinada). Etiqueta
-  // honesta —no un «otros» que finja precisión que no hay.
-  { key: "terrestre_otros", label: "Sin objeto único identificado", labelEn: "No single object identified", color: "#8a8172" },
-];
+// MUNDANO_SUBTYPES / MISID_SUBTYPES viven en `./meceClasses` (data-free) para
+// que el explorer cliente los use como dimensiones sin arrastrar el corpus. Se
+// re-exportan aquí para no romper a sus consumidores (MeceChart, /cases,
+// /probabilidades).
+export { MUNDANO_SUBTYPES, MISID_SUBTYPES } from "./meceClasses";
+// `MUNDANO_SUBTYPES` se usa localmente (expandedHypotheses) → import local
+// además del re-export (el re-export no crea binding). `MISID_SUBTYPES` solo se
+// re-exporta (no se usa aquí), así que no se importa para no gatillar noUnusedLocals.
+import { MUNDANO_SUBTYPES } from "./meceClasses";
 
 export function emptyPosterior(): Posterior {
   return {

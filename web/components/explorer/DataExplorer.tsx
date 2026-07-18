@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { casesClient as cases } from "@/lib/dataClient";
 import type { UAPCase } from "@/lib/types";
+// meceClasses es data-free (E18d) — seguro de importar en el explorer cliente.
+import { MECE_CLASSES, dominantNarrativeLabel } from "@/lib/meceClasses";
 import { T } from "@/components/T";
 import {
   applyFilters,
@@ -105,10 +107,21 @@ export default function DataExplorer() {
       .sort((a, b) => a.localeCompare(b));
     const categories = Array.from(new Set(cases.map((c) => c.category))) as UAPCase["category"][];
     const years = cases.map((c) => c.year_start);
+    // Narrativas MECE presentes en el corpus, en el orden canónico de MECE_CLASSES
+    // (no alfabético). Solo incidentes con posterior participan de la partición.
+    const narrPresent = new Set(
+      cases
+        .filter((c) => c.category !== "document" && c.posterior)
+        .map((c) => dominantNarrativeLabel(c.posterior!)),
+    );
+    const narrativas = MECE_CLASSES.map((m) => m.label).filter((l) =>
+      narrPresent.has(l),
+    );
     return {
       tiers: ["S", "A", "B"],
       categories,
       countries,
+      narrativas,
       yearMin: Math.min(...years),
       yearMax: Math.max(...years),
     };

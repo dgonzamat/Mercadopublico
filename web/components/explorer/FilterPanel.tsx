@@ -14,6 +14,7 @@ export interface FacetOptions {
   tiers: string[];
   categories: UAPCase["category"][];
   countries: string[];
+  narrativas: string[];
   yearMin: number;
   yearMax: number;
 }
@@ -35,7 +36,7 @@ export function FilterPanel({
 }) {
   const [countryQuery, setCountryQuery] = useState("");
 
-  const toggle = <K extends "tiers" | "categories" | "countries">(
+  const toggle = <K extends "tiers" | "categories" | "countries" | "narrativas">(
     key: K,
     value: string,
   ) => {
@@ -105,6 +106,26 @@ export function FilterPanel({
           ))}
         </div>
       </FilterGroup>
+
+      {/* NARRATIVE (MECE dominante) — solo si hay opciones (no documentos) */}
+      {options.narrativas.length > 0 && (
+        <FilterGroup
+          label={{ es: "Narrativa MECE", en: "MECE narrative" }}
+          locale={locale}
+        >
+          <div className="flex flex-wrap gap-2">
+            {options.narrativas.map((n) => (
+              <Chip
+                key={n}
+                active={filters.narrativas.includes(n)}
+                onClick={() => toggle("narrativas", n)}
+              >
+                {n}
+              </Chip>
+            ))}
+          </div>
+        </FilterGroup>
+      )}
 
       {/* YEAR RANGE */}
       <FilterGroup label={{ es: "Rango de años", en: "Year range" }} locale={locale}>
