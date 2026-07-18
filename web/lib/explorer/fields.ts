@@ -1,4 +1,12 @@
 import type { UAPCase } from "@/lib/types";
+import { MECE_CLASSES, dominantNarrative } from "@/lib/meceClasses";
+
+// Etiquetas MECE por id. Importadas de `lib/meceClasses` (data-free) — NO de
+// `lib/meceModel`, que importa el corpus completo y lo embutiría en el chunk
+// cliente del explorer (anti-pattern del LCP, ver CLAUDE.md).
+const MECE_LABEL_BY_ID = Object.fromEntries(
+  MECE_CLASSES.map((c) => [c.id, c.label]),
+) as Record<(typeof MECE_CLASSES)[number]["id"], string>;
 
 /**
  * Metadatos de los campos del corpus que el explorador BI puede usar como
@@ -76,6 +84,18 @@ export const DIMENSIONS: DimensionDef[] = [
     key: "patterns",
     label: { es: "Patrón", en: "Pattern" },
     values: (c) => (c.patterns?.length ? c.patterns : ["—"]),
+  },
+  {
+    key: "narrativa",
+    label: { es: "Narrativa MECE (dominante)", en: "MECE narrative (dominant)" },
+    // Narrativa más probable del posterior (argmax). Los documentos no llevan
+    // posterior (la partición «qué era el objeto» no les aplica) → "—", como la
+    // convención de `patterns` vacío (kpiDistinct la ignora). Etiqueta en ES
+    // igual que la dimensión `category`: el laboratorio es solo-ES (no /en).
+    values: (c) =>
+      c.category === "document" || !c.posterior
+        ? ["—"]
+        : [MECE_LABEL_BY_ID[dominantNarrative(c.posterior)]],
   },
 ];
 
