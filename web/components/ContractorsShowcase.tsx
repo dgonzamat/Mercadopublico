@@ -3,6 +3,7 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { getCase } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { T } from "@/components/T";
+import { countryEn } from "@/lib/i18n-geo";
 
 /**
  * Showcase de la capa de contratistas / FFRDCs del fenómeno — las empresas e
@@ -49,7 +50,8 @@ export function ContractorsShowcase() {
                 <h3 className="text-sm font-medium text-text">{c.name}</h3>
               </div>
               <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
-                {c.country_name} · {c.year_start}
+                <T es={c.country_name} en={countryEn(c.country_name)} /> ·{" "}
+                {c.year_start}
               </p>
               {people.length > 0 && (
                 <p className="mt-2 text-xs text-muted">

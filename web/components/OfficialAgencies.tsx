@@ -3,6 +3,7 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { getCase } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { T } from "@/components/T";
+import { countryEn } from "@/lib/i18n-geo";
 
 /**
  * Showcase de las oficinas oficiales del fenómeno (los Estados que crearon una
@@ -50,7 +51,8 @@ export function OfficialAgencies() {
                 <h3 className="text-sm font-medium text-text">{a.name}</h3>
               </div>
               <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
-                {a.country_name} · {a.year_start}
+                <T es={a.country_name} en={countryEn(a.country_name)} /> ·{" "}
+                {a.year_start}
               </p>
               {dirs.length > 0 && (
                 <p className="mt-2 text-xs text-muted">

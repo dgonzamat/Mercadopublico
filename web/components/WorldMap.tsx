@@ -11,6 +11,7 @@ import {
 import "leaflet/dist/leaflet.css";
 import { casesClient as cases } from "@/lib/dataClient";
 import { T } from "@/components/T";
+import { countryEn } from "@/lib/i18n-geo";
 
 type Tier = "S" | "A" | "B";
 
@@ -190,8 +191,8 @@ export default function WorldMap({
                 <div style={{ fontFamily: "monospace", fontSize: 12 }}>
                   <strong>{c.name}</strong>
                   <br />
-                  {c.country_name} · {c.year_start} · Tier {c.tier} ·{" "}
-                  {c.probability}%
+                  <T es={c.country_name} en={countryEn(c.country_name)} /> ·{" "}
+                  {c.year_start} · Tier {c.tier} · {c.probability}%
                 </div>
               </Tooltip>
             </CircleMarker>
