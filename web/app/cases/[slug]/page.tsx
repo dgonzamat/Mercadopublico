@@ -193,16 +193,21 @@ export default async function CaseDetailPage(
     : "font-display text-xl leading-snug text-text md:text-2xl";
 
   // El summary es el LEDE (display prominente), pero ~46% de los casos lo tienen
-  // largo (>500 chars) y en text-3xl se vuelve un muro que ocupa media primera
-  // pantalla. Es el MISMO problema que whyMatters ya resolvía con un guard de
-  // longitud — olvidado en el summary, que además se renderiza aún más grande.
-  // Para los largos se baja UN paso de display (no a cuerpo): conserva la voz de
-  // lede sin saturar. Umbral por el idioma más largo (el DOM sirve ES+EN).
-  const summaryLong =
-    Math.max((c.summary ?? "").length, (c.summary_en ?? "").length) > 500;
-  const summaryClass = summaryLong
-    ? "font-display text-xl leading-snug text-text md:text-2xl"
-    : "font-display text-2xl leading-snug text-text md:text-3xl";
+  // largo y en text-3xl se vuelve un muro que ocupa media primera pantalla. Es el
+  // MISMO problema que whyMatters ya resolvía con un guard de longitud — olvidado
+  // en el summary, que además se renderiza aún más grande. Dos umbrales (por el
+  // idioma más largo, el DOM sirve ES+EN): >800 chars → cuerpo legible (idéntico a
+  // whyMattersLong, para el ~10% extremo que ni a text-2xl deja de saturar);
+  // 500-800 → un paso menor de display (conserva la voz de lede); corto → display
+  // prominente.
+  const summaryLen =
+    Math.max((c.summary ?? "").length, (c.summary_en ?? "").length);
+  const summaryClass =
+    summaryLen > 800
+      ? "text-lg leading-relaxed text-text md:text-xl"
+      : summaryLen > 500
+        ? "font-display text-xl leading-snug text-text md:text-2xl"
+        : "font-display text-2xl leading-snug text-text md:text-3xl";
 
   // CD-2 · numeración de partes secuencial y honesta. Antes "Parte 01/02/03"
   // estaban hard-codeadas: un caso sin `whatHappened` saltaba a "Parte 02" o
