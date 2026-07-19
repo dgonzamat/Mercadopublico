@@ -52,11 +52,13 @@
     },
     {
       "name": "US Customs and Border Protection FLIR — video archive",
-      "note": "Material primario filtrado 2015"
+      "note": "Material primario filtrado 2015",
+      "note_en": "Primary material leaked 2015"
     },
     {
       "name": "Knuth, K. — JSE 2019 'Estimating Flight Characteristics of UAP'",
-      "note": "Análisis físico complementario"
+      "note": "Análisis físico complementario",
+      "note_en": "Complementary physical analysis"
     }
   ],
   "sources_en": [

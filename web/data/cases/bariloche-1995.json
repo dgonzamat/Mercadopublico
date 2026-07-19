@@ -44,11 +44,13 @@
     {
       "name": "CEFAe — Informe del Caso Bariloche (Fuerza Aérea Argentina)",
       "url": "https://www.argentina.gob.ar/fuerza-aerea/cefae",
-      "note": "Oficina oficial de estudios aeroespaciales"
+      "note": "Oficina oficial de estudios aeroespaciales",
+      "note_en": "Official aerospace-studies office"
     },
     {
       "name": "Banchs, R. — El caso Bariloche (Ediciones B, 1996)",
-      "note": "Investigación civil contemporánea"
+      "note": "Investigación civil contemporánea",
+      "note_en": "Contemporary civilian investigation"
     },
     {
       "name": "Cobertura La Nación, agosto 1995",

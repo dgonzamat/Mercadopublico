@@ -46,15 +46,18 @@
     {
       "name": "Belgian Air Force Official Report (1990)",
       "url": "https://www.sobeps.org/",
-      "note": "SOBEPS publicó documentación primaria"
+      "note": "SOBEPS publicó documentación primaria",
+      "note_en": "SOBEPS published primary documentation"
     },
     {
       "name": "De Brouwer, W. — UFOs: Generals, Pilots and Government Officials Go on the Record (2010)",
-      "note": "Capítulo dedicado por el General"
+      "note": "Capítulo dedicado por el General",
+      "note_en": "Chapter dedicated by the General"
     },
     {
       "name": "Meessen, A. — 'Analysis of the Belgian Radar Data' (1992)",
-      "note": "Análisis técnico independiente"
+      "note": "Análisis técnico independiente",
+      "note_en": "Independent technical analysis"
     }
   ],
   "sources_en": [

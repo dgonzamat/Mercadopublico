@@ -49,15 +49,18 @@
   "sources": [
     {
       "name": "Mensajes del Combat Operations Center de NORAD, oct.-nov. 1975",
-      "note": "Registran la oleada del Northern Tier sobre bases nucleares y el evento de Falconbridge con hora y altitud"
+      "note": "Registran la oleada del Northern Tier sobre bases nucleares y el evento de Falconbridge con hora y altitud",
+      "note_en": "Document the Northern Tier wave over nuclear bases and the Falconbridge event with time and altitude"
     },
     {
       "name": "Palmiro Campagna — documentación del DND canadiense sobre Falconbridge 1975",
-      "note": "Recuperación vía acceso a documentos de los mensajes militares que fijan la secuencia"
+      "note": "Recuperación vía acceso a documentos de los mensajes militares que fijan la secuencia",
+      "note_en": "Recovery, via document access, of the military messages that fix the sequence"
     },
     {
       "name": "Comunicado de prensa de NORAD sobre el incidente de Falconbridge (11 de noviembre de 1975)",
-      "note": "Incluye la explicación por Júpiter / fenómenos atmosféricos"
+      "note": "Incluye la explicación por Júpiter / fenómenos atmosféricos",
+      "note_en": "Includes the Jupiter / atmospheric-phenomena explanation"
     }
   ],
   "posterior": {

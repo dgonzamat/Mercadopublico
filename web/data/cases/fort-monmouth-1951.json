@@ -46,15 +46,18 @@
   "sources": [
     {
       "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
-      "note": "Relato del caso por el primer jefe de Blue Book y de su papel en la reorganización de Grudge"
+      "note": "Relato del caso por el primer jefe de Blue Book y de su papel en la reorganización de Grudge",
+      "note_en": "Account of the case by the first head of Blue Book and of its role in the Grudge reorganization"
     },
     {
       "name": "Expediente de Project Grudge/Blue Book — Fort Monmouth, 10-11 de septiembre de 1951 (NARA)",
-      "note": "Reportes de radar del Signal Corps, observación del T-33 y evaluación por globos"
+      "note": "Reportes de radar del Signal Corps, observación del T-33 y evaluación por globos",
+      "note_en": "Signal Corps radar reports, T-33 observation and balloon assessment"
     },
     {
       "name": "NICAP — cronología de Project Blue Book 1951-1969",
-      "note": "Contextualiza Fort Monmouth como detonante de la reconstitución del programa"
+      "note": "Contextualiza Fort Monmouth como detonante de la reconstitución del programa",
+      "note_en": "Contextualizes Fort Monmouth as the trigger for the program's reconstitution"
     }
   ],
   "posterior": {

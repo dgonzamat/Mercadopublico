@@ -49,15 +49,18 @@
   "sources": [
     {
       "name": "Center for UFO Studies (CUFOS) — informe del Triángulo de St. Clair, David Marler",
-      "note": "Reconstrucción detallada con entrevistas a los oficiales y los registros de despacho"
+      "note": "Reconstrucción detallada con entrevistas a los oficiales y los registros de despacho",
+      "note_en": "Detailed reconstruction with interviews of the officers and the dispatch records"
     },
     {
       "name": "Registros de despacho de las policías de Lebanon, Shiloh, Millstadt y Dupo (5 de enero de 2000)",
-      "note": "Audios y reportes con marca horaria que fijan la secuencia del seguimiento"
+      "note": "Audios y reportes con marca horaria que fijan la secuencia del seguimiento",
+      "note_en": "Time-stamped audio and reports that fix the sequence of the tracking"
     },
     {
       "name": "Declaraciones de Scott Air Force Base sobre el incidente",
-      "note": "La base negó contacto de radar y vuelos que explicaran el avistamiento"
+      "note": "La base negó contacto de radar y vuelos que explicaran el avistamiento",
+      "note_en": "The base denied radar contact and flights that would explain the sighting"
     }
   ],
   "posterior": {

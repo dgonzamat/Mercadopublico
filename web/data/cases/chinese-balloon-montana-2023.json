@@ -53,34 +53,39 @@
     {
       "name": "U.S. Department of Defense — Press Briefing 4 feb 2023 (Sec. Lloyd Austin + Gen. Mark Milley)",
       "url": "https://www.defense.gov/News/Releases/Release/Article/3287204/",
-      "note": "Confirmación oficial del derribo y origen chino."
+      "note": "Confirmación oficial del derribo y origen chino.",
+      "note_en": "Official confirmation of the shootdown and Chinese origin."
     },
     {
       "name": "FBI Laboratory — Analysis of recovered balloon components (Quantico, 2023)",
-      "note": "Análisis primario de restos."
+      "note": "Análisis primario de restos.",
+      "note_en": "Primary analysis of the debris."
     },
     {
       "name": "AARO — Historical UAP series reclassification post-Feb 2023",
       "url": "https://www.aaro.mil/",
-      "note": "Reconocimiento retroactivo de globos chinos previos categorizados como UAP."
+      "note": "Reconocimiento retroactivo de globos chinos previos categorizados como UAP.",
+      "note_en": "Retroactive acknowledgment of prior Chinese balloons categorized as UAP."
     },
     {
       "name": "CRS Report R47457 — 'High-Altitude Surveillance Balloons: What's Going Up?' (Congressional Research Service, 2023)",
       "url": "https://crsreports.congress.gov/product/pdf/R/R47457",
-      "note": "Análisis legislativo del incidente y su contexto."
+      "note": "Análisis legislativo del incidente y su contexto.",
+      "note_en": "Legislative analysis of the incident and its context."
     },
     {
       "name": "NYT — 'How a Chinese Spy Balloon Blew Past the Pentagon' (Cooper, Barnes, 2023)",
       "url": "https://www.nytimes.com/2023/02/05/us/politics/chinese-spy-balloon.html",
-      "note": "Investigación periodística sobre la cadena de decisión."
+      "note": "Investigación periodística sobre la cadena de decisión.",
+      "note_en": "Journalistic investigation into the decision chain."
     }
   ],
   "posterior": {
     "mundano_natural": 0.04,
     "humana_clasificada": 0.02,
     "adversaria": 0.92,
-    "nohumano_encubierto": 0.0,
-    "nohumano_abierto": 0.0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
     "indet": 0.02
   },
   "primaryDocument": {

@@ -64,50 +64,60 @@
     },
     {
       "name": "Gevaerd, A.J. & Stevens, W. — UFO Crash at Varginha (1998)",
-      "note": "Reconstrucción detallada"
+      "note": "Reconstrucción detallada",
+      "note_en": "Detailed reconstruction"
     },
     {
       "name": "Friedman, S. — TOP SECRET/MAJIC 2nd ed. (2005)",
-      "note": "Capítulo Varginha"
+      "note": "Capítulo Varginha",
+      "note_en": "Varginha chapter"
     },
     {
       "name": "Kean, L. & Blumenthal, R. — 'Landmark Brazilian UFO Case Reaches Capitol Hill as Varginha Incident Turns 30' (The Debrief, ene 2026)",
       "url": "https://thedebrief.org/landmark-brazilian-ufo-case-reaches-capitol-hill-as-varginha-incident-turns-30/",
-      "note": "Sesión Longworth 15 ene 2026 con neurocirujano brasileño + tres congressistas."
+      "note": "Sesión Longworth 15 ene 2026 con neurocirujano brasileño + tres congressistas.",
+      "note_en": "Longworth session, Jan 15, 2026, with Brazilian neurosurgeon + three members of Congress."
     },
     {
       "name": "FanBolt — 'Inside James Fox's Landmark National Press Club UAP Event' (ene 2026)",
       "url": "https://www.fanbolt.com/166350/inside-james-foxs-landmark-national-press-club-uap-event-and-how-it-changes-moment-of-contact/",
-      "note": "Press conference NPC 20 ene 2026, afirmaciones sobre múltiples entidades y tejido de Cherese."
+      "note": "Press conference NPC 20 ene 2026, afirmaciones sobre múltiples entidades y tejido de Cherese.",
+      "note_en": "NPC press conference, Jan 20, 2026, claims about multiple entities and Cherese's tissue."
     },
     {
       "name": "NewsNation — 'Varginha UFO crash: Witnesses share testimony of crash, non-human encounter' (ene 2026)",
       "url": "https://www.newsnationnow.com/space/ufo/ufo-conference-new-evidence-james-fox/",
-      "note": "Cobertura del press conference 30 aniversario."
+      "note": "Cobertura del press conference 30 aniversario.",
+      "note_en": "Coverage of the 30th-anniversary press conference."
     },
     {
       "name": "Sociedade Militar — 'Secret files in Brazil: Former Defense Minister Aldo Rebelo' (feb 2026)",
       "url": "https://en.sociedademilitar.com.br/2026/02/arquivos-secretos-no-brasil-ex-ministro-da-defesa-diz-saber-o-que-os-militares-escondem-sobre-ovnis-e-promete-revelar-tudo-em-2026-afch.html",
-      "note": "Declaración condicional del ex-Ministro de Defensa brasileño."
+      "note": "Declaración condicional del ex-Ministro de Defensa brasileño.",
+      "note_en": "Conditional statement by the former Brazilian Defense Minister."
     },
     {
       "name": "Unidentified Phenomena — 'Capitol Press Conference: Grusch and Lawmakers Demand Disclosure' (9 jun 2026)",
       "url": "https://unidentifiedphenomena.com/topics/capitol-press-conference-grusch-and-lawmakers-demand-disclosure/",
-      "note": "Llamado bipartidista a desclasificar records de Varginha; hipótesis de transferencia a EE.UU."
+      "note": "Llamado bipartidista a desclasificar records de Varginha; hipótesis de transferencia a EE.UU.",
+      "note_en": "Bipartisan call to declassify Varginha records; hypothesis of transfer to the U.S."
     },
     {
       "name": "Fliegerfaust — 'Varginha UFO press conference: Fox witnesses vs Brazil files'",
       "url": "https://www.fliegerfaust.com/varginha-ufo-press-conference-brazil-files/",
-      "note": "Análisis comparado entre testigos Fox/Kean y posición institucional brasileña."
+      "note": "Análisis comparado entre testigos Fox/Kean y posición institucional brasileña.",
+      "note_en": "Comparative analysis of the Fox/Kean witnesses and the Brazilian institutional position."
     },
     {
       "name": "IBTimes UK — 'Aldo Rebelo Says He Knows What's Inside US UFO Files, Vows Brazil Reveal if Elected President'",
       "url": "https://www.ibtimes.co.uk/brazilian-candidate-ufo-file-disclosure-1781476",
-      "note": "Declaración condicional Rebelo + contexto de la candidatura presidencial 2026 (descartada en mayo 2026)."
+      "note": "Declaración condicional Rebelo + contexto de la candidatura presidencial 2026 (descartada en mayo 2026).",
+      "note_en": "Rebelo's conditional statement + context of the 2026 presidential candidacy (dropped in May 2026)."
     },
     {
       "name": "Rep. Eric Burlison → CIA Director John Ratcliffe — carta de supervisión sobre la FOIA F-2023-00442 (Varginha), 7 jul 2026",
-      "note": "Exige la producción al Congreso de los records de vuelos y transferencia de material EE.UU.–Brasil (ene 1996); adjunta la respuesta Glomar de la CIA (10 ene 2025). Documento embebido en el visor del caso (dominio público, US Government work)."
+      "note": "Exige la producción al Congreso de los records de vuelos y transferencia de material EE.UU.–Brasil (ene 1996); adjunta la respuesta Glomar de la CIA (10 ene 2025). Documento embebido en el visor del caso (dominio público, US Government work).",
+      "note_en": "Demands congressional production of the records of U.S.–Brazil flights and material transfer (Jan 1996); attaches the CIA's Glomar response (Jan 10, 2025). Document embedded in the case viewer (public domain, US Government work)."
     }
   ],
   "documents": [

@@ -46,19 +46,23 @@
   "sources": [
     {
       "name": "Cintas de comunicaciones de Edwards AFB, 7 de octubre de 1965",
-      "note": "Audio operacional del evento, liberado y difundido públicamente en los años noventa (edición documental de Sam Sherman)"
+      "note": "Audio operacional del evento, liberado y difundido públicamente en los años noventa (edición documental de Sam Sherman)",
+      "note_en": "Operational audio of the event, released and publicly disseminated in the 1990s (documentary edit by Sam Sherman)"
     },
     {
       "name": "Expediente de Project Blue Book — Edwards AFB, octubre de 1965 (NARA)",
-      "note": "Investigación oficial y cierre como «estrellas»"
+      "note": "Investigación oficial y cierre como «estrellas»",
+      "note_en": "Official investigation and closure as «stars»"
     },
     {
       "name": "Entrevistas posteriores a Charles Sorrels",
-      "note": "El controlador principal ratificó la observación en documentales, consistente con su voz en las cintas"
+      "note": "El controlador principal ratificó la observación en documentales, consistente con su voz en las cintas",
+      "note_en": "The lead controller confirmed the observation in documentaries, consistent with his voice on the tapes"
     },
     {
       "name": "NICAP — expediente Edwards AFB 1965",
-      "note": "Compilación documental del caso y análisis del audio"
+      "note": "Compilación documental del caso y análisis del audio",
+      "note_en": "Documentary compilation of the case and analysis of the audio"
     }
   ],
   "posterior": {

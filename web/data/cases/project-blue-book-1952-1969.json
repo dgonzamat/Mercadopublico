@@ -66,33 +66,40 @@
     {
       "name": "National Archives — Project Blue Book records (NARA Record Group 341)",
       "url": "https://www.archives.gov/research/military/air-force/ufos",
-      "note": "Archivo nacional oficial del programa; ~12,618 reportes."
+      "note": "Archivo nacional oficial del programa; ~12,618 reportes.",
+      "note_en": "Official national archive of the program; ~12,618 reports."
     },
     {
       "name": "The Black Vault — Project Blue Book Collection (John Greenewald)",
       "url": "https://www.theblackvault.com/documentarchive/project-bluebook-collection/",
-      "note": "Digitalización pública del archivo NARA."
+      "note": "Digitalización pública del archivo NARA.",
+      "note_en": "Public digitization of the NARA archive."
     },
     {
       "name": "Condon, E. U. (ed.) — 'Scientific Study of Unidentified Flying Objects' (Colorado Project, 1968)",
       "url": "https://files.ncas.org/condon/",
-      "note": "Reporte académico que justificó el cierre de Blue Book."
+      "note": "Reporte académico que justificó el cierre de Blue Book.",
+      "note_en": "Academic report that justified the closure of Blue Book."
     },
     {
       "name": "Battelle Memorial Institute — Project Blue Book Special Report No. 14 (1955)",
-      "note": "Análisis estadístico de 3,201 reportes; base cuantitativa del programa. Caso 110 del corpus."
+      "note": "Análisis estadístico de 3,201 reportes; base cuantitativa del programa. Caso 110 del corpus.",
+      "note_en": "Statistical analysis of 3,201 reports; the program's quantitative base."
     },
     {
       "name": "Ruppelt, E. J. — 'The Report on Unidentified Flying Objects' (1956)",
-      "note": "Testimonio interno del primer director del programa."
+      "note": "Testimonio interno del primer director del programa.",
+      "note_en": "Internal testimony of the program's first director."
     },
     {
       "name": "Hynek, J. A. — 'The UFO Experience: A Scientific Inquiry' (1972)",
-      "note": "Reporte del consultor científico oficial tras dejar el programa."
+      "note": "Reporte del consultor científico oficial tras dejar el programa.",
+      "note_en": "Report by the official scientific consultant after leaving the program."
     },
     {
       "name": "USAF — «Correspondence Relating to Project Blue Book» (1955)",
-      "note": "Correspondencia interna del programa Blue Book. AARO UAP Records, release 04 (DOWUAPD096)."
+      "note": "Correspondencia interna del programa Blue Book. AARO UAP Records, release 04 (DOWUAPD096).",
+      "note_en": "Internal correspondence of the Blue Book program. AARO UAP Records, release 04 (DOWUAPD096)."
     }
   ],
   "primaryDocument": {

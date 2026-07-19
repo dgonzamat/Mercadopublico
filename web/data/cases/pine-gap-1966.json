@@ -57,26 +57,31 @@
   "sources": [
     {
       "name": "Pine Gap Treaty 1966 — Australia/United States bilateral agreement (texto en archivos federales)",
-      "note": "Documento fundacional del Joint Defence Facility."
+      "note": "Documento fundacional del Joint Defence Facility.",
+      "note_en": "Founding document of the Joint Defence Facility."
     },
     {
       "name": "Snowden, E. — NSA documents declassified 2013–2014 (vía The Guardian, Der Spiegel)",
-      "note": "Confirmación pública del rol SIGINT de Pine Gap en la red 5-Eyes."
+      "note": "Confirmación pública del rol SIGINT de Pine Gap en la red 5-Eyes.",
+      "note_en": "Public confirmation of Pine Gap's SIGINT role in the Five Eyes network."
     },
     {
       "name": "Coulthart, R. — investigación periodística sobre Pine Gap (multiple outlets australianos)",
       "url": "https://www.youtube.com/watch?v=X00YorMUaic",
-      "note": "Reporte sostenido sobre incidentes UAP asociados a la base."
+      "note": "Reporte sostenido sobre incidentes UAP asociados a la base.",
+      "note_en": "Sustained reporting on UAP incidents associated with the base."
     },
     {
       "name": "UFO Research Queensland — Pine Gap case file",
       "url": "https://uforq.org/pine-gap/",
-      "note": "Archivo de incidentes en la región."
+      "note": "Archivo de incidentes en la región.",
+      "note_en": "Archive of incidents in the region."
     },
     {
       "name": "Australian Geographic — 'Wycliffe Well: Australia's outback UFO hotspot' (jun 2025)",
       "url": "https://www.australiangeographic.com.au/blogs/tim-the-yowie-man/2025/06/wycliffe-well-australias-outback-ufo-hotspot/",
-      "note": "Documentación del hotspot UAP regional."
+      "note": "Documentación del hotspot UAP regional.",
+      "note_en": "Documentation of the regional UAP hotspot."
     }
   ],
   "documents": [

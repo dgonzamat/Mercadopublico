@@ -18,7 +18,14 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 90,
-  "posterior": { "mundano_natural": 0.45, "humana_clasificada": 0.2, "adversaria": 0.03, "nohumano_encubierto": 0, "nohumano_abierto": 0.07, "indet": 0.25 },
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.2,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.07,
+    "indet": 0.25
+  },
   "summary": "Programa oficial soviético de investigación de fenómenos aéreos anómalos, establecido en octubre de 1978 tras la ola de avistamientos 1977–78 (en particular Petrozavodsk). Operó en dos brazos paralelos: SETKA-AN dentro de la Academia de Ciencias y SETKA-MO dentro del Ministerio de Defensa, ordenado por la Comisión Militar-Industrial. El Instituto IZMIRAN de magnetismo terrestre y propagación de radio lideró la coordinación científica. Durante trece años (1978–1990/91) una orden permanente exigió a cada militar soviético reportar por escrito cualquier fenómeno anómalo — se recopilaron aproximadamente tres mil reportes. Es el paralelo institucional casi exacto de Project Blue Book, ejecutado fuera de Occidente y simétrico cronológicamente con el ciclo AAWSAP que vendría tres décadas después en EE.UU.",
   "summary_en": "Official Soviet program for investigating anomalous aerial phenomena, established in October 1978 following the 1977–78 sighting wave (particularly Petrozavodsk). It operated in two parallel branches: SETKA-AN within the Academy of Sciences and SETKA-MO within the Ministry of Defense, ordered by the Military-Industrial Commission. The IZMIRAN Institute for terrestrial magnetism and radio-wave propagation led the scientific coordination. For thirteen years (1978–1990/91) a standing order required every Soviet serviceman to report any anomalous phenomenon in writing — approximately three thousand reports were collected. It is the near-exact institutional parallel of Project Blue Book, executed outside the West and chronologically symmetric with the AAWSAP cycle that would come three decades later in the U.S.",
   "patterns": [
@@ -55,21 +62,25 @@
     {
       "name": "Stonehill, P. & Mantle, P. — 'SETKA: A Secret Soviet UFO Research Program' (UFOInfo)",
       "url": "https://www.ufoinfo.com/news/setka.shtml",
-      "note": "Reconstrucción primaria del programa por dos investigadores con acceso al archivo post-1991."
+      "note": "Reconstrucción primaria del programa por dos investigadores con acceso al archivo post-1991.",
+      "note_en": "Primary reconstruction of the program by two researchers with access to the post-1991 archive."
     },
     {
       "name": "Skeptical Inquirer — 'A History of State UFO Research in the USSR'",
       "url": "https://skepticalinquirer.org/newsletter/history-of-state-ufo-research-in-the-ussr/",
-      "note": "Análisis académico occidental del programa."
+      "note": "Análisis académico occidental del programa.",
+      "note_en": "Western academic analysis of the program."
     },
     {
       "name": "Stonehill, P. & Mantle, P. — 'Setka — Dawn of a Soviet Secret Program' (Journal of Anomalous Science)",
       "url": "https://www.helpwithdiy.com/setka-dawn-of-a-soviet-secret-program/",
-      "note": "Detalle del origen y la reunión fundacional de octubre 1978."
+      "note": "Detalle del origen y la reunión fundacional de octubre 1978.",
+      "note_en": "Detail of the origin and the founding meeting of October 1978."
     },
     {
       "name": "Knapp, G. — 'Russian UFO files' coverage (KLAS-TV Las Vegas, 1993)",
-      "note": "Acceso periodístico inicial al archivo soviético post-disolución."
+      "note": "Acceso periodístico inicial al archivo soviético post-disolución.",
+      "note_en": "Initial journalistic access to the post-dissolution Soviet archive."
     }
   ],
   "documents": [

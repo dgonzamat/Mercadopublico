@@ -45,19 +45,23 @@
     {
       "name": "Wikipedia — Operation Mainbrace",
       "url": "https://en.wikipedia.org/wiki/Operation_Mainbrace",
-      "note": "Contexto del ejercicio y sección sobre los avistamientos"
+      "note": "Contexto del ejercicio y sección sobre los avistamientos",
+      "note_en": "Context of the exercise and section on the sightings"
     },
     {
       "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
-      "note": "Relato de primera mano del jefe de Blue Book sobre los casos de Mainbrace y su efecto en la coordinación aliada"
+      "note": "Relato de primera mano del jefe de Blue Book sobre los casos de Mainbrace y su efecto en la coordinación aliada",
+      "note_en": "First-hand account by the head of Blue Book of the Mainbrace cases and their effect on allied coordination"
     },
     {
       "name": "Expedientes de Project Blue Book (NARA)",
-      "note": "El caso Litwin/USS Franklin D. Roosevelt figura en los archivos del proyecto"
+      "note": "El caso Litwin/USS Franklin D. Roosevelt figura en los archivos del proyecto",
+      "note_en": "The Litwin/USS Franklin D. Roosevelt case appears in the project files"
     },
     {
       "name": "NICAP — cronología de septiembre de 1952",
-      "note": "Compilación documental de los avistamientos del ejercicio (Willemoes, Topcliffe, FDR, Meteors)"
+      "note": "Compilación documental de los avistamientos del ejercicio (Willemoes, Topcliffe, FDR, Meteors)",
+      "note_en": "Documentary compilation of the exercise sightings (Willemoes, Topcliffe, FDR, Meteors)"
     }
   ],
   "posterior": {

@@ -1,7 +1,10 @@
 {
   "id": "sandia-1948",
   "num": 5,
-  "pursueReleases": [2, 4],
+  "pursueReleases": [
+    2,
+    4
+  ],
   "name": "Sandia 'green orbs'",
   "year_start": 1948,
   "year_end": 1950,
@@ -72,11 +75,13 @@
     },
     {
       "name": "La Paz, L. — 'Green Fireballs of New Mexico' (LANL archive)",
-      "note": "Análisis astronómico contemporáneo"
+      "note": "Análisis astronómico contemporáneo",
+      "note_en": "Contemporary astronomical analysis"
     },
     {
       "name": "USAEC / Los Alamos — actas de la «Conference on Aerial Phenomena» (16 feb 1949, sala P-162)",
-      "note": "Documento primario con los asistentes (La Paz, Teller, Bradbury, Reines, 4.º Ejército, FBI). Desclasificado en 2026 en el UAP Records de la AARO, release 04, código DOEUAPD004."
+      "note": "Documento primario con los asistentes (La Paz, Teller, Bradbury, Reines, 4.º Ejército, FBI). Desclasificado en 2026 en el UAP Records de la AARO, release 04, código DOEUAPD004.",
+      "note_en": "Primary document with the attendees (La Paz, Teller, Bradbury, Reines, 4th Army, FBI). Declassified in 2026 in the AARO UAP Records, release 04, code DOEUAPD004."
     }
   ],
   "sources_en": [

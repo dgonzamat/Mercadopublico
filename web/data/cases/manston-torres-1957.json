@@ -49,15 +49,18 @@
   "sources": [
     {
       "name": "Archivos UFO del Ministerio de Defensa británico — liberación pública (2008–)",
-      "note": "Serie de expedientes desclasificados que encuadran los reportes de radar de la RAF de la época"
+      "note": "Serie de expedientes desclasificados que encuadran los reportes de radar de la RAF de la época",
+      "note_en": "Series of declassified files framing the RAF radar reports of the period"
     },
     {
       "name": "Testimonio de Milton Torres — declaración escrita y grabada",
-      "note": "Relato nominal del piloto con fecha, base y detalle operativo, ratificado décadas después"
+      "note": "Relato nominal del piloto con fecha, base y detalle operativo, ratificado décadas después",
+      "note_en": "Named account by the pilot with date, base and operational detail, confirmed decades later"
     },
     {
       "name": "The National Archives (UK) — expedientes UFO del MoD, sección de reportes de 1957",
-      "note": "Documentación de contexto sobre el sistema de alerta e intercepción del periodo"
+      "note": "Documentación de contexto sobre el sistema de alerta e intercepción del periodo",
+      "note_en": "Context documentation on the period's warning and interception system"
     }
   ],
   "posterior": {
