@@ -1125,6 +1125,43 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
+// ─── 9r. RULE E27: completitud del sitemap (ERROR) ───────────────────────
+//
+// Toda ruta pública (sin RequireAuth) con `app/<seccion>/page.tsx` debe estar
+// en el array `staticRoutes` de `app/sitemap.ts` O declararse `noindex`. El
+// array está hardcodeado a propósito (fija changeFrequency/priority por ruta),
+// así que una página nueva con canonical propio queda fuera del sitemap y Google
+// solo la descubre por enlaces internos (pasó con /calidad, /cobertura #647 y
+// /visitantes). Excluidos correctamente: rutas dinámicas ([slug]/[letter]/...),
+// el espejo /es (lo cubre el hreflang del <head>), las gated (RequireAuth) y las
+// noindex (login /acceso). Guardrail nominado en CLAUDE.md.
+{
+  const appDir = path.join(root, "app");
+  const sitemapSrc = fs.readFileSync(path.join(appDir, "sitemap.ts"), "utf-8");
+  const arr = sitemapSrc.match(/const staticRoutes = \[([\s\S]*?)\]\.map/);
+  const staticSet = new Set();
+  if (arr)
+    for (const s of arr[1].matchAll(/["']([^"']+)["']/g)) staticSet.add(s[1]);
+
+  const pageFiles = tsxFiles.filter((f) => path.basename(f) === "page.tsx");
+  for (const file of pageFiles) {
+    const rel = path.relative(appDir, path.dirname(file)).replace(/\\/g, "/");
+    if (rel === "es" || rel.startsWith("es/")) continue; // espejo → hreflang
+    if (rel.includes("[")) continue; // ruta dinámica
+    const route = rel === "" ? "/" : `/${rel}/`;
+    const src = fs.readFileSync(file, "utf-8");
+    if (/RequireAuth/.test(src)) continue; // gated
+    if (/robots\s*:\s*\{[^}]*index\s*:\s*false/.test(src)) continue; // noindex
+    if (!staticSet.has(route))
+      record(
+        "ERROR",
+        file,
+        0,
+        `E27 sitemap: la ruta pública ${route} no está en \`staticRoutes\` de app/sitemap.ts (ni es gated/noindex) → queda fuera del sitemap y Google solo la descubre por enlaces internos. Añádela al array, o márcala \`robots: { index: false }\` si no debe indexarse.`,
+      );
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

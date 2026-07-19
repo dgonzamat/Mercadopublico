@@ -72,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about/",
     "/resumen/",
     "/fuentes/",
+    "/visitantes/",
     "/blog/",
     "/contact/",
   ].map((path) => ({
