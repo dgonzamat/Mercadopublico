@@ -1,7 +1,9 @@
 {
   "id": "usaf-amc-early-disc-records-1946-1950",
   "num": 288,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Registros tempranos de la USAF/AMC sobre discos voladores (1946-1950, PURSUE)",
   "name_en": "Early USAF/AMC flying-disc records (1946-1950, PURSUE)",
   "year_start": 1946,
@@ -93,12 +95,14 @@
     {
       "name": "NARA — Army Air Forces / USAF records on flying discs and UFOs",
       "url": "https://www.archives.gov/research/military/air-force/ufos",
-      "note": "Contexto archivístico de los grupos de registros (RG18 / RG341 / RG342)."
+      "note": "Contexto archivístico de los grupos de registros (RG18 / RG341 / RG342).",
+      "note_en": "Archival context of the record groups (RG18 / RG341 / RG342)."
     },
     {
       "name": "USAF — memo del general Nathan Twining (23 sep 1947) y Proyectos Sign/Grudge",
       "url": "https://www.nicap.org/twining_letter_docs.htm",
-      "note": "Hito que enmarca la correspondencia del Air Materiel Command."
+      "note": "Hito que enmarca la correspondencia del Air Materiel Command.",
+      "note_en": "Milestone framing the Air Materiel Command correspondence."
     }
   ]
 }

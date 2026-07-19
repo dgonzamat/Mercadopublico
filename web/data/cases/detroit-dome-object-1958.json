@@ -67,12 +67,14 @@
     {
       "name": "war.gov/UFO — FBI 100-DE-18221, Serial 844, 1958 (PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf",
-      "note": "Memo primario desclasificado, incorporado al visor."
+      "note": "Memo primario desclasificado, incorporado al visor.",
+      "note_en": "Declassified primary memo, embedded in the viewer."
     },
     {
       "name": "FBI Records: The Vault — 'Unidentified Flying Objects'",
       "url": "https://vault.fbi.gov/UFO",
-      "note": "Contexto del rol del FBI como conducto de reportes hacia la USAF."
+      "note": "Contexto del rol del FBI como conducto de reportes hacia la USAF.",
+      "note_en": "Context of the FBI's role as a conduit of reports to the USAF."
     }
   ],
   "misidSubtype": "terrestre_otros"

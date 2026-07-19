@@ -53,12 +53,14 @@
     {
       "name": "Wikipedia — McMinnville UFO photographs",
       "url": "https://en.wikipedia.org/wiki/McMinnville_UFO_photographs",
-      "note": "Historia, análisis de Hartmann y crítica escéptica."
+      "note": "Historia, análisis de Hartmann y crítica escéptica.",
+      "note_en": "History, Hartmann's analysis and skeptical critique."
     },
     {
       "name": "UFO Casebook — The Trent Photographs (1950)",
       "url": "https://www.ufocasebook.com/trentphotos.html",
-      "note": "Imágenes y cronología del caso."
+      "note": "Imágenes y cronología del caso.",
+      "note_en": "Images and chronology of the case."
     }
   ],
   "primaryDocument": {

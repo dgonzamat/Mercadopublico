@@ -1,7 +1,9 @@
 {
   "id": "project-magnet-canada-1950",
   "num": 132,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "Project Magnet / Second Storey · programas UFO del gobierno (Canadá)",
   "name_en": "Project Magnet / Second Storey · government UFO programs (Canada)",
   "year_start": 1950,
@@ -24,7 +26,7 @@
     "adversaria": 0,
     "nohumano_encubierto": 0,
     "nohumano_abierto": 0.15,
-    "indet": 0.30
+    "indet": 0.3
   },
   "summary": "En diciembre de 1950, Transport Canada estableció Project Magnet, un programa oficial de estudio de OVNIs dirigido por el ingeniero de radio Wilbert B. Smith, con el objetivo de investigar el fenómeno y la posibilidad de aprovechar el geomagnetismo para propulsión. En abril de 1952 el gobierno creó además Project Second Storey, un comité paralelo del Defence Research Board. Magnet estuvo activo formalmente hasta 1954. Son dos de los programas estatales de UFO más tempranos del mundo; encuadre honesto: las conclusiones extraterrestres fueron interpretación personal de Smith, no postura oficial — el valor es la temprana institucionalización del tema en un gobierno del G7.",
   "summary_en": "In December 1950, Transport Canada established Project Magnet, an official UFO study program directed by radio engineer Wilbert B. Smith, aimed at investigating the phenomenon and the possibility of harnessing geomagnetism for propulsion. In April 1952 the government also created Project Second Storey, a parallel Defence Research Board committee. Magnet was formally active until 1954. These are among the world's earliest state UFO programs; honest framing: the extraterrestrial conclusions were Smith's personal interpretation, not official policy — the value is the early institutionalization of the subject in a G7 government.",
@@ -59,7 +61,8 @@
     },
     {
       "name": "DoW/USAF — «Joint US-Canadian Aviation Projects and UFO Sighting Reports» (1954–1955)",
-      "note": "Correspondencia y reportes conjuntos EE.UU.–Canadá del período de Project Magnet / Second Storey. AARO UAP Records, release 04 (DOWUAPD095)."
+      "note": "Correspondencia y reportes conjuntos EE.UU.–Canadá del período de Project Magnet / Second Storey. AARO UAP Records, release 04 (DOWUAPD095).",
+      "note_en": "Joint U.S.–Canada correspondence and reports from the Project Magnet / Second Storey period. AARO UAP Records, release 04 (DOWUAPD095)."
     }
   ],
   "documents": [

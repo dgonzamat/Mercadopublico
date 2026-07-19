@@ -1,7 +1,9 @@
 {
   "id": "sary-shagan-1973",
   "num": 278,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "Sary Shagan · objeto verde sobre campo de armas soviético (CIA-UAP-D001)",
   "name_en": "Sary Shagan · green object over Soviet weapons range (CIA-UAP-D001)",
   "year_start": 1973,
@@ -73,17 +75,20 @@
     {
       "name": "war.gov/UFO — CIA-UAP-D001 (PURSUE Release 02, documento primario)",
       "url": "https://www.war.gov/UFO/?releaseDate=Release+02#records",
-      "note": "Informe HUMINT publicado en el portal del Departamento de Guerra (Release 02)."
+      "note": "Informe HUMINT publicado en el portal del Departamento de Guerra (Release 02).",
+      "note_en": "HUMINT report published on the Department of War portal (Release 02)."
     },
     {
       "name": "the-ufo-files — cia-ussr-sary-shagan-1973 (mirror con OCR)",
       "url": "https://github.com/wretcher207/the-ufo-files/blob/main/pursue-release-02/cases/cia-ussr-sary-shagan-1973.md",
-      "note": "Mirror curado con transcripción OCR del documento primario."
+      "note": "Mirror curado con transcripción OCR del documento primario.",
+      "note_en": "Curated mirror with OCR transcript of the primary document."
     },
     {
       "name": "Department of War — 'Publishes Second Release of Unidentified Anomalous Phenomena Files'",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal oficial del sistema PURSUE."
+      "note": "Portal oficial del sistema PURSUE.",
+      "note_en": "Official portal of the PURSUE system."
     }
   ]
 }

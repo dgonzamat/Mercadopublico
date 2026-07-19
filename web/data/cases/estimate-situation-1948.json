@@ -47,7 +47,8 @@
   "sources": [
     {
       "name": "Ruppelt, E. — The Report on Unidentified Flying Objects (1956)",
-      "note": "Capítulo 4 dedicado al Estimate"
+      "note": "Capítulo 4 dedicado al Estimate",
+      "note_en": "Chapter 4 dedicated to the Estimate"
     },
     {
       "name": "Fournet, D. — Pentagon UFO Liaison testimony (Citizen Hearing 2013)",
@@ -55,7 +56,8 @@
     },
     {
       "name": "Hall, R. — UFO Evidence Vol. II (NICAP 2001)",
-      "note": "Reconstrucción del documento"
+      "note": "Reconstrucción del documento",
+      "note_en": "Reconstruction of the document"
     }
   ],
   "sources_en": [

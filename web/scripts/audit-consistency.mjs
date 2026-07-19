@@ -1105,6 +1105,26 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
+// ─── 9q. RULE E26: notas de fuente sin traducir (WARN agregado) ───────────
+//
+// El sitio es inglés-primario, pero muchas fuentes tienen `note` (ES) sin su par
+// `note_en`, así que el detalle de caso muestra ESPAÑOL en el sitio EN (render
+// `note_en ?? note` en app/cases/[slug]/page.tsx, la sección Fuentes). WARN
+// agregado con backlog por tier (mismo patrón que E13/E21): el drift queda
+// medible, se traduce por tandas (Tier S→A→B) y no crece en silencio. No es
+// ERROR —es contenido, no rompe el build—; cualquier fuente NUEVA con nota debería
+// nacer con `note_en`.
+{
+  const byTier = { S: 0, A: 0, B: 0 };
+  let total = 0;
+  for (const c of cases)
+    for (const s of c.sources || [])
+      if (s.note && !s.note_en) { total++; byTier[c.tier] = (byTier[c.tier] || 0) + 1; }
+  if (total > 0) {
+    record("WARN", casesDir, 0, `E26 i18n fuentes: ${total} nota(s) de fuente con \`note\` (ES) sin \`note_en\` → el detalle de caso muestra español en el sitio EN. Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. Traducir por tandas (S→A→B).`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

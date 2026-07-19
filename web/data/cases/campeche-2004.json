@@ -7,13 +7,18 @@
   "country": "MX",
   "country_name": "México",
   "flag": "🇲🇽",
-  "location": { "lat": 18.65, "lng": -91.82 },
+  "location": {
+    "lat": 18.65,
+    "lng": -91.82
+  },
   "place": "Sonda de Campeche, cerca de Ciudad del Carmen, México",
   "place_en": "Bay of Campeche, near Ciudad del Carmen, Mexico",
   "tier": "S",
   "probability": 55,
   "category": "incident",
-  "patterns": ["8e"],
+  "patterns": [
+    "8e"
+  ],
   "mundanoType": "misid",
   "misidSubtype": "terrestre_otros",
   "posterior": {
@@ -56,15 +61,45 @@
     "International coverage (CNN, Reuters) confirming the institutional authenticity of the release."
   ],
   "sources": [
-    { "name": "SEDENA — Difusión oficial de las grabaciones FLIR (11 de mayo de 2004)", "note": "La Secretaría de la Defensa Nacional de México autorizó la entrega del video y el testimonio de la tripulación." },
-    { "name": "«Mexican Air Force UFO affair: aliens, ball lightning, or flares?» — Skeptical Inquirer", "note": "Evaluación crítica de las explicaciones (flamas de plataformas, rayo en bola)." },
-    { "name": "Alejandro Franz — Análisis de las flamas de las plataformas de Cantarell", "note": "Reproducción del efecto térmico apuntando equipos FLIR a plataformas offshore." },
-    { "name": "UFO Evidence — Ficha del caso Campeche 2004", "url": "http://www.ufoevidence.org/cases/case263.htm", "note": "Compilación de la cronología y del material difundido." }
+    {
+      "name": "SEDENA — Difusión oficial de las grabaciones FLIR (11 de mayo de 2004)",
+      "note": "La Secretaría de la Defensa Nacional de México autorizó la entrega del video y el testimonio de la tripulación.",
+      "note_en": "Mexico's Secretariat of National Defense authorized the release of the video and the crew's testimony."
+    },
+    {
+      "name": "«Mexican Air Force UFO affair: aliens, ball lightning, or flares?» — Skeptical Inquirer",
+      "note": "Evaluación crítica de las explicaciones (flamas de plataformas, rayo en bola).",
+      "note_en": "Critical assessment of the explanations (platform flares, ball lightning)."
+    },
+    {
+      "name": "Alejandro Franz — Análisis de las flamas de las plataformas de Cantarell",
+      "note": "Reproducción del efecto térmico apuntando equipos FLIR a plataformas offshore.",
+      "note_en": "Reproduction of the thermal effect by pointing FLIR equipment at offshore platforms."
+    },
+    {
+      "name": "UFO Evidence — Ficha del caso Campeche 2004",
+      "url": "http://www.ufoevidence.org/cases/case263.htm",
+      "note": "Compilación de la cronología y del material difundido.",
+      "note_en": "Compilation of the chronology and the disseminated material."
+    }
   ],
   "sources_en": [
-    { "name": "SEDENA — Official release of the FLIR recordings (11 May 2004)", "note": "Mexico's Secretariat of National Defense authorized handing over the video and the crew's testimony." },
-    { "name": "\"Mexican Air Force UFO affair: aliens, ball lightning, or flares?\" — Skeptical Inquirer", "note": "Critical assessment of the explanations (platform flares, ball lightning)." },
-    { "name": "Alejandro Franz — Analysis of the Cantarell platform flares", "note": "Reproduction of the thermal effect by aiming FLIR gear at offshore platforms." },
-    { "name": "UFO Evidence — Campeche 2004 case file", "url": "http://www.ufoevidence.org/cases/case263.htm", "note": "Compilation of the timeline and the released footage." }
+    {
+      "name": "SEDENA — Official release of the FLIR recordings (11 May 2004)",
+      "note": "Mexico's Secretariat of National Defense authorized handing over the video and the crew's testimony."
+    },
+    {
+      "name": "\"Mexican Air Force UFO affair: aliens, ball lightning, or flares?\" — Skeptical Inquirer",
+      "note": "Critical assessment of the explanations (platform flares, ball lightning)."
+    },
+    {
+      "name": "Alejandro Franz — Analysis of the Cantarell platform flares",
+      "note": "Reproduction of the thermal effect by aiming FLIR gear at offshore platforms."
+    },
+    {
+      "name": "UFO Evidence — Campeche 2004 case file",
+      "url": "http://www.ufoevidence.org/cases/case263.htm",
+      "note": "Compilation of the timeline and the released footage."
+    }
   ]
 }

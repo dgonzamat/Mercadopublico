@@ -1,7 +1,9 @@
 {
   "id": "cometa-report-1999",
   "num": 187,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Informe COMETA · ex-oficiales franceses (1999)",
   "name_en": "COMETA Report · French ex-officials (1999)",
   "year_start": 1999,
@@ -55,7 +57,8 @@
     {
       "name": "Informe COMETA 'Les OVNI et la Défense' (1999) — texto",
       "url": "https://www.cufos.org/cometa/COMETA_part1.pdf",
-      "note": "Documento primario (traducción/archivo)."
+      "note": "Documento primario (traducción/archivo).",
+      "note_en": "Primary document (translation/archive)."
     },
     {
       "name": "COMETA report — entrada enciclopédica",

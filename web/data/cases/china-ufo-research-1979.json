@@ -18,7 +18,7 @@
   "epistemicStatus": "documented",
   "probability": 70,
   "posterior": {
-    "mundano_natural": 0.60,
+    "mundano_natural": 0.6,
     "humana_clasificada": 0.05,
     "adversaria": 0.05,
     "nohumano_encubierto": 0.04,
@@ -58,27 +58,32 @@
     {
       "name": "Encyclopedia.com — 'China and UFO Research'",
       "url": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/china-and-ufo-research",
-      "note": "Síntesis enciclopédica del recorrido institucional."
+      "note": "Síntesis enciclopédica del recorrido institucional.",
+      "note_en": "Encyclopedic synthesis of the institutional trajectory."
     },
     {
       "name": "UFO Evidence — 'UFOs Behind the Great Wall: A report on the state of UFOlogy in China'",
       "url": "http://www.ufoevidence.org/documents/doc1152.htm",
-      "note": "Documento primario sobre la organización."
+      "note": "Documento primario sobre la organización.",
+      "note_en": "Primary document on the organization."
     },
     {
       "name": "Open Minds — 'Interview with China's leading UFO expert, Dr. Sun Shili'",
       "url": "https://openminds.tv/interview-with-chinas-leading-ufo-expert-dr-sun-shili-998/",
-      "note": "Entrevista del presidente internacional con detalle biográfico."
+      "note": "Entrevista del presidente internacional con detalle biográfico.",
+      "note_en": "Interview with the international president, with biographical detail."
     },
     {
       "name": "Enigma Labs — 'China's UAP Research Associations'",
       "url": "https://enigmalabs.io/library/30848c73-c9f2-447f-b09a-340b5b5f725c",
-      "note": "Cartografía institucional de las asociaciones chinas."
+      "note": "Cartografía institucional de las asociaciones chinas.",
+      "note_en": "Institutional mapping of the Chinese associations."
     },
     {
       "name": "Made in China Journal — 'On UFOlogy with Chinese Characteristics and the Fate of Chinese Socialism' (2020)",
       "url": "https://madeinchinajournal.com/2020/10/19/on-ufology-with-chinese-characteristics-and-the-fate-of-chinese-socialism/",
-      "note": "Análisis académico contextual del fenómeno organizado chino."
+      "note": "Análisis académico contextual del fenómeno organizado chino.",
+      "note_en": "Contextual academic analysis of the organized Chinese phenomenon."
     }
   ],
   "documents": [

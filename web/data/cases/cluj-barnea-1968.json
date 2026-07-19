@@ -48,15 +48,18 @@
   "sources": [
     {
       "name": "Ion Hobana — investigación del caso Barnea (Cluj, 1968-1970)",
-      "note": "Entrevistas a los testigos y evaluación de su credibilidad por el principal estudioso rumano del tema"
+      "note": "Entrevistas a los testigos y evaluación de su credibilidad por el principal estudioso rumano del tema",
+      "note_en": "Interviews with the witnesses and assessment of their credibility by Romania's leading scholar on the subject"
     },
     {
       "name": "Universidad de Cluj — análisis técnico de las fotografías de Barnea",
-      "note": "Reconstrucción de modelos a escala; conclusión de que el objeto parecía emitir luz propia"
+      "note": "Reconstrucción de modelos a escala; conclusión de que el objeto parecía emitir luz propia",
+      "note_en": "Scale-model reconstruction; conclusion that the object appeared to emit its own light"
     },
     {
       "name": "Compilaciones documentales de las fotografías de Cluj (18 de agosto de 1968)",
-      "note": "Reproducen las cuatro placas y el relato de la observación en el bosque de Hoia-Baciu"
+      "note": "Reproducen las cuatro placas y el relato de la observación en el bosque de Hoia-Baciu",
+      "note_en": "Reproduce the four plates and the account of the observation in the Hoia-Baciu forest"
     }
   ],
   "posterior": {

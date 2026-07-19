@@ -1,7 +1,9 @@
 {
   "id": "pursue-rocketry-reference-docs",
   "num": 290,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "PURSUE · documentos de referencia de cohetería (fallos de lanzamiento, PURSUE)",
   "name_en": "PURSUE · rocketry reference documents (launch failures, PURSUE)",
   "year_start": 1996,
@@ -66,12 +68,14 @@
     {
       "name": "war.gov/UFO — DOW-UAP-D48 (1996) y DOW-UAP-D49 (2000) (PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf",
-      "note": "Informes técnicos primarios incorporados al visor."
+      "note": "Informes técnicos primarios incorporados al visor.",
+      "note_en": "Primary technical reports embedded in the viewer."
     },
     {
       "name": "Department of War — 'Releases Unidentified Anomalous Phenomena Files' (8 may 2026)",
       "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
-      "note": "Comunicado del primer release que agrupa estos materiales bajo la etiqueta UAP."
+      "note": "Comunicado del primer release que agrupa estos materiales bajo la etiqueta UAP.",
+      "note_en": "Statement of the first release grouping these materials under the UAP label."
     }
   ]
 }

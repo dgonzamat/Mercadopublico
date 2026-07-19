@@ -8,7 +8,7 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 38.8830,
+    "lat": 38.883,
     "lng": -77.0163,
     "place": "NASA Headquarters · Washington D.C."
   },
@@ -53,7 +53,8 @@
     {
       "name": "NASA — UAP Independent Study Team Report (14 sep 2023)",
       "url": "https://science.nasa.gov/uap/",
-      "note": "Informe oficial de NASA."
+      "note": "Informe oficial de NASA.",
+      "note_en": "Official NASA report."
     },
     {
       "name": "NASA — 'NASA Releases Independent Study Team Report on UAP'",

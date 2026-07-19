@@ -19,7 +19,9 @@
   "probability": 8,
   "summary": "En octubre de 2014 se publicó el video póstumo de Boyd Bushman, científico senior retirado de Lockheed Martin, grabado semanas antes de su muerte: afirmaba que EE.UU. empleaba extraterrestres en el Área 51 y mostraba fotos de un alienígena como prueba. El desmontaje fue inmediato y concluyente: el «alienígena» era un muñeco de goma vendido en Walmart. El caso canónico del testimonio insider aeroespacial sin verificación.",
   "summary_en": "In October 2014 the posthumous video of Boyd Bushman, a retired Lockheed Martin senior scientist, recorded weeks before his death, was published: he claimed the U.S. employed extraterrestrials at Area 51 and showed photos of an alien as proof. The debunking was immediate and conclusive: the 'alien' was a rubber doll sold at Walmart. The canonical case of unverified aerospace-insider testimony.",
-  "patterns": ["8d"],
+  "patterns": [
+    "8d"
+  ],
   "category": "incident",
   "whatHappened": "Boyd Bushman (1936-2014) fue un ingeniero y científico con una carrera real y verificable en la industria aeroespacial estadounidense: trabajó en Texas Instruments, Hughes Aircraft y General Dynamics, cuya división de Fort Worth pasó a Lockheed Martin en 1993, donde Bushman terminó su carrera con el título de científico senior. Participó en programas de armamento y sensores y registró varias patentes a su nombre, entre ellas diseños de seguimiento láser y aplicaciones magnéticas. Nada de eso está en disputa, y es precisamente lo que dio al caso su fuerza: las credenciales eran auténticas.\n\nEn agosto de 2014, semanas antes de morir de cáncer a los 78 años, Bushman grabó en Tucson (Arizona) una larga entrevista en video con el ingeniero aeroespacial Mark Q. Patterson. Publicada en YouTube a fines de octubre de 2014 —casi tres meses después de la muerte de Bushman, ocurrida el 7 de agosto—, la grabación se viralizó de inmediato: millones de reproducciones en días, cobertura de tabloides y agregadores en varios idiomas, y un rótulo periodístico irresistible: «la confesión en el lecho de muerte del científico de Lockheed Martin».\n\nEn el video, Bushman, visiblemente debilitado, afirmaba haber trabajado en ingeniería inversa de tecnología extraterrestre vinculada al Área 51; que el gobierno de Estados Unidos empleaba a 18 seres extraterrestres, algunos de unos 230 años de edad; que las naves provenían de un planeta llamado «Quintumnia», a 68 años luz de la Tierra, cuyos ocupantes viajaban el trayecto en 45 minutos; y —como prueba central de su relato— mostraba a cámara una serie de fotografías impresas de un supuesto alienígena de pie y en reposo.\n\nEl desmontaje llegó en cuestión de días y fue inusualmente concluyente para los estándares del género. Investigadores escépticos —el análisis más citado se publicó en Metabunk, el foro de Mick West— identificaron que el «alienígena» de las fotos era un muñeco de goma comercial de temporada de Halloween, vendido en cadenas como Walmart y Kmart, y fotografiado por compradores ordinarios en poses idénticas. La coincidencia no era de parecido general sino forense: las costuras del material, los pliegues del cuello, las proporciones de cabeza y extremidades coincidían punto por punto entre las fotos de Bushman y las del juguete. Lockheed Martin no respaldó ninguna de las afirmaciones; los registros laborales confirman el empleo de Bushman, pero ni un documento, testigo o dato verificable respaldó jamás el contenido de sus claims.",
   "whatHappened_en": "Boyd Bushman (1936-2014) was an engineer and scientist with a real, verifiable career in the American aerospace industry: he worked at Texas Instruments, Hughes Aircraft and General Dynamics, whose Fort Worth division became part of Lockheed Martin in 1993, where Bushman ended his career with the title of senior scientist. He worked on weapons and sensor programs and held several patents in his name, including laser-tracking designs and magnetic applications. None of that is in dispute — and that is precisely what gave the case its force: the credentials were authentic.\n\nIn August 2014, weeks before dying of cancer at 78, Bushman recorded a long video interview in Tucson, Arizona, with aerospace engineer Mark Q. Patterson. Published on YouTube in late October 2014 — almost three months after Bushman's death on August 7 — the recording went viral immediately: millions of views within days, tabloid and aggregator coverage in several languages, and an irresistible journalistic label: 'the deathbed confession of the Lockheed Martin scientist.'\n\nIn the video Bushman, visibly weakened, claimed to have worked on reverse engineering of extraterrestrial technology linked to Area 51; that the U.S. government employed 18 extraterrestrial beings, some of them around 230 years old; that the craft came from a planet called 'Quintumnia,' 68 light-years from Earth, whose occupants covered the distance in 45 minutes; and — as the central proof of his account — he held up to the camera a series of printed photographs of an alleged alien, standing and at rest.\n\nThe debunking came within days and was unusually conclusive by the genre's standards. Skeptical investigators — the most cited analysis was published on Metabunk, Mick West's forum — identified the 'alien' in the photos as a commercial Halloween-season rubber doll, sold at chains like Walmart and Kmart, and photographed by ordinary buyers in identical poses. The match was not one of general resemblance but forensic: the material's seams, the neck folds, the head and limb proportions matched point by point between Bushman's photos and those of the toy. Lockheed Martin endorsed none of the claims; employment records confirm Bushman worked there, but not a single document, witness or verifiable datum ever supported the content of his claims.",
@@ -43,19 +45,23 @@
     {
       "name": "Wikipedia — Boyd Bushman",
       "url": "https://en.wikipedia.org/wiki/Boyd_Bushman",
-      "note": "Biografía, carrera y recepción crítica del video de 2014"
+      "note": "Biografía, carrera y recepción crítica del video de 2014",
+      "note_en": "Biography, career and critical reception of the 2014 video"
     },
     {
       "name": "Metabunk — análisis de las fotos del «alienígena» de Bushman",
-      "note": "Identificación del muñeco comercial (Walmart/Kmart) en el foro de Mick West, días después de la publicación del video"
+      "note": "Identificación del muñeco comercial (Walmart/Kmart) en el foro de Mick West, días después de la publicación del video",
+      "note_en": "Identification of the commercial doll (Walmart/Kmart) on Mick West's forum, days after the video's publication"
     },
     {
       "name": "Entrevista original de Mark Q. Patterson (YouTube, octubre 2014)",
-      "note": "La «confesión» completa tal como se publicó; grabada en agosto de 2014"
+      "note": "La «confesión» completa tal como se publicó; grabada en agosto de 2014",
+      "note_en": "The full «confession» as published; recorded in August 2014"
     },
     {
       "name": "Cobertura escéptica contemporánea (Snopes, Doubtful News, prensa generalista)",
-      "note": "Documenta la viralización y el consenso inmediato sobre el origen del muñeco"
+      "note": "Documenta la viralización y el consenso inmediato sobre el origen del muñeco",
+      "note_en": "Documents the virality and the immediate consensus on the doll's origin"
     }
   ],
   "posterior": {

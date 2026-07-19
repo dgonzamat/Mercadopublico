@@ -45,17 +45,20 @@
   "sources": [
     {
       "name": "The National Archives (UK) — expedientes del Ministerio de Defensa sobre reportes de objetos no identificados (oleada de Dyfed/Gales, 1977)",
-      "note": "Archivos oficiales desclasificados que documentan el interés del MoD en la oleada galesa, sin conclusión emitida."
+      "note": "Archivos oficiales desclasificados que documentan el interés del MoD en la oleada galesa, sin conclusión emitida.",
+      "note_en": "Declassified official files documenting the MoD's interest in the Welsh wave, with no conclusion issued."
     },
     {
       "name": "Herald.Wales — «The Welsh Triangle: What was seen in the sky back in 1977?»",
       "url": "https://herald.wales/west-wales/pembrokeshire/the-welsh-triangle-what-was-seen-in-the-sky-back-in-1977/",
-      "note": "Reseña regional del caso de Broad Haven y de la oleada del Triángulo de Dyfed, con testimonios."
+      "note": "Reseña regional del caso de Broad Haven y de la oleada del Triángulo de Dyfed, con testimonios.",
+      "note_en": "Regional review of the Broad Haven case and the Dyfed Triangle wave, with testimony."
     },
     {
       "name": "UFO Insight — «The Bizarre And Forgotten Broad Haven School UFO Incident Of 1977»",
       "url": "https://www.ufoinsight.com/ufos/close-encounters/broad-haven-school-ufo-incident",
-      "note": "Síntesis del avistamiento escolar, el procedimiento de los dibujos y el contexto de la oleada."
+      "note": "Síntesis del avistamiento escolar, el procedimiento de los dibujos y el contexto de la oleada.",
+      "note_en": "Synthesis of the schoolyard sighting, the drawings procedure and the context of the wave."
     }
   ],
   "mundanoType": "misid",

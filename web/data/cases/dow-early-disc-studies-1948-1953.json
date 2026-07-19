@@ -1,7 +1,10 @@
 {
   "id": "dow-early-disc-studies-1948-1953",
   "num": 296,
-  "pursueReleases": [3, 4],
+  "pursueReleases": [
+    3,
+    4
+  ],
   "name": "Estudios militares tempranos de discos voladores (1948-1953, PURSUE)",
   "name_en": "Early military flying-disc studies (1948-1953, PURSUE)",
   "year_start": 1948,
@@ -11,7 +14,7 @@
   "flag": "🇺🇸",
   "location": {
     "lat": 38.9,
-    "lng": -77.0,
+    "lng": -77,
     "place": "EE.UU. — Marina (Quinto Distrito Naval), Ejército (Army Field Forces), USAF y panel científico de la CIA",
     "place_en": "USA — Navy (Fifth Naval District), Army (Army Field Forces), USAF and CIA scientific panel"
   },
@@ -95,16 +98,19 @@
     {
       "name": "war.gov/UFO — DoW/Navy/Army/USAF/CIA, estudios tempranos de discos (DOW-UAP-D084 a D088, PURSUE Release 03)",
       "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
-      "note": "Los cinco documentos están embebidos en el visor de este caso."
+      "note": "Los cinco documentos están embebidos en el visor de este caso.",
+      "note_en": "The five documents are embedded in this case's viewer."
     },
     {
       "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal del Departamento de Guerra."
+      "note": "Portal del Departamento de Guerra.",
+      "note_en": "Department of War portal."
     },
     {
       "name": "USAF/AMC — «Project Sign Progress Report» (1948) y «Analysis of Flying Object Incidents in the US» (1948, 1949)",
-      "note": "Informes de inteligencia de la era Sign/Grudge (Wright-Patterson AMC). AARO UAP Records, release 04 (DOWUAPD097, DOWUAPD093, DOWUAPD094)."
+      "note": "Informes de inteligencia de la era Sign/Grudge (Wright-Patterson AMC). AARO UAP Records, release 04 (DOWUAPD097, DOWUAPD093, DOWUAPD094).",
+      "note_en": "Intelligence reports from the Sign/Grudge era (Wright-Patterson AMC). AARO UAP Records, release 04 (DOWUAPD097, DOWUAPD093, DOWUAPD094)."
     }
   ]
 }

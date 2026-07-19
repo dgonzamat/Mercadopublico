@@ -49,15 +49,18 @@
   "sources": [
     {
       "name": "Expediente de Project Blue Book — Redmond, Oregon, 24 de septiembre de 1959 (NARA)",
-      "note": "Incluye la secuencia de explicaciones oficiales (Venus / globo / datos insuficientes)"
+      "note": "Incluye la secuencia de explicaciones oficiales (Venus / globo / datos insuficientes)",
+      "note_en": "Includes the sequence of official explanations (Venus / balloon / insufficient data)"
     },
     {
       "name": "NICAP — expediente Redmond 1959",
-      "note": "Compila los logs de la FAA y los relatos de controladores que contradicen las explicaciones de la USAF"
+      "note": "Compila los logs de la FAA y los relatos de controladores que contradicen las explicaciones de la USAF",
+      "note_en": "Compiles the FAA logs and the controllers' accounts that contradict the USAF explanations"
     },
     {
       "name": "Registros de la FAA — Redmond Airport / Seattle ARTCC, 24 de septiembre de 1959",
-      "note": "Logs contemporáneos del reporte y del escalado a la defensa aérea"
+      "note": "Logs contemporáneos del reporte y del escalado a la defensa aérea",
+      "note_en": "Contemporary logs of the report and the escalation to air defense"
     }
   ],
   "posterior": {

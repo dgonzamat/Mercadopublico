@@ -47,22 +47,26 @@
     {
       "name": "Unredacted.info — Radar and Pilot Encounters with Unidentified Objects Over Panama Canal",
       "url": "https://www.unredacted.info/ufo/radar-and-pilot-encounters-with-unidentified-objects-over-panama-canal/",
-      "note": "Síntesis con citas del reporte de Adams y la cronología."
+      "note": "Síntesis con citas del reporte de Adams y la cronología.",
+      "note_en": "Synthesis with citations from Adams's report and the chronology."
     },
     {
       "name": "Internet Archive — 'Panama Canal Zone Radar Sighting – March 9 10, 1958' (documentación primaria escaneada)",
       "url": "https://archive.org/details/PanamaUFO",
-      "note": "Expediente primario digitalizado."
+      "note": "Expediente primario digitalizado.",
+      "note_en": "Digitized primary file."
     },
     {
       "name": "National Archives — Project Blue Book / UFOs (USAF)",
       "url": "https://www.archives.gov/research/military/air-force/ufos",
-      "note": "Marco del programa que archivó el caso."
+      "note": "Marco del programa que archivó el caso.",
+      "note_en": "Framework of the program that filed the case."
     },
     {
       "name": "Wikipedia — Howard Air Force Base (Canal Zone)",
       "url": "https://en.wikipedia.org/wiki/Howard_Air_Force_Base",
-      "note": "Base de origen del T-33 interceptor."
+      "note": "Base de origen del T-33 interceptor.",
+      "note_en": "Home base of the T-33 interceptor."
     }
   ],
   "posterior": {

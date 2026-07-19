@@ -59,21 +59,25 @@
   "sources": [
     {
       "name": "Ahmad Jamaludin, «A Summary of Unidentified Flying Objects and Related Events in Malaysia (1950–1980)», Center for UFO Studies (CUFOS), 1981",
-      "note": "Catálogo sistemático del investigador que documentó la oleada; base de la mayoría de las cifras."
+      "note": "Catálogo sistemático del investigador que documentó la oleada; base de la mayoría de las cifras.",
+      "note_en": "Systematic catalog by the investigator who documented the wave; the basis for most of the figures."
     },
     {
       "name": "Ahmad Jamaludin, «The Malaysian UFO Scene» / «A Further Report», Flying Saucer Review, Vol. 26, Nº 5 (enero de 1981)",
-      "note": "Incluye el encuentro en la base aérea de Kuantan."
+      "note": "Incluye el encuentro en la base aérea de Kuantan.",
+      "note_en": "Includes the encounter at Kuantan air base."
     },
     {
       "name": "«The Malaysian UFO Scene: A Further Report», archivo de UFO Evidence",
       "url": "http://www.ufoevidence.org/documents/doc1119.htm",
-      "note": "Reproduce material de Jamaludin sobre la casuística malaya de humanoides diminutos."
+      "note": "Reproduce material de Jamaludin sobre la casuística malaya de humanoides diminutos.",
+      "note_en": "Reproduces Jamaludin's material on the Malay casuistry of tiny humanoids."
     },
     {
       "name": "«1970: Aerial Invasion in Malaysia», Think About It Docs",
       "url": "https://www.thinkaboutitdocs.com/1970-aerial-invasion/",
-      "note": "Compilación del episodio escolar de agosto de 1970."
+      "note": "Compilación del episodio escolar de agosto de 1970.",
+      "note_en": "Compilation of the August 1970 schoolyard episode."
     }
   ],
   "documents": [

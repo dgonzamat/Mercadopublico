@@ -76,47 +76,56 @@
     {
       "name": "war.gov/ufo/ — Presidential Unsealing and Reporting System for UAP Encounters (portal oficial)",
       "url": "https://www.war.gov/ufo/",
-      "note": "Infraestructura primaria del sistema."
+      "note": "Infraestructura primaria del sistema.",
+      "note_en": "Primary infrastructure of the system."
     },
     {
       "name": "Department of War — 'Releases Unidentified Anomalous Phenomena Files in Historic Transparency Effort'",
       "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
-      "note": "Comunicado oficial del primer release."
+      "note": "Comunicado oficial del primer release.",
+      "note_en": "Official statement of the first release."
     },
     {
       "name": "Department of War — 'Publishes Third Release of Unidentified Anomalous Phenomena Files on WAR.GOV/UFO'",
       "url": "https://www.war.gov/News/Releases/Release/Article/4515408/department-of-war-publishes-third-release-of-unidentified-anomalous-phenomena-f/",
-      "note": "Comunicado oficial del tercer release (12 jun 2026)."
+      "note": "Comunicado oficial del tercer release (12 jun 2026).",
+      "note_en": "Official statement of the third release (Jun 12, 2026)."
     },
     {
       "name": "Newsweek — 'UFO Files: 5 Key Revelations as Pentagon Drops Third Batch of Records'",
       "url": "https://www.newsweek.com/ufo-files-pentagon-releases-third-batch-records-uap-pete-hegseth-trump-12064856",
-      "note": "Cobertura del contenido del tercer release."
+      "note": "Cobertura del contenido del tercer release.",
+      "note_en": "Coverage of the third release's content."
     },
     {
       "name": "Loeb, A. — 'UAP Disclosure #3 is the Most Intriguing Release Thus Far!' (Medium, jun 2026)",
       "url": "https://avi-loeb.medium.com/uap-disclosure-3-is-most-intriguing-release-thus-far-e4643013245b",
-      "note": "Análisis del reporte de Kosloski y del énfasis en orbes plasma-like."
+      "note": "Análisis del reporte de Kosloski y del énfasis en orbes plasma-like.",
+      "note_en": "Analysis of Kosloski's report and the emphasis on plasma-like orbs."
     },
     {
       "name": "New Space Economy — 'Pentagon Releases Third Batch of Declassified UAP Files: Glowing Orbs and Unresolved Mysteries' (13 jun 2026)",
       "url": "https://newspaceeconomy.ca/2026/06/13/pentagon-releases-third-batch-of-declassified-uap-files-glowing-orbs-and-unresolved-mysteries-in-latest-government-disclosure/",
-      "note": "Documenta el reporte de Kosloski: mother orb, ~40% sin resolver."
+      "note": "Documenta el reporte de Kosloski: mother orb, ~40% sin resolver.",
+      "note_en": "Documents Kosloski's report: mother orb, ~40% unresolved."
     },
     {
       "name": "NBC News — 'Pentagon releases declassified UFO files including videos and photos held by the government for decades'",
       "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204",
-      "note": "Cobertura periodística del release."
+      "note": "Cobertura periodística del release.",
+      "note_en": "Press coverage of the release."
     },
     {
       "name": "Wikipedia — 'United States UFO files' (entry on the PURSUE system)",
       "url": "https://en.wikipedia.org/wiki/United_States_UFO_files",
-      "note": "Síntesis enciclopédica del sistema y su contenido."
+      "note": "Síntesis enciclopédica del sistema y su contenido.",
+      "note_en": "Encyclopedic synthesis of the system and its content."
     },
     {
       "name": "Morningstar / PR Newswire — 'Push for UAP transparency intensifies' (28 may 2026)",
       "url": "https://www.morningstar.com/news/pr-newswire/20260528ny70439/push-for-uap-ufo-transparency-intensifies-as-members-of-congress-and-whistleblowers-call-for-release-of-groundbreaking-conclusive-files",
-      "note": "Documenta la presión continuada para release específico post-PURSUE."
+      "note": "Documenta la presión continuada para release específico post-PURSUE.",
+      "note_en": "Documents the continued pressure for a specific post-PURSUE release."
     }
   ]
 }

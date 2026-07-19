@@ -50,21 +50,25 @@
     {
       "name": "UFO Research Queensland — 'The Knowles Family UFO Incident 1988'",
       "url": "https://uforq.org/the-knowles-family-ufo-incident-1988/",
-      "note": "Reconstrucción detallada con cronología y entrevistas."
+      "note": "Reconstrucción detallada con cronología y entrevistas.",
+      "note_en": "Detailed reconstruction with chronology and interviews."
     },
     {
       "name": "UFO Evidence — Knowles Family Mundrabilla case file",
       "url": "http://www.ufoevidence.org/cases/case1090.htm",
-      "note": "Archivo con material primario y análisis."
+      "note": "Archivo con material primario y análisis.",
+      "note_en": "Archive with primary material and analysis."
     },
     {
       "name": "The Museum of Lost Things — 'Aliens on the Nullarbor'",
       "url": "https://www.museumoflost.com/aliens-on-the-nullarbor/",
-      "note": "Cobertura cultural y geográfica del caso."
+      "note": "Cobertura cultural y geográfica del caso.",
+      "note_en": "Cultural and geographic coverage of the case."
     },
     {
       "name": "Chalker, B. — 'The Knowles Family Encounter' (multiple articles, 1988+)",
-      "note": "Investigación del ufólogo australiano más riguroso del periodo."
+      "note": "Investigación del ufólogo australiano más riguroso del periodo.",
+      "note_en": "Investigation by the most rigorous Australian ufologist of the period."
     }
   ],
   "posterior": {

@@ -56,27 +56,32 @@
   "sources": [
     {
       "name": "RAAF — informe de la investigación sobre Tully Saucer Nests (1966)",
-      "note": "Documento militar australiano primario."
+      "note": "Documento militar australiano primario.",
+      "note_en": "Primary Australian military document."
     },
     {
       "name": "Chalker, B. — 'The Tully Saucer Nest' (Project 1947 archive)",
       "url": "https://www.project1947.com/forum/bctully.htm",
-      "note": "Investigación sostenida del caso con muestras y entrevistas."
+      "note": "Investigación sostenida del caso con muestras y entrevistas.",
+      "note_en": "Sustained investigation of the case with samples and interviews."
     },
     {
       "name": "theozfiles — 'The 1966 Tully Flying Saucer Nest Revisited' (2017)",
       "url": "https://theozfiles.blogspot.com/2017/07/the-1966-tully-flying-saucer-nest.html",
-      "note": "Reconstrucción reciente con documentación adicional."
+      "note": "Reconstrucción reciente con documentación adicional.",
+      "note_en": "Recent reconstruction with additional documentation."
     },
     {
       "name": "UFO Research Queensland — 'The Tully Saucer Nest 1966'",
       "url": "https://uforq.org/the-tully-saucer-nest/",
-      "note": "Archivo de UFOR Queensland."
+      "note": "Archivo de UFOR Queensland.",
+      "note_en": "UFOR Queensland archive."
     },
     {
       "name": "UFO Evidence — '1966 Tully Saucer Nest' case file",
       "url": "http://www.ufoevidence.org/Cases/case65.htm",
-      "note": "Documentación primaria del caso."
+      "note": "Documentación primaria del caso.",
+      "note_en": "Primary documentation of the case."
     }
   ],
   "documents": [

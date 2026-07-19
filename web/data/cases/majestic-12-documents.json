@@ -48,12 +48,14 @@
     {
       "name": "FBI Records: The Vault — Majestic 12",
       "url": "https://vault.fbi.gov/Majestic%2012",
-      "note": "Expediente del FBI con el veredicto 'bogus' de la AFOSI sobre los documentos MJ-12."
+      "note": "Expediente del FBI con el veredicto 'bogus' de la AFOSI sobre los documentos MJ-12.",
+      "note_en": "FBI file with the AFOSI's 'bogus' verdict on the MJ-12 documents."
     },
     {
       "name": "Wikipedia — Majestic 12",
       "url": "https://en.wikipedia.org/wiki/Majestic_12",
-      "note": "Síntesis de la historia, la lista de miembros y el análisis de falsificación."
+      "note": "Síntesis de la historia, la lista de miembros y el análisis de falsificación.",
+      "note_en": "Synthesis of the history, the membership list and the forgery analysis."
     }
   ],
   "documents": [

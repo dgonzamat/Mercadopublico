@@ -46,19 +46,23 @@
   "sources": [
     {
       "name": "Expediente de Project Blue Book — Haneda AFB, 5-6 de agosto de 1952 (NARA)",
-      "note": "Caso oficial «unknown»; incluye los reportes de torre, GCI e interceptor"
+      "note": "Caso oficial «unknown»; incluye los reportes de torre, GCI e interceptor",
+      "note_en": "Official «unknown» case; includes the tower, GCI and interceptor reports"
     },
     {
       "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
-      "note": "Relato del caso por el entonces jefe de Blue Book"
+      "note": "Relato del caso por el entonces jefe de Blue Book",
+      "note_en": "Account of the case by the then-head of Blue Book"
     },
     {
       "name": "Condon Report (1968) — sección de casos de radar",
-      "note": "Reevaluación tardía (Capella + ducting) y base de la crítica metodológica posterior"
+      "note": "Reevaluación tardía (Capella + ducting) y base de la crítica metodológica posterior",
+      "note_en": "Late reassessment (Capella + ducting) and basis of the later methodological critique"
     },
     {
       "name": "NICAP — expediente Haneda/Tokyo Bay 1952",
-      "note": "Compilación documental y análisis del canal triple"
+      "note": "Compilación documental y análisis del canal triple",
+      "note_en": "Documentary compilation and triple-channel analysis"
     }
   ],
   "posterior": {

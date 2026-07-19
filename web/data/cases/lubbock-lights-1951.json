@@ -44,12 +44,14 @@
     {
       "name": "Wikipedia — Lubbock Lights",
       "url": "https://en.wikipedia.org/wiki/Lubbock_Lights",
-      "note": "Cronología, fotos de Carl Hart y la explicación de aves."
+      "note": "Cronología, fotos de Carl Hart y la explicación de aves.",
+      "note_en": "Chronology, Carl Hart's photos and the birds explanation."
     },
     {
       "name": "UFO Casebook — The Lubbock Lights, 1951",
       "url": "https://www.ufocasebook.com/lubbocklights.html",
-      "note": "Síntesis del caso y testimonios."
+      "note": "Síntesis del caso y testimonios.",
+      "note_en": "Synthesis of the case and testimony."
     }
   ],
   "posterior": {

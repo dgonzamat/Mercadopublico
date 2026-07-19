@@ -53,17 +53,20 @@
     {
       "name": "Wikipedia — Chiles-Whitted UFO encounter",
       "url": "https://en.wikipedia.org/wiki/Chiles-Whitted_UFO_encounter",
-      "note": "Cronología, testimonios y la explicación de meteoro."
+      "note": "Cronología, testimonios y la explicación de meteoro.",
+      "note_en": "Chronology, testimony and the meteor explanation."
     },
     {
       "name": "The Black Vault — Project Blue Book: The Chiles-Whitted UFO Encounter (documentos)",
       "url": "https://www.theblackvault.com/documentarchive/project-blue-book-the-chiles-whitted-ufo-encounter-july-24-1948-montgomery-alabama/",
-      "note": "Expediente Blue Book digitalizado."
+      "note": "Expediente Blue Book digitalizado.",
+      "note_en": "Digitized Blue Book file."
     },
     {
       "name": "UFO Evidence — The Chiles-Whitted Case (Montgomery, 1948)",
       "url": "http://www.ufoevidence.org/cases/case116.htm",
-      "note": "Síntesis del caso y su rol en el Estimate of the Situation."
+      "note": "Síntesis del caso y su rol en el Estimate of the Situation.",
+      "note_en": "Synthesis of the case and its role in the Estimate of the Situation."
     }
   ],
   "documents": [

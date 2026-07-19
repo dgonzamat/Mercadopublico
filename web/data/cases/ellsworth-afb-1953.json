@@ -48,15 +48,18 @@
   "sources": [
     {
       "name": "Edward J. Ruppelt — The Report on Unidentified Flying Objects (1956)",
-      "note": "El entonces jefe de Blue Book lo llama «el mejor reporte OVNI en los archivos de la Fuerza Aérea»"
+      "note": "El entonces jefe de Blue Book lo llama «el mejor reporte OVNI en los archivos de la Fuerza Aérea»",
+      "note_en": "The then-head of Blue Book calls it «the best UFO report in the Air Force files»"
     },
     {
       "name": "Expediente de Project Blue Book — Ellsworth AFB / Rapid City, 5-6 de agosto de 1953 (NARA)",
-      "note": "Caso oficial «unknown»; incluye reportes de GOC, GCI e interceptores"
+      "note": "Caso oficial «unknown»; incluye reportes de GOC, GCI e interceptores",
+      "note_en": "Official «unknown» case; includes GOC, GCI and interceptor reports"
     },
     {
       "name": "NICAP — expediente Ellsworth/Rapid City 1953",
-      "note": "Compilación documental del caso radar-visual y análisis del canal múltiple"
+      "note": "Compilación documental del caso radar-visual y análisis del canal múltiple",
+      "note_en": "Documentary compilation of the radar-visual case and multi-channel analysis"
     }
   ],
   "posterior": {

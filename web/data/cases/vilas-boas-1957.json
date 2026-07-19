@@ -17,7 +17,9 @@
   "probability": 22,
   "summary": "La noche del 16 de octubre de 1957, el agricultor Antônio Vilas-Boas, de 23 años, dijo haber sido sacado a la fuerza de su tractor por figuras de baja estatura y llevado al interior de un objeto aterrizado en São Francisco de Sales, donde fue examinado y sometido a una interacción de tipo reproductivo. Lo que distingue al caso de un relato más es que el médico Olavo Fontes lo examinó meses después y documentó lesiones cutáneas y síntomas compatibles con exposición a radiación. Es, cronológicamente, la primera abducción moderna documentada —cuatro años antes de Betty y Barney Hill— y un hito fundacional de toda la casuística posterior.",
   "summary_en": "On the night of 16 October 1957, 23-year-old farmer Antônio Vilas-Boas said he was forcibly taken from his tractor by short figures and brought inside a landed object in São Francisco de Sales, where he was examined and subjected to a reproductive-type interaction. What sets the case apart from a mere tale is that physician Olavo Fontes examined him months later and documented skin lesions and symptoms consistent with radiation exposure. It is, chronologically, the first documented modern abduction —four years before Betty and Barney Hill— and a foundational landmark of all subsequent casework.",
-  "patterns": ["8a"],
+  "patterns": [
+    "8a"
+  ],
   "epistemicStatus": "documented",
   "category": "contactee",
   "whatHappened": "Antônio Vilas-Boas era un agricultor de 23 años —que más tarde estudiaría Derecho y ejercería como abogado— y que en 1957 trabajaba de noche con el tractor en la hacienda familiar, cerca de São Francisco de Sales, en el estado brasileño de Minas Gerais. Según el relato que sostuvo desde el principio, en la madrugada del 16 de octubre de 1957 vio descender una luz roja, una especie de 'estrella roja', sobre el campo; el motor del tractor se apagó y un objeto de forma ovalada con patas aterrizó cerca. Antes de poder huir, dijo, fue sujetado por figuras de aproximadamente metro y medio, vestidas con trajes ajustados y cascos, que lo introdujeron en la nave.\n\nEn su testimonio, Vilas-Boas describió haber sido desnudado, untado con un líquido, sometido a una extracción de sangre del mentón y dejado solo en una habitación, donde más tarde —según su relato— ocurrió un encuentro sexual con una mujer de rasgos no del todo humanos, tras el cual ella señaló su propio vientre y luego el cielo, en un gesto que él interpretó como que el propósito había sido reproductivo. Antes de ser liberado afirmó haber sido paseado por el interior del aparato e intentar, sin éxito, llevarse un objeto como prueba. El episodio, narrado con detalle clínico, contenía ya casi todos los elementos que la cultura de la abducción haría canónicos una década después: parálisis del vehículo, captura por seres pequeños, examen físico, toma de muestras biológicas y un propósito reproductivo.\n\nLo que convierte el caso en un hito documental es lo que vino después. A comienzos de 1958, el médico brasileño Olavo T. Fontes —de la Escuela Nacional de Medicina y corresponsal del grupo estadounidense APRO— entrevistó y examinó a Vilas-Boas. Fontes registró náuseas, debilidad, ardor ocular persistente, dolores de cabeza, pérdida de apetito y, sobre todo, lesiones cutáneas: nódulos violáceos con un poro central que supuraban un líquido amarillento y que aparecían ante el menor roce. Su diagnóstico fue que los síntomas eran compatibles con una exposición a una dosis de radiación, una forma leve de 'enfermedad por radiación'. El expediente, traducido y publicado años después en la británica Flying Saucer Review, fijó el caso en la literatura internacional.\n\nConviene leerlo con el mismo rigor que el resto del corpus, y la crítica escéptica es concreta. El investigador Peter Rogerson señaló que en noviembre de 1957 —semanas después del supuesto suceso, pero antes de que el relato ganara difusión en 1958— la popular revista brasileña O Cruzeiro publicó un artículo sobre abducción extraterrestre, y planteó que Vilas-Boas pudo posdatar o moldear su experiencia para darle credibilidad, además de estar influido, como tantos contactados de la época, por las narrativas sensacionalistas de George Adamski. La propia APRO, al examinar los síntomas físicos, no encontró evidencia definitiva de un origen extraterrestre. En suma: es un relato de un solo testigo, extraordinario y de fuerte carga folclórica y sexual, sin corroboración independiente del evento mismo. Pero a diferencia de la mayoría de los relatos de abducción tempranos, dejó un rastro médico contemporáneo —síntomas y lesiones examinados por un facultativo— que lo eleva por encima de la pura anécdota, aunque no lo confirme.",
@@ -41,7 +43,8 @@
   "sources": [
     {
       "name": "Fontes, O. T. / APRO — Informe médico y entrevista (1958), reproducido en Flying Saucer Review",
-      "note": "Examen clínico contemporáneo; fuente primaria del rastro médico del caso."
+      "note": "Examen clínico contemporáneo; fuente primaria del rastro médico del caso.",
+      "note_en": "Contemporary clinical examination; primary source of the case's medical trail."
     },
     {
       "name": "Unidentified Phenomena — 'Antonio Villas Boas Abduction (1957)'",
@@ -51,7 +54,7 @@
   "posterior": {
     "mundano_natural": 0.57,
     "humana_clasificada": 0.02,
-    "adversaria": 0.0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.2,
     "indet": 0.2

@@ -55,7 +55,8 @@
     },
     {
       "name": "Air Force Manual 55-11 (CIRVIS)",
-      "note": "Communications Instructions Reporting Vital Intelligence Sightings"
+      "note": "Communications Instructions Reporting Vital Intelligence Sightings",
+      "note_en": "Communications Instructions Reporting Vital Intelligence Sightings"
     }
   ],
   "sources_en": [

@@ -96,12 +96,14 @@
     {
       "name": "war.gov/UFO — expediente Colorado Springs 2022 (FBI-UAP-D001/002/003 + ICA-UAP-D001, PURSUE Release 03)",
       "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf",
-      "note": "FD-302, FD-1057, representación digital y análisis de inteligencia (objeto sobre Cheyenne Mountain, 15 feb 2022)."
+      "note": "FD-302, FD-1057, representación digital y análisis de inteligencia (objeto sobre Cheyenne Mountain, 15 feb 2022).",
+      "note_en": "FD-302, FD-1057, digital representation and intelligence analysis (object over Cheyenne Mountain, Feb 15, 2022)."
     },
     {
       "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal del Departamento de Guerra; los 4 documentos están embebidos en el visor de este caso."
+      "note": "Portal del Departamento de Guerra; los 4 documentos están embebidos en el visor de este caso.",
+      "note_en": "Department of War portal; the 4 documents are embedded in this case's viewer."
     }
   ],
   "misidSubtype": "terrestre_otros"

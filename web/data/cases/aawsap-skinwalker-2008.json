@@ -64,44 +64,53 @@
     {
       "name": "AARO — Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1 (febrero 2024)",
       "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
-      "note": "Historical Record Report (Vol. 1) de AARO: revisa AAWSAP/AATIP y concluye que no encontró evidencia de tecnología de origen no humano. El PDF se distribuye vía media.defense.gov."
+      "note": "Historical Record Report (Vol. 1) de AARO: revisa AAWSAP/AATIP y concluye que no encontró evidencia de tecnología de origen no humano. El PDF se distribuye vía media.defense.gov.",
+      "note_en": "AARO Historical Record Report (Vol. 1): reviews AAWSAP/AATIP and concludes it found no evidence of technology of non-human origin. The PDF is distributed via media.defense.gov."
     },
     {
       "name": "Jacques Vallée — video grabado a pedido de James Fox (jun 2026): la base CAPELLA y los ~260.000 reportes screened de AAWSAP/BAASS",
-      "note": "Testimonio de primera mano del arquitecto del sistema de datos. La base sigue clasificada; la cifra de 'criaturas no-humanas' no es verificable por terceros. Reportado por IBTimes."
+      "note": "Testimonio de primera mano del arquitecto del sistema de datos. La base sigue clasificada; la cifra de 'criaturas no-humanas' no es verificable por terceros. Reportado por IBTimes.",
+      "note_en": "First-hand testimony of the data system's architect. The database remains classified; the 'non-human creatures' figure is not verifiable by third parties. Reported by IBTimes."
     },
     {
       "name": "Cooper, H. · Blumenthal, R. · Kean, L. — 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program' (NYT, 16 dic 2017)",
       "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
-      "note": "Investigación primaria que reveló AATIP — programa heredero del AAWSAP."
+      "note": "Investigación primaria que reveló AATIP — programa heredero del AAWSAP.",
+      "note_en": "Primary investigation that revealed AATIP — the successor program to AAWSAP."
     },
     {
       "name": "The Black Vault — Defense Intelligence Reference Documents (DIRDs) AAWSAP",
       "url": "https://www.theblackvault.com/documentarchive/the-defense-intelligence-reference-documents/",
-      "note": "Archivo desclasificado de los 38 DIRDs vía FOIA por John Greenewald."
+      "note": "Archivo desclasificado de los 38 DIRDs vía FOIA por John Greenewald.",
+      "note_en": "Declassified archive of the 38 DIRDs via FOIA by John Greenewald."
     },
     {
       "name": "Reid, H. — Letter to Deputy Secretary of Defense William Lynn (24 jun 2009)",
       "url": "https://www.nytimes.com/interactive/2017/12/16/us/politics/document-Letter-From-Harry-Reid.html",
-      "note": "Carta archivada por NYT: solicita SAP designation para AAWSAP."
+      "note": "Carta archivada por NYT: solicita SAP designation para AAWSAP.",
+      "note_en": "Letter archived by the NYT: requests SAP designation for AAWSAP."
     },
     {
       "name": "Lacatski, J. T. · Kelleher, C. A. · Knapp, G. — 'Skinwalkers at the Pentagon: An Insiders' Account of the Secret Government UAP Program' (RTMA, 2021)",
-      "note": "Testimonio firmado por el director DIA del programa, el responsable científico BAASS y el periodista. ISBN 978-1737457404."
+      "note": "Testimonio firmado por el director DIA del programa, el responsable científico BAASS y el periodista. ISBN 978-1737457404.",
+      "note_en": "Testimony signed by the program's DIA director, the BAASS scientific lead and the journalist. ISBN 978-1737457404."
     },
     {
       "name": "Kelleher, C. A. · Knapp, G. — «Hunt for the Skinwalker: Science Confronts the Unexplained at a Remote Ranch in Utah» (Paraview Pocket Books, 2005)",
-      "note": "Relato del director de proyecto del NIDS y del periodista; documenta la vigilancia y la metodología de provocación 1996–2004. ISBN 978-1416505211. No revisado por pares."
+      "note": "Relato del director de proyecto del NIDS y del periodista; documenta la vigilancia y la metodología de provocación 1996–2004. ISBN 978-1416505211. No revisado por pares.",
+      "note_en": "Account by the NIDS project director and the journalist; documents the surveillance and the provocation methodology, 1996–2004. ISBN 978-1416505211. Not peer-reviewed."
     },
     {
       "name": "«The Secret of Skinwalker Ranch» — serie de History (2020–presente)",
       "url": "https://en.wikipedia.org/wiki/The_Secret_of_Skinwalker_Ranch",
-      "note": "Filma los experimentos del equipo de Travis Taylor y Erik Bard. Producción televisiva, no fuente revisada por pares."
+      "note": "Filma los experimentos del equipo de Travis Taylor y Erik Bard. Producción televisiva, no fuente revisada por pares.",
+      "note_en": "Films the experiments of the Travis Taylor and Erik Bard team. Television production, not a peer-reviewed source."
     },
     {
       "name": "«Skinwalker Ranch: Investigating Localized Electromagnetic and Ionizing-Radiation Anomalies — Observations, Deep Dive, and an Adapted Test Protocol» (ResearchGate, 2025)",
       "url": "https://www.researchgate.net/publication/396482451_Skinwalker_Ranch_Investigating_Localized_Electromagnetic_and_Ionizing-Radiation_Anomalies_Observations_Deep_Dive_and_an_Adapted_Test_Protocol_-technical",
-      "note": "Documento técnico abierto (no revisado por pares) que propone la hipótesis P³L y un protocolo de cuatro experimentos replicables."
+      "note": "Documento técnico abierto (no revisado por pares) que propone la hipótesis P³L y un protocolo de cuatro experimentos replicables.",
+      "note_en": "Open technical document (not peer-reviewed) proposing the P³L hypothesis and a protocol of four replicable experiments."
     }
   ],
   "mundanoType": "misid",

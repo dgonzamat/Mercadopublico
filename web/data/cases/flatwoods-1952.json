@@ -47,21 +47,25 @@
     {
       "name": "Flatwoods monster — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Flatwoods_monster",
-      "note": "Síntesis del episodio, los testigos y la explicación natural (meteoro + baliza + búho)."
+      "note": "Síntesis del episodio, los testigos y la explicación natural (meteoro + baliza + búho).",
+      "note_en": "Synthesis of the episode, the witnesses and the natural explanation (meteor + beacon + owl)."
     },
     {
       "name": "Nickell, J. — investigación del caso Flatwoods (Committee for Skeptical Inquiry, 2000)",
-      "note": "Reconstrucción que identifica el meteoro, la baliza pulsante y el búho como fuentes del relato; atribuye la 'criatura' a la silueta de un búho magnificada por la ansiedad."
+      "note": "Reconstrucción que identifica el meteoro, la baliza pulsante y el búho como fuentes del relato; atribuye la 'criatura' a la silueta de un búho magnificada por la ansiedad.",
+      "note_en": "Reconstruction identifying the meteor, the pulsing beacon and the owl as the sources of the account; attributes the 'creature' to an owl's silhouette magnified by anxiety."
     },
     {
       "name": "Snopes — «Flatwoods Monster, Mothman, Owl»",
       "url": "https://www.snopes.com/articles/383097/flatwoods-monster-mothman-owl/",
-      "note": "Revisión de la hipótesis del búho y de cómo el pánico y la oscuridad moldearon la descripción."
+      "note": "Revisión de la hipótesis del búho y de cómo el pánico y la oscuridad moldearon la descripción.",
+      "note_en": "Review of the owl hypothesis and of how panic and darkness shaped the description."
     },
     {
       "name": "HISTORY — «In 1952, the Flatwoods Monster Terrified 6 Kids, a Mom, a Dog—and the Nation»",
       "url": "https://www.history.com/articles/flatwoods-monster-west-virginia",
-      "note": "Relato histórico del episodio y su impacto en la prensa de 1952."
+      "note": "Relato histórico del episodio y su impacto en la prensa de 1952.",
+      "note_en": "Historical account of the episode and its impact on the 1952 press."
     }
   ],
   "mundanoType": "misid",

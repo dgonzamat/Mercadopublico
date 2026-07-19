@@ -45,16 +45,19 @@
     {
       "name": "UFO sightings in Brazil — Wikipedia (sección Fort Itaipu)",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_Brazil",
-      "note": "Síntesis del caso dentro del panorama de avistamientos brasileños, con referencias."
+      "note": "Síntesis del caso dentro del panorama de avistamientos brasileños, con referencias.",
+      "note_en": "Synthesis of the case within the panorama of Brazilian sightings, with references."
     },
     {
       "name": "Fontes, O. — reportes a APRO (Aerial Phenomena Research Organization), fines de los años 1950",
-      "note": "Canal de origen del caso: el médico y ufólogo brasileño que lo difundió. La mayor parte de los detalles descansan en esta cadena de segunda mano."
+      "note": "Canal de origen del caso: el médico y ufólogo brasileño que lo difundió. La mayor parte de los detalles descansan en esta cadena de segunda mano.",
+      "note_en": "Origin channel of the case: the Brazilian physician and ufologist who disseminated it. Most of the details rest on this second-hand chain."
     },
     {
       "name": "Randle, K. — «Fort Itaipu and Olavo Fontes Revisited» (A Different Perspective, 2016)",
       "url": "http://kevinrandle.blogspot.com/2016/06/fort-itaipu-and-olavo-fontes-revisited.html",
-      "note": "Revisión escéptica que rastrea las fuentes y señala la ausencia de un documento primario; recoge el desmentido atribuido al coronel Erasmo Dias."
+      "note": "Revisión escéptica que rastrea las fuentes y señala la ausencia de un documento primario; recoge el desmentido atribuido al coronel Erasmo Dias.",
+      "note_en": "Skeptical review that traces the sources and notes the absence of a primary document; records the denial attributed to Colonel Erasmo Dias."
     }
   ],
   "mundanoType": "fraude",

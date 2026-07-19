@@ -52,12 +52,14 @@
     {
       "name": "AARO — 'History and Origin of KONA BLUE' (informe oficial)",
       "url": "https://www.aaro.mil/Portals/136/PDFs/UAP_RECORDS_RESEARCH/History_and_Origin_of_KONA_BLUE_FINAL_508.pdf",
-      "note": "Documento primario oficial de la AARO."
+      "note": "Documento primario oficial de la AARO.",
+      "note_en": "Official AARO primary document."
     },
     {
       "name": "The Black Vault — 'DoD Releases KONA BLUE Documents'",
       "url": "https://www.theblackvault.com/documentarchive/dod-releases-kona-blue-documents/",
-      "note": "Archivo de los documentos desclasificados."
+      "note": "Archivo de los documentos desclasificados.",
+      "note_en": "Archive of the declassified documents."
     },
     {
       "name": "NewsNation — 'What was the Kona Blue program, and does it mean UFOs exist?'",

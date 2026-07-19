@@ -52,15 +52,18 @@
   "sources": [
     {
       "name": "Cash et al. v. United States, Civil Action H-81-1646, US District Court Southern District of Texas",
-      "note": "Court record federal público de la demanda y su desestimación en 1986."
+      "note": "Court record federal público de la demanda y su desestimación en 1986.",
+      "note_en": "Public federal court record of the lawsuit and its 1986 dismissal."
     },
     {
       "name": "Schuessler, John F. 'The Cash-Landrum UFO Incident' (1998)",
-      "note": "Investigación primaria MUFON sobre el caso, con records médicos y testimonios."
+      "note": "Investigación primaria MUFON sobre el caso, con records médicos y testimonios.",
+      "note_en": "Primary MUFON investigation of the case, with medical records and testimony."
     },
     {
       "name": "MD Anderson Cancer Center: records médicos de Betty Cash (1981-1998)",
-      "note": "Seguimiento clínico institucional de las lesiones."
+      "note": "Seguimiento clínico institucional de las lesiones.",
+      "note_en": "Institutional clinical follow-up of the injuries."
     }
   ],
   "documents": [

@@ -1,7 +1,9 @@
 {
   "id": "foo-fighters-1944",
   "num": 213,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Foo Fighters",
   "name_en": "Foo Fighters",
   "year_start": 1944,
@@ -77,12 +79,14 @@
     {
       "name": "Foo fighter — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Foo_fighter",
-      "note": "Cronología, el 415th NFS, la cobertura de prensa y las explicaciones consideradas."
+      "note": "Cronología, el 415th NFS, la cobertura de prensa y las explicaciones consideradas.",
+      "note_en": "Chronology, the 415th NFS, the press coverage and the explanations considered."
     },
     {
       "name": "Smithsonian — 'What Were the Mysterious Foo Fighters Sighted by WWII Night Flyers?'",
       "url": "https://www.smithsonianmag.com/air-space-magazine/what-were-mysterious-foo-fighters-sighted-ww2-night-flyers-180959847/",
-      "note": "Reseña histórica del fenómeno y sus testigos."
+      "note": "Reseña histórica del fenómeno y sus testigos.",
+      "note_en": "Historical review of the phenomenon and its witnesses."
     }
   ]
 }

@@ -62,24 +62,29 @@
   "sources": [
     {
       "name": "Ballester Olmos, V.-J. — 'Expedientes Insólitos' (Temas de Hoy, 1995)",
-      "note": "Libro de referencia escrito por el coordinador civil del proceso; presenta y analiza los expedientes desclasificados."
+      "note": "Libro de referencia escrito por el coordinador civil del proceso; presenta y analiza los expedientes desclasificados.",
+      "note_en": "Reference book written by the civilian coordinator of the process; presents and analyzes the declassified files."
     },
     {
       "name": "Ballester Olmos, V.-J. — FOTOCAT Project archive (online)",
       "url": "https://fotocat.blogspot.com/",
-      "note": "Archivo público continuado del coordinador del proceso; incluye documentación del MOA desclasificada."
+      "note": "Archivo público continuado del coordinador del proceso; incluye documentación del MOA desclasificada.",
+      "note_en": "Ongoing public archive of the process coordinator; includes declassified MOA documentation."
     },
     {
       "name": "Ejército del Aire — Archivo del Cuartel General (Madrid)",
-      "note": "Custodio oficial de los expedientes UAP sanitizados; consultable por investigadores acreditados."
+      "note": "Custodio oficial de los expedientes UAP sanitizados; consultable por investigadores acreditados.",
+      "note_en": "Official custodian of the sanitized UAP files; consultable by accredited researchers."
     },
     {
       "name": "Ballester Olmos, V.-J. & Vallée, J. — 'Norway's Project Hessdalen as a Reference for the Instrumented Study of UAP' (referencia comparada)",
-      "note": "Texto académico que sitúa el proceso español en el mapa comparado de programas institucionales UAP."
+      "note": "Texto académico que sitúa el proceso español en el mapa comparado de programas institucionales UAP.",
+      "note_en": "Academic text situating the Spanish process within the comparative map of institutional UAP programs."
     },
     {
       "name": "Anuario Estadístico del Ejército del Aire — series 1990s",
-      "note": "Documentación oficial del MOA con referencias institucionales al proceso."
+      "note": "Documentación oficial del MOA con referencias institucionales al proceso.",
+      "note_en": "Official MOA documentation with institutional references to the process."
     }
   ],
   "documents": [

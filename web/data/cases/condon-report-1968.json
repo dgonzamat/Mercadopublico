@@ -1,7 +1,9 @@
 {
   "id": "condon-report-1968",
   "num": 186,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "Condon Report · estudio USAF–Universidad de Colorado",
   "name_en": "Condon Report · USAF–University of Colorado study",
   "year_start": 1968,
@@ -19,12 +21,12 @@
   "epistemicStatus": "documented",
   "probability": 60,
   "posterior": {
-    "mundano_natural": 0.70,
+    "mundano_natural": 0.7,
     "humana_clasificada": 0,
     "adversaria": 0,
     "nohumano_encubierto": 0,
     "nohumano_abierto": 0,
-    "indet": 0.30
+    "indet": 0.3
   },
   "summary": "'Scientific Study of Unidentified Flying Objects' (1968), dirigido por el físico Edward Condon en la Universidad de Colorado con financiamiento de la USAF. Su conclusión —que el estudio de los OVNIs no aporta valor científico— cerró el Project Blue Book en 1969. Pero su credibilidad quedó dañada: el 'memo Low' reveló un sesgo de diseño, y cerca de un tercio de los casos quedó sin explicación pese a la conclusión.",
   "summary_en": "'Scientific Study of Unidentified Flying Objects' (1968), led by physicist Edward Condon at the University of Colorado with USAF funding. Its conclusion —that studying UFOs offers no scientific value— closed Project Blue Book in 1969. But its credibility was damaged: the 'Low memo' revealed a design bias, and roughly a third of cases remained unexplained despite the conclusion.",
@@ -57,7 +59,8 @@
     {
       "name": "'Scientific Study of Unidentified Flying Objects' (Condon Report) — texto completo (archive.org)",
       "url": "https://archive.org/details/scientificstudyo0000unse",
-      "note": "Documento primario."
+      "note": "Documento primario.",
+      "note_en": "Primary document."
     },
     {
       "name": "University of Colorado / NCAR — registro del Condon Committee",
@@ -65,7 +68,8 @@
     },
     {
       "name": "USAF (AFOSR/SAB) — reunión con el Dr. James McDonald y revisión de Blue Book (17 abr 1967, Pentágono)",
-      "note": "Proceso de la Fuerza Aérea previo al estudio de Colorado, con el Scientific Advisory Board y NASA. AARO UAP Records, release 04 (DOWUAPD092)."
+      "note": "Proceso de la Fuerza Aérea previo al estudio de Colorado, con el Scientific Advisory Board y NASA. AARO UAP Records, release 04 (DOWUAPD092).",
+      "note_en": "Air Force process prior to the Colorado study, with the Scientific Advisory Board and NASA. AARO UAP Records, release 04 (DOWUAPD092)."
     }
   ],
   "documents": [

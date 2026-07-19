@@ -47,22 +47,26 @@
     {
       "name": "NICAP — «The BOAC Labrador Sighting» (caso documentado)",
       "url": "http://www.nicap.org/reports/boac.htm",
-      "note": "Ficha del caso con el relato de Howard, la cronología del vuelo y las referencias de prensa de 1954."
+      "note": "Ficha del caso con el relato de Howard, la cronología del vuelo y las referencias de prensa de 1954.",
+      "note_en": "Case file with Howard's account, the flight chronology and the 1954 press references."
     },
     {
       "name": "Study of an Unusual Phenomenon Observed by BOAC Aircrew over Labrador (NARCAP / M. Shough)",
       "url": "http://www.martinshough.com/aerialphenomena/BOAC%20aircrew%20sighting.pdf",
-      "note": "Estudio técnico que reconstruye la geometría del avistamiento y discute las hipótesis atmosféricas y el supuesto radar."
+      "note": "Estudio técnico que reconstruye la geometría del avistamiento y discute las hipótesis atmosféricas y el supuesto radar.",
+      "note_en": "Technical study reconstructing the sighting geometry and discussing the atmospheric hypotheses and the alleged radar."
     },
     {
       "name": "FATE Magazine — «BOAC's Flying Jellyfish» (noviembre 1954, vía Project 1947)",
       "url": "http://www.project1947.com/fig/fate_11_54.htm",
-      "note": "Reportaje de época con el testimonio directo del capitán Howard."
+      "note": "Reportaje de época con el testimonio directo del capitán Howard.",
+      "note_en": "Period report with Captain Howard's direct testimony."
     },
     {
       "name": "CAELESTIA — «The BOAC Labrador sighting» (análisis crítico)",
       "url": "https://www.caelestia.be/BOAC.html",
-      "note": "Revisión escéptica que evalúa la hipótesis de nube/espejismo y los límites del caso."
+      "note": "Revisión escéptica que evalúa la hipótesis de nube/espejismo y los límites del caso.",
+      "note_en": "Skeptical review assessing the cloud/mirage hypothesis and the case's limits."
     }
   ],
   "mundanoType": "natural",

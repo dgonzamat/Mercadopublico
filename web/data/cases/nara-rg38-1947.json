@@ -51,11 +51,13 @@
     },
     {
       "name": "Swords, M. & Powell, R. — UFOs and Government (2012)",
-      "note": "Catálogo cronológico de docs militares"
+      "note": "Catálogo cronológico de docs militares",
+      "note_en": "Chronological catalog of military documents"
     },
     {
       "name": "Greenwood, B. — Just Cause (CAUS 1985-2000)",
-      "note": "Newsletter dedicado a FOIA-recovered docs"
+      "note": "Newsletter dedicado a FOIA-recovered docs",
+      "note_en": "Newsletter dedicated to FOIA-recovered documents"
     }
   ],
   "sources_en": [

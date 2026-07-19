@@ -1,7 +1,10 @@
 {
   "id": "usper-2025",
   "num": 45,
-  "pursueReleases": [1, 2],
+  "pursueReleases": [
+    1,
+    2
+  ],
   "name": "USPER · orbes sobre un sitio de prueba del oeste de EE.UU. (FBI-302)",
   "name_en": "USPER · orbs over a Western US test site (FBI-302)",
   "year_start": 2025,
@@ -293,17 +296,20 @@
     {
       "name": "war.gov/UFO — USPER Statement (FBI-302 redactado, PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/usper-statement-redacted.pdf",
-      "note": "Documento primario: entrevista FBI-302 del oficial."
+      "note": "Documento primario: entrevista FBI-302 del oficial.",
+      "note_en": "Primary document: the officer's FBI-302 interview."
     },
     {
       "name": "war.gov/UFO — ODNI-UAP-D001, narrativa USPER (PURSUE Release 02)",
       "url": "https://www.war.gov/UFO/?releaseDate=Release+02#records",
-      "note": "Narrativa en primera persona que amplía el 302."
+      "note": "Narrativa en primera persona que amplía el 302.",
+      "note_en": "First-person narrative expanding on the 302."
     },
     {
       "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro USPER + ODNI-UAP-D001)",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "Mirror del índice oficial con descripción y metadatos de ambos documentos."
+      "note": "Mirror del índice oficial con descripción y metadatos de ambos documentos.",
+      "note_en": "Mirror of the official index with description and metadata of both documents."
     }
   ]
 }

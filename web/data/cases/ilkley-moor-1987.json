@@ -56,12 +56,14 @@
     {
       "name": "Wikipedia — Ilkley Moor UFO incident",
       "url": "https://en.wikipedia.org/wiki/Ilkley_Moor_UFO_incident",
-      "note": "Síntesis del caso, análisis fotográfico de Kodak y lecturas escépticas."
+      "note": "Síntesis del caso, análisis fotográfico de Kodak y lecturas escépticas.",
+      "note_en": "Synthesis of the case, Kodak's photographic analysis and skeptical readings."
     },
     {
       "name": "Peter Hough & Jenny Randles — investigación del caso (UFO casework, años 1988-1994)",
       "url": "https://www.ufocasebook.com/ilkleymoor.html",
-      "note": "Relato detallado del testigo, la regresión hipnótica y la cronología de la investigación."
+      "note": "Relato detallado del testigo, la regresión hipnótica y la cronología de la investigación.",
+      "note_en": "Detailed account of the witness, the hypnotic regression and the chronology of the investigation."
     }
   ],
   "documents": [

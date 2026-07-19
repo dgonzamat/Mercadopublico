@@ -57,27 +57,32 @@
     {
       "name": "National Archives of Australia — Turner Report (A13693, series 3092-2-000, file 30030606)",
       "url": "https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/DetailsReports/ItemDetail.aspx?Barcode=A13693",
-      "note": "Archivo nacional australiano oficial; documento primario."
+      "note": "Archivo nacional australiano oficial; documento primario.",
+      "note_en": "Official Australian national archive; primary document."
     },
     {
       "name": "The Black Vault — Turner Report PDF (mirror)",
       "url": "https://documents.theblackvault.com/documents/ufos/australia/A13693_3092-2-000_30030606.pdf",
-      "note": "Espejo público completo del PDF mantenido por John Greenewald."
+      "note": "Espejo público completo del PDF mantenido por John Greenewald.",
+      "note_en": "Complete public mirror of the PDF maintained by John Greenewald."
     },
     {
       "name": "Advena Research — 'Australia's Real X-Files: How Top Australian Government Scientists Took UFOs Seriously'",
       "url": "https://www.advenaresearch.com/articles/harry-turner",
-      "note": "Reconstrucción contextual del rol de Turner y su entorno institucional."
+      "note": "Reconstrucción contextual del rol de Turner y su entorno institucional.",
+      "note_en": "Contextual reconstruction of Turner's role and his institutional environment."
     },
     {
       "name": "American Alchemy — 'The Turner Report: What is actually in it?'",
       "url": "https://americanalchemymagazine.substack.com/p/the-turner-report-what-is-actually",
-      "note": "Análisis de contenido página por página."
+      "note": "Análisis de contenido página por página.",
+      "note_en": "Page-by-page content analysis."
     },
     {
       "name": "Disclosure Foundation — '1971 Australian UFO Assessment & US Intelligence' (jun 2026)",
       "url": "https://disclosure.org/news/1971-australian-ufo-assessment-us-intelligence",
-      "note": "Contextualización del documento dentro del ciclo divulgación post-Grusch."
+      "note": "Contextualización del documento dentro del ciclo divulgación post-Grusch.",
+      "note_en": "Contextualization of the document within the post-Grusch disclosure cycle."
     }
   ],
   "documents": [

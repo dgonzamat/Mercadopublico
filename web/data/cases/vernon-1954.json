@@ -47,16 +47,19 @@
     {
       "name": "UFO sightings in France — Wikipedia (oleada de 1954; caso de Vernon)",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_France",
-      "note": "Panorama de la oleada francesa de 1954 con el caso de Vernon y la 'nave nodriza' de Miserey."
+      "note": "Panorama de la oleada francesa de 1954 con el caso de Vernon y la 'nave nodriza' de Miserey.",
+      "note_en": "Panorama of the 1954 French wave with the Vernon case and the Miserey 'mother ship'."
     },
     {
       "name": "Michel, A. — investigación de la oleada francesa de 1954 («À propos des soucoupes volantes» / orthoténie)",
-      "note": "El ufólogo francés que documentó el caso de Vernon e intentó integrarlo en su hipótesis de la ortotenia, hoy desacreditada estadísticamente."
+      "note": "El ufólogo francés que documentó el caso de Vernon e intentó integrarlo en su hipótesis de la ortotenia, hoy desacreditada estadísticamente.",
+      "note_en": "The French ufologist who documented the Vernon case and tried to integrate it into his orthoteny hypothesis, now statistically discredited."
     },
     {
       "name": "Gross, P. — «UFOs: A History 1954» (recopilación documental de la oleada, sohp.us)",
       "url": "https://sohp.us/collections/ufos-a-history/pdf/GROSS-1954-Oct.pdf",
-      "note": "Cronología documental de los reportes de 1954, contexto de la oleada en que se inscribe Vernon."
+      "note": "Cronología documental de los reportes de 1954, contexto de la oleada en que se inscribe Vernon.",
+      "note_en": "Documentary chronology of the 1954 reports, context of the wave to which Vernon belongs."
     }
   ],
   "mundanoType": "misid",

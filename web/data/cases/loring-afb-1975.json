@@ -47,21 +47,25 @@
     {
       "name": "NICAP — «UFOs Intrude Into SAC Weapons Base» (expediente Loring/SAC 1975)",
       "url": "http://www.nicap.org/intsac.htm",
-      "note": "Recopilación documental de las incursiones de 1975 sobre bases nucleares, con citas de los teletipos militares."
+      "note": "Recopilación documental de las incursiones de 1975 sobre bases nucleares, con citas de los teletipos militares.",
+      "note_en": "Documentary compilation of the 1975 incursions over nuclear bases, with citations from the military teletypes."
     },
     {
       "name": "The War Zone (TWZ) — «The Bizarre Mystery of Unexplained Aerial Incursions Over Loring Air Force Base»",
       "url": "https://www.twz.com/35674/the-bizarre-mystery-of-unexplained-aerial-incursions-over-loring-air-force-base",
-      "note": "Análisis periodístico de defensa que revisa los documentos desclasificados y la implausibilidad de la etiqueta 'helicópteros'."
+      "note": "Análisis periodístico de defensa que revisa los documentos desclasificados y la implausibilidad de la etiqueta 'helicópteros'.",
+      "note_en": "Defense-journalism analysis reviewing the declassified documents and the implausibility of the 'helicopters' label."
     },
     {
       "name": "CIA Reading Room — «What Were Those Mysterious Craft?» (CIA-RDP88-01315R000300070004-1)",
       "url": "https://www.cia.gov/readingroom/docs/CIA-RDP88-01315R000300070004-1.pdf",
-      "note": "Documento de archivo de la CIA referido a las incursiones de 1975 sobre instalaciones del SAC."
+      "note": "Documento de archivo de la CIA referido a las incursiones de 1975 sobre instalaciones del SAC.",
+      "note_en": "CIA archival document concerning the 1975 incursions over SAC facilities."
     },
     {
       "name": "Hastings, R. — investigación de los sobrevuelos UAP sobre sitios de misiles (1975), basada en teletipos del NMCC",
-      "note": "Reconstrucción del patrón multibase a partir de mensajes militares desclasificados y testimonios de personal de seguridad."
+      "note": "Reconstrucción del patrón multibase a partir de mensajes militares desclasificados y testimonios de personal de seguridad.",
+      "note_en": "Reconstruction of the multi-base pattern from declassified military messages and security-personnel testimony."
     }
   ],
   "mundanoType": "misid",

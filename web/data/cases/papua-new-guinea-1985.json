@@ -67,12 +67,14 @@
     {
       "name": "war.gov/UFO — DOS-UAP-D1, cable de Papúa Nueva Guinea (PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
-      "note": "Cable diplomático primario."
+      "note": "Cable diplomático primario.",
+      "note_en": "Primary diplomatic cable."
     },
     {
       "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro DOS-UAP Cable 001)",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "Mirror del índice con descripción y metadatos del cable."
+      "note": "Mirror del índice con descripción y metadatos del cable.",
+      "note_en": "Mirror of the index with description and metadata of the cable."
     }
   ],
   "misidSubtype": "aeronave"

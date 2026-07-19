@@ -53,17 +53,20 @@
     {
       "name": "The Clio — 'First Sighting of the Tinley Park Lights'",
       "url": "https://theclio.com/entry/141743",
-      "note": "Cronología y contexto del caso."
+      "note": "Cronología y contexto del caso.",
+      "note_en": "Chronology and context of the case."
     },
     {
       "name": "Patch (Tinley Park) — 'UFO Expert On Tinley Park's 2004 Sightings: They Were Not A Hoax'",
       "url": "https://patch.com/illinois/tinleypark/ufo-expert-tinley-parks-2004-sightings-they-were-not-hoax",
-      "note": "Postura de Sam Maranto (MUFON Illinois)."
+      "note": "Postura de Sam Maranto (MUFON Illinois).",
+      "note_en": "Position of Sam Maranto (MUFON Illinois)."
     },
     {
       "name": "Chicago Sun-Times — '5 notable UFO sightings in Illinois history'",
       "url": "https://chicago.suntimes.com/news/2014/7/2/18611840/happy-world-ufo-day-5-notable-ufo-sightings-in-illinois-history",
-      "note": "Cobertura periodística del caso en contexto."
+      "note": "Cobertura periodística del caso en contexto.",
+      "note_en": "Press coverage of the case in context."
     }
   ],
   "documents": [

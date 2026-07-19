@@ -15,7 +15,14 @@
   "epistemicStatus": "documented",
   "probability": 72,
   "mundanoType": "misid",
-  "posterior": { "mundano_natural": 0.30, "humana_clasificada": 0.10, "adversaria": 0, "nohumano_encubierto": 0.10, "nohumano_abierto": 0.15, "indet": 0.35 },
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0.1,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.15,
+    "indet": 0.35
+  },
   "documents": [
     {
       "src": "/pursue/wikileaks-podesta-2016-email3099.png",
@@ -61,7 +68,8 @@
     },
     {
       "name": "Sheaffer, R. & Greer, S. — Independent verification of cache",
-      "note": "Verificación cryptographic"
+      "note": "Verificación cryptographic",
+      "note_en": "Cryptographic verification"
     }
   ]
 }

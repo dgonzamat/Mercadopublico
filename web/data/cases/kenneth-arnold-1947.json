@@ -47,12 +47,14 @@
     {
       "name": "Wikipedia — Kenneth Arnold UFO sighting",
       "url": "https://en.wikipedia.org/wiki/Kenneth_Arnold_UFO_sighting",
-      "note": "Cronología, estimación de velocidad y origen del término."
+      "note": "Cronología, estimación de velocidad y origen del término.",
+      "note_en": "Chronology, speed estimate and origin of the term."
     },
     {
       "name": "National Museum of the USAF / Project Blue Book context",
       "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/198202/unidentified-flying-objects-project-blue-book/",
-      "note": "Marco institucional del estudio USAF del fenómeno."
+      "note": "Marco institucional del estudio USAF del fenómeno.",
+      "note_en": "Institutional framework of the USAF study of the phenomenon."
     }
   ],
   "posterior": {

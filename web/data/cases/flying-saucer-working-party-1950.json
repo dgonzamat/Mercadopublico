@@ -18,12 +18,12 @@
   "epistemicStatus": "documented",
   "probability": 55,
   "posterior": {
-    "mundano_natural": 0.80,
+    "mundano_natural": 0.8,
     "humana_clasificada": 0,
     "adversaria": 0,
     "nohumano_encubierto": 0,
     "nohumano_abierto": 0,
-    "indet": 0.20
+    "indet": 0.2
   },
   "summary": "El primer estudio oficial sobre platos voladores de un gobierno occidental: el Flying Saucer Working Party, creado por el Ministerio de Defensa británico bajo Henry Tizard en 1950. Su informe secreto (1951) concluyó que todos los avistamientos se explican por identificación errónea, ilusión o engaño, y recomendó no investigar más. Desclasificado en 2001.",
   "summary_en": "The first official flying-saucer study by a Western government: the Flying Saucer Working Party, set up by the UK Ministry of Defence under Henry Tizard in 1950. Its secret report (1951) concluded all sightings are explained by misidentification, illusion or hoax, and recommended no further investigation. Declassified in 2001.",
@@ -54,7 +54,8 @@
     {
       "name": "The National Archives (UK) — Flying Saucer Working Party report (desclasificado 2001)",
       "url": "https://www.nationalarchives.gov.uk/ufos/",
-      "note": "Liberación oficial."
+      "note": "Liberación oficial.",
+      "note_en": "Official release."
     },
     {
       "name": "Flying Saucer Working Party — entrada enciclopédica",
