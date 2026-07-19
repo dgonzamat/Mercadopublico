@@ -53,14 +53,16 @@ export default function PatternsPage() {
                 <div>
                   <p className="font-mono text-xs text-accent">{p.id}</p>
                   <h2 className="mt-1 text-base font-medium text-text">
-                    {p.name}
+                    <T es={p.name} en={p.name_en} />
                   </h2>
                 </div>
                 <span className="bg-bg px-2 py-0.5 font-mono text-[10px] text-muted">
                   <T es={`${count} casos`} en={`${count} cases`} />
                 </span>
               </div>
-              <p className="mt-2 text-xs text-muted">{p.description}</p>
+              <p className="mt-2 text-xs text-muted">
+                <T es={p.description} en={p.description_en} />
+              </p>
             </LocaleLink>
           );
         })}

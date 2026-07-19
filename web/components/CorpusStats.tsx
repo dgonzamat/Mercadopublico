@@ -163,7 +163,7 @@ export function CorpusStats() {
                 </span>
                 <div className="min-w-0 space-y-1">
                   <p className="font-display text-lg leading-tight text-text md:text-xl">
-                    {p.name}
+                    <T es={p.name} en={p.name_en} />
                   </p>
                   <p className="font-mono text-xs uppercase tracking-widest text-muted">
                     <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} />

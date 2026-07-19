@@ -27,6 +27,7 @@ export interface PatternFrequency {
   id: string;
   letter: string;
   name: string;
+  name_en: string;
   count: number;
   color: string;
 }
@@ -41,6 +42,7 @@ export function topPatterns(
       id: p.id,
       letter: p.letter,
       name: p.name,
+      name_en: p.name_en,
       color: p.color,
       count: cases.filter((c) => c.patterns.includes(p.id)).length,
     }))
