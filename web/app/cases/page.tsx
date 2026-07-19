@@ -14,7 +14,11 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 import { pageMeta } from "@/lib/seo";
-import { casesCollectionJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import {
+  casesCollectionJsonLd,
+  corpusDatasetJsonLd,
+  serializeJsonLd,
+} from "@/lib/jsonld";
 
 const TIER_ORDER = ["S", "A", "B"] as const;
 
@@ -134,6 +138,12 @@ export default function CasesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: serializeJsonLd(casesCollectionJsonLd(cases)),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(corpusDatasetJsonLd()),
         }}
       />
       <header className="space-y-4">
