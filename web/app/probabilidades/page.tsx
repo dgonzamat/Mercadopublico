@@ -4,6 +4,7 @@ import { pageMeta, hreflangFor } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
+import { HeterogeneityByDecade } from "@/components/HeterogeneityByDecade";
 import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis, MISID_SUBTYPES } from "@/lib/meceModel";
 import { cases } from "@/lib/data";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
@@ -115,6 +116,21 @@ export default function ProbabilidadesPage() {
             totalLabelEs={`Suman 100% · ${scored.length} casos del corpus · mundano abierto en 3 · no-humano agrupado · Indeterminado aparte`}
             totalLabelEn={`Sum to 100% · ${scored.length} corpus cases · mundane opened into 3 · non-human grouped · Indeterminate separate`}
           />
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <H2>
+          <T es="La heterogeneidad en el tiempo" en="Heterogeneity over time" />
+        </H2>
+        <Caption>
+          <T
+            es="El donut de arriba es el snapshot agregado. Esta serie le añade el eje temporal: cuánto de cada década resiste explicación mundana. El repunte de los 2020s coincide con el ciclo de divulgación."
+            en="The donut above is the aggregate snapshot. This series adds the time axis: how much of each decade resists a mundane explanation. The 2020s uptick coincides with the disclosure cycle."
+          />
+        </Caption>
+        <div className="mt-6 rounded-sm border border-border bg-panel p-5">
+          <HeterogeneityByDecade />
         </div>
       </section>
 

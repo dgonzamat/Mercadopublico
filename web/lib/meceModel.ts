@@ -284,3 +284,52 @@ export function documentPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): S
       mundanoType: c.mundanoType,
     }));
 }
+
+export interface DecadeMece {
+  decade: number;
+  n: number;
+  shares: Posterior; // media del posterior sobre los incidentes de la década (suma 1)
+  heterogeneity: number; // 1 − share medio mundano_natural
+  nonHuman: number; // share medio de las dos narrativas no-humanas
+}
+
+/**
+ * Composición MECE media por década sobre los **incidentes con posterior**
+ * (misma partición que `corpusPosteriors`: documentos y casos sin posterior
+ * quedan fuera — un documento no reparte «qué era el objeto»). Cada `shares`
+ * es el promedio del posterior de la década, así que suma 1. `heterogeneity`
+ * = 1 − share mundano (cuánto del corpus resiste explicación mundana); es la
+ * vista derivada `heterogeneidad` agregada en el tiempo. Se recorta a décadas
+ * ≥ `from` (default 1940) donde el corpus tiene densidad — antes hay un puñado
+ * de casos históricos que harían ruido. El `n` viaja para no ocultar muestras
+ * finas.
+ */
+export function meceByDecade(
+  cases: UAPCase[] = ALL_CASES as UAPCase[],
+  from = 1940,
+): DecadeMece[] {
+  const byDecade = new Map<number, { n: number; sum: Posterior }>();
+  for (const c of cases) {
+    if (c.category === "document" || !c.posterior) continue;
+    const decade = Math.floor(c.year_start / 10) * 10;
+    if (decade < from) continue;
+    let e = byDecade.get(decade);
+    if (!e) { e = { n: 0, sum: emptyPosterior() }; byDecade.set(decade, e); }
+    const p = posteriorFor(c);
+    e.n += 1;
+    for (const k of CLASS_IDS) e.sum[k] += p[k];
+  }
+  return [...byDecade.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([decade, { n, sum }]) => {
+      const shares = emptyPosterior();
+      for (const k of CLASS_IDS) shares[k] = sum[k] / n;
+      return {
+        decade,
+        n,
+        shares,
+        heterogeneity: heterogeneidad(shares),
+        nonHuman: entidadesNoHumanas(shares),
+      };
+    });
+}
