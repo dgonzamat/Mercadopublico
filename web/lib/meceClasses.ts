@@ -23,7 +23,12 @@ export const MECE_CLASSES: ReadonlyArray<{
   { id: "humana_clasificada", label: "Tecnología humana clasificada", labelEn: "Classified human technology", color: "#7a6b23", legacyHypothesis: "programas-clasificados" },
   { id: "adversaria", label: "Tecnología adversaria", labelEn: "Adversary technology", color: "#8a4b23", legacyHypothesis: "tecnología-adversaria" },
   { id: "nohumano_encubierto", label: "No-humano + encubrimiento estatal", labelEn: "Non-human + state cover-up", color: "#6b3a7a", legacyHypothesis: "ingeniería-inversa + tratado-greys + entidades con cover-up" },
-  { id: "nohumano_abierto", label: "No-humano sin gestión estatal", labelEn: "Non-human, no state management", color: "#5b3a8a", legacyHypothesis: "interdimensional + ontológico" },
+  // El azul de `nohumano_abierto` (antes #5b3a8a, un violeta casi idéntico al
+  // #6b3a7a de encubierto: ΔE 4.1 en visión normal → indistinguibles) se separó
+  // a #5a6cc8: ΔE 16.2 normal / 13.9 CVD, validado con el script del skill
+  // dataviz. Mantiene la oscuridad muteada del palette (L*rel 0.17). No revertir
+  // sin re-validar la separación del par no-humano.
+  { id: "nohumano_abierto", label: "No-humano sin gestión estatal", labelEn: "Non-human, no state management", color: "#5a6cc8", legacyHypothesis: "interdimensional + ontológico" },
   { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—" },
 ];
 
