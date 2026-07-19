@@ -192,6 +192,23 @@ export default async function CaseDetailPage(
     ? "text-lg leading-relaxed text-text md:text-xl"
     : "font-display text-xl leading-snug text-text md:text-2xl";
 
+  // El summary es el LEDE (display prominente), pero ~46% de los casos lo tienen
+  // largo y en text-3xl se vuelve un muro que ocupa media primera pantalla. Es el
+  // MISMO problema que whyMatters ya resolvía con un guard de longitud — olvidado
+  // en el summary, que además se renderiza aún más grande. Dos umbrales (por el
+  // idioma más largo, el DOM sirve ES+EN): >800 chars → cuerpo legible (idéntico a
+  // whyMattersLong, para el ~10% extremo que ni a text-2xl deja de saturar);
+  // 500-800 → un paso menor de display (conserva la voz de lede); corto → display
+  // prominente.
+  const summaryLen =
+    Math.max((c.summary ?? "").length, (c.summary_en ?? "").length);
+  const summaryClass =
+    summaryLen > 800
+      ? "text-lg leading-relaxed text-text md:text-xl"
+      : summaryLen > 500
+        ? "font-display text-xl leading-snug text-text md:text-2xl"
+        : "font-display text-2xl leading-snug text-text md:text-3xl";
+
   // CD-2 · numeración de partes secuencial y honesta. Antes "Parte 01/02/03"
   // estaban hard-codeadas: un caso sin `whatHappened` saltaba a "Parte 02" o
   // empezaba en "Parte 03". Ahora el contador solo cuenta las partes presentes
@@ -275,7 +292,7 @@ export default async function CaseDetailPage(
           </div>
         </div>
 
-        <p className="font-display text-2xl leading-snug text-text md:text-3xl">
+        <p className={summaryClass}>
           <T
             es={linkCaseRefs(c.summary, NAME_BY_SLUG)}
             en={linkCaseRefs(c.summary_en ?? c.summary, NAME_BY_SLUG)}

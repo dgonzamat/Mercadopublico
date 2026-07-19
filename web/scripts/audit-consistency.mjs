@@ -1052,37 +1052,55 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
-// ─── 9p. RULE E25: referencias cruzadas entre casos en la prosa (ERROR) ───
+// ─── 9p. RULE E25: referencias cruzadas entre casos en la prosa ───────────
 //
 // La prosa enlaza otros casos con el markup `[[slug]]` (lo renderiza
-// lib/caseRefs.tsx). Invariante doble: (a) todo `[[slug]]` debe resolver a un
-// caso existente —un slug roto sería un enlace a 404—; (b) no debe reaparecer la
-// vieja forma numérica "(caso N)"/"(case N)", que era frágil: el "N" era el `num`
-// al momento de escribir y driftaba al renumerar el corpus (desfase no constante),
-// de modo que un enlace por número apuntaba al caso equivocado (jul 2026). Blinda
-// la migración a slugs estables. Barato y determinista (regex sobre la prosa).
+// lib/caseRefs.tsx). Tres invariantes: (a) todo `[[slug]]` debe resolver a un
+// caso existente —un slug roto sería un enlace a 404— (ERROR); (b) no debe
+// reaparecer la vieja forma numérica estricta "(caso N)"/"(case N)" (ERROR): el
+// "N" era el `num` al escribir y driftaba al renumerar (desfase no constante), de
+// modo que un enlace por número apuntaba al caso equivocado; (c) las formas
+// SUELTAS "caso N"/"case N" fuera de "(caso N)" (p. ej. "corpus case 8", "see
+// case 146", "(9 jun 2026, caso 138)") son WARN: la migración de #654 solo cazó la
+// forma estricta y estas se colaron —una incluso migrada al caso equivocado
+// (jul 2026, hallada navegando dentro de los casos)—. Se eximen las refs EXTERNAS
+// legítimas (el informe Condon/University of Colorado numera sus casos "Case
+// 2/5/34"; hay cites a archivos "case 149, Australian National Archives A13693")
+// por contexto, para no marcar falsos positivos. Barato y determinista.
 {
   const validIds = new Set(cases.map((c) => c.id));
   const PROSE = ["summary", "summary_en", "whatHappened", "whatHappened_en", "whyMatters", "whyMatters_en", "evidence", "evidence_en"];
   const SLUG_REF = /\[\[([a-z0-9-]+)\]\]/g;
-  const NUM_REF = /\((?:caso|case)\s+\d+\)/gi;
+  const STRICT_REF = /\((?:caso|case)\s+\d+\)/gi;
+  const LOOSE_REF = /(?:caso|case)\s+\d+/gi;
+  const EXTERNAL_CTX = /Condon|Committee|Comit[ée]|Archives|Archivo Nacional|A13693|A136|University of Colorado|Universidad de Colorado|Final Report|Informe Final/i;
   for (const c of cases) {
     const brokenSlugs = new Set();
-    let numHits = 0;
+    let strictHits = 0;
+    let looseHits = 0;
     for (const k of PROSE) {
       const vals = Array.isArray(c[k]) ? c[k] : [c[k]];
       for (const v of vals) {
         if (typeof v !== "string") continue;
         for (const m of v.matchAll(SLUG_REF)) if (!validIds.has(m[1])) brokenSlugs.add(m[1]);
-        const nm = v.match(NUM_REF);
-        if (nm) numHits += nm.length;
+        strictHits += (v.match(STRICT_REF) || []).length;
+        for (const m of v.matchAll(LOOSE_REF)) {
+          const isStrict = v[m.index - 1] === "(" && v[m.index + m[0].length] === ")";
+          if (isStrict) continue; // ya lo cuenta strictHits (ERROR)
+          const ctx = v.slice(Math.max(0, m.index - 45), m.index + m[0].length + 45);
+          if (EXTERNAL_CTX.test(ctx)) continue; // ref externa legítima (Condon, archivo)
+          looseHits++;
+        }
       }
     }
     if (brokenSlugs.size > 0) {
       record("ERROR", path.join(casesDir, `${c.id}.json`), 0, `E25 xref: ${brokenSlugs.size} referencia(s) [[slug]] a un caso inexistente (enlace a 404): ${[...brokenSlugs].join(", ")}. Corregir el slug o crear el caso.`);
     }
-    if (numHits > 0) {
-      record("ERROR", path.join(casesDir, `${c.id}.json`), 0, `E25 xref: ${numHits} referencia(s) numérica(s) "(caso N)"/"(case N)" en la prosa — forma frágil que driftea al renumerar. Migrar a "[[slug]]" (ver lib/caseRefs.tsx).`);
+    if (strictHits > 0) {
+      record("ERROR", path.join(casesDir, `${c.id}.json`), 0, `E25 xref: ${strictHits} referencia(s) numérica(s) estricta(s) "(caso N)"/"(case N)" — forma frágil que driftea al renumerar. Migrar a "[[slug]]" (ver lib/caseRefs.tsx).`);
+    }
+    if (looseHits > 0) {
+      record("WARN", path.join(casesDir, `${c.id}.json`), 0, `E25 xref: ${looseHits} referencia(s) suelta(s) "caso N"/"case N" (fuera de "(caso N)" y sin contexto externo) — posible cross-ref interno sin migrar a [[slug]]. Si apunta a un caso del corpus, migrar; si es externa (Condon, archivo), añade su patrón a EXTERNAL_CTX.`);
     }
   }
 }
