@@ -83,7 +83,8 @@
     {
       "name": "NASA / AARO — «STS-80 Unidentified Object» (imágenes 1–3, 1996)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Fotografías desclasificadas en 2026 en el UAP Records de la AARO, release 04, códigos NASA-UAP-D030, D031 y D032. Índice oficial PURSUE en war.gov/UFO/."
+      "note": "Fotografías desclasificadas en 2026 en el UAP Records de la AARO, release 04, códigos NASA-UAP-D030, D031 y D032. Índice oficial PURSUE en war.gov/UFO/.",
+      "note_en": "Photographs declassified in 2026 in the AARO UAP Records, release 04, codes NASA-UAP-D030, D031 and D032. Official PURSUE index at war.gov/UFO/."
     },
     {
       "name": "NASA — misión STS-80 (Columbia, 19 nov – 7 dic 1996)",
@@ -92,7 +93,8 @@
     {
       "name": "James Oberg — análisis de 'OVNIs' en imágenes del transbordador",
       "url": "https://en.wikipedia.org/wiki/James_Oberg",
-      "note": "Explicación estándar de los objetos de ventana de transbordador como partículas próximas al orbitador (hielo/desechos)."
+      "note": "Explicación estándar de los objetos de ventana de transbordador como partículas próximas al orbitador (hielo/desechos).",
+      "note_en": "Standard explanation of the shuttle-window objects as particles near the orbiter (ice/debris)."
     }
   ],
   "misidSubtype": "espacial"

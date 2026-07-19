@@ -9,7 +9,7 @@
   "flag": "🇺🇸",
   "location": {
     "lat": 36.94,
-    "lng": -107.0,
+    "lng": -107,
     "place": "Dulce, Nuevo México (Mesa Archuleta)",
     "place_en": "Dulce, New Mexico (Archuleta Mesa)"
   },
@@ -54,11 +54,13 @@
     {
       "name": "Phil Schneider — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Phil_Schneider",
-      "note": "Biografía, las afirmaciones sobre Dulce y las circunstancias de su muerte."
+      "note": "Biografía, las afirmaciones sobre Dulce y las circunstancias de su muerte.",
+      "note_en": "Biography, the Dulce claims and the circumstances of his death."
     },
     {
       "name": "Bishop, Greg — 'Project Beta' (sobre la desinformación contra Paul Bennewitz)",
-      "note": "Documenta el origen del mito de Dulce en una operación de desinformación de inteligencia de EE.UU."
+      "note": "Documenta el origen del mito de Dulce en una operación de desinformación de inteligencia de EE.UU.",
+      "note_en": "Documents the origin of the Dulce myth in a U.S. intelligence disinformation operation."
     }
   ],
   "documents": [

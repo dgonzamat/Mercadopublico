@@ -51,19 +51,23 @@
   "sources": [
     {
       "name": "Navajo County Sheriff's Office, Arizona — case file (1975)",
-      "note": "Reporte formal de los siete leñadores la misma noche del incidente."
+      "note": "Reporte formal de los siete leñadores la misma noche del incidente.",
+      "note_en": "Formal report by the seven loggers on the night of the incident."
     },
     {
       "name": "Walton, Travis. 'The Walton Experience' (1978)",
-      "note": "Narrativa primaria post-incidente; recall sin hipnosis formal."
+      "note": "Narrativa primaria post-incidente; recall sin hipnosis formal.",
+      "note_en": "Primary post-incident narrative; recall without formal hypnosis."
     },
     {
       "name": "US Forest Service Apache-Sitgreaves National Forest — incident report (1975)",
-      "note": "Reporte institucional del Forest Service sobre la búsqueda."
+      "note": "Reporte institucional del Forest Service sobre la búsqueda.",
+      "note_en": "Institutional Forest Service report on the search."
     },
     {
       "name": "Steiger, Brad & Steiger, Sherry. 'The Travis Walton Story' (1996)",
-      "note": "Re-análisis del caso con evidencia post-1975."
+      "note": "Re-análisis del caso con evidencia post-1975.",
+      "note_en": "Re-analysis of the case with post-1975 evidence."
     }
   ],
   "documents": [

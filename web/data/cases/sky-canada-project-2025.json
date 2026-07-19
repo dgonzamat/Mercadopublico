@@ -55,27 +55,32 @@
     {
       "name": "Office of the Chief Science Advisor of Canada — Sky Canada Project (portal oficial)",
       "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project",
-      "note": "Página primaria del proyecto."
+      "note": "Página primaria del proyecto.",
+      "note_en": "Primary project page."
     },
     {
       "name": "Management of Public Reporting of Unidentified Aerial Phenomena in Canada — informe (gov.ca)",
       "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project/management-public-reporting-unidentified-aerial-phenomena-canada",
-      "note": "Informe completo y recomendaciones."
+      "note": "Informe completo y recomendaciones.",
+      "note_en": "Full report and recommendations."
     },
     {
       "name": "CBC News — 'Canada needs agency to manage public UFO sightings, says new federal report'",
       "url": "https://www.cbc.ca/news/canada/manitoba/sky-canada-project-report-ufo-uap-1.7586922",
-      "note": "Cobertura periodística del lanzamiento y las recomendaciones."
+      "note": "Cobertura periodística del lanzamiento y las recomendaciones.",
+      "note_en": "Press coverage of the launch and the recommendations."
     },
     {
       "name": "The Debrief — 'Canada's UAP Challenges: Will the Government Act on the Sky Canada Project Report?'",
       "url": "https://thedebrief.org/canadas-uap-challenges-will-the-government-act-on-the-sky-canada-project-report/",
-      "note": "Análisis del estado de implementación pendiente."
+      "note": "Análisis del estado de implementación pendiente.",
+      "note_en": "Analysis of the pending implementation status."
     },
     {
       "name": "EarthSky — 'UFOs in Canada? Official new report'",
       "url": "https://earthsky.org/human-world/ufos-in-canada-chief-science-advisor-of-canada-uap/",
-      "note": "Síntesis divulgativa del informe."
+      "note": "Síntesis divulgativa del informe.",
+      "note_en": "Popular synthesis of the report."
     }
   ],
   "documents": [

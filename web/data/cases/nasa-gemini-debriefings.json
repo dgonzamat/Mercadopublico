@@ -1,7 +1,9 @@
 {
   "id": "nasa-gemini-debriefings",
   "num": 297,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "NASA · debriefings de tripulación Gemini y era Mercury (1962-1966, PURSUE)",
   "name_en": "NASA · Gemini and Mercury-era crew debriefings (1962-1966, PURSUE)",
   "year_start": 1962,
@@ -122,12 +124,14 @@
     {
       "name": "war.gov/UFO — debriefings NASA Gemini/Mercury (NASA-UAP-D015 a D022, PURSUE Release 03)",
       "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D016_Preliminary-Gemini-4-Crew-Debriefing_Part1_1965.pdf",
-      "note": "Los ocho debriefings están embebidos en el visor de este caso."
+      "note": "Los ocho debriefings están embebidos en el visor de este caso.",
+      "note_en": "The eight debriefings are embedded in this case's viewer."
     },
     {
       "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal del Departamento de Guerra."
+      "note": "Portal del Departamento de Guerra.",
+      "note_en": "Department of War portal."
     }
   ]
 }

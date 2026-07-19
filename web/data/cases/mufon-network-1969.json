@@ -57,22 +57,26 @@
     {
       "name": "Wikipedia — Mutual UFO Network",
       "url": "https://en.wikipedia.org/wiki/Mutual_UFO_Network",
-      "note": "Historia, estructura, CMS y controversias."
+      "note": "Historia, estructura, CMS y controversias.",
+      "note_en": "History, structure, CMS and controversies."
     },
     {
       "name": "MUFON — 'A Brief History of MUFON' (sitio oficial)",
       "url": "https://mufon.com/history/",
-      "note": "Fundación 1969 y evolución (fuente primaria)."
+      "note": "Fundación 1969 y evolución (fuente primaria).",
+      "note_en": "Founding 1969 and evolution (primary source)."
     },
     {
       "name": "Jason Colavito — 'Infighting at MUFON Reveals Web of Connections Between MUFON, Bigelow, the Pentagon, To the Stars'",
       "url": "https://www.jasoncolavito.com/blog/latest-infighting-at-mufon-accidentally-reveals-web-of-connections-between-mufon-robert-bigelow-the-pentagon-to-the-stars-and-ae-networks",
-      "note": "Documenta el enredo con Bigelow."
+      "note": "Documenta el enredo con Bigelow.",
+      "note_en": "Documents the entanglement with Bigelow."
     },
     {
       "name": "Scientific American — 'How Wealthy UFO Fans Helped Fuel Fringe Beliefs'",
       "url": "https://www.scientificamerican.com/article/how-wealthy-ufo-fans-helped-fuel-fringe-beliefs/",
-      "note": "Crítica al rol de financistas privados (Bigelow) y al rigor."
+      "note": "Crítica al rol de financistas privados (Bigelow) y al rigor.",
+      "note_en": "Critique of the role of private financiers (Bigelow) and of the rigor."
     }
   ]
 }

@@ -17,7 +17,14 @@
   "mundanoType": "misid",
   "epistemicStatus": "developing",
   "probability": 80,
-  "posterior": { "mundano_natural": 0.55, "humana_clasificada": 0.12, "adversaria": 0.03, "nohumano_encubierto": 0.05, "nohumano_abierto": 0.10, "indet": 0.15 },
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.1,
+    "indet": 0.15
+  },
   "summary": "El IAA SETI Committee ratificó en 2026 la primera gran revisión desde ~2010 de los 'post-detection protocols': cómo verificar y anunciar una detección de inteligencia extraterrestre. Lo analíticamente relevante es la frontera que traza — declara explícitamente que NO aplica a los UAP en la atmósfera terrestre, en el mismo año en que la ola de divulgación lo empujó a actualizarse.",
   "summary_en": "The IAA SETI Committee ratified in 2026 the first major revision since ~2010 of the 'post-detection protocols': how to verify and announce a detection of extraterrestrial intelligence. The analytically relevant point is the boundary it draws — it explicitly states it does NOT apply to UAP in Earth's atmosphere, in the same year the disclosure wave prompted the update.",
   "patterns": [
@@ -51,7 +58,8 @@
     {
       "name": "SETI Post-Detection Protocols — preprint técnico (arXiv 2510.14506)",
       "url": "https://arxiv.org/pdf/2510.14506",
-      "note": "Borrador de la actualización 2026."
+      "note": "Borrador de la actualización 2026.",
+      "note_en": "Draft of the 2026 update."
     },
     {
       "name": "The Conversation — 'Alien first contact: how the new rules differ from science fiction'",

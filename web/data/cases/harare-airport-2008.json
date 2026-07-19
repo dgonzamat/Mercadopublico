@@ -1,7 +1,9 @@
 {
   "id": "harare-airport-2008",
   "num": 158,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "Aeropuerto de Harare · objeto sobre la pista en documento CIA (Zimbabwe, 2008)",
   "name_en": "Harare Airport · object over the runway in a CIA document (Zimbabwe, 2008)",
   "year_start": 2008,
@@ -59,22 +61,26 @@
     {
       "name": "Newsweek — 'UFO Files: 5 Key Revelations as Pentagon Drops Third Batch of Records'",
       "url": "https://www.newsweek.com/ufo-files-pentagon-releases-third-batch-records-uap-pete-hegseth-trump-12064856",
-      "note": "Detalle del documento CIA sobre Harare en el tercer release de PURSUE."
+      "note": "Detalle del documento CIA sobre Harare en el tercer release de PURSUE.",
+      "note_en": "Detail of the CIA document on Harare in the third PURSUE release."
     },
     {
       "name": "NBC News — 'Third batch of declassified UFO files reveals sightings around the world were investigated'",
       "url": "https://www.nbcnews.com/politics/national-security/third-batch-declassified-ufo-files-reveals-sightings-world-investigate-rcna349775",
-      "note": "Cobertura del contenido del tercer release, incluido Harare."
+      "note": "Cobertura del contenido del tercer release, incluido Harare.",
+      "note_en": "Coverage of the third release's content, including Harare."
     },
     {
       "name": "iHarare — 'CIA Went On High Alert In Zimbabwe After Mystery UFO Hovered Over Harare Airport'",
       "url": "https://iharare.com/cia-went-on-high-alert-in-zimbabwe-after-mystery-ufo-hovered-over-harare-airport-newly-declassified-files-claim/",
-      "note": "Cobertura local con la fecha (jul 2008) y la descripción del objeto."
+      "note": "Cobertura local con la fecha (jul 2008) y la descripción del objeto.",
+      "note_en": "Local coverage with the date (Jul 2008) and the description of the object."
     },
     {
       "name": "war.gov/ufo/ — Presidential Unsealing and Reporting System for UAP Encounters (Release 3)",
       "url": "https://www.war.gov/ufo/",
-      "note": "Fuente primaria: el portal donde se publicó el documento desclasificado."
+      "note": "Fuente primaria: el portal donde se publicó el documento desclasificado.",
+      "note_en": "Primary source: the portal where the declassified document was published."
     }
   ],
   "documents": [

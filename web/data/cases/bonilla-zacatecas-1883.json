@@ -43,31 +43,35 @@
     {
       "name": "Manterola, H. · Ramos Lara, M. · Cordero, G. — «Interpretation of the observations made in 1883 in Zacatecas (Mexico): A fragmented Comet that nearly hits the Earth» (arXiv:1110.2798, 2011)",
       "url": "https://arxiv.org/abs/1110.2798",
-      "note": "Preprint de la UNAM que reinterpreta los datos de Bonilla como fragmentos cometarios en paso cercano. Acceso abierto."
+      "note": "Preprint de la UNAM que reinterpreta los datos de Bonilla como fragmentos cometarios en paso cercano. Acceso abierto.",
+      "note_en": "UNAM preprint reinterpreting Bonilla's data as cometary fragments on a close pass. Open access."
     },
     {
       "name": "Bonilla observation — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Bonilla_observation",
-      "note": "Síntesis del episodio, la publicación en «L'Astronomie» y la controversia de interpretación."
+      "note": "Síntesis del episodio, la publicación en «L'Astronomie» y la controversia de interpretación.",
+      "note_en": "Synthesis of the episode, the publication in «L'Astronomie» and the interpretation controversy."
     },
     {
       "name": "Bonilla, J. A. — observación publicada en «L'Astronomie» (dir. Camille Flammarion), 1885",
-      "note": "Fuente primaria de época: registro y conjetura editorial de aves/insectos. Revista científica francesa fundada por Flammarion."
+      "note": "Fuente primaria de época: registro y conjetura editorial de aves/insectos. Revista científica francesa fundada por Flammarion.",
+      "note_en": "Period primary source: record and editorial conjecture of birds/insects. French scientific magazine founded by Flammarion."
     },
     {
       "name": "MIT Technology Review — «Billion-Ton Comet May Have Missed Earth by a Few Hundred Kilometers in 1883» (oct 2011)",
       "url": "https://www.technologyreview.com/2011/10/17/21387/",
-      "note": "Cobertura de la hipótesis de la UNAM y de sus implicaciones (cuasi-impacto)."
+      "note": "Cobertura de la hipótesis de la UNAM y de sus implicaciones (cuasi-impacto).",
+      "note_en": "Coverage of the UNAM hypothesis and its implications (near-impact)."
     }
   ],
   "mundanoType": "natural",
   "posterior": {
-    "mundano_natural": 0.60,
-    "humana_clasificada": 0.00,
-    "adversaria": 0.00,
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.06,
-    "indet": 0.30
+    "indet": 0.3
   },
   "seoTitle": "Observación de Bonilla (1883): la primera foto de OVNIs y la hipótesis del cometa",
   "seoDescription": "El astrónomo José Bonilla fotografió 440+ objetos cruzando el Sol desde el Observatorio de Zacatecas en 1883, publicado en «L'Astronomie». La reinterpretación de la UNAM (2011): fragmentos de un cometa en paso cercano. Fuentes primarias.",

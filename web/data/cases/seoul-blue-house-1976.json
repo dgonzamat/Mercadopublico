@@ -49,15 +49,18 @@
   "sources": [
     {
       "name": "MBC — «Geuseosi Algo Sipda» (I Want to Know It), especial del 7 de noviembre de 2020",
-      "note": "Investigación periodística que reúne testimonios y prensa de época del incidente de la Casa Azul"
+      "note": "Investigación periodística que reúne testimonios y prensa de época del incidente de la Casa Azul",
+      "note_en": "Journalistic investigation gathering testimony and period press on the Casa Azul incident"
     },
     {
       "name": "Prensa surcoreana de octubre de 1976 sobre el fuego antiaéreo en Seúl",
-      "note": "Registra los disparos, las víctimas y la explicación oficial del «carguero estadounidense»"
+      "note": "Registra los disparos, las víctimas y la explicación oficial del «carguero estadounidense»",
+      "note_en": "Records the shots, the victims and the official «American freighter» explanation"
     },
     {
       "name": "Compilaciones documentales del incidente de la Casa Azul (1976)",
-      "note": "Reconstruyen la formación, la zona de exclusión y la contradicción de la versión oficial"
+      "note": "Reconstruyen la formación, la zona de exclusión y la contradicción de la versión oficial",
+      "note_en": "Reconstruct the formation, the exclusion zone and the contradiction in the official version"
     }
   ],
   "posterior": {

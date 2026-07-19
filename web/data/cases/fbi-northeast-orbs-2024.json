@@ -126,12 +126,14 @@
     {
       "name": "war.gov/UFO — expediente 'Northeastern Orb Sighting' (FBI-UAP-D004 a D010, PURSUE Release 03)",
       "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
-      "note": "Cinco FD-1057 (2024) y dos FD-302 (2026); los siete están embebidos en el visor de este caso."
+      "note": "Cinco FD-1057 (2024) y dos FD-302 (2026); los siete están embebidos en el visor de este caso.",
+      "note_en": "Five FD-1057 (2024) and two FD-302 (2026); all seven are embedded in this case's viewer."
     },
     {
       "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal del Departamento de Guerra."
+      "note": "Portal del Departamento de Guerra.",
+      "note_en": "Department of War portal."
     }
   ],
   "misidSubtype": "aeronave"

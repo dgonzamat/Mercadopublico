@@ -45,21 +45,25 @@
   "sources": [
     {
       "name": "Hynek, J. A. — «The UFO Experience: A Scientific Inquiry» (Henry Regnery, 1972)",
-      "note": "El asesor científico de Blue Book reproduce una transcripción parcial del interrogatorio de Quintanilla y analiza el caso. ISBN 978-0809294305."
+      "note": "El asesor científico de Blue Book reproduce una transcripción parcial del interrogatorio de Quintanilla y analiza el caso. ISBN 978-0809294305.",
+      "note_en": "Blue Book's scientific advisor reproduces a partial transcript of Quintanilla's interrogation and analyzes the case. ISBN 978-0809294305."
     },
     {
       "name": "Project Blue Book — expediente del caso Portage County (17 abr 1966)",
-      "note": "Conclusión oficial: satélite Echo y planeta Venus. Documentación del programa de la USAF (archivos desclasificados de Blue Book)."
+      "note": "Conclusión oficial: satélite Echo y planeta Venus. Documentación del programa de la USAF (archivos desclasificados de Blue Book).",
+      "note_en": "Official conclusion: the Echo satellite and the planet Venus. USAF program documentation (declassified Blue Book files)."
     },
     {
       "name": "Gross, P. — dossier «The 1966 Portage County police UFO chase» (ufologie.patrickgross.org)",
       "url": "https://ufologie.patrickgross.org/htm/portage66.htm",
-      "note": "Recopilación documental del caso con cronología, testimonios y prensa de época."
+      "note": "Recopilación documental del caso con cronología, testimonios y prensa de época.",
+      "note_en": "Documentary compilation of the case with chronology, testimony and period press."
     },
     {
       "name": "Daily Kent Stater — cobertura del caso (octubre 1966, archivo digital de Kent State University)",
       "url": "https://dks.library.kent.edu/cgi-bin/kentstate?a=d&d=dks19661018-01.2.2",
-      "note": "Prensa universitaria de época que cubrió el avistamiento y sus secuelas."
+      "note": "Prensa universitaria de época que cubrió el avistamiento y sus secuelas.",
+      "note_en": "Period university press that covered the sighting and its aftermath."
     }
   ],
   "mundanoType": "misid",

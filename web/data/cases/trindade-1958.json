@@ -49,7 +49,8 @@
   "sources": [
     {
       "name": "Marinha do Brasil — Comunicado oficial Trindade (1958)",
-      "note": "Publicado en O Globo"
+      "note": "Publicado en O Globo",
+      "note_en": "Published in O Globo"
     },
     {
       "name": "USAF Project Blue Book — Trindade case file (catalogado 'unidentified')",
@@ -57,7 +58,8 @@
     },
     {
       "name": "GEPAN/CNES — Analyse photographique Trindade (1980)",
-      "note": "Confirmación independiente francesa"
+      "note": "Confirmación independiente francesa",
+      "note_en": "Independent French confirmation"
     }
   ],
   "name_en": "Trindade Island",

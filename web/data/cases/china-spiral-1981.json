@@ -45,17 +45,20 @@
     {
       "name": "That's Mags — 'This Day in History: China's Otherworldly Alien Sky Spiral of 1981'",
       "url": "https://www.thatsmags.com/beijing/post/12680/tales-from-the-chinese-crypt-the-1981sky-spiral",
-      "note": "Cronología del evento y la cifra de testigos."
+      "note": "Cronología del evento y la cifra de testigos.",
+      "note_en": "Chronology of the event and the witness count."
     },
     {
       "name": "China.org.cn — 'Prepare for more UFO sightings' (análisis de Wang Sichao)",
       "url": "http://www.china.org.cn/china/2010-08/02/content_20624008_2.htm",
-      "note": "Parámetros de altitud y velocidad estimados por Wang Sichao."
+      "note": "Parámetros de altitud y velocidad estimados por Wang Sichao.",
+      "note_en": "Altitude and speed parameters estimated by Wang Sichao."
     },
     {
       "name": "China Daily — 'Research rocket mistaken for UFO in China'",
       "url": "https://www.chinadaily.com.cn/china/2013-05/14/content_16498785.htm",
-      "note": "Documenta el mecanismo prosaico (lanzamientos confundidos con OVNIs) en China."
+      "note": "Documenta el mecanismo prosaico (lanzamientos confundidos con OVNIs) en China.",
+      "note_en": "Documents the prosaic mechanism (launches mistaken for UFOs) in China."
     }
   ],
   "posterior": {

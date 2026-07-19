@@ -52,12 +52,14 @@
     {
       "name": "The 1967 Cuban Jet Incident — NICAP",
       "url": "http://www.nicap.org/reports/cuban1.htm",
-      "note": "Versión de referencia del relato, basada en el testimonio del ex-analista; fuente única, sin corroboración independiente."
+      "note": "Versión de referencia del relato, basada en el testimonio del ex-analista; fuente única, sin corroboración independiente.",
+      "note_en": "Reference version of the account, based on the former analyst's testimony; single source, without independent corroboration."
     },
     {
       "name": "Cuban MiG / 1967 incident — discusión crítica",
       "url": "https://ufoac.com/the-incident-with-the-cuban-jet-ufo.html",
-      "note": "Resumen del caso y de sus problemas de verificación (NSA nunca confirmó)."
+      "note": "Resumen del caso y de sus problemas de verificación (NSA nunca confirmó).",
+      "note_en": "Summary of the case and its verification problems (the NSA never confirmed)."
     }
   ],
   "documents": [

@@ -1,7 +1,9 @@
 {
   "id": "fbi-uap-stills-a-2025",
   "num": 286,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Imágenes fijas UAP del FBI · serie A (PURSUE)",
   "name_en": "FBI UAP still images · A series (PURSUE)",
   "year_start": 2025,
@@ -119,17 +121,20 @@
     {
       "name": "war.gov/UFO — FBI Photo A series (A1–A8), PURSUE Release 01",
       "url": "https://www.war.gov/ufo/",
-      "note": "Portal oficial; descripción y assets de la sumisión FBI a la AARO."
+      "note": "Portal oficial; descripción y assets de la sumisión FBI a la AARO.",
+      "note_en": "Official portal; description and assets of the FBI's submission to AARO."
     },
     {
       "name": "NBC News — 'Pentagon releases declassified UFO files including videos and photos' (8 may 2026)",
       "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204",
-      "note": "Cobertura del primer release y de las imágenes fijas del FBI."
+      "note": "Cobertura del primer release y de las imágenes fijas del FBI.",
+      "note_en": "Coverage of the first release and the FBI still images."
     },
     {
       "name": "DefenseScoop — '‘Data alone is not disclosure’: UAP research community reacts to Trump’s first PURSUE file drop' (14 may 2026)",
       "url": "https://defensescoop.com/2026/05/14/uap-trump-first-pursue-ufo-file-drop/",
-      "note": "Crítica al diseño del canal: material sin contexto no equivale a divulgación."
+      "note": "Crítica al diseño del canal: material sin contexto no equivale a divulgación.",
+      "note_en": "Critique of the channel's design: material without context does not amount to disclosure."
     }
   ]
 }

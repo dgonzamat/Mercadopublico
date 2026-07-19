@@ -47,17 +47,20 @@
     {
       "name": "Wikipedia — Robert Taylor incident",
       "url": "https://en.wikipedia.org/wiki/Robert_Taylor_incident",
-      "note": "Cronología, investigación policial y trazas."
+      "note": "Cronología, investigación policial y trazas.",
+      "note_en": "Chronology, police investigation and traces."
     },
     {
       "name": "BBC News — 'The UFO sighting investigated by the police'",
       "url": "https://feeds.bbci.co.uk/news/uk-scotland-50262655",
-      "note": "Cobertura del 40º aniversario y el expediente policial."
+      "note": "Cobertura del 40º aniversario y el expediente policial.",
+      "note_en": "Coverage of the 40th anniversary and the police file."
     },
     {
       "name": "West Lothian Council — Dechmont Law UFO (información oficial)",
       "url": "https://www.westlothian.gov.uk/media/26988/Dechmont-Law-UFO-info/pdf/Dechmont_Law_UFO.pdf",
-      "note": "Documento institucional local sobre el incidente y el sitio."
+      "note": "Documento institucional local sobre el incidente y el sitio.",
+      "note_en": "Local institutional document on the incident and the site."
     }
   ],
   "posterior": {

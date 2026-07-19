@@ -1,7 +1,10 @@
 {
   "id": "fbi-62hq83894-file",
   "num": 283,
-  "pursueReleases": [1, 4],
+  "pursueReleases": [
+    1,
+    4
+  ],
   "name": "Expediente 62-HQ-83894 · el archivo de discos voladores del FBI (PURSUE)",
   "name_en": "File 62-HQ-83894 · the FBI's flying-disc archive (PURSUE)",
   "year_start": 1947,
@@ -274,21 +277,25 @@
     {
       "name": "war.gov/UFO — 62-HQ-83894 serials (PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf",
-      "note": "Serials del Volumen 1 del expediente FBI (muestra incorporada al visor)."
+      "note": "Serials del Volumen 1 del expediente FBI (muestra incorporada al visor).",
+      "note_en": "Serials from Volume 1 of the FBI file (sample embedded in the viewer)."
     },
     {
       "name": "FBI Records: The Vault — 'Unidentified Flying Objects' (file 62-HQ-83894)",
       "url": "https://vault.fbi.gov/UFO",
-      "note": "El expediente completo y la nota del FBI sobre el memo Hottel."
+      "note": "El expediente completo y la nota del FBI sobre el memo Hottel.",
+      "note_en": "The full file and the FBI's note on the Hottel memo."
     },
     {
       "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registros 62-HQ-83894)",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "Mirror del índice con metadatos de los serials del expediente."
+      "note": "Mirror del índice con metadatos de los serials del expediente.",
+      "note_en": "Mirror of the index with metadata of the file's serials."
     },
     {
       "name": "FBI — «Correspondence Relating to UFO Sightings» (1967–1974)",
-      "note": "Correspondencia de oficinas de campo del FBI sobre avistamientos (p. ej. memo de Chicago, 22 sep 1967). AARO UAP Records, release 04 (FBIUAPD014)."
+      "note": "Correspondencia de oficinas de campo del FBI sobre avistamientos (p. ej. memo de Chicago, 22 sep 1967). AARO UAP Records, release 04 (FBIUAPD014).",
+      "note_en": "FBI field-office correspondence on sightings (e.g. Chicago memo, Sep 22, 1967). AARO UAP Records, release 04 (FBIUAPD014)."
     }
   ]
 }

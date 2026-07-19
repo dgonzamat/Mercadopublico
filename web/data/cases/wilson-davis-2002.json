@@ -14,7 +14,14 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 62,
-  "posterior": { "mundano_natural": 0.1, "humana_clasificada": 0.2, "adversaria": 0, "nohumano_encubierto": 0.4, "nohumano_abierto": 0, "indet": 0.3 },
+  "posterior": {
+    "mundano_natural": 0.1,
+    "humana_clasificada": 0.2,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.4,
+    "nohumano_abierto": 0,
+    "indet": 0.3
+  },
   "summary": "Las notas manuscritas de Eric Davis (2002) registran al Almirante Thomas Wilson — ex Vice Director de la DIA — relatando que en 1997 se le negó acceso a un programa de acceso especial sobre tecnología recuperada pese a su jerarquía: la compartimentación descrita coincide con el testimonio de Grusch de 2023.",
   "summary_en": "Eric Davis's handwritten 2002 notes record Admiral Thomas Wilson — former DIA Vice Director — recounting that in 1997 he was denied access to a special access program on recovered technology despite his rank: the compartmentalization described matches Grusch's 2023 testimony.",
   "patterns": [
@@ -48,7 +55,8 @@
     },
     {
       "name": "Mellon, C. — Comments on Wilson-Davis (2020)",
-      "note": "Ex-Deputy Asst SecDef Intel"
+      "note": "Ex-Deputy Asst SecDef Intel",
+      "note_en": "Former Deputy Asst SecDef, Intelligence"
     }
   ],
   "documents": [

@@ -60,27 +60,32 @@
     {
       "name": "White House Press Briefing 17 dic 2024 (Karine Jean-Pierre + FBI Director Wray)",
       "url": "https://www.whitehouse.gov/briefing-room/press-briefings/",
-      "note": "Declaración oficial 'sin evidencia de amenaza extranjera ni tecnología anómala'."
+      "note": "Declaración oficial 'sin evidencia de amenaza extranjera ni tecnología anómala'.",
+      "note_en": "Official statement 'no evidence of foreign threat or anomalous technology'."
     },
     {
       "name": "Office of Governor Phil Murphy — Press conferences Dec 2024",
       "url": "https://www.nj.gov/governor/news/",
-      "note": "Disputa pública estatal de la explicación federal."
+      "note": "Disputa pública estatal de la explicación federal.",
+      "note_en": "State-level public dispute of the federal explanation."
     },
     {
       "name": "Senator Andy Kim (NJ) — Public statements re drone sightings Dec 2024",
       "url": "https://www.kim.senate.gov/",
-      "note": "Presión legislativa federal."
+      "note": "Presión legislativa federal.",
+      "note_en": "Federal legislative pressure."
     },
     {
       "name": "AARO — Joint federal investigation report Nov-Dec 2024",
       "url": "https://www.aaro.mil/",
-      "note": "Documento institucional de la coordinación FBI/DHS/FAA/AARO."
+      "note": "Documento institucional de la coordinación FBI/DHS/FAA/AARO.",
+      "note_en": "Institutional document of the FBI/DHS/FAA/AARO coordination."
     },
     {
       "name": "NYT — 'New Jersey Drone Sightings: What We Know and What We Don't' (dic 2024)",
       "url": "https://www.nytimes.com/",
-      "note": "Cobertura periodística sostenida del incidente."
+      "note": "Cobertura periodística sostenida del incidente.",
+      "note_en": "Sustained press coverage of the incident."
     }
   ],
   "misidSubtype": "aeronave"

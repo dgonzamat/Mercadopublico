@@ -61,19 +61,23 @@
   "sources": [
     {
       "name": "Fuller, John G. 'The Interrupted Journey' (1966)",
-      "note": "Reconstrucción basada en transcripciones clínicas Dr. Simon."
+      "note": "Reconstrucción basada en transcripciones clínicas Dr. Simon.",
+      "note_en": "Reconstruction based on Dr. Simon's clinical transcripts."
     },
     {
       "name": "USAF Project Blue Book Case File (declassified portions)",
-      "note": "Correlación de radar Pease AFB."
+      "note": "Correlación de radar Pease AFB.",
+      "note_en": "Pease AFB radar correlation."
     },
     {
       "name": "Friedman, S. & Marden, K. 'Captured! The Betty and Barney Hill UFO Experience' (2007)",
-      "note": "Re-análisis del caso con evidencia adicional declassified."
+      "note": "Re-análisis del caso con evidencia adicional declassified.",
+      "note_en": "Re-analysis of the case with additional declassified evidence."
     },
     {
       "name": "Simon, Benjamin. Transcripciones clínicas (1963-1964)",
-      "note": "Records psiquiátricos formales del proceso de hipnosis. Conclusión profesional Simon: fantasías compartidas."
+      "note": "Records psiquiátricos formales del proceso de hipnosis. Conclusión profesional Simon: fantasías compartidas.",
+      "note_en": "Formal psychiatric records of the hypnosis process. Simon's professional conclusion: shared fantasies."
     }
   ],
   "misidSubtype": "terrestre_otros"

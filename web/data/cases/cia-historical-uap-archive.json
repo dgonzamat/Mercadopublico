@@ -1,7 +1,10 @@
 {
   "id": "cia-historical-uap-archive",
   "num": 298,
-  "pursueReleases": [3, 4],
+  "pursueReleases": [
+    3,
+    4
+  ],
   "name": "CIA · archivo histórico UAP (Panel Robertson, U-2, Blue Book SR-14, inteligencia exterior) — PURSUE",
   "name_en": "CIA · historical UAP archive (Robertson Panel, U-2, Blue Book SR-14, foreign intelligence) — PURSUE",
   "year_start": 1949,
@@ -213,16 +216,19 @@
     {
       "name": "war.gov/UFO — archivo histórico CIA (CIA-UAP-002 a 019, PURSUE Release 03)",
       "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
-      "note": "Los 18 documentos están embebidos en el visor de este caso."
+      "note": "Los 18 documentos están embebidos en el visor de este caso.",
+      "note_en": "The 18 documents are embedded in this case's viewer."
     },
     {
       "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal del Departamento de Guerra."
+      "note": "Portal del Departamento de Guerra.",
+      "note_en": "Department of War portal."
     },
     {
       "name": "CIA — «Memorandum» y «Analysis of Unconventional Aircraft Sightings» (1 nov 1955, Top Secret)",
-      "note": "Documentos primarios desclasificados en 2026 (AARO UAP Records, release 04, códigos CIAUAPD020 y CIAUAPD021); extienden el interés de la CIA tras el Panel Robertson."
+      "note": "Documentos primarios desclasificados en 2026 (AARO UAP Records, release 04, códigos CIAUAPD020 y CIAUAPD021); extienden el interés de la CIA tras el Panel Robertson.",
+      "note_en": "Primary documents declassified in 2026 (AARO UAP Records, release 04, codes CIAUAPD020 and CIAUAPD021); they extend the CIA's interest after the Robertson Panel."
     }
   ]
 }

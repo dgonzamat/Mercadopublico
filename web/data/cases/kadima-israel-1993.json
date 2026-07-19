@@ -53,12 +53,14 @@
     {
       "name": "Religion News Service — 'Is ET having a close encounter with the Holy Land?' (1996)",
       "url": "https://religionnews.com/1996/03/19/top-story-religion-and-culture-is-et-having-a-close-encounter-with-the-holy/",
-      "note": "Cobertura periodística de la oleada israelí y su contexto."
+      "note": "Cobertura periodística de la oleada israelí y su contexto.",
+      "note_en": "Press coverage of the Israeli wave and its context."
     },
     {
       "name": "David Halperin — 'UFOs in Israel'",
       "url": "https://www.davidhalperin.net/ufos-in-israel-aliens-the-other-and-dr-tehiya-eshet/",
-      "note": "Análisis académico del fenómeno UAP en Israel (incluye marco crítico)."
+      "note": "Análisis académico del fenómeno UAP en Israel (incluye marco crítico).",
+      "note_en": "Academic analysis of the UAP phenomenon in Israel (includes a critical framework)."
     }
   ],
   "documents": [

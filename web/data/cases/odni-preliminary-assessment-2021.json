@@ -17,7 +17,7 @@
   "epistemicStatus": "documented",
   "probability": 75,
   "posterior": {
-    "mundano_natural": 0.40,
+    "mundano_natural": 0.4,
     "humana_clasificada": 0.12,
     "adversaria": 0.13,
     "nohumano_encubierto": 0,
@@ -53,7 +53,8 @@
     {
       "name": "ODNI — 'Preliminary Assessment: Unidentified Aerial Phenomena' (25 jun 2021)",
       "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf",
-      "note": "Documento primario oficial."
+      "note": "Documento primario oficial.",
+      "note_en": "Official primary document."
     },
     {
       "name": "ODNI — página oficial de informes UAP",

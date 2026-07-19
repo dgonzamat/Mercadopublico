@@ -1,7 +1,9 @@
 {
   "id": "pursue-r03-2026",
   "num": 47,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "PURSUE R03 + Isaacman + OPM NDA",
   "year_start": 2026,
   "country": "US",
@@ -18,11 +20,11 @@
   "probability": 88,
   "posterior": {
     "mundano_natural": 0.32,
-    "humana_clasificada": 0.40,
+    "humana_clasificada": 0.4,
     "adversaria": 0.04,
     "nohumano_encubierto": 0.09,
     "nohumano_abierto": 0.05,
-    "indet": 0.10
+    "indet": 0.1
   },
   "summary": "En cinco semanas de 2026 —el 8 y el 22 de mayo y el 12 de junio— el sistema PURSUE publicó tres tandas de archivos UAP, rompiendo el ritmo histórico trimestral. La coincidencia entre esa aceleración, un récord de atención mediática y la no-confirmación simultánea del Departamento de Guerra apunta a una fase de release controlado, independientemente del origen del fenómeno.",
   "summary_en": "Over five weeks in 2026 —8 and 22 May and 12 June— the PURSUE system released three batches of UAP records, breaking the historical quarterly cadence. The convergence of that acceleration, record media attention and the Department of War's simultaneous non-confirmation points to a phase of controlled release, regardless of the phenomenon's origin.",
@@ -51,7 +53,8 @@
     {
       "name": "AARO Release R03 (mayo 2026)",
       "url": "https://www.aaro.mil/",
-      "note": "Página oficial AARO con tres releases archivados"
+      "note": "Página oficial AARO con tres releases archivados",
+      "note_en": "Official AARO page with three archived releases"
     },
     {
       "name": "DoD Press Office — Non-confirmation statement (mayo 2026)",
@@ -60,7 +63,8 @@
     {
       "name": "Coulthart, R. — NewsNation coverage (mayo 2026)",
       "url": "https://www.newsnationnow.com/space/ufo/uap-aaro-report-release/",
-      "note": "Cobertura sostenida del intervalo de releases"
+      "note": "Cobertura sostenida del intervalo de releases",
+      "note_en": "Sustained coverage of the release interval"
     }
   ],
   "sources_en": [

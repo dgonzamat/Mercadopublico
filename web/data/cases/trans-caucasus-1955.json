@@ -67,12 +67,14 @@
     {
       "name": "war.gov/UFO — 341_110677 Numerical File 5-2500 (IR 193-55, PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf",
-      "note": "Reporte primario del agregado aéreo de EE.UU."
+      "note": "Reporte primario del agregado aéreo de EE.UU.",
+      "note_en": "Primary report by the U.S. air attaché."
     },
     {
       "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro 341_110677)",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "Mirror del índice con descripción y metadatos del reporte."
+      "note": "Mirror del índice con descripción y metadatos del reporte.",
+      "note_en": "Mirror of the index with description and metadata of the report."
     }
   ],
   "misidSubtype": "espacial"

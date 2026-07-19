@@ -1,7 +1,9 @@
 {
   "id": "skylab-observations-1973",
   "num": 280,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Skylab · destellos y objeto rojizo (NASA, PURSUE)",
   "name_en": "Skylab · light flashes and reddish object (NASA, PURSUE)",
   "year_start": 1973,
@@ -66,16 +68,19 @@
     {
       "name": "war.gov/UFO — NASA-UAP-D7, Skylab Technical Crew Debriefing 1973 (PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf",
-      "note": "Documento primario con los extractos de las tres tripulaciones."
+      "note": "Documento primario con los extractos de las tres tripulaciones.",
+      "note_en": "Primary document with the excerpts from the three crews."
     },
     {
       "name": "abigailhaddad/ufo-releases — índice oficial de war.gov (registro NASA-UAP-D007)",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "Mirror del índice con descripción y citas verbatim de los debriefings."
+      "note": "Mirror del índice con descripción y citas verbatim de los debriefings.",
+      "note_en": "Mirror of the index with description and verbatim quotes from the debriefings."
     },
     {
       "name": "NASA — Apollo Light Flash Moving Emulsion Detector / cosmic-ray visual phenomena",
-      "note": "Base científica del fenómeno de fosfenos cósmicos reportado por astronautas."
+      "note": "Base científica del fenómeno de fosfenos cósmicos reportado por astronautas.",
+      "note_en": "Scientific basis of the cosmic-phosphene phenomenon reported by astronauts."
     }
   ]
 }

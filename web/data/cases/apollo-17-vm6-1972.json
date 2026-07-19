@@ -102,17 +102,20 @@
     {
       "name": "war.gov/UFO — NASA-UAP-VM6 (PURSUE Release 01, documento primario)",
       "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg",
-      "note": "Placa oficial publicada en el portal del Departamento de Guerra."
+      "note": "Placa oficial publicada en el portal del Departamento de Guerra.",
+      "note_en": "Official slide published on the Department of War portal."
     },
     {
       "name": "the-ufo-files — apollo-17-vm6 (mirror público accesible del release PURSUE)",
       "url": "https://github.com/wretcher207/the-ufo-files/blob/main/pursue-release-01/cases/apollo-17-vm6.md",
-      "note": "Mirror curado con writeup y referencia al documento primario."
+      "note": "Mirror curado con writeup y referencia al documento primario.",
+      "note_en": "Curated mirror with writeup and reference to the primary document."
     },
     {
       "name": "Department of War — 'Releases Unidentified Anomalous Phenomena Files in Historic Transparency Effort'",
       "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
-      "note": "Comunicado oficial del primer release que incluye el material NASA."
+      "note": "Comunicado oficial del primer release que incluye el material NASA.",
+      "note_en": "Official statement of the first release, which includes the NASA material."
     }
   ],
   "misidSubtype": "terrestre_otros"

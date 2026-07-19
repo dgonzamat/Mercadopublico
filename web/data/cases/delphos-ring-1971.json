@@ -47,17 +47,20 @@
     {
       "name": "Wikipedia — Delphos (Kansas) UFO ring / 1971 incident",
       "url": "https://en.wikipedia.org/wiki/Delphos,_Kansas",
-      "note": "Cronología y descripción del anillo."
+      "note": "Cronología y descripción del anillo.",
+      "note_en": "Chronology and description of the ring."
     },
     {
       "name": "The Black Vault — Analysis of Soil Samples Related to the Delphos, Kansas, November 2, 1971",
       "url": "https://www.theblackvault.com/casefiles/analysis-soil-samples-related-delphos-kansas-november-2-1971/",
-      "note": "Documentación del análisis del suelo."
+      "note": "Documentación del análisis del suelo.",
+      "note_en": "Documentation of the soil analysis."
     },
     {
       "name": "SCU (Scientific Coalition for UAP Studies) — A New Appraisal of the Delphos CE2 1971 Case",
       "url": "https://www.explorescu.org/post/a-new-appraisal-of-the-data-of-the-delphos-ce2-1971-case",
-      "note": "Reapreciación científica (incluye trabajo de KSU)."
+      "note": "Reapreciación científica (incluye trabajo de KSU).",
+      "note_en": "Scientific reappraisal (includes KSU work)."
     }
   ],
   "posterior": {

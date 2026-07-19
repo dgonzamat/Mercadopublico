@@ -78,34 +78,41 @@
     {
       "name": "Representative Burlison · 'Burlison Presses MITRE for Answers on UAP Records, FFRDC Accountability, and Compliance with Federal Declassification Mandates'",
       "url": "https://burlison.house.gov/media/press-releases/burlison-presses-mitre-answers-uap-records-ffrdc-accountability-and-compliance",
-      "note": "Press release oficial del Committee con texto de la solicitud."
+      "note": "Press release oficial del Committee con texto de la solicitud.",
+      "note_en": "Official Committee press release with the text of the request."
     },
     {
       "name": "DefenseScoop · 'MITRE moves to comply with lawmaker's request for UAP records and assets dating back to 1930' (27 may 2026)",
       "url": "https://defensescoop.com/2026/05/27/rep-eric-burlison-request-for-uap-records-mitre/",
-      "note": "Confirmación pública de MITRE de que cumplirá la solicitud."
+      "note": "Confirmación pública de MITRE de que cumplirá la solicitud.",
+      "note_en": "MITRE's public confirmation that it will comply with the request."
     },
     {
       "name": "The Hill · 'UFO disclosure: GOP Rep. Eric Burlison targets private labs in search of information'",
       "url": "https://thehill.com/homenews/house/5880943-house-gop-ufo-programs-pentagon-private-contractors/",
-      "note": "Cobertura de la estrategia de extender la investigación a RAND, Aerospace, Northrop."
+      "note": "Cobertura de la estrategia de extender la investigación a RAND, Aerospace, Northrop.",
+      "note_en": "Coverage of the strategy to extend the investigation to RAND, Aerospace, Northrop."
     },
     {
       "name": "NewsNation · 'UFO disclosure: Rep. Eric Burlison targets private labs in search of information'",
       "url": "https://www.newsnationnow.com/space/ufo/lawmaker-ufo-talk-private-contractor/",
-      "note": "Cobertura periodística del giro hacia FFRDCs."
+      "note": "Cobertura periodística del giro hacia FFRDCs.",
+      "note_en": "Press coverage of the turn toward FFRDCs."
     },
     {
       "name": "FY 2024 National Defense Authorization Act — UAP Records Collection provisions",
-      "note": "Marco legal habilitante de la operación; crea NARA Record Group 615 para UAP."
+      "note": "Marco legal habilitante de la operación; crea NARA Record Group 615 para UAP.",
+      "note_en": "Enabling legal framework of the operation; creates NARA Record Group 615 for UAP."
     },
     {
       "name": "Rep. Eric Burlison → MIT Lincoln Laboratory — carta sobre la grabación 'AF-ATIC-FILM, 03/52' (Beacon Hill Study, Ruppelt), 7 may 2026",
-      "note": "Documento primario embebido en el visor; demanda de preservación y transferencia a NARA RG 615 (dominio público, US Government work)."
+      "note": "Documento primario embebido en el visor; demanda de preservación y transferencia a NARA RG 615 (dominio público, US Government work).",
+      "note_en": "Primary document embedded in the viewer; demand for preservation and transfer to NARA RG 615 (public domain, US Government work)."
     },
     {
       "name": "Rep. Eric Burlison → The MITRE Corporation — interrogatorios legislativos y production requests UAP, 22 may 2026",
-      "note": "Documento primario embebido en el visor, con el pliego de 11 secciones de interrogatorios (dominio público, US Government work)."
+      "note": "Documento primario embebido en el visor, con el pliego de 11 secciones de interrogatorios (dominio público, US Government work).",
+      "note_en": "Primary document embedded in the viewer, with the 11-section enclosure of interrogatories (public domain, US Government work)."
     }
   ]
 }

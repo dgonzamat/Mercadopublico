@@ -1,7 +1,9 @@
 {
   "id": "state-dept-misc-uap-cables",
   "num": 291,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Departamento de Estado · cables UAP tangenciales (Georgia 2001, Turkmenistán 2004, PURSUE)",
   "name_en": "State Department · tangential UAP cables (Georgia 2001, Turkmenistan 2004, PURSUE)",
   "year_start": 2001,
@@ -66,12 +68,14 @@
     {
       "name": "war.gov/UFO — State Department UAP Cables 3 y 4 (059UAP00011, 059UAP00012), PURSUE Release 01",
       "url": "https://www.war.gov/medialink/ufo/release_1/059uap00011.pdf",
-      "note": "Cables diplomáticos primarios incorporados al visor."
+      "note": "Cables diplomáticos primarios incorporados al visor.",
+      "note_en": "Primary diplomatic cables embedded in the viewer."
     },
     {
       "name": "war.gov/UFO — State Department UAP Cable 5, Mexico (059UAP00013)",
       "url": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf",
-      "note": "Tercer cable de la serie, analizado en el caso state-cable-mexico-congreso-2003."
+      "note": "Tercer cable de la serie, analizado en el caso state-cable-mexico-congreso-2003.",
+      "note_en": "Third cable in the series, analyzed in the state-cable-mexico-congreso-2003 case."
     }
   ]
 }

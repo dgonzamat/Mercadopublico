@@ -17,7 +17,14 @@
   "mundanoType": "misid",
   "epistemicStatus": "developing",
   "probability": 80,
-  "posterior": { "mundano_natural": 0.45, "humana_clasificada": 0.25, "adversaria": 0.03, "nohumano_encubierto": 0.10, "nohumano_abierto": 0.07, "indet": 0.10 },
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.25,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.07,
+    "indet": 0.1
+  },
   "summary": "El 12 de junio de 2026, el astrofísico de Harvard Avi Loeb anunció que la Casa Blanca, AARO, la ODNI y el FBI le pidieron formar y presidir un Consejo Asesor Científico sobre UAP. Reúne un equipo de datos (Cloete, Sarmiento, Szydagis, Nandal, Eldadi) y un panel más amplio con escépticos y defensores, con el mandato de aplicar método científico priorizando datos nuevos de alta calidad sobre material viejo no verificable.",
   "summary_en": "On June 12, 2026, Harvard astrophysicist Avi Loeb announced that the White House, AARO, ODNI and the FBI asked him to assemble and chair a UAP Science Advisory Council. It brings together a data team (Cloete, Sarmiento, Szydagis, Nandal, Eldadi) and a broader panel spanning skeptics and advocates, mandated to apply scientific method by prioritizing new high-quality data over old, unverifiable material.",
   "patterns": [
@@ -57,7 +64,8 @@
     {
       "name": "Skeptic — 'Michael Shermer Named to White House UAP Science Advisory Council'",
       "url": "https://www.skeptic.com/article/michael-shermer-named-to-white-house-uap-science-advisory-council/",
-      "note": "Confirma la inclusión de un escéptico declarado en el panel."
+      "note": "Confirma la inclusión de un escéptico declarado en el panel.",
+      "note_en": "Confirms the inclusion of a declared skeptic on the panel."
     },
     {
       "name": "UFO Timeline — 'White House Tasks Dr. Avi Loeb To Create A UAP Science Advisory Council'",
@@ -66,7 +74,8 @@
     {
       "name": "Above the Norm News (16 jun 2026) — 'A New Board Now Controls the UFO Files. Its Own Scientists Aren’t Allowed to See Them'",
       "url": "https://www.abovethenormnews.com/2026/06/16/uap-governance-board/",
-      "note": "Fuente de la tensión: el panel científico sin acceso a los archivos clasificados."
+      "note": "Fuente de la tensión: el panel científico sin acceso a los archivos clasificados.",
+      "note_en": "Source of the tension: the science panel without access to the classified files."
     }
   ],
   "primaryDocument": {

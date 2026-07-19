@@ -1,7 +1,9 @@
 {
   "id": "usaf-incident-summaries-1947-1950",
   "num": 287,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "«Incident Summaries» de la USAF · fichas «Check-List UFO» (Sign/Grudge, PURSUE)",
   "name_en": "USAF Incident Summaries · 'Check-List UFO' cards (Sign/Grudge, PURSUE)",
   "year_start": 1947,
@@ -102,12 +104,14 @@
     {
       "name": "NARA — USAF UFO project records (Sign / Grudge / Blue Book)",
       "url": "https://www.archives.gov/research/military/air-force/ufos",
-      "note": "Contexto archivístico de los registros de proyectos OVNI de la USAF."
+      "note": "Contexto archivístico de los registros de proyectos OVNI de la USAF.",
+      "note_en": "Archival context of the USAF UFO-project records."
     },
     {
       "name": "Department of War — 'Releases Unidentified Anomalous Phenomena Files in Historic Transparency Effort' (8 may 2026)",
       "url": "https://www.war.gov/News/Releases/Release/Article/4480582/department-of-war-releases-unidentified-anomalous-phenomena-files-in-historic-t/",
-      "note": "Comunicado oficial del primer release."
+      "note": "Comunicado oficial del primer release.",
+      "note_en": "Official statement of the first release."
     }
   ]
 }

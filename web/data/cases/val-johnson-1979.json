@@ -55,12 +55,14 @@
     {
       "name": "Wikipedia — Val Johnson incident",
       "url": "https://en.wikipedia.org/wiki/Val_Johnson_incident",
-      "note": "Cronología, daños y objeciones escépticas."
+      "note": "Cronología, daños y objeciones escépticas.",
+      "note_en": "Chronology, damage and skeptical objections."
     },
     {
       "name": "MNopedia (Minnesota Historical Society) — Val Johnson Incident, 1979",
       "url": "https://www.mnhs.org/mnopedia/search/index/event/val-johnson-incident-1979",
-      "note": "Fuente histórica institucional del estado."
+      "note": "Fuente histórica institucional del estado.",
+      "note_en": "Institutional historical source of the state."
     }
   ],
   "misidSubtype": "terrestre_otros"

@@ -47,7 +47,8 @@
   "sources": [
     {
       "name": "USAF / Project Blue Book — Special Report No. 14 (Battelle Memorial Institute, 1955)",
-      "note": "Estudio estadístico de ~3200 reportes; ~22% clasificados 'unknown'."
+      "note": "Estudio estadístico de ~3200 reportes; ~22% clasificados 'unknown'.",
+      "note_en": "Statistical study of ~3,200 reports; ~22% classified 'unknown'."
     },
     {
       "name": "Live Science — US government declassifies UAP files (contexto de análisis de materiales, 2026)",

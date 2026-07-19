@@ -44,11 +44,13 @@
     },
     {
       "name": "Bounias, M. — 'Biochemical Traumatology' Phyton 1990",
-      "note": "Publicación peer-reviewed del análisis"
+      "note": "Publicación peer-reviewed del análisis",
+      "note_en": "Peer-reviewed publication of the analysis"
     },
     {
       "name": "Velasco, J.-J. — Director GEPAN testimony",
-      "note": "Reconstrucción institucional"
+      "note": "Reconstrucción institucional",
+      "note_en": "Institutional reconstruction"
     }
   ],
   "sources_en": [

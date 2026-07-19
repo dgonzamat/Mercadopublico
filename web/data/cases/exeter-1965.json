@@ -44,12 +44,14 @@
     {
       "name": "Wikipedia — Exeter incident",
       "url": "https://en.wikipedia.org/wiki/Exeter_incident",
-      "note": "Cronología, testigos y clasificación Blue Book."
+      "note": "Cronología, testigos y clasificación Blue Book.",
+      "note_en": "Chronology, witnesses and Blue Book classification."
     },
     {
       "name": "UFO Evidence — The Incident at Exeter (Muscarello Case)",
       "url": "http://www.ufoevidence.org/cases/case426.htm",
-      "note": "Síntesis del caso y testimonios."
+      "note": "Síntesis del caso y testimonios.",
+      "note_en": "Synthesis of the case and testimony."
     }
   ],
   "posterior": {

@@ -1,7 +1,9 @@
 {
   "id": "apollo11-debriefing-1969",
   "num": 285,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Apolo 11 · observaciones del Technical Crew Debriefing (NASA, PURSUE)",
   "name_en": "Apollo 11 · Technical Crew Debriefing observations (NASA, PURSUE)",
   "year_start": 1969,
@@ -65,22 +67,26 @@
     {
       "name": "war.gov/UFO — NASA-UAP-D4, Apollo 11 Technical Crew Debriefing, 1969 (PURSUE Release 01)",
       "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
-      "note": "Documento primario desclasificado, incorporado al visor."
+      "note": "Documento primario desclasificado, incorporado al visor.",
+      "note_en": "Declassified primary document, embedded in the viewer."
     },
     {
       "name": "Fortune — 'UFO files show Buzz Aldrin saw a sizeable object close to the moon and a fairly bright light source' (9 may 2026)",
       "url": "https://fortune.com/2026/05/09/ufo-files-pentagon-buzz-aldrin-moon-apollo-11-crew-laser/",
-      "note": "Cobertura del contenido del debriefing en el primer release."
+      "note": "Cobertura del contenido del debriefing en el primer release.",
+      "note_en": "Coverage of the debriefing's content in the first release."
     },
     {
       "name": "NBC News — 'UFO/UAP files: Pentagon release' (8 may 2026)",
       "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204",
-      "note": "Contexto del primer release PURSUE y los materiales NASA."
+      "note": "Contexto del primer release PURSUE y los materiales NASA.",
+      "note_en": "Context of the first PURSUE release and the NASA materials."
     },
     {
       "name": "NASA — Apollo Light Flash investigations (ALFMED) y fenómeno de light flashes por rayos cósmicos",
       "url": "https://www.nasa.gov/history/afj/aplfltjnl/index.html",
-      "note": "Base científica para los destellos reportados en cabina."
+      "note": "Base científica para los destellos reportados en cabina.",
+      "note_en": "Scientific basis for the flashes reported in the cabin."
     }
   ]
 }

@@ -56,17 +56,20 @@
     {
       "name": "Wikipedia — UFO sightings in South Africa",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa",
-      "note": "Cronología del incidente de Pretoria 1996 con nombres y detalles."
+      "note": "Cronología del incidente de Pretoria 1996 con nombres y detalles.",
+      "note_en": "Chronology of the 1996 Pretoria incident with names and details."
     },
     {
       "name": "HandWiki — UFO sightings in South Africa",
       "url": "https://handwiki.org/wiki/Unsolved:UFO_sightings_in_South_Africa",
-      "note": "Detalle del relato de Viljoen y el contacto con Waterkloof."
+      "note": "Detalle del relato de Viljoen y el contacto con Waterkloof.",
+      "note_en": "Detail of Viljoen's account and the contact with Waterkloof."
     },
     {
       "name": "UFO Casebook — 1996 South Africa Police Chase / Film UFO",
       "url": "https://www.ufocasebook.com/2012/videopretoriasouthafrica.html",
-      "note": "Recopilación del caso y el material de video."
+      "note": "Recopilación del caso y el material de video.",
+      "note_en": "Compilation of the case and the video material."
     }
   ],
   "documents": [

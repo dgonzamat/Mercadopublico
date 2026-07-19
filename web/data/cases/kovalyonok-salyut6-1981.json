@@ -47,21 +47,25 @@
   "sources": [
     {
       "name": "Kovalyonok, V. — entrevistas posteriores y declaraciones documentadas (década 1990–2000)",
-      "note": "El propio cosmonauta sostuvo públicamente la descripción del evento."
+      "note": "El propio cosmonauta sostuvo públicamente la descripción del evento.",
+      "note_en": "The cosmonaut himself publicly maintained the description of the event."
     },
     {
       "name": "UFO Evidence — 'Russian Cosmonaut sees UFO while in orbit aboard Salyut-6 Space Station'",
       "url": "http://ufoevidence.org/cases/case396.htm",
-      "note": "Reconstrucción documental del caso con cronología y fuentes."
+      "note": "Reconstrucción documental del caso con cronología y fuentes.",
+      "note_en": "Documentary reconstruction of the case with chronology and sources."
     },
     {
       "name": "Oberg, J. — 'Have cosmonauts seen launches?' (análisis técnico)",
       "url": "https://www.jamesoberg.com/cosmonauts-see-launches.pdf",
-      "note": "Revisión escéptica por especialista en cosmonáutica soviética — verificación cruzada con cronograma de lanzamientos."
+      "note": "Revisión escéptica por especialista en cosmonáutica soviética — verificación cruzada con cronograma de lanzamientos.",
+      "note_en": "Skeptical review by a specialist in Soviet cosmonautics — cross-checked against the launch schedule."
     },
     {
       "name": "Documental ruso 'Космонавты и НЛО' (Cosmonautas y UFOs)",
-      "note": "Entrevista directa de Kovalyonok sobre el incidente."
+      "note": "Entrevista directa de Kovalyonok sobre el incidente.",
+      "note_en": "Direct interview with Kovalyonok about the incident."
     }
   ],
   "posterior": {

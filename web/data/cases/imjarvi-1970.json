@@ -45,15 +45,18 @@
     {
       "name": "UFO Evidence — «Two skiers encounter humanoid at Imjärvi, Finland» (7 ene 1970)",
       "url": "http://www.ufoevidence.org/cases/case741.htm",
-      "note": "Ficha del caso con la secuencia, los efectos físicos y las referencias de la investigación temprana."
+      "note": "Ficha del caso con la secuencia, los efectos físicos y las referencias de la investigación temprana.",
+      "note_en": "Case file with the sequence, the physical effects and the early-investigation references."
     },
     {
       "name": "Flying Saucer Review — cobertura del caso Imjärvi (1970)",
-      "note": "Revista que documentó el encuentro poco después, con entrevistas a Heinonen y Viljo."
+      "note": "Revista que documentó el encuentro poco después, con entrevistas a Heinonen y Viljo.",
+      "note_en": "Magazine that documented the encounter shortly afterward, with interviews of Heinonen and Viljo."
     },
     {
       "name": "Liljegren, A. (AFU) — análisis crítico de los relatos posteriores de Heinonen",
-      "note": "El ufólogo sueco concluyó que las afirmaciones tardías de Heinonen se parecían más al mito que a un contacto genuino, lo que contaminó la lectura del caso original."
+      "note": "El ufólogo sueco concluyó que las afirmaciones tardías de Heinonen se parecían más al mito que a un contacto genuino, lo que contaminó la lectura del caso original.",
+      "note_en": "The Swedish ufologist concluded that Heinonen's later claims resembled myth more than a genuine contact, which contaminated the reading of the original case."
     }
   ],
   "mundanoType": "misid",

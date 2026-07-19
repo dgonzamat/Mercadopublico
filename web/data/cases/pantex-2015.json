@@ -60,7 +60,8 @@
   "sources": [
     {
       "name": "DOE/NNSA — «Pantex Unidentified Object Incident Report» (2 sep 2015), Unclassified Controlled Nuclear Information",
-      "note": "Documento primario. Desclasificado en 2026 en el UAP Records de la AARO, release 04, código DOEUAPD005."
+      "note": "Documento primario. Desclasificado en 2026 en el UAP Records de la AARO, release 04, código DOEUAPD005.",
+      "note_en": "Primary document. Declassified in 2026 in the AARO UAP Records, release 04, code DOEUAPD005."
     },
     {
       "name": "AARO (All-domain Anomaly Resolution Office) — UAP Records / Cases Library",
@@ -68,7 +69,8 @@
     },
     {
       "name": "The Black Vault — archivo del incidente de Pantex (2015)",
-      "note": "Cobertura secundaria de una versión previa del informe obtenida por FOIA; corrobora fecha, lugar y descripción."
+      "note": "Cobertura secundaria de una versión previa del informe obtenida por FOIA; corrobora fecha, lugar y descripción.",
+      "note_en": "Secondary coverage of an earlier version of the report obtained via FOIA; corroborates date, place and description."
     }
   ],
   "documents": [

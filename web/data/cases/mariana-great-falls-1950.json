@@ -46,19 +46,23 @@
     {
       "name": "Mariana UFO film — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Mariana_UFO_film",
-      "note": "Síntesis del incidente, las analíticas de la USAF y el Robertson Panel, el análisis de Baker y la controversia de los fotogramas."
+      "note": "Síntesis del incidente, las analíticas de la USAF y el Robertson Panel, el análisis de Baker y la controversia de los fotogramas.",
+      "note_en": "Synthesis of the incident, the USAF and Robertson Panel analyses, Baker's analysis and the frames controversy."
     },
     {
       "name": "Ruppelt, E. J. — «The Report on Unidentified Flying Objects» (Doubleday, 1956)",
-      "note": "Memorias del supervisor de Project Blue Book; describe el 'Montana Movie' como un caso clasificado internamente como desconocido."
+      "note": "Memorias del supervisor de Project Blue Book; describe el 'Montana Movie' como un caso clasificado internamente como desconocido.",
+      "note_en": "Memoir of the Project Blue Book supervisor; describes the 'Montana Movie' as a case internally classified as unknown."
     },
     {
       "name": "Robertson Panel — Report of the Scientific Advisory Panel on UFOs (CIA/USAF, enero 1953)",
-      "note": "Comité que revisó los films de Mariana y Tremonton; concluyó reflejos de aeronaves. Documento desclasificado por la CIA."
+      "note": "Comité que revisó los films de Mariana y Tremonton; concluyó reflejos de aeronaves. Documento desclasificado por la CIA.",
+      "note_en": "Committee that reviewed the Mariana and Tremonton films; concluded reflections from aircraft. Document declassified by the CIA."
     },
     {
       "name": "Baker, R. M. L. Jr. — análisis fotogramétrico del film de Great Falls (Douglas Aircraft / informes posteriores)",
-      "note": "Concluyó que el movimiento y el brillo eran inconsistentes con reflejos de F-94; dejó el caso sin explicación."
+      "note": "Concluyó que el movimiento y el brillo eran inconsistentes con reflejos de F-94; dejó el caso sin explicación.",
+      "note_en": "Concluded that the motion and brightness were inconsistent with F-94 reflections; left the case unexplained."
     }
   ],
   "mundanoType": "misid",

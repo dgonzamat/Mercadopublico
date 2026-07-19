@@ -1,7 +1,9 @@
 {
   "id": "gov-misc-uap-records-1949-1998",
   "num": 299,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "Registros administrativos UAP del gobierno de EE.UU. (FBI field offices + Congreso/Casa Blanca, 1949-1998, PURSUE)",
   "name_en": "U.S. government administrative UAP records (FBI field offices + Congress/White House, 1949-1998, PURSUE)",
   "year_start": 1949,
@@ -84,12 +86,14 @@
     {
       "name": "war.gov/UFO — registros administrativos FBI/USG (FBI-UAP-D011/D012/D013, USG-UAP-D001, PURSUE Release 03)",
       "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D012_Newark-Field-Office_1952-1967.pdf",
-      "note": "Los cuatro documentos están embebidos en el visor de este caso."
+      "note": "Los cuatro documentos están embebidos en el visor de este caso.",
+      "note_en": "The four documents are embedded in this case's viewer."
     },
     {
       "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
       "url": "https://www.war.gov/UFO/",
-      "note": "Portal del Departamento de Guerra."
+      "note": "Portal del Departamento de Guerra.",
+      "note_en": "Department of War portal."
     }
   ]
 }

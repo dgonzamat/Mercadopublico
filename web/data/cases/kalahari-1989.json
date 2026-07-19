@@ -8,8 +8,8 @@
   "country_name": "Sudáfrica",
   "flag": "🇿🇦",
   "location": {
-    "lat": -25.0,
-    "lng": 22.0,
+    "lat": -25,
+    "lng": 22,
     "place": "Desierto del Kalahari (frontera Sudáfrica–Botsuana)",
     "place_en": "Kalahari Desert (South Africa–Botswana border)"
   },
@@ -53,11 +53,13 @@
     {
       "name": "The Kalahari Incident — A Bizarre Truth From Forged Documents (UFO Insight)",
       "url": "https://www.ufoinsight.com/ufos/cover-ups/kalahari-incident-truth-forged-documents",
-      "note": "Resumen del caso y del desmontaje de los documentos falsificados."
+      "note": "Resumen del caso y del desmontaje de los documentos falsificados.",
+      "note_en": "Summary of the case and the debunking of the forged documents."
     },
     {
       "name": "Hind, Cynthia — 'Anatomy of a hoax: The UFO crash on the South African/Botswana border'",
-      "note": "Investigación de referencia que expone a Van Greunen como originador del fraude."
+      "note": "Investigación de referencia que expone a Van Greunen como originador del fraude.",
+      "note_en": "Reference investigation that exposes Van Greunen as the originator of the fraud."
     }
   ],
   "documents": [

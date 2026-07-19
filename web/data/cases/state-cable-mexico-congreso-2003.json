@@ -1,7 +1,9 @@
 {
   "id": "state-cable-mexico-congreso-2003",
   "num": 279,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Cable del Departamento de Estado · Congreso de México 2003 (PURSUE)",
   "name_en": "State Department cable · Mexican Congress 2003 (PURSUE)",
   "year_start": 2003,
@@ -64,16 +66,19 @@
     {
       "name": "war.gov/UFO — cable #059UAP00013 (PURSUE Release 01, documento primario)",
       "url": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf",
-      "note": "Cable diplomático publicado en el portal del Departamento de Guerra."
+      "note": "Cable diplomático publicado en el portal del Departamento de Guerra.",
+      "note_en": "Diplomatic cable published on the Department of War portal."
     },
     {
       "name": "the-ufo-files — mexico-2003-alien-corpses (mirror público accesible)",
       "url": "https://github.com/wretcher207/the-ufo-files/blob/main/pursue-release-01/cases/mexico-2003-alien-corpses.md",
-      "note": "Mirror curado con writeup y cita del documento primario."
+      "note": "Mirror curado con writeup y cita del documento primario.",
+      "note_en": "Curated mirror with writeup and citation of the primary document."
     },
     {
       "name": "UAP Codex — caso `maussan-congreso-mexico-2023` (evento sucesor, 20 años después)",
-      "note": "Audiencia de Jaime Maussan en el Congreso de México (2023), desestimada por la comunidad científica."
+      "note": "Audiencia de Jaime Maussan en el Congreso de México (2023), desestimada por la comunidad científica.",
+      "note_en": "Jaime Maussan's hearing in the Mexican Congress (2023), dismissed by the scientific community."
     }
   ]
 }

@@ -56,17 +56,20 @@
     {
       "name": "CNN — Exclusive: Downed US pilot reported seeing Iranian drones swarm in 'jellyfish' formation (23 jun 2026)",
       "url": "https://www.cnn.com/2026/06/23/politics/iran-drones-f-15-pilot-intelligence",
-      "note": "Reporte original (cuatro fuentes) sobre los debriefings de inteligencia del piloto."
+      "note": "Reporte original (cuatro fuentes) sobre los debriefings de inteligencia del piloto.",
+      "note_en": "Original report (four sources) on the pilot's intelligence debriefings."
     },
     {
       "name": "The War Zone (TWZ) — What Was The 'Jellyfish-Like' Drone Swarm The Downed F-15E Pilot Reportedly Saw Over Iran?",
       "url": "https://www.twz.com/air/what-was-the-jellyfish-like-drone-swarm-the-downed-f-15e-pilot-reportedly-saw-over-iran",
-      "note": "Análisis técnico de la hipótesis de enjambre en red y del contexto del derribo."
+      "note": "Análisis técnico de la hipótesis de enjambre en red y del contexto del derribo.",
+      "note_en": "Technical analysis of the networked-swarm hypothesis and the context of the shootdown."
     },
     {
       "name": "The Times of Israel — US pilot downed over Iran reported seeing jellyfish-like drone formation",
       "url": "https://www.timesofisrael.com/us-pilot-downed-over-iran-reported-seeing-jellyfish-like-drone-formation-report/",
-      "note": "Cobertura corroborante con contexto del conflicto."
+      "note": "Cobertura corroborante con contexto del conflicto.",
+      "note_en": "Corroborating coverage with context of the conflict."
     }
   ],
   "documents": [

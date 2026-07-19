@@ -17,7 +17,14 @@
   "epistemicStatus": "documented",
   "probability": 60,
   "mundanoType": "natural",
-  "posterior": { "mundano_natural": 0.40, "humana_clasificada": 0, "adversaria": 0, "nohumano_encubierto": 0, "nohumano_abierto": 0.25, "indet": 0.35 },
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.25,
+    "indet": 0.35
+  },
   "summary": "En 1997 el astrofísico de Stanford Peter Sturrock convocó un panel de científicos para revisar la evidencia física asociada a casos UAP. El informe (1998) concluyó que algunos casos presentan datos físicos sin explicar que merecen estudio científico — sin afirmar origen extraterrestre, pero rompiendo el tabú de que el tema no es investigable.",
   "summary_en": "In 1997 Stanford astrophysicist Peter Sturrock convened a panel of scientists to review the physical evidence associated with UAP cases. The report (1998) concluded that some cases present unexplained physical data deserving scientific study — without asserting extraterrestrial origin, but breaking the taboo that the subject is not investigable.",
   "patterns": [
@@ -47,7 +54,8 @@
     {
       "name": "Sturrock, P. et al. — 'Physical Evidence Related to UFO Reports' (Pocantico Report, 1998), Journal of Scientific Exploration",
       "url": "https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
-      "note": "Documento primario."
+      "note": "Documento primario.",
+      "note_en": "Primary document."
     },
     {
       "name": "Pocantico / Sturrock Panel — entrada enciclopédica",

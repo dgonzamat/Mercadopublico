@@ -60,16 +60,19 @@
     {
       "name": "Enigma Labs — 'La Joya Air Force Base, Arequipa, Peru, April 11, 1980'",
       "url": "https://enigmalabs.io/library/e6b60e28-a5f2-449e-8c4f-8f36132ea4f7",
-      "note": "Ficha del caso con cronología y descripción del objeto."
+      "note": "Ficha del caso con cronología y descripción del objeto.",
+      "note_en": "Case file with chronology and description of the object."
     },
     {
       "name": "Inexplicata (Journal of Hispanic Ufology) — 'Peru: La Joya AFB, The Perfect UFO Case (1980)'",
       "url": "https://inexplicata.blogspot.com/2016/11/peru-la-joya-afb-perfect-ufo-case-1980.html",
-      "note": "Análisis del caso en la ufología hispana."
+      "note": "Análisis del caso en la ufología hispana.",
+      "note_en": "Analysis of the case in Spanish-language ufology."
     },
     {
       "name": "Haines, R. F. & Vallée, J. — \"Aerial Phenomena: Pilot Reports\" (Journal of Scientific Exploration)",
-      "note": "Análisis científico del caso La Joya / Santa María (procedente del archivo NARCAP)."
+      "note": "Análisis científico del caso La Joya / Santa María (procedente del archivo NARCAP).",
+      "note_en": "Scientific analysis of the La Joya / Santa María case (from the NARCAP archive)."
     }
   ],
   "documents": [

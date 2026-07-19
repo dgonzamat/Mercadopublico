@@ -44,24 +44,27 @@
   "sources": [
     {
       "name": "Cowgill, W. (cónsul de EE.UU.) — «A Curious Phenomenon in Venezuela» (Scientific American, 18 dic 1886, p. 389)",
-      "note": "Fuente primaria del caso: informe consular publicado en la revista científica. Relato de segunda mano, sin nombres ni seguimiento médico."
+      "note": "Fuente primaria del caso: informe consular publicado en la revista científica. Relato de segunda mano, sin nombres ni seguimiento médico.",
+      "note_en": "Primary source of the case: consular report published in the scientific magazine. Second-hand account, without names or medical follow-up."
     },
     {
       "name": "Science Frontiers — «Curious Phenomena in Venezuela» (W. Corliss, sf132)",
       "url": "https://www.science-frontiers.com/sf132/sf132p11.htm",
-      "note": "Recopilación que reproduce y comenta el informe de Scientific American dentro de la literatura de anomalías."
+      "note": "Recopilación que reproduce y comenta el informe de Scientific American dentro de la literatura de anomalías.",
+      "note_en": "Compilation that reproduces and comments on the Scientific American report within the anomalies literature."
     },
     {
       "name": "«Ball lightning and unidentified flying objects (UFOs)» (Physics & Astronomy International Journal, MedCrave)",
       "url": "https://medcraveonline.com/PAIJ/ball-lightning-and-unidentified-flying-objects-ufos.html",
-      "note": "Contexto científico sobre el rayo en bola como explicación natural de fenómenos luminosos con efectos, aplicable a la región del Catatumbo."
+      "note": "Contexto científico sobre el rayo en bola como explicación natural de fenómenos luminosos con efectos, aplicable a la región del Catatumbo.",
+      "note_en": "Scientific context on ball lightning as a natural explanation for luminous phenomena with effects, applicable to the Catatumbo region."
     }
   ],
   "mundanoType": "natural",
   "posterior": {
     "mundano_natural": 0.55,
-    "humana_clasificada": 0.00,
-    "adversaria": 0.00,
+    "humana_clasificada": 0,
+    "adversaria": 0,
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.07,
     "indet": 0.35
