@@ -649,10 +649,12 @@ export default async function CaseDetailPage(
                   href={`/patterns/${p.letter}`}
                   className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
                   style={{ borderColor: p.color }}
-                  title={p.description}
+                  title={p.description_en ?? p.description}
                 >
                   <span className="font-mono">{p.id}</span>
-                  <span className="ml-2">{p.name}</span>
+                  <span className="ml-2">
+                    <T es={p.name} en={p.name_en} />
+                  </span>
                 </LocaleLink>
               ))}
             </div>
