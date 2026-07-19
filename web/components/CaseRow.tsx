@@ -3,6 +3,7 @@ import type { UAPCase } from "@/lib/types";
 import { EpistemicBadge } from "@/components/Badge";
 import { T } from "@/components/T";
 import { TIER_META } from "@/lib/ui";
+import { countryEn } from "@/lib/i18n-geo";
 
 export function CaseRow({ caseData }: { caseData: UAPCase }) {
   const tierColor = TIER_META[caseData.tier].color;
@@ -20,7 +21,13 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
       <span className="w-6 shrink-0 text-lg leading-none" aria-hidden>
         {caseData.flag}
       </span>
-      <span className="sr-only">{caseData.country_name}.</span>
+      <span className="sr-only">
+        <T
+          es={caseData.country_name}
+          en={countryEn(caseData.country_name)}
+        />
+        .
+      </span>
       <div className="min-w-0">
         <div className="flex items-center gap-2">
           <p className="truncate text-sm font-medium text-text group-hover:text-accent">
