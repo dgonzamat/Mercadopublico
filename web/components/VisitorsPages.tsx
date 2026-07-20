@@ -46,6 +46,15 @@ export function VisitorsPages({
       <p className="font-mono text-xs uppercase tracking-widest text-muted">
         <T es="Páginas más visitadas" en="Most visited pages" />
       </p>
+      {/* Denominador distinto al de la tarjeta "Visitantes": ahí se cuenta 1 por
+          IP y día (visitantes únicos); aquí, cada página abierta. Sin esta nota
+          los dos bloques parecen porcentajes del mismo total. */}
+      <p className="font-mono text-[11px] text-muted">
+        <T
+          es={`Páginas abiertas (no visitantes) · % sobre ${total} vistas`}
+          en={`Page views (not visitors) · % of ${total} views`}
+        />
+      </p>
       <ul className="space-y-1.5">
         {top.map((r) => {
           const pct = total ? (r.count / total) * 100 : 0;

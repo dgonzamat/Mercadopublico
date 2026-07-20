@@ -42,6 +42,21 @@ function utcDayMinus(days: number): string {
   return d.toISOString().slice(0, 10);
 }
 
+/** Días transcurridos del periodo — NO los días con filas. `visits_day_agg`
+ *  hace `group by day`, así que un día sin visitas no devuelve fila; usarlo de
+ *  divisor sacaba los ceros del promedio y lo inflaba. */
+function daysElapsed(period: Period, dailyTotals: DayRow[]): number {
+  if (period === "today") return 1;
+  if (period === "7d") return 7;
+  if (period === "30d") return 30;
+  // "all": del primer día registrado a hoy, ambos inclusive.
+  const first = dailyTotals[0]?.day;
+  if (!first) return 0;
+  const ms =
+    Date.parse(`${utcDayMinus(0)}T00:00:00Z`) - Date.parse(`${first}T00:00:00Z`);
+  return Math.floor(ms / 86_400_000) + 1;
+}
+
 /** Fecha de corte (UTC) para cada periodo; null = todo el histórico. */
 function cutoffFor(period: Period): string | null {
   switch (period) {
@@ -203,7 +218,10 @@ export function VisitorsPanel() {
     const statsData: VisitorsStatsData = {
       total: totalVisits,
       countries: list.length,
-      avgPerDay: dailyTotals.length ? totalVisits / dailyTotals.length : 0,
+      avgPerDay: (() => {
+        const d = daysElapsed(period, dailyTotals);
+        return d > 0 ? totalVisits / d : 0;
+      })(),
       peak,
       dailyTotals,
       byContinent,
@@ -222,7 +240,7 @@ export function VisitorsPanel() {
       pageRows: pageRowsRaw,
       subscribers: subsData,
     };
-  }, [countryRows, dayRows, pageRowsRaw, subDayRows, subTotal]);
+  }, [countryRows, dayRows, pageRowsRaw, subDayRows, subTotal, period]);
 
   if (state === "unconfigured" || state === "error") {
     return (
