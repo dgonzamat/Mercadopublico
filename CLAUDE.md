@@ -228,6 +228,20 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - **No** clasificar `cloudflare|fastly|akamai` como "IP de datacenter" en filtros anti-bot (son el egress de iCloud Private Relay y VPNs de consumidor — bloquearlos descarta Safaris humanos reales). *(enforzado: `audit-consistency.mjs` E19b)*
 - **No** filtrar bots solo en el cliente — cualquier cliente con la anon key llama los RPC de conteo directo, y un crawler con Chrome "real" pasa UA + engagement; el gate tiene que vivir en la función SECURITY DEFINER (ver sección Contador de visitas). *(enforzado: sonda viva diaria; jul 2026)*
 
+## Deuda pendiente · 74 fuentes rotas en el corpus (jul 2026)
+
+`node scripts/check-links.mjs` sobre los `sources` del corpus: **74 rotas**, desglosadas en **49 × `404`**, 15 × `fetch failed` (dominio caído), 5 × `timeout` y 5 × otros (401/406/503/525).
+
+**Los 35 × `403` NO cuentan como rotos**: son bloqueos anti-bot (NYT, congress.gov, ResearchGate, thehill, newsnation). Para un humano abren bien; la sonda ya los marca `?` en vez de `✗`. No "arreglarlos".
+
+**Por qué importa más que un bug de UI**: la propuesta del sitio es *evidencia institucional con fuentes primarias verificables*. 49 citas muertas erosionan justo eso. Es la deuda de contenido más seria detectada hasta ahora — por encima del backlog visual E21.
+
+**El agujero de proceso**: `check-links.mjs` **termina con exit 0 pase lo que pase**, no está en el `postbuild` (que solo corre `test-chart.mjs`) ni tiene regla en `audit-consistency.mjs`. Es decir: las fuentes se pudren en silencio y nada avisa. Candidata clara a guardrail — sonda con umbral (p. ej. ERROR si los `404` crecen respecto a una línea base congelada), no un check binario que sería rojo permanente.
+
+Casos con más rotas: `roswell-1947` (3); con 2 cada uno `twining-memo-1947`, `sturrock-panel-1998`, `robertson-panel-1953`, `rendlesham-1980`, `mystery-drones-east-coast-2024`. Las institucionales duelen más: `nationalarchives.gov.uk/ufos/` (404, citado por **4 casos**), `theblackvault.com/.../defense-intelligence-reference-documents/` y `documents2.theblackvault.com/.../bolendermemo.pdf` (404, ambos en AAWSAP/Bolender), `argentina.gob.ar/fuerza-aerea/cefae` (404).
+
+**Ruta de resolución**: casi todo es *link rot* normal (los gobiernos reorganizan sus sitios), así que la vía es **Wayback Machine** (`web.archive.org/web/<url>`) conservando la URL original en `note`, no borrar la cita. Priorizar por tier del caso y por nº de casos que citan la misma URL. **Distinguir antes de tocar**: `404` = mover a Wayback; `fetch failed`/`timeout` pueden ser caídas temporales — reverificar antes de reescribir nada.
+
 ## Deuda pendiente · fotos de actores
 
 Estado (jul 2026): **28/91 actores tienen foto**. El techo real NO son los 63 restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35.
