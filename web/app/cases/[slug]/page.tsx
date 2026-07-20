@@ -56,12 +56,14 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Case not found" };
   const path = `/cases/${c.id}/`;
-  const description = c.seoDescription ?? c.summary_en ?? c.summary;
+  // Ruta INGLESA: solo campos _en. Antes usaba `seoDescription`/`seoTitle`, que
+  // están en español, y los servía tal cual a la SERP anglófona.
+  const description = c.seoDescription_en ?? c.summary_en ?? c.summary;
   return {
-    // `seoTitle` (cuando existe) reemplaza el título completo, sin el sufijo
+    // `seoTitle_en` (cuando existe) reemplaza el título completo, sin el sufijo
     // "· UAP Codex" del template, para controlar la longitud del snippet y
     // poner las keywords de la query primero. Si no, se usa el name + template.
-    title: c.seoTitle ? { absolute: c.seoTitle } : `${c.name_en ?? c.name}`,
+    title: c.seoTitle_en ? { absolute: c.seoTitle_en } : `${c.name_en ?? c.name}`,
     description,
     alternates: {
       canonical: path,

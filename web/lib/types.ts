@@ -122,8 +122,15 @@ export interface UAPCase {
   // que el usuario escribe, sin tocar el H1 ni la prosa. Ausentes = se usa
   // name/summary. `seoTitle` reemplaza el título completo (sin el sufijo
   // "· UAP Codex"), así que conviene mantenerlo ≤60 caracteres.
+  // Variante ES: la sirve /es/cases/[slug]/.
   seoTitle?: string;
   seoDescription?: string;
+  // Variante EN: la sirve la ruta raíz /cases/[slug]/. Sin estos, la ruta
+  // inglesa heredaba el `seoTitle` en ESPAÑOL y lo mostraba en la SERP a un
+  // público anglófono (jul 2026: 542 impresiones y 0 clicks entre AAWSAP y
+  // Grusch, ambos en posición ~7). Ausentes = se cae a name_en/summary_en.
+  seoTitle_en?: string;
+  seoDescription_en?: string;
   // Documento primario destacado. Se renderiza como bloque prominente bajo el
   // hero (arriba del fold), para casos cuya query dominante tiene intención
   // "descargar el PDF" (ej. AAWSAP ↔ "AARO Historical Record Report pdf"):
