@@ -20,6 +20,7 @@
 //   node scripts/qa-screenshots.mjs --mobile home cases-list
 //   node scripts/qa-screenshots.mjs --viewport 360x780 home
 //   node scripts/qa-screenshots.mjs --route /cases/x/ --phrase "public front"
+//   node scripts/qa-screenshots.mjs --route / --js    # ejecuta JS (hero radar, CountUp, canvas)
 //
 // Salida: web/qa-shots/<name>[-mobile].png (gitignored). El viewport móvil se
 // emula por CDP (setDeviceMetricsOverride, mobile:true) → responden los @media.
@@ -74,6 +75,7 @@ for (let i = 0; i < argv.length; i++) {
   else if (argv[i] === "--name") adhoc.name = argv[++i];
   else if (argv[i] === "--phrase") adhoc.phrase = argv[++i];
   else if (argv[i] === "--selector") adhoc.selector = argv[++i];
+  else if (argv[i] === "--js") adhoc.js = true;
   else if (argv[i] === "--mobile") mobile = true;
   else if (argv[i] === "--viewport") viewportArg = argv[++i];
   else names.push(argv[i]);
