@@ -174,6 +174,76 @@ export function researcherJsonLd(r: Researcher) {
 }
 
 /**
+ * Dataset para el corpus completo (emitido en /cases/, la página canónica del
+ * archivo). Complementa al CollectionPage: `Dataset` es el schema.org que
+ * habilita elegibilidad en **Google Dataset Search** —un canal de descubrimiento
+ * aparte del índice web, natural para un corpus de investigación—. Describe la
+ * cobertura temporal/geográfica, la técnica de medición (juicio analítico
+ * estructurado + modelo MECE) y las variables por caso, y expone una
+ * distribución machine-readable real (`search-index.json`, desplegado y estable).
+ * `@id` estable para que Google lo dedupe entre /cases/ y su espejo /es/cases/.
+ * Se omite `license` a propósito: el corpus no declara una licencia de datos de
+ * sitio (solo licencias por-imagen), y no se inventa una.
+ */
+export function corpusDatasetJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "@id": `${SITE_URL}/cases/#dataset`,
+    name: `UAP Codex — Institutional UAP case corpus (${STATS.startYear}–${STATS.endYear})`,
+    description: `A structured corpus of ${STATS.cases} institutional UAP cases across ${STATS.countries} countries (${STATS.startYear}–${STATS.endYear}), each with an evidence tier and a comparable per-case probability distribution over six mutually exclusive, exhaustive narratives (MECE model).`,
+    url: `${SITE_URL}/cases/`,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    inLanguage: ["en", "es"],
+    keywords: [
+      "UAP",
+      "UFO",
+      "unidentified anomalous phenomena",
+      "institutional cases",
+      "declassified documents",
+      "MECE probability",
+      "evidence tier",
+    ],
+    creator: { "@id": `${SITE_URL}/#org` },
+    temporalCoverage: `${STATS.startYear}/${STATS.endYear}`,
+    measurementTechnique:
+      "Structured analytic judgment (ICD-203); comparable MECE probability model",
+    variableMeasured: [
+      {
+        "@type": "PropertyValue",
+        name: "tier",
+        description: "Evidence tier (S/A/B) by strength of institutional documentation",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "probability",
+        description: "Per-case heterogeneity probability (0–100)",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "posterior",
+        description: "MECE distribution over six mutually exclusive narratives, summing to 1",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "country",
+        description: "ISO country code of the incident location",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "year_start",
+        description: "Year the incident began",
+      },
+    ],
+    distribution: {
+      "@type": "DataDownload",
+      encodingFormat: "application/json",
+      contentUrl: `${SITE_URL}/search-index.json`,
+    },
+  };
+}
+
+/**
  * CollectionPage + ItemList para el índice /cases/. Anuncia la colección
  * completa como lista ordenada de casos (nombre + URL) — para rich results de
  * colección y para que crawlers/LLM lean el corpus como un conjunto
