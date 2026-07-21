@@ -236,7 +236,15 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 **Por qué importa más que un bug de UI**: la propuesta del sitio es *evidencia institucional con fuentes primarias verificables*. 49 citas muertas erosionan justo eso. Es la deuda de contenido más seria detectada hasta ahora — por encima del backlog visual E21.
 
-**El agujero de proceso**: `check-links.mjs` **termina con exit 0 pase lo que pase**, no está en el `postbuild` (que solo corre `test-chart.mjs`) ni tiene regla en `audit-consistency.mjs`. Es decir: las fuentes se pudren en silencio y nada avisa. Candidata clara a guardrail — sonda con umbral (p. ej. ERROR si los `404` crecen respecto a una línea base congelada), no un check binario que sería rojo permanente.
+**El agujero de proceso — CERRADO (jul 2026)**. Antes: `check-links.mjs` terminaba con exit 0 pase lo que pase, no estaba en el `postbuild` ni tenía regla en `audit-consistency.mjs` — las fuentes se pudrían en silencio y nada avisaba. El guardrail tiene tres piezas:
+
+- **`npm run check-links:gate`** (`--baseline`) — compara contra `data/link-health-baseline.json`, una **línea base congelada de las roturas ya conocidas**, y falla (exit 1) **solo con las NUEVAS**. Un check binario sobre el total sería rojo permanente mientras el corpus arrastre link rot, y se ignoraría.
+- **Indexada POR URL, no por conteo**: si se arregla una cita y se rompe otra, el total no se mueve — un gate por conteo no vería nada. Además reporta las que **revivieron**, para que la línea base baje (`npm run check-links:baseline` la recongela).
+- **Solo entra al gate lo duro (4xx/5xx)**. Los `timeout`/`fetch failed` se reportan aparte (pueden ser caídas pasajeras; harían el check intermitente) y los `403` tampoco (anti-bot).
+
+Corre en **`daily-audit.yml`**, no en el prebuild: necesita red, y las sondas de build son node-plain offline a propósito. Abre issue con label `audit`/`automated` al detectar roturas nuevas.
+
+La contraparte offline es **`audit-consistency.mjs` E28** (WARN): la auditoría no tiene red, pero sí puede verificar que la línea base exista, sea parseable y no esté rancia (>45 días). Si el cron deja de correr, el build lo dice.
 
 Casos con más rotas: `roswell-1947` (3); con 2 cada uno `twining-memo-1947`, `sturrock-panel-1998`, `robertson-panel-1953`, `rendlesham-1980`, `mystery-drones-east-coast-2024`. Las institucionales duelen más: `nationalarchives.gov.uk/ufos/` (404, citado por **4 casos**), `theblackvault.com/.../defense-intelligence-reference-documents/` y `documents2.theblackvault.com/.../bolendermemo.pdf` (404, ambos en AAWSAP/Bolender), `argentina.gob.ar/fuerza-aerea/cefae` (404).
 

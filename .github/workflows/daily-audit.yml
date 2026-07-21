@@ -51,6 +51,49 @@ jobs:
           npm run audit 2>&1 | tee /tmp/audit.log
           echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
+      # Gate de link rot. Necesita red, así que no puede vivir en el prebuild
+      # (las sondas de build son node-plain y offline). Compara contra la
+      # línea base congelada y solo falla con roturas NUEVAS — el corpus
+      # arrastra decenas de citas ya muertas y un check binario sería rojo
+      # permanente. Sin este paso las fuentes se pudrían en silencio.
+      - name: Check source link rot
+        id: links
+        run: |
+          set +e
+          npm run check-links:gate 2>&1 | tee /tmp/links.log
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Open issue on new link rot
+        if: steps.links.outputs.exit_code != '0'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/links.log', 'utf8');
+            const today = new Date().toISOString().slice(0, 10);
+            const body = [
+              'El gate de link rot encontró fuentes rotas **nuevas** (no estaban en la línea base).',
+              '',
+              'La propuesta del sitio es evidencia con fuentes primarias verificables, así que una cita muerta erosiona justo eso. Ruta: mover a Wayback (`web.archive.org/web/<url>`) conservando la URL original en `note` — no borrar la cita.',
+              '',
+              '<details><summary>Reporte completo</summary>',
+              '',
+              '```',
+              report.slice(-6000),
+              '```',
+              '',
+              '</details>',
+              '',
+              `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `link rot: fuentes rotas nuevas (${today})`,
+              body,
+              labels: ['audit', 'automated'],
+            });
+
       # Si la auditoría falla, abre (o reusa) un issue con el reporte.
       # Se usa el script de GitHub Actions oficial para no agregar deps.
       - name: Open issue on drift
@@ -84,5 +127,5 @@ jobs:
             });
 
       - name: Fail the job if drift
-        if: steps.audit.outputs.exit_code != '0'
+        if: steps.audit.outputs.exit_code != '0' || steps.links.outputs.exit_code != '0'
         run: exit 1

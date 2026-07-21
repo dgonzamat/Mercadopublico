@@ -15,6 +15,8 @@
     "qa:shots": "node scripts/qa-screenshots.mjs",
     "qa:shots:mobile": "node scripts/qa-screenshots.mjs --mobile",
     "check-links": "node scripts/check-links.mjs",
+    "check-links:gate": "node scripts/check-links.mjs --baseline --timeout 12",
+    "check-links:baseline": "node scripts/check-links.mjs --update-baseline --timeout 12",
     "validate-schema": "node scripts/validate-schema.mjs",
     "lint": "eslint ."
   },

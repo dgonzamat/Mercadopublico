@@ -57,6 +57,11 @@
  *       (argmax, entero). Cada vista rotula su método, la home remite a /calidad,
  *       y las vistas navegables clasifican el corpus completo (documentPosteriors)
  *       con keepIndet — si dejan de hacerlo, reaparece la inconsistencia original.
+ *   E28 (WARN) Frescura de la línea base de link rot: data/link-health-baseline.json
+ *       existe, es parseable y no está rancia. Esta auditoría no tiene red —
+ *       quien verifica las fuentes es check-links.mjs --baseline en el cron
+ *       diario; E28 vigila que esa sonda siga viva (el agujero de proceso que
+ *       dejó pudrirse 74 citas en silencio).
  *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
  *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
  *       los casos-documento no llevan posterior.
@@ -1159,6 +1164,56 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
         0,
         `E27 sitemap: la ruta pública ${route} no está en \`staticRoutes\` de app/sitemap.ts (ni es gated/noindex) → queda fuera del sitemap y Google solo la descubre por enlaces internos. Añádela al array, o márcala \`robots: { index: false }\` si no debe indexarse.`,
       );
+  }
+}
+
+// ─── 9r. RULE E28: frescura de la línea base de link rot (WARN) ──────────
+// Esta auditoría es node-plain SIN RED: no puede verificar si las fuentes
+// del corpus siguen vivas. Quien lo hace es `check-links.mjs --baseline` en
+// el workflow diario. Lo que E28 sí puede vigilar offline es que esa sonda
+// siga existiendo y corriendo: si la línea base desaparece o se queda vieja,
+// las citas se están pudriendo sin que nadie mire — que es exactamente el
+// agujero de proceso que motivó el guardrail.
+
+const BASELINE_MAX_AGE_DAYS = 45; // el cron es diario; 45 d = holgura amplia
+const linkBaselinePath = path.join(root, "data", "link-health-baseline.json");
+
+if (!fs.existsSync(linkBaselinePath)) {
+  record(
+    "WARN",
+    linkBaselinePath,
+    0,
+    "E28 link rot: falta data/link-health-baseline.json — sin línea base el gate de fuentes (check-links.mjs --baseline) no puede correr y las citas se pudren en silencio. Generarla con: node scripts/check-links.mjs --update-baseline",
+  );
+} else {
+  let baseline = null;
+  try {
+    baseline = JSON.parse(fs.readFileSync(linkBaselinePath, "utf-8"));
+  } catch {
+    /* ilegible → se reporta abajo */
+  }
+  if (!baseline || typeof baseline.dead !== "object" || !baseline.generatedAt) {
+    record(
+      "WARN",
+      linkBaselinePath,
+      0,
+      "E28 link rot: link-health-baseline.json ilegible o sin `dead`/`generatedAt` — el gate de fuentes lo rechazará (exit 2). Regenerar con --update-baseline.",
+    );
+  } else {
+    const ageDays = Math.floor(
+      (Date.now() - Date.parse(baseline.generatedAt)) / 86_400_000,
+    );
+    const known = Object.keys(baseline.dead).length;
+    if (Number.isNaN(ageDays)) {
+      record("WARN", linkBaselinePath, 0, `E28 link rot: \`generatedAt\` no es una fecha parseable (${baseline.generatedAt}).`);
+    } else if (ageDays > BASELINE_MAX_AGE_DAYS) {
+      record(
+        "WARN",
+        linkBaselinePath,
+        0,
+        `E28 link rot: la línea base de fuentes tiene ${ageDays} días (>${BASELINE_MAX_AGE_DAYS}) — el workflow diario debería refrescarla al arreglar citas. O el cron dejó de correr, o hay ${known} roturas congeladas que nadie está bajando.`,
+      );
+    }
   }
 }
 

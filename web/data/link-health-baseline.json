@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-07-21",
+  "note": "Línea base de link rot conocido. Regenerar solo tras arreglar citas: node scripts/check-links.mjs --update-baseline. El gate (--baseline) falla con roturas NUEVAS, no con estas.",
+  "totalUrls": 724,
+  "deadCount": 55,
+  "dead": {
+    "http://www.alcione.org/AFN_credentials.html": {
+      "status": 404,
+      "origins": [
+        "researcher:franz"
+      ]
+    },
+    "http://www.nicap.org/731018coyne_dir.htm": {
+      "status": 404,
+      "origins": [
+        "case:coyne-1973"
+      ]
+    },
+    "http://www.nicap.org/jal1628dir.htm": {
+      "status": 404,
+      "origins": [
+        "case:jal1628-1986"
+      ]
+    },
+    "http://www.project1947.com/fig/twining.htm": {
+      "status": 404,
+      "origins": [
+        "case:twining-memo-1947"
+      ]
+    },
+    "http://www.roswellfiles.com/FOIA/RDDR-1947-07-08.htm": {
+      "status": 404,
+      "origins": [
+        "case:roswell-1947"
+      ]
+    },
+    "https://documents2.theblackvault.com/documents/ufos/bolendermemo.pdf": {
+      "status": 404,
+      "origins": [
+        "case:bolender-memo-1969"
+      ]
+    },
+    "https://documents2.theblackvault.com/documents/ufos/coyne-helicopter-incident.pdf": {
+      "status": 404,
+      "origins": [
+        "case:coyne-1973"
+      ]
+    },
+    "https://documents2.theblackvault.com/documents/ufos/twining-memo.pdf": {
+      "status": 404,
+      "origins": [
+        "case:twining-memo-1947"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Boyd_Bushman": {
+      "status": 404,
+      "origins": [
+        "case:boyd-bushman-2014"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Chris_Rutkowski": {
+      "status": 404,
+      "origins": [
+        "researcher:rutkowski"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Greifswald_lights": {
+      "status": 404,
+      "origins": [
+        "case:greifswald-1990"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Kinross_incident": {
+      "status": 404,
+      "origins": [
+        "case:kinross-incident-1953"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Minsk_UFO_sighting": {
+      "status": 404,
+      "origins": [
+        "case:minsk-aeroflot-1984"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Sturrock_panel": {
+      "status": 404,
+      "origins": [
+        "case:sturrock-panel-1998"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Tremonton_UFO_film": {
+      "status": 404,
+      "origins": [
+        "case:tremonton-film-1952"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Ubatuba_UFO_explosion": {
+      "status": 404,
+      "origins": [
+        "case:ubatuba-1957"
+      ]
+    },
+    "https://en.wikipedia.org/wiki/Wilfried_De_Brouwer": {
+      "status": 404,
+      "origins": [
+        "researcher:de-brouwer"
+      ]
+    },
+    "https://feeds.bbci.co.uk/news/uk-scotland-50262655": {
+      "status": 404,
+      "origins": [
+        "case:robert-taylor-livingston-1979"
+      ]
+    },
+    "https://hauntedauckland.com/site/the-new-zealand-ufo-wave-of-1909-by-tony-brunt1967/": {
+      "status": 404,
+      "origins": [
+        "case:new-zealand-airships-1909"
+      ]
+    },
+    "https://media.defense.gov/2010/Oct/27/2001329751/-1/-1/0/AFD-101027-029.pdf": {
+      "status": 404,
+      "origins": [
+        "case:roswell-1947"
+      ]
+    },
+    "https://media.defense.gov/2010/Oct/27/2001329755/-1/-1/0/AFD-101027-030.pdf": {
+      "status": 404,
+      "origins": [
+        "case:roswell-1947"
+      ]
+    },
+    "https://nationalpost.com/news/canada": {
+      "status": 404,
+      "origins": [
+        "case:langenburg-1974"
+      ]
+    },
+    "https://time.com/archive/6645731/close-encounters/": {
+      "status": 406,
+      "origins": [
+        "case:meng-zhaoguo-1994"
+      ]
+    },
+    "https://ufologie.patrickgross.org/htm/mcdonald.htm": {
+      "status": 404,
+      "origins": [
+        "case:levelland-1957"
+      ]
+    },
+    "https://vladimi9.wixsite.com/vasco-citizen-science": {
+      "status": 404,
+      "origins": [
+        "case:poss-i-transients-2025",
+        "researcher:villarroel"
+      ]
+    },
+    "https://www.aaro.mil/Annual-Reports/": {
+      "status": 404,
+      "origins": [
+        "case:lake-huron-2023"
+      ]
+    },
+    "https://www.archives.gov/research/jfk/legislative-history": {
+      "status": 404,
+      "origins": [
+        "case:uap-disclosure-act-2025"
+      ]
+    },
+    "https://www.archives.gov/research/military/ww2/navy/rg-38.html": {
+      "status": 404,
+      "origins": [
+        "case:nara-rg38-1947"
+      ]
+    },
+    "https://www.argentina.gob.ar/fuerza-aerea/cefae": {
+      "status": 404,
+      "origins": [
+        "case:bariloche-1995"
+      ]
+    },
+    "https://www.cia.gov/readingroom/docs/CIA-RDP91-00929R000400600006-9.pdf": {
+      "status": 404,
+      "origins": [
+        "case:robertson-panel-1953"
+      ]
+    },
+    "https://www.cia.gov/readingroom/document/cia-rdp78-04722a000100130001-7": {
+      "status": 404,
+      "origins": [
+        "case:robertson-panel-1953"
+      ]
+    },
+    "https://www.cia.gov/readingroom/document/cia-rdp83-00415r013500050001-3": {
+      "status": 404,
+      "origins": [
+        "case:washington-dc-1952"
+      ]
+    },
+    "https://www.cia.gov/readingroom/document/cia-rdp95-00972r000200200013-3": {
+      "status": 404,
+      "origins": [
+        "case:rendlesham-1980"
+      ]
+    },
+    "https://www.cnn.com/2015/03/26/politics/john-podesta-ufos/index.html": {
+      "status": 404,
+      "origins": [
+        "case:wikileaks-podesta-2016"
+      ]
+    },
+    "https://www.cufos.org/cometa/COMETA_part1.pdf": {
+      "status": 404,
+      "origins": [
+        "case:cometa-report-1999"
+      ]
+    },
+    "https://www.defensa.gob.es/ejercitoaire/": {
+      "status": 404,
+      "origins": [
+        "case:manises-1979"
+      ]
+    },
+    "https://www.dni.gov/index.php/newsroom/reports-publications": {
+      "status": 404,
+      "origins": [
+        "case:odni-preliminary-assessment-2021"
+      ]
+    },
+    "https://www.fbi.gov/news/stories/the-hottel-memo-roswell": {
+      "status": 404,
+      "origins": [
+        "case:hottel-memo-1950"
+      ]
+    },
+    "https://www.huffpost.com/entry/chile-navy-ufo_n_5878fa90e4b0eb9e49bfb4b2": {
+      "status": 406,
+      "origins": [
+        "case:naval-chile-2014"
+      ]
+    },
+    "https://www.huffpost.com/entry/government-agency-in-chil_b_5558713": {
+      "status": 406,
+      "origins": [
+        "case:collahuasi-2013"
+      ]
+    },
+    "https://www.nasa.gov/news-release/nasa-to-announce-results-findings-of-uap-independent-study/": {
+      "status": 404,
+      "origins": [
+        "case:nasa-uap-study-2023"
+      ]
+    },
+    "https://www.nationalarchives.gov.uk/ufos/": {
+      "status": 404,
+      "origins": [
+        "case:berwyn-mountain-1974",
+        "case:flying-saucer-working-party-1950",
+        "case:project-condign-2000",
+        "case:todmorden-godfrey-1980"
+      ]
+    },
+    "https://www.nj.gov/governor/news/": {
+      "status": 404,
+      "origins": [
+        "case:mystery-drones-east-coast-2024"
+      ]
+    },
+    "https://www.nytimes.com/interactive/2017/12/16/us/politics/document-Letter-From-Harry-Reid.html": {
+      "status": 404,
+      "origins": [
+        "case:aawsap-skinwalker-2008"
+      ]
+    },
+    "https://www.reuters.com": {
+      "status": 401,
+      "origins": [
+        "case:japan-jai-directive-2020"
+      ]
+    },
+    "https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf": {
+      "status": 404,
+      "origins": [
+        "case:sturrock-panel-1998"
+      ]
+    },
+    "https://www.silvarecord.com/2019/06/13/wilson-davis-memo/": {
+      "status": 404,
+      "origins": [
+        "case:wilson-davis-2002"
+      ]
+    },
+    "https://www.theblackvault.com/documentarchive/iranian-air-force-pilots-encounter-with-a-uap-1976/": {
+      "status": 404,
+      "origins": [
+        "case:tehran-1976"
+      ]
+    },
+    "https://www.theblackvault.com/documentarchive/project-bluebook-collection/": {
+      "status": 404,
+      "origins": [
+        "case:project-blue-book-1952-1969"
+      ]
+    },
+    "https://www.theblackvault.com/documentarchive/project-twinkle-final-report/": {
+      "status": 404,
+      "origins": [
+        "case:sandia-1948"
+      ]
+    },
+    "https://www.theblackvault.com/documentarchive/the-defense-intelligence-reference-documents/": {
+      "status": 404,
+      "origins": [
+        "case:aawsap-skinwalker-2008"
+      ]
+    },
+    "https://www.twz.com/the-war-zone": {
+      "status": 404,
+      "origins": [
+        "researcher:kevin-day"
+      ]
+    },
+    "https://www.ufoinfo.com/news/setka.shtml": {
+      "status": 525,
+      "origins": [
+        "case:setka-ussr-1978"
+      ]
+    },
+    "https://www.whitehouse.gov/briefing-room/press-briefings/": {
+      "status": 404,
+      "origins": [
+        "case:mystery-drones-east-coast-2024"
+      ]
+    },
+    "https://www.yahoo.com/news/ufos-sighted-ladakh-report-183000210.html": {
+      "status": 404,
+      "origins": [
+        "case:ladakh-itbp-2012"
+      ]
+    }
+  }
+}
