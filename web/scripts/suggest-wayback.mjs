@@ -74,9 +74,12 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
  */
 async function askWayback(url, attempt = 0) {
   const MAX_ATTEMPTS = 4;
+  // limit=-200, no -20: las últimas capturas de una página muerta son todas
+  // 404 y la última BUENA puede estar años atrás (nationalarchives murió
+  // después de 2023; con -20 no se alcanzaba y se elegía basura).
   const api =
     `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(url)}` +
-    `&output=json&fl=timestamp,statuscode&limit=-20`;
+    `&output=json&fl=timestamp,original,statuscode&limit=-200`;
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   const retry = async (reason) => {
@@ -93,16 +96,20 @@ async function askWayback(url, attempt = 0) {
     // Primera fila = cabeceras; sin filas de datos = nunca se archivó.
     const data = Array.isArray(rows) ? rows.slice(1) : [];
     if (!data.length) return { kind: "never" };
-    // Las filas vienen de más antigua a más reciente; queremos la 200 más
-    // nueva. Los "-" son revisit records (contenido idéntico al anterior),
-    // válidos como captura pero sin statuscode propio.
-    const ok = data.filter(([, sc]) => sc === "200" || sc === "-");
+    // SOLO 200 explícito. Los "-" son revisit records ("mismo contenido que
+    // la captura anterior") y si aquella era un 404, el revisit también lo
+    // es — aceptarlos hizo que se propusieran 4 reemplazos rotos (jul 2026).
+    const ok = data.filter(([, , sc]) => sc === "200");
     if (!ok.length)
-      return { kind: "bad", codes: [...new Set(data.map(([, sc]) => sc))] };
-    const [timestamp] = ok[ok.length - 1];
+      return { kind: "bad", codes: [...new Set(data.map(([, , sc]) => sc))] };
+    // Las filas van de más antigua a más reciente: la última 200 es la
+    // captura viva más fresca. Se usa `original` (la URL tal como Wayback
+    // la archivó), no la consultada: difieren en esquema/barra final y el
+    // replay exige la forma exacta.
+    const [timestamp, original] = ok[ok.length - 1];
     return {
       kind: "rot",
-      url: `https://web.archive.org/web/${timestamp}/${url}`,
+      url: `https://web.archive.org/web/${timestamp}/${original}`,
       timestamp,
       captures: data.length,
     };
@@ -113,6 +120,34 @@ async function askWayback(url, attempt = 0) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+/** Comprueba que una URL de replay de Wayback responda de verdad. */
+async function verify(url) {
+  const UA =
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0 Safari/537.36";
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+    try {
+      const res = await fetch(url, {
+        method: "GET",
+        redirect: "follow",
+        headers: { "user-agent": UA },
+        signal: ctrl.signal,
+      });
+      if (res.status === 429 || res.status >= 500) {
+        await sleep(2000 * 2 ** attempt);
+        continue; // throttling, no veredicto
+      }
+      return res.status < 400;
+    } catch {
+      await sleep(2000 * 2 ** attempt);
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  return false; // sin confirmación ⇒ no se propone
 }
 
 async function propose() {
@@ -139,8 +174,17 @@ async function propose() {
   async function worker() {
     while (queue.length) {
       const [url, meta] = queue.shift();
-      const snap = await askWayback(url);
+      let snap = await askWayback(url);
       await sleep(400); // no encadenar consultas sin respirar
+      // VERIFICAR el reemplazo antes de proponerlo. Confiar en el índice CDX
+      // sin comprobar el replay produjo 4 propuestas rotas que habrían
+      // sustituido citas muertas por otras igual de muertas — el peor
+      // resultado posible: la línea base baja y la evidencia no mejora.
+      if (snap.kind === "rot") {
+        const live = await verify(snap.url);
+        if (!live) snap = { kind: "bad", codes: ["replay roto"] };
+        await sleep(400);
+      }
       done++;
       if (done % 10 === 0) console.log(`  … ${done}/${entries.length}`);
       const base = { original: url, status: meta.status, origins: meta.origins };
