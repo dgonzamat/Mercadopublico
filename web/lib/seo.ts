@@ -70,16 +70,28 @@ export function esMeta(opts: {
   description: string;
   enPath: string;
   image?: string;
+  /**
+   * Título ABSOLUTO: reemplaza el título completo sin el sufijo "· UAP Codex"
+   * del template del layout. Es lo que necesitan los `seoTitle` del corpus,
+   * escritos ≤60 chars ya contando el snippet entero — con el sufijo se
+   * pasarían de largo y Google los truncaría. Espeja lo que la ruta EN ya
+   * hace con `seoTitle_en`.
+   */
+  absoluteTitle?: string;
 }): Metadata {
   const esPath = `/es${opts.enPath}`;
+  const displayTitle = opts.absoluteTitle ?? opts.title;
   return {
     ...pageMeta({
-      title: opts.title,
+      title: displayTitle,
       description: opts.description,
       path: esPath,
       image: opts.image,
       locale: "es_ES",
     }),
+    // El título absoluto solo aplica al <title>; og/twitter ya reciben
+    // `displayTitle` como texto plano desde pageMeta.
+    ...(opts.absoluteTitle ? { title: { absolute: opts.absoluteTitle } } : {}),
     alternates: { canonical: esPath, languages: hreflangFor(opts.enPath) },
   };
 }
