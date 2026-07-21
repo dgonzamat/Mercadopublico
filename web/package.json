@@ -18,7 +18,9 @@
     "check-links:gate": "node scripts/check-links.mjs --baseline --timeout 12",
     "check-links:baseline": "node scripts/check-links.mjs --update-baseline --timeout 12",
     "validate-schema": "node scripts/validate-schema.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "wayback": "node scripts/suggest-wayback.mjs",
+    "wayback:apply": "node scripts/suggest-wayback.mjs --apply"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

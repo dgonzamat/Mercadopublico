@@ -18,3 +18,6 @@ next-env.d.ts
 
 # QA visual screenshots (on-demand, no versionar)
 qa-shots
+
+# Artefacto regenerable del resolutor de link rot (revisión local)
+data/wayback-proposals.json
