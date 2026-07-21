@@ -58,7 +58,9 @@
     },
     {
       "name": "The National Archives (UK) — MoD UFO files",
-      "url": "https://www.nationalarchives.gov.uk/ufos/"
+      "url": "https://web.archive.org/web/20230720141733/https://www.nationalarchives.gov.uk/ufos/",
+      "note": "Original (enlace caído): https://www.nationalarchives.gov.uk/ufos/",
+      "note_en": "Original (dead link): https://www.nationalarchives.gov.uk/ufos/"
     }
   ],
   "documents": [

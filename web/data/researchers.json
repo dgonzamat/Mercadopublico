@@ -1291,7 +1291,9 @@
     "sources": [
       {
         "name": "Alcione.org — credenciales de Alejandro Franz Navarrete",
-        "url": "http://www.alcione.org/AFN_credentials.html"
+        "url": "https://web.archive.org/web/20180906041934/http://www.alcione.org:80/AFN_credentials.html",
+        "note": "Original (enlace caído): http://www.alcione.org/AFN_credentials.html",
+        "note_en": "Original (dead link): http://www.alcione.org/AFN_credentials.html"
       },
       {
         "name": "Latest UFO Sightings — 'Mexican Air Force FLIR's video lights are not UFOs'",

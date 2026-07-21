@@ -58,7 +58,9 @@
     },
     {
       "name": "ODNI — página oficial de informes UAP",
-      "url": "https://www.dni.gov/index.php/newsroom/reports-publications"
+      "url": "https://web.archive.org/web/20230802145238/https://www.dni.gov/index.php/newsroom/reports-publications",
+      "note": "Original (enlace caído): https://www.dni.gov/index.php/newsroom/reports-publications",
+      "note_en": "Original (dead link): https://www.dni.gov/index.php/newsroom/reports-publications"
     }
   ],
   "documents": [

@@ -54,7 +54,9 @@
     },
     {
       "name": "TIME — 'Close Encounters' (cobertura del caso chino)",
-      "url": "https://time.com/archive/6645731/close-encounters/"
+      "url": "https://web.archive.org/web/20250411030351/https://time.com/archive/6645731/close-encounters/",
+      "note": "Original (enlace caído): https://time.com/archive/6645731/close-encounters/",
+      "note_en": "Original (dead link): https://time.com/archive/6645731/close-encounters/"
     }
   ],
   "posterior": {

@@ -53,12 +53,15 @@
   "sources": [
     {
       "name": "Sturrock, P. et al. — 'Physical Evidence Related to UFO Reports' (Pocantico Report, 1998), Journal of Scientific Exploration",
-      "url": "https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
-      "note": "Documento primario.",
-      "note_en": "Primary document."
+      "url": "https://web.archive.org/web/20240624065615/https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+      "note": "Documento primario. · Original (enlace caído): https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+      "note_en": "Primary document. · Original (dead link): https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf"
     },
     {
-      "name": "Pocantico / Sturrock Panel — entrada enciclopédica"
+      "name": "Pocantico / Sturrock Panel — entrada enciclopédica",
+      "url": "https://web.archive.org/web/20240414201511/https://en.wikipedia.org/wiki/Sturrock_Panel",
+      "note": "Original (enlace caído): https://en.wikipedia.org/wiki/Sturrock_panel",
+      "note_en": "Original (dead link): https://en.wikipedia.org/wiki/Sturrock_panel"
     }
   ],
   "documents": [
