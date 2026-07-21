@@ -1217,6 +1217,33 @@ if (!fs.existsSync(linkBaselinePath)) {
   }
 }
 
+// ─── 9s. RULE E29: ninguna URL de Wayback congelada como rota (ERROR) ────
+// Una URL de `web.archive.org` en el corpus SIEMPRE es fruto de un arreglo
+// deliberado de link rot. Si además figura como rota en la línea base, el
+// arreglo falló y se congeló: la cita quedó tan muerta como antes, pero
+// ahora contada como deuda conocida y por tanto invisible. Es ERROR, no
+// WARN — a diferencia de las 38 heredadas, esta rotura la introdujimos
+// nosotros y se corrige regenerando el reemplazo, no investigando.
+
+if (fs.existsSync(linkBaselinePath)) {
+  try {
+    const baseline = JSON.parse(fs.readFileSync(linkBaselinePath, "utf-8"));
+    const frozenArchive = Object.keys(baseline.dead || {}).filter((u) =>
+      /web\.archive\.org/.test(u),
+    );
+    if (frozenArchive.length) {
+      record(
+        "ERROR",
+        linkBaselinePath,
+        0,
+        `E29 link rot: ${frozenArchive.length} URL(s) de web.archive.org congeladas como rotas — un reapuntado a Wayback que no responde deja la cita igual de muerta, pero contada como deuda conocida. Regenerar el snapshot con \`npm run wayback\` (verify() descarta los que no responden), no congelarlo: ${frozenArchive.slice(0, 3).join(", ")}${frozenArchive.length > 3 ? "…" : ""}`,
+      );
+    }
+  } catch {
+    /* ilegible → ya lo reporta E28 */
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

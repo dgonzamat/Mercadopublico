@@ -39,6 +39,7 @@ const TIMEOUT_MS = Number(arg("--timeout", "10")) * 1000;
 const STRICT = process.argv.includes("--strict");
 const BASELINE = process.argv.includes("--baseline");
 const UPDATE_BASELINE = process.argv.includes("--update-baseline");
+const FORCE = process.argv.includes("--force");
 const BASELINE_PATH = path.join(root, "data", "link-health-baseline.json");
 const UA =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0 Safari/537.36";
@@ -184,6 +185,31 @@ function readBaseline() {
 }
 
 function writeBaseline() {
+  // GUARD ANTI-REGRESIÓN. La línea base se recongela después de arreglar
+  // citas, así que cualquier rotura que el propio arreglo introdujo entra
+  // aquí como "deuda conocida" y desaparece del radar. Pasó (jul 2026): un
+  // lote reapuntó 4 citas a URLs de Wayback muertas; el gate las vio como
+  // roturas nuevas, pero --update-baseline las congeló sin decir nada y la
+  // base "bajó" de 55 a 50 mientras la evidencia empeoraba.
+  // El trinquete solo debe bajar: congelar algo NUEVO exige --force.
+  const prev = readBaseline();
+  if (prev && !FORCE) {
+    const known = new Set(Object.keys(prev.dead));
+    const regressions = hardDead.filter((d) => !known.has(d.url));
+    if (regressions.length) {
+      console.error(
+        `\n✗ ${regressions.length} rotura(s) NUEVA(S) respecto a la línea base — no se congelan en silencio:`,
+      );
+      for (const d of regressions) console.error("   ✗ " + fmt(d));
+      console.error(
+        "\nSi vienen de un arreglo tuyo (p. ej. reapuntar a un snapshot de Wayback que no responde), ARRÉGLALO — no lo congeles.",
+      );
+      console.error(
+        "Si son link rot legítimo aparecido desde la última base, congélalas a conciencia con --force.\n",
+      );
+      process.exit(1);
+    }
+  }
   const dead = {};
   for (const d of [...hardDead].sort((a, b) => a.url.localeCompare(b.url))) {
     dead[d.url] = { status: d.status, origins: d.origins.sort() };
