@@ -50,7 +50,7 @@ Dos innovaciones más, una por capa: **`/blindar`** (reactiva) promueve un anti-
 
 ## Stack
 
-- Next.js 14.2.35 App Router + TypeScript strict
+- Next.js 16.2.9 App Router + TypeScript strict (React 18.3.1)
 - Tailwind CSS 3.4 (theme claro editorial custom: fondo crema `#f7f2e8`, tinta `#1a1a1a`, acento `#c41e3a` — tokens en `tailwind.config.ts`)
 - `output: "export"` — SSG puro, deploy a GitHub Pages
 - react-leaflet para `/atlas` (dynamic import, ssr: false)
