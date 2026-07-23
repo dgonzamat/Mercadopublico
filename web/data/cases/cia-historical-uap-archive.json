@@ -230,5 +230,14 @@
       "note": "Documentos primarios desclasificados en 2026 (AARO UAP Records, release 04, códigos CIAUAPD020 y CIAUAPD021); extienden el interés de la CIA tras el Panel Robertson.",
       "note_en": "Primary documents declassified in 2026 (AARO UAP Records, release 04, codes CIAUAPD020 and CIAUAPD021); they extend the CIA's interest after the Robertson Panel."
     }
-  ]
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.52,
+    "humana_clasificada": 0.2,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.05,
+    "indet": 0.2
+  }
 }

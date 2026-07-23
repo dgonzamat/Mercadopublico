@@ -297,5 +297,14 @@
       "note": "Correspondencia de oficinas de campo del FBI sobre avistamientos (p. ej. memo de Chicago, 22 sep 1967). AARO UAP Records, release 04 (FBIUAPD014).",
       "note_en": "FBI field-office correspondence on sightings (e.g. Chicago memo, Sep 22, 1967). AARO UAP Records, release 04 (FBIUAPD014)."
     }
-  ]
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.62,
+    "humana_clasificada": 0.05,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.08,
+    "indet": 0.25
+  }
 }

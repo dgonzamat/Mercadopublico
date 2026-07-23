@@ -113,5 +113,14 @@
       "note": "Comunicado oficial del primer release.",
       "note_en": "Official statement of the first release."
     }
-  ]
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.65,
+    "humana_clasificada": 0.04,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.06,
+    "indet": 0.25
+  }
 }

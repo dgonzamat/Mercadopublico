@@ -133,5 +133,14 @@
       "note": "Portal del Departamento de Guerra.",
       "note_en": "Department of War portal."
     }
-  ]
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.66,
+    "humana_clasificada": 0.02,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.1,
+    "indet": 0.22
+  }
 }
