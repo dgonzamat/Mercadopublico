@@ -16,12 +16,13 @@
  *  - No se filtran fórmulas en español a la vista renderizada.
  *  - No reaparece el hover rojo (group-hover:text-accent) en la leyenda.
  */
-import { readFileSync } from "fs";
+import { readFileSync, statSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const HTML_PATH = join(__dirname, "..", "out", "probabilidades", "index.html");
+const CASES_JSON = join(__dirname, "..", "data", "cases.json");
 
 let html;
 try {
@@ -29,6 +30,28 @@ try {
 } catch {
   console.error(`✗ No existe ${HTML_PATH}. Corré \`npm run build\` antes del test.`);
   process.exit(1);
+}
+
+// Guardrail de frescura (jul 2026): `out/` es artefacto de build gitignored que
+// puede quedar RANCIO en un contenedor de larga vida. Si el HTML construido es
+// más viejo que el corpus fuente (`data/cases.json`, regenerado en cada
+// prebuild), el build no corrió tras el último cambio de datos y las aserciones
+// de abajo compararían HTML viejo contra un corpus nuevo → fallos FALSOS que
+// parecen regresiones. Abortar acá con un mensaje inequívoco en vez de mentir.
+// En el path gateado (postbuild de `npm run build`) `out/` recién se construyó,
+// así que este check nunca dispara; solo protege el path manual (`npm test`).
+try {
+  if (statSync(HTML_PATH).mtimeMs < statSync(CASES_JSON).mtimeMs) {
+    console.error(
+      `✗ out/ RANCIO: ${HTML_PATH}\n` +
+        `  es más viejo que data/cases.json — el build no corrió tras el último\n` +
+        `  cambio del corpus. Las aserciones de abajo serían FALSAS (comparan HTML\n` +
+        `  viejo vs corpus nuevo). Corré \`npm run build\` (o \`rm -rf out\`) antes del test.`,
+    );
+    process.exit(1);
+  }
+} catch {
+  /* falta cases.json (artefacto de build): el check de total abajo lo maneja */
 }
 
 let failures = 0;
