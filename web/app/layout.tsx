@@ -205,6 +205,11 @@ gtag('js',new Date());gtag('config','G-MZHZC5ZLY5');`,
                     es="Fuentes (bibliografía)"
                     en="Sources (bibliography)"
                   />
+                  <FooterLink
+                    href="/releases"
+                    es="Releases PURSUE"
+                    en="PURSUE releases"
+                  />
                 </ul>
               </nav>
             </div>
