@@ -61,6 +61,14 @@ const readArr = (f) => JSON.parse(fs.readFileSync(path.join(dataDir, f), "utf-8"
 const patterns = readArr("patterns.json");
 const frameworks = readArr("frameworks.json");
 const researchers = readArr("researchers.json");
+// Ancla DELIBERADA de la era institucional moderna (Roswell/Twining, 1947) —
+// NO es el mínimo del corpus y NO debe derivarse de él. El corpus incluye ~19
+// antecedentes históricos anteriores (nuremberg-1561, utsuro-bune-1803,
+// mystery-airships-1896, foo-fighters-1944, ghost-rockets-1946…), visibles en
+// /cases y en la columna «‹1940» de /cobertura. El copy narra "1947–2026" como
+// la secuencia institucional moderna (page.tsx/about.tsx atan 1947→Roswell),
+// con esos casos como profundidad histórica, no como parte del rango titular.
+// Derivar `startYear` del min (1561) rompería ese framing — no "corregir".
 const CORPUS_START_YEAR = 1947;
 const corpusEndYear = Math.max(...cases.map((c) => c.year_start));
 const siteStats = {
