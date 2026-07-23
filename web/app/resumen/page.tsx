@@ -137,16 +137,21 @@ const TAXONOMY = [
 ];
 
 export default function ResumenPage() {
+  return <ResumenView locale="en" />;
+}
+
+export function ResumenView({ locale }: { locale: "es" | "en" }) {
   return (
     <article className="mx-auto max-w-2xl space-y-16 py-4">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="Lectura · 10 min" en="Read · 10 min" />
+          <T es="Lectura · 10 min" en="Read · 10 min" locale={locale} />
         </Eyebrow>
         <H1>
           <T
             es={`${STATS.years} años en 10 minutos`}
             en={`${STATS.years} years in 10 minutes`}
+            locale={locale}
           />
         </H1>
         <Lede className="text-muted">
@@ -179,6 +184,7 @@ export default function ResumenPage() {
                 .
               </>
             }
+            locale={locale}
           />
         </Lede>
       </header>
@@ -186,10 +192,10 @@ export default function ResumenPage() {
       <section className="space-y-6">
         <div className="space-y-3">
           <Eyebrow>
-            <T es="La historia" en="The story" />
+            <T es="La historia" en="The story" locale={locale} />
           </Eyebrow>
           <H2>
-            <T es="En 3 frases" en="In 3 sentences" />
+            <T es="En 3 frases" en="In 3 sentences" locale={locale} />
           </H2>
         </div>
         <ol className="space-y-4">
@@ -202,7 +208,7 @@ export default function ResumenPage() {
                 {i + 1}
               </span>
               <Body>
-                <T es={para.es} en={para.en} />
+                <T es={para.es} en={para.en} locale={locale} />
               </Body>
             </li>
           ))}
@@ -212,12 +218,13 @@ export default function ResumenPage() {
       <section className="space-y-8">
         <div className="space-y-3">
           <Eyebrow>
-            <T es="Hallazgos" en="Findings" />
+            <T es="Hallazgos" en="Findings" locale={locale} />
           </Eyebrow>
           <H2>
             <T
               es="Los 5 hechos que cambian la conversación"
               en="The 5 facts that change the conversation"
+              locale={locale}
             />
           </H2>
         </div>
@@ -236,14 +243,15 @@ export default function ResumenPage() {
                     <T
                       es={`Confianza · ${f.es.confidence}`}
                       en={`Confidence · ${f.en.confidence}`}
+                      locale={locale}
                     />
                   </p>
                   <h3 className="text-lg font-semibold leading-snug text-text">
-                    <T es={f.es.title} en={f.en.title} />
+                    <T es={f.es.title} en={f.en.title} locale={locale} />
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed text-muted">
-                  <T es={f.es.text} en={f.en.text} />
+                  <T es={f.es.text} en={f.en.text} locale={locale} />
                 </p>
               </div>
             </article>
@@ -254,17 +262,18 @@ export default function ResumenPage() {
       {/* Anclaje cuantitativo: tras los hallazgos cualitativos, lo que el
           corpus permite contar literalmente (tiers, eras, patrones). Reubicado
           desde /cases, donde competía con la navegación del archivo. */}
-      <CorpusStats />
+      <CorpusStats locale={locale} />
 
       <section className="space-y-6">
         <div className="space-y-3">
           <Eyebrow>
-            <T es="Aporte analítico" en="Analytical contribution" />
+            <T es="Aporte analítico" en="Analytical contribution" locale={locale} />
           </Eyebrow>
           <H2>
             <T
               es="La taxonomía de divulgación"
               en="The taxonomy of disclosure"
+              locale={locale}
             />
           </H2>
         </div>
@@ -272,6 +281,7 @@ export default function ResumenPage() {
           <T
             es="Cuando una institución se enfrenta al fenómeno UAP, el corpus identifica cuatro maneras distintas de manejarlo:"
             en="When an institution faces the UAP phenomenon, the corpus identifies four distinct ways of handling it:"
+            locale={locale}
           />
         </Body>
         <ol className="space-y-3">
@@ -297,6 +307,7 @@ export default function ResumenPage() {
                       <span className="text-muted">— {item.en.desc}</span>
                     </>
                   }
+                  locale={locale}
                 />
               </span>
             </li>
@@ -306,18 +317,20 @@ export default function ResumenPage() {
 
       <section className="space-y-6">
         <Eyebrow>
-          <T es="Cierre" en="Closing" />
+          <T es="Cierre" en="Closing" locale={locale} />
         </Eyebrow>
         <PullQuote>
           <T
             es={`PURSUE 2026 no es el fin del encubrimiento. Es su evolución a "transparencia controlada".`}
             en={`PURSUE 2026 is not the end of the cover-up. It is its evolution into "controlled transparency".`}
+            locale={locale}
           />
         </PullQuote>
         <Body className="text-muted">
           <T
             es={`${STATS.years} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. El astrofísico Jacques Vallée describió este patrón en 1975 — ahora lo vemos en directo. Qué se decida hacer con la información es la pregunta política de nuestra generación.`}
             en={`${STATS.years} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Astrophysicist Jacques Vallée described this pattern in 1975 — we now see it in real time. What we decide to do with the information is the political question of our generation.`}
+            locale={locale}
           />
         </Body>
       </section>
@@ -329,18 +342,21 @@ export default function ResumenPage() {
           <T
             es={`Explorar los ${STATS.cases} casos →`}
             en={`Explore the ${STATS.cases} cases →`}
+            locale={locale}
           />
         </Cta>
         <Cta href="/probabilidades" variant="secondary">
           <T
             es="Cómo se reparte el corpus entre explicaciones"
             en="How the corpus splits among the explanations"
+            locale={locale}
           />
         </Cta>
         <Cta href="/atlas" variant="secondary">
           <T
             es={`Ver el mapa global · ${STATS.countries} países`}
             en={`See the global map · ${STATS.countries} countries`}
+            locale={locale}
           />
         </Cta>
       </nav>

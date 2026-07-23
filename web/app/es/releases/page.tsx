@@ -1,4 +1,4 @@
-import ReleasesPage from "@/app/releases/page";
+import { ReleasesView } from "@/app/releases/page";
 import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/releases/",
 });
 
-export default ReleasesPage;
+export default function EsReleasesPage() {
+  return <ReleasesView locale="es" />;
+}

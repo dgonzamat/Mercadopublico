@@ -1,4 +1,4 @@
-import BlogPage from "@/app/blog/page";
+import { BlogView } from "@/app/blog/page";
 import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/blog/",
 });
 
-export default BlogPage;
+export default function EsBlogPage() {
+  return <BlogView locale="es" />;
+}

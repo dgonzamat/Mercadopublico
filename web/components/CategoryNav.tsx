@@ -18,14 +18,16 @@ type CategoryNavItem = {
 export function CategoryNav({
   label,
   items,
+  locale,
 }: {
   label: { es: string; en: string };
   items: CategoryNavItem[];
+  locale: "es" | "en";
 }) {
   return (
     <nav aria-label="Índice de secciones" className="space-y-3">
       <p className="font-mono text-xs uppercase tracking-widest text-muted">
-        <T es={label.es} en={label.en} />
+        <T es={label.es} en={label.en} locale={locale} />
       </p>
       <ul className="flex flex-wrap gap-2">
         {items.map((it) => (
@@ -35,7 +37,7 @@ export function CategoryNav({
               className="inline-flex min-h-[44px] items-center gap-2 border border-border bg-panel px-3 py-1 text-xs text-text hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <span>
-                <T es={it.es} en={it.en} />
+                <T es={it.es} en={it.en} locale={locale} />
               </span>
               {it.count != null && (
                 <span className="font-mono text-muted">{it.count}</span>

@@ -5,7 +5,13 @@ import { T } from "@/components/T";
 import { TIER_META } from "@/lib/ui";
 import { countryEn } from "@/lib/i18n-geo";
 
-export function CaseRow({ caseData }: { caseData: UAPCase }) {
+export function CaseRow({
+  caseData,
+  locale,
+}: {
+  caseData: UAPCase;
+  locale: "es" | "en";
+}) {
   const tierColor = TIER_META[caseData.tier].color;
   const year = caseData.year_end
     ? `${caseData.year_start}–${String(caseData.year_end).slice(-2)}`
@@ -25,13 +31,14 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
         <T
           es={caseData.country_name}
           en={countryEn(caseData.country_name)}
+          locale={locale}
         />
         .
       </span>
       <div className="min-w-0">
         <div className="flex items-center gap-2">
           <p className="truncate text-sm font-medium text-text group-hover:text-accent">
-            <T es={caseData.name} en={caseData.name_en ?? caseData.name} />
+            <T es={caseData.name} en={caseData.name_en ?? caseData.name} locale={locale} />
             <span className="ml-2 font-mono text-xs text-muted sm:hidden">
               · {year}
             </span>
@@ -39,7 +46,7 @@ export function CaseRow({ caseData }: { caseData: UAPCase }) {
           <EpistemicBadge status={caseData.epistemicStatus} compact />
         </div>
         <p className="truncate text-xs text-muted">
-          <T es={caseData.summary} en={caseData.summary_en ?? caseData.summary} />
+          <T es={caseData.summary} en={caseData.summary_en ?? caseData.summary} locale={locale} />
         </p>
       </div>
       <span className="hidden w-16 text-right font-mono text-xs tabular-nums text-muted sm:inline">

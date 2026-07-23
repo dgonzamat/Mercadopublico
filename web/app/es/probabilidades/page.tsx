@@ -1,4 +1,4 @@
-import ProbabilidadesPage from "@/app/probabilidades/page";
+import { ProbabilidadesView } from "@/app/probabilidades/page";
 import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/probabilidades/",
 });
 
-export default ProbabilidadesPage;
+export default function EsProbabilidadesPage() {
+  return <ProbabilidadesView locale="es" />;
+}

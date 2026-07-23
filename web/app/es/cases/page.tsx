@@ -1,4 +1,4 @@
-import CasesPage from "@/app/cases/page";
+import { CasesView } from "@/app/cases/page";
 import { TOTAL_CASES } from "@/lib/data";
 import { esMeta } from "@/lib/seo";
 
@@ -13,4 +13,6 @@ export const metadata = esMeta({
   enPath: "/cases/",
 });
 
-export default CasesPage;
+export default function EsCasesPage() {
+  return <CasesView locale="es" />;
+}

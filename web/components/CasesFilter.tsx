@@ -43,6 +43,7 @@ const HYP_KEYS = new Set<string>(HYP_ORDER.map((h) => h.key));
 export type FacetOption = { key: string; es: string; en: string; count: number };
 
 export function CasesFilter({
+  locale,
   regionCounts,
   hypCounts,
   misidSubtypes,
@@ -51,6 +52,7 @@ export function CasesFilter({
   total,
   children,
 }: {
+  locale: "es" | "en";
   regionCounts: Partial<Record<Region, number>>;
   hypCounts: Partial<Record<HypKey, number>>;
   misidSubtypes: FacetOption[];
@@ -65,19 +67,7 @@ export function CasesFilter({
   const [era, setEra] = useState<string | "all">("all");
   const [tier, setTier] = useState<string | "all">("all");
   const [matchCount, setMatchCount] = useState(total);
-  const [locale, setLocale] = useState<"es" | "en">("es");
   const rootRef = useRef<HTMLDivElement>(null);
-
-  // Locale activo para etiquetas de texto plano (selects/pills no admiten <T>).
-  // Mismo patrón que MobileNav / SiteSearch: lee data-locale del <html>.
-  useEffect(() => {
-    const el = document.documentElement;
-    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
-    read();
-    const obs = new MutationObserver(read);
-    obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
-    return () => obs.disconnect();
-  }, []);
 
   // Deep-link por hash (#nohumano, #misid…) — al montar y en cada hashchange.
   useEffect(() => {
@@ -172,7 +162,7 @@ export function CasesFilter({
         aria-label={locale === "es" ? "Filtrar casos" : "Filter cases"}
       >
         <span className="mr-1 font-mono text-xs uppercase tracking-widest text-muted">
-          <T es="Filtrar" en="Filter" />
+          <T es="Filtrar" en="Filter" locale={locale} />
         </span>
         <FacetSelect
           value={era}
@@ -212,7 +202,7 @@ export function CasesFilter({
           aria-label={locale === "es" ? "Filtrar por subtipo de misidentificación" : "Filter by misidentification subtype"}
         >
           <span className="mr-1 font-mono text-xs uppercase tracking-widest text-muted">
-            <T es="¿Con qué?" en="With what?" />
+            <T es="¿Con qué?" en="With what?" locale={locale} />
           </span>
           <FacetSelect
             value={misid}
@@ -241,9 +231,9 @@ export function CasesFilter({
           ))}
           <span className="font-mono text-xs tabular-nums text-muted" aria-live="polite">
             {matchCount === 1 ? (
-              <T es={`${matchCount} caso`} en={`${matchCount} case`} />
+              <T es={`${matchCount} caso`} en={`${matchCount} case`} locale={locale} />
             ) : (
-              <T es={`${matchCount} casos`} en={`${matchCount} cases`} />
+              <T es={`${matchCount} casos`} en={`${matchCount} cases`} locale={locale} />
             )}
           </span>
           <button
@@ -251,7 +241,7 @@ export function CasesFilter({
             onClick={clearAll}
             className="min-h-[36px] font-mono text-xs uppercase tracking-widest text-muted underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            <T es="Limpiar todo" en="Clear all" />
+            <T es="Limpiar todo" en="Clear all" locale={locale} />
           </button>
         </div>
       )}
@@ -265,6 +255,7 @@ export function CasesFilter({
             <T
               es="Ninguna combinación de filtros coincide."
               en="No cases match this combination of filters."
+              locale={locale}
             />
           </p>
           <button
@@ -272,7 +263,7 @@ export function CasesFilter({
             onClick={clearAll}
             className="mt-4 inline-flex min-h-[44px] items-center gap-2 border-2 border-text px-5 font-mono text-xs uppercase tracking-widest text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            <T es="Limpiar los filtros" en="Clear the filters" />
+            <T es="Limpiar los filtros" en="Clear the filters" locale={locale} />
           </button>
         </div>
       )}

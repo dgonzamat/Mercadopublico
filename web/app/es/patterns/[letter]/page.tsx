@@ -1,4 +1,5 @@
-import PatternDetailPage, {
+import {
+  PatternDetailPage,
   generateStaticParams,
 } from "@/app/patterns/[letter]/page";
 import { patterns } from "@/lib/data";
@@ -19,4 +20,8 @@ export async function generateMetadata(props: {
   });
 }
 
-export default PatternDetailPage;
+export default function EsPatternDetailPage(props: {
+  params: Promise<{ letter: string }>;
+}) {
+  return <PatternDetailPage params={props.params} locale="es" />;
+}

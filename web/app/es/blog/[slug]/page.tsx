@@ -1,4 +1,4 @@
-import BlogPostPage, { generateStaticParams } from "@/app/blog/[slug]/page";
+import { PostDetailPage, generateStaticParams } from "@/app/blog/[slug]/page";
 import { getPost } from "@/lib/posts";
 import { esMeta } from "@/lib/seo";
 
@@ -17,4 +17,8 @@ export async function generateMetadata(props: {
   });
 }
 
-export default BlogPostPage;
+export default function EsBlogPostPage(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  return <PostDetailPage params={props.params} locale="es" />;
+}

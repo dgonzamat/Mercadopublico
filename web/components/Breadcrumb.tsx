@@ -8,7 +8,13 @@ type Crumb = { href?: string; es: string; en: string };
  * Server component puro. El último item es la página actual (no enlaza,
  * marcado aria-current). El padre clickeable reemplaza al viejo "← Volver".
  */
-export function Breadcrumb({ items }: { items: Crumb[] }) {
+export function Breadcrumb({
+  items,
+  locale,
+}: {
+  items: Crumb[];
+  locale?: "es" | "en";
+}) {
   return (
     <nav
       aria-label="Ruta de navegación"
@@ -21,14 +27,14 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
             <li key={i} className="flex items-center gap-x-2">
               {it.href && !last ? (
                 <LocaleLink href={it.href} className="hover:text-accent">
-                  <T es={it.es} en={it.en} />
+                  <T es={it.es} en={it.en} locale={locale} />
                 </LocaleLink>
               ) : (
                 <span
                   className={last ? "text-text" : undefined}
                   aria-current={last ? "page" : undefined}
                 >
-                  <T es={it.es} en={it.en} />
+                  <T es={it.es} en={it.en} locale={locale} />
                 </span>
               )}
               {!last && (

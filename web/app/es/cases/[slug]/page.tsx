@@ -1,4 +1,5 @@
-import CaseDetailPage, {
+import {
+  CaseDetailPage,
   generateStaticParams,
 } from "@/app/cases/[slug]/page";
 import { cases } from "@/lib/data";
@@ -31,4 +32,8 @@ export async function generateMetadata(props: {
   });
 }
 
-export default CaseDetailPage;
+export default function EsCaseDetailPage(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  return <CaseDetailPage params={props.params} locale="es" />;
+}

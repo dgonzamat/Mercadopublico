@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { mirrorHref } from "@/components/LocaleLink";
 
 type Locale = "es" | "en";
 
@@ -52,6 +53,7 @@ export function LocaleToggle({
   dark?: boolean;
 }) {
   const pathname = usePathname();
+  const router = useRouter();
   const [locale, setLocale] = useState<Locale>("en");
   // Dark header (Home hero overlay): cream chrome + accent-bright active span.
   const chrome =
@@ -67,9 +69,15 @@ export function LocaleToggle({
     // app/es/layout) también se muestra en español. Fuera de /es/, gana la
     // elección explícita (localStorage) y si no, la autodetección (default EN).
     const stored = localStorage.getItem("locale") as Locale | null;
+    // El chrome debe coincidir con el idioma que el CUERPO renderiza en esta URL:
+    //  · /es/…            → es
+    //  · raíz con espejo  → en (esas páginas ya sirven solo inglés)
+    //  · sin espejo       → bilingüe: gana la elección explícita, luego autodetect
     const initial: Locale = isEsRoute(pathname)
       ? "es"
-      : (stored ?? detectLocale());
+      : mirrorHref(pathname) !== null
+        ? "en"
+        : (stored ?? detectLocale());
     // Locale derivado en mount / al navegar (no disponible en SSR).
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLocale(initial);
@@ -79,6 +87,17 @@ export function LocaleToggle({
 
   function toggle() {
     const next: Locale = locale === "es" ? "en" : "es";
+    // Rutas espejo (un idioma por URL): NAVEGAR a la gemela. El otro idioma no
+    // vive en este HTML, así que un flip-CSS no lo revelaría — hay que ir a la
+    // otra URL. El useEffect [pathname] del destino fija data-locale/lang.
+    const target = mirrorHref(pathname);
+    if (target) {
+      localStorage.setItem("locale", next);
+      router.push(target);
+      return;
+    }
+    // Rutas sin espejo (atlas, contact, …): siguen siendo bilingües en una sola
+    // URL → flip-CSS legacy.
     setLocale(next);
     document.documentElement.dataset.locale = next;
     document.documentElement.lang = next;

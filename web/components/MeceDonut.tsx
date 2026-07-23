@@ -26,7 +26,7 @@ const fmtCount = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1))
  * muestra el total. El render del servidor (estado inicial) deja el donut
  * completo y el total — la interactividad es progresiva.
  */
-export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: number; tone?: "light" | "dark" }) {
+export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatum[]; N: number; tone?: "light" | "dark"; locale: "es" | "en" }) {
   // En el árbol /en/ las anclas de hipótesis apuntan a /en/probabilidades/…
   const pathname = usePathname();
   // Tokens de "chrome" según el fondo. Clases literales (no concatenadas) para
@@ -86,14 +86,14 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
               <div className="flex items-center gap-2">
                 <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: activeRow.color }} aria-hidden />
                 <span className="font-mono text-xs uppercase tracking-wider text-text">
-                  <T es={activeRow.label} en={activeRow.labelEn} />
+                  <T es={activeRow.label} en={activeRow.labelEn} locale={locale} />
                 </span>
               </div>
               <div className="mt-1 font-mono text-[11px] text-muted">
                 <span className="font-semibold tabular-nums" style={{ color: activeRow.color }}>
                   {share(activeRow.count / N)}%
                 </span>{" "}
-                · {fmtCount(activeRow.count)} <T es="casos" en="cases" />
+                · {fmtCount(activeRow.count)} <T es="casos" en="cases" locale={locale} />
               </div>
             </div>
           </div>
@@ -184,14 +184,14 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
                 {share(activeRow.count / N)}%
               </span>
               <span className={`mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider ${muted}`}>
-                <T es={activeRow.label} en={activeRow.labelEn} />
+                <T es={activeRow.label} en={activeRow.labelEn} locale={locale} />
               </span>
             </>
           ) : (
             <>
               <span className={`font-mono text-4xl font-semibold tabular-nums ${txt}`}>{N}</span>
               <span className={`mt-1 font-mono text-[10px] uppercase tracking-widest ${muted}`}>
-                <T es="casos" en="cases" />
+                <T es="casos" en="cases" locale={locale} />
               </span>
             </>
           )}
@@ -210,13 +210,13 @@ export function MeceDonut({ rows, N, tone = "light" }: { rows: DonutDatum[]; N: 
                 <span className="flex min-w-0 items-center gap-2">
                   <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: row.color }} aria-hidden />
                   <span className={`uppercase tracking-wider ${i === 0 || isActive ? `font-semibold ${txt}` : txt}`}>
-                    <T es={row.label} en={row.labelEn} />
+                    <T es={row.label} en={row.labelEn} locale={locale} />
                   </span>
                 </span>
                 <span className={`shrink-0 whitespace-nowrap text-right tabular-nums ${muted}`}>
                   <span className={i === 0 || isActive ? txt : ""}>{share(frac)}%</span>
                   {" · "}
-                  {fmtCount(row.count)} <T es="casos" en="cases" />
+                  {fmtCount(row.count)} <T es="casos" en="cases" locale={locale} />
                 </span>
               </div>
               {/* Mini-barra: longitud relativa a la hipótesis más grande */}

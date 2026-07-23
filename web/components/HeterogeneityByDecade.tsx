@@ -28,7 +28,7 @@ const Y_TOP = 12; // heterogeneidad = 1.0
 const Y_BOT = 120; // heterogeneidad = 0.0
 const yFor = (h: number) => Y_BOT - h * (Y_BOT - Y_TOP);
 
-export function HeterogeneityByDecade() {
+export function HeterogeneityByDecade({ locale }: { locale: "es" | "en" }) {
   const rows = meceByDecade();
   const step = rows.length > 1 ? (X1 - X0) / (rows.length - 1) : 0;
   const pts = rows.map((r, i) => ({ ...r, x: X0 + i * step, y: yFor(r.heterogeneity) }));
@@ -105,6 +105,7 @@ export function HeterogeneityByDecade() {
         <T
           es="Heterogeneidad = 1 − el share medio de la narrativa mundana/natural, por década (incidentes con posterior MECE). Mide cuánto del corpus resiste explicación convencional. El donut da el snapshot agregado; esto le añade el eje temporal. Pasa el cursor por cada punto para el n de la década."
           en="Heterogeneity = 1 − the mean share of the mundane/natural narrative, by decade (incidents with a MECE posterior). It measures how much of the corpus resists a conventional explanation. The donut gives the aggregate snapshot; this adds the time axis. Hover each point for the decade's n."
+          locale={locale}
         />
       </Caption>
     </figure>

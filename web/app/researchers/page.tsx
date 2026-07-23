@@ -53,6 +53,10 @@ const sections = [
 ];
 
 export default function ResearchersPage() {
+  return <ResearchersView locale="en" />;
+}
+
+export function ResearchersView({ locale }: { locale: "es" | "en" }) {
   const sectionList = sections
     .map((section) => ({
       section,
@@ -73,16 +77,19 @@ export default function ResearchersPage() {
           <T
             es={`El ecosistema · ${STATS.researchers} actores`}
             en={`The ecosystem · ${STATS.researchers} actors`}
+            locale={locale}
           />
         </Eyebrow>
         <H1>
           <T
             es="Las personas que no se callaron"
             en="The people who didn't stay quiet"
+            locale={locale}
           />
         </H1>
         <Lede className="text-muted">
           <T
+            locale={locale}
             es={
               <>
                 Investigadores, pilotos, congresistas, periodistas y filósofos
@@ -111,6 +118,7 @@ export default function ResearchersPage() {
       </header>
 
       <CategoryNav
+        locale={locale}
         label={{ es: "Saltar a una sección", en: "Jump to a section" }}
         items={sectionList.map(({ section, people }) => ({
           anchor: `seccion-${section.code.toLowerCase()}`,
@@ -120,7 +128,7 @@ export default function ResearchersPage() {
         }))}
       />
 
-      <RegionFilter counts={regionCounts} total={researchers.length}>
+      <RegionFilter counts={regionCounts} total={researchers.length} locale={locale}>
       {sectionList.map(({ section, people: sectionResearchers }) => {
         return (
           <section
@@ -133,6 +141,7 @@ export default function ResearchersPage() {
               <T
                 es={`Sección ${section.code} · ${section.es}`}
                 en={`Section ${section.code} · ${section.en}`}
+                locale={locale}
               />
             </h2>
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -166,11 +175,11 @@ export default function ResearchersPage() {
                       </div>
                       {fw && (
                         <p className="mt-1 text-xs text-accent">
-                          <T es={fw.name} en={fw.name_en} />
+                          <T es={fw.name} en={fw.name_en} locale={locale} />
                         </p>
                       )}
                       <p className="mt-2 line-clamp-3 text-xs text-muted">
-                        <T es={r.bio_short} en={r.bio_short_en} />
+                        <T es={r.bio_short} en={r.bio_short_en} locale={locale} />
                       </p>
                     </div>
                   </LocaleLink>
@@ -184,11 +193,11 @@ export default function ResearchersPage() {
       </RegionFilter>
 
       <section id="agencias" className="scroll-mt-20 border-t border-border pt-8">
-        <OfficialAgencies />
+        <OfficialAgencies locale={locale} />
       </section>
 
       <section id="contratistas" className="scroll-mt-20 border-t border-border pt-8">
-        <ContractorsShowcase />
+        <ContractorsShowcase locale={locale} />
       </section>
     </div>
   );

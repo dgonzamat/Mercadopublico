@@ -16,10 +16,12 @@ export function RegionFilter({
   counts,
   total,
   children,
+  locale,
 }: {
   counts: Partial<Record<Region, number>>;
   total: number;
   children: ReactNode;
+  locale: "es" | "en";
 }) {
   const [region, setRegion] = useState<Region | "all">("all");
   const available = REGION_ORDER.filter((r) => (counts[r] ?? 0) > 0);
@@ -32,7 +34,7 @@ export function RegionFilter({
         aria-label="Filtro por región"
       >
         <Chip active={region === "all"} onClick={() => setRegion("all")} count={total}>
-          <T es="Todas" en="All" />
+          <T es="Todas" en="All" locale={locale} />
         </Chip>
         {available.map((r) => (
           <Chip
@@ -41,7 +43,7 @@ export function RegionFilter({
             onClick={() => setRegion(r)}
             count={counts[r] ?? 0}
           >
-            <T es={REGION_LABELS[r].es} en={REGION_LABELS[r].en} />
+            <T es={REGION_LABELS[r].es} en={REGION_LABELS[r].en} locale={locale} />
           </Chip>
         ))}
       </div>

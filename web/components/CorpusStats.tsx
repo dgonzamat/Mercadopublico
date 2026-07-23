@@ -15,7 +15,7 @@ import { Eyebrow, H2, Caption, DisplayNumber } from "@/lib/typography";
  * Editorial layout: each stat is dramatically oversized. The numbers ARE
  * the visual, not labels on top of bars. Whitespace-heavy.
  */
-export function CorpusStats() {
+export function CorpusStats({ locale }: { locale: "es" | "en" }) {
   const tiers = tierDistribution(cases);
   const top = topPatterns(cases, patterns, 5);
   const eras = eraDistribution(cases);
@@ -27,6 +27,7 @@ export function CorpusStats() {
           <T
             es={`Hechos verificables · ${tiers.total} casos`}
             en={`Verifiable facts · ${tiers.total} cases`}
+            locale={locale}
           />
         </Eyebrow>
         <H2 id="corpus-stats-title" className="max-w-3xl">
@@ -49,6 +50,7 @@ export function CorpusStats() {
                 </span>
               </>
             }
+            locale={locale}
           />
         </H2>
       </div>
@@ -58,6 +60,7 @@ export function CorpusStats() {
           <T
             es="Calidad de evidencia por caso"
             en="Evidence quality per case"
+            locale={locale}
           />
         </Eyebrow>
         <div className="grid grid-cols-3 gap-8 md:gap-12">
@@ -67,6 +70,7 @@ export function CorpusStats() {
             count={tiers.S}
             total={tiers.total}
             colorClass="text-tierS"
+            locale={locale}
           />
           <TierStat
             es="Aceptable"
@@ -74,6 +78,7 @@ export function CorpusStats() {
             count={tiers.A}
             total={tiers.total}
             colorClass="text-tierA"
+            locale={locale}
           />
           <TierStat
             es="Indiciario"
@@ -81,6 +86,7 @@ export function CorpusStats() {
             count={tiers.B}
             total={tiers.total}
             colorClass="text-tierB"
+            locale={locale}
           />
         </div>
         <Caption className="max-w-3xl pt-2">
@@ -105,13 +111,14 @@ export function CorpusStats() {
                 evidence: single-witness or without primary verification
               </>
             }
+            locale={locale}
           />
         </Caption>
       </div>
 
       <div className="space-y-6">
         <Eyebrow>
-          <T es="Distribución por era" en="Distribution by era" />
+          <T es="Distribución por era" en="Distribution by era" locale={locale} />
         </Eyebrow>
         <div className="space-y-6 border-t border-text/15 pt-6">
           {eras.map((e) => {
@@ -149,6 +156,7 @@ export function CorpusStats() {
           <T
             es="Top 5 patrones por frecuencia"
             en="Top 5 patterns by frequency"
+            locale={locale}
           />
         </Eyebrow>
         <ol className="divide-y divide-text/10 border-t border-text/15">
@@ -163,10 +171,10 @@ export function CorpusStats() {
                 </span>
                 <div className="min-w-0 space-y-1">
                   <p className="font-display text-lg leading-tight text-text md:text-xl">
-                    <T es={p.name} en={p.name_en} />
+                    <T es={p.name} en={p.name_en} locale={locale} />
                   </p>
                   <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                    <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} />
+                    <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} locale={locale} />
                   </p>
                 </div>
                 <div className="text-right">
@@ -174,7 +182,7 @@ export function CorpusStats() {
                     {p.count}
                   </span>
                   <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                    <T es="casos" en="cases" />
+                    <T es="casos" en="cases" locale={locale} />
                   </p>
                 </div>
               </LocaleLink>
@@ -205,6 +213,7 @@ export function CorpusStats() {
                 </LocaleLink>
               </>
             }
+            locale={locale}
           />
         </Caption>
       </div>
@@ -218,12 +227,14 @@ function TierStat({
   count,
   total,
   colorClass,
+  locale,
 }: {
   es: string;
   en: string;
   count: number;
   total: number;
   colorClass: string;
+  locale: "es" | "en";
 }) {
   const pct = total > 0 ? (count / total) * 100 : 0;
   return (
@@ -235,10 +246,10 @@ function TierStat({
       </DisplayNumber>
       <div className="space-y-0.5">
         <p className="font-display text-xl font-medium text-text">
-          <T es={es} en={en} />
+          <T es={es} en={en} locale={locale} />
         </p>
         <p className="font-mono text-xs uppercase tracking-widest text-muted tabular-nums">
-          <T es={`${pct.toFixed(0)}% del corpus`} en={`${pct.toFixed(0)}% of corpus`} />
+          <T es={`${pct.toFixed(0)}% del corpus`} en={`${pct.toFixed(0)}% of corpus`} locale={locale} />
         </p>
       </div>
     </div>

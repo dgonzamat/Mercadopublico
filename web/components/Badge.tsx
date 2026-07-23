@@ -80,9 +80,11 @@ const EPISTEMIC: Record<
 export function EpistemicBadge({
   status,
   compact = false,
+  locale,
 }: {
   status?: string;
   compact?: boolean;
+  locale?: "es" | "en";
 }) {
   if (status !== "developing" && status !== "projected") return null;
   const m = EPISTEMIC[status];
@@ -95,19 +97,25 @@ export function EpistemicBadge({
       title={compact ? m.es : undefined}
     >
       <span aria-hidden>{m.icon}</span>
-      {!compact && <T es={m.es} en={m.en} />}
+      {!compact && <T es={m.es} en={m.en} locale={locale} />}
     </span>
   );
 }
 
-export function CategoryBadge({ category }: { category: string }) {
+export function CategoryBadge({
+  category,
+  locale,
+}: {
+  category: string;
+  locale?: "es" | "en";
+}) {
   const meta = CATEGORY_META[category];
   if (!meta) return null;
   return (
     <Badge variant="outline">
       <span aria-hidden>{meta.icon}</span>
       <span>
-        <T es={meta.label} en={meta.label_en} />
+        <T es={meta.label} en={meta.label_en} locale={locale} />
       </span>
     </Badge>
   );

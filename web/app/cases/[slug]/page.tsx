@@ -121,12 +121,14 @@ function findPullQuote(text?: string): string | null {
   return all[0];
 }
 
-export default async function CaseDetailPage(
+export async function CaseDetailPage(
   props: {
     params: Promise<{ slug: string }>;
+    locale?: "es" | "en";
   }
 ) {
   const params = await props.params;
+  const locale = props.locale ?? "en";
   const c = cases.find((x) => x.id === params.slug);
   if (!c) notFound();
 
@@ -240,28 +242,29 @@ export default async function CaseDetailPage(
       />
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
+          locale={locale}
           items={[
             { href: "/", es: "Inicio", en: "Home" },
             { href: "/cases", es: "Casos", en: "Cases" },
             { es: c.name, en: c.name_en ?? c.name },
           ]}
         />
-        <ShareButton title={c.name} />
+        <ShareButton title={c.name} locale={locale} />
       </div>
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">
         <div className="space-y-4">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T
+            <T locale={locale}
               es={`Caso Nº ${String(c.num).padStart(2, "0")}`}
               en={`Case No. ${String(c.num).padStart(2, "0")}`}
             />
             <span className="mx-2 text-text/30">·</span>
-            <T es={c.country_name} en={countryEn(c.country_name)} />
+            <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />
           </p>
           {c.epistemicStatus && c.epistemicStatus !== "documented" && (
-            <EpistemicBadge status={c.epistemicStatus} />
+            <EpistemicBadge status={c.epistemicStatus} locale={locale} />
           )}
         </div>
 
@@ -277,44 +280,46 @@ export default async function CaseDetailPage(
               {year}
               <span className="mx-2 text-text/30">·</span>
               {c.location.place ? (
-                <T
+                <T locale={locale}
                   es={c.location.place}
                   en={c.location.place_en ?? c.location.place}
                 />
               ) : (
-                <T es={c.country_name} en={countryEn(c.country_name)} />
+                <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />
               )}
             </p>
             <H1>
               <span className="sr-only">
-                <T es={c.country_name} en={countryEn(c.country_name)} />.
+                <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />.
               </span>
-              <T es={c.name} en={c.name_en ?? c.name} />
+              <T locale={locale} es={c.name} en={c.name_en ?? c.name} />
             </H1>
           </div>
         </div>
 
         <p className={summaryClass}>
-          <T
+          <T locale={locale}
             es={linkCaseRefs(c.summary, NAME_BY_SLUG)}
             en={linkCaseRefs(c.summary_en ?? c.summary, NAME_BY_SLUG)}
           />
         </p>
 
         <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-4">
-          <KeyFact es="Año" en="Year" value={year} />
-          <KeyFact es="Tier" en="Tier" value={c.tier} mono />
+          <KeyFact locale={locale} es="Año" en="Year" value={year} />
+          <KeyFact locale={locale} es="Tier" en="Tier" value={c.tier} mono />
           <KeyFact
+            locale={locale}
             es="Probabilidad"
             en="Probability"
             value={`${c.probability}%`}
             mono
           />
           <KeyFact
+            locale={locale}
             es="Categoría"
             en="Category"
             value={
-              <T
+              <T locale={locale}
                 es={CATEGORY_META[c.category]?.label ?? c.category}
                 en={CATEGORY_META[c.category]?.label_en ?? c.category}
               />
@@ -322,7 +327,7 @@ export default async function CaseDetailPage(
           />
         </div>
         <Caption>
-          <T
+          <T locale={locale}
             es={`${TIER_META[c.tier].description}. Tres ejes independientes: el «tier» mide la fuerza de la evidencia; la «probabilidad» estima cuán genuinamente inexplicado está el caso —un fenómeno natural puede seguir sin explicación, así que no equivale a «no-prosaico»—; y la partición de explicaciones (abajo) dice qué fue más plausiblemente. Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude.`}
             en={`${TIER_META[c.tier].description_en}. Three independent axes: the «tier» measures the strength of the evidence; the «probability» estimates how genuinely unexplained the case is —a natural phenomenon can remain unexplained, so it does not equal «non-prosaic»—; and the partition of explanations (below) says what it most plausibly was. So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax.`}
           />
@@ -341,14 +346,14 @@ export default async function CaseDetailPage(
           className="group block border-2 border-accent bg-panel p-6 no-underline transition-colors hover:bg-accent/5 md:p-8"
         >
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            <T es="Documento primario · PDF" en="Primary source · PDF" />
+            <T locale={locale} es="Documento primario · PDF" en="Primary source · PDF" />
           </p>
           <p className="mt-3 flex items-start gap-3 font-display text-xl font-medium leading-snug text-text md:text-2xl">
             <span aria-hidden className="shrink-0 text-accent">
               ↓
             </span>
             <span className="underline decoration-accent/40 underline-offset-4 group-hover:decoration-accent">
-              <T
+              <T locale={locale}
                 es={c.featuredDoc.label}
                 en={c.featuredDoc.label_en ?? c.featuredDoc.label}
               />
@@ -356,7 +361,7 @@ export default async function CaseDetailPage(
           </p>
           {c.featuredDoc.note && (
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              <T
+              <T locale={locale}
                 es={c.featuredDoc.note}
                 en={c.featuredDoc.note_en ?? c.featuredDoc.note}
               />
@@ -374,7 +379,7 @@ export default async function CaseDetailPage(
       {c.documents && c.documents.length > 0 && (
         <section className="space-y-6">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            <T
+            <T locale={locale}
               es="Documentos primarios · visor"
               en="Primary documents · viewer"
             />
@@ -394,7 +399,7 @@ export default async function CaseDetailPage(
               )}
               <figcaption className="space-y-1">
                 <p className="text-sm leading-snug text-text">
-                  <T es={doc.title} en={doc.title_en ?? doc.title} />
+                  <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
                 </p>
                 <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
                   {[doc.source, doc.license].filter(Boolean).join(" · ")}
@@ -407,7 +412,7 @@ export default async function CaseDetailPage(
                         rel="noopener noreferrer"
                         className="underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
                       >
-                        <T es="abrir original" en="open original" />
+                        <T locale={locale} es="abrir original" en="open original" />
                       </a>
                     </>
                   )}
@@ -419,7 +424,7 @@ export default async function CaseDetailPage(
       )}
 
       {/* EN-only disclaimer when no EN narrative available */}
-      {hasNarrative && !c.whatHappened_en && (
+      {hasNarrative && !c.whatHappened_en && locale === "en" && (
         <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
             Translation note
@@ -438,14 +443,15 @@ export default async function CaseDetailPage(
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  <T es={`Parte ${partNo.whatHappened}`} en={`Part ${partNo.whatHappened}`} />
+                  <T locale={locale} es={`Parte ${partNo.whatHappened}`} en={`Part ${partNo.whatHappened}`} />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  <T es={whTitle.es} en={whTitle.en} />
+                  <T locale={locale} es={whTitle.es} en={whTitle.en} />
                 </h2>
               </header>
 
               {/* ES paragraphs */}
+              {locale === "es" && (
               <div lang="es" data-lang="es" className="space-y-8">
                 {whatHappenedParas.map((para, i) => (
                   <div key={i} className="space-y-8">
@@ -466,9 +472,10 @@ export default async function CaseDetailPage(
                   </div>
                 ))}
               </div>
+              )}
 
               {/* EN paragraphs if available */}
-              {c.whatHappened_en && (
+              {locale === "en" && c.whatHappened_en && (
                 <div lang="en" data-lang="en" className="space-y-8">
                   {c.whatHappened_en.split("\n\n").map((para, i) => (
                     <p
@@ -491,15 +498,16 @@ export default async function CaseDetailPage(
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  <T es={`Parte ${partNo.whyMatters}`} en={`Part ${partNo.whyMatters}`} />
+                  <T locale={locale} es={`Parte ${partNo.whyMatters}`} en={`Part ${partNo.whyMatters}`} />
                 </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-                  <T
+                  <T locale={locale}
                     es="Por qué este caso movió la aguja"
                     en="Why this case moved the needle"
                   />
                 </h2>
               </header>
+              {locale === "es" && (
               <div lang="es" data-lang="es" className="space-y-6">
                 {c.whyMatters.split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
@@ -507,6 +515,8 @@ export default async function CaseDetailPage(
                   </p>
                 ))}
               </div>
+              )}
+              {locale === "en" && (
               <div lang="en" data-lang="en" className="space-y-6">
                 {(c.whyMatters_en ?? c.whyMatters).split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
@@ -514,6 +524,7 @@ export default async function CaseDetailPage(
                   </p>
                 ))}
               </div>
+              )}
             </div>
           )}
         </section>
@@ -523,10 +534,10 @@ export default async function CaseDetailPage(
       <section className="space-y-12 border-t-2 border-text pt-12">
         <header className="space-y-3">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T es={`Parte ${partNo.apparatus}`} en={`Part ${partNo.apparatus}`} />
+            <T locale={locale} es={`Parte ${partNo.apparatus}`} en={`Part ${partNo.apparatus}`} />
           </p>
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-            <T es="Lo que queda en papel" en="What's left on paper" />
+            <T locale={locale} es="Lo que queda en papel" en="What's left on paper" />
           </h2>
         </header>
 
@@ -548,7 +559,7 @@ export default async function CaseDetailPage(
             </a>
             <figcaption className="max-w-md space-y-1">
               <p className="text-sm leading-snug text-text">
-                <T
+                <T locale={locale}
                   es={c.primaryDocument.caption}
                   en={c.primaryDocument.caption_en ?? c.primaryDocument.caption}
                 />
@@ -565,7 +576,7 @@ export default async function CaseDetailPage(
             {hasEvidence && (
               <div className="space-y-4">
                 <Eyebrow>
-                  <T es="Evidencia documentada" en="Documented evidence" />
+                  <T locale={locale} es="Evidencia documentada" en="Documented evidence" />
                 </Eyebrow>
                 <ol className="space-y-3">
                   {c.evidence!.map((item, i) => (
@@ -580,7 +591,7 @@ export default async function CaseDetailPage(
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <span>
-                        <T
+                        <T locale={locale}
                           es={linkCaseRefs(item, NAME_BY_SLUG)}
                           en={linkCaseRefs(c.evidence_en?.[i] ?? item, NAME_BY_SLUG)}
                         />
@@ -594,7 +605,7 @@ export default async function CaseDetailPage(
             {hasSources && (
               <div className="space-y-4">
                 <Eyebrow>
-                  <T es="Fuentes" en="Sources" />
+                  <T locale={locale} es="Fuentes" en="Sources" />
                 </Eyebrow>
                 <ol className="space-y-3">
                   {c.sources!.map((s, i) => (
@@ -624,7 +635,7 @@ export default async function CaseDetailPage(
                         {s.note && (
                           <span className="text-muted">
                             {" "}
-                            — <T es={s.note} en={s.note_en ?? s.note} />
+                            — <T locale={locale} es={s.note} en={s.note_en ?? s.note} />
                           </span>
                         )}
                       </span>
@@ -639,7 +650,7 @@ export default async function CaseDetailPage(
         {casePatterns.length > 0 && (
           <div className="space-y-4">
             <Eyebrow>
-              <T
+              <T locale={locale}
                 es={`Patrones que exhibe (${casePatterns.length})`}
                 en={`Patterns it exhibits (${casePatterns.length})`}
               />
@@ -655,7 +666,7 @@ export default async function CaseDetailPage(
                 >
                   <span className="font-mono">{p.id}</span>
                   <span className="ml-2">
-                    <T es={p.name} en={p.name_en} />
+                    <T locale={locale} es={p.name} en={p.name_en} />
                   </span>
                 </LocaleLink>
               ))}
@@ -665,16 +676,16 @@ export default async function CaseDetailPage(
 
         <div className="space-y-2">
           <Eyebrow>
-            <T es="Ubicación" en="Location" />
+            <T locale={locale} es="Ubicación" en="Location" />
           </Eyebrow>
           <p className="text-sm text-text">
             {c.location.place ? (
-              <T
+              <T locale={locale}
                 es={c.location.place}
                 en={c.location.place_en ?? c.location.place}
               />
             ) : (
-              <T es={c.country_name} en={countryEn(c.country_name)} />
+              <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />
             )}{" "}
             <span className="font-mono text-xs text-muted">
               · {c.location.lat.toFixed(2)}°, {c.location.lng.toFixed(2)}°
@@ -684,7 +695,7 @@ export default async function CaseDetailPage(
 
         {!hasRichContent && (
           <Caption className="italic">
-            <T
+            <T locale={locale}
               es={`Este caso aún no está expandido — solo el dato bruto. Vamos por los ${TOTAL_CASES} progresivamente.`}
               en={`This case isn't expanded yet — just the raw record. We're going through ${TOTAL_CASES} progressively.`}
             />
@@ -696,10 +707,10 @@ export default async function CaseDetailPage(
       {c.category !== "document" && (
         <section className="space-y-6 border-t-2 border-text pt-12">
           <Eyebrow>
-            <T es="Distribución de explicaciones" en="Distribution of explanations" />
+            <T locale={locale} es="Distribución de explicaciones" en="Distribution of explanations" />
           </Eyebrow>
           <Body className="text-muted">
-            <T
+            <T locale={locale}
               es={
                 <>
                   Este caso se clasifica entre las hipótesis del modelo: la
@@ -732,9 +743,9 @@ export default async function CaseDetailPage(
               }
             />
           </Body>
-          <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} />
+          <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} locale={locale} />
           <Caption className="italic">
-            <T
+            <T locale={locale}
               es="Juicio analítico estructurado, no frecuencia calibrada. Clasificación forzada: la masa que la evidencia no permite asignar se reparte entre las hipótesis que el caso sí apoya."
               en="Structured analytical judgment, not a calibrated frequency. Forced classification: the mass the evidence cannot assign is spread across the hypotheses the case does support."
             />
@@ -746,7 +757,7 @@ export default async function CaseDetailPage(
       {backlinks.length > 0 && (
         <section className="space-y-6 border-t-2 border-text pt-12">
           <Eyebrow>
-            <T
+            <T locale={locale}
               es={`Citado por ${backlinks.length} ${backlinks.length === 1 ? "caso" : "casos"}`}
               en={`Referenced by ${backlinks.length} ${backlinks.length === 1 ? "case" : "cases"}`}
             />
@@ -759,7 +770,7 @@ export default async function CaseDetailPage(
                   className="group flex w-full flex-col gap-1 bg-bg p-4 hover:bg-text hover:text-bg"
                 >
                   <p className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-                    <T es={b.name} en={b.name_en ?? b.name} />
+                    <T locale={locale} es={b.name} en={b.name_en ?? b.name} />
                   </p>
                   <p className="mt-auto font-mono text-xs tabular-nums text-muted group-hover:text-bg/60">
                     {b.year_start} · Tier {b.tier}
@@ -775,7 +786,7 @@ export default async function CaseDetailPage(
       {similar.length > 0 && (
         <section className="space-y-6 border-t-2 border-text pt-12">
           <Eyebrow>
-            <T es="Casos relacionados" en="Related cases" />
+            <T locale={locale} es="Casos relacionados" en="Related cases" />
           </Eyebrow>
           <div className="grid gap-px bg-text sm:grid-cols-2">
             {similar.map((s) => {
@@ -801,10 +812,10 @@ export default async function CaseDetailPage(
                   className="group flex flex-col gap-2 bg-bg p-5 hover:bg-text hover:text-bg"
                 >
                   <p className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-                    <T es={reasonFor("es")} en={reasonFor("en")} />
+                    <T locale={locale} es={reasonFor("es")} en={reasonFor("en")} />
                   </p>
                   <p className="font-display text-xl font-medium leading-tight text-text group-hover:text-bg">
-                    <T
+                    <T locale={locale}
                       es={s.caseData.name}
                       en={s.caseData.name_en ?? s.caseData.name}
                     />
@@ -824,7 +835,7 @@ export default async function CaseDetailPage(
       {caseResearchers.length > 0 && (
         <section className="space-y-4 border-t-2 border-text pt-12">
           <Eyebrow>
-            <T
+            <T locale={locale}
               es={`Actores asociados (${caseResearchers.length})`}
               en={`Associated actors (${caseResearchers.length})`}
             />
@@ -842,7 +853,7 @@ export default async function CaseDetailPage(
                     {r.name}
                   </span>
                   <span className="block truncate text-xs text-muted">
-                    <T es={r.section_label} en={r.section_label_en} />
+                    <T locale={locale} es={r.section_label} en={r.section_label_en} />
                   </span>
                 </span>
               </LocaleLink>
@@ -862,13 +873,13 @@ export default async function CaseDetailPage(
             className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
           >
             <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-              <T
+              <T locale={locale}
                 es={`← Caso anterior · #${prev.num}`}
                 en={`← Previous case · #${prev.num}`}
               />
             </span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-              <T es={prev.name} en={prev.name_en ?? prev.name} />
+              <T locale={locale} es={prev.name} en={prev.name_en ?? prev.name} />
             </span>
           </LocaleLink>
         ) : (
@@ -880,13 +891,13 @@ export default async function CaseDetailPage(
             className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
           >
             <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-              <T
+              <T locale={locale}
                 es={`Siguiente caso · #${next.num} →`}
                 en={`Next case · #${next.num} →`}
               />
             </span>
             <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-              <T es={next.name} en={next.name_en ?? next.name} />
+              <T locale={locale} es={next.name} en={next.name_en ?? next.name} />
             </span>
           </LocaleLink>
         ) : (
@@ -897,21 +908,25 @@ export default async function CaseDetailPage(
   );
 }
 
+export default CaseDetailPage;
+
 function KeyFact({
   es,
   en,
   value,
   mono = false,
+  locale,
 }: {
   es: string;
   en: string;
   value: ReactNode;
   mono?: boolean;
+  locale: "es" | "en";
 }) {
   return (
     <div className="bg-bg p-4">
       <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
-        <T es={es} en={en} />
+        <T locale={locale} es={es} en={en} />
       </p>
       <p
         className={`mt-1 ${

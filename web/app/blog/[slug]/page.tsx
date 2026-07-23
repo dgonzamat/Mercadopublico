@@ -30,11 +30,13 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   };
 }
 
-export default async function PostDetailPage(
+export async function PostDetailPage(
   props: {
     params: Promise<{ slug: string }>;
+    locale?: "es" | "en";
   }
 ) {
+  const locale = props.locale ?? "en";
   const params = await props.params;
   const p = getPost(params.slug);
   if (!p) notFound();
@@ -45,8 +47,8 @@ export default async function PostDetailPage(
   const prev = idx > 0 ? byNum[idx - 1] : null;
   const next = idx < byNum.length - 1 ? byNum[idx + 1] : null;
 
-  const parasEs = p.body.split("\n\n");
-  const parasEn = (p.body_en ?? p.body).split("\n\n");
+  // Un solo idioma por URL: se renderiza solo la prosa del locale activo.
+  const paras = (locale === "es" ? p.body : p.body_en ?? p.body).split("\n\n");
 
   return (
     <article className="mx-auto max-w-3xl space-y-10 py-4">
@@ -68,8 +70,9 @@ export default async function PostDetailPage(
             { href: "/blog", es: "Blog", en: "Blog" },
             { es: p.title, en: p.title_en ?? p.title },
           ]}
+          locale={locale}
         />
-        <ShareButton title={p.title} />
+        <ShareButton title={p.title} locale={locale} />
       </div>
 
       <header className="space-y-4 border-b-2 border-text pb-6">
@@ -78,20 +81,13 @@ export default async function PostDetailPage(
           {p.tags && p.tags.length > 0 && <> · {p.tags.join(" · ")}</>}
         </Eyebrow>
         <H1>
-          <T es={p.title} en={p.title_en ?? p.title} />
+          <T es={p.title} en={p.title_en ?? p.title} locale={locale} />
         </H1>
       </header>
 
-      {/* Cuerpo bilingüe: divs data-lang (no <T>) para contenido en bloque. */}
-      <div lang="es" data-lang="es" className="space-y-5">
-        {parasEs.map((para, i) => (
-          <p key={i} className="text-lg leading-relaxed text-text md:text-xl">
-            {para}
-          </p>
-        ))}
-      </div>
-      <div lang="en" data-lang="en" className="space-y-5">
-        {parasEn.map((para, i) => (
+      {/* Cuerpo: un solo idioma por URL (el locale activo). */}
+      <div lang={locale} data-lang={locale} className="space-y-5">
+        {paras.map((para, i) => (
           <p key={i} className="text-lg leading-relaxed text-text md:text-xl">
             {para}
           </p>
@@ -100,13 +96,20 @@ export default async function PostDetailPage(
 
       <PrevNext
         label="Navegación entre posts"
+        locale={locale}
         prev={
           prev
             ? {
                 href: `/blog/${prev.id}`,
                 es: "← Anterior",
                 en: "← Previous",
-                title: <T es={prev.title} en={prev.title_en ?? prev.title} />,
+                title: (
+                  <T
+                    es={prev.title}
+                    en={prev.title_en ?? prev.title}
+                    locale={locale}
+                  />
+                ),
               }
             : null
         }
@@ -116,7 +119,13 @@ export default async function PostDetailPage(
                 href: `/blog/${next.id}`,
                 es: "Siguiente →",
                 en: "Next →",
-                title: <T es={next.title} en={next.title_en ?? next.title} />,
+                title: (
+                  <T
+                    es={next.title}
+                    en={next.title_en ?? next.title}
+                    locale={locale}
+                  />
+                ),
               }
             : null
         }
@@ -124,3 +133,5 @@ export default async function PostDetailPage(
     </article>
   );
 }
+
+export default PostDetailPage;

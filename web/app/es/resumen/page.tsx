@@ -1,4 +1,4 @@
-import ResumenPage from "@/app/resumen/page";
+import { ResumenView } from "@/app/resumen/page";
 import { STATS } from "@/lib/siteStats";
 import { esMeta } from "@/lib/seo";
 
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/resumen/",
 });
 
-export default ResumenPage;
+export default function EsResumenPage() {
+  return <ResumenView locale="es" />;
+}

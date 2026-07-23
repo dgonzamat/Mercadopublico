@@ -34,11 +34,13 @@ export async function generateMetadata(
   };
 }
 
-export default async function PatternDetailPage(
+export async function PatternDetailPage(
   props: {
     params: Promise<{ letter: string }>;
+    locale?: "es" | "en";
   }
 ) {
+  const locale = props.locale ?? "en";
   const params = await props.params;
   const p = patterns.find((x) => x.letter === params.letter);
   if (!p) notFound();
@@ -65,26 +67,27 @@ export default async function PatternDetailPage(
             { href: "/patterns", es: "Patrones", en: "Patterns" },
             { es: `${p.id} ${p.name}`, en: `${p.id} ${p.name_en}` },
           ]}
+          locale={locale}
         />
-        <ShareButton title={`${p.id} ${p.name}`} />
+        <ShareButton title={`${p.id} ${p.name}`} locale={locale} />
       </div>
 
       {/* U-1 · header con primitivas (antes h1 en sans bold, fuera del sistema).
           El acento de color del patrón se conserva en el borde izquierdo. */}
       <header className="space-y-2">
         <Eyebrow>
-          <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} />
+          <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} locale={locale} />
         </Eyebrow>
         <div style={{ borderLeftColor: p.color, borderLeftWidth: 4, paddingLeft: 12 }}>
           <H1>
-            <T es={p.name} en={p.name_en} />
+            <T es={p.name} en={p.name_en} locale={locale} />
           </H1>
         </div>
       </header>
 
       <section>
         <p className="text-text">
-          <T es={p.description} en={p.description_en} />
+          <T es={p.description} en={p.description_en} locale={locale} />
         </p>
       </section>
 
@@ -93,6 +96,7 @@ export default async function PatternDetailPage(
           <T
             es={`Casos que exhiben este patrón (${patternCases.length})`}
             en={`Cases exhibiting this pattern (${patternCases.length})`}
+            locale={locale}
           />
         </h2>
         <div className="mt-2">
@@ -101,16 +105,18 @@ export default async function PatternDetailPage(
               <T
                 es="Patrón estructural/meta — sin casos individuales en este corpus."
                 en="Structural/meta pattern — no individual cases in this corpus."
+                locale={locale}
               />
             </p>
           ) : (
-            patternCases.map((c) => <CaseRow key={c.id} caseData={c} />)
+            patternCases.map((c) => <CaseRow key={c.id} caseData={c} locale={locale} />)
           )}
         </div>
       </section>
 
       <PrevNext
         label="Navegación entre patrones"
+        locale={locale}
         prev={
           prev
             ? {
@@ -121,6 +127,7 @@ export default async function PatternDetailPage(
                   <T
                     es={`${prev.id} ${prev.name}`}
                     en={`${prev.id} ${prev.name_en}`}
+                    locale={locale}
                   />
                 ),
               }
@@ -136,6 +143,7 @@ export default async function PatternDetailPage(
                   <T
                     es={`${next.id} ${next.name}`}
                     en={`${next.id} ${next.name_en}`}
+                    locale={locale}
                   />
                 ),
               }
@@ -145,3 +153,5 @@ export default async function PatternDetailPage(
     </article>
   );
 }
+
+export default PatternDetailPage;

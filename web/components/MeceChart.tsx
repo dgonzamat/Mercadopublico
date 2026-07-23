@@ -26,7 +26,9 @@ export function MecePartition({
   consolidateNonHuman = false,
   keepIndet = false,
   hrefFor,
+  locale,
 }: {
+  locale: "es" | "en";
   compact?: boolean;
   /** Dataset a graficar; por defecto los incidentes (corpusPosteriors). */
   items?: ScoredCase[];
@@ -85,10 +87,12 @@ export function MecePartition({
           href: hrefFor?.(c.key),
         }))}
         N={donutN}
+        locale={locale}
       />
 
       <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-muted">
         <T
+          locale={locale}
           es={totalLabelEs ?? `Suman 100% · ${N} casos de incidente · partición exhaustiva`}
           en={totalLabelEn ?? `Sum to 100% · ${N} incident cases · exhaustive partition`}
         />
@@ -103,15 +107,15 @@ export function MecePartition({
           </div>
           <div className="mt-2 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-wider">
             <span className="text-text">
-              <T es="Prosaico" en="Prosaic" /> <span className="tabular-nums text-muted">{pct(prosaico / derivedBase)}%</span>
+              <T es="Prosaico" en="Prosaic" locale={locale} /> <span className="tabular-nums text-muted">{pct(prosaico / derivedBase)}%</span>
             </span>
             <span className="text-text">
-              <span className="tabular-nums text-muted">{pct(anomalo / derivedBase)}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" />
+              <span className="tabular-nums text-muted">{pct(anomalo / derivedBase)}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" locale={locale} />
             </span>
           </div>
           {!consolidateNonHuman && (
             <p className="mt-3 font-mono text-[11px] text-muted">
-              <T es="Entidades no humanas (encubierto + abierto)" en="Non-human entities (covert + open)" />: {pct(enh / derivedBase)}%
+              <T es="Entidades no humanas (encubierto + abierto)" en="Non-human entities (covert + open)" locale={locale} />: {pct(enh / derivedBase)}%
             </p>
           )}
         </div>
@@ -126,10 +130,12 @@ export function CasePosterior({
   posterior,
   mundanoType,
   misidSubtype,
+  locale,
 }: {
   posterior: Posterior;
   mundanoType?: ScoredCase["mundanoType"];
   misidSubtype?: MisidSubtype;
+  locale: "es" | "en";
 }) {
   const rows = expandedHypotheses([{ posterior, mundanoType }]);
   const m = rows[0];
@@ -151,24 +157,24 @@ export function CasePosterior({
           <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px]">
             <span className="flex items-center gap-1.5 text-text">
               <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: r.color }} />
-              <T es={r.label} en={r.labelEn} />
+              <T es={r.label} en={r.labelEn} locale={locale} />
             </span>
             <span className="text-muted">{pct(r.count)}%</span>
           </div>
         ))}
       </div>
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T es="Hipótesis modal" en="Modal hypothesis" />:{" "}
+        <T es="Hipótesis modal" en="Modal hypothesis" locale={locale} />:{" "}
         <span style={{ color: m.color }} className="font-semibold">
-          <T es={m.label} en={m.labelEn} />
+          <T es={m.label} en={m.labelEn} locale={locale} />
         </span>{" "}
-        {pct(m.count)}% · <T es="suma 100%" en="sums to 100%" />
+        {pct(m.count)}% · <T es="suma 100%" en="sums to 100%" locale={locale} />
       </p>
       {sub && (
         <p className="mt-1.5 font-mono text-[11px] uppercase tracking-widest text-muted">
-          <T es="Se confundió con" en="Confused with" />:{" "}
+          <T es="Se confundió con" en="Confused with" locale={locale} />:{" "}
           <span style={{ color: sub.color }} className="font-semibold">
-            <T es={sub.label} en={sub.labelEn} />
+            <T es={sub.label} en={sub.labelEn} locale={locale} />
           </span>
         </p>
       )}

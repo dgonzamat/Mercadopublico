@@ -25,6 +25,10 @@ export const metadata = {
 };
 
 export default function HomePage() {
+  return <HomeView locale="en" />;
+}
+
+export function HomeView({ locale }: { locale: "es" | "en" }) {
   return (
     <div className="space-y-24 md:space-y-40">
       {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
@@ -37,6 +41,7 @@ export default function HomePage() {
           <div className="pointer-events-none absolute right-4 top-[88px] hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55 md:flex">
             <span className="h-1.5 w-1.5 animate-pulse bg-accent-bright" />
             <T
+              locale={locale}
               es={`Barrido activo · ${STATS.cases} contactos`}
               en={`Sweep active · ${STATS.cases} contacts`}
             />
@@ -44,12 +49,14 @@ export default function HomePage() {
           <div className="max-w-2xl space-y-8">
             <Eyebrow className="!text-bg/55">
               <T
+                locale={locale}
                 es="UAP Codex · investigación abierta"
                 en="UAP Codex · open research"
               />
             </Eyebrow>
             <h1 className="font-display text-[clamp(2.75rem,7vw,5rem)] font-medium leading-[1.05] tracking-tight text-bg">
               <T
+                locale={locale}
                 es={
                   <>
                     <span className="text-accent-bright italic">
@@ -70,6 +77,7 @@ export default function HomePage() {
             </h1>
             <Lede className="max-w-2xl !text-bg/70">
               <T
+                locale={locale}
                 es={`Hay algo que las instituciones no pudieron — o no quisieron — explicar desde 1947. Un compendio de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
                 en={`There's something institutions couldn't — or wouldn't — explain since 1947. A compendium of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
               />
@@ -77,6 +85,7 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Cta href="/probabilidades" variant="primary" onDark>
                 <T
+                  locale={locale}
                   es="Qué tan probable es cada explicación"
                   en="How likely each explanation is"
                 />
@@ -84,6 +93,7 @@ export default function HomePage() {
               </Cta>
               <Cta href="/resumen" variant="ghost" onDark>
                 <T
+                  locale={locale}
                   es="¿Solo 10 minutos? Lee el resumen"
                   en="Only 10 minutes? Read the summary"
                 />
@@ -94,7 +104,7 @@ export default function HomePage() {
                 target 44px en el componente (D4). */}
             <div className="flex items-center gap-3 pt-2">
               <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55">
-                <T es="Síguenos" en="Follow" />
+                <T locale={locale} es="Síguenos" en="Follow" />
               </span>
               <InstagramLink tone="dark" />
               <PinterestLink tone="dark" />
@@ -107,10 +117,11 @@ export default function HomePage() {
       <section className="border-y-2 border-text/15 py-16 md:py-24">
         <div className="space-y-4">
           <Eyebrow>
-            <T es="El alcance" en="The scope" />
+            <T locale={locale} es="El alcance" en="The scope" />
           </Eyebrow>
           <h2 className="max-w-3xl font-display text-2xl font-medium leading-snug text-text md:text-3xl">
             <T
+              locale={locale}
               es="No es teoría — es una colección documentada de evidencia."
               en="It's not theory — it's a documented evidence collection."
             />
@@ -118,6 +129,7 @@ export default function HomePage() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
           <BigStat
+            locale={locale}
             number={STATS.cases}
             es={{
               label: "Casos institucionales",
@@ -129,6 +141,7 @@ export default function HomePage() {
             }}
           />
           <BigStat
+            locale={locale}
             number={STATS.years}
             es={{
               label: "Años de fenómeno",
@@ -140,6 +153,7 @@ export default function HomePage() {
             }}
           />
           <BigStat
+            locale={locale}
             number={STATS.countries}
             es={{
               label: "Países con registros",
@@ -154,6 +168,7 @@ export default function HomePage() {
         <div className="mt-12 flex flex-wrap gap-4">
           <Cta href="/atlas" variant="secondary">
             <T
+              locale={locale}
               es={`Ver el mapa global · ${STATS.countries} países →`}
               en={`See the global map · ${STATS.countries} countries →`}
             />
@@ -167,12 +182,14 @@ export default function HomePage() {
           <div className="space-y-6">
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
               <T
+                locale={locale}
                 es={`La respuesta del corpus — en una frase y en números`}
                 en={`The corpus answer — in one sentence and in numbers`}
               />
             </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
               <T
+                locale={locale}
                 es={
                   <>
                     Los UAP{" "}
@@ -199,6 +216,7 @@ export default function HomePage() {
             </h2>
             <p className="max-w-prose text-lg leading-relaxed text-bg/80">
               <T
+                locale={locale}
                 es={`La mayoría apunta a programas militares clasificados — lo sabemos desde el U-2 (1950s) y el F-117 (1980s). Una porción no menor involucra entidades no humanas que aún no sabemos categorizar. Algunos pueden ser fenómenos naturales raros (plasma, sprites), aunque la evidencia multi-sensora militar excluye esa lectura en la mayoría de los casos Tier S. Las identificaciones equivocadas se filtran antes — quedan los ${STATS.cases} casos que las superaron.`}
                 en={`Most point to classified military programs — we've known since the U-2 (1950s) and the F-117 (1980s). A non-trivial portion involves non-human entities we don't yet know how to categorize. Some may be rare natural phenomena (plasma, sprites), though multi-sensor military evidence rules that out for most Tier S cases. Misidentifications get filtered out first — what remains are the ${STATS.cases} cases that survived that culling.`}
               />
@@ -206,7 +224,7 @@ export default function HomePage() {
           </div>
 
           {/* PB-1 · el foco del sitio: la respuesta en números, no solo detrás de un CTA */}
-          <HypothesesSnapshot />
+          <HypothesesSnapshot locale={locale} />
 
           <div className="flex flex-wrap items-center gap-4">
             <Cta
@@ -216,6 +234,7 @@ export default function HomePage() {
               className="whitespace-nowrap"
             >
               <T
+                locale={locale}
                 es="Cómo se reparte el corpus entre explicaciones →"
                 en="How the corpus splits among the explanations →"
               />
@@ -229,12 +248,14 @@ export default function HomePage() {
           <div className="space-y-6">
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
               <T
+                locale={locale}
                 es="Distribución temporal"
                 en="Temporal distribution"
               />
             </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl">
               <T
+                locale={locale}
                 es={
                   <>
                     Los reportes no se distribuyen al azar.
@@ -253,6 +274,7 @@ export default function HomePage() {
             </h2>
             <p className="max-w-3xl text-base leading-snug text-bg/80 md:text-lg">
               <T
+                locale={locale}
                 es={
                   <>
                     <strong className="text-accent-bright">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent-bright">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent-bright">2004</strong> Nimitz — primer video oficial ATFLIR · <strong className="text-accent-bright">2026</strong> PURSUE — primera divulgación presidencial. Cada pico es un momento donde una institución no pudo seguir negando.
@@ -269,6 +291,7 @@ export default function HomePage() {
           <TimelineByYear />
           <Cta href="/cases" variant="secondary" onDark>
             <T
+              locale={locale}
               es={`Caminar los ${STATS.cases} casos en orden cronológico →`}
               en={`Walk the ${STATS.cases} cases chronologically →`}
             />
@@ -284,10 +307,12 @@ function BigStat({
   number,
   es,
   en,
+  locale,
 }: {
   number: number;
   es: { label: string; sub: string };
   en: { label: string; sub: string };
+  locale: "es" | "en";
 }) {
   return (
     <div className="space-y-3">
@@ -296,10 +321,10 @@ function BigStat({
       </DisplayNumber>
       <div className="space-y-1 border-t border-text/20 pt-2">
         <p className="text-lg font-semibold text-text">
-          <T es={es.label} en={en.label} />
+          <T locale={locale} es={es.label} en={en.label} />
         </p>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          <T es={es.sub} en={en.sub} />
+          <T locale={locale} es={es.sub} en={en.sub} />
         </p>
       </div>
     </div>

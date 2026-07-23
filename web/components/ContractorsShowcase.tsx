@@ -17,7 +17,7 @@ const CONTRACTOR_IDS = [
   "battelle-special-report-1952",
 ];
 
-export function ContractorsShowcase() {
+export function ContractorsShowcase({ locale }: { locale: "es" | "en" }) {
   const contractors = CONTRACTOR_IDS.map((id) => getCase(id)).filter(
     (c): c is NonNullable<ReturnType<typeof getCase>> => Boolean(c),
   );
@@ -29,12 +29,14 @@ export function ContractorsShowcase() {
         <T
           es={`Contratistas del fenómeno (${contractors.length})`}
           en={`Contractors of the phenomenon (${contractors.length})`}
+          locale={locale}
         />
       </h2>
       <p className="max-w-3xl text-xs text-muted">
         <T
           es="La capa menos visible: empresas e institutos privados (FFRDCs, contratistas de la DIA, institutos de análisis) que el Estado usó para estudiar, analizar o archivar material UAP. Cada uno, con su persona del roster cuando existe."
           en="The least visible layer: private firms and institutes (FFRDCs, DIA contractors, analysis institutes) the state used to study, analyze or archive UAP material. Each one, with its roster person where one exists."
+          locale={locale}
         />
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -50,7 +52,7 @@ export function ContractorsShowcase() {
                 <h3 className="text-sm font-medium text-text">{c.name}</h3>
               </div>
               <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
-                <T es={c.country_name} en={countryEn(c.country_name)} /> ·{" "}
+                <T es={c.country_name} en={countryEn(c.country_name)} locale={locale} /> ·{" "}
                 {c.year_start}
               </p>
               {people.length > 0 && (
