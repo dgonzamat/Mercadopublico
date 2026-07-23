@@ -28,6 +28,10 @@ type Row = {
 };
 
 export default function CoberturaPage() {
+  return <CoberturaView locale="en" />;
+}
+
+export function CoberturaView({ locale }: { locale: "es" | "en" }) {
   // Agrega por código de país (coincide con STATS.countries); el label toma el
   // primer segmento del country_name (antes de " · ") para limpiar sufijos.
   const map = new Map<string, Row>();
@@ -61,16 +65,18 @@ export default function CoberturaPage() {
     <div className="space-y-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="Cobertura · país × década" en="Coverage · country × decade" />
+          <T es="Cobertura · país × década" en="Coverage · country × decade" locale={locale} />
         </Eyebrow>
         <H1>
           <T
             es={`${STATS.countries} países a lo largo de ${STATS.years} años`}
             en={`${STATS.countries} countries across ${STATS.years} years`}
+            locale={locale}
           />
         </H1>
         <Lede className="text-muted">
           <T
+            locale={locale}
             es={`Dónde el corpus de ${STATS.cases} casos es denso y dónde está flaco. ${singletons} países aparecen con un solo caso — la cola larga marca la próxima deuda de contenido.`}
             en={`Where the ${STATS.cases}-case corpus is dense and where it is thin. ${singletons} countries appear with a single case — the long tail marks the next content backlog.`}
           />
@@ -82,7 +88,7 @@ export default function CoberturaPage() {
           <thead>
             <tr className="border-b border-border">
               <th className="sticky left-0 bg-bg px-2 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted">
-                <T es="País" en="Country" />
+                <T es="País" en="Country" locale={locale} />
               </th>
               {COLS.map((d) => (
                 <th key={d} className="px-2 py-2 text-center font-mono text-[10px] text-muted">
@@ -90,7 +96,7 @@ export default function CoberturaPage() {
                 </th>
               ))}
               <th className="px-2 py-2 text-center font-mono text-[10px] uppercase tracking-widest text-muted">
-                <T es="Total" en="Total" />
+                <T es="Total" en="Total" locale={locale} />
               </th>
             </tr>
           </thead>
@@ -125,7 +131,7 @@ export default function CoberturaPage() {
           <tfoot>
             <tr className="border-t-2 border-border">
               <th className="sticky left-0 bg-bg px-2 py-2 text-left font-mono text-[10px] uppercase tracking-widest text-muted">
-                <T es="Total" en="Total" />
+                <T es="Total" en="Total" locale={locale} />
               </th>
               {COLS.map((d) => (
                 <td key={d} className="px-2 py-2 text-center font-mono text-xs tabular-nums text-muted">
@@ -142,6 +148,7 @@ export default function CoberturaPage() {
 
       <p className="font-mono text-[10px] text-muted">
         <T
+          locale={locale}
           es="Intensidad del color ∝ nº de casos en esa celda. Casos-documento incluidos; agrupados por país y década de inicio."
           en="Color intensity ∝ number of cases in that cell. Document cases included; grouped by country and start decade."
         />

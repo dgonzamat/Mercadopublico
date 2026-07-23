@@ -1,4 +1,4 @@
-import ResearchersPage from "@/app/researchers/page";
+import { ResearchersView } from "@/app/researchers/page";
 import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/researchers/",
 });
 
-export default ResearchersPage;
+export default function EsResearchersPage() {
+  return <ResearchersView locale="es" />;
+}

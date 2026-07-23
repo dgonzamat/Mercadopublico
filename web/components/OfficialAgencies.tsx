@@ -18,7 +18,7 @@ const AGENCY_IDS = [
   "ciae-cefae-2011",
 ];
 
-export function OfficialAgencies() {
+export function OfficialAgencies({ locale }: { locale: "es" | "en" }) {
   const agencies = AGENCY_IDS.map((id) => getCase(id)).filter(
     (c): c is NonNullable<ReturnType<typeof getCase>> => Boolean(c),
   );
@@ -30,12 +30,14 @@ export function OfficialAgencies() {
         <T
           es={`Agencias oficiales del fenómeno (${agencies.length})`}
           en={`Official agencies for the phenomenon (${agencies.length})`}
+          locale={locale}
         />
       </h2>
       <p className="max-w-3xl text-xs text-muted">
         <T
           es="Los pocos Estados que crearon una oficina pública para recibir, investigar y archivar reportes. Cada una, con su director en el roster."
           en="The few states that created a public office to receive, investigate and archive reports. Each one, with its director in the roster."
+          locale={locale}
         />
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -51,7 +53,7 @@ export function OfficialAgencies() {
                 <h3 className="text-sm font-medium text-text">{a.name}</h3>
               </div>
               <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
-                <T es={a.country_name} en={countryEn(a.country_name)} /> ·{" "}
+                <T es={a.country_name} en={countryEn(a.country_name)} locale={locale} /> ·{" "}
                 {a.year_start}
               </p>
               {dirs.length > 0 && (

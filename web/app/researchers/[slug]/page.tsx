@@ -36,13 +36,15 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   };
 }
 
-export default async function ResearcherDetailPage(
-  props: {
-    params: Promise<{ slug: string }>;
-  }
-) {
-  const params = await props.params;
-  const r = researchers.find((x) => x.id === params.slug);
+export async function ResearcherDetailPage({
+  params,
+  locale = "en",
+}: {
+  params: Promise<{ slug: string }>;
+  locale?: "es" | "en";
+}) {
+  const { slug } = await params;
+  const r = researchers.find((x) => x.id === slug);
   if (!r) notFound();
 
   const fw = r.framework ? getFramework(r.framework) : undefined;
@@ -82,8 +84,9 @@ export default async function ResearcherDetailPage(
             { href: "/researchers", es: "Actores", en: "Actors" },
             { es: r.name, en: r.name },
           ]}
+          locale={locale}
         />
-        <ShareButton title={r.name} />
+        <ShareButton title={r.name} locale={locale} />
       </div>
 
       {/* Zone A — Identification · U-2 esquinas vivas (era rounded-lg) */}
@@ -92,28 +95,28 @@ export default async function ResearcherDetailPage(
           <ResearcherAvatar researcher={r} size="lg" />
           <div className="space-y-4">
             <Eyebrow>
-              <T es="Sección" en="Section" /> {r.section} ·{" "}
-              <T es={r.section_label} en={r.section_label_en} />
+              <T es="Sección" en="Section" locale={locale} /> {r.section} ·{" "}
+              <T es={r.section_label} en={r.section_label_en} locale={locale} />
               {lifespan ? ` · ${lifespan}` : ""}
             </Eyebrow>
             <H1>{r.name}</H1>
             {fw && (
               <p className="text-sm text-text">
                 <span className="text-muted">
-                  <T es="Marco teórico principal:" en="Primary framework:" />
+                  <T es="Marco teórico principal:" en="Primary framework:" locale={locale} />
                 </span>{" "}
                 <LocaleLink
                   href={`/frameworks/#${fw.id}`}
                   className="text-accent hover:underline"
                 >
-                  <T es={fw.name} en={fw.name_en} />
+                  <T es={fw.name} en={fw.name_en} locale={locale} />
                 </LocaleLink>
               </p>
             )}
           </div>
         </div>
         <Caption className="mt-4 border-t border-border pt-4">
-          <T es={r.credentials} en={r.credentials_en} />
+          <T es={r.credentials} en={r.credentials_en} locale={locale} />
         </Caption>
         {r.photo && (r.photo_credit || r.photo_license) && (
           <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
@@ -126,26 +129,19 @@ export default async function ResearcherDetailPage(
           el bio_short de una línea. */}
       <section className="space-y-3">
         <Eyebrow>
-          <T es="Biografía" en="Biography" />
+          <T es="Biografía" en="Biography" locale={locale} />
         </Eyebrow>
         {r.bio ? (
-          <div className="space-y-5">
-            <div lang="es" data-lang="es" className="space-y-5">
-              {r.bio.split("\n\n").map((para, i) => (
+          <div lang={locale} className="space-y-5">
+            {(locale === "es" ? r.bio : r.bio_en ?? r.bio)
+              .split("\n\n")
+              .map((para, i) => (
                 <Body key={i}>{para}</Body>
               ))}
-            </div>
-            {r.bio_en && (
-              <div lang="en" data-lang="en" className="space-y-5">
-                {r.bio_en.split("\n\n").map((para, i) => (
-                  <Body key={i}>{para}</Body>
-                ))}
-              </div>
-            )}
           </div>
         ) : (
           <Body>
-            <T es={r.bio_short} en={r.bio_short_en} />
+            <T es={r.bio_short} en={r.bio_short_en} locale={locale} />
           </Body>
         )}
       </section>
@@ -157,6 +153,7 @@ export default async function ResearcherDetailPage(
             <T
               es={`Por qué está acá · ${r.works.length} piezas`}
               en={`Why they're here · ${r.works.length} pieces`}
+              locale={locale}
             />
           </Eyebrow>
           <ol className="space-y-3">
@@ -171,7 +168,7 @@ export default async function ResearcherDetailPage(
                 <div className="space-y-1">
                   <p className="text-sm font-medium text-text">{w.title}</p>
                   <p className="text-xs text-muted">
-                    <T es={w.contribution} en={w.contribution_en} />
+                    <T es={w.contribution} en={w.contribution_en} locale={locale} />
                   </p>
                 </div>
               </li>
@@ -184,7 +181,7 @@ export default async function ResearcherDetailPage(
       {r.sources && r.sources.length > 0 && (
         <section className="space-y-3 border-t border-border pt-10">
           <Eyebrow>
-            <T es="Fuentes" en="Sources" />
+            <T es="Fuentes" en="Sources" locale={locale} />
           </Eyebrow>
           <ul className="space-y-2">
             {r.sources.map((s) => (
@@ -204,7 +201,7 @@ export default async function ResearcherDetailPage(
                 {(s.note || s.note_en) && (
                   <span className="text-muted">
                     {" — "}
-                    <T es={s.note ?? ""} en={s.note_en ?? s.note ?? ""} />
+                    <T es={s.note ?? ""} en={s.note_en ?? s.note ?? ""} locale={locale} />
                   </span>
                 )}
               </li>
@@ -219,11 +216,12 @@ export default async function ResearcherDetailPage(
             <T
               es={`Casos asociados (${relatedCases.length})`}
               en={`Associated cases (${relatedCases.length})`}
+              locale={locale}
             />
           </Eyebrow>
           <div>
             {relatedCases.map((c) => (
-              <CaseRow key={c.id} caseData={c} />
+              <CaseRow key={c.id} caseData={c} locale={locale} />
             ))}
           </div>
         </section>
@@ -232,6 +230,7 @@ export default async function ResearcherDetailPage(
           <T
             es="Aporta marco teórico / ontológico — sin caso puntual del corpus."
             en="Contributes a theoretical / ontological framework — no specific corpus case."
+            locale={locale}
           />
         </p>
       )}
@@ -240,6 +239,7 @@ export default async function ResearcherDetailPage(
         <T
           es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-E)."
           en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E)."
+          locale={locale}
         />
       </Caption>
 
@@ -265,7 +265,10 @@ export default async function ResearcherDetailPage(
               }
             : null
         }
+        locale={locale}
       />
     </article>
   );
 }
+
+export default ResearcherDetailPage;

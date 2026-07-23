@@ -20,10 +20,12 @@ export function PrevNext({
   label,
   prev,
   next,
+  locale,
 }: {
   label: string;
   prev: PrevNextItem | null;
   next: PrevNextItem | null;
+  locale: "es" | "en";
 }) {
   return (
     <nav
@@ -36,7 +38,7 @@ export function PrevNext({
           className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
         >
           <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-            <T es={prev.es} en={prev.en} />
+            <T es={prev.es} en={prev.en} locale={locale} />
           </span>
           <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
             {prev.title}
@@ -51,7 +53,7 @@ export function PrevNext({
           className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
         >
           <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
-            <T es={next.es} en={next.en} />
+            <T es={next.es} en={next.en} locale={locale} />
           </span>
           <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
             {next.title}

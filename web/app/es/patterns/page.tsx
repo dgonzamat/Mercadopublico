@@ -1,4 +1,4 @@
-import PatternsPage from "@/app/patterns/page";
+import { PatternsView } from "@/app/patterns/page";
 import { STATS } from "@/lib/siteStats";
 import { esMeta } from "@/lib/seo";
 
@@ -8,4 +8,8 @@ export const metadata = esMeta({
   enPath: "/patterns/",
 });
 
-export default PatternsPage;
+// El espejo /es reutiliza la vista raíz pero fija `locale="es"`, así el HTML de
+// /es/patterns lleva solo español (la raíz sirve solo inglés).
+export default function EsPatternsPage() {
+  return <PatternsView locale="es" />;
+}

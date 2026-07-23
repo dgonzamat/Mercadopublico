@@ -15,24 +15,31 @@ export function ShareButton({
   title,
   variant = "default",
   dark = false,
+  locale: localeProp,
 }: {
   title?: string;
   variant?: "default" | "icon";
   dark?: boolean;
+  /** Si la ruta sirve un idioma por URL, se fija aquí; el botón deja de
+   *  observar data-locale y renderiza solo ese idioma. Sin él (chrome
+   *  bilingüe) sigue observando el toggle. */
+  locale?: "es" | "en";
 }) {
   const [copied, setCopied] = useState(false);
   // X-3 · locale activo para los aria-label/title (atributos, no pueden usar <T>).
   // Antes estaban hard-codeados en español y el botón del header anunciaba
   // «Compartir» también en modo EN.
-  const [locale, setLocale] = useState<"es" | "en">("es");
+  const [observed, setObserved] = useState<"es" | "en">("es");
   useEffect(() => {
+    if (localeProp) return; // idioma fijado por la ruta → no observar
     const el = document.documentElement;
-    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
+    const read = () => setObserved((el.dataset.locale as "es" | "en") || "es");
     read();
     const obs = new MutationObserver(read);
     obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
     return () => obs.disconnect();
-  }, []);
+  }, [localeProp]);
+  const locale = localeProp ?? observed;
   const shareLabel = locale === "es" ? "Compartir" : "Share";
   const copiedLabel = locale === "es" ? "Link copiado" : "Link copied";
 
@@ -82,9 +89,9 @@ export function ShareButton({
     >
       <span aria-hidden>↗</span>
       {copied ? (
-        <T es="¡Link copiado!" en="Link copied!" />
+        <T es="¡Link copiado!" en="Link copied!" locale={localeProp} />
       ) : (
-        <T es="Compartir" en="Share" />
+        <T es="Compartir" en="Share" locale={localeProp} />
       )}
     </button>
   );

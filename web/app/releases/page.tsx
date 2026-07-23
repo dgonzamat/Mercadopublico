@@ -25,6 +25,10 @@ const LABELS: Record<number, { es: string; en: string }> = {
 };
 
 export default function ReleasesIndex() {
+  return <ReleasesView locale="en" />;
+}
+
+export function ReleasesView({ locale }: { locale: "es" | "en" }) {
   const releases = Array.from(
     new Set(cases.flatMap((c) => c.pursueReleases ?? [])),
   ).sort((a, b) => b - a); // más reciente primero
@@ -40,15 +44,16 @@ export default function ReleasesIndex() {
     <div className="space-y-8 py-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="Desclasificaciones · PURSUE / AARO" en="Declassifications · PURSUE / AARO" />
+          <T es="Desclasificaciones · PURSUE / AARO" en="Declassifications · PURSUE / AARO" locale={locale} />
         </Eyebrow>
         <H1>
-          <T es="Releases del PURSUE" en="PURSUE releases" />
+          <T es="Releases del PURSUE" en="PURSUE releases" locale={locale} />
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
             es="Cada entrega de archivos UAP desclasificados por el Department of War alimenta casos del corpus. Aquí se agrupa qué aportó cada release."
             en="Each drop of UAP files declassified by the Department of War feeds cases in the corpus. Here is what each release contributed."
+            locale={locale}
           />
         </Lede>
       </header>
@@ -69,7 +74,7 @@ export default function ReleasesIndex() {
               </span>
             </div>
             <p className="text-sm text-text">
-              <T es={LABELS[n]?.es ?? `Release ${pad(n)}`} en={LABELS[n]?.en ?? `Release ${pad(n)}`} />
+              <T es={LABELS[n]?.es ?? `Release ${pad(n)}`} en={LABELS[n]?.en ?? `Release ${pad(n)}`} locale={locale} />
             </p>
             <p className="font-mono text-xs text-muted">
               Tier S {t.S} · A {t.A} · B {t.B}
@@ -85,7 +90,7 @@ export default function ReleasesIndex() {
           rel="noopener noreferrer"
           className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
         >
-          <T es="Portal oficial (war.gov) ↗" en="Official portal (war.gov) ↗" />
+          <T es="Portal oficial (war.gov) ↗" en="Official portal (war.gov) ↗" locale={locale} />
         </a>
       </nav>
     </div>

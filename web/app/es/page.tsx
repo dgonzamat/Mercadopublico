@@ -1,4 +1,4 @@
-import HomePage from "@/app/page";
+import { HomeView } from "@/app/page";
 import { STATS } from "@/lib/siteStats";
 import { esMeta } from "@/lib/seo";
 
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/",
 });
 
-export default HomePage;
+export default function EsHomePage() {
+  return <HomeView locale="es" />;
+}

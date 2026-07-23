@@ -1,4 +1,4 @@
-import FrameworksPage from "@/app/frameworks/page";
+import { FrameworksView } from "@/app/frameworks/page";
 import { STATS } from "@/lib/siteStats";
 import { esMeta } from "@/lib/seo";
 
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/frameworks/",
 });
 
-export default FrameworksPage;
+export default function EsFrameworksPage() {
+  return <FrameworksView locale="es" />;
+}

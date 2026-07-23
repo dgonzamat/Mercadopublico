@@ -1,4 +1,5 @@
-import ResearcherDetailPage, {
+import {
+  ResearcherDetailPage,
   generateStaticParams,
 } from "@/app/researchers/[slug]/page";
 import { researchers } from "@/lib/data";
@@ -19,4 +20,8 @@ export async function generateMetadata(props: {
   });
 }
 
-export default ResearcherDetailPage;
+export default function EsResearcherDetailPage(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  return <ResearcherDetailPage params={props.params} locale="es" />;
+}

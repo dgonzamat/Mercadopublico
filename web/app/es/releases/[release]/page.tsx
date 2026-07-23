@@ -1,4 +1,5 @@
-import ReleaseDetailPage, {
+import {
+  ReleasePage,
   generateStaticParams,
 } from "@/app/releases/[release]/page";
 import { cases } from "@/lib/data";
@@ -22,4 +23,8 @@ export async function generateMetadata(props: {
   });
 }
 
-export default ReleaseDetailPage;
+export default function EsReleaseDetailPage(props: {
+  params: Promise<{ release: string }>;
+}) {
+  return <ReleasePage params={props.params} locale="es" />;
+}

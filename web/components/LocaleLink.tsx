@@ -31,6 +31,25 @@ function topSegment(href: string): string {
 }
 
 /**
+ * URL de la MISMA página en el otro idioma, o `null` si la ruta no tiene espejo.
+ * Root ↔ /es solo para las secciones en MIRRORED (las que sirven un idioma por
+ * URL). Las rutas sin espejo (atlas, contact, …) devuelven null → el toggle cae
+ * al flip-CSS legacy (siguen siendo bilingües en una sola URL). Pura, testeable.
+ */
+export function mirrorHref(pathname: string | null): string | null {
+  if (!pathname) return null;
+  const onEs = pathname === "/es" || pathname.startsWith("/es/");
+  if (onEs) {
+    // /es/… → raíz inglesa; /es → /
+    const rest = pathname.slice(3); // "/es/patterns" → "/patterns", "/es" → ""
+    return rest === "" ? "/" : rest;
+  }
+  // raíz → /es solo si la sección tiene espejo
+  if (!MIRRORED.has(topSegment(pathname))) return null;
+  return pathname === "/" ? "/es" : `/es${pathname}`;
+}
+
+/**
  * Devuelve el href apropiado para el locale actual: si estamos en /en/ y el
  * destino es una ruta interna con espejo inglés, lo prefija con /en; en
  * cualquier otro caso lo deja igual. Puro (testeable), sin hooks.

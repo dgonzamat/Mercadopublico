@@ -20,26 +20,31 @@ export const metadata = {
 };
 
 export default function BlogPage() {
+  return <BlogView locale="en" />;
+}
+
+export function BlogView({ locale }: { locale: "es" | "en" }) {
   return (
     <div className="space-y-12 py-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="El cuaderno" en="The notebook" />
+          <T es="El cuaderno" en="The notebook" locale={locale} />
         </Eyebrow>
         <H1>
-          <T es="Blog" en="Blog" />
+          <T es="Blog" en="Blog" locale={locale} />
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
             es="Notas de método, decisiones de análisis y avances del corpus. Cómo se construye este cuaderno, en voz alta."
             en="Method notes, analysis decisions and corpus progress. How this notebook gets built, out loud."
+            locale={locale}
           />
         </Lede>
         <a
           href="/feed.xml"
           className="inline-block font-mono text-xs uppercase tracking-widest text-muted underline-offset-4 hover:text-accent hover:underline"
         >
-          <T es="Suscribirse · RSS →" en="Subscribe · RSS →" />
+          <T es="Suscribirse · RSS →" en="Subscribe · RSS →" locale={locale} />
         </a>
       </header>
 
@@ -55,10 +60,10 @@ export default function BlogPage() {
                 {p.tags && p.tags.length > 0 && <span> · {p.tags.join(" · ")}</span>}
               </p>
               <h2 className="mt-2 font-display text-2xl font-medium leading-tight text-text group-hover:text-accent">
-                <T es={p.title} en={p.title_en ?? p.title} />
+                <T es={p.title} en={p.title_en ?? p.title} locale={locale} />
               </h2>
               <p className="mt-2 max-w-2xl text-sm text-muted">
-                <T es={p.summary} en={p.summary_en ?? p.summary} />
+                <T es={p.summary} en={p.summary_en ?? p.summary} locale={locale} />
               </p>
             </LocaleLink>
           </li>

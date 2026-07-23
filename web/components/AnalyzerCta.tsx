@@ -8,7 +8,7 @@ import { TOTAL_CASES } from "@/lib/data";
  * analista justo donde ya está mirando los datos. Evita depender del nav
  * global (que manda anónimos contra el muro de login sin contexto).
  */
-export function AnalyzerCta() {
+export function AnalyzerCta({ locale }: { locale: "es" | "en" }) {
   return (
     <Link
       href="/laboratorio"
@@ -16,13 +16,14 @@ export function AnalyzerCta() {
     >
       <div className="space-y-1">
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          <T es="Laboratorio · análisis interactivo" en="Data Lab · interactive analysis" />
+          <T es="Laboratorio · análisis interactivo" en="Data Lab · interactive analysis" locale={locale} />
         </p>
         <p className="font-display text-xl font-medium leading-tight text-text">
-          <T es="Analiza los datos a tu manera" en="Analyze the data your way" />
+          <T es="Analiza los datos a tu manera" en="Analyze the data your way" locale={locale} />
         </p>
         <p className="text-sm text-muted">
           <T
+            locale={locale}
             es={`Filtra, cruza y grafica los ${TOTAL_CASES} casos. Arma tu propio tablero con KPIs y guárdalo.`}
             en={`Filter, cross and chart all ${TOTAL_CASES} cases. Build your own dashboard with KPIs and save it.`}
           />

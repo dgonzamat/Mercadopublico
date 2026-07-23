@@ -28,20 +28,26 @@ const verdictLabel: Record<string, { es: string; en: string }> = {
 };
 
 export default function FrameworksPage() {
+  return <FrameworksView locale="en" />;
+}
+
+export function FrameworksView({ locale }: { locale: "es" | "en" }) {
   return (
     <div className="space-y-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="El debate · marcos en competencia" en="The debate · competing frameworks" />
+          <T es="El debate · marcos en competencia" en="The debate · competing frameworks" locale={locale} />
         </Eyebrow>
         <H1>
           <T
             es={`${STATS.frameworks} teorías serias en competencia`}
             en={`${STATS.frameworks} serious competing theories`}
+            locale={locale}
           />
         </H1>
         <Lede className="text-muted">
           <T
+            locale={locale}
             es={
               <>
                 {frameworks.length} marcos interpretativos serios en competencia.
@@ -69,13 +75,13 @@ export default function FrameworksPage() {
           <thead className="bg-panel">
             <tr>
               <th className="px-4 py-3 text-left font-medium text-muted">
-                <T es="Marco teórico" en="Framework" />
+                <T es="Marco teórico" en="Framework" locale={locale} />
               </th>
               <th className="px-4 py-3 text-left font-medium text-muted">
-                <T es="Autor principal" en="Main author" />
+                <T es="Autor principal" en="Main author" locale={locale} />
               </th>
               <th className="px-4 py-3 text-left font-medium text-muted">
-                <T es="Veredicto moral" en="Moral verdict" />
+                <T es="Veredicto moral" en="Moral verdict" locale={locale} />
               </th>
             </tr>
           </thead>
@@ -90,10 +96,10 @@ export default function FrameworksPage() {
               >
                 <td className="px-4 py-3">
                   <p className="font-medium text-text">
-                    <T es={f.name} en={f.name_en} />
+                    <T es={f.name} en={f.name_en} locale={locale} />
                   </p>
                   <p className="mt-1 text-xs text-muted">
-                    <T es={f.one_sentence_es} en={f.one_sentence_en} />
+                    <T es={f.one_sentence_es} en={f.one_sentence_en} locale={locale} />
                   </p>
                 </td>
                 <td className="px-4 py-3 text-xs text-muted">{f.author}</td>
@@ -104,6 +110,7 @@ export default function FrameworksPage() {
                     <T
                       es={verdictLabel[f.verdict_moral].es}
                       en={verdictLabel[f.verdict_moral].en}
+                      locale={locale}
                     />
                   </span>
                 </td>

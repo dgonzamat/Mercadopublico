@@ -1,4 +1,4 @@
-import AboutPage from "@/app/about/page";
+import { AboutView } from "@/app/about/page";
 import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/about/",
 });
 
-export default AboutPage;
+export default function EsAboutPage() {
+  return <AboutView locale="es" />;
+}

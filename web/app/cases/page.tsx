@@ -68,6 +68,10 @@ const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
 ];
 
 export default function CasesPage() {
+  return <CasesView locale="en" />;
+}
+
+export function CasesView({ locale }: { locale: "es" | "en" }) {
   // CA-1 · la promesa de la Home es «caminar en orden cronológico»:
   // eras ascendentes (1947 → 2026) y, dentro de cada una, por año.
   const eras = ERAS.map((era) => ({
@@ -148,39 +152,42 @@ export default function CasesPage() {
       />
       <header className="space-y-4">
         <Eyebrow>
-          <T es="El archivo · 1947–2026" en="The archive · 1947–2026" />
+          <T es="El archivo · 1947–2026" en="The archive · 1947–2026" locale={locale} />
         </Eyebrow>
         <H1>
           <T
             es={`Los ${TOTAL_CASES} que sobrevivieron`}
             en={`The ${TOTAL_CASES} that survived`}
+            locale={locale}
           />
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
             es="Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. De 1947 a 2026, era por era, en orden cronológico."
             en="Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From 1947 to 2026, era by era, in chronological order."
+            locale={locale}
           />
         </Lede>
       </header>
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
         <span className="font-mono uppercase tracking-widest text-muted/70">
-          <T es="Sin marca = documentado." en="No marker = documented." />
+          <T es="Sin marca = documentado." en="No marker = documented." locale={locale} />
         </span>
         <span className="inline-flex items-center gap-1.5">
-          <EpistemicBadge status="developing" compact />
-          <T es="reciente / en curso" en="recent / in progress" />
+          <EpistemicBadge status="developing" compact locale={locale} />
+          <T es="reciente / en curso" en="recent / in progress" locale={locale} />
         </span>
         <span className="inline-flex items-center gap-1.5">
-          <EpistemicBadge status="projected" compact />
-          <T es="proyectado / especulativo" en="projected / speculative" />
+          <EpistemicBadge status="projected" compact locale={locale} />
+          <T es="proyectado / especulativo" en="projected / speculative" locale={locale} />
         </span>
       </div>
 
-      <AnalyzerCta />
+      <AnalyzerCta locale={locale} />
 
       <CasesFilter
+        locale={locale}
         regionCounts={regionCounts}
         hypCounts={hypCounts}
         misidSubtypes={misidSubtypeOpts}
@@ -202,13 +209,13 @@ export default function CasesPage() {
             <span className="hidden w-10 text-right sm:inline">Nº</span>
             <span className="w-6" />
             <span>
-              <T es="Caso" en="Case" />
+              <T es="Caso" en="Case" locale={locale} />
             </span>
             <span className="hidden w-16 text-right sm:inline">
-              <T es="Año" en="Year" />
+              <T es="Año" en="Year" locale={locale} />
             </span>
             <span className="w-12 text-right">
-              <T es="Evid." en="Evid." />
+              <T es="Evid." en="Evid." locale={locale} />
             </span>
             <span className="w-12 text-right">%</span>
           </div>
@@ -225,12 +232,13 @@ export default function CasesPage() {
                     {era.start}–{era.end}
                   </span>{" "}
                   ·{" "}
-                  <T es={era.es} en={era.en} />{" "}
+                  <T es={era.es} en={era.en} locale={locale} />{" "}
                   <span className="text-muted">
                     ·{" "}
                     <T
                       es={`${eraCases.length} casos`}
                       en={`${eraCases.length} cases`}
+                      locale={locale}
                     />
                   </span>
                 </h2>
@@ -245,7 +253,7 @@ export default function CasesPage() {
                       data-tier={c.tier}
                       className="contents"
                     >
-                      <CaseRow caseData={c} />
+                      <CaseRow caseData={c} locale={locale} />
                     </div>
                   ))}
                 </div>
