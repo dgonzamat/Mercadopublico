@@ -9,7 +9,7 @@ import {
   useMap,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { casesClient as cases } from "@/lib/dataClient";
+import { atlasPoints as cases } from "@/lib/atlasData";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
 
@@ -158,7 +158,10 @@ export default function WorldMap({
         <MapContainer
           center={[20, 0]}
           zoom={2}
-          scrollWheelZoom
+          // scrollWheelZoom desactivado: con el mapa a ancho completo, el zoom
+          // por rueda "secuestraba" el scroll de la página al pasar por encima.
+          // El usuario hace zoom con los controles +/− o pinch en táctil.
+          scrollWheelZoom={false}
           // preferCanvas: renderiza los ~177 marcadores en un único canvas en
           // vez de un nodo SVG por marcador. Baja drásticamente el uso de
           // memoria/DOM y evita el crash del renderer en móviles con poca RAM.
