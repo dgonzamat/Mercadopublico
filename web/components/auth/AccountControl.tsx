@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { T } from "@/components/T";
+import { chromeLocale } from "@/components/LocaleLink";
 import { useAuth } from "./AuthProvider";
 
 /**
@@ -16,6 +18,7 @@ export function AccountControl({
   variant?: "header" | "drawer";
 }) {
   const { user, loading } = useAuth();
+  const locale = chromeLocale(usePathname());
 
   // Variante compacta para el top-bar del drawer móvil (junto a ES/EN · Cerrar).
   if (variant === "drawer") {
@@ -29,7 +32,7 @@ export function AccountControl({
           href="/acceso"
           className="inline-flex h-10 items-center px-1 font-mono text-xs uppercase tracking-widest text-bg/70 underline-offset-4 hover:text-bg hover:underline"
         >
-          <T es="Entrar" en="Sign in" />
+          <T es="Entrar" en="Sign in" locale={locale} />
         </Link>
       );
     }
@@ -42,7 +45,7 @@ export function AccountControl({
         >
           {(user.email ?? "?").slice(0, 1).toUpperCase()}
         </span>
-        <SignOutButton drawer />
+        <SignOutButton drawer locale={locale} />
       </span>
     );
   }
@@ -60,7 +63,7 @@ export function AccountControl({
   if (!user) {
     return (
       <Link href="/acceso" className={`${base} ${tone}`}>
-        <T es="Entrar" en="Sign in" />
+        <T es="Entrar" en="Sign in" locale={locale} />
       </Link>
     );
   }
@@ -76,12 +79,20 @@ export function AccountControl({
       >
         {(user.email ?? "?").slice(0, 1).toUpperCase()}
       </span>
-      <SignOutButton dark={dark} />
+      <SignOutButton dark={dark} locale={locale} />
     </span>
   );
 }
 
-function SignOutButton({ dark = false, drawer = false }: { dark?: boolean; drawer?: boolean }) {
+function SignOutButton({
+  dark = false,
+  drawer = false,
+  locale,
+}: {
+  dark?: boolean;
+  drawer?: boolean;
+  locale?: "es" | "en";
+}) {
   const { signOut } = useAuth();
   if (drawer) {
     return (
@@ -90,7 +101,7 @@ function SignOutButton({ dark = false, drawer = false }: { dark?: boolean; drawe
         onClick={() => signOut()}
         className="inline-flex h-10 items-center border-2 border-bg/40 px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
       >
-        <T es="Salir" en="Sign out" />
+        <T es="Salir" en="Sign out" locale={locale} />
       </button>
     );
   }
@@ -102,7 +113,7 @@ function SignOutButton({ dark = false, drawer = false }: { dark?: boolean; drawe
         dark ? "text-bg/70" : "text-muted"
       }`}
     >
-      <T es="Salir" en="Sign out" />
+      <T es="Salir" en="Sign out" locale={locale} />
     </button>
   );
 }
