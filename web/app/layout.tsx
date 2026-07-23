@@ -200,6 +200,7 @@ gtag('js',new Date());gtag('config','G-MZHZC5ZLY5');`,
                   <FooterLink href="/contact" es="Contacto" en="Contact" />
                   <FooterLink href="/visitantes" es="Visitantes" en="Visitors" />
                   <FooterLink href="/calidad" es="Calidad del corpus" en="Corpus quality" />
+                  <FooterLink href="/cobertura" es="Cobertura" en="Coverage" />
                   <FooterLink
                     href="/fuentes"
                     es="Fuentes (bibliografía)"
