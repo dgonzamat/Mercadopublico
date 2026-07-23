@@ -629,6 +629,33 @@ if (orphanPatterns.length > 0) {
   );
 }
 
+// ─── 9h-bis. RULE E30: conteo hardcodeado y drifteado en patterns.json (ERROR) ─
+//
+// El detalle de patrón (/patterns/[letter]) DERIVA y muestra el nº de casos
+// (`patternCases.length`). Si la descripción de un patrón también hornea un
+// "N casos"/"N cases", ese número driftea al crecer el corpus y contradice al
+// conteo derivado en la MISMA página — una mentira visible en un sitio que se
+// presenta como «corpus auditable» (pasó con 8b: "9 casos" vs 17 reales, jul
+// 2026). Es la regla «no hardcodear conteos, derivar» aplicada a la prosa de
+// patrones. ERROR: el número vive en los datos y el arreglo es trivial (quitarlo).
+const PATTERN_COUNT_RE = /(\d+)\s*(casos|cases)\b/i;
+for (const p of patternList) {
+  const id = p.id || p.slug;
+  if (!id) continue;
+  const derived = cases.filter((c) => (c.patterns || []).includes(id)).length;
+  for (const field of ["description", "description_en"]) {
+    const m = (p[field] || "").match(PATTERN_COUNT_RE);
+    if (m && Number(m[1]) !== derived) {
+      record(
+        "ERROR",
+        path.join(root, "data", "patterns.json"),
+        0,
+        `E30 conteo drifteado: patrón ${id} .${field} dice "${m[1]} ${m[2]}" pero ${derived} casos lo usan — quitar el conteo hardcodeado (el detalle ya lo deriva)`,
+      );
+    }
+  }
+}
+
 // ─── 9i. RULE E15: JSON-LD prohibido — @type "Event" (ERROR) ─────────────
 //
 // Anti-pattern documentado (CLAUDE.md): Google aplica el validador de eventos
