@@ -16,19 +16,29 @@ Corre cada sonda y compárala con la cifra que `CLAUDE.md` afirma a mano. Report
 
 | Afirmación en CLAUDE.md | Sonda de ground truth |
 |---|---|
-| Nº de casos (prosa, ej. "~316") | `ls web/data/cases/*.json \| wc -l` |
+| Nº de casos (prosa, ej. "~327") | `ls web/data/cases/*.json \| wc -l` |
 | "91 actores" / researchers | `node -e 'console.log(require("./web/data/researchers.json").length)'` |
-| "~39 client components (techo 45)" | `grep -rl '"use client"' web/components web/app \| wc -l` |
+| "~42 client components (techo 45)" | `grep -rl '"use client"' web/components web/app \| wc -l` |
 | "28/91 actores tienen foto" | `node -e 'const r=require("./web/data/researchers.json");console.log(r.filter(x=>x.photo).length+"/"+r.length)'` |
 | "11 frameworks" | `node -e 'console.log(require("./web/data/frameworks.json").length)'` |
 | "19 patrones" | `node -e 'console.log(require("./web/data/patterns.json").length)'` |
 | Tiers S/A/B (subconjuntos citados en E21 y prosa) | `node -e 'const fs=require("fs"),d="web/data/cases",t={};fs.readdirSync(d).filter(f=>f.endsWith(".json")).forEach(f=>{const x=JSON.parse(fs.readFileSync(d+"/"+f));t[x.tier]=(t[x.tier]||0)+1});console.log(t)'` |
+| Tamaño de `cases.json` (ej. "~4 MB") | `node web/scripts/build-cases.mjs >/dev/null && du -h web/data/cases.json \| cut -f1` |
+| Versiones del stack (ej. "Next.js 16.2.9", "React 18.3.1") | `node -e 'const p=require("./web/package.json");console.log("next",p.dependencies.next,"\| react",p.dependencies.react)'` |
 
-Si aparecen cifras nuevas hardcodeadas en `CLAUDE.md` que no están en esta tabla, agrégalas mentalmente al chequeo y — si son estables — sugiere sumar su sonda a este mismo comando (el curador se mantiene a sí mismo).
+### 1b. Auto-descubrimiento (no confíes solo en la tabla fija)
+La tabla de arriba cubre los claims frecuentes, pero es una **lista fija** — un claim nuevo hardcodeado (un tamaño, una versión, un conteo de call-sites) driftea **invisible** si nadie lo añade. Lección real (jul 2026): `cases.json «~165KB»→4 MB` y `Next «14.2.35»→16.2.9` driftaron sin estar en la tabla y solo se cazaron grepeando a mano. Así que **barre TODO número/versión hardcodeado** y verifica cada uno, no solo los de la tabla:
+
+```
+grep -noE '~?[0-9][0-9.,]*[ ]?(casos|cases|actores|archivos|client|frameworks|patrones|KB|MB|GB|páginas|países|décadas|call-sites|usos|impresiones)|Next\.js [0-9.]+|React [0-9.]+|[0-9]+\.[0-9]+\.[0-9]+' CLAUDE.md
+```
+
+Cada línea que salga es un claim que **puede** driftear: contrástalo contra el repo vivo (si no está en la tabla, deriva su ground truth ad-hoc). Los que sean estables y recurrentes, súmalos como fila nueva a la tabla (el curador se mantiene a sí mismo).
 
 ### 2. Sondas de referencias muertas
 - Rutas/archivos citados en `CLAUDE.md` que ya no existen (`scripts/*.mjs`, `lib/*.ts`, componentes). Verifica con `ls`/Glob los paths mencionados.
 - Reglas de audit (E13, M1, etc.) que ya no aparecen en `audit-consistency.mjs` / `validate-schema.mjs`.
+- **Los propios skills** (`.claude/commands/*.md`): el curador solía auditar solo `CLAUDE.md`, pero los skills tienen sus propios números y paths que también se pudren (jul 2026: la tabla de este mismo comando citaba «~316»/«~39 client», ya rancios cuando el corpus era 327/42). Corre el barrido de 1b y la verificación de paths **también** sobre `.claude/commands/*.md`.
 
 ### 3. Pasada cualitativa
 Lee `CLAUDE.md` completo y marca:
