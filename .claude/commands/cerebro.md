@@ -49,6 +49,7 @@ grep -noE '~?[0-9][0-9.,]*[ ]?(casos|KB|MB|client|...)|Next\.js [0-9.]+|[0-9]+\.
 - **Cobertura**: huecos país×década / tier (del audit + `lib/regions.ts`).
 - **Demanda**: señales cacheadas en `CLAUDE.md` (GSC en vivo NO alcanzable — ver arriba).
 - **Profundidad**: casos de alto tráfico con prosa en el **piso** de E13 o desactualizados (candidatos a expansión, patrón malmstrom).
+- **Frescura (news-driven)**: el corpus va hasta 2026 pero el mundo sigue — un caso "completo" hoy puede tener un desarrollo nuevo (malmstrom ganó el WSJ 2025 del simulador EMP; Grusch el rebuttal de AARO). Corre `WebSearch` sobre los casos **Tier-S de más peso** buscando desarrollos documentados nuevos → expandir con la fuente primaria. Es la contraparte de descubrimiento del NEWS-SWEEP de `/proximo-caso`: aquel busca casos **nuevos** de frontera, este mantiene **frescos** los existentes. Misma disciplina: la noticia es pista, no fuente; ancla a primaria; institucional-only.
 - **SEO estructural**: leaks conocidos (un idioma por URL — cuerpos Y chrome ya resueltos, jul 2026; metadata sin par `_en`; structured data faltante).
 
 **Articular**: si el estado se lee mejor visual, orquesta `dataviz` (chart validado) y/o `artifact-design` (dashboard). Solo cuando el visual gana; si no, texto.
