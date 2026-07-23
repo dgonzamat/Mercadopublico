@@ -78,7 +78,7 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~326 a jul 2026; cifra viva = STATS.cases)
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~327 a jul 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
@@ -116,7 +116,7 @@ Para agregar un caso nuevo:
 2. Asignar `num` único secuencial.
 3. Build regenera el agregado.
 
-Esta separación existe porque `cases.json` monolítico (~165KB) excede el budget de tokens del MCP `create_or_update_file`. Mantener archivos individuales evita re-encontrarse con ese límite.
+Esta separación existe porque `cases.json` monolítico (~4 MB a jul 2026, con toda la prosa ES+EN; era ~165KB cuando se decidió el split) excede el budget de tokens del MCP `create_or_update_file`. Mantener archivos individuales evita re-encontrarse con ese límite.
 
 ## Schema UAPCase
 
