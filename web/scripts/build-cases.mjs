@@ -33,6 +33,24 @@ const clientOutFile = path.join(__dirname, "..", "data", "cases-client.json");
 fs.writeFileSync(clientOutFile, JSON.stringify(clientCases) + "\n");
 console.log(`build-cases: client bundle (no prose) → data/cases-client.json`);
 
+// Atlas bundle: SOLO los campos que el mapa (WorldMap, client) renderiza —
+// coords + un puñado de labels. cases-client.json sigue pesando ~1.5 MB porque
+// conserva summary/evidence/sources/posterior/name_en…, y el mapa no usa NADA
+// de eso: solo id (nav), name+country_name+year+tier+probability (tooltip/filtro)
+// y location (marcador). Esta proyección diminuta (~60 KB) es lo que
+// lib/atlasData.ts embarca a /atlas, en vez de arrastrar el corpus client entero.
+const ATLAS_FIELDS = ["id", "name", "tier", "country", "country_name", "year_start", "probability"];
+const atlasPoints = cases
+  .filter((c) => c.location && typeof c.location.lat === "number")
+  .map((c) => {
+    const p = { location: { lat: c.location.lat, lng: c.location.lng } };
+    for (const k of ATLAS_FIELDS) p[k] = c[k];
+    return p;
+  });
+const atlasOutFile = path.join(__dirname, "..", "data", "atlas-points.json");
+fs.writeFileSync(atlasOutFile, JSON.stringify(atlasPoints) + "\n");
+console.log(`build-cases: atlas points (${atlasPoints.length}) → data/atlas-points.json`);
+
 // Site stats: a tiny JSON of the aggregate corpus counts that lib/siteStats.ts
 // exposes as STATS. It exists so siteStats — which MobileNav (a CLIENT component
 // in the global layout) imports for a single number — does NOT pull the full

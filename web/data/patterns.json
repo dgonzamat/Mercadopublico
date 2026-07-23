@@ -13,8 +13,8 @@
         "letter": "b",
         "name": "Madre + sub-objetos",
         "name_en": "Mother + sub-objects",
-        "description": "Objeto grande emite/recibe objetos secundarios o se divide. 9 casos en 77 años.",
-        "description_en": "Large object emits/receives secondary objects or splits. 9 cases over 77 years.",
+        "description": "Objeto grande emite/recibe objetos secundarios o se divide.",
+        "description_en": "Large object emits/receives secondary objects or splits.",
         "color": "#ff8800"
     },
     {

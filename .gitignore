@@ -5,6 +5,7 @@ out
 data/cases.json
 data/cases-client.json
 data/site-stats.json
+data/atlas-points.json
 .env*.local
 .DS_Store
 *.tsbuildinfo
