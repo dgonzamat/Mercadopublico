@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { localizeHref } from "@/components/LocaleLink";
+import { localizeHref, chromeLocale } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { SiteSearch } from "@/components/SiteSearch";
 import { LocaleToggle } from "@/components/LocaleToggle";
@@ -66,6 +66,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
+  const tLocale = chromeLocale(pathname);
   const { user } = useAuth();
   // href efectivo según locale (en /en/ → /en/…); "activo" contra el localizado.
   const hrefFor = (href: string) => localizeHref(href, pathname);
@@ -125,9 +126,9 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
             Returns at sm+. */}
         <span className="hidden sm:inline">
           {open ? (
-            <T es="Cerrar" en="Close" />
+            <T es="Cerrar" en="Close" locale={tLocale} />
           ) : (
-            <T es="Menú" en="Menu" />
+            <T es="Menú" en="Menu" locale={tLocale} />
           )}
         </span>
       </button>

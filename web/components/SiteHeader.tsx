@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { T } from "@/components/T";
-import { localizeHref } from "@/components/LocaleLink";
+import { localizeHref, chromeLocale } from "@/components/LocaleLink";
 import { SiteSearch } from "@/components/SiteSearch";
 import { ShareButton } from "@/components/ShareButton";
 import { HeaderNav } from "@/components/HeaderNav";
@@ -23,6 +23,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
  */
 export function SiteHeader() {
   const pathname = usePathname();
+  const locale = chromeLocale(pathname);
   const { user } = useAuth();
   const isHome = pathname === "/";
   const [atTop, setAtTop] = useState(true);
@@ -88,7 +89,7 @@ export function SiteHeader() {
                 : "border-text hover:bg-text"
             }`}
           >
-            <T es="Ver probabilidades" en="See probabilities" />
+            <T es="Ver probabilidades" en="See probabilities" locale={locale} />
             <span aria-hidden>→</span>
           </Link>
           <AccountControl dark={dark} />

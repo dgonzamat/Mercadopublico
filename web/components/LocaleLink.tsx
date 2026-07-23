@@ -31,6 +31,24 @@ function topSegment(href: string): string {
 }
 
 /**
+ * Idioma que el CHROME (header/footer) debe renderizar en esta URL, para casar
+ * con el cuerpo:
+ *   · /es/…            → "es"
+ *   · raíz con espejo  → "en"  (esas páginas sirven solo inglés)
+ *   · sin espejo / SSR → undefined  → el chrome cae a bilingüe (los cuerpos de
+ *                        esas rutas también lo son, y el fallback de prerender
+ *                        sin pathname nunca filtra un idioma equivocado)
+ * `usePathname` SÍ resuelve la ruta en el prerender del static export (los
+ * LocaleLink del footer ya salen con /es incrustado), así que el HTML estático
+ * queda mono-idioma sin depender de la hidratación. Pura, testeable.
+ */
+export function chromeLocale(pathname: string | null): "es" | "en" | undefined {
+  if (!pathname) return undefined;
+  if (pathname === "/es" || pathname.startsWith("/es/")) return "es";
+  return mirrorHref(pathname) !== null ? "en" : undefined;
+}
+
+/**
  * URL de la MISMA página en el otro idioma, o `null` si la ruta no tiene espejo.
  * Root ↔ /es solo para las secciones en MIRRORED (las que sirven un idioma por
  * URL). Las rutas sin espejo (atlas, contact, …) devuelven null → el toggle cae

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { T } from "@/components/T";
-import { localizeHref } from "@/components/LocaleLink";
+import { localizeHref, chromeLocale } from "@/components/LocaleLink";
 import { useAuth } from "@/components/auth/AuthProvider";
 
 /**
@@ -29,6 +29,7 @@ const NAV: Array<{ href: string; es: string; en: string }> = [
 
 export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
   const pathname = usePathname();
+  const locale = chromeLocale(pathname);
   const { user } = useAuth();
   // El href efectivo depende del locale (en /en/ apunta a /en/…). El estado
   // "activo" se compara contra ese href localizado para resaltar bien en /en/.
@@ -54,7 +55,7 @@ export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
           aria-current={isActive(l.href) ? "page" : undefined}
           className={linkClass(isActive(l.href))}
         >
-          <T es={l.es} en={l.en} />
+          <T es={l.es} en={l.en} locale={locale} />
         </Link>
       ))}
 
@@ -70,7 +71,7 @@ export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
           }`}
         >
           <span aria-hidden>◆</span>
-          <T es="Laboratorio" en="Data Lab" />
+          <T es="Laboratorio" en="Data Lab" locale={locale} />
         </Link>
       )}
     </>
