@@ -68,5 +68,13 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMajestic%2012%20Part%201%20of%201%20(page%204%20crop).jpg"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.85,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0,
+    "indet": 0.12
+  }
 }

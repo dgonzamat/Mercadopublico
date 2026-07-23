@@ -70,5 +70,14 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAerial%20view%20of%20the%20Pentagon%20during%20rescue%20operations%20post-September%2011%20attack.JPEG"
     }
-  ]
+  ],
+  "posterior": {
+    "mundano_natural": 0.15,
+    "humana_clasificada": 0.15,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.15,
+    "nohumano_abierto": 0.1,
+    "indet": 0.45
+  },
+  "mundanoType": "misid"
 }

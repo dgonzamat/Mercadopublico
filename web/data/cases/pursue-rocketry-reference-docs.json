@@ -77,5 +77,14 @@
       "note": "Comunicado del primer release que agrupa estos materiales bajo la etiqueta UAP.",
       "note_en": "Statement of the first release grouping these materials under the UAP label."
     }
-  ]
+  ],
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.88,
+    "humana_clasificada": 0.02,
+    "adversaria": 0,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.1
+  }
 }
