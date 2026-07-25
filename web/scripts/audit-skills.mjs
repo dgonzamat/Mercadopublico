@@ -13,6 +13,11 @@
  * orquestador que delega en algo inexistente falla en ejecución, no en lectura,
  * y ahí ya es tarde.
  *
+ * X7/X8 cubren el CIERRE OBLIGATORIO: que el cerebro declare sus tres salidas
+ * (log, automejora, skill scan) y que `docs/cerebro-runs.jsonl` cumpla el
+ * contrato que el propio skill define — los campos se EXTRAEN de cerebro.md,
+ * no se hardcodean, para que doc y sonda no puedan divergir.
+ *
  * Node plano, sin dependencias — igual que el resto de sondas del repo, para
  * que corra en una sesión remota sin `node_modules`.
  *
@@ -204,6 +209,63 @@ if (src.length > BUDGET)
 else if (src.length > BUDGET * 0.95)
   record("WARN", "X6", `cerebro.md en ${src.length}/${BUDGET} chars — rozando el techo de contexto.`);
 
+// X7 · el CIERRE OBLIGATORIO existe y declara sus tres salidas. Es lo que
+// convierte una corrida en aprendizaje del loop en vez de en un PR suelto: sin
+// log no hay métrica de sí mismo, sin automejora el modo no evoluciona, sin
+// skill scan el inventario no crece.
+const cierre = src.match(/### CIERRE OBLIGATORIO[^\n]*\n([\s\S]*?)(?=\n---|\n## )/);
+if (!cierre) {
+  record("ERROR", "X7", "cerebro.md no tiene sección `### CIERRE OBLIGATORIO` → las corridas no dejan rastro obligatorio.");
+} else {
+  for (const [tag, re] of [
+    ["LOG", /\*\*1 · LOG\*\*/],
+    ["AUTOMEJORA", /\*\*2 · AUTOMEJORA\*\*/],
+    ["SKILL SCAN", /\*\*3 · SKILL SCAN\*\*/],
+  ]) {
+    if (!re.test(cierre[1]))
+      record("ERROR", "X7", `el CIERRE OBLIGATORIO no declara la salida **${tag}** → esa obligación se pierde.`);
+  }
+}
+
+// X8 · el log de corridas existe, parsea y cumple SU PROPIO contrato. Los
+// campos NO se hardcodean aquí: se extraen del bullet LOG de cerebro.md, para
+// que doc y sonda no puedan divergir — si mañana se añade un campo al skill, la
+// sonda lo exige sola. (Si se hardcodearan, la sonda quedaría verde sobre un
+// contrato que ya cambió, que es exactamente el falso verde que este repo
+// persigue.)
+const runsPath = path.join(repoRoot, "docs", "cerebro-runs.jsonl");
+const logBullet = cierre?.[1].match(/\*\*1 · LOG\*\*([\s\S]*?)(?=\n\n)/)?.[1] ?? "";
+const requiredFields = [...new Set(
+  [...logBullet.matchAll(/`([^`]+)`/g)].map((m) => m[1]).filter((t) => /^[a-zñ_]+$/.test(t)),
+)];
+
+if (!fs.existsSync(runsPath)) {
+  record("ERROR", "X8", "falta `docs/cerebro-runs.jsonl` → el cerebro exige log de corridas y no hay dónde escribirlo.");
+} else if (requiredFields.length < 8) {
+  record("WARN", "X8", `solo se extrajeron ${requiredFields.length} campos obligatorios del bullet LOG — cambió su formato y la sonda casi no está exigiendo nada.`);
+} else {
+  const lines = fs.readFileSync(runsPath, "utf-8").split("\n").filter((l) => l.trim());
+  if (lines.length === 0)
+    record("WARN", "X8", "`docs/cerebro-runs.jsonl` está vacío — ninguna corrida ha dejado rastro todavía.");
+  lines.forEach((line, i) => {
+    let entry;
+    try {
+      entry = JSON.parse(line);
+    } catch {
+      record("ERROR", "X8", `línea ${i + 1} de cerebro-runs.jsonl no es JSON válido.`);
+      return;
+    }
+    const missing = requiredFields.filter((f) => !(f in entry));
+    if (missing.length)
+      record("ERROR", "X8", `corrida ${entry.fecha ?? `línea ${i + 1}`} (${entry.modo ?? "?"}): faltan campos obligatorios: ${missing.join(", ")}.`);
+    // La tasa candidatos→verificados es la métrica del loop; si no cuadra, no
+    // mide nada. Un descarte no registrado es un candidato que se evapora.
+    const { candidatos: c, verificados: v, descartados: d } = entry;
+    if ([c, v, d].every((n) => typeof n === "number") && c !== v + d)
+      record("ERROR", "X8", `corrida ${entry.fecha}: candidatos=${c} ≠ verificados(${v}) + descartados(${d}) → la tasa del loop no cuadra.`);
+  });
+}
+
 // ── control negativo ──────────────────────────────────────────────────────
 if (process.argv.includes("--negative-control")) {
   const before = findings.length;
@@ -217,6 +279,14 @@ if (process.argv.includes("--negative-control")) {
     (a, m) => a + [...m.body.matchAll(/\*\*`(\/?[a-z][a-z0-9-]*)`\*\*/g)].length, 0);
   if (totalRefs < namedModes.length)
     record("ERROR", "NC", `el parser extrajo ${totalRefs} referencias a skills en ${modeSections.length} modos — sospechosamente pocas: probablemente los cuerpos salen vacíos y la sonda no está midiendo nada.`);
+  // Mismo modo de fallo para X8: si la extracción de campos sale vacía, cada
+  // entrada del log pasa trivialmente y el contrato queda sin exigir.
+  for (const must of ["candidatos", "verificados", "descartados", "automejora", "skill_scan"])
+    if (!requiredFields.includes(must))
+      record("ERROR", "NC", `X8 no extrajo el campo \`${must}\` del bullet LOG — está exigiendo un contrato incompleto.`);
+  // Y que sí detecte una entrada incompleta (control positivo del detector).
+  if (requiredFields.filter((f) => !(f in { fecha: 1 })).length === 0)
+    record("ERROR", "NC", "X8 considera completa una entrada con un solo campo — el detector de faltantes no discrimina.");
   console.log(
     findings.length === before
       ? "  control negativo: ✅ la sonda distingue skills reales de inventados"

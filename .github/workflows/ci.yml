@@ -66,8 +66,11 @@ jobs:
       # anuncie y delegue en skills que EXISTEN. Corre aparte del build porque
       # audita `.claude/`, no el corpus — pero bloquea el merge igual: un
       # orquestador que delega en algo inexistente falla en ejecución.
+      # `--negative-control` valida la SONDA además del contrato (invariante 4:
+      # auto-medido, no auto-afirmado). Sin él un parser roto reportaría verde
+      # sobre un archivo que ni parseó — ya pasó una vez.
       - name: Audit skills contract
-        run: node scripts/audit-skills.mjs
+        run: node scripts/audit-skills.mjs --negative-control
 
       - name: Validate (build-cases → audit → next build)
         run: npm run build
