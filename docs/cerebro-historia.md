@@ -29,3 +29,18 @@ podía comprobar barato**, y eso lo llevaba a elegir mal sin darse cuenta.
 
 En los cuatro casos el fallo fue invisible desde dentro: las sondas estaban en
 verde. Tres de los cuatro los detectó el usuario, no el loop.
+
+---
+
+## Anécdotas que fundaron reglas
+
+- **«Corpus maduro» sin sweep** (jul 2026) — se declaró el corpus saturado sin
+  correr el NEWS-SWEEP; un solo barrido destapó **Siria con 0 casos** y los
+  2010s como década moderna más delgada. De ahí que «agotada» exija evidencia
+  de la corrida en curso y no un recuerdo.
+- **Tres falsos verdes en dos corridas** — `tsc <archivos>` abortando con
+  `TS5112` sin parsear nada; su parche `--ignoreConfig` matando el alias `@/` y
+  con él el chequeo entre módulos; y un poll de CI por `curl` leyendo un JSON de
+  error como éxito. De ahí la regla cero.
+- **Tres guardrails a mano** (E31–E33) escritos dentro del cerebro sin invocar
+  `/blindar`, saltándose su gate doble. De ahí la delegación obligatoria.

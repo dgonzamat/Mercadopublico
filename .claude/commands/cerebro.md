@@ -1,6 +1,6 @@
 ---
-description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con MODOS que tú eliges — nunca corre solo. ÚSALO cuando pidan correr el cerebro, crear un caso nuevo, buscar bugs técnicos o de UI/UX, buscar mejoras de UI/UX o de código, refrescar casos existentes, revisar el estado del repo o decidir por dónde seguir, y también ante «analiza el repo», «qué falta», «dónde estamos» o «qué conviene hacer ahora» — aunque no nombren el cerebro. Modos: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | (sin argumento = diagnostica y pregunta). ORQUESTA, NO EJECUTA: cada modo es una cadena de skills; los del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación.
-argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura · sin argumento = diagnostica y pregunta]"
+description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con MODOS que tú eliges — nunca corre solo. ÚSALO cuando pidan correr el cerebro, crear un caso nuevo, buscar bugs técnicos o de UI/UX, buscar mejoras de UI/UX o de código, refrescar casos existentes, revisar el estado del repo o decidir por dónde seguir, y también ante «analiza el repo», «qué falta», «dónde estamos» o «qué conviene hacer ahora» — aunque no nombren el cerebro. Modos: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | (sin argumento = diagnostica, elige y gatilla). ORQUESTA, NO EJECUTA: cada modo es una cadena de skills; los del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación.
+argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura · sin argumento = diagnostica, elige y gatilla]"
 ---
 
 Estás ejecutando el **cerebro** del repo: un **despachador de modos** que orquesta skills — no ejecuta su trabajo. Corre solo cuando lo invocas, con el modo que le das.
@@ -45,13 +45,13 @@ Estos sí se invocan **solo cuando superan al enfoque plano** (Karpathy: simplic
 
 | Skill | Paso | Cuándo / para qué |
 |---|---|---|
-| **`run`** | M2 · M3 · VERIFY | Levanta la app del proyecto. **Es la llave de todo lo interactivo**: V4 documentó como limitación dura que sin `node_modules` no había forma de renderizar, y por eso el frontend se verificaba leyendo marcado. Existía un skill cuyo trabajo es exactamente ese y no se estaba usando. Encadenado `run` → `webapp-testing`, los modos de UI/UX pasan de inspección a observación. |
-| **`webapp-testing`** (Playwright) | M2 · M3 · VERIFY | Renderiza e **interactúa**: lo único que las sondas node-plano NO hacen («nunca renderizan un pixel»). Genera la señal de fricción real y asegura un cambio interactivo con aserciones de navegador. Requiere build → encadénalo tras **`run`**; si no hay build, cae al artefacto de `gh-pages`. |
-| **`security-review`** | M2 · bugs | Revisión de seguridad del diff. **El cerebro nunca la ha corrido**, sobre un repo que expone una anon key de Supabase y opera un gate de conteo con funciones `SECURITY DEFINER` en producción. Es la dimensión más grande sin cubrir. |
-| **`review`** | M2 · antes de mergear | Segunda mirada sobre el PR. Barato y complementario a las sondas, que solo ven lo que ya está mecanizado. |
+| **`run`** | M2 · M3 · VERIFY | Levanta la app. **Llave de todo lo interactivo**: sin build no hay render, y encadenado `run` → `webapp-testing` los modos de UI/UX pasan de inspeccionar marcado a observar el sitio. |
+| **`webapp-testing`** (Playwright) | M2 · M3 · VERIFY | Renderiza e **interactúa** — lo único que las sondas node-plano no hacen. Da la señal de fricción real y asegura cambios interactivos. Encadénalo tras **`run`**; sin build, cae a `gh-pages`. |
+| **`security-review`** | M2 · bugs | Revisión de seguridad del diff. Dimensión sin cubrir sobre un repo con anon key de Supabase y funciones `SECURITY DEFINER` en producción. |
+| **`review`** | M2 · antes de mergear | Segunda mirada sobre el PR; complementa a las sondas, que solo ven lo mecanizado. |
 | **`simplify`** | M4 · mejoras-tec | Reuso, simplificación, eficiencia. **No caza bugs por diseño** — por eso `mejoras-tec` es un modo aparte de `bugs`. |
-| **`skill-creator`** | RATCHET | **Disparador único: esta corrida editó un skill del loop** (`.claude/commands/*.md`). Evals + benchmark de varianza sobre el cambio, y afina el `description` para que dispare bien. Fuera de ese caso no lo llames: «¿funciona el cerebro?» en abstracto es n=1 y montar evals cuesta más de lo que informa. |
-| **`dataviz`** | M0 · M3 · articular | Cuando el estado se lee mejor en gráfico que en texto (partición MECE, matriz de cobertura país×década, backlog por tier): un chart validado clarifica la señal. Solo si el visual supera al texto. |
+| **`skill-creator`** | RATCHET | **Disparador único: la corrida editó un skill del loop.** Evals sobre el cambio y afina el `description`. Fuera de ahí no lo llames: «¿funciona el cerebro?» en abstracto es n=1. |
+| **`dataviz`** | M0 · M3 · articular | Cuando el estado se lee mejor en gráfico que en texto (MECE, cobertura país×década, backlog por tier). Solo si el visual gana. |
 | **`artifact-design`** | M0 · M3 · CAPTURE | Empaqueta el estado/análisis de impacto como artifact estilado (dashboard) cuando el output es para revisar/compartir, no un dump de terminal. |
 
 **Analítica externa (GSC/GA4)**: el conector Windsor está **gated por plan** (devuelve ceros) y la allowlist bloquea GSC/GA4 directo — comprobado. El proxy de demanda sigue siendo lo **cacheado** en `CLAUDE.md`; declara la incertidumbre, no finjas tráfico.
@@ -69,7 +69,7 @@ El cerebro **no decide solo cuándo correr ni sobre qué**. Se invoca con un mod
 | `mejoras-ux` | oportunidades de UI/UX | `run` → `webapp-testing` → `/innovar` · `dataviz`/`artifact-design` |
 | `mejoras-tec` | calidad de código | `simplify` · `/blindar` |
 | `frescura` | mantener vivos los casos | WebSearch + `gh-pages` → `/nuevo-caso` (disciplina) → `/learn` |
-| *(sin argumento)* | diagnóstico | sondas → propone modo → pregunta |
+| *(sin argumento)* | diagnóstico | sondas → elige modo → **lo gatilla** |
 
 **Toda cadena cierra igual**, sea cual sea el modo: **`/blindar`** si se abrió una clase enforzable, **`/learn`** para lecciones y descartes, **`/retro`** al cerrar.
 
@@ -165,17 +165,23 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 
 ---
 
-### M0 · sin argumento — diagnóstico
+### M0 · sin argumento — diagnostica, ELIGE y gatilla
 
-Corre el gate, lee las señales de impacto (cobertura, demanda cacheada, profundidad E13, frescura, SEO estructural), **propone el modo que más rinde y pregunta**. No ataca por su cuenta.
+Corre el gate, lee las señales de impacto (cobertura, demanda cacheada, profundidad E13, frescura, SEO estructural) y **elige el modo que más rinde, lo anuncia con su señal y lo GATILLA**.
+
+**No devuelvas la pregunta.** «¿Qué modo quieres?» traslada al usuario la decisión que el diagnóstico acaba de fundamentar: si mediste las señales, ya sabes cuál rinde más — decidir es el trabajo, no la consulta. Anuncia en una línea *qué* disparas y *por qué señal*, y encadena.
+
+El umbral de ACT sigue vigente para lo que toca contenido, copy, ≥5 archivos o borra — pero **elegir el modo NO es una de esas cosas**: es tu decisión, no suya.
 
 **Aquí —y SOLO aquí— vive la regla de precedencia**: existe para corregir el sesgo del cerebro a elegir lo que se comprueba barato. Cuando eliges tú el modo, sobra.
 
-En diagnóstico, entonces: si vas a proponer algo que no sea corpus, nombra la palanca superior que saltas y prueba **en esta corrida** que está agotada. «Agotada» para cobertura = `/proximo-caso` corrido, sin candidato anclable. Un recuerdo o un registro de otra corrida no cuentan: el sweep de jul 2026 destapó Siria con 0 casos justo después de que se declarara el corpus maduro sin haberlo corrido.
+En diagnóstico, entonces: si vas a proponer algo que no sea corpus, nombra la palanca superior que saltas y prueba **en esta corrida** que está agotada. «Agotada» para cobertura = `/proximo-caso` corrido, sin candidato anclable. Un recuerdo o un registro de otra corrida no cuentan.
 
-**Honestidad de la estimación**: la deuda la miden sondas (objetivo); el impacto necesita analítica externa que no alcanzas. Usa demanda cacheada + cobertura como proxy y **declara la incertidumbre**. «Corpus maduro» es una conclusión que se gana corriendo el sweep, nunca una premisa.
+**Honestidad**: la deuda la miden sondas; el impacto no —GSC no es alcanzable—, así que usa cobertura y demanda cacheada como proxy y **declara la incertidumbre**. «Corpus maduro» se gana corriendo el sweep, nunca se supone.
 
 **Meta-trabajo sobre el propio loop es OVERHEAD, no Impact** — admisible cuando desbloquea una palanca, pero nunca cuenta como el ataque de la corrida. Si no se tocó el corpus, dilo en el reporte.
+
+**Encadenamiento entre modos**: si un modo destapa trabajo de otro —`bugs` encuentra un hueco de cobertura, `frescura` revela un caso que hay que crear— anúncialo y encadena en la misma corrida. Devolver el hallazgo como sugerencia para después es perder el contexto que costó levantar.
 
 ---
 
@@ -223,7 +229,7 @@ Termina cuando el modo pedido está agotado y `err=0`. **Declara qué skills del
 ## Restricciones
 - No commitees/pushees salvo que el usuario lo pida — **excepción: en sesión remota/CI el harness asigna una branch `claude/<topic>` y manda commit + push + PR draft para toda implementación; ahí esa instrucción manda** (el contenedor es efímero: lo que no se pushea se pierde). Cumple el Branch protocol de `CLAUDE.md` (PR draft → ready → squash) y no mergees sin que el usuario lo pida.
 - Señales de deuda = node-plano sin red; `run` + `webapp-testing` corren local (sin salir a internet); las de contenido pueden usar red (Wikipedia/archive.org).
-- **El cerebro NO se autodispara.** No hay cron, hook ni cola que lo convoque: corre cuando lo invocas y con el modo que le das. La automatización del repo (`daily-audit`, `discover-cases`) produce insumos que los modos LEEN, nunca gatillos que disparen trabajo por su cuenta.
+- **El cerebro no se autoconvoca, pero sí se autodirige.** No hay cron, hook ni cola que lo lance: arranca cuando lo invocas. Pero una vez dentro **decide y ejecuta** — elige modo, lo gatilla y encadena a otro si el trabajo lo destapa. Lo que no hace es devolverte la pregunta que su propio diagnóstico ya respondió. La automatización del repo (`daily-audit`, `discover-cases`) produce insumos que los modos LEEN, nunca gatillos que disparen trabajo por su cuenta.
 - Un disparo, una señal — de deuda **o de impacto**. Sin señal, no es un disparo.
 - **DOS CLASES DE SKILL, DOS REGLAS OPUESTAS.** No mezclarlas era el agujero: una sola regla permisiva («invócalo solo si supera al enfoque plano») dejaba el juicio para el instante en que hacerlo a mano *siempre* parece más barato, así que se resolvía en «no delegues» casi siempre.
   - **Skills del loop** (`/proximo-caso`, `/nuevo-caso`, `/blindar`, `/curar-memoria`, `/learn`, `/retro`, `/innovar`): **delegación OBLIGATORIA**. Si la acción cae en su dominio, se invocan — el cerebro **no reimplementa** su trabajo. No es purismo: un skill que nunca se invoca nunca mejora, y el trabajo hecho a mano **se salta la disciplina que el skill codifica** (el gate doble de `/blindar`, la disciplina de fuentes de `/nuevo-caso`, la deduplicación de `/learn`). Es el mismo principio que el resto del doc: un output que nadie consume se pudre — y un skill que nadie invoca es exactamente eso.

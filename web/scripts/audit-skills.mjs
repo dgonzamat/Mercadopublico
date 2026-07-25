@@ -196,6 +196,8 @@ for (const s of loopSkills) {
 // progressive disclosure: la instrucción vive aquí, la arqueología en
 // `docs/cerebro-historia.md`. El techo existe para que el archivo no vuelva a
 // engordar con relato — cuando se roce, se extrae, no se sube el número.
+// Unidad: CARACTERES (`src.length`), no bytes. Con acentos y guiones largos
+// `wc -c` da ~2,5% más y confunde al comparar a ojo contra este número.
 const BUDGET = 23000;
 if (src.length > BUDGET)
   record("ERROR", "X6", `cerebro.md pesa ${src.length} chars (~${Math.round(src.length / 4)} tokens) y el techo es ${BUDGET}. Mueve narrativa a docs/cerebro-historia.md — NO subas el techo.`);
