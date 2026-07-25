@@ -204,7 +204,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
           {/* CA-2 · cabecera de columnas — una sola vez, estilo tabla editorial */}
           <div
             aria-hidden
-            className="grid grid-cols-[auto_auto_1fr_auto_auto_auto] items-center gap-4 border-b-2 border-text pb-2 font-mono text-[10px] uppercase tracking-widest text-muted"
+            className="grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 border-b-2 border-text pb-2 font-mono text-[10px] uppercase tracking-widest text-muted sm:grid-cols-[auto_auto_1fr_auto_auto_auto]"
           >
             <span className="hidden w-10 text-right sm:inline">Nº</span>
             <span className="w-6" />

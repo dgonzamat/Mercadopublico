@@ -19,7 +19,7 @@ export function CaseRow({
   return (
     <LocaleLink
       href={`/cases/${caseData.id}`}
-      className="group grid grid-cols-[auto_auto_1fr_auto_auto_auto] items-center gap-4 border-b border-border/50 py-3 transition hover:bg-panel/50"
+      className="group grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 border-b border-border/50 py-3 transition hover:bg-panel/50 sm:grid-cols-[auto_auto_1fr_auto_auto_auto]"
     >
       <span className="hidden w-10 text-right font-mono text-xs tabular-nums text-muted sm:inline">
         {String(caseData.num).padStart(2, "0")}
