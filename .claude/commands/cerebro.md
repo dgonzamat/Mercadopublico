@@ -3,10 +3,9 @@ description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con
 argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura · sin argumento = diagnostica y pregunta]"
 ---
 
-Estás ejecutando el **cerebro** del repo. Un error de la v1: su objetivo era *puramente defensivo* (minimizar deuda), así que su mejor caso era «nada que arreglar» — un conserje, no un arquitecto. **V2 lo corrigió: el cerebro ATACA impacto.** **V3 cierra dos huecos que se vieron en la práctica**: (a) verificaba frontend *a ojo* (grep + screenshots eyeball-eados), y (b) su propio impacto era *proxy no medido* («¿funciona el cerebro?» sin respuesta cuantitativa). V3 lo resuelve orquestando **skills de librería** en los pasos correctos. **V4 corrige a V3 con lo aprendido al ejecutarlo** (jul 2026): la verificación de navegador que V3 prescribía **no es ejecutable** en la sesión remota por defecto —arranca sin `node_modules`, así que no hay `out/` ni dev server—, y lo que sí funcionó fue mejor: leer el **artefacto desplegado en `gh-pages`**, que verifica lo que el sitio realmente sirve. Y apareció un hueco que V3 no veía: le exigía prueba al guardrail nuevo pero **no a la sonda que verifica**, y dos falsos verdes en una corrida (una que no chequeaba nada, otra que leía un error de API como éxito) pasaron por ahí. De ahí la **regla cero de VERIFY**. **V5 cierra el hueco que ninguna versión anterior vio**: el cerebro seguía eligiendo *qué* atacar por comodidad de verificación. Una sesión entera (jul 2026) produjo cinco PRs —cuatro de metadata y de sí mismo, **cero de corpus**— con todas las sondas en verde; el fallo lo detectó el usuario, no el loop. La causa es que un fix de metadata se comprueba en segundos y un caso nuevo exige investigar y escribir 1.500 palabras ancladas: esa asimetría **no dice nada sobre cuál importa más**. De ahí la **regla de precedencia** — el corpus manda, y saltárselo hay que justificarlo con evidencia de esta corrida. **V6 corrige lo que quedaba: el cerebro decía orquestar y en la práctica ejecutaba.** Una sola regla permisiva —«invoca un skill solo cuando supere al enfoque plano»— dejaba el juicio para el instante en que hacerlo a mano *siempre* parece más barato, así que se resolvía en «no delegues»: en una sesión se escribieron tres reglas de audit a mano sin `/blindar`, no se corrió `/learn` ni `/retro` con ~15 lecciones sobre la mesa, y se editó este archivo tres veces sin `skill-creator`. La corrección es **separar dos clases de skill con reglas opuestas** (arriba): los del loop se delegan siempre, los de librería siguen siendo opt-in.
+Estás ejecutando el **cerebro** del repo: un **despachador de modos** que orquesta skills — no ejecuta su trabajo. Corre solo cuando lo invocas, con el modo que le das.
 
-**V7 cambia la forma del cerebro: de corrida monolítica a DESPACHADOR DE MODOS.** Antes decidía solo qué atacar y por eso necesitaba la regla de precedencia para no derivar a lo barato; ahora **el modo lo eliges tú** —`caso-nuevo`, `bugs`, `mejoras-ux`, `mejoras-tec`, `frescura`— y la precedencia queda acotada al modo diagnóstico, que es el único donde el cerebro elige. Cada modo es una **cadena de skills explícita**, no una deliberación. El inventario de skills instalados reveló tres que nunca se habían usado y que cubren huecos reales: **`run`** (levanta la app — desbloquea `webapp-testing`, que V4 daba por inalcanzable sin `node_modules`), **`security-review`** (dimensión jamás mirada sobre un repo con anon key y funciones `SECURITY DEFINER` en producción) y **`simplify`** (calidad de código, que no caza bugs y por eso justifica su propio modo).
-
+*Por qué es así (V1→V7, los cuatro errores que lo formaron): [`docs/cerebro-historia.md`](../../docs/cerebro-historia.md). No hace falta leerlo para correr una corrida.*
 **Objetivo medible.**
 ```
 maximizar   Impact  −  λ·Deuda
@@ -34,7 +33,7 @@ El cerebro **orquesta, no ejecuta**. Si la acción cae en el dominio de uno de e
 | CAPTURE | apareció una lección o un descarte | **`/learn`** |
 | CAPTURE | cierre de corrida | **`/retro`** |
 
-**Incumplido tres veces en una sola sesión (jul 2026)**, que es lo que motivó volverlo obligatorio: E31, E32 y E33 se escribieron a mano dentro del cerebro sin invocar `/blindar` —saltándose su gate doble—; `/learn` y `/retro` no se corrieron pese a ~15 lecciones; y `cerebro.md` se editó tres veces sin llamar a `skill-creator`.
+*Se volvió obligatorio tras tres incumplimientos en una sola sesión (jul 2026 — detalle en la historia).*
 
 **Al cerrar, declara qué skills del loop invocaste y cuáles hiciste a mano.** Si hiciste el trabajo de uno sin invocarlo, dilo — es el único modo de que la violación sea visible.
 
@@ -72,6 +71,8 @@ El cerebro **no decide solo cuándo correr ni sobre qué**. Se invoca con un mod
 | `frescura` | mantener vivos los casos | WebSearch + `gh-pages` → `/nuevo-caso` (disciplina) → `/learn` |
 | *(sin argumento)* | diagnóstico | sondas → propone modo → pregunta |
 
+**Toda cadena cierra igual**, sea cual sea el modo: **`/blindar`** si se abrió una clase enforzable, **`/learn`** para lecciones y descartes, **`/retro`** al cerrar.
+
 ---
 
 ### Gate común a TODO modo
@@ -98,6 +99,7 @@ Antes de cualquier cosa, sea cual sea el modo:
 | Crear | **`/nuevo-caso`** | Schema `UAPCase`, `num` secuencial, `posterior` MECE=1, estándar E13 (~550 palabras ES+EN) y disciplina de fuentes primarias |
 | Descartes | **`/learn`** → [`docs/registros.md`](../../docs/registros.md) | Cada candidato rechazado, fechado y **con motivo** |
 | Cierre | **`/retro`** | Lo que no se capturó en caliente |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
 
 **Salida honesta posible: «no hay candidato anclable».** Con los descartes registrados, eso es un resultado, no un fracaso.
 
@@ -115,6 +117,7 @@ Ojo con el visual: si el caso nace sin `documents[]`/`primaryDocument` engorda e
 | Seguridad | **`security-review`** | Dimensión **nunca mirada** por el cerebro, sobre un repo con anon key de Supabase y funciones `SECURITY DEFINER` en producción |
 | Diff a mergear | **`review`** | Segunda mirada antes del merge |
 | Trinquete | **`/blindar`** | Si el defecto abre una clase enforzable |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
 
 Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo donde más falsos verdes han aparecido.
 
@@ -128,6 +131,7 @@ Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo do
 | Lo medible | `audit-design.mjs` | Contraste AA, touch targets, drift de color de tier |
 | Priorizar | **`/innovar`** acotado a UI/UX | Backlog por leverage, no lista de deseos |
 | Articular | **`dataviz`** / **`artifact-design`** | Solo si el visual gana al texto |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
 
 **Este modo necesita MÁS disciplina que los otros, no menos** — es el más fácil de llenar de trabajo inventado. La regla de oro se endurece aquí: **una mejora sin fricción observada es pulido, y el pulido no entra.** Antes de proponer una vista nueva, lista `app/*/page.tsx` y grepea `lib/`: casi se duplicó `/cobertura` por no hacerlo.
 
@@ -139,6 +143,7 @@ Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo do
 |---|---|---|
 | Simplificar | **`simplify`** | Reuso, eficiencia, limpieza de altitud. **Explícitamente NO caza bugs** — por eso es un modo distinto de `bugs` |
 | Trinquete | **`/blindar`** | Si la limpieza revela una clase enforzable |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
 
 Cuidado con el anti-pattern de bundle: al tocar imports, traza el grafo desde cada `"use client"` antes de concluir nada.
 
@@ -154,6 +159,7 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 | Contraste | `gh-pages` + el propio caso | ¿ya está cubierto? |
 | Aplicar | **`/nuevo-caso`** (su disciplina de fuentes) | Mismo anclaje a primaria |
 | Descartes | **`/learn`** → registros | Los ~14 de jul 2026 se habrían salvado |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
 
 **La noticia es pista, no fuente.** Ancla a primaria o descarta: en jul 2026, 14 de 19 leads no sobrevivieron —porcentajes de análisis químicos que nadie publicó, entrevistas «liberadas» ausentes de todo lote, una cita atribuida a AARO que contradice su línea—. Si el juicio del caso cambia, **mueve el `posterior`**: registrar evidencia nueva y no dejarla pesar es incoherente (pasó bien en `aguadilla-2013`).
 
@@ -163,7 +169,7 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 
 Corre el gate, lee las señales de impacto (cobertura, demanda cacheada, profundidad E13, frescura, SEO estructural), **propone el modo que más rinde y pregunta**. No ataca por su cuenta.
 
-**Aquí —y SOLO aquí— vive la regla de precedencia.** Existía para corregir *mi* sesgo al elegir qué atacar: el cerebro prefería lo que puede comprobar barato desde el sandbox (greps, metadata) sobre lo que crea valor, y una sesión entera produjo cinco PRs sin una línea de corpus. Cuando **tú** eliges el modo, esa corrección sobra — exigir en `bugs` que se pruebe antes que el contenido está agotado sería un obstáculo absurdo.
+**Aquí —y SOLO aquí— vive la regla de precedencia**: existe para corregir el sesgo del cerebro a elegir lo que se comprueba barato. Cuando eliges tú el modo, sobra.
 
 En diagnóstico, entonces: si vas a proponer algo que no sea corpus, nombra la palanca superior que saltas y prueba **en esta corrida** que está agotada. «Agotada» para cobertura = `/proximo-caso` corrido, sin candidato anclable. Un recuerdo o un registro de otra corrida no cuentan: el sweep de jul 2026 destapó Siria con 0 casos justo después de que se declarara el corpus maduro sin haberlo corrido.
 
@@ -180,7 +186,7 @@ Pide OK si el disparo (a) crea o reescribe **contenido**, (b) cambia **copy que 
 
 ### VERIFY
 
-**Regla cero — VALIDA LA SONDA ANTES DE CREERLE.** Toda sonda que uses debe pasar un **control negativo**: rompe a propósito lo que debería detectar y confirma que **dispara**. Si no dispara, no está midiendo — no importa cuán verde se vea. A cada guardrail nuevo se le exige el gate doble; **la herramienta de verificación merece la misma prueba**, y esa asimetría era el bug. Tres falsos verdes en dos corridas (jul 2026): (a) `tsc <archivos>` aborta con `TS5112` sin parsear nada cuando hay `tsconfig.json`; (b) el parche obvio, `--ignoreConfig`, **mata el alias `@/`** y con él todo el chequeo entre módulos — **usa `tsc -p tsconfig.json --noEmit`**, el único modo que resuelve los `paths`; (c) un poll de CI por `curl` a `api.github.com` devuelve un JSON de error (solo el MCP de GitHub llega) que se lee como «terminó».
+**Regla cero — VALIDA LA SONDA ANTES DE CREERLE.** Toda sonda que uses debe pasar un **control negativo**: rompe a propósito lo que debería detectar y confirma que **dispara**. Si no dispara, no está midiendo — no importa cuán verde se vea. A cada guardrail nuevo se le exige el gate doble; **la herramienta de verificación merece la misma prueba**, y esa asimetría era el bug. Recetas que ya costaron un falso verde cada una: **`tsc -p tsconfig.json --noEmit`** (por archivos aborta con `TS5112` sin parsear; `--ignoreConfig` mata el alias `@/` y con él todo el chequeo entre módulos); estado de CI por el **MCP de GitHub**, nunca `curl` (la API directa devuelve un JSON de error que se lee como éxito).
 
 **Corolario — revalida DESPUÉS de parchear la sonda.** El arreglo de un falso verde puede introducir otro distinto.
 

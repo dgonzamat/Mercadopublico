@@ -113,6 +113,14 @@ for (const mode of namedModes) {
       record("ERROR", T, `el modo \`${mode.name}\` delega en \`${ref}\`, que NO existe (ni comando del repo, ni skill de usuario, ni built-in declarado).`);
   }
 
+  // T-f · TODO modo cierra el loop. Antes esto variaba por modo —solo 1 de 5
+  // tenía `/learn`, 2 tenían `/blindar`, `mejoras-ux` ninguno— y un modo que
+  // no cierra deja el aprendizaje dentro de la sesión, que se acaba.
+  for (const must of ["/blindar", "/learn", "/retro"]) {
+    if (!mode.body.includes(must))
+      record("ERROR", T, `el modo \`${mode.name}\` no cierra con \`${must}\` → el trabajo se hace y el aprendizaje se pierde.`);
+  }
+
   // T-e · delegación real: al menos un skill del loop o de librería, no solo sondas.
   if (skillRefs.length > 0 && skillRefs.every((r) => !skillExists(r)))
     record("ERROR", T, `el modo \`${mode.name}\` no tiene ninguna delegación resoluble.`);
@@ -182,6 +190,17 @@ for (const s of loopSkills) {
   if (new RegExp(`\`/${s}\``).test(src) && !delegated.has(s))
     record("ERROR", "X4", `\`/${s}\` se nombra en cerebro.md pero NO está en la tabla de delegación obligatoria → sigue siendo opcional de facto.`);
 }
+
+// X6 · presupuesto de contexto. El skill se carga ENTERO cada vez que
+// dispara, así que cada línea se paga en todas las corridas. La disciplina es
+// progressive disclosure: la instrucción vive aquí, la arqueología en
+// `docs/cerebro-historia.md`. El techo existe para que el archivo no vuelva a
+// engordar con relato — cuando se roce, se extrae, no se sube el número.
+const BUDGET = 23000;
+if (src.length > BUDGET)
+  record("ERROR", "X6", `cerebro.md pesa ${src.length} chars (~${Math.round(src.length / 4)} tokens) y el techo es ${BUDGET}. Mueve narrativa a docs/cerebro-historia.md — NO subas el techo.`);
+else if (src.length > BUDGET * 0.95)
+  record("WARN", "X6", `cerebro.md en ${src.length}/${BUDGET} chars — rozando el techo de contexto.`);
 
 // ── control negativo ──────────────────────────────────────────────────────
 if (process.argv.includes("--negative-control")) {
