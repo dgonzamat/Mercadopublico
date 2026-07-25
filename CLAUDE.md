@@ -93,7 +93,21 @@ web/
     audit-design.mjs      # corre en prebuild; contraste WCAG AA + drift de color de tier + touch targets
     validate-schema.mjs   # corre en prebuild; valida schema de cases/researchers
     qa-screenshots.mjs    # sonda de QA VISUAL (on-demand: npm run qa:shots) — renderiza pixeles
+    audit-skills.mjs      # contrato de los skills del loop (corre en CI, no en prebuild)
+    lib/cerebro-contract.mjs  # parser único de cerebro.md — lo comparten la sonda y el panel
+tools/
+  cerebro-panel/          # panel de control del cerebro (fuera de web/, NO se despliega)
 ```
+
+### Panel de control del cerebro (`tools/cerebro-panel`)
+
+`node tools/cerebro-panel/server.mjs` → `http://127.0.0.1:4180`. UI **externa al sitio** (vive fuera de `web/`, no entra en el `output: export`) para **monitorear** el flujo del cerebro, **gatillar** sus modos y **mandar a corregir** lo que las sondas encuentran. Node plano, cero dependencias.
+
+Es un **servidor y no una página** porque disparar un trigger es `spawn('claude', ['-p', '/cerebro <modo>'])`, y eso necesita un proceso: una página estática —o un artifact— puede mostrar el log, pero no puede correr nada ni leer el repo. Corre en la máquina del dueño, junto al CLI.
+
+Tres cosas que NO reimplementa, y que son la razón de que exista `lib/cerebro-contract.mjs`: los **modos** salen del mismo parser que consume `audit-skills.mjs` (un segundo parser sería un segundo contrato — el panel ofrecería modos que la sonda no conoce); la **salud** sale de las cuatro sondas ejecutadas como subprocesos; y el panel **reconcilia** lo que logró extraer contra el `ERRORS: n  WARNS: n` que cada sonda declara, mostrando el desajuste en vez de callarlo. Esa última defensa nació de un falso verde propio: el parser inicial solo entendía el formato inline (`🔴 [X7] …`) y reportó «0 warns» sobre un `audit-consistency` que declaraba `WARNS: 1`, porque ahí el emoji va en la **cabecera** y los hallazgos en las líneas indentadas debajo. *(enforzado: `audit-skills.mjs` **X9**, ERROR si el panel deja de importar el contrato compartido o se escribe su propio regex de secciones.)*
+
+**Seguridad**: escucha solo en `127.0.0.1` (ejecuta `claude` con permisos de edición sobre el repo — exponerlo es dar una shell), `spawn` sin shell, y el modo se valida contra la lista derivada de `cerebro.md`. Los disparos usan `--permission-mode acceptEdits` por defecto —el panel existe para que el cerebro arregle, y `manual` colgaría cada corrida esperando una confirmación que nadie va a dar—; `CEREBRO_PANEL_PERMISSION_MODE=plan` para que solo planifique. El modo vigente se muestra en la cabecera siempre.
 
 ### Sonda de QA visual (`qa-screenshots.mjs` · `npm run qa:shots`)
 

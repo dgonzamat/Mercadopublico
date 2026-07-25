@@ -27,69 +27,22 @@
 
 import fs from "fs";
 import path from "path";
-import os from "os";
-
-const repoRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
-const commandsDir = path.join(repoRoot, ".claude", "commands");
-const cerebroPath = path.join(commandsDir, "cerebro.md");
-
-/**
- * Skills built-in del harness: no viven en disco, así que no se pueden
- * enumerar. La lista se declara aquí a propósito — si un built-in se renombra
- * o desaparece, el test T-d lo reporta como skill inexistente en vez de fallar
- * silenciosamente en ejecución. Mantenerla es el precio de poder verificarla.
- */
-const BUILTIN_SKILLS = new Set([
-  "run", "init", "review", "security-review", "simplify", "loop",
-  "dataviz", "artifact-design", "artifact-capabilities",
-  "update-config", "keybindings-help", "fewer-permission-prompts",
-  "claude-api", "session-start-hook", "skill-creator", "webapp-testing",
-]);
+import {
+  repoRoot, commandsDir, runsPath, readCerebro, skillInventory, frontmatter,
+  parseModes, parseModeTable, parseCierre, requiredLogFields,
+} from "./lib/cerebro-contract.mjs";
 
 const findings = [];
 const record = (level, test, msg) => findings.push({ level, test, msg });
 
-// ── inventario de skills disponibles ──────────────────────────────────────
-const repoCommands = new Set(
-  fs.readdirSync(commandsDir).filter((f) => f.endsWith(".md")).map((f) => f.slice(0, -3)),
-);
-const userSkillsDir = path.join(os.homedir(), ".claude", "skills");
-const userSkills = new Set(
-  fs.existsSync(userSkillsDir)
-    ? fs.readdirSync(userSkillsDir, { withFileTypes: true })
-        .filter((d) => d.isDirectory()).map((d) => d.name)
-    : [],
-);
-const skillExists = (name) => {
-  const clean = name.replace(/^\//, "");
-  return repoCommands.has(clean) || userSkills.has(clean) || BUILTIN_SKILLS.has(clean);
-};
+// El parser del contrato vive en `lib/cerebro-contract.mjs` y lo comparte el
+// panel de control (`tools/cerebro-panel`). Un segundo parser sería un segundo
+// contrato: el panel ofrecería modos que esta sonda no conoce.
+const { repoCommands, userSkills, exists: skillExists } = skillInventory();
 
-const src = fs.readFileSync(cerebroPath, "utf-8");
-const fm = src.match(/^---\n([\s\S]*?)\n---/);
-const description = (fm?.[1].match(/^description:\s*([\s\S]*?)(?=\nargument-hint:|$)/m)?.[1] ?? "").trim();
-const argHint = (fm?.[1].match(/^argument-hint:\s*(.*)$/m)?.[1] ?? "").trim();
-
-// Modos declarados como sección: "### M1 · `caso-nuevo` — ...".
-// El cuerpo se corta por índices, NO con un lookahead a `$`: con la flag /m
-// `$` casa el fin de CADA línea, así que un `[\s\S]*?` perezoso se detiene en
-// la primera y todos los cuerpos salen vacíos. Eso hizo que la sonda reportara
-// «ningún modo nombra skills» sobre un archivo donde todos lo hacen — siete
-// errores falsos en su primera corrida.
-const headingRe = /^### M(\d) · (?:`([a-z-]+)`|sin argumento)[^\n]*$/gm;
-const heads = [...src.matchAll(headingRe)].map((m) => ({
-  n: m[1],
-  name: m[2] ?? "sin argumento",
-  start: m.index + m[0].length,
-}));
-const nextSection = (from) => {
-  const m = /^#{2,3} /gm;
-  m.lastIndex = from;
-  const hit = m.exec(src);
-  return hit ? hit.index : src.length;
-};
-const modeSections = heads.map((h) => ({ ...h, body: src.slice(h.start, nextSection(h.start)) }));
-
+const src = readCerebro();
+const { description, argHint } = frontmatter(src);
+const modeSections = parseModes(src);
 const namedModes = modeSections.filter((m) => m.name !== "sin argumento");
 
 // ── UN TEST POR TRIGGER ───────────────────────────────────────────────────
@@ -134,13 +87,15 @@ for (const mode of namedModes) {
 // ── TRANSVERSALES ─────────────────────────────────────────────────────────
 
 // X1 · la tabla de modos y las secciones no divergen.
-const modeTable = src.match(/\| Modo \| Para qué \| Cadena de skills \|\n\|[-| ]+\|\n([\s\S]*?)\n\n/);
+const modeTable = parseModeTable(src);
 if (modeTable) {
-  const rows = [...modeTable[1].matchAll(/^\| `?([a-z-]+)`?[^|]*\|/gm)].map((m) => m[1]);
+  // Se compara contra TODAS las secciones, incluida M0 (`sin argumento`): el
+  // modo diagnóstico también puede quedar huérfano.
+  const rows = modeTable.rows.map((r) => r.name);
   for (const r of rows)
-    if (!namedModes.some((m) => m.name === r))
+    if (!modeSections.some((m) => m.name === r))
       record("ERROR", "X1", `\`${r}\` está en la tabla de modos pero no tiene sección \`### M<n>\`.`);
-  for (const m of namedModes)
+  for (const m of modeSections)
     if (!rows.includes(m.name))
       record("ERROR", "X1", `el modo \`${m.name}\` tiene sección pero falta en la tabla de modos.`);
 } else {
@@ -151,8 +106,7 @@ if (modeTable) {
 // distintas. La tabla es lo que se lee de un vistazo; si promete un skill que
 // la sección no usa (o al revés), el lector se orienta con información falsa.
 if (modeTable) {
-  for (const row of modeTable[1].split("\n")) {
-    const name = row.match(/^\| `?([a-z-]+)`?/)?.[1];
+  for (const { name, raw: row } of modeTable.rows) {
     const mode = namedModes.find((m) => m.name === name);
     if (!mode) continue;
     const inRow = new Set([...row.matchAll(/`(\/?[a-z][a-z0-9-]*)`/g)].map((m) => m[1]).filter((r) => r !== name && skillExists(r)));
@@ -213,7 +167,7 @@ else if (src.length > BUDGET * 0.95)
 // convierte una corrida en aprendizaje del loop en vez de en un PR suelto: sin
 // log no hay métrica de sí mismo, sin automejora el modo no evoluciona, sin
 // skill scan el inventario no crece.
-const cierre = src.match(/### CIERRE OBLIGATORIO[^\n]*\n([\s\S]*?)(?=\n---|\n## )/);
+const cierre = parseCierre(src);
 if (!cierre) {
   record("ERROR", "X7", "cerebro.md no tiene sección `### CIERRE OBLIGATORIO` → las corridas no dejan rastro obligatorio.");
 } else {
@@ -222,7 +176,7 @@ if (!cierre) {
     ["AUTOMEJORA", /\*\*2 · AUTOMEJORA\*\*/],
     ["SKILL SCAN", /\*\*3 · SKILL SCAN\*\*/],
   ]) {
-    if (!re.test(cierre[1]))
+    if (!re.test(cierre.body))
       record("ERROR", "X7", `el CIERRE OBLIGATORIO no declara la salida **${tag}** → esa obligación se pierde.`);
   }
 }
@@ -233,11 +187,7 @@ if (!cierre) {
 // sonda lo exige sola. (Si se hardcodearan, la sonda quedaría verde sobre un
 // contrato que ya cambió, que es exactamente el falso verde que este repo
 // persigue.)
-const runsPath = path.join(repoRoot, "docs", "cerebro-runs.jsonl");
-const logBullet = cierre?.[1].match(/\*\*1 · LOG\*\*([\s\S]*?)(?=\n\n)/)?.[1] ?? "";
-const requiredFields = [...new Set(
-  [...logBullet.matchAll(/`([^`]+)`/g)].map((m) => m[1]).filter((t) => /^[a-zñ_]+$/.test(t)),
-)];
+const requiredFields = requiredLogFields(src);
 
 if (!fs.existsSync(runsPath)) {
   record("ERROR", "X8", "falta `docs/cerebro-runs.jsonl` → el cerebro exige log de corridas y no hay dónde escribirlo.");
@@ -264,6 +214,19 @@ if (!fs.existsSync(runsPath)) {
     if ([c, v, d].every((n) => typeof n === "number") && c !== v + d)
       record("ERROR", "X8", `corrida ${entry.fecha}: candidatos=${c} ≠ verificados(${v}) + descartados(${d}) → la tasa del loop no cuadra.`);
   });
+}
+
+// X9 · el panel de control consume el contrato compartido, no uno propio.
+// `tools/cerebro-panel` ofrece botones por modo; si parseara `cerebro.md` por su
+// cuenta acabaría ofreciendo modos que esta sonda no conoce (o al revés) y nadie
+// se enteraría — la misma divergencia doc↔sonda que X8 existe para impedir.
+const panelPath = path.join(repoRoot, "tools", "cerebro-panel", "server.mjs");
+if (fs.existsSync(panelPath)) {
+  const panel = fs.readFileSync(panelPath, "utf-8");
+  if (!/from\s+["'].*lib\/cerebro-contract\.mjs["']/.test(panel))
+    record("ERROR", "X9", "el panel no importa `lib/cerebro-contract.mjs` → está leyendo el contrato por su cuenta.");
+  if (/### M\(\?:?\\d\)|### M\(\\d\)/.test(panel))
+    record("ERROR", "X9", "el panel tiene su propio regex de secciones `### M<n>` → segundo parser, segundo contrato.");
 }
 
 // ── control negativo ──────────────────────────────────────────────────────

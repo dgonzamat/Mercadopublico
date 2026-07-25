@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cerebro · panel de control</title>
+<style>
+  :root{
+    --bg:#f7f2e8; --panel:#ede6d4; --surface2:#dfd5be; --border:#c4b89d;
+    --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a;
+    --ok:#1e6b3a; --warn:#9c5a18; --err:#8b0000;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  h1,h2,h3{margin:0;font-weight:600}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace}
+  .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;
+    text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px 72px}
+
+  header{border-bottom:1px solid var(--border);background:var(--panel);
+    position:sticky;top:0;z-index:20}
+  .hdr{max-width:1140px;margin:0 auto;padding:14px 20px;display:flex;
+    align-items:center;gap:16px;flex-wrap:wrap}
+  .hdr h1{font-size:17px;letter-spacing:-.01em}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+  .grow{flex:1 1 auto}
+  .chip{font-family:ui-monospace,monospace;font-size:11px;padding:3px 8px;
+    border:1px solid var(--border);border-radius:99px;color:var(--muted);
+    background:var(--bg);white-space:nowrap}
+
+  section{margin-top:34px}
+  .shead{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .shead p{margin:0;color:var(--muted);font-size:13px}
+
+  .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+  .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+  .metric small{font-size:14px;color:var(--muted);font-weight:400}
+  .card .eyebrow{margin-bottom:6px;display:block}
+  .hint{color:var(--muted);font-size:12px;margin-top:6px}
+
+  .modos{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+  .modo{background:var(--panel);border:1px solid var(--border);border-radius:8px;
+    padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+  .modo h3{font-size:15px;font-family:ui-monospace,monospace}
+  .modo .prop{color:var(--muted);font-size:13px}
+  .cadena{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);
+    background:var(--bg);border:1px solid var(--border);border-radius:6px;
+    padding:7px 9px;line-height:1.6;word-break:break-word}
+
+  button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--border);
+    background:var(--bg);color:var(--text);padding:7px 13px;transition:.12s}
+  button:hover:not(:disabled){background:var(--surface2)}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+  button.primary:hover:not(:disabled){background:#a5182f}
+  button.mini{padding:4px 9px;font-size:12px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+  .sonda{background:var(--panel);border:1px solid var(--border);border-radius:8px;
+    padding:12px 14px;margin-bottom:10px}
+  .sonda .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .badge{font-family:ui-monospace,monospace;font-size:10.5px;text-transform:uppercase;
+    letter-spacing:.1em;padding:2px 8px;border-radius:99px;color:#fff}
+  .b-ok{background:var(--ok)} .b-warn{background:var(--warn)}
+  .b-err{background:var(--err)} .b-run{background:var(--muted)}
+  .find{border-left:3px solid var(--border);padding:8px 0 8px 11px;margin-top:9px;
+    font-size:13px;display:flex;gap:11px;align-items:flex-start}
+  .find.e{border-color:var(--err)} .find.w{border-color:var(--warn)}
+  .find span{flex:1;word-break:break-word}
+  .find select{font:12px ui-monospace,monospace;padding:3px 5px;border-radius:6px;
+    border:1px solid var(--border);background:var(--bg);color:var(--text)}
+
+  .corrida{background:var(--panel);border:1px solid var(--border);border-radius:8px;
+    padding:12px 14px;margin-bottom:10px}
+  .corrida summary{cursor:pointer;display:flex;gap:11px;align-items:center;flex-wrap:wrap}
+  .corrida summary::-webkit-details-marker{display:none}
+  .corrida dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px}
+  .corrida dt{font-family:ui-monospace,monospace;font-size:11px;text-transform:uppercase;
+    letter-spacing:.1em;color:var(--muted);padding-top:2px}
+  .corrida dd{margin:0}
+  .tasa{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted)}
+
+  pre{background:#1a1a1a;color:#e8e2d4;padding:13px;border-radius:7px;overflow:auto;
+    font-size:12px;line-height:1.5;max-height:340px;margin:10px 0 0;white-space:pre-wrap;
+    word-break:break-word}
+
+  #drawer{position:fixed;right:0;bottom:0;top:0;width:min(620px,100%);background:var(--bg);
+    border-left:1px solid var(--border);box-shadow:-14px 0 40px rgba(0,0,0,.14);
+    transform:translateX(100%);transition:transform .22s;z-index:40;display:flex;
+    flex-direction:column}
+  #drawer.open{transform:none}
+  #drawer .dh{padding:14px 18px;border-bottom:1px solid var(--border);background:var(--panel);
+    display:flex;gap:11px;align-items:center;flex-wrap:wrap}
+  #drawer .db{padding:16px 18px;overflow:auto;flex:1}
+  #drawer pre{max-height:none}
+  .empty{color:var(--muted);font-size:13px;padding:14px;border:1px dashed var(--border);
+    border-radius:8px;text-align:center}
+  .warnbox{background:#fff6e8;border:1px solid var(--warn);border-radius:8px;
+    padding:11px 14px;font-size:13px;margin-top:12px}
+  textarea{width:100%;font:13px/1.5 ui-monospace,monospace;padding:9px;border-radius:6px;
+    border:1px solid var(--border);background:var(--bg);color:var(--text);resize:vertical}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr">
+    <span class="dot"></span>
+    <h1>Cerebro · panel de control</h1>
+    <span class="grow"></span>
+    <span class="chip mono" id="chip-repo">…</span>
+    <span class="chip mono" id="chip-perm">…</span>
+    <button id="btn-sondear" class="primary">Sondear salud</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ── MÉTRICAS DEL LOOP ── -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">El loop sobre sí mismo</h2>
+      <p>La tasa candidatos→verificados es la única métrica honesta que el cerebro tiene de sí mismo.</p>
+    </div>
+    <div class="cards" id="metricas"></div>
+  </section>
+
+  <!-- ── DISPARADORES ── -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Disparadores</h2>
+      <p>Derivados de <code class="mono">cerebro.md</code> — el panel no puede ofrecer un modo que el skill no declara.</p>
+    </div>
+    <div class="modos" id="modos"></div>
+  </section>
+
+  <!-- ── SALUD ── -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Salud · qué está roto</h2>
+      <p>Las cuatro sondas del repo, ejecutadas de verdad. Cada hallazgo se puede mandar a corregir.</p>
+    </div>
+    <div id="salud"><div class="empty">Pulsa «Sondear salud» para correr las sondas.</div></div>
+  </section>
+
+  <!-- ── CORRIDAS ── -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Corridas</h2>
+      <p><code class="mono">docs/cerebro-runs.jsonl</code> — más reciente primero.</p>
+    </div>
+    <div id="corridas"></div>
+  </section>
+
+</div>
+
+<!-- ── DRAWER DE JOB ── -->
+<div id="drawer">
+  <div class="dh">
+    <span class="badge b-run" id="job-badge">…</span>
+    <strong class="mono" id="job-title">—</strong>
+    <span class="grow"></span>
+    <button class="mini" id="job-stop">Detener</button>
+    <button class="mini" id="job-close">Cerrar</button>
+  </div>
+  <div class="db">
+    <div class="eyebrow">Prompt enviado</div>
+    <pre id="job-prompt" style="max-height:150px"></pre>
+    <div class="eyebrow" style="margin-top:14px">Salida</div>
+    <pre id="job-out">esperando…</pre>
+  </div>
+</div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+let estado = null, jobActual = null, poll = null;
+
+// ── estado ──────────────────────────────────────────────────────────────
+async function cargarEstado() {
+  estado = await (await fetch("/api/state")).json();
+  $("#chip-repo").textContent = estado.repo.split("/").pop();
+  $("#chip-perm").textContent = "permisos: " + estado.permisos;
+  pintarMetricas();
+  pintarModos();
+  pintarCorridas();
+}
+
+function pintarMetricas() {
+  const m = estado.metricas;
+  const tasa = m.tasa === null ? "—" : Math.round(m.tasa * 100) + "%";
+  const cards = [
+    ["Corridas registradas", esc(m.corridas), Object.entries(m.porModo)
+      .map(([k, v]) => `${k} ×${v}`).join(" · ") || "sin corridas"],
+    ["Tasa de verificación", esc(tasa),
+      `${m.verificados} verificados de ${m.candidatos} candidatos · ${m.descartados} descartados`],
+    ["Delegación", `${m.delegaciones} <small>invocaciones</small>`,
+      `${m.aMano} trabajo(s) hecho(s) a mano — cada uno es una violación declarada`],
+  ];
+  $("#metricas").innerHTML = cards.map(([t, v, h]) => `
+    <div class="card">
+      <span class="eyebrow">${esc(t)}</span>
+      <div class="metric">${v}</div>
+      <div class="hint">${esc(h)}</div>
+    </div>`).join("");
+}
+
+function pintarModos() {
+  $("#modos").innerHTML = estado.modos.map((m) => `
+    <div class="modo">
+      <h3>${m.arg ? esc(m.arg) : "diagnóstico"} <span class="tasa">M${esc(m.n)}</span></h3>
+      <div class="prop">${esc(m.proposito || "sin propósito declarado en la tabla")}</div>
+      <div class="cadena">${esc(m.cadena.replace(/[`*]/g, "")) || "—"}</div>
+      <div class="row">
+        <button class="primary" data-fire="${esc(m.arg)}">Gatillar</button>
+      </div>
+    </div>`).join("");
+  document.querySelectorAll("[data-fire]").forEach((b) =>
+    b.onclick = () => gatillar(b.dataset.fire));
+}
+
+function pintarCorridas() {
+  const c = estado.corridas;
+  if (!c.length) {
+    $("#corridas").innerHTML = `<div class="empty">Todavía ninguna corrida ha dejado rastro.</div>`;
+    return;
+  }
+  $("#corridas").innerHTML = c.map((r) => {
+    const tasa = typeof r.candidatos === "number" && r.candidatos > 0
+      ? `${r.verificados}/${r.candidatos} verificados` : "";
+    const alerta = r._faltantes?.length
+      ? `<span class="badge b-warn">faltan ${r._faltantes.length}</span>` : "";
+    const campo = (k, label) => r[k]
+      ? `<dt>${label}</dt><dd>${esc(Array.isArray(r[k]) ? r[k].join(" · ") : r[k])}</dd>` : "";
+    return `<details class="corrida">
+      <summary>
+        <span class="badge b-run">${esc(r.modo)}</span>
+        <strong class="mono">${esc(r.fecha)}</strong>
+        <span class="tasa">${esc(tasa)}</span>
+        ${alerta}
+        <span class="grow"></span>
+        <span class="tasa">▾</span>
+      </summary>
+      <dl>
+        ${campo("señal", "Señal")}
+        ${campo("hallazgo", "Hallazgo")}
+        ${campo("descartes", "Descartes")}
+        ${campo("automejora", "Automejora")}
+        ${campo("skill_scan", "Skill scan")}
+        ${campo("skills_invocados", "Invocados")}
+        ${campo("skills_a_mano", "A mano")}
+        ${campo("coste", "Coste")}
+      </dl>
+      ${r._faltantes?.length ? `<div class="warnbox">Esta entrada no cumple el contrato
+        vigente: faltan <code class="mono">${esc(r._faltantes.join(", "))}</code>.</div>` : ""}
+    </details>`;
+  }).join("");
+}
+
+// ── salud ───────────────────────────────────────────────────────────────
+$("#btn-sondear").onclick = async () => {
+  const b = $("#btn-sondear");
+  b.disabled = true; b.textContent = "Sondeando…";
+  $("#salud").innerHTML = `<div class="empty">Corriendo las cuatro sondas…</div>`;
+  try {
+    pintarSalud(await (await fetch("/api/health")).json());
+  } finally {
+    b.disabled = false; b.textContent = "Sondear salud";
+  }
+};
+
+function pintarSalud(h) {
+  const badge = { ok: "b-ok", warn: "b-warn", error: "b-err", roto: "b-err" };
+  const cab = h.cimientoRoto
+    ? `<div class="warnbox"><strong>Cimiento roto.</strong> El cerebro no construye sobre
+       <code class="mono">err&gt;0</code>: arregla esto antes de gatillar cualquier otro modo.</div>`
+    : "";
+  $("#salud").innerHTML = cab + h.sondas.map((s) => {
+    const finds = [
+      ...s.errores.map((t) => ["e", t]),
+      ...s.warns.map((t) => ["w", t]),
+    ].map(([k, t], i) => `
+      <div class="find ${k}">
+        <span>${esc(t)}</span>
+        <select class="mini" id="dest-${esc(s.id)}-${i}">
+          ${estado.modos.filter((m) => m.arg).map((m) =>
+            `<option value="${esc(m.arg)}"${m.arg === "bugs" ? " selected" : ""}>${esc(m.arg)}</option>`).join("")}
+        </select>
+        <button class="mini" data-fix="${esc(t).slice(0, 600)}"
+          data-dest="dest-${esc(s.id)}-${i}">Mandar</button>
+      </div>`).join("");
+    return `<div class="sonda">
+      <div class="top">
+        <span class="badge ${badge[s.estado]}">${esc(s.estado)}</span>
+        <strong>${esc(s.label)}</strong>
+        <span class="tasa">${esc(s.que)}</span>
+        <span class="grow"></span>
+        <button class="mini" data-log="${esc(s.id)}">Ver salida</button>
+      </div>
+      ${finds}
+      ${s.desync?.length ? `<div class="warnbox">El panel no logró leer todos los
+        hallazgos de esta sonda: ${esc(s.desync.join("; "))}. Abre la salida cruda —
+        el conteo de la sonda manda sobre lo que el panel muestra.</div>` : ""}
+      <pre id="log-${esc(s.id)}" hidden>${esc(s.salida)}</pre>
+    </div>`;
+  }).join("");
+
+  document.querySelectorAll("[data-log]").forEach((b) =>
+    b.onclick = () => {
+      const p = $("#log-" + b.dataset.log);
+      p.hidden = !p.hidden;
+      b.textContent = p.hidden ? "Ver salida" : "Ocultar";
+    });
+  document.querySelectorAll("[data-fix]").forEach((b) =>
+    b.onclick = () => gatillar($("#" + b.dataset.dest).value, b.dataset.fix));
+}
+
+// ── disparo ─────────────────────────────────────────────────────────────
+async function gatillar(modo, contexto = "") {
+  const nombre = modo || "diagnóstico";
+  const extra = contexto ? `\n\nHallazgo que se pasa como contexto:\n${contexto}` : "";
+  if (!confirm(
+    `Gatillar «${nombre}».\n\nEsto lanza una corrida real de Claude Code sobre el repo, ` +
+    `con --permission-mode ${estado.permisos}: puede editar archivos y consumir tokens.` + extra
+  )) return;
+
+  const r = await fetch("/api/fire", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ modo, contexto }),
+  });
+  const job = await r.json();
+  if (!r.ok) return alert(job.error);
+  abrirJob(job);
+}
+
+function abrirJob(job) {
+  jobActual = job.id;
+  $("#drawer").classList.add("open");
+  $("#job-title").textContent = (job.modo || "diagnóstico") + " · " + job.id;
+  $("#job-prompt").textContent = job.prompt;
+  render(job);
+  clearInterval(poll);
+  poll = setInterval(refrescarJob, 2000);
+}
+
+async function refrescarJob() {
+  if (!jobActual) return;
+  const job = await (await fetch("/api/job?id=" + jobActual)).json();
+  render(job);
+  if (["listo", "fallo", "cancelado", "roto"].includes(job.estado)) {
+    clearInterval(poll);
+    cargarEstado();   // una corrida puede haber escrito en el log
+  }
+}
+
+function render(job) {
+  const b = $("#job-badge");
+  b.textContent = job.estado;
+  b.className = "badge " + ({ corriendo: "b-run", listo: "b-ok",
+    fallo: "b-err", roto: "b-err", cancelado: "b-warn" }[job.estado] ?? "b-run");
+  $("#job-out").textContent = job.salida || "esperando salida…";
+  $("#job-stop").disabled = job.estado !== "corriendo";
+}
+
+$("#job-close").onclick = () => {
+  $("#drawer").classList.remove("open");
+  clearInterval(poll); jobActual = null;
+};
+$("#job-stop").onclick = async () => {
+  if (!jobActual) return;
+  render(await (await fetch("/api/stop", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ id: jobActual }),
+  })).json());
+};
+
+cargarEstado();
+</script>
+</body>
+</html>
