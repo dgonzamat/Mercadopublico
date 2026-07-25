@@ -1,9 +1,9 @@
 ---
-description: Orquestador del loop — NO solo mantiene deuda: ATACA impacto, y el corpus manda. V5 impone precedencia: atacar algo que no sea contenido exige nombrar la palanca superior que se salta y probar EN ESA CORRIDA que está agotada (NEWS-SWEEP corrido), porque el costo de verificación no es criterio de impacto y el meta-trabajo sobre el propio loop no cuenta como ataque. Mantiene de V4 la verificación dura: toda sonda pasa un control negativo antes de creerle, y lo servido se comprueba contra el artefacto desplegado en gh-pages (funciona sin node_modules, como arranca una sesión remota).
+description: Orquestador del loop de salud y crecimiento del repo UAP Codex. ÚSALO cuando pidan correr el cerebro, revisar el estado del repo, decidir qué atacar o por dónde seguir, buscar deuda o huecos de cobertura, proponer el próximo caso, o cuando digan cosas como «analiza el repo», «qué falta», «dónde estamos», «qué conviene hacer ahora» o abran una sesión de trabajo sin objetivo definido — aunque no nombren el cerebro. ORQUESTA, NO EJECUTA: los skills del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación, porque se salta la disciplina que codifican. Mantiene de V5 la precedencia del corpus (saltarse el contenido exige probar en esa corrida que la palanca está agotada) y de V4 la verificación dura (control negativo en toda sonda; lo servido se comprueba contra gh-pages).
 argument-hint: "[opcional: --auto para gatillar los sub-skills read-only sin preguntar; sin flag articula y propone el disparo]"
 ---
 
-Estás ejecutando el **cerebro** del repo. Un error de la v1: su objetivo era *puramente defensivo* (minimizar deuda), así que su mejor caso era «nada que arreglar» — un conserje, no un arquitecto. **V2 lo corrigió: el cerebro ATACA impacto.** **V3 cierra dos huecos que se vieron en la práctica**: (a) verificaba frontend *a ojo* (grep + screenshots eyeball-eados), y (b) su propio impacto era *proxy no medido* («¿funciona el cerebro?» sin respuesta cuantitativa). V3 lo resuelve orquestando **skills de librería** en los pasos correctos. **V4 corrige a V3 con lo aprendido al ejecutarlo** (jul 2026): la verificación de navegador que V3 prescribía **no es ejecutable** en la sesión remota por defecto —arranca sin `node_modules`, así que no hay `out/` ni dev server—, y lo que sí funcionó fue mejor: leer el **artefacto desplegado en `gh-pages`**, que verifica lo que el sitio realmente sirve. Y apareció un hueco que V3 no veía: le exigía prueba al guardrail nuevo pero **no a la sonda que verifica**, y dos falsos verdes en una corrida (una que no chequeaba nada, otra que leía un error de API como éxito) pasaron por ahí. De ahí la **regla cero de §5**. **V5 cierra el hueco que ninguna versión anterior vio**: el cerebro seguía eligiendo *qué* atacar por comodidad de verificación. Una sesión entera (jul 2026) produjo cinco PRs —cuatro de metadata y de sí mismo, **cero de corpus**— con todas las sondas en verde; el fallo lo detectó el usuario, no el loop. La causa es que un fix de metadata se comprueba en segundos y un caso nuevo exige investigar y escribir 1.500 palabras ancladas: esa asimetría **no dice nada sobre cuál importa más**. De ahí la **regla de precedencia de §3** — el corpus manda, y saltárselo hay que justificarlo con evidencia de esta corrida.
+Estás ejecutando el **cerebro** del repo. Un error de la v1: su objetivo era *puramente defensivo* (minimizar deuda), así que su mejor caso era «nada que arreglar» — un conserje, no un arquitecto. **V2 lo corrigió: el cerebro ATACA impacto.** **V3 cierra dos huecos que se vieron en la práctica**: (a) verificaba frontend *a ojo* (grep + screenshots eyeball-eados), y (b) su propio impacto era *proxy no medido* («¿funciona el cerebro?» sin respuesta cuantitativa). V3 lo resuelve orquestando **skills de librería** en los pasos correctos. **V4 corrige a V3 con lo aprendido al ejecutarlo** (jul 2026): la verificación de navegador que V3 prescribía **no es ejecutable** en la sesión remota por defecto —arranca sin `node_modules`, así que no hay `out/` ni dev server—, y lo que sí funcionó fue mejor: leer el **artefacto desplegado en `gh-pages`**, que verifica lo que el sitio realmente sirve. Y apareció un hueco que V3 no veía: le exigía prueba al guardrail nuevo pero **no a la sonda que verifica**, y dos falsos verdes en una corrida (una que no chequeaba nada, otra que leía un error de API como éxito) pasaron por ahí. De ahí la **regla cero de §5**. **V5 cierra el hueco que ninguna versión anterior vio**: el cerebro seguía eligiendo *qué* atacar por comodidad de verificación. Una sesión entera (jul 2026) produjo cinco PRs —cuatro de metadata y de sí mismo, **cero de corpus**— con todas las sondas en verde; el fallo lo detectó el usuario, no el loop. La causa es que un fix de metadata se comprueba en segundos y un caso nuevo exige investigar y escribir 1.500 palabras ancladas: esa asimetría **no dice nada sobre cuál importa más**. De ahí la **regla de precedencia de §3** — el corpus manda, y saltárselo hay que justificarlo con evidencia de esta corrida. **V6 corrige lo que quedaba: el cerebro decía orquestar y en la práctica ejecutaba.** Una sola regla permisiva —«invoca un skill solo cuando supere al enfoque plano»— dejaba el juicio para el instante en que hacerlo a mano *siempre* parece más barato, así que se resolvía en «no delegues»: en una sesión se escribieron tres reglas de audit a mano sin `/blindar`, no se corrió `/learn` ni `/retro` con ~15 lecciones sobre la mesa, y se editó este archivo tres veces sin `skill-creator`. La corrección es **separar dos clases de skill con reglas opuestas** (arriba): los del loop se delegan siempre, los de librería siguen siendo opt-in.
 
 **Objetivo medible.**
 ```
@@ -17,9 +17,29 @@ Regla de oro (anti-fluff): **cada disparo cita su señal concreta.** Vale para d
 
 ---
 
-## Skills de librería que el cerebro orquesta
+## Skills del loop — DELEGACIÓN OBLIGATORIA
 
-El cerebro es un orquestador: no reimplementa lo que un skill ya hace mejor. **Invoca un skill solo cuando supera al enfoque plano** (Karpathy: simplicity first — no lo llames por lucir). Mapa skill → paso → para qué:
+El cerebro **orquesta, no ejecuta**. Si la acción cae en el dominio de uno de estos skills, se invoca; hacer su trabajo a mano es una violación, no un atajo. La tabla es un binding mecánico, no una sugerencia — se consulta, no se delibera:
+
+| Paso | Señal | Skill que DEBE invocarse |
+|---|---|---|
+| §2 TRIAGE | drift objetivo en `CLAUDE.md` | **`/curar-memoria`** |
+| §3 ATTACK | hueco de cobertura | **`/proximo-caso`** → **`/nuevo-caso`** |
+| §3 ATTACK | ángulo sin vista que mueva tráfico | **`/innovar`** |
+| §6 RATCHET | el fix abrió una clase enforzable | **`/blindar`** — *nunca* escribas una regla de audit a mano |
+| §6 RATCHET | la corrida editó un skill del loop | **`skill-creator`** |
+| §7 CAPTURE | apareció una lección | **`/learn`** |
+| §7 CAPTURE | cierre de corrida | **`/retro`** |
+
+**Incumplido tres veces en una sola sesión (jul 2026)**, que es lo que motivó volverlo obligatorio: E31, E32 y E33 se escribieron a mano dentro del cerebro sin invocar `/blindar` —saltándose su gate doble—; `/learn` y `/retro` no se corrieron pese a ~15 lecciones; y `cerebro.md` se editó tres veces sin llamar a `skill-creator`.
+
+**Al cerrar, declara qué skills del loop invocaste y cuáles hiciste a mano.** Si hiciste el trabajo de uno sin invocarlo, dilo — es el único modo de que la violación sea visible.
+
+---
+
+## Skills de librería — opt-in
+
+Estos sí se invocan **solo cuando superan al enfoque plano** (Karpathy: simplicity first — no los llames por lucir):
 
 | Skill | Paso | Cuándo / para qué |
 |---|---|---|
@@ -32,7 +52,7 @@ El cerebro es un orquestador: no reimplementa lo que un skill ya hace mejor. **I
 
 ---
 
-## El procedimiento — V5 (corpus-primero, verificado con control negativo, auto-medido)
+## El procedimiento — V6 (orquesta-no-ejecuta, corpus-primero, verificado con control negativo)
 
 ### 0 · CALIBRATE — sensores frescos
 `rm -rf web/out` + regenera `cases.json` antes de medir (un artefacto rancio miente). *(Lección out/ rancio.)*
@@ -106,7 +126,12 @@ Elegido el objetivo, `argmax(Impact / esfuerzo)` sobre las palancas alcanzables:
 - Fix que abrió una clase enforzable → **`/blindar`** (el guardrail debe **pasar-en-sano Y atrapar-una-violación** o se descarta, `G_bad++`).
 - **`skill-creator` (evals + benchmark de varianza) tiene UN disparador concreto: cuando esta corrida EDITÓ un skill del loop** (`.claude/commands/*.md`). Ahí sí supera al enfoque plano — mide si el cambio mejora el disparo/comportamiento en vez de auto-afirmarlo, y de paso afina el `description`. **Fuera de ese caso, NO lo llames**: «¿funciona el cerebro?» en abstracto no es un disparador (una corrida sola es n=1 y montar evals para eso cuesta más de lo que informa). La medición honesta de una corrida son sus artefactos: defectos hallados **verificados contra producción**, guardrails que pasan su gate doble, CI verde.
 
-### 7 · CAPTURE → `/learn` / `/retro`. Reporte de impacto → `artifact-design` si es para compartir.
+### 7 · CAPTURE
+Era la sección más floja del doc —una línea, sin gate, mientras todo lo demás tiene condición de aceptación— y por eso se saltaba sin coste. Ahora:
+- **Toda lección → `/learn`**, en el momento. No la escribas tú en `CLAUDE.md`: `/learn` deduplica contra lo existente y la ubica en la sección correcta, que es justo lo que se pierde al hacerlo a mano.
+- **Cierre de corrida → `/retro`**, incluso si ya corriste `/learn` — mina lo que no se capturó en caliente.
+- **Los DESCARTES también se capturan**, no solo los aciertos: un candidato investigado y rechazado es trabajo hecho con veredicto. Va a [`docs/registros.md`](../../docs/registros.md) fechado y **con el motivo**, porque el motivo decide si caduca («no existe» ≠ «no pude anclarlo desde este entorno»). Sin esto la próxima corrida lo vuelve a investigar y a descartar — pasó con 14 candidatos en jul 2026.
+- Reporte de impacto → `artifact-design` si es para compartir.
 
 ### 8 · CONVERGE
 Termina **solo** cuando `err=0` **y** no queda palanca de impacto alcanzable sobre el umbral (raro — casi siempre hay un caso demandado o un leak). Declarar el corpus **maduro** exige el NEWS-SWEEP corrido en esta corrida (§3, regla de precedencia); sin eso no es una conclusión, es una excusa para no tocar el contenido. Si oscila (arreglar A rompe B) → escala. Si una palanca antes bloqueada se desbloquea → re-encóla.
@@ -116,13 +141,16 @@ Termina **solo** cuando `err=0` **y** no queda palanca de impacto alcanzable sob
 ## Invariantes
 1. **Impacto-primero** — el presupuesto va a crear valor; la deuda es un gate, no el objetivo. **El corpus manda**: para atacar algo que no sea contenido hay que nombrar la palanca superior que se salta y probar en esta corrida que está agotada (§3). El meta-trabajo sobre el propio loop no cuenta como ATTACK. *(Corrección de la v1, endurecida en jul 2026 tras una sesión de cinco PRs sin una línea de corpus.)*
 2. **Cimiento duro** — `err=0` antes de construir; nunca sobre schema roto.
-3. **Verificado, no eyeball-eado** — un cambio de frontend se asegura con `webapp-testing`, no con un screenshot mirado a ojo. *(Corrección de V2.)*
+3. **Verificado, no eyeball-eado** — lo que el sitio SIRVE se comprueba contra el artefacto desplegado en `gh-pages` (§5), que funciona sin `node_modules`; `webapp-testing` solo cuando hay build y el cambio es interactivo. *(Corrección de V2, reescrita en V4: la versión anterior de este invariante exigía `webapp-testing` sin más y contradecía a §5 desde entonces — un lector que solo mire los invariantes concluía algo falso.)*
 4. **Auto-medido, no auto-afirmado** — nada se declara sano por fe: **toda sonda pasa su control negativo** (§5 regla cero) y **todo guardrail su gate doble** (§6). Si la corrida editó un skill del loop, `skill-creator` mide el cambio. *(El invariante se cumple en cada corrida, no solo cuando hay evals.)*
-5. **Trinquete** — cada fix enforzable → guardrail (medio, no fin).
-6. **Suelo honesto** — no golpea deuda bloqueada por entorno; declara qué impacto necesita red/build que no tiene; no inventa trabajo en un cimiento maduro.
+5. **Trinquete** — cada fix enforzable → guardrail (medio, no fin), y el guardrail lo crea **`/blindar`**, no el cerebro a mano.
+6. **Orquestar, no ejecutar** — los skills del loop se delegan **siempre** que la acción cae en su dominio; hacer su trabajo a mano se salta la disciplina que codifican y deja al skill sin usar (y por tanto sin mejorar). Los de librería son opt-in. Al cerrar, declara cuáles invocaste y cuáles no. *(jul 2026: tres violaciones en una sesión.)*
+7. **Suelo honesto** — no golpea deuda bloqueada por entorno; declara qué impacto necesita red/build que no tiene; no inventa trabajo en un cimiento maduro.
 
 ## Restricciones
 - No commitees/pushees salvo que el usuario lo pida — **excepción: en sesión remota/CI el harness asigna una branch `claude/<topic>` y manda commit + push + PR draft para toda implementación; ahí esa instrucción manda** (el contenedor es efímero: lo que no se pushea se pierde). Cumple el Branch protocol de `CLAUDE.md` (PR draft → ready → squash) y no mergees sin que el usuario lo pida.
 - Señales de deuda = node-plano sin red; `webapp-testing` corre local (sirve `out/` o el dev server, sin salir a internet); las de contenido pueden usar red (Wikipedia/archive.org).
 - Un disparo, una señal — de deuda **o de impacto**. Sin señal, no es un disparo.
-- **Un skill se invoca solo cuando supera al enfoque plano** — no por lucir. Simplicity first.
+- **DOS CLASES DE SKILL, DOS REGLAS OPUESTAS.** No mezclarlas era el agujero: una sola regla permisiva («invócalo solo si supera al enfoque plano») dejaba el juicio para el instante en que hacerlo a mano *siempre* parece más barato, así que se resolvía en «no delegues» casi siempre.
+  - **Skills del loop** (`/proximo-caso`, `/nuevo-caso`, `/blindar`, `/curar-memoria`, `/learn`, `/retro`, `/innovar`): **delegación OBLIGATORIA**. Si la acción cae en su dominio, se invocan — el cerebro **no reimplementa** su trabajo. No es purismo: un skill que nunca se invoca nunca mejora, y el trabajo hecho a mano **se salta la disciplina que el skill codifica** (el gate doble de `/blindar`, la disciplina de fuentes de `/nuevo-caso`, la deduplicación de `/learn`). Es el mismo principio que el resto del doc: un output que nadie consume se pudre — y un skill que nadie invoca es exactamente eso.
+  - **Skills de librería** (`webapp-testing`, `dataviz`, `artifact-design`, `skill-creator`): opt-in, solo cuando superan al enfoque plano. Simplicity first — aquí sí, no los llames por lucir.
