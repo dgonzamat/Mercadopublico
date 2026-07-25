@@ -8,6 +8,10 @@ herramienta de operación del repo, no una página de uapcodex.org.
 node tools/cerebro-panel/server.mjs        # → http://127.0.0.1:4180
 ```
 
+Es una de las cuatro superficies de disparo; las otras tres (CLI, formulario de
+Actions, atajo del teléfono) están en
+[`docs/disparar-el-cerebro.md`](../../docs/disparar-el-cerebro.md).
+
 Sin dependencias, sin build, sin `node_modules`. Node 18+.
 
 ---
