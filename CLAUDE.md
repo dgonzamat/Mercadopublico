@@ -93,7 +93,23 @@ web/
     audit-design.mjs      # corre en prebuild; contraste WCAG AA + drift de color de tier + touch targets
     validate-schema.mjs   # corre en prebuild; valida schema de cases/researchers
     qa-screenshots.mjs    # sonda de QA VISUAL (on-demand: npm run qa:shots) — renderiza pixeles
+    audit-skills.mjs      # contrato de los skills del loop (corre en CI, no en prebuild)
+    lib/cerebro-contract.mjs  # parser único de cerebro.md — lo comparten la sonda y el panel
+tools/
+  cerebro-panel/          # panel de control del cerebro (fuera de web/, NO se despliega)
 ```
+
+### Panel de control del cerebro (`tools/cerebro-panel`)
+
+`node tools/cerebro-panel/server.mjs` → `http://127.0.0.1:4180`. UI **externa al sitio** (vive fuera de `web/`, no entra en el `output: export`) para **ver moverse** la orquestación, **gatillar** sus modos y **mandar a corregir** lo que las sondas encuentran. Node plano, cero dependencias.
+
+El centro es un **flowchart de cuatro bandas** (gate común → cadena del modo → cierre obligatorio → rastro) cuyos nodos se encienden conforme la corrida avanza. El movimiento sale de `--output-format stream-json`: cada `tool_use` se parsea y se matchea contra los nodos. **El criterio de encendido debe ser estrecho** —nombre de herramienta, forma citada (`{"skill":"simplify"}`) o con barra (`/blindar`)—, nunca `\bpalabra\b`: con el criterio ancho un `git log` encendía el nodo **LOG** y el diagrama afirmaba un cierre que no había ocurrido (jul 2026). Por eso la banda **rastro** no se enciende con eventos, sino comparando el log antes/después de la corrida — se ilumina con el hecho comprobado, no con la intención. La banda de la cadena se deriva de la tabla de modos de `cerebro.md`, así que el diagrama no puede prometer un paso que el skill no declara.
+
+Es un **servidor y no una página** porque disparar un trigger es `spawn('claude', ['-p', '/cerebro <modo>'])`, y eso necesita un proceso: una página estática —o un artifact— puede mostrar el log, pero no puede correr nada ni leer el repo. Corre en la máquina del dueño, junto al CLI.
+
+Tres cosas que NO reimplementa, y que son la razón de que exista `lib/cerebro-contract.mjs`: los **modos** salen del mismo parser que consume `audit-skills.mjs` (un segundo parser sería un segundo contrato — el panel ofrecería modos que la sonda no conoce); la **salud** sale de las cuatro sondas ejecutadas como subprocesos; y el panel **reconcilia** lo que logró extraer contra el `ERRORS: n  WARNS: n` que cada sonda declara, mostrando el desajuste en vez de callarlo. Esa última defensa nació de un falso verde propio: el parser inicial solo entendía el formato inline (`🔴 [X7] …`) y reportó «0 warns» sobre un `audit-consistency` que declaraba `WARNS: 1`, porque ahí el emoji va en la **cabecera** y los hallazgos en las líneas indentadas debajo. *(enforzado: `audit-skills.mjs` **X9**, ERROR si el panel deja de importar el contrato compartido o se escribe su propio regex de secciones.)*
+
+**Seguridad**: escucha solo en `127.0.0.1` (ejecuta `claude` con permisos de edición sobre el repo — exponerlo es dar una shell), `spawn` sin shell, y el modo se valida contra la lista derivada de `cerebro.md`. Los disparos usan `--permission-mode acceptEdits` por defecto —el panel existe para que el cerebro arregle, y `manual` colgaría cada corrida esperando una confirmación que nadie va a dar—; `CEREBRO_PANEL_PERMISSION_MODE=plan` para que solo planifique. El modo vigente se muestra en la cabecera siempre.
 
 ### Sonda de QA visual (`qa-screenshots.mjs` · `npm run qa:shots`)
 
@@ -236,6 +252,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 - **No** clasificar `cloudflare|fastly|akamai` como "IP de datacenter" en filtros anti-bot (son el egress de iCloud Private Relay y VPNs de consumidor — bloquearlos descarta Safaris humanos reales). *(enforzado: `audit-consistency.mjs` E19b)*
 - **No** filtrar bots solo en el cliente — cualquier cliente con la anon key llama los RPC de conteo directo, y un crawler con Chrome "real" pasa UA + engagement; el gate tiene que vivir en la función SECURITY DEFINER (ver sección Contador de visitas). *(enforzado: sonda viva diaria; jul 2026)*
 - **No** concluir nada de `test-chart.mjs` (ni de otra sonda que lea `out/`) sobre un `out/` que no reconstruiste — es artefacto de build gitignored que queda **rancio** en el contenedor (uno del 16 jul con 326 casos/6 segmentos hizo concluir «2 fallos preexistentes en main», y casi «arreglé» un test que pasaba; jul 2026). Antes de creerle: `rm -rf web/out` o rebuild. Y como `test-chart` corre en `postbuild` (`npm run build`), un **deploy verde ya prueba que pasa** — no hace falta correrla local. Es la lección de la sección de fuentes rotas («verifica la sonda contra un caso cuyo resultado ya conoces») aplicada a las sondas que dependen de `out/`. *(enforzado: `test-chart.mjs` aborta con «out/ RANCIO» si `out/probabilidades/index.html` es más viejo que `data/cases.json`, en vez de emitir aserciones falsas)*
+- **No** fijar un `grid-template-columns` único cuando algunos ítems llevan `hidden <bp>:inline` (display:none condicional) — CSS Grid excluye del auto-placement a los ítems `display:none` y compacta el resto hacia los primeros tracks del template en orden de DOM, así que un track `1fr` pensado para el contenido puede terminar ocupado por el vecino de ancho fijo mientras el contenido cae en un track `auto` y se comprime a su ancho intrínseco (`CaseRow.tsx` + el header de `/cases`: con `num`/`year` ocultos en móvil, el título+resumen caían al track de `flag` en vez del `1fr`, medido en producción como 159px/44% de la fila en 390px vs 96px/26% para dos badges de 1-3 caracteres; jul 2026). Fix: `grid-cols` responsivo que matchee el nº de ítems visibles por breakpoint (`grid-cols-[...] sm:grid-cols-[...]`), no `col-start-N` fijo por ítem (conserva el `gap` de los tracks que quedan vacíos).
 
 ## Deuda pendiente · ~38 fuentes rotas (hard 4xx) en el corpus (baseline 21 jul 2026)
 

@@ -1,0 +1,175 @@
+name: Cerebro
+
+# Disparo del cerebro desde GitHub — pensado para el MÓVIL.
+#
+# Abre en Chrome:
+#   https://github.com/dgonzamat/Mercadopublico/actions/workflows/cerebro.yml
+# → «Run workflow» → eliges el modo, escribes la señal, y listo. La corrida
+# ocurre en el runner, no en tu máquina, y deja un PR draft con lo que cambió.
+#
+# Es la contraparte remota de `tools/cerebro-panel`: el panel local ve el flujo
+# moverse y dispara desde el escritorio; esto dispara desde cualquier navegador.
+# Ambos lanzan exactamente el mismo comando —`claude -p "/cerebro <modo>"`— así
+# que el cerebro no sabe ni le importa por dónde entró.
+#
+# REQUISITO ÚNICO: el secreto `ANTHROPIC_API_KEY` en
+# Settings → Secrets and variables → Actions. Sin él el job falla en el primer
+# paso con un mensaje explícito, en vez de gastar minutos para morir a mitad.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "Modo"
+        type: choice
+        required: true
+        default: mejoras-ux
+        options:
+          - caso-nuevo
+          - bugs
+          - mejoras-ux
+          - mejoras-tec
+          - frescura
+          - diagnostico
+      senal:
+        description: "Señal — qué debe atacar esta corrida (la regla de oro: sin señal no es un disparo)"
+        type: string
+        required: false
+
+# Un cerebro a la vez. Dos corridas concurrentes sobre el mismo repo se pisan
+# los archivos y producen PRs que se contradicen.
+concurrency:
+  group: cerebro
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Verificar el secreto antes de gastar minutos
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "::error::Falta el secreto ANTHROPIC_API_KEY."
+            echo "Añádelo en Settings → Secrets and variables → Actions y vuelve a lanzar."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      # El cerebro puede necesitar construir (modos de UI/UX). Las sondas del
+      # gate son node-plano y no lo necesitan, pero instalar aquí sale gratis
+      # con la caché y evita que la corrida se gaste su tiempo en `npm ci`.
+      - name: Dependencias
+        working-directory: web
+        run: npm ci
+
+      - name: Instalar Claude Code
+        run: npm i -g @anthropic-ai/claude-code
+
+      - name: Correr el cerebro
+        id: correr
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODO: ${{ inputs.modo }}
+          SENAL: ${{ inputs.senal }}
+        run: |
+          # `diagnostico` es el modo sin argumento: sondea, elige y gatilla.
+          arg="$MODO"
+          [ "$arg" = "diagnostico" ] && arg=""
+
+          prompt="/cerebro $arg"
+          if [ -n "$SENAL" ]; then
+            prompt="$prompt
+
+          Señal recibida desde GitHub Actions (qué debe atacar esta corrida):
+          $SENAL"
+          fi
+
+          echo "── prompt ──"; echo "$prompt"; echo "────────────"
+
+          # `--permission-mode acceptEdits`: el runner es efímero y aislado, y
+          # el cerebro existe para arreglar. Todo lo que toque queda visible en
+          # el PR draft, que es donde se revisa.
+          claude -p "$prompt" \
+            --permission-mode acceptEdits \
+            --verbose --output-format stream-json < /dev/null \
+            | tee /tmp/cerebro-stream.ndjson
+
+      - name: Resumen de la corrida
+        if: always()
+        run: |
+          {
+            echo "## Cerebro · \`${{ inputs.modo }}\`"
+            echo
+            if [ -n "${{ inputs.senal }}" ]; then
+              echo "**Señal:** ${{ inputs.senal }}"
+              echo
+            fi
+            echo "### Herramientas invocadas"
+            echo
+            node -e '
+              const fs = require("fs");
+              let n = 0;
+              for (const l of fs.readFileSync("/tmp/cerebro-stream.ndjson","utf8").split("\n")) {
+                if (!l.trim()) continue;
+                let e; try { e = JSON.parse(l) } catch { continue }
+                if (e.type === "assistant")
+                  for (const b of e.message?.content ?? [])
+                    if (b.type === "tool_use")
+                      console.log(`- \`${b.name}\` — ${JSON.stringify(b.input).slice(0,140)}`), n++;
+                if (e.type === "result")
+                  console.log(`\n**${e.subtype}** · ${(e.duration_ms/1000).toFixed(1)}s · ${e.num_turns} turnos` +
+                              (e.total_cost_usd != null ? ` · $${e.total_cost_usd.toFixed(3)}` : ""));
+              }
+              if (!n) console.log("_ninguna_");
+            ' 2>/dev/null || echo "_no se pudo leer el stream_"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Abrir PR con lo que cambió
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "La corrida no cambió nada — no hay PR que abrir." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git config user.email noreply@anthropic.com
+          git config user.name Claude
+
+          rama="cerebro/${{ inputs.modo }}-${{ github.run_id }}"
+          git checkout -b "$rama"
+          git add -A
+          git commit -m "cerebro(${{ inputs.modo }}): corrida disparada desde GitHub
+
+          Señal: ${{ inputs.senal }}
+          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git push -u origin "$rama"
+
+          gh pr create --draft \
+            --title "cerebro(${{ inputs.modo }}): corrida disparada desde GitHub" \
+            --body "Disparada desde \`workflow_dispatch\` con modo \`${{ inputs.modo }}\`.
+
+          **Señal:** ${{ inputs.senal || '_(sin señal)_' }}
+
+          Herramientas invocadas y coste: [resumen de la corrida](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+
+          ---
+          _Generated by [Claude Code](https://claude.ai/code)_"

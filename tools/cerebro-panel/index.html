@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cerebro · panel de control</title>
+<style>
+  :root{
+    --bg:#f7f2e8; --panel:#ede6d4; --surface2:#dfd5be; --border:#c4b89d;
+    --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a;
+    --ok:#1e6b3a; --warn:#9c5a18; --err:#8b0000;
+    --flujo:2.6s;               /* ritmo de la marcha en reposo */
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  h1,h2,h3{margin:0;font-weight:600}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace}
+  .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;
+    text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px 72px}
+  .grow{flex:1 1 auto}
+
+  header{border-bottom:1px solid var(--border);background:var(--panel);
+    position:sticky;top:0;z-index:30}
+  .hdr{max-width:1140px;margin:0 auto;padding:14px 20px;display:flex;
+    align-items:center;gap:16px;flex-wrap:wrap}
+  .hdr h1{font-size:17px;letter-spacing:-.01em}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+  .dot.vivo{animation:latido 1.1s ease-in-out infinite}
+  .chip{font-family:ui-monospace,monospace;font-size:11px;padding:3px 8px;
+    border:1px solid var(--border);border-radius:99px;color:var(--muted);
+    background:var(--bg);white-space:nowrap}
+
+  section{margin-top:34px}
+  .shead{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .shead p{margin:0;color:var(--muted);font-size:13px}
+
+  button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--border);
+    background:var(--bg);color:var(--text);padding:7px 13px;transition:.12s}
+  button:hover:not(:disabled){background:var(--surface2)}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+  button.primary:hover:not(:disabled){background:#a5182f}
+  button.mini{padding:4px 9px;font-size:12px}
+
+  /* ══════════ FLOWCHART ══════════ */
+  .lienzo{background:var(--panel);border:1px solid var(--border);border-radius:10px;
+    padding:20px 18px 24px;position:relative;overflow:hidden}
+
+  .tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
+  .tab{font-family:ui-monospace,monospace;font-size:12.5px;padding:6px 12px;
+    border-radius:99px;border:1px solid var(--border);background:var(--bg);cursor:pointer}
+  .tab[aria-selected="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+
+  .banda{display:flex;flex-direction:column;align-items:center;gap:9px}
+  .banda-tag{font-family:ui-monospace,monospace;font-size:10px;text-transform:uppercase;
+    letter-spacing:.16em;color:var(--muted)}
+  .fila{display:flex;align-items:stretch;justify-content:center;gap:0;flex-wrap:wrap;
+    max-width:100%}
+
+  .nodo{background:var(--bg);border:1px solid var(--border);border-radius:8px;
+    padding:9px 13px;min-width:132px;text-align:center;position:relative;
+    transition:background .25s,border-color .25s,color .25s,transform .25s}
+  .nodo .n-t{font-family:ui-monospace,monospace;font-size:12.5px;font-weight:500;
+    word-break:break-word}
+  .nodo .n-s{font-size:10.5px;color:var(--muted);margin-top:2px}
+  .nodo.hecho{background:var(--ok);border-color:var(--ok);color:#fff}
+  .nodo.hecho .n-s{color:rgba(255,255,255,.72)}
+  .nodo.activo{background:var(--accent);border-color:var(--accent);color:#fff;
+    transform:scale(1.045);animation:latido 1.2s ease-in-out infinite}
+  .nodo.activo .n-s{color:rgba(255,255,255,.8)}
+  .nodo.gate{border-style:dashed}
+
+  /* aristas — la marcha de guiones ES el movimiento en reposo */
+  .eh{align-self:center;width:34px;height:2px;flex:none;
+    background:repeating-linear-gradient(90deg,var(--border) 0 7px,transparent 7px 14px);
+    background-size:14px 2px;animation:marchaH var(--flujo) linear infinite}
+  .ev{width:2px;height:30px;margin:0 auto;
+    background:repeating-linear-gradient(180deg,var(--border) 0 7px,transparent 7px 14px);
+    background-size:2px 14px;animation:marchaV var(--flujo) linear infinite;
+    position:relative}
+  .ev::after{content:"";position:absolute;left:-3px;top:-4px;width:8px;height:8px;
+    border-radius:50%;background:var(--accent);opacity:0}
+  .corriendo .eh,.corriendo .ev{animation-duration:.85s;
+    background-image:repeating-linear-gradient(var(--ang),var(--accent) 0 7px,transparent 7px 14px)}
+  .corriendo .eh{--ang:90deg} .corriendo .ev{--ang:180deg}
+  .corriendo .ev::after{animation:cometa 1.5s ease-in-out infinite}
+
+  @keyframes marchaH{to{background-position:14px 0}}
+  @keyframes marchaV{to{background-position:0 14px}}
+  @keyframes latido{0%,100%{box-shadow:0 0 0 0 rgba(196,30,58,.42)}
+                    50%{box-shadow:0 0 0 10px rgba(196,30,58,0)}}
+  @keyframes cometa{0%{opacity:0;top:-4px}15%{opacity:1}85%{opacity:1}
+                    100%{opacity:0;top:26px}}
+  @media (prefers-reduced-motion:reduce){
+    .eh,.ev,.ev::after,.nodo.activo,.dot.vivo{animation:none!important}
+  }
+
+  .ticker{margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+  .ticker ol{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;
+    gap:5px;max-height:170px;overflow:auto}
+  .ticker li{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);
+    display:flex;gap:9px;animation:entra .3s ease}
+  .ticker li b{color:var(--text);font-weight:600;flex:none;min-width:96px}
+  @keyframes entra{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* ══════════ resto ══════════ */
+  .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+  .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+  .metric small{font-size:14px;color:var(--muted);font-weight:400}
+  .card .eyebrow{margin-bottom:6px;display:block}
+  .hint{color:var(--muted);font-size:12px;margin-top:6px}
+
+  .sonda{background:var(--panel);border:1px solid var(--border);border-radius:8px;
+    padding:12px 14px;margin-bottom:10px}
+  .sonda .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .badge{font-family:ui-monospace,monospace;font-size:10.5px;text-transform:uppercase;
+    letter-spacing:.1em;padding:2px 8px;border-radius:99px;color:#fff}
+  .b-ok{background:var(--ok)} .b-warn{background:var(--warn)}
+  .b-err{background:var(--err)} .b-run{background:var(--muted)}
+  .find{border-left:3px solid var(--border);padding:8px 0 8px 11px;margin-top:9px;
+    font-size:13px;display:flex;gap:11px;align-items:flex-start;flex-wrap:wrap}
+  .find.e{border-color:var(--err)} .find.w{border-color:var(--warn)}
+  .find span{flex:1;min-width:220px;word-break:break-word}
+  .find select{font:12px ui-monospace,monospace;padding:3px 5px;border-radius:6px;
+    border:1px solid var(--border);background:var(--bg);color:var(--text)}
+
+  .corrida{background:var(--panel);border:1px solid var(--border);border-radius:8px;
+    padding:12px 14px;margin-bottom:10px}
+  .corrida summary{cursor:pointer;display:flex;gap:11px;align-items:center;flex-wrap:wrap}
+  .corrida summary::-webkit-details-marker{display:none}
+  .corrida dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px}
+  .corrida dt{font-family:ui-monospace,monospace;font-size:11px;text-transform:uppercase;
+    letter-spacing:.1em;color:var(--muted);padding-top:2px}
+  .corrida dd{margin:0}
+  .tasa{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted)}
+
+  pre{background:#1a1a1a;color:#e8e2d4;padding:13px;border-radius:7px;overflow:auto;
+    font-size:12px;line-height:1.5;max-height:340px;margin:10px 0 0;white-space:pre-wrap;
+    word-break:break-word}
+  textarea{width:100%;font:12.5px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;
+    padding:9px 10px;border-radius:7px;border:1px solid var(--border);
+    background:var(--bg);color:var(--text);resize:vertical}
+  .empty{color:var(--muted);font-size:13px;padding:14px;border:1px dashed var(--border);
+    border-radius:8px;text-align:center}
+  .warnbox{background:#fff6e8;border:1px solid var(--warn);border-radius:8px;
+    padding:11px 14px;font-size:13px;margin-top:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr">
+    <span class="dot" id="pulso"></span>
+    <h1>Cerebro · panel de control</h1>
+    <span class="grow"></span>
+    <span class="chip mono" id="chip-repo">…</span>
+    <span class="chip mono" id="chip-perm">…</span>
+    <button id="btn-sondear" class="primary">Sondear salud</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ══ ORQUESTACIÓN ══ -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Orquestación</h2>
+      <p>El flujo real del cerebro. Los nodos se encienden conforme la corrida avanza.</p>
+    </div>
+
+    <div class="lienzo" id="lienzo">
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div id="flujo"></div>
+
+      <!-- Contexto libre. Sin esto solo se podía disparar con el texto de un
+           hallazgo de sonda, y las señales que NO vienen de una sonda —una
+           fricción observada, una decisión pendiente en el log— no tenían por
+           dónde entrar. La regla de oro del cerebro es que cada disparo cite su
+           señal; esta caja es donde se escribe. -->
+      <label class="eyebrow" for="contexto" style="display:block;margin-top:18px">
+        Señal · qué debe atacar esta corrida <span class="tasa">(opcional)</span>
+      </label>
+      <textarea id="contexto" rows="2" style="margin-top:6px"
+        placeholder="Ej: /cases móvil — el título recibe 159px (44%) mientras tier y % se llevan 96px (26%)…"></textarea>
+
+      <div style="display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap">
+        <button class="primary" id="btn-gatillar">Gatillar este modo</button>
+        <button class="mini" id="btn-detener" disabled>Detener</button>
+        <span class="grow"></span>
+        <span class="tasa" id="resumen-job">en reposo</span>
+      </div>
+
+      <div class="warnbox" id="bloqueo" hidden></div>
+
+      <div class="ticker" id="ticker" hidden>
+        <span class="eyebrow">Movimiento · herramientas invocadas</span>
+        <ol id="eventos"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MÉTRICAS ══ -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">El loop sobre sí mismo</h2>
+      <p>La tasa candidatos→verificados es la única métrica honesta que el cerebro tiene de sí mismo.</p>
+    </div>
+    <div class="cards" id="metricas"></div>
+  </section>
+
+  <!-- ══ SALUD ══ -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Salud · qué está roto</h2>
+      <p>Las cuatro sondas del repo, ejecutadas de verdad. Cada hallazgo se puede mandar a corregir.</p>
+    </div>
+    <div id="salud"><div class="empty">Pulsa «Sondear salud» para correr las sondas.</div></div>
+  </section>
+
+  <!-- ══ CORRIDAS ══ -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Corridas</h2>
+      <p><code class="mono">docs/cerebro-runs.jsonl</code> — más reciente primero.</p>
+    </div>
+    <div id="corridas"></div>
+  </section>
+
+  <!-- ══ SALIDA CRUDA ══ -->
+  <section id="sec-salida" hidden>
+    <div class="shead"><h2 class="eyebrow">Salida de la corrida</h2></div>
+    <pre id="job-out"></pre>
+  </section>
+
+</div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+let estado = null, modoSel = null, job = null, poll = null;
+
+/* ── el grafo ────────────────────────────────────────────────────────────
+   Las bandas fijas (gate, cierre, rastro) son la estructura que `cerebro.md`
+   declara para TODO modo. La banda del medio se deriva de la cadena del modo
+   elegido, así que el diagrama no puede prometer un paso que el skill no tiene.
+   Cada nodo trae su MATCHER: la regex con la que un `tool_use` lo enciende. */
+const GATE = [
+  { id: "calibrate", t: "CALIBRATE", s: "out/ + cases.json", re: /rm -rf|build-cases/i },
+  { id: "cimiento", t: "CIMIENTO", s: "err = 0", re: /validate-schema|audit-consistency|audit-design|audit-skills/i },
+  { id: "drift", t: "DRIFT", s: "memoria", re: /curar-memoria|claude\.md/i },
+];
+const CIERRE = [
+  { id: "/blindar", t: "/blindar", s: "clase enforzable" },
+  { id: "/learn", t: "/learn", s: "lecciones y descartes" },
+  { id: "/retro", t: "/retro", s: "cosecha" },
+];
+/* RASTRO no se enciende NUNCA por herramientas: solo por el hecho comprobado
+   de que apareció una entrada nueva en el log con esos campos. Cuando sí
+   matcheaba eventos, `log` se encendía porque la corrida había ejecutado
+   `git log` — el diagrama afirmaba un cierre que no había ocurrido. Un panel
+   que miente sobre el estado es peor que no tenerlo. */
+const RASTRO = [
+  { id: "log", t: "LOG", s: "cerebro-runs.jsonl", sinEventos: true },
+  { id: "automejora", t: "AUTOMEJORA", s: "mejora al modo", sinEventos: true },
+  { id: "skill_scan", t: "SKILL SCAN", s: "skill sin usar", sinEventos: true },
+];
+
+/** Tokens de skill dentro de la cadena declarada en la tabla de `cerebro.md`. */
+function cadenaDeNodos(cadena) {
+  const tok = [...cadena.matchAll(/`([^`]+)`/g)].map((m) => m[1]);
+  // WebSearch aparece sin backticks en la cadena de `frescura`.
+  if (/WebSearch/i.test(cadena)) tok.unshift("WebSearch");
+  const vistos = new Set();
+  return tok.filter((t) => !vistos.has(t) && vistos.add(t))
+            .map((t) => ({ id: t, t, s: t.startsWith("/") ? "skill del loop" : "librería" }));
+}
+
+/* Un nodo se enciende con un `tool_use`, y el criterio tiene que ser ESTRECHO.
+   La primera versión aceptaba `\bnombre\b`, así que cualquier prosa que
+   contuviera la palabra encendía el nodo. Ahora solo cuentan tres formas
+   inequívocas: el nombre de la herramienta (`WebSearch`), la forma citada que
+   produce el tool input (`{"skill":"simplify"}`) y la forma con barra que se
+   usa al invocar un comando del repo (`/blindar`). */
+function coincide(n, ev) {
+  if (n.sinEventos) return false;
+  if (n.re) return n.re.test(ev.detalle);
+  const id = n.id.replace(/^\//, "");
+  if (ev.tool.toLowerCase() === id.toLowerCase()) return true;
+  const e = id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`"${e}"|/${e}\\b`, "i").test(ev.detalle);
+}
+
+function nodosDelModo(modo) {
+  return [
+    { banda: "Gate común", nodos: GATE, clase: "gate" },
+    { banda: `Cadena · ${modo.arg || "diagnóstico"}`, nodos: cadenaDeNodos(modo.cadena) },
+    { banda: "Cierre obligatorio", nodos: CIERRE },
+    { banda: "Rastro", nodos: RASTRO },
+  ];
+}
+
+/* ── estado de cada nodo, derivado de los eventos de la corrida ──────────
+   Se recorre el grafo en orden y se marca hasta dónde llegó la corrida: lo
+   anterior queda `hecho`, el último que casó queda `activo`. */
+function estadosDeNodos(bandas) {
+  const planos = bandas.flatMap((b) => b.nodos);
+  const idx = new Map(planos.map((n, i) => [n.id, i]));
+  let max = -1;
+  const tocados = new Set();
+
+  for (const ev of job?.eventos ?? []) {
+    for (const n of planos) {
+      if (coincide(n, ev)) { tocados.add(n.id); max = Math.max(max, idx.get(n.id)); }
+    }
+  }
+  // La banda RASTRO no se enciende por herramientas sino por el hecho
+  // comprobado: ¿apareció la entrada en el log, con esos campos?
+  if (job?.rastro) for (const k of ["log", "automejora", "skill_scan"])
+    if (job.rastro[k]) { tocados.add(k); max = Math.max(max, idx.get(k)); }
+
+  const corriendo = job?.estado === "corriendo";
+  const clases = {};
+  for (const n of planos) {
+    const i = idx.get(n.id);
+    if (tocados.has(n.id)) clases[n.id] = (corriendo && i === max) ? "activo" : "hecho";
+    else clases[n.id] = "";
+  }
+  return clases;
+}
+
+function pintarFlujo() {
+  if (!modoSel) return;
+  const bandas = nodosDelModo(modoSel);
+  const cl = estadosDeNodos(bandas);
+  $("#flujo").innerHTML = bandas.map((b, bi) => `
+    ${bi ? '<div class="ev"></div>' : ""}
+    <div class="banda">
+      <div class="banda-tag">${esc(b.banda)}</div>
+      <div class="fila">
+        ${b.nodos.length ? b.nodos.map((n, i) => `
+          ${i ? '<div class="eh"></div>' : ""}
+          <div class="nodo ${b.clase ?? ""} ${cl[n.id] ?? ""}">
+            <div class="n-t">${esc(n.t)}</div>
+            <div class="n-s">${esc(n.s)}</div>
+          </div>`).join("")
+        : `<div class="nodo"><div class="n-t">—</div>
+             <div class="n-s">la tabla no declara cadena</div></div>`}
+      </div>
+    </div>`).join("");
+
+  const vivo = job?.estado === "corriendo";
+  $("#lienzo").classList.toggle("corriendo", vivo);
+  $("#pulso").classList.toggle("vivo", vivo);
+}
+
+/* ── estado del repo ─────────────────────────────────────────────────── */
+async function cargarEstado() {
+  estado = await (await fetch("/api/state")).json();
+  $("#chip-repo").textContent = estado.repo.split("/").pop();
+  $("#chip-perm").textContent = "permisos: " + estado.permisos;
+  if (!modoSel) modoSel = estado.modos[0];
+  pintarTabs(); pintarFlujo(); pintarMetricas(); pintarCorridas();
+}
+
+function pintarTabs() {
+  $("#tabs").innerHTML = estado.modos.map((m) => `
+    <button class="tab" role="tab" data-modo="${esc(m.arg)}"
+      aria-selected="${m.arg === modoSel.arg}">
+      ${esc(m.arg || "diagnóstico")} <span class="tasa">M${esc(m.n)}</span>
+    </button>`).join("");
+  document.querySelectorAll(".tab").forEach((b) => b.onclick = () => {
+    modoSel = estado.modos.find((m) => m.arg === b.dataset.modo);
+    pintarTabs(); pintarFlujo();
+  });
+}
+
+function pintarMetricas() {
+  const m = estado.metricas;
+  const tasa = m.tasa === null ? "—" : Math.round(m.tasa * 100) + "%";
+  const cards = [
+    ["Corridas registradas", esc(m.corridas), Object.entries(m.porModo)
+      .map(([k, v]) => `${k} ×${v}`).join(" · ") || "sin corridas"],
+    ["Tasa de verificación", esc(tasa),
+      `${m.verificados} verificados de ${m.candidatos} candidatos · ${m.descartados} descartados`],
+    ["Delegación", `${m.delegaciones} <small>invocaciones</small>`,
+      `${m.aMano} trabajo(s) hecho(s) a mano — cada uno es una violación declarada`],
+  ];
+  $("#metricas").innerHTML = cards.map(([t, v, h]) => `
+    <div class="card"><span class="eyebrow">${esc(t)}</span>
+      <div class="metric">${v}</div><div class="hint">${esc(h)}</div></div>`).join("");
+}
+
+function pintarCorridas() {
+  const c = estado.corridas;
+  if (!c.length) {
+    $("#corridas").innerHTML = `<div class="empty">Todavía ninguna corrida ha dejado rastro.</div>`;
+    return;
+  }
+  $("#corridas").innerHTML = c.map((r) => {
+    const tasa = typeof r.candidatos === "number" && r.candidatos > 0
+      ? `${r.verificados}/${r.candidatos} verificados` : "";
+    const alerta = r._faltantes?.length
+      ? `<span class="badge b-warn">faltan ${r._faltantes.length}</span>` : "";
+    const campo = (k, label) => r[k]
+      ? `<dt>${label}</dt><dd>${esc(Array.isArray(r[k]) ? r[k].join(" · ") : r[k])}</dd>` : "";
+    return `<details class="corrida">
+      <summary><span class="badge b-run">${esc(r.modo)}</span>
+        <strong class="mono">${esc(r.fecha)}</strong>
+        <span class="tasa">${esc(tasa)}</span>${alerta}
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <dl>${campo("señal","Señal")}${campo("hallazgo","Hallazgo")}${campo("descartes","Descartes")}
+        ${campo("automejora","Automejora")}${campo("skill_scan","Skill scan")}
+        ${campo("skills_invocados","Invocados")}${campo("skills_a_mano","A mano")}
+        ${campo("coste","Coste")}</dl>
+      ${r._faltantes?.length ? `<div class="warnbox">Esta entrada no cumple el contrato
+        vigente: faltan <code class="mono">${esc(r._faltantes.join(", "))}</code>.</div>` : ""}
+    </details>`;
+  }).join("");
+}
+
+/* ── salud ───────────────────────────────────────────────────────────── */
+$("#btn-sondear").onclick = async () => {
+  const b = $("#btn-sondear");
+  b.disabled = true; b.textContent = "Sondeando…";
+  $("#salud").innerHTML = `<div class="empty">Corriendo las cuatro sondas…</div>`;
+  try { pintarSalud(await (await fetch("/api/health")).json()); }
+  finally { b.disabled = false; b.textContent = "Sondear salud"; }
+};
+
+function pintarSalud(h) {
+  const badge = { ok: "b-ok", warn: "b-warn", error: "b-err", roto: "b-err" };
+  const cab = h.cimientoRoto
+    ? `<div class="warnbox"><strong>Cimiento roto.</strong> El cerebro no construye sobre
+       <code class="mono">err&gt;0</code>: arregla esto antes de gatillar otro modo.</div>` : "";
+  $("#salud").innerHTML = cab + h.sondas.map((s) => {
+    const finds = [...s.errores.map((t) => ["e", t]), ...s.warns.map((t) => ["w", t])]
+      .map(([k, t], i) => `
+      <div class="find ${k}"><span>${esc(t)}</span>
+        <select class="mini" id="dest-${esc(s.id)}-${i}">
+          ${estado.modos.filter((m) => m.arg).map((m) =>
+            `<option value="${esc(m.arg)}"${m.arg === "bugs" ? " selected" : ""}>${esc(m.arg)}</option>`).join("")}
+        </select>
+        <button class="mini" data-fix="${esc(t).slice(0, 600)}"
+          data-dest="dest-${esc(s.id)}-${i}">Mandar</button></div>`).join("");
+    return `<div class="sonda">
+      <div class="top"><span class="badge ${badge[s.estado]}">${esc(s.estado)}</span>
+        <strong>${esc(s.label)}</strong><span class="tasa">${esc(s.que)}</span>
+        <span class="grow"></span>
+        <button class="mini" data-log="${esc(s.id)}">Ver salida</button></div>
+      ${finds}
+      ${s.desync?.length ? `<div class="warnbox">El panel no logró leer todos los hallazgos:
+        ${esc(s.desync.join("; "))}. Abre la salida cruda — el conteo de la sonda manda.</div>` : ""}
+      <pre id="log-${esc(s.id)}" hidden>${esc(s.salida)}</pre></div>`;
+  }).join("");
+
+  document.querySelectorAll("[data-log]").forEach((b) => b.onclick = () => {
+    const p = $("#log-" + b.dataset.log);
+    p.hidden = !p.hidden; b.textContent = p.hidden ? "Ver salida" : "Ocultar";
+  });
+  document.querySelectorAll("[data-fix]").forEach((b) =>
+    b.onclick = () => gatillar($("#" + b.dataset.dest).value, b.dataset.fix));
+}
+
+/* ── disparo ─────────────────────────────────────────────────────────── */
+$("#btn-gatillar").onclick = () => gatillar(modoSel.arg, $("#contexto").value.trim());
+
+async function gatillar(modo, contexto = "") {
+  const nombre = modo || "diagnóstico";
+  if (!confirm(`Gatillar «${nombre}».\n\nLanza una corrida real de Claude Code sobre el ` +
+      `repo con --permission-mode ${estado.permisos}: puede editar archivos y consumir ` +
+      `tokens.` + (contexto ? `\n\nContexto:\n${contexto}` : ""))) return;
+
+  const sel = estado.modos.find((m) => m.arg === modo);
+  if (sel) { modoSel = sel; pintarTabs(); }
+
+  const r = await fetch("/api/fire", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ modo, contexto }),
+  });
+  const j = await r.json();
+  if (!r.ok) return alert(j.error);
+  job = j;
+  $("#ticker").hidden = false;
+  $("#sec-salida").hidden = false;
+  refrescar(j);
+  clearInterval(poll);
+  poll = setInterval(tick, 1500);
+}
+
+async function tick() {
+  if (!job) return;
+  refrescar(await (await fetch("/api/job?id=" + job.id)).json());
+  if (["listo", "fallo", "cancelado", "roto"].includes(job.estado)) {
+    clearInterval(poll);
+    cargarEstado();          // la corrida pudo escribir en el log
+  }
+}
+
+function refrescar(j) {
+  job = j;
+  pintarFlujo();
+  $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e) => `
+    <li><b>${esc(e.tool)}</b><span>${esc(e.detalle.slice(e.tool.length + 1, 150))}</span></li>`).join("")
+    || `<li><span>sin herramientas todavía…</span></li>`;
+
+  const r = j.resultado;
+  $("#resumen-job").textContent = j.estado === "corriendo"
+    ? `corriendo · ${(j.eventos ?? []).length} herramientas`
+    : `${j.estado}` + (r ? ` · ${(r.duracion_ms / 1000).toFixed(1)}s · ${r.turnos} turnos` +
+        (r.coste_usd != null ? ` · $${r.coste_usd.toFixed(3)}` : "") : "");
+  const bl = $("#bloqueo");
+  bl.hidden = !j.bloqueo;
+  if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
+  $("#btn-detener").disabled = j.estado !== "corriendo";
+  $("#btn-gatillar").disabled = j.estado === "corriendo";
+  $("#job-out").textContent = j.salida || "sin salida de texto todavía…";
+}
+
+$("#btn-detener").onclick = async () => {
+  if (!job) return;
+  refrescar(await (await fetch("/api/stop", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ id: job.id }),
+  })).json());
+  clearInterval(poll);
+};
+
+cargarEstado();
+</script>
+</body>
+</html>

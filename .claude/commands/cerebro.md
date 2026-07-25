@@ -6,13 +6,7 @@ argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura �
 Estás ejecutando el **cerebro** del repo: un **despachador de modos** que orquesta skills — no ejecuta su trabajo. Corre solo cuando lo invocas, con el modo que le das.
 
 *Por qué es así (V1→V7, los cuatro errores que lo formaron): [`docs/cerebro-historia.md`](../../docs/cerebro-historia.md). No hace falta leerlo para correr una corrida.*
-**Objetivo medible.**
-```
-maximizar   Impact  −  λ·Deuda
-  Impact = valor creado   (contenido con demanda de búsqueda, palancas de SEO/tráfico, profundidad/alcance del corpus)
-  Deuda  = err + drift + unenforced + gaps      (err=0 es GATE DURO: no construyas sobre cimiento roto)
-```
-La deuda se mantiene **bajo un umbral**; **el grueso del presupuesto va a Impact.** El trinquete (`G↑`) sigue, pero es medio, no fin.
+**Objetivo.** Crear valor; la deuda es un **gate**, no la meta — `err=0` antes de construir, y el grueso del presupuesto a lo que rinde. La métrica real del loop no es una fórmula: es la tasa candidatos→verificados del log (ver CIERRE).
 
 Regla de oro (anti-fluff): **cada disparo cita su señal concreta.** Vale para deuda Y para impacto: "hueco Chile×2010s con 40 impresiones/mes en GSC → `/nuevo-caso`" está permitido; "mejorar el contenido" está prohibido.
 
@@ -33,9 +27,7 @@ El cerebro **orquesta, no ejecuta**. Si la acción cae en el dominio de uno de e
 | CAPTURE | apareció una lección o un descarte | **`/learn`** |
 | CAPTURE | cierre de corrida | **`/retro`** |
 
-*Se volvió obligatorio tras tres incumplimientos en una sola sesión (jul 2026 — detalle en la historia).*
-
-**Al cerrar, declara qué skills del loop invocaste y cuáles hiciste a mano.** Si hiciste el trabajo de uno sin invocarlo, dilo — es el único modo de que la violación sea visible.
+*Obligatorio tras tres incumplimientos en una sesión (jul 2026 — detalle en la historia).* **Al cerrar declara cuáles invocaste y cuáles hiciste a mano** — es el único modo de que la violación sea visible.
 
 ---
 
@@ -45,22 +37,22 @@ Estos sí se invocan **solo cuando superan al enfoque plano** (Karpathy: simplic
 
 | Skill | Paso | Cuándo / para qué |
 |---|---|---|
-| **`run`** | M2 · M3 · VERIFY | Levanta la app. **Llave de todo lo interactivo**: sin build no hay render, y encadenado `run` → `webapp-testing` los modos de UI/UX pasan de inspeccionar marcado a observar el sitio. |
+| **`run`** | M2 · M3 · VERIFY | Levanta la app. **Llave de lo interactivo**: encadenado con `webapp-testing`, los modos de UI/UX pasan de inspeccionar marcado a observar el sitio. |
 | **`webapp-testing`** (Playwright) | M2 · M3 · VERIFY | Renderiza e **interactúa** — lo único que las sondas node-plano no hacen. Da la señal de fricción real y asegura cambios interactivos. Encadénalo tras **`run`**; sin build, cae a `gh-pages`. |
-| **`security-review`** | M2 · bugs | Revisión de seguridad del diff. Dimensión sin cubrir sobre un repo con anon key de Supabase y funciones `SECURITY DEFINER` en producción. |
+| **`security-review`** | M2 · bugs | Seguridad del diff. Dimensión sin cubrir: anon key de Supabase y funciones `SECURITY DEFINER` en producción. |
 | **`review`** | M2 · antes de mergear | Segunda mirada sobre el PR; complementa a las sondas, que solo ven lo mecanizado. |
 | **`simplify`** | M4 · mejoras-tec | Reuso, simplificación, eficiencia. **No caza bugs por diseño** — por eso `mejoras-tec` es un modo aparte de `bugs`. |
 | **`skill-creator`** | RATCHET | **Disparador único: la corrida editó un skill del loop.** Evals sobre el cambio y afina el `description`. Fuera de ahí no lo llames: «¿funciona el cerebro?» en abstracto es n=1. |
 | **`dataviz`** | M0 · M3 · articular | Cuando el estado se lee mejor en gráfico que en texto (MECE, cobertura país×década, backlog por tier). Solo si el visual gana. |
 | **`artifact-design`** | M0 · M3 · CAPTURE | Empaqueta el estado/análisis de impacto como artifact estilado (dashboard) cuando el output es para revisar/compartir, no un dump de terminal. |
 
-**Analítica externa (GSC/GA4)**: el conector Windsor está **gated por plan** (devuelve ceros) y la allowlist bloquea GSC/GA4 directo — comprobado. El proxy de demanda sigue siendo lo **cacheado** en `CLAUDE.md`; declara la incertidumbre, no finjas tráfico.
+**GSC/GA4 no son alcanzables** (Windsor gated, allowlist bloquea el directo). Usa la demanda **cacheada** en `CLAUDE.md` y declara la incertidumbre — no finjas tráfico.
 
 ---
 
 ## Los MODOS — tú eliges, el cerebro despacha
 
-El cerebro **no decide solo cuándo correr ni sobre qué**. Se invoca con un modo explícito; cada modo es una cadena de skills distinta. Sin argumento cae al modo diagnóstico, que sondea y **te pregunta qué disparar**.
+Se invoca con un modo explícito; cada modo es una cadena de skills distinta. Sin argumento cae al diagnóstico, que sondea, **elige y gatilla**.
 
 | Modo | Para qué | Cadena de skills |
 |---|---|---|
@@ -71,13 +63,13 @@ El cerebro **no decide solo cuándo correr ni sobre qué**. Se invoca con un mod
 | `frescura` | mantener vivos los casos | WebSearch + `gh-pages` → `/nuevo-caso` (disciplina) → `/learn` |
 | *(sin argumento)* | diagnóstico | sondas → elige modo → **lo gatilla** |
 
-**Toda cadena cierra igual**, sea cual sea el modo: **`/blindar`** si se abrió una clase enforzable, **`/learn`** para lecciones y descartes, **`/retro`** al cerrar.
+**Toda cadena cierra igual**: **`/blindar`** si se abrió una clase enforzable · **`/learn`** para lecciones y descartes · **`/retro`** al cerrar · y el **cierre obligatorio** — log, automejora y skill scan (ver Reglas transversales).
 
 ---
 
 ### Gate común a TODO modo
 
-Antes de cualquier cosa, sea cual sea el modo:
+Sea cual sea el modo:
 
 1. **CALIBRATE** — `rm -rf web/out` + regenera `cases.json`. Un artefacto rancio miente. *(Lección out/ rancio.)*
 2. **Cimiento** — `validate-schema.mjs`, `audit-consistency.mjs`, `audit-design.mjs`. Si `err>0` **se arregla ya**: no se construye sobre schema roto, da igual lo que hayas pedido. Reincidente → **`/blindar`**.
@@ -181,13 +173,9 @@ Corre el gate, lee las señales de impacto (cobertura, demanda cacheada, profund
 
 El umbral de ACT sigue vigente para lo que toca contenido, copy, ≥5 archivos o borra — pero **elegir el modo NO es una de esas cosas**: es tu decisión, no suya.
 
-**Aquí —y SOLO aquí— vive la regla de precedencia**: existe para corregir el sesgo del cerebro a elegir lo que se comprueba barato. Cuando eliges tú el modo, sobra.
+**Aquí —y SOLO aquí— vive la regla de precedencia**, que corrige el sesgo del cerebro a elegir lo barato de comprobar: si propones algo que no sea corpus, nombra la palanca superior que saltas y prueba **en esta corrida** que está agotada («agotada» para cobertura = `/proximo-caso` corrido, sin candidato anclable). Un recuerdo o un registro de otra corrida no cuentan. Cuando eliges tú el modo, esto sobra.
 
-En diagnóstico, entonces: si vas a proponer algo que no sea corpus, nombra la palanca superior que saltas y prueba **en esta corrida** que está agotada. «Agotada» para cobertura = `/proximo-caso` corrido, sin candidato anclable. Un recuerdo o un registro de otra corrida no cuentan.
-
-**Honestidad**: la deuda la miden sondas; el impacto no —GSC no es alcanzable—, así que usa cobertura y demanda cacheada como proxy y **declara la incertidumbre**. «Corpus maduro» se gana corriendo el sweep, nunca se supone.
-
-**Meta-trabajo sobre el propio loop es OVERHEAD, no Impact** — admisible cuando desbloquea una palanca, pero nunca cuenta como el ataque de la corrida. Si no se tocó el corpus, dilo en el reporte.
+**Honestidad**: el impacto no se mide desde aquí — usa cobertura y demanda cacheada como proxy y declara la incertidumbre. «Corpus maduro» se gana corriendo el sweep. Y el **meta-trabajo sobre el loop es overhead, no ataque**: si no se tocó el corpus, dilo.
 
 **Encadenamiento entre modos**: si un modo destapa trabajo de otro, anúncialo y encadena en la misma corrida — devolverlo como sugerencia tira el contexto que costó levantar.
 
@@ -220,8 +208,17 @@ Pide OK si el disparo (a) crea o reescribe **contenido**, (b) cambia **copy que 
 - **Los DESCARTES se capturan igual que los aciertos** → [`docs/registros.md`](../../docs/registros.md), fechados y **con motivo** — el motivo decide si caducan («no existe» ≠ «no pude anclarlo desde este entorno»).
 - Reporte para compartir → **`artifact-design`**.
 
-### CONVERGE
-Termina cuando el modo pedido está agotado y `err=0`. **Declara qué skills del loop invocaste y cuáles hiciste a mano** — si hiciste el trabajo de uno sin invocarlo, dilo. Si oscila (arreglar A rompe B) → escala.
+### CIERRE OBLIGATORIO — toda corrida deja rastro, se mejora y busca skill
+
+Sin esto una corrida se evapora: el trabajo queda en el PR pero el *aprendizaje del loop* no. Tres salidas, no negociables:
+
+**1 · LOG** → una línea JSON en [`docs/cerebro-runs.jsonl`](../../docs/cerebro-runs.jsonl) con `fecha`, `modo`, `señal`, `skills_invocados`, `skills_a_mano`, `candidatos`/`verificados`/`descartados`, `hallazgo`, `descartes`, `automejora`, `skill_scan`, `coste`. **La tasa candidatos→verificados es la única métrica honesta que el loop tiene de sí mismo** — sin ella «¿el cerebro da valor?» sigue sin respuesta. Para verlo como monitor: `artifact-design` sobre el JSONL.
+
+**2 · AUTOMEJORA** → cada corrida deja **una mejora concreta al modo que acaba de correr**, o declara «ninguna» con motivo. No sirve «funcionó bien»: el criterio es qué te habría ahorrado trabajo *esta vez*. La primera corrida de `mejoras-ux` (jul 2026) produjo la suya: el modo obligaba a observar pero no a **distinguir dev de producción**, y 3 de 9 candidatos eran artefactos de `next dev`.
+
+**3 · SKILL SCAN** → busca **un** skill del inventario que podrías haber usado y no usaste, o uno que convenga mejorar. El inventario son `.claude/commands/`, `~/.claude/skills/` y los built-in. La misma corrida encontró el suyo: `qa-screenshots.mjs` ya existía para la captura visual y se estaba reimplementando a mano.
+
+Termina cuando el modo pedido está agotado y `err=0`. **Declara qué skills del loop invocaste y cuáles hiciste a mano.** Si oscila (arreglar A rompe B) → escala.
 
 ---
 
