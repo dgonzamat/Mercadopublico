@@ -1,0 +1,82 @@
+{
+  "id": "latakia-p8a-2016",
+  "num": 330,
+  "name": "P-8A frente a Latakia",
+  "name_en": "P-8A off Latakia",
+  "year_start": 2016,
+  "country": "SY",
+  "country_name": "Siria",
+  "flag": "🇸🇾",
+  "location": {
+    "lat": 36.18,
+    "lng": 34.99,
+    "place": "Mediterráneo Oriental, 55 millas náuticas al noroeste de Latakia"
+  },
+  "tier": "A",
+  "probability": 25,
+  "category": "incident",
+  "patterns": ["8s", "8e"],
+  "summary": "El 18 de noviembre de 2016, un P-8A Poseidon que vigilaba un grupo de portaaviones en el Mediterráneo Oriental siguió con su sensor electroóptico e infrarrojo un objeto no identificado a unas 55 millas náuticas al noroeste de Latakia, volando a unos 500 nudos en rumbo sureste y en perfil rasante sobre el mar. La tripulación lo describió como un posible lanzamiento de misil y perdió el contacto unos dos minutos después. El parte quedó archivado como actividad regional habitual, y ocho años más tarde fue desclasificado dentro del primer lote PURSUE.",
+  "summary_en": "On 18 November 2016 a P-8A Poseidon monitoring a carrier task group in the Eastern Mediterranean tracked an unidentified object on its electro-optical and infrared sensor some 55 nautical miles northwest of Latakia, flying at roughly 500 knots on a southeasterly heading in a sea-skimming profile. The crew described it as a possible missile launch and lost contact about two minutes later. The report was filed as routine regional activity, and eight years later it was declassified in the first PURSUE tranche.",
+  "posterior": {
+    "mundano_natural": 0.12,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.62,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.02,
+    "indet": 0.17
+  },
+  "whatHappened": "El 18 de noviembre de 2016, un avión de patrulla marítima P-8A Poseidon de la Armada estadounidense operaba sobre el Mediterráneo Oriental en misión de vigilancia asociada a un grupo de combate de portaaviones. Durante la patrulla, el sensor electroóptico e infrarrojo de la aeronave detectó un objeto no identificado a baja cota, a unas 55 millas náuticas al noroeste de Latakia, en la costa siria. El objeto se desplazaba a aproximadamente 500 nudos —unos 925 kilómetros por hora— en rumbo sureste, alejándose de una posición conocida, y la tripulación lo caracterizó como en «sea skim mode»: el perfil rasante sobre la superficie del mar propio de un misil antibuque en fase de crucero.\n\nEl parte operacional registra que la tripulación interpretó lo observado como un posible lanzamiento de misil. El seguimiento duró poco: la aeronave perdió el contacto visual del objeto unas 40 millas náuticas al noroeste de Latakia, aproximadamente dos minutos después de la detección inicial. No hubo identificación positiva, ni intercepción, ni aproximación al P-8A. El comandante de misión calificó la interacción como segura y el episodio se cerró en el mismo documento en que se abrió.\n\nEl contexto militar de esa semana es determinante para leer el parte. Desde septiembre de 2015 Rusia mantenía una fuerza expedicionaria en Siria articulada en torno a la base aérea de Hmeimim, a pocos kilómetros al sureste de Latakia, y a la instalación naval de Tartús. En octubre de 2016 el grupo del portaaviones Almirante Kuznetsov se desplegó en el Mediterráneo Oriental, y a mediados de noviembre comenzó una ofensiva renovada que incluyó lanzamientos de misiles de crucero desde buques y el despliegue de sistemas costeros antibuque en el litoral sirio, armas cuyo perfil terminal es precisamente el vuelo rasante. El propio parte lo consigna: aunque era la primera vez que un P-8 observaba una posible actividad de misiles en el Mediterráneo Oriental, se evaluó como actividad estándar y coherente con lo que ya se estimaba para la región.\n\nEl documento —una hoja escueta de reporte de misión— permaneció clasificado durante ocho años. Fue desclasificado y publicado como DOW-UAP-D055 dentro del primer lote del Presidential Unsealing and Reporting System for UAP Encounters, el programa bajo el cual el Departamento de Guerra liberó centenares de registros operacionales relacionados con fenómenos anómalos no identificados.",
+  "whatHappened_en": "On 18 November 2016 a U.S. Navy P-8A Poseidon maritime patrol aircraft was operating over the Eastern Mediterranean on a surveillance mission tied to a carrier task group. During the patrol the aircraft's electro-optical and infrared sensor detected an unidentified low-flying object roughly 55 nautical miles northwest of Latakia, on the Syrian coast. The object was moving at approximately 500 knots — about 925 kilometres per hour — on a southeasterly heading, outbound from a known position, and the crew characterised it as being in \"sea skim mode\": the wave-hugging profile typical of an anti-ship missile in its cruise phase.\n\nThe mission report records that the crew read what they saw as a possible missile launch. The track was brief: the aircraft lost visual contact with the object some 40 nautical miles northwest of Latakia, roughly two minutes after the initial detection. There was no positive identification, no intercept and no approach toward the P-8A. The mission commander rated the interaction as safe, and the episode was closed in the same document that opened it.\n\nThe military context of that week is decisive for reading the report. Since September 2015 Russia had maintained an expeditionary force in Syria built around Hmeimim air base, a few kilometres southeast of Latakia, and the naval facility at Tartus. In October 2016 the carrier group of the Admiral Kuznetsov deployed to the Eastern Mediterranean, and by mid-November a renewed offensive was under way that included cruise-missile launches from ships and the deployment of coastal anti-ship systems along the Syrian shore — weapons whose terminal profile is precisely sea-skimming flight. The report says as much itself: although this was the first time a P-8 had observed possible missile activity in the Eastern Mediterranean, it was assessed as standard activity, consistent with what was already estimated for the region.\n\nThe document — a terse single mission-report sheet — stayed classified for eight years. It was declassified and published as DOW-UAP-D055 in the first tranche of the Presidential Unsealing and Reporting System for UAP Encounters, the programme under which the Department of War released hundreds of operational records connected to unidentified anomalous phenomena.",
+  "whyMatters": "Este caso importa menos por lo que el objeto pudo ser que por lo que revela sobre cómo se construyen los catálogos de fenómenos no identificados. La tripulación que lo reportó no creyó estar viendo algo exótico: lo describió como un probable misil y la cadena de mando lo archivó como actividad regional normal. Aun así, el parte terminó ocho años después en un lote de desclasificación dedicado a fenómenos anómalos. El expediente muestra que la etiqueta institucional no se aplica solo a lo inexplicable, sino a todo contacto que en su momento no recibió identificación positiva —una frontera mucho más porosa de lo que sugiere el debate público.\n\nEs además un ejemplo nítido del carácter sensorial de la observación militar contemporánea. No hubo testigo mirando por una ventanilla: hubo una traza en un sensor electroóptico e infrarrojo, una velocidad estimada, un rumbo y una pérdida de contacto a los dos minutos. Todo el expediente cabe en esos parámetros. Esa escasez es la norma, no la excepción, y explica por qué tantos episodios quedan sin resolver: no porque la evidencia sea extraordinaria, sino porque es delgada. Un contacto de dos minutos sin identificación positiva es irresoluble por construcción, con independencia de qué lo haya causado.\n\nEn la partición del corpus, el caso se apoya con fuerza en la narrativa de tecnología de otro Estado, la clase que agrega menos masa del conjunto pese a ser, en episodios como este, la explicación mejor documentada. El contexto es explícito y verificable —una campaña militar extranjera activa a pocas decenas de millas, con armamento antibuque desplegado cuyo perfil de vuelo coincide con lo observado—, y la propia evaluación del mando apunta en esa dirección. La incertidumbre residual no procede de que la hipótesis convencional sea débil, sino de que el registro es demasiado breve para cerrarla formalmente.\n\nFinalmente, el caso ilustra qué liberó realmente el programa PURSUE. El grueso del material no son pruebas concluyentes, sino registros operacionales rutinarios: partes escuetos, mayormente redactados, que documentan que algo se reportó y bajo qué circunstancias, sin resolver su naturaleza. Su valor es de procedencia y de patrón —son documentos militares primarios, no relatos de prensa— y permiten medir con qué frecuencia y en qué teatros la cadena operacional levantó estos reportes. Leer esos lotes esperando revelaciones lleva a la decepción; leerlos como lo que son, el sedimento administrativo de una práctica sostenida de reporte, los vuelve mucho más informativos.",
+  "whyMatters_en": "This case matters less for what the object may have been than for what it reveals about how catalogues of unidentified phenomena are built. The crew that reported it did not believe they were seeing anything exotic: they described a probable missile, and the chain of command filed it as normal regional activity. Even so, the report ended up eight years later in a declassification tranche dedicated to anomalous phenomena. The file shows that the institutional label attaches not only to the inexplicable, but to any contact that went without positive identification at the time — a far more porous boundary than public debate suggests.\n\nIt is also a clean example of how sensor-driven contemporary military observation has become. There was no witness looking out of a window: there was a track on an electro-optical and infrared sensor, an estimated speed, a heading, and a loss of contact two minutes later. The entire file fits inside those parameters. That thinness is the norm rather than the exception, and it explains why so many episodes stay unresolved: not because the evidence is extraordinary, but because it is sparse. A two-minute contact without positive identification is unresolvable by construction, whatever caused it.\n\nWithin the corpus partition, the case leans heavily on the other-state technology narrative — the class that contributes the least aggregate mass, despite being, in episodes like this one, the best-documented explanation. The context is explicit and verifiable: an active foreign military campaign a few tens of miles away, with deployed anti-ship weapons whose flight profile matches what was observed, and the command's own assessment pointing the same way. The residual uncertainty comes not from the conventional hypothesis being weak, but from the record being too brief to close it formally.\n\nFinally, the case illustrates what the PURSUE programme actually released. The bulk of the material is not conclusive proof but routine operational records: terse, largely redacted reports documenting that something was reported and under what circumstances, without resolving its nature. Their value lies in provenance and pattern — these are primary military documents, not press accounts — and they make it possible to measure how often and in which theatres the operational chain raised such reports. Reading those tranches expecting revelations leads to disappointment; reading them as what they are, the administrative sediment of a sustained reporting practice, makes them far more informative.",
+  "evidence": [
+    "Reporte de misión DOW-UAP-D055, desclasificado por el Departamento de Guerra en el primer lote PURSUE, que documenta la observación del 18 de noviembre de 2016.",
+    "Detección mediante sensor electroóptico e infrarrojo del P-8A: objeto a baja cota, unos 500 nudos, rumbo sureste, a 55 millas náuticas al noroeste de Latakia.",
+    "Caracterización explícita del perfil de vuelo como rasante sobre el mar, coherente con la fase de crucero de un misil antibuque.",
+    "Pérdida de contacto visual a unas 40 millas náuticas al noroeste de Latakia, aproximadamente dos minutos después de la detección inicial.",
+    "Calificación de la interacción como segura por parte del comandante de misión, sin aproximación ni maniobra hacia la aeronave.",
+    "Evaluación del propio parte: primera observación de posible actividad de misiles por un P-8 en el Mediterráneo Oriental, pero considerada actividad estándar para la región.",
+    "Contexto verificable: presencia militar rusa en Hmeimim y Tartús desde 2015 y despliegue del grupo del Almirante Kuznetsov en el Mediterráneo Oriental desde octubre de 2016."
+  ],
+  "evidence_en": [
+    "Mission report DOW-UAP-D055, declassified by the Department of War in the first PURSUE tranche, documenting the 18 November 2016 observation.",
+    "Detection via the P-8A's electro-optical and infrared sensor: low-flying object, roughly 500 knots, southeasterly heading, 55 nautical miles northwest of Latakia.",
+    "Explicit characterisation of the flight profile as sea-skimming, consistent with the cruise phase of an anti-ship missile.",
+    "Loss of visual contact some 40 nautical miles northwest of Latakia, roughly two minutes after initial detection.",
+    "The mission commander rated the interaction as safe, with no approach to or manoeuvre toward the aircraft.",
+    "The report's own assessment: first observed instance of possible missile activity by a P-8 in the Eastern Mediterranean, yet judged standard activity for the region.",
+    "Verifiable context: Russian military presence at Hmeimim and Tartus since 2015, and deployment of the Admiral Kuznetsov group to the Eastern Mediterranean from October 2016."
+  ],
+  "documents": [
+    {
+      "src": "/pursue/dow-uap-d55-mission-report-syria-november-2016.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D55 — Mission Report (MISREP), Siria, noviembre de 2016",
+      "title_en": "DOW-UAP-D55 — Mission Report (MISREP), Syria, November 2016",
+      "source": "Department of War / CENTCOM (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d55-mission-report-syria-november-2016.pdf"
+    }
+  ],
+  "sources": [
+    {
+      "name": "DOW-UAP-D055 — Mission Report (MISREP), Syria, November 2016",
+      "url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d55-mission-report-syria-november-2016.pdf",
+      "note": "Fuente primaria: el parte de misión desclasificado que documenta la observación.",
+      "note_en": "Primary source: the declassified mission report documenting the observation."
+    },
+    {
+      "name": "AARO — UAP Case Resolution Reports",
+      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/",
+      "note": "Repositorio oficial de resoluciones de casos de la oficina responsable del análisis.",
+      "note_en": "Official case-resolution repository of the office responsible for the analysis."
+    },
+    {
+      "name": "Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena",
+      "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
+      "note": "Marco institucional que describe cómo se catalogan y resuelven los reportes militares.",
+      "note_en": "Institutional framework describing how military reports are catalogued and resolved."
+    }
+  ]
+}
