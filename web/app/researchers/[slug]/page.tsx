@@ -68,12 +68,17 @@ export async function ResearcherDetailPage({
     <article className="mx-auto max-w-3xl space-y-12 py-4">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd(researcherJsonLd(r)) }}
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(researcherJsonLd(r, locale)),
+        }}
       />
       <BreadcrumbJsonLd
         items={[
-          { href: "/", label: "Inicio" },
-          { href: "/researchers/", label: "Actores" },
+          { href: "/", label: locale === "es" ? "Inicio" : "Home" },
+          {
+            href: "/researchers/",
+            label: locale === "es" ? "Actores" : "Researchers",
+          },
           { label: r.name },
         ]}
       />

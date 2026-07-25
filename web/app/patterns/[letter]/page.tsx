@@ -55,9 +55,11 @@ export async function PatternDetailPage(
     <article className="mx-auto max-w-3xl space-y-8">
       <BreadcrumbJsonLd
         items={[
-          { href: "/", label: "Inicio" },
-          { href: "/patterns/", label: "Patrones" },
-          { label: `${p.id} ${p.name}` },
+          { href: "/", label: locale === "es" ? "Inicio" : "Home" },
+          { href: "/patterns/", label: locale === "es" ? "Patrones" : "Patterns" },
+          {
+            label: `${p.id} ${locale === "es" ? p.name : p.name_en ?? p.name}`,
+          },
         ]}
       />
       <div className="flex items-center justify-between gap-4">

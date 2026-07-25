@@ -54,13 +54,15 @@ export async function PostDetailPage(
     <article className="mx-auto max-w-3xl space-y-10 py-4">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd(postJsonLd(p)) }}
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(postJsonLd(p, locale)),
+        }}
       />
       <BreadcrumbJsonLd
         items={[
-          { href: "/", label: "Inicio" },
+          { href: "/", label: locale === "es" ? "Inicio" : "Home" },
           { href: "/blog/", label: "Blog" },
-          { label: p.title },
+          { label: locale === "es" ? p.title : p.title_en ?? p.title },
         ]}
       />
       <div className="flex items-center justify-between gap-4">
