@@ -1271,6 +1271,51 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
+// ─── 9r-quater. RULE E33: JSON-LD consume pares bilingües crudos (ERROR) ──
+//
+// Tercera aparición del mismo anti-pattern: un campo del corpus que TIENE par
+// `_en` consumido crudo, así que la superficie inglesa publica español. Ya se
+// corrigió en el render (#659/#660) y en `generateMetadata`; los **datos
+// estructurados** eran la superficie que nadie miraba — `/cases/<id>/`, la ruta
+// INGLESA, publicaba a los rich results `headline`/`description` en español
+// (327 casos), y `casesCollectionJsonLd` un `name: "Casos UAP institucionales"`
+// (jul 2026). Google muestra ese texto en el resultado, así que el costo es el
+// mismo que el del `seoTitle` ES documentado en CLAUDE.md.
+//
+// La sonda es deliberadamente estrecha para no dar falsos positivos: solo mira
+// `lib/jsonld.ts`, solo las variables de entidad (`c`/`r`/`p`) y solo los campos
+// que REALMENTE tienen par en el schema. `r.name` queda fuera a propósito (los
+// nombres propios no se traducen: 0/91 researchers tienen `name_en`), igual que
+// `s.name` de las citas. Una línea está sana si menciona `locale` — el ternario
+// que elige idioma— o si ya lee la variante `_en`.
+{
+  const PAIRED = {
+    c: ["name", "summary", "country_name"], // UAPCase
+    r: ["bio_short", "bio"], //               Researcher (name NO: nombre propio)
+    p: ["title", "summary"], //               Post
+  };
+  const jsonldPath = path.join(root, "lib", "jsonld.ts");
+  if (fs.existsSync(jsonldPath)) {
+    const lines = fs.readFileSync(jsonldPath, "utf-8").split("\n");
+    for (const [varName, fields] of Object.entries(PAIRED)) {
+      const re = new RegExp(`\\b${varName}\\.(${fields.join("|")})\\b(?!_en)`);
+      lines.forEach((line, i) => {
+        if (line.trim().startsWith("//") || line.trim().startsWith("*")) return;
+        const m = line.match(re);
+        if (!m) return;
+        if (/\blocale\b/.test(line)) return; // elige idioma explícitamente
+        if (/countryEn\s*\(/.test(line)) return; // helper de locale equivalente
+        record(
+          "ERROR",
+          jsonldPath,
+          i + 1,
+          `E33 JSON-LD: \`${varName}.${m[1]}\` se consume crudo y tiene par bilingüe (\`${m[1]}_en\`) → la ruta INGLESA publica español a los rich results. Elige con el locale: \`locale === "es" ? ${varName}.${m[1]} : ${varName}.${m[1]}_en ?? ${varName}.${m[1]}\`.`,
+        );
+      });
+    }
+  }
+}
+
 // ─── 9s. RULE E28: frescura de la línea base de link rot (WARN) ──────────
 // Esta auditoría es node-plain SIN RED: no puede verificar si las fuentes
 // del corpus siguen vivas. Quien lo hace es `check-links.mjs --baseline` en

@@ -231,13 +231,15 @@ export async function CaseDetailPage(
         // Per-case Schema.org Article+Event+Place graph for rich snippets
         // (article cards in SERPs) and knowledge-graph entity linking on
         // the case's geographic location.
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd(caseJsonLd(c)) }}
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(caseJsonLd(c, locale)),
+        }}
       />
       <BreadcrumbJsonLd
         items={[
-          { href: "/", label: "Inicio" },
-          { href: "/cases/", label: "Casos" },
-          { label: c.name },
+          { href: "/", label: locale === "es" ? "Inicio" : "Home" },
+          { href: "/cases/", label: locale === "es" ? "Casos" : "Cases" },
+          { label: locale === "es" ? c.name : c.name_en ?? c.name },
         ]}
       />
       <div className="flex items-center justify-between gap-4">

@@ -141,7 +141,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(casesCollectionJsonLd(cases)),
+          __html: serializeJsonLd(casesCollectionJsonLd(cases, locale)),
         }}
       />
       <script

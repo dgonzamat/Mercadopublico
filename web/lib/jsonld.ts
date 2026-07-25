@@ -1,4 +1,5 @@
 import { SITE_URL } from "./site";
+import { countryEn } from "./i18n-geo";
 import type { UAPCase, Post, Researcher } from "./types";
 import { STATS } from "./siteStats";
 
@@ -67,8 +68,28 @@ export function websiteJsonLd() {
   };
 }
 
-export function caseJsonLd(c: UAPCase) {
-  const url = `${SITE_URL}/cases/${c.id}/`;
+/**
+ * `locale` es OBLIGATORIO en los helpers que emiten texto del corpus.
+ *
+ * El corpus es bilingüe y sus campos vienen en pares (`name`/`name_en`,
+ * `summary`/`summary_en`, `bio_short`/`bio_short_en`), pero estos helpers los
+ * consumían CRUDOS — así que la ruta raíz, que es la INGLESA, publicaba
+ * `headline` y `description` en español a los rich results, y su `url`/`@id`
+ * apuntaban siempre a la variante EN aunque el consumidor fuera `/es`. Es el
+ * mismo anti-pattern de «campo con par bilingüe consumido crudo» que ya se
+ * corrigió en el render y en `generateMetadata`; los datos estructurados eran
+ * la tercera superficie y nadie la miraba (jul 2026).
+ *
+ * Al ser un parámetro requerido, `tsc` fuerza que toda call-site lo threadee —
+ * misma red de completitud que usa el threading de `<T locale>`.
+ */
+export type JsonLdLocale = "es" | "en";
+
+/** Prefijo de ruta del espejo: `/es` en español, raíz en inglés. */
+const localePrefix = (locale: JsonLdLocale) => (locale === "es" ? "/es" : "");
+
+export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
+  const url = `${SITE_URL}${localePrefix(locale)}/cases/${c.id}/`;
   // Article needs a year-anchored date. We don't track a real publish date
   // per case, so we anchor on year_start (the historical year of the case)
   // and treat the current build time as dateModified. Google accepts that
@@ -86,8 +107,8 @@ export function caseJsonLd(c: UAPCase) {
       {
         "@type": "Article",
         "@id": `${url}#article`,
-        headline: c.name,
-        description: c.summary,
+        headline: locale === "es" ? c.name : c.name_en ?? c.name,
+        description: locale === "es" ? c.summary : c.summary_en ?? c.summary,
         articleSection: "UAP institutional cases",
         inLanguage: c.whatHappened_en ? ["es", "en"] : ["es"],
         url,
@@ -104,7 +125,9 @@ export function caseJsonLd(c: UAPCase) {
         isPartOf: { "@id": `${SITE_URL}/#website` },
         contentLocation: {
           "@type": "Place",
-          name: c.location.place || c.country_name,
+          name:
+            c.location.place ||
+            (locale === "es" ? c.country_name : countryEn(c.country_name)),
           address: {
             "@type": "PostalAddress",
             addressCountry: c.country,
@@ -130,14 +153,14 @@ export function caseJsonLd(c: UAPCase) {
   };
 }
 
-export function postJsonLd(p: Post) {
-  const url = `${SITE_URL}/blog/${p.id}/`;
+export function postJsonLd(p: Post, locale: JsonLdLocale) {
+  const url = `${SITE_URL}${localePrefix(locale)}/blog/${p.id}/`;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "@id": `${url}#post`,
-    headline: p.title,
-    description: p.summary,
+    headline: locale === "es" ? p.title : p.title_en ?? p.title,
+    description: locale === "es" ? p.summary : p.summary_en ?? p.summary,
     inLanguage: p.body_en ? ["es", "en"] : ["es"],
     url,
     datePublished: p.date,
@@ -156,14 +179,16 @@ export function postJsonLd(p: Post) {
   };
 }
 
-export function researcherJsonLd(r: Researcher) {
-  const url = `${SITE_URL}/researchers/${r.id}/`;
+export function researcherJsonLd(r: Researcher, locale: JsonLdLocale) {
+  const url = `${SITE_URL}${localePrefix(locale)}/researchers/${r.id}/`;
   return {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${url}#person`,
+    // `name` es un nombre propio: no se traduce (0/91 tienen `name_en`).
     name: r.name,
-    description: r.bio_short,
+    description:
+      locale === "es" ? r.bio_short : r.bio_short_en ?? r.bio_short,
     url,
     ...(r.photo ? { image: r.photo } : {}),
     ...(r.credentials ? { jobTitle: r.credentials } : {}),
@@ -249,13 +274,18 @@ export function corpusDatasetJsonLd() {
  * colección y para que crawlers/LLM lean el corpus como un conjunto
  * estructurado, no solo una página de enlaces. Ligado al WebSite vía isPartOf.
  */
-export function casesCollectionJsonLd(cases: UAPCase[]) {
+export function casesCollectionJsonLd(
+  cases: UAPCase[],
+  locale: JsonLdLocale,
+) {
+  const base = `${SITE_URL}${localePrefix(locale)}/cases/`;
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": `${SITE_URL}/cases/#collection`,
-    name: "Casos UAP institucionales",
-    url: `${SITE_URL}/cases/`,
+    "@id": `${base}#collection`,
+    name:
+      locale === "es" ? "Casos UAP institucionales" : "Institutional UAP cases",
+    url: base,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     inLanguage: ["es", "en"],
     mainEntity: {
@@ -265,8 +295,8 @@ export function casesCollectionJsonLd(cases: UAPCase[]) {
       itemListElement: cases.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `${SITE_URL}/cases/${c.id}/`,
-        name: c.name,
+        url: `${base}${c.id}/`,
+        name: locale === "es" ? c.name : c.name_en ?? c.name,
       })),
     },
   };
