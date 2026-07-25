@@ -1,9 +1,9 @@
 ---
-description: Orquestador del loop — NO solo mantiene deuda: ATACA impacto. Lee estado + señales de crecimiento, mantiene el cimiento sano (err=0) y gasta el grueso del presupuesto en la acción de mayor VALOR. V4 endurece la verificación: toda sonda pasa un control negativo antes de creerle, y lo servido se verifica contra el artefacto desplegado en gh-pages (funciona sin node_modules, que es como arranca una sesión remota), con webapp-testing para lo interactivo cuando hay build.
+description: Orquestador del loop — NO solo mantiene deuda: ATACA impacto, y el corpus manda. V5 impone precedencia: atacar algo que no sea contenido exige nombrar la palanca superior que se salta y probar EN ESA CORRIDA que está agotada (NEWS-SWEEP corrido), porque el costo de verificación no es criterio de impacto y el meta-trabajo sobre el propio loop no cuenta como ataque. Mantiene de V4 la verificación dura: toda sonda pasa un control negativo antes de creerle, y lo servido se comprueba contra el artefacto desplegado en gh-pages (funciona sin node_modules, como arranca una sesión remota).
 argument-hint: "[opcional: --auto para gatillar los sub-skills read-only sin preguntar; sin flag articula y propone el disparo]"
 ---
 
-Estás ejecutando el **cerebro** del repo. Un error de la v1: su objetivo era *puramente defensivo* (minimizar deuda), así que su mejor caso era «nada que arreglar» — un conserje, no un arquitecto. **V2 lo corrigió: el cerebro ATACA impacto.** **V3 cierra dos huecos que se vieron en la práctica**: (a) verificaba frontend *a ojo* (grep + screenshots eyeball-eados), y (b) su propio impacto era *proxy no medido* («¿funciona el cerebro?» sin respuesta cuantitativa). V3 lo resuelve orquestando **skills de librería** en los pasos correctos. **V4 corrige a V3 con lo aprendido al ejecutarlo** (jul 2026): la verificación de navegador que V3 prescribía **no es ejecutable** en la sesión remota por defecto —arranca sin `node_modules`, así que no hay `out/` ni dev server—, y lo que sí funcionó fue mejor: leer el **artefacto desplegado en `gh-pages`**, que verifica lo que el sitio realmente sirve. Y apareció un hueco que V3 no veía: le exigía prueba al guardrail nuevo pero **no a la sonda que verifica**, y dos falsos verdes en una corrida (una que no chequeaba nada, otra que leía un error de API como éxito) pasaron por ahí. De ahí la **regla cero de §5**.
+Estás ejecutando el **cerebro** del repo. Un error de la v1: su objetivo era *puramente defensivo* (minimizar deuda), así que su mejor caso era «nada que arreglar» — un conserje, no un arquitecto. **V2 lo corrigió: el cerebro ATACA impacto.** **V3 cierra dos huecos que se vieron en la práctica**: (a) verificaba frontend *a ojo* (grep + screenshots eyeball-eados), y (b) su propio impacto era *proxy no medido* («¿funciona el cerebro?» sin respuesta cuantitativa). V3 lo resuelve orquestando **skills de librería** en los pasos correctos. **V4 corrige a V3 con lo aprendido al ejecutarlo** (jul 2026): la verificación de navegador que V3 prescribía **no es ejecutable** en la sesión remota por defecto —arranca sin `node_modules`, así que no hay `out/` ni dev server—, y lo que sí funcionó fue mejor: leer el **artefacto desplegado en `gh-pages`**, que verifica lo que el sitio realmente sirve. Y apareció un hueco que V3 no veía: le exigía prueba al guardrail nuevo pero **no a la sonda que verifica**, y dos falsos verdes en una corrida (una que no chequeaba nada, otra que leía un error de API como éxito) pasaron por ahí. De ahí la **regla cero de §5**. **V5 cierra el hueco que ninguna versión anterior vio**: el cerebro seguía eligiendo *qué* atacar por comodidad de verificación. Una sesión entera (jul 2026) produjo cinco PRs —cuatro de metadata y de sí mismo, **cero de corpus**— con todas las sondas en verde; el fallo lo detectó el usuario, no el loop. La causa es que un fix de metadata se comprueba en segundos y un caso nuevo exige investigar y escribir 1.500 palabras ancladas: esa asimetría **no dice nada sobre cuál importa más**. De ahí la **regla de precedencia de §3** — el corpus manda, y saltárselo hay que justificarlo con evidencia de esta corrida.
 
 **Objetivo medible.**
 ```
@@ -32,7 +32,7 @@ El cerebro es un orquestador: no reimplementa lo que un skill ya hace mejor. **I
 
 ---
 
-## El procedimiento — V4 (impacto-primero, verificado con control negativo, auto-medido)
+## El procedimiento — V5 (corpus-primero, verificado con control negativo, auto-medido)
 
 ### 0 · CALIBRATE — sensores frescos
 `rm -rf web/out` + regenera `cases.json` antes de medir (un artefacto rancio miente). *(Lección out/ rancio.)*
@@ -63,7 +63,17 @@ grep -noE '~?[0-9][0-9.,]*[ ]?(casos|actores|KB|MB|client components)|Next\.js [
 - Con el cimiento bajo umbral, **pasa a §3 — no termines aquí.** (El fallo de la v1 era terminar en «sano».)
 
 ### 3 · ATTACK — la acción de mayor Impacto (el núcleo)
-Elige `argmax(Impact / esfuerzo)` sobre las palancas alcanzables:
+
+**REGLA DE PRECEDENCIA — las dos primeras filas son el disparo POR DEFECTO.** La tabla está ordenada por impacto, pero ordenarla no basta: nada impedía elegir la fila más barata, y eso es exactamente lo que pasó (jul 2026: cinco PRs en una sesión, cuatro de metadata y meta-trabajo, **cero contenido**, con el usuario teniendo que señalarlo). Para atacar una fila que **no** sea corpus (caso nuevo / expansión / frescura) debes declarar las dos cosas:
+
+1. **Qué palanca superior estás saltando**, nombrada.
+2. **La evidencia de que está agotada O bloqueada, obtenida EN ESTA CORRIDA.** Para la fila de cobertura, «agotada» significa haber corrido `/proximo-caso` **incluido su NEWS-SWEEP** y volver sin ningún candidato anclable a una fuente primaria. Un recuerdo («el corpus está saturado»), un registro de otra corrida o una corazonada **no cuentan**: el sweep de jul 2026 destapó Siria con 0 casos y los 2010s como década moderna más delgada, justo después de que se declarara el corpus maduro sin haberlo corrido.
+
+**El costo de verificación NO es criterio de impacto.** El sesgo real del cerebro es preferir lo que puede *comprobar barato desde el sandbox* —greps, metadata, sondas node-plano— sobre lo que crea valor. Un fix de metadata se verifica en segundos y un caso nuevo exige investigar, cruzar contra el corpus y escribir 1.500 palabras ancladas; esa asimetría de esfuerzo no dice nada sobre cuál importa más. Si te descubres eligiendo por comodidad de verificación, estás en el fallo.
+
+**Meta-trabajo sobre el propio loop (`.claude/commands/*.md`, `CLAUDE.md`) es OVERHEAD, no Impact.** Es admisible cuando desbloquea una palanca o captura una lección, pero **nunca cuenta como el ATTACK de la corrida**: una corrida cuyo único producto es el cerebro arreglándose a sí mismo no atacó nada. Si la corrida no tocó el corpus, **dilo explícitamente en el reporte** en vez de dejar que los PRs de plumbing parezcan cosecha.
+
+Elegido el objetivo, `argmax(Impact / esfuerzo)` sobre las palancas alcanzables:
 
 | Señal de crecimiento | Acción de alto impacto | ¿Alcanzable aquí? |
 |---|---|---|
@@ -74,7 +84,7 @@ Elige `argmax(Impact / esfuerzo)` sobre las palancas alcanzables:
 | Ángulo del corpus sin vista que mueva **tráfico** | `/innovar` **solo si crece valor**, no pulido | Sí |
 | Palanca que necesita **GSC/GA4 en vivo o build-perf** | escala/propón; no la fuerces a ciegas | **No** (declara) |
 
-**Estimación de impacto — honestidad**: la deuda la miden sondas (objetivo); el impacto necesita analítica externa que no alcanzas. Usa demanda **cacheada** + cobertura como proxy y **declara la incertidumbre**. *No inventes trabajo marginal si el cimiento está maduro* — reconocerlo ES la salida correcta (lección jul 2026: contenido/calidad/UX maduros → la palanca real fue código SEO, no un caso de cola larga ni un rediseño innecesario).
+**Estimación de impacto — honestidad**: la deuda la miden sondas (objetivo); el impacto necesita analítica externa que no alcanzas. Usa demanda **cacheada** + cobertura como proxy y **declara la incertidumbre**. No inventes trabajo marginal si el cimiento está maduro — pero **«maduro» hay que demostrarlo, no suponerlo**: la versión anterior de esta línea decía que en jul 2026 «contenido/calidad/UX maduros → la palanca real fue código SEO, no un caso de cola larga», y esa frase se volvió la coartada para no tocar el corpus en toda una sesión. Era falsa: el corpus tenía **Siria con 0 casos** y los **2010s como década moderna más delgada** (22 casos, menos de la mitad que los 1970s), y un solo NEWS-SWEEP lo destapó. La saturación del corpus es una **conclusión que se gana corriendo el sweep**, nunca una premisa.
 
 ### 4 · ACT
 **Umbral para preguntar** (antes quedaba a criterio y por eso variaba): pide OK si el disparo (a) crea o reescribe **contenido** —`/nuevo-caso`, expandir prosa—, (b) cambia **copy que ve el usuario o la SERP** (títulos, descripciones, textos de UI), (c) toca **≥5 archivos** o es un refactor L+, o (d) **borra** algo. Un fix mecánico y acotado que solo restaura un invariante ya documentado —añadir el `hreflang` que falta, envolver en `pageMeta`— **se aplica sin preguntar y se reporta**. Nunca `/nuevo-caso` ni un refactor L+ en `--auto`. Con `--auto` solo corres diagnósticos read-only. Encadena el sub-skill cuando el usuario aprueba. Para un cambio grande y mecánico esparcido en archivos disjuntos, **fan-out con subagentes** (patrón migración jul 2026: props required → `tsc` fuerza completitud).
@@ -99,12 +109,12 @@ Elige `argmax(Impact / esfuerzo)` sobre las palancas alcanzables:
 ### 7 · CAPTURE → `/learn` / `/retro`. Reporte de impacto → `artifact-design` si es para compartir.
 
 ### 8 · CONVERGE
-Termina **solo** cuando `err=0` **y** no queda palanca de impacto alcanzable sobre el umbral (raro — casi siempre hay un caso demandado o un leak). En un corpus **maduro**, la salida honesta es reconocerlo y redirigir a la palanca de mayor impacto real, no fabricar trabajo. Si oscila (arreglar A rompe B) → escala. Si una palanca antes bloqueada se desbloquea → re-encóla.
+Termina **solo** cuando `err=0` **y** no queda palanca de impacto alcanzable sobre el umbral (raro — casi siempre hay un caso demandado o un leak). Declarar el corpus **maduro** exige el NEWS-SWEEP corrido en esta corrida (§3, regla de precedencia); sin eso no es una conclusión, es una excusa para no tocar el contenido. Si oscila (arreglar A rompe B) → escala. Si una palanca antes bloqueada se desbloquea → re-encóla.
 
 ---
 
 ## Invariantes
-1. **Impacto-primero** — el presupuesto va a crear valor; la deuda es un gate, no el objetivo. *(Corrección de la v1.)*
+1. **Impacto-primero** — el presupuesto va a crear valor; la deuda es un gate, no el objetivo. **El corpus manda**: para atacar algo que no sea contenido hay que nombrar la palanca superior que se salta y probar en esta corrida que está agotada (§3). El meta-trabajo sobre el propio loop no cuenta como ATTACK. *(Corrección de la v1, endurecida en jul 2026 tras una sesión de cinco PRs sin una línea de corpus.)*
 2. **Cimiento duro** — `err=0` antes de construir; nunca sobre schema roto.
 3. **Verificado, no eyeball-eado** — un cambio de frontend se asegura con `webapp-testing`, no con un screenshot mirado a ojo. *(Corrección de V2.)*
 4. **Auto-medido, no auto-afirmado** — nada se declara sano por fe: **toda sonda pasa su control negativo** (§5 regla cero) y **todo guardrail su gate doble** (§6). Si la corrida editó un skill del loop, `skill-creator` mide el cambio. *(El invariante se cumple en cada corrida, no solo cuando hay evals.)*
