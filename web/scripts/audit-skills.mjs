@@ -229,6 +229,31 @@ if (fs.existsSync(panelPath)) {
     record("ERROR", "X9", "el panel tiene su propio regex de secciones `### M<n>` → segundo parser, segundo contrato.");
 }
 
+// X10 · el disparo desde GitHub ofrece EXACTAMENTE los modos que el skill
+// declara. Es la tercera superficie que consume el contrato (skill, panel,
+// workflow) y la única que no puede importar el parser —es YAML—, así que aquí
+// la paridad se comprueba en vez de derivarse. Un modo nuevo en `cerebro.md`
+// que nadie añada al desplegable queda inalcanzable desde el móvil; uno
+// borrado que siga ofrecido falla en ejecución, con los minutos ya gastados.
+const wfPath = path.join(repoRoot, ".github", "workflows", "cerebro.yml");
+if (fs.existsSync(wfPath)) {
+  const wf = fs.readFileSync(wfPath, "utf-8");
+  // `sin argumento` no es un valor válido de `type: choice`; el workflow lo
+  // expone como `diagnostico` y lo traduce a prompt vacío.
+  const declarados = new Set(modeSections.map((m) => m.name === "sin argumento" ? "diagnostico" : m.name));
+  const ofrecidos = new Set([...wf.matchAll(/^\s{10}- ([a-z-]+)$/gm)].map((m) => m[1]));
+  if (ofrecidos.size === 0) {
+    record("WARN", "X10", "no se pudo leer la lista de modos de `cerebro.yml` — cambió su indentación y la paridad dejó de comprobarse.");
+  } else {
+    for (const m of declarados)
+      if (!ofrecidos.has(m))
+        record("ERROR", "X10", `el modo \`${m}\` existe en cerebro.md pero NO se ofrece en el desplegable de \`cerebro.yml\` → inalcanzable desde GitHub.`);
+    for (const o of ofrecidos)
+      if (!declarados.has(o))
+        record("ERROR", "X10", `\`cerebro.yml\` ofrece el modo \`${o}\`, que el skill no declara → la corrida fallaría con los minutos ya gastados.`);
+  }
+}
+
 // ── control negativo ──────────────────────────────────────────────────────
 if (process.argv.includes("--negative-control")) {
   const before = findings.length;
