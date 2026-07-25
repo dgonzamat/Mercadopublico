@@ -62,6 +62,13 @@ jobs:
       # y luego next build. Si los JSON de casos están rotos, si hay drift
       # numérico/textual (auditoría E1–E6), o si falla el type-check, este
       # paso falla y el PR no es mergeable.
+      # Contrato de los skills del loop: que cada modo del cerebro exista, se
+      # anuncie y delegue en skills que EXISTEN. Corre aparte del build porque
+      # audita `.claude/`, no el corpus — pero bloquea el merge igual: un
+      # orquestador que delega en algo inexistente falla en ejecución.
+      - name: Audit skills contract
+        run: node scripts/audit-skills.mjs
+
       - name: Validate (build-cases → audit → next build)
         run: npm run build
         env:
