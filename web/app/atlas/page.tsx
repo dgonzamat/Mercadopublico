@@ -2,16 +2,16 @@ import Link from "next/link";
 import { cases } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { STATS } from "@/lib/siteStats";
+import { pageMeta } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { WorldMapLazy } from "@/components/WorldMapLazy";
 
-export const metadata = {
-  title: "Atlas — mapa global de casos",
-  description: `Mapa global de los ${STATS.cases} casos UAP institucionales documentados entre ${STATS.startYear} y ${STATS.endYear}.`,
-
-  alternates: { canonical: "/atlas/" },
-};
+export const metadata = pageMeta({
+  title: "Atlas — global map of UAP cases",
+  description: `Global map of the ${STATS.cases} institutional UAP cases documented between ${STATS.startYear} and ${STATS.endYear}.`,
+  path: "/atlas/",
+});
 
 export default function AtlasPage() {
   // Índice país → investigadores asociados (reverse lookup), computado en el

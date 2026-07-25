@@ -1194,7 +1194,84 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
-// ─── 9r. RULE E28: frescura de la línea base de link rot (WARN) ──────────
+// ─── 9r-bis. RULE E31: reciprocidad del hreflang EN↔/es (ERROR) ──────────
+//
+// Google solo honra una anotación hreflang si es RECÍPROCA: si `/es/x/` apunta
+// a `/x/` pero `/x/` no devuelve el apuntador, descarta el par. Y un hreflang
+// hacia una URL que no existe (404) invalida el cluster entero. Las páginas
+// `/es` siempre pasan por `esMeta` (que emite `hreflangFor` por construcción),
+// así que la mitad que driftea es SIEMPRE la raíz inglesa — donde el `languages`
+// se escribe a mano. Dos direcciones del mismo invariante:
+//   · espejo existe pero la EN no declara `languages` → anotación unidireccional
+//     (pasó con /releases/[release]/, jul 2026: 4 páginas ignoradas por Google).
+//   · la EN declara `languages` sin espejo → hreflang a un 404
+//     (pasó con /calidad/, jul 2026: apuntaba a /es/calidad/, inexistente).
+// E23 vigila MIRRORED ↔ directorios /es (la navegación) y E27 la completitud del
+// sitemap; ninguna mira la metadata, así que esta clase era invisible. Cubre
+// rutas dinámicas —el drift ocurrió justo en una— comparando el path con
+// segmentos `[...]` intactos contra su gemelo bajo app/es/.
+{
+  const appDir = path.join(root, "app");
+  for (const file of tsxFiles.filter((f) => path.basename(f) === "page.tsx")) {
+    const rel = path.relative(appDir, path.dirname(file)).replace(/\\/g, "/");
+    if (rel === "es" || rel.startsWith("es/")) continue; // el espejo usa esMeta
+    const src = fs.readFileSync(file, "utf-8");
+    if (/robots\s*:\s*\{[^}]*index\s*:\s*false/.test(src)) continue; // noindex
+    const route = rel === "" ? "/" : `/${rel}/`;
+    const mirror = path.join(appDir, "es", rel, "page.tsx");
+    const hasMirror = fs.existsSync(mirror);
+    const declares = /hreflangFor\s*\(/.test(src) || /languages\s*:/.test(src);
+    if (hasMirror && !declares)
+      record(
+        "ERROR",
+        file,
+        0,
+        `E31 hreflang: ${route} tiene espejo (app/es/${rel}/page.tsx) pero no declara \`alternates.languages\` → la anotación es unidireccional (solo /es apunta a la raíz) y Google la ignora. Añade \`languages: hreflangFor("${route}")\`.`,
+      );
+    if (!hasMirror && declares)
+      record(
+        "ERROR",
+        file,
+        0,
+        `E31 hreflang: ${route} declara \`alternates.languages\` pero NO existe app/es/${rel}/page.tsx → el hreflang \`es\` apunta a un 404 y Google descarta el cluster. Quita \`languages\` (ruta bilingüe en una sola URL) o crea el espejo.`,
+      );
+  }
+}
+
+// ─── 9r-ter. RULE E32: metadata de sección vía pageMeta (ERROR) ──────────
+//
+// Next NO hace deep-merge de `openGraph`: una ruta que declara su metadata a
+// mano (solo `title`/`description`/`alternates`) HEREDA el `openGraph` global de
+// `app/layout.tsx`, que apunta a la home. Resultado: compartir esa página emite
+// la card de la home —`og:url` = "/" y el copy genérico del sitio—. `pageMeta`
+// existe exactamente para evitarlo (og/twitter auto-referenciales), pero es
+// opt-in, así que una ruta nueva se escribe a mano y el leak entra en silencio:
+// jul 2026 se encontraron CUATRO así en el deploy vivo (/atlas, /fuentes,
+// /contact, /visitantes, todas con og:url = https://uapcodex.org/). Esa misma
+// superficie escrita a mano es la que se saltó la revisión de idioma y dejó
+// títulos en español en el sitio inglés-primario. Excepciones legítimas: la home
+// (el openGraph del layout YA se auto-referencia en "/"), las gated y las
+// noindex. El espejo /es usa `esMeta`, que envuelve `pageMeta`.
+{
+  const appDir = path.join(root, "app");
+  for (const file of tsxFiles.filter((f) => path.basename(f) === "page.tsx")) {
+    const rel = path.relative(appDir, path.dirname(file)).replace(/\\/g, "/");
+    if (rel === "" || rel === "es" || rel.startsWith("es/")) continue;
+    if (rel.includes("[")) continue; // dinámicas: su metadata se arma por caso
+    const src = fs.readFileSync(file, "utf-8");
+    if (/robots\s*:\s*\{[^}]*index\s*:\s*false/.test(src)) continue; // noindex
+    if (/RequireAuth/.test(src)) continue; // gated
+    if (!/\bpageMeta\s*\(/.test(src))
+      record(
+        "ERROR",
+        file,
+        0,
+        `E32 metadata: /${rel}/ arma su metadata a mano en vez de con \`pageMeta\` → hereda el \`openGraph\` de la home (og:url "/" y copy genérico), así que su card social apunta a la raíz. Envuélvela en \`pageMeta({ title, description, path: "/${rel}/" })\`.`,
+      );
+  }
+}
+
+// ─── 9s. RULE E28: frescura de la línea base de link rot (WARN) ──────────
 // Esta auditoría es node-plain SIN RED: no puede verificar si las fuentes
 // del corpus siguen vivas. Quien lo hace es `check-links.mjs --baseline` en
 // el workflow diario. Lo que E28 sí puede vigilar offline es que esa sonda

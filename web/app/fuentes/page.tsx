@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { getAllSources, groupByCategory, CATEGORY_LABELS } from "@/lib/sources";
+import { pageMeta } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Caption } from "@/lib/typography";
 
-export const metadata = {
-  title: "Fuentes y bibliografía del corpus",
+export const metadata = pageMeta({
+  title: "Sources and bibliography of the corpus",
   description:
-    "Todas las fuentes citadas en el corpus UAP — documentos FOIA oficiales, archivos desclasificados, artículos académicos, prensa de investigación, libros y código.",
-
-  alternates: { canonical: "/fuentes/" },
-};
+    "Every source cited in the UAP corpus — official FOIA documents, declassified archives, academic papers, investigative press, books and code.",
+  path: "/fuentes/",
+});
 
 export default function FuentesPage() {
   const all = getAllSources();
