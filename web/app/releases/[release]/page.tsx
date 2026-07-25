@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { LocaleLink } from "@/components/LocaleLink";
 
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, hreflangFor } from "@/lib/seo";
 import { cases } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
@@ -69,12 +69,16 @@ export async function generateMetadata(props: {
   const n = parseRelease(release);
   if (!n) return {};
   const count = cases.filter((c) => c.pursueReleases?.includes(n)).length;
+  const enPath = `/releases/${pad(n)}/`;
   return {
     ...pageMeta({
       title: `PURSUE Release ${pad(n)} — ${count} corpus cases`,
       description: `The ${count} UAP Codex cases that cite documents from PURSUE/AARO Release ${pad(n)} (Department of War declassification).`,
-      path: `/releases/${pad(n)}/`,
+      path: enPath,
     }),
+    // `/es/releases/[release]/` ya declara su hreflang recíproco vía esMeta; sin
+    // esta mitad la anotación es unidireccional y Google la ignora.
+    alternates: { canonical: enPath, languages: hreflangFor(enPath) },
   };
 }
 

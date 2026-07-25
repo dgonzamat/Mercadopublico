@@ -1,13 +1,14 @@
+import { pageMeta } from "@/lib/seo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { VisitorsPanel } from "@/components/VisitorsPanel";
 
-export const metadata = {
-  title: "Visitantes por país",
+export const metadata = pageMeta({
+  title: "Visitors by country",
   description:
-    "Tráfico del corpus UAP Codex desglosado por país. Conteo agregado, sin cookies ni datos personales.",
-  alternates: { canonical: "/visitantes/" },
-};
+    "UAP Codex corpus traffic broken down by country. Aggregate counts, no cookies and no personal data.",
+  path: "/visitantes/",
+});
 
 export default function VisitantesPage() {
   return (

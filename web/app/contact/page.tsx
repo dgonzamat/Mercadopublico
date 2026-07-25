@@ -1,18 +1,18 @@
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { pageMeta } from "@/lib/seo";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 // Canal de contacto. El email se expone como mailto — cambialo por un alias
 // del dominio (p. ej. contacto@uapcodex.org) si preferís no exponer el gmail.
 const CONTACT_EMAIL = "dgonzamat@gmail.com";
 
-export const metadata = {
-  title: "Contacto — correcciones y fuentes",
+export const metadata = pageMeta({
+  title: "Contact — corrections and sources",
   description:
-    "Correcciones, fuentes primarias y casos faltantes. Cómo contribuir al cuaderno UAP Codex.",
-
-  alternates: { canonical: "/contact/" },
-};
+    "Corrections, primary sources and missing cases. How to contribute to the UAP Codex notebook.",
+  path: "/contact/",
+});
 
 export default function ContactPage() {
   return (

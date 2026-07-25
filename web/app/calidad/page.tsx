@@ -1,5 +1,5 @@
 import { cases } from "@/lib/data";
-import { pageMeta, hreflangFor } from "@/lib/seo";
+import { pageMeta } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { MECE_CLASSES, corpusPosteriors, documentPosteriors } from "@/lib/meceModel";
 import { T } from "@/components/T";
@@ -7,11 +7,15 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
-    title: "Calidad del corpus · panel de salud editorial",
-    description: `Salud editorial de los ${STATS.cases} casos institucionales UAP: completitud (prosa, bilingüe, fuentes), cobertura de evidencia visual, balance MECE y alcance geográfico-temporal. Derivado del corpus en cada build.`,
+    title: "Corpus quality · editorial health panel",
+    description: `Editorial health of the ${STATS.cases} institutional UAP cases: completeness (prose, bilingual pairs, sources), visual-evidence coverage, MECE balance and geographic-temporal reach. Derived from the corpus on every build.`,
     path: "/calidad/",
   }),
-  alternates: { canonical: "/calidad/", languages: hreflangFor("/calidad/") },
+  // Sin `languages`: /calidad NO tiene espejo (no hay app/es/calidad/page.tsx ni
+  // está en MIRRORED), así que el hreflang `es: /es/calidad/` que había aquí
+  // apuntaba a un 404 — Google descarta el cluster entero y se le entrega una
+  // URL muerta. Ruta bilingüe en una sola URL, como /atlas o /fuentes.
+  alternates: { canonical: "/calidad/" },
 };
 
 // ─── métricas derivadas del corpus (build-time; se recalculan en cada deploy) ─
