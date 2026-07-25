@@ -8,6 +8,7 @@
       "Bash(node scripts/validate-schema.mjs:*)",
       "Bash(node scripts/audit-consistency.mjs:*)",
       "Bash(node scripts/audit-design.mjs:*)",
+      "Bash(node scripts/audit-skills.mjs:*)",
       "Bash(node scripts/check-links.mjs:*)",
       "Bash(npm run build:*)",
       "Bash(npm run validate-schema:*)",

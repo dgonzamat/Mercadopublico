@@ -185,6 +185,19 @@ function eventoDeLinea(linea, job) {
       }
     }
   }
+  // Una corrida puede terminar en verde SIN haber hecho nada, porque se quedó
+  // pidiendo una aprobación que en el panel nadie va a dar (no es una terminal
+  // interactiva). Sin esta detección el job aparece «listo» y el flowchart
+  // apenas encendido, y no se entiende por qué. Pasó en el primer disparo con
+  // permisos reales: el workspace no estaba confiado, así que las 21 entradas
+  // de `.claude/settings.json` se ignoraron y el gate murió en el primer Bash.
+  const BLOQUEOS = [
+    [/has not been trusted/i, "El workspace no está confiado, así que el allowlist de `.claude/settings.json` se ignora. Corre Claude Code interactivamente una vez en el repo y acepta el diálogo de confianza."],
+    [/necesita aprobación|needs? (your )?(permission|approval)|requires approval/i, "La corrida se quedó esperando una aprobación que el panel no puede dar. Amplía el allowlist del repo o usa un `--permission-mode` que no pregunte."],
+  ];
+  for (const [re, msg] of BLOQUEOS)
+    if (!job.bloqueo && re.test(job.salida)) job.bloqueo = msg;
+
   if (e.type === "result") {
     job.resultado = {
       subtype: e.subtype, duracion_ms: e.duration_ms,
@@ -207,7 +220,7 @@ function dispararCerebro(modo, contexto) {
   const job = {
     id, modo, contexto: contexto || null, prompt,
     estado: "corriendo", inicio: new Date().toISOString(), fin: null,
-    exit: null, salida: "", eventos: [], resultado: null,
+    exit: null, salida: "", eventos: [], resultado: null, bloqueo: null,
     // Corridas registradas ANTES de disparar: al cerrar se compara para saber
     // si esta corrida cumplió el cierre obligatorio (log, automejora, skill scan).
     _corridasAntes: readRuns().corridas.length,

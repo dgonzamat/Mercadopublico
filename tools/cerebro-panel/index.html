@@ -140,6 +140,9 @@
   pre{background:#1a1a1a;color:#e8e2d4;padding:13px;border-radius:7px;overflow:auto;
     font-size:12px;line-height:1.5;max-height:340px;margin:10px 0 0;white-space:pre-wrap;
     word-break:break-word}
+  textarea{width:100%;font:12.5px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;
+    padding:9px 10px;border-radius:7px;border:1px solid var(--border);
+    background:var(--bg);color:var(--text);resize:vertical}
   .empty{color:var(--muted);font-size:13px;padding:14px;border:1px dashed var(--border);
     border-radius:8px;text-align:center}
   .warnbox{background:#fff6e8;border:1px solid var(--warn);border-radius:8px;
@@ -172,12 +175,25 @@
       <div class="tabs" id="tabs" role="tablist"></div>
       <div id="flujo"></div>
 
-      <div style="display:flex;gap:10px;align-items:center;margin-top:18px;flex-wrap:wrap">
+      <!-- Contexto libre. Sin esto solo se podía disparar con el texto de un
+           hallazgo de sonda, y las señales que NO vienen de una sonda —una
+           fricción observada, una decisión pendiente en el log— no tenían por
+           dónde entrar. La regla de oro del cerebro es que cada disparo cite su
+           señal; esta caja es donde se escribe. -->
+      <label class="eyebrow" for="contexto" style="display:block;margin-top:18px">
+        Señal · qué debe atacar esta corrida <span class="tasa">(opcional)</span>
+      </label>
+      <textarea id="contexto" rows="2" style="margin-top:6px"
+        placeholder="Ej: /cases móvil — el título recibe 159px (44%) mientras tier y % se llevan 96px (26%)…"></textarea>
+
+      <div style="display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap">
         <button class="primary" id="btn-gatillar">Gatillar este modo</button>
         <button class="mini" id="btn-detener" disabled>Detener</button>
         <span class="grow"></span>
         <span class="tasa" id="resumen-job">en reposo</span>
       </div>
+
+      <div class="warnbox" id="bloqueo" hidden></div>
 
       <div class="ticker" id="ticker" hidden>
         <span class="eyebrow">Movimiento · herramientas invocadas</span>
@@ -451,7 +467,7 @@ function pintarSalud(h) {
 }
 
 /* ── disparo ─────────────────────────────────────────────────────────── */
-$("#btn-gatillar").onclick = () => gatillar(modoSel.arg);
+$("#btn-gatillar").onclick = () => gatillar(modoSel.arg, $("#contexto").value.trim());
 
 async function gatillar(modo, contexto = "") {
   const nombre = modo || "diagnóstico";
@@ -497,6 +513,9 @@ function refrescar(j) {
     ? `corriendo · ${(j.eventos ?? []).length} herramientas`
     : `${j.estado}` + (r ? ` · ${(r.duracion_ms / 1000).toFixed(1)}s · ${r.turnos} turnos` +
         (r.coste_usd != null ? ` · $${r.coste_usd.toFixed(3)}` : "") : "");
+  const bl = $("#bloqueo");
+  bl.hidden = !j.bloqueo;
+  if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
   $("#btn-detener").disabled = j.estado !== "corriendo";
   $("#btn-gatillar").disabled = j.estado === "corriendo";
   $("#job-out").textContent = j.salida || "sin salida de texto todavía…";
