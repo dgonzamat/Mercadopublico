@@ -14,18 +14,36 @@ Sin dependencias, sin build, sin `node_modules`. Node 18+.
 
 ## Qué hace
 
-**Monitorea el flujo.** Lee `docs/cerebro-runs.jsonl` y muestra cada corrida con
-su señal, hallazgo, descartes, automejora y skill scan. Arriba, las métricas del
-loop sobre sí mismo — sobre todo la **tasa candidatos→verificados**, que es la
-única respuesta no anecdótica a «¿el cerebro está dando valor?». Una tasa alta
-con pocos candidatos es un cerebro tímido; una baja con muchos es uno que
-fabrica trabajo.
+**Muestra la orquestación moviéndose.** El centro del panel es un flowchart de
+cuatro bandas —**gate común → cadena del modo → cierre obligatorio → rastro**— y
+sus nodos **se encienden conforme la corrida avanza**: verde lo ya recorrido,
+rojo pulsante el paso activo. Las aristas llevan una marcha de guiones que se
+acelera mientras hay una corrida viva, y un ticker lista cada herramienta
+invocada en tiempo real.
+
+Las tres bandas fijas son la estructura que `cerebro.md` declara para todo modo;
+**la banda del medio se deriva de la cadena del modo elegido**, así que el
+diagrama no puede prometer un paso que el skill no tiene. Cambiar de pestaña
+cambia solo esa banda.
+
+El movimiento sale de `--output-format stream-json`: cada `tool_use` del proceso
+se parsea y se matchea contra los nodos. El criterio de encendido es
+deliberadamente **estrecho** — nombre de herramienta, forma citada
+(`{"skill":"simplify"}`) o forma con barra (`/blindar`)—, nunca `\bpalabra\b`:
+con el criterio ancho, `git log` encendía el nodo **LOG** y el diagrama afirmaba
+un cierre que no había ocurrido. Por la misma razón la banda **rastro** no se
+enciende con eventos en absoluto, sino comparando el log antes y después de la
+corrida: se ilumina con el hecho comprobado, no con la intención.
 
 **Gatilla los triggers.** Un botón por modo. Los modos **no están escritos en el
 panel**: se derivan de `cerebro.md` al vuelo, así que el panel no puede ofrecer
-un modo que el skill no declara, ni quedarse sin uno que se añada. Cada disparo
-lanza `claude -p "/cerebro <modo>"` como subproceso y transmite la salida en
-vivo, con botón de detener.
+un modo que el skill no declara, ni quedarse sin uno que se añada.
+
+**Monitorea el histórico.** Lee `docs/cerebro-runs.jsonl` y muestra cada corrida
+con su señal, hallazgo, descartes, automejora y skill scan. Arriba, la **tasa
+candidatos→verificados**, que es la única respuesta no anecdótica a «¿el cerebro
+está dando valor?». Una tasa alta con pocos candidatos es un cerebro tímido; una
+baja con muchos es uno que fabrica trabajo.
 
 **Identifica bugs y los manda a corregir.** «Sondear salud» corre las cuatro
 sondas del repo de verdad (`validate-schema`, `audit-consistency`,

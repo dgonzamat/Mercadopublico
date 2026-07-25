@@ -160,17 +160,58 @@ function correrSonda(sonda) {
   });
 }
 
+/**
+ * Traduce una línea NDJSON de `--output-format stream-json` a un evento del
+ * panel. Lo que importa para el flowchart son los `tool_use`: cada invocación
+ * de skill, cada sonda corrida, cada búsqueda. De ahí sale el movimiento —
+ * sin esto el panel solo tendría texto y no sabría POR DÓNDE va la corrida.
+ */
+function eventoDeLinea(linea, job) {
+  let e;
+  try { e = JSON.parse(linea); } catch { return; }
+
+  if (e.type === "assistant") {
+    for (const b of e.message?.content ?? []) {
+      if (b.type === "text" && b.text?.trim()) job.salida += b.text;
+      if (b.type === "tool_use") {
+        // `detalle` es lo que el cliente matchea contra los nodos: nombre de la
+        // herramienta + su input aplanado (el skill invocado, el script corrido).
+        const input = JSON.stringify(b.input ?? {});
+        job.eventos.push({
+          t: new Date().toISOString(),
+          tool: b.name,
+          detalle: `${b.name} ${input}`.slice(0, 400),
+        });
+      }
+    }
+  }
+  if (e.type === "result") {
+    job.resultado = {
+      subtype: e.subtype, duracion_ms: e.duration_ms,
+      coste_usd: e.total_cost_usd, turnos: e.num_turns,
+    };
+    if (e.result && !job.salida.includes(e.result)) job.salida += "\n" + e.result;
+  }
+}
+
 /** Dispara `claude -p "/cerebro <modo>"`. Devuelve el id del job. */
 function dispararCerebro(modo, contexto) {
   const id = `job-${++seq}`;
   const prompt = contexto
     ? `/cerebro ${modo}\n\nContexto del panel (hallazgo a atacar):\n${contexto}`
     : `/cerebro ${modo}`;
-  const args = ["-p", prompt, "--permission-mode", PERMISSION_MODE];
+  // stream-json en vez de texto: es lo que permite ver la orquestación MOVERSE.
+  // `--verbose` es obligatorio con stream-json en modo -p.
+  const args = ["-p", prompt, "--permission-mode", PERMISSION_MODE,
+                "--output-format", "stream-json", "--verbose"];
   const job = {
     id, modo, contexto: contexto || null, prompt,
     estado: "corriendo", inicio: new Date().toISOString(), fin: null,
-    exit: null, salida: "",
+    exit: null, salida: "", eventos: [], resultado: null,
+    // Corridas registradas ANTES de disparar: al cerrar se compara para saber
+    // si esta corrida cumplió el cierre obligatorio (log, automejora, skill scan).
+    _corridasAntes: readRuns().corridas.length,
+    rastro: null,
   };
   jobs.set(id, job);
 
@@ -192,7 +233,15 @@ function dispararCerebro(modo, contexto) {
   job._child = child;
   child.stdout.setEncoding("utf8");
   child.stderr.setEncoding("utf8");
-  child.stdout.on("data", (d) => (job.salida += d));
+  // NDJSON: un `data` puede traer media línea, así que se acumula y solo se
+  // parsea lo que ya tiene salto. Sin esto se pierden eventos a mitad de chunk.
+  let resto = "";
+  child.stdout.on("data", (d) => {
+    resto += d;
+    const lineas = resto.split("\n");
+    resto = lineas.pop();
+    for (const l of lineas) if (l.trim()) eventoDeLinea(l, job);
+  });
   child.stderr.on("data", (d) => (job.salida += d));
   child.on("error", (e) => {
     job.estado = "roto";
@@ -200,14 +249,25 @@ function dispararCerebro(modo, contexto) {
     job.fin = new Date().toISOString();
   });
   child.on("close", (code) => {
+    if (resto.trim()) eventoDeLinea(resto, job);
     job.exit = code;
     job.estado = code === 0 ? "listo" : "fallo";
     job.fin = new Date().toISOString();
+    // ¿La corrida cumplió el cierre obligatorio? No se pregunta: se comprueba
+    // contra el log. Una corrida que no dejó entrada no cerró, por muy bien que
+    // haya narrado su propio final.
+    const { corridas } = readRuns();
+    const nueva = corridas.length > job._corridasAntes ? corridas[corridas.length - 1] : null;
+    job.rastro = {
+      log: !!nueva,
+      automejora: !!nueva?.automejora,
+      skill_scan: !!nueva?.skill_scan,
+    };
   });
   return job;
 }
 
-const publico = ({ _child, ...j }) => j;
+const publico = ({ _child, _corridasAntes, ...j }) => j;
 
 // ── HTTP ──────────────────────────────────────────────────────────────────
 const json = (res, code, body) => {

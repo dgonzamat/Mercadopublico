@@ -101,7 +101,9 @@ tools/
 
 ### Panel de control del cerebro (`tools/cerebro-panel`)
 
-`node tools/cerebro-panel/server.mjs` → `http://127.0.0.1:4180`. UI **externa al sitio** (vive fuera de `web/`, no entra en el `output: export`) para **monitorear** el flujo del cerebro, **gatillar** sus modos y **mandar a corregir** lo que las sondas encuentran. Node plano, cero dependencias.
+`node tools/cerebro-panel/server.mjs` → `http://127.0.0.1:4180`. UI **externa al sitio** (vive fuera de `web/`, no entra en el `output: export`) para **ver moverse** la orquestación, **gatillar** sus modos y **mandar a corregir** lo que las sondas encuentran. Node plano, cero dependencias.
+
+El centro es un **flowchart de cuatro bandas** (gate común → cadena del modo → cierre obligatorio → rastro) cuyos nodos se encienden conforme la corrida avanza. El movimiento sale de `--output-format stream-json`: cada `tool_use` se parsea y se matchea contra los nodos. **El criterio de encendido debe ser estrecho** —nombre de herramienta, forma citada (`{"skill":"simplify"}`) o con barra (`/blindar`)—, nunca `\bpalabra\b`: con el criterio ancho un `git log` encendía el nodo **LOG** y el diagrama afirmaba un cierre que no había ocurrido (jul 2026). Por eso la banda **rastro** no se enciende con eventos, sino comparando el log antes/después de la corrida — se ilumina con el hecho comprobado, no con la intención. La banda de la cadena se deriva de la tabla de modos de `cerebro.md`, así que el diagrama no puede prometer un paso que el skill no declara.
 
 Es un **servidor y no una página** porque disparar un trigger es `spawn('claude', ['-p', '/cerebro <modo>'])`, y eso necesita un proceso: una página estática —o un artifact— puede mostrar el log, pero no puede correr nada ni leer el repo. Corre en la máquina del dueño, junto al CLI.
 
