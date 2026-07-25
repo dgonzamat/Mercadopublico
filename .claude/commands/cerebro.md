@@ -1,5 +1,5 @@
 ---
-description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con MODOS que tú eliges — nunca corre solo. ÚSALO cuando pidan correr el cerebro, crear un caso nuevo, buscar bugs técnicos o de UI/UX, buscar mejoras de UI/UX o de código, refrescar casos existentes, revisar el estado del repo o decidir por dónde seguir, y también ante «analiza el repo», «qué falta», «dónde estamos» o «qué conviene hacer ahora» — aunque no nombren el cerebro. Modos: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | (sin argumento = diagnostica, elige y gatilla). ORQUESTA, NO EJECUTA: cada modo es una cadena de skills; los del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación.
+description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con MODOS que tú eliges — nunca corre solo. ÚSALO cuando pidan correr el cerebro, crear un caso nuevo, buscar bugs técnicos o de UI/UX —incluido «algo está roto», «no se ve bien», «revisar el código», «hay un problema en el sitio»—, buscar mejoras de UI/UX o de código, refrescar casos existentes, revisar el estado del repo o decidir por dónde seguir, y también ante «analiza el repo», «qué falta», «dónde estamos» o «qué conviene hacer ahora» — aunque no nombren el cerebro. Modos: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | (sin argumento = diagnostica, elige y gatilla). ORQUESTA, NO EJECUTA: cada modo es una cadena de skills; los del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación.
 argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura · sin argumento = diagnostica, elige y gatilla]"
 ---
 
@@ -93,21 +93,23 @@ Antes de cualquier cosa, sea cual sea el modo:
 
 ### M1 · `caso-nuevo` — crecer el corpus
 
+**Cadena — empieza por `/proximo-caso`:** `/proximo-caso` → `/nuevo-caso` → cierre.
+
 | Paso | Skill | Qué aporta |
 |---|---|---|
 | Elegir el hueco | **`/proximo-caso`** | Mide cobertura país×década/tier **y corre el NEWS-SWEEP**. No vuelvas a buscar por tu cuenta: ese es su trabajo |
 | Crear | **`/nuevo-caso`** | Schema `UAPCase`, `num` secuencial, `posterior` MECE=1, estándar E13 (~550 palabras ES+EN) y disciplina de fuentes primarias |
 | Descartes | **`/learn`** → [`docs/registros.md`](../../docs/registros.md) | Cada candidato rechazado, fechado y **con motivo** |
 | Cierre | **`/retro`** | Lo que no se capturó en caliente |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
 
-**Salida honesta posible: «no hay candidato anclable».** Con los descartes registrados, eso es un resultado, no un fracaso.
-
-Ojo con el visual: si el caso nace sin `documents[]`/`primaryDocument` engorda el backlog E21. Revisa si hay asset libre en `web/public/pursue/` antes de decidir.
+**Salida honesta posible: «no hay candidato anclable»** — con los descartes registrados es un resultado, no un fracaso. Ojo con el visual: sin `documents[]`/`primaryDocument` el caso engorda el backlog E21; revisa `web/public/pursue/` antes.
 
 ---
 
 ### M2 · `bugs` — defectos técnicos y de UI/UX
+
+**Cadena — empieza por `run`:** `run` → `webapp-testing` → `security-review` → `review` → cierre.
 
 | Frente | Skill / vía | Qué aporta |
 |---|---|---|
@@ -117,7 +119,7 @@ Ojo con el visual: si el caso nace sin `documents[]`/`primaryDocument` engorda e
 | Seguridad | **`security-review`** | Dimensión **nunca mirada** por el cerebro, sobre un repo con anon key de Supabase y funciones `SECURITY DEFINER` en producción |
 | Diff a mergear | **`review`** | Segunda mirada antes del merge |
 | Trinquete | **`/blindar`** | Si el defecto abre una clase enforzable |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
 
 Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo donde más falsos verdes han aparecido.
 
@@ -125,31 +127,37 @@ Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo do
 
 ### M3 · `mejoras-ux` — oportunidades, no defectos
 
+**Cadena — empieza por `run`:** `run` → `webapp-testing` → `/innovar` → cierre.
+
 | Paso | Skill | Qué aporta |
 |---|---|---|
 | Hallar fricción | **`run`** → **`webapp-testing`** | Sin esto es corazonada; con esto es señal observada |
 | Lo medible | `audit-design.mjs` | Contraste AA, touch targets, drift de color de tier |
 | Priorizar | **`/innovar`** acotado a UI/UX | Backlog por leverage, no lista de deseos |
 | Articular | **`dataviz`** / **`artifact-design`** | Solo si el visual gana al texto |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
 
-**Este modo necesita MÁS disciplina que los otros, no menos** — es el más fácil de llenar de trabajo inventado. La regla de oro se endurece aquí: **una mejora sin fricción observada es pulido, y el pulido no entra.** Antes de proponer una vista nueva, lista `app/*/page.tsx` y grepea `lib/`: casi se duplicó `/cobertura` por no hacerlo.
+**Este modo necesita MÁS disciplina, no menos** — es el más fácil de llenar de trabajo inventado: **una mejora sin fricción observada es pulido, y el pulido no entra.** Antes de proponer una vista, lista `app/*/page.tsx` y grepea `lib/`.
 
 ---
 
 ### M4 · `mejoras-tec` — calidad de código
 
+**Cadena — empieza por `simplify`:** `simplify` → cierre.
+
 | Paso | Skill | Qué aporta |
 |---|---|---|
 | Simplificar | **`simplify`** | Reuso, eficiencia, limpieza de altitud. **Explícitamente NO caza bugs** — por eso es un modo distinto de `bugs` |
 | Trinquete | **`/blindar`** | Si la limpieza revela una clase enforzable |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
 
 Cuidado con el anti-pattern de bundle: al tocar imports, traza el grafo desde cada `"use client"` antes de concluir nada.
 
 ---
 
 ### M5 · `frescura` — mantener vivos los casos
+
+**Cadena — empieza por el barrido:** `WebSearch` + `gh-pages` → `/nuevo-caso` → cierre.
 
 El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tener un desarrollo nuevo. Es la contraparte de `caso-nuevo` — aquel **crea**, este **mantiene**.
 
@@ -159,9 +167,9 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 | Contraste | `gh-pages` + el propio caso | ¿ya está cubierto? |
 | Aplicar | **`/nuevo-caso`** (su disciplina de fuentes) | Mismo anclaje a primaria |
 | Descartes | **`/learn`** → registros | Los ~14 de jul 2026 se habrían salvado |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Todo modo cierra igual: si el trabajo abrió una clase enforzable → guardrail; toda lección y **todo descarte** → memoria; cierre → cosecha. Un modo que no cierra deja el aprendizaje en la sesión, y la sesión se acaba. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
 
-**La noticia es pista, no fuente.** Ancla a primaria o descarta: en jul 2026, 14 de 19 leads no sobrevivieron —porcentajes de análisis químicos que nadie publicó, entrevistas «liberadas» ausentes de todo lote, una cita atribuida a AARO que contradice su línea—. Si el juicio del caso cambia, **mueve el `posterior`**: registrar evidencia nueva y no dejarla pesar es incoherente (pasó bien en `aguadilla-2013`).
+**La noticia es pista, no fuente.** Ancla a primaria o descarta — la tasa histórica de descarte ronda el 75%, y este dominio está lleno de detalle fabricado. Si el juicio del caso cambia, **mueve el `posterior`**: registrar evidencia nueva sin dejarla pesar es incoherente.
 
 ---
 
@@ -169,7 +177,7 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 
 Corre el gate, lee las señales de impacto (cobertura, demanda cacheada, profundidad E13, frescura, SEO estructural) y **elige el modo que más rinde, lo anuncia con su señal y lo GATILLA**.
 
-**No devuelvas la pregunta.** «¿Qué modo quieres?» traslada al usuario la decisión que el diagnóstico acaba de fundamentar: si mediste las señales, ya sabes cuál rinde más — decidir es el trabajo, no la consulta. Anuncia en una línea *qué* disparas y *por qué señal*, y encadena.
+**No devuelvas la pregunta.** Si mediste las señales ya sabes cuál rinde más: decidir es el trabajo, no la consulta. Anuncia en una línea *qué* disparas y *por qué señal*, y encadena.
 
 El umbral de ACT sigue vigente para lo que toca contenido, copy, ≥5 archivos o borra — pero **elegir el modo NO es una de esas cosas**: es tu decisión, no suya.
 
@@ -181,7 +189,7 @@ En diagnóstico, entonces: si vas a proponer algo que no sea corpus, nombra la p
 
 **Meta-trabajo sobre el propio loop es OVERHEAD, no Impact** — admisible cuando desbloquea una palanca, pero nunca cuenta como el ataque de la corrida. Si no se tocó el corpus, dilo en el reporte.
 
-**Encadenamiento entre modos**: si un modo destapa trabajo de otro —`bugs` encuentra un hueco de cobertura, `frescura` revela un caso que hay que crear— anúncialo y encadena en la misma corrida. Devolver el hallazgo como sugerencia para después es perder el contexto que costó levantar.
+**Encadenamiento entre modos**: si un modo destapa trabajo de otro, anúncialo y encadena en la misma corrida — devolverlo como sugerencia tira el contexto que costó levantar.
 
 ---
 
