@@ -1,0 +1,71 @@
+{
+  "id": "yellow-sea-star-2025",
+  "num": 331,
+  "name": "Objeto en forma de estrella sobre el Mar Amarillo",
+  "name_en": "Star-shaped object over the Yellow Sea",
+  "year_start": 2025,
+  "country": "CN",
+  "country_name": "China",
+  "flag": "🇨🇳",
+  "location": {
+    "lat": 36.0,
+    "lng": 122.5,
+    "place": "Mar Amarillo",
+    "place_en": "Yellow Sea"
+  },
+  "tier": "B",
+  "probability": 30,
+  "category": "incident",
+  "patterns": ["8s", "8e"],
+  "summary": "El 1 de enero de 2025, una plataforma militar estadounidense del Comando Indo-Pacífico detectó mediante sensor infrarrojo un objeto no identificado sobre el Mar Amarillo. El video de 18 segundos, desclasificado por la administración Trump en enero de 2025, muestra un patrón de contraste descrito por funcionarios como una estrella de seis puntas rastreada por el sensor a bordo. AARO no ofreció conclusión analítica y el caso quedó formalmente sin resolver. El video se difundió dentro del cuarto lote de registros UAP —unos 40 archivos, 19 de ellos videos— liberado en 2025.",
+  "summary_en": "On January 1, 2025, a U.S. military platform from Indo-Pacific Command detected an unidentified object over the Yellow Sea via infrared sensor. The 18-second video, declassified by the Trump administration in January 2025, shows a contrast pattern described by officials as a six-pointed star tracked by the onboard sensor. AARO offered no analytical conclusion and the case was formally left unresolved. The video was released within the fourth tranche of UAP records — roughly 40 files, 19 of them videos — declassified in 2025.",
+  "posterior": {
+    "mundano_natural": 0.25,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.35,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.18
+  },
+  "mundanoType": "misid",
+  "whatHappened": "El 1 de enero de 2025, el Comando Indo-Pacífico de Estados Unidos presentó un reporte ante la Oficina de Resolución de Anomalías de Todos los Dominios (AARO) consistente en 18 segundos de video capturado por un sensor infrarrojo a bordo de una plataforma militar estadounidense sobre el Mar Amarillo. El material fue desclasificado y publicado posteriormente como parte del cuarto lote de registros de fenómenos anómalos no identificados liberados por la administración del presidente Donald Trump.\n\nEl video muestra lo que funcionarios del gobierno describieron como un área de contraste que se asemeja a una estrella de seis puntas. La imagen infrarroja presenta un pequeño objeto oscuro centrado en una retícula de rastreo de color cian, del cual irradian picos de difracción tenues con forma de estrella. Según la descripción técnica oficial, el sensor rastrea este patrón de contraste durante toda la grabación de 18 segundos, sin que se observe ningún cambio abrupto de velocidad, maniobra evasiva o pérdida súbita del contacto.\n\nEn la documentación de publicación, el gobierno advirtió expresamente que la descripción del patrón visual —la forma de estrella de seis puntas— no debe interpretarse como una conclusión oficial sobre la identidad o la significancia del objeto. La Oficina de Resolución de Anomalías no emitió ninguna evaluación analítica sobre la naturaleza del fenómeno rastreado. El caso quedó clasificado formalmente como no resuelto.\n\nEl video se difundió en el contexto de una apertura sin precedentes de archivos gubernamentales sobre fenómenos anómalos. En las primeras semanas de 2025, la administración Trump desclasificó varios lotes de reportes UAP, incluyendo imágenes infrarrojas y casos vinculados a instalaciones nucleares estadounidenses. El caso DOW-UAP-PR104 del Mar Amarillo se difundió dentro de ese cuarto lote, integrado por unos 40 archivos —19 de ellos videos— procedentes del Pentágono, la NASA, la CIA, el FBI y el Departamento de Energía, con incidentes que abarcan desde fines de la década de 1940 hasta 2025. Como el resto de ese material, se publicó sin una conclusión analítica que estableciera qué fue lo rastreado por el sensor.",
+  "whatHappened_en": "On January 1, 2025, the United States Indo-Pacific Command submitted a report to the All-domain Anomaly Resolution Office (AARO) consisting of 18 seconds of footage captured by an infrared sensor aboard a U.S. military platform over the Yellow Sea. The material was later declassified and released as part of the fourth tranche of unidentified anomalous phenomena records released by the administration of President Donald Trump.\n\nThe video shows what government officials described as an area of contrast resembling a six-pointed star. The infrared image presents a small dark object centered in a cyan tracking reticle, from which faint star-like diffraction spikes radiate. According to the official technical description, the sensor tracks this contrast pattern throughout the entire 18-second recording, with no abrupt change in speed, evasive maneuver, or sudden loss of contact observed.\n\nIn the release documentation, the government expressly cautioned that the description of the visual pattern — the six-pointed star shape — should not be interpreted as an official conclusion about the object's identity or significance. The Anomaly Resolution Office issued no analytical assessment on the nature of the tracked phenomenon. The case was formally classified as unresolved.\n\nThe video was released in the context of an unprecedented opening of government UAP archives. In the first weeks of 2025, the Trump administration declassified several tranches of UAP reports, including infrared imagery and cases linked to U.S. nuclear facilities. The Yellow Sea case DOW-UAP-PR104 was released within that fourth tranche, made up of roughly 40 files — 19 of them videos — from the Pentagon, NASA, the CIA, the FBI and the Department of Energy, with incidents spanning from the late 1940s to 2025. Like the rest of that material, it was released without an analytical conclusion establishing what the sensor had tracked.",
+  "whyMatters": "Este caso importa no tanto por el patrón visual que muestra —que podría ser un artefacto de sensor, un fenómeno atmosférico o incluso una plataforma convencional vista en condiciones específicas— sino por su posición dentro de la política de transparencia del Pentágono sobre fenómenos no identificados. El video fue desclasificado en un momento de máxima apertura institucional: las primeras semanas de 2025 vieron la liberación de más registros UAP por parte del gobierno estadounidense que cualquier período comparable desde el inicio del programa AARO. Que este caso se difunda dentro de un lote de decenas de registros —19 de ellos videos— liberados de una sola vez es un marcador de la escala que ha alcanzado la desclasificación de material militar sobre fenómenos no identificados.\n\nLa ausencia de conclusión analítica por parte de AARO es también notable. No se trata de un caso resuelto como globo meteorológico, dron comercial o artefacto óptico conocido, sino de un registro que la oficina responsable del análisis declara abiertamente que no puede cerrar. Eso no lo hace extraordinario de forma automática —puede ser genuinamente ambiguo por insuficiencia de datos, o lo suficientemente marginal como para no priorizar recursos de análisis adicionales— pero sí lo distingue de la gran mayoría de reportes UAP que AARO sí resuelve mediante explicaciones convencionales. El caso entra al corpus porque cumple el criterio de rastreabilidad institucional: es un documento oficial, con referencia de caso (DOW-UAP-PR104), sensor de plataforma militar, y reconocimiento público de que permanece sin resolver.\n\nTambién es un ejemplo representativo de cómo se ven actualmente los reportes UAP más sólidos disponibles para el análisis público. No hay testigos visuales describiendo comportamiento imposible, ni múltiples sensores confirmándose entre sí, ni datos de telemetría detallados. Hay 18 segundos de video infrarrojo, una forma geométrica descrita con cautela por funcionarios, y una evaluación institucional que reconoce no saber qué es. Esta austeridad de datos es la norma estructural en el corpus de videos militares desclasificados: registros breves, de un solo sensor, con metadata limitada, que documentan que algo fue rastreado sin poder establecer qué era. El volumen mismo de lo liberado en este cuarto lote es significativo: marca hasta dónde ha llegado la disposición del Pentágono a hacer públicos registros que su propio sistema de análisis reconoce no poder cerrar.",
+  "whyMatters_en": "This case matters not so much for the visual pattern it shows — which could be a sensor artifact, an atmospheric phenomenon or even a conventional platform seen under specific conditions — but for its position within the Pentagon's transparency policy on unidentified phenomena. The video was declassified at a moment of maximum institutional openness: the first weeks of 2025 saw the release of more UAP records by the U.S. government than any comparable period since the start of the AARO program. That this case is released within a tranche of dozens of records — 19 of them videos — declassified at once is a marker of the scale that the declassification of military material on unidentified phenomena has reached.\n\nThe absence of analytical conclusion from AARO is also notable. This is not a case resolved as a weather balloon, commercial drone or known optical artifact, but a record that the office responsible for analysis openly declares it cannot close. That does not make it automatically extraordinary — it may be genuinely ambiguous due to data insufficiency, or marginal enough not to prioritize additional analysis resources — but it does distinguish it from the vast majority of UAP reports that AARO does resolve through conventional explanations. The case enters the corpus because it meets the institutional traceability criterion: it is an official document, with case reference (DOW-UAP-PR104), military platform sensor, and public acknowledgment that it remains unresolved.\n\nIt is also a representative example of what currently the strongest UAP reports available for public analysis look like. There are no visual witnesses describing impossible behavior, no multiple sensors confirming each other, no detailed telemetry data. There are 18 seconds of infrared video, a geometric shape cautiously described by officials, and an institutional assessment that acknowledges not knowing what it is. This data austerity is the structural norm in the corpus of declassified military videos: brief records, from a single sensor, with limited metadata, documenting that something was tracked without being able to establish what it was. The sheer volume released in this fourth tranche is significant: it marks how far the Pentagon's willingness has gone to make public records that its own analysis system acknowledges it cannot close.",
+  "evidence": [
+    "Video infrarrojo de 18 segundos capturado el 1 de enero de 2025 por sensor militar estadounidense sobre el Mar Amarillo",
+    "Reporte formal DOW-UAP-PR104 presentado por el Comando Indo-Pacífico ante AARO",
+    "Desclasificación oficial como parte del cuarto lote de registros UAP de la administración Trump (enero 2025)",
+    "Descripción técnica oficial: área de contraste con patrón de estrella de seis puntas rastreada por sensor a bordo",
+    "Ausencia de conclusión analítica por parte de AARO; caso formalmente clasificado como no resuelto",
+    "Publicación dentro del cuarto lote de registros UAP (unos 40 archivos, 19 de ellos videos) desclasificado en 2025"
+  ],
+  "evidence_en": [
+    "18-second infrared video captured on January 1, 2025 by U.S. military sensor over the Yellow Sea",
+    "Formal report DOW-UAP-PR104 submitted by Indo-Pacific Command to AARO",
+    "Official declassification as part of the fourth tranche of UAP records from the Trump administration (January 2025)",
+    "Official technical description: area of contrast with six-pointed star pattern tracked by onboard sensor",
+    "Absence of analytical conclusion from AARO; case formally classified as unresolved",
+    "Release within the fourth tranche of UAP records (roughly 40 files, 19 of them videos) declassified in 2025"
+  ],
+  "sources": [
+    {
+      "name": "AARO — UAP Records",
+      "url": "https://www.aaro.mil/UAP-Records/",
+      "note": "Repositorio oficial de registros UAP de la Oficina de Resolución de Anomalías de Todos los Dominios.",
+      "note_en": "Official UAP records repository of the All-domain Anomaly Resolution Office."
+    },
+    {
+      "name": "Fox News — 'New Trump UFO file dump includes military footage of mysterious star-shaped object'",
+      "url": "https://www.foxnews.com/politics/trump-ufo-file-dump-includes-military-footage-mysterious-star-shaped-object",
+      "note": "Cobertura periodística de la desclasificación del caso DOW-UAP-PR104.",
+      "note_en": "Press coverage of the declassification of case DOW-UAP-PR104."
+    },
+    {
+      "name": "The Black Vault — 'AARO Releases FY2025 UAP Report'",
+      "url": "https://www.theblackvault.com/documentarchive/aaro-releases-fy2025-uap-report-months-after-statutory-deadline-citing-319-new-cases-and-expanded-satellite-analysis/",
+      "note": "Análisis del reporte anual FY2025 de AARO que contextualiza los casos sin resolver.",
+      "note_en": "Analysis of AARO's FY2025 annual report that contextualizes the unresolved cases."
+    }
+  ]
+}

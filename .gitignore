@@ -10,3 +10,6 @@ data/atlas-points.json
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+# Token OAuth de suscripción del panel del cerebro (secreto, nunca versionar)
+tools/cerebro-panel/.claude-oauth-token
+tools/cerebro-panel/panel.log

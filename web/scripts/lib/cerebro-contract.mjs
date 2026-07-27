@@ -18,9 +18,10 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
+import { fileURLToPath } from "url";
 
 export const repoRoot = path.resolve(
-  path.dirname(new URL(import.meta.url).pathname),
+  path.dirname(fileURLToPath(import.meta.url)),
   "../../..",
 );
 export const commandsDir = path.join(repoRoot, ".claude", "commands");

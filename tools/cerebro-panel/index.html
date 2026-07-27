@@ -147,6 +147,17 @@
     border-radius:8px;text-align:center}
   .warnbox{background:#fff6e8;border:1px solid var(--warn);border-radius:8px;
     padding:11px 14px;font-size:13px;margin-top:12px}
+  .offline{background:var(--err);color:#fff;text-align:center;padding:7px 12px;
+    font-family:ui-monospace,monospace;font-size:12.5px;border-top:1px solid rgba(255,255,255,.25)}
+  .checkpoint{margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+  .chk-list{margin:8px 0;display:flex;flex-direction:column;gap:4px}
+  .chk-list .f{font-family:ui-monospace,monospace;font-size:12px;display:flex;gap:8px;align-items:center;
+    word-break:break-all}
+  .chk-list label.f{cursor:pointer} .chk-list input[type=checkbox]{margin:0;flex:none}
+  .chk-list .f .tag{font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;padding:1px 7px;
+    border-radius:99px;color:#fff;flex:none}
+  .chk-msg{width:100%;margin-top:8px;font:12.5px ui-monospace,monospace;padding:7px 9px;border-radius:6px;
+    border:1px solid var(--border);background:var(--bg);color:var(--text)}
 </style>
 </head>
 <body>
@@ -158,8 +169,10 @@
     <span class="grow"></span>
     <span class="chip mono" id="chip-repo">…</span>
     <span class="chip mono" id="chip-perm">…</span>
+    <span class="chip mono" id="chip-auth">…</span>
     <button id="btn-sondear" class="primary">Sondear salud</button>
   </div>
+  <div class="offline" id="offline" role="alert" hidden>⚠ Sin conexión con el servidor del panel · reintentando…</div>
 </header>
 
 <div class="wrap">
@@ -189,6 +202,7 @@
       <div style="display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap">
         <button class="primary" id="btn-gatillar">Gatillar este modo</button>
         <button class="mini" id="btn-detener" disabled>Detener</button>
+        <span class="tasa" id="nota-cimiento" style="color:var(--err)" hidden>cimiento roto — arregla las sondas en rojo primero</span>
         <span class="grow"></span>
         <span class="tasa" id="resumen-job">en reposo</span>
       </div>
@@ -198,6 +212,20 @@
       <div class="ticker" id="ticker" hidden>
         <span class="eyebrow">Movimiento · herramientas invocadas</span>
         <ol id="eventos"></ol>
+      </div>
+
+      <!-- Checkpoint: la corrida NO aterriza sola. Al terminar, muestra qué
+           archivos tocó y tú decides commitear (en rama) o descartar. -->
+      <div class="checkpoint" id="checkpoint" hidden>
+        <span class="eyebrow">Checkpoint · qué tocó la corrida (¿commiteamos?)</span>
+        <div id="chk-archivos" class="chk-list"></div>
+        <input id="chk-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
+        <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap">
+          <button class="primary" id="btn-commit">Commitear en rama</button>
+          <button class="mini" id="btn-discard">Descartar</button>
+          <span class="grow"></span>
+          <span class="tasa" id="chk-estado"></span>
+        </div>
       </div>
     </div>
   </section>
@@ -229,6 +257,17 @@
     <div id="corridas"></div>
   </section>
 
+  <!-- ══ REPO ══ -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Repo · cambios sin commitear</h2>
+      <p>Commitea desde el panel lo que ya hay (aunque no venga de una corrida). Rama nueva, sin push.</p>
+      <span class="grow"></span>
+      <button class="mini" id="btn-repo-refresh">Refrescar</button>
+    </div>
+    <div id="repo"><div class="empty">Pulsa «Refrescar» para ver los cambios del working tree.</div></div>
+  </section>
+
   <!-- ══ SALIDA CRUDA ══ -->
   <section id="sec-salida" hidden>
     <div class="shead"><h2 class="eyebrow">Salida de la corrida</h2></div>
@@ -242,7 +281,20 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-let estado = null, modoSel = null, job = null, poll = null;
+let estado = null, modoSel = null, job = null, poll = null, cimientoRoto = false, reconn = null, chkJob = null;
+
+/* Banner de conexión. El server del panel es un proceso local que puede caerse;
+   sin esto, un fetch fallido dejaba la UI muda o reintentaba en silencio. */
+function conexion(ok) { $("#offline").hidden = ok; }
+
+/* Estado del botón de disparo en un solo sitio: se bloquea mientras hay una
+   corrida viva Y si el cimiento está roto (la doctrina del cerebro prohíbe
+   gatillar un modo sobre err>0 — «arregla esto antes de gatillar otro modo»). */
+function actualizarGatillar() {
+  const corriendo = job?.estado === "corriendo";
+  $("#btn-gatillar").disabled = corriendo || cimientoRoto;
+  $("#nota-cimiento").hidden = !cimientoRoto;
+}
 
 /* ── el grafo ────────────────────────────────────────────────────────────
    Las bandas fijas (gate, cierre, rastro) son la estructura que `cerebro.md`
@@ -360,11 +412,26 @@ function pintarFlujo() {
 
 /* ── estado del repo ─────────────────────────────────────────────────── */
 async function cargarEstado() {
-  estado = await (await fetch("/api/state")).json();
-  $("#chip-repo").textContent = estado.repo.split("/").pop();
-  $("#chip-perm").textContent = "permisos: " + estado.permisos;
-  if (!modoSel) modoSel = estado.modos[0];
-  pintarTabs(); pintarFlujo(); pintarMetricas(); pintarCorridas();
+  try {
+    const y = window.scrollY;                        // no saltar al re-render
+    const r = await fetch("/api/state");
+    if (!r.ok) throw new Error(r.status);
+    estado = await r.json();
+    conexion(true); clearTimeout(reconn);
+    $("#chip-repo").textContent = estado.repo.split(/[\\/]/).pop();
+    $("#chip-perm").textContent = "permisos: " + estado.permisos;
+    const conToken = /suscripci/.test(estado.auth || "");
+    const ca = $("#chip-auth");
+    ca.textContent = "auth: " + (estado.auth || "?");
+    ca.style.color = conToken ? "var(--ok)" : "var(--err)";
+    ca.style.borderColor = conToken ? "var(--ok)" : "var(--err)";
+    if (!modoSel) modoSel = estado.modos[0];
+    pintarTabs(); pintarFlujo(); pintarMetricas(); pintarCorridas();
+    window.scrollTo(0, y);
+  } catch (e) {
+    conexion(false);
+    clearTimeout(reconn); reconn = setTimeout(cargarEstado, 3000);
+  }
 }
 
 function pintarTabs() {
@@ -401,6 +468,11 @@ function pintarCorridas() {
     $("#corridas").innerHTML = `<div class="empty">Todavía ninguna corrida ha dejado rastro.</div>`;
     return;
   }
+  // Preservar qué corridas estaban expandidas: al terminar una corrida,
+  // cargarEstado() re-pinta esta sección y colapsaba lo que el usuario tenía
+  // abierto —justo el resultado que quería leer. Se re-abre por clave estable.
+  const abiertos = new Set(
+    [...document.querySelectorAll(".corrida[open]")].map((d) => d.dataset.k));
   $("#corridas").innerHTML = c.map((r) => {
     const tasa = typeof r.candidatos === "number" && r.candidatos > 0
       ? `${r.verificados}/${r.candidatos} verificados` : "";
@@ -408,7 +480,7 @@ function pintarCorridas() {
       ? `<span class="badge b-warn">faltan ${r._faltantes.length}</span>` : "";
     const campo = (k, label) => r[k]
       ? `<dt>${label}</dt><dd>${esc(Array.isArray(r[k]) ? r[k].join(" · ") : r[k])}</dd>` : "";
-    return `<details class="corrida">
+    return `<details class="corrida" data-k="${esc(String(r._linea ?? (r.fecha + r.modo)))}">
       <summary><span class="badge b-run">${esc(r.modo)}</span>
         <strong class="mono">${esc(r.fecha)}</strong>
         <span class="tasa">${esc(tasa)}</span>${alerta}
@@ -421,6 +493,9 @@ function pintarCorridas() {
         vigente: faltan <code class="mono">${esc(r._faltantes.join(", "))}</code>.</div>` : ""}
     </details>`;
   }).join("");
+  document.querySelectorAll(".corrida").forEach((d) => {
+    if (abiertos.has(d.dataset.k)) d.open = true;
+  });
 }
 
 /* ── salud ───────────────────────────────────────────────────────────── */
@@ -445,7 +520,7 @@ function pintarSalud(h) {
           ${estado.modos.filter((m) => m.arg).map((m) =>
             `<option value="${esc(m.arg)}"${m.arg === "bugs" ? " selected" : ""}>${esc(m.arg)}</option>`).join("")}
         </select>
-        <button class="mini" data-fix="${esc(t).slice(0, 600)}"
+        <button class="mini" data-fix="${esc(t.slice(0, 2000))}"
           data-dest="dest-${esc(s.id)}-${i}">Mandar</button></div>`).join("");
     return `<div class="sonda">
       <div class="top"><span class="badge ${badge[s.estado]}">${esc(s.estado)}</span>
@@ -464,6 +539,9 @@ function pintarSalud(h) {
   });
   document.querySelectorAll("[data-fix]").forEach((b) =>
     b.onclick = () => gatillar($("#" + b.dataset.dest).value, b.dataset.fix));
+
+  cimientoRoto = !!h.cimientoRoto;   // bloquea «Gatillar» hasta arreglar err>0
+  actualizarGatillar();
 }
 
 /* ── disparo ─────────────────────────────────────────────────────────── */
@@ -478,23 +556,96 @@ async function gatillar(modo, contexto = "") {
   const sel = estado.modos.find((m) => m.arg === modo);
   if (sel) { modoSel = sel; pintarTabs(); }
 
-  const r = await fetch("/api/fire", {
-    method: "POST", headers: { "content-type": "application/json" },
-    body: JSON.stringify({ modo, contexto }),
-  });
-  const j = await r.json();
-  if (!r.ok) return alert(j.error);
+  // Feedback inmediato: entre el click y el primer tick había un hueco mudo.
+  $("#btn-gatillar").disabled = true;
+  $("#resumen-job").textContent = "lanzando…";
+
+  let j;
+  try {
+    const r = await fetch("/api/fire", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ modo, contexto }),
+    });
+    j = await r.json();
+    if (!r.ok) { $("#resumen-job").textContent = "en reposo"; actualizarGatillar(); return alert(j.error); }
+    conexion(true);
+  } catch (e) {
+    conexion(false);
+    $("#resumen-job").textContent = "en reposo";
+    actualizarGatillar();
+    return;
+  }
   job = j;
   $("#ticker").hidden = false;
   $("#sec-salida").hidden = false;
+  // Resetear el checkpoint de la corrida anterior.
+  $("#checkpoint").hidden = true; chkJob = null;
+  $("#btn-commit").disabled = false; $("#btn-commit").textContent = "Commitear en rama";
+  $("#btn-discard").disabled = false; $("#chk-estado").textContent = ""; $("#chk-msg").value = "";
   refrescar(j);
   clearInterval(poll);
   poll = setInterval(tick, 1500);
 }
 
+/* ── checkpoint de commit ────────────────────────────────────────────────
+   La corrida no aterriza sola: al terminar mostramos qué tocó y tú commiteas
+   (en rama, solo esos archivos) o descartas. */
+async function cargarCheckpoint(id) {
+  try {
+    const d = await (await fetch("/api/diff?id=" + id)).json();
+    conexion(true);
+    if (!d.cambios) return;
+    const etiqueta = (e) => e === "??" ? "nuevo" : /M/.test(e) ? "modif." : e === "sin cambios" ? "sin cambios" : e;
+    $("#chk-archivos").innerHTML = d.archivos.map((a) =>
+      `<div class="f"><span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiqueta(a.estado))}</span>${esc(a.archivo)}</div>`).join("");
+    if (d.commit) { $("#chk-estado").textContent = `commiteado · ${d.commit.rama} @ ${d.commit.hash}`; chkFin(); }
+    else if (d.descartado) { $("#chk-estado").textContent = "descartado"; chkFin(); }
+    else $("#chk-estado").textContent = `${d.cambios} archivo(s) · rama actual: ${d.rama}`;
+    $("#checkpoint").hidden = false;
+  } catch (e) { conexion(false); }
+}
+function chkFin() { $("#btn-commit").disabled = true; $("#btn-discard").disabled = true; }
+
+$("#btn-commit").onclick = async () => {
+  if (!job) return;
+  const b = $("#btn-commit"); b.disabled = true; b.textContent = "Commiteando…";
+  try {
+    const r = await fetch("/api/commit", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ id: job.id, message: $("#chk-msg").value.trim() }),
+    });
+    const d = await r.json();
+    if (!r.ok) { alert(d.error); b.disabled = false; b.textContent = "Commitear en rama"; return; }
+    $("#chk-estado").textContent = `commiteado · ${d.rama} @ ${d.hash}`;
+    b.textContent = "Commiteado"; chkFin();
+  } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear en rama"; }
+};
+
+$("#btn-discard").onclick = async () => {
+  if (!job) return;
+  if (!confirm("Descartar los cambios de esta corrida (revertir/borrar SOLO esos archivos)?")) return;
+  const b = $("#btn-discard"); b.disabled = true;
+  try {
+    const r = await fetch("/api/discard", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ id: job.id }),
+    });
+    const d = await r.json();
+    if (!r.ok) { alert(d.error); b.disabled = false; return; }
+    $("#chk-estado").textContent = `descartado (${d.revertidos.length + d.eliminados.length} archivo(s))`;
+    chkFin();
+  } catch (e) { conexion(false); b.disabled = false; }
+};
+
 async function tick() {
   if (!job) return;
-  refrescar(await (await fetch("/api/job?id=" + job.id)).json());
+  try {
+    refrescar(await (await fetch("/api/job?id=" + job.id)).json());
+    conexion(true);
+  } catch (e) {
+    conexion(false);
+    return;                  // el intervalo sigue; el próximo tick reintenta
+  }
   if (["listo", "fallo", "cancelado", "roto"].includes(job.estado)) {
     clearInterval(poll);
     cargarEstado();          // la corrida pudo escribir en el log
@@ -517,7 +668,13 @@ function refrescar(j) {
   bl.hidden = !j.bloqueo;
   if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
   $("#btn-detener").disabled = j.estado !== "corriendo";
-  $("#btn-gatillar").disabled = j.estado === "corriendo";
+  actualizarGatillar();
+
+  // Checkpoint: al terminar, si la corrida tocó archivos, ofrecer commit/descartar (una sola vez).
+  if (["listo", "fallo", "cancelado", "roto"].includes(j.estado) && j.archivos?.length && chkJob !== j.id) {
+    chkJob = j.id;
+    cargarCheckpoint(j.id);
+  }
   $("#job-out").textContent = j.salida || "sin salida de texto todavía…";
 }
 
@@ -529,6 +686,71 @@ $("#btn-detener").onclick = async () => {
   })).json());
   clearInterval(poll);
 };
+
+/* ── repo · commitear cambios sin corrida ────────────────────────────────
+   Para commitear desde el panel lo que ya hay en el working tree (un caso de
+   una corrida vieja, cambios manuales). Mismo mini-git acotado a lo elegido. */
+async function cargarRepo() {
+  try {
+    const d = await (await fetch("/api/repo")).json();
+    conexion(true);
+    if (!d.archivos.length) {
+      $("#repo").innerHTML = `<div class="empty">Working tree limpio — nada que commitear.</div>`;
+      return;
+    }
+    const et = (e) => e === "??" ? "nuevo" : e.includes("D") ? "borrado" : e.includes("M") ? "modif." : e || "?";
+    $("#repo").innerHTML = `
+      <div class="chk-list" id="repo-list">
+        ${d.archivos.map((a) => `
+          <label class="f"><input type="checkbox" data-f="${esc(a.archivo)}" checked>
+            <span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(et(a.estado))}</span>${esc(a.archivo)}</label>`).join("")}
+      </div>
+      <input id="repo-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
+      <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap">
+        <button class="primary" id="btn-repo-commit">Commitear seleccionados en rama</button>
+        <button class="mini" id="btn-repo-discard">Descartar seleccionados</button>
+        <span class="grow"></span>
+        <span class="tasa">rama actual: ${esc(d.rama)}</span>
+      </div>
+      <div class="tasa" id="repo-estado" style="margin-top:8px"></div>`;
+    $("#btn-repo-commit").onclick = repoCommit;
+    $("#btn-repo-discard").onclick = repoDiscard;
+  } catch (e) { conexion(false); }
+}
+const seleccionados = () => [...document.querySelectorAll("#repo-list input:checked")].map((c) => c.dataset.f);
+
+async function repoCommit() {
+  const files = seleccionados();
+  if (!files.length) return alert("Selecciona al menos un archivo.");
+  const b = $("#btn-repo-commit"); b.disabled = true; b.textContent = "Commiteando…";
+  try {
+    const r = await fetch("/api/repo-commit", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ message: $("#repo-msg").value.trim(), archivos: files }),
+    });
+    const d = await r.json();
+    if (!r.ok) { alert(d.error); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; return; }
+    $("#repo-estado").textContent = `✓ commiteado · ${d.rama} @ ${d.hash} (${d.archivos.length} archivo/s)`;
+    setTimeout(cargarRepo, 400);
+  } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; }
+}
+
+async function repoDiscard() {
+  const files = seleccionados();
+  if (!files.length) return alert("Selecciona al menos un archivo.");
+  if (!confirm(`Descartar ${files.length} archivo(s)? Revierte los versionados y BORRA los nuevos.`)) return;
+  try {
+    const r = await fetch("/api/repo-discard", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ archivos: files }),
+    });
+    const d = await r.json();
+    if (!r.ok) { alert(d.error); return; }
+    $("#repo-estado").textContent = `descartado (${d.revertidos.length + d.eliminados.length} archivo/s)`;
+    setTimeout(cargarRepo, 400);
+  } catch (e) { conexion(false); }
+}
+$("#btn-repo-refresh").onclick = cargarRepo;
 
 cargarEstado();
 </script>
