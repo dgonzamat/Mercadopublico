@@ -181,7 +181,7 @@
   <section>
     <div class="shead">
       <h2 class="eyebrow">Orquestación</h2>
-      <p>El flujo real del cerebro. Los nodos se encienden conforme la corrida avanza.</p>
+      <p>Los nodos se encienden conforme la corrida avanza — gate y cadena (skills del modo). En modo lean el cierre/rastro (ceremonia) se omiten a propósito, así que quedan apagados.</p>
     </div>
 
     <div class="lienzo" id="lienzo">
@@ -210,7 +210,7 @@
       <div class="warnbox" id="bloqueo" hidden></div>
 
       <div class="ticker" id="ticker" hidden>
-        <span class="eyebrow">Movimiento · herramientas invocadas</span>
+        <span class="eyebrow">Flujo en vivo · pasos y skills que corre la corrida</span>
         <ol id="eventos"></ol>
       </div>
 
@@ -344,7 +344,10 @@ function coincide(n, ev) {
   const id = n.id.replace(/^\//, "");
   if (ev.tool.toLowerCase() === id.toLowerCase()) return true;
   const e = id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return new RegExp(`"${e}"|/${e}\\b`, "i").test(ev.detalle);
+  // Enciende con: la forma citada (`"simplify"`), o `/skill`/`\skill` (barra o
+  // backslash Windows, incluido leer `commands\<skill>.md`). Sin el backslash,
+  // los nodos no encendían en Windows y el diagrama se veía muerto.
+  return new RegExp(`"${e}"|[/\\\\]${e}\\b`, "i").test(ev.detalle);
 }
 
 function nodosDelModo(modo) {
@@ -652,12 +655,40 @@ async function tick() {
   }
 }
 
+/* Traduce un tool_use crudo a un paso/skill LEGIBLE. El lean ejecuta los skills
+   inline (leyendo su .md), así que sin esto el ticker solo muestra Read/Bash y no
+   se ve "qué skill corre". Aquí se nombra el flujo real. */
+function etiquetaEvento(e) {
+  const d = e.detalle || "", tool = e.tool || "";
+  const val = (re) => { const m = d.match(re); return m ? m[1] : ""; };
+  const md = d.match(/\.claude[\/\\]+commands[\/\\]+([a-z0-9-]+)\.md/i);
+  if (md) return { ic: "▶", lbl: `skill /${md[1]}`, dt: "leyendo su contrato y ejecutándolo inline" };
+  if (tool === "WebSearch") return { ic: "🔎", lbl: "WebSearch", dt: val(/"query":"([^"]{0,70})/) || "búsqueda web" };
+  if (tool === "WebFetch")  return { ic: "🌐", lbl: "WebFetch", dt: val(/"url":"([^"]{0,70})/) };
+  if (tool === "Bash") {
+    const cmd = val(/"command":"([^"]{0,90})/);
+    if (/validate-schema|audit-consistency|audit-design|audit-skills/.test(cmd)) return { ic: "✓", lbl: "gate · sonda", dt: cmd };
+    if (/rm -rf|build-cases/.test(cmd)) return { ic: "⚙", lbl: "calibrate", dt: cmd };
+    return { ic: "·", lbl: "Bash", dt: cmd };
+  }
+  if (/^(Write|Edit|MultiEdit)$/.test(tool)) {
+    const fp = val(/"(?:file_path|notebook_path)":"([^"]+)"/), base = fp.split(/[\/\\]/).pop();
+    const esCaso = /data[\/\\]+cases[\/\\]+/.test(fp);
+    return { ic: esCaso ? "✍" : "✎", lbl: esCaso ? "escribiendo CASO" : `${tool}`, dt: base };
+  }
+  if (tool === "Read") return { ic: "📄", lbl: "Read", dt: val(/"file_path":"([^"]+)"/).split(/[\/\\]/).pop() };
+  if (/^(Grep|Glob)$/.test(tool)) return { ic: "🔍", lbl: tool, dt: val(/"pattern":"([^"]{0,50})/) };
+  if (tool === "TodoWrite") return { ic: "☑", lbl: "plan (todos)", dt: "" };
+  return { ic: "·", lbl: tool, dt: d.slice(tool.length + 1, 120) };
+}
+
 function refrescar(j) {
   job = j;
   pintarFlujo();
-  $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e) => `
-    <li><b>${esc(e.tool)}</b><span>${esc(e.detalle.slice(e.tool.length + 1, 150))}</span></li>`).join("")
-    || `<li><span>sin herramientas todavía…</span></li>`;
+  $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e) => {
+    const t = etiquetaEvento(e);
+    return `<li><b>${esc(t.ic)} ${esc(t.lbl)}</b><span>${esc(t.dt)}</span></li>`;
+  }).join("") || `<li><span>sin herramientas todavía…</span></li>`;
 
   const r = j.resultado;
   $("#resumen-job").textContent = j.estado === "corriendo"

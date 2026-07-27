@@ -108,6 +108,17 @@ const SONDAS = [
 const jobs = new Map();
 let seq = 0;
 
+// Cadena visible por modo para el flowchart. Los `backticks` marcan nodos que
+// el cliente enciende (al leer el .md del skill o correr la tool). Refleja el
+// flujo LEAN real — `parseModeTable` devuelve vacío, así que se declara aquí.
+const CADENA_FLUJO = {
+  "caso-nuevo": "WebSearch → `/proximo-caso` → `/nuevo-caso`",
+  "bugs": "`security-review` · `review` · `/blindar`",
+  "mejoras-ux": "`/innovar`",
+  "mejoras-tec": "`simplify` · `/blindar`",
+  "frescura": "WebSearch → `/nuevo-caso` → `/learn`",
+};
+
 const contrato = () => {
   const src = readCerebro();
   const secciones = parseModes(src);
@@ -120,7 +131,7 @@ const contrato = () => {
       // M0 se declara `sin argumento`: se dispara sin pasar modo.
       arg: s.name === "sin argumento" ? "" : s.name,
       proposito: fila?.proposito ?? "",
-      cadena: fila?.cadena ?? "",
+      cadena: CADENA_FLUJO[s.name] ?? fila?.cadena ?? "",
     };
   });
   return { modos, camposLog: requiredLogFields(src) };
