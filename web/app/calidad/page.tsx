@@ -4,6 +4,7 @@ import { STATS } from "@/lib/siteStats";
 import { MECE_CLASSES, corpusPosteriors, documentPosteriors } from "@/lib/meceModel";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
+import Link from "next/link";
 
 export const metadata = {
   ...pageMeta({
@@ -102,6 +103,7 @@ export default function CalidadPage() {
     label: m.label,
     labelEn: m.labelEn,
     n: agg[m.id],
+    href: m.href,
   })).sort((a, b) => b.n - a.n);
   const meceMax = Math.max(...mece.map((m) => m.n));
 
@@ -251,17 +253,35 @@ export default function CalidadPage() {
           </span>
         </div>
         <div className="space-y-2.5">
-          {mece.map((m) => (
-            <div key={m.label} className="grid grid-cols-[minmax(140px,220px)_1fr_auto] items-center gap-3">
-              <div className="truncate text-sm">
-                <T es={m.label} en={m.labelEn} />
+          {mece.map((m) => {
+            const row = (
+              <>
+                <div className="truncate text-sm">
+                  <T es={m.label} en={m.labelEn} />
+                </div>
+                <div className="h-5 overflow-hidden rounded-sm bg-surface-2">
+                  <div className="h-full rounded-sm bg-muted" style={{ width: `${pct(m.n, meceMax)}%` }} />
+                </div>
+                <div className="w-14 text-right font-mono text-sm tabular-nums">{m.n.toFixed(1)}</div>
+              </>
+            );
+            return (
+              <div key={m.label}>
+                {m.href ? (
+                  <Link
+                    href={m.href}
+                    className="grid grid-cols-[minmax(140px,220px)_1fr_auto] items-center gap-3 rounded-sm px-2 py-1.5 -mx-2 transition-colors hover:bg-border/40 focus:bg-border/40 focus:outline-none focus:ring-2 focus:ring-accent/30"
+                  >
+                    {row}
+                  </Link>
+                ) : (
+                  <div className="grid grid-cols-[minmax(140px,220px)_1fr_auto] items-center gap-3 px-2 py-1.5 -mx-2">
+                    {row}
+                  </div>
+                )}
               </div>
-              <div className="h-5 overflow-hidden rounded-sm bg-surface-2">
-                <div className="h-full rounded-sm bg-muted" style={{ width: `${pct(m.n, meceMax)}%` }} />
-              </div>
-              <div className="w-14 text-right font-mono text-sm tabular-nums">{m.n.toFixed(1)}</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
         <p className="text-sm text-muted">
           <T
