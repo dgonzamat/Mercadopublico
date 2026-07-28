@@ -360,8 +360,14 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
               setQuery(e.target.value);
               setSelected(0);
             }}
-            onBlur={() => {
-              setTimeout(() => closeSearch(), 150);
+            onBlur={(e) => {
+              // Cerrar solo si el foco no va a un resultado del listbox.
+              // `relatedTarget` es el elemento que recibe el foco tras el blur;
+              // si es un descendiente del overlay (un link), el click ya cerró.
+              if (e.relatedTarget && e.currentTarget.parentElement?.contains(e.relatedTarget as Node)) {
+                return; // foco dentro del overlay → no cerrar
+              }
+              closeSearch();
             }}
             onKeyDown={handleKeyDown}
           />
