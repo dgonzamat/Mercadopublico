@@ -745,13 +745,15 @@ async function descartarArchivos(archivos) {
  * disciplina viva (`nuevo-caso.md` + un caso plantilla) en vez de hornearla, para
  * no duplicar el contrato. Salta gate/curar-memoria/learn/retro/cierre.
  */
-function promptCasoNuevoLean(contexto) {
-  const p = [
-    `Tarea: crear UN caso nuevo para el corpus UAP Codex (repo actual), en headless y EFICIENTE.`,
-    `La tool SlashCommand está deshabilitada; trabaja con Bash/Read/Write/Edit/WebSearch.`,
-    `Para AHORRAR procesamiento NO corras: rm -rf out, audit-consistency, audit-design, curar-memoria,`,
-    `learn, retro, ni el cierre/log del cerebro. Esto es SOLO crear el caso — sin ceremonia.`,
-    ``,
+/**
+ * Pasos específicos de `caso-nuevo`. Antes esto era un prompt ENTERO y paralelo,
+ * así que el modo se saltaba el ámbito, el presupuesto, la regla de precedencia
+ * y el formato de cierre — no por decisión, sino porque vivía en otra función.
+ * Ahora es un apéndice del prompt común: las reglas se escriben una vez y las
+ * cumplen todos los modos por igual.
+ */
+function pasosCasoNuevo() {
+  return [
     `## Prioridad 1 — Analizar y elegir el caso (NEWS-SWEEP)`,
     `0. Read \`.claude/commands/proximo-caso.md\` (la disciplina de selección/NEWS-SWEEP) — obligatorio,`,
     `   aunque ya sepas cómo elegir; así el panel refleja el paso /proximo-caso.`,
@@ -780,8 +782,6 @@ function promptCasoNuevoLean(contexto) {
     `Al terminar reporta: id, num, tier, categoría, suma del posterior, nº de fuentes y el evento elegido`,
     `(o el descarte honesto si no hubo candidato).`,
   ];
-  if (contexto) p.push(``, `## Señal / foco de esta corrida`, contexto);
-  return p.join("\n");
 }
 
 /**
@@ -815,10 +815,20 @@ const CADENAS = {
   frescura: {
     obj: "mantener vivos los casos: desarrollos nuevos sobre casos existentes",
     cadena: "WebSearch de desarrollos recientes sobre casos del corpus → actualiza o propón con la disciplina de fuentes de nuevo-caso.md → /learn",
+    // Aquí el corpus SÍ es el objetivo: es el único modo al que le toca.
+    ambito: "el CORPUS bajo `web/data/cases/` — actualizar casos existentes",
+    corpus: true,
+  },
+  "caso-nuevo": {
+    obj: "crear UN caso nuevo, real y anclable, para el corpus",
+    cadena: "/proximo-caso (NEWS-SWEEP) para elegir el evento → /nuevo-caso para escribirlo → validar",
+    ambito: "un archivo NUEVO en `web/data/cases/`. No modifiques casos existentes: eso es `frescura`",
+    corpus: true,
   },
   "": {
     obj: "diagnóstico: sondear el estado y RECOMENDAR el modo de mayor leverage",
     cadena: "corre las 3 sondas, lee las métricas y propón qué modo conviene y por qué — NO gatilles nada",
+    ambito: "NADA. Este modo solo observa: no escribas ni modifiques ningún archivo, solo recomienda",
   },
 };
 
@@ -887,7 +897,13 @@ function promptLean(modo, contexto) {
     // cambiado suele ser trabajo en curso de otra sesión — el cerebro termina
     // auditando ediciones a medias en vez del sitio. Pasó de verdad (jul 2026):
     // `mejoras-tec` revisó el diff sin commitear del propio panel y cerró en 0.
-    ...(spec.ambito ? [
+    /* TODAS estas reglas van para TODOS los modos. Antes colgaban del campo
+       `ambito`, que solo tenían tres de los seis: `frescura`, `caso-nuevo` y
+       `diagnóstico` corrían sin presupuesto y sin la regla de precedencia por
+       puro accidente de cómo estaba escrito el condicional. Un modo que se
+       comporta distinto que sus hermanos sin que nadie lo decidiera no es un
+       diseño, es una fuga — y solo se nota cuando ese modo se desmanda. */
+    ...[
       `## Ámbito — SOBRE QUÉ corre esta cadena (obligatorio)`,
       `- El objetivo es ${spec.ambito}.`,
       `- **PROHIBIDO** tomar el árbol sucio (\`git status\`/\`git diff\` sin commitear) como el objetivo:`,
@@ -900,10 +916,18 @@ function promptLean(modo, contexto) {
       // imagen) y lo trató como fricción de interfaz. No lo es: es una carencia
       // de CONTENIDO. El modo hacía lo que le salía al paso en vez de lo que
       // declara, y la fricción de UI que sí había detectado se quedó sin tocar.
-      `- \`web/data/\` (el corpus) queda FUERA. Una carencia de CONTENIDO —un caso sin visual, un E21 de`,
-      `  cobertura, una fuente que falta— no es un defecto de código ni una fricción de interfaz: es`,
-      `  trabajo de \`caso-nuevo\` o \`frescura\`. Si al explorar te topas con una, decláralo en el cierre`,
-      `  como hallazgo para otro modo y NO la ataques aquí.`,
+      // Los modos de CORPUS (`frescura`, `caso-nuevo`) tienen `web/data/` como
+      // objetivo, así que para ellos esta exclusión sería una contradicción.
+      ...(spec.corpus ? [
+        `- El CÓDIGO del sitio (\`web/components\`, \`web/app\`, \`web/lib\`) queda FUERA: un defecto o una`,
+        `  fricción de interfaz que veas de paso se declara en el cierre para \`bugs\`/\`mejoras-ux\`, no se`,
+        `  arregla aquí.`,
+      ] : [
+        `- \`web/data/\` (el corpus) queda FUERA. Una carencia de CONTENIDO —un caso sin visual, un E21 de`,
+        `  cobertura, una fuente que falta— no es un defecto de código ni una fricción de interfaz: es`,
+        `  trabajo de \`caso-nuevo\` o \`frescura\`. Si al explorar te topas con una, decláralo en el cierre`,
+        `  como hallazgo para otro modo y NO la ataques aquí.`,
+      ]),
       `- Si la señal trae una ruta o archivo, ESE es el ámbito y manda sobre lo anterior.`,
       ``,
       /* Homogeneizar es el instinto por defecto de cualquier pase de reuso, y casi
@@ -936,7 +960,11 @@ function promptLean(modo, contexto) {
       `  Edit/Write sobre ese objetivo, o (b) \`sin objetivo que supere el umbral\` y paras ahí mismo.`,
       `  Una lista de oportunidades que no aplicaste NO es un resultado.`,
       ``,
-    ] : []),
+    ],
+    // Los pasos propios del modo, si los tiene. Van DESPUÉS de las reglas
+    // comunes: primero cómo se trabaja aquí, luego qué hace este modo en
+    // concreto — nunca al revés, o lo específico parece derogar lo común.
+    ...(modo === "caso-nuevo" ? [...pasosCasoNuevo(), ``] : []),
     `## Orden y eficiencia (obligatorio)`,
     `- 1º GATE, EN ESTE ORDEN: (a) **calibrate** — \`cd web && rm -rf out && node scripts/build-cases.mjs\`;`,
     `  (b) las 3 sondas UNA vez (validate-schema, audit-consistency, audit-design) para confirmar err=0.`,
@@ -962,9 +990,8 @@ function promptLean(modo, contexto) {
   return p.join("\n");
 }
 
-/** Enruta cada modo a su prompt lean. */
+/** Un solo camino para todos los modos: mismas reglas, distinto objetivo. */
 function promptDeModo(modo, contexto) {
-  if (modo === "caso-nuevo") return promptCasoNuevoLean(contexto);
   return promptLean(modo, contexto);
 }
 
