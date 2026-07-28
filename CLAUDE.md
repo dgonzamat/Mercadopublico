@@ -78,7 +78,7 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~327 a jul 2026; cifra viva = STATS.cases)
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~330 a jul 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
@@ -168,7 +168,7 @@ Tres capas de sonda protegen el visor (todas corren en prebuild salvo la viva):
 - **`audit-consistency.mjs` E17** (WARN): cada asset `/pursue/` same-origin existe en `web/public/`.
 - **`audit-consistency.mjs` E20** (ERROR): cada documento que referencia el **bucket Supabase** está en `data/pursue-bucket-manifest.json`. El build no puede consultar `supabase.co` (allowlist), así que el manifiesto es la verdad offline; la **sonda viva diaria** (Routine CCR) lo mantiene honesto contra `storage.objects`. Regenerar el manifiesto: `select name from storage.objects where bucket_id='pursue' order by name`.
 
-**Cobertura de visual · regla E21** (jul 2026, WARN agregado): todo caso debería embeber al menos un asset visual —`documents[]`, `primaryDocument` o `featuredDoc` (PDF o imagen)— para que el detalle no sea solo prosa. `audit-consistency.mjs` E21 reporta cuántos casos no tienen ninguno, con backlog por tier (a jul 2026: ~25/327 sin visual, S×1 A×9 B×15). Es **WARN, no ERROR** (mismo patrón que E13): conseguir el asset exige rehostear caso por caso en `/pursue` o el bucket porque war.gov bloquea el embed; el conteo deja el progreso medible, prioridad **S→A→B**. No es exigible a casos nuevos de golpe (la mayoría del corpus no tiene visual todavía), pero al crear/expandir un caso, si hay un documento primario embebible, móntalo.
+**Cobertura de visual · regla E21** (jul 2026, WARN agregado): todo caso debería embeber al menos un asset visual —`documents[]`, `primaryDocument` o `featuredDoc` (PDF o imagen)— para que el detalle no sea solo prosa. `audit-consistency.mjs` E21 reporta cuántos casos no tienen ninguno, con backlog por tier (a jul 2026: 27/330 sin visual, S×1 A×10 B×16). Es **WARN, no ERROR** (mismo patrón que E13): conseguir el asset exige rehostear caso por caso en `/pursue` o el bucket porque war.gov bloquea el embed; el conteo deja el progreso medible, prioridad **S→A→B**. No es exigible a casos nuevos de golpe (la mayoría del corpus no tiene visual todavía), pero al crear/expandir un caso, si hay un documento primario embebible, móntalo.
 
 **Registros (NO re-buscar) · de dónde salen los assets visuales** — origen de los binarios PURSUE (Drive del dueño), el mirror de dominio público en `archive.org/details/wargovUFO`, la reachability real de Commons/WikiLeaks/Openverse vía proxy, y el barrido E21 Tier-A completo: todo en [`docs/registros.md`](docs/registros.md#documentos-y-assets-visuales-pursue-commons-archiveorg). **Consúltalo antes de buscar un asset** — la mayoría de los huecos que quedan ya se barrieron y están cerrados por licencia, no por falta de búsqueda.
 
