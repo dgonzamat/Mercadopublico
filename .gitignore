@@ -20,3 +20,4 @@ tools/cerebro-panel/jobs.json
 # podría tomarlo por trabajo pendiente.
 tools/cerebro-panel/mockups/
 tools/cerebro-panel/aterrizajes.json
+tools/cerebro-panel/sitio.css

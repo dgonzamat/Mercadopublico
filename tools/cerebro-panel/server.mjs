@@ -859,6 +859,33 @@ const CADENAS = {
   },
 };
 
+/**
+ * CSS compilado del sitio (Tailwind), leído de `web/out/` y cacheado en disco.
+ * El caché no es optimización: el gate de cada corrida borra `out/`, así que sin
+ * él los mockups se quedarían sin estilos en cuanto alguien calibra.
+ */
+const CACHE_CSS = path.join(here, "sitio.css");
+function cssDelSitio() {
+  try {
+    const raiz = path.join(repoRoot, "web", "out");
+    const hallados = [];
+    (function recorrer(d) {
+      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+        const p = path.join(d, e.name);
+        if (e.isDirectory()) recorrer(p);
+        else if (e.name.endsWith(".css")) hallados.push(p);
+      }
+    })(raiz);
+    if (hallados.length) {
+      const css = hallados.map((f) => fs.readFileSync(f, "utf8")).join("\n");
+      fs.writeFileSync(CACHE_CSS, css);
+      return css;
+    }
+  } catch { /* sin build: cae al caché */ }
+  try { return fs.readFileSync(CACHE_CSS, "utf8"); }
+  catch { return "/* aún no hay build del sitio: corre `npm run build` en web/ */"; }
+}
+
 /** Skills que SÍ existen como comando del repo, leídos del disco (no inventados). */
 function skillsDelRepo() {
   try {
@@ -915,9 +942,17 @@ function promptLean(modo, contexto) {
     `Si esta corrida modifica algo, deja SIEMPRE un mockup autocontenible en`,
     `\`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el checkpoint: el cambio se`,
     `aprueba **viendo cómo queda el sitio**, no leyendo un diff.`,
-    `- **Dibuja la PÁGINA, no el código.** Reproduce la sección real afectada —mismo marcado, mismos`,
-    `  espaciados, misma tipografía— tal como la vería un lector. Un esquema de cajas o un fragmento de`,
-    `  \`.tsx\` NO valen: lo que hay que juzgar es el resultado.`,
+    /* No basta con «dibuja la página»: maquetado a mano desde una lista de
+       colores sale un primo lejano del sitio, y sobre un primo lejano no se
+       puede juzgar si algo queda bien. El sitio es Tailwind, así que las clases
+       del `.tsx` YA son el estilo: copiándolas y enlazando el CSS compilado, el
+       mockup ES el sitio en vez de parecerse. */
+    `- **Usa el CSS REAL del sitio.** Empieza el mockup con`,
+    `  \`<link rel="stylesheet" href="/sitio-css">\` (el panel sirve ahí el Tailwind compilado) y`,
+    `  **copia las \`className\` tal cual del componente** que tocas. No re-maquetes a mano ni inventes`,
+    `  estilos: si copias las clases, se renderiza idéntico al sitio.`,
+    `- Envuelve cada lado en \`<div class="bg-bg text-text">\` para heredar el tema, y reproduce también`,
+    `  el marcado que rodea a lo que cambias (títulos, márgenes), o el bloque flotará sin contexto.`,
     `- **ANTES y DESPUÉS lado a lado**, ambos dibujados. El «antes» es el estado actual del sitio, no una`,
     `  caricatura del problema.`,
     `- **Todo cambio tiene una pantalla.** Un caso o un post se leen en su página: dibuja ese bloque con`,
@@ -1325,6 +1360,20 @@ async function manejar(req, res) {
      revisión en un trámite. Aquí sale el diff real, archivo por archivo.
      Un archivo nuevo no tiene contra qué diferenciarse, así que se compara con el
      vacío (`--no-index`) para que se vea entero como alta. */
+  /* EL CSS REAL DEL SITIO, para que los mockups dejen de ser una imitación.
+     Los primeros mockups se maquetaban a mano desde una lista de colores: salía
+     un primo lejano de uapcodex.org y no servía para juzgar cómo QUEDA algo. El
+     sitio usa Tailwind, así que las `className` de los `.tsx` ya SON el estilo:
+     enlazando aquí el CSS compilado, un mockup que copie esas clases se renderiza
+     idéntico al sitio sin que nadie invente un píxel.
+
+     Se cachea en `sitio.css` porque el gate de cada corrida hace `rm -rf out` y
+     dejaría a los mockups sin hoja de estilos justo después de calibrar. */
+  if (url.pathname === "/sitio-css") {
+    res.writeHead(200, { "content-type": "text/css; charset=utf-8" });
+    return res.end(cssDelSitio());
+  }
+
   /* Sirve un archivo del repo para la vista previa del mockup. SOLO html/svg —
      lo que tiene sentido renderizar— y siempre dentro del repo (`sanear` corta
      los `..`). El iframe que lo consume va con `sandbox` sin `allow-scripts`:
@@ -1340,7 +1389,11 @@ async function manejar(req, res) {
         "content-type": archivo.toLowerCase().endsWith(".svg")
           ? "image/svg+xml; charset=utf-8" : "text/html; charset=utf-8",
         "x-content-type-options": "nosniff",
-        "content-security-policy": "sandbox; default-src 'none'; img-src data:; style-src 'unsafe-inline'",
+        // `style-src 'self'` habilita el <link> a /sitio-css: el mockup se pinta
+        // con el CSS real del sitio. Los scripts siguen prohibidos —este HTML lo
+        // escribió un agente—, así que se mira, no se ejecuta.
+        "content-security-policy":
+          "sandbox; default-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:",
       });
       return res.end(cuerpo);
     } catch (e) { return json(res, 404, { error: `no se pudo leer ${archivo}` }); }
