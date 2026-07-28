@@ -14,6 +14,35 @@ import type { Posterior } from "@/lib/types";
 const pct = (x: number) => (x * 100).toFixed(0);
 
 /**
+ * Reparte 100 enteros entre `fracciones` (que deben sumar ~1) por el método del
+ * **resto mayor**: trunca cada parte hacia abajo y asigna las unidades sobrantes
+ * a los mayores restos decimales. Devuelve enteros que suman **exactamente 100**.
+ *
+ * Redondear cada categoría por separado con `toFixed(0)` no lo garantiza: la
+ * partición 50,5/23/19/7/3 imprimía 101% bajo una leyenda que afirma "suma 100%".
+ * `test-chart.mjs` no lo detectaba porque valida los valores crudos (suma=1),
+ * no el texto ya redondeado.
+ */
+function pctParts(fracciones: number[]): number[] {
+  // Normalizado: la leyenda promete "suma 100%" y esta función debe cumplirlo
+  // aunque el input no sume exactamente 1 (error de coma flotante al acumular,
+  // o una partición mal formada). El invariante suma=1 lo vigila aparte
+  // `audit-consistency.mjs` (M1), así que aquí no se oculta ningún dato malo.
+  const suma = fracciones.reduce((s, f) => s + f, 0) || 1;
+  const exactos = fracciones.map((f) => (f / suma) * 100);
+  const base = exactos.map(Math.floor);
+  let sobran = 100 - base.reduce((s, n) => s + n, 0);
+  // Índices por resto decimal desc; con empate gana el de mayor valor exacto.
+  const orden = exactos
+    .map((v, i) => ({ i, resto: v - Math.floor(v), v }))
+    .sort((a, b) => b.resto - a.resto || b.v - a.v);
+  for (let k = 0; sobran > 0 && k < orden.length; k++, sobran--) {
+    base[orden[k].i] += 1;
+  }
+  return base;
+}
+
+/**
  * Partición comparable del corpus: las 6 narrativas reparten el 100%.
  * + vistas derivadas (entidades-no-humanas, heterogeneidad).
  */
@@ -74,6 +103,7 @@ export function MecePartition({
   const anomalo = classifiable - prosaico;
   const enh = modalKeys.filter((k) => NONHUMAN.has(k)).length;
   const derivedBase = classifiable || 1;
+  const ejeMacro = pctParts([prosaico / derivedBase, anomalo / derivedBase]);
   const colorOf = Object.fromEntries(rows.map((r) => [r.key, r.color])) as Record<string, string>;
   const prosaicoColor = colorOf.misid ?? rows[0].color;
   const anomaloColor = colorOf.nohumano ?? colorOf.nohumano_encubierto ?? rows[rows.length - 1].color;
@@ -109,12 +139,14 @@ export function MecePartition({
             <div style={{ width: `${(prosaico / derivedBase) * 100}%`, backgroundColor: prosaicoColor }} />
             <div style={{ width: `${(anomalo / derivedBase) * 100}%`, backgroundColor: anomaloColor }} />
           </div>
+          {/* Par complementario (prosaico + anómalo = el total), así que también
+              por resto mayor: con toFixed independiente se leía 51% / 50%. */}
           <div className="mt-2 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-wider">
             <span className="text-text">
-              <T es="Prosaico" en="Prosaic" locale={locale} /> <span className="tabular-nums text-muted">{pct(prosaico / derivedBase)}%</span>
+              <T es="Prosaico" en="Prosaic" locale={locale} /> <span className="tabular-nums text-muted">{ejeMacro[0]}%</span>
             </span>
             <span className="text-text">
-              <span className="tabular-nums text-muted">{pct(anomalo / derivedBase)}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" locale={locale} />
+              <span className="tabular-nums text-muted">{ejeMacro[1]}%</span> <T es="Anómalo / secreto" en="Anomalous / secret" locale={locale} />
             </span>
           </div>
           {!consolidateNonHuman && (
@@ -143,6 +175,10 @@ export function CasePosterior({
 }) {
   const rows = expandedHypotheses([{ posterior, mundanoType }]);
   const m = rows[0];
+  // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los
+  // enteros impresos tienen que sumarlo — redondear cada fila por separado daba
+  // 101%. `m` es rows[0] (expandedHypotheses viene ordenado desc).
+  const partes = pctParts(rows.map((r) => r.count));
   // Drill-down bajo «Misidentificación»: con qué objeto conocido se confundió.
   // Solo se muestra si la hipótesis modal ES misid y el caso trae el subtipo.
   const sub =
@@ -152,18 +188,18 @@ export function CasePosterior({
   return (
     <div>
       <div className="flex h-4 w-full overflow-hidden rounded-sm">
-        {rows.map((r) => (
-          <div key={r.key} title={`${r.label}: ${pct(r.count)}%`} style={{ width: `${r.count * 100}%`, backgroundColor: r.color }} />
+        {rows.map((r, i) => (
+          <div key={r.key} title={`${r.label}: ${partes[i]}%`} style={{ width: `${r.count * 100}%`, backgroundColor: r.color }} />
         ))}
       </div>
       <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
-        {rows.map((r) => (
+        {rows.map((r, i) => (
           <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px]">
             <span className="flex items-center gap-1.5 text-text">
               <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: r.color }} />
               <T es={r.label} en={r.labelEn} locale={locale} />
             </span>
-            <span className="text-muted">{pct(r.count)}%</span>
+            <span className="text-muted">{partes[i]}%</span>
           </div>
         ))}
       </div>
@@ -172,7 +208,7 @@ export function CasePosterior({
         <span style={{ color: m.color }} className="font-semibold">
           <T es={m.label} en={m.labelEn} locale={locale} />
         </span>{" "}
-        {pct(m.count)}% · <T es="suma 100%" en="sums to 100%" locale={locale} />
+        {partes[0]}% · <T es="suma 100%" en="sums to 100%" locale={locale} />
       </p>
       {sub && (
         <p className="mt-1.5 font-mono text-[11px] uppercase tracking-widest text-muted">

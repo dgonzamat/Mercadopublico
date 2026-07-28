@@ -162,6 +162,50 @@ if (casePage == null) fail("no existe out/cases/roswell-1947/index.html");
 else {
   check("renderiza la hipótesis modal del caso", /Hipótesis modal|Modal hypothesis/.test(casePage));
   check("la barra por caso suma 100%", casePage.includes("suma 100%") || casePage.includes("sums to 100%"));
+
+}
+
+// Los enteros REALMENTE impresos suman 100 — no basta con que la leyenda lo
+// prometa. Redondear cada fila por su cuenta daba 101% en pantalla bajo ese
+// mismo texto, y el test pasaba igual porque solo validaba los valores crudos.
+//
+// Los casos se eligen VERIFICANDO el render, no el `posterior` crudo: lo que se
+// imprime sale de `expandedHypotheses` (abre mundano en subtipos), así que son
+// números distintos a los del JSON. Escaneando out/ con el bug presente: **110
+// de 249** casos imprimían ≠100. `roswell-1947` NO era uno de ellos —probarlo
+// solo a él es un test ciego, que fue justo el error original—, así que aquí van
+// tres que SÍ fallaban: dos por arriba (101%) y uno por abajo (98%).
+console.log("\nCaso · los % impresos suman 100 (resto mayor)");
+for (const slug of [
+  "aawsap-skinwalker-2008", // daba 101% — además la página de más tráfico
+  "allagash-1976", // daba 101%
+  "valentich-1978", // daba 98%
+]) {
+  const html = readOut(`cases/${slug}/index.html`);
+  if (html == null) {
+    fail(`no existe out/cases/${slug}/index.html`);
+    continue;
+  }
+  // La leyenda va entre el grid de filas y el pie "Hipótesis modal": el % del
+  // modal queda fuera (viene después de ese texto) y los del `title` de la
+  // barra también (vienen antes del grid).
+  const leyenda = html.match(
+    /grid-cols-1 gap-x-6[\s\S]*?(?:Hipótesis modal|Modal hypothesis)/,
+  );
+  if (!leyenda) {
+    fail(`${slug}: no encontré la leyenda de CasePosterior en el render`);
+    continue;
+  }
+  // React intercala `<!-- -->` entre el número y el "%" (dos nodos de texto
+  // contiguos), así que el separador es opcional en el patrón.
+  const partes = [...leyenda[0].matchAll(/>(\d+)(?:<!-- -->)?%</g)].map((m) =>
+    Number(m[1]),
+  );
+  const suma = partes.reduce((s, n) => s + n, 0);
+  check(
+    `${slug}: ${partes.join("+")} = ${suma}`,
+    partes.length >= 2 && suma === 100,
+  );
 }
 
 console.log("");
