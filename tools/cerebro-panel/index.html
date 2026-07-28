@@ -895,11 +895,12 @@ function pintarRecomendacion(r) {
 
 function pintarRevision(avisos) {
   if (!avisos?.length) return "";
-  const icono = { derogacion: "⚖", superficie: "❐", eco: "⧉" };
+  const icono = { derogacion: "⚖", superficie: "❐", eco: "⧉", mockup: "▦" };
   const titulo = {
     derogacion: "Deroga una explicación del repo",
     superficie: "Replica algo que ya existe",
     eco: "Pinta un dato que ya viaja a un hijo",
+    mockup: "El mockup no dibuja el sitio",
   };
   return `<div class="warnbox" style="margin:0 0 12px">
     <strong>Antes de aprobar — ${avisos.length} señal(es) que el panel encontró en el diff:</strong>

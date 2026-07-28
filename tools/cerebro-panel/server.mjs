@@ -542,6 +542,31 @@ const MARCAS_INTENCION = /\b(a propósito|deliberad|por eso|la razón|no es un|e
 async function revisarCambios(archivos) {
   const avisos = [];
   for (const f of archivos) {
+    /* ── el mockup, revisado como entregable que es ──
+       Pedirlo por prompt no bastó: una corrida enlazó el CSS del sitio y acto
+       seguido lo ignoró —cero clases del componente, su propio `<style>` y cinco
+       bloques de código—, produciendo una ficha técnica en vez de una interfaz.
+       Un mockup con código no sirve para lo único que se le pide: enseñar cómo
+       QUEDA el cambio. Se comprueba, no se confía. */
+    if (/mockups\/.+\.html?$/i.test(f)) {
+      let m = "";
+      try { m = fs.readFileSync(path.join(repoRoot, f), "utf8"); } catch { continue; }
+      const codigo = (m.match(/<pre[\s>]/gi) || []).length;
+      const clasesSitio = (m.match(/\b(bg-panel|bg-bg|text-muted|text-text|border-border|font-display|text-accent|bg-surface-2)\b/g) || []).length;
+      const fallos = [];
+      if (codigo) fallos.push(`${codigo} bloque(s) de código`);
+      if (!clasesSitio) fallos.push("ninguna clase del sitio (no copió el marcado del componente)");
+      if (!/sitio-css/.test(m)) fallos.push("no enlaza /sitio-css");
+      if (fallos.length)
+        avisos.push({
+          tipo: "mockup", archivo: f, texto: fallos.join(" · "),
+          que: "El mockup no dibuja el sitio: enseña una explicación en vez de la interfaz. "
+             + "Sirve para aprobar el cambio VIÉNDOLO, así que si trae código o se maqueta a mano, "
+             + "no cumple su función — juzga el diff directamente y pide el mockup de nuevo.",
+        });
+      continue;   // un mockup no se audita como código
+    }
+
     const st = (await git(["status", "--porcelain", "--", f])).out;
     if (st.startsWith("??")) continue;             // alta: no deroga nada
     /* WORD-DIFF, no diff de líneas. Los tres primeros falsos positivos —un
@@ -947,12 +972,22 @@ function promptLean(modo, contexto) {
        puede juzgar si algo queda bien. El sitio es Tailwind, así que las clases
        del `.tsx` YA son el estilo: copiándolas y enlazando el CSS compilado, el
        mockup ES el sitio en vez de parecerse. */
-    `- **Usa el CSS REAL del sitio.** Empieza el mockup con`,
-    `  \`<link rel="stylesheet" href="/sitio-css">\` (el panel sirve ahí el Tailwind compilado) y`,
-    `  **copia las \`className\` tal cual del componente** que tocas. No re-maquetes a mano ni inventes`,
-    `  estilos: si copias las clases, se renderiza idéntico al sitio.`,
+    /* Una corrida enlazó el CSS y luego lo ignoró: maquetó a mano y llenó el
+       mockup de bloques de código. El panel ahora lo COMPRUEBA (avisa si hay
+       `<pre>`, si no usa clases del sitio o si no enlaza la hoja), así que estas
+       reglas no son consejo. */
+    `- **PROHIBIDO el código.** Ni un \`<pre>\`, ni un snippet, ni nombres de función o de archivo. Si el`,
+    `  mockup contiene código, no es un mockup: es una ficha técnica, y para eso ya está el diff.`,
+    `- **Usa el CSS REAL del sitio.** Empieza con \`<link rel="stylesheet" href="/sitio-css">\` —el panel`,
+    `  sirve ahí el Tailwind compilado— y **copia las \`className\` tal cual del componente** que tocas.`,
+    `  NO escribas un \`<style>\` propio salvo para las dos columnas del antes/después. Si copias las`,
+    `  clases, se renderiza idéntico al sitio; si maquetas a mano, sale un primo lejano que no sirve.`,
     `- Envuelve cada lado en \`<div class="bg-bg text-text">\` para heredar el tema, y reproduce también`,
     `  el marcado que rodea a lo que cambias (títulos, márgenes), o el bloque flotará sin contexto.`,
+    `- **Si el cambio es de COMPORTAMIENTO** (foco, teclado, hover, scroll, apertura de un menú): dibuja`,
+    `  igualmente la interfaz en el estado relevante —el drawer abierto, el elemento con su anillo de`,
+    `  foco— y marca el estado con recursos VISUALES (un anillo, una flecha, un resaltado). Describirlo`,
+    `  con texto es exactamente lo que no hay que hacer: si no se puede ver, no se puede aprobar.`,
     `- **ANTES y DESPUÉS lado a lado**, ambos dibujados. El «antes» es el estado actual del sitio, no una`,
     `  caricatura del problema.`,
     `- **Todo cambio tiene una pantalla.** Un caso o un post se leen en su página: dibuja ese bloque con`,
