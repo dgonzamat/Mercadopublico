@@ -928,6 +928,35 @@ function cssDelSitio() {
   catch { return "/* aún no hay build del sitio: corre `npm run build` en web/ */"; }
 }
 
+/**
+ * VISITANTES. El sitio ya tiene todo el aparato —`VisitorBeacon` escribe con
+ * filtro de bots, `VisitorsPanel` lee— y sus RPC de lectura son SECURITY DEFINER
+ * con `grant execute … to anon`. Así que el panel NO reimplementa nada: llama a
+ * las mismas funciones con la misma clave anónima que el sitio ya publica a todo
+ * navegador. Un segundo cálculo sería un segundo contrato, y ya sabemos cómo
+ * acaba eso.
+ */
+function credencialesSupabase() {
+  try {
+    const env = fs.readFileSync(path.join(repoRoot, "web", ".env.local"), "utf8");
+    const leer = (k) => (env.match(new RegExp(`^${k}=(.*)$`, "m")) ?? [])[1]?.trim();
+    return { url: leer("NEXT_PUBLIC_SUPABASE_URL"), key: leer("NEXT_PUBLIC_SUPABASE_ANON_KEY") };
+  } catch { return {}; }
+}
+
+async function rpcSupabase(fn, args) {
+  const { url, key } = credencialesSupabase();
+  if (!url || !key) throw Object.assign(
+    new Error("faltan NEXT_PUBLIC_SUPABASE_URL/ANON_KEY en web/.env.local"), { http: 503 });
+  const r = await fetch(`${url}/rest/v1/rpc/${fn}`, {
+    method: "POST",
+    headers: { apikey: key, authorization: `Bearer ${key}`, "content-type": "application/json" },
+    body: JSON.stringify(args ?? {}),
+  });
+  if (!r.ok) throw new Error(`${fn}: ${r.status} ${(await r.text()).slice(0, 200)}`);
+  return r.json();
+}
+
 /** Skills que SÍ existen como comando del repo, leídos del disco (no inventados). */
 function skillsDelRepo() {
   try {
@@ -1500,6 +1529,25 @@ async function manejar(req, res) {
 
      Se cachea en `sitio.css` porque el gate de cada corrida hace `rm -rf out` y
      dejaría a los mockups sin hoja de estilos justo después de calibrar. */
+  /* Las mismas RPC que lee `/visitantes` del sitio. Si algo falla —sin
+     credenciales, sin red— se devuelve el error tal cual: un panel que enseña
+     ceros cuando no pudo leer es peor que uno que dice que no pudo. */
+  if (url.pathname === "/api/visitantes") {
+    const dias = Math.min(365, Math.max(1, Number(url.searchParams.get("dias") ?? 30)));
+    const desde = new Date(Date.now() - dias * 86400000).toISOString().slice(0, 10);
+    try {
+      const [porDia, porPais, porPagina, suscriptores] = await Promise.all([
+        rpcSupabase("visits_day_agg", { p_since: desde }),
+        rpcSupabase("visits_country_agg", { p_since: desde }),
+        rpcSupabase("visits_pages_agg", { p_since: desde, p_limit: 12 }),
+        rpcSupabase("subscriber_total").catch(() => null),   // opcional
+      ]);
+      return json(res, 200, { dias, desde, porDia, porPais, porPagina, suscriptores });
+    } catch (e) {
+      return json(res, e.http ?? 502, { error: e.message });
+    }
+  }
+
   if (url.pathname === "/sitio-css") {
     res.writeHead(200, { "content-type": "text/css; charset=utf-8" });
     return res.end(cssDelSitio());
