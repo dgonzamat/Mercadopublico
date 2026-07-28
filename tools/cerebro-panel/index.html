@@ -791,6 +791,15 @@ const seleccionados = () => [...document.querySelectorAll("#repo-list input:chec
 async function repoCommit() {
   const files = seleccionados();
   if (!files.length) return alert("Selecciona al menos un archivo.");
+  // El default («cerebro: N archivo(s)») no dice nada dentro de un mes, y es
+  // demasiado fácil de aceptar sin querer. Para un archivo el path ya es
+  // descripción suficiente; para varios, el mensaje es lo único que explica qué
+  // los une, así que se exige.
+  if (files.length > 1 && !$("#repo-msg").value.trim()) {
+    $("#repo-msg").focus();
+    return alert(`Son ${files.length} archivos: escribe un mensaje que diga qué los une.\n\n`
+      + `«cerebro: ${files.length} archivo(s)» no se entenderá dentro de un mes.`);
+  }
   const b = $("#btn-repo-commit"); b.disabled = true; b.textContent = "Commiteando…";
   try {
     const r = await fetch("/api/repo-commit", {

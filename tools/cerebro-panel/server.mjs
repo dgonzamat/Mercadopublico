@@ -367,7 +367,10 @@ async function commitArchivos(archivos, message, etiqueta) {
   }
   const add = await git(["add", "--", ...archivos]);
   if (add.code !== 0) return { error: `git add falló: ${add.err}` };
-  const msg = (message && String(message).trim()) || `cerebro: ${archivos.length} archivo(s)`;
+  // Para un solo archivo el path ES la descripción; «1 archivo(s)» no lo es.
+  // (Con varios, la UI exige mensaje antes de llegar aquí.)
+  const msg = (message && String(message).trim())
+    || (archivos.length === 1 ? `cerebro: ${archivos[0]}` : `cerebro: ${archivos.length} archivo(s)`);
   const commit = await git(["commit", "-m", msg]);
   if (commit.code !== 0) return { error: `git commit falló: ${commit.err || commit.out}` };
   const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
@@ -826,7 +829,16 @@ const server = http.createServer(async (req, res) => {
     const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
     const job = id && jobs.get(id);
     if (job) job.mergeado = true;   // enciende el nodo MERGE del aterrizaje
-    return json(res, 200, { ok: true, rama: branch, hash, salida: `${mg.out}\n${ph.err}`.trim() });
+    // La rama era un andamio para revisar antes de publicar; cumplido el push ya
+    // no aporta nada y se acumulaba una por aterrizaje. `-d` (no `-D`) solo borra
+    // si está realmente mergeada: si algo quedó fuera, la rama sobrevive y el
+    // aviso queda en la salida en vez de perderse trabajo en silencio.
+    const br = await git(["branch", "-d", branch]);
+    const limpieza = br.code === 0 ? br.out : `(rama ${branch} conservada: ${br.err || br.out})`;
+    return json(res, 200, {
+      ok: true, rama: branch, hash,
+      salida: `${mg.out}\n${ph.err}\n${limpieza}`.trim(),
+    });
   }
 
   json(res, 404, { error: "no existe" });
