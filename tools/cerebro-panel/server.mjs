@@ -144,6 +144,30 @@ const jobs = new Map();
  * `salida` ni `eventos` (crecen sin techo y no hacen falta para decidir), y
  * nunca el `prompt`, que puede llevar la señal completa.
  */
+/**
+ * ATERRIZAJES. La métrica «commiteadas» contaba solo `job.commit`, que se marca
+ * en el checkpoint de una corrida — y NO en la tarjeta Repo, que es por donde
+ * pasan la mayoría de los aterrizajes. Resultado: el panel declaraba «0
+ * commiteadas» con cinco commits suyos ya en `main`. Una métrica que subestima
+ * el valor del loop es tan dañina como una que lo infla: lleva a apagarlo.
+ * Aquí se registra TODO lo que el panel manda al repo, venga de donde venga.
+ */
+const aterrizajes = [];
+const ARCHIVO_ATERRIZAJES = path.join(here, "aterrizajes.json");
+
+function registrarAterrizaje(entrada) {
+  aterrizajes.push({ ts: new Date().toISOString(), ...entrada });
+  try { fs.writeFileSync(ARCHIVO_ATERRIZAJES, JSON.stringify(aterrizajes.slice(-200))); }
+  catch (e) { bitacora(`no se pudo guardar aterrizajes.json: ${e.message}`); }
+}
+
+function cargarAterrizajes() {
+  try {
+    if (fs.existsSync(ARCHIVO_ATERRIZAJES))
+      aterrizajes.push(...JSON.parse(fs.readFileSync(ARCHIVO_ATERRIZAJES, "utf8")));
+  } catch (e) { bitacora(`no se pudo leer aterrizajes.json: ${e.message}`); }
+}
+
 const ARCHIVO_JOBS = path.join(here, "jobs.json");
 const CAMPOS_PERSISTIDOS = ["id", "modo", "contexto", "estado", "inicio", "fin", "exit",
   "resultado", "tokens", "coste_usd", "bloqueo", "commit", "descartado", "mergeado"];
@@ -151,7 +175,10 @@ const CAMPOS_PERSISTIDOS = ["id", "modo", "contexto", "estado", "inicio", "fin",
 function guardarJobs() {
   try {
     const lista = [...jobs.values()].slice(-50).map((j) => {
-      const o = { archivos: [...(j.archivos ?? [])] };
+      // Los eventos NO se persisten (crecen sin techo), pero sí CUÁNTOS hubo:
+      // sin ese número, al recuperar el job del disco el ticker sale vacío y el
+      // panel afirma «sin herramientas todavía» junto a un resumen de 56 turnos.
+      const o = { archivos: [...(j.archivos ?? [])], eventosPerdidos: (j.eventos ?? []).length };
       for (const k of CAMPOS_PERSISTIDOS) if (j[k] !== undefined) o[k] = j[k];
       return o;
     });
@@ -169,6 +196,7 @@ function cargarJobs() {
         ...o,
         archivos: new Set(o.archivos ?? []),
         salida: "", eventos: [], prompt: "",
+        eventosPerdidos: o.eventosPerdidos ?? 0,   // hubo N, ya no los tenemos
         estado: o.estado === "corriendo" ? "roto" : o.estado,
         bloqueo: o.estado === "corriendo"
           ? "El panel se reinició mientras esta corrida estaba viva; su proceso ya no existe."
@@ -391,7 +419,14 @@ function eventoDeLinea(linea, job) {
  */
 function metricasSesion() {
   const tokens = { entrada: 0, salida: 0, cache_lectura: 0, cache_creacion: 0 };
-  let coste = 0, terminadas = 0, conCambio = 0, commiteadas = 0, descartadas = 0;
+  let coste = 0, terminadas = 0, conCambio = 0, descartadas = 0;
+  // Los commits salen del registro de aterrizajes, no de los jobs: el panel
+  // commitea también fuera del checkpoint y esos también son valor entregado.
+  const commiteadas = aterrizajes.filter((a) => a.tipo === "commit").length;
+  const mergeadas = aterrizajes.filter((a) => a.tipo === "merge").length;
+  const archivosAterrizados = aterrizajes
+    .filter((a) => a.tipo === "commit")
+    .reduce((n, a) => n + (a.archivos || 0), 0);
   let msTotal = 0, conDuracion = 0, parcial = false;
   for (const j of jobs.values()) {
     for (const k of Object.keys(tokens)) tokens[k] += j.tokens?.[k] || 0;
@@ -399,7 +434,6 @@ function metricasSesion() {
     if (typeof j.coste_usd === "number") coste += j.coste_usd;
     if (j.estado !== "corriendo") terminadas++;
     if (j.archivos?.size) conCambio++;
-    if (j.commit) commiteadas++;
     if (j.descartado) descartadas++;
     const ms = j.resultado?.duracion_ms;
     if (typeof ms === "number") { msTotal += ms; conDuracion++; }
@@ -409,7 +443,8 @@ function metricasSesion() {
   // esos tokens se pagan (más caros, además): son entrada que no vino de caché.
   const entradaTotal = tokens.entrada + tokens.cache_lectura + tokens.cache_creacion;
   return {
-    corridas: jobs.size, terminadas, conCambio, commiteadas, descartadas,
+    corridas: jobs.size, terminadas, conCambio,
+    commiteadas, mergeadas, descartadas, archivosAterrizados,
     tokens, tokensTotal: tokens.entrada + tokens.salida + tokens.cache_lectura + tokens.cache_creacion,
     parcial, coste_usd: coste,
     // Reparte TODO el gasto entre los cambios útiles: las corridas estériles
@@ -513,10 +548,18 @@ async function revisarCambios(archivos) {
     if (!d) continue;
 
     // ── derogación: líneas BORRADAS que explicaban algo ──
-    const borradas = d.split("\n")
+    // Una explicación MOVIDA no es una explicación derogada: al reestructurar un
+    // archivo, el diff borra el comentario de un sitio y lo añade en otro. Sin
+    // esta comprobación el aviso saltaba en cada refactor y se aprendía a
+    // ignorar — que es la única forma de que un detector deje de servir.
+    const lineas = d.split("\n");
+    const añadidas = new Set(lineas
+      .filter((l) => l.startsWith("+") && !l.startsWith("+++"))
+      .map((l) => l.slice(1).trim()));
+    const borradas = lineas
       .filter((l) => l.startsWith("-") && !l.startsWith("---"))
       .map((l) => l.slice(1).trim())
-      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l));
+      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l) && !añadidas.has(l));
     for (const l of borradas.slice(0, 3))
       avisos.push({
         tipo: "derogacion", archivo: f,
@@ -541,6 +584,47 @@ async function revisarCambios(archivos) {
   return avisos;
 }
 
+/**
+ * RECOMENDACIÓN. Señalar sin recomendar deja el trabajo a medias: el panel sabe
+ * cosas que tú tendrías que deducir —si hay avisos, si el cambio sale publicado,
+ * si trae mockup— y callárselas para «no influir» es una falsa neutralidad.
+ *
+ * Recomienda sobre lo que PUEDE comprobar: forma, alcance y señales del diff.
+ * Nunca dice «esto es correcto», porque eso no lo sabe — y lo declara, para que
+ * un «commitear» suyo no se lea como un visto bueno técnico que no ha dado.
+ */
+function recomendar(archivos, avisos) {
+  if (!archivos.length)
+    return { accion: "nada", texto: "No hay nada que aterrizar." };
+
+  const publica = archivos.filter((f) => f.startsWith("web/"));
+  const conMockup = archivos.some((f) => /mockups\/.+\.html?$/i.test(f));
+
+  /* El deploy se dispara con CUALQUIER push a main, pero solo publica lo que
+     sale de `npm run build` dentro de `web/`. Un cambio en `tools/` provoca una
+     reconstrucción idéntica: ruido, no publicación. Decirle «esto publica» a
+     los dos por igual entrena a ignorar el aviso justo cuando sí importa. */
+  const base = publica.length
+    ? `Toca ${publica.length} archivo(s) de \`web/\`: al mergear, esto SE PUBLICA en uapcodex.org.`
+    : "Solo toca `tools/`, que no entra en el build: el deploy se disparará, "
+      + "pero republica el sitio idéntico. Nada llega a los lectores.";
+  const limite = "El panel comprueba forma y alcance, no si el cambio es correcto: "
+    + "eso sigue siendo tuyo.";
+
+  if (avisos.length)
+    return {
+      accion: "revisar",
+      texto: `**Revísalo antes de aprobar.** ${avisos.length} señal(es) en el diff`
+        + `${conMockup ? " (hay mockup: ábrelo, se juzga mirándolo)" : ""}. ${base} ${limite}`,
+    };
+
+  return {
+    accion: "commitear",
+    texto: `**Commitear en rama.** Sin señales en el diff`
+      + `${conMockup ? ", y trae mockup para revisar" : ""}. ${base} ${limite}`,
+  };
+}
+
 /** Commitea SOLO `archivos` en una rama (nunca directo a main/master). */
 async function commitArchivos(archivos, message, etiqueta) {
   const rama = (await git(["rev-parse", "--abbrev-ref", "HEAD"])).out;
@@ -560,6 +644,9 @@ async function commitArchivos(archivos, message, etiqueta) {
   const commit = await git(["commit", "-m", msg]);
   if (commit.code !== 0) return { error: `git commit falló: ${commit.err || commit.out}` };
   const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
+  // Un solo punto de registro: da igual si vino del checkpoint o de la tarjeta
+  // Repo, todo commit del panel cuenta como valor entregado.
+  registrarAterrizaje({ tipo: "commit", hash, rama: ramaUsada, archivos: archivos.length });
   return { ok: true, rama: ramaUsada, hash, archivos, salida: commit.out };
 }
 
@@ -739,6 +826,14 @@ function promptLean(modo, contexto) {
       `- Si un skill se define sobre "el código cambiado" (p. ej. simplify), aquí eso NO aplica: su`,
       `  objetivo es el ámbito declarado.`,
       `- \`tools/\` (panel y utilidades del repo) queda FUERA salvo que la señal lo nombre.`,
+      // Una corrida de `mejoras-ux` se fue al backlog E21 (un caso Tier S sin
+      // imagen) y lo trató como fricción de interfaz. No lo es: es una carencia
+      // de CONTENIDO. El modo hacía lo que le salía al paso en vez de lo que
+      // declara, y la fricción de UI que sí había detectado se quedó sin tocar.
+      `- \`web/data/\` (el corpus) queda FUERA. Una carencia de CONTENIDO —un caso sin visual, un E21 de`,
+      `  cobertura, una fuente que falta— no es un defecto de código ni una fricción de interfaz: es`,
+      `  trabajo de \`caso-nuevo\` o \`frescura\`. Si al explorar te topas con una, decláralo en el cierre`,
+      `  como hallazgo para otro modo y NO la ataques aquí.`,
       `- Si la señal trae una ruta o archivo, ESE es el ámbito y manda sobre lo anterior.`,
       ``,
       /* Homogeneizar es el instinto por defecto de cualquier pase de reuso, y casi
@@ -1069,15 +1164,23 @@ async function manejar(req, res) {
     const estados = [];
     for (const f of archivos) {
       const st = (await git(["status", "--porcelain", "--", f])).out;
-      estados.push({ archivo: f, estado: st ? st.slice(0, 2).trim() : "sin cambios" });
+      // Un archivo gitignoreado (p. ej. el mockup de revisión) no produce estado
+      // en `git status`, así que salía etiquetado «sin cambios» — falso: existe,
+      // es nuevo y es justo lo que hay que MIRAR. Simplemente no se commitea.
+      const ignorado = !st && (await git(["check-ignore", "-q", "--", f])).code === 0;
+      estados.push({
+        archivo: f, ignorado,
+        estado: ignorado ? "no versionado" : st ? st.slice(0, 2).trim() : "sin cambios",
+      });
     }
     const stat = archivos.length ? (await git(["diff", "--stat", "--", ...archivos])).out : "";
+    const revision = await revisarCambios(archivos);
     return json(res, 200, {
       rama, cambios: archivos.length, archivos: estados, stat,
       commit: job.commit ?? null, descartado: !!job.descartado,
       mergeado: !!job.mergeado,
       // Lo que el panel comprueba por su cuenta antes de que apruebes.
-      revision: await revisarCambios(archivos),
+      revision, recomendacion: recomendar(archivos, revision),
     });
   }
 
@@ -1159,7 +1262,9 @@ async function manejar(req, res) {
       estado: l.slice(0, 2).trim(),
       archivo: l.slice(3).trim().replace(/^"|"$/g, ""),
     }));
-    return json(res, 200, { rama, archivos, revision: await revisarCambios(archivos.map((a) => a.archivo)) });
+    const rutas = archivos.map((a) => a.archivo);
+    const revision = await revisarCambios(rutas);
+    return json(res, 200, { rama, archivos, revision, recomendacion: recomendar(rutas, revision) });
   }
 
   if (url.pathname === "/api/repo-commit" && req.method === "POST") {
@@ -1210,6 +1315,7 @@ async function manejar(req, res) {
     if (ph.code !== 0) return json(res, 500, { error: `mergeó pero el push falló: ${ph.err || ph.out}`, merged: true });
     const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
     const job = id && jobs.get(id);
+    registrarAterrizaje({ tipo: "merge", hash, rama: branch });
     if (job) { job.mergeado = true; guardarJobs(); }   // enciende el nodo MERGE
     // La rama era un andamio para revisar antes de publicar; cumplido el push ya
     // no aporta nada y se acumulaba una por aterrizaje. `-d` (no `-D`) solo borra
@@ -1290,7 +1396,8 @@ server.on("error", (e) => {
 
 // Solo loopback: el panel ejecuta `claude` con permisos de edición sobre el
 // repo. Exponerlo a la red sería dar una shell.
-cargarJobs();   // recupera los checkpoints que sobrevivieron al reinicio
+cargarJobs();          // checkpoints que sobrevivieron al reinicio
+cargarAterrizajes();   // y lo que el panel ya mandó al repo
 
 server.listen(PORT, "127.0.0.1", () => {
   bitacora(`arrancado | pid ${process.pid} | puerto ${PORT} | permisos ${PERMISSION_MODE} | jobs ${jobs.size}`);

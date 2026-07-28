@@ -53,18 +53,25 @@
     border-radius:99px;border:1px solid var(--border);background:var(--bg);cursor:pointer}
   .tab[aria-selected="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
 
+  /* El tren: las tres bandas en una franja horizontal en vez de apiladas. */
+  .tren{display:flex;align-items:flex-end;justify-content:center;gap:0;flex-wrap:wrap;
+    row-gap:16px}
+  .eh-banda{width:20px;margin:0 7px 20px}
   .banda{display:flex;flex-direction:column;align-items:center;gap:9px}
   .banda-tag{font-family:ui-monospace,monospace;font-size:10px;text-transform:uppercase;
     letter-spacing:.16em;color:var(--muted)}
   .fila{display:flex;align-items:stretch;justify-content:center;gap:0;flex-wrap:wrap;
     max-width:100%}
 
+  /* 132px × 7 nodos + conectores no cabía en 1140 y el aterrizaje se caía a una
+     segunda fila, perdiendo el conector con la cadena. A 104px la cadena más
+     larga (caso-nuevo) entra entera en una franja. */
   .nodo{background:var(--bg);border:1px solid var(--border);border-radius:8px;
-    padding:9px 13px;min-width:132px;text-align:center;position:relative;
+    padding:8px 10px;min-width:104px;text-align:center;position:relative;
     transition:background .25s,border-color .25s,color .25s,transform .25s}
-  .nodo .n-t{font-family:ui-monospace,monospace;font-size:12.5px;font-weight:500;
-    word-break:break-word}
-  .nodo .n-s{font-size:10.5px;color:var(--muted);margin-top:2px}
+  .nodo .n-t{font-family:ui-monospace,monospace;font-size:11.5px;font-weight:500;
+    word-break:break-word;line-height:1.25}
+  .nodo .n-s{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.3}
   .nodo.hecho{background:var(--ok);border-color:var(--ok);color:#fff}
   .nodo.hecho .n-s{color:rgba(255,255,255,.72)}
   .nodo.activo{background:var(--accent);border-color:var(--accent);color:#fff;
@@ -73,7 +80,7 @@
   .nodo.gate{border-style:dashed}
 
   /* aristas — la marcha de guiones ES el movimiento en reposo */
-  .eh{align-self:center;width:34px;height:2px;flex:none;
+  .eh{align-self:center;width:22px;height:2px;flex:none;
     background:repeating-linear-gradient(90deg,var(--border) 0 7px,transparent 7px 14px);
     background-size:14px 2px;animation:marchaH var(--flujo) linear infinite}
   .ev{width:2px;height:30px;margin:0 auto;
@@ -139,6 +146,19 @@
   .find select{font:12px ui-monospace,monospace;padding:3px 5px;border-radius:6px;
     border:1px solid var(--border);background:var(--bg);color:var(--text)}
 
+  /* Bloque de consulta: filas de una línea, apiladas y separadas por hairlines.
+     Plegadas ocupan ~34px cada una en vez de una sección entera. */
+  .consulta{border-top:1px solid var(--border);margin-top:30px}
+  .plegable{border-bottom:1px solid var(--border)}
+  .plegable summary{cursor:pointer;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+    list-style:none;padding:10px 2px}
+  .plegable summary:hover{background:var(--panel)}
+  .plegable summary::-webkit-details-marker{display:none}
+  .plegable summary .eyebrow{flex:none;min-width:118px}
+  .plegable[open] summary{border-bottom:1px dashed var(--border)}
+  .plegable > .sub{color:var(--muted);font-size:12.5px;margin:10px 0 0}
+  .plegable .cards,.plegable > div{margin:12px 0 16px}
+
   .corrida{background:var(--panel);border:1px solid var(--border);border-radius:8px;
     padding:12px 14px;margin-bottom:10px}
   .corrida summary{cursor:pointer;display:flex;gap:11px;align-items:center;flex-wrap:wrap}
@@ -148,6 +168,10 @@
     letter-spacing:.1em;color:var(--muted);padding-top:2px}
   .corrida dd{margin:0}
   .tasa{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted)}
+  .resumen{font-family:ui-monospace,monospace;font-size:15px;color:var(--text);
+    font-weight:500;letter-spacing:-.01em}
+  .resumen b{color:var(--accent);font-weight:600}     /* el coste, en color */
+  .resumen .vv{color:var(--ok)}
 
   pre{background:#1a1a1a;color:#e8e2d4;padding:13px;border-radius:7px;overflow:auto;
     font-size:12px;line-height:1.5;max-height:340px;margin:10px 0 0;white-space:pre-wrap;
@@ -214,10 +238,8 @@
 
   <!-- ══ ORQUESTACIÓN ══ -->
   <section>
-    <div class="shead">
-      <h2 class="eyebrow">Orquestación</h2>
-      <p>Los nodos se encienden conforme la corrida avanza: <b>gate</b> (calibrate + sondas) → <b>cadena</b> (skills del modo) → <b>aterrizaje</b> (commit → merge, si hay cambios que subir). El detalle real de cada acción va en el «Flujo en vivo» de abajo.</p>
-    </div>
+    <!-- El párrafo que explicaba las tres bandas se fue al README: era
+         documentación ocupando la primera pantalla, y se lee una vez. -->
 
     <div class="lienzo" id="lienzo">
       <div class="tabs" id="tabs" role="tablist" aria-label="Modos del cerebro"></div>
@@ -239,7 +261,10 @@
         <button class="mini" id="btn-detener" disabled>Detener</button>
         <span class="tasa" id="nota-cimiento" style="color:var(--err)" hidden>cimiento roto — arregla las sondas en rojo primero</span>
         <span class="grow"></span>
-        <span class="tasa" id="resumen-job">en reposo</span>
+        <!-- El estado de la corrida ERA esto: 12px muted al final de una fila de
+             botones. Es el dato que más miras —¿sigue viva? ¿cuánto llevo
+             gastado?— así que sube a titular. -->
+        <span class="resumen" id="resumen-job">en reposo</span>
       </div>
 
       <div class="warnbox" id="bloqueo" hidden></div>
@@ -276,69 +301,75 @@
        y su campo `coste` es prosa, no un número. Estas las mide el panel viendo
        el proceso —duración, tokens, dinero y archivos escritos—, así que no
        dependen de que la corrida se autoevalúe con honestidad. -->
-  <section>
-    <div class="shead">
-      <h2 class="eyebrow">Consumo · lo que cuesta el loop</h2>
-      <p>Medido por el panel sobre las corridas que ha visto, no declarado por el cerebro.</p>
-    </div>
-    <div class="cards" id="consumo"></div>
-  </section>
+  <!-- ══ CONSULTA ══
+       Todo lo de abajo se CONSULTA; lo de arriba se opera. Antes convivían
+       abiertos en un scroll único —seis tarjetas, tres cajas vacías diciendo
+       «pulsa aquí» y un <pre> negro sin contenido— y la corrida viva, que es
+       para lo que abres el panel, competía con ellos.
 
-  <section>
-    <div class="shead">
-      <h2 class="eyebrow">Rendimiento · ¿deja cambios o informes?</h2>
-      <p>Una corrida puede razonar espléndidamente durante 14 minutos y no tocar un archivo. Aquí eso sale como número.</p>
-    </div>
-    <div class="cards" id="rendimiento"></div>
-  </section>
+       La regla de estos plegables: el TITULAR lleva el dato. Si el número que
+       buscas cabe en una línea, no tienes que abrir nada; abrir es para el
+       detalle. Un plegable que obliga a abrirlo para saber si merece la pena
+       solo mueve el desorden un clic más allá. -->
+  <section class="consulta">
+    <details class="plegable" id="d-consumo">
+      <summary><span class="eyebrow">Consumo</span>
+        <span class="tasa" id="sum-consumo">—</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <p class="sub">Medido por el panel sobre las corridas que ha visto, no declarado por el cerebro.</p>
+      <div class="cards" id="consumo"></div>
+    </details>
 
-  <!-- ══ MÉTRICAS DEL LOG ══ -->
-  <section>
-    <div class="shead">
-      <h2 class="eyebrow">El loop sobre sí mismo</h2>
-      <p>Lo que el cerebro declara en <code class="mono">cerebro-runs.jsonl</code> — su relato, no la medición.</p>
-    </div>
-    <div class="cards" id="metricas"></div>
-  </section>
+    <details class="plegable" id="d-rendimiento">
+      <summary><span class="eyebrow">Rendimiento</span>
+        <span class="tasa" id="sum-rendimiento">—</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <p class="sub">Una corrida puede razonar espléndidamente durante 14 minutos y no tocar un archivo. Aquí eso sale como número.</p>
+      <div class="cards" id="rendimiento"></div>
+    </details>
 
-  <!-- ══ SALUD ══ -->
-  <section>
-    <div class="shead">
-      <h2 class="eyebrow">Salud · qué está roto</h2>
-      <p>Las cuatro sondas del repo, ejecutadas de verdad. Cada hallazgo se puede mandar a corregir.</p>
-    </div>
-    <div id="salud"><div class="empty">Pulsa «Sondear salud» para correr las sondas.</div></div>
-  </section>
+    <details class="plegable" id="d-log">
+      <summary><span class="eyebrow">El loop sobre sí mismo</span>
+        <span class="tasa" id="sum-log">—</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <p class="sub">Lo que el cerebro declara en <code class="mono">cerebro-runs.jsonl</code> — su relato, no la medición.</p>
+      <div class="cards" id="metricas"></div>
+    </details>
 
-  <!-- ══ CORRIDAS ══ -->
-  <section>
-    <div class="shead">
-      <h2 class="eyebrow">Corridas</h2>
-      <p><code class="mono">docs/cerebro-runs.jsonl</code> — más reciente primero.</p>
-    </div>
-    <div id="corridas"></div>
-  </section>
+    <details class="plegable" id="d-salud">
+      <summary><span class="eyebrow">Salud</span>
+        <span class="tasa" id="sum-salud">sin sondear</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <p class="sub">Las cuatro sondas del repo, ejecutadas de verdad. Cada hallazgo se puede mandar a corregir.</p>
+      <div id="salud"><div class="empty">Pulsa «Sondear salud» arriba para correr las sondas.</div></div>
+    </details>
 
-  <!-- ══ REPO ══ -->
-  <section>
-    <div class="shead">
-      <h2 class="eyebrow">Repo · cambios sin commitear</h2>
-      <p>Commitea desde el panel lo que ya hay (aunque no venga de una corrida). Rama nueva, sin push.</p>
-      <span class="grow"></span>
-      <button class="mini" id="btn-repo-refresh">Refrescar</button>
-    </div>
-    <div id="repo"><div class="empty">Pulsa «Refrescar» para ver los cambios del working tree.</div></div>
-    <!-- FUERA de #repo a propósito: `cargarRepo()` reescribe #repo entero, y un
-         aterrizaje exitoso deja el árbol limpio → borraba su propio resultado
-         (hash, push, salida de git) 600 ms después de mostrarlo. El rastro de
-         lo que se ejecutó tiene que sobrevivir al re-render. -->
-    <div id="repo-log" hidden></div>
-  </section>
+    <details class="plegable" id="d-corridas">
+      <summary><span class="eyebrow">Corridas</span>
+        <span class="tasa" id="sum-corridas">—</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <div id="corridas"></div>
+    </details>
 
-  <!-- ══ SALIDA CRUDA ══ -->
-  <section id="sec-salida" hidden>
-    <div class="shead"><h2 class="eyebrow">Salida de la corrida</h2></div>
-    <pre id="job-out"></pre>
+    <details class="plegable" id="d-repo">
+      <summary><span class="eyebrow">Repo</span>
+        <span class="tasa" id="sum-repo">—</span>
+        <span class="grow"></span>
+        <button class="mini" id="btn-repo-refresh">Refrescar</button>
+        <span class="tasa">▾</span></summary>
+      <div id="repo"><div class="empty">Pulsa «Refrescar» para ver los cambios del working tree.</div></div>
+      <!-- FUERA de #repo a propósito: `cargarRepo()` reescribe #repo entero, y un
+           aterrizaje exitoso deja el árbol limpio → borraba su propio resultado
+           (hash, push, salida de git) 600 ms después de mostrarlo. El rastro de
+           lo que se ejecutó tiene que sobrevivir al re-render. -->
+      <div id="repo-log" hidden></div>
+    </details>
+
+    <details class="plegable" id="sec-salida" hidden>
+      <summary><span class="eyebrow">Salida cruda de la corrida</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <pre id="job-out"></pre>
+    </details>
   </section>
 
 </div>
@@ -354,6 +385,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) =>
    cruda, así que un archivo borrado por la corrida se leía como "D". */
 const etiquetaEstado = (e) =>
   e === "??" ? "nuevo"
+  : e === "no versionado" ? "mockup"
   : e === "sin cambios" ? "sin cambios"
   : e.includes("D") ? "borrado"
   : e.includes("M") ? "modif."
@@ -489,8 +521,26 @@ function pintarFlujo() {
   if (!modoSel) return;
   const bandas = nodosDelModo(modoSel);
   const cl = estadosDeNodos(bandas);
-  $("#flujo").innerHTML = bandas.map((b, bi) => `
-    ${bi ? '<div class="ev"></div>' : ""}
+  /* HORIZONTAL. En vertical el diagrama comía ~600px de alto y dejaba el 70%
+     del ancho vacío para decir «gate hecho, cadena corriendo, aterrizaje
+     pendiente» — con la banda central de un solo nodo en varios modos. El
+     espacio que ocupaba es el que necesita el ticker, que es donde está la
+     información real. Mismo contenido, una franja. */
+  /* Si estás mirando un modo distinto al de la corrida, el diagrama enseña
+     nodos apagados que NO significan «no pasó nada»: significan «esto es otro
+     modo». Se dice, con un atajo para volver — explorar modos mientras corre
+     algo es legítimo; confundirse no. */
+  const otroModo = job && (job.modo ?? "") !== (modoSel.arg ?? "");
+  const aviso = otroModo
+    ? `<div class="tasa" style="text-align:center;margin-bottom:10px">
+         estás viendo <b>${esc(modoSel.arg || "diagnóstico")}</b>; la corrida
+         ${job.estado === "corriendo" ? "en curso" : "última"} es
+         <b>${esc(job.modo || "diagnóstico")}</b>
+         — <button class="mini" id="btn-ver-corrida">ver su cadena</button>
+       </div>` : "";
+
+  $("#flujo").innerHTML = aviso + `<div class="tren">` + bandas.map((b, bi) => `
+    ${bi ? '<div class="eh eh-banda"></div>' : ""}
     <div class="banda">
       <div class="banda-tag">${esc(b.banda)}</div>
       <div class="fila">
@@ -501,9 +551,14 @@ function pintarFlujo() {
             <div class="n-s">${esc(n.s)}</div>
           </div>`).join("")
         : `<div class="nodo"><div class="n-t">—</div>
-             <div class="n-s">la tabla no declara cadena</div></div>`}
+             <div class="n-s">sin cadena declarada</div></div>`}
       </div>
-    </div>`).join("");
+    </div>`).join("") + `</div>`;
+
+  if (otroModo) $("#btn-ver-corrida").onclick = () => {
+    const suyo = estado.modos.find((m) => m.arg === (job.modo ?? ""));
+    if (suyo) { modoSel = suyo; pintarTabs(); pintarFlujo(); }
+  };
 
   const vivo = job?.estado === "corriendo";
   $("#lienzo").classList.toggle("corriendo", vivo);
@@ -595,12 +650,24 @@ function pintarConsumo() {
   chip.title = `${miles(tot)} tokens — entrada ${miles(tk.entrada)}, salida ${miles(tk.salida)}, `
     + `caché leído ${miles(tk.cache_lectura)}, caché creado ${miles(tk.cache_creacion)}`;
 
+  // El titular del plegable lleva el dato: si lo que buscas cabe en una línea,
+  // no hace falta abrir nada.
+  $("#sum-consumo").textContent =
+    `${compacto(tot)} tok · ${dinero(s.coste_usd)} · caché ${s.cacheRatio == null ? "—" : Math.round(s.cacheRatio * 100) + "%"}`;
+  $("#sum-rendimiento").textContent =
+    `${s.conCambio} de ${s.terminadas || 0} dejaron cambio`
+    + (s.costePorCambio != null ? ` · ${dinero(s.costePorCambio)} por cambio útil` : "");
+
   $("#consumo").innerHTML = [
+    // Las CUATRO categorías, o la partición no cierra. La versión anterior
+    // omitía `cache_creacion` y la leyenda sumaba 91%: un panel cuyo lema es
+    // «no afirma, comprueba» enseñando un reparto que no cuadra.
     tarjeta("Tokens acumulados", compacto(tot),
-      `caché ${pct(tk.cache_lectura)}% · entrada ${pct(tk.entrada)}% · salida ${pct(tk.salida)}%`
+      `caché ${pct(tk.cache_lectura)}% · escritura de caché ${pct(tk.cache_creacion)}%`
+      + ` · entrada ${pct(tk.entrada)}% · salida ${pct(tk.salida)}%`
       + (s.parcial ? " · <b>corrida en curso</b>" : ""),
-      barra([[pct(tk.cache_lectura), "var(--ok)"], [pct(tk.entrada), "var(--surface2)"],
-             [pct(tk.salida), "var(--accent)"]])),
+      barra([[pct(tk.cache_lectura), "var(--ok)"], [pct(tk.cache_creacion), "var(--warn)"],
+             [pct(tk.entrada), "var(--surface2)"], [pct(tk.salida), "var(--accent)"]])),
     tarjeta("Coste acumulado", dinero(s.coste_usd),
       `${s.corridas} corrida(s)` + (s.msMedia ? ` · ${mmss(s.msMedia)} de media` : "")),
     tarjeta("Eficiencia de caché",
@@ -617,15 +684,30 @@ function pintarConsumo() {
              [term > 0 ? Math.round((term - util) / term * 100) : 0, "var(--surface2)"]])),
     tarjeta("Coste por cambio útil", dinero(s.costePorCambio),
       "reparte TODO el gasto entre los cambios que llegaron — las corridas estériles también se pagan"),
+    // Un 0 desnudo se lee como fracaso. Si el registro está vacío es que aún no
+    // ha visto nada, que no es lo mismo que «nada aterrizó» — distinguirlo es
+    // exactamente la clase de honestidad que este panel se exige.
+    // El registro de aterrizajes nació después que los descartes, así que puede
+    // haber descartes con cero commits sin que eso signifique que nada aterrizó.
+    // Se dice cuál de las dos cosas es en vez de dejar un 0 que se lee como
+    // fracaso del loop.
     tarjeta("Aterrizaje",
-      `${s.commiteadas} <small>commiteadas</small> · <span style="color:var(--accent)">${s.descartadas}</span> <small>descartadas</small>`,
-      "si «descartadas» sube, el problema es el prompt, no el presupuesto"),
+      s.commiteadas + s.mergeadas === 0
+        ? `<span style="color:var(--muted)">—</span>`
+          + (s.descartadas ? ` <small>· <span style="color:var(--accent)">${s.descartadas}</span> descartadas</small>` : "")
+        : `${s.commiteadas} <small>commits</small> · ${s.mergeadas} <small>a main</small>`
+          + ` · <span style="color:var(--accent)">${s.descartadas}</span> <small>descartadas</small>`,
+      s.commiteadas + s.mergeadas === 0
+        ? "sin commits registrados: el registro arranca con este panel, los anteriores no se cuentan"
+        : `${s.archivosAterrizados} archivo(s) llegaron al repo desde el panel. `
+          + "Si «descartadas» sube, el problema es el prompt, no el presupuesto"),
   ].join("");
 }
 
 function pintarMetricas() {
   const m = estado.metricas;
   const tasa = m.tasa === null ? "—" : Math.round(m.tasa * 100) + "%";
+  $("#sum-log").textContent = `${m.corridas} corrida(s) registradas · ${tasa} verificados`;
   const cards = [
     ["Corridas registradas", esc(m.corridas), Object.entries(m.porModo)
       .map(([k, v]) => `${k} ×${v}`).join(" · ") || "sin corridas"],
@@ -641,6 +723,9 @@ function pintarMetricas() {
 
 function pintarCorridas() {
   const c = estado.corridas;
+  $("#sum-corridas").textContent = c.length
+    ? `${c.length} en el log · última ${c[0].fecha} (${c[0].modo})`
+    : "el log está vacío";
   if (!c.length) {
     $("#corridas").innerHTML = `<div class="empty">Todavía ninguna corrida ha dejado rastro.</div>`;
     return;
@@ -686,6 +771,11 @@ $("#btn-sondear").onclick = async () => {
 
 function pintarSalud(h) {
   const badge = { ok: "b-ok", warn: "b-warn", error: "b-err", roto: "b-err" };
+  const nErr = h.sondas.reduce((n, s) => n + s.errores.length, 0);
+  const nWarn = h.sondas.reduce((n, s) => n + s.warns.length, 0);
+  $("#sum-salud").textContent = `${nErr} error(es) · ${nWarn} warn(s)`
+    + (h.cimientoRoto ? " · CIMIENTO ROTO" : "");
+  $("#d-salud").open = nErr > 0 || h.cimientoRoto;   // solo se abre si importa
   const cab = h.cimientoRoto
     ? `<div class="warnbox"><strong>Cimiento roto.</strong> El cerebro no construye sobre
        <code class="mono">err&gt;0</code>: arregla esto antes de gatillar otro modo.</div>` : "";
@@ -778,12 +868,31 @@ async function gatillar(modo, contexto = "") {
 
    El iframe va en `sandbox` sin `allow-scripts`: el mockup lo escribió un agente
    y esto es una página con permisos sobre tu repo. Se mira, no se ejecuta. */
-const esVisual = (f) => /\.(html?|svg)$/i.test(f);
+/* Renderizable = un mockup de revisión o un SVG. Antes bastaba con acabar en
+   `.html`, así que el propio `index.html` del panel ofrecía «Ver mockup» y
+   lo habría cargado dentro de sí mismo. */
+const esVisual = (f) => /(^|\/)mockups\/.+\.html?$/i.test(f) || /\.svg$/i.test(f);
 
 /* Lo que el panel comprueba por su cuenta sobre el diff, antes de que apruebes.
    Va ARRIBA de la lista de archivos a propósito: un aviso que aparece después
    del botón llega tarde. No bloquea — el panel no sabe si la decisión es
    correcta, sabe que merece una mirada. */
+/* La recomendación del panel. Señalar sin recomendar deja el trabajo a medias:
+   el panel sabe si hay avisos y si el cambio se publica, y callárselo «para no
+   influir» es una falsa neutralidad. Va ARRIBA, con la acción sugerida en
+   negrita y el límite de lo que sabe al final — un «commitear» suyo no es un
+   visto bueno técnico, y tiene que decirlo él mismo. */
+function pintarRecomendacion(r) {
+  if (!r || r.accion === "nada") return "";
+  const negrita = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/`(.+?)`/g, '<code class="mono">$1</code>');
+  const color = r.accion === "revisar" ? "var(--warn)" : "var(--ok)";
+  return `<div style="border-left:3px solid ${color};padding:8px 0 8px 12px;margin:0 0 12px;font-size:13px">
+    <span class="eyebrow" style="color:${color}">Recomendación del panel</span>
+    <div style="margin-top:4px">${negrita(r.texto)}</div>
+  </div>`;
+}
+
 function pintarRevision(avisos) {
   if (!avisos?.length) return "";
   const icono = { derogacion: "⚖", superficie: "❐" };
@@ -803,8 +912,11 @@ function pintarRevision(avisos) {
 }
 
 function filaArchivo(a, conCheckbox = false) {
-  const tag = `<span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>`;
-  const chk = conCheckbox ? `<input type="checkbox" data-f="${esc(a.archivo)}" checked>` : "";
+  // Un archivo no versionado (el mockup) no se commitea: se mira. Ni casilla ni
+  // color de aviso — es material de revisión, no un cambio pendiente.
+  const clase = a.ignorado ? "b-run" : a.estado === "??" ? "b-ok" : "b-warn";
+  const tag = `<span class="tag ${clase}">${esc(etiquetaEstado(a.estado))}</span>`;
+  const chk = conCheckbox && !a.ignorado ? `<input type="checkbox" data-f="${esc(a.archivo)}" checked>` : "";
   const btn = `<button class="mini" data-ver="${esc(a.archivo)}">${esVisual(a.archivo) ? "Ver mockup" : "Ver cambio"}</button>`;
   return `<div class="f-wrap"><${conCheckbox ? "label" : "div"} class="f">${chk}${tag}${esc(a.archivo)}${btn}</${conCheckbox ? "label" : "div"}>`
     + `<div class="diff" id="diff-${cssId(a.archivo)}" hidden></div></div>`;
@@ -852,7 +964,10 @@ async function cargarCheckpoint(id) {
     const d = await (await fetch("/api/diff?id=" + id)).json();
     conexion(true);
     if (!d.cambios) return;
-    $("#chk-archivos").innerHTML = pintarRevision(d.revision) + d.archivos.map(filaArchivo).join("");
+    // `.map(filaArchivo)` le pasaba el ÍNDICE como `conCheckbox`: la fila 0 salía
+    // sin casilla y el resto con ella. Se pasa explícito.
+    $("#chk-archivos").innerHTML = pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision)
+      + d.archivos.map((a) => filaArchivo(a, false)).join("");
     engancharVistaPrevia("#chk-archivos");
     if (d.commit) {
       chkFin();
@@ -924,6 +1039,11 @@ async function reengancharJob() {
     const pendiente = j.archivos?.length && !j.commit && !j.descartado;
     if (!vivo && !pendiente) return;
     job = j;
+    // El diagrama seguía a la PESTAÑA, no a la corrida: con otra pestaña puesta
+    // enseñaba nodos apagados junto a un resumen «listo · 56 turnos», y se leía
+    // como que la corrida no había encendido nada. Al re-enganchar, manda el job.
+    const suyo = estado?.modos?.find((m) => m.arg === (j.modo ?? ""));
+    if (suyo) { modoSel = suyo; pintarTabs(); }
     $("#ticker").hidden = false;
     $("#sec-salida").hidden = false;
     refrescar(j);
@@ -982,11 +1102,12 @@ function pintarResumen(j) {
   const r = j.resultado, tk = j.tokens;
   const tot = tk ? tk.entrada + tk.salida + tk.cache_lectura + tk.cache_creacion : 0;
   const consumo = tot ? ` · ${compacto(tot)} tok` : "";
-  $("#resumen-job").textContent = j.estado === "corriendo"
-    ? `corriendo · ${mmss(Date.now() - new Date(j.inicio).getTime())}`
+  const coste = r?.coste_usd != null ? ` · <b>$${r.coste_usd.toFixed(2)}</b>` : "";
+  $("#resumen-job").innerHTML = j.estado === "corriendo"
+    ? `<span class="vv">◍ corriendo</span> · ${mmss(Date.now() - new Date(j.inicio).getTime())}`
       + ` · ${j.eventosTotal ?? (j.eventos ?? []).length} acciones${consumo}`
-    : `${j.estado}` + (r ? ` · ${mmss(r.duracion_ms)} · ${r.turnos} turnos` +
-        (r.coste_usd != null ? ` · $${r.coste_usd.toFixed(3)}` : "") : "") + consumo;
+    : `${esc(j.estado)}` + (r ? ` · ${mmss(r.duracion_ms)} · ${r.turnos} turnos` : "")
+      + consumo + coste;
 }
 
 function refrescar(j) {
@@ -1007,7 +1128,14 @@ function refrescar(j) {
         + `>↳ ${esc(largo ? e.resultado.slice(0, CORTE) : e.resultado)}</span>`;
     } else if (vivo) salida = `<span class="ev-out ev-wait">↳ …</span>`;
     return `<li><div class="ev-in"><b>${esc(t.ic)} ${esc(t.lbl)}</b><span>${esc(t.dt)}</span></div>${salida}</li>`;
-  }).join("") || `<li><span>sin herramientas todavía…</span></li>`;
+  }).join("")
+    // Un job recuperado del disco no conserva sus eventos. Decir «sin
+    // herramientas todavía» sobre una corrida de 56 turnos sería mentir sobre
+    // lo que pasó; se dice que el detalle se perdió, no que no ocurrió.
+    || (j.eventosPerdidos
+      ? `<li><span>${j.eventosPerdidos} acciones en esta corrida · el detalle no sobrevivió al
+           reinicio del panel (los eventos no se persisten). La salida cruda sigue abajo.</span></li>`
+      : `<li><span>sin herramientas todavía…</span></li>`);
   document.querySelectorAll("#eventos .ev-out.largo").forEach((s) => s.onclick = () => {
     s.textContent = "↳ " + s.dataset.full;
     s.classList.add("abierto"); s.classList.remove("largo");
@@ -1044,11 +1172,14 @@ async function cargarRepo() {
   try {
     const d = await (await fetch("/api/repo")).json();
     conexion(true);
+    $("#sum-repo").textContent = d.archivos.length
+      ? `${d.archivos.length} archivo(s) sin commitear · rama ${d.rama}`
+      : `árbol limpio · rama ${d.rama}`;
     if (!d.archivos.length) {
       $("#repo").innerHTML = `<div class="empty">Working tree limpio — nada que commitear.</div>`;
       return;
     }
-    $("#repo").innerHTML = pintarRevision(d.revision) + `
+    $("#repo").innerHTML = pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision) + `
       <div class="chk-list" id="repo-list">
         ${d.archivos.map((a) => filaArchivo(a, true)).join("")}
       </div>
@@ -1147,10 +1278,21 @@ async function repoDiscard() {
     setTimeout(cargarRepo, 400);
   } catch (e) { conexion(false); }
 }
-$("#btn-repo-refresh").onclick = cargarRepo;
+// El botón vive DENTRO del <summary>: sin esto, pulsarlo plegaría la sección
+// justo al pedir los datos. Se corta el evento y se abre a mano.
+$("#btn-repo-refresh").onclick = (e) => {
+  e.preventDefault(); e.stopPropagation();
+  $("#d-repo").open = true;
+  cargarRepo();
+};
 
-cargarEstado();
-reengancharJob();
+// En este orden: `reengancharJob` necesita `estado.modos` para poder fijar el
+// diagrama al modo de la corrida recuperada.
+cargarEstado().then(reengancharJob);
+// El titular del repo tiene que nacer con el dato («árbol limpio» o «5 archivos
+// sin commitear»); si no, el plegable obliga a abrirlo para saber si hay algo,
+// que es justo lo que veníamos a evitar. Es un `git status`: barato.
+cargarRepo();
 // El cronómetro no puede depender del tick del job: durante la corrida el
 // segundero tiene que avanzar aunque no lleguen eventos nuevos — un panel
 // congelado parece un panel caído.

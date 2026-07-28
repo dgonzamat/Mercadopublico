@@ -3,6 +3,20 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    # El panel y las utilidades del repo viven en `tools/`, FUERA de `web/`, así
+    # que no entran en el `output: export`. Sus commits disparaban igualmente un
+    # deploy que reconstruía y republicaba el sitio idéntico: minutos de CI y una
+    # entrada de despliegue por cada cambio de una herramienta que no se sirve.
+    # `paths-ignore` solo salta cuando TODOS los archivos del push encajan, así
+    # que un commit mixto (tools/ + web/) despliega como siempre.
+    # Solo rutas que con certeza NO alimentan el build. `**/*.md` queda fuera a
+    # propósito: hoy ningún markdown es contenido, pero si algún día lo fuera,
+    # el deploy dejaría de dispararse en silencio — y un fallo silencioso es
+    # peor que un deploy de más.
+    paths-ignore:
+      - 'tools/**'
+      - 'docs/**'
+      - '*.md'
   workflow_dispatch:
 
 # Fuente ÚNICA de publicación: peaceiris empuja el export a la rama gh-pages.
