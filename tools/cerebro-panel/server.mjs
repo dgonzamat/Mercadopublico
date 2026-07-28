@@ -821,16 +821,32 @@ const CADENAS = {
     ambito: "el código del SITIO bajo `web/` (componentes, rutas, `scripts/`, `scripts/lib/`)",
   },
   "mejoras-ux": {
-    obj: "detectar oportunidades de UI/UX (no defectos) de alto leverage",
-    cadena: "aplica /innovar sobre UNA fricción concreta observada en el marcado/rutas, propón el cambio con su señal (sin fluff) y DEJA SU MOCKUP (ver abajo)",
+    obj: "mejorar el RECORRIDO y la JERARQUÍA del sitio — cómo se navega y qué se entiende primero",
+    cadena: "aplica /innovar sobre UNA fricción de navegación o de jerarquía visual, nombra el recorrido que arregla, y DEJA SU MOCKUP (ver abajo)",
     ambito: "el código del SITIO bajo `web/` (componentes, rutas, estilos)",
     // Un cambio de UX no se aprueba leyendo un diff de `.tsx`: se aprueba
     // mirándolo. El panel sabe renderizar un .html en la vista previa del
     // checkpoint, así que la corrida tiene que dejarle algo que renderizar —
     // si no, el usuario firma a ciegas y la revisión es un trámite.
-    entregable: "En este modo el mockup es la parte que más importa: reproduce la pantalla real "
-      + "(mismo marcado y espaciados que el componente), no un esquema — una fricción de UI se aprueba "
-      + "o se rechaza por cómo se ve, y un diagrama aproximado esconde justo lo que hay que juzgar.",
+    /* El presupuesto lo salvó de censar el sitio y lo empujó al otro extremo:
+       un contador, un enlace con hover, un gráfico por otro. Todo correcto y
+       todo a nivel de widget — ninguna corrida tocó cómo se RECORRE el sitio.
+       «Un objetivo» no significa «un retoque»: significa un problema, y el
+       problema puede ser grande. Estas reglas suben el listón sin reabrir la
+       puerta al inventario. */
+    extra: "**Apunta al recorrido, no al widget.** Lo que cuenta aquí:\n"
+      + "- **Navegación**: cómo se llega de A a B. Orientación (¿dónde estoy, qué es esto?), callejones "
+      + "sin salida (páginas que no ofrecen a dónde ir después), profundidad (cuántos clics cuesta lo "
+      + "que más se busca), continuidad (termino de leer un caso → ¿y ahora qué?).\n"
+      + "- **Jerarquía**: qué golpea el ojo primero y si es lo correcto; qué se puede saltar; densidad y "
+      + "ritmo de una página larga.\n"
+      + "**NO cuentan como resultado por sí solos**: añadir un contador, una etiqueta, un hover, un "
+      + "enlace suelto, o cambiar un gráfico por otro equivalente. Son detalles, no recorridos.\n"
+      + "**Declara el recorrido que arreglas**, en una línea y en términos de alguien usando el sitio: "
+      + "«llego a /cases desde una búsqueda, filtro por país y no hay forma de volver al mapa». Sin ese "
+      + "recorrido nombrado, el cambio es decoración.\n"
+      + "**El mockup enseña la SECCIÓN o la PÁGINA**, no el widget aislado: una mejora de recorrido solo "
+      + "se juzga viendo el contexto del que viene y al que lleva.",
   },
   "mejoras-tec": {
     obj: "mejorar calidad de código: reuso, simplificación, eficiencia",
