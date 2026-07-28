@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { mirrorHref, isEsRoute } from "@/components/LocaleLink";
+import { mirrorHref, chromeLocale } from "@/components/LocaleLink";
 
 type Locale = "es" | "en";
 
@@ -68,11 +68,7 @@ export function LocaleToggle({
     //  · /es/…            → es
     //  · raíz con espejo  → en (esas páginas ya sirven solo inglés)
     //  · sin espejo       → bilingüe: gana la elección explícita, luego autodetect
-    const initial: Locale = isEsRoute(pathname)
-      ? "es"
-      : mirrorHref(pathname) !== null
-        ? "en"
-        : (stored ?? detectLocale());
+    const initial: Locale = chromeLocale(pathname) ?? (stored ?? detectLocale());
     // Locale derivado en mount / al navegar (no disponible en SSR).
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLocale(initial);
