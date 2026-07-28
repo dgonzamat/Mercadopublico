@@ -1078,6 +1078,26 @@ function promptLean(modo, contexto) {
         `  como hallazgo para otro modo y NO la ataques aquí.`,
       ]),
       `- Si la señal trae una ruta o archivo, ESE es el ámbito y manda sobre lo anterior.`,
+      /* Una corrida de `noticias` grepeó el corpus, encontró
+         `pursue-release-2026.json` y concluyó «PURSUE ya documentado, no hay
+         Release 4 anunciado». El archivo existía, sí — con `pursueReleases:
+         [1,2,3]` y ni una mención al cuarto, que llevaba publicado desde el 10
+         de julio y que el propio corpus ya citaba en OTRO caso. Confundió «hay
+         un archivo que se llama así» con «ese archivo cubre esto», y de ahí
+         saltó a un negativo sobre el mundo. Dos horas y dos corridas perdidas. */
+      ...(spec.corpus ? [
+        ``,
+        `## Contrastar NO es comprobar que el archivo existe (obligatorio)`,
+        `- Para decir **«ya está cubierto», CITA el fragmento** del caso que lo cubre. Que exista un`,
+        `  \`.json\` con nombre parecido no prueba nada: un caso puede existir y no mencionar el`,
+        `  desarrollo que traes. **Si no puedes pegar la frase, NO está cubierto.**`,
+        `- Para decir **«no existe» o «no hay desarrollo nuevo»**, di qué buscaste y qué encontraste. Un`,
+        `  negativo también es una afirmación: se sostiene con evidencia, no con la ausencia de hallazgo.`,
+        `  Y nunca deduzcas del corpus lo que pasa en el MUNDO — que el repo no lo tenga no significa que`,
+        `  no haya ocurrido; significa justo lo contrario, que es tu trabajo.`,
+        `- **El descarte se revisa igual que la propuesta.** Escríbelo para que otro pueda comprobarlo sin`,
+        `  repetir tu barrido: qué buscaste, qué hallaste, qué archivo lo cubre y con qué frase.`,
+      ] : []),
       ``,
       /* Homogeneizar es el instinto por defecto de cualquier pase de reuso, y casi
          siempre acierta. Pero una corrida de `mejoras-ux` sustituyó unas barras
