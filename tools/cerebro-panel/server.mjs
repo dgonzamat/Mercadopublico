@@ -544,34 +544,32 @@ async function revisarCambios(archivos) {
   for (const f of archivos) {
     const st = (await git(["status", "--porcelain", "--", f])).out;
     if (st.startsWith("??")) continue;             // alta: no deroga nada
-    const d = (await git(["diff", "-U0", "--", f])).out;
+    /* WORD-DIFF, no diff de líneas. Los tres primeros falsos positivos —un
+       comentario movido, un párrafo añadido a una línea de JSON gigante, y un
+       import al que solo le cambian los especificadores— tenían la MISMA raíz:
+       leyendo línea a línea, *mover*, *ampliar* y *modificar* son indistinguibles
+       de *añadir* y *borrar*. Cada uno costó un parche distinto.
+       `--word-diff=porcelain` marca solo lo que cambió DENTRO de la línea, así
+       que las tres clases desaparecen de golpe: ampliar un párrafo no quita
+       nada, y cambiar `{ isEsRoute }` por `{ chromeLocale }` no toca la ruta del
+       módulo. Un arreglo en la entrada en vez de tres en la salida. */
+    const d = (await git(["diff", "--word-diff=porcelain", "-U0", "--", f])).out;
     if (!d) continue;
 
-    // ── derogación: líneas BORRADAS que explicaban algo ──
-    // Una explicación MOVIDA no es una explicación derogada: al reestructurar un
-    // archivo, el diff borra el comentario de un sitio y lo añade en otro. Sin
-    // esta comprobación el aviso saltaba en cada refactor y se aprendía a
-    // ignorar — que es la única forma de que un detector deje de servir.
-    const lineas = d.split("\n");
-    const añadidas = new Set(lineas
-      .filter((l) => l.startsWith("+") && !l.startsWith("+++"))
-      .map((l) => l.slice(1).trim()));
-    /* Igualdad exacta no basta. En los casos del corpus la prosa vive en UNA
-       línea de JSON larguísima: añadirle un párrafo al final hace que git borre
-       la línea entera y añada la versión ampliada, y el aviso saltaba como si se
-       hubiera derogado todo lo anterior —cuando el texto sigue ahí, íntegro—.
-       Si lo borrado SOBREVIVE dentro de algo añadido, es una ampliación. */
-    const añadidasTexto = [...añadidas].join("\n");
-    /* Se compara por PREFIJO, no por la línea entera: el texto nuevo se inserta
-       ANTES del cierre (`…texto viejo\n\ntexto nuevo",`), así que lo borrado no
-       es subcadena contigua de lo añadido aunque esté íntegro dentro. Un prefijo
-       largo (200 caracteres) es identificación de sobra y no genera colisiones. */
-    const sobrevive = (l) =>
-      añadidas.has(l) || añadidasTexto.includes(l.slice(0, Math.min(200, l.length)));
-    const borradas = lineas
-      .filter((l) => l.startsWith("-") && !l.startsWith("---"))
-      .map((l) => l.slice(1).trim())
-      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l) && !sobrevive(l));
+    const quitadas = [], puestas = [];
+    for (const l of d.split("\n")) {
+      if (/^(diff |index |--- |\+\+\+ |@@)/.test(l)) continue;
+      if (l.startsWith("-")) quitadas.push(l.slice(1));
+      else if (l.startsWith("+")) puestas.push(l.slice(1));
+    }
+    const puestasTexto = puestas.join("\n");
+
+    // ── derogación: texto que explicaba algo y DESAPARECE ──
+    // Sigue haciendo falta la comprobación de supervivencia: mover un comentario
+    // entero de sitio sí produce quitado+puesto, y eso es un refactor.
+    const borradas = quitadas
+      .map((l) => l.trim())
+      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l) && !puestasTexto.includes(l));
     for (const l of borradas.slice(0, 3))
       avisos.push({
         tipo: "derogacion", archivo: f,
@@ -591,8 +589,7 @@ async function revisarCambios(archivos) {
        `…Count`, `…Total`) a propósito: un detector ancho grita con todo y se
        aprende a ignorar, que es la única forma de que deje de servir. */
     if (/\.(tsx|jsx)$/.test(f)) {
-      const añadido = d.split("\n").filter((l) => l.startsWith("+") && !l.startsWith("+++")).join("\n");
-      const pintados = [...añadido.matchAll(/\{([a-zA-Z_$][\w$]*(?:\.[\w$]+)*(?:\.length)?)\}/g)]
+      const pintados = [...puestasTexto.matchAll(/\{([a-zA-Z_$][\w$]*(?:\.[\w$]+)*(?:\.length)?)\}/g)]
         .map((m) => m[1])
         .filter((e) => /\.length$|Count$|Total$/.test(e));
       const actual = fs.readFileSync(path.join(repoRoot, f), "utf8");
@@ -608,8 +605,11 @@ async function revisarCambios(archivos) {
       }
     }
 
-    // ── superficie: componentes añadidos que ya se renderizan en otras vistas ──
-    const nuevos = [...d.matchAll(/^\+.*from\s+["']@\/components\/([\w-]+)["']/gm)].map((m) => m[1]);
+    /* ── superficie: componentes que se EMPIEZAN a usar aquí ──
+       Sobre el word-diff, la ruta del módulo solo aparece entre lo añadido si el
+       import es realmente nuevo: cambiar los especificadores deja `@/components/X`
+       intacto y no lo marca. Antes hacía falta un parche para eso. */
+    const nuevos = [...puestasTexto.matchAll(/@\/components\/([\w-]+)/g)].map((m) => m[1]);
     for (const comp of [...new Set(nuevos)]) {
       const r = await git(["grep", "-l", "-e", `components/${comp}`, "--", "web/*.tsx", "web/**/*.tsx"]);
       const donde = (r.out || "").split("\n").filter((x) => x && !x.endsWith(`/${comp}.tsx`) && x !== f);
