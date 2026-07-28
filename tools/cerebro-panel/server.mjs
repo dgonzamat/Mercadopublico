@@ -218,6 +218,7 @@ const CADENA_FLUJO = {
   "mejoras-ux": "`/innovar`",
   "mejoras-tec": "`simplify` · `/blindar`",
   "frescura": "WebSearch → `/nuevo-caso` → `/learn`",
+  "noticias": "WebSearch → `/nuevo-caso` → `/learn`",
 };
 
 const contrato = () => {
@@ -1113,9 +1114,20 @@ function promptLean(modo, contexto) {
       `del corpus. Si se rechaza, no se ha tirado nada; si se aprueba, el panel dispara la fase 2 con`,
       `tu propuesta como especificación.`,
       spec.corpus
+        /* La primera versión de esta fase no pedía mockup en los modos de corpus
+           y el resultado fue una propuesta que solo se podía leer. Un caso o un
+           post SON una página: se aprueban viendo cómo quedarían, igual que un
+           cambio de interfaz. Lo que no hace falta es la prosa completa —eso es
+           lo caro y va en la fase 2—, sino la forma. */
         ? `Entrega: **qué evento o desarrollo eliges**, sus **fuentes verificadas** (con URL), por qué `
           + `supera el umbral, qué archivo crearías o tocarías, y —si actualizas— **qué párrafo** cambia `
-          + `y por qué. NO escribas la prosa: eso es la fase 2 y es lo caro.`
+          + `y por qué.\n`
+          + `Y el **MOCKUP igual que en cualquier otro modo**: dibuja cómo se vería en el sitio la página `
+          + `del caso (o del post) con esto dentro — cabecera con nombre, país, año y tier; el resumen en `
+          + `2-3 frases; el bloque de fuentes— usando las clases reales. Si ACTUALIZAS un caso, el antes `
+          + `es su página tal como está hoy y el después la misma con el párrafo nuevo.\n`
+          + `NO escribas la prosa completa (~3.500 caracteres ES+EN): eso es la fase 2 y es lo caro. El `
+          + `mockup enseña la FORMA y el encaje, no el texto final.`
         : `Entrega: el **diagnóstico**, el **alcance medido**, el **mockup**, y una línea con **qué `
           + `archivos tocaría** la implementación. NO toques el código.`,
       `La única excepción es un cambio de una línea cuyo diagnóstico sea más largo que el arreglo:`,
