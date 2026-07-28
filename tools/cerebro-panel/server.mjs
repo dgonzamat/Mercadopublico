@@ -825,10 +825,23 @@ const CADENAS = {
     ambito: "un archivo NUEVO en `web/data/cases/`. No modifiques casos existentes: eso es `frescura`",
     corpus: true,
   },
+  /* NO hay entrada para `curar-memoria`: `cerebro.md` lo declara como skill del
+     LOOP —el que se delega desde el gate cuando aparece drift—, no como modo, y
+     `/api/fire` valida contra ese contrato. Añadirlo aquí habría sido una
+     entrada muerta: un modo que la tabla ofrece y el panel rechaza. El contrato
+     sale de un solo sitio, y ese sitio es el skill. */
   "": {
     obj: "diagnóstico: sondear el estado y RECOMENDAR el modo de mayor leverage",
     cadena: "corre las 3 sondas, lee las métricas y propón qué modo conviene y por qué — NO gatilles nada",
     ambito: "NADA. Este modo solo observa: no escribas ni modifiques ningún archivo, solo recomienda",
+    // El diagnóstico recomendaba acciones que el panel no ofrece, y quien lo lee
+    // se queda sin poder actuar. Que recomiende de la lista real.
+    extra: "Recomienda SOLO uno de los modos que el panel puede disparar: **caso-nuevo, bugs, "
+      + "mejoras-ux, mejoras-tec, frescura**. Los skills del loop (`/curar-memoria`, `/blindar`, "
+      + "`/learn`, `/retro`) NO son modos: no se pueden gatillar desde el panel. Si lo que de verdad "
+      + "hace falta es uno de ellos —p. ej. drift en `CLAUDE.md`—, dilo así: «acción FUERA del panel: "
+      + "<qué> — requiere una sesión normal», con los cambios concretos ya identificados para que "
+      + "quien la haga no tenga que volver a diagnosticar. No disfraces esa recomendación de modo.",
   },
 };
 
@@ -868,6 +881,9 @@ function promptLean(modo, contexto) {
     spec.obj + ".",
     `## Cadena (lean)`,
     spec.cadena + ".",
+    // Regla propia del modo, si la tiene. Va pegada al objetivo: es lo que hace
+    // distinto a ESTE modo, no una nota al pie.
+    ...(spec.extra ? [``, `## Específico de este modo (obligatorio)`, spec.extra] : []),
     ``,
     /* MOCKUP OBLIGATORIO. Un cambio que solo se puede revisar leyendo un diff
        obliga a quien aprueba a reconstruir mentalmente el antes y el después. El
