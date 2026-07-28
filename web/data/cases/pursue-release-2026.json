@@ -4,7 +4,8 @@
   "pursueReleases": [
     1,
     2,
-    3
+    3,
+    4
   ],
   "name": "PURSUE · sistema presidencial de release UAP",
   "name_en": "PURSUE · Presidential Unsealing and Reporting System for UAP Encounters",
@@ -30,8 +31,8 @@
     "nohumano_abierto": 0.15,
     "indet": 0.2
   },
-  "summary": "PURSUE — siglas de un sistema presidencial estadounidense de release UAP — es la directiva ejecutiva firmada por la administración Trump en mayo 2026 que ordena al recién renombrado Departamento de Guerra (ex-DoD) ejecutar un release interagencial 'expeditivo' de registros UAP no resueltos. El portal war.gov/ufo/ abrió el 8 de mayo de 2026 y publicó en tandas sucesivas: Release 1 (8 may), Release 2 (22 may) y Release 3 (12 jun) — esta última con 53 documentos, 10 renders digitales, 6 videos y 3 audios de NASA, provenientes de CIA, FBI, NASA y el Pentágono. A mediados de junio el portal superaba los 1.700 millones de accesos. El reporte de AARO que acompaña al tercer release (firmado por su director Jon Kosloski, 5 jun) acentúa orbes 'plasma-like' —incluida una 'mother orb' naranja que libera orbes rojos menores— y admite que ~40% de los casos siguen sin explicación. Es la primera infraestructura federal estadounidense de release UAP con mandato presidencial directo y URL pública estable. El contenido sigue siendo más procedural que probatorio —videos de orbes, audios históricos y documentos desclasificados, sin la pieza concluyente que zanjaría la pregunta material— pero ya no es un canal vacío.",
-  "summary_en": "PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) is the executive directive signed by the Trump administration in May 2026 ordering the newly renamed Department of War (formerly DoD) to execute an 'expeditious' interagency release of unresolved UAP records. The war.gov/ufo/ portal opened on May 8, 2026 and published in successive tranches: Release 1 (May 8), Release 2 (May 22) and Release 3 (June 12) — the latter with 53 documents, 10 digital renderings, 6 videos and 3 NASA audio recordings, sourced from the CIA, FBI, NASA and the Pentagon. By mid-June the portal had surpassed 1.7 billion accesses. The AARO assessment accompanying the third release (signed by its director Jon Kosloski, June 5) emphasizes 'plasma-like' orbs —including an orange 'mother orb' releasing smaller red orbs— and concedes that ~40% of cases remain unexplained. It is the first U.S. federal UAP-release infrastructure with a direct presidential mandate and a stable public URL. The content remains more procedural than probative —orb videos, historical audio and declassified documents, without the conclusive piece that would settle the material question— but it is no longer an empty channel.",
+  "summary": "PURSUE — siglas de un sistema presidencial estadounidense de release UAP — es la directiva ejecutiva firmada por la administración Trump en mayo 2026 que ordena al recién renombrado Departamento de Guerra (ex-DoD) ejecutar un release interagencial 'expeditivo' de registros UAP no resueltos. El portal war.gov/ufo/ abrió el 8 de mayo de 2026 y publicó en tandas sucesivas: Release 1 (8 may), Release 2 (22 may), Release 3 (12 jun) y Release 4 (10 jul). A mediados de junio el portal superaba los 1.700 millones de accesos. El reporte de AARO que acompaña al tercer release (firmado por su director Jon Kosloski, 5 jun) acentúa orbes 'plasma-like' —incluida una 'mother orb' naranja que libera orbes rojos menores— y admite que ~40% de los casos siguen sin explicación. El cuarto release (10 jul 2026) aportó 40 archivos más (14 documentos, 19 videos, 4 audios, 3 imágenes), entre ellos video infrarrojo de un objeto de seis puntas sobre el Mar Amarillo capturado por U.S. Indo-Pacific Command en 2025, un testimonio de aviador militar con 28 años de servicio sobre un objeto rectangular con 'características de vuelo sin precedentes' (Eastern US, 2019), documentación de intrusión sobre la planta nuclear de Pantex (Texas, sep 2015), y una transcripción de conferencia de Los Álamos (1949) donde físicos intentaron explicar las 'green fireballs' sobre el laboratorio nuclear. Es la primera infraestructura federal estadounidense de release UAP con mandato presidencial directo y URL pública estable. El contenido sigue siendo más procedural que probatorio —videos de orbes, audios históricos y documentos desclasificados, sin la pieza concluyente que zanjaría la pregunta material— pero ya no es un canal vacío.",
+  "summary_en": "PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) is the executive directive signed by the Trump administration in May 2026 ordering the newly renamed Department of War (formerly DoD) to execute an 'expeditious' interagency release of unresolved UAP records. The war.gov/ufo/ portal opened on May 8, 2026 and published in successive tranches: Release 1 (May 8), Release 2 (May 22), Release 3 (June 12) and Release 4 (July 10). By mid-June the portal had surpassed 1.7 billion accesses. The AARO assessment accompanying the third release (signed by its director Jon Kosloski, June 5) emphasizes 'plasma-like' orbs —including an orange 'mother orb' releasing smaller red orbs— and concedes that ~40% of cases remain unexplained. The fourth release (July 10, 2026) contributed 40 additional files (14 documents, 19 videos, 4 audio recordings, 3 images), including infrared video of a six-pointed object over the Yellow Sea captured by U.S. Indo-Pacific Command in 2025, testimony from a military aviator with 28 years of service about a rectangular object with 'flight characteristics unlike anything I had seen' (Eastern US, 2019), documentation of an intrusion over the Pantex nuclear plant (Texas, September 2015), and a transcript of a Los Alamos conference (1949) where physicists attempted to explain the 'green fireballs' over the nuclear laboratory. It is the first U.S. federal UAP-release infrastructure with a direct presidential mandate and a stable public URL. The content remains more procedural than probative —orb videos, historical audio and declassified documents, without the conclusive piece that would settle the material question— but it is no longer an empty channel.",
   "patterns": [
     "8q",
     "8n",
@@ -55,7 +56,12 @@
     "Más de 1.700 millones de accesos globales al portal acumulados a mediados de junio 2026 — cifra sin precedentes para release de archivos clasificados",
     "Department of War — comunicado oficial 'Releases Unidentified Anomalous Phenomena Files in Historic Transparency Effort'",
     "Cobertura periodística NBC News + Wikipedia entry 'United States UFO files' documentan el sistema y su contenido",
-    "Demanda formal del 9 jun 2026 [[capitol-press-conference-2026]] por release específico de los archivos que Grusch identificó por nombre — petición que PURSUE no atendió en su tanda inicial"
+    "Demanda formal del 9 jun 2026 [[capitol-press-conference-2026]] por release específico de los archivos que Grusch identificó por nombre — petición que PURSUE no atendió en su tanda inicial",
+    "Cuarto release (10 jul 2026): 40 archivos — 14 documentos, 19 videos, 4 audios, 3 imágenes",
+    "Video infrarrojo U.S. Indo-Pacific Command: objeto de seis puntas sobre el Mar Amarillo (2025)",
+    "Testimonio de aviador militar (28 años): objeto rectangular, Eastern US 2019, 'flight characteristics unlike anything I had seen'",
+    "Energy Department: intrusión Pantex nuclear facility (Texas, sep 2015) — objeto sin sonido ni propulsión visible",
+    "Transcripción histórica Los Alamos (1949): físicos intentan explicar 'green fireballs' sobre laboratorio nuclear"
   ],
   "evidence_en": [
     "Executive directive from President Trump activating the PURSUE system (May 2026)",
@@ -70,7 +76,12 @@
     "More than 1.7 billion global accesses to the portal accumulated by mid-June 2026 — an unprecedented figure for a classified-archive release",
     "Department of War — official communiqué 'Releases Unidentified Anomalous Phenomena Files in Historic Transparency Effort'",
     "NBC News + Wikipedia 'United States UFO files' coverage documents the system and its content",
-    "Formal demand of Jun 9, 2026 [[capitol-press-conference-2026]] for the specific release of the files Grusch identified by name — a petition PURSUE did not address in its initial batch"
+    "Formal demand of Jun 9, 2026 [[capitol-press-conference-2026]] for the specific release of the files Grusch identified by name — a petition PURSUE did not address in its initial batch",
+    "Fourth release (July 10, 2026): 40 files — 14 documents, 19 videos, 4 audio recordings, 3 images",
+    "Infrared video U.S. Indo-Pacific Command: six-pointed object over the Yellow Sea (2025)",
+    "Military aviator testimony (28 years): rectangular object, Eastern US 2019, 'flight characteristics unlike anything I had seen'",
+    "Energy Department: Pantex nuclear facility intrusion (Texas, Sep 2015) — object with no audible sound or visible propulsion",
+    "Historical Los Alamos transcript (1949): physicists attempt to explain 'green fireballs' over nuclear laboratory"
   ],
   "sources": [
     {
@@ -126,6 +137,18 @@
       "url": "https://www.morningstar.com/news/pr-newswire/20260528ny70439/push-for-uap-ufo-transparency-intensifies-as-members-of-congress-and-whistleblowers-call-for-release-of-groundbreaking-conclusive-files",
       "note": "Documenta la presión continuada para release específico post-PURSUE.",
       "note_en": "Documents the continued pressure for a specific post-PURSUE release."
+    },
+    {
+      "name": "CBS News — 'Pentagon releases new batch of UFO files: \"Unlike anything I had seen\"' (10 jul 2026)",
+      "url": "https://www.cbsnews.com/news/pentagon-ufo-files-release-trump/",
+      "note": "Cobertura del cuarto release con énfasis en el testimonio del aviador militar.",
+      "note_en": "Coverage of the fourth release with emphasis on the military aviator's testimony."
+    },
+    {
+      "name": "Fox News — 'New Trump UFO file dump includes military footage of mysterious star-shaped object' (10 jul 2026)",
+      "url": "https://www.foxnews.com/politics/new-trump-ufo-file-dump-includes-military-footage-mysterious-star-shaped-object",
+      "note": "Documenta el objeto de seis puntas sobre el Mar Amarillo capturado por U.S. Indo-Pacific Command.",
+      "note_en": "Documents the six-pointed object over the Yellow Sea captured by U.S. Indo-Pacific Command."
     }
   ]
 }
