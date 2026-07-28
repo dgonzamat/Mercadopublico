@@ -83,19 +83,19 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
               />
             </Lede>
             <div className="flex flex-wrap gap-3 pt-2">
-              <Cta href="/probabilidades" variant="primary" onDark>
+              <Cta href="/cases" variant="primary" onDark>
+                <T
+                  locale={locale}
+                  es={`Explorar los ${STATS.cases} casos`}
+                  en={`Explore the ${STATS.cases} cases`}
+                />
+                <span aria-hidden>→</span>
+              </Cta>
+              <Cta href="/probabilidades" variant="ghost" onDark>
                 <T
                   locale={locale}
                   es="Qué tan probable es cada explicación"
                   en="How likely each explanation is"
-                />
-                <span aria-hidden>→</span>
-              </Cta>
-              <Cta href="/resumen" variant="ghost" onDark>
-                <T
-                  locale={locale}
-                  es="¿Solo 10 minutos? Lee el resumen"
-                  en="Only 10 minutes? Read the summary"
                 />
                 <span aria-hidden>→</span>
               </Cta>
