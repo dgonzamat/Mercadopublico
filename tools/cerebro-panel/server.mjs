@@ -1014,9 +1014,16 @@ function promptLean(modo, contexto) {
     `  con texto es exactamente lo que no hay que hacer: si no se puede ver, no se puede aprobar.`,
     `- **ANTES y DESPUÉS lado a lado**, ambos dibujados. El «antes» es el estado actual del sitio, no una`,
     `  caricatura del problema.`,
-    `- **Todo cambio tiene una pantalla.** Un caso o un post se leen en su página: dibuja ese bloque con`,
-    `  el texto viejo y el nuevo. Un script de build cambia lo que la página muestra: dibuja eso. Solo si`,
-    `  de verdad no hay pantalla alguna (una utilidad interna), dilo en una línea y omítelo.`,
+    /* Aquí había una salida —«si no hay pantalla, omítelo»— y toda salida se
+       acaba usando: primero para un script, luego para un caso, y al final la
+       propuesta vuelve a ser un texto. Sin excepciones: si algo se propone para
+       este repo, alguien acaba viéndolo en una página. */
+    `- **Toda propuesta tiene una pantalla. SIN EXCEPCIONES.** Un caso o un post se leen en su página:`,
+    `  dibuja ese bloque con el contenido viejo y el nuevo. Un script de build cambia lo que una página`,
+    `  muestra: dibuja esa página. Un cambio de datos cambia una cifra en pantalla: dibuja dónde sale.`,
+    `  Si crees que tu propuesta no se ve en ninguna parte, **no la omitas: busca la pantalla**. Si tras`,
+    `  buscarla de verdad no existe, entonces lo que propones no lo va a notar nadie — y eso es un`,
+    `  descarte, no un mockup que te ahorras.`,
     `- **Sin JavaScript y sin recursos externos**: se sirve en un iframe \`sandbox\` que no ejecuta scripts.`,
     `  Usa la paleta del sitio: \`--bg:#f7f2e8; --panel:#ede6d4; --surface2:#dfd5be; --border:#c4b89d;`,
     `  --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a; --ok:#1e6b3a\`, tipografía \`ui-sans-serif\` para`,
