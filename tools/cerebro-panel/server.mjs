@@ -556,10 +556,22 @@ async function revisarCambios(archivos) {
     const añadidas = new Set(lineas
       .filter((l) => l.startsWith("+") && !l.startsWith("+++"))
       .map((l) => l.slice(1).trim()));
+    /* Igualdad exacta no basta. En los casos del corpus la prosa vive en UNA
+       línea de JSON larguísima: añadirle un párrafo al final hace que git borre
+       la línea entera y añada la versión ampliada, y el aviso saltaba como si se
+       hubiera derogado todo lo anterior —cuando el texto sigue ahí, íntegro—.
+       Si lo borrado SOBREVIVE dentro de algo añadido, es una ampliación. */
+    const añadidasTexto = [...añadidas].join("\n");
+    /* Se compara por PREFIJO, no por la línea entera: el texto nuevo se inserta
+       ANTES del cierre (`…texto viejo\n\ntexto nuevo",`), así que lo borrado no
+       es subcadena contigua de lo añadido aunque esté íntegro dentro. Un prefijo
+       largo (200 caracteres) es identificación de sobra y no genera colisiones. */
+    const sobrevive = (l) =>
+      añadidas.has(l) || añadidasTexto.includes(l.slice(0, Math.min(200, l.length)));
     const borradas = lineas
       .filter((l) => l.startsWith("-") && !l.startsWith("---"))
       .map((l) => l.slice(1).trim())
-      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l) && !añadidas.has(l));
+      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l) && !sobrevive(l));
     for (const l of borradas.slice(0, 3))
       avisos.push({
         tipo: "derogacion", archivo: f,
@@ -655,6 +667,17 @@ function recomendar(archivos, avisos) {
 
 /** Commitea SOLO `archivos` en una rama (nunca directo a main/master). */
 async function commitArchivos(archivos, message, etiqueta) {
+  /* Fuera lo GITIGNOREADO antes de tocar nada. Los mockups de revisión están en
+     `.gitignore` y `git add` sobre un archivo ignorado FALLA — y como el mockup
+     es obligatorio en todo modo que toque archivos, cada checkpoint acababa con
+     la rama creada, el add roto y el commit sin hacer. El panel se quedaba sin
+     ofrecer commit y el usuario, varado en una rama vacía. */
+  const commitables = [];
+  for (const f of archivos)
+    if ((await git(["check-ignore", "-q", "--", f])).code !== 0) commitables.push(f);
+  if (!commitables.length)
+    return { error: "los archivos de esta corrida están todos gitignoreados (p. ej. solo el mockup): no hay nada que commitear" };
+
   const rama = (await git(["rev-parse", "--abbrev-ref", "HEAD"])).out;
   let ramaUsada = rama;
   if (["main", "master"].includes(rama)) {
@@ -663,19 +686,32 @@ async function commitArchivos(archivos, message, etiqueta) {
     const r = await git(["checkout", "-b", ramaUsada]);
     if (r.code !== 0) return { error: `no se pudo crear la rama: ${r.err}` };
   }
-  const add = await git(["add", "--", ...archivos]);
-  if (add.code !== 0) return { error: `git add falló: ${add.err}` };
+  // A partir de aquí, cualquier fallo devuelve a la rama de partida: dejar al
+  // usuario en una rama recién creada y vacía es peor que no haber empezado.
+  const abortar = async (error) => {
+    if (ramaUsada !== rama) {
+      await git(["checkout", rama]);
+      await git(["branch", "-D", ramaUsada]);
+    }
+    return { error };
+  };
+  const add = await git(["add", "--", ...commitables]);
+  if (add.code !== 0) return abortar(`git add falló: ${add.err}`);
   // Para un solo archivo el path ES la descripción; «1 archivo(s)» no lo es.
   // (Con varios, la UI exige mensaje antes de llegar aquí.)
   const msg = (message && String(message).trim())
-    || (archivos.length === 1 ? `cerebro: ${archivos[0]}` : `cerebro: ${archivos.length} archivo(s)`);
+    || (commitables.length === 1 ? `cerebro: ${commitables[0]}` : `cerebro: ${commitables.length} archivo(s)`);
   const commit = await git(["commit", "-m", msg]);
-  if (commit.code !== 0) return { error: `git commit falló: ${commit.err || commit.out}` };
+  if (commit.code !== 0) return abortar(`git commit falló: ${commit.err || commit.out}`);
   const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
   // Un solo punto de registro: da igual si vino del checkpoint o de la tarjeta
   // Repo, todo commit del panel cuenta como valor entregado.
-  registrarAterrizaje({ tipo: "commit", hash, rama: ramaUsada, archivos: archivos.length });
-  return { ok: true, rama: ramaUsada, hash, archivos, salida: commit.out };
+  registrarAterrizaje({ tipo: "commit", hash, rama: ramaUsada, archivos: commitables.length });
+  const ignorados = archivos.length - commitables.length;
+  return {
+    ok: true, rama: ramaUsada, hash, archivos: commitables,
+    salida: commit.out + (ignorados ? `\n(${ignorados} archivo(s) gitignoreado(s) fuera del commit: el mockup de revisión no se versiona)` : ""),
+  };
 }
 
 /** Revierte (versionados) o borra (nuevos) SOLO `archivos`. */
@@ -828,10 +864,16 @@ function promptLean(modo, contexto) {
        panel sabe renderizar HTML en la vista previa del checkpoint, así que la
        corrida deja lo que hay que mirar. Aplica a TODO cambio, no solo a UX: un
        refactor también tiene un antes y un después que enseñar. */
-    `## Mockup del cambio (obligatorio si tocas archivos)`,
-    `Si esta corrida modifica algo, deja SIEMPRE un mockup autocontenible en`,
-    `\`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el checkpoint para que el`,
-    `cambio se apruebe VIÉNDOLO, no reconstruyéndolo de un diff.`,
+    /* Obligatorio solo si el cambio se VE. Lo hice universal y `frescura` acabó
+       maquetando un antes/después de dos párrafos de prosa: puro trámite. Un
+       entregable que a veces no aporta nada enseña a producirlo por cumplir, y
+       entonces deja de significar algo cuando sí importa. */
+    `## Mockup del cambio (obligatorio si el cambio SE VE)`,
+    `Si esta corrida toca la interfaz —componentes, rutas, estilos, marcado— deja un mockup`,
+    `autocontenible en \`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el`,
+    `checkpoint para que el cambio se apruebe VIÉNDOLO, no reconstruyéndolo de un diff.`,
+    `Si el cambio NO es visual (datos de un caso, un script, una utilidad), **no lo hagas**: ahí el`,
+    `diff ya lo dice todo y una maqueta de prosa es teatro. Dilo en el cierre en una línea.`,
     `- **Sin JavaScript y sin recursos externos**: se sirve en un iframe \`sandbox\` que no ejecuta scripts.`,
     `- Muestra **ANTES y DESPUÉS** lado a lado, con la paleta del sitio`,
     `  (\`--bg:#f7f2e8; --panel:#ede6d4; --border:#c4b89d; --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a; --ok:#1e6b3a\`).`,
