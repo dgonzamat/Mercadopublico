@@ -846,7 +846,18 @@ const CADENAS = {
       + "«llego a /cases desde una búsqueda, filtro por país y no hay forma de volver al mapa». Sin ese "
       + "recorrido nombrado, el cambio es decoración.\n"
       + "**El mockup enseña la SECCIÓN o la PÁGINA**, no el widget aislado: una mejora de recorrido solo "
-      + "se juzga viendo el contexto del que viene y al que lleva.",
+      + "se juzga viendo el contexto del que viene y al que lleva.\n\n"
+      /* Dos fases. Implementar antes de que nadie apruebe el diseño gasta el
+         grueso del presupuesto en la mitad que puede sobrar: hoy una corrida
+         escribió 30 líneas para un estado que no ocurre en ninguno de los 330
+         casos. El diagnóstico costó una fracción; la implementación, el resto. */
+      + "## ESTA CORRIDA NO IMPLEMENTA (obligatorio)\n"
+      + "Este modo va en dos fases y tú estás en la PRIMERA: **propones, no ejecutas**. Entrega el "
+      + "diagnóstico, el recorrido que arregla, el **alcance medido** y el **mockup** — y PARA. No "
+      + "modifiques ni un archivo de `web/`. Cuesta una fracción de implementar, y si la propuesta se "
+      + "rechaza no se ha tirado nada.\n"
+      + "Cierra diciendo, en una línea, **qué archivos tocaría** la implementación. Si el usuario aprueba "
+      + "el mockup, el panel disparará la segunda fase con esa señal.",
   },
   "mejoras-tec": {
     obj: "mejorar calidad de código: reuso, simplificación, eficiencia",
@@ -1014,6 +1025,16 @@ function promptLean(modo, contexto) {
     `  --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a; --ok:#1e6b3a\`, tipografía \`ui-sans-serif\` para`,
     `  prosa y \`ui-monospace\` para datos.`,
     `- Es parte del entregable, no un extra: sin él solo hay texto que aprobar.`,
+    /* Un mockup dibuja el estado que quiere enseñar, y eso lo vuelve persuasivo
+       aunque ese estado no ocurra. Pasó: una corrida arregló el callejón sin
+       salida de un caso «sin expandir» —diagnóstico correcto, mockup impecable—
+       y ese bloque no se renderiza en NINGUNO de los 330 casos. La cifra habría
+       matado la propuesta en diez segundos; el dibujo, solo, la hizo parecer
+       urgente. */
+    `- **Declara el ALCANCE, medido.** Junto al mockup, una línea con cuántas páginas o casos reales`,
+    `  están en el estado que dibujas, obtenida con un comando (\`node -e\`, \`grep -c\`) que cites — no a`,
+    `  ojo. «Afecta a 27 de 330 casos» es una propuesta; «afecta a 0 de 330» es un descarte que te`,
+    `  ahorras implementar. Un mockup sin alcance medido dibuja un problema que quizá no existe.`,
     ...(spec.entregable ? [spec.entregable] : []),
     ``,
     // El ámbito tiene que ser EXPLÍCITO o el modo se vuelve circular: skills como

@@ -971,7 +971,24 @@ async function cargarCheckpoint(id) {
     $("#chk-archivos").innerHTML = pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision)
       + d.archivos.map((a) => filaArchivo(a, false)).join("");
     engancharVistaPrevia("#chk-archivos");
-    if (d.commit) {
+    /* SEGUNDA FASE. Si la corrida solo dejó el mockup, es una propuesta sin
+       implementar: aprobarla no es «commitear» —no hay nada que commitear—, es
+       mandar a construirla. El botón cierra el ciclo sin que tengas que copiar
+       la señal a mano. */
+    const soloMockup = d.archivos.length && d.archivos.every((a) => a.ignorado);
+    if (soloMockup && !d.commit) {
+      $("#chk-estado").innerHTML = `propuesta sin implementar — `
+        + `<button class="mini primary" id="btn-fase2">Aprobar y construir</button>`;
+      $("#btn-fase2").onclick = () => {
+        const mk = d.archivos.find((a) => /mockups\//.test(a.archivo))?.archivo || "";
+        gatillar("mejoras-ux",
+          `FASE 2 — implementa la propuesta ya aprobada de \`${mk}\`. El diseño está decidido: `
+          + `reprodúcelo en el código tal como lo dibuja el mockup, sin volver a diagnosticar ni `
+          + `proponer alternativas. Ábrelo y síguelo.`);
+      };
+      chkFin();
+    }
+    else if (d.commit) {
       chkFin();
       // El commit es la MITAD del aterrizaje: si aún no se mergeó, el paso que
       // falta tiene que seguir a la vista (antes se perdía al recargar).
