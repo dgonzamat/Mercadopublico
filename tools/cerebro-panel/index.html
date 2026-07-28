@@ -272,6 +272,11 @@
       <button class="mini" id="btn-repo-refresh">Refrescar</button>
     </div>
     <div id="repo"><div class="empty">Pulsa «Refrescar» para ver los cambios del working tree.</div></div>
+    <!-- FUERA de #repo a propósito: `cargarRepo()` reescribe #repo entero, y un
+         aterrizaje exitoso deja el árbol limpio → borraba su propio resultado
+         (hash, push, salida de git) 600 ms después de mostrarlo. El rastro de
+         lo que se ejecutó tiene que sobrevivir al re-render. -->
+    <div id="repo-log" hidden></div>
   </section>
 
   <!-- ══ SALIDA CRUDA ══ -->
@@ -649,6 +654,7 @@ $("#btn-commit").onclick = async () => {
     // Enciende el nodo COMMIT del aterrizaje y ofrece mergear.
     if (job) { job.commit = { rama: d.rama, hash: d.hash }; pintarFlujo(); }
     ofrecerMerge(d.rama, d.hash, jid);
+    rastroAterrizaje(`✓ commit ${d.hash} en ${d.rama} · corrida ${jid}`, d.salida || "");
   } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear en rama"; }
 };
 
@@ -798,7 +804,21 @@ async function repoCommit() {
     $("#repo-estado").innerHTML = `✓ commiteado · <b>${esc(d.rama)}</b> @ ${esc(d.hash)} — `
       + `<button class="mini primary" id="btn-merge">Mergear a main + push</button>`;
     $("#btn-merge").onclick = () => mergear(d.rama);
+    rastroAterrizaje(`✓ commit ${d.hash} en ${d.rama} · ${files.length} archivo(s)`, d.salida || "");
   } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; }
+}
+
+/* Rastro del aterrizaje. Lo que se ejecuta contra el repo deja constancia con la
+   SALIDA REAL de git, y sobrevive a los re-render: un panel que ejecuta un push
+   y no muestra qué pasó obliga a ir a la terminal a comprobarlo, que es
+   exactamente lo que el panel viene a evitar. */
+function rastroAterrizaje(titulo, salida) {
+  const cont = $("#repo-log"); if (!cont) return;
+  cont.hidden = false;
+  const bloque = document.createElement("div");
+  bloque.innerHTML = `<div class="tasa" style="margin-top:10px">${esc(titulo)}</div>`
+    + (salida ? `<pre>${esc(salida)}</pre>` : "");
+  cont.prepend(bloque);
 }
 
 async function mergear(rama, jobId, btnId) {
@@ -810,8 +830,14 @@ async function mergear(rama, jobId, btnId) {
       body: JSON.stringify({ rama, id: jobId }),
     });
     const d = await r.json();
-    if (!r.ok) { alert(d.error); if (b) { b.disabled = false; b.textContent = "Mergear a main + push"; } return; }
+    if (!r.ok) {
+      // El fallo también es rastro: si `main` avanzó en el remoto, saberlo importa
+      // más que el alert que se cierra y no deja nada.
+      rastroAterrizaje(`⚠ merge de ${rama} a main FALLÓ`, d.error || "");
+      alert(d.error); if (b) { b.disabled = false; b.textContent = "Mergear a main + push"; } return;
+    }
     $(jobId ? "#chk-estado" : "#repo-estado").textContent = `✓ mergeado a main @ ${d.hash} + pusheado 🚀`;
+    rastroAterrizaje(`✓ ${rama} → main @ ${d.hash} · pusheado a origin`, d.salida || "");
     // Enciende el nodo MERGE del aterrizaje.
     if (job && job.id === jobId) { job.mergeado = true; pintarFlujo(); }
     if (!jobId) setTimeout(cargarRepo, 600);

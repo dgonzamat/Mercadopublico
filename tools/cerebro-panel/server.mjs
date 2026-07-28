@@ -34,6 +34,7 @@
 import http from "http";
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import {
@@ -48,15 +49,21 @@ const here = path.dirname(fileURLToPath(import.meta.url));
    relee en cada request— ya muestra lo nuevo. La UI se actualiza y el motor no,
    así que una corrida parece probar un cambio que nunca cargó. Pasó de verdad
    (jul 2026): una corrida de `mejoras-tec` "ignoró" una regla de ámbito recién
-   escrita, y la regla simplemente no estaba en memoria. Sellamos el mtime al
-   arrancar y lo comparamos en `/api/state` para poder decirlo en la cabecera. */
-const selloArranque = (() => {
-  try { return fs.statSync(fileURLToPath(import.meta.url)).mtimeMs; } catch { return 0; }
-})();
-const servidorObsoleto = () => {
-  try { return fs.statSync(fileURLToPath(import.meta.url)).mtimeMs > selloArranque; }
-  catch { return false; }
+   escrita, y la regla simplemente no estaba en memoria. Sellamos una HUELLA del
+   contenido al arrancar y la comparamos en `/api/state`.
+
+   La huella es de contenido, no `mtime`: el propio panel hace `checkout` y
+   `merge` sobre el repo, y eso reescribe archivos con contenido idéntico. Con
+   `mtime` el primer merge disparaba la alarma sin que el código cambiara — un
+   aviso que salta cuando no debe se aprende a ignorar, y entonces no avisa
+   cuando importa. */
+const archivoPropio = fileURLToPath(import.meta.url);
+const huellaPropia = () => {
+  try { return crypto.createHash("sha1").update(fs.readFileSync(archivoPropio)).digest("hex"); }
+  catch { return ""; }
 };
+const selloArranque = huellaPropia();
+const servidorObsoleto = () => huellaPropia() !== selloArranque;
 
 const argv = process.argv.slice(2);
 const argOf = (flag, def) => {
