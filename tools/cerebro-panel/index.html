@@ -780,6 +780,28 @@ async function gatillar(modo, contexto = "") {
    y esto es una página con permisos sobre tu repo. Se mira, no se ejecuta. */
 const esVisual = (f) => /\.(html?|svg)$/i.test(f);
 
+/* Lo que el panel comprueba por su cuenta sobre el diff, antes de que apruebes.
+   Va ARRIBA de la lista de archivos a propósito: un aviso que aparece después
+   del botón llega tarde. No bloquea — el panel no sabe si la decisión es
+   correcta, sabe que merece una mirada. */
+function pintarRevision(avisos) {
+  if (!avisos?.length) return "";
+  const icono = { derogacion: "⚖", superficie: "❐" };
+  const titulo = {
+    derogacion: "Deroga una explicación del repo",
+    superficie: "Replica algo que ya existe",
+  };
+  return `<div class="warnbox" style="margin:0 0 12px">
+    <strong>Antes de aprobar — ${avisos.length} señal(es) que el panel encontró en el diff:</strong>
+    ${avisos.map((a) => `
+      <div style="margin-top:9px;padding-left:11px;border-left:3px solid var(--warn)">
+        <div class="tasa"><b>${esc(icono[a.tipo] || "•")} ${esc(titulo[a.tipo] || a.tipo)}</b> · ${esc(a.archivo)}</div>
+        <div style="font-size:12.5px;margin-top:3px">${esc(a.que)}</div>
+        <div class="tasa" style="margin-top:3px;opacity:.85">${esc(a.texto)}</div>
+      </div>`).join("")}
+  </div>`;
+}
+
 function filaArchivo(a, conCheckbox = false) {
   const tag = `<span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>`;
   const chk = conCheckbox ? `<input type="checkbox" data-f="${esc(a.archivo)}" checked>` : "";
@@ -830,7 +852,7 @@ async function cargarCheckpoint(id) {
     const d = await (await fetch("/api/diff?id=" + id)).json();
     conexion(true);
     if (!d.cambios) return;
-    $("#chk-archivos").innerHTML = d.archivos.map(filaArchivo).join("");
+    $("#chk-archivos").innerHTML = pintarRevision(d.revision) + d.archivos.map(filaArchivo).join("");
     engancharVistaPrevia("#chk-archivos");
     if (d.commit) {
       chkFin();
@@ -1026,7 +1048,7 @@ async function cargarRepo() {
       $("#repo").innerHTML = `<div class="empty">Working tree limpio — nada que commitear.</div>`;
       return;
     }
-    $("#repo").innerHTML = `
+    $("#repo").innerHTML = pintarRevision(d.revision) + `
       <div class="chk-list" id="repo-list">
         ${d.archivos.map((a) => filaArchivo(a, true)).join("")}
       </div>

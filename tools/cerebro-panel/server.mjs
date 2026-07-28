@@ -483,6 +483,64 @@ function sanear(lista) {
 }
 const archivosDelJob = (job) => sanear([...(job.archivos ?? [])]);
 
+/**
+ * REVISIÓN MECÁNICA DEL CAMBIO. Una regla en el prompt es blanda: el modelo puede
+ * razonar en contra y sonar convincente. Esto lo comprueba el panel sobre el diff
+ * real, así que no se puede argumentar.
+ *
+ * Nace de un fallo concreto: una corrida sustituyó unas barras por un donut que
+ * YA se renderizaba en otras tres vistas, y de paso borró la frase del propio
+ * archivo que explicaba por qué esa página era distinta. El diff era impecable
+ * línea por línea — el error estaba en la premisa. Dos señales lo habrían
+ * delatado antes de aprobar, y las dos son detectables sin entender el cambio:
+ *
+ *   · DEROGACIÓN — el cambio borra texto que explicaba una decisión. Si el repo
+ *     dice por qué algo es así, quitarlo sin citarlo es derogar sin discutir.
+ *   · SUPERFICIE — el cambio añade un componente que ya vive en otras vistas.
+ *     No es malo por sí solo; es que casi nunca es la mejora que parece.
+ *
+ * Son AVISOS, no bloqueos: el panel no sabe si la decisión es correcta, sabe que
+ * merece una mirada antes del OK.
+ */
+const MARCAS_INTENCION = /\b(a propósito|deliberad|por eso|la razón|no es un|en vez de|vive en|OJO|IMPORTANTE|NUNCA|SIEMPRE|porque el|pasó de verdad|costó un)\b/i;
+
+async function revisarCambios(archivos) {
+  const avisos = [];
+  for (const f of archivos) {
+    const st = (await git(["status", "--porcelain", "--", f])).out;
+    if (st.startsWith("??")) continue;             // alta: no deroga nada
+    const d = (await git(["diff", "-U0", "--", f])).out;
+    if (!d) continue;
+
+    // ── derogación: líneas BORRADAS que explicaban algo ──
+    const borradas = d.split("\n")
+      .filter((l) => l.startsWith("-") && !l.startsWith("---"))
+      .map((l) => l.slice(1).trim())
+      .filter((l) => l.length > 40 && MARCAS_INTENCION.test(l));
+    for (const l of borradas.slice(0, 3))
+      avisos.push({
+        tipo: "derogacion", archivo: f,
+        texto: l.length > 240 ? l.slice(0, 240) + "…" : l,
+        que: "Este cambio BORRA texto que explicaba una decisión. Si la derogas, que sea a sabiendas: "
+           + "lee qué decía y decide si tu razón es mejor.",
+      });
+
+    // ── superficie: componentes añadidos que ya se renderizan en otras vistas ──
+    const nuevos = [...d.matchAll(/^\+.*from\s+["']@\/components\/([\w-]+)["']/gm)].map((m) => m[1]);
+    for (const comp of [...new Set(nuevos)]) {
+      const r = await git(["grep", "-l", "-e", `components/${comp}`, "--", "web/*.tsx", "web/**/*.tsx"]);
+      const donde = (r.out || "").split("\n").filter((x) => x && !x.endsWith(`/${comp}.tsx`) && x !== f);
+      if (donde.length >= 2)
+        avisos.push({
+          tipo: "superficie", archivo: f, texto: `${comp} → ${donde.join(", ")}`,
+          que: `«${comp}» ya se usa en ${donde.length} sitio(s). Replicarlo aquí uniforma la interfaz, `
+             + `pero comprueba primero si esta vista existía para enseñar algo que las otras no enseñan.`,
+        });
+    }
+  }
+  return avisos;
+}
+
 /** Commitea SOLO `archivos` en una rama (nunca directo a main/master). */
 async function commitArchivos(archivos, message, etiqueta) {
   const rama = (await git(["rev-parse", "--abbrev-ref", "HEAD"])).out;
@@ -594,13 +652,9 @@ const CADENAS = {
     // mirándolo. El panel sabe renderizar un .html en la vista previa del
     // checkpoint, así que la corrida tiene que dejarle algo que renderizar —
     // si no, el usuario firma a ciegas y la revisión es un trámite.
-    entregable: [
-      "Además del cambio, deja un **mockup autocontenible** en",
-      "`tools/cerebro-panel/mockups/<slug>.html` que muestre ANTES y DESPUÉS de la fricción, con la",
-      "paleta del sitio. Sin JavaScript y sin recursos externos: el panel lo renderiza en un iframe",
-      "en modo `sandbox` (no ejecuta scripts) para que puedas aprobar el cambio VIÉNDOLO.",
-      "El mockup es parte del entregable, no un extra: sin él no hay nada que aprobar más que texto.",
-    ].join(" "),
+    entregable: "En este modo el mockup es la parte que más importa: reproduce la pantalla real "
+      + "(mismo marcado y espaciados que el componente), no un esquema — una fricción de UI se aprueba "
+      + "o se rechaza por cómo se ve, y un diagrama aproximado esconde justo lo que hay que juzgar.",
   },
   "mejoras-tec": {
     obj: "mejorar calidad de código: reuso, simplificación, eficiencia",
@@ -617,24 +671,60 @@ const CADENAS = {
   },
 };
 
+/** Skills que SÍ existen como comando del repo, leídos del disco (no inventados). */
+function skillsDelRepo() {
+  try {
+    return fs.readdirSync(path.join(repoRoot, ".claude", "commands"))
+      .filter((f) => f.endsWith(".md") && f !== "cerebro.md")
+      .map((f) => f.replace(/\.md$/, ""))
+      .sort();
+  } catch { return []; }
+}
+
 /** Prompt lean genérico (misma lógica que caso-nuevo) para los demás modos. */
 function promptLean(modo, contexto) {
   const spec = CADENAS[modo] ?? CADENAS[""];
   const nombre = modo || "diagnóstico";
   const p = [
     `Ejecuta el modo \`${nombre}\` del cerebro UAP Codex, en headless y EFICIENTE (mínimo procesamiento).`,
-    `SlashCommand está deshabilitada. Para CADA skill de la cadena es OBLIGATORIO abrir su archivo`,
-    `\`.claude/commands/<skill>.md\` con la tool **Read** ANTES de ejecutarlo —aunque ya sepas qué hace—;`,
-    `sin ese Read el panel no puede reflejar el flujo (el nodo del skill no se enciende). Luego aplícalo`,
-    `INLINE con Bash/Read/Write/Edit/WebSearch. Si un skill necesita un prerequisito headless inexistente`,
-    `(webapp-testing/Playwright sin navegador, app sin node_modules…), sáltalo y decláralo — no lo simules.`,
+    `SlashCommand está deshabilitada, así que los skills se ejecutan INLINE con Bash/Read/Write/Edit/WebSearch.`,
+    ``,
+    // Antes esto decía «para CADA skill lee su .md», y para `simplify` eso era
+    // pedir un archivo que no existe: es un skill de librería, no del repo. La
+    // corrida lo buscaba, no lo hallaba e improvisaba — y el nodo nunca se
+    // encendía. La lista sale del disco, así que el prompt no puede mentir
+    // sobre qué existe.
+    `**Skills DEL REPO** (tienen \`.md\`, es OBLIGATORIO leerlo con Read antes de ejecutarlos —aunque ya`,
+    `sepas qué hacen—; sin ese Read el panel no puede reflejar el flujo y el nodo queda apagado):`,
+    `  ${skillsDelRepo().map((s) => "/" + s).join(", ") || "(ninguno)"}.`,
+    `**Skills DE LIBRERÍA** (simplify, security-review, review, webapp-testing…): NO tienen \`.md\` en este`,
+    `repo. No los busques ni los des por rotos: aplica su disciplina directamente y dilo en el cierre.`,
+    ``,
+    `Si un skill necesita un prerequisito headless inexistente (Playwright sin navegador, app sin`,
+    `node_modules…), sáltalo y decláralo — no lo simules.`,
     ``,
     `## Objetivo`,
     spec.obj + ".",
     `## Cadena (lean)`,
     spec.cadena + ".",
     ``,
-    ...(spec.entregable ? [`## Entregable visual (obligatorio)`, spec.entregable, ``] : []),
+    /* MOCKUP OBLIGATORIO. Un cambio que solo se puede revisar leyendo un diff
+       obliga a quien aprueba a reconstruir mentalmente el antes y el después. El
+       panel sabe renderizar HTML en la vista previa del checkpoint, así que la
+       corrida deja lo que hay que mirar. Aplica a TODO cambio, no solo a UX: un
+       refactor también tiene un antes y un después que enseñar. */
+    `## Mockup del cambio (obligatorio si tocas archivos)`,
+    `Si esta corrida modifica algo, deja SIEMPRE un mockup autocontenible en`,
+    `\`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el checkpoint para que el`,
+    `cambio se apruebe VIÉNDOLO, no reconstruyéndolo de un diff.`,
+    `- **Sin JavaScript y sin recursos externos**: se sirve en un iframe \`sandbox\` que no ejecuta scripts.`,
+    `- Muestra **ANTES y DESPUÉS** lado a lado, con la paleta del sitio`,
+    `  (\`--bg:#f7f2e8; --panel:#ede6d4; --border:#c4b89d; --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a; --ok:#1e6b3a\`).`,
+    `- Si el cambio es de **UI**, el mockup es la interfaz renderizada. Si es de **código**, es el fragmento`,
+    `  antes/después con una línea que explique qué mejora y por qué — no el diff entero.`,
+    `- Es parte del entregable, no un extra: sin él solo hay texto que aprobar.`,
+    ...(spec.entregable ? [spec.entregable] : []),
+    ``,
     // El ámbito tiene que ser EXPLÍCITO o el modo se vuelve circular: skills como
     // `simplify` se definen sobre "el código cambiado", y en headless lo único
     // cambiado suele ser trabajo en curso de otra sesión — el cerebro termina
@@ -650,6 +740,21 @@ function promptLean(modo, contexto) {
       `  objetivo es el ámbito declarado.`,
       `- \`tools/\` (panel y utilidades del repo) queda FUERA salvo que la señal lo nombre.`,
       `- Si la señal trae una ruta o archivo, ESE es el ámbito y manda sobre lo anterior.`,
+      ``,
+      /* Homogeneizar es el instinto por defecto de cualquier pase de reuso, y casi
+         siempre acierta. Pero una corrida de `mejoras-ux` sustituyó unas barras
+         por un donut que YA existía en otras tres vistas, borrando de paso la
+         frase del propio archivo que explicaba por qué esa página era distinta.
+         El dato estaba delante: lo trató como deuda en vez de como decisión. */
+      `## Lo que el código explica, MANDA`,
+      `- Antes de uniformar algo, lee el comentario o la prosa que lo rodea. Si el repo **explica por qué**`,
+      `  algo es distinto (otra métrica, otra vista, otra convención), eso es una DECISIÓN tomada, no deuda`,
+      `  técnica pendiente. Homogeneizarla es una regresión, por muy limpio que quede.`,
+      `- Puedes proponer cambiarla, pero entonces cita la explicación que derogas y da una razón mejor.`,
+      `  Borrarla sin nombrarla está prohibido.`,
+      `- Antes de añadir un componente o patrón, comprueba **dónde vive ya** (\`grep -rl\`). Si ya se`,
+      `  renderiza en otras vistas, replicarlo otra vez casi nunca es la mejora: pregúntate si esa vista`,
+      `  existía justamente para enseñar algo que las demás no enseñan.`,
       ``,
       // Un ámbito ancho sin presupuesto se censa en vez de trabajarse: la primera
       // corrida con `web/` como ámbito gastó 45 acciones contando páginas y
@@ -931,7 +1036,12 @@ async function manejar(req, res) {
   if (url.pathname === "/api/job") {
     const job = jobs.get(url.searchParams.get("id"));
     if (!job) return json(res, 404, { error: "job no encontrado" });
-    return json(res, 200, publico(job));
+    // El prompt no viaja en cada tick (es grande y constante), pero poder LEER
+    // el que se disparó de verdad es la única forma de comprobar que una regla
+    // nueva llegó al modelo — sin esto se depura adivinando.
+    const p = url.searchParams.get("prompt")
+      ? { prompt: job.prompt } : null;
+    return json(res, 200, { ...publico(job), ...p });
   }
 
   if (url.pathname === "/api/jobs")
@@ -966,6 +1076,8 @@ async function manejar(req, res) {
       rama, cambios: archivos.length, archivos: estados, stat,
       commit: job.commit ?? null, descartado: !!job.descartado,
       mergeado: !!job.mergeado,
+      // Lo que el panel comprueba por su cuenta antes de que apruebes.
+      revision: await revisarCambios(archivos),
     });
   }
 
@@ -1047,7 +1159,7 @@ async function manejar(req, res) {
       estado: l.slice(0, 2).trim(),
       archivo: l.slice(3).trim().replace(/^"|"$/g, ""),
     }));
-    return json(res, 200, { rama, archivos });
+    return json(res, 200, { rama, archivos, revision: await revisarCambios(archivos.map((a) => a.archivo)) });
   }
 
   if (url.pathname === "/api/repo-commit" && req.method === "POST") {

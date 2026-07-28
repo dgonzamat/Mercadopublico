@@ -14,3 +14,8 @@ next-env.d.ts
 tools/cerebro-panel/.claude-oauth-token
 tools/cerebro-panel/panel.log
 tools/cerebro-panel/jobs.json
+# Mockups de revisión: artefactos efímeros para aprobar un cambio en el
+# checkpoint, no historia del repo. Versionar el de una propuesta RECHAZADA
+# dejaría en el árbol un «después» que nadie aprobó — y una corrida futura
+# podría tomarlo por trabajo pendiente.
+tools/cerebro-panel/mockups/
