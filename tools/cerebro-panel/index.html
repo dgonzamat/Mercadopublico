@@ -101,8 +101,12 @@
   .ticker ol{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;
     gap:5px;max-height:170px;overflow:auto}
   .ticker li{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);
-    display:flex;gap:9px;animation:entra .3s ease}
-  .ticker li b{color:var(--text);font-weight:600;flex:none;min-width:96px}
+    display:flex;flex-direction:column;gap:2px;animation:entra .3s ease;
+    padding-bottom:4px;border-bottom:1px dashed var(--border)}
+  .ticker .ev-in{display:flex;gap:9px}
+  .ticker li b{color:var(--text);font-weight:600;flex:none;min-width:104px}
+  .ticker .ev-out{color:var(--ok);padding-left:14px;word-break:break-word;line-height:1.4}
+  .ticker .ev-wait{color:var(--muted);opacity:.6}
   @keyframes entra{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 
   /* ══════════ resto ══════════ */
@@ -173,6 +177,8 @@
     <button id="btn-sondear" class="primary">Sondear salud</button>
   </div>
   <div class="offline" id="offline" role="alert" hidden>⚠ Sin conexión con el servidor del panel · reintentando…</div>
+  <div class="offline" id="obsoleto" role="alert" hidden>⚠ <b>server.mjs</b> cambió después de arrancar el panel · este proceso
+    sigue disparando los <b>prompts viejos</b> (Node no recarga módulos) · reinícialo antes de sacar conclusiones</div>
 </header>
 
 <div class="wrap">
@@ -181,7 +187,7 @@
   <section>
     <div class="shead">
       <h2 class="eyebrow">Orquestación</h2>
-      <p>Los nodos se encienden conforme la corrida avanza — gate y cadena (skills del modo). En modo lean el cierre/rastro (ceremonia) se omiten a propósito, así que quedan apagados.</p>
+      <p>Los nodos se encienden conforme la corrida avanza: <b>gate</b> (calibrate + sondas) → <b>cadena</b> (skills del modo) → <b>aterrizaje</b> (commit → merge, si hay cambios que subir). El detalle real de cada acción va en el «Flujo en vivo» de abajo.</p>
     </div>
 
     <div class="lienzo" id="lienzo">
@@ -281,6 +287,17 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+/* Estado porcelain de git → etiqueta legible. UNA sola versión para las dos
+   listas (checkpoint de la corrida y tarjeta Repo): existían dos copias y
+   habían divergido — la del checkpoint no conocía `D` y pintaba la letra
+   cruda, así que un archivo borrado por la corrida se leía como "D". */
+const etiquetaEstado = (e) =>
+  e === "??" ? "nuevo"
+  : e === "sin cambios" ? "sin cambios"
+  : e.includes("D") ? "borrado"
+  : e.includes("M") ? "modif."
+  : e || "?";
+
 let estado = null, modoSel = null, job = null, poll = null, cimientoRoto = false, reconn = null, chkJob = null;
 
 /* Banner de conexión. El server del panel es un proceso local que puede caerse;
@@ -301,25 +318,18 @@ function actualizarGatillar() {
    declara para TODO modo. La banda del medio se deriva de la cadena del modo
    elegido, así que el diagrama no puede prometer un paso que el skill no tiene.
    Cada nodo trae su MATCHER: la regex con la que un `tool_use` lo enciende. */
+/* Diagrama LEAN-NATIVO: solo lo que el lean hace de verdad. Se quitaron DRIFT
+   (curar-memoria), y las bandas CIERRE/RASTRO (la ceremonia que el lean omite y
+   que dejaba media pantalla muerta). El aterrizaje commit→merge NO son tool_use
+   del agente: son acciones del panel, así que encienden desde el estado del job
+   (job.commit / job.mergeado), como antes hacía RASTRO con el log. */
 const GATE = [
   { id: "calibrate", t: "CALIBRATE", s: "out/ + cases.json", re: /rm -rf|build-cases/i },
   { id: "cimiento", t: "CIMIENTO", s: "err = 0", re: /validate-schema|audit-consistency|audit-design|audit-skills/i },
-  { id: "drift", t: "DRIFT", s: "memoria", re: /curar-memoria|claude\.md/i },
 ];
-const CIERRE = [
-  { id: "/blindar", t: "/blindar", s: "clase enforzable" },
-  { id: "/learn", t: "/learn", s: "lecciones y descartes" },
-  { id: "/retro", t: "/retro", s: "cosecha" },
-];
-/* RASTRO no se enciende NUNCA por herramientas: solo por el hecho comprobado
-   de que apareció una entrada nueva en el log con esos campos. Cuando sí
-   matcheaba eventos, `log` se encendía porque la corrida había ejecutado
-   `git log` — el diagrama afirmaba un cierre que no había ocurrido. Un panel
-   que miente sobre el estado es peor que no tenerlo. */
-const RASTRO = [
-  { id: "log", t: "LOG", s: "cerebro-runs.jsonl", sinEventos: true },
-  { id: "automejora", t: "AUTOMEJORA", s: "mejora al modo", sinEventos: true },
-  { id: "skill_scan", t: "SKILL SCAN", s: "skill sin usar", sinEventos: true },
+const ATERRIZAJE = [
+  { id: "commit", t: "COMMIT", s: "en rama", sinEventos: true },
+  { id: "merge", t: "MERGE", s: "a main + push", sinEventos: true },
 ];
 
 /** Tokens de skill dentro de la cadena declarada en la tabla de `cerebro.md`. */
@@ -352,10 +362,9 @@ function coincide(n, ev) {
 
 function nodosDelModo(modo) {
   return [
-    { banda: "Gate común", nodos: GATE, clase: "gate" },
+    { banda: "Gate", nodos: GATE, clase: "gate" },
     { banda: `Cadena · ${modo.arg || "diagnóstico"}`, nodos: cadenaDeNodos(modo.cadena) },
-    { banda: "Cierre obligatorio", nodos: CIERRE },
-    { banda: "Rastro", nodos: RASTRO },
+    { banda: "Aterrizaje", nodos: ATERRIZAJE },
   ];
 }
 
@@ -373,10 +382,10 @@ function estadosDeNodos(bandas) {
       if (coincide(n, ev)) { tocados.add(n.id); max = Math.max(max, idx.get(n.id)); }
     }
   }
-  // La banda RASTRO no se enciende por herramientas sino por el hecho
-  // comprobado: ¿apareció la entrada en el log, con esos campos?
-  if (job?.rastro) for (const k of ["log", "automejora", "skill_scan"])
-    if (job.rastro[k]) { tocados.add(k); max = Math.max(max, idx.get(k)); }
+  // Aterrizaje: commit y merge son acciones del PANEL (no tool_use del agente),
+  // así que encienden desde el estado del job, no por eventos.
+  if (job?.commit) { tocados.add("commit"); max = Math.max(max, idx.get("commit")); }
+  if (job?.mergeado) { tocados.add("merge"); max = Math.max(max, idx.get("merge")); }
 
   const corriendo = job?.estado === "corriendo";
   const clases = {};
@@ -428,6 +437,10 @@ async function cargarEstado() {
     ca.textContent = "auth: " + (estado.auth || "?");
     ca.style.color = conToken ? "var(--ok)" : "var(--err)";
     ca.style.borderColor = conToken ? "var(--ok)" : "var(--err)";
+    // `index.html` se relee en cada request pero `server.mjs` no: sin este aviso
+    // la UI muestra lo nuevo mientras el motor dispara lo viejo, y una corrida
+    // parece probar un cambio que nunca cargó.
+    $("#obsoleto").hidden = !estado.obsoleto;
     if (!modoSel) modoSel = estado.modos[0];
     pintarTabs(); pintarFlujo(); pintarMetricas(); pintarCorridas();
     window.scrollTo(0, y);
@@ -598,10 +611,15 @@ async function cargarCheckpoint(id) {
     const d = await (await fetch("/api/diff?id=" + id)).json();
     conexion(true);
     if (!d.cambios) return;
-    const etiqueta = (e) => e === "??" ? "nuevo" : /M/.test(e) ? "modif." : e === "sin cambios" ? "sin cambios" : e;
     $("#chk-archivos").innerHTML = d.archivos.map((a) =>
-      `<div class="f"><span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiqueta(a.estado))}</span>${esc(a.archivo)}</div>`).join("");
-    if (d.commit) { $("#chk-estado").textContent = `commiteado · ${d.commit.rama} @ ${d.commit.hash}`; chkFin(); }
+      `<div class="f"><span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>${esc(a.archivo)}</div>`).join("");
+    if (d.commit) {
+      chkFin();
+      // El commit es la MITAD del aterrizaje: si aún no se mergeó, el paso que
+      // falta tiene que seguir a la vista (antes se perdía al recargar).
+      if (d.mergeado) $("#chk-estado").textContent = `✓ mergeado a main · ${d.commit.rama} @ ${d.commit.hash}`;
+      else ofrecerMerge(d.commit.rama, d.commit.hash, id);
+    }
     else if (d.descartado) { $("#chk-estado").textContent = "descartado"; chkFin(); }
     else $("#chk-estado").textContent = `${d.cambios} archivo(s) · rama actual: ${d.rama}`;
     $("#checkpoint").hidden = false;
@@ -609,18 +627,28 @@ async function cargarCheckpoint(id) {
 }
 function chkFin() { $("#btn-commit").disabled = true; $("#btn-discard").disabled = true; }
 
+/** Pinta el estado «commiteado» con el paso que falta: mergear a main. */
+function ofrecerMerge(rama, hash, jobId) {
+  $("#chk-estado").innerHTML = `commiteado · <b>${esc(rama)}</b> @ ${esc(hash)} — `
+    + `<button class="mini primary" id="chk-merge">Mergear a main + push</button>`;
+  $("#chk-merge").onclick = () => mergear(rama, jobId, "chk-merge");
+}
+
 $("#btn-commit").onclick = async () => {
   if (!job) return;
+  const jid = job.id;
   const b = $("#btn-commit"); b.disabled = true; b.textContent = "Commiteando…";
   try {
     const r = await fetch("/api/commit", {
       method: "POST", headers: { "content-type": "application/json" },
-      body: JSON.stringify({ id: job.id, message: $("#chk-msg").value.trim() }),
+      body: JSON.stringify({ id: jid, message: $("#chk-msg").value.trim() }),
     });
     const d = await r.json();
     if (!r.ok) { alert(d.error); b.disabled = false; b.textContent = "Commitear en rama"; return; }
-    $("#chk-estado").textContent = `commiteado · ${d.rama} @ ${d.hash}`;
     b.textContent = "Commiteado"; chkFin();
+    // Enciende el nodo COMMIT del aterrizaje y ofrece mergear.
+    if (job) { job.commit = { rama: d.rama, hash: d.hash }; pintarFlujo(); }
+    ofrecerMerge(d.rama, d.hash, jid);
   } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear en rama"; }
 };
 
@@ -685,9 +713,14 @@ function etiquetaEvento(e) {
 function refrescar(j) {
   job = j;
   pintarFlujo();
+  const vivo = j.estado === "corriendo";
   $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e) => {
     const t = etiquetaEvento(e);
-    return `<li><b>${esc(t.ic)} ${esc(t.lbl)}</b><span>${esc(t.dt)}</span></li>`;
+    // Flujo real por acción: entrada (input) → salida (resultado del tool).
+    const salida = e.resultado
+      ? `<span class="ev-out">↳ ${esc(e.resultado)}</span>`
+      : (vivo ? `<span class="ev-out ev-wait">↳ …</span>` : "");
+    return `<li><div class="ev-in"><b>${esc(t.ic)} ${esc(t.lbl)}</b><span>${esc(t.dt)}</span></div>${salida}</li>`;
   }).join("") || `<li><span>sin herramientas todavía…</span></li>`;
 
   const r = j.resultado;
@@ -729,12 +762,11 @@ async function cargarRepo() {
       $("#repo").innerHTML = `<div class="empty">Working tree limpio — nada que commitear.</div>`;
       return;
     }
-    const et = (e) => e === "??" ? "nuevo" : e.includes("D") ? "borrado" : e.includes("M") ? "modif." : e || "?";
     $("#repo").innerHTML = `
       <div class="chk-list" id="repo-list">
         ${d.archivos.map((a) => `
           <label class="f"><input type="checkbox" data-f="${esc(a.archivo)}" checked>
-            <span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(et(a.estado))}</span>${esc(a.archivo)}</label>`).join("")}
+            <span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>${esc(a.archivo)}</label>`).join("")}
       </div>
       <input id="repo-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
       <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap">
@@ -761,9 +793,29 @@ async function repoCommit() {
     });
     const d = await r.json();
     if (!r.ok) { alert(d.error); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; return; }
-    $("#repo-estado").textContent = `✓ commiteado · ${d.rama} @ ${d.hash} (${d.archivos.length} archivo/s)`;
-    setTimeout(cargarRepo, 400);
+    b.textContent = "Commiteado";
+    // Ofrecer completar el flujo: mergear la rama a main + push, desde la UI.
+    $("#repo-estado").innerHTML = `✓ commiteado · <b>${esc(d.rama)}</b> @ ${esc(d.hash)} — `
+      + `<button class="mini primary" id="btn-merge">Mergear a main + push</button>`;
+    $("#btn-merge").onclick = () => mergear(d.rama);
   } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; }
+}
+
+async function mergear(rama, jobId, btnId) {
+  if (!confirm(`Mergear «${rama}» a main y PUSHEAR al remoto?\n\nPublica los cambios y dispara el deploy.`)) return;
+  const b = $("#" + (btnId || "btn-merge")); if (b) { b.disabled = true; b.textContent = "Mergeando…"; }
+  try {
+    const r = await fetch("/api/merge", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ rama, id: jobId }),
+    });
+    const d = await r.json();
+    if (!r.ok) { alert(d.error); if (b) { b.disabled = false; b.textContent = "Mergear a main + push"; } return; }
+    $(jobId ? "#chk-estado" : "#repo-estado").textContent = `✓ mergeado a main @ ${d.hash} + pusheado 🚀`;
+    // Enciende el nodo MERGE del aterrizaje.
+    if (job && job.id === jobId) { job.mergeado = true; pintarFlujo(); }
+    if (!jobId) setTimeout(cargarRepo, 600);
+  } catch (e) { conexion(false); if (b) { b.disabled = false; b.textContent = "Mergear a main + push"; } }
 }
 
 async function repoDiscard() {

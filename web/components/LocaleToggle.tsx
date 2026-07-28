@@ -2,14 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { mirrorHref } from "@/components/LocaleLink";
+import { mirrorHref, isEsRoute } from "@/components/LocaleLink";
 
 type Locale = "es" | "en";
-
-/** ¿Estamos en una ruta del árbol español (/es o /es/…)? */
-function isEsRoute(pathname: string | null): boolean {
-  return pathname === "/es" || (pathname?.startsWith("/es/") ?? false);
-}
 
 /**
  * EN/ES toggle. Sets `[data-locale]` on the html element, persists in

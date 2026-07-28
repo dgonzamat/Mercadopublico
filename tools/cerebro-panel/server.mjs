@@ -42,6 +42,22 @@ import {
 } from "../../web/scripts/lib/cerebro-contract.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
+
+/* Node NO recarga módulos: si editas este archivo con el panel corriendo, el
+   proceso sigue disparando los PROMPTS VIEJOS mientras `index.html` —que se
+   relee en cada request— ya muestra lo nuevo. La UI se actualiza y el motor no,
+   así que una corrida parece probar un cambio que nunca cargó. Pasó de verdad
+   (jul 2026): una corrida de `mejoras-tec` "ignoró" una regla de ámbito recién
+   escrita, y la regla simplemente no estaba en memoria. Sellamos el mtime al
+   arrancar y lo comparamos en `/api/state` para poder decirlo en la cabecera. */
+const selloArranque = (() => {
+  try { return fs.statSync(fileURLToPath(import.meta.url)).mtimeMs; } catch { return 0; }
+})();
+const servidorObsoleto = () => {
+  try { return fs.statSync(fileURLToPath(import.meta.url)).mtimeMs > selloArranque; }
+  catch { return false; }
+};
+
 const argv = process.argv.slice(2);
 const argOf = (flag, def) => {
   const i = argv.indexOf(flag);
@@ -228,10 +244,24 @@ function eventoDeLinea(linea, job) {
         if (fp && /^(Write|Edit|MultiEdit|NotebookEdit)$/.test(b.name)) job.archivos.add(fp);
         job.eventos.push({
           t: new Date().toISOString(),
+          id: b.id,                 // para casar con su tool_result (la SALIDA)
           tool: b.name,
           detalle: `${b.name} ${input}`.slice(0, 400),
+          resultado: null,          // se llena cuando llega el tool_result
         });
       }
+    }
+  }
+  // Resultado de cada tool (la SALIDA): casa por tool_use_id con su evento y
+  // muestra QUÉ DEVOLVIÓ la acción — así el flujo es entrada → salida real.
+  if (e.type === "user") {
+    for (const b of e.message?.content ?? []) {
+      if (b.type !== "tool_result") continue;
+      const ev = job.eventos.find((x) => x.id === b.tool_use_id);
+      if (!ev) continue;
+      const txt = typeof b.content === "string" ? b.content
+        : Array.isArray(b.content) ? b.content.map((c) => c?.text || "").join(" ") : "";
+      ev.resultado = ((b.is_error ? "⚠ " : "") + String(txt).replace(/\s+/g, " ").trim()).slice(0, 300);
     }
   }
   // Una corrida puede terminar en verde SIN haber hecho nada, porque se quedó
@@ -376,6 +406,8 @@ function promptCasoNuevoLean(contexto) {
     `learn, retro, ni el cierre/log del cerebro. Esto es SOLO crear el caso — sin ceremonia.`,
     ``,
     `## Prioridad 1 — Analizar y elegir el caso (NEWS-SWEEP)`,
+    `0. Read \`.claude/commands/proximo-caso.md\` (la disciplina de selección/NEWS-SWEEP) — obligatorio,`,
+    `   aunque ya sepas cómo elegir; así el panel refleja el paso /proximo-caso.`,
     `1. Usa **WebSearch** para hallar 1 evento UAP institucional, real y documentado (audiencia del`,
     `   Congreso, informe AARO/GAO/NASA, desclasificación, acción legal, incidente con fuente oficial),`,
     `   preferentemente reciente (2024-2026) o un hueco claro de cobertura.`,
@@ -413,7 +445,8 @@ function promptCasoNuevoLean(contexto) {
 const CADENAS = {
   bugs: {
     obj: "encontrar defectos técnicos y de UI/UX reales",
-    cadena: "revisa el código/diff con criterio; para UI inspecciona el marcado (prueba la app solo si YA está corriendo); security-review sobre la anon key de Supabase y funciones SECURITY DEFINER; /blindar si el defecto abre una clase enforzable",
+    cadena: "revisa el código con criterio; para UI inspecciona el marcado (prueba la app solo si YA está corriendo); security-review sobre la anon key de Supabase y funciones SECURITY DEFINER; /blindar si el defecto abre una clase enforzable",
+    ambito: "el código del SITIO bajo `web/` (componentes, rutas, `scripts/`, `scripts/lib/`)",
   },
   "mejoras-ux": {
     obj: "detectar oportunidades de UI/UX (no defectos) de alto leverage",
@@ -421,7 +454,8 @@ const CADENAS = {
   },
   "mejoras-tec": {
     obj: "mejorar calidad de código: reuso, simplificación, eficiencia",
-    cadena: "aplica simplify sobre el código cambiado; /blindar si se abre una clase enforzable",
+    cadena: "aplica simplify sobre UN objetivo del ámbito declarado abajo y DEJA EL CAMBIO HECHO (no un informe); /blindar si se abre una clase enforzable",
+    ambito: "el código del SITIO bajo `web/` (componentes, rutas, `scripts/`, `scripts/lib/`)",
   },
   frescura: {
     obj: "mantener vivos los casos: desarrollos nuevos sobre casos existentes",
@@ -439,9 +473,10 @@ function promptLean(modo, contexto) {
   const nombre = modo || "diagnóstico";
   const p = [
     `Ejecuta el modo \`${nombre}\` del cerebro UAP Codex, en headless y EFICIENTE (mínimo procesamiento).`,
-    `SlashCommand está deshabilitada: para cualquier skill (/proximo-caso, /nuevo-caso, /innovar, /blindar,`,
-    `simplify, security-review, review…) LEE su \`.claude/commands/<skill>.md\` y aplícalo INLINE con`,
-    `Bash/Read/Write/Edit/WebSearch. Si un skill necesita un prerequisito que no existe en headless`,
+    `SlashCommand está deshabilitada. Para CADA skill de la cadena es OBLIGATORIO abrir su archivo`,
+    `\`.claude/commands/<skill>.md\` con la tool **Read** ANTES de ejecutarlo —aunque ya sepas qué hace—;`,
+    `sin ese Read el panel no puede reflejar el flujo (el nodo del skill no se enciende). Luego aplícalo`,
+    `INLINE con Bash/Read/Write/Edit/WebSearch. Si un skill necesita un prerequisito headless inexistente`,
     `(webapp-testing/Playwright sin navegador, app sin node_modules…), sáltalo y decláralo — no lo simules.`,
     ``,
     `## Objetivo`,
@@ -449,13 +484,58 @@ function promptLean(modo, contexto) {
     `## Cadena (lean)`,
     spec.cadena + ".",
     ``,
-    `## Eficiencia (obligatorio)`,
-    `- Gate mínimo: corre las 3 sondas node (validate-schema, audit-consistency, audit-design) UNA vez para`,
-    `  confirmar err=0; NO corras curar-memoria salvo que el drift SEA el objetivo.`,
+    // El ámbito tiene que ser EXPLÍCITO o el modo se vuelve circular: skills como
+    // `simplify` se definen sobre "el código cambiado", y en headless lo único
+    // cambiado suele ser trabajo en curso de otra sesión — el cerebro termina
+    // auditando ediciones a medias en vez del sitio. Pasó de verdad (jul 2026):
+    // `mejoras-tec` revisó el diff sin commitear del propio panel y cerró en 0.
+    ...(spec.ambito ? [
+      `## Ámbito — SOBRE QUÉ corre esta cadena (obligatorio)`,
+      `- El objetivo es ${spec.ambito}.`,
+      `- **PROHIBIDO** tomar el árbol sucio (\`git status\`/\`git diff\` sin commitear) como el objetivo:`,
+      `  esos cambios son trabajo en curso de otra sesión, no el encargo. Si el árbol está limpio, el`,
+      `  ámbito sigue siendo el de arriba — no te quedes sin objetivo.`,
+      `- Si un skill se define sobre "el código cambiado" (p. ej. simplify), aquí eso NO aplica: su`,
+      `  objetivo es el ámbito declarado.`,
+      `- \`tools/\` (panel y utilidades del repo) queda FUERA salvo que la señal lo nombre.`,
+      `- Si la señal trae una ruta o archivo, ESE es el ámbito y manda sobre lo anterior.`,
+      ``,
+      // Un ámbito ancho sin presupuesto se censa en vez de trabajarse: la primera
+      // corrida con `web/` como ámbito gastó 45 acciones contando páginas y
+      // midiendo `.next` sin tocar un archivo. Declarar DÓNDE mirar no basta;
+      // hay que declarar cuándo dejar de mirar y en qué termina la corrida.
+      `## Presupuesto — cuándo dejar de mirar (obligatorio)`,
+      `- En los primeros ~10 pasos ELIGE UN objetivo concreto (un archivo, o un patrón en pocos archivos)`,
+      `  y decláralo en una línea: \`objetivo: <ruta> — <por qué ese>\`. El resto del ámbito queda fuera`,
+      `  de ESTA corrida; ya habrá otras.`,
+      `- **PROHIBIDO inventariar**: contar archivos, medir el build, listar ocurrencias (\`wc -l\`, \`du\`,`,
+      `  \`find | head\`) NO son hallazgos y no acercan el objetivo. Si te sorprendes haciendo censos, ya`,
+      `  te pasaste — corta y elige.`,
+      `- La corrida termina de UNA de dos formas, nunca en un informe: (a) el cambio **aplicado** con`,
+      `  Edit/Write sobre ese objetivo, o (b) \`sin objetivo que supere el umbral\` y paras ahí mismo.`,
+      `  Una lista de oportunidades que no aplicaste NO es un resultado.`,
+      ``,
+    ] : []),
+    `## Orden y eficiencia (obligatorio)`,
+    `- 1º GATE, EN ESTE ORDEN: (a) **calibrate** — \`cd web && rm -rf out && node scripts/build-cases.mjs\`;`,
+    `  (b) las 3 sondas UNA vez (validate-schema, audit-consistency, audit-design) para confirmar err=0.`,
+    `  NO corras curar-memoria salvo que el drift SEA el objetivo.`,
+    `- 2º la CADENA: para cada skill, Read su .md (obligatorio, ver arriba) y luego ejecútalo inline.`,
     `- Ve directo al objetivo; no releas ni inyectes contexto innecesario.`,
     `- Cierre ligero: reporta hallazgos/cambios concretos, cada uno con su señal. NO ejecutes la ceremonia`,
     `  de log/automejora/skill scan salvo que se pida.`,
     `- Regla de oro: cada hallazgo/cambio cita su señal concreta; NUNCA inventes trabajo ni cifras.`,
+    ``,
+    // El cierre de la corrida anterior se contradecía solo ("Skills invocados:
+    // Ninguno" junto a "Skills a mano: simplify, blindar"): en headless NO hay
+    // dos formas de correr un skill, así que la distinción no existe.
+    `## Cómo reportar los skills (obligatorio)`,
+    `- En headless TODO skill se ejecuta inline: no existe "invocado" vs "a mano". Un skill está`,
+    `  **ejecutado** si leíste su \`.md\` y aplicaste su disciplina; si no, está **omitido**.`,
+    `- Cierra con una línea por skill de la cadena: \`<skill>: ejecutado — <qué miró>\` u \`omitido — <por qué>\`.`,
+    `  Nada de listas paralelas que se contradigan.`,
+    `- Un hallazgo que decides NO arreglar se reporta igual, con el motivo. Si el motivo es que el arreglo`,
+    `  cuesta más que el problema, dilo con la comparación concreta — no con la etiqueta sola.`,
   ];
   if (contexto) p.push(``, `## Señal / foco de esta corrida`, contexto);
   return p.join("\n");
@@ -600,6 +680,7 @@ const server = http.createServer(async (req, res) => {
       // disparo headless (suscripción vs créditos de API).
       auth: subscriptionToken() ? "suscripción (token)" : "sin token · headless → créditos de API",
       repo: repoRoot,
+      obsoleto: servidorObsoleto(),
     });
   }
 
@@ -663,6 +744,7 @@ const server = http.createServer(async (req, res) => {
     return json(res, 200, {
       rama, cambios: archivos.length, archivos: estados, stat,
       commit: job.commit ?? null, descartado: !!job.descartado,
+      mergeado: !!job.mergeado,
     });
   }
 
@@ -714,6 +796,30 @@ const server = http.createServer(async (req, res) => {
     const files = sanear(archivos);
     if (!files.length) return json(res, 400, { error: "sin archivos válidos" });
     return json(res, 200, { ok: true, ...(await descartarArchivos(files)) });
+  }
+
+  // Mergea la rama commiteada a `main` (ff-only) y pushea. Completa el flujo:
+  // commit-en-rama (revisado) → merge a main → deploy. ff-only evita commits de
+  // merge y falla claro si main avanzó (en vez de un merge sucio).
+  if (url.pathname === "/api/merge" && req.method === "POST") {
+    const { rama, id } = await leerCuerpo(req);
+    const actual = (await git(["rev-parse", "--abbrev-ref", "HEAD"])).out;
+    const branch = (rama && String(rama).trim()) || actual;
+    if (["main", "master"].includes(branch))
+      return json(res, 400, { error: "esa es la rama base; no hay nada que mergear" });
+    const co = await git(["checkout", "main"]);
+    if (co.code !== 0) return json(res, 500, { error: `checkout main falló: ${co.err}` });
+    const mg = await git(["merge", "--ff-only", branch]);
+    if (mg.code !== 0) {
+      await git(["checkout", branch]);   // no dejar al usuario en main a medias
+      return json(res, 409, { error: `merge --ff-only falló (¿main avanzó en el remoto?): ${mg.err || mg.out}` });
+    }
+    const ph = await git(["push", "origin", "main"]);
+    if (ph.code !== 0) return json(res, 500, { error: `mergeó pero el push falló: ${ph.err || ph.out}`, merged: true });
+    const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
+    const job = id && jobs.get(id);
+    if (job) job.mergeado = true;   // enciende el nodo MERGE del aterrizaje
+    return json(res, 200, { ok: true, rama: branch, hash, salida: `${mg.out}\n${ph.err}`.trim() });
   }
 
   json(res, 404, { error: "no existe" });

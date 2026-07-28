@@ -30,6 +30,11 @@ function topSegment(href: string): string {
   return clean.replace(/^\//, "").split("/")[0];
 }
 
+/** ¿Estamos en una ruta del árbol español (/es o /es/…)? */
+export function isEsRoute(pathname: string | null): boolean {
+  return pathname === "/es" || (pathname?.startsWith("/es/") ?? false);
+}
+
 /**
  * Idioma que el CHROME (header/footer) debe renderizar en esta URL, para casar
  * con el cuerpo:
@@ -44,7 +49,7 @@ function topSegment(href: string): string {
  */
 export function chromeLocale(pathname: string | null): "es" | "en" | undefined {
   if (!pathname) return undefined;
-  if (pathname === "/es" || pathname.startsWith("/es/")) return "es";
+  if (isEsRoute(pathname)) return "es";
   return mirrorHref(pathname) !== null ? "en" : undefined;
 }
 
@@ -56,7 +61,7 @@ export function chromeLocale(pathname: string | null): "es" | "en" | undefined {
  */
 export function mirrorHref(pathname: string | null): string | null {
   if (!pathname) return null;
-  const onEs = pathname === "/es" || pathname.startsWith("/es/");
+  const onEs = isEsRoute(pathname);
   if (onEs) {
     // /es/… → raíz inglesa; /es → /
     const rest = pathname.slice(3); // "/es/patterns" → "/patterns", "/es" → ""
@@ -73,7 +78,7 @@ export function mirrorHref(pathname: string | null): string | null {
  * cualquier otro caso lo deja igual. Puro (testeable), sin hooks.
  */
 export function localizeHref(href: string, pathname: string | null): string {
-  const onEs = pathname === "/es" || (pathname?.startsWith("/es/") ?? false);
+  const onEs = isEsRoute(pathname);
   if (!onEs) return href;
   if (!href.startsWith("/") || href.startsWith("/es/") || href === "/es") {
     return href;
