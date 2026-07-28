@@ -1164,8 +1164,15 @@ function refrescar(j) {
   const cf = $("#cierre-fase");
   cf.hidden = !soloPropuesta;
   if (soloPropuesta) {
-    cf.innerHTML = `<span class="tasa">propuesta sin implementar · si te convence, la fase 2 la construye</span> `
-      + `<button class="mini primary" id="btn-fase2">Aprobar y construir</button>`;
+    // Sin mockup la propuesta solo se puede LEER, y aprobar algo que no has
+    // visto es exactamente lo que las dos fases venían a evitar. Se dice.
+    const conMockup = (j.archivos ?? []).some((f) => /mockups[\/\\]/.test(f));
+    cf.innerHTML = conMockup
+      ? `<span class="tasa">propuesta sin implementar · ábrela con «Ver mockup» y, si te convence, la fase 2 la construye</span> `
+        + `<button class="mini primary" id="btn-fase2">Aprobar y construir</button>`
+      : `<span class="tasa" style="color:var(--warn)">propuesta SIN MOCKUP — solo se puede leer, no ver. `
+        + `Vuelve a gatillar antes de aprobar a ciegas.</span> `
+        + `<button class="mini" id="btn-fase2">Construir igualmente</button>`;
     $("#btn-fase2").onclick = () => {
       const mk = (j.archivos ?? []).find((f) => /mockups[\/\\]/.test(f));
       const ref = mk ? `el mockup \`${mk.replace(/\\/g, "/").replace(/.*?(tools\/)/, "$1")}\`` : "la propuesta de la corrida anterior";

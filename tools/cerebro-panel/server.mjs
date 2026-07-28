@@ -981,10 +981,16 @@ function promptLean(modo, contexto) {
        cambia?». Y tiene que ser un DIBUJO de esa pantalla: un fragmento de
        código antes/después no dice si el resultado se ve bien, que es justo lo
        que hay que aprobar. */
-    `## Mockup del cambio — OBLIGATORIO, y GRÁFICO`,
-    `Si esta corrida modifica algo, deja SIEMPRE un mockup autocontenible en`,
-    `\`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el checkpoint: el cambio se`,
-    `aprueba **viendo cómo queda el sitio**, no leyendo un diff.`,
+    /* Esta sección decía «si esta corrida modifica algo, deja un mockup», y la
+       fase 1 dice «no modifiques nada»: el modelo resolvió la contradicción por
+       la vía barata y entregó una propuesta que solo se podía LEER. El mockup no
+       es un subproducto del cambio — en fase 1 ES el entregable, y el único
+       archivo que se escribe. */
+    `## Mockup — OBLIGATORIO SIEMPRE, y GRÁFICO`,
+    `Toda corrida deja un mockup autocontenible en \`tools/cerebro-panel/mockups/<slug>.html\`. En la`,
+    `fase 1 es **el ÚNICO archivo que escribes, y no es opcional**: sin él la propuesta solo se puede`,
+    `leer, y el panel existe para que se pueda VER. El único caso sin mockup es no proponer nada`,
+    `(descarte honesto declarado). Si propones, dibujas.`,
     /* No basta con «dibuja la página»: maquetado a mano desde una lista de
        colores sale un primo lejano del sitio, y sobre un primo lejano no se
        puede juzgar si algo queda bien. El sitio es Tailwind, así que las clases
@@ -1111,8 +1117,10 @@ function promptLean(modo, contexto) {
     ...(esDiagnostico ? [] : [
       `## ESTA CORRIDA NO IMPLEMENTA — fase 1 de 2 (obligatorio)`,
       `**Propones, no ejecutas.** Entrega la propuesta y PARA sin escribir ni un archivo del sitio ni`,
-      `del corpus. Si se rechaza, no se ha tirado nada; si se aprueba, el panel dispara la fase 2 con`,
-      `tu propuesta como especificación.`,
+      `del corpus. **Excepción única: el MOCKUP** — ese sí lo escribes, y es obligatorio (ver abajo);`,
+      `es el archivo que hace que tu propuesta se pueda ver en vez de solo leerse.`,
+      `Si se rechaza, no se ha tirado nada; si se aprueba, el panel dispara la fase 2 con tu propuesta`,
+      `como especificación.`,
       spec.corpus
         /* La primera versión de esta fase no pedía mockup en los modos de corpus
            y el resultado fue una propuesta que solo se podía leer. Un caso o un
