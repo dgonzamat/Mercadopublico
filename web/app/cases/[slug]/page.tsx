@@ -169,6 +169,15 @@ export async function CaseDetailPage(
     .filter((x): x is NonNullable<typeof x> => Boolean(x))
     .sort((a, b) => b.year_start - a.year_start);
 
+  // Para el CTA de un caso SIN expandir: el primer similar que sí lo esté.
+  // `similar` ordena por patrones/país, no por contenido, así que su primer
+  // elemento puede ser otro caso sin expandir — y un botón que promete «caso
+  // similar expandido» llevando a otro callejón sin salida es peor que no
+  // ofrecer salida: rompe la confianza en la navegación.
+  const similarExpandido = similar.find(
+    (s) => Boolean(s.caseData.whatHappened || s.caseData.whyMatters),
+  );
+
   const hasNarrative = Boolean(c.whatHappened || c.whyMatters);
   const hasEvidence = Boolean(c.evidence && c.evidence.length > 0);
   const hasSources = Boolean(c.sources && c.sources.length > 0);
@@ -713,9 +722,9 @@ export async function CaseDetailPage(
                   en="← See all cases"
                 />
               </LocaleLink>
-              {similar.length > 0 && (
+              {similarExpandido && (
                 <LocaleLink
-                  href={`/cases/${similar[0].caseData.id}`}
+                  href={`/cases/${similarExpandido.caseData.id}`}
                   className="inline-flex min-h-[44px] items-center border-2 border-accent bg-bg px-4 py-2 font-mono text-sm uppercase tracking-wide text-accent transition-colors hover:bg-accent hover:text-bg"
                 >
                   <T locale={locale}
