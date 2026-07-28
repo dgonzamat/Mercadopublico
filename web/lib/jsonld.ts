@@ -55,15 +55,27 @@ export function websiteJsonLd() {
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     name: "UAP Codex",
-    alternateName: "UAP Codex — Institutional analysis",
+    // Variantes por las que la gente BUSCA de verdad, no un eslogan: en Search
+    // Console `uapcodex` (una palabra) sale en posición 3,7 y `uap codex` (dos)
+    // en 6,2 — con espacio, Google la lee en parte como consulta genérica sobre
+    // UAP en vez de como marca. `alternateName` ayuda a unir ambas formas.
+    alternateName: ["UAPCodex", "uapcodex", "UAP Codex"],
     url: SITE_URL,
-    description: `${STATS.years} años de fenómeno UAP documentado institucionalmente. ${STATS.cases} casos en ${STATS.countries} países, con un modelo de probabilidad comparable (MECE).`,
-    inLanguage: ["es", "en"],
+    // En inglés: es el idioma primario del sitio desde jul 2026.
+    description: `${STATS.years} years of institutionally documented UAP phenomena. ${STATS.cases} cases across ${STATS.countries} countries, with a comparable probability model (MECE).`,
+    inLanguage: ["en", "es"],
     publisher: {
       "@type": "Organization",
       "@id": `${SITE_URL}/#org`,
       name: "UAP Codex",
       url: SITE_URL,
+      // Señal principal para que Google consolide la ENTIDAD de marca en vez de
+      // tratar "uap codex" como dos palabras sueltas. Perfiles verificados en
+      // el footer del sitio (Pinterest es además la fuente #1 de tráfico real).
+      sameAs: [
+        "https://www.instagram.com/uapcodex2026",
+        "https://www.pinterest.com/uapcodex2026",
+      ],
     },
   };
 }
