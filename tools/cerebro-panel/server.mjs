@@ -81,6 +81,9 @@ const PORT = Number(argOf("--port", process.env.CEREBRO_PANEL_PORT ?? 4180));
  */
 const PERMISSION_MODE = process.env.CEREBRO_PANEL_PERMISSION_MODE ?? "acceptEdits";
 
+/** Minutos tras los que el panel corta una corrida. Ver el tope en `dispararCerebro`. */
+const TIMEOUT_MIN = Number(process.env.CEREBRO_PANEL_TIMEOUT_MIN ?? 20);
+
 /**
  * Token OAuth de SUSCRIPCIÓN para el disparo headless. Sin él, `claude -p` se
  * factura contra créditos de API (Console) y muere con "Credit balance is too
@@ -129,6 +132,53 @@ const SONDAS = [
 
 // ── estado en memoria ─────────────────────────────────────────────────────
 const jobs = new Map();
+
+/**
+ * PERSISTENCIA DE CORRIDAS. Los jobs vivían solo en memoria — y reiniciar el
+ * panel es parte del flujo, porque Node no recarga módulos. Si una corrida
+ * terminaba y reiniciabas antes de commitear, `/api/diff?id=` devolvía 404 y los
+ * archivos que había escrito quedaban HUÉRFANOS en el árbol: sin checkpoint que
+ * los reclamara ni forma de saber de qué corrida salieron.
+ *
+ * Se guarda lo justo para reconstruir el checkpoint y las métricas: nada de
+ * `salida` ni `eventos` (crecen sin techo y no hacen falta para decidir), y
+ * nunca el `prompt`, que puede llevar la señal completa.
+ */
+const ARCHIVO_JOBS = path.join(here, "jobs.json");
+const CAMPOS_PERSISTIDOS = ["id", "modo", "contexto", "estado", "inicio", "fin", "exit",
+  "resultado", "tokens", "coste_usd", "bloqueo", "commit", "descartado", "mergeado"];
+
+function guardarJobs() {
+  try {
+    const lista = [...jobs.values()].slice(-50).map((j) => {
+      const o = { archivos: [...(j.archivos ?? [])] };
+      for (const k of CAMPOS_PERSISTIDOS) if (j[k] !== undefined) o[k] = j[k];
+      return o;
+    });
+    fs.writeFileSync(ARCHIVO_JOBS, JSON.stringify(lista));
+  } catch (e) { bitacora(`no se pudo guardar jobs.json: ${e.message}`); }
+}
+
+function cargarJobs() {
+  try {
+    if (!fs.existsSync(ARCHIVO_JOBS)) return;
+    for (const o of JSON.parse(fs.readFileSync(ARCHIVO_JOBS, "utf8"))) {
+      // Una corrida "corriendo" en disco es una que murió con el panel: su
+      // proceso ya no existe, así que decirlo es más honesto que resucitarla.
+      jobs.set(o.id, {
+        ...o,
+        archivos: new Set(o.archivos ?? []),
+        salida: "", eventos: [], prompt: "",
+        estado: o.estado === "corriendo" ? "roto" : o.estado,
+        bloqueo: o.estado === "corriendo"
+          ? "El panel se reinició mientras esta corrida estaba viva; su proceso ya no existe."
+          : o.bloqueo ?? null,
+      });
+      const n = Number(String(o.id).replace(/\D/g, ""));
+      if (n > seq) seq = n;   // no reusar ids: colisionarían con los de disco
+    }
+  } catch (e) { bitacora(`no se pudo leer jobs.json: ${e.message}`); }
+}
 let seq = 0;
 
 // Cadena visible por modo para el flowchart. Los `backticks` marcan nodos que
@@ -268,7 +318,10 @@ function eventoDeLinea(linea, job) {
       if (!ev) continue;
       const txt = typeof b.content === "string" ? b.content
         : Array.isArray(b.content) ? b.content.map((c) => c?.text || "").join(" ") : "";
-      ev.resultado = ((b.is_error ? "⚠ " : "") + String(txt).replace(/\s+/g, " ").trim()).slice(0, 300);
+      // 300 caracteres cortaban justo donde empieza lo interesante de un error.
+      // La UI muestra los primeros 160 y abre el resto con un clic, así que aquí
+      // se guarda con margen suficiente para que ese clic sirva de algo.
+      ev.resultado = ((b.is_error ? "⚠ " : "") + String(txt).replace(/\s+/g, " ").trim()).slice(0, 1200);
     }
   }
   // Una corrida puede terminar en verde SIN haber hecho nada, porque se quedó
@@ -285,13 +338,88 @@ function eventoDeLinea(linea, job) {
   for (const [re, msg] of BLOQUEOS)
     if (!job.bloqueo && re.test(job.salida)) job.bloqueo = msg;
 
+  /* CONSUMO — el dato que faltaba. El panel gasta dinero de verdad en cada
+     disparo y hasta ahora solo mostraba el coste AL FINAL: durante la corrida,
+     que es cuando puedes decidir cortarla, no había ningún número. Se acumula en
+     vivo desde el `usage` de cada mensaje del asistente y, al cerrar, se
+     reemplaza por el total autoritativo del evento `result` (sumar por turno
+     aproxima, pero solo el result cuadra con la factura). */
+  if (e.type === "assistant" && e.message?.usage) {
+    const u = e.message.usage;
+    job.tokens.entrada += u.input_tokens || 0;
+    job.tokens.salida += u.output_tokens || 0;
+    job.tokens.cache_lectura += u.cache_read_input_tokens || 0;
+    job.tokens.cache_creacion += u.cache_creation_input_tokens || 0;
+    job.tokens.parcial = true;   // en vivo: aún no es el total de la factura
+  }
+
   if (e.type === "result") {
     job.resultado = {
       subtype: e.subtype, duracion_ms: e.duration_ms,
       coste_usd: e.total_cost_usd, turnos: e.num_turns,
     };
+    const u = e.usage;
+    if (u) job.tokens = {
+      entrada: u.input_tokens || 0,
+      salida: u.output_tokens || 0,
+      cache_lectura: u.cache_read_input_tokens || 0,
+      cache_creacion: u.cache_creation_input_tokens || 0,
+      parcial: false,
+    };
+    else job.tokens.parcial = false;
+    job.coste_usd = e.total_cost_usd ?? null;
     if (e.result && !job.salida.includes(e.result)) job.salida += "\n" + e.result;
   }
+}
+
+/**
+ * MÉTRICAS OBSERVADAS. Las de `cerebro-runs.jsonl` las escribe el cerebro sobre
+ * sí mismo: son su relato, y su campo `coste` es prosa, no un número. Estas las
+ * mide el panel — duración, tokens, dinero y archivos realmente escritos — así
+ * que no dependen de que la corrida se autoevalúe con honestidad.
+ *
+ * Las tres que importan y antes no existían:
+ *  · `conCambio` / terminadas — la proporción de corridas que dejaron un CAMBIO
+ *    en vez de un informe. Es el fallo que más cuesta detectar leyendo salidas:
+ *    una corrida puede razonar espléndidamente durante 14 minutos y no tocar
+ *    nada. Aquí sale como número.
+ *  · `costePorCambio` — lo que cuesta de verdad un cambio útil, contando las
+ *    corridas que no produjeron ninguno. Es el único ROI honesto.
+ *  · `descartadas` — cambios producidos y luego tirados en la revisión. Dinero
+ *    gastado en trabajo que no te convenció: si sube, el problema es el prompt,
+ *    no el presupuesto.
+ */
+function metricasSesion() {
+  const tokens = { entrada: 0, salida: 0, cache_lectura: 0, cache_creacion: 0 };
+  let coste = 0, terminadas = 0, conCambio = 0, commiteadas = 0, descartadas = 0;
+  let msTotal = 0, conDuracion = 0, parcial = false;
+  for (const j of jobs.values()) {
+    for (const k of Object.keys(tokens)) tokens[k] += j.tokens?.[k] || 0;
+    if (j.tokens?.parcial) parcial = true;
+    if (typeof j.coste_usd === "number") coste += j.coste_usd;
+    if (j.estado !== "corriendo") terminadas++;
+    if (j.archivos?.size) conCambio++;
+    if (j.commit) commiteadas++;
+    if (j.descartado) descartadas++;
+    const ms = j.resultado?.duracion_ms;
+    if (typeof ms === "number") { msTotal += ms; conDuracion++; }
+  }
+  // Todo lo que entra al modelo: fresco, servido desde caché y ESCRITO a caché.
+  // Dejar fuera `cache_creacion` daba un 99,99% incompatible con la factura —
+  // esos tokens se pagan (más caros, además): son entrada que no vino de caché.
+  const entradaTotal = tokens.entrada + tokens.cache_lectura + tokens.cache_creacion;
+  return {
+    corridas: jobs.size, terminadas, conCambio, commiteadas, descartadas,
+    tokens, tokensTotal: tokens.entrada + tokens.salida + tokens.cache_lectura + tokens.cache_creacion,
+    parcial, coste_usd: coste,
+    // Reparte TODO el gasto entre los cambios útiles: las corridas estériles
+    // también se pagan, así que tienen que aparecer en el precio.
+    costePorCambio: conCambio > 0 ? coste / conCambio : null,
+    // Cuánto del contexto se sirvió desde caché. Es la palanca más directa
+    // sobre la factura: un prompt que no cachea se paga entero en cada turno.
+    cacheRatio: entradaTotal > 0 ? tokens.cache_lectura / entradaTotal : null,
+    msTotal, msMedia: conDuracion > 0 ? msTotal / conDuracion : null,
+  };
 }
 
 /** Busca un ejecutable en el PATH, respetando PATHEXT en Windows. */
@@ -460,7 +588,19 @@ const CADENAS = {
   },
   "mejoras-ux": {
     obj: "detectar oportunidades de UI/UX (no defectos) de alto leverage",
-    cadena: "aplica /innovar sobre UNA fricción concreta observada en el marcado/rutas y propón el cambio con su señal (sin fluff)",
+    cadena: "aplica /innovar sobre UNA fricción concreta observada en el marcado/rutas, propón el cambio con su señal (sin fluff) y DEJA SU MOCKUP (ver abajo)",
+    ambito: "el código del SITIO bajo `web/` (componentes, rutas, estilos)",
+    // Un cambio de UX no se aprueba leyendo un diff de `.tsx`: se aprueba
+    // mirándolo. El panel sabe renderizar un .html en la vista previa del
+    // checkpoint, así que la corrida tiene que dejarle algo que renderizar —
+    // si no, el usuario firma a ciegas y la revisión es un trámite.
+    entregable: [
+      "Además del cambio, deja un **mockup autocontenible** en",
+      "`tools/cerebro-panel/mockups/<slug>.html` que muestre ANTES y DESPUÉS de la fricción, con la",
+      "paleta del sitio. Sin JavaScript y sin recursos externos: el panel lo renderiza en un iframe",
+      "en modo `sandbox` (no ejecuta scripts) para que puedas aprobar el cambio VIÉNDOLO.",
+      "El mockup es parte del entregable, no un extra: sin él no hay nada que aprobar más que texto.",
+    ].join(" "),
   },
   "mejoras-tec": {
     obj: "mejorar calidad de código: reuso, simplificación, eficiencia",
@@ -494,6 +634,7 @@ function promptLean(modo, contexto) {
     `## Cadena (lean)`,
     spec.cadena + ".",
     ``,
+    ...(spec.entregable ? [`## Entregable visual (obligatorio)`, spec.entregable, ``] : []),
     // El ámbito tiene que ser EXPLÍCITO o el modo se vuelve circular: skills como
     // `simplify` se definen sobre "el código cambiado", y en headless lo único
     // cambiado suele ser trabajo en curso de otra sesión — el cerebro termina
@@ -576,6 +717,10 @@ function dispararCerebro(modo, contexto) {
     id, modo, contexto: contexto || null, prompt,
     estado: "corriendo", inicio: new Date().toISOString(), fin: null,
     exit: null, salida: "", eventos: [], resultado: null, bloqueo: null,
+    // Consumo en vivo: se llena desde el `usage` de cada mensaje y se cierra con
+    // el total del evento `result`. `parcial` avisa de que aún no es la factura.
+    tokens: { entrada: 0, salida: 0, cache_lectura: 0, cache_creacion: 0, parcial: false },
+    coste_usd: null,
     // Corridas registradas ANTES de disparar: al cerrar se compara para saber
     // si esta corrida cumplió el cierre obligatorio (log, automejora, skill scan).
     _corridasAntes: readRuns().corridas.length,
@@ -601,6 +746,16 @@ function dispararCerebro(modo, contexto) {
     return job;
   }
   job._child = child;
+  /* TOPE DE DURACIÓN. Una corrida sin objetivo claro no se atasca: se pone a
+     inventariar y sigue horas. La de `mejoras-tec` llevaba 14 minutos y 45
+     acciones sin tocar un archivo, y nada la habría parado — la maté a mano.
+     El tope no juzga la calidad, solo impide que el gasto sea ilimitado. */
+  job._timeout = setTimeout(() => {
+    if (job.estado !== "corriendo") return;
+    job.bloqueo = `Cortada por el panel al superar ${TIMEOUT_MIN} min. `
+      + `Si el modo necesita más, dispáralo con una señal acotada o sube CEREBRO_PANEL_TIMEOUT_MIN.`;
+    try { child.kill("SIGTERM"); } catch { /* ya murió */ }
+  }, TIMEOUT_MIN * 60_000);
   child.stdout.setEncoding("utf8");
   child.stderr.setEncoding("utf8");
   // NDJSON: un `data` puede traer media línea, así que se acumula y solo se
@@ -619,10 +774,12 @@ function dispararCerebro(modo, contexto) {
     job.fin = new Date().toISOString();
   });
   child.on("close", (code) => {
+    clearTimeout(job._timeout);
     if (resto.trim()) eventoDeLinea(resto, job);
     job.exit = code;
     job.estado = code === 0 ? "listo" : "fallo";
     job.fin = new Date().toISOString();
+    guardarJobs();
     // ¿La corrida cumplió el cierre obligatorio? No se pregunta: se comprueba
     // contra el log. Una corrida que no dejó entrada no cerró, por muy bien que
     // haya narrado su propio final.
@@ -637,8 +794,25 @@ function dispararCerebro(modo, contexto) {
   return job;
 }
 
-const publico = ({ _child, _corridasAntes, archivos, ...j }) =>
-  ({ ...j, archivos: [...(archivos ?? [])] });
+/* El polling pedía el job ENTERO cada 1,5 s: la `salida` acumulada y TODOS los
+   eventos con su resultado. En una corrida de 45 acciones ya iban cientos de KB
+   por tick, creciendo — y la UI solo pinta los últimos 40. Se acota aquí, en el
+   serializador, para no tener que cambiar el protocolo: quien necesite el resto
+   tiene la salida cruda del propio proceso. */
+const MAX_EVENTOS = 60;
+const MAX_SALIDA = 24000;
+const publico = ({ _child, _corridasAntes, _timeout, archivos, eventos, salida, prompt, ...j }) => ({
+  ...j,
+  archivos: [...(archivos ?? [])],
+  eventos: (eventos ?? []).slice(-MAX_EVENTOS),
+  eventosTotal: (eventos ?? []).length,
+  salida: (salida ?? "").length > MAX_SALIDA
+    ? `…[recortado: ${(salida.length - MAX_SALIDA).toLocaleString("es")} caracteres antes]\n`
+      + salida.slice(-MAX_SALIDA)
+    : (salida ?? ""),
+  // El prompt es grande y constante: viaja solo si se pide explícitamente.
+  promptLargo: (prompt ?? "").length,
+});
 
 // ── HTTP ──────────────────────────────────────────────────────────────────
 const json = (res, code, body) => {
@@ -646,20 +820,54 @@ const json = (res, code, body) => {
   res.end(JSON.stringify(body));
 };
 
+/* Al pasar del tope hacía `req.destroy()` y se quedaba esperando un `end` que ya
+   no iba a llegar: la promesa NUNCA resolvía y el handler quedaba colgado para
+   siempre — el navegador girando sin recibir nada ni poder detectar el fallo.
+   Ahora se resuelve con el error explícito. */
+const LIMITE_CUERPO = 1e5;
 const leerCuerpo = (req) =>
-  new Promise((resolve) => {
-    let b = "";
+  new Promise((resolve, reject) => {
+    let b = "", cortado = false;
     req.on("data", (d) => {
+      if (cortado) return;
       b += d;
-      if (b.length > 1e5) req.destroy();
+      if (b.length > LIMITE_CUERPO) {
+        cortado = true; req.destroy();
+        reject(Object.assign(new Error("cuerpo demasiado grande"), { http: 413 }));
+      }
     });
     req.on("end", () => {
+      if (cortado) return;
       try { resolve(JSON.parse(b || "{}")); } catch { resolve({}); }
     });
+    req.on("error", () => { if (!cortado) resolve({}); });
   });
 
-const server = http.createServer(async (req, res) => {
+/**
+ * ¿La petición viene del propio panel? Escuchar solo en loopback protege de la
+ * RED, no del NAVEGADOR: cualquier web que visites puede mandarle un POST a
+ * 127.0.0.1. Un `fetch` con `content-type: application/json` lo corta el
+ * preflight de CORS, pero un `<form enctype="text/plain">` NO hace preflight y
+ * puede fabricar un cuerpo que `JSON.parse` acepta — el truco clásico contra
+ * APIs JSON que no miran el content-type. Con `/api/fire` detrás, eso es una
+ * página cualquiera lanzando Claude con permisos de edición sobre tu repo.
+ *
+ * Se exige que `Origin` (si viene) sea el propio panel y que el content-type sea
+ * JSON: las dos cosas que un formulario cross-origin no puede falsificar.
+ */
+function mismoOrigen(req) {
+  const propios = [`http://127.0.0.1:${PORT}`, `http://localhost:${PORT}`];
+  const origen = req.headers.origin;
+  if (origen && !propios.includes(origen)) return false;
+  const ct = String(req.headers["content-type"] || "");
+  return ct.includes("application/json");
+}
+
+async function manejar(req, res) {
   const url = new URL(req.url, `http://localhost:${PORT}`);
+
+  if (req.method === "POST" && !mismoOrigen(req))
+    return json(res, 403, { error: "petición rechazada: no viene del panel" });
 
   if (url.pathname === "/" || url.pathname === "/index.html") {
     res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
@@ -691,6 +899,9 @@ const server = http.createServer(async (req, res) => {
       auth: subscriptionToken() ? "suscripción (token)" : "sin token · headless → créditos de API",
       repo: repoRoot,
       obsoleto: servidorObsoleto(),
+      timeoutMin: TIMEOUT_MIN,
+      // Lo que el panel MIDE, frente a lo que el cerebro cuenta de sí mismo.
+      sesion: metricasSesion(),
     });
   }
 
@@ -758,6 +969,50 @@ const server = http.createServer(async (req, res) => {
     });
   }
 
+  /* EL CAMBIO, ANTES DE APROBARLO. El checkpoint listaba nombres de archivo: para
+     saber QUÉ había hecho la corrida tenías que irte a la terminal, o commitear a
+     ciegas. Un panel que te pide aprobar sin enseñarte qué apruebas convierte la
+     revisión en un trámite. Aquí sale el diff real, archivo por archivo.
+     Un archivo nuevo no tiene contra qué diferenciarse, así que se compara con el
+     vacío (`--no-index`) para que se vea entero como alta. */
+  /* Sirve un archivo del repo para la vista previa del mockup. SOLO html/svg —
+     lo que tiene sentido renderizar— y siempre dentro del repo (`sanear` corta
+     los `..`). El iframe que lo consume va con `sandbox` sin `allow-scripts`:
+     este contenido lo escribió un agente, así que se mira, no se ejecuta.
+     `X-Content-Type-Options` evita que el navegador adivine otro tipo. */
+  if (url.pathname === "/archivo") {
+    const [archivo] = sanear([url.searchParams.get("archivo") || ""]);
+    if (!archivo || !/\.(html?|svg)$/i.test(archivo))
+      return json(res, 400, { error: "solo se previsualizan .html y .svg del repo" });
+    try {
+      const cuerpo = fs.readFileSync(path.join(repoRoot, archivo));
+      res.writeHead(200, {
+        "content-type": archivo.toLowerCase().endsWith(".svg")
+          ? "image/svg+xml; charset=utf-8" : "text/html; charset=utf-8",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "sandbox; default-src 'none'; img-src data:; style-src 'unsafe-inline'",
+      });
+      return res.end(cuerpo);
+    } catch (e) { return json(res, 404, { error: `no se pudo leer ${archivo}` }); }
+  }
+
+  if (url.pathname === "/api/filediff") {
+    const [archivo] = sanear([url.searchParams.get("archivo") || ""]);
+    if (!archivo) return json(res, 400, { error: "archivo inválido" });
+    const st = (await git(["status", "--porcelain", "--", archivo])).out;
+    const nuevo = st.startsWith("??");
+    const r = nuevo
+      ? await git(["diff", "--no-index", "--", "/dev/null", archivo])
+      : await git(["diff", "--", archivo]);
+    // `--no-index` devuelve 1 cuando HAY diferencias: eso no es un fallo.
+    const salida = r.out || r.err || "";
+    return json(res, 200, {
+      archivo, nuevo,
+      diff: salida.length > 60000 ? salida.slice(0, 60000) + "\n…[diff recortado]" : salida,
+      vacio: !salida.trim(),
+    });
+  }
+
   if (url.pathname === "/api/commit" && req.method === "POST") {
     const { id, message } = await leerCuerpo(req);
     const job = jobs.get(id);
@@ -768,6 +1023,7 @@ const server = http.createServer(async (req, res) => {
     const r = await commitArchivos(archivos, message, job.modo || "diagnostico");
     if (r.error) return json(res, 500, { error: r.error });
     job.commit = { rama: r.rama, hash: r.hash, archivos };
+    guardarJobs();
     return json(res, 200, r);
   }
 
@@ -777,6 +1033,7 @@ const server = http.createServer(async (req, res) => {
     if (!job) return json(res, 404, { error: "job no encontrado" });
     if (job.commit) return json(res, 409, { error: "ya fue commiteada; no se puede descartar" });
     job.descartado = true;
+    guardarJobs();
     return json(res, 200, { ok: true, ...(await descartarArchivos(archivosDelJob(job))) });
   }
 
@@ -817,6 +1074,19 @@ const server = http.createServer(async (req, res) => {
     const branch = (rama && String(rama).trim()) || actual;
     if (["main", "master"].includes(branch))
       return json(res, 400, { error: "esa es la rama base; no hay nada que mergear" });
+    // `fetch` ANTES del ff-only: sin esto el merge local pasaba y fallaba el
+    // PUSH, dejando `main` local adelantado y el diagnóstico llegando tarde.
+    // Comprobado contra el remoto, si `main` avanzó se dice aquí y no se toca
+    // nada. `fetch` puede fallar sin red: eso no debe bloquear el aterrizaje.
+    const fe = await git(["fetch", "origin", "main"]);
+    if (fe.code === 0) {
+      const detras = (await git(["rev-list", "--count", "main..origin/main"])).out;
+      if (detras && detras !== "0")
+        return json(res, 409, {
+          error: `main local está ${detras} commit(s) detrás de origin/main. `
+            + `Haz \`git pull --ff-only\` antes de aterrizar: si mergeo ahora, el push fallará.`,
+        });
+    }
     const co = await git(["checkout", "main"]);
     if (co.code !== 0) return json(res, 500, { error: `checkout main falló: ${co.err}` });
     const mg = await git(["merge", "--ff-only", branch]);
@@ -828,7 +1098,7 @@ const server = http.createServer(async (req, res) => {
     if (ph.code !== 0) return json(res, 500, { error: `mergeó pero el push falló: ${ph.err || ph.out}`, merged: true });
     const hash = (await git(["rev-parse", "--short", "HEAD"])).out;
     const job = id && jobs.get(id);
-    if (job) job.mergeado = true;   // enciende el nodo MERGE del aterrizaje
+    if (job) { job.mergeado = true; guardarJobs(); }   // enciende el nodo MERGE
     // La rama era un andamio para revisar antes de publicar; cumplido el push ya
     // no aporta nada y se acumulaba una por aterrizaje. `-d` (no `-D`) solo borra
     // si está realmente mergeada: si algo quedó fuera, la rama sobrevive y el
@@ -842,6 +1112,23 @@ const server = http.createServer(async (req, res) => {
   }
 
   json(res, 404, { error: "no existe" });
+}
+
+/* Sin este envoltorio, un throw en cualquier rama dejaba la petición SIN
+   RESPUESTA: el navegador esperando para siempre y, como `fetch` no rechaza, ni
+   siquiera saltaba el banner de «sin conexión». La red de `unhandledRejection`
+   salva el proceso, no la petición. Un 500 con el motivo es infinitamente mejor
+   que un silencio. */
+const server = http.createServer((req, res) => {
+  manejar(req, res).catch((e) => {
+    if (e?.http) {                       // fallo esperado (413…): no es un bug
+      if (!res.headersSent) json(res, e.http, { error: e.message });
+      return res.end();
+    }
+    logError(`fallo en ${req.method} ${req.url}`, e);
+    if (!res.headersSent) json(res, 500, { error: `fallo del panel: ${e?.message || e}` });
+    else res.end();
+  });
 });
 
 // Red de seguridad: un error async no manejado en un handler mataría el panel
@@ -891,8 +1178,10 @@ server.on("error", (e) => {
 
 // Solo loopback: el panel ejecuta `claude` con permisos de edición sobre el
 // repo. Exponerlo a la red sería dar una shell.
+cargarJobs();   // recupera los checkpoints que sobrevivieron al reinicio
+
 server.listen(PORT, "127.0.0.1", () => {
-  bitacora(`arrancado | pid ${process.pid} | puerto ${PORT} | permisos ${PERMISSION_MODE}`);
+  bitacora(`arrancado | pid ${process.pid} | puerto ${PORT} | permisos ${PERMISSION_MODE} | jobs ${jobs.size}`);
   console.log(`\n  cerebro-panel  ·  http://127.0.0.1:${PORT}`);
   console.log(`  repo: ${repoRoot}`);
   console.log(`  permisos al disparar: --permission-mode ${PERMISSION_MODE}`);

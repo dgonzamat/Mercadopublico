@@ -98,8 +98,14 @@
   }
 
   .ticker{margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+  /* 170px daba tres líneas: justo donde miras cuando algo va mal era donde
+     menos podías ver. Se puede plegar para recuperar el espacio. */
   .ticker ol{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;
-    gap:5px;max-height:170px;overflow:auto}
+    gap:5px;max-height:380px;overflow:auto}
+  .ticker ol.plegado{max-height:120px}
+  .ticker .ev-out{cursor:pointer}
+  .ticker .ev-out.largo::after{content:" ⋯ ver todo";color:var(--muted);font-style:italic}
+  .ticker .ev-out.abierto::after{content:""}
   .ticker li{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);
     display:flex;flex-direction:column;gap:2px;animation:entra .3s ease;
     padding-bottom:4px;border-bottom:1px dashed var(--border)}
@@ -112,6 +118,8 @@
   /* ══════════ resto ══════════ */
   .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
   .card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+  .bar{height:5px;border-radius:99px;background:var(--surface2);margin-top:9px;overflow:hidden;display:flex}
+  .bar i{display:block;height:100%}
   .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
   .metric small{font-size:14px;color:var(--muted);font-weight:400}
   .card .eyebrow{margin-bottom:6px;display:block}
@@ -162,6 +170,18 @@
     border-radius:99px;color:#fff;flex:none}
   .chk-msg{width:100%;margin-top:8px;font:12.5px ui-monospace,monospace;padding:7px 9px;border-radius:6px;
     border:1px solid var(--border);background:var(--bg);color:var(--text)}
+
+  /* Vista previa del cambio: apruebas lo que VES, no una lista de nombres.
+     Colores sobre el fondo oscuro del <pre>, con el mismo verde/rojo del resto
+     del panel para que «añadido» y «quitado» signifiquen lo mismo en todas partes. */
+  .chk-list .f button{margin-left:auto;flex:none}
+  .diff{margin:4px 0 10px}
+  .diff pre{margin:0;max-height:400px}
+  .diff .d-add{color:#7ec98f} .diff .d-del{color:#e88b8b}
+  .diff .d-hdr{color:#9aa7b8} .diff .d-hunk{color:#d6c07a}
+  .diff .mockup{width:100%;height:460px;border:1px solid var(--border);border-radius:7px;
+    background:#fff;margin-top:6px}
+  .f-wrap{display:flex;flex-direction:column}
 </style>
 </head>
 <body>
@@ -174,7 +194,13 @@
     <span class="chip mono" id="chip-repo">…</span>
     <span class="chip mono" id="chip-perm">…</span>
     <span class="chip mono" id="chip-auth">…</span>
-    <button id="btn-sondear" class="primary">Sondear salud</button>
+    <!-- El panel quema tokens de verdad en cada disparo. El gasto vivo va en la
+         cabecera, junto a `auth` (de qué bolsillo sale): saber la fuente sin
+         saber el importe no sirve para decidir nada. -->
+    <span class="chip mono" id="chip-consumo" title="Consumo acumulado de las corridas registradas">…</span>
+    <!-- Sondear es inocuo; gatillar edita el repo y gasta. El rojo se reserva
+         para lo caro e irreversible, si no deja de significar nada. -->
+    <button id="btn-sondear">Sondear salud</button>
   </div>
   <div class="offline" id="offline" role="alert" hidden>⚠ Sin conexión con el servidor del panel · reintentando…</div>
   <div class="offline" id="obsoleto" role="alert" hidden>⚠ <b>server.mjs</b> cambió después de arrancar el panel · este proceso
@@ -182,6 +208,9 @@
 </header>
 
 <div class="wrap">
+
+  <!-- Errores que sobreviven a ser leídos, en vez de un alert() que se cierra. -->
+  <div id="avisos" hidden style="margin-top:18px"></div>
 
   <!-- ══ ORQUESTACIÓN ══ -->
   <section>
@@ -191,8 +220,8 @@
     </div>
 
     <div class="lienzo" id="lienzo">
-      <div class="tabs" id="tabs" role="tablist"></div>
-      <div id="flujo"></div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Modos del cerebro"></div>
+      <div id="flujo" role="tabpanel" tabindex="0"></div>
 
       <!-- Contexto libre. Sin esto solo se podía disparar con el texto de un
            hallazgo de sonda, y las señales que NO vienen de una sonda —una
@@ -216,8 +245,14 @@
       <div class="warnbox" id="bloqueo" hidden></div>
 
       <div class="ticker" id="ticker" hidden>
-        <span class="eyebrow">Flujo en vivo · pasos y skills que corre la corrida</span>
-        <ol id="eventos"></ol>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span class="eyebrow">Flujo en vivo · pasos y skills que corre la corrida</span>
+          <span class="grow"></span>
+          <button class="mini" id="btn-plegar" aria-expanded="true">Plegar</button>
+        </div>
+        <!-- aria-live: sin esto, el avance de la corrida —el contenido que más
+             cambia del panel— no se anuncia a un lector de pantalla. -->
+        <ol id="eventos" aria-live="polite" aria-relevant="additions"></ol>
       </div>
 
       <!-- Checkpoint: la corrida NO aterriza sola. Al terminar, muestra qué
@@ -236,11 +271,32 @@
     </div>
   </section>
 
-  <!-- ══ MÉTRICAS ══ -->
+  <!-- ══ CONSUMO Y RENDIMIENTO (medido por el panel) ══
+       Estas NO salen de `cerebro-runs.jsonl`: ahí el cerebro se narra a sí mismo
+       y su campo `coste` es prosa, no un número. Estas las mide el panel viendo
+       el proceso —duración, tokens, dinero y archivos escritos—, así que no
+       dependen de que la corrida se autoevalúe con honestidad. -->
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Consumo · lo que cuesta el loop</h2>
+      <p>Medido por el panel sobre las corridas que ha visto, no declarado por el cerebro.</p>
+    </div>
+    <div class="cards" id="consumo"></div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2 class="eyebrow">Rendimiento · ¿deja cambios o informes?</h2>
+      <p>Una corrida puede razonar espléndidamente durante 14 minutos y no tocar un archivo. Aquí eso sale como número.</p>
+    </div>
+    <div class="cards" id="rendimiento"></div>
+  </section>
+
+  <!-- ══ MÉTRICAS DEL LOG ══ -->
   <section>
     <div class="shead">
       <h2 class="eyebrow">El loop sobre sí mismo</h2>
-      <p>La tasa candidatos→verificados es la única métrica honesta que el cerebro tiene de sí mismo.</p>
+      <p>Lo que el cerebro declara en <code class="mono">cerebro-runs.jsonl</code> — su relato, no la medición.</p>
     </div>
     <div class="cards" id="metricas"></div>
   </section>
@@ -308,6 +364,33 @@ let estado = null, modoSel = null, job = null, poll = null, cimientoRoto = false
 /* Banner de conexión. El server del panel es un proceso local que puede caerse;
    sin esto, un fetch fallido dejaba la UI muda o reintentaba en silencio. */
 function conexion(ok) { $("#offline").hidden = ok; }
+
+/* Errores VISIBLES y copiables. `alert()` bloquea, no se puede seleccionar y al
+   cerrarlo el mensaje se pierde — justo cuando lo que dice (un merge rechazado,
+   un 500 del panel) es lo que necesitas leer con calma. Los `confirm()` de las
+   acciones caras se quedan: ahí el bloqueo ES la función. */
+function avisar(msg) {
+  const c = $("#avisos");
+  c.hidden = false;
+  const d = document.createElement("div");
+  d.className = "warnbox";
+  d.innerHTML = `<button class="mini" style="float:right">Cerrar</button><strong>⚠ </strong>${esc(msg)}`;
+  d.querySelector("button").onclick = () => {
+    d.remove(); if (!c.children.length) c.hidden = true;
+  };
+  c.prepend(d);
+}
+
+/* Reloj de corrida. Sin esto, «corriendo · N herramientas» no dice si llevas 40
+   segundos o 14 minutos — y esa diferencia es justo la señal de que el modo se
+   fue a inventariar en vez de trabajar. */
+const mmss = (ms) => {
+  const s = Math.max(0, Math.round(ms / 1000));
+  return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+};
+const miles = (n) => (n ?? 0).toLocaleString("es");
+const compacto = (n) => n >= 1e6 ? (n / 1e6).toFixed(2) + "M"
+  : n >= 1e3 ? (n / 1e3).toFixed(1) + "k" : String(n ?? 0);
 
 /* Estado del botón de disparo en un solo sitio: se bloquea mientras hay una
    corrida viva Y si el cimiento está roto (la doctrina del cerebro prohíbe
@@ -446,6 +529,7 @@ async function cargarEstado() {
     // la UI muestra lo nuevo mientras el motor dispara lo viejo, y una corrida
     // parece probar un cambio que nunca cargó.
     $("#obsoleto").hidden = !estado.obsoleto;
+    pintarConsumo();
     if (!modoSel) modoSel = estado.modos[0];
     pintarTabs(); pintarFlujo(); pintarMetricas(); pintarCorridas();
     window.scrollTo(0, y);
@@ -455,16 +539,88 @@ async function cargarEstado() {
   }
 }
 
+$("#btn-plegar").onclick = () => {
+  const ol = $("#eventos"), b = $("#btn-plegar");
+  const plegado = ol.classList.toggle("plegado");
+  b.textContent = plegado ? "Desplegar" : "Plegar";
+  b.setAttribute("aria-expanded", String(!plegado));
+};
+
 function pintarTabs() {
+  // a11y: los tabs declaraban `role="tablist"` pero no decían QUÉ panel
+  // controlan, y solo se navegaban con el ratón. Con `aria-controls` + flechas
+  // el patrón queda completo (`#flujo` es el `tabpanel`).
   $("#tabs").innerHTML = estado.modos.map((m) => `
-    <button class="tab" role="tab" data-modo="${esc(m.arg)}"
-      aria-selected="${m.arg === modoSel.arg}">
+    <button class="tab" role="tab" data-modo="${esc(m.arg)}" aria-controls="flujo"
+      aria-selected="${m.arg === modoSel.arg}" tabindex="${m.arg === modoSel.arg ? 0 : -1}">
       ${esc(m.arg || "diagnóstico")} <span class="tasa">M${esc(m.n)}</span>
     </button>`).join("");
-  document.querySelectorAll(".tab").forEach((b) => b.onclick = () => {
+  const tabs = [...document.querySelectorAll(".tab")];
+  const elegir = (b) => {
     modoSel = estado.modos.find((m) => m.arg === b.dataset.modo);
     pintarTabs(); pintarFlujo();
+    document.querySelector('.tab[aria-selected="true"]')?.focus();
+  };
+  tabs.forEach((b, i) => {
+    b.onclick = () => elegir(b);
+    b.onkeydown = (e) => {
+      const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      elegir(tabs[(i + d + tabs.length) % tabs.length]);
+    };
   });
+}
+
+/* Barra de proporciones: hace legible de un vistazo un reparto que en números
+   crudos hay que calcular mentalmente (caché vs entrada vs salida). */
+const barra = (partes) => `<div class="bar">` + partes
+  .filter(([v]) => v > 0)
+  .map(([v, color]) => `<i style="width:${v}%;background:${color}"></i>`).join("") + `</div>`;
+
+const tarjeta = (t, v, h, extra = "") => `
+  <div class="card"><span class="eyebrow">${esc(t)}</span>
+    <div class="metric">${v}</div>${extra}<div class="hint">${h}</div></div>`;
+
+function pintarConsumo() {
+  const s = estado.sesion;
+  if (!s) return;
+  const tk = s.tokens, tot = s.tokensTotal || 0;
+  const pct = (n) => tot > 0 ? Math.round((n / tot) * 100) : 0;
+  const dinero = (n) => n == null ? "—" : "$" + n.toFixed(2);
+
+  // Cabecera: gasto vivo, siempre a la vista.
+  const chip = $("#chip-consumo");
+  chip.textContent = `◍ ${compacto(tot)} tok · ${dinero(s.coste_usd)}` + (s.parcial ? " (en curso)" : "");
+  chip.title = `${miles(tot)} tokens — entrada ${miles(tk.entrada)}, salida ${miles(tk.salida)}, `
+    + `caché leído ${miles(tk.cache_lectura)}, caché creado ${miles(tk.cache_creacion)}`;
+
+  $("#consumo").innerHTML = [
+    tarjeta("Tokens acumulados", compacto(tot),
+      `caché ${pct(tk.cache_lectura)}% · entrada ${pct(tk.entrada)}% · salida ${pct(tk.salida)}%`
+      + (s.parcial ? " · <b>corrida en curso</b>" : ""),
+      barra([[pct(tk.cache_lectura), "var(--ok)"], [pct(tk.entrada), "var(--surface2)"],
+             [pct(tk.salida), "var(--accent)"]])),
+    tarjeta("Coste acumulado", dinero(s.coste_usd),
+      `${s.corridas} corrida(s)` + (s.msMedia ? ` · ${mmss(s.msMedia)} de media` : "")),
+    tarjeta("Eficiencia de caché",
+      s.cacheRatio == null ? "—" : Math.round(s.cacheRatio * 100) + "%",
+      "del contexto se sirvió desde caché — la palanca más directa sobre la factura"),
+  ].join("");
+
+  const util = s.conCambio, term = s.terminadas || 0;
+  $("#rendimiento").innerHTML = [
+    tarjeta("Cambio vs informe", `${util}<small> de ${term}</small>`,
+      util === term ? "todas dejaron un cambio"
+        : `${term - util} corrida(s) no tocaron ningún archivo`,
+      barra([[term > 0 ? Math.round(util / term * 100) : 0, "var(--ok)"],
+             [term > 0 ? Math.round((term - util) / term * 100) : 0, "var(--surface2)"]])),
+    tarjeta("Coste por cambio útil", dinero(s.costePorCambio),
+      "reparte TODO el gasto entre los cambios que llegaron — las corridas estériles también se pagan"),
+    tarjeta("Aterrizaje",
+      `${s.commiteadas} <small>commiteadas</small> · <span style="color:var(--accent)">${s.descartadas}</span> <small>descartadas</small>`,
+      "si «descartadas» sube, el problema es el prompt, no el presupuesto"),
+  ].join("");
 }
 
 function pintarMetricas() {
@@ -588,7 +744,7 @@ async function gatillar(modo, contexto = "") {
       body: JSON.stringify({ modo, contexto }),
     });
     j = await r.json();
-    if (!r.ok) { $("#resumen-job").textContent = "en reposo"; actualizarGatillar(); return alert(j.error); }
+    if (!r.ok) { $("#resumen-job").textContent = "en reposo"; actualizarGatillar(); return avisar(j.error); }
     conexion(true);
   } catch (e) {
     conexion(false);
@@ -608,6 +764,64 @@ async function gatillar(modo, contexto = "") {
   poll = setInterval(tick, 1500);
 }
 
+/* ── VISTA PREVIA DEL CAMBIO ──────────────────────────────────────────────
+   Aprobar una lista de nombres de archivo no es revisar: es firmar a ciegas. El
+   panel te pide el OK, así que tiene que enseñarte QUÉ apruebas, sin salir de
+   aquí. Dos niveles, según lo que el cambio sea:
+
+   · DIFF para todo — el texto exacto, coloreado.
+   · MOCKUP para lo visual — un `.html`/`.svg` se renderiza de verdad en un
+     iframe. Un cambio de UX no se juzga leyendo líneas de `.tsx`: se juzga
+     mirándolo. Por eso `mejoras-ux` está obligado a dejar su mockup en
+     `tools/cerebro-panel/mockups/`; si no lo deja, aquí no hay nada que ver y
+     eso también es información.
+
+   El iframe va en `sandbox` sin `allow-scripts`: el mockup lo escribió un agente
+   y esto es una página con permisos sobre tu repo. Se mira, no se ejecuta. */
+const esVisual = (f) => /\.(html?|svg)$/i.test(f);
+
+function filaArchivo(a, conCheckbox = false) {
+  const tag = `<span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>`;
+  const chk = conCheckbox ? `<input type="checkbox" data-f="${esc(a.archivo)}" checked>` : "";
+  const btn = `<button class="mini" data-ver="${esc(a.archivo)}">${esVisual(a.archivo) ? "Ver mockup" : "Ver cambio"}</button>`;
+  return `<div class="f-wrap"><${conCheckbox ? "label" : "div"} class="f">${chk}${tag}${esc(a.archivo)}${btn}</${conCheckbox ? "label" : "div"}>`
+    + `<div class="diff" id="diff-${cssId(a.archivo)}" hidden></div></div>`;
+}
+
+const cssId = (s) => s.replace(/[^a-z0-9]/gi, "_");
+
+function coloreaDiff(texto) {
+  return texto.split("\n").map((l) => {
+    const c = l.startsWith("+++") || l.startsWith("---") || l.startsWith("diff ") || l.startsWith("index ")
+      ? "d-hdr" : l.startsWith("@@") ? "d-hunk"
+      : l.startsWith("+") ? "d-add" : l.startsWith("-") ? "d-del" : "";
+    return c ? `<span class="${c}">${esc(l)}</span>` : esc(l);
+  }).join("\n");
+}
+
+function engancharVistaPrevia(cont) {
+  document.querySelectorAll(`${cont} [data-ver]`).forEach((b) => b.onclick = async (ev) => {
+    ev.preventDefault();            // el botón vive dentro de un <label>
+    const f = b.dataset.ver, caja = $("#diff-" + cssId(f));
+    if (!caja.hidden) { caja.hidden = true; b.textContent = esVisual(f) ? "Ver mockup" : "Ver cambio"; return; }
+    b.disabled = true;
+    try {
+      if (esVisual(f)) {
+        caja.innerHTML = `<div class="tasa">vista previa · ${esc(f)} — renderizado sin scripts</div>`
+          + `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(f)}"></iframe>`;
+      } else {
+        const d = await (await fetch("/api/filediff?archivo=" + encodeURIComponent(f))).json();
+        caja.innerHTML = d.vacio
+          ? `<div class="tasa">sin diferencias que mostrar</div>`
+          : `<pre>${coloreaDiff(d.diff)}</pre>`;
+      }
+      caja.hidden = false;
+      b.textContent = "Ocultar";
+    } catch (e) { avisar(`no se pudo leer el cambio de ${f}`); }
+    finally { b.disabled = false; }
+  });
+}
+
 /* ── checkpoint de commit ────────────────────────────────────────────────
    La corrida no aterriza sola: al terminar mostramos qué tocó y tú commiteas
    (en rama, solo esos archivos) o descartas. */
@@ -616,8 +830,8 @@ async function cargarCheckpoint(id) {
     const d = await (await fetch("/api/diff?id=" + id)).json();
     conexion(true);
     if (!d.cambios) return;
-    $("#chk-archivos").innerHTML = d.archivos.map((a) =>
-      `<div class="f"><span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>${esc(a.archivo)}</div>`).join("");
+    $("#chk-archivos").innerHTML = d.archivos.map(filaArchivo).join("");
+    engancharVistaPrevia("#chk-archivos");
     if (d.commit) {
       chkFin();
       // El commit es la MITAD del aterrizaje: si aún no se mergeó, el paso que
@@ -649,7 +863,7 @@ $("#btn-commit").onclick = async () => {
       body: JSON.stringify({ id: jid, message: $("#chk-msg").value.trim() }),
     });
     const d = await r.json();
-    if (!r.ok) { alert(d.error); b.disabled = false; b.textContent = "Commitear en rama"; return; }
+    if (!r.ok) { avisar(d.error); b.disabled = false; b.textContent = "Commitear en rama"; return; }
     b.textContent = "Commiteado"; chkFin();
     // Enciende el nodo COMMIT del aterrizaje y ofrece mergear.
     if (job) { job.commit = { rama: d.rama, hash: d.hash }; pintarFlujo(); }
@@ -668,11 +882,32 @@ $("#btn-discard").onclick = async () => {
       body: JSON.stringify({ id: job.id }),
     });
     const d = await r.json();
-    if (!r.ok) { alert(d.error); b.disabled = false; return; }
+    if (!r.ok) { avisar(d.error); b.disabled = false; return; }
     $("#chk-estado").textContent = `descartado (${d.revertidos.length + d.eliminados.length} archivo(s))`;
     chkFin();
   } catch (e) { conexion(false); b.disabled = false; }
 };
+
+/* RE-ENGANCHE. Recargar la página durante una corrida dejaba el panel ciego: la
+   UI decía «en reposo» mientras el proceso seguía vivo editando archivos. El
+   servidor ya listaba los jobs; nadie se lo preguntaba. Ahora al arrancar se
+   recupera la última corrida —viva o recién terminada— y se reanuda el polling
+   o se ofrece su checkpoint pendiente. */
+async function reengancharJob() {
+  try {
+    const d = await (await fetch("/api/jobs")).json();
+    const j = (d.jobs ?? [])[0];
+    if (!j) return;
+    const vivo = j.estado === "corriendo";
+    const pendiente = j.archivos?.length && !j.commit && !j.descartado;
+    if (!vivo && !pendiente) return;
+    job = j;
+    $("#ticker").hidden = false;
+    $("#sec-salida").hidden = false;
+    refrescar(j);
+    if (vivo) { clearInterval(poll); poll = setInterval(tick, 1500); }
+  } catch (e) { /* sin conexión: el banner ya lo dice */ }
+}
 
 async function tick() {
   if (!job) return;
@@ -716,24 +951,47 @@ function etiquetaEvento(e) {
   return { ic: "·", lbl: tool, dt: d.slice(tool.length + 1, 120) };
 }
 
+/* Tiempo y gasto SIEMPRE visibles, no solo al terminar: son las dos cosas que te
+   hacen decidir si cortas. Antes solo se veía el número de herramientas, y «45
+   herramientas» no te dice que llevas catorce minutos. Va aparte de `refrescar`
+   porque el segundero corre cada segundo y repintar el ticker a ese ritmo
+   cerraría los resultados que el usuario tenga expandidos. */
+function pintarResumen(j) {
+  const r = j.resultado, tk = j.tokens;
+  const tot = tk ? tk.entrada + tk.salida + tk.cache_lectura + tk.cache_creacion : 0;
+  const consumo = tot ? ` · ${compacto(tot)} tok` : "";
+  $("#resumen-job").textContent = j.estado === "corriendo"
+    ? `corriendo · ${mmss(Date.now() - new Date(j.inicio).getTime())}`
+      + ` · ${j.eventosTotal ?? (j.eventos ?? []).length} acciones${consumo}`
+    : `${j.estado}` + (r ? ` · ${mmss(r.duracion_ms)} · ${r.turnos} turnos` +
+        (r.coste_usd != null ? ` · $${r.coste_usd.toFixed(3)}` : "") : "") + consumo;
+}
+
 function refrescar(j) {
   job = j;
   pintarFlujo();
   const vivo = j.estado === "corriendo";
+  const CORTE = 160;   // lo que cabe sin romper el ritmo de lectura del ticker
   $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e) => {
     const t = etiquetaEvento(e);
-    // Flujo real por acción: entrada (input) → salida (resultado del tool).
-    const salida = e.resultado
-      ? `<span class="ev-out">↳ ${esc(e.resultado)}</span>`
-      : (vivo ? `<span class="ev-out ev-wait">↳ …</span>` : "");
+    // Flujo real por acción: entrada (input) → salida (resultado del tool). El
+    // resultado largo se corta pero NO se pierde: un clic lo abre entero, que es
+    // justo lo que hace falta cuando algo va mal.
+    let salida = "";
+    if (e.resultado) {
+      const largo = e.resultado.length > CORTE;
+      salida = `<span class="ev-out${largo ? " largo" : ""}"`
+        + (largo ? ` data-full="${esc(e.resultado)}" title="Clic para ver el resultado completo"` : "")
+        + `>↳ ${esc(largo ? e.resultado.slice(0, CORTE) : e.resultado)}</span>`;
+    } else if (vivo) salida = `<span class="ev-out ev-wait">↳ …</span>`;
     return `<li><div class="ev-in"><b>${esc(t.ic)} ${esc(t.lbl)}</b><span>${esc(t.dt)}</span></div>${salida}</li>`;
   }).join("") || `<li><span>sin herramientas todavía…</span></li>`;
+  document.querySelectorAll("#eventos .ev-out.largo").forEach((s) => s.onclick = () => {
+    s.textContent = "↳ " + s.dataset.full;
+    s.classList.add("abierto"); s.classList.remove("largo");
+  });
 
-  const r = j.resultado;
-  $("#resumen-job").textContent = j.estado === "corriendo"
-    ? `corriendo · ${(j.eventos ?? []).length} herramientas`
-    : `${j.estado}` + (r ? ` · ${(r.duracion_ms / 1000).toFixed(1)}s · ${r.turnos} turnos` +
-        (r.coste_usd != null ? ` · $${r.coste_usd.toFixed(3)}` : "") : "");
+  pintarResumen(j);
   const bl = $("#bloqueo");
   bl.hidden = !j.bloqueo;
   if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
@@ -770,9 +1028,7 @@ async function cargarRepo() {
     }
     $("#repo").innerHTML = `
       <div class="chk-list" id="repo-list">
-        ${d.archivos.map((a) => `
-          <label class="f"><input type="checkbox" data-f="${esc(a.archivo)}" checked>
-            <span class="tag ${a.estado === "??" ? "b-ok" : "b-warn"}">${esc(etiquetaEstado(a.estado))}</span>${esc(a.archivo)}</label>`).join("")}
+        ${d.archivos.map((a) => filaArchivo(a, true)).join("")}
       </div>
       <input id="repo-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
       <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap">
@@ -782,6 +1038,7 @@ async function cargarRepo() {
         <span class="tasa">rama actual: ${esc(d.rama)}</span>
       </div>
       <div class="tasa" id="repo-estado" style="margin-top:8px"></div>`;
+    engancharVistaPrevia("#repo-list");
     $("#btn-repo-commit").onclick = repoCommit;
     $("#btn-repo-discard").onclick = repoDiscard;
   } catch (e) { conexion(false); }
@@ -807,7 +1064,7 @@ async function repoCommit() {
       body: JSON.stringify({ message: $("#repo-msg").value.trim(), archivos: files }),
     });
     const d = await r.json();
-    if (!r.ok) { alert(d.error); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; return; }
+    if (!r.ok) { avisar(d.error); b.disabled = false; b.textContent = "Commitear seleccionados en rama"; return; }
     b.textContent = "Commiteado";
     // Ofrecer completar el flujo: mergear la rama a main + push, desde la UI.
     $("#repo-estado").innerHTML = `✓ commiteado · <b>${esc(d.rama)}</b> @ ${esc(d.hash)} — `
@@ -843,7 +1100,7 @@ async function mergear(rama, jobId, btnId) {
       // El fallo también es rastro: si `main` avanzó en el remoto, saberlo importa
       // más que el alert que se cierra y no deja nada.
       rastroAterrizaje(`⚠ merge de ${rama} a main FALLÓ`, d.error || "");
-      alert(d.error); if (b) { b.disabled = false; b.textContent = "Mergear a main + push"; } return;
+      avisar(d.error); if (b) { b.disabled = false; b.textContent = "Mergear a main + push"; } return;
     }
     $(jobId ? "#chk-estado" : "#repo-estado").textContent = `✓ mergeado a main @ ${d.hash} + pusheado 🚀`;
     rastroAterrizaje(`✓ ${rama} → main @ ${d.hash} · pusheado a origin`, d.salida || "");
@@ -863,7 +1120,7 @@ async function repoDiscard() {
       body: JSON.stringify({ archivos: files }),
     });
     const d = await r.json();
-    if (!r.ok) { alert(d.error); return; }
+    if (!r.ok) { avisar(d.error); return; }
     $("#repo-estado").textContent = `descartado (${d.revertidos.length + d.eliminados.length} archivo/s)`;
     setTimeout(cargarRepo, 400);
   } catch (e) { conexion(false); }
@@ -871,6 +1128,11 @@ async function repoDiscard() {
 $("#btn-repo-refresh").onclick = cargarRepo;
 
 cargarEstado();
+reengancharJob();
+// El cronómetro no puede depender del tick del job: durante la corrida el
+// segundero tiene que avanzar aunque no lleguen eventos nuevos — un panel
+// congelado parece un panel caído.
+setInterval(() => { if (job?.estado === "corriendo") pintarResumen(job); }, 1000);
 </script>
 </body>
 </html>

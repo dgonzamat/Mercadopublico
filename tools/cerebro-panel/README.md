@@ -81,11 +81,42 @@ terminó auditando el diff sin commitear del propio panel y cerrando en 0. El
 panel**: se derivan de `cerebro.md` al vuelo, así que el panel no puede ofrecer
 un modo que el skill no declara, ni quedarse sin uno que se añada.
 
+**Mide lo que cuesta y lo que rinde.** El panel gasta dinero real en cada disparo,
+así que lo cuenta: tokens en vivo (fresco / servido desde caché / escrito a caché
+/ salida) y dólares, acumulados en la cabecera y desglosados en tarjetas. El
+consumo se acumula desde el `usage` de cada mensaje y al cerrar se reemplaza por
+el total del evento `result` — sumar por turno aproxima, solo el `result` cuadra
+con la factura.
+
+Tres indicadores merecen explicación, porque son los que cambian decisiones:
+
+- **Cambio vs informe** — cuántas corridas dejaron un cambio en el árbol frente a
+  las que solo produjeron texto. Es el fallo más caro de detectar leyendo
+  salidas: una corrida puede razonar espléndidamente catorce minutos y no tocar
+  nada. Aquí sale como número.
+- **Coste por cambio útil** — reparte *todo* el gasto entre los cambios que sí
+  llegaron. Las corridas estériles también se pagan, así que tienen que aparecer
+  en el precio.
+- **Aterrizaje (commiteadas / descartadas)** — cambios producidos y luego tirados
+  en la revisión. Si «descartadas» sube, el problema es el prompt, no el
+  presupuesto.
+
+Estas las **mide el panel** observando el proceso. Las de `cerebro-runs.jsonl`
+—candidatos, verificados, delegación— las escribe el cerebro sobre sí mismo: son
+su relato, y su campo `coste` es prosa, no un número. Las dos cosas se muestran,
+separadas y etiquetadas, porque responden preguntas distintas.
+
+Las corridas se persisten en `jobs.json` (gitignored), así que las métricas
+sobreviven al reinicio del panel — que es parte del flujo, porque Node no recarga
+módulos. Esa persistencia arregla además un fallo con consecuencias: antes, si
+reiniciabas entre el final de una corrida y su commit, los archivos que había
+escrito quedaban **huérfanos** en el árbol, sin checkpoint que los reclamara.
+
 **Monitorea el histórico.** Lee `docs/cerebro-runs.jsonl` y muestra cada corrida
-con su señal, hallazgo, descartes, automejora y skill scan. Arriba, la **tasa
-candidatos→verificados**, que es la única respuesta no anecdótica a «¿el cerebro
-está dando valor?». Una tasa alta con pocos candidatos es un cerebro tímido; una
-baja con muchos es uno que fabrica trabajo.
+con su señal, hallazgo, descartes, automejora y skill scan. Ahí está la **tasa
+candidatos→verificados**, la respuesta no anecdótica a «¿el cerebro está dando
+valor?». Una tasa alta con pocos candidatos es un cerebro tímido; una baja con
+muchos es uno que fabrica trabajo.
 
 **Identifica bugs y los manda a corregir.** «Sondear salud» corre las cuatro
 sondas del repo de verdad (`validate-schema`, `audit-consistency`,
@@ -126,6 +157,20 @@ CEREBRO_PANEL_PERMISSION_MODE=plan node tools/cerebro-panel/server.mjs   # solo 
 El servidor escucha **solo en 127.0.0.1**. No lo expongas: ejecuta `claude` con
 permisos de edición sobre el repo, así que abrirlo a la red es dar una shell.
 
+Pero el loopback protege de la **red**, no del **navegador**: cualquier web que
+visites puede mandarle un POST a `127.0.0.1`. Un `fetch` con `content-type:
+application/json` lo corta el preflight de CORS, pero un `<form
+enctype="text/plain">` no hace preflight y puede fabricar un cuerpo que
+`JSON.parse` acepta — el truco clásico contra APIs JSON que no miran el
+content-type. Con `/api/fire` detrás, eso sería una página cualquiera lanzando
+Claude sobre tu repo. Por eso todo POST exige `Origin` propio (si viene) **y**
+content-type JSON: las dos cosas que un formulario cross-origin no puede
+falsificar.
+
+Y hay un **tope de duración**: 20 minutos por corrida, `CEREBRO_PANEL_TIMEOUT_MIN`
+para cambiarlo. No juzga la calidad, solo impide que el gasto sea ilimitado — una
+corrida sin objetivo claro no se atasca, se pone a inventariar y sigue horas.
+
 Otras defensas: `spawn` sin shell (no hay interpolación de comandos), el modo se
 valida contra la lista derivada de `cerebro.md` (un modo inventado devuelve 400)
 y el contexto libre se recorta y viaja como argumento.
@@ -157,7 +202,7 @@ el exit code y el contador declarado, nunca lo que el panel supo leer.
 
 | Ruta | Qué |
 |---|---|
-| `GET /api/state` | modos, corridas, métricas, campos del contrato |
+| `GET /api/state` | modos, corridas, métricas del log, consumo medido (`sesion`), campos del contrato |
 | `GET /api/health` | corre las cuatro sondas y devuelve sus hallazgos |
 | `POST /api/fire` | `{modo, contexto?}` → lanza la corrida, devuelve el job |
 | `GET /api/job?id=` | estado y salida acumulada de un job |

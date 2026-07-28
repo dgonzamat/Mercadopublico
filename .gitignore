@@ -13,3 +13,4 @@ next-env.d.ts
 # Token OAuth de suscripción del panel del cerebro (secreto, nunca versionar)
 tools/cerebro-panel/.claude-oauth-token
 tools/cerebro-panel/panel.log
+tools/cerebro-panel/jobs.json
