@@ -332,9 +332,19 @@ export default function DataExplorer() {
 
         {/* TABLA */}
         <section className="space-y-4 border-t-2 border-text/10 pt-6">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T es="Planilla · datos filtrados" en="Spreadsheet · filtered data" />
-          </p>
+          <div className="flex items-baseline justify-between gap-3">
+            <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              <T es="Planilla · datos filtrados" en="Spreadsheet · filtered data" />
+            </p>
+            {/* Solo por debajo de `lg`: ahí el FilterPanel deja de ser sticky y
+                su contador se va con el scroll, así que al llegar a la tabla no
+                sabes cuántos casos estás viendo. En escritorio el panel queda
+                fijo y este número sería el mismo dato dos veces en pantalla. */}
+            <p className="font-mono text-xs tabular-nums text-muted lg:hidden">
+              <span className="font-display text-lg text-accent">{filtered.length}</span>
+              {" "}/ {cases.length} <T es="casos" en="cases" />
+            </p>
+          </div>
           <DataTable rows={filtered} locale={locale} />
         </section>
       </div>
