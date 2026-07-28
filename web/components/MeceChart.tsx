@@ -27,6 +27,7 @@ export function MecePartition({
   keepIndet = false,
   hrefFor,
   locale,
+  tone = "light",
 }: {
   locale: "es" | "en";
   compact?: boolean;
@@ -47,6 +48,8 @@ export function MecePartition({
   /** Si se provee, cada categoría (segmento de la cinta + fila de la leyenda)
    *  se vuelve un enlace a hrefFor(key) — p.ej. el ancla de su detalle. */
   hrefFor?: (key: string) => string | undefined;
+  /** Tono del donut (light=crema, dark=texto oscuro); por defecto "light". */
+  tone?: "light" | "dark";
 }) {
   const scored = items ?? corpusPosteriors();
   const N = scored.length;
@@ -88,6 +91,7 @@ export function MecePartition({
         }))}
         N={donutN}
         locale={locale}
+        tone={tone}
       />
 
       <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-muted">

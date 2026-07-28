@@ -1,5 +1,5 @@
-import { corpusPosteriors, documentPosteriors, modalCounts } from "@/lib/meceModel";
-import { MeceDonut } from "@/components/MeceDonut";
+import { corpusPosteriors, documentPosteriors } from "@/lib/meceModel";
+import { MecePartition } from "@/components/MeceChart";
 import { T } from "@/components/T";
 
 /**
@@ -11,13 +11,12 @@ import { T } from "@/components/T";
  * MECE del mismo eje, no un tipo de caso aparte. Así el centro marca el total y
  * las 7 porciones (6 hipótesis + Indeterminado) lo suman. El reparto por valor
  * esperado —comparable— vive en /calidad; aquí es el conteo modal navegable.
+ *
+ * Wrapper delgado de MecePartition con tone="dark" y showDerived=false.
  */
 export function HypothesesSnapshot({ locale }: { locale: "es" | "en" }) {
   const scored = [...corpusPosteriors(), ...documentPosteriors()];
   const N = scored.length;
-  // Conteo por hipótesis MODAL (argmax) conservando «Indeterminado»: enteros y
-  // navegables (coinciden con /cases y /probabilidades). Cada caso cuenta 1.
-  const rows = modalCounts(scored, { consolidateNonHuman: true, keepIndet: true });
 
   return (
     <div>
@@ -29,18 +28,16 @@ export function HypothesesSnapshot({ locale }: { locale: "es" | "en" }) {
         />
       </p>
       <div className="mt-8">
-        <MeceDonut
+        <MecePartition
+          items={scored}
           locale={locale}
           tone="dark"
-          N={N}
-          rows={rows.map((r) => ({
-            key: r.key,
-            color: r.color,
-            count: r.count,
-            label: r.label,
-            labelEn: r.labelEn,
-            href: `/probabilidades/#hyp-${r.key}`,
-          }))}
+          consolidateNonHuman
+          keepIndet
+          showDerived={false}
+          hrefFor={(key) => `/probabilidades/#hyp-${key}`}
+          totalLabelEs=""
+          totalLabelEn=""
         />
       </div>
       <p className="mt-8 font-mono text-[11px] uppercase tracking-widest text-bg/50">
