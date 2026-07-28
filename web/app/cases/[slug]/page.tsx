@@ -696,12 +696,36 @@ export async function CaseDetailPage(
         </div>
 
         {!hasRichContent && (
-          <Caption className="italic">
-            <T locale={locale}
-              es={`Este caso aún no está expandido — solo el dato bruto. Vamos por los ${TOTAL_CASES} progresivamente.`}
-              en={`This case isn't expanded yet — just the raw record. We're going through ${TOTAL_CASES} progressively.`}
-            />
-          </Caption>
+          <div className="space-y-6 border-l-2 border-accent/40 bg-panel p-6">
+            <Caption className="italic">
+              <T locale={locale}
+                es={`Este caso aún no está expandido — solo el dato bruto. Vamos por los ${TOTAL_CASES} progresivamente.`}
+                en={`This case isn't expanded yet — just the raw record. We're going through ${TOTAL_CASES} progressively.`}
+              />
+            </Caption>
+            <div className="flex flex-wrap gap-3">
+              <LocaleLink
+                href="/cases"
+                className="inline-flex min-h-[44px] items-center border-2 border-text bg-bg px-4 py-2 font-mono text-sm uppercase tracking-wide text-text transition-colors hover:bg-text hover:text-bg"
+              >
+                <T locale={locale}
+                  es="← Ver todos los casos"
+                  en="← See all cases"
+                />
+              </LocaleLink>
+              {similar.length > 0 && (
+                <LocaleLink
+                  href={`/cases/${similar[0].caseData.id}`}
+                  className="inline-flex min-h-[44px] items-center border-2 border-accent bg-bg px-4 py-2 font-mono text-sm uppercase tracking-wide text-accent transition-colors hover:bg-accent hover:text-bg"
+                >
+                  <T locale={locale}
+                    es={`Caso similar expandido →`}
+                    en={`Expanded similar case →`}
+                  />
+                </LocaleLink>
+              )}
+            </div>
+          </div>
         )}
       </section>
 
