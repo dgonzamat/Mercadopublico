@@ -65,6 +65,7 @@ const SECONDARY_LINKS = [
 export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const tLocale = chromeLocale(pathname);
   const { user } = useAuth();
@@ -91,22 +92,63 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
 
   useEffect(() => {
     if (!open) return;
+
+    // Guardar elemento que tenía foco ANTES de moverlo (el botón trigger).
+    // CRÍTICO: capturar document.activeElement ANTES de firstLinkRef.focus(),
+    // no después — si no, captura el link ya movido y el cleanup restaura al
+    // elemento equivocado (que ya no existe al cerrar → foco perdido).
+    const previouslyFocused = document.activeElement;
+
     function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        triggerRef.current?.focus();
+        return;
+      }
+
+      // Focus trap: captura Tab/Shift+Tab para circular el foco dentro del drawer.
+      if (e.key !== "Tab") return;
+
+      const drawer = document.getElementById("mobile-nav-drawer");
+      if (!drawer) return;
+
+      const focusable = drawer.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      );
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        last?.focus();
+        e.preventDefault();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        first?.focus();
+        e.preventDefault();
+      }
     }
+
     document.addEventListener("keydown", onKeyDown);
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+
+    // Mover foco al primer link DESPUÉS de capturar previouslyFocused.
+    // Esto asegura que el cleanup pueda restaurar al elemento correcto.
     firstLinkRef.current?.focus();
+
     return () => {
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = prevOverflow;
+      // Restaura foco al cerrar (cualquier método: Escape/overlay/botón).
+      if (previouslyFocused instanceof HTMLElement) {
+        previouslyFocused.focus();
+      }
     };
   }, [open]);
 
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         aria-label={open ? closeLabel : openLabel}
         aria-expanded={open}
@@ -137,7 +179,10 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
         <div
           id="mobile-nav-drawer"
           className={`${user ? "2xl:hidden" : "xl:hidden"} fixed inset-0 z-40 overflow-y-auto bg-text text-bg`}
-          onClick={() => setOpen(false)}
+          onClick={() => {
+            setOpen(false);
+            triggerRef.current?.focus();
+          }}
           role="presentation"
         >
           <nav
