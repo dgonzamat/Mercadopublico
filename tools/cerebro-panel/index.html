@@ -268,6 +268,9 @@
       </div>
 
       <div class="warnbox" id="bloqueo" hidden></div>
+      <!-- Cierre de la fase 1: la propuesta no deja archivos, así que el
+           checkpoint no aparece y el botón de construirla necesita sitio propio. -->
+      <div id="cierre-fase" style="margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap" hidden></div>
 
       <div class="ticker" id="ticker" hidden>
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
@@ -971,24 +974,7 @@ async function cargarCheckpoint(id) {
     $("#chk-archivos").innerHTML = pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision)
       + d.archivos.map((a) => filaArchivo(a, false)).join("");
     engancharVistaPrevia("#chk-archivos");
-    /* SEGUNDA FASE. Si la corrida solo dejó el mockup, es una propuesta sin
-       implementar: aprobarla no es «commitear» —no hay nada que commitear—, es
-       mandar a construirla. El botón cierra el ciclo sin que tengas que copiar
-       la señal a mano. */
-    const soloMockup = d.archivos.length && d.archivos.every((a) => a.ignorado);
-    if (soloMockup && !d.commit) {
-      $("#chk-estado").innerHTML = `propuesta sin implementar — `
-        + `<button class="mini primary" id="btn-fase2">Aprobar y construir</button>`;
-      $("#btn-fase2").onclick = () => {
-        const mk = d.archivos.find((a) => /mockups\//.test(a.archivo))?.archivo || "";
-        gatillar("mejoras-ux",
-          `FASE 2 — implementa la propuesta ya aprobada de \`${mk}\`. El diseño está decidido: `
-          + `reprodúcelo en el código tal como lo dibuja el mockup, sin volver a diagnosticar ni `
-          + `proponer alternativas. Ábrelo y síguelo.`);
-      };
-      chkFin();
-    }
-    else if (d.commit) {
+    if (d.commit) {
       chkFin();
       // El commit es la MITAD del aterrizaje: si aún no se mergeó, el paso que
       // falta tiene que seguir a la vista (antes se perdía al recargar).
@@ -1166,6 +1152,29 @@ function refrescar(j) {
   if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
   $("#btn-detener").disabled = j.estado !== "corriendo";
   actualizarGatillar();
+
+  /* SEGUNDA FASE. Una corrida en fase 1 propone y no escribe, así que puede
+     cerrar sin tocar NADA (modos de corpus) o dejando solo el mockup (modos de
+     código). En ninguno de los dos casos aparece el checkpoint, que vive de que
+     haya archivos que commitear — de ahí que el botón viva aquí, junto al
+     resumen: aprobar una propuesta no es commitear, es mandar a construirla. */
+  const terminado = ["listo", "fallo", "cancelado", "roto"].includes(j.estado);
+  const soloPropuesta = terminado
+    && !(j.archivos ?? []).some((f) => !/mockups[\/\\]/.test(f));
+  const cf = $("#cierre-fase");
+  cf.hidden = !soloPropuesta;
+  if (soloPropuesta) {
+    cf.innerHTML = `<span class="tasa">propuesta sin implementar · si te convence, la fase 2 la construye</span> `
+      + `<button class="mini primary" id="btn-fase2">Aprobar y construir</button>`;
+    $("#btn-fase2").onclick = () => {
+      const mk = (j.archivos ?? []).find((f) => /mockups[\/\\]/.test(f));
+      const ref = mk ? `el mockup \`${mk.replace(/\\/g, "/").replace(/.*?(tools\/)/, "$1")}\`` : "la propuesta de la corrida anterior";
+      gatillar(j.modo ?? "",
+        `FASE 2 — implementa la propuesta YA APROBADA. Sigue ${ref} y el cierre de esa corrida: `
+        + `la decisión está tomada, así que reprodúcela en el código o en el corpus tal cual, sin `
+        + `volver a diagnosticar, sin proponer alternativas y sin ampliar el alcance.`);
+    };
+  }
 
   // Checkpoint: al terminar, si la corrida tocó archivos, ofrecer commit/descartar (una sola vez).
   if (["listo", "fallo", "cancelado", "roto"].includes(j.estado) && j.archivos?.length && chkJob !== j.id) {

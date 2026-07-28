@@ -846,18 +846,7 @@ const CADENAS = {
       + "«llego a /cases desde una búsqueda, filtro por país y no hay forma de volver al mapa». Sin ese "
       + "recorrido nombrado, el cambio es decoración.\n"
       + "**El mockup enseña la SECCIÓN o la PÁGINA**, no el widget aislado: una mejora de recorrido solo "
-      + "se juzga viendo el contexto del que viene y al que lleva.\n\n"
-      /* Dos fases. Implementar antes de que nadie apruebe el diseño gasta el
-         grueso del presupuesto en la mitad que puede sobrar: hoy una corrida
-         escribió 30 líneas para un estado que no ocurre en ninguno de los 330
-         casos. El diagnóstico costó una fracción; la implementación, el resto. */
-      + "## ESTA CORRIDA NO IMPLEMENTA (obligatorio)\n"
-      + "Este modo va en dos fases y tú estás en la PRIMERA: **propones, no ejecutas**. Entrega el "
-      + "diagnóstico, el recorrido que arregla, el **alcance medido** y el **mockup** — y PARA. No "
-      + "modifiques ni un archivo de `web/`. Cuesta una fracción de implementar, y si la propuesta se "
-      + "rechaza no se ha tirado nada.\n"
-      + "Cierra diciendo, en una línea, **qué archivos tocaría** la implementación. Si el usuario aprueba "
-      + "el mockup, el panel disparará la segunda fase con esa señal.",
+      + "se juzga viendo el contexto del que viene y al que lleva.",
   },
   "mejoras-tec": {
     obj: "mejorar calidad de código: reuso, simplificación, eficiencia",
@@ -952,6 +941,7 @@ function skillsDelRepo() {
 function promptLean(modo, contexto) {
   const spec = CADENAS[modo] ?? CADENAS[""];
   const nombre = modo || "diagnóstico";
+  const esDiagnostico = !modo;   // no escribe nada: no tiene fase 2 que separar
   const p = [
     `Ejecuta el modo \`${nombre}\` del cerebro UAP Codex, en headless y EFICIENTE (mínimo procesamiento).`,
     `SlashCommand está deshabilitada, así que los skills se ejecutan INLINE con Bash/Read/Write/Edit/WebSearch.`,
@@ -1110,6 +1100,28 @@ function promptLean(modo, contexto) {
     // comunes: primero cómo se trabaja aquí, luego qué hace este modo en
     // concreto — nunca al revés, o lo específico parece derogar lo común.
     ...(modo === "caso-nuevo" ? [...pasosCasoNuevo(), ``] : []),
+    /* DOS FASES, para TODOS los modos que escriben. Implementar antes de que
+       nadie apruebe la premisa gasta el grueso del presupuesto en la mitad que
+       puede sobrar. Pasó dos veces el mismo día: 30 líneas para un estado que no
+       ocurre en ninguno de los 330 casos, y un donut que sustituía la única
+       vista de una métrica. Las dos veces el diagnóstico era barato y correcto,
+       y lo caro fue lo que hubo que tirar. En los modos de corpus el desperdicio
+       es aún mayor: la prosa de un caso son ~3.500 caracteres en dos idiomas. */
+    ...(esDiagnostico ? [] : [
+      `## ESTA CORRIDA NO IMPLEMENTA — fase 1 de 2 (obligatorio)`,
+      `**Propones, no ejecutas.** Entrega la propuesta y PARA sin escribir ni un archivo del sitio ni`,
+      `del corpus. Si se rechaza, no se ha tirado nada; si se aprueba, el panel dispara la fase 2 con`,
+      `tu propuesta como especificación.`,
+      spec.corpus
+        ? `Entrega: **qué evento o desarrollo eliges**, sus **fuentes verificadas** (con URL), por qué `
+          + `supera el umbral, qué archivo crearías o tocarías, y —si actualizas— **qué párrafo** cambia `
+          + `y por qué. NO escribas la prosa: eso es la fase 2 y es lo caro.`
+        : `Entrega: el **diagnóstico**, el **alcance medido**, el **mockup**, y una línea con **qué `
+          + `archivos tocaría** la implementación. NO toques el código.`,
+      `La única excepción es un cambio de una línea cuyo diagnóstico sea más largo que el arreglo:`,
+      `aplícalo y dilo. Ante la duda, propón.`,
+      ``,
+    ]),
     `## Orden y eficiencia (obligatorio)`,
     `- 1º GATE, EN ESTE ORDEN: (a) **calibrate** — \`cd web && rm -rf out && node scripts/build-cases.mjs\`;`,
     `  (b) las 3 sondas UNA vez (validate-schema, audit-consistency, audit-design) para confirmar err=0.`,
