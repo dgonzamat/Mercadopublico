@@ -835,15 +835,35 @@ const server = http.createServer(async (req, res) => {
 // Red de seguridad: un error async no manejado en un handler mataría el panel
 // en silencio (el "se cayó"). Con estos oyentes el proceso NO muere: registra el
 // fallo en terminal y en `tools/cerebro-panel/panel.log` (gitignored) y sigue vivo.
-function logError(tag, e) {
-  process.stderr.write(`\n  ⚠ [panel] ${tag} — ver tools/cerebro-panel/panel.log\n`);
+function bitacora(linea) {
   try {
     fs.appendFileSync(path.join(here, "panel.log"),
-      `[${new Date().toISOString()}] ${tag}: ${e?.stack || e}\n`);
+      `[${new Date().toISOString()}] ${linea}\n`);
   } catch { /* no romper por no poder loguear */ }
+}
+function logError(tag, e) {
+  process.stderr.write(`\n  ⚠ [panel] ${tag} — ver tools/cerebro-panel/panel.log\n`);
+  bitacora(`${tag}: ${e?.stack || e}`);
 }
 process.on("uncaughtException", (e) => logError("excepción no capturada", e));
 process.on("unhandledRejection", (e) => logError("promesa rechazada sin manejar", e));
+
+/* CICLO DE VIDA — por qué esto existe:
+   el panel "se caía" y no había forma de saber si había reventado, si alguien
+   cerró la ventana o si lo mató el árbol de procesos de quien lo lanzó. Sin
+   registro, cada muerte costaba una investigación desde cero. Ahora el arranque
+   y CADA salida ordenada quedan escritos, así que la próxima vez la pregunta se
+   responde leyendo `panel.log`:
+     · hay línea de señal  → alguien/algo lo apagó (ventana cerrada, kill, Ctrl+C);
+     · hay línea de excepción → reventó por código;
+     · NO hay línea de cierre tras la de arranque → muerte dura (TerminateProcess:
+       el harness o el árbol de procesos del lanzador), y ahí la solución es
+       lanzarlo desacoplado — para eso está `start.ps1`. */
+// Sin acentos ni `·` a propósito: este log se lee en apuros con `Get-Content` o
+// el Bloc de notas, que en Windows asumen ANSI y lo mostrarían como mojibake.
+for (const s of ["SIGINT", "SIGTERM", "SIGHUP", "SIGBREAK"])
+  process.on(s, () => { bitacora(`apagado por ${s} | pid ${process.pid}`); process.exit(0); });
+process.on("exit", (code) => bitacora(`salida del proceso | code ${code} | pid ${process.pid}`));
 
 // Sin esto, un puerto ocupado emite un 'error' NO manejado y el proceso muere
 // con un stack de EADDRINUSE — el "se cayó" al relanzar con otro panel vivo.
@@ -860,6 +880,7 @@ server.on("error", (e) => {
 // Solo loopback: el panel ejecuta `claude` con permisos de edición sobre el
 // repo. Exponerlo a la red sería dar una shell.
 server.listen(PORT, "127.0.0.1", () => {
+  bitacora(`arrancado | pid ${process.pid} | puerto ${PORT} | permisos ${PERMISSION_MODE}`);
   console.log(`\n  cerebro-panel  ·  http://127.0.0.1:${PORT}`);
   console.log(`  repo: ${repoRoot}`);
   console.log(`  permisos al disparar: --permission-mode ${PERMISSION_MODE}`);

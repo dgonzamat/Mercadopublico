@@ -4,9 +4,26 @@ Panel de control del cerebro. **Externo al sitio**: vive fuera de `web/`, no
 entra en el `output: export` y no se despliega a GitHub Pages. Es una
 herramienta de operación del repo, no una página de uapcodex.org.
 
-```bash
-node tools/cerebro-panel/server.mjs        # → http://127.0.0.1:4180
+```powershell
+powershell -ExecutionPolicy Bypass -File tools\cerebro-panel\start.ps1   # → http://127.0.0.1:4180
+powershell -ExecutionPolicy Bypass -File tools\cerebro-panel\start.ps1 -Detener
 ```
+
+`node tools/cerebro-panel/server.mjs` también funciona, pero deja el panel
+colgando de la terminal que lo lanzó: si esa sesión se cierra —o el árbol de
+procesos de un agente se limpia— el panel muere con ella, y muere **duro**
+(sin señal, sin excepción, sin línea en el log), así que desde fuera parece que
+«se cae solo». `start.ps1` lo crea vía `Win32_Process.Create`, de modo que
+cuelga del servicio WMI y sobrevive a quien lo lanzó; además apaga el panel
+previo antes de arrancar.
+
+**Cuando se caiga, lee `panel.log`** (gitignored). Ahí está la respuesta:
+
+| Lo que ves | Qué pasó |
+|---|---|
+| `apagado por SIGINT/SIGTERM/…` | alguien lo apagó: Ctrl+C, cierre de ventana, `kill` |
+| `excepción no capturada` / `promesa rechazada` | reventó por código (y siguió vivo: hay red de seguridad) |
+| línea de `arrancado` sin ninguna de cierre | **muerte dura** — `TerminateProcess` desde fuera; lánzalo con `start.ps1` |
 
 Sin dependencias, sin build, sin `node_modules`. Node 18+.
 
