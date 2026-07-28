@@ -819,6 +819,20 @@ const CADENAS = {
     ambito: "el CORPUS bajo `web/data/cases/` — actualizar casos existentes",
     corpus: true,
   },
+  noticias: {
+    obj: "barrer la actualidad y decidir DÓNDE entra: caso nuevo, frescura de uno existente, blog o descarte",
+    cadena: "WebSearch sobre la ventana reciente (~2 semanas) → contrasta con `grep -ril` contra `web/data/cases/` y `web/data/posts/` → declara el triaje → aplica con /nuevo-caso (caso) o el formato de `web/data/posts/` (blog) → /learn",
+    ambito: "`web/data/cases/` y `web/data/posts/` — el corpus y el blog",
+    corpus: true,
+    extra: "**El triaje es el trabajo, no el barrido.** Hallar noticias UAP es trivial y el dominio está "
+      + "lleno de detalle fabricado; lo difícil es decidir dónde entra cada una. Criterio: **caso** si el "
+      + "evento tiene anclaje institucional propio (audiencia, informe, desclasificación, acción legal) y "
+      + "≥2 fuentes verificables; **frescura** si es un desarrollo sobre un caso que YA existe —entonces "
+      + "actualiza aquel y NO crees uno nuevo—; **blog** si es contexto o lectura transversal sin evento "
+      + "único que anclar; **descarte** en todo lo demás. El descarte es el resultado más frecuente y es "
+      + "un RESULTADO: declara qué descartaste y por qué. Inventar un caso por no volver con las manos "
+      + "vacías es el fallo que este modo existe para evitar.",
+  },
   "caso-nuevo": {
     obj: "crear UN caso nuevo, real y anclable, para el corpus",
     cadena: "/proximo-caso (NEWS-SWEEP) para elegir el evento → /nuevo-caso para escribirlo → validar",
@@ -890,21 +904,29 @@ function promptLean(modo, contexto) {
        panel sabe renderizar HTML en la vista previa del checkpoint, así que la
        corrida deja lo que hay que mirar. Aplica a TODO cambio, no solo a UX: un
        refactor también tiene un antes y un después que enseñar. */
-    /* Obligatorio solo si el cambio se VE. Lo hice universal y `frescura` acabó
-       maquetando un antes/después de dos párrafos de prosa: puro trámite. Un
-       entregable que a veces no aporta nada enseña a producirlo por cumplir, y
-       entonces deja de significar algo cuando sí importa. */
-    `## Mockup del cambio (obligatorio si el cambio SE VE)`,
-    `Si esta corrida toca la interfaz —componentes, rutas, estilos, marcado— deja un mockup`,
-    `autocontenible en \`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el`,
-    `checkpoint para que el cambio se apruebe VIÉNDOLO, no reconstruyéndolo de un diff.`,
-    `Si el cambio NO es visual (datos de un caso, un script, una utilidad), **no lo hagas**: ahí el`,
-    `diff ya lo dice todo y una maqueta de prosa es teatro. Dilo en el cierre en una línea.`,
+    /* SIEMPRE, y DIBUJADO. Antes lo hice condicional a que el cambio fuera de
+       interfaz, y para un caso del corpus se omitía — pero un caso del corpus SÍ
+       se ve: es una página que alguien lee. Casi todo en este repo acaba en una
+       pantalla, así que la pregunta no es «¿esto es visual?» sino «¿qué pantalla
+       cambia?». Y tiene que ser un DIBUJO de esa pantalla: un fragmento de
+       código antes/después no dice si el resultado se ve bien, que es justo lo
+       que hay que aprobar. */
+    `## Mockup del cambio — OBLIGATORIO, y GRÁFICO`,
+    `Si esta corrida modifica algo, deja SIEMPRE un mockup autocontenible en`,
+    `\`tools/cerebro-panel/mockups/<slug>.html\`. El panel lo renderiza en el checkpoint: el cambio se`,
+    `aprueba **viendo cómo queda el sitio**, no leyendo un diff.`,
+    `- **Dibuja la PÁGINA, no el código.** Reproduce la sección real afectada —mismo marcado, mismos`,
+    `  espaciados, misma tipografía— tal como la vería un lector. Un esquema de cajas o un fragmento de`,
+    `  \`.tsx\` NO valen: lo que hay que juzgar es el resultado.`,
+    `- **ANTES y DESPUÉS lado a lado**, ambos dibujados. El «antes» es el estado actual del sitio, no una`,
+    `  caricatura del problema.`,
+    `- **Todo cambio tiene una pantalla.** Un caso o un post se leen en su página: dibuja ese bloque con`,
+    `  el texto viejo y el nuevo. Un script de build cambia lo que la página muestra: dibuja eso. Solo si`,
+    `  de verdad no hay pantalla alguna (una utilidad interna), dilo en una línea y omítelo.`,
     `- **Sin JavaScript y sin recursos externos**: se sirve en un iframe \`sandbox\` que no ejecuta scripts.`,
-    `- Muestra **ANTES y DESPUÉS** lado a lado, con la paleta del sitio`,
-    `  (\`--bg:#f7f2e8; --panel:#ede6d4; --border:#c4b89d; --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a; --ok:#1e6b3a\`).`,
-    `- Si el cambio es de **UI**, el mockup es la interfaz renderizada. Si es de **código**, es el fragmento`,
-    `  antes/después con una línea que explique qué mejora y por qué — no el diff entero.`,
+    `  Usa la paleta del sitio: \`--bg:#f7f2e8; --panel:#ede6d4; --surface2:#dfd5be; --border:#c4b89d;`,
+    `  --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a; --ok:#1e6b3a\`, tipografía \`ui-sans-serif\` para`,
+    `  prosa y \`ui-monospace\` para datos.`,
     `- Es parte del entregable, no un extra: sin él solo hay texto que aprobar.`,
     ...(spec.entregable ? [spec.entregable] : []),
     ``,

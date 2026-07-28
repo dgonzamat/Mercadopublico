@@ -30,6 +30,7 @@ on:
           - mejoras-ux
           - mejoras-tec
           - frescura
+          - noticias
           - diagnostico
       senal:
         description: "Señal — qué debe atacar esta corrida (la regla de oro: sin señal no es un disparo)"

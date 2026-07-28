@@ -1,6 +1,6 @@
 ---
-description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con MODOS que tú eliges — nunca corre solo. ÚSALO cuando pidan correr el cerebro, crear un caso nuevo, buscar bugs técnicos o de UI/UX —incluido «algo está roto», «no se ve bien», «revisar el código», «hay un problema en el sitio»—, buscar mejoras de UI/UX o de código, refrescar casos existentes, revisar el estado del repo o decidir por dónde seguir, y también ante «analiza el repo», «qué falta», «dónde estamos» o «qué conviene hacer ahora» — aunque no nombren el cerebro. Modos: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | (sin argumento = diagnostica, elige y gatilla). ORQUESTA, NO EJECUTA: cada modo es una cadena de skills; los del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación.
-argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura · sin argumento = diagnostica, elige y gatilla]"
+description: Orquestador del loop de salud y crecimiento del repo UAP Codex, con MODOS que tú eliges — nunca corre solo. ÚSALO cuando pidan correr el cerebro, crear un caso nuevo, buscar bugs técnicos o de UI/UX —incluido «algo está roto», «no se ve bien», «revisar el código», «hay un problema en el sitio»—, buscar mejoras de UI/UX o de código, refrescar casos existentes, revisar el estado del repo o decidir por dónde seguir, y también ante «analiza el repo», «qué falta», «dónde estamos» o «qué conviene hacer ahora» — aunque no nombren el cerebro. Modos: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | noticias | (sin argumento = diagnostica, elige y gatilla). ORQUESTA, NO EJECUTA: cada modo es una cadena de skills; los del loop (/proximo-caso, /nuevo-caso, /blindar, /curar-memoria, /learn, /retro, /innovar) son de delegación obligatoria y hacer su trabajo a mano es una violación.
+argument-hint: "[modo: caso-nuevo | bugs | mejoras-ux | mejoras-tec | frescura | noticias · sin argumento = diagnostica, elige y gatilla]"
 ---
 
 Estás ejecutando el **cerebro** del repo: un **despachador de modos** que orquesta skills — no ejecuta su trabajo. Corre solo cuando lo invocas, con el modo que le das.
@@ -22,6 +22,7 @@ El cerebro **orquesta, no ejecuta**. Si la acción cae en el dominio de uno de e
 | M1 `caso-nuevo` | hueco de cobertura | **`/proximo-caso`** → **`/nuevo-caso`** |
 | M3 `mejoras-ux` | oportunidad sin vista que la sirva | **`/innovar`** |
 | M5 `frescura` | desarrollo nuevo sobre un caso | **`/nuevo-caso`** (su disciplina de fuentes) |
+| M6 `noticias` | la actualidad, sin destino aún | **`/nuevo-caso`** si es caso; si no, blog o descarte |
 | RATCHET | el fix abrió una clase enforzable | **`/blindar`** — *nunca* escribas una regla de audit a mano |
 | RATCHET | la corrida editó un skill del loop | **`skill-creator`** |
 | CAPTURE | apareció una lección o un descarte | **`/learn`** |
@@ -61,6 +62,7 @@ Se invoca con un modo explícito; cada modo es una cadena de skills distinta. Si
 | `mejoras-ux` | oportunidades de UI/UX | `run` → `webapp-testing` → `/innovar` · `dataviz`/`artifact-design` |
 | `mejoras-tec` | calidad de código | `simplify` · `/blindar` |
 | `frescura` | mantener vivos los casos | WebSearch + `gh-pages` → `/nuevo-caso` (disciplina) → `/learn` |
+| `noticias` | la actualidad → caso, frescura o blog | WebSearch → triaje → `/nuevo-caso` o blog → `/learn` |
 | *(sin argumento)* | diagnóstico | sondas → elige modo → **lo gatilla** |
 
 **Toda cadena cierra igual**: **`/blindar`** si se abrió una clase enforzable · **`/learn`** para lecciones y descartes · **`/retro`** al cerrar · y el **cierre obligatorio** — log, automejora y skill scan (ver Reglas transversales).
@@ -162,6 +164,28 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 | **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
 
 **La noticia es pista, no fuente.** Ancla a primaria o descarta — la tasa histórica de descarte ronda el 75%, y este dominio está lleno de detalle fabricado. Si el juicio del caso cambia, **mueve el `posterior`**: registrar evidencia nueva sin dejarla pesar es incoherente.
+
+---
+
+### M6 · `noticias` — barrer la actualidad y decidir dónde entra
+
+**Cadena:** `WebSearch` → triaje → **`/nuevo-caso`** o blog → cierre.
+
+Parte de **lo que está pasando**, no del corpus, y decide después dónde entra.
+
+| Paso | Vía | Qué aporta |
+|---|---|---|
+| Barrido | `WebSearch`, ventana ~2 semanas | Qué ocurrió |
+| Contraste | `grep -ril` en `data/cases/` y `posts/` | ¿ya está cubierto? |
+| Aplicar | **`/nuevo-caso`** o el formato de `data/posts/` | Anclaje a primaria |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Igual que los demás modos. |
+
+**El triaje es el trabajo, no el barrido**; la mayoría no entra:
+
+- **Caso**: evento con anclaje institucional propio y ≥2 fuentes verificables.
+- **Frescura**: desarrollo sobre un caso que YA existe → actualiza aquel.
+- **Blog**: contexto o lectura transversal sin evento único que anclar.
+- **Descarte**: el resto, y es lo más frecuente. Inventar un caso por no volver vacío es el fallo a evitar.
 
 ---
 
