@@ -352,6 +352,9 @@
         <span class="tasa" id="sum-visitas">— pulsa para cargar</span>
         <span class="grow"></span><span class="tasa">▾</span></summary>
       <p class="sub">Leído de Supabase con las mismas funciones que <code class="mono">/visitantes</code>. El beacon del sitio ya filtra bots.</p>
+      <!-- Los MISMOS cuatro periodos que ofrece /visitantes. Inventar otros
+           haría que los dos paneles dieran cifras distintas del mismo dato. -->
+      <div class="tabs" id="periodos" role="tablist" aria-label="Periodo"></div>
       <div id="visitas"><div class="empty">Cargando…</div></div>
     </details>
 
@@ -727,10 +730,36 @@ function pintarConsumo() {
    del panel que sale a la red, y pagarla en cada refresco para un dato que se
    consulta de vez en cuando sería gravar el arranque por nada. */
 let visitasCargadas = false;
+
+/* Los mismos periodos que `/visitantes` del sitio (`VisitorsPanel`): si el panel
+   ofreciera otros, los dos darían cifras distintas del mismo dato y habría que
+   averiguar cuál miente. `todo` usa una ventana amplia porque estas RPC filtran
+   por fecha, no admiten «sin límite». */
+const PERIODOS = [
+  { k: "hoy", t: "Hoy", dias: 1 },
+  { k: "7d", t: "7 días", dias: 7 },
+  { k: "30d", t: "30 días", dias: 30 },
+  { k: "todo", t: "Todo", dias: 3650 },
+];
+let periodoSel = "30d";
+
+function pintarPeriodos() {
+  $("#periodos").innerHTML = PERIODOS.map((p) => `
+    <button class="tab" role="tab" data-p="${p.k}" aria-selected="${p.k === periodoSel}"
+      tabindex="${p.k === periodoSel ? 0 : -1}">${esc(p.t)}</button>`).join("");
+  document.querySelectorAll("#periodos .tab").forEach((b) => b.onclick = () => {
+    periodoSel = b.dataset.p;
+    pintarPeriodos();
+    cargarVisitas();
+  });
+}
+
 async function cargarVisitas() {
   const cont = $("#visitas");
+  const per = PERIODOS.find((p) => p.k === periodoSel) ?? PERIODOS[2];
+  cont.innerHTML = `<div class="empty">Cargando ${esc(per.t.toLowerCase())}…</div>`;
   try {
-    const d = await (await fetch("/api/visitantes?dias=30")).json();
+    const d = await (await fetch(`/api/visitantes?dias=${per.dias}`)).json();
     if (d.error) {
       $("#sum-visitas").textContent = "no disponible";
       cont.innerHTML = `<div class="warnbox">No se pudieron leer las visitas: ${esc(d.error)}</div>`;
@@ -739,7 +768,7 @@ async function cargarVisitas() {
     const total = (d.porDia ?? []).reduce((n, x) => n + (x.count ?? 0), 0);
     const paises = (d.porPais ?? []).length;
     $("#sum-visitas").textContent =
-      `${miles(total)} visitas en ${d.dias} días · ${paises} países`
+      `${miles(total)} visitas · ${per.t.toLowerCase()} · ${paises} países`
       + (d.suscriptores != null ? ` · ${d.suscriptores} suscriptor(es)` : "");
 
     // Sparkline del tramo diario: la forma importa más que los números sueltos.
@@ -757,7 +786,9 @@ async function cargarVisitas() {
 
     cont.innerHTML = `
       <div class="spark">${barras}</div>
-      <div class="tasa" style="margin-top:4px">desde ${esc(d.desde)} · pico ${miles(max)} en un día</div>
+      <div class="tasa" style="margin-top:4px">${periodoSel === "todo"
+        ? `todo el histórico · ${dias.length} día(s) con tráfico`
+        : `desde ${esc(d.desde)}`} · pico ${miles(max)} en un día</div>
       <div class="cards" style="margin-top:14px">
         <div class="card"><span class="eyebrow">Por país</span>
           <div class="chk-list" style="margin-top:8px">${lista(d.porPais ?? [], "country")}</div></div>
@@ -770,7 +801,11 @@ async function cargarVisitas() {
   }
 }
 $("#d-visitas").addEventListener("toggle", () => {
-  if ($("#d-visitas").open && !visitasCargadas) { visitasCargadas = true; cargarVisitas(); }
+  if ($("#d-visitas").open && !visitasCargadas) {
+    visitasCargadas = true;
+    pintarPeriodos();
+    cargarVisitas();
+  }
 });
 
 function pintarMetricas() {
@@ -1273,14 +1308,37 @@ async function cargarRepo() {
   try {
     const d = await (await fetch("/api/repo")).json();
     conexion(true);
-    $("#sum-repo").textContent = d.archivos.length
+    const pend = d.ramas?.pendientes ?? [];
+    $("#sum-repo").textContent = (d.archivos.length
       ? `${d.archivos.length} archivo(s) sin commitear · rama ${d.rama}`
-      : `árbol limpio · rama ${d.rama}`;
+      : `árbol limpio · rama ${d.rama}`)
+      + (pend.length ? ` · ${pend.length} rama(s) sin mergear` : "");
+    /* Las ramas sin mergear van SIEMPRE, haya o no cambios sueltos: son trabajo
+       terminado que nadie recuerda, y el único motivo de que se olviden es que
+       el panel nunca las nombraba. Las ya mergeadas no se listan porque el
+       propio panel acaba de borrarlas. */
+    const ramasHtml = pend.length ? `
+      <div class="warnbox" style="margin:0 0 12px">
+        <strong>${pend.length} rama(s) sin mergear</strong> — trabajo commiteado que no está en
+        <code class="mono">main</code>. Ni se pierde ni se publica: espera decisión.
+        ${pend.map((r) => `
+          <div style="display:flex;gap:10px;align-items:center;margin-top:7px;flex-wrap:wrap">
+            <span class="mono" style="font-size:12px">${esc(r.rama)}</span>
+            <span class="tasa">${r.commits} commit(s) · ${esc(r.fecha)}</span>
+            <span class="grow"></span>
+            <button class="mini" data-vr="${esc(r.rama)}">Ver qué trae</button>
+            <button class="mini primary" data-mr="${esc(r.rama)}">Mergear a main</button>
+          </div>
+          <div class="diff" id="rama-${cssId(r.rama)}" hidden></div>`).join("")}
+      </div>` : "";
+
     if (!d.archivos.length) {
-      $("#repo").innerHTML = `<div class="empty">Working tree limpio — nada que commitear.</div>`;
+      $("#repo").innerHTML = ramasHtml
+        + `<div class="empty">Working tree limpio — nada que commitear.</div>`;
+      engancharRamas();
       return;
     }
-    $("#repo").innerHTML = pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision) + `
+    $("#repo").innerHTML = ramasHtml + pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision) + `
       <div class="chk-list" id="repo-list">
         ${d.archivos.map((a) => filaArchivo(a, true)).join("")}
       </div>
@@ -1293,11 +1351,31 @@ async function cargarRepo() {
       </div>
       <div class="tasa" id="repo-estado" style="margin-top:8px"></div>`;
     engancharVistaPrevia("#repo-list");
+    engancharRamas();
     $("#btn-repo-commit").onclick = repoCommit;
     $("#btn-repo-discard").onclick = repoDiscard;
   } catch (e) { conexion(false); }
 }
 const seleccionados = () => [...document.querySelectorAll("#repo-list input:checked")].map((c) => c.dataset.f);
+
+/* «Ver qué trae» antes de decidir: una rama con nombre críptico y tres meses de
+   antigüedad no se merge a ciegas, y sin poder mirarla la única salida cómoda es
+   ignorarla — que es exactamente cómo llegaron a ser diez. */
+function engancharRamas() {
+  document.querySelectorAll("#repo [data-vr]").forEach((b) => b.onclick = async () => {
+    const r = b.dataset.vr, caja = $("#rama-" + cssId(r));
+    if (!caja.hidden) { caja.hidden = true; b.textContent = "Ver qué trae"; return; }
+    b.disabled = true;
+    try {
+      const d = await (await fetch("/api/rama?rama=" + encodeURIComponent(r))).json();
+      caja.innerHTML = d.error ? `<div class="tasa">${esc(d.error)}</div>`
+        : `<pre>${coloreaDiff(d.resumen)}</pre>`;
+      caja.hidden = false; b.textContent = "Ocultar";
+    } catch (e) { avisar(`no se pudo leer ${r}`); }
+    finally { b.disabled = false; }
+  });
+  document.querySelectorAll("#repo [data-mr]").forEach((b) => b.onclick = () => mergear(b.dataset.mr));
+}
 
 async function repoCommit() {
   const files = seleccionados();

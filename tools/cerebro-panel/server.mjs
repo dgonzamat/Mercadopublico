@@ -691,6 +691,39 @@ function recomendar(archivos, avisos) {
   };
 }
 
+/**
+ * RAMAS. Dos problemas opuestos que se confundían en uno:
+ *
+ *  · las YA MERGEADAS son ruido puro — su contenido está en `main`, y `-d` (que
+ *    se niega a borrar lo no mergeado) las quita sin riesgo. Se limpian solas.
+ *  · las NO mergeadas son lo contrario: trabajo que nadie recuerda. Había DIEZ
+ *    —`home-hero-radar`, `design-audit-parts-5-7`, `explorador-bi-powerbi`…—
+ *    invisibles porque el panel nunca las mencionaba. Esas no se tocan JAMÁS:
+ *    se enseñan, que es lo que faltaba.
+ *
+ * Borrar en silencio lo que sobra y gritar lo que falta; nunca al revés.
+ */
+async function revisarRamas() {
+  const lista = async (args) =>
+    (await git(["branch", ...args, "--list", "claude/*"])).out
+      .split("\n").map((l) => l.replace(/^[*+]?\s*/, "").trim()).filter(Boolean);
+
+  const borradas = [];
+  for (const r of await lista(["--merged", "main"])) {
+    if (r === "main") continue;
+    if ((await git(["branch", "-d", r])).code === 0) borradas.push(r);
+  }
+
+  const pendientes = [];
+  for (const r of await lista(["--no-merged", "main"])) {
+    const commits = (await git(["rev-list", "--count", `main..${r}`])).out;
+    const fecha = (await git(["log", "-1", "--format=%cs", r])).out;
+    pendientes.push({ rama: r, commits: Number(commits) || 0, fecha });
+  }
+  pendientes.sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
+  return { borradas, pendientes };
+}
+
 /** Commitea SOLO `archivos` en una rama (nunca directo a main/master). */
 async function commitArchivos(archivos, message, etiqueta) {
   /* Fuera lo GITIGNOREADO antes de tocar nada. Los mockups de revisión están en
@@ -1578,6 +1611,22 @@ async function manejar(req, res) {
     } catch (e) { return json(res, 404, { error: `no se pudo leer ${archivo}` }); }
   }
 
+  /* Qué trae una rama pendiente, sin salir del panel. Sin esto, decidir entre
+     mergear y descartar exige irse a la terminal — y la salida cómoda es no
+     decidir, que es como se juntaron diez. */
+  if (url.pathname === "/api/rama") {
+    const rama = String(url.searchParams.get("rama") || "");
+    if (!/^claude\/[\w.-]+$/.test(rama)) return json(res, 400, { error: "rama inválida" });
+    const existe = await git(["rev-parse", "--verify", "--quiet", rama]);
+    if (existe.code !== 0) return json(res, 404, { error: `la rama ${rama} ya no existe` });
+    const log = await git(["log", "--oneline", "--no-decorate", `main..${rama}`]);
+    const stat = await git(["diff", "--stat", `main...${rama}`]);
+    return json(res, 200, {
+      rama,
+      resumen: `${log.out}\n\n${stat.out}`.trim() || "(sin diferencias con main)",
+    });
+  }
+
   if (url.pathname === "/api/filediff") {
     const [archivo] = sanear([url.searchParams.get("archivo") || ""]);
     if (!archivo) return json(res, 400, { error: "archivo inválido" });
@@ -1631,7 +1680,13 @@ async function manejar(req, res) {
     }));
     const rutas = archivos.map((a) => a.archivo);
     const revision = await revisarCambios(rutas);
-    return json(res, 200, { rama, archivos, revision, recomendacion: recomendar(rutas, revision) });
+    // Limpia lo mergeado y devuelve lo pendiente: el único sitio del panel donde
+    // esas ramas pueden dejar de ser invisibles.
+    const ramas = await revisarRamas();
+    return json(res, 200, {
+      rama, archivos, revision, ramas,
+      recomendacion: recomendar(rutas, revision),
+    });
   }
 
   if (url.pathname === "/api/repo-commit" && req.method === "POST") {
@@ -1689,7 +1744,11 @@ async function manejar(req, res) {
     // si está realmente mergeada: si algo quedó fuera, la rama sobrevive y el
     // aviso queda en la salida en vez de perderse trabajo en silencio.
     const br = await git(["branch", "-d", branch]);
-    const limpieza = br.code === 0 ? br.out : `(rama ${branch} conservada: ${br.err || br.out})`;
+    let limpieza = br.code === 0 ? br.out : `(rama ${branch} conservada: ${br.err || br.out})`;
+    // Y de paso barre las que quedaron de aterrizajes anteriores: si solo se
+    // limpia la propia, las olvidadas siguen acumulándose para siempre.
+    const { borradas } = await revisarRamas();
+    if (borradas.length) limpieza += `\ntambién se borraron ${borradas.length} rama(s) ya mergeada(s): ${borradas.join(", ")}`;
     return json(res, 200, {
       ok: true, rama: branch, hash,
       salida: `${mg.out}\n${ph.err}\n${limpieza}`.trim(),
