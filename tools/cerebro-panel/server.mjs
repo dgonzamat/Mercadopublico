@@ -568,6 +568,34 @@ async function revisarCambios(archivos) {
            + "lee qué decía y decide si tu razón es mejor.",
       });
 
+    /* ── eco: el MISMO dato pintado dos veces en la misma vista ──
+       El detector de «superficie» mira imports añadidos, y así cazó un donut que
+       ya vivía en otras tres vistas. Pero el patrón se repitió en una forma que
+       no ve: un componente que PASA un valor a su hijo y además lo pinta él.
+       Pasó con el contador del explorador —`filteredCount={filtered.length}` al
+       FilterPanel y `{filtered.length}` sobre la tabla—: el mismo número dos
+       veces en pantalla. El hallazgo era bueno, la ejecución de más; y es el
+       tercer caso hoy del mismo error. Se acota a valores de CONTEO (`.length`,
+       `…Count`, `…Total`) a propósito: un detector ancho grita con todo y se
+       aprende a ignorar, que es la única forma de que deje de servir. */
+    if (/\.(tsx|jsx)$/.test(f)) {
+      const añadido = d.split("\n").filter((l) => l.startsWith("+") && !l.startsWith("+++")).join("\n");
+      const pintados = [...añadido.matchAll(/\{([a-zA-Z_$][\w$]*(?:\.[\w$]+)*(?:\.length)?)\}/g)]
+        .map((m) => m[1])
+        .filter((e) => /\.length$|Count$|Total$/.test(e));
+      const actual = fs.readFileSync(path.join(repoRoot, f), "utf8");
+      for (const expr of [...new Set(pintados)]) {
+        const comoProp = actual.match(new RegExp(`(\\w+)=\\{${expr.replace(/[.$]/g, "\\$&")}\\}`));
+        if (!comoProp) continue;
+        avisos.push({
+          tipo: "eco", archivo: f, texto: `${expr} · ya viaja como prop \`${comoProp[1]}\``,
+          que: `Este cambio pinta «${expr}», que el mismo archivo ya pasa a un hijo como `
+             + `\`${comoProp[1]}\`. Puede ser correcto (p. ej. si el hijo se pierde de vista al `
+             + `hacer scroll), pero comprueba que no acabes con el mismo número dos veces en pantalla.`,
+        });
+      }
+    }
+
     // ── superficie: componentes añadidos que ya se renderizan en otras vistas ──
     const nuevos = [...d.matchAll(/^\+.*from\s+["']@\/components\/([\w-]+)["']/gm)].map((m) => m[1]);
     for (const comp of [...new Set(nuevos)]) {
