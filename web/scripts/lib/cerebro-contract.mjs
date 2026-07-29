@@ -41,7 +41,21 @@ export const BUILTIN_SKILLS = new Set([
   "claude-api", "session-start-hook", "skill-creator", "webapp-testing",
 ]);
 
-export const readCerebro = () => fs.readFileSync(cerebroPath, "utf-8");
+/* Se normalizan los saltos de línea al leer. Todos los regex de este módulo
+   buscan `\n` pelado, y el archivo se guarda con CRLF en Windows: bastaba el
+   `\r` invisible entre la cabecera de una tabla y su separador para que
+   `parseModeTable` devolviera null.
+ *
+ * Lo que costó: la tabla de modos dejó de parsearse, y de ahí salían EN
+ * CASCADA 26 errores de `audit-skills` —«el modo X no aparece en description»,
+ * «/blindar no está en la tabla de delegación»— todos falsos. Con err>0 el
+ * cimiento queda roto y el panel bloquea el disparo, así que el loop entero se
+ * paraba por un carácter de control. Y el mapa `CADENA_FLUJO` del panel, que
+ * parecía un segundo contrato que alguien duplicó por comodidad, era en
+ * realidad el parche de ESTE fallo: la tabla sí declara las cadenas, solo que
+ * nadie conseguía leerlas. */
+export const readCerebro = () =>
+  fs.readFileSync(cerebroPath, "utf-8").replace(/\r\n/g, "\n");
 
 export function skillInventory() {
   const repoCommands = new Set(
