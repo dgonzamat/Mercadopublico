@@ -1518,8 +1518,22 @@ function pintarCorridas() {
 $("#btn-sondear").onclick = async () => {
   const b = $("#btn-sondear");
   b.disabled = true; b.textContent = "Sondeando…";
-  $("#salud").innerHTML = `<div class="empty">Corriendo las cuatro sondas…</div>`;
+  /* Abrir la pestaña ANTES de empezar. Todo lo que pasa aquí —el «corriendo
+     las cuatro sondas», el resultado, los hallazgos— se escribe en `#salud`,
+     que vive dentro de un panel oculto: pulsabas y no ocurría nada visible
+     durante el minuto y medio que tarda. El salto automático solo se disparaba
+     con errores, así que en cuanto el cimiento se puso verde el botón pareció
+     dejar de funcionar. Un botón que pulsas TÚ debe enseñar su resultado; la
+     regla de «solo llevarse la atención si importa» era para los saltos que el
+     panel decide solo, no para los que pides. */
+  irA("d-salud");
+  $("#tabs2").scrollIntoView({ behavior: "smooth", block: "start" });
+  $("#salud").innerHTML = `<div class="empty">Corriendo las cuatro sondas… (~1-2 min)</div>`;
   try { pintarSalud(await (await fetch("/api/health")).json()); }
+  catch (e) {
+    // Sin esto, un fallo de red dejaba el «corriendo…» puesto para siempre.
+    $("#salud").innerHTML = `<div class="warnbox">No se pudo correr el sondeo. ${esc(String(e.message ?? e))}</div>`;
+  }
   finally { b.disabled = false; b.textContent = "Sondear salud"; }
 };
 
