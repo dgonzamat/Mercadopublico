@@ -1247,7 +1247,11 @@ async function cargarMockups() {
     const { mockups = [] } = await (await fetch("/api/mockups")).json();
     MOCKUPS = mockups;
     emparejarMockups(); pintarSenales();   // el ▦ de cada señal sale de aquí
-    const abiertos = mockups.filter((m) => m.estado === "pendiente" || m.estado === "en curso");
+    // `m.abierto` lo decide el SERVIDOR, con la única definición que hay. Aquí
+    // había una copia del criterio, y había divergido: contaba `pendiente|en
+    // curso` mientras otra comprobación contaba «todo lo no decidido», así que
+    // «¿queda algo?» daba 1 o 5 según quién preguntara.
+    const abiertos = mockups.filter((m) => m.abierto);
     $("#sum-mockups").textContent = mockups.length
       ? `${mockups.length} propuesta(s)` + (abiertos.length ? ` · ${abiertos.length} sin decidir` : " · todas decididas")
       : "ninguna todavía";

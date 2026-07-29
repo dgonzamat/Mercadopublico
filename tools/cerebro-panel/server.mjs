@@ -1741,6 +1741,56 @@ async function manejar(req, res) {
      cuanto su job sale de la lista — y ahí se quedan, invisibles, igual que las
      ramas. Cada uno se cruza con su corrida para saber si acabó construido,
      descartado o esperando. */
+  /* QUÉ CUENTA COMO ABIERTO. Una sola definición, en un solo sitio.
+   *
+   * Existía por duplicado y con distinto criterio: el panel contaba
+   * `pendiente|en curso` (1 propuesta) y una comprobación externa contaba
+   * «todo lo que no es construido ni descartado» (5, metiendo los huérfanos).
+   * La misma pregunta con dos respuestas, así que «¿está limpio?» dependía de
+   * quién la hiciera — y así se cerró una sesión afirmando que no quedaba nada
+   * mientras el panel enseñaba una propuesta sin decidir.
+   *
+   * `huérfano` NO está abierto: su corrida ya no existe, así que nadie puede
+   * decidirlo. Es historia, no cola. */
+  const ABIERTO = new Set(["pendiente", "en curso", "sin aterrizar"]);
+
+  /* «¿Queda algo abierto?» en UNA llamada. Antes había que ensamblarla de
+     cinco —jobs, mockups, pendientes, repo, state—, cada una con su propio
+     criterio, y quien la ensamblaba se inventaba el suyo. Un estado que cuesta
+     cinco preguntas no se comprueba: se supone. Y suponerlo fue exactamente lo
+     que produjo un cierre de sesión afirmando «panel limpio» con una propuesta
+     esperando decisión en pantalla.
+     Devuelve `limpio` y una frase lista para leer, para que la respuesta no
+     dependa de quién interprete los números. */
+  if (url.pathname === "/api/resumen") {
+    /* Se reusan los MISMOS endpoints que ya existen, en vez de recalcular:
+       duplicar el cálculo aquí sería repetir el error que este endpoint viene
+       a corregir. `pendientesDerivados` ya distingue señal de acción. */
+    const base = `http://127.0.0.1:${PORT}`;
+    const pedir = (p) => fetch(base + p).then((r) => r.json()).catch(() => ({}));
+    const [rp, mkr, pd] = await Promise.all([
+      pedir("/api/repo"), pedir("/api/mockups"), pedir("/api/pendientes"),
+    ]);
+    const derivados = pd.derivados ?? [];
+    const n = {
+      corridasVivas: [...jobs.values()].filter((j) => j.estado === "corriendo").length,
+      propuestasSinDecidir: (mkr.mockups ?? []).filter((m) => ABIERTO.has(m.estado)).length,
+      senales: derivados.filter((p) => !p.accion).length
+             + (pd.anotados ?? []).filter((p) => p.estado === "pendiente").length,
+      accionesPendientes: derivados.filter((p) => p.accion).length,
+      ramasSinMergear: (rp.ramas?.pendientes ?? []).length,
+      archivosSinCommitear: (rp.archivos ?? []).length,
+    };
+    const limpio = Object.values(n).every((v) => v === 0);
+    const partes = Object.entries(n).filter(([, v]) => v > 0)
+      .map(([k, v]) => `${v} ${k.replace(/([A-Z])/g, " $1").toLowerCase()}`);
+    return json(res, 200, {
+      limpio, ...n,
+      frase: limpio ? "nada abierto: sin corridas, propuestas, señales ni ramas"
+                    : "queda abierto: " + partes.join(" · "),
+    });
+  }
+
   if (url.pathname === "/api/mockups") {
     const dir = path.join(here, "mockups");
     let archivos = [];
@@ -1775,6 +1825,7 @@ async function manejar(req, res) {
         job: job?.id ?? null, modo: job?.modo ?? null });
     }
     lista.sort((a, b) => (a.mtime < b.mtime ? 1 : -1));
+    lista.forEach((m) => { m.abierto = ABIERTO.has(m.estado); });
 
     return json(res, 200, { mockups: lista });
   }
