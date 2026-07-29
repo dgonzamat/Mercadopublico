@@ -2388,8 +2388,14 @@ async function cargarJobs() {
   try {
     const { jobs = [] } = await pedirJobs();
     JOBS_POR_ID = Object.fromEntries(jobs.map((j) => [j.id, j]));
-    // Los pendientes «en curso» dependen de esto para saber qué pasó.
-    if (ultimosPendientes.anotados) pintarPendientes(ultimosPendientes);
+    /* Solo lo que DEPENDE de los jobs: emparejar cada señal con su mockup
+       (el enlace va mockup → corrida → señal, así que necesita este índice).
+       Antes se llamaba a `pintarPendientes` entero, que arrastraba su cascada
+       —recogerSenales, pintarTabs, pintarRegistros— por segunda vez con los
+       mismos datos. Servía para refrescar el veredicto de los «en curso» en el
+       rail, y ese rail ya no existe. Medido: 3 pintarTabs por refresco. */
+    emparejarMockups();
+    pintarSenales();
     const hoy = new Date().toISOString().slice(0, 10);
     const coste = (j) => j.resultado?.coste_usd ?? j.coste_usd ?? 0;
 
