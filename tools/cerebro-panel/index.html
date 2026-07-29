@@ -2506,13 +2506,28 @@ function pintarPresupuesto() {
    El residuo va a `diagnóstico`, y no por descarte: su trabajo declarado es
    mirar algo y decidir qué modo aplica. Es el «Indeterminado» del corpus —
    una categoría con sentido propio, no un cajón. */
+/* ORDENADOS DE MÁS ESPECÍFICO A MENOS, y ese orden ES el criterio de desempate.
+   Antes iban en el orden en que se me ocurrieron, así que «el sitio se cae al
+   abrir /cases en móvil» acababa en `mejoras-ux`: la palabra «móvil» estaba
+   antes que «se cae». Un VERBO DE FALLO describe qué pasa; un sustantivo de
+   superficie solo dice dónde. Lo primero manda.
+
+   `mejoras-tec` gana también los términos del propio contrato —`cerebro.md`,
+   el techo de chars, los skills—, que antes no casaban con nada y caían al
+   residuo: «cerebro.md en 22996/23000» no es un diagnóstico pendiente, es
+   deuda técnica con su modo. */
 const CRITERIOS = [
   { modo: "caso-nuevo",  re: /hueco de cobertura|sin caso propio|falta(n)? caso|no está cubierto/ },
   { modo: "noticias",    re: /noticia|actualidad|se anunció|desclasific|release \d|tranche/ },
+  // Qué PASA, antes que dónde pasa.
+  { modo: "bugs",        re: /\broto\b|se cae|no funciona|\bfalla\b|\bbug\b|excepción|crash|error\b|500\b|404\b/ },
   { modo: "frescura",    re: /corpus|fuente|visual|foto|documents|caso[s]? sin|desactualiz/ },
-  { modo: "mejoras-ux",  re: /\bux\b|\bui\b|navega|jerarqu|pantalla|diseñ|contraste|touch|rounded|móvil/ },
-  { modo: "mejoras-tec", re: /panel|server\.mjs|parser|contrato|refactor|duplic|simplific|deuda técnica/ },
-  { modo: "bugs",        re: /error|roto|falla|\bbug\b|no funciona|excepción|crash|se cae/ },
+  /* «panel» a secas NO: en este repo es también el token de color `--panel`, y
+     un hallazgo de contraste («muted/panel = 4.3:1») acababa en mejoras-tec en
+     vez de mejoras-ux. Una palabra que nombra dos cosas distintas no puede ser
+     criterio de una partición excluyente. Se pide el nombre completo. */
+  { modo: "mejoras-tec", re: /cerebro-panel|server\.mjs|parser|contrato|refactor|duplic|simplific|deuda técnica|cerebro\.md|techo|chars|\bskill/ },
+  { modo: "mejoras-ux",  re: /\bux\b|\bui\b|navega|jerarqu|pantalla|diseñ|contraste|touch|rounded|móvil|movil/ },
 ];
 
 /** El modo de una señal, y con cuántos criterios casó (para ver solapes). */
