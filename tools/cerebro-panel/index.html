@@ -752,32 +752,78 @@ function pintarConsumo() {
    Los cerrados NO se borran de la lista: se apilan abajo, tachados y con su
    motivo. Un pendiente que desaparece sin rastro es indistinguible de uno que
    nunca existió, y dentro de un mes lo que importa es por qué se descartó. */
-function pintarPendientes(lista) {
+function pintarPendientes(d) {
+  const derivados = d.derivados ?? [];
+  const lista = d.anotados ?? [];
   const abiertos = lista.filter((p) => p.estado === "pendiente");
   const cerrados = lista.filter((p) => p.estado !== "pendiente");
-  $("#sum-pendientes").textContent = abiertos.length
-    ? `${abiertos.length} abierto(s)` + (cerrados.length ? ` · ${cerrados.length} cerrado(s)` : "")
+  const total = derivados.length + abiertos.length;
+  $("#sum-pendientes").textContent = total
+    ? `${total} abierto(s)` + (derivados.length ? ` · ${derivados.length} del repo` : "")
+      + (cerrados.length ? ` · ${cerrados.length} cerrado(s)` : "")
     : (cerrados.length ? `todo cerrado · ${cerrados.length} en el historial` : "sin pendientes");
 
-  const fila = (p) => {
-    const cerrado = p.estado !== "pendiente";
-    const marca = p.estado === "hecho" ? "✓" : p.estado === "descartado" ? "✕" : "○";
-    const color = p.estado === "hecho" ? "var(--ok)" : p.estado === "descartado" ? "var(--muted)" : "var(--text)";
+  /* El modo con el que se ataca cada pendiente se DEDUCE de su origen. Poner un
+     desplegable para que lo eligieras sería devolverte el trabajo: el panel sabe
+     que una carencia de corpus es `frescura` y que un defecto de código es
+     `bugs`. Se puede cambiar antes de disparar, pero viene puesto. */
+  const modoDe = (p) => {
+    const t = (p.texto || "").toLowerCase();
+    if (p.origen === "corpus" || /caso|fuente|visual|corpus/.test(t)) return "frescura";
+    if (p.origen === "panel" || /panel|server\.mjs|parser|contrato/.test(t)) return "mejoras-tec";
+    if (/ux|navega|jerarqu|pantalla|dise/.test(t)) return "mejoras-ux";
+    return "bugs";
+  };
+
+  const fila = (p, derivado) => {
+    const cerrado = p.estado && p.estado !== "pendiente" && p.estado !== "en_curso";
+    const marca = p.estado === "hecho" ? "✓" : p.estado === "descartado" ? "✕"
+      : p.estado === "en_curso" ? "◍" : "○";
+    const color = p.estado === "hecho" ? "var(--ok)" : cerrado ? "var(--muted)"
+      : p.estado === "en_curso" ? "var(--accent)" : "var(--text)";
     return `<div class="pend${cerrado ? " cerrado" : ""}">
       <span class="pend-m" style="color:${color}">${marca}</span>
       <span class="grow">${esc(p.texto)}
         ${p.origen ? `<span class="tasa"> · ${esc(p.origen)}</span>` : ""}
         ${p.motivo ? `<div class="tasa" style="margin-top:2px">motivo: ${esc(p.motivo)}</div>` : ""}
+        ${p.job ? `<div class="tasa" style="margin-top:2px">lanzado en ${esc(p.job)}</div>` : ""}
       </span>
-      ${cerrado
-        ? `<button class="mini" data-reabrir="${esc(p.id)}">Reabrir</button>`
-        : `<button class="mini" data-hecho="${esc(p.id)}">Hecho</button>
-           <button class="mini" data-desc="${esc(p.id)}">Descartar</button>`}
+      ${derivado
+        // Un derivado no se cierra a mano: se cierra arreglando el hecho. Lo
+        // único que ofrece es el atajo para atacarlo.
+        ? (p.accion === "Ver en Repo"
+            ? `<span class="tasa">${esc(p.accion)}</span>`
+            : `<button class="mini primary" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
+                 data-texto="${esc(p.texto)}">Hacer</button>`)
+        : cerrado
+          ? `<button class="mini" data-reabrir="${esc(p.id)}">Reabrir</button>`
+          : `<button class="mini primary" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
+               data-texto="${esc(p.texto)}">Hacer</button>
+             ${p.estado === "en_curso" ? `<button class="mini" data-cerrar="${esc(p.id)}">Cerrar</button>` : ""}
+             <button class="mini" data-desc="${esc(p.id)}">Descartar</button>`}
     </div>`;
   };
 
-  $("#pendientes").innerHTML = (abiertos.map(fila).join("") || `<div class="tasa">nada abierto.</div>`)
-    + (cerrados.length ? `<div class="tasa" style="margin:12px 0 4px">historial</div>` + cerrados.map(fila).join("") : "");
+  $("#pendientes").innerHTML =
+      (derivados.length ? `<div class="tasa" style="margin-bottom:4px">del repo · se van solos al resolverse</div>`
+        + derivados.map((p) => fila(p, true)).join("") : "")
+    + (abiertos.length ? `<div class="tasa" style="margin:12px 0 4px">anotados</div>`
+        + abiertos.map((p) => fila(p, false)).join("") : "")
+    + (!total ? `<div class="tasa">nada abierto.</div>` : "")
+    + (cerrados.length ? `<div class="tasa" style="margin:12px 0 4px">historial</div>`
+        + cerrados.map((p) => fila(p, false)).join("") : "");
+
+  /* «Hacer» no marca: DISPARA. Y como toda corrida va en fase 1, lo que vuelve
+     es una propuesta con su mockup — así cada pendiente acaba teniendo el suyo
+     sin que nadie lo pida aparte. */
+  document.querySelectorAll("#pendientes [data-hacer]").forEach((b) => b.onclick = async () => {
+    const id = b.dataset.hacer, modo = b.dataset.modo, texto = b.dataset.texto;
+    if (!confirm(`Atacar este pendiente con «${modo}»?\n\n${texto}\n\n`
+      + `Sale una PROPUESTA con su mockup; construir es un segundo paso.`)) return;
+    if (!id.includes(":")) await cambiarPendiente({ accion: "en_curso", id });   // solo los anotados
+    gatillar(modo, `Pendiente del panel: ${texto}\n\nAtácalo como fase 1: diagnostica, mide el alcance `
+      + `y deja el mockup. No implementes.`);
+  });
 
   const accion = (sel, accionNombre, pedirMotivo) =>
     document.querySelectorAll(`#pendientes [${sel}]`).forEach((b) => b.onclick = async () => {
@@ -788,7 +834,7 @@ function pintarPendientes(lista) {
       if (pedirMotivo && motivo === "") return;
       await cambiarPendiente({ accion: accionNombre, id, motivo });
     });
-  accion("data-hecho", "hecho", false);
+  accion("data-cerrar", "hecho", false);
   accion("data-desc", "descartado", true);
   accion("data-reabrir", "reabrir", false);
 }
@@ -806,7 +852,7 @@ async function cambiarPendiente(cuerpo) {
 }
 
 async function cargarPendientes() {
-  try { pintarPendientes((await (await fetch("/api/pendientes")).json()).pendientes ?? []); }
+  try { pintarPendientes(await (await fetch("/api/pendientes")).json()); }
   catch (e) { /* el banner de conexión ya lo dice */ }
 }
 

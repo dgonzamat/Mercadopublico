@@ -1001,15 +1001,60 @@ async function rpcSupabase(fn, args) {
  */
 const ARCHIVO_PENDIENTES = path.join(here, "pendientes.json");
 
-/* Semilla: lo que quedó abierto el 28 jul 2026. Sin ella la lista nace vacía y
-   una lista vacía no se vuelve a abrir. */
+/* Semilla: SOLO lo que el panel no puede deducir mirando el repo. Todo lo demás
+   —ramas, archivos sueltos, propuestas sin construir, cifras driftadas— se
+   deriva en cada consulta (ver `pendientesDerivados`), porque pedirle al usuario
+   que escriba a mano algo que la herramienta ya sabe es exactamente el trabajo
+   que la herramienta viene a ahorrar. */
 const PENDIENTES_INICIALES = [
-  { texto: "Revisar hunk por hunk claude/design-audit-parts-3-4 y 5-7 (15 jun): qué sigue aplicando", origen: "ramas" },
   { texto: "CADENA_FLUJO es un segundo contrato: el diagrama lee la cadena de un mapa en server.mjs en vez de la tabla de cerebro.md", origen: "panel" },
   { texto: "El parser de eventos se perdió una edición (fase 2 del Release 4): el checkpoint quedó vacío con el archivo escrito", origen: "panel" },
-  { texto: "E21 · 27/330 casos sin visual (S×1 A×10 B×16). El Tier S es ariel-school-1994 y necesita imagen PD/CC, no el PDF con copyright", origen: "corpus" },
   { texto: "~38 fuentes rotas y 28/91 fotos de investigadores (declarado en CLAUDE.md)", origen: "corpus" },
 ];
+
+/**
+ * PENDIENTES DERIVADOS. No se guardan ni se marcan: son HECHOS del repo, y
+ * desaparecen solos cuando el hecho deja de serlo — mergeas la rama y el
+ * pendiente se va, sin que nadie tenga que acordarse de tacharlo. Un listado que
+ * hay que mantener a mano se desactualiza; uno que se recalcula, no puede.
+ */
+async function pendientesDerivados() {
+  const out = [];
+  const añadir = (id, texto, origen, accion) => out.push({ id, texto, origen, accion, derivado: true });
+
+  const { pendientes: ramas } = await revisarRamas();
+  for (const r of ramas)
+    añadir(`rama:${r.rama}`,
+      `Rama sin mergear: ${r.rama} — ${r.commits} commit(s), del ${r.fecha}`, "ramas", "Ver en Repo");
+
+  const sucios = (await git(["status", "--porcelain"])).out.split("\n").filter(Boolean);
+  if (sucios.length)
+    añadir("arbol", `${sucios.length} archivo(s) sin commitear en el árbol`, "repo", "Ver en Repo");
+
+  // Propuestas de fase 1 que nadie construyó: la corrida acabó dejando solo su
+  // mockup y ahí se quedó. Es el olvido más caro, porque ya se pagó el análisis.
+  for (const j of jobs.values()) {
+    if (j.estado === "corriendo" || j.commit || j.descartado) continue;
+    const arch = [...(j.archivos ?? [])];
+    if (!arch.length || arch.some((f) => !/mockups[\\/]/.test(f))) continue;
+    añadir(`fase2:${j.id}`,
+      `Propuesta sin construir: ${j.modo || "diagnóstico"} (${j.id}) dejó su mockup y no se aprobó ni se descartó`,
+      "corridas", "Aprobar y construir");
+  }
+
+  // Drift de la cifra del corpus en CLAUDE.md — el mismo que el gate persigue.
+  try {
+    const md = fs.readFileSync(path.join(repoRoot, "CLAUDE.md"), "utf8");
+    const citada = md.match(/~(\d{3})\s+a jul 2026/);
+    const reales = fs.readdirSync(path.join(repoRoot, "web", "data", "cases"))
+      .filter((f) => f.endsWith(".json")).length;
+    if (citada && Math.abs(Number(citada[1]) - reales) >= 2)
+      añadir("drift:casos",
+        `CLAUDE.md cita ~${citada[1]} casos y hay ${reales} — drift de memoria`, "memoria", "/curar-memoria");
+  } catch { /* sin CLAUDE.md legible: no se inventa el aviso */ }
+
+  return out;
+}
 
 function leerPendientes() {
   try { return JSON.parse(fs.readFileSync(ARCHIVO_PENDIENTES, "utf8")); }
@@ -1603,7 +1648,10 @@ async function manejar(req, res) {
      credenciales, sin red— se devuelve el error tal cual: un panel que enseña
      ceros cuando no pudo leer es peor que uno que dice que no pudo. */
   if (url.pathname === "/api/pendientes" && req.method !== "POST")
-    return json(res, 200, { pendientes: leerPendientes() });
+    return json(res, 200, {
+      derivados: await pendientesDerivados(),   // hechos: se recalculan y se van solos
+      anotados: leerPendientes(),               // decisiones: se cierran a mano
+    });
 
   /* Un pendiente solo se cierra declarando CÓMO: hecho o descartado. No hay
      «borrar» a secas — un pendiente que desaparece sin dejar rastro es
@@ -1620,6 +1668,13 @@ async function manejar(req, res) {
         origen: String(origen ?? "manual").slice(0, 40),
         estado: "pendiente", creado: new Date().toISOString(),
       });
+    } else if (accion === "en_curso") {
+      // Lanzado pero sin resolver: ni abierto ni cerrado. Sin este estado, un
+      // pendiente atacado sigue igual de rojo que uno intacto y se vuelve a
+      // atacar; con él, se ve que ya hay una corrida encima.
+      const p = lista.find((x) => x.id === id);
+      if (!p) return json(res, 404, { error: "pendiente no encontrado" });
+      p.estado = "en_curso";
     } else if (accion === "hecho" || accion === "descartado") {
       const p = lista.find((x) => x.id === id);
       if (!p) return json(res, 404, { error: "pendiente no encontrado" });
@@ -1633,7 +1688,7 @@ async function manejar(req, res) {
     } else return json(res, 400, { error: `acción desconocida: ${accion}` });
 
     guardarPendientes(lista);
-    return json(res, 200, { pendientes: lista });
+    return json(res, 200, { derivados: await pendientesDerivados(), anotados: lista });
   }
 
   if (url.pathname === "/api/visitantes") {
