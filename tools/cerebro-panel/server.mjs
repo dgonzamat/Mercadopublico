@@ -170,7 +170,8 @@ function cargarAterrizajes() {
 
 const ARCHIVO_JOBS = path.join(here, "jobs.json");
 const CAMPOS_PERSISTIDOS = ["id", "modo", "contexto", "estado", "inicio", "fin", "exit",
-  "resultado", "tokens", "coste_usd", "bloqueo", "commit", "descartado", "mergeado"];
+  "resultado", "tokens", "coste_usd", "bloqueo", "commit", "descartado", "mergeado",
+  "construidoPor", "origen"];   // el enlace fase 1 ↔ fase 2 tiene que sobrevivir al reinicio
 
 function guardarJobs() {
   try {
@@ -1034,7 +1035,7 @@ async function pendientesDerivados() {
   // Propuestas de fase 1 que nadie construyó: la corrida acabó dejando solo su
   // mockup y ahí se quedó. Es el olvido más caro, porque ya se pagó el análisis.
   for (const j of jobs.values()) {
-    if (j.estado === "corriendo" || j.commit || j.descartado) continue;
+    if (j.estado === "corriendo" || j.commit || j.descartado || j.construidoPor) continue;
     const arch = [...(j.archivos ?? [])];
     if (!arch.length || arch.some((f) => !/mockups[\\/]/.test(f))) continue;
     const p = {
@@ -1569,8 +1570,26 @@ async function manejar(req, res) {
     });
   }
 
+  /* Resolver a mano una propuesta que el panel no puede saber que ya se
+     construyó: la fase 2 corre como job NUEVO, así que sin enlace la fase 1
+     queda «sin construir» para siempre aunque su trabajo esté en `main` — pasó
+     con el Release 4 y con los CTA de la home. El enlace ya se guarda para las
+     nuevas; esto es para las que quedaron sueltas antes. */
+  if (url.pathname === "/api/job-estado" && req.method === "POST") {
+    const { id, estado } = await leerCuerpo(req);
+    const job = jobs.get(id);
+    if (!job) return json(res, 404, { error: "job no encontrado" });
+    if (estado === "construido") job.construidoPor = "manual";
+    else if (estado === "descartado") job.descartado = true;
+    else return json(res, 400, { error: `estado desconocido: ${estado}` });
+    guardarJobs();
+    return json(res, 200, { ok: true });
+  }
+
   if (url.pathname === "/api/fire" && req.method === "POST") {
-    const { modo = "", contexto = "" } = await leerCuerpo(req);
+    const { modo = "", contexto = "", origen } = await leerCuerpo(req);
+    // La fase 2 deja constancia en su propuesta: sin esto el enlace entre las
+    // dos corridas no existe en ninguna parte y la fase 1 nunca se cierra.
     const { modos } = contrato();
     // El modo DEBE existir en cerebro.md. No hay disparo libre: si el skill no
     // lo declara, el panel no lo ofrece y tampoco lo acepta.
@@ -1578,6 +1597,13 @@ async function manejar(req, res) {
     if (!elegido)
       return json(res, 400, { error: `modo desconocido: "${modo}". Declarados: ${modos.map((m) => m.arg || "(diagnóstico)").join(", ")}` });
     const job = dispararCerebro(elegido.arg, String(contexto).slice(0, 2000));
+    // Enlace fase 1 → fase 2. Sin él la propuesta original queda «sin construir»
+    // aunque su trabajo esté en `main`, porque la construcción es otro job.
+    if (origen && jobs.has(origen)) {
+      jobs.get(origen).construidoPor = job.id;
+      job.origen = origen;
+      guardarJobs();
+    }
     return json(res, 202, publico(job));
   }
 
@@ -1684,7 +1710,7 @@ async function manejar(req, res) {
       const estado = !job ? "huérfano"
         : job.estado === "corriendo" ? "en curso"
         : job.descartado ? "descartado"
-        : job.commit || job.mergeado ? "construido"
+        : job.commit || job.mergeado || job.construidoPor ? "construido"
         : !tocados.length ? "pendiente"                       // solo dejó el mockup
         : tocados.some((a) => sucios.has(a)) ? "sin aterrizar" // escrito y sin decidir
         : "construido";                                        // ya no está sucio: entró

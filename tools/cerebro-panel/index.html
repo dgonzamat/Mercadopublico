@@ -819,12 +819,15 @@ function pintarPendientes(d) {
       </span>
       ${p.mockup ? `<button class="mini" data-vm="${esc(p.mockup)}" data-pid="${esc(p.id)}">Ver mockup</button>` : ""}
       ${derivado
-        // Un derivado no se cierra a mano: se cierra arreglando el hecho. Lo
-        // único que ofrece es el atajo para atacarlo.
+        // Un derivado se cierra arreglando el hecho, no marcándolo. La excepción
+        // son las propuestas: el panel no puede saber que una se construyó fuera
+        // de su botón —la fase 2 es otro job— así que ahí sí hace falta decírselo.
         ? (p.accion === "Ver en Repo"
             ? `<button class="mini" data-ir="d-repo">Ver en Repo</button>`
             : `<button class="mini" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
-                 data-texto="${esc(p.texto)}">Hacer</button>`)
+                 data-texto="${esc(p.texto)}" data-job="${esc(p.job ?? "")}">Construir</button>
+               ${p.job ? `<button class="mini" data-yaesta="${esc(p.job)}" title="Su trabajo ya está en main">Ya está hecho</button>
+                          <button class="mini" data-nojob="${esc(p.job)}">Descartar</button>` : ""}`)
         : cerrado
           ? `<button class="mini" data-reabrir="${esc(p.id)}">Reabrir</button>`
           : `<button class="mini" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
@@ -869,12 +872,37 @@ function pintarPendientes(d) {
      sin que nadie lo pida aparte. */
   document.querySelectorAll("#pendientes [data-hacer]").forEach((b) => b.onclick = async () => {
     const id = b.dataset.hacer, modo = b.dataset.modo, texto = b.dataset.texto;
-    if (!confirm(`Atacar este pendiente con «${modo}»?\n\n${texto}\n\n`
-      + `Sale una PROPUESTA con su mockup; construir es un segundo paso.`)) return;
+    const origen = b.dataset.job || null;   // fase 1 que origina esta construcción
+    if (!confirm(`${origen ? "Construir" : "Atacar"} con «${modo}»?\n\n${texto}\n\n`
+      + (origen ? "El diseño ya está decidido: se implementa el mockup."
+                : "Sale una PROPUESTA con su mockup; construir es un segundo paso."))) return;
     if (!id.includes(":")) await cambiarPendiente({ accion: "en_curso", id });   // solo los anotados
-    gatillar(modo, `Pendiente del panel: ${texto}\n\nAtácalo como fase 1: diagnostica, mide el alcance `
-      + `y deja el mockup. No implementes.`);
+    gatillar(modo,
+      origen
+        ? `FASE 2 — implementa la propuesta YA APROBADA de la corrida ${origen}. Sigue su mockup y su `
+          + `cierre: la decisión está tomada, reprodúcela sin volver a diagnosticar ni ampliar el alcance.`
+        : `Pendiente del panel: ${texto}\n\nAtácalo como fase 1: diagnostica, mide el alcance `
+          + `y deja el mockup. No implementes.`,
+      origen);
   });
+
+  /* Cerrar a mano una propuesta cuyo trabajo ya está en `main`. El panel no
+     puede deducirlo —la construcción fue otro job, o pasó por la tarjeta Repo—
+     y dejarla eternamente «sin construir» convierte la lista en ruido. */
+  const marcarJob = (sel, estado, pregunta) =>
+    document.querySelectorAll(`#pendientes [${sel}]`).forEach((b) => b.onclick = async () => {
+      if (!confirm(pregunta)) return;
+      try {
+        const r = await fetch("/api/job-estado", {
+          method: "POST", headers: { "content-type": "application/json" },
+          body: JSON.stringify({ id: b.getAttribute(sel), estado }),
+        });
+        if (!r.ok) return avisar((await r.json()).error);
+        cargarPendientes();
+      } catch (e) { conexion(false); }
+    });
+  marcarJob("data-yaesta", "construido", "¿Su trabajo ya está en main? El pendiente desaparece.");
+  marcarJob("data-nojob", "descartado", "¿Descartar esta propuesta? Deja de aparecer como pendiente.");
 
   const accion = (sel, accionNombre, pedirMotivo) =>
     document.querySelectorAll(`#pendientes [${sel}]`).forEach((b) => b.onclick = async () => {
@@ -1147,7 +1175,9 @@ function pintarSalud(h) {
 /* ── disparo ─────────────────────────────────────────────────────────── */
 $("#btn-gatillar").onclick = () => gatillar(modoSel.arg, $("#contexto").value.trim());
 
-async function gatillar(modo, contexto = "") {
+// `origen`: el job de la fase 1 que esta corrida viene a construir. Viaja al
+// servidor para que la propuesta quede cerrada y deje de contarse pendiente.
+async function gatillar(modo, contexto = "", origen = null) {
   const nombre = modo || "diagnóstico";
   if (!confirm(`Gatillar «${nombre}».\n\nLanza una corrida real de Claude Code sobre el ` +
       `repo con --permission-mode ${estado.permisos}: puede editar archivos y consumir ` +
@@ -1164,7 +1194,7 @@ async function gatillar(modo, contexto = "") {
   try {
     const r = await fetch("/api/fire", {
       method: "POST", headers: { "content-type": "application/json" },
-      body: JSON.stringify({ modo, contexto }),
+      body: JSON.stringify({ modo, contexto, origen }),
     });
     j = await r.json();
     if (!r.ok) { $("#resumen-job").textContent = "en reposo"; actualizarGatillar(); return avisar(j.error); }
