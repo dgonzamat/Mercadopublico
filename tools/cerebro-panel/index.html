@@ -333,7 +333,7 @@
       <summary><span class="eyebrow">Pendientes</span>
         <span class="tasa" id="sum-pendientes">—</span>
         <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Lo que el panel no puede deducir de un diff: decisiones aplazadas y deuda declarada. Sale por una de dos puertas — hecho o descartado.</p>
+      <p class="sub">Lo que queda por decidir. Los <b>del repo</b> los deduce el panel y se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
       <div id="pendientes"></div>
       <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
         <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:260px;margin:0"
@@ -788,20 +788,22 @@ function pintarPendientes(d) {
         ${p.motivo ? `<div class="tasa" style="margin-top:2px">motivo: ${esc(p.motivo)}</div>` : ""}
         ${p.job ? `<div class="tasa" style="margin-top:2px">lanzado en ${esc(p.job)}</div>` : ""}
       </span>
+      ${p.mockup ? `<button class="mini" data-vm="${esc(p.mockup)}" data-pid="${esc(p.id)}">Ver mockup</button>` : ""}
       ${derivado
         // Un derivado no se cierra a mano: se cierra arreglando el hecho. Lo
         // único que ofrece es el atajo para atacarlo.
         ? (p.accion === "Ver en Repo"
-            ? `<span class="tasa">${esc(p.accion)}</span>`
-            : `<button class="mini primary" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
+            ? `<button class="mini" data-ir="d-repo">Ver en Repo</button>`
+            : `<button class="mini" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
                  data-texto="${esc(p.texto)}">Hacer</button>`)
         : cerrado
           ? `<button class="mini" data-reabrir="${esc(p.id)}">Reabrir</button>`
-          : `<button class="mini primary" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
+          : `<button class="mini" data-hacer="${esc(p.id)}" data-modo="${esc(modoDe(p))}"
                data-texto="${esc(p.texto)}">Hacer</button>
              ${p.estado === "en_curso" ? `<button class="mini" data-cerrar="${esc(p.id)}">Cerrar</button>` : ""}
              <button class="mini" data-desc="${esc(p.id)}">Descartar</button>`}
-    </div>`;
+    </div>
+    ${p.mockup ? `<div class="diff" id="pm-${cssId(p.id)}" hidden></div>` : ""}`;
   };
 
   $("#pendientes").innerHTML =
@@ -812,6 +814,26 @@ function pintarPendientes(d) {
     + (!total ? `<div class="tasa">nada abierto.</div>` : "")
     + (cerrados.length ? `<div class="tasa" style="margin:12px 0 4px">historial</div>`
         + cerrados.map((p) => fila(p, false)).join("") : "");
+
+  /* Ver el mockup SIN salir de la lista. Tenerlo a un clic es la diferencia
+     entre decidir y aplazar: dos propuestas se quedaron sin construir porque
+     mirarlas obligaba a ir a buscar su corrida. */
+  document.querySelectorAll("#pendientes [data-vm]").forEach((b) => b.onclick = () => {
+    const caja = $("#pm-" + cssId(b.dataset.pid));
+    if (!caja.hidden) { caja.hidden = true; b.textContent = "Ver mockup"; return; }
+    caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(b.dataset.vm)}"></iframe>`;
+    caja.hidden = false; b.textContent = "Ocultar";
+  });
+
+  // Atajo a la sección que resuelve el pendiente, en vez de un texto muerto que
+  // te deja buscándola por la página.
+  document.querySelectorAll("#pendientes [data-ir]").forEach((b) => b.onclick = () => {
+    const d = document.getElementById(b.dataset.ir);
+    if (!d) return;
+    d.open = true;
+    d.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (b.dataset.ir === "d-repo") cargarRepo();
+  });
 
   /* «Hacer» no marca: DISPARA. Y como toda corrida va en fase 1, lo que vuelve
      es una propuesta con su mockup — así cada pendiente acaba teniendo el suyo

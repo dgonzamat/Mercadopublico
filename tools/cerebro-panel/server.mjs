@@ -1037,9 +1037,17 @@ async function pendientesDerivados() {
     if (j.estado === "corriendo" || j.commit || j.descartado) continue;
     const arch = [...(j.archivos ?? [])];
     if (!arch.length || arch.some((f) => !/mockups[\\/]/.test(f))) continue;
-    añadir(`fase2:${j.id}`,
-      `Propuesta sin construir: ${j.modo || "diagnóstico"} (${j.id}) dejó su mockup y no se aprobó ni se descartó`,
-      "corridas", "Aprobar y construir");
+    const p = {
+      id: `fase2:${j.id}`, origen: "corridas", derivado: true, accion: "Aprobar y construir",
+      texto: `Propuesta sin construir · ${j.modo || "diagnóstico"} (${j.id})`,
+      // La ruta del mockup viaja con el pendiente: sin ella, para VER la
+      // propuesta hay que ir a buscar la corrida, y la salida cómoda vuelve a
+      // ser no mirarla — que es cómo se quedaron dos sin construir.
+      mockup: arch.find((f) => /mockups[\\/].+\.html?$/i.test(f))
+        ?.replace(/\\/g, "/").replace(/^.*?(tools\/)/, "$1"),
+      job: j.id,
+    };
+    out.push(p);
   }
 
   // Drift de la cifra del corpus en CLAUDE.md — el mismo que el gate persigue.
