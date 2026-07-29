@@ -1371,7 +1371,12 @@ async function cambiarPendiente(cuerpo) {
     });
     const d = await r.json();
     if (!r.ok) return avisar(d.error);
-    pintarPendientes(d.pendientes);
+    /* `d`, no `d.pendientes`: el servidor responde `{derivados, anotados}` y
+       esa propiedad NUNCA existió. Pasaba `undefined`, así que cada acción
+       sobre un pendiente —anotar, cerrar, descartar, reabrir— vaciaba las
+       señales en silencio en vez de refrescarlas, y solo volvían al recargar.
+       Nadie lo vio porque el efecto es «no pasa nada», no un error. */
+    pintarPendientes(d);
   } catch (e) { conexion(false); }
 }
 
@@ -2521,7 +2526,10 @@ const CRITERIOS = [
   { modo: "noticias",    re: /noticia|actualidad|se anunció|desclasific|release \d|tranche/ },
   // Qué PASA, antes que dónde pasa.
   { modo: "bugs",        re: /\broto\b|se cae|no funciona|\bfalla\b|\bbug\b|excepción|crash|error\b|500\b|404\b/ },
-  { modo: "frescura",    re: /corpus|fuente|visual|foto|documents|caso[s]? sin|desactualiz/ },
+  /* «visual» a secas NO, por lo mismo que «panel»: aquí significa «cobertura
+     visual» (casos sin imagen) pero también «jerarquía visual», que es UX.
+     «rounded-full en /probabilidades, jerarquía visual» acababa en frescura. */
+  { modo: "frescura",    re: /corpus|fuente|cobertura visual|sin (imagen|foto|visual)|foto|documents|caso[s]? sin|desactualiz|E21/ },
   /* «panel» a secas NO: en este repo es también el token de color `--panel`, y
      un hallazgo de contraste («muted/panel = 4.3:1») acababa en mejoras-tec en
      vez de mejoras-ux. Una palabra que nombra dos cosas distintas no puede ser
