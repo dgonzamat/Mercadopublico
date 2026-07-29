@@ -477,6 +477,16 @@
            derivados, anotados y hallazgos de sonda): si el panel puede nombrar
            el problema, pedirte que lo teclees es devolverte el trabajo. -->
       <div id="senales" style="display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 10px"></div>
+      <!-- Anotar viene aquí desde el rail. Era lo ÚNICO que aquella tarjeta
+           hacía y los chips no: el resto —la lista, «Hacer», descartar— ya
+           estaba aquí, así que los mismos cuatro pendientes salían dos veces en
+           la misma pantalla. Una señal anotada aparece como chip en su modo. -->
+      <div style="display:flex;gap:8px;margin:0 0 10px;flex-wrap:wrap">
+        <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:220px;margin:0"
+          placeholder="Anotar una señal para más tarde…">
+        <button class="mini" id="btn-add-pendiente">Anotar</button>
+        <span class="tasa" id="sum-pendientes" style="align-self:center"></span>
+      </div>
       <textarea id="contexto" rows="2"
         placeholder="Ej: /cases móvil — el título recibe 159px (44%) mientras tier y % se llevan 96px (26%)…"></textarea>
 
@@ -714,20 +724,11 @@
        pregunta que el rail existe para responder, y un `▾` sobre ella invitaba
        a esconder justo lo que hay que mirar. El resumen va a la derecha del
        rótulo, donde estaba el triángulo. -->
-  <div class="card rail-pend" id="d-pendientes">
-    <div class="linea-tit" style="margin-bottom:8px">
-      <span class="eyebrow">Qué decidir ahora</span>
-      <span class="grow"></span>
-      <span class="tasa" id="sum-pendientes">—</span>
-    </div>
-    <p class="sub" style="margin:0 0 10px">Los <b>del repo</b> se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
-    <div id="pendientes"></div>
-    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
-      <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:0;margin:0"
-        placeholder="Anotar…">
-      <button class="mini" id="btn-add-pendiente">Añadir</button>
-    </div>
-  </div>
+  <!-- Aquí vivía «Qué decidir ahora». Fuera por redundante: enseñaba los MISMOS
+       pendientes que ya son chips de señal arriba, con los mismos botones y en
+       la misma pantalla. Los chips ganaron ✕ (descartar con motivo) y ▦ (ver o
+       dibujar el mockup), así que del rail solo quedaba el campo de anotar, que
+       se fue con ellos. El historial cerrado vive en la pestaña Registros. -->
 
   <div class="tasa" style="padding:0 4px;line-height:1.5">
     El panel es externo al sitio: vive en <span class="mono">tools/</span> y nunca entra en
@@ -1176,6 +1177,9 @@ function pintarPendientes(d) {
   ultimosPendientes = d;
   recogerSenales(d, ultimaSalud);
   pintarRegistros(d);
+  // La lista del rail ya no existe: los pendientes se ven como chips de señal.
+  // Lo de abajo solo corre si alguien vuelve a montar ese contenedor.
+  if (!$("#pendientes")) return;
   const derivados = d.derivados ?? [];
   const lista = d.anotados ?? [];
   const abiertos = lista.filter((p) => p.estado === "pendiente");
