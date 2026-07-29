@@ -2563,12 +2563,7 @@ function pintarSenales() {
         // Y si no lo tiene, el botón para dibujarlo. NINGUNA señal se queda sin
         // poder verse: proponer trabajo sin enseñarlo es pedir un cheque en
         // blanco, y esa es la regla del proyecto desde el primer día.
-        : puedeDibujar(s)
-          ? `<button class="senal-mk falta" data-dibujar="${i}" title="Dibujar cómo quedaría (fase 1, no toca código)">▦+</button>`
-          // `diagnóstico` no escribe archivos por contrato, así que no puede
-          // dejar mockup. Se dice en vez de ofrecer un botón que gastaría sin
-          // poder cumplir — que es exactamente lo que hizo cuatro veces.
-          : `<span class="senal-mk" style="cursor:default;opacity:.5" title="diagnóstico solo observa: no escribe archivos, así que no deja mockup">—</span>`}
+        : `<button class="senal-mk falta" data-dibujar="${i}" title="Dibujar cómo quedaría (fase 1, no toca código)">▦+</button>`}
       <button class="senal-x" data-descartar="${i}" title="Descartar esta señal (pide motivo)">✕</button>
     </span>
     <div class="diff" id="smk-${i}" hidden style="flex:1 1 100%"></div>`;
@@ -2694,18 +2689,25 @@ let colaMockups = [], colaViva = false, colaParada = false;
    encadenándose solas hasta que las paré a mano. La regla no puede ser «hasta
    conseguirlo»; tiene que ser «una vez, y si falla se dice». */
 const intentados = new Set();
+/* La clave IGNORA los números. «1 archivo(s) sin commitear» y «2 archivo(s)
+   sin commitear» son la misma señal con otro conteo, y con la clave literal
+   cada edición del árbol la convertía en una señal «nueva» que volvía a
+   encolarse: job-62 y job-63 salieron así, con el bucle ya «arreglado». Un
+   dedup que depende de que el texto no cambie no deduplica nada. */
+const claveSenal = (t) => String(t).replace(/\d+/g, "#").trim();
 
-/* Y hay señales para las que la regla es IMPOSIBLE de cumplir, no difícil:
-   `diagnóstico` declara ámbito «NADA. Este modo solo observa: no escribas ni
-   modifiques ningún archivo». Pedirle un mockup es pedirle que viole su
-   contrato, así que la corrida termina sin dejar nada — cuatro veces seguidas
-   en mi caso. No es una excepción a la regla por comodidad: es que su clase de
-   señal no se ataca dibujando, se ataca decidiendo. */
-const puedeDibujar = (s) => (s.modo ?? "") !== "";
+/* Todos los modos pueden dejar mockup. `diagnóstico` era la excepción —su
+   ámbito decía «NADA … no escribas ningún archivo»— y por eso la regla era
+   literalmente imposible ahí: la corrida terminaba vacía siempre, cuatro
+   veces seguidas antes de que lo viera. Se le dio permiso para escribir SU
+   mockup (y solo ese): sigue sin tocar código ni corpus, pero ahora su
+   recomendación se puede juzgar mirándola. Sin excepciones, la regla se
+   sostiene sola. */
+const puedeDibujar = () => true;
 
 function encolarMockupsFaltantes() {
   const faltan = SENALES.filter((s) =>
-    !s.mockup && puedeDibujar(s) && !intentados.has(s.texto) && !colaMockups.includes(s));
+    !s.mockup && puedeDibujar(s) && !intentados.has(claveSenal(s.texto)) && !colaMockups.includes(s));
   if (faltan.length) colaMockups.push(...faltan);
   if (!colaViva && !colaParada) procesarCola();
   else pintarCola();
@@ -2738,7 +2740,7 @@ async function procesarCola() {
   if (job?.estado === "corriendo") { setTimeout(procesarCola, 4000); pintarCola(); return; }
 
   colaViva = true;
-  intentados.add(s.texto);      // ANTES de disparar: pase lo que pase, no se repite
+  intentados.add(claveSenal(s.texto));      // ANTES de disparar: pase lo que pase, no se repite
   pintarCola();
   let lanzada = null;
   try {

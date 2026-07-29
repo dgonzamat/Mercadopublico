@@ -921,7 +921,16 @@ const CADENAS = {
   "": {
     obj: "diagnóstico: sondear el estado y RECOMENDAR el modo de mayor leverage",
     cadena: "corre las 3 sondas, lee las métricas y propón qué modo conviene y por qué — NO gatilles nada",
-    ambito: "NADA. Este modo solo observa: no escribas ni modifiques ningún archivo, solo recomienda",
+    /* SOLO el mockup, como los demás modos en fase 1. Antes decía «NADA … no
+       escribas ningún archivo», y eso hacía la regla del panel —cada señal con
+       su mockup— imposible de cumplir para este modo: la corrida terminaba sin
+       dejar nada, siempre. Pasó cuatro veces seguidas antes de verlo.
+       El límite que importa no era «no escribas», era «no implementes»: un
+       diagnóstico que dibuja lo que RECOMIENDA sigue sin tocar código ni
+       corpus, y encima se puede juzgar mirándolo en vez de leyéndolo. */
+    ambito: "SOLO el mockup de tu recomendación. No toques código, corpus ni configuración: "
+      + "este modo observa y recomienda, y el ÚNICO archivo que escribe es su mockup, "
+      + "que dibuja el modo recomendado y la señal que lo justifica",
     // El diagnóstico recomendaba acciones que el panel no ofrece, y quien lo lee
     // se queda sin poder actuar. Que recomiende de la lista real.
     extra: "Recomienda SOLO uno de los modos que el panel puede disparar: **caso-nuevo, bugs, "
