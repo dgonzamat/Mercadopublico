@@ -433,6 +433,8 @@
       <div class="linea-tit">
         <span class="eyebrow">Modo</span>
         <span class="sub">el número = señales detectadas para ese modo · <b>0 = sin evidencia</b>, dispararlo sería inventar trabajo</span>
+        <span class="grow"></span>
+        <span class="tasa" id="reparto"></span>
       </div>
       <div class="tabs" id="tabs" role="tablist" aria-label="Modos del cerebro"></div>
 
@@ -1045,6 +1047,20 @@ function pintarTabs() {
      al 55%, y el que acumula carencias se ve antes de leerlo. */
   const cuenta = {};
   for (const s of SENALES) cuenta[s.modo] = (cuenta[s.modo] ?? 0) + 1;
+
+  /* La suma DECLARADA, como la leyenda «suman 100%» del corpus. Si el reparto
+     dejara de ser exhaustivo —una señal en un modo que no existe, un criterio
+     nuevo sin pestaña— la resta lo canta aquí en vez de perderse en silencio. */
+  const repartidas = Object.entries(cuenta)
+    .filter(([m]) => estado.modos.some((x) => x.arg === m))
+    .reduce((n, [, v]) => n + v, 0);
+  const nota = $("#reparto");
+  if (nota) {
+    nota.textContent = SENALES.length
+      ? `${repartidas} de ${SENALES.length} repartida(s)` + (repartidas === SENALES.length ? " · partición exhaustiva" : " · ⚠ hay señales sin modo")
+      : "";
+    nota.style.color = repartidas === SENALES.length ? "var(--muted)" : "var(--err)";
+  }
 
   $("#tabs").innerHTML = estado.modos.map((m) => {
     const n = cuenta[m.arg] ?? 0;
@@ -2411,13 +2427,42 @@ function pintarPresupuesto() {
    qué modo se ataca este pendiente, y cuántas señales tiene cada modo ahora
    mismo. Es la misma clasificación; duplicarla sería garantizar que un día
    discrepen. */
-const modoDe = (p) => {
-  const t = (p.texto || "").toLowerCase();
-  if (p.origen === "corpus" || /caso|fuente|visual|corpus/.test(t)) return "frescura";
-  if (p.origen === "panel" || /panel|server\.mjs|parser|contrato/.test(t)) return "mejoras-tec";
-  if (/ux|navega|jerarqu|pantalla|dise/.test(t)) return "mejoras-ux";
-  return "bugs";
-};
+/* PARTICIÓN MECE de señales → modos. Cada señal cae en exactamente un modo, y
+   ningún modo queda fuera del reparto. Como la del corpus: no es una etiqueta
+   bonita, es una promesa que hay que poder comprobar.
+
+   Lo anterior fallaba en las dos mitades. No era EXHAUSTIVA: solo alcanzaba 4
+   de los 7 modos — `caso-nuevo`, `noticias` y `diagnóstico` no podían recibir
+   señal jamás, así que su contador marcaba `·` por construcción y no porque no
+   hubiera trabajo. Y no era EXCLUYENTE: terminaba en `return "bugs"`, un
+   vertedero donde lo no reconocido se declaraba defecto. Decir «es un bug»
+   cuando lo que pasa es «no sé qué es» es exactamente la clase de afirmación
+   sin comprobación que este panel existe para no hacer.
+
+   El residuo va a `diagnóstico`, y no por descarte: su trabajo declarado es
+   mirar algo y decidir qué modo aplica. Es el «Indeterminado» del corpus —
+   una categoría con sentido propio, no un cajón. */
+const CRITERIOS = [
+  { modo: "caso-nuevo",  re: /hueco de cobertura|sin caso propio|falta(n)? caso|no está cubierto/ },
+  { modo: "noticias",    re: /noticia|actualidad|se anunció|desclasific|release \d|tranche/ },
+  { modo: "frescura",    re: /corpus|fuente|visual|foto|documents|caso[s]? sin|desactualiz/ },
+  { modo: "mejoras-ux",  re: /\bux\b|\bui\b|navega|jerarqu|pantalla|diseñ|contraste|touch|rounded|móvil/ },
+  { modo: "mejoras-tec", re: /panel|server\.mjs|parser|contrato|refactor|duplic|simplific|deuda técnica/ },
+  { modo: "bugs",        re: /error|roto|falla|\bbug\b|no funciona|excepción|crash|se cae/ },
+];
+
+/** El modo de una señal, y con cuántos criterios casó (para ver solapes). */
+function clasificar(p) {
+  const t = ((p.origen ? p.origen + " " : "") + (p.texto || "")).toLowerCase();
+  const casan = CRITERIOS.filter((c) => c.re.test(t));
+  return {
+    modo: casan.length ? casan[0].modo : "",   // residuo → diagnóstico
+    ambiguo: casan.length > 1,
+    otros: casan.slice(1).map((c) => c.modo),
+  };
+}
+
+const modoDe = (p) => clasificar(p).modo;
 
 /* ── señales detectadas ───────────────────────────────────────────────────
    Lo que el panel YA sabe que va mal, ofrecido como texto de partida. Pedirte
@@ -2454,8 +2499,11 @@ function pintarSenales() {
     const i = SENALES.indexOf(s);
     const ajena = s.modo !== (modoSel?.arg ?? "");
     return `<span class="senal-wrap">
-      <button class="senal${ajena ? " ajena" : ""}" data-senal="${i}" aria-pressed="false">
-        <span class="senal-org">${esc(s.origen)}${ajena ? ` · ${esc(s.modo)}` : ""}</span>
+      <button class="senal${ajena ? " ajena" : ""}" data-senal="${i}" aria-pressed="false"
+        ${s.ambiguo ? `title="También encaja en: ${esc(s.otros.join(", "))} — la partición no fue excluyente aquí"` : ""}>
+        <span class="senal-org">${esc(s.origen)}${ajena ? ` · ${esc(s.modo || "diagnóstico")}` : ""}${
+          // Solape visible: el ojo tiene que poder auditar el reparto.
+          s.ambiguo ? ` <span style="color:var(--warn)">· también ${esc(s.otros[0])}</span>` : ""}</span>
         <span class="senal-txt">${esc(s.corto)}</span>
       </button>
       ${s.mockup
@@ -2568,8 +2616,13 @@ function marcarSenalActiva() {
 /** Recoge señales de las dos fuentes que el panel ya consulta. */
 function recogerSenales(pend, salud) {
   const corto = (t) => t.length > 64 ? t.slice(0, 63) + "…" : t;
-  const mk = (origen, texto, extra = {}) =>
-    ({ origen, texto, corto: corto(texto), modo: modoDe({ texto, origen }), ...extra });
+  const mk = (origen, texto, extra = {}) => {
+    // Se guarda la clasificación ENTERA, no solo el modo: si una señal casó con
+    // más de un criterio, la partición no fue excluyente ahí y hay que poder
+    // verlo en vez de que el primer `if` decida en silencio.
+    const c = clasificar({ texto, origen });
+    return { origen, texto, corto: corto(texto), modo: c.modo, ambiguo: c.ambiguo, otros: c.otros, ...extra };
+  };
   const s = [];
   // Se arrastra el `mockup` del pendiente: si ya se atacó, su propuesta se
   // mira desde aquí en vez de ir a buscarla al catálogo.
