@@ -247,6 +247,11 @@
   .tabs2 .t2-lbl{font-size:13px;flex:none}
   .tabs2 button[aria-selected="true"] .t2-lbl{font-weight:600}
   .t2-alerta{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+  /* Señal puesta: borde de acento y un fondo rosado apenas perceptible. No
+     invierte a tinta plena como el selector de modo porque esto no es una
+     elección exclusiva —puedes escribir la tuya encima— sino un «venías de
+     aquí». */
+  .senal.puesta{border-color:var(--accent);background:#f9ecee}
   .tab-body{padding:18px 20px 20px}
   .tab-body > .sub{margin:0 0 14px;color:var(--muted);max-width:70ch}
   #tab-cifra{font-size:13px;color:var(--text);margin-bottom:6px}
@@ -1452,7 +1457,7 @@ function pintarSalud(h) {
 
 /* ── disparo ─────────────────────────────────────────────────────────── */
 $("#btn-gatillar").onclick = () => gatillar(modoSel.arg, $("#contexto").value.trim());
-$("#contexto").oninput = actualizarGatillar;
+$("#contexto").oninput = () => { marcarSenalActiva(); actualizarGatillar(); };
 $("#btn-override").onclick = () => { override = true; actualizarGatillar(); };
 
 // `origen`: el job de la fase 1 que esta corrida viene a construir. Viaja al
@@ -2240,13 +2245,28 @@ function pintarSenales() {
   if (!c) return;
   if (!SENALES.length) { c.innerHTML = `<span class="tasa">sin señales detectadas ahora mismo — escríbela abajo</span>`; return; }
   c.innerHTML = SENALES.map((s, i) => `
-    <button class="mini" data-senal="${i}" style="text-align:left;max-width:100%">
+    <button class="mini senal" data-senal="${i}" aria-pressed="false" style="text-align:left;max-width:100%">
       <span class="eyebrow" style="margin-right:7px">${esc(s.origen)}</span>${esc(s.corto)}
     </button>`).join("");
   document.querySelectorAll("#senales [data-senal]").forEach((b) => b.onclick = () => {
     $("#contexto").value = SENALES[+b.dataset.senal].texto;
     $("#contexto").focus();
+    marcarSenalActiva();
     actualizarGatillar();
+  });
+  marcarSenalActiva();
+}
+
+/* Qué señal está puesta, marcada en el chip. Elegir una y ver el textarea
+   llenarse no dice CUÁL de las cuatro elegiste — y si luego la editas a mano,
+   deja de ser ninguna. Se compara con el texto real, así que el chip se apaga
+   solo en cuanto tocas la caja. */
+function marcarSenalActiva() {
+  const v = $("#contexto").value.trim();
+  document.querySelectorAll("#senales [data-senal]").forEach((b) => {
+    const activa = SENALES[+b.dataset.senal]?.texto.trim() === v;
+    b.classList.toggle("puesta", activa);   // el color
+    b.setAttribute("aria-pressed", String(activa));   // y lo que oye un lector
   });
 }
 
