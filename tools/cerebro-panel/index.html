@@ -875,6 +875,20 @@ function cadenaDeNodos(cadena) {
   const tok = [...cadena.matchAll(/`([^`]+)`/g)].map((m) => m[1]);
   // WebSearch aparece sin backticks en la cadena de `frescura`.
   if (/WebSearch/i.test(cadena)) tok.unshift("WebSearch");
+
+  /* Cadena en PROSA. `diagnóstico` declara «sondas → elige modo → lo gatilla»:
+     tiene cadena, pero no invoca skills, así que no lleva un solo backtick y el
+     extractor devolvía cero nodos. El stepper salía con gate + aterrizaje y el
+     panel avisaba «no declara cadena» — falso: la declara, solo que sus pasos
+     no son herramientas. Al partir por las flechas, ese modo enseña su flujo
+     real y el aviso queda reservado para el fallo de contrato de verdad. */
+  if (!tok.length && /→/.test(cadena)) {
+    for (const p of cadena.split("→")) {
+      const t = p.replace(/[*`]/g, "").trim();
+      if (t) tok.push(t);
+    }
+  }
+
   const vistos = new Set();
   return tok.filter((t) => !vistos.has(t) && vistos.add(t))
             .map((t) => ({ id: t, t, s: t.startsWith("/") ? "skill del loop" : "librería" }));
@@ -1905,7 +1919,7 @@ async function registrarDescarte(j, motivo) {
    o se ofrece su checkpoint pendiente. */
 async function reengancharJob() {
   try {
-    const d = await (await fetch("/api/jobs")).json();
+    const d = await pedirJobs();
     const j = (d.jobs ?? [])[0];
     if (!j) return;
     const vivo = j.estado === "corriendo";
@@ -1936,6 +1950,7 @@ async function tick() {
   if (["listo", "fallo", "cancelado", "roto"].includes(job.estado)) {
     clearInterval(poll);
     cargarEstado();          // la corrida pudo escribir en el log
+    olvidarJobs();           // sin esto el gasto se quedaría en el de antes
     cargarJobs();            // y acaba de mover el gasto del día
   }
 }
@@ -2360,9 +2375,18 @@ function pintarRegistros(d) {
    el hecho crudo y agregarlo es trabajo del cliente. */
 let porModo = [];
 
+/* Una sola lectura de `/api/jobs` por arranque. La pedían DOS veces —
+   `reengancharJob` para recuperar la corrida viva y `cargarJobs` para el gasto
+   del día y el desglose por modo— con los mismos 27 KB y el mismo parseo. Se
+   comparte la promesa: quien llegue segundo reutiliza la primera. */
+let jobsEnVuelo = null;
+const pedirJobs = () => (jobsEnVuelo ??= fetch("/api/jobs").then((r) => r.json()));
+/** Tras una corrida los datos cambian, así que la siguiente lectura es fresca. */
+const olvidarJobs = () => { jobsEnVuelo = null; };
+
 async function cargarJobs() {
   try {
-    const { jobs = [] } = await (await fetch("/api/jobs")).json();
+    const { jobs = [] } = await pedirJobs();
     JOBS_POR_ID = Object.fromEntries(jobs.map((j) => [j.id, j]));
     // Los pendientes «en curso» dependen de esto para saber qué pasó.
     if (ultimosPendientes.anotados) pintarPendientes(ultimosPendientes);
