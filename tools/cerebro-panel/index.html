@@ -736,11 +736,20 @@
        pregunta que el rail existe para responder, y un `▾` sobre ella invitaba
        a esconder justo lo que hay que mirar. El resumen va a la derecha del
        rótulo, donde estaba el triángulo. -->
-  <!-- Aquí vivía «Qué decidir ahora». Fuera por redundante: enseñaba los MISMOS
-       pendientes que ya son chips de señal arriba, con los mismos botones y en
-       la misma pantalla. Los chips ganaron ✕ (descartar con motivo) y ▦ (ver o
-       dibujar el mockup), así que del rail solo quedaba el campo de anotar, que
-       se fue con ellos. El historial cerrado vive en la pestaña Registros. -->
+  <!-- ACCIONES, no señales. Una rama por mergear, unos archivos por commitear
+       y una propuesta por construir NO son trabajo para un modo del cerebro:
+       son cosas que resuelve el propio panel, con un botón. Meterlas en la
+       partición de modos era un error de categoría, y producía el absurdo de
+       ofrecer «dibujar el mockup» de una propuesta que ya tiene el suyo.
+       Aquí no hay modo ni mockup: hay decisión y acción. -->
+  <div class="card" id="aterrizables" hidden style="padding:16px 18px">
+    <div class="linea-tit" style="margin-bottom:8px">
+      <span class="eyebrow">Listo para aterrizar</span>
+      <span class="grow"></span>
+      <span class="tasa" id="sum-aterrizables"></span>
+    </div>
+    <div id="lista-aterrizables"></div>
+  </div>
 
   <div class="tasa" style="padding:0 4px;line-height:1.5">
     El panel es externo al sitio: vive en <span class="mono">tools/</span> y nunca entra en
@@ -2188,6 +2197,11 @@ async function cargarRepo() {
     const d = await (await fetch("/api/repo")).json();
     conexion(true);
     const pend = d.ramas?.pendientes ?? [];
+    // El rail «Listo para aterrizar» las enseña sin que haya que abrir Repo:
+    // una rama olvidada es trabajo terminado que nadie recuerda, y llegaron a
+    // acumularse veinte porque solo se veían entrando aquí.
+    RAMAS = pend;
+    pintarAterrizables();
     $("#sum-repo").textContent = (d.archivos.length
       ? `${d.archivos.length} archivo(s) sin commitear · rama ${d.rama}`
       : `árbol limpio · rama ${d.rama}`)
@@ -2760,6 +2774,43 @@ async function procesarCola() {
 }
 
 /** Recoge señales de las dos fuentes que el panel ya consulta. */
+/* Lo que se puede ATERRIZAR: ramas por mergear, cambios sin commitear y
+   propuestas por construir. No llevan modo ni mockup — llevan botón. */
+let ACCIONES = [], RAMAS = [];
+
+function pintarAterrizables() {
+  const caja = $("#aterrizables"), c = $("#lista-aterrizables");
+  if (!caja || !c) return;
+  const filas = [];
+
+  // Las ramas primero: es lo que se olvida, y olvidarlas cuesta el trabajo entero.
+  for (const r of RAMAS) filas.push({
+    tag: "rama", color: "var(--warn)",
+    txt: r.rama, meta: `${r.commits} commit(s)${r.dias != null ? ` · ${r.dias} día(s)` : ""}`,
+    btn: "Mergear", fn: () => mergear(r.rama, null, null),
+  });
+  for (const a of ACCIONES) filas.push({
+    tag: a.accion === "Aprobar y construir" ? "propuesta" : "árbol",
+    color: a.accion === "Aprobar y construir" ? "var(--accent)" : "var(--muted)",
+    txt: a.texto, meta: a.origen ?? "",
+    btn: a.accion, fn: () => { irA("d-repo"); $("#tabs2").scrollIntoView({ behavior: "smooth" }); cargarRepo(); },
+  });
+
+  caja.hidden = !filas.length;
+  $("#sum-aterrizables").textContent = filas.length ? `${filas.length}` : "";
+  if (!filas.length) return;
+
+  c.innerHTML = filas.map((f, i) => `
+    <div class="pend">
+      <span class="badge b-run" style="background:${f.color};flex:none">${esc(f.tag)}</span>
+      <span class="grow"><span class="mono" style="font-size:12.5px;overflow-wrap:anywhere">${esc(f.txt)}</span>
+        ${f.meta ? `<div class="tasa" style="margin-top:2px">${esc(f.meta)}</div>` : ""}</span>
+      <button class="mini" data-atz="${i}">${esc(f.btn)}</button>
+    </div>`).join("");
+  document.querySelectorAll("#lista-aterrizables [data-atz]").forEach((b) =>
+    b.onclick = () => filas[+b.dataset.atz].fn());
+}
+
 function recogerSenales(pend, salud) {
   const corto = (t) => t.length > 64 ? t.slice(0, 63) + "…" : t;
   const mk = (origen, texto, extra = {}) => {
@@ -2769,14 +2820,25 @@ function recogerSenales(pend, salud) {
     const c = clasificar({ texto, origen });
     return { origen, texto, corto: corto(texto), modo: c.modo, ambiguo: c.ambiguo, otros: c.otros, ...extra };
   };
-  const s = [];
-  // Se arrastra el `mockup` del pendiente: si ya se atacó, su propuesta se
-  // mira desde aquí en vez de ir a buscarla al catálogo.
-  for (const p of pend?.derivados ?? []) s.push(mk("repo", p.texto, { mockup: p.mockup, job: p.job }));
+  /* DOS CLASES, y confundirlas era el error de fondo. Un derivado que trae
+     `accion` no es evidencia para una corrida: es algo que el panel resuelve
+     él —mergear, commitear, construir la fase 2— y su sitio es el rail, con su
+     botón. Mezclarlas metía en la partición de modos cosas que no son trabajo
+     de modo, y producía el absurdo de ofrecer «dibuja el mockup» sobre una
+     propuesta que ya tenía el suyo. */
+  const s = [], acc = [];
+  for (const p of pend?.derivados ?? []) {
+    if (p.accion) acc.push(p);
+    else s.push(mk("repo", p.texto, { mockup: p.mockup, job: p.job }));
+  }
+  // Se arrastra el `mockup` del anotado: si ya se atacó, su propuesta se mira
+  // desde aquí en vez de ir a buscarla al catálogo.
   for (const p of (pend?.anotados ?? []).filter((x) => x.estado === "pendiente"))
     s.push(mk(p.origen || "anotado", p.texto, { mockup: p.mockup, job: p.job }));
   for (const h of salud ?? []) s.push(mk("sonda", h));
   SENALES = s.slice(0, 8);       // más de ocho deja de ser una lista y es un muro
+  ACCIONES = acc;
+  pintarAterrizables();
   emparejarMockups();
   encolarMockupsFaltantes();     // la regla: ninguna se queda sin propuesta
   pintarSenales();
