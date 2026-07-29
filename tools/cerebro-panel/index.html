@@ -2420,14 +2420,12 @@ function pintarSenales() {
     + (verOtrosModos && otras.length
       ? `<button class="mini" id="solo-modo" style="align-self:flex-start">solo las de ${esc(modoSel?.arg || "diagnóstico")}</button>` : "");
 
-  /* Si NINGUNA de las visibles tiene propuesta, se dice de dónde sale. El
-     mockup es justo lo que quieres ver antes de decidir —«cómo quedaría»— pero
-     no preexiste: lo dibuja la fase 1, cuyo único entregable es ese dibujo.
-     Solo cuando falta en todas: una nota que sale siempre deja de leerse. */
-  if (lista.length && !lista.some((s) => s.mockup)) {
-    c.insertAdjacentHTML("beforeend",
-      `<div class="tasa" style="flex:1 1 100%;margin-top:2px">ninguna tiene propuesta todavía · el mockup de «cómo quedaría» lo dibuja esta misma corrida, que no toca código</div>`);
-  }
+  /* Aquí hubo una línea avisando de que ninguna señal tenía propuesta. Fuera:
+     el botón que está 40px más abajo dice «Gatillar <modo> sobre esta señal» y
+     esa corrida ES la que dibuja el mockup — narrar la ausencia justo encima
+     de la acción que la resuelve no añade nada, y con ninguna atacada salía en
+     todos los modos, o sea siempre. Que una señal tenga propuesta se ve porque
+     aparece su ▦; que no la tenga se ve porque no aparece. */
 
   if ($("#solo-modo")) $("#solo-modo").onclick = () => { verOtrosModos = false; pintarSenales(); };
   document.querySelectorAll("#senales [data-vmk]").forEach((b) => b.onclick = () => {
