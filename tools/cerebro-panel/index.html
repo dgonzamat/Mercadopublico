@@ -1142,6 +1142,24 @@ function pintarConsumo() {
    Los cerrados NO se borran de la lista: se apilan abajo, tachados y con su
    motivo. Un pendiente que desaparece sin rastro es indistinguible de uno que
    nunca existió, y dentro de un mes lo que importa es por qué se descartó. */
+/* Qué pasó con la corrida que ataca este pendiente. `en_curso` era una puerta
+   de un solo sentido: `job-53` se lanzó sobre las fuentes rotas, terminó sin
+   dejar un solo archivo y el pendiente se quedó ahí, ni accionable ni resuelto.
+   Una corrida que acaba sin producir nada es un RESULTADO —normalmente que la
+   señal no daba para un cambio—, y hay que decirlo para poder reabrirlo. */
+function veredictoDeCorrida(p) {
+  if (!p.job) return `<div class="tasa" style="margin-top:2px;color:var(--warn)">corrida en marcha, pero el panel no guardó cuál — no se puede reconciliar</div>`;
+  const j = JOBS_POR_ID[p.job];
+  if (!j) return `<div class="tasa" style="margin-top:2px">su corrida ya no está en el registro</div>`;
+  if (j.estado === "corriendo") return `<div class="tasa" style="margin-top:2px;color:var(--accent)">corriendo ahora mismo</div>`;
+
+  const n = (j.archivos ?? []).length;
+  if (n) return `<div class="tasa" style="margin-top:2px;color:var(--ok)">${j.id} dejó ${n} archivo(s) — decídelo en el checkpoint</div>`;
+  return `<div class="tasa" style="margin-top:2px;color:var(--warn)">${j.id} terminó sin tocar nada`
+    + `${j.resultado?.coste_usd != null ? ` · ${dinero(j.resultado.coste_usd)} gastados` : ""}`
+    + ` — informe, no cambio. Reábrelo o ciérralo con motivo.</div>`;
+}
+
 function pintarPendientes(d) {
   // Las mismas carencias alimentan la lista de decisiones Y el selector de
   // señal: son el mismo hecho leído para dos preguntas distintas.
@@ -1170,6 +1188,7 @@ function pintarPendientes(d) {
         ${p.origen ? `<span class="tasa"> · ${esc(p.origen)}</span>` : ""}
         ${p.motivo ? `<div class="tasa" style="margin-top:2px">motivo: ${esc(p.motivo)}</div>` : ""}
         ${p.job ? `<div class="tasa" style="margin-top:2px">lanzado en ${esc(p.job)}</div>` : ""}
+        ${p.estado === "en_curso" ? veredictoDeCorrida(p) : ""}
         ${!p.mockup && !cerrado
           /* Decir POR QUÉ no hay mockup. Antes se omitía el botón y ya: cuatro
              anotados seguidos sin él se leen como «los mockups no aparecen»,
@@ -1236,14 +1255,17 @@ function pintarPendientes(d) {
     if (!confirm(`${origen ? "Construir" : "Atacar"} con «${modo}»?\n\n${texto}\n\n`
       + (origen ? "El diseño ya está decidido: se implementa el mockup."
                 : "Sale una PROPUESTA con su mockup; construir es un segundo paso."))) return;
-    if (!id.includes(":")) await cambiarPendiente({ accion: "en_curso", id });   // solo los anotados
-    gatillar(modo,
+    // Se dispara PRIMERO para saber qué job es, y solo después se marca el
+    // pendiente con su id. Al revés, `en_curso` quedaba sin corrida asociada
+    // y no había forma de contar qué había pasado con él.
+    const j = await gatillar(modo,
       origen
         ? `FASE 2 — implementa la propuesta YA APROBADA de la corrida ${origen}. Sigue su mockup y su `
           + `cierre: la decisión está tomada, reprodúcela sin volver a diagnosticar ni ampliar el alcance.`
         : `Pendiente del panel: ${texto}\n\nAtácalo como fase 1: diagnostica, mide el alcance `
           + `y deja el mockup. No implementes.`,
       origen);
+    if (!id.includes(":")) await cambiarPendiente({ accion: "en_curso", id, job: j?.id });
   });
 
   /* Cerrar a mano una propuesta cuyo trabajo ya está en `main`. El panel no
@@ -1613,6 +1635,7 @@ async function gatillar(modo, contexto = "", origen = null) {
   refrescar(j);
   clearInterval(poll);
   poll = setInterval(tick, 1500);
+  return j;      // quien dispara desde un pendiente necesita saber qué job es
 }
 
 /* ── VISTA PREVIA DEL CAMBIO ──────────────────────────────────────────────
@@ -2282,6 +2305,9 @@ let porModo = [];
 async function cargarJobs() {
   try {
     const { jobs = [] } = await (await fetch("/api/jobs")).json();
+    JOBS_POR_ID = Object.fromEntries(jobs.map((j) => [j.id, j]));
+    // Los pendientes «en curso» dependen de esto para saber qué pasó.
+    if (ultimosPendientes.anotados) pintarPendientes(ultimosPendientes);
     const hoy = new Date().toISOString().slice(0, 10);
     const coste = (j) => j.resultado?.coste_usd ?? j.coste_usd ?? 0;
 
@@ -2309,6 +2335,7 @@ async function cargarJobs() {
 /* Pronóstico del modo elegido. Todo sale de lo ya cargado: `porModo` (de
    `/api/jobs`) y `MOCKUPS_POR_MODO` (de `/api/mockups`). */
 let MOCKUPS_POR_MODO = {};
+let JOBS_POR_ID = {};      // para reconciliar los pendientes «en curso»
 
 function pintarPronostico() {
   const c = $("#pronostico");

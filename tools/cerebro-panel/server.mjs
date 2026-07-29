@@ -1759,7 +1759,7 @@ async function manejar(req, res) {
      indistinguible de uno que nunca existió, y el motivo del descarte es la
      mitad del valor de haberlo anotado. */
   if (url.pathname === "/api/pendientes" && req.method === "POST") {
-    const { accion, id, texto, origen, motivo } = await leerCuerpo(req);
+    const { accion, id, texto, origen, motivo, job: req_job } = await leerCuerpo(req);
     const lista = leerPendientes();
 
     if (accion === "add") {
@@ -1776,6 +1776,13 @@ async function manejar(req, res) {
       const p = lista.find((x) => x.id === id);
       if (!p) return json(res, 404, { error: "pendiente no encontrado" });
       p.estado = "en_curso";
+      /* QUÉ corrida lo ataca. Sin esto `en_curso` era una puerta de un solo
+         sentido: `job-53` se lanzó sobre las fuentes rotas, terminó sin dejar
+         un solo archivo, y el pendiente se quedó marcado «en curso» para
+         siempre — ni accionable ni resuelto, y sin nadie a quien preguntarle
+         qué pasó. Guardar el id permite reconciliarlo contra el job. */
+      if (req_job) p.job = String(req_job).slice(0, 40);
+      p.lanzado = new Date().toISOString();
     } else if (accion === "hecho" || accion === "descartado") {
       const p = lista.find((x) => x.id === id);
       if (!p) return json(res, 404, { error: "pendiente no encontrado" });
