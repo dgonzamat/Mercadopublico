@@ -207,13 +207,6 @@
   .pend.cerrado{opacity:.55}
   .pend.cerrado .grow{text-decoration:line-through;text-decoration-color:var(--border)}
   .pend button{flex:none}
-  .pron{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;margin-top:10px}
-  .pron-kv{display:flex;flex-direction:column}
-  .pron-kv b{font-family:ui-monospace,monospace;font-size:18px;font-weight:600;
-    letter-spacing:-.01em;font-variant-numeric:tabular-nums}
-  .pron-kv span{font-size:11.5px;color:var(--muted)}
-  .pron-mk{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;
-    background:var(--head);border:1px solid var(--surface2);border-radius:10px;padding:12px 14px}
   .fila-modo{display:flex;gap:12px;align-items:center;padding:8px 0;flex-wrap:wrap;
     border-bottom:1px solid var(--surface2);font-size:12.5px}
   .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
@@ -496,14 +489,12 @@
       </div>
       <div class="tasa" style="margin-top:8px">edita el repo con <b>acceptEdits</b> · tope de 20 min</div>
 
-      <!-- PRONÓSTICO. Lo que pasó las otras veces que disparaste ESTE modo. El
-           desglose por modo estaba enterrado en la pestaña Rendimiento, o sea a
-           tres clics del único momento en que sirve: antes de gastar. Aquí, un
-           modo que tira la mitad de lo que produce te lo dice antes. -->
-      <div style="margin-top:16px;border-top:1px solid var(--surface2);padding-top:14px">
-        <span class="eyebrow" style="display:block;margin-bottom:4px">Pronóstico · qué pasó las últimas veces con este modo</span>
-        <div id="pronostico"></div>
-      </div>
+      <!-- Aquí vivió un bloque de «Pronóstico» con el histórico del modo. Fuera
+           a petición: con todo decidido —que es el estado normal— se quedaba en
+           una fila diciendo que no había nada que decidir, y una fila que solo
+           puede informar de una ausencia es ruido con permiso de residencia.
+           Las mismas cifras siguen en la pestaña Rendimiento, por modo, que es
+           donde se consultan sin estorbar al disparo. -->
       <!-- El prompt era lo más caro del panel y lo único que no se podía leer
            antes de pagarlo: se descubría lo que pedía de verdad leyendo la
            corrida ya terminada. Va plegado porque no se consulta siempre, pero
@@ -982,9 +973,8 @@ function pintarFlujo() {
   // cadena, que tiene que decir algo desde el arranque y al cambiar de modo —
   // no solo cuando hay una corrida que refrescar.
   pintarEstado(job);
-  // Prompt y pronóstico dependen del modo: cambiar de pestaña los invalida.
+  // El prompt depende del modo: cambiar de pestaña lo invalida.
   if (typeof cargarPrompt === "function") cargarPrompt();
-  if (typeof pintarPronostico === "function") pintarPronostico();
   actualizarGatillar();          // el botón nombra el modo elegido
 }
 
@@ -1330,12 +1320,6 @@ async function cargarMockups() {
   const cont = $("#mockups");
   try {
     const { mockups = [] } = await (await fetch("/api/mockups")).json();
-    // TODOS los de cada modo, no solo el último: el pronóstico necesita saber
-    // cuáles siguen sin decidir, y eso no se sabe mirando uno. Vienen ordenados
-    // por fecha desc, así que cada lista conserva ese orden.
-    MOCKUPS_MODO = {};
-    for (const m of mockups) if (m.modo) (MOCKUPS_MODO[m.modo] ??= []).push(m);
-    pintarPronostico();
     const abiertos = mockups.filter((m) => m.estado === "pendiente" || m.estado === "en curso");
     $("#sum-mockups").textContent = mockups.length
       ? `${mockups.length} propuesta(s)` + (abiertos.length ? ` · ${abiertos.length} sin decidir` : " · todas decididas")
@@ -2328,85 +2312,11 @@ async function cargarJobs() {
 
     pintarPresupuesto();
     pintarPorModo();
-    pintarPronostico();
     actualizarGatillar();
   } catch (e) { /* el banner de conexión ya lo dice */ }
 }
 
-/* Pronóstico del modo elegido. Todo sale de lo ya cargado: `porModo` (de
-   `/api/jobs`) y `MOCKUPS_MODO` (de `/api/mockups`). */
-let MOCKUPS_MODO = {};     // modo → sus mockups, más reciente primero
 let JOBS_POR_ID = {};      // para reconciliar los pendientes «en curso»
-
-function pintarPronostico() {
-  const c = $("#pronostico");
-  if (!c || !modoSel) return;
-  const m = porModo.find((x) => x.modo === (modoSel.arg || "diagnóstico"))
-    ?? { n: 0, cambio: 0, descartadas: 0, coste: 0 };
-  const pctAt = m.n ? Math.round(m.cambio / m.n * 100) : 0;
-  const pctDe = m.n ? Math.round(m.descartadas / m.n * 100) : 0;
-  // El umbral no es cosmético: por debajo de la mitad, el modo produce más
-  // trabajo del que aterriza, y eso es un problema de prompt, no de suerte.
-  const riesgo = pctDe >= 40 || (m.n > 0 && pctAt < 50);
-  const cAt = pctAt < 50 ? "var(--warn)" : "var(--ok)";
-  const cDe = pctDe >= 40 ? "var(--err)" : "var(--text)";
-  /* SOLO lo que sigue sin decidir. El pronóstico enseñaba «la última
-     propuesta» del modo, y la última de `mejoras-ux` era `home-cta-hierarchy`:
-     construida, aterrizada y viva en `main` desde ayer. Un botón grande para
-     mirar trabajo terminado invita a rehacerlo, y es la tercera vez hoy que el
-     panel resucita algo ya cerrado (la galería mal etiquetada, el «sin mockup
-     todavía», y esto).
-     La regla, de una vez: el historial vive en la pestaña Mockups, que es un
-     catálogo y lo dice; en cualquier sitio que empuje a decidir solo entra lo
-     que sigue abierto. Que el modo deje propuestas se demuestra contándolas,
-     no colgando una hecha. */
-  const delModo = MOCKUPS_MODO[modoSel.arg || "diagnóstico"] ?? [];
-  const abiertos = delModo.filter((x) => x.estado !== "construido" && x.estado !== "descartado");
-  const mk = abiertos[0] ?? null;
-  const ultimo = delModo[0] ?? null;
-
-  c.innerHTML = `
-    <div class="pron">
-      <div class="pron-kv"><b style="color:${cAt}">${m.n ? pctAt + "%" : "—"}</b><span>aterrizó (dejó cambio)</span></div>
-      <div class="pron-kv"><b style="color:${cDe}">${m.n ? pctDe + "%" : "—"}</b><span>se descartó en la revisión</span></div>
-      <div class="pron-kv"><b>${m.n ? dinero(m.coste / m.n) : "—"}</b><span>coste medio por corrida</span></div>
-      <div class="tasa" style="flex:1 1 200px;min-width:180px">${m.n
-        ? `${m.cambio}/${m.n} corridas dejaron cambio · ${m.descartadas} descartada(s)`
-        : "sin historial de este modo todavía"}</div>
-    </div>
-    ${riesgo ? `<div class="sub" style="color:var(--warn);margin-top:8px">histórico flojo en este modo: buena parte de lo que produce se tira — acota la señal antes de gastar</div>` : ""}
-    <div class="pron-mk">
-      <span class="badge ${mk ? "b-err" : delModo.length ? "b-ok" : "b-run"}">mockup</span>
-      <span class="mono" style="flex:1 1 160px;min-width:0;overflow-wrap:anywhere">${
-        mk ? esc(mk.nombre)
-        : delModo.length ? `${delModo.length} propuesta(s) · todas decididas`
-        : "sin propuestas todavía"}</span>
-      <span class="tasa">${
-        mk ? esc(mk.estado + " · " + (mk.mtime ?? "").slice(0, 10))
-        : delModo.length ? `la última: ${esc(ultimo.nombre)} (${esc(ultimo.estado)})`
-        : "este modo no ha dejado ningún mockup"}</span>
-      ${mk ? `<button class="mini" id="pron-ver" data-mk="${esc(mk.archivo)}">ver la propuesta sin decidir</button>` : ""}
-    </div>
-    ${mk
-      ? `<div class="sub" style="margin-top:6px">la propuesta se aprueba mirándola, no leyendo su ruta</div>`
-      : delModo.length
-        // Nada que hacer aquí. Se dice y se manda al catálogo, que es donde el
-        // historial no estorba porque nadie va allí a decidir.
-        ? `<div class="sub" style="margin-top:6px">Nada esperando decisión en este modo. El historial está en la pestaña <b>Mockups</b>.</div>`
-        /* Que un modo NUNCA deje mockup no es un dato neutro, y por eso se dice
-           entero: significa que aterriza cambios sin pasar por revisión visual,
-           que es justo lo que las dos fases venían a impedir. */
-        : `<div class="sub" style="margin-top:6px;color:var(--warn)">Toda corrida de fase 1 debería dejar una propuesta mirable; si este modo nunca la deja, es que aterriza cambios sin pasar por revisión visual.</div>`}
-    <div class="diff" id="pron-caja" hidden></div>`;
-
-  if (mk) $("#pron-ver").onclick = () => {
-    const caja = $("#pron-caja"), b = $("#pron-ver");
-    if (!caja.hidden) { caja.hidden = true; b.textContent = "ver la propuesta sin decidir"; return; }
-    // Se aprueba MIRÁNDOLA, no leyendo su ruta.
-    caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(mk.archivo)}"></iframe>`;
-    caja.hidden = false; b.textContent = "ocultar";
-  };
-}
 
 function pintarPorModo() {
   const c = $("#por-modo");
