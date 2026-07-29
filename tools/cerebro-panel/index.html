@@ -588,7 +588,7 @@
                un problema de presupuesto, tiene un problema de prompt. -->
           <div style="margin-top:18px;border-top:1px solid var(--surface2);padding-top:16px">
             <span class="eyebrow" style="display:block;margin-bottom:4px">Cambio vs informe · por modo</span>
-            <p class="sub" style="margin:0 0 12px;max-width:70ch">El que baja del 50% no tiene un problema de presupuesto, tiene un problema de prompt.</p>
+            <p class="sub" style="margin:0 0 12px;max-width:70ch">El agregado esconde qué prompt no aterriza. Aquí sale por modo: el que baja del 50% no tiene un problema de presupuesto, tiene un problema de prompt.</p>
             <div id="por-modo"></div>
           </div>
         </div>
@@ -609,7 +609,7 @@
         </div>
 
         <div class="pane" id="d-salud" role="tabpanel" hidden>
-          <div id="salud"><div class="empty">Pulsa «Sondear salud» arriba para correr las sondas.</div></div>
+          <div id="salud"><div class="empty">Pulsa «Sondear salud» arriba: corre las cuatro sondas del repo y cada hallazgo se puede mandar a corregir.</div></div>
         </div>
 
         <div class="pane" id="d-corridas" role="tabpanel" hidden>
@@ -1511,7 +1511,7 @@ function pintarSalud(h) {
             `<option value="${esc(m.arg)}"${m.arg === "bugs" ? " selected" : ""}>${esc(m.arg)}</option>`).join("")}
         </select>
         <button class="mini" data-fix="${esc(t.slice(0, 2000))}"
-          data-dest="dest-${esc(s.id)}-${i}">Mandar</button></div>`).join("");
+          data-dest="dest-${esc(s.id)}-${i}">Mandar a corregir</button></div>`).join("");
     return `<div class="sonda">
       <div class="top"><span class="badge ${badge[s.estado]}">${esc(s.estado)}</span>
         <strong>${esc(s.label)}</strong><span class="tasa">${esc(s.que)}</span>
@@ -2263,7 +2263,7 @@ function pintarRegistros(d) {
       </span>
       <button class="mini" data-reabrir-reg="${esc(p.id)}">Reabrir</button>
     </div>`).join("")
-    || `<div class="tasa">Nada descartado todavía. Cuando descartes una corrida, su motivo aparece aquí.</div>`;
+    || `<div class="tasa">Nada descartado todavía. Cada descarte pide motivo y aterriza aquí.</div>`;
 
   document.querySelectorAll("#registros [data-reabrir-reg]").forEach((b) => b.onclick = async () => {
     pintarPendientes(await (await fetch("/api/pendientes", {
@@ -2338,12 +2338,15 @@ function pintarPronostico() {
       <span class="badge ${mk ? (mk.estado === "construido" ? "b-ok" : mk.estado === "pendiente" ? "b-err" : "b-run") : "b-run"}">mockup</span>
       <span class="mono" style="flex:1 1 160px;min-width:0;overflow-wrap:anywhere">${esc(mk ? mk.nombre : "sin propuestas todavía")}</span>
       <span class="tasa">${mk ? esc(mk.estado + " · " + (mk.mtime ?? "").slice(0, 10))
-        /* Que un modo NUNCA deje mockup no es un dato neutro: significa que
-           aterriza cambios sin pasar por revisión visual, que es justo lo que
-           las dos fases venían a impedir. */
         : "este modo no ha dejado ningún mockup"}</span>
       ${mk ? `<button class="mini" id="pron-ver" data-mk="${esc(mk.archivo)}">ver la última propuesta</button>` : ""}
     </div>
+    ${mk
+      ? `<div class="sub" style="margin-top:6px">la propuesta se aprueba mirándola, no leyendo su ruta</div>`
+      /* Que un modo NUNCA deje mockup no es un dato neutro, y por eso se dice
+         entero: significa que aterriza cambios sin pasar por revisión visual,
+         que es justo lo que las dos fases venían a impedir. */
+      : `<div class="sub" style="margin-top:6px;color:var(--warn)">Toda corrida de fase 1 debería dejar una propuesta mirable; si este modo nunca la deja, es que aterriza cambios sin pasar por revisión visual.</div>`}
     <div class="diff" id="pron-caja" hidden></div>`;
 
   if (mk) $("#pron-ver").onclick = () => {
