@@ -60,7 +60,9 @@
     position:sticky;top:0;z-index:30}
   .hdr{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;
     align-items:center;gap:16px;flex-wrap:wrap}
-  .hdr h1{font-size:17px;letter-spacing:-.01em}
+  .marca{display:flex;flex-direction:column;line-height:1.2}
+  .marca-n{font-weight:650;font-size:15px;letter-spacing:-.01em}
+  .marca .mono{font-size:11px;color:var(--muted)}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
   .dot.vivo{animation:latido 1.1s ease-in-out infinite}
   .chip{font-family:ui-monospace,monospace;font-size:11.5px;padding:4px 9px;
@@ -98,10 +100,17 @@
 
   .linea-tit{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
   .linea-tit .eyebrow{flex:none}
+  /* Control segmentado, no píldoras. La píldora es una etiqueta —algo que
+     describe— y esto es un selector: bloques del mismo alto, esquinas de 8, y
+     el elegido en tinta plena. Se lee como «una de estas siete», que es la
+     decisión que estás tomando. */
   .tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
-  .tab{font-family:ui-monospace,monospace;font-size:12.5px;padding:6px 12px;
-    border-radius:99px;border:1px solid var(--border);background:var(--bg);cursor:pointer}
-  .tab[aria-selected="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+  .tab{display:flex;align-items:center;gap:7px;
+    font-family:ui-monospace,monospace;font-size:12.5px;padding:8px 12px;
+    border-radius:8px;border:1px solid var(--border);background:var(--bg);
+    color:#2f2b23;cursor:pointer;min-height:36px}
+  .tab[aria-selected="true"]{background:var(--text);color:var(--head);border-color:var(--text)}
+  .tab[aria-selected="true"] .tasa{color:rgba(247,242,231,.7)}
 
   /* STEPPER de una línea. El tren eran tres bandas de píldoras de 104px con
      texto de 10.5px, todas del mismo peso: se leía como decoración y no decía
@@ -144,11 +153,13 @@
     .paso .linea,.paso.activo .n,.dot.vivo{animation:none!important}
   }
 
-  .ticker{margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+  .ticker{margin-top:20px;padding:0;overflow:hidden}
+  .ticker-hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    padding:12px 20px;border-bottom:1px solid var(--surface2);background:var(--head)}
   /* 170px daba tres líneas: justo donde miras cuando algo va mal era donde
      menos podías ver. Se puede plegar para recuperar el espacio. */
-  .ticker ol{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;
-    gap:5px;max-height:380px;overflow:auto}
+  .ticker ol{list-style:none;margin:0;padding:6px 20px;display:flex;flex-direction:column;
+    max-height:420px;overflow:auto}
   .ticker ol.plegado{max-height:120px}
   .ticker .ev-out{cursor:pointer}
   .ticker .ev-out.largo::after{content:" ⋯ ver todo";color:var(--muted);font-style:italic}
@@ -229,14 +240,13 @@
   .tabs2 button:hover{background:rgba(0,0,0,.03)}
   .tabs2 button[aria-selected="true"]{background:var(--panel);border-color:var(--border);
     border-bottom-color:var(--panel);color:var(--text);font-weight:600}
-  .tabs2 .t2-lbl{font:10.5px ui-monospace,monospace;text-transform:uppercase;
-    letter-spacing:.16em;flex:none}
-  /* La cifra se acota a 98px. Todos los resúmenes EMPIEZAN por el número, así
-     que lo que sobrevive al recorte es siempre lo que importa («16 de 51
-     dej…»), y el texto entero está a un clic en `#tab-cifra`. Sin el tope, un
-     resumen largo empujaba a las demás pestañas a otra fila: una pestaña
-     decidía por las ocho restantes. */
-  .tabs2 .tasa{max-width:98px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  /* 13px en sans, no 10.5 mono en versalitas. El rótulo de una pestaña es
+     prosa —nombra un sitio al que ir—, y las versalitas espaciadas ocupan casi
+     el doble de ancho para decir lo mismo: parte del muro de cinco filas era
+     el propio estilo del rótulo, no solo la cifra. */
+  .tabs2 .t2-lbl{font-size:13px;flex:none}
+  .tabs2 button[aria-selected="true"] .t2-lbl{font-weight:600}
+  .t2-alerta{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
   .tab-body{padding:18px 20px 20px}
   .tab-body > .sub{margin:0 0 14px;color:var(--muted);max-width:70ch}
   #tab-cifra{font-size:13px;color:var(--text);margin-bottom:6px}
@@ -297,12 +307,13 @@
   .kv{display:flex;flex-direction:column}
   .kv b{font-size:14px;font-weight:600}
   .kv .eyebrow{font-size:9.5px;letter-spacing:.12em}
-  .checkpoint{padding:14px 16px}
-  /* El plegable del rail es una tarjeta, no una fila de la lista de consulta:
-     pierde las hairlines de arriba y abajo que lo cosían a sus vecinos. */
-  .rail-pend{padding:4px 16px 14px;border-bottom:1px solid var(--border)}
-  .rail-pend summary{padding:12px 0 10px}
-  .rail-pend summary:hover{background:transparent}
+  /* Borde de acento y una sombra de 2px. Es lo único del rail que CADUCA: un
+     cambio sin decidir se queda en el árbol y estorba a la corrida siguiente.
+     El resto de tarjetas informan; esta pide algo. */
+  .checkpoint{padding:16px 18px;border-color:var(--accent);
+    box-shadow:0 2px 0 rgba(196,30,58,.16)}
+  .chk-titular{font-size:14px;font-weight:600;margin:4px 0 10px}
+  .rail-pend{padding:16px 18px}
   .rail .pend{flex-wrap:wrap}      /* 336px no dan para texto + dos botones */
   .rail .pend .grow{min-width:100%}
   .chk-list{margin:8px 0;display:flex;flex-direction:column;gap:4px}
@@ -332,9 +343,14 @@
 <header>
   <div class="hdr">
     <span class="dot" id="pulso"></span>
-    <h1>Cerebro · panel de control</h1>
+    <!-- El nombre y el repo, apilados. «Cerebro · panel de control» ocupaba
+         ancho de titular para decir dos veces lo mismo; el dato que cambia
+         —sobre qué repo estás— es el repo, y va debajo en mono. -->
+    <div class="marca">
+      <span class="marca-n">Cerebro</span>
+      <span class="mono" id="chip-repo">…</span>
+    </div>
     <span class="grow"></span>
-    <span class="chip mono" id="chip-repo">…</span>
     <!-- PRESUPUESTO DEL DÍA. El acumulado de la sesión no frena nada: dice que
          llevas $15 cuando ya te los gastaste. Esto es lo que queda HOY, con la
          barra que se pone ámbar al 80% y roja al agotarse — y al agotarse
@@ -396,20 +412,15 @@
       </div>
       <div id="flujo" role="tabpanel" tabindex="0"></div>
 
-      <!-- Contexto libre. Sin esto solo se podía disparar con el texto de un
-           hallazgo de sonda, y las señales que NO vienen de una sonda —una
-           fricción observada, una decisión pendiente en el log— no tenían por
-           dónde entrar. La regla de oro del cerebro es que cada disparo cite su
-           señal; esta caja es donde se escribe. -->
       <!-- La señal pasa de OPCIONAL a OBLIGATORIA. La regla del cerebro siempre
            fue «cada disparo cita su señal», pero el panel la pedía con un
            «(opcional)» al lado: una regla que la herramienta no sostiene es una
            sugerencia. Las corridas más caras y estériles de la sesión salieron
            de disparos sin señal — «mejoras-ux» a ver qué encuentra. -->
-      <label class="eyebrow" for="contexto" style="display:block;margin-top:18px">
-        Señal · obligatoria
-        <span class="tasa" style="text-transform:none;letter-spacing:0">sin señal no es un disparo: elige una detectada o escríbela</span>
-      </label>
+      <div class="linea-tit" style="margin-top:20px;padding-top:18px;border-top:1px solid var(--surface2)">
+        <label class="eyebrow" for="contexto">Señal · obligatoria</label>
+        <span class="sub">sin señal no es un disparo: elige una detectada o escríbela</span>
+      </div>
       <!-- Las señales detectadas se sacan de lo que el panel YA sabe (pendientes
            derivados, anotados y hallazgos de sonda): si el panel puede nombrar
            el problema, pedirte que lo teclees es devolverte el trabajo. -->
@@ -436,18 +447,22 @@
            checkpoint no aparece y el botón de construirla necesita sitio propio. -->
       <div id="cierre-fase" style="margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap" hidden></div>
 
-      <div class="ticker" id="ticker" hidden>
-        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-          <span class="eyebrow">Flujo en vivo</span>
-          <span class="grow"></span>
-          <span class="tasa" id="flujo-resumen"></span>
-          <button class="mini" id="btn-plegar" aria-expanded="true">Plegar</button>
-        </div>
-        <!-- aria-live: sin esto, el avance de la corrida —el contenido que más
-             cambia del panel— no se anuncia a un lector de pantalla. -->
-        <ol id="eventos" aria-live="polite" aria-relevant="additions"></ol>
-      </div>
+    </div>
 
+    <!-- TARJETA PROPIA, no un apéndice del lienzo. El flujo en vivo no es parte
+         de la caja donde se decide qué disparar: es lo que pasa después, y
+         mientras corre es lo único que se mira. Con su cabecera en la tercera
+         capa, como el resto de cabeceras del panel. -->
+    <div class="ticker card" id="ticker" hidden>
+      <div class="ticker-hd">
+        <span class="eyebrow">Flujo en vivo</span>
+        <span class="grow"></span>
+        <span class="tasa" id="flujo-resumen"></span>
+        <button class="mini" id="btn-plegar" aria-expanded="true">Plegar</button>
+      </div>
+      <!-- aria-live: sin esto, el avance de la corrida —el contenido que más
+           cambia del panel— no se anuncia a un lector de pantalla. -->
+      <ol id="eventos" aria-live="polite" aria-relevant="additions"></ol>
     </div>
   </section>
 
@@ -586,6 +601,7 @@
        caduca — un cambio sin decidir se queda en el árbol y estorba al siguiente. -->
   <div class="card checkpoint" id="checkpoint" hidden>
     <span class="eyebrow" style="color:var(--accent)">Decisión pendiente</span>
+    <div class="chk-titular" id="chk-titular"></div>
     <div id="chk-archivos" class="chk-list"></div>
     <input id="chk-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
 
@@ -610,18 +626,29 @@
     <div class="tasa" id="chk-estado" style="margin-top:8px"></div>
   </div>
 
-  <details class="card plegable rail-pend" id="d-pendientes" open>
-    <summary><span class="eyebrow">Qué decidir ahora</span>
+  <!-- Tarjeta plana, no un `<details>`. Plegarla no tenía sentido: es la
+       pregunta que el rail existe para responder, y un `▾` sobre ella invitaba
+       a esconder justo lo que hay que mirar. El resumen va a la derecha del
+       rótulo, donde estaba el triángulo. -->
+  <div class="card rail-pend" id="d-pendientes">
+    <div class="linea-tit" style="margin-bottom:8px">
+      <span class="eyebrow">Qué decidir ahora</span>
+      <span class="grow"></span>
       <span class="tasa" id="sum-pendientes">—</span>
-      <span class="grow"></span><span class="tasa">▾</span></summary>
-    <p class="sub">Los <b>del repo</b> los deduce el panel y se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
+    </div>
+    <p class="sub" style="margin:0 0 10px">Los <b>del repo</b> se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
     <div id="pendientes"></div>
-    <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
       <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:0;margin:0"
-        placeholder="Anotar un pendiente…">
+        placeholder="Anotar…">
       <button class="mini" id="btn-add-pendiente">Añadir</button>
     </div>
-  </details>
+  </div>
+
+  <div class="tasa" style="padding:0 4px;line-height:1.5">
+    El panel es externo al sitio: vive en <span class="mono">tools/</span> y nunca entra en
+    <span class="mono">out/</span>.
+  </div>
 
 </aside>
 
@@ -1588,6 +1615,10 @@ async function cargarCheckpoint(id) {
     if (!d.cambios) return;
     // `.map(filaArchivo)` le pasaba el ÍNDICE como `conCheckbox`: la fila 0 salía
     // sin casilla y el resto con ella. Se pasa explícito.
+    // Titular: qué dejó la corrida, en una línea. La lista de rutas contesta
+    // «cuáles»; esto contesta «cuánto», que es lo que decide si lo miras ahora.
+    $("#chk-titular").textContent =
+      `${d.cambios} archivo(s) de ${esc(job?.modo || "la corrida")} sin aterrizar`;
     $("#chk-archivos").innerHTML = pintarRecomendacion(d.recomendacion) + pintarRevision(d.revision)
       + d.archivos.map((a) => filaArchivo(a, false)).join("");
     engancharVistaPrevia("#chk-archivos");
@@ -2263,28 +2294,47 @@ const sumId = (id) => "sum-" + id.replace(/^(d-|sec-)/, "");
    a deshacer. El texto no estaba mal, estaba en el sitio equivocado. */
 const titular = (t) => String(t ?? "").split("·")[0].trim();
 
-/** Copia cada resumen a su pestaña. Un observer lo dispara solo, así que
- *  ningún renderer tiene que saber que la barra existe. */
+/* Qué cuenta como aviso en cada panel. Es el criterio, no una heurística sobre
+   el texto: un cero no avisa, y «sin sondear» tampoco —no saber no es una
+   alarma, es una tarea—. Solo enciende lo que ya está mal. */
+const ALERTA = {
+  "d-salud": (t) => /CIMIENTO ROTO/.test(t) || /[1-9]\d* error/.test(t),
+  "d-repo": (t) => /[1-9]\d* rama/.test(t),
+  "d-mockups": (t) => /sin decidir/.test(t),
+};
+
+/** Lleva el resumen del panel abierto a `#tab-cifra` y enciende los avisos.
+ *  Un observer lo dispara solo, así que ningún renderer sabe que existe. */
 function sincronizarTitulares() {
   for (const p of PANELES) {
     const src = document.getElementById(sumId(p.id));
-    const dst = document.querySelector(`#tabs2 [data-cifra="${p.id}"]`);
-    if (src && dst) dst.textContent = titular(src.textContent);
-    if (src && p.id === panelSel) {
-      const full = src.textContent.trim();
-      $("#tab-cifra").textContent = full === "—" ? "" : full;
-    }
+    if (!src) continue;
+    const txt = src.textContent.trim();
+
+    const av = document.querySelector(`#tabs2 [data-alerta="${p.id}"]`);
+    if (av) av.hidden = !(ALERTA[p.id]?.(txt));
+
+    if (p.id === panelSel) $("#tab-cifra").textContent = txt === "—" ? "" : txt;
   }
 }
 
 function pintarTabs2() {
+  /* Punto de aviso, no cifra. La cifra en cada pestaña metía 1587px de
+     contenido en 794 y partía la barra en tres filas: nueve titulares
+     compitiendo son el mismo muro que los ocho acordeones. La cifra del panel
+     abierto va entera en #tab-cifra, y en la pestaña solo queda un punto para
+     lo que EXIGE mirar —errores, ramas olvidadas, cosas sin decidir—.
+     Gritar lo que falta, callar lo que sobra.
+
+     (El comentario va AQUÍ y no dentro de la plantilla: llevaba backticks y
+     cerraba el template literal, y además se emitía al DOM en cada render.) */
   $("#tabs2").innerHTML = PANELES
     .filter((p) => !p.oculta || $("#" + p.id).dataset.revelada)
     .map((p) => `
       <button role="tab" data-pane="${p.id}" aria-controls="${p.id}"
         aria-selected="${p.id === panelSel}" tabindex="${p.id === panelSel ? 0 : -1}">
         <span class="t2-lbl">${esc(p.lbl)}</span>
-        <span class="tasa" data-cifra="${p.id}"></span>
+        <span class="t2-alerta" data-alerta="${p.id}" hidden></span>
       </button>`).join("");
   const tabs = [...document.querySelectorAll("#tabs2 button")];
   tabs.forEach((b, i) => {
