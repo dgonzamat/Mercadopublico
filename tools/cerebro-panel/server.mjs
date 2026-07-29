@@ -557,12 +557,28 @@ async function revisarCambios(archivos) {
       if (codigo) fallos.push(`${codigo} bloque(s) de código`);
       if (!clasesSitio) fallos.push("ninguna clase del sitio (no copió el marcado del componente)");
       if (!/sitio-css/.test(m)) fallos.push("no enlaza /sitio-css");
+
+      /* AFIRMACIÓN SIN RESPALDO. El detector comprobaba la FORMA del mockup
+         —código, clases, hoja de estilos— y nada sobre lo que afirma. Una
+         corrida de `frescura` propuso añadir a un caso Tier S que «en 2024 el
+         investigador Gideon Reid propuso…», sin una sola URL. El dato resultó
+         ser cierto, pero eso solo se supo porque alguien lo buscó a mano: el
+         panel lo habría dejado pasar igual si fuera inventado, que es la forma
+         más cara de equivocarse en un corpus documental.
+         Solo aplica a mockups que introducen un hecho fechado o atribuido —una
+         propuesta de UI no necesita bibliografía. */
+      const afirma = /\b(19|20)\d{2}\b/.test(m) &&
+        /(propuso|publicó|según|de acuerdo con|investigador|estudio|informe|declaró|reveló)/i.test(m);
+      const cita = /https?:\/\//.test(m);
+      if (afirma && !cita)
+        fallos.push("afirma un hecho fechado o atribuido y NO cita ninguna fuente");
       if (fallos.length)
         avisos.push({
           tipo: "mockup", archivo: f, texto: fallos.join(" · "),
-          que: "El mockup no dibuja el sitio: enseña una explicación en vez de la interfaz. "
-             + "Sirve para aprobar el cambio VIÉNDOLO, así que si trae código o se maqueta a mano, "
-             + "no cumple su función — juzga el diff directamente y pide el mockup de nuevo.",
+          que: "El mockup no cumple su función. Sirve para aprobar el cambio VIÉNDOLO y para "
+             + "poder juzgarlo sin salir del panel: si trae código, se maqueta a mano, o afirma "
+             + "un hecho sin citar de dónde sale, aprobarlo es firmar a ciegas. "
+             + "Pide el mockup de nuevo con lo que falte.",
         });
       continue;   // un mockup no se audita como código
     }
@@ -1150,6 +1166,15 @@ function promptLean(modo, contexto) {
     `fase 1 es **el ÚNICO archivo que escribes, y no es opcional**: sin él la propuesta solo se puede`,
     `leer, y el panel existe para que se pueda VER. El único caso sin mockup es no proponer nada`,
     `(descarte honesto declarado). Si propones, dibujas.`,
+    /* Una propuesta de `frescura` metió en un caso Tier S que «en 2024 el
+       investigador Gideon Reid propuso…», sin una sola URL. El dato era cierto,
+       pero eso solo se supo porque alguien lo buscó a mano — el panel lo habría
+       aprobado igual si fuera inventado. Un mockup que afirma sin citar no se
+       puede juzgar mirándolo, que es su única razón de existir. */
+    `Si el mockup AFIRMA un hecho —una fecha, un nombre, un estudio, «X propuso Y en 2024»—,`,
+    `la fuente va DENTRO del mockup, con su URL y visible. No en tu mensaje de cierre: dentro.`,
+    `Quien lo aprueba tiene que poder contrastarlo sin salir del panel. Un hecho sin fuente no`,
+    `es una propuesta, es una apuesta — y en un corpus documental se paga cara.`,
     /* No basta con «dibuja la página»: maquetado a mano desde una lista de
        colores sale un primo lejano del sitio, y sobre un primo lejano no se
        puede juzgar si algo queda bien. El sitio es Tailwind, así que las clases
