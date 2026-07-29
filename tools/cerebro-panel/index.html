@@ -96,6 +96,8 @@
   .lienzo{background:var(--panel);border:1px solid var(--border);border-radius:12px;
     padding:20px 18px 24px;position:relative;overflow:hidden}
 
+  .linea-tit{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .linea-tit .eyebrow{flex:none}
   .tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
   .tab{font-family:ui-monospace,monospace;font-size:12.5px;padding:6px 12px;
     border-radius:99px;border:1px solid var(--border);background:var(--bg);cursor:pointer}
@@ -345,6 +347,11 @@
       <div class="bar"><i id="presu-barra"></i></div>
     </div>
     <span class="chip mono" id="chip-ramas" hidden></span>
+    <!-- El cimiento es lo único que puede prohibir gatillar, y su estado vivía
+         escondido dentro de la pestaña Salud. Aquí dice si el gate está en pie
+         o roto, y si nunca se sondeó, lo dice en vez de aparentar que va bien:
+         «sin sondear» y «err=0» no son lo mismo. -->
+    <span class="chip mono" id="chip-gate" title="Estado del cimiento (sondas del repo)">gate: sin sondear</span>
     <span class="chip mono" id="chip-perm">…</span>
     <span class="chip mono" id="chip-auth">…</span>
     <!-- El panel quema tokens de verdad en cada disparo. El gasto vivo va en la
@@ -373,7 +380,20 @@
          documentación ocupando la primera pantalla, y se lee una vez. -->
 
     <div class="lienzo" id="lienzo">
+      <div class="linea-tit">
+        <span class="eyebrow">Modo</span>
+        <span class="sub">el número es cuántas señales concretas tiene ese modo ahora mismo</span>
+      </div>
       <div class="tabs" id="tabs" role="tablist" aria-label="Modos del cerebro"></div>
+
+      <div class="linea-tit" style="margin-top:20px;padding-top:18px;border-top:1px solid var(--surface2)">
+        <span class="eyebrow">Cadena</span>
+        <span class="grow"></span>
+        <!-- El avance, también aquí. La tarjeta del rail lo lleva, pero mirando
+             el diagrama la pregunta es «¿por dónde va?» y la respuesta estaba
+             a 300px de distancia. Sale del mismo `pasosDelModo()`. -->
+        <span class="tasa" id="paso-actual"></span>
+      </div>
       <div id="flujo" role="tabpanel" tabindex="0"></div>
 
       <!-- Contexto libre. Sin esto solo se podía disparar con el texto de un
@@ -418,8 +438,9 @@
 
       <div class="ticker" id="ticker" hidden>
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-          <span class="eyebrow">Flujo en vivo · pasos y skills que corre la corrida</span>
+          <span class="eyebrow">Flujo en vivo</span>
           <span class="grow"></span>
+          <span class="tasa" id="flujo-resumen"></span>
           <button class="mini" id="btn-plegar" aria-expanded="true">Plegar</button>
         </div>
         <!-- aria-live: sin esto, el avance de la corrida —el contenido que más
@@ -624,7 +645,24 @@ const etiquetaEstado = (e) =>
   : e || "?";
 
 let estado = null, modoSel = null, job = null, poll = null, cimientoRoto = false, reconn = null, chkJob = null;
-let ultimaSalud = [];   // hallazgos del último sondeo, reutilizados como señales
+let ultimaSalud = [];        // hallazgos del último sondeo, reutilizados como señales
+let ultimosPendientes = {};  // para recomponer las señales sin volver a pedirlos
+
+/* Chip del gate. Tres estados, y el tercero importa: «sin sondear» no es
+   «err=0». Un chip que dijera verde antes de correr las sondas sería una
+   afirmación sin comprobación, que es justo lo que este panel no hace. */
+function pintarChipGate(nErr) {
+  const c = $("#chip-gate");
+  if (!c) return;
+  const [txt, col] = cimientoRoto ? ["gate: CIMIENTO ROTO", "var(--err)"]
+    : nErr > 0 ? [`gate: ${nErr} error(es)`, "var(--warn)"]
+    : ["gate: cimiento err=0", "var(--ok)"];
+  c.textContent = txt;
+  c.style.color = col;
+  c.style.borderColor = col;
+  c.style.cursor = "pointer";
+  c.onclick = () => { irA("d-salud"); $("#tabs2").scrollIntoView({ behavior: "smooth" }); };
+}
 
 /* Banner de conexión. El server del panel es un proceso local que puede caerse;
    sin esto, un fetch fallido dejaba la UI muda o reintentaba en silencio. */
@@ -834,6 +872,10 @@ function pintarFlujo() {
   const vivo = job?.estado === "corriendo";
   $("#lienzo").classList.toggle("corriendo", vivo);
   $("#pulso").classList.toggle("vivo", vivo);
+  // Aquí y no en `refrescar`: `pintarEstado` alimenta también la cabecera de la
+  // cadena, que tiene que decir algo desde el arranque y al cambiar de modo —
+  // no solo cuando hay una corrida que refrescar.
+  pintarEstado(job);
 }
 
 /* ── estado del repo ─────────────────────────────────────────────────── */
@@ -876,11 +918,23 @@ function pintarTabs() {
   // a11y: los tabs declaraban `role="tablist"` pero no decían QUÉ panel
   // controlan, y solo se navegaban con el ratón. Con `aria-controls` + flechas
   // el patrón queda completo (`#flujo` es el `tabpanel`).
-  $("#tabs").innerHTML = estado.modos.map((m) => `
-    <button class="tab" role="tab" data-modo="${esc(m.arg)}" aria-controls="flujo"
-      aria-selected="${m.arg === modoSel.arg}" tabindex="${m.arg === modoSel.arg ? 0 : -1}">
-      ${esc(m.arg || "diagnóstico")} <span class="tasa">M${esc(m.n)}</span>
-    </button>`).join("");
+  /* El número ya no es «M6» —el ordinal del modo en el skill, que no ayuda a
+     elegir— sino CUÁNTAS SEÑALES tiene ese modo ahora mismo. Convierte la fila
+     de modos en una recomendación: los que no tienen nada que atacar se apagan
+     al 55%, y el que acumula carencias se ve antes de leerlo. */
+  const cuenta = {};
+  for (const s of SENALES) cuenta[s.modo] = (cuenta[s.modo] ?? 0) + 1;
+
+  $("#tabs").innerHTML = estado.modos.map((m) => {
+    const n = cuenta[m.arg] ?? 0;
+    const sel = m.arg === modoSel.arg;
+    return `<button class="tab" role="tab" data-modo="${esc(m.arg)}" aria-controls="flujo"
+      aria-selected="${sel}" tabindex="${sel ? 0 : -1}"
+      style="${!n && !sel ? "opacity:.55" : ""}"
+      title="${n} señal(es) detectada(s) para este modo">
+      ${esc(m.arg || "diagnóstico")} <span class="tasa">${n || "·"}</span>
+    </button>`;
+  }).join("");
   const tabs = [...document.querySelectorAll(".tab")];
   const elegir = (b) => {
     modoSel = estado.modos.find((m) => m.arg === b.dataset.modo);
@@ -981,6 +1035,7 @@ function pintarConsumo() {
 function pintarPendientes(d) {
   // Las mismas carencias alimentan la lista de decisiones Y el selector de
   // señal: son el mismo hecho leído para dos preguntas distintas.
+  ultimosPendientes = d;
   recogerSenales(d, ultimaSalud);
   pintarRegistros(d);
   const derivados = d.derivados ?? [];
@@ -992,18 +1047,6 @@ function pintarPendientes(d) {
     ? `${total} abierto(s)` + (derivados.length ? ` · ${derivados.length} del repo` : "")
       + (cerrados.length ? ` · ${cerrados.length} cerrado(s)` : "")
     : (cerrados.length ? `todo cerrado · ${cerrados.length} en el historial` : "sin pendientes");
-
-  /* El modo con el que se ataca cada pendiente se DEDUCE de su origen. Poner un
-     desplegable para que lo eligieras sería devolverte el trabajo: el panel sabe
-     que una carencia de corpus es `frescura` y que un defecto de código es
-     `bugs`. Se puede cambiar antes de disparar, pero viene puesto. */
-  const modoDe = (p) => {
-    const t = (p.texto || "").toLowerCase();
-    if (p.origen === "corpus" || /caso|fuente|visual|corpus/.test(t)) return "frescura";
-    if (p.origen === "panel" || /panel|server\.mjs|parser|contrato/.test(t)) return "mejoras-tec";
-    if (/ux|navega|jerarqu|pantalla|dise/.test(t)) return "mejoras-ux";
-    return "bugs";
-  };
 
   const fila = (p, derivado) => {
     const cerrado = p.estado && p.estado !== "pendiente" && p.estado !== "en_curso";
@@ -1375,6 +1418,8 @@ function pintarSalud(h) {
   cimientoRoto = !!h.cimientoRoto;   // bloquea «Gatillar» hasta arreglar err>0
   // Los hallazgos son señales de primera: vienen medidos y con su texto.
   ultimaSalud = h.sondas.flatMap((s) => [...s.errores, ...s.warns]).slice(0, 4);
+  pintarChipGate(nErr);
+  recogerSenales(ultimosPendientes, ultimaSalud);
   actualizarGatillar();
 }
 
@@ -1764,6 +1809,20 @@ function pintarEstado(j) {
   $("#estado-tok").textContent = compacto(tot);
   $("#estado-coste").textContent = dinero(j?.resultado?.coste_usd);
   $("#btn-detener").hidden = !viva;
+
+  /* Las mismas cifras, junto al diagrama. No se recalculan: se reparten desde
+     aquí, así que la cabecera de la cadena y la tarjeta del rail no pueden
+     decir cosas distintas del mismo instante. */
+  const pa = $("#paso-actual");
+  if (pa) {
+    pa.textContent = viva ? `paso ${paso}/${pasos.length}` : j ? "sin corrida activa" : "listo";
+    pa.style.color = viva ? "var(--accent)" : "var(--muted)";
+  }
+  const fr = $("#flujo-resumen");
+  if (fr) {
+    const n = j?.eventosTotal ?? (j?.eventos ?? []).length;
+    fr.textContent = j ? `${n} herramienta(s) · ${compacto(tot)} tok · ${dinero(j.resultado?.coste_usd)}` : "";
+  }
 }
 
 function refrescar(j) {
@@ -1801,7 +1860,6 @@ function refrescar(j) {
     s.classList.add("abierto"); s.classList.remove("largo");
   });
 
-  pintarEstado(j);
   const bl = $("#bloqueo");
   bl.hidden = !j.bloqueo;
   if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
@@ -2123,6 +2181,23 @@ function pintarPresupuesto() {
   b.style.background = pct >= 100 ? "var(--err)" : pct >= 80 ? "var(--warn)" : "var(--accent)";
 }
 
+/* El modo con el que se ataca una carencia se DEDUCE de su texto y su origen.
+   Poner un desplegable para que lo eligieras sería devolverte el trabajo: el
+   panel sabe que una carencia de corpus es `frescura` y que un defecto de
+   código es `bugs`. Se puede cambiar antes de disparar, pero viene puesto.
+
+   Vive fuera de `pintarPendientes` porque ahora responde a DOS preguntas: con
+   qué modo se ataca este pendiente, y cuántas señales tiene cada modo ahora
+   mismo. Es la misma clasificación; duplicarla sería garantizar que un día
+   discrepen. */
+const modoDe = (p) => {
+  const t = (p.texto || "").toLowerCase();
+  if (p.origen === "corpus" || /caso|fuente|visual|corpus/.test(t)) return "frescura";
+  if (p.origen === "panel" || /panel|server\.mjs|parser|contrato/.test(t)) return "mejoras-tec";
+  if (/ux|navega|jerarqu|pantalla|dise/.test(t)) return "mejoras-ux";
+  return "bugs";
+};
+
 /* ── señales detectadas ───────────────────────────────────────────────────
    Lo que el panel YA sabe que va mal, ofrecido como texto de partida. Pedirte
    que teclees una señal que el panel puede nombrar es el mismo error que tenía
@@ -2147,14 +2222,15 @@ function pintarSenales() {
 /** Recoge señales de las dos fuentes que el panel ya consulta. */
 function recogerSenales(pend, salud) {
   const corto = (t) => t.length > 64 ? t.slice(0, 63) + "…" : t;
+  const mk = (origen, texto) => ({ origen, texto, corto: corto(texto), modo: modoDe({ texto, origen }) });
   const s = [];
-  for (const p of pend?.derivados ?? []) s.push({ origen: "repo", corto: corto(p.texto), texto: p.texto });
+  for (const p of pend?.derivados ?? []) s.push(mk("repo", p.texto));
   for (const p of (pend?.anotados ?? []).filter((x) => x.estado === "pendiente"))
-    s.push({ origen: p.origen || "anotado", corto: corto(p.texto), texto: p.texto });
-  for (const h of salud ?? [])
-    s.push({ origen: "sonda", corto: corto(h), texto: h });
+    s.push(mk(p.origen || "anotado", p.texto));
+  for (const h of salud ?? []) s.push(mk("sonda", h));
   SENALES = s.slice(0, 8);       // más de ocho deja de ser una lista y es un muro
   pintarSenales();
+  if (estado) pintarTabs();      // el contador por modo vive en las pestañas
 }
 
 /* ── consulta · pestañas ──────────────────────────────────────────────────
