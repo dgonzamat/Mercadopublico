@@ -132,6 +132,13 @@
     border-bottom:1px solid var(--border)}
   .spark i{flex:1;background:var(--ok);min-width:2px;border-radius:1px 1px 0 0;opacity:.85}
   .spark i:hover{opacity:1;background:var(--accent)}
+
+  .pend{display:flex;gap:10px;align-items:flex-start;padding:7px 0;font-size:13px;
+    border-bottom:1px dashed var(--border)}
+  .pend .pend-m{font-family:ui-monospace,monospace;flex:none;width:14px;text-align:center}
+  .pend.cerrado{opacity:.55}
+  .pend.cerrado .grow{text-decoration:line-through;text-decoration-color:var(--border)}
+  .pend button{flex:none}
   .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
   .metric small{font-size:14px;color:var(--muted);font-weight:400}
   .card .eyebrow{margin-bottom:6px;display:block}
@@ -320,6 +327,21 @@
        detalle. Un plegable que obliga a abrirlo para saber si merece la pena
        solo mueve el desorden un clic más allá. -->
   <section class="consulta">
+    <!-- Va PRIMERO y abierto: es lo único de este bloque sobre lo que se actúa.
+         El resto se consulta; esto se resuelve. -->
+    <details class="plegable" id="d-pendientes" open>
+      <summary><span class="eyebrow">Pendientes</span>
+        <span class="tasa" id="sum-pendientes">—</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <p class="sub">Lo que el panel no puede deducir de un diff: decisiones aplazadas y deuda declarada. Sale por una de dos puertas — hecho o descartado.</p>
+      <div id="pendientes"></div>
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+        <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:260px;margin:0"
+          placeholder="Anotar un pendiente…">
+        <button class="mini" id="btn-add-pendiente">Añadir</button>
+      </div>
+    </details>
+
     <details class="plegable" id="d-consumo">
       <summary><span class="eyebrow">Consumo</span>
         <span class="tasa" id="sum-consumo">—</span>
@@ -725,6 +747,76 @@ function pintarConsumo() {
           + "Si «descartadas» sube, el problema es el prompt, no el presupuesto"),
   ].join("");
 }
+
+/* ── pendientes ───────────────────────────────────────────────────────────
+   Los cerrados NO se borran de la lista: se apilan abajo, tachados y con su
+   motivo. Un pendiente que desaparece sin rastro es indistinguible de uno que
+   nunca existió, y dentro de un mes lo que importa es por qué se descartó. */
+function pintarPendientes(lista) {
+  const abiertos = lista.filter((p) => p.estado === "pendiente");
+  const cerrados = lista.filter((p) => p.estado !== "pendiente");
+  $("#sum-pendientes").textContent = abiertos.length
+    ? `${abiertos.length} abierto(s)` + (cerrados.length ? ` · ${cerrados.length} cerrado(s)` : "")
+    : (cerrados.length ? `todo cerrado · ${cerrados.length} en el historial` : "sin pendientes");
+
+  const fila = (p) => {
+    const cerrado = p.estado !== "pendiente";
+    const marca = p.estado === "hecho" ? "✓" : p.estado === "descartado" ? "✕" : "○";
+    const color = p.estado === "hecho" ? "var(--ok)" : p.estado === "descartado" ? "var(--muted)" : "var(--text)";
+    return `<div class="pend${cerrado ? " cerrado" : ""}">
+      <span class="pend-m" style="color:${color}">${marca}</span>
+      <span class="grow">${esc(p.texto)}
+        ${p.origen ? `<span class="tasa"> · ${esc(p.origen)}</span>` : ""}
+        ${p.motivo ? `<div class="tasa" style="margin-top:2px">motivo: ${esc(p.motivo)}</div>` : ""}
+      </span>
+      ${cerrado
+        ? `<button class="mini" data-reabrir="${esc(p.id)}">Reabrir</button>`
+        : `<button class="mini" data-hecho="${esc(p.id)}">Hecho</button>
+           <button class="mini" data-desc="${esc(p.id)}">Descartar</button>`}
+    </div>`;
+  };
+
+  $("#pendientes").innerHTML = (abiertos.map(fila).join("") || `<div class="tasa">nada abierto.</div>`)
+    + (cerrados.length ? `<div class="tasa" style="margin:12px 0 4px">historial</div>` + cerrados.map(fila).join("") : "");
+
+  const accion = (sel, accionNombre, pedirMotivo) =>
+    document.querySelectorAll(`#pendientes [${sel}]`).forEach((b) => b.onclick = async () => {
+      const id = b.getAttribute(sel);
+      // El descarte pide motivo: sin él, dentro de un mes nadie sabrá si se
+      // resolvió, si dejó de importar o si simplemente cansó.
+      const motivo = pedirMotivo ? (prompt("¿Por qué se descarta? (queda anotado)") ?? "") : "";
+      if (pedirMotivo && motivo === "") return;
+      await cambiarPendiente({ accion: accionNombre, id, motivo });
+    });
+  accion("data-hecho", "hecho", false);
+  accion("data-desc", "descartado", true);
+  accion("data-reabrir", "reabrir", false);
+}
+
+async function cambiarPendiente(cuerpo) {
+  try {
+    const r = await fetch("/api/pendientes", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify(cuerpo),
+    });
+    const d = await r.json();
+    if (!r.ok) return avisar(d.error);
+    pintarPendientes(d.pendientes);
+  } catch (e) { conexion(false); }
+}
+
+async function cargarPendientes() {
+  try { pintarPendientes((await (await fetch("/api/pendientes")).json()).pendientes ?? []); }
+  catch (e) { /* el banner de conexión ya lo dice */ }
+}
+
+$("#btn-add-pendiente").onclick = () => {
+  const i = $("#nuevo-pendiente");
+  if (!i.value.trim()) return;
+  cambiarPendiente({ accion: "add", texto: i.value.trim() });
+  i.value = "";
+};
+$("#nuevo-pendiente").onkeydown = (e) => { if (e.key === "Enter") $("#btn-add-pendiente").click(); };
 
 /* Visitantes. Se carga al ABRIR la sección, no al arrancar: es la única llamada
    del panel que sale a la red, y pagarla en cada refresco para un dato que se
@@ -1468,6 +1560,7 @@ $("#btn-repo-refresh").onclick = (e) => {
 // En este orden: `reengancharJob` necesita `estado.modos` para poder fijar el
 // diagrama al modo de la corrida recuperada.
 cargarEstado().then(reengancharJob);
+cargarPendientes();   // la sección nace abierta: tiene que traer los datos puestos
 // El titular del repo tiene que nacer con el dato («árbol limpio» o «5 archivos
 // sin commitear»); si no, el plegable obliga a abrirlo para saber si hay algo,
 // que es justo lo que veníamos a evitar. Es un `git status`: barato.

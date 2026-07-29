@@ -990,6 +990,43 @@ async function rpcSupabase(fn, args) {
   return r.json();
 }
 
+/**
+ * PENDIENTES. Todo lo que el panel deriva solo —ramas sin mergear, archivos sin
+ * commitear, sondas en rojo— ya se ve. Lo que se pierde es lo OTRO: la decisión
+ * aplazada, la deuda que alguien nombró en voz alta, el «esto habría que
+ * mirarlo» de hace tres horas. Eso no está en ningún diff y desaparece al cerrar
+ * la sesión. Aquí vive, y solo sale por una de dos puertas: hecho o descartado —
+ * las mismas dos que el panel ya usa para un cambio, porque un pendiente que se
+ * queda en el limbo es lo que veníamos a evitar.
+ */
+const ARCHIVO_PENDIENTES = path.join(here, "pendientes.json");
+
+/* Semilla: lo que quedó abierto el 28 jul 2026. Sin ella la lista nace vacía y
+   una lista vacía no se vuelve a abrir. */
+const PENDIENTES_INICIALES = [
+  { texto: "Revisar hunk por hunk claude/design-audit-parts-3-4 y 5-7 (15 jun): qué sigue aplicando", origen: "ramas" },
+  { texto: "CADENA_FLUJO es un segundo contrato: el diagrama lee la cadena de un mapa en server.mjs en vez de la tabla de cerebro.md", origen: "panel" },
+  { texto: "El parser de eventos se perdió una edición (fase 2 del Release 4): el checkpoint quedó vacío con el archivo escrito", origen: "panel" },
+  { texto: "E21 · 27/330 casos sin visual (S×1 A×10 B×16). El Tier S es ariel-school-1994 y necesita imagen PD/CC, no el PDF con copyright", origen: "corpus" },
+  { texto: "~38 fuentes rotas y 28/91 fotos de investigadores (declarado en CLAUDE.md)", origen: "corpus" },
+];
+
+function leerPendientes() {
+  try { return JSON.parse(fs.readFileSync(ARCHIVO_PENDIENTES, "utf8")); }
+  catch {
+    const lista = PENDIENTES_INICIALES.map((p, i) => ({
+      id: `p${Date.now()}${i}`, estado: "pendiente", creado: new Date().toISOString(), ...p,
+    }));
+    guardarPendientes(lista);
+    return lista;
+  }
+}
+
+function guardarPendientes(lista) {
+  try { fs.writeFileSync(ARCHIVO_PENDIENTES, JSON.stringify(lista, null, 1)); }
+  catch (e) { bitacora(`no se pudo guardar pendientes.json: ${e.message}`); }
+}
+
 /** Skills que SÍ existen como comando del repo, leídos del disco (no inventados). */
 function skillsDelRepo() {
   try {
@@ -1565,6 +1602,40 @@ async function manejar(req, res) {
   /* Las mismas RPC que lee `/visitantes` del sitio. Si algo falla —sin
      credenciales, sin red— se devuelve el error tal cual: un panel que enseña
      ceros cuando no pudo leer es peor que uno que dice que no pudo. */
+  if (url.pathname === "/api/pendientes" && req.method !== "POST")
+    return json(res, 200, { pendientes: leerPendientes() });
+
+  /* Un pendiente solo se cierra declarando CÓMO: hecho o descartado. No hay
+     «borrar» a secas — un pendiente que desaparece sin dejar rastro es
+     indistinguible de uno que nunca existió, y el motivo del descarte es la
+     mitad del valor de haberlo anotado. */
+  if (url.pathname === "/api/pendientes" && req.method === "POST") {
+    const { accion, id, texto, origen, motivo } = await leerCuerpo(req);
+    const lista = leerPendientes();
+
+    if (accion === "add") {
+      if (!String(texto ?? "").trim()) return json(res, 400, { error: "el pendiente necesita texto" });
+      lista.push({
+        id: `p${Date.now()}`, texto: String(texto).trim().slice(0, 400),
+        origen: String(origen ?? "manual").slice(0, 40),
+        estado: "pendiente", creado: new Date().toISOString(),
+      });
+    } else if (accion === "hecho" || accion === "descartado") {
+      const p = lista.find((x) => x.id === id);
+      if (!p) return json(res, 404, { error: "pendiente no encontrado" });
+      p.estado = accion;
+      p.cerrado = new Date().toISOString();
+      if (motivo) p.motivo = String(motivo).slice(0, 300);
+    } else if (accion === "reabrir") {
+      const p = lista.find((x) => x.id === id);
+      if (!p) return json(res, 404, { error: "pendiente no encontrado" });
+      p.estado = "pendiente"; delete p.cerrado; delete p.motivo;
+    } else return json(res, 400, { error: `acción desconocida: ${accion}` });
+
+    guardarPendientes(lista);
+    return json(res, 200, { pendientes: lista });
+  }
+
   if (url.pathname === "/api/visitantes") {
     const dias = Math.min(365, Math.max(1, Number(url.searchParams.get("dias") ?? 30)));
     const desde = new Date(Date.now() - dias * 86400000).toISOString().slice(0, 10);
