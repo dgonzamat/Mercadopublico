@@ -5,50 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cerebro · panel de control</title>
 <style>
+  /* Las tarjetas SE HUNDÍAN: `--panel` era más OSCURO que `--bg`, así que una
+     tarjeta se leía como un hueco y no como algo apoyado encima. Ahora el fondo
+     baja y el panel sube, con `--head` de tercera capa para cabeceras.
+     `--muted` sobre `--panel` pasa de 5.48:1 a 7.05:1 (medido, no estimado:
+     ya cumplía el AA de 4.5, esto lo lleva a AAA de texto normal).
+
+     OJO: `audit-design.mjs` NO vigila esto. Lee los tokens de
+     `web/tailwind.config.ts` y recorre `web/app` + `web/components`; el panel
+     vive en `tools/` y nunca ha entrado en su alcance. Estos valores están
+     comprobados a mano — si alguien los toca, no salta nada. */
   :root{
-    --bg:#f7f2e8; --panel:#ede6d4; --surface2:#dfd5be; --border:#c4b89d;
-    --text:#1a1a1a; --muted:#615a4d; --accent:#c41e3a;
+    --bg:#f4efe4; --panel:#fbf8f1; --surface2:#e2d7c1; --border:#cdbfa4;
+    --text:#191713; --muted:#5c5445; --head:#f7f2e7; --accent:#c41e3a;
     --ok:#1e6b3a; --warn:#9c5a18; --err:#8b0000;
     --flujo:2.6s;               /* ritmo de la marcha en reposo */
   }
   *{box-sizing:border-box}
+  /* Ninguna cifra que CAMBIA se pinta sin ancho fijo de dígito: sin esto el
+     reloj y el coste bailan de ancho en cada tick y el ojo lee movimiento
+     donde solo hay un 1 que sustituye a un 8. */
+  .mono,.metric,.resumen,pre,textarea,input{font-variant-numeric:tabular-nums}
+  /* MONO SOLO PARA DATOS. Estaba TODO en mono a 10.5-12.5px, así que nada
+     destacaba: una ruta de archivo, un precio y una frase en prosa pesaban
+     igual. Mono para lo que se compara dígito a dígito (rutas, tokens, dinero,
+     horas, nombres de herramienta); sans para prosa y controles. Y el suelo
+     sube a 12.5px: por debajo de eso el panel dejaba de leerse y empezaba a
+     escanearse. */
   body{margin:0;background:var(--bg);color:var(--text);
-    font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+    font:14px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
   h1,h2,h3{margin:0;font-weight:600}
   .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace}
-  .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;
-    text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 20px 72px}
+  .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
+    text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  .sub,.hint{font-size:12.5px}
+  /* DOS COLUMNAS: operar a la izquierda, decidir en un rail que no se va.
+     Checkpoint y pendientes vivían DEBAJO del diagrama, así que responder
+     «¿qué hago ahora?» costaba un scroll que además perdía de vista la corrida
+     — justo cuando la corrida es lo que te dice si merece la pena decidir algo.
+     El rail es sticky: la decisión te acompaña mientras lees el flujo. */
+  .wrap{max-width:1280px;margin:0 auto;padding:24px 24px 80px;
+    display:grid;gap:20px;grid-template-columns:minmax(0,1fr) 336px;align-items:start}
+  .col-op{min-width:0}          /* sin esto el ticker ensancha la columna */
+  .rail{display:flex;flex-direction:column;gap:16px;position:sticky;top:88px}
+  /* Por debajo de 1080 el rail no cabe sin estrangular el stepper: cae debajo
+     y deja de ser sticky (un sticky en una sola columna tapa contenido). */
+  @media (max-width:1080px){
+    .wrap{grid-template-columns:1fr;padding:18px 16px 64px}
+    .rail{position:static}
+  }
   .grow{flex:1 1 auto}
 
   header{border-bottom:1px solid var(--border);background:var(--panel);
     position:sticky;top:0;z-index:30}
-  .hdr{max-width:1140px;margin:0 auto;padding:14px 20px;display:flex;
+  .hdr{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;
     align-items:center;gap:16px;flex-wrap:wrap}
   .hdr h1{font-size:17px;letter-spacing:-.01em}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
   .dot.vivo{animation:latido 1.1s ease-in-out infinite}
-  .chip{font-family:ui-monospace,monospace;font-size:11px;padding:3px 8px;
-    border:1px solid var(--border);border-radius:99px;color:var(--muted);
+  .chip{font-family:ui-monospace,monospace;font-size:11.5px;padding:4px 9px;
+    border:1px solid var(--border);border-radius:6px;color:var(--muted);
     background:var(--bg);white-space:nowrap}
+  .presu{display:flex;flex-direction:column;gap:5px;min-width:150px}
+  .presu-cifra{display:flex;align-items:baseline;gap:8px}
+  .presu-cifra .mono{font-size:15px;font-weight:600;letter-spacing:-.01em}
+  .presu .bar{margin-top:0}
 
-  section{margin-top:34px}
+  /* En el rail las secciones se apilan con el `gap` del flex; el margen de
+     34px que separa bloques en la columna de operación ahí sobra. */
+  .col-op > section{margin-top:28px}
+  .col-op > section:first-of-type{margin-top:0}
+  .rail section{margin:0}
   .shead{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
   .shead p{margin:0;color:var(--muted);font-size:13px}
 
-  button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--border);
-    background:var(--bg);color:var(--text);padding:7px 13px;transition:.12s}
+  button{font:13px/1.4 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    cursor:pointer;border-radius:6px;border:1px solid var(--border);
+    background:var(--bg);color:var(--text);padding:7px 13px;min-height:36px;transition:.12s}
   button:hover:not(:disabled){background:var(--surface2)}
   button:disabled{opacity:.45;cursor:not-allowed}
-  button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff;
+    font-size:14px;font-weight:600;min-height:42px}
   button.primary:hover:not(:disabled){background:#a5182f}
   /* 24px de alto era demasiado poco para el botón que ahora es MAYORÍA en el
      panel: los `.mini` pasaron de excepción a norma cuando el rojo dejó de
-     usarse para todo. 30px es cómodo con ratón sin parecer un botón táctil. */
-  button.mini{padding:6px 11px;font-size:12px;min-height:30px}
+     usarse para todo. 34px es cómodo con ratón sin parecer un botón táctil. */
+  button.mini{padding:6px 11px;font-size:12.5px;min-height:34px}
 
   /* ══════════ FLOWCHART ══════════ */
-  .lienzo{background:var(--panel);border:1px solid var(--border);border-radius:10px;
+  .lienzo{background:var(--panel);border:1px solid var(--border);border-radius:12px;
     padding:20px 18px 24px;position:relative;overflow:hidden}
 
   .tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
@@ -56,58 +101,45 @@
     border-radius:99px;border:1px solid var(--border);background:var(--bg);cursor:pointer}
   .tab[aria-selected="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
 
-  /* El tren: las tres bandas en una franja horizontal en vez de apiladas. */
-  .tren{display:flex;align-items:flex-end;justify-content:center;gap:0;flex-wrap:wrap;
-    row-gap:16px}
-  .eh-banda{width:20px;margin:0 7px 20px}
-  .banda{display:flex;flex-direction:column;align-items:center;gap:9px}
-  .banda-tag{font-family:ui-monospace,monospace;font-size:10px;text-transform:uppercase;
-    letter-spacing:.16em;color:var(--muted)}
-  .fila{display:flex;align-items:stretch;justify-content:center;gap:0;flex-wrap:wrap;
-    max-width:100%}
+  /* STEPPER de una línea. El tren eran tres bandas de píldoras de 104px con
+     texto de 10.5px, todas del mismo peso: se leía como decoración y no decía
+     DÓNDE va la corrida. Peor, la fila envolvía y dejaba conectores huérfanos
+     al principio de la segunda línea.
 
-  /* 132px × 7 nodos + conectores no cabía en 1140 y el aterrizaje se caía a una
-     segunda fila, perdiendo el conector con la cadena. A 104px la cadena más
-     larga (caso-nuevo) entra entera en una franja. */
-  .nodo{background:var(--bg);border:1px solid var(--border);border-radius:8px;
-    padding:8px 10px;min-width:104px;text-align:center;position:relative;
-    transition:background .25s,border-color .25s,color .25s,transform .25s}
-  /* El tren se DEGRADA a propósito. Era lo primero que atraía el ojo y lo que
-     menos informa: el gate siempre acaba en verde o la corrida no arranca. Sigue
-     ahí para ver el avance, pero deja de competir con el estado y el checkpoint. */
-  .nodo .n-t{font-family:ui-monospace,monospace;font-size:10.5px;font-weight:500;
-    word-break:break-word;line-height:1.25}
-  .nodo .n-s{display:none}   /* el subtítulo del nodo era ruido: nadie lo lee */
-  .nodo.hecho{background:var(--ok);border-color:var(--ok);color:#fff}
-  .nodo.hecho .n-s{color:rgba(255,255,255,.72)}
-  .nodo.activo{background:var(--accent);border-color:var(--accent);color:#fff;
-    transform:scale(1.045);animation:latido 1.2s ease-in-out infinite}
-  .nodo.activo .n-s{color:rgba(255,255,255,.8)}
-  .nodo.gate{border-style:dashed}
+     Dos decisiones lo arreglan de raíz: grid de columnas IGUALES sin
+     `flex-wrap` (nunca envuelve, todas las cadenas caben), y el conector
+     dibujado DENTRO de cada celda en dos mitades — así un conector no puede
+     sobrevivir a la celda que lo justifica. */
+  .stepper{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);
+    align-items:start}
+  .paso{position:relative;display:flex;flex-direction:column;align-items:center;
+    gap:6px;min-width:0}
+  .paso .linea{position:absolute;top:14px;height:2px;
+    background:repeating-linear-gradient(90deg,var(--border) 0 6px,transparent 6px 12px);
+    background-size:12px 2px;animation:marchaH var(--flujo) linear infinite}
+  .corriendo .paso .linea{animation-duration:.8s}
+  .paso .linea.izq{left:0;width:50%}
+  .paso .linea.der{left:50%;width:50%}
+  .paso .linea.recorrida{background:var(--ok);animation:none}
+  .paso .n{position:relative;z-index:1;width:30px;height:30px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;border:1px solid var(--border);
+    background:var(--bg);color:var(--muted);font:600 12px ui-monospace,monospace;
+    transition:background .25s,border-color .25s,color .25s}
+  .paso.gate .n{border-style:dashed}
+  .paso.hecho  .n{background:var(--ok);border-color:var(--ok);color:#fff}
+  .paso.activo .n{background:var(--accent);border-color:var(--accent);color:#fff;
+    animation:latido 1.2s ease-in-out infinite}
+  .paso .t{font:11px/1.3 ui-monospace,monospace;text-align:center;
+    word-break:break-word;color:var(--muted)}
+  .paso.hecho .t,.paso.activo .t{color:var(--text)}
+  .paso.activo .t{font-weight:600}
+  .paso .b{font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:#7a7263}
 
-  /* aristas — la marcha de guiones ES el movimiento en reposo */
-  .eh{align-self:center;width:22px;height:2px;flex:none;
-    background:repeating-linear-gradient(90deg,var(--border) 0 7px,transparent 7px 14px);
-    background-size:14px 2px;animation:marchaH var(--flujo) linear infinite}
-  .ev{width:2px;height:30px;margin:0 auto;
-    background:repeating-linear-gradient(180deg,var(--border) 0 7px,transparent 7px 14px);
-    background-size:2px 14px;animation:marchaV var(--flujo) linear infinite;
-    position:relative}
-  .ev::after{content:"";position:absolute;left:-3px;top:-4px;width:8px;height:8px;
-    border-radius:50%;background:var(--accent);opacity:0}
-  .corriendo .eh,.corriendo .ev{animation-duration:.85s;
-    background-image:repeating-linear-gradient(var(--ang),var(--accent) 0 7px,transparent 7px 14px)}
-  .corriendo .eh{--ang:90deg} .corriendo .ev{--ang:180deg}
-  .corriendo .ev::after{animation:cometa 1.5s ease-in-out infinite}
-
-  @keyframes marchaH{to{background-position:14px 0}}
-  @keyframes marchaV{to{background-position:0 14px}}
+  @keyframes marchaH{to{background-position:12px 0}}
   @keyframes latido{0%,100%{box-shadow:0 0 0 0 rgba(196,30,58,.42)}
                     50%{box-shadow:0 0 0 10px rgba(196,30,58,0)}}
-  @keyframes cometa{0%{opacity:0;top:-4px}15%{opacity:1}85%{opacity:1}
-                    100%{opacity:0;top:26px}}
   @media (prefers-reduced-motion:reduce){
-    .eh,.ev,.ev::after,.nodo.activo,.dot.vivo{animation:none!important}
+    .paso .linea,.paso.activo .n,.dot.vivo{animation:none!important}
   }
 
   .ticker{margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
@@ -119,18 +151,31 @@
   .ticker .ev-out{cursor:pointer}
   .ticker .ev-out.largo::after{content:" ⋯ ver todo";color:var(--muted);font-style:italic}
   .ticker .ev-out.abierto::after{content:""}
-  .ticker li{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);
-    display:flex;flex-direction:column;gap:2px;animation:entra .3s ease;
-    padding-bottom:4px;border-bottom:1px dashed var(--border)}
-  .ticker .ev-in{display:flex;gap:9px}
-  .ticker li b{color:var(--text);font-weight:600;flex:none;min-width:104px}
-  .ticker .ev-out{color:var(--ok);padding-left:14px;word-break:break-word;line-height:1.4}
+  /* El ticker era un bloque `muted` uniforme: cuarenta filas del mismo peso en
+     las que la que estás leyendo —la última— no se distinguía de las treinta y
+     nueve que ya pasaron. Badge por tipo de herramienta para escanear por
+     forma, y la fila activa marcada, que es la única que importa en vivo. */
+  .ticker li{font-family:ui-monospace,monospace;font-size:12.5px;color:var(--muted);
+    display:flex;flex-direction:column;gap:3px;animation:entra .3s ease;
+    padding:11px 0;border-bottom:1px solid var(--surface2)}
+  .ticker li.ultima{background:var(--head);box-shadow:inset 3px 0 0 var(--accent);
+    padding-left:10px}
+  .ticker .ev-in{display:flex;gap:9px;align-items:center}
+  .ticker li b{color:var(--text);font-weight:600}
+  .ticker .tag{font:10px ui-monospace,monospace;text-transform:uppercase;
+    letter-spacing:.1em;padding:3px 8px;border-radius:5px;color:#fff;
+    background:#3f3a31;flex:none}
+  .ticker .tag.skill{background:var(--accent)}
+  .ticker .tag.escribe{background:var(--ok)}
+  .ticker .tag.busca{background:#3a5a7a}
+  .ticker .ev-out{color:var(--ok);padding-left:14px;word-break:break-word;
+    line-height:1.4;font-size:12.5px}
   .ticker .ev-wait{color:var(--muted);opacity:.6}
   @keyframes entra{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 
   /* ══════════ resto ══════════ */
   .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-  .card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
   .bar{height:5px;border-radius:99px;background:var(--surface2);margin-top:9px;overflow:hidden;display:flex}
   .bar i{display:block;height:100%}
   /* Sparkline diario: la FORMA del tráfico dice más que cualquier total. */
@@ -145,6 +190,8 @@
   .pend.cerrado{opacity:.55}
   .pend.cerrado .grow{text-decoration:line-through;text-decoration-color:var(--border)}
   .pend button{flex:none}
+  .fila-modo{display:flex;gap:12px;align-items:center;padding:8px 0;flex-wrap:wrap;
+    border-bottom:1px solid var(--surface2);font-size:12.5px}
   .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
   .metric small{font-size:14px;color:var(--muted);font-weight:400}
   .card .eyebrow{margin-bottom:6px;display:block}
@@ -164,9 +211,36 @@
   .find select{font:12px ui-monospace,monospace;padding:3px 5px;border-radius:6px;
     border:1px solid var(--border);background:var(--bg);color:var(--text)}
 
-  /* Bloque de consulta: filas de una línea, apiladas y separadas por hairlines.
-     Plegadas ocupan ~34px cada una en vez de una sección entera. */
-  .consulta{border-top:1px solid var(--border);margin-top:30px}
+  /* ══════════ CONSULTA · PESTAÑAS ══════════
+     Ocho acordeones apilados no se escanean: todos pesan igual y ninguno dice
+     cuál abrir, así que abrir uno era una apuesta. Una barra de pestañas con
+     UN panel visible a la vez, cada pestaña llevando su cifra —el titular con
+     dato, ahora en la propia pestaña— y una nota que explica qué pregunta
+     responde el panel abierto. */
+  .consulta{padding:0}
+  .tabs2{display:flex;gap:2px;padding:10px 12px 0;flex-wrap:wrap;
+    border-bottom:1px solid var(--surface2);background:var(--head);
+    border-radius:12px 12px 0 0}
+  .tabs2 button{border:1px solid transparent;border-radius:8px 8px 0 0;
+    background:transparent;color:var(--muted);margin-bottom:-1px;padding:10px 14px;
+    display:flex;align-items:baseline;gap:8px;min-height:0}
+  .tabs2 button:hover{background:rgba(0,0,0,.03)}
+  .tabs2 button[aria-selected="true"]{background:var(--panel);border-color:var(--border);
+    border-bottom-color:var(--panel);color:var(--text);font-weight:600}
+  .tabs2 .t2-lbl{font:10.5px ui-monospace,monospace;text-transform:uppercase;
+    letter-spacing:.16em;flex:none}
+  /* La cifra se acota a 98px. Todos los resúmenes EMPIEZAN por el número, así
+     que lo que sobrevive al recorte es siempre lo que importa («16 de 51
+     dej…»), y el texto entero está a un clic en `#tab-cifra`. Sin el tope, un
+     resumen largo empujaba a las demás pestañas a otra fila: una pestaña
+     decidía por las ocho restantes. */
+  .tabs2 .tasa{max-width:98px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tab-body{padding:18px 20px 20px}
+  .tab-body > .sub{margin:0 0 14px;color:var(--muted);max-width:70ch}
+  #tab-cifra{font-size:13px;color:var(--text);margin-bottom:6px}
+  #tab-cifra:empty{display:none}
+  .pane[hidden]{display:none}
+
   .plegable{border-bottom:1px solid var(--border)}
   .plegable summary{cursor:pointer;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
     list-style:none;padding:10px 2px}
@@ -185,7 +259,9 @@
   .corrida dt{font-family:ui-monospace,monospace;font-size:11px;text-transform:uppercase;
     letter-spacing:.1em;color:var(--muted);padding-top:2px}
   .corrida dd{margin:0}
-  .tasa{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted)}
+  /* 12.5 y no 12: `.tasa` dejó de ser solo cifras hace rato — lleva frases
+     («sin mockup todavía · lo dibuja Hacer»), así que le aplica el suelo. */
+  .tasa{font-family:ui-monospace,monospace;font-size:12.5px;color:var(--muted)}
   /* El resumen de la corrida pasa a ser el texto MÁS grande de la página
      después de nada: el título del panel es constante y no informa; esto cambia
      cada segundo y decide si cortas. Antes competía con el <h1> y perdía. */
@@ -206,7 +282,27 @@
     padding:11px 14px;font-size:13px;margin-top:12px}
   .offline{background:var(--err);color:#fff;text-align:center;padding:7px 12px;
     font-family:ui-monospace,monospace;font-size:12.5px;border-top:1px solid rgba(255,255,255,.25)}
-  .checkpoint{margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+  /* ══════════ RAIL ══════════ */
+  .estado{padding:16px 18px}
+  .estado.viva{border-color:var(--accent)}
+  .estado-top{display:flex;align-items:center;gap:9px}
+  /* 30px: el reloj es el número más grande del panel a propósito. «45
+     herramientas» no te dice que llevas catorce minutos; esto sí. */
+  .estado-titular{font-size:30px;font-weight:600;letter-spacing:-.02em;
+    line-height:1.1;margin-top:10px}
+  .estado .hint{margin-top:4px;min-height:2.6em}   /* sin salto al cambiar de texto */
+  .estado-foot{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:14px}
+  .kv{display:flex;flex-direction:column}
+  .kv b{font-size:14px;font-weight:600}
+  .kv .eyebrow{font-size:9.5px;letter-spacing:.12em}
+  .checkpoint{padding:14px 16px}
+  /* El plegable del rail es una tarjeta, no una fila de la lista de consulta:
+     pierde las hairlines de arriba y abajo que lo cosían a sus vecinos. */
+  .rail-pend{padding:4px 16px 14px;border-bottom:1px solid var(--border)}
+  .rail-pend summary{padding:12px 0 10px}
+  .rail-pend summary:hover{background:transparent}
+  .rail .pend{flex-wrap:wrap}      /* 336px no dan para texto + dos botones */
+  .rail .pend .grow{min-width:100%}
   .chk-list{margin:8px 0;display:flex;flex-direction:column;gap:4px}
   .chk-list .f{font-family:ui-monospace,monospace;font-size:12px;display:flex;gap:8px;align-items:center;
     word-break:break-all}
@@ -237,6 +333,18 @@
     <h1>Cerebro · panel de control</h1>
     <span class="grow"></span>
     <span class="chip mono" id="chip-repo">…</span>
+    <!-- PRESUPUESTO DEL DÍA. El acumulado de la sesión no frena nada: dice que
+         llevas $15 cuando ya te los gastaste. Esto es lo que queda HOY, con la
+         barra que se pone ámbar al 80% y roja al agotarse — y al agotarse
+         bloquea el disparo, que es la diferencia entre informar y proteger. -->
+    <div class="presu" title="Gasto de las corridas iniciadas hoy">
+      <div class="presu-cifra">
+        <span class="mono" id="presu-texto">—</span>
+        <span class="eyebrow">hoy</span>
+      </div>
+      <div class="bar"><i id="presu-barra"></i></div>
+    </div>
+    <span class="chip mono" id="chip-ramas" hidden></span>
     <span class="chip mono" id="chip-perm">…</span>
     <span class="chip mono" id="chip-auth">…</span>
     <!-- El panel quema tokens de verdad en cada disparo. El gasto vivo va en la
@@ -254,8 +362,10 @@
 
 <div class="wrap">
 
+<main class="col-op">
+
   <!-- Errores que sobreviven a ser leídos, en vez de un alert() que se cierra. -->
-  <div id="avisos" hidden style="margin-top:18px"></div>
+  <div id="avisos" hidden style="margin-bottom:18px"></div>
 
   <!-- ══ ORQUESTACIÓN ══ -->
   <section>
@@ -271,22 +381,35 @@
            fricción observada, una decisión pendiente en el log— no tenían por
            dónde entrar. La regla de oro del cerebro es que cada disparo cite su
            señal; esta caja es donde se escribe. -->
+      <!-- La señal pasa de OPCIONAL a OBLIGATORIA. La regla del cerebro siempre
+           fue «cada disparo cita su señal», pero el panel la pedía con un
+           «(opcional)» al lado: una regla que la herramienta no sostiene es una
+           sugerencia. Las corridas más caras y estériles de la sesión salieron
+           de disparos sin señal — «mejoras-ux» a ver qué encuentra. -->
       <label class="eyebrow" for="contexto" style="display:block;margin-top:18px">
-        Señal · qué debe atacar esta corrida <span class="tasa">(opcional)</span>
+        Señal · obligatoria
+        <span class="tasa" style="text-transform:none;letter-spacing:0">sin señal no es un disparo: elige una detectada o escríbela</span>
       </label>
-      <textarea id="contexto" rows="2" style="margin-top:6px"
+      <!-- Las señales detectadas se sacan de lo que el panel YA sabe (pendientes
+           derivados, anotados y hallazgos de sonda): si el panel puede nombrar
+           el problema, pedirte que lo teclees es devolverte el trabajo. -->
+      <div id="senales" style="display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 10px"></div>
+      <textarea id="contexto" rows="2"
         placeholder="Ej: /cases móvil — el título recibe 159px (44%) mientras tier y % se llevan 96px (26%)…"></textarea>
 
-      <div style="display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap">
+      <!-- Detener y el resumen de la corrida se fueron al rail (#estado): el
+           estado vivo no es un apéndice de la fila de disparo. -->
+      <div style="display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap">
         <button class="primary" id="btn-gatillar">Gatillar este modo</button>
-        <button class="mini" id="btn-detener" disabled>Detener</button>
-        <span class="tasa" id="nota-cimiento" style="color:var(--err)" hidden>cimiento roto — arregla las sondas en rojo primero</span>
-        <span class="grow"></span>
-        <!-- El estado de la corrida ERA esto: 12px muted al final de una fila de
-             botones. Es el dato que más miras —¿sigue viva? ¿cuánto llevo
-             gastado?— así que sube a titular. -->
-        <span class="resumen" id="resumen-job">en reposo</span>
+        <!-- El override es un botón APARTE, punteado y sin relleno: saltarse la
+             regla tiene que costar un gesto distinto de cumplirla. Un mismo
+             botón que a veces avisa se convierte en el botón de siempre. -->
+        <button class="mini" id="btn-override" hidden
+          style="border-style:dashed;border-color:var(--accent);color:var(--accent);background:transparent">
+          Gatillar de todos modos</button>
+        <span class="tasa" id="aviso-disparo"></span>
       </div>
+      <div class="tasa" style="margin-top:10px">atajos · <b>1-7</b> modo · <b>g</b> gatillar · <b>.</b> detener</div>
 
       <div class="warnbox" id="bloqueo" hidden></div>
       <!-- Cierre de la fase 1: la propuesta no deja archivos, así que el
@@ -307,42 +430,6 @@
     </div>
   </section>
 
-  <!-- ══ DECIDIR ══
-       Checkpoint y pendientes eran la MISMA pregunta —«¿qué hago ahora?»— en dos
-       sitios: uno enterrado bajo el diagrama y otro cien líneas más abajo. Aquí
-       viven juntos, encima de todo lo que solo se consulta. -->
-  <section>
-      <!-- Checkpoint: la corrida NO aterriza sola. Al terminar, muestra qué
-           archivos tocó y tú decides commitear (en rama) o descartar. -->
-      <div class="checkpoint" id="checkpoint" hidden>
-        <span class="eyebrow">Checkpoint · qué tocó la corrida (¿commiteamos?)</span>
-        <div id="chk-archivos" class="chk-list"></div>
-        <input id="chk-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
-        <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap">
-          <button class="primary" id="btn-commit">Commitear en rama</button>
-          <button class="mini" id="btn-discard">Descartar</button>
-          <span class="grow"></span>
-          <span class="tasa" id="chk-estado"></span>
-        </div>
-      </div>
-
-    <!-- Los pendientes viven AQUÍ, no en el bloque de consulta: son la otra
-         mitad de «¿qué hago ahora?». Separarlos del checkpoint obligaba a
-         recorrer media página para responder una sola pregunta. -->
-    <details class="plegable" id="d-pendientes" open>
-      <summary><span class="eyebrow">Qué decidir ahora</span>
-        <span class="tasa" id="sum-pendientes">—</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Los <b>del repo</b> los deduce el panel y se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
-      <div id="pendientes"></div>
-      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
-        <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:260px;margin:0"
-          placeholder="Anotar un pendiente…">
-        <button class="mini" id="btn-add-pendiente">Añadir</button>
-      </div>
-    </details>
-  </section>
-
   <!-- ══ CONSUMO Y RENDIMIENTO (medido por el panel) ══
        Estas NO salen de `cerebro-runs.jsonl`: ahí el cerebro se narra a sí mismo
        y su campo `coste` es prosa, no un número. Estas las mide el panel viendo
@@ -358,92 +445,164 @@
        buscas cabe en una línea, no tienes que abrir nada; abrir es para el
        detalle. Un plegable que obliga a abrirlo para saber si merece la pena
        solo mueve el desorden un clic más allá. -->
-  <section class="consulta">
-    <!-- Catálogo de propuestas. Un mockup solo se alcanzaba desde la corrida
-         que lo creó, así que en cuanto ese job salía de la lista la propuesta se
-         volvía inencontrable — el mismo olvido silencioso de las ramas, con
-         trabajo ya pagado dentro. -->
-    <details class="plegable" id="d-mockups">
-      <summary><span class="eyebrow">Mockups</span>
-        <span class="tasa" id="sum-mockups">—</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Toda propuesta deja el suyo. Aquí están todos, con lo que pasó después: construido, descartado o esperando decisión.</p>
-      <div id="mockups"><div class="empty">Cargando…</div></div>
-    </details>
+  <section class="card consulta">
+    <!-- La barra la pinta `pintarTabs2()` con los mismos `#sum-*` de siempre
+         dentro de cada pestaña: los renderers no saben que esto cambió. -->
+    <div class="tabs2" id="tabs2" role="tablist" aria-label="Consulta"></div>
+    <div class="tab-body">
+      <!-- La cifra COMPLETA del panel activo. En la pestaña solo cabe el
+           titular; el detalle («· $15.41 · caché 92%») vive aquí, donde hay
+           ancho de sobra y no empuja a las demás pestañas a otra fila. -->
+      <div class="mono" id="tab-cifra"></div>
+      <p class="sub" id="tab-nota"></p>
+      <div id="tab-panel">
 
-    <details class="plegable" id="d-consumo">
-      <summary><span class="eyebrow">Consumo</span>
-        <span class="tasa" id="sum-consumo">—</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Medido por el panel sobre las corridas que ha visto, no declarado por el cerebro.</p>
-      <div class="cards" id="consumo"></div>
-    </details>
+        <!-- Catálogo de propuestas. Un mockup solo se alcanzaba desde la corrida
+             que lo creó, así que en cuanto ese job salía de la lista la propuesta
+             se volvía inencontrable — el mismo olvido silencioso de las ramas,
+             con trabajo ya pagado dentro. -->
+        <div class="pane" id="d-mockups" role="tabpanel" hidden>
+          <div id="mockups"><div class="empty">Cargando…</div></div>
+        </div>
 
-    <details class="plegable" id="d-rendimiento">
-      <summary><span class="eyebrow">Rendimiento</span>
-        <span class="tasa" id="sum-rendimiento">—</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Una corrida puede razonar espléndidamente durante 14 minutos y no tocar un archivo. Aquí eso sale como número.</p>
-      <div class="cards" id="rendimiento"></div>
-    </details>
+        <div class="pane" id="d-consumo" role="tabpanel" hidden>
+          <div class="cards" id="consumo"></div>
+        </div>
 
-    <details class="plegable" id="d-log">
-      <summary><span class="eyebrow">El loop sobre sí mismo</span>
-        <span class="tasa" id="sum-log">—</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Lo que el cerebro declara en <code class="mono">cerebro-runs.jsonl</code> — su relato, no la medición.</p>
-      <div class="cards" id="metricas"></div>
-    </details>
+        <div class="pane" id="d-rendimiento" role="tabpanel" hidden>
+          <div class="cards" id="rendimiento"></div>
+          <!-- El agregado esconde QUÉ prompt no aterriza: «16 de 51» no dice
+               que caso-nuevo lleva 0 de 4. Un modo por debajo del 50% no tiene
+               un problema de presupuesto, tiene un problema de prompt. -->
+          <div style="margin-top:18px;border-top:1px solid var(--surface2);padding-top:16px">
+            <span class="eyebrow" style="display:block;margin-bottom:4px">Cambio vs informe · por modo</span>
+            <p class="sub" style="margin:0 0 12px;max-width:70ch">El que baja del 50% no tiene un problema de presupuesto, tiene un problema de prompt.</p>
+            <div id="por-modo"></div>
+          </div>
+        </div>
 
-    <!-- Visitantes: las MISMAS RPC que lee /visitantes del sitio, no un segundo
-         cálculo. Es el único dato del panel que viene de fuera del repo, y el
-         que dice si algo de lo que se construye aquí lo mira alguien. -->
-    <details class="plegable" id="d-visitas">
-      <summary><span class="eyebrow">Visitantes</span>
-        <span class="tasa" id="sum-visitas">— pulsa para cargar</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Leído de Supabase con las mismas funciones que <code class="mono">/visitantes</code>. El beacon del sitio ya filtra bots.</p>
-      <!-- Los MISMOS cuatro periodos que ofrece /visitantes. Inventar otros
-           haría que los dos paneles dieran cifras distintas del mismo dato. -->
-      <div class="tabs" id="periodos" role="tablist" aria-label="Periodo"></div>
-      <div id="visitas"><div class="empty">Cargando…</div></div>
-    </details>
+        <div class="pane" id="d-log" role="tabpanel" hidden>
+          <div class="cards" id="metricas"></div>
+        </div>
 
-    <details class="plegable" id="d-salud">
-      <summary><span class="eyebrow">Salud</span>
-        <span class="tasa" id="sum-salud">sin sondear</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Las cuatro sondas del repo, ejecutadas de verdad. Cada hallazgo se puede mandar a corregir.</p>
-      <div id="salud"><div class="empty">Pulsa «Sondear salud» arriba para correr las sondas.</div></div>
-    </details>
+        <!-- Visitantes: las MISMAS RPC que lee /visitantes del sitio, no un
+             segundo cálculo. Es el único dato del panel que viene de fuera del
+             repo, y el que dice si algo de lo que se construye aquí lo mira
+             alguien. Los MISMOS cuatro periodos que ofrece /visitantes:
+             inventar otros haría que los dos paneles dieran cifras distintas
+             del mismo dato. -->
+        <div class="pane" id="d-visitas" role="tabpanel" hidden>
+          <div class="tabs" id="periodos" role="tablist" aria-label="Periodo"></div>
+          <div id="visitas"><div class="empty">Cargando…</div></div>
+        </div>
 
-    <details class="plegable" id="d-corridas">
-      <summary><span class="eyebrow">Corridas</span>
-        <span class="tasa" id="sum-corridas">—</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <div id="corridas"></div>
-    </details>
+        <div class="pane" id="d-salud" role="tabpanel" hidden>
+          <div id="salud"><div class="empty">Pulsa «Sondear salud» arriba para correr las sondas.</div></div>
+        </div>
 
-    <details class="plegable" id="d-repo">
-      <summary><span class="eyebrow">Repo</span>
-        <span class="tasa" id="sum-repo">—</span>
-        <span class="grow"></span>
-        <button class="mini" id="btn-repo-refresh">Refrescar</button>
-        <span class="tasa">▾</span></summary>
-      <div id="repo"><div class="empty">Pulsa «Refrescar» para ver los cambios del working tree.</div></div>
-      <!-- FUERA de #repo a propósito: `cargarRepo()` reescribe #repo entero, y un
-           aterrizaje exitoso deja el árbol limpio → borraba su propio resultado
-           (hash, push, salida de git) 600 ms después de mostrarlo. El rastro de
-           lo que se ejecutó tiene que sobrevivir al re-render. -->
-      <div id="repo-log" hidden></div>
-    </details>
+        <div class="pane" id="d-corridas" role="tabpanel" hidden>
+          <div id="corridas"></div>
+        </div>
 
-    <details class="plegable" id="sec-salida" hidden>
-      <summary><span class="eyebrow">Salida cruda de la corrida</span>
-        <span class="grow"></span><span class="tasa">▾</span></summary>
-      <pre id="job-out"></pre>
-    </details>
+        <!-- Lo descartado, fechado y con motivo. Es la mitad del loop que no
+             deja rastro en git: un cambio que aterriza se puede leer en el
+             historial, uno que se tira desaparece sin explicación. -->
+        <div class="pane" id="d-registros" role="tabpanel" hidden>
+          <div id="registros"></div>
+        </div>
+
+        <div class="pane" id="d-repo" role="tabpanel" hidden>
+          <div style="display:flex;justify-content:flex-end;margin-bottom:10px">
+            <button class="mini" id="btn-repo-refresh">Refrescar</button>
+          </div>
+          <div id="repo"><div class="empty">Pulsa «Refrescar» para ver los cambios del working tree.</div></div>
+          <!-- FUERA de #repo a propósito: `cargarRepo()` reescribe #repo entero,
+               y un aterrizaje exitoso deja el árbol limpio → borraba su propio
+               resultado (hash, push, salida de git) 600 ms después de mostrarlo.
+               El rastro de lo que se ejecutó tiene que sobrevivir al re-render. -->
+          <div id="repo-log" hidden></div>
+        </div>
+
+        <div class="pane" id="sec-salida" role="tabpanel" hidden>
+          <pre id="job-out"></pre>
+        </div>
+
+      </div>
+    </div>
   </section>
+
+</main>
+
+<!-- ══ RAIL · DECIDIR ══
+     Checkpoint y pendientes eran la MISMA pregunta —«¿qué hago ahora?»— y
+     vivían debajo del diagrama: responderla costaba un scroll que perdía de
+     vista la corrida. Aquí van juntos y en sticky, así que la decisión sigue
+     a la vista mientras lees el flujo. -->
+<aside class="rail">
+
+  <!-- El estado ERA 12-18px al final de una fila de botones. Es el dato que
+       más miras —¿sigue viva? ¿cuánto llevo gastado? ¿por qué paso va?— así
+       que deja de ser una nota al margen y pasa a ser el titular del rail. -->
+  <div class="card estado" id="estado">
+    <div class="estado-top">
+      <span class="dot" id="estado-dot"></span>
+      <span class="eyebrow" id="estado-etiqueta">en reposo</span>
+    </div>
+    <div class="estado-titular mono" id="estado-titular">—</div>
+    <div class="hint" id="estado-sub">elige un modo, cita la señal y gatilla</div>
+    <div class="bar"><i id="estado-progreso" style="width:0;background:var(--accent)"></i></div>
+    <div class="estado-foot">
+      <button class="mini" id="btn-detener" hidden>Detener</button>
+      <div class="kv"><b class="mono" id="estado-tok">0</b><span class="eyebrow">tokens</span></div>
+      <div class="kv"><b class="mono" id="estado-coste">$0.00</b><span class="eyebrow">coste</span></div>
+    </div>
+  </div>
+
+  <!-- Checkpoint: la corrida NO aterriza sola. Al terminar, muestra qué
+       archivos tocó y tú decides commitear (en rama) o descartar. -->
+  <!-- «Decisión pendiente», no «checkpoint»: nombra lo que te toca hacer, no la
+       parte de la máquina. Y con borde acento, porque es lo único del rail que
+       caduca — un cambio sin decidir se queda en el árbol y estorba al siguiente. -->
+  <div class="card checkpoint" id="checkpoint" hidden>
+    <span class="eyebrow" style="color:var(--accent)">Decisión pendiente</span>
+    <div id="chk-archivos" class="chk-list"></div>
+    <input id="chk-msg" class="chk-msg" placeholder="Mensaje del commit (opcional)">
+
+    <!-- Descartar EXIGE motivo. Sin él, dentro de un mes un descarte no se
+         distingue de un olvido, y sobre todo no se sabe si falló el cambio o
+         el prompt que lo pidió — que es la única pregunta que hace mejorar el
+         loop. El commit no lo exige: lo que aterriza deja su propio rastro. -->
+    <div id="chk-motivo-box" hidden style="margin-top:12px;padding-top:12px;border-top:1px dashed var(--border)">
+      <span class="sub" style="display:block;margin-bottom:7px">¿Por qué se descarta? Queda en Registros — sin motivo, en un mes no se sabrá si el problema era el prompt o el cambio.</span>
+      <input id="chk-motivo" class="chk-msg" style="margin:0" placeholder="Ej: el fix atacaba el síntoma, no la causa">
+      <div style="display:flex;gap:9px;margin-top:9px;flex-wrap:wrap">
+        <button class="mini" id="btn-descarte-ok" disabled>Descartar y registrar</button>
+        <button class="mini" id="btn-descarte-no">Cancelar</button>
+      </div>
+    </div>
+
+    <div id="chk-acciones" style="display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap">
+      <button class="primary" id="btn-commit">Commitear en rama</button>
+      <button class="mini" id="btn-discard">Descartar</button>
+      <span class="grow"></span>
+    </div>
+    <div class="tasa" id="chk-estado" style="margin-top:8px"></div>
+  </div>
+
+  <details class="card plegable rail-pend" id="d-pendientes" open>
+    <summary><span class="eyebrow">Qué decidir ahora</span>
+      <span class="tasa" id="sum-pendientes">—</span>
+      <span class="grow"></span><span class="tasa">▾</span></summary>
+    <p class="sub">Los <b>del repo</b> los deduce el panel y se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
+    <div id="pendientes"></div>
+    <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+      <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:0;margin:0"
+        placeholder="Anotar un pendiente…">
+      <button class="mini" id="btn-add-pendiente">Añadir</button>
+    </div>
+  </details>
+
+</aside>
 
 </div>
 
@@ -465,6 +624,7 @@ const etiquetaEstado = (e) =>
   : e || "?";
 
 let estado = null, modoSel = null, job = null, poll = null, cimientoRoto = false, reconn = null, chkJob = null;
+let ultimaSalud = [];   // hallazgos del último sondeo, reutilizados como señales
 
 /* Banner de conexión. El server del panel es un proceso local que puede caerse;
    sin esto, un fetch fallido dejaba la UI muda o reintentaba en silencio. */
@@ -496,14 +656,43 @@ const mmss = (ms) => {
 const miles = (n) => (n ?? 0).toLocaleString("es");
 const compacto = (n) => n >= 1e6 ? (n / 1e6).toFixed(2) + "M"
   : n >= 1e3 ? (n / 1e3).toFixed(1) + "k" : String(n ?? 0);
+/* Global porque ahora lo usan el consumo Y la tarjeta de estado. Un `—` cuando
+   no hay dato, nunca `$0.00`: «no lo sé» y «salió gratis» no son lo mismo. */
+const dinero = (n) => n == null ? "—" : "$" + n.toFixed(2);
 
-/* Estado del botón de disparo en un solo sitio: se bloquea mientras hay una
-   corrida viva Y si el cimiento está roto (la doctrina del cerebro prohíbe
-   gatillar un modo sobre err>0 — «arregla esto antes de gatillar otro modo»). */
+/* Presupuesto del día. No sale de ningún endpoint nuevo: se suma el coste de
+   los jobs cuyo `inicio` cae hoy. 15 USD es lo que costó la sesión que enseñó
+   que se puede gastar así sin darse cuenta — el tope no es sagrado, es una
+   pregunta que el panel hace antes de que la factura la haga por él. */
+const PRESUPUESTO_DIA = 15;
+let gastoHoy = 0, override = false;
+
+/* Estado del botón de disparo, en un solo sitio. Tres cosas lo frenan, y cada
+   una dice cuál es:
+     · corrida viva          — no se solapan (sin override: no tiene sentido)
+     · cimiento roto         — la doctrina prohíbe gatillar sobre err>0
+     · sin señal / sin saldo — se pueden saltar, pero por el botón de al lado
+   El override es explícito y de un solo uso: se consume al disparar, así que
+   saltarse la regla dos veces exige pedirlo dos veces. */
 function actualizarGatillar() {
   const corriendo = job?.estado === "corriendo";
-  $("#btn-gatillar").disabled = corriendo || cimientoRoto;
-  $("#nota-cimiento").hidden = !cimientoRoto;
+  const sinSenal = !$("#contexto").value.trim();
+  const sinSaldo = gastoHoy >= PRESUPUESTO_DIA;
+  const blando = sinSenal || sinSaldo;          // saltable con override
+  const duro = corriendo || cimientoRoto;       // no
+
+  $("#btn-gatillar").disabled = duro || (blando && !override);
+  $("#btn-override").hidden = !blando || duro || override;
+
+  const aviso = $("#aviso-disparo");
+  aviso.style.color = blando || cimientoRoto ? "var(--err)" : "var(--muted)";
+  aviso.textContent =
+      cimientoRoto ? "cimiento roto — arregla las sondas en rojo primero"
+    : corriendo ? "hay una corrida viva"
+    : override ? "override activo · esta corrida se salta la comprobación"
+    : sinSaldo ? `presupuesto del día agotado: ${dinero(gastoHoy)} de ${dinero(PRESUPUESTO_DIA)}`
+    : sinSenal ? "cita la señal que ataca esta corrida"
+    : "";
 }
 
 /* ── el grafo ────────────────────────────────────────────────────────────
@@ -553,11 +742,16 @@ function coincide(n, ev) {
   return new RegExp(`"${e}"|[/\\\\]${e}\\b`, "i").test(ev.detalle);
 }
 
-function nodosDelModo(modo) {
+/* Gate + cadena + aterrizaje en una sola lista, cada paso sabiendo de qué banda
+   viene. La usan el stepper y la tarjeta de estado, así que el «paso N de M»
+   del rail y el círculo encendido del diagrama salen del mismo sitio y no
+   pueden discrepar. */
+function pasosDelModo() {
+  if (!modoSel) return [];
   return [
-    { banda: "Gate", nodos: GATE, clase: "gate" },
-    { banda: `Cadena · ${modo.arg || "diagnóstico"}`, nodos: cadenaDeNodos(modo.cadena) },
-    { banda: "Aterrizaje", nodos: ATERRIZAJE },
+    ...GATE.map((n) => ({ ...n, banda: "gate" })),
+    ...cadenaDeNodos(modoSel.cadena).map((n) => ({ ...n, banda: "cadena" })),
+    ...ATERRIZAJE.map((n) => ({ ...n, banda: "aterrizaje" })),
   ];
 }
 
@@ -592,15 +786,13 @@ function estadosDeNodos(bandas) {
 
 function pintarFlujo() {
   if (!modoSel) return;
-  const bandas = nodosDelModo(modoSel);
-  const cl = estadosDeNodos(bandas);
-  /* HORIZONTAL. En vertical el diagrama comía ~600px de alto y dejaba el 70%
-     del ancho vacío para decir «gate hecho, cadena corriendo, aterrizaje
-     pendiente» — con la banda central de un solo nodo en varios modos. El
-     espacio que ocupaba es el que necesita el ticker, que es donde está la
-     información real. Mismo contenido, una franja. */
+  const pasos = pasosDelModo();
+  // El MISMO matcher de siempre: el criterio de encendido no se toca, solo se
+  // le pasa la secuencia aplanada en vez de las tres bandas.
+  const cl = estadosDeNodos([{ nodos: pasos }]);
+
   /* Si estás mirando un modo distinto al de la corrida, el diagrama enseña
-     nodos apagados que NO significan «no pasó nada»: significan «esto es otro
+     pasos apagados que NO significan «no pasó nada»: significan «esto es otro
      modo». Se dice, con un atajo para volver — explorar modos mientras corre
      algo es legítimo; confundirse no. */
   const otroModo = job && (job.modo ?? "") !== (modoSel.arg ?? "");
@@ -612,21 +804,27 @@ function pintarFlujo() {
          — <button class="mini" id="btn-ver-corrida">ver su cadena</button>
        </div>` : "";
 
-  $("#flujo").innerHTML = aviso + `<div class="tren">` + bandas.map((b, bi) => `
-    ${bi ? '<div class="eh eh-banda"></div>' : ""}
-    <div class="banda">
-      <div class="banda-tag">${esc(b.banda)}</div>
-      <div class="fila">
-        ${b.nodos.length ? b.nodos.map((n, i) => `
-          ${i ? '<div class="eh"></div>' : ""}
-          <div class="nodo ${b.clase ?? ""} ${cl[n.id] ?? ""}">
-            <div class="n-t">${esc(n.t)}</div>
-            <div class="n-s">${esc(n.s)}</div>
-          </div>`).join("")
-        : `<div class="nodo"><div class="n-t">—</div>
-             <div class="n-s">sin cadena declarada</div></div>`}
-      </div>
-    </div>`).join("") + `</div>`;
+  $("#flujo").innerHTML = aviso + `<div class="stepper">` + pasos.map((n, i) => {
+    const est = cl[n.id] ?? "";
+    const rec = est === "hecho" || est === "activo";
+    const prevRec = i > 0 && ["hecho", "activo"].includes(cl[pasos[i - 1].id] ?? "");
+    return `<div class="paso ${n.banda} ${est}">
+      ${i ? `<div class="linea izq${prevRec && rec ? " recorrida" : ""}"></div>` : ""}
+      ${i < pasos.length - 1 ? `<div class="linea der${est === "hecho" ? " recorrida" : ""}"></div>` : ""}
+      <div class="n">${n.banda === "aterrizaje" ? "·" : i + 1}</div>
+      <div class="t">${esc(n.t)}</div>
+      <div class="b">${esc(n.banda)}</div>
+    </div>`;
+  }).join("") + `</div>`
+    /* Un modo sin cadena es un fallo del contrato, no un modo corto: fue así
+       como se vio que `noticias` no estaba en el mapa del panel. El stepper
+       plano se lo tragaría en silencio (gate + aterrizaje parecen una cadena
+       legítima), así que la ausencia se dice en voz alta. */
+    + (pasos.some((n) => n.banda === "cadena") ? "" :
+      `<div class="tasa" style="text-align:center;margin-top:12px;color:var(--warn)">
+         ⚠ <b>${esc(modoSel.arg || "diagnóstico")}</b> no declara cadena — revisa su fila
+         en <code class="mono">cerebro.md</code>
+       </div>`);
 
   if (otroModo) $("#btn-ver-corrida").onclick = () => {
     const suyo = estado.modos.find((m) => m.arg === (job.modo ?? ""));
@@ -715,7 +913,6 @@ function pintarConsumo() {
   if (!s) return;
   const tk = s.tokens, tot = s.tokensTotal || 0;
   const pct = (n) => tot > 0 ? Math.round((n / tot) * 100) : 0;
-  const dinero = (n) => n == null ? "—" : "$" + n.toFixed(2);
 
   // Cabecera: gasto vivo, siempre a la vista.
   const chip = $("#chip-consumo");
@@ -782,6 +979,10 @@ function pintarConsumo() {
    motivo. Un pendiente que desaparece sin rastro es indistinguible de uno que
    nunca existió, y dentro de un mes lo que importa es por qué se descartó. */
 function pintarPendientes(d) {
+  // Las mismas carencias alimentan la lista de decisiones Y el selector de
+  // señal: son el mismo hecho leído para dos preguntas distintas.
+  recogerSenales(d, ultimaSalud);
+  pintarRegistros(d);
   const derivados = d.derivados ?? [];
   const lista = d.anotados ?? [];
   const abiertos = lista.filter((p) => p.estado === "pendiente");
@@ -868,10 +1069,8 @@ function pintarPendientes(d) {
   // Atajo a la sección que resuelve el pendiente, en vez de un texto muerto que
   // te deja buscándola por la página.
   document.querySelectorAll("#pendientes [data-ir]").forEach((b) => b.onclick = () => {
-    const d = document.getElementById(b.dataset.ir);
-    if (!d) return;
-    d.open = true;
-    d.scrollIntoView({ behavior: "smooth", block: "start" });
+    irA(b.dataset.ir);
+    $("#tabs2").scrollIntoView({ behavior: "smooth", block: "start" });
     if (b.dataset.ir === "d-repo") cargarRepo();
   });
 
@@ -1065,13 +1264,8 @@ async function cargarVisitas() {
     cont.innerHTML = `<div class="warnbox">El panel no pudo consultar Supabase.</div>`;
   }
 }
-$("#d-visitas").addEventListener("toggle", () => {
-  if ($("#d-visitas").open && !visitasCargadas) {
-    visitasCargadas = true;
-    pintarPeriodos();
-    cargarVisitas();
-  }
-});
+/* La carga perezosa la dispara ahora `irA("d-visitas")`: es la única llamada del
+   panel que sale a la red, así que se sigue pagando solo cuando la miras. */
 
 function pintarMetricas() {
   const m = estado.metricas;
@@ -1144,7 +1338,9 @@ function pintarSalud(h) {
   const nWarn = h.sondas.reduce((n, s) => n + s.warns.length, 0);
   $("#sum-salud").textContent = `${nErr} error(es) · ${nWarn} warn(s)`
     + (h.cimientoRoto ? " · CIMIENTO ROTO" : "");
-  $("#d-salud").open = nErr > 0 || h.cimientoRoto;   // solo se abre si importa
+  // Solo se lleva la atención si IMPORTA. Saltar a Salud tras cada sondeo
+  // limpio enseñaría a ignorar el salto justo el día que haya un rojo.
+  if (nErr > 0 || h.cimientoRoto) irA("d-salud");
   const cab = h.cimientoRoto
     ? `<div class="warnbox"><strong>Cimiento roto.</strong> El cerebro no construye sobre
        <code class="mono">err&gt;0</code>: arregla esto antes de gatillar otro modo.</div>` : "";
@@ -1177,11 +1373,15 @@ function pintarSalud(h) {
     b.onclick = () => gatillar($("#" + b.dataset.dest).value, b.dataset.fix));
 
   cimientoRoto = !!h.cimientoRoto;   // bloquea «Gatillar» hasta arreglar err>0
+  // Los hallazgos son señales de primera: vienen medidos y con su texto.
+  ultimaSalud = h.sondas.flatMap((s) => [...s.errores, ...s.warns]).slice(0, 4);
   actualizarGatillar();
 }
 
 /* ── disparo ─────────────────────────────────────────────────────────── */
 $("#btn-gatillar").onclick = () => gatillar(modoSel.arg, $("#contexto").value.trim());
+$("#contexto").oninput = actualizarGatillar;
+$("#btn-override").onclick = () => { override = true; actualizarGatillar(); };
 
 // `origen`: el job de la fase 1 que esta corrida viene a construir. Viaja al
 // servidor para que la propuesta quede cerrada y deje de contarse pendiente.
@@ -1196,7 +1396,11 @@ async function gatillar(modo, contexto = "", origen = null) {
 
   // Feedback inmediato: entre el click y el primer tick había un hueco mudo.
   $("#btn-gatillar").disabled = true;
-  $("#resumen-job").textContent = "lanzando…";
+  $("#estado-etiqueta").textContent = "lanzando…";
+  $("#estado-dot").classList.add("vivo");
+  // El override se CONSUME aquí: vale para una corrida, no para la sesión. Un
+  // permiso que se queda puesto deja de ser una excepción a los dos minutos.
+  override = false;
 
   let j;
   try {
@@ -1205,17 +1409,17 @@ async function gatillar(modo, contexto = "", origen = null) {
       body: JSON.stringify({ modo, contexto, origen }),
     });
     j = await r.json();
-    if (!r.ok) { $("#resumen-job").textContent = "en reposo"; actualizarGatillar(); return avisar(j.error); }
+    if (!r.ok) { pintarEstado(job); actualizarGatillar(); return avisar(j.error); }
     conexion(true);
   } catch (e) {
     conexion(false);
-    $("#resumen-job").textContent = "en reposo";
+    pintarEstado(job);
     actualizarGatillar();
     return;
   }
   job = j;
   $("#ticker").hidden = false;
-  $("#sec-salida").hidden = false;
+  revelarPanel("sec-salida");
   // Resetear el checkpoint de la corrida anterior.
   $("#checkpoint").hidden = true; chkJob = null;
   $("#btn-commit").disabled = false; $("#btn-commit").textContent = "Commitear en rama";
@@ -1382,10 +1586,32 @@ $("#btn-commit").onclick = async () => {
   } catch (e) { conexion(false); b.disabled = false; b.textContent = "Commitear en rama"; }
 };
 
-$("#btn-discard").onclick = async () => {
+/* Descartar es de dos tiempos: pedir el motivo y luego ejecutar. El `confirm()`
+   de antes preguntaba «¿seguro?», que es una pregunta que siempre se contesta
+   que sí; esta pide algo que hay que pensar, y de paso deja el registro. */
+$("#btn-discard").onclick = () => {
   if (!job) return;
-  if (!confirm("Descartar los cambios de esta corrida (revertir/borrar SOLO esos archivos)?")) return;
-  const b = $("#btn-discard"); b.disabled = true;
+  $("#chk-motivo-box").hidden = false;
+  $("#chk-acciones").hidden = true;
+  $("#chk-motivo").focus();
+};
+$("#btn-descarte-no").onclick = () => {
+  $("#chk-motivo-box").hidden = true;
+  $("#chk-acciones").hidden = false;
+  $("#chk-motivo").value = "";
+};
+$("#chk-motivo").oninput = () => {
+  $("#btn-descarte-ok").disabled = !$("#chk-motivo").value.trim();
+};
+$("#chk-motivo").onkeydown = (e) => {
+  if (e.key === "Enter" && !$("#btn-descarte-ok").disabled) $("#btn-descarte-ok").click();
+};
+
+$("#btn-descarte-ok").onclick = async () => {
+  if (!job) return;
+  const motivo = $("#chk-motivo").value.trim();
+  if (!motivo) return;
+  const b = $("#btn-descarte-ok"); b.disabled = true;
   try {
     const r = await fetch("/api/discard", {
       method: "POST", headers: { "content-type": "application/json" },
@@ -1393,10 +1619,30 @@ $("#btn-discard").onclick = async () => {
     });
     const d = await r.json();
     if (!r.ok) { avisar(d.error); b.disabled = false; return; }
-    $("#chk-estado").textContent = `descartado (${d.revertidos.length + d.eliminados.length} archivo(s))`;
+    $("#chk-motivo-box").hidden = true;
+    $("#chk-estado").textContent = `descartado (${d.revertidos.length + d.eliminados.length} archivo(s)) · motivo registrado`;
     chkFin();
+    await registrarDescarte(job, motivo);
   } catch (e) { conexion(false); b.disabled = false; }
 };
+
+/* El motivo se guarda como pendiente YA CERRADO. Es el único almacén del panel
+   que persiste un motivo (`/api/pendientes`), así que en vez de inventar uno
+   nuevo —que exigiría tocar `server.mjs`— se reutiliza el que existe. Nace
+   cerrado a propósito: no es algo que hacer, es algo que recordar. */
+async function registrarDescarte(j, motivo) {
+  const texto = `Descartada la corrida ${j.id} (${j.modo || "diagnóstico"}) · `
+    + `${(j.archivos ?? []).length} archivo(s)`;
+  const pedir = (body) => fetch("/api/pendientes", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify(body),
+  }).then((r) => r.json());
+  try {
+    const tras = await pedir({ accion: "add", texto, origen: "descarte" });
+    const nuevo = (tras.anotados ?? []).filter((p) => p.texto === texto).pop();
+    if (nuevo) pintarPendientes(await pedir({ accion: "descartado", id: nuevo.id, motivo }));
+  } catch (e) { avisar("El descarte se ejecutó, pero el motivo no se pudo registrar."); }
+}
 
 /* RE-ENGANCHE. Recargar la página durante una corrida dejaba el panel ciego: la
    UI decía «en reposo» mientras el proceso seguía vivo editando archivos. El
@@ -1418,7 +1664,7 @@ async function reengancharJob() {
     const suyo = estado?.modos?.find((m) => m.arg === (j.modo ?? ""));
     if (suyo) { modoSel = suyo; pintarTabs(); }
     $("#ticker").hidden = false;
-    $("#sec-salida").hidden = false;
+    revelarPanel("sec-salida");
     refrescar(j);
     if (vivo) { clearInterval(poll); poll = setInterval(tick, 1500); }
   } catch (e) { /* sin conexión: el banner ya lo dice */ }
@@ -1436,6 +1682,7 @@ async function tick() {
   if (["listo", "fallo", "cancelado", "roto"].includes(job.estado)) {
     clearInterval(poll);
     cargarEstado();          // la corrida pudo escribir en el log
+    cargarJobs();            // y acaba de mover el gasto del día
   }
 }
 
@@ -1445,23 +1692,28 @@ async function tick() {
 function etiquetaEvento(e) {
   const d = e.detalle || "", tool = e.tool || "";
   const val = (re) => { const m = d.match(re); return m ? m[1] : ""; };
+  /* `tipo` colorea el badge. La función YA distinguía escribir de buscar y de
+     correr un skill —lo decía con un emoji de 10px al principio de la línea—;
+     ahora lo dice con color, que es lo que se escanea de un vistazo cuando hay
+     cuarenta filas. Los tipos son los tres que cambian tu lectura: qué SKILL
+     corre, qué ESCRIBE (lo único que deja rastro) y qué BUSCA. */
   const md = d.match(/\.claude[\/\\]+commands[\/\\]+([a-z0-9-]+)\.md/i);
-  if (md) return { ic: "▶", lbl: `skill /${md[1]}`, dt: "leyendo su contrato y ejecutándolo inline" };
-  if (tool === "WebSearch") return { ic: "🔎", lbl: "WebSearch", dt: val(/"query":"([^"]{0,70})/) || "búsqueda web" };
-  if (tool === "WebFetch")  return { ic: "🌐", lbl: "WebFetch", dt: val(/"url":"([^"]{0,70})/) };
+  if (md) return { ic: "▶", tipo: "skill", lbl: `skill /${md[1]}`, dt: "leyendo su contrato y ejecutándolo inline" };
+  if (tool === "WebSearch") return { ic: "🔎", tipo: "busca", lbl: "WebSearch", dt: val(/"query":"([^"]{0,70})/) || "búsqueda web" };
+  if (tool === "WebFetch")  return { ic: "🌐", tipo: "busca", lbl: "WebFetch", dt: val(/"url":"([^"]{0,70})/) };
   if (tool === "Bash") {
     const cmd = val(/"command":"([^"]{0,90})/);
-    if (/validate-schema|audit-consistency|audit-design|audit-skills/.test(cmd)) return { ic: "✓", lbl: "gate · sonda", dt: cmd };
-    if (/rm -rf|build-cases/.test(cmd)) return { ic: "⚙", lbl: "calibrate", dt: cmd };
+    if (/validate-schema|audit-consistency|audit-design|audit-skills/.test(cmd)) return { ic: "✓", tipo: "skill", lbl: "gate · sonda", dt: cmd };
+    if (/rm -rf|build-cases/.test(cmd)) return { ic: "⚙", tipo: "skill", lbl: "calibrate", dt: cmd };
     return { ic: "·", lbl: "Bash", dt: cmd };
   }
   if (/^(Write|Edit|MultiEdit)$/.test(tool)) {
     const fp = val(/"(?:file_path|notebook_path)":"([^"]+)"/), base = fp.split(/[\/\\]/).pop();
     const esCaso = /data[\/\\]+cases[\/\\]+/.test(fp);
-    return { ic: esCaso ? "✍" : "✎", lbl: esCaso ? "escribiendo CASO" : `${tool}`, dt: base };
+    return { ic: esCaso ? "✍" : "✎", tipo: "escribe", lbl: esCaso ? "escribiendo CASO" : `${tool}`, dt: base };
   }
   if (tool === "Read") return { ic: "📄", lbl: "Read", dt: val(/"file_path":"([^"]+)"/).split(/[\/\\]/).pop() };
-  if (/^(Grep|Glob)$/.test(tool)) return { ic: "🔍", lbl: tool, dt: val(/"pattern":"([^"]{0,50})/) };
+  if (/^(Grep|Glob)$/.test(tool)) return { ic: "🔍", tipo: "busca", lbl: tool, dt: val(/"pattern":"([^"]{0,50})/) };
   if (tool === "TodoWrite") return { ic: "☑", lbl: "plan (todos)", dt: "" };
   return { ic: "·", lbl: tool, dt: d.slice(tool.length + 1, 120) };
 }
@@ -1470,17 +1722,48 @@ function etiquetaEvento(e) {
    hacen decidir si cortas. Antes solo se veía el número de herramientas, y «45
    herramientas» no te dice que llevas catorce minutos. Va aparte de `refrescar`
    porque el segundero corre cada segundo y repintar el ticker a ese ritmo
-   cerraría los resultados que el usuario tenga expandidos. */
-function pintarResumen(j) {
-  const r = j.resultado, tk = j.tokens;
+   cerraría los resultados que el usuario tenga expandidos.
+
+   El PASO se deriva de `estadosDeNodos()`, el mismo matcher que enciende el
+   stepper. Contar `eventos.length` —que es lo que pide el ojo— daría «paso 40
+   de 11»: los eventos son herramientas, no pasos, y una corrida normal gasta
+   docenas de las primeras dentro de uno solo de los segundos. Derivarlo del
+   matcher también garantiza que la tarjeta y el stepper nunca se contradigan. */
+function pintarEstado(j) {
+  const viva = j?.estado === "corriendo";
+  const pasos = pasosDelModo();
+  const cl = pasos.length ? estadosDeNodos([{ nodos: pasos }]) : {};
+  const encendidos = pasos.filter((n) => cl[n.id]);
+  const paso = encendidos.length;
+  const actual = pasos.find((n) => cl[n.id] === "activo") ?? encendidos[encendidos.length - 1];
+
+  const tk = j?.tokens;
   const tot = tk ? tk.entrada + tk.salida + tk.cache_lectura + tk.cache_creacion : 0;
-  const consumo = tot ? ` · ${compacto(tot)} tok` : "";
-  const coste = r?.coste_usd != null ? ` · <b>$${r.coste_usd.toFixed(2)}</b>` : "";
-  $("#resumen-job").innerHTML = j.estado === "corriendo"
-    ? `<span class="vv">◍ corriendo</span> · ${mmss(Date.now() - new Date(j.inicio).getTime())}`
-      + ` · ${j.eventosTotal ?? (j.eventos ?? []).length} acciones${consumo}`
-    : `${esc(j.estado)}` + (r ? ` · ${mmss(r.duracion_ms)} · ${r.turnos} turnos` : "")
-      + consumo + coste;
+
+  $("#estado").classList.toggle("viva", viva);
+  $("#estado-dot").classList.toggle("vivo", viva);
+  $("#estado-etiqueta").textContent =
+    !j ? "en reposo" : viva ? "corriendo"
+    : j.estado === "listo" ? "terminada" : esc(j.estado);
+
+  $("#estado-titular").textContent = !j ? "—"
+    : viva ? mmss(Date.now() - new Date(j.inicio).getTime())
+    : j.resultado ? mmss(j.resultado.duracion_ms) : "—";
+
+  /* La línea de debajo del reloj responde «¿y ahora qué?», que cambia según el
+     momento: qué paso corre, o qué quedó por decidir. */
+  $("#estado-sub").textContent =
+    !j ? "elige un modo, cita la señal y gatilla"
+    : viva ? `paso ${paso} de ${pasos.length}${actual ? " · " + actual.t : ""}`
+    : (j.archivos ?? []).length
+      ? `${j.archivos.length} archivo(s) sin aterrizar — decide aquí abajo`
+      : "sin cambios en el árbol: informe, no cambio";
+
+  $("#estado-progreso").style.width =
+    (pasos.length ? Math.round(paso / pasos.length * 100) : 0) + "%";
+  $("#estado-tok").textContent = compacto(tot);
+  $("#estado-coste").textContent = dinero(j?.resultado?.coste_usd);
+  $("#btn-detener").hidden = !viva;
 }
 
 function refrescar(j) {
@@ -1488,7 +1771,7 @@ function refrescar(j) {
   pintarFlujo();
   const vivo = j.estado === "corriendo";
   const CORTE = 160;   // lo que cabe sin romper el ritmo de lectura del ticker
-  $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e) => {
+  $("#eventos").innerHTML = (j.eventos ?? []).slice(-40).reverse().map((e, i) => {
     const t = etiquetaEvento(e);
     // Flujo real por acción: entrada (input) → salida (resultado del tool). El
     // resultado largo se corta pero NO se pierde: un clic lo abre entero, que es
@@ -1500,7 +1783,11 @@ function refrescar(j) {
         + (largo ? ` data-full="${esc(e.resultado)}" title="Clic para ver el resultado completo"` : "")
         + `>↳ ${esc(largo ? e.resultado.slice(0, CORTE) : e.resultado)}</span>`;
     } else if (vivo) salida = `<span class="ev-out ev-wait">↳ …</span>`;
-    return `<li><div class="ev-in"><b>${esc(t.ic)} ${esc(t.lbl)}</b><span>${esc(t.dt)}</span></div>${salida}</li>`;
+    // `.ultima` es el índice 0 porque la lista va invertida (lo más reciente
+    // arriba): la fila resaltada es la que está pasando ahora mismo.
+    return `<li${i === 0 && vivo ? ' class="ultima"' : ""}>
+      <div class="ev-in"><span class="tag${t.tipo ? " " + t.tipo : ""}">${esc(t.lbl)}</span>
+        <span class="grow">${esc(t.dt)}</span></div>${salida}</li>`;
   }).join("")
     // Un job recuperado del disco no conserva sus eventos. Decir «sin
     // herramientas todavía» sobre una corrida de 56 turnos sería mentir sobre
@@ -1514,11 +1801,12 @@ function refrescar(j) {
     s.classList.add("abierto"); s.classList.remove("largo");
   });
 
-  pintarResumen(j);
+  pintarEstado(j);
   const bl = $("#bloqueo");
   bl.hidden = !j.bloqueo;
   if (j.bloqueo) bl.innerHTML = `<strong>Corrida bloqueada.</strong> ${esc(j.bloqueo)}`;
-  $("#btn-detener").disabled = j.estado !== "corriendo";
+  // La visibilidad de Detener la lleva `pintarEstado`: un botón que solo existe
+  // mientras hay algo que detener no necesita además estado deshabilitado.
   actualizarGatillar();
 
   /* SEGUNDA FASE. Una corrida en fase 1 propone y no escribe, así que puede
@@ -1580,6 +1868,18 @@ async function cargarRepo() {
       ? `${d.archivos.length} archivo(s) sin commitear · rama ${d.rama}`
       : `árbol limpio · rama ${d.rama}`)
       + (pend.length ? ` · ${pend.length} rama(s) sin mergear` : "");
+    /* El chip solo existe cuando hay ramas olvidadas. Un contador permanente
+       con un 0 se vuelve mobiliario; uno que aparece se lee. Veinte ramas se
+       acumularon precisamente porque nada las nombraba fuera de su sección. */
+    const chr = $("#chip-ramas");
+    chr.hidden = !pend.length;
+    if (pend.length) {
+      chr.textContent = `${pend.length} rama(s) sin mergear`;
+      chr.style.color = "var(--warn)";
+      chr.style.borderColor = "var(--warn)";
+      chr.style.cursor = "pointer";
+      chr.onclick = () => { irA("d-repo"); $("#tabs2").scrollIntoView({ behavior: "smooth" }); };
+    }
     /* Las ramas sin mergear van SIEMPRE, haya o no cambios sueltos: son trabajo
        terminado que nadie recuerda, y el único motivo de que se olviden es que
        el panel nunca las nombraba. Las ya mergeadas no se listan porque el
@@ -1724,18 +2024,263 @@ async function repoDiscard() {
     setTimeout(cargarRepo, 400);
   } catch (e) { conexion(false); }
 }
-// El botón vive DENTRO del <summary>: sin esto, pulsarlo plegaría la sección
-// justo al pedir los datos. Se corta el evento y se abre a mano.
-$("#btn-repo-refresh").onclick = (e) => {
-  e.preventDefault(); e.stopPropagation();
-  $("#d-repo").open = true;
-  cargarRepo();
-};
+// Ya no vive dentro de un <summary>, así que no hace falta cortar el evento
+// para que no pliegue la sección al pulsarlo.
+$("#btn-repo-refresh").onclick = cargarRepo;
+
+/* Registros: todo lo cerrado con motivo, lo más reciente primero. Se pinta con
+   los mismos datos de `/api/pendientes` que ya viajan — el descarte de una
+   corrida entra ahí como pendiente nacido cerrado. */
+function pintarRegistros(d) {
+  const c = $("#registros");
+  if (!c) return;
+  const cerrados = (d.anotados ?? [])
+    .filter((p) => p.estado !== "pendiente" && p.estado !== "en_curso")
+    .sort((a, b) => String(b.cerrado ?? "").localeCompare(String(a.cerrado ?? "")));
+
+  $("#sum-registros").textContent = cerrados.length
+    ? `${cerrados.length} cerrado(s) · ${cerrados.filter((p) => p.motivo).length} con motivo`
+    : "ninguno todavía";
+
+  c.innerHTML = cerrados.map((p) => `
+    <div class="pend">
+      <span class="badge ${p.estado === "hecho" ? "b-ok" : "b-run"}" style="flex:none">${esc(p.estado)}</span>
+      <span class="grow">${esc(p.texto)}
+        ${p.motivo
+          ? `<div class="tasa" style="margin-top:2px">motivo: ${esc(p.motivo)}</div>`
+          /* Un cerrado SIN motivo se señala: es deuda del registro, no del
+             trabajo, y verla es lo que hace que la próxima vez se escriba. */
+          : `<div class="tasa" style="margin-top:2px;color:var(--warn)">sin motivo — se cerró antes de que el panel lo pidiera</div>`}
+        <div class="tasa" style="margin-top:2px">${esc((p.cerrado ?? "").slice(0, 10))}${p.origen ? " · " + esc(p.origen) : ""}</div>
+      </span>
+      <button class="mini" data-reabrir-reg="${esc(p.id)}">Reabrir</button>
+    </div>`).join("")
+    || `<div class="tasa">Nada descartado todavía. Cuando descartes una corrida, su motivo aparece aquí.</div>`;
+
+  document.querySelectorAll("#registros [data-reabrir-reg]").forEach((b) => b.onclick = async () => {
+    pintarPendientes(await (await fetch("/api/pendientes", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ accion: "reabrir", id: b.dataset.reabrirReg }),
+    })).json());
+  });
+}
+
+/* ── gasto del día y desglose por modo ────────────────────────────────────
+   Los dos salen de `/api/jobs`, que ya devuelve cada corrida con su `inicio`,
+   su `modo` y su coste. No hace falta endpoint nuevo: el servidor ya publica
+   el hecho crudo y agregarlo es trabajo del cliente. */
+let porModo = [];
+
+async function cargarJobs() {
+  try {
+    const { jobs = [] } = await (await fetch("/api/jobs")).json();
+    const hoy = new Date().toISOString().slice(0, 10);
+    const coste = (j) => j.resultado?.coste_usd ?? j.coste_usd ?? 0;
+
+    gastoHoy = jobs.filter((j) => (j.inicio || "").slice(0, 10) === hoy)
+                   .reduce((t, j) => t + coste(j), 0);
+
+    const acc = {};
+    for (const j of jobs) {
+      const m = j.modo || "diagnóstico";
+      (acc[m] ??= { modo: m, n: 0, cambio: 0, coste: 0 });
+      acc[m].n++;
+      acc[m].coste += coste(j);
+      if ((j.archivos ?? []).length) acc[m].cambio++;
+    }
+    porModo = Object.values(acc).sort((a, b) => b.n - a.n);
+
+    pintarPresupuesto();
+    pintarPorModo();
+    actualizarGatillar();
+  } catch (e) { /* el banner de conexión ya lo dice */ }
+}
+
+function pintarPorModo() {
+  const c = $("#por-modo");
+  if (!c) return;
+  c.innerHTML = porModo.map((m) => {
+    const pct = m.n ? Math.round(m.cambio / m.n * 100) : 0;
+    // El color es el juicio: verde si la mayoría aterriza, rojo si casi nada.
+    // Un modo con 4 corridas y 0 cambios no es ruido estadístico, es un prompt
+    // que no funciona — y estaba invisible dentro del «16 de 51».
+    const col = pct >= 50 ? "var(--ok)" : pct > 0 ? "var(--warn)" : "var(--err)";
+    return `<div class="fila-modo">
+      <span class="mono" style="min-width:110px">${esc(m.modo)}</span>
+      <div class="bar" style="flex:1 1 160px;min-width:120px;margin:0">
+        <i style="width:${pct}%;background:${col}"></i></div>
+      <span class="mono" style="min-width:96px;text-align:right">${m.cambio}/${m.n} · ${dinero(m.coste)}</span>
+      <span class="tasa" style="color:${col}">${pct}%</span>
+    </div>`;
+  }).join("") || `<div class="tasa">todavía no hay corridas registradas.</div>`;
+}
+
+function pintarPresupuesto() {
+  const pct = Math.min(100, Math.round(gastoHoy / PRESUPUESTO_DIA * 100));
+  $("#presu-texto").textContent = `${dinero(gastoHoy)} / ${dinero(PRESUPUESTO_DIA)}`;
+  const b = $("#presu-barra");
+  b.style.width = pct + "%";
+  b.style.background = pct >= 100 ? "var(--err)" : pct >= 80 ? "var(--warn)" : "var(--accent)";
+}
+
+/* ── señales detectadas ───────────────────────────────────────────────────
+   Lo que el panel YA sabe que va mal, ofrecido como texto de partida. Pedirte
+   que teclees una señal que el panel puede nombrar es el mismo error que tenía
+   el checklist antes de derivarse: devolverte el trabajo con otra etiqueta. */
+let SENALES = [];
+
+function pintarSenales() {
+  const c = $("#senales");
+  if (!c) return;
+  if (!SENALES.length) { c.innerHTML = `<span class="tasa">sin señales detectadas ahora mismo — escríbela abajo</span>`; return; }
+  c.innerHTML = SENALES.map((s, i) => `
+    <button class="mini" data-senal="${i}" style="text-align:left;max-width:100%">
+      <span class="eyebrow" style="margin-right:7px">${esc(s.origen)}</span>${esc(s.corto)}
+    </button>`).join("");
+  document.querySelectorAll("#senales [data-senal]").forEach((b) => b.onclick = () => {
+    $("#contexto").value = SENALES[+b.dataset.senal].texto;
+    $("#contexto").focus();
+    actualizarGatillar();
+  });
+}
+
+/** Recoge señales de las dos fuentes que el panel ya consulta. */
+function recogerSenales(pend, salud) {
+  const corto = (t) => t.length > 64 ? t.slice(0, 63) + "…" : t;
+  const s = [];
+  for (const p of pend?.derivados ?? []) s.push({ origen: "repo", corto: corto(p.texto), texto: p.texto });
+  for (const p of (pend?.anotados ?? []).filter((x) => x.estado === "pendiente"))
+    s.push({ origen: p.origen || "anotado", corto: corto(p.texto), texto: p.texto });
+  for (const h of salud ?? [])
+    s.push({ origen: "sonda", corto: corto(h), texto: h });
+  SENALES = s.slice(0, 8);       // más de ocho deja de ser una lista y es un muro
+  pintarSenales();
+}
+
+/* ── consulta · pestañas ──────────────────────────────────────────────────
+   Una sola definición: rótulo, nota y si la pestaña nace oculta. El `sum` de
+   cada una es el MISMO id que escribían los `<summary>`, así que ningún
+   renderer se entera de que esto dejó de ser un acordeón. */
+const PANELES = [
+  { id: "d-mockups", lbl: "Mockups", nota: "Toda propuesta deja el suyo. Aquí están todos, con lo que pasó después: construido, descartado o esperando decisión." },
+  { id: "d-consumo", lbl: "Consumo", nota: "Medido por el panel sobre las corridas que ha visto, no declarado por el cerebro." },
+  { id: "d-rendimiento", lbl: "Rendimiento", nota: "Una corrida puede razonar espléndidamente durante 14 minutos y no tocar un archivo. Aquí eso sale como número." },
+  { id: "d-log", lbl: "El loop", nota: "Lo que el cerebro declara en cerebro-runs.jsonl — su relato, no la medición." },
+  { id: "d-visitas", lbl: "Visitantes", ini: "pulsa para cargar", nota: "El único dato que viene de fuera del repo: dice si alguien mira lo que se construye aquí. Leído de Supabase con las mismas funciones que /visitantes." },
+  { id: "d-salud", lbl: "Salud", ini: "sin sondear", nota: "Las cuatro sondas del repo, ejecutadas de verdad. Cada hallazgo se puede mandar a corregir." },
+  { id: "d-corridas", lbl: "Corridas", nota: "Las corridas que el panel ha visto, con su coste y sus archivos." },
+  { id: "d-registros", lbl: "Registros", nota: "Los descartes, fechados y con motivo. El motivo decide si caducan: «no existe» no es lo mismo que «no pude anclarlo desde aquí»." },
+  { id: "d-repo", lbl: "Repo", nota: "El working tree ahora mismo: qué hay sin commitear y desde dónde aterrizarlo." },
+  // Solo tiene sentido con una corrida detrás; hasta entonces no ocupa sitio.
+  { id: "sec-salida", lbl: "Salida cruda", nota: "El stdout del proceso, tal cual.", oculta: true },
+];
+let panelSel = "d-mockups";
+
+const sumId = (id) => "sum-" + id.replace(/^(d-|sec-)/, "");
+
+/* Los resúmenes están escritos como «titular · detalle», así que el corte
+   natural es el primer `·`: la pestaña se queda el titular —que es siempre la
+   cifra— y el detalle baja a `#tab-cifra`.
+
+   Sin esto la barra medía 2759px de contenido en 794px y se partía en CINCO
+   filas, con una pestaña de 443px: exactamente el muro que las pestañas venían
+   a deshacer. El texto no estaba mal, estaba en el sitio equivocado. */
+const titular = (t) => String(t ?? "").split("·")[0].trim();
+
+/** Copia cada resumen a su pestaña. Un observer lo dispara solo, así que
+ *  ningún renderer tiene que saber que la barra existe. */
+function sincronizarTitulares() {
+  for (const p of PANELES) {
+    const src = document.getElementById(sumId(p.id));
+    const dst = document.querySelector(`#tabs2 [data-cifra="${p.id}"]`);
+    if (src && dst) dst.textContent = titular(src.textContent);
+    if (src && p.id === panelSel) {
+      const full = src.textContent.trim();
+      $("#tab-cifra").textContent = full === "—" ? "" : full;
+    }
+  }
+}
+
+function pintarTabs2() {
+  $("#tabs2").innerHTML = PANELES
+    .filter((p) => !p.oculta || $("#" + p.id).dataset.revelada)
+    .map((p) => `
+      <button role="tab" data-pane="${p.id}" aria-controls="${p.id}"
+        aria-selected="${p.id === panelSel}" tabindex="${p.id === panelSel ? 0 : -1}">
+        <span class="t2-lbl">${esc(p.lbl)}</span>
+        <span class="tasa" data-cifra="${p.id}"></span>
+      </button>`).join("");
+  const tabs = [...document.querySelectorAll("#tabs2 button")];
+  tabs.forEach((b, i) => {
+    b.onclick = () => irA(b.dataset.pane);
+    b.onkeydown = (e) => {
+      const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      irA(tabs[(i + d + tabs.length) % tabs.length].dataset.pane);
+      document.querySelector('#tabs2 [aria-selected="true"]')?.focus();
+    };
+  });
+  PANELES.forEach((p) => { $("#" + p.id).hidden = p.id !== panelSel; });
+  $("#tab-nota").textContent = PANELES.find((p) => p.id === panelSel)?.nota ?? "";
+  sincronizarTitulares();
+}
+
+/* Los `#sum-*` son ahora depósitos ocultos dentro de cada panel: los renderers
+   siguen escribiendo exactamente donde escribían, y este observer se encarga de
+   llevar el titular a la pestaña. Alternativa descartada: llamar a
+   `sincronizarTitulares()` desde los siete renderers — siete sitios que
+   recordar, y el octavo que se añada nace roto. */
+function montarDepositos() {
+  for (const p of PANELES) {
+    const pane = $("#" + p.id);
+    if (!pane || document.getElementById(sumId(p.id))) continue;
+    const s = document.createElement("span");
+    s.id = sumId(p.id);
+    s.hidden = true;
+    s.textContent = p.ini ?? "—";
+    pane.prepend(s);
+  }
+  const obs = new MutationObserver(sincronizarTitulares);
+  for (const p of PANELES) {
+    const s = document.getElementById(sumId(p.id));
+    if (s) obs.observe(s, { childList: true, characterData: true, subtree: true });
+  }
+}
+
+/* Cambiar de pestaña. Es también el punto por el que el panel se lleva la
+   atención solo: una sonda en rojo o un aterrizaje abren la suya. */
+function irA(id) {
+  if (!PANELES.some((p) => p.id === id)) return;
+  panelSel = id;
+  pintarTabs2();
+  if (id === "d-visitas" && !visitasCargadas) {
+    visitasCargadas = true;
+    pintarPeriodos();
+    cargarVisitas();
+  }
+}
+
+/** Revela una pestaña que nacía oculta (hoy solo la salida cruda). */
+function revelarPanel(id) {
+  const el = $("#" + id);
+  if (!el || el.dataset.revelada) return;
+  el.dataset.revelada = "1";
+  pintarTabs2();
+}
+
+// ANTES de `cargarEstado`: los renderers escriben en los `#sum-*` que estas
+// funciones crean, y sin ellos `pintarConsumo` reventaría en la primera línea.
+montarDepositos();
+pintarTabs2();
 
 // En este orden: `reengancharJob` necesita `estado.modos` para poder fijar el
 // diagrama al modo de la corrida recuperada.
 cargarEstado().then(reengancharJob);
 cargarPendientes();   // la sección nace abierta: tiene que traer los datos puestos
+// El presupuesto del día y el desglose por modo salen de aquí. Se paga una vez
+// al arrancar y tras cada corrida: es el mismo endpoint que ya usa `reenganchar`.
+cargarJobs();
 // El titular del repo tiene que nacer con el dato («árbol limpio» o «5 archivos
 // sin commitear»); si no, el plegable obliga a abrirlo para saber si hay algo,
 // que es justo lo que veníamos a evitar. Es un `git status`: barato.
@@ -1743,7 +2288,31 @@ cargarRepo();
 // El cronómetro no puede depender del tick del job: durante la corrida el
 // segundero tiene que avanzar aunque no lleguen eventos nuevos — un panel
 // congelado parece un panel caído.
-setInterval(() => { if (job?.estado === "corriendo") pintarResumen(job); }, 1000);
+setInterval(() => { if (job?.estado === "corriendo") pintarEstado(job); }, 1000);
+
+/* Atajos. Se ignoran dentro de un campo de texto — si no, escribir «g» en la
+   señal lanzaría la corrida, que es exactamente el accidente caro que este
+   panel existe para evitar. Y `g` respeta el bloqueo: el atajo no es una
+   puerta trasera al override. */
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const t = e.target;
+  if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+
+  if (e.key >= "1" && e.key <= "9") {
+    const m = estado?.modos?.[+e.key - 1];
+    if (m) { e.preventDefault(); modoSel = m; pintarTabs(); pintarFlujo(); pintarEstado(job); }
+    return;
+  }
+  if (e.key === "g" && !$("#btn-gatillar").disabled) {
+    e.preventDefault();
+    $("#btn-gatillar").click();
+  }
+  if (e.key === "." && !$("#btn-detener").hidden) {
+    e.preventDefault();
+    $("#btn-detener").click();
+  }
+});
 </script>
 </body>
 </html>
