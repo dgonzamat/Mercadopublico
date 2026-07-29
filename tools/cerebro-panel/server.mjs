@@ -1772,12 +1772,21 @@ async function manejar(req, res) {
       pedir("/api/repo"), pedir("/api/mockups"), pedir("/api/pendientes"),
     ]);
     const derivados = pd.derivados ?? [];
+    /* PARTICIÓN, no suma de listas. Las «acciones» derivadas no son items
+       aparte: son VISTAS de hechos que ya se cuentan aquí. «Aprobar y
+       construir» es la propuesta sin decidir; «Ver en Repo» es el árbol sucio;
+       «Mergear» es la rama. Contarlas además duplicaba —dos veces seguidas, con
+       pares distintos: primero propuesta+acción, luego acción+archivo— y el
+       resumen decía «tres cosas abiertas» habiendo dos.
+       Se cuentan los HECHOS, que sí son mutuamente excluyentes: una corrida
+       viva, una propuesta sin decidir, una señal, una rama y un archivo sucio
+       son cinco cosas distintas y ninguna es otra. El rail sigue enseñando las
+       acciones porque es donde se actúa: son la puerta, no el inventario. */
     const n = {
       corridasVivas: [...jobs.values()].filter((j) => j.estado === "corriendo").length,
       propuestasSinDecidir: (mkr.mockups ?? []).filter((m) => ABIERTO.has(m.estado)).length,
       senales: derivados.filter((p) => !p.accion).length
              + (pd.anotados ?? []).filter((p) => p.estado === "pendiente").length,
-      accionesPendientes: derivados.filter((p) => p.accion).length,
       ramasSinMergear: (rp.ramas?.pendientes ?? []).length,
       archivosSinCommitear: (rp.archivos ?? []).length,
     };
