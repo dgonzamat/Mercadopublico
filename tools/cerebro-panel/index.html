@@ -273,6 +273,9 @@
   .senal-x{border-radius:0 8px 8px 0}
   .senal-x:hover{background:var(--surface2);color:var(--err)}
   .senal-mk:hover{background:var(--surface2);color:var(--ok)}
+  /* El que falta se ve que falta: acento, no gris. Una señal sin mockup es una
+     propuesta que todavía no se puede juzgar, y eso tiene que saltar. */
+  .senal-mk.falta{color:var(--accent);border-color:var(--accent);font-weight:600}
   /* Una señal de otro modo se ve prestada: se puede usar, pero no cuenta en
      el número de esta pestaña y conviene que se note. */
   .senal.ajena{border-style:dashed;opacity:.8}
@@ -1337,6 +1340,8 @@ async function cargarMockups() {
   const cont = $("#mockups");
   try {
     const { mockups = [] } = await (await fetch("/api/mockups")).json();
+    MOCKUPS = mockups;
+    emparejarMockups(); pintarSenales();   // el ▦ de cada señal sale de aquí
     const abiertos = mockups.filter((m) => m.estado === "pendiente" || m.estado === "en curso");
     $("#sum-mockups").textContent = mockups.length
       ? `${mockups.length} propuesta(s)` + (abiertos.length ? ` · ${abiertos.length} sin decidir` : " · todas decididas")
@@ -2436,9 +2441,13 @@ function pintarSenales() {
         <span class="senal-txt">${esc(s.corto)}</span>
       </button>
       ${s.mockup
-        // Si ya se atacó, su propuesta se mira desde aquí: ir a buscarla al
-        // catálogo era el rodeo que dejó dos propuestas sin construir.
-        ? `<button class="senal-mk" data-vmk="${esc(s.mockup)}" data-si="${i}" title="Ver la propuesta que dejó">▦</button>` : ""}
+        // Si ya tiene mockup, se mira desde aquí: ir a buscarlo al catálogo era
+        // el rodeo que dejó dos propuestas sin construir.
+        ? `<button class="senal-mk" data-vmk="${esc(s.mockup)}" data-si="${i}" title="Ver cómo quedaría">▦</button>`
+        // Y si no lo tiene, el botón para dibujarlo. NINGUNA señal se queda sin
+        // poder verse: proponer trabajo sin enseñarlo es pedir un cheque en
+        // blanco, y esa es la regla del proyecto desde el primer día.
+        : `<button class="senal-mk falta" data-dibujar="${i}" title="Dibujar cómo quedaría (fase 1, no toca código)">▦+</button>`}
       <button class="senal-x" data-descartar="${i}" title="Descartar esta señal (pide motivo)">✕</button>
     </span>
     <div class="diff" id="smk-${i}" hidden style="flex:1 1 100%"></div>`;
@@ -2459,6 +2468,21 @@ function pintarSenales() {
     if (!caja.hidden) { caja.hidden = true; return; }
     caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(b.dataset.vmk)}"></iframe>`;
     caja.hidden = false;
+  });
+
+  /* Dibujar el que falta. Es una corrida de fase 1 con la señal ya puesta: no
+     toca código, su único entregable es el dibujo. Se confirma con el coste
+     delante — el panel propone el trabajo, pero el gasto lo autorizas tú. */
+  document.querySelectorAll("#senales [data-dibujar]").forEach((b) => b.onclick = () => {
+    const s = SENALES[+b.dataset.dibujar];
+    if (!s) return;
+    const modo = s.modo || modoSel?.arg || "mejoras-ux";
+    if (!confirm(`Dibujar cómo quedaría, con «${modo}»?\n\n${s.texto}\n\n`
+      + `Es una corrida de fase 1: NO toca el código, solo deja el mockup. `
+      + `Coste típico $0,40–0,90.`)) return;
+    $("#contexto").value = s.texto;
+    marcarSenalActiva();
+    gatillar(modo, s.texto);
   });
 
   document.querySelectorAll("#senales [data-senal]").forEach((b) => b.onclick = () => {
@@ -2536,8 +2560,27 @@ function recogerSenales(pend, salud) {
     s.push(mk(p.origen || "anotado", p.texto, { mockup: p.mockup, job: p.job }));
   for (const h of salud ?? []) s.push(mk("sonda", h));
   SENALES = s.slice(0, 8);       // más de ocho deja de ser una lista y es un muro
+  emparejarMockups();
   pintarSenales();
   if (estado) pintarTabs();      // el contador por modo vive en las pestañas
+}
+
+/* Empareja cada señal con su mockup por el camino mockup → corrida → señal:
+   `/api/mockups` dice de qué job salió cada uno, y `/api/jobs` dice con qué
+   contexto se disparó ese job. Así el ▦ aparece solo en cuanto la corrida
+   termina, la hayas lanzado desde el chip, desde «Hacer» o a mano — sin que
+   nadie tenga que acordarse de enlazarlos. */
+let MOCKUPS = [];
+function emparejarMockups() {
+  if (!MOCKUPS.length) return;
+  for (const s of SENALES) {
+    if (s.mockup) continue;
+    const m = MOCKUPS.find((x) => {
+      const j = JOBS_POR_ID[x.job];
+      return j && (j.contexto || "").trim().startsWith(s.texto.trim().slice(0, 60));
+    });
+    if (m) s.mockup = m.archivo;
+  }
 }
 
 /* Las del modo elegido. La pestaña decía «bugs 1» y la lista enseñaba las
