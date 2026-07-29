@@ -1330,10 +1330,11 @@ async function cargarMockups() {
   const cont = $("#mockups");
   try {
     const { mockups = [] } = await (await fetch("/api/mockups")).json();
-    // El más reciente de cada modo, para el pronóstico. Vienen ya ordenados
-    // por fecha desc, así que el primero de cada modo es el último que dejó.
-    MOCKUPS_POR_MODO = {};
-    for (const m of mockups) if (m.modo && !MOCKUPS_POR_MODO[m.modo]) MOCKUPS_POR_MODO[m.modo] = m;
+    // TODOS los de cada modo, no solo el último: el pronóstico necesita saber
+    // cuáles siguen sin decidir, y eso no se sabe mirando uno. Vienen ordenados
+    // por fecha desc, así que cada lista conserva ese orden.
+    MOCKUPS_MODO = {};
+    for (const m of mockups) if (m.modo) (MOCKUPS_MODO[m.modo] ??= []).push(m);
     pintarPronostico();
     const abiertos = mockups.filter((m) => m.estado === "pendiente" || m.estado === "en curso");
     $("#sum-mockups").textContent = mockups.length
@@ -2333,8 +2334,8 @@ async function cargarJobs() {
 }
 
 /* Pronóstico del modo elegido. Todo sale de lo ya cargado: `porModo` (de
-   `/api/jobs`) y `MOCKUPS_POR_MODO` (de `/api/mockups`). */
-let MOCKUPS_POR_MODO = {};
+   `/api/jobs`) y `MOCKUPS_MODO` (de `/api/mockups`). */
+let MOCKUPS_MODO = {};     // modo → sus mockups, más reciente primero
 let JOBS_POR_ID = {};      // para reconciliar los pendientes «en curso»
 
 function pintarPronostico() {
@@ -2349,7 +2350,20 @@ function pintarPronostico() {
   const riesgo = pctDe >= 40 || (m.n > 0 && pctAt < 50);
   const cAt = pctAt < 50 ? "var(--warn)" : "var(--ok)";
   const cDe = pctDe >= 40 ? "var(--err)" : "var(--text)";
-  const mk = MOCKUPS_POR_MODO[modoSel.arg || "diagnóstico"];
+  /* SOLO lo que sigue sin decidir. El pronóstico enseñaba «la última
+     propuesta» del modo, y la última de `mejoras-ux` era `home-cta-hierarchy`:
+     construida, aterrizada y viva en `main` desde ayer. Un botón grande para
+     mirar trabajo terminado invita a rehacerlo, y es la tercera vez hoy que el
+     panel resucita algo ya cerrado (la galería mal etiquetada, el «sin mockup
+     todavía», y esto).
+     La regla, de una vez: el historial vive en la pestaña Mockups, que es un
+     catálogo y lo dice; en cualquier sitio que empuje a decidir solo entra lo
+     que sigue abierto. Que el modo deje propuestas se demuestra contándolas,
+     no colgando una hecha. */
+  const delModo = MOCKUPS_MODO[modoSel.arg || "diagnóstico"] ?? [];
+  const abiertos = delModo.filter((x) => x.estado !== "construido" && x.estado !== "descartado");
+  const mk = abiertos[0] ?? null;
+  const ultimo = delModo[0] ?? null;
 
   c.innerHTML = `
     <div class="pron">
@@ -2362,23 +2376,32 @@ function pintarPronostico() {
     </div>
     ${riesgo ? `<div class="sub" style="color:var(--warn);margin-top:8px">histórico flojo en este modo: buena parte de lo que produce se tira — acota la señal antes de gastar</div>` : ""}
     <div class="pron-mk">
-      <span class="badge ${mk ? (mk.estado === "construido" ? "b-ok" : mk.estado === "pendiente" ? "b-err" : "b-run") : "b-run"}">mockup</span>
-      <span class="mono" style="flex:1 1 160px;min-width:0;overflow-wrap:anywhere">${esc(mk ? mk.nombre : "sin propuestas todavía")}</span>
-      <span class="tasa">${mk ? esc(mk.estado + " · " + (mk.mtime ?? "").slice(0, 10))
+      <span class="badge ${mk ? "b-err" : delModo.length ? "b-ok" : "b-run"}">mockup</span>
+      <span class="mono" style="flex:1 1 160px;min-width:0;overflow-wrap:anywhere">${
+        mk ? esc(mk.nombre)
+        : delModo.length ? `${delModo.length} propuesta(s) · todas decididas`
+        : "sin propuestas todavía"}</span>
+      <span class="tasa">${
+        mk ? esc(mk.estado + " · " + (mk.mtime ?? "").slice(0, 10))
+        : delModo.length ? `la última: ${esc(ultimo.nombre)} (${esc(ultimo.estado)})`
         : "este modo no ha dejado ningún mockup"}</span>
-      ${mk ? `<button class="mini" id="pron-ver" data-mk="${esc(mk.archivo)}">ver la última propuesta</button>` : ""}
+      ${mk ? `<button class="mini" id="pron-ver" data-mk="${esc(mk.archivo)}">ver la propuesta sin decidir</button>` : ""}
     </div>
     ${mk
       ? `<div class="sub" style="margin-top:6px">la propuesta se aprueba mirándola, no leyendo su ruta</div>`
-      /* Que un modo NUNCA deje mockup no es un dato neutro, y por eso se dice
-         entero: significa que aterriza cambios sin pasar por revisión visual,
-         que es justo lo que las dos fases venían a impedir. */
-      : `<div class="sub" style="margin-top:6px;color:var(--warn)">Toda corrida de fase 1 debería dejar una propuesta mirable; si este modo nunca la deja, es que aterriza cambios sin pasar por revisión visual.</div>`}
+      : delModo.length
+        // Nada que hacer aquí. Se dice y se manda al catálogo, que es donde el
+        // historial no estorba porque nadie va allí a decidir.
+        ? `<div class="sub" style="margin-top:6px">Nada esperando decisión en este modo. El historial está en la pestaña <b>Mockups</b>.</div>`
+        /* Que un modo NUNCA deje mockup no es un dato neutro, y por eso se dice
+           entero: significa que aterriza cambios sin pasar por revisión visual,
+           que es justo lo que las dos fases venían a impedir. */
+        : `<div class="sub" style="margin-top:6px;color:var(--warn)">Toda corrida de fase 1 debería dejar una propuesta mirable; si este modo nunca la deja, es que aterriza cambios sin pasar por revisión visual.</div>`}
     <div class="diff" id="pron-caja" hidden></div>`;
 
   if (mk) $("#pron-ver").onclick = () => {
     const caja = $("#pron-caja"), b = $("#pron-ver");
-    if (!caja.hidden) { caja.hidden = true; b.textContent = "ver la última propuesta"; return; }
+    if (!caja.hidden) { caja.hidden = true; b.textContent = "ver la propuesta sin decidir"; return; }
     // Se aprueba MIRÁNDOLA, no leyendo su ruta.
     caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(mk.archivo)}"></iframe>`;
     caja.hidden = false; b.textContent = "ocultar";
