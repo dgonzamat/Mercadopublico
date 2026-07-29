@@ -210,18 +210,16 @@ function cargarJobs() {
 }
 let seq = 0;
 
-// Cadena visible por modo para el flowchart. Los `backticks` marcan nodos que
-// el cliente enciende (al leer el .md del skill o correr la tool). Refleja el
-// flujo LEAN real — `parseModeTable` devuelve vacío, así que se declara aquí.
-const CADENA_FLUJO = {
-  "caso-nuevo": "WebSearch → `/proximo-caso` → `/nuevo-caso`",
-  "bugs": "`security-review` · `review` · `/blindar`",
-  "mejoras-ux": "`/innovar`",
-  "mejoras-tec": "`simplify` · `/blindar`",
-  "frescura": "WebSearch → `/nuevo-caso` → `/learn`",
-  "noticias": "WebSearch → `/nuevo-caso` → `/learn`",
-};
-
+/* Aquí vivía `CADENA_FLUJO`, un mapa de modo → cadena que el diagrama usaba en
+   vez de la tabla de `cerebro.md`. Se leía como un segundo contrato duplicado
+   por comodidad; era el PARCHE de un bug de lectura. Su comentario decía
+   «`parseModeTable` devuelve vacío, así que se declara aquí» — y era verdad,
+   pero no porque la tabla no declarase las cadenas: porque el parser rompía con
+   los saltos CRLF del archivo y no conseguía leerlas.
+ *
+ * Arreglado eso (`readCerebro` normaliza), el mapa sobra y se va. La cadena
+ * vuelve a salir de un solo sitio, que es la tabla del skill — incluido
+ * `diagnóstico`, al que el mapa ni siquiera cubría. */
 const contrato = () => {
   const src = readCerebro();
   const secciones = parseModes(src);
@@ -234,7 +232,7 @@ const contrato = () => {
       // M0 se declara `sin argumento`: se dispara sin pasar modo.
       arg: s.name === "sin argumento" ? "" : s.name,
       proposito: fila?.proposito ?? "",
-      cadena: CADENA_FLUJO[s.name] ?? fila?.cadena ?? "",
+      cadena: fila?.cadena ?? "",
     };
   });
   return { modos, camposLog: requiredLogFields(src) };
@@ -1008,7 +1006,6 @@ const ARCHIVO_PENDIENTES = path.join(here, "pendientes.json");
    que escriba a mano algo que la herramienta ya sabe es exactamente el trabajo
    que la herramienta viene a ahorrar. */
 const PENDIENTES_INICIALES = [
-  { texto: "CADENA_FLUJO es un segundo contrato: el diagrama lee la cadena de un mapa en server.mjs en vez de la tabla de cerebro.md", origen: "panel" },
   { texto: "El parser de eventos se perdió una edición (fase 2 del Release 4): el checkpoint quedó vacío con el archivo escrito", origen: "panel" },
   { texto: "~38 fuentes rotas y 28/91 fotos de investigadores (declarado en CLAUDE.md)", origen: "corpus" },
 ];
