@@ -1658,11 +1658,17 @@ $("#btn-override").onclick = () => { override = true; actualizarGatillar(); };
 
 // `origen`: el job de la fase 1 que esta corrida viene a construir. Viaja al
 // servidor para que la propuesta quede cerrada y deje de contarse pendiente.
-async function gatillar(modo, contexto = "", origen = null) {
+async function gatillar(modo, contexto = "", origen = null, sinPreguntar = false) {
   const nombre = modo || "diagnóstico";
-  if (!confirm(`Gatillar «${nombre}».\n\nLanza una corrida real de Claude Code sobre el ` +
+  /* La cola de mockups NO pregunta. Su permiso ya está dado —es la regla «cada
+     señal con su mockup»— y su control es la barra con «Parar», no un diálogo
+     por corrida. Con el `confirm` puesto, la cola quedaba a merced de que
+     alguien contestara N veces seguidas; y si se cancelaba, `gatillar` volvía
+     sin disparar mientras la cola daba la señal por servida. */
+  if (!sinPreguntar &&
+      !confirm(`Gatillar «${nombre}».\n\nLanza una corrida real de Claude Code sobre el ` +
       `repo con --permission-mode ${estado.permisos}: puede editar archivos y consumir ` +
-      `tokens.` + (contexto ? `\n\nContexto:\n${contexto}` : ""))) return;
+      `tokens.` + (contexto ? `\n\nContexto:\n${contexto}` : ""))) return null;
 
   const sel = estado.modos.find((m) => m.arg === modo);
   if (sel) { modoSel = sel; pintarTabs(); }
@@ -2557,7 +2563,12 @@ function pintarSenales() {
         // Y si no lo tiene, el botón para dibujarlo. NINGUNA señal se queda sin
         // poder verse: proponer trabajo sin enseñarlo es pedir un cheque en
         // blanco, y esa es la regla del proyecto desde el primer día.
-        : `<button class="senal-mk falta" data-dibujar="${i}" title="Dibujar cómo quedaría (fase 1, no toca código)">▦+</button>`}
+        : puedeDibujar(s)
+          ? `<button class="senal-mk falta" data-dibujar="${i}" title="Dibujar cómo quedaría (fase 1, no toca código)">▦+</button>`
+          // `diagnóstico` no escribe archivos por contrato, así que no puede
+          // dejar mockup. Se dice en vez de ofrecer un botón que gastaría sin
+          // poder cumplir — que es exactamente lo que hizo cuatro veces.
+          : `<span class="senal-mk" style="cursor:default;opacity:.5" title="diagnóstico solo observa: no escribe archivos, así que no deja mockup">—</span>`}
       <button class="senal-x" data-descartar="${i}" title="Descartar esta señal (pide motivo)">✕</button>
     </span>
     <div class="diff" id="smk-${i}" hidden style="flex:1 1 100%"></div>`;
@@ -2676,9 +2687,25 @@ function marcarSenalActiva() {
    Y se ve mientras pasa, con su botón de parar. Gastar en silencio sería
    peor que no cumplir la regla. */
 let colaMockups = [], colaViva = false, colaParada = false;
+/* UNA tentativa por señal y sesión. Sin esto la cola entra en bucle infinito:
+   al terminar una corrida se recargan los datos, `recogerSenales` vuelve a
+   correr, la señal sigue sin mockup —porque la corrida no lo produjo— y se
+   encola otra vez. Pasó de verdad: job-57, 58, 59 y 60 con el MISMO contexto,
+   encadenándose solas hasta que las paré a mano. La regla no puede ser «hasta
+   conseguirlo»; tiene que ser «una vez, y si falla se dice». */
+const intentados = new Set();
+
+/* Y hay señales para las que la regla es IMPOSIBLE de cumplir, no difícil:
+   `diagnóstico` declara ámbito «NADA. Este modo solo observa: no escribas ni
+   modifiques ningún archivo». Pedirle un mockup es pedirle que viole su
+   contrato, así que la corrida termina sin dejar nada — cuatro veces seguidas
+   en mi caso. No es una excepción a la regla por comodidad: es que su clase de
+   señal no se ataca dibujando, se ataca decidiendo. */
+const puedeDibujar = (s) => (s.modo ?? "") !== "";
 
 function encolarMockupsFaltantes() {
-  const faltan = SENALES.filter((s) => !s.mockup && !colaMockups.includes(s));
+  const faltan = SENALES.filter((s) =>
+    !s.mockup && puedeDibujar(s) && !intentados.has(s.texto) && !colaMockups.includes(s));
   if (faltan.length) colaMockups.push(...faltan);
   if (!colaViva && !colaParada) procesarCola();
   else pintarCola();
@@ -2710,11 +2737,21 @@ async function procesarCola() {
   }
   if (job?.estado === "corriendo") { setTimeout(procesarCola, 4000); pintarCola(); return; }
 
-  colaViva = true; pintarCola();
+  colaViva = true;
+  intentados.add(s.texto);      // ANTES de disparar: pase lo que pase, no se repite
+  pintarCola();
+  let lanzada = null;
   try {
-    await gatillar(s.modo || "", s.texto);
-  } catch (e) { colaParada = true; avisar("No se pudo dibujar el mockup: " + (e.message ?? e)); }
-  colaMockups.shift();
+    lanzada = await gatillar(s.modo || "", s.texto, null, true);
+  } catch (e) { avisar("No se pudo dibujar el mockup: " + (e.message ?? e)); }
+
+  /* Solo se descarta de la cola si la corrida ARRANCÓ. Antes se hacía `shift()`
+     pase lo que pase: si `gatillar` volvía sin disparar —el `confirm`
+     cancelado, un 400 del servidor— la señal se daba por servida sin tener
+     mockup, y la regla se rompía en silencio. Que es peor que no tenerla,
+     porque el panel afirmaba haberla cumplido. */
+  if (lanzada) colaMockups.shift();
+  else { colaParada = true; avisar(`No arrancó la corrida para «${s.corto}»: queda sin mockup y la cola se detiene.`); }
   colaViva = false;
   pintarCola();
   // La siguiente arranca cuando la corrida termine, no ahora: `tick` la llama.
