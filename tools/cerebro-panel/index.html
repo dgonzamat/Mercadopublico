@@ -42,7 +42,10 @@
   button:disabled{opacity:.45;cursor:not-allowed}
   button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
   button.primary:hover:not(:disabled){background:#a5182f}
-  button.mini{padding:4px 9px;font-size:12px}
+  /* 24px de alto era demasiado poco para el botón que ahora es MAYORÍA en el
+     panel: los `.mini` pasaron de excepción a norma cuando el rojo dejó de
+     usarse para todo. 30px es cómodo con ratón sin parecer un botón táctil. */
+  button.mini{padding:6px 11px;font-size:12px;min-height:30px}
 
   /* ══════════ FLOWCHART ══════════ */
   .lienzo{background:var(--panel);border:1px solid var(--border);border-radius:10px;
@@ -69,9 +72,12 @@
   .nodo{background:var(--bg);border:1px solid var(--border);border-radius:8px;
     padding:8px 10px;min-width:104px;text-align:center;position:relative;
     transition:background .25s,border-color .25s,color .25s,transform .25s}
-  .nodo .n-t{font-family:ui-monospace,monospace;font-size:11.5px;font-weight:500;
+  /* El tren se DEGRADA a propósito. Era lo primero que atraía el ojo y lo que
+     menos informa: el gate siempre acaba en verde o la corrida no arranca. Sigue
+     ahí para ver el avance, pero deja de competir con el estado y el checkpoint. */
+  .nodo .n-t{font-family:ui-monospace,monospace;font-size:10.5px;font-weight:500;
     word-break:break-word;line-height:1.25}
-  .nodo .n-s{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.3}
+  .nodo .n-s{display:none}   /* el subtítulo del nodo era ruido: nadie lo lee */
   .nodo.hecho{background:var(--ok);border-color:var(--ok);color:#fff}
   .nodo.hecho .n-s{color:rgba(255,255,255,.72)}
   .nodo.activo{background:var(--accent);border-color:var(--accent);color:#fff;
@@ -180,8 +186,11 @@
     letter-spacing:.1em;color:var(--muted);padding-top:2px}
   .corrida dd{margin:0}
   .tasa{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted)}
-  .resumen{font-family:ui-monospace,monospace;font-size:15px;color:var(--text);
-    font-weight:500;letter-spacing:-.01em}
+  /* El resumen de la corrida pasa a ser el texto MÁS grande de la página
+     después de nada: el título del panel es constante y no informa; esto cambia
+     cada segundo y decide si cortas. Antes competía con el <h1> y perdía. */
+  .resumen{font-family:ui-monospace,monospace;font-size:18px;color:var(--text);
+    font-weight:600;letter-spacing:-.015em}
   .resumen b{color:var(--accent);font-weight:600}     /* el coste, en color */
   .resumen .vv{color:var(--ok)}
 
@@ -295,6 +304,14 @@
         <ol id="eventos" aria-live="polite" aria-relevant="additions"></ol>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ══ DECIDIR ══
+       Checkpoint y pendientes eran la MISMA pregunta —«¿qué hago ahora?»— en dos
+       sitios: uno enterrado bajo el diagrama y otro cien líneas más abajo. Aquí
+       viven juntos, encima de todo lo que solo se consulta. -->
+  <section>
       <!-- Checkpoint: la corrida NO aterriza sola. Al terminar, muestra qué
            archivos tocó y tú decides commitear (en rama) o descartar. -->
       <div class="checkpoint" id="checkpoint" hidden>
@@ -308,7 +325,22 @@
           <span class="tasa" id="chk-estado"></span>
         </div>
       </div>
-    </div>
+
+    <!-- Los pendientes viven AQUÍ, no en el bloque de consulta: son la otra
+         mitad de «¿qué hago ahora?». Separarlos del checkpoint obligaba a
+         recorrer media página para responder una sola pregunta. -->
+    <details class="plegable" id="d-pendientes" open>
+      <summary><span class="eyebrow">Qué decidir ahora</span>
+        <span class="tasa" id="sum-pendientes">—</span>
+        <span class="grow"></span><span class="tasa">▾</span></summary>
+      <p class="sub">Los <b>del repo</b> los deduce el panel y se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
+      <div id="pendientes"></div>
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+        <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:260px;margin:0"
+          placeholder="Anotar un pendiente…">
+        <button class="mini" id="btn-add-pendiente">Añadir</button>
+      </div>
+    </details>
   </section>
 
   <!-- ══ CONSUMO Y RENDIMIENTO (medido por el panel) ══
@@ -327,19 +359,16 @@
        detalle. Un plegable que obliga a abrirlo para saber si merece la pena
        solo mueve el desorden un clic más allá. -->
   <section class="consulta">
-    <!-- Va PRIMERO y abierto: es lo único de este bloque sobre lo que se actúa.
-         El resto se consulta; esto se resuelve. -->
-    <details class="plegable" id="d-pendientes" open>
-      <summary><span class="eyebrow">Pendientes</span>
-        <span class="tasa" id="sum-pendientes">—</span>
+    <!-- Catálogo de propuestas. Un mockup solo se alcanzaba desde la corrida
+         que lo creó, así que en cuanto ese job salía de la lista la propuesta se
+         volvía inencontrable — el mismo olvido silencioso de las ramas, con
+         trabajo ya pagado dentro. -->
+    <details class="plegable" id="d-mockups">
+      <summary><span class="eyebrow">Mockups</span>
+        <span class="tasa" id="sum-mockups">—</span>
         <span class="grow"></span><span class="tasa">▾</span></summary>
-      <p class="sub">Lo que queda por decidir. Los <b>del repo</b> los deduce el panel y se van solos al resolverse; los <b>anotados</b> los cierras tú. <b>Hacer</b> no marca nada: lanza la corrida y devuelve una propuesta con su mockup.</p>
-      <div id="pendientes"></div>
-      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
-        <input id="nuevo-pendiente" class="chk-msg" style="flex:1;min-width:260px;margin:0"
-          placeholder="Anotar un pendiente…">
-        <button class="mini" id="btn-add-pendiente">Añadir</button>
-      </div>
+      <p class="sub">Toda propuesta deja el suyo. Aquí están todos, con lo que pasó después: construido, descartado o esperando decisión.</p>
+      <div id="mockups"><div class="empty">Cargando…</div></div>
     </details>
 
     <details class="plegable" id="d-consumo">
@@ -885,6 +914,46 @@ $("#btn-add-pendiente").onclick = () => {
   i.value = "";
 };
 $("#nuevo-pendiente").onkeydown = (e) => { if (e.key === "Enter") $("#btn-add-pendiente").click(); };
+
+/* Galería de mockups: el catálogo de propuestas de la casa. Se carga al abrir,
+   como visitantes — lee el disco, no hace falta pagarlo en cada arranque. */
+let mockupsCargados = false;
+async function cargarMockups() {
+  const cont = $("#mockups");
+  try {
+    const { mockups = [] } = await (await fetch("/api/mockups")).json();
+    const abiertos = mockups.filter((m) => m.estado === "pendiente" || m.estado === "en curso");
+    $("#sum-mockups").textContent = mockups.length
+      ? `${mockups.length} propuesta(s)` + (abiertos.length ? ` · ${abiertos.length} sin decidir` : " · todas decididas")
+      : "ninguna todavía";
+    if (!mockups.length) { cont.innerHTML = `<div class="tasa">Ninguna corrida ha dejado mockup aún.</div>`; return; }
+
+    const color = { construido: "var(--ok)", descartado: "var(--muted)",
+      pendiente: "var(--accent)", "en curso": "var(--warn)", "huérfano": "var(--muted)" };
+    cont.innerHTML = mockups.map((m) => `
+      <div class="pend">
+        <span class="pend-m" style="color:${color[m.estado] ?? "var(--muted)"}">▦</span>
+        <span class="grow">${esc(m.nombre)}
+          <span class="tasa"> · ${esc(m.estado)}${m.modo ? ` · ${esc(m.modo)}` : ""}${m.mtime ? ` · ${esc(m.mtime.slice(0, 10))}` : ""}</span>
+        </span>
+        <button class="mini" data-vmk="${esc(m.archivo)}" data-mid="${esc(m.nombre)}">Ver</button>
+      </div>
+      <div class="diff" id="mk-${cssId(m.nombre)}" hidden></div>`).join("");
+
+    document.querySelectorAll("#mockups [data-vmk]").forEach((b) => b.onclick = () => {
+      const caja = $("#mk-" + cssId(b.dataset.mid));
+      if (!caja.hidden) { caja.hidden = true; b.textContent = "Ver"; return; }
+      caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(b.dataset.vmk)}"></iframe>`;
+      caja.hidden = false; b.textContent = "Ocultar";
+    });
+  } catch (e) {
+    $("#sum-mockups").textContent = "no disponible";
+    cont.innerHTML = `<div class="warnbox">No se pudo leer la carpeta de mockups.</div>`;
+  }
+}
+$("#d-mockups").addEventListener("toggle", () => {
+  if ($("#d-mockups").open && !mockupsCargados) { mockupsCargados = true; cargarMockups(); }
+});
 
 /* Visitantes. Se carga al ABRIR la sección, no al arrancar: es la única llamada
    del panel que sale a la red, y pagarla en cada refresco para un dato que se

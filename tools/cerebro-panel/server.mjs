@@ -1655,6 +1655,49 @@ async function manejar(req, res) {
   /* Las mismas RPC que lee `/visitantes` del sitio. Si algo falla —sin
      credenciales, sin red— se devuelve el error tal cual: un panel que enseña
      ceros cuando no pudo leer es peor que uno que dice que no pudo. */
+  /* LOS MOCKUPS SON EL CATÁLOGO DE PROPUESTAS. Hoy solo se llega a ellos desde
+     la corrida que los creó, así que una propuesta se vuelve inencontrable en
+     cuanto su job sale de la lista — y ahí se quedan, invisibles, igual que las
+     ramas. Cada uno se cruza con su corrida para saber si acabó construido,
+     descartado o esperando. */
+  if (url.pathname === "/api/mockups") {
+    const dir = path.join(here, "mockups");
+    let archivos = [];
+    try { archivos = fs.readdirSync(dir).filter((f) => /\.html?$/i.test(f)); } catch { /* aún no hay */ }
+
+    const sucios = new Set((await git(["status", "--porcelain"])).out
+      .split("\n").filter(Boolean).map((l) => l.slice(3).trim().replace(/^"|"$/g, "")));
+
+    const lista = [];
+    for (const f of archivos) {
+      const rel = `tools/cerebro-panel/mockups/${f}`;
+      const job = [...jobs.values()].find((j) =>
+        [...(j.archivos ?? [])].some((a) => a.replace(/\\/g, "/").endsWith(`/mockups/${f}`)));
+
+      /* El estado NO puede salir solo de `job.commit`: eso únicamente se marca al
+         commitear desde el checkpoint, y la mitad de los aterrizajes de hoy
+         fueron por la tarjeta Repo — así que propuestas ya en `main` salían como
+         «pendiente». Se pregunta al ÁRBOL: si los archivos que tocó la corrida
+         ya no están sucios, el cambio aterrizó, viniera por donde viniera. */
+      const tocados = sanear([...(job?.archivos ?? [])])
+        .filter((a) => !/mockups\//.test(a));
+      const estado = !job ? "huérfano"
+        : job.estado === "corriendo" ? "en curso"
+        : job.descartado ? "descartado"
+        : job.commit || job.mergeado ? "construido"
+        : !tocados.length ? "pendiente"                       // solo dejó el mockup
+        : tocados.some((a) => sucios.has(a)) ? "sin aterrizar" // escrito y sin decidir
+        : "construido";                                        // ya no está sucio: entró
+      let mtime = null;
+      try { mtime = fs.statSync(path.join(dir, f)).mtime.toISOString(); } catch { /* borrado */ }
+      lista.push({ archivo: rel, nombre: f.replace(/\.html?$/i, ""), estado, mtime,
+        job: job?.id ?? null, modo: job?.modo ?? null });
+    }
+    lista.sort((a, b) => (a.mtime < b.mtime ? 1 : -1));
+
+    return json(res, 200, { mockups: lista });
+  }
+
   if (url.pathname === "/api/pendientes" && req.method !== "POST")
     return json(res, 200, {
       derivados: await pendientesDerivados(),   // hechos: se recalculan y se van solos
