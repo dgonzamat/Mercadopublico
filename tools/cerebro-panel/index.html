@@ -479,6 +479,16 @@
            derivados, anotados y hallazgos de sonda): si el panel puede nombrar
            el problema, pedirte que lo teclees es devolverte el trabajo. -->
       <div id="senales" style="display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 10px"></div>
+      <!-- La regla es que NINGUNA señal se queda sin mockup. Aquí se ve
+           cumplirse: qué se está dibujando, cuánto lleva gastado y cómo
+           pararlo. Sin esta barra, el panel gastaría a tus espaldas. -->
+      <div id="cola-mockups" hidden
+        style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:0 0 10px;
+               background:var(--head);border:1px solid var(--border);border-radius:9px;padding:9px 12px">
+        <span class="tasa" id="cola-txt"></span>
+        <span class="grow"></span>
+        <button class="mini" id="cola-parar">Parar</button>
+      </div>
       <!-- Anotar viene aquí desde el rail. Era lo ÚNICO que aquella tarjeta
            hacía y los chips no: el resto —la lista, «Hacer», descartar— ya
            estaba aquí, así que los mismos cuatro pendientes salían dos veces en
@@ -1952,6 +1962,10 @@ async function tick() {
     cargarEstado();          // la corrida pudo escribir en el log
     olvidarJobs();           // sin esto el gasto se quedaría en el de antes
     cargarJobs();            // y acaba de mover el gasto del día
+    cargarMockups();         // la propuesta recién dibujada, a su señal
+    // La siguiente de la cola arranca AQUÍ, no al encolar: el panel corre de
+    // una en una, y encadenar sin esperar produciría corridas solapadas.
+    setTimeout(procesarCola, 1200);
   }
 }
 
@@ -2609,6 +2623,11 @@ $("#senal-desc-motivo").onkeydown = (e) => {
   if (e.key === "Enter" && !$("#senal-desc-ok").disabled) $("#senal-desc-ok").click();
 };
 $("#senal-desc-no").onclick = () => { $("#senal-descarte").hidden = true; senalEnDescarte = null; };
+
+/* Parar la cola es DEFINITIVO en esta sesión, no una pausa que se reanuda
+   sola: si dices basta, el panel no puede volver a gastar sin que se lo
+   pidas. Se retoma recargando o con el ▦+ de cada chip. */
+$("#cola-parar").onclick = () => { colaParada = true; pintarCola(); };
 $("#senal-desc-ok").onclick = async () => {
   const motivo = $("#senal-desc-motivo").value.trim();
   if (!senalEnDescarte || !motivo) return;
@@ -2643,6 +2662,64 @@ function marcarSenalActiva() {
   });
 }
 
+/* ── la regla: NINGUNA señal sin mockup ───────────────────────────────────
+   No es «se puede dibujar», es «lo tiene». El botón ▦+ dejaba la regla en
+   manos de que alguien se acordara, y una regla que depende de acordarse no
+   es una regla. El panel la cumple él: al detectar señales, encola las que no
+   tienen propuesta y las dibuja de una en una.
+
+   Tres frenos, porque esto gasta dinero de verdad:
+     · el presupuesto del día manda — si la siguiente no cabe, se para y lo dice
+     · nunca con una corrida viva: el panel ejecuta de una en una
+     · una vez dibujado, el mockup queda en disco y se empareja por contexto,
+       así que cada señal se paga UNA vez, no en cada recarga
+   Y se ve mientras pasa, con su botón de parar. Gastar en silencio sería
+   peor que no cumplir la regla. */
+let colaMockups = [], colaViva = false, colaParada = false;
+
+function encolarMockupsFaltantes() {
+  const faltan = SENALES.filter((s) => !s.mockup && !colaMockups.includes(s));
+  if (faltan.length) colaMockups.push(...faltan);
+  if (!colaViva && !colaParada) procesarCola();
+  else pintarCola();
+}
+
+function pintarCola() {
+  const c = $("#cola-mockups");
+  if (!c) return;
+  c.hidden = !colaMockups.length && !colaViva;
+  if (c.hidden) return;
+  const resto = colaMockups.length;
+  $("#cola-txt").textContent = colaParada
+    ? `${resto} señal(es) sin mockup · en pausa`
+    : colaViva
+      ? `dibujando el mockup que falta · quedan ${resto} · ${dinero(gastoHoy)} de ${dinero(PRESUPUESTO_DIA)}`
+      : `${resto} señal(es) sin mockup`;
+}
+
+async function procesarCola() {
+  if (colaViva || colaParada) return;
+  const s = colaMockups[0];
+  if (!s) { pintarCola(); return; }
+
+  // Frenos, en orden: el dinero primero.
+  if (gastoHoy >= PRESUPUESTO_DIA) {
+    colaParada = true;
+    avisar(`Presupuesto del día agotado (${dinero(gastoHoy)}): quedan ${colaMockups.length} señal(es) sin mockup.`);
+    pintarCola(); return;
+  }
+  if (job?.estado === "corriendo") { setTimeout(procesarCola, 4000); pintarCola(); return; }
+
+  colaViva = true; pintarCola();
+  try {
+    await gatillar(s.modo || "", s.texto);
+  } catch (e) { colaParada = true; avisar("No se pudo dibujar el mockup: " + (e.message ?? e)); }
+  colaMockups.shift();
+  colaViva = false;
+  pintarCola();
+  // La siguiente arranca cuando la corrida termine, no ahora: `tick` la llama.
+}
+
 /** Recoge señales de las dos fuentes que el panel ya consulta. */
 function recogerSenales(pend, salud) {
   const corto = (t) => t.length > 64 ? t.slice(0, 63) + "…" : t;
@@ -2662,6 +2739,7 @@ function recogerSenales(pend, salud) {
   for (const h of salud ?? []) s.push(mk("sonda", h));
   SENALES = s.slice(0, 8);       // más de ocho deja de ser una lista y es un muro
   emparejarMockups();
+  encolarMockupsFaltantes();     // la regla: ninguna se queda sin propuesta
   pintarSenales();
   if (estado) pintarTabs();      // el contador por modo vive en las pestañas
 }
