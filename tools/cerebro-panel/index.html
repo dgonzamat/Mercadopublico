@@ -267,10 +267,15 @@
     letter-spacing:.1em;color:var(--muted)}
   .senal-txt{font-size:12.5px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-  .senal-x{font:12px ui-monospace,monospace;cursor:pointer;padding:0 9px;min-height:0;
-    border:1px solid var(--border);border-left:none;border-radius:0 8px 8px 0;
-    background:var(--bg);color:var(--muted)}
+  .senal-mk,.senal-x{font:12px ui-monospace,monospace;cursor:pointer;padding:0 9px;
+    min-height:0;border:1px solid var(--border);border-left:none;
+    background:var(--bg);color:var(--muted);border-radius:0}
+  .senal-x{border-radius:0 8px 8px 0}
   .senal-x:hover{background:var(--surface2);color:var(--err)}
+  .senal-mk:hover{background:var(--surface2);color:var(--ok)}
+  /* Una señal de otro modo se ve prestada: se puede usar, pero no cuenta en
+     el número de esta pestaña y conviene que se note. */
+  .senal.ajena{border-style:dashed;opacity:.8}
   .senal.puesta{border-color:var(--accent);background:#f9ecee}
   .senal.puesta + .senal-x{border-color:var(--accent)}
   .tab-body{padding:18px 20px 20px}
@@ -973,8 +978,11 @@ function pintarFlujo() {
   // cadena, que tiene que decir algo desde el arranque y al cambiar de modo —
   // no solo cuando hay una corrida que refrescar.
   pintarEstado(job);
-  // El prompt depende del modo: cambiar de pestaña lo invalida.
+  // El prompt y las SEÑALES dependen del modo: cambiar de pestaña los
+  // invalida. `verOtrosModos` se reinicia a propósito — es una excepción que
+  // pediste para el modo anterior, no una preferencia permanente.
   if (typeof cargarPrompt === "function") cargarPrompt();
+  if (typeof pintarSenales === "function") { verOtrosModos = false; pintarSenales(); }
   actualizarGatillar();          // el botón nombra el modo elegido
 }
 
@@ -2371,26 +2379,63 @@ let SENALES = [];
 function pintarSenales() {
   const c = $("#senales");
   if (!c) return;
-  if (!SENALES.length) {
+
+  const propias = senalesDelModo();
+  const otras = SENALES.filter((s) => !propias.includes(s));
+  const lista = verOtrosModos ? SENALES : propias;
+
+  if (!lista.length) {
     /* Un vacío aquí NO es un fallo del panel. Con el cimiento sano y los
        pendientes cerrados, no haber señales es el estado bueno — decirlo evita
        que se lea como «esto no funciona» y, peor, que se dispare algo por
-       llenar el hueco. */
+       llenar el hueco. Y si las hay pero de otro modo, se ofrece verlas en vez
+       de dejarte en un callejón. */
     c.innerHTML = `<div class="sub" style="padding:12px;border:1px dashed var(--border);border-radius:9px">
-      Ninguna señal detectada sin descartar. Sondea de nuevo o escribe la señal a mano:
-      un cimiento maduro sin señales es un resultado, no un fallo.</div>`;
+      Ninguna señal detectada para <b>${esc(modoSel?.arg || "diagnóstico")}</b>. Sondea de nuevo o
+      escribe la señal a mano: un cimiento maduro sin señales es un resultado, no un fallo.
+      ${otras.length ? `<button class="mini" id="ver-otras" style="margin-left:8px">ver las de otros modos (${otras.length})</button>` : ""}
+    </div>`;
+    if (otras.length) $("#ver-otras").onclick = () => { verOtrosModos = true; pintarSenales(); };
     return;
   }
+
   // Dos líneas: el origen arriba en versalitas y la evidencia debajo. En una
   // sola línea el origen competía con el texto y la señal se leía a medias.
-  c.innerHTML = SENALES.map((s, i) => `
-    <span class="senal-wrap">
-      <button class="senal" data-senal="${i}" aria-pressed="false">
-        <span class="senal-org">${esc(s.origen)}</span>
+  c.innerHTML = lista.map((s) => {
+    const i = SENALES.indexOf(s);
+    const ajena = s.modo !== (modoSel?.arg ?? "");
+    return `<span class="senal-wrap">
+      <button class="senal${ajena ? " ajena" : ""}" data-senal="${i}" aria-pressed="false">
+        <span class="senal-org">${esc(s.origen)}${ajena ? ` · ${esc(s.modo)}` : ""}</span>
         <span class="senal-txt">${esc(s.corto)}</span>
       </button>
+      ${s.mockup
+        // Si ya se atacó, su propuesta se mira desde aquí: ir a buscarla al
+        // catálogo era el rodeo que dejó dos propuestas sin construir.
+        ? `<button class="senal-mk" data-vmk="${esc(s.mockup)}" data-si="${i}" title="Ver la propuesta que dejó">▦</button>` : ""}
       <button class="senal-x" data-descartar="${i}" title="Descartar esta señal (pide motivo)">✕</button>
-    </span>`).join("");
+    </span>
+    <div class="diff" id="smk-${i}" hidden style="flex:1 1 100%"></div>`;
+  }).join("")
+    + (verOtrosModos && otras.length
+      ? `<button class="mini" id="solo-modo" style="align-self:flex-start">solo las de ${esc(modoSel?.arg || "diagnóstico")}</button>` : "");
+
+  /* Si NINGUNA de las visibles tiene propuesta, se dice de dónde sale. El
+     mockup es justo lo que quieres ver antes de decidir —«cómo quedaría»— pero
+     no preexiste: lo dibuja la fase 1, cuyo único entregable es ese dibujo.
+     Solo cuando falta en todas: una nota que sale siempre deja de leerse. */
+  if (lista.length && !lista.some((s) => s.mockup)) {
+    c.insertAdjacentHTML("beforeend",
+      `<div class="tasa" style="flex:1 1 100%;margin-top:2px">ninguna tiene propuesta todavía · el mockup de «cómo quedaría» lo dibuja esta misma corrida, que no toca código</div>`);
+  }
+
+  if ($("#solo-modo")) $("#solo-modo").onclick = () => { verOtrosModos = false; pintarSenales(); };
+  document.querySelectorAll("#senales [data-vmk]").forEach((b) => b.onclick = () => {
+    const caja = $("#smk-" + b.dataset.si);
+    if (!caja.hidden) { caja.hidden = true; return; }
+    caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(b.dataset.vmk)}"></iframe>`;
+    caja.hidden = false;
+  });
 
   document.querySelectorAll("#senales [data-senal]").forEach((b) => b.onclick = () => {
     $("#contexto").value = SENALES[+b.dataset.senal].texto;
@@ -2457,16 +2502,25 @@ function marcarSenalActiva() {
 /** Recoge señales de las dos fuentes que el panel ya consulta. */
 function recogerSenales(pend, salud) {
   const corto = (t) => t.length > 64 ? t.slice(0, 63) + "…" : t;
-  const mk = (origen, texto) => ({ origen, texto, corto: corto(texto), modo: modoDe({ texto, origen }) });
+  const mk = (origen, texto, extra = {}) =>
+    ({ origen, texto, corto: corto(texto), modo: modoDe({ texto, origen }), ...extra });
   const s = [];
-  for (const p of pend?.derivados ?? []) s.push(mk("repo", p.texto));
+  // Se arrastra el `mockup` del pendiente: si ya se atacó, su propuesta se
+  // mira desde aquí en vez de ir a buscarla al catálogo.
+  for (const p of pend?.derivados ?? []) s.push(mk("repo", p.texto, { mockup: p.mockup, job: p.job }));
   for (const p of (pend?.anotados ?? []).filter((x) => x.estado === "pendiente"))
-    s.push(mk(p.origen || "anotado", p.texto));
+    s.push(mk(p.origen || "anotado", p.texto, { mockup: p.mockup, job: p.job }));
   for (const h of salud ?? []) s.push(mk("sonda", h));
   SENALES = s.slice(0, 8);       // más de ocho deja de ser una lista y es un muro
   pintarSenales();
   if (estado) pintarTabs();      // el contador por modo vive en las pestañas
 }
+
+/* Las del modo elegido. La pestaña decía «bugs 1» y la lista enseñaba las
+   cuatro: el contador y la lista salían del mismo `modoDe()` pero solo uno lo
+   aplicaba, así que el número no describía nada de lo que había debajo. */
+const senalesDelModo = () => SENALES.filter((s) => s.modo === (modoSel?.arg ?? ""));
+let verOtrosModos = false;
 
 /* ── consulta · pestañas ──────────────────────────────────────────────────
    Una sola definición: rótulo, nota y si la pestaña nace oculta. El `sum` de
