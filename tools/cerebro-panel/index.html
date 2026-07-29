@@ -98,6 +98,10 @@
   .lienzo{background:var(--panel);border:1px solid var(--border);border-radius:12px;
     padding:20px 18px 24px;position:relative;overflow:hidden}
 
+  .prompt-prev{margin-top:14px;border-top:1px solid var(--surface2);padding-top:12px}
+  .prompt-prev summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:10px}
+  .prompt-prev summary::-webkit-details-marker{display:none}
+  .prompt-prev pre{max-height:300px}
   .linea-tit{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
   .linea-tit .eyebrow{flex:none}
   /* Control segmentado, no píldoras. La píldora es una etiqueta —algo que
@@ -203,6 +207,13 @@
   .pend.cerrado{opacity:.55}
   .pend.cerrado .grow{text-decoration:line-through;text-decoration-color:var(--border)}
   .pend button{flex:none}
+  .pron{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;margin-top:10px}
+  .pron-kv{display:flex;flex-direction:column}
+  .pron-kv b{font-family:ui-monospace,monospace;font-size:18px;font-weight:600;
+    letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+  .pron-kv span{font-size:11.5px;color:var(--muted)}
+  .pron-mk{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;
+    background:var(--head);border:1px solid var(--surface2);border-radius:10px;padding:12px 14px}
   .fila-modo{display:flex;gap:12px;align-items:center;padding:8px 0;flex-wrap:wrap;
     border-bottom:1px solid var(--surface2);font-size:12.5px}
   .metric{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
@@ -251,7 +262,24 @@
      invierte a tinta plena como el selector de modo porque esto no es una
      elección exclusiva —puedes escribir la tuya encima— sino un «venías de
      aquí». */
+  /* Chip de señal: el origen arriba, la evidencia debajo, y una ✕ pegada para
+     descartarla. La ✕ va fuera del botón principal porque son dos acciones
+     distintas —usarla y tirarla— y compartir hitbox garantiza el clic errado. */
+  .senal-wrap{display:inline-flex;align-items:stretch;max-width:100%}
+  .senal{display:flex;flex-direction:column;align-items:flex-start;gap:2px;
+    font:inherit;text-align:left;cursor:pointer;padding:7px 11px;min-height:0;
+    border:1px solid var(--border);border-radius:8px 0 0 8px;background:var(--bg);
+    color:var(--text);max-width:340px}
+  .senal-org{font-family:ui-monospace,monospace;font-size:11.5px;text-transform:uppercase;
+    letter-spacing:.1em;color:var(--muted)}
+  .senal-txt{font-size:12.5px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .senal-x{font:12px ui-monospace,monospace;cursor:pointer;padding:0 9px;min-height:0;
+    border:1px solid var(--border);border-left:none;border-radius:0 8px 8px 0;
+    background:var(--bg);color:var(--muted)}
+  .senal-x:hover{background:var(--surface2);color:var(--err)}
   .senal.puesta{border-color:var(--accent);background:#f9ecee}
+  .senal.puesta + .senal-x{border-color:var(--accent)}
   .tab-body{padding:18px 20px 20px}
   .tab-body > .sub{margin:0 0 14px;color:var(--muted);max-width:70ch}
   #tab-cifra{font-size:13px;color:var(--text);margin-bottom:6px}
@@ -403,12 +431,16 @@
     <div class="lienzo" id="lienzo">
       <div class="linea-tit">
         <span class="eyebrow">Modo</span>
-        <span class="sub">el número es cuántas señales concretas tiene ese modo ahora mismo</span>
+        <span class="sub">el número = señales detectadas para ese modo · <b>0 = sin evidencia</b>, dispararlo sería inventar trabajo</span>
       </div>
       <div class="tabs" id="tabs" role="tablist" aria-label="Modos del cerebro"></div>
 
       <div class="linea-tit" style="margin-top:20px;padding-top:18px;border-top:1px solid var(--surface2)">
         <span class="eyebrow">Cadena</span>
+        <!-- Quién hace qué. El stepper enseñaba siete círculos iguales, y dos de
+             ellos no los corre el agente: los decides tú. Sin decirlo, COMMIT y
+             MERGE parecen pasos que van a pasar solos. -->
+        <span class="tasa" id="paso-texto"></span>
         <span class="grow"></span>
         <!-- El avance, también aquí. La tarjeta del rail lo lleva, pero mirando
              el diagrama la pregunta es «¿por dónde va?» y la respuesta estaba
@@ -424,7 +456,21 @@
            de disparos sin señal — «mejoras-ux» a ver qué encuentra. -->
       <div class="linea-tit" style="margin-top:20px;padding-top:18px;border-top:1px solid var(--surface2)">
         <label class="eyebrow" for="contexto">Señal · obligatoria</label>
-        <span class="sub">sin señal no es un disparo: elige una detectada o escríbela</span>
+        <span class="sub">qué evidencia concreta ataca esta corrida. Regla de oro: «hueco Chile×2010s, 40 impr/mes» vale; «mejorar el contenido» no</span>
+      </div>
+
+      <!-- Descartar una señal PIDE MOTIVO, igual que descartar una corrida. Sin
+           él, la señal reaparece en el próximo sondeo y se vuelve a descartar
+           para siempre: el motivo es lo que decide si caduca o no. -->
+      <div id="senal-descarte" hidden
+        style="margin-bottom:12px;background:#f9ecee;border:1px solid var(--accent);border-radius:9px;padding:12px 14px">
+        <span class="sub" style="display:block;color:var(--text)">Descartar «<b id="senal-desc-que"></b>» — ¿por qué? El motivo decide si caduca: «no existe» no es lo mismo que «no pude anclarlo desde aquí».</span>
+        <input id="senal-desc-motivo" class="chk-msg" style="margin-top:9px"
+          placeholder="Ej: bloqueada por entorno — falta build local">
+        <div style="display:flex;gap:9px;margin-top:9px;flex-wrap:wrap">
+          <button class="mini" id="senal-desc-ok" disabled>Descartar y registrar</button>
+          <button class="mini" id="senal-desc-no">Cancelar</button>
+        </div>
       </div>
       <!-- Las señales detectadas se sacan de lo que el panel YA sabe (pendientes
            derivados, anotados y hallazgos de sonda): si el panel puede nombrar
@@ -436,7 +482,10 @@
       <!-- Detener y el resumen de la corrida se fueron al rail (#estado): el
            estado vivo no es un apéndice de la fila de disparo. -->
       <div style="display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap">
-        <button class="primary" id="btn-gatillar">Gatillar este modo</button>
+        <!-- El botón NOMBRA lo que va a hacer: qué modo y sobre qué. «Gatillar
+             este modo» obliga a mirar arriba para saber cuál está elegido, y
+             ese vistazo es justo el que no se da cuando vas rápido. -->
+        <button class="primary" id="btn-gatillar">Gatillar</button>
         <!-- El override es un botón APARTE, punteado y sin relleno: saltarse la
              regla tiene que costar un gesto distinto de cumplirla. Un mismo
              botón que a veces avisa se convierte en el botón de siempre. -->
@@ -445,6 +494,28 @@
           Gatillar de todos modos</button>
         <span class="tasa" id="aviso-disparo"></span>
       </div>
+      <div class="tasa" style="margin-top:8px">edita el repo con <b>acceptEdits</b> · tope de 20 min</div>
+
+      <!-- PRONÓSTICO. Lo que pasó las otras veces que disparaste ESTE modo. El
+           desglose por modo estaba enterrado en la pestaña Rendimiento, o sea a
+           tres clics del único momento en que sirve: antes de gastar. Aquí, un
+           modo que tira la mitad de lo que produce te lo dice antes. -->
+      <div style="margin-top:16px;border-top:1px solid var(--surface2);padding-top:14px">
+        <span class="eyebrow" style="display:block;margin-bottom:4px">Pronóstico · qué pasó las últimas veces con este modo</span>
+        <div id="pronostico"></div>
+      </div>
+      <!-- El prompt era lo más caro del panel y lo único que no se podía leer
+           antes de pagarlo: se descubría lo que pedía de verdad leyendo la
+           corrida ya terminada. Va plegado porque no se consulta siempre, pero
+           el titular lleva su tamaño —que es el dato que decide si lo abres:
+           `cerebro.md` tiene techo de 23.000 chars y el prompt crece con él. -->
+      <details class="prompt-prev" id="prompt-preview">
+        <summary><span class="eyebrow">Prompt que se enviará</span>
+          <span class="tasa" id="prompt-tam"></span>
+          <span class="grow"></span><span class="tasa">▾</span></summary>
+        <pre id="prompt-texto">…</pre>
+      </details>
+
       <div class="tasa" style="margin-top:10px">atajos · <b>1-7</b> modo · <b>g</b> gatillar · <b>.</b> detener</div>
 
       <div class="warnbox" id="bloqueo" hidden></div>
@@ -754,6 +825,10 @@ function actualizarGatillar() {
   $("#btn-gatillar").disabled = duro || (blando && !override);
   $("#btn-override").hidden = !blando || duro || override;
 
+  // El botón dice el modo y si va sobre una señal concreta.
+  const nombre = modoSel?.arg || "diagnóstico";
+  $("#btn-gatillar").textContent = sinSenal ? `Gatillar ${nombre}` : `Gatillar ${nombre} sobre esta señal`;
+
   const aviso = $("#aviso-disparo");
   aviso.style.color = blando || cimientoRoto ? "var(--err)" : "var(--muted)";
   aviso.textContent =
@@ -883,7 +958,6 @@ function pintarFlujo() {
       ${i < pasos.length - 1 ? `<div class="linea der${est === "hecho" ? " recorrida" : ""}"></div>` : ""}
       <div class="n">${n.banda === "aterrizaje" ? "·" : i + 1}</div>
       <div class="t">${esc(n.t)}</div>
-      <div class="b">${esc(n.banda)}</div>
     </div>`;
   }).join("") + `</div>`
     /* Un modo sin cadena es un fallo del contrato, no un modo corto: fue así
@@ -908,6 +982,10 @@ function pintarFlujo() {
   // cadena, que tiene que decir algo desde el arranque y al cambiar de modo —
   // no solo cuando hay una corrida que refrescar.
   pintarEstado(job);
+  // Prompt y pronóstico dependen del modo: cambiar de pestaña los invalida.
+  if (typeof cargarPrompt === "function") cargarPrompt();
+  if (typeof pintarPronostico === "function") pintarPronostico();
+  actualizarGatillar();          // el botón nombra el modo elegido
 }
 
 /* ── estado del repo ─────────────────────────────────────────────────── */
@@ -1230,6 +1308,11 @@ async function cargarMockups() {
   const cont = $("#mockups");
   try {
     const { mockups = [] } = await (await fetch("/api/mockups")).json();
+    // El más reciente de cada modo, para el pronóstico. Vienen ya ordenados
+    // por fecha desc, así que el primero de cada modo es el último que dejó.
+    MOCKUPS_POR_MODO = {};
+    for (const m of mockups) if (m.modo && !MOCKUPS_POR_MODO[m.modo]) MOCKUPS_POR_MODO[m.modo] = m;
+    pintarPronostico();
     const abiertos = mockups.filter((m) => m.estado === "pendiente" || m.estado === "en curso");
     $("#sum-mockups").textContent = mockups.length
       ? `${mockups.length} propuesta(s)` + (abiertos.length ? ` · ${abiertos.length} sin decidir` : " · todas decididas")
@@ -1457,7 +1540,33 @@ function pintarSalud(h) {
 
 /* ── disparo ─────────────────────────────────────────────────────────── */
 $("#btn-gatillar").onclick = () => gatillar(modoSel.arg, $("#contexto").value.trim());
-$("#contexto").oninput = () => { marcarSenalActiva(); actualizarGatillar(); };
+/* Vista previa del prompt. Se pide SOLO con el desplegable abierto: es una
+   llamada por tecleo si no, y el prompt no cambia lo bastante como para
+   pagarlo mientras nadie lo mira. Al abrirlo se pide una vez; a partir de ahí
+   se refresca al soltar el teclado o al cambiar de modo. */
+let promptTmr = null;
+async function cargarPrompt() {
+  const d = $("#prompt-preview");
+  if (!d?.open || !modoSel) return;
+  try {
+    const q = `?modo=${encodeURIComponent(modoSel.arg ?? "")}`
+      + `&contexto=${encodeURIComponent($("#contexto").value.trim())}`;
+    const r = await (await fetch("/api/prompt" + q)).json();
+    if (r.error) { $("#prompt-texto").textContent = r.error; return; }
+    $("#prompt-texto").textContent = r.prompt;
+    // El tamaño en el titular: `cerebro.md` tiene techo de 23.000 chars y el
+    // prompt crece con él, así que ver el número es ver cuánto queda de margen.
+    $("#prompt-tam").textContent = `${miles(r.chars)} chars`;
+  } catch (e) { $("#prompt-texto").textContent = "no se pudo pedir el prompt al panel."; }
+}
+const cargarPromptPronto = () => { clearTimeout(promptTmr); promptTmr = setTimeout(cargarPrompt, 350); };
+$("#prompt-preview").addEventListener("toggle", cargarPrompt);
+
+$("#contexto").oninput = () => {
+  marcarSenalActiva();
+  actualizarGatillar();
+  cargarPromptPronto();
+};
 $("#btn-override").onclick = () => { override = true; actualizarGatillar(); };
 
 // `origen`: el job de la fase 1 que esta corrida viene a construir. Viaja al
@@ -1854,6 +1963,11 @@ function pintarEstado(j) {
     pa.textContent = viva ? `paso ${paso}/${pasos.length}` : j ? "sin corrida activa" : "listo";
     pa.style.color = viva ? "var(--accent)" : "var(--muted)";
   }
+  const pt = $("#paso-texto");
+  if (pt && pasos.length) {
+    const nAgente = pasos.filter((n) => n.banda !== "aterrizaje").length;
+    pt.textContent = `pasos 1–${nAgente} los corre el agente · COMMIT y MERGE (·) los decides tú`;
+  }
   const fr = $("#flujo-resumen");
   if (fr) {
     const n = j?.eventosTotal ?? (j?.eventos ?? []).length;
@@ -2177,17 +2291,68 @@ async function cargarJobs() {
     const acc = {};
     for (const j of jobs) {
       const m = j.modo || "diagnóstico";
-      (acc[m] ??= { modo: m, n: 0, cambio: 0, coste: 0 });
+      (acc[m] ??= { modo: m, n: 0, cambio: 0, descartadas: 0, coste: 0 });
       acc[m].n++;
       acc[m].coste += coste(j);
       if ((j.archivos ?? []).length) acc[m].cambio++;
+      if (j.descartado) acc[m].descartadas++;
     }
     porModo = Object.values(acc).sort((a, b) => b.n - a.n);
 
     pintarPresupuesto();
     pintarPorModo();
+    pintarPronostico();
     actualizarGatillar();
   } catch (e) { /* el banner de conexión ya lo dice */ }
+}
+
+/* Pronóstico del modo elegido. Todo sale de lo ya cargado: `porModo` (de
+   `/api/jobs`) y `MOCKUPS_POR_MODO` (de `/api/mockups`). */
+let MOCKUPS_POR_MODO = {};
+
+function pintarPronostico() {
+  const c = $("#pronostico");
+  if (!c || !modoSel) return;
+  const m = porModo.find((x) => x.modo === (modoSel.arg || "diagnóstico"))
+    ?? { n: 0, cambio: 0, descartadas: 0, coste: 0 };
+  const pctAt = m.n ? Math.round(m.cambio / m.n * 100) : 0;
+  const pctDe = m.n ? Math.round(m.descartadas / m.n * 100) : 0;
+  // El umbral no es cosmético: por debajo de la mitad, el modo produce más
+  // trabajo del que aterriza, y eso es un problema de prompt, no de suerte.
+  const riesgo = pctDe >= 40 || (m.n > 0 && pctAt < 50);
+  const cAt = pctAt < 50 ? "var(--warn)" : "var(--ok)";
+  const cDe = pctDe >= 40 ? "var(--err)" : "var(--text)";
+  const mk = MOCKUPS_POR_MODO[modoSel.arg || "diagnóstico"];
+
+  c.innerHTML = `
+    <div class="pron">
+      <div class="pron-kv"><b style="color:${cAt}">${m.n ? pctAt + "%" : "—"}</b><span>aterrizó (dejó cambio)</span></div>
+      <div class="pron-kv"><b style="color:${cDe}">${m.n ? pctDe + "%" : "—"}</b><span>se descartó en la revisión</span></div>
+      <div class="pron-kv"><b>${m.n ? dinero(m.coste / m.n) : "—"}</b><span>coste medio por corrida</span></div>
+      <div class="tasa" style="flex:1 1 200px;min-width:180px">${m.n
+        ? `${m.cambio}/${m.n} corridas dejaron cambio · ${m.descartadas} descartada(s)`
+        : "sin historial de este modo todavía"}</div>
+    </div>
+    ${riesgo ? `<div class="sub" style="color:var(--warn);margin-top:8px">histórico flojo en este modo: buena parte de lo que produce se tira — acota la señal antes de gastar</div>` : ""}
+    <div class="pron-mk">
+      <span class="badge ${mk ? (mk.estado === "construido" ? "b-ok" : mk.estado === "pendiente" ? "b-err" : "b-run") : "b-run"}">mockup</span>
+      <span class="mono" style="flex:1 1 160px;min-width:0;overflow-wrap:anywhere">${esc(mk ? mk.nombre : "sin propuestas todavía")}</span>
+      <span class="tasa">${mk ? esc(mk.estado + " · " + (mk.mtime ?? "").slice(0, 10))
+        /* Que un modo NUNCA deje mockup no es un dato neutro: significa que
+           aterriza cambios sin pasar por revisión visual, que es justo lo que
+           las dos fases venían a impedir. */
+        : "este modo no ha dejado ningún mockup"}</span>
+      ${mk ? `<button class="mini" id="pron-ver" data-mk="${esc(mk.archivo)}">ver la última propuesta</button>` : ""}
+    </div>
+    <div class="diff" id="pron-caja" hidden></div>`;
+
+  if (mk) $("#pron-ver").onclick = () => {
+    const caja = $("#pron-caja"), b = $("#pron-ver");
+    if (!caja.hidden) { caja.hidden = true; b.textContent = "ver la última propuesta"; return; }
+    // Se aprueba MIRÁNDOLA, no leyendo su ruta.
+    caja.innerHTML = `<iframe class="mockup" sandbox src="/archivo?archivo=${encodeURIComponent(mk.archivo)}"></iframe>`;
+    caja.hidden = false; b.textContent = "ocultar";
+  };
 }
 
 function pintarPorModo() {
@@ -2243,19 +2408,75 @@ let SENALES = [];
 function pintarSenales() {
   const c = $("#senales");
   if (!c) return;
-  if (!SENALES.length) { c.innerHTML = `<span class="tasa">sin señales detectadas ahora mismo — escríbela abajo</span>`; return; }
+  if (!SENALES.length) {
+    /* Un vacío aquí NO es un fallo del panel. Con el cimiento sano y los
+       pendientes cerrados, no haber señales es el estado bueno — decirlo evita
+       que se lea como «esto no funciona» y, peor, que se dispare algo por
+       llenar el hueco. */
+    c.innerHTML = `<div class="sub" style="padding:12px;border:1px dashed var(--border);border-radius:9px">
+      Ninguna señal detectada sin descartar. Sondea de nuevo o escribe la señal a mano:
+      un cimiento maduro sin señales es un resultado, no un fallo.</div>`;
+    return;
+  }
+  // Dos líneas: el origen arriba en versalitas y la evidencia debajo. En una
+  // sola línea el origen competía con el texto y la señal se leía a medias.
   c.innerHTML = SENALES.map((s, i) => `
-    <button class="mini senal" data-senal="${i}" aria-pressed="false" style="text-align:left;max-width:100%">
-      <span class="eyebrow" style="margin-right:7px">${esc(s.origen)}</span>${esc(s.corto)}
-    </button>`).join("");
+    <span class="senal-wrap">
+      <button class="senal" data-senal="${i}" aria-pressed="false">
+        <span class="senal-org">${esc(s.origen)}</span>
+        <span class="senal-txt">${esc(s.corto)}</span>
+      </button>
+      <button class="senal-x" data-descartar="${i}" title="Descartar esta señal (pide motivo)">✕</button>
+    </span>`).join("");
+
   document.querySelectorAll("#senales [data-senal]").forEach((b) => b.onclick = () => {
     $("#contexto").value = SENALES[+b.dataset.senal].texto;
     $("#contexto").focus();
     marcarSenalActiva();
     actualizarGatillar();
+    cargarPromptPronto();
+  });
+  document.querySelectorAll("#senales [data-descartar]").forEach((b) => b.onclick = () => {
+    senalEnDescarte = SENALES[+b.dataset.descartar];
+    $("#senal-desc-que").textContent = senalEnDescarte.corto;
+    $("#senal-desc-motivo").value = "";
+    $("#senal-desc-ok").disabled = true;
+    $("#senal-descarte").hidden = false;
+    $("#senal-desc-motivo").focus();
   });
   marcarSenalActiva();
 }
+
+/* Descarte de una señal, con su motivo, al mismo almacén que el resto de
+   descartes: queda en Registros y desaparece de la lista. */
+let senalEnDescarte = null;
+$("#senal-desc-motivo").oninput = () => {
+  $("#senal-desc-ok").disabled = !$("#senal-desc-motivo").value.trim();
+};
+$("#senal-desc-motivo").onkeydown = (e) => {
+  if (e.key === "Enter" && !$("#senal-desc-ok").disabled) $("#senal-desc-ok").click();
+};
+$("#senal-desc-no").onclick = () => { $("#senal-descarte").hidden = true; senalEnDescarte = null; };
+$("#senal-desc-ok").onclick = async () => {
+  const motivo = $("#senal-desc-motivo").value.trim();
+  if (!senalEnDescarte || !motivo) return;
+  const texto = `Señal descartada (${senalEnDescarte.origen}): ${senalEnDescarte.texto}`;
+  const pedir = (body) => fetch("/api/pendientes", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify(body),
+  }).then((r) => r.json());
+  try {
+    const tras = await pedir({ accion: "add", texto, origen: "descarte" });
+    const nuevo = (tras.anotados ?? []).filter((p) => p.texto === texto).pop();
+    const fin = nuevo ? await pedir({ accion: "descartado", id: nuevo.id, motivo }) : tras;
+    SENALES = SENALES.filter((s) => s !== senalEnDescarte);
+    $("#senal-descarte").hidden = true;
+    senalEnDescarte = null;
+    pintarSenales();
+    pintarRegistros(fin);
+    if (estado) pintarTabs();
+  } catch (e) { avisar("No se pudo registrar el descarte de la señal."); }
+};
 
 /* Qué señal está puesta, marcada en el chip. Elegir una y ver el textarea
    llenarse no dice CUÁL de las cuatro elegiste — y si luego la editas a mano,

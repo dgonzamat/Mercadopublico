@@ -1586,6 +1586,30 @@ async function manejar(req, res) {
     return json(res, 200, { ok: true });
   }
 
+  /* El prompt EXACTO que se enviaría, sin enviarlo. Es GET y no toca nada: la
+     única diferencia con `/api/fire` es que se queda en `promptDeModo()` y no
+     llama a `dispararCerebro()`.
+   *
+   * Existe porque el prompt era la pieza más cara del panel y la única que no
+   * se podía leer antes de pagarla: se descubría lo que pedía de verdad
+   * leyendo la corrida ya terminada, con el gasto hecho. Varias de las
+   * correcciones de esta semana —el mockup obligatorio, el ámbito, la regla de
+   * citar el fragmento— salieron de encontrar en el prompt algo que no decía
+   * lo que yo creía. Con esto se ve antes.
+   *
+   * Misma validación contra `cerebro.md` que el disparo: si el skill no
+   * declara el modo, aquí tampoco hay prompt que enseñar. */
+  if (url.pathname === "/api/prompt" && req.method === "GET") {
+    const modo = url.searchParams.get("modo") ?? "";
+    const contexto = (url.searchParams.get("contexto") ?? "").slice(0, 2000);
+    const { modos } = contrato();
+    const elegido = modos.find((m) => m.arg === modo || (modo === "" && m.arg === ""));
+    if (!elegido)
+      return json(res, 400, { error: `modo desconocido: "${modo}"` });
+    const prompt = promptDeModo(elegido.arg, contexto);
+    return json(res, 200, { modo: elegido.arg, prompt, chars: prompt.length });
+  }
+
   if (url.pathname === "/api/fire" && req.method === "POST") {
     const { modo = "", contexto = "", origen } = await leerCuerpo(req);
     // La fase 2 deja constancia en su propuesta: sin esto el enlace entre las
