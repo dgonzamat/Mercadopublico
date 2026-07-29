@@ -816,6 +816,14 @@ function pintarPendientes(d) {
         ${p.origen ? `<span class="tasa"> · ${esc(p.origen)}</span>` : ""}
         ${p.motivo ? `<div class="tasa" style="margin-top:2px">motivo: ${esc(p.motivo)}</div>` : ""}
         ${p.job ? `<div class="tasa" style="margin-top:2px">lanzado en ${esc(p.job)}</div>` : ""}
+        ${!p.mockup && !cerrado
+          /* Decir POR QUÉ no hay mockup. Antes se omitía el botón y ya: cuatro
+             anotados seguidos sin él se leen como «los mockups no aparecen»,
+             cuando la verdad es que un pendiente anotado es una nota, no una
+             propuesta — el mockup lo produce la corrida que lo ataca. Callar
+             una ausencia esperada la convierte en un fallo aparente. */
+          ? `<div class="tasa" style="margin-top:2px">sin mockup todavía · lo dibuja «${derivado ? "Construir" : "Hacer"}»</div>`
+          : ""}
       </span>
       ${p.mockup ? `<button class="mini" data-vm="${esc(p.mockup)}" data-pid="${esc(p.id)}">Ver mockup</button>` : ""}
       ${derivado
@@ -943,9 +951,7 @@ $("#btn-add-pendiente").onclick = () => {
 };
 $("#nuevo-pendiente").onkeydown = (e) => { if (e.key === "Enter") $("#btn-add-pendiente").click(); };
 
-/* Galería de mockups: el catálogo de propuestas de la casa. Se carga al abrir,
-   como visitantes — lee el disco, no hace falta pagarlo en cada arranque. */
-let mockupsCargados = false;
+/* Galería de mockups: el catálogo de propuestas de la casa. */
 async function cargarMockups() {
   const cont = $("#mockups");
   try {
@@ -979,9 +985,11 @@ async function cargarMockups() {
     cont.innerHTML = `<div class="warnbox">No se pudo leer la carpeta de mockups.</div>`;
   }
 }
-$("#d-mockups").addEventListener("toggle", () => {
-  if ($("#d-mockups").open && !mockupsCargados) { mockupsCargados = true; cargarMockups(); }
-});
+/* Se carga al ARRANCAR, no al abrir. Cargándola al abrir, el titular decía «—»
+   y una sección que no dice qué guarda no se abre nunca: para saber si había
+   propuestas sin decidir había que abrirla, que es justo lo que el titular con
+   dato viene a evitar. Cuesta una lectura de directorio y un `git status`. */
+cargarMockups();
 
 /* Visitantes. Se carga al ABRIR la sección, no al arrancar: es la única llamada
    del panel que sale a la red, y pagarla en cada refresco para un dato que se
