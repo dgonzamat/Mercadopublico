@@ -5,7 +5,11 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 // Canal de contacto. El email se expone como mailto — cambialo por un alias
 // del dominio (p. ej. contacto@uapcodex.org) si preferís no exponer el gmail.
-const CONTACT_EMAIL = "dgonzamat@gmail.com";
+// Cuenta del PROYECTO, no personal: es la dirección desde la que se responde
+// a investigadores y medios, así que la web y el correo saliente tienen que
+// decir lo mismo. Con la personal, quien recibía respuesta veía una dirección
+// y quien entraba al sitio otra.
+const CONTACT_EMAIL = "uapcodex2026@gmail.com";
 
 export const metadata = pageMeta({
   title: "Contact — corrections and sources",
