@@ -1,0 +1,82 @@
+{
+  "id": "skinny-bob-abbott-2026",
+  "num": 333,
+  "name": "Skinny Bob · reaparición viral con indicios de IA generativa (2026)",
+  "name_en": "Skinny Bob · viral revival with signs of generative AI (2026)",
+  "year_start": 2011,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.895,
+    "lng": -77.025,
+    "place": "EE.UU. — video viral en YouTube, sin origen institucional verificado",
+    "place_en": "USA — viral YouTube video, no verified institutional origin"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 8,
+  "mundanoType": "fraude",
+  "posterior": {
+    "mundano_natural": 0.88,
+    "humana_clasificada": 0,
+    "adversaria": 0,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0,
+    "indet": 0.10
+  },
+  "summary": "En mayo de 2011 circuló online un video granulado, atribuido a archivo militar de EE.UU. de los años 40-50, que mostraba a un ser gris extremadamente delgado —apodado 'Skinny Bob'— parpadeando y moviéndose. Nadie reclamó su autoría en 13 años. En 2025 el autoproclamado ex analista de inteligencia del Ejército Edward 'Eddie' Abbott declaró haber visto el metraje completo sin editar dentro de un SCIF en 2008, sin verificación independiente. En mayo-julio de 2026 el canal de YouTube 'qtecqot' subió tres videos nuevos —'recovery footage' del mismo ser y un recorrido por el interior de una nave— con estructura de juego de realidad alternativa. Un análisis técnico independiente (banco de verificación con ExifTool, C2PA, SynthID y FFmpeg) encontró brillos especulares fijos mientras la geometría se mueve, una falla característica de generación por IA, además de incoherencias de fondo — evidencia fuerte de fabricación sintética disfrazada de película clasificada de 8mm.",
+  "summary_en": "In May 2011, a grainy video attributed to 1940s-50s U.S. military archives circulated online, showing an extremely thin grey being —nicknamed 'Skinny Bob'— blinking and moving. No one claimed authorship for 13 years. In 2025, self-described former Army intelligence analyst Edward 'Eddie' Abbott stated he had seen the complete, unedited footage inside a SCIF in 2008, with no independent verification. Between May and July 2026, the YouTube channel 'qtecqot' uploaded three new videos —'recovery footage' of the same being and a walkthrough of a craft's interior— structured as an alternate-reality game. An independent technical analysis (a verification bench using ExifTool, C2PA, SynthID and FFmpeg) found specular highlights that stay fixed while underlying geometry moves, a signature generative-AI failure, plus background incoherence — strong evidence of synthetic fabrication disguised as classified 8mm film.",
+  "patterns": [
+    "8d"
+  ],
+  "category": "document",
+  "whatHappened": "El video conocido como 'Skinny Bob' apareció en internet a inicios de mayo de 2011: metraje granulado en blanco y negro, presentado por su subidor como material de archivo militar estadounidense de los años 40 y 50, que mostraba a un ser de apariencia gris —extremadamente delgado, calvo, cabeza desproporcionada, boca estrecha y ojos grandes que parpadean— moviéndose dentro de lo que parecía una instalación cerrada. La pieza circuló ampliamente en la comunidad ufológica; algunos especularon que era material promocional de una película o serie no anunciada. En trece años, nadie se atribuyó su autoría ni logró desmentirla de forma técnica concluyente, y el video quedó archivado en el limbo habitual de 'ni confirmado ni refutado' que caracteriza a buena parte del género found-footage sobre ovnis.\n\nEn 2025 el caso adquirió una capa testimonial. Edward 'Eddie' Abbott, quien se presenta como ex analista de inteligencia del Ejército de EE.UU. (2007-2009, con despliegue en Irak), declaró en entrevistas que vio el video de Skinny Bob completo y sin editar dentro de un SCIF (Sensitive Compartmented Information Facility) en 2008: a color, con el ser —al que describe como 'un piloto'— moviéndose, parpadeando y, en su relato, vivo. Sostiene además que partes de ese metraje ya no circulan en la versión pública. Abbott suma a esa afirmación otros relatos no verificados: haber fotografiado un objeto en forma de V y haber participado en misiones de recuperación de artefactos en Medio Oriente ligadas a un supuesto programa híbrido. Ninguna de sus credenciales, su acceso declarado ni el material que describe cuenta con corroboración documental independiente.\n\nEntre el 25 de mayo y la última semana de julio de 2026, el canal de YouTube 'qtecqot' subió tres videos nuevos presentados como continuación del material original: 'recovery footage' del mismo ser, símbolos no identificados, el interior de una nave y personal militar junto a un objeto, con fechas internas atribuidas a un rango de 1942 a 1957. Las descripciones del canal narran los envíos como entregas numeradas de un archivo mayor, mantienen el anonimato del subidor y replican deliberadamente la estética de película clasificada de 8mm del video de 2011 — una estructura de juego de realidad alternativa (ARG) más que de una filtración puntual. Cobertura mediática especuló, sin evidencia sólida, con una conexión entre esta reaparición y la ola reciente de avistamientos de orbes y drones no identificados en Brasil, Miami, Japón, Finlandia, Indonesia y California durante el mismo período.",
+  "whatHappened_en": "The video known as 'Skinny Bob' appeared online in early May 2011: grainy black-and-white footage, presented by its uploader as U.S. military archive material from the 1940s and 1950s, showing a grey-like being —extremely thin, bald, disproportionately large head, narrow mouth, large blinking eyes— moving inside what appeared to be an enclosed facility. The clip circulated widely in the UFO community; some speculated it was promotional material for an unannounced film or series. In thirteen years, no one claimed authorship or produced a technically conclusive debunking, and the video sat in the usual 'neither confirmed nor refuted' limbo that characterizes much of the found-footage UFO genre.\n\nIn 2025 the case gained a testimonial layer. Edward 'Eddie' Abbott, who presents himself as a former U.S. Army intelligence analyst (2007-2009, with a deployment to Iraq), stated in interviews that he saw the complete, unedited Skinny Bob video inside a SCIF (Sensitive Compartmented Information Facility) in 2008: in color, with the being —whom he describes as 'a pilot'— moving, blinking and, in his account, alive. He further claims that parts of that footage no longer circulate in the public version. Abbott adds other unverified accounts to that claim: photographing a V-shaped object and taking part in artifact-recovery missions in the Middle East tied to an alleged hybrid program. None of his stated credentials, claimed access, or the material he describes has independent documentary corroboration.\n\nBetween May 25 and the last week of July 2026, the YouTube channel 'qtecqot' uploaded three new videos presented as a continuation of the original material: 'recovery footage' of the same being, unidentified symbols, the interior of a craft, and military personnel next to an object, with internal dates attributed to a range from 1942 to 1957. The channel's descriptions frame the uploads as numbered installments of a larger archive, preserve the uploader's anonymity, and deliberately replicate the 2011 video's classified 8mm-film aesthetic — an alternate-reality game (ARG) structure rather than a one-off leak. Media coverage speculated, without solid evidence, about a connection between this revival and the recent wave of unidentified orb and drone sightings in Brazil, Miami, Japan, Finland, Indonesia and California during the same period.",
+  "whyMatters": "El aporte más sólido a este caso no es testimonial sino técnico. Un análisis independiente ensambló un banco de verificación completo sobre los nuevos videos de qtecqot: yt-dlp para preservar resolución y framerate nativos, ExifTool para metadata de contenedor, verificación de manifiesto C2PA de procedencia de contenido, el detector SynthID de Google, FFmpeg para examinar grano y brillos especulares fotograma a fotograma, y búsqueda inversa de overlays comerciales de daño de película. La mayoría de esas pruebas resultaron inconclusas por diseño del propio material —YouTube elimina la mayor parte de la metadata de contenedor en el re-upload, la ausencia de manifiesto C2PA no prueba nada, y SynthID solo detecta generadores de Google, dejando fuera a Kling, Runway, Veo o modelos locales—. Pero el análisis a nivel de píxel sí produjo una señal fuerte: brillos especulares que permanecen fijos mientras la geometría subyacente se mueve, una falla de generación característica de los modelos de video por IA actuales, junto con incoherencias de fondo —conos repetidos, follaje que muta entre fotogramas, una marcha corporal poco plausible—. La conclusión razonable es que el material nuevo es fabricación sintética disimulada bajo el filtro estético de película clasificada de los años 60.\n\nPara el corpus, el caso importa como el primer ejemplo catalogado de un patrón que promete repetirse: la reactivación de un hoax viral antiguo mediante herramientas de generación de video por IA, apuntalada por un testimonio de 'insider' sin verificación que llega justo antes de que el material nuevo empiece a circular. La secuencia —declaración de Abbott en 2025, subidas de qtecqot en 2026, estructura ARG con lanzamientos numerados— sugiere que ambas piezas se retroalimentan más que coincidir de forma independiente, y encaja en la tradición paralela al corpus institucional que cataloga el patrón 8d: afirmaciones de insider y documentos de procedencia dudosa —como la 'confesión' de Boyd Bushman o los papeles MJ-12— que elevan el interés público sin aportar evidencia verificable sobre la naturaleza del fenómeno. El posterior queda concentrado en fabricación mediática (mundano_natural), con una cola de indeterminación que reconoce la imposibilidad de un veredicto técnico definitivo sobre el video original de 2011, cuya autoría sigue sin resolverse trece años después.",
+  "whyMatters_en": "The strongest contribution to this case is not testimonial but technical. An independent analysis assembled a full verification bench on the new qtecqot videos: yt-dlp to preserve native resolution and framerate, ExifTool for container metadata, a C2PA content-provenance manifest check, Google's SynthID detector, FFmpeg to examine grain and specular highlights frame by frame, and reverse image search for commercial film-damage overlays. Most of those tests were inconclusive by the material's own design —YouTube strips most container metadata on re-upload, the absence of a C2PA manifest proves nothing, and SynthID only detects Google's own generators, missing Kling, Runway, Veo or local models. But the pixel-level analysis did produce a strong signal: specular highlights that stay fixed while the underlying geometry shifts, a generation failure characteristic of current AI video models, along with background incoherence —repeated cones, foliage that morphs between frames, an implausible body gait. The reasonable conclusion is that the new material is synthetic fabrication disguised under the aesthetic filter of 1960s classified film.\n\nFor the corpus, the case matters as the first cataloged example of a pattern likely to recur: the reactivation of an old viral hoax through AI video-generation tools, propped up by an unverified 'insider' testimony that surfaces just before the new material starts circulating. The sequence —Abbott's 2025 statement, qtecqot's 2026 uploads, an ARG structure with numbered installments— suggests the two pieces feed each other rather than coincide independently, and it fits the tradition running parallel to the institutional corpus that pattern 8d catalogs: insider claims and documents of doubtful provenance —like Boyd Bushman's 'deathbed confession' or the MJ-12 papers— that raise public interest without delivering verifiable evidence about the phenomenon's nature. The posterior stays concentrated on media fabrication (mundano_natural), with an indeterminacy tail that acknowledges the impossibility of a definitive technical verdict on the original 2011 video, whose authorship remains unresolved thirteen years on.",
+  "evidence": [
+    "Video original 'Skinny Bob' subido en mayo de 2011, atribuido sin verificar a archivo militar de EE.UU. de los años 40-50; autoría nunca reclamada en 13 años",
+    "Declaraciones de Edward 'Eddie' Abbott (2025), autoproclamado ex analista de inteligencia del Ejército, afirmando haber visto el metraje completo en un SCIF en 2008 — sin corroboración documental independiente de su servicio o acceso",
+    "Tres subidas del canal de YouTube 'qtecqot' (25 mayo, 15 junio y última semana de julio de 2026) con estructura de juego de realidad alternativa y fechas internas atribuidas a 1942-1957",
+    "Banco de verificación técnica independiente (yt-dlp, ExifTool, chequeo C2PA, SynthID, análisis de grano y brillos especulares con FFmpeg) sobre el material de 2026",
+    "Hallazgo de brillos especulares fijos mientras la geometría subyacente se mueve — falla de generación característica de video por IA — más incoherencias de fondo entre fotogramas",
+    "Especulación mediática, sin evidencia sólida, vinculando el material con la ola de avistamientos de orbes/drones en Brasil, Miami, Japón, Finlandia, Indonesia y California (2026)"
+  ],
+  "evidence_en": [
+    "Original 'Skinny Bob' video uploaded in May 2011, attributed without verification to 1940s-50s U.S. military archives; authorship never claimed in 13 years",
+    "Statements by Edward 'Eddie' Abbott (2025), a self-described former Army intelligence analyst, claiming to have seen the complete footage in a SCIF in 2008 — with no independent documentary corroboration of his service or access",
+    "Three uploads from the YouTube channel 'qtecqot' (May 25, June 15, and the last week of July 2026) structured as an alternate-reality game, with internal dates attributed to 1942-1957",
+    "Independent technical verification bench (yt-dlp, ExifTool, C2PA check, SynthID, grain and specular-highlight analysis via FFmpeg) applied to the 2026 material",
+    "Finding of specular highlights staying fixed while underlying geometry moves — a generation failure characteristic of AI video — plus background incoherence between frames",
+    "Media speculation, without solid evidence, linking the material to the wave of orb/drone sightings in Brazil, Miami, Japan, Finland, Indonesia and California (2026)"
+  ],
+  "sources": [
+    {
+      "name": "IBTimes UK — New Skinny Bob Videos Trigger UFO Panic After Alleged Leak Revives Long-Buried Alien Claims",
+      "url": "https://www.ibtimes.co.uk/skinny-bob-ufo-videos-resurface-alien-theories-1812042"
+    },
+    {
+      "name": "Singhfinity — A verification bench that returns nothing on the new Skinny Bob clips",
+      "url": "https://singhfinity.com/insights/articles/a-verification-bench-that-returns-nothing-on-the-new-skinny-bob-clips"
+    },
+    {
+      "name": "Ovniologia — Whistleblower Claims Skinny Bob is Real (Edward Abbott)",
+      "url": "https://ovniologia.com.br/2025/07/whistleblower-claims-skinny-bob-is-real.html"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "IBTimes UK — New Skinny Bob Videos Trigger UFO Panic After Alleged Leak Revives Long-Buried Alien Claims",
+      "url": "https://www.ibtimes.co.uk/skinny-bob-ufo-videos-resurface-alien-theories-1812042"
+    },
+    {
+      "name": "Singhfinity — A verification bench that returns nothing on the new Skinny Bob clips",
+      "url": "https://singhfinity.com/insights/articles/a-verification-bench-that-returns-nothing-on-the-new-skinny-bob-clips"
+    },
+    {
+      "name": "Ovniologia — Whistleblower Claims Skinny Bob is Real (Edward Abbott)",
+      "url": "https://ovniologia.com.br/2025/07/whistleblower-claims-skinny-bob-is-real.html"
+    }
+  ]
+}
