@@ -1,0 +1,83 @@
+{
+  "id": "bigelow-oval-office-2026",
+  "num": 334,
+  "name": "Bigelow · el guion de disclosure que le entregó a Trump",
+  "name_en": "Bigelow · the disclosure script he handed to Trump",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8977,
+    "lng": -77.0365,
+    "place": "Salón Oval, Casa Blanca, Washington D.C. (reunión del 6 de febrero de 2026, revelada el 5 de agosto)",
+    "place_en": "Oval Office, White House, Washington D.C. (Feb. 6, 2026 meeting, revealed Aug. 5)"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 15,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.22,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.20,
+    "nohumano_abierto": 0.06,
+    "indet": 0.42
+  },
+  "summary": "El 5 de agosto de 2026, el empresario Robert Bigelow —financista histórico de NIDS, BAASS y el contrato AAWSAP del Pentágono, ya documentado en este corpus— reveló que el 6 de febrero de 2026 pasó más de una hora a solas con Trump en el Salón Oval, con siete pilas de documentos sobre el escritorio Resolute, y le entregó una frase textual para anunciar que 'una presencia inteligente no-humana ha estado en la Tierra durante mucho tiempo'. Afirmó directamente que EE.UU. recuperó naves no-humanas y que el material pasó a contratistas privados para ingeniería inversa. Trump nunca pronunció esa frase. La reunión en sí está corroborada por varios medios; el contenido de lo que Bigelow dice haber mostrado, no.",
+  "summary_en": "On August 5, 2026, entrepreneur Robert Bigelow —the historical funder of NIDS, BAASS and the Pentagon's AAWSAP contract, already documented in this corpus— revealed that on February 6, 2026 he spent over an hour alone with Trump in the Oval Office, with seven stacks of documents on the Resolute desk, and handed him exact wording to announce that 'a non-human intelligent presence has been on Earth for a very long time.' He directly claimed the U.S. recovered non-human craft and that the material went to private contractors for reverse engineering. Trump never said the line. The meeting itself is corroborated by several outlets; the content of what Bigelow says he showed is not.",
+  "patterns": [
+    "8q",
+    "8n"
+  ],
+  "category": "document",
+  "whatHappened": "El 5 de agosto de 2026, Robert Bigelow —el mayor mecenas privado histórico de la investigación UAP en Estados Unidos, fundador de NIDS (1995) y BAASS (2007), y contratista del programa AAWSAP de 22 millones de dólares financiado por la Defense Intelligence Agency, ya documentado en este corpus a través de los casos AAWSAP/Skinwalker y NYT/AATIP— hizo una revelación pública de un nivel de detalle inusual incluso para él. En entrevistas con George Knapp (KLAS-TV, Las Vegas) y otros medios, Bigelow contó que el 6 de febrero de 2026 sostuvo una reunión de aproximadamente una hora y cuarto con el presidente Donald Trump en el Salón Oval, con la presencia del Staff Secretary de la Casa Blanca, William Scharf, tras meses preparando siete informes sobre temas distintos —uno específicamente dedicado a UAP, inteligencia extraterrestre y disclosure—. Según su relato, colocó las siete pilas de documentos sobre el escritorio Resolute y Trump instruyó a su personal que las dejaran ahí al retirarse.\n\nEl contenido de la afirmación es directo: cuando se le preguntó si Estados Unidos recuperó naves no-humanas, Bigelow respondió 'Yes. Yes. For sure.' Sostuvo que ese material fue transferido a contratistas aeroespaciales privados para su examen e ingeniería inversa, aunque se negó a nombrar empresas o instalaciones específicas. Como parte de la reunión, entregó a Trump una frase textual, redactada para ser breve y decirse de forma informal —por ejemplo, subiendo al Air Force One, sin rueda de prensa ni preguntas inmediatas—: 'Una presencia inteligente no-humana ha estado en la Tierra durante mucho tiempo, usando naves con capacidades completamente más allá de las nuestras y de la física humana.' Para reforzar la petición, Bigelow incluyó en su briefing casos históricos con testigos considerados creíbles: la ola belga de 1989-1990, las Luces de Phoenix y los sobrevuelos sobre Washington D.C. de 1952.\n\nTrump nunca pronunció esa frase, ni en el Air Force One ni en ningún otro lugar público conocido. La respuesta real del presidente a la reunión no se ha hecho pública, y el paradero actual de los siete informes es desconocido. No existe evidencia física asociada a la afirmación central —ni fotografías, ni informes técnicos, ni nombres verificables de contratistas—, y ningún otro asistente a la reunión (aparte de Scharf, cuya versión no se ha reportado de forma independiente) ha corroborado el contenido más allá de confirmar que el encuentro ocurrió.",
+  "whatHappened_en": "On August 5, 2026, Robert Bigelow —the largest historical private funder of UAP research in the United States, founder of NIDS (1995) and BAASS (2007), and contractor for the Defense Intelligence Agency's $22 million AAWSAP program, already documented in this corpus through the AAWSAP/Skinwalker and NYT/AATIP cases— made a public disclosure of unusual detail even by his own standards. In interviews with George Knapp (KLAS-TV, Las Vegas) and other outlets, Bigelow said that on February 6, 2026 he held a roughly hour-and-a-quarter meeting with President Donald Trump in the Oval Office, with White House Staff Secretary William Scharf present, after months preparing seven reports on separate subjects —one specifically devoted to UAP, extraterrestrial intelligence and disclosure. By his account, he placed the seven stacks of documents across the Resolute desk, and Trump instructed staff to leave them there when they left the room.\n\nThe content of the claim is direct: when asked whether the United States had recovered non-human craft, Bigelow answered, 'Yes. Yes. For sure.' He stated that material was transferred to private aerospace contractors for examination and reverse engineering, though he declined to name specific companies or facilities. As part of the meeting, he gave Trump exact wording, drafted to be brief and delivered informally —for example, while boarding Air Force One, with no press conference and no immediate questions: 'A non-human intelligent presence has been on Earth for a very long time using spacecraft and with performances completely beyond our capabilities and our human physics.' To reinforce the request, Bigelow's briefing referenced historical cases with witnesses generally considered credible: the 1989-1990 Belgian wave, the Phoenix Lights, and the 1952 Washington D.C. overflights.\n\nTrump never delivered that line, not on Air Force One nor anywhere else publicly known. The president's actual response to the meeting has not been made public, and the current location of the seven reports is unknown. There is no physical evidence tied to the central claim —no photographs, no technical reports, no verifiable contractor names— and no other attendee (besides Scharf, whose account has not been independently reported) has corroborated the content beyond confirming the meeting took place.",
+  "whyMatters": "Bigelow no es un declarante cualquiera: es la bisagra privada documentada del corpus entre el capital privado y el contrato de inteligencia AAWSAP, con una relación real de tres décadas con la investigación institucional del fenómeno. Esa trayectoria eleva el peso de su palabra por encima de un testimonio anónimo, pero no lo convierte en evidencia: la afirmación específica de esta semana —naves recuperadas, ingeniería inversa activa— no viene acompañada de un solo documento, nombre o dato verificable nuevo. Es, otra vez, autoridad sin material.\n\nEl caso encaja en dos patrones ya catalogados en el corpus. El primero es la red del ecosistema de divulgación (`8q`): Bigelow opera dentro de la misma infraestructura político-mediática —Knapp, KLAS, la prensa especializada en UAP— que ha sostenido la presión pública por disclosure desde 2017. El segundo es la ambigüedad estratégica (`8n`): la secuencia de 'entrega de material + silencio presidencial' —Trump ni confirmó ni desmintió, y el destino de los informes se desconoce— reproduce exactamente el patrón de liberación parcial sin confirmación que el corpus ya identifica en otros episodios de disclosure.\n\nLa calibración del posterior refleja esa doble naturaleza. La masa en `nohumano_encubierto` (0.20) reconoce que la afirmación específica de Bigelow —un Estado que posee y oculta material no-humano— es precisamente esa categoría, y su historial reduce (sin eliminar) el descuento que aplicaría a un declarante sin trayectoria. La masa dominante en `indet` (0.42) refleja la imposibilidad de verificar el contenido sin los documentos o contratistas que Bigelow se niega a identificar. El `mundanoType: misid` —no `fraude`— reconoce que Bigelow ha declarado públicamente su convicción personal desde 2017 ('absolutamente convencido'); lo más plausible, si la afirmación es errónea, es que refleje una creencia sincera construida sobre programas clasificados convencionales malinterpretados, no un engaño deliberado. Lo que el corpus debe seguir no es la declaración sino si los siete informes —o los contratistas que Bigelow protege— llegan a hacerse públicos.",
+  "whyMatters_en": "Bigelow is not just another claimant: he is the corpus's documented private hinge between capital and the AAWSAP intelligence contract, with a real three-decade relationship to institutional research into the phenomenon. That track record raises the weight of his word above an anonymous testimony, but it does not turn it into evidence: this week's specific claim —recovered craft, active reverse engineering— comes with not a single new verifiable document, name, or data point. It is, again, authority without material.\n\nThe case fits two patterns already cataloged in the corpus. The first is the disclosure-ecosystem network (`8q`): Bigelow operates within the same political-media infrastructure —Knapp, KLAS, specialized UAP press— that has sustained public pressure for disclosure since 2017. The second is strategic ambiguity (`8n`): the sequence of 'material handoff + presidential silence' —Trump neither confirmed nor denied, and the reports' fate is unknown— reproduces exactly the pattern of partial release without confirmation the corpus already identifies in other disclosure episodes.\n\nThe posterior calibration reflects that dual nature. The mass on `nohumano_encubierto` (0.20) acknowledges that Bigelow's specific claim —a state that possesses and conceals non-human material— is precisely that category, and his track record reduces, without eliminating, the discount that would apply to a claimant with no history. The dominant mass on `indet` (0.42) reflects the impossibility of verifying the content without the documents or contractors Bigelow declines to identify. The `mundanoType: misid` —not `fraude`— acknowledges that Bigelow has publicly stated his personal conviction since 2017 ('absolutely convinced'); the most plausible reading, if the claim is wrong, is that it reflects sincere belief built on misread conventional classified programs, not deliberate deception. What the corpus should track is not the statement but whether the seven reports —or the contractors Bigelow shields— ever become public.",
+  "evidence": [
+    "Revelación pública de Robert Bigelow (5 agosto 2026) en entrevistas con George Knapp (KLAS-TV) y otros medios",
+    "Reunión en el Salón Oval documentada: 6 de febrero de 2026, ~75-80 minutos, con el Staff Secretary William Scharf presente",
+    "Siete pilas de documentos sobre el escritorio Resolute; uno específicamente sobre UAP/inteligencia extraterrestre/disclosure",
+    "Frase textual entregada a Trump para anunciar presencia no-humana, diseñada para decirse sin rueda de prensa",
+    "Afirmación directa de recuperación de naves no-humanas y transferencia a contratistas privados, sin nombrarlos",
+    "Cero evidencia física, documental o corroboración independiente del contenido más allá de que la reunión ocurrió"
+  ],
+  "evidence_en": [
+    "Robert Bigelow's public revelation (August 5, 2026) in interviews with George Knapp (KLAS-TV) and other outlets",
+    "Documented Oval Office meeting: February 6, 2026, ~75-80 minutes, with Staff Secretary William Scharf present",
+    "Seven stacks of documents on the Resolute desk; one specifically on UAP/extraterrestrial intelligence/disclosure",
+    "Exact wording handed to Trump to announce a non-human presence, designed to be delivered without a press conference",
+    "Direct claim of recovered non-human craft and transfer to private contractors, without naming them",
+    "Zero physical or documentary evidence, and no independent corroboration of the content beyond the meeting occurring"
+  ],
+  "sources": [
+    {
+      "name": "Above the Norm News — Robert Bigelow Says He Put A Presidential UAP Confirmation Plan Directly In Front Of Trump (5 agosto 2026)",
+      "url": "https://www.abovethenormnews.com/2026/08/05/robert-bigelow-recovered-non-human-craft/"
+    },
+    {
+      "name": "8NewsNow / Mystery Wire — UFO research benefactor Robert Bigelow says he encouraged President Trump toward alien disclosure",
+      "url": "https://www.8newsnow.com/mystery-wire/ufos-aliens-space/ufo-research-benefactor-robert-bigelow-says-he-encouraged-president-trump-toward-alien-disclosure/"
+    },
+    {
+      "name": "USA Herald — Bigelow Says He Handed Trump the Exact Words for Alien Disclosure",
+      "url": "https://usaherald.com/bigelow-says-he-handed-trump-the-exact-words-for-alien-disclosure-so-why-hasnt-the-president-said-them/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Above the Norm News — Robert Bigelow Says He Put A Presidential UAP Confirmation Plan Directly In Front Of Trump (Aug. 5, 2026)",
+      "url": "https://www.abovethenormnews.com/2026/08/05/robert-bigelow-recovered-non-human-craft/"
+    },
+    {
+      "name": "8NewsNow / Mystery Wire — UFO research benefactor Robert Bigelow says he encouraged President Trump toward alien disclosure",
+      "url": "https://www.8newsnow.com/mystery-wire/ufos-aliens-space/ufo-research-benefactor-robert-bigelow-says-he-encouraged-president-trump-toward-alien-disclosure/"
+    },
+    {
+      "name": "USA Herald — Bigelow Says He Handed Trump the Exact Words for Alien Disclosure",
+      "url": "https://usaherald.com/bigelow-says-he-handed-trump-the-exact-words-for-alien-disclosure-so-why-hasnt-the-president-said-them/"
+    }
+  ]
+}
