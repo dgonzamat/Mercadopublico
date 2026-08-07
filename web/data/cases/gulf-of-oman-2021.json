@@ -1,0 +1,79 @@
+{
+  "id": "gulf-of-oman-2021",
+  "num": 339,
+  "name": "Golfo de Omán · las 'esferas frías' que esquivaron el cañón de un AC-130",
+  "name_en": "Gulf of Oman · the 'cold orbs' that dodged an AC-130's cannon",
+  "year_start": 2021,
+  "country": "OM",
+  "country_name": "Omán",
+  "flag": "🇴🇲",
+  "location": {
+    "lat": 24.85,
+    "lng": 58.75,
+    "place": "Golfo de Omán, cerca de las coordenadas MGRS 40REN6 (aguas internacionales/territoriales)",
+    "place_en": "Gulf of Oman, near MGRS coordinates 40REN6 (international/territorial waters)"
+  },
+  "tier": "S",
+  "epistemicStatus": "documented",
+  "probability": 65,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.20,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.10,
+    "nohumano_encubierto": 0.15,
+    "nohumano_abierto": 0.10,
+    "indet": 0.30
+  },
+  "summary": "La noche del 8 de septiembre de 2021, un avión de ataque AC-130 de las Fuerzas de Operaciones Especiales de EE.UU. observó unas 25 instancias de fenómenos aéreos no identificados durante un ejercicio de fuego real en el Golfo de Omán. El sensor electro-óptico/infrarrojo captó 'esferas frías' —sin firma térmica propia— que huyeron sin cambiar de altitud justo cuando el cañón de 105mm abrió fuego, volaron en formaciones coordinadas 'como delfines nadando en grupo', y alcanzaron hasta 1.300 mph sin medio de propulsión visible. El video de respaldo se corrompió por una falla del grabador de a bordo. El reporte de inteligencia de la Fuerza Aérea (IIR), desclasificado en 2026 vía PURSUE, lo cataloga explícitamente como 'no evaluado de forma definitiva'.",
+  "summary_en": "On the night of September 8, 2021, a U.S. Special Operations Forces AC-130 gunship observed roughly 25 instances of unidentified aerial phenomena during a live-fire exercise in the Gulf of Oman. The electro-optical/infrared sensor captured 'cold orbs' —with no thermal signature of their own— that fled without changing altitude just as the 105mm cannon opened fire, flew in coordinated formations 'like dolphins swimming in a pod,' and reached up to 1,300 mph with no visible means of propulsion. The backup video was corrupted by an onboard recorder failure. The Air Force intelligence report (IIR), declassified in 2026 via PURSUE, explicitly catalogs it as 'not finally evaluated.'",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D101 — Reporte de Información de Inteligencia (IIR) de AFSOC, Golfo de Omán (publicado 27 abr 2022)",
+      "title_en": "DOW-UAP-D101 — AFSOC Intelligence Information Report (IIR), Gulf of Oman (published Apr 27, 2022)",
+      "source": "US Air Force Special Operations Command / AFSOC A2OX (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf"
+    }
+  ],
+  "whatHappened": "En la noche del 8 de septiembre de 2021, una tripulación de las Fuerzas de Operaciones Especiales de EE.UU. (USSOF) a bordo de un cañonero AC-130 realizaba un ejercicio de fuego real en el Golfo de Omán, en las cercanías de las coordenadas MGRS 40REN6. El avión lanzó una bengala activada por agua para usarla como blanco simulado y entró en órbita a su alrededor mientras el Oficial de Sistemas de Combate (CSO) hacía barridos colaterales con el sensor electro-óptico/infrarrojo (EO/IR) de la aeronave. Al reorientar el sensor en modo infrarrojo hacia la bengala, el CSO observó dos esferas de unos 1,2 metros de diámetro, 'frías' —sin firma térmica propia detectable— suspendidas entre 0 y 6 metros sobre la superficie del agua, estacionarias sobre la bengala durante unos 15 segundos. Pasado ese tiempo, el CSO disparó el cañón de 105mm de la aeronave. En el breve retardo entre el disparo y el retroceso del arma, observó que el par de esferas se alejó rápidamente de la bengala y salió del campo del sensor sin cambiar de altitud — una reacción inmediata a la detonación.\n\nDurante el resto de la misión, la tripulación registró aproximadamente 25 instancias adicionales de estos objetos, visibles en infrarrojo tanto en modo 'blanco-caliente' como 'negro-caliente'. Dos de ellos volaron en formación suelta pero coordinada, subiendo y bajando de altitud 'como una ola' mientras maniobraban alrededor, sobre y debajo el uno del otro — el reporte cita textualmente un comentario de la fuente: 'sabían que estaban volando juntos', en una analogía explícita con el comportamiento social de los delfines. Otros objetos fueron vistos en formación de tres, y por separado maniobrando de forma errática y agresiva. La tripulación intentó guardar la totalidad del metraje EO/IR, pero el grabador de video digital (DVR) de la aeronave 'falló inexplicablemente' y los datos quedaron corruptos. El CSO calculó las velocidades usando la herramienta táctica (TACTOOL) de a bordo: la velocidad máxima de maniobra observada fue de 1.300 millas por hora, y la mínima de 250 mph. No se observó ningún medio de propulsión visible en ninguno de los objetos.\n\nEl reporte se formalizó como un Informe de Información de Inteligencia (IIR) de la Fuerza Aérea, clasificado originalmente SECRETO//NOFORN, publicado el 27 de abril de 2022 —más de siete meses después del incidente— y distribuido a una lista extensa de comandos (CENTCOM, SOCOM, DIA, NGA, ONI, FBI, CIA, entre decenas más). Fue coordinado con la Agregaduría de Defensa de EE.UU. en Mascate y la célula de inteligencia de SOCCENT 'sin comentarios'. El documento se desclasificó formalmente para revisión obligatoria (MDR) el 26 de marzo de 2026 y se publicó vía PURSUE en agosto de ese año. Las seis grabaciones de video adjuntas al reporte original, sin embargo, permanecen bajo la misma clasificación SECRETO//NOFORN y no forman parte de esta liberación.",
+  "whatHappened_en": "On the night of September 8, 2021, a U.S. Special Operations Forces (USSOF) crew aboard an AC-130 gunship was conducting a live-fire exercise in the Gulf of Oman, in the vicinity of MGRS coordinates 40REN6. The aircraft dropped a water-activated flare to use as a mock target and entered an orbit around it while the Combat Systems Officer (CSO) conducted collateral scans with the aircraft's electro-optical/infrared (EO/IR) sensor. When the CSO slewed the sensor in IR mode back to the flare, they observed two roughly four-foot-diameter 'cold' orbs —with no detectable thermal signature of their own— hovering between 0 and 20 feet above the water's surface, stationary over the flare for about 15 seconds. After that time passed, the CSO fired the aircraft's 105mm cannon. In the brief delay between trigger pull and the weapon's recoil, the CSO observed the pair of orbs rapidly fly away from the flare and out of the sensor's field of view without changing altitude —an immediate reaction to the detonation.\n\nOver the rest of the mission, the crew logged approximately 25 additional instances of these objects, visible in infrared in both white-hot and black-hot polarity. Two flew in a loose but coordinated formation, rising and falling in altitude 'like a wave' while maneuvering around, over, and under each other — the report directly quotes a source comment: 'they knew they were flying together,' explicitly likening it to dolphins' social behavior. Other objects were seen in a formation of three, and separately maneuvering erratically and aggressively. The crew attempted to save the entirety of the EO/IR footage, but the aircraft's Digital Video Recorder (DVR) 'inexplicably failed' and the data became corrupted. The CSO calculated the objects' speeds using the aircraft's onboard tactical tool (TACTOOL): maximum observed maneuvering speed reached 1,300 miles per hour, and minimum observed maneuvering speed was 250 mph. No means of propulsion was observed on any of the objects.\n\nThe report was formalized as an Air Force Intelligence Information Report (IIR), originally classified SECRET//NOFORN, published April 27, 2022 —more than seven months after the incident— and distributed to an extensive list of commands (CENTCOM, SOCOM, DIA, NGA, ONI, FBI, CIA, among dozens more). It was coordinated with the U.S. Defense Attaché Office in Muscat and the SOCCENT intelligence cell 'without comment.' The document was formally declassified for mandatory review (MDR) on March 26, 2026 and released via PURSUE that August. The six video recordings attached to the original report, however, remain under the same SECRET//NOFORN classification and are not part of this release.",
+  "whyMatters": "El Golfo de Omán encaja en Tier S por la misma razón que Nimitz o Aguadilla: no es testimonio suelto, es un registro de sensor instrumental —el EO/IR de un AC-130, con captura en dos polaridades térmicas— corroborado por múltiples tripulantes militares y cuantificado con una herramienta táctica formal. El propio Departamento de Guerra lo etiqueta como 'información de inteligencia, no evaluada de forma definitiva': ni lo confirma como fenómeno anómalo ni lo cierra como explicado, que es precisamente la categoría más honesta y menos citada en el debate público.\n\nTres elementos concretos sostienen el peso analítico del caso. Primero, la firma térmica: objetos descritos como 'fríos' pero visibles en both polaridades infrarrojas no calzan limpiamente con un dron convencional (que emitiría calor de motor) ni con fauna marina (que no volaría estacionaria a baja altura ni reaccionaría a un disparo de cañón). Segundo, la reactividad: el par de esferas abandonó la posición en el mismo instante del disparo, dentro del breve margen entre el gatillo y el retroceso del arma —una coincidencia temporal que, de ser real, sugiere percepción activa del entorno, no vuelo autónomo preprogramado—. Tercero, la falla del DVR: la pérdida 'inexplicable' del video de respaldo es, sin evidencia adicional, indistinguible de una falla electrónica ordinaria, pero es exactamente el tipo de detalle que, acumulado en otros casos similares del corpus, alimenta la sospecha de intervención antes que de coincidencia.\n\nLa calibración del posterior refleja genuina incertidumbre, no una lectura decidida hacia lo anómalo: el Golfo de Omán es una de las vías navales más congestionadas y disputadas del mundo, con actividad naval iraní constante y ejercicios aliados frecuentes, así que un enjambre de drones —propio, aliado o iraní— sigue siendo una hipótesis seria (de ahí el peso combinado en `humana_clasificada` y `adversaria`). Pero el propio lenguaje del reporte —'no evaluado de forma definitiva', sin medio de propulsión observado, reacción inmediata al fuego— deja una masa considerable en `indet` y una fracción no trivial en las categorías no-humanas, honestamente proporcional a lo que el documento mismo se permite decir.",
+  "whyMatters_en": "The Gulf of Oman case earns Tier S for the same reason as Nimitz or Aguadilla: it isn't loose testimony, it's an instrumental sensor record —an AC-130's EO/IR feed, captured in two thermal polarities— corroborated by multiple military crew members and quantified with a formal tactical tool. The Department of War itself labels it 'intelligence information, not finally evaluated': it neither confirms it as an anomalous phenomenon nor closes it as explained, which is precisely the most honest and least-cited category in the public debate.\n\nThree concrete elements sustain the case's analytical weight. First, the thermal signature: objects described as 'cold' yet visible in both infrared polarities don't cleanly match a conventional drone (which would emit engine heat) or marine wildlife (which wouldn't hover at low altitude or react to cannon fire). Second, reactivity: the pair of orbs left position at the exact moment of firing, within the brief window between trigger pull and the weapon's recoil —a timing coincidence that, if real, suggests active awareness of the environment rather than pre-programmed autonomous flight. Third, the DVR failure: the 'inexplicable' loss of the backup footage is, absent further evidence, indistinguishable from an ordinary electronics glitch, but it's exactly the kind of detail that, accumulated across other similar cases in the corpus, feeds suspicion of interference over coincidence.\n\nThe posterior calibration reflects genuine uncertainty, not a settled lean toward the anomalous: the Gulf of Oman is one of the world's most congested and contested waterways, with constant Iranian naval activity and frequent allied exercises, so a drone swarm —domestic, allied, or Iranian— remains a serious hypothesis (hence the combined weight on `humana_clasificada` and `adversaria`). But the report's own language —'not finally evaluated,' no observed means of propulsion, immediate reaction to weapons fire— leaves a considerable mass on `indet` and a non-trivial fraction in the non-human categories, honestly proportional to what the document itself is willing to say.",
+  "evidence": [
+    "Sensor EO/IR de un AC-130 registra ~25 instancias de 'esferas frías' durante ejercicio de fuego real (8 sep 2021, Golfo de Omán)",
+    "Par de esferas de ~1,2 m de diámetro, estacionarias sobre una bengala, huyen sin cambiar altitud en el instante del disparo del cañón de 105mm",
+    "Formación coordinada de dos objetos 'como delfines nadando en grupo'; comentario de la fuente: 'sabían que estaban volando juntos'",
+    "Velocidades de maniobra calculadas vía TACTOOL: máximo 1.300 mph, mínimo 250 mph; sin medio de propulsión observado",
+    "Falla 'inexplicable' del grabador de video digital (DVR) de a bordo; los datos de respaldo quedaron corruptos",
+    "Reporte de Información de Inteligencia (IIR) de AFSOC, clasificado SECRETO//NOFORN, catalogado explícitamente como 'no evaluado de forma definitiva'; desclasificado para revisión obligatoria el 26 de marzo de 2026"
+  ],
+  "evidence_en": [
+    "AC-130 EO/IR sensor logs ~25 instances of 'cold orbs' during a live-fire exercise (Sept 8, 2021, Gulf of Oman)",
+    "Pair of ~4-foot-diameter orbs, stationary over a flare, flee without changing altitude at the instant the 105mm cannon fires",
+    "Coordinated formation of two objects 'like dolphins swimming in a pod'; source comment: 'they knew they were flying together'",
+    "Maneuvering speeds calculated via TACTOOL: maximum 1,300 mph, minimum 250 mph; no means of propulsion observed",
+    "'Inexplicable' failure of the onboard Digital Video Recorder (DVR); backup data became corrupted",
+    "AFSOC Intelligence Information Report (IIR), classified SECRET//NOFORN, explicitly cataloged as 'not finally evaluated'; declassified for mandatory review on March 26, 2026"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D101, IIR de AFSOC sobre el Golfo de Omán (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D101, AFSOC IIR on the Gulf of Oman (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ]
+}
