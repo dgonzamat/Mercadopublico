@@ -1,0 +1,91 @@
+{
+  "id": "colorado-springs-mach-triangle-2023",
+  "num": 343,
+  "name": "La nube que se abrió y dejó salir un triángulo a Mach 2",
+  "name_en": "The cloud that opened and let out a Mach-2 triangle",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8339,
+    "lng": -104.8214,
+    "place": "Colorado Springs, Colorado",
+    "place_en": "Colorado Springs, Colorado"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 35,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.20,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.15,
+    "nohumano_abierto": 0.08,
+    "indet": 0.20
+  },
+  "summary": "En octubre de 2023, un aficionado a la aviación que trabajaba de noche en Colorado Springs vio emerger de una nube gris estacionaria y 'pixelada' un triángulo equilátero negro del tamaño de un estacionamiento, con una luz roja en cada esquina. Voló a velocidad de helicóptero, aceleró casi instantáneamente a Mach 1-2, giró bruscamente inclinándose en la dirección opuesta a la de un avión convencional, y desapareció rodeado de ondas parecidas a un espejismo de calor. Al llamar a su esposa un minuto después, ella notó que su voz sonaba 'robótica', como con interferencia electrónica. Es el segundo expediente FBI/PURSUE de un triángulo sobre la misma ciudad en el mismo mes.",
+  "summary_en": "In October 2023, an aviation enthusiast working a night shift in Colorado Springs watched a black equilateral triangle, the size of a parking lot, emerge from a stationary, 'pixelated' gray cloud, a red light at each corner. It flew at helicopter speed, then accelerated almost instantly to Mach 1-2, banked sharply in the direction opposite a conventional aircraft, and vanished surrounded by heat-mirage-like waves. Calling his wife a minute later, she noted his voice sounded 'robotic,' as if there were electronic interference. It's the second FBI/PURSUE file describing a triangle over the same city in the same month.",
+  "patterns": [
+    "8l",
+    "8k"
+  ],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D030 — FD-302, declaración del testigo (octubre 2025)",
+      "title_en": "FBI-UAP-D030 — FD-302, witness statement (October 2025)",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg",
+      "type": "image",
+      "title": "FBI-UAP-D031 — representación digital del objeto",
+      "title_en": "FBI-UAP-D031 — digital rendering of the object",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg"
+    }
+  ],
+  "whatHappened": "El testigo, quien declaró observar con frecuencia tráfico aéreo militar, comercial y civil sobre Colorado Springs, se encontraba trabajando entre las 20:00 y las 21:30 horas de una noche de octubre de 2023. Caminó hasta donde estaba un compañero de trabajo y ambos se pusieron a mirar las estrellas en una noche despejada. Al mirar hacia arriba, el testigo notó una estrella muy brillante que le llamó la atención; la observó unos 5 a 10 segundos hasta percibir movimiento en su visión periférica izquierda. Al mirar más arriba y a la izquierda, vio lo que parecía ser una nube de color gris oscuro apareciendo en su campo visual, estacionaria, con un aspecto extraño —como pixelada o distorsionada de alguna otra forma—.\n\nMientras observaba la nube, vio una luz roja difusa y constante en la punta inferior-frontal de un objeto triangular negro sólido que emergía de ella hacia el sur-sureste. La parte del objeto detrás de la punta se fue ensanchando conforme salía de la nube, hasta que el testigo pudo ver el triángulo equilátero completo, con una luz roja en cada una de sus tres esquinas. Estimó que el objeto era enorme —posiblemente del tamaño del estacionamiento donde se encontraba— y calculó su grosor en el equivalente a 3-5 pisos. A la distancia de su brazo extendido, cada una de las tres luces tenía el tamaño de una uña.\n\nInicialmente el objeto se movía hacia el sur, ligeramente al este, a una velocidad constante comparable a la de un helicóptero, a una altitud que el testigo estimó entre 900 y 1.500 metros —similar a la de una avioneta civil en vuelo de entrenamiento—. Entonces aceleró casi instantáneamente hasta lo que el testigo calculó como Mach 1 o 2, girando levemente para dirigirse directamente al sur o ligeramente al suroeste. Notó ondas rodeando y irradiando del objeto, que comparó con el efecto de espejismo que se observa al mirar a la distancia sobre una carretera caliente. No escuchó ningún ruido, no pudo ver ningún medio de propulsión y no percibió ningún olor fuera de lo común. Mientras se alejaba, el objeto se inclinó abruptamente 90 grados sobre su lado izquierdo —con las tres luces todavía visibles— virando hacia la derecha, y luego regresó rápidamente a vuelo nivelado; el testigo notó específicamente que esa maniobra de inclinación era opuesta a la que haría una aeronave convencional al girar en esa dirección. Perdió de vista el objeto cuando pasó sobre unas estructuras cercanas hacia el sur. Al mirar de vuelta hacia el punto donde había aparecido, la nube gris ya había desaparecido.\n\nUnos 60 segundos después, llamó a su esposa para contarle lo ocurrido; ella le dijo que su voz sonaba 'robótica', como si hubiera interferencia electrónica en la llamada. La entrevista formal del FBI se realizó en octubre de 2025, dos años después del avistamiento.",
+  "whatHappened_en": "The witness, who said he frequently observes military, commercial, and civilian air traffic over Colorado Springs, was working between 8:00 and 9:30 PM on a night in October 2023. He walked over to a co-worker and both started looking up at the stars on a clear night. Looking up, the witness noticed a very bright star that caught his attention; he watched it for about 5 to 10 seconds before noticing movement in his left peripheral vision. Looking further up and to his left, he saw what appeared to be a dark-gray cloud phasing into view, stationary, with a strange appearance —as if pixelated or distorted in some other way.\n\nAs he watched the cloud, he saw a constant, diffuse red light on the bottom-front point of a solid black triangular object emerging from it toward the south-southeast. The part of the object behind the point widened as it exited the cloud, until the witness could see the full equilateral triangle, with a red light at each of its three corners. He estimated the object was enormous —possibly as large as the parking lot he was standing in— and put its thickness at the equivalent of 3-5 stories. At arm's length, each of the three lights was the size of a fingernail.\n\nInitially the object moved south, slightly east, at a steady speed comparable to a helicopter, at an altitude the witness estimated between 3,000 and 5,000 feet — similar to a small civilian aircraft on a training flight. It then accelerated almost instantaneously to what the witness calculated as Mach 1 or 2, turning slightly to head directly south or slightly southwest. He noticed waves surrounding and radiating from the object, which he compared to the mirage effect seen looking down a hot road into the distance. He heard no noise, could see no means of propulsion, and smelled nothing out of the ordinary. As it moved away, the object abruptly banked 90 degrees on its left side —with the three lights still visible— veering to the right, then quickly banked back to level flight; the witness specifically noted that banking motion was opposite to what a conventional aircraft would do turning in that direction. He lost sight of the object as it passed over nearby structures to the south. Looking back to where it had first appeared, the gray cloud had already disappeared.\n\nAbout 60 seconds later, he called his wife to tell her what happened; she said his voice sounded 'robotic,' as if there were electronic interference on the call. The FBI's formal interview took place in October 2025, two years after the sighting.",
+  "whyMatters": "Este expediente es, en la práctica, el segundo capítulo de la misma ventana temporal que `colorado-springs-triangle-2023`: ambos describen un triángulo grande, oscuro, con luces en las tres esquinas y algún tipo de distorsión visual asociada —niebla ondulante en un caso, nube pixelada y espejismo de calor en el otro—, avistados en Colorado Springs durante octubre de 2023, por testigos no relacionados entre sí. No hay evidencia de que sea el mismo evento —los horarios y las descripciones específicas difieren—, pero la coincidencia de ciudad, mes y morfología es un dato que el corpus debe seguir en lugar de ignorar, especialmente en una ciudad con la densidad de instalaciones militares y de vigilancia espacial de Colorado Springs.\n\nLo que distingue a este caso es la especificidad de las afirmaciones de rendimiento: una aceleración de velocidad de helicóptero a Mach 1-2 'casi instantánea' excede por completo lo que cualquier aeronave tripulada convencional puede tolerar, y el patrón de viraje —inclinándose en la dirección opuesta a la del giro— es aerodinámicamente contraintuitivo para un ala fija convencional. El testigo, que se declara observador frecuente de tráfico aéreo, ancla esas afirmaciones en comparaciones concretas (helicóptero, avioneta de entrenamiento, espejismo de carretera), lo cual añade textura pero no verificación instrumental: son estimaciones de un solo observador, sin radar, video ni segundo testigo entrevistado de forma independiente en este expediente.\n\nEl detalle de la llamada telefónica —su voz sonando 'robótica' según su esposa, inmediatamente después del avistamiento— es el elemento más intrigante desde una perspectiva de patrón: si es preciso, encajaría con el patrón `8k` (interferencia electromagnética), la misma familia que Malmstrom o Levelland, aunque aquí afectando un teléfono celular en lugar de un sistema de armas o un motor. El posterior mantiene una masa considerable en `mundano_natural` (0.35) porque una combinación de iluminación de aeronave militar, distorsión atmosférica y percepción bajo estrés cubre razonablemente el relato, pero dado que ningún elemento individual del caso —ni la aceleración, ni el viraje, ni la interferencia telefónica— tiene una explicación mundana demostrada y específica, la masa restante se reparte entre lo clasificado, lo no-humano y la indeterminación genuina.",
+  "whyMatters_en": "This file is, in practice, the second chapter of the same time window as `colorado-springs-triangle-2023`: both describe a large, dark triangle with lights at all three corners and some kind of associated visual distortion —rippling mist in one case, a pixelated cloud and heat mirage in the other— sighted over Colorado Springs during October 2023, by unrelated witnesses. There's no evidence it's the same event —the timing and specific descriptions differ— but the coincidence of city, month, and morphology is a data point the corpus should track rather than ignore, especially in a city with Colorado Springs's density of military and space-surveillance installations.\n\nWhat sets this case apart is the specificity of its performance claims: an 'almost instantaneous' acceleration from helicopter speed to Mach 1-2 entirely exceeds what any conventional crewed aircraft can tolerate, and the banking pattern —tilting in the direction opposite the turn— is aerodynamically counterintuitive for a conventional fixed wing. The witness, who describes himself as a frequent observer of air traffic, anchors those claims in concrete comparisons (helicopter, training aircraft, road mirage), which adds texture but not instrumental verification: these are estimates from a single observer, with no radar, video, or independently interviewed second witness in this file.\n\nThe phone call detail —his voice sounding 'robotic' per his wife, immediately after the sighting— is the most intriguing element from a pattern perspective: if accurate, it would fit pattern `8k` (electromagnetic interference), the same family as Malmstrom or Levelland, though here affecting a cell phone rather than a weapons system or an engine. The posterior keeps a considerable mass on `mundano_natural` (0.35) because some combination of military aircraft lighting, atmospheric distortion, and stress perception reasonably covers the account, but since no single element of the case —not the acceleration, not the bank, not the phone interference— has a demonstrated, specific mundane explanation, the remaining mass splits between classified, non-human, and genuine indeterminacy.",
+  "evidence": [
+    "Testigo observa un triángulo equilátero negro emerger de una nube gris estacionaria y 'pixelada', con luz roja en cada esquina (oct 2023, Colorado Springs)",
+    "Tamaño estimado como el de un estacionamiento; grosor equivalente a 3-5 pisos",
+    "Aceleración casi instantánea de velocidad de helicóptero a Mach 1-2; giro con inclinación opuesta a la de una aeronave convencional",
+    "Ondas de distorsión tipo espejismo de calor rodeando el objeto; sin sonido, propulsión visible ni olor",
+    "Llamada telefónica ~60 segundos después: la esposa del testigo reporta que su voz sonaba 'robótica', como con interferencia electrónica",
+    "Segundo expediente FBI/PURSUE de un triángulo sobre Colorado Springs en el mismo mes (octubre 2023), testigos no relacionados"
+  ],
+  "evidence_en": [
+    "Witness observes a black equilateral triangle emerging from a stationary, 'pixelated' gray cloud, a red light at each corner (Oct 2023, Colorado Springs)",
+    "Estimated size of a parking lot; thickness equivalent to 3-5 stories",
+    "Near-instantaneous acceleration from helicopter speed to Mach 1-2; bank tilted opposite to a conventional aircraft's turn direction",
+    "Heat-mirage-like distortion waves surrounding the object; no sound, visible propulsion, or smell",
+    "Phone call ~60 seconds later: the witness's wife reports his voice sounded 'robotic,' as if there were electronic interference",
+    "Second FBI/PURSUE file describing a triangle over Colorado Springs in the same month (October 2023), unrelated witnesses"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D030, FD-302 del testigo (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D030, witness FD-302 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ]
+}

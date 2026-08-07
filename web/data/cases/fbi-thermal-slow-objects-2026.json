@@ -1,0 +1,100 @@
+{
+  "id": "fbi-thermal-slow-objects-2026",
+  "num": 344,
+  "name": "Dos noches de objetos térmicos lentos, calibrados contra un Black Hawk",
+  "name_en": "Two nights of slow thermal objects, calibrated against a Black Hawk",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39,
+    "lng": -116,
+    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
+    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.18
+  },
+  "summary": "En 2026, personal de seguridad de un sitio federal sensible detectó una emisión de radiofrecuencia anómala, orientó una cámara térmica hacia el rumbo indicado y filmó dos objetos negros moviéndose lentamente en formación sobre una cordillera. La noche siguiente, otro agente observó, desde el mismo puesto, un objeto térmicamente 'caliente' —a diferencia de los 'fríos' de la noche anterior— siguiendo un rumbo similar, y lo comparó deliberadamente en tamaño con un helicóptero Black Hawk del Ejército que filmó como referencia: el objeto medía aproximadamente la mitad. Ninguno de los dos testigos pudo determinar tipo de aeronave, propulsión ni configuración exacta.",
+  "summary_en": "In 2026, security personnel at a sensitive federal site detected an anomalous radio-frequency emission, aimed a thermal camera at the indicated bearing, and filmed two black objects moving slowly in formation above a mountain range. The following night, another agent observed, from the same post, a thermally 'hot' object —unlike the 'cold' ones the night before— on a similar heading, and deliberately compared its size to a U.S. Army Black Hawk helicopter he filmed as a reference: the object measured roughly half its size. Neither witness could determine the aircraft type, propulsion, or exact configuration.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D032 — FD-302, primera noche: detección RF y observación térmica",
+      "title_en": "FBI-UAP-D032 — FD-302, first night: RF detection and thermal observation",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D033 — FD-302, segunda noche: comparación de tamaño con un Black Hawk",
+      "title_en": "FBI-UAP-D033 — FD-302, second night: size comparison against a Black Hawk",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf"
+    }
+  ],
+  "whatHappened": "En 2026, un empleado de seguridad de un sitio federal sensible en el oeste de EE.UU. —sin formación en aviación pero con algo de tiempo de vuelo como piloto privado— estaba de turno con un colega cuando, aproximadamente a las 16:04 horas, recibió una alerta de detección de radiofrecuencia: una emisión en ráfaga de 5 a 10 segundos a unos 10.000 pies MSL, de rumbo inicialmente desconocido. Comunicaciones posteriores precisaron una solicitud de observación en el rumbo 58 grados. En pocos minutos, el testigo orientó un dispositivo óptico térmico hacia esa dirección y vio un objeto negro en el cielo, moviéndose despacio. Tomó fotografías con el propio dispositivo óptico. Mientras observaba, apareció un segundo objeto a la derecha del primero, y tomó fotos y video adicionales. Ambos objetos se desplazaban juntos, a la misma velocidad, y aparecían 'negro-caliente' —es decir, más fríos que el fondo— en la imagen térmica. Los perdió de vista cuando se alejaron demasiado. La observación total duró entre 5 y 10 minutos; no pudo estimar altitud ni velocidad exactas. Los objetos volaban por encima de la línea de montañas, con rumbo sureste, entre 58 y 62 grados aproximadamente. Fue el único presente que los vio, y el único que usó el dispositivo óptico; las fotografías fueron entregadas al agente del FBI que tomó su declaración.\n\nLa noche siguiente, un Agente Especial del FBI, posicionado en la misma zona general de observación, filmó un objeto aéreo térmicamente 'elevado' —es decir, caliente, a diferencia de los objetos fríos de la noche anterior— en el mismo sector occidental general y con un rumbo similar. El objeto apareció aproximadamente dos líneas de cresta más al oeste que el punto de observación de la noche previa; dada la mayor distancia y la separación del terreno, el agente no pudo identificar características físicas específicas ni determinar su configuración exacta, pero el objeto se presentó como caliente en la observación térmica y parecía volar rumbo sur, consistente con la dirección general observada la noche anterior. Durante el mismo período operacional, el agente también grabó video de un helicóptero Black Hawk del Ejército de EE.UU. que operaba en la misma zona, con el propósito explícito de establecer un punto de referencia visual y térmico para escala, características de vuelo y comparación de tamaño. Basándose en esa comparación, el objeto no identificado parecía tener aproximadamente la mitad del tamaño del Black Hawk —una estimación basada únicamente en apariencia observada, distancia y el metraje de referencia disponible—. El agente no pudo determinar si se trataba de un ala fija, ala rotativa u otro sistema aéreo no tripulado, y finalmente perdió de vista al objeto, que continuó rumbo sur hasta desaparecer por el terreno y la distancia.",
+  "whatHappened_en": "In 2026, a security employee at a sensitive federal site in the western U.S. —with no aviation training but some private pilot flight time— was on shift with a colleague when, at approximately 1604 hours, he was alerted to a radio-frequency detection: a 5-to-10-second burst emission at roughly 10,000 feet MSL, on an initially unknown bearing. Further communication clarified a request to observe on bearing 58 degrees. Within a few minutes, the witness aimed a thermal optical device in that direction and saw a black object in the sky, moving slowly. He took photographs using the optical device itself. While observing, a second object appeared to the right of the first, and he took additional photos and video. Both objects moved together, at the same speed, and appeared 'black hot' —i.e., cooler than the background— in the thermal image. He lost sight of them as they moved out of range. Total observation time was about 5 to 10 minutes; he could not estimate exact altitude or speed. The objects were flying above the mountain line, heading southeast, roughly 58 to 62 degrees. He was the only person present who saw them, and the only one who used the optical device; the photographs were provided to the FBI agent who took his statement.\n\nThe following night, an FBI Special Agent, positioned in the same general observation area, filmed a thermally 'elevated' aerial object —that is, hot, unlike the cold objects from the previous night— in the same general western sector and on a similar heading. The object appeared roughly two ridgelines farther west than the prior night's observation point; given the greater distance and terrain separation, the agent could not identify specific physical characteristics or determine its exact configuration, but the object presented as hot on thermal observation and appeared to be flying southbound, consistent with the general direction observed the previous night. During the same operational period, the agent also recorded video of a U.S. Army Black Hawk helicopter operating in the same general area, with the explicit purpose of establishing a visual and thermal reference point for scale, flight characteristics, and comparative size assessment. Based on that comparison, the unidentified object appeared to be approximately half the size of the Black Hawk —an estimate based solely on observed appearance, distance, and available reference footage. The agent could not determine whether it was fixed-wing, rotary-wing, or another type of unmanned aerial system, and eventually lost sight of the object as it continued southbound and was lost to terrain and distance.",
+  "whyMatters": "Frente a los expedientes más narrativamente llamativos de este lote, este caso vale por su método, no por su drama. La secuencia detección-RF → cámara térmica → fotografía es, en esencia, un protocolo de vigilancia funcionando exactamente como está diseñado: alguien detecta una emisión anómala, orienta un sensor óptico hacia el rumbo indicado, y documenta lo que encuentra. Que lo encontrado sean dos objetos negros moviéndose despacio en formación no es, por sí solo, evidencia de nada anómalo — es compatible de forma directa con un par de drones comerciales o militares operando en las cercanías de una instalación sensible, que es precisamente el escenario que un sistema de detección RF está diseñado para señalar.\n\nEl segundo testimonio aporta más disciplina metodológica que sustancia narrativa: el agente, consciente de que no podía juzgar el tamaño del objeto sin una referencia, filmó deliberadamente un Black Hawk conocido en la misma zona para calibrar la comparación — un gesto de rigor poco común en el género, que reduce (sin eliminar) el margen de error de la estimación de 'la mitad de un Black Hawk'. Que el objeto de la primera noche apareciera 'frío' (negro-caliente) y el de la segunda 'caliente' es una diferencia que podría reflejar ángulos de observación distintos, tipos de superficie distintos, o simplemente dos objetos genuinamente diferentes que no tienen por qué estar relacionados — el expediente no lo resuelve.\n\nEl posterior refleja esa lectura conservadora: la mayor masa está en `mundano_natural` (0.55, `misid`) porque un enjambre de drones detectado por RF es, con mucho, la explicación más parsimoniosa para objetos lentos, en formación, sin maniobras extraordinarias, cerca de una instalación de seguridad nacional. El caso entra al corpus no porque sea extraordinario, sino porque es exactamente el tipo de expediente rutinario, técnico y poco dramático que compone la mayoría del trabajo real de investigación UAP — el contraste necesario frente a los casos más espectaculares del mismo lote.",
+  "whyMatters_en": "Against the more narratively striking files in this batch, this case earns its place through method, not drama. The RF-detection → thermal-camera → photography sequence is, in essence, a surveillance protocol working exactly as designed: someone detects an anomalous emission, points an optical sensor at the indicated bearing, and documents what they find. That what they found were two black objects moving slowly in formation is not, on its own, evidence of anything anomalous — it's directly consistent with a pair of commercial or military drones operating near a sensitive facility, precisely the scenario an RF detection system is built to flag.\n\nThe second statement contributes more methodological discipline than narrative substance: the agent, aware he couldn't judge the object's size without a reference, deliberately filmed a known Black Hawk in the same area to calibrate the comparison — a rigor uncommon in the genre, which reduces (without eliminating) the margin of error on the 'half a Black Hawk' estimate. That the first night's object appeared 'cold' (black hot) and the second's 'hot' is a difference that could reflect different viewing angles, different surface types, or simply two genuinely different objects with no necessary relation — the file doesn't resolve it.\n\nThe posterior reflects that conservative reading: the largest mass sits on `mundano_natural` (0.55, `misid`) because an RF-detected drone swarm is, by far, the most parsimonious explanation for slow, formation-flying objects with no extraordinary maneuvers, near a national-security installation. The case enters the corpus not because it's extraordinary, but because it's exactly the kind of routine, technical, undramatic file that makes up most of real UAP investigative work — the necessary counterweight to the more spectacular cases in the same batch.",
+  "evidence": [
+    "Alerta de detección de radiofrecuencia (ráfaga de 5-10s, ~10.000 pies MSL) desencadena observación térmica dirigida (rumbo 58°)",
+    "Dos objetos negros ('negro-caliente' en térmico) moviéndose juntos y despacio sobre una línea de montañas, rumbo sureste; fotografías y video capturados",
+    "Segunda noche: un Agente Especial del FBI observa un objeto térmicamente 'caliente' en rumbo similar, dos líneas de cresta más al oeste",
+    "El agente filma deliberadamente un helicóptero Black Hawk como referencia de escala: el objeto no identificado mide ~la mitad de su tamaño",
+    "Ningún testigo pudo determinar tipo de aeronave (ala fija, ala rotativa o UAS), propulsión ni configuración exacta",
+    "Ambas observaciones realizadas por personal de seguridad/FBI en un mismo sitio federal sensible, en noches consecutivas"
+  ],
+  "evidence_en": [
+    "Radio-frequency detection alert (5-10s burst, ~10,000 ft MSL) triggers directed thermal observation (bearing 58°)",
+    "Two black objects ('black hot' on thermal) moving together slowly above a mountain line, heading southeast; photos and video captured",
+    "Second night: an FBI Special Agent observes a thermally 'hot' object on a similar heading, two ridgelines farther west",
+    "The agent deliberately films a Black Hawk helicopter as a scale reference: the unidentified object measures ~half its size",
+    "Neither witness could determine aircraft type (fixed-wing, rotary-wing, or UAS), propulsion, or exact configuration",
+    "Both observations made by security/FBI personnel at the same sensitive federal site, on consecutive nights"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D032, FD-302 primera noche (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — FBI-UAP-D033, FD-302 segunda noche (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D032, first-night FD-302 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — FBI-UAP-D033, second-night FD-302 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ]
+}
