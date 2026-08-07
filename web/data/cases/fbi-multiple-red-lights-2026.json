@@ -1,0 +1,112 @@
+{
+  "id": "fbi-multiple-red-lights-2026",
+  "num": 340,
+  "name": "El reloj mecánico que se adelantó 25 minutos",
+  "name_en": "The mechanical watch that ran 25 minutes fast",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39,
+    "lng": -116,
+    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
+    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 45,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.10,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.13,
+    "nohumano_abierto": 0.05,
+    "indet": 0.35
+  },
+  "summary": "Durante una noche de 2026, dos empleados de un sitio federal en el oeste de EE.UU. —en tareas de reconocimiento de área— observaron durante varias horas una secuencia de luces rojas: una que se dividió en 6 a 10 luces sincronizadas, clústeres de tres luces en patrón triangular que 'nunca se separaban, como si estuvieran adheridas al mismo objeto', y luces a nivel del suelo que se aproximaron a menos de 200 metros. Ambos testigos, interrogados por separado por el FBI, coincidieron en el relato — y en un detalle inusual: el reloj mecánico de uno de ellos, con cinco años sin desviarse más de un minuto, terminó la noche 25 minutos adelantado respecto a todo reloj digital cercano.",
+  "summary_en": "Over the course of one night in 2026, two employees of a federal site in the western U.S. —on area-reconnaissance duty— spent hours observing a sequence of red lights: one that split into 6 to 10 synchronized lights, three-light clusters in a triangular pattern that 'never separated, as if attached to the same object,' and ground-level lights that closed to within 200 meters. Both witnesses, interviewed separately by the FBI, corroborated the account — and one unusual detail: one man's mechanical watch, which had never drifted more than a minute in five years, ended the night 25 minutes fast relative to every digital clock nearby.",
+  "patterns": [
+    "8b",
+    "8k"
+  ],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D037_FD-302_Multiple-Red-Lights_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D037 — FD-302, testimonio del testigo principal (entrevista presencial)",
+      "title_en": "FBI-UAP-D037 — FD-302, primary witness statement (in-person interview)",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D037_FD-302_Multiple-Red-Lights_2026.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D040_FD-302_Multiple-Red-Lights_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D040 — FD-302, testimonio del segundo testigo (entrevista telefónica)",
+      "title_en": "FBI-UAP-D040 — FD-302, second witness statement (telephonic interview)",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D040_FD-302_Multiple-Red-Lights_2026.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D038_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D038 — representación digital del avistamiento",
+      "title_en": "FBI-UAP-D038 — digital rendering of the sighting",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D038_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf"
+    }
+  ],
+  "whatHappened": "Una noche de 2026, dos empleados de un sitio federal sensible en el oeste de Estados Unidos salieron en tareas de reconocimiento de área. Llovía con fuerza en el portón de acceso; esperaron a que amainara y avanzaron hacia el norte. A unos 40 kilómetros de recorrido, uno de los dos —el testigo principal, entrevistado presencialmente por el FBI— notó una luz roja en la cresta de la cordillera al oeste. Al principio pensó que era algo fijo en la montaña, pero comenzó a moverse hacia el este. Dado que la cordillera tiene unos 1.500 metros y la base de nubes estaba a unos 2.100, estimó que el objeto volaba entre esas dos altitudes. Unos 15 minutos después, entre 6 y 10 luces adicionales aparecieron directamente sobre su posición; junto con la primera, 'se sincronizaron' y viajaron hacia el este/sureste. Una de ellas descendió rápidamente unos 300 metros antes de desaparecer; el resto continuó y se perdió de vista.\n\nA simple vista y con Dispositivos Ópticos Nocturnos (NODs), las luces aparecían como un solo punto; pero al observarlas de cerca o entrecerrando los ojos, cada una se resolvía en tres luces separadas dispuestas en patrón triangular o de diamante, que —según el testigo— 'nunca se separaban, como si las tres estuvieran adheridas al mismo objeto'. El testigo, con más de 25 años de experiencia usando NODs, identificó por sí mismo dos posibles fuentes de error: el 'halo NOD', un artefacto óptico característico al mirar fuentes de luz a través del equipo, y su propio astigmatismo, que podría explicar por qué las luces le parecían 'con forma de guion' a simple vista pero triangulares con el equipo. Horas después, cerca de la medianoche, ambos testigos observaron dos luces adicionales a ras de suelo acercarse hasta unos 200-300 metros de su posición —una de ellas a apenas dos metros de altura— mientras una tercera, una estela luminosa rápida como la de una bengala o linterna en movimiento, emergía de un lecho seco de arroyo a unos 100 metros detrás de ellos.\n\nEl segundo testigo, entrevistado telefónicamente en un FD-302 separado, corroboró de forma independiente la secuencia central: la luz roja inicial, la división en 6 a 10 luces sincronizadas, el descenso rápido de una de ellas, los clústeres triangulares de tres luces que 'se movían en tándem sin separarse jamás', y las luces a ras de suelo cerca de medianoche. Ninguno de los testigos reportó sonido, estela de escape ni éxito al intentar captar los objetos con óptica térmica. El detalle más singular surgió al final de la noche: al comparar la hora, el reloj mecánico analógico del testigo principal —que llevaba cinco años sin desviarse más de 60-90 segundos y que había sido revisado como preciso esa misma tarde— marcaba 25 minutos más que el teléfono, el reloj del vehículo y el reloj digital del segundo testigo, los tres coincidentes entre sí. El testigo no reajustó el reloj durante las siguientes 24 horas: siguió funcionando con precisión, pero permaneció esos 25 minutos adelantado. El segundo testigo describió a su colega como alguien meticuloso ('squared away'), para quien un equipo desajustado sería impensable. Ninguno reportó efectos físicos, miedo o ansiedad — solo curiosidad, algo que ambos, dado su perfil profesional, encontraron llamativo en retrospectiva.",
+  "whatHappened_en": "One night in 2026, two employees of a sensitive federal site in the western United States went out on area-reconnaissance duty. It was raining heavily at the access gate; they waited it out and drove north. About 25 miles in, one of the two —the primary witness, interviewed in person by the FBI— noticed a red light at the crest of the mountain range to the west. He initially thought it was fixed on the mountain, but it began moving east. Since the range stood roughly 5,000 feet and the cloud base was around 7,000, he estimated the object was flying somewhere between those altitudes. About 15 minutes later, 6 to 10 additional lights appeared directly over their position; together with the first, they 'synced up' and traveled east/southeast. One descended rapidly by roughly 1,000 feet before disappearing; the rest continued and faded from view.\n\nTo the naked eye and through Night Optical Devices (NODs), the lights appeared as a single point; but on closer observation, or while squinting, each resolved into three separate lights arranged in a triangular or diamond pattern that —per the witness— 'never separated, as if all three lights were attached to the same object.' The witness, with more than 25 years of NOD experience, identified two possible sources of error himself: the 'NOD halo,' a known optical artifact when viewing a light source through the equipment, and his own astigmatism, which could explain why the lights appeared 'dash-shaped' to the naked eye but triangular through the optics. Hours later, near midnight, both witnesses observed two additional ground-level lights close to within roughly 200-300 meters of their position —one hovering barely six feet off the ground— while a third, a fast-moving streak of light like a sparkler or moving flashlight, emerged from a dry creek bed about 100 meters behind them.\n\nThe second witness, interviewed by phone in a separate FD-302, independently corroborated the core sequence: the initial red light, the split into 6 to 10 synchronized lights, one's rapid descent, the triangular three-light clusters that 'moved in tandem and never separated,' and the ground-level lights near midnight. Neither witness reported sound, an exhaust trail, or success capturing the objects with thermal optics. The most singular detail surfaced at the end of the night: comparing the time, the primary witness's mechanical analog watch —which had gone five years without drifting more than 60-90 seconds and had been checked accurate that very afternoon— read 25 minutes ahead of his phone, the vehicle clock, and the second witness's digital watch, all three of which agreed with each other. The witness did not reset the watch over the following 24 hours: it kept accurate time going forward but stayed 25 minutes fast. The second witness described his colleague as meticulous ('squared away'), someone for whom miscalibrated gear would be unthinkable. Neither reported physical effects, fear, or anxiety — only curiosity, something both found notable in hindsight given their professional backgrounds.",
+  "whyMatters": "Este expediente combina dos rasgos que rara vez coinciden en el corpus: un testigo excepcionalmente autocrítico y una corroboración independiente cercana en el tiempo. El testigo principal no solo describe lo que vio, sino que activamente nombra las dos explicaciones mundanas más plausibles de su propia experiencia —el halo NOD y su astigmatismo— antes de que un investigador tenga que planteárselas. Esa disposición a auto-cuestionarse, sumada a 25 años de experiencia operando el equipo, eleva la calidad epistémica del testimonio muy por encima del promedio, y es la razón principal por la que el `mundanoType` queda en `misid` con peso considerable (0.35): la propia estructura del relato deja huecos de percepción óptica identificables, no solo posibles.\n\nLo que la calibración no puede descontar tan fácilmente es la corroboración: un segundo testigo, entrevistado por separado y por teléfono —sin oportunidad aparente de coordinar previamente los detalles con el investigador— reproduce independientemente la secuencia central del avistamiento, incluida la cuenta de luces, el patrón triangular y, sobre todo, la anomalía del reloj. Ese detalle es el más difícil de descartar con una explicación puramente óptica: un reloj mecánico no sufre halos NOD ni astigmatismo. Si el relato es preciso, algo externo alteró un mecanismo de cuerda analógico en un margen de horas —una anomalía electromagnética, un error de percepción retrospectiva sobre cuándo se revisó el reloj por última vez, o una coincidencia mecánica ordinaria son, en ese orden, las lecturas más plausibles, ninguna de ellas confirmable con lo disponible—.\n\nEl patrón `8b` (madre + sub-objetos) encaja con la estructura repetida del relato: una luz única que se multiplica en 6 a 10, y clústeres de tres que se comportan como una sola unidad. El patrón `8k` (interferencia electromagnética) se reserva específicamente para la anomalía del reloj, no para las luces mismas. El posterior deja la masa mayor en `indet` (0.35) porque, descontada la fracción bien explicada por artefactos ópticos, ni la estructura del avistamiento ni el detalle del reloj alcanzan a cerrarse con una causa única y demostrada — el caso queda, honestamente, abierto.",
+  "whyMatters_en": "This file combines two traits that rarely coincide in the corpus: an exceptionally self-critical witness and near-immediate independent corroboration. The primary witness doesn't just describe what he saw — he actively names the two most plausible mundane explanations for his own experience, the NOD halo and his astigmatism, before an investigator has to raise them. That willingness to self-question, combined with 25 years of hands-on equipment experience, raises the testimony's epistemic quality well above average, and is the main reason `mundanoType` sits at `misid` with considerable weight (0.35): the account's own structure surfaces identifiable optical-perception gaps, not just hypothetical ones.\n\nWhat the calibration can't discount as easily is the corroboration: a second witness, interviewed separately and by phone —with no apparent opportunity to coordinate details with the investigator beforehand— independently reproduces the core sequence of the sighting, including the light count, the triangular pattern, and above all the watch anomaly. That detail is the hardest to wave away with a purely optical explanation: a mechanical watch doesn't suffer NOD halos or astigmatism. If the account is accurate, something external altered an analog spring-driven mechanism within a matter of hours — an electromagnetic anomaly, a retrospective misremembering of when the watch was last checked, or an ordinary mechanical coincidence are, in that order, the most plausible readings, none of them confirmable with what's available.\n\nPattern `8b` (mother object + sub-objects) fits the account's recurring structure: a single light multiplying into 6-10, and three-light clusters behaving as one unit. Pattern `8k` (electromagnetic interference) is reserved specifically for the watch anomaly, not the lights themselves. The posterior leaves the largest mass on `indet` (0.35) because, once the fraction well-explained by optical artifacts is discounted, neither the sighting's structure nor the watch detail closes out with a single demonstrated cause — the case remains, honestly, open.",
+  "evidence": [
+    "Testigo principal observa una luz roja en cresta montañosa que se divide en 6-10 luces 'sincronizadas' que viajan al este/sureste; una desciende ~300 metros y desaparece",
+    "Cada luz, vista de cerca o entrecerrando los ojos, se resuelve en tres luces en patrón triangular/diamante 'como si estuvieran adheridas al mismo objeto'",
+    "El testigo identifica por sí mismo dos posibles fuentes de error: el artefacto óptico 'halo NOD' y su propio astigmatismo",
+    "Segundo testigo, entrevistado por separado vía telefónica, corrobora independientemente la secuencia central del avistamiento",
+    "Luces a ras de suelo (una a ~2 metros de altura) se acercan a 200-300 metros de los testigos cerca de medianoche",
+    "Reloj mecánico del testigo principal (5 años sin desviarse >90 segundos) termina la noche 25 minutos adelantado respecto a todos los relojes digitales presentes, y se mantiene así 24 horas después"
+  ],
+  "evidence_en": [
+    "Primary witness observes a red light on a mountain ridge splitting into 6-10 'synced up' lights traveling east/southeast; one descends ~1,000 feet and disappears",
+    "Each light, viewed closely or while squinting, resolves into three lights in a triangular/diamond pattern 'as if attached to the same object'",
+    "The witness self-identifies two possible sources of error: the 'NOD halo' optical artifact and his own astigmatism",
+    "Second witness, interviewed separately by phone, independently corroborates the sighting's core sequence",
+    "Ground-level lights (one hovering ~6 feet up) close to within 200-300 meters of the witnesses near midnight",
+    "Primary witness's mechanical watch (5 years without drifting >90 seconds) ends the night 25 minutes fast relative to every digital clock present, and stays that way 24 hours later"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D037, FD-302 del testigo principal (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — FBI-UAP-D040, FD-302 del segundo testigo (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D037, primary witness FD-302 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — FBI-UAP-D040, second witness FD-302 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ]
+}

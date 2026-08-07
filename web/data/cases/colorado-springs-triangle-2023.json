@@ -1,0 +1,90 @@
+{
+  "id": "colorado-springs-triangle-2023",
+  "num": 341,
+  "name": "El triángulo translúcido de Colorado Springs",
+  "name_en": "The translucent triangle over Colorado Springs",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.8339,
+    "lng": -104.8214,
+    "place": "Colorado Springs, Colorado",
+    "place_en": "Colorado Springs, Colorado"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.13,
+    "nohumano_abierto": 0.05,
+    "indet": 0.20
+  },
+  "summary": "En octubre de 2023, cerca de las 22:50 horas, un matrimonio sentado en el porche de su casa en Colorado Springs vio pasar por encima, del noreste al suroeste, un objeto triangular silencioso, casi transparente, con un borde de luz azul-plateada en su cara trasera. El testigo —familiarizado con aeronaves de la USAF y drones militares por vivir cerca de un aeropuerto— dijo que no se parecía a nada que hubiera visto antes. Toda la observación duró unos cuatro segundos, insuficiente para fotografiarlo. El FBI tomó su declaración en enero de 2026.",
+  "summary_en": "In October 2023, around 10:50 PM, a married couple sitting on their back porch in Colorado Springs watched a silent, nearly transparent triangular object pass overhead, from northeast to southwest, with a silvery-blue band of light on its trailing edge. The witness —familiar with USAF aircraft and military drones from living near an airport— said it looked like nothing he'd seen before. The entire observation lasted about four seconds, too brief to photograph. The FBI took his statement in January 2026.",
+  "patterns": [
+    "8l"
+  ],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D026 — FD-302, declaración del testigo (enero 2026)",
+      "title_en": "FBI-UAP-D026 — FD-302, witness statement (January 2026)",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D027 — representación digital del objeto",
+      "title_en": "FBI-UAP-D027 — digital rendering of the object",
+      "source": "Federal Bureau of Investigation (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf"
+    }
+  ],
+  "whatHappened": "El testigo y su esposa estaban sentados de espaldas a su casa, en el porche trasero de su residencia en Colorado Springs, Colorado, la noche de octubre de 2023, alrededor de las 22:50 horas. El porche mira al suroeste; el cielo estaba despejado, aunque el testigo recordó ver pocas estrellas. Mientras miraba hacia arriba, notó que algo había pasado sobre la casa desde atrás, viniendo del noreste, alejándose hacia el suroeste. Primero percibió el movimiento, antes de distinguir la silueta. El objeto volaba bajo —quizás a unos 90 metros de altura— y, calculando por esa altitud, el testigo lo estimó del tamaño de una camioneta grande; a la distancia de su brazo extendido, ocupaba el espacio entre su pulgar e índice, unos 13 centímetros.\n\nLo más llamativo fue su apariencia: casi transparente, con una neblina o distorsión alrededor, 'como mirarlo a través de niebla', con ondulaciones parecidas a las de un objeto visto bajo el agua. Tenía forma de triángulo perfecto, aunque el ángulo de observación no le permitió determinar si era isósceles o equilátero; el color —gris oscuro o plateado— se confundía con el cielo nocturno, y la distorsión alrededor pudo acentuar la sensación de translucidez. Los bordes y esquinas parecían redondeados, aunque, de nuevo, la distorsión pudo suavizar el contorno real. El objeto viajaba con una punta hacia adelante, y sobre el borde trasero plano llevaba una banda de luz azul-plateada, que el testigo especuló podría estar asociada a su sistema de propulsión.\n\nEl triángulo se desplazó en línea recta, a altitud constante, cubriendo una gran distancia en muy poco tiempo. Justo antes de perderlo de vista, el lado izquierdo se inclinó bruscamente hacia una orientación casi vertical, sin cambiar de rumbo ni de altitud. Fue completamente silencioso: el testigo no sintió vibración, estática ni ningún otro efecto a su paso. Vivía cerca de un aeropuerto y estaba acostumbrado a ver y oír aviones privados y helicópteros sobrevolando su casa con regularidad; también dijo conocer bien las aeronaves de la USAF, incluidos los drones no tripulados más recientes, y que el objeto no coincidía con nada de lo que había visto antes. Toda la observación duró unos cuatro segundos, desde que lo notó hasta que desapareció hacia el suroeste —más rápido de lo que esperaba— sin tiempo para sacar el teléfono y grabarlo. Su esposa recordó además una costura oscura recorriendo el borde del objeto. Ambos entraron de inmediato a la casa, cada uno a una habitación distinta, antes de comparar lo que habían visto. El FBI tomó la declaración del testigo en enero de 2026, más de dos años después del evento.",
+  "whatHappened_en": "The witness and his wife were sitting with their backs to the house, on the back porch of their residence in Colorado Springs, Colorado, on a night in October 2023, around 10:50 PM. The porch faces southwest; the sky was clear, though the witness recalled seeing few stars. As he looked up, he noticed something had flown over the house from behind, coming from the northeast and moving away to the southwest. He perceived the motion before he could make out the silhouette. The object flew low — possibly as low as 300 feet — and, based on that altitude estimate, the witness judged it roughly the size of a large SUV; at arm's length, it occupied the space between his thumb and index finger, about 5 inches.\n\nWhat stood out most was its appearance: nearly see-through, with a haze or distortion around it, 'like looking at it through mist,' with ripples similar to viewing something underwater. It looked like a perfect triangle, though his viewing angle didn't let him tell whether it was isosceles or equilateral; the color —dark gray or silver— blended into the night sky, and the surrounding distortion may have heightened the sense of translucency. The edges and corners appeared rounded, though again the distortion may have softened the true outline. The object traveled with a point facing forward, and along its flat trailing edge carried a band of silvery-blue light, which the witness speculated might be tied to its propulsion.\n\nThe triangle moved in a straight line at a constant altitude, covering a large distance in very little time. Just before he lost sight of it, the left side banked sharply to a near-vertical orientation, without changing course or altitude. It was completely silent: the witness felt no vibration, static, or any other effect as it passed overhead. He lived near an airport and was used to seeing and hearing private planes and helicopters fly over his house regularly; he also said he was well acquainted with USAF aircraft, including the newest unmanned drones, and that the object matched nothing he'd encountered before. The entire observation lasted about four seconds, from when he first noticed it to when it vanished to the southwest — sooner than he expected — with no time to pull out his phone to record it. His wife additionally recalled a dark seam running along the object's edge. Both went inside immediately, into separate rooms, before comparing what they had seen. The FBI took the witness's statement in January 2026, more than two years after the event.",
+  "whyMatters": "Colorado Springs es terreno conocido para el corpus —ya documenta un caso de 2022 con cinco militares en Fort Carson observando un objeto sobre Cheyenne Mountain, sede del complejo endurecido de NORAD—, y este expediente de 2023 aporta un segundo incidente, distinto en testigos, fenomenología y contexto, en la misma ciudad. Ese solapamiento geográfico no prueba nada por sí mismo, pero sí es un dato que vale la pena rastrear: dos episodios no relacionados en apariencia, a año y medio de distancia, en una ciudad con altísima densidad de instalaciones militares y de inteligencia espacial.\n\nEl caso encaja en el patrón `8l` (triángulos grandes silenciosos), la misma familia que Hudson Valley, la ola belga, Phoenix Lights y Yukon: un triángulo de gran tamaño, sin sonido, con luces en los bordes, volando a baja altura y velocidad sostenida. Lo distintivo aquí es la translucidez descrita —una cualidad casi óptica, con ondulaciones 'como bajo el agua'—, que abre una lectura mundana concreta: podría tratarse de un efecto de distorsión atmosférica o de una superficie con recubrimiento de baja observabilidad que dispersa la luz ambiental de forma inusual, antes que de invisibilidad genuina.\n\nLa credibilidad del testigo es alta para el estándar del corpus —familiaridad declarada con aeronaves de la USAF y drones, descarte activo de explicaciones convencionales, dos testigos independientes en el mismo hogar—, pero la brevedad extrema de la observación (cuatro segundos) y la ausencia de cualquier registro fotográfico o instrumental limitan lo que se puede afirmar con confianza. El posterior refleja esa tensión: una masa considerable en `mundano_natural` (0.45) por la posibilidad de un dron o aeronave de baja observabilidad no identificado por el testigo, con una cola no trivial en `indet` que reconoce que cuatro segundos de percepción, por más entrenada que sea, no bastan para cerrar el caso en ninguna dirección.",
+  "whyMatters_en": "Colorado Springs is familiar ground for the corpus — it already documents a 2022 case with five soldiers at Fort Carson observing an object over Cheyenne Mountain, home to NORAD's hardened command complex — and this 2023 file adds a second incident, distinct in witnesses, phenomenology, and context, in the same city. That geographic overlap proves nothing on its own, but it is a data point worth tracking: two apparently unrelated episodes, a year and a half apart, in a city with an extremely high density of military and space-intelligence installations.\n\nThe case fits pattern `8l` (large silent triangles), the same family as Hudson Valley, the Belgian wave, Phoenix Lights, and Yukon: a large, soundless triangle with edge lighting, flying low and at sustained speed. What sets this one apart is the described translucency — an almost optical quality, with 'underwater'-like ripples — which opens a concrete mundane reading: it could be an atmospheric distortion effect or a low-observability coating scattering ambient light unusually, rather than genuine invisibility.\n\nThe witness's credibility is high by the corpus's standard — declared familiarity with USAF aircraft and drones, active ruling-out of conventional explanations, two independent witnesses in the same household — but the observation's extreme brevity (four seconds) and the total absence of any photographic or instrumental record limit what can be confidently claimed. The posterior reflects that tension: a considerable mass on `mundano_natural` (0.45) for the possibility of a drone or low-observability aircraft the witness didn't recognize, with a non-trivial `indet` tail acknowledging that four seconds of perception, however well-trained, isn't enough to close the case in either direction.",
+  "evidence": [
+    "Testigo y esposa observan un objeto triangular translúcido, silencioso, volando bajo (~90m) del noreste al suroeste sobre Colorado Springs (oct 2023, ~22:50h)",
+    "Apariencia distorsionada 'como niebla' o 'bajo el agua'; banda de luz azul-plateada en el borde trasero",
+    "Testigo familiarizado con aeronaves USAF y drones militares afirma que el objeto no coincide con nada conocido",
+    "El lado izquierdo del objeto se inclina bruscamente hacia vertical justo antes de desaparecer, sin cambiar rumbo ni altitud",
+    "Observación de solo ~4 segundos, sin registro fotográfico; declaración tomada por el FBI en enero de 2026",
+    "Colorado Springs ya registra otro incidente FBI/PURSUE distinto (Fort Carson, 2022, Cheyenne Mountain/NORAD)"
+  ],
+  "evidence_en": [
+    "Witness and wife observe a translucent, silent triangular object flying low (~300ft) from northeast to southwest over Colorado Springs (Oct 2023, ~10:50 PM)",
+    "Distorted 'misty' or 'underwater'-like appearance; silvery-blue light band on the trailing edge",
+    "Witness familiar with USAF aircraft and military drones states the object matched nothing known",
+    "The object's left side banks sharply toward vertical just before disappearing, with no change in course or altitude",
+    "Observation lasted only ~4 seconds, with no photographic record; statement taken by the FBI in January 2026",
+    "Colorado Springs already has a separate FBI/PURSUE-documented incident (Fort Carson, 2022, Cheyenne Mountain/NORAD)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D026, FD-302 del testigo (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D026, witness FD-302 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ]
+}
