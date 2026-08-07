@@ -1,6 +1,9 @@
 {
   "id": "puerto-rico-gyatt-1964",
   "num": 337,
+  "pursueReleases": [
+    5
+  ],
   "name": "USS Gyatt · el radar de Puerto Rico y el jet clasificado a Mach 3",
   "name_en": "USS Gyatt · the Puerto Rico radar contact and the classified Mach 3 jet",
   "year_start": 1964,
@@ -18,8 +21,8 @@
   "probability": 15,
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.50,
-    "humana_clasificada": 0.30,
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.3,
     "adversaria": 0.05,
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.01,

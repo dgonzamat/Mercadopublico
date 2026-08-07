@@ -47,9 +47,17 @@ const RELEASE_META: Record<
     es: "PURSUE · Cuarta entrega",
     en: "PURSUE · Fourth release",
     blurbEs:
-      "La entrega más reciente: el incidente nuclear de Pantex (2015), imágenes de la NASA (STS-80), los formularios Range Fouler de la Marina y los análisis de las eras Sign y Blue Book.",
+      "El incidente nuclear de Pantex (2015), imágenes de la NASA (STS-80), los formularios Range Fouler de la Marina y los análisis de las eras Sign y Blue Book.",
     blurbEn:
-      "The most recent drop: the Pantex nuclear incident (2015), NASA imagery (STS-80), the Navy Range Fouler forms and the Sign/Blue Book-era analyses.",
+      "The Pantex nuclear incident (2015), NASA imagery (STS-80), the Navy Range Fouler forms and the Sign/Blue Book-era analyses.",
+  },
+  5: {
+    es: "PURSUE · Quinta entrega",
+    en: "PURSUE · Fifth release",
+    blurbEs:
+      "La entrega más reciente: cables del Departamento de Estado sobre Puerto Rico (1964) y Bahía (1963), y una serie de expedientes FBI/DoW 2011-2026 — el golfo de Omán, triángulos en Colorado Springs y luces recurrentes de un piloto comercial.",
+    blurbEn:
+      "The most recent drop: State Department cables on Puerto Rico (1964) and Bahia (1963), and a series of FBI/DoW files spanning 2011-2026 — the Gulf of Oman, Colorado Springs triangles and a commercial pilot's recurring lights.",
   },
 };
 

@@ -1,6 +1,9 @@
 {
   "id": "colorado-springs-mach-triangle-2023",
   "num": 343,
+  "pursueReleases": [
+    5
+  ],
   "name": "La nube que se abrió y dejó salir un triángulo a Mach 2",
   "name_en": "The cloud that opened and let out a Mach-2 triangle",
   "year_start": 2023,
@@ -19,11 +22,11 @@
   "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.35,
-    "humana_clasificada": 0.20,
+    "humana_clasificada": 0.2,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.15,
     "nohumano_abierto": 0.08,
-    "indet": 0.20
+    "indet": 0.2
   },
   "summary": "En octubre de 2023, un aficionado a la aviación que trabajaba de noche en Colorado Springs vio emerger de una nube gris estacionaria y 'pixelada' un triángulo equilátero negro del tamaño de un estacionamiento, con una luz roja en cada esquina. Voló a velocidad de helicóptero, aceleró casi instantáneamente a Mach 1-2, giró bruscamente inclinándose en la dirección opuesta a la de un avión convencional, y desapareció rodeado de ondas parecidas a un espejismo de calor. Al llamar a su esposa un minuto después, ella notó que su voz sonaba 'robótica', como con interferencia electrónica. Es el segundo expediente FBI/PURSUE de un triángulo sobre la misma ciudad en el mismo mes.",
   "summary_en": "In October 2023, an aviation enthusiast working a night shift in Colorado Springs watched a black equilateral triangle, the size of a parking lot, emerge from a stationary, 'pixelated' gray cloud, a red light at each corner. It flew at helicopter speed, then accelerated almost instantly to Mach 1-2, banked sharply in the direction opposite a conventional aircraft, and vanished surrounded by heat-mirage-like waves. Calling his wife a minute later, she noted his voice sounded 'robotic,' as if there were electronic interference. It's the second FBI/PURSUE file describing a triangle over the same city in the same month.",

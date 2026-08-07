@@ -1,6 +1,9 @@
 {
   "id": "gulf-of-oman-2021",
   "num": 339,
+  "pursueReleases": [
+    5
+  ],
   "name": "Golfo de Omán · las 'esferas frías' que esquivaron el cañón de un AC-130",
   "name_en": "Gulf of Oman · the 'cold orbs' that dodged an AC-130's cannon",
   "year_start": 2021,
@@ -18,12 +21,12 @@
   "probability": 65,
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.20,
+    "mundano_natural": 0.2,
     "humana_clasificada": 0.15,
-    "adversaria": 0.10,
+    "adversaria": 0.1,
     "nohumano_encubierto": 0.15,
-    "nohumano_abierto": 0.10,
-    "indet": 0.30
+    "nohumano_abierto": 0.1,
+    "indet": 0.3
   },
   "summary": "La noche del 8 de septiembre de 2021, un avión de ataque AC-130 de las Fuerzas de Operaciones Especiales de EE.UU. observó unas 25 instancias de fenómenos aéreos no identificados durante un ejercicio de fuego real en el Golfo de Omán. El sensor electro-óptico/infrarrojo captó 'esferas frías' —sin firma térmica propia— que huyeron sin cambiar de altitud justo cuando el cañón de 105mm abrió fuego, volaron en formaciones coordinadas 'como delfines nadando en grupo', y alcanzaron hasta 1.300 mph sin medio de propulsión visible. El video de respaldo se corrompió por una falla del grabador de a bordo. El reporte de inteligencia de la Fuerza Aérea (IIR), desclasificado en 2026 vía PURSUE, lo cataloga explícitamente como 'no evaluado de forma definitiva'.",
   "summary_en": "On the night of September 8, 2021, a U.S. Special Operations Forces AC-130 gunship observed roughly 25 instances of unidentified aerial phenomena during a live-fire exercise in the Gulf of Oman. The electro-optical/infrared sensor captured 'cold orbs' —with no thermal signature of their own— that fled without changing altitude just as the 105mm cannon opened fire, flew in coordinated formations 'like dolphins swimming in a pod,' and reached up to 1,300 mph with no visible means of propulsion. The backup video was corrupted by an onboard recorder failure. The Air Force intelligence report (IIR), declassified in 2026 via PURSUE, explicitly catalogs it as 'not finally evaluated.'",

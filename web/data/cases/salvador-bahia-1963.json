@@ -1,6 +1,9 @@
 {
   "id": "salvador-bahia-1963",
   "num": 338,
+  "pursueReleases": [
+    5
+  ],
   "name": "Conde, Bahía · el tripulante muerto que el telégrafo desmintió en cinco minutos",
   "name_en": "Conde, Bahia · the dead crewman the telegraph disproved in five minutes",
   "year_start": 1963,
@@ -18,7 +21,7 @@
   "probability": 5,
   "mundanoType": "fraude",
   "posterior": {
-    "mundano_natural": 0.90,
+    "mundano_natural": 0.9,
     "humana_clasificada": 0.01,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.01,
