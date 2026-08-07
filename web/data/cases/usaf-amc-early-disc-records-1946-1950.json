@@ -81,7 +81,8 @@
     "Reporte de inteligencia aérea de noviembre de 1948 sobre objetos no identificados / platillos voladores, con referencia a los Países Bajos (dimensión de inteligencia exterior)",
     "Archivo «319.1 Flying Discs 1949»: reportes de incidentes bajo la FSR 200-4 (1948), con testigos militares y de la Civil Aviation Authority (CAA)",
     "Contexto: del memo Twining (1947) y el Proyecto Sign (1948) al Proyecto Grudge (1949), mayoritariamente escéptico",
-    "Procedencia: grupos de registros del Departamento de Guerra y la USAF en los Archivos Nacionales (NARA)"
+    "Procedencia: grupos de registros del Departamento de Guerra y la USAF en los Archivos Nacionales (NARA)",
+    "DOW-UAP-D100 (PURSUE Release 05): memo interno de noviembre 1948 al Air Materiel Command sobre el establecimiento del Proyecto Sign (por carta del 30 dic 1947), que concluye 'inescapable' que se ha observado algún tipo de objeto volador de origen no discernible, y discute si informar a la prensa antes de que 'tome el asunto en sus propias manos'"
   ],
   "evidence_en": [
     "Four AAF/USAF flying-disc files (1946-1950), declassified in the first PURSUE tranche (war.gov/UFO, May 8, 2026)",
@@ -89,7 +90,8 @@
     "November 1948 air-intelligence report on unidentified objects / flying saucers, referencing the Netherlands (foreign-intelligence dimension)",
     "'319.1 Flying Discs 1949' file: incident reports under FSR 200-4 (1948), with military and Civil Aviation Authority (CAA) witnesses",
     "Context: from the Twining memo (1947) and Project Sign (1948) to the mostly skeptical Project Grudge (1949)",
-    "Provenance: Department of War and USAF record groups at the National Archives (NARA)"
+    "Provenance: Department of War and USAF record groups at the National Archives (NARA)",
+    "DOW-UAP-D100 (PURSUE Release 05): internal November 1948 memo to Air Materiel Command on establishing Project Sign (per a Dec 30, 1947 letter), concluding it is 'inescapable' that some type of flying object of undiscernible origin has been observed, and discussing whether to inform the press before it 'takes it into its own hands'"
   ],
   "sources": [
     {
@@ -103,6 +105,12 @@
       "url": "https://www.nicap.org/twining_letter_docs.htm",
       "note": "Hito que enmarca la correspondencia del Air Materiel Command.",
       "note_en": "Milestone framing the Air Materiel Command correspondence."
+    },
+    {
+      "name": "war.gov/UFO — DOW-UAP-D100, Air Materiel Command Report on UFOs 1947-1948 (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Archivo de ~40 MB citado por su contenido textual; no embebido en el visor por su tamaño.",
+      "note_en": "~40 MB file cited by its textual content; not embedded in the viewer due to size."
     }
   ],
   "mundanoType": "misid",
