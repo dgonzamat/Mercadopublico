@@ -24,7 +24,7 @@ const NAV: Array<{ href: string; es: string; en: string }> = [
   // NA-1 · la puerta de entrada para el visitante nuevo, visible en desktop
   { href: "/resumen", es: "Resumen", en: "Summary" },
   { href: "/blog", es: "Blog", en: "Blog" },
-  { href: "/about", es: "Metodología", en: "Method" },
+  { href: "/releases", es: "PURSUE 2026", en: "PURSUE 2026" },
 ];
 
 export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
