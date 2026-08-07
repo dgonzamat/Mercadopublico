@@ -1,0 +1,101 @@
+{
+  "id": "cape-girardeau-1941",
+  "num": 336,
+  "name": "Cape Girardeau · el relato familiar de un accidente seis años antes de Roswell",
+  "name_en": "Cape Girardeau · the family account of a crash six years before Roswell",
+  "year_start": 1941,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 37.3059,
+    "lng": -89.5181,
+    "place": "Cerca de Cape Girardeau, Misuri (sitio exacto en disputa)",
+    "place_en": "Near Cape Girardeau, Missouri (exact site disputed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 10,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.15,
+    "nohumano_abierto": 0.02,
+    "indet": 0.40
+  },
+  "summary": "En la primavera de 1941, el reverendo William Guy Huffman —pastor recién llegado a la Red Star Baptist Church de Cape Girardeau, Misuri— fue llamado por la policía a lo que le describieron como un accidente aéreo. Según el relato que su nieta Charlette Mann hizo público décadas después, Huffman encontró un disco partido, tres cuerpos pequeños con trajes de aspecto metálico y símbolos no identificados en el interior; militares acordonaron el sitio, confiscaron una fotografía y exigieron silencio. Es, por seis años, el reclamo de nave-estrellada-con-cuerpos más antiguo de la ufología estadounidense —anterior a Roswell—, pero sin un solo documento, fotografía o testigo independiente que sobreviva para corroborarlo.",
+  "summary_en": "In the spring of 1941, Reverend William Guy Huffman —newly arrived pastor at Cape Girardeau's Red Star Baptist Church, Missouri— was called by police to what he was told was a plane crash. According to the account his granddaughter Charlette Mann made public decades later, Huffman found a split-open disc, three small bodies in metallic-looking suits, and unidentified symbols inside; the military cordoned off the site, confiscated a photograph, and demanded silence. For six years it stands as the oldest crashed-craft-with-bodies claim in American ufology —predating Roswell— but with not a single surviving document, photograph, or independent witness to corroborate it.",
+  "patterns": [
+    "8d"
+  ],
+  "category": "document",
+  "documents": [
+    {
+      "src": "/pursue/cape-girardeau-1941-context.jpg",
+      "type": "image",
+      "title": "Contexto · el Marquette Hotel, Cape Girardeau, Misuri (edificio de 1928)",
+      "title_en": "Context · the Marquette Hotel, Cape Girardeau, Missouri (built 1928)",
+      "source": "Marquette Hotel, Cape Girardeau.jpg · Nyttend · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Marquette_Hotel,_Cape_Girardeau.jpg"
+    }
+  ],
+  "whatHappened": "En la primavera de 1941, el reverendo William Guy Huffman había tomado hacía poco el pastorado de la Red Star Baptist Church en Cape Girardeau, sureste de Misuri. Según el relato transmitido por su familia, la policía local lo llamó una noche para atender lo que describieron como un accidente aéreo a unos quince minutos al sur de la ciudad. Al llegar, Huffman se encontró no con un avión sino con un objeto en forma de disco, partido en dos, con paneles interiores que dejaban ver perillas, cuadrantes y lo que a él le parecieron símbolos jeroglíficos. Cerca del objeto había tres cuerpos pequeños, cubiertos de la cabeza a los pies en algo similar a papel aluminio arrugado; según la versión familiar, uno de ellos aún estaba con vida cuando Huffman llegó y falleció en su presencia, por lo que el reverendo —cumpliendo su función pastoral— le administró los últimos sacramentos, del mismo modo que lo habría hecho con cualquier víctima humana.\n\nMilitares llegaron poco después, acordonaron el área, confiscaron una fotografía que un reportero local habría tomado esa noche —según la familia, mostraba a uno de los cuerpos sostenido entre dos hombres— y advirtieron a todos los presentes que no hablaran del incidente. Huffman guardó silencio público, pero le contó lo ocurrido a su esposa y a sus hijos. La historia permaneció dentro del círculo familiar durante décadas: su nieta, Charlette Mann, sostiene haberla escuchado de labios de su abuela en el lecho de muerte, y fue ella quien la hizo pública ante investigadores e in medios a partir de los años noventa. La fotografía original nunca reapareció.\n\nCuando periodistas e investigadores consultaron a las agencias correspondientes, tanto el FBI como la Fuerza Aérea respondieron que no tenían ningún registro del incidente. En 1998, el investigador James Westwood viajó a Cape Girardeau para examinar archivos locales y contrastar la cronología familiar; el diario Southeast Missourian documentó su trabajo, que encontró inconsistencias en los registros disponibles sobre el propio Huffman —fechas y datos que no calzan limpiamente con la versión contada—. Sin embargo, la reconstrucción de Westwood no llegó a una explicación alternativa demostrada: identificó una posible confusión de año, no una causa concreta que reemplace el relato. El caso ha seguido circulando en podcasts y programas especializados hasta 2026 —incluida una nota en Coast to Coast AM en julio de ese año— precisamente por esa cualidad de quedar en un punto intermedio: ni confirmado, ni desmentido con solidez.",
+  "whatHappened_en": "In the spring of 1941, Reverend William Guy Huffman had recently taken the pastorate of Red Star Baptist Church in Cape Girardeau, in southeastern Missouri. By the account passed down through his family, local police called him out one night to attend what they described as a plane crash roughly fifteen minutes south of town. On arriving, Huffman reportedly found not a plane but a disc-shaped object, split in two, its interior panels showing knobs, dials, and what looked to him like hieroglyphic symbols. Near the object were three small bodies, covered head to toe in something resembling crinkled aluminum foil; by the family's version, one was still alive when Huffman arrived and died in his presence, prompting the reverend —in his pastoral role— to administer last rites, as he would have for any human casualty.\n\nMilitary personnel arrived shortly after, cordoned off the area, confiscated a photograph reportedly taken that night by a local newsman —showing, per the family, one of the bodies propped between two men— and warned everyone present not to discuss the incident. Huffman kept his public silence but told his wife and children what he had seen. The story stayed within the family for decades: his granddaughter, Charlette Mann, says she heard it from her grandmother on her deathbed, and it was Mann who made it public to researchers and media starting in the 1990s. The original photograph never resurfaced.\n\nWhen journalists and researchers approached the relevant agencies, both the FBI and the Air Force said they held no record of the incident. In 1998, researcher James Westwood traveled to Cape Girardeau to examine local archives and cross-check the family's timeline; the Southeast Missourian documented his work, which found inconsistencies in the available records concerning Huffman himself —dates and details that do not cleanly match the account. Westwood's reconstruction, however, did not arrive at a demonstrated alternative explanation: he identified a possible year mix-up, not a concrete cause replacing the story. The case has continued circulating on podcasts and specialized programs through 2026 —including a segment on Coast to Coast AM that July— precisely because it sits in that middle ground: neither confirmed nor solidly debunked.",
+  "whyMatters": "El valor de Cape Girardeau para el corpus no está en su fuerza probatoria —que es casi nula— sino en su posición cronológica: si el relato tiene algún grano de verdad, sería el reclamo de nave estrellada con cuerpos no-humanos recuperados más antiguo de la ufología estadounidense, seis años anterior a Roswell. Eso lo convierte en el punto de origen simbólico de todo el género narrativo de 'recuperación y encubrimiento' que atraviesa el corpus hasta el presente —de Roswell a AAWSAP, de Bob Lazar a Grusch, de Majestic-12 al testimonio de esta misma semana de Bigelow sobre naves recuperadas—. Estudiar dónde empieza esa tradición narrativa es tan relevante como estudiar cualquiera de sus capítulos posteriores.\n\nEpistemológicamente, el caso pertenece a la misma familia que Majestic-12 y la confesión de Boyd Bushman: una afirmación extraordinaria sin un solo documento contemporáneo, fotografía superviviente o testigo independiente vivo, sostenida únicamente por transmisión oral familiar a través de generaciones. La diferencia importante es que, a diferencia de Aztec 1948 —una estafa comprobada de Newton y GeBauer, con los estafadores identificados—, aquí no existe una explicación alternativa demostrada. El trabajo de campo de Westwood (1998) encontró grietas en la cronología pública de Huffman, pero él mismo reconoció que su reconstrucción de archivo dejaba abierta la pregunta de fondo, apoyándose en un año posiblemente mal recordado antes que en una causa alternativa concreta.\n\nLa calibración del posterior refleja esa honestidad: la masa mayor está en `indet` (0.40), seguida de `mundano_natural` (0.35, `misid`) bajo la hipótesis más parsimoniosa —que el aviso policial original, descrito literalmente como 'accidente aéreo', sea la semilla real del relato, y que la iconografía extraterrestre se haya acumulado sobre ese núcleo a través de generaciones de narración oral—. Se reserva una masa no trivial en `nohumano_encubierto` (0.15) porque, de ser cierto el relato en sus términos literales, encajaría exactamente en esa categoría, y porque el caso ha sido tomado en serio por investigadores serios del campo (Ryan Wood, entre otros) precisamente por la consistencia interna del testimonio familiar a lo largo de décadas. Nada de esto se puede verificar hoy: FBI y Fuerza Aérea niegan tener registro alguno, y la única evidencia física reclamada —la fotografía— está perdida.",
+  "whyMatters_en": "Cape Girardeau's value to the corpus lies not in its evidentiary strength —which is nearly nil— but in its chronological position: if the account holds any grain of truth, it would be the oldest crashed-craft-with-recovered-non-human-bodies claim in American ufology, six years before Roswell. That makes it the symbolic point of origin for the entire 'recovery and cover-up' narrative genre running through the corpus to the present —from Roswell to AAWSAP, from Bob Lazar to Grusch, from Majestic-12 to this very week's testimony from Bigelow about recovered craft. Studying where that narrative tradition begins is as relevant as studying any of its later chapters.\n\nEpistemologically, the case belongs to the same family as Majestic-12 and Boyd Bushman's confession: an extraordinary claim with not a single contemporary document, surviving photograph, or living independent witness, sustained only by oral family transmission across generations. The important difference is that, unlike Aztec 1948 —a proven Newton and GeBauer scam, with the con men identified— no demonstrated alternative explanation exists here. James Westwood's 1998 fieldwork found cracks in Huffman's public chronology, but Westwood himself acknowledged his archival reconstruction left the underlying question open, resting on a possibly misremembered year rather than a concrete alternative cause.\n\nThe posterior calibration reflects that honesty: the largest mass sits on `indet` (0.40), followed by `mundano_natural` (0.35, `misid`) under the most parsimonious hypothesis —that the original police call, literally described as a 'plane crash,' is the real seed of the story, with extraterrestrial iconography accreting onto that core across generations of oral retelling. A non-trivial mass is reserved for `nohumano_encubierto` (0.15) because, taken literally, the account would fit exactly that category, and because the case has been taken seriously by credentialed researchers in the field (Ryan Wood, among others) precisely for the internal consistency of the family testimony across decades. None of this can be verified today: the FBI and Air Force deny holding any record, and the sole physical evidence ever claimed —the photograph— is lost.",
+  "evidence": [
+    "Relato transmitido por la familia Huffman: el reverendo William Guy Huffman atendió un supuesto choque de disco con tres cuerpos no-humanos cerca de Cape Girardeau, Misuri, en primavera de 1941",
+    "Testimonio público de Charlette Mann (nieta de Huffman), quien dice haber conocido el relato de su abuela en el lecho de muerte, primera divulgación pública en los años noventa",
+    "Fotografía reclamada, tomada por un reportero local la noche del hecho, confiscada según el relato y nunca recuperada",
+    "FBI y Fuerza Aérea de EE.UU. responden no tener registro documental del incidente al ser consultados",
+    "Investigación de campo de James Westwood (1998, reportada por Southeast Missourian): encuentra inconsistencias en registros sobre Huffman, sin llegar a una explicación alternativa demostrada",
+    "Cobertura sostenida en medios especializados hasta 2026 (Coast to Coast AM, julio 2026) como caso 'ni confirmado ni desmentido'"
+  ],
+  "evidence_en": [
+    "Account passed down by the Huffman family: Reverend William Guy Huffman attended an alleged disc crash with three non-human bodies near Cape Girardeau, Missouri, in spring 1941",
+    "Public testimony from Charlette Mann (Huffman's granddaughter), who says she learned the account from her grandmother on her deathbed, first publicly disclosed in the 1990s",
+    "Claimed photograph, taken by a local newsman the night of the event, confiscated per the account and never recovered",
+    "FBI and U.S. Air Force respond they hold no documentary record of the incident when queried",
+    "James Westwood's 1998 field investigation (reported by the Southeast Missourian): finds inconsistencies in records about Huffman, without reaching a demonstrated alternative explanation",
+    "Sustained coverage in specialized media through 2026 (Coast to Coast AM, July 2026) as a case 'neither confirmed nor debunked'"
+  ],
+  "sources": [
+    {
+      "name": "Southeast Missourian — Where the Road Leads: Folklore or fact",
+      "url": "https://www.semissourian.com/history/where-the-road-leads-folklore-or-fact-a28a2624"
+    },
+    {
+      "name": "KFVS12 — Looking back at alleged UFO crash of 1941 near Cape Girardeau",
+      "url": "https://www.kfvs12.com/2021/05/26/alleged-ufo-crash-cape-girardeau-area/"
+    },
+    {
+      "name": "UFO Evidence — UFO Crash and Retrieval in Missouri, 1941 (Cape Girardeau)",
+      "url": "http://www.ufoevidence.org/cases/case858.htm"
+    },
+    {
+      "name": "exoNews — Before Roswell: The 1941 UFO Incident at Cape Girardeau",
+      "url": "https://exonews.org/before-roswell-the-1941-ufo-incident-at-cape-girardeau/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "Southeast Missourian — Where the Road Leads: Folklore or fact",
+      "url": "https://www.semissourian.com/history/where-the-road-leads-folklore-or-fact-a28a2624"
+    },
+    {
+      "name": "KFVS12 — Looking back at alleged UFO crash of 1941 near Cape Girardeau",
+      "url": "https://www.kfvs12.com/2021/05/26/alleged-ufo-crash-cape-girardeau-area/"
+    },
+    {
+      "name": "UFO Evidence — UFO Crash and Retrieval in Missouri, 1941 (Cape Girardeau)",
+      "url": "http://www.ufoevidence.org/cases/case858.htm"
+    },
+    {
+      "name": "exoNews — Before Roswell: The 1941 UFO Incident at Cape Girardeau",
+      "url": "https://exonews.org/before-roswell-the-1941-ufo-incident-at-cape-girardeau/"
+    }
+  ]
+}
