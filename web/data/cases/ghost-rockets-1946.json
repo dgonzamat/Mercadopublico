@@ -1,6 +1,9 @@
 {
   "id": "ghost-rockets-1946",
   "num": 70,
+  "pursueReleases": [
+    5
+  ],
   "name": "Ghost Rockets · Försvarsstaben",
   "year_start": 1946,
   "country": "SE",

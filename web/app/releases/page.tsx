@@ -22,6 +22,7 @@ const LABELS: Record<number, { es: string; en: string }> = {
   2: { es: "DOE / DOW / CIA · Sandia green fireballs", en: "DOE / DOW / CIA · Sandia green fireballs" },
   3: { es: "Archivo histórico de la CIA · Robertson, U-2", en: "CIA historical archive · Robertson, U-2" },
   4: { es: "Pantex 2015, STS-80, Range Fouler, Sign/Blue Book", en: "Pantex 2015, STS-80, Range Fouler, Sign/Blue Book" },
+  5: { es: "FBI/DoW · Puerto Rico, Bahía, Golfo de Omán, triángulos 2011-2026", en: "FBI/DoW · Puerto Rico, Bahia, Gulf of Oman, 2011-2026 triangles" },
 };
 
 export default function ReleasesIndex() {

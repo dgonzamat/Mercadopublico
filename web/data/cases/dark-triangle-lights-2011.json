@@ -1,6 +1,9 @@
 {
   "id": "dark-triangle-lights-2011",
   "num": 342,
+  "pursueReleases": [
+    5
+  ],
   "name": "El triángulo de 60 metros que zumbaba bajo",
   "name_en": "The 200-foot triangle that hummed low overhead",
   "year_start": 2011,
@@ -18,12 +21,12 @@
   "probability": 30,
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.40,
-    "humana_clasificada": 0.20,
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.2,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.14,
     "nohumano_abierto": 0.05,
-    "indet": 0.20
+    "indet": 0.2
   },
   "summary": "Una noche de junio o julio de 2011, dos ocupantes de un vehículo que salía de su vivienda vieron pasar, a baja altura y rumbo norte, un triángulo negro masivo con una luz blanca del tamaño de un auto en cada esquina, emitiendo un zumbido bajo y pulsante. Estimaron sus dimensiones en unos 60 por 30 metros, a unos 240 metros de altura. El objeto desapareció tras la línea de árboles en 10-15 segundos, sin dejar estela, antes de que pudieran filmarlo. El FBI tomó la declaración de ambos testigos en abril de 2025 — casi catorce años después del hecho.",
   "summary_en": "One night in June or July 2011, two people in a car leaving their driveway watched a massive black triangle pass low overhead heading north, a car-sized white light at each corner, emitting a low, pulsing hum. They estimated its dimensions at roughly 200 by 100 feet, about 800 feet up. The object disappeared behind the treeline in 10-15 seconds, leaving no contrail, before they could film it. The FBI took both witnesses' statements in April 2025 — nearly fourteen years after the event.",

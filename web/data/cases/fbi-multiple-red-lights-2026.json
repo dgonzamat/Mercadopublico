@@ -1,6 +1,9 @@
 {
   "id": "fbi-multiple-red-lights-2026",
   "num": 340,
+  "pursueReleases": [
+    5
+  ],
   "name": "El reloj mecánico que se adelantó 25 minutos",
   "name_en": "The mechanical watch that ran 25 minutes fast",
   "year_start": 2026,
@@ -19,7 +22,7 @@
   "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.35,
-    "humana_clasificada": 0.10,
+    "humana_clasificada": 0.1,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.13,
     "nohumano_abierto": 0.05,

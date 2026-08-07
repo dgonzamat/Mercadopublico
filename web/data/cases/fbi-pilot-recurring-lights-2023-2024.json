@@ -1,6 +1,9 @@
 {
   "id": "fbi-pilot-recurring-lights-2023-2024",
   "num": 345,
+  "pursueReleases": [
+    5
+  ],
   "name": "Las luces que llevan un año siguiendo la ruta transatlántica — y un triángulo sobre Bagram, veinte años antes",
   "name_en": "The lights that have followed the transatlantic route for a year — and a triangle over Bagram, twenty years earlier",
   "year_start": 2023,

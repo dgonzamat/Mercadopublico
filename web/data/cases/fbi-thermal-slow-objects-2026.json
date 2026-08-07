@@ -1,6 +1,9 @@
 {
   "id": "fbi-thermal-slow-objects-2026",
   "num": 344,
+  "pursueReleases": [
+    5
+  ],
   "name": "Dos noches de objetos térmicos lentos, calibrados contra un Black Hawk",
   "name_en": "Two nights of slow thermal objects, calibrated against a Black Hawk",
   "year_start": 2026,
