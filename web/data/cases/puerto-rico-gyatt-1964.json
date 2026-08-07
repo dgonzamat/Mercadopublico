@@ -1,0 +1,100 @@
+{
+  "id": "puerto-rico-gyatt-1964",
+  "num": 337,
+  "name": "USS Gyatt · el radar de Puerto Rico y el jet clasificado a Mach 3",
+  "name_en": "USS Gyatt · the Puerto Rico radar contact and the classified Mach 3 jet",
+  "year_start": 1964,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 18.245,
+    "lng": -65.638,
+    "place": "Estación Aeronaval Roosevelt Roads / Atlantic Fleet Weapons Range, Puerto Rico",
+    "place_en": "Roosevelt Roads Naval Air Station / Atlantic Fleet Weapons Range, Puerto Rico"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 15,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.50,
+    "humana_clasificada": 0.30,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.01,
+    "indet": 0.12
+  },
+  "summary": "Entre el 16 y el 24 de noviembre de 1964, el destructor USS Gyatt y varios cazas F-8 Crusader de la Marina rastrearon en la Zona de Pruebas de Armamento de la Flota del Atlántico, cerca de Puerto Rico, un objeto de alta velocidad y alta altitud —hasta más de 3.800 nudos en radar, Mach 3 según estimación del piloto— con forma delta y del tamaño de un caza. Documentos de la CIA desclasificados en 2026 vía PURSUE muestran que la investigación se tramitó a través de los canales de control BYEMAN/OXCART y concluyó que probablemente se trataba de una aeronave delta estadounidense clasificada con capacidad de ascenso muy superior a la del F-8 —no un OVNI en sentido literal, sino el reflejo de un programa que la propia CIA no podía nombrar en el documento.",
+  "summary_en": "Between November 16 and 24, 1964, the destroyer USS Gyatt and several Navy F-8 Crusader fighters tracked a high-speed, high-altitude object —over 3,800 knots on radar, Mach 3 by the pilot's estimate— delta-shaped and fighter-sized, in the Atlantic Fleet Weapons Range near Puerto Rico. CIA documents declassified in 2026 via PURSUE show the investigation was handled through BYEMAN/OXCART control channels and concluded it was probably a classified U.S. delta-wing aircraft with far higher climb performance than the F-8 —not a UFO in the literal sense, but the shadow of a program the CIA's own document could not name.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/CIAUAPD022_UnidentifiedFlyingObjectReportednearPuertoRico_1965.pdf",
+      "type": "pdf",
+      "title": "CIAUAPD022 — Memorando CIA/BYEMAN sobre el UFO de Puerto Rico (1 y 11 feb 1965)",
+      "title_en": "CIAUAPD022 — CIA/BYEMAN memo on the Puerto Rico UFO (Feb 1 & 11, 1965)",
+      "source": "CIA, tramitado vía canal de control BYEMAN/OXCART (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/CIAUAPD022_UnidentifiedFlyingObjectReportednearPuertoRico_1965.pdf"
+    },
+    {
+      "src": "/pursue/CIAUAPD023_BriefingNotesforMrWalterElder.pdf",
+      "type": "pdf",
+      "title": "CIAUAPD023 — Notas de briefing para Walter N. Elder (asistente especial del director de la CIA)",
+      "title_en": "CIAUAPD023 — Briefing notes for Walter N. Elder (special assistant to the CIA Director)",
+      "source": "CIA (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/CIAUAPD023_BriefingNotesforMrWalterElder.pdf"
+    }
+  ],
+  "whatHappened": "El 19 de noviembre de 1964, el destructor lanzamisiles USS Gyatt —que operaba con un caza F-8 Crusader a 35.000 pies dentro de la Zona de Pruebas de Armamento de la Flota del Atlántico— detectó en su radar un objeto de alta velocidad y alta altitud. El objeto redujo velocidad y se mantuvo estacionario a las nueve del reloj respecto al Crusader, a unas nueve millas. El piloto seleccionó postquemador e intentó cerrar distancia; a unas cinco millas, el objeto aceleró de forma extrema en un ascenso de 20 grados y se alejó con rapidez. Permaneció en el radar del Gyatt durante veintiún minutos y, al regresar el Crusader a la Estación Aeronaval Roosevelt Roads, volvió a acercarse desde popa hasta cuatro millas. El piloto, con luna llena y buena visibilidad, describió el objeto como de forma delta, del tamaño de un caza. El radar del Gyatt —un AN/SPS-49 en programa de evaluación, por lo que había una cámara grabando la pantalla— confirmó una velocidad relativa superior a 3.800 nudos. Cinco días después, el 24 de noviembre, otro Crusader que volaba a Mach .99 a 45.000 pies registró un objetivo de características similares alejándose a igual velocidad.\n\nEl caso llegó hasta el más alto nivel de la CIA: unas notas de briefing dirigidas a Walter N. Elder, asistente especial del director John McCone, resumen el episodio con los mismos datos —velocidad, altitud, comportamiento— y registran que la Oficina de Inteligencia Naval (ONI) no tenía información adicional y pidió ser notificada de incidentes similares en el futuro. El memorando de seguimiento, fechado el 11 de febrero de 1965 y tramitado bajo los canales de control BYEMAN, con acceso restringido al proyecto OXCART —el programa del avión espía A-12, predecesor del SR-71—, revisó la fotografía radar y la correspondencia asociada y llegó a una conclusión distinta a la inicial: no hubo un único objeto ultrarrápido durante todo el período 18-24 de noviembre, sino \"aparentemente válidas trazas y/u observaciones de aeronaves no identificadas\" en varias fechas. Sobre el incidente específico del 19 de noviembre, el análisis concluyó que el 'llamado OVNI' era 'probablemente una aeronave de ala delta de un tipo con un rendimiento de ascenso significativamente superior al del F-8C' en el régimen de 50.000 pies. El documento nota que había pruebas de misiles programadas en la zona durante esas fechas, y que un MiG-21 soviético con configuración de reconocimiento operando desde Cuba —a solo 325 millas náuticas— era técnicamente posible, aunque sin evidencia que lo confirmara o descartara.",
+  "whatHappened_en": "On November 19, 1964, the guided-missile destroyer USS Gyatt —working with a Navy F-8 Crusader fighter at 35,000 feet inside the Atlantic Fleet Weapons Range— detected a high-speed, high-altitude object on radar. The object slowed and held position at the Crusader's nine o'clock, about nine miles out. The pilot selected afterburner and tried to close the distance; at about five miles, the object accelerated extremely in a 20-degree climb and pulled away rapidly. It remained on the Gyatt's radar for twenty-one minutes, and as the Crusader returned to Roosevelt Roads Naval Air Station, it closed again from astern to four miles. The pilot, under full moonlight and good visibility, described the object as delta-shaped, about the size of a jet fighter. The Gyatt's radar —an AN/SPS-49 undergoing an evaluation program, which is why a camera was recording the scope— confirmed a relative speed in excess of 3,800 knots. Five days later, on November 24, another Crusader flying at Mach .99 at 45,000 feet recorded a similarly characterized target pulling away at matching speed.\n\nThe case reached the highest levels of the CIA: briefing notes prepared for Walter N. Elder, special assistant to Director John McCone, summarize the episode with the same figures —speed, altitude, behavior— and record that the Office of Naval Intelligence (ONI) had no further information and asked to be notified of similar incidents going forward. The follow-up memo, dated February 11, 1965 and handled under BYEMAN control channels with access restricted to Project OXCART —the A-12 spy plane program, predecessor to the SR-71— reviewed the radar photography and associated correspondence and reached a more nuanced conclusion than the initial reports: there was no single ultra-high-speed object throughout the entire November 18-24 period, but rather 'apparently valid tracks and/or observations of unidentified aircraft' on several dates. On the specific November 19 incident, the analysis concluded the 'so-called UFO' was 'probably a delta-wing fighter of a type having significantly higher climb performance than the F-8C' at the 50,000-foot altitude regime. The document notes that missile test firings were scheduled in the area during those dates, and that a Soviet MiG-21 in reconnaissance configuration operating out of Cuba —just 325 nautical miles away— was technically possible, though with no evidence to confirm or deny it.",
+  "whyMatters": "El expediente de Puerto Rico es un caso modelo de cómo el propio aparato de inteligencia estadounidense investigó sus 'OVNIs' de la Guerra Fría: con radar de calidad militar, fotografía de la pantalla, corroboración visual de piloto, y un análisis final que llegó hasta el escritorio de un asistente directo del director de la CIA. Y es, al mismo tiempo, un caso donde el propio aparato de clasificación oscurece la respuesta: el memorando de cierre se tramitó a través del canal de control OXCART —el programa del A-12, la aeronave más rápida y de mayor altitud jamás operada por Estados Unidos hasta ese momento—, lo que sugiere que los analistas que evaluaron el caso tenían acceso privilegiado a información sobre pruebas de aeronaves clasificadas estadounidenses que el propio memorando no podía citar abiertamente. Eso explica el peso relativamente alto asignado a `humana_clasificada` (0.30) en el posterior: no se trata solo de una aeronave delta mal identificada en abstracto, sino potencialmente del programa mismo que manejaba el documento.\n\nLa masa mayor sigue en `mundano_natural` (0.50, `misid`) porque la propia CIA, con acceso a toda la evidencia técnica, llegó a esa conclusión con relativa confianza —'probablemente' una aeronave delta de alto rendimiento, no un fenómeno sin explicación—. Queda una cola de `indet` (0.12) porque el análisis de 1965 reconoce que el patrón completo de contactos entre el 16 y el 24 de noviembre no se resolvió por completo, y una fracción menor en `adversaria` (0.05) porque la hipótesis de un MiG-21 soviético operando desde Cuba se consideró seriamente sin poder confirmarla ni descartarla.\n\nPara el corpus, el valor añadido no es que el caso resulte sorprendente en su desenlace —una aeronave clasificada explicando un contacto de radar es, de lejos, la explicación más común en este tipo de expedientes militares de la Guerra Fría—, sino que ahora existe documentación primaria verificable, con nombre de analista, cadena de custodia BYEMAN y fecha de desclasificación 2026, algo que antes de PURSUE Release 05 no era públicamente accesible en absoluto.",
+  "whyMatters_en": "The Puerto Rico file is a model case of how the U.S. intelligence apparatus itself investigated its Cold War 'UFOs': with military-grade radar, scope photography, pilot visual corroboration, and a final analysis that reached the desk of the CIA Director's direct assistant. It is, at the same time, a case where the classification apparatus itself obscures the answer: the closing memo was routed through the OXCART control channel —the A-12 program, the fastest and highest-flying aircraft the United States had operated up to that point— suggesting the analysts evaluating the case had privileged access to information about classified U.S. aircraft testing that the memo itself could not openly cite. That explains the relatively high weight assigned to `humana_clasificada` (0.30) in the posterior: this may not just be an abstractly misidentified delta aircraft, but potentially the very program handling the document.\n\nThe largest mass remains on `mundano_natural` (0.50, `misid`) because the CIA itself, with access to all the technical evidence, reached that conclusion with relative confidence —'probably' a high-performance delta aircraft, not an unexplained phenomenon. A tail of `indet` (0.12) remains because the 1965 analysis acknowledges the full pattern of contacts between November 16 and 24 was not entirely resolved, and a smaller fraction sits on `adversaria` (0.05) because the hypothesis of a Soviet MiG-21 operating out of Cuba was seriously considered without being confirmed or ruled out.\n\nFor the corpus, the added value isn't that the case is surprising in its outcome —a classified aircraft explaining a radar contact is, by far, the most common explanation in this kind of Cold War military file— but that verifiable primary documentation now exists, with an analyst's name, a BYEMAN chain of custody, and a 2026 declassification date, none of which was publicly accessible at all before PURSUE Release 05.",
+  "evidence": [
+    "Radar del USS Gyatt (AN/SPS-49) rastrea un objeto a más de 3.800 nudos el 19 de noviembre de 1964, con fotografía de pantalla en cámara de evaluación",
+    "Piloto de F-8 Crusader observa visualmente un objeto delta del tamaño de un caza, con luna llena y buena visibilidad; estima velocidad superior a Mach 3",
+    "Segundo contacto de características similares el 24 de noviembre, registrado por otro Crusader volando a Mach .99",
+    "Briefing notes para Walter N. Elder, asistente especial del director de la CIA John McCone, resumiendo el caso",
+    "Memorando de análisis (11 feb 1965), tramitado vía canal de control BYEMAN/OXCART, concluye 'probablemente' aeronave delta clasificada estadounidense",
+    "El documento considera y no descarta la hipótesis de un MiG-21 soviético con configuración de reconocimiento operando desde Cuba"
+  ],
+  "evidence_en": [
+    "USS Gyatt radar (AN/SPS-49) tracks an object exceeding 3,800 knots on November 19, 1964, with scope photography via an evaluation-program camera",
+    "F-8 Crusader pilot visually observes a fighter-sized delta object under full moonlight and good visibility; estimates speed above Mach 3",
+    "A second similarly characterized contact on November 24, recorded by another Crusader flying at Mach .99",
+    "Briefing notes for Walter N. Elder, special assistant to CIA Director John McCone, summarizing the case",
+    "Analysis memo (Feb 11, 1965), routed via BYEMAN/OXCART control channel, concludes 'probably' a classified U.S. delta aircraft",
+    "The document considers, without ruling out, the hypothesis of a Soviet MiG-21 in reconnaissance configuration operating from Cuba"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — CIAUAPD022, memorando CIA sobre UFO cerca de Puerto Rico (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — CIAUAPD023, notas de briefing para Walter N. Elder (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — CIAUAPD022, CIA memo on UFO near Puerto Rico (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — CIAUAPD023, briefing notes for Walter N. Elder (PURSUE Release 05)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    }
+  ]
+}
