@@ -41,9 +41,9 @@ const NAV_LINKS = [
     en: { label: "Blog", sub: "Method notes and progress" },
   },
   {
-    href: "/about",
-    es: { label: "Metodología", sub: "Cómo se construyó" },
-    en: { label: "Method", sub: "How it was built" },
+    href: "/releases",
+    es: { label: "PURSUE 2026", sub: "Las entregas desclasificadas del Department of War" },
+    en: { label: "PURSUE 2026", sub: "The Department of War declassification drops" },
   },
   {
     href: "/resumen",
@@ -56,7 +56,7 @@ const SECONDARY_LINKS = [
   { href: "/patterns", es: "Patrones", en: "Patterns" },
   { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
   { href: "/cobertura", es: "Cobertura", en: "Coverage" },
-  { href: "/releases", es: "Releases PURSUE", en: "PURSUE releases" },
+  { href: "/about", es: "Metodología", en: "Method" },
   { href: "/fuentes", es: "Fuentes", en: "Sources" },
   { href: "/contact", es: "Contacto", en: "Contact" },
   { href: "/visitantes", es: "Visitantes", en: "Visitors" },
