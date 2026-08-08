@@ -1,0 +1,97 @@
+{
+  "id": "south-asian-object-2023",
+  "num": 353,
+  "pursueReleases": [],
+  "name": "El MQ-9 que grabó a otro MQ-9 — y una estela que era compresión de video",
+  "name_en": "The MQ-9 that filmed another MQ-9 — and a wake that was video compression",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Asia del Sur (país exacto no revelado; plataforma y liberación son de EE.UU.)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 25,
+    "lng": 75,
+    "place": "Asia del Sur (ubicación exacta no revelada)",
+    "place_en": "South Asia (exact location undisclosed)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 10,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.78,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.01,
+    "indet": 0.15
+  },
+  "summary": "El 15 de enero de 2023, un dron MQ-9 Reaper que filmaba a otro MQ-9 en Asia del Sur registró un objeto con una aparente estela atmosférica o de cavitación cruzando el campo de visión del sensor. El director de la AARO, Sean Kirkpatrick, presentó el caso ante el Senado el 19 de abril de 2023 junto al Mosul Orb, pero con un desenlace distinto: tras analizar el video completo, sumar metraje con mayor distancia focal y cruzar datos de tráfico aéreo comercial, la AARO evaluó que el objeto era probablemente una aeronave comercial, y que la estela era un artefacto de compresión del sensor — no un fenómeno físico del objeto. La resolución del caso, dijo la oficina, seguía pendiente de revisión final.",
+  "summary_en": "On January 15, 2023, an MQ-9 Reaper drone filming another MQ-9 over South Asia recorded an object with an apparent atmospheric or cavitation wake crossing the sensor's field of view. AARO director Sean Kirkpatrick presented the case to the Senate on April 19, 2023 alongside the Mosul Orb, but with a different outcome: after analyzing the full video, adding footage with a longer focal length, and cross-referencing commercial air traffic data, AARO assessed the object was likely a commercial aircraft, and the wake a sensor compression artifact — not a physical phenomenon of the object. Case resolution, the office said, remained pending final review.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/880270",
+      "type": "video",
+      "title": "'South Asian Object 1' — el clip presentado ante el Senado, 15 ene 2023 (9 s)",
+      "title_en": "'South Asian Object 1' — the clip presented to the Senate, Jan 15 2023 (9 s)",
+      "source": "DoD vía DVIDS · Video ID 880270",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/880270"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/880271",
+      "type": "video",
+      "title": "'South Asian Object 2' — metraje adicional con mayor distancia focal usado para el análisis (2:10)",
+      "title_en": "'South Asian Object 2' — additional longer-focal-length footage used for the analysis (2:10)",
+      "source": "DoD vía DVIDS · Video ID 880271",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/880271"
+    }
+  ],
+  "whatHappened": "El 15 de enero de 2023, un sensor infrarrojo de visión frontal (FLIR) montado en un dron MQ-9 Reaper estadounidense registró, mientras filmaba a otro MQ-9 en una zona de Asia del Sur cuyo país exacto no se reveló, un objeto que cruzaba el campo de visión de izquierda a derecha con lo que parecía ser una estela atmosférica o de cavitación arrastrándose detrás de él — el tipo de rastro visual que en video convencional sugeriría un objeto desplazándose a gran velocidad y perturbando el aire o alguna superficie a su paso.\n\nEl caso llegó al conocimiento público el 19 de abril de 2023, cuando el director de la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), el Dr. Sean Kirkpatrick, lo presentó en una audiencia abierta del Senate Armed Services Committee sobre Fenómenos Anómalos No Identificados — la misma sesión en la que mostró el 'Mosul Orb' de 2016 y el objeto esférico de Medio Oriente de 2022. A diferencia de esos dos, para este caso Kirkpatrick sí tenía una explicación técnica que ofrecer.\n\nSegún la descripción oficial publicada junto al video, la AARO analizó el metraje de movimiento completo, incorporó imágenes adicionales capturadas con una distancia focal más larga —lo que en la práctica permite un acercamiento óptico mayor sobre el mismo objeto— y cruzó esos datos con los registros de tráfico aéreo comercial de la región. El resultado: la oficina evaluó que el objeto era, con probabilidad, una aeronave comercial, y que la aparente estela de cavitación era en realidad un artefacto de compresión de video —una distorsión que introduce el propio códec de compresión al procesar el movimiento y el contraste térmico de un objeto en desplazamiento, no un fenómeno físico ocurriendo alrededor del objeto real—.\n\nLa AARO fue explícita, sin embargo, en que esta conclusión no cerraba el expediente de forma definitiva: la ficha oficial señala que 'la resolución del caso está pendiente de revisión final', una fórmula que reconoce el peso del análisis técnico realizado sin todavía sellar el caso como resuelto en el registro formal de la oficina.",
+  "whatHappened_en": "On January 15, 2023, a forward-looking infrared (FLIR) sensor mounted on a U.S. MQ-9 Reaper drone recorded, while filming another MQ-9 over an area of South Asia whose exact country was not disclosed, an object crossing the sensor's field of view from left to right with what appeared to be an atmospheric or cavitation wake trailing behind it — the kind of visual trail that in conventional video would suggest an object moving at high speed and disturbing the air or some surface in its path.\n\nThe case became publicly known on April 19, 2023, when the director of the All-domain Anomaly Resolution Office (AARO), Dr. Sean Kirkpatrick, presented it at an open hearing of the Senate Armed Services Committee on Unidentified Anomalous Phenomena — the same session where he showed the 2016 'Mosul Orb' and the 2022 Middle East spherical object. Unlike those two, for this case Kirkpatrick did have a technical explanation to offer.\n\nPer the official description published alongside the video, AARO analyzed the full-motion footage, incorporated additional imagery captured with a longer focal length —which in practice allows greater optical zoom on the same object— and cross-referenced that data against the region's commercial air traffic records. The result: the office assessed the object was likely a commercial aircraft, and that the apparent cavitation wake was actually a video compression artifact —a distortion introduced by the compression codec itself when processing the motion and thermal contrast of a moving object, not a physical phenomenon occurring around the actual object.\n\nAARO was explicit, however, that this conclusion did not close the file definitively: the official record states that 'case resolution is pending final review,' a formulation that acknowledges the weight of the technical analysis performed without yet formally sealing the case as resolved in the office's record.",
+  "whyMatters": "Este expediente vale por lo que muestra sobre el proceso de resolución, no por el objeto en sí. Es uno de los pocos casos del corpus donde la propia agencia responsable documenta, paso a paso, cómo pasó de 'objeto anómalo con estela inexplicable' a 'probable aeronave comercial con artefacto de sensor' — analizando metraje adicional con mayor zoom óptico y cruzando esos datos con registros de tráfico aéreo real. Es exactamente el tipo de metodología reproducible que la mayoría de los expedientes UAP, incluidos varios de este mismo corpus, no llegan a mostrar.\n\nEl detalle técnico central —que una 'estela de cavitación' visualmente convincente resultó ser compresión de video, no un fenómeno físico— es una lección de alcance general para la interpretación de cualquier metraje de sensor militar de baja resolución. Los códecs de compresión introducen artefactos visuales alrededor de bordes de alto contraste en movimiento, y esos artefactos pueden imitar de forma convincente estelas, halos o deformaciones que un observador entrenado interpretaría como propiedades físicas del objeto. Cualquier lectura de 'estela anómala' en metraje comprimido de baja calidad debería, a partir de este caso, tratarse con escepticismo adicional por defecto.\n\nQue el caso siga técnicamente 'pendiente de revisión final' pese a una explicación tan completa es también instructivo: refleja el estándar relativamente alto que la AARO se autoimpone antes de cerrar un expediente de forma oficial, incluso cuando el peso de la evidencia apunta con claridad hacia una explicación convencional. El posterior de este caso carga la enorme mayoría de la masa en 'mundano_natural' precisamente por eso: no es una sospecha sin sustento, es la conclusión de un proceso analítico documentado con datos verificables —tráfico aéreo comercial, distancia focal, compresión de video— que el propio corpus puede describir con precisión en vez de especular.",
+  "whyMatters_en": "This file's value lies in what it shows about the resolution process, not the object itself. It is one of the few cases in the corpus where the agency responsible documents, step by step, how it moved from 'anomalous object with inexplicable wake' to 'probable commercial aircraft with sensor artifact' — analyzing additional footage with greater optical zoom and cross-referencing that data against real air traffic records. It is exactly the kind of reproducible methodology that most UAP files, including several in this same corpus, fail to show.\n\nThe central technical detail —that a visually convincing 'cavitation wake' turned out to be video compression, not a physical phenomenon— is a lesson of general reach for interpreting any low-resolution military sensor footage. Compression codecs introduce visual artifacts around high-contrast moving edges, and those artifacts can convincingly mimic wakes, halos or distortions that a trained observer would interpret as physical properties of the object. Any reading of an 'anomalous wake' in low-quality compressed footage should, after this case, be treated with additional default skepticism.\n\nThat the case remains technically 'pending final review' despite such a thorough explanation is also instructive: it reflects the relatively high bar AARO sets for itself before formally closing a file, even when the weight of evidence clearly points to a conventional explanation. This case's posterior places the overwhelming majority of its mass on 'mundano_natural' precisely for that reason: it is not an unsupported hunch, it is the conclusion of a documented analytical process with verifiable data —commercial air traffic, focal length, video compression— that the corpus itself can describe precisely rather than speculate about.",
+  "evidence": [
+    "15 de enero de 2023: un MQ-9 filmando a otro MQ-9 registra un objeto con aparente estela de cavitación, Asia del Sur",
+    "Presentado por Sean Kirkpatrick (director AARO) ante el Senate Armed Services Committee el 19 de abril de 2023",
+    "AARO analizó metraje adicional con mayor distancia focal y lo cruzó con datos de tráfico aéreo comercial",
+    "Evaluación oficial: probable aeronave comercial; la estela es un artefacto de compresión de video, no un fenómeno físico",
+    "La AARO consigna explícitamente: 'la resolución del caso está pendiente de revisión final'",
+    "Publicado por el DoD vía DVIDS, dominio público"
+  ],
+  "evidence_en": [
+    "January 15, 2023: an MQ-9 filming another MQ-9 records an object with an apparent cavitation wake, South Asia",
+    "Presented by Sean Kirkpatrick (AARO director) to the Senate Armed Services Committee on April 19, 2023",
+    "AARO analyzed additional footage with a longer focal length and cross-referenced it against commercial air traffic data",
+    "Official assessment: likely commercial aircraft; the wake is a video compression artifact, not a physical phenomenon",
+    "AARO explicitly records: 'case resolution is pending final review'",
+    "Published by DoD via DVIDS, public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 'South Asian Object 1' y 'South Asian Object 2', con la evaluación oficial completa de AARO",
+      "url": "https://www.dvidshub.net/video/880270",
+      "note": "Ambos videos embebidos en el visor de este caso; la ficha de DVIDS incluye el texto de evaluación de AARO citado en este caso.",
+      "note_en": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case."
+    },
+    {
+      "name": "Mosul Orb (caso relacionado) — misma audiencia del Senado, 19 abr 2023",
+      "url": "https://uapcodex.org/cases/mosul-orb-2016/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 'South Asian Object 1' and 'South Asian Object 2', with AARO's full official assessment",
+      "url": "https://www.dvidshub.net/video/880270",
+      "note": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case.",
+      "note_en": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case."
+    },
+    {
+      "name": "Mosul Orb (related case) — same Senate hearing, Apr 19 2023",
+      "url": "https://uapcodex.org/cases/mosul-orb-2016/"
+    }
+  ]
+}

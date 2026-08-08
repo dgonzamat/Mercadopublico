@@ -1,0 +1,91 @@
+{
+  "id": "western-us-objects-2021",
+  "num": 354,
+  "pursueReleases": [],
+  "name": "Tres 'UAP' resueltos: eran tres aviones comerciales, confirmados por radar",
+  "name_en": "Three 'UAPs' resolved: they were three commercial aircraft, confirmed by radar",
+  "year_start": 2021,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39,
+    "lng": -116,
+    "place": "Campo de tiro militar en el oeste de EE.UU. (ubicación exacta no revelada)",
+    "place_en": "Military range in the western United States (exact location undisclosed)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 5,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.9,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.0,
+    "indet": 0.07
+  },
+  "summary": "En 2021, un sensor infrarrojo sobre un campo de tiro militar del oeste de Estados Unidos registró tres objetos no identificados. El 31 de mayo de 2023, el director de la AARO, Sean Kirkpatrick, presentó el caso ante el Equipo de Estudio Independiente de la NASA sobre UAP — y lo cerró en la misma presentación: el análisis del video, cruzado con datos de tráfico aéreo comercial de la región, mostró que las trayectorias de radar de tres aeronaves comerciales coincidían exactamente con los tres puntos observados. A la distancia registrada por el sensor, los aviones aparecían como simples puntos, sin forma reconocible. Es uno de los pocos casos del corpus con una resolución oficial completa y verificable.",
+  "summary_en": "In 2021, an infrared sensor over a military range in the western United States recorded three unidentified objects. On May 31, 2023, AARO director Sean Kirkpatrick presented the case to NASA's Independent Study Team on UAP — and closed it in the same presentation: video analysis, cross-referenced with the region's commercial air traffic data, showed that three commercial aircraft's radar tracks matched the three observed points exactly. At the sensor's recorded distance, the aircraft appeared as mere dots, with no recognizable shape. It is one of the few cases in the corpus with a complete, verifiable official resolution.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/885190",
+      "type": "video",
+      "title": "'Western U.S. Objects' — metraje completo presentado al panel de la NASA, 31 may 2023 (8:29)",
+      "title_en": "'Western U.S. Objects' — full footage presented to the NASA panel, May 31 2023 (8:29)",
+      "source": "DoD vía DVIDS · Video ID 885190",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/885190"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/885193",
+      "type": "video",
+      "title": "'Western U.S. Objects' — versión de presentación con la explicación de Kirkpatrick (3:51)",
+      "title_en": "'Western U.S. Objects' — briefing-format version with Kirkpatrick's explanation (3:51)",
+      "source": "DoD vía DVIDS · Video ID 885193",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/885193"
+    }
+  ],
+  "whatHappened": "En algún momento de 2021, un sensor de video infrarrojo instalado sobre un campo de tiro militar en el oeste de Estados Unidos —la ubicación exacta no se reveló— registró tres objetos no identificados dentro de su campo de visión. El expediente permaneció sin resolver durante casi dos años, hasta que el 31 de mayo de 2023 el director de la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), el Dr. Sean Kirkpatrick, lo presentó públicamente en una reunión abierta del Equipo de Estudio Independiente sobre Fenómenos Anómalos No Identificados de la NASA.\n\nA diferencia de la mayoría de los casos que Kirkpatrick mostró en sus apariciones públicas de 2023, este llegó acompañado de una resolución completa en la misma presentación. Según la descripción oficial publicada junto al video, la AARO analizó el metraje de movimiento completo y lo cruzó con datos de tráfico aéreo comercial de la región. El resultado fue inequívoco: las trayectorias de radar correspondientes a tres aeronaves comerciales distintas coincidían con precisión con los tres objetos que aparecían en el sensor infrarrojo. A la distancia a la que el sensor los captó, los aviones no eran reconocibles como tales — se veían únicamente como pequeños puntos de calor, sin forma, ala ni fuselaje discernible, precisamente el tipo de imagen ambigua que en un expediente sin ese cruce de datos habría quedado catalogada, sin más, como 'UAP no identificados'.\n\nEl material se liberó en dos versiones: una grabación de casi ocho minutos y medio con el metraje de sensor más extenso, y una versión de formato más corto —tres minutos cincuenta y un segundos— que corresponde más de cerca a la presentación pública que Kirkpatrick ofreció ante el panel de la NASA, con la explicación incorporada. Ambas fueron publicadas por el Departamento de Defensa a través de DVIDS bajo licencia de dominio público.",
+  "whatHappened_en": "At some point in 2021, an infrared video sensor installed over a military range in the western United States —the exact location was not disclosed— recorded three unidentified objects within its field of view. The file remained unresolved for nearly two years, until on May 31, 2023, the director of the All-domain Anomaly Resolution Office (AARO), Dr. Sean Kirkpatrick, presented it publicly at an open meeting of NASA's Independent Study Team on Unidentified Anomalous Phenomena.\n\nUnlike most of the cases Kirkpatrick showed in his 2023 public appearances, this one arrived with a complete resolution in the same presentation. Per the official description published alongside the video, AARO analyzed the full-motion footage and cross-referenced it against the region's commercial air traffic data. The result was unambiguous: the radar tracks corresponding to three distinct commercial aircraft matched precisely with the three objects appearing on the infrared sensor. At the distance the sensor captured them, the aircraft were not recognizable as such — they appeared only as small heat points, with no discernible shape, wing, or fuselage, exactly the kind of ambiguous image that, in a file without that data cross-reference, would have simply been cataloged as 'unidentified UAP.'\n\nThe material was released in two versions: a recording of nearly eight and a half minutes with the more extensive sensor footage, and a shorter briefing-format version —three minutes fifty-one seconds— that more closely matches the public presentation Kirkpatrick gave to the NASA panel, with the explanation built in. Both were published by the Department of Defense via DVIDS under public domain license.",
+  "whyMatters": "Este es, dentro del corpus, uno de los pocos casos con un ciclo completo y transparente: objeto no identificado, metodología de análisis descrita con precisión, y resolución verificable con datos externos —el tráfico aéreo comercial— que cualquiera con acceso a registros de vuelo podría, en principio, contrastar de forma independiente. Eso lo distingue de la inmensa mayoría de los expedientes 'resueltos' del corpus, donde la resolución suele descansar en la palabra de la agencia sin un dato externo verificable adjunto.\n\nEl valor analítico central es casi pedagógico: tres puntos de calor sin forma reconocible, vistos a la distancia correcta y sin más contexto, son indistinguibles de un 'objeto anómalo genérico' del tipo que puebla buena parte de la literatura UAP. Lo que los resolvió no fue un análisis de su comportamiento de vuelo ni de su morfología —ninguna de las dos era discernible— sino la superposición de sus trayectorias contra un registro independiente y verificable: el tráfico aéreo real de la zona en ese momento. Es el mismo principio metodológico que resolvió el caso del 'South Asian Object' del mismo lote —cruce con datos de vuelo comercial— aplicado aquí con éxito total en vez de parcial.\n\nEl caso también ilustra un patrón que el propio Kirkpatrick señaló repetidamente en sus comparecencias: gran parte de los reportes UAP no describen objetos verdaderamente anómalos, sino objetos ordinarios observados en condiciones —distancia, resolución de sensor, ausencia de contexto de vuelo— que impiden identificarlos con los medios disponibles en el momento de la observación. El posterior de este caso, con el 90% de la masa en 'mundano_natural', refleja exactamente eso: no es un juicio analítico sobre incertidumbre, es la lectura directa de una resolución oficial con evidencia cruzada y verificable.",
+  "whyMatters_en": "This is, within the corpus, one of the few cases with a complete and transparent cycle: unidentified object, precisely described analytical methodology, and a verifiable resolution using external data —commercial air traffic— that anyone with access to flight records could, in principle, independently cross-check. That sets it apart from the vast majority of 'resolved' files in the corpus, where resolution usually rests on the agency's word without an attached verifiable external datum.\n\nThe core analytical value is almost pedagogical: three heat points with no recognizable shape, seen at the right distance and with no further context, are indistinguishable from a 'generic anomalous object' of the kind that populates much of UAP literature. What resolved them was not an analysis of their flight behavior or morphology —neither was discernible— but overlaying their trajectories against an independent, verifiable record: the actual air traffic in the area at that time. It is the same methodological principle that resolved the 'South Asian Object' case from the same batch —cross-referencing commercial flight data— applied here with full success rather than partial.\n\nThe case also illustrates a pattern Kirkpatrick repeatedly noted in his appearances: much of UAP reporting does not describe genuinely anomalous objects, but ordinary objects observed under conditions —distance, sensor resolution, absence of flight context— that prevent identification with the means available at the time of observation. This case's posterior, with 90% of the mass on 'mundano_natural,' reflects exactly that: it is not an analytical judgment call under uncertainty, it is a direct reading of an official resolution with cross-referenced, verifiable evidence.",
+  "evidence": [
+    "2021: sensor infrarrojo sobre un campo de tiro del oeste de EE.UU. registra tres objetos no identificados",
+    "31 de mayo de 2023: Sean Kirkpatrick (director AARO) presenta el caso ante el Equipo de Estudio Independiente de la NASA sobre UAP",
+    "Análisis del metraje cruzado con datos de tráfico aéreo comercial de la región",
+    "Las trayectorias de radar de tres aeronaves comerciales coinciden exactamente con los tres objetos observados",
+    "A la distancia registrada, los aviones aparecían solo como puntos de calor sin forma reconocible",
+    "Caso presentado como RESUELTO en la misma sesión, con metodología y evidencia cruzada descritas",
+    "Publicado por el DoD vía DVIDS en dos versiones (8:29 y 3:51), dominio público"
+  ],
+  "evidence_en": [
+    "2021: infrared sensor over a western U.S. military range records three unidentified objects",
+    "May 31, 2023: Sean Kirkpatrick (AARO director) presents the case to NASA's Independent Study Team on UAP",
+    "Footage analysis cross-referenced with the region's commercial air traffic data",
+    "Radar tracks of three commercial aircraft match exactly with the three observed objects",
+    "At the recorded distance, the aircraft appeared only as heat points with no recognizable shape",
+    "Case presented as RESOLVED in the same session, with methodology and cross-referenced evidence described",
+    "Published by DoD via DVIDS in two versions (8:29 and 3:51), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 'Western U.S. Objects', con la evaluación oficial completa de AARO (NASA UAP panel, 31 may 2023)",
+      "url": "https://www.dvidshub.net/video/885190",
+      "note": "Ambas versiones del video embebidas en el visor de este caso; la ficha de DVIDS incluye el texto de resolución citado.",
+      "note_en": "Both video versions embedded in this case's viewer; the DVIDS record includes the resolution text quoted here."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 'Western U.S. Objects', with AARO's full official assessment (NASA UAP panel, May 31 2023)",
+      "url": "https://www.dvidshub.net/video/885190",
+      "note": "Both video versions embedded in this case's viewer; the DVIDS record includes the resolution text quoted here.",
+      "note_en": "Both video versions embedded in this case's viewer; the DVIDS record includes the resolution text quoted here."
+    }
+  ]
+}

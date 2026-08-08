@@ -1,0 +1,86 @@
+{
+  "id": "three-fast-moving-uap-2020",
+  "num": 351,
+  "pursueReleases": [
+    2
+  ],
+  "name": "Tres objetos veloces en el mismo campo de visión, 29 de octubre de 2020",
+  "name_en": "Three fast objects in the same field of view, October 29, 2020",
+  "year_start": 2020,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 26,
+    "lng": 51,
+    "place": "Ubicación no revelada (metadata DVIDS declara 'undisclosed location')",
+    "place_en": "Undisclosed location (DVIDS metadata declares 'undisclosed location')"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.48,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.06,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.03,
+    "indet": 0.2
+  },
+  "summary": "El 29 de octubre de 2020, una tripulación militar estadounidense observó y grabó tres objetos moviéndose a alta velocidad dentro del mismo encuadre del sensor, según el título que el Departamento de Guerra asignó al clip de cuatro minutos: '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP'. Es uno de los pocos expedientes de este lote que registra explícitamente múltiples objetos simultáneos con calificación de velocidad en el propio título, y no una interpretación posterior. Se liberó en la segunda entrega de PURSUE sin informe de inteligencia acompañante.",
+  "summary_en": "On October 29, 2020, a U.S. military crew observed and recorded three objects moving at high speed within the same sensor frame, according to the title the Department of War assigned to the four-minute clip: '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP.' It is one of the few files in this batch to explicitly log multiple simultaneous objects with a speed qualifier in the title itself, rather than a later interpretation. It was released in the second PURSUE drop with no accompanying intelligence report.",
+  "patterns": [
+    "8b"
+  ],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007816",
+      "type": "video",
+      "title": "DOW-UAP-PR079 — '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP' (4:00)",
+      "title_en": "DOW-UAP-PR079 — '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP' (4:00)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007816"
+    }
+  ],
+  "whatHappened": "El 29 de octubre de 2020, una tripulación militar estadounidense —identificada solo por un indicativo de llamada redactado en el título público— registró en su sensor de a bordo tres objetos moviéndose a alta velocidad, según consigna el propio título oficial del archivo: '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP'. La grabación dura cuatro minutos exactos, un lapso considerablemente más largo que la mayoría de los clips de este mismo lote, que rondan los veinte a sesenta segundos.\n\nLa estructura del título es, en sí misma, la información más sustantiva disponible públicamente: confirma que se trató de una observación en tiempo real por parte de una tripulación en misión activa —no un análisis retrospectivo de archivo—, que el número de objetos fue tres, y que la característica que motivó su registro como evento anómalo fue la velocidad. A diferencia de otros clips del lote, donde el calificador de movimiento aparece de forma ambigua o no aparece, aquí 'fast moving' es explícito y aplicado a los tres objetos por igual, lo que sugiere que se movían de forma similar entre sí, no que uno fuera rápido y los otros lentos.\n\nMás allá de eso, la información pública es escasa. La ubicación figura únicamente como 'ubicación no revelada' en el registro de DVIDS, sin coordenadas, sin identificación de la plataforma ni de la unidad, y sin declaración de la tripulación. El material se subió al portal DVIDS el 22 de mayo de 2026 como parte de la segunda entrega de PURSUE, bajo licencia de dominio público, sin informe de inteligencia, parte de misión ni documento narrativo que lo acompañe.",
+  "whatHappened_en": "On October 29, 2020, a U.S. military crew —identified only by a call sign redacted in the public title— logged three objects moving at high speed on its onboard sensor, per the file's own official title: '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP.' The recording runs exactly four minutes, considerably longer than most clips in this same batch, which run roughly twenty to sixty seconds.\n\nThe title's structure is, in itself, the most substantive information publicly available: it confirms this was a real-time observation by a crew on an active mission —not a retrospective archive analysis—, that the object count was three, and that the characteristic prompting its logging as an anomalous event was speed. Unlike other clips in the batch, where the motion qualifier is ambiguous or absent, here 'fast moving' is explicit and applied equally to all three objects, suggesting they moved similarly to one another, not that one was fast and the others slow.\n\nBeyond that, public information is scarce. The location appears only as 'undisclosed location' in the DVIDS record, with no coordinates, no platform or unit identification, and no crew statement. The material was uploaded to the DVIDS portal on May 22, 2026 as part of PURSUE's second drop, under public domain license, with no intelligence report, mission summary, or narrative document accompanying it.",
+  "whyMatters": "Este expediente encaja en el patrón de 'objeto madre + sub-objetos' —o, en este caso, de múltiples objetos coordinados en el mismo campo de visión— que el corpus ya documenta en episodios mejor caracterizados, como el enjambre de esferas del Golfo de Omán en 2021 o las formaciones reportadas sobre el Golfo Pérsico. La diferencia aquí es la ausencia casi total de detalle adicional: no hay descripción de formación, ni de si los tres objetos mantenían distancia constante entre sí, ni de si reaccionaron entre ellos o de forma independiente.\n\nLa duración de cuatro minutos —notablemente mayor que el promedio del lote— sugiere que la tripulación mantuvo el seguimiento el tiempo suficiente como para registrar un evento sostenido y no un contacto fugaz, lo cual añade algo de peso evidencial: tres objetos observados together durante varios minutos, moviéndose rápido, es más difícil de explicar por un solo artefacto de sensor o una confusión momentánea que un contacto de segundos.\n\nDicho esto, la lectura prosaica dominante para múltiples objetos rápidos y coordinados sigue siendo drones en formación —cada vez más comunes y accesibles en 2020— o aeronaves convencionales en vuelo de escuadrilla vistas desde un ángulo o distancia que oculta su forma real. La palabra 'fast' en un título de sensor no equivale a una velocidad medida: es una impresión del operador, sujeta al mismo margen de error de percepción que cualquier estimación visual. Sin telemetría, sin coordenadas y sin un informe que reconstruya distancia y velocidad relativa, el caso queda igual que los demás de este lote: un registro real de que algo se observó, sin los elementos que permitirían pesar con precisión qué tan anómalo fue.\n\nVale la pena situarlo junto a otros expedientes del mismo lote con mejor documentación. En Tyndall (2024), un título oficial casi idéntico en formato aportaba morfología ('tic-tac') y firma térmica ('caliente'); aquí el título aporta cantidad ('3') y calificador de movimiento ('fast moving'), pero ninguna descripción de forma, altitud ni distancia. Esa diferencia no es casual: refleja cuánto varía, dentro de la misma serie de publicaciones del Departamento de Guerra, el nivel de detalle que un operador decide (o puede) consignar en el momento de catalogar un evento. El resultado es que dos expedientes con la misma procedencia institucional y el mismo formato de liberación pueden sostener niveles de análisis completamente distintos.",
+  "whyMatters_en": "This file fits the 'mother object + sub-objects' pattern —or, in this case, multiple coordinated objects in the same field of view— that the corpus already documents in better-characterized episodes, such as the swarm of orbs in the Gulf of Oman in 2021 or the formations reported over the Persian Gulf. The difference here is the near-total absence of additional detail: there is no description of formation, whether the three objects held constant distance from each other, or whether they reacted to one another or independently.\n\nThe four-minute duration —notably longer than the batch average— suggests the crew maintained tracking long enough to log a sustained event rather than a fleeting contact, which adds some evidentiary weight: three objects observed together for several minutes, moving fast, is harder to explain away as a single sensor artifact or momentary confusion than a contact lasting seconds.\n\nThat said, the dominant prosaic reading for multiple fast, coordinated objects remains drones flying in formation —increasingly common and accessible by 2020— or conventional aircraft in formation flight seen from an angle or distance that obscures their true shape. The word 'fast' in a sensor title is not a measured speed: it is an operator's impression, subject to the same margin of perceptual error as any visual estimate. Without telemetry, coordinates, or a report reconstructing distance and relative speed, the case stands like the others in this batch: a genuine record that something was observed, without the elements that would allow precisely weighing how anomalous it was.\n\nIt is worth placing this alongside other, better-documented files from the same batch. At Tyndall (2024), an official title in an almost identical format supplied morphology ('tic tac') and thermal signature ('hot'); here the title supplies quantity ('3') and a motion qualifier ('fast moving'), but no description of shape, altitude or distance. That difference is not incidental: it reflects how much the level of detail an operator decides —or is able— to record at the moment of logging an event varies within the very same series of Department of War releases. The result is that two files with the same institutional origin and the same release format can sustain completely different levels of analysis.",
+  "evidence": [
+    "29 de octubre de 2020: tripulación militar observa y graba tres objetos veloces en el mismo encuadre",
+    "Título oficial: '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP'",
+    "Duración: 4 minutos exactos, notablemente mayor que el promedio del lote",
+    "Los tres objetos se describen con el mismo calificador de velocidad ('fast moving')",
+    "Ubicación declarada solo como 'undisclosed location'",
+    "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público",
+    "Sin informe de inteligencia ni declaración de tripulación acompañante"
+  ],
+  "evidence_en": [
+    "October 29, 2020: military crew observes and records three fast objects in the same frame",
+    "Official title: '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP'",
+    "Duration: exactly 4 minutes, notably above the batch average",
+    "All three objects described with the same speed qualifier ('fast moving')",
+    "Location declared only as 'undisclosed location'",
+    "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain",
+    "No accompanying intelligence report or crew statement"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR079, '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP' (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007816",
+      "note": "Video embebido en el visor de este caso.",
+      "note_en": "Video embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR079, '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP' (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007816",
+      "note": "Video embedded in this case's viewer.",
+      "note_en": "Video embedded in this case's viewer."
+    }
+  ]
+}

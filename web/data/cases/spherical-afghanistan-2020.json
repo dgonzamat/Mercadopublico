@@ -1,0 +1,82 @@
+{
+  "id": "spherical-afghanistan-2020",
+  "num": 352,
+  "pursueReleases": [
+    2
+  ],
+  "name": "El esférico que entraba y salía de las nubes sobre Afganistán",
+  "name_en": "The sphere that moved in and out of the clouds over Afghanistan",
+  "year_start": 2020,
+  "country": "AF",
+  "country_name": "Afganistán",
+  "flag": "🇦🇫",
+  "location": {
+    "lat": 34.5,
+    "lng": 69.2,
+    "place": "Espacio aéreo de Afganistán (ubicación exacta no revelada)",
+    "place_en": "Afghan airspace (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.03,
+    "indet": 0.2
+  },
+  "summary": "El 23 de noviembre de 2020, un sensor militar estadounidense grabó durante 47 segundos un objeto esférico moviéndose dentro y fuera de una capa de nubes sobre Afganistán, según el título oficial del clip: 'Spherical UAP over AFG in and out of clouds 23 Nov 2020'. El detalle de que el objeto entraba y salía repetidamente de las nubes —en vez de simplemente cruzar el encuadre— es uno de los pocos comportamientos descritos con algo de especificidad en este lote de material sin informe acompañante. Se liberó en la segunda entrega de PURSUE.",
+  "summary_en": "On November 23, 2020, a U.S. military sensor recorded for 47 seconds a spherical object moving in and out of a cloud layer over Afghanistan, per the clip's official title: 'Spherical UAP over AFG in and out of clouds 23 Nov 2020.' The detail that the object repeatedly entered and exited the clouds —rather than simply crossing the frame— is one of the few behaviors described with any specificity in this batch of material lacking an accompanying report. It was released in PURSUE's second drop.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007713",
+      "type": "video",
+      "title": "DOW-UAP-PR055 — 'Spherical UAP over AFG in and out of clouds', 23 nov 2020 (47 s)",
+      "title_en": "DOW-UAP-PR055 — 'Spherical UAP over AFG in and out of clouds', Nov 23 2020 (47 s)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007713"
+    }
+  ],
+  "whatHappened": "El 23 de noviembre de 2020, un sensor militar estadounidense —probablemente electro-óptico o infrarrojo, dado el patrón del resto del lote— capturó durante 47 segundos un objeto de perfil esférico sobre el espacio aéreo de Afganistán. El título oficial que el Departamento de Guerra asignó al archivo, 'Spherical UAP over AFG in and out of clouds 23 Nov 2020', describe un comportamiento concreto: el objeto no cruzó el encuadre en línea recta ni permaneció estático, sino que entró y salió repetidamente de una capa de nubes durante la observación.\n\nEse detalle —moverse dentro y fuera de la cubierta nubosa— es relevante porque implica al menos dos cosas verificables por el propio operador en tiempo real: primero, que el objeto se desplazaba a una altitud comparable a la de las nubes, lo suficientemente baja como para que la capa lo ocultara y revelara alternadamente; segundo, que el movimiento fue sostenido lo bastante como para que el fenómeno de entrar y salir se repitiera y fuera percibido como un patrón, no como un único instante de oscurecimiento.\n\nLa duración de 47 segundos es superior a la de los clips más breves del mismo lote —que llegan a durar apenas 5 o 9 segundos— pero considerablemente menor que los eventos de varios minutos también liberados en la misma entrega. No se dispone de coordenadas, del nombre de la plataforma observadora, de la unidad, ni de una declaración de tripulación. El material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, bajo licencia de dominio público, sin informe de inteligencia ni parte de misión que lo acompañe.",
+  "whatHappened_en": "On November 23, 2020, a U.S. military sensor —likely electro-optical or infrared, given the pattern of the rest of the batch— captured for 47 seconds a spherical-profile object over Afghan airspace. The official title the Department of War assigned to the file, 'Spherical UAP over AFG in and out of clouds 23 Nov 2020,' describes a specific behavior: the object did not cross the frame in a straight line nor remain static, but repeatedly entered and exited a cloud layer during the observation.\n\nThat detail —moving in and out of cloud cover— matters because it implies at least two things verifiable by the operator in real time: first, that the object was traveling at an altitude comparable to the clouds, low enough for the layer to alternately hide and reveal it; second, that the motion was sustained enough for the in-and-out pattern to repeat and be perceived as a pattern, not a single instant of obscuration.\n\nThe 47-second duration exceeds the briefest clips in the same batch —some run as short as 5 or 9 seconds— but is considerably shorter than the multi-minute events also released in the same drop. No coordinates, name of the observing platform, unit, or crew statement are available. The material was uploaded to DVIDS on May 22, 2026, within PURSUE's second drop, under public domain license, with no accompanying intelligence report or mission summary.",
+  "whyMatters": "El valor de este expediente es modesto pero concreto: es uno de los pocos clips de este lote cuyo propio título describe un comportamiento —no solo una forma o una ubicación— y ese comportamiento (entrar y salir de nubes) es, en principio, verificable contra la altitud de la capa nubosa reportada por meteorología en la zona y fecha, si esos datos llegaran a cruzarse en el futuro.\n\nLa lectura prosaica más directa es un globo meteorológico o de gran altitud a la deriva: un globo se mueve con el viento a una velocidad relativamente constante y a una altitud que puede coincidir con una capa de nubes durante minutos, produciendo exactamente el efecto de aparecer y desaparecer que describe el título. Afganistán en 2020 era además un teatro de operaciones activo con tráfico aéreo militar denso —incluidos drones de vigilancia de diversos tamaños—, lo que sostiene también la hipótesis de una plataforma no tripulada convencional vista a distancia.\n\nLo que falta, otra vez, es el contexto que permitiría descartar o confirmar esas lecturas: velocidad estimada, altitud del objeto y de la capa de nubes, tipo de plataforma observadora y cualquier evaluación del operador en el momento. Sin eso, el caso queda como una nota bien descrita —el título es más específico que el de la mayoría de sus pares en este lote— pero analíticamente abierta.\n\nHay un tercer punto de comparación útil dentro del propio corpus: la serie de 'UAP Case Resolution Reports' de la AARO documenta, con metodología explícita, cómo la oficina distingue un globo de un ave en metraje infrarrojo similar —correlación de trayectoria con el viento registrado para lo primero, frecuencia de retorno térmico coincidente con el aleteo para lo segundo—. Ninguno de esos dos cruces de datos está disponible aquí: no hay registro de viento para Afganistán en esa fecha y hora adjunto al expediente, ni un análisis de si el patrón de entrada y salida de las nubes se ajusta más a la deriva de un globo que al vuelo de un ave grande o de una aeronave no tripulada de baja velocidad. Es, en ese sentido, el tipo exacto de caso que la AARO probablemente archivaría como 'sin resolver por falta de datos' antes que como 'anómalo'.",
+  "whyMatters_en": "This file's value is modest but concrete: it is one of the few clips in this batch whose title itself describes a behavior —not just a shape or location— and that behavior (moving in and out of clouds) is, in principle, verifiable against the cloud layer's altitude as reported by weather data for the area and date, should those be cross-referenced in the future.\n\nThe most direct prosaic reading is a weather or high-altitude balloon adrift: a balloon moves with the wind at a relatively constant speed and at an altitude that can coincide with a cloud layer for minutes, producing exactly the appear-and-disappear effect the title describes. Afghanistan in 2020 was also an active theater of operations with dense military air traffic —including surveillance drones of various sizes— which also supports the hypothesis of a conventional uncrewed platform seen at distance.\n\nWhat is missing, again, is the context that would allow ruling those readings in or out: estimated speed, altitude of the object and the cloud layer, type of observing platform, and any operator assessment at the time. Without that, the case stands as a well-described note —the title is more specific than most of its peers in this batch— but analytically open.\n\nThere is a third useful point of comparison within the corpus itself: AARO's 'UAP Case Resolution Reports' series documents, with explicit methodology, how the office distinguishes a balloon from a bird in similar infrared footage —trajectory correlation with recorded wind for the former, thermal-return frequency matching wingbeat for the latter. Neither of those two data cross-references is available here: there is no wind record for Afghanistan at that date and time attached to the file, nor an analysis of whether the in-and-out cloud pattern fits balloon drift better than the flight of a large bird or a low-speed uncrewed aircraft. It is, in that sense, exactly the kind of case AARO would likely file as 'unresolved for lack of data' rather than 'anomalous.'",
+  "evidence": [
+    "23 de noviembre de 2020: sensor militar registra un objeto esférico sobre Afganistán durante 47 segundos",
+    "Título oficial: 'Spherical UAP over AFG in and out of clouds 23 Nov 2020'",
+    "Comportamiento descrito: el objeto entra y sale repetidamente de una capa de nubes",
+    "Sin coordenadas, plataforma, unidad ni declaración de tripulación identificadas",
+    "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público",
+    "Sin informe de inteligencia ni parte de misión acompañante"
+  ],
+  "evidence_en": [
+    "November 23, 2020: military sensor records a spherical object over Afghanistan for 47 seconds",
+    "Official title: 'Spherical UAP over AFG in and out of clouds 23 Nov 2020'",
+    "Behavior described: the object repeatedly enters and exits a cloud layer",
+    "No coordinates, platform, unit, or crew statement identified",
+    "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain",
+    "No accompanying intelligence report or mission summary"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR055, 'Spherical UAP over AFG in and out of clouds', 23 nov 2020 (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007713",
+      "note": "Video embebido en el visor de este caso.",
+      "note_en": "Video embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR055, 'Spherical UAP over AFG in and out of clouds', Nov 23 2020 (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007713",
+      "note": "Video embedded in this case's viewer.",
+      "note_en": "Video embedded in this case's viewer."
+    }
+  ]
+}
