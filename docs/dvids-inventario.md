@@ -13,12 +13,12 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
-| **Release 01** | 8 may 2026 | 27 | 13 |
+| **Release 01** | 8 may 2026 | 27 | 14 |
 | **Release 02** | 22 may 2026 | 50 | 19 |
 | **Release 04** | 10 jul 2026 | 19 | 3 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
 | **Release 03** | 12 jun 2026 | **0** | — |
-| | | **111** | **41** |
+| | | **111** | **42** |
 
 > El **Release 03 no publicó video** en DVIDS: ninguno de los 111 tiene fecha de publicación del 12 de junio de 2026.
 
@@ -32,7 +32,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 - [x] `PR26` · 10.01.2023 — unresolved-uap-report-united-arab-emirates-october-2023 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006063)
 - [x] `PR27` · 10.01.2023 — unresolved-uap-report-united-arab-emirates-october-2023 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006067)
 - [x] `PR28` · 01.01.2024 — unresolved-uap-report-greece-january-2024 → `dow-centcom-2020`, `greece-diamond-swir-2024` · [ver](https://www.dvidshub.net/video/1006073)
-- [ ] `PR29` · 06.01.2024 — unresolved-uap-report-united-arab-emirates-june-2024 · [ver](https://www.dvidshub.net/video/1006074)
+- [x] `PR29` · 06.01.2024 — unresolved-uap-report-united-arab-emirates-june-2024 → `uae-teardrop-reflection-2024` · [ver](https://www.dvidshub.net/video/1006074)
 - [x] `PR31` · 10.01.2024 — unresolved-uap-report-syria-october-2024 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006076)
 - [x] `PR32` · 10.01.2024 — unresolved-uap-report-syria-october-2024 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006078)
 - [x] `PR33` · 10.01.2024 — unresolved-uap-report-syria-october-2024 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006079)
