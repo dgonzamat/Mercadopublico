@@ -1,0 +1,109 @@
+{
+  "id": "tyndall-uscg-tictac-2024",
+  "num": 349,
+  "pursueReleases": [
+    2
+  ],
+  "name": "Dos 'tic-tacs' calientes sobre Tyndall, filmados por la Guardia Costera",
+  "name_en": "Two hot 'tic-tacs' over Tyndall, filmed by the Coast Guard",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 30.07,
+    "lng": -85.58,
+    "place": "Inmediaciones de la base aérea Tyndall, costa del Golfo de México, Florida",
+    "place_en": "Vicinity of Tyndall Air Force Base, Gulf of Mexico coast, Florida"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.03,
+    "indet": 0.19
+  },
+  "summary": "El 24 de abril de 2024, un avión C-144 de la Guardia Costera de EE.UU. grabó dos secuencias de sensor infrarrojo sobre las inmediaciones de la base aérea Tyndall, en la costa del Golfo de México. El propio Departamento de Guerra tituló los clips describiendo la morfología: 'tic-tac', la misma forma del caso Nimitz de 2004, y consignó que los objetos aparecían calientes en infrarrojo — lo contrario de las 'esferas frías' del Golfo de Omán. Las grabaciones, de 48 y 39 segundos, muestran un objeto alargado y brillante dentro del retículo de seguimiento contra una capa de nubes, con la telemetría del HUD tachada. Se liberaron en la segunda entrega de PURSUE.",
+  "summary_en": "On April 24, 2024, a U.S. Coast Guard C-144 aircraft recorded two infrared sensor sequences near Tyndall Air Force Base on the Gulf of Mexico coast. The Department of War itself titled the clips describing the morphology: 'tic tac', the same shape as the 2004 Nimitz case, and recorded that the objects appeared hot in infrared — the opposite of the Gulf of Oman 'cold orbs'. The recordings, 48 and 39 seconds long, show an elongated bright object inside the tracking reticle against a cloud layer, with HUD telemetry redacted. They were released in the second PURSUE drop.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007778",
+      "type": "video",
+      "title": "DOW-UAP-PR066 — 'USCG C-144 Tyndall UAP 1 TIC TAC IR hot', 24 abr 2024 (48 s)",
+      "title_en": "DOW-UAP-PR066 — 'USCG C-144 Tyndall UAP 1 TIC TAC IR hot', Apr 24 2024 (48 s)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 02) · VIRIN 240424-D-D0360-6523",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007778"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007777",
+      "type": "video",
+      "title": "DOW-UAP-PR065 — 'USCG C-144 Tyndall UAP 2 TIC TAC IR hot', 24 abr 2024 (39 s)",
+      "title_en": "DOW-UAP-PR065 — 'USCG C-144 Tyndall UAP 2 TIC TAC IR hot', Apr 24 2024 (39 s)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 02) · VIRIN 240424-D-D0360-2094",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007777"
+    }
+  ],
+  "whatHappened": "El 24 de abril de 2024, un avión C-144 de la Guardia Costera de Estados Unidos —la variante estadounidense del CASA CN-235, aparato de patrulla marítima de alcance medio— operaba en las inmediaciones de la base aérea Tyndall, en la costa del Golfo de México a la altura de Panama City, Florida. Durante ese vuelo su sensor electro-óptico/infrarrojo registró dos secuencias que el Departamento de Guerra desclasificaría dos años después.\n\nLos dos clips llevan los identificadores DOW-UAP-PR066 y PR065, y sus títulos oficiales son casi idénticos salvo por la numeración del objeto: 'USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024' y 'USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024'. Duran 48 y 39 segundos respectivamente, y llevan los números de referencia visual VIRIN 240424-D-D0360-6523 y 240424-D-D0360-2094. La numeración 'UAP 1' y 'UAP 2' indica que se catalogaron dos objetos o dos pasadas distintas dentro de la misma jornada.\n\nEl contenido del título merece atención porque no es interpretación de un tercero: es la descripción que el propio Departamento de Guerra adjuntó al material al publicarlo. 'TIC TAC' es una clasificación morfológica —el objeto con forma de cápsula alargada sin superficies de control visibles, el mismo término que se consagró con el incidente del grupo de combate Nimitz en 2004—. 'IR hot' indica que el objeto aparecía caliente en la banda infrarroja, es decir con una firma térmica superior a su entorno.\n\nLas grabaciones muestran una vista de sensor en infrarrojo, en blanco y negro, apuntando hacia una capa de nubes. En el centro del encuadre, enmarcado por los corchetes verdes del sistema de seguimiento automático, se distingue un objeto alargado y notoriamente más brillante que el fondo, orientado horizontalmente. Alrededor del encuadre, bloques negros rectangulares tapan la telemetría del HUD —posición, rumbo, altitud, designación de la aeronave—, redactada antes de la liberación pública.\n\nEl material se publicó en la segunda entrega de PURSUE, subido al portal DVIDS el 22 de mayo de 2026 bajo licencia de dominio público como obra del gobierno de Estados Unidos. A diferencia de otros expedientes de esa misma entrega, aquí no se liberó un informe de inteligencia acompañante: lo que existe públicamente es el metraje y su ficha, sin declaración de tripulación, sin coordenadas y sin evaluación del observador.",
+  "whatHappened_en": "On April 24, 2024, a U.S. Coast Guard C-144 aircraft —the American variant of the CASA CN-235, a medium-range maritime patrol platform— was operating near Tyndall Air Force Base, on the Gulf of Mexico coast off Panama City, Florida. During that flight its electro-optical/infrared sensor recorded two sequences that the Department of War would declassify two years later.\n\nThe two clips carry the identifiers DOW-UAP-PR066 and PR065, and their official titles are nearly identical but for the object numbering: 'USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024' and 'USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024'. They run 48 and 39 seconds respectively, and carry visual information record numbers VIRIN 240424-D-D0360-6523 and 240424-D-D0360-2094. The 'UAP 1' and 'UAP 2' numbering indicates two objects, or two separate passes, were cataloged within the same day.\n\nThe title's content deserves attention because it is not a third party's interpretation: it is the description the Department of War itself attached to the material on publication. 'TIC TAC' is a morphological classification —the elongated capsule-shaped object with no visible control surfaces, the same term enshrined by the 2004 Nimitz carrier strike group incident. 'IR hot' indicates the object appeared hot in the infrared band, that is, with a thermal signature above its surroundings.\n\nThe recordings show a black-and-white infrared sensor view pointed toward a cloud layer. At the center of the frame, bracketed by the green markers of the automatic tracking system, an elongated object noticeably brighter than the background is visible, horizontally oriented. Around the frame, rectangular black blocks cover the HUD telemetry —position, heading, altitude, aircraft designation— redacted before public release.\n\nThe material was published in the second PURSUE drop, uploaded to the DVIDS portal on May 22, 2026 under public domain license as a work of the U.S. government. Unlike other files in that same drop, no accompanying intelligence report was released here: what exists publicly is the footage and its record, with no crew statement, no coordinates and no observer assessment.",
+  "whyMatters": "Lo más útil de este expediente es un contraste que solo se ve teniendo el corpus delante. El Departamento de Guerra etiqueta estos objetos como calientes en infrarrojo; en el Golfo de Omán, tres años antes, el mismo tipo de sensor sobre un AC-130 registró lo opuesto —'esferas frías', sin firma térmica propia detectable—. Ambos casos llegan por el mismo programa de desclasificación, ambos con imagen instrumental militar, y describen firmas térmicas incompatibles entre sí. Eso es un dato sobre la categoría 'UAP' antes que sobre los objetos: bajo esa etiqueta el Estado archiva fenómenos que no comparten propiedades físicas, lo que debilita cualquier lectura que trate el conjunto como una clase única.\n\nLa segunda razón es la fuente. Quien filma no es un caza ni una plataforma de inteligencia, sino un avión de patrulla marítima de la Guardia Costera, un servicio con misión civil de búsqueda, rescate y control de tráfico marítimo. Su presencia en el expediente muestra que el canal de reporte alcanzó más allá de las unidades de combate, y el lugar tampoco es neutro: Tyndall alberga entrenamiento de caza de primera línea y quedó parcialmente reconstruida tras el huracán Michael de 2018.\n\nAhora bien, el posterior carga la mayor parte de la masa en la explicación prosaica, y por una razón concreta: en infrarrojo, un avión comercial visto a distancia y desde un ángulo desfavorable es exactamente eso —una forma alargada, sin superficies de control resolubles, y caliente por sus motores—. La costa del Golfo es un corredor aéreo denso, y 'tic-tac caliente en IR' describe un fuselaje a distancia con una fidelidad incómoda. Que la etiqueta morfológica venga del Departamento de Guerra no la convierte en un veredicto: es la descripción de lo que se ve en pantalla, no una identificación.\n\nLo que impide cerrarlo es la ausencia, no la presencia. No hay informe de inteligencia acompañante, ni declaración de la tripulación, ni coordenadas, ni evaluación del observador — solo el metraje y su ficha. Sin esos elementos no se puede reconstruir geometría, distancia ni velocidad, que es lo único que separaría un avión lejano de un objeto anómalo. Por eso el caso se cataloga en tier A y no más arriba: hay registro instrumental verificable, pero le falta justo la capa documental que en Golfo de Omán o Grecia permitió pesar el juicio. Es, en ese sentido, un buen ejemplo de qué se pierde cuando una liberación entrega la imagen sin el expediente.",
+  "whyMatters_en": "The most useful thing in this file is a contrast only visible with the corpus in front of you. The Department of War labels these objects as hot in infrared; in the Gulf of Oman, three years earlier, the same kind of sensor aboard an AC-130 recorded the opposite —'cold orbs', with no detectable thermal signature of their own. Both cases arrive through the same declassification program, both with military instrumental imagery, and they describe mutually incompatible thermal signatures. That is a datum about the 'UAP' category rather than about the objects: under that label the state files phenomena that share no physical properties, which weakens any reading treating the set as a single class.\n\nThe second reason is the source. The platform filming is neither a fighter nor an intelligence asset, but a Coast Guard maritime patrol aircraft, a service with a civil mission of search, rescue and maritime traffic control. Its presence in the file shows the reporting channel reached beyond combat units, and the location is not neutral either: Tyndall hosts front-line fighter training and was partially rebuilt after Hurricane Michael in 2018.\n\nThat said, the posterior places most of its mass on the prosaic explanation, for a concrete reason: in infrared, a commercial aircraft seen at distance and from an unfavorable angle is exactly that —an elongated shape, with no resolvable control surfaces, and hot from its engines. The Gulf coast is a dense air corridor, and 'tic tac, hot in IR' describes a distant fuselage with uncomfortable fidelity. That the morphological label comes from the Department of War does not make it a verdict: it is a description of what appears on screen, not an identification.\n\nWhat prevents closing it is the absence, not the presence. There is no accompanying intelligence report, no crew statement, no coordinates and no observer assessment —only the footage and its record. Without those, geometry, distance and speed cannot be reconstructed, which is the only thing that would separate a distant aircraft from an anomalous object. That is why the case is filed at tier A and no higher: there is verifiable instrumental record, but it lacks precisely the documentary layer that in the Gulf of Oman or Greece allowed the judgment to be weighed. It is, in that sense, a good example of what is lost when a release hands over the image without the file.",
+  "evidence": [
+    "24 de abril de 2024: un C-144 de la Guardia Costera de EE.UU. graba dos secuencias de sensor IR cerca de la base aérea Tyndall (Florida)",
+    "Títulos oficiales del Departamento de Guerra: 'USCG C-144 Tyndall UAP 1 / UAP 2 TIC TAC IR hot 24 April 2024'",
+    "Duraciones de 48 y 39 segundos; VIRIN 240424-D-D0360-6523 y 240424-D-D0360-2094",
+    "Morfología consignada por la fuente: 'tic-tac' — el mismo término del incidente del Nimitz (2004)",
+    "Firma térmica: caliente en infrarrojo, lo contrario de las 'esferas frías' del Golfo de Omán (2021)",
+    "El metraje muestra un objeto alargado y brillante dentro del retículo de seguimiento automático, contra una capa de nubes",
+    "Telemetría del HUD (posición, rumbo, altitud) tachada antes de la liberación",
+    "Publicado en PURSUE Release 02, subido a DVIDS el 22 de mayo de 2026, dominio público",
+    "NO se liberó informe de inteligencia acompañante: sin declaración de tripulación, coordenadas ni evaluación del observador"
+  ],
+  "evidence_en": [
+    "April 24, 2024: a U.S. Coast Guard C-144 records two IR sensor sequences near Tyndall Air Force Base (Florida)",
+    "Official Department of War titles: 'USCG C-144 Tyndall UAP 1 / UAP 2 TIC TAC IR hot 24 April 2024'",
+    "Durations of 48 and 39 seconds; VIRIN 240424-D-D0360-6523 and 240424-D-D0360-2094",
+    "Morphology recorded by the source: 'tic tac' — the same term as the Nimitz incident (2004)",
+    "Thermal signature: hot in infrared, the opposite of the Gulf of Oman 'cold orbs' (2021)",
+    "The footage shows an elongated bright object inside the automatic tracking reticle, against a cloud layer",
+    "HUD telemetry (position, heading, altitude) redacted before release",
+    "Published in PURSUE Release 02, uploaded to DVIDS on May 22, 2026, public domain",
+    "NO accompanying intelligence report was released: no crew statement, coordinates or observer assessment"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR066, 'USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024' (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007778",
+      "note": "Video embebido en el visor de este caso; ficha oficial con fecha, duración y VIRIN.",
+      "note_en": "Video embedded in this case's viewer; official record with date, duration and VIRIN."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR065, 'USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024' (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007777",
+      "note": "Segundo clip del mismo día, también embebido.",
+      "note_en": "Second clip from the same day, also embedded."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR066, 'USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024' (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007778",
+      "note": "Video embedded in this case's viewer; official record with date, duration and VIRIN.",
+      "note_en": "Video embedded in this case's viewer; official record with date, duration and VIRIN."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR065, 'USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024' (PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007777",
+      "note": "Second clip from the same day, also embedded.",
+      "note_en": "Second clip from the same day, also embedded."
+    }
+  ]
+}
