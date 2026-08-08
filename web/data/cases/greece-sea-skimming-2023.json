@@ -1,0 +1,123 @@
+{
+  "id": "greece-sea-skimming-2023",
+  "num": 347,
+  "pursueReleases": [
+    1
+  ],
+  "name": "Dos objetos circulares rozando el mar, con dos días de diferencia",
+  "name_en": "Two circular objects skimming the sea, two days apart",
+  "year_start": 2023,
+  "country": "GR",
+  "country_name": "Grecia",
+  "flag": "🇬🇷",
+  "location": {
+    "lat": 38.5,
+    "lng": 23.8,
+    "place": "Aguas del Egeo / Mediterráneo oriental (MGRS 35SKD y 35SMV), misiones desde la base aérea de Lárisa",
+    "place_en": "Aegean / eastern Mediterranean waters (MGRS 35SKD and 35SMV), missions out of Larissa Air Base"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.08,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.02,
+    "indet": 0.2
+  },
+  "summary": "El 27 y el 29 de octubre de 2023, dos misiones distintas despegadas de la base aérea de Lárisa registraron sendos objetos pequeños y circulares volando justo por encima de la superficie del mar. El primero ejecutó varios giros de noventa grados a unos 80 mph antes de perderse del feed del sensor; el segundo se desplazaba a unos 30 mph rumbo a tierra firme. Ambos operadores usaron la misma frase para describirlos —'aparentemente circular, demasiado pequeño para distinguir detalles'— y ambos marcaron la casilla de control inteligente como 'no'. Los dos partes se desclasificaron juntos en enero de 2026 bajo el mismo expediente.",
+  "summary_en": "On October 27 and 29, 2023, two separate missions flown out of Larissa Air Base each logged a small, circular object flying just above the surface of the sea. The first executed several ninety-degree turns at roughly 80 mph before dropping off the sensor feed; the second moved at about 30 mph heading toward land. Both operators used the same phrase to describe them —'seemingly circular, too small to make out details'— and both marked the intelligent-control box as 'no.' The two reports were declassified together in January 2026 under the same file.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006080",
+      "type": "video",
+      "title": "DOW-UAP-PR34 — grabación del sensor, Grecia, octubre 2023",
+      "title_en": "DOW-UAP-PR34 — sensor footage, Greece, October 2023",
+      "source": "US Department of War vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006080"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006082",
+      "type": "video",
+      "title": "DOW-UAP-PR35 — grabación del sensor, Grecia, octubre 2023",
+      "title_en": "DOW-UAP-PR35 — sensor footage, Greece, October 2023",
+      "source": "US Department of War vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006082"
+    },
+    {
+      "src": "/pursue/dow-uap-d33-mission-report-greece-october-2023.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D33 — MISREP del avistamiento del 27 de octubre (giros de 90 grados a 80 mph)",
+      "title_en": "DOW-UAP-D33 — MISREP of the October 27 sighting (90-degree turns at 80 mph)",
+      "source": "Department of War / CENTCOM (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf"
+    },
+    {
+      "src": "/pursue/dow-uap-d35-mission-report-greece-october-2023.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D35 — MISREP del avistamiento del 29 de octubre (30 mph rumbo a tierra)",
+      "title_en": "DOW-UAP-D35 — MISREP of the October 29 sighting (30 mph heading toward land)",
+      "source": "Department of War / CENTCOM (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf"
+    }
+  ],
+  "whatHappened": "El primer avistamiento ocurrió el 27 de octubre de 2023. La aeronave había despegado de la base aérea de Lárisa (LGLR) a las 23:39Z del día anterior, en una misión que incluía además el traslado y aterrizaje en Muwaffaq Salti (OJMS, Jordania) para relevar a otra plataforma. A las 00:35:12Z, mientras iba en ruta hacia su objetivo, la tripulación detectó un objeto volando justo por encima de la superficie del agua. Durante los tres minutos siguientes el objeto ejecutó varios giros de noventa grados a una velocidad cinemática estimada en 80 mph. A las 00:38Z se perdió del feed del sensor.\n\nEl operador describió el objeto como 'aparentemente circular, demasiado pequeño para distinguir detalles'. En el formulario estructurado consignó las maniobras como 'giros pronunciados de noventa grados', el estado físico como sólido, los medios de propulsión como desconocidos y —significativamente— la casilla de control inteligente como 'no'. Las firmas del objeto se registraron como 'ninguna': no hubo detección en ninguna banda distinta del vídeo. La respuesta del objeto a las acciones del observador fue 'ninguna', el rumbo de la aeronave observadora era suroeste, y la evaluación del operador fue 'benigno'.\n\nEl segundo avistamiento ocurrió dos días después, el 29 de octubre, en una misión distinta despegada también de Lárisa a las 15:04Z del día 28. A las 08:11Z la tripulación detectó otro objeto volando igualmente justo por encima de la superficie del océano. Este se desplazó rozando el agua en dirección a tierra firme, a una velocidad cinemática estimada en 30 mph, y se perdió del feed en el mismo minuto en que se lo detectó. La aeronave regresó a Lárisa a las 11:05Z.\n\nLa coincidencia notable es de lenguaje: el operador de esta segunda misión describió el objeto con exactamente la misma fórmula —'aparentemente circular, demasiado pequeño para distinguir detalles'— y también marcó control inteligente como 'no', firmas como 'ninguna', estado físico sólido, maniobrabilidad 'ninguna' y evaluación 'benigno'. En este segundo caso la casilla de características anómalas quedó vacía. Ambos partes fueron desclasificados el 22 de enero de 2026 por el jefe de estado mayor del CENTCOM bajo el mismo expediente, MDR 26-0019, y liberados a la AARO.",
+  "whatHappened_en": "The first sighting occurred on October 27, 2023. The aircraft had taken off from Larissa Air Base (LGLR) at 23:39Z the previous day, on a mission that also included transiting to and landing at Muwaffaq Salti (OJMS, Jordan) to relieve another platform. At 00:35:12Z, while en route to its target, the crew detected an object flying just above the surface of the water. Over the following three minutes the object executed several ninety-degree turns at an estimated kinetic velocity of 80 mph. At 00:38Z it dropped off the sensor feed.\n\nThe operator described the object as 'seemingly circular, too small to make out details.' In the structured form he recorded the maneuvers as 'sharp ninety-degree turns,' physical state as solid, means of propulsion as unknown and —significantly— the intelligent-control box as 'no.' The object's signatures were recorded as 'none': there was no detection in any band other than video. The object's response to observer actions was 'none,' the observing aircraft's heading was southwest, and the operator's assessment was 'benign.'\n\nThe second sighting occurred two days later, on October 29, on a different mission also flown out of Larissa, departing at 15:04Z on the 28th. At 08:11Z the crew detected another object likewise flying just above the ocean surface. This one moved skimming the water toward land, at an estimated kinetic velocity of 30 mph, and dropped off the feed in the same minute it was detected. The aircraft returned to Larissa at 11:05Z.\n\nThe notable coincidence is one of language: the operator on this second mission described the object with exactly the same formula —'seemingly circular, too small to make out details'— and also marked intelligent control as 'no,' signatures as 'none,' physical state solid, maneuverability 'none' and assessment 'benign.' In this second case the anomalous-characteristics box was left empty. Both reports were declassified on January 22, 2026 by the CENTCOM chief of staff under the same file, MDR 26-0019, and released to AARO.",
+  "whyMatters": "Estos dos partes son valiosos precisamente por lo modestos que son, y por lo que revelan sobre cómo se genera el corpus institucional de UAP. Son el tipo de registro que domina numéricamente los archivos militares: objetos pequeños, sin firma en sensores distintos del vídeo, observados durante segundos o pocos minutos, que el propio operador califica de benignos y que nadie persigue. Contarlos como parte del fenómeno es tan importante como contar los casos espectaculares, porque son la base de la distribución.\n\nLa lectura prosaica es fuerte y hay que decirla primero. Objetos circulares pequeños, a 30 y 80 mph, rozando la superficie del mar y en un caso dirigiéndose a tierra, describen bastante bien aves marinas —el Egeo está en una ruta migratoria importante— y también drones comerciales o militares de pequeño porte, abundantes en un teatro donde operan fuerzas griegas, turcas y aliadas. Los giros de noventa grados son anómalos para un ave grande en vuelo de crucero, pero triviales para un cuadricóptero. Que ambos operadores marcaran la casilla de control inteligente como 'no' sugiere que ninguno percibió comportamiento dirigido.\n\nLo que sí aporta el par es una forma débil de corroboración cruzada. Dos tripulaciones distintas, en misiones separadas por dos días, describieron con la misma fórmula objetos con el mismo perfil de vuelo —rozando el agua, pequeños, sin firma— en la misma área de operaciones. Eso no prueba nada sobre su naturaleza, pero sí indica que se trata de un fenómeno recurrente y localmente presente, no de una percepción aislada. Si son aves o drones, lo interesante es que un sistema de vigilancia diseñado para detectar amenazas los está catalogando formalmente como no identificados, lo cual es en sí mismo un dato sobre el umbral de discriminación del sensor.\n\nEl posterior refleja esa lectura sin adornarla: más de la mitad de la masa en explicación prosaica con subtipo de misidentificación, una fracción menor repartida entre plataformas humanas —clasificadas o adversarias, ambas plausibles en el Egeo— y un quinto en indeterminado, que es lo que honestamente queda cuando el objeto es demasiado pequeño para distinguir detalles y desaparece del feed en minutos.",
+  "whyMatters_en": "These two reports are valuable precisely for how modest they are, and for what they reveal about how the institutional UAP corpus is generated. They are the kind of record that numerically dominates military archives: small objects, no signature in sensors other than video, observed for seconds or a few minutes, which the operator himself rates as benign and which nobody pursues. Counting them as part of the phenomenon matters as much as counting the spectacular cases, because they are the base of the distribution.\n\nThe prosaic reading is strong and should be stated first. Small circular objects, at 30 and 80 mph, skimming the sea surface and in one case heading toward land, describe seabirds fairly well —the Aegean sits on a major migratory route— and also small commercial or military drones, abundant in a theater where Greek, Turkish and allied forces operate. The ninety-degree turns are anomalous for a large bird in cruise flight, but trivial for a quadcopter. That both operators marked the intelligent-control box as 'no' suggests neither perceived directed behavior.\n\nWhat the pair does contribute is a weak form of cross-corroboration. Two different crews, on missions two days apart, described with the same formula objects with the same flight profile —skimming the water, small, no signature— in the same area of operations. That proves nothing about their nature, but it does indicate a recurring and locally present phenomenon rather than an isolated perception. If they are birds or drones, what is interesting is that a surveillance system designed to detect threats is formally cataloging them as unidentified, which is itself a datum about the sensor's discrimination threshold.\n\nThe posterior reflects that reading without dressing it up: more than half the mass on prosaic explanation with a misidentification subtype, a smaller share split between human platforms —classified or adversary, both plausible in the Aegean— and a fifth on indeterminate, which is what honestly remains when the object is too small to make out details and vanishes from the feed within minutes.",
+  "evidence": [
+    "Avistamiento 1: 27 oct 2023, 00:35:12Z a 00:38Z, objeto rozando la superficie del mar, giros de 90 grados a ~80 mph",
+    "Avistamiento 2: 29 oct 2023, 08:11Z, objeto rozando el agua rumbo a tierra a ~30 mph, perdido del feed en el mismo minuto",
+    "Ambas misiones despegaron de la base aérea de Lárisa (LGLR); la primera con escala en Muwaffaq Salti (OJMS)",
+    "Descripción idéntica en los dos partes: 'aparentemente circular, demasiado pequeño para distinguir detalles'",
+    "Ambos formularios: estado físico sólido, propulsión desconocida, firmas 'ninguna', control inteligente 'no', evaluación 'benigno'",
+    "Solo el primero registra maniobras: 'giros pronunciados de noventa grados'",
+    "Ambos desclasificados el 22 de enero de 2026 bajo el mismo expediente MDR 26-0019"
+  ],
+  "evidence_en": [
+    "Sighting 1: Oct 27, 2023, 00:35:12Z to 00:38Z, object skimming the sea surface, 90-degree turns at ~80 mph",
+    "Sighting 2: Oct 29, 2023, 08:11Z, object skimming the water toward land at ~30 mph, lost from the feed within the same minute",
+    "Both missions departed Larissa Air Base (LGLR); the first with a stop at Muwaffaq Salti (OJMS)",
+    "Identical description in both reports: 'seemingly circular, too small to make out details'",
+    "Both forms: physical state solid, propulsion unknown, signatures 'none', intelligent control 'no', assessment 'benign'",
+    "Only the first records maneuvers: 'sharp ninety-degree turns'",
+    "Both declassified January 22, 2026 under the same file MDR 26-0019"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D33 y D35, MISREP de los avistamientos del 27 y 29 de octubre de 2023 (PURSUE Release 01)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Ambos documentos embebidos en el visor de este caso.",
+      "note_en": "Both documents embedded in this case's viewer."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR34 y PR35, grabaciones del sensor, Grecia, octubre 2023 (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006080",
+      "note": "Mirror audiovisual oficial del DoD; los dos videos van embebidos en el visor de este caso.",
+      "note_en": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D33 and D35, MISREPs of the October 27 and 29, 2023 sightings (PURSUE Release 01)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Both documents embedded in this case's viewer.",
+      "note_en": "Both documents embedded in this case's viewer."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR34 and PR35, sensor footage, Greece, October 2023 (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006080",
+      "note": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer.",
+      "note_en": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer."
+    }
+  ]
+}

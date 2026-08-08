@@ -1,0 +1,107 @@
+{
+  "id": "greece-diamond-swir-2024",
+  "num": 346,
+  "pursueReleases": [
+    1
+  ],
+  "name": "El rombo con sonda que solo existía en el infrarrojo de onda corta",
+  "name_en": "The diamond with a probe that existed only in short-wave infrared",
+  "year_start": 2024,
+  "country": "GR",
+  "country_name": "Grecia",
+  "flag": "🇬🇷",
+  "location": {
+    "lat": 38.8,
+    "lng": 23.3,
+    "place": "Espacio aéreo griego / Egeo (coordenadas MGRS 35SQT–35SPT), misión ISR desde la base aérea de Lárisa",
+    "place_en": "Greek/Aegean airspace (MGRS 35SQT–35SPT), ISR mission out of Larissa Air Base"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.18
+  },
+  "summary": "El 25 de enero de 2024, durante una misión de inteligencia, vigilancia y reconocimiento despegada de la base aérea de Lárisa, la tripulación de una aeronave estadounidense observó durante dos minutos un objeto que volaba a unos 434 nudos y al que describió como un rombo con una 'sonda' recta y no maniobrable en su parte inferior. El detalle central del expediente es negativo: el objeto solo apareció en la cámara de infrarrojo de onda corta (SWIR), y en ninguna otra banda del sensor. El parte, desclasificado en octubre de 2025 y liberado en la primera entrega de PURSUE, lo cataloga formalmente como 'incidente UAP' y a la vez consigna la evaluación del observador: benigno.",
+  "summary_en": "On January 25, 2024, during an intelligence, surveillance and reconnaissance mission flown out of Larissa Air Base, the crew of a U.S. aircraft observed for two minutes an object flying at roughly 434 knots, which they described as a diamond with a straight, non-maneuvering 'probe' on its underside. The file's central detail is a negative one: the object appeared only on the short-wave infrared (SWIR) camera, and in no other sensor band. The report, declassified in October 2025 and released in the first PURSUE drop, formally catalogs it as a 'UAP Incident' while simultaneously recording the observer's assessment: benign.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006073",
+      "type": "video",
+      "title": "DOW-UAP-PR28 — grabación del sensor, Grecia, enero 2024",
+      "title_en": "DOW-UAP-PR28 — sensor footage, Greece, January 2024",
+      "source": "US Department of War vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006073"
+    },
+    {
+      "src": "/pursue/dow-uap-d25-mission-report-greece-january-2024.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D25 — Mission Report (MISREP) con formulario UAP completo, Grecia, enero 2024",
+      "title_en": "DOW-UAP-D25 — Mission Report (MISREP) with full UAP form, Greece, January 2024",
+      "source": "Department of War / CENTCOM (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf"
+    }
+  ],
+  "whatHappened": "La aeronave despegó de la base aérea de Lárisa (código OACI LGLR, en Tesalia) a las 01:09Z del 25 de enero de 2024 para una misión de inteligencia, vigilancia y reconocimiento que terminaría durando veinte horas y cuarenta minutos. El sensor primario era vídeo de movimiento completo (FMV). A las 05:09Z, todavía en tránsito hacia su punto de estación, la tripulación registró el contacto que convirtió el parte rutinario en un expediente UAP.\n\nEl objeto cruzó el campo de visión durante aproximadamente dos minutos, terminando a las 05:11Z. En la observación inicial volaba a unos 434 nudos —cerca de 800 km/h, un régimen perfectamente aeronáutico— mientras la aeronave observadora se desplazaba a 176 nudos a nivel de vuelo 250. El objeto se estimó a nivel de vuelo 200, es decir unos 1.500 metros por debajo del observador, con rumbo oeste, entre las coordenadas MGRS 35SQT44 y 35SPT63 con un radio de incertidumbre de veinte unidades en ambos extremos.\n\nLa descripción morfológica que consignó el operador es inusualmente concreta para este tipo de partes: 'forma de rombo redondeado con una \"cola\" recta, no maniobrable', y en el texto narrativo, 'el UAP parecía de forma romboidal con una sonda no maniobrable en la parte inferior'. El formulario registra el estado físico como sólido, los medios de propulsión como desconocidos, y la pregunta sobre control inteligente como desconocida. Bajo 'características o comportamientos anómalos' el operador anotó tres cosas: mantuvo una trayectoria de vuelo estable, aumentó y disminuyó su perfil de altitud, y no cambió de rumbo. Las casillas de maniobrabilidad y de respuesta a las acciones del observador quedaron ambas en 'ninguna'.\n\nEl elemento decisivo, sin embargo, es una ausencia. El parte consigna que el objeto solo apareció en la cámara SWIR —infrarrojo de onda corta— y la casilla de firmas registra 'SWIR WHT', blanco en esa banda. No hubo interrogación por sensor, no se reportaron terceros observadores, no hubo efectos sobre personas ni sobre el equipamiento, y no se recuperó material alguno. El evento recibió el número de serie 250509ZJAN2024-CENTCOM 001. Quien firmó la observación era un aviador de primera clase, grado E-4, y su evaluación del objeto fue 'benigno'. La aeronave continuó su misión sin más incidentes y aterrizó de vuelta en Lárisa a las 21:49Z. El documento fue desclasificado el 24 de octubre de 2025 por el jefe de estado mayor del CENTCOM bajo el expediente MDR 25-0100 a 25-0103 y liberado a la AARO.",
+  "whatHappened_en": "The aircraft took off from Larissa Air Base (ICAO code LGLR, in Thessaly) at 01:09Z on January 25, 2024, for an intelligence, surveillance and reconnaissance mission that would run twenty hours and forty minutes. Its primary sensor was full-motion video (FMV). At 05:09Z, still in transit to its station point, the crew logged the contact that turned a routine report into a UAP file.\n\nThe object crossed the field of view for approximately two minutes, ending at 05:11Z. On initial observation it was flying at roughly 434 knots —around 800 km/h, a thoroughly aeronautical regime— while the observing aircraft moved at 176 knots at flight level 250. The object was estimated at flight level 200, about 1,500 meters below the observer, heading west, between MGRS coordinates 35SQT44 and 35SPT63 with an uncertainty radius of twenty units at both ends.\n\nThe morphological description the operator recorded is unusually concrete for this kind of report: 'round diamond shape with a straight, non-maneuverable \"tail\"', and in the narrative text, 'the UAP appeared diamond in shape with a non-maneuvering probe at the bottom.' The form records physical state as solid, means of propulsion as unknown, and the question of intelligent control as unknown. Under 'anomalous characteristics or behaviors' the operator noted three things: it maintained a steady flight path, increased and decreased its altitude profile, and did not change trajectory. The maneuverability and response-to-observer-actions boxes were both marked 'none.'\n\nThe decisive element, however, is an absence. The report records that the object appeared only on the SWIR camera —short-wave infrared— and the signatures box records 'SWIR WHT', white in that band. There was no sensor interrogation, no third-party observers were reported, there were no effects on persons or equipment, and no material was recovered. The event was assigned serial number 250509ZJAN2024-CENTCOM 001. The person who signed the observation was a Senior Airman, grade E-4, and their assessment of the object was 'benign.' The aircraft continued its mission without further incident and landed back at Larissa at 21:49Z. The document was declassified on October 24, 2025 by the CENTCOM chief of staff under file MDR 25-0100 through 25-0103 and released to AARO.",
+  "whyMatters": "El valor de este expediente no está en lo espectacular sino en lo específico. La mayoría de los partes militares de UAP liberados por PURSUE registran poco más que 'se observó un UAP en tal coordenada'; este consigna forma, velocidad, altitud, rumbo, duración, banda de detección y una evaluación explícita del operador, todo en un formulario estructurado que el Departamento de Guerra diseñó precisamente para capturar esos campos. Es, en términos de procedimiento, lo que un sistema de reporte funcionando bien produce.\n\nLa detección exclusiva en SWIR es el dato que merece atención analítica, y corta en dos direcciones. Un objeto visible únicamente en infrarrojo de onda corta y no en las demás bandas puede indicar una firma térmica o de reflectancia peculiar; pero también es exactamente lo que produciría un artefacto de sensor, una reflexión solar sobre una superficie a gran altura, o un objeto de bajo contraste visual que solo el SWIR separa del fondo. El propio operador no lo trató como una anomalía inexplicable: marcó 'benigno' y siguió la misión.\n\nLa morfología descrita —un rombo con una sonda recta debajo— admite lecturas prosaicas fuertes. A 434 nudos y con trayectoria rectilínea sostenida, el perfil es compatible con una aeronave convencional vista desde un ángulo desfavorable, con un dron de gran altitud, o con una plataforma con antena o sensor pendiente. El Egeo es además un espacio aéreo densamente transitado y militarmente disputado, donde la actividad de aviación griega, turca y aliada es constante: eso sostiene tanto la hipótesis de tecnología humana clasificada como la de plataforma adversaria, y es la razón por la que el posterior no colapsa todo sobre lo prosaico pese a que esa sea la lectura más probable.\n\nLo que el expediente no permite decidir es si la firma SWIR-única refleja una propiedad del objeto o una limitación del sensor. Sin la grabación cruda ni un análisis de calibración —que no forman parte de la liberación— esa pregunta queda abierta, y por eso una fracción no trivial de la masa se queda en 'indeterminado'. El caso vale como registro instrumental honesto de algo que el propio observador consideró inofensivo y que el sistema, aun así, decidió catalogar.",
+  "whyMatters_en": "This file's value lies not in the spectacular but in the specific. Most of the military UAP reports released by PURSUE record little more than 'a UAP was observed at such-and-such coordinate'; this one records shape, speed, altitude, heading, duration, detection band and an explicit operator assessment, all in a structured form the Department of War designed precisely to capture those fields. In procedural terms, it is what a reporting system working properly produces.\n\nThe SWIR-only detection is the datum deserving analytical attention, and it cuts both ways. An object visible solely in short-wave infrared and not in the other bands may indicate a peculiar thermal or reflectance signature; but it is also exactly what a sensor artifact, a solar reflection off a high-altitude surface, or a low-visual-contrast object that only SWIR separates from the background would produce. The operator himself did not treat it as an inexplicable anomaly: he marked 'benign' and continued the mission.\n\nThe described morphology —a diamond with a straight probe beneath— admits strong prosaic readings. At 434 knots on a sustained straight trajectory, the profile is compatible with a conventional aircraft seen from an unfavorable angle, a high-altitude drone, or a platform with a trailing antenna or sensor. The Aegean is moreover densely trafficked and militarily contested airspace, where Greek, Turkish and allied aviation activity is constant: that sustains both the classified-human-technology hypothesis and the adversary-platform one, and is why the posterior does not collapse entirely onto the prosaic despite that being the likeliest reading.\n\nWhat the file cannot settle is whether the SWIR-only signature reflects a property of the object or a limitation of the sensor. Without the raw recording or a calibration analysis —neither of which is part of the release— that question stays open, and so a non-trivial share of the mass remains on 'indeterminate.' The case stands as an honest instrumental record of something the observer himself considered harmless and which the system nonetheless chose to catalog.",
+  "evidence": [
+    "Contacto el 25 de enero de 2024 a las 05:09Z, duración ~2 minutos, misión ISR despegada de Lárisa (LGLR)",
+    "Velocidad estimada del objeto: ~434 nudos; aeronave observadora a 176 nudos y nivel de vuelo 250",
+    "Objeto estimado en nivel de vuelo 200, rumbo oeste, entre MGRS 35SQT44 y 35SPT63",
+    "Descripción morfológica: 'forma de rombo redondeado con una cola recta, no maniobrable' / 'sonda no maniobrable en la parte inferior'",
+    "Detección exclusiva en la cámara SWIR (infrarrojo de onda corta); firma registrada como 'SWIR WHT'",
+    "Formulario: estado físico sólido, propulsión desconocida, control inteligente desconocido, sin efectos sobre personas ni equipamiento",
+    "Evaluación del observador (aviador grado E-4): benigno. Nº de serie del evento 250509ZJAN2024-CENTCOM 001",
+    "Desclasificado el 24 de octubre de 2025 por el jefe de estado mayor del CENTCOM (MDR 25-0100 a 25-0103)"
+  ],
+  "evidence_en": [
+    "Contact on January 25, 2024 at 05:09Z, duration ~2 minutes, ISR mission out of Larissa (LGLR)",
+    "Estimated object speed: ~434 knots; observing aircraft at 176 knots and flight level 250",
+    "Object estimated at flight level 200, heading west, between MGRS 35SQT44 and 35SPT63",
+    "Morphological description: 'round diamond shape with a straight, non-maneuverable tail' / 'non-maneuvering probe at the bottom'",
+    "Detected only on the SWIR camera (short-wave infrared); signature recorded as 'SWIR WHT'",
+    "Form: physical state solid, propulsion unknown, intelligent control unknown, no effects on persons or equipment",
+    "Observer assessment (Senior Airman, E-4): benign. Event serial number 250509ZJAN2024-CENTCOM 001",
+    "Declassified October 24, 2025 by the CENTCOM chief of staff (MDR 25-0100 through 25-0103)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D25, Mission Report con formulario UAP, Grecia, enero 2024 (PURSUE Release 01)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR28, grabación del sensor, Grecia, enero 2024 (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006073",
+      "note": "Mirror audiovisual oficial del DoD; el video va embebido en el visor de este caso.",
+      "note_en": "Official DoD audiovisual mirror; the video is embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D25, Mission Report with UAP form, Greece, January 2024 (PURSUE Release 01)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer.",
+      "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR28, sensor footage, Greece, January 2024 (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006073",
+      "note": "Official DoD audiovisual mirror; the video is embedded in this case's viewer.",
+      "note_en": "Official DoD audiovisual mirror; the video is embedded in this case's viewer."
+    }
+  ]
+}

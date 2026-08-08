@@ -1,0 +1,88 @@
+{
+  "id": "ayn-al-asad-munition-2024",
+  "num": 348,
+  "pursueReleases": [
+    1
+  ],
+  "name": "El objeto caliente que cruzó la mira entre el disparo y el impacto",
+  "name_en": "The hot object that crossed the crosshairs between release and impact",
+  "year_start": 2024,
+  "country": "IQ",
+  "country_name": "Irak",
+  "flag": "🇮🇶",
+  "location": {
+    "lat": 33.79,
+    "lng": 42.44,
+    "place": "Zona de operación restringida 'RAINDROP', base aérea Ayn al-Asad, provincia de Anbar",
+    "place_en": "Restricted Operating Zone 'RAINDROP', Ayn al-Asad Airbase, Anbar Province"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0.2,
+    "adversaria": 0.28,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.02,
+    "indet": 0.16
+  },
+  "summary": "El 20 de septiembre de 2024, durante una calibración de armamento sobre la base aérea Ayn al-Asad en Irak, una aeronave estadounidense lanzó un misil AGM-176 y mantuvo la designación láser sobre el blanco hasta el impacto. En ese intervalo —entre el disparo y la detonación— un objeto no identificado cruzó el campo de visión del sensor a alta velocidad, generando un destello de lente infrarrojo en las torretas MX-20 y MX-25 que indicaba una fuente de calor significativa. El parte consigna que ningún otro aparato había sido reportado en ese espacio aéreo, y que la trayectoria del objeto 'parecía predeterminada'. Nota de archivo: el fichero oficial se distribuyó bajo un nombre que dice 'Mar de la China Oriental', pero su contenido es íntegramente de CENTCOM e Irak.",
+  "summary_en": "On September 20, 2024, during a weapons calibration over Ayn al-Asad Airbase in Iraq, a U.S. aircraft released an AGM-176 missile and held laser designation on the target until impact. In that interval —between release and detonation— an unidentified object crossed the sensor's field of view at high speed, generating an infrared lens flare on the MX-20 and MX-25 turrets indicating a significant heat source. The report records that no other aircraft had been reported in that airspace, and that the object's path 'appeared predetermined.' Archival note: the official file was distributed under a name reading 'East China Sea', but its content is entirely CENTCOM and Iraq.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "/pursue/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D28 — MISREP con formulario UAP, Ayn al-Asad (Irak), septiembre 2024. El nombre oficial del archivo dice 'East China Sea'; el contenido es de CENTCOM/Irak",
+      "title_en": "DOW-UAP-D28 — MISREP with UAP form, Ayn al-Asad (Iraq), September 2024. The official filename reads 'East China Sea'; the content is CENTCOM/Iraq",
+      "source": "Department of War / CENTCOM (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d28-mission-report-east-china-sea-2024.pdf"
+    }
+  ],
+  "whatHappened": "La aeronave entró en la zona de operación restringida denominada 'RAINDROP', sobre la base aérea Ayn al-Asad en la provincia iraquí de Anbar, hacia las 19:30Z del 20 de septiembre de 2024, con la misión de realizar una calibración de armamento. Aproximadamente a las 20:25Z recibió una petición de fuego para emplear un AGM-176 —el Griffin, un misil ligero guiado por láser—. La tripulación ejecutó el lanzamiento y, conforme al procedimiento, mantuvo la energía láser sobre el blanco hasta que la munición impactó.\n\nEs en ese intervalo, corto por definición, donde ocurre lo que convierte un ejercicio rutinario en un expediente UAP. A las 20:27:59Z, entre la liberación del arma y su impacto, un objeto cruzó el campo de visión del sensor. El parte lo consigna de forma escueta pero precisa: el objeto generó un destello de lente infrarrojo en las torretas ópticas MX-20 y MX-25, lo que el operador interpretó como indicio de una fuente de calor significativa, y se desplazó a alta velocidad a través del campo de visión. La casilla de observaciones de maniobrabilidad recoge la formulación literal: 'el UAP voló a través del sensor entre la liberación de la munición y el impacto de la munición'.\n\nEl formulario estructurado añade los elementos que permiten pesar el caso. Las firmas del objeto se registran como 'firma infrarroja detectable por MX-20 y MX-25'. El estado físico es sólido. Las capacidades o materiales avanzados se consignan como 'ninguno observado'. La respuesta del objeto a las acciones del observador figura como 'ninguna observada', y en la casilla de reacción a la observación o al enfrentamiento el operador escribió una frase que carga con más juicio del que aparenta: 'ninguna observada; la trayectoria de movimiento parecía predeterminada'. No hubo efectos sobre personas ni sobre el equipamiento, no se recuperó material, y la aeronave observadora volaba a 170 nudos indicados.\n\nDos datos del parte acotan la interpretación. El primero: bajo 'terceros observadores o informantes' se consigna que ninguna parte reportó una aeronave adicional en ese espacio aéreo —es decir, nadie tenía tráfico declarado ahí—. El segundo: quien firmó la observación fue un capitán, y su evaluación del objeto fue 'benigno'. El evento recibió el número de serie 202027ZSEP2024-CENTCOM.\n\nUna nota de archivo es necesaria y forma parte del expediente. El documento se distribuyó en la primera entrega de PURSUE bajo un nombre de fichero que lo sitúa en el Mar de la China Oriental. Su contenido no lo sostiene: no menciona China, ni el Pacífico, ni el INDOPACOM en ninguna de sus seis páginas, mientras que cita CENTCOM catorce veces, nombra Ayn al-Asad y sitúa las coordenadas del observador en la cuadrícula 38SKC, que corresponde a Irak. El caso se cataloga aquí por su contenido, no por el nombre del archivo.",
+  "whatHappened_en": "The aircraft entered the restricted operating zone designated 'RAINDROP', over Ayn al-Asad Airbase in Iraq's Anbar province, at approximately 19:30Z on September 20, 2024, tasked with conducting a weapons calibration. At roughly 20:25Z it received a call for fire to employ an AGM-176 —the Griffin, a lightweight laser-guided missile. The crew executed the release and, per procedure, held laser energy on the target until the munition impacted.\n\nIt is in that interval, short by definition, that what turns a routine exercise into a UAP file occurs. At 20:27:59Z, between weapons release and impact, an object crossed the sensor's field of view. The report records it tersely but precisely: the object generated an infrared lens flare on the MX-20 and MX-25 optical turrets, which the operator read as indicating a significant heat source, and moved at a high rate of speed through the field of view. The maneuverability-observations box carries the literal phrasing: 'UAP flew through sensor in between munition release and munition impact.'\n\nThe structured form adds the elements that let the case be weighed. The object's signatures are recorded as 'IR signature detectable by MX-20 & MX-25.' Physical state is solid. Advanced capabilities or materials are recorded as 'none observed.' The object's response to observer actions reads 'none observed,' and in the reaction-to-observation-or-engagement box the operator wrote a phrase carrying more judgment than it appears to: 'none observed; path of movement appeared predetermined.' There were no effects on persons or equipment, no material was recovered, and the observing aircraft was flying at 170 knots indicated.\n\nTwo data points in the report bound the interpretation. First: under 'third-party observers and/or reporters' it is recorded that no parties reported an additional aircraft in that airspace —that is, nobody had declared traffic there. Second: the person who signed the observation was a Captain, and their assessment of the object was 'benign.' The event was assigned serial number 202027ZSEP2024-CENTCOM.\n\nAn archival note is necessary and forms part of the file. The document was distributed in the first PURSUE drop under a filename placing it in the East China Sea. Its content does not support that: it mentions neither China, nor the Pacific, nor INDOPACOM anywhere in its six pages, while citing CENTCOM fourteen times, naming Ayn al-Asad and placing the observer's coordinates in grid 38SKC, which corresponds to Iraq. The case is cataloged here by its content, not by its filename.",
+  "whyMatters": "El caso importa por la coincidencia temporal, que es de una precisión poco habitual en este corpus. El objeto no cruzó el campo de visión en cualquier momento de una misión de veinte horas: lo hizo en la ventana de segundos que separa la liberación de una munición guiada de su impacto, mientras la tripulación mantenía deliberadamente el sensor y el láser fijos sobre el blanco. Eso significa que el registro tiene marca de tiempo dura, contexto operacional documentado y un sensor apuntando exactamente donde ocurrió el evento — condiciones que casi nunca se dan juntas.\n\nEs además el segundo caso del corpus, junto al del Golfo de Omán de 2021, donde un objeto no identificado aparece en el instante de un empleo real de armamento. Ahí terminan las semejanzas: en el Golfo de Omán las esferas se alejaron en el momento del disparo, una reacción aparente; aquí el parte dice lo contrario —'ninguna reacción observada'— y va más lejos al calificar la trayectoria de 'predeterminada'. Que dos tripulaciones distintas, en teatros y años distintos, registren presencia de UAP durante disparos reales es un patrón que merece seguimiento, pero no es evidencia de reacción en este caso.\n\nLa calibración del posterior está dominada por dónde ocurrió. Ayn al-Asad ha sido, durante años, blanco recurrente de ataques con drones y cohetes de milicias alineadas con Irán, además de ser una base con actividad aérea estadounidense intensa. En ese contexto, un objeto caliente, veloz, de trayectoria aparentemente predeterminada y sin tráfico declarado describe con incomodidad exacta un dron de un solo uso, un cohete, o un fragmento de la propia munición o de su firma térmica. De ahí que la masa se reparta casi en tercios entre lo prosaico, la tecnología humana clasificada y la plataforma adversaria: en Anbar en 2024 esas tres hipótesis son todas ordinarias, no exóticas.\n\nLo que impide cerrarlo del todo es que el parte no resuelve nada. El operador vio una fuente de calor cruzar la mira en el peor momento posible, anotó que nadie tenía tráfico declarado ahí, evaluó el objeto como benigno y siguió adelante. Ese residuo —un objeto no atribuido en el espacio aéreo de una base bajo amenaza, durante un disparo real— es lo que sostiene la fracción indeterminada, y es también, en clave de seguridad operacional antes que de fenomenología, el aspecto más serio del expediente.",
+  "whyMatters_en": "The case matters for its temporal coincidence, which is unusually precise for this corpus. The object did not cross the field of view at just any moment of a twenty-hour mission: it did so in the seconds-long window separating the release of a guided munition from its impact, while the crew deliberately held sensor and laser fixed on the target. That means the record has a hard timestamp, documented operational context, and a sensor pointed exactly where the event happened —conditions that almost never coincide.\n\nIt is also the second case in the corpus, alongside the Gulf of Oman in 2021, where an unidentified object appears at the instant of a live weapons employment. The resemblance ends there: in the Gulf of Oman the orbs fled at the moment of firing, an apparent reaction; here the report says the opposite —'none observed'— and goes further by calling the trajectory 'predetermined.' That two different crews, in different theaters and years, log UAP presence during live fire is a pattern worth tracking, but it is not evidence of reaction in this case.\n\nThe posterior's calibration is dominated by where it happened. Ayn al-Asad has for years been a recurring target of drone and rocket attacks by Iran-aligned militias, besides being a base with intense U.S. air activity. In that context, a hot, fast object on an apparently predetermined path with no declared traffic describes with uncomfortable precision a one-way drone, a rocket, or a fragment of the munition itself or its thermal signature. Hence the mass splits nearly in thirds among the prosaic, classified human technology and an adversary platform: in Anbar in 2024 all three hypotheses are ordinary, not exotic.\n\nWhat prevents closing it entirely is that the report resolves nothing. The operator saw a heat source cross the crosshairs at the worst possible moment, noted that nobody had declared traffic there, assessed the object as benign and moved on. That residue —an unattributed object in the airspace of a base under threat, during live fire— is what sustains the indeterminate share, and it is also, in operational-security terms rather than phenomenological ones, the file's most serious aspect.",
+  "evidence": [
+    "20 sep 2024: aeronave entra en la zona restringida 'RAINDROP' sobre Ayn al-Asad hacia las 19:30Z para calibración de armamento",
+    "~20:25Z: petición de fuego para emplear un AGM-176 (Griffin, guiado por láser); la tripulación mantiene designación láser hasta el impacto",
+    "20:27:59Z: objeto cruza el campo de visión del sensor entre la liberación de la munición y su impacto",
+    "Genera destello de lente infrarrojo en las torretas MX-20 y MX-25 → fuente de calor significativa; alta velocidad",
+    "Formulario: firma IR detectable por MX-20/MX-25, estado sólido, capacidades avanzadas 'ninguna observada'",
+    "Reacción: 'ninguna observada; la trayectoria de movimiento parecía predeterminada'",
+    "Ningún tercero reportó aeronave adicional en ese espacio aéreo; sin efectos sobre personas ni equipamiento",
+    "Observador de grado capitán; evaluación 'benigno'; nº de serie 202027ZSEP2024-CENTCOM",
+    "Discrepancia de archivo: el fichero oficial se llama 'east-china-sea-2024' pero no menciona China, Pacífico ni INDOPACOM; cita CENTCOM 14 veces y sitúa al observador en la cuadrícula MGRS 38SKC (Irak)"
+  ],
+  "evidence_en": [
+    "Sept 20, 2024: aircraft enters restricted zone 'RAINDROP' over Ayn al-Asad at ~19:30Z for weapons calibration",
+    "~20:25Z: call for fire to employ an AGM-176 (Griffin, laser-guided); crew holds laser designation until impact",
+    "20:27:59Z: object crosses the sensor's field of view between munition release and impact",
+    "Generates an IR lens flare on the MX-20 and MX-25 turrets → significant heat source; high rate of speed",
+    "Form: IR signature detectable by MX-20/MX-25, solid physical state, advanced capabilities 'none observed'",
+    "Reaction: 'none observed; path of movement appeared predetermined'",
+    "No third party reported an additional aircraft in that airspace; no effects on persons or equipment",
+    "Observer of Captain grade; assessment 'benign'; serial number 202027ZSEP2024-CENTCOM",
+    "Archival discrepancy: the official file is named 'east-china-sea-2024' but mentions neither China, Pacific nor INDOPACOM; it cites CENTCOM 14 times and places the observer in MGRS grid 38SKC (Iraq)"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D28, MISREP con formulario UAP, Ayn al-Asad (PURSUE Release 01)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Documento embebido en el visor de este caso. El nombre del fichero oficial dice 'east-china-sea-2024', pero su contenido corresponde a CENTCOM e Irak; se cataloga por el contenido.",
+      "note_en": "Document embedded in this case's viewer. The official filename reads 'east-china-sea-2024', but its content corresponds to CENTCOM and Iraq; it is cataloged by content."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — DOW-UAP-D28, MISREP with UAP form, Ayn al-Asad (PURSUE Release 01)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Document embedded in this case's viewer. The official filename reads 'east-china-sea-2024', but its content corresponds to CENTCOM and Iraq; it is cataloged by content.",
+      "note_en": "Document embedded in this case's viewer. The official filename reads 'east-china-sea-2024', but its content corresponds to CENTCOM and Iraq; it is cataloged by content."
+    }
+  ]
+}
