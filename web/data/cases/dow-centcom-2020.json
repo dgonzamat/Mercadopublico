@@ -498,24 +498,6 @@
       "source": "US Department of War vía DVIDS (PURSUE Release 01)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.dvidshub.net/video/1006083"
-    },
-    {
-      "src": "https://www.dvidshub.net/video/embed/1014098",
-      "type": "video",
-      "title": "DOW-UAP-PR102 — grabación de sensor, Mar de la China Oriental, 2024",
-      "title_en": "DOW-UAP-PR102 — sensor footage, East China Sea, 2024",
-      "source": "US Department of War vía DVIDS (PURSUE)",
-      "license": "Dominio público · US Government work",
-      "fallbackUrl": "https://www.dvidshub.net/video/1014098"
-    },
-    {
-      "src": "https://www.dvidshub.net/video/embed/1014099",
-      "type": "video",
-      "title": "DOW-UAP-PR103 — grabación de sensor, Mar de la China Oriental, 2024",
-      "title_en": "DOW-UAP-PR103 — sensor footage, East China Sea, 2024",
-      "source": "US Department of War vía DVIDS (PURSUE)",
-      "license": "Dominio público · US Government work",
-      "fallbackUrl": "https://www.dvidshub.net/video/1014099"
     }
   ],
   "patterns": [
@@ -553,7 +535,7 @@
       "note_en": "Sustained coverage of the program"
     },
     {
-      "name": "DVIDS — 15 grabaciones de sensor que cruzan por teatro/fecha con los mission reports embebidos (PURSUE)",
+      "name": "DVIDS — 13 grabaciones de sensor que cruzan por teatro/fecha con los mission reports embebidos (PURSUE)",
       "url": "https://www.dvidshub.net/search?q=DOW-UAP&filter%5Btype%5D=video",
       "note": "Mirror audiovisual oficial del DoD; war.gov aloja los PDF pero bloquea el framing, así que el video se sirve desde DVIDS.",
       "note_en": "Official DoD audiovisual mirror; war.gov hosts the PDFs but blocks framing, so video is served from DVIDS."
@@ -573,7 +555,7 @@
       "note": "Sustained coverage of the program"
     },
     {
-      "name": "DVIDS — 15 sensor recordings matching theater/date with the embedded mission reports (PURSUE)",
+      "name": "DVIDS — 13 sensor recordings matching theater/date with the embedded mission reports (PURSUE)",
       "url": "https://www.dvidshub.net/search?q=DOW-UAP&filter%5Btype%5D=video",
       "note": "Official DoD audiovisual mirror; video served from DVIDS since war.gov blocks framing.",
       "note_en": "Official DoD audiovisual mirror; video served from DVIDS since war.gov blocks framing."
