@@ -387,7 +387,14 @@ export async function CaseDetailPage(
           porque war.gov bloquea el framing/fetch de terceros; fallbackUrl deja
           siempre el original oficial accesible. Los PDF se renderizan con un
           visor cliente (PdfDoc → react-pdf, dynamic ssr:false) que funciona
-          también en móvil; las imágenes siguen como <img> server. */}
+          también en móvil; las imágenes siguen como <img> server.
+
+          El VIDEO va primero (orden estable dentro de cada tipo, así que el
+          orden autoral del JSON se conserva): en los casos agregadores el
+          visor acumula decenas de PDF —dow-centcom-2020 llega a 40— y un
+          video anexado al final queda materialmente inalcanzable, a 40
+          visores de scroll. Es además el asset más escaso y el que más
+          aporta, así que encabeza. */}
       {c.documents && c.documents.length > 0 && (
         <section className="space-y-6">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
@@ -396,44 +403,48 @@ export async function CaseDetailPage(
               en="Primary documents · viewer"
             />
           </p>
-          {c.documents.map((doc, i) => (
-            <figure key={i} className="space-y-2">
-              {doc.type === "pdf" ? (
-                <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} />
-              ) : doc.type === "video" ? (
-                <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
-              ) : (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={doc.src}
-                  alt={doc.title}
-                  loading="lazy"
-                  className="w-full border border-text/15 bg-surface-2"
-                />
-              )}
-              <figcaption className="space-y-1">
-                <p className="text-sm leading-snug text-text">
-                  <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
-                </p>
-                <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                  {[doc.source, doc.license].filter(Boolean).join(" · ")}
-                  {doc.fallbackUrl && (
-                    <>
-                      {doc.source || doc.license ? " · " : ""}
-                      <a
-                        href={doc.fallbackUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
-                      >
-                        <T locale={locale} es="abrir original" en="open original" />
-                      </a>
-                    </>
-                  )}
-                </p>
-              </figcaption>
-            </figure>
-          ))}
+          {[...c.documents]
+            .sort(
+              (a, b) => (a.type === "video" ? 0 : 1) - (b.type === "video" ? 0 : 1),
+            )
+            .map((doc, i) => (
+              <figure key={i} className="space-y-2">
+                {doc.type === "pdf" ? (
+                  <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} />
+                ) : doc.type === "video" ? (
+                  <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={doc.src}
+                    alt={doc.title}
+                    loading="lazy"
+                    className="w-full border border-text/15 bg-surface-2"
+                  />
+                )}
+                <figcaption className="space-y-1">
+                  <p className="text-sm leading-snug text-text">
+                    <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
+                  </p>
+                  <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                    {[doc.source, doc.license].filter(Boolean).join(" · ")}
+                    {doc.fallbackUrl && (
+                      <>
+                        {doc.source || doc.license ? " · " : ""}
+                        <a
+                          href={doc.fallbackUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
+                        >
+                          <T locale={locale} es="abrir original" en="open original" />
+                        </a>
+                      </>
+                    )}
+                  </p>
+                </figcaption>
+              </figure>
+            ))}
         </section>
       )}
 
