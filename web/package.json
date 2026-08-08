@@ -18,6 +18,7 @@
     "check-links": "node scripts/check-links.mjs",
     "check-links:gate": "node scripts/check-links.mjs --baseline --timeout 12",
     "check-links:baseline": "node scripts/check-links.mjs --update-baseline --timeout 12",
+    "check-dvids": "node scripts/check-dvids-embeds.mjs",
     "validate-schema": "node scripts/validate-schema.mjs",
     "lint": "eslint .",
     "wayback": "node scripts/suggest-wayback.mjs",

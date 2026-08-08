@@ -41,6 +41,33 @@
       "source": "US Air Force Special Operations Command / AFSOC A2OX (PURSUE Release 05)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017793",
+      "type": "video",
+      "title": "DOW-UAP-PR117 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
+      "title_en": "DOW-UAP-PR117 — AC-130 EO/IR sensor footage, Gulf of Oman (2021)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017793"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017795",
+      "type": "video",
+      "title": "DOW-UAP-PR118 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
+      "title_en": "DOW-UAP-PR118 — AC-130 EO/IR sensor footage, Gulf of Oman (2021)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017795"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017798",
+      "type": "video",
+      "title": "DOW-UAP-PR119 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
+      "title_en": "DOW-UAP-PR119 — AC-130 EO/IR sensor footage, Gulf of Oman (2021)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017798"
     }
   ],
   "whatHappened": "En la noche del 8 de septiembre de 2021, una tripulación de las Fuerzas de Operaciones Especiales de EE.UU. (USSOF) a bordo de un cañonero AC-130 realizaba un ejercicio de fuego real en el Golfo de Omán, en las cercanías de las coordenadas MGRS 40REN6. El avión lanzó una bengala activada por agua para usarla como blanco simulado y entró en órbita a su alrededor mientras el Oficial de Sistemas de Combate (CSO) hacía barridos colaterales con el sensor electro-óptico/infrarrojo (EO/IR) de la aeronave. Al reorientar el sensor en modo infrarrojo hacia la bengala, el CSO observó dos esferas de unos 1,2 metros de diámetro, 'frías' —sin firma térmica propia detectable— suspendidas entre 0 y 6 metros sobre la superficie del agua, estacionarias sobre la bengala durante unos 15 segundos. Pasado ese tiempo, el CSO disparó el cañón de 105mm de la aeronave. En el breve retardo entre el disparo y el retroceso del arma, observó que el par de esferas se alejó rápidamente de la bengala y salió del campo del sensor sin cambiar de altitud — una reacción inmediata a la detonación.\n\nDurante el resto de la misión, la tripulación registró aproximadamente 25 instancias adicionales de estos objetos, visibles en infrarrojo tanto en modo 'blanco-caliente' como 'negro-caliente'. Dos de ellos volaron en formación suelta pero coordinada, subiendo y bajando de altitud 'como una ola' mientras maniobraban alrededor, sobre y debajo el uno del otro — el reporte cita textualmente un comentario de la fuente: 'sabían que estaban volando juntos', en una analogía explícita con el comportamiento social de los delfines. Otros objetos fueron vistos en formación de tres, y por separado maniobrando de forma errática y agresiva. La tripulación intentó guardar la totalidad del metraje EO/IR, pero el grabador de video digital (DVR) de la aeronave 'falló inexplicablemente' y los datos quedaron corruptos. El CSO calculó las velocidades usando la herramienta táctica (TACTOOL) de a bordo: la velocidad máxima de maniobra observada fue de 1.300 millas por hora, y la mínima de 250 mph. No se observó ningún medio de propulsión visible en ninguno de los objetos.\n\nEl reporte se formalizó como un Informe de Información de Inteligencia (IIR) de la Fuerza Aérea, clasificado originalmente SECRETO//NOFORN, publicado el 27 de abril de 2022 —más de siete meses después del incidente— y distribuido a una lista extensa de comandos (CENTCOM, SOCOM, DIA, NGA, ONI, FBI, CIA, entre decenas más). Fue coordinado con la Agregaduría de Defensa de EE.UU. en Mascate y la célula de inteligencia de SOCCENT 'sin comentarios'. El documento se desclasificó formalmente para revisión obligatoria (MDR) el 26 de marzo de 2026 y se publicó vía PURSUE en agosto de ese año. Las seis grabaciones de video adjuntas al reporte original, sin embargo, permanecen bajo la misma clasificación SECRETO//NOFORN y no forman parte de esta liberación.",
@@ -69,6 +96,12 @@
       "url": "https://www.war.gov/UFO/",
       "note": "Documento embebido en el visor de este caso.",
       "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR117/PR118/PR119, grabaciones del sensor EO/IR del Golfo de Omán (PURSUE Release 05)",
+      "url": "https://www.dvidshub.net/search?q=DOW-UAP&filter%5Btype%5D=video",
+      "note": "Mirror audiovisual oficial del DoD; los tres clips van embebidos en el visor de este caso. war.gov aloja el IIR pero bloquea el framing, así que el video se sirve desde DVIDS.",
+      "note_en": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer. war.gov hosts the IIR but blocks framing, so the video is served from DVIDS."
     }
   ],
   "sources_en": [
@@ -77,6 +110,12 @@
       "url": "https://www.war.gov/UFO/",
       "note": "Document embedded in this case's viewer.",
       "note_en": "Document embedded in this case's viewer."
+    },
+    {
+      "name": "DVIDS — DOW-UAP-PR117/PR118/PR119, Gulf of Oman EO/IR sensor footage (PURSUE Release 05)",
+      "url": "https://www.dvidshub.net/search?q=DOW-UAP&filter%5Btype%5D=video",
+      "note": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer.",
+      "note_en": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer."
     }
   ]
 }
