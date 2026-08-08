@@ -1,0 +1,80 @@
+{
+  "id": "eastern-us-civilian-sensor-2019",
+  "num": 357,
+  "pursueReleases": [4],
+  "name": "El testimonio del aviador de 28 años: un objeto pequeño, rápido, visto desde una aeronave civil",
+  "name_en": "The 28-year aviator's testimony: a small, fast object seen from a civilian aircraft",
+  "year_start": 2019,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 35,
+    "lng": -75,
+    "place": "Costa este de Estados Unidos (ubicación exacta no revelada)",
+    "place_en": "U.S. East Coast (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.04,
+    "indet": 0.3
+  },
+  "summary": "En 2019, un sensor infrarrojo a bordo de una aeronave CIVIL —no militar, un detalle inusual en el corpus— registró 20 segundos de un objeto sobre la costa este de Estados Unidos. La Armada de EE.UU. sometió el reporte a la AARO, acompañado de un informe de debrief (DOW-UAP-D090) que cita al observador: el objeto exhibía 'características de vuelo distintas a todo lo que había visto en 28 años [de servicio] en la Fuerza Aérea y la Armada de EE.UU.'. El informe lo describe como 'pequeño' y 'viajando en línea recta en dirección opuesta a alta velocidad'. El video mismo es fragmentario: el objeto es visible apenas unos segundos antes de que el sensor cambie de modo y la pantalla se sature de blanco.",
+  "summary_en": "In 2019, an infrared sensor aboard a CIVILIAN aircraft —not military, an unusual detail in the corpus— recorded 20 seconds of an object over the U.S. East Coast. The U.S. Navy submitted the report to AARO, accompanied by a debrief report (DOW-UAP-D090) quoting the observer: the object exhibited 'flight characteristics unlike anything [they] had seen in 28 years [of service] for the U.S. Air Force and U.S. Navy.' The report describes it as 'small' and 'traveling in a straight line in the opposite direction at high speed.' The video itself is fragmentary: the object is visible for only a few seconds before the sensor changes mode and the screen washes out white.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014128",
+      "type": "video",
+      "title": "DOW-UAP-PR112 — sensor IR a bordo de aeronave civil, con debrief D090 del observador (20 s)",
+      "title_en": "DOW-UAP-PR112 — IR sensor aboard civilian aircraft, with observer debrief D090 (20 s)",
+      "source": "US Navy, reportado a la AARO, vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014128"
+    }
+  ],
+  "whatHappened": "En algún momento de 2019, un sensor infrarrojo a bordo de una aeronave civil —no una plataforma militar, la excepción dentro de un corpus dominado por sensores castrenses— registró 20 segundos de metraje sobre la costa este de Estados Unidos. La Armada de Estados Unidos sometió formalmente un reporte del fenómeno a la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), catalogado como DOW-UAP-PR112.\n\nA diferencia de la mayoría de los expedientes del corpus PURSUE, este viene acompañado de un documento narrativo con peso propio: un informe de debrief titulado 'Range Fouler Debrief', identificado como DOW-UAP-D090. El informe cita directamente al observador, que describe el objeto como exhibiendo 'características de vuelo distintas a todo lo que había visto en 28 años [de servicio] en la Fuerza Aérea y la Armada de Estados Unidos' — una declaración que implica una carrera aeronáutica combinada de casi tres décadas entre ambas ramas, un nivel de experiencia poco común entre los testigos del corpus. El informe caracteriza al objeto como 'pequeño' y como 'viajando en línea recta, en dirección opuesta [a la aeronave observadora], a alta velocidad'.\n\nLa descripción visual oficial de la AARO, con marcas de tiempo, documenta un metraje considerablemente más modesto que el relato del observador: entre los segundos 1 y 11, un área de contraste es visible cerca del centro de la pantalla; entre los segundos 12 y 14, el sensor cambia su nivel de zoom y modo de despliegue, produciendo un destello blanco antes de volver a funcionar con normalidad, momento en el cual el área de contraste sale del encuadre por el lado izquierdo; entre los segundos 15 y 20, el sensor cambia de configuración nuevamente, saturando la pantalla de blanco sin contenido visible. En otras palabras: de los 20 segundos totales, el objeto es efectivamente visible durante poco más de 10, y el clip termina con la pantalla en blanco, no con una pérdida de contacto limpia ni con el objeto alejándose en cuadro.\n\nEl material se liberó en el cuarto lote de PURSUE (10 de julio de 2026) — la misma entrega que incluyó, según cobertura periodística contemporánea, un testimonio de aviador militar de 28 años sobre un objeto en la costa este en 2019, referenciado en la cobertura del cuarto release sin que la prensa citara directamente el documento DOW-UAP-D090. Es razonable, aunque no confirmado documentalmente en la propia ficha de DVIDS, que se trate del mismo testimonio.",
+  "whatHappened_en": "At some point in 2019, an infrared sensor aboard a civilian aircraft —not a military platform, the exception within a corpus dominated by military sensors— recorded 20 seconds of footage over the U.S. East Coast. The United States Navy formally submitted a report of the phenomenon to the All-domain Anomaly Resolution Office (AARO), catalogued as DOW-UAP-PR112.\n\nUnlike most files in the PURSUE corpus, this one comes with a narrative document carrying real weight: a debrief report titled 'Range Fouler Debrief,' identified as DOW-UAP-D090. The report directly quotes the observer, who described the object as exhibiting 'flight characteristics unlike anything [they] had seen in 28 years [of service] for the U.S. Air Force and U.S. Navy' — a statement implying a combined aeronautical career of nearly three decades across both branches, a level of experience uncommon among witnesses in the corpus. The report characterizes the object as 'small' and as 'traveling in a straight line, in the opposite direction [from the observing aircraft], at high speed.'\n\nAARO's official timestamped visual description documents footage considerably more modest than the observer's account: between seconds 1 and 11, an area of contrast is visible near the center of the screen; between seconds 12 and 14, the sensor changes its zoom level and display mode, producing a white flash before returning to normal function, at which point the area of contrast exits the frame on the left side; between seconds 15 and 20, the sensor changes settings again, washing the screen white with no visible content. In other words: of the 20 total seconds, the object is effectively visible for just over 10, and the clip ends with a blank white screen, not a clean loss of contact or the object receding in frame.\n\nThe material was released in PURSUE's fourth drop (July 10, 2026) — the same drop that, per contemporary press coverage, included a 28-year military aviator's testimony about an object on the East Coast in 2019, referenced in fourth-release coverage without the press directly citing document DOW-UAP-D090. It is reasonable, though not confirmed in DVIDS's own record, that this is the same testimony.",
+  "whyMatters": "El valor central de este expediente es el debrief, no el video. La mayoría de los archivos de este corpus llegan sin ninguna narrativa del observador; aquí hay una cita directa, atribuida a alguien con casi tres décadas de experiencia aeronáutica entre dos ramas de las fuerzas armadas, calificando el comportamiento como fuera de lo que había visto en su carrera. Ese tipo de testimonio experto es, dentro del corpus, más raro y en principio más valioso que un título llamativo sin respaldo — es exactamente lo opuesto al problema documentado en el lote de Release 02 (ver [[reeves-foia-classified-network-2023]]), donde los títulos evocadores no tenían ningún documento narrativo detrás.\n\nDicho esto, el metraje disponible no permite verificar independientemente la caracterización del observador. El objeto es visible durante poco más de la mitad de los 20 segundos del clip, y la secuencia termina con el sensor saturado en blanco — no hay forma de confirmar, desde el propio video, la trayectoria en 'línea recta a alta velocidad en dirección opuesta' que describe el debrief. Es la asimetría inversa a la de Tyndall o el caso de los tres objetos veloces: ahí el título prometía más de lo que mostraba el video; aquí el testimonio humano, respaldado por un documento formal, es más rico que lo que el sensor logró capturar.\n\nLa lectura prosaica más directa para un objeto pequeño y rápido visto desde una aeronave civil sigue siendo tráfico aéreo convencional visto en un cruce de rumbos —lo que produciría exactamente la impresión de 'alta velocidad en dirección opuesta' por efecto Doppler visual, sin que el objeto en sí se moviera de forma anómala— o un vehículo no tripulado de pequeño porte. Que el observador, con su experiencia, no lo haya identificado en el momento no descarta esa lectura: la velocidad relativa aparente en un cruce de rumbos cercano puede exceder ampliamente la de cualquiera de las dos aeronaves por separado, y es un efecto conocido que sorprende incluso a pilotos experimentados. Sin telemetría de ninguna de las dos aeronaves ni un análisis de cruce de tráfico aéreo para la fecha y zona, esa lectura queda como la más parsimoniosa pero no confirmada.",
+  "whyMatters_en": "This file's central value is the debrief, not the video. Most files in this corpus arrive with no observer narrative at all; here there is a direct quote, attributed to someone with nearly three decades of aeronautical experience across two military branches, characterizing the behavior as outside anything they had seen in their career. That kind of expert testimony is, within the corpus, rarer and in principle more valuable than a flashy title with nothing behind it — the exact opposite of the problem documented in the Release 02 batch (see [[reeves-foia-classified-network-2023]]), where evocative titles had no narrative document behind them at all.\n\nThat said, the available footage does not allow independent verification of the observer's characterization. The object is visible for just over half of the clip's 20 seconds, and the sequence ends with the sensor washed out white — there is no way to confirm, from the video itself, the 'straight line at high speed in the opposite direction' trajectory the debrief describes. It is the inverse asymmetry to Tyndall or the three-fast-object case: there, the title promised more than the video showed; here, the human testimony, backed by a formal document, is richer than what the sensor managed to capture.\n\nThe most direct prosaic reading for a small, fast object seen from a civilian aircraft remains conventional air traffic seen on a crossing course — which would produce exactly the impression of 'high speed in the opposite direction' through visual closure-rate effects, without the object itself moving anomalously — or a small uncrewed vehicle. That the experienced observer did not identify it in the moment does not rule out that reading: the apparent relative speed on a close crossing course can far exceed either aircraft's individual speed, a known effect that surprises even experienced pilots. Without telemetry from either aircraft or a cross-check against air traffic for the date and area, that reading remains the most parsimonious but unconfirmed one.",
+  "evidence": [
+    "2019: sensor IR a bordo de una aeronave CIVIL (no militar) registra 20 segundos de metraje en la costa este de EE.UU.",
+    "La Armada de EE.UU. sometió el reporte formalmente a la AARO (DOW-UAP-PR112)",
+    "Debrief acompañante DOW-UAP-D090 cita al observador: 'características de vuelo distintas a todo lo visto en 28 años' en la Fuerza Aérea y la Armada",
+    "El informe caracteriza el objeto como 'pequeño' y 'viajando en línea recta en dirección opuesta a alta velocidad'",
+    "Descripción visual oficial: el objeto es visible ~11 de los 20 segundos; el clip termina con la pantalla saturada de blanco",
+    "Publicado en PURSUE Release 04 (10 de julio de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2019: an IR sensor aboard a CIVILIAN aircraft (not military) records 20 seconds of footage on the U.S. East Coast",
+    "The U.S. Navy formally submitted the report to AARO (DOW-UAP-PR112)",
+    "Accompanying debrief DOW-UAP-D090 quotes the observer: 'flight characteristics unlike anything seen in 28 years' in the Air Force and Navy",
+    "The report characterizes the object as 'small' and 'traveling in a straight line in the opposite direction at high speed'",
+    "Official visual description: the object is visible for ~11 of the 20 seconds; the clip ends with the screen washed out white",
+    "Released in PURSUE Release 04 (July 10, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR112, con el debrief DOW-UAP-D090 citado por la AARO (PURSUE Release 04)",
+      "url": "https://www.dvidshub.net/video/1014128",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la cita del debrief y la descripción visual con marcas de tiempo citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR112, with the DOW-UAP-D090 debrief quoted by AARO (PURSUE Release 04)",
+      "url": "https://www.dvidshub.net/video/1014128",
+      "note": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened."
+    }
+  ]
+}

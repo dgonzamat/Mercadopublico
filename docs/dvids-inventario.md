@@ -15,10 +15,10 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 |---|---|---|---|
 | **Release 01** | 8 may 2026 | 27 | 13 |
 | **Release 02** | 22 may 2026 | 50 | 19 |
-| **Release 04** | 10 jul 2026 | 19 | 0 |
+| **Release 04** | 10 jul 2026 | 19 | 3 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
 | **Release 03** | 12 jun 2026 | **0** | — |
-| | | **111** | **38** |
+| | | **111** | **41** |
 
 > El **Release 03 no publicó video** en DVIDS: ninguno de los 111 tiene fecha de publicación del 12 de junio de 2026.
 
@@ -114,7 +114,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 - [ ] `PR101` · 01.01.2024 — unresolved-uap-report-south-china-sea-2024 · [ver](https://www.dvidshub.net/video/1014097)
 - [ ] `PR102` · 01.01.2024 — unresolved-uap-report-east-china-sea-2024 · [ver](https://www.dvidshub.net/video/1014098)
 - [ ] `PR103` · 01.01.2024 — unresolved-uap-report-east-china-sea-2024 · [ver](https://www.dvidshub.net/video/1014099)
-- [ ] `PR104` · 01.01.2025 — unresolved-uap-report-yellow-sea-2025 · [ver](https://www.dvidshub.net/video/1014101)
+- [x] `PR104` · 01.01.2025 — unresolved-uap-report-yellow-sea-2025 → `yellow-sea-star-2025` (caso ya existente, se agregó el video) · [ver](https://www.dvidshub.net/video/1014101)
 - [ ] `PR105` · 01.01.2025 — unresolved-uap-report-east-china-sea-2025 · [ver](https://www.dvidshub.net/video/1014103)
 - [ ] `PR106` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014104)
 - [ ] `PR107` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014105)
@@ -122,11 +122,11 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 - [ ] `PR109` · 01.01.2015 — unresolved-uap-report-eastern-united-states-2015 · [ver](https://www.dvidshub.net/video/1014108)
 - [ ] `PR110` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014112)
 - [ ] `PR111` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014114)
-- [ ] `PR112` · 01.01.2019 — unresolved-uap-report-eastern-united-states-2019 · [ver](https://www.dvidshub.net/video/1014128)
+- [x] `PR112` · 01.01.2019 — unresolved-uap-report-eastern-united-states-2019 → `eastern-us-civilian-sensor-2019` · [ver](https://www.dvidshub.net/video/1014128)
 - [ ] `PR113` · 01.01.1996 — unresolved-uap-report-western-united-states-1996 · [ver](https://www.dvidshub.net/video/1014119)
 - [ ] `PR114` · 01.01.2016 — unresolved-uap-report-atlantic-ocean-2016 · [ver](https://www.dvidshub.net/video/1014121)
 - [ ] `PR115` · 01.01.2019 — unresolved-uap-report-gulf-america-2019 · [ver](https://www.dvidshub.net/video/1014123)
-- [ ] `PR116` · 01.01.2020 — unresolved-uap-report-atlantic-ocean-2020 · [ver](https://www.dvidshub.net/video/1014124)
+- [x] `PR116` · 01.01.2020 — unresolved-uap-report-atlantic-ocean-2020 → `atlantic-ocean-balloon-2020` · [ver](https://www.dvidshub.net/video/1014124)
 
 ## Release 05 — 7 ago 2026 (15 videos)
 
