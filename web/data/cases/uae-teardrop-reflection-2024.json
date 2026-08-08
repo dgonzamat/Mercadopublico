@@ -1,0 +1,80 @@
+{
+  "id": "uae-teardrop-reflection-2024",
+  "num": 359,
+  "pursueReleases": [4],
+  "name": "'Puede ser un reflejo': el propio observador duda de su reporte sobre EAU",
+  "name_en": "'It may be a reflection': the observer himself doubts his own report over the UAE",
+  "year_start": 2024,
+  "country": "AE",
+  "country_name": "Emiratos Árabes Unidos",
+  "flag": "🇦🇪",
+  "location": {
+    "lat": 24.5,
+    "lng": 54.5,
+    "place": "Aguas frente a Emiratos Árabes Unidos (ubicación exacta no revelada)",
+    "place_en": "Waters off the United Arab Emirates (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 15,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.6,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.02,
+    "indet": 0.25
+  },
+  "summary": "En junio de 2024, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró 21 segundos de un objeto sobre aguas frente a Emiratos Árabes Unidos. El informe de misión acompañante (DoW-UAP-D8) describe una silueta de 'lágrima invertida' con una masa lineal colgando por debajo, similar a un poste o barra vertical — pero el propio observador, citado en el mismo informe, ofreció una alternativa mundana sin que se la pidieran: el objeto 'puede en cambio ser un reflejo de un objeto en el agua'. Un detalle curioso de la ficha: la AARO atribuye el sometimiento del reporte al Comando Norte (NORTHCOM), pese a que Emiratos Árabes Unidos está dentro del área de responsabilidad del Comando Central (CENTCOM) — una inconsistencia administrativa en el propio registro oficial.",
+  "summary_en": "In June 2024, an infrared sensor aboard a U.S. military platform recorded 21 seconds of an object over waters off the United Arab Emirates. The accompanying mission report (DoW-UAP-D8) describes an 'inverted teardrop' silhouette with a linear mass hanging below it, resembling a pole or vertical bar — but the observer himself, quoted in the same report, volunteered a mundane alternative unprompted: the object 'may instead be a reflection of an object in the water.' A curious detail in the record: AARO attributes the report's submission to Northern Command (NORTHCOM), even though the United Arab Emirates falls within Central Command's (CENTCOM) area of responsibility — an administrative inconsistency in the official record itself.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006074",
+      "type": "video",
+      "title": "DOW-UAP-PR29 — sensor IR registra una silueta de 'lágrima invertida'; el observador sugiere reflejo en el agua (21 s)",
+      "title_en": "DOW-UAP-PR29 — IR sensor records an 'inverted teardrop' silhouette; observer suggests water reflection (21 s)",
+      "source": "Departamento de Guerra, reportado a la AARO, vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006074"
+    }
+  ],
+  "whatHappened": "En junio de 2024, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró 21 segundos de metraje sobre aguas frente a Emiratos Árabes Unidos. Según la ficha oficial de la AARO, fue el Comando Norte de Estados Unidos (NORTHCOM) quien sometió el reporte — un dato administrativamente inusual, dado que Emiratos Árabes Unidos se ubica dentro del área de responsabilidad geográfica del Comando Central (CENTCOM), no de NORTHCOM. El registro no explica la discrepancia; puede tratarse de un error de catalogación en el propio sistema de la AARO, o de una plataforma perteneciente administrativamente a NORTHCOM operando temporalmente en la región.\n\nEl reporte de misión que acompaña al video, identificado como DoW-UAP-D8, describe el objeto con un nivel de detalle superior al de la mayoría de los expedientes del corpus: consiste en 'un objeto con un poste o barra vertical adherido a la parte inferior del objeto'. Es, notablemente, uno de los pocos informes del corpus donde el propio observador —sin que se le solicitara una alternativa— ofreció una explicación mundana posible: 'el UAP puede en cambio ser un reflejo de un objeto en el agua'.\n\nLa descripción visual oficial de la AARO, con marcas de tiempo, es consistente con ambas lecturas: durante los 21 segundos completos, 'un área de contraste que visualmente se asemeja a una lágrima invertida, con una masa lineal vertical colgando por debajo, permanece generalmente dentro del centro del campo de visión del sensor'. La descripción no menciona movimiento, desplazamiento ni cambio de forma — el objeto permanece estático en el encuadre durante toda la grabación, un detalle compatible tanto con un objeto suspendido como con un reflejo estacionario sobre la superficie del agua.\n\nEl material se liberó en la primera entrega de PURSUE (8 de mayo de 2026), sin coordenadas exactas, identificación de plataforma ni fecha precisa dentro de junio de 2024.",
+  "whatHappened_en": "In June 2024, an infrared sensor aboard a U.S. military platform recorded 21 seconds of footage over waters off the United Arab Emirates. Per AARO's official record, it was U.S. Northern Command (NORTHCOM) that submitted the report — an administratively unusual detail, given that the United Arab Emirates falls within Central Command's (CENTCOM) geographic area of responsibility, not NORTHCOM's. The record does not explain the discrepancy; it may reflect a cataloguing error within AARO's own system, or a platform administratively assigned to NORTHCOM temporarily operating in the region.\n\nThe mission report accompanying the video, identified as DoW-UAP-D8, describes the object with a level of detail above most files in the corpus: it consists of 'an object with a vertical pole or bar attached to the bottom of the object.' Notably, it is one of the few reports in the corpus where the observer himself —unprompted— offered a possible mundane explanation: 'the UAP may instead be a reflection of an object in the water.'\n\nAARO's official timestamped visual description is consistent with both readings: for the full 21 seconds, 'an area of contrast visually resembling an inverted teardrop, with a vertically linear trailing mass suspended below, remains generally within the center of the sensor field-of-view.' The description mentions no movement, displacement, or change in shape — the object stays static in frame for the entire recording, a detail compatible with either a suspended object or a stationary reflection on the water's surface.\n\nThe material was released in PURSUE's first drop (May 8, 2026), with no exact coordinates, platform identification, or precise date within June 2024.",
+  "whyMatters": "El valor de este expediente está en algo poco común dentro del corpus: el propio observador, en el momento del reporte, ya contempló y consignó por escrito una alternativa mundana a lo que estaba viendo. Eso no ocurre con la mayoría de los archivos de este programa, donde el testigo describe el fenómeno sin ofrecer explicación, dejando toda la carga interpretativa al analista posterior. Aquí, quien estaba frente al sensor consideró la hipótesis del reflejo antes de que nadie se la planteara — un indicio de sobriedad analítica en el origen mismo del reporte.\n\nLa descripción instrumental —un objeto estático, sin movimiento detectado durante los 21 segundos— es exactamente lo que se esperaría de un reflejo sobre la superficie del agua: sin desplazamiento propio, sin cambio de forma, sostenido mientras la plataforma observadora (o el objeto que genera el reflejo) permanece relativamente estable. Un objeto físico suspendido en el aire con esa geometría —una forma de lágrima invertida con un poste colgante— también podría permanecer estático si se trata de, por ejemplo, un globo con una carga útil o lastre colgante visto desde una distancia y ángulo que no revela movimiento sutil.\n\nEl detalle de la atribución a NORTHCOM en vez de CENTCOM, aunque menor, es un recordatorio de que ni siquiera el metadata institucional del programa PURSUE está libre de inconsistencias de catalogación — un punto de cautela adicional al leer cualquier ficha de este corpus como un documento perfectamente confiable en todos sus campos, incluso cuando la cadena de custodia (a diferencia del lote Release 02, ver [[reeves-foia-classified-network-2023]]) es institucionalmente trazable.",
+  "whyMatters_en": "This file's value lies in something uncommon within the corpus: the observer himself, at the time of the report, already considered and wrote down a mundane alternative to what he was seeing. That does not happen with most files from this program, where the witness describes the phenomenon without offering an explanation, leaving the entire interpretive burden to a later analyst. Here, whoever was in front of the sensor considered the reflection hypothesis before anyone raised it — a sign of analytical sobriety at the report's very origin.\n\nThe instrumental description —a static object, with no movement detected during the 21 seconds— is exactly what would be expected from a reflection on the water's surface: no self-propelled displacement, no change in shape, sustained while the observing platform (or the object generating the reflection) remains relatively stable. A physical object suspended in the air with that geometry —an inverted teardrop shape with a hanging pole— could also remain static if it were, for example, a balloon with a payload or hanging ballast seen from a distance and angle that doesn't reveal subtle movement.\n\nThe detail of the NORTHCOM-instead-of-CENTCOM attribution, while minor, is a reminder that even the PURSUE program's institutional metadata is not free of cataloguing inconsistencies — an added note of caution when reading any record in this corpus as a perfectly reliable document in every field, even when the chain of custody (unlike the Release 02 batch; see [[reeves-foia-classified-network-2023]]) is institutionally traceable.",
+  "evidence": [
+    "Junio de 2024: sensor IR registra 21 segundos de un objeto sobre aguas frente a EAU",
+    "Informe de misión DoW-UAP-D8: 'objeto con un poste o barra vertical adherido a la parte inferior'",
+    "El propio observador ofreció una alternativa mundana sin que se le pidiera: 'puede ser un reflejo de un objeto en el agua'",
+    "Descripción visual oficial: el objeto permanece estático en el encuadre durante los 21 segundos completos",
+    "Anomalía administrativa: la AARO atribuye el sometimiento a NORTHCOM, pese a que EAU está en el área de CENTCOM",
+    "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "June 2024: IR sensor records 21 seconds of an object over waters off the UAE",
+    "Mission report DoW-UAP-D8: 'object with a vertical pole or bar attached to the bottom'",
+    "The observer himself offered a mundane alternative unprompted: 'may be a reflection of an object in the water'",
+    "Official visual description: the object remains static in frame for the full 21 seconds",
+    "Administrative anomaly: AARO attributes the submission to NORTHCOM, even though the UAE is in CENTCOM's area",
+    "Released in PURSUE Release 01 (May 8, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR29, con el informe de misión DoW-UAP-D8 citado por la AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006074",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la cita del informe de misión y la descripción visual citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the mission report quote and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR29, with the DoW-UAP-D8 mission report quoted by AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006074",
+      "note": "Video embedded in this case's viewer; the record includes the mission report quote and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the mission report quote and the visual description quoted in whatHappened."
+    }
+  ]
+}

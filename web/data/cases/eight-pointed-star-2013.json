@@ -1,0 +1,80 @@
+{
+  "id": "eight-pointed-star-2013",
+  "num": 360,
+  "pursueReleases": [1],
+  "name": "Una estrella de ocho puntas con brazos de largo desigual",
+  "name_en": "An eight-pointed star with unequal-length arms",
+  "year_start": 2013,
+  "country": "US",
+  "country_name": "Oriente Medio, área CENTCOM (país exacto no revelado; plataforma y liberación son de EE.UU.)",
+  "flag": "🌍",
+  "location": {
+    "lat": 33,
+    "lng": 44,
+    "place": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
+    "place_en": "Middle East, CENTCOM area of responsibility (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.05,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.05,
+    "indet": 0.3
+  },
+  "summary": "En 2013, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área de responsabilidad del Comando Central (CENTCOM) registró un minuto y 46 segundos de un patrón de contraste que la AARO describe como 'una estrella de ocho puntas con brazos de largo alternado'. El objeto deja una estela visible al moverse y desaparece del encuadre tras un corte aparente en el metraje, para reaparecer y salir finalmente por la esquina superior izquierda. El propio reportante no dejó ninguna descripción oral ni escrita de lo observado — todo lo que se sabe proviene de la lectura instrumental de la AARO sobre el video, once años después del hecho.",
+  "summary_en": "In 2013, an infrared sensor aboard a U.S. military platform within U.S. Central Command's (CENTCOM) area of responsibility recorded one minute and 46 seconds of a contrast pattern AARO describes as 'an eight-pointed star with arms of alternating length.' The object leaves a visible trail as it moves and disappears from frame after an apparent cut in the footage, reappearing before finally exiting through the top left corner. The original reporter left no oral or written description of the observation — everything known comes from AARO's instrumental reading of the video, eleven years after the fact.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006088",
+      "type": "video",
+      "title": "DOW-UAP-PR38 — sensor IR registra un patrón de 'estrella de ocho puntas' con estela visible (1:46)",
+      "title_en": "DOW-UAP-PR38 — IR sensor records an 'eight-pointed star' pattern with a visible trail (1:46)",
+      "source": "US Central Command, reportado a la AARO, vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006088"
+    }
+  ],
+  "whatHappened": "En algún momento de 2013, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró un minuto y 46 segundos de metraje dentro del área de responsabilidad del Comando Central de Estados Unidos (CENTCOM), que cubre Oriente Medio y Asia Central. El Comando sometió formalmente el reporte a la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), catalogado como DOW-UAP-PR38. Es, junto con el caso del Panel Robertson y algunos expedientes de archivo histórico, uno de los pocos videos de este corpus cuyo evento original antecede en más de una década a su publicación.\n\nEl reportante original no dejó ninguna descripción oral ni escrita de la observación — un dato que la propia AARO consigna explícitamente en la ficha del video. Todo lo que existe públicamente sobre este expediente es la lectura visual que la propia oficina realizó del metraje al procesarlo para su liberación, más de una década después del evento.\n\nEsa descripción visual, con marcas de tiempo, es la más específica en términos de morfología geométrica que ha producido la AARO para cualquier video de este lote: el patrón de contraste 'se asemeja a una estrella de ocho puntas con brazos de largo alternado' — es decir, cuatro puntas más largas y cuatro más cortas, alternadas, en vez de una estrella regular. En el segundo 10, el sensor estrecha su campo de visión para acercar el zoom sobre el área de contraste. Entre los segundos 11 y 29, el patrón se desplaza dentro del encuadre dejando una estela visible tras de sí. En el segundo 30, sale del campo de visión por la esquina inferior derecha. Tras lo que la AARO describe como 'un corte aparente' en el metraje —es decir, una edición, no una continuidad ininterrumpida—, el patrón reaparece y permanece generalmente dentro del encuadre hasta salir finalmente por la esquina superior izquierda, en el minuto 1:44.\n\nEl material se liberó en la primera entrega de PURSUE (8 de mayo de 2026), sin coordenadas, sin identificación de plataforma ni fecha exacta dentro de 2013.",
+  "whatHappened_en": "At some point in 2013, an infrared sensor aboard a U.S. military platform recorded one minute and 46 seconds of footage within U.S. Central Command's (CENTCOM) area of responsibility, covering the Middle East and Central Asia. The Command formally submitted the report to the All-domain Anomaly Resolution Office (AARO), catalogued as DOW-UAP-PR38. It is, along with the Robertson Panel case and a handful of historical archive files, one of the few videos in this corpus whose original event predates its release by more than a decade.\n\nThe original reporter left no oral or written description of the observation — a detail AARO explicitly notes in the video's record. Everything publicly known about this file is the visual reading the office itself performed on the footage while processing it for release, more than a decade after the event.\n\nThat timestamped visual description is the most geometrically specific AARO has produced for any video in this batch: the contrast pattern 'resembles an eight-pointed star with arms of alternating length' — that is, four longer points and four shorter ones, alternating, rather than a regular star. At second 10, the sensor narrows its field of view to zoom in on the area of contrast. Between seconds 11 and 29, the pattern moves within the frame, leaving a visible trail behind it. At second 30, it exits the field of view through the bottom right corner. Following what AARO describes as 'an apparent cut' in the footage —that is, an edit, not an uninterrupted continuity— the pattern reappears and generally remains within frame until finally exiting through the top left corner at 1:44.\n\nThe material was released in PURSUE's first drop (May 8, 2026), with no coordinates, no platform identification, and no exact date within 2013.",
+  "whyMatters": "Este expediente combina dos rasgos poco comunes en el corpus: la especificidad geométrica de la descripción oficial —'ocho puntas, largo alternado' es un nivel de detalle morfológico que la AARO rara vez ofrece para un simple 'área de contraste'— y el vacío casi total de contexto humano, ya que ni el reportante original dejó una palabra sobre lo que vio. Es la combinación inversa a la del testimonio del aviador de 28 años ([[eastern-us-civilian-sensor-2019]]): ahí el testigo aportaba interpretación sin que el video la sostuviera del todo; aquí el video ofrece un patrón visual detallado sin ningún testigo que lo interprete.\n\nUn 'corte aparente' en la mitad del metraje —reconocido por la propia AARO, no una inferencia externa— es también un dato metodológicamente relevante: significa que lo que se libera no es necesariamente una toma continua sin editar, sino un producto que pasó por algún proceso de edición o compilación antes de llegar al archivo. Sin saber quién hizo ese corte ni por qué, no puede descartarse que una parte del comportamiento aparentemente sostenido del patrón —moverse, desaparecer, reaparecer con orientación similar— sea artefacto de la edición y no de un único objeto en vuelo continuo.\n\nLa lectura prosaica más simple para un patrón de contraste con múltiples puntas radiales, en infrarrojo, es un artefacto óptico de difracción del propio sensor —el mismo fenómeno que en 'Objeto en forma de estrella sobre el Mar Amarillo' ([[yellow-sea-star-2025]]) explica los 'picos' que irradian de una fuente puntual de calor—, agravado aquí por el zoom óptico que el propio sensor aplica en el segundo 10, un procedimiento que puede introducir o acentuar artefactos de difracción. La estela visible durante el movimiento es compatible tanto con un artefacto de sensor en movimiento como con un objeto real desplazándose con una fuente de calor rezagada. Sin telemetría ni un segundo sensor que confirme la geometría, ninguna de las dos lecturas puede confirmarse ni descartarse con lo disponible.",
+  "whyMatters_en": "This file combines two uncommon traits in the corpus: the geometric specificity of the official description —'eight points, alternating length' is a level of morphological detail AARO rarely offers for a simple 'area of contrast'— and an almost total void of human context, since not even the original reporter left a word about what they saw. It is the inverse combination to the 28-year aviator's testimony ([[eastern-us-civilian-sensor-2019]]): there, the witness supplied interpretation the video didn't fully support; here, the video offers a detailed visual pattern with no witness to interpret it.\n\nAn 'apparent cut' midway through the footage —acknowledged by AARO itself, not an external inference— is also a methodologically relevant detail: it means what is released is not necessarily a continuous unedited take, but a product that went through some editing or compilation process before reaching the archive. Without knowing who made that cut or why, it cannot be ruled out that part of the pattern's apparently sustained behavior —moving, disappearing, reappearing with similar orientation— is an artifact of the edit rather than a single object in continuous flight.\n\nThe simplest prosaic reading for a multi-point radial contrast pattern in infrared is an optical diffraction artifact from the sensor itself —the same phenomenon that in 'Star-shaped object over the Yellow Sea' ([[yellow-sea-star-2025]]) explains the 'spikes' radiating from a point heat source— compounded here by the optical zoom the sensor itself applies at second 10, a procedure that can introduce or accentuate diffraction artifacts. The visible trail during movement is consistent with either a moving sensor artifact or a real object moving with a lagging heat source. Without telemetry or a second sensor confirming the geometry, neither reading can be confirmed or ruled out with what is available.",
+  "evidence": [
+    "2013: sensor IR de una plataforma militar de CENTCOM registra 1:46 de metraje",
+    "El reportante original no dejó descripción oral ni escrita de la observación",
+    "Descripción visual oficial de la AARO: patrón de 'estrella de ocho puntas con brazos de largo alternado'",
+    "El sensor aplica zoom óptico en el segundo 10; el patrón deja una estela visible al moverse",
+    "Un 'corte aparente' en el metraje (reconocido por la propia AARO) separa dos segmentos del video",
+    "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2013: IR sensor aboard a CENTCOM military platform records 1:46 of footage",
+    "The original reporter left no oral or written description of the observation",
+    "AARO's official visual description: a pattern resembling an 'eight-pointed star with arms of alternating length'",
+    "The sensor applies optical zoom at second 10; the pattern leaves a visible trail as it moves",
+    "An 'apparent cut' in the footage (acknowledged by AARO itself) separates two segments of the video",
+    "Released in PURSUE Release 01 (May 8, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR38, con la descripción visual oficial de la AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006088",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual con marcas de tiempo citada en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR38, with AARO's official visual description (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006088",
+      "note": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened."
+    }
+  ]
+}

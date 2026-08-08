@@ -1,0 +1,80 @@
+{
+  "id": "three-objects-fixed-formation-2023",
+  "num": 362,
+  "pursueReleases": [1],
+  "name": "Tres objetos que mantienen posición y orientación fija entre sí durante dos minutos",
+  "name_en": "Three objects holding a fixed position and orientation relative to each other for two minutes",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Área de responsabilidad de INDOPACOM (ubicación exacta no revelada)",
+  "flag": "🌏",
+  "location": {
+    "lat": 18,
+    "lng": 125,
+    "place": "Océano Pacífico occidental, área INDOPACOM (ubicación exacta no revelada)",
+    "place_en": "Western Pacific Ocean, INDOPACOM area (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.04,
+    "indet": 0.28
+  },
+  "summary": "En 2023, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área INDOPACOM registró casi dos minutos ininterrumpidos de tres objetos que, según la descripción visual oficial de la AARO, 'mantienen posición y orientación fija entre sí' durante toda la observación. A diferencia de la mayoría de los casos de múltiples objetos del corpus —donde suelen aparecer y desaparecer, cruzarse o perderse contra el fondo—, aquí los tres puntos de contraste permanecen relativos entre sí de forma estable el tiempo suficiente como para que el propio analista lo señalara como un rasgo distintivo del metraje.",
+  "summary_en": "In 2023, an infrared sensor aboard a U.S. military platform in the INDOPACOM area recorded nearly two uninterrupted minutes of three objects that, per AARO's official visual description, 'maintain a fixed position and orientation relative to one another' throughout the observation. Unlike most multi-object cases in the corpus —where objects typically appear and disappear, cross paths, or lose distinctiveness against the background— here the three contrast points remain stable relative to each other long enough that the analyst himself flagged it as a distinctive feature of the footage.",
+  "patterns": ["8b"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006107",
+      "type": "video",
+      "title": "DOW-UAP-PR47 — sensor IR sigue tres objetos que mantienen posición y orientación fija entre sí (1:59)",
+      "title_en": "DOW-UAP-PR47 — IR sensor tracks three objects maintaining a fixed position and orientation relative to each other (1:59)",
+      "source": "US Indo-Pacific Command, reportado a la AARO, vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006107"
+    }
+  ],
+  "whatHappened": "En algún momento de 2023, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró un minuto y 59 segundos de metraje dentro del área de responsabilidad del Comando Indo-Pacífico de Estados Unidos (INDOPACOM). El comando sometió formalmente el reporte a la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), catalogado como DOW-UAP-PR47. Como en la mayoría de los expedientes de este lote, el reportante original no dejó ninguna descripción oral ni escrita de lo observado.\n\nLa descripción visual oficial de la AARO es breve pero específica en un punto: durante los casi dos minutos completos de metraje, 'el sensor sigue tres áreas de contraste distintas, manteniendo sus posiciones generalmente dentro del centro del encuadre. Las áreas de contraste parecen mantener una posición y orientación fija entre sí'. Es decir, no se trata de tres objetos que se cruzan, se separan o cambian de disposición relativa —como en el caso de los tres objetos veloces de octubre de 2020 ([[three-fast-moving-uap-2020]]), donde la descripción documenta objetos entrando y saliendo del encuadre de forma independiente—, sino de una formación que la propia AARO caracteriza como estable durante la observación completa.\n\nNo hay información adicional disponible: sin coordenadas, sin identificación de plataforma, sin fecha exacta dentro de 2023, sin informe de misión ni declaración de tripulación. El material se liberó en la primera entrega de PURSUE (8 de mayo de 2026).",
+  "whatHappened_en": "At some point in 2023, an infrared sensor aboard a U.S. military platform recorded one minute and 59 seconds of footage within the area of responsibility of U.S. Indo-Pacific Command (INDOPACOM). The command formally submitted the report to the All-domain Anomaly Resolution Office (AARO), catalogued as DOW-UAP-PR47. As with most files in this batch, the original reporter left no oral or written description of what was observed.\n\nAARO's official visual description is brief but specific on one point: for nearly the full two minutes of footage, 'the sensor tracks three distinct areas of contrast, maintaining their positions generally within the center of the frame. The areas of contrast appear to maintain a fixed position and orientation relative to one another.' In other words, this is not three objects crossing paths, separating, or changing relative arrangement —as in the October 2020 three-fast-object case ([[three-fast-moving-uap-2020]]), where the description documents objects entering and exiting frame independently— but a formation AARO itself characterizes as stable throughout the entire observation.\n\nNo additional information is available: no coordinates, no platform identification, no exact date within 2023, no mission report, and no crew statement. The material was released in PURSUE's first drop (May 8, 2026).",
+  "whyMatters": "El rasgo central de este expediente —tres objetos que sostienen posición y orientación relativa fija durante casi dos minutos ininterrumpidos— es, dentro del patrón de 'múltiples objetos coordinados' del corpus (patrón 8b), uno de los ejemplos con mayor duración de estabilidad demostrada. La comparación directa es con el caso de los tres objetos veloces de 2020 ([[three-fast-moving-uap-2020]]), donde la corrección hecha en esta misma sesión mostró que la descripción de la AARO en realidad documentaba solo dos objetos simultáneos durante apenas 15 segundos, con tramos sin contenido visible el resto del clip. Aquí, en cambio, la AARO describe los tres objetos como presentes y con disposición relativa constante durante la práctica totalidad de los 1:59 — un contraste que vale la pena señalar precisamente porque el hábito de leer la descripción instrumental completa, y no solo el resumen, ya demostró revelar diferencias sustanciales entre lo que un título o resumen sugiere y lo que el metraje realmente sostiene.\n\nLa lectura prosaica más directa para tres puntos de calor que mantienen formación fija es una formación de drones o aeronaves no tripuladas volando en configuración coordinada —una capacidad cada vez más común y accesible hacia 2023— vista desde una distancia donde la plataforma individual no es resoluble, solo su firma térmica. Estrellas, planetas o satélites en conjunción aparente también podrían producir tres puntos de luz con posición relativa fija si la plataforma observadora se mantiene relativamente estable, aunque ese tipo de confusión es menos común en sensores infrarrojos militares con retícula de seguimiento activa que en observación visual a simple vista.\n\nSin telemetría, sin estimación de distancia ni información sobre si los tres objetos comparten una misma firma térmica o difieren entre sí, no es posible discriminar entre esas lecturas con lo disponible. El valor de este expediente para el corpus es, sobre todo, metodológico: sirve como caso de control para verificar que la formación descrita por la AARO es genuinamente estable, no un artefacto de resumen — algo que solo la lectura de la descripción completa, con marcas de tiempo, puede confirmar.",
+  "whyMatters_en": "This file's central feature —three objects holding a fixed relative position and orientation for nearly two uninterrupted minutes— is, within the corpus's 'multiple coordinated objects' pattern (pattern 8b), one of the examples with the longest demonstrated duration of stability. The direct comparison is with the 2020 three-fast-object case ([[three-fast-moving-uap-2020]]), where a correction made earlier this same session showed AARO's description actually documented only two simultaneous objects for barely 15 seconds, with segments of no visible content for the rest of the clip. Here, by contrast, AARO describes all three objects as present and in constant relative arrangement for practically the entire 1:59 — a contrast worth noting precisely because the habit of reading the full instrumental description, not just the summary, already proved to reveal substantial differences between what a title or summary suggests and what the footage actually supports.\n\nThe most direct prosaic reading for three heat points holding fixed formation is a drone or uncrewed-aircraft formation flying in coordinated configuration —an increasingly common and accessible capability by 2023— seen from a distance where the individual platform is not resolvable, only its thermal signature. Stars, planets, or satellites in apparent conjunction could also produce three fixed-relative-position light points if the observing platform remains relatively stable, though that kind of confusion is less common in military infrared sensors with active tracking reticles than in naked-eye visual observation.\n\nWithout telemetry, distance estimation, or information on whether the three objects share the same thermal signature or differ from one another, it is not possible to discriminate between those readings with what is available. This file's value to the corpus is, above all, methodological: it serves as a control case verifying that the formation AARO describes is genuinely stable, not a summary artifact — something only reading the full timestamped description can confirm.",
+  "evidence": [
+    "2023: sensor IR de una plataforma militar de INDOPACOM sigue tres objetos durante 1:59",
+    "El reportante original no dejó descripción oral ni escrita de la observación",
+    "Descripción visual oficial de la AARO: los tres objetos 'mantienen una posición y orientación fija entre sí' durante prácticamente toda la observación",
+    "Contraste directo con el caso de tres objetos veloces de 2020, donde la descripción real solo sostenía 2 objetos simultáneos por 15 segundos",
+    "Sin coordenadas, plataforma, fecha exacta, informe de misión ni declaración de tripulación",
+    "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2023: IR sensor aboard an INDOPACOM military platform tracks three objects for 1:59",
+    "The original reporter left no oral or written description of the observation",
+    "AARO's official visual description: the three objects 'maintain a fixed position and orientation relative to one another' for practically the entire observation",
+    "Direct contrast with the 2020 three-fast-object case, where the actual description only supported 2 simultaneous objects for 15 seconds",
+    "No coordinates, platform, exact date, mission report, or crew statement",
+    "Released in PURSUE Release 01 (May 8, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR47, con la descripción visual oficial de la AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006107",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual citada en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR47, with AARO's official visual description (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006107",
+      "note": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
+    }
+  ]
+}
