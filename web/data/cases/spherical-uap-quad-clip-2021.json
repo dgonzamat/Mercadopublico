@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "Diecinueve minutos de metraje: cuatro grabaciones del mismo objeto esférico",
-  "name_en": "Nineteen minutes of footage: four recordings of the same spherical object",
+  "name": "Cuatro clips, diecinueve minutos de archivo — pero no diecinueve de objeto en pantalla",
+  "name_en": "Four clips, nineteen minutes on file — but not nineteen of object on screen",
   "year_start": 2021,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -18,26 +18,28 @@
   },
   "tier": "A",
   "epistemicStatus": "documented",
-  "probability": 25,
+  "probability": 20,
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.5,
-    "humana_clasificada": 0.13,
-    "adversaria": 0.05,
-    "nohumano_encubierto": 0.07,
-    "nohumano_abierto": 0.03,
-    "indet": 0.22
+    "mundano_natural": 0.44,
+    "humana_clasificada": 0.09,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.02,
+    "indet": 0.35
   },
-  "summary": "El 12 de abril de 2021, un sensor militar estadounidense capturó un objeto esférico no identificado en cuatro grabaciones separadas que suman casi diecinueve minutos de metraje continuo, la secuencia de video más extensa liberada hasta ahora sobre un único evento UAP. El Departamento de Guerra los tituló como 'obj 2', 'vid 0', 'vid 1' y 'vid 2', numeración que sugiere múltiples pasadas de seguimiento sobre el mismo objeto o evento durante la misma jornada. Se liberaron en la segunda entrega de PURSUE sin informe de inteligencia acompañante.",
-  "summary_en": "On April 12, 2021, a U.S. military sensor captured an unidentified spherical object in four separate recordings totaling nearly nineteen minutes of continuous footage, the longest video sequence released to date on a single UAP event. The Department of War titled them 'obj 2,' 'vid 0,' 'vid 1' and 'vid 2,' numbering suggesting multiple tracking passes over the same object or event during the same day. They were released in the second PURSUE drop with no accompanying intelligence report.",
-  "patterns": [],
+  "summary": "Cuatro archivos titulados 'obj 2', 'vid 0', 'vid 1' y 'vid 2', supuestamente del 12 de abril de 2021, suman casi diecinueve minutos de metraje — pero esos títulos no los asignó el Departamento de Guerra: según la propia AARO son etiquetas de quien subió los archivos a una red clasificada en 2024, parte del mismo lote de 50 videos localizado al responder una solicitud FOIA de 2026 por 51 registros UAP con cadena de custodia no sustanciada. La descripción visual oficial de la AARO, con marcas de tiempo, no confirma diecinueve minutos de observación continua de un mismo objeto: en dos de los cuatro clips ('vid 0' y 'vid 2'), la gran mayoría de los cuatro minutos y medio de duración se describe sin ningún área de contraste visible, con el objeto reportado solo en fragmentos de menos de un minuto. Se liberaron en la segunda entrega de PURSUE.",
+  "summary_en": "Four files titled 'obj 2,' 'vid 0,' 'vid 1' and 'vid 2,' reportedly from April 12, 2021, total nearly nineteen minutes of footage — but the Department of War did not assign those titles: per AARO itself, they are labels from whoever uploaded the files to a classified network in 2024, part of the same 50-video batch located while responding to a 2026 FOIA request for 51 UAP-related records with no substantiated chain of custody. AARO's own timestamped visual description does not confirm nineteen minutes of continuous observation of a single object: in two of the four clips ('vid 0' and 'vid 2'), most of their roughly four-and-a-half-minute duration is described with no visible area of contrast at all, the object reported only in sub-minute fragments. They were released in PURSUE's second drop.",
+  "patterns": [
+    "8d"
+  ],
   "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/1007735",
       "type": "video",
-      "title": "DOW-UAP-PR061 — 'Spherical UAP [CALLSIGN] 2021/04/12 vid 0' (4:46)",
-      "title_en": "DOW-UAP-PR061 — 'Spherical UAP [CALLSIGN] 2021/04/12 vid 0' (4:46)",
+      "title": "DOW-UAP-PR061 — título de uploader 'vid 0' (4:46; ~3 min sin objeto descrito)",
+      "title_en": "DOW-UAP-PR061 — uploader title 'vid 0' (4:46; ~3 min with no object described)",
       "source": "US Department of War vía DVIDS (PURSUE Release 02) · VIRIN 210412-D-D0360-1001",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.dvidshub.net/video/1007735"
@@ -45,8 +47,8 @@
     {
       "src": "https://www.dvidshub.net/video/embed/1007739",
       "type": "video",
-      "title": "DOW-UAP-PR062 — 'Spherical UAP [CALLSIGN] 2021/04/12 vid 1' (4:49)",
-      "title_en": "DOW-UAP-PR062 — 'Spherical UAP [CALLSIGN] 2021/04/12 vid 1' (4:49)",
+      "title": "DOW-UAP-PR062 — título de uploader 'vid 1' (4:49, seguimiento continuo descrito)",
+      "title_en": "DOW-UAP-PR062 — uploader title 'vid 1' (4:49, continuous tracking described)",
       "source": "US Department of War vía DVIDS (PURSUE Release 02)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.dvidshub.net/video/1007739"
@@ -54,8 +56,8 @@
     {
       "src": "https://www.dvidshub.net/video/embed/1007740",
       "type": "video",
-      "title": "DOW-UAP-PR063 — 'Spherical UAP [CALLSIGN] 2021/04/12 vid 2' (4:49)",
-      "title_en": "DOW-UAP-PR063 — 'Spherical UAP [CALLSIGN] 2021/04/12 vid 2' (4:49)",
+      "title": "DOW-UAP-PR063 — título de uploader 'vid 2' (4:49; solo 49 s con objeto descrito)",
+      "title_en": "DOW-UAP-PR063 — uploader title 'vid 2' (4:49; only 49 s with object described)",
       "source": "US Department of War vía DVIDS (PURSUE Release 02)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.dvidshub.net/video/1007740"
@@ -63,47 +65,51 @@
     {
       "src": "https://www.dvidshub.net/video/embed/1007734",
       "type": "video",
-      "title": "DOW-UAP-PR060 — 'Spherical UAP [CALLSIGN] 2021/04/12 obj 2' (4:50)",
-      "title_en": "DOW-UAP-PR060 — 'Spherical UAP [CALLSIGN] 2021/04/12 obj 2' (4:50)",
+      "title": "DOW-UAP-PR060 — título de uploader 'obj 2' (4:50, seguimiento activo primeros 2:04)",
+      "title_en": "DOW-UAP-PR060 — uploader title 'obj 2' (4:50, active tracking for the first 2:04)",
       "source": "US Department of War vía DVIDS (PURSUE Release 02)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.dvidshub.net/video/1007734"
     }
   ],
-  "whatHappened": "El 12 de abril de 2021, un sensor electro-óptico/infrarrojo montado en una plataforma militar estadounidense registró un objeto de perfil esférico durante un lapso inusualmente extenso. En vez de la grabación breve —segundos a pocos minutos— que caracteriza a la inmensa mayoría de los expedientes UAP desclasificados hasta ahora, este evento generó cuatro archivos de video independientes cuya duración combinada ronda los diecinueve minutos: 4 minutos 50 segundos, 4 minutos 46 segundos, 4 minutos 49 segundos y 4 minutos 49 segundos, una uniformidad que sugiere una limitación técnica de grabación en bloques de cerca de cinco minutos más que cuatro eventos casualmente similares.\n\nLos títulos que el Departamento de Guerra asignó a los cuatro archivos —'obj 2', 'vid 0', 'vid 1' y 'vid 2'— son reveladores por su propia estructura administrativa. La etiqueta 'obj 2' ('objeto 2') implica que hubo al menos un 'objeto 1' en la misma sesión de grabación que no fue liberado, o que fue catalogado aparte. La secuencia 'vid 0' a 'vid 2' indica que los operadores numeraron consecutivamente los segmentos de una misma observación continua, probablemente porque el sistema de grabación fragmentaba el metraje en archivos de duración fija.\n\nMás allá de esa estructura, la información pública disponible es limitada de forma deliberada: la ubicación figura en el registro de DVIDS únicamente como 'ubicación no revelada', sin coordenadas, sin nombre de la plataforma observadora, sin identificación de unidad y sin declaración de tripulación. El material se subió al portal el 22 de mayo de 2026, dentro de la segunda entrega de documentos y videos del programa PURSUE, y se clasificó como obra de dominio público del gobierno de Estados Unidos. No se acompañó de un informe de inteligencia, un parte de misión ni ningún documento narrativo — a diferencia de otros expedientes de la misma entrega que sí incluyen el formulario UAP estructurado con evaluación del observador.\n\nLa ausencia de ese documento narrativo es la limitación central de este caso: se cuenta con la cantidad de metraje más extensa liberada hasta ahora sobre un evento UAP individual, pero sin el contexto operacional —qué tipo de aeronave o sensor lo capturó, en qué circunstancias, qué reportó la tripulación en el momento— que permitiría interpretar ese metraje con precisión.",
-  "whatHappened_en": "On April 12, 2021, an electro-optical/infrared sensor mounted on a U.S. military platform recorded a spherical-profile object over an unusually extended span. Instead of the brief recording —seconds to a few minutes— that characterizes the vast majority of UAP files declassified to date, this event produced four independent video files whose combined duration runs to roughly nineteen minutes: 4 minutes 50 seconds, 4 minutes 46 seconds, 4 minutes 49 seconds and 4 minutes 49 seconds, a uniformity suggesting a technical recording limit in roughly five-minute blocks rather than four coincidentally similar events.\n\nThe titles the Department of War assigned to the four files —'obj 2,' 'vid 0,' 'vid 1' and 'vid 2'— are revealing in their own administrative structure. The label 'obj 2' ('object 2') implies there was at least an 'object 1' in the same recording session that was not released, or was cataloged separately. The 'vid 0' through 'vid 2' sequence indicates operators numbered consecutive segments of a single continuous observation, likely because the recording system fragmented the footage into fixed-duration files.\n\nBeyond that structure, the publicly available information is deliberately limited: the location appears in DVIDS's record only as 'undisclosed location,' with no coordinates, no name for the observing platform, no unit identification and no crew statement. The material was uploaded to the portal on May 22, 2026, within the second batch of documents and videos of the PURSUE program, and classified as U.S. government public domain work. No intelligence report, mission summary or narrative document accompanied it — unlike other files in the same drop that do include the structured UAP form with observer assessment.\n\nThe absence of that narrative document is this case's central limitation: it holds the longest stretch of footage released to date on a single UAP event, but without the operational context —what kind of aircraft or sensor captured it, under what circumstances, what the crew reported at the time— that would allow that footage to be interpreted with precision.",
-  "whyMatters": "El valor de este expediente está en su duración, no en su descripción. Diecinueve minutos de metraje continuo es un orden de magnitud mayor que la mayoría de los clips liberados por PURSUE, que típicamente duran entre segundos y dos minutos. Esa extensión abre —al menos en principio— la posibilidad de un análisis cuadro por cuadro de trayectoria, velocidad relativa y comportamiento que un clip de veinte segundos no permite: no es lo mismo un punto que aparece y desaparece que un objeto observado de forma sostenida durante casi un cuarto de hora.\n\nAl mismo tiempo, la extensión del metraje no compensa la ausencia casi total de contexto operacional. No se sabe qué tipo de plataforma grabó, a qué altitud, con qué sensor exacto, ni qué reportó la tripulación —si la hubo— en el momento. Esa combinación de mucho metraje y poco contexto es, paradójicamente, menos útil analíticamente que un clip breve acompañado de un informe de inteligencia completo, como los que sí incluyen coordenadas, evaluación del observador y firma de sensor. Es el reverso exacto del caso de Tyndall, donde dos clips cortos venían con un título del propio Departamento de Guerra que describía morfología y firma térmica.\n\nLa interpretación más probable, dada la falta de contexto adicional, sigue las mismas líneas que la mayoría de los objetos esféricos del corpus PURSUE: un globo meteorológico o de investigación a la deriva —cuya trayectoria lenta y sostenida explicaría fácilmente diecinueve minutos de observación continua—, un satélite o resto orbital reingresando lentamente, o una plataforma no tripulada de baja velocidad. La duración prolongada favorece, si acaso, la hipótesis de un objeto de movimiento lento sobre una de comportamiento errático o de alta velocidad, lo que empuja el posterior hacia lo prosaico más que lo contrario. Pero sin el informe que falta, esa lectura sigue siendo una inferencia razonable y no una conclusión respaldada por el propio documento —que es, otra vez, la limitación honesta de trabajar solo con el video.",
-  "whyMatters_en": "This file's value lies in its duration, not its description. Nineteen minutes of continuous footage is an order of magnitude longer than most clips released by PURSUE, which typically run seconds to two minutes. That length opens —at least in principle— the possibility of frame-by-frame analysis of trajectory, relative speed and behavior that a twenty-second clip does not allow: an object that appears and vanishes is not the same as one observed continuously for nearly a quarter hour.\n\nAt the same time, the footage's length does not compensate for the near-total absence of operational context. It is not known what kind of platform recorded it, at what altitude, with what exact sensor, or what the crew —if there was one— reported at the time. That combination of abundant footage and scant context is, paradoxically, less analytically useful than a brief clip accompanied by a full intelligence report, of the kind that do include coordinates, observer assessment and sensor signature. It is the exact reverse of the Tyndall case, where two short clips came with a title from the Department of War itself describing morphology and thermal signature.\n\nThe most likely interpretation, given the lack of additional context, follows the same lines as most spherical objects in the PURSUE corpus: a weather or research balloon adrift —whose slow, sustained trajectory would easily explain nineteen minutes of continuous observation—, a satellite or orbital debris slowly re-entering, or a low-speed uncrewed platform. The extended duration favors, if anything, the slow-moving-object hypothesis over erratic or high-speed behavior, which pushes the posterior toward the prosaic rather than the opposite. But without the missing report, that reading remains a reasonable inference rather than a conclusion the document itself supports — which is, again, the honest limitation of working from the video alone.",
+  "whatHappened": "Estos cuatro archivos, catalogados como DOW-UAP-PR060 a PR063, forman parte del lote de 50 videos que la AARO localizó en una red clasificada al responder, en 2026, una solicitud FOIA de ocho congresistas por 51 registros potencialmente relacionados con UAP — lote del que la AARO advierte que 'muchos de estos materiales carecen de una cadena de custodia sustanciada'.\n\nLos títulos 'obj 2', 'vid 0', 'vid 1' y 'vid 2' —supuestamente del 12 de abril de 2021— son, según la propia evaluación de la AARO, títulos 'definidos por el usuario' que subió los archivos a la red clasificada entre mayo y junio de 2024, no una designación del Departamento de Guerra. La AARO evalúa como 'probable', sin confirmarlo, que el metraje derive de una cámara de video de movimiento completo y un sensor infrarrojo a bordo de una plataforma militar de EE.UU. dentro del área de responsabilidad de CENTCOM en 2021. Las cuatro duraciones (4:50, 4:46, 4:49, 4:49) son uniformes, compatibles con un límite técnico de grabación en bloques de unos cinco minutos.\n\nLa descripción visual oficial de la AARO, con marcas de tiempo, no sostiene diecinueve minutos de observación continua de un mismo objeto esférico. Para 'obj 2' (PR060, 4:50): un área de contraste transita el encuadre de derecha a izquierda mientras el sensor la sigue con paneos y zoom (0:00–0:26); reingresa al encuadre y el sensor la sigue panéando a la izquierda y hacia arriba (0:27–2:04); y desde 2:05 hasta el final 'el sensor vuelve a enfocar el tema original del video' — sin más detalle. Para 'vid 0' (PR061, 4:46): los primeros tres minutos no tienen descripción de contenido visible; recién entre 3:02 y 4:00 un área de contraste entra por la esquina superior derecha y el sensor la centra, y entre 4:01 y 4:46 el sensor cambia de modo mientras el área se vuelve indistinguible. Para 'vid 1' (PR062, 4:49): el sensor sigue un área de contraste de forma continua durante los 4:49 completos, el único de los cuatro con seguimiento ininterrumpido descrito. Para 'vid 2' (PR063, 4:49): el sensor sigue un área de contraste solo durante los primeros 49 segundos, tras lo cual 'se aleja del área de contraste' — sin descripción para los cerca de cuatro minutos restantes.\n\nNo hay coordenadas, plataforma, unidad ni declaración de tripulación identificadas en el registro público. El material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, bajo licencia de dominio público, sin informe de inteligencia ni documento narrativo que lo acompañe.",
+  "whatHappened_en": "These four files, catalogued as DOW-UAP-PR060 through PR063, are part of the 50-video batch AARO located on a classified network in 2026 while responding to a FOIA request from eight members of Congress for 51 potentially UAP-related records — a batch AARO warns that 'many of these materials lack a substantiated chain-of-custody.'\n\nThe titles 'obj 2,' 'vid 0,' 'vid 1' and 'vid 2' —reportedly from April 12, 2021— are, per AARO's own assessment, 'user-defined' titles assigned by whoever uploaded the files to the classified network between May and June 2024, not a Department of War designation. AARO assesses as 'likely,' without confirming, that the footage derives from a full-motion video camera and an infrared sensor aboard a U.S. military platform within CENTCOM's area of responsibility in 2021. The four durations (4:50, 4:46, 4:49, 4:49) are uniform, consistent with a roughly five-minute technical recording limit.\n\nAARO's official timestamped visual description does not support nineteen minutes of continuous observation of a single spherical object. For 'obj 2' (PR060, 4:50): an area of contrast transits the frame right to left as the sensor tracks it with pans and zoom (0:00–0:26); it re-enters the frame and the sensor tracks it panning left and up (0:27–2:04); and from 2:05 to the end, 'the sensor refocuses on the original subject matter of the video' — with no further detail. For 'vid 0' (PR061, 4:46): the first three minutes have no described visible content; only between 3:02 and 4:00 does an area of contrast enter from the upper right corner and get centered by the sensor, and between 4:01 and 4:46 the sensor changes modes as the area becomes indistinct. For 'vid 1' (PR062, 4:49): the sensor tracks an area of contrast continuously for the full 4:49, the only one of the four with uninterrupted tracking described. For 'vid 2' (PR063, 4:49): the sensor tracks an area of contrast only for the first 49 seconds, after which 'the sensor pans away from the area of contrast' — with no description for the remaining roughly four minutes.\n\nNo coordinates, platform, unit, or crew statement are identified in the public record. The material was uploaded to DVIDS on May 22, 2026, within PURSUE's second drop, under public domain license, with no intelligence report or narrative document accompanying it.",
+  "whyMatters": "El valor original que se le atribuía a este expediente —diecinueve minutos de observación continua de un mismo objeto— no resiste la lectura completa de la ficha de la AARO. De los cuatro clips, solo uno ('vid 1') tiene seguimiento descrito de forma ininterrumpida durante toda su duración; los otros tres tienen entre uno y tres minutos y medio SIN ningún área de contraste reportada. La cifra real de metraje con objeto efectivamente descrito es, sumando los tramos con contenido, considerablemente menor a diecinueve minutos — probablemente menos de diez. Es un ejemplo claro de por qué, en este lote de 50 videos (Release 02 de PURSUE, ver [[reeves-foia-classified-network-2023]]), la duración del archivo y la duración de la observación real no son lo mismo, y el título —'obj 2', 'vid 0'...'vid 2'— tampoco es una designación institucional que respalde esa cifra: es la etiqueta de un uploader anónimo en 2024.\n\nCon esa corrección, lo que queda es todavía interesante pero más modesto: cuatro archivos con un patrón de grabación técnico consistente (bloques de ~5 minutos), que en al menos dos tramos (obj 2 y vid 1) muestran un sensor rastreando activamente un área de contraste con paneos y cambios de zoom deliberados — comportamiento de un operador tratando de mantener algo en cuadro, no ruido aleatorio. Eso sostiene que hubo, en algún momento, un contacto real que motivó el registro.\n\nLo que falta no cambió: no se sabe qué tipo de plataforma grabó, a qué altitud, con qué sensor exacto, ni qué reportó la tripulación —si la hubo—. La interpretación más probable sigue las mismas líneas que la mayoría de los objetos esféricos del corpus PURSUE: un globo a la deriva, un resto orbital reingresando lentamente, o una plataforma no tripulada de baja velocidad —lecturas compatibles con un sensor que reencuadra periódicamente un objeto de movimiento lento—. Sin el informe que falta, y con una cadena de custodia que la propia AARO califica de no sustanciada, el caso queda con más incertidumbre —no menos— que la versión original de este análisis reconocía.",
+  "whyMatters_en": "The value originally attributed to this file —nineteen minutes of continuous observation of a single object— does not survive a full reading of AARO's record. Of the four clips, only one ('vid 1') has tracking described as uninterrupted for its entire duration; the other three have between one and three and a half minutes with NO area of contrast reported at all. The actual amount of footage with an object genuinely described, summing only the segments with content, is considerably less than nineteen minutes — probably under ten. It is a clear example of why, in this 50-video batch (PURSUE Release 02; see [[reeves-foia-classified-network-2023]]), a file's runtime and the runtime of the actual observation are not the same thing, and the title —'obj 2,' 'vid 0'...'vid 2'— is not an institutional designation backing that figure either: it is an anonymous uploader's label from 2024.\n\nWith that correction, what remains is still interesting but more modest: four files with a consistent technical recording pattern (~5-minute blocks), which in at least two segments (obj 2 and vid 1) show a sensor actively tracking an area of contrast with deliberate pans and zoom changes — an operator's behavior trying to keep something in frame, not random noise. That supports there having been, at some point, a real contact that prompted the recording.\n\nWhat's missing hasn't changed: it is not known what kind of platform recorded it, at what altitude, with what exact sensor, or what the crew —if any— reported at the time. The most likely interpretation still follows the same lines as most spherical objects in the PURSUE corpus: a balloon adrift, orbital debris slowly re-entering, or a low-speed uncrewed platform — readings compatible with a sensor periodically reframing a slow-moving object. Without the missing report, and with a chain of custody AARO itself calls unsubstantiated, the case carries more uncertainty — not less — than this analysis's original version acknowledged.",
   "evidence": [
-    "12 de abril de 2021: sensor EO/IR militar registra un objeto esférico en cuatro grabaciones independientes",
-    "Duración combinada ~19 minutos (4:50, 4:46, 4:49, 4:49) — la secuencia más extensa liberada sobre un evento UAP único",
-    "Títulos oficiales: 'obj 2', 'vid 0', 'vid 1', 'vid 2' — numeración que implica una sesión de seguimiento con múltiples segmentos",
+    "Títulos 'obj 2'/'vid 0-2' son etiquetas de un uploader anónimo en una red clasificada (2024), no del Departamento de Guerra, según la propia AARO",
+    "AARO advierte: el lote de 50 videos (incluidos estos 4) 'carece de una cadena de custodia sustanciada'",
+    "Duración combinada ~19 minutos (4:50, 4:46, 4:49, 4:49), pero la descripción visual de AARO reporta objeto ausente en 3 de los 4 tramos (1 a 3,5 min sin contenido cada uno)",
+    "Solo 'vid 1' (4:49) tiene seguimiento descrito de forma ininterrumpida durante toda su duración",
+    "AARO solo 'evalúa' como probable —sin confirmar— origen en CENTCOM, 2021",
     "Ubicación declarada solo como 'undisclosed location'; sin coordenadas, plataforma ni unidad identificadas",
     "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público",
     "Sin informe de inteligencia, parte de misión ni declaración de tripulación acompañante"
   ],
   "evidence_en": [
-    "April 12, 2021: military EO/IR sensor records a spherical object across four independent recordings",
-    "Combined duration ~19 minutes (4:50, 4:46, 4:49, 4:49) — the longest sequence released on a single UAP event",
-    "Official titles: 'obj 2,' 'vid 0,' 'vid 1,' 'vid 2' — numbering implying a tracking session with multiple segments",
+    "Titles 'obj 2'/'vid 0-2' are an anonymous uploader's labels on a classified network (2024), not the Department of War's, per AARO itself",
+    "AARO warns: the 50-video batch (including these 4) 'lacks a substantiated chain-of-custody'",
+    "Combined duration ~19 minutes (4:50, 4:46, 4:49, 4:49), but AARO's visual description reports no object present in 3 of the 4 segments (1 to 3.5 min each with no content)",
+    "Only 'vid 1' (4:49) has tracking described as uninterrupted for its full duration",
+    "AARO only 'assesses' as likely —without confirming— a CENTCOM origin, 2021",
     "Location declared only as 'undisclosed location'; no coordinates, platform, or unit identified",
     "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain",
     "No accompanying intelligence report, mission summary, or crew statement"
   ],
   "sources": [
     {
-      "name": "DVIDS — DOW-UAP-PR060/061/062/063, cuatro grabaciones del mismo evento, 12 abr 2021 (PURSUE Release 02)",
+      "name": "DVIDS — DOW-UAP-PR060/061/062/063, títulos definidos por el uploader, con evaluación de procedencia y descripción visual de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007734",
-      "note": "Los cuatro videos van embebidos en el visor de este caso.",
-      "note_en": "All four videos are embedded in this case's viewer."
+      "note": "Los cuatro videos van embebidos en el visor de este caso; cada ficha incluye la evaluación de procedencia y la descripción visual con marcas de tiempo citadas en whatHappened.",
+      "note_en": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened."
     }
   ],
   "sources_en": [
     {
-      "name": "DVIDS — DOW-UAP-PR060/061/062/063, four recordings of the same event, Apr 12 2021 (PURSUE Release 02)",
+      "name": "DVIDS — DOW-UAP-PR060/061/062/063, uploader-defined titles, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007734",
-      "note": "All four videos are embedded in this case's viewer.",
-      "note_en": "All four videos are embedded in this case's viewer."
+      "note": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened.",
+      "note_en": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened."
     }
   ]
 }

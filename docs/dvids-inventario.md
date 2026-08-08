@@ -4,15 +4,21 @@ Catálogo público de DVIDS cruzado contra el corpus. **Generado ago 2026.**
 
 La entrega de cada video se deriva de su **fecha de publicación en DVIDS**, no del nombre: sus etiquetas codifican `AARO`+fecha (`AARO080726` = Release 05, `AARO071026` = Release 04, `AAR052226` = Release 02) y coinciden exactamente con las fechas de apertura de cada entrega. Verificado contra los 37 videos ya embebidos: **35 coincidían, 2 no** — `PR102`/`PR103` estaban en un caso de Release 01 siendo Release 04, y se retiraron.
 
+**Hallazgo crítico (ago 2026) · Release 02 NO comparte cadena de custodia con 01/04/05.** El meta description (`og:description`) de cada ficha de DVIDS —no visible en el bloque "VIDEO INFO", hay que leerlo aparte— revela dos banners de procedencia radicalmente distintos, verificados en una muestra de los 50 videos de Release 02 y 10+ de las otras entregas:
+- **Releases 01, 04 y 05**: 'The United States [CENTCOM/NORTHCOM/INDOPACOM/Navy UAPTF] submitted a report / transferred this media to AARO' — cadena institucional trazable, título coherente con el expediente (a veces citando un informe DoW-UAP-D## acompañante).
+- **Release 02 (los 50 videos, sin excepción confirmada)**: 'On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records... AARO identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.' El título de cada clip es 'uploader-defined' — lo asignó quien subió el archivo a la red clasificada, NO el Departamento de Guerra — y la AARO solo 'assesses... likely' el origen, sin confirmarlo. Ver caso [[reeves-foia-classified-network-2023]].
+
+Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` con framing de 'título oficial del DoW' (`tyndall-uscg-tictac-2024`, `three-fast-moving-uap-2020`, `spherical-afghanistan-2020`, `spherical-uap-quad-clip-2021`) más el caso agregador `pursue-release-2026` y la nota de procedencia en `lake-huron-2023`. **Lección operativa: antes de construir un caso desde un solo video, leer el `og:description` completo — no solo el título ni el bloque VIDEO INFO— porque puede describir una cadena de custodia radicalmente distinta a la que el nombre del archivo sugiere.**
+
 
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
 | **Release 01** | 8 may 2026 | 27 | 13 |
-| **Release 02** | 22 may 2026 | 50 | 12 |
+| **Release 02** | 22 may 2026 | 50 | 19 |
 | **Release 04** | 10 jul 2026 | 19 | 0 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
 | **Release 03** | 12 jun 2026 | **0** | — |
-| | | **111** | **31** |
+| | | **111** | **38** |
 
 > El **Release 03 no publicó video** en DVIDS: ninguno de los 111 tiene fecha de publicación del 12 de junio de 2026.
 
@@ -54,20 +60,20 @@ La entrega de cada video se deriva de su **fecha de publicación en DVIDS**, no 
 - [ ] `PR052` · 06.01.2024 — uap-uso-formation-callsign-mission · [ver](https://www.dvidshub.net/video/1007708)
 - [ ] `PR053` · 10.15.2022 — cigar-shaped-fast-spherical-uap-clip-15-oct-22 · [ver](https://www.dvidshub.net/video/1007709)
 - [ ] `PR054` · 08.01.2022 — spherical-uap-erratic-movement-callsign-mission-2022 · [ver](https://www.dvidshub.net/video/1007711)
-- [ ] `PR055` · 11.23.2020 — spherical-uap-over-afg-and-out-clouds-23-nov-2020 · [ver](https://www.dvidshub.net/video/1007713)
+- [x] `PR055` · 11.23.2020 — spherical-uap-over-afg-and-out-clouds-23-nov-2020 → `spherical-afghanistan-2020` · [ver](https://www.dvidshub.net/video/1007713)
 - [ ] `PR056` · 06.01.2024 — spherical-uap-pulsing-over-water-callsign · [ver](https://www.dvidshub.net/video/1007718)
 - [ ] `PR057A` · 01.01.2023 — spherical-uap-clouds · [ver](https://www.dvidshub.net/video/1007720)
 - [ ] `PR058` · 06.24.2024 — callsign-mission-uap · [ver](https://www.dvidshub.net/video/1007723)
 - [ ] `PR059` · 06.01.2020 — nag-uap-1-jun-20 · [ver](https://www.dvidshub.net/video/1007727)
-- [ ] `PR060` · 04.12.2021 — spherical-uap-callsign-2021-04-12-obj-2 · [ver](https://www.dvidshub.net/video/1007734)
-- [ ] `PR061` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-0 · [ver](https://www.dvidshub.net/video/1007735)
-- [ ] `PR062` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-1 · [ver](https://www.dvidshub.net/video/1007739)
-- [ ] `PR063` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-2 · [ver](https://www.dvidshub.net/video/1007740)
+- [x] `PR060` · 04.12.2021 — spherical-uap-callsign-2021-04-12-obj-2 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007734)
+- [x] `PR061` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-0 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007735)
+- [x] `PR062` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-1 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007739)
+- [x] `PR063` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-2 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007740)
 - [x] `PR064` · 07.01.2017 — afsoc-kabul-uap-jul-2017 → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007741)
 - [x] `PR065` · 04.24.2024 — uscg-c-144-tyndall-uap-2-tic-tac-ir-hot-24-april-2024 → `tyndall-uscg-tictac-2024`, `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007777)
 - [x] `PR066` · 04.24.2024 — uscg-c-144-tyndall-uap-1-tic-tac-ir-hot-24-april-2024 → `tyndall-uscg-tictac-2024` · [ver](https://www.dvidshub.net/video/1007778)
 - [x] `PR067` · 03.25.2022 — multiple-spherical-uap-uso-near-sub-callsign-2022-03-25-and-out- → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007779)
-- [ ] `PR068` · 01.23.2020 — iir-1-666-s0151-23-video-footage-unidentified-aerial-phenomenon- · [ver](https://www.dvidshub.net/video/1007780)
+- [x] `PR068` · 01.23.2020 — iir-1-666-s0151-23-video-footage-unidentified-aerial-phenomenon- → `reeves-foia-classified-network-2023` · [ver](https://www.dvidshub.net/video/1007780)
 - [x] `PR069` · 01.01.2022 — f-18-flir-uap → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007781)
 - [x] `PR070` · 02.13.2023 — iir-1-655-s0301-23-eglin-afb-aircrew-observed-unidentified-aeria → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007783)
 - [x] `PR071` · 02.12.2023 — usaf-ang-f-16c-callsign-callsign-shoots-down-uap-over-lake-huron → `lake-huron-2023` · [ver](https://www.dvidshub.net/video/1007784)
@@ -78,7 +84,7 @@ La entrega de cada video se deriva de su **fecha de publicación en DVIDS**, no 
 - [ ] `PR076` · 01.03.2021 — 03-january-2021-callsign-mission-observes-uap · [ver](https://www.dvidshub.net/video/1007804)
 - [ ] `PR077` · 11.02.2020 — 2-november-2020-callsign-callsign-observes-and-tracks-uap-1-2 · [ver](https://www.dvidshub.net/video/1007809)
 - [ ] `PR078` · 11.02.2020 — 2-november-2020-callsign-callsign-observes-and-tracks-uap-2-2 · [ver](https://www.dvidshub.net/video/1007812)
-- [ ] `PR079` · 10.29.2020 — 29-october-2020-callsign-mission-observes-3-fast-moving-uaps · [ver](https://www.dvidshub.net/video/1007816)
+- [x] `PR079` · 10.29.2020 — 29-october-2020-callsign-mission-observes-3-fast-moving-uaps → `three-fast-moving-uap-2020` · [ver](https://www.dvidshub.net/video/1007816)
 - [ ] `PR080` · 10.20.2020 — 20-october-2020-callsign-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007803)
 - [ ] `PR081` · 10.18.2020 — 18-oct-2020-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007805)
 - [ ] `PR082` · 10.16.2020 — 16-oct-2020-callsign-views-uap · [ver](https://www.dvidshub.net/video/1007807)
