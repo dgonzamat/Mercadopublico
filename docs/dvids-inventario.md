@@ -139,3 +139,13 @@ La entrega de cada video se deriva de su **fecha de publicación en DVIDS**, no 
 - [ ] `PR136` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1017796)
 - [ ] `PR142` · 01.01.2025 — unresolved-uap-report-middle-east-2025 · [ver](https://www.dvidshub.net/video/1017797)
 - [ ] `PR149` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1017799)
+
+## Serie separada · AARO Case Resolution Reports (hallada vía `q=Anomaly+Resolution+Office`)
+
+Búsqueda más amplia que `q=DOW-UAP` destapó **27 videos adicionales**, ninguno relacionado con PURSUE: son la serie propia de la AARO (`PR-001`…`PR-018`, EUCOM/AFRICOM) más metraje de audiencias públicas (Senado, panel de la NASA). Todos con evaluación oficial adjunta como texto.
+
+- [x] Serie `PR-001`…`PR-018` (18 videos) — agregada en `aaro-case-resolution-reports` (muestra de 7 embebida; 6 resueltos como aves/globo, 5 cerrados como globo, 1 "no anómalo", 11 sin resolver)
+- [x] `Middle East Red Balloon 2024` — mismo caso agregado
+- [x] `Middle East Object` (2022) + audiencia completa del Senado (19 abr 2023) — agregados a `mosul-orb-2016`
+- [x] `South Asian Object 1/2` — caso propio `south-asian-object-2023` (resuelto: aeronave comercial + artefacto de compresión)
+- [x] `Western U.S. Objects` (2 versiones) — caso propio `western-us-objects-2021` (resuelto: 3 aeronaves comerciales confirmadas por radar)
