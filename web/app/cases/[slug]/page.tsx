@@ -13,6 +13,7 @@ import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { EpistemicBadge } from "@/components/Badge";
 import PdfDoc from "@/components/PdfDoc";
+import DvidsVideo from "@/components/DvidsVideo";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
@@ -399,6 +400,8 @@ export async function CaseDetailPage(
             <figure key={i} className="space-y-2">
               {doc.type === "pdf" ? (
                 <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} />
+              ) : doc.type === "video" ? (
+                <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
               ) : (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img

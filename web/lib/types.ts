@@ -38,12 +38,22 @@ export interface CaseDocument {
  * Documento embebido en el visor inline del caso. `src` es same-origin
  * (ruta bajo /pursue/) porque war.gov bloquea el framing/fetch de terceros:
  * solo un asset auto-hospedado se puede embeber con garantía. `type` decide
- * el render (iframe para pdf, img para imagen). `fallbackUrl` apunta al
- * documento oficial original como respaldo navegable.
+ * el render (visor cliente para pdf, img para imagen, iframe para video).
+ * `fallbackUrl` apunta al documento oficial original como respaldo navegable.
+ *
+ * `type: "video"` es la excepción al invariante same-origin, y la única que
+ * hay: los videos PURSUE pesan >150MB sin renditions menores (medido: PR051
+ * = 154MB), muy por encima del techo de /pursue (30MB) y del bucket (30-50MB),
+ * así que rehostearlos no es opción. DVIDS —el mirror oficial del DoD— sirve
+ * `/video/embed/<id>` SIN `x-frame-options` ni `frame-ancestors` (el resto de
+ * su sitio va con DENY, o sea que el embed es deliberado). A cambio de esa
+ * conveniencia se pierde la garantía: un tercero puede cambiar su política
+ * unilateralmente, así que la contraparte es la sonda viva
+ * `check-dvids-embeds.mjs`, que vigila que sigan siendo framables.
  */
 export interface DocEmbed {
   src: string;
-  type: "pdf" | "image";
+  type: "pdf" | "image" | "video";
   title: string;
   title_en?: string;
   source?: string;

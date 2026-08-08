@@ -213,17 +213,34 @@ for (const file of caseFiles) {
   // (2) el bucket público Supabase `pursue` (archivos 30-50MB / partes de los
   // grandes, que GitHub no puede alojar). El tipo decide el render (iframe para
   // pdf, img para imagen), así que la extensión debe ser coherente.
+  // (3) el player de DVIDS — el mirror oficial del DoD — SOLO para type
+  // "video": los videos PURSUE pesan >150MB sin renditions menores, así que
+  // rehostearlos es imposible bajo los techos de arriba. `/video/embed/<id>`
+  // responde sin `x-frame-options` ni `frame-ancestors` (el resto del sitio va
+  // con DENY: el embed es deliberado). La garantía perdida la cubre la sonda
+  // viva `check-dvids-embeds.mjs`, no el build (que es offline a propósito).
   const SUPA_PURSUE = "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
+  const DVIDS_EMBED = "https://www.dvidshub.net/video/embed/";
   if (c.documents !== undefined) {
     if (!isArr(c.documents)) err(w, "documents debe ser array (DocEmbed[])");
     else
       c.documents.forEach((d, j) => {
         const dw = `${w}.documents[${j}]`;
+        const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
         if (!isStr(d.src)) err(dw, "src obligatorio (string)");
-        else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE))
-          err(dw, `src debe ser same-origin (/pursue/) o el bucket Supabase pursue (war.gov no se puede embeber): "${d.src}"`);
-        if (!["pdf", "image"].includes(d.type))
-          err(dw, `type inválido "${d.type}" (pdf|image)`);
+        else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids)
+          err(dw, `src debe ser same-origin (/pursue/), el bucket Supabase pursue, o el player de DVIDS (war.gov no se puede embeber): "${d.src}"`);
+        if (!["pdf", "image", "video"].includes(d.type))
+          err(dw, `type inválido "${d.type}" (pdf|image|video)`);
+        // El origen DVIDS es exclusivo de "video", y "video" es exclusivo de
+        // DVIDS: sin este cruce, un PDF podría apuntar al player (iframe roto)
+        // o un "video" a /pursue (binario que no cabe, justo lo que evitamos).
+        if (isDvids && d.type !== "video")
+          err(dw, `el player de DVIDS solo admite type "video", no "${d.type}": "${d.src}"`);
+        if (d.type === "video" && !isDvids)
+          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>): "${d.src}"`);
+        if (d.type === "video" && isDvids && !/^\d+$/.test(d.src.slice(DVIDS_EMBED.length)))
+          err(dw, `src de DVIDS debe terminar en el id numérico del video: "${d.src}"`);
         if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))
           err(dw, `type "pdf" exige src con extensión .pdf: "${d.src}"`);
         if (isStr(d.src) && d.type === "image" && !/\.(jpe?g|png|webp|gif)$/i.test(d.src))

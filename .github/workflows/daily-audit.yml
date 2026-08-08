@@ -63,6 +63,50 @@ jobs:
           npm run check-links:gate 2>&1 | tee /tmp/links.log
           echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
+      # Contraparte viva del ÚNICO origen de tercero que admite el visor
+      # (el player de DVIDS, para los videos PURSUE que no caben rehosteados).
+      # E17/E20 verifican los otros dos orígenes offline contra disco y
+      # manifiesto; un iframe a dvidshub.net no se puede verificar sin red.
+      # Vigila el modo de falla SILENCIOSO: si DVIDS empieza a mandar
+      # x-frame-options, el iframe queda en blanco y el build sigue verde.
+      - name: Check DVIDS embeds still framable
+        id: dvids
+        run: |
+          set +e
+          npm run check-dvids 2>&1 | tee /tmp/dvids.log
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Open issue on broken DVIDS embeds
+        if: steps.dvids.outputs.exit_code != '0'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/dvids.log', 'utf8');
+            const today = new Date().toISOString().slice(0, 10);
+            const body = [
+              'Uno o más videos de DVIDS embebidos en el visor **dejaron de ser embebibles**.',
+              '',
+              'Es el riesgo asumido al admitir un origen de tercero: DVIDS puede cambiar su política de framing unilateralmente y el iframe queda en blanco sin romper el build. Ruta: revisar si apareció una rendition que quepa en el bucket Supabase para rehostear, o degradar el documento a enlace en `sources`.',
+              '',
+              '<details><summary>Reporte completo</summary>',
+              '',
+              '```',
+              report.slice(-6000),
+              '```',
+              '',
+              '</details>',
+              '',
+              `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `dvids: embeds de video rotos (${today})`,
+              body,
+              labels: ['audit', 'automated'],
+            });
+
       - name: Open issue on new link rot
         if: steps.links.outputs.exit_code != '0'
         uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
