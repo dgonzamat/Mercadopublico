@@ -71,7 +71,7 @@ export function ReleasesView({ locale }: { locale: "es" | "en" }) {
                 Release {pad(n)}
               </span>
               <span className="font-mono text-sm font-semibold tabular-nums text-text group-hover:text-accent">
-                {count} casos
+                {count} <T es="casos" en="cases" locale={locale} />
               </span>
             </div>
             <p className="text-sm text-text">
