@@ -1,0 +1,80 @@
+{
+  "id": "atlantic-ocean-balloon-2020",
+  "num": 358,
+  "pursueReleases": [4],
+  "name": "'Un globo grande y algo deformado': el propio observador identifica el objeto",
+  "name_en": "'A large, somewhat deformed balloon': the observer identifies the object himself",
+  "year_start": 2020,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 35,
+    "lng": -65,
+    "place": "Océano Atlántico, costa este de EE.UU. (ubicación exacta no revelada)",
+    "place_en": "Atlantic Ocean, U.S. East Coast (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 8,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.78,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.01,
+    "indet": 0.15
+  },
+  "summary": "En 2020, el Comando Norte de EE.UU. sometió a la AARO un reporte de 32 segundos de metraje infrarrojo sobre el océano Atlántico. Lo inusual de este expediente no es el video —un sensor que sigue un área de contraste sin incidentes— sino el informe de debrief que lo acompaña (DOW-UAP-D091): el propio observador describió el objeto como 'de color más oscuro, entre marrón y rojizo, de aproximadamente 12-15 pies de altura', que 'viajaba con el viento', 'no maniobraba ni cambiaba de dirección', y que 'se asemejaba a un globo grande, algo deformado'. Es uno de los pocos casos del corpus donde el testigo mismo, no un analista posterior, ofrece la identificación mundana más probable.",
+  "summary_en": "In 2020, U.S. Northern Command submitted a report to AARO consisting of 32 seconds of infrared footage over the Atlantic Ocean. What is unusual about this file is not the video —a sensor tracking an area of contrast without incident— but the accompanying debrief report (DOW-UAP-D091): the observer himself described the object as 'a darker, maroonish color, approximately 12-15 feet in height,' that 'traveled with the wind,' 'did not maneuver or change direction,' and 'appeared similar to a large, somewhat deformed balloon.' It is one of the few cases in the corpus where the witness himself, not a later analyst, offers the most likely mundane identification.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014124",
+      "type": "video",
+      "title": "DOW-UAP-PR116 — sensor IR sigue un objeto sobre el Atlántico; debrief D091 lo describe como 'globo deformado' (32 s)",
+      "title_en": "DOW-UAP-PR116 — IR sensor tracks an object over the Atlantic; debrief D091 describes it as a 'deformed balloon' (32 s)",
+      "source": "US Northern Command, reportado a la AARO, vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014124"
+    }
+  ],
+  "whatHappened": "En algún momento de 2020, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró 32 segundos de metraje sobre el océano Atlántico, frente a la costa este de Estados Unidos. El Comando Norte de Estados Unidos (NORTHCOM) sometió formalmente el reporte a la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), catalogado como DOW-UAP-PR116.\n\nA diferencia de la inmensa mayoría de los expedientes de este corpus, este viene acompañado de un informe de debrief con contenido descriptivo sustancial: 'Range Fouler Debrief', identificado como DOW-UAP-D091. El informe describe el fenómeno con un nivel de detalle inusual: color 'más oscuro, entre marrón y rojizo'; altura estimada de 'aproximadamente 12 a 15 pies'; comportamiento de 'viajar con el viento'; y, explícitamente, que el objeto 'no maniobraba ni cambiaba de dirección'. La conclusión del propio observador, citada en el informe, es que el objeto 'se asemejaba a un globo grande, algo deformado'.\n\nLa descripción visual oficial de la AARO, con marcas de tiempo, es breve y no contradice esa lectura: durante los 32 segundos completos, 'el sensor hace zoom y gira para mantener un área de contraste generalmente dentro del centro del encuadre'. No hay maniobras erráticas, cambios de velocidad ni comportamiento que la propia descripción instrumental destaque como inusual — consistente con un objeto que se desplaza pasivamente arrastrado por el viento, tal como describe el debrief.\n\nEl material se liberó en el cuarto lote de PURSUE (10 de julio de 2026), sin que la ficha pública ofrezca coordenadas exactas, fecha precisa dentro de 2020, ni identificación de la plataforma observadora más allá de su pertenencia al área de responsabilidad de NORTHCOM.",
+  "whatHappened_en": "At some point in 2020, an infrared sensor aboard a U.S. military platform recorded 32 seconds of footage over the Atlantic Ocean, off the U.S. East Coast. U.S. Northern Command (NORTHCOM) formally submitted the report to the All-domain Anomaly Resolution Office (AARO), catalogued as DOW-UAP-PR116.\n\nUnlike the vast majority of files in this corpus, this one comes with a debrief report carrying substantial descriptive content: a 'Range Fouler Debrief,' identified as DOW-UAP-D091. The report describes the phenomenon with an unusual level of detail: color 'darker, maroonish'; estimated height of 'approximately 12 to 15 feet'; behavior of 'traveling with the wind'; and, explicitly, that the object 'did not maneuver or change direction.' The observer's own conclusion, quoted in the report, is that the object 'appeared similar to a large, somewhat deformed balloon.'\n\nAARO's official timestamped visual description is brief and does not contradict that reading: for the full 32 seconds, 'the sensor zooms and pans to keep an area of contrast generally within the center of the frame.' There are no erratic maneuvers, speed changes, or behavior the instrumental description itself flags as unusual — consistent with an object passively drifting with the wind, as the debrief describes.\n\nThe material was released in PURSUE's fourth drop (July 10, 2026), with the public record offering no exact coordinates, no precise date within 2020, and no identification of the observing platform beyond its being within NORTHCOM's area of responsibility.",
+  "whyMatters": "Este expediente vale precisamente porque no es un misterio. En un corpus donde la mayoría de los casos llegan sin contexto —solo un título y un clip breve— este trae un debrief donde el propio testigo, con el objeto delante, ya ofreció la lectura mundana más simple: un globo grande y deformado, arrastrado por el viento, sin maniobrar. La descripción instrumental de la AARO —un sensor que sigue plácidamente un área de contraste durante 32 segundos, sin comportamiento inusual señalado— no contradice esa lectura en ningún punto.\n\nSu función en el corpus es de contrapeso metodológico, no de misterio adicional. Junto a casos como el de los tres 'UAP' resueltos como aeronaves comerciales por radar ([[western-us-objects-2021]]) o los expedientes de la serie AARO Case Resolution ([[aaro-case-resolution-reports]]), este archivo recuerda que la mayoría del material 'UAP' que las fuerzas armadas reportan corresponde a fenómenos mundanos correctamente identificados por observadores razonables — y que la etiqueta 'unresolved' en el título de un archivo puede significar simplemente que nadie completó el trámite administrativo de cerrar el caso formalmente, no que el fenómeno sea inexplicable.\n\nEl detalle de la altura estimada —'12 a 15 pies'— es, además, coherente con globos meteorológicos o de investigación de gran tamaño, que pueden alcanzar varios metros de diámetro al expandirse en altitud, y el color 'marrón rojizo' es compatible con el material de neopreno o poliéster pigmentado usado en globos de sondeo comerciales, que a menudo se degradan o deforman de manera visible tras el lanzamiento. Es, en suma, el tipo de caso que ancla el extremo 'mundano_natural' de la distribución MECE del corpus con una base documental más sólida que la simple ausencia de anomalía.",
+  "whyMatters_en": "This file's value lies precisely in not being a mystery. In a corpus where most cases arrive with no context —just a title and a brief clip— this one comes with a debrief where the witness himself, with the object in front of him, already offered the simplest mundane reading: a large, deformed balloon, drifting with the wind, not maneuvering. AARO's instrumental description —a sensor placidly tracking an area of contrast for 32 seconds, with no unusual behavior flagged— does not contradict that reading at any point.\n\nIts function in the corpus is methodological counterweight, not additional mystery. Alongside cases like the three 'UAPs' resolved as commercial aircraft via radar ([[western-us-objects-2021]]) or the AARO Case Resolution series files ([[aaro-case-resolution-reports]]), this file is a reminder that most 'UAP' material the armed forces report corresponds to mundane phenomena correctly identified by reasonable observers — and that the 'unresolved' label on a file's title can simply mean nobody completed the administrative step of formally closing the case, not that the phenomenon is inexplicable.\n\nThe estimated-height detail —'12 to 15 feet'— is also consistent with large weather or research balloons, which can reach several meters in diameter as they expand at altitude, and the 'maroonish' color is compatible with pigmented neoprene or polyester material used in commercial sounding balloons, which often visibly degrade or deform after launch. It is, in sum, the kind of case that anchors the 'mundano_natural' end of the corpus's MECE distribution with a documentary basis stronger than mere absence of anomaly.",
+  "evidence": [
+    "2020: sensor IR de plataforma militar estadounidense sigue un objeto sobre el Atlántico durante 32 segundos",
+    "NORTHCOM sometió el reporte formalmente a la AARO (DOW-UAP-PR116)",
+    "Debrief acompañante DOW-UAP-D091: color 'marrón rojizo', altura estimada '12-15 pies', 'viaja con el viento', 'no maniobra ni cambia de dirección'",
+    "Conclusión del propio observador citada en el debrief: 'se asemeja a un globo grande, algo deformado'",
+    "Descripción visual oficial de la AARO: sin maniobras ni comportamiento inusual durante los 32 segundos completos",
+    "Publicado en PURSUE Release 04 (10 de julio de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2020: IR sensor aboard a U.S. military platform tracks an object over the Atlantic for 32 seconds",
+    "NORTHCOM formally submitted the report to AARO (DOW-UAP-PR116)",
+    "Accompanying debrief DOW-UAP-D091: 'maroonish' color, estimated height '12-15 feet,' 'travels with the wind,' 'does not maneuver or change direction'",
+    "The observer's own conclusion, quoted in the debrief: 'appears similar to a large, somewhat deformed balloon'",
+    "AARO's official visual description: no maneuvers or unusual behavior during the full 32 seconds",
+    "Released in PURSUE Release 04 (July 10, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR116, con el debrief DOW-UAP-D091 citado por la AARO (PURSUE Release 04)",
+      "url": "https://www.dvidshub.net/video/1014124",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la cita completa del debrief y la descripción visual citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR116, with the DOW-UAP-D091 debrief quoted by AARO (PURSUE Release 04)",
+      "url": "https://www.dvidshub.net/video/1014124",
+      "note": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened."
+    }
+  ]
+}
