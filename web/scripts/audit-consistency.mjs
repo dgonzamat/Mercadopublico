@@ -1316,6 +1316,66 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
+// ─── 9r-quinquies. RULE E34: caso `incident` que derivó a agregador (ERROR) ─
+//
+// Un `incident` responde "qué pasó ESA vez" y su `posterior` responde "qué era
+// ESE objeto" — por eso entra a la partición MECE del corpus con peso 1
+// (`meceModel.ts` solo excluye los `document`). Si un caso acumula documentos
+// de teatros distintos ya no describe un evento sino una COLECCIÓN, y ese
+// posterior promedia objetos que no tienen nada que ver entre sí: deja de ser
+// un juicio y pasa a ser un borrón que además mueve los porcentajes de
+// /probabilidades.
+//
+// Pasó una vez y por deriva silenciosa (`dow-centcom-2020`, jul-ago 2026): el
+// caso nació con alcance estrecho —Golfo Pérsico, 2020-2024— y cuando PURSUE
+// Release 01 soltó ~40 partes de CENTCOM + INDOPACOM + EUCOM se colgaron ahí
+// porque era el contenedor más cercano que ya existía (adjuntar es barato;
+// crear casos es caro). El contenido creció hasta 18 teatros y 2016-2025; el
+// `name`, `location`, los años y el `category` se quedaron congelados en el
+// alcance viejo. Su propio summary lo confesaba —"abarca AHORA … varios
+// teatros"— y ninguna regla lo veía, porque las ~34 sondas verifican schema,
+// sumas, enlaces e idioma, pero NINGUNA compara los documentos de un caso
+// contra el alcance que el caso declara. Se corrigió reclasificándolo a
+// `document`, que es lo que ya eran todos los demás agregadores del corpus.
+//
+// La presión que lo causó sigue intacta con cada release nueva, así que la
+// lección se mecaniza. Es ERROR y no WARN porque el caso sano es trivial: al
+// escribir agosto 2026, 0 de los 343 casos lo violan (todo `incident` tiene
+// documentos de un solo teatro), así que un rojo aquí siempre es una deriva
+// real, no ruido acumulado. El umbral es ≥3 teatros distintos, no ≥2: un
+// evento genuino puede tocar dos tokens vecinos legítimamente (el Golfo de
+// Omán está en Medio Oriente; "Brazil"/"Bahia" son el mismo lugar), y el caso
+// que motivó la regla tenía 18 — el margen es enorme, así que la holgura no
+// cuesta cobertura.
+const THEATER_TOKENS = [
+  "arabian-gulf", "arabian-sea", "persian-gulf", "strait-of-hormuz", "gulf-of-aden",
+  "east-china-sea", "south-china-sea", "yellow-sea", "mediterranean",
+  "syria", "iraq", "iran", "greece", "japan", "djibouti", "united-arab-emirates",
+  "kuwait", "indopacom", "afghanistan", "kabul", "kazakhstan",
+];
+const MAX_THEATERS_PER_INCIDENT = 2; // ≥3 dispara
+
+for (const c of cases) {
+  if (c.category === "document") continue; // los agregadores VIVEN aquí, es su sitio
+  const docs = Array.isArray(c.documents) ? c.documents : [];
+  if (docs.length === 0) continue;
+  const theaters = new Set();
+  for (const d of docs) {
+    const blob = `${d.src ?? ""} ${d.title ?? ""} ${d.title_en ?? ""}`
+      .toLowerCase()
+      .replace(/\s+/g, "-");
+    for (const t of THEATER_TOKENS) if (blob.includes(t)) theaters.add(t);
+  }
+  if (theaters.size > MAX_THEATERS_PER_INCIDENT) {
+    record(
+      "ERROR",
+      path.join(root, "data", "cases", `${c.id}.json`),
+      0,
+      `E34 alcance: el caso \`${c.id}\` es \`category:"${c.category}"\` pero sus ${docs.length} documentos abarcan ${theaters.size} teatros distintos (${[...theaters].sort().join(", ")}) — ya no es un evento sino una colección, y su \`posterior\` estaría promediando objetos sin relación mientras entra a la partición MECE con peso 1. Reclasificar a \`category:"document"\` (como el resto de los agregadores del corpus) o partirlo en casos por incidente.`,
+    );
+  }
+}
+
 // ─── 9s. RULE E28: frescura de la línea base de link rot (WARN) ──────────
 // Esta auditoría es node-plain SIN RED: no puede verificar si las fuentes
 // del corpus siguen vivas. Quien lo hace es `check-links.mjs --baseline` en
