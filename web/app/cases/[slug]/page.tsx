@@ -184,6 +184,28 @@ export async function CaseDetailPage(
   const hasSources = Boolean(c.sources && c.sources.length > 0);
   const hasRichContent = hasNarrative || hasEvidence || hasSources;
 
+  // VISOR · todo el video embebido; los PDF/imagen, con tope.
+  //
+  // Cada visor de PDF ocupa 60-80vh, así que los casos agregadores se volvían
+  // inusables: `dow-centcom-2020` (39 PDF + 15 video) medía ~30 pantallas de
+  // scroll en móvil, casi todas páginas redactadas en negro, y montaba 39
+  // visores react-pdf que descargan su PDF. Los que pasan del tope van a un
+  // índice compacto en un <details> nativo (sin JS, funciona igual en el
+  // export estático): cada documento conserva su enlace directo, pero deja de
+  // ser un muro.
+  //
+  // El tope NO aplica al video, a propósito. Es el asset más escaso del corpus
+  // y la evidencia que la gente viene a ver; mandarlo al índice de texto lo
+  // vuelve invisible, que es justo el problema que este bloque resuelve. Lo
+  // que sobra no es "documentos" sino visores gigantes de páginas tachadas.
+  // El sort es estable, así que el orden autoral del JSON se conserva.
+  const INLINE_NONVIDEO_MAX = 4;
+  const docsAll = c.documents ?? [];
+  const docsVideo = docsAll.filter((d) => d.type === "video");
+  const docsOther = docsAll.filter((d) => d.type !== "video");
+  const docsInline = [...docsVideo, ...docsOther.slice(0, INLINE_NONVIDEO_MAX)];
+  const docsRest = docsOther.slice(INLINE_NONVIDEO_MAX);
+
   const whatHappenedParas = c.whatHappened
     ? c.whatHappened.split("\n\n")
     : [];
@@ -389,12 +411,9 @@ export async function CaseDetailPage(
           visor cliente (PdfDoc → react-pdf, dynamic ssr:false) que funciona
           también en móvil; las imágenes siguen como <img> server.
 
-          El VIDEO va primero (orden estable dentro de cada tipo, así que el
-          orden autoral del JSON se conserva): en los casos agregadores el
-          visor acumula decenas de PDF —dow-centcom-2020 llega a 40— y un
-          video anexado al final queda materialmente inalcanzable, a 40
-          visores de scroll. Es además el asset más escaso y el que más
-          aporta, así que encabeza. */}
+          El VIDEO va primero y solo se embeben los primeros
+          INLINE_DOCS_MAX; el resto va a un índice compacto. Ver el comentario
+          donde se calculan docsInline/docsRest. */}
       {c.documents && c.documents.length > 0 && (
         <section className="space-y-6">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
@@ -403,10 +422,7 @@ export async function CaseDetailPage(
               en="Primary documents · viewer"
             />
           </p>
-          {[...c.documents]
-            .sort(
-              (a, b) => (a.type === "video" ? 0 : 1) - (b.type === "video" ? 0 : 1),
-            )
+          {docsInline
             .map((doc, i) => (
               <figure key={i} className="space-y-2">
                 {doc.type === "pdf" ? (
@@ -445,6 +461,43 @@ export async function CaseDetailPage(
                 </figcaption>
               </figure>
             ))}
+
+          {/* Índice compacto del resto. <details> nativo: sin JS, así que
+              funciona igual en el export estático y en móvil. Cada documento
+              conserva su enlace directo, que es lo que un agregador necesita
+              — un índice de 39 entradas se recorre; 39 visores de 80vh no. */}
+          {docsRest.length > 0 && (
+            <details className="border border-border bg-panel/50 p-4">
+              <summary className="cursor-pointer font-mono text-xs uppercase tracking-widest text-text marker:text-accent">
+                <T
+                  locale={locale}
+                  es={`Ver los otros ${docsRest.length} documentos`}
+                  en={`Show the other ${docsRest.length} documents`}
+                />
+              </summary>
+              <ul className="mt-4 space-y-3 border-t border-border pt-4">
+                {docsRest.map((doc, i) => (
+                  <li key={i} className="space-y-1">
+                    <p className="text-sm leading-snug text-text">
+                      <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
+                    </p>
+                    <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                      {[doc.source, doc.license].filter(Boolean).join(" · ")}
+                      {" · "}
+                      <a
+                        href={doc.fallbackUrl ?? doc.src}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
+                      >
+                        <T locale={locale} es="abrir documento" en="open document" />
+                      </a>
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
         </section>
       )}
 
