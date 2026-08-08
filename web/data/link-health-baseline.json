@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-07-21",
-  "note": "Línea base de link rot conocido. Regenerar solo tras arreglar citas: node scripts/check-links.mjs --update-baseline. El gate (--baseline) falla con roturas NUEVAS, no con estas.",
+  "note": "Solo roturas duras (4xx/5xx excepto 401/403/406/429). Los códigos de muro de pago y anti-bot NO son link rot: el documento sigue ahí y solo falla nuestro acceso, así que se reportan aparte como 'dudosas'.",
   "totalUrls": 717,
-  "deadCount": 38,
+  "deadCount": 36,
   "dead": {
     "http://www.nicap.org/731018coyne_dir.htm": {
       "status": 404,
@@ -155,12 +155,6 @@
         "case:hottel-memo-1950"
       ]
     },
-    "https://www.huffpost.com/entry/chile-navy-ufo_n_5878fa90e4b0eb9e49bfb4b2": {
-      "status": 406,
-      "origins": [
-        "case:naval-chile-2014"
-      ]
-    },
     "https://www.nasa.gov/news-release/nasa-to-announce-results-findings-of-uap-independent-study/": {
       "status": 404,
       "origins": [
@@ -177,12 +171,6 @@
       "status": 404,
       "origins": [
         "case:aawsap-skinwalker-2008"
-      ]
-    },
-    "https://www.reuters.com": {
-      "status": 401,
-      "origins": [
-        "case:japan-jai-directive-2020"
       ]
     },
     "https://www.silvarecord.com/2019/06/13/wilson-davis-memo/": {

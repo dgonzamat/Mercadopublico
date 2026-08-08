@@ -105,7 +105,18 @@ async function probe(url) {
 const CONCURRENCY = 8;
 const hardDead = []; // {url, status, origins} — 4xx/5xx: rotura real del recurso
 const transient = []; // {url, error, origins} — timeout / dominio caído: puede ser pasajero
-const dubious = []; // {url, status, origins} — 403/429: anti-bot, probablemente vivas
+const dubious = []; // {url, status, origins} — ver NOT_DEAD: no son link rot
+
+// Códigos que NO son rotura del recurso: el documento sigue ahí, lo que falla es
+// nuestro acceso. Ya estaban 403 (anti-bot) y 429 (rate limit); se suman:
+//   401 — muro de pago / autenticación (WSJ). El artículo existe.
+//   406 — Not Acceptable: rechazo de UA no-navegador, misma familia que el 403
+//         (CBS lo devuelve donde otros devuelven 403).
+// Ambos entraban al gate como "rotura nueva" y disparaban el issue diario sin
+// que hubiera nada que arreglar — contradiciendo la propia regla del gate, que
+// excluye el anti-bot. Medido en el issue #746: de 7 "roturas nuevas", una era
+// 406 y otra 401.
+const NOT_DEAD = new Set([401, 403, 406, 429]);
 const alive = new Set();
 let done = 0;
 
@@ -117,9 +128,9 @@ async function worker(queue) {
     const origins = [...urls.get(url)];
     if (r.status === 0) {
       transient.push({ url, error: r.error, origins });
-    } else if (r.status >= 400 && r.status !== 403 && r.status !== 429) {
+    } else if (r.status >= 400 && !NOT_DEAD.has(r.status)) {
       hardDead.push({ url, status: r.status, origins });
-    } else if (r.status === 403 || r.status === 429) {
+    } else if (NOT_DEAD.has(r.status)) {
       dubious.push({ url, status: r.status, origins });
     } else {
       alive.add(url);
@@ -156,7 +167,7 @@ if (transient.length) {
 if (dubious.length) {
   console.log("");
   console.log(
-    `🟡 ${dubious.length} dudosas (403/429 — bloqueo de bot, probablemente vivas; revisar a mano):`,
+    `🟡 ${dubious.length} dudosas (401/403/406/429 — muro de pago o bloqueo de bot, probablemente vivas; revisar a mano):`,
   );
   for (const d of dubious.slice(0, 40)) console.log("   ? " + fmt(d));
   if (dubious.length > 40) console.log(`   … y ${dubious.length - 40} más`);

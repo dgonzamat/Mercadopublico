@@ -260,9 +260,9 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 ## Deuda pendiente · ~38 fuentes rotas (hard 4xx) en el corpus (baseline 21 jul 2026)
 
-`data/link-health-baseline.json` (regenerado 21 jul 2026): **38 rotas duras**, desglosadas en **36 × `404`**, 1 × `401` y 1 × `406`. (La cifra vieja «74» de este doc era un escaneo puntual anterior que sumaba `fetch failed`/`timeout`/`403` al conteo; el gate solo indexa lo duro 4xx/5xx, que es el set accionable. Cifra viva = `deadCount` del baseline.)
+`data/link-health-baseline.json` (podado ago 2026): **36 rotas duras**, todas `404`. (La cifra vieja «74» de este doc era un escaneo puntual anterior que sumaba `fetch failed`/`timeout`/`403` al conteo; el gate solo indexa lo duro, que es el set accionable. Cifra viva = `deadCount` del baseline.)
 
-**Los `403` NO cuentan como rotos**: son bloqueos anti-bot (NYT, congress.gov, ResearchGate, thehill, newsnation). Para un humano abren bien; la sonda ya los marca `?` en vez de `✗`. No "arreglarlos".
+**Los `401/403/406/429` NO cuentan como rotos** (constante `NOT_DEAD` en `check-links.mjs`): son muro de pago (WSJ, Reuters), anti-bot (NYT, congress.gov, CBS, HuffPost) o rate limit. El documento sigue ahí; lo que falla es *nuestro* acceso. La sonda los marca `?` en vez de `✗`. No "arreglarlos". El `406` y el `401` se sumaron en ago 2026 tras verlos disparar el issue diario como si fueran roturas nuevas —CBS devuelve 406 donde otros devuelven 403— y se podaron del baseline los dos que estaban congelados ahí.
 
 **Por qué importa más que un bug de UI**: la propuesta del sitio es *evidencia institucional con fuentes primarias verificables*. Las citas muertas erosionan justo eso. Es la deuda de contenido más seria detectada hasta ahora — por encima del backlog visual E21.
 
@@ -270,7 +270,8 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 - **`npm run check-links:gate`** (`--baseline`) — compara contra `data/link-health-baseline.json`, una **línea base congelada de las roturas ya conocidas**, y falla (exit 1) **solo con las NUEVAS**. Un check binario sobre el total sería rojo permanente mientras el corpus arrastre link rot, y se ignoraría.
 - **Indexada POR URL, no por conteo**: si se arregla una cita y se rompe otra, el total no se mueve — un gate por conteo no vería nada. Además reporta las que **revivieron**, para que la línea base baje (`npm run check-links:baseline` la recongela).
-- **Solo entra al gate lo duro (4xx/5xx)**. Los `timeout`/`fetch failed` se reportan aparte (pueden ser caídas pasajeras; harían el check intermitente) y los `403` tampoco (anti-bot).
+- **Solo entra al gate lo duro (4xx/5xx)**. Los `timeout`/`fetch failed` se reportan aparte (pueden ser caídas pasajeras; harían el check intermitente) y los `401/403/406/429` tampoco (muro de pago / anti-bot / rate limit).
+- **Un issue PERSISTENTE, no uno por día** (ago 2026). El workflow busca el issue abierto por su marcador HTML (`<!-- link-rot-gate -->`), lo actualiza si existe y solo abre uno nuevo si no; cuando el gate vuelve a verde, lo comenta y lo cierra. Antes abría uno por corrida: se acumularon **82 issues automáticas abiertas** y el gate pasó a ser ruido de fondo — el mismo fracaso que la línea base buscaba evitar («un check rojo permanente se ignora»), reintroducido por la capa de notificación en vez de por la de medición. Mismo patrón en el gate de DVIDS (`<!-- dvids-embed-gate -->`). **Lección general: al construir un guardrail, la política de notificación es parte del guardrail** — una sonda correcta que grita todos los días acaba silenciada igual que una incorrecta.
 
 Corre en **`daily-audit.yml`**, no en el prebuild: necesita red, y las sondas de build son node-plain offline a propósito. Abre issue con label `audit`/`automated` al detectar roturas nuevas.
 
