@@ -1,0 +1,78 @@
+{
+  "id": "football-shaped-projections-2024",
+  "num": 361,
+  "pursueReleases": [1],
+  "name": "Un cuerpo ovalado con tres proyecciones radiales, visto 9 segundos",
+  "name_en": "An oval body with three radial projections, seen for 9 seconds",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Área de responsabilidad de INDOPACOM (ubicación exacta no revelada)",
+  "flag": "🌏",
+  "location": {
+    "lat": 15,
+    "lng": 140,
+    "place": "Océano Pacífico occidental, área INDOPACOM (ubicación exacta no revelada)",
+    "place_en": "Western Pacific Ocean, INDOPACOM area (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.08,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.05,
+    "indet": 0.27
+  },
+  "summary": "En 2024, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área de responsabilidad del Comando Indo-Pacífico registró 9 segundos de un objeto que la AARO describe con inusual precisión geométrica: 'un cuerpo con forma de balón de fútbol americano, con tres proyecciones radiales — una orientada verticalmente, y dos orientadas hacia abajo en un ángulo de 45 grados respecto al eje mayor de la masa principal'. Es una de las descripciones morfológicas más detalladas y geométricamente específicas del corpus, pero también una de las más breves: nueve segundos de metraje, sin informe de misión, sin declaración del reportante y sin ningún otro dato de contexto.",
+  "summary_en": "In 2024, an infrared sensor aboard a U.S. military platform within Indo-Pacific Command's area of responsibility recorded 9 seconds of an object AARO describes with unusual geometric precision: 'a body resembling a football-shaped mass, with three radial projections — one oriented vertically, and two oriented downward at a 45-degree angle relative to the major axis of the main mass.' It is one of the most detailed and geometrically specific morphological descriptions in the corpus, but also one of the briefest: nine seconds of footage, with no mission report, no reporter statement, and no other contextual data.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006106",
+      "type": "video",
+      "title": "DOW-UAP-PR46 — sensor IR enfoca un cuerpo ovalado con tres proyecciones radiales (9 s)",
+      "title_en": "DOW-UAP-PR46 — IR sensor focuses on an oval body with three radial projections (9 s)",
+      "source": "US Indo-Pacific Command, reportado a la AARO, vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006106"
+    }
+  ],
+  "whatHappened": "En algún momento de 2024, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró 9 segundos de metraje dentro del área de responsabilidad del Comando Indo-Pacífico de Estados Unidos (INDOPACOM). El comando sometió formalmente el reporte a la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), catalogado como DOW-UAP-PR46. Como en la mayoría de los expedientes de este lote, el reportante original no dejó ninguna descripción oral ni escrita de lo observado.\n\nLo que distingue a este expediente es la precisión geométrica de la descripción visual que la propia AARO redactó al procesar el video para su liberación. Durante los 9 segundos completos, 'el sensor se enfoca en un área de contraste que se asemeja a un cuerpo con forma de balón de fútbol americano, con tres proyecciones radiales: una orientada verticalmente, y dos orientadas hacia abajo en un ángulo de 45 grados respecto al eje mayor de la masa principal'. Es una de las pocas descripciones del corpus que especifica no solo una forma general, sino la orientación angular relativa de rasgos estructurales del objeto — un nivel de detalle que sugiere que el analista pudo distinguir la geometría con relativa claridad, pese a la brevedad del clip.\n\nMás allá de esa descripción, no hay información pública adicional: sin coordenadas, sin identificación de plataforma, sin fecha exacta dentro de 2024, sin informe de misión ni declaración de tripulación. El material se liberó en la primera entrega de PURSUE (8 de mayo de 2026).",
+  "whatHappened_en": "At some point in 2024, an infrared sensor aboard a U.S. military platform recorded 9 seconds of footage within the area of responsibility of U.S. Indo-Pacific Command (INDOPACOM). The command formally submitted the report to the All-domain Anomaly Resolution Office (AARO), catalogued as DOW-UAP-PR46. As with most files in this batch, the original reporter left no oral or written description of what was observed.\n\nWhat sets this file apart is the geometric precision of the visual description AARO itself wrote while processing the video for release. For the full 9 seconds, 'the sensor focuses on an area of contrast that resembles a football-shaped body, with three radial projections: one oriented vertically, and two oriented downward at a 45-degree angle relative to the major axis of the main mass.' It is one of the few descriptions in the corpus specifying not just a general shape but the relative angular orientation of structural features on the object — a level of detail suggesting the analyst could distinguish the geometry with relative clarity, despite the clip's brevity.\n\nBeyond that description, there is no additional public information: no coordinates, no platform identification, no exact date within 2024, no mission report, and no crew statement. The material was released in PURSUE's first drop (May 8, 2026).",
+  "whyMatters": "El valor de este expediente está en la tensión entre precisión y brevedad. Nueve segundos es uno de los clips más cortos del corpus, y sin embargo produjo una de las descripciones morfológicas más específicas: no solo una forma ('ovalada'), sino una estructura con tres apéndices y sus ángulos relativos. Esa combinación es inusual — la mayoría de los expedientes breves del corpus generan descripciones vagas ('un área de contraste'), mientras que las descripciones detalladas suelen venir de clips más largos que permiten al analista observar el objeto desde múltiples ángulos o distancias.\n\nLa lectura prosaica más directa para un cuerpo ovalado con proyecciones angulares es un dron o vehículo no tripulado de diseño no convencional —cada vez más variados y desplegados en el Pacífico occidental en la década de 2020—, visto de cerca o con buena resolución térmica el tiempo suficiente para que sus componentes estructurales (posiblemente antenas, sensores o brazos de rotor) fueran distinguibles como 'proyecciones'. Un globo con múltiples líneas de amarre o carga colgante en distintos ángulos —el mismo tipo de configuración que aparece en el globo del Atlántico ([[atlantic-ocean-balloon-2020]])— también podría producir una silueta con proyecciones asimétricas, aunque la disposición geométrica específica (una vertical, dos a 45 grados) es más regular de lo que la deriva pasiva de un globo típicamente produce.\n\nLo que falta para pesar cualquiera de esas lecturas es exactamente lo que falta en casi todo este lote: telemetría, distancia estimada, y cualquier indicio de comportamiento —velocidad, maniobra, estabilidad— más allá de los 9 segundos que capturó el sensor. Con una sola observación estática y sin movimiento descrito, ni la hipótesis de plataforma no tripulada ni la de globo pueden confirmarse ni descartarse.\n\nEl expediente también sirve como recordatorio de un límite estructural que atraviesa buena parte de este corpus: la resolución angular de un sensor infrarrojo militar, incluso cuando produce una imagen nítida, no equivale a una identificación. Una silueta perfectamente descrita —ovalada, con tres proyecciones en ángulos precisos— sigue sin decir de qué material está hecho el objeto, cuál es su tamaño real, ni a qué distancia del sensor se encontraba; sin una referencia de escala independiente, la misma silueta podría corresponder a un objeto pequeño y cercano o a uno grande y lejano. Es la misma limitación epistémica que afecta a casi todos los expedientes de este lote liberados sin informe de misión: alta fidelidad visual momentánea, sin el contexto operacional que permitiría convertir esa fidelidad en una conclusión.",
+  "whyMatters_en": "This file's value lies in the tension between precision and brevity. Nine seconds is one of the shortest clips in the corpus, yet it produced one of the most specific morphological descriptions: not just a shape ('oval'), but a structure with three appendages and their relative angles. That combination is unusual — most brief files in the corpus generate vague descriptions ('an area of contrast'), while detailed descriptions usually come from longer clips that let the analyst observe the object from multiple angles or distances.\n\nThe most direct prosaic reading for an oval body with angular projections is an unconventionally designed drone or uncrewed vehicle —increasingly varied and deployed in the western Pacific through the 2020s— seen up close or with good enough thermal resolution long enough for its structural components (possibly antennas, sensors, or rotor arms) to be distinguishable as 'projections.' A balloon with multiple tether lines or hanging payload at different angles —the same kind of configuration seen in the Atlantic balloon case ([[atlantic-ocean-balloon-2020]])— could also produce an asymmetric-projection silhouette, though the specific geometric arrangement (one vertical, two at 45 degrees) is more regular than a typical balloon's passive drift usually produces.\n\nWhat is missing to weigh either reading is exactly what is missing from nearly this entire batch: telemetry, estimated distance, and any indication of behavior —speed, maneuver, stability— beyond the 9 seconds the sensor captured. With a single static observation and no described movement, neither the uncrewed-platform hypothesis nor the balloon hypothesis can be confirmed or ruled out.\n\nThe file also serves as a reminder of a structural limit running through much of this corpus: a military infrared sensor's angular resolution, even when it produces a sharp image, is not the same as an identification. A perfectly described silhouette —oval, with three projections at precise angles— still doesn't say what material the object is made of, its actual size, or how far it was from the sensor; without an independent scale reference, the same silhouette could correspond to a small, nearby object or a large, distant one. It is the same epistemic limitation affecting nearly every file in this batch released without a mission report: high momentary visual fidelity, without the operational context that would turn that fidelity into a conclusion.",
+  "evidence": [
+    "2024: sensor IR de una plataforma militar de INDOPACOM registra 9 segundos de metraje",
+    "El reportante original no dejó descripción oral ni escrita de la observación",
+    "Descripción visual oficial de la AARO: 'cuerpo con forma de balón de fútbol americano, con tres proyecciones radiales' — una vertical, dos a 45°",
+    "Sin coordenadas, plataforma, fecha exacta, informe de misión ni declaración de tripulación",
+    "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2024: IR sensor aboard an INDOPACOM military platform records 9 seconds of footage",
+    "The original reporter left no oral or written description of the observation",
+    "AARO's official visual description: 'football-shaped body, with three radial projections' — one vertical, two at 45°",
+    "No coordinates, platform, exact date, mission report, or crew statement",
+    "Released in PURSUE Release 01 (May 8, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR46, con la descripción visual oficial de la AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006106",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual citada en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR46, with AARO's official visual description (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006106",
+      "note": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
+    }
+  ]
+}

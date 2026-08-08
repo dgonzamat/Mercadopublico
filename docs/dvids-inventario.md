@@ -13,12 +13,12 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
-| **Release 01** | 8 may 2026 | 27 | 14 |
+| **Release 01** | 8 may 2026 | 27 | 17 |
 | **Release 02** | 22 may 2026 | 50 | 19 |
 | **Release 04** | 10 jul 2026 | 19 | 3 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
 | **Release 03** | 12 jun 2026 | **0** | — |
-| | | **111** | **42** |
+| | | **111** | **45** |
 
 > El **Release 03 no publicó video** en DVIDS: ninguno de los 111 tiene fecha de publicación del 12 de junio de 2026.
 
@@ -40,7 +40,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 - [x] `PR35` · 10.01.2023 — unresolved-uap-report-greece-october-2023 → `dow-centcom-2020`, `greece-sea-skimming-2023` · [ver](https://www.dvidshub.net/video/1006082)
 - [x] `PR36` · 05.01.2020 — unresolved-uap-report-middle-east-may-2020 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006083)
 - [ ] `PR37` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006087)
-- [ ] `PR38` · 01.01.2013 — unresolved-uap-report-middle-east-2013 · [ver](https://www.dvidshub.net/video/1006088)
+- [x] `PR38` · 01.01.2013 — unresolved-uap-report-middle-east-2013 → `eight-pointed-star-2013` · [ver](https://www.dvidshub.net/video/1006088)
 - [ ] `PR39` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006089)
 - [ ] `PR40` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006093)
 - [ ] `PR41` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006094)
@@ -48,8 +48,8 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 - [ ] `PR43` · 01.01.2025 — unresolved-uap-report-africa-2025 · [ver](https://www.dvidshub.net/video/1006159)
 - [ ] `PR44` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006104)
 - [ ] `PR45` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006105)
-- [ ] `PR46` · 01.01.2024 — unresolved-uap-report-indopacom-2024 · [ver](https://www.dvidshub.net/video/1006106)
-- [ ] `PR47` · 01.01.2023 — unresolved-uap-report-indopacom-2023 · [ver](https://www.dvidshub.net/video/1006107)
+- [x] `PR46` · 01.01.2024 — unresolved-uap-report-indopacom-2024 → `football-shaped-projections-2024` · [ver](https://www.dvidshub.net/video/1006106)
+- [x] `PR47` · 01.01.2023 — unresolved-uap-report-indopacom-2023 → `three-objects-fixed-formation-2023` · [ver](https://www.dvidshub.net/video/1006107)
 - [ ] `PR48` · 01.01.2024 — unresolved-uap-report-indopacom-2024 · [ver](https://www.dvidshub.net/video/1006110)
 - [ ] `PR49` · 01.01.2026 — unresolved-uap-report-department-army-2026 · [ver](https://www.dvidshub.net/video/1006111)
 
