@@ -91,3 +91,36 @@ jobs:
               body: lines.join('\n'),
               labels: ['discover', 'automated'],
             });
+
+            // PODA. A diferencia del gate de link rot —que repite la misma
+            // alarma y por eso se consolidó en un issue persistente—, esto es
+            // un FEED: cada día trae candidatos distintos, así que consolidar
+            // perdería historial. El problema es el otro: sin poda se acumulan
+            // indefinidamente (62 abiertas a ago 2026, una diaria desde el 5
+            // de junio) y el feed deja de leerse. Los candidatos son además
+            // perecederos: uno de hace un mes que nadie tomó no se va a tomar.
+            // Se cierran los de más de PRUNE_DAYS, que es reversible —quedan
+            // cerrados, no borrados, y siguen siendo buscables—.
+            const PRUNE_DAYS = 14;
+            const cutoff = Date.now() - PRUNE_DAYS * 24 * 60 * 60 * 1000;
+            const { data: openDiscover } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'discover',
+              per_page: 100,
+            });
+            let pruned = 0;
+            for (const issue of openDiscover) {
+              if (new Date(issue.created_at).getTime() >= cutoff) continue;
+              if (issue.title === `discover: candidatos UAP (${today})`) continue;
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'not_planned',
+              });
+              pruned++;
+            }
+            if (pruned) core.info(`Podados ${pruned} issues de discover con más de ${PRUNE_DAYS} días.`);

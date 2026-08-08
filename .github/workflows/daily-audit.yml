@@ -84,8 +84,12 @@ jobs:
             const fs = require('fs');
             const report = fs.readFileSync('/tmp/dvids.log', 'utf8');
             const today = new Date().toISOString().slice(0, 10);
+            const MARKER = '<!-- dvids-embed-gate -->';
             const body = [
+              MARKER,
               'Uno o más videos de DVIDS embebidos en el visor **dejaron de ser embebibles**.',
+              '',
+              `Última corrida: **${today}**`,
               '',
               'Es el riesgo asumido al admitir un origen de tercero: DVIDS puede cambiar su política de framing unilateralmente y el iframe queda en blanco sin romper el build. Ruta: revisar si apareció una rendition que quepa en el bucket Supabase para rehostear, o degradar el documento a enlace en `sources`.',
               '',
@@ -99,15 +103,42 @@ jobs:
               '',
               `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             ].join('\n');
-            await github.rest.issues.create({
+
+            // Issue persistente, mismo patrón que el gate de link rot: se
+            // actualiza en vez de acumular uno por día.
+            const { data: open } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `dvids: embeds de video rotos (${today})`,
-              body,
-              labels: ['audit', 'automated'],
+              state: 'open',
+              labels: 'audit',
+              per_page: 100,
             });
+            const existing = open.find((i) => (i.body || '').includes(MARKER));
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                title: `dvids: embeds de video rotos (actualizado ${today})`,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `dvids: embeds de video rotos (actualizado ${today})`,
+                body,
+                labels: ['audit', 'automated'],
+              });
+            }
 
-      - name: Open issue on new link rot
+      # Un issue PERSISTENTE, no uno por día. Antes cada corrida abría uno
+      # nuevo: a agosto 2026 había 82 issues automáticas abiertas y el gate se
+      # había vuelto ruido de fondo — exactamente el fracaso que su diseño
+      # (línea base + solo roturas nuevas) buscaba evitar. Ahora busca el
+      # issue abierto con el marcador y lo ACTUALIZA; solo abre uno si no
+      # existe. Un hilo con historial se lee; 82 hilos idénticos no.
+      - name: Report new link rot (single persistent issue)
         if: steps.links.outputs.exit_code != '0'
         uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
@@ -115,10 +146,16 @@ jobs:
             const fs = require('fs');
             const report = fs.readFileSync('/tmp/links.log', 'utf8');
             const today = new Date().toISOString().slice(0, 10);
+            const MARKER = '<!-- link-rot-gate -->';
             const body = [
+              MARKER,
               'El gate de link rot encontró fuentes rotas **nuevas** (no estaban en la línea base).',
               '',
+              `Última corrida: **${today}**`,
+              '',
               'La propuesta del sitio es evidencia con fuentes primarias verificables, así que una cita muerta erosiona justo eso. Ruta: mover a Wayback (`web.archive.org/web/<url>`) conservando la URL original en `note` — no borrar la cita.',
+              '',
+              'Los `401/403/406/429` NO son link rot (muro de pago o bloqueo de bot) y no entran a este gate.',
               '',
               '<details><summary>Reporte completo</summary>',
               '',
@@ -130,13 +167,67 @@ jobs:
               '',
               `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             ].join('\n');
-            await github.rest.issues.create({
+
+            const { data: open } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `link rot: fuentes rotas nuevas (${today})`,
-              body,
-              labels: ['audit', 'automated'],
+              state: 'open',
+              labels: 'audit',
+              per_page: 100,
             });
+            const existing = open.find((i) => (i.body || '').includes(MARKER));
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                title: `link rot: fuentes rotas nuevas (actualizado ${today})`,
+                body,
+              });
+              core.info(`Actualizado issue #${existing.number}`);
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `link rot: fuentes rotas nuevas (actualizado ${today})`,
+                body,
+                labels: ['audit', 'automated'],
+              });
+            }
+
+      # Cuando el gate vuelve a verde, cierra el issue persistente en vez de
+      # dejarlo abierto para siempre. Sin esto el hilo único tendría el mismo
+      # problema que los 82: nadie sabe si sigue vigente.
+      - name: Close link rot issue when green
+        if: steps.links.outputs.exit_code == '0'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const MARKER = '<!-- link-rot-gate -->';
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'audit',
+              per_page: 100,
+            });
+            const existing = open.find((i) => (i.body || '').includes(MARKER));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `Gate en verde el ${new Date().toISOString().slice(0, 10)}: sin roturas nuevas sobre la línea base. Cerrando.`,
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: 'closed',
+                state_reason: 'completed',
+              });
+            }
 
       # Si la auditoría falla, abre (o reusa) un issue con el reporte.
       # Se usa el script de GitHub Actions oficial para no agregar deps.
