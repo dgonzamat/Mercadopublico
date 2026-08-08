@@ -1,0 +1,147 @@
+{
+  "id": "aaro-case-resolution-reports",
+  "num": 355,
+  "pursueReleases": [],
+  "name": "El archivo de resoluciones de la AARO: aves, globos, y lo que queda sin resolver",
+  "name_en": "AARO's case resolution archive: birds, balloons, and what stays unresolved",
+  "year_start": 2021,
+  "year_end": 2024,
+  "country": "US",
+  "country_name": "Estados Unidos / Europa / África (multi-teatro)",
+  "flag": "🌍",
+  "location": {
+    "lat": 20,
+    "lng": 10,
+    "place": "All-domain Anomaly Resolution Office (Pentágono) — archivo de resoluciones de casos, EUCOM y AFRICOM",
+    "place_en": "All-domain Anomaly Resolution Office (Pentagon) — case resolution archive, EUCOM and AFRICOM"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.02,
+    "indet": 0.31
+  },
+  "summary": "Al margen de las entregas del programa PURSUE, la AARO publica en DVIDS su propio archivo de 'UAP Case Resolution Reports' — clips numerados PR-001 en adelante, la mayoría de Europa y África, cada uno con la evaluación oficial de la oficina adjunta como texto: 'resuelto como aves migratorias', 'resuelto como globo', 'cerrado, no anómalo', 'en análisis' o 'sin resolver'. De 18 expedientes de esta serie, 6 se cerraron como aves o globos con metodología descrita —correlación con rutas migratorias, frecuencia de aleteo, velocidad y dirección del viento—, 1 se cerró como 'no anómalo' sin poder identificar el origen, y 11 permanecen sin resolver o en análisis por falta de telemetría o datos multi-sensor.",
+  "summary_en": "Separate from the PURSUE program's drops, AARO publishes its own 'UAP Case Resolution Reports' archive on DVIDS — clips numbered PR-001 onward, mostly from Europe and Africa, each with the office's official assessment attached as text: 'resolved as migratory birds,' 'resolved as balloon,' 'closed, not anomalous,' 'undergoing analysis' or 'unresolved.' Of 18 files in this series, 6 were closed as birds or balloons with described methodology —correlation with migration routes, wingbeat frequency, wind speed and direction—, 1 was closed as 'not anomalous' without identifying its origin, and 11 remain unresolved or under analysis for lack of telemetry or multi-sensor data.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/973048",
+      "type": "video",
+      "title": "PR-002 — 'Resolved as Migratory Birds', África 2024 (1:18) · ≥95% de confianza, morfología + ruta migratoria",
+      "title_en": "PR-002 — 'Resolved as Migratory Birds', Africa 2024 (1:18) · ≥95% confidence, morphology + migration route",
+      "source": "USAFRICOM vía AARO/DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/973048"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/988673",
+      "type": "video",
+      "title": "PR-016 — 'Resolved as Birds', Europa 2023 (0:25) · frecuencia de retorno IR coincide con el aleteo",
+      "title_en": "PR-016 — 'Resolved as Birds', Europe 2023 (0:25) · IR return frequency matches wingbeat",
+      "source": "USEUCOM vía AARO/DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/988673"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/964843",
+      "type": "video",
+      "title": "'Middle East Red Balloon 2024' (1:36) · resuelto como globo de papel aluminio, correlacionado con el viento",
+      "title_en": "'Middle East Red Balloon 2024' (1:36) · resolved as foil balloon, correlated with wind",
+      "source": "DoD vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/964843"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/977838",
+      "type": "video",
+      "title": "PR-007 — 'Closed as Not Anomalous', Europa 2022 (0:06) · sin origen identificado, pero sin criterio para más análisis",
+      "title_en": "PR-007 — 'Closed as Not Anomalous', Europe 2022 (0:06) · no origin identified, but no criteria for further analysis",
+      "source": "USEUCOM vía AARO/DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/977838"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/992261",
+      "type": "video",
+      "title": "PR-011 — 'Undergoing Analysis', Europa 2021 (2:08) · análisis físico y de desempeño en curso",
+      "title_en": "PR-011 — 'Undergoing Analysis', Europe 2021 (2:08) · physical and performance analysis ongoing",
+      "source": "USEUCOM vía AARO/DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/992261"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/973045",
+      "type": "video",
+      "title": "PR-001 — 'Unresolved UAP Report', África 2022 (0:31) · no se puede determinar si la firma es física o del sensor",
+      "title_en": "PR-001 — 'Unresolved UAP Report', Africa 2022 (0:31) · cannot determine whether the signature is physical or sensor-based",
+      "source": "USAFRICOM vía AARO/DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/973045"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/961723",
+      "type": "video",
+      "title": "'Unresolved UAP Report: Middle East 2023' (8:15) · sin telemetría ni datos multi-sensor para evaluar",
+      "title_en": "'Unresolved UAP Report: Middle East 2023' (8:15) · no telemetry or multi-sensor data to evaluate",
+      "source": "DoD vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/961723"
+    }
+  ],
+  "whatHappened": "Además de las entregas masivas del programa PURSUE, la AARO mantiene y publica en DVIDS un archivo separado y más pequeño: los 'UAP Case Resolution Reports', clips numerados de forma consecutiva —PR-001 en adelante— que documentan expedientes individuales tramitados por los comandos combatientes EUCOM (Europa) y AFRICOM (África), cada uno acompañado de un párrafo de texto con la evaluación oficial de la oficina. A diferencia de los partes de misión de PURSUE, que rara vez incluyen una conclusión, cada uno de estos clips lleva la palabra final de la AARO impresa en su propio título y descripción.\n\nDe los dieciocho expedientes numerados de esta serie identificados hasta ahora (PR-001 a PR-018), el desglose por resultado es el siguiente: seis se cerraron identificando el objeto —cinco como aves (migratorias o locales) y uno como globo—; cinco más se cerraron específicamente como globo por razones de comportamiento; uno se cerró como 'no anómalo' sin lograr identificar su origen exacto; y los once restantes permanecen sin resolver o en análisis activo. A esa serie numerada se suma al menos un expediente adicional sin numeración PR pero con la misma estructura de evaluación: 'Middle East Red Balloon 2024', resuelto como un globo de papel aluminio de uso doméstico.\n\nLa metodología que la AARO describe para cerrar un caso como ave es consistente entre expedientes: coincidencia morfológica fuerte con otras imágenes ya resueltas de aves, comportamiento de vuelo que se ajusta a rutas migratorias conocidas, mantenimiento de posición relativa entre varios individuos para conservar energía en vuelo, y —el detalle más preciso— un retorno infrarrojo pulsante cuya frecuencia coincide con el ritmo del aleteo. Para los globos, la correlación se hace contra la velocidad y dirección del viento registradas en el momento y lugar del evento, comparando la trayectoria observada con la deriva esperada de un objeto liviano llevado por el aire.\n\nCuando la AARO no puede resolver un caso, el lenguaje también sigue un patrón: la oficina distingue explícitamente entre no poder determinar si una firma térmica proviene de un objeto físico, de un reflejo térmico, o de un artefacto del propio sensor o display, y directamente carecer de telemetría o datos de sensores múltiples que permitan cualquier evaluación de desempeño. En al menos un caso (PR-011), el expediente queda marcado como 'análisis en curso' en vez de cerrarse en ninguna de las dos categorías.",
+  "whatHappened_en": "Beyond the mass drops of the PURSUE program, AARO maintains and publishes on DVIDS a separate, smaller archive: the 'UAP Case Resolution Reports,' consecutively numbered clips —PR-001 onward— documenting individual files processed by the EUCOM (Europe) and AFRICOM (Africa) combatant commands, each accompanied by a paragraph of text carrying the office's official assessment. Unlike PURSUE's mission reports, which rarely include a conclusion, each of these clips carries AARO's final word printed directly in its own title and description.\n\nOf the eighteen numbered files in this series identified so far (PR-001 through PR-018), the outcome breakdown is as follows: six were closed with the object identified —five as birds (migratory or local) and one as a balloon—; five more were closed specifically as balloons on behavioral grounds; one was closed as 'not anomalous' without pinning down its exact origin; and the remaining eleven stay unresolved or under active analysis. To that numbered series can be added at least one further file without a PR number but with the same assessment structure: 'Middle East Red Balloon 2024,' resolved as a household-grade reflective foil balloon.\n\nThe methodology AARO describes for closing a case as a bird is consistent across files: strong morphological match with other already-resolved bird imagery, flight behavior aligning with known migration routes, relative position-holding among multiple individuals for energy conservation in flight, and —the most precise detail— a pulsating infrared return whose frequency matches wingbeat rhythm. For balloons, the correlation is made against recorded wind speed and direction at the time and place of the event, comparing the observed trajectory against the expected drift of a lightweight object carried by air.\n\nWhen AARO cannot resolve a case, the language also follows a pattern: the office explicitly distinguishes between being unable to determine whether a thermal signature originates from a physical object, a thermal reflection, or an artifact of the sensor or display itself, and outright lacking the telemetry or multi-sensor data that would allow any performance evaluation. In at least one case (PR-011), the file is marked 'analysis ongoing' rather than closed under either category.",
+  "whyMatters": "Este archivo importa porque corrige un sesgo estructural que el resto del corpus no puede evitar por sí solo: casi todos los expedientes UAP que llegan a hacerse públicos o a filtrarse son, por definición, los que NO se resolvieron —lo resuelto rara vez es noticia—. Aquí la propia AARO publica, con el mismo formato y nivel de detalle, tanto lo que cerró con una explicación convencional como lo que sigue abierto, lo que permite calibrar contra una muestra donde la agencia no tiene incentivo para inflar la proporción de lo anómalo.\n\nLa proporción observada en esta muestra —seis de dieciocho resueltos como aves o globos, uno cerrado sin poder identificar el origen, once sin resolver— no es una encuesta representativa del fenómeno UAP en general: es una muestra pequeña y autoseleccionada por la propia oficina, sujeta a lo que decide publicar y cuándo. Pero dentro de esas limitaciones, el patrón encaja con lo que la AARO ha declarado repetidamente en sus comparecencias públicas: la mayoría de los reportes que recibe resultan explicables, y los que no se cierran habitualmente carecen de los datos —telemetría, sensores múltiples, contexto de vuelo— que harían posible una determinación, más que exhibir un comportamiento genuinamente inexplicable.\n\nLa metodología descrita en los casos resueltos —frecuencia de aleteo, rutas migratorias, correlación con el viento— es además valiosa como referencia de criterio para leer otros expedientes del corpus que sí describen comportamientos similares (objetos esféricos a la deriva, formaciones que mantienen distancia relativa) sin haber sido sometidos al mismo cruce de datos. El posterior de este agregado refleja esa doble lectura: una masa considerable en 'mundano_natural' por los casos con resolución verificada, pero una fracción igualmente considerable en 'indeterminado' porque la mayoría de los dieciocho expedientes —incluidos varios con metraje de varios minutos, como el de ocho minutos de Medio Oriente— simplemente no tienen los datos que permitirían decidir.",
+  "whyMatters_en": "This archive matters because it corrects a structural bias the rest of the corpus cannot avoid on its own: nearly every UAP file that becomes public or leaks is, by definition, one that was NOT resolved —resolved cases rarely make news. Here AARO itself publishes, in the same format and level of detail, both what it closed with a conventional explanation and what remains open, which allows calibration against a sample where the agency has no incentive to inflate the proportion of the anomalous.\n\nThe ratio observed in this sample —six of eighteen resolved as birds or balloons, one closed without identifying origin, eleven unresolved— is not a representative survey of the UAP phenomenon in general: it is a small, self-selected sample subject to what the office chooses to publish and when. But within those limits, the pattern matches what AARO has repeatedly stated in its public appearances: most reports it receives turn out explainable, and the ones that stay open usually lack the data —telemetry, multiple sensors, flight context— that would make a determination possible, rather than displaying genuinely inexplicable behavior.\n\nThe methodology described in the resolved cases —wingbeat frequency, migration routes, wind correlation— is also valuable as a reference standard for reading other files in the corpus that describe similar behaviors (drifting spherical objects, formations holding relative distance) without having undergone the same data cross-referencing. This aggregate's posterior reflects that dual reading: a considerable mass on 'mundano_natural' from the cases with verified resolution, but an equally considerable fraction on 'indeterminate' because most of the eighteen files —including several with multiple minutes of footage, like the eight-minute Middle East one— simply lack the data that would allow a determination.",
+  "evidence": [
+    "18 expedientes numerados PR-001 a PR-018, publicados por AARO en DVIDS con evaluación oficial adjunta como texto",
+    "6 resueltos identificando el objeto (5 aves, 1 globo); 5 más cerrados específicamente como globo",
+    "1 cerrado como 'no anómalo' sin identificar origen; 11 sin resolver o en análisis activo",
+    "Metodología para aves: coincidencia morfológica + rutas migratorias + frecuencia de retorno IR coincidente con el aleteo",
+    "Metodología para globos: correlación de trayectoria con velocidad y dirección del viento registradas",
+    "Expedientes sin resolver: la AARO distingue explícitamente 'firma física vs. artefacto de sensor' de 'falta de telemetría/datos multi-sensor'",
+    "'Middle East Red Balloon 2024': resuelto ≥95% de confianza como globo de papel aluminio, correlacionado con el viento del evento",
+    "Todos los videos son obra del gobierno de EE.UU., dominio público, publicados vía DVIDS por EUCOM/AFRICOM/DoD"
+  ],
+  "evidence_en": [
+    "18 numbered files PR-001 through PR-018, published by AARO on DVIDS with official assessment attached as text",
+    "6 resolved with object identified (5 birds, 1 balloon); 5 more closed specifically as balloon",
+    "1 closed as 'not anomalous' without identifying origin; 11 unresolved or under active analysis",
+    "Bird methodology: morphological match + migration routes + IR return frequency matching wingbeat",
+    "Balloon methodology: trajectory correlation with recorded wind speed and direction",
+    "Unresolved files: AARO explicitly distinguishes 'physical signature vs. sensor artifact' from 'lack of telemetry/multi-sensor data'",
+    "'Middle East Red Balloon 2024': resolved with ≥95% confidence as a foil balloon, correlated with wind at the event",
+    "All videos are U.S. government work, public domain, published via DVIDS by EUCOM/AFRICOM/DoD"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — serie 'UAP Case Resolution Reports' (PR-001 a PR-018) y expedientes relacionados, AARO/EUCOM/AFRICOM",
+      "url": "https://www.dvidshub.net/search/?q=Anomaly+Resolution+Office&filter%5Btype%5D=video",
+      "note": "Muestra representativa de 7 videos embebida en el visor de este caso; texto de evaluación de AARO citado de la ficha oficial de cada uno.",
+      "note_en": "Representative sample of 7 videos embedded in this case's viewer; AARO assessment text quoted from each one's official record."
+    },
+    {
+      "name": "AARO — UAP Case Resolution Reports (repositorio oficial)",
+      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/"
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 'UAP Case Resolution Reports' series (PR-001 through PR-018) and related files, AARO/EUCOM/AFRICOM",
+      "url": "https://www.dvidshub.net/search/?q=Anomaly+Resolution+Office&filter%5Btype%5D=video",
+      "note": "Representative sample of 7 videos embedded in this case's viewer; AARO assessment text quoted from each one's official record.",
+      "note_en": "Representative sample of 7 videos embedded in this case's viewer; AARO assessment text quoted from each one's official record."
+    },
+    {
+      "name": "AARO — UAP Case Resolution Reports (official repository)",
+      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/"
+    }
+  ]
+}
