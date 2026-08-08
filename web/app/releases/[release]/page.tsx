@@ -134,7 +134,7 @@ export async function ReleasePage({
           />
         </Lede>
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          {list.length} casos · Tier S {t.S} · A {t.A} · B {t.B}
+          {list.length} <T es="casos" en="cases" locale={locale} /> · Tier S {t.S} · A {t.A} · B {t.B}
         </p>
       </header>
 
