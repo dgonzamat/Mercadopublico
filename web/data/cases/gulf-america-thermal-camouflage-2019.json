@@ -1,0 +1,78 @@
+{
+  "id": "gulf-america-thermal-camouflage-2019",
+  "num": 370,
+  "pursueReleases": [4],
+  "name": "Cuando el propio sensor explica por qué el objeto parpadea",
+  "name_en": "When the sensor itself explains why the object flickers",
+  "year_start": 2019,
+  "country": "US",
+  "country_name": "Golfo de América (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 27,
+    "lng": -90,
+    "place": "Golfo de América (ubicación exacta no revelada)",
+    "place_en": "Gulf of America (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.32
+  },
+  "summary": "En 2019, la Fuerza Aérea de EE.UU. sometió a la AARO un reporte de 8 segundos de metraje infrarrojo sobre el Golfo de América. El clip mismo es breve y poco distintivo: un área de contraste parcialmente oculta por el HUD que 'parpadea visualmente' mientras el sensor la sigue. Lo inusual es que la AARO adjuntó, además de la descripción visual estándar, un comentario técnico explicando el mecanismo físico del parpadeo: cuando la temperatura de una fuente se asemeja a la del entorno, puede mezclarse visualmente con el fondo o parecer parpadear por los filtros de control automático de ganancia del propio sensor. Es de los pocos expedientes del corpus donde la AARO explica la física del artefacto, no solo lo describe.",
+  "summary_en": "In 2019, the U.S. Air Force submitted a report to AARO consisting of 8 seconds of infrared footage over the Gulf of America. The clip itself is brief and undistinctive: an area of contrast partially obscured by the HUD that 'visually flickers' as the sensor tracks it. What is unusual is that AARO attached, beyond the standard visual description, a technical comment explaining the physical mechanism behind the flicker: when a source's temperature resembles that of its surroundings, it can visually blend into the background or appear to flicker due to the sensor's own auto-gain control filters. It is one of the few files in the corpus where AARO explains the physics of the artifact, not just describes it.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014123",
+      "type": "video",
+      "title": "Sensor IR sobre el Golfo de América; la AARO explica el mecanismo físico del parpadeo térmico (8 s)",
+      "title_en": "IR sensor over the Gulf of America; AARO explains the physical mechanism behind the thermal flicker (8 s)",
+      "source": "US Air Force, con comentario técnico de la AARO, vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014123"
+    }
+  ],
+  "whatHappened": "En algún momento de 2019, la Fuerza Aérea de Estados Unidos sometió formalmente a la AARO un reporte de fenómeno anómalo no identificado, consistente en 8 segundos de metraje capturado por un sensor infrarrojo a bordo de una plataforma militar sobre el Golfo de América.\n\nLa descripción visual oficial, con marcas de tiempo, es breve: entre los segundos 1 y 2, un área de contraste es visible cerca del centro del campo de visión del sensor, parcialmente oculta por elementos visuales del HUD (head-up display); entre los segundos 3 y 6, el sensor hace zoom y gira para seguir el área de contraste, que parpadea visualmente en la pantalla; entre los segundos 7 y 8, no hay contenido visible.\n\nLo que distingue a este expediente del resto del corpus es un párrafo adicional que la AARO adjuntó bajo el encabezado 'Comentario de la AARO' (AARO Comment), un formato que no aparece en la gran mayoría de las fichas revisadas esta sesión. El comentario explica el mecanismo físico detrás del comportamiento observado: 'los sistemas de sensor infrarrojo capturan información dentro de un rango específico de longitudes de onda electromagnéticas. Cuando la temperatura de una fuente rastreada es similar a la del entorno circundante, puede mezclarse visualmente con el fondo o parecer parpadear debido a los ajustes de contraste dinámico aplicados por los filtros de control automático de ganancia del sistema'. Es decir: la AARO no solo describe que el objeto 'parpadea', sino que explica por qué un sensor infrarrojo produce ese efecto cuando la firma térmica del objeto está cerca del umbral de detección del propio equipo.",
+  "whatHappened_en": "At some point in 2019, the U.S. Air Force formally submitted a report of an unidentified anomalous phenomenon to AARO, consisting of 8 seconds of footage captured by an infrared sensor aboard a military platform over the Gulf of America.\n\nThe official timestamped visual description is brief: between seconds 1 and 2, an area of contrast is visible near the center of the sensor's field of view, partially obscured by visual elements of the heads-up display (HUD); between seconds 3 and 6, the sensor zooms and pans to track the area of contrast, which visually flickers on the display; between seconds 7 and 8, there is no visible content.\n\nWhat sets this file apart from the rest of the corpus is an additional paragraph AARO attached under the heading 'AARO Comment,' a format not seen in the vast majority of records reviewed this session. The comment explains the physical mechanism behind the observed behavior: 'Infrared sensor systems capture information within a specific range of electromagnetic wavelengths. When a tracked source's temperature is similar to that of the surrounding environment, it can visually blend into the background or appear to flicker due to dynamic contrast adjustments applied by the system's auto-gain control filters.' In other words: AARO does not merely describe the object as 'flickering' — it explains why an infrared sensor produces that effect when an object's thermal signature sits near the equipment's own detection threshold.",
+  "whyMatters": "El valor de este expediente no está en el metraje —8 segundos, un área de contraste parcialmente oculta por el propio HUD, sin comportamiento distintivo alguno— sino en el género de explicación que lo acompaña. La mayoría de las fichas de este corpus se limitan a describir qué se ve en pantalla, dejando la interpretación física implícita o ausente; aquí la AARO da un paso adicional y explica el principio de sensores que produce el artefacto, en un lenguaje accesible que no requiere formación técnica especializada para seguir.\n\nEsa explicación tiene valor pedagógico que trasciende este caso puntual: el 'parpadeo térmico' que describe —un objeto cuya temperatura se acerca a la del entorno, procesado por filtros de ganancia automática que ajustan el contraste dinámicamente— es exactamente el tipo de artefacto instrumental que podría, en un expediente sin ese comentario adjunto, leerse erróneamente como comportamiento intrínseco del objeto (pulsar, cambiar de intensidad de forma 'inteligente') en vez de como una limitación conocida y bien entendida del propio sensor. Sirve como contraparte metodológica útil frente a los numerosos expedientes del corpus donde un comportamiento similar —parpadeo, pérdida y recuperación de contraste— se describe sin ninguna explicación de por qué ocurre, dejando al lector sin las herramientas para distinguir un artefacto de sensor de un comportamiento genuino del objeto.\n\nLa lectura prosaica más directa para el objeto en sí —dado lo poco que el metraje muestra— es cualquier plataforma convencional (aeronave, ave, o incluso un reflejo) cuya firma térmica cayó cerca del umbral de detección del sensor en el momento de la observación, produciendo exactamente el efecto de parpadeo que la propia AARO explica. Sin más contexto —coordenadas, plataforma, informe de misión— el caso no puede cerrarse con mayor precisión, pero el comentario técnico adjunto es, en sí mismo, la pieza más valiosa del expediente.",
+  "whyMatters_en": "This file's value is not in the footage —8 seconds, an area of contrast partially obscured by the HUD itself, with no distinctive behavior— but in the kind of explanation accompanying it. Most records in this corpus limit themselves to describing what appears on screen, leaving the physical interpretation implicit or absent; here AARO takes an additional step and explains the sensor principle producing the artifact, in accessible language that requires no specialized technical training to follow.\n\nThat explanation has pedagogical value beyond this particular case: the 'thermal flicker' it describes —an object whose temperature approaches that of its surroundings, processed by auto-gain filters that dynamically adjust contrast— is exactly the kind of instrumental artifact that could, in a file without that attached comment, be misread as intrinsic object behavior (pulsing, 'intelligently' changing intensity) rather than as a known, well-understood limitation of the sensor itself. It serves as a useful methodological counterpart to the many files in the corpus where similar behavior —flickering, losing and regaining contrast— is described with no explanation of why it occurs, leaving the reader without the tools to distinguish a sensor artifact from genuine object behavior.\n\nThe most direct prosaic reading for the object itself —given how little the footage shows— is any conventional platform (aircraft, bird, or even a reflection) whose thermal signature fell near the sensor's detection threshold at the moment of observation, producing exactly the flickering effect AARO itself explains. Without further context —coordinates, platform, mission report— the case cannot be closed with greater precision, but the attached technical comment is, in itself, this file's most valuable piece.",
+  "evidence": [
+    "2019: la Fuerza Aérea de EE.UU. somete a la AARO un reporte de 8 segundos de metraje IR sobre el Golfo de América",
+    "El área de contraste parpadea visualmente en pantalla, parcialmente oculta por el HUD",
+    "La AARO adjunta un 'AARO Comment' —formato poco común— explicando el mecanismo físico del parpadeo térmico",
+    "El comentario cita filtros de control automático de ganancia y proximidad térmica al entorno como causa del efecto",
+    "Publicado en PURSUE Release 04, dominio público"
+  ],
+  "evidence_en": [
+    "2019: the U.S. Air Force submits an 8-second IR footage report to AARO over the Gulf of America",
+    "The area of contrast visually flickers on screen, partially obscured by the HUD",
+    "AARO attaches an 'AARO Comment' —an uncommon format— explaining the physical mechanism behind the thermal flicker",
+    "The comment cites auto-gain control filters and thermal proximity to the environment as the cause of the effect",
+    "Released in PURSUE Release 04, public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — sensor IR sobre el Golfo de América, con comentario técnico de la AARO sobre el mecanismo del parpadeo",
+      "url": "https://www.dvidshub.net/video/1014123",
+      "note": "Video embebido en el visor de este caso; la ficha incluye el 'AARO Comment' citado en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — IR sensor over the Gulf of America, with AARO's technical comment on the flicker mechanism",
+      "url": "https://www.dvidshub.net/video/1014123",
+      "note": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
+    }
+  ]
+}
