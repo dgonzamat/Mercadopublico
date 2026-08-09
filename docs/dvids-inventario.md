@@ -14,17 +14,17 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
 | **Release 01** | 8 may 2026 | 27 | 17 |
-| **Release 02** | 22 may 2026 | 50 | 19 |
+| **Release 02** | 22 may 2026 | 50 | 21 |
 | **Release 04** | 10 jul 2026 | 19 | 3 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
 | **Release 03** | 12 jun 2026 | 6 | 6 |
-| | | **117** | **51** |
+| | | **117** | **53** |
 
-**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 78 documentos de video embebidos en 32 casos al cierre de esta sesión (ago 2026):
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 80 documentos de video embebidos en 34 casos al cierre de esta sesión (ago 2026):
 
 | Serie | Videos embebidos | Nota |
 |---|---|---|
-| `DOW-UAP-PR*` (Releases 01/02/04/05) | 45 | Ver tabla PURSUE arriba |
+| `DOW-UAP-PR*` (Releases 01/02/04/05) | 47 | Ver tabla PURSUE arriba |
 | `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
 | `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 7 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
 | Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
@@ -32,7 +32,9 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
 | Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
 | Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
-| **Total** | **78 en 32 casos** | |
+| **Total** | **80 en 34 casos** | |
+
+**Revisión dirigida de Release 02 (ago 2026, tras feedback del usuario)**: el descarte categórico de los 31 videos restantes de Release 02 no aplicaba el mismo criterio de "morfología/comportamiento distintivo" usado para rescatar 3 casos de Release 01. Revisión de las 31 descripciones completas encontró 2 más con valor real: `PR050` (formación de 4 objetos que sí coincide con su título, caso de control) y `PR054` (donde la AARO señala EXPLÍCITAMENTE que "las alteraciones digitales... influyen significativamente en el desempeño aparente" — la confirmación más limpia del patrón título-vs-descripción de todo el lote). Quedan ~29 sin caso propio, genuinamente sin informe ni comportamiento distintivo tras esta segunda pasada.
 
 > **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
@@ -69,11 +71,11 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 ## Release 02 — 22 may 2026 (50 videos)
 
-- [ ] `PR050` · 08.26.2022 — 4-uap-formation-iran-26-aug-2022-over-water-callsign · [ver](https://www.dvidshub.net/video/1007706)
+- [x] `PR050` · 08.26.2022 — 4-uap-formation-iran-26-aug-2022-over-water-callsign → `four-object-formation-iran-2022` · [ver](https://www.dvidshub.net/video/1007706)
 - [x] `PR051` · 01.01.2021 — syrian-uap-instant-acceleration → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007707)
 - [ ] `PR052` · 06.01.2024 — uap-uso-formation-callsign-mission · [ver](https://www.dvidshub.net/video/1007708)
 - [ ] `PR053` · 10.15.2022 — cigar-shaped-fast-spherical-uap-clip-15-oct-22 · [ver](https://www.dvidshub.net/video/1007709)
-- [ ] `PR054` · 08.01.2022 — spherical-uap-erratic-movement-callsign-mission-2022 · [ver](https://www.dvidshub.net/video/1007711)
+- [x] `PR054` · 08.01.2022 — spherical-uap-erratic-movement-callsign-mission-2022 → `spherical-erratic-editing-artifact-2022` · [ver](https://www.dvidshub.net/video/1007711)
 - [x] `PR055` · 11.23.2020 — spherical-uap-over-afg-and-out-clouds-23-nov-2020 → `spherical-afghanistan-2020` · [ver](https://www.dvidshub.net/video/1007713)
 - [ ] `PR056` · 06.01.2024 — spherical-uap-pulsing-over-water-callsign · [ver](https://www.dvidshub.net/video/1007718)
 - [ ] `PR057A` · 01.01.2023 — spherical-uap-clouds · [ver](https://www.dvidshub.net/video/1007720)

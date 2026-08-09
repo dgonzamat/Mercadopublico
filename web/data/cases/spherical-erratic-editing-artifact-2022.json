@@ -1,0 +1,82 @@
+{
+  "id": "spherical-erratic-editing-artifact-2022",
+  "num": 368,
+  "pursueReleases": [2],
+  "name": "'Movimiento errático': la propia AARO dice que fue la edición, no el objeto",
+  "name_en": "'Erratic movement': AARO itself says it was the edit, not the object",
+  "year_start": 2022,
+  "country": "US",
+  "country_name": "Área de responsabilidad de EUCOM (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40,
+    "lng": 20,
+    "place": "Área de responsabilidad de EUCOM (ubicación exacta no revelada)",
+    "place_en": "EUCOM area of responsibility (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 15,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.45
+  },
+  "summary": "Un clip de casi cuatro minutos circula con el título 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022' — pero la propia AARO, en la descripción visual oficial del archivo, señala algo que el título no dice: 'las alteraciones digitales del metraje influyen significativamente en el desempeño aparente del área de contraste'. Es decir, la agencia misma atribuye buena parte de lo que el título llama 'movimiento errático' a la edición del video, no al objeto. Forma parte del lote de 50 videos de Release 02 (origen FOIA/red clasificada, ver [[reeves-foia-classified-network-2023]]).",
+  "summary_en": "A nearly four-minute clip circulates under the title 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022' — but AARO itself, in the file's official visual description, notes something the title doesn't: 'digital alterations to the video footage significantly influence the area of contrast's apparent performance characteristics.' In other words, the agency itself attributes much of what the title calls 'erratic movement' to the video's editing, not the object. It is part of the 50-video Release 02 batch (FOIA/classified-network origin; see [[reeves-foia-classified-network-2023]]).",
+  "patterns": ["8d"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007711",
+      "type": "video",
+      "title": "DOW-UAP-PR054 — título de uploader 'Erratic movement'; la AARO señala que la edición digital influyó en el desempeño aparente (3:57)",
+      "title_en": "DOW-UAP-PR054 — uploader title 'Erratic movement'; AARO notes digital editing influenced the apparent performance (3:57)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007711"
+    }
+  ],
+  "whatHappened": "Este clip de tres minutos y 57 segundos, catalogado como DOW-UAP-PR054, forma parte del lote de 50 videos que la AARO localizó en una red clasificada al responder, en 2026, una solicitud FOIA de ocho congresistas por 51 registros potencialmente relacionados con UAP.\n\nEl título 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022' es, según la propia evaluación de la AARO, un título 'definido por el usuario' que subió el archivo a la red clasificada en junio de 2024, no una designación del Departamento de Guerra. La AARO evalúa como 'probable', sin confirmarlo, que el metraje derive de un sensor infrarrojo a bordo de una plataforma militar de EE.UU. operando dentro del área de responsabilidad del Mando Europeo (EUCOM) en agosto de 2022.\n\nLo más relevante del expediente es un detalle que la descripción visual oficial de la AARO consigna de forma explícita y que ningún título ni resumen periodístico recogería: 'este medio fue alterado digitalmente antes de subirse a una red clasificada, y se presenta tal como fue recibido'. Entre los segundos 0 y 45, describe la AARO, 'el video presenta un área de contraste generalmente dentro del centro del encuadre. El sensor gira para seguir el área de contraste. Las alteraciones digitales del metraje influyen significativamente en el desempeño aparente del área de contraste'. Es decir: la propia agencia, no un escéptico externo, atribuye el comportamiento aparentemente errático que el título anuncia a la manipulación del video, no a un movimiento real del objeto observado por el sensor. Entre los segundos 46 y 3:57, tras lo que la AARO describe como 'un corte aparente', el video se refoca en un área de contraste que entra y sale del encuadre de forma intermitente mientras el sensor la sigue.\n\nEl material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, sin coordenadas, identificación de plataforma ni declaración de tripulación.",
+  "whatHappened_en": "This three-minute-57-second clip, catalogued as DOW-UAP-PR054, is part of the 50-video batch AARO located on a classified network in 2026 while responding to a FOIA request from eight members of Congress for 51 potentially UAP-related records.\n\nThe title 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022' is, per AARO's own assessment, a 'user-defined' title assigned by whoever uploaded the file to the classified network in June 2024, not a Department of War designation. AARO assesses as 'likely,' without confirming, that the footage derives from an infrared sensor aboard a U.S. military platform operating within European Command's (EUCOM) area of responsibility in August 2022.\n\nThe file's most notable detail is something AARO's official visual description states explicitly, and that no title or press summary would capture: 'this media was digitally altered prior to its upload to a classified network, and is presented as received.' Between seconds 0 and 45, AARO writes, 'the video features an area of contrast generally within the center of the frame. The sensor pans to track the area of contrast. Digital alterations to the video footage significantly influence the area of contrast's apparent performance characteristics.' In other words: the agency itself, not an outside skeptic, attributes the apparently erratic behavior the title announces to the video's manipulation, not to real movement by the object the sensor observed. Between seconds 46 and 3:57, following what AARO describes as 'an apparent cut,' the video refocuses on an area of contrast that intermittently enters and exits the frame as the sensor tracks it.\n\nThe material was uploaded to DVIDS on May 22, 2026, within PURSUE's second drop, with no coordinates, platform identification, or crew statement.",
+  "whyMatters": "Este es, dentro del lote de Release 02, el ejemplo más directo de un patrón que el corpus ya viene documentando desde la corrección de otros cuatro casos de esta misma entrega ([[reeves-foia-classified-network-2023]]): un título llamativo ('movimiento errático') que no describe el objeto sino un artefacto de edición — y esta vez no hace falta inferirlo comparando título contra descripción instrumental, porque la propia AARO lo dice en una sola frase explícita. Es, en ese sentido, la confirmación más limpia posible de por qué esta sesión adoptó la regla de leer el `og:description` completo antes de construir un caso desde un título de Release 02.\n\nQue el archivo haya sido editado ANTES de subirse a la red clasificada —no después, por la AARO— significa que la manipulación es responsabilidad de un tercero desconocido, con un propósito que no puede establecerse desde la ficha pública: pudo ser un intento genuino de mejorar la visibilidad de un fenómeno real (estabilización, realce de contraste), o pudo introducir o exagerar comportamiento que el sensor original no registró. Sin acceso al archivo sin editar, ninguna de las dos posibilidades puede confirmarse ni descartarse — y es exactamente esa incertidumbre, no una conclusión en una u otra dirección, lo que el posterior de este caso intenta reflejar con una fracción alta en indeterminado.\n\nLa lectura prosaica más simple para un área de contraste centrada que un sensor sigue durante casi cuatro minutos, con un 'corte aparente' a la mitad, sigue siendo un objeto convencional —avión, dron, o incluso un artefacto de sensor— cuyo comportamiento normal fue alterado en la edición para parecer más dramático de lo que el propio metraje crudo habría mostrado. El caso no resuelve qué era el objeto; documenta, con la propia autoridad de la AARO, que el título con el que circula no es una descripción confiable de su comportamiento.",
+  "whyMatters_en": "This is, within the Release 02 batch, the most direct example of a pattern the corpus has already been documenting since the correction of four other cases from this same drop ([[reeves-foia-classified-network-2023]]): a striking title ('erratic movement') that doesn't describe the object but an editing artifact — and this time it doesn't need to be inferred by comparing title against instrumental description, because AARO itself says so in one explicit sentence. It is, in that sense, the cleanest possible confirmation of why this session adopted the rule of reading the full `og:description` before building a case from a Release 02 title.\n\nThat the file was edited BEFORE being uploaded to the classified network —not afterward, by AARO— means the manipulation is the responsibility of an unknown third party, for a purpose that cannot be established from the public record: it could have been a genuine attempt to improve visibility of a real phenomenon (stabilization, contrast enhancement), or it could have introduced or exaggerated behavior the original sensor never recorded. Without access to the unedited file, neither possibility can be confirmed or ruled out — and it is exactly that uncertainty, not a conclusion in either direction, that this case's posterior tries to reflect with a high indeterminate share.\n\nThe simplest prosaic reading for a centered area of contrast a sensor tracks for nearly four minutes, with an 'apparent cut' midway, remains a conventional object —aircraft, drone, or even a sensor artifact— whose normal behavior was altered in editing to look more dramatic than the raw footage itself would have shown. The case does not resolve what the object was; it documents, on AARO's own authority, that the title it circulates under is not a reliable description of its behavior.",
+  "evidence": [
+    "Título 'Erratic movement' es una etiqueta de usuario, no una designación del Departamento de Guerra, según la propia AARO",
+    "AARO señala EXPLÍCITAMENTE: 'las alteraciones digitales del metraje influyen significativamente en el desempeño aparente' del objeto",
+    "El archivo fue editado ANTES de subirse a la red clasificada, por un tercero desconocido, no por la AARO",
+    "Un 'corte aparente' separa el video en dos segmentos (0:00-0:45 y 0:46-3:57)",
+    "AARO advierte: el lote de 50 videos (incluido este) 'carece de una cadena de custodia sustanciada'",
+    "AARO solo 'evalúa' como probable —sin confirmar— origen en EUCOM, agosto 2022",
+    "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "Title 'Erratic movement' is a user label, not a Department of War designation, per AARO itself",
+    "AARO EXPLICITLY notes: 'digital alterations to the video footage significantly influence the apparent performance' of the object",
+    "The file was edited BEFORE being uploaded to the classified network, by an unknown third party, not by AARO",
+    "An 'apparent cut' splits the video into two segments (0:00-0:45 and 0:46-3:57)",
+    "AARO warns: the 50-video batch (including this one) 'lacks a substantiated chain-of-custody'",
+    "AARO only 'assesses' as likely —without confirming— a EUCOM origin, August 2022",
+    "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR054, título definido por el uploader, con nota explícita de alteración digital de la AARO (lote FOIA Reeves, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007711",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la nota de alteración digital y la descripción visual citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR054, uploader-defined title, with AARO's explicit digital-alteration note (Reeves FOIA batch, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007711",
+      "note": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened."
+    }
+  ]
+}
