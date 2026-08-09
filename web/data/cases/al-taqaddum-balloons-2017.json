@@ -1,0 +1,78 @@
+{
+  "id": "al-taqaddum-balloons-2017",
+  "num": 367,
+  "pursueReleases": [],
+  "name": "Diecisiete minutos de metraje, resueltos con análisis de píxeles",
+  "name_en": "Seventeen minutes of footage, resolved with pixel analysis",
+  "year_start": 2017,
+  "country": "IQ",
+  "country_name": "Irak",
+  "flag": "🇮🇶",
+  "location": {
+    "lat": 33.34,
+    "lng": 43.57,
+    "place": "Cerca de la base aérea de Al Taqaddum, Irak",
+    "place_en": "Near Al Taqaddum Air Base, Iraq"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 5,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.88,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.0,
+    "indet": 0.07
+  },
+  "summary": "En octubre de 2017, un sensor infrarrojo a bordo de un aeróstato de protección de fuerzas cerca de la base aérea de Al Taqaddum, en Irak, registró 17 minutos de metraje de un objeto no identificado — una de las grabaciones continuas más largas del corpus. La AARO empleó análisis de video de movimiento completo, examen de píxeles y datos geolocacionales del propio aeróstato para evaluar la velocidad y dirección del objeto, y concluyó que se trataba de un racimo de globos parcial y totalmente inflados, cuya apariencia coincide con otras observaciones de racimos de globos ya documentadas. La AARO evalúa que el objeto no exhibió características de desempeño anómalas.",
+  "summary_en": "In October 2017, an infrared sensor aboard a force-protection aerostat near Al Taqaddum Air Base, Iraq, recorded 17 minutes of footage of an unidentified object — one of the longest continuous recordings in the corpus. AARO employed full-motion video analysis, pixel examination, and geo-locational data from the aerostat itself to assess the object's speed and direction, concluding it was a cluster of partially and fully inflated balloons, whose appearance matches other already-documented balloon-cluster observations. AARO assesses the object did not exhibit anomalous performance characteristics.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/960331",
+      "type": "video",
+      "title": "'Al Taqaddum Object' — 17 minutos de metraje IR, resuelto por la AARO como racimo de globos",
+      "title_en": "'Al Taqaddum Object' — 17 minutes of IR footage, resolved by AARO as a balloon cluster",
+      "source": "US Air Force (aeróstato de protección de fuerzas), con evaluación de resolución de la AARO, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/960331"
+    }
+  ],
+  "whatHappened": "En octubre de 2017, un sensor infrarrojo instalado a bordo de un aeróstato de protección de fuerzas —un globo cautivo elevado, equipado con sensores, usado para vigilancia perimetral de instalaciones militares— cerca de la base aérea de Al Taqaddum, en la provincia de Al Anbar, Irak, registró 17 minutos continuos de metraje de un objeto no identificado. Es, dentro del corpus de expedientes DVIDS revisados esta sesión, una de las grabaciones ininterrumpidas más extensas, superada solo por un puñado de casos.\n\nLa Oficina de Resolución de Anomalías de Todos los Dominios (AARO) sometió el caso a un análisis explícito y metodológicamente detallado. Empleó, según su propia descripción, 'técnicas de análisis de video de movimiento completo y examen de píxeles' para caracterizar el objeto, y complementó ese análisis visual con datos geolocacionales provenientes del propio aeróstato —que, al ser una plataforma de posición conocida y estable, permite calcular con mayor precisión la velocidad y dirección de desplazamiento aparente de un objeto observado que una plataforma móvil.\n\nLa conclusión de la AARO fue que el objeto correspondía a un racimo de globos, algunos completamente inflados y otros parcialmente desinflados, cuya apariencia visual coincide con la de otras observaciones de racimos de globos ya documentadas y resueltas por la propia oficina. Basándose en los datos geolocacionales del aeróstato, la AARO concluyó que el objeto no exhibió características de desempeño anómalas — es decir, ni la velocidad ni la trayectoria calculadas excedían lo esperable para un objeto arrastrado pasivamente por el viento.",
+  "whatHappened_en": "In October 2017, an infrared sensor mounted aboard a force-protection aerostat —a tethered, elevated, sensor-equipped balloon used for perimeter surveillance of military installations— near Al Taqaddum Air Base, in Al Anbar province, Iraq, recorded 17 continuous minutes of footage of an unidentified object. It is, among the DVIDS files reviewed this session, one of the longest uninterrupted recordings, surpassed by only a handful of cases.\n\nThe All-domain Anomaly Resolution Office (AARO) subjected the case to an explicit and methodologically detailed analysis. Per its own description, it employed 'full-motion video analysis and pixel examination techniques' to characterize the object, complementing that visual analysis with geo-locational data from the aerostat itself — which, being a platform of known and stable position, allows more precise calculation of an observed object's apparent speed and direction than a moving platform would.\n\nAARO's conclusion was that the object corresponded to a cluster of balloons, some fully inflated and others partially deflated, whose visual appearance matches other balloon-cluster observations already documented and resolved by the office. Based on the aerostat's geo-locational data, AARO concluded the object did not exhibit anomalous performance characteristics — that is, neither the calculated speed nor trajectory exceeded what would be expected of an object passively carried by the wind.",
+  "whyMatters": "Este expediente es un buen ejemplo de resolución metodológicamente sólida sobre una pieza de evidencia larga y, en principio, potencialmente rica: 17 minutos continuos son tiempo más que suficiente para un análisis cuadro por cuadro detallado, algo que la mayoría de los clips de 20-60 segundos del resto del corpus no permite. Que la AARO haya podido aprovechar esa extensión —combinándola con la ventaja poco común de una plataforma de posición fija y conocida (el aeróstato, a diferencia de un caza o un dron en movimiento)— para calcular velocidad y trayectoria con mayor confianza que en la mayoría de los casos es, en sí mismo, un dato metodológico relevante: la calidad de una resolución depende tanto de la duración del metraje como de si la plataforma observadora tiene una posición conocida con la que triangular el movimiento del objeto.\n\nEl mecanismo de resolución —comparación de apariencia visual contra un catálogo interno de racimos de globos ya documentados— es distinto del usado en casos como [[western-us-objects-2021]] (cruce con datos de tráfico aéreo comercial) o [[mt-etna-object-2018]] (identificación de un artefacto óptico atmosférico). Aquí la AARO parece apoyarse en un patrón de reconocimiento visual acumulado a partir de resoluciones previas similares —el mismo principio, aplicado a un nivel más agregado, que sostiene buena parte de la serie 'AARO Case Resolution Reports' ([[aaro-case-resolution-reports]])—, lo que sugiere que la oficina ha desarrollado, con el tiempo, un catálogo de referencia visual para firmas comunes de falsos positivos.\n\nEl caso entra al corpus como contrapeso metodológico más que como misterio: un racimo de globos parcialmente inflados, visto en infrarrojo durante suficiente tiempo y con suficiente contexto geolocacional, es exactamente el tipo de objeto que puede parecer anómalo en un clip corto sin contexto —forma irregular, comportamiento algo errático por el viento— pero que un análisis extendido, con los datos correctos, resuelve sin ambigüedad.",
+  "whyMatters_en": "This file is a good example of methodologically solid resolution of a long piece of evidence that was, in principle, potentially rich: 17 continuous minutes is more than enough time for detailed frame-by-frame analysis, something most of the 20-to-60-second clips elsewhere in the corpus don't allow. That AARO could leverage that length —combined with the uncommon advantage of a fixed, known-position platform (the aerostat, unlike a moving fighter jet or drone)— to calculate speed and trajectory with more confidence than in most cases is itself a relevant methodological datum: the quality of a resolution depends as much on footage duration as on whether the observing platform has a known position from which to triangulate the object's motion.\n\nThe resolution mechanism —comparing visual appearance against an internal catalog of already-documented balloon clusters— differs from the one used in cases like [[western-us-objects-2021]] (cross-referencing commercial air-traffic data) or [[mt-etna-object-2018]] (identifying an atmospheric optical artifact). Here AARO appears to draw on an accumulated visual-recognition pattern from prior similar resolutions —the same principle, applied at a more aggregate level, underlying much of the 'AARO Case Resolution Reports' series ([[aaro-case-resolution-reports]])— suggesting the office has, over time, developed a visual reference catalog for common false-positive signatures.\n\nThe case enters the corpus as methodological counterweight more than mystery: a cluster of partially inflated balloons, seen in infrared for long enough and with enough geolocational context, is exactly the kind of object that can look anomalous in a short, context-free clip —irregular shape, somewhat erratic wind-driven behavior— but that extended analysis, with the right data, resolves unambiguously.",
+  "evidence": [
+    "Octubre 2017: sensor IR de un aeróstato de protección de fuerzas registra 17 minutos continuos cerca de Al Taqaddum, Irak",
+    "AARO empleó análisis de video de movimiento completo y examen de píxeles",
+    "Datos geolocacionales de la plataforma (posición fija y conocida) usados para calcular velocidad y dirección del objeto",
+    "Conclusión: racimo de globos parcial y totalmente inflados, consistente con otras observaciones ya documentadas",
+    "AARO evalúa que el objeto no exhibió características de desempeño anómalas"
+  ],
+  "evidence_en": [
+    "October 2017: IR sensor aboard a force-protection aerostat records 17 continuous minutes near Al Taqaddum, Iraq",
+    "AARO employed full-motion video analysis and pixel examination",
+    "Platform geo-locational data (fixed, known position) used to calculate the object's speed and direction",
+    "Conclusion: a cluster of partially and fully inflated balloons, consistent with other already-documented observations",
+    "AARO assesses the object did not exhibit anomalous performance characteristics"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 'Al Taqaddum Object', con la evaluación de resolución completa de la AARO",
+      "url": "https://www.dvidshub.net/video/960331",
+      "note": "Video embebido en el visor de este caso; la ficha incluye el texto de resolución citado en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 'Al Taqaddum Object', with AARO's full resolution assessment",
+      "url": "https://www.dvidshub.net/video/960331",
+      "note": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened."
+    }
+  ]
+}
