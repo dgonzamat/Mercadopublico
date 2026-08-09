@@ -13,18 +13,18 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
-| **Release 01** | 8 may 2026 | 27 | 17 |
+| **Release 01** | 8 may 2026 | 27 | 18 |
 | **Release 02** | 22 may 2026 | 50 | 21 |
 | **Release 04** | 10 jul 2026 | 19 | 5 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
 | **Release 03** | 12 jun 2026 | 6 | 6 |
-| | | **117** | **55** |
+| | | **117** | **56** |
 
-**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 83 documentos de video embebidos en 36 casos al cierre de esta sesión (ago 2026):
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 84 documentos de video embebidos en 37 casos al cierre de esta sesión (ago 2026):
 
 | Serie | Videos embebidos | Nota |
 |---|---|---|
-| `DOW-UAP-PR*` (Releases 01/02/04/05) | 49 | Ver tabla PURSUE arriba |
+| `DOW-UAP-PR*` (Releases 01/02/04/05) | 50 | Ver tabla PURSUE arriba |
 | `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
 | `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 8 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
 | Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
@@ -32,11 +32,13 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
 | Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
 | Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
-| **Total** | **83 en 36 casos** | |
+| **Total** | **84 en 37 casos** | |
 
 **Revisión dirigida de Release 02 (ago 2026, tras feedback del usuario)**: el descarte categórico de los 31 videos restantes de Release 02 no aplicaba el mismo criterio de "morfología/comportamiento distintivo" usado para rescatar 3 casos de Release 01. Revisión de las 31 descripciones completas encontró 2 más con valor real: `PR050` (formación de 4 objetos que sí coincide con su título, caso de control) y `PR054` (donde la AARO señala EXPLÍCITAMENTE que "las alteraciones digitales... influyen significativamente en el desempeño aparente" — la confirmación más limpia del patrón título-vs-descripción de todo el lote). Quedan ~29 sin caso propio, genuinamente sin informe ni comportamiento distintivo tras esta segunda pasada.
 
 **Misma revisión aplicada a Release 04/05 (ago 2026)**: de los 19 videos restantes (11 de Release 04, 8 de Release 05), 2 calificaron: `PR115` trae un "AARO Comment" —formato poco común— explicando la física del parpadeo térmico en sensores IR, contenido pedagógico que no existe en el resto del corpus. `PR106` (hallado en una revisión posterior, un tercer paso de la misma auditoría) tiene un debrief acompañante (DOW-UAP-D089) con descripción morfológica real ('apariencia metálica', 'parte inferior reflectante') que el metraje de apenas 3-4 segundos útiles no logra sostener — el mismo grupo de debriefs que ya había producido `eastern-us-civilian-sensor-2019` (D090) y `atlantic-ocean-balloon-2020` (D091), pero que se había pasado por alto en la primera pasada. Los otros 17 se mantienen sin caso propio: se revisaron sus descripciones completas y no muestran comportamiento distintivo, admisión de edición, comentario técnico ni debrief acompañante.
+
+**Barrido sistemático final sobre los 62 videos aún pendientes (ago 2026)**: dos pasadas grep sobre el `og:description` completo de los 62 restantes. La primera (`debrief|mission report|accompanying`) no encontró más casos con informe acompañante — confirma que `PR106`/D089 fue el último de ese patrón. La segunda (`AARO Comment|AARO assesses|...`) encontró un hallazgo genuino: `PR45` (id 1006105, Release 01) trae un "AARO Comment" explicando que el aumento aparente de tamaño del objeto en pantalla se debe al cierre de distancia de la propia plataforma, no al objeto → `middle-east-closing-distance-2020`. Es el reverso analítico de `PR115`/`gulf-america-thermal-camouflage-2019` (mismo género de comentario correctivo, geometría de observación en vez de artefacto de sensor). Con este hallazgo, las dos pasadas de grep sobre los 62 pendientes quedan agotadas: no quedan más candidatos con debrief, admisión de edición o comentario técnico de la AARO detectables por este método.
 
 > **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
@@ -65,7 +67,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 - [ ] `PR42` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006097)
 - [ ] `PR43` · 01.01.2025 — unresolved-uap-report-africa-2025 · [ver](https://www.dvidshub.net/video/1006159)
 - [ ] `PR44` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006104)
-- [ ] `PR45` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006105)
+- [x] `PR45` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `middle-east-closing-distance-2020` · [ver](https://www.dvidshub.net/video/1006105)
 - [x] `PR46` · 01.01.2024 — unresolved-uap-report-indopacom-2024 → `football-shaped-projections-2024` · [ver](https://www.dvidshub.net/video/1006106)
 - [x] `PR47` · 01.01.2023 — unresolved-uap-report-indopacom-2023 → `three-objects-fixed-formation-2023` · [ver](https://www.dvidshub.net/video/1006107)
 - [ ] `PR48` · 01.01.2024 — unresolved-uap-report-indopacom-2024 · [ver](https://www.dvidshub.net/video/1006110)

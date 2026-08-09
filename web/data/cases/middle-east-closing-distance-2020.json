@@ -1,0 +1,78 @@
+{
+  "id": "middle-east-closing-distance-2020",
+  "num": 372,
+  "pursueReleases": [1],
+  "name": "El objeto no crecía: la plataforma se acercaba",
+  "name_en": "The object wasn't growing: the platform was closing in",
+  "year_start": 2020,
+  "country": "US",
+  "country_name": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 33,
+    "lng": 44,
+    "place": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
+    "place_en": "Middle East, CENTCOM area of responsibility (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 18,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.52,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.29
+  },
+  "summary": "En 2020, la Fuerza Aérea de EE.UU. sometió a la AARO un reporte de 58 segundos de metraje infrarrojo sobre Oriente Medio, sin descripción alguna del testigo. El sensor sigue un área de contraste que 'aumenta gradualmente en distintividad' y luego, al hacer zoom, 'aumenta en tamaño y distintividad aparentes'. La AARO adjuntó un comentario técnico infrecuente en el corpus: ese aumento de tamaño se debe, al menos en parte, a que la propia plataforma se acercaba al objeto — no a que el objeto creciera o se aproximara por su cuenta.",
+  "summary_en": "In 2020, the U.S. Air Force submitted a report to AARO consisting of 58 seconds of infrared footage over the Middle East, with no witness description at all. The sensor tracks an area of contrast that 'gradually increases in distinctiveness' and then, after zooming in, 'increases in apparent size and distinctiveness.' AARO attached a technical comment rare in this corpus: that apparent growth is at least partly due to the platform itself closing the distance to the object — not the object growing or approaching on its own.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006105",
+      "type": "video",
+      "title": "DOW-UAP-PR45 — el área de contraste 'aumenta en tamaño aparente'; la AARO lo atribuye al cierre de distancia de la plataforma (58 s)",
+      "title_en": "DOW-UAP-PR45 — the area of contrast 'increases in apparent size'; AARO attributes it to the platform closing distance (58 s)",
+      "source": "US Air Force, con comentario técnico de la AARO, vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006105"
+    }
+  ],
+  "whatHappened": "En algún momento de 2020, la Fuerza Aérea de Estados Unidos sometió formalmente a la AARO un reporte de fenómeno anómalo no identificado, catalogado como DOW-UAP-PR45, consistente en 58 segundos de metraje capturado por un sensor infrarrojo a bordo de una plataforma militar sobre Oriente Medio, dentro del área de responsabilidad del Mando Central (CENTCOM). El reportero no proporcionó descripción oral ni escrita alguna de la observación — a diferencia de otros expedientes del corpus, aquí no hay debrief ni testimonio que acompañe el video.\n\nLa descripción visual oficial, con marcas de tiempo, documenta una secuencia simple: entre los segundos 0 y 3, el sensor sigue un área de contraste tras adquirir un bloqueo de retícula (reticle lock); entre los segundos 4 y 30, el área de contraste 'aumenta gradualmente en distintividad' contra el fondo; en el segundo 31, el sensor reduce su campo de visión para hacer zoom sobre el área de contraste; entre los segundos 32 y 56, el área de contraste 'aumenta en tamaño y distintividad aparentes'; entre los segundos 57 y 58, el área de contraste sale del centro del encuadre y desaparece del campo de visión del sensor, saliendo de escena por la esquina inferior derecha de la pantalla.\n\nA diferencia de la mayoría de las fichas revisadas esta sesión, esta trae un párrafo adicional bajo el encabezado 'Comentario de la AARO' (AARO Comment): 'el aumento aparente de tamaño del área de contraste probablemente se debe, al menos en parte, a que la plataforma estadounidense estaba cerrando la distancia entre sí misma y la fuente de la detección'. Es decir, la AARO ofrece una explicación alternativa y mundana para el comportamiento más llamativo del clip —un objeto que parece crecer progresivamente en tamaño durante casi un minuto— antes de que cualquier lector pueda interpretarlo como un objeto que se acerca o se expande por iniciativa propia.\n\nEl material se subió a DVIDS el 8 de mayo de 2026, dentro de la primera entrega de PURSUE, sin coordenadas, identificación de plataforma ni fecha exacta dentro de 2020.",
+  "whatHappened_en": "At some point in 2020, the U.S. Air Force formally submitted a report of an unidentified anomalous phenomenon to AARO, catalogued as DOW-UAP-PR45, consisting of 58 seconds of footage captured by an infrared sensor aboard a military platform over the Middle East, within Central Command's (CENTCOM) area of responsibility. The reporter provided no oral or written description of the observation at all — unlike other files in the corpus, there is no debrief or testimony accompanying this video.\n\nThe official timestamped visual description documents a simple sequence: between seconds 0 and 3, the sensor tracks an area of contrast after acquiring a reticle lock; between seconds 4 and 30, the area of contrast 'gradually increases in distinctiveness' against the background; at second 31, the sensor narrows its field of view to zoom in on the area of contrast; between seconds 32 and 56, the area of contrast 'increases in apparent size and distinctiveness'; between seconds 57 and 58, the area of contrast leaves the center of the frame and passes out of the sensor's field of view, exiting the scene in the bottom right corner of the screen.\n\nUnlike most records reviewed this session, this one carries an additional paragraph under the heading 'AARO Comment': 'the area of contrast's apparent increase in size is likely to be at least partially attributable to the U.S. platform closing the distance between itself and the source of the detection.' In other words, AARO offers an alternative, mundane explanation for the clip's most striking behavior —an object that appears to progressively grow in size over nearly a minute— before any reader could interpret it as an object approaching or expanding on its own.\n\nThe material was uploaded to DVIDS on May 8, 2026, within PURSUE's first drop, with no coordinates, platform identification, or exact date within 2020.",
+  "whyMatters": "Este expediente es el reverso analítico del caso del Golfo de América ([[gulf-america-thermal-camouflage-2019]]): allí la AARO explicaba por qué un objeto parpadea (un artefacto del propio sensor); aquí explica por qué un objeto parece crecer (un artefacto de la geometría de observación). Ambos son ejemplos del mismo género infrecuente en el corpus —un comentario técnico que interviene activamente para prevenir una lectura errónea— y ambos apuntan al mismo problema metodológico de fondo: sin ese comentario, un lector razonable podría interpretar 'el objeto aumenta de tamaño durante casi un minuto' como evidencia de un objeto que se aproxima deliberadamente, o incluso que se expande físicamente, cuando la explicación más simple es que la cámara, no el objeto, es la que se mueve.\n\nEl efecto que la AARO describe —cierre de distancia entre plataforma y objetivo produciendo un aumento aparente de tamaño en pantalla— es geometría de proyección elemental: cualquier objeto fijo o de movimiento lento parecerá crecer si el observador (aquí, una plataforma aérea) se desplaza hacia él. Es exactamente el tipo de artefacto que, sin un observador capacitado para reconocerlo, alimenta narrativas de 'aproximación inteligente' o 'materialización' en metraje que en realidad solo documenta el propio vuelo de la plataforma que graba.\n\nLo notable es lo que este expediente NO tiene: no hay testimonio del reportero, no hay debrief, no hay coordenadas ni identificación de plataforma. Es, en ese sentido, el caso más desnudo del corpus —solo el video, la descripción instrumental y el comentario correctivo de la AARO—, lo que hace su valor casi puramente metodológico: una ilustración de cómo un fenómeno visualmente dramático (un objeto que 'crece' sostenidamente durante casi un minuto) puede tener una explicación completamente prosaica en la cinemática de la propia plataforma observadora, sin que eso implique nada sobre la naturaleza del objeto detectado, que permanece sin identificar.",
+  "whyMatters_en": "This file is the analytical mirror of the Gulf of America case ([[gulf-america-thermal-camouflage-2019]]): there, AARO explained why an object flickers (a sensor artifact); here it explains why an object appears to grow (an observation-geometry artifact). Both are examples of the same uncommon genre in this corpus —a technical comment that actively intervenes to head off a misreading— and both point to the same underlying methodological problem: without that comment, a reasonable reader could interpret 'the object grows for nearly a minute' as evidence of an object deliberately approaching, or even physically expanding, when the simpler explanation is that the camera, not the object, is the one moving.\n\nThe effect AARO describes —platform-to-target distance closing, producing an apparent on-screen size increase— is elementary projection geometry: any fixed or slow-moving object will appear to grow if the observer (here, an airborne platform) moves toward it. It is exactly the kind of artifact that, without a trained observer to recognize it, feeds narratives of 'intelligent approach' or 'materialization' in footage that in reality only documents the recording platform's own flight path.\n\nWhat's notable is what this file does NOT have: no reporter testimony, no debrief, no coordinates or platform identification. In that sense it is the corpus's barest case —just the video, the instrumental description, and AARO's corrective comment— which makes its value almost purely methodological: an illustration of how a visually dramatic phenomenon (an object that steadily 'grows' for nearly a minute) can have a fully prosaic explanation in the observing platform's own kinematics, without that implying anything about the nature of the detected object, which remains unidentified.",
+  "evidence": [
+    "2020: la Fuerza Aérea de EE.UU. somete a la AARO 58 segundos de metraje IR sobre Oriente Medio (área CENTCOM)",
+    "El reportero no proporcionó descripción oral ni escrita — no hay debrief que acompañe el video",
+    "Descripción visual oficial: el área de contraste 'aumenta gradualmente en distintividad' y luego 'en tamaño y distintividad aparentes' tras el zoom",
+    "La AARO adjunta un 'AARO Comment' atribuyendo el aumento de tamaño al cierre de distancia de la propia plataforma, no al objeto",
+    "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2020: the U.S. Air Force submits 58 seconds of IR footage to AARO over the Middle East (CENTCOM area)",
+    "The reporter provided no oral or written description — no debrief accompanies the video",
+    "Official visual description: the area of contrast 'gradually increases in distinctiveness,' then 'in apparent size and distinctiveness' after zooming",
+    "AARO attaches an 'AARO Comment' attributing the size increase to the platform's own closing distance, not the object",
+    "Released in PURSUE Release 01 (May 8, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR45, con comentario técnico de la AARO sobre el cierre de distancia de la plataforma",
+      "url": "https://www.dvidshub.net/video/1006105",
+      "note": "Video embebido en el visor de este caso; la ficha incluye el 'AARO Comment' citado en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR45, with AARO's technical comment on the platform's closing distance",
+      "url": "https://www.dvidshub.net/video/1006105",
+      "note": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
+    }
+  ]
+}
