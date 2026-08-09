@@ -1,0 +1,80 @@
+{
+  "id": "uso-formation-nonlinear-edit-2024",
+  "num": 373,
+  "pursueReleases": [2],
+  "name": "'Formación USO': ocho minutos, y el final del clip no va al final",
+  "name_en": "'USO Formation': eight minutes, and the clip's ending isn't the ending",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Ubicación no revelada (red clasificada, lote FOIA Reeves)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 39,
+    "lng": -98,
+    "place": "Ubicación no revelada — sin área de responsabilidad especificada (lote FOIA Reeves)",
+    "place_en": "Undisclosed location — no area of responsibility specified (Reeves FOIA batch)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 16,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.38,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.02,
+    "indet": 0.44
+  },
+  "patterns": ["8b", "8d"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007708",
+      "type": "video",
+      "title": "DOW-UAP-PR052 — título de uploader 'UAP USO Formation'; 8 minutos con corte no lineal en el segmento final",
+      "title_en": "DOW-UAP-PR052 — uploader title 'UAP USO Formation'; 8 minutes with a non-linear cut in the final segment",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007708"
+    }
+  ],
+  "summary": "Un clip de 8 minutos y 16 segundos —notablemente más largo que la mayoría de los videos de este lote, típicamente de segundos a un par de minutos— circula con el título 'UAP USO Formation [CALLSIGN] (Mission)', sugiriendo un objeto submarino no identificado en formación. La descripción visual oficial de la AARO sí muestra cuatro áreas de contraste cruzando el encuadre juntas al inicio, pero advierte que el video fue alterado digitalmente antes de subirse a la red clasificada, con múltiples cortes internos, y que sus últimos cinco segundos probablemente sean una repetición de un segmento anterior, no una continuación cronológica. Parte del lote de 50 videos de Release 02 (origen FOIA/red clasificada).",
+  "summary_en": "An 8-minute-16-second clip —notably longer than most videos in this batch, typically seconds to a couple of minutes— circulates under the title 'UAP USO Formation [CALLSIGN] (Mission),' suggesting an unidentified submerged object in formation. AARO's official visual description does show four areas of contrast crossing the frame together at the start, but warns the video was digitally altered before being uploaded to the classified network, with multiple internal cuts, and that its final five seconds are likely a repeat of an earlier segment rather than a chronological continuation. Part of the 50-video Release 02 batch (FOIA/classified-network origin).",
+  "whatHappened": "Este clip de 8 minutos y 16 segundos, catalogado como DOW-UAP-PR052, forma parte del mismo lote de 50 videos que la AARO localizó en una red clasificada al responder, en 2026, una solicitud FOIA de ocho congresistas por 51 registros potencialmente relacionados con UAP.\n\nEl título 'UAP USO Formation [CALLSIGN] (Mission)' es, según la evaluación de la AARO, 'definido por el usuario' que subió el archivo a la red clasificada en junio de 2024, no una designación del Departamento de Guerra. La sigla 'USO' (Unidentified Submerged Object, objeto submarino no identificado) sugiere un contexto marítimo, pero a diferencia de otros expedientes con contexto acuático explícito en el corpus, ni el título completo ni la descripción visual de la AARO mencionan agua, superficie oceánica ni ningún elemento que confirme un entorno submarino o costero — la AARO solo evalúa como 'probable', sin confirmarlo, que el metraje derive de un sensor infrarrojo a bordo de una plataforma militar de EE.UU., sin especificar mando de área de responsabilidad alguno.\n\nLa descripción visual, con marcas de tiempo, es inusualmente extensa para este lote: entre los segundos 0 y 5, cuatro áreas de contraste transitan el encuadre desde el tercio inferior izquierdo hasta el tercio inferior derecho de la pantalla —el elemento de 'formación' que el título anuncia—; entre los segundos 6 y 38, el video 'parece cortar', reencuadrando sobre las mismas cuatro áreas de contraste, con elementos visuales del sensor entrando y saliendo de pantalla; entre los minutos 0:39 y 6:08 —más de cinco minutos y medio, la porción más larga del clip—, el video 'parece cortar varias veces, aplicando distintos filtros de contraste y niveles de zoom'; entre los minutos 6:09 y 6:50, el sensor hace zoom sobre las cuatro áreas de contraste; entre los minutos 6:51 y 8:10, las áreas de contraste 'se vuelven cada vez más indistinguibles conforme la calidad del video se degrada'; y en los últimos cinco segundos, entre 8:11 y 8:15, el video 'parece cortar, o hacer zoom out, probablemente cortando a una porción anterior del video, con las áreas de contraste más visibles' — es decir, la propia AARO señala que el final del clip probablemente no es cronológicamente el final, sino una repetición de un segmento previo.\n\nEl material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, sin coordenadas, plataforma ni declaración de tripulación.",
+  "whatHappened_en": "This 8-minute-16-second clip, catalogued as DOW-UAP-PR052, is part of the same 50-video batch AARO located on a classified network in 2026 while responding to a FOIA request from eight members of Congress for 51 potentially UAP-related records.\n\nThe title 'UAP USO Formation [CALLSIGN] (Mission)' is, per AARO's assessment, 'user-defined' by whoever uploaded the file to the classified network in June 2024, not a Department of War designation. The acronym 'USO' (Unidentified Submerged Object) suggests a maritime context, but unlike other files in the corpus with explicit aquatic context, neither the full title nor AARO's visual description mentions water, an ocean surface, or any element confirming a submerged or coastal environment — AARO only assesses as 'likely,' without confirming, that the footage derives from an infrared sensor aboard a U.S. military platform, without specifying any area-of-responsibility command at all.\n\nThe timestamped visual description is unusually extensive for this batch: between seconds 0 and 5, four areas of contrast transit the frame from the lower-left third to the lower-right third of the screen —the 'formation' element the title announces—; between seconds 6 and 38, the video 'appears to cut,' reframing on the same four areas of contrast, with sensor display elements entering and exiting the screen; between minutes 0:39 and 6:08 —over five and a half minutes, the clip's longest portion—, the video 'seems to cut multiple times, applying various contrast filters and zoom levels'; between minutes 6:09 and 6:50, the sensor zooms in on the four areas of contrast; between minutes 6:51 and 8:10, the areas of contrast 'become increasingly indistinct as the video quality degrades'; and in the final five seconds, between 8:11 and 8:15, the video 'appears to cut, or zoom out, likely cutting to an earlier portion of the video, with the areas of contrast more visible' — in other words, AARO itself flags that the clip's ending is likely not chronologically the end, but a repeat of an earlier segment.\n\nThe material was uploaded to DVIDS on May 22, 2026, within PURSUE's second drop, with no coordinates, platform, or crew statement.",
+  "whyMatters": "Este expediente combina dos elementos que, por separado, ya aparecen en otros casos de este lote, pero rara vez juntos con esta claridad. Por un lado, comparte con PR050 ([[four-object-formation-iran-2022]]) el patrón de cuatro áreas de contraste cruzando el encuadre en formación al inicio del clip —el elemento central que el título promete sí aparece en la descripción instrumental—. Por otro, comparte con PR054 ([[spherical-erratic-editing-artifact-2022]]) una admisión explícita de alteración digital, pero aquí la AARO va un paso más allá: no solo señala que el video fue editado, sino que su segmento final probablemente NO es una continuación cronológica sino una repetición de metraje anterior ('likely cutting to an earlier portion of the video'). De los cerca de 50 videos de Release 02 revisados, es el único donde la propia descripción oficial cuestiona el orden temporal del clip, no solo su integridad.\n\nA esto se suma la duración: 8 minutos y 16 segundos es varias veces más largo que el promedio del lote (segundos a un par de minutos), y más de cinco de esos minutos —la porción central— se describen como una sucesión de cortes con filtros y niveles de zoom cambiantes, sin contenido nuevo verificable. Un metraje tan extensamente editado, con reencuadres y cortes múltiples documentados por la propia AARO, es terreno fértil para artefactos de compilación: fragmentos de tomas distintas —o de la misma toma revisitada— empalmados para dar la impresión de una secuencia continua más larga y dramática que lo que el sensor realmente captó de forma ininterrumpida.\n\nEl título también sobre-promete en otro sentido: 'USO' implica un objeto submarino, pero ni el título completo ni la descripción visual mencionan agua o contexto marítimo alguno —otro caso, como PR050, de un título construido para maximizar impacto narrativo por encima de lo que el propio expediente puede sostener—. La lectura prosaica más directa para los cuatro objetos en sí sigue siendo una formación de drones o aeronaves convencionales grabada, editada y re-comprimida múltiples veces antes de llegar a DVIDS, con una cadena de custodia que la AARO misma califica de no sustanciada.",
+  "whyMatters_en": "This file combines two elements that, separately, already appear in other cases from this batch, but rarely together this clearly. On one hand, it shares with PR050 ([[four-object-formation-iran-2022]]) the pattern of four areas of contrast crossing the frame in formation at the clip's start —the title's central promise does appear in the instrumental description—. On the other, it shares with PR054 ([[spherical-erratic-editing-artifact-2022]]) an explicit digital-alteration admission, but here AARO goes a step further: it doesn't just flag that the video was edited, but that its final segment likely is NOT a chronological continuation but a repeat of earlier footage ('likely cutting to an earlier portion of the video'). Of the roughly 50 Release 02 videos reviewed, this is the only one where the official description itself questions the clip's temporal order, not just its integrity.\n\nAdd to that the duration: 8 minutes 16 seconds is several times longer than the batch average (seconds to a couple of minutes), and over five of those minutes —the central portion— are described as a succession of cuts with shifting filters and zoom levels, with no verifiable new content. Footage this extensively edited, with multiple documented reframings and cuts, is fertile ground for compilation artifacts: fragments from different takes —or the same take revisited— spliced together to give the impression of a longer, more dramatic continuous sequence than what the sensor actually captured uninterrupted.\n\nThe title also over-promises in another sense: 'USO' implies a submerged object, but neither the full title nor the visual description mentions water or any maritime context at all —another instance, like PR050, of a title built to maximize narrative impact beyond what the file itself can support—. The most direct prosaic reading for the four objects themselves remains a formation of drones or conventional aircraft, recorded, edited, and re-compressed multiple times before reaching DVIDS, with a chain of custody AARO itself calls unsubstantiated.",
+  "evidence": [
+    "Título 'USO Formation' es etiqueta de usuario, no designación del Departamento de Guerra; ningún término del título ni de la descripción confirma contexto acuático",
+    "Descripción visual oficial: cuatro áreas de contraste cruzan el encuadre juntas en los primeros 5 segundos (coincide con 'formación' del título)",
+    "Duración de 8:16 — varias veces más larga que el promedio del lote de 50 videos de Release 02",
+    "AARO señala múltiples cortes internos y que el segmento final (8:11-8:15) probablemente repite una porción anterior, no continúa cronológicamente",
+    "AARO advierte: el lote de 50 videos (incluido este) 'carece de una cadena de custodia sustanciada'",
+    "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "Title 'USO Formation' is a user label, not a Department of War designation; nothing in the title or description confirms an aquatic context",
+    "Official visual description: four areas of contrast cross the frame together in the first 5 seconds (matches the title's 'formation')",
+    "Duration of 8:16 — several times longer than the Release 02 batch's 50-video average",
+    "AARO flags multiple internal cuts and that the final segment (8:11-8:15) likely repeats an earlier portion rather than continuing chronologically",
+    "AARO warns: the 50-video batch (including this one) 'lacks a substantiated chain-of-custody'",
+    "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR052, título definido por el uploader, con descripción visual y advertencia de corte no lineal de la AARO (lote FOIA Reeves, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007708",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual con marcas de tiempo citada en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR052, uploader-defined title, with AARO's visual description and non-linear cut warning (Reeves FOIA batch, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007708",
+      "note": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened."
+    }
+  ]
+}
