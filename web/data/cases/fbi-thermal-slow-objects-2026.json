@@ -34,6 +34,15 @@
   "category": "incident",
   "documents": [
     {
+      "src": "https://www.dvidshub.net/video/embed/1017801",
+      "type": "video",
+      "title": "FBI-UAP-PR007 — 'Slow-moving Objects', metraje térmico de la primera noche, correspondiente al FD-302 D032",
+      "title_en": "FBI-UAP-PR007 — 'Slow-moving Objects', first-night thermal footage, corresponding to FD-302 D032",
+      "source": "Agente especial del gobierno de EE.UU. (dispositivo óptico térmico portátil), vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017801"
+    },
+    {
       "src": "/pursue/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D032 — FD-302, primera noche: detección RF y observación térmica",
@@ -74,6 +83,12 @@
   ],
   "sources": [
     {
+      "name": "DVIDS — FBI-UAP-PR007, 'Slow-moving Objects', metraje térmico de la primera noche (PURSUE Release 05)",
+      "url": "https://www.dvidshub.net/video/1017801",
+      "note": "Video embebido en el visor de este caso; corresponde al incidente descrito en FBI-UAP-D032.",
+      "note_en": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032."
+    },
+    {
       "name": "war.gov/UFO — FBI-UAP-D032, FD-302 primera noche (PURSUE Release 05)",
       "url": "https://www.war.gov/UFO/",
       "note": "Documento embebido en el visor de este caso.",
@@ -87,6 +102,12 @@
     }
   ],
   "sources_en": [
+    {
+      "name": "DVIDS — FBI-UAP-PR007, 'Slow-moving Objects', first-night thermal footage (PURSUE Release 05)",
+      "url": "https://www.dvidshub.net/video/1017801",
+      "note": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032.",
+      "note_en": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032."
+    },
     {
       "name": "war.gov/UFO — FBI-UAP-D032, first-night FD-302 (PURSUE Release 05)",
       "url": "https://www.war.gov/UFO/",

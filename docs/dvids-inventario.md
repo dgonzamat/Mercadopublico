@@ -17,10 +17,10 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | **Release 02** | 22 may 2026 | 50 | 19 |
 | **Release 04** | 10 jul 2026 | 19 | 3 |
 | **Release 05** | 7 ago 2026 | 15 | 6 |
-| **Release 03** | 12 jun 2026 | **0** | — |
-| | | **111** | **45** |
+| **Release 03** | 12 jun 2026 | 6 | 6 |
+| | | **117** | **51** |
 
-> El **Release 03 no publicó video** en DVIDS: ninguno de los 111 tiene fecha de publicación del 12 de junio de 2026.
+> **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
 
 ## Release 01 — 8 may 2026 (27 videos)
@@ -155,3 +155,20 @@ Búsqueda más amplia que `q=DOW-UAP` destapó **27 videos adicionales**, ningun
 - [x] `Middle East Object` (2022) + audiencia completa del Senado (19 abr 2023) — agregados a `mosul-orb-2016`
 - [x] `South Asian Object 1/2` — caso propio `south-asian-object-2023` (resuelto: aeronave comercial + artefacto de compresión)
 - [x] `Western U.S. Objects` (2 versiones) — caso propio `western-us-objects-2021` (resuelto: 3 aeronaves comerciales confirmadas por radar)
+
+## Serie separada · FBI-UAP-PR (Release 03, hallada vía `q=FBI-UAP`)
+
+Los 6 videos del Release 03 (12 jun 2026) — que la búsqueda `q=DOW-UAP` y el tag `AARO061226` no encontraban — usan la serie `FBI-UAP-PR001`…`PR006` (IDs DVIDS 1010263-1010276), con evaluación de credibilidad del testigo hecha explícitamente por el FBI (no la AARO). Dos grupos temáticos distintos:
+
+- [x] `FBI-UAP-PR001` "Triangle-Orbs" (nov 2021) — `PR002` "Red Orb Rotation" (mar 2022) — `PR003` "Orbs Over the Pond" (oct 2024, autenticado por el gobierno) — `PR004` (jul 2025, 2 testigos) → agregados en `northeastern-us-orbs-2021-2025`: 4 avistamientos dentro de un radio de 25 millas en el mismo tramo rural del noreste de EE.UU. a lo largo de casi 4 años. Documentos de respaldo referenciados (FBI-UAP-D004 a D010) no localizados como activos independientes en DVIDS.
+- [x] `FBI-UAP-PR005`/`PR006` "Narrative Statement 3-1"/"3-2" (2023) → caso propio `western-sensitive-site-recreation-2023`: recreaciones digitales (no metraje real) de un incidente de 2 días cerca de un sitio sensible de seguridad nacional en el oeste de EE.UU., reportado por un agente especial federal, preparadas por el FBI a pedido del Departamento de Guerra en 2026.
+
+**Bonus del mismo barrido** (`q=orb+UAP`, `q=plasma+UAP`): los videos oficiales de **FLIR** (id 955825), **GOFAST** (956683) y **GIMBAL** (956955) —los tres videos Navy más famosos del ciclo UAP moderno, ya desclasificados desde 2020— también están espejados en DVIDS. Se agregaron a `nimitz-2004` (FLIR) y `roosevelt-2014` (GOFAST + GIMBAL), que antes solo tenían una imagen de contexto sin el video primario.
+
+**Segunda pasada — diff de IDs vs. corpus (`q=UAP` paginado, todo tipo video)**: se generó una lista completa de IDs de video que devuelve DVIDS para `q=UAP` y se comparó contra los ya catalogados, revelando series adicionales no descubiertas por los términos de búsqueda anteriores:
+- **`NASA-UAP-D008`…`D025`+** (IDs 1007870-1010337): audio histórico de misiones Apollo/Mercury (incluida la entrevista con Gordon Cooper de 1962 que `pursue-release-2026` ya cita). DVIDS los clasifica como `type=video` pero son pistas de audio — el schema del sitio no soporta `type: "audio"` todavía, así que no se embebieron; pendiente de decisión sobre si vale la pena extender el visor.
+- **`FBI-UAP-PR007`** "Slow-moving Objects" (id 1017801, Release 05): coincide exactamente con el caso ya existente `fbi-thermal-slow-objects-2026` (que solo tenía los PDF D032/D033) — se agregó el video real de la primera noche.
+- **"Puerto Rico Objects"** (id 944204) + reconstrucción STK (id 955936): el metraje FLIR original y la reconstrucción de trayectoria del caso Aguadilla 2013 — se agregaron ambos a `aguadilla-2013`, que antes solo tenía una foto de contexto.
+- **Video de la audiencia Scott Bray, 17 may 2022** (id 843593): la misma incursión de julio 2019 del caso `uss-russell-2019`, exhibida ante el Congreso, con lenguaje de resolución más categórico ("reclassified as unmanned aerial systems") que el ya citado en el caso — se agregó como documento y se amplió el texto.
+- [x] id 843620 ("Navy 2021 Flyby video", exhibido junto al de USS Russell en la misma audiencia de Bray) → caso propio `navy-2021-flyby`.
+- [x] id 944201 ("Mt. Etna Object", dic 2018, resuelto por la AARO como globo a 170 km de la caldera con confianza moderada) → caso propio `mt-etna-object-2018`.

@@ -63,6 +63,12 @@
       "note_en": "The Department of Defense confirmed the authenticity of the three videos in April 2020."
     },
     {
+      "name": "DVIDS — videos oficiales GIMBAL y GOFAST (mirror del Pentágono)",
+      "url": "https://www.dvidshub.net/video/956955",
+      "note": "Ambos videos van embebidos en el visor de este caso.",
+      "note_en": "Both videos are embedded in this case's viewer."
+    },
+    {
       "name": "US Navy — formularios «Range Fouler Debrief» (costa este 2019/2020 y Atlántico 2020)",
       "note": "Formularios estandarizados de reporte UAP de la Marina para aircrew — el mecanismo institucional detrás de las incursiones de la costa este. AARO UAP Records, release 04 (DOWUAPD089/090/091).",
       "note_en": "Navy standardized UAP reporting forms for aircrew — the institutional mechanism behind the East Coast incursions. AARO UAP Records, release 04 (DOWUAPD089/090/091)."
@@ -77,6 +83,24 @@
     "indet": 0.3
   },
   "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/956955",
+      "type": "video",
+      "title": "Video GIMBAL — objeto rotando sobre las nubes frente a Jacksonville, tripulación menciona 'toda una flota' en radar (20 ene 2015)",
+      "title_en": "GIMBAL video — object rotating above the clouds off Jacksonville, crew mentions 'a whole fleet' on radar (Jan 20, 2015)",
+      "source": "US Navy, oficialmente desclasificado por el Pentágono (abril 2020), vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/956955"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/956683",
+      "type": "video",
+      "title": "Video GOFAST — objeto desplazándose a baja altura sobre el océano Atlántico",
+      "title_en": "GOFAST video — object moving at low altitude over the Atlantic Ocean",
+      "source": "US Navy, oficialmente desclasificado por el Pentágono (abril 2020), vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/956683"
+    },
     {
       "src": "/pursue/roosevelt-2014-context.jpg",
       "type": "image",

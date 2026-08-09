@@ -1,0 +1,78 @@
+{
+  "id": "mt-etna-object-2018",
+  "num": 365,
+  "pursueReleases": [],
+  "name": "El objeto que parecía cruzar la nube de un volcán en erupción",
+  "name_en": "The object that appeared to cross an erupting volcano's plume",
+  "year_start": 2018,
+  "country": "IT",
+  "country_name": "Italia",
+  "flag": "🇮🇹",
+  "location": {
+    "lat": 37.75,
+    "lng": 15.0,
+    "place": "Mar Mediterráneo, cerca del Monte Etna, Sicilia",
+    "place_en": "Mediterranean Sea, near Mount Etna, Sicily"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 6,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.86,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.01,
+    "indet": 0.08
+  },
+  "summary": "En diciembre de 2018, un sensor infrarrojo de avance (FLIR) a bordo de una plataforma no tripulada de la Fuerza Aérea de EE.UU. registró metraje sobre el Mediterráneo que mostraba, aparentemente, un objeto cruzando la columna de gas sobrecalentado y ceniza de una erupción del Monte Etna, en Sicilia. La AARO coordinó un esfuerzo analítico interagencial e internacional y determinó que los efectos ópticos de las intensas condiciones atmosféricas cerca del volcán habían distorsionado el video, haciendo parecer que el objeto cruzaba la columna. La agencia evalúa con confianza moderada que el metraje muestra en realidad un globo a unos 170 kilómetros de la caldera, desplazándose a la velocidad y dirección del viento.",
+  "summary_en": "In December 2018, a forward-looking infrared (FLIR) sensor aboard an uncrewed U.S. Air Force platform recorded footage over the Mediterranean that appeared to show an object transiting the superheated gas and ash plume of an erupting Mount Etna, Sicily. AARO coordinated an interagency and international analytical effort and determined that optical effects from the intense atmospheric conditions near the volcano had distorted the video, making the object appear to cross the plume. The agency assesses with moderate confidence that the footage actually shows a balloon roughly 170 kilometers from the caldera, traveling at wind speed and direction.",
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/944201",
+      "type": "video",
+      "title": "'Mt. Etna Object' — metraje FLIR mostrando el objeto aparentemente cruzando la columna volcánica (dic 2018)",
+      "title_en": "'Mt. Etna Object' — FLIR footage showing the object apparently crossing the volcanic plume (Dec 2018)",
+      "source": "US Air Force, con evaluación de resolución de la AARO, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/944201"
+    }
+  ],
+  "whatHappened": "En diciembre de 2018, un sensor infrarrojo de avance (Forward-Looking Infrared, FLIR) a bordo de una plataforma no tripulada de la Fuerza Aérea de Estados Unidos operaba sobre el mar Mediterráneo, en las inmediaciones de Sicilia. Durante esa operación, el sensor capturó metraje que mostraba lo que parecía ser un objeto transitando una columna de gas sobrecalentado y ceniza — la pluma volcánica producida por una erupción del Monte Etna, uno de los volcanes activos más grandes de Europa, en ese momento en fase eruptiva.\n\nEl caso llegó a manos de la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), que coordinó lo que describe como un 'esfuerzo analítico interagencial e internacional' — es decir, no un análisis interno de una sola oficina, sino una colaboración entre múltiples agencias estadounidenses y, potencialmente, contrapartes de otros países (dada la ubicación en espacio aéreo/marítimo italiano). Ese esfuerzo determinó que los efectos ópticos derivados de las condiciones atmosféricas intensas cerca del volcán —temperatura, densidad del aire, refracción de la luz a través del calor ascendente y las partículas de ceniza— habían distorsionado la imagen del sensor, produciendo la ilusión visual de que un objeto discreto cruzaba la columna volcánica.\n\nLa evaluación final de la AARO, presentada con 'confianza moderada' —no alta, un matiz que la propia agencia consigna—, es que el metraje en realidad muestra un globo desplazándose a la velocidad y dirección del viento, a una distancia aproximada de 170 kilómetros de la caldera del volcán. Esa distancia es sustancial: implica que el objeto real no estaba cerca de la erupción en absoluto, y que fue la refracción óptica sobre la columna —vista desde el ángulo y la distancia del sensor— lo que produjo la superposición visual entre el objeto y el fenómeno volcánico, no una proximidad física real entre ambos.",
+  "whatHappened_en": "In December 2018, a Forward-Looking Infrared (FLIR) sensor aboard an uncrewed U.S. Air Force platform was operating over the Mediterranean Sea, in the vicinity of Sicily. During that operation, the sensor captured footage that appeared to show an object transiting a column of superheated gas and ash — the volcanic plume produced by an eruption of Mount Etna, one of Europe's largest active volcanoes, at that time in an eruptive phase.\n\nThe case reached the All-domain Anomaly Resolution Office (AARO), which coordinated what it describes as an 'interagency and international analytical effort' — that is, not a single office's internal analysis, but a collaboration among multiple U.S. agencies and, potentially, counterparts from other countries (given the location in Italian airspace/waters). That effort determined that optical effects stemming from the intense atmospheric conditions near the volcano —temperature, air density, light refraction through rising heat and ash particles— had distorted the sensor's image, producing the visual illusion of a discrete object crossing the volcanic column.\n\nAARO's final assessment, presented with 'moderate confidence' —not high, a nuance the agency itself notes— is that the footage actually shows a balloon traveling at wind speed and direction, at an estimated distance of about 170 kilometers from the volcano's caldera. That distance is substantial: it implies the real object was not near the eruption at all, and that it was optical refraction over the column —seen from the sensor's angle and distance— that produced the visual overlap between the object and the volcanic phenomenon, not any real physical proximity between the two.",
+  "whyMatters": "Este caso es valioso, ante todo, como ejemplo poco común de resolución transparente sobre un fenómeno óptico genuinamente sofisticado. La mayoría de los casos 'resueltos' del corpus involucran explicaciones directas —un globo visto de cerca, tres aviones comerciales a distancia—; aquí la propia distorsión atmosférica es el mecanismo central del error, no un simple problema de distancia o resolución del sensor. Que la AARO haya necesitado coordinar un esfuerzo interagencial e internacional para llegar a esa conclusión —en vez de resolverlo con un análisis interno rutinario— es un indicio de que el efecto óptico era, en efecto, convincente en pantalla.\n\nLa 'confianza moderada' con la que se presenta la conclusión, en vez de la confianza 'alta' que aparece en otros casos resueltos del corpus (como [[western-us-objects-2021]], con trayectorias de radar comerciales confirmadas de forma independiente), es un matiz honesto: la reconstrucción de un globo a 170 km de distancia, desplazándose con el viento, es la explicación más parsimoniosa disponible, pero no cuenta con el mismo tipo de dato cruzado e independientemente verificable (como un registro de tráfico aéreo comercial) que eleva a 'alta' la confianza en otros casos. Es un recordatorio útil de que 'resuelto por la AARO' no es un nivel único de certeza — la propia agencia gradúa su confianza caso por caso, y ese matiz vale la pena preservar en vez de aplanarlo a un genérico 'caso cerrado'.\n\nAnalíticamente, el caso también ilustra un mecanismo de error poco representado en el corpus: la refracción óptica sobre columnas de aire calentado —el mismo principio físico que produce el efecto de 'espejismo' sobre el asfalto caliente o el centelleo de las estrellas cerca del horizonte— puede, bajo condiciones extremas como las de una erupción volcánica activa, generar artefactos visuales sofisticados que un analista sin ese contexto geográfico y meteorológico específico podría malinterpretar fácilmente como comportamiento físico real de un objeto. Sirve como contraparte útil frente a casos de sensor sin resolver de este mismo corpus: un recordatorio de que algunos de los 'comportamientos anómalos' más convincentes en video pueden originarse enteramente en la física de la atmósfera, no en el objeto que aparenta moverse a través de ella.",
+  "whyMatters_en": "This case is valuable, above all, as an uncommon example of transparent resolution of a genuinely sophisticated optical phenomenon. Most 'resolved' cases in the corpus involve straightforward explanations —a balloon seen up close, three commercial aircraft at a distance—; here the atmospheric distortion itself is the central mechanism of the error, not simply a distance or sensor-resolution problem. That AARO needed to coordinate an interagency and international effort to reach that conclusion —rather than resolving it with routine internal analysis— is a sign the optical effect was, in fact, convincing on screen.\n\nThe 'moderate confidence' with which the conclusion is presented, rather than the 'high confidence' seen in other resolved cases in the corpus (such as [[western-us-objects-2021]], with independently confirmed commercial radar tracks), is an honest nuance: reconstructing a balloon 170 km away, drifting with the wind, is the most parsimonious explanation available, but it lacks the same kind of independently verifiable cross-referenced data (like a commercial air-traffic record) that raises confidence to 'high' in other cases. It's a useful reminder that 'resolved by AARO' is not a single level of certainty — the agency itself grades its confidence case by case, and that nuance is worth preserving rather than flattening into a generic 'case closed.'\n\nAnalytically, the case also illustrates an error mechanism underrepresented in the corpus: optical refraction over columns of heated air —the same physical principle that produces the 'mirage' effect over hot asphalt or the twinkling of stars near the horizon— can, under extreme conditions like an active volcanic eruption, generate sophisticated visual artifacts that an analyst without that specific geographic and meteorological context could easily misread as an object's real physical behavior. It serves as a useful counterpart to unresolved sensor cases elsewhere in this corpus: a reminder that some of the most convincing 'anomalous behaviors' on video can originate entirely in atmospheric physics, not in the object that appears to move through it.",
+  "evidence": [
+    "Diciembre 2018: sensor FLIR de plataforma USAF no tripulada registra metraje sobre el Mediterráneo cerca de Sicilia",
+    "El video muestra aparentemente un objeto cruzando la columna de una erupción del Monte Etna",
+    "AARO coordinó un esfuerzo analítico interagencial e internacional para resolver el caso",
+    "Conclusión (confianza moderada): la distorsión óptica de las condiciones atmosféricas cerca del volcán produjo la ilusión visual",
+    "El objeto real se evalúa como un globo a ~170 km de la caldera, desplazándose a velocidad y dirección del viento"
+  ],
+  "evidence_en": [
+    "December 2018: FLIR sensor aboard an uncrewed USAF platform records footage over the Mediterranean near Sicily",
+    "The video apparently shows an object crossing the plume of an erupting Mount Etna",
+    "AARO coordinated an interagency and international analytical effort to resolve the case",
+    "Conclusion (moderate confidence): optical distortion from atmospheric conditions near the volcano produced the visual illusion",
+    "The real object is assessed as a balloon ~170 km from the caldera, traveling at wind speed and direction"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 'Mt. Etna Object', con la evaluación de resolución completa de la AARO",
+      "url": "https://www.dvidshub.net/video/944201",
+      "note": "Video embebido en el visor de este caso; la ficha incluye el texto de resolución citado en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 'Mt. Etna Object', with AARO's full resolution assessment",
+      "url": "https://www.dvidshub.net/video/944201",
+      "note": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened."
+    }
+  ]
+}

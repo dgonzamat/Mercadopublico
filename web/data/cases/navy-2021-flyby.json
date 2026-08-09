@@ -1,0 +1,78 @@
+{
+  "id": "navy-2021-flyby",
+  "num": 366,
+  "pursueReleases": [],
+  "name": "El paso fugaz: un piloto naval cruza junto a un objeto desconocido",
+  "name_en": "The fleeting pass: a naval aviator flies by an unknown object",
+  "year_start": 2021,
+  "country": "US",
+  "country_name": "Estados Unidos (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 36,
+    "lng": -75,
+    "place": "Ubicación no revelada, posiblemente costa este de EE.UU.",
+    "place_en": "Undisclosed location, possibly U.S. East Coast"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.14,
+    "adversaria": 0.06,
+    "nohumano_encubierto": 0.08,
+    "nohumano_abierto": 0.04,
+    "indet": 0.28
+  },
+  "summary": "El 17 de mayo de 2022, en la primera audiencia pública del Congreso sobre UAP en más de 50 años, el Director Adjunto de Inteligencia Naval, Scott Bray, exhibió un video de 2021 capturado desde la cabina de un caza de la Marina de EE.UU.: un piloto pasa fugazmente junto a un objeto no identificado. Según la descripción oficial, el clip 'demuestra la velocidad típica a la que las aeronaves militares pueden aproximarse a un objeto desconocido' — un encuadre que enfatiza el procedimiento operativo antes que la naturaleza del objeto mismo, del cual no se ofrece ninguna otra descripción.",
+  "summary_en": "On May 17, 2022, at Congress's first public UAP hearing in over 50 years, Deputy Director of Naval Intelligence Scott Bray showed a 2021 video captured from the cockpit of a U.S. Navy fighter jet: a pilot passes fleetingly by an unidentified object. Per the official description, the clip 'demonstrates the typical speed at which military aircraft may approach an unknown object' — a framing that emphasizes operational procedure rather than the object's nature, about which no other description is offered.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/843620",
+      "type": "video",
+      "title": "'Navy 2021 Flyby video' — encuentro fugaz de un aviador naval con un objeto no identificado, exhibido ante el Congreso (17 may 2022)",
+      "title_en": "'Navy 2021 Flyby video' — naval aviator's fleeting encounter with an unidentified object, shown to Congress (May 17, 2022)",
+      "source": "US Navy, exhibido en audiencia pública del Congreso, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/843620"
+    }
+  ],
+  "whatHappened": "El 17 de mayo de 2022, ante el Subcomité de Contraterrorismo, Contrainteligencia y Contraproliferación de Inteligencia de la Cámara de Representantes, el Director Adjunto de Inteligencia Naval, Scott Bray, presentó públicamente un breve video capturado en 2021 desde la cabina de un caza de la Marina de Estados Unidos. Fue la misma audiencia en la que Bray exhibió el video de la 'incursión' del USS Russell ([[uss-russell-2019]]) — la primera audiencia pública del Congreso estadounidense dedicada a fenómenos aéreos no identificados en más de cinco décadas.\n\nEl clip, catalogado en DVIDS simplemente como 'Navy 2021 Flyby video', muestra a un aviador naval cruzando junto a un objeto no identificado en lo que la propia descripción oficial llama un 'paso fugaz' (fleeting pass). Según la ficha que acompaña la liberación pública del material, el video 'demuestra la velocidad típica a la que las aeronaves militares pueden aproximarse a un objeto desconocido'. Es un encuadre deliberadamente procedimental: el propósito declarado del video, al menos en su presentación oficial, es ilustrar la dinámica de un encuentro aire-aire a alta velocidad de cierre, no documentar o caracterizar la naturaleza del objeto en sí.\n\nMás allá de esa descripción, no hay información pública adicional sobre el expediente: ni ubicación, ni identificación de la aeronave o el escuadrón, ni fecha exacta dentro de 2021, ni declaración del piloto, ni evaluación posterior de la Marina sobre qué pudo haber sido el objeto. A diferencia del video del USS Russell, exhibido en la misma audiencia y para el cual existe tanto un análisis técnico externo (bokeh) como una reclasificación oficial posterior como sistemas no tripulados, este clip no cuenta con ningún seguimiento analítico público conocido.",
+  "whatHappened_en": "On May 17, 2022, before the House Intelligence Counterterrorism, Counterintelligence, and Counterproliferation Subcommittee, Deputy Director of Naval Intelligence Scott Bray publicly presented a brief video captured in 2021 from the cockpit of a U.S. Navy fighter jet. It was the same hearing at which Bray showed the USS Russell 'incursion' video ([[uss-russell-2019]]) — the first U.S. congressional public hearing dedicated to unidentified aerial phenomena in over five decades.\n\nThe clip, catalogued on DVIDS simply as 'Navy 2021 Flyby video,' shows a naval aviator passing by an unidentified object in what the official description itself calls a 'fleeting pass.' Per the record accompanying the material's public release, the video 'demonstrates the typical speed at which military aircraft may approach an unknown object.' It is a deliberately procedural framing: the video's stated purpose, at least in its official presentation, is to illustrate the dynamics of a high-closure-speed air-to-air encounter, not to document or characterize the object's nature itself.\n\nBeyond that description, there is no additional public information about the file: no location, no aircraft or squadron identification, no exact date within 2021, no pilot statement, and no subsequent Navy assessment of what the object might have been. Unlike the USS Russell video, shown at the same hearing and for which both an external technical analysis (bokeh) and a later official reclassification as unmanned systems exist, this clip has no known public analytical follow-up.",
+  "whyMatters": "Este expediente es interesante precisamente por lo que su encuadre oficial elige destacar y lo que omite. El texto que acompaña la liberación no dice 'esto es un objeto anómalo' ni 'esto es un dron identificado' — dice que el video 'demuestra la velocidad típica' del cierre entre una aeronave militar y un objeto desconocido. Es una declaración sobre la dinámica del encuentro, no sobre la identidad del objeto, y leerla como una u otra cosa sería sobre-interpretar lo que la propia fuente afirma.\n\nEsa brevedad deliberada contrasta con el tratamiento que recibió el otro video de la misma audiencia, el del USS Russell, que sí llegó acompañado de un análisis técnico externo detallado y, más tarde, de una reclasificación oficial. La ausencia de ese mismo nivel de seguimiento aquí no es evidencia de que el objeto sea más o menos anómalo — puede simplemente reflejar que la Marina consideró este segundo clip menos prioritario para análisis público, o que el 'paso fugaz' ofrece menos fotogramas útiles para un análisis de bokeh o de trayectoria que el clip más largo y estable del Russell.\n\nLa lectura prosaica más directa para un encuentro de cierre rápido, sin más detalle disponible, sigue las mismas líneas que gran parte del corpus de encuentros aéreos militares: tráfico aéreo convencional visto en una geometría de aproximación que dificulta la identificación inmediata, o un vehículo no tripulado de pequeño porte cruzando la ruta de vuelo. Sin telemetría, sin coordenadas y sin declaración del piloto disponible públicamente, el caso queda como uno de los expedientes institucionalmente mejor ubicados —exhibido ante el Congreso por un alto funcionario de inteligencia naval— pero con menos contenido analítico verificable que otros casos de procedencia similar en el corpus.",
+  "whyMatters_en": "This file is interesting precisely for what its official framing chooses to highlight and what it omits. The text accompanying the release does not say 'this is an anomalous object' or 'this is an identified drone' — it says the video 'demonstrates the typical speed' of the closure between a military aircraft and an unknown object. That is a statement about the encounter's dynamics, not the object's identity, and reading it as either would over-interpret what the source itself states.\n\nThat deliberate brevity contrasts with the treatment the other video from the same hearing received — the USS Russell one, which came with a detailed external technical analysis and, later, an official reclassification. The absence of that same level of follow-up here is not evidence the object is more or less anomalous — it may simply reflect that the Navy considered this second clip lower priority for public analysis, or that the 'fleeting pass' offers fewer usable frames for bokeh or trajectory analysis than the Russell clip's longer, steadier footage.\n\nThe most direct prosaic reading for a fast-closure encounter, with no further detail available, follows the same lines as much of the corpus's military air-encounter files: conventional air traffic seen at an approach geometry that hampers immediate identification, or a small uncrewed vehicle crossing the flight path. Without telemetry, coordinates, or a publicly available pilot statement, the case stands as one of the corpus's more institutionally well-placed files —shown to Congress by a senior naval intelligence official— but with less verifiable analytical content than other files of similar provenance in the corpus.",
+  "evidence": [
+    "2021: piloto naval de EE.UU. tiene un encuentro fugaz con un objeto no identificado, grabado desde cabina",
+    "Exhibido públicamente por el Director Adjunto de Inteligencia Naval, Scott Bray, ante el Congreso (17 may 2022)",
+    "Descripción oficial: el video 'demuestra la velocidad típica' de aproximación militar a un objeto desconocido — encuadre procedimental, no una caracterización del objeto",
+    "Sin ubicación, identificación de aeronave/escuadrón, fecha exacta, declaración del piloto ni seguimiento analítico público conocido",
+    "Misma audiencia que el video del USS Russell, que sí recibió análisis técnico externo y reclasificación oficial posterior"
+  ],
+  "evidence_en": [
+    "2021: a U.S. naval aviator has a fleeting encounter with an unidentified object, recorded from the cockpit",
+    "Publicly shown by Deputy Director of Naval Intelligence Scott Bray to Congress (May 17, 2022)",
+    "Official description: the video 'demonstrates the typical speed' of military approach to an unknown object — a procedural framing, not a characterization of the object",
+    "No location, aircraft/squadron identification, exact date, pilot statement, or known public analytical follow-up",
+    "Same hearing as the USS Russell video, which did receive external technical analysis and a later official reclassification"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 'Navy 2021 Flyby video', exhibido ante el Congreso por Scott Bray (17 may 2022)",
+      "url": "https://www.dvidshub.net/video/843620",
+      "note": "Video embebido en el visor de este caso.",
+      "note_en": "Video embedded in this case's viewer."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 'Navy 2021 Flyby video', shown to Congress by Scott Bray (May 17, 2022)",
+      "url": "https://www.dvidshub.net/video/843620",
+      "note": "Video embedded in this case's viewer.",
+      "note_en": "Video embedded in this case's viewer."
+    }
+  ]
+}
