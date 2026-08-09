@@ -20,6 +20,20 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | **Release 03** | 12 jun 2026 | 6 | 6 |
 | | | **117** | **51** |
 
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 78 documentos de video embebidos en 32 casos al cierre de esta sesión (ago 2026):
+
+| Serie | Videos embebidos | Nota |
+|---|---|---|
+| `DOW-UAP-PR*` (Releases 01/02/04/05) | 45 | Ver tabla PURSUE arriba |
+| `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
+| `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 7 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
+| Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
+| Videos Navy históricos (2004/2014-15, ya desclasificados) | 3 | FLIR→`nimitz-2004`; GOFAST+GIMBAL→`roosevelt-2014` |
+| Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
+| Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
+| Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
+| **Total** | **78 en 32 casos** | |
+
 > **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
 
