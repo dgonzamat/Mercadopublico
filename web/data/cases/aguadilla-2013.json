@@ -51,6 +51,18 @@
       "url": "https://www.explorescu.org/"
     },
     {
+      "name": "DVIDS — 'Puerto Rico Objects', metraje FLIR original de CBP",
+      "url": "https://www.dvidshub.net/video/944204",
+      "note": "Video embebido en el visor de este caso; el mismo material filtrado en 2015, ahora con mirror oficial.",
+      "note_en": "Video embedded in this case's viewer; the same material leaked in 2015, now with an official mirror."
+    },
+    {
+      "name": "DVIDS — reconstrucción digital de trayectoria (Systems Toolkit)",
+      "url": "https://www.dvidshub.net/video/955936",
+      "note": "Video embebido en el visor de este caso; sostiene la resolución de la AARO.",
+      "note_en": "Video embedded in this case's viewer; supports AARO's resolution."
+    },
+    {
       "name": "US Customs and Border Protection FLIR — video archive",
       "note": "Material primario filtrado 2015",
       "note_en": "Primary material leaked 2015"
@@ -73,6 +85,16 @@
       "url": "https://www.explorescu.org/"
     },
     {
+      "name": "DVIDS — 'Puerto Rico Objects', original CBP FLIR footage",
+      "url": "https://www.dvidshub.net/video/944204",
+      "note": "Video embedded in this case's viewer; the same material leaked in 2015, now with an official mirror."
+    },
+    {
+      "name": "DVIDS — digital trajectory reconstruction (Systems Toolkit)",
+      "url": "https://www.dvidshub.net/video/955936",
+      "note": "Video embedded in this case's viewer; supports AARO's resolution."
+    },
+    {
       "name": "US Customs and Border Protection FLIR — video archive",
       "note": "Primary material leaked in 2015"
     },
@@ -82,6 +104,24 @@
     }
   ],
   "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/944204",
+      "type": "video",
+      "title": "'Puerto Rico Objects' — metraje FLIR original de CBP: cruce aire-agua y división en dos objetos (26 abr 2013)",
+      "title_en": "'Puerto Rico Objects' — original CBP FLIR footage: air-water crossing and split into two objects (Apr 26, 2013)",
+      "source": "US Customs and Border Protection, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/944204"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/955936",
+      "type": "video",
+      "title": "Reconstrucción digital (Systems Toolkit) de la trayectoria de vuelo que sostiene la resolución de la AARO",
+      "title_en": "Digital reconstruction (Systems Toolkit) of the flight path supporting AARO's resolution",
+      "source": "AARO / socio de la comunidad de inteligencia, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/955936"
+    },
     {
       "src": "/pursue/aguadilla-2013-context.jpg",
       "type": "image",
