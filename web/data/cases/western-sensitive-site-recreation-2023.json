@@ -1,0 +1,89 @@
+{
+  "id": "western-sensitive-site-recreation-2023",
+  "num": 364,
+  "pursueReleases": [3],
+  "name": "El incidente que el FBI solo puede mostrar como una recreación digital",
+  "name_en": "The incident the FBI can only show as a digital recreation",
+  "year_start": 2023,
+  "country": "US",
+  "country_name": "Sitio sensible de seguridad nacional, oeste de EE.UU. (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 40,
+    "lng": -116,
+    "place": "Sitio sensible de seguridad nacional, oeste de EE.UU. (ubicación exacta no revelada)",
+    "place_en": "Sensitive national security site, western United States (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.3,
+    "humana_clasificada": 0.18,
+    "adversaria": 0.08,
+    "nohumano_encubierto": 0.1,
+    "nohumano_abierto": 0.06,
+    "indet": 0.28
+  },
+  "summary": "En 2023, un agente especial de las fuerzas del orden federal reportó un incidente de dos días cerca de un sitio sensible de seguridad nacional en el oeste de Estados Unidos. No existe metraje real del evento: lo que el FBI publicó, a pedido del Departamento de Guerra en 2026, son dos 'recreaciones digitales' —animaciones basadas en el relato de primera mano del agente— catalogadas como FBI-UAP-PR005 y PR006, tituladas internamente 'Narrative Statement 3-1' y '3-2'. Es el único caso del corpus donde el propio gobierno reconoce explícitamente que el material visual público no es una grabación del evento, sino una reconstrucción hecha años después a partir de testimonio oral.",
+  "summary_en": "In 2023, a federal law enforcement special agent reported a two-day incident near a sensitive national security site in the western United States. No actual footage of the event exists: what the FBI published, at the Department of War's request in 2026, are two 'digital recreations' —animations based on the agent's first-hand account— catalogued as FBI-UAP-PR005 and PR006, internally titled 'Narrative Statement 3-1' and '3-2.' It is the only case in the corpus where the government itself explicitly acknowledges that the public visual material is not a recording of the event, but a reconstruction made years later from oral testimony.",
+  "patterns": ["8d"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1010272",
+      "type": "video",
+      "title": "FBI-UAP-PR005 — Recreación digital, 'Narrative Statement 3-1', día 1 del incidente (2023)",
+      "title_en": "FBI-UAP-PR005 — Digital recreation, 'Narrative Statement 3-1', incident day 1 (2023)",
+      "source": "FBI, recreación preparada a pedido del Departamento de Guerra, vía DVIDS (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1010272"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1010276",
+      "type": "video",
+      "title": "FBI-UAP-PR006 — Recreación digital, 'Narrative Statement 3-2', día 2 del incidente (2023)",
+      "title_en": "FBI-UAP-PR006 — Digital recreation, 'Narrative Statement 3-2', incident day 2 (2023)",
+      "source": "FBI, recreación preparada a pedido del Departamento de Guerra, vía DVIDS (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1010276"
+    }
+  ],
+  "whatHappened": "En algún momento de 2023, un agente especial de las fuerzas del orden federal —la ficha oficial no precisa si pertenece al propio FBI o a otra agencia— reportó un incidente relacionado con fenómenos anómalos no identificados ocurrido cerca de un sitio sensible de seguridad nacional en el oeste de Estados Unidos, a lo largo de un período de dos días. La naturaleza 'sensible' del sitio implica, casi con certeza, una instalación militar, nuclear o de inteligencia cuya ubicación exacta el gobierno no ha revelado ni revelará como parte de esta liberación.\n\nA diferencia de prácticamente todo el resto del corpus —donde el material visual es, en mayor o menor medida, una grabación real de un sensor o de un testigo—, este expediente carece por completo de metraje original. Lo que el FBI produjo y el Departamento de Guerra publicó en la tercera entrega de PURSUE (12 de junio de 2026) son dos animaciones o 'recreaciones digitales', catalogadas como FBI-UAP-PR005 y FBI-UAP-PR006, con los títulos internos 'Narrative Statement 3-1' y 'Narrative Statement 3-2' — nomenclatura que sugiere que corresponden, respectivamente, al primer y segundo día del incidente de dos días reportado por el agente.\n\nSegún la ficha oficial de ambos videos, la recreación digital 'se basa en una descripción de primera mano proporcionada por un agente especial de las fuerzas del orden federal', y fue preparada por el FBI 'a pedido del Departamento de Guerra en 2026' — es decir, tres años después del evento reportado, y específicamente para esta liberación pública, no como parte del proceso de investigación original. No hay coordenadas, identificación del sitio, ni ningún detalle sobre qué fue exactamente lo que el agente observó, más allá de la descripción genérica de 'fenómenos anómalos no identificados' que da título al conjunto.\n\nNo se dispone del documento de respaldo textual ('Narrative Statement 3'), que probablemente exista solo en el portal war.gov y no como activo independiente de DVIDS accesible desde este entorno.",
+  "whatHappened_en": "At some point in 2023, a federal law enforcement special agent —the official record does not specify whether they belong to the FBI itself or another agency— reported an incident related to unidentified anomalous phenomena that occurred near a sensitive national security site in the western United States, over a two-day period. The 'sensitive' nature of the site implies, almost certainly, a military, nuclear, or intelligence facility whose exact location the government has not disclosed and will not disclose as part of this release.\n\nUnlike virtually the rest of the corpus —where the visual material is, to a greater or lesser degree, an actual recording from a sensor or a witness— this file has no original footage whatsoever. What the FBI produced and the Department of War published in PURSUE's third drop (June 12, 2026) are two animations or 'digital recreations,' catalogued as FBI-UAP-PR005 and FBI-UAP-PR006, with the internal titles 'Narrative Statement 3-1' and 'Narrative Statement 3-2' — nomenclature suggesting they correspond, respectively, to the first and second day of the two-day incident the agent reported.\n\nPer the official record for both videos, the digital recreation 'is based upon a first-hand description provided by a federal law enforcement special agent,' and was prepared by the FBI 'at the request of the Department of War in 2026' — that is, three years after the reported event, and specifically for this public release, not as part of the original investigative process. There are no coordinates, no site identification, and no detail about what exactly the agent observed, beyond the generic description of 'unidentified anomalous phenomena' that titles the set.\n\nThe supporting textual document ('Narrative Statement 3') is not available; it likely exists only on the war.gov portal and not as an independent DVIDS asset accessible from this environment.",
+  "whyMatters": "El valor de este expediente es casi enteramente metodológico, no evidencial. Es el único caso del corpus donde el propio gobierno reconoce, sin ambigüedad, que lo que el público puede ver no es un registro del evento sino una reconstrucción posterior basada en un relato verbal — un salto de fidelidad epistémica mucho mayor que el que separa, por ejemplo, un video de sensor sin editar de uno con cortes o mejoras digitales (como el caso de Afganistán, [[spherical-afghanistan-2020]]). Una animación puede representar con precisión lo que el agente describió, o puede introducir detalles interpretativos del animador —proporciones, colores, velocidad de movimiento— que el testimonio original nunca especificó con esa exactitud.\n\nLa decisión de encargar una recreación digital, en vez de simplemente publicar una transcripción del testimonio, es en sí misma un dato sobre las prioridades de comunicación del programa PURSUE: sugiere que el Departamento de Guerra prioriza el impacto visual —algo que el público pueda ver y compartir— por encima de la fidelidad de la fuente primaria. Es la tensión opuesta a la que domina el resto del corpus, donde el problema habitual es exceso de metraje crudo sin interpretación (títulos vagos, sin informe) más que exceso de interpretación sin metraje.\n\nLa proximidad a un 'sitio sensible de seguridad nacional' añade una capa adicional de interpretación posible que no puede confirmarse con lo disponible: instalaciones de ese tipo son objetivos naturales de vigilancia por parte de actores adversarios (drones de reconocimiento, por ejemplo), lo que sostendría una lectura de tecnología humana no reconocida en vez de fenómeno genuinamente anómalo. Sin el testimonio original, sin coordenadas y sin el documento narrativo completo, no hay manera de pesar esa hipótesis frente a otras. Este expediente entra al corpus, ante todo, como ejemplo de un tipo de fuente —la reconstrucción oficial de un testimonio, en vez del testimonio o el registro instrumental mismos— que conviene distinguir con cuidado de la evidencia primaria.",
+  "whyMatters_en": "This file's value is almost entirely methodological, not evidential. It is the only case in the corpus where the government itself unambiguously acknowledges that what the public can see is not a record of the event but a later reconstruction based on a verbal account — a much larger epistemic-fidelity gap than the one separating, say, unedited sensor footage from footage with cuts or digital enhancements (as in the Afghanistan case, [[spherical-afghanistan-2020]]). An animation may accurately represent what the agent described, or it may introduce interpretive details from the animator —proportions, colors, speed of movement— that the original testimony never specified with that precision.\n\nThe decision to commission a digital recreation, rather than simply publishing a transcript of the testimony, is itself a datum about the PURSUE program's communication priorities: it suggests the Department of War prioritizes visual impact —something the public can see and share— over primary-source fidelity. It is the opposite tension from the one dominating the rest of the corpus, where the usual problem is excess raw footage with no interpretation (vague titles, no report) rather than excess interpretation with no footage.\n\nThe proximity to a 'sensitive national security site' adds an additional layer of possible interpretation that cannot be confirmed with what is available: facilities of that type are natural surveillance targets for adversarial actors (reconnaissance drones, for instance), which would support a reading of unrecognized human technology rather than a genuinely anomalous phenomenon. Without the original testimony, without coordinates, and without the full narrative document, there is no way to weigh that hypothesis against others. This file enters the corpus, above all, as an example of a source type —the official reconstruction of a testimony, rather than the testimony or instrumental record itself— that is worth carefully distinguishing from primary evidence.",
+  "evidence": [
+    "2023: agente especial federal reporta un incidente de dos días cerca de un sitio sensible de seguridad nacional en el oeste de EE.UU.",
+    "No existe metraje real del evento — solo dos recreaciones digitales ('Narrative Statement 3-1' y '3-2') preparadas por el FBI",
+    "Las recreaciones se prepararon a pedido del Departamento de Guerra en 2026, tres años después del incidente",
+    "Sin coordenadas, identificación del sitio ni detalle del fenómeno observado más allá del título genérico",
+    "Documento narrativo textual referenciado pero no localizado como activo independiente en DVIDS",
+    "Publicado en PURSUE Release 03 (12 de junio de 2026), serie 'FBI-UAP-PR'"
+  ],
+  "evidence_en": [
+    "2023: a federal special agent reports a two-day incident near a sensitive national security site in the western U.S.",
+    "No actual footage of the event exists — only two digital recreations ('Narrative Statement 3-1' and '3-2') prepared by the FBI",
+    "The recreations were prepared at the Department of War's request in 2026, three years after the incident",
+    "No coordinates, site identification, or detail of the observed phenomenon beyond the generic title",
+    "Textual narrative document referenced but not located as an independent asset on DVIDS",
+    "Released in PURSUE Release 03 (June 12, 2026), 'FBI-UAP-PR' series"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — FBI-UAP-PR005/PR006, recreaciones digitales del FBI (PURSUE Release 03)",
+      "url": "https://www.dvidshub.net/video/1010272",
+      "note": "Ambos videos van embebidos en el visor de este caso; las fichas reconocen explícitamente que se trata de recreaciones, no de metraje original.",
+      "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — FBI-UAP-PR005/PR006, FBI digital recreations (PURSUE Release 03)",
+      "url": "https://www.dvidshub.net/video/1010272",
+      "note": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage.",
+      "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage."
+    }
+  ]
+}

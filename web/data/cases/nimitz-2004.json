@@ -43,6 +43,12 @@
       "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
     },
     {
+      "name": "DVIDS — video oficial 'FLIR1' (mirror del Pentágono)",
+      "url": "https://www.dvidshub.net/video/955825",
+      "note": "Video embebido en el visor de este caso.",
+      "note_en": "Video embedded in this case's viewer."
+    },
+    {
       "name": "Powell, Reid, Stratton et al. — Tic Tac UAP Executive Report (TTSA 2019)",
       "note": "Reconstrucción ingenieril completa",
       "note_en": "Full engineering reconstruction"
@@ -66,6 +72,12 @@
     {
       "name": "Pentagon Official Statement on UAP Videos (abril 2020)",
       "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
+    },
+    {
+      "name": "DVIDS — official 'FLIR1' video (Pentagon mirror)",
+      "url": "https://www.dvidshub.net/video/955825",
+      "note": "Video embedded in this case's viewer.",
+      "note_en": "Video embedded in this case's viewer."
     },
     {
       "name": "Powell, Reid, Stratton et al. — Tic Tac UAP Executive Report (TTSA 2019)",
@@ -94,6 +106,15 @@
     "indet": 0.25
   },
   "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/955825",
+      "type": "video",
+      "title": "Video ATFLIR 'FLIR1' — el objeto Tic-Tac y su aceleración lateral abrupta final, capturado por el Tte. Chad Underwood",
+      "title_en": "ATFLIR 'FLIR1' video — the Tic-Tac object and its abrupt final lateral acceleration, captured by Lt. Chad Underwood",
+      "source": "US Navy, oficialmente desclasificado por el Pentágono (abril 2020), vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/955825"
+    },
     {
       "src": "/pursue/nimitz-2004-context.jpg",
       "type": "image",
