@@ -1,0 +1,80 @@
+{
+  "id": "four-object-formation-iran-2022",
+  "num": 369,
+  "pursueReleases": [2],
+  "name": "Cuatro objetos cruzando el encuadre juntos, 20 segundos sobre el agua",
+  "name_en": "Four objects crossing the frame together, 20 seconds over water",
+  "year_start": 2022,
+  "country": "US",
+  "country_name": "Área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 26,
+    "lng": 53,
+    "place": "Golfo Pérsico, área CENTCOM (ubicación exacta no revelada)",
+    "place_en": "Persian Gulf, CENTCOM area (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 25,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.08,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.03,
+    "indet": 0.31
+  },
+  "summary": "Un clip de apenas 20 segundos circula con el título '4 UAP Formation Iran 26 Aug 2022 over water' — sugiriendo una formación de cuatro objetos frente a Irán. La AARO, sin embargo, solo evalúa como 'probable' que el metraje provenga de un sensor dentro del área de responsabilidad de CENTCOM en 2022, sin confirmar Irán como ubicación específica. La descripción visual oficial sí sostiene lo esencial del título: cuatro áreas de contraste cruzan el encuadre juntas en apenas tres segundos, seguidas de una quinta que entra por separado. Parte del lote de 50 videos de Release 02 (origen FOIA/red clasificada).",
+  "summary_en": "A mere 20-second clip circulates under the title '4 UAP Formation Iran 26 Aug 2022 over water' — suggesting a four-object formation off Iran. AARO, however, only assesses as 'likely' that the footage comes from a sensor within CENTCOM's area of responsibility in 2022, without confirming Iran as the specific location. The official visual description does support the title's core claim: four areas of contrast cross the frame together within about three seconds, followed by a fifth entering separately. Part of the 50-video Release 02 batch (FOIA/classified-network origin).",
+  "patterns": ["8b", "8d"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007706",
+      "type": "video",
+      "title": "DOW-UAP-PR050 — título de uploader '4 UAP Formation Iran'; cuatro áreas de contraste cruzan el encuadre juntas (20 s)",
+      "title_en": "DOW-UAP-PR050 — uploader title '4 UAP Formation Iran'; four areas of contrast cross the frame together (20 s)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007706"
+    }
+  ],
+  "whatHappened": "Este clip de apenas 20 segundos, catalogado como DOW-UAP-PR050, forma parte del lote de 50 videos que la AARO localizó en una red clasificada al responder, en 2026, una solicitud FOIA de ocho congresistas por 51 registros potencialmente relacionados con UAP.\n\nEl título '4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]' es, según la propia evaluación de la AARO, un título 'definido por el usuario' que subió el archivo a la red clasificada en junio de 2024, no una designación del Departamento de Guerra. La AARO evalúa como 'probable', sin confirmarlo, que el metraje derive de un sensor infrarrojo a bordo de una plataforma militar de EE.UU. operando dentro del área de responsabilidad del Mando Central (CENTCOM) en 2022 — una región que incluye el golfo Pérsico y aguas cercanas a Irán, pero cuya evaluación oficial no confirma la ubicación exacta ni el país específico que el título afirma.\n\nA diferencia de otros expedientes de este mismo lote, en este caso la descripción visual oficial de la AARO sí sostiene el elemento central del título: entre los segundos 1 y 4, cuatro áreas de contraste distintas transitan el campo de visión del sensor, entrando desde el tercio inferior del lado izquierdo de la pantalla y saliendo cerca del centro de la parte inferior del encuadre — es decir, los cuatro objetos se mueven juntos, cruzando la pantalla en un lapso de apenas tres segundos. Entre los segundos 5 y 6, una quinta área de contraste entra por separado desde la esquina superior izquierda de la pantalla, un dato que el título no menciona.\n\nEl material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, sin coordenadas, identificación de plataforma ni declaración de tripulación.",
+  "whatHappened_en": "This 20-second clip, catalogued as DOW-UAP-PR050, is part of the 50-video batch AARO located on a classified network in 2026 while responding to a FOIA request from eight members of Congress for 51 potentially UAP-related records.\n\nThe title '4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]' is, per AARO's own assessment, a 'user-defined' title assigned by whoever uploaded the file to the classified network in June 2024, not a Department of War designation. AARO assesses as 'likely,' without confirming, that the footage derives from an infrared sensor aboard a U.S. military platform operating within Central Command's (CENTCOM) area of responsibility in 2022 — a region that includes the Persian Gulf and waters near Iran, but whose official assessment does not confirm the exact location or specific country the title claims.\n\nUnlike other files in this same batch, here AARO's official visual description does support the title's central claim: between seconds 1 and 4, four distinct areas of contrast transit the sensor's field of view, entering from the lower third of the left side of the screen and exiting near the center of the bottom of the frame — that is, the four objects move together, crossing the screen within about three seconds. Between seconds 5 and 6, a fifth area of contrast enters separately from the upper left corner of the screen, a detail the title does not mention.\n\nThe material was uploaded to DVIDS on May 22, 2026, within PURSUE's second drop, with no coordinates, platform identification, or crew statement.",
+  "whyMatters": "Este expediente es un contraste útil frente a otros títulos de Release 02 que prometen más de lo que la descripción instrumental sostiene: aquí, excepcionalmente, el título ('4 UAP Formation') y la descripción visual de la AARO coinciden en lo esencial — cuatro áreas de contraste sí cruzan el encuadre juntas. Eso no valida la parte del título que la AARO no puede confirmar (que fuera específicamente 'sobre Irán'), pero sí sostiene el elemento de comportamiento coordinado, que es el más analíticamente interesante.\n\nEl patrón de múltiples objetos moviéndose juntos, en la misma dirección y con separación relativa aproximadamente constante durante un cruce de pantalla de solo tres segundos, es compatible con varias lecturas mundanas: una formación de drones —cada vez más comunes en el Golfo Pérsico durante la década de 2020—, aves migratorias en bandada vistas en infrarrojo, o restos de un mismo evento (por ejemplo, fragmentos de un lanzamiento o de un objeto que se dispersó) cruzando el campo de visión del sensor de forma casi simultánea por pura coincidencia de trayectoria y no por coordinación real entre ellos.\n\nLa quinta área de contraste que entra por separado, no mencionada en el título pero sí en la descripción oficial, es un recordatorio de por qué conviene leer la ficha completa: un título construido para maximizar el impacto ('4 UAP Formation') puede omitir selectivamente detalles del propio metraje que complican la narrativa limpia que promete. Sin telemetría, sin coordenadas confirmadas y con una cadena de custodia que la propia AARO califica de no sustanciada, el caso queda como uno de los pocos ejemplos de este lote donde el título resiste el escrutinio de la descripción instrumental — aunque el país y la certeza de coordinación real entre los cuatro objetos siguen sin confirmarse.",
+  "whyMatters_en": "This file is a useful contrast against other Release 02 titles that promise more than the instrumental description supports: here, exceptionally, the title ('4 UAP Formation') and AARO's visual description agree on the essentials — four areas of contrast do cross the frame together. That doesn't validate the part of the title AARO cannot confirm (that it was specifically 'over Iran'), but it does support the coordinated-behavior element, which is the most analytically interesting part.\n\nThe pattern of multiple objects moving together, in the same direction, with roughly constant relative spacing during a three-second screen crossing, is consistent with several mundane readings: a drone formation —increasingly common in the Persian Gulf through the 2020s—, migratory birds in a flock seen in infrared, or debris from a single event (for instance, fragments of a launch or of an object that broke apart) crossing the sensor's field of view nearly simultaneously by pure trajectory coincidence rather than genuine coordination among them.\n\nThe fifth area of contrast entering separately, not mentioned in the title but present in the official description, is a reminder of why the full record is worth reading: a title built to maximize impact ('4 UAP Formation') can selectively omit details from the footage itself that complicate the clean narrative it promises. Without telemetry, confirmed coordinates, and with a chain of custody AARO itself calls unsubstantiated, the case stands as one of the few examples in this batch where the title survives scrutiny against the instrumental description — though the country and the certainty of genuine coordination among the four objects remain unconfirmed.",
+  "evidence": [
+    "Título 'over Iran' es una etiqueta de usuario, no una designación del Departamento de Guerra; la AARO solo confirma área CENTCOM",
+    "Descripción visual oficial: cuatro áreas de contraste cruzan el encuadre juntas en ~3 segundos (excepcionalmente, coincide con el título)",
+    "Una quinta área de contraste entra por separado — detalle presente en la ficha pero no en el título",
+    "AARO advierte: el lote de 50 videos (incluido este) 'carece de una cadena de custodia sustanciada'",
+    "AARO solo 'evalúa' como probable —sin confirmar— origen en CENTCOM, 2022",
+    "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "Title 'over Iran' is a user label, not a Department of War designation; AARO only confirms a CENTCOM area",
+    "Official visual description: four areas of contrast cross the frame together in ~3 seconds (exceptionally, matches the title)",
+    "A fifth area of contrast enters separately — a detail present in the record but not in the title",
+    "AARO warns: the 50-video batch (including this one) 'lacks a substantiated chain-of-custody'",
+    "AARO only 'assesses' as likely —without confirming— a CENTCOM origin, 2022",
+    "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR050, título definido por el uploader, con evaluación de procedencia y descripción visual de la AARO (lote FOIA Reeves, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007706",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la evaluación de procedencia y la descripción visual citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR050, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007706",
+      "note": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened."
+    }
+  ]
+}
