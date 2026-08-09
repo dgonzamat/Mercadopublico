@@ -1,0 +1,80 @@
+{
+  "id": "eastern-us-metallic-reflective-2020",
+  "num": 371,
+  "pursueReleases": [4],
+  "name": "'Pequeño, metálico, con parte inferior reflectante': el debrief que el video no logra sostener",
+  "name_en": "'Small, metallic, with a reflective underside': the debrief the video can't quite support",
+  "year_start": 2020,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38,
+    "lng": -76,
+    "place": "Costa este de Estados Unidos (ubicación exacta no revelada)",
+    "place_en": "U.S. East Coast (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 22,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.07,
+    "nohumano_abierto": 0.03,
+    "indet": 0.34
+  },
+  "summary": "En 2020, el Comando Norte de EE.UU. sometió a la AARO un reporte de apenas 11 segundos de metraje infrarrojo sobre la costa este de Estados Unidos. Lo acompaña un informe de debrief (DOW-UAP-D089) con detalle descriptivo poco común: el objeto era 'bastante pequeño', 'continuaba en una dirección constante', de forma 'indistinguible' pero con 'apariencia metálica y parte inferior reflectante'. El video mismo, sin embargo, muestra apenas un segundo de un área de contraste antes de que el sensor cambie de modo y la pierda de vista — once segundos que no alcanzan a sostener buena parte del detalle que el debrief describe.",
+  "summary_en": "In 2020, U.S. Northern Command submitted a report to AARO consisting of just 11 seconds of infrared footage over the U.S. East Coast. It comes with a debrief report (DOW-UAP-D089) carrying uncommon descriptive detail: the object was 'quite small,' 'continued in a constant direction,' of an 'indistinguishable' shape but with a 'metallic appearance and reflective underside.' The video itself, however, shows barely one second of an area of contrast before the sensor switches modes and loses it — eleven seconds that fall well short of supporting much of what the debrief describes.",
+  "patterns": [],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014104",
+      "type": "video",
+      "title": "DOW-UAP-PR106 — sensor IR pierde el objeto en 4 segundos; el debrief D089 describe 'apariencia metálica, parte inferior reflectante' (11 s)",
+      "title_en": "DOW-UAP-PR106 — IR sensor loses the object within 4 seconds; debrief D089 describes 'metallic appearance, reflective underside' (11 s)",
+      "source": "US Northern Command, reportado a la AARO, vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014104"
+    }
+  ],
+  "whatHappened": "En algún momento de 2020, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró 11 segundos de metraje sobre la costa este de Estados Unidos. El Comando Norte de Estados Unidos (NORTHCOM) sometió formalmente el reporte a la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), catalogado como DOW-UAP-PR106.\n\nComo en los casos del testimonio del aviador de 28 años ([[eastern-us-civilian-sensor-2019]]) y el globo del Atlántico ([[atlantic-ocean-balloon-2020]]), este expediente viene acompañado de un informe de debrief con contenido descriptivo real: un 'Range Fouler Debrief', identificado como DOW-UAP-D089. El informe describe el fenómeno como 'bastante pequeño' y señala que 'continuaba en una dirección constante'. Caracteriza la forma del fenómeno como 'indistinguible', pero agrega dos detalles concretos poco comunes en el corpus: 'apariencia metálica' y 'parte inferior reflectante'.\n\nLa descripción visual oficial de la AARO, con marcas de tiempo, documenta un metraje considerablemente más breve de lo que ese nivel de detalle sugeriría: 'este medio fue alterado digitalmente antes de reportarse a la AARO, y se presenta tal como fue recibido'. Entre los segundos 1 y 1, un área de contraste es visible por encima del centro del encuadre. Entre los segundos 2 y 4, el sensor cambia de modo, causando que el área de contraste se mueva rápidamente dentro del campo de visión antes de salir del encuadre por la parte superior. Es decir: de los 11 segundos totales del clip, el objeto es efectivamente visible durante apenas 3 o 4 segundos, y el sensor lo pierde —no lo sigue deliberadamente hasta que sale del cuadro— al cambiar de modo.\n\nNo hay coordenadas, identificación de plataforma ni fecha exacta dentro de 2020 en el registro público. El material se subió a DVIDS dentro de la cuarta entrega de PURSUE (10 de julio de 2026).",
+  "whatHappened_en": "At some point in 2020, an infrared sensor aboard a U.S. military platform recorded 11 seconds of footage over the U.S. East Coast. U.S. Northern Command (NORTHCOM) formally submitted the report to the All-domain Anomaly Resolution Office (AARO), catalogued as DOW-UAP-PR106.\n\nAs with the 28-year aviator's testimony case ([[eastern-us-civilian-sensor-2019]]) and the Atlantic balloon case ([[atlantic-ocean-balloon-2020]]), this file comes with a debrief report carrying real descriptive content: a 'Range Fouler Debrief,' identified as DOW-UAP-D089. The report describes the phenomenon as 'quite small' and notes it 'continued in a constant direction.' It characterizes the phenomenon's shape as 'indistinguishable,' but adds two concrete details uncommon in the corpus: 'metallic appearance' and 'reflective underside.'\n\nAARO's official timestamped visual description documents footage considerably briefer than that level of detail might suggest: 'this media was digitally altered before being reported to AARO, and is presented as received.' Between seconds 1 and 1, an area of contrast is visible above the center of the frame. Between seconds 2 and 4, the sensor switches modes, causing the area of contrast to rapidly move about within the field of view before exiting the frame from the top. In other words: of the clip's 11 total seconds, the object is effectively visible for barely 3 or 4 seconds, and the sensor loses it —rather than deliberately tracking it out of frame— when it switches modes.\n\nNo coordinates, platform identification, or exact date within 2020 appear in the public record. The material was uploaded to DVIDS within PURSUE's fourth drop (July 10, 2026).",
+  "whyMatters": "Este expediente es un contraste instructivo frente a sus dos pares del mismo grupo de debriefs (D090, D091). En el globo del Atlántico, la descripción visual —32 segundos completos de seguimiento estable— sostenía sin contradicción la lectura mundana que el propio testigo ofrecía. Aquí, en cambio, el debrief describe con notable precisión un objeto 'metálico' con 'parte inferior reflectante' que se desplazaba 'en dirección constante', pero el metraje disponible apenas alcanza para mostrar un segundo de un área de contraste antes de que el propio sensor la pierda al cambiar de modo. La brecha entre lo que el testigo describió por escrito —presumiblemente con más tiempo de observación directa, a simple vista o por otros medios— y lo que el sensor logró capturar en video es, en sí misma, el dato más relevante del caso.\n\nEsa brecha no invalida el testimonio del debrief —quien lo redactó pudo haber observado el objeto más tiempo del que el sensor lo mantuvo en cuadro, o con una plataforma distinta a la que grabó estos 11 segundos—, pero sí limita severamente cuánto puede el video, por sí solo, corroborar detalles como 'apariencia metálica' o 'parte inferior reflectante': ningún fotograma de los 3-4 segundos útiles del clip permite resolver textura de superficie ni reflectividad con la resolución que esos términos implican.\n\nLa lectura prosaica más directa —dado lo poco que el instrumento sostiene— sigue siendo una aeronave o vehículo convencional visto brevemente antes de perderse contra el fondo o salir del alcance del sensor durante un cambio de configuración, un evento demasiado breve para que el propio sistema completara un ciclo de seguimiento estable. Sin telemetría adicional ni el documento D089 completo —solo disponible como cita en la ficha de DVIDS, no como archivo independiente accesible— el caso queda, como sus pares, con un debrief más rico que lo que el instrumento puede confirmar.",
+  "whyMatters_en": "This file offers an instructive contrast with its two counterparts from the same debrief group (D090, D091). In the Atlantic balloon case, the visual description —32 full seconds of stable tracking— supported without contradiction the mundane reading the witness himself offered. Here, by contrast, the debrief describes with notable precision a 'metallic' object with a 'reflective underside' moving 'in a constant direction,' but the available footage barely manages to show one second of an area of contrast before the sensor itself loses it while switching modes. The gap between what the witness described in writing —presumably with more direct observation time, by eye or other means— and what the sensor managed to capture on video is, in itself, this case's most relevant datum.\n\nThat gap does not invalidate the debrief's testimony —whoever wrote it may have observed the object longer than the sensor kept it in frame, or via a different platform than the one that recorded these 11 seconds— but it does severely limit how much the video, on its own, can corroborate details like 'metallic appearance' or 'reflective underside': none of the clip's 3-4 useful seconds allow resolving surface texture or reflectivity at the resolution those terms imply.\n\nThe most direct prosaic reading —given how little the instrument supports— remains a conventional aircraft or vehicle briefly seen before it blends into the background or exits the sensor's range during a configuration change, an event too brief for the system itself to complete a stable tracking cycle. Without additional telemetry or the full D089 document —available only as a quote in the DVIDS record, not as an independently accessible file— the case stands, like its counterparts, with a richer debrief than the instrument can confirm.",
+  "evidence": [
+    "2020: sensor IR de plataforma militar registra 11 segundos sobre la costa este de EE.UU.",
+    "NORTHCOM sometió el reporte formalmente a la AARO (DOW-UAP-PR106)",
+    "Debrief acompañante DOW-UAP-D089: objeto 'bastante pequeño', 'dirección constante', 'apariencia metálica', 'parte inferior reflectante'",
+    "Descripción visual oficial: el objeto es visible efectivamente solo 3-4 de los 11 segundos; el sensor lo pierde al cambiar de modo",
+    "El video fue digitalmente alterado antes de reportarse a la AARO",
+    "Publicado en PURSUE Release 04 (10 de julio de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2020: IR sensor aboard a military platform records 11 seconds over the U.S. East Coast",
+    "NORTHCOM formally submitted the report to AARO (DOW-UAP-PR106)",
+    "Accompanying debrief DOW-UAP-D089: object 'quite small,' 'constant direction,' 'metallic appearance,' 'reflective underside'",
+    "Official visual description: the object is effectively visible for only 3-4 of the 11 seconds; the sensor loses it while switching modes",
+    "The video was digitally altered before being reported to AARO",
+    "Released in PURSUE Release 04 (July 10, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR106, con el debrief DOW-UAP-D089 citado por la AARO (PURSUE Release 04)",
+      "url": "https://www.dvidshub.net/video/1014104",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la cita del debrief y la descripción visual citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR106, with the DOW-UAP-D089 debrief quoted by AARO (PURSUE Release 04)",
+      "url": "https://www.dvidshub.net/video/1014104",
+      "note": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened."
+    }
+  ]
+}
