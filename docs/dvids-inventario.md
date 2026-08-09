@@ -22,19 +22,19 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 **Las cinco entregas de PURSUE están 100% mapeadas** (ago 2026): todo video con caso individual verificado tiene su propia ficha narrativa; el resto —sin informe acompañante, comentario técnico, admisión de edición, morfología distintiva ni duración atípica— está embebido en uno de tres catálogos agregadores para que ninguno quede fuera del sitio: `dow-centcom-2020` (Release 01), `dow-uap-release02-catalog-2023` (Release 02, FOIA/red clasificada) y `dow-uap-release04-05-catalog-2025` (Release 04-05, procedencia institucional directa). Ver la nota de cierre al final de esta sección.
 
-**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 145 documentos de video embebidos en 43 casos al cierre de esta sesión (ago 2026):
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 158 documentos de video embebidos en 43 casos al cierre de esta sesión (ago 2026):
 
 | Serie | Videos embebidos | Nota |
 |---|---|---|
 | `DOW-UAP-PR*` (Releases 01/02/04/05) | 111 | Ver tabla PURSUE arriba |
 | `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
-| `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 8 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
+| `AARO Case Resolution Reports` (`PR-001`…`PR-018` + 3 sin numerar) | 21 de 21 | Serie separada, no-PURSUE; catálogo completo en `aaro-case-resolution-reports` |
 | Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
 | Videos Navy históricos (2004/2014-15, ya desclasificados) | 3 | FLIR→`nimitz-2004`; GOFAST+GIMBAL→`roosevelt-2014` |
 | Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
 | Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
 | Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
-| **Total** | **145 en 43 casos** | |
+| **Total** | **158 en 43 casos** | |
 
 **Revisión dirigida de Release 02 (ago 2026, tras feedback del usuario)**: el descarte categórico de los 31 videos restantes de Release 02 no aplicaba el mismo criterio de "morfología/comportamiento distintivo" usado para rescatar 3 casos de Release 01. Revisión de las 31 descripciones completas encontró 2 más con valor real: `PR050` (formación de 4 objetos que sí coincide con su título, caso de control) y `PR054` (donde la AARO señala EXPLÍCITAMENTE que "las alteraciones digitales... influyen significativamente en el desempeño aparente" — la confirmación más limpia del patrón título-vs-descripción de todo el lote). Quedan ~29 sin caso propio, genuinamente sin informe ni comportamiento distintivo tras esta segunda pasada.
 
@@ -185,13 +185,13 @@ Con esto, **las cinco entregas de PURSUE quedan 100% mapeadas**: 117/117 videos 
 - [x] `PR134` · 01.01.2025 — unresolved-uap-report-middle-east-2025 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017792)
 - [x] `PR136` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017796)
 - [x] `PR142` · 01.01.2025 — unresolved-uap-report-middle-east-2025 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017797)
-- [x] `PR149` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017799)
+- [x] `PR149` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025` · [ver](https://www.dvidshub.net/video/1017799)
 
 ## Serie separada · AARO Case Resolution Reports (hallada vía `q=Anomaly+Resolution+Office`)
 
 Búsqueda más amplia que `q=DOW-UAP` destapó **27 videos adicionales**, ninguno relacionado con PURSUE: son la serie propia de la AARO (`PR-001`…`PR-018`, EUCOM/AFRICOM) más metraje de audiencias públicas (Senado, panel de la NASA). Todos con evaluación oficial adjunta como texto.
 
-- [x] Serie `PR-001`…`PR-018` (18 videos) — agregada en `aaro-case-resolution-reports` (muestra de 8 embebida, tras revisión rigurosa de los 11 restantes ago 2026: solo `PR-017` calificó por procedencia distinta — cámara de celular civil, no sensor militar; los otros 10 caen en los mismos patrones ya representados; 6 resueltos como aves/globo, 5 cerrados como globo, 1 "no anómalo", 11 sin resolver)
+- [x] Serie `PR-001`…`PR-018` (18 videos) + 3 adicionales sin numeración PR (961723, 962722, 964843) — **catálogo completo (21/21) embebido en `aaro-case-resolution-reports`** (ago 2026, tras "continua el mapping"): la ficha original solo embebía 8 como "muestra representativa" y describía el resto sin haberlos leído todos; al completar el catálogo se corrigió también un conteo erróneo heredado de esa muestra parcial ("5 aves" cuando en realidad son 2) y se descubrió una categoría de resolución no representada en la muestra original: "objeto físico confirmado, sin rasgos que ameriten más análisis" (5 expedientes: PR-012, 013, 014, 015, 018). Desglose final verificado sobre los 21: 2 aves, 6 globo (≥95% confianza), 1 "no anómalo", 1 "en análisis", 5 "objeto confirmado sin rasgos relevantes", 6 sin resolver por falta de telemetría.
 - [x] `Middle East Red Balloon 2024` — mismo caso agregado
 - [x] `Middle East Object` (2022) + audiencia completa del Senado (19 abr 2023) — agregados a `mosul-orb-2016`
 - [x] `South Asian Object 1/2` — caso propio `south-asian-object-2023` (resuelto: aeronave comercial + artefacto de compresión)
