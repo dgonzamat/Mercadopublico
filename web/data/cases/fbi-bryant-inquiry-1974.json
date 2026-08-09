@@ -1,0 +1,87 @@
+{
+  "id": "fbi-bryant-inquiry-1974",
+  "num": 379,
+  "pursueReleases": [4],
+  "name": "'El Buró no mantiene ningún registro': la respuesta que el FBI le dio a un activista OVNI en 1974",
+  "name_en": "'The Bureau maintains no record': the FBI's 1974 reply to a UFO activist",
+  "year_start": 1967,
+  "year_end": 1974,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.9,
+    "lng": -77,
+    "place": "EE.UU. — correspondencia de oficina central del FBI (ubicación exacta no especificada)",
+    "place_en": "USA — FBI headquarters correspondence (exact location unspecified)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 15,
+  "patterns": [],
+  "category": "document",
+  "summary": "Un documento desclasificado en la cuarta entrega de PURSUE (10 de julio de 2026) reúne dos piezas de correspondencia del FBI sin relación entre sí más que el tema: una nota de 1967 que resume, en un párrafo, el reporte de un niño de once años sobre un 'ruido extraño' y un 'destello de luz'; y un intercambio de cartas de 1974 entre el FBI y Larry W. Bryant —un activista pro-divulgación OVNI que años después demandaría al Pentágono— sobre un presunto avistamiento de 1954 de un 'OVNI ocupado'. La respuesta del Buró a Bryant es la pieza central: no tiene registro del evento que él pregunta, y hacia 1974 ya no recopila información sobre avistamientos OVNI en absoluto.",
+  "summary_en": "A document declassified in PURSUE's fourth drop (July 10, 2026) bundles two unrelated pieces of FBI correspondence, connected only by topic: a 1967 note summarizing, in one paragraph, an eleven-year-old child's report of a 'weird' noise and a 'flash of light'; and a 1974 exchange of letters between the FBI and Larry W. Bryant —a pro-disclosure UFO activist who would later sue the Pentagon— about an alleged 1954 sighting of an 'occupied UFO.' The Bureau's reply to Bryant is the central piece: it has no record of the event he's asking about, and by 1974 it no longer collects UFO sighting information at all.",
+  "whatHappened": "La cuarta entrega de PURSUE (10 de julio de 2026) incluyó, entre sus documentos administrativos, un expediente catalogado FBI-UAP-D014 que agrupa dos piezas de correspondencia del FBI sin relación aparente entre sí, salvo el tema común: reportes ciudadanos de fenómenos aéreos no identificados.\n\nLa primera, fechada el 22 de septiembre de 1967, es apenas una nota administrativa que relaya, en un solo párrafo, la descripción de un incidente proporcionada por un niño de once años: el testigo dijo haber escuchado un ruido 'extraño' y visto un 'destello de luz'. El documento no incluye contexto adicional —ni lugar preciso, ni seguimiento, ni evaluación— y todo indica que se archivó sin mayor trámite, como tantos otros reportes ciudadanos que el FBI recibía y remitía sin investigar tras retirarse de la investigación activa de OVNIs a fines de 1947 (ver [[gov-misc-uap-records-1949-1998]]).\n\nLa segunda pieza, con fechas del 30 de septiembre y el 10 de octubre de 1974, es más sustancial: un intercambio de cartas entre el FBI y un ciudadano identificado como Larry W. Bryant, quien preguntaba por un presunto avistamiento del 8 de abril de 1954 de un 'OVNI ocupado' —es decir, un objeto volador no identificado con tripulación visible, la categoría más extraordinaria de reporte dentro de la literatura del fenómeno—. La respuesta oficial del Buró fue doble: primero, que no mantenía ningún registro de tal evento; segundo, y más revelador, que hacia 1974 el FBI 'no recopila información sobre avistamientos OVNI' como cuestión de política general.\n\nBryant no era un ciudadano cualquiera. Empleado como escritor/editor para la Oficina del Jefe de Asuntos Públicos del Pentágono, dedicó décadas a la investigación OVNI y a la presión por su desclasificación: dirigió la oficina de Washington D.C. de Citizens Against UFO Secrecy (CAUS) y, en 1983 —casi una década después de esta correspondencia—, presentó una demanda federal contra el entonces Secretario de Defensa, exigiendo que la Fuerza Aérea produjera los cuerpos de 'criaturas espaciales' presuntamente recuperadas de platillos voladores estrellados, bajo la figura de un 'habeas corpus extraterrestre'. La demanda fue desestimada, pero generó cobertura mediática considerable. Bryant continuó escribiendo sobre el tema en publicaciones como Fate Magazine y UFO Magazine hasta su muerte en 2020; sus papeles personales, incluida correspondencia de su trabajo con CAUS y sus casos judiciales, están archivados en la Universidad Rice.",
+  "whatHappened_en": "PURSUE's fourth drop (July 10, 2026) included, among its administrative documents, a file catalogued FBI-UAP-D014 that bundles two pieces of FBI correspondence with no apparent connection to each other beyond the shared topic: citizen reports of unidentified aerial phenomena.\n\nThe first, dated September 22, 1967, is barely an administrative note relaying, in a single paragraph, an incident description provided by an eleven-year-old child: the witness said they heard a 'weird' noise and saw a 'flash of light.' The document includes no further context —no precise location, no follow-up, no assessment— and everything suggests it was filed without further processing, like so many other citizen reports the FBI received and forwarded without investigating after withdrawing from active UFO investigation in late 1947 (see [[gov-misc-uap-records-1949-1998]]).\n\nThe second piece, dated September 30 and October 10, 1974, is more substantial: an exchange of letters between the FBI and a citizen identified as Larry W. Bryant, who was inquiring about an alleged April 8, 1954 sighting of an 'occupied UFO' —that is, an unidentified flying object with a visible crew, the most extraordinary category of report within the phenomenon's literature. The Bureau's official response was twofold: first, that it had no record of such an event; second, and more revealing, that by 1974 the FBI 'does not collect information regarding UFO sightings' as a matter of general policy.\n\nBryant was not just any citizen. Employed as a writer/editor for the Pentagon's Office of the Chief of Public Affairs, he devoted decades to UFO research and to pressing for its declassification: he directed the Washington D.C. office of Citizens Against UFO Secrecy (CAUS), and in 1983 —nearly a decade after this correspondence— filed a federal lawsuit against the then-Secretary of Defense, demanding the Air Force produce the bodies of 'space creatures' allegedly recovered from crashed flying saucers, under a 'writ of habeas corpus extraterrestrial.' The suit was dismissed, but generated considerable media coverage. Bryant continued writing on the topic in outlets like Fate Magazine and UFO Magazine until his death in 2020; his personal papers, including correspondence from his CAUS work and his court cases, are archived at Rice University.",
+  "whyMatters": "Este expediente no aporta evidencia de nada anómalo —ni el reporte del niño de 1967 ni la consulta de Bryant sobre 1954 describen un encuentro documentado con detalle verificable—, pero es valioso por una razón distinta: captura, en un solo intercambio de cartas, el momento exacto en que el FBI formalizó por escrito su postura de no involucramiento con el tema OVNI, una política que ya venía aplicando de facto desde 1947 (ver [[gov-misc-uap-records-1949-1998]]) pero que aquí queda declarada explícitamente como respuesta a un ciudadano concreto.\n\nEl hecho de que ese ciudadano fuera Larry Bryant —quien nueve años después llevaría al gobierno federal a juicio exigiendo la desclasificación de restos extraterrestres— añade una capa de contexto que el documento por sí solo no ofrece: esta carta de 1974 es, retrospectivamente, uno de los primeros contactos documentados entre Bryant y el aparato federal sobre el tema que definiría el resto de su vida pública. La respuesta evasiva que recibió —'no tenemos registro' más 'no recopilamos esa información'— es precisamente el tipo de respuesta institucional que años más tarde alimentaría su activismo por la transparencia, incluida la demanda de 1983.\n\nEl caso del niño de 1967, aunque mínimo en detalle, cumple una función complementaria: muestra que el FBI seguía recibiendo y archivando reportes ciudadanos de fenómenos aéreos —incluso de testigos menores de edad, sin capacidad de presión institucional alguna— dos décadas después de haberse retirado formalmente de la investigación activa. La política declarada a Bryant en 1974 ('no recopilamos información') convive, en la práctica, con el archivo silencioso de reportes que sí seguían llegando. Es, en conjunto, un documento sobre la brecha entre la política institucional declarada y la práctica administrativa real —no sobre el fenómeno que ambos reportes, cada uno a su manera, intentaban describir.",
+  "whyMatters_en": "This file provides no evidence of anything anomalous —neither the 1967 child's report nor Bryant's inquiry about 1954 describes a documented encounter with verifiable detail— but it is valuable for a different reason: it captures, in a single exchange of letters, the exact moment the FBI put its non-involvement policy on the UFO topic into writing, a policy it had already been applying de facto since 1947 (see [[gov-misc-uap-records-1949-1998]]) but which here is explicitly declared in response to a specific citizen.\n\nThe fact that this citizen was Larry Bryant —who nine years later would take the federal government to court demanding the declassification of alleged extraterrestrial remains— adds a layer of context the document alone doesn't offer: this 1974 letter is, in retrospect, one of the earliest documented contacts between Bryant and the federal apparatus on the topic that would define the rest of his public life. The evasive response he received —'we have no record' plus 'we don't collect that information'— is precisely the kind of institutional response that would later fuel his transparency activism, including the 1983 lawsuit.\n\nThe 1967 child's case, though minimal in detail, serves a complementary function: it shows the FBI was still receiving and filing citizen reports of aerial phenomena —even from underage witnesses with no institutional leverage whatsoever— two decades after formally withdrawing from active investigation. The policy declared to Bryant in 1974 ('we don't collect that information') coexists, in practice, with the quiet filing of reports that kept arriving anyway. Taken together, it is a document about the gap between declared institutional policy and actual administrative practice —not about the phenomenon either report, each in its own way, was trying to describe.",
+  "evidence": [
+    "FBI-UAP-D014: expediente con dos piezas de correspondencia del FBI, desclasificado en PURSUE Release 04 (10 jul 2026)",
+    "Nota de 1967 (22 sep): reporte de un niño de 11 años, 'ruido extraño' y 'destello de luz', sin contexto adicional",
+    "Carta de 1974 (30 sep y 10 oct): intercambio entre el FBI y Larry W. Bryant sobre un presunto 'OVNI ocupado' de 1954",
+    "Respuesta del FBI: no mantiene registro del evento consultado, y hacia 1974 'no recopila información' sobre avistamientos OVNI",
+    "Larry W. Bryant: escritor/editor del Pentágono, director de la oficina D.C. de Citizens Against UFO Secrecy (CAUS)",
+    "En 1983, Bryant demandó al Secretario de Defensa exigiendo la producción de restos extraterrestres ('habeas corpus extraterrestre'); la demanda fue desestimada",
+    "Sus papeles personales están archivados en la Universidad Rice; escribió para Fate Magazine y UFO Magazine hasta su muerte en 2020"
+  ],
+  "evidence_en": [
+    "FBI-UAP-D014: file with two pieces of FBI correspondence, declassified in PURSUE Release 04 (July 10, 2026)",
+    "1967 note (Sept 22): an 11-year-old child's report, 'weird' noise and 'flash of light,' no further context",
+    "1974 letter (Sept 30 and Oct 10): exchange between the FBI and Larry W. Bryant about an alleged 1954 'occupied UFO'",
+    "FBI's response: no record of the queried event, and by 1974 it 'does not collect information' on UFO sightings",
+    "Larry W. Bryant: Pentagon writer/editor, director of the D.C. office of Citizens Against UFO Secrecy (CAUS)",
+    "In 1983, Bryant sued the Secretary of Defense demanding production of alleged extraterrestrial remains ('writ of habeas corpus extraterrestrial'); the suit was dismissed",
+    "His personal papers are archived at Rice University; he wrote for Fate Magazine and UFO Magazine until his death in 2020"
+  ],
+  "sources": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D014, correspondencia relacionada con avistamientos OVNI, 1967 y 1974 (PURSUE Release 04)",
+      "url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
+      "note": "PDF no embebido en el visor de este caso — war.gov bloquea el acceso directo desde esta sesión (ver deuda pendiente E21 en CLAUDE.md); texto citado a partir de la descripción oficial publicada junto al documento.",
+      "note_en": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document."
+    },
+    {
+      "name": "Larry W. Bryant, Plaintiff-appellant, v. Dick Cheney, Secretary of Defense (924 F.2d 525, 4th Cir. 1991)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/924/525/223903/",
+      "note": "Apelación relacionada con el litigio de Bryant contra el Departamento de Defensa.",
+      "note_en": "Appeal related to Bryant's litigation against the Department of Defense."
+    },
+    {
+      "name": "Larry W. Bryant UFO Research Collection — Rice University Archives",
+      "url": "https://archives.library.rice.edu/repositories/2/resources/1390",
+      "note": "Papeles personales de Bryant, incluida correspondencia de su trabajo con CAUS.",
+      "note_en": "Bryant's personal papers, including correspondence from his CAUS work."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "war.gov/UFO — FBI-UAP-D014, correspondence relating to UFO sightings, 1967 and 1974 (PURSUE Release 04)",
+      "url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
+      "note": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document.",
+      "note_en": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document."
+    },
+    {
+      "name": "Larry W. Bryant, Plaintiff-appellant, v. Dick Cheney, Secretary of Defense (924 F.2d 525, 4th Cir. 1991)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/924/525/223903/",
+      "note": "Appeal related to Bryant's litigation against the Department of Defense.",
+      "note_en": "Appeal related to Bryant's litigation against the Department of Defense."
+    },
+    {
+      "name": "Larry W. Bryant UFO Research Collection — Rice University Archives",
+      "url": "https://archives.library.rice.edu/repositories/2/resources/1390",
+      "note": "Bryant's personal papers, including correspondence from his CAUS work.",
+      "note_en": "Bryant's personal papers, including correspondence from his CAUS work."
+    }
+  ]
+}
