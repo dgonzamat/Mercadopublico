@@ -1,0 +1,80 @@
+{
+  "id": "three-versions-same-clip-2024",
+  "num": 374,
+  "pursueReleases": [2],
+  "name": "El uploader anuncia 'posibles cambios de forma'; la AARO no los describe",
+  "name_en": "The uploader announces 'possible changes of shape'; AARO doesn't describe them",
+  "year_start": 2024,
+  "country": "US",
+  "country_name": "Área de responsabilidad de INDOPACOM (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 18,
+    "lng": 125,
+    "place": "Océano Pacífico occidental, área INDOPACOM (ubicación exacta no revelada)",
+    "place_en": "Western Pacific Ocean, INDOPACOM area (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 15,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.43
+  },
+  "patterns": ["8d"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007723",
+      "type": "video",
+      "title": "DOW-UAP-PR58 — el uploader compila tres versiones del mismo clip: 8x acelerado con rótulo 'possible changes of shape', y dos a velocidad original (11 min)",
+      "title_en": "DOW-UAP-PR58 — the uploader compiles three versions of the same clip: 8x sped-up with a 'possible changes of shape' caption, and two at original speed (11 min)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007723"
+    }
+  ],
+  "summary": "Un clip de 10 minutos y 48 segundos —el más largo del lote de 50 videos de Release 02— resulta ser, según la propia descripción visual de la AARO, una compilación de tres versiones sucesivas del mismo metraje, separadas por rótulos en pantalla que el propio uploader insertó. La primera, a 8x de velocidad, lleva la leyenda 'posibles cambios de forma, estabilizado y mejorado, 38 segundos'. Las otras dos son la misma toma a velocidad original, una procesada y otra sin editar. La descripción instrumental de la AARO, sin embargo, no menciona cambio de forma alguno en ninguna de las tres versiones — solo un área de contraste que permanece centrada mientras el sensor cicla modos de contraste y la calidad se degrada.",
+  "summary_en": "A 10-minute-48-second clip —the longest in the 50-video Release 02 batch— turns out, per AARO's own visual description, to be a compilation of three successive versions of the same footage, separated by on-screen captions the uploader inserted. The first, at 8x speed, carries the caption 'possible changes of shape, stabilized and enhanced, 38 seconds.' The other two are the same shot at original speed, one processed and one unedited. AARO's instrumental description, however, does not mention any shape change in any of the three versions — only an area of contrast that stays centered while the sensor cycles contrast modes and quality degrades.",
+  "whatHappened": "Este clip de 10 minutos y 48 segundos, catalogado como DOW-UAP-PR58, forma parte del mismo lote de 50 videos que la AARO localizó en una red clasificada al responder, en 2026, una solicitud FOIA de ocho congresistas por 51 registros potencialmente relacionados con UAP. Es, con diferencia, el video más largo de todo el lote revisado esta sesión.\n\nEl título 'UAP [CALLSIGN] (Mission)' es, según la evaluación de la AARO, 'definido por el usuario' que subió el archivo a la red clasificada en junio de 2024. La AARO evalúa como 'probable', sin confirmarlo, que el metraje derive de un sensor infrarrojo a bordo de una plataforma militar de EE.UU. operando dentro del área de responsabilidad del Mando Indo-Pacífico (INDOPACOM).\n\nLa descripción visual oficial revela una estructura inusual: el propio uploader compiló tres versiones sucesivas de la misma toma, cada una precedida por un rótulo en pantalla insertado por quien subió el archivo, no por la AARO. Entre los segundos 1 y 4, aparece una pantalla negra con el texto '[CALLSIGN] recording - 8x speed possible changes of shape stabilized and enhanced 38 secs' ('grabación a 8x de velocidad, posibles cambios de forma, estabilizado y mejorado, 38 segundos'); entre los segundos 5 y 41, un área de contraste permanece centrada en el encuadre mientras elementos visuales del sensor entran y salen intermitentemente —esta es la versión acelerada y mejorada de 38 segundos que el rótulo anuncia—. Entre los segundos 42 y 45, un segundo rótulo dice 'UAP recording original speed stabilized, sharpened, contrast enhanced 5 min' ('grabación a velocidad original, estabilizada, nitidez y contraste mejorados, 5 min'); entre 0:46 y 5:45, un área de contraste permanece generalmente en el centro del encuadre mientras el sensor cicla varios modos de contraste. Entre 5:46 y 5:48, un tercer rótulo dice 'UAP recording original clip 5 minutes' ('clip original sin editar, 5 minutos'); entre 5:49 y 10:48, el sensor sigue panorámicamente un área de contraste manteniéndola generalmente en el centro, mientras la calidad general del metraje se degrada progresivamente.\n\nEl material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, sin coordenadas ni identificación de plataforma más allá del área INDOPACOM evaluada.",
+  "whatHappened_en": "This 10-minute-48-second clip, catalogued as DOW-UAP-PR58, is part of the same 50-video batch AARO located on a classified network in 2026 while responding to a FOIA request from eight members of Congress for 51 potentially UAP-related records. It is, by a clear margin, the longest video in the entire batch reviewed this session.\n\nThe title 'UAP [CALLSIGN] (Mission)' is, per AARO's assessment, 'user-defined' by whoever uploaded the file to the classified network in June 2024. AARO assesses as 'likely,' without confirming, that the footage derives from an infrared sensor aboard a U.S. military platform operating within the Indo-Pacific Command's (INDOPACOM) area of responsibility.\n\nThe official visual description reveals an unusual structure: the uploader compiled three successive versions of the same shot, each preceded by an on-screen caption inserted by whoever uploaded the file, not by AARO. Between seconds 1 and 4, a black screen appears reading '[CALLSIGN] recording - 8x speed possible changes of shape stabilized and enhanced 38 secs'; between seconds 5 and 41, an area of contrast remains centered within the frame while sensor display elements enter and exit intermittently —this is the sped-up, enhanced 38-second version the caption announces—. Between seconds 42 and 45, a second caption reads 'UAP recording original speed stabilized, sharpened, contrast enhanced 5 min'; between 0:46 and 5:45, an area of contrast remains generally within the center of the frame while the sensor cycles through several contrast modes. Between 5:46 and 5:48, a third caption reads 'UAP recording original clip 5 minutes'; between 5:49 and 10:48, the sensor pans to track an area of contrast, keeping it generally within the center, while the footage's overall quality progressively degrades.\n\nThe material was uploaded to DVIDS on May 22, 2026, within PURSUE's second drop, with no coordinates or platform identification beyond the assessed INDOPACOM area.",
+  "whyMatters": "La estructura misma de este expediente —tres versiones autocontenidas de la misma toma, con sus propios rótulos explicativos insertados por el uploader— lo convierte en un caso de estudio inusualmente limpio dentro del corpus: en lugar de tener que inferir qué procesamiento sufrió el metraje antes de llegar a DVIDS, el propio uploader documenta sus pasos (aceleración 8x, estabilización, mejora de nitidez y contraste) y los compara, dentro del mismo archivo, contra 'el clip original sin editar'.\n\nEso hace que la afirmación más llamativa del expediente —'posibles cambios de forma'— sea excepcionalmente verificable contra la propia descripción instrumental de la AARO. La leyenda que el uploader adjuntó a la versión acelerada y mejorada promete comportamiento morfológico, el tipo de evidencia más difícil de explicar de forma prosaica. Sin embargo, la descripción visual oficial de la AARO —que cubre las tres versiones, incluida la acelerada— no menciona cambio de forma alguno en ningún momento: describe únicamente 'un área de contraste' que 'permanece centrada' o 'generalmente dentro del centro del encuadre', sin variación morfológica registrada. La discrepancia entre lo que el rótulo del uploader promete y lo que el propio instrumento documenta es, en sí misma, el hallazgo más relevante del caso.\n\nEsto no descarta que un observador humano, viendo la versión acelerada y mejorada en tiempo real, haya percibido algo que interpretó como cambio de forma —el procesamiento de estabilización y mejora de contraste a menudo introduce artefactos visuales (ringing, halos, variaciones de brillo por reencuadre) que un ojo no entrenado puede leer como pulsación o metamorfosis—, pero si la propia AARO, revisando el mismo metraje con calma, no encuentra evidencia suficiente para describir ese cambio en términos objetivos, la afirmación queda sin sostén instrumental. La lectura prosaica más directa sigue siendo un objeto convencional (aeronave, dron, o incluso un artefacto atmosférico) cuya apariencia se distorsionó por el propio procesamiento de video —aceleración, estabilización, realce de contraste— que el uploader aplicó antes de subirlo, sin que eso implique metamorfosis real del objeto detectado.",
+  "whyMatters_en": "The file's very structure —three self-contained versions of the same shot, with the uploader's own explanatory captions— makes it an unusually clean case study within the corpus: rather than having to infer what processing the footage underwent before reaching DVIDS, the uploader documents their own steps (8x speed-up, stabilization, sharpness and contrast enhancement) and compares them, within the same file, against 'the original unedited clip.'\n\nThat makes the file's most striking claim —'possible changes of shape'— exceptionally verifiable against AARO's own instrumental description. The caption the uploader attached to the sped-up, enhanced version promises morphological behavior, the hardest kind of evidence to explain away prosaically. Yet AARO's official visual description —which covers all three versions, including the sped-up one— never mentions any shape change: it describes only 'an area of contrast' that 'remains centered' or 'generally within the center of the frame,' with no morphological variation recorded. The gap between what the uploader's caption promises and what the instrument itself documents is, in itself, this case's most relevant finding.\n\nThis doesn't rule out that a human observer, watching the sped-up, enhanced version in real time, perceived something they read as a shape change —stabilization and contrast-enhancement processing often introduces visual artifacts (ringing, halos, brightness shifts from reframing) that an untrained eye can misread as pulsing or metamorphosis— but if AARO itself, calmly reviewing the same footage, finds no sufficient basis to describe that change in objective terms, the claim is left without instrumental support. The most direct prosaic reading remains a conventional object (aircraft, drone, or even an atmospheric artifact) whose apparent look was distorted by the video processing itself —speed-up, stabilization, contrast enhancement— that the uploader applied before uploading it, without that implying any real metamorphosis of the detected object.",
+  "evidence": [
+    "PR58 es el video más largo del lote de 50 de Release 02: 10 min 48 s frente a un promedio de segundos a un par de minutos",
+    "El uploader compiló tres versiones de la misma toma (8x acelerada, original procesada, original sin editar) con rótulos propios",
+    "Rótulo del uploader en la versión acelerada: 'posibles cambios de forma, estabilizado y mejorado, 38 segundos'",
+    "La descripción visual oficial de la AARO, que cubre las tres versiones, no describe ningún cambio de forma — solo un área de contraste estable",
+    "AARO advierte: el lote de 50 videos (incluido este) 'carece de una cadena de custodia sustanciada'",
+    "Publicado en PURSUE Release 02 (subido a DVIDS el 22 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "PR58 is the longest video in the 50-video Release 02 batch: 10 min 48 s versus a batch average of seconds to a couple of minutes",
+    "The uploader compiled three versions of the same shot (8x sped-up, processed original, unedited original) with their own captions",
+    "Uploader caption on the sped-up version: 'possible changes of shape, stabilized and enhanced, 38 seconds'",
+    "AARO's official visual description, covering all three versions, describes no shape change at all — only a stable area of contrast",
+    "AARO warns: the 50-video batch (including this one) 'lacks a substantiated chain-of-custody'",
+    "Released in PURSUE Release 02 (uploaded to DVIDS May 22, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR58, con los tres rótulos del uploader y la descripción visual de la AARO que no describe cambio de forma (lote FOIA Reeves, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007723",
+      "note": "Video embebido en el visor de este caso; la ficha incluye los rótulos y la descripción visual citados en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR58, with the uploader's three captions and AARO's visual description describing no shape change (Reeves FOIA batch, PURSUE Release 02)",
+      "url": "https://www.dvidshub.net/video/1007723",
+      "note": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened."
+    }
+  ]
+}
