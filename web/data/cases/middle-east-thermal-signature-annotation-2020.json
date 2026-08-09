@@ -1,0 +1,80 @@
+{
+  "id": "middle-east-thermal-signature-annotation-2020",
+  "num": 376,
+  "pursueReleases": [1],
+  "name": "'U/I Small Thermal Signature': la etiqueta que el propio testigo escribió en el video",
+  "name_en": "'U/I Small Thermal Signature': the label the witness wrote onto the video themselves",
+  "year_start": 2020,
+  "country": "US",
+  "country_name": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 33,
+    "lng": 44,
+    "place": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
+    "place_en": "Middle East, CENTCOM area of responsibility (exact location undisclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.36
+  },
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1006093",
+      "type": "video",
+      "title": "DOW-UAP-PR40 — el propio reportero pausa el video y anota 'U/I SMALL THERMAL SIGNATURE' sobre el área de interés (63 s)",
+      "title_en": "DOW-UAP-PR40 — the reporter themselves pauses the video and labels the area of interest 'U/I SMALL THERMAL SIGNATURE' (63 s)",
+      "source": "US Central Command, reportado a la AARO, vía DVIDS (PURSUE Release 01)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1006093"
+    }
+  ],
+  "summary": "En 2020, el Mando Central de EE.UU. sometió a la AARO un reporte de un minuto y tres segundos de metraje infrarrojo sobre Oriente Medio, catalogado DOW-UAP-PR40. Lo distintivo no es el objeto en sí —un área de contraste que el sensor sigue mientras brilla y gana distintividad contra el fondo—, sino que el propio reportero original, no la AARO ni un analista posterior, pausó la reproducción y trazó una línea blanca alrededor del área de interés con la anotación 'U/I SMALL THERMAL SIGNATURE' (firma térmica pequeña, no identificada) directamente sobre el video, en el momento de reportarlo.",
+  "summary_en": "In 2020, U.S. Central Command submitted a report to AARO consisting of one minute and three seconds of infrared footage over the Middle East, catalogued DOW-UAP-PR40. What's distinctive isn't the object itself —an area of contrast the sensor tracks as it brightens and gains distinctiveness against the background— but that the original reporter, not AARO or a later analyst, paused playback and drew a white line around the area of interest with the annotation 'U/I SMALL THERMAL SIGNATURE' directly onto the video, at the moment of reporting it.",
+  "whatHappened": "En algún momento de 2020, un sensor infrarrojo a bordo de una plataforma militar estadounidense registró un minuto y tres segundos de metraje sobre Oriente Medio. El Mando Central (CENTCOM) sometió formalmente el reporte a la AARO, catalogado como DOW-UAP-PR40.\n\nLa descripción visual oficial, con marcas de tiempo, documenta una secuencia simple: entre los segundos 0 y 9, un área de contraste se ilumina dentro del campo de visión del sensor, volviéndose progresivamente más distintiva contra el fondo. En el segundo 10, sin embargo, ocurre algo poco común en este corpus: la AARO señala explícitamente que 'el reportero original alteró digitalmente las imágenes al pausar la reproducción del video y agregar una línea blanca que rodea un área de interés en la marca de tiempo 00:10, anotada con la frase U/I SMALL THERMAL SIGNATURE' —firma térmica pequeña, no identificada—. La AARO aclara, además, que ella misma 'no editó el material originalmente reportado', y que el medio se presenta tal como fue recibido, con la anotación del reportero incluida.\n\nEntre los segundos 15 y 63, la reproducción se reanuda: el sensor sigue panorámicamente el área de contraste contra el fondo, manteniendo su posición generalmente dentro del tercio superior del área de despliegue, mientras cicla varios ajustes de contraste y zoom.\n\nNo hay coordenadas, identificación de plataforma ni fecha exacta dentro de 2020 en el registro público. El material se subió a DVIDS el 8 de mayo de 2026, dentro de la primera entrega de PURSUE.",
+  "whatHappened_en": "At some point in 2020, an infrared sensor aboard a U.S. military platform recorded one minute and three seconds of footage over the Middle East. Central Command (CENTCOM) formally submitted the report to AARO, catalogued as DOW-UAP-PR40.\n\nThe official timestamped visual description documents a simple sequence: between seconds 0 and 9, an area of contrast brightens within the sensor's field of view, becoming progressively more distinct against the background. At second 10, however, something uncommon in this corpus happens: AARO explicitly notes that 'the original reporter digitally altered the imagery by pausing the video playback and adding a white line encircling an area of interest at timestamp 00:10, annotated with the phrase U/I SMALL THERMAL SIGNATURE.' AARO further clarifies that it 'did not edit the originally reported material,' and that the media is presented as received, with the reporter's annotation included.\n\nBetween seconds 15 and 63, playback resumes: the sensor pans to track the area of contrast against the background, generally maintaining its position within the top third of the display area, while cycling through several contrast and zoom settings.\n\nNo coordinates, platform identification, or exact date within 2020 appear in the public record. The material was uploaded to DVIDS on May 8, 2026, within PURSUE's first drop.",
+  "whyMatters": "La mayoría de los expedientes de este corpus llegan sin ninguna interpretación adjunta: solo metraje crudo y, cuando hay suerte, una descripción visual neutral de la AARO. Este es distinto porque preserva un artefacto poco común —una anotación hecha por el testigo original, en el momento mismo de reportar el evento, no por un analista revisándolo después—. La sigla 'U/I' (unidentified, no identificado) combinada con la calificación deliberadamente modesta 'small thermal signature' (firma térmica pequeña) revela cómo el propio reportero caracterizó lo que veía: no como un objeto de forma definida, sino como una fuente de calor de tamaño reducido que no pudo identificar en el momento, usando el vocabulario estándar de un operador de sensores familiarizado con firmas térmicas de aeronaves, vehículos o fauna.\n\nEsa autocontención es significativa. A diferencia de títulos de otros expedientes de este corpus —'formación', 'cambios de forma posibles', 'objeto submarino'— que prometen fenómenos morfológicamente complejos, la propia anotación del reportero es modesta: registra una firma térmica pequeña y no identificada, sin adjetivos que sugieran comportamiento anómalo. Es, en ese sentido, un ejemplo de reporte medido: el testigo documentó exactamente lo que el instrumento mostraba —un punto de calor difuso que se volvía más distintivo— sin extrapolar más allá de lo que la evidencia sostenía.\n\nLa lectura prosaica más directa sigue siendo una fuente de calor convencional de tamaño reducido —una aeronave pequeña, un vehículo, o incluso fauna— cuya firma térmica cruzó el umbral de detección del sensor lo suficiente como para volverse visible y sostenerse durante el resto del clip. Sin telemetría adicional, coordenadas ni contexto de misión, el caso no puede cerrarse con mayor precisión, pero la anotación original —modesta, técnica, sin narrativa añadida— es un contraste útil frente a los títulos más dramáticos que dominan el resto del catálogo de DVIDS revisado esta sesión.",
+  "whyMatters_en": "Most files in this corpus arrive with no interpretation attached at all: just raw footage and, if lucky, a neutral visual description from AARO. This one is different because it preserves an uncommon artifact —an annotation made by the original witness, at the very moment of reporting the event, not by an analyst reviewing it later. The abbreviation 'U/I' (unidentified) combined with the deliberately modest qualifier 'small thermal signature' reveals how the reporter themselves characterized what they saw: not as an object of defined shape, but as a reduced-size heat source they could not identify at the time, using the standard vocabulary of a sensor operator familiar with the thermal signatures of aircraft, vehicles, or wildlife.\n\nThat self-restraint is significant. Unlike other files in this corpus whose titles —'formation,' 'possible changes of shape,' 'submerged object'— promise morphologically complex phenomena, the reporter's own annotation is modest: it records a small, unidentified thermal signature, with no adjectives suggesting anomalous behavior. It is, in that sense, an example of measured reporting: the witness documented exactly what the instrument showed —a diffuse heat point that grew more distinct— without extrapolating beyond what the evidence supported.\n\nThe most direct prosaic reading remains a conventional, reduced-size heat source —a small aircraft, a vehicle, or even wildlife— whose thermal signature crossed the sensor's detection threshold enough to become visible and hold for the rest of the clip. Without additional telemetry, coordinates, or mission context, the case cannot be closed with greater precision, but the original annotation —modest, technical, with no added narrative— is a useful contrast against the more dramatic titles that dominate the rest of the DVIDS catalogue reviewed this session.",
+  "evidence": [
+    "2020: sensor IR de plataforma militar registra 63 segundos sobre Oriente Medio (área CENTCOM)",
+    "CENTCOM sometió el reporte formalmente a la AARO (DOW-UAP-PR40)",
+    "El reportero original —no la AARO— pausó el video y anotó 'U/I SMALL THERMAL SIGNATURE' sobre el área de interés en el segundo 10",
+    "La AARO aclara explícitamente que no editó el material original, y que la anotación del reportero se preserva tal como fue recibida",
+    "La anotación es modesta y técnica: 'firma térmica pequeña, no identificada', sin adjetivos de comportamiento anómalo",
+    "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público"
+  ],
+  "evidence_en": [
+    "2020: an IR sensor aboard a military platform records 63 seconds over the Middle East (CENTCOM area)",
+    "CENTCOM formally submitted the report to AARO (DOW-UAP-PR40)",
+    "The original reporter —not AARO— paused the video and annotated 'U/I SMALL THERMAL SIGNATURE' onto the area of interest at second 10",
+    "AARO explicitly clarifies it did not edit the original material, and the reporter's annotation is preserved as received",
+    "The annotation is modest and technical: 'small, unidentified thermal signature,' with no adjectives suggesting anomalous behavior",
+    "Released in PURSUE Release 01 (May 8, 2026), public domain"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR40, con la anotación original del reportero preservada por la AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006093",
+      "note": "Video embebido en el visor de este caso; la ficha incluye la anotación del reportero y la descripción visual citadas en whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR40, with the reporter's original annotation preserved by AARO (PURSUE Release 01)",
+      "url": "https://www.dvidshub.net/video/1006093",
+      "note": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened.",
+      "note_en": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened."
+    }
+  ]
+}

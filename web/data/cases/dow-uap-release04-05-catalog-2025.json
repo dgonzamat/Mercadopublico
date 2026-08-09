@@ -1,0 +1,234 @@
+{
+  "id": "dow-uap-release04-05-catalog-2025",
+  "num": 378,
+  "pursueReleases": [4, 5],
+  "name": "Dieciocho partes más de CENTCOM, INDOPACOM y NORTHCOM sin caso propio",
+  "name_en": "Eighteen more CENTCOM, INDOPACOM, and NORTHCOM reports with no case of their own",
+  "year_start": 1996,
+  "year_end": 2025,
+  "country": "US",
+  "country_name": "Multi-ubicación (CENTCOM, INDOPACOM, NORTHCOM)",
+  "flag": "🌍",
+  "location": {
+    "lat": 30,
+    "lng": 60,
+    "place": "Multi-ubicación — CENTCOM, INDOPACOM y NORTHCOM (PURSUE Releases 04-05)",
+    "place_en": "Multi-location — CENTCOM, INDOPACOM, and NORTHCOM (PURSUE Releases 04-05)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 22,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.09,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.02,
+    "indet": 0.35
+  },
+  "patterns": [],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014100",
+      "type": "video",
+      "title": "DOW-UAP-PR024 — grabación de sensor, Medio Oriente, 2023 (Release 04)",
+      "title_en": "DOW-UAP-PR024 — sensor footage, Middle East, 2023 (Release 04)",
+      "source": "US Central Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014100"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014102",
+      "type": "video",
+      "title": "DOW-UAP-PR030 — grabación de sensor, Medio Oriente, 2023 (Release 04)",
+      "title_en": "DOW-UAP-PR030 — sensor footage, Middle East, 2023 (Release 04)",
+      "source": "US Central Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014102"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014096",
+      "type": "video",
+      "title": "DOW-UAP-PR100 — grabación de sensor, Mar Amarillo, 2023 (Release 04)",
+      "title_en": "DOW-UAP-PR100 — sensor footage, Yellow Sea, 2023 (Release 04)",
+      "source": "US Indo-Pacific Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014096"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014097",
+      "type": "video",
+      "title": "DOW-UAP-PR101 — grabación de sensor, Mar de China Meridional, 2024 (Release 04)",
+      "title_en": "DOW-UAP-PR101 — sensor footage, South China Sea, 2024 (Release 04)",
+      "source": "US Indo-Pacific Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014097"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014098",
+      "type": "video",
+      "title": "DOW-UAP-PR102 — grabación de sensor, Mar de China Oriental, 2024 (Release 04)",
+      "title_en": "DOW-UAP-PR102 — sensor footage, East China Sea, 2024 (Release 04)",
+      "source": "US Indo-Pacific Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014098"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014099",
+      "type": "video",
+      "title": "DOW-UAP-PR103 — grabación de sensor, Mar de China Oriental, 2024 (Release 04)",
+      "title_en": "DOW-UAP-PR103 — sensor footage, East China Sea, 2024 (Release 04)",
+      "source": "US Indo-Pacific Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014099"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014103",
+      "type": "video",
+      "title": "DOW-UAP-PR105 — grabación de sensor, Mar de China Oriental, 2025 (Release 04)",
+      "title_en": "DOW-UAP-PR105 — sensor footage, East China Sea, 2025 (Release 04)",
+      "source": "US Indo-Pacific Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014103"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014105",
+      "type": "video",
+      "title": "DOW-UAP-PR107 — grabación de sensor, costa este de EE.UU., 2020 (Release 04)",
+      "title_en": "DOW-UAP-PR107 — sensor footage, Eastern United States, 2020 (Release 04)",
+      "source": "US Northern Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014105"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014106",
+      "type": "video",
+      "title": "DOW-UAP-PR108 — grabación de sensor, costa oeste de EE.UU., 2020 (Release 04)",
+      "title_en": "DOW-UAP-PR108 — sensor footage, Western United States, 2020 (Release 04)",
+      "source": "US Northern Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014106"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014108",
+      "type": "video",
+      "title": "DOW-UAP-PR109 — grabación de sensor, costa este de EE.UU., 2015 (Release 04)",
+      "title_en": "DOW-UAP-PR109 — sensor footage, Eastern United States, 2015 (Release 04)",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022 vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014108"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014112",
+      "type": "video",
+      "title": "DOW-UAP-PR110 — grabación de sensor, costa este de EE.UU., 2020 (Release 04)",
+      "title_en": "DOW-UAP-PR110 — sensor footage, Eastern United States, 2020 (Release 04)",
+      "source": "US Northern Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014112"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014114",
+      "type": "video",
+      "title": "DOW-UAP-PR111 — grabación de sensor, costa este de EE.UU., 2020 (Release 04)",
+      "title_en": "DOW-UAP-PR111 — sensor footage, Eastern United States, 2020 (Release 04)",
+      "source": "US Northern Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014114"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014119",
+      "type": "video",
+      "title": "DOW-UAP-PR113 — grabación de sensor, costa oeste de EE.UU., 1996 (Release 04)",
+      "title_en": "DOW-UAP-PR113 — sensor footage, Western United States, 1996 (Release 04)",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022 vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014119"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1014121",
+      "type": "video",
+      "title": "DOW-UAP-PR114 — grabación de sensor, océano Atlántico, 2016 (Release 04)",
+      "title_en": "DOW-UAP-PR114 — sensor footage, Atlantic Ocean, 2016 (Release 04)",
+      "source": "US Northern Command vía DVIDS (PURSUE Release 04)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1014121"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017792",
+      "type": "video",
+      "title": "DOW-UAP-PR134 — grabación de sensor, Medio Oriente, 2025 (Release 05)",
+      "title_en": "DOW-UAP-PR134 — sensor footage, Middle East, 2025 (Release 05)",
+      "source": "US Central Command vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017792"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017796",
+      "type": "video",
+      "title": "DOW-UAP-PR136 — grabación de sensor, Medio Oriente, 2023 (Release 05)",
+      "title_en": "DOW-UAP-PR136 — sensor footage, Middle East, 2023 (Release 05)",
+      "source": "US Central Command vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017796"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017797",
+      "type": "video",
+      "title": "DOW-UAP-PR142 — grabación de sensor, Medio Oriente, 2025 (Release 05)",
+      "title_en": "DOW-UAP-PR142 — sensor footage, Middle East, 2025 (Release 05)",
+      "source": "US Central Command vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017797"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017799",
+      "type": "video",
+      "title": "DOW-UAP-PR149 — grabación de sensor, Medio Oriente, 2023 (Release 05)",
+      "title_en": "DOW-UAP-PR149 — sensor footage, Middle East, 2023 (Release 05)",
+      "source": "US Central Command vía DVIDS (PURSUE Release 05)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017799"
+    }
+  ],
+  "summary": "Las entregas cuarta y quinta de PURSUE liberaron 34 videos con la misma procedencia limpia que Release 01 —CENTCOM, INDOPACOM, NORTHCOM y transferencias directas de la UAPTF de la Armada, sin el problema de cadena de custodia de Release 02—, de los cuales 16 ya tienen caso propio en este corpus. Estos 18 restantes no: cada uno es un área de contraste que un sensor sigue, pierde y recupera, sin informe acompañante, comentario técnico ni comportamiento distintivo. Abarcan desde 1996 (el video más antiguo hallado en todo el barrido DVIDS de esta sesión) hasta 2025, y tres teatros —Oriente Medio, el Indo-Pacífico y ambas costas de EE.UU.—, sin que ninguno individualmente sostenga una narrativa propia.",
+  "summary_en": "PURSUE's fourth and fifth drops released 34 videos with the same clean provenance as Release 01 —CENTCOM, INDOPACOM, NORTHCOM, and direct transfers from the Navy's UAPTF, without Release 02's chain-of-custody problem—, of which 16 already have their own case in this corpus. These remaining 18 do not: each is an area of contrast a sensor tracks, loses, and regains, with no accompanying report, technical comment, or distinctive behavior. They span from 1996 (the oldest video found in this session's entire DVIDS sweep) to 2025, and three theaters —the Middle East, the Indo-Pacific, and both U.S. coasts— without any single one supporting its own narrative.",
+  "whatHappened": "Las entregas cuarta (10 de julio de 2026) y quinta (7 de agosto de 2026) del programa PURSUE liberaron, entre ambas, 34 videos de sensor con la misma procedencia institucional directa que ya caracterizaba a Release 01: comandos combatientes (CENTCOM, INDOPACOM, NORTHCOM) sometiendo formalmente reportes a la AARO, más un par de transferencias directas de la Fuerza de Tarea de Fenómenos Anómalos No Identificados (UAPTF) de la Armada en 2022. A diferencia del lote de Release 02 —ver [[reeves-foia-classified-network-2023]] y [[dow-uap-release02-catalog-2023]]—, ninguno de estos 34 archivos carga la advertencia de 'cadena de custodia no sustanciada': cada uno tiene un comando o unidad identificable como origen.\n\nDe esos 34 videos, 16 ya cuentan con un caso individual propio en este corpus, sea por un informe de debrief acompañante ([[eastern-us-civilian-sensor-2019]], [[atlantic-ocean-balloon-2020]], [[eastern-us-metallic-reflective-2020]]), un comentario técnico de la AARO explicando un artefacto de sensor ([[gulf-america-thermal-camouflage-2019]], [[middle-east-closing-distance-2020]]), un evento resuelto con evaluación oficial ([[mt-etna-object-2018]], [[al-taqaddum-balloons-2017]]) o alguna otra razón documentada en sus fichas respectivas.\n\nLos 18 videos catalogados en esta ficha son el resto: se revisó la descripción visual completa de cada uno, con las mismas cinco señales que ya habían producido casos individuales dentro de este mismo corpus —informe acompañante, comentario técnico, admisión de edición, morfología o comportamiento distintivo, duración atípica—, y ninguno las tiene. Como en el catálogo de Release 02, el patrón se repite con pocas variaciones: un área de contraste entra al campo de visión, el sensor la sigue o hace zoom sobre ella, la pierde y recupera contra el fondo, y sale de cuadro.\n\nGeográficamente, estos 18 cubren tres teatros distintos: cinco sobre el Indo-Pacífico (Mar Amarillo, Mar de China Meridional y Oriental), siete sobre EE.UU. y el Atlántico (ambas costas más el océano Atlántico) y seis sobre Oriente Medio bajo CENTCOM. Cronológicamente, incluyen el video más antiguo de todo el barrido DVIDS de esta sesión: PR113, de 1996, transferido por la UAPTF de la Armada en 2022 pero publicado en DVIDS recién en Release 04 (2026) — treinta años entre la captura original y la publicación pública.",
+  "whatHappened_en": "PURSUE's fourth (July 10, 2026) and fifth (August 7, 2026) drops released, between them, 34 sensor videos with the same direct institutional provenance that already characterized Release 01: combatant commands (CENTCOM, INDOPACOM, NORTHCOM) formally submitting reports to AARO, plus a couple of direct transfers from the Navy's Unidentified Anomalous Phenomena Task Force (UAPTF) in 2022. Unlike the Release 02 batch —see [[reeves-foia-classified-network-2023]] and [[dow-uap-release02-catalog-2023]]—, none of these 34 files carries the 'unsubstantiated chain-of-custody' warning: each has an identifiable command or unit as its origin.\n\nOf those 34 videos, 16 already have their own individual case in this corpus, whether due to an accompanying debrief report ([[eastern-us-civilian-sensor-2019]], [[atlantic-ocean-balloon-2020]], [[eastern-us-metallic-reflective-2020]]), a technical AARO comment explaining a sensor artifact ([[gulf-america-thermal-camouflage-2019]], [[middle-east-closing-distance-2020]]), an event resolved with an official assessment ([[mt-etna-object-2018]], [[al-taqaddum-balloons-2017]]), or some other reason documented in their respective records.\n\nThe 18 videos catalogued in this file are the rest: each one's full visual description was reviewed with the same five signals that had already produced individual cases within this corpus —accompanying report, technical comment, editing admission, distinctive morphology or behavior, outlier duration— and none has one. As with the Release 02 catalogue, the pattern repeats with little variation: an area of contrast enters the field of view, the sensor tracks or zooms in on it, loses and regains it against the background, and exits the frame.\n\nGeographically, these 18 span three distinct theaters: five over the Indo-Pacific (Yellow Sea, South and East China Seas), seven over the U.S. and the Atlantic (both coasts plus the Atlantic Ocean), and six over the Middle East under CENTCOM. Chronologically, they include the oldest video in this session's entire DVIDS sweep: PR113, from 1996, transferred by the Navy's UAPTF in 2022 but only published on DVIDS with Release 04 (2026) — thirty years between original capture and public release.",
+  "whyMatters": "Como su contraparte de Release 02 ([[dow-uap-release02-catalog-2023]]), este catálogo existe por completitud del registro, no por peso analítico: ningún video con procedencia institucional trazable debería quedar invisible en el sitio solo porque no alcanza el umbral de contenido distintivo. La diferencia con el catálogo de Release 02 es justamente la procedencia — estos 18 no cargan la advertencia de cadena de custodia no sustanciada, así que la ausencia de contenido distintivo no puede atribuirse a alteración o manipulación previa; son, sencillamente, reportes rutinarios de un sensor que detectó algo que no pudo identificar y lo perdió de vista.\n\nEsa distinción importa para leer la proporción correctamente: de 34 videos de Release 04-05 con procedencia limpia, 16 (47%) tuvieron algo lo bastante distintivo como para sostener un caso propio — una proporción similar a la de Release 02 pese a la diferencia de procedencia, lo que sugiere que el factor determinante de si un video sostiene un caso individual no es la limpieza de la cadena de custodia, sino si el sensor capturó algo genuinamente atípico durante el tiempo que tuvo el objeto en cuadro.\n\nEl caso PR113 (1996) merece una mención aparte: es el expediente más antiguo de todo este barrido, treinta años entre la observación original y su publicación pública en 2026. Ese lapso, por sí solo, no dice nada sobre la naturaleza del fenómeno reportado, pero sí ilustra cuánto tiempo puede permanecer archivado un reporte de sensor antes de que un programa de desclasificación como PURSUE lo saque a la luz.\n\nLa lectura prosaica más directa para la enorme mayoría de estos 18 clips sigue siendo tráfico aéreo o marítimo convencional, aves o fenómenos atmosféricos, cuya apariencia como área de contraste en un sensor de baja resolución, sin telemetría ni contexto de misión, no permite ir más allá. Se documentan aquí por completitud, no como evidencia de nada en particular.",
+  "whyMatters_en": "Like its Release 02 counterpart ([[dow-uap-release02-catalog-2023]]), this catalogue exists for completeness of the record, not analytical weight: no video with traceable institutional provenance should be invisible on the site just because it falls short of the distinctive-content threshold. The difference from the Release 02 catalogue is precisely provenance — these 18 do not carry the unsubstantiated-chain-of-custody warning, so the absence of distinctive content cannot be attributed to prior alteration or manipulation; they are, simply, routine reports of a sensor that detected something it could not identify and lost sight of.\n\nThat distinction matters for reading the proportion correctly: of 34 Release 04-05 videos with clean provenance, 16 (47%) had something distinctive enough to support their own case — a proportion similar to Release 02's despite the difference in provenance, which suggests that whether a video supports an individual case is determined not by the cleanliness of its chain of custody, but by whether the sensor captured something genuinely atypical during the time it held the object in frame.\n\nThe PR113 case (1996) deserves separate mention: it is the oldest file in this entire sweep, thirty years between the original observation and its public release in 2026. That gap, on its own, says nothing about the nature of the reported phenomenon, but it does illustrate how long a sensor report can sit archived before a declassification program like PURSUE brings it to light.\n\nThe most direct prosaic reading for the vast majority of these 18 clips remains conventional air or maritime traffic, birds, or atmospheric phenomena, whose appearance as an area of contrast on a low-resolution sensor, with no telemetry or mission context, does not permit going further. They are documented here for completeness, not as evidence of anything in particular.",
+  "evidence": [
+    "34 videos de Release 04-05 con procedencia institucional directa (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), sin advertencia de cadena de custodia",
+    "16 de los 34 videos tienen caso individual propio en este corpus por contenido distintivo verificado",
+    "Los 18 videos aquí catalogados se revisaron con el mismo criterio y no tienen informe, comentario técnico, admisión de edición ni comportamiento distintivo",
+    "Cobertura geográfica: 5 Indo-Pacífico, 7 EE.UU./Atlántico, 6 Oriente Medio",
+    "PR113 (1996): el video más antiguo de todo el barrido DVIDS de esta sesión, publicado 30 años después de la observación original",
+    "Proporción con caso propio (47%) similar a la de Release 02 pese a la diferencia de procedencia"
+  ],
+  "evidence_en": [
+    "34 Release 04-05 videos with direct institutional provenance (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), no chain-of-custody warning",
+    "16 of the 34 videos have their own individual case in this corpus due to verified distinctive content",
+    "The 18 videos catalogued here were reviewed with the same criteria and have no report, technical comment, editing admission, or distinctive behavior",
+    "Geographic coverage: 5 Indo-Pacific, 7 U.S./Atlantic, 6 Middle East",
+    "PR113 (1996): the oldest video in this session's entire DVIDS sweep, released 30 years after the original observation",
+    "Share with an individual case (47%) similar to Release 02's despite the difference in provenance"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 18 videos de Release 04-05 sin caso individual (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), catalogados en conjunto",
+      "url": "https://www.dvidshub.net/video/1014100",
+      "note": "18 videos embebidos en el visor de este caso; ver [[dow-centcom-2020]] para el equivalente de Release 01 y [[dow-uap-release02-catalog-2023]] para Release 02.",
+      "note_en": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 18 videos from Release 04-05 with no individual case (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), catalogued together",
+      "url": "https://www.dvidshub.net/video/1014100",
+      "note": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02.",
+      "note_en": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02."
+    }
+  ]
+}

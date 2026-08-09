@@ -13,18 +13,20 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
-| **Release 01** | 8 may 2026 | 27 | 18 |
-| **Release 02** | 22 may 2026 | 50 | 23 |
-| **Release 04** | 10 jul 2026 | 19 | 5 |
-| **Release 05** | 7 ago 2026 | 15 | 11 |
+| **Release 01** | 8 may 2026 | 27 | 27 |
+| **Release 02** | 22 may 2026 | 50 | 50 |
+| **Release 04** | 10 jul 2026 | 19 | 19 |
+| **Release 05** | 7 ago 2026 | 15 | 15 |
 | **Release 03** | 12 jun 2026 | 6 | 6 |
-| | | **117** | **63** |
+| | | **117** | **117** |
 
-**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 91 documentos de video embebidos en 40 casos al cierre de esta sesión (ago 2026):
+**Las cinco entregas de PURSUE están 100% mapeadas** (ago 2026): todo video con caso individual verificado tiene su propia ficha narrativa; el resto —sin informe acompañante, comentario técnico, admisión de edición, morfología distintiva ni duración atípica— está embebido en uno de tres catálogos agregadores para que ninguno quede fuera del sitio: `dow-centcom-2020` (Release 01), `dow-uap-release02-catalog-2023` (Release 02, FOIA/red clasificada) y `dow-uap-release04-05-catalog-2025` (Release 04-05, procedencia institucional directa). Ver la nota de cierre al final de esta sección.
+
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 145 documentos de video embebidos en 43 casos al cierre de esta sesión (ago 2026):
 
 | Serie | Videos embebidos | Nota |
 |---|---|---|
-| `DOW-UAP-PR*` (Releases 01/02/04/05) | 57 | Ver tabla PURSUE arriba |
+| `DOW-UAP-PR*` (Releases 01/02/04/05) | 111 | Ver tabla PURSUE arriba |
 | `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
 | `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 8 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
 | Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
@@ -32,7 +34,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
 | Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
 | Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
-| **Total** | **91 en 40 casos** | |
+| **Total** | **145 en 43 casos** | |
 
 **Revisión dirigida de Release 02 (ago 2026, tras feedback del usuario)**: el descarte categórico de los 31 videos restantes de Release 02 no aplicaba el mismo criterio de "morfología/comportamiento distintivo" usado para rescatar 3 casos de Release 01. Revisión de las 31 descripciones completas encontró 2 más con valor real: `PR050` (formación de 4 objetos que sí coincide con su título, caso de control) y `PR054` (donde la AARO señala EXPLÍCITAMENTE que "las alteraciones digitales... influyen significativamente en el desempeño aparente" — la confirmación más limpia del patrón título-vs-descripción de todo el lote). Quedan ~29 sin caso propio, genuinamente sin informe ni comportamiento distintivo tras esta segunda pasada.
 
@@ -48,7 +50,16 @@ Con esto, las tres pasadas de grep sobre los 61 pendientes restantes quedan agot
 
 **Quinta pasada, lectura manual completa de las 59 descripciones restantes (ago 2026)**: en vez de una nueva palabra clave, se leyó el cuerpo completo de la descripción visual de los 59 videos pendientes tras la cuarta pasada. Encontró lo que ninguna de las cuatro pasadas anteriores por palabra clave podía detectar: `PR123` a `PR127` (ids 1017805, 1017806, 1017788, 1017790, 1017791) son cinco archivos que la propia AARO señala como 'capturados de forma contemporánea' — el mismo evento sobre el océano Pacífico en 2019, documentado por tres capturas secundarias de un display de sensor IR y dos grabaciones de mano a simple vista que describen explícitamente 'varias fuentes de luz aparentes' (plural) → `pacific-ocean-uaptf-lights-2019`. A diferencia del resto del lote Release 02 (hallazgo en red clasificada vía FOIA), estos cinco llegaron a la AARO por transferencia directa de la UAPTF de la Armada en 2022 — cadena de custodia más trazable —, aunque solo se publicaron en DVIDS con la quinta entrega de PURSUE (7 ago 2026). Es el único caso de todo este barrido con más de dos fuentes documentales independientes y contemporáneas del mismo evento.
 
-Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfología/comportamiento por palabra clave, duración atípica, y lectura manual completa) se aplicaron sobre el pool de pendientes. La lectura manual —más lenta pero más completa que cualquier grep— es la que finalmente encontró el hallazgo de mayor valor analítico de las cinco pasadas; **lección operativa**: ninguna de las pasadas automatizadas por palabra clave detecta un patrón que depende de leer varias fichas relacionadas en conjunto (el 'capturado de forma contemporánea' que conecta PR123-127 solo es visible leyendo los cinco textos completos, no grepeando cada uno por separado). El barrido de esta sesión se da por agotado tras esta quinta pasada.
+La misma lectura manual encontró un segundo hallazgo, menor pero real: `PR40` (id 1006093, Release 01) tiene una anotación hecha por el propio reportero original —no la AARO ni un analista posterior— quien pausó el video y trazó una línea blanca con la leyenda 'U/I SMALL THERMAL SIGNATURE' sobre el área de interés, en el momento mismo de reportar el evento → `middle-east-thermal-signature-annotation-2020`. Es el único expediente del corpus con una anotación de campo del testigo original preservada intacta por la AARO.
+
+Con estos dos hallazgos, cinco señales independientes (debrief, AARO Comment, morfología/comportamiento por palabra clave, duración atípica, y lectura manual completa) se aplicaron sobre el pool de pendientes. La lectura manual —más lenta pero más completa que cualquier grep— es la que finalmente encontró los dos hallazgos de mayor valor analítico de las cinco pasadas; **lección operativa**: ninguna pasada automatizada por palabra clave detecta un patrón que depende de leer varias fichas relacionadas en conjunto (el 'capturado de forma contemporánea' que conecta PR123-127) ni una frase de fraseo variable que ningún término de búsqueda anticipado captura (la anotación de PR40). El barrido de esta sesión se da por agotado tras esta quinta pasada.
+
+**Cierre del inventario · los 53 videos sin caso individual quedaron catalogados igual (ago 2026)**: agotado el barrido de búsqueda de contenido distintivo, quedaban 53 videos —8 de Release 01, 27 de Release 02, 14 de Release 04, 4 de Release 05— sin ninguna de las cinco señales, pero eso no significa que debieran quedar invisibles en el sitio: cada uno se mapeó a un catálogo agregador, sin narrativa individual pero con su video embebido y su origen documentado.
+- Los 8 de Release 01 se sumaron al catálogo ya existente `dow-centcom-2020` (13→21 videos embebidos), que ya cubría el mismo tipo de expediente CENTCOM/INDOPACOM.
+- Los 27 de Release 02 se agruparon en un catálogo nuevo, `dow-uap-release02-catalog-2023`, con la misma advertencia de cadena de custodia no sustanciada que el resto del lote FOIA Reeves.
+- Los 14 de Release 04 y 4 de Release 05 (procedencia institucional directa, sin el problema de custodia de Release 02) se agruparon en otro catálogo nuevo, `dow-uap-release04-05-catalog-2025`.
+
+Con esto, **las cinco entregas de PURSUE quedan 100% mapeadas**: 117/117 videos tienen un video embebido en algún caso del corpus (individual o catálogo agregador), y 64 de esos 117 (55%) sostienen además una narrativa propia. El barrido de esta sesión —cinco pasadas de búsqueda de contenido distintivo más el cierre por catalogación— se da por completo.
 
 > **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
@@ -69,32 +80,32 @@ Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfolo
 - [x] `PR34` · 10.01.2023 — unresolved-uap-report-greece-october-2023 → `dow-centcom-2020`, `greece-sea-skimming-2023` · [ver](https://www.dvidshub.net/video/1006080)
 - [x] `PR35` · 10.01.2023 — unresolved-uap-report-greece-october-2023 → `dow-centcom-2020`, `greece-sea-skimming-2023` · [ver](https://www.dvidshub.net/video/1006082)
 - [x] `PR36` · 05.01.2020 — unresolved-uap-report-middle-east-may-2020 → `dow-centcom-2020` · [ver](https://www.dvidshub.net/video/1006083)
-- [ ] `PR37` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006087)
+- [x] `PR37` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006087)
 - [x] `PR38` · 01.01.2013 — unresolved-uap-report-middle-east-2013 → `eight-pointed-star-2013` · [ver](https://www.dvidshub.net/video/1006088)
-- [ ] `PR39` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006089)
-- [ ] `PR40` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006093)
-- [ ] `PR41` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006094)
-- [ ] `PR42` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006097)
-- [ ] `PR43` · 01.01.2025 — unresolved-uap-report-africa-2025 · [ver](https://www.dvidshub.net/video/1006159)
-- [ ] `PR44` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006104)
+- [x] `PR39` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006089)
+- [x] `PR40` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `middle-east-thermal-signature-annotation-2020` · [ver](https://www.dvidshub.net/video/1006093)
+- [x] `PR41` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006094)
+- [x] `PR42` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006097)
+- [x] `PR43` · 01.01.2025 — unresolved-uap-report-africa-2025 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006159)
+- [x] `PR44` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006104)
 - [x] `PR45` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `middle-east-closing-distance-2020` · [ver](https://www.dvidshub.net/video/1006105)
 - [x] `PR46` · 01.01.2024 — unresolved-uap-report-indopacom-2024 → `football-shaped-projections-2024` · [ver](https://www.dvidshub.net/video/1006106)
 - [x] `PR47` · 01.01.2023 — unresolved-uap-report-indopacom-2023 → `three-objects-fixed-formation-2023` · [ver](https://www.dvidshub.net/video/1006107)
-- [ ] `PR48` · 01.01.2024 — unresolved-uap-report-indopacom-2024 · [ver](https://www.dvidshub.net/video/1006110)
-- [ ] `PR49` · 01.01.2026 — unresolved-uap-report-department-army-2026 · [ver](https://www.dvidshub.net/video/1006111)
+- [x] `PR48` · 01.01.2024 — unresolved-uap-report-indopacom-2024 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006110)
+- [x] `PR49` · 01.01.2026 — unresolved-uap-report-department-army-2026 → `dow-centcom-2020`(https://www.dvidshub.net/video/1006111)
 
 ## Release 02 — 22 may 2026 (50 videos)
 
 - [x] `PR050` · 08.26.2022 — 4-uap-formation-iran-26-aug-2022-over-water-callsign → `four-object-formation-iran-2022` · [ver](https://www.dvidshub.net/video/1007706)
 - [x] `PR051` · 01.01.2021 — syrian-uap-instant-acceleration → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007707)
 - [x] `PR052` · 06.01.2024 — uap-uso-formation-callsign-mission → `uso-formation-nonlinear-edit-2024` · [ver](https://www.dvidshub.net/video/1007708)
-- [ ] `PR053` · 10.15.2022 — cigar-shaped-fast-spherical-uap-clip-15-oct-22 · [ver](https://www.dvidshub.net/video/1007709)
+- [x] `PR053` · 10.15.2022 — cigar-shaped-fast-spherical-uap-clip-15-oct-22 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007709)
 - [x] `PR054` · 08.01.2022 — spherical-uap-erratic-movement-callsign-mission-2022 → `spherical-erratic-editing-artifact-2022` · [ver](https://www.dvidshub.net/video/1007711)
 - [x] `PR055` · 11.23.2020 — spherical-uap-over-afg-and-out-clouds-23-nov-2020 → `spherical-afghanistan-2020` · [ver](https://www.dvidshub.net/video/1007713)
-- [ ] `PR056` · 06.01.2024 — spherical-uap-pulsing-over-water-callsign · [ver](https://www.dvidshub.net/video/1007718)
-- [ ] `PR057A` · 01.01.2023 — spherical-uap-clouds · [ver](https://www.dvidshub.net/video/1007720)
+- [x] `PR056` · 06.01.2024 — spherical-uap-pulsing-over-water-callsign → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007718)
+- [x] `PR057A` · 01.01.2023 — spherical-uap-clouds → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007720)
 - [x] `PR058` · 06.24.2024 — callsign-mission-uap → `three-versions-same-clip-2024` · [ver](https://www.dvidshub.net/video/1007723)
-- [ ] `PR059` · 06.01.2020 — nag-uap-1-jun-20 · [ver](https://www.dvidshub.net/video/1007727)
+- [x] `PR059` · 06.01.2020 — nag-uap-1-jun-20 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007727)
 - [x] `PR060` · 04.12.2021 — spherical-uap-callsign-2021-04-12-obj-2 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007734)
 - [x] `PR061` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-0 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007735)
 - [x] `PR062` · 04.12.2021 — spherical-uap-callsign-2021-04-12-vid-1 → `spherical-uap-quad-clip-2021` · [ver](https://www.dvidshub.net/video/1007739)
@@ -109,52 +120,52 @@ Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfolo
 - [x] `PR071` · 02.12.2023 — usaf-ang-f-16c-callsign-callsign-shoots-down-uap-over-lake-huron → `lake-huron-2023` · [ver](https://www.dvidshub.net/video/1007784)
 - [x] `PR072` · 03.01.2022 — administrative-revision-iir-1777-j0032-22-kazakhstan-uap-vicinit → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007788)
 - [x] `PR073` · 11.01.2022 — iir-1-655-s0053-23-several-unidentified-aerial-phenomenon-encoun → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007790)
-- [ ] `PR074` · 06.01.2022 — callsign-missionhd-20220613 · [ver](https://www.dvidshub.net/video/1007791)
-- [ ] `PR075` · 06.09.2021 — 09jun2021-platform-observed-uap-ecs · [ver](https://www.dvidshub.net/video/1007795)
-- [ ] `PR076` · 01.03.2021 — 03-january-2021-callsign-mission-observes-uap · [ver](https://www.dvidshub.net/video/1007804)
-- [ ] `PR077` · 11.02.2020 — 2-november-2020-callsign-callsign-observes-and-tracks-uap-1-2 · [ver](https://www.dvidshub.net/video/1007809)
-- [ ] `PR078` · 11.02.2020 — 2-november-2020-callsign-callsign-observes-and-tracks-uap-2-2 · [ver](https://www.dvidshub.net/video/1007812)
+- [x] `PR074` · 06.01.2022 — callsign-missionhd-20220613 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007791)
+- [x] `PR075` · 06.09.2021 — 09jun2021-platform-observed-uap-ecs → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007795)
+- [x] `PR076` · 01.03.2021 — 03-january-2021-callsign-mission-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007804)
+- [x] `PR077` · 11.02.2020 — 2-november-2020-callsign-callsign-observes-and-tracks-uap-1-2 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007809)
+- [x] `PR078` · 11.02.2020 — 2-november-2020-callsign-callsign-observes-and-tracks-uap-2-2 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007812)
 - [x] `PR079` · 10.29.2020 — 29-october-2020-callsign-mission-observes-3-fast-moving-uaps → `three-fast-moving-uap-2020` · [ver](https://www.dvidshub.net/video/1007816)
-- [ ] `PR080` · 10.20.2020 — 20-october-2020-callsign-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007803)
-- [ ] `PR081` · 10.18.2020 — 18-oct-2020-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007805)
-- [ ] `PR082` · 10.16.2020 — 16-oct-2020-callsign-views-uap · [ver](https://www.dvidshub.net/video/1007807)
-- [ ] `PR083` · 10.07.2020 — 7-october-2020-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007808)
-- [ ] `PR084` · 09.17.2020 — 17-sept-2020-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007810)
-- [ ] `PR085` · 09.16.2020 — 16-sept-2020-callsign-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007796)
+- [x] `PR080` · 10.20.2020 — 20-october-2020-callsign-callsign-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007803)
+- [x] `PR081` · 10.18.2020 — 18-oct-2020-callsign-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007805)
+- [x] `PR082` · 10.16.2020 — 16-oct-2020-callsign-views-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007807)
+- [x] `PR083` · 10.07.2020 — 7-october-2020-callsign-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007808)
+- [x] `PR084` · 09.17.2020 — 17-sept-2020-callsign-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007810)
+- [x] `PR085` · 09.16.2020 — 16-sept-2020-callsign-callsign-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007796)
 - [x] `PR086` · 12.01.2019 — uap-dec-2019-east-coast → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007797)
-- [ ] `PR087` · 09.05.2020 — 05-september-2020-callsign-uap · [ver](https://www.dvidshub.net/video/1007799)
-- [ ] `PR088` · 08.31.2020 — 31-aug-callsign-callsign-observes-uap · [ver](https://www.dvidshub.net/video/1007800)
-- [ ] `PR089` · 08.31.2020 — 31-aug-callsign-callsign-observes-uap-part2 · [ver](https://www.dvidshub.net/video/1007712)
-- [ ] `PR090` · 08.24.2020 — 24-aug-2020-callsign-mission-observes-uap · [ver](https://www.dvidshub.net/video/1007719)
-- [ ] `PR091` · 08.21.2020 — 21-aug-callsign-observes-uap-persian-gulf · [ver](https://www.dvidshub.net/video/1007716)
-- [ ] `PR092` · 08.08.2020 — 08-aug-2020-callsign-callsign-uap-observation · [ver](https://www.dvidshub.net/video/1007715)
-- [ ] `PR093` · 05.05.2020 — may-05-2020-gulf-arabia-callsign-platform-dual-uap · [ver](https://www.dvidshub.net/video/1007721)
-- [ ] `PR094` · 02.13.2020 — callsign-mission-hd-2020-02-13 · [ver](https://www.dvidshub.net/video/1007722)
-- [ ] `PR095` · 05.05.2020 — may-05-2020-gulf-arabia-callsign-platform-dual-uap · [ver](https://www.dvidshub.net/video/1007725)
-- [ ] `PR096` · 07.03.2018 — hh11-03-july-2018-uaps · [ver](https://www.dvidshub.net/video/1007726)
-- [ ] `PR097` · 09.25.2019 — hi-res-callsign-observes-uap-25sep19-2135z · [ver](https://www.dvidshub.net/video/1007728)
+- [x] `PR087` · 09.05.2020 — 05-september-2020-callsign-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007799)
+- [x] `PR088` · 08.31.2020 — 31-aug-callsign-callsign-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007800)
+- [x] `PR089` · 08.31.2020 — 31-aug-callsign-callsign-observes-uap-part2 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007712)
+- [x] `PR090` · 08.24.2020 — 24-aug-2020-callsign-mission-observes-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007719)
+- [x] `PR091` · 08.21.2020 — 21-aug-callsign-observes-uap-persian-gulf → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007716)
+- [x] `PR092` · 08.08.2020 — 08-aug-2020-callsign-callsign-uap-observation → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007715)
+- [x] `PR093` · 05.05.2020 — may-05-2020-gulf-arabia-callsign-platform-dual-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007721)
+- [x] `PR094` · 02.13.2020 — callsign-mission-hd-2020-02-13 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007722)
+- [x] `PR095` · 05.05.2020 — may-05-2020-gulf-arabia-callsign-platform-dual-uap → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007725)
+- [x] `PR096` · 07.03.2018 — hh11-03-july-2018-uaps → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007726)
+- [x] `PR097` · 09.25.2019 — hi-res-callsign-observes-uap-25sep19-2135z → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007728)
 - [x] `PR098` · 01.01.2019 — ufos-formation-over-persian-gulf → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007737)
-- [ ] `PR099` · 09.23.2019 — hi-res-callsign-observes-uap-25sep19-1715z · [ver](https://www.dvidshub.net/video/1007738)
+- [x] `PR099` · 09.23.2019 — hi-res-callsign-observes-uap-25sep19-1715z → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007738)
 
 ## Release 04 — 10 jul 2026 (19 videos)
 
-- [ ] `PR024` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1014100)
-- [ ] `PR030` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1014102)
-- [ ] `PR100` · 01.01.2023 — unresolved-uap-report-yellow-sea-2023 · [ver](https://www.dvidshub.net/video/1014096)
-- [ ] `PR101` · 01.01.2024 — unresolved-uap-report-south-china-sea-2024 · [ver](https://www.dvidshub.net/video/1014097)
-- [ ] `PR102` · 01.01.2024 — unresolved-uap-report-east-china-sea-2024 · [ver](https://www.dvidshub.net/video/1014098)
-- [ ] `PR103` · 01.01.2024 — unresolved-uap-report-east-china-sea-2024 · [ver](https://www.dvidshub.net/video/1014099)
+- [x] `PR024` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014100)
+- [x] `PR030` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014102)
+- [x] `PR100` · 01.01.2023 — unresolved-uap-report-yellow-sea-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014096)
+- [x] `PR101` · 01.01.2024 — unresolved-uap-report-south-china-sea-2024 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014097)
+- [x] `PR102` · 01.01.2024 — unresolved-uap-report-east-china-sea-2024 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014098)
+- [x] `PR103` · 01.01.2024 — unresolved-uap-report-east-china-sea-2024 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014099)
 - [x] `PR104` · 01.01.2025 — unresolved-uap-report-yellow-sea-2025 → `yellow-sea-star-2025` (caso ya existente, se agregó el video) · [ver](https://www.dvidshub.net/video/1014101)
-- [ ] `PR105` · 01.01.2025 — unresolved-uap-report-east-china-sea-2025 · [ver](https://www.dvidshub.net/video/1014103)
+- [x] `PR105` · 01.01.2025 — unresolved-uap-report-east-china-sea-2025 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014103)
 - [x] `PR106` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 → `eastern-us-metallic-reflective-2020` · [ver](https://www.dvidshub.net/video/1014104)
-- [ ] `PR107` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014105)
-- [ ] `PR108` · 01.01.2020 — unresolved-uap-report-western-united-states-2020 · [ver](https://www.dvidshub.net/video/1014106)
-- [ ] `PR109` · 01.01.2015 — unresolved-uap-report-eastern-united-states-2015 · [ver](https://www.dvidshub.net/video/1014108)
-- [ ] `PR110` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014112)
-- [ ] `PR111` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 · [ver](https://www.dvidshub.net/video/1014114)
+- [x] `PR107` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014105)
+- [x] `PR108` · 01.01.2020 — unresolved-uap-report-western-united-states-2020 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014106)
+- [x] `PR109` · 01.01.2015 — unresolved-uap-report-eastern-united-states-2015 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014108)
+- [x] `PR110` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014112)
+- [x] `PR111` · 01.01.2020 — unresolved-uap-report-eastern-united-states-2020 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014114)
 - [x] `PR112` · 01.01.2019 — unresolved-uap-report-eastern-united-states-2019 → `eastern-us-civilian-sensor-2019` · [ver](https://www.dvidshub.net/video/1014128)
-- [ ] `PR113` · 01.01.1996 — unresolved-uap-report-western-united-states-1996 · [ver](https://www.dvidshub.net/video/1014119)
-- [ ] `PR114` · 01.01.2016 — unresolved-uap-report-atlantic-ocean-2016 · [ver](https://www.dvidshub.net/video/1014121)
+- [x] `PR113` · 01.01.1996 — unresolved-uap-report-western-united-states-1996 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014119)
+- [x] `PR114` · 01.01.2016 — unresolved-uap-report-atlantic-ocean-2016 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1014121)
 - [x] `PR115` · 01.01.2019 — unresolved-uap-report-gulf-america-2019 → `gulf-america-thermal-camouflage-2019` · [ver](https://www.dvidshub.net/video/1014123)
 - [x] `PR116` · 01.01.2020 — unresolved-uap-report-atlantic-ocean-2020 → `atlantic-ocean-balloon-2020` · [ver](https://www.dvidshub.net/video/1014124)
 
@@ -171,10 +182,10 @@ Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfolo
 - [x] `PR125` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017788)
 - [x] `PR126` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017790)
 - [x] `PR127` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017791)
-- [ ] `PR134` · 01.01.2025 — unresolved-uap-report-middle-east-2025 · [ver](https://www.dvidshub.net/video/1017792)
-- [ ] `PR136` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1017796)
-- [ ] `PR142` · 01.01.2025 — unresolved-uap-report-middle-east-2025 · [ver](https://www.dvidshub.net/video/1017797)
-- [ ] `PR149` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1017799)
+- [x] `PR134` · 01.01.2025 — unresolved-uap-report-middle-east-2025 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017792)
+- [x] `PR136` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017796)
+- [x] `PR142` · 01.01.2025 — unresolved-uap-report-middle-east-2025 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017797)
+- [x] `PR149` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017799)
 
 ## Serie separada · AARO Case Resolution Reports (hallada vía `q=Anomaly+Resolution+Office`)
 

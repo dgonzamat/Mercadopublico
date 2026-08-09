@@ -1,0 +1,315 @@
+{
+  "id": "dow-uap-release02-catalog-2023",
+  "num": 377,
+  "pursueReleases": [2],
+  "name": "El resto del lote Reeves: 27 clips sin caso propio, catalogados igual",
+  "name_en": "The rest of the Reeves batch: 27 clips with no case of their own, catalogued anyway",
+  "year_start": 2018,
+  "year_end": 2022,
+  "country": "US",
+  "country_name": "Multi-ubicación (red clasificada, lote FOIA Reeves)",
+  "flag": "🌍",
+  "location": {
+    "lat": 25,
+    "lng": 40,
+    "place": "Multi-ubicación — CENTCOM y áreas adyacentes (red clasificada, lote FOIA Reeves)",
+    "place_en": "Multi-location — CENTCOM and adjacent areas (classified network, Reeves FOIA batch)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 22,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.42,
+    "humana_clasificada": 0.09,
+    "adversaria": 0.04,
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.03,
+    "indet": 0.36
+  },
+  "patterns": ["8d"],
+  "category": "document",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007709",
+      "type": "video",
+      "title": "DOW-UAP-PR053 — título de uploader: \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\" (Release 02)",
+      "title_en": "DOW-UAP-PR053 — uploader title: \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007709"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007718",
+      "type": "video",
+      "title": "DOW-UAP-PR056 — título de uploader: \"Spherical UAP pulsing over water [CALLSIGN]\" (Release 02)",
+      "title_en": "DOW-UAP-PR056 — uploader title: \"Spherical UAP pulsing over water [CALLSIGN]\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007718"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007720",
+      "type": "video",
+      "title": "DOW-UAP-PR057a — título de uploader: \"Spherical UAP in clouds\" (Release 02)",
+      "title_en": "DOW-UAP-PR057a — uploader title: \"Spherical UAP in clouds\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007720"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007727",
+      "type": "video",
+      "title": "DOW-UAP-PR059 — título de uploader: \"NAG UAP 1 Jun 20\" (Release 02)",
+      "title_en": "DOW-UAP-PR059 — uploader title: \"NAG UAP 1 Jun 20\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007727"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007791",
+      "type": "video",
+      "title": "DOW-UAP-PR074 — título de uploader: \"[CALLSIGN] (Mission)HD_20220613\" (Release 02)",
+      "title_en": "DOW-UAP-PR074 — uploader title: \"[CALLSIGN] (Mission)HD_20220613\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007791"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007795",
+      "type": "video",
+      "title": "DOW-UAP-PR075 — título de uploader: \"09JUN2021 [Platform] observed UAP in the ECS\" (Release 02)",
+      "title_en": "DOW-UAP-PR075 — uploader title: \"09JUN2021 [Platform] observed UAP in the ECS\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007795"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007804",
+      "type": "video",
+      "title": "DOW-UAP-PR076 — título de uploader: \"03 January 2021 [CALLSIGN] (Mission) observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR076 — uploader title: \"03 January 2021 [CALLSIGN] (Mission) observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007804"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007809",
+      "type": "video",
+      "title": "DOW-UAP-PR077 — título de uploader: \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\" (Release 02)",
+      "title_en": "DOW-UAP-PR077 — uploader title: \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007809"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007812",
+      "type": "video",
+      "title": "DOW-UAP-PR078 — título de uploader: \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\" (Release 02)",
+      "title_en": "DOW-UAP-PR078 — uploader title: \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007812"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007803",
+      "type": "video",
+      "title": "DOW-UAP-PR080 — título de uploader: \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR080 — uploader title: \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007803"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007805",
+      "type": "video",
+      "title": "DOW-UAP-PR081 — título de uploader: \"18 Oct 2020 [CALLSIGN] observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR081 — uploader title: \"18 Oct 2020 [CALLSIGN] observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007805"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007807",
+      "type": "video",
+      "title": "DOW-UAP-PR082 — título de uploader: \"16 OCT 2020 [CALLSIGN] views UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR082 — uploader title: \"16 OCT 2020 [CALLSIGN] views UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007807"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007808",
+      "type": "video",
+      "title": "DOW-UAP-PR083 — título de uploader: \"7 October 2020 [CALLSIGN] observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR083 — uploader title: \"7 October 2020 [CALLSIGN] observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007808"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007810",
+      "type": "video",
+      "title": "DOW-UAP-PR084 — título de uploader: \"17 Sept 2020 [CALLSIGN] observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR084 — uploader title: \"17 Sept 2020 [CALLSIGN] observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007810"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007796",
+      "type": "video",
+      "title": "DOW-UAP-PR085 — título de uploader: \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR085 — uploader title: \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007796"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007799",
+      "type": "video",
+      "title": "DOW-UAP-PR087 — título de uploader: \"05 September 2020 [CALLSIGN] UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR087 — uploader title: \"05 September 2020 [CALLSIGN] UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007799"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007800",
+      "type": "video",
+      "title": "DOW-UAP-PR088 — título de uploader: \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR088 — uploader title: \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007800"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007712",
+      "type": "video",
+      "title": "DOW-UAP-PR089 — título de uploader: \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\" (Release 02)",
+      "title_en": "DOW-UAP-PR089 — uploader title: \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007712"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007719",
+      "type": "video",
+      "title": "DOW-UAP-PR090 — título de uploader: \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR090 — uploader title: \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007719"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007716",
+      "type": "video",
+      "title": "DOW-UAP-PR091 — título de uploader: \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\" (Release 02)",
+      "title_en": "DOW-UAP-PR091 — uploader title: \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007716"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007715",
+      "type": "video",
+      "title": "DOW-UAP-PR092 — título de uploader: \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\" (Release 02)",
+      "title_en": "DOW-UAP-PR092 — uploader title: \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007715"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007721",
+      "type": "video",
+      "title": "DOW-UAP-PR093 — título de uploader: \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR093 — uploader title: \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007721"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007722",
+      "type": "video",
+      "title": "DOW-UAP-PR094 — título de uploader: \"[CALLSIGN] (Mission) - HD 2020-02-13\" (Release 02)",
+      "title_en": "DOW-UAP-PR094 — uploader title: \"[CALLSIGN] (Mission) - HD 2020-02-13\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007722"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007725",
+      "type": "video",
+      "title": "DOW-UAP-PR095 — título de uploader: \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\" (Release 02)",
+      "title_en": "DOW-UAP-PR095 — uploader title: \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007725"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007726",
+      "type": "video",
+      "title": "DOW-UAP-PR096 — título de uploader: \"HH11 03 July 2018 UAPs\" (Release 02)",
+      "title_en": "DOW-UAP-PR096 — uploader title: \"HH11 03 July 2018 UAPs\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007726"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007728",
+      "type": "video",
+      "title": "DOW-UAP-PR097 — título de uploader: \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\" (Release 02)",
+      "title_en": "DOW-UAP-PR097 — uploader title: \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007728"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1007738",
+      "type": "video",
+      "title": "DOW-UAP-PR099 — título de uploader: \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\" (Release 02)",
+      "title_en": "DOW-UAP-PR099 — uploader title: \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\" (Release 02)",
+      "source": "Uploader anónimo (lote FOIA Reeves), vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007738"
+    }
+  ],
+  "summary": "De los 50 videos que la AARO localizó en una red clasificada al responder una solicitud FOIA de ocho congresistas por 51 registros potencialmente relacionados con UAP, 21 ya tienen caso propio en este corpus por algún rasgo distintivo (título que coincide con la descripción, admisión explícita de alteración digital, un comentario técnico de la AARO). Estos 27 restantes no lo tienen: cada uno es un área de contraste que un sensor infrarrojo sigue, pierde y recupera, con un título asignado por quien subió el archivo a la red clasificada —no por la AARO— y sin la cadena de custodia acreditada que sí tienen los partes operacionales de Release 01. Se catalogan aquí en conjunto para que ninguno quede completamente invisible en el sitio.",
+  "summary_en": "Of the 50 videos AARO located on a classified network while responding to a FOIA request from eight members of Congress for 51 potentially UAP-related records, 21 already have their own case in this corpus for some distinctive trait (a title matching the description, an explicit digital-alteration admission, a technical AARO comment). These remaining 27 do not: each is an area of contrast an infrared sensor tracks, loses, and regains, with a title assigned by whoever uploaded the file to the classified network —not by AARO— and lacking the substantiated chain of custody that Release 01's operational reports do have. They are catalogued here together so that none remains entirely invisible on the site.",
+  "whatHappened": "En 2026, la Oficina de Resolución de Anomalías de Todos los Dominios (AARO) respondió a una solicitud de transparencia presentada por ocho miembros de la Cámara de Representantes de EE.UU. por 51 registros potencialmente relacionados con Fenómenos Anómalos No Identificados en poder del Departamento de Guerra y la comunidad de inteligencia. La oficina localizó un conjunto de 50 videos en una red clasificada. Como documenta el caso [[reeves-foia-classified-network-2023]], la propia AARO reconoció que 'muchos de estos materiales carecen de una cadena de custodia acreditada' y que cada título es 'definido por el usuario' que subió el archivo, no una designación oficial del Departamento.\n\nDe esos 50 videos, 21 ya cuentan con un caso individual en este corpus, sea porque su título coincide inusualmente bien con la descripción visual oficial ([[four-object-formation-iran-2022]]), porque la AARO admite explícitamente que alteraciones digitales influyen en el comportamiento aparente del objeto ([[spherical-erratic-editing-artifact-2022]]), porque su duración es un atípico del lote ([[uso-formation-nonlinear-edit-2024]], [[three-versions-same-clip-2024]]) o por otras razones documentadas en [[reeves-foia-classified-network-2023]] y el caso agregador [[pursue-release-2026]].\n\nLos 27 videos catalogados en esta ficha son el resto: se revisó la descripción visual completa de cada uno, con marcas de tiempo, buscando los mismos criterios que ya habían producido casos individuales en este mismo lote —un informe acompañante, un comentario técnico de la AARO, una admisión de edición, morfología o comportamiento distintivo, una duración atípica—, y ninguno los tiene. El patrón se repite con pocas variaciones: un área de contraste entra al campo de visión del sensor infrarrojo, el sensor la sigue panorámicamente o hace zoom sobre ella, la pierde y recupera contra el fondo una o varias veces, y sale de cuadro. Los títulos que los uploaders asignaron —'Cigar Shaped or Fast Spherical UAP', 'Dual UAP', 'HD 2020-02-13'— prometen a menudo más de lo que la descripción instrumental puede sostener, el mismo patrón de sobre-promesa documentado en los casos individuales del lote.\n\nCronológicamente, estos 27 clips cubren un rango más amplio que el resto de Release 02: desde julio de 2018 (PR096) hasta octubre de 2022 (PR053), con una concentración notable en el segundo semestre de 2020 (nueve videos entre agosto y noviembre) y un par de episodios de septiembre de 2019 (PR097, PR099) que documentan la misma fecha —25 de septiembre— con horas distintas, sugiriendo observaciones separadas de la misma unidad en la misma jornada.",
+  "whatHappened_en": "In 2026, the All-domain Anomaly Resolution Office (AARO) responded to a transparency request filed by eight members of the U.S. House of Representatives for 51 records potentially related to Unidentified Anomalous Phenomena held by the Department of War and the intelligence community. The office located a set of 50 videos on a classified network. As documented in [[reeves-foia-classified-network-2023]], AARO itself acknowledged that 'many of these materials lack a substantiated chain-of-custody' and that each title is 'user-defined' by whoever uploaded the file, not an official Department designation.\n\nOf those 50 videos, 21 already have an individual case in this corpus, whether because their title unusually matches the official visual description ([[four-object-formation-iran-2022]]), because AARO explicitly admits digital alterations influence the object's apparent behavior ([[spherical-erratic-editing-artifact-2022]]), because their duration is an outlier in the batch ([[uso-formation-nonlinear-edit-2024]], [[three-versions-same-clip-2024]]), or for other reasons documented in [[reeves-foia-classified-network-2023]] and the aggregator case [[pursue-release-2026]].\n\nThe 27 videos catalogued in this file are the rest: each one's full timestamped visual description was reviewed, looking for the same criteria that had already produced individual cases within this same batch —an accompanying report, a technical AARO comment, an editing admission, distinctive morphology or behavior, an outlier duration— and none has one. The pattern repeats with little variation: an area of contrast enters the infrared sensor's field of view, the sensor pans or zooms to track it, loses and regains it against the background once or several times, and exits the frame. The titles uploaders assigned —'Cigar Shaped or Fast Spherical UAP,' 'Dual UAP,' 'HD 2020-02-13'— often promise more than the instrumental description can support, the same over-promising pattern documented in the batch's individual cases.\n\nChronologically, these 27 clips span a wider range than the rest of Release 02: from July 2018 (PR096) to October 2022 (PR053), with a notable concentration in the second half of 2020 (nine videos between August and November) and a pair of episodes from September 2019 (PR097, PR099) documenting the same date —September 25— at different hours, suggesting separate observations by the same unit on the same day.",
+  "whyMatters": "Este catálogo existe por una razón puramente editorial, no analítica: ningún video de un lote que la propia AARO reconoce sin cadena de custodia debería quedar completamente ausente del sitio solo porque no alcanza el umbral de contenido distintivo que amerita un caso individual con narrativa propia. La alternativa —omitirlos por completo— dejaría una impresión falsa de que el barrido de este corpus fue selectivo o incompleto, cuando en realidad los 50 videos de Release 02 fueron revisados uno por uno, con el mismo criterio, y 27 de ellos simplemente no tienen nada que una ficha individual pudiera decir de forma honesta más allá de repetir la misma descripción genérica.\n\nAgruparlos aquí, en cambio, permite dos cosas: primero, que cualquier lector pueda verificar por sí mismo, viendo los 27 clips, que el patrón de 'área de contraste que entra, se pierde y sale' es real y dominante en este lote —no una caracterización conveniente del investigador, sino lo que efectivamente muestra la mayoría del material—. Segundo, que el conjunto sirva de contraste cuantitativo: de 50 videos con el mismo origen (red clasificada, sin cadena de custodia, títulos de uploader), menos de la mitad (23, contando este catálogo agrupado como una sola entrada) tuvo algo lo bastante distintivo como para sostener un análisis propio. Esa proporción —menos de la mitad— es en sí misma un dato sobre la calidad evidencial del lote completo.\n\nLa lectura prosaica más directa para la enorme mayoría de estos 27 clips sigue siendo tráfico aéreo o marítimo convencional, aves, globos meteorológicos o reflejos, cuya apariencia como 'área de contraste' en un sensor infrarrojo de baja resolución, sin telemetría ni contexto de misión, no permite ir más allá. Ninguno de los 27 debe leerse como evidencia de nada en particular; se documentan aquí por completitud del registro, no por su peso analítico.",
+  "whyMatters_en": "This catalogue exists for a purely editorial reason, not an analytical one: no video from a batch AARO itself acknowledges has no chain of custody should be entirely absent from the site just because it falls short of the distinctive-content threshold that warrants an individual case with its own narrative. The alternative —omitting them entirely— would leave a false impression that this corpus's sweep was selective or incomplete, when in fact all 50 Release 02 videos were reviewed one by one, with the same criteria, and 27 of them simply have nothing an individual record could honestly say beyond repeating the same generic description.\n\nGrouping them here instead accomplishes two things: first, it lets any reader verify for themselves, by watching the 27 clips, that the 'area of contrast enters, is lost, and exits' pattern is real and dominant in this batch —not a convenient characterization by the researcher, but what most of the material actually shows. Second, the set serves as a quantitative contrast: of 50 videos with the same origin (classified network, no chain of custody, uploader titles), fewer than half (23, counting this grouped catalogue as a single entry) had something distinctive enough to support its own analysis. That proportion —under half— is itself a datum about the evidential quality of the full batch.\n\nThe most direct prosaic reading for the vast majority of these 27 clips remains conventional air or maritime traffic, birds, weather balloons, or reflections, whose appearance as an 'area of contrast' on a low-resolution infrared sensor, with no telemetry or mission context, does not permit going further. None of the 27 should be read as evidence of anything in particular; they are documented here for completeness of the record, not for their analytical weight.",
+  "evidence": [
+    "50 videos localizados por la AARO en una red clasificada tras una solicitud FOIA de ocho congresistas (2026)",
+    "AARO reconoce que 'muchos... carecen de una cadena de custodia acreditada' y que los títulos son 'definidos por el usuario'",
+    "21 de los 50 videos tienen caso individual propio en este corpus por contenido distintivo verificado",
+    "Los 27 videos aquí catalogados se revisaron con el mismo criterio y no tienen informe, comentario técnico, admisión de edición ni comportamiento distintivo",
+    "Rango cronológico: julio 2018 (PR096) a octubre 2022 (PR053), con concentración en el segundo semestre de 2020",
+    "PR097 y PR099 documentan la misma fecha (25 sep 2019) en horas distintas — posibles observaciones separadas de la misma unidad"
+  ],
+  "evidence_en": [
+    "50 videos located by AARO on a classified network following a FOIA request from eight members of Congress (2026)",
+    "AARO acknowledges that 'many... lack a substantiated chain-of-custody' and that titles are 'user-defined'",
+    "21 of the 50 videos have their own individual case in this corpus due to verified distinctive content",
+    "The 27 videos catalogued here were reviewed with the same criteria and have no report, technical comment, editing admission, or distinctive behavior",
+    "Chronological range: July 2018 (PR096) to October 2022 (PR053), concentrated in the second half of 2020",
+    "PR097 and PR099 document the same date (Sept 25, 2019) at different hours — possibly separate observations by the same unit"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — 27 videos del lote FOIA Reeves (PURSUE Release 02) sin caso individual, catalogados en conjunto",
+      "url": "https://www.dvidshub.net/video/1007709",
+      "note": "27 videos embebidos en el visor de este caso; ver [[reeves-foia-classified-network-2023]] para el contexto de procedencia completo.",
+      "note_en": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — 27 videos from the Reeves FOIA batch (PURSUE Release 02) with no individual case, catalogued together",
+      "url": "https://www.dvidshub.net/video/1007709",
+      "note": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context.",
+      "note_en": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context."
+    }
+  ]
+}
