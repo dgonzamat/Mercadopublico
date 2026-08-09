@@ -13,18 +13,18 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 
 | Entrega | Fecha | Videos | Embebidos |
 |---|---|---|---|
-| **Release 01** | 8 may 2026 | 27 | 18 |
+| **Release 01** | 8 may 2026 | 27 | 19 |
 | **Release 02** | 22 may 2026 | 50 | 23 |
 | **Release 04** | 10 jul 2026 | 19 | 5 |
 | **Release 05** | 7 ago 2026 | 15 | 11 |
 | **Release 03** | 12 jun 2026 | 6 | 6 |
-| | | **117** | **63** |
+| | | **117** | **64** |
 
-**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 91 documentos de video embebidos en 40 casos al cierre de esta sesión (ago 2026):
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 92 documentos de video embebidos en 41 casos al cierre de esta sesión (ago 2026):
 
 | Serie | Videos embebidos | Nota |
 |---|---|---|
-| `DOW-UAP-PR*` (Releases 01/02/04/05) | 57 | Ver tabla PURSUE arriba |
+| `DOW-UAP-PR*` (Releases 01/02/04/05) | 58 | Ver tabla PURSUE arriba |
 | `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
 | `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 8 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
 | Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
@@ -32,7 +32,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
 | Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
 | Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
-| **Total** | **91 en 40 casos** | |
+| **Total** | **92 en 41 casos** | |
 
 **Revisión dirigida de Release 02 (ago 2026, tras feedback del usuario)**: el descarte categórico de los 31 videos restantes de Release 02 no aplicaba el mismo criterio de "morfología/comportamiento distintivo" usado para rescatar 3 casos de Release 01. Revisión de las 31 descripciones completas encontró 2 más con valor real: `PR050` (formación de 4 objetos que sí coincide con su título, caso de control) y `PR054` (donde la AARO señala EXPLÍCITAMENTE que "las alteraciones digitales... influyen significativamente en el desempeño aparente" — la confirmación más limpia del patrón título-vs-descripción de todo el lote). Quedan ~29 sin caso propio, genuinamente sin informe ni comportamiento distintivo tras esta segunda pasada.
 
@@ -48,7 +48,9 @@ Con esto, las tres pasadas de grep sobre los 61 pendientes restantes quedan agot
 
 **Quinta pasada, lectura manual completa de las 59 descripciones restantes (ago 2026)**: en vez de una nueva palabra clave, se leyó el cuerpo completo de la descripción visual de los 59 videos pendientes tras la cuarta pasada. Encontró lo que ninguna de las cuatro pasadas anteriores por palabra clave podía detectar: `PR123` a `PR127` (ids 1017805, 1017806, 1017788, 1017790, 1017791) son cinco archivos que la propia AARO señala como 'capturados de forma contemporánea' — el mismo evento sobre el océano Pacífico en 2019, documentado por tres capturas secundarias de un display de sensor IR y dos grabaciones de mano a simple vista que describen explícitamente 'varias fuentes de luz aparentes' (plural) → `pacific-ocean-uaptf-lights-2019`. A diferencia del resto del lote Release 02 (hallazgo en red clasificada vía FOIA), estos cinco llegaron a la AARO por transferencia directa de la UAPTF de la Armada en 2022 — cadena de custodia más trazable —, aunque solo se publicaron en DVIDS con la quinta entrega de PURSUE (7 ago 2026). Es el único caso de todo este barrido con más de dos fuentes documentales independientes y contemporáneas del mismo evento.
 
-Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfología/comportamiento por palabra clave, duración atípica, y lectura manual completa) se aplicaron sobre el pool de pendientes. La lectura manual —más lenta pero más completa que cualquier grep— es la que finalmente encontró el hallazgo de mayor valor analítico de las cinco pasadas; **lección operativa**: ninguna de las pasadas automatizadas por palabra clave detecta un patrón que depende de leer varias fichas relacionadas en conjunto (el 'capturado de forma contemporánea' que conecta PR123-127 solo es visible leyendo los cinco textos completos, no grepeando cada uno por separado). El barrido de esta sesión se da por agotado tras esta quinta pasada.
+La misma lectura manual encontró un segundo hallazgo, menor pero real: `PR40` (id 1006093, Release 01) tiene una anotación hecha por el propio reportero original —no la AARO ni un analista posterior— quien pausó el video y trazó una línea blanca con la leyenda 'U/I SMALL THERMAL SIGNATURE' sobre el área de interés, en el momento mismo de reportar el evento → `middle-east-thermal-signature-annotation-2020`. Es el único expediente del corpus con una anotación de campo del testigo original preservada intacta por la AARO.
+
+Con estos dos hallazgos, cinco señales independientes (debrief, AARO Comment, morfología/comportamiento por palabra clave, duración atípica, y lectura manual completa) se aplicaron sobre el pool de pendientes. La lectura manual —más lenta pero más completa que cualquier grep— es la que finalmente encontró los dos hallazgos de mayor valor analítico de las cinco pasadas; **lección operativa**: ninguna pasada automatizada por palabra clave detecta un patrón que depende de leer varias fichas relacionadas en conjunto (el 'capturado de forma contemporánea' que conecta PR123-127) ni una frase de fraseo variable que ningún término de búsqueda anticipado captura (la anotación de PR40). El barrido de esta sesión se da por agotado tras esta quinta pasada.
 
 > **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
@@ -72,7 +74,7 @@ Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfolo
 - [ ] `PR37` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006087)
 - [x] `PR38` · 01.01.2013 — unresolved-uap-report-middle-east-2013 → `eight-pointed-star-2013` · [ver](https://www.dvidshub.net/video/1006088)
 - [ ] `PR39` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006089)
-- [ ] `PR40` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006093)
+- [x] `PR40` · 01.01.2020 — unresolved-uap-report-middle-east-2020 → `middle-east-thermal-signature-annotation-2020` · [ver](https://www.dvidshub.net/video/1006093)
 - [ ] `PR41` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006094)
 - [ ] `PR42` · 01.01.2020 — unresolved-uap-report-middle-east-2020 · [ver](https://www.dvidshub.net/video/1006097)
 - [ ] `PR43` · 01.01.2025 — unresolved-uap-report-africa-2025 · [ver](https://www.dvidshub.net/video/1006159)
