@@ -16,15 +16,15 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | **Release 01** | 8 may 2026 | 27 | 18 |
 | **Release 02** | 22 may 2026 | 50 | 23 |
 | **Release 04** | 10 jul 2026 | 19 | 5 |
-| **Release 05** | 7 ago 2026 | 15 | 6 |
+| **Release 05** | 7 ago 2026 | 15 | 11 |
 | **Release 03** | 12 jun 2026 | 6 | 6 |
-| | | **117** | **58** |
+| | | **117** | **63** |
 
-**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 86 documentos de video embebidos en 39 casos al cierre de esta sesión (ago 2026):
+**Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 91 documentos de video embebidos en 40 casos al cierre de esta sesión (ago 2026):
 
 | Serie | Videos embebidos | Nota |
 |---|---|---|
-| `DOW-UAP-PR*` (Releases 01/02/04/05) | 52 | Ver tabla PURSUE arriba |
+| `DOW-UAP-PR*` (Releases 01/02/04/05) | 57 | Ver tabla PURSUE arriba |
 | `FBI-UAP-PR*` (Release 03) | 6 | Ver tabla PURSUE arriba |
 | `AARO Case Resolution Reports` (`PR-001`…`PR-018`) | 8 de 18 | Serie separada, no-PURSUE; muestra representativa en `aaro-case-resolution-reports` |
 | Audiencia congresional Scott Bray (17 may 2022) | 2 | `uss-russell-2019` + `navy-2021-flyby` |
@@ -32,7 +32,7 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | Casos AARO resueltos hallados sueltos (`q=AARO video`, etc.) | 6 | Aguadilla (2), South Asian Object (2), Western US Objects (2) |
 | Casos AARO resueltos individuales | 2 | Mt. Etna (1), Al Taqaddum (1) |
 | Mosul Orb — adiciones (audiencia Senado + Middle East Object) | 2 | `mosul-orb-2016` |
-| **Total** | **86 en 39 casos** | |
+| **Total** | **91 en 40 casos** | |
 
 **Revisión dirigida de Release 02 (ago 2026, tras feedback del usuario)**: el descarte categórico de los 31 videos restantes de Release 02 no aplicaba el mismo criterio de "morfología/comportamiento distintivo" usado para rescatar 3 casos de Release 01. Revisión de las 31 descripciones completas encontró 2 más con valor real: `PR050` (formación de 4 objetos que sí coincide con su título, caso de control) y `PR054` (donde la AARO señala EXPLÍCITAMENTE que "las alteraciones digitales... influyen significativamente en el desempeño aparente" — la confirmación más limpia del patrón título-vs-descripción de todo el lote). Quedan ~29 sin caso propio, genuinamente sin informe ni comportamiento distintivo tras esta segunda pasada.
 
@@ -46,7 +46,9 @@ Con esto, las tres pasadas de grep sobre los 61 pendientes restantes quedan agot
 
 **Cuarta pasada, por duración atípica (ago 2026)**: en vez de palabras clave, se extrajo el campo "Video Duration" de los 60 restantes y se ordenó de mayor a menor. `PR058` (id 1007723, Release 02) resultó ser el video más largo de todo el lote: 10:48, casi el doble del siguiente (`PR052`, 8:16, ya construido). Su descripción revela una estructura inusual: el propio uploader compiló tres versiones sucesivas de la misma toma —acelerada 8x con el rótulo propio 'possible changes of shape', original procesada, y original sin editar— separadas por rótulos en pantalla. La descripción instrumental de la AARO, que cubre las tres versiones, no describe ningún cambio de forma → `three-versions-same-clip-2024`. El resto de duraciones (~290-300s) resultaron ser el largo estándar de ese sub-lote, no outliers.
 
-Con este hallazgo, cuatro señales independientes (debrief, AARO Comment, morfología/comportamiento por palabra clave, duración atípica) se aplicaron sobre el pool completo de pendientes sin encontrar más candidatos. El barrido de esta sesión se da por agotado.
+**Quinta pasada, lectura manual completa de las 59 descripciones restantes (ago 2026)**: en vez de una nueva palabra clave, se leyó el cuerpo completo de la descripción visual de los 59 videos pendientes tras la cuarta pasada. Encontró lo que ninguna de las cuatro pasadas anteriores por palabra clave podía detectar: `PR123` a `PR127` (ids 1017805, 1017806, 1017788, 1017790, 1017791) son cinco archivos que la propia AARO señala como 'capturados de forma contemporánea' — el mismo evento sobre el océano Pacífico en 2019, documentado por tres capturas secundarias de un display de sensor IR y dos grabaciones de mano a simple vista que describen explícitamente 'varias fuentes de luz aparentes' (plural) → `pacific-ocean-uaptf-lights-2019`. A diferencia del resto del lote Release 02 (hallazgo en red clasificada vía FOIA), estos cinco llegaron a la AARO por transferencia directa de la UAPTF de la Armada en 2022 — cadena de custodia más trazable —, aunque solo se publicaron en DVIDS con la quinta entrega de PURSUE (7 ago 2026). Es el único caso de todo este barrido con más de dos fuentes documentales independientes y contemporáneas del mismo evento.
+
+Con este hallazgo, cinco señales independientes (debrief, AARO Comment, morfología/comportamiento por palabra clave, duración atípica, y lectura manual completa) se aplicaron sobre el pool de pendientes. La lectura manual —más lenta pero más completa que cualquier grep— es la que finalmente encontró el hallazgo de mayor valor analítico de las cinco pasadas; **lección operativa**: ninguna de las pasadas automatizadas por palabra clave detecta un patrón que depende de leer varias fichas relacionadas en conjunto (el 'capturado de forma contemporánea' que conecta PR123-127 solo es visible leyendo los cinco textos completos, no grepeando cada uno por separado). El barrido de esta sesión se da por agotado tras esta quinta pasada.
 
 > **Corregido (ago 2026):** el Release 03 NO está vacío — el conteo "0" anterior era un falso negativo del método de búsqueda, no un hallazgo real. Sus 6 videos existen en DVIDS, pero bajo una serie de numeración completamente distinta, `FBI-UAP-PR*` (IDs 1010263-1010276), no `DOW-UAP-PR*` como el resto de las entregas — por eso ninguna búsqueda de `q=DOW-UAP` ni el tag `AARO061226` los encontraba. Descubiertos vía `q=FBI-UAP`. Ver sección abajo.
 
@@ -164,11 +166,11 @@ Con este hallazgo, cuatro señales independientes (debrief, AARO Comment, morfol
 - [x] `PR120` · 09.08.2021 — unresolved-uap-report-gulf-oman-2021 → `gulf-of-oman-2021` · [ver](https://www.dvidshub.net/video/1017800)
 - [x] `PR121` · 09.08.2021 — unresolved-uap-report-gulf-oman-2021 → `gulf-of-oman-2021` · [ver](https://www.dvidshub.net/video/1017802)
 - [x] `PR122` · 09.08.2021 — unresolved-uap-report-gulf-oman-2021 → `gulf-of-oman-2021` · [ver](https://www.dvidshub.net/video/1017803)
-- [ ] `PR123` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 · [ver](https://www.dvidshub.net/video/1017805)
-- [ ] `PR124` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 · [ver](https://www.dvidshub.net/video/1017806)
-- [ ] `PR125` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 · [ver](https://www.dvidshub.net/video/1017788)
-- [ ] `PR126` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 · [ver](https://www.dvidshub.net/video/1017790)
-- [ ] `PR127` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 · [ver](https://www.dvidshub.net/video/1017791)
+- [x] `PR123` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017805)
+- [x] `PR124` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017806)
+- [x] `PR125` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017788)
+- [x] `PR126` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017790)
+- [x] `PR127` · 01.01.2019 — unresolved-uap-report-pacific-ocean-2019 → `pacific-ocean-uaptf-lights-2019` · [ver](https://www.dvidshub.net/video/1017791)
 - [ ] `PR134` · 01.01.2025 — unresolved-uap-report-middle-east-2025 · [ver](https://www.dvidshub.net/video/1017792)
 - [ ] `PR136` · 01.01.2023 — unresolved-uap-report-middle-east-2023 · [ver](https://www.dvidshub.net/video/1017796)
 - [ ] `PR142` · 01.01.2025 — unresolved-uap-report-middle-east-2025 · [ver](https://www.dvidshub.net/video/1017797)

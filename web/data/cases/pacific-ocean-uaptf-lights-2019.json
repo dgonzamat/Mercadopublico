@@ -1,0 +1,116 @@
+{
+  "id": "pacific-ocean-uaptf-lights-2019",
+  "num": 375,
+  "pursueReleases": [5],
+  "name": "Cinco grabaciones, un mismo evento: luces sobre el Pacífico documentadas por la UAPTF",
+  "name_en": "Five recordings, one event: lights over the Pacific documented by the UAPTF",
+  "year_start": 2019,
+  "country": "US",
+  "country_name": "Océano Pacífico (ubicación exacta no revelada)",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 20,
+    "lng": -160,
+    "place": "Océano Pacífico, plataforma naval de EE.UU. (ubicación exacta no revelada)",
+    "place_en": "Pacific Ocean, U.S. naval platform (exact location undisclosed)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.36,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.09,
+    "nohumano_abierto": 0.1,
+    "indet": 0.34
+  },
+  "patterns": ["8b"],
+  "category": "incident",
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017805",
+      "type": "video",
+      "title": "DOW-UAP-PR123 — captura secundaria de un display de sensor IR, 1 min 4 s",
+      "title_en": "DOW-UAP-PR123 — secondary capture of an IR sensor display, 1 min 4 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017805"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017806",
+      "type": "video",
+      "title": "DOW-UAP-PR124 — captura secundaria de un display de sensor IR, 53 s",
+      "title_en": "DOW-UAP-PR124 — secondary capture of an IR sensor display, 53 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017806"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017788",
+      "type": "video",
+      "title": "DOW-UAP-PR125 — captura secundaria de un display de sensor IR, 28 s",
+      "title_en": "DOW-UAP-PR125 — secondary capture of an IR sensor display, 28 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017788"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017790",
+      "type": "video",
+      "title": "DOW-UAP-PR126 — grabación de mano de un militar en condiciones de poca luz: varias fuentes de luz aparentes, 2 min 32 s",
+      "title_en": "DOW-UAP-PR126 — hand-held recording by a service member in low light: several apparent light sources, 2 min 32 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017790"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1017791",
+      "type": "video",
+      "title": "DOW-UAP-PR127 — grabación de mano de un militar, cámara persigue una fuente de luz aparente, 2 min 29 s",
+      "title_en": "DOW-UAP-PR127 — hand-held recording by a service member, camera tracks an apparent light source, 2 min 29 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017791"
+    }
+  ],
+  "summary": "En 2019, un evento sobre el océano Pacífico quedó documentado en cinco grabaciones distintas —catalogadas DOW-UAP-PR123 a PR127—, capturadas contemporáneamente y transferidas por el Grupo de Trabajo de Fenómenos Anómalos No Identificados de la Armada (UAPTF) a la AARO en 2022. Tres son capturas secundarias de un display de sensor infrarrojo (alguien filmó la pantalla, no el feed directo); las otras dos son grabaciones de mano de un militar en condiciones de poca luz que muestran 'varias fuentes de luz aparentes' entrando y saliendo de cuadro mientras la cámara las persigue. Es el único expediente de esta sesión con más de dos fuentes documentales independientes del mismo evento, y su procedencia —transferencia directa de la UAPTF, no un hallazgo en una red clasificada vía FOIA— es más trazable que la del lote de Release 02.",
+  "summary_en": "In 2019, an event over the Pacific Ocean was documented in five separate recordings —catalogued DOW-UAP-PR123 through PR127—, captured contemporaneously and transferred by the Navy's Unidentified Anomalous Phenomena Task Force (UAPTF) to AARO in 2022. Three are secondary captures of an infrared sensor display (someone filmed the screen, not the direct feed); the other two are hand-held recordings by a service member in low-light conditions showing 'several apparent light sources' entering and exiting frame as the camera chases them. It is the only file in this session's sweep with more than two independent documentary sources of the same event, and its provenance —a direct UAPTF transfer, not a find on a classified network via FOIA— is more traceable than the Release 02 batch's.",
+  "whatHappened": "En algún momento de 2019, durante una misión sobre el océano Pacífico, un evento fue observado y grabado por al menos un militar de la Armada de Estados Unidos usando dos métodos distintos: filmar con su propio dispositivo la pantalla de un sensor infrarrojo a bordo de la plataforma (una 'captura secundaria', con las limitaciones de fidelidad y artefactos —desenfoque, parpadeo— que eso conlleva), y grabar directamente con su cámara de mano, a simple vista, en condiciones de poca luz. El Grupo de Trabajo de Fenómenos Anómalos No Identificados de la Armada (UAPTF) transfirió el conjunto de cinco archivos resultantes a la AARO en 2022; la AARO señala explícitamente que 'el metraje contenido en DOW-UAP-PR123 a DOW-UAP-PR127 fue capturado de forma contemporánea' — es decir, los cinco clips documentan la misma ventana temporal del mismo evento, no observaciones separadas.\n\nLos primeros tres archivos (PR123, 1:04; PR124, 53 s; PR125, 28 s) son capturas secundarias del display del sensor: en todos, una única área de contraste entra y sale de cuadro mientras el sensor la sigue, perdiendo y recuperando distintividad contra el fondo en varias ocasiones. Los otros dos (PR126, 2:32; PR127, 2:29) son grabaciones de mano directas, en condiciones de poca luz, que muestran un cuadro distinto del mismo evento: en PR126, la cámara 'trae a cuadro dos fuentes de luz aparentes' desde la esquina superior izquierda y, mientras panea, 'repetidamente trae a cuadro y saca de cuadro varias fuentes de luz aparentes' —es decir, más de dos luces, no solo una—; en PR127, la cámara persigue de forma intermitente 'una fuente de luz aparente', perdiéndola y recuperándola varias veces a lo largo de dos minutos y medio.\n\nNinguno de los cinco documentos incluye coordenadas, identificación de plataforma o testimonio escrito del observador. Aunque la transferencia UAPTF→AARO ocurrió en 2022, los cinco archivos se subieron a DVIDS recién el 7 de agosto de 2026, dentro de la quinta entrega de PURSUE — la fecha de publicación pública, no la de recepción interna por la AARO, es la que organiza este inventario.",
+  "whatHappened_en": "At some point in 2019, during a mission over the Pacific Ocean, an event was observed and recorded by at least one U.S. Navy service member using two distinct methods: filming, with their own device, the display of an infrared sensor aboard the platform (a 'secondary capture,' with the fidelity limitations and artifacts —blurring, flickering— that entails), and recording directly with their hand-held camera, by eye, in low-light conditions. The Navy's Unidentified Anomalous Phenomena Task Force (UAPTF) transferred the resulting set of five files to AARO in 2022; AARO explicitly notes that 'the footage contained within DOW-UAP-PR123 through DOW-UAP-PR127 was captured contemporaneously' — meaning the five clips document the same time window of the same event, not separate observations.\n\nThe first three files (PR123, 1:04; PR124, 53s; PR125, 28s) are secondary captures of the sensor display: in all three, a single area of contrast enters and exits the frame as the sensor tracks it, losing and regaining distinctiveness against the background several times. The other two (PR126, 2:32; PR127, 2:29) are direct hand-held recordings, in low-light conditions, showing a different view of the same event: in PR126, the camera 'brings two apparent light sources into frame' from the upper left corner and, as it pans, 'repeatedly brings several apparent light sources into and out of frame' —that is, more than two lights, not just one—; in PR127, the camera intermittently tracks 'an apparent light source,' losing and regaining it several times over two and a half minutes.\n\nNone of the five documents includes coordinates, platform identification, or written observer testimony. Although the UAPTF-to-AARO transfer happened in 2022, all five files were only uploaded to DVIDS on August 7, 2026, within PURSUE's fifth drop — the public release date, not the date AARO internally received it, is what organizes this inventory.",
+  "whyMatters": "Este expediente es estructuralmente distinto de casi todo lo demás revisado en esta sesión, por dos razones. Primero, la procedencia: el material llegó a la AARO por transferencia directa de la UAPTF de la Armada en 2022 —el mismo canal institucional que produjo el video de la audiencia congresional de Scott Bray y otros expedientes ya consolidados del corpus—, no por un hallazgo posterior en una red clasificada al responder una solicitud FOIA. Es, en ese sentido, una cadena de custodia más corta y trazable que la de los cerca de 50 videos del lote Release 02 revisados en esta misma sesión.\n\nSegundo, y más importante: es el único caso de todo este barrido con más de dos fuentes documentales independientes y contemporáneas del mismo evento. Donde la mayoría de los expedientes de este corpus consisten en un solo clip con una sola perspectiva, aquí hay cinco: tres capturas secundarias de un display de sensor (con sus propias limitaciones de fidelidad) y dos grabaciones de mano a simple vista, en condiciones de poca luz, que documentan explícitamente 'varias fuentes de luz aparentes' —plural— moviéndose y siendo perseguidas por la cámara. Esa redundancia documental no prueba naturaleza anómala alguna, pero sí eleva el caso por encima del patrón habitual de 'un testigo, un clip, sin corroboración', que es precisamente la limitación más citada en el resto de expedientes de esta sesión.\n\nLa lectura prosaica más directa para múltiples fuentes de luz avistadas de noche sobre el océano —desde una plataforma militar, en condiciones de poca visibilidad— sigue siendo una combinación de tráfico aéreo o marítimo convencional (luces de navegación de aeronaves o embarcaciones distantes), bengalas, o reflejos atmosféricos, cuya apariencia múltiple y cambiante es consistente con el propio movimiento de la plataforma observadora sobre el agua. Sin telemetría, coordenadas ni un informe de misión que acompañe los cinco clips, el caso no puede cerrarse con mayor precisión — pero la redundancia de cinco fuentes documentales contemporáneas, poco común en este corpus, sí lo distingue como uno de los expedientes mejor corroborados, en términos puramente formales, de todo el catálogo de PURSUE/DVIDS revisado esta sesión.",
+  "whyMatters_en": "This file is structurally different from almost everything else reviewed this session, for two reasons. First, provenance: the material reached AARO via direct transfer from the Navy's UAPTF in 2022 —the same institutional channel that produced the Scott Bray congressional hearing video and other already-consolidated files in the corpus— not via a later discovery on a classified network while responding to a FOIA request. It is, in that sense, a shorter and more traceable chain of custody than the roughly 50 videos in the Release 02 batch reviewed in this same session.\n\nSecond, and more importantly: it is the only case in this entire sweep with more than two independent, contemporaneous documentary sources of the same event. Where most files in this corpus consist of a single clip from a single vantage, here there are five: three secondary captures of a sensor display (with their own fidelity limitations) and two hand-held, naked-eye recordings, in low-light conditions, that explicitly document 'several apparent light sources' —plural— moving and being chased by the camera. That documentary redundancy proves no anomalous nature, but it does elevate the case above the usual pattern of 'one witness, one clip, no corroboration,' which is precisely the most commonly cited limitation across the rest of this session's files.\n\nThe most direct prosaic reading for multiple light sources sighted at night over the ocean —from a military platform, in low-visibility conditions— remains some combination of conventional air or maritime traffic (navigation lights on distant aircraft or vessels), flares, or atmospheric reflections, whose multiple and shifting appearance is consistent with the observing platform's own motion over the water. Without telemetry, coordinates, or a mission report accompanying the five clips, the case cannot be closed with greater precision — but the redundancy of five contemporaneous documentary sources, uncommon in this corpus, does distinguish it as one of the most formally corroborated files in the entire PURSUE/DVIDS catalogue reviewed this session.",
+  "evidence": [
+    "2019: evento sobre el océano Pacífico documentado en cinco grabaciones distintas (DOW-UAP-PR123 a PR127)",
+    "AARO confirma explícitamente que las cinco fueron 'capturadas de forma contemporánea' — mismo evento, no observaciones separadas",
+    "Tres son capturas secundarias de un display de sensor IR; dos son grabaciones de mano a simple vista en condiciones de poca luz",
+    "PR126 describe explícitamente 'varias fuentes de luz aparentes' (plural) entrando y saliendo de cuadro",
+    "Procedencia: transferencia directa de la UAPTF de la Armada a la AARO en 2022 — cadena de custodia más trazable que el lote FOIA de Release 02",
+    "Transferencia UAPTF→AARO en 2022, pero publicado en DVIDS recién en PURSUE Release 05 (7 de agosto de 2026)"
+  ],
+  "evidence_en": [
+    "2019: an event over the Pacific Ocean documented in five separate recordings (DOW-UAP-PR123 through PR127)",
+    "AARO explicitly confirms all five were 'captured contemporaneously' — the same event, not separate observations",
+    "Three are secondary captures of an IR sensor display; two are naked-eye hand-held recordings in low-light conditions",
+    "PR126 explicitly describes 'several apparent light sources' (plural) entering and exiting frame",
+    "Provenance: direct transfer from the Navy's UAPTF to AARO in 2022 — a more traceable chain of custody than the Release 02 FOIA batch",
+    "UAPTF-to-AARO transfer in 2022, but only released on DVIDS in PURSUE Release 05 (August 7, 2026)"
+  ],
+  "sources": [
+    {
+      "name": "DVIDS — DOW-UAP-PR123 a PR127, cinco grabaciones contemporáneas del mismo evento, transferidas por la UAPTF de la Armada a la AARO en 2022",
+      "url": "https://www.dvidshub.net/video/1017805",
+      "note": "Cinco videos embebidos en el visor de este caso (PR123-PR127); las fichas incluyen las descripciones visuales citadas en whatHappened.",
+      "note_en": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened."
+    }
+  ],
+  "sources_en": [
+    {
+      "name": "DVIDS — DOW-UAP-PR123 through PR127, five contemporaneous recordings of the same event, transferred by the Navy's UAPTF to AARO in 2022",
+      "url": "https://www.dvidshub.net/video/1017805",
+      "note": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened.",
+      "note_en": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened."
+    }
+  ]
+}
