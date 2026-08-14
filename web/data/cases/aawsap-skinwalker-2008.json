@@ -43,7 +43,8 @@
     "Extensión del patrón en 2026: la investigación congresional de Burlison contra contratistas FFRDC (MITRE, MIT Lincoln Laboratory, con trail siguiente RAND / Aerospace / Northrop Grumman; [[burlison-ffrdc-investigation-2026]]) lee a BAASS — contratista privado sole-source de la DIA para un programa UAP — como precedente del mismo canal corporativo que la Task Force ahora investiga. AAWSAP es el caso del corpus donde ese canal aparece documentado por primera vez con contrato y recibo",
     "Experimentos de campo del NIDS (1996–2004): vigilancia 24/7 con cámaras, dosímetros y magnetómetros y metodología de provocación; resultado → catálogo de incidentes pero ningún artículo revisado por pares (cierre en 2004 por agotamiento metodológico). Documentado en «Hunt for the Skinwalker» (Kelleher y Knapp, 2005)",
     "Experimentos televisados del equipo de Fugal (Taylor/Bard, History, 2018–presente): fallas de GPS/dron localizadas en «el Triángulo», picos de radiación ionizante con efectos médicos, desviación de láser, deriva de proyectiles y anomalía subsuperficial por georradar; resultado → efectos reproducibles pero sin causa física aislada, sin revisión por pares ni réplica independiente",
-    "Documento técnico (2025): propone la hipótesis falsable de «lente de plasma piezoeléctrico pulsado» (P³L) y un protocolo de cuatro experimentos replicables; resultado → todavía una propuesta, sin réplica independiente a la fecha"
+    "Documento técnico (2025): propone la hipótesis falsable de «lente de plasma piezoeléctrico pulsado» (P³L) y un protocolo de cuatro experimentos replicables; resultado → todavía una propuesta, sin réplica independiente a la fecha",
+    "En el episodio 2 de «The Bigelow Podcast» (11 ago 2026), Bigelow afirma en entrevista con Knapp que BASS conserva 'copias de todo' hasta unos 100 documentos —más del doble de los 38 DIRDs ya desclasificados— y que el programa empleó 50 investigadores a tiempo completo, calificándolo como 'el programa más grande de su tipo jamás financiado por el gobierno de EE. UU.'. Es declaración verbal de Bigelow, sin documento ni nómina que la respalde"
   ],
   "evidence_en": [
     "DIA–BAASS contract HHM402-08-C-0072, sole-source, September 2008, initial USD 10M extended to ~USD 22M (contract documents on FedBizOpps and replicated via FOIA)",
@@ -58,7 +59,8 @@
     "Pattern extension in 2026: Burlison's congressional investigation against FFRDC contractors (MITRE, MIT Lincoln Laboratory, with next trail RAND / Aerospace / Northrop Grumman; [[burlison-ffrdc-investigation-2026]]) reads BAASS — DIA's private sole-source contractor for a UAP program — as a precedent of the same corporate channel the Task Force is now investigating. AAWSAP is the corpus case where that channel first appears documented with contract and receipt",
     "NIDS field experiments (1996–2004): 24/7 surveillance with cameras, dosimeters and magnetometers and a provocation methodology; result → a catalogue of incidents but no peer-reviewed paper (closed in 2004 citing methodological exhaustion). Documented in 'Hunt for the Skinwalker' (Kelleher & Knapp, 2005)",
     "Televised experiments by Fugal's team (Taylor/Bard, History, 2018–present): localized GPS/drone failures in 'the Triangle', ionizing-radiation spikes with medical effects, laser deflection, projectile drift and a subsurface anomaly via ground-penetrating radar; result → reproducible effects but no isolated physical cause, no peer review or independent replication",
-    "Technical document (2025): proposes the falsifiable 'pulsed piezo-plasma lens' (P³L) hypothesis and a four-experiment replicable protocol; result → still a proposal, no independent replication to date"
+    "Technical document (2025): proposes the falsifiable 'pulsed piezo-plasma lens' (P³L) hypothesis and a four-experiment replicable protocol; result → still a proposal, no independent replication to date",
+    "In episode 2 of 'The Bigelow Podcast' (Aug 11, 2026), Bigelow tells Knapp that BASS keeps 'copies of everything' — up to about 100 documents, more than double the 38 already-declassified DIRDs — and that the program employed 50 full-time researchers, calling it 'the largest program of its kind ever funded by the U.S. government.' This is a verbal claim by Bigelow, unaccompanied by any document or roster"
   ],
   "sources": [
     {
@@ -111,6 +113,11 @@
       "url": "https://www.researchgate.net/publication/396482451_Skinwalker_Ranch_Investigating_Localized_Electromagnetic_and_Ionizing-Radiation_Anomalies_Observations_Deep_Dive_and_an_Adapted_Test_Protocol_-technical",
       "note": "Documento técnico abierto (no revisado por pares) que propone la hipótesis P³L y un protocolo de cuatro experimentos replicables.",
       "note_en": "Open technical document (not peer-reviewed) proposing the P³L hypothesis and a protocol of four replicable experiments."
+    },
+    {
+      "name": "The Bigelow Podcast — Episodio 2 (Knapp/Bigelow, 11 ago 2026): evolución de AAWSAP y consciencia",
+      "note": "Fuente primaria de la cifra de ~100 documentos BASS y 50 investigadores a tiempo completo; cobertura secundaria en MysteryWire/FOX40/CBS47 bajo el mismo titular ('Robert Bigelow Opens up about AAWSAP...'), inaccesible a fetch directo (403).",
+      "note_en": "Primary source for the ~100 BASS documents and 50 full-time researchers figures; secondary coverage on MysteryWire/FOX40/CBS47 under the same headline ('Robert Bigelow Opens up about AAWSAP...'), inaccessible to direct fetch (403)."
     }
   ],
   "mundanoType": "misid",
