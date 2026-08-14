@@ -14,7 +14,7 @@ name: Discover new UAP cases
 
 on:
   schedule:
-    - cron: '0 8 * * *'    # diario, 08:00 UTC (1h después de daily-audit)
+    - cron: '0 8 * * *'    # diario, 08:00 UTC (a diferencia de weekly-audit, este sí es diario: se auto-silencia si no hay candidatos)
   workflow_dispatch:
 
 permissions:

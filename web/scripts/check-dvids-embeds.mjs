@@ -16,7 +16,7 @@
  * admitía solo dos orígenes; esta sonda es el precio de la excepción.
  *
  * Uso:  node scripts/check-dvids-embeds.mjs [--json]
- * Sale 1 si algún embed dejó de ser embebible. Pensado para daily-audit.yml,
+ * Sale 1 si algún embed dejó de ser embebible. Pensado para weekly-audit.yml,
  * igual que check-links.mjs.
  */
 

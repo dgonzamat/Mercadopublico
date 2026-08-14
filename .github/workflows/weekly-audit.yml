@@ -1,18 +1,28 @@
-name: Daily Audit
+name: Weekly Audit
 
-# Auditoría diaria independiente del flujo de PRs. Corre todos los días
-# `npm run audit` sobre el corpus actual de `main`. Si encuentra ERRORS
-# (drift numérico, frases prohibidas, evidenceContribution rota, JSON
-# inválido), abre un GitHub issue con el reporte completo.
+# Auditoría semanal independiente del flujo de PRs. Corre `npm run audit`
+# sobre el corpus actual de `main`. Si encuentra ERRORS (drift numérico,
+# frases prohibidas, evidenceContribution rota, JSON inválido), abre un
+# GitHub issue con el reporte completo.
 #
 # Por qué existe: la auditoría que ya corre en deploy (deploy-pages.yml)
 # y en PRs (ci.yml) solo se dispara cuando alguien empuja código. Esta
-# corrida diaria detecta drift que entró por commits manuales o renames
-# a medias, sin depender de que haya actividad ese día.
+# corrida detecta drift que entró por commits manuales o renames a
+# medias, sin depender de que haya actividad esa semana.
+#
+# Por qué SEMANAL y no diaria (ago 2026): las tres cosas que este workflow
+# vigila —drift de consistencia, link rot externo, framing de DVIDS—
+# cambian a escala de semanas, no de horas. Corriendo a diario, el gate de
+# link rot marcaba el run como fallido casi todos los días apenas
+# cualquiera de las miles de citas del corpus se pudría, generando un
+# email de "All jobs have failed" que dejó de ser señal y pasó a ser
+# ruido — el mismo antipatrón de fatiga de alerta que ya forzó a
+# consolidar el issue de link rot en uno persistente (ver más abajo).
+# Semanal conserva la detección con una décima parte del ruido.
 
 on:
   schedule:
-    - cron: '0 7 * * *'    # diario, 07:00 UTC
+    - cron: '0 7 * * 1'    # semanal, lunes 07:00 UTC
   workflow_dispatch:       # también disparable a mano desde la UI
 
 permissions:
@@ -20,7 +30,7 @@ permissions:
   issues: write            # para abrir el issue cuando falla
 
 concurrency:
-  group: "daily-audit"
+  group: "weekly-audit"
   cancel-in-progress: false
 
 jobs:
@@ -105,7 +115,7 @@ jobs:
             ].join('\n');
 
             // Issue persistente, mismo patrón que el gate de link rot: se
-            // actualiza en vez de acumular uno por día.
+            // actualiza en vez de acumular uno por corrida.
             const { data: open } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -132,12 +142,13 @@ jobs:
               });
             }
 
-      # Un issue PERSISTENTE, no uno por día. Antes cada corrida abría uno
-      # nuevo: a agosto 2026 había 82 issues automáticas abiertas y el gate se
-      # había vuelto ruido de fondo — exactamente el fracaso que su diseño
-      # (línea base + solo roturas nuevas) buscaba evitar. Ahora busca el
-      # issue abierto con el marcador y lo ACTUALIZA; solo abre uno si no
-      # existe. Un hilo con historial se lee; 82 hilos idénticos no.
+      # Un issue PERSISTENTE, no uno por corrida. Antes cada corrida abría
+      # uno nuevo: a agosto 2026 había 82 issues automáticas abiertas y el
+      # gate se había vuelto ruido de fondo — exactamente el fracaso que su
+      # diseño (línea base + solo roturas nuevas) buscaba evitar. Ahora
+      # busca el issue abierto con el marcador y lo ACTUALIZA; solo abre
+      # uno si no existe. Un hilo con historial se lee; 82 hilos idénticos
+      # no.
       - name: Report new link rot (single persistent issue)
         if: steps.links.outputs.exit_code != '0'
         uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
@@ -241,7 +252,7 @@ jobs:
             const today = new Date().toISOString().slice(0, 10);
             const title = `audit: drift detectado (${today})`;
             const body = [
-              'La auditoría diaria encontró inconsistencias en `main`.',
+              'La auditoría semanal encontró inconsistencias en `main`.',
               '',
               '<details><summary>Reporte completo</summary>',
               '',
