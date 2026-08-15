@@ -1,0 +1,99 @@
+{
+  "id": "bianchi-magallanes-2012",
+  "num": 386,
+  "name": "Karim Bianchi · el senador chileno que dice haber sido abducido",
+  "name_en": "Karim Bianchi · the Chilean senator who says he was abducted",
+  "year_start": 2012,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -52.44,
+    "lng": -71.7,
+    "place": "Ruta 9, entre Puerto Natales y Punta Arenas, Región de Magallanes",
+    "place_en": "Route 9, between Puerto Natales and Punta Arenas, Magallanes Region"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 18,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.35,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.12,
+    "indet": 0.45
+  },
+  "summary": "En mayo de 2024, el senador chileno Karim Bianchi (independiente, Magallanes) reveló en una entrevista televisiva que en 2012, manejando de Puerto Natales a Punta Arenas, una luz giratoria le apagó el auto y el teléfono, y que 'apareció' unos 200 km más adelante en la misma ruta sin memoria del trayecto. Relató efectos posteriores —avistamientos recurrentes de lechuzas, descargas eléctricas al dar la mano durante casi un año— y la visita, días después, de un hombre que le entregó supuestos documentos secretos de la NASA pidiéndole 'difundir el mensaje'. Guardó silencio más de una década por las críticas que anticipaba; no se retractó tras la ola de burlas que siguió a la entrevista.",
+  "summary_en": "In May 2024, Chilean senator Karim Bianchi (independent, Magallanes) revealed in a television interview that in 2012, while driving from Puerto Natales to Punta Arenas, a spinning light shut off his car and phone, and that he 'appeared' about 200 km further along the same route with no memory of the drive. He described aftereffects —recurring owl sightings, electric shocks when shaking hands for nearly a year— and a visit, days later, from a man who gave him supposed secret NASA documents asking him to 'spread the message'. He stayed silent for over a decade anticipating criticism, and did not retract after the wave of mockery that followed the interview.",
+  "patterns": [
+    "8d"
+  ],
+  "category": "document",
+  "whatHappened": "En mayo de 2024, el programa 'Not News' del canal chileno Vía X emitió una entrevista con el senador Karim Bianchi Retamales, representante independiente de la 15ª Circunscripción (Región de Magallanes) desde 2022, en la que reveló públicamente por primera vez un episodio que dijo haber vivido en 2012 y que había mantenido mayormente privado durante más de una década. Según su relato, viajaba en auto desde Puerto Natales hacia Punta Arenas, hablando por teléfono, cuando se le acercó 'una luz que giraba, grande, de distintos colores, como un platillo'. El vehículo se le apagó por completo —motor, luces, el teléfono con el que hablaba— y lo siguiente que recuerda es 'aparecer' unos 200 kilómetros más adelante en la misma ruta, sin memoria del tramo intermedio. Retomó la llamada telefónica con la misma persona para avisar que ya había llegado a destino. Bianchi no ha identificado públicamente a esa persona ni presentado registro de la llamada.\n\nSegún contó, el episodio tuvo secuelas que se extendieron por meses. Durante casi un año, dijo, transmitía una sensación de 'electricidad' al saludar de mano a otras personas. Además, empezó a notar lechuzas y búhos con una frecuencia que le resultó significativa —una asociación que, según explicó, un experto le vinculó a la rotación del cuello y los ojos de esas aves—. El elemento más específico del relato llegó unos tres días después del episodio de la ruta: un hombre mayor, calvo y de baja estatura, se presentó en su oficina —entonces trabajaba en una radio— y le entregó unos papeles que describió como documentos clasificados de la NASA, diciéndole que él mismo era 'de otro planeta' y que Bianchi 'tenía que difundir el mensaje'. Bianchi afirma conservar esos documentos, pero no los ha hecho públicos ni sometido a ningún tipo de peritaje o verificación independiente.\n\nLa entrevista se viralizó de inmediato en la prensa chilena —BioBioChile, 24 Horas, La Cuarta, El Mostrador, Meganoticias, Chilevisión, La Prensa Austral— y llegó a medios internacionales como Infobae. Bianchi explicó su silencio de más de diez años diciendo que no quería exponerse a la crítica que anticipaba, y en efecto la recibió: tras la entrevista respondió en redes sociales a una ola de burlas y comentarios hostiles, declarando que 'lamento mucho la violencia que descarga la gente en las redes sociales'. No se retractó de ningún elemento del relato. No hay registro de una declaración oficial del Senado de Chile ni del Comité de Estudios de Fenómenos Aéreos Anómalos (CEFAA) —el organismo estatal chileno que investiga UAP y que ya figura en este corpus— sobre el caso. Bianchi ha seguido en funciones como senador desde entonces, activo en la discusión pública sobre otros temas.",
+  "whatHappened_en": "In May 2024, the Chilean channel Vía X's program 'Not News' aired an interview with Senator Karim Bianchi Retamales, independent representative for the 15th Circumscription (Magallanes Region) since 2022, in which he publicly revealed for the first time an episode he said he experienced in 2012 and had kept mostly private for over a decade. By his account, he was driving from Puerto Natales to Punta Arenas, talking on the phone, when 'a spinning light approached, large, multicolored, like a saucer.' The vehicle shut off entirely —engine, lights, the phone he was talking on— and the next thing he recalls is 'appearing' about 200 kilometers further along the same route, with no memory of the stretch in between. He resumed the phone call with the same person to say he had already arrived. Bianchi has not publicly identified that person nor produced any record of the call.\n\nBy his account, the episode had aftereffects that lasted for months. For nearly a year, he said, he transmitted a sensation of 'electricity' when shaking hands with people. He also began noticing owls with a frequency he found significant —an association he said an expert linked to the rotation of those birds' necks and eyes. The most specific element of the account came about three days after the roadside episode: an elderly, bald, short man showed up at his office —he was working at a radio station at the time— and handed him papers he described as classified NASA documents, telling him he himself was 'from another planet' and that Bianchi 'had to spread the message'. Bianchi says he still keeps those documents, but has not made them public or submitted them to any independent examination or verification.\n\nThe interview went viral immediately in the Chilean press —BioBioChile, 24 Horas, La Cuarta, El Mostrador, Meganoticias, Chilevisión, La Prensa Austral— and reached international outlets such as Infobae. Bianchi explained his decade-plus silence by saying he did not want to expose himself to the criticism he anticipated, and he did in fact receive it: after the interview he responded on social media to a wave of mockery and hostile comments, stating that 'I very much regret the violence that people unleash on social media.' He did not retract any element of the account. There is no record of an official statement from the Chilean Senate nor from the Committee for the Study of Anomalous Aerial Phenomena (CEFAA) —the Chilean state body that investigates UAP and already appears in this corpus— regarding the case. Bianchi has remained in office as senator since, active in public discussion on other matters.",
+  "whyMatters": "El caso importa por un motivo estructural más que por el contenido del relato en sí: es la primera vez que este corpus registra a un legislador nacional en ejercicio declarando en primera persona haber sido abducido, no comentando el fenómeno desde un cargo oficial o comisión investigadora. Bigelow y Grusch aportan autoridad institucional sobre un tema que dicen conocer de terceros; Bianchi aporta autoridad de cargo público sobre una experiencia que dice haber vivido él mismo, sin ningún tipo de anclaje documental, testimonial de terceros ni institucional que la respalde. Es el mismo patrón de 'autoridad sin material' que el corpus ya identifica en otros casos, llevado a su forma más desnuda: aquí ni siquiera hay una reunión confirmada por un tercero, como en el caso Bigelow, o un canal de queja formal, como en el de Grusch — hay solo la palabra de un cargo público.\n\nEl relato reúne, además, casi todo el repertorio clásico de la tradición contactista en un solo caso: pérdida de tiempo y desplazamiento inexplicado, efectos fisiológicos posteriores sin diagnóstico médico documentado, un patrón de sincronía animal (las lechuzas) que carece de mecanismo causal propuesto, y —el elemento más reconocible del género— un mensajero que entrega documentos secretos y exige 'difundir el mensaje'. Ese último elemento en particular replica casi punto por punto la estructura narrativa de encuentros contactistas documentados desde los años 50 y 60, lo cual no prueba ni descarta nada sobre lo ocurrido, pero sí es relevante para calibrar cuánto pesa el relato como evidencia: una estructura narrativa tan reconocible sugiere, como mínimo, la posibilidad de que el recuerdo se haya organizado —consciente o inconscientemente— según guiones culturales preexistentes.\n\nLa calibración del posterior refleja esa tensión. La masa dominante en `indet` (0.45) reconoce que se trata de un relato de un solo testigo, sin ningún elemento corroborable de forma independiente, revelado más de una década después de los hechos. `mundano_natural` (0.35) pesa las explicaciones prosaicas más plausibles —incluidas la fatiga o microsueño al volante en una ruta larga y solitaria de la Patagonia, y la reconstrucción retrospectiva de una experiencia ambigua según un guion cultural ya conocido—, señaladas por comentaristas científicos que cubrieron el caso. El `mundanoType: misid` asume la hipótesis de buena fe, consistente con que Bianchi nunca se retractó pese a la presión pública: si está equivocado, el corpus lo trata como una creencia sincera, no como un invento calculado. Lo que el corpus debe seguir no es el relato en sí, sino si los documentos que Bianchi dice conservar llegan alguna vez a hacerse públicos.",
+  "whyMatters_en": "The case matters for a structural reason more than for the content of the account itself: it is the first time this corpus records a sitting national legislator claiming in the first person to have been abducted, rather than commenting on the phenomenon from an official post or investigative committee. Bigelow and Grusch bring institutional authority about a subject they say they know through others; Bianchi brings the authority of public office to an experience he says he lived himself, with no documentary anchor, third-party testimony, or institutional backing whatsoever. It is the same 'authority without material' pattern the corpus already identifies elsewhere, taken to its barest form: here there is not even a meeting confirmed by a third party, as in the Bigelow case, or a formal complaint channel, as in Grusch's — there is only the word of a public official.\n\nThe account also gathers nearly the entire classic repertoire of the contactee tradition into a single case: lost time and unexplained displacement, aftereffects with no documented medical diagnosis, an animal-synchronicity pattern (the owls) with no proposed causal mechanism, and —the genre's most recognizable element— a messenger who delivers secret documents and demands the recipient 'spread the message'. That last element in particular replicates, almost point for point, the narrative structure of contactee encounters documented since the 1950s and 60s, which proves or rules out nothing about what actually happened, but is relevant for calibrating how much weight the account carries as evidence: so recognizable a narrative structure suggests, at minimum, the possibility that the memory was organized —consciously or not— around pre-existing cultural scripts.\n\nThe posterior calibration reflects that tension. The dominant mass on `indet` (0.45) acknowledges this is a single-witness account, with no independently corroborable element, revealed more than a decade after the events. `mundano_natural` (0.35) weighs the more plausible prosaic explanations —including fatigue or microsleep at the wheel on a long, solitary Patagonian route, and the retrospective reconstruction of an ambiguous experience along an already-familiar cultural script— flagged by science commentators who covered the case. `mundanoType: misid` assumes the good-faith hypothesis, consistent with the fact that Bianchi never retracted despite public pressure: if he is mistaken, the corpus treats it as sincere belief, not a calculated invention. What the corpus should track is not the account itself, but whether the documents Bianchi says he keeps are ever made public.",
+  "evidence": [
+    "Entrevista en el programa 'Not News' (Vía X, mayo de 2024): primera revelación pública del episodio de 2012",
+    "Relato del propio Bianchi: luz giratoria, apagón total del vehículo y el teléfono, 'aparición' ~200 km más adelante en la misma ruta sin memoria del trayecto",
+    "Efectos posteriores autorreportados: descargas eléctricas al saludar de mano durante casi un año; avistamientos recurrentes de lechuzas y búhos",
+    "Visita, ~3 días después, de un hombre que entregó supuestos documentos secretos de la NASA pidiéndole 'difundir el mensaje' — documentos que Bianchi dice conservar pero nunca ha mostrado públicamente ni sometido a verificación",
+    "Cobertura extensa en prensa chilena (BioBioChile, 24 Horas, La Cuarta, El Mostrador, Meganoticias, Chilevisión, La Prensa Austral) e internacional (Infobae)",
+    "Respuesta pública de Bianchi tras la ola de burlas: 'lamento mucho la violencia que descarga la gente en las redes sociales' — sin retractarse de ningún elemento del relato",
+    "Sin identificación pública de la persona con la que hablaba por teléfono, sin registro de la llamada, y sin declaración conocida del Senado de Chile ni del CEFAA sobre el caso"
+  ],
+  "evidence_en": [
+    "Interview on the program 'Not News' (Vía X, May 2024): first public revelation of the 2012 episode",
+    "Bianchi's own account: spinning light, total shutdown of the vehicle and phone, 'appearing' ~200 km further along the same route with no memory of the drive",
+    "Self-reported aftereffects: electric shocks when shaking hands for nearly a year; recurring sightings of owls",
+    "Visit, ~3 days later, from a man who delivered supposed secret NASA documents asking him to 'spread the message' — documents Bianchi says he keeps but has never shown publicly or submitted for verification",
+    "Extensive coverage in Chilean press (BioBioChile, 24 Horas, La Cuarta, El Mostrador, Meganoticias, Chilevisión, La Prensa Austral) and international press (Infobae)",
+    "Bianchi's public response to the wave of mockery: 'I very much regret the violence that people unleash on social media' — without retracting any element of the account",
+    "No public identification of the person he was speaking with by phone, no record of the call, and no known statement from the Chilean Senate or CEFAA on the case"
+  ],
+  "sources": [
+    {
+      "name": "BioBioChile — 'Senador Karim Bianchi aseguró que fue abducido por extraterrestres: \"Tiene que difundir el mensaje\"' (13 may 2024)",
+      "url": "https://www.biobiochile.cl/noticias/sociedad/historia/2024/05/13/senador-karim-bianchi-aseguro-que-fue-abducido-por-extraterrestres-tiene-que-difundir-el-mensaje.shtml",
+      "note": "Cobertura principal con las citas directas del senador sobre el episodio de 2012 y la visita del mensajero.",
+      "note_en": "Main coverage with the senator's direct quotes about the 2012 episode and the messenger's visit."
+    },
+    {
+      "name": "La Prensa Austral — '\"Fui abducido\": senador Karim Bianchi desclasifica encuentro extraterrestres' (12 may 2024)",
+      "url": "https://laprensaaustral.cl/2024/05/12/fui-abducido-senador-karim-bianchi-desclasifica-encuentro-extraterrestres/",
+      "note": "Medio regional de Magallanes, primera cobertura local del caso.",
+      "note_en": "Regional Magallanes outlet, first local coverage of the case."
+    },
+    {
+      "name": "Infobae — 'Un senador chileno dijo haber sido abducido por extraterrestres: el animal que comenzó a ver \"en todas partes\"' (20 may 2024)",
+      "url": "https://www.infobae.com/america/america-latina/2024/05/20/un-senador-chileno-dijo-haber-sido-abducido-por-extraterrestres-el-animal-que-comenzo-a-ver-en-todas-partes/",
+      "note": "Detalla los efectos posteriores (lechuzas, descargas eléctricas) y que Bianchi explicó su silencio de más de una década por temor a la crítica.",
+      "note_en": "Details the aftereffects (owls, electric shocks) and that Bianchi explained his decade-plus silence as fear of criticism."
+    },
+    {
+      "name": "24 Horas — 'Senador Bianchi responde a críticas tras revelar supuesta abducción'",
+      "url": "https://www.24horas.cl/tendencias/ocio/senador-bianchi-responde-criticas-abduccion",
+      "note": "Respuesta del senador a la ola de burlas en redes sociales, sin retractación.",
+      "note_en": "The senator's response to the wave of social-media mockery, without retraction."
+    },
+    {
+      "name": "Fayerwayer — 'Senador chileno dice haber sido abducido por extraterrestres: ¿Qué dice la ciencia de estas experiencias?'",
+      "url": "https://www.fayerwayer.com/espacio/2024/05/13/senador-chileno-dice-haber-sido-abducido-por-extraterrestres-que-dice-la-ciencia-de-estas-experiencias/",
+      "note": "Contexto científico escéptico general (parálisis del sueño, efectos del lóbulo temporal) sin abordar el caso específico de Bianchi punto por punto.",
+      "note_en": "General skeptical scientific context (sleep paralysis, temporal lobe effects) without addressing Bianchi's specific case point by point."
+    },
+    {
+      "name": "Senado de Chile — Ficha biográfica de Karim Bianchi Retamales",
+      "url": "https://www.senado.cl/senadoras-y-senadores/listado-de-senadoras-y-senadores/karim-bianchi-retamales-sen",
+      "note": "Confirma su calidad de senador en ejercicio (2022-2030) por la 15ª Circunscripción, Región de Magallanes.",
+      "note_en": "Confirms his status as sitting senator (2022-2030) for the 15th Circumscription, Magallanes Region."
+    }
+  ],
+  "seoTitle": "Karim Bianchi: el senador chileno que dice haber sido abducido en 2012",
+  "seoDescription": "En 2024, el senador de Magallanes Karim Bianchi reveló haber sido abducido en 2012: luz giratoria, 200 km sin memoria, y un mensajero con documentos secretos de la NASA. Sin corroboración independiente ni retractación.",
+  "seoTitle_en": "Karim Bianchi: the Chilean senator who says he was abducted in 2012",
+  "seoDescription_en": "In 2024, Magallanes senator Karim Bianchi revealed he was abducted in 2012: a spinning light, 200 km with no memory, and a messenger with secret NASA documents. No independent corroboration, no retraction.",
+  "misidSubtype": "terrestre_otros"
+}
