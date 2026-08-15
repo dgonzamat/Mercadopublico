@@ -23,6 +23,7 @@ const MIRRORED = new Set([
   "cobertura",
   "frameworks",
   "releases",
+  "entities",
 ]);
 
 function topSegment(href: string): string {

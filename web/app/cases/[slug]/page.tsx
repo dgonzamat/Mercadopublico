@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
-import { cases, getPattern, TOTAL_CASES } from "@/lib/data";
+import { cases, getPattern, getEntityMorphology, TOTAL_CASES } from "@/lib/data";
 import { CATEGORY_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { CasePosterior } from "@/components/MeceChart";
@@ -146,6 +146,10 @@ export async function CaseDetailPage(
   const casePatterns = c.patterns
     .map((id) => getPattern(id))
     .filter((p): p is NonNullable<typeof p> => p !== undefined);
+
+  const caseEntityForms = (c.entityMorphology ?? [])
+    .map((slug) => getEntityMorphology(slug))
+    .filter((f): f is NonNullable<typeof f> => f !== undefined);
 
   const similar = cases
     .filter((x) => x.id !== c.id)
@@ -745,6 +749,33 @@ export async function CaseDetailPage(
                   <span className="font-mono">{p.id}</span>
                   <span className="ml-2">
                     <T locale={locale} es={p.name} en={p.name_en} />
+                  </span>
+                </LocaleLink>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {caseEntityForms.length > 0 && (
+          <div className="space-y-4">
+            <Eyebrow>
+              <T locale={locale}
+                es={`Fisionomía de la entidad (${caseEntityForms.length})`}
+                en={`Entity form (${caseEntityForms.length})`}
+              />
+            </Eyebrow>
+            <div className="flex flex-wrap gap-2">
+              {caseEntityForms.map((f) => (
+                <LocaleLink
+                  key={f.slug}
+                  href={`/entities/${f.slug}`}
+                  className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
+                  style={{ borderColor: f.color }}
+                  title={f.description_en ?? f.description}
+                >
+                  <span className="font-mono">{f.slug}</span>
+                  <span className="ml-2">
+                    <T locale={locale} es={f.name} en={f.name_en} />
                   </span>
                 </LocaleLink>
               ))}

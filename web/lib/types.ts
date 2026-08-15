@@ -192,6 +192,23 @@ export interface Pattern {
   color: string;
 }
 
+export interface EntityMorphology {
+  slug: string;
+  name: string;
+  name_en: string;
+  description: string;
+  description_en: string;
+  color: string;
+  // false = arquetipo conocido en la literatura ufológica sin ningún caso
+  // del corpus que cumpla el estándar editorial. No genera página de detalle
+  // (ver generateStaticParams en app/entities/[slug]/page.tsx).
+  present: boolean;
+  // ids de Framework hacia los que lee esta forma (frameworks.json). Vacío
+  // cuando no hay lectura defendible — la ausencia de marco es el dato,
+  // no un campo sin completar.
+  readsToward: string[];
+}
+
 export interface Framework {
   id: string;
   name: string;
