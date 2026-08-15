@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "gris",
+    "name": "Gris",
+    "name_en": "Grey",
+    "description": "Cabeza grande en proporción al cuerpo, ojos oscuros almendrados, piel pálida o cérea. El morfotipo dominante del corpus.",
+    "description_en": "Head large in proportion to the body, dark almond-shaped eyes, pale or waxy skin. The corpus's dominant morphotype.",
+    "color": "#6b3a7a",
+    "present": true
+  },
+  {
+    "slug": "peluda-garras",
+    "name": "Pequeña, peluda, con garras",
+    "name_en": "Small, hairy, clawed",
+    "description": "Baja estatura, pelaje o piel oscura, extremidades terminadas en garra, movimiento errático. Más cerca del cryptid regional que del gris de ciencia ficción.",
+    "description_en": "Short stature, fur or dark skin, clawed limbs, erratic movement. Closer to the regional cryptid than to the science-fiction grey.",
+    "color": "#6b7a3a",
+    "present": true
+  },
+  {
+    "slug": "robotica",
+    "name": "Robótica / sintética",
+    "name_en": "Robotic / synthetic",
+    "description": "Manos en pinza, movimiento mecánico, acabado metálico o piel arrugada. Nunca aparece sola: siempre acompaña a un humanoide en el mismo encuentro.",
+    "description_en": "Pincer hands, mechanical movement, metallic finish or wrinkled skin. Never appears alone: always alongside a humanoid in the same encounter.",
+    "color": "#8a4b23",
+    "present": true
+  },
+  {
+    "slug": "luminosa",
+    "name": "Luminosa / plasmoide",
+    "name_en": "Luminous / plasmoid",
+    "description": "Sin cuerpo fijo, presentada como presencia consciente y no como objeto. Grusch la sitúa entre las inteligencias no humanas; AARO la lee como plasma natural.",
+    "description_en": "No fixed body, presented as a conscious presence rather than an object. Grusch places it among non-human intelligences; AARO reads it as natural plasma.",
+    "color": "#5a6cc8",
+    "present": true
+  },
+  {
+    "slug": "craneo-alargado",
+    "name": "Cráneo alargado",
+    "name_en": "Elongated skull",
+    "description": "Cráneo elongado, cuencas oculares ovaladas, manos de tres dedos. Ambos casos del corpus llegan por vía de cuerpo exhibido, no de encuentro en vivo.",
+    "description_en": "Elongated cranium, oval eye sockets, three-fingered hands. Both corpus cases arrive via an exhibited body, not a live encounter.",
+    "color": "#6b6b6b",
+    "present": true
+  },
+  {
+    "slug": "alto-humanoide",
+    "name": "Alto, casi humano",
+    "name_en": "Tall, near-human",
+    "description": "Estatura elevada con proporciones humanas y desviaciones puntuales. Sin relación documental con el arquetipo «nórdico» de la cultura popular.",
+    "description_en": "Tall stature with human proportions and isolated deviations. No documentary relation to pop culture's 'Nordic' archetype.",
+    "color": "#9c5a18",
+    "present": true
+  },
+  {
+    "slug": "alada",
+    "name": "Alada",
+    "name_en": "Winged",
+    "description": "Envergadura considerable, ojos marcados, vuelo casi vertical. Pertenece a la tradición cryptid, no a la lectura extraterrestre.",
+    "description_en": "Considerable wingspan, marked eyes, near-vertical flight. Belongs to the cryptid tradition, not the extraterrestrial reading.",
+    "color": "#3a6b6b",
+    "present": true
+  },
+  {
+    "slug": "reptiloide",
+    "name": "Reptiloide",
+    "name_en": "Reptiloid",
+    "description": "Arquetipo central de la cultura ufológica sin caso propio en el corpus: lo disponible es testimonio único sin corroborar, o relectura retroactiva de casos que nunca lo describieron así.",
+    "description_en": "A central archetype of UFO culture with no case of its own in the corpus: what exists is uncorroborated single testimony, or retroactive rereading of cases that never described it that way.",
+    "color": "#8b0000",
+    "present": false
+  },
+  {
+    "slug": "insectoide",
+    "name": "Mantis / insectoide",
+    "name_en": "Mantis / insectoid",
+    "description": "Sin caso propio en el corpus: el material disponible proviene casi enteramente de memoria recuperada por hipnosis regresiva, sin los testigos independientes que sí reforzaron Allagash.",
+    "description_en": "No case of its own in the corpus: the available material comes almost entirely from memory recovered under regressive hypnosis, without the independent witnesses that did reinforce Allagash.",
+    "color": "#8b0000",
+    "present": false
+  },
+  {
+    "slug": "felino",
+    "name": "Felino",
+    "name_en": "Feline",
+    "description": "Sin caso confirmado, pero el único ausente con un candidato de anclaje institucional: una entrada («caso 848») de un documento desclasificado australiano, no verificada todavía en fuente primaria.",
+    "description_en": "No confirmed case, yet the only absent form with a candidate institutional anchor: an entry ('case 848') in a declassified Australian document, not yet verified against the primary source.",
+    "color": "#9c5a18",
+    "present": false
+  },
+  {
+    "slug": "espiritual",
+    "name": "Espiritual / angélico",
+    "name_en": "Spiritual / angelic",
+    "description": "Sin caso propio en el corpus: lo que existe es relectura religiosa de casos ya incluidos por otro mérito, o testimonio de contactado único sin corroborar.",
+    "description_en": "No case of its own in the corpus: what exists is religious rereading of cases already included on other merits, or uncorroborated single-contactee testimony.",
+    "color": "#8b0000",
+    "present": false
+  }
+]

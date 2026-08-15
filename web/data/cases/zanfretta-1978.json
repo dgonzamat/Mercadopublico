@@ -23,6 +23,9 @@
     "8a",
     "8d"
   ],
+  "entityMorphology": [
+    "peluda-garras"
+  ],
   "posterior": {
     "mundano_natural": 0.42,
     "humana_clasificada": 0.03,

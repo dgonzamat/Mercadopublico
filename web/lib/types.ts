@@ -157,6 +157,13 @@ export interface UAPCase {
   // auto-hospedados bajo /pursue/). Ausente = no se renderiza el visor.
   documents?: DocEmbed[];
   patterns: string[];
+  // Forma(s) de la entidad reportada, por slug de data/entity-morphology.json.
+  // Multi-etiqueta como `patterns`: un caso puede describir dos morfologías
+  // distintas en el mismo encuentro (vilas-boas-1957, voronezh-1989). Ausente
+  // en la gran mayoría del corpus, que documenta objetos sin ocupante.
+  // NO es un eje del modelo MECE: no reparte probabilidad ni entra al agregado
+  // de /probabilidades, que trabaja sobre la narrativa del incidente completo.
+  entityMorphology?: string[];
   category: Category;
   // Optional rich-content fields. When present, the case detail page
   // renders a fully-explained version. When absent, the summary is the

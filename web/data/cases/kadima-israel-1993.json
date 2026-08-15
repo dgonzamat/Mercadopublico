@@ -20,6 +20,9 @@
   "summary": "Entre marzo y junio de 1993, en el moshav de Kadima (cerca de Netanya, Israel), varias personas —en su mayoría mujeres, en relatos independientes— afirmaron haber tenido encuentros con una entidad alta y calva de tipo 'gris'. El episodio dejó elementos materiales verificables: depresiones circulares en un campo con residuos muestreados (material gelatinoso, líquido rojizo, depósitos de silicio) y huellas profundas que la policía rastreó varios kilómetros. La respuesta institucional fue real —unos 30 agentes de la Policía de Fronteras peinaron la zona— pero la difusión del caso quedó dominada por ufología sensacionalista (Barry Chamish), lo que erosiona su credibilidad. Es el caso israelí mejor documentado, e ilustra un punto de alta extrañeza con evidencia frágil: entra al corpus como apertura de Medio Oriente y caso-contraste, no como ancla evidencial.",
   "summary_en": "Between March and June 1993, in the moshav of Kadima (near Netanya, Israel), several people —mostly women, in independent accounts— claimed encounters with a tall, bald 'gray'-type entity. The episode left verifiable material elements: circular depressions in a field with sampled residues (gelatinous material, reddish liquid, silicon deposits) and deep footprints that police tracked for several kilometers. The institutional response was real —about 30 Border Police officers combed the area— but the case's diffusion was dominated by sensational ufology (Barry Chamish), which erodes its credibility. It is the best-documented Israeli case, and it illustrates a high-strangeness point with fragile evidence: it enters the corpus as a Middle East opener and contrast case, not as an evidential anchor.",
   "patterns": [],
+  "entityMorphology": [
+    "gris"
+  ],
   "category": "incident",
   "posterior": {
     "mundano_natural": 0.61,
