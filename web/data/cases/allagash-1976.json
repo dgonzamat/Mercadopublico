@@ -22,6 +22,9 @@
     "8a",
     "8d"
   ],
+  "entityMorphology": [
+    "gris"
+  ],
   "posterior": {
     "mundano_natural": 0.55,
     "humana_clasificada": 0.02,

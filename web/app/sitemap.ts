@@ -1,6 +1,6 @@
 import { execSync } from "child_process";
 import type { MetadataRoute } from "next";
-import { cases, patterns, researchers } from "@/lib/data";
+import { cases, patterns, researchers, entityMorphologies } from "@/lib/data";
 import { posts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
@@ -67,6 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/atlas/",
     "/patterns/",
     "/frameworks/",
+    "/entities/",
     "/researchers/",
     "/releases/",
     "/about/",
@@ -102,6 +103,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  // Solo formas `present: true` tienen página — mismo criterio que
+  // generateStaticParams en app/entities/[slug]/page.tsx.
+  const entityRoutes = entityMorphologies
+    .filter((f) => f.present)
+    .map((f) => ({
+      url: `${SITE_URL}/entities/${f.slug}/`,
+      lastModified: dateFor("data/entity-morphology.json"),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    }));
+
   const researcherRoutes = researchers.map((r) => ({
     url: `${SITE_URL}/researchers/${r.id}/`,
     lastModified: dateFor("data/researchers.json"),
@@ -131,6 +143,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...caseRoutes,
     ...patternRoutes,
+    ...entityRoutes,
     ...researcherRoutes,
     ...postRoutes,
     ...releaseRoutes,

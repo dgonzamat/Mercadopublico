@@ -157,6 +157,13 @@ export interface UAPCase {
   // auto-hospedados bajo /pursue/). Ausente = no se renderiza el visor.
   documents?: DocEmbed[];
   patterns: string[];
+  // Forma(s) de la entidad reportada, por slug de data/entity-morphology.json.
+  // Multi-etiqueta como `patterns`: un caso puede describir dos morfologías
+  // distintas en el mismo encuentro (vilas-boas-1957, voronezh-1989). Ausente
+  // en la gran mayoría del corpus, que documenta objetos sin ocupante.
+  // NO es un eje del modelo MECE: no reparte probabilidad ni entra al agregado
+  // de /probabilidades, que trabaja sobre la narrativa del incidente completo.
+  entityMorphology?: string[];
   category: Category;
   // Optional rich-content fields. When present, the case detail page
   // renders a fully-explained version. When absent, the summary is the
@@ -183,6 +190,23 @@ export interface Pattern {
   description: string;
   description_en: string;
   color: string;
+}
+
+export interface EntityMorphology {
+  slug: string;
+  name: string;
+  name_en: string;
+  description: string;
+  description_en: string;
+  color: string;
+  // false = arquetipo conocido en la literatura ufológica sin ningún caso
+  // del corpus que cumpla el estándar editorial. No genera página de detalle
+  // (ver generateStaticParams en app/entities/[slug]/page.tsx).
+  present: boolean;
+  // ids de Framework hacia los que lee esta forma (frameworks.json). Vacío
+  // cuando no hay lectura defendible — la ausencia de marco es el dato,
+  // no un campo sin completar.
+  readsToward: string[];
 }
 
 export interface Framework {

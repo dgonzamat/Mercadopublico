@@ -22,6 +22,9 @@
     "8c",
     "8m"
   ],
+  "entityMorphology": [
+    "sin-forma"
+  ],
   "posterior": {
     "mundano_natural": 0.72,
     "humana_clasificada": 0.06,

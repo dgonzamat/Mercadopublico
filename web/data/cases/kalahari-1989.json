@@ -21,6 +21,9 @@
   "patterns": [
     "8o"
   ],
+  "entityMorphology": [
+    "sin-forma"
+  ],
   "posterior": {
     "mundano_natural": 0.85,
     "humana_clasificada": 0.03,

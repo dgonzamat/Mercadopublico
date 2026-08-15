@@ -24,6 +24,9 @@
     "8d",
     "8g"
   ],
+  "entityMorphology": [
+    "luminosa"
+  ],
   "category": "incident",
   "posterior": {
     "mundano_natural": 0.48,

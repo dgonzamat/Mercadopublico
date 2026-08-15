@@ -22,6 +22,9 @@
   "patterns": [
     "8a"
   ],
+  "entityMorphology": [
+    "gris"
+  ],
   "category": "incident",
   "posterior": {
     "mundano_natural": 0.46,

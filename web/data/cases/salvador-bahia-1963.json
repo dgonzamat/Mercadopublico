@@ -31,6 +31,9 @@
   "summary": "El 14 de noviembre de 1963, la embajada de EE.UU. en Río de Janeiro pidió a su cónsul en Salvador que confirmara un reporte de prensa: un 'globo metálico tripulado' habría caído cerca de Conde, Bahía, con un tripulante muerto vestido con un traje extraño y un cráter de cuatro metros de profundidad. Seis días después, un segundo cable diplomático —ahora desclasificado vía PURSUE 2026— cerró el caso: el cónsul Harold Midkiff reportó que la historia estaba 'aparentemente fabricada en Río', que nadie en la zona había visto nada, y que el Ministerio de Aeronáutica brasileño lo negó categóricamente. Un periódico local tituló su nota 'La aeronave que no estaba ahí'.",
   "summary_en": "On November 14, 1963, the U.S. embassy in Rio de Janeiro asked its consul in Salvador to confirm a press report: a 'manned metal balloon' had allegedly crashed near Conde, Bahia, with a dead crewman wearing a strange suit and a four-meter-deep crater. Six days later, a second diplomatic cable —now declassified via PURSUE 2026— closed the case: Consul Harold Midkiff reported the story was 'apparently fabricated in Rio,' that no one in the area had seen anything, and that Brazil's Ministry of Aeronautics categorically denied it. A local newspaper headlined its story 'The Airship That Wasn't There.'",
   "patterns": [],
+  "entityMorphology": [
+    "sin-forma"
+  ],
   "category": "document",
   "documents": [
     {
