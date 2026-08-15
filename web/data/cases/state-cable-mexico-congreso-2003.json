@@ -36,6 +36,9 @@
     "8q",
     "8o"
   ],
+  "entityMorphology": [
+    "sin-forma"
+  ],
   "category": "document",
   "featuredDoc": {
     "label": "DoS cable #059UAP00013 (PURSUE Release 01)",
