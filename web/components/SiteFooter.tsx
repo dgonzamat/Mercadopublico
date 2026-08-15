@@ -96,6 +96,7 @@ export function SiteFooter() {
                 en="Frameworks"
                 locale={locale}
               />
+              <FooterLink href="/entities" es="Entidades" en="Entities" locale={locale} />
               <FooterLink href="/about" es="Metodología" en="Method" locale={locale} />
               <FooterLink href="/contact" es="Contacto" en="Contact" locale={locale} />
               <FooterLink href="/visitantes" es="Visitantes" en="Visitors" locale={locale} />
