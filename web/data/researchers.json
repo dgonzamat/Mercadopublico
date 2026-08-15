@@ -508,12 +508,381 @@
     ]
   },
   {
+    "id": "walton",
+    "name": "Travis Walton",
+    "flag": "🇺🇸",
+    "born": 1953,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Leñador de una cuadrilla forestal de Arizona · el caso de desaparición con más testigos convergentes y polígrafos del corpus (1975)",
+    "credentials_en": "Logger on an Arizona forestry crew · the disappearance case with the most convergent witnesses and polygraphs in the corpus (1975)",
+    "bio_short": "Su caso es el que mejor resiste la objeción estándar contra las abducciones —«un solo testigo, sin corroboración»—: seis compañeros de cuadrilla reportaron el hecho al sheriff mientras Walton seguía desaparecido, es decir, antes de conocer el desenlace y en un momento en que la denuncia los exponía a una investigación por homicidio. Cinco de ellos pasaron el polígrafo. La objeción que persiste no es la falta de testigos sino el contexto: la cuadrilla tenía un contrato atrasado cuya penalización se suspendía por fuerza mayor, un móvil que los escépticos consideran suficiente y que la convergencia de los relatos no descarta del todo.",
+    "bio_short_en": "His case is the one that best withstands the standard objection to abductions —'a single witness, no corroboration'—: six crewmates reported the event to the sheriff while Walton was still missing, that is, before knowing the outcome and at a moment when the report exposed them to a homicide investigation. Five of them passed polygraph tests. The objection that persists is not a lack of witnesses but the context: the crew had a behind-schedule contract whose penalty was suspended by force majeure, a motive skeptics consider sufficient and which the convergence of accounts does not entirely rule out.",
+    "works": [
+      {
+        "year": 1975,
+        "title": "Denuncia de la cuadrilla ante el sheriff de Navajo County",
+        "contribution": "Reporte emitido durante la desaparición, antes de conocer el desenlace",
+        "contribution_en": "Report filed during the disappearance, before the outcome was known"
+      },
+      {
+        "year": 1975,
+        "title": "Exámenes de polígrafo a la cuadrilla",
+        "contribution": "Cinco de seis compañeros los superaron",
+        "contribution_en": "Five of six crewmates passed them"
+      },
+      {
+        "year": 1978,
+        "title": "The Walton Experience",
+        "contribution": "Su relato en primera persona; base del filme 'Fire in the Sky' (1993)",
+        "contribution_en": "His first-person account; basis for the film 'Fire in the Sky' (1993)"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Registros del Sheriff de Navajo County (Arizona, 1975)",
+        "note": "Denuncia contemporánea a la desaparición.",
+        "note_en": "Report contemporaneous with the disappearance."
+      },
+      {
+        "name": "Travis Walton, 'The Walton Experience' (1978)",
+        "note": "Testimonio en primera persona del protagonista.",
+        "note_en": "First-person testimony from the protagonist."
+      }
+    ]
+  },
+  {
+    "id": "betty-hill",
+    "name": "Betty Hill",
+    "flag": "🇺🇸",
+    "born": 1919,
+    "death": 2004,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Trabajadora social del estado de New Hampshire · protagonista, con Barney Hill, del primer caso de abducción que entró a la cultura de masas (1961)",
+    "credentials_en": "New Hampshire state social worker · with Barney Hill, the protagonist of the first abduction case to enter mass culture (1961)",
+    "bio_short": "Su relato de 1961 fijó la plantilla que el resto de la ufología de abducción usaría durante sesenta años: interrupción del viaje, tiempo perdido, examen a bordo, recuperación bajo hipnosis. Fue ella quien llevó el registro más temprano —sueños anotados a mano días después— y quien dibujó, bajo hipnosis, el mapa estelar que Marjorie Fish intentaría luego correlacionar con estrellas reales. El expediente conserva dos anclajes independientes de su testimonio y una objeción de fondo: la base Pease registró un eco de radar correlacionado que quedó en el Project Blue Book, pero el propio psiquiatra que condujo las sesiones, Benjamin Simon, concluyó que los relatos eran una fantasía compartida y no un recuerdo literal.",
+    "bio_short_en": "Her 1961 account set the template the rest of abduction ufology would use for sixty years: interrupted journey, missing time, onboard examination, recovery under hypnosis. She kept the earliest record —dreams written down by hand days afterward— and drew, under hypnosis, the star map Marjorie Fish would later try to correlate with real stars. The file preserves two independent anchors for her testimony and one fundamental objection: Pease AFB logged a correlated radar echo that ended up in Project Blue Book, but the psychiatrist who ran the sessions himself, Benjamin Simon, concluded the accounts were a shared fantasy rather than a literal memory.",
+    "works": [
+      {
+        "year": 1961,
+        "title": "Notas y sueños manuscritos posteriores al incidente",
+        "contribution": "El registro más temprano del caso, anterior a cualquier hipnosis",
+        "contribution_en": "The earliest record of the case, predating any hypnosis"
+      },
+      {
+        "year": 1964,
+        "title": "Sesiones de hipnosis con el Dr. Benjamin Simon",
+        "contribution": "Recuperación del relato de abducción; el propio Simon lo leyó como fantasía compartida",
+        "contribution_en": "Recovery of the abduction account; Simon himself read it as shared fantasy"
+      },
+      {
+        "year": 1964,
+        "title": "Mapa estelar dibujado bajo hipnosis",
+        "contribution": "Base del análisis de correlación estelar de Marjorie Fish (1968)",
+        "contribution_en": "Basis for Marjorie Fish's stellar correlation analysis (1968)"
+      }
+    ],
+    "sources": [
+      {
+        "name": "John G. Fuller, 'The Interrupted Journey' (1966)",
+        "note": "Primera publicación extensa del caso, con transcripciones de las sesiones.",
+        "note_en": "First extensive publication of the case, with session transcripts."
+      },
+      {
+        "name": "Project Blue Book · registro del eco de radar de la base Pease",
+        "note": "Correlación instrumental independiente del testimonio.",
+        "note_en": "Instrumental correlation independent of the testimony."
+      }
+    ]
+  },
+  {
+    "id": "barney-hill",
+    "name": "Barney Hill",
+    "flag": "🇺🇸",
+    "born": 1922,
+    "death": 1969,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Empleado del Servicio Postal de EE.UU. · activista de derechos civiles (NAACP) · co-protagonista del caso Hill (1961)",
+    "credentials_en": "U.S. Postal Service employee · civil rights activist (NAACP) · co-protagonist of the Hill case (1961)",
+    "bio_short": "Fue la mitad más reticente del matrimonio Hill: a diferencia de Betty, no buscó difusión, mostró angustia sostenida ante el episodio y llegó a las sesiones de hipnosis derivado por un cuadro de ansiedad, no por interés ufológico. Esa reticencia es parte del valor probatorio del caso —no hay móvil de lucro ni de notoriedad— y también parte de su debilidad, porque el material emergió en un contexto terapéutico donde el psiquiatra tratante, Benjamin Simon, atribuyó el contenido a la ansiedad y a la transferencia del relato de su esposa. Murió en 1969, a los 46 años, antes de que el caso alcanzara su forma canónica en la cultura popular.",
+    "bio_short_en": "He was the more reluctant half of the Hill marriage: unlike Betty, he did not seek publicity, showed sustained distress about the episode, and came to the hypnosis sessions referred for anxiety, not out of ufological interest. That reluctance is part of the case's evidentiary value —there is no profit or notoriety motive— and also part of its weakness, because the material emerged in a therapeutic setting where the treating psychiatrist, Benjamin Simon, attributed the content to anxiety and to transference from his wife's account. He died in 1969, aged 46, before the case reached its canonical form in popular culture.",
+    "works": [
+      {
+        "year": 1962,
+        "title": "Cuadro de ansiedad y derivación psiquiátrica",
+        "contribution": "Contexto clínico —no ufológico— en que emergió el relato",
+        "contribution_en": "The clinical —not ufological— context in which the account emerged"
+      },
+      {
+        "year": 1964,
+        "title": "Sesiones de hipnosis con el Dr. Benjamin Simon",
+        "contribution": "Su relato bajo hipnosis, registrado por separado del de Betty",
+        "contribution_en": "His account under hypnosis, recorded separately from Betty's"
+      }
+    ],
+    "sources": [
+      {
+        "name": "John G. Fuller, 'The Interrupted Journey' (1966)",
+        "note": "Transcripciones de las sesiones de ambos cónyuges.",
+        "note_en": "Session transcripts from both spouses."
+      },
+      {
+        "name": "Benjamin Simon · conclusión clínica del psiquiatra tratante",
+        "note": "El profesional que condujo las sesiones no avaló la lectura literal.",
+        "note_en": "The professional who ran the sessions did not endorse the literal reading."
+      }
+    ]
+  },
+  {
+    "id": "valdes",
+    "name": "Armando Valdés Garrido",
+    "flag": "🇨🇱",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Cabo del Ejército de Chile · protagonista del caso de desaparición militar más citado de Latinoamérica (Pampa Lluscuma, 1977)",
+    "credentials_en": "Corporal in the Chilean Army · protagonist of the most cited military disappearance case in Latin America (Pampa Lluscuma, 1977)",
+    "bio_short": "Se apartó de su destacamento en el altiplano de Atacama para encarar dos objetos luminosos y reapareció unos quince minutos después en estado de alteración severa, con la barba crecida y el reloj adelantados ambos cinco días —anomalías que sus compañeros dijeron constatar en el momento. Es el único caso del corpus con una anomalía temporal atestiguada por observadores militares. Y es también el único cuyo protagonista terminó desmontándolo: tras su conversión evangélica, en declaraciones que culminaron en televisión en 2013, Valdés afirmó que nunca fue abducido y atribuyó todo a la amplificación de la prensa. Su desmentido no explica por sí solo la barba ni el reloj, de modo que el expediente queda partido entre el testimonio colectivo original y la negación de su figura central.",
+    "bio_short_en": "He stepped away from his detachment on the Atacama altiplano to confront two luminous objects and reappeared some fifteen minutes later in a state of severe distress, with his beard growth and his watch both advanced by five days —anomalies his companions said they verified at the time. It is the only case in the corpus with a temporal anomaly attested by military observers. It is also the only one whose protagonist ended up dismantling it: after his evangelical conversion, in statements culminating on television in 2013, Valdés stated he had never been abducted and attributed everything to press amplification. His denial does not by itself explain the beard or the watch, so the file remains split between the original collective testimony and the denial of its central figure.",
+    "works": [
+      {
+        "year": 1977,
+        "title": "Reporte del destacamento ante el regimiento",
+        "contribution": "Documentación oficial inmediata de las anomalías por sus compañeros",
+        "contribution_en": "Immediate official documentation of the anomalies by his companions"
+      },
+      {
+        "year": 2013,
+        "title": "Entrevista televisiva · desmentido del relato",
+        "contribution": "Negó la abducción y ofreció una explicación enteramente mundana",
+        "contribution_en": "He denied the abduction and offered an entirely mundane explanation"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Documentación oficial del Ejército de Chile y de la FACh (1977)",
+        "note": "Registro institucional contemporáneo al episodio.",
+        "note_en": "Institutional record contemporaneous with the episode."
+      },
+      {
+        "name": "Entrevista televisiva de Armando Valdés (2013)",
+        "note": "Desmentido posterior del propio protagonista.",
+        "note_en": "Later denial by the protagonist himself."
+      }
+    ]
+  },
+  {
+    "id": "bledsoe",
+    "name": "Chris Bledsoe",
+    "flag": "🇺🇸",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Contratista de construcción de Fayetteville, Carolina del Norte · caso investigado por MUFON con cinco testigos, evaluación psiquiátrica y polígrafo (2007)",
+    "credentials_en": "Construction contractor from Fayetteville, North Carolina · case investigated by MUFON with five witnesses, psychiatric evaluation and polygraph (2007)",
+    "bio_short": "Su caso de 2007 en el río Cape Fear es de los pocos donde una organización civil hizo el trabajo completo: MUFON entrevistó por separado a los cinco testigos, documentó una discrepancia de tiempo —él estimó veinte minutos de ausencia, sus compañeros reportaron entre tres y cuatro horas—, encargó una evaluación psiquiátrica que lo halló en su sano juicio y un polígrafo que arrojó indicios de engaño en algunas respuestas. Sobre ese episodio construyó después una carrera pública sostenida: un libro, un circuito de conferencias y el relato de contacto recurrente con orbes y con una entidad a la que llama «la Dama». Ese tramo posterior incluye afirmaciones de respaldo institucional —una supuesta investigación de la NASA durante ocho años— que este corpus buscó y no pudo verificar con ninguna fuente primaria nombrable.",
+    "bio_short_en": "His 2007 case on the Cape Fear River is one of the few where a civilian organization did the full job: MUFON interviewed the five witnesses separately, documented a time discrepancy —he estimated twenty minutes away, his companions reported three to four hours—, commissioned a psychiatric evaluation that found him of sound mind, and a polygraph that showed indications of deception on some answers. On that episode he later built a sustained public career: a book, a lecture circuit, and an account of recurring contact with orbs and with an entity he calls 'the Lady'. That later stretch includes claims of institutional backing —a purported eight-year NASA investigation— that this corpus searched for and could not verify against any nameable primary source.",
+    "works": [
+      {
+        "year": 2007,
+        "title": "Investigación de MUFON · cinco testigos entrevistados por separado",
+        "contribution": "Documentación civil de la discrepancia de tiempo y de los relatos concordantes",
+        "contribution_en": "Civilian documentation of the time discrepancy and the concordant accounts"
+      },
+      {
+        "year": 2008,
+        "title": "Evaluación psiquiátrica, polígrafo e hipnosis regresiva",
+        "contribution": "Batería de pruebas de resultado mixto: sano juicio, indicios de engaño en el polígrafo",
+        "contribution_en": "A battery of tests with mixed results: sound mind, indications of deception on the polygraph"
+      },
+      {
+        "year": 2023,
+        "title": "UFO of God",
+        "contribution": "Su relato en primera persona; núcleo del circuito público posterior",
+        "contribution_en": "His first-person account; the core of the later public circuit"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente de investigación de MUFON (2007–2008)",
+        "note": "Entrevistas separadas a los cinco testigos, evaluación psiquiátrica y polígrafo.",
+        "note_en": "Separate interviews with the five witnesses, psychiatric evaluation and polygraph."
+      },
+      {
+        "name": "Chris Bledsoe, 'UFO of God' (2023)",
+        "note": "Testimonio en primera persona; las afirmaciones de vínculo institucional que contiene no se verificaron.",
+        "note_en": "First-person testimony; the institutional-link claims it contains were not verified."
+      }
+    ]
+  },
+  {
+    "id": "schirmer",
+    "name": "Herbert Schirmer",
+    "flag": "🇺🇸",
+    "born": 1947,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Oficial de policía de Ashland, Nebraska · Caso 42 del informe del Comité Condon (Universidad de Colorado, 1968)",
+    "credentials_en": "Police officer in Ashland, Nebraska · Case 42 of the Condon Committee report (University of Colorado, 1968)",
+    "bio_short": "Es uno de los pocos experiencers cuyo relato fue examinado por un estudio universitario financiado por la Fuerza Aérea: el Comité Condon lo incorporó como Caso 42 y lo sometió a evaluación psicológica y a una sesión de hipnosis en Boulder. El propio informe —cuya conclusión general fue negativa para el fenómeno— no lo resolvió como fraude, sino que dejó constancia de que el testigo parecía creer lo que decía. El costo profesional fue real: Schirmer renunció a la jefatura de policía de Ashland en 1969 bajo la presión del caso. Su relato posterior, expandido en sucesivas hipnosis, es considerablemente más elaborado que el reporte original.",
+    "bio_short_en": "He is one of the few experiencers whose account was examined by a university study funded by the Air Force: the Condon Committee took him on as Case 42 and subjected him to psychological evaluation and a hypnosis session in Boulder. The report itself —whose overall conclusion was negative for the phenomenon— did not resolve him as a hoaxer, but recorded that the witness appeared to believe what he was saying. The professional cost was real: Schirmer resigned as Ashland's police chief in 1969 under the pressure of the case. His later account, expanded through successive hypnosis sessions, is considerably more elaborate than the original report.",
+    "works": [
+      {
+        "year": 1967,
+        "title": "Reporte de servicio de la madrugada del 3 de diciembre",
+        "contribution": "Registro contemporáneo, anterior a cualquier hipnosis",
+        "contribution_en": "Contemporaneous record, predating any hypnosis"
+      },
+      {
+        "year": 1968,
+        "title": "Caso 42 · informe del Comité Condon",
+        "contribution": "Evaluación psicológica y sesión de hipnosis en la Universidad de Colorado",
+        "contribution_en": "Psychological evaluation and hypnosis session at the University of Colorado"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Edward U. Condon (dir.), 'Scientific Study of Unidentified Flying Objects' (1968) · Caso 42",
+        "note": "Estudio universitario financiado por la USAF; conclusión general negativa.",
+        "note_en": "USAF-funded university study; overall negative conclusion."
+      },
+      {
+        "name": "Registros del Departamento de Policía de Ashland, Nebraska",
+        "note": "Reporte de servicio y renuncia posterior del oficial.",
+        "note_en": "Duty report and the officer's later resignation."
+      }
+    ]
+  },
+  {
+    "id": "vilas-boas",
+    "name": "Antônio Vilas-Boas",
+    "flag": "🇧🇷",
+    "born": 1934,
+    "death": 1991,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Agricultor y, más tarde, abogado · protagonista del primer caso de abducción con examen médico contemporáneo (Brasil, 1957)",
+    "credentials_en": "Farmer and, later, a lawyer · protagonist of the first abduction case with a contemporaneous medical examination (Brazil, 1957)",
+    "bio_short": "Su relato es cronológicamente anterior al de los Hill y a la existencia misma de la plantilla de abducción, lo que le da un peso que el resto de los casos tempranos no tiene: no había un molde cultural del cual copiar. Lo reportó al médico Olavo Fontes, que lo examinó y documentó lesiones cutáneas y síntomas compatibles con un cuadro de irradiación. Nunca cobró por el testimonio ni construyó una carrera sobre él: estudió Derecho, ejerció como abogado y evitó la exposición pública durante décadas. El contenido del relato —una interacción de tipo reproductivo a bordo— es también el que más lo expone a una lectura psicosexual.",
+    "bio_short_en": "His account is chronologically prior to the Hills' and to the very existence of the abduction template, which gives it weight the other early cases lack: there was no cultural mold to copy from. He reported it to physician Olavo Fontes, who examined him and documented skin lesions and symptoms consistent with radiation exposure. He never charged for the testimony nor built a career on it: he studied law, practiced as an attorney, and avoided public exposure for decades. The content of the account —a reproductive-type interaction onboard— is also what most exposes it to a psychosexual reading.",
+    "works": [
+      {
+        "year": 1957,
+        "title": "Relato original ante el Dr. Olavo Fontes",
+        "contribution": "Testimonio anterior a la existencia de la plantilla cultural de abducción",
+        "contribution_en": "Testimony predating the existence of the cultural abduction template"
+      },
+      {
+        "year": 1958,
+        "title": "Examen médico y documentación de lesiones",
+        "contribution": "Único caso temprano con evaluación clínica contemporánea al hecho",
+        "contribution_en": "The only early case with a clinical evaluation contemporaneous with the event"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Olavo Fontes · informe médico y correspondencia (1958)",
+        "note": "Evaluación clínica contemporánea, no retrospectiva.",
+        "note_en": "Clinical evaluation contemporaneous, not retrospective."
+      },
+      {
+        "name": "Expediente del caso en la ufología brasileña",
+        "note": "Documentación del seguimiento del testigo a lo largo de décadas.",
+        "note_en": "Documentation of decades-long follow-up with the witness."
+      }
+    ]
+  },
+  {
+    "id": "zanfretta",
+    "name": "Pier Fortunato Zanfretta",
+    "flag": "🇮🇹",
+    "born": 1952,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Vigilante nocturno de Torriglia (Génova) · el caso de contacto con certificación de los Carabinieri (Italia, 1978)",
+    "credentials_en": "Night security guard in Torriglia (Genoa) · the contact case certified by the Carabinieri (Italy, 1978)",
+    "bio_short": "Su caso tiene un rasgo que casi ningún otro relato de contacto ofrece: el encuentro fue reportado por radio en tiempo real, mientras ocurría, a la central de su empresa de seguridad. Los Carabinieri certificaron una traza física en el terreno, recogieron 52 testimonios concordantes y archivaron el expediente con una fiabilidad calificada de «buena». Esa base institucional es sólida. Lo que la erosiona es lo que vino después: bajo sucesivas sesiones de hipnosis a lo largo de años, el relato creció hasta incorporar múltiples encuentros y una narrativa cada vez más elaborada, un patrón de expansión que en el corpus opera sistemáticamente como señal de alerta.",
+    "bio_short_en": "His case has a feature almost no other contact account offers: the encounter was reported by radio in real time, as it was happening, to his security company's dispatch. The Carabinieri certified a physical ground trace, collected 52 concordant testimonies, and filed the case with a reliability rated 'good'. That institutional basis is solid. What erodes it is what came afterward: under successive hypnosis sessions over years, the account grew to incorporate multiple encounters and an increasingly elaborate narrative, an expansion pattern that operates systematically as a warning sign across the corpus.",
+    "works": [
+      {
+        "year": 1978,
+        "title": "Reporte por radio en tiempo real a la central",
+        "contribution": "Registro simultáneo al hecho, sin mediación de memoria ni hipnosis",
+        "contribution_en": "Record simultaneous with the event, unmediated by memory or hypnosis"
+      },
+      {
+        "year": 1978,
+        "title": "Expediente de los Carabinieri · fiabilidad 'buena'",
+        "contribution": "Traza física certificada y 52 testimonios concordantes",
+        "contribution_en": "Certified physical trace and 52 concordant testimonies"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente de los Carabinieri de Génova (1978)",
+        "note": "Certificación de traza física y calificación de fiabilidad.",
+        "note_en": "Certification of the physical trace and reliability rating."
+      },
+      {
+        "name": "Registros de la empresa de seguridad · comunicación radial",
+        "note": "Reporte simultáneo al evento.",
+        "note_en": "Report simultaneous with the event."
+      }
+    ]
+  },
+  {
+    "id": "napolitano",
+    "name": "Linda Napolitano",
+    "flag": "🇺🇸",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Residente del Lower East Side de Manhattan · caso central de 'Witnessed' (Budd Hopkins, 1996) y el más disputado de la ufología de abducción",
+    "credentials_en": "Lower East Side resident, Manhattan · the central case of 'Witnessed' (Budd Hopkins, 1996) and the most disputed in abduction ufology",
+    "bio_short": "Afirmó haber sido elevada por un haz de luz desde el piso doce de su edificio y llevada a una nave cerca del Puente de Brooklyn, en pleno Manhattan y en presencia —según el relato— de testigos que incluirían a un alto funcionario de Naciones Unidas. Budd Hopkins la convirtió en el caso estrella de su obra. Es también el caso donde la investigación crítica ha sido más devastadora: los testigos independientes nunca se materializaron de forma verificable, la cadena de correspondencia que los sustentaba fue cuestionada como fabricada, y varios investigadores del propio campo —no escépticos externos— concluyeron que el expediente no se sostiene. Se conserva en el directorio por su peso historiográfico, no por su solidez.",
+    "bio_short_en": "She claimed to have been lifted by a beam of light from the twelfth floor of her building and taken to a craft near the Brooklyn Bridge, in the middle of Manhattan and in the presence —according to the account— of witnesses said to include a senior United Nations official. Budd Hopkins made her the flagship case of his work. It is also the case where critical investigation has been most devastating: the independent witnesses never materialized verifiably, the chain of correspondence underpinning them was challenged as fabricated, and several investigators from within the field —not outside skeptics— concluded the file does not hold up. She is kept in the directory for her historiographic weight, not for her soundness.",
+    "works": [
+      {
+        "year": 1989,
+        "title": "Relato del episodio del Puente de Brooklyn",
+        "contribution": "Núcleo del caso; sin corroboración independiente verificable",
+        "contribution_en": "Core of the case; without verifiable independent corroboration"
+      },
+      {
+        "year": 1996,
+        "title": "Caso central de 'Witnessed' (Budd Hopkins)",
+        "contribution": "Publicación que lo convirtió en el caso de abducción más difundido de los noventa",
+        "contribution_en": "The publication that made it the most widely circulated abduction case of the 1990s"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Budd Hopkins, 'Witnessed' (1996)",
+        "note": "Exposición del caso desde la posición de su investigador principal.",
+        "note_en": "Presentation of the case from its lead investigator's position."
+      },
+      {
+        "name": "Investigación crítica del caso desde dentro del campo ufológico",
+        "note": "Cuestionamiento de los testigos y de la correspondencia que los sustentaba.",
+        "note_en": "Challenge to the witnesses and to the correspondence underpinning them."
+      }
+    ]
+  },
+  {
     "id": "strieber",
     "name": "Whitley Strieber",
     "flag": "🇺🇸",
     "born": 1945,
-    "section": "A",
-    "section_label": "Investigadores experiencer-teóricos",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
     "framework": "psychospiritual",
     "credentials": "Novelista bestseller + Cambridge education + 40 años documentación sistemática experiencias propias",
     "bio_short": "Su libro Communion (1987) introdujo la figura del 'gris' en la cultura de masas. Distingue con cuidado dos planos: las experiencias serían reales en lo fenomenológico, mientras que interpretarlas como 'extraterrestres' es la lectura más obvia, pero quizá no la correcta. En The Key relata un diálogo con una entidad que le habría transmitido conocimiento técnico que, asegura, él no podía poseer.",
@@ -537,7 +906,7 @@
         "contribution_en": "Co-authored with the late Anne Strieber — continuity of consciousness"
       }
     ],
-    "section_label_en": "Experiencer-theorist researchers",
+    "section_label_en": "Experiencers · abductees and contactees",
     "credentials_en": "Bestselling novelist + Cambridge education + 40 years of systematic documentation of his own experiences",
     "bio_short_en": "His book Communion (1987) introduced the figure of the 'gray' into mass culture. He carefully distinguishes two planes: the experiences would be real phenomenologically, while interpreting them as 'extraterrestrials' is the most obvious reading, but perhaps not the correct one. In The Key he recounts a dialogue with an entity that allegedly conveyed technical knowledge he says he could not have possessed.",
     "sources": [
@@ -550,6 +919,160 @@
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/WhitleyAnne3%20%28cropped%29%20Whitley%20Strieber.jpg?width=400",
     "photo_credit": "Wikimedia Commons",
     "photo_license": "CC-BY-SA"
+  },
+  {
+    "id": "wolski",
+    "name": "Jan Wolski",
+    "flag": "🇵🇱",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Granjero de Emilcin, Polonia · testigo del caso de contacto más documentado del bloque del Este (1978)",
+    "credentials_en": "Farmer from Emilcin, Poland · witness in the best-documented contact case from the Eastern Bloc (1978)",
+    "bio_short": "Tenía unos setenta años, era analfabeto en materia ufológica y vivía en la Polonia comunista de 1978, un contexto donde el relato no ofrecía ninguna ganancia posible: ni mercado editorial, ni circuito de conferencias, ni prensa dispuesta a pagarlo. Describió a dos seres de baja estatura y rostro verdoso que subieron a su carro tirado por caballos y lo condujeron a un objeto blanco «largo como un autobús», donde habría sido examinado. Vecinos reportaron haber visto el objeto y se documentaron trazas en el terreno. La ausencia total de móvil es el argumento más fuerte a su favor; la ausencia de cualquier verificación instrumental, el más fuerte en contra.",
+    "bio_short_en": "He was around seventy, ufologically illiterate, and living in communist Poland in 1978, a context in which the account offered no possible gain: no publishing market, no lecture circuit, no press willing to pay for it. He described two short beings with greenish faces who climbed onto his horse-drawn cart and led him to a white object 'long as a bus', where he was reportedly examined. Neighbors reported seeing the object and ground traces were documented. The total absence of motive is the strongest argument in his favor; the absence of any instrumental verification, the strongest against.",
+    "works": [
+      {
+        "year": 1978,
+        "title": "Declaración ante investigadores locales",
+        "contribution": "Relato tomado a los pocos días del hecho",
+        "contribution_en": "Account taken within days of the event"
+      },
+      {
+        "year": 1978,
+        "title": "Testimonios vecinales y trazas en el terreno",
+        "contribution": "Corroboración parcial independiente del testigo principal",
+        "contribution_en": "Partial corroboration independent of the main witness"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente del caso Emilcin · ufología polaca",
+        "note": "Documentación de campo del testimonio y de las trazas.",
+        "note_en": "Field documentation of the testimony and the ground traces."
+      },
+      {
+        "name": "Monumento conmemorativo de Emilcin (2005)",
+        "note": "Reconocimiento local público del caso.",
+        "note_en": "Public local recognition of the case."
+      }
+    ]
+  },
+  {
+    "id": "meng-zhaoguo",
+    "name": "Meng Zhaoguo",
+    "flag": "🇨🇳",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Leñador del campamento Bandera Roja, Wuchang (Heilongjiang) · el caso de contacto más documentado de China (1994)",
+    "credentials_en": "Logger at the Red Flag camp, Wuchang (Heilongjiang) · the best-documented contact case in China (1994)",
+    "bio_short": "Subió al monte Fénix creyendo que investigaba un helicóptero caído y describió después haber sido golpeado y, esa misma noche, haber tenido un encuentro íntimo con una figura femenina de gran estatura. El caso es excepcional por su procedencia: la ufología china de los años noventa operaba en un circuito casi sin contacto con la occidental, de modo que el relato no se explica fácilmente como copia de la plantilla estadounidense, y sin embargo reproduce varios de sus elementos. Fue examinado por investigadores chinos y sometido a polígrafo. Las marcas cutáneas que exhibía admiten explicaciones mundanas y ninguna verificación instrumental respalda el núcleo del relato.",
+    "bio_short_en": "He climbed Phoenix Mountain believing he was investigating a downed helicopter and afterward described being struck and, that same night, having an intimate encounter with a tall female figure. The case is exceptional for its provenance: 1990s Chinese ufology operated in a circuit almost disconnected from the Western one, so the account is not easily explained as a copy of the American template, and yet it reproduces several of its elements. He was examined by Chinese researchers and given a polygraph. The skin marks he displayed admit mundane explanations, and no instrumental verification supports the core of the account.",
+    "works": [
+      {
+        "year": 1994,
+        "title": "Relato ante investigadores chinos",
+        "contribution": "Testimonio surgido fuera del circuito ufológico occidental",
+        "contribution_en": "Testimony arising outside the Western ufological circuit"
+      },
+      {
+        "year": 1994,
+        "title": "Examen físico y polígrafo",
+        "contribution": "Evaluación aplicada al testigo tras el episodio",
+        "contribution_en": "Evaluation applied to the witness after the episode"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente del caso en la ufología china",
+        "note": "Documentación del testimonio y de los exámenes aplicados.",
+        "note_en": "Documentation of the testimony and the examinations applied."
+      },
+      {
+        "name": "Cobertura de prensa china del caso Meng Zhaoguo",
+        "note": "Difusión del caso dentro de China.",
+        "note_en": "Circulation of the case within China."
+      }
+    ]
+  },
+  {
+    "id": "bianchi",
+    "name": "Karim Bianchi",
+    "flag": "🇨🇱",
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Senador de la República de Chile por Magallanes (independiente) · abogado · el cargo público de mayor rango en el corpus que declara un episodio de abducción propio",
+    "credentials_en": "Senator of the Republic of Chile for Magallanes (independent) · lawyer · the highest-ranking public office holder in the corpus to report an abduction episode of his own",
+    "bio_short": "Reveló en mayo de 2024, en una entrevista televisiva, que en 2012 —doce años antes y siendo ya figura pública regional— conducía de Puerto Natales a Punta Arenas cuando una luz giratoria le apagó el auto y el teléfono, y que reapareció unos doscientos kilómetros más adelante en la misma ruta sin memoria del trayecto. Lo relevante del caso no es la evidencia, que es nula: es el costo. Bianchi hizo la declaración ocupando un escaño en el Senado, recibió burla pública sostenida y no se retractó, respondiendo únicamente que lamentaba «la violencia que descarga la gente en las redes sociales». Es un caso de testimonio con costo político verificable y respaldo material inexistente.",
+    "bio_short_en": "In May 2024 he revealed on a television interview that in 2012 —twelve years earlier, and already a regional public figure— he was driving from Puerto Natales to Punta Arenas when a rotating light shut down his car and his phone, and that he reappeared some two hundred kilometers further along the same road with no memory of the journey. What matters about the case is not the evidence, which is nil: it is the cost. Bianchi made the statement while holding a Senate seat, received sustained public mockery, and did not retract, responding only that he regretted 'the violence people unload on social media'.",
+    "works": [
+      {
+        "year": 2024,
+        "title": "Entrevista televisiva · revelación del episodio de 2012",
+        "contribution": "Declaración pública desde un escaño del Senado, doce años después del hecho",
+        "contribution_en": "Public statement from a Senate seat, twelve years after the event"
+      },
+      {
+        "year": 2024,
+        "title": "Respuesta pública a la burla mediática",
+        "contribution": "Sostuvo el relato sin retractarse pese al costo político",
+        "contribution_en": "He sustained the account without retracting despite the political cost"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Entrevista en 'Not News' (Vía X, mayo 2024)",
+        "note": "Fuente primaria de la declaración del senador.",
+        "note_en": "Primary source of the senator's statement."
+      },
+      {
+        "name": "Cobertura de prensa chilena (BioBioChile, La Prensa Austral, 24 Horas)",
+        "note": "Registro de la repercusión pública y de su respuesta.",
+        "note_en": "Record of the public reaction and of his response."
+      }
+    ]
+  },
+  {
+    "id": "schneider",
+    "name": "Philip Schneider",
+    "flag": "🇺🇸",
+    "born": 1947,
+    "death": 1996,
+    "section": "F",
+    "section_label": "Experiencers · abducidos y contactados",
+    "section_label_en": "Experiencers · abductees and contactees",
+    "credentials": "Se presentaba como ingeniero geólogo y estructural en proyectos clasificados · origen del relato moderno de la base subterránea de Dulce (conferencias 1995–96)",
+    "credentials_en": "Presented himself as a geological and structural engineer on classified projects · origin of the modern Dulce underground base narrative (1995–96 lectures)",
+    "bio_short": "Afirmó en una serie de conferencias públicas haber sobrevivido en 1979 a un tiroteo contra seres no humanos en una base subterránea bajo Dulce, Nuevo México, con unos sesenta muertos, y exhibía cicatrices como prueba. Nada sustancial de su relato pudo verificarse: no hay registro confirmado de sus empleos, contratos ni autorizaciones de seguridad, ni documentación primaria de la base o del incidente. El mito de Dulce, además, es anterior a él —nace de la campaña de desinformación dirigida contra Paul Bennewitz en los años ochenta—, lo que sugiere que edificó sobre una leyenda preexistente. Figura en el directorio como el extremo no verificable del espectro: su relato es el caso de estudio de cómo un testimonio sin ningún anclaje documental se instala igual en la cultura.",
+    "bio_short_en": "In a series of public lectures he claimed to have survived a 1979 firefight against non-human beings in an underground base beneath Dulce, New Mexico, with some sixty dead, and displayed scars as proof. Nothing substantial in his account could be verified: there is no confirmed record of his jobs, contracts, or security clearances, nor primary documentation of the base or the incident. The Dulce myth, moreover, predates him —it originates in the disinformation campaign directed at Paul Bennewitz in the 1980s— suggesting he built on a pre-existing legend. He appears in the directory as the unverifiable end of the spectrum: his account is the case study in how a testimony with no documentary anchor installs itself in the culture anyway.",
+    "works": [
+      {
+        "year": 1995,
+        "title": "Ciclo de conferencias públicas (1995–96)",
+        "contribution": "Única fuente del relato; sin documentación primaria que lo respalde",
+        "contribution_en": "The sole source of the account; with no primary documentation backing it"
+      },
+      {
+        "year": 1996,
+        "title": "Circunstancias de su muerte",
+        "contribution": "Hallado muerto en enero de 1996; suicidio oficial, con inconsistencias señaladas",
+        "contribution_en": "Found dead in January 1996; officially a suicide, with inconsistencies noted"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Grabaciones de las conferencias de Philip Schneider (1995–96)",
+        "note": "Fuente primaria del relato, no corroborada de forma independiente.",
+        "note_en": "Primary source of the account, not independently corroborated."
+      },
+      {
+        "name": "Expediente de la campaña de desinformación contra Paul Bennewitz",
+        "note": "Origen documentado del mito de Dulce, anterior a Schneider.",
+        "note_en": "Documented origin of the Dulce myth, predating Schneider."
+      }
+    ]
   },
   {
     "id": "loeb",

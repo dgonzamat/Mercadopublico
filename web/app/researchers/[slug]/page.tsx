@@ -55,7 +55,7 @@ export async function ResearcherDetailPage({
     : "";
   const relatedCases = casesForResearcher(r.id);
 
-  // Orden secuencial = mismo del índice (secciones A–E, estable dentro de cada una).
+  // Orden secuencial = mismo del índice (secciones A–F, estable dentro de cada una).
   const ordered = [...researchers].sort((a, b) =>
     a.section.localeCompare(b.section),
   );
@@ -242,8 +242,8 @@ export async function ResearcherDetailPage({
 
       <Caption className="border-t border-border pt-6">
         <T
-          es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-E)."
-          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E)."
+          es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-F)."
+          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-F)."
           locale={locale}
         />
       </Caption>

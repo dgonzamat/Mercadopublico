@@ -16,7 +16,7 @@
   "tier": "B",
   "category": "contactee",
   "epistemicStatus": "documented",
-  "mundanoType": "fraude",
+  "mundanoType": "misid",
   "probability": 8,
   "patterns": [
     "8c",

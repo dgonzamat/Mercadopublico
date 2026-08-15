@@ -51,7 +51,7 @@ const patternIds = new Set(read("data/patterns.json").map((p) => p.id));
 
 // ─── 2. researchers.json ─────────────────────────────────────────────────
 
-const SECTIONS = new Set(["A", "B", "C", "D", "E"]);
+const SECTIONS = new Set(["A", "B", "C", "D", "E", "F"]);
 const researchers = read("data/researchers.json");
 const seenResearcherIds = new Set();
 
@@ -67,7 +67,7 @@ researchers.forEach((r, i) => {
     err(w, `flag debe ser un emoji de bandera de país (indicadores regionales): "${r.flag}"`);
   if (r.born !== undefined && !isNum(r.born)) err(w, "born debe ser number");
   if (r.death !== undefined && !isNum(r.death)) err(w, "death debe ser number");
-  if (!SECTIONS.has(r.section)) err(w, `section inválida "${r.section}" (A–E)`);
+  if (!SECTIONS.has(r.section)) err(w, `section inválida "${r.section}" (A–F)`);
   if (!isStr(r.section_label)) err(w, "section_label obligatorio (string)");
   if (!isStr(r.section_label_en)) err(w, "section_label_en obligatorio (string)");
   if (!isStr(r.credentials)) err(w, "credentials obligatorio (string)");
