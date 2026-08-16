@@ -172,3 +172,10 @@ a {
 [data-nomatch] {
   display: none !important;
 }
+
+/* Truncado por sección (/researchers): el JS marca los ítems que sobran del
+   corte y esta regla los oculta. Siguen en el HTML —el buscador del sitio y
+   los crawlers los ven— y basta quitar el atributo para revelarlos. */
+[data-over] {
+  display: none !important;
+}
