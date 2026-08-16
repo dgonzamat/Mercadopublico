@@ -166,6 +166,23 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   bianchi: ["bianchi-magallanes-2012"],
   valdes: ["valdes-1977"],
   schneider: ["dulce-schneider-1979"],
+  hickson: ["pascagoula-1973"],
+  parker: ["pascagoula-1973"],
+  zamora: ["socorro-1964"],
+  masse: ["valensole-1965"],
+  dewilde: ["quarouble-1954"],
+  heinonen: ["imjarvi-1970"],
+  viljo: ["imjarvi-1970"],
+  shrum: ["cisco-grove-1964"],
+  "kathleen-may": ["flatwoods-1952"],
+  "philip-spencer": ["ilkley-moor-1987"],
+  "gonzalez-petare": ["petare-1954"],
+  "ponce-petare": ["petare-1954"],
+  "francois-delpeuch": ["cussac-1967"],
+  "anne-marie-delpeuch": ["cussac-1967"],
+  kawano: ["kofu-japan-1975"],
+  yamahata: ["kofu-japan-1975"],
+  trejo: ["talavera-la-real-1976"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */

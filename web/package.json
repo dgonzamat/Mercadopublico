@@ -22,7 +22,8 @@
     "validate-schema": "node scripts/validate-schema.mjs",
     "lint": "eslint .",
     "wayback": "node scripts/suggest-wayback.mjs",
-    "wayback:apply": "node scripts/suggest-wayback.mjs --apply"
+    "wayback:apply": "node scripts/suggest-wayback.mjs --apply",
+    "qa:interaction": "node scripts/qa-interaction.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

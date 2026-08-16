@@ -15,7 +15,7 @@ export const metadata = {
   ...pageMeta({
     title: "Actors of the UAP disclosure ecosystem",
     description:
-      "Researchers, whistleblowers, politicians, journalists and ontological-religious figures who sustain contemporary UAP disclosure — plus a directory of abductees and contactees.",
+      "Researchers, whistleblowers, politicians, journalists and ontological-religious figures who sustain contemporary UAP disclosure — plus a directory of abductees, contactees and entity witnesses.",
     path: "/researchers/",
   }),
   alternates: {
@@ -67,11 +67,24 @@ const sections: SectionDef[] = [
     // haberlo vivido. Sin ese encuadre, listar a un experiencer junto a un
     // investigador de la sección A se lee como aval del relato.
     noteEs:
-      "A diferencia de las secciones anteriores, acá el sujeto no es quien investiga el fenómeno sino quien dice haberlo vivido. Se ordenan por el peso documental del expediente asociado —testigos, evaluación institucional, costo asumido—, no por la verosimilitud del relato: la sección incluye casos que su propio protagonista terminó desmintiendo.",
+      "A diferencia de las secciones anteriores, acá el sujeto no es quien investiga el fenómeno sino quien dice haberlo vivido: abducidos, contactados y quienes solo vieron una entidad de cerca, todos en un mismo grupo. Se ordenan por el peso documental del expediente asociado —testigos, evaluación institucional, costo asumido—, no por la verosimilitud del relato: la sección incluye casos que su propio protagonista terminó desmintiendo.",
     noteEn:
-      "Unlike the previous sections, here the subject is not the one investigating the phenomenon but the one who says they lived it. They are ordered by the documentary weight of the associated file —witnesses, institutional evaluation, cost incurred—, not by the plausibility of the account: the section includes cases their own protagonist ended up denying.",
+      "Unlike the previous sections, here the subject is not the one investigating the phenomenon but the one who says they lived it: abductees, contactees, and those who merely saw an entity up close, all in one group. They are ordered by the documentary weight of the associated file —witnesses, institutional evaluation, cost incurred—, not by the plausibility of the account: the section includes cases their own protagonist ended up denying.",
   },
 ];
+
+/**
+ * Clave de búsqueda del actor, normalizada en el SERVIDOR (minúsculas, sin
+ * diacríticos) para que el filtro del cliente compare sin transformar nada:
+ * así "antonio" encuentra "Antônio" y "valdes" encuentra "Valdés".
+ */
+function searchKey(...parts: string[]): string {
+  return parts
+    .join(" ")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "");
+}
 
 export default function ResearchersPage() {
   return <ResearchersView locale="en" />;
@@ -182,6 +195,10 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
                   <div
                     key={r.id}
                     data-region={regionOf(flagToCountry(r.flag)) ?? "otro"}
+                    data-search={searchKey(
+                      r.name,
+                      locale === "es" ? r.credentials : r.credentials_en,
+                    )}
                     className="contents"
                   >
                   <LocaleLink
