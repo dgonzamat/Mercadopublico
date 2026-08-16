@@ -83,6 +83,8 @@ researchers.forEach((r, i) => {
     r.works.forEach((wk, j) => {
       if (!isNum(wk.year)) err(`${w}.works[${j}]`, "year obligatorio (number)");
       if (!isStr(wk.title)) err(`${w}.works[${j}]`, "title obligatorio (string)");
+      if (wk.title_en !== undefined && !isStr(wk.title_en))
+        err(`${w}.works[${j}]`, "title_en debe ser string");
       if (!isStr(wk.contribution))
         err(`${w}.works[${j}]`, "contribution obligatorio (string)");
       if (!isStr(wk.contribution_en))

@@ -223,6 +223,11 @@ export interface Framework {
 export interface ResearcherWork {
   year: number;
   title: string;
+  // Par inglés del título. Ausente en las obras cuyo título es un nombre
+  // propio neutro (un libro: "Communion"), donde no hay nada que traducir.
+  // Obligatorio de facto cuando el título es DESCRIPTIVO ("Sesiones de
+  // hipnosis con…"), o el sitio inglés-primario sirve español crudo.
+  title_en?: string;
   contribution: string;
   contribution_en: string;
 }
@@ -240,7 +245,9 @@ export interface Researcher {
   flag: string;           // bandera de nacionalidad (emoji regional, p. ej. 🇦🇷)
   born?: number;
   death?: number;
-  section: "A" | "B" | "C" | "D" | "E";
+  // F = experiencers (abducidos/contactados): el sujeto del fenómeno, no un
+  // actor de disclosure. Mantener en sync con SECTIONS de validate-schema.mjs.
+  section: "A" | "B" | "C" | "D" | "E" | "F";
   section_label: string;
   section_label_en: string;
   credentials: string;

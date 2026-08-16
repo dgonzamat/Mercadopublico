@@ -523,12 +523,14 @@
       {
         "year": 1975,
         "title": "Denuncia de la cuadrilla ante el sheriff de Navajo County",
+        "title_en": "Crew's report to the Navajo County sheriff",
         "contribution": "Reporte emitido durante la desaparición, antes de conocer el desenlace",
         "contribution_en": "Report filed during the disappearance, before the outcome was known"
       },
       {
         "year": 1975,
         "title": "Exámenes de polígrafo a la cuadrilla",
+        "title_en": "Polygraph tests on the crew",
         "contribution": "Cinco de seis compañeros los superaron",
         "contribution_en": "Five of six crewmates passed them"
       },
@@ -541,7 +543,7 @@
     ],
     "sources": [
       {
-        "name": "Registros del Sheriff de Navajo County (Arizona, 1975)",
+        "name": "Navajo County Sheriff's Office (Arizona, 1975)",
         "note": "Denuncia contemporánea a la desaparición.",
         "note_en": "Report contemporaneous with the disappearance."
       },
@@ -550,7 +552,10 @@
         "note": "Testimonio en primera persona del protagonista.",
         "note_en": "First-person testimony from the protagonist."
       }
-    ]
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Travis%20Walton%202019%20%28cropped%29.jpg?width=400",
+    "photo_credit": "Wikimedia Commons",
+    "photo_license": "CC BY-SA"
   },
   {
     "id": "betty-hill",
@@ -569,18 +574,21 @@
       {
         "year": 1961,
         "title": "Notas y sueños manuscritos posteriores al incidente",
+        "title_en": "Handwritten notes and dreams following the incident",
         "contribution": "El registro más temprano del caso, anterior a cualquier hipnosis",
         "contribution_en": "The earliest record of the case, predating any hypnosis"
       },
       {
         "year": 1964,
         "title": "Sesiones de hipnosis con el Dr. Benjamin Simon",
+        "title_en": "Hypnosis sessions with Dr. Benjamin Simon",
         "contribution": "Recuperación del relato de abducción; el propio Simon lo leyó como fantasía compartida",
         "contribution_en": "Recovery of the abduction account; Simon himself read it as shared fantasy"
       },
       {
         "year": 1964,
         "title": "Mapa estelar dibujado bajo hipnosis",
+        "title_en": "Star map drawn under hypnosis",
         "contribution": "Base del análisis de correlación estelar de Marjorie Fish (1968)",
         "contribution_en": "Basis for Marjorie Fish's stellar correlation analysis (1968)"
       }
@@ -592,7 +600,7 @@
         "note_en": "First extensive publication of the case, with session transcripts."
       },
       {
-        "name": "Project Blue Book · registro del eco de radar de la base Pease",
+        "name": "Project Blue Book · Pease AFB (1961)",
         "note": "Correlación instrumental independiente del testimonio.",
         "note_en": "Instrumental correlation independent of the testimony."
       }
@@ -615,12 +623,14 @@
       {
         "year": 1962,
         "title": "Cuadro de ansiedad y derivación psiquiátrica",
+        "title_en": "Anxiety episode and psychiatric referral",
         "contribution": "Contexto clínico —no ufológico— en que emergió el relato",
         "contribution_en": "The clinical —not ufological— context in which the account emerged"
       },
       {
         "year": 1964,
         "title": "Sesiones de hipnosis con el Dr. Benjamin Simon",
+        "title_en": "Hypnosis sessions with Dr. Benjamin Simon",
         "contribution": "Su relato bajo hipnosis, registrado por separado del de Betty",
         "contribution_en": "His account under hypnosis, recorded separately from Betty's"
       }
@@ -632,7 +642,7 @@
         "note_en": "Session transcripts from both spouses."
       },
       {
-        "name": "Benjamin Simon · conclusión clínica del psiquiatra tratante",
+        "name": "Benjamin Simon (1964)",
         "note": "El profesional que condujo las sesiones no avaló la lectura literal.",
         "note_en": "The professional who ran the sessions did not endorse the literal reading."
       }
@@ -653,24 +663,26 @@
       {
         "year": 1977,
         "title": "Reporte del destacamento ante el regimiento",
+        "title_en": "The detachment's report to the regiment",
         "contribution": "Documentación oficial inmediata de las anomalías por sus compañeros",
         "contribution_en": "Immediate official documentation of the anomalies by his companions"
       },
       {
         "year": 2013,
         "title": "Entrevista televisiva · desmentido del relato",
+        "title_en": "Television interview · denial of the account",
         "contribution": "Negó la abducción y ofreció una explicación enteramente mundana",
         "contribution_en": "He denied the abduction and offered an entirely mundane explanation"
       }
     ],
     "sources": [
       {
-        "name": "Documentación oficial del Ejército de Chile y de la FACh (1977)",
+        "name": "Ejército de Chile · Fuerza Aérea de Chile (1977)",
         "note": "Registro institucional contemporáneo al episodio.",
         "note_en": "Institutional record contemporaneous with the episode."
       },
       {
-        "name": "Entrevista televisiva de Armando Valdés (2013)",
+        "name": "Armando Valdés (2013)",
         "note": "Desmentido posterior del propio protagonista.",
         "note_en": "Later denial by the protagonist himself."
       }
@@ -691,12 +703,14 @@
       {
         "year": 2007,
         "title": "Investigación de MUFON · cinco testigos entrevistados por separado",
+        "title_en": "MUFON investigation · five witnesses interviewed separately",
         "contribution": "Documentación civil de la discrepancia de tiempo y de los relatos concordantes",
         "contribution_en": "Civilian documentation of the time discrepancy and the concordant accounts"
       },
       {
         "year": 2008,
         "title": "Evaluación psiquiátrica, polígrafo e hipnosis regresiva",
+        "title_en": "Psychiatric evaluation, polygraph and regression hypnosis",
         "contribution": "Batería de pruebas de resultado mixto: sano juicio, indicios de engaño en el polígrafo",
         "contribution_en": "A battery of tests with mixed results: sound mind, indications of deception on the polygraph"
       },
@@ -709,7 +723,7 @@
     ],
     "sources": [
       {
-        "name": "Expediente de investigación de MUFON (2007–2008)",
+        "name": "MUFON (2007–2008)",
         "note": "Entrevistas separadas a los cinco testigos, evaluación psiquiátrica y polígrafo.",
         "note_en": "Separate interviews with the five witnesses, psychiatric evaluation and polygraph."
       },
@@ -736,24 +750,26 @@
       {
         "year": 1967,
         "title": "Reporte de servicio de la madrugada del 3 de diciembre",
+        "title_en": "Duty report from the early hours of 3 December",
         "contribution": "Registro contemporáneo, anterior a cualquier hipnosis",
         "contribution_en": "Contemporaneous record, predating any hypnosis"
       },
       {
         "year": 1968,
         "title": "Caso 42 · informe del Comité Condon",
+        "title_en": "Case 42 · Condon Committee report",
         "contribution": "Evaluación psicológica y sesión de hipnosis en la Universidad de Colorado",
         "contribution_en": "Psychological evaluation and hypnosis session at the University of Colorado"
       }
     ],
     "sources": [
       {
-        "name": "Edward U. Condon (dir.), 'Scientific Study of Unidentified Flying Objects' (1968) · Caso 42",
+        "name": "Edward U. Condon (dir.), 'Scientific Study of Unidentified Flying Objects' (1968) · Case 42",
         "note": "Estudio universitario financiado por la USAF; conclusión general negativa.",
         "note_en": "USAF-funded university study; overall negative conclusion."
       },
       {
-        "name": "Registros del Departamento de Policía de Ashland, Nebraska",
+        "name": "Ashland Police Department, Nebraska (1967)",
         "note": "Reporte de servicio y renuncia posterior del oficial.",
         "note_en": "Duty report and the officer's later resignation."
       }
@@ -776,28 +792,33 @@
       {
         "year": 1957,
         "title": "Relato original ante el Dr. Olavo Fontes",
+        "title_en": "Original account given to Dr. Olavo Fontes",
         "contribution": "Testimonio anterior a la existencia de la plantilla cultural de abducción",
         "contribution_en": "Testimony predating the existence of the cultural abduction template"
       },
       {
         "year": 1958,
         "title": "Examen médico y documentación de lesiones",
+        "title_en": "Medical examination and documentation of injuries",
         "contribution": "Único caso temprano con evaluación clínica contemporánea al hecho",
         "contribution_en": "The only early case with a clinical evaluation contemporaneous with the event"
       }
     ],
     "sources": [
       {
-        "name": "Olavo Fontes · informe médico y correspondencia (1958)",
+        "name": "Olavo Fontes (1958)",
         "note": "Evaluación clínica contemporánea, no retrospectiva.",
         "note_en": "Clinical evaluation contemporaneous, not retrospective."
       },
       {
-        "name": "Expediente del caso en la ufología brasileña",
+        "name": "Centro de Pesquisas Ufológicas · Brasil",
         "note": "Documentación del seguimiento del testigo a lo largo de décadas.",
         "note_en": "Documentation of decades-long follow-up with the witness."
       }
-    ]
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ant%C3%B4nio%20Vilas%20Boas.jpg?width=400",
+    "photo_credit": "Wikimedia Commons",
+    "photo_license": "CC BY-SA 4.0"
   },
   {
     "id": "zanfretta",
@@ -815,24 +836,26 @@
       {
         "year": 1978,
         "title": "Reporte por radio en tiempo real a la central",
+        "title_en": "Real-time radio report to dispatch",
         "contribution": "Registro simultáneo al hecho, sin mediación de memoria ni hipnosis",
         "contribution_en": "Record simultaneous with the event, unmediated by memory or hypnosis"
       },
       {
         "year": 1978,
         "title": "Expediente de los Carabinieri · fiabilidad 'buena'",
+        "title_en": "Carabinieri case file · reliability rated 'good'",
         "contribution": "Traza física certificada y 52 testimonios concordantes",
         "contribution_en": "Certified physical trace and 52 concordant testimonies"
       }
     ],
     "sources": [
       {
-        "name": "Expediente de los Carabinieri de Génova (1978)",
+        "name": "Carabinieri di Genova (1978)",
         "note": "Certificación de traza física y calificación de fiabilidad.",
         "note_en": "Certification of the physical trace and reliability rating."
       },
       {
-        "name": "Registros de la empresa de seguridad · comunicación radial",
+        "name": "Istituto Vigilanza Notturna · Genova (1978)",
         "note": "Reporte simultáneo al evento.",
         "note_en": "Report simultaneous with the event."
       }
@@ -853,12 +876,14 @@
       {
         "year": 1989,
         "title": "Relato del episodio del Puente de Brooklyn",
+        "title_en": "Account of the Brooklyn Bridge episode",
         "contribution": "Núcleo del caso; sin corroboración independiente verificable",
         "contribution_en": "Core of the case; without verifiable independent corroboration"
       },
       {
         "year": 1996,
         "title": "Caso central de 'Witnessed' (Budd Hopkins)",
+        "title_en": "Central case of 'Witnessed' (Budd Hopkins)",
         "contribution": "Publicación que lo convirtió en el caso de abducción más difundido de los noventa",
         "contribution_en": "The publication that made it the most widely circulated abduction case of the 1990s"
       }
@@ -870,7 +895,7 @@
         "note_en": "Presentation of the case from its lead investigator's position."
       },
       {
-        "name": "Investigación crítica del caso desde dentro del campo ufológico",
+        "name": "Carol Rainey · Budd Hopkins archive review",
         "note": "Cuestionamiento de los testigos y de la correspondencia que los sustentaba.",
         "note_en": "Challenge to the witnesses and to the correspondence underpinning them."
       }
@@ -935,24 +960,26 @@
       {
         "year": 1978,
         "title": "Declaración ante investigadores locales",
+        "title_en": "Statement given to local investigators",
         "contribution": "Relato tomado a los pocos días del hecho",
         "contribution_en": "Account taken within days of the event"
       },
       {
         "year": 1978,
         "title": "Testimonios vecinales y trazas en el terreno",
+        "title_en": "Neighbors' testimony and ground traces",
         "contribution": "Corroboración parcial independiente del testigo principal",
         "contribution_en": "Partial corroboration independent of the main witness"
       }
     ],
     "sources": [
       {
-        "name": "Expediente del caso Emilcin · ufología polaca",
+        "name": "Zbigniew Blania-Bolnar · Emilcin (1978)",
         "note": "Documentación de campo del testimonio y de las trazas.",
         "note_en": "Field documentation of the testimony and the ground traces."
       },
       {
-        "name": "Monumento conmemorativo de Emilcin (2005)",
+        "name": "Pomnik UFO w Emilcinie (2005)",
         "note": "Reconocimiento local público del caso.",
         "note_en": "Public local recognition of the case."
       }
@@ -973,24 +1000,26 @@
       {
         "year": 1994,
         "title": "Relato ante investigadores chinos",
+        "title_en": "Account given to Chinese investigators",
         "contribution": "Testimonio surgido fuera del circuito ufológico occidental",
         "contribution_en": "Testimony arising outside the Western ufological circuit"
       },
       {
         "year": 1994,
         "title": "Examen físico y polígrafo",
+        "title_en": "Physical examination and polygraph",
         "contribution": "Evaluación aplicada al testigo tras el episodio",
         "contribution_en": "Evaluation applied to the witness after the episode"
       }
     ],
     "sources": [
       {
-        "name": "Expediente del caso en la ufología china",
+        "name": "China UFO Research Association (1994)",
         "note": "Documentación del testimonio y de los exámenes aplicados.",
         "note_en": "Documentation of the testimony and the examinations applied."
       },
       {
-        "name": "Cobertura de prensa china del caso Meng Zhaoguo",
+        "name": "Prensa china · 孟照国事件 (1994)",
         "note": "Difusión del caso dentro de China.",
         "note_en": "Circulation of the case within China."
       }
@@ -1011,12 +1040,14 @@
       {
         "year": 2024,
         "title": "Entrevista televisiva · revelación del episodio de 2012",
+        "title_en": "Television interview · revealing the 2012 episode",
         "contribution": "Declaración pública desde un escaño del Senado, doce años después del hecho",
         "contribution_en": "Public statement from a Senate seat, twelve years after the event"
       },
       {
         "year": 2024,
         "title": "Respuesta pública a la burla mediática",
+        "title_en": "Public response to the media mockery",
         "contribution": "Sostuvo el relato sin retractarse pese al costo político",
         "contribution_en": "He sustained the account without retracting despite the political cost"
       }
@@ -1051,24 +1082,26 @@
       {
         "year": 1995,
         "title": "Ciclo de conferencias públicas (1995–96)",
+        "title_en": "Public lecture circuit (1995–96)",
         "contribution": "Única fuente del relato; sin documentación primaria que lo respalde",
         "contribution_en": "The sole source of the account; with no primary documentation backing it"
       },
       {
         "year": 1996,
         "title": "Circunstancias de su muerte",
+        "title_en": "The circumstances of his death",
         "contribution": "Hallado muerto en enero de 1996; suicidio oficial, con inconsistencias señaladas",
         "contribution_en": "Found dead in January 1996; officially a suicide, with inconsistencies noted"
       }
     ],
     "sources": [
       {
-        "name": "Grabaciones de las conferencias de Philip Schneider (1995–96)",
+        "name": "Philip Schneider · lectures (1995–96)",
         "note": "Fuente primaria del relato, no corroborada de forma independiente.",
         "note_en": "Primary source of the account, not independently corroborated."
       },
       {
-        "name": "Expediente de la campaña de desinformación contra Paul Bennewitz",
+        "name": "Paul Bennewitz · AFOSI disinformation file (1980s)",
         "note": "Origen documentado del mito de Dulce, anterior a Schneider.",
         "note_en": "Documented origin of the Dulce myth, predating Schneider."
       }
