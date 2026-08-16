@@ -6,6 +6,7 @@ import { researchers, getFramework } from "@/lib/data";
 import { researcherJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { casesForResearcher } from "@/lib/researcherCases";
+import { getEntityMorphology } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -55,7 +56,19 @@ export async function ResearcherDetailPage({
     : "";
   const relatedCases = casesForResearcher(r.id);
 
-  // Orden secuencial = mismo del índice (secciones A–E, estable dentro de cada una).
+  // Fisionomía que describió el testigo, derivada de sus casos. Solo en la
+  // sección F: ahí el actor ES quien reportó la entidad. En A–E el mismo
+  // bloque se leería como si el investigador la hubiera visto él.
+  const describedForms =
+    r.section === "F"
+      ? [
+          ...new Set(relatedCases.flatMap((c) => c.entityMorphology ?? [])),
+        ]
+          .map(getEntityMorphology)
+          .filter((f): f is NonNullable<typeof f> => Boolean(f))
+      : [];
+
+  // Orden secuencial = mismo del índice (secciones A–F, estable dentro de cada una).
   const ordered = [...researchers].sort((a, b) =>
     a.section.localeCompare(b.section),
   );
@@ -171,7 +184,9 @@ export async function ResearcherDetailPage({
                   {w.year}
                 </span>
                 <div className="space-y-1">
-                  <p className="text-sm font-medium text-text">{w.title}</p>
+                  <p className="text-sm font-medium text-text">
+                    <T es={w.title} en={w.title_en ?? w.title} locale={locale} />
+                  </p>
                   <p className="text-xs text-muted">
                     <T es={w.contribution} en={w.contribution_en} locale={locale} />
                   </p>
@@ -215,6 +230,34 @@ export async function ResearcherDetailPage({
         </section>
       )}
 
+      {describedForms.length > 0 && (
+        <section className="space-y-3 border-t border-border pt-10">
+          <Eyebrow>
+            <T
+              es={`Fisionomía que describió (${describedForms.length})`}
+              en={`Form they described (${describedForms.length})`}
+              locale={locale}
+            />
+          </Eyebrow>
+          <div className="flex flex-wrap gap-2">
+            {describedForms.map((f) => (
+              <LocaleLink
+                key={f.slug}
+                href={`/entities/${f.slug}`}
+                className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
+                style={{ borderColor: f.color }}
+                title={locale === "es" ? f.description : f.description_en}
+              >
+                <span className="font-mono">{f.slug}</span>
+                <span className="ml-2">
+                  <T es={f.name} en={f.name_en} locale={locale} />
+                </span>
+              </LocaleLink>
+            ))}
+          </div>
+        </section>
+      )}
+
       {relatedCases.length > 0 ? (
         <section className="space-y-3 border-t border-border pt-10">
           <Eyebrow>
@@ -242,8 +285,8 @@ export async function ResearcherDetailPage({
 
       <Caption className="border-t border-border pt-6">
         <T
-          es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-E)."
-          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-E)."
+          es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-F)."
+          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-F)."
           locale={locale}
         />
       </Caption>

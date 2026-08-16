@@ -15,7 +15,7 @@ export const metadata = {
   ...pageMeta({
     title: "Actors of the UAP disclosure ecosystem",
     description:
-      "Researchers, whistleblowers, politicians, journalists and ontological-religious figures who sustain contemporary UAP disclosure.",
+      "Researchers, whistleblowers, politicians, journalists and ontological-religious figures who sustain contemporary UAP disclosure — plus a directory of abductees and contactees.",
     path: "/researchers/",
   }),
   alternates: {
@@ -24,7 +24,16 @@ export const metadata = {
   },
 };
 
-const sections = [
+type SectionDef = {
+  code: string;
+  es: string;
+  en: string;
+  /** Nota editorial opcional bajo el título (solo la usa F). */
+  noteEs?: string;
+  noteEn?: string;
+};
+
+const sections: SectionDef[] = [
   {
     code: "A",
     es: "Los que estudian con instrumentos",
@@ -49,6 +58,18 @@ const sections = [
     code: "E",
     es: "Los que se preguntan qué clase de cosa es esto",
     en: "Those who ask what kind of thing this is",
+  },
+  {
+    code: "F",
+    es: "Los que dicen que les pasó a ellos",
+    en: "Those who say it happened to them",
+    // Única sección con nota: acá el sujeto no investiga el fenómeno, dice
+    // haberlo vivido. Sin ese encuadre, listar a un experiencer junto a un
+    // investigador de la sección A se lee como aval del relato.
+    noteEs:
+      "A diferencia de las secciones anteriores, acá el sujeto no es quien investiga el fenómeno sino quien dice haberlo vivido. Se ordenan por el peso documental del expediente asociado —testigos, evaluación institucional, costo asumido—, no por la verosimilitud del relato: la sección incluye casos que su propio protagonista terminó desmintiendo.",
+    noteEn:
+      "Unlike the previous sections, here the subject is not the one investigating the phenomenon but the one who says they lived it. They are ordered by the documentary weight of the associated file —witnesses, institutional evaluation, cost incurred—, not by the plausibility of the account: the section includes cases their own protagonist ended up denying.",
   },
 ];
 
@@ -93,24 +114,29 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
             es={
               <>
                 Investigadores, pilotos, congresistas, periodistas y filósofos
-                religiosos. Las {STATS.researchers} personas que sostienen el
-                discurso UAP sin convertirse en celebridades de feria. Todas en{" "}
+                religiosos, más quienes dicen haber vivido el fenómeno en carne
+                propia. {STATS.researchers} personas: las que sostienen el
+                discurso UAP en{" "}
                 <strong className="text-text">
                   riesgo personal, político o profesional
                 </strong>{" "}
-                — producen metodología, testimonio o acción, no opinión.
+                —producen metodología, testimonio o acción, no opinión— y, en la
+                sección F, los experiencers cuyo relato es la materia prima que
+                el resto examina.
               </>
             }
             en={
               <>
-                Researchers, pilots, congresspeople, journalists, and
-                religious philosophers. The {STATS.researchers} people who sustain the UAP
-                discourse without turning into carnival celebrities. All
-                taking{" "}
+                Researchers, pilots, congresspeople, journalists, and religious
+                philosophers, plus those who say they lived the phenomenon
+                themselves. {STATS.researchers} people: those who sustain the UAP
+                discourse at{" "}
                 <strong className="text-text">
                   personal, political, or professional risk
                 </strong>{" "}
-                — producing methodology, testimony, or action, not opinion.
+                —producing methodology, testimony, or action, not opinion— and,
+                in section F, the experiencers whose accounts are the raw
+                material the rest examine.
               </>
             }
           />
@@ -144,6 +170,11 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
               />
             </h2>
+            {section.noteEs && section.noteEn && (
+              <p className="mt-2 max-w-2xl border-l-2 border-border pl-3 text-xs leading-relaxed text-muted">
+                <T es={section.noteEs} en={section.noteEn} locale={locale} />
+              </p>
+            )}
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
               {sectionResearchers.map((r) => {
                 const fw = r.framework ? getFramework(r.framework) : undefined;

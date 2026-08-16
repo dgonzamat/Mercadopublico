@@ -22,6 +22,7 @@
     "8e",
     "8m"
   ],
+  "entityMorphology": ["gris"],
   "category": "incident",
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Betty and Barney Hill Incident roadside marker.jpg?width=800",

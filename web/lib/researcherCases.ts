@@ -149,6 +149,23 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
 
   // Japón — actor político / directiva UAP del Ministerio de Defensa
   kono: ["japan-jai-directive-2020"],
+
+  // F — experiencers: cada uno ancla a su propio expediente. A diferencia de
+  // A–E, acá la relación es 1:1 por construcción — el actor existe en el
+  // directorio PORQUE el caso existe, no al revés.
+  "betty-hill": ["hill-1961"],
+  "barney-hill": ["hill-1961"],
+  "vilas-boas": ["vilas-boas-1957"],
+  bledsoe: ["bledsoe-cape-fear-2007"],
+  walton: ["walton-1975"],
+  schirmer: ["schirmer-ashland-1967"],
+  wolski: ["emilcin-1978"],
+  zanfretta: ["zanfretta-1978"],
+  napolitano: ["napolitano-brooklyn-1989"],
+  "meng-zhaoguo": ["meng-zhaoguo-1994"],
+  bianchi: ["bianchi-magallanes-2012"],
+  valdes: ["valdes-1977"],
+  schneider: ["dulce-schneider-1979"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
