@@ -165,3 +165,10 @@ a {
 [data-group][data-empty] {
   display: none;
 }
+
+/* Búsqueda de texto libre (/researchers): el CSS no puede hacer substring, así
+   que el JS marca los ítems que no calzan y esta regla los oculta. Compone en
+   AND con los filtros de arriba porque aplica sobre el mismo wrapper. */
+[data-nomatch] {
+  display: none !important;
+}

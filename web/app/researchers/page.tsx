@@ -73,6 +73,19 @@ const sections: SectionDef[] = [
   },
 ];
 
+/**
+ * Clave de búsqueda del actor, normalizada en el SERVIDOR (minúsculas, sin
+ * diacríticos) para que el filtro del cliente compare sin transformar nada:
+ * así "antonio" encuentra "Antônio" y "valdes" encuentra "Valdés".
+ */
+function searchKey(...parts: string[]): string {
+  return parts
+    .join(" ")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "");
+}
+
 export default function ResearchersPage() {
   return <ResearchersView locale="en" />;
 }
@@ -182,6 +195,10 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
                   <div
                     key={r.id}
                     data-region={regionOf(flagToCountry(r.flag)) ?? "otro"}
+                    data-search={searchKey(
+                      r.name,
+                      locale === "es" ? r.credentials : r.credentials_en,
+                    )}
                     className="contents"
                   >
                   <LocaleLink
