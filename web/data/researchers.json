@@ -508,13 +508,93 @@
     ]
   },
   {
+    "id": "zamora",
+    "name": "Lonnie Zamora",
+    "flag": "🇺🇸",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Oficial de policía de Socorro, Nuevo México · testigo del caso que Project Blue Book clasificó formalmente como «Unknown» (1964)",
+    "credentials_en": "Police officer in Socorro, New Mexico · witness in the case Project Blue Book formally classified as 'Unknown' (1964)",
+    "bio_short": "Interrumpió una persecución de tráfico para investigar un rugido y una llama, y encontró un objeto ovoide posado sobre patas con dos figuras pequeñas vestidas de blanco junto a él; una pareció sobresaltarse al verlo. Es el testigo individual más sólido del corpus en términos institucionales: un policía en servicio, sin historial de fabulación, cuyo relato quedó anclado por marcas de aterrizaje y vegetación quemada registradas por una segunda autoridad. Project Blue Book —que casi siempre encontraba una explicación— lo dejó como «Unknown», una de las pocas veces que lo hizo.",
+    "bio_short_en": "He broke off a traffic pursuit to investigate a roar and a flame, and found an egg-shaped object resting on legs with two small white-clad figures beside it; one appeared startled at the sight of him. He is the corpus's most institutionally solid single witness: an on-duty police officer with no history of confabulation, whose account was anchored by landing marks and scorched vegetation recorded by a second authority. Project Blue Book —which almost always found an explanation— left it as 'Unknown', one of the few times it did so.",
+    "works": [
+      {
+        "year": 1964,
+        "title": "Reporte del oficial al Departamento de Policía de Socorro",
+        "title_en": "The officer's report to the Socorro Police Department",
+        "contribution": "Registro contemporáneo, tomado el mismo día del episodio",
+        "contribution_en": "Contemporaneous record, taken the same day as the episode"
+      },
+      {
+        "year": 1964,
+        "title": "Clasificación «Unknown» del Project Blue Book",
+        "title_en": "Project Blue Book's 'Unknown' classification",
+        "contribution": "Una de las pocas veces que el programa de la USAF cerró un caso sin explicación",
+        "contribution_en": "One of the few times the USAF program closed a case with no explanation"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Project Blue Book · Socorro (1964)",
+        "note": "Clasificación oficial «Unknown» y peritaje de las trazas.",
+        "note_en": "Official 'Unknown' classification and examination of the ground traces."
+      },
+      {
+        "name": "Socorro Police Department (1964)",
+        "note": "Reporte del oficial en servicio.",
+        "note_en": "The on-duty officer's report."
+      }
+    ]
+  },
+  {
+    "id": "masse",
+    "name": "Maurice Masse",
+    "flag": "🇫🇷",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Agricultor de lavanda en Valensole, Alpes de Alta Provenza · testigo del encuentro cercano con trazas mejor documentado de Francia (1965)",
+    "credentials_en": "Lavender farmer in Valensole, Alpes-de-Haute-Provence · witness in France's best-documented close encounter with ground traces (1965)",
+    "bio_short": "Trabajaba su campo al amanecer cuando encontró un objeto ovoide posado sobre patas y dos figuras de poco más de un metro, que describió al principio como «dos niños pequeños» por su estatura. Una de ellas lo apuntó con un dispositivo cilíndrico y quedó paralizado sin perder la conciencia: siguió viendo, pero no pudo moverse. Su caso reúne cuatro elementos que rara vez coinciden —entidades reportadas, efecto físico inmediato sobre el testigo, rastro material persistente documentado por la gendarmería en tiempo real, y categorización oficial de no identificado—, y los efectos físicos le duraron meses.",
+    "bio_short_en": "He was working his field at dawn when he came upon an egg-shaped object resting on legs and two figures little over a meter tall, which he first described as 'two small children' because of their height. One of them pointed a cylindrical device at him and he was paralyzed without losing consciousness: he could still see, but could not move. His case combines four elements that rarely coincide —reported entities, an immediate physical effect on the witness, a persistent material trace documented by the gendarmerie in real time, and an official unidentified classification— and the physical effects lasted him months.",
+    "works": [
+      {
+        "year": 1965,
+        "title": "Denuncia ante la Gendarmería de Valensole",
+        "title_en": "Report to the Valensole gendarmerie",
+        "contribution": "Peritaje de las marcas geométricas en el suelo el mismo día",
+        "contribution_en": "Same-day examination of the geometric marks on the ground"
+      },
+      {
+        "year": 1965,
+        "title": "Efectos físicos documentados sobre el testigo",
+        "title_en": "Documented physical effects on the witness",
+        "contribution": "Somnolencia y alteraciones que se prolongaron durante meses",
+        "contribution_en": "Drowsiness and disturbances that persisted for months"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Gendarmerie Nationale · Valensole (1965)",
+        "note": "Constancia de las trazas geométricas y del estado del testigo.",
+        "note_en": "Record of the geometric traces and of the witness's condition."
+      },
+      {
+        "name": "GEPAN / CNES",
+        "note": "La agencia oficial francesa mantuvo el caso como no identificado.",
+        "note_en": "The French official agency kept the case as unidentified."
+      }
+    ]
+  },
+  {
     "id": "walton",
     "name": "Travis Walton",
     "flag": "🇺🇸",
     "born": 1953,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Leñador de una cuadrilla forestal de Arizona · el caso de desaparición con más testigos convergentes y polígrafos del corpus (1975)",
     "credentials_en": "Logger on an Arizona forestry crew · the disappearance case with the most convergent witnesses and polygraphs in the corpus (1975)",
     "bio_short": "Su caso es el que mejor resiste la objeción estándar contra las abducciones —«un solo testigo, sin corroboración»—: seis compañeros de cuadrilla reportaron el hecho al sheriff mientras Walton seguía desaparecido, es decir, antes de conocer el desenlace y en un momento en que la denuncia los exponía a una investigación por homicidio. Cinco de ellos pasaron el polígrafo. La objeción que persiste no es la falta de testigos sino el contexto: la cuadrilla tenía un contrato atrasado cuya penalización se suspendía por fuerza mayor, un móvil que los escépticos consideran suficiente y que la convergencia de los relatos no descarta del todo.",
@@ -564,8 +644,8 @@
     "born": 1919,
     "death": 2004,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Trabajadora social del estado de New Hampshire · protagonista, con Barney Hill, del primer caso de abducción que entró a la cultura de masas (1961)",
     "credentials_en": "New Hampshire state social worker · with Barney Hill, the protagonist of the first abduction case to enter mass culture (1961)",
     "bio_short": "Su relato de 1961 fijó la plantilla que el resto de la ufología de abducción usaría durante sesenta años: interrupción del viaje, tiempo perdido, examen a bordo, recuperación bajo hipnosis. Fue ella quien llevó el registro más temprano —sueños anotados a mano días después— y quien dibujó, bajo hipnosis, el mapa estelar que Marjorie Fish intentaría luego correlacionar con estrellas reales. El expediente conserva dos anclajes independientes de su testimonio y una objeción de fondo: la base Pease registró un eco de radar correlacionado que quedó en el Project Blue Book, pero el propio psiquiatra que condujo las sesiones, Benjamin Simon, concluyó que los relatos eran una fantasía compartida y no un recuerdo literal.",
@@ -613,8 +693,8 @@
     "born": 1922,
     "death": 1969,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Empleado del Servicio Postal de EE.UU. · activista de derechos civiles (NAACP) · co-protagonista del caso Hill (1961)",
     "credentials_en": "U.S. Postal Service employee · civil rights activist (NAACP) · co-protagonist of the Hill case (1961)",
     "bio_short": "Fue la mitad más reticente del matrimonio Hill: a diferencia de Betty, no buscó difusión, mostró angustia sostenida ante el episodio y llegó a las sesiones de hipnosis derivado por un cuadro de ansiedad, no por interés ufológico. Esa reticencia es parte del valor probatorio del caso —no hay móvil de lucro ni de notoriedad— y también parte de su debilidad, porque el material emergió en un contexto terapéutico donde el psiquiatra tratante, Benjamin Simon, atribuyó el contenido a la ansiedad y a la transferencia del relato de su esposa. Murió en 1969, a los 46 años, antes de que el caso alcanzara su forma canónica en la cultura popular.",
@@ -653,8 +733,8 @@
     "name": "Armando Valdés Garrido",
     "flag": "🇨🇱",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Cabo del Ejército de Chile · protagonista del caso de desaparición militar más citado de Latinoamérica (Pampa Lluscuma, 1977)",
     "credentials_en": "Corporal in the Chilean Army · protagonist of the most cited military disappearance case in Latin America (Pampa Lluscuma, 1977)",
     "bio_short": "Se apartó de su destacamento en el altiplano de Atacama para encarar dos objetos luminosos y reapareció unos quince minutos después en estado de alteración severa, con la barba crecida y el reloj adelantados ambos cinco días —anomalías que sus compañeros dijeron constatar en el momento. Es el único caso del corpus con una anomalía temporal atestiguada por observadores militares. Y es también el único cuyo protagonista terminó desmontándolo: tras su conversión evangélica, en declaraciones que culminaron en televisión en 2013, Valdés afirmó que nunca fue abducido y atribuyó todo a la amplificación de la prensa. Su desmentido no explica por sí solo la barba ni el reloj, de modo que el expediente queda partido entre el testimonio colectivo original y la negación de su figura central.",
@@ -689,12 +769,166 @@
     ]
   },
   {
+    "id": "trejo",
+    "name": "José María Trejo",
+    "flag": "🇪🇸",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Soldado de reemplazo en la Base Aérea de Talavera la Real, Badajoz · testigo del caso español con cadena de custodia institucional (1976)",
+    "credentials_en": "Conscript soldier at Talavera la Real Air Base, Badajoz · witness in the Spanish case with an institutional chain of custody (1976)",
+    "bio_short": "Cubría guardia nocturna en la zona de combustible de una base aérea cuando la secuencia empezó con interferencias de radio, un silbido agudo, un apagón parcial del perímetro y un perro militar intensamente alterado. En ese contexto describió a su izquierda una figura de cerca de tres metros, aparentemente formada por puntos de luz. Lo valioso del caso no es la figura sino el envoltorio: un relato de encuentro cercano envuelto en una cadena de custodia institucional real, con el episodio ocurriendo dentro de una instalación militar y quedando registrado por ella. Esa combinación es rara.",
+    "bio_short_en": "He was on night guard in the fuel area of an air base when the sequence began with radio interference, a high-pitched whistle, a partial perimeter blackout and an intensely agitated military dog. In that context he described a figure to his left nearly three meters tall, apparently formed of points of light. What is valuable about the case is not the figure but its wrapping: a close-encounter account enclosed in a real institutional chain of custody, with the episode occurring inside a military installation and being recorded by it. That combination is rare.",
+    "works": [
+      {
+        "year": 1976,
+        "title": "Testimonio ante el mando de la Base Aérea de Talavera la Real",
+        "title_en": "Testimony to the command of Talavera la Real Air Base",
+        "contribution": "Episodio registrado dentro de una instalación militar",
+        "contribution_en": "Episode recorded inside a military installation"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Ejército del Aire · Talavera la Real (1976)",
+        "note": "Cadena de custodia institucional del reporte.",
+        "note_en": "Institutional chain of custody for the report."
+      }
+    ]
+  },
+  {
+    "id": "dewilde",
+    "name": "Marius Dewilde",
+    "flag": "🇫🇷",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Metalúrgico de Quarouble, departamento del Nord · uno de los casos detonantes de la oleada francesa de 1954",
+    "credentials_en": "Metalworker from Quarouble, Nord department · one of the trigger cases of the 1954 French wave",
+    "bio_short": "Salió de su casa de noche por los ladridos de su perro y distinguió, a seis o siete metros, una masa oscura posada sobre las vías del tren con dos figuras pequeñas moviéndose a su lado; al intentar acercarse, un haz verde lo dejó momentáneamente paralizado, incapaz de moverse o gritar. Su denuncia abrió uno de los primeros expedientes de la Gendarmerie Nationale con peritaje de trazas físicas — el linaje institucional que, décadas después, desembocaría en el GEPAN. El episodio ocurrió justo al inicio de la gran oleada francesa de 1954.",
+    "bio_short_en": "He stepped out of his house at night because of his dog's barking and made out, six or seven meters away, a dark mass resting on the railway tracks with two small figures moving beside it; when he tried to approach, a green beam left him momentarily paralyzed, unable to move or shout. His report opened one of the first Gendarmerie Nationale files with a physical-trace examination — the institutional lineage that, decades later, would lead to GEPAN. The episode occurred right at the start of the great French wave of 1954.",
+    "works": [
+      {
+        "year": 1954,
+        "title": "Denuncia ante la Gendarmerie Nationale",
+        "title_en": "Report to the Gendarmerie Nationale",
+        "contribution": "Uno de los primeros expedientes franceses con peritaje de trazas",
+        "contribution_en": "One of the first French files with a trace examination"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Gendarmerie Nationale · Quarouble (1954)",
+        "note": "Expediente con peritaje de las marcas sobre las vías.",
+        "note_en": "File with an examination of the marks on the tracks."
+      }
+    ]
+  },
+  {
+    "id": "heinonen",
+    "name": "Aarno Heinonen",
+    "flag": "🇫🇮",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Leñador y esquiador de competición, sur de Finlandia · uno de los dos testigos del encuentro de Imjärvi (1970)",
+    "credentials_en": "Logger and competitive skier, southern Finland · one of the two witnesses in the Imjärvi encounter (1970)",
+    "bio_short": "Esquiaba con un compañero por un bosque nevado cuando ambos se detuvieron en un claro al oír un zumbido: describieron un objeto de unos tres metros envuelto en niebla rojiza, del que bajó un haz de luz intensa con una figura pequeña dentro, de brazos delgados, rostro céreo y nariz ganchuda. Lo que da peso al caso son los testigos: dos deportistas de competición, sobrios y sin interés en la notoriedad, cuyos relatos coincidieron. Heinonen reportó después efectos físicos persistentes, el elemento que más discusión ha generado sobre el caso.",
+    "bio_short_en": "He was skiing with a companion through a snowy forest when both stopped in a clearing at the sound of a hum: they described an object some three meters across wrapped in reddish mist, from which an intense beam of light descended with a small figure inside it, thin-limbed, waxy-faced and hook-nosed. What gives the case weight is the witnesses: two competitive athletes, sober and with no interest in notoriety, whose accounts matched. Heinonen later reported persistent physical effects, the element that has generated the most debate about the case.",
+    "works": [
+      {
+        "year": 1970,
+        "title": "Relato conjunto con Esko Viljo",
+        "title_en": "Joint account with Esko Viljo",
+        "contribution": "Dos testigos independientes y sobrios, con relatos coincidentes",
+        "contribution_en": "Two independent, sober witnesses with matching accounts"
+      },
+      {
+        "year": 1970,
+        "title": "Efectos físicos reportados tras el encuentro",
+        "title_en": "Physical effects reported after the encounter",
+        "contribution": "El elemento más discutido del expediente",
+        "contribution_en": "The most debated element of the file"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente de Imjärvi · ufología finlandesa",
+        "note": "Documentación del testimonio conjunto y de los efectos reportados.",
+        "note_en": "Documentation of the joint testimony and the reported effects."
+      }
+    ]
+  },
+  {
+    "id": "viljo",
+    "name": "Esko Viljo",
+    "flag": "🇫🇮",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Granjero y esquiador de competición, sur de Finlandia · segundo testigo del encuentro de Imjärvi (1970)",
+    "credentials_en": "Farmer and competitive skier, southern Finland · second witness in the Imjärvi encounter (1970)",
+    "bio_short": "Acompañaba a Aarno Heinonen la tarde en que ambos dijeron haber visto descender un objeto sobre un claro nevado y, dentro de un haz de luz, una figura pequeña de rostro céreo. Su valor probatorio es exactamente el de ser el segundo: sin él, Imjärvi sería un testimonio único más; con él, es uno de los pocos encuentros europeos con dos testigos independientes cuyos relatos coincidieron y que no construyeron nada sobre el episodio. Viljo reportó efectos físicos menos intensos que su compañero, una asimetría que el expediente registra en vez de suavizar.",
+    "bio_short_en": "He was with Aarno Heinonen the afternoon both said they saw an object descend over a snowy clearing and, inside a beam of light, a small waxy-faced figure. His evidentiary value is precisely that of being the second: without him, Imjärvi would be one more single testimony; with him, it is one of the few European encounters with two independent witnesses whose accounts matched and who built nothing on the episode. Viljo reported less intense physical effects than his companion, an asymmetry the file records rather than smoothing over.",
+    "works": [
+      {
+        "year": 1970,
+        "title": "Relato conjunto con Aarno Heinonen",
+        "title_en": "Joint account with Aarno Heinonen",
+        "contribution": "El segundo testimonio que saca al caso de la categoría de testigo único",
+        "contribution_en": "The second testimony that lifts the case out of the single-witness category"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente de Imjärvi · ufología finlandesa",
+        "note": "Documentación del testimonio conjunto.",
+        "note_en": "Documentation of the joint testimony."
+      }
+    ]
+  },
+  {
+    "id": "shrum",
+    "name": "Donald Shrum",
+    "flag": "🇺🇸",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Cazador con arco, Bosque Nacional de Tahoe, California · uno de los encuentros cercanos más detallados del expediente Blue Book (1964)",
+    "credentials_en": "Bow hunter, Tahoe National Forest, California · one of the most detailed close encounters in the Blue Book file (1964)",
+    "bio_short": "Separado de su grupo al caer la noche, se subió a un árbol para dormir seguro y encendió bengalas creyendo que una luz en zigzag era un helicóptero. Lo que siguió es de lo más extraño del expediente Blue Book: describió dos humanoides y una tercera figura de aspecto robótico con ojos rojos, que lo asediaron durante horas al pie del árbol y exhalaron un vapor que lo dejó inconsciente. Mantuvo un relato coherente durante décadas sin construir carrera sobre él. Es, a la vez, un caso de prueba de los límites del testimonio único: no hay corroboración externa.",
+    "bio_short_en": "Separated from his group at nightfall, he climbed a tree to sleep safely and lit flares believing a zigzagging light was a helicopter. What followed is among the strangest in the Blue Book file: he described two humanoids and a third robotic-looking figure with red eyes that besieged him for hours at the foot of the tree and exhaled a vapor that knocked him unconscious. He kept a coherent account for decades without building a career on it. It is, at the same time, a test case for the limits of single-witness testimony: there is no external corroboration.",
+    "works": [
+      {
+        "year": 1964,
+        "title": "Reporte al Project Blue Book",
+        "title_en": "Report to Project Blue Book",
+        "contribution": "Uno de los encuentros del tercer tipo más detallados del programa",
+        "contribution_en": "One of the program's most detailed third-kind encounters"
+      },
+      {
+        "year": 1964,
+        "title": "Relato sostenido sin variación durante décadas",
+        "title_en": "Account sustained without variation for decades",
+        "contribution": "Coherencia en el tiempo, sin explotación pública del episodio",
+        "contribution_en": "Consistency over time, with no public exploitation of the episode"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Project Blue Book · Cisco Grove (1964)",
+        "note": "Expediente del programa de la USAF.",
+        "note_en": "File from the USAF program."
+      }
+    ]
+  },
+  {
     "id": "bledsoe",
     "name": "Chris Bledsoe",
     "flag": "🇺🇸",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Contratista de construcción de Fayetteville, Carolina del Norte · caso investigado por MUFON con cinco testigos, evaluación psiquiátrica y polígrafo (2007)",
     "credentials_en": "Construction contractor from Fayetteville, North Carolina · case investigated by MUFON with five witnesses, psychiatric evaluation and polygraph (2007)",
     "bio_short": "Su caso de 2007 en el río Cape Fear es de los pocos donde una organización civil hizo el trabajo completo: MUFON entrevistó por separado a los cinco testigos, documentó una discrepancia de tiempo —él estimó veinte minutos de ausencia, sus compañeros reportaron entre tres y cuatro horas—, encargó una evaluación psiquiátrica que lo halló en su sano juicio y un polígrafo que arrojó indicios de engaño en algunas respuestas. Sobre ese episodio construyó después una carrera pública sostenida: un libro, un circuito de conferencias y el relato de contacto recurrente con orbes y con una entidad a la que llama «la Dama». Ese tramo posterior incluye afirmaciones de respaldo institucional —una supuesta investigación de la NASA durante ocho años— que este corpus buscó y no pudo verificar con ninguna fuente primaria nombrable.",
@@ -740,8 +974,8 @@
     "flag": "🇺🇸",
     "born": 1947,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Oficial de policía de Ashland, Nebraska · Caso 42 del informe del Comité Condon (Universidad de Colorado, 1968)",
     "credentials_en": "Police officer in Ashland, Nebraska · Case 42 of the Condon Committee report (University of Colorado, 1968)",
     "bio_short": "Es uno de los pocos experiencers cuyo relato fue examinado por un estudio universitario financiado por la Fuerza Aérea: el Comité Condon lo incorporó como Caso 42 y lo sometió a evaluación psicológica y a una sesión de hipnosis en Boulder. El propio informe —cuya conclusión general fue negativa para el fenómeno— no lo resolvió como fraude, sino que dejó constancia de que el testigo parecía creer lo que decía. El costo profesional fue real: Schirmer renunció a la jefatura de policía de Ashland en 1969 bajo la presión del caso. Su relato posterior, expandido en sucesivas hipnosis, es considerablemente más elaborado que el reporte original.",
@@ -776,12 +1010,40 @@
     ]
   },
   {
+    "id": "kathleen-may",
+    "name": "Kathleen May",
+    "flag": "🇺🇸",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Vecina de Flatwoods, condado de Braxton, Virginia Occidental · la adulta que encabezó la expedición del «Monstruo de Flatwoods» (1952)",
+    "credentials_en": "Resident of Flatwoods, Braxton County, West Virginia · the adult who led the 'Flatwoods Monster' expedition (1952)",
+    "bio_short": "Sus hijos llegaron a casa diciendo que algo brillante había caído en una colina cercana, y ella subió la ladera con ellos y otros cuatro vecinos a buscarlo. Cerca de la cima el grupo describió una figura enorme de ojos luminosos, junto a un olor penetrante y náuseas posteriores. Fue la voz adulta que sostuvo el relato ante la prensa, con el costo social que eso implicó en un pueblo pequeño. Es un caso de manual sobre cómo se construye una leyenda: la explicación natural más probada —una lechuza sobre una rama, malinterpretada en la oscuridad— resultó más instructiva que la criatura.",
+    "bio_short_en": "Her sons came home saying something bright had fallen on a nearby hill, and she climbed the slope with them and four other neighbors to look for it. Near the top the group described an enormous figure with luminous eyes, along with a penetrating smell and subsequent nausea. She was the adult voice who sustained the account before the press, with the social cost that carried in a small town. It is a textbook case of how a legend is built: the best-supported natural explanation —a barn owl on a branch, misread in the dark— proved more instructive than the creature.",
+    "works": [
+      {
+        "year": 1952,
+        "title": "Testimonio público de la expedición nocturna",
+        "title_en": "Public testimony about the night expedition",
+        "contribution": "La voz adulta del grupo de siete testigos",
+        "contribution_en": "The adult voice of the seven-witness group"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Cobertura de prensa de Braxton County (1952)",
+        "note": "Registro contemporáneo del testimonio del grupo.",
+        "note_en": "Contemporaneous record of the group's testimony."
+      }
+    ]
+  },
+  {
     "id": "hickson",
     "name": "Charles Hickson",
     "flag": "🇺🇸",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Capataz de astillero en Pascagoula, Misisipi · protagonista, con Calvin Parker, del caso de abducción con la evidencia de sinceridad mejor documentada del corpus (1973)",
     "credentials_en": "Shipyard foreman in Pascagoula, Mississippi · with Calvin Parker, the protagonist of the abduction case with the best-documented evidence of sincerity in the corpus (1973)",
     "bio_short": "Tenía 42 años y pescaba con un compañero de 19 cuando ambos dijeron haber sido inmovilizados y llevados al interior de un objeto por tres figuras de aspecto robótico. Lo que distingue al caso no es una prueba material —no hay ninguna— sino un experimento involuntario: el sheriff Fred Diamond, convencido de que mentían, los dejó solos en una sala con una grabadora oculta esperando sorprenderlos coordinando el engaño. La cinta registró lo contrario, dos hombres angustiados hablando del miedo y rezando. Hickson pasó el polígrafo, fue interrogado bajo hipnosis en una sesión que hubo que interrumpir por su angustia, y sostuvo la misma versión, sin variarla, hasta su muerte.",
@@ -821,8 +1083,8 @@
     "flag": "🇺🇸",
     "death": 2023,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Trabajador de astillero, 19 años al momento del episodio · co-protagonista del caso Pascagoula (1973)",
     "credentials_en": "Shipyard worker, 19 at the time of the episode · co-protagonist of the Pascagoula case (1973)",
     "bio_short": "Era el más joven de los dos y el que peor lo llevó: quedó paralizado por el terror durante el episodio, y en la grabación oculta del sheriff —el momento más citado de la cinta— se le oye a solas, sin público al que engañar, dando muestras de pánico genuino. Su trayectoria posterior es el reverso exacto de la del contactee profesional: durante décadas evitó hablar del caso, rehuyó la atención y no construyó ninguna carrera sobre él; recién mucho después ratificó el relato en libros y entrevistas, sin desdecirse. Murió en 2023. Ese silencio prolongado es, en términos probatorios, más elocuente que cualquiera de sus declaraciones.",
@@ -864,14 +1126,229 @@
     ]
   },
   {
+    "id": "kawano",
+    "name": "Masato Kawano",
+    "flag": "🇯🇵",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Escolar de Kōfu, prefectura de Yamanashi · primer encuentro cercano con ocupante (CE3) asiático del corpus (1975)",
+    "credentials_en": "Schoolchild from Kōfu, Yamanashi prefecture · the corpus's first Asian close encounter with an occupant (CE3), 1975",
+    "bio_short": "Tenía unos siete años y patinaba con un compañero cuando ambos dijeron ver dos objetos naranjas, uno de los cuales aterrizó en un viñedo detrás del conjunto habitacional. Describieron un ocupante bajo, de rostro oscuro y arrugado, que se acercó y tocó el hombro de uno de ellos, dejándolo paralizado de miedo. Es el primer CE3 asiático del corpus y aporta una morfología que faltaba en una cobertura de Asia dominada por luces y casos institucionales. Como todo testimonio infantil, su fuerza y su debilidad son la misma: no hay sofisticación cultural detrás, tampoco precisión.",
+    "bio_short_en": "He was about seven and skating with a friend when both said they saw two orange objects, one of which landed in a vineyard behind the housing complex. They described a short occupant with a dark, wrinkled face that approached and touched one of them on the shoulder, leaving him frozen with fear. It is the corpus's first Asian CE3 and contributes a morphology missing from an Asian coverage dominated by lights and institutional cases. As with all child testimony, its strength and its weakness are the same: there is no cultural sophistication behind it, and no precision either.",
+    "works": [
+      {
+        "year": 1975,
+        "title": "Relato conjunto con Katsuhiro Yamahata",
+        "title_en": "Joint account with Katsuhiro Yamahata",
+        "contribution": "Dos testigos infantiles con versiones coincidentes",
+        "contribution_en": "Two child witnesses with matching versions"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente del incidente de Kōfu · ufología japonesa",
+        "note": "Documentación del testimonio de ambos escolares.",
+        "note_en": "Documentation of both schoolchildren's testimony."
+      }
+    ]
+  },
+  {
+    "id": "yamahata",
+    "name": "Katsuhiro Yamahata",
+    "flag": "🇯🇵",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Escolar de Kōfu, prefectura de Yamanashi · segundo testigo del incidente de 1975",
+    "credentials_en": "Schoolchild from Kōfu, Yamanashi prefecture · second witness in the 1975 incident",
+    "bio_short": "Patinaba con Masato Kawano el atardecer en que ambos dijeron ver descender un objeto naranja sobre un viñedo y emerger de él un ocupante bajo de rostro arrugado. Su testimonio, tomado a la par del de su compañero, es lo que impide clasificar el episodio como fantasía individual de un niño de siete años; las versiones coincidieron en los elementos centrales. El caso se volvió un clásico de la ufología japonesa y llegó a la prensa nacional, que amplificó algunos rasgos del ocupante —los supuestos «colmillos»— más allá de lo que los niños describieron.",
+    "bio_short_en": "He was skating with Masato Kawano the evening both said they saw an orange object descend over a vineyard and a short, wrinkle-faced occupant emerge from it. His testimony, taken alongside his companion's, is what prevents classifying the episode as the individual fantasy of a seven-year-old; the versions matched on the central elements. The case became a classic of Japanese ufology and reached the national press, which amplified some of the occupant's features —the supposed 'fangs'— beyond what the children described.",
+    "works": [
+      {
+        "year": 1975,
+        "title": "Relato conjunto con Masato Kawano",
+        "title_en": "Joint account with Masato Kawano",
+        "contribution": "El segundo testimonio que saca al caso de la fantasía individual",
+        "contribution_en": "The second testimony that lifts the case out of individual fantasy"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente del incidente de Kōfu · ufología japonesa",
+        "note": "Documentación del testimonio conjunto.",
+        "note_en": "Documentation of the joint testimony."
+      }
+    ]
+  },
+  {
+    "id": "francois-delpeuch",
+    "name": "François Delpeuch",
+    "flag": "🇫🇷",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Pastor de trece años en Cussac, Cantal · testigo del encuentro que la gendarmería y luego el GEPAN reexaminaron (1967)",
+    "credentials_en": "Thirteen-year-old shepherd in Cussac, Cantal · witness in the encounter re-examined by the gendarmerie and later by GEPAN (1967)",
+    "bio_short": "Cuidaba el ganado familiar con su hermana menor cuando dijeron ver, al otro lado de un muro, una esfera plateada de unos dos metros y cuatro figuras completamente negras y lustrosas, que él comparó con la seda. Las figuras se elevaron y entraron en la esfera, que ascendió dejando un olor sulfuroso que la gendarmería consignó el mismo día. El caso pasó por dos filtros institucionales franceses: el expediente inmediato de la gendarmería y, más de una década después, el reexamen del GEPAN, la agencia oficial dependiente del CNES, con metodología deliberadamente crítica.",
+    "bio_short_en": "He was watching the family cattle with his younger sister when they said they saw, on the other side of a wall, a silver sphere some two meters across and four completely black, glossy figures, which he compared to silk. The figures rose and entered the sphere, which ascended leaving a sulfurous smell the gendarmerie recorded the same day. The case passed through two French institutional filters: the gendarmerie's immediate file and, more than a decade later, the re-examination by GEPAN, the official agency under CNES, with a deliberately critical methodology.",
+    "works": [
+      {
+        "year": 1967,
+        "title": "Declaración ante la gendarmería el mismo día",
+        "title_en": "Statement to the gendarmerie the same day",
+        "contribution": "Expediente inmediato, con constancia del olor sulfuroso",
+        "contribution_en": "Immediate file, recording the sulfurous smell"
+      },
+      {
+        "year": 1978,
+        "title": "Reexamen del caso por el GEPAN",
+        "title_en": "GEPAN's re-examination of the case",
+        "contribution": "La agencia oficial francesa lo revisó con metodología crítica",
+        "contribution_en": "The French official agency reviewed it with a critical methodology"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Gendarmerie Nationale · Cussac (1967)",
+        "note": "Expediente levantado el mismo día del episodio.",
+        "note_en": "File opened the same day as the episode."
+      },
+      {
+        "name": "GEPAN / CNES",
+        "note": "Reexamen posterior por la agencia oficial francesa.",
+        "note_en": "Later re-examination by the French official agency."
+      }
+    ]
+  },
+  {
+    "id": "anne-marie-delpeuch",
+    "name": "Anne-Marie Delpeuch",
+    "flag": "🇫🇷",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Pastora de nueve años en Cussac, Cantal · segunda testigo del encuentro de 1967",
+    "credentials_en": "Nine-year-old shepherd in Cussac, Cantal · second witness in the 1967 encounter",
+    "bio_short": "Tenía nueve años y cuidaba el ganado con su hermano mayor cuando ambos describieron la esfera plateada y las cuatro figuras negras. Su testimonio importa porque fue tomado por separado y coincidió, y porque el GEPAN, al reexaminar el caso más de una década después, evaluó explícitamente la fiabilidad del testimonio infantil en vez de descartarlo por la edad de los testigos. Ese tratamiento —tomar en serio a dos niños y a la vez someterlos a metodología crítica— es lo que distingue al expediente de Cussac de la mayoría de los relatos de contacto de su época.",
+    "bio_short_en": "She was nine and watching the cattle with her older brother when both described the silver sphere and the four black figures. Her testimony matters because it was taken separately and matched, and because GEPAN, re-examining the case more than a decade later, explicitly assessed the reliability of child testimony rather than dismissing it on account of the witnesses' age. That treatment —taking two children seriously while subjecting them to critical methodology— is what sets the Cussac file apart from most contact accounts of its era.",
+    "works": [
+      {
+        "year": 1967,
+        "title": "Declaración tomada por separado de la de su hermano",
+        "title_en": "Statement taken separately from her brother's",
+        "contribution": "Coincidencia entre dos relatos recogidos de forma independiente",
+        "contribution_en": "Agreement between two independently taken accounts"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Gendarmerie Nationale · Cussac (1967)",
+        "note": "Declaraciones tomadas por separado a ambos hermanos.",
+        "note_en": "Statements taken separately from both siblings."
+      }
+    ]
+  },
+  {
+    "id": "philip-spencer",
+    "name": "Philip Spencer",
+    "flag": "🇬🇧",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Ex agente de policía retirado en West Yorkshire · protagonista, bajo seudónimo protegido, del caso de Ilkley Moor (1987)",
+    "credentials_en": "Retired former police officer in West Yorkshire · protagonist, under a protected pseudonym, of the Ilkley Moor case (1987)",
+    "bio_short": "Los investigadores nunca publicaron su nombre real: la literatura lo conoce solo por el seudónimo con que lo protegieron. Ex policía retirado a la zona rural, cruzaba el páramo con su cámara cuando dijo encontrarse en el sendero con una figura verde oscura de poco más de un metro, cabeza desproporcionada y brazos largos, que le hizo un gesto y huyó; alcanzó a fotografiarla. Concentra casi todos los elementos del relato británico de entidad —entorno liminal, testigo de credibilidad ocupacional, fotografía ambigua, anomalías horarias—, y por eso mismo pesa como testimonio de alto perfil, no como evidencia que mueva nada de fondo.",
+    "bio_short_en": "The investigators never published his real name: the literature knows him only by the pseudonym they protected him with. A former police officer retired to the countryside, he was crossing the moor with his camera when he said he came upon a dark green figure a little over a meter tall on the path, with a disproportionate head and long arms, which gestured at him and fled; he managed to photograph it. It concentrates almost every element of the British entity account —liminal setting, a witness with occupational credibility, an ambiguous photograph, timing anomalies— and for that very reason it weighs as high-profile testimony, not as evidence that moves anything fundamental.",
+    "works": [
+      {
+        "year": 1987,
+        "title": "Fotografía tomada en el páramo",
+        "title_en": "Photograph taken on the moor",
+        "contribution": "Imagen ambigua, el único elemento material del caso",
+        "contribution_en": "An ambiguous image, the case's only material element"
+      },
+      {
+        "year": 1987,
+        "title": "Testimonio bajo seudónimo protegido",
+        "title_en": "Testimony under a protected pseudonym",
+        "contribution": "Identidad reservada por los investigadores; sin explotación pública del caso",
+        "contribution_en": "Identity withheld by the investigators; no public exploitation of the case"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Expediente de Ilkley Moor · ufología británica",
+        "note": "Documentación del testimonio y de la fotografía.",
+        "note_en": "Documentation of the testimony and the photograph."
+      }
+    ]
+  },
+  {
+    "id": "gonzalez-petare",
+    "name": "Gustavo González",
+    "flag": "🇻🇪",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Transportista de mercancías, Petare (este de Caracas) · protagonista del caso fundacional de la casuística venezolana (1954)",
+    "credentials_en": "Goods transport worker, Petare (east of Caracas) · protagonist of the founding case of Venezuelan ufology (1954)",
+    "bio_short": "Circulaba de madrugada repartiendo mercancías cuando la calle a oscuras se iluminó de golpe: describió un objeto esférico luminoso flotando a baja altura y, junto a él, figuras de aproximadamente un metro cubiertas de pelo oscuro, ojos brillantes y manos con garras. En un impulso intentó sujetar a una para capturarla y, según su relato, la criatura lo lanzó varios metros con una fuerza desproporcionada para su tamaño. Es uno de los encuentros con humanoides más citados de Latinoamérica y el caso fundacional venezolano, dentro de la oleada mundial de 1954 que instaló la figura del «ocupante».",
+    "bio_short_en": "He was driving before dawn delivering goods when the darkened street suddenly lit up: he described a luminous spherical object hovering at low altitude and, beside it, figures about a meter tall covered in dark hair, with bright eyes and clawed hands. On impulse he tried to grab one to capture it and, by his account, the creature threw him several meters with a strength disproportionate to its size. It is one of the most cited humanoid encounters in Latin America and Venezuela's founding case, within the worldwide 1954 wave that installed the figure of the 'occupant'.",
+    "works": [
+      {
+        "year": 1954,
+        "title": "Relato ante la policía y la prensa de Caracas",
+        "title_en": "Account given to the Caracas police and press",
+        "contribution": "Testimonio recogido en los días siguientes al episodio",
+        "contribution_en": "Testimony taken in the days following the episode"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Prensa de Caracas · caso Petare (1954)",
+        "note": "Registro contemporáneo del testimonio de ambos transportistas.",
+        "note_en": "Contemporaneous record of both transport workers' testimony."
+      }
+    ]
+  },
+  {
+    "id": "ponce-petare",
+    "name": "José Ponce",
+    "flag": "🇻🇪",
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Transportista de mercancías, Petare (este de Caracas) · segundo testigo del caso fundacional venezolano (1954)",
+    "credentials_en": "Goods transport worker, Petare (east of Caracas) · second witness in Venezuela's founding case (1954)",
+    "bio_short": "Acompañaba a Gustavo González la madrugada en que ambos dijeron encontrar un objeto luminoso bloqueando la calle y figuras peludas de aproximadamente un metro. Su función probatoria es la del segundo testigo: convierte un relato solitario y difícil de sostener —un hombre que dice haber forcejeado con una criatura— en un testimonio con corroboración inmediata. Ambos declararon en los días siguientes y sus versiones coincidieron, dentro de la oleada de 1954 que produjo reportes de ocupantes en varios continentes a la vez.",
+    "bio_short_en": "He was with Gustavo González the early morning both said they found a luminous object blocking the street and hairy figures about a meter tall. His evidentiary function is that of the second witness: it turns a solitary and hard-to-sustain account —a man who says he wrestled with a creature— into testimony with immediate corroboration. Both gave statements in the following days and their versions matched, within the 1954 wave that produced occupant reports on several continents at once.",
+    "works": [
+      {
+        "year": 1954,
+        "title": "Declaración concordante con la de González",
+        "title_en": "Statement matching González's",
+        "contribution": "Corroboración inmediata de un relato que, solo, no se sostendría",
+        "contribution_en": "Immediate corroboration of an account that alone would not hold up"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Prensa de Caracas · caso Petare (1954)",
+        "note": "Registro contemporáneo de ambos testimonios.",
+        "note_en": "Contemporaneous record of both testimonies."
+      }
+    ]
+  },
+  {
     "id": "vilas-boas",
     "name": "Antônio Vilas-Boas",
     "flag": "🇧🇷",
     "born": 1934,
     "death": 1991,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Agricultor y, más tarde, abogado · protagonista del primer caso de abducción con examen médico contemporáneo (Brasil, 1957)",
     "credentials_en": "Farmer and, later, a lawyer · protagonist of the first abduction case with a contemporaneous medical examination (Brazil, 1957)",
     "bio_short": "Su relato es cronológicamente anterior al de los Hill y a la existencia misma de la plantilla de abducción, lo que le da un peso que el resto de los casos tempranos no tiene: no había un molde cultural del cual copiar. Lo reportó al médico Olavo Fontes, que lo examinó y documentó lesiones cutáneas y síntomas compatibles con un cuadro de irradiación. Nunca cobró por el testimonio ni construyó una carrera sobre él: estudió Derecho, ejerció como abogado y evitó la exposición pública durante décadas. El contenido del relato —una interacción de tipo reproductivo a bordo— es también el que más lo expone a una lectura psicosexual.",
@@ -914,8 +1391,8 @@
     "flag": "🇮🇹",
     "born": 1952,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Vigilante nocturno de Torriglia (Génova) · el caso de contacto con certificación de los Carabinieri (Italia, 1978)",
     "credentials_en": "Night security guard in Torriglia (Genoa) · the contact case certified by the Carabinieri (Italy, 1978)",
     "bio_short": "Su caso tiene un rasgo que casi ningún otro relato de contacto ofrece: el encuentro fue reportado por radio en tiempo real, mientras ocurría, a la central de su empresa de seguridad. Los Carabinieri certificaron una traza física en el terreno, recogieron 52 testimonios concordantes y archivaron el expediente con una fiabilidad calificada de «buena». Esa base institucional es sólida. Lo que la erosiona es lo que vino después: bajo sucesivas sesiones de hipnosis a lo largo de años, el relato creció hasta incorporar múltiples encuentros y una narrativa cada vez más elaborada, un patrón de expansión que en el corpus opera sistemáticamente como señal de alerta.",
@@ -954,8 +1431,8 @@
     "name": "Linda Napolitano",
     "flag": "🇺🇸",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Residente del Lower East Side de Manhattan · caso central de 'Witnessed' (Budd Hopkins, 1996) y el más disputado de la ufología de abducción",
     "credentials_en": "Lower East Side resident, Manhattan · the central case of 'Witnessed' (Budd Hopkins, 1996) and the most disputed in abduction ufology",
     "bio_short": "Afirmó haber sido elevada por un haz de luz desde el piso doce de su edificio y llevada a una nave cerca del Puente de Brooklyn, en pleno Manhattan y en presencia —según el relato— de testigos que incluirían a un alto funcionario de Naciones Unidas. Budd Hopkins la convirtió en el caso estrella de su obra. Es también el caso donde la investigación crítica ha sido más devastadora: los testigos independientes nunca se materializaron de forma verificable, la cadena de correspondencia que los sustentaba fue cuestionada como fabricada, y varios investigadores del propio campo —no escépticos externos— concluyeron que el expediente no se sostiene. Se conserva en el directorio por su peso historiográfico, no por su solidez.",
@@ -995,7 +1472,7 @@
     "flag": "🇺🇸",
     "born": 1945,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
     "framework": "psychospiritual",
     "credentials": "Novelista bestseller + Cambridge education + 40 años documentación sistemática experiencias propias",
     "bio_short": "Su libro Communion (1987) introdujo la figura del 'gris' en la cultura de masas. Distingue con cuidado dos planos: las experiencias serían reales en lo fenomenológico, mientras que interpretarlas como 'extraterrestres' es la lectura más obvia, pero quizá no la correcta. En The Key relata un diálogo con una entidad que le habría transmitido conocimiento técnico que, asegura, él no podía poseer.",
@@ -1019,7 +1496,7 @@
         "contribution_en": "Co-authored with the late Anne Strieber — continuity of consciousness"
       }
     ],
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials_en": "Bestselling novelist + Cambridge education + 40 years of systematic documentation of his own experiences",
     "bio_short_en": "His book Communion (1987) introduced the figure of the 'gray' into mass culture. He carefully distinguishes two planes: the experiences would be real phenomenologically, while interpreting them as 'extraterrestrials' is the most obvious reading, but perhaps not the correct one. In The Key he recounts a dialogue with an entity that allegedly conveyed technical knowledge he says he could not have possessed.",
     "sources": [
@@ -1038,8 +1515,8 @@
     "name": "Jan Wolski",
     "flag": "🇵🇱",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Granjero de Emilcin, Polonia · testigo del caso de contacto más documentado del bloque del Este (1978)",
     "credentials_en": "Farmer from Emilcin, Poland · witness in the best-documented contact case from the Eastern Bloc (1978)",
     "bio_short": "Tenía unos setenta años, era analfabeto en materia ufológica y vivía en la Polonia comunista de 1978, un contexto donde el relato no ofrecía ninguna ganancia posible: ni mercado editorial, ni circuito de conferencias, ni prensa dispuesta a pagarlo. Describió a dos seres de baja estatura y rostro verdoso que subieron a su carro tirado por caballos y lo condujeron a un objeto blanco «largo como un autobús», donde habría sido examinado. Vecinos reportaron haber visto el objeto y se documentaron trazas en el terreno. La ausencia total de móvil es el argumento más fuerte a su favor; la ausencia de cualquier verificación instrumental, el más fuerte en contra.",
@@ -1078,8 +1555,8 @@
     "name": "Meng Zhaoguo",
     "flag": "🇨🇳",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Leñador del campamento Bandera Roja, Wuchang (Heilongjiang) · el caso de contacto más documentado de China (1994)",
     "credentials_en": "Logger at the Red Flag camp, Wuchang (Heilongjiang) · the best-documented contact case in China (1994)",
     "bio_short": "Subió al monte Fénix creyendo que investigaba un helicóptero caído y describió después haber sido golpeado y, esa misma noche, haber tenido un encuentro íntimo con una figura femenina de gran estatura. El caso es excepcional por su procedencia: la ufología china de los años noventa operaba en un circuito casi sin contacto con la occidental, de modo que el relato no se explica fácilmente como copia de la plantilla estadounidense, y sin embargo reproduce varios de sus elementos. Fue examinado por investigadores chinos y sometido a polígrafo. Las marcas cutáneas que exhibía admiten explicaciones mundanas y ninguna verificación instrumental respalda el núcleo del relato.",
@@ -1118,8 +1595,8 @@
     "name": "Karim Bianchi",
     "flag": "🇨🇱",
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Senador de la República de Chile por Magallanes (independiente) · abogado · el cargo público de mayor rango en el corpus que declara un episodio de abducción propio",
     "credentials_en": "Senator of the Republic of Chile for Magallanes (independent) · lawyer · the highest-ranking public office holder in the corpus to report an abduction episode of his own",
     "bio_short": "Reveló en mayo de 2024, en una entrevista televisiva, que en 2012 —doce años antes y siendo ya figura pública regional— conducía de Puerto Natales a Punta Arenas cuando una luz giratoria le apagó el auto y el teléfono, y que reapareció unos doscientos kilómetros más adelante en la misma ruta sin memoria del trayecto. Lo relevante del caso no es la evidencia, que es nula: es el costo. Bianchi hizo la declaración ocupando un escaño en el Senado, recibió burla pública sostenida y no se retractó, respondiendo únicamente que lamentaba «la violencia que descarga la gente en las redes sociales». Es un caso de testimonio con costo político verificable y respaldo material inexistente.",
@@ -1160,8 +1637,8 @@
     "born": 1947,
     "death": 1996,
     "section": "F",
-    "section_label": "Experiencers · abducidos y contactados",
-    "section_label_en": "Experiencers · abductees and contactees",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
     "credentials": "Se presentaba como ingeniero geólogo y estructural en proyectos clasificados · origen del relato moderno de la base subterránea de Dulce (conferencias 1995–96)",
     "credentials_en": "Presented himself as a geological and structural engineer on classified projects · origin of the modern Dulce underground base narrative (1995–96 lectures)",
     "bio_short": "Afirmó en una serie de conferencias públicas haber sobrevivido en 1979 a un tiroteo contra seres no humanos en una base subterránea bajo Dulce, Nuevo México, con unos sesenta muertos, y exhibía cicatrices como prueba. Nada sustancial de su relato pudo verificarse: no hay registro confirmado de sus empleos, contratos ni autorizaciones de seguridad, ni documentación primaria de la base o del incidente. El mito de Dulce, además, es anterior a él —nace de la campaña de desinformación dirigida contra Paul Bennewitz en los años ochenta—, lo que sugiere que edificó sobre una leyenda preexistente. Figura en el directorio como el extremo no verificable del espectro: su relato es el caso de estudio de cómo un testimonio sin ningún anclaje documental se instala igual en la cultura.",
