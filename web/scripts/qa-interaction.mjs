@@ -80,10 +80,25 @@ const check = (name, actual, expected) => {
   if (!ok) fails++;
 };
 
+const toggles = `[...document.querySelectorAll('[data-toggle]')].filter(b=>!b.hidden).length`;
+const clickToggle = async (code) => {
+  await evalJs(`document.querySelector('[data-toggle="${code}"]').click()`);
+  await sleep(400);
+};
+
 console.log("Filtro de /researchers · prueba interactiva\n");
-check("estado inicial: 121 visibles", await evalJs(visible), 121);
-check("conteo inicial", await evalJs(countText), "121 actors");
+// Truncado: 121 tarjetas en el HTML, pero solo 8 por sección a la vista.
+// A=41 B=27 C=12 D=9 E=1 F=31 → 8+8+8+8+1+8 = 41
+check("truncado inicial: 41 visibles de 121", await evalJs(visible), 41);
+check("las 121 siguen en el HTML (SEO)", await evalJs(`document.querySelectorAll('[data-search]').length`), 121);
+check("5 secciones ofrecen 'ver todos'", await evalJs(toggles), 5);
+check("conteo cuenta el TOTAL, no lo visible", await evalJs(countText), "121 actors");
 check("sin secciones vacías", await evalJs(emptyGroups), 0);
+
+await clickToggle("A");
+check("desplegar A suma sus 33 restantes", await evalJs(visible), 41 + 33);
+await clickToggle("A");
+check("plegar A vuelve a 41", await evalJs(visible), 41);
 
 await type("zamora");
 check("busca 'zamora' → 1 visible", await evalJs(visible), 1);
@@ -106,9 +121,14 @@ await type("zzzzq");
 check("sin resultados → 0 visibles", await evalJs(visible), 0);
 check("aparece el estado vacío", await evalJs(`!!document.body.textContent.match(/No actor matches/)`), true);
 
+await type("hill");
+check("buscar LEVANTA el truncado (no esconde resultados)", await evalJs(visible), (n) => n >= 2);
+check("buscando no se ofrece 'ver todos'", await evalJs(toggles), 0);
+
 await type("");
-check("limpiar restaura 121", await evalJs(visible), 121);
+check("limpiar vuelve al truncado de 41", await evalJs(visible), 41);
 check("secciones vacías vuelven a 0", await evalJs(emptyGroups), 0);
+check("los toggles reaparecen", await evalJs(toggles), 5);
 
 ws.close(); proc.kill(); server.close();
 console.log(fails ? `\n✗ ${fails} fallo(s)` : "\n✓ todas las aserciones pasaron");

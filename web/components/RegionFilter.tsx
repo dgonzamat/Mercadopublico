@@ -19,6 +19,11 @@ import { REGION_ORDER, REGION_LABELS, type Region } from "@/lib/regions";
  * Cero data duplicada al cliente más allá de `data-search`, que el server ya
  * emite normalizado (sin diacríticos) para que "antonio" encuentre "Antônio".
  */
+/** Tarjetas visibles por sección antes de pedir «ver todos». 8 = 4 filas de 2
+ *  columnas en desktop: baja la página de 121 tarjetas a ~41 sin esconder la
+ *  estructura de secciones, que es la unidad con la que se navega el listado. */
+const PER_SECTION = 8;
+
 export function RegionFilter({
   counts,
   total,
@@ -33,8 +38,29 @@ export function RegionFilter({
   const [region, setRegion] = useState<Region | "all">("all");
   const [query, setQuery] = useState("");
   const [matchCount, setMatchCount] = useState(total);
+  const [expanded, setExpanded] = useState<ReadonlySet<string>>(new Set());
   const rootRef = useRef<HTMLDivElement>(null);
   const available = REGION_ORDER.filter((r) => (counts[r] ?? 0) > 0);
+
+  // Click delegado en los toggles por sección (los emite el server; ver
+  // app/researchers/page.tsx). Delegar evita un client component por sección.
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const onClick = (e: MouseEvent) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>("[data-toggle]");
+      const code = btn?.dataset.toggle;
+      if (!code) return;
+      setExpanded((prev) => {
+        const next = new Set(prev);
+        if (next.has(code)) next.delete(code);
+        else next.add(code);
+        return next;
+      });
+    };
+    root.addEventListener("click", onClick);
+    return () => root.removeEventListener("click", onClick);
+  }, []);
 
   // Sincroniza el DOM con el texto buscado, recuenta y marca las secciones sin
   // resultados. Es un efecto porque escribe en un sistema externo (el DOM).
@@ -58,11 +84,35 @@ export function RegionFilter({
       `[data-region]${region !== "all" ? `[data-region="${region}"]` : ""}` +
       `:not([data-nomatch])`;
     setMatchCount(root.querySelectorAll(itemSel).length);
+
     root.querySelectorAll<HTMLElement>("[data-group]").forEach((g) => {
-      if (g.querySelector(itemSel)) g.removeAttribute("data-empty");
+      const hits = Array.from(g.querySelectorAll<HTMLElement>(itemSel));
+      if (hits.length) g.removeAttribute("data-empty");
       else g.setAttribute("data-empty", "");
+
+      // Truncado por sección. Buscando NO se trunca: el usuario ya acotó el
+      // conjunto y esconderle resultados sería justo lo contrario de ayudar.
+      // El corte se calcula sobre los ítems que PASARON los filtros, no sobre
+      // el total, para que "ver todos" nunca prometa de más.
+      const open = !!q || expanded.has(g.dataset.group ?? "");
+      hits.forEach((el, i) => {
+        if (!open && i >= PER_SECTION) el.setAttribute("data-over", "");
+        else el.removeAttribute("data-over");
+      });
+
+      const btn = g.querySelector<HTMLButtonElement>("[data-toggle]");
+      if (!btn) return;
+      const rest = hits.length - PER_SECTION;
+      btn.hidden = !!q || rest <= 0;
+      const isOpen = expanded.has(g.dataset.group ?? "");
+      btn.querySelector<HTMLElement>('[data-when="more"]')!.hidden = isOpen;
+      btn.querySelector<HTMLElement>('[data-when="less"]')!.hidden = !isOpen;
+      btn.querySelector<HTMLElement>("[data-count]")!.textContent = isOpen
+        ? ""
+        : `+${rest}`;
+      btn.setAttribute("aria-expanded", String(isOpen));
     });
-  }, [query, region]);
+  }, [query, region, expanded]);
 
   const filtered = region !== "all" || query.trim() !== "";
 

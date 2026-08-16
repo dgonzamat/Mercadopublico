@@ -173,7 +173,7 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
           <section
             key={section.code}
             id={`seccion-${section.code.toLowerCase()}`}
-            data-group
+            data-group={section.code}
             className="scroll-mt-20"
           >
             <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
@@ -235,6 +235,24 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
                 );
               })}
             </div>
+            {/* Toggle de la sección. Nace `hidden` y lo destapa el JS del
+                filtro: sin JS no hay truncado, así que un botón visible sería
+                un control muerto. El click lo captura RegionFilter por
+                delegación — así no hace falta un client component por sección. */}
+            <button
+              type="button"
+              data-toggle={section.code}
+              hidden
+              className="mt-3 inline-flex min-h-[44px] items-center gap-2 border border-border bg-panel px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-muted transition hover:border-accent/50 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <span data-when="more">
+                <T es="Ver todos" en="Show all" locale={locale} />
+              </span>
+              <span data-when="less" hidden>
+                <T es="Ver menos" en="Show less" locale={locale} />
+              </span>
+              <span data-count className="tabular-nums opacity-70" />
+            </button>
           </section>
         );
       })}
