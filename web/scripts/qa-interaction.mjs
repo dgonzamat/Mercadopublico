@@ -5,7 +5,7 @@
 //  QA visual (qa-screenshots) SÍ renderiza pero corre con JS DESHABILITADO por
 //  defecto, así que fotografía el layout estático. Queda un hueco: nada del
 //  repo ejercita la interactividad del cliente. Esta sonda lo cierra para los
-//  filtros de /researchers, que con 121 actores son la vía principal de
+//  filtros de /researchers, que con >100 actores son la vía principal de
 //  navegación: escribe en el input por CDP y comprueba el resultado en el DOM
 //  (tarjetas realmente visibles, conteo aria-live, secciones vacías).
 //
@@ -87,12 +87,12 @@ const clickToggle = async (code) => {
 };
 
 console.log("Filtro de /researchers · prueba interactiva\n");
-// Truncado: 121 tarjetas en el HTML, pero solo 8 por sección a la vista.
-// A=41 B=27 C=12 D=9 E=1 F=31 → 8+8+8+8+1+8 = 41
-check("truncado inicial: 41 visibles de 121", await evalJs(visible), 41);
-check("las 121 siguen en el HTML (SEO)", await evalJs(`document.querySelectorAll('[data-search]').length`), 121);
+// Truncado: 125 tarjetas en el HTML, pero solo 8 por sección a la vista.
+// A=41 B=27 C=12 D=9 E=1 F=35 → 8+8+8+8+1+8 = 41 (todas las secciones ≥8)
+check("truncado inicial: 41 visibles de 125", await evalJs(visible), 41);
+check("las 125 siguen en el HTML (SEO)", await evalJs(`document.querySelectorAll('[data-search]').length`), 125);
 check("5 secciones ofrecen 'ver todos'", await evalJs(toggles), 5);
-check("conteo cuenta el TOTAL, no lo visible", await evalJs(countText), "121 actors");
+check("conteo cuenta el TOTAL, no lo visible", await evalJs(countText), "125 actors");
 check("sin secciones vacías", await evalJs(emptyGroups), 0);
 
 await clickToggle("A");
@@ -102,7 +102,7 @@ check("plegar A vuelve a 41", await evalJs(visible), 41);
 
 await type("zamora");
 check("busca 'zamora' → 1 visible", await evalJs(visible), 1);
-check("conteo refleja el filtro", await evalJs(countText), "1 of 121 actors");
+check("conteo refleja el filtro", await evalJs(countText), "1 of 125 actors");
 check("5 de 6 secciones vacías", await evalJs(emptyGroups), 5);
 
 await type("antonio");                       // sin acento debe encontrar "Antônio"

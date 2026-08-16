@@ -183,6 +183,10 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   kawano: ["kofu-japan-1975"],
   yamahata: ["kofu-japan-1975"],
   trejo: ["talavera-la-real-1976"],
+  "jim-weiner": ["allagash-1976"],
+  "jack-weiner": ["allagash-1976"],
+  foltz: ["allagash-1976"],
+  rak: ["allagash-1976"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
