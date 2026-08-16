@@ -166,6 +166,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   bianchi: ["bianchi-magallanes-2012"],
   valdes: ["valdes-1977"],
   schneider: ["dulce-schneider-1979"],
+  hickson: ["pascagoula-1973"],
+  parker: ["pascagoula-1973"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
