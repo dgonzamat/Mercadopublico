@@ -4213,6 +4213,38 @@
     ]
   },
   {
+    "id": "matthew-brown",
+    "name": "Matthew Brown",
+    "flag": "🇺🇸",
+    "section": "B",
+    "section_label": "Informantes / denunciantes",
+    "credentials": "analista de contrainteligencia (alegado, TS/SCI) + denunciante público (2025)",
+    "bio_short": "Analista que dice haber trabajado para el Departamento de Defensa y el Departamento de Estado con habilitación TS/SCI. Se identificó en 2025 como el autor del documento de 12 páginas sobre 'Immaculate Constellation' que el periodista Michael Shellenberger había entregado al Congreso en 2024, afirmando haberlo reconstruido de memoria tras encontrar los archivos originales por accidente. Un análisis crítico posterior (Jason Colavito; foro Metabunk) sostiene que confundió un documento de planificación ficticio del wargame espacial Schriever de 2018 con un programa real —la explicación mundana hoy mejor respaldada—. En agosto de 2026 participó en un AMA de Reddit junto al denunciante Jeff Nuccetelli, donde varió su relato original ubicando el programa en el Consejo de Seguridad Nacional en vez del Pentágono. Se incluye con el caveat explícito de que su relato central está seriamente cuestionado.",
+    "works": [
+      {
+        "year": 2025,
+        "title": "Identificación pública como autor de 'Immaculate Constellation' (podcast Weaponized; Judicial Watch)",
+        "contribution": "Denuncia de un presunto programa de recolección de imágenes UAP — hoy explicada de forma más plausible como malinterpretación de un wargame ficticio",
+        "contribution_en": "Whistleblower claim about an alleged UAP-imagery collection program — now more plausibly explained as a misread fictional wargame"
+      }
+    ],
+    "section_label_en": "Insiders / whistleblowers",
+    "credentials_en": "Alleged counterintelligence analyst (TS/SCI) + public whistleblower (2025)",
+    "bio_short_en": "An analyst who says he worked for the Department of Defense and the Department of State with TS/SCI clearance. In 2025 he identified himself as the author of the 12-page 'Immaculate Constellation' document that journalist Michael Shellenberger had handed to Congress in 2024, claiming he reconstructed it from memory after stumbling on the original files by accident. A later critical analysis (Jason Colavito; the Metabunk forum) argues he mistook a fictional planning document from the 2018 Schriever space wargame for a real program —today's best-supported mundane explanation. In August 2026 he took part in a Reddit AMA alongside whistleblower Jeff Nuccetelli, where he varied his original account, placing the program at the National Security Council instead of the Pentagon. He is included with the explicit caveat that his central claim is seriously disputed.",
+    "sources": [
+      {
+        "name": "Judicial Watch — 'Whistleblower Matt Brown on \"Immaculate Constellation\" and UAPs' (2025)",
+        "note": "Entrevista de autoidentificación pública.",
+        "note_en": "Public self-identification interview."
+      },
+      {
+        "name": "Wikipedia — 'Schriever wargame'; Metabunk — hilo de análisis crítico",
+        "note": "Fuente de la hipótesis de malinterpretación del wargame ficticio de 2018.",
+        "note_en": "Source of the hypothesis that he misread the fictional 2018 wargame."
+      }
+    ]
+  },
+  {
     "id": "wang-sichao",
     "name": "Wang Sichao",
     "flag": "🇨🇳",
