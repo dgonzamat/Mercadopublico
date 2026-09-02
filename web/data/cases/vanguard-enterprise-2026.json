@@ -1,0 +1,73 @@
+{
+  "id": "vanguard-enterprise-2026",
+  "num": 389,
+  "name": "Vanguard Enterprise · ONG de apoyo a denunciantes UAP (2026)",
+  "name_en": "Vanguard Enterprise · UAP whistleblower support nonprofit (2026)",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "place": "Washington D.C. (sede física no divulgada públicamente)",
+    "place_en": "Washington D.C. (physical address not publicly disclosed)"
+  },
+  "tier": "B",
+  "epistemicStatus": "developing",
+  "probability": 45,
+  "posterior": {
+    "mundano_natural": 0.05,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.18,
+    "nohumano_abierto": 0.05,
+    "indet": 0.55
+  },
+  "patterns": [
+    "8q",
+    "8m"
+  ],
+  "category": "document",
+  "summary": "En 2026, los denunciantes UAP Dylan Borland (CEO) y Matthew Brown (COO) cofundaron Vanguard Enterprise, una organización sin fines de lucro dedicada a dar apoyo legal, médico, financiero y psicológico a denunciantes UAP del sector de seguridad nacional; el denunciante Jeff Nuccetelli se sumó después como director de desarrollo. Bajo el lema 'Proteger a los denunciantes. Divulgar la verdad', es la primera infraestructura filantrópica organizada específicamente para este nicho, y conecta institucionalmente a tres figuras ya documentadas en este corpus.",
+  "summary_en": "In 2026, UAP whistleblowers Dylan Borland (CEO) and Matthew Brown (COO) co-founded Vanguard Enterprise, a nonprofit dedicated to providing legal, medical, financial and psychological support to national-security-sector UAP whistleblowers; whistleblower Jeff Nuccetelli later joined as development director. Under the motto 'Protect the whistleblowers. Disclose the truth,' it is the first organized philanthropic infrastructure specifically for this niche, and institutionally connects three figures already documented in this corpus.",
+  "whatHappened": "En algún momento de 2026, los denunciantes UAP Dylan Borland y Matthew Brown —ambos con casos propios en este corpus ([[borland-langley-triangle-2012]], y Brown documentado en [[immaculate-constellation-2024]])— cofundaron Vanguard Enterprise, una organización sin fines de lucro registrada bajo el dominio vanguardenterprise.org. Borland ocupa el rol de Fundador y CEO; Brown, de Cofundador y Director de Operaciones (COO). El denunciante Jeff Nuccetelli ([[nuccetelli-vandenberg-2003]]) se sumó después como Director de Desarrollo (CDO), a cargo de recaudación de fondos, alianzas y desarrollo estratégico.\n\nLa misión declarada, bajo el lema 'Proteger a los denunciantes. Divulgar la verdad', se articula en cinco principios rectores publicados en el sitio: que los ciudadanos estadounidenses pueden comprender realidades difíciles; que los denunciantes no deberían sufrir destrucción por servir al bien público; que el secreto debe servir a la República y nunca al revés; que la Constitución es la ley suprema; y un compromiso genérico con Estados Unidos. La organización documenta explícitamente los riesgos que enfrentan los denunciantes de este nicho —amenazas legales, represalias personales, destrucción reputacional, inestabilidad financiera y aislamiento social— y ofrece, según su propia descripción, un 'sistema de apoyo confiable' que incluye defensa legal, asistencia médica, transición de carrera y comunidad de respaldo, dirigido a 'denunciantes creíbles' y sus familias.\n\nEl plan operativo publicado se organiza en tres años: el primero dedicado a construir infraestructura organizacional, reclutar voluntarios y establecer sistemas de TI seguros con operaciones limitadas; el segundo a expandir capacidades de admisión segura, establecer una red de defensa legal y forjar alianzas institucionales; el tercero a implementar estrategias de litigio e integrarse con ecosistemas legales y políticos más amplios. La organización opera mediante donaciones deducibles de impuestos a través de la plataforma Give Butter, y mantiene presencia en X, Instagram y Bluesky.\n\nLa existencia de Vanguard se hizo pública para la cobertura de disclosure UAP a través de dos canales en agosto de 2026: el AMA de Reddit del 22 de agosto, donde Brown y Nuccetelli aparecieron junto a la periodista Leslie Kean como moderadora, y la entrevista de Brown en el podcast American Alchemy con Jesse Michels a fines de agosto, donde mostró la camiseta de la organización y describió su propósito directamente. El sitio no publica cifras de fondos recaudados, casos atendidos, ni presupuesto.",
+  "whatHappened_en": "At some point in 2026, UAP whistleblowers Dylan Borland and Matthew Brown —both with their own cases in this corpus ([[borland-langley-triangle-2012]], and Brown documented in [[immaculate-constellation-2024]])— co-founded Vanguard Enterprise, a nonprofit registered under the domain vanguardenterprise.org. Borland holds the role of Founder and CEO; Brown, of Co-founder and Chief Operating Officer (COO). Whistleblower Jeff Nuccetelli ([[nuccetelli-vandenberg-2003]]) later joined as Chief Development Officer (CDO), leading fundraising, partnerships and strategic development.\n\nThe stated mission, under the motto 'Protect the whistleblowers. Disclose the truth,' is articulated through five guiding principles published on the site: that American citizens can handle hard truths; that whistleblowers should not be destroyed for serving the public good; that secrecy must serve the Republic, never the reverse; that the Constitution is the supreme law; and a general commitment to America. The organization explicitly documents the risks whistleblowers in this niche face —legal threats, personal retaliation, reputational destruction, financial instability and social isolation— and offers, per its own description, a 'reliable support system' including legal defense, medical assistance, career transition and a support community, aimed at 'credible whistleblowers' and their families.\n\nThe published operating plan is structured over three years: the first devoted to building organizational infrastructure, recruiting volunteers and establishing secure IT systems with limited operations; the second to expanding secure intake capabilities, establishing a legal defense network and forging institutional partnerships; the third to implementing litigation strategies and integrating with broader legal and political ecosystems. The organization operates through tax-deductible donations via the Give Butter platform, and maintains a presence on X, Instagram and Bluesky.\n\nVanguard's existence became public to UAP disclosure coverage through two channels in August 2026: the August 22 Reddit AMA, where Brown and Nuccetelli appeared alongside journalist Leslie Kean as moderator, and Brown's interview on the American Alchemy podcast with Jesse Michels in late August, where he displayed the organization's shirt and described its purpose directly. The site publishes no figures on funds raised, cases served, or budget.",
+  "whyMatters": "Vanguard Enterprise es la primera infraestructura filantrópica organizada específicamente para denunciantes UAP del sector de seguridad nacional, y su valor para el corpus es estructural más que evidencial: no aporta datos sobre la naturaleza del fenómeno, sino que documenta la institucionalización —privada, no gubernamental— del ecosistema de apoyo a quienes hacen estas denuncias. Entra como pieza de contexto (categoría document) precisamente porque conecta orgánicamente a tres figuras ya presentes en el corpus con perfiles de credibilidad muy distintos entre sí: Borland (testimonio bajo juramento con anclaje militar verificable pero testigo único), Brown (autor identificado de 'Immaculate Constellation', cuyo relato central hoy se lee mejor como malinterpretación de un wargame ficticio) y Nuccetelli (testimonio con múltiples testigos por incidente, pero sin corroboración material independiente). Que los tres compartan ahora una misma organización no cambia el peso evidencial de sus denuncias individuales, pero sí formaliza una red que hasta ahora era solo circunstancial —los tres testificaron en la misma audiencia de septiembre de 2025—.\n\nEl patrón `8m` (cover-up institucional documentado) aplica porque la misión de Vanguard convierte en programa formal algo que el corpus ya venía documentando caso por caso: alegaciones de represalia contra denunciantes (el clearance de Borland, el allanamiento reportado por Brown, las amenazas contra Burlison en [[uap-whistleblower-immunity-2026]]). El patrón `8q` (red del ecosistema de divulgación) aplica porque Vanguard es, literalmente, el primer nodo organizacional que declara explícitamente su función de tejer esa red. La cautela editorial es la misma que rige para cualquier organización de advocacy: una misión declarada y una hoja de ruta a tres años son datos verificables sobre la organización, no evidencia sobre las denuncias que dice defender; el sitio mismo no ofrece cifras, presupuesto ni casos concretos que permitan evaluar su actividad real más allá del anuncio de existencia.",
+  "whyMatters_en": "Vanguard Enterprise is the first organized philanthropic infrastructure specifically for national-security-sector UAP whistleblowers, and its value to the corpus is structural rather than evidentiary: it contributes no data about the nature of the phenomenon, but documents the —private, non-governmental— institutionalization of the support ecosystem for those making these disclosures. It enters as a contextual piece (document category) precisely because it organically connects three figures already present in the corpus with very different credibility profiles: Borland (sworn testimony with a verifiable military anchor but a single witness), Brown (identified author of 'Immaculate Constellation,' whose central account today reads better as a misread fictional wargame), and Nuccetelli (testimony with multiple witnesses per incident, but no independent material corroboration). The three now sharing one organization does not change the evidentiary weight of their individual claims, but it does formalize a network that until now was only circumstantial —the three testified at the same September 2025 hearing.\n\nPattern `8m` (documented institutional cover-up) applies because Vanguard's mission turns into a formal program something the corpus was already documenting case by case: retaliation allegations against whistleblowers (Borland's clearance, the break-in Brown reported, the threats against Burlison in [[uap-whistleblower-immunity-2026]]). Pattern `8q` (disclosure ecosystem network) applies because Vanguard is, literally, the first organizational node that explicitly declares its function of weaving that network. The editorial caution here is the same that applies to any advocacy organization: a stated mission and a three-year roadmap are verifiable facts about the organization, not evidence for the claims it says it defends; the site itself offers no figures, budget, or concrete cases that would allow an assessment of its actual activity beyond the announcement of its existence.",
+  "evidence": [
+    "Página de equipo oficial (vanguardenterprise.org/team): Dylan Borland, Fundador y CEO; Matthew Brown, Cofundador y COO; Jeffrey Nuccetelli, Director de Desarrollo (CDO)",
+    "Lema y cinco principios rectores publicados en vanguardenterprise.org/mission",
+    "Plan operativo a tres años publicado en vanguardenterprise.org/plan (construcción → expansión → litigio)",
+    "AMA de Reddit del 22 de agosto de 2026 (Brown + Nuccetelli, moderado por Leslie Kean)",
+    "Entrevista de Matthew Brown en American Alchemy con Jesse Michels (fines de agosto 2026), donde confirma verbalmente la cofundación y el propósito de Vanguard",
+    "Plataforma de donación: Give Butter (deducible de impuestos); sin cifras públicas de fondos recaudados, presupuesto o casos atendidos"
+  ],
+  "evidence_en": [
+    "Official team page (vanguardenterprise.org/team): Dylan Borland, Founder and CEO; Matthew Brown, Co-founder and COO; Jeffrey Nuccetelli, Chief Development Officer (CDO)",
+    "Motto and five guiding principles published at vanguardenterprise.org/mission",
+    "Three-year operating plan published at vanguardenterprise.org/plan (build → expand → litigate)",
+    "August 22, 2026 Reddit AMA (Brown + Nuccetelli, moderated by Leslie Kean)",
+    "Matthew Brown's interview on American Alchemy with Jesse Michels (late August 2026), where he verbally confirms the co-founding and purpose of Vanguard",
+    "Donation platform: Give Butter (tax-deductible); no public figures on funds raised, budget, or cases served"
+  ],
+  "sources": [
+    {
+      "name": "Vanguard Enterprise — página de equipo (vanguardenterprise.org/team)",
+      "url": "https://www.vanguardenterprise.org/team"
+    },
+    {
+      "name": "Vanguard Enterprise — misión (vanguardenterprise.org/mission)",
+      "url": "https://www.vanguardenterprise.org/mission"
+    },
+    {
+      "name": "Vanguard Enterprise — plan (vanguardenterprise.org/plan)",
+      "url": "https://www.vanguardenterprise.org/plan"
+    },
+    {
+      "name": "American Alchemy con Jesse Michels — 'Pentagon Whistleblower UNLOADS on Alien Hybrid Breeding Programs (ft. Matthew Brown)' (ago 2026)",
+      "note": "Brown confirma verbalmente la cofundación de Vanguard con Borland y el rol de Nuccetelli.",
+      "note_en": "Brown verbally confirms co-founding Vanguard with Borland and Nuccetelli's role."
+    }
+  ]
+}
