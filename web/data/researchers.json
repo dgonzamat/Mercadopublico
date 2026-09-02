@@ -4219,18 +4219,24 @@
     "section": "B",
     "section_label": "Informantes / denunciantes",
     "credentials": "analista de contrainteligencia (alegado, TS/SCI) + denunciante público (2025)",
-    "bio_short": "Analista que dice haber trabajado para el Departamento de Defensa y el Departamento de Estado con habilitación TS/SCI. Se identificó en 2025 como el autor del documento de 12 páginas sobre 'Immaculate Constellation' que el periodista Michael Shellenberger había entregado al Congreso en 2024, afirmando haberlo reconstruido de memoria tras encontrar los archivos originales por accidente. Un análisis crítico posterior (Jason Colavito; foro Metabunk) sostiene que confundió un documento de planificación ficticio del wargame espacial Schriever de 2018 con un programa real —la explicación mundana hoy mejor respaldada—. En agosto de 2026 participó en un AMA de Reddit junto al denunciante Jeff Nuccetelli, donde varió su relato original ubicando el programa en el Consejo de Seguridad Nacional en vez del Pentágono. Se incluye con el caveat explícito de que su relato central está seriamente cuestionado.",
+    "bio_short": "Analista que dice haber trabajado para el Departamento de Defensa y el Departamento de Estado con habilitación TS/SCI. Se identificó en 2025 como el autor del documento de 12 páginas sobre 'Immaculate Constellation' que el periodista Michael Shellenberger había entregado al Congreso en 2024, afirmando haberlo reconstruido de memoria tras encontrar los archivos originales por accidente. Un análisis crítico posterior (Jason Colavito; foro Metabunk) sostiene que confundió un documento de planificación ficticio del wargame espacial Schriever de 2018 con un programa real —la explicación mundana hoy mejor respaldada—. En agosto de 2026 participó en un AMA de Reddit junto al denunciante Jeff Nuccetelli, donde varió su relato original ubicando el programa en el Consejo de Seguridad Nacional en vez del Pentágono. Cofundó junto a Dylan Borland la ONG Vanguard Enterprise (vanguardenterprise.org), de apoyo legal/médico/financiero a denunciantes UAP, a la que luego se sumó Nuccetelli como director de desarrollo. En una entrevista posterior con el podcast American Alchemy (Jesse Michels, fines de agosto 2026) escaló su relato con afirmaciones sin corroborar de mayor alcance —un incidente con un triángulo sobre buques navales rusos, 'acuerdos' entre EE.UU. e inteligencia no-humana, programas de 'cría híbrida'— y describió represalias personales (allanamiento de su casa, acoso atribuido a la AFOSI). Se incluye con el caveat explícito de que su relato central está seriamente cuestionado y que estas afirmaciones adicionales carecen de toda corroboración independiente.",
     "works": [
       {
         "year": 2025,
         "title": "Identificación pública como autor de 'Immaculate Constellation' (podcast Weaponized; Judicial Watch)",
         "contribution": "Denuncia de un presunto programa de recolección de imágenes UAP — hoy explicada de forma más plausible como malinterpretación de un wargame ficticio",
         "contribution_en": "Whistleblower claim about an alleged UAP-imagery collection program — now more plausibly explained as a misread fictional wargame"
+      },
+      {
+        "year": 2026,
+        "title": "Cofundación de Vanguard Enterprise; entrevista en American Alchemy con Jesse Michels (ago 2026)",
+        "contribution": "ONG de apoyo a denunciantes UAP (dato verificable); afirmaciones adicionales sin corroborar sobre programas de cría híbrida y acuerdos con inteligencia no-humana",
+        "contribution_en": "UAP-whistleblower support nonprofit (verifiable fact); additional uncorroborated claims about hybrid-breeding programs and non-human-intelligence agreements"
       }
     ],
     "section_label_en": "Insiders / whistleblowers",
     "credentials_en": "Alleged counterintelligence analyst (TS/SCI) + public whistleblower (2025)",
-    "bio_short_en": "An analyst who says he worked for the Department of Defense and the Department of State with TS/SCI clearance. In 2025 he identified himself as the author of the 12-page 'Immaculate Constellation' document that journalist Michael Shellenberger had handed to Congress in 2024, claiming he reconstructed it from memory after stumbling on the original files by accident. A later critical analysis (Jason Colavito; the Metabunk forum) argues he mistook a fictional planning document from the 2018 Schriever space wargame for a real program —today's best-supported mundane explanation. In August 2026 he took part in a Reddit AMA alongside whistleblower Jeff Nuccetelli, where he varied his original account, placing the program at the National Security Council instead of the Pentagon. He is included with the explicit caveat that his central claim is seriously disputed.",
+    "bio_short_en": "An analyst who says he worked for the Department of Defense and the Department of State with TS/SCI clearance. In 2025 he identified himself as the author of the 12-page 'Immaculate Constellation' document that journalist Michael Shellenberger had handed to Congress in 2024, claiming he reconstructed it from memory after stumbling on the original files by accident. A later critical analysis (Jason Colavito; the Metabunk forum) argues he mistook a fictional planning document from the 2018 Schriever space wargame for a real program —today's best-supported mundane explanation. In August 2026 he took part in a Reddit AMA alongside whistleblower Jeff Nuccetelli, where he varied his original account, placing the program at the National Security Council instead of the Pentagon. He co-founded, with Dylan Borland, the nonprofit Vanguard Enterprise (vanguardenterprise.org), providing legal/medical/financial support to UAP whistleblowers, which Nuccetelli later joined as its development director. In a later interview with the American Alchemy podcast (Jesse Michels, late August 2026) he escalated his account with broader, uncorroborated claims —an incident involving a triangle over Russian naval vessels, alleged U.S.–non-human-intelligence 'agreements,' 'hybrid breeding' programs— and described personal retaliation (a break-in at his home, harassment he attributes to AFOSI). He is included with the explicit caveat that his central claim is seriously disputed and that these additional claims lack any independent corroboration.",
     "sources": [
       {
         "name": "Judicial Watch — 'Whistleblower Matt Brown on \"Immaculate Constellation\" and UAPs' (2025)",
@@ -4241,6 +4247,17 @@
         "name": "Wikipedia — 'Schriever wargame'; Metabunk — hilo de análisis crítico",
         "note": "Fuente de la hipótesis de malinterpretación del wargame ficticio de 2018.",
         "note_en": "Source of the hypothesis that he misread the fictional 2018 wargame."
+      },
+      {
+        "name": "Vanguard Enterprise — página de equipo (vanguardenterprise.org/team)",
+        "url": "https://www.vanguardenterprise.org/team",
+        "note": "Confirma la cofundación con Borland y el rol de Nuccetelli como director de desarrollo.",
+        "note_en": "Confirms co-founding with Borland and Nuccetelli's role as development director."
+      },
+      {
+        "name": "American Alchemy con Jesse Michels — 'Pentagon Whistleblower UNLOADS on Alien Hybrid Breeding Programs (ft. Matthew Brown)' (ago 2026)",
+        "note": "Fuente de las afirmaciones adicionales sin corroborar y del relato de represalias personales.",
+        "note_en": "Source of the additional uncorroborated claims and the personal-retaliation account."
       }
     ]
   },
