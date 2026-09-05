@@ -3855,6 +3855,47 @@
     ]
   },
   {
+    "id": "caplan",
+    "name": "Jonathan Caplan",
+    "flag": "🇬🇧",
+    "section": "C",
+    "section_label": "Abogado (KC) · autor de divulgación (Reino Unido)",
+    "section_label_en": "Barrister (KC) · disclosure author (United Kingdom)",
+    "credentials": "King's Counsel del foro inglés · autor de 'Not For Disclosure' (2026)",
+    "credentials_en": "King's Counsel at the English Bar · author of 'Not For Disclosure' (2026)",
+    "bio_short": "Barrister británico de alto perfil (King's Counsel) que dice haber seguido el tema durante cincuenta años y que en junio de 2026 publicó 'Not For Disclosure' (Century / Penguin Random House), bestseller del Sunday Times. El libro aplica su oficio de evaluar evidencia a una compilación de testimonio de científicos, funcionarios de inteligencia, políticos y militares, e incluye material sobre reuniones de la era Truman, el presunto grupo 'Majestic 12' y alegaciones que vinculan a JFK con el tema. En septiembre de 2026 afirmó en Sky News, ante Wilfred Frost, que 'no hay duda' de las visitas y que el Congreso de EE.UU. 'ha sido engañado durante 80 años'. Entra al corpus como voz de divulgación con credibilidad profesional en el ámbito británico, con dos caveats: su obra es compilación de testimonio ajeno, no evidencia primaria, y se apoya en los documentos 'Majestic 12', que la investigación seria considera fraudulentos.",
+    "bio_short_en": "High-profile British barrister (King's Counsel) who says he has followed the subject for fifty years and who in June 2026 published 'Not For Disclosure' (Century / Penguin Random House), a Sunday Times bestseller. The book applies his trade of weighing evidence to a compilation of testimony from scientists, intelligence officials, politicians and military insiders, and includes material on Truman-era meetings, the alleged 'Majestic 12' group and allegations linking JFK to the subject. In September 2026 he told Sky News's Wilfred Frost there is 'no question' about visitation and that the U.S. Congress 'has been misled for 80 years'. He enters the corpus as a disclosure voice with professional credibility in the British sphere, with two caveats: his work is a compilation of others' testimony, not primary evidence, and it relies on the 'Majestic 12' documents, which serious research considers fraudulent.",
+    "works": [
+      {
+        "year": 2026,
+        "title": "Not For Disclosure (Century / Penguin Random House)",
+        "contribution": "Compilación de testimonio y documentos sobre el secreto UAP desde una perspectiva jurídica — bestseller del Sunday Times; sin evidencia primaria nueva",
+        "contribution_en": "Compilation of testimony and documents on UAP secrecy from a legal perspective — Sunday Times bestseller; no new primary evidence"
+      },
+      {
+        "year": 2026,
+        "title": "Entrevista en Sky News (Mornings with Ridge & Frost, sep 2026)",
+        "contribution": "Afirmación en medio mainstream británico de que existe 'evidencia dura' de visitas y de que el Congreso ha sido engañado",
+        "contribution_en": "Claim on mainstream British television that 'hard evidence' of visitation exists and that Congress has been misled"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Penguin Books UK — 'Not For Disclosure' de Jonathan Caplan (2026)",
+        "url": "https://www.penguin.co.uk/books/477763/not-for-disclosure-by-caplan-jonathan/9781529979961"
+      },
+      {
+        "name": "Sky News (Instagram / Mornings with Ridge & Frost, sep 2026) — entrevista de Wilfred Frost a Jonathan Caplan KC",
+        "note": "Video accesible vía redes de Sky News; la cobertura secundaria (AOL / Soap Central) recoge las citas.",
+        "note_en": "Video available via Sky News social channels; secondary coverage (AOL / Soap Central) carries the quotes."
+      },
+      {
+        "name": "Featherstone Cairns — perfil profesional de Jonathan Caplan KC",
+        "url": "https://www.featherstonecairns.com/jonathancaplan"
+      }
+    ]
+  },
+  {
     "id": "farah",
     "name": "Dan Farah",
     "flag": "🇺🇸",
