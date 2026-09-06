@@ -1,8 +1,15 @@
 name: Discover new UAP cases
 
-# Detector diario de candidatos UAP nuevos. Monitorea fuentes con API
-# limpia (arXiv, GitHub repos, Hugging Face datasets) y abre un issue
-# con los hallazgos del día.
+# Detector diario de candidatos UAP nuevos. Monitorea las fuentes donde
+# ocurren los hechos que el corpus documenta —Federal Register, prensa de
+# defensa y del área (DefenseScoop, The Debrief, Liberation Times) y arXiv—
+# y abre un issue con los hallazgos del día.
+#
+# Reapuntado en sep 2026: antes miraba repos de GitHub y datasets de Hugging
+# Face, fuentes que no pueden producir candidatos por construcción (un repo no
+# es un avistamiento). Generaron ~100 candidatos en trece días, ninguno un
+# evento UAP, y hubo que cerrar 14 issues a mano. El detalle del rediseño y
+# de los filtros está en scripts/discover-new-cases.mjs.
 #
 # Diseño:
 #   - NO usa LLM. Solo detecta "salió algo nuevo".
@@ -68,7 +75,7 @@ jobs:
               `> Este issue es solo una alerta de novedad. El juicio editorial`,
               `> (entra al corpus o no, cómo se redacta, calibración ICD-203)`,
               `> lo hace la rutina diaria de cowork siguiendo el playbook en`,
-              `> \`web/ROUTINE_NEW_CASES.md\`. Filtrar el ruido es parte del proceso.`,
+              `> \`web/ROUTINE_NEW_CASES.md\`.`,
               ``,
             ];
             for (const [source, list] of Object.entries(grouped)) {
