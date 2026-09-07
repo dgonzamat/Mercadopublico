@@ -9,6 +9,8 @@ import {
 } from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
 import { TIER_META } from "@/lib/ui";
+import { searchKey } from "@/lib/searchKey";
+import { countryEn } from "@/lib/i18n-geo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { EpistemicBadge } from "@/components/Badge";
@@ -251,6 +253,21 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
                       data-misid={c.misidSubtype ?? ""}
                       data-era={String(era.start)}
                       data-tier={c.tier}
+                      // Clave del buscador de la barra de filtros, normalizada
+                      // en el SERVIDOR (ver lib/searchKey). Indexa nombre, país
+                      // y año —no la prosa—: es un filtro para acotar ESTA
+                      // lista, no el buscador global del header, que sí hace
+                      // texto completo difuso contra /search-index.json cargado
+                      // aparte. Meter los 388 resúmenes aquí serían ~78 KB de
+                      // atributos en el HTML de una página cuyo LCP ya costó
+                      // trabajo (ver la regla de bundle bloat en CLAUDE.md).
+                      data-search={searchKey(
+                        locale === "en" ? c.name_en ?? c.name : c.name,
+                        locale === "en"
+                          ? countryEn(c.country_name)
+                          : c.country_name,
+                        String(c.year_start),
+                      )}
                       className="contents"
                     >
                       <CaseRow caseData={c} locale={locale} />

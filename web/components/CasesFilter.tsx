@@ -3,15 +3,22 @@
 import { useEffect, useRef, useState } from "react";
 import { T } from "@/components/T";
 import { REGION_ORDER, REGION_LABELS, type Region } from "@/lib/regions";
+import { searchKey } from "@/lib/searchKey";
 
 /**
- * Filtros facetados de /cases — tres ejes COMBINABLES (AND): Era · Región ·
- * Explicación más probable. Cada caso se renderiza server-side con
- * [data-region] [data-hyp] [data-era] en el mismo wrapper.
+ * Filtros facetados de /cases — cuatro ejes COMBINABLES (AND): Era · Región ·
+ * Explicación más probable · Nivel de evidencia, más una BÚSQUEDA de texto
+ * libre sobre nombre/país/año. Cada caso se renderiza server-side con
+ * [data-region] [data-hyp] [data-era] [data-tier] [data-search] en el mismo
+ * wrapper.
  *
- * Visibilidad de ÍTEMS: CSS-puro (globals.css). Cada faceta activa pone su
- * `data-*-filter` en el contenedor y añade una regla de ocultación; como todas
- * caen sobre el mismo elemento, componen en intersección sin combinatoria.
+ * Visibilidad de ÍTEMS: CSS-puro (globals.css) para las facetas. Cada faceta
+ * activa pone su `data-*-filter` en el contenedor y añade una regla de
+ * ocultación; como todas caen sobre el mismo elemento, componen en
+ * intersección sin combinatoria. La BÚSQUEDA no puede resolverse así —el CSS
+ * no hace substring—, así que el JS marca `data-nomatch` en los ítems que no
+ * calzan y una sola regla los oculta; compone en AND con las facetas porque
+ * aplica sobre ese mismo wrapper. Es el mismo mecanismo de /researchers.
  *
  * Lo que el CSS no puede (ocultar encabezados de era que quedan sin resultados
  * bajo una combinación arbitraria, el conteo vivo y el estado vacío) lo hace
@@ -66,6 +73,7 @@ export function CasesFilter({
   const [misid, setMisid] = useState<string | "all">("all");
   const [era, setEra] = useState<string | "all">("all");
   const [tier, setTier] = useState<string | "all">("all");
+  const [query, setQuery] = useState("");
   const [matchCount, setMatchCount] = useState(total);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -90,13 +98,25 @@ export function CasesFilter({
       // El subtipo solo aplica bajo «Misidentificación»: fuera de ahí se ignora
       // (el select ni se muestra), así un valor viejo nunca filtra de más.
       const em = hyp === "misid" ? misid : "all";
+
+      // La consulta se normaliza con la MISMA función con que el servidor
+      // escribió `data-search`, para que la comparación sea substring pelado.
+      const q = searchKey(query.trim());
+      root.querySelectorAll<HTMLElement>("[data-search]").forEach((el) => {
+        if (!q || (el.dataset.search ?? "").includes(q)) el.removeAttribute("data-nomatch");
+        else el.setAttribute("data-nomatch", "");
+      });
+
       const sel =
         (region !== "all" ? `[data-region="${region}"]` : "") +
         (hyp !== "all" ? `[data-hyp="${hyp}"]` : "") +
         (em !== "all" ? `[data-misid="${em}"]` : "") +
         (era !== "all" ? `[data-era="${era}"]` : "") +
         (tier !== "all" ? `[data-tier="${tier}"]` : "");
-      const itemSel = `[data-region]${sel}`; // todo wrapper de caso lleva data-region
+      // todo wrapper de caso lleva data-region; :not([data-nomatch]) mete la
+      // búsqueda en el mismo selector, así el conteo y los encabezados de era
+      // vacíos ya la tienen en cuenta sin una segunda pasada.
+      const itemSel = `[data-region]${sel}:not([data-nomatch])`;
       setMatchCount(root.querySelectorAll(itemSel).length);
       root.querySelectorAll<HTMLElement>("[data-group]").forEach((g) => {
         if (g.querySelector(itemSel)) g.removeAttribute("data-empty");
@@ -104,7 +124,7 @@ export function CasesFilter({
       });
     };
     measure();
-  }, [region, hyp, misid, era, tier]);
+  }, [region, hyp, misid, era, tier, query]);
 
   // El subtipo solo cuenta bajo «Misidentificación»: fuera de ahí se ignora sin
   // resetear el estado (deriva > efecto → sin cascada de renders, lint-clean).
@@ -133,6 +153,8 @@ export function CasesFilter({
     active.push({ key: `misid:${effectiveMisid}`, label: misidLabel(effectiveMisid), clear: () => setMisid("all") });
   if (tier !== "all")
     active.push({ key: `tier:${tier}`, label: optLabel(tiers, tier), clear: () => setTier("all") });
+  if (query.trim())
+    active.push({ key: "q", label: `“${query.trim()}”`, clear: () => setQuery("") });
 
   const clearAll = () => {
     setEra("all");
@@ -140,6 +162,7 @@ export function CasesFilter({
     setHyp("all");
     setMisid("all");
     setTier("all");
+    setQuery("");
   };
 
   const anyActive = active.length > 0;
@@ -192,6 +215,41 @@ export function CasesFilter({
           allLabel={locale === "es" ? "Evidencia · toda" : "Evidence · all"}
           options={tiers.map((t) => ({ value: t.key, label: `${t[locale]} · ${t.count}` }))}
         />
+        {/* Los cuatro selects ya ocupan 964 de los 1120px del contenedor, así
+            que la caja SIEMPRE cae a la línea siguiente: los ~150px que
+            sobran no alcanzan para un campo de texto usable. Ancho fijo (no
+            `flex-1`) para que al envolver no se estire a los 1120 y siga
+            leyéndose como parte del grupo de filtros. */}
+        <div className="relative w-full sm:w-72">
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={
+              locale === "es" ? "Buscar caso, país, año…" : "Search case, country, year…"
+            }
+            aria-label={
+              locale === "es"
+                ? "Buscar caso por nombre, país o año"
+                : "Search case by name, country or year"
+            }
+            className={`block min-h-[44px] w-full border py-2 pl-3 pr-10 font-mono text-sm placeholder:text-muted focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+              query
+                ? "border-accent/50 bg-accent/10 text-accent"
+                : "border-border bg-panel text-text"
+            }`}
+          />
+          {query && (
+            <button
+              type="button"
+              onClick={() => setQuery("")}
+              aria-label={locale === "es" ? "Limpiar búsqueda" : "Clear search"}
+              className="absolute right-1 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center text-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <span aria-hidden>×</span>
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Sub-faceta (drill-down): con qué se confundió. Solo bajo «Misidentificación». */}

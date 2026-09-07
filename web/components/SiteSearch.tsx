@@ -12,7 +12,12 @@ import { T } from "@/components/T";
  * - Desktop: a search ICON in the header that opens an overlay panel
  *   (input + results) anchored to it. The overlay is absolutely positioned
  *   so it never competes for header width — that keeps the top bar from
- *   overflowing/overlapping the wordmark.
+ *   overflowing/overlapping the wordmark. Se ancla por `left-0`, NO por
+ *   `right-0`: el icono vive pegado al wordmark, en el extremo izquierdo
+ *   del header, así que anclarlo por el borde derecho empujaba los 320-384px
+ *   del panel fuera del viewport y recortaba input, resultados y pie de
+ *   atajos. Si el icono se mueve al extremo derecho del header, el ancla
+ *   tiene que volver a `right-0`.
  * - Mobile: an always-visible input inside the nav drawer.
  * - Lazy-loads /search-index.json on first open (no impact on First Load JS).
  * - Fuse.js fuzzy match; indexes cases, researchers, posts, patterns,
@@ -344,7 +349,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
         <SearchIcon />
       </button>
       {expanded && (
-        <div className="absolute right-0 top-full z-50 mt-2 w-80 border-2 border-text bg-bg shadow-xl md:w-96">
+        <div className="absolute left-0 top-full z-50 mt-2 w-80 border-2 border-text bg-bg shadow-xl md:w-96">
           <label className="sr-only" htmlFor="site-search">
             {srLabel}
           </label>
