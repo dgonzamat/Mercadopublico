@@ -168,9 +168,28 @@ export default function WorldMap({
           preferCanvas
           style={{ height: "100%", width: "100%", background: "#e8e4da" }}
         >
+          {/* Basemap gris claro de Esri, sin clave de API.
+            *
+            * Se dejó CARTO (`basemaps.cartocdn.com/light_all`) en sep 2026: pasó
+            * a exigir clave y empezó a servir la tesela con "API KEY REQUIRED"
+            * estampado encima, de modo que el mapa entero quedó rotulado con el
+            * error sobre cada continente.
+            *
+            * LECCIÓN, porque cuesta caro repetirla: esa tesela viene con
+            * **HTTP 200 y peso normal**. Verificar un proveedor por código de
+            * estado o por bytes descargados NO detecta el fallo —el primer
+            * diagnóstico de este bug dio "las teselas responden bien" por
+            * mirar solo el status—. Hay que abrir la imagen y mirarla.
+            *
+            * maxNativeZoom=16 porque el servicio de Esri se agota ahí: más
+            * arriba devuelve un placeholder "Map data not yet available", que
+            * sería el mismo bug con otra cara. Con maxNativeZoom Leaflet escala
+            * la última tesela real hasta el zoom 18 en vez de pedirla. */}
           <TileLayer
-            attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            attribution='Tiles &copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, DeLorme, NAVTEQ'
+            url="https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+            maxNativeZoom={16}
+            maxZoom={18}
           />
           <FitBounds points={points} depKey={depKey} />
           {shown.map((c) => (
