@@ -9,6 +9,7 @@ import { RegionFilter } from "@/components/RegionFilter";
 import { OfficialAgencies } from "@/components/OfficialAgencies";
 import { ContractorsShowcase } from "@/components/ContractorsShowcase";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
+import { searchKey } from "@/lib/searchKey";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 export const metadata = {
@@ -72,19 +73,6 @@ const sections: SectionDef[] = [
       "Unlike the previous sections, here the subject is not the one investigating the phenomenon but the one who says they lived it: abductees, contactees, and those who merely saw an entity up close, all in one group. They are ordered by the documentary weight of the associated file —witnesses, institutional evaluation, cost incurred—, not by the plausibility of the account: the section includes cases their own protagonist ended up denying.",
   },
 ];
-
-/**
- * Clave de búsqueda del actor, normalizada en el SERVIDOR (minúsculas, sin
- * diacríticos) para que el filtro del cliente compare sin transformar nada:
- * así "antonio" encuentra "Antônio" y "valdes" encuentra "Valdés".
- */
-function searchKey(...parts: string[]): string {
-  return parts
-    .join(" ")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "");
-}
 
 export default function ResearchersPage() {
   return <ResearchersView locale="en" />;
