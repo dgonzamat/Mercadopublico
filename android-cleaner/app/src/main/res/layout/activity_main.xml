@@ -258,6 +258,48 @@
                         android:textColor="?android:attr/textColorSecondary"
                         tools:text="Encontramos 320 archivos que probablemente no necesitas. Revisa cada grupo antes de limpiar." />
 
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/scopeBanner"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="?attr/colorPrimaryContainer"
+                        app:cardCornerRadius="20dp"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/scope_banner_title"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="?attr/colorOnPrimaryContainer" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/scope_banner_body"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="?attr/colorOnPrimaryContainer" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/scopeBannerButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/scope_banner_button"
+                                app:icon="@drawable/ic_folder" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
                     <LinearLayout
                         android:id="@+id/categoryContainer"
                         android:layout_width="match_parent"

@@ -119,4 +119,14 @@
     <string name="cache_cleared">Cache cleared</string>
     <string name="cache_not_cleared">Cache was not cleared</string>
     <string name="cache_not_available">Your phone doesn\'t offer this option. Look in Settings › Storage.</string>
+
+    <string name="scope_gallery">We checked the gallery only.</string>
+    <string name="scope_files">We checked the gallery and %1$d files on the phone.</string>
+    <string name="scope_full">We checked the gallery, %1$d files on the phone and your apps.</string>
+    <string name="scope_banner_title">Only the gallery was analyzed</string>
+    <string name="scope_banner_body">To also find temp files, installers, old downloads and large files, enable "All files access" and come back: the analysis repeats by itself.</string>
+    <string name="scope_banner_button">Enable and analyze everything</string>
+    <string name="allfiles_not_granted">All files access was not enabled; we analyzed the gallery only.</string>
+    <string name="retry">Retry</string>
+    <string name="analyze_none">Check at least one group</string>
 </resources>

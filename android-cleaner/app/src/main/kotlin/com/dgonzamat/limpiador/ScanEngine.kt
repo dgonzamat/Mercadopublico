@@ -12,10 +12,20 @@ object ScanEngine {
     var allFilesAccess: (Context) -> Boolean = { Environment.isExternalStorageManager() }
     var usageAccess: (Context) -> Boolean = { AppScanner.hasUsageAccess(it) }
 
-    suspend fun scan(context: Context, onProgress: suspend (ScanProgress) -> Unit): List<JunkItem> = withContext(Dispatchers.IO) {
+    val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.TINY, Category.LARGE_VIDEOS)
+    val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS)
+
+    /** Escanea solo los grupos en [enabled] (por defecto, todos). */
+    suspend fun scan(
+        context: Context,
+        enabled: Set<Category> = Category.entries.toSet(),
+        onProgress: suspend (ScanProgress) -> Unit,
+    ): ScanResult = withContext(Dispatchers.IO) {
         val out = mutableListOf<JunkItem>()
-        out += JunkScanner(context.contentResolver).scan(onProgress)
-        if (allFilesAccess(context)) {
+        if (enabled.any { it in MEDIA_CATEGORIES }) out += JunkScanner(context.contentResolver).scan(onProgress)
+        val allFiles = allFilesAccess(context)
+        var visited = 0
+        if (allFiles && enabled.any { it in FILE_CATEGORIES }) {
             onProgress(ScanProgress.Files(0))
             val strings = FileScanner.Strings(
                 emptyDir = context.getString(R.string.note_empty_dir),
@@ -27,12 +37,18 @@ object ScanEngine {
             val fs = FileScanner(storageRoot(), strings = strings)
             var pending = -1
             out += fs.scan { pending = it }
+            visited = fs.visited
             if (pending >= 0) onProgress(ScanProgress.Files(pending))
         }
-        if (usageAccess(context)) {
+        val usage = usageAccess(context)
+        if (usage && Category.UNUSED_APPS in enabled) {
             onProgress(ScanProgress.Apps)
             out += AppScanner(context).scan()
         }
-        out.sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.size })
+        ScanResult(
+            out.filter { it.category in enabled }
+                .sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.size }),
+            ScanScope(allFiles = allFiles, usage = usage, filesVisited = visited),
+        )
     }
 }

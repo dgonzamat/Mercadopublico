@@ -22,14 +22,16 @@ Más una sección **Más espacio** con el vaciado de **caché de todas las apps*
 
 ## Cómo se usa
 
-1. **Inicio**: anillo con el espacio usado/libre del teléfono y un solo botón, «Analizar mi galería».
+1. **Inicio**: anillo con el espacio usado/libre, la lista de los nueve grupos con una casilla cada uno (se recuerdan) y el botón «Analizar mi teléfono».
 2. **Análisis**: indicador animado con mensajes de progreso («Comparando repetidos 40 de 120»).
 3. **Resultados**: titular «Puedes liberar X» y una tarjeta por grupo con ícono, cantidad, tamaño y un interruptor para incluirlo o no. Tocar la tarjeta abre la **revisión en cuadrícula**: miniaturas (foto, ícono del APK o de la app), toque para marcar/desmarcar, mantener presionado para ver la foto, la ruta y fecha del archivo o la información de la app; botón Todos/Ninguno. Debajo, la sección **Más espacio**.
 4. **Limpiar**: botón fijo abajo con el tamaño a liberar → confirmación de la app → confirmación de Android → pantalla «¡Listo! Liberaste X».
 
+Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo dicen arriba con un aviso y un botón para activarlo; el subtítulo indica siempre el alcance («Revisamos la galería y N archivos del teléfono»).
+
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.1.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.2.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 

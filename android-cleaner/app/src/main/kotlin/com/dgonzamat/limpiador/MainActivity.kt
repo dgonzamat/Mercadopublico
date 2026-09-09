@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
     /** Ya se ofreció «todos los archivos»; no volver a insistir en esta sesión. */
     private var allFilesOffered = false
     private var returningFromSettings = false
+    /** El usuario fue a Ajustes a activar «todos los archivos»: al volver, avisar si no quedó activo. */
+    private var wentForAllFiles = false
 
     // ---- limpieza en curso ----
     private val pendingMedia = ArrayDeque<List<JunkItem>>()
@@ -111,6 +113,13 @@ class MainActivity : AppCompatActivity() {
         refreshStorage()
         if (returningFromSettings) {
             returningFromSettings = false
+            if (wentForAllFiles && !ScanEngine.allFilesAccess(this)) {
+                wentForAllFiles = false
+                Snackbar.make(b.root, R.string.allfiles_not_granted, Snackbar.LENGTH_LONG)
+                    .setAction(R.string.retry) { openAllFilesSettings(generalList = true) }
+                    .show()
+            }
+            wentForAllFiles = false
             requestOrScan()
         } else if (screen == Screen.RESULTS) {
             renderResults()
@@ -137,9 +146,8 @@ class MainActivity : AppCompatActivity() {
         b.bottomBar.visibility = if (s == Screen.SCANNING) View.INVISIBLE else View.VISIBLE
         when (s) {
             Screen.WELCOME -> {
-                b.primaryButton.isEnabled = true
-                b.primaryButton.text = getString(R.string.analyze)
                 b.primaryButton.setIconResource(R.drawable.ic_search)
+                updateWelcomeButton()
             }
             Screen.RESULTS -> {
                 b.primaryButton.setIconResource(R.drawable.ic_delete)
@@ -154,16 +162,42 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /** Lista de lo que se va a buscar, para que el inicio no sea solo un botón. */
+    // ---- qué buscar (casillas del inicio, se recuerdan) ----
+
+    private val prefs by lazy { getSharedPreferences("limpiador", MODE_PRIVATE) }
+
+    private fun enabledCategories(): Set<Category> =
+        Category.entries.filter { prefs.getBoolean("scan_" + it.name, true) }.toSet()
+
+    private fun setEnabled(cat: Category, enabled: Boolean) {
+        prefs.edit().putBoolean("scan_" + cat.name, enabled).apply()
+    }
+
+    /** Lista de lo que se va a buscar, con casilla por grupo. */
     private fun renderWelcomeGroups() {
         b.welcomeGroups.removeAllViews()
+        val enabled = enabledCategories()
         for (cat in Category.entries) {
             val row = ItemWelcomeRowBinding.inflate(layoutInflater, b.welcomeGroups, false)
             row.icon.setImageResource(cat.iconRes)
             row.title.text = getString(cat.titleRes)
             row.tag.text = getString(if (cat.preselected) R.string.welcome_tag_auto else R.string.welcome_tag_review)
+            row.check.isChecked = cat in enabled
+            row.row.setOnClickListener {
+                row.check.isChecked = !row.check.isChecked
+                setEnabled(cat, row.check.isChecked)
+                updateWelcomeButton()
+            }
             b.welcomeGroups.addView(row.root)
         }
+        updateWelcomeButton()
+    }
+
+    private fun updateWelcomeButton() {
+        if (screen != Screen.WELCOME) return
+        val any = enabledCategories().isNotEmpty()
+        b.primaryButton.isEnabled = any
+        b.primaryButton.text = getString(if (any) R.string.analyze else R.string.analyze_none)
     }
 
     private fun onPrimaryAction() {
@@ -232,19 +266,27 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 
-    private fun openAllFilesSettings() {
+    /**
+     * Abre el ajuste «Acceso a todos los archivos». Primero la pantalla de esta app;
+     * con [generalList] (o si esa no existe) la lista general, que en algunos
+     * fabricantes es la única que muestra el interruptor.
+     */
+    private fun openAllFilesSettings(generalList: Boolean = false) {
         returningFromSettings = true
+        wentForAllFiles = true
         val specific = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, Uri.parse("package:$packageName"))
-        try {
-            startActivity(specific)
-        } catch (e: ActivityNotFoundException) {
+        val general = Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION)
+        for (intent in if (generalList) listOf(general, specific) else listOf(specific, general)) {
             try {
-                startActivity(Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION))
-            } catch (e2: ActivityNotFoundException) {
-                returningFromSettings = false
-                requestOrScan()
+                startActivity(intent)
+                return
+            } catch (e: ActivityNotFoundException) {
+                // probar la siguiente
             }
         }
+        returningFromSettings = false
+        wentForAllFiles = false
+        Snackbar.make(b.root, R.string.open_failed, Snackbar.LENGTH_LONG).show()
     }
 
     private fun openUsageAccessSettings() {
@@ -286,7 +328,7 @@ class MainActivity : AppCompatActivity() {
         b.scanStatus.text = getString(R.string.scanning_reading)
         scanJob = lifecycleScope.launch {
             try {
-                val items = ScanEngine.scan(this@MainActivity) { p ->
+                val result = ScanEngine.scan(this@MainActivity, enabledCategories()) { p ->
                     b.scanStatus.text = when (p) {
                         ScanProgress.Reading -> getString(R.string.scanning_reading)
                         is ScanProgress.Found -> resources.getQuantityString(R.plurals.scanning_found, p.total, p.total)
@@ -295,7 +337,8 @@ class MainActivity : AppCompatActivity() {
                         ScanProgress.Apps -> getString(R.string.scanning_apps)
                     }
                 }
-                ScanStore.items = items
+                ScanStore.items = result.items
+                ScanStore.scope = result.scope
                 show(Screen.RESULTS)
             } catch (e: Exception) {
                 show(Screen.WELCOME)
@@ -308,14 +351,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun renderResults() {
         val all = ScanStore.items
+        val scope = ScanStore.scope
         b.categoryContainer.removeAllViews()
+        val scopeText = when {
+            scope.allFiles && scope.usage -> getString(R.string.scope_full, scope.filesVisited)
+            scope.allFiles -> getString(R.string.scope_files, scope.filesVisited)
+            else -> getString(R.string.scope_gallery)
+        }
         if (all.isEmpty()) {
             b.resultsTitle.text = getString(R.string.results_clean_title)
-            b.resultsSubtitle.text = getString(R.string.results_clean_subtitle)
+            b.resultsSubtitle.text = getString(R.string.results_clean_subtitle) + " " + scopeText
         } else {
             b.resultsTitle.text = getString(R.string.results_title, formatSize(all.sumOf { it.size }))
-            b.resultsSubtitle.text = resources.getQuantityString(R.plurals.results_subtitle, all.size, all.size)
+            b.resultsSubtitle.text = resources.getQuantityString(R.plurals.results_subtitle, all.size, all.size) + " " + scopeText
         }
+        // Aviso destacado: sin «todos los archivos» solo se revisó la galería (si pidió grupos de archivos).
+        val wantsFiles = enabledCategories().any { it in ScanEngine.FILE_CATEGORIES }
+        b.scopeBanner.visibility = if (scope.allFiles || !wantsFiles) View.GONE else View.VISIBLE
+        b.scopeBannerButton.setOnClickListener { openAllFilesSettings() }
         for (cat in Category.entries) {
             val group = ScanStore.byCategory(cat)
             if (group.isEmpty()) continue
@@ -352,11 +405,8 @@ class MainActivity : AppCompatActivity() {
             t.button.setOnClickListener { action() }
             b.toolsContainer.addView(t.root)
         }
-        val allFiles = ScanEngine.allFilesAccess(this)
-        if (allFiles) {
+        if (ScanEngine.allFilesAccess(this)) {
             tool(R.drawable.ic_memory, R.string.tool_cache_title, R.string.tool_cache_desc, R.string.tool_cache_button) { clearAllAppsCache() }
-        } else {
-            tool(R.drawable.ic_folder, R.string.tool_allfiles_title, R.string.tool_allfiles_desc, R.string.tool_enable) { openAllFilesSettings() }
         }
         if (!ScanEngine.usageAccess(this)) {
             tool(R.drawable.ic_apps, R.string.tool_usage_title, R.string.tool_usage_desc, R.string.tool_enable) { openUsageAccessSettings() }

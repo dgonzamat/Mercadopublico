@@ -174,17 +174,30 @@ class ToolsFlowTest {
         scenario.onActivity { a ->
             waitUntil("resultados solo galería") { a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE }
             assertEquals(4, a.v<ViewGroup>(R.id.categoryContainer).childCount) // solo grupos de galería
+            // Aviso destacado arriba: solo galería, con botón para activar; el subtítulo dice el alcance.
+            assertEquals(View.VISIBLE, a.v<View>(R.id.scopeBanner).visibility)
+            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.endsWith(a.getString(R.string.scope_gallery)))
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(2, tools.size)
-            assertEquals(a.getString(R.string.tool_allfiles_title), tools[0].findViewById<TextView>(R.id.title).text.toString())
-            assertEquals(a.getString(R.string.tool_usage_title), tools[1].findViewById<TextView>(R.id.title).text.toString())
+            assertEquals(1, tools.size)
+            assertEquals(a.getString(R.string.tool_usage_title), tools[0].findViewById<TextView>(R.id.title).text.toString())
             Screenshots.snap(a.window.decorView, "10-resultados-sin-permisos")
-            tools[1].findViewById<MaterialButton>(R.id.button).performClick()
-            idle()
-            assertEquals(Settings.ACTION_USAGE_ACCESS_SETTINGS, shadowOf(a).nextStartedActivity.action)
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()
             idle()
+            assertEquals(Settings.ACTION_USAGE_ACCESS_SETTINGS, shadowOf(a).nextStartedActivity.action)
+            a.v<MaterialButton>(R.id.scopeBannerButton).performClick()
+            idle()
             assertEquals(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, shadowOf(a).nextStartedActivity.action)
+        }
+        // Esta vez el usuario sí activa el permiso: al volver se analiza todo sin tocar nada.
+        ScanEngine.allFilesAccess = { true }
+        scenario.moveToState(Lifecycle.State.STARTED)
+        scenario.moveToState(Lifecycle.State.RESUMED)
+        scenario.onActivity { a ->
+            waitUntil("re-análisis completo") {
+                a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE && ScanStore.scope.allFiles
+            }
+            assertEquals(View.GONE, a.v<View>(R.id.scopeBanner).visibility)
+            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.contains("archivos del teléfono"))
         }
     }
 }

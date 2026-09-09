@@ -37,7 +37,9 @@ class FileScanner(
         const val LARGE_MIN_BYTES = 100L * 1024 * 1024
     }
 
-    private var visited = 0
+    /** Entradas visitadas en el último escaneo (para informar el alcance). */
+    var visited = 0
+        private set
 
     fun scan(onProgress: (Int) -> Unit = {}): List<JunkItem> {
         val out = mutableListOf<JunkItem>()
@@ -67,7 +69,11 @@ class FileScanner(
                 }
                 continue
             }
-            classify(f, downloadDir)?.let { out += it }
+            try {
+                classify(f, downloadDir)?.let { out += it }
+            } catch (e: Exception) {
+                // Un archivo ilegible no debe abortar el recorrido completo.
+            }
         }
         return false
     }

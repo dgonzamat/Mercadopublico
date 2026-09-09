@@ -36,7 +36,7 @@ class DarkThemeTest {
         shadowOf(ApplicationProvider.getApplicationContext<Application>())
             .grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
         // Resultados precalculados: la Activity arranca directo en esa pantalla.
-        ScanStore.items = runBlocking { ScanEngine.scan(ApplicationProvider.getApplicationContext()) {} }
+        ScanStore.items = runBlocking { ScanEngine.scan(ApplicationProvider.getApplicationContext()) {} }.items
     }
 
     @After

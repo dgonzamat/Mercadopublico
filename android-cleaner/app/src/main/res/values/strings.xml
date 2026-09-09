@@ -127,4 +127,15 @@
     <string name="cache_cleared">Caché vaciada</string>
     <string name="cache_not_cleared">No se vació la caché</string>
     <string name="cache_not_available">Tu teléfono no ofrece esta opción. Búscala en Ajustes › Almacenamiento.</string>
+
+    <!-- Alcance del análisis -->
+    <string name="scope_gallery">Revisamos solo la galería.</string>
+    <string name="scope_files">Revisamos la galería y %1$d archivos del teléfono.</string>
+    <string name="scope_full">Revisamos la galería, %1$d archivos del teléfono y tus apps.</string>
+    <string name="scope_banner_title">Solo se analizó la galería</string>
+    <string name="scope_banner_body">Para buscar también temporales, instaladores, descargas viejas y archivos grandes, activa «Acceso a todos los archivos» y vuelve: el análisis se repite solo.</string>
+    <string name="scope_banner_button">Activar y analizar todo</string>
+    <string name="allfiles_not_granted">El acceso a todos los archivos no quedó activado; analizamos solo la galería.</string>
+    <string name="retry">Reintentar</string>
+    <string name="analyze_none">Marca al menos un grupo</string>
 </resources>

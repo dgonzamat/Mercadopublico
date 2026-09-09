@@ -236,6 +236,28 @@ class MainFlowTest {
     }
 
     @Test
+    fun desmarcar_un_grupo_en_el_inicio_lo_excluye_del_analisis() {
+        ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
+            idle()
+            val rows = a.v<android.view.ViewGroup>(R.id.welcomeGroups)
+            assertEquals(Category.entries.size, rows.childCount)
+            val heavyVideos = rows.getChildAt(Category.LARGE_VIDEOS.ordinal)
+            assertTrue(heavyVideos.findViewById<com.google.android.material.checkbox.MaterialCheckBox>(R.id.check).isChecked)
+            heavyVideos.performClick() // la fila entera es la casilla
+            idle()
+            assertFalse(heavyVideos.findViewById<com.google.android.material.checkbox.MaterialCheckBox>(R.id.check).isChecked)
+            Screenshots.snap(a.window.decorView, "01b-inicio-grupo-desmarcado")
+
+            a.v<MaterialButton>(R.id.primaryButton).performClick()
+            waitUntil("resultados") { a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE }
+            assertEquals(7, a.v<android.view.ViewGroup>(R.id.categoryContainer).childCount)
+            assertTrue(ScanStore.items.none { it.category == Category.LARGE_VIDEOS })
+            // La elección se recuerda para la próxima vez.
+            assertFalse(a.getSharedPreferences("limpiador", 0).getBoolean("scan_LARGE_VIDEOS", true))
+        }
+    }
+
+    @Test
     fun sin_permiso_muestra_aviso_y_no_escanea() {
         val app = ApplicationProvider.getApplicationContext<Application>()
         shadowOf(app).denyPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)

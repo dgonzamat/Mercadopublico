@@ -66,9 +66,15 @@ sealed class ScanProgress {
     object Apps : ScanProgress()
 }
 
+/** Qué alcanzó el último escaneo, para decirlo en pantalla. */
+data class ScanScope(val allFiles: Boolean = false, val usage: Boolean = false, val filesVisited: Int = 0)
+
+data class ScanResult(val items: List<JunkItem>, val scope: ScanScope)
+
 /** Resultado del último escaneo, compartido entre pantallas (en memoria). */
 object ScanStore {
     var items: List<JunkItem> = emptyList()
+    var scope: ScanScope = ScanScope()
 
     fun byCategory(cat: Category): List<JunkItem> = items.filter { it.category == cat }
     fun selected(): List<JunkItem> = items.filter { it.selected }
