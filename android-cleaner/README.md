@@ -20,11 +20,28 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que esca
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v1.1.apk` en el teléfono.
+1. Descarga `dist/limpiador-v1.2.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
 Requiere **Android 11 o superior** (`minSdk 30`). El APK está firmado con la clave de desarrollo versionada en `keystore/debug.keystore` (no es un secreto): así el APK local y el de CI comparten firma y las actualizaciones se instalan encima sin desinstalar.
+
+## Capturas (renderizadas por las pruebas)
+
+| Inicio | Resultados | Revisión | Listo |
+|---|---|---|---|
+| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/05-revision-una-desmarcada.png) | ![](docs/screenshots/06-listo.png) |
+
+## Pruebas
+
+```bash
+./gradlew testReleaseUnitTest   # Robolectric: Activities y layouts reales en la JVM
+```
+
+- `JunkScannerTest`: galería falsa (proveedor `media` simulado) con fotos normales, capturas, un duplicado byte a byte, un falso duplicado del mismo tamaño, miniaturas, un archivo vacío y un video pesado. Verifica la clasificación, la preselección y el progreso.
+- `MainFlowTest`: flujo completo inicio → análisis → resultados → tarjetas e interruptores → cuadrícula (marcar, Todos/Ninguno, pulsación larga) → diálogo → petición de borrado al sistema → pantalla Listo; y el caso de permiso denegado. Renderiza cada pantalla a PNG en `app/build/screenshots/` (modo gráfico nativo de Robolectric).
+
+No sustituye una prueba en teléfono real: el diálogo de borrado de Android y las miniaturas reales solo se ven en un dispositivo.
 
 ## Compilar
 

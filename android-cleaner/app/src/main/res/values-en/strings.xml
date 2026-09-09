@@ -14,16 +14,25 @@
 
     <string name="scanning_title">Analyzing your gallery…</string>
     <string name="scanning_reading">Reading photos and videos</string>
-    <string name="scanning_found">%1$d files found. Looking for duplicates…</string>
+    <plurals name="scanning_found">
+        <item quantity="one">%1$d file found. Looking for duplicates…</item>
+        <item quantity="other">%1$d files found. Looking for duplicates…</item>
+    </plurals>
     <string name="scanning_hashing">Comparing duplicates (%1$d of %2$d)</string>
     <string name="scanning_wait">This can take a moment if you have many photos.</string>
     <string name="status_error">Something went wrong: %1$s</string>
 
     <string name="results_title">You can free up %1$s</string>
-    <string name="results_subtitle">We found %1$d files you probably don\'t need. Review each group and tap Clean.</string>
+    <plurals name="results_subtitle">
+        <item quantity="one">We found %1$d file you probably don\'t need. Review it and tap Clean.</item>
+        <item quantity="other">We found %1$d files you probably don\'t need. Review each group and tap Clean.</item>
+    </plurals>
     <string name="results_clean_title">Your gallery is tidy</string>
     <string name="results_clean_subtitle">No screenshots, duplicates or useless images found. 🎉</string>
-    <string name="category_stats">%1$d files · %2$s</string>
+    <plurals name="category_stats">
+        <item quantity="one">%1$d file · %2$s</item>
+        <item quantity="other">%1$d files · %2$s</item>
+    </plurals>
     <string name="category_stats_partial">%1$d of %2$d selected · %3$s</string>
     <string name="review">Review</string>
     <string name="include_in_clean">Include in cleanup</string>
@@ -49,10 +58,16 @@
     <string name="open_failed">Could not open the file</string>
 
     <string name="confirm_title">Clean %1$s?</string>
-    <string name="confirm_message">%1$d files will be deleted. Android will ask you to confirm once more. If your phone has a trash bin, you can recover them for 30 days.</string>
+    <plurals name="confirm_message">
+        <item quantity="one">%1$d file will be deleted. Android will ask you to confirm once more. If your phone has a trash bin, you can recover it for 30 days.</item>
+        <item quantity="other">%1$d files will be deleted. Android will ask you to confirm once more. If your phone has a trash bin, you can recover them for 30 days.</item>
+    </plurals>
     <string name="confirm_ok">Yes, clean</string>
     <string name="done_title">Done! You freed %1$s</string>
-    <string name="done_subtitle">%1$d files were deleted. Your gallery is lighter now.</string>
+    <plurals name="done_subtitle">
+        <item quantity="one">%1$d file was deleted. Your gallery is lighter now.</item>
+        <item quantity="other">%1$d files were deleted. Your gallery is lighter now.</item>
+    </plurals>
     <string name="delete_cancelled">Nothing was deleted. You can try again anytime.</string>
     <string name="scan_again">Analyze again</string>
 </resources>

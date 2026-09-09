@@ -130,8 +130,10 @@ class MainActivity : AppCompatActivity() {
             val stat = StatFs(Environment.getDataDirectory().absolutePath)
             val total = stat.totalBytes
             val free = stat.availableBytes
+            if (total <= 0) { b.storageCard.visibility = View.GONE; return }
+            b.storageCard.visibility = View.VISIBLE
             val used = total - free
-            val pct = if (total > 0) (used * 100 / total).toInt() else 0
+            val pct = (used * 100 / total).toInt()
             b.storageRing.setProgressCompat(pct, true)
             b.storagePercent.text = "$pct%"
             b.storageUsed.text = getString(R.string.storage_used, formatSize(used), formatSize(total))
@@ -184,7 +186,7 @@ class MainActivity : AppCompatActivity() {
                 val items = JunkScanner(contentResolver).scan { p ->
                     b.scanStatus.text = when (p) {
                         ScanProgress.Reading -> getString(R.string.scanning_reading)
-                        is ScanProgress.Found -> getString(R.string.scanning_found, p.total)
+                        is ScanProgress.Found -> resources.getQuantityString(R.plurals.scanning_found, p.total, p.total)
                         is ScanProgress.Hashing -> getString(R.string.scanning_hashing, p.done, p.total)
                     }
                 }
@@ -209,7 +211,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
         b.resultsTitle.text = getString(R.string.results_title, formatSize(all.sumOf { it.file.size }))
-        b.resultsSubtitle.text = getString(R.string.results_subtitle, all.size)
+        b.resultsSubtitle.text = resources.getQuantityString(R.plurals.results_subtitle, all.size, all.size)
         for (cat in Category.entries) {
             val group = ScanStore.byCategory(cat)
             if (group.isEmpty()) continue
@@ -236,7 +238,7 @@ class MainActivity : AppCompatActivity() {
     private fun bindCardStats(card: ItemCategoryCardBinding, group: List<JunkItem>) {
         val sel = group.filter { it.selected }
         card.stats.text = if (sel.size == group.size || sel.isEmpty()) {
-            getString(R.string.category_stats, group.size, formatSize(group.sumOf { it.file.size }))
+            resources.getQuantityString(R.plurals.category_stats, group.size, group.size, formatSize(group.sumOf { it.file.size }))
         } else {
             getString(R.string.category_stats_partial, sel.size, group.size, formatSize(sel.sumOf { it.file.size }))
         }
@@ -257,7 +259,7 @@ class MainActivity : AppCompatActivity() {
         val size = formatSize(sel.sumOf { it.file.size })
         MaterialAlertDialogBuilder(this)
             .setTitle(getString(R.string.confirm_title, size))
-            .setMessage(getString(R.string.confirm_message, sel.size))
+            .setMessage(resources.getQuantityString(R.plurals.confirm_message, sel.size, sel.size))
             .setNegativeButton(android.R.string.cancel, null)
             .setPositiveButton(R.string.confirm_ok) { _, _ -> deleteSelected(sel) }
             .show()
@@ -293,7 +295,7 @@ class MainActivity : AppCompatActivity() {
         refreshStorage()
         if (deletedCount > 0) {
             b.doneTitle.text = getString(R.string.done_title, formatSize(freedBytes))
-            b.doneSubtitle.text = getString(R.string.done_subtitle, deletedCount)
+            b.doneSubtitle.text = resources.getQuantityString(R.plurals.done_subtitle, deletedCount, deletedCount)
             ScanStore.items = emptyList()
             show(Screen.DONE)
         } else {

@@ -17,17 +17,26 @@
     <!-- Análisis -->
     <string name="scanning_title">Analizando tu galería…</string>
     <string name="scanning_reading">Leyendo fotos y videos</string>
-    <string name="scanning_found">%1$d archivos encontrados. Buscando repetidos…</string>
+    <plurals name="scanning_found">
+        <item quantity="one">%1$d archivo encontrado. Buscando repetidos…</item>
+        <item quantity="other">%1$d archivos encontrados. Buscando repetidos…</item>
+    </plurals>
     <string name="scanning_hashing">Comparando repetidos (%1$d de %2$d)</string>
     <string name="scanning_wait">Esto puede tardar un poco si tienes muchas fotos.</string>
     <string name="status_error">Algo salió mal: %1$s</string>
 
     <!-- Resultados -->
     <string name="results_title">Puedes liberar %1$s</string>
-    <string name="results_subtitle">Encontramos %1$d archivos que probablemente no necesitas. Revisa cada grupo y toca Limpiar.</string>
+    <plurals name="results_subtitle">
+        <item quantity="one">Encontramos %1$d archivo que probablemente no necesitas. Revísalo y toca Limpiar.</item>
+        <item quantity="other">Encontramos %1$d archivos que probablemente no necesitas. Revisa cada grupo y toca Limpiar.</item>
+    </plurals>
     <string name="results_clean_title">Tu galería está en orden</string>
     <string name="results_clean_subtitle">No encontramos capturas, repetidos ni imágenes inservibles. 🎉</string>
-    <string name="category_stats">%1$d archivos · %2$s</string>
+    <plurals name="category_stats">
+        <item quantity="one">%1$d archivo · %2$s</item>
+        <item quantity="other">%1$d archivos · %2$s</item>
+    </plurals>
     <string name="category_stats_partial">%1$d de %2$d seleccionados · %3$s</string>
     <string name="review">Revisar</string>
     <string name="include_in_clean">Incluir en la limpieza</string>
@@ -56,10 +65,16 @@
 
     <!-- Limpieza -->
     <string name="confirm_title">¿Limpiar %1$s?</string>
-    <string name="confirm_message">Se eliminarán %1$d archivos. Android te pedirá confirmar una vez más. Si tu teléfono tiene papelera, podrás recuperarlos durante 30 días.</string>
+    <plurals name="confirm_message">
+        <item quantity="one">Se eliminará %1$d archivo. Android te pedirá confirmar una vez más. Si tu teléfono tiene papelera, podrás recuperarlo durante 30 días.</item>
+        <item quantity="other">Se eliminarán %1$d archivos. Android te pedirá confirmar una vez más. Si tu teléfono tiene papelera, podrás recuperarlos durante 30 días.</item>
+    </plurals>
     <string name="confirm_ok">Sí, limpiar</string>
     <string name="done_title">¡Listo! Liberaste %1$s</string>
-    <string name="done_subtitle">Se eliminaron %1$d archivos. Tu galería quedó más ligera.</string>
+    <plurals name="done_subtitle">
+        <item quantity="one">Se eliminó %1$d archivo. Tu galería quedó más ligera.</item>
+        <item quantity="other">Se eliminaron %1$d archivos. Tu galería quedó más ligera.</item>
+    </plurals>
     <string name="delete_cancelled">No se eliminó nada. Puedes volver a intentarlo cuando quieras.</string>
     <string name="scan_again">Analizar de nuevo</string>
 </resources>
