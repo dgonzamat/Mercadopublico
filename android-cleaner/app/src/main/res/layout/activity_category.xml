@@ -40,12 +40,13 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingBottom="8dp"
-        android:text="@string/grid_hint"
+        tools:text="@string/grid_hint_media"
         android:textAppearance="?attr/textAppearanceBodySmall"
         android:textColor="?android:attr/textColorSecondary" />
 

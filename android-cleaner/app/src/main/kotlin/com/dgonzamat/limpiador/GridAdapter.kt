@@ -21,12 +21,18 @@ class GridAdapter(
 
     inner class VH(private val b: ItemGridPhotoBinding) : RecyclerView.ViewHolder(b.root) {
         fun bind(item: JunkItem) {
-            val f = item.file
-            thumbs.load(f.uri, b.thumb, if (f.isVideo) R.drawable.ic_video else R.drawable.ic_image)
-            b.label.text = when (item.category) {
-                Category.DUPLICATES -> b.root.context.getString(R.string.note_duplicate_of, item.note)
-                Category.TINY -> item.note?.let { "$it · ${formatSize(f.size)}" } ?: formatSize(f.size)
-                else -> formatSize(f.size)
+            thumbs.load(item, b.thumb)
+            val ctx = b.root.context
+            b.label.text = when (item.kind) {
+                Kind.MEDIA -> when (item.category) {
+                    Category.DUPLICATES -> ctx.getString(R.string.note_duplicate_of, item.note)
+                    Category.TINY -> item.note?.let { "$it · ${formatSize(item.size)}" } ?: formatSize(item.size)
+                    else -> formatSize(item.size)
+                }
+                Kind.FILE, Kind.APP -> {
+                    val second = listOfNotNull(if (item.size == 0L && item.note != null) null else formatSize(item.size), item.note).joinToString(" · ")
+                    "${item.name}\n$second"
+                }
             }
             render(item)
             b.card.setOnClickListener {

@@ -14,6 +14,7 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.materialswitch.MaterialSwitch
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
@@ -31,12 +32,23 @@ import org.robolectric.shadows.ShadowDialog
 @Config(qualifiers = "es-rCL-w411dp-h891dp-xxhdpi", application = LimpiadorApp::class)
 class MainFlowTest {
 
+    private lateinit var storage: java.io.File
+
     @Before
     fun setUp() {
         FakeGallery.install()
         ScanStore.items = emptyList()
+        storage = FakeStorage.build()
+        ScanEngine.storageRoot = { storage }
+        ScanEngine.allFilesAccess = { true }
+        ScanEngine.usageAccess = { false }
         val app = ApplicationProvider.getApplicationContext<Application>()
         shadowOf(app).grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
+    }
+
+    @org.junit.After
+    fun tearDown() {
+        storage.deleteRecursively()
     }
 
     private fun idle() = shadowOf(Looper.getMainLooper()).idle()
@@ -82,35 +94,43 @@ class MainFlowTest {
             waitUntil("resultados") { a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE }
             // 3. Resultados: 4 tarjetas, título con el total, botón Limpiar con lo preseleccionado.
             val container = a.v<android.view.ViewGroup>(R.id.categoryContainer)
-            assertEquals(4, container.childCount)
+            assertEquals(8, container.childCount)
             val all = ScanStore.items
-            assertEquals(6, all.size)
+            assertEquals(15, all.size)
             val title = a.v<TextView>(R.id.resultsTitle).text.toString()
-            assertEquals(a.getString(R.string.results_title, formatSize(all.sumOf { it.file.size })), title)
+            assertEquals(a.getString(R.string.results_title, formatSize(all.sumOf { it.size })), title)
             val primary = a.v<MaterialButton>(R.id.primaryButton)
             assertTrue(primary.isEnabled)
-            val preselected = all.filter { it.selected }.sumOf { it.file.size }
+            val preselected = all.filter { it.selected }.sumOf { it.size }
             assertEquals(a.getString(R.string.clean_now, formatSize(preselected)), primary.text.toString())
 
             // El interruptor de "Videos pesados" arranca apagado; el de capturas, encendido.
             val cards = (0 until container.childCount).map { container.getChildAt(it) }
             val titles = cards.map { it.findViewById<TextView>(R.id.title).text.toString() }
             assertEquals(
-                listOf(R.string.cat_screenshots, R.string.cat_duplicates, R.string.cat_tiny, R.string.cat_large_videos).map(a::getString),
+                listOf(
+                    R.string.cat_screenshots, R.string.cat_duplicates, R.string.cat_tiny, R.string.cat_residue,
+                    R.string.cat_apk, R.string.cat_large_videos, R.string.cat_large_files, R.string.cat_old_downloads,
+                ).map(a::getString),
                 titles,
             )
+            // Herramientas: caché del sistema (hay acceso a archivos) y activar acceso de uso (no lo hay).
+            val tools = a.v<android.view.ViewGroup>(R.id.toolsContainer)
+            assertEquals(2, tools.childCount)
+            assertEquals(a.getString(R.string.tool_cache_title), tools.getChildAt(0).findViewById<TextView>(R.id.title).text.toString())
+            assertEquals(a.getString(R.string.tool_usage_title), tools.getChildAt(1).findViewById<TextView>(R.id.title).text.toString())
             assertEquals("1 archivo · 59 KB", cards[1].findViewById<TextView>(R.id.stats).text.toString())
             assertEquals("2 archivos · 879 KB", cards[0].findViewById<TextView>(R.id.stats).text.toString())
-            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.startsWith("Encontramos 6 archivos"))
+            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.startsWith("Encontramos 15 elementos"))
             assertTrue(cards[0].findViewById<MaterialSwitch>(R.id.toggle).isChecked)
-            assertFalse(cards[3].findViewById<MaterialSwitch>(R.id.toggle).isChecked)
+            assertFalse(cards[5].findViewById<MaterialSwitch>(R.id.toggle).isChecked)
             Screenshots.snap(a.window.decorView, "03-resultados")
 
             // Apagar capturas: el botón baja de tamaño y la tarjeta muestra el estado.
             cards[0].findViewById<MaterialSwitch>(R.id.toggle).performClick()
             idle()
             assertTrue(ScanStore.byCategory(Category.SCREENSHOTS).none { it.selected })
-            val sinCapturas = all.filter { it.selected }.sumOf { it.file.size }
+            val sinCapturas = all.filter { it.selected }.sumOf { it.size }
             assertEquals(a.getString(R.string.clean_now, formatSize(sinCapturas)), primary.text.toString())
             cards[0].findViewById<MaterialSwitch>(R.id.toggle).performClick()
             idle()
@@ -161,6 +181,31 @@ class MainFlowTest {
             assertEquals("image/*", view.type)
         }
 
+        // Revisión de una categoría de archivos: etiqueta con nombre y nota, pulsación larga muestra info.
+        val resIntent = Intent(ApplicationProvider.getApplicationContext(), CategoryActivity::class.java)
+            .putExtra(CategoryActivity.EXTRA_CATEGORY, Category.RESIDUE.ordinal)
+        ActivityScenario.launch<CategoryActivity>(resIntent).onActivity { c ->
+            idle()
+            val grid = c.v<androidx.recyclerview.widget.RecyclerView>(R.id.grid)
+            grid.measure(
+                View.MeasureSpec.makeMeasureSpec(grid.width, View.MeasureSpec.EXACTLY),
+                View.MeasureSpec.makeMeasureSpec(grid.height, View.MeasureSpec.EXACTLY),
+            )
+            grid.layout(grid.left, grid.top, grid.right, grid.bottom)
+            idle()
+            assertEquals(5, grid.adapter!!.itemCount)
+            assertEquals(c.getString(R.string.grid_hint_file), c.v<TextView>(R.id.hint).text.toString())
+            val first = grid.findViewHolderForAdapterPosition(0)!!.itemView
+            assertTrue(first.findViewById<TextView>(R.id.label).text.contains(".thumbnails"))
+            Screenshots.snap(c.window.decorView, "05b-revision-residuos")
+            first.performLongClick()
+            idle()
+            val info = ShadowDialog.getLatestDialog()
+            assertNotNull(info)
+            assertTrue(info.isShowing)
+            info.dismiss()
+        }
+
         // 5. Limpiar: diálogo de la app → petición al sistema → resultado OK → pantalla Listo.
         scenario.onActivity { a ->
             idle()
@@ -170,14 +215,17 @@ class MainFlowTest {
             val dialog = ShadowDialog.getLatestDialog()
             assertNotNull("diálogo de confirmación", dialog)
             assertTrue(dialog.isShowing)
-            (dialog as AlertDialog).getButton(AlertDialog.BUTTON_POSITIVE).performClick()
-            idle()
-            // La app pidió al sistema borrar (PendingIntent del proveedor falso) y espera el resultado.
-            val req = shadowOf(a).nextStartedActivityForResult
-            assertNotNull("petición de borrado al sistema", req)
             val selectedBefore = ScanStore.selected()
-            val bytesBefore = selectedBefore.sumOf { it.file.size }
-            shadowOf(a).receiveResult(req.intent, Activity.RESULT_OK, null)
+            val bytesBefore = selectedBefore.sumOf { it.size }
+            val files = selectedBefore.filter { it.kind == Kind.FILE }
+            assertTrue(files.isNotEmpty() && files.all { java.io.File(it.path!!).exists() })
+            (dialog as AlertDialog).getButton(AlertDialog.BUTTON_POSITIVE).performClick()
+            // 1. Los archivos se borran del disco de inmediato (en IO)…
+            var req: org.robolectric.shadows.ShadowActivity.IntentForResult? = null
+            waitUntil("petición de borrado al sistema") { req = shadowOf(a).nextStartedActivityForResult; req != null }
+            assertTrue(files.none { java.io.File(it.path!!).exists() })
+            // …2. y la galería pasa por el sistema (PendingIntent del proveedor falso).
+            shadowOf(a).receiveResult(req!!.intent, Activity.RESULT_OK, null)
             idle()
             assertEquals(View.VISIBLE, a.v<View>(R.id.doneGroup).visibility)
             assertEquals(a.getString(R.string.done_title, formatSize(bytesBefore)), a.v<TextView>(R.id.doneTitle).text.toString())
@@ -191,11 +239,17 @@ class MainFlowTest {
     fun sin_permiso_muestra_aviso_y_no_escanea() {
         val app = ApplicationProvider.getApplicationContext<Application>()
         shadowOf(app).denyPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
+        ScanEngine.allFilesAccess = { false }
         ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
             idle()
             a.v<MaterialButton>(R.id.primaryButton).performClick()
             idle()
-            // Se pidió el permiso al sistema; simulamos que el usuario lo niega.
+            // Sin «todos los archivos» primero se ofrece activarlo; el usuario elige solo la galería.
+            val offer = ShadowDialog.getLatestDialog() as AlertDialog
+            assertTrue(offer.isShowing)
+            offer.getButton(AlertDialog.BUTTON_NEGATIVE).performClick()
+            idle()
+            // Se pidió el permiso de fotos al sistema; simulamos que el usuario lo niega.
             val req = shadowOf(a).nextStartedActivityForResult
             assertNotNull(req)
             shadowOf(a).receiveResult(req.intent, Activity.RESULT_CANCELED, null)

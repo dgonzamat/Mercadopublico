@@ -2,6 +2,7 @@ package com.dgonzamat.limpiador
 
 import android.Manifest
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -9,7 +10,9 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.os.StatFs
+import android.os.storage.StorageManager
 import android.provider.MediaStore
+import android.provider.Settings
 import android.view.View
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
@@ -22,10 +25,14 @@ import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
 import com.dgonzamat.limpiador.databinding.ActivityMainBinding
 import com.dgonzamat.limpiador.databinding.ItemCategoryCardBinding
+import com.dgonzamat.limpiador.databinding.ItemToolCardBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,8 +42,13 @@ class MainActivity : AppCompatActivity() {
     private var screen = Screen.WELCOME
     private var scanJob: Job? = null
 
-    /** Lotes pendientes de borrado (el diálogo del sistema se lanza por lote). */
-    private val pendingBatches = ArrayDeque<List<Uri>>()
+    /** Ya se ofreció «todos los archivos»; no volver a insistir en esta sesión. */
+    private var allFilesOffered = false
+    private var returningFromSettings = false
+
+    // ---- limpieza en curso ----
+    private val pendingMedia = ArrayDeque<List<JunkItem>>()
+    private val pendingApps = ArrayDeque<JunkItem>()
     private var freedBytes = 0L
     private var deletedCount = 0
 
@@ -47,18 +59,36 @@ class MainActivity : AppCompatActivity() {
 
     private val deleteLauncher =
         registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { result ->
-            val batch = pendingBatches.removeFirstOrNull() ?: return@registerForActivityResult
+            val batch = pendingMedia.removeFirstOrNull() ?: return@registerForActivityResult
             if (result.resultCode == Activity.RESULT_OK) {
-                val set = batch.toSet()
-                val removed = ScanStore.items.filter { it.file.uri in set }
-                freedBytes += removed.sumOf { it.file.size }
-                deletedCount += removed.size
-                ScanStore.remove(set)
-                launchNextBatch()
+                freedBytes += batch.sumOf { it.size }
+                deletedCount += batch.size
+                ScanStore.remove(batch)
+                continueDeletion()
             } else {
-                pendingBatches.clear()
+                pendingMedia.clear()
+                pendingApps.clear()
                 finishDeletion(cancelled = true)
             }
+        }
+
+    private val uninstallLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            val app = pendingApps.removeFirstOrNull() ?: return@registerForActivityResult
+            val gone = try { packageManager.getApplicationInfo(app.packageName!!, 0); false } catch (e: PackageManager.NameNotFoundException) { true }
+            if (gone) {
+                freedBytes += app.size
+                deletedCount += 1
+                ScanStore.remove(listOf(app))
+            }
+            continueDeletion()
+        }
+
+    private val cacheLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            val msg = if (result.resultCode == Activity.RESULT_OK) R.string.cache_cleared else R.string.cache_not_cleared
+            Snackbar.make(b.root, msg, Snackbar.LENGTH_LONG).show()
+            refreshStorage()
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,7 +107,12 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         refreshStorage()
-        if (screen == Screen.RESULTS) renderResults()
+        if (returningFromSettings) {
+            returningFromSettings = false
+            requestOrScan()
+        } else if (screen == Screen.RESULTS) {
+            renderResults()
+        }
     }
 
     private fun applyInsets() {
@@ -135,7 +170,7 @@ class MainActivity : AppCompatActivity() {
             val used = total - free
             val pct = (used * 100 / total).toInt()
             b.storageRing.setProgressCompat(pct, true)
-            b.storagePercent.text = "$pct%"
+            b.storagePercent.text = getString(R.string.percent, pct)
             b.storageUsed.text = getString(R.string.storage_used, formatSize(used), formatSize(total))
             b.storageFree.text = getString(R.string.storage_free, formatSize(free))
         } catch (e: Exception) {
@@ -153,6 +188,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun hasReadPermission(): Boolean {
+        if (ScanEngine.allFilesAccess(this)) return true
         val full = requiredPermissions().all {
             ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_GRANTED
         }
@@ -164,7 +200,60 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun requestOrScan() {
+        if (!ScanEngine.allFilesAccess(this) && !allFilesOffered) {
+            allFilesOffered = true
+            offerAllFilesAccess()
+            return
+        }
         if (hasReadPermission()) startScan() else permissionLauncher.launch(requiredPermissions())
+    }
+
+    /** Explica el permiso «todos los archivos» y deja elegir solo la galería. */
+    private fun offerAllFilesAccess() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(R.string.allfiles_title)
+            .setMessage(R.string.allfiles_message)
+            .setNegativeButton(R.string.allfiles_only_gallery) { _, _ -> requestOrScan() }
+            .setPositiveButton(R.string.allfiles_open_settings) { _, _ -> openAllFilesSettings() }
+            .show()
+    }
+
+    private fun openAllFilesSettings() {
+        returningFromSettings = true
+        val specific = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, Uri.parse("package:$packageName"))
+        try {
+            startActivity(specific)
+        } catch (e: ActivityNotFoundException) {
+            try {
+                startActivity(Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION))
+            } catch (e2: ActivityNotFoundException) {
+                returningFromSettings = false
+                requestOrScan()
+            }
+        }
+    }
+
+    private fun openUsageAccessSettings() {
+        returningFromSettings = true
+        try {
+            startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+        } catch (e: ActivityNotFoundException) {
+            returningFromSettings = false
+            Snackbar.make(b.root, R.string.open_failed, Snackbar.LENGTH_LONG).show()
+        }
+    }
+
+    private fun clearAllAppsCache() {
+        try {
+            cacheLauncher.launch(Intent(StorageManager.ACTION_CLEAR_APP_CACHE))
+        } catch (e: Exception) {
+            // Algunos fabricantes no exponen el diálogo: llevar a Ajustes › Almacenamiento.
+            try {
+                startActivity(Intent(Settings.ACTION_INTERNAL_STORAGE_SETTINGS))
+            } catch (e2: Exception) {
+                Snackbar.make(b.root, R.string.cache_not_available, Snackbar.LENGTH_LONG).show()
+            }
+        }
     }
 
     private fun showNoPermission() {
@@ -183,11 +272,13 @@ class MainActivity : AppCompatActivity() {
         b.scanStatus.text = getString(R.string.scanning_reading)
         scanJob = lifecycleScope.launch {
             try {
-                val items = JunkScanner(contentResolver).scan { p ->
+                val items = ScanEngine.scan(this@MainActivity) { p ->
                     b.scanStatus.text = when (p) {
                         ScanProgress.Reading -> getString(R.string.scanning_reading)
                         is ScanProgress.Found -> resources.getQuantityString(R.plurals.scanning_found, p.total, p.total)
                         is ScanProgress.Hashing -> getString(R.string.scanning_hashing, p.done, p.total)
+                        is ScanProgress.Files -> getString(R.string.scanning_files)
+                        ScanProgress.Apps -> getString(R.string.scanning_apps)
                     }
                 }
                 ScanStore.items = items
@@ -207,11 +298,10 @@ class MainActivity : AppCompatActivity() {
         if (all.isEmpty()) {
             b.resultsTitle.text = getString(R.string.results_clean_title)
             b.resultsSubtitle.text = getString(R.string.results_clean_subtitle)
-            updatePrimaryForSelection()
-            return
+        } else {
+            b.resultsTitle.text = getString(R.string.results_title, formatSize(all.sumOf { it.size }))
+            b.resultsSubtitle.text = resources.getQuantityString(R.plurals.results_subtitle, all.size, all.size)
         }
-        b.resultsTitle.text = getString(R.string.results_title, formatSize(all.sumOf { it.file.size }))
-        b.resultsSubtitle.text = resources.getQuantityString(R.plurals.results_subtitle, all.size, all.size)
         for (cat in Category.entries) {
             val group = ScanStore.byCategory(cat)
             if (group.isEmpty()) continue
@@ -232,15 +322,41 @@ class MainActivity : AppCompatActivity() {
             }
             b.categoryContainer.addView(card.root)
         }
+        renderTools()
         updatePrimaryForSelection()
+    }
+
+    /** Herramientas que no son listas: caché del sistema y permisos que amplían el análisis. */
+    private fun renderTools() {
+        b.toolsContainer.removeAllViews()
+        fun tool(icon: Int, title: Int, desc: Int, button: Int, action: () -> Unit) {
+            val t = ItemToolCardBinding.inflate(layoutInflater, b.toolsContainer, false)
+            t.icon.setImageResource(icon)
+            t.title.text = getString(title)
+            t.description.text = getString(desc)
+            t.button.text = getString(button)
+            t.button.setOnClickListener { action() }
+            b.toolsContainer.addView(t.root)
+        }
+        val allFiles = ScanEngine.allFilesAccess(this)
+        if (allFiles) {
+            tool(R.drawable.ic_memory, R.string.tool_cache_title, R.string.tool_cache_desc, R.string.tool_cache_button) { clearAllAppsCache() }
+        } else {
+            tool(R.drawable.ic_folder, R.string.tool_allfiles_title, R.string.tool_allfiles_desc, R.string.tool_enable) { openAllFilesSettings() }
+        }
+        if (!ScanEngine.usageAccess(this)) {
+            tool(R.drawable.ic_apps, R.string.tool_usage_title, R.string.tool_usage_desc, R.string.tool_enable) { openUsageAccessSettings() }
+        }
+        b.toolsTitle.visibility = if (b.toolsContainer.childCount > 0) View.VISIBLE else View.GONE
     }
 
     private fun bindCardStats(card: ItemCategoryCardBinding, group: List<JunkItem>) {
         val sel = group.filter { it.selected }
+        val plural = if (group.first().kind == Kind.APP) R.plurals.category_stats_apps else R.plurals.category_stats
         card.stats.text = if (sel.size == group.size || sel.isEmpty()) {
-            resources.getQuantityString(R.plurals.category_stats, group.size, group.size, formatSize(group.sumOf { it.file.size }))
+            resources.getQuantityString(plural, group.size, group.size, formatSize(group.sumOf { it.size }))
         } else {
-            getString(R.string.category_stats_partial, sel.size, group.size, formatSize(sel.sumOf { it.file.size }))
+            getString(R.string.category_stats_partial, sel.size, group.size, formatSize(sel.sumOf { it.size }))
         }
     }
 
@@ -248,7 +364,7 @@ class MainActivity : AppCompatActivity() {
         val sel = ScanStore.selected()
         b.primaryButton.isEnabled = sel.isNotEmpty()
         b.primaryButton.text = if (sel.isEmpty()) getString(R.string.clean_none)
-        else getString(R.string.clean_now, formatSize(sel.sumOf { it.file.size }))
+        else getString(R.string.clean_now, formatSize(sel.sumOf { it.size }))
     }
 
     // ---- limpieza ---------------------------------------------------------
@@ -256,10 +372,13 @@ class MainActivity : AppCompatActivity() {
     private fun confirmClean() {
         val sel = ScanStore.selected()
         if (sel.isEmpty()) return
-        val size = formatSize(sel.sumOf { it.file.size })
+        val size = formatSize(sel.sumOf { it.size })
+        val apps = sel.count { it.kind == Kind.APP }
+        val message = resources.getQuantityString(R.plurals.confirm_message, sel.size, sel.size) +
+            if (apps > 0) "\n\n" + resources.getQuantityString(R.plurals.confirm_apps, apps, apps) else ""
         MaterialAlertDialogBuilder(this)
             .setTitle(getString(R.string.confirm_title, size))
-            .setMessage(resources.getQuantityString(R.plurals.confirm_message, sel.size, sel.size))
+            .setMessage(message)
             .setNegativeButton(android.R.string.cancel, null)
             .setPositiveButton(R.string.confirm_ok) { _, _ -> deleteSelected(sel) }
             .show()
@@ -268,27 +387,54 @@ class MainActivity : AppCompatActivity() {
     private fun deleteSelected(sel: List<JunkItem>) {
         freedBytes = 0
         deletedCount = 0
-        pendingBatches.clear()
+        pendingMedia.clear()
+        pendingApps.clear()
         // Lotes de 250 URIs: el intent del sistema tiene límite de tamaño.
-        sel.map { it.file.uri }.chunked(250).forEach { pendingBatches.addLast(it) }
+        sel.filter { it.kind == Kind.MEDIA }.chunked(250).forEach { pendingMedia.addLast(it) }
+        sel.filter { it.kind == Kind.APP }.forEach { pendingApps.addLast(it) }
+        val files = sel.filter { it.kind == Kind.FILE }
         b.primaryButton.isEnabled = false
-        launchNextBatch()
+        lifecycleScope.launch {
+            // 1. Archivos y carpetas: borrado directo, sin diálogo del sistema.
+            val deleted = withContext(Dispatchers.IO) {
+                files.filter { item ->
+                    val f = File(item.path!!)
+                    try { if (item.isDir) f.deleteRecursively() else f.delete() } catch (e: Exception) { false }
+                }
+            }
+            freedBytes += deleted.sumOf { it.size }
+            deletedCount += deleted.size
+            ScanStore.remove(deleted)
+            continueDeletion()
+        }
     }
 
-    private fun launchNextBatch() {
-        val batch = pendingBatches.firstOrNull()
-        if (batch == null) {
-            finishDeletion(cancelled = false)
+    /** 2. Galería (un diálogo del sistema por lote) → 3. Apps (un diálogo por app) → Listo. */
+    private fun continueDeletion() {
+        pendingMedia.firstOrNull()?.let { batch ->
+            try {
+                val pi = MediaStore.createDeleteRequest(contentResolver, batch.map { it.uri!! })
+                deleteLauncher.launch(IntentSenderRequest.Builder(pi.intentSender).build())
+            } catch (e: Exception) {
+                pendingMedia.clear()
+                pendingApps.clear()
+                Snackbar.make(b.root, getString(R.string.status_error, e.message ?: e.javaClass.simpleName), Snackbar.LENGTH_LONG).show()
+                finishDeletion(cancelled = true)
+            }
             return
         }
-        try {
-            val pi = MediaStore.createDeleteRequest(contentResolver, batch)
-            deleteLauncher.launch(IntentSenderRequest.Builder(pi.intentSender).build())
-        } catch (e: Exception) {
-            pendingBatches.clear()
-            Snackbar.make(b.root, getString(R.string.status_error, e.message ?: e.javaClass.simpleName), Snackbar.LENGTH_LONG).show()
-            renderResults()
+        pendingApps.firstOrNull()?.let { app ->
+            val intent = Intent(Intent.ACTION_DELETE, Uri.parse("package:${app.packageName}"))
+                .putExtra(Intent.EXTRA_RETURN_RESULT, true)
+            try {
+                uninstallLauncher.launch(intent)
+            } catch (e: Exception) {
+                pendingApps.removeFirst()
+                continueDeletion()
+            }
+            return
         }
+        finishDeletion(cancelled = false)
     }
 
     private fun finishDeletion(cancelled: Boolean) {

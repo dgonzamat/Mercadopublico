@@ -10,7 +10,7 @@ import kotlinx.coroutines.withContext
 import java.security.MessageDigest
 
 /**
- * Recorre la galería (MediaStore) y clasifica archivos basura.
+ * Recorre la galería (MediaStore) y clasifica fotos y videos basura.
  * Solo lee: la eliminación la hace el sistema con confirmación del usuario.
  */
 class JunkScanner(private val resolver: ContentResolver) {
@@ -32,11 +32,15 @@ class JunkScanner(private val resolver: ContentResolver) {
 
         val result = mutableListOf<JunkItem>()
         val used = HashSet<Uri>()
+        fun item(f: MediaFile, cat: Category, note: String? = null) = JunkItem(
+            category = cat, name = f.name, size = f.size, note = note, uri = f.uri,
+            path = f.relativePath, isVideo = f.isVideo, dateModified = f.dateModified,
+        )
 
         // 1. Capturas de pantalla.
         for (f in images) {
             if (isScreenshot(f)) {
-                result += JunkItem(f, Category.SCREENSHOTS)
+                result += item(f, Category.SCREENSHOTS)
                 used += f.uri
             }
         }
@@ -61,7 +65,7 @@ class JunkScanner(private val resolver: ContentResolver) {
                 val keep = sorted.first()
                 for (d in sorted.drop(1)) {
                     if (d.uri in used) continue
-                    result += JunkItem(d, Category.DUPLICATES, note = keep.name)
+                    result += item(d, Category.DUPLICATES, note = keep.name)
                     used += d.uri
                 }
             }
@@ -76,7 +80,7 @@ class JunkScanner(private val resolver: ContentResolver) {
                 (f.width > 0 && f.height > 0 && maxDim < TINY_MAX_DIMENSION)
             if (tiny) {
                 val note = if (f.width > 0 && f.height > 0) "${f.width}×${f.height}" else null
-                result += JunkItem(f, Category.TINY, note = note)
+                result += item(f, Category.TINY, note = note)
                 used += f.uri
             }
         }
@@ -85,12 +89,12 @@ class JunkScanner(private val resolver: ContentResolver) {
         for (f in videos) {
             if (f.uri in used) continue
             if (f.size >= LARGE_VIDEO_MIN_BYTES) {
-                result += JunkItem(f, Category.LARGE_VIDEOS)
+                result += item(f, Category.LARGE_VIDEOS)
                 used += f.uri
             }
         }
 
-        result.sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.file.size })
+        result.sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.size })
     }
 
     private fun isScreenshot(f: MediaFile): Boolean {

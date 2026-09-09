@@ -22,7 +22,7 @@ class JunkScannerTest {
         val progress = mutableListOf<ScanProgress>()
         val items = JunkScanner(resolver).scan { progress += it }
 
-        fun ids(cat: Category) = items.filter { it.category == cat }.map { it.file.uri.lastPathSegment!!.toLong() }.toSet()
+        fun ids(cat: Category) = items.filter { it.category == cat }.map { it.uri!!.lastPathSegment!!.toLong() }.toSet()
 
         assertEquals(FakeGallery.EXPECTED_SCREENSHOTS, ids(Category.SCREENSHOTS))
         assertEquals(FakeGallery.EXPECTED_DUPLICATES, ids(Category.DUPLICATES))
@@ -33,7 +33,7 @@ class JunkScannerTest {
         // El duplicado apunta al original más antiguo y el falso duplicado (mismo tamaño, otro contenido) queda fuera.
         val dup = items.single { it.category == Category.DUPLICATES }
         assertEquals("IMG_0003.jpg", dup.note)
-        assertTrue(items.none { it.file.name == "IMG_0004.jpg" })
+        assertTrue(items.none { it.name == "IMG_0004.jpg" })
 
         // Preselección: todo menos los videos pesados.
         assertTrue(items.filter { it.category != Category.LARGE_VIDEOS }.all { it.selected })

@@ -9,7 +9,7 @@
 
     <!-- Bienvenida -->
     <string name="welcome_title">Recupera espacio en un toque</string>
-    <string name="welcome_body">Buscamos capturas de pantalla, fotos repetidas e imágenes inservibles en tu galería. Tú decides qué se va.</string>
+    <string name="welcome_body">Buscamos capturas, fotos repetidas, archivos temporales, instaladores, descargas viejas, archivos pesados y apps que no usas. Tú decides qué se va.</string>
     <string name="privacy_note">Todo ocurre en tu teléfono. Nada se sube a internet.</string>
     <string name="analyze">Analizar mi galería</string>
     <string name="status_no_permission">Necesitamos permiso para ver tus fotos y videos. Actívalo en Ajustes › Apps › Limpiador › Permisos y vuelve a intentar.</string>
@@ -28,11 +28,11 @@
     <!-- Resultados -->
     <string name="results_title">Puedes liberar %1$s</string>
     <plurals name="results_subtitle">
-        <item quantity="one">Encontramos %1$d archivo que probablemente no necesitas. Revísalo y toca Limpiar.</item>
-        <item quantity="other">Encontramos %1$d archivos que probablemente no necesitas. Revisa cada grupo y toca Limpiar.</item>
+        <item quantity="one">Encontramos %1$d elemento que probablemente no necesitas. Revísalo y toca Limpiar.</item>
+        <item quantity="other">Encontramos %1$d elementos que probablemente no necesitas. Revisa cada grupo y toca Limpiar.</item>
     </plurals>
     <string name="results_clean_title">Tu galería está en orden</string>
-    <string name="results_clean_subtitle">No encontramos capturas, repetidos ni imágenes inservibles. 🎉</string>
+    <string name="results_clean_subtitle">No encontramos nada que sobre. 🎉</string>
     <plurals name="category_stats">
         <item quantity="one">%1$d archivo · %2$s</item>
         <item quantity="other">%1$d archivos · %2$s</item>
@@ -56,7 +56,9 @@
     <string name="note_duplicate_of">Copia de %1$s</string>
 
     <!-- Revisión en cuadrícula -->
-    <string name="grid_hint">Toca para marcar o desmarcar. Mantén presionado para ver la foto completa.</string>
+    <string name="grid_hint_media">Toca para marcar o desmarcar. Mantén presionado para ver la foto completa.</string>
+    <string name="grid_hint_file">Toca para marcar o desmarcar. Mantén presionado para ver la ruta y la fecha.</string>
+    <string name="grid_hint_app">Toca para marcar o desmarcar. Mantén presionado para abrir la información de la app.</string>
     <string name="selection_summary">%1$d de %2$d seleccionados · %3$s</string>
     <string name="select_all">Todos</string>
     <string name="select_none">Ninguno</string>
@@ -66,15 +68,61 @@
     <!-- Limpieza -->
     <string name="confirm_title">¿Limpiar %1$s?</string>
     <plurals name="confirm_message">
-        <item quantity="one">Se eliminará %1$d archivo. Android te pedirá confirmar una vez más. Si tu teléfono tiene papelera, podrás recuperarlo durante 30 días.</item>
-        <item quantity="other">Se eliminarán %1$d archivos. Android te pedirá confirmar una vez más. Si tu teléfono tiene papelera, podrás recuperarlos durante 30 días.</item>
+        <item quantity="one">Se eliminará %1$d elemento. Las fotos y videos pasan por la confirmación de Android y su papelera (30 días); los demás archivos se borran de inmediato.</item>
+        <item quantity="other">Se eliminarán %1$d elementos. Las fotos y videos pasan por la confirmación de Android y su papelera (30 días); los demás archivos se borran de inmediato.</item>
     </plurals>
     <string name="confirm_ok">Sí, limpiar</string>
     <string name="done_title">¡Listo! Liberaste %1$s</string>
     <plurals name="done_subtitle">
-        <item quantity="one">Se eliminó %1$d archivo. Tu galería quedó más ligera.</item>
-        <item quantity="other">Se eliminaron %1$d archivos. Tu galería quedó más ligera.</item>
+        <item quantity="one">Se eliminó %1$d elemento. Tu teléfono quedó más ligero.</item>
+        <item quantity="other">Se eliminaron %1$d elementos. Tu teléfono quedó más ligero.</item>
     </plurals>
     <string name="delete_cancelled">No se eliminó nada. Puedes volver a intentarlo cuando quieras.</string>
     <string name="scan_again">Analizar de nuevo</string>
+
+    <!-- Liberador general -->
+    <string name="percent">%1$d%%</string>
+    <string name="scanning_files">Revisando archivos del teléfono…</string>
+    <string name="scanning_apps">Revisando apps que no usas…</string>
+    <string name="cat_residue">Temporales y caché</string>
+    <string name="cat_residue_desc">Archivos temporales, carpetas de caché ocultas, archivos vacíos y carpetas vacías</string>
+    <string name="cat_apk">Instaladores APK</string>
+    <string name="cat_apk_desc">Paquetes de instalación que ya no hacen falta</string>
+    <string name="cat_large_files">Archivos grandes</string>
+    <string name="cat_large_files_desc">De 100 MB o más, que no son fotos ni videos. Revísalos tú</string>
+    <string name="cat_old_downloads">Descargas antiguas</string>
+    <string name="cat_old_downloads_desc">En la carpeta Descargas desde hace más de 30 días. Revísalas tú</string>
+    <string name="cat_unused_apps">Apps que no usas</string>
+    <string name="cat_unused_apps_desc">Sin abrir en 60 días, con lo que ocupan. Se desinstalan una por una</string>
+    <string name="note_empty_dir">carpeta vacía</string>
+    <string name="note_zero_bytes">0 bytes</string>
+    <string name="note_cache_dir">carpeta de caché</string>
+    <string name="note_days_old">hace %1$d días</string>
+    <string name="note_never_used">sin uso en el último año</string>
+    <string name="note_last_used_days">último uso hace %1$d días</string>
+    <plurals name="category_stats_apps">
+        <item quantity="one">%1$d app · %2$s</item>
+        <item quantity="other">%1$d apps · %2$s</item>
+    </plurals>
+    <plurals name="confirm_apps">
+        <item quantity="one">Incluye %1$d app: Android te pedirá confirmar su desinstalación.</item>
+        <item quantity="other">Incluye %1$d apps: Android te pedirá confirmar cada desinstalación.</item>
+    </plurals>
+    <string name="file_info">%1$s\n\nTamaño: %2$s\nModificado: %3$s</string>
+    <string name="tools_title">Más espacio</string>
+    <string name="tool_cache_title">Caché de todas las apps</string>
+    <string name="tool_cache_desc">Android vacía de una vez la caché de todas las apps. No borra datos ni sesiones.</string>
+    <string name="tool_cache_button">Vaciar</string>
+    <string name="tool_allfiles_title">Archivos del teléfono</string>
+    <string name="tool_allfiles_desc">Concede «Acceso a todos los archivos» para buscar temporales, instaladores, descargas viejas y archivos grandes.</string>
+    <string name="tool_usage_title">Apps que no usas</string>
+    <string name="tool_usage_desc">Concede «Acceso a datos de uso» para detectar apps sin abrir en 60 días y cuánto ocupan.</string>
+    <string name="tool_enable">Activar</string>
+    <string name="allfiles_title">¿Revisar todo el teléfono?</string>
+    <string name="allfiles_message">Para encontrar temporales, instaladores, descargas viejas y archivos grandes, Android exige el permiso «Acceso a todos los archivos». Se activa en Ajustes; vuelve a la app cuando lo hayas hecho.\n\nSi prefieres, puedes revisar solo la galería.</string>
+    <string name="allfiles_open_settings">Abrir ajustes</string>
+    <string name="allfiles_only_gallery">Solo la galería</string>
+    <string name="cache_cleared">Caché vaciada</string>
+    <string name="cache_not_cleared">No se vació la caché</string>
+    <string name="cache_not_available">Tu teléfono no ofrece esta opción. Búscala en Ajustes › Almacenamiento.</string>
 </resources>
