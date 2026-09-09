@@ -7,9 +7,11 @@
     <string name="storage_free">%1$s free</string>
 
     <string name="welcome_title">Free up space in one tap</string>
-    <string name="welcome_body">We look for screenshots, duplicate photos, temporary files, installers, old downloads, heavy files and apps you don\'t use. You decide what goes.</string>
+    <string name="welcome_body">Tap the button and we check these groups. You decide what goes.</string>
+    <string name="welcome_tag_auto">auto-selected</string>
+    <string name="welcome_tag_review">you review</string>
     <string name="privacy_note">Everything happens on your phone. Nothing is uploaded.</string>
-    <string name="analyze">Analyze my gallery</string>
+    <string name="analyze">Analyze my phone</string>
     <string name="status_no_permission">We need permission to see your photos and videos. Enable it in Settings › Apps › Cleaner › Permissions and try again.</string>
 
     <string name="scanning_title">Analyzing your gallery…</string>

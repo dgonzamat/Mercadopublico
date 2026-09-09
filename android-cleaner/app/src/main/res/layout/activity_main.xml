@@ -122,8 +122,8 @@
                     android:paddingTop="32dp">
 
                     <ImageView
-                        android:layout_width="140dp"
-                        android:layout_height="140dp"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
                         android:contentDescription="@null"
                         android:src="@drawable/ic_hero_broom" />
 
@@ -145,9 +145,16 @@
                         android:textColor="?android:attr/textColorSecondary" />
 
                     <LinearLayout
+                        android:id="@+id/welcomeGroups"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="16dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 

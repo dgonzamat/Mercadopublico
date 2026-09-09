@@ -26,6 +26,7 @@ import androidx.lifecycle.lifecycleScope
 import com.dgonzamat.limpiador.databinding.ActivityMainBinding
 import com.dgonzamat.limpiador.databinding.ItemCategoryCardBinding
 import com.dgonzamat.limpiador.databinding.ItemToolCardBinding
+import com.dgonzamat.limpiador.databinding.ItemWelcomeRowBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.Dispatchers
@@ -100,6 +101,7 @@ class MainActivity : AppCompatActivity() {
 
         b.primaryButton.setOnClickListener { onPrimaryAction() }
         b.rescanButton.setOnClickListener { requestOrScan() }
+        renderWelcomeGroups()
 
         if (ScanStore.items.isNotEmpty()) show(Screen.RESULTS) else show(Screen.WELCOME)
     }
@@ -149,6 +151,18 @@ class MainActivity : AppCompatActivity() {
                 b.primaryButton.setIconResource(R.drawable.ic_refresh)
             }
             Screen.SCANNING -> Unit
+        }
+    }
+
+    /** Lista de lo que se va a buscar, para que el inicio no sea solo un botón. */
+    private fun renderWelcomeGroups() {
+        b.welcomeGroups.removeAllViews()
+        for (cat in Category.entries) {
+            val row = ItemWelcomeRowBinding.inflate(layoutInflater, b.welcomeGroups, false)
+            row.icon.setImageResource(cat.iconRes)
+            row.title.text = getString(cat.titleRes)
+            row.tag.text = getString(if (cat.preselected) R.string.welcome_tag_auto else R.string.welcome_tag_review)
+            b.welcomeGroups.addView(row.root)
         }
     }
 

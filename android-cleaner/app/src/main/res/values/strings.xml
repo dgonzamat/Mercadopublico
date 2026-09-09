@@ -9,9 +9,11 @@
 
     <!-- Bienvenida -->
     <string name="welcome_title">Recupera espacio en un toque</string>
-    <string name="welcome_body">Buscamos capturas, fotos repetidas, archivos temporales, instaladores, descargas viejas, archivos pesados y apps que no usas. Tú decides qué se va.</string>
+    <string name="welcome_body">Toca el botón y revisamos estos grupos. Tú decides qué se va.</string>
+    <string name="welcome_tag_auto">se marca solo</string>
+    <string name="welcome_tag_review">tú revisas</string>
     <string name="privacy_note">Todo ocurre en tu teléfono. Nada se sube a internet.</string>
-    <string name="analyze">Analizar mi galería</string>
+    <string name="analyze">Analizar mi teléfono</string>
     <string name="status_no_permission">Necesitamos permiso para ver tus fotos y videos. Actívalo en Ajustes › Apps › Limpiador › Permisos y vuelve a intentar.</string>
 
     <!-- Análisis -->
