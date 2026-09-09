@@ -22,12 +22,13 @@ class JunkScanner(private val resolver: ContentResolver) {
         const val HASH_MAX_BYTES = 300L * 1024 * 1024  // no hashear archivos > 300 MB
     }
 
-    suspend fun scan(onProgress: suspend (String) -> Unit): List<JunkItem> = withContext(Dispatchers.IO) {
+    suspend fun scan(onProgress: suspend (ScanProgress) -> Unit): List<JunkItem> = withContext(Dispatchers.IO) {
+        onProgress(ScanProgress.Reading)
         val images = query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, isVideo = false)
         ensureActive()
         val videos = query(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, isVideo = true)
         ensureActive()
-        onProgress("${images.size + videos.size}")
+        onProgress(ScanProgress.Found(images.size + videos.size))
 
         val result = mutableListOf<JunkItem>()
         val used = HashSet<Uri>()
@@ -50,7 +51,7 @@ class JunkScanner(private val resolver: ContentResolver) {
             for (f in group) {
                 ensureActive()
                 hashed++
-                if (hashed % 10 == 0) onProgress("hash:$hashed/$totalToHash")
+                if (hashed % 5 == 0) onProgress(ScanProgress.Hashing(hashed, totalToHash))
                 val h = sha256(f.uri) ?: continue
                 byHash.getOrPut(h) { mutableListOf() } += f
             }

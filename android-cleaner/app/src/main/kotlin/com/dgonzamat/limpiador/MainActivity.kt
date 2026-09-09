@@ -2,27 +2,37 @@ package com.dgonzamat.limpiador
 
 import android.Manifest
 import android.app.Activity
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Environment
+import android.os.StatFs
 import android.provider.MediaStore
 import android.view.View
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.dgonzamat.limpiador.databinding.ActivityMainBinding
+import com.dgonzamat.limpiador.databinding.ItemCategoryCardBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
+    private enum class Screen { WELCOME, SCANNING, RESULTS, DONE }
+
     private lateinit var b: ActivityMainBinding
-    private lateinit var adapter: JunkAdapter
+    private var screen = Screen.WELCOME
     private var scanJob: Job? = null
 
     /** Lotes pendientes de borrado (el diálogo del sistema se lanza por lote). */
@@ -40,10 +50,10 @@ class MainActivity : AppCompatActivity() {
             val batch = pendingBatches.removeFirstOrNull() ?: return@registerForActivityResult
             if (result.resultCode == Activity.RESULT_OK) {
                 val set = batch.toSet()
-                val removed = adapter.allItems().filter { it.file.uri in set }
+                val removed = ScanStore.items.filter { it.file.uri in set }
                 freedBytes += removed.sumOf { it.file.size }
                 deletedCount += removed.size
-                adapter.remove(set)
+                ScanStore.remove(set)
                 launchNextBatch()
             } else {
                 pendingBatches.clear()
@@ -53,17 +63,82 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         b = ActivityMainBinding.inflate(layoutInflater)
         setContentView(b.root)
+        applyInsets()
 
-        adapter = JunkAdapter(contentResolver, lifecycleScope) { updateSummary() }
-        b.list.layoutManager = LinearLayoutManager(this)
-        b.list.adapter = adapter
+        b.primaryButton.setOnClickListener { onPrimaryAction() }
+        b.rescanButton.setOnClickListener { requestOrScan() }
 
-        b.scanButton.setOnClickListener { requestOrScan() }
-        b.deleteButton.setOnClickListener { confirmDelete() }
+        if (ScanStore.items.isNotEmpty()) show(Screen.RESULTS) else show(Screen.WELCOME)
+    }
 
-        updateSummary()
+    override fun onResume() {
+        super.onResume()
+        refreshStorage()
+        if (screen == Screen.RESULTS) renderResults()
+    }
+
+    private fun applyInsets() {
+        ViewCompat.setOnApplyWindowInsetsListener(b.root) { _, insets ->
+            val sys = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            b.appTitle.updatePadding(top = sys.top)
+            b.bottomBar.updatePadding(bottom = sys.bottom + dp(16))
+            insets
+        }
+    }
+
+    // ---- pantallas -------------------------------------------------------
+
+    private fun show(s: Screen) {
+        screen = s
+        b.welcomeGroup.visibility = if (s == Screen.WELCOME) View.VISIBLE else View.GONE
+        b.scanningGroup.visibility = if (s == Screen.SCANNING) View.VISIBLE else View.GONE
+        b.resultsGroup.visibility = if (s == Screen.RESULTS) View.VISIBLE else View.GONE
+        b.doneGroup.visibility = if (s == Screen.DONE) View.VISIBLE else View.GONE
+        b.bottomBar.visibility = if (s == Screen.SCANNING) View.INVISIBLE else View.VISIBLE
+        when (s) {
+            Screen.WELCOME -> {
+                b.primaryButton.isEnabled = true
+                b.primaryButton.text = getString(R.string.analyze)
+                b.primaryButton.setIconResource(R.drawable.ic_search)
+            }
+            Screen.RESULTS -> {
+                b.primaryButton.setIconResource(R.drawable.ic_delete)
+                renderResults()
+            }
+            Screen.DONE -> {
+                b.primaryButton.isEnabled = true
+                b.primaryButton.text = getString(R.string.scan_again)
+                b.primaryButton.setIconResource(R.drawable.ic_refresh)
+            }
+            Screen.SCANNING -> Unit
+        }
+    }
+
+    private fun onPrimaryAction() {
+        when (screen) {
+            Screen.WELCOME, Screen.DONE -> requestOrScan()
+            Screen.RESULTS -> confirmClean()
+            Screen.SCANNING -> Unit
+        }
+    }
+
+    private fun refreshStorage() {
+        try {
+            val stat = StatFs(Environment.getDataDirectory().absolutePath)
+            val total = stat.totalBytes
+            val free = stat.availableBytes
+            val used = total - free
+            val pct = if (total > 0) (used * 100 / total).toInt() else 0
+            b.storageRing.setProgressCompat(pct, true)
+            b.storagePercent.text = "$pct%"
+            b.storageUsed.text = getString(R.string.storage_used, formatSize(used), formatSize(total))
+            b.storageFree.text = getString(R.string.storage_free, formatSize(free))
+        } catch (e: Exception) {
+            b.storageCard.visibility = View.GONE
+        }
     }
 
     // ---- permisos ---------------------------------------------------------
@@ -87,58 +162,102 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun requestOrScan() {
-        if (hasReadPermission()) startScan()
-        else permissionLauncher.launch(requiredPermissions())
+        if (hasReadPermission()) startScan() else permissionLauncher.launch(requiredPermissions())
     }
 
     private fun showNoPermission() {
-        b.status.text = getString(R.string.status_no_permission)
+        show(Screen.WELCOME)
+        b.permissionHint.text = getString(R.string.status_no_permission)
+        b.permissionHint.visibility = View.VISIBLE
     }
 
     // ---- escaneo ----------------------------------------------------------
 
     private fun startScan() {
         scanJob?.cancel()
-        b.progress.visibility = View.VISIBLE
-        b.scanButton.isEnabled = false
-        b.status.text = getString(R.string.status_scanning)
-        adapter.submit(emptyList())
+        b.permissionHint.visibility = View.GONE
+        ScanStore.items = emptyList()
+        show(Screen.SCANNING)
+        b.scanStatus.text = getString(R.string.scanning_reading)
         scanJob = lifecycleScope.launch {
             try {
                 val items = JunkScanner(contentResolver).scan { p ->
-                    b.status.text = when {
-                        p.startsWith("hash:") -> getString(R.string.status_hashing, p.removePrefix("hash:"))
-                        else -> getString(R.string.status_found_files, p)
+                    b.scanStatus.text = when (p) {
+                        ScanProgress.Reading -> getString(R.string.scanning_reading)
+                        is ScanProgress.Found -> getString(R.string.scanning_found, p.total)
+                        is ScanProgress.Hashing -> getString(R.string.scanning_hashing, p.done, p.total)
                     }
                 }
-                adapter.submit(items)
-                b.status.text = if (items.isEmpty()) getString(R.string.status_clean)
-                else getString(R.string.status_done, items.size, formatSize(items.sumOf { it.file.size }))
+                ScanStore.items = items
+                show(Screen.RESULTS)
             } catch (e: Exception) {
-                b.status.text = getString(R.string.status_error, e.message ?: e.javaClass.simpleName)
-            } finally {
-                b.progress.visibility = View.GONE
-                b.scanButton.isEnabled = true
+                show(Screen.WELCOME)
+                Snackbar.make(b.root, getString(R.string.status_error, e.message ?: e.javaClass.simpleName), Snackbar.LENGTH_LONG).show()
             }
         }
     }
 
-    // ---- selección y borrado ----------------------------------------------
+    // ---- resultados -------------------------------------------------------
 
-    private fun updateSummary() {
-        val sel = adapter.selectedItems()
-        val bytes = sel.sumOf { it.file.size }
-        b.deleteButton.isEnabled = sel.isNotEmpty()
-        b.deleteButton.text = if (sel.isEmpty()) getString(R.string.delete_none)
-        else getString(R.string.delete_selected, sel.size, formatSize(bytes))
+    private fun renderResults() {
+        val all = ScanStore.items
+        b.categoryContainer.removeAllViews()
+        if (all.isEmpty()) {
+            b.resultsTitle.text = getString(R.string.results_clean_title)
+            b.resultsSubtitle.text = getString(R.string.results_clean_subtitle)
+            updatePrimaryForSelection()
+            return
+        }
+        b.resultsTitle.text = getString(R.string.results_title, formatSize(all.sumOf { it.file.size }))
+        b.resultsSubtitle.text = getString(R.string.results_subtitle, all.size)
+        for (cat in Category.entries) {
+            val group = ScanStore.byCategory(cat)
+            if (group.isEmpty()) continue
+            val card = ItemCategoryCardBinding.inflate(layoutInflater, b.categoryContainer, false)
+            card.icon.setImageResource(cat.iconRes)
+            card.title.text = getString(cat.titleRes)
+            card.description.text = getString(cat.descRes)
+            bindCardStats(card, group)
+            card.toggle.setOnCheckedChangeListener(null)
+            card.toggle.isChecked = group.any { it.selected }
+            card.toggle.setOnCheckedChangeListener { _, checked ->
+                group.forEach { it.selected = checked }
+                bindCardStats(card, group)
+                updatePrimaryForSelection()
+            }
+            card.card.setOnClickListener {
+                startActivity(Intent(this, CategoryActivity::class.java).putExtra(CategoryActivity.EXTRA_CATEGORY, cat.ordinal))
+            }
+            b.categoryContainer.addView(card.root)
+        }
+        updatePrimaryForSelection()
     }
 
-    private fun confirmDelete() {
-        val sel = adapter.selectedItems()
+    private fun bindCardStats(card: ItemCategoryCardBinding, group: List<JunkItem>) {
+        val sel = group.filter { it.selected }
+        card.stats.text = if (sel.size == group.size || sel.isEmpty()) {
+            getString(R.string.category_stats, group.size, formatSize(group.sumOf { it.file.size }))
+        } else {
+            getString(R.string.category_stats_partial, sel.size, group.size, formatSize(sel.sumOf { it.file.size }))
+        }
+    }
+
+    private fun updatePrimaryForSelection() {
+        val sel = ScanStore.selected()
+        b.primaryButton.isEnabled = sel.isNotEmpty()
+        b.primaryButton.text = if (sel.isEmpty()) getString(R.string.clean_none)
+        else getString(R.string.clean_now, formatSize(sel.sumOf { it.file.size }))
+    }
+
+    // ---- limpieza ---------------------------------------------------------
+
+    private fun confirmClean() {
+        val sel = ScanStore.selected()
         if (sel.isEmpty()) return
-        com.google.android.material.dialog.MaterialAlertDialogBuilder(this)
-            .setTitle(R.string.confirm_title)
-            .setMessage(getString(R.string.confirm_message, sel.size, formatSize(sel.sumOf { it.file.size })))
+        val size = formatSize(sel.sumOf { it.file.size })
+        MaterialAlertDialogBuilder(this)
+            .setTitle(getString(R.string.confirm_title, size))
+            .setMessage(getString(R.string.confirm_message, sel.size))
             .setNegativeButton(android.R.string.cancel, null)
             .setPositiveButton(R.string.confirm_ok) { _, _ -> deleteSelected(sel) }
             .show()
@@ -150,7 +269,7 @@ class MainActivity : AppCompatActivity() {
         pendingBatches.clear()
         // Lotes de 250 URIs: el intent del sistema tiene límite de tamaño.
         sel.map { it.file.uri }.chunked(250).forEach { pendingBatches.addLast(it) }
-        b.deleteButton.isEnabled = false
+        b.primaryButton.isEnabled = false
         launchNextBatch()
     }
 
@@ -165,17 +284,23 @@ class MainActivity : AppCompatActivity() {
             deleteLauncher.launch(IntentSenderRequest.Builder(pi.intentSender).build())
         } catch (e: Exception) {
             pendingBatches.clear()
-            b.status.text = getString(R.string.status_error, e.message ?: e.javaClass.simpleName)
-            updateSummary()
+            Snackbar.make(b.root, getString(R.string.status_error, e.message ?: e.javaClass.simpleName), Snackbar.LENGTH_LONG).show()
+            renderResults()
         }
     }
 
     private fun finishDeletion(cancelled: Boolean) {
-        updateSummary()
-        val msg = if (deletedCount > 0) getString(R.string.freed, deletedCount, formatSize(freedBytes))
-        else if (cancelled) getString(R.string.delete_cancelled)
-        else getString(R.string.delete_nothing)
-        Snackbar.make(b.root, msg, Snackbar.LENGTH_LONG).show()
-        if (deletedCount > 0) b.status.text = msg
+        refreshStorage()
+        if (deletedCount > 0) {
+            b.doneTitle.text = getString(R.string.done_title, formatSize(freedBytes))
+            b.doneSubtitle.text = getString(R.string.done_subtitle, deletedCount)
+            ScanStore.items = emptyList()
+            show(Screen.DONE)
+        } else {
+            renderResults()
+            if (cancelled) Snackbar.make(b.root, R.string.delete_cancelled, Snackbar.LENGTH_LONG).show()
+        }
     }
+
+    private fun dp(v: Int) = (v * resources.displayMetrics.density).toInt()
 }

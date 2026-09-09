@@ -1,6 +1,6 @@
 # Limpiador · app Android de archivos basura
 
-App Android (Kotlin, sin dependencias exóticas) que escanea la galería del teléfono y propone eliminar:
+App Android (Kotlin, Material 3 con colores dinámicos de Material You) que escanea la galería del teléfono y propone eliminar:
 
 | Categoría | Criterio | ¿Preseleccionada? |
 |---|---|---|
@@ -11,9 +11,16 @@ App Android (Kotlin, sin dependencias exóticas) que escanea la galería del tel
 
 **Nada se borra sin dos confirmaciones**: la de la app y la del diálogo del sistema (`MediaStore.createDeleteRequest`). En teléfonos con papelera de galería (Android 11+, según fabricante) los archivos van a la papelera 30 días.
 
+## Cómo se usa
+
+1. **Inicio**: anillo con el espacio usado/libre del teléfono y un solo botón, «Analizar mi galería».
+2. **Análisis**: indicador animado con mensajes de progreso («Comparando repetidos 40 de 120»).
+3. **Resultados**: titular «Puedes liberar X» y una tarjeta por categoría con ícono, cantidad, tamaño y un interruptor para incluirla o no. Tocar la tarjeta abre la **revisión en cuadrícula**: miniaturas grandes, toque para marcar/desmarcar, mantener presionado para ver la foto completa, botón Todos/Ninguno.
+4. **Limpiar**: botón fijo abajo con el tamaño a liberar → confirmación de la app → confirmación de Android → pantalla «¡Listo! Liberaste X».
+
 ## Instalar
 
-1. Descarga `dist/limpiador-v1.0.apk` en el teléfono.
+1. Descarga `dist/limpiador-v1.1.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -32,10 +39,14 @@ Necesita JDK 17+ y el Android SDK (platform 35, build-tools 35.0.0); `local.prop
 
 ```
 app/src/main/kotlin/com/dgonzamat/limpiador/
-  Model.kt         # Category, MediaFile, JunkItem, formatSize
-  JunkScanner.kt   # consulta MediaStore y clasifica (solo lectura)
-  JunkAdapter.kt   # lista con cabeceras por categoría + miniaturas
-  MainActivity.kt  # permisos, escaneo, selección y borrado por lotes
+  Model.kt             # Category, MediaFile, JunkItem, ScanProgress, ScanStore, formatSize
+  JunkScanner.kt       # consulta MediaStore y clasifica (solo lectura)
+  MainActivity.kt      # inicio → análisis → resultados (tarjetas) → limpieza → listo
+  CategoryActivity.kt  # revisión de una categoría en cuadrícula
+  GridAdapter.kt       # celdas de la cuadrícula (selección, miniatura, etiqueta)
+  Thumbnails.kt        # miniaturas de MediaStore con caché LRU
+  SquareCardView.kt    # MaterialCardView cuadrada para la cuadrícula
+  LimpiadorApp.kt      # activa los colores dinámicos (Material You)
 ```
 
 ## Límites conocidos
