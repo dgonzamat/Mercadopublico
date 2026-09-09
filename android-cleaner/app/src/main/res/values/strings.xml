@@ -138,4 +138,6 @@
     <string name="allfiles_not_granted">El acceso a todos los archivos no quedó activado; analizamos solo la galería.</string>
     <string name="retry">Reintentar</string>
     <string name="analyze_none">Marca al menos un grupo</string>
+    <string name="diagnostics_title">Diagnóstico</string>
+    <string name="copy">Copiar</string>
 </resources>

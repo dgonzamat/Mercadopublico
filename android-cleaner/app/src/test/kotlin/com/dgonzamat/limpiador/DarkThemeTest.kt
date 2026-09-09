@@ -35,8 +35,11 @@ class DarkThemeTest {
         ScanEngine.usageAccess = { false }
         shadowOf(ApplicationProvider.getApplicationContext<Application>())
             .grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
-        // Resultados precalculados: la Activity arranca directo en esa pantalla.
+        // Resultados precalculados: la Activity arranca directo en esa pantalla. El progreso no debe
+        // pasar por el looper principal (runBlocking lo tendría bloqueado): despachador sin hilo.
+        ScanEngine.uiDispatcher = kotlinx.coroutines.Dispatchers.Unconfined
         ScanStore.items = runBlocking { ScanEngine.scan(ApplicationProvider.getApplicationContext()) {} }.items
+        ScanEngine.uiDispatcher = kotlinx.coroutines.Dispatchers.Main
     }
 
     @After

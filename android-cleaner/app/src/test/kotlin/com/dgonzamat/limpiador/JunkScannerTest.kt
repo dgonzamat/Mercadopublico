@@ -2,6 +2,7 @@ package com.dgonzamat.limpiador
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -42,6 +43,26 @@ class JunkScannerTest {
         // Progreso: primero Reading, luego Found con el total real.
         assertEquals(ScanProgress.Reading, progress.first())
         assertEquals(ScanProgress.Found(11), progress[1])
+    }
+
+    @Test
+    fun el_progreso_del_motor_llega_en_el_hilo_de_interfaz() {
+        val ctx = ApplicationProvider.getApplicationContext<Context>()
+        ScanEngine.allFilesAccess = { false }
+        ScanEngine.usageAccess = { false }
+        // Un hilo "de interfaz" de prueba: todo aviso debe llegar ahí, nunca en el hilo IO del escáner.
+        val ui = java.util.concurrent.Executors.newSingleThreadExecutor { r -> Thread(r, "ui-de-prueba") }
+        ScanEngine.uiDispatcher = ui.asCoroutineDispatcher()
+        try {
+            val threads = mutableSetOf<String>()
+            var calls = 0
+            runBlocking { ScanEngine.scan(ctx) { threads += Thread.currentThread().name; calls++ } }
+            assertTrue("sin progreso", calls > 0)
+            assertTrue(threads.toString(), threads.all { it.startsWith("ui-de-prueba") }) // el depurador de corrutinas añade "@coroutine#n"
+        } finally {
+            ScanEngine.uiDispatcher = kotlinx.coroutines.Dispatchers.Main
+            ui.shutdown()
+        }
     }
 
     @Test

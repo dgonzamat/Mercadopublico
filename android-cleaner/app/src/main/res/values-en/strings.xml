@@ -129,4 +129,6 @@
     <string name="allfiles_not_granted">All files access was not enabled; we analyzed the gallery only.</string>
     <string name="retry">Retry</string>
     <string name="analyze_none">Check at least one group</string>
+    <string name="diagnostics_title">Diagnostics</string>
+    <string name="copy">Copy</string>
 </resources>

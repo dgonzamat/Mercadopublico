@@ -11,6 +11,8 @@ object ScanEngine {
     var storageRoot: () -> File = { Environment.getExternalStorageDirectory() }
     var allFilesAccess: (Context) -> Boolean = { Environment.isExternalStorageManager() }
     var usageAccess: (Context) -> Boolean = { AppScanner.hasUsageAccess(it) }
+    /** Dónde se entregan los avisos de progreso (la pantalla vive en el hilo principal). */
+    var uiDispatcher: kotlinx.coroutines.CoroutineDispatcher = Dispatchers.Main
 
     val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.TINY, Category.LARGE_VIDEOS)
     val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS)
@@ -19,8 +21,10 @@ object ScanEngine {
     suspend fun scan(
         context: Context,
         enabled: Set<Category> = Category.entries.toSet(),
-        onProgress: suspend (ScanProgress) -> Unit,
+        onUiProgress: suspend (ScanProgress) -> Unit,
     ): ScanResult = withContext(Dispatchers.IO) {
+        // Los escáneres corren en IO; la pantalla solo se toca desde el hilo principal.
+        val onProgress: suspend (ScanProgress) -> Unit = { p -> withContext(uiDispatcher) { onUiProgress(p) } }
         val out = mutableListOf<JunkItem>()
         if (enabled.any { it in MEDIA_CATEGORIES }) out += JunkScanner(context.contentResolver).scan(onProgress)
         val allFiles = allFilesAccess(context)

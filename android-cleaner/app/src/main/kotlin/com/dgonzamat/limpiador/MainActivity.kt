@@ -29,6 +29,7 @@ import com.dgonzamat.limpiador.databinding.ItemToolCardBinding
 import com.dgonzamat.limpiador.databinding.ItemWelcomeRowBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
@@ -103,6 +104,7 @@ class MainActivity : AppCompatActivity() {
 
         b.primaryButton.setOnClickListener { onPrimaryAction() }
         b.rescanButton.setOnClickListener { requestOrScan() }
+        b.appTitle.setOnLongClickListener { showDiagnostics(); true }
         renderWelcomeGroups()
 
         if (ScanStore.items.isNotEmpty()) show(Screen.RESULTS) else show(Screen.WELCOME)
@@ -144,6 +146,7 @@ class MainActivity : AppCompatActivity() {
         b.resultsGroup.visibility = if (s == Screen.RESULTS) View.VISIBLE else View.GONE
         b.doneGroup.visibility = if (s == Screen.DONE) View.VISIBLE else View.GONE
         b.bottomBar.visibility = if (s == Screen.SCANNING) View.INVISIBLE else View.VISIBLE
+        b.root.requestLayout()
         when (s) {
             Screen.WELCOME -> {
                 b.primaryButton.setIconResource(R.drawable.ic_search)
@@ -198,6 +201,31 @@ class MainActivity : AppCompatActivity() {
         val any = enabledCategories().isNotEmpty()
         b.primaryButton.isEnabled = any
         b.primaryButton.text = getString(if (any) R.string.analyze else R.string.analyze_none)
+    }
+
+    /** Estado interno para depurar a distancia: mantener presionado el título. */
+    private fun showDiagnostics() {
+        val pkg = packageManager.getPackageInfo(packageName, 0)
+        fun v(view: View, name: String) = "$name: vis=${view.visibility} ${view.width}x${view.height}"
+        val text = buildString {
+            appendLine("Limpiador ${pkg.versionName} (${pkg.longVersionCode}) · Android ${Build.VERSION.RELEASE} · ${Build.MANUFACTURER} ${Build.MODEL}")
+            appendLine("pantalla=$screen elementos=${ScanStore.items.size} seleccionados=${ScanStore.selected().size}")
+            appendLine("alcance=${ScanStore.scope} todosLosArchivos=${ScanEngine.allFilesAccess(this@MainActivity)} datosDeUso=${ScanEngine.usageAccess(this@MainActivity)}")
+            appendLine("grupos=" + ScanStore.items.groupingBy { it.category }.eachCount())
+            appendLine(v(b.welcomeGroup, "inicio")); appendLine(v(b.scanningGroup, "analizando"))
+            appendLine(v(b.resultsGroup, "resultados")); appendLine(v(b.categoryContainer, "tarjetas"))
+            appendLine(v(b.doneGroup, "listo")); appendLine(v(b.bottomBar, "barra"))
+            appendLine("scroll=${b.scroll.scrollY} contenido=${b.scroll.getChildAt(0)?.height}")
+        }
+        MaterialAlertDialogBuilder(this)
+            .setTitle(R.string.diagnostics_title)
+            .setMessage(text)
+            .setPositiveButton(R.string.copy) { _, _ ->
+                val cm = getSystemService(CLIPBOARD_SERVICE) as android.content.ClipboardManager
+                cm.setPrimaryClip(android.content.ClipData.newPlainText("limpiador", text))
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 
     private fun onPrimaryAction() {
@@ -340,6 +368,8 @@ class MainActivity : AppCompatActivity() {
                 ScanStore.items = result.items
                 ScanStore.scope = result.scope
                 show(Screen.RESULTS)
+            } catch (e: CancellationException) {
+                throw e // un nuevo análisis reemplazó a este: no es un error
             } catch (e: Exception) {
                 show(Screen.WELCOME)
                 Snackbar.make(b.root, getString(R.string.status_error, e.message ?: e.javaClass.simpleName), Snackbar.LENGTH_LONG).show()
@@ -438,7 +468,12 @@ class MainActivity : AppCompatActivity() {
         if (sel.isEmpty()) return
         val size = formatSize(sel.sumOf { it.size })
         val apps = sel.count { it.kind == Kind.APP }
-        val message = resources.getQuantityString(R.plurals.confirm_message, sel.size, sel.size) +
+        // Detalle por grupo, para saber qué se va antes de aceptar.
+        val detail = Category.entries.mapNotNull { cat ->
+            val g = sel.filter { it.category == cat }
+            if (g.isEmpty()) null else "• ${getString(cat.titleRes)}: ${g.size} · ${formatSize(g.sumOf { it.size })}"
+        }.joinToString("\n")
+        val message = resources.getQuantityString(R.plurals.confirm_message, sel.size, sel.size) + "\n\n" + detail +
             if (apps > 0) "\n\n" + resources.getQuantityString(R.plurals.confirm_apps, apps, apps) else ""
         MaterialAlertDialogBuilder(this)
             .setTitle(getString(R.string.confirm_title, size))
