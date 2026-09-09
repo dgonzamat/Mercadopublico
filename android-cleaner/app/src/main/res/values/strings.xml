@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Limpiador</string>
+    <string name="scan">Buscar archivos basura</string>
+    <string name="status_idle">Busca capturas de pantalla, fotos duplicadas e imágenes inservibles en tu galería. Nada se borra sin tu confirmación.</string>
+    <string name="status_scanning">Leyendo la galería…</string>
+    <string name="status_found_files">%1$s archivos en la galería. Buscando duplicados…</string>
+    <string name="status_hashing">Comparando duplicados (%1$s)…</string>
+    <string name="status_done">%1$d archivos basura encontrados · %2$s recuperables</string>
+    <string name="status_clean">No se encontraron archivos basura. 🎉</string>
+    <string name="status_error">Error: %1$s</string>
+    <string name="status_no_permission">Sin permiso para leer fotos y videos. Concédelo en Ajustes › Apps › Limpiador › Permisos.</string>
+    <string name="header_subtitle">%1$d archivos · %2$s</string>
+    <string name="select_all">Seleccionar todos</string>
+    <string name="cat_screenshots">Capturas de pantalla</string>
+    <string name="cat_screenshots_desc">Archivos en la carpeta Screenshots o con nombre Screenshot_*</string>
+    <string name="cat_duplicates">Fotos y videos duplicados</string>
+    <string name="cat_duplicates_desc">Copias idénticas byte a byte; se conserva la más antigua</string>
+    <string name="cat_tiny">Imágenes minúsculas o vacías</string>
+    <string name="cat_tiny_desc">Menos de 20 KB o de 256 px: miniaturas, stickers, restos de caché</string>
+    <string name="cat_large_videos">Videos grandes (revisar)</string>
+    <string name="cat_large_videos_desc">200 MB o más; no se seleccionan por defecto</string>
+    <string name="note_duplicate_of">Duplicado de %1$s</string>
+    <string name="delete_none">Selecciona archivos para eliminar</string>
+    <string name="delete_selected">Eliminar %1$d archivos (%2$s)</string>
+    <string name="confirm_title">¿Eliminar archivos?</string>
+    <string name="confirm_message">Se eliminarán %1$d archivos (%2$s). Android te pedirá una confirmación más y los enviará a la papelera de la galería (30 días) si tu dispositivo la tiene.</string>
+    <string name="confirm_ok">Eliminar</string>
+    <string name="freed">Listo: %1$d archivos eliminados, %2$s liberados</string>
+    <string name="delete_cancelled">Eliminación cancelada</string>
+    <string name="delete_nothing">No se eliminó nada</string>
+</resources>

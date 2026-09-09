@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cleaner</string>
+    <string name="scan">Find junk files</string>
+    <string name="status_idle">Finds screenshots, duplicate photos and useless images in your gallery. Nothing is deleted without your confirmation.</string>
+    <string name="status_scanning">Reading the gallery…</string>
+    <string name="status_found_files">%1$s files in the gallery. Looking for duplicates…</string>
+    <string name="status_hashing">Comparing duplicates (%1$s)…</string>
+    <string name="status_done">%1$d junk files found · %2$s reclaimable</string>
+    <string name="status_clean">No junk files found. 🎉</string>
+    <string name="status_error">Error: %1$s</string>
+    <string name="status_no_permission">No permission to read photos and videos. Grant it in Settings › Apps › Cleaner › Permissions.</string>
+    <string name="header_subtitle">%1$d files · %2$s</string>
+    <string name="select_all">Select all</string>
+    <string name="cat_screenshots">Screenshots</string>
+    <string name="cat_screenshots_desc">Files in the Screenshots folder or named Screenshot_*</string>
+    <string name="cat_duplicates">Duplicate photos and videos</string>
+    <string name="cat_duplicates_desc">Byte-identical copies; the oldest one is kept</string>
+    <string name="cat_tiny">Tiny or empty images</string>
+    <string name="cat_tiny_desc">Under 20 KB or 256 px: thumbnails, stickers, cache leftovers</string>
+    <string name="cat_large_videos">Large videos (review)</string>
+    <string name="cat_large_videos_desc">200 MB or more; not selected by default</string>
+    <string name="note_duplicate_of">Duplicate of %1$s</string>
+    <string name="delete_none">Select files to delete</string>
+    <string name="delete_selected">Delete %1$d files (%2$s)</string>
+    <string name="confirm_title">Delete files?</string>
+    <string name="confirm_message">%1$d files (%2$s) will be deleted. Android will ask you to confirm once more and move them to the gallery trash (30 days) if your device has one.</string>
+    <string name="confirm_ok">Delete</string>
+    <string name="freed">Done: %1$d files deleted, %2$s freed</string>
+    <string name="delete_cancelled">Deletion cancelled</string>
+    <string name="delete_nothing">Nothing was deleted</string>
+</resources>
