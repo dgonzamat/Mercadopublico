@@ -56,6 +56,8 @@ class MainActivity : AppCompatActivity() {
     private var returningFromSettings = false
     /** El usuario fue a Ajustes a activar «todos los archivos»: al volver, avisar si no quedó activo. */
     private var wentForAllFiles = false
+    /** El usuario fue a los ajustes de la app por el permiso de fotos: al volver, analizar solo si ya lo dio. */
+    private var wentForPhotos = false
 
     // ---- limpieza en curso ----
     private val pendingMedia = ArrayDeque<List<JunkItem>>()
@@ -130,7 +132,12 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
             wentForAllFiles = false
-            requestOrScan()
+            if (wentForPhotos) {
+                wentForPhotos = false
+                if (hasReadPermission()) startScan()
+            } else {
+                requestOrScan()
+            }
         } else if (screen == Screen.RESULTS) {
             renderResults()
         }
@@ -352,6 +359,23 @@ class MainActivity : AppCompatActivity() {
         show(Screen.WELCOME)
         b.permissionHint.text = getString(R.string.status_no_permission)
         b.permissionHint.visibility = View.VISIBLE
+        b.scroll.smoothScrollTo(0, 0)
+        // El aviso vive arriba de la lista, pero además se ofrece el atajo a los ajustes de la app.
+        Snackbar.make(b.root, R.string.status_no_permission_short, Snackbar.LENGTH_LONG)
+            .setAction(R.string.open_app_settings) { openAppSettings() }
+            .show()
+    }
+
+    private fun openAppSettings() {
+        returningFromSettings = true
+        wentForPhotos = true
+        try {
+            startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:$packageName")))
+        } catch (e: ActivityNotFoundException) {
+            returningFromSettings = false
+            wentForPhotos = false
+            Snackbar.make(b.root, R.string.open_failed, Snackbar.LENGTH_LONG).show()
+        }
     }
 
     // ---- escaneo ----------------------------------------------------------
@@ -498,6 +522,7 @@ class MainActivity : AppCompatActivity() {
             card.icon.setImageResource(cat.iconRes)
             card.title.text = getString(cat.titleRes)
             card.description.text = getString(cat.descRes)
+            card.toggle.contentDescription = getString(R.string.include_group_in_clean, getString(cat.titleRes))
             bindCardStats(card, group)
             card.toggle.setOnCheckedChangeListener(null)
             card.toggle.isChecked = group.any { it.selected }

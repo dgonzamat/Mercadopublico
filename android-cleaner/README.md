@@ -32,7 +32,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.5.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.6.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -52,7 +52,7 @@ Requiere **Android 11 o superior** (`minSdk 30`). El APK está firmado con la cl
 
 - `FileScannerTest`: almacenamiento falso en un directorio temporal (descargas viejas, APK, `.thumbnails`, `.Statuses` de WhatsApp, `.log`, archivo vacío, carpeta vacía, ZIP de 100 MB sparse, `Android/data` que debe saltarse). Verifica la clasificación y la preselección.
 - `JunkScannerTest`: galería falsa (proveedor `media` simulado) con fotos normales, capturas, un duplicado byte a byte, un falso duplicado del mismo tamaño, miniaturas, un archivo vacío y un video pesado. Verifica la clasificación, la preselección y el progreso.
-- `MainFlowTest`: flujo completo inicio → análisis → resultados (8 tarjetas + herramientas) → cuadrícula de fotos y de archivos (marcar, Todos/Ninguno, pulsación larga) → diálogo → borrado real de los archivos en disco → petición de borrado de la galería al sistema → pantalla Listo; y el caso «Solo la galería» + permiso denegado. Renderiza cada pantalla a PNG en `app/build/screenshots/` (modo gráfico nativo de Robolectric).
+- `MainFlowTest`: flujo completo inicio → análisis → resultados (8 tarjetas + herramientas) → cuadrícula de fotos y lista de archivos (marcar, Todos/Ninguno, pulsación larga) → diálogo → borrado real de los archivos en disco → petición de borrado de la galería al sistema → pantalla Listo; y el caso «Solo la galería» + permiso denegado. Renderiza cada pantalla a PNG en `app/build/screenshots/` (modo gráfico nativo de Robolectric).
 
 No sustituye una prueba en teléfono real: el diálogo de borrado de Android y las miniaturas reales solo se ven en un dispositivo.
 

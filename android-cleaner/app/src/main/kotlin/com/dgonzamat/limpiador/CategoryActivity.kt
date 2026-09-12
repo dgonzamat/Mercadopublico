@@ -48,7 +48,7 @@ class CategoryActivity : AppCompatActivity() {
         )
 
         adapter = GridAdapter(items, Thumbnails(this, lifecycleScope), ::updateSummary, ::open)
-        b.grid.layoutManager = GridLayoutManager(this, 3)
+        b.grid.layoutManager = GridLayoutManager(this, GridAdapter.spanCount(items.first().kind))
         b.grid.adapter = adapter
 
         b.selectAllButton.setOnClickListener {

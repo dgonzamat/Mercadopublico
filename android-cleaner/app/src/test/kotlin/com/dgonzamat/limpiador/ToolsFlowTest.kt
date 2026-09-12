@@ -141,8 +141,10 @@ class ToolsFlowTest {
             assertEquals(2, grid.adapter!!.itemCount)
             assertEquals(c.getString(R.string.grid_hint_app), c.v<TextView>(R.id.hint).text.toString())
             val cell = grid.findViewHolderForAdapterPosition(0)!!.itemView
+            assertEquals("App olvidada", cell.findViewById<TextView>(R.id.name).text.toString())
             val label = cell.findViewById<TextView>(R.id.label).text.toString()
-            assertTrue(label, label.startsWith("App olvidada\n150,0 MB · "))
+            assertTrue(label, label.startsWith("150,0 MB · "))
+            assertEquals(View.GONE, cell.findViewById<View>(R.id.path).visibility) // las apps no tienen carpeta
             Screenshots.snap(c.window.decorView, "09-revision-apps")
             cell.performLongClick()
             val info = shadowOf(c).nextStartedActivity

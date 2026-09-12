@@ -15,6 +15,8 @@ object Screenshots {
         val h = view.height.takeIf { it > 0 } ?: view.measuredHeight
         require(w > 0 && h > 0) { "vista sin tamaño: $name (${view.width}x${view.height})" }
         val bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
+        // Sin esto las casillas y los interruptores se dibujan en su estado ANTERIOR (animan el cambio).
+        view.jumpDrawablesToCurrentState()
         view.draw(Canvas(bmp))
         val f = File(dir, "$name.png")
         FileOutputStream(f).use { bmp.compress(Bitmap.CompressFormat.PNG, 100, it) }

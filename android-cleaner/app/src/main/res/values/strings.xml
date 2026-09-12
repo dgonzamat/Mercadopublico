@@ -61,7 +61,7 @@
 
     <!-- Revisión en cuadrícula -->
     <string name="grid_hint_media">Toca para marcar o desmarcar. Mantén presionado para ver la foto completa.</string>
-    <string name="grid_hint_file">Toca para marcar o desmarcar. Mantén presionado para ver la ruta y la fecha.</string>
+    <string name="grid_hint_file">Toca para marcar o desmarcar. Mantén presionado para ver la ruta completa y la fecha.</string>
     <string name="grid_hint_app">Toca para marcar o desmarcar. Mantén presionado para abrir la información de la app.</string>
     <string name="selection_summary">%1$d de %2$d seleccionados · %3$s</string>
     <string name="select_all">Todos</string>
@@ -159,4 +159,8 @@
     <string name="phase_gallery">Galería: fotos y videos</string>
     <string name="phase_files">Archivos del teléfono</string>
     <string name="phase_apps">Apps que no usas</string>
+    <string name="root_folder">Almacenamiento interno</string>
+    <string name="include_group_in_clean">Incluir «%1$s» en la limpieza</string>
+    <string name="status_no_permission_short">Sin permiso para ver tus fotos y videos.</string>
+    <string name="open_app_settings">Ajustes</string>
 </resources>

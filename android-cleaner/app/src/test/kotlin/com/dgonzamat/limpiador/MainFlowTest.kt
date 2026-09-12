@@ -173,6 +173,7 @@ class MainFlowTest {
             grid.layout(grid.left, grid.top, grid.right, grid.bottom)
             idle()
             assertEquals(2, grid.adapter!!.itemCount)
+            assertEquals(3, (grid.layoutManager as androidx.recyclerview.widget.GridLayoutManager).spanCount) // fotos: cuadrícula
             val summary = c.v<TextView>(R.id.selectionSummary)
             assertEquals(c.getString(R.string.selection_summary, 2, 2, formatSize(900_000)), summary.text.toString())
             assertEquals(c.getString(R.string.select_none), c.v<MaterialButton>(R.id.selectAllButton).text.toString())
@@ -210,8 +211,13 @@ class MainFlowTest {
             idle()
             assertEquals(5, grid.adapter!!.itemCount)
             assertEquals(c.getString(R.string.grid_hint_file), c.v<TextView>(R.id.hint).text.toString())
+            // Archivos en filas (1 columna): nombre, tamaño · motivo y carpeta legibles sin truncar.
+            assertEquals(1, (grid.layoutManager as androidx.recyclerview.widget.GridLayoutManager).spanCount)
             val first = grid.findViewHolderForAdapterPosition(0)!!.itemView
-            assertTrue(first.findViewById<TextView>(R.id.label).text.contains(".thumbnails"))
+            assertEquals(".thumbnails", first.findViewById<TextView>(R.id.name).text.toString())
+            assertTrue(first.findViewById<TextView>(R.id.label).text.contains(c.getString(R.string.note_cache_dir)))
+            assertEquals(View.VISIBLE, first.findViewById<View>(R.id.path).visibility)
+            assertTrue(first.findViewById<com.google.android.material.checkbox.MaterialCheckBox>(R.id.check).isChecked)
             Screenshots.snap(c.window.decorView, "05b-revision-residuos")
             first.performLongClick()
             idle()
@@ -313,7 +319,10 @@ class MainFlowTest {
             shadowOf(a).receiveResult(req.intent, Activity.RESULT_CANCELED, null)
             idle()
             assertEquals(View.VISIBLE, a.v<View>(R.id.welcomeGroup).visibility)
-            assertEquals(View.VISIBLE, a.v<View>(R.id.permissionHint).visibility)
+            val hint = a.v<View>(R.id.permissionHint)
+            assertEquals(View.VISIBLE, hint.visibility)
+            // El aviso va arriba de la lista de grupos, no debajo (donde quedaba fuera de pantalla).
+            assertTrue(hint.top < a.v<View>(R.id.welcomeGroups).top)
             assertEquals(View.GONE, a.v<View>(R.id.scanningGroup).visibility)
             Screenshots.snap(a.window.decorView, "07-sin-permiso")
         }

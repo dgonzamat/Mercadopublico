@@ -120,18 +120,18 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:paddingTop="32dp">
+                    android:paddingTop="12dp">
 
                     <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
                         android:contentDescription="@null"
                         android:src="@drawable/ic_hero_broom" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="10dp"
                         android:gravity="center"
                         android:text="@string/welcome_title"
                         android:textAppearance="?attr/textAppearanceHeadlineSmall" />
@@ -145,11 +145,29 @@
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textColor="?android:attr/textColorSecondary" />
 
+                    <!-- Permiso de fotos denegado: arriba de la lista, donde se ve sin desplazar -->
+                    <TextView
+                        android:id="@+id/permissionHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_danger_note"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/danger"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/ic_shield"
+                        app:drawableTint="@color/danger"
+                        tools:text="Necesitamos permiso para ver tus fotos y videos."
+                        tools:visibility="visible" />
+
                     <LinearLayout
                         android:id="@+id/welcomeGroups"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="12dp"
                         android:orientation="vertical" />
 
                     <LinearLayout
@@ -174,18 +192,6 @@
                             android:textAppearance="?attr/textAppearanceBodySmall"
                             android:textColor="?android:attr/textColorSecondary" />
                     </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/permissionHint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:gravity="center"
-                        android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="@color/danger"
-                        android:visibility="gone"
-                        tools:text="Sin permiso"
-                        tools:visibility="visible" />
                 </LinearLayout>
 
                 <!-- ESTADO 2: analizando -->

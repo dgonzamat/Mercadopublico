@@ -26,7 +26,8 @@ class Thumbnails(private val context: Context, private val scope: CoroutineScope
         target.tag = key
         fun full() { target.setPadding(0, 0, 0, 0); target.scaleType = ImageView.ScaleType.CENTER_CROP }
         fun inset(fraction: Float) {
-            val p = (target.resources.displayMetrics.widthPixels / 3 * fraction).toInt()
+            val side = target.layoutParams?.width?.takeIf { it > 0 } ?: (target.resources.displayMetrics.widthPixels / 3)
+            val p = (side * fraction).toInt()
             target.setPadding(p, p, p, p)
             target.scaleType = ImageView.ScaleType.FIT_CENTER
         }
