@@ -1,5 +1,7 @@
 package com.dgonzamat.limpiador
 
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.ensureActive
 import java.io.File
 import java.util.concurrent.TimeUnit
 
@@ -41,20 +43,22 @@ class FileScanner(
     var visited = 0
         private set
 
-    fun scan(onProgress: (Int) -> Unit = {}): List<JunkItem> {
+    suspend fun scan(onProgress: suspend (Int) -> Unit = {}): List<JunkItem> {
         val out = mutableListOf<JunkItem>()
         val downloadDir = File(root, "Download")
+        visited = 0
         walk(root, 0, downloadDir, out, onProgress)
         return out.sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.size })
     }
 
     /** Devuelve true si la carpeta quedó vacía (sin entradas). */
-    private fun walk(dir: File, depth: Int, downloadDir: File, out: MutableList<JunkItem>, onProgress: (Int) -> Unit): Boolean {
+    private suspend fun walk(dir: File, depth: Int, downloadDir: File, out: MutableList<JunkItem>, onProgress: suspend (Int) -> Unit): Boolean {
         val children = dir.listFiles() ?: return false // sin permiso o no es carpeta: no tocar
         if (children.isEmpty()) return true
         for (f in children) {
+            currentCoroutineContext().ensureActive() // «Cancelar» detiene el recorrido aquí
             visited++
-            if (visited % 200 == 0) onProgress(visited)
+            if (visited % 300 == 0) onProgress(visited)
             val rel = f.relativeTo(root).path
             if (f.isDirectory) {
                 if (rel in SKIP_RELATIVE) continue

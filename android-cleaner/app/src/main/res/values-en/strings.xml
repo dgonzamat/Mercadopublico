@@ -131,4 +131,13 @@
     <string name="analyze_none">Check at least one group</string>
     <string name="diagnostics_title">Diagnostics</string>
     <string name="copy">Copy</string>
+
+    <string name="cat_similar">Similar photos (bursts)</string>
+    <string name="cat_similar_desc">Taken seconds apart and nearly identical; we keep the largest. Review them yourself</string>
+    <string name="note_similar_to">Similar to %1$s</string>
+    <string name="cancel_scan">Cancel analysis</string>
+    <plurals name="scanning_files_count">
+        <item quantity="one">%1$d phone file checked…</item>
+        <item quantity="other">%1$d phone files checked…</item>
+    </plurals>
 </resources>

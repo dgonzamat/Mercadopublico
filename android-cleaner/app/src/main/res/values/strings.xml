@@ -140,4 +140,14 @@
     <string name="analyze_none">Marca al menos un grupo</string>
     <string name="diagnostics_title">Diagnóstico</string>
     <string name="copy">Copiar</string>
+
+    <!-- v2.4 -->
+    <string name="cat_similar">Fotos similares (ráfagas)</string>
+    <string name="cat_similar_desc">Tomadas con segundos de diferencia y casi iguales; conservamos la más grande. Revísalas tú</string>
+    <string name="note_similar_to">Parecida a %1$s</string>
+    <string name="cancel_scan">Cancelar análisis</string>
+    <plurals name="scanning_files_count">
+        <item quantity="one">%1$d archivo del teléfono revisado…</item>
+        <item quantity="other">%1$d archivos del teléfono revisados…</item>
+    </plurals>
 </resources>

@@ -48,7 +48,7 @@ class FileScannerTest {
     fun clasifica_el_almacenamiento_de_prueba() {
         val root = FakeStorage.build()
         try {
-            val items = FileScanner(root).scan()
+            val items = kotlinx.coroutines.runBlocking { FileScanner(root).scan() }
             fun names(cat: Category) = items.filter { it.category == cat }.map { it.name }.toSet()
 
             assertEquals(setOf(".thumbnails", ".Statuses", "notas.log", "vacio.txt", "Vacia"), names(Category.RESIDUE))

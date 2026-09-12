@@ -44,7 +44,15 @@ object FakeGallery {
         FakeFile(9, "empty.jpg", 0, 0, 0, 1008, "Pictures/"),
         FakeFile(10, "VID_0001.mp4", 30_000_000, 1920, 1080, 1009, "DCIM/Camera/", video = true),
         FakeFile(11, "VID_big.mp4", 350L * 1024 * 1024, 3840, 2160, 1010, "DCIM/Camera/", video = true),
+        // Ráfaga: tres fotos en 5 segundos en la misma carpeta (las huellas las pone la prueba).
+        FakeFile(12, "IMG_B1.jpg", 3_100_000, 4000, 3000, 5000, "DCIM/Camera/"),
+        FakeFile(13, "IMG_B2.jpg", 3_000_000, 4000, 3000, 5003, "DCIM/Camera/"),
+        FakeFile(14, "IMG_B3.jpg", 2_900_000, 4000, 3000, 5005, "DCIM/Camera/"),
     )
+
+    /** Huellas perceptuales de la ráfaga: B2 casi igual a B1 (1 bit), B3 muy distinta. */
+    val HASHES = mapOf(12L to 0x00FFFF0000FFFF00L, 13L to 0x00FFFF0000FFFF01L, 14L to 0x0F0F0F0F0F0F0F0FL)
+    val EXPECTED_SIMILAR = setOf(13L)
 
     val EXPECTED_SCREENSHOTS = setOf(3L, 4L)
     val EXPECTED_DUPLICATES = setOf(6L)

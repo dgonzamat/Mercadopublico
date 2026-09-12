@@ -42,7 +42,19 @@ class JunkScannerTest {
 
         // Progreso: primero Reading, luego Found con el total real.
         assertEquals(ScanProgress.Reading, progress.first())
-        assertEquals(ScanProgress.Found(11), progress[1])
+        assertEquals(ScanProgress.Found(14), progress[1])
+    }
+
+    @Test
+    fun detecta_fotos_similares_en_rafaga_con_huella_perceptual() = runBlocking {
+        val resolver = ApplicationProvider.getApplicationContext<Context>().contentResolver
+        val scanner = JunkScanner(resolver) { uri -> FakeGallery.HASHES[uri.lastPathSegment!!.toLong()] }
+        val items = scanner.scan {}
+        val similar = items.filter { it.category == Category.SIMILAR }
+        assertEquals(FakeGallery.EXPECTED_SIMILAR, similar.map { it.uri!!.lastPathSegment!!.toLong() }.toSet())
+        assertEquals("IMG_B1.jpg", similar.single().note)   // se conserva la más grande
+        assertTrue(similar.none { it.selected })            // solo para revisar
+        assertEquals(7, items.size)                         // los 6 de siempre + la similar
     }
 
     @Test

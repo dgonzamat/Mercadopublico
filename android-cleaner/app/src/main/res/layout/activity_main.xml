@@ -232,6 +232,14 @@
                         android:text="@string/scanning_wait"
                         android:textAppearance="?attr/textAppearanceBodySmall"
                         android:textColor="?android:attr/textColorSecondary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/cancelScanButton"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/cancel_scan" />
                 </LinearLayout>
 
                 <!-- ESTADO 3: resultados -->

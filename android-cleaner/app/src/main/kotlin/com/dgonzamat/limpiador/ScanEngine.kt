@@ -14,7 +14,7 @@ object ScanEngine {
     /** Dónde se entregan los avisos de progreso (la pantalla vive en el hilo principal). */
     var uiDispatcher: kotlinx.coroutines.CoroutineDispatcher = Dispatchers.Main
 
-    val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.TINY, Category.LARGE_VIDEOS)
+    val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.SIMILAR, Category.TINY, Category.LARGE_VIDEOS)
     val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS)
 
     /** Escanea solo los grupos en [enabled] (por defecto, todos). */
@@ -37,12 +37,10 @@ object ScanEngine {
                 cacheDir = context.getString(R.string.note_cache_dir),
                 daysOld = { context.getString(R.string.note_days_old, it) },
             )
-            // Progreso desde el hilo IO: el callback es suspend, así que se agrupa en lotes.
             val fs = FileScanner(storageRoot(), strings = strings)
-            var pending = -1
-            out += fs.scan { pending = it }
+            out += fs.scan { onProgress(ScanProgress.Files(it)) }
             visited = fs.visited
-            if (pending >= 0) onProgress(ScanProgress.Files(pending))
+            onProgress(ScanProgress.Files(visited))
         }
         val usage = usageAccess(context)
         if (usage && Category.UNUSED_APPS in enabled) {

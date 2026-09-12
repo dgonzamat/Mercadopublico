@@ -10,6 +10,7 @@ enum class Kind { MEDIA, FILE, APP }
 enum class Category(val titleRes: Int, val descRes: Int, val iconRes: Int, val preselected: Boolean) {
     SCREENSHOTS(R.string.cat_screenshots, R.string.cat_screenshots_desc, R.drawable.ic_phone, true),
     DUPLICATES(R.string.cat_duplicates, R.string.cat_duplicates_desc, R.drawable.ic_copy, true),
+    SIMILAR(R.string.cat_similar, R.string.cat_similar_desc, R.drawable.ic_burst, false),
     TINY(R.string.cat_tiny, R.string.cat_tiny_desc, R.drawable.ic_crop, true),
     RESIDUE(R.string.cat_residue, R.string.cat_residue_desc, R.drawable.ic_sweep, true),
     APK_FILES(R.string.cat_apk, R.string.cat_apk_desc, R.drawable.ic_apk, true),

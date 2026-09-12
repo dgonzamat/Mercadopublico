@@ -104,6 +104,7 @@ class MainActivity : AppCompatActivity() {
 
         b.primaryButton.setOnClickListener { onPrimaryAction() }
         b.rescanButton.setOnClickListener { requestOrScan() }
+        b.cancelScanButton.setOnClickListener { cancelScan() }
         b.appTitle.setOnLongClickListener { showDiagnostics(); true }
         renderWelcomeGroups()
 
@@ -348,6 +349,12 @@ class MainActivity : AppCompatActivity() {
 
     // ---- escaneo ----------------------------------------------------------
 
+    private fun cancelScan() {
+        scanJob?.cancel()
+        scanJob = null
+        show(if (ScanStore.items.isNotEmpty()) Screen.RESULTS else Screen.WELCOME)
+    }
+
     private fun startScan() {
         scanJob?.cancel()
         b.permissionHint.visibility = View.GONE
@@ -361,7 +368,9 @@ class MainActivity : AppCompatActivity() {
                         ScanProgress.Reading -> getString(R.string.scanning_reading)
                         is ScanProgress.Found -> resources.getQuantityString(R.plurals.scanning_found, p.total, p.total)
                         is ScanProgress.Hashing -> getString(R.string.scanning_hashing, p.done, p.total)
-                        is ScanProgress.Files -> getString(R.string.scanning_files)
+                        is ScanProgress.Files ->
+                            if (p.visited == 0) getString(R.string.scanning_files)
+                            else resources.getQuantityString(R.plurals.scanning_files_count, p.visited, p.visited)
                         ScanProgress.Apps -> getString(R.string.scanning_apps)
                     }
                 }
@@ -380,6 +389,15 @@ class MainActivity : AppCompatActivity() {
     // ---- resultados -------------------------------------------------------
 
     private fun renderResults() {
+        try {
+            renderResultsUnsafe()
+        } catch (e: Exception) {
+            // Mejor una lista incompleta con aviso que una app cerrada.
+            Snackbar.make(b.root, getString(R.string.status_error, e.message ?: e.javaClass.simpleName), Snackbar.LENGTH_LONG).show()
+        }
+    }
+
+    private fun renderResultsUnsafe() {
         val all = ScanStore.items
         val scope = ScanStore.scope
         b.categoryContainer.removeAllViews()

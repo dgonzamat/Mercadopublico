@@ -26,6 +26,7 @@ class GridAdapter(
             b.label.text = when (item.kind) {
                 Kind.MEDIA -> when (item.category) {
                     Category.DUPLICATES -> ctx.getString(R.string.note_duplicate_of, item.note)
+                    Category.SIMILAR -> ctx.getString(R.string.note_similar_to, item.note)
                     Category.TINY -> item.note?.let { "$it · ${formatSize(item.size)}" } ?: formatSize(item.size)
                     else -> formatSize(item.size)
                 }

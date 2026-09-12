@@ -258,6 +258,27 @@ class MainFlowTest {
     }
 
     @Test
+    fun cancelar_el_analisis_vuelve_al_inicio_sin_resultados() {
+        ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
+            idle()
+            FakeMediaProvider.gate = java.util.concurrent.CountDownLatch(1)
+            a.v<MaterialButton>(R.id.primaryButton).performClick()
+            idle()
+            assertEquals(View.VISIBLE, a.v<View>(R.id.scanningGroup).visibility)
+            a.v<MaterialButton>(R.id.cancelScanButton).performClick()
+            idle()
+            assertEquals(View.VISIBLE, a.v<View>(R.id.welcomeGroup).visibility)
+            assertEquals(a.getString(R.string.analyze), a.v<MaterialButton>(R.id.primaryButton).text.toString())
+            FakeMediaProvider.gate!!.countDown()
+            // El análisis cancelado no debe aparecer después ni mostrar un error.
+            repeat(20) { idle(); Thread.sleep(25) }
+            assertEquals(View.VISIBLE, a.v<View>(R.id.welcomeGroup).visibility)
+            assertEquals(View.GONE, a.v<View>(R.id.resultsGroup).visibility)
+            assertTrue(ScanStore.items.isEmpty())
+        }
+    }
+
+    @Test
     fun sin_permiso_muestra_aviso_y_no_escanea() {
         val app = ApplicationProvider.getApplicationContext<Application>()
         shadowOf(app).denyPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
