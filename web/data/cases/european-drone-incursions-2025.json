@@ -1,0 +1,111 @@
+{
+  "id": "european-drone-incursions-2025",
+  "num": 391,
+  "name": "Oleada de drones sobre Europa",
+  "name_en": "European drone incursion wave",
+  "year_start": 2025,
+  "year_end": 2026,
+  "country": "DK",
+  "country_name": "Dinamarca · oleada europea",
+  "flag": "🇩🇰",
+  "location": {
+    "lat": 55.618,
+    "lng": 12.656,
+    "place": "Aeropuerto de Copenhague + una decena de países de la OTAN",
+    "place_en": "Copenhagen Airport + some ten NATO countries"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "epistemicStatus": "developing",
+  "probability": 40,
+  "summary": "Entre septiembre y diciembre de 2025, incursiones aéreas no identificadas cerraron aeropuertos y sobrevolaron bases nucleares en una decena de países de la OTAN: Kleine Brogel, Volkel —donde los militares abrieron fuego— e Île Longue. No se recuperó ni identificó un solo aparato. En junio de 2026 la policía danesa cerró la investigación de Copenhague sin poder confirmar ni descartar que hubiera habido drones.",
+  "summary_en": "Between September and December 2025, unidentified aerial incursions closed airports and overflew nuclear bases across some ten NATO countries: Kleine Brogel, Volkel —where the military opened fire— and Île Longue. Not a single craft was recovered or identified. In June 2026 Danish police closed the Copenhagen investigation unable to confirm or rule out that drones had been there.",
+  "patterns": [
+    "8b",
+    "8f",
+    "8s"
+  ],
+  "category": "incident",
+  "whatHappened": "Entre el 22 de septiembre y el 4 de diciembre de 2025, una secuencia de incursiones aéreas no identificadas recorrió una decena de países de la OTAN, cerrando aeropuertos civiles y sobrevolando instalaciones militares y nucleares. Empezó la noche del 22 de septiembre: el aeropuerto de Copenhague suspendió operaciones cerca de cuatro horas tras avistarse «dos o tres drones grandes» dentro de su espacio aéreo controlado, y el de Oslo-Gardermoen cerró brevemente esa misma noche. El jefe de policía de Copenhague, Jens Jespersen, describió patrones de vuelo sofisticados y planteó que el puesto de control podía estar «en un barco». La primera ministra danesa, Mette Frederiksen, lo calificó como el ataque más grave sufrido hasta la fecha por la infraestructura crítica del país.\n\nEl patrón se repitió durante once semanas. En Dinamarca cerraron Aalborg y Billund y hubo avistamientos junto a las bases de Skrydstrup y Karup. En Alemania, un memorando interno del gobierno de Schleswig-Holstein documentó formaciones de drones sobre la división naval de ThyssenKrupp, el hospital universitario de Kiel, el fiordo de Kiel, centrales eléctricas y el parlamento regional; el ministro del Interior del estado citó envergaduras de ocho metros, y el gobierno federal contabilizó 172 perturbaciones del tráfico aéreo por drones solo en 2025. Múnich cerró dos veces en veinticuatro horas a comienzos de octubre, Berlín-Brandeburgo y Bremen en las semanas siguientes. En Noruega hubo avistamientos sobre la base aérea de Ørland y la policía de Brønnøysund grabó entre cinco y seis posibles drones simultáneos en espacio restringido.\n\nBélgica concentró la fase más delicada. El 2 de noviembre se observaron varios aparatos sobre Kleine Brogel —la base que según reportes sostenidos alberga armas nucleares tácticas estadounidenses—, se desplegó un helicóptero y los objetos se alejaron hacia los Países Bajos; el mismo día hubo sobrevuelos en Leopoldsburg y Marche-en-Famenne. El 9 de noviembre cerró el aeropuerto de Lieja y se vieron tres drones sobre la central nuclear de Doel; el Reino Unido, Francia y Alemania anunciaron apoyo con personal y equipos. El 22 de noviembre los militares neerlandeses abrieron fuego contra aparatos sobre la base de Volkel, depósito de armamento nuclear, y no se recuperó ningún resto. El 4 de diciembre, cinco drones no identificados sobrevolaron Île Longue, la base operativa de los submarinos lanzamisiles franceses; se empleó un inhibidor y no se derribó ninguno ni se identificó a sus operadores.\n\nEl marco institucional ya estaba puesto: el 12 de septiembre, tras invocar Polonia el artículo 4 por una incursión de drones rusos, la OTAN había lanzado la operación Eastern Sentry para reforzar la vigilancia del flanco oriental. La atribución dominante, nunca probada, señaló a Rusia y a una campaña de guerra híbrida. Y el hecho que atraviesa toda la secuencia es negativo: en once semanas y diez países no se recuperó, identificó ni derribó de forma confirmada un solo aparato.\n\nEl 25 de junio de 2026, nueve meses después, la policía danesa cerró la investigación de Copenhague sin sospechosos. El inspector jefe Søren Thomassen resumió el resultado en una frase que conviene citar entera: «No podemos confirmar que haya habido actividad de drones en el aeropuerto y sus alrededores. Al mismo tiempo, no podemos descartar que la haya habido». Los investigadores habían revisado declaraciones de testigos, fotografías, videos, grabaciones de circuito cerrado, datos de radar y registros extensos de tráfico aéreo y marítimo. Su conclusión fue que hubo actividad no explicada en el espacio aéreo esa noche, pero que nada de lo reunido demostraba que los objetos fueran drones.",
+  "whatHappened_en": "Between 22 September and 4 December 2025, a sequence of unidentified aerial incursions swept through some ten NATO countries, closing civilian airports and overflying military and nuclear installations. It began on the night of 22 September: Copenhagen Airport suspended operations for close to four hours after 'two or three large drones' were sighted inside its controlled airspace, and Oslo-Gardermoen closed briefly the same night. Copenhagen's police chief, Jens Jespersen, described sophisticated flight patterns and suggested the control site might be 'on a ship'. Danish Prime Minister Mette Frederiksen called it the most serious attack the country's critical infrastructure had suffered to date.\n\nThe pattern repeated for eleven weeks. In Denmark, Aalborg and Billund closed and there were sightings beside the Skrydstrup and Karup bases. In Germany, an internal Schleswig-Holstein government memo documented drone formations over ThyssenKrupp's marine division, Kiel's university hospital, the Kiel Fjord, power stations and the regional parliament; the state interior minister cited eight-metre wingspans, and the federal government counted 172 drone-related air traffic disruptions in 2025 alone. Munich closed twice within twenty-four hours in early October, Berlin Brandenburg and Bremen in the following weeks. In Norway there were sightings over Ørland air station, and police in Brønnøysund filmed five to six possible drones simultaneously in restricted airspace.\n\nBelgium concentrated the most delicate phase. On 2 November several craft were observed over Kleine Brogel —the base that sustained reporting holds to store U.S. tactical nuclear weapons— a helicopter was scrambled and the objects moved off towards the Netherlands; the same day there were overflights at Leopoldsburg and Marche-en-Famenne. On 9 November Liège Airport closed and three drones were seen over the Doel nuclear power station; the United Kingdom, France and Germany announced support with personnel and equipment. On 22 November Dutch military personnel opened fire on craft over Volkel air base, a nuclear weapons storage site, and no wreckage was recovered. On 4 December five unidentified drones overflew Île Longue, the operating base of France's ballistic-missile submarines; a jammer was used, none was brought down and no operators were identified.\n\nThe institutional frame was already in place: on 12 September, after Poland invoked Article 4 over an incursion by Russian drones, NATO had launched Operation Eastern Sentry to reinforce surveillance of the eastern flank. The dominant attribution, never proven, pointed to Russia and a hybrid-warfare campaign. And the fact running through the whole sequence is a negative one: in eleven weeks and ten countries, not a single craft was recovered, identified or confirmably brought down.\n\nOn 25 June 2026, nine months later, Danish police closed the Copenhagen investigation with no suspects. Chief Inspector Søren Thomassen summed up the result in a sentence worth quoting whole: 'We cannot confirm that there has been drone activity in and around the airport. At the same time, we cannot rule out the possibility that there has been drone activity.' Investigators had reviewed witness statements, photographs, videos, CCTV footage, radar data and extensive air and maritime traffic records. Their conclusion was that there had been unexplained activity in the airspace that night, but that nothing they had gathered demonstrated the objects were drones.",
+  "whyMatters": "Este expediente entra al corpus por una inversión que rara vez se puede documentar. La secuencia europea de 2025 es el caso más cargado hacia la narrativa adversaria de todo el corpus junto al globo chino de 2023 ([[chinese-balloon-montana-2023]]), pero con la diferencia que lo vuelve interesante: aquel terminó con el objeto derribado, recuperado y analizado, y este terminó sin un solo resto. Once semanas, diez países, fuego abierto en Volkel, un inhibidor empleado en Île Longue, y ni un fragmento. La atribución a Rusia es la lectura razonable por contexto —hay una guerra en curso, Polonia invocó el artículo 4, la OTAN desplegó Eastern Sentry— pero sigue siendo inferencia por circunstancia, no identificación.\n\nEl hallazgo danés de junio de 2026 es lo que obliga a pesar el caso con cuidado, y opera en dirección contraria a la que la intuición sugiere. Una policía occidental dedicó nueve meses a establecer la explicación mundana —que lo visto eran drones— cruzando testimonios, fotografías, video, circuito cerrado, radar y registros de tráfico aéreo y marítimo, y no pudo demostrarla ni descartarla. El resultado es estructuralmente idéntico a un caso «no resuelto» de la AARO, pero alcanzado desde el extremo opuesto: no partieron de un fenómeno anómalo tratando de reducirlo a algo conocido, sino de algo conocido que no lograron confirmar. Que un cierre de aeropuerto nacional, con una primera ministra hablando de ataque a la infraestructura crítica, termine en «no podemos confirmar ni descartar» es el recordatorio más limpio que ofrece el corpus de cuánta certeza se pierde entre el titular y el expediente.\n\nEl contraste con [[mystery-drones-east-coast-2024]] es la segunda razón de la ficha. La misma fenomenología —objetos no identificados sobre instalaciones sensibles, aeropuertos cerrados, autoridades incapaces de identificarlos— recibió en Estados Unidos un encuadre UAP y en Europa uno de guerra híbrida, y la diferencia no vino de la evidencia sino del contexto político disponible para interpretarla. Registrar ambos casos permite ver que el marco explicativo se elige antes de conocer el objeto.\n\nPor eso el posterior carga en la narrativa adversaria sin acercarse a la certeza del globo chino, deja masa apreciable en lo mundano —el hallazgo de Copenhague lo exige— y mantiene una indeterminación amplia, con el componente no humano prácticamente en cero: nada en la secuencia apunta en esa dirección y la ficha no va a fabricar ambigüedad donde no la hay. Un detalle morfológico merece nota aparte: el memorando de Schleswig-Holstein describe formaciones con «drone madre», es decir la configuración de objeto mayor acompañado de aparatos menores que el corpus cataloga como patrón 8b desde casos como Cressy en 1960. Aquí reaparece en registro inequívocamente tecnológico y escrita por un gobierno regional, lo que sugiere que la morfología describe una solución de ingeniería recurrente antes que una signatura exótica.",
+  "whyMatters_en": "This file enters the corpus for an inversion that can rarely be documented. The 2025 European sequence is the most adversary-loaded case in the whole corpus alongside the 2023 Chinese balloon ([[chinese-balloon-montana-2023]]), but with the difference that makes it interesting: that one ended with the object shot down, recovered and analysed, and this one ended without a single fragment. Eleven weeks, ten countries, fire opened at Volkel, a jammer used at Île Longue, and not one piece of wreckage. Attributing it to Russia is the reasonable reading from context —there is a war under way, Poland invoked Article 4, NATO deployed Eastern Sentry— but it remains inference from circumstance, not identification.\n\nThe Danish finding of June 2026 is what forces the case to be weighed carefully, and it cuts against intuition. A Western police force spent nine months trying to establish the mundane explanation —that what was seen were drones— cross-checking testimony, photographs, video, CCTV, radar and air and maritime traffic records, and could neither demonstrate nor rule it out. The result is structurally identical to an AARO 'unresolved' case, but reached from the opposite end: they did not start from an anomalous phenomenon and try to reduce it to something known, but from something known they could not confirm. That a national airport closure, with a prime minister speaking of an attack on critical infrastructure, should end in 'we cannot confirm nor rule out' is the cleanest reminder the corpus offers of how much certainty is lost between the headline and the file.\n\nThe contrast with [[mystery-drones-east-coast-2024]] is the file's second reason. The same phenomenology —unidentified objects over sensitive installations, airports closed, authorities unable to identify them— received a UAP framing in the United States and a hybrid-warfare framing in Europe, and the difference came not from the evidence but from the political context available to interpret it. Recording both cases makes visible that the explanatory frame is chosen before the object is known.\n\nThat is why the posterior loads onto the adversary narrative without approaching the certainty of the Chinese balloon, leaves appreciable mass on the mundane —the Copenhagen finding demands it— and keeps broad indeterminacy, with the non-human component effectively at zero: nothing in the sequence points that way and the file will not manufacture ambiguity where there is none. One morphological detail deserves separate note: the Schleswig-Holstein memo describes formations with a 'mother drone', that is, the configuration of a larger object accompanied by smaller craft that the corpus has catalogued as pattern 8b since cases like Cressy in 1960. Here it reappears in an unambiguously technological register and written by a regional government, which suggests the morphology describes a recurring engineering solution rather than an exotic signature.",
+  "evidence": [
+    "Cierres documentados de Copenhague, Oslo-Gardermoen, Aalborg, Billund, Múnich (dos veces en 24 h), Berlín-Brandeburgo, Bremen, Gotemburgo, Bruselas, Lieja y Dublín",
+    "Sobrevuelos de instalaciones nucleares: Kleine Brogel (2 nov), central de Doel (9 nov), Volkel (22 nov, fuego abierto sin restos recuperados), Île Longue (4 dic, inhibidor empleado sin derribos)",
+    "Memorando interno del gobierno de Schleswig-Holstein: formaciones con «drone madre», envergaduras de ocho metros, sobre astilleros, centrales y el parlamento regional",
+    "172 perturbaciones del tráfico aéreo alemán atribuidas a drones solo en 2025 (gobierno federal)",
+    "Grabación policial en Brønnøysund (Noruega): cinco a seis posibles drones simultáneos en espacio restringido",
+    "Operación Eastern Sentry de la OTAN (12 sep 2025), tras invocar Polonia el artículo 4",
+    "Ningún aparato recuperado, identificado ni derribado de forma confirmada en once semanas y diez países",
+    "Cierre de la investigación danesa (25 jun 2026) sin sospechosos, tras revisar testimonios, fotografías, video, circuito cerrado, radar y registros de tráfico aéreo y marítimo"
+  ],
+  "evidence_en": [
+    "Documented closures at Copenhagen, Oslo-Gardermoen, Aalborg, Billund, Munich (twice in 24 h), Berlin Brandenburg, Bremen, Gothenburg, Brussels, Liège and Dublin",
+    "Overflights of nuclear installations: Kleine Brogel (2 Nov), Doel power station (9 Nov), Volkel (22 Nov, fire opened with no wreckage recovered), Île Longue (4 Dec, jammer used with no craft downed)",
+    "Internal Schleswig-Holstein government memo: formations with a 'mother drone', eight-metre wingspans, over shipyards, power stations and the regional parliament",
+    "172 German air traffic disruptions attributed to drones in 2025 alone (federal government)",
+    "Police footage at Brønnøysund (Norway): five to six possible drones simultaneously in restricted airspace",
+    "NATO's Operation Eastern Sentry (12 Sep 2025), after Poland invoked Article 4",
+    "No craft recovered, identified or confirmably brought down in eleven weeks across ten countries",
+    "Closure of the Danish investigation (25 Jun 2026) with no suspects, after reviewing testimony, photographs, video, CCTV, radar and air and maritime traffic records"
+  ],
+  "sources": [
+    {
+      "name": "Wikipedia — '2025 European drone sightings'",
+      "url": "https://en.wikipedia.org/wiki/2025_European_drone_sightings",
+      "note": "Cronología agregada con fechas, sitios y respuestas oficiales país por país.",
+      "note_en": "Aggregated chronology with dates, sites and official responses country by country."
+    },
+    {
+      "name": "Reuters / US News — 'Danish Police Find No Proof Drones Caused Copenhagen Airport Shutdown' (25 jun 2026)",
+      "url": "https://www.usnews.com/news/world/articles/2026-06-25/danish-police-find-no-proof-drones-caused-copenhagen-airport-shutdown",
+      "note": "Cierre de la investigación y la declaración del inspector jefe Søren Thomassen: no se puede confirmar ni descartar la actividad de drones.",
+      "note_en": "Closure of the investigation and the statement by Chief Inspector Søren Thomassen: drone activity can be neither confirmed nor ruled out."
+    },
+    {
+      "name": "DroneLife — 'Danish Investigation Finds No Proof Drones Caused Copenhagen Airport Shutdown' (25 jun 2026)",
+      "url": "https://dronelife.com/2026/06/25/airport-drone-detection-copenhagen-investigation/",
+      "note": "Detalle del material revisado en los nueve meses de investigación.",
+      "note_en": "Detail of the material reviewed over the nine months of investigation."
+    },
+    {
+      "name": "Wikipedia — 'Operation Eastern Sentry'",
+      "url": "https://en.wikipedia.org/wiki/Operation_Eastern_Sentry",
+      "note": "Marco de la respuesta de la OTAN, lanzada el 12 sep 2025 tras el artículo 4 invocado por Polonia.",
+      "note_en": "Frame of NATO's response, launched 12 Sep 2025 after Poland invoked Article 4."
+    },
+    {
+      "name": "Al Jazeera — 'Copenhagen airport shut after sighting of unidentified drones' (22 sep 2025)",
+      "url": "https://www.aljazeera.com/news/2025/9/22/copenhagen-airport-shut-after-sighting-of-unidentified-drones",
+      "note": "Cobertura del episodio inicial, con las declaraciones de Frederiksen y del jefe de policía Jespersen.",
+      "note_en": "Coverage of the initial episode, with the statements by Frederiksen and police chief Jespersen."
+    },
+    {
+      "name": "Euronews — 'Explained: How drone incursions in Europe went from rarity to reality' (2 jun 2026)",
+      "url": "https://www.euronews.com/my-europe/2026/06/02/explained-how-drone-incursions-in-europe-went-from-rarity-to-reality",
+      "note": "Síntesis retrospectiva del arco completo y del estado de la atribución.",
+      "note_en": "Retrospective synthesis of the full arc and the state of attribution."
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.28,
+    "humana_clasificada": 0.07,
+    "adversaria": 0.4,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.01,
+    "indet": 0.23
+  },
+  "documents": [
+    {
+      "src": "/pursue/european-drone-incursions-2025-context.jpg",
+      "type": "image",
+      "title": "Contexto · aeropuerto de Copenhague (Kastrup), cerrado la noche del 22 de septiembre de 2025",
+      "title_en": "Context · Copenhagen Airport (Kastrup), closed on the night of 22 September 2025",
+      "source": "Copenhagen airport from air.jpg · Kallerna · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACopenhagen%20airport%20from%20air.jpg"
+    }
+  ]
+}
