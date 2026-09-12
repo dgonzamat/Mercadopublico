@@ -58,7 +58,14 @@ export interface EraDistribution {
   end: number;
 }
 
+// Los porcentajes de CorpusStats se calculan sobre el TOTAL del corpus, así que
+// las eras tienen que cubrirlo entero o las barras suman menos de 100 % sin
+// decirlo. Faltaba el tramo previo: los ~17 antecedentes anteriores a 1947 más
+// los casos de 1946, que no caían en ninguna era (mismo agujero que tenía el
+// bucketing de /cases, sep 2026). El corte en 1946 deja intacta el ancla
+// editorial de 1947 para la era institucional moderna.
 const ERAS: Array<{ label: string; start: number; end: number }> = [
+  { label: "Antecedentes", start: 0, end: 1946 },
   { label: "Era inicial", start: 1947, end: 1959 },
   { label: "Era Cold War", start: 1960, end: 1979 },
   { label: "Fin Cold War", start: 1980, end: 1995 },
