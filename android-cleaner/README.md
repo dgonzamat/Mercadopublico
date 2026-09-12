@@ -32,7 +32,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.4.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.5.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -40,9 +40,9 @@ Requiere **Android 11 o superior** (`minSdk 30`). El APK está firmado con la cl
 
 ## Capturas (renderizadas por las pruebas)
 
-| Inicio | Resultados | Revisión | Listo |
-|---|---|---|---|
-| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/05b-revision-residuos.png) | ![](docs/screenshots/06-listo.png) |
+| Inicio | Análisis | Resultados | Revisión | Listo |
+|---|---|---|---|---|
+| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/02-analizando.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/05b-revision-residuos.png) | ![](docs/screenshots/06-listo.png) |
 
 ## Pruebas
 

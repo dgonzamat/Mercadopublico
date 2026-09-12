@@ -86,6 +86,14 @@ class MainFlowTest {
             assertEquals(View.VISIBLE, a.v<View>(R.id.scanningGroup).visibility)
             assertEquals(View.GONE, a.v<View>(R.id.welcomeGroup).visibility)
             assertEquals(View.INVISIBLE, a.v<View>(R.id.bottomBar).visibility)
+            // Fases visibles: galería (en curso) y archivos (pendiente); apps no, sin acceso de uso.
+            val phases = a.v<android.view.ViewGroup>(R.id.scanPhases)
+            assertEquals(View.VISIBLE, phases.visibility)
+            assertEquals(2, phases.childCount)
+            assertEquals(a.getString(R.string.phase_gallery), phases.getChildAt(0).findViewById<TextView>(R.id.phaseText).text.toString())
+            assertEquals(a.getString(R.string.phase_files), phases.getChildAt(1).findViewById<TextView>(R.id.phaseText).text.toString())
+            assertEquals(View.VISIBLE, phases.getChildAt(0).findViewById<View>(R.id.phaseSpinner).visibility)
+            assertEquals(View.GONE, phases.getChildAt(1).findViewById<View>(R.id.phaseSpinner).visibility)
             Screenshots.snap(a.window.decorView, "02-analizando")
             FakeMediaProvider.gate!!.countDown()
         }
@@ -97,12 +105,18 @@ class MainFlowTest {
             assertEquals(8, container.childCount)
             val all = ScanStore.items
             assertEquals(15, all.size)
-            val title = a.v<TextView>(R.id.resultsTitle).text.toString()
-            assertEquals(a.getString(R.string.results_title, formatSize(all.sumOf { it.size })), title)
             val primary = a.v<MaterialButton>(R.id.primaryButton)
             assertTrue(primary.isEnabled)
             val preselected = all.filter { it.selected }.sumOf { it.size }
             assertEquals(a.getString(R.string.clean_now, formatSize(preselected)), primary.text.toString())
+            // El título dice lo MARCADO (la misma cifra que el botón); el total encontrado va en el subtítulo.
+            assertEquals(a.getString(R.string.results_title, formatSize(preselected)), a.v<TextView>(R.id.resultsTitle).text.toString())
+            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.contains(formatSize(all.sumOf { it.size })))
+            // Grupos buscados sin hallazgos: se nombran (similares no encontró nada; apps no se buscó).
+            val empty = a.v<TextView>(R.id.emptyGroups)
+            assertEquals(View.VISIBLE, empty.visibility)
+            assertTrue(empty.text.contains(a.getString(R.string.cat_similar)))
+            assertFalse(empty.text.contains(a.getString(R.string.cat_unused_apps)))
 
             // El interruptor de "Videos pesados" arranca apagado; el de capturas, encendido.
             val cards = (0 until container.childCount).map { container.getChildAt(it) }
@@ -132,6 +146,7 @@ class MainFlowTest {
             assertTrue(ScanStore.byCategory(Category.SCREENSHOTS).none { it.selected })
             val sinCapturas = all.filter { it.selected }.sumOf { it.size }
             assertEquals(a.getString(R.string.clean_now, formatSize(sinCapturas)), primary.text.toString())
+            assertEquals(a.getString(R.string.results_title, formatSize(sinCapturas)), a.v<TextView>(R.id.resultsTitle).text.toString())
             cards[0].findViewById<MaterialSwitch>(R.id.toggle).performClick()
             idle()
             assertTrue(ScanStore.byCategory(Category.SCREENSHOTS).all { it.selected })

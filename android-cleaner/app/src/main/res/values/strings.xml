@@ -10,14 +10,14 @@
     <!-- Bienvenida -->
     <string name="welcome_title">Recupera espacio en un toque</string>
     <string name="welcome_body">Toca el botón y revisamos estos grupos. Tú decides qué se va.</string>
-    <string name="welcome_tag_auto">se marca solo</string>
-    <string name="welcome_tag_review">tú revisas</string>
+    <string name="welcome_tag_auto">Se marca automáticamente</string>
+    <string name="welcome_tag_review">Solo se muestra; tú eliges</string>
     <string name="privacy_note">Todo ocurre en tu teléfono. Nada se sube a internet.</string>
     <string name="analyze">Analizar mi teléfono</string>
     <string name="status_no_permission">Necesitamos permiso para ver tus fotos y videos. Actívalo en Ajustes › Apps › Limpiador › Permisos y vuelve a intentar.</string>
 
     <!-- Análisis -->
-    <string name="scanning_title">Analizando tu galería…</string>
+    <string name="scanning_title">Analizando tu teléfono…</string>
     <string name="scanning_reading">Leyendo fotos y videos</string>
     <plurals name="scanning_found">
         <item quantity="one">%1$d archivo encontrado. Buscando repetidos…</item>
@@ -29,10 +29,12 @@
 
     <!-- Resultados -->
     <string name="results_title">Puedes liberar %1$s</string>
+    <string name="results_title_none">Elige qué limpiar</string>
     <plurals name="results_subtitle">
-        <item quantity="one">Encontramos %1$d elemento que probablemente no necesitas. Revísalo y toca Limpiar.</item>
-        <item quantity="other">Encontramos %1$d elementos que probablemente no necesitas. Revisa cada grupo y toca Limpiar.</item>
+        <item quantity="one">Encontramos %1$d elemento (%2$s) que probablemente no necesitas. Revísalo y toca Limpiar.</item>
+        <item quantity="other">Encontramos %1$d elementos (%2$s en total) que probablemente no necesitas. Los interruptores deciden qué se limpia.</item>
     </plurals>
+    <string name="results_nothing_in">Sin nada que limpiar en: %1$s.</string>
     <string name="results_clean_title">Tu galería está en orden</string>
     <string name="results_clean_subtitle">No encontramos nada que sobre. 🎉</string>
     <plurals name="category_stats">
@@ -132,6 +134,8 @@
     <string name="scope_gallery">Revisamos solo la galería.</string>
     <string name="scope_files">Revisamos la galería y %1$d archivos del teléfono.</string>
     <string name="scope_full">Revisamos la galería, %1$d archivos del teléfono y tus apps.</string>
+    <string name="scope_files_nocount">Revisamos la galería y los archivos del teléfono.</string>
+    <string name="scope_full_nocount">Revisamos la galería, los archivos del teléfono y tus apps.</string>
     <string name="scope_banner_title">Solo se analizó la galería</string>
     <string name="scope_banner_body">Para buscar también temporales, instaladores, descargas viejas y archivos grandes, activa «Acceso a todos los archivos» y vuelve: el análisis se repite solo.</string>
     <string name="scope_banner_button">Activar y analizar todo</string>
@@ -150,4 +154,9 @@
         <item quantity="one">%1$d archivo del teléfono revisado…</item>
         <item quantity="other">%1$d archivos del teléfono revisados…</item>
     </plurals>
+
+    <!-- v2.5 -->
+    <string name="phase_gallery">Galería: fotos y videos</string>
+    <string name="phase_files">Archivos del teléfono</string>
+    <string name="phase_apps">Apps que no usas</string>
 </resources>

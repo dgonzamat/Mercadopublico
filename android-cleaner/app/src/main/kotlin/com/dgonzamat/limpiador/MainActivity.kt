@@ -25,6 +25,7 @@ import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
 import com.dgonzamat.limpiador.databinding.ActivityMainBinding
 import com.dgonzamat.limpiador.databinding.ItemCategoryCardBinding
+import com.dgonzamat.limpiador.databinding.ItemPhaseRowBinding
 import com.dgonzamat.limpiador.databinding.ItemToolCardBinding
 import com.dgonzamat.limpiador.databinding.ItemWelcomeRowBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -39,6 +40,12 @@ import java.io.File
 class MainActivity : AppCompatActivity() {
 
     private enum class Screen { WELCOME, SCANNING, RESULTS, DONE }
+
+    /** Fases del análisis, en el orden en que corren; solo se listan las que aplican. */
+    private enum class Phase(val textRes: Int) {
+        GALLERY(R.string.phase_gallery), FILES(R.string.phase_files), APPS(R.string.phase_apps)
+    }
+    private val phaseRows = linkedMapOf<Phase, ItemPhaseRowBinding>()
 
     private lateinit var b: ActivityMainBinding
     private var screen = Screen.WELCOME
@@ -360,10 +367,25 @@ class MainActivity : AppCompatActivity() {
         b.permissionHint.visibility = View.GONE
         ScanStore.items = emptyList()
         show(Screen.SCANNING)
-        b.scanStatus.text = getString(R.string.scanning_reading)
+        val enabled = enabledCategories()
+        renderPhases(enabled)
+        b.scanStatus.text = getString(
+            when (phaseRows.keys.firstOrNull()) {
+                Phase.FILES -> R.string.scanning_files
+                Phase.APPS -> R.string.scanning_apps
+                else -> R.string.scanning_reading
+            },
+        )
         scanJob = lifecycleScope.launch {
             try {
-                val result = ScanEngine.scan(this@MainActivity, enabledCategories()) { p ->
+                val result = ScanEngine.scan(this@MainActivity, enabled) { p ->
+                    setPhase(
+                        when (p) {
+                            is ScanProgress.Files -> Phase.FILES
+                            ScanProgress.Apps -> Phase.APPS
+                            else -> Phase.GALLERY
+                        },
+                    )
                     b.scanStatus.text = when (p) {
                         ScanProgress.Reading -> getString(R.string.scanning_reading)
                         is ScanProgress.Found -> resources.getQuantityString(R.plurals.scanning_found, p.total, p.total)
@@ -386,6 +408,44 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** Lista de fases que este análisis va a recorrer, para que se vea en qué va. */
+    private fun renderPhases(enabled: Set<Category>) {
+        b.scanPhases.removeAllViews()
+        phaseRows.clear()
+        val phases = buildList {
+            if (enabled.any { it in ScanEngine.MEDIA_CATEGORIES }) add(Phase.GALLERY)
+            if (ScanEngine.allFilesAccess(this@MainActivity) && enabled.any { it in ScanEngine.FILE_CATEGORIES }) add(Phase.FILES)
+            if (ScanEngine.usageAccess(this@MainActivity) && Category.UNUSED_APPS in enabled) add(Phase.APPS)
+        }
+        for (phase in phases) {
+            val row = ItemPhaseRowBinding.inflate(layoutInflater, b.scanPhases, false)
+            row.phaseText.text = getString(phase.textRes)
+            phaseRows[phase] = row
+            b.scanPhases.addView(row.root)
+        }
+        // Con una sola fase la lista no aporta nada: el estado de abajo ya lo cuenta.
+        b.scanPhases.visibility = if (phases.size > 1) View.VISIBLE else View.GONE
+        phases.firstOrNull()?.let { setPhase(it) }
+    }
+
+    /** Marca [active] en curso, las anteriores hechas y las siguientes pendientes. */
+    private fun setPhase(active: Phase) {
+        for ((phase, row) in phaseRows) {
+            val done = phase.ordinal < active.ordinal
+            val current = phase == active
+            row.phaseSpinner.visibility = if (current) View.VISIBLE else View.GONE
+            row.phaseIcon.visibility = if (current) View.INVISIBLE else View.VISIBLE
+            row.phaseIcon.setImageResource(if (done) R.drawable.ic_check else R.drawable.ic_dot)
+            row.phaseIcon.imageTintList = android.content.res.ColorStateList.valueOf(
+                if (done) ContextCompat.getColor(this, R.color.success) else secondaryTextColor(),
+            )
+            row.phaseText.setTextColor(if (current) primaryTextColor() else secondaryTextColor())
+        }
+    }
+
+    private fun primaryTextColor(): Int = b.appTitle.currentTextColor
+    private fun secondaryTextColor(): Int = b.scanStatus.currentTextColor
+
     // ---- resultados -------------------------------------------------------
 
     private fun renderResults() {
@@ -401,20 +461,34 @@ class MainActivity : AppCompatActivity() {
         val all = ScanStore.items
         val scope = ScanStore.scope
         b.categoryContainer.removeAllViews()
+        val n = scope.filesVisited
         val scopeText = when {
-            scope.allFiles && scope.usage -> getString(R.string.scope_full, scope.filesVisited)
-            scope.allFiles -> getString(R.string.scope_files, scope.filesVisited)
+            scope.allFiles && scope.usage -> if (n > 0) getString(R.string.scope_full, n) else getString(R.string.scope_full_nocount)
+            scope.allFiles -> if (n > 0) getString(R.string.scope_files, n) else getString(R.string.scope_files_nocount)
             else -> getString(R.string.scope_gallery)
         }
         if (all.isEmpty()) {
             b.resultsTitle.text = getString(R.string.results_clean_title)
             b.resultsSubtitle.text = getString(R.string.results_clean_subtitle) + " " + scopeText
         } else {
-            b.resultsTitle.text = getString(R.string.results_title, formatSize(all.sumOf { it.size }))
-            b.resultsSubtitle.text = resources.getQuantityString(R.plurals.results_subtitle, all.size, all.size) + " " + scopeText
+            // El título dice lo MARCADO (igual que el botón); el total encontrado va en el subtítulo.
+            b.resultsSubtitle.text = resources.getQuantityString(
+                R.plurals.results_subtitle, all.size, all.size, formatSize(all.sumOf { it.size }),
+            ) + " " + scopeText
         }
+        // Grupos que se buscaron y no tenían nada: decirlo, para que no parezca que se saltaron.
+        val enabled = enabledCategories()
+        val emptyGroups = Category.entries.filter { cat ->
+            cat in enabled && ScanStore.byCategory(cat).isEmpty() && when (cat) {
+                in ScanEngine.MEDIA_CATEGORIES -> true
+                in ScanEngine.FILE_CATEGORIES -> scope.allFiles
+                else -> scope.usage
+            }
+        }
+        b.emptyGroups.visibility = if (all.isEmpty() || emptyGroups.isEmpty()) View.GONE else View.VISIBLE
+        b.emptyGroups.text = getString(R.string.results_nothing_in, emptyGroups.joinToString(", ") { getString(it.titleRes) })
         // Aviso destacado: sin «todos los archivos» solo se revisó la galería (si pidió grupos de archivos).
-        val wantsFiles = enabledCategories().any { it in ScanEngine.FILE_CATEGORIES }
+        val wantsFiles = enabled.any { it in ScanEngine.FILE_CATEGORIES }
         b.scopeBanner.visibility = if (scope.allFiles || !wantsFiles) View.GONE else View.VISIBLE
         b.scopeBannerButton.setOnClickListener { openAllFilesSettings() }
         for (cat in Category.entries) {
@@ -474,9 +548,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun updatePrimaryForSelection() {
         val sel = ScanStore.selected()
+        val size = formatSize(sel.sumOf { it.size })
         b.primaryButton.isEnabled = sel.isNotEmpty()
-        b.primaryButton.text = if (sel.isEmpty()) getString(R.string.clean_none)
-        else getString(R.string.clean_now, formatSize(sel.sumOf { it.size }))
+        b.primaryButton.text = if (sel.isEmpty()) getString(R.string.clean_none) else getString(R.string.clean_now, size)
+        if (ScanStore.items.isNotEmpty()) {
+            b.resultsTitle.text = if (sel.isEmpty()) getString(R.string.results_title_none) else getString(R.string.results_title, size)
+        }
     }
 
     // ---- limpieza ---------------------------------------------------------

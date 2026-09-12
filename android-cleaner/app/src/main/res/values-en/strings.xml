@@ -8,13 +8,13 @@
 
     <string name="welcome_title">Free up space in one tap</string>
     <string name="welcome_body">Tap the button and we check these groups. You decide what goes.</string>
-    <string name="welcome_tag_auto">auto-selected</string>
-    <string name="welcome_tag_review">you review</string>
+    <string name="welcome_tag_auto">Selected automatically</string>
+    <string name="welcome_tag_review">Shown only; you choose</string>
     <string name="privacy_note">Everything happens on your phone. Nothing is uploaded.</string>
     <string name="analyze">Analyze my phone</string>
     <string name="status_no_permission">We need permission to see your photos and videos. Enable it in Settings › Apps › Cleaner › Permissions and try again.</string>
 
-    <string name="scanning_title">Analyzing your gallery…</string>
+    <string name="scanning_title">Analyzing your phone…</string>
     <string name="scanning_reading">Reading photos and videos</string>
     <plurals name="scanning_found">
         <item quantity="one">%1$d file found. Looking for duplicates…</item>
@@ -25,10 +25,12 @@
     <string name="status_error">Something went wrong: %1$s</string>
 
     <string name="results_title">You can free up %1$s</string>
+    <string name="results_title_none">Choose what to clean</string>
     <plurals name="results_subtitle">
-        <item quantity="one">We found %1$d item you probably don\'t need. Review it and tap Clean.</item>
-        <item quantity="other">We found %1$d items you probably don\'t need. Review each group and tap Clean.</item>
+        <item quantity="one">We found %1$d item (%2$s) you probably don\'t need. Review it and tap Clean.</item>
+        <item quantity="other">We found %1$d items (%2$s in total) you probably don\'t need. The switches decide what gets cleaned.</item>
     </plurals>
+    <string name="results_nothing_in">Nothing to clean in: %1$s.</string>
     <string name="results_clean_title">Your gallery is tidy</string>
     <string name="results_clean_subtitle">Nothing to clean up. 🎉</string>
     <plurals name="category_stats">
@@ -123,6 +125,8 @@
     <string name="scope_gallery">We checked the gallery only.</string>
     <string name="scope_files">We checked the gallery and %1$d files on the phone.</string>
     <string name="scope_full">We checked the gallery, %1$d files on the phone and your apps.</string>
+    <string name="scope_files_nocount">We checked the gallery and the files on the phone.</string>
+    <string name="scope_full_nocount">We checked the gallery, the files on the phone and your apps.</string>
     <string name="scope_banner_title">Only the gallery was analyzed</string>
     <string name="scope_banner_body">To also find temp files, installers, old downloads and large files, enable "All files access" and come back: the analysis repeats by itself.</string>
     <string name="scope_banner_button">Enable and analyze everything</string>
@@ -140,4 +144,8 @@
         <item quantity="one">%1$d phone file checked…</item>
         <item quantity="other">%1$d phone files checked…</item>
     </plurals>
+
+    <string name="phase_gallery">Gallery: photos and videos</string>
+    <string name="phase_files">Phone files</string>
+    <string name="phase_apps">Unused apps</string>
 </resources>
