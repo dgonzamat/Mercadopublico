@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cleaner</string>
+
+    <string name="storage_title">Phone storage</string>
+    <string name="storage_used">%1$s of %2$s used</string>
+    <string name="storage_free">%1$s free</string>
+
+    <string name="welcome_title">Free up space in one tap</string>
+    <string name="welcome_body">Tap the button and we check these groups. You decide what goes.</string>
+    <string name="welcome_tag_auto">Selected automatically</string>
+    <string name="welcome_tag_review">Shown only; you choose</string>
+    <string name="privacy_note">Everything happens on your phone. Nothing is uploaded.</string>
+    <string name="analyze">Analyze my phone</string>
+    <string name="status_no_permission">We need permission to see your photos and videos. Enable it in Settings › Apps › Cleaner › Permissions and try again.</string>
+
+    <string name="scanning_title">Analyzing your phone…</string>
+    <string name="scanning_reading">Reading photos and videos</string>
+    <plurals name="scanning_found">
+        <item quantity="one">%1$d file found. Looking for duplicates…</item>
+        <item quantity="other">%1$d files found. Looking for duplicates…</item>
+    </plurals>
+    <string name="scanning_hashing">Comparing duplicates (%1$d of %2$d)</string>
+    <string name="scanning_wait">This can take a moment if you have many photos.</string>
+    <string name="status_error">Something went wrong: %1$s</string>
+
+    <string name="results_title">You can free up %1$s</string>
+    <string name="results_title_none">Choose what to clean</string>
+    <plurals name="results_subtitle">
+        <item quantity="one">We found %1$d item (%2$s) you probably don\'t need. Review it and tap Clean.</item>
+        <item quantity="other">We found %1$d items (%2$s in total) you probably don\'t need. The switches decide what gets cleaned.</item>
+    </plurals>
+    <string name="results_nothing_in">Nothing to clean in: %1$s.</string>
+    <string name="results_clean_title">Your gallery is tidy</string>
+    <string name="results_clean_subtitle">Nothing to clean up. 🎉</string>
+    <plurals name="category_stats">
+        <item quantity="one">%1$d file · %2$s</item>
+        <item quantity="other">%1$d files · %2$s</item>
+    </plurals>
+    <string name="category_stats_partial">%1$d of %2$d selected · %3$s</string>
+    <string name="review">Review</string>
+    <string name="include_in_clean">Include in cleanup</string>
+    <string name="rescan">Analyze again</string>
+    <string name="clean_now">Clean %1$s</string>
+    <string name="clean_none">Pick something to clean</string>
+
+    <string name="cat_screenshots">Screenshots</string>
+    <string name="cat_screenshots_desc">Screen captures saved in the Screenshots folder</string>
+    <string name="cat_duplicates">Duplicate photos and videos</string>
+    <string name="cat_duplicates_desc">Exact copies in the gallery; we keep the oldest original</string>
+    <string name="cat_tiny">Useless images</string>
+    <string name="cat_tiny_desc">Thumbnails, stickers and empty or tiny files</string>
+    <string name="cat_large_videos">Heavy videos</string>
+    <string name="cat_large_videos_desc">200 MB or more. Review them yourself: we don\'t pre-select them</string>
+    <string name="note_duplicate_of">Copy of %1$s</string>
+
+    <string name="grid_hint_media">Tap to select or deselect. Long-press to view the full photo.</string>
+    <string name="grid_hint_file">Tap to select or deselect. Long-press to see the full path and date.</string>
+    <string name="grid_hint_app">Tap to select or deselect. Long-press to open the app info.</string>
+    <string name="selection_summary">%1$d of %2$d selected · %3$s</string>
+    <string name="select_all">All</string>
+    <string name="select_none">None</string>
+    <string name="done">Done</string>
+    <string name="open_failed">Could not open the file</string>
+
+    <string name="confirm_title">Clean %1$s?</string>
+    <plurals name="confirm_message">
+        <item quantity="one">%1$d item will be deleted. Photos and videos go through Android\'s confirmation and trash bin (30 days); other files are deleted right away.</item>
+        <item quantity="other">%1$d items will be deleted. Photos and videos go through Android\'s confirmation and trash bin (30 days); other files are deleted right away.</item>
+    </plurals>
+    <string name="confirm_ok">Yes, clean</string>
+    <string name="done_title">Done! You freed %1$s</string>
+    <plurals name="done_subtitle">
+        <item quantity="one">%1$d item was deleted. Your phone is lighter now.</item>
+        <item quantity="other">%1$d items were deleted. Your phone is lighter now.</item>
+    </plurals>
+    <string name="delete_cancelled">Nothing was deleted. You can try again anytime.</string>
+    <string name="scan_again">Analyze again</string>
+
+    <string name="percent">%1$d%%</string>
+    <string name="scanning_files">Checking the phone\'s files…</string>
+    <string name="scanning_apps">Checking unused apps…</string>
+    <string name="cat_residue">Temporary files and cache</string>
+    <string name="cat_residue_desc">Temp files, hidden cache folders, empty files and empty folders</string>
+    <string name="cat_apk">APK installers</string>
+    <string name="cat_apk_desc">Installation packages you no longer need</string>
+    <string name="cat_large_files">Large files</string>
+    <string name="cat_large_files_desc">100 MB or more, not photos or videos. Review them yourself</string>
+    <string name="cat_old_downloads">Old downloads</string>
+    <string name="cat_old_downloads_desc">In the Downloads folder for more than 30 days. Review them yourself</string>
+    <string name="cat_unused_apps">Apps you don\'t use</string>
+    <string name="cat_unused_apps_desc">Not opened in 60 days, with the space they take. Uninstalled one by one</string>
+    <string name="note_empty_dir">empty folder</string>
+    <string name="note_zero_bytes">0 bytes</string>
+    <string name="note_cache_dir">cache folder</string>
+    <string name="note_days_old">%1$d days ago</string>
+    <string name="note_never_used">not used in the last year</string>
+    <string name="note_last_used_days">last used %1$d days ago</string>
+    <plurals name="category_stats_apps">
+        <item quantity="one">%1$d app · %2$s</item>
+        <item quantity="other">%1$d apps · %2$s</item>
+    </plurals>
+    <plurals name="confirm_apps">
+        <item quantity="one">Includes %1$d app: Android will ask you to confirm its uninstall.</item>
+        <item quantity="other">Includes %1$d apps: Android will ask you to confirm each uninstall.</item>
+    </plurals>
+    <string name="file_info">%1$s\n\nSize: %2$s\nModified: %3$s</string>
+    <string name="tools_title">More space</string>
+    <string name="tool_cache_title">Cache of all apps</string>
+    <string name="tool_cache_desc">Android clears the cache of every app at once. No data or logins are lost.</string>
+    <string name="tool_cache_button">Clear</string>
+    <string name="tool_allfiles_title">Phone files</string>
+    <string name="tool_allfiles_desc">Grant "All files access" to find temp files, installers, old downloads and large files.</string>
+    <string name="tool_usage_title">Apps you don\'t use</string>
+    <string name="tool_usage_desc">Grant "Usage access" to detect apps not opened in 60 days and how much they take.</string>
+    <string name="tool_enable">Enable</string>
+    <string name="allfiles_title">Check the whole phone?</string>
+    <string name="allfiles_message">To find temp files, installers, old downloads and large files, Android requires the "All files access" permission. It is enabled in Settings; come back to the app once done.\n\nYou can also check the gallery only.</string>
+    <string name="allfiles_open_settings">Open settings</string>
+    <string name="allfiles_only_gallery">Gallery only</string>
+    <string name="cache_cleared">Cache cleared</string>
+    <string name="cache_not_cleared">Cache was not cleared</string>
+    <string name="cache_not_available">Your phone doesn\'t offer this option. Look in Settings › Storage.</string>
+
+    <string name="scope_gallery">We checked the gallery only.</string>
+    <string name="scope_files">We checked the gallery and %1$d files on the phone.</string>
+    <string name="scope_full">We checked the gallery, %1$d files on the phone and your apps.</string>
+    <string name="scope_files_nocount">We checked the gallery and the files on the phone.</string>
+    <string name="scope_full_nocount">We checked the gallery, the files on the phone and your apps.</string>
+    <string name="scope_banner_title">Only the gallery was analyzed</string>
+    <string name="scope_banner_body">To also find temp files, installers, old downloads and large files, enable "All files access" and come back: the analysis repeats by itself.</string>
+    <string name="scope_banner_button">Enable and analyze everything</string>
+    <string name="allfiles_not_granted">All files access was not enabled; we analyzed the gallery only.</string>
+    <string name="retry">Retry</string>
+    <string name="analyze_none">Check at least one group</string>
+    <string name="diagnostics_title">Diagnostics</string>
+    <string name="copy">Copy</string>
+
+    <string name="cat_similar">Similar photos</string>
+    <string name="cat_similar_desc">Nearly identical even in another folder or with different compression (bursts, forwards); we keep the largest. Review them yourself</string>
+    <string name="note_similar_to">Similar to %1$s</string>
+    <string name="cancel_scan">Cancel analysis</string>
+    <plurals name="scanning_files_count">
+        <item quantity="one">%1$d phone file checked…</item>
+        <item quantity="other">%1$d phone files checked…</item>
+    </plurals>
+
+    <string name="phase_gallery">Gallery: photos and videos</string>
+    <string name="phase_files">Phone files</string>
+    <string name="phase_apps">Unused apps</string>
+    <string name="root_folder">Internal storage</string>
+
+    <string name="cat_dup_files">Duplicate files</string>
+    <string name="cat_dup_files_desc">Identical documents, audio and downloads outside the gallery; we keep the oldest</string>
+    <string name="scanning_similar">Comparing similar photos (%1$d of %2$d)</string>
+    <string name="scanning_file_hashing">Comparing duplicate files (%1$d of %2$d)</string>
+    <string name="pair_original">Original · kept</string>
+    <string name="pair_copy">Copy</string>
+    <string name="badge_verified">✓✓ Identical byte for byte</string>
+    <string name="badge_hash_only">✓ Same hash (could not re-read)</string>
+    <string name="badge_similar">≈ Similar, not identical</string>
+    <string name="grid_hint_pair">Left: the original that is kept; right: the copy that is deleted if checked. Tap to select or deselect; long-press to open the copy.</string>
+    <plurals name="dup_recheck_failed">
+        <item quantity="one">%1$d duplicate no longer matches its original and was not deleted.</item>
+        <item quantity="other">%1$d duplicates no longer match their originals and were not deleted.</item>
+    </plurals>
+    <string name="include_group_in_clean">Include "%1$s" in cleanup</string>
+    <string name="status_no_permission_short">No permission to see your photos and videos.</string>
+    <string name="open_app_settings">Settings</string>
+</resources>

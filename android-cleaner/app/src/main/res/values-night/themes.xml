@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Limpiador" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#8ED1E6</item>
+        <item name="colorOnPrimary">#003640</item>
+        <item name="colorPrimaryContainer">#1E5F74</item>
+        <item name="colorOnPrimaryContainer">#BFE8F4</item>
+        <item name="colorSecondaryContainer">#3A4A50</item>
+        <item name="colorTertiary">#E0C84E</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
