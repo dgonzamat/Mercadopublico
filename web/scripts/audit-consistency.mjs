@@ -1453,6 +1453,57 @@ if (fs.existsSync(linkBaselinePath)) {
   }
 }
 
+// ─── 9t. RULE E35: todo país del corpus tiene región (ERROR) ─────────────
+//
+// `COUNTRY_REGION` (lib/regions.ts) se escribe a mano porque la agrupación es
+// editorial —Rusia y Eurasia en Asia, el Caribe hispano en Latinoamérica—, y
+// ese es justo el motivo por el que se queda atrás: al crear un caso nadie se
+// acuerda de ir a tocar el mapa. El fallo es SILENCIOSO en las dos direcciones
+// que importan. `regionOf` devuelve undefined, el wrapper del caso emite
+// `data-region="otro"`, y "otro" NO existe como opción del filtro: la regla de
+// globals.css oculta todo `[data-region]` que no calce con la región activa, así
+// que esos casos se vuelven inalcanzables en cuanto alguien filtra. Y los
+// conteos que el filtro anuncia se quedan cortos sin avisar.
+//
+// Medido en sep 2026, antes de cerrarlo: 28 casos de 16 países sin mapear
+// (Grecia 3, Irak 4, la URSS 6, Rumanía, Ucrania, Omán, Siria, Tanzania…). El
+// filtro ofrecía «Europe · 64» cuando los casos europeos reales eran 69.
+// Nada lo detectaba: ni el schema (el país es un string libre) ni /cobertura
+// (agrupa por país crudo, así que se ve honesta mientras el filtro no lo está).
+// Lectura + regex, sin node_modules (el audit es node-plain y no puede importar
+// el módulo TS). Si el archivo o la tabla cambian de forma, la regla lo dice en
+// vez de callarse: un mapa vacío sería un falso verde perfecto.
+const regionsPath = path.join(root, "lib", "regions.ts");
+if (fs.existsSync(regionsPath)) {
+  const regionsSrc = fs.readFileSync(regionsPath, "utf-8");
+  const table = regionsSrc.match(/COUNTRY_REGION[^=]*=\s*\{([\s\S]*?)\n\};/);
+  const mapped = new Set(
+    table ? [...table[1].matchAll(/\b([A-Z]{2})\s*:\s*"[a-z-]+"/g)].map((m) => m[1]) : [],
+  );
+  if (mapped.size === 0) {
+    record(
+      "ERROR",
+      "lib/regions.ts",
+      0,
+      "E35 región: no se pudo leer COUNTRY_REGION (¿cambió el formato de la tabla?). La sonda no puede verificar la cobertura de países y estaría dando un verde falso.",
+    );
+  }
+  const missing = new Map();
+  for (const c of cases) {
+    if (!c.country || mapped.size === 0 || mapped.has(c.country)) continue;
+    if (!missing.has(c.country)) missing.set(c.country, []);
+    missing.get(c.country).push(c.id);
+  }
+  for (const [code, ids] of missing) {
+    record(
+      "ERROR",
+      "lib/regions.ts",
+      0,
+      `E35 región: el país "${code}" (${ids.length} caso(s): ${ids.slice(0, 3).join(", ")}${ids.length > 3 ? "…" : ""}) no está en COUNTRY_REGION → \`regionOf\` devuelve undefined, el caso se emite como \`data-region="otro"\` y queda fuera del filtro por región, que además anuncia un conteo corto. Añádelo a la región que corresponda en lib/regions.ts.`,
+    );
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
