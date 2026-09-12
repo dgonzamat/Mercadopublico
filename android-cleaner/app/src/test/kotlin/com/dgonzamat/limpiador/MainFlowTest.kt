@@ -197,6 +197,28 @@ class MainFlowTest {
             assertEquals("image/*", view.type)
         }
 
+        // Revisión de repetidos: original (se conserva) junto a la copia, con la marca de doble verificación.
+        val dupIntent = Intent(ApplicationProvider.getApplicationContext(), CategoryActivity::class.java)
+            .putExtra(CategoryActivity.EXTRA_CATEGORY, Category.DUPLICATES.ordinal)
+        ActivityScenario.launch<CategoryActivity>(dupIntent).onActivity { c ->
+            idle()
+            val grid = c.v<androidx.recyclerview.widget.RecyclerView>(R.id.grid)
+            grid.measure(
+                View.MeasureSpec.makeMeasureSpec(grid.width, View.MeasureSpec.EXACTLY),
+                View.MeasureSpec.makeMeasureSpec(grid.height, View.MeasureSpec.EXACTLY),
+            )
+            grid.layout(grid.left, grid.top, grid.right, grid.bottom)
+            idle()
+            assertEquals(1, (grid.layoutManager as androidx.recyclerview.widget.GridLayoutManager).spanCount)
+            assertEquals(c.getString(R.string.grid_hint_pair), c.v<TextView>(R.id.hint).text.toString())
+            val row = grid.findViewHolderForAdapterPosition(0)!!.itemView
+            assertEquals("IMG_0003 (1).jpg", row.findViewById<TextView>(R.id.name).text.toString())
+            assertEquals(c.getString(R.string.badge_verified), row.findViewById<TextView>(R.id.verifiedBadge).text.toString())
+            assertNotNull(row.findViewById<View>(R.id.originalThumb))
+            assertTrue(row.findViewById<TextView>(R.id.label).text.contains("Copia de IMG_0003.jpg"))
+            Screenshots.snap(c.window.decorView, "05c-revision-repetidos")
+        }
+
         // Revisión de una categoría de archivos: etiqueta con nombre y nota, pulsación larga muestra info.
         val resIntent = Intent(ApplicationProvider.getApplicationContext(), CategoryActivity::class.java)
             .putExtra(CategoryActivity.EXTRA_CATEGORY, Category.RESIDUE.ordinal)
@@ -237,9 +259,13 @@ class MainFlowTest {
             assertNotNull("diálogo de confirmación", dialog)
             assertTrue(dialog.isShowing)
             val selectedBefore = ScanStore.selected()
-            val bytesBefore = selectedBefore.sumOf { it.size }
             val files = selectedBefore.filter { it.kind == Kind.FILE }
             assertTrue(files.isNotEmpty() && files.all { java.io.File(it.path!!).exists() })
+            // Doble verificación: la copia de la galería (id 6) cambia después del análisis → no debe borrarse.
+            val dup = selectedBefore.single { it.category == Category.DUPLICATES }
+            FakeGallery.setBytes(6L, ByteArray(60_000) { 'C'.code.toByte() })
+            val expected = selectedBefore - dup
+            val bytesBefore = expected.sumOf { it.size }
             (dialog as AlertDialog).getButton(AlertDialog.BUTTON_POSITIVE).performClick()
             // 1. Los archivos se borran del disco de inmediato (en IO)…
             var req: org.robolectric.shadows.ShadowActivity.IntentForResult? = null
@@ -250,7 +276,8 @@ class MainFlowTest {
             idle()
             assertEquals(View.VISIBLE, a.v<View>(R.id.doneGroup).visibility)
             assertEquals(a.getString(R.string.done_title, formatSize(bytesBefore)), a.v<TextView>(R.id.doneTitle).text.toString())
-            assertEquals(a.resources.getQuantityString(R.plurals.done_subtitle, selectedBefore.size, selectedBefore.size), a.v<TextView>(R.id.doneSubtitle).text.toString())
+            assertEquals(a.resources.getQuantityString(R.plurals.done_subtitle, expected.size, expected.size), a.v<TextView>(R.id.doneSubtitle).text.toString())
+            assertFalse(dup.selected) // quedó desmarcada por la doble verificación
             assertEquals(a.getString(R.string.scan_again), primary.text.toString())
             Screenshots.snap(a.window.decorView, "06-listo")
         }

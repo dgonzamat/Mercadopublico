@@ -154,6 +154,16 @@
     <string name="cat_dup_files_desc">Identical documents, audio and downloads outside the gallery; we keep the oldest</string>
     <string name="scanning_similar">Comparing similar photos (%1$d of %2$d)</string>
     <string name="scanning_file_hashing">Comparing duplicate files (%1$d of %2$d)</string>
+    <string name="pair_original">Original · kept</string>
+    <string name="pair_copy">Copy</string>
+    <string name="badge_verified">✓✓ Identical byte for byte</string>
+    <string name="badge_hash_only">✓ Same hash (could not re-read)</string>
+    <string name="badge_similar">≈ Similar, not identical</string>
+    <string name="grid_hint_pair">Left: the original that is kept; right: the copy that is deleted if checked. Tap to select or deselect; long-press to open the copy.</string>
+    <plurals name="dup_recheck_failed">
+        <item quantity="one">%1$d duplicate no longer matches its original and was not deleted.</item>
+        <item quantity="other">%1$d duplicates no longer match their originals and were not deleted.</item>
+    </plurals>
     <string name="include_group_in_clean">Include "%1$s" in cleanup</string>
     <string name="status_no_permission_short">No permission to see your photos and videos.</string>
     <string name="open_app_settings">Settings</string>

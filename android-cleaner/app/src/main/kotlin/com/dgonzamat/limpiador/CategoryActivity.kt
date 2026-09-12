@@ -40,15 +40,16 @@ class CategoryActivity : AppCompatActivity() {
         b.toolbar.title = getString(category.titleRes)
         b.toolbar.setNavigationOnClickListener { finish() }
         b.hint.text = getString(
-            when (items.first().kind) {
-                Kind.MEDIA -> R.string.grid_hint_media
-                Kind.FILE -> R.string.grid_hint_file
-                Kind.APP -> R.string.grid_hint_app
+            when {
+                category in GridAdapter.PAIR_CATEGORIES -> R.string.grid_hint_pair
+                items.first().kind == Kind.MEDIA -> R.string.grid_hint_media
+                items.first().kind == Kind.FILE -> R.string.grid_hint_file
+                else -> R.string.grid_hint_app
             },
         )
 
         adapter = GridAdapter(items, Thumbnails(this, lifecycleScope), ::updateSummary, ::open)
-        b.grid.layoutManager = GridLayoutManager(this, GridAdapter.spanCount(items.first().kind))
+        b.grid.layoutManager = GridLayoutManager(this, GridAdapter.spanCount(items.first()))
         b.grid.adapter = adapter
 
         b.selectAllButton.setOnClickListener {

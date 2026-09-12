@@ -79,8 +79,15 @@ object FakeGallery {
         Robolectric.buildContentProvider(FakeMediaProvider::class.java).create(MediaStore.AUTHORITY)
         val resolver = ApplicationProvider.getApplicationContext<android.content.Context>().contentResolver
         for (f in FILES) {
-            f.bytes?.let { shadowOf(resolver).registerInputStream(uriOf(f), ByteArrayInputStream(it)) }
+            f.bytes?.let { bytes -> setBytes(f.id, bytes) }
         }
+    }
+
+    /** Un flujo NUEVO por apertura (un solo InputStream se agotaría en la segunda lectura). */
+    fun setBytes(id: Long, bytes: ByteArray) {
+        val resolver = ApplicationProvider.getApplicationContext<android.content.Context>().contentResolver
+        val f = FILES.single { it.id == id }
+        shadowOf(resolver).registerInputStreamSupplier(uriOf(f)) { ByteArrayInputStream(bytes) }
     }
 }
 

@@ -46,9 +46,10 @@ class JunkScanner(
 
         val result = mutableListOf<JunkItem>()
         val used = HashSet<Uri>()
-        fun item(f: MediaFile, cat: Category, note: String? = null) = JunkItem(
+        fun item(f: MediaFile, cat: Category, note: String? = null, original: MediaFile? = null, verified: Boolean = false) = JunkItem(
             category = cat, name = f.name, size = f.size, note = note, uri = f.uri,
             path = f.relativePath, isVideo = f.isVideo, dateModified = f.dateModified,
+            originalUri = original?.uri, verified = verified,
         )
 
         // 1. Capturas de pantalla.
@@ -88,7 +89,10 @@ class JunkScanner(
                     val keep = sorted.first()
                     for (d in sorted.drop(1)) {
                         if (d.uri in used) continue
-                        result += item(d, Category.DUPLICATES, note = keep.name)
+                        ensureActive()
+                        // Doble verificación: el hash coincide; ahora byte a byte contra el original.
+                        val verified = DuplicateCheck.identical({ resolver.openInputStream(d.uri) }, { resolver.openInputStream(keep.uri) })
+                        result += item(d, Category.DUPLICATES, note = keep.name, original = keep, verified = verified)
                         used += d.uri
                     }
                 }
@@ -131,7 +135,7 @@ class JunkScanner(
             for (idx in group) {
                 val f = hashes[idx].first
                 if (idx == keeper || f.uri in used) continue
-                result += item(f, Category.SIMILAR, note = hashes[keeper].first.name)
+                result += item(f, Category.SIMILAR, note = hashes[keeper].first.name, original = hashes[keeper].first)
                 used += f.uri
             }
         }

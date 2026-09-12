@@ -5,9 +5,9 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que anal
 | Grupo | Criterio | ¿Preseleccionado? | Requiere |
 |---|---|---|---|
 | Capturas de pantalla | carpeta `Screenshots`/`Capturas` o nombre `Screenshot_*` | sí | fotos |
-| Fotos y videos repetidos | en la galería: mismo tamaño → mismos primeros 64 KB → mismo SHA-256 (copias idénticas); se conserva el más antiguo | sí | fotos |
+| Fotos y videos repetidos | en la galería: mismo tamaño → mismos primeros 64 KB → mismo SHA-256 → **doble verificación byte a byte contra el original** (se repite justo antes de borrar); se conserva el más antiguo | sí | fotos |
 | Fotos parecidas | huella perceptual dHash de cada foto comparada con todas: ≤4 bits entre fotos cualesquiera (reenvíos, otra carpeta u otra compresión) o ≤10 bits dentro de una ráfaga (misma carpeta, ≤10 s); se conserva la más grande | no | fotos |
-| Archivos repetidos | fuera de la galería (documentos, audios, descargas ≥16 KB, no ocultos): mismo tamaño → mismos 64 KB → mismo SHA-256; se conserva el más antiguo | sí | todos los archivos |
+| Archivos repetidos | fuera de la galería (documentos, audios, descargas ≥16 KB, no ocultos): mismo tamaño → mismos 64 KB → mismo SHA-256 → doble verificación byte a byte (también antes de borrar); se conserva el más antiguo | sí | todos los archivos |
 | Imágenes inservibles | < 20 KB, lado mayor < 256 px o 0 bytes | sí | fotos |
 | Temporales y caché | `*.tmp/.log/.bak/.part/.crdownload…`, carpetas `.thumbnails`, `.Statuses`, `cache`…, archivos vacíos, carpetas vacías | sí | todos los archivos |
 | Instaladores APK | `*.apk/.apks/.xapk` | sí | todos los archivos |
@@ -33,7 +33,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.7.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.8.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -41,9 +41,9 @@ Requiere **Android 11 o superior** (`minSdk 30`). El APK está firmado con la cl
 
 ## Capturas (renderizadas por las pruebas)
 
-| Inicio | Análisis | Resultados | Revisión | Listo |
-|---|---|---|---|---|
-| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/02-analizando.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/05b-revision-residuos.png) | ![](docs/screenshots/06-listo.png) |
+| Inicio | Análisis | Resultados | Repetidos (doble check) | Archivos | Listo |
+|---|---|---|---|---|---|
+| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/02-analizando.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/05c-revision-repetidos.png) | ![](docs/screenshots/05b-revision-residuos.png) | ![](docs/screenshots/06-listo.png) |
 
 ## Pruebas
 

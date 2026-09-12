@@ -49,6 +49,11 @@ data class JunkItem(
     val isVideo: Boolean = false,
     val isDir: Boolean = false,
     val dateModified: Long = 0,
+    /** Para repetidos y parecidas: el original que se conserva (uno de los dos según el tipo). */
+    val originalUri: Uri? = null,
+    val originalPath: String? = null,
+    /** Repetido confirmado byte a byte contra su original (doble verificación), no solo por hash. */
+    val verified: Boolean = false,
     var selected: Boolean = category.preselected,
 ) {
     val kind: Kind

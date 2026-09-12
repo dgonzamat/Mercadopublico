@@ -99,9 +99,13 @@ class FileScanner(
                     val sorted = dups.sortedWith(compareBy({ it.lastModified() }, { it.absolutePath }))
                     val keep = sorted.first()
                     for (d in sorted.drop(1)) {
+                        currentCoroutineContext().ensureActive()
+                        // Doble verificación: el hash coincide; ahora byte a byte contra el original.
+                        val verified = DuplicateCheck.identical({ d.inputStream() }, { keep.inputStream() })
                         out += JunkItem(
                             Category.DUPLICATE_FILES, d.name, d.length(), strings.copyOf(keep.name),
                             path = d.absolutePath, dateModified = d.lastModified(),
+                            originalPath = keep.absolutePath, verified = verified,
                         )
                     }
                 }

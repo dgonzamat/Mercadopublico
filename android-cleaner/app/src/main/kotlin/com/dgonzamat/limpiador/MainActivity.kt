@@ -605,17 +605,27 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 
-    private fun deleteSelected(sel: List<JunkItem>) {
+    private fun deleteSelected(selected: List<JunkItem>) {
         freedBytes = 0
         deletedCount = 0
         pendingMedia.clear()
         pendingApps.clear()
-        // Lotes de 250 URIs: el intent del sistema tiene límite de tamaño.
-        sel.filter { it.kind == Kind.MEDIA }.chunked(250).forEach { pendingMedia.addLast(it) }
-        sel.filter { it.kind == Kind.APP }.forEach { pendingApps.addLast(it) }
-        val files = sel.filter { it.kind == Kind.FILE }
         b.primaryButton.isEnabled = false
         lifecycleScope.launch {
+            // 0. Doble verificación de repetidos: justo antes de borrar, cada copia se vuelve a
+            //    comparar byte a byte con su original. Si el original cambió o ya no está, la
+            //    copia se deja en paz y se avisa.
+            val dupes = selected.filter { it.category == Category.DUPLICATES || it.category == Category.DUPLICATE_FILES }
+            val stale = withContext(Dispatchers.IO) { dupes.filterNot { DuplicateCheck.stillIdentical(it, contentResolver) } }
+            stale.forEach { it.selected = false }
+            val sel = selected - stale.toSet()
+            if (stale.isNotEmpty()) {
+                Snackbar.make(b.root, resources.getQuantityString(R.plurals.dup_recheck_failed, stale.size, stale.size), Snackbar.LENGTH_LONG).show()
+            }
+            // Lotes de 250 URIs: el intent del sistema tiene límite de tamaño.
+            sel.filter { it.kind == Kind.MEDIA }.chunked(250).forEach { pendingMedia.addLast(it) }
+            sel.filter { it.kind == Kind.APP }.forEach { pendingApps.addLast(it) }
+            val files = sel.filter { it.kind == Kind.FILE }
             // 1. Archivos y carpetas: borrado directo, sin diálogo del sistema.
             val deleted = withContext(Dispatchers.IO) {
                 files.filter { item ->

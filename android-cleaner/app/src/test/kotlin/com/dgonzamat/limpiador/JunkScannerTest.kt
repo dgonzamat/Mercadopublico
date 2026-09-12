@@ -34,6 +34,9 @@ class JunkScannerTest {
         // El duplicado apunta al original más antiguo y el falso duplicado (mismo tamaño, otro contenido) queda fuera.
         val dup = items.single { it.category == Category.DUPLICATES }
         assertEquals("IMG_0003.jpg", dup.note)
+        // Doble verificación: además del hash, se comparó byte a byte con el original (que queda referenciado).
+        assertTrue(dup.verified)
+        assertEquals(FakeGallery.uriOf(FakeGallery.FILES.single { it.id == 5L }), dup.originalUri)
         assertTrue(items.none { it.name == "IMG_0004.jpg" })
 
         // Preselección: todo menos los videos pesados.

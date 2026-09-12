@@ -1,8 +1,12 @@
 package com.dgonzamat.limpiador
 
+import androidx.test.core.app.ApplicationProvider
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
 import java.io.File
 import java.io.RandomAccessFile
 import java.util.concurrent.TimeUnit
@@ -48,6 +52,7 @@ object FakeStorage {
     private fun createTempDirRoot(): File = File(System.getProperty("java.io.tmpdir"), "fake-storage-" + System.nanoTime()).apply { mkdirs() }
 }
 
+@RunWith(RobolectricTestRunner::class)
 class FileScannerTest {
 
     @Test
@@ -67,6 +72,12 @@ class FileScannerTest {
             val dup = items.single { it.category == Category.DUPLICATE_FILES }
             assertEquals("Copia de contrato.pdf", dup.note)
             assertTrue(dup.selected)
+            assertTrue(dup.verified) // doble verificación byte a byte
+            assertTrue(dup.originalPath!!.endsWith("Documents/contrato.pdf"))
+            assertTrue(DuplicateCheck.stillIdentical(dup, ApplicationProvider.getApplicationContext<android.content.Context>().contentResolver))
+            // Si el original cambia, la doble verificación previa al borrado lo detecta.
+            File(dup.originalPath!!).writeBytes(ByteArray(20_000) { 7 })
+            assertFalse(DuplicateCheck.stillIdentical(dup, ApplicationProvider.getApplicationContext<android.content.Context>().contentResolver))
             // Sin buscar repetidos, el resto no cambia.
             val sinDup = kotlinx.coroutines.runBlocking { FileScanner(root, findDuplicates = false).scan() }
             assertEquals(9, sinDup.size)

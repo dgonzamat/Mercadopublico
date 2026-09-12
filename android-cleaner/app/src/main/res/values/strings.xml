@@ -166,6 +166,16 @@
     <string name="cat_dup_files_desc">Documentos, audios y descargas idénticos fuera de la galería; conservamos el más antiguo</string>
     <string name="scanning_similar">Comparando fotos parecidas (%1$d de %2$d)</string>
     <string name="scanning_file_hashing">Comparando archivos repetidos (%1$d de %2$d)</string>
+    <string name="pair_original">Original · se conserva</string>
+    <string name="pair_copy">Copia</string>
+    <string name="badge_verified">✓✓ Idéntico byte a byte</string>
+    <string name="badge_hash_only">✓ Mismo hash (no se pudo releer)</string>
+    <string name="badge_similar">≈ Parecida, no idéntica</string>
+    <string name="grid_hint_pair">A la izquierda, el original que se conserva; a la derecha, la copia que se elimina si está marcada. Toca para marcar o desmarcar; mantén presionado para abrir la copia.</string>
+    <plurals name="dup_recheck_failed">
+        <item quantity="one">%1$d repetido ya no coincide con su original y no se eliminó.</item>
+        <item quantity="other">%1$d repetidos ya no coinciden con su original y no se eliminaron.</item>
+    </plurals>
     <string name="include_group_in_clean">Incluir «%1$s» en la limpieza</string>
     <string name="status_no_permission_short">Sin permiso para ver tus fotos y videos.</string>
     <string name="open_app_settings">Ajustes</string>

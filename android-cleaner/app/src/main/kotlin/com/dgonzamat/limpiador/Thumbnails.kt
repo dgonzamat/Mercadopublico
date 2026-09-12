@@ -14,7 +14,7 @@ import kotlinx.coroutines.withContext
 import java.io.File
 
 /** Miniaturas por tipo de elemento (galería, archivo, app) con caché en memoria. */
-class Thumbnails(private val context: Context, private val scope: CoroutineScope) {
+class Thumbnails(val context: Context, private val scope: CoroutineScope) {
 
     private val cache = object : LruCache<String, Bitmap>(48 * 1024 * 1024) {
         override fun sizeOf(key: String, value: Bitmap) = value.byteCount
