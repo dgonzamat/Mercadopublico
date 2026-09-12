@@ -52,7 +52,7 @@
     <string name="cat_screenshots">Capturas de pantalla</string>
     <string name="cat_screenshots_desc">Pantallazos guardados en la carpeta Screenshots</string>
     <string name="cat_duplicates">Fotos y videos repetidos</string>
-    <string name="cat_duplicates_desc">Copias exactas; conservamos la original más antigua</string>
+    <string name="cat_duplicates_desc">Copias exactas en la galería; conservamos la original más antigua</string>
     <string name="cat_tiny">Imágenes inservibles</string>
     <string name="cat_tiny_desc">Miniaturas, stickers y archivos vacíos o diminutos</string>
     <string name="cat_large_videos">Videos pesados</string>
@@ -146,8 +146,8 @@
     <string name="copy">Copiar</string>
 
     <!-- v2.4 -->
-    <string name="cat_similar">Fotos similares (ráfagas)</string>
-    <string name="cat_similar_desc">Tomadas con segundos de diferencia y casi iguales; conservamos la más grande. Revísalas tú</string>
+    <string name="cat_similar">Fotos parecidas</string>
+    <string name="cat_similar_desc">Casi iguales aunque estén en otra carpeta o con otra compresión (ráfagas, reenvíos); conservamos la más grande. Revísalas tú</string>
     <string name="note_similar_to">Parecida a %1$s</string>
     <string name="cancel_scan">Cancelar análisis</string>
     <plurals name="scanning_files_count">
@@ -160,6 +160,12 @@
     <string name="phase_files">Archivos del teléfono</string>
     <string name="phase_apps">Apps que no usas</string>
     <string name="root_folder">Almacenamiento interno</string>
+
+    <!-- v2.7 -->
+    <string name="cat_dup_files">Archivos repetidos</string>
+    <string name="cat_dup_files_desc">Documentos, audios y descargas idénticos fuera de la galería; conservamos el más antiguo</string>
+    <string name="scanning_similar">Comparando fotos parecidas (%1$d de %2$d)</string>
+    <string name="scanning_file_hashing">Comparando archivos repetidos (%1$d de %2$d)</string>
     <string name="include_group_in_clean">Incluir «%1$s» en la limpieza</string>
     <string name="status_no_permission_short">Sin permiso para ver tus fotos y videos.</string>
     <string name="open_app_settings">Ajustes</string>

@@ -102,9 +102,9 @@ class MainFlowTest {
             waitUntil("resultados") { a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE }
             // 3. Resultados: 4 tarjetas, título con el total, botón Limpiar con lo preseleccionado.
             val container = a.v<android.view.ViewGroup>(R.id.categoryContainer)
-            assertEquals(8, container.childCount)
+            assertEquals(9, container.childCount)
             val all = ScanStore.items
-            assertEquals(15, all.size)
+            assertEquals(16, all.size)
             val primary = a.v<MaterialButton>(R.id.primaryButton)
             assertTrue(primary.isEnabled)
             val preselected = all.filter { it.selected }.sumOf { it.size }
@@ -123,7 +123,7 @@ class MainFlowTest {
             val titles = cards.map { it.findViewById<TextView>(R.id.title).text.toString() }
             assertEquals(
                 listOf(
-                    R.string.cat_screenshots, R.string.cat_duplicates, R.string.cat_tiny, R.string.cat_residue,
+                    R.string.cat_screenshots, R.string.cat_duplicates, R.string.cat_dup_files, R.string.cat_tiny, R.string.cat_residue,
                     R.string.cat_apk, R.string.cat_large_videos, R.string.cat_large_files, R.string.cat_old_downloads,
                 ).map(a::getString),
                 titles,
@@ -135,9 +135,9 @@ class MainFlowTest {
             assertEquals(a.getString(R.string.tool_usage_title), tools.getChildAt(1).findViewById<TextView>(R.id.title).text.toString())
             assertEquals("1 archivo · 59 KB", cards[1].findViewById<TextView>(R.id.stats).text.toString())
             assertEquals("2 archivos · 879 KB", cards[0].findViewById<TextView>(R.id.stats).text.toString())
-            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.startsWith("Encontramos 15 elementos"))
+            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.startsWith("Encontramos 16 elementos"))
             assertTrue(cards[0].findViewById<MaterialSwitch>(R.id.toggle).isChecked)
-            assertFalse(cards[5].findViewById<MaterialSwitch>(R.id.toggle).isChecked)
+            assertFalse(cards[6].findViewById<MaterialSwitch>(R.id.toggle).isChecked) // Videos pesados
             Screenshots.snap(a.window.decorView, "03-resultados")
 
             // Apagar capturas: el botón baja de tamaño y la tarjeta muestra el estado.
@@ -271,7 +271,7 @@ class MainFlowTest {
 
             a.v<MaterialButton>(R.id.primaryButton).performClick()
             waitUntil("resultados") { a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE }
-            assertEquals(7, a.v<android.view.ViewGroup>(R.id.categoryContainer).childCount)
+            assertEquals(8, a.v<android.view.ViewGroup>(R.id.categoryContainer).childCount)
             assertTrue(ScanStore.items.none { it.category == Category.LARGE_VIDEOS })
             // La elección se recuerda para la próxima vez.
             assertFalse(a.getSharedPreferences("limpiador", 0).getBoolean("scan_LARGE_VIDEOS", true))

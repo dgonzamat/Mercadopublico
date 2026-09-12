@@ -36,6 +36,12 @@ object FakeStorage {
             it.setLength(FileScanner.LARGE_MIN_BYTES + 1)         // archivo grande (sparse)
         }
         RandomAccessFile(File(root, "Movies/pelicula.mp4"), "rw").use { it.setLength(FileScanner.LARGE_MIN_BYTES + 1) } // video: lo cubre la galería
+        // Documentos repetidos: el mismo contrato guardado dos veces (se conserva el más antiguo) y un
+        // «falso repetido» del mismo tamaño pero distinto contenido, que las etapas de hash descartan.
+        val contrato = ByteArray(20_000) { (it % 251).toByte() }
+        File(root, "Documents/contrato.pdf").apply { writeBytes(contrato); setLastModified(d60) }
+        File(root, "Download/contrato (1).pdf").apply { writeBytes(contrato); setLastModified(now) }
+        File(root, "Documents/otro.pdf").apply { writeBytes(contrato.copyOf().also { it[0] = 9 }); setLastModified(now) }
         return root
     }
 
@@ -55,7 +61,15 @@ class FileScannerTest {
             assertEquals(setOf("instalador.apk"), names(Category.APK_FILES))
             assertEquals(setOf("informe-viejo.pdf", "foto-vieja.jpg"), names(Category.OLD_DOWNLOADS))
             assertEquals(setOf("respaldo.zip"), names(Category.LARGE_FILES))
-            assertEquals(9, items.size)
+            assertEquals(setOf("contrato (1).pdf"), names(Category.DUPLICATE_FILES))
+            assertEquals(10, items.size)
+            // El repetido apunta al original más antiguo y viene preseleccionado.
+            val dup = items.single { it.category == Category.DUPLICATE_FILES }
+            assertEquals("Copia de contrato.pdf", dup.note)
+            assertTrue(dup.selected)
+            // Sin buscar repetidos, el resto no cambia.
+            val sinDup = kotlinx.coroutines.runBlocking { FileScanner(root, findDuplicates = false).scan() }
+            assertEquals(9, sinDup.size)
 
             // La carpeta de caché suma el tamaño de su contenido y no se lista archivo por archivo.
             val thumbs = items.single { it.name == ".thumbnails" }

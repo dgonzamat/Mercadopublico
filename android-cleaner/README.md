@@ -1,12 +1,13 @@
 # Limpiador · liberador de espacio para Android
 
-App Android (Kotlin, Material 3 con colores dinámicos de Material You) que analiza el teléfono completo y propone liberar espacio en diez grupos:
+App Android (Kotlin, Material 3 con colores dinámicos de Material You) que analiza el teléfono completo y propone liberar espacio en once grupos:
 
 | Grupo | Criterio | ¿Preseleccionado? | Requiere |
 |---|---|---|---|
 | Capturas de pantalla | carpeta `Screenshots`/`Capturas` o nombre `Screenshot_*` | sí | fotos |
-| Fotos y videos repetidos | mismo tamaño → mismos primeros 64 KB → mismo SHA-256 (copias idénticas); se conserva el más antiguo | sí | fotos |
-| Fotos similares (ráfagas) | misma carpeta, tomadas a ≤10 s, huella perceptual dHash a ≤10 bits de la más grande; se conserva esa | no | fotos |
+| Fotos y videos repetidos | en la galería: mismo tamaño → mismos primeros 64 KB → mismo SHA-256 (copias idénticas); se conserva el más antiguo | sí | fotos |
+| Fotos parecidas | huella perceptual dHash de cada foto comparada con todas: ≤4 bits entre fotos cualesquiera (reenvíos, otra carpeta u otra compresión) o ≤10 bits dentro de una ráfaga (misma carpeta, ≤10 s); se conserva la más grande | no | fotos |
+| Archivos repetidos | fuera de la galería (documentos, audios, descargas ≥16 KB, no ocultos): mismo tamaño → mismos 64 KB → mismo SHA-256; se conserva el más antiguo | sí | todos los archivos |
 | Imágenes inservibles | < 20 KB, lado mayor < 256 px o 0 bytes | sí | fotos |
 | Temporales y caché | `*.tmp/.log/.bak/.part/.crdownload…`, carpetas `.thumbnails`, `.Statuses`, `cache`…, archivos vacíos, carpetas vacías | sí | todos los archivos |
 | Instaladores APK | `*.apk/.apks/.xapk` | sí | todos los archivos |
@@ -23,7 +24,7 @@ Más una sección **Más espacio** con el vaciado de **caché de todas las apps*
 
 ## Cómo se usa
 
-1. **Inicio**: anillo con el espacio usado/libre, la lista de los diez grupos con una casilla cada uno (se recuerdan) y el botón «Analizar mi teléfono».
+1. **Inicio**: anillo con el espacio usado/libre, la lista de los once grupos con una casilla cada uno (se recuerdan) y el botón «Analizar mi teléfono».
 2. **Análisis**: indicador animado con progreso en vivo («Comparando repetidos 40 de 120», «12.340 archivos del teléfono revisados…») y botón «Cancelar análisis».
 3. **Resultados**: titular «Puedes liberar X» y una tarjeta por grupo con ícono, cantidad, tamaño y un interruptor para incluirlo o no. Tocar la tarjeta abre la **revisión en cuadrícula**: miniaturas (foto, ícono del APK o de la app), toque para marcar/desmarcar, mantener presionado para ver la foto, la ruta y fecha del archivo o la información de la app; botón Todos/Ninguno. Debajo, la sección **Más espacio**.
 4. **Limpiar**: botón fijo abajo con el tamaño a liberar → confirmación de la app → confirmación de Android → pantalla «¡Listo! Liberaste X».
@@ -32,7 +33,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.6.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.7.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 

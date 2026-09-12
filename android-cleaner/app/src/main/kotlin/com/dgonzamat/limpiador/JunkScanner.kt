@@ -95,38 +95,44 @@ class JunkScanner(
             }
         }
 
-        // 2b. Fotos similares en ráfaga: misma carpeta, tomadas a pocos segundos, huella parecida.
-        //     Se conserva la más grande (suele ser la más nítida); las demás quedan para revisar.
-        val burstCandidates = images
-            .filter { it.uri !in used && it.width > 0 && it.dateModified > 0 }
-            .sortedWith(compareBy({ it.relativePath }, { it.dateModified }))
-        val bursts = mutableListOf<List<MediaFile>>()
-        var current = mutableListOf<MediaFile>()
-        for (f in burstCandidates) {
-            val last = current.lastOrNull()
-            if (last != null && (f.relativePath != last.relativePath || f.dateModified - last.dateModified > BURST_WINDOW_SECONDS)) {
-                if (current.size >= 2) bursts += current
-                current = mutableListOf()
-            }
-            current += f
+        // 2b. Fotos parecidas: huella perceptual de cada foto y comparación de todos los pares.
+        //     Dos fotos son «parecidas» si su huella difiere poco. En una ráfaga (misma carpeta,
+        //     pocos segundos) se admite más diferencia; entre fotos cualesquiera —la misma imagen
+        //     reenviada con otra compresión, guardada en dos carpetas— el umbral es estricto para
+        //     no juntar fotos distintas. Cada grupo conserva la más grande; el resto queda a revisar.
+        val simCandidates = images
+            .filter { it.uri !in used && it.width > 0 && it.height > 0 && it.size >= TINY_MAX_BYTES }
+            .sortedByDescending { it.dateModified }
+            .take(MAX_SIMILAR_THUMBS)
+        val hashes = ArrayList<Pair<MediaFile, Long>>(simCandidates.size)
+        for ((i, f) in simCandidates.withIndex()) {
+            ensureActive()
+            if (i % 20 == 0) onProgress(ScanProgress.Similar(i, simCandidates.size))
+            val h = perceptualHash(f.uri) ?: continue
+            if (h == 0L || h == -1L) continue // imagen plana: la huella no distingue nada
+            hashes += f to h
         }
-        if (current.size >= 2) bursts += current
-        var thumbs = 0
-        for (burst in bursts) {
-            if (thumbs >= MAX_SIMILAR_THUMBS) break
-            val hashes = burst.mapNotNull { f ->
-                ensureActive()
-                thumbs++
-                perceptualHash(f.uri)?.let { f to it }
+        val parent = IntArray(hashes.size) { it }
+        fun find(x: Int): Int { var r = x; while (parent[r] != r) r = parent[r]; var c = x; while (parent[c] != r) { val n = parent[c]; parent[c] = r; c = n }; return r }
+        for (i in hashes.indices) {
+            ensureActive()
+            val (fi, hi) = hashes[i]
+            for (j in i + 1 until hashes.size) {
+                val (fj, hj) = hashes[j]
+                val d = ImageHash.hamming(hi, hj)
+                if (d > ImageHash.SIMILAR_MAX_DISTANCE) continue
+                val burst = fi.relativePath == fj.relativePath && kotlin.math.abs(fi.dateModified - fj.dateModified) <= BURST_WINDOW_SECONDS
+                if (burst || d <= ImageHash.NEAR_DUPLICATE_MAX_DISTANCE) parent[find(i)] = find(j)
             }
-            if (hashes.size < 2) continue
-            val keeper = hashes.maxBy { it.first.size }
-            for ((f, h) in hashes) {
-                if (f === keeper.first || f.uri in used) continue
-                if (ImageHash.hamming(h, keeper.second) <= ImageHash.SIMILAR_MAX_DISTANCE) {
-                    result += item(f, Category.SIMILAR, note = keeper.first.name)
-                    used += f.uri
-                }
+        }
+        for (group in hashes.indices.groupBy { find(it) }.values) {
+            if (group.size < 2) continue
+            val keeper = group.maxBy { hashes[it].first.size }
+            for (idx in group) {
+                val f = hashes[idx].first
+                if (idx == keeper || f.uri in used) continue
+                result += item(f, Category.SIMILAR, note = hashes[keeper].first.name)
+                used += f.uri
             }
         }
 

@@ -47,7 +47,7 @@
     <string name="cat_screenshots">Screenshots</string>
     <string name="cat_screenshots_desc">Screen captures saved in the Screenshots folder</string>
     <string name="cat_duplicates">Duplicate photos and videos</string>
-    <string name="cat_duplicates_desc">Exact copies; we keep the oldest original</string>
+    <string name="cat_duplicates_desc">Exact copies in the gallery; we keep the oldest original</string>
     <string name="cat_tiny">Useless images</string>
     <string name="cat_tiny_desc">Thumbnails, stickers and empty or tiny files</string>
     <string name="cat_large_videos">Heavy videos</string>
@@ -136,8 +136,8 @@
     <string name="diagnostics_title">Diagnostics</string>
     <string name="copy">Copy</string>
 
-    <string name="cat_similar">Similar photos (bursts)</string>
-    <string name="cat_similar_desc">Taken seconds apart and nearly identical; we keep the largest. Review them yourself</string>
+    <string name="cat_similar">Similar photos</string>
+    <string name="cat_similar_desc">Nearly identical even in another folder or with different compression (bursts, forwards); we keep the largest. Review them yourself</string>
     <string name="note_similar_to">Similar to %1$s</string>
     <string name="cancel_scan">Cancel analysis</string>
     <plurals name="scanning_files_count">
@@ -149,6 +149,11 @@
     <string name="phase_files">Phone files</string>
     <string name="phase_apps">Unused apps</string>
     <string name="root_folder">Internal storage</string>
+
+    <string name="cat_dup_files">Duplicate files</string>
+    <string name="cat_dup_files_desc">Identical documents, audio and downloads outside the gallery; we keep the oldest</string>
+    <string name="scanning_similar">Comparing similar photos (%1$d of %2$d)</string>
+    <string name="scanning_file_hashing">Comparing duplicate files (%1$d of %2$d)</string>
     <string name="include_group_in_clean">Include "%1$s" in cleanup</string>
     <string name="status_no_permission_short">No permission to see your photos and videos.</string>
     <string name="open_app_settings">Settings</string>

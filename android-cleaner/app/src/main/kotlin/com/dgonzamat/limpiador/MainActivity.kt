@@ -405,7 +405,7 @@ class MainActivity : AppCompatActivity() {
                 val result = ScanEngine.scan(this@MainActivity, enabled) { p ->
                     setPhase(
                         when (p) {
-                            is ScanProgress.Files -> Phase.FILES
+                            is ScanProgress.Files, is ScanProgress.FileHashing -> Phase.FILES
                             ScanProgress.Apps -> Phase.APPS
                             else -> Phase.GALLERY
                         },
@@ -414,6 +414,8 @@ class MainActivity : AppCompatActivity() {
                         ScanProgress.Reading -> getString(R.string.scanning_reading)
                         is ScanProgress.Found -> resources.getQuantityString(R.plurals.scanning_found, p.total, p.total)
                         is ScanProgress.Hashing -> getString(R.string.scanning_hashing, p.done, p.total)
+                        is ScanProgress.Similar -> getString(R.string.scanning_similar, p.done, p.total)
+                        is ScanProgress.FileHashing -> getString(R.string.scanning_file_hashing, p.done, p.total)
                         is ScanProgress.Files ->
                             if (p.visited == 0) getString(R.string.scanning_files)
                             else resources.getQuantityString(R.plurals.scanning_files_count, p.visited, p.visited)

@@ -42,7 +42,7 @@ class JunkScannerTest {
 
         // Progreso: primero Reading, luego Found con el total real.
         assertEquals(ScanProgress.Reading, progress.first())
-        assertEquals(ScanProgress.Found(14), progress[1])
+        assertEquals(ScanProgress.Found(16), progress[1])
     }
 
     @Test
@@ -52,9 +52,10 @@ class JunkScannerTest {
         val items = scanner.scan {}
         val similar = items.filter { it.category == Category.SIMILAR }
         assertEquals(FakeGallery.EXPECTED_SIMILAR, similar.map { it.uri!!.lastPathSegment!!.toLong() }.toSet())
-        assertEquals("IMG_B1.jpg", similar.single().note)   // se conserva la más grande
+        assertTrue(similar.all { it.note == "IMG_B1.jpg" }) // se conserva la más grande del grupo
         assertTrue(similar.none { it.selected })            // solo para revisar
-        assertEquals(7, items.size)                         // los 6 de siempre + la similar
+        assertTrue(items.none { it.name == "IMG_lejana.jpg" }) // 6 bits fuera de ráfaga: no es parecida
+        assertEquals(8, items.size)                         // los 6 de siempre + las 2 parecidas
     }
 
     @Test

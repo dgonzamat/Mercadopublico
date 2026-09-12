@@ -11,6 +11,7 @@ enum class Category(val titleRes: Int, val descRes: Int, val iconRes: Int, val p
     SCREENSHOTS(R.string.cat_screenshots, R.string.cat_screenshots_desc, R.drawable.ic_phone, true),
     DUPLICATES(R.string.cat_duplicates, R.string.cat_duplicates_desc, R.drawable.ic_copy, true),
     SIMILAR(R.string.cat_similar, R.string.cat_similar_desc, R.drawable.ic_burst, false),
+    DUPLICATE_FILES(R.string.cat_dup_files, R.string.cat_dup_files_desc, R.drawable.ic_file_copy, true),
     TINY(R.string.cat_tiny, R.string.cat_tiny_desc, R.drawable.ic_crop, true),
     RESIDUE(R.string.cat_residue, R.string.cat_residue_desc, R.drawable.ic_sweep, true),
     APK_FILES(R.string.cat_apk, R.string.cat_apk_desc, R.drawable.ic_apk, true),
@@ -63,7 +64,11 @@ sealed class ScanProgress {
     object Reading : ScanProgress()
     data class Found(val total: Int) : ScanProgress()
     data class Hashing(val done: Int, val total: Int) : ScanProgress()
+    /** Huellas perceptuales de fotos para buscar parecidas. */
+    data class Similar(val done: Int, val total: Int) : ScanProgress()
     data class Files(val visited: Int) : ScanProgress()
+    /** Hash de archivos del mismo tamaño para buscar repetidos fuera de la galería. */
+    data class FileHashing(val done: Int, val total: Int) : ScanProgress()
     object Apps : ScanProgress()
 }
 

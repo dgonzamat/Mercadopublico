@@ -15,7 +15,7 @@ object ScanEngine {
     var uiDispatcher: kotlinx.coroutines.CoroutineDispatcher = Dispatchers.Main
 
     val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.SIMILAR, Category.TINY, Category.LARGE_VIDEOS)
-    val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS)
+    val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS, Category.DUPLICATE_FILES)
 
     /** Escanea solo los grupos en [enabled] (por defecto, todos). */
     suspend fun scan(
@@ -36,9 +36,13 @@ object ScanEngine {
                 zeroBytes = context.getString(R.string.note_zero_bytes),
                 cacheDir = context.getString(R.string.note_cache_dir),
                 daysOld = { context.getString(R.string.note_days_old, it) },
+                copyOf = { context.getString(R.string.note_duplicate_of, it) },
             )
-            val fs = FileScanner(storageRoot(), strings = strings)
-            out += fs.scan { onProgress(ScanProgress.Files(it)) }
+            val fs = FileScanner(storageRoot(), strings = strings, findDuplicates = Category.DUPLICATE_FILES in enabled)
+            out += fs.scan(
+                onProgress = { onProgress(ScanProgress.Files(it)) },
+                onHashing = { done, total -> onProgress(ScanProgress.FileHashing(done, total)) },
+            )
             visited = fs.visited
             onProgress(ScanProgress.Files(visited))
         }

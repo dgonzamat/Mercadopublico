@@ -9,6 +9,8 @@ import android.graphics.Bitmap
  */
 object ImageHash {
     const val SIMILAR_MAX_DISTANCE = 10
+    /** Umbral para fotos que NO son de la misma ráfaga: casi idénticas (recompresión, copia en otra carpeta). */
+    const val NEAR_DUPLICATE_MAX_DISTANCE = 4
 
     fun dHash(source: Bitmap): Long {
         val small = Bitmap.createScaledBitmap(source, 9, 8, true)

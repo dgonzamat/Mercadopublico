@@ -48,11 +48,22 @@ object FakeGallery {
         FakeFile(12, "IMG_B1.jpg", 3_100_000, 4000, 3000, 5000, "DCIM/Camera/"),
         FakeFile(13, "IMG_B2.jpg", 3_000_000, 4000, 3000, 5003, "DCIM/Camera/"),
         FakeFile(14, "IMG_B3.jpg", 2_900_000, 4000, 3000, 5005, "DCIM/Camera/"),
+        // La misma foto B1 reenviada por WhatsApp (otra carpeta, otro día, otra compresión) y una
+        // foto de otra carpeta que solo se parece un poco.
+        FakeFile(15, "IMG-WA0001.jpg", 2_500_001, 4000, 3000, 90_000, "Pictures/WhatsApp/"),
+        FakeFile(16, "IMG_lejana.jpg", 2_500_002, 4000, 3000, 90_100, "Pictures/Otra/"),
     )
 
-    /** Huellas perceptuales de la ráfaga: B2 casi igual a B1 (1 bit), B3 muy distinta. */
-    val HASHES = mapOf(12L to 0x00FFFF0000FFFF00L, 13L to 0x00FFFF0000FFFF01L, 14L to 0x0F0F0F0F0F0F0F0FL)
-    val EXPECTED_SIMILAR = setOf(13L)
+    /**
+     * Huellas perceptuales: B2 casi igual a B1 (1 bit) en la misma ráfaga; B3 muy distinta;
+     * WA a 2 bits de B1 (parecida aunque esté en otra carpeta); «lejana» a 8 bits (fuera de
+     * ráfaga no basta: el umbral entre carpetas es estricto).
+     */
+    val HASHES = mapOf(
+        12L to 0x00FFFF0000FFFF00L, 13L to 0x00FFFF0000FFFF01L, 14L to 0x0F0F0F0F0F0F0F0FL,
+        15L to 0x00FFFF0000FFFF03L, 16L to 0x00FFFF0000FFFFFFL,
+    )
+    val EXPECTED_SIMILAR = setOf(13L, 15L)
 
     val EXPECTED_SCREENSHOTS = setOf(3L, 4L)
     val EXPECTED_DUPLICATES = setOf(6L)
