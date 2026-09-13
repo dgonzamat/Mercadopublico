@@ -45,7 +45,7 @@
     <string name="clean_none">Pick something to clean</string>
 
     <string name="cat_screenshots">Screenshots</string>
-    <string name="cat_screenshots_desc">Screen captures saved in the Screenshots folder</string>
+    <string name="cat_screenshots_desc">Screen captures older than two weeks; recent ones are left alone</string>
     <string name="cat_duplicates">Duplicate photos and videos</string>
     <string name="cat_duplicates_desc">Exact copies in the gallery; we keep the oldest original</string>
     <string name="cat_tiny">Useless images</string>

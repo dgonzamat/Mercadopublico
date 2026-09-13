@@ -50,7 +50,7 @@
 
     <!-- Categorías -->
     <string name="cat_screenshots">Capturas de pantalla</string>
-    <string name="cat_screenshots_desc">Pantallazos guardados en la carpeta Screenshots</string>
+    <string name="cat_screenshots_desc">Pantallazos de hace más de dos semanas; los recientes no se tocan</string>
     <string name="cat_duplicates">Fotos y videos repetidos</string>
     <string name="cat_duplicates_desc">Copias exactas en la galería; conservamos la original más antigua</string>
     <string name="cat_tiny">Imágenes inservibles</string>

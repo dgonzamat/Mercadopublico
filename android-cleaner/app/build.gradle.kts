@@ -11,8 +11,8 @@ android {
         applicationId = "com.dgonzamat.limpiador"
         minSdk = 30
         targetSdk = 35
-        versionCode = 13
-        versionName = "2.9"
+        versionCode = 14
+        versionName = "2.10"
     }
 
     // Clave de firma versionada en keystore/ (es una clave de desarrollo, no

@@ -15,7 +15,9 @@ import java.security.MessageDigest
  */
 class JunkScanner(
     private val resolver: ContentResolver,
-    /** Huella perceptual de una foto (inyectable en pruebas); null si no se pudo obtener. */
+    /** Ahora, en segundos (inyectable en pruebas): decide qué capturas ya son viejas. */
+    private val now: Long = System.currentTimeMillis() / 1000,
+    /** Huella perceptual de una foto (inyectable en pruebas); null si no se pudo obtener. Va al final para poder pasarla como lambda. */
     private val perceptualHash: (Uri) -> Long? = { uri -> defaultPerceptualHash(resolver, uri) },
 ) {
 
@@ -27,6 +29,7 @@ class JunkScanner(
         const val PREFIX_BYTES = 64L * 1024            // primera etapa del hash de duplicados
         const val BURST_WINDOW_SECONDS = 10L           // fotos a ≤10 s en la misma carpeta = ráfaga
         const val MAX_SIMILAR_THUMBS = 3000            // tope de miniaturas a comparar por análisis
+        const val SCREENSHOT_MIN_AGE_DAYS = 14L        // capturas de menos de dos semanas no se tocan
 
         fun defaultPerceptualHash(resolver: ContentResolver, uri: Uri): Long? = try {
             val bmp = resolver.loadThumbnail(uri, android.util.Size(96, 96), null)
@@ -52,10 +55,13 @@ class JunkScanner(
             originalUri = original?.uri, verified = verified,
         )
 
-        // 1. Capturas de pantalla.
+        // 1. Capturas de pantalla de hace más de dos semanas. Las recientes suelen estar en uso
+        //    (un comprobante, una dirección), así que ni se listan; la nota lleva los días.
         for (f in images) {
             if (isScreenshot(f)) {
-                result += item(f, Category.SCREENSHOTS)
+                val days = (now - f.dateModified) / 86_400
+                if (days < SCREENSHOT_MIN_AGE_DAYS) continue
+                result += item(f, Category.SCREENSHOTS, note = days.toString())
                 used += f.uri
             }
         }

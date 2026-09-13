@@ -26,6 +26,9 @@ class JunkScannerTest {
         fun ids(cat: Category) = items.filter { it.category == cat }.map { it.uri!!.lastPathSegment!!.toLong() }.toSet()
 
         assertEquals(FakeGallery.EXPECTED_SCREENSHOTS, ids(Category.SCREENSHOTS))
+        // Las capturas viejas llevan su edad en días en la nota; la reciente no está en ningún grupo.
+        assertTrue(items.filter { it.category == Category.SCREENSHOTS }.all { (it.note?.toLongOrNull() ?: -1) >= JunkScanner.SCREENSHOT_MIN_AGE_DAYS })
+        assertTrue(items.none { it.uri?.lastPathSegment == FakeGallery.RECENT_SCREENSHOT.toString() })
         assertEquals(FakeGallery.EXPECTED_DUPLICATES, ids(Category.DUPLICATES))
         assertEquals(FakeGallery.EXPECTED_TINY, ids(Category.TINY))
         assertEquals(FakeGallery.EXPECTED_LARGE, ids(Category.LARGE_VIDEOS))
@@ -45,7 +48,7 @@ class JunkScannerTest {
 
         // Progreso: primero Reading, luego Found con el total real.
         assertEquals(ScanProgress.Reading, progress.first())
-        assertEquals(ScanProgress.Found(16), progress[1])
+        assertEquals(ScanProgress.Found(17), progress[1])
     }
 
     @Test

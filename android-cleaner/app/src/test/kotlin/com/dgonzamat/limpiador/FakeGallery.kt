@@ -32,11 +32,14 @@ data class FakeFile(
  * 1 archivo vacío, 1 video normal y 1 video pesado.
  */
 object FakeGallery {
+    /** Fechas de las capturas relativas a hoy (segundos): 30 y 45 días son viejas, 3 días es reciente. */
+    private val NOW = System.currentTimeMillis() / 1000
+
     val FILES = listOf(
         FakeFile(1, "IMG_0001.jpg", 3_000_000, 4000, 3000, 1000, "DCIM/Camera/"),
         FakeFile(2, "IMG_0002.jpg", 2_500_000, 4000, 3000, 1001, "Pictures/"),
-        FakeFile(3, "Screenshot_20260901-101010.png", 500_000, 1080, 2400, 1002, "Pictures/Screenshots/"),
-        FakeFile(4, "Screenshot_20260902-111111.png", 400_000, 1080, 2400, 1003, "DCIM/Screenshots/"),
+        FakeFile(3, "Screenshot_20260901-101010.png", 500_000, 1080, 2400, NOW - 30 * 86_400, "Pictures/Screenshots/"),
+        FakeFile(4, "Screenshot_20260902-111111.png", 400_000, 1080, 2400, NOW - 45 * 86_400, "DCIM/Screenshots/"),
         FakeFile(5, "IMG_0003.jpg", 60_000, 800, 600, 1004, "Pictures/", bytes = ByteArray(60_000) { 'A'.code.toByte() }),
         FakeFile(6, "IMG_0003 (1).jpg", 60_000, 800, 600, 1005, "Download/", bytes = ByteArray(60_000) { 'A'.code.toByte() }),
         FakeFile(7, "IMG_0004.jpg", 60_000, 800, 600, 1006, "Pictures/", bytes = ByteArray(60_000) { 'B'.code.toByte() }),
@@ -52,6 +55,8 @@ object FakeGallery {
         // foto de otra carpeta que solo se parece un poco.
         FakeFile(15, "IMG-WA0001.jpg", 2_500_001, 4000, 3000, 90_000, "Pictures/WhatsApp/"),
         FakeFile(16, "IMG_lejana.jpg", 2_500_002, 4000, 3000, 90_100, "Pictures/Otra/"),
+        // Captura de hace 3 días: es reciente, no debe aparecer en ningún grupo.
+        FakeFile(17, "Screenshot_reciente.png", 450_000, 1080, 2400, NOW - 3 * 86_400, "Pictures/Screenshots/"),
     )
 
     /**
@@ -65,7 +70,9 @@ object FakeGallery {
     )
     val EXPECTED_SIMILAR = setOf(13L, 15L)
 
+    /** Las capturas 3 y 4 son de hace 30 y 45 días. La 17 es de hace 3 días y queda fuera. */
     val EXPECTED_SCREENSHOTS = setOf(3L, 4L)
+    const val RECENT_SCREENSHOT = 17L
     val EXPECTED_DUPLICATES = setOf(6L)
     val EXPECTED_TINY = setOf(8L, 9L)
     val EXPECTED_LARGE = setOf(11L)

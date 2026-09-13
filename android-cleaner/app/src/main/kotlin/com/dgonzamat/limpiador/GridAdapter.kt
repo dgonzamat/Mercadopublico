@@ -78,6 +78,8 @@ class GridAdapter(
                 Category.DUPLICATES -> ctx.getString(R.string.note_duplicate_of, item.note)
                 Category.SIMILAR -> ctx.getString(R.string.note_similar_to, item.note)
                 Category.TINY -> item.note?.let { "$it · ${formatSize(item.size)}" } ?: formatSize(item.size)
+                // La nota de una captura es su edad en días (la pone JunkScanner, que no tiene strings).
+                Category.SCREENSHOTS -> item.note?.toIntOrNull()?.let { "${formatSize(item.size)} · ${ctx.getString(R.string.note_days_old, it)}" } ?: formatSize(item.size)
                 else -> formatSize(item.size)
             }
             render(item)

@@ -4,7 +4,7 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que anal
 
 | Grupo | Criterio | ¿Preseleccionado? | Requiere |
 |---|---|---|---|
-| Capturas de pantalla | carpeta `Screenshots`/`Capturas` o nombre `Screenshot_*` | sí | fotos |
+| Capturas de pantalla | carpeta `Screenshots`/`Capturas` o nombre `Screenshot_*`, **de hace más de 14 días** (las recientes no se listan) | sí | fotos |
 | Fotos y videos repetidos | en la galería: mismo tamaño → mismos primeros 64 KB → mismo SHA-256 → **doble verificación byte a byte contra el original** (se repite justo antes de borrar); se conserva el más antiguo | sí | fotos |
 | Fotos parecidas | huella perceptual dHash de cada foto comparada con todas: ≤4 bits entre fotos cualesquiera (reenvíos, otra carpeta u otra compresión) o ≤10 bits dentro de una ráfaga (misma carpeta, ≤10 s); se conserva la más grande | no | fotos |
 | Archivos repetidos | fuera de la galería (documentos, audios, descargas ≥16 KB, no ocultos): mismo tamaño → mismos 64 KB → mismo SHA-256 → doble verificación byte a byte (también antes de borrar); se conserva el más antiguo | sí | todos los archivos |
@@ -33,7 +33,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.9.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.10.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
