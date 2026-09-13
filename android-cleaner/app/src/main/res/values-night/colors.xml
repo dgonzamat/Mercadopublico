@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sobre fondo oscuro, el verde y el rojo del tema claro pierden contraste. -->
+    <color name="danger">#F28B82</color>
+    <color name="success">#81C784</color>
+    <color name="success_container">#1B5E20</color>
+</resources>

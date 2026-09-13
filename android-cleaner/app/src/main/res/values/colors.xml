@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="danger">#C41E3A</color>
+    <color name="success">#2E7D32</color>
+    <color name="success_container">#C8E6C9</color>
+    <color name="scrim">#66000000</color>
+    <color name="ic_launcher_background">#1E5F74</color>
+</resources>
