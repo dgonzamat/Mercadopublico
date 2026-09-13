@@ -146,6 +146,7 @@ a {
 [data-hyp-filter="humana_clasificada"] [data-hyp]:not([data-hyp="humana_clasificada"]),
 [data-hyp-filter="adversaria"] [data-hyp]:not([data-hyp="adversaria"]),
 [data-hyp-filter="nohumano"] [data-hyp]:not([data-hyp="nohumano"]),
+[data-era-filter="0"] [data-era]:not([data-era="0"]),
 [data-era-filter="1946"] [data-era]:not([data-era="1946"]),
 [data-era-filter="1960"] [data-era]:not([data-era="1960"]),
 [data-era-filter="1980"] [data-era]:not([data-era="1980"]),
