@@ -272,7 +272,7 @@ class MainFlowTest {
             (dialog as AlertDialog).getButton(AlertDialog.BUTTON_POSITIVE).performClick()
             // 1. Los archivos se borran del disco de inmediato (en IO)…
             var req: org.robolectric.shadows.ShadowActivity.IntentForResult? = null
-            waitUntil("petición de borrado al sistema") { req = shadowOf(a).nextStartedActivityForResult; req != null }
+            waitUntil("petición de borrado al sistema") { req = a.nextResultRequest(); req != null }
             assertTrue(files.none { java.io.File(it.path!!).exists() })
             // …2. y la galería pasa por el sistema (PendingIntent del proveedor falso).
             shadowOf(a).receiveResult(req!!.intent, Activity.RESULT_OK, null)
@@ -352,9 +352,9 @@ class MainFlowTest {
             offer.getButton(AlertDialog.BUTTON_NEGATIVE).performClick()
             idle()
             // Se pidió el permiso de fotos al sistema; simulamos que el usuario lo niega.
-            val req = shadowOf(a).nextStartedActivityForResult
+            val req = a.nextResultRequest()
             assertNotNull(req)
-            shadowOf(a).receiveResult(req.intent, Activity.RESULT_CANCELED, null)
+            shadowOf(a).receiveResult(req!!.intent, Activity.RESULT_CANCELED, null)
             idle()
             assertEquals(View.VISIBLE, a.v<View>(R.id.welcomeGroup).visibility)
             val hint = a.v<View>(R.id.permissionHint)

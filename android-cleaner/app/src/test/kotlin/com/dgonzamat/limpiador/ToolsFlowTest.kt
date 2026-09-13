@@ -82,9 +82,9 @@ class ToolsFlowTest {
             assertEquals(1, tools.size)
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()
             idle()
-            val cacheReq = shadowOf(a).nextStartedActivityForResult
+            val cacheReq = a.nextResultRequest()
             assertNotNull(cacheReq)
-            assertEquals(StorageManager.ACTION_CLEAR_APP_CACHE, cacheReq.intent.action)
+            assertEquals(StorageManager.ACTION_CLEAR_APP_CACHE, cacheReq!!.intent.action)
             shadowOf(a).receiveResult(cacheReq.intent, Activity.RESULT_OK, null)
             idle()
             Screenshots.snap(a.window.decorView, "08-resultados-con-apps")
@@ -103,15 +103,15 @@ class ToolsFlowTest {
 
             // 1. Galería (proveedor falso) → OK.
             var req: org.robolectric.shadows.ShadowActivity.IntentForResult? = null
-            waitUntil("borrado de galería") { req = shadowOf(a).nextStartedActivityForResult; req != null }
+            waitUntil("borrado de galería") { req = a.nextResultRequest(); req != null }
             shadowOf(a).receiveResult(req!!.intent, Activity.RESULT_OK, null)
             idle()
             // 2. Apps, una por una: ACTION_DELETE con package:… y resultado.
             val pm = shadowOf(a.packageManager)
             for (pkg in listOf(FakeApps.UNUSED, FakeApps.NEVER)) {
-                val del = shadowOf(a).nextStartedActivityForResult
+                val del = a.nextResultRequest()
                 assertNotNull("desinstalación de $pkg", del)
-                assertEquals(Intent.ACTION_DELETE, del.intent.action)
+                assertEquals(Intent.ACTION_DELETE, del!!.intent.action)
                 assertEquals("package:$pkg", del.intent.dataString)
                 pm.removePackage(pkg) // el sistema la desinstaló
                 shadowOf(a).receiveResult(del.intent, Activity.RESULT_OK, null)
