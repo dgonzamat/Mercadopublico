@@ -62,8 +62,10 @@ class MainActivity : AppCompatActivity() {
     // ---- limpieza en curso ----
     private val pendingMedia = ArrayDeque<List<JunkItem>>()
     private val pendingApps = ArrayDeque<JunkItem>()
-    private var freedBytes = 0L
-    private var deletedCount = 0
+    /** Lo que efectivamente se eliminó, para el resumen por grupo de la pantalla Listo. */
+    private val deletedItems = mutableListOf<JunkItem>()
+    /** Repetidos que la doble verificación dejó en paz justo antes de borrar. */
+    private var staleSkipped = 0
 
     private val permissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
@@ -74,8 +76,7 @@ class MainActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { result ->
             val batch = pendingMedia.removeFirstOrNull() ?: return@registerForActivityResult
             if (result.resultCode == Activity.RESULT_OK) {
-                freedBytes += batch.sumOf { it.size }
-                deletedCount += batch.size
+                deletedItems += batch
                 ScanStore.remove(batch)
                 continueDeletion()
             } else {
@@ -90,8 +91,7 @@ class MainActivity : AppCompatActivity() {
             val app = pendingApps.removeFirstOrNull() ?: return@registerForActivityResult
             val gone = try { packageManager.getApplicationInfo(app.packageName!!, 0); false } catch (e: PackageManager.NameNotFoundException) { true }
             if (gone) {
-                freedBytes += app.size
-                deletedCount += 1
+                deletedItems += app
                 ScanStore.remove(listOf(app))
             }
             continueDeletion()
@@ -113,6 +113,7 @@ class MainActivity : AppCompatActivity() {
 
         b.primaryButton.setOnClickListener { onPrimaryAction() }
         b.rescanButton.setOnClickListener { requestOrScan() }
+        b.permissionSettingsButton.setOnClickListener { openAppSettings() }
         b.cancelScanButton.setOnClickListener { cancelScan() }
         b.appTitle.setOnLongClickListener { showDiagnostics(); true }
         renderWelcomeGroups()
@@ -357,13 +358,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun showNoPermission() {
         show(Screen.WELCOME)
-        b.permissionHint.text = getString(R.string.status_no_permission)
+        b.permissionHintText.text = getString(R.string.status_no_permission)
         b.permissionHint.visibility = View.VISIBLE
         b.scroll.smoothScrollTo(0, 0)
-        // El aviso vive arriba de la lista, pero además se ofrece el atajo a los ajustes de la app.
-        Snackbar.make(b.root, R.string.status_no_permission_short, Snackbar.LENGTH_LONG)
-            .setAction(R.string.open_app_settings) { openAppSettings() }
-            .show()
     }
 
     private fun openAppSettings() {
@@ -493,14 +490,15 @@ class MainActivity : AppCompatActivity() {
             scope.allFiles -> if (n > 0) getString(R.string.scope_files, n) else getString(R.string.scope_files_nocount)
             else -> getString(R.string.scope_gallery)
         }
+        b.resultsScope.text = scopeText
         if (all.isEmpty()) {
             b.resultsTitle.text = getString(R.string.results_clean_title)
-            b.resultsSubtitle.text = getString(R.string.results_clean_subtitle) + " " + scopeText
+            b.resultsSubtitle.text = getString(R.string.results_clean_subtitle)
         } else {
             // El título dice lo MARCADO (igual que el botón); el total encontrado va en el subtítulo.
             b.resultsSubtitle.text = resources.getQuantityString(
                 R.plurals.results_subtitle, all.size, all.size, formatSize(all.sumOf { it.size }),
-            ) + " " + scopeText
+            )
         }
         // Grupos que se buscaron y no tenían nada: decirlo, para que no parezca que se saltaron.
         val enabled = enabledCategories()
@@ -606,8 +604,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun deleteSelected(selected: List<JunkItem>) {
-        freedBytes = 0
-        deletedCount = 0
+        deletedItems.clear()
+        staleSkipped = 0
         pendingMedia.clear()
         pendingApps.clear()
         b.primaryButton.isEnabled = false
@@ -618,10 +616,8 @@ class MainActivity : AppCompatActivity() {
             val dupes = selected.filter { it.category == Category.DUPLICATES || it.category == Category.DUPLICATE_FILES }
             val stale = withContext(Dispatchers.IO) { dupes.filterNot { DuplicateCheck.stillIdentical(it, contentResolver) } }
             stale.forEach { it.selected = false }
+            staleSkipped = stale.size
             val sel = selected - stale.toSet()
-            if (stale.isNotEmpty()) {
-                Snackbar.make(b.root, resources.getQuantityString(R.plurals.dup_recheck_failed, stale.size, stale.size), Snackbar.LENGTH_LONG).show()
-            }
             // Lotes de 250 URIs: el intent del sistema tiene límite de tamaño.
             sel.filter { it.kind == Kind.MEDIA }.chunked(250).forEach { pendingMedia.addLast(it) }
             sel.filter { it.kind == Kind.APP }.forEach { pendingApps.addLast(it) }
@@ -633,8 +629,7 @@ class MainActivity : AppCompatActivity() {
                     try { if (item.isDir) f.deleteRecursively() else f.delete() } catch (e: Exception) { false }
                 }
             }
-            freedBytes += deleted.sumOf { it.size }
-            deletedCount += deleted.size
+            deletedItems += deleted
             ScanStore.remove(deleted)
             continueDeletion()
         }
@@ -670,14 +665,25 @@ class MainActivity : AppCompatActivity() {
 
     private fun finishDeletion(cancelled: Boolean) {
         refreshStorage()
-        if (deletedCount > 0) {
-            b.doneTitle.text = getString(R.string.done_title, formatSize(freedBytes))
-            b.doneSubtitle.text = resources.getQuantityString(R.plurals.done_subtitle, deletedCount, deletedCount)
+        val n = deletedItems.size
+        if (n > 0) {
+            b.doneTitle.text = getString(R.string.done_title, formatSize(deletedItems.sumOf { it.size }))
+            b.doneSubtitle.text = resources.getQuantityString(R.plurals.done_subtitle, n, n)
+            // Detalle por grupo, en el mismo orden y formato que el diálogo de confirmación.
+            b.doneDetail.text = Category.entries.mapNotNull { cat ->
+                val g = deletedItems.filter { it.category == cat }
+                if (g.isEmpty()) null else getString(R.string.done_detail_line, getString(cat.titleRes), g.size, formatSize(g.sumOf { it.size }))
+            }.joinToString("\n")
+            b.doneDetailCard.visibility = View.VISIBLE
+            b.doneNote.visibility = if (staleSkipped > 0) View.VISIBLE else View.GONE
+            b.doneNote.text = resources.getQuantityString(R.plurals.dup_recheck_failed, staleSkipped, staleSkipped)
             ScanStore.items = emptyList()
             show(Screen.DONE)
         } else {
             renderResults()
+            // Sin pantalla Listo, el aviso de los repetidos que se dejaron en paz va en un snackbar.
             if (cancelled) Snackbar.make(b.root, R.string.delete_cancelled, Snackbar.LENGTH_LONG).show()
+            else if (staleSkipped > 0) Snackbar.make(b.root, resources.getQuantityString(R.plurals.dup_recheck_failed, staleSkipped, staleSkipped), Snackbar.LENGTH_LONG).show()
         }
     }
 

@@ -27,8 +27,8 @@
     <string name="results_title">You can free up %1$s</string>
     <string name="results_title_none">Choose what to clean</string>
     <plurals name="results_subtitle">
-        <item quantity="one">We found %1$d item (%2$s) you probably don\'t need. Review it and tap Clean.</item>
-        <item quantity="other">We found %1$d items (%2$s in total) you probably don\'t need. The switches decide what gets cleaned.</item>
+        <item quantity="one">We found %1$d item (%2$s). Review it and tap Clean.</item>
+        <item quantity="other">We found %1$d items (%2$s in total). The switches decide what gets cleaned.</item>
     </plurals>
     <string name="results_nothing_in">Nothing to clean in: %1$s.</string>
     <string name="results_clean_title">Your gallery is tidy</string>
@@ -165,6 +165,8 @@
         <item quantity="other">%1$d duplicates no longer match their originals and were not deleted.</item>
     </plurals>
     <string name="include_group_in_clean">Include "%1$s" in cleanup</string>
-    <string name="status_no_permission_short">No permission to see your photos and videos.</string>
-    <string name="open_app_settings">Settings</string>
+
+    <!-- v2.9 -->
+    <string name="done_detail_title">What was cleaned</string>
+    <string name="done_detail_line">%1$s: %2$d · %3$s</string>
 </resources>

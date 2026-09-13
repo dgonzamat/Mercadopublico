@@ -110,7 +110,7 @@ class GridAdapter(
         private fun render(item: JunkItem) {
             b.card.isChecked = item.selected
             b.check.isChecked = item.selected
-            b.card.strokeWidth = if (item.selected) dp(2) else 0
+            b.card.strokeWidth = if (item.selected) dp(1) else 0
             b.thumb.alpha = if (item.selected) 1f else 0.55f
         }
 
@@ -152,7 +152,7 @@ class GridAdapter(
         private fun render(item: JunkItem) {
             b.card.isChecked = item.selected
             b.check.isChecked = item.selected
-            b.card.strokeWidth = if (item.selected) dp(2) else 0
+            b.card.strokeWidth = if (item.selected) dp(1) else 0
             b.thumb.alpha = if (item.selected) 1f else 0.55f
         }
     }

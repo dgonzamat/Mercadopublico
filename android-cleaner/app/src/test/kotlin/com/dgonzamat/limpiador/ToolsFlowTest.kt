@@ -176,9 +176,9 @@ class ToolsFlowTest {
         scenario.onActivity { a ->
             waitUntil("resultados solo galería") { a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE }
             assertEquals(4, a.v<ViewGroup>(R.id.categoryContainer).childCount) // solo grupos de galería
-            // Aviso destacado arriba: solo galería, con botón para activar; el subtítulo dice el alcance.
+            // Aviso destacado arriba: solo galería, con botón para activar; la línea de alcance lo dice.
             assertEquals(View.VISIBLE, a.v<View>(R.id.scopeBanner).visibility)
-            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.endsWith(a.getString(R.string.scope_gallery)))
+            assertEquals(a.getString(R.string.scope_gallery), a.v<TextView>(R.id.resultsScope).text.toString())
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
             assertEquals(1, tools.size)
             assertEquals(a.getString(R.string.tool_usage_title), tools[0].findViewById<TextView>(R.id.title).text.toString())
@@ -199,7 +199,7 @@ class ToolsFlowTest {
                 a.v<View>(R.id.resultsGroup).visibility == View.VISIBLE && ScanStore.scope.allFiles
             }
             assertEquals(View.GONE, a.v<View>(R.id.scopeBanner).visibility)
-            assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.contains("archivos del teléfono"))
+            assertTrue(a.v<TextView>(R.id.resultsScope).text.contains("archivos del teléfono"))
         }
     }
 }

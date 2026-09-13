@@ -31,8 +31,8 @@
     <string name="results_title">Puedes liberar %1$s</string>
     <string name="results_title_none">Elige qué limpiar</string>
     <plurals name="results_subtitle">
-        <item quantity="one">Encontramos %1$d elemento (%2$s) que probablemente no necesitas. Revísalo y toca Limpiar.</item>
-        <item quantity="other">Encontramos %1$d elementos (%2$s en total) que probablemente no necesitas. Los interruptores deciden qué se limpia.</item>
+        <item quantity="one">Encontramos %1$d elemento (%2$s). Revísalo y toca Limpiar.</item>
+        <item quantity="other">Encontramos %1$d elementos (%2$s en total). Los interruptores deciden qué se limpia.</item>
     </plurals>
     <string name="results_nothing_in">Sin nada que limpiar en: %1$s.</string>
     <string name="results_clean_title">Tu galería está en orden</string>
@@ -177,6 +177,8 @@
         <item quantity="other">%1$d repetidos ya no coinciden con su original y no se eliminaron.</item>
     </plurals>
     <string name="include_group_in_clean">Incluir «%1$s» en la limpieza</string>
-    <string name="status_no_permission_short">Sin permiso para ver tus fotos y videos.</string>
-    <string name="open_app_settings">Ajustes</string>
+
+    <!-- v2.9 -->
+    <string name="done_detail_title">Qué se limpió</string>
+    <string name="done_detail_line">%1$s: %2$d · %3$s</string>
 </resources>

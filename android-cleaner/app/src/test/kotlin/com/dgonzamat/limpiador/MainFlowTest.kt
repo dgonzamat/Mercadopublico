@@ -112,6 +112,9 @@ class MainFlowTest {
             // El título dice lo MARCADO (la misma cifra que el botón); el total encontrado va en el subtítulo.
             assertEquals(a.getString(R.string.results_title, formatSize(preselected)), a.v<TextView>(R.id.resultsTitle).text.toString())
             assertTrue(a.v<TextView>(R.id.resultsSubtitle).text.contains(formatSize(all.sumOf { it.size })))
+            // El alcance va en su propia línea, no pegado al subtítulo.
+            assertTrue(a.v<TextView>(R.id.resultsScope).text.startsWith("Revisamos la galería y "))
+            assertFalse(a.v<TextView>(R.id.resultsSubtitle).text.contains("Revisamos"))
             // Grupos buscados sin hallazgos: se nombran (similares no encontró nada; apps no se buscó).
             val empty = a.v<TextView>(R.id.emptyGroups)
             assertEquals(View.VISIBLE, empty.visibility)
@@ -279,6 +282,14 @@ class MainFlowTest {
             assertEquals(a.resources.getQuantityString(R.plurals.done_subtitle, expected.size, expected.size), a.v<TextView>(R.id.doneSubtitle).text.toString())
             assertFalse(dup.selected) // quedó desmarcada por la doble verificación
             assertEquals(a.getString(R.string.scan_again), primary.text.toString())
+            // Resumen por grupo de lo que se fue, y aviso persistente del repetido que se dejó en paz.
+            val detail = a.v<TextView>(R.id.doneDetail).text.toString()
+            assertEquals(View.VISIBLE, a.v<View>(R.id.doneDetailCard).visibility)
+            val screenshots = expected.filter { it.category == Category.SCREENSHOTS }
+            assertTrue(detail, detail.contains(a.getString(R.string.done_detail_line, a.getString(R.string.cat_screenshots), screenshots.size, formatSize(screenshots.sumOf { it.size }))))
+            assertFalse(detail, detail.contains(a.getString(R.string.cat_duplicates)))
+            assertEquals(View.VISIBLE, a.v<View>(R.id.doneNote).visibility)
+            assertEquals(a.resources.getQuantityString(R.plurals.dup_recheck_failed, 1, 1), a.v<TextView>(R.id.doneNote).text.toString())
             Screenshots.snap(a.window.decorView, "06-listo")
         }
     }
@@ -352,6 +363,11 @@ class MainFlowTest {
             assertTrue(hint.top < a.v<View>(R.id.welcomeGroups).top)
             assertEquals(View.GONE, a.v<View>(R.id.scanningGroup).visibility)
             Screenshots.snap(a.window.decorView, "07-sin-permiso")
+            // El atajo a los ajustes de la app está dentro del aviso (no en un snackbar que se va).
+            a.v<MaterialButton>(R.id.permissionSettingsButton).performClick()
+            val settings = shadowOf(a).nextStartedActivity
+            assertNotNull(settings)
+            assertEquals(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, settings.action)
         }
     }
 }

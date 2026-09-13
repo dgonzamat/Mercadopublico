@@ -146,22 +146,40 @@
                         android:textColor="?android:attr/textColorSecondary" />
 
                     <!-- Permiso de fotos denegado: arriba de la lista, donde se ve sin desplazar -->
-                    <TextView
+                    <LinearLayout
                         android:id="@+id/permissionHint"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:background="@drawable/bg_danger_note"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
+                        android:orientation="vertical"
                         android:padding="12dp"
-                        android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="@color/danger"
                         android:visibility="gone"
-                        app:drawableStartCompat="@drawable/ic_shield"
-                        app:drawableTint="@color/danger"
-                        tools:text="Necesitamos permiso para ver tus fotos y videos."
-                        tools:visibility="visible" />
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/permissionHintText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:textAppearance="?attr/textAppearanceBodyMedium"
+                            android:textColor="@color/danger"
+                            app:drawableStartCompat="@drawable/ic_shield"
+                            app:drawableTint="@color/danger"
+                            tools:text="Necesitamos permiso para ver tus fotos y videos." />
+
+                        <!-- El atajo vive en el aviso, no en un snackbar que desaparece -->
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/permissionSettingsButton"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/allfiles_open_settings"
+                            android:textColor="@color/danger"
+                            app:strokeColor="@color/danger" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/welcomeGroups"
@@ -282,6 +300,16 @@
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textColor="?android:attr/textColorSecondary"
                         tools:text="Encontramos 320 archivos que probablemente no necesitas. Revisa cada grupo antes de limpiar." />
+
+                    <!-- Alcance del análisis, en una línea aparte para no alargar el subtítulo -->
+                    <TextView
+                        android:id="@+id/resultsScope"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textAppearance="?attr/textAppearanceBodySmall"
+                        android:textColor="?android:attr/textColorSecondary"
+                        tools:text="Revisamos la galería y 27 archivos del teléfono." />
 
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/scopeBanner"
@@ -411,6 +439,59 @@
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textColor="?android:attr/textColorSecondary"
                         tools:text="Se eliminaron 320 archivos." />
+
+                    <!-- Qué se limpió, por grupo: el resumen no debe quedar solo en la cifra -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/doneDetailCard"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="20dp"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/done_detail_title"
+                                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+                            <TextView
+                                android:id="@+id/doneDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:lineSpacingExtra="4dp"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="?android:attr/textColorSecondary"
+                                tools:text="Capturas de pantalla: 2 · 879 KB\nTemporales y caché: 5 · 560 B" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Repetidos que se dejaron en paz por la doble verificación: aviso que no se va solo -->
+                    <TextView
+                        android:id="@+id/doneNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_danger_note"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/danger"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/ic_shield"
+                        app:drawableTint="@color/danger"
+                        tools:text="1 repetido ya no coincide con su original y no se eliminó."
+                        tools:visibility="visible" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
