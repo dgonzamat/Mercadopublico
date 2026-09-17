@@ -36,7 +36,24 @@ export const metadata = {
   },
 };
 
-const ERAS: Array<{ start: number; end: number; es: string; en: string }> = [
+// `range` sobreescribe el rótulo numérico del encabezado y del filtro. Solo lo
+// usa el bucket de antecedentes: su rango real arrancaría en 1561 (Núremberg) y
+// hornearlo driftearía en cuanto entre un caso más antiguo, mientras que "‹1946"
+// es estable y ya es la convención de /cobertura para su columna equivalente.
+const ERAS: Array<{ start: number; end: number; es: string; en: string; range?: string }> = [
+  {
+    // Los ~17 antecedentes previos a la era institucional moderna (Núremberg
+    // 1561, Basilea 1566, Utsuro-bune 1803, los scareships de 1909, los foo
+    // fighters de 1944…). Sin este bucket no caían en ninguna era y /cases no
+    // los listaba, aunque el filtro sí los contaba: el conteo prometía 389 y la
+    // página renderizaba 372. El corte en 1945 respeta el ancla editorial de
+    // 1947 (ver CORPUS_START_YEAR) sin esconder la profundidad histórica.
+    start: 0,
+    end: 1945,
+    es: "Antecedentes",
+    en: "Antecedents",
+    range: "‹1946",
+  },
   {
     start: 1946,
     end: 1959,
@@ -195,8 +212,8 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
         misidSubtypes={misidSubtypeOpts}
         eras={eras.map(({ era, eraCases }) => ({
           key: String(era.start),
-          es: `${era.start}–${era.end}`,
-          en: `${era.start}–${era.end}`,
+          es: era.range ?? `${era.start}–${era.end}`,
+          en: era.range ?? `${era.start}–${era.end}`,
           count: eraCases.length,
         }))}
         tiers={tierOpts}
@@ -231,7 +248,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
               >
                 <h2 className="sticky top-[76px] z-10 -mx-4 border-b border-border bg-bg px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted">
                   <span className="text-text">
-                    {era.start}–{era.end}
+                    {era.range ?? `${era.start}–${era.end}`}
                   </span>{" "}
                   ·{" "}
                   <T es={era.es} en={era.en} locale={locale} />{" "}

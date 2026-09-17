@@ -133,7 +133,7 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
                 </span>
                 <div className="space-y-2 min-w-0">
                   <p className="font-display text-lg leading-tight text-text md:text-xl">
-                    {e.label}
+                    <T es={e.label} en={e.label_en} locale={locale} />
                   </p>
                   <div className="h-1.5 bg-text/10">
                     <div
@@ -143,7 +143,7 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
                   </div>
                 </div>
                 <p className="col-span-2 font-mono text-xs uppercase tracking-widest text-muted md:col-span-1 md:text-right">
-                  {e.start}–{String(e.end).slice(-2)}
+                  {e.range ?? `${e.start}–${String(e.end).slice(-2)}`}
                 </p>
               </div>
             );

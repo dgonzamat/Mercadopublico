@@ -1504,6 +1504,62 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9u. RULE E36: toda era de /cases tiene su regla CSS (ERROR) ─────────
+//
+// El filtro por era es CSS puro: `CasesFilter` pone `data-era-filter` en el
+// contenedor y globals.css oculta los `[data-era]` que no calzan. Son DOS
+// listas a mano —el array ERAS de app/cases/page.tsx y el bloque de selectores—
+// que tienen que coincidir, y el fallo de que driftan es mudo en la dirección
+// peor: si una era existe en ERAS pero no en el CSS, la opción aparece en el
+// desplegable y al elegirla NO PASA NADA. El usuario cree que filtró.
+//
+// Es la misma familia que E35 (países sin región): una tabla escrita a mano que
+// el contenido deja atrás. Se añadió al crear el bucket de antecedentes
+// (`start: 0`) en sep 2026, que hasta entonces no existía y dejaba los ~17 casos
+// anteriores a 1946 fuera de toda sección: el filtro contaba 389 y la página
+// renderizaba 372.
+{
+  const casesPageFile = path.join(root, "app", "cases", "page.tsx");
+  const cssFile = path.join(root, "app", "globals.css");
+  if (fs.existsSync(casesPageFile) && fs.existsSync(cssFile)) {
+    const pageSrc = fs.readFileSync(casesPageFile, "utf-8");
+    const cssSrc = fs.readFileSync(cssFile, "utf-8");
+    const erasBlock = pageSrc.match(/const ERAS[^=]*=\s*\[([\s\S]*?)\n\];/);
+    const eraKeys = erasBlock
+      ? [...erasBlock[1].matchAll(/(?:^|\n)\s*start:\s*(-?\d+)/g)].map((m) => m[1])
+      : [];
+    const cssKeys = new Set(
+      [...cssSrc.matchAll(/\[data-era-filter="(-?\d+)"\]/g)].map((m) => m[1]),
+    );
+    if (eraKeys.length === 0) {
+      record(
+        "ERROR",
+        "app/cases/page.tsx",
+        0,
+        "E36 eras: no se pudo leer el array ERAS (¿cambió el formato?). La sonda no puede verificar que cada era tenga su regla CSS y estaría dando un verde falso.",
+      );
+    }
+    for (const k of eraKeys) {
+      if (!cssKeys.has(k))
+        record(
+          "ERROR",
+          "app/globals.css",
+          0,
+          `E36 eras: la era \`start: ${k}\` existe en ERAS (app/cases/page.tsx) pero no tiene regla \`[data-era-filter="${k}"]\` en globals.css → la opción aparece en el filtro y al elegirla no oculta nada. Añade el selector al bloque de filtros facetados.`,
+        );
+    }
+    for (const k of cssKeys) {
+      if (!eraKeys.includes(k))
+        record(
+          "ERROR",
+          "app/globals.css",
+          0,
+          `E36 eras: globals.css tiene una regla \`[data-era-filter="${k}"]\` para una era que ya no existe en ERAS → selector muerto. Quítalo o restaura la era.`,
+        );
+    }
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
