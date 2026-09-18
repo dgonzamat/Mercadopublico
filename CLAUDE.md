@@ -78,12 +78,12 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~330 a jul 2026; cifra viva = STATS.cases)
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~390 a sep 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
     frameworks.json
-    researchers.json    # 91 actores
+    researchers.json    # 127 actores (sep 2026; cifra viva = su .length)
   scripts/
     build-cases.mjs     # agrega data/cases/*.json → data/cases.json
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
@@ -132,7 +132,7 @@ Para agregar un caso nuevo:
 2. Asignar `num` único secuencial.
 3. Build regenera el agregado.
 
-Esta separación existe porque `cases.json` monolítico (~4 MB a jul 2026, con toda la prosa ES+EN; era ~165KB cuando se decidió el split) excede el budget de tokens del MCP `create_or_update_file`. Mantener archivos individuales evita re-encontrarse con ese límite.
+Esta separación existe porque `cases.json` monolítico (~5,5 MB a sep 2026, con toda la prosa ES+EN; era ~165KB cuando se decidió el split) excede el budget de tokens del MCP `create_or_update_file`. Mantener archivos individuales evita re-encontrarse con ese límite.
 
 ## Schema UAPCase
 
@@ -168,7 +168,7 @@ Tres capas de sonda protegen el visor (todas corren en prebuild salvo la viva):
 - **`audit-consistency.mjs` E17** (WARN): cada asset `/pursue/` same-origin existe en `web/public/`.
 - **`audit-consistency.mjs` E20** (ERROR): cada documento que referencia el **bucket Supabase** está en `data/pursue-bucket-manifest.json`. El build no puede consultar `supabase.co` (allowlist), así que el manifiesto es la verdad offline; la **sonda viva diaria** (Routine CCR) lo mantiene honesto contra `storage.objects`. Regenerar el manifiesto: `select name from storage.objects where bucket_id='pursue' order by name`.
 
-**Cobertura de visual · regla E21** (jul 2026, WARN agregado): todo caso debería embeber al menos un asset visual —`documents[]`, `primaryDocument` o `featuredDoc` (PDF o imagen)— para que el detalle no sea solo prosa. `audit-consistency.mjs` E21 reporta cuántos casos no tienen ninguno, con backlog por tier (a jul 2026: 27/330 sin visual, S×1 A×10 B×16). Es **WARN, no ERROR** (mismo patrón que E13): conseguir el asset exige rehostear caso por caso en `/pursue` o el bucket porque war.gov bloquea el embed; el conteo deja el progreso medible, prioridad **S→A→B**. No es exigible a casos nuevos de golpe (la mayoría del corpus no tiene visual todavía), pero al crear/expandir un caso, si hay un documento primario embebible, móntalo.
+**Cobertura de visual · regla E21** (jul 2026, WARN agregado): todo caso debería embeber al menos un asset visual —`documents[]`, `primaryDocument` o `featuredDoc` (PDF o imagen)— para que el detalle no sea solo prosa. `audit-consistency.mjs` E21 reporta cuántos casos no tienen ninguno, con backlog por tier (a sep 2026: 39/390 sin visual, S×1 A×11 B×27; cifra viva = la que reporta E21). Es **WARN, no ERROR** (mismo patrón que E13): conseguir el asset exige rehostear caso por caso en `/pursue` o el bucket porque war.gov bloquea el embed; el conteo deja el progreso medible, prioridad **S→A→B**. No es exigible a casos nuevos de golpe (la mayoría del corpus no tiene visual todavía), pero al crear/expandir un caso, si hay un documento primario embebible, móntalo.
 
 **Registros (NO re-buscar) · de dónde salen los assets visuales** — origen de los binarios PURSUE (Drive del dueño), el mirror de dominio público en `archive.org/details/wargovUFO`, la reachability real de Commons/WikiLeaks/Openverse vía proxy, y el barrido E21 Tier-A completo: todo en [`docs/registros.md`](docs/registros.md#documentos-y-assets-visuales-pursue-commons-archiveorg). **Consúltalo antes de buscar un asset** — la mayoría de los huecos que quedan ya se barrieron y están cerrados por licencia, no por falta de búsqueda.
 
@@ -225,7 +225,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 
 - **No** importar `fs` desde `lib/data.ts` (lo importa `WorldMap.tsx` que es client component → webpack falla). *(enforzado: `audit-consistency.mjs` E18a)*
 - **No** importar el corpus (`cases`/`patterns`/… desde `lib/data`) en un módulo alcanzable desde un componente cliente —directa o **transitivamente**—, ni aunque solo expongas agregados (webpack embute el JSON entero en el chunk: `MobileNav` del layout importaba `lib/siteStats`, que derivaba `STATS` del corpus → los ~4 MB de `cases.json` en **cada** página; el LCP killer real, 5,23→0,92 MB de JS al arreglarlo, jul 2026). Precalcula el agregado a un JSON diminuto en build (`data/site-stats.json` vía `build-cases.mjs`) e impórtalo en su lugar. *(enforzado parcialmente: `audit-consistency.mjs` E18d blinda la superficie del explorer. La regla transitiva general NO se mecaniza — las fronteras de `dynamic()` la harían frágil.)*
-  - **Corolario · slim de campos**: incluso `cases-client.json` (~1,4 MB, sin prosa) es demasiado para una viz que usa cuatro campos. `WorldMap` lo importaba entero para marcadores que solo necesitan `id/name/tier/country/country_name/year/probability/location` → proyecta un dataset a-medida (`data/atlas-points.json`, **68 KB**, `lib/atlasData.ts`). El slim de **prosa** protege el LCP global; el slim de **campos** protege la ruta que lo consume.
+  - **Corolario · slim de campos**: incluso `cases-client.json` (~1,9 MB a sep 2026, sin prosa) es demasiado para una viz que usa cuatro campos. `WorldMap` lo importaba entero para marcadores que solo necesitan `id/name/tier/country/country_name/year/probability/location` → proyecta un dataset a-medida (`data/atlas-points.json`, **84 KB** a sep 2026, `lib/atlasData.ts`). El slim de **prosa** protege el LCP global; el slim de **campos** protege la ruta que lo consume.
 - **No** adivinar el componente culpable al diagnosticar bundle bloat — **traza el grafo de módulos desde cada `"use client"`** (los de `/atlas` y `/laboratorio` eran inocentes; el culpable estaba en el layout global, jul 2026).
 - **No** re-exportar una const (`export { X } from "./y"`) y seguir usándola localmente en el mismo módulo sin importarla también — el re-export NO crea binding local, así que `X` queda «Cannot find name» y rompe el build (pasó con `MUNDANO_SUBTYPES` al moverlo a `lib/meceClasses` y re-exportarlo desde `meceModel`, que lo usa en `expandedHypotheses`, #638; el patrón correcto —re-export **+** `import { X }`— ya vivía en `MECE_CLASSES`, se olvidó replicar). Ojo con la verificación: el `tsc` local sin `node_modules` da **falso verde** en estos errores de resolución (degrada; solo el `next build` de CI los ve) — para atraparlos local, filtra los `Cannot find name` **reales** del ruido de `react`/`next`/`node` ausente, no confíes en «0 errores».
   - **Verificar con `tsc` local dio DOS falsos verdes encadenados (jul 2026), y el arreglo del primero causó el segundo.** Úsalo solo así: **`tsc -p tsconfig.json --noEmit`** (modo proyecto), filtrando el ruido de `node_modules` ausente —`TS2307` módulo no encontrado, `TS7026` JSX sin tipos de React, `TS18048`/`TS2345` por `notFound()` que sin los tipos de `next` no es `never` y no narrowing-ea— y mirando lo que sí importa: **`TS2554` (aridad), `TS2345` real, `TS1xxx` (sintaxis), `TS2304` (binding)**.
@@ -288,7 +288,9 @@ La contraparte offline es **`audit-consistency.mjs` E28** (WARN): la auditoría 
 
 **Lección más general**: *una herramienta con un bug no solo produce malos arreglos, produce malas conclusiones*. El mismo `limit=-20` defectuoso que eligió snapshots rotos hizo concluir que 9 artículos de Wikipedia «nunca existieron»; dos sí existían (`Boyd_Bushman`, `Sturrock_panel`, capturas 200 de 2014 y 2024, borrados por notabilidad). Antes de sacar una conclusión de una sonda nueva, verifica la sonda contra un caso cuyo resultado ya conoces.
 
-Casos con más rotas: `roswell-1947` (3); con 2 cada uno `twining-memo-1947`, `sturrock-panel-1998`, `robertson-panel-1953`, `rendlesham-1980`, `mystery-drones-east-coast-2024`. Las institucionales duelen más: `nationalarchives.gov.uk/ufos/` (404, citado por **4 casos**), `theblackvault.com/.../defense-intelligence-reference-documents/` y `documents2.theblackvault.com/.../bolendermemo.pdf` (404, ambos en AAWSAP/Bolender), `argentina.gob.ar/fuerza-aerea/cefae` (404).
+Casos con más rotas **según la línea base viva** (derivar de `data/link-health-baseline.json`, no de esta lista): `roswell-1947` (3); con 2 cada uno `coyne-1973`, `twining-memo-1947`, `pursue-release-2026`, `mystery-drones-east-coast-2024`. Siguen congeladas `theblackvault.com/.../defense-intelligence-reference-documents/` y `documents2.theblackvault.com/.../bolendermemo.pdf` (AAWSAP/Bolender) y `argentina.gob.ar/fuerza-aerea/cefae`.
+
+**Esta lista driftea y ya mandó a perseguir un fantasma** (cazado sep 2026): decía que la reparación de mayor palanca era `nationalarchives.gov.uk/ufos/`, «404, citado por **4 casos**», y a septiembre esa URL **no está en la línea base** —ni rota ni multi-citada—, mientras que en toda la base hay **una sola** URL citada por más de un caso. También nombraba a `sturrock-panel-1998`, `robertson-panel-1953` y `rendlesham-1980`, que ya salieron. La moraleja no es actualizar la lista, es que **una recomendación de prioridad escrita a mano envejece peor que la cifra que la acompaña**: el conteo se ve viejo, el consejo se lee vigente. Antes de elegir qué reparar, deriva el ranking del baseline.
 
 **Ruta de resolución**: casi todo es *link rot* normal (los gobiernos reorganizan sus sitios). Priorizar por tier del caso y por nº de casos que citan la misma URL. **Distinguir antes de tocar**: `404` = link rot; `fetch failed`/`timeout` pueden ser caídas temporales — reverificar antes de reescribir nada.
 
@@ -297,7 +299,7 @@ Casos con más rotas: `roswell-1947` (3); con 2 cada uno `twining-memo-1947`, `s
 
 ## Deuda pendiente · fotos de actores
 
-Estado (jul 2026): **31/125 actores tienen foto** (28/91 en las secciones A–E, techo estable desde jun 2026; 3/35 en la sección F de experiencers, sumada después — ver más abajo). El techo real NO son los restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista de A–E, estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35. La sección F tiene un techo estructuralmente más bajo: son testigos anónimos de sucesos de 1952–2007, la mayoría sin perfil público ni Wikipedia, a diferencia de los investigadores/oficiales de A–E.
+Estado (sep 2026): **30/127 actores tienen foto** (27/92 en las secciones A–E; 3/35 en la sección F de experiencers, sumada después — ver más abajo). **Ojo: A–E BAJÓ de 28 a 27 mientras la sección crecía de 91 a 92** — se perdió una foto entre jul y sep 2026 y no quedó registro de por qué. Puede ser una retirada deliberada (un 404 detectado, una licencia revisada) o una pérdida accidental; si alguien va a retomar el tema, eso es lo primero que conviene mirar, no la cola de pendientes. El techo real NO son los restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista de A–E, estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35. La sección F tiene un techo estructuralmente más bajo: son testigos anónimos de sucesos de 1952–2007, la mayoría sin perfil público ni Wikipedia, a diferencia de los investigadores/oficiales de A–E.
 
 Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles**, así que **hay que verificarlos, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
 
