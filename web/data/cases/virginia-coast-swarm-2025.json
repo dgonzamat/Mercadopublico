@@ -15,7 +15,10 @@
   "tier": "A",
   "probability": 40,
   "category": "incident",
-  "patterns": ["8s", "8e"],
+  "patterns": [
+    "8s",
+    "8e"
+  ],
   "summary": "Entre junio de 2024 y mayo de 2025, activos de la Marina estadounidense reportaron la presencia de aproximadamente 100 objetos aéreos no identificados y al menos dos sistemas de superficie probablemente no tripulados operando frente a la costa de Virginia. El episodio quedó registrado en el Reporte Anual Consolidado del Año Fiscal 2025 de AARO, publicado en julio de 2026, como uno de los 319 casos nuevos recibidos durante el período de reporte. La oficina mantiene la investigación activa, señalando que el evento involucra múltiples plataformas y ocurrió cerca de instalaciones de seguridad nacional.",
   "summary_en": "Between June 2024 and May 2025, U.S. Navy assets reported the presence of approximately 100 unidentified aerial objects and at least two likely unmanned surface systems operating off the coast of Virginia. The episode was recorded in AARO's Fiscal Year 2025 Consolidated Annual Report, released in July 2026, as one of 319 new cases received during the reporting period. The office maintains an active investigation, noting the event involved multiple platforms and occurred near national security installations.",
   "posterior": {
@@ -66,6 +69,17 @@
       "url": "https://www.theblackvault.com/documentarchive/aaro-releases-fy2025-uap-report-months-after-statutory-deadline-citing-319-new-cases-and-expanded-satellite-analysis/",
       "note": "Análisis detallado del reporte FY2025 de AARO por archivo especializado en documentación gubernamental UAP, destacando los 319 casos nuevos y el evento de Virginia.",
       "note_en": "Detailed analysis of AARO's FY2025 report by archive specialising in UAP government documentation, highlighting the 319 new cases and the Virginia event."
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/virginia-coast-swarm-2025-context.jpg",
+      "type": "image",
+      "title": "Contexto · la Estación Naval de Norfolk en 2011, la mayor base naval del mundo y la instalación militar dominante de la costa de Virginia donde se reportó el enjambre",
+      "title_en": "Context · Naval Station Norfolk in 2011, the world's largest naval base and the dominant military installation on the Virginia coast where the swarm was reported",
+      "source": "US Navy 110707-N-XZ912-104, foto de Mass Communication Specialist 1st Class Christopher B. Stoltz · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:US%20Navy%20110707-N-XZ912-104%20An%20aerial%20view%20of%20Norfolk%20Naval%20Station%2C%20the%20largest%20naval%20base%20in%20the%20world.jpg"
     }
   ]
 }
