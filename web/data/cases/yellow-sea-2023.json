@@ -1,0 +1,105 @@
+{
+  "id": "yellow-sea-2023",
+  "num": 393,
+  "name": "Mar Amarillo 2023 · tres clips sin objeto descrito",
+  "name_en": "Yellow Sea 2023 · three clips with no object described",
+  "year_start": 2023,
+  "country": "CN",
+  "country_name": "China",
+  "flag": "🇨🇳",
+  "location": {
+    "lat": 35.6,
+    "lng": 123.2,
+    "place": "Mar Amarillo (ubicación exacta no revelada)",
+    "place_en": "Yellow Sea (exact location undisclosed)"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "pursueReleases": [
+    6
+  ],
+  "summary": "En 2023, el Comando Indo-Pacífico reportó a la AARO un fenómeno anómalo no identificado sobre el Mar Amarillo, registrado por un sensor infrarrojo a bordo de una plataforma militar. PURSUE lo publicó el 18 de septiembre de 2026 en tres clips que suman tres minutos y veinticuatro segundos. Las fichas oficiales no describen ningún objeto: hablan de un «área de contraste» que el sensor sigue, y una de ellas contiene además una frase cuya negación parece haberse caído, invirtiendo su sentido.",
+  "summary_en": "In 2023, Indo-Pacific Command reported to AARO an unidentified anomalous phenomenon over the Yellow Sea, recorded by an infrared sensor aboard a military platform. PURSUE published it on 18 September 2026 in three clips totalling three minutes and twenty-four seconds. The official records describe no object: they speak of an 'area of contrast' the sensor tracks, and one of them contains a sentence whose negation appears to have dropped out, inverting its sense.",
+  "patterns": [
+    "8s",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "En algún momento de 2023, el Comando Indo-Pacífico de Estados Unidos presentó ante la Oficina de Resolución de Anomalías de Todos los Dominios (AARO) el reporte de un fenómeno anómalo no identificado sobre el Mar Amarillo, acompañado de metraje capturado por un sensor infrarrojo a bordo de una plataforma militar estadounidense. El expediente se hizo público el 18 de septiembre de 2026, en la sexta entrega del programa PURSUE, repartido en tres clips catalogados como DOW-UAP-PR150, PR151 y PR152. Suman tres minutos y veinticuatro segundos: cincuenta y siete segundos el primero, cuarenta y nueve el segundo y un minuto treinta y ocho el tercero.\n\nLas descripciones oficiales que acompañan a los tres videos son notablemente parcas, y su parquedad es deliberada. Ninguna afirma que haya un objeto. El término que emplean es «área de contraste», una fórmula que describe lo que el sensor registra —una región de la imagen térmica que difiere de su entorno— sin comprometerse con que exista algo físico que la produzca. El primer clip consigna que el área entra en el campo de visión por el borde inferior, que el sensor la sigue, y que entre los segundos cincuenta y dos y cincuenta y siete la geometría de la propia plataforma ocluye la vista, desenfocando la imagen y bloqueando el lado derecho de la pantalla. El segundo registra que a los dieciséis segundos el sensor aumenta su nivel de magnificación y continúa el seguimiento. El tercero, el más largo, se resume en una sola línea: el sensor gira para seguir el área de contraste manteniéndola aproximadamente centrada durante un minuto y treinta y ocho segundos. Los tres cierran con el mismo descargo, que conviene tomar en serio: la descripción se ofrece solo con fines informativos y el lector no debe interpretar ninguna parte de ella como un juicio analítico, una conclusión investigativa o una determinación fáctica sobre la validez, naturaleza o significación del evento.\n\nHay una frase en la ficha del primer clip que merece atención, porque leída al pie de la letra dice lo contrario de lo que su propia construcción implica. Al describir el recuadro rectangular que aparece hacia el centro del cuadro, el texto publicado reza: «This display element is a graphical component of the sensor system and does indicate a physical change in the environment». La oración presenta el recuadro como un componente gráfico del sistema de sensores —es decir, un artefacto de la interfaz— y a continuación afirma que sí indica un cambio físico en el entorno. Las dos mitades se contradicen. Todo apunta a una negación caída en la redacción, y lo que el texto quiso decir es que el recuadro no indica ningún cambio físico: es la marca de enfoque que el propio sistema dibuja. El expediente lo deja anotado en lugar de corregirlo en silencio, porque quien cite esa línea tal como está publicada propagará la inversión, y porque no se ha podido verificar el fraseo estándar de esa advertencia contra otras entregas.\n\nEl caso se sitúa en una zona con vecinos. El corpus ya documenta un evento del Mar Amarillo del 1 de enero de 2025, también reportado por el Comando Indo-Pacífico y también capturado por sensor infrarrojo, en el que la descripción oficial sí se atrevió con una forma: un área de contraste semejante a una estrella de seis puntas. Aquel expediente se apoya en dieciocho segundos de video. Este se apoya en tres minutos y veinticuatro. La comparación deja una inversión que vale la pena nombrar: más del undécuple de metraje, y menos información sobre lo que se filmó.",
+  "whatHappened_en": "At some point in 2023, United States Indo-Pacific Command submitted to the All-domain Anomaly Resolution Office (AARO) a report of an unidentified anomalous phenomenon over the Yellow Sea, accompanied by footage captured by an infrared sensor aboard a U.S. military platform. The file became public on 18 September 2026, in the sixth PURSUE release, split across three clips catalogued as DOW-UAP-PR150, PR151 and PR152. Together they run three minutes and twenty-four seconds: fifty-seven for the first, forty-nine for the second and one minute thirty-eight for the third.\n\nThe official descriptions accompanying the three videos are notably sparse, and their sparseness is deliberate. None asserts that there is an object. The term they use is 'area of contrast', a formula describing what the sensor registers —a region of the thermal image differing from its surroundings— without committing to anything physical producing it. The first clip records that the area enters the field of view from the bottom edge, that the sensor tracks it, and that between seconds fifty-two and fifty-seven the platform's own geometry occludes the view, blurring the image and blocking the right side of the screen. The second records that at sixteen seconds the sensor increases its level of magnification and continues tracking. The third, the longest, is summarised in a single line: the sensor pans to track the area of contrast, keeping it generally centred, for one minute and thirty-eight seconds. All three close with the same disclaimer, which is worth taking seriously: the description is offered for informational purposes only and the reader should not interpret any part of it as an analytical judgment, an investigative conclusion or a factual determination about the event's validity, nature or significance.\n\nOne sentence in the first clip's record deserves attention, because read literally it says the opposite of what its own construction implies. Describing the rectangular overlay that appears near the centre of the frame, the published text reads: 'This display element is a graphical component of the sensor system and does indicate a physical change in the environment.' The sentence presents the overlay as a graphical component of the sensor system —that is, an interface artefact— and then states that it does indicate a physical change in the environment. The two halves contradict each other. Everything points to a negation dropped in drafting, and what the text meant to say is that the overlay does not indicate any physical change: it is the focus marker the system itself draws. This file notes it rather than silently correcting it, because anyone quoting that line as published will propagate the inversion, and because the standard phrasing of that caveat could not be verified against other releases.\n\nThe case sits in a neighbourhood. The corpus already documents a Yellow Sea event of 1 January 2025, likewise reported by Indo-Pacific Command and likewise captured by infrared sensor, in which the official description did venture a shape: an area of contrast resembling a six-pointed star. That file rests on eighteen seconds of video. This one rests on three minutes and twenty-four. The comparison leaves an inversion worth naming: more than eleven times the footage, and less information about what was filmed.",
+  "whyMatters": "El valor de este expediente no está en lo que muestra, que es poco, sino en lo que su forma revela sobre la maquinaria que lo produjo. Tres clips, tres minutos y medio de sensor infrarrojo, un comando combatiente que escala el reporte a la oficina creada para resolverlo, y al final del proceso una descripción pública que no se compromete siquiera con la existencia de un objeto. «Área de contraste» es una elección de vocabulario, no una limitación del idioma: describe el dato del sensor y se detiene justo antes de la inferencia. Quien busque en PURSUE la confirmación de algo encontrará aquí el ejemplo más limpio de lo contrario — un canal institucional funcionando exactamente como se diseñó y entregando, al cabo, la constatación de que no se sabe qué se filmó.\n\nEso condiciona la partición. La narrativa adversaria carga el peso mayor por geografía y por fecha: el Mar Amarillo está bordeado por China y las dos Coreas, es un espacio marítimo disputado con tráfico militar denso, y 2023 es el año en que el programa de globos de gran altitud chino pasó a ser un asunto público en Estados Unidos. Una plataforma de vigilancia de otro Estado es, en ese contexto, la hipótesis específica más plausible. Pero la masa prosaica no queda lejos, y por una razón que el propio material impone: un «área de contraste» sin forma, sin velocidad y sin comportamiento reportado es compatible con un ave, un globo, una aeronave lejana o un artefacto del propio sensor, y las fichas oficiales no ofrecen nada que permita separar esas opciones. La indeterminación se lleva una porción alta y merecida.\n\nConviene además no dejar que el metraje haga de sustituto de la evidencia. La tentación es leer tres minutos y medio como más prueba que dieciocho segundos, y aquí ocurre lo inverso: el caso hermano de 2025, con un clip once veces más corto, aporta una descripción morfológica concreta —una estrella de seis puntas, con picos de difracción— sobre la que un analista puede trabajar, mientras que este entrega duración sin descripción. Duración no es resolución. El seguimiento sostenido demuestra que el operador consideró que ahí había algo digno de seguir, lo cual es un dato sobre la conducta del operador; no es un dato sobre el objeto.\n\nQueda la nota de lectura que este expediente aporta al corpus y que excede su propio caso. La frase del recuadro de enfoque, publicada con una negación aparentemente caída, invierte su sentido y convierte un aviso sobre un artefacto de interfaz en una afirmación sobre el entorno físico. Es exactamente el modo de falla que el corpus ya tiene documentado para los materiales de DVIDS —donde el título o la metadata sugieren una cosa y el texto completo dice otra—, pero aquí operando dentro de una sola oración. La lección práctica es que el escrutinio no puede detenerse en la procedencia del documento: hay que leer lo que dice, entero, y reparar en cuándo no se sostiene consigo mismo.",
+  "whyMatters_en": "This file's value lies not in what it shows, which is little, but in what its shape reveals about the machinery that produced it. Three clips, three and a half minutes of infrared sensor, a combatant command escalating the report to the office created to resolve it, and at the end of the process a public description that will not commit even to the existence of an object. 'Area of contrast' is a choice of vocabulary, not a limitation of the language: it describes the sensor datum and stops just short of the inference. Anyone looking to PURSUE for confirmation of something will find here the cleanest example of the opposite — an institutional channel working exactly as designed and delivering, in the end, the finding that what was filmed is not known.\n\nThat conditions the partition. The adversarial narrative carries the greatest weight by geography and by date: the Yellow Sea is bounded by China and the two Koreas, it is a contested maritime space with dense military traffic, and 2023 is the year the Chinese high-altitude balloon programme became a public matter in the United States. A surveillance platform belonging to another state is, in that context, the most plausible specific hypothesis. But the prosaic mass is not far behind, for a reason the material itself imposes: an 'area of contrast' with no shape, no speed and no reported behaviour is compatible with a bird, a balloon, a distant aircraft or an artefact of the sensor itself, and the official records offer nothing that would separate those options. Indeterminacy takes a high and deserved share.\n\nIt is also worth not letting footage stand in for evidence. The temptation is to read three and a half minutes as more proof than eighteen seconds, and here the reverse holds: the 2025 sibling case, on a clip eleven times shorter, supplies a concrete morphological description —a six-pointed star, with diffraction spikes— that an analyst can work with, while this one delivers duration without description. Duration is not resolution. Sustained tracking shows that the operator judged there was something worth tracking, which is a datum about the operator's behaviour; it is not a datum about the object.\n\nThere remains the reading note this file contributes to the corpus, which exceeds its own case. The focus-box sentence, published with an apparently dropped negation, inverts its sense and turns a caution about an interface artefact into an assertion about the physical environment. It is exactly the failure mode the corpus already documents for DVIDS materials —where the title or the metadata suggests one thing and the full text says another— but here operating inside a single sentence. The practical lesson is that scrutiny cannot stop at the document's provenance: one has to read what it says, in full, and notice when it does not hold together with itself.",
+  "evidence": [
+    "Tres clips de sensor infrarrojo publicados en PURSUE Release 06 (18 sep 2026): DOW-UAP-PR150 (57 s), PR151 (49 s) y PR152 (1 min 38 s), en total 3 min 24 s",
+    "Reporte elevado por el Comando Indo-Pacífico de EE.UU. a la AARO; plataforma militar estadounidense, año 2023, sin fecha exacta publicada",
+    "Descripción oficial que no afirma la existencia de un objeto: el término empleado en los tres clips es «área de contraste»",
+    "PR150: el área entra por el borde inferior del cuadro; entre 00:52 y 00:57 la geometría de la propia plataforma ocluye el sensor y bloquea el lado derecho de la pantalla",
+    "PR151: a los 00:16 el sensor aumenta su nivel de magnificación y continúa el seguimiento",
+    "Frase de PR150 publicada con una negación aparentemente caída: «This display element is a graphical component of the sensor system and does indicate a physical change in the environment» — las dos mitades se contradicen",
+    "Descargo idéntico en los tres: la descripción no debe interpretarse como juicio analítico, conclusión investigativa ni determinación fáctica sobre el evento",
+    "Ausencia total de contexto humano: ningún testimonio del operador, ni forma, ni velocidad, ni altitud, ni comportamiento reportado"
+  ],
+  "evidence_en": [
+    "Three infrared sensor clips published in PURSUE Release 06 (18 Sep 2026): DOW-UAP-PR150 (57 s), PR151 (49 s) and PR152 (1 min 38 s), totalling 3 min 24 s",
+    "Report escalated by U.S. Indo-Pacific Command to AARO; U.S. military platform, year 2023, no exact date published",
+    "Official description that does not assert an object exists: the term used across all three clips is 'area of contrast'",
+    "PR150: the area enters from the bottom edge of the frame; between 00:52 and 00:57 the platform's own geometry occludes the sensor and blocks the right side of the screen",
+    "PR151: at 00:16 the sensor increases its level of magnification and continues tracking",
+    "A sentence in PR150 published with an apparently dropped negation: 'This display element is a graphical component of the sensor system and does indicate a physical change in the environment' — the two halves contradict each other",
+    "Identical disclaimer on all three: the description should not be interpreted as an analytical judgment, investigative conclusion or factual determination about the event",
+    "Total absence of human context: no operator testimony, no shape, no speed, no altitude, no reported behaviour"
+  ],
+  "sources": [
+    {
+      "name": "Department of War — DOW-UAP-PR150, «Unresolved UAP Report, Yellow Sea, 2023» (PURSUE Release 06)",
+      "name_en": "Department of War — DOW-UAP-PR150, 'Unresolved UAP Report, Yellow Sea, 2023' (PURSUE Release 06)",
+      "url": "https://www.dvidshub.net/video/1023402/dow-uap-pr150-unresolved-uap-report-yellow-sea-2023",
+      "note": "57 segundos. De aquí salen la oclusión por la geometría de la plataforma y la frase del recuadro de enfoque con la negación aparentemente caída.",
+      "note_en": "57 seconds. The occlusion by the platform's geometry and the focus-box sentence with the apparently dropped negation come from here."
+    },
+    {
+      "name": "Department of War — DOW-UAP-PR151, «Unresolved UAP Report, Yellow Sea, 2023» (PURSUE Release 06)",
+      "name_en": "Department of War — DOW-UAP-PR151, 'Unresolved UAP Report, Yellow Sea, 2023' (PURSUE Release 06)",
+      "url": "https://www.dvidshub.net/video/1023408/dow-uap-pr151-unresolved-uap-report-yellow-sea-2023",
+      "note": "49 segundos; incluye el aumento de magnificación a los 00:16.",
+      "note_en": "49 seconds; includes the increase in magnification at 00:16."
+    },
+    {
+      "name": "Department of War — DOW-UAP-PR152, «Unresolved UAP Report, Yellow Sea, 2023» (PURSUE Release 06)",
+      "name_en": "Department of War — DOW-UAP-PR152, 'Unresolved UAP Report, Yellow Sea, 2023' (PURSUE Release 06)",
+      "url": "https://www.dvidshub.net/video/1023410/dow-uap-pr152-unresolved-uap-report-yellow-sea-2023",
+      "note": "1 minuto 38 segundos, el clip más largo; su descripción oficial completa cabe en una línea.",
+      "note_en": "1 minute 38 seconds, the longest clip; its full official description fits in one line."
+    }
+  ],
+  "documents": [
+    {
+      "src": "https://www.dvidshub.net/video/embed/1023402",
+      "type": "video",
+      "title": "DOW-UAP-PR150 · Mar Amarillo 2023, 57 segundos de sensor infrarrojo (PURSUE Release 06)",
+      "title_en": "DOW-UAP-PR150 · Yellow Sea 2023, 57 seconds of infrared sensor (PURSUE Release 06)",
+      "source": "Department of War · PURSUE Release 06 (18 sep 2026), vía DVIDS",
+      "license": "Dominio público (obra del gobierno de EE.UU., 17 USC §105)",
+      "fallbackUrl": "https://www.dvidshub.net/video/1023402/dow-uap-pr150-unresolved-uap-report-yellow-sea-2023"
+    },
+    {
+      "src": "https://www.dvidshub.net/video/embed/1023410",
+      "type": "video",
+      "title": "DOW-UAP-PR152 · el clip más largo, 1 minuto 38 segundos (PURSUE Release 06)",
+      "title_en": "DOW-UAP-PR152 · the longest clip, 1 minute 38 seconds (PURSUE Release 06)",
+      "source": "Department of War · PURSUE Release 06 (18 sep 2026), vía DVIDS",
+      "license": "Dominio público (obra del gobierno de EE.UU., 17 USC §105)",
+      "fallbackUrl": "https://www.dvidshub.net/video/1023410/dow-uap-pr152-unresolved-uap-report-yellow-sea-2023"
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.28,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.32,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.02,
+    "indet": 0.25
+  }
+}
