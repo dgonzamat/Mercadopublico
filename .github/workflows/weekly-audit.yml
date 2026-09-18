@@ -250,8 +250,16 @@ jobs:
             const fs = require('fs');
             const report = fs.readFileSync('/tmp/audit.log', 'utf8');
             const today = new Date().toISOString().slice(0, 10);
-            const title = `audit: drift detectado (${today})`;
+            // Issue PERSISTENTE, igual que los gates de link rot y DVIDS. Este
+            // paso era el último que seguía abriendo uno NUEVO por corrida: hoy
+            // no se nota porque la auditoría está en verde, pero en cuanto
+            // entre un ERROR recurrente reproduce las 82 issues de agosto —el
+            // mismo fallo, esperando—. La política de notificación es parte del
+            // guardrail. (sep 2026)
+            const MARKER = '<!-- audit-drift -->';
+            const title = `audit: drift detectado (actualizado ${today})`;
             const body = [
+              MARKER,
               'La auditoría semanal encontró inconsistencias en `main`.',
               '',
               '<details><summary>Reporte completo</summary>',
@@ -264,13 +272,65 @@ jobs:
               '',
               `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             ].join('\n');
-            await github.rest.issues.create({
+            const { data: open } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title,
-              body,
-              labels: ['audit', 'automated'],
+              state: 'open',
+              labels: 'audit',
+              per_page: 100,
             });
+            const existing = open.find((i) => (i.body || '').includes(MARKER));
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                title,
+                body,
+              });
+              core.info(`Actualizado issue #${existing.number}`);
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['audit', 'automated'],
+              });
+            }
+
+      # Contraparte del paso anterior: sin ruta de cierre, el hilo único hereda
+      # el problema de los 82 —nadie sabe si sigue vigente—. Mismo patrón que
+      # "Close link rot issue when green".
+      - name: Close drift issue when green
+        if: steps.audit.outputs.exit_code == '0'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const MARKER = '<!-- audit-drift -->';
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'audit',
+              per_page: 100,
+            });
+            const existing = open.find((i) => (i.body || '').includes(MARKER));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `Auditoría en verde el ${new Date().toISOString().slice(0, 10)}: sin drift en \`main\`. Cerrando.`,
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: 'closed',
+                state_reason: 'completed',
+              });
+            }
 
       - name: Fail the job if drift
         if: steps.audit.outputs.exit_code != '0' || steps.links.outputs.exit_code != '0'
