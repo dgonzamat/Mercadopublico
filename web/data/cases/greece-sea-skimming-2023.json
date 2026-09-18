@@ -97,27 +97,15 @@
       "name": "war.gov/UFO — DOW-UAP-D33 y D35, MISREP de los avistamientos del 27 y 29 de octubre de 2023 (PURSUE Release 01)",
       "url": "https://www.war.gov/UFO/",
       "note": "Ambos documentos embebidos en el visor de este caso.",
-      "note_en": "Both documents embedded in this case's viewer."
+      "note_en": "Both documents embedded in this case's viewer.",
+      "name_en": "war.gov/UFO — DOW-UAP-D33 and D35, MISREPs of the October 27 and 29, 2023 sightings (PURSUE Release 01)"
     },
     {
       "name": "DVIDS — DOW-UAP-PR34 y PR35, grabaciones del sensor, Grecia, octubre 2023 (PURSUE Release 01)",
       "url": "https://www.dvidshub.net/video/1006080",
       "note": "Mirror audiovisual oficial del DoD; los dos videos van embebidos en el visor de este caso.",
-      "note_en": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "war.gov/UFO — DOW-UAP-D33 and D35, MISREPs of the October 27 and 29, 2023 sightings (PURSUE Release 01)",
-      "url": "https://www.war.gov/UFO/",
-      "note": "Both documents embedded in this case's viewer.",
-      "note_en": "Both documents embedded in this case's viewer."
-    },
-    {
-      "name": "DVIDS — DOW-UAP-PR34 and PR35, sensor footage, Greece, October 2023 (PURSUE Release 01)",
-      "url": "https://www.dvidshub.net/video/1006080",
-      "note": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer.",
-      "note_en": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer."
+      "note_en": "Official DoD audiovisual mirror; both videos are embedded in this case's viewer.",
+      "name_en": "DVIDS — DOW-UAP-PR34 and PR35, sensor footage, Greece, October 2023 (PURSUE Release 01)"
     }
   ]
 }

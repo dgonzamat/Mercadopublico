@@ -86,39 +86,22 @@
       "name": "DVIDS — FBI-UAP-PR007, 'Slow-moving Objects', metraje térmico de la primera noche (PURSUE Release 05)",
       "url": "https://www.dvidshub.net/video/1017801",
       "note": "Video embebido en el visor de este caso; corresponde al incidente descrito en FBI-UAP-D032.",
-      "note_en": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032."
+      "note_en": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032.",
+      "name_en": "DVIDS — FBI-UAP-PR007, 'Slow-moving Objects', first-night thermal footage (PURSUE Release 05)"
     },
     {
       "name": "war.gov/UFO — FBI-UAP-D032, FD-302 primera noche (PURSUE Release 05)",
       "url": "https://www.war.gov/UFO/",
       "note": "Documento embebido en el visor de este caso.",
-      "note_en": "Document embedded in this case's viewer."
+      "note_en": "Document embedded in this case's viewer.",
+      "name_en": "war.gov/UFO — FBI-UAP-D033, second-night FD-302 (PURSUE Release 05)"
     },
     {
       "name": "war.gov/UFO — FBI-UAP-D033, FD-302 segunda noche (PURSUE Release 05)",
       "url": "https://www.war.gov/UFO/",
       "note": "Documento embebido en el visor de este caso.",
-      "note_en": "Document embedded in this case's viewer."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — FBI-UAP-PR007, 'Slow-moving Objects', first-night thermal footage (PURSUE Release 05)",
-      "url": "https://www.dvidshub.net/video/1017801",
-      "note": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032.",
-      "note_en": "Video embedded in this case's viewer; corresponds to the incident described in FBI-UAP-D032."
-    },
-    {
-      "name": "war.gov/UFO — FBI-UAP-D032, first-night FD-302 (PURSUE Release 05)",
-      "url": "https://www.war.gov/UFO/",
-      "note": "Document embedded in this case's viewer.",
-      "note_en": "Document embedded in this case's viewer."
-    },
-    {
-      "name": "war.gov/UFO — FBI-UAP-D033, second-night FD-302 (PURSUE Release 05)",
-      "url": "https://www.war.gov/UFO/",
-      "note": "Document embedded in this case's viewer.",
-      "note_en": "Document embedded in this case's viewer."
+      "note_en": "Document embedded in this case's viewer.",
+      "name_en": "war.gov/UFO — FBI-UAP-D033, second-night FD-302 (PURSUE Release 05)"
     }
   ]
 }

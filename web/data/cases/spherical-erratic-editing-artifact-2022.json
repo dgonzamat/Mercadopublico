@@ -1,7 +1,9 @@
 {
   "id": "spherical-erratic-editing-artifact-2022",
   "num": 368,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "'Movimiento errático': la propia AARO dice que fue la edición, no el objeto",
   "name_en": "'Erratic movement': AARO itself says it was the edit, not the object",
   "year_start": 2022,
@@ -28,7 +30,9 @@
   },
   "summary": "Un clip de casi cuatro minutos circula con el título 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022' — pero la propia AARO, en la descripción visual oficial del archivo, señala algo que el título no dice: 'las alteraciones digitales del metraje influyen significativamente en el desempeño aparente del área de contraste'. Es decir, la agencia misma atribuye buena parte de lo que el título llama 'movimiento errático' a la edición del video, no al objeto. Forma parte del lote de 50 videos de Release 02 (origen FOIA/red clasificada, ver [[reeves-foia-classified-network-2023]]).",
   "summary_en": "A nearly four-minute clip circulates under the title 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022' — but AARO itself, in the file's official visual description, notes something the title doesn't: 'digital alterations to the video footage significantly influence the area of contrast's apparent performance characteristics.' In other words, the agency itself attributes much of what the title calls 'erratic movement' to the video's editing, not the object. It is part of the 50-video Release 02 batch (FOIA/classified-network origin; see [[reeves-foia-classified-network-2023]]).",
-  "patterns": ["8d"],
+  "patterns": [
+    "8d"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -68,15 +72,8 @@
       "name": "DVIDS — DOW-UAP-PR054, título definido por el uploader, con nota explícita de alteración digital de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007711",
       "note": "Video embebido en el visor de este caso; la ficha incluye la nota de alteración digital y la descripción visual citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR054, uploader-defined title, with AARO's explicit digital-alteration note (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007711",
-      "note": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR054, uploader-defined title, with AARO's explicit digital-alteration note (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

@@ -60,21 +60,6 @@
       "note_en": "Independent technical analysis"
     }
   ],
-  "sources_en": [
-    {
-      "name": "Belgian Air Force Official Report (1990)",
-      "url": "https://www.sobeps.org/",
-      "note": "SOBEPS published the primary documentation"
-    },
-    {
-      "name": "De Brouwer, W. — UFOs: Generals, Pilots and Government Officials Go on the Record (2010)",
-      "note": "Chapter written by the General"
-    },
-    {
-      "name": "Meessen, A. — 'Analysis of the Belgian Radar Data' (1992)",
-      "note": "Independent technical analysis"
-    }
-  ],
   "name_en": "Belgian Wave (F-16)",
   "posterior": {
     "mundano_natural": 0.34,

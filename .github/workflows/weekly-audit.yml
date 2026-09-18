@@ -142,6 +142,40 @@ jobs:
               });
             }
 
+      # Tercer y último gate sin ruta de cierre. Los otros dos ya la tienen y
+      # por la misma razón: un issue persistente que nadie cierra hereda el
+      # problema que la consolidación buscaba resolver —nadie sabe si sigue
+      # vigente—. (sep 2026)
+      - name: Close DVIDS issue when green
+        if: steps.dvids.outputs.exit_code == '0'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const MARKER = '<!-- dvids-embed-gate -->';
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'audit',
+              per_page: 100,
+            });
+            const existing = open.find((i) => (i.body || '').includes(MARKER));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `Gate en verde el ${new Date().toISOString().slice(0, 10)}: todos los embeds de DVIDS vuelven a ser framables. Cerrando.`,
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: 'closed',
+                state_reason: 'completed',
+              });
+            }
+
       # Un issue PERSISTENTE, no uno por corrida. Antes cada corrida abría
       # uno nuevo: a agosto 2026 había 82 issues automáticas abiertas y el
       # gate se había vuelto ruido de fondo — exactamente el fracaso que su

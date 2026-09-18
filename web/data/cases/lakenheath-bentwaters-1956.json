@@ -60,20 +60,6 @@
       "url": "https://discovery.nationalarchives.gov.uk/details/r/C2007"
     }
   ],
-  "sources_en": [
-    {
-      "name": "Condon Report — Case 2 (1968)",
-      "url": "https://files.ncas.org/condon/text/case02.htm"
-    },
-    {
-      "name": "Thayer, G. — IEEE Spectrum analysis (1971)",
-      "note": "Condon physicist who disputed the committee's closure"
-    },
-    {
-      "name": "RAF Lakenheath case file — UK National Archives",
-      "url": "https://discovery.nationalarchives.gov.uk/details/r/C2007"
-    }
-  ],
   "documents": [
     {
       "src": "/pursue/lakenheath-bentwaters-1956-context.jpg",

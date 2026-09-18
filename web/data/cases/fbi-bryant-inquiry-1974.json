@@ -1,7 +1,9 @@
 {
   "id": "fbi-bryant-inquiry-1974",
   "num": 379,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "'El Buró no mantiene ningún registro': la respuesta que el FBI le dio a un activista OVNI en 1974",
   "name_en": "'The Bureau maintains no record': the FBI's 1974 reply to a UFO activist",
   "year_start": 1967,
@@ -52,7 +54,8 @@
       "name": "war.gov/UFO — FBI-UAP-D014, correspondencia relacionada con avistamientos OVNI, 1967 y 1974 (PURSUE Release 04)",
       "url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
       "note": "PDF no embebido en el visor de este caso — war.gov bloquea el acceso directo desde esta sesión (ver deuda pendiente E21 en CLAUDE.md); texto citado a partir de la descripción oficial publicada junto al documento.",
-      "note_en": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document."
+      "note_en": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document.",
+      "name_en": "war.gov/UFO — FBI-UAP-D014, correspondence relating to UFO sightings, 1967 and 1974 (PURSUE Release 04)"
     },
     {
       "name": "Larry W. Bryant, Plaintiff-appellant, v. Dick Cheney, Secretary of Defense (924 F.2d 525, 4th Cir. 1991)",
@@ -64,26 +67,6 @@
       "name": "Larry W. Bryant UFO Research Collection — Rice University Archives",
       "url": "https://archives.library.rice.edu/repositories/2/resources/1390",
       "note": "Papeles personales de Bryant, incluida correspondencia de su trabajo con CAUS.",
-      "note_en": "Bryant's personal papers, including correspondence from his CAUS work."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "war.gov/UFO — FBI-UAP-D014, correspondence relating to UFO sightings, 1967 and 1974 (PURSUE Release 04)",
-      "url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
-      "note": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document.",
-      "note_en": "PDF not embedded in this case's viewer — war.gov blocks direct access from this session (see the E21 backlog note in CLAUDE.md); text quoted from the official description published alongside the document."
-    },
-    {
-      "name": "Larry W. Bryant, Plaintiff-appellant, v. Dick Cheney, Secretary of Defense (924 F.2d 525, 4th Cir. 1991)",
-      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/924/525/223903/",
-      "note": "Appeal related to Bryant's litigation against the Department of Defense.",
-      "note_en": "Appeal related to Bryant's litigation against the Department of Defense."
-    },
-    {
-      "name": "Larry W. Bryant UFO Research Collection — Rice University Archives",
-      "url": "https://archives.library.rice.edu/repositories/2/resources/1390",
-      "note": "Bryant's personal papers, including correspondence from his CAUS work.",
       "note_en": "Bryant's personal papers, including correspondence from his CAUS work."
     }
   ]

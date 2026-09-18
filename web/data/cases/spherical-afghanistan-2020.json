@@ -74,15 +74,8 @@
       "name": "DVIDS — DOW-UAP-PR055, título definido por el uploader, con evaluación de procedencia y descripción visual de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007713",
       "note": "Video embebido en el visor de este caso; la ficha incluye la nota de alteración digital y la descripción visual con marcas de tiempo citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the timestamped visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR055, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007713",
-      "note": "Video embedded in this case's viewer; the record includes the digital-alteration note and the timestamped visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the timestamped visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the timestamped visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR055, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

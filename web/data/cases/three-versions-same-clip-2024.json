@@ -1,7 +1,9 @@
 {
   "id": "three-versions-same-clip-2024",
   "num": 374,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "El uploader anuncia 'posibles cambios de forma'; la AARO no los describe",
   "name_en": "The uploader announces 'possible changes of shape'; AARO doesn't describe them",
   "year_start": 2024,
@@ -26,7 +28,9 @@
     "nohumano_abierto": 0.02,
     "indet": 0.43
   },
-  "patterns": ["8d"],
+  "patterns": [
+    "8d"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -66,15 +70,8 @@
       "name": "DVIDS — DOW-UAP-PR58, con los tres rótulos del uploader y la descripción visual de la AARO que no describe cambio de forma (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007723",
       "note": "Video embebido en el visor de este caso; la ficha incluye los rótulos y la descripción visual citados en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR58, with the uploader's three captions and AARO's visual description describing no shape change (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007723",
-      "note": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the captions and the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR58, with the uploader's three captions and AARO's visual description describing no shape change (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

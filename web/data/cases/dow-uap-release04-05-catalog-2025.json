@@ -1,7 +1,10 @@
 {
   "id": "dow-uap-release04-05-catalog-2025",
   "num": 378,
-  "pursueReleases": [4, 5],
+  "pursueReleases": [
+    4,
+    5
+  ],
   "name": "Dieciocho partes más de CENTCOM, INDOPACOM y NORTHCOM sin caso propio",
   "name_en": "Eighteen more CENTCOM, INDOPACOM, and NORTHCOM reports with no case of their own",
   "year_start": 1996,
@@ -220,15 +223,8 @@
       "name": "DVIDS — 18 videos de Release 04-05 sin caso individual (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), catalogados en conjunto",
       "url": "https://www.dvidshub.net/video/1014100",
       "note": "18 videos embebidos en el visor de este caso; ver [[dow-centcom-2020]] para el equivalente de Release 01 y [[dow-uap-release02-catalog-2023]] para Release 02.",
-      "note_en": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — 18 videos from Release 04-05 with no individual case (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), catalogued together",
-      "url": "https://www.dvidshub.net/video/1014100",
-      "note": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02.",
-      "note_en": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02."
+      "note_en": "18 videos embedded in this case's viewer; see [[dow-centcom-2020]] for the Release 01 equivalent and [[dow-uap-release02-catalog-2023]] for Release 02.",
+      "name_en": "DVIDS — 18 videos from Release 04-05 with no individual case (CENTCOM, INDOPACOM, NORTHCOM, UAPTF), catalogued together"
     }
   ]
 }

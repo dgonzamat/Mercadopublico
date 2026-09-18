@@ -64,15 +64,8 @@
       "name": "DVIDS — 'Mt. Etna Object', con la evaluación de resolución completa de la AARO",
       "url": "https://www.dvidshub.net/video/944201",
       "note": "Video embebido en el visor de este caso; la ficha incluye el texto de resolución citado en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — 'Mt. Etna Object', with AARO's full resolution assessment",
-      "url": "https://www.dvidshub.net/video/944201",
-      "note": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the resolution text quoted in whatHappened.",
+      "name_en": "DVIDS — 'Mt. Etna Object', with AARO's full resolution assessment"
     }
   ]
 }

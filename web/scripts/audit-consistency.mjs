@@ -514,6 +514,33 @@ if (shortBodies.length > 0) {
   );
 }
 
+// ─── 9f-ter. RULE E37: `sources_en` no vuelve (ERROR) ─────────────────────
+//
+// 89 casos arrastraban un array paralelo `sources_en` que NADIE leía: no está
+// en `UAPCase`, ningún render lo consume, y `check-links.mjs` solo mira
+// `sources`. Dentro vivían **81 nombres de fuente traducidos** que jamás
+// llegaban a la página — el sitio inglés mostraba «metraje FLIR original de
+// CBP» y «9 septiembre 2026» a lectores anglófonos. Se migraron a
+// `sources[].name_en`, que el detalle sí renderiza, y el array se borró.
+//
+// La regla existe porque el modo de falla es silencioso en las dos
+// direcciones: un array paralelo nuevo no rompe nada (nadie lo lee) y por eso
+// puede vivir años, y mientras exista la traducción parece hecha cuando no se
+// publica. Misma familia que el resto de pares bilingües consumidos crudos.
+// (sep 2026)
+const conSourcesEn = cases.filter((c) => c.sources_en !== undefined);
+if (conSourcesEn.length > 0) {
+  for (const c of conSourcesEn) {
+    record(
+      "ERROR",
+      path.join(casesDir, `${c.id}.json`),
+      0,
+      `E37: «${c.id}» reintroduce \`sources_en\`, un array paralelo que ningún render consume. ` +
+        `El par inglés del nombre va en \`sources[].name_en\`, que el detalle sí publica.`,
+    );
+  }
+}
+
 // ─── 9f-bis. RULE E21: cobertura de visual (PDF/imagen) por caso (WARN) ───
 //
 // Estándar (jul 2026): todo caso debería embeber al menos UN asset visual

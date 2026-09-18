@@ -1,7 +1,9 @@
 {
   "id": "uso-formation-nonlinear-edit-2024",
   "num": 373,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "'Formación USO': ocho minutos, y el final del clip no va al final",
   "name_en": "'USO Formation': eight minutes, and the clip's ending isn't the ending",
   "year_start": 2024,
@@ -26,7 +28,10 @@
     "nohumano_abierto": 0.02,
     "indet": 0.44
   },
-  "patterns": ["8b", "8d"],
+  "patterns": [
+    "8b",
+    "8d"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -66,15 +71,8 @@
       "name": "DVIDS — DOW-UAP-PR052, título definido por el uploader, con descripción visual y advertencia de corte no lineal de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007708",
       "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual con marcas de tiempo citada en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR052, uploader-defined title, with AARO's visual description and non-linear cut warning (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007708",
-      "note": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR052, uploader-defined title, with AARO's visual description and non-linear cut warning (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

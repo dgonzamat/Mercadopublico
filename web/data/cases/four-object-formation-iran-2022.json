@@ -1,7 +1,9 @@
 {
   "id": "four-object-formation-iran-2022",
   "num": 369,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "Cuatro objetos cruzando el encuadre juntos, 20 segundos sobre el agua",
   "name_en": "Four objects crossing the frame together, 20 seconds over water",
   "year_start": 2022,
@@ -28,7 +30,10 @@
   },
   "summary": "Un clip de apenas 20 segundos circula con el título '4 UAP Formation Iran 26 Aug 2022 over water' — sugiriendo una formación de cuatro objetos frente a Irán. La AARO, sin embargo, solo evalúa como 'probable' que el metraje provenga de un sensor dentro del área de responsabilidad de CENTCOM en 2022, sin confirmar Irán como ubicación específica. La descripción visual oficial sí sostiene lo esencial del título: cuatro áreas de contraste cruzan el encuadre juntas en apenas tres segundos, seguidas de una quinta que entra por separado. Parte del lote de 50 videos de Release 02 (origen FOIA/red clasificada).",
   "summary_en": "A mere 20-second clip circulates under the title '4 UAP Formation Iran 26 Aug 2022 over water' — suggesting a four-object formation off Iran. AARO, however, only assesses as 'likely' that the footage comes from a sensor within CENTCOM's area of responsibility in 2022, without confirming Iran as the specific location. The official visual description does support the title's core claim: four areas of contrast cross the frame together within about three seconds, followed by a fifth entering separately. Part of the 50-video Release 02 batch (FOIA/classified-network origin).",
-  "patterns": ["8b", "8d"],
+  "patterns": [
+    "8b",
+    "8d"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -66,15 +71,8 @@
       "name": "DVIDS — DOW-UAP-PR050, título definido por el uploader, con evaluación de procedencia y descripción visual de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007706",
       "note": "Video embebido en el visor de este caso; la ficha incluye la evaluación de procedencia y la descripción visual citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR050, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007706",
-      "note": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR050, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

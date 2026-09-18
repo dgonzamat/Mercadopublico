@@ -64,21 +64,6 @@
       "url": "https://www.explorescu.org/"
     }
   ],
-  "sources_en": [
-    {
-      "name": "Arquivo Nacional Brasil — Operação Prato (declassified 2005-2010)",
-      "url": "https://www.gov.br/arquivonacional/pt-br",
-      "note": "The Arquivo Nacional migrated to the gov.br portal; the historical arquivonacional.gov.br URL has returned 404 since September 2026."
-    },
-    {
-      "name": "Pacaccini, D. — Operação Prato (documental, 2003)",
-      "note": "Primary journalistic reconstruction"
-    },
-    {
-      "name": "Stratton, K. & Powell, R. — Colares UAP Event (SCU 2022)",
-      "url": "https://www.explorescu.org/"
-    }
-  ],
   "documents": [
     {
       "src": "/pursue/colares-1977-context.jpg",

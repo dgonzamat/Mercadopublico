@@ -81,27 +81,15 @@
       "name": "war.gov/UFO — DOW-UAP-D25, Mission Report con formulario UAP, Grecia, enero 2024 (PURSUE Release 01)",
       "url": "https://www.war.gov/UFO/",
       "note": "Documento embebido en el visor de este caso.",
-      "note_en": "Document embedded in this case's viewer."
+      "note_en": "Document embedded in this case's viewer.",
+      "name_en": "war.gov/UFO — DOW-UAP-D25, Mission Report with UAP form, Greece, January 2024 (PURSUE Release 01)"
     },
     {
       "name": "DVIDS — DOW-UAP-PR28, grabación del sensor, Grecia, enero 2024 (PURSUE Release 01)",
       "url": "https://www.dvidshub.net/video/1006073",
       "note": "Mirror audiovisual oficial del DoD; el video va embebido en el visor de este caso.",
-      "note_en": "Official DoD audiovisual mirror; the video is embedded in this case's viewer."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "war.gov/UFO — DOW-UAP-D25, Mission Report with UAP form, Greece, January 2024 (PURSUE Release 01)",
-      "url": "https://www.war.gov/UFO/",
-      "note": "Document embedded in this case's viewer.",
-      "note_en": "Document embedded in this case's viewer."
-    },
-    {
-      "name": "DVIDS — DOW-UAP-PR28, sensor footage, Greece, January 2024 (PURSUE Release 01)",
-      "url": "https://www.dvidshub.net/video/1006073",
-      "note": "Official DoD audiovisual mirror; the video is embedded in this case's viewer.",
-      "note_en": "Official DoD audiovisual mirror; the video is embedded in this case's viewer."
+      "note_en": "Official DoD audiovisual mirror; the video is embedded in this case's viewer.",
+      "name_en": "DVIDS — DOW-UAP-PR28, sensor footage, Greece, January 2024 (PURSUE Release 01)"
     }
   ]
 }

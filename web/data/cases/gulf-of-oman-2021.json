@@ -122,27 +122,15 @@
       "name": "war.gov/UFO — DOW-UAP-D101, IIR de AFSOC sobre el Golfo de Omán (PURSUE Release 05)",
       "url": "https://www.war.gov/UFO/",
       "note": "Documento embebido en el visor de este caso.",
-      "note_en": "Document embedded in this case's viewer."
+      "note_en": "Document embedded in this case's viewer.",
+      "name_en": "war.gov/UFO — DOW-UAP-D101, AFSOC IIR on the Gulf of Oman (PURSUE Release 05)"
     },
     {
       "name": "DVIDS — DOW-UAP-PR117/PR118/PR119, grabaciones del sensor EO/IR del Golfo de Omán (PURSUE Release 05)",
       "url": "https://www.dvidshub.net/search?q=DOW-UAP&filter%5Btype%5D=video",
       "note": "Mirror audiovisual oficial del DoD; los tres clips van embebidos en el visor de este caso. war.gov aloja el IIR pero bloquea el framing, así que el video se sirve desde DVIDS.",
-      "note_en": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer. war.gov hosts the IIR but blocks framing, so the video is served from DVIDS."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "war.gov/UFO — DOW-UAP-D101, AFSOC IIR on the Gulf of Oman (PURSUE Release 05)",
-      "url": "https://www.war.gov/UFO/",
-      "note": "Document embedded in this case's viewer.",
-      "note_en": "Document embedded in this case's viewer."
-    },
-    {
-      "name": "DVIDS — DOW-UAP-PR117/PR118/PR119, Gulf of Oman EO/IR sensor footage (PURSUE Release 05)",
-      "url": "https://www.dvidshub.net/search?q=DOW-UAP&filter%5Btype%5D=video",
-      "note": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer.",
-      "note_en": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer."
+      "note_en": "Official DoD audiovisual mirror; all three clips are embedded in this case's viewer. war.gov hosts the IIR but blocks framing, so the video is served from DVIDS.",
+      "name_en": "DVIDS — DOW-UAP-PR117/PR118/PR119, Gulf of Oman EO/IR sensor footage (PURSUE Release 05)"
     }
   ]
 }

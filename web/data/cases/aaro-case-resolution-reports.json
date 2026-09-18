@@ -255,23 +255,13 @@
       "name": "DVIDS — serie 'UAP Case Resolution Reports' (PR-001 a PR-018) y expedientes relacionados, AARO/EUCOM/AFRICOM",
       "url": "https://www.dvidshub.net/search/?q=Anomaly+Resolution+Office&filter%5Btype%5D=video",
       "note": "Los 21 videos de la serie (18 numerados PR-001 a PR-018 + 3 adicionales) están embebidos en el visor de este caso; texto de evaluación de AARO citado de la ficha oficial de cada uno.",
-      "note_en": "All 21 videos in the series (18 numbered PR-001 through PR-018 + 3 additional) are embedded in this case's viewer; AARO assessment text quoted from each one's official record."
+      "note_en": "All 21 videos in the series (18 numbered PR-001 through PR-018 + 3 additional) are embedded in this case's viewer; AARO assessment text quoted from each one's official record.",
+      "name_en": "DVIDS — 'UAP Case Resolution Reports' series (PR-001 through PR-018) and related files, AARO/EUCOM/AFRICOM"
     },
     {
       "name": "AARO — UAP Case Resolution Reports (repositorio oficial)",
-      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/"
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — 'UAP Case Resolution Reports' series (PR-001 through PR-018) and related files, AARO/EUCOM/AFRICOM",
-      "url": "https://www.dvidshub.net/search/?q=Anomaly+Resolution+Office&filter%5Btype%5D=video",
-      "note": "All 21 videos in the series (18 numbered PR-001 through PR-018 + 3 additional) are embedded in this case's viewer; AARO assessment text quoted from each one's official record.",
-      "note_en": "All 21 videos in the series (18 numbered PR-001 through PR-018 + 3 additional) are embedded in this case's viewer; AARO assessment text quoted from each one's official record."
-    },
-    {
-      "name": "AARO — UAP Case Resolution Reports (official repository)",
-      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/"
+      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/",
+      "name_en": "AARO — UAP Case Resolution Reports (official repository)"
     }
   ]
 }

@@ -19,6 +19,11 @@ export interface Location {
 
 export interface CaseSource {
   name: string;
+  /** Par inglés del nombre. El sitio es inglés-primario y el detalle renderiza
+   *  `name_en ?? name`, así que una fuente sin par muestra su nombre español a
+   *  la ruta inglesa. Venía de un array paralelo `sources_en` que NADIE leía:
+   *  81 nombres traducidos existían en el dato y no llegaban a la página. */
+  name_en?: string;
   url?: string;
   note?: string;
   note_en?: string;

@@ -58,20 +58,6 @@
       "note_en": "Contemporary text with a similar narrative"
     }
   ],
-  "sources_en": [
-    {
-      "name": "FBI Vault — Hottel Memo",
-      "url": "https://vault.fbi.gov/hottel_guy/Guy%20Hottel%20Part%201%20of%201/view"
-    },
-    {
-      "name": "FBI clarification statement (2013)",
-      "url": "https://www.fbi.gov/news/stories/the-hottel-memo-roswell"
-    },
-    {
-      "name": "Scully, F. — Behind the Flying Saucers (1950)",
-      "note": "Contemporary text with a similar narrative"
-    }
-  ],
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/FBI_Hottel_Memo.jpg?width=600",
     "alt": "Memorándum de Guy Hottel del FBI, marzo de 1950.",

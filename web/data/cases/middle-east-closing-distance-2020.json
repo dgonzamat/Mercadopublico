@@ -1,7 +1,9 @@
 {
   "id": "middle-east-closing-distance-2020",
   "num": 372,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "El objeto no crecía: la plataforma se acercaba",
   "name_en": "The object wasn't growing: the platform was closing in",
   "year_start": 2020,
@@ -64,15 +66,8 @@
       "name": "DVIDS — DOW-UAP-PR45, con comentario técnico de la AARO sobre el cierre de distancia de la plataforma",
       "url": "https://www.dvidshub.net/video/1006105",
       "note": "Video embebido en el visor de este caso; la ficha incluye el 'AARO Comment' citado en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR45, with AARO's technical comment on the platform's closing distance",
-      "url": "https://www.dvidshub.net/video/1006105",
-      "note": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR45, with AARO's technical comment on the platform's closing distance"
     }
   ]
 }

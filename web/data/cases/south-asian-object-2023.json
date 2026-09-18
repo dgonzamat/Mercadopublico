@@ -75,23 +75,13 @@
       "name": "DVIDS — 'South Asian Object 1' y 'South Asian Object 2', con la evaluación oficial completa de AARO",
       "url": "https://www.dvidshub.net/video/880270",
       "note": "Ambos videos embebidos en el visor de este caso; la ficha de DVIDS incluye el texto de evaluación de AARO citado en este caso.",
-      "note_en": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case."
+      "note_en": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case.",
+      "name_en": "DVIDS — 'South Asian Object 1' and 'South Asian Object 2', with AARO's full official assessment"
     },
     {
       "name": "Mosul Orb (caso relacionado) — misma audiencia del Senado, 19 abr 2023",
-      "url": "https://uapcodex.org/cases/mosul-orb-2016/"
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — 'South Asian Object 1' and 'South Asian Object 2', with AARO's full official assessment",
-      "url": "https://www.dvidshub.net/video/880270",
-      "note": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case.",
-      "note_en": "Both videos embedded in this case's viewer; the DVIDS record includes the AARO assessment text quoted in this case."
-    },
-    {
-      "name": "Mosul Orb (related case) — same Senate hearing, Apr 19 2023",
-      "url": "https://uapcodex.org/cases/mosul-orb-2016/"
+      "url": "https://uapcodex.org/cases/mosul-orb-2016/",
+      "name_en": "Mosul Orb (related case) — same Senate hearing, Apr 19 2023"
     }
   ]
 }

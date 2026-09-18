@@ -1,7 +1,9 @@
 {
   "id": "dow-uap-release02-catalog-2023",
   "num": 377,
-  "pursueReleases": [2],
+  "pursueReleases": [
+    2
+  ],
   "name": "El resto del lote Reeves: 27 clips sin caso propio, catalogados igual",
   "name_en": "The rest of the Reeves batch: 27 clips with no case of their own, catalogued anyway",
   "year_start": 2018,
@@ -27,7 +29,9 @@
     "nohumano_abierto": 0.03,
     "indet": 0.36
   },
-  "patterns": ["8d"],
+  "patterns": [
+    "8d"
+  ],
   "category": "document",
   "documents": [
     {
@@ -301,15 +305,8 @@
       "name": "DVIDS — 27 videos del lote FOIA Reeves (PURSUE Release 02) sin caso individual, catalogados en conjunto",
       "url": "https://www.dvidshub.net/video/1007709",
       "note": "27 videos embebidos en el visor de este caso; ver [[reeves-foia-classified-network-2023]] para el contexto de procedencia completo.",
-      "note_en": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — 27 videos from the Reeves FOIA batch (PURSUE Release 02) with no individual case, catalogued together",
-      "url": "https://www.dvidshub.net/video/1007709",
-      "note": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context.",
-      "note_en": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context."
+      "note_en": "27 videos embedded in this case's viewer; see [[reeves-foia-classified-network-2023]] for full provenance context.",
+      "name_en": "DVIDS — 27 videos from the Reeves FOIA batch (PURSUE Release 02) with no individual case, catalogued together"
     }
   ]
 }
