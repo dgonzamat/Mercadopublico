@@ -531,11 +531,47 @@ const hasVisualAsset = (c) =>
   (c.primaryDocument && (c.primaryDocument.url || c.primaryDocument.href)) ||
   (c.featuredDoc && c.featuredDoc.url);
 
+// Casos cuyo hueco de visual está CERRADO POR LICENCIA, no por falta de
+// búsqueda: `docs/registros.md` documenta el barrido agotado (Commons +
+// archive.org + Openverse/Flickr) caso por caso. Sin esta distinción, E21
+// repetía en cada build un backlog con ~9 entradas sobre las que nadie puede
+// actuar, y una sonda que pide todos los días algo imposible se acaba
+// silenciando igual que una incorrecta — la lección que ya costó las 82 issues
+// del gate de link rot, aquí en la capa de medición en vez de la de aviso.
+// Mismo patrón que NOT_DEAD en check-links.mjs: separar «no lo tenemos» de
+// «no se puede tener». (sep 2026)
+const VISUAL_CERRADO_POR_LICENCIA = {
+  "ariel-school-1994": "artefactos con copyright (dibujos, footage BBC 1994); sin contextual libre no engañosa",
+  "aaro-historical-record-2024": "meta/institucional; el PDF de AARO da 403 y no está en archive.org",
+  "pursue-r03-2026": "meta/institucional; sin documento de incidente único que no sea forzarlo",
+  "uap-governance-board-2026": "meta/institucional; sin documento de incidente único",
+  "bosque-chile-2010": "Commons seco; sin imagen libre del incidente",
+  "byelokoroviche-1982": "Commons seco; sin imagen libre del incidente",
+  "delphos-ring-1971": "Commons seco; sin imagen libre del incidente",
+  "mystery-drones-east-coast-2024": "sin imagen libre; archive.org/wargovUFO sin hits",
+  "val-johnson-1979": "solo una reconstrucción amateur y un doc CIA ajeno — ambos engañosos",
+};
+
+// Guard: la exención no puede volverse un desván. Si un caso exento consiguió
+// visual (o desapareció), su entrada quedó rancia y hay que sacarla del mapa
+// —si no, la lista esconde progreso real y se pudre como se pudrió la
+// recomendación de `nationalarchives.gov.uk`—.
+const idsVivos = new Set(cases.map((c) => c.id));
+for (const [id, motivo] of Object.entries(VISUAL_CERRADO_POR_LICENCIA)) {
+  if (!idsVivos.has(id)) {
+    record("WARN", casesDir, 0, `E21 exención rancia: «${id}» está en VISUAL_CERRADO_POR_LICENCIA pero el caso ya no existe. Sacarlo del mapa.`);
+  } else if (hasVisualAsset(cases.find((c) => c.id === id))) {
+    record("WARN", casesDir, 0, `E21 exención rancia: «${id}» ya tiene visual pero sigue exento por «${motivo}». Sacarlo del mapa para que el backlog no esconda el progreso.`);
+  }
+}
+
 const noVisual = cases.filter((c) => !hasVisualAsset(c));
-if (noVisual.length > 0) {
+const accionables = noVisual.filter((c) => !VISUAL_CERRADO_POR_LICENCIA[c.id]);
+const cerrados = noVisual.length - accionables.length;
+if (accionables.length > 0) {
   const byTier = { S: 0, A: 0, B: 0 };
-  for (const c of noVisual) byTier[c.tier] = (byTier[c.tier] || 0) + 1;
-  const sampleS = noVisual
+  for (const c of accionables) byTier[c.tier] = (byTier[c.tier] || 0) + 1;
+  const sampleS = accionables
     .filter((c) => c.tier === "S")
     .slice(0, 12)
     .map((c) => `${c.id}`)
@@ -544,8 +580,9 @@ if (noVisual.length > 0) {
     "WARN",
     casesDir,
     0,
-    `E21 visual: ${noVisual.length}/${cases.length} casos sin PDF ni imagen ` +
-      `(ni documents[] ni primaryDocument ni featuredDoc). Backlog por tier: ` +
+    `E21 visual: ${accionables.length}/${cases.length} casos sin PDF ni imagen y ACCIONABLES ` +
+      `(ni documents[] ni primaryDocument ni featuredDoc), más ${cerrados} cerrados por licencia ` +
+      `según docs/registros.md. Backlog accionable por tier: ` +
       `S×${byTier.S} A×${byTier.A} B×${byTier.B}. Rehostear en /pursue o el ` +
       `bucket (war.gov bloquea el embed), prioridad S→A→B. Tier S pendientes: ${sampleS || "—"}`,
   );
