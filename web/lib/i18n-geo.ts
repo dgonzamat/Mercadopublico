@@ -46,6 +46,7 @@ const COUNTRY_EN: Record<string, string> = {
   Kazajistán: "Kazakhstan",
   Marruecos: "Morocco",
   "Multi-país (Persian Gulf)": "Multi-country (Persian Gulf)",
+  "Multi-país (Oriente Medio)": "Multi-country (Middle East)",
   México: "Mexico",
   Noruega: "Norway",
   "Nueva Zelanda": "New Zealand",
