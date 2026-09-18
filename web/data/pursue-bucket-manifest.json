@@ -1,5 +1,5 @@
 {
-  "_comment": "Manifiesto de objetos en el bucket Supabase Storage `pursue` (proyecto uap-codex). Verdad de qué archivos existen en el bucket, para que la regla E20 de audit-consistency.mjs valide OFFLINE que todo documento que referencia el bucket (src = .../storage/v1/object/public/pursue/<name>) tenga su objeto — el build no puede consultar supabase.co (allowlist). La sonda viva diaria (Routine CCR) mantiene este manifiesto honesto contra storage.objects; si driftea, avisa. Regenerar con: select name from storage.objects where bucket_id='pursue' order by name.",
+  "_comment": "Manifiesto de objetos en el bucket Supabase Storage `pursue` (proyecto uap-codex). Verdad de qué archivos existen en el bucket, para que la regla E20 de audit-consistency.mjs valide OFFLINE que todo documento que referencia el bucket (src = .../storage/v1/object/public/pursue/<name>) tenga su objeto — el build no puede consultar supabase.co (allowlist). La sonda viva diaria (Routine CCR) mantiene este manifiesto honesto contra storage.objects; si driftea, avisa. Regenerar con: select name from storage.objects where bucket_id='pursue' order by name. El bloque `totals` lo consume la regla E38 (presupuesto de almacenamiento): sin él la sonda no puede medir cuánto queda del gigabyte del plan free y lo dice en vez de dar un verde falso. Regenerarlo con: select count(*), sum((metadata->>'size')::bigint), max((metadata->>'size')::bigint) from storage.objects where bucket_id='pursue'.",
   "bucket": "pursue",
   "generated_note": "24 objetos · ~866 MB · verificado contra storage.objects 2026-07-14",
   "objects": [
@@ -27,5 +27,11 @@
     "65_hs1-834228961_62-hq-83894_section_8__part6of6.pdf",
     "65_hs1-834228961_62-hq-83894_section_9.pdf",
     "65_hs1-834228961_62-hq-83894_sub_a.pdf"
-  ]
+  ],
+  "totals": {
+    "count": 24,
+    "bytes": 908127519,
+    "largest_bytes": 52058639,
+    "measured_at": "2026-09-18"
+  }
 }

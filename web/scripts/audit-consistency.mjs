@@ -1624,6 +1624,103 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9v. RULE E38: presupuesto de almacenamiento (WARN / ERROR) ──────────
+//
+// Los dos destinos de los documentos primarios tienen techo duro y nadie los
+// vigilaba:
+//
+//   · `public/` viaja al sitio publicado, y GitHub Pages rechaza un sitio de
+//     más de 1 GB. El fallo llega en el deploy, no en el build, así que la
+//     primera señal sería el sitio caído.
+//   · el bucket Supabase `pursue` vive en el plan free: 1 GB de almacenamiento
+//     y 50 MB por objeto. Al llenarse, la subida falla y el documento se queda
+//     sin alojar — pero ningún gate lo notaría hasta intentarlo.
+//
+// Los dos son directorios de solo-crecer: los assets son el corpus, no se
+// borran. Por eso el umbral de aviso está en el 75% y no en el 95%: a esa
+// altura todavía hay margen para decidir (extracto en vez de documento
+// completo, o texto en vez de escaneo); en el 95% ya no.
+//
+// El bucket no se puede medir desde aquí —el build no alcanza supabase.co por
+// la allowlist, que es la razón de que exista el manifiesto— así que E38 lee
+// el bloque `totals` de data/pursue-bucket-manifest.json. Si falta, la sonda
+// lo DICE en vez de callar: un presupuesto que no se puede medir no es un
+// presupuesto verde. (sep 2026)
+{
+  const BUDGET_CAP = 1_000_000_000; // 1 GB, la lectura estricta del tope de Pages y del plan free
+  const WARN_AT = 0.75;
+  const ERROR_AT = 0.95;
+  const SUPA_FILE_CAP = 52_428_800; // 50 MiB por objeto en el plan free — MiB, no MB: con el tope decimal
+                                    // un objeto de 49,65 MiB daba ERROR falso y rompía el build (cazado al
+                                    // correr la sonda recién escrita, sep 2026)
+  const mb = (n) => `${(n / 1e6).toFixed(1)} MB`;
+  const pct = (n) => `${((100 * n) / BUDGET_CAP).toFixed(1)}%`;
+
+  // ── public/ → sitio publicado en GitHub Pages
+  const publicDir = path.join(root, "public");
+  if (fs.existsSync(publicDir)) {
+    let bytes = 0;
+    let count = 0;
+    let largest = { name: "", size: 0 };
+    const stack = [publicDir];
+    while (stack.length) {
+      const dir = stack.pop();
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, entry.name);
+        if (entry.isDirectory()) stack.push(full);
+        else if (entry.isFile()) {
+          const size = fs.statSync(full).size;
+          bytes += size;
+          count += 1;
+          if (size > largest.size) largest = { name: path.relative(publicDir, full), size };
+        }
+      }
+    }
+    const detail =
+      `${mb(bytes)} en ${count} ficheros (${pct(bytes)} del gigabyte que GitHub Pages admite por sitio publicado). ` +
+      `El mayor es ${largest.name} con ${mb(largest.size)}` +
+      (largest.size > SUPA_FILE_CAP
+        ? ` — por encima de los 50 MB del bucket, así que ese no tiene escapatoria: no se puede mover.`
+        : `.`) +
+      ` Y esto es un SUELO: el sitio construido suma además el HTML y los chunks.`;
+    if (bytes >= BUDGET_CAP * ERROR_AT)
+      record("ERROR", "public", 0, `E38 presupuesto: public/ ocupa ${detail} Al ${pct(bytes)} el siguiente asset tumba el deploy, y el fallo llega en Pages, no aquí.`);
+    else if (bytes >= BUDGET_CAP * WARN_AT)
+      record("WARN", "public", 0, `E38 presupuesto: public/ ocupa ${detail} Es un directorio de solo-crecer: antes de sumar otro documento entero, considera un extracto de las páginas que la ficha cita.`);
+  }
+
+  // ── bucket Supabase `pursue` → medido offline vía el manifiesto
+  const manifestPath = path.join(root, "data", "pursue-bucket-manifest.json");
+  if (fs.existsSync(manifestPath)) {
+    let manifest = null;
+    try {
+      manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
+    } catch {
+      /* E20 ya reporta el manifiesto ilegible */
+    }
+    if (manifest) {
+      const t = manifest.totals;
+      if (!t || typeof t.bytes !== "number") {
+        record(
+          "WARN",
+          "data/pursue-bucket-manifest.json",
+          0,
+          "E38 presupuesto: el manifiesto no trae bloque `totals` con `bytes`, así que el ocupado del bucket no se puede medir offline y esta sonda NO está verde, está ciega. Regenerar con: select count(*), sum((metadata->>'size')::bigint), max((metadata->>'size')::bigint) from storage.objects where bucket_id='pursue'.",
+        );
+      } else {
+        const detail =
+          `${mb(t.bytes)} en ${t.count ?? "?"} objetos (${pct(t.bytes)} del gigabyte del plan free), medido el ${t.measured_at ?? "?"}`;
+        if (t.bytes >= BUDGET_CAP * ERROR_AT)
+          record("ERROR", "data/pursue-bucket-manifest.json", 0, `E38 presupuesto: el bucket \`pursue\` ocupa ${detail}. La próxima subida va a fallar; hace falta subir de plan o dejar de alojar documentos completos ahí.`);
+        else if (t.bytes >= BUDGET_CAP * WARN_AT)
+          record("WARN", "data/pursue-bucket-manifest.json", 0, `E38 presupuesto: el bucket \`pursue\` ocupa ${detail}. Es la vía de escape para lo que no cabe en /pursue, y se está quedando sin sitio.`);
+        if (typeof t.largest_bytes === "number" && t.largest_bytes > SUPA_FILE_CAP)
+          record("WARN", "data/pursue-bucket-manifest.json", 0, `E38 presupuesto: el manifiesto declara un objeto de ${mb(t.largest_bytes)}, por encima de los 50 MiB que esta sonda asume como tope por fichero del plan free. Si el objeto existe, subió: o el dato está mal, o el tope no es el que la regla supone — revísalo antes de fiarte del margen.`);
+      }
+    }
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
