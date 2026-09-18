@@ -50,7 +50,9 @@
   "sources": [
     {
       "name": "Arquivo Nacional Brasil — Operação Prato (declassified 2005-2010)",
-      "url": "https://www.arquivonacional.gov.br/"
+      "url": "https://www.gov.br/arquivonacional/pt-br",
+      "note": "El Arquivo Nacional migró al portal gov.br; la URL histórica arquivonacional.gov.br devuelve 404 desde sep 2026.",
+      "note_en": "The Arquivo Nacional migrated to the gov.br portal; the historical arquivonacional.gov.br URL has returned 404 since September 2026."
     },
     {
       "name": "Pacaccini, D. — Operação Prato (documental, 2003)",
@@ -65,7 +67,8 @@
   "sources_en": [
     {
       "name": "Arquivo Nacional Brasil — Operação Prato (declassified 2005-2010)",
-      "url": "https://www.arquivonacional.gov.br/"
+      "url": "https://www.gov.br/arquivonacional/pt-br",
+      "note": "The Arquivo Nacional migrated to the gov.br portal; the historical arquivonacional.gov.br URL has returned 404 since September 2026."
     },
     {
       "name": "Pacaccini, D. — Operação Prato (documental, 2003)",

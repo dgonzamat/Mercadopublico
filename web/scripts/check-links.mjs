@@ -92,8 +92,16 @@ async function probe(url) {
   };
   try {
     let r = await tryFetch("HEAD");
-    if (r.status === 405 || r.status === 403 || r.status === 501) {
-      r = await tryFetch("GET"); // algunos servidores rechazan HEAD
+    // Reintento con GET. Además de los servidores que rechazan HEAD de plano
+    // (405/501) o lo tratan como bot (403), se reintenta en 404 porque un
+    // "no existe" respondido solo a HEAD es falso con más frecuencia de la que
+    // parece: gob.mx/cenapred y gob.mx/sedena daban HEAD 404 y GET 200, y el
+    // gate los reportó como rotos en el issue #746 (verificado sep 2026). El
+    // costo es una petición extra por URL que HEADea 404 —unas 40 de 717—, y
+    // sin esto el gate acusa de muertas a páginas vivas, que es el modo de
+    // falla caro: manda a reescribir una cita que estaba bien.
+    if ([405, 403, 501, 404].includes(r.status)) {
+      r = await tryFetch("GET");
     }
     return r;
   } catch (e) {
@@ -103,7 +111,7 @@ async function probe(url) {
 
 // ─── Concurrencia limitada ───────────────────────────────────────────────
 const CONCURRENCY = 8;
-const hardDead = []; // {url, status, origins} — 4xx/5xx: rotura real del recurso
+const hardDead = []; // {url, status, origins} — 4xx accionable: rotura real del recurso
 const transient = []; // {url, error, origins} — timeout / dominio caído: puede ser pasajero
 const dubious = []; // {url, status, origins} — ver NOT_DEAD: no son link rot
 
@@ -117,6 +125,18 @@ const dubious = []; // {url, status, origins} — ver NOT_DEAD: no son link rot
 // excluye el anti-bot. Medido en el issue #746: de 7 "roturas nuevas", una era
 // 406 y otra 401.
 const NOT_DEAD = new Set([401, 403, 406, 429]);
+
+// Y TODO el rango 5xx, por la misma razón generalizada (sep 2026). Un 5xx es el
+// servidor declarando que no puede servir AHORA; nunca es una afirmación sobre
+// la existencia del recurso, así que no hay nada que reescribir: la URL está
+// bien y el servidor está enfermo. Entraban como rotura dura y un WAF podía
+// inundar el gate de golpe: el issue #746 listó 15 "roturas nuevas" de las
+// cuales 10 eran ufocasebook.com con 503 — un solo dominio detrás del captcha
+// de SiteGround (`sg-captcha: challenge`, redirect a /.well-known/sgcaptcha/),
+// o sea la familia del 403 disfrazada de 5xx. Diez documentos no desaparecen la
+// misma semana. Es la tercera vez que se amplía esta lista (403/429 → 401/406 →
+// 5xx) siempre por el mismo error, así que aquí va por rango y no por código.
+const isNotDead = (status) => NOT_DEAD.has(status) || status >= 500;
 const alive = new Set();
 let done = 0;
 
@@ -128,9 +148,9 @@ async function worker(queue) {
     const origins = [...urls.get(url)];
     if (r.status === 0) {
       transient.push({ url, error: r.error, origins });
-    } else if (r.status >= 400 && !NOT_DEAD.has(r.status)) {
+    } else if (r.status >= 400 && !isNotDead(r.status)) {
       hardDead.push({ url, status: r.status, origins });
-    } else if (NOT_DEAD.has(r.status)) {
+    } else if (isNotDead(r.status)) {
       dubious.push({ url, status: r.status, origins });
     } else {
       alive.add(url);
@@ -152,7 +172,7 @@ const fmt = (d) =>
 
 console.log("");
 if (hardDead.length) {
-  console.log(`🔴 ${hardDead.length} fuentes muertas (4xx/5xx):`);
+  console.log(`🔴 ${hardDead.length} fuentes muertas (4xx accionable):`);
   for (const d of hardDead) console.log("   ✗ " + fmt(d));
 } else {
   console.log("✅ Sin fuentes muertas.");
@@ -167,7 +187,7 @@ if (transient.length) {
 if (dubious.length) {
   console.log("");
   console.log(
-    `🟡 ${dubious.length} dudosas (401/403/406/429 — muro de pago o bloqueo de bot, probablemente vivas; revisar a mano):`,
+    `🟡 ${dubious.length} dudosas (401/403/406/429 y 5xx — muro de pago, bloqueo de bot o servidor caído; probablemente vivas, revisar a mano):`,
   );
   for (const d of dubious.slice(0, 40)) console.log("   ? " + fmt(d));
   if (dubious.length > 40) console.log(`   … y ${dubious.length - 40} más`);
