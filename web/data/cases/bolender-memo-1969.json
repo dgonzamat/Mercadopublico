@@ -59,20 +59,6 @@
       "note_en": "Communications Instructions Reporting Vital Intelligence Sightings"
     }
   ],
-  "sources_en": [
-    {
-      "name": "Bolender Memo USAF (declassified)",
-      "url": "https://documents2.theblackvault.com/documents/ufos/bolendermemo.pdf"
-    },
-    {
-      "name": "JANAP 146 — Joint Army-Navy-Air Force Publication",
-      "url": "https://www.jcs.mil/Library/CJCS-Manuals/"
-    },
-    {
-      "name": "Air Force Manual 55-11 (CIRVIS)",
-      "note": "Communications Instructions Reporting Vital Intelligence Sightings"
-    }
-  ],
   "documents": [
     {
       "src": "/pursue/bolender-memo-1969-context.jpg",

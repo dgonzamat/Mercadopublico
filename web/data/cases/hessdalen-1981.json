@@ -52,20 +52,6 @@
       "note_en": "Annual proceedings 2010-2024"
     }
   ],
-  "sources_en": [
-    {
-      "name": "Project Hessdalen — official site (Østfold University)",
-      "url": "https://www.hessdalen.org/"
-    },
-    {
-      "name": "Teodorani, M. — 'A Long-Term Scientific Survey' JSE 2004",
-      "url": "https://www.scientificexploration.org/"
-    },
-    {
-      "name": "EuroSky Workshop proceedings — Hessdalen sessions",
-      "note": "Annual proceedings 2010-2024"
-    }
-  ],
   "posterior": {
     "mundano_natural": 0.7,
     "humana_clasificada": 0.02,

@@ -1,7 +1,9 @@
 {
   "id": "eastern-us-metallic-reflective-2020",
   "num": 371,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "'Pequeño, metálico, con parte inferior reflectante': el debrief que el video no logra sostener",
   "name_en": "'Small, metallic, with a reflective underside': the debrief the video can't quite support",
   "year_start": 2020,
@@ -66,15 +68,8 @@
       "name": "DVIDS — DOW-UAP-PR106, con el debrief DOW-UAP-D089 citado por la AARO (PURSUE Release 04)",
       "url": "https://www.dvidshub.net/video/1014104",
       "note": "Video embebido en el visor de este caso; la ficha incluye la cita del debrief y la descripción visual citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR106, with the DOW-UAP-D089 debrief quoted by AARO (PURSUE Release 04)",
-      "url": "https://www.dvidshub.net/video/1014104",
-      "note": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR106, with the DOW-UAP-D089 debrief quoted by AARO (PURSUE Release 04)"
     }
   ]
 }

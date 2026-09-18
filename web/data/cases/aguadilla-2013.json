@@ -54,13 +54,15 @@
       "name": "DVIDS — 'Puerto Rico Objects', metraje FLIR original de CBP",
       "url": "https://www.dvidshub.net/video/944204",
       "note": "Video embebido en el visor de este caso; el mismo material filtrado en 2015, ahora con mirror oficial.",
-      "note_en": "Video embedded in this case's viewer; the same material leaked in 2015, now with an official mirror."
+      "note_en": "Video embedded in this case's viewer; the same material leaked in 2015, now with an official mirror.",
+      "name_en": "DVIDS — 'Puerto Rico Objects', original CBP FLIR footage"
     },
     {
       "name": "DVIDS — reconstrucción digital de trayectoria (Systems Toolkit)",
       "url": "https://www.dvidshub.net/video/955936",
       "note": "Video embebido en el visor de este caso; sostiene la resolución de la AARO.",
-      "note_en": "Video embedded in this case's viewer; supports AARO's resolution."
+      "note_en": "Video embedded in this case's viewer; supports AARO's resolution.",
+      "name_en": "DVIDS — digital trajectory reconstruction (Systems Toolkit)"
     },
     {
       "name": "US Customs and Border Protection FLIR — video archive",
@@ -77,30 +79,6 @@
       "url": "https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Puerto_Rico_UAP_Case_Resolution.pdf",
       "note": "Posición institucional vigente: dos objetos pequeños derivando a velocidad del viento, velocidad aparente por paralaje de movimiento y sin desempeño transmedio segun la reconstruccion de trayectorias.",
       "note_en": "Standing institutional position: two small objects drifting at wind speed, apparent velocity explained by motion parallax, and no transmedium performance per the trajectory reconstruction."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "Powell, R. et al. — '2013 Aguadilla Puerto Rico UAP' (SCU 2018)",
-      "url": "https://www.explorescu.org/"
-    },
-    {
-      "name": "DVIDS — 'Puerto Rico Objects', original CBP FLIR footage",
-      "url": "https://www.dvidshub.net/video/944204",
-      "note": "Video embedded in this case's viewer; the same material leaked in 2015, now with an official mirror."
-    },
-    {
-      "name": "DVIDS — digital trajectory reconstruction (Systems Toolkit)",
-      "url": "https://www.dvidshub.net/video/955936",
-      "note": "Video embedded in this case's viewer; supports AARO's resolution."
-    },
-    {
-      "name": "US Customs and Border Protection FLIR — video archive",
-      "note": "Primary material leaked in 2015"
-    },
-    {
-      "name": "Knuth, K. — JSE 2019 'Estimating Flight Characteristics of UAP'",
-      "note": "Complementary physical analysis"
     }
   ],
   "documents": [

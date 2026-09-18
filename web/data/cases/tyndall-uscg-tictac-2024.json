@@ -83,27 +83,15 @@
       "name": "DVIDS — DOW-UAP-PR066, título definido por el uploader, con evaluación de procedencia de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007778",
       "note": "Video embebido en el visor de este caso; la ficha incluye la evaluación de procedencia y la descripción visual con marcas de tiempo citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the timestamped visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the timestamped visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR066, uploader-defined title, with AARO's provenance assessment (Reeves FOIA batch, PURSUE Release 02)"
     },
     {
       "name": "DVIDS — DOW-UAP-PR065, título definido por el uploader, con evaluación de procedencia de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007777",
       "note": "Segundo clip del mismo lote, también embebido.",
-      "note_en": "Second clip from the same batch, also embedded."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR066, uploader-defined title, with AARO's provenance assessment (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007778",
-      "note": "Video embedded in this case's viewer; the record includes the provenance assessment and the timestamped visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the timestamped visual description quoted in whatHappened."
-    },
-    {
-      "name": "DVIDS — DOW-UAP-PR065, uploader-defined title, with AARO's provenance assessment (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007777",
-      "note": "Second clip from the same batch, also embedded.",
-      "note_en": "Second clip from the same batch, also embedded."
+      "note_en": "Second clip from the same batch, also embedded.",
+      "name_en": "DVIDS — DOW-UAP-PR065, uploader-defined title, with AARO's provenance assessment (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

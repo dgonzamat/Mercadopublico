@@ -1,7 +1,9 @@
 {
   "id": "atlantic-ocean-balloon-2020",
   "num": 358,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "'Un globo grande y algo deformado': el propio observador identifica el objeto",
   "name_en": "'A large, somewhat deformed balloon': the observer identifies the object himself",
   "year_start": 2020,
@@ -66,15 +68,8 @@
       "name": "DVIDS — DOW-UAP-PR116, con el debrief DOW-UAP-D091 citado por la AARO (PURSUE Release 04)",
       "url": "https://www.dvidshub.net/video/1014124",
       "note": "Video embebido en el visor de este caso; la ficha incluye la cita completa del debrief y la descripción visual citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR116, with the DOW-UAP-D091 debrief quoted by AARO (PURSUE Release 04)",
-      "url": "https://www.dvidshub.net/video/1014124",
-      "note": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR116, with the DOW-UAP-D091 debrief quoted by AARO (PURSUE Release 04)"
     }
   ]
 }

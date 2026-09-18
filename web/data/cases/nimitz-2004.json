@@ -46,7 +46,8 @@
       "name": "DVIDS — video oficial 'FLIR1' (mirror del Pentágono)",
       "url": "https://www.dvidshub.net/video/955825",
       "note": "Video embebido en el visor de este caso.",
-      "note_en": "Video embedded in this case's viewer."
+      "note_en": "Video embedded in this case's viewer.",
+      "name_en": "DVIDS — official 'FLIR1' video (Pentagon mirror)"
     },
     {
       "name": "Powell, Reid, Stratton et al. — Tic Tac UAP Executive Report (TTSA 2019)",
@@ -65,36 +66,8 @@
       "name": "Coulthart vs. Fravor — disputa sobre la atribución del Tic-Tac (2026)",
       "url": "https://medium.com/@Cristina_Gomez/journalist-reveals-tic-tac-ufo-is-actually-lockheed-martin-technology-and-the-pentagon-doesnt-09b5ddfa0703",
       "note": "Afirmación periodística (programa Lockheed Martin) y rechazo público de Fravor; fuente de una sola línea, contestada, sin documentación primaria.",
-      "note_en": "Journalistic claim (Lockheed Martin program) and Fravor's public rejection; a single-line, contested source with no primary documentation."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "Pentagon Official Statement on UAP Videos (abril 2020)",
-      "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
-    },
-    {
-      "name": "DVIDS — official 'FLIR1' video (Pentagon mirror)",
-      "url": "https://www.dvidshub.net/video/955825",
-      "note": "Video embedded in this case's viewer.",
-      "note_en": "Video embedded in this case's viewer."
-    },
-    {
-      "name": "Powell, Reid, Stratton et al. — Tic Tac UAP Executive Report (TTSA 2019)",
-      "note": "Complete engineering reconstruction"
-    },
-    {
-      "name": "House Oversight UAP Hearing — Fravor testimony (julio 2023)",
-      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
-    },
-    {
-      "name": "Kean, L. — NYT 'Glowing Auras and Black Money' (dic 2017)",
-      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
-    },
-    {
-      "name": "Coulthart vs. Fravor — dispute over Tic-Tac attribution (2026)",
-      "url": "https://medium.com/@Cristina_Gomez/journalist-reveals-tic-tac-ufo-is-actually-lockheed-martin-technology-and-the-pentagon-doesnt-09b5ddfa0703",
-      "note": "Journalistic claim (Lockheed Martin program) and Fravor public rejection; single-source, contested, no primary documentation."
+      "note_en": "Journalistic claim (Lockheed Martin program) and Fravor's public rejection; a single-line, contested source with no primary documentation.",
+      "name_en": "Coulthart vs. Fravor — dispute over Tic-Tac attribution (2026)"
     }
   ],
   "posterior": {

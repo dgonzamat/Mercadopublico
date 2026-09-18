@@ -1,7 +1,9 @@
 {
   "id": "pacific-ocean-uaptf-lights-2019",
   "num": 375,
-  "pursueReleases": [5],
+  "pursueReleases": [
+    5
+  ],
   "name": "Cinco grabaciones, un mismo evento: luces sobre el Pacífico documentadas por la UAPTF",
   "name_en": "Five recordings, one event: lights over the Pacific documented by the UAPTF",
   "year_start": 2019,
@@ -26,7 +28,9 @@
     "nohumano_abierto": 0.1,
     "indet": 0.34
   },
-  "patterns": ["8b"],
+  "patterns": [
+    "8b"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -102,15 +106,8 @@
       "name": "DVIDS — DOW-UAP-PR123 a PR127, cinco grabaciones contemporáneas del mismo evento, transferidas por la UAPTF de la Armada a la AARO en 2022",
       "url": "https://www.dvidshub.net/video/1017805",
       "note": "Cinco videos embebidos en el visor de este caso (PR123-PR127); las fichas incluyen las descripciones visuales citadas en whatHappened.",
-      "note_en": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR123 through PR127, five contemporaneous recordings of the same event, transferred by the Navy's UAPTF to AARO in 2022",
-      "url": "https://www.dvidshub.net/video/1017805",
-      "note": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened.",
-      "note_en": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened."
+      "note_en": "Five videos embedded in this case's viewer (PR123-PR127); the records include the visual descriptions quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR123 through PR127, five contemporaneous recordings of the same event, transferred by the Navy's UAPTF to AARO in 2022"
     }
   ]
 }

@@ -1,7 +1,9 @@
 {
   "id": "football-shaped-projections-2024",
   "num": 361,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Un cuerpo ovalado con tres proyecciones radiales, visto 9 segundos",
   "name_en": "An oval body with three radial projections, seen for 9 seconds",
   "year_start": 2024,
@@ -64,15 +66,8 @@
       "name": "DVIDS — DOW-UAP-PR46, con la descripción visual oficial de la AARO (PURSUE Release 01)",
       "url": "https://www.dvidshub.net/video/1006106",
       "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual citada en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR46, with AARO's official visual description (PURSUE Release 01)",
-      "url": "https://www.dvidshub.net/video/1006106",
-      "note": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR46, with AARO's official visual description (PURSUE Release 01)"
     }
   ]
 }

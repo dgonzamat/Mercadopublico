@@ -60,30 +60,18 @@
       "name": "Biblioteca Virtual de Defensa — Expediente OVNI, avistamiento en la base aérea de Talavera la Real (Ejército del Aire, desclasificado)",
       "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395902",
       "note": "Fuente primaria: el expediente oficial desclasificado por el Ministerio de Defensa.",
-      "note_en": "Primary source: the official file declassified by the Ministry of Defence."
+      "note_en": "Primary source: the official file declassified by the Ministry of Defence.",
+      "name_en": "Virtual Library of Defense — UFO file, sighting at Talavera la Real air base (Spanish Air Force, declassified)"
     },
     {
       "name": "Extremadura Misteriosa — «El Hombre Verde de Talavera la Real»",
-      "url": "https://www.extremaduramisteriosa.com/el-hombre-verde-de-talavera-la-real"
+      "url": "https://www.extremaduramisteriosa.com/el-hombre-verde-de-talavera-la-real",
+      "name_en": "Extremadura Misteriosa — 'El Hombre Verde de Talavera la Real'"
     },
     {
       "name": "Planvex — «José Manuel Trejo, principal testigo del caso OVNI de Talavera la Real» (2017)",
-      "url": "https://planvex.es/web/2017/08/humanoide-talavera-la-real/"
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "Virtual Library of Defense — UFO file, sighting at Talavera la Real air base (Spanish Air Force, declassified)",
-      "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395902",
-      "note": "Primary source: the official file declassified by the Ministry of Defense."
-    },
-    {
-      "name": "Extremadura Misteriosa — 'El Hombre Verde de Talavera la Real'",
-      "url": "https://www.extremaduramisteriosa.com/el-hombre-verde-de-talavera-la-real"
-    },
-    {
-      "name": "Planvex — 'José Manuel Trejo, principal testigo del caso OVNI de Talavera la Real' (2017)",
-      "url": "https://planvex.es/web/2017/08/humanoide-talavera-la-real/"
+      "url": "https://planvex.es/web/2017/08/humanoide-talavera-la-real/",
+      "name_en": "Planvex — 'José Manuel Trejo, principal testigo del caso OVNI de Talavera la Real' (2017)"
     }
   ],
   "documents": [

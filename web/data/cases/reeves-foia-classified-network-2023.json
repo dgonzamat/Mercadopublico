@@ -70,15 +70,8 @@
       "name": "DVIDS — video localizado vía solicitud FOIA de Reeves, con advertencia oficial de cadena de custodia no acreditada",
       "url": "https://www.dvidshub.net/video/1007780",
       "note": "Video embebido en el visor de este caso; la ficha oficial incluye la descripción cronometrada y la advertencia de AARO citadas.",
-      "note_en": "Video embedded in this case's viewer; the official record includes the timestamped description and AARO warning quoted here."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — video located via Reeves FOIA request, with official chain-of-custody warning",
-      "url": "https://www.dvidshub.net/video/1007780",
-      "note": "Video embedded in this case's viewer; the official record includes the timestamped description and AARO warning quoted here.",
-      "note_en": "Video embedded in this case's viewer; the official record includes the timestamped description and AARO warning quoted here."
+      "note_en": "Video embedded in this case's viewer; the official record includes the timestamped description and AARO warning quoted here.",
+      "name_en": "DVIDS — video located via Reeves FOIA request, with official chain-of-custody warning"
     }
   ]
 }

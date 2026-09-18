@@ -1,7 +1,9 @@
 {
   "id": "three-objects-fixed-formation-2023",
   "num": 362,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Tres objetos que mantienen posición y orientación fija entre sí durante dos minutos",
   "name_en": "Three objects holding a fixed position and orientation relative to each other for two minutes",
   "year_start": 2023,
@@ -28,7 +30,9 @@
   },
   "summary": "En 2023, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área INDOPACOM registró casi dos minutos ininterrumpidos de tres objetos que, según la descripción visual oficial de la AARO, 'mantienen posición y orientación fija entre sí' durante toda la observación. A diferencia de la mayoría de los casos de múltiples objetos del corpus —donde suelen aparecer y desaparecer, cruzarse o perderse contra el fondo—, aquí los tres puntos de contraste permanecen relativos entre sí de forma estable el tiempo suficiente como para que el propio analista lo señalara como un rasgo distintivo del metraje.",
   "summary_en": "In 2023, an infrared sensor aboard a U.S. military platform in the INDOPACOM area recorded nearly two uninterrupted minutes of three objects that, per AARO's official visual description, 'maintain a fixed position and orientation relative to one another' throughout the observation. Unlike most multi-object cases in the corpus —where objects typically appear and disappear, cross paths, or lose distinctiveness against the background— here the three contrast points remain stable relative to each other long enough that the analyst himself flagged it as a distinctive feature of the footage.",
-  "patterns": ["8b"],
+  "patterns": [
+    "8b"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -66,15 +70,8 @@
       "name": "DVIDS — DOW-UAP-PR47, con la descripción visual oficial de la AARO (PURSUE Release 01)",
       "url": "https://www.dvidshub.net/video/1006107",
       "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual citada en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR47, with AARO's official visual description (PURSUE Release 01)",
-      "url": "https://www.dvidshub.net/video/1006107",
-      "note": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR47, with AARO's official visual description (PURSUE Release 01)"
     }
   ]
 }

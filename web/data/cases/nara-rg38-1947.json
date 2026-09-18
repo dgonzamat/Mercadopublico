@@ -60,20 +60,6 @@
       "note_en": "Newsletter dedicated to FOIA-recovered documents"
     }
   ],
-  "sources_en": [
-    {
-      "name": "NARA Record Group 38 — ONI Records",
-      "url": "https://www.archives.gov/research/military/ww2/navy/rg-38.html"
-    },
-    {
-      "name": "Swords, M. & Powell, R. — UFOs and Government (2012)",
-      "note": "Chronological catalog of military documents"
-    },
-    {
-      "name": "Greenwood, B. — Just Cause (CAUS 1985-2000)",
-      "note": "Newsletter dedicated to FOIA-recovered documents"
-    }
-  ],
   "name_en": "NARA RG 38 incident summaries",
   "documents": [
     {

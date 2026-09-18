@@ -1,7 +1,9 @@
 {
   "id": "middle-east-thermal-signature-annotation-2020",
   "num": 376,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "'U/I Small Thermal Signature': la etiqueta que el propio testigo escribió en el video",
   "name_en": "'U/I Small Thermal Signature': the label the witness wrote onto the video themselves",
   "year_start": 2020,
@@ -66,15 +68,8 @@
       "name": "DVIDS — DOW-UAP-PR40, con la anotación original del reportero preservada por la AARO (PURSUE Release 01)",
       "url": "https://www.dvidshub.net/video/1006093",
       "note": "Video embebido en el visor de este caso; la ficha incluye la anotación del reportero y la descripción visual citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR40, with the reporter's original annotation preserved by AARO (PURSUE Release 01)",
-      "url": "https://www.dvidshub.net/video/1006093",
-      "note": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the reporter's annotation and the visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR40, with the reporter's original annotation preserved by AARO (PURSUE Release 01)"
     }
   ]
 }

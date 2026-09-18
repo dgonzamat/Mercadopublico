@@ -1,7 +1,9 @@
 {
   "id": "western-sensitive-site-recreation-2023",
   "num": 364,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "El incidente que el FBI solo puede mostrar como una recreación digital",
   "name_en": "The incident the FBI can only show as a digital recreation",
   "year_start": 2023,
@@ -28,7 +30,9 @@
   },
   "summary": "En 2023, un agente especial de las fuerzas del orden federal reportó un incidente de dos días cerca de un sitio sensible de seguridad nacional en el oeste de Estados Unidos. No existe metraje real del evento: lo que el FBI publicó, a pedido del Departamento de Guerra en 2026, son dos 'recreaciones digitales' —animaciones basadas en el relato de primera mano del agente— catalogadas como FBI-UAP-PR005 y PR006, tituladas internamente 'Narrative Statement 3-1' y '3-2'. Es el único caso del corpus donde el propio gobierno reconoce explícitamente que el material visual público no es una grabación del evento, sino una reconstrucción hecha años después a partir de testimonio oral.",
   "summary_en": "In 2023, a federal law enforcement special agent reported a two-day incident near a sensitive national security site in the western United States. No actual footage of the event exists: what the FBI published, at the Department of War's request in 2026, are two 'digital recreations' —animations based on the agent's first-hand account— catalogued as FBI-UAP-PR005 and PR006, internally titled 'Narrative Statement 3-1' and '3-2.' It is the only case in the corpus where the government itself explicitly acknowledges that the public visual material is not a recording of the event, but a reconstruction made years later from oral testimony.",
-  "patterns": ["8d"],
+  "patterns": [
+    "8d"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -75,15 +79,8 @@
       "name": "DVIDS — FBI-UAP-PR005/PR006, recreaciones digitales del FBI (PURSUE Release 03)",
       "url": "https://www.dvidshub.net/video/1010272",
       "note": "Ambos videos van embebidos en el visor de este caso; las fichas reconocen explícitamente que se trata de recreaciones, no de metraje original.",
-      "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — FBI-UAP-PR005/PR006, FBI digital recreations (PURSUE Release 03)",
-      "url": "https://www.dvidshub.net/video/1010272",
-      "note": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage.",
-      "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage."
+      "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage.",
+      "name_en": "DVIDS — FBI-UAP-PR005/PR006, FBI digital recreations (PURSUE Release 03)"
     }
   ]
 }

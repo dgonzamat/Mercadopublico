@@ -53,20 +53,6 @@
       "note_en": "Primary material available at SOBE"
     }
   ],
-  "sources_en": [
-    {
-      "name": "TÜBİTAK Report on Kumburgaz UFO Footage (2009)",
-      "url": "https://www.tubitak.gov.tr/"
-    },
-    {
-      "name": "Sirius UFO Research Center (Turkey)",
-      "url": "http://www.siriusufo.org/"
-    },
-    {
-      "name": "Yalman, Y. — Kumburgaz footage archive",
-      "note": "Primary material available at SOBE"
-    }
-  ],
   "posterior": {
     "mundano_natural": 0.56,
     "humana_clasificada": 0.02,

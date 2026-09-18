@@ -61,31 +61,16 @@
     },
     {
       "name": "GEIPAN / SEPRA (CNES) — archivo oficial y comunicado de reentrada (nov 1990)",
-      "url": "https://www.cnes-geipan.fr/"
+      "url": "https://www.cnes-geipan.fr/",
+      "name_en": "GEIPAN / SEPRA (CNES) — official archive and re-entry statement (Nov 1990)"
     },
     {
       "name": "Velasco, J.-J. & Bourret, J.-C. — 'Ovnis: la science avance' (Robert Laffont, 1993)"
     },
     {
       "name": "Gross, Patrick — ALSACAT, expedientes del 5 nov 1990 (Colmar)",
-      "url": "https://www.ufologie.patrickgross.org/alsacat/1990-11-05-colmar2.htm"
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "Oberg, James — 'The November 5, 1990 French UFO wave' (SEESAT / satobs.org)",
-      "url": "http://satobs.org/seesat_ref/Oberg/901105-French_wave.pdf"
-    },
-    {
-      "name": "GEIPAN / SEPRA (CNES) — official archive and re-entry statement (Nov 1990)",
-      "url": "https://www.cnes-geipan.fr/"
-    },
-    {
-      "name": "Velasco, J.-J. & Bourret, J.-C. — 'Ovnis: la science avance' (Robert Laffont, 1993)"
-    },
-    {
-      "name": "Gross, Patrick — ALSACAT, 5 Nov 1990 case files (Colmar)",
-      "url": "https://www.ufologie.patrickgross.org/alsacat/1990-11-05-colmar2.htm"
+      "url": "https://www.ufologie.patrickgross.org/alsacat/1990-11-05-colmar2.htm",
+      "name_en": "Gross, Patrick — ALSACAT, 5 Nov 1990 case files (Colmar)"
     }
   ],
   "documents": [

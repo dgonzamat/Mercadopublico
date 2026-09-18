@@ -52,20 +52,6 @@
       "note_en": "Chapter dedicated to Levelland"
     }
   ],
-  "sources_en": [
-    {
-      "name": "Project Blue Book — Levelland case file",
-      "url": "https://www.archives.gov/research/military/air-force/ufos"
-    },
-    {
-      "name": "McDonald, J. — 'Statement on UFOs' (Congress 1968)",
-      "url": "https://ufologie.patrickgross.org/htm/mcdonald.htm"
-    },
-    {
-      "name": "Hall, R. — The UFO Evidence (NICAP 1964)",
-      "note": "Chapter dedicated to Levelland"
-    }
-  ],
   "posterior": {
     "mundano_natural": 0.34,
     "humana_clasificada": 0.06,

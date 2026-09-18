@@ -64,15 +64,8 @@
       "name": "DVIDS — 'Navy 2021 Flyby video', exhibido ante el Congreso por Scott Bray (17 may 2022)",
       "url": "https://www.dvidshub.net/video/843620",
       "note": "Video embebido en el visor de este caso.",
-      "note_en": "Video embedded in this case's viewer."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — 'Navy 2021 Flyby video', shown to Congress by Scott Bray (May 17, 2022)",
-      "url": "https://www.dvidshub.net/video/843620",
-      "note": "Video embedded in this case's viewer.",
-      "note_en": "Video embedded in this case's viewer."
+      "note_en": "Video embedded in this case's viewer.",
+      "name_en": "DVIDS — 'Navy 2021 Flyby video', shown to Congress by Scott Bray (May 17, 2022)"
     }
   ]
 }

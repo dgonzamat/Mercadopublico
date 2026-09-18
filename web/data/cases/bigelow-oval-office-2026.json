@@ -21,7 +21,7 @@
     "mundano_natural": 0.22,
     "humana_clasificada": 0.08,
     "adversaria": 0.02,
-    "nohumano_encubierto": 0.20,
+    "nohumano_encubierto": 0.2,
     "nohumano_abierto": 0.06,
     "indet": 0.42
   },
@@ -55,21 +55,8 @@
   "sources": [
     {
       "name": "Above the Norm News — Robert Bigelow Says He Put A Presidential UAP Confirmation Plan Directly In Front Of Trump (5 agosto 2026)",
-      "url": "https://www.abovethenormnews.com/2026/08/05/robert-bigelow-recovered-non-human-craft/"
-    },
-    {
-      "name": "8NewsNow / Mystery Wire — UFO research benefactor Robert Bigelow says he encouraged President Trump toward alien disclosure",
-      "url": "https://www.8newsnow.com/mystery-wire/ufos-aliens-space/ufo-research-benefactor-robert-bigelow-says-he-encouraged-president-trump-toward-alien-disclosure/"
-    },
-    {
-      "name": "USA Herald — Bigelow Says He Handed Trump the Exact Words for Alien Disclosure",
-      "url": "https://usaherald.com/bigelow-says-he-handed-trump-the-exact-words-for-alien-disclosure-so-why-hasnt-the-president-said-them/"
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "Above the Norm News — Robert Bigelow Says He Put A Presidential UAP Confirmation Plan Directly In Front Of Trump (Aug. 5, 2026)",
-      "url": "https://www.abovethenormnews.com/2026/08/05/robert-bigelow-recovered-non-human-craft/"
+      "url": "https://www.abovethenormnews.com/2026/08/05/robert-bigelow-recovered-non-human-craft/",
+      "name_en": "Above the Norm News — Robert Bigelow Says He Put A Presidential UAP Confirmation Plan Directly In Front Of Trump (Aug. 5, 2026)"
     },
     {
       "name": "8NewsNow / Mystery Wire — UFO research benefactor Robert Bigelow says he encouraged President Trump toward alien disclosure",

@@ -155,7 +155,11 @@ export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
           ? {
               citation: c.sources.map((s) => ({
                 "@type": "CreativeWork",
-                name: s.name,
+                // Tercera superficie del par bilingüe: Google publica este
+                // nombre en los rich results, así que la ruta inglesa no puede
+                // emitir el español. Los 81 `name_en` migrados desde el viejo
+                // `sources_en` llegaban al render pero no aquí. (sep 2026)
+                name: locale === "es" ? s.name : (s.name_en ?? s.name),
                 ...(s.url ? { url: s.url } : {}),
               })),
             }

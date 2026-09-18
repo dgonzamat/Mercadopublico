@@ -1,7 +1,9 @@
 {
   "id": "northeastern-us-orbs-2021-2025",
   "num": 363,
-  "pursueReleases": [3],
+  "pursueReleases": [
+    3
+  ],
   "name": "Cuatro avistamientos de orbes en el mismo radio de 25 millas, 2021-2025",
   "name_en": "Four orb sightings within the same 25-mile radius, 2021-2025",
   "year_start": 2021,
@@ -29,7 +31,10 @@
   },
   "summary": "Entre noviembre de 2021 y julio de 2025, testigos civiles grabaron con sus teléfonos cuatro avistamientos de luces esféricas dentro de un radio de 25 millas en una zona rural del noreste de Estados Unidos. El FBI evaluó a los testigos como 'altamente creíbles' (los tres primeros) o 'creíbles' (el cuarto, con dos testigos independientes), y el gobierno estadounidense autenticó al menos uno de los videos. Los cuatro clips —'Triangle-Orbs' (2021), 'Red Orb Rotation' (2022), 'Orbs Over the Pond' (2024) y un cuarto sin título asignado (2025)— se liberaron en el tercer lote de PURSUE (12 de junio de 2026) bajo una serie distinta ('FBI-UAP-PR', no 'DOW-UAP-PR'), con documentos de respaldo (FBI-UAP-D004 a D010) que no están disponibles públicamente fuera de DVIDS. Es, dentro del corpus, uno de los pocos patrones de recurrencia geográfica multianual con evaluación de credibilidad explícita del FBI.",
   "summary_en": "Between November 2021 and July 2025, civilian witnesses filmed on their phones four sightings of spherical lights within a 25-mile radius of a rural area in the northeastern United States. The FBI assessed the witnesses as 'highly credible' (the first three) or 'credible' (the fourth, with two independent witnesses), and the U.S. government authenticated at least one of the videos. The four clips —'Triangle-Orbs' (2021), 'Red Orb Rotation' (2022), 'Orbs Over the Pond' (2024) and an untitled fourth (2025)— were released in PURSUE's third drop (June 12, 2026) under a distinct series ('FBI-UAP-PR', not 'DOW-UAP-PR'), with supporting documents (FBI-UAP-D004 through D010) not publicly available outside DVIDS. It is, within the corpus, one of the few multi-year geographic recurrence patterns with an explicit FBI credibility assessment.",
-  "patterns": ["8n", "8b"],
+  "patterns": [
+    "8n",
+    "8b"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -98,15 +103,8 @@
       "name": "DVIDS — FBI-UAP-PR001 a PR004, con evaluaciones de credibilidad del FBI (PURSUE Release 03)",
       "url": "https://www.dvidshub.net/video/1010263",
       "note": "Los cuatro videos van embebidos en el visor de este caso; cada ficha incluye el relato del testigo y la evaluación de credibilidad del FBI citados en whatHappened.",
-      "note_en": "All four videos are embedded in this case's viewer; each record includes the witness account and FBI credibility assessment quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — FBI-UAP-PR001 through PR004, with FBI credibility assessments (PURSUE Release 03)",
-      "url": "https://www.dvidshub.net/video/1010263",
-      "note": "All four videos are embedded in this case's viewer; each record includes the witness account and FBI credibility assessment quoted in whatHappened.",
-      "note_en": "All four videos are embedded in this case's viewer; each record includes the witness account and FBI credibility assessment quoted in whatHappened."
+      "note_en": "All four videos are embedded in this case's viewer; each record includes the witness account and FBI credibility assessment quoted in whatHappened.",
+      "name_en": "DVIDS — FBI-UAP-PR001 through PR004, with FBI credibility assessments (PURSUE Release 03)"
     }
   ]
 }

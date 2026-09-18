@@ -1,7 +1,9 @@
 {
   "id": "eastern-us-civilian-sensor-2019",
   "num": 357,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "El testimonio del aviador de 28 años: un objeto pequeño, rápido, visto desde una aeronave civil",
   "name_en": "The 28-year aviator's testimony: a small, fast object seen from a civilian aircraft",
   "year_start": 2019,
@@ -28,7 +30,9 @@
   },
   "summary": "En 2019, un sensor infrarrojo a bordo de una aeronave CIVIL —no militar, un detalle inusual en el corpus— registró 20 segundos de un objeto sobre la costa este de Estados Unidos. La Armada de EE.UU. sometió el reporte a la AARO, acompañado de un informe de debrief (DOW-UAP-D090) que cita al observador: el objeto exhibía 'características de vuelo distintas a todo lo que había visto en 28 años [de servicio] en la Fuerza Aérea y la Armada de EE.UU.'. El informe lo describe como 'pequeño' y 'viajando en línea recta en dirección opuesta a alta velocidad'. El video mismo es fragmentario: el objeto es visible apenas unos segundos antes de que el sensor cambie de modo y la pantalla se sature de blanco.",
   "summary_en": "In 2019, an infrared sensor aboard a CIVILIAN aircraft —not military, an unusual detail in the corpus— recorded 20 seconds of an object over the U.S. East Coast. The U.S. Navy submitted the report to AARO, accompanied by a debrief report (DOW-UAP-D090) quoting the observer: the object exhibited 'flight characteristics unlike anything [they] had seen in 28 years [of service] for the U.S. Air Force and U.S. Navy.' The report describes it as 'small' and 'traveling in a straight line in the opposite direction at high speed.' The video itself is fragmentary: the object is visible for only a few seconds before the sensor changes mode and the screen washes out white.",
-  "patterns": ["8e"],
+  "patterns": [
+    "8e"
+  ],
   "category": "incident",
   "documents": [
     {
@@ -66,15 +70,8 @@
       "name": "DVIDS — DOW-UAP-PR112, con el debrief DOW-UAP-D090 citado por la AARO (PURSUE Release 04)",
       "url": "https://www.dvidshub.net/video/1014128",
       "note": "Video embebido en el visor de este caso; la ficha incluye la cita del debrief y la descripción visual con marcas de tiempo citadas en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR112, with the DOW-UAP-D090 debrief quoted by AARO (PURSUE Release 04)",
-      "url": "https://www.dvidshub.net/video/1014128",
-      "note": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the debrief quote and the timestamped visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR112, with the DOW-UAP-D090 debrief quoted by AARO (PURSUE Release 04)"
     }
   ]
 }

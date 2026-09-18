@@ -1,7 +1,9 @@
 {
   "id": "gulf-america-thermal-camouflage-2019",
   "num": 370,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "Cuando el propio sensor explica por qué el objeto parpadea",
   "name_en": "When the sensor itself explains why the object flickers",
   "year_start": 2019,
@@ -64,15 +66,8 @@
       "name": "DVIDS — sensor IR sobre el Golfo de América, con comentario técnico de la AARO sobre el mecanismo del parpadeo",
       "url": "https://www.dvidshub.net/video/1014123",
       "note": "Video embebido en el visor de este caso; la ficha incluye el 'AARO Comment' citado en whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — IR sensor over the Gulf of America, with AARO's technical comment on the flicker mechanism",
-      "url": "https://www.dvidshub.net/video/1014123",
-      "note": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened.",
-      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened."
+      "note_en": "Video embedded in this case's viewer; the record includes the 'AARO Comment' quoted in whatHappened.",
+      "name_en": "DVIDS — IR sensor over the Gulf of America, with AARO's technical comment on the flicker mechanism"
     }
   ]
 }

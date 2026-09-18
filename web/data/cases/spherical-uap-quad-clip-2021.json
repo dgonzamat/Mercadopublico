@@ -101,15 +101,8 @@
       "name": "DVIDS — DOW-UAP-PR060/061/062/063, títulos definidos por el uploader, con evaluación de procedencia y descripción visual de la AARO (lote FOIA Reeves, PURSUE Release 02)",
       "url": "https://www.dvidshub.net/video/1007734",
       "note": "Los cuatro videos van embebidos en el visor de este caso; cada ficha incluye la evaluación de procedencia y la descripción visual con marcas de tiempo citadas en whatHappened.",
-      "note_en": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "DVIDS — DOW-UAP-PR060/061/062/063, uploader-defined titles, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)",
-      "url": "https://www.dvidshub.net/video/1007734",
-      "note": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened.",
-      "note_en": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened."
+      "note_en": "All four videos are embedded in this case's viewer; each record includes the provenance assessment and the timestamped visual description quoted in whatHappened.",
+      "name_en": "DVIDS — DOW-UAP-PR060/061/062/063, uploader-defined titles, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)"
     }
   ]
 }

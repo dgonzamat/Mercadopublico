@@ -66,21 +66,5 @@
       "note": "Cobertura sostenida del intervalo de releases",
       "note_en": "Sustained coverage of the release interval"
     }
-  ],
-  "sources_en": [
-    {
-      "name": "AARO Release R03 (mayo 2026)",
-      "url": "https://www.aaro.mil/",
-      "note": "Official AARO page with the three archived releases"
-    },
-    {
-      "name": "DoD Press Office — Non-confirmation statement (mayo 2026)",
-      "url": "https://www.defense.gov/News/"
-    },
-    {
-      "name": "Coulthart, R. — NewsNation coverage (mayo 2026)",
-      "url": "https://www.newsnationnow.com/space/ufo/uap-aaro-report-release/",
-      "note": "Sustained coverage of the release window"
-    }
   ]
 }

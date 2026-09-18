@@ -23,7 +23,7 @@
     "adversaria": 0,
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0,
-    "indet": 0.10
+    "indet": 0.1
   },
   "summary": "En mayo de 2011 circuló online un video granulado, atribuido a archivo militar de EE.UU. de los años 40-50, que mostraba a un ser gris extremadamente delgado —apodado 'Skinny Bob'— parpadeando y moviéndose. Nadie reclamó su autoría en 13 años. En 2025 el autoproclamado ex analista de inteligencia del Ejército Edward 'Eddie' Abbott declaró haber visto el metraje completo sin editar dentro de un SCIF en 2008, sin verificación independiente. En mayo-julio de 2026 el canal de YouTube 'qtecqot' subió tres videos nuevos —'recovery footage' del mismo ser y un recorrido por el interior de una nave— con estructura de juego de realidad alternativa. Un análisis técnico independiente (banco de verificación con ExifTool, C2PA, SynthID y FFmpeg) encontró brillos especulares fijos mientras la geometría se mueve, una falla característica de generación por IA, además de incoherencias de fondo — evidencia fuerte de fabricación sintética disfrazada de película clasificada de 8mm.",
   "summary_en": "In May 2011, a grainy video attributed to 1940s-50s U.S. military archives circulated online, showing an extremely thin grey being —nicknamed 'Skinny Bob'— blinking and moving. No one claimed authorship for 13 years. In 2025, self-described former Army intelligence analyst Edward 'Eddie' Abbott stated he had seen the complete, unedited footage inside a SCIF in 2008, with no independent verification. Between May and July 2026, the YouTube channel 'qtecqot' uploaded three new videos —'recovery footage' of the same being and a walkthrough of a craft's interior— structured as an alternate-reality game. An independent technical analysis (a verification bench using ExifTool, C2PA, SynthID and FFmpeg) found specular highlights that stay fixed while underlying geometry moves, a signature generative-AI failure, plus background incoherence — strong evidence of synthetic fabrication disguised as classified 8mm film.",
@@ -63,20 +63,6 @@
     "Media speculation, without solid evidence, linking the material to the wave of orb/drone sightings in Brazil, Miami, Japan, Finland, Indonesia and California (2026)"
   ],
   "sources": [
-    {
-      "name": "IBTimes UK — New Skinny Bob Videos Trigger UFO Panic After Alleged Leak Revives Long-Buried Alien Claims",
-      "url": "https://www.ibtimes.co.uk/skinny-bob-ufo-videos-resurface-alien-theories-1812042"
-    },
-    {
-      "name": "Singhfinity — A verification bench that returns nothing on the new Skinny Bob clips",
-      "url": "https://singhfinity.com/insights/articles/a-verification-bench-that-returns-nothing-on-the-new-skinny-bob-clips"
-    },
-    {
-      "name": "Ovniologia — Whistleblower Claims Skinny Bob is Real (Edward Abbott)",
-      "url": "https://ovniologia.com.br/2025/07/whistleblower-claims-skinny-bob-is-real.html"
-    }
-  ],
-  "sources_en": [
     {
       "name": "IBTimes UK — New Skinny Bob Videos Trigger UFO Panic After Alleged Leak Revives Long-Buried Alien Claims",
       "url": "https://www.ibtimes.co.uk/skinny-bob-ufo-videos-resurface-alien-theories-1812042"

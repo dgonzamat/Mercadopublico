@@ -62,7 +62,8 @@
   "sources": [
     {
       "name": "House Committee on Oversight and Government Reform — Borland Written Testimony (9 septiembre 2025)",
-      "url": "https://oversight.house.gov/wp-content/uploads/2025/09/Borland-Written-Testimony.pdf"
+      "url": "https://oversight.house.gov/wp-content/uploads/2025/09/Borland-Written-Testimony.pdf",
+      "name_en": "House Committee on Oversight and Government Reform — Borland Written Testimony (September 9, 2025)"
     },
     {
       "name": "House Committee on Oversight and Government Reform — Hearing Wrap Up: Government Must Be More Transparent About UAPs",
@@ -70,57 +71,30 @@
     },
     {
       "name": "Rev.com — House UAP Whistleblower Hearing (transcripción completa)",
-      "url": "https://www.rev.com/transcripts/house-uap-whistleblower-hearing"
+      "url": "https://www.rev.com/transcripts/house-uap-whistleblower-hearing",
+      "name_en": "Rev.com — House UAP Whistleblower Hearing (full transcript)"
     },
     {
       "name": "Stranger Than Fiction — Dylan Borland: The UAP Whistleblower Congress Cannot Ignore (mayo 2026)",
-      "url": "https://www.strangerthanfiction.org/2026/05/dylan-borland-uap-whistleblower-project-rubiks-cube/"
+      "url": "https://www.strangerthanfiction.org/2026/05/dylan-borland-uap-whistleblower-project-rubiks-cube/",
+      "name_en": "Stranger Than Fiction — Dylan Borland: The UAP Whistleblower Congress Cannot Ignore (May 2026)"
     },
     {
       "name": "Cybernews — \"The deepest UFO secret isn't the craft, it's the cover-up\" (6 agosto 2026)",
-      "url": "https://cybernews.com/tech/ufo-secret-borland-michels-discloure/"
+      "url": "https://cybernews.com/tech/ufo-secret-borland-michels-discloure/",
+      "name_en": "Cybernews — \"The deepest UFO secret isn't the craft, it's the cover-up\" (August 6, 2026)"
     },
     {
       "name": "Vanguard Enterprise — página de equipo (vanguardenterprise.org/team)",
-      "url": "https://www.vanguardenterprise.org/team"
+      "url": "https://www.vanguardenterprise.org/team",
+      "name_en": "Vanguard Enterprise — team page (vanguardenterprise.org/team)"
     },
     {
       "name": "Liberation Times — 'Intelligence watchdog warns of FBI referral over alleged disclosure of UAP whistleblower testimony' (11 ago 2026)",
       "url": "https://www.liberationtimes.com/home/intelligence-watchdog-warns-of-fbi-referral-over-alleged-disclosure-of-uap-whistleblower-testimony",
       "note": "Fuente de la declaración formal del ICIG y del contexto del Director's Initiatives Group.",
-      "note_en": "Source of the formal ICIG statement and the Director's Initiatives Group context."
-    }
-  ],
-  "sources_en": [
-    {
-      "name": "House Committee on Oversight and Government Reform — Borland Written Testimony (September 9, 2025)",
-      "url": "https://oversight.house.gov/wp-content/uploads/2025/09/Borland-Written-Testimony.pdf"
-    },
-    {
-      "name": "House Committee on Oversight and Government Reform — Hearing Wrap Up: Government Must Be More Transparent About UAPs",
-      "url": "https://oversight.house.gov/release/hearing-wrap-up-government-must-be-more-transparent-about-uaps/"
-    },
-    {
-      "name": "Rev.com — House UAP Whistleblower Hearing (full transcript)",
-      "url": "https://www.rev.com/transcripts/house-uap-whistleblower-hearing"
-    },
-    {
-      "name": "Stranger Than Fiction — Dylan Borland: The UAP Whistleblower Congress Cannot Ignore (May 2026)",
-      "url": "https://www.strangerthanfiction.org/2026/05/dylan-borland-uap-whistleblower-project-rubiks-cube/"
-    },
-    {
-      "name": "Cybernews — \"The deepest UFO secret isn't the craft, it's the cover-up\" (August 6, 2026)",
-      "url": "https://cybernews.com/tech/ufo-secret-borland-michels-discloure/"
-    },
-    {
-      "name": "Vanguard Enterprise — team page (vanguardenterprise.org/team)",
-      "url": "https://www.vanguardenterprise.org/team"
-    },
-    {
-      "name": "Liberation Times — 'Intelligence watchdog warns of FBI referral over alleged disclosure of UAP whistleblower testimony' (Aug 11, 2026)",
-      "url": "https://www.liberationtimes.com/home/intelligence-watchdog-warns-of-fbi-referral-over-alleged-disclosure-of-uap-whistleblower-testimony",
-      "note": "Fuente de la declaración formal del ICIG y del contexto del Director's Initiatives Group.",
-      "note_en": "Source of the formal ICIG statement and the Director's Initiatives Group context."
+      "note_en": "Source of the formal ICIG statement and the Director's Initiatives Group context.",
+      "name_en": "Liberation Times — 'Intelligence watchdog warns of FBI referral over alleged disclosure of UAP whistleblower testimony' (Aug 11, 2026)"
     }
   ]
 }

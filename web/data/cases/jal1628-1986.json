@@ -53,20 +53,6 @@
       "url": "http://www.nicap.org/jal1628dir.htm"
     }
   ],
-  "sources_en": [
-    {
-      "name": "FAA Final Report on JAL 1628 (Steucke memo)",
-      "url": "https://www.faa.gov/foia"
-    },
-    {
-      "name": "Callahan affidavit + radar tapes (CHD 2013)",
-      "url": "https://www.citizenhearing.org/"
-    },
-    {
-      "name": "NICAP — JAL 1628 reconstruction",
-      "url": "http://www.nicap.org/jal1628dir.htm"
-    }
-  ],
   "posterior": {
     "mundano_natural": 0.4,
     "humana_clasificada": 0.12,

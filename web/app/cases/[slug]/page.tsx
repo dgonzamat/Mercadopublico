@@ -709,10 +709,13 @@ export async function CaseDetailPage(
                             rel="noopener noreferrer"
                             className="text-text underline decoration-text/30 underline-offset-4 hover:text-accent hover:decoration-accent"
                           >
-                            {s.name} <span aria-hidden>↗</span>
+                            <T locale={locale} es={s.name} en={s.name_en ?? s.name} />{" "}
+                            <span aria-hidden>↗</span>
                           </a>
                         ) : (
-                          <span className="text-text">{s.name}</span>
+                          <span className="text-text">
+                            <T locale={locale} es={s.name} en={s.name_en ?? s.name} />
+                          </span>
                         )}
                         {s.note && (
                           <span className="text-muted">

@@ -53,20 +53,6 @@
       "note_en": "Sustained press coverage"
     }
   ],
-  "sources_en": [
-    {
-      "name": "CENAPRED — Monitoreo Volcánico Popocatépetl",
-      "url": "https://www.gob.mx/cenapred"
-    },
-    {
-      "name": "AARO Release PR053 (2024)",
-      "url": "https://www.aaro.mil/"
-    },
-    {
-      "name": "Maussan, J. — Compilación Popocatépetl UFO archive",
-      "note": "Sustained journalistic coverage"
-    }
-  ],
   "posterior": {
     "mundano_natural": 0.6,
     "humana_clasificada": 0.02,
