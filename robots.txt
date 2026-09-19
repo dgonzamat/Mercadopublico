@@ -1,0 +1,16 @@
+User-Agent: *
+Allow: /
+
+User-Agent: GPTBot
+User-Agent: CCBot
+User-Agent: Google-Extended
+User-Agent: Bytespider
+User-Agent: Meta-ExternalAgent
+User-Agent: anthropic-ai
+User-Agent: Applebot-Extended
+User-Agent: Omgili
+User-Agent: Diffbot
+User-Agent: ImagesiftBot
+Disallow: /
+
+Sitemap: https://uapcodex.org/sitemap.xml
