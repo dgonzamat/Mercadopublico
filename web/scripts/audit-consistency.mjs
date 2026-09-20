@@ -1721,6 +1721,52 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9x. RULE E39: toda release presente en los datos tiene copy propio ──
+//
+// `LABELS` (app/releases/page.tsx) y `RELEASE_META` (app/releases/[release]/
+// page.tsx) son diccionarios escritos a mano, pero el CONJUNTO de releases se
+// deriva de `pursueReleases`. Esa asimetría falla en silencio: cuando llegó la
+// sexta entrega, su tarjeta cayó al fallback y mostró «Release 06» donde las
+// demás resumen qué aportaron — nadie se enteró hasta que el dueño miró la
+// página en el móvil (sep 2026). El copy editorial se escribe a mano a
+// propósito (no se puede derivar un resumen), así que lo que se mecaniza no es
+// el texto sino su PRESENCIA.
+{
+  const releasesEnDatos = new Set();
+  for (const c of cases) for (const n of c.pursueReleases ?? []) releasesEnDatos.add(n);
+
+  const leer = (rel) => {
+    try { return fs.readFileSync(path.join(root, rel), "utf-8"); } catch { return null; }
+  };
+  const fuentes = [
+    ["app/releases/page.tsx", "LABELS", leer("app/releases/page.tsx")],
+    ["app/releases/[release]/page.tsx", "RELEASE_META", leer("app/releases/[release]/page.tsx")],
+  ];
+  for (const [file, dict, src] of fuentes) {
+    if (src === null) {
+      record("ERROR", file, 0, `E39 releases: no se pudo leer el archivo que define ${dict} — la sonda está ciega, no verde.`);
+      continue;
+    }
+    const cuerpo = src.slice(src.indexOf(dict));
+    for (const n of [...releasesEnDatos].sort((a, b) => a - b)) {
+      if (!new RegExp(`^\\s*${n}:\\s*\\{`, "m").test(cuerpo)) {
+        record("ERROR", file, 0,
+          `E39 releases: la release ${n} existe en el corpus (campo pursueReleases) pero no tiene entrada en ${dict}; su tarjeta cae al fallback genérico «Release ${String(n).padStart(2, "0")}».`);
+      }
+    }
+  }
+
+  // La recencia se deriva; que no vuelva a escribirse a mano en el copy.
+  for (const [file, , src] of fuentes) {
+    if (!src) continue;
+    const m = src.match(/"[^"]*(?:entrega más reciente|most recent drop)[^"]*"/);
+    if (m) {
+      record("ERROR", file, 0,
+        `E39 releases: la recencia está escrita a mano en el copy (${m[0].slice(0, 60)}…). Se deriva de Math.max(RELEASES) — un rótulo fijo driftea en cuanto sale la siguiente entrega, que es justo lo que pasó con la quinta.`);
+    }
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
