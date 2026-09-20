@@ -35,6 +35,7 @@ export function ReleasesView({ locale }: { locale: "es" | "en" }) {
     new Set(cases.flatMap((c) => c.pursueReleases ?? [])),
   ).sort((a, b) => b - a); // más reciente primero
 
+  const latest = Math.max(...releases); // derivado, nunca escrito en el copy
   const rows = releases.map((n) => {
     const list = cases.filter((c) => c.pursueReleases?.includes(n));
     const t = { S: 0, A: 0, B: 0 };
@@ -70,6 +71,12 @@ export function ReleasesView({ locale }: { locale: "es" | "en" }) {
             <div className="flex items-baseline justify-between">
               <span className="font-mono text-xs uppercase tracking-widest text-muted">
                 Release {pad(n)}
+                {n === latest && (
+                  <span className="text-accent">
+                    {" · "}
+                    <T es="más reciente" en="most recent" locale={locale} />
+                  </span>
+                )}
               </span>
               <span className="font-mono text-sm font-semibold tabular-nums text-text group-hover:text-accent">
                 {count} <T es="casos" en="cases" locale={locale} />
