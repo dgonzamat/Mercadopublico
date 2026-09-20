@@ -1767,6 +1767,50 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9y. RULE E40: el índice de búsqueda sirve español en la ruta inglesa ─
+//
+// CUARTA superficie de la clase "campo con par bilingüe consumido crudo".
+// E33 vigila lib/jsonld.ts; el render y la metadata tienen sus propias
+// reglas; `public/search-index.json` se escapaba de las cuatro, y el
+// desplegable de búsqueda mostraba «Estados Unidos», «Patrón 8a» o
+// «Investigadores científicos» a un lector inglés — y además NO casaba al
+// teclear "United States", porque el subtítulo también se indexa (sep 2026).
+//
+// El índice es artefacto gitignored generado por build-search-index.mjs, que
+// en `prebuild` corre ANTES que esta auditoría: cuando existe, está fresco.
+// Si falta (clon limpio), la sonda lo DICE en vez de dar verde.
+{
+  const idxPath = path.join(root, "public", "search-index.json");
+  if (!fs.existsSync(idxPath)) {
+    record("WARN", "public/search-index.json", 0,
+      "E40 búsqueda: el índice no existe, así que la localización del buscador NO está verificada — esta sonda está ciega, no verde. Se genera con `node scripts/build-search-index.mjs`.");
+  } else {
+    let idx = null;
+    try { idx = JSON.parse(fs.readFileSync(idxPath, "utf-8")); } catch {}
+    if (!Array.isArray(idx) || idx.length === 0) {
+      record("ERROR", "public/search-index.json", 0, "E40 búsqueda: el índice existe pero no es un array con entradas.");
+    } else {
+      // `subtitle_en` es universal: todas las entradas pintan subtítulo.
+      const sinSub = idx.filter((e) => !e.subtitle_en);
+      if (sinSub.length) {
+        const tipos = [...new Set(sinSub.map((e) => e.type))].join(", ");
+        record("ERROR", "public/search-index.json", 0,
+          `E40 búsqueda: ${sinSub.length} entradas sin \`subtitle_en\` (tipos: ${tipos}). El buscador pinta el subtítulo español en la raíz inglesa y no casa al teclear en inglés.`);
+      }
+      // `name_en` sólo donde el nombre SE TRADUCE. Quedan fuera a propósito:
+      // researcher (nombres propios) y case (48 tienen el `name` ya en inglés
+      // y por eso no llevan par en el dato — no es un hueco).
+      for (const t of ["framework", "pattern", "page", "post"]) {
+        const faltan = idx.filter((e) => e.type === t && !e.name_en);
+        if (faltan.length) {
+          record("ERROR", "public/search-index.json", 0,
+            `E40 búsqueda: ${faltan.length} entradas de tipo \`${t}\` sin \`name_en\`, y ese tipo sí tiene par en los datos.`);
+        }
+      }
+    }
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
