@@ -33,6 +33,7 @@ interface IndexEntry {
   name: string;
   name_en?: string;
   subtitle: string;
+  subtitle_en?: string;
   meta: string;
   flag: string;
   year: string;
@@ -134,6 +135,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
           keys: [
             { name: "name", weight: 0.45 },
             { name: "subtitle", weight: 0.15 },
+            { name: "subtitle_en", weight: 0.1 },
             { name: "summary", weight: 0.15 },
             { name: "summary_en", weight: 0.1 },
             { name: "year", weight: 0.1 },
@@ -288,7 +290,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
                     i === selected ? metaActive : metaIdle
                   }`}
                 >
-                  {r.subtitle}
+                  {locale === "en" && r.subtitle_en ? r.subtitle_en : r.subtitle}
                   {r.meta ? ` · ${r.meta}` : ""} ·{" "}
                   {locale === "en" && r.summary_en ? r.summary_en : r.summary}
                 </p>
