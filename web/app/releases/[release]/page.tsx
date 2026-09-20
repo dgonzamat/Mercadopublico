@@ -55,9 +55,17 @@ const RELEASE_META: Record<
     es: "PURSUE · Quinta entrega",
     en: "PURSUE · Fifth release",
     blurbEs:
-      "La entrega más reciente: cables del Departamento de Estado sobre Puerto Rico (1964) y Bahía (1963), y una serie de expedientes FBI/DoW 2011-2026 — el golfo de Omán, triángulos en Colorado Springs y luces recurrentes de un piloto comercial.",
+      "La quinta entrega: cables del Departamento de Estado sobre Puerto Rico (1964) y Bahía (1963), y una serie de expedientes FBI/DoW 2011-2026 — el golfo de Omán, triángulos en Colorado Springs y luces recurrentes de un piloto comercial.",
     blurbEn:
-      "The most recent drop: State Department cables on Puerto Rico (1964) and Bahia (1963), and a series of FBI/DoW files spanning 2011-2026 — the Gulf of Oman, Colorado Springs triangles and a commercial pilot's recurring lights.",
+      "The fifth drop: State Department cables on Puerto Rico (1964) and Bahia (1963), and a series of FBI/DoW files spanning 2011-2026 — the Gulf of Oman, Colorado Springs triangles and a commercial pilot's recurring lights.",
+  },
+  6: {
+    es: "PURSUE · Sexta entrega",
+    en: "PURSUE · Sixth release",
+    blurbEs:
+      "La entrega más reciente: el papeleo contractual completo del programa AAWSAP y sus 37 documentos de referencia (DIRD), el expediente Blue Book del film de Tremonton (1952) y la grabación de Ruppelt en el MIT Lincoln Laboratory, partes de misión de Irak y Oriente Medio, clips de sensor sobre el mar Amarillo y el mar de China Oriental, y el primer material aportado por una policía local (Colorado, 2023).",
+    blurbEn:
+      "The most recent drop: the full contractual paperwork of the AAWSAP program and its 37 reference documents (DIRDs), the Blue Book file on the Tremonton film (1952) and Ruppelt's recording at MIT Lincoln Laboratory, mission reports from Iraq and the Middle East, sensor clips over the Yellow Sea and the East China Sea, and the first material contributed by a local police force (Colorado, 2023).",
   },
 };
 
