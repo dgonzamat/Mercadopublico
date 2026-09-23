@@ -157,7 +157,10 @@
         "note": "Memoria del director del Proyecto Libro Azul.",
         "note_en": "Memoir by the Project Blue Book director."
       }
-    ]
+    ],
+    "photo": "/researchers/ruppelt.jpg",
+    "photo_credit": "St. Louis Post-Dispatch, 8 mar 1953 (recorte de la foto en en.wikipedia)",
+    "photo_license": "Dominio público en EE.UU. (PD-US)"
   },
   {
     "id": "keyhoe",
@@ -228,7 +231,10 @@
         "note": "Testimonio científico ante el Congreso de EE.UU.",
         "note_en": "Scientific testimony before the US Congress."
       }
-    ]
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20E.%20McDonald%201.gif?width=400",
+    "photo_credit": "United States Government",
+    "photo_license": "Dominio público · US Government work"
   },
   {
     "id": "friedman",
@@ -342,7 +348,10 @@
         "note": "Informes técnicos de propulsión avanzada.",
         "note_en": "Advanced-propulsion technical reports."
       }
-    ]
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hal%20Puthoff.png?width=400",
+    "photo_credit": "CIA (CIA-RDP96-00788R001200300004-3, 2000)",
+    "photo_license": "Dominio público · US Government work"
   },
   {
     "id": "davis",
@@ -1628,7 +1637,10 @@
         "note": "Registro de la repercusión pública y de su respuesta.",
         "note_en": "Record of the public reaction and of his response."
       }
-    ]
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Karim%20Bianchi%20Retamales.jpg?width=400",
+    "photo_credit": "Estado de Chile (Senado de Chile, 2022)",
+    "photo_license": "CC-BY 3.0 Chile"
   },
   {
     "id": "jim-weiner",
@@ -3774,7 +3786,10 @@
         "name": "DefenseScoop — 'Former Naval commander Timothy Gallaudet agrees to testify at UAP hearing' (2024)",
         "url": "https://defensescoop.com/2024/11/06/former-naval-commander-timothy-gallaudet-agrees-testify-uap-hearing/"
       }
-    ]
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Timothy%20Gallaudet%20official%20photo.jpg?width=400",
+    "photo_credit": "U.S. Department of Commerce (NOAA, 2017)",
+    "photo_license": "Dominio público · US Government work"
   },
   {
     "id": "james-fox",
