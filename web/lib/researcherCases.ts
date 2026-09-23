@@ -44,6 +44,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   mack: ["ariel-school-1994"],
   hind: ["ariel-school-1994"],
   delonge: ["wikileaks-podesta-2016", "mccasland-disappearance-2026"],
+  greer: ["disclosure-project-2001"],
   poher: ["trans-en-provence-1981", "geipan-gepan-france"],
   "taylor-t": ["aawsap-skinwalker-2008"],
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
@@ -52,8 +53,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   villarroel: ["poss-i-transients-2025"],
   hastings: ["malmstrom-1967", "minot-afb-1968", "loring-afb-1975", "big-sur-vandenberg-1964"],
   randles: ["todmorden-godfrey-1980", "rendlesham-1980"],
-  salas: ["malmstrom-1967"],
-  callahan: ["jal1628-1986"],
+  salas: ["malmstrom-1967", "disclosure-project-2001"],
+  callahan: ["jal1628-1986", "disclosure-project-2001"],
   schuessler: ["cash-landrum-1980"],
   zeidman: ["coyne-1973", "battelle-special-report-1952"],
   "james-fox": ["varginha-1996"],
@@ -111,7 +112,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   schumer: ["uap-disclosure-act-2025"],
   gillibrand: ["uap-disclosure-act-2025"],
   rebelo: ["aldo-rebelo-disclosure-2026"],
-  sheehan: ["capitol-press-conference-2026"],
+  sheehan: ["capitol-press-conference-2026", "disclosure-project-2001"],
   "mcconnell-kirk": ["uap-disclosure-act-2025"],
 
   // D — periodistas

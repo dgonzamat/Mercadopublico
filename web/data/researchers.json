@@ -4639,6 +4639,62 @@
     ]
   },
   {
+    "id": "greer",
+    "name": "Steven M. Greer",
+    "flag": "🇺🇸",
+    "born": 1955,
+    "section": "A",
+    "section_label": "Organizadores de divulgación",
+    "section_label_en": "Disclosure organizers",
+    "credentials": "Médico de urgencias (retirado) · fundador de CSETI (1990) y del Disclosure Project (1993)",
+    "credentials_en": "Emergency physician (retired) · founder of CSETI (1990) and the Disclosure Project (1993)",
+    "bio_short": "Médico de urgencias de Virginia que dejó la medicina en 1998 para dedicarse a la ufología. Fundó CSETI en 1990, con protocolos para buscar contacto con inteligencias extraterrestres, y en 1993 el Disclosure Project, con el que reunió en 2001, en el National Press Club, a unos veinte ex militares y funcionarios que pidieron audiencias en el Congreso. Esa conferencia fijó el formato que luego adoptó la divulgación institucional; su deriva posterior —el documental «Sirius», que presentó como extraterrestre un esqueleto que resultó humano— lo alejó de los testigos que había reunido.",
+    "bio_short_en": "A Virginia emergency physician who left medicine in 1998 to devote himself to ufology. He founded CSETI in 1990, with protocols for seeking contact with extraterrestrial intelligence, and in 1993 the Disclosure Project, through which he gathered some twenty former military officers and officials at the National Press Club in 2001 to call for congressional hearings. That conference set the format later adopted by institutional disclosure; his later drift —the documentary 'Sirius', which presented as extraterrestrial a skeleton that turned out to be human— distanced him from the witnesses he had gathered.",
+    "works": [
+      {
+        "year": 2001,
+        "title": "Conferencia del Disclosure Project en el National Press Club",
+        "contribution": "Unos veinte testigos con cargo institucional piden audiencias en el Congreso bajo juramento",
+        "contribution_en": "Some twenty witnesses with institutional posts ask for congressional hearings under oath"
+      },
+      {
+        "year": 2001,
+        "title": "Disclosure Project Briefing Document (con Theodore C. Loder III)",
+        "contribution": "Dossier para prensa y Congreso con testimonios resumidos e informes Sturrock y COMETA",
+        "contribution_en": "Dossier for the press and Congress with summarized testimony and the Sturrock and COMETA reports"
+      },
+      {
+        "year": 2013,
+        "title": "Sirius (documental)",
+        "contribution": "Presentó el esqueleto de Atacama como extraterrestre; el análisis genético lo identificó como humano",
+        "contribution_en": "Presented the Atacama skeleton as extraterrestrial; genetic analysis identified it as human"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ABC News — 'Group Calls for Disclosure of UFO Info' (9 may 2001)",
+        "url": "https://abcnews.com/Technology/story?id=98572&page=1"
+      },
+      {
+        "name": "Disclosure Project Briefing Document (abril 2001) — archive.org",
+        "url": "https://archive.org/details/DisclosureProjectBriefingDocument"
+      },
+      {
+        "name": "Philip Klass — Skeptics UFO Newsletter n.º 68 (verano 2001)",
+        "url": "https://centerforinquiry.org/wp-content/uploads/sites/29/docs/SUN/SUN68.pdf",
+        "note": "Crítica escéptica contemporánea de la conferencia.",
+        "note_en": "Contemporary skeptical critique of the conference."
+      },
+      {
+        "name": "Wikipedia — Steven M. Greer",
+        "url": "https://en.wikipedia.org/wiki/Steven_M._Greer"
+      }
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/StevenGreer01%20%28cropped%29.jpg?width=400",
+    "photo_credit": "Energy Artist, Conscious Life Expo 2007 (Wikimedia Commons)",
+    "photo_license": "Dominio público (CC0)"
+  },
+  {
     "id": "hellyer",
     "name": "Paul Hellyer",
     "flag": "🇨🇦",
