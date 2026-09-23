@@ -83,7 +83,7 @@ web/
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
     frameworks.json
-    researchers.json    # 127 actores (sep 2026; cifra viva = su .length)
+    researchers.json    # 126 actores (sep 2026; cifra viva = su .length)
   scripts/
     build-cases.mjs     # agrega data/cases/*.json → data/cases.json
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
@@ -306,7 +306,7 @@ Las últimas 5 se cerraron con sustitutos cuyo `name` lo declara: SCMP en lugar 
 
 ## Deuda pendiente · fotos de actores
 
-Estado (sep 2026): **30/127 actores tienen foto** (27/92 en las secciones A–E; 3/35 en la sección F de experiencers, sumada después — ver más abajo). **No se perdió ninguna foto**, aunque la cuenta de A–E parezca decirlo: el «28/91» que este doc citaba es anterior a que existiera la sección F, y al crearla (`dd67a4fa`) **Whitley Strieber pasó de A a F con su foto puesta**, dejando A–E en 27/90. El total subió de 28 a 30. Queda escrito porque la trampa se va a repetir: **una cifra que era correcta puede volverse una falsa alarma sin que nadie la toque, si cambia la partición que la sostiene** — el 28/91 no envejeció por drift sino por dejar de ser comparable, y leído contra el 27/92 de hoy simula una pérdida que no ocurrió. El techo real NO son los restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista de A–E, estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35. La sección F tiene un techo estructuralmente más bajo: son testigos anónimos de sucesos de 1952–2007, la mayoría sin perfil público ni Wikipedia, a diferencia de los investigadores/oficiales de A–E.
+Estado (sep 2026): **30/126 actores tienen foto** (27/91 en las secciones A–E, tras retirar a Jonathan Caplan, que ningún caso enlazaba; 3/35 en la sección F de experiencers, sumada después — ver más abajo). **No se perdió ninguna foto**, aunque la cuenta de A–E parezca decirlo: el «28/91» que este doc citaba es anterior a que existiera la sección F, y al crearla (`dd67a4fa`) **Whitley Strieber pasó de A a F con su foto puesta**, dejando A–E en 27/90. El total subió de 28 a 30. Queda escrito porque la trampa se va a repetir: **una cifra que era correcta puede volverse una falsa alarma sin que nadie la toque, si cambia la partición que la sostiene** — el 28/91 no envejeció por drift sino por dejar de ser comparable, y leído contra el 27/92 de hoy simula una pérdida que no ocurrió. El techo real NO son los restantes — es la **licencia**: la mayoría de las figuras UAP no tienen foto libre en Commons (sus imágenes son material de prensa con copyright). Cobertura máxima realista de A–E, estimada en el análisis de jun 2026 (hecho sobre 81 actores; el corpus creció luego a 91): ~30-35. La sección F tiene un techo estructuralmente más bajo: son testigos anónimos de sucesos de 1952–2007, la mayoría sin perfil público ni Wikipedia, a diferencia de los investigadores/oficiales de A–E.
 
 Convención: el campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename EXACTO>?width=400`. Los filenames son **impredecibles**, así que **hay que verificarlos, no adivinarlos** — adivinar produce imágenes rotas (404), peor que el avatar.
 
