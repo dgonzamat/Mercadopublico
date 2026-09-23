@@ -2801,7 +2801,10 @@
         "name": "Astropuerta — sitio de Germán Puerta Restrepo",
         "url": "https://www.astropuerta.com.co/"
       }
-    ]
+    ],
+    "photo": "/researchers/puerta.jpg",
+    "photo_credit": "MrZackguti, «German puerta.jpg» (Wikimedia Commons, recorte)",
+    "photo_license": "CC-BY-SA 4.0"
   },
   {
     "id": "haines",
