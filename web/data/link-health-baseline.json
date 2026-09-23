@@ -1,110 +1,13 @@
 {
-  "generatedAt": "2026-09-17",
+  "generatedAt": "2026-09-23",
   "note": "Línea base de link rot conocido. Regenerar solo tras arreglar citas: node scripts/check-links.mjs --update-baseline. El gate (--baseline) falla con roturas NUEVAS, no con estas.",
-  "totalUrls": 861,
-  "deadCount": 33,
+  "totalUrls": 885,
+  "deadCount": 5,
   "dead": {
-    "http://www.nicap.org/731018coyne_dir.htm": {
-      "status": 404,
-      "origins": [
-        "case:coyne-1973"
-      ]
-    },
-    "http://www.nicap.org/jal1628dir.htm": {
-      "status": 404,
-      "origins": [
-        "case:jal1628-1986"
-      ]
-    },
-    "http://www.project1947.com/fig/twining.htm": {
-      "status": 404,
-      "origins": [
-        "case:twining-memo-1947"
-      ]
-    },
-    "http://www.roswellfiles.com/FOIA/RDDR-1947-07-08.htm": {
-      "status": 404,
-      "origins": [
-        "case:roswell-1947"
-      ]
-    },
-    "https://documents2.theblackvault.com/documents/ufos/bolendermemo.pdf": {
-      "status": 404,
-      "origins": [
-        "case:bolender-memo-1969"
-      ]
-    },
-    "https://documents2.theblackvault.com/documents/ufos/coyne-helicopter-incident.pdf": {
-      "status": 404,
-      "origins": [
-        "case:coyne-1973"
-      ]
-    },
-    "https://documents2.theblackvault.com/documents/ufos/twining-memo.pdf": {
-      "status": 404,
-      "origins": [
-        "case:twining-memo-1947"
-      ]
-    },
-    "https://feeds.bbci.co.uk/news/uk-scotland-50262655": {
-      "status": 404,
-      "origins": [
-        "case:robert-taylor-livingston-1979"
-      ]
-    },
-    "https://media.defense.gov/2010/Oct/27/2001329751/-1/-1/0/AFD-101027-029.pdf": {
-      "status": 404,
-      "origins": [
-        "case:roswell-1947"
-      ]
-    },
-    "https://media.defense.gov/2010/Oct/27/2001329755/-1/-1/0/AFD-101027-030.pdf": {
-      "status": 404,
-      "origins": [
-        "case:roswell-1947"
-      ]
-    },
-    "https://ufologie.patrickgross.org/htm/mcdonald.htm": {
-      "status": 404,
-      "origins": [
-        "case:levelland-1957"
-      ]
-    },
-    "https://vladimi9.wixsite.com/vasco-citizen-science": {
-      "status": 404,
-      "origins": [
-        "case:poss-i-transients-2025",
-        "researcher:villarroel"
-      ]
-    },
     "https://www.aaro.mil/Annual-Reports/": {
       "status": 404,
       "origins": [
         "case:lake-huron-2023"
-      ]
-    },
-    "https://www.archives.gov/research/jfk/legislative-history": {
-      "status": 404,
-      "origins": [
-        "case:uap-disclosure-act-2025"
-      ]
-    },
-    "https://www.archives.gov/research/military/ww2/navy/rg-38.html": {
-      "status": 404,
-      "origins": [
-        "case:nara-rg38-1947"
-      ]
-    },
-    "https://www.argentina.gob.ar/fuerza-aerea/cefae": {
-      "status": 404,
-      "origins": [
-        "case:bariloche-1995"
-      ]
-    },
-    "https://www.cbsnews.com/news/pentagon-ufo-files-release-trump/": {
-      "status": 404,
-      "origins": [
-        "case:pursue-release-2026"
       ]
     },
     "https://www.chinadaily.com.cn/china/2013-05/14/content_16498785.htm": {
@@ -113,40 +16,10 @@
         "case:china-spiral-1981"
       ]
     },
-    "https://www.cia.gov/readingroom/docs/CIA-RDP91-00929R000400600006-9.pdf": {
-      "status": 404,
-      "origins": [
-        "case:robertson-panel-1953"
-      ]
-    },
-    "https://www.cnn.com/2015/03/26/politics/john-podesta-ufos/index.html": {
-      "status": 404,
-      "origins": [
-        "case:wikileaks-podesta-2016"
-      ]
-    },
-    "https://www.defensa.gob.es/ejercitoaire/": {
-      "status": 404,
-      "origins": [
-        "case:manises-1979"
-      ]
-    },
     "https://www.huffpost.com/entry/chile-navy-ufo_n_5878fa90e4b0eb9e49bfb4b2": {
       "status": 404,
       "origins": [
         "case:naval-chile-2014"
-      ]
-    },
-    "https://www.morningstar.com/news/pr-newswire/20260528ny70439/push-for-uap-ufo-transparency-intensifies-as-members-of-congress-and-whistleblowers-call-for-release-of-groundbreaking-conclusive-files": {
-      "status": 404,
-      "origins": [
-        "case:pursue-release-2026"
-      ]
-    },
-    "https://www.nasa.gov/news-release/nasa-to-announce-results-findings-of-uap-independent-study/": {
-      "status": 404,
-      "origins": [
-        "case:nasa-uap-study-2023"
       ]
     },
     "https://www.nj.gov/governor/news/": {
@@ -155,52 +28,10 @@
         "case:mystery-drones-east-coast-2024"
       ]
     },
-    "https://www.silvarecord.com/2019/06/13/wilson-davis-memo/": {
-      "status": 404,
-      "origins": [
-        "case:wilson-davis-2002"
-      ]
-    },
-    "https://www.theblackvault.com/documentarchive/iranian-air-force-pilots-encounter-with-a-uap-1976/": {
-      "status": 404,
-      "origins": [
-        "case:tehran-1976"
-      ]
-    },
-    "https://www.theblackvault.com/documentarchive/project-bluebook-collection/": {
-      "status": 404,
-      "origins": [
-        "case:project-blue-book-1952-1969"
-      ]
-    },
-    "https://www.theblackvault.com/documentarchive/project-twinkle-final-report/": {
-      "status": 404,
-      "origins": [
-        "case:sandia-1948"
-      ]
-    },
-    "https://www.theblackvault.com/documentarchive/the-defense-intelligence-reference-documents/": {
-      "status": 404,
-      "origins": [
-        "case:aawsap-skinwalker-2008"
-      ]
-    },
     "https://www.twz.com/the-war-zone": {
       "status": 404,
       "origins": [
         "researcher:kevin-day"
-      ]
-    },
-    "https://www.whitehouse.gov/briefing-room/press-briefings/": {
-      "status": 404,
-      "origins": [
-        "case:mystery-drones-east-coast-2024"
-      ]
-    },
-    "https://www.yahoo.com/news/ufos-sighted-ladakh-report-183000210.html": {
-      "status": 404,
-      "origins": [
-        "case:ladakh-itbp-2012"
       ]
     }
   }
