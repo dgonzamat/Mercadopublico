@@ -577,6 +577,7 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "delphos-ring-1971": "Commons seco; sin imagen libre del incidente",
   "mystery-drones-east-coast-2024": "sin imagen libre; archive.org/wargovUFO sin hits",
   "val-johnson-1979": "solo una reconstrucción amateur y un doc CIA ajeno — ambos engañosos",
+  "nz-defence-force-declass-2010": "Crown copyright NZ (100 años); catálogo NatLib: «All rights reserved»; la PDM de archive.org es errónea",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
