@@ -195,7 +195,10 @@
         "note": "Primer best-seller sobre el supuesto encubrimiento de la USAF.",
         "note_en": "First best-seller on the alleged USAF cover-up."
       }
-    ]
+    ],
+    "photo": "/researchers/keyhoe.jpg",
+    "photo_credit": "The Mike Wallace Interview (1958), fotograma de «Donald Keyhoe on Mike Wallace.gif» (Wikimedia Commons)",
+    "photo_license": "Dominio público"
   },
   {
     "id": "mcdonald",
@@ -2798,7 +2801,10 @@
         "name": "Astropuerta — sitio de Germán Puerta Restrepo",
         "url": "https://www.astropuerta.com.co/"
       }
-    ]
+    ],
+    "photo": "/researchers/puerta.jpg",
+    "photo_credit": "MrZackguti, «German puerta.jpg» (Wikimedia Commons, recorte)",
+    "photo_license": "CC-BY-SA 4.0"
   },
   {
     "id": "haines",
