@@ -12,6 +12,7 @@ import "leaflet/dist/leaflet.css";
 import { atlasPoints as cases } from "@/lib/atlasData";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
+import { useLocale } from "@/components/explorer/useLocale";
 
 type Tier = "S" | "A" | "B";
 
@@ -63,6 +64,8 @@ export default function WorldMap({
     B: true,
   });
   const [country, setCountry] = useState<string>("all");
+  // <option> solo admite texto: el dual-span de <T> no sirve ahí.
+  const locale = useLocale();
   const counts: Record<Tier, number> = {
     S: cases.filter((c) => c.tier === "S").length,
     A: cases.filter((c) => c.tier === "A").length,
@@ -145,10 +148,10 @@ export default function WorldMap({
           onChange={(e) => setCountry(e.target.value)}
           className="block w-full max-w-xs border border-border bg-panel px-3 py-2 font-mono text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          <option value="all">{`Todos · ${cases.length}`}</option>
+          <option value="all">{`${locale === "es" ? "Todos" : "All"} · ${cases.length}`}</option>
           {countryOptions.map((o) => (
             <option key={o.code} value={o.code}>
-              {`${o.name} · ${o.n}`}
+              {`${locale === "es" ? o.name : countryEn(o.name)} · ${o.n}`}
             </option>
           ))}
         </select>
@@ -211,7 +214,9 @@ export default function WorldMap({
             >
               <Tooltip>
                 <div style={{ fontFamily: "monospace", fontSize: 12 }}>
-                  <strong>{c.name}</strong>
+                  <strong>
+                    <T es={c.name} en={c.name_en ?? c.name} />
+                  </strong>
                   <br />
                   <T es={c.country_name} en={countryEn(c.country_name)} /> ·{" "}
                   {c.year_start} · Tier {c.tier} · {c.probability}%

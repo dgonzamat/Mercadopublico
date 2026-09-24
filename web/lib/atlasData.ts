@@ -13,6 +13,7 @@ import atlasPointsData from "@/data/atlas-points.json";
 export type AtlasPoint = {
   id: string;
   name: string;
+  name_en?: string;
   tier: "S" | "A" | "B";
   country: string;
   country_name: string;
