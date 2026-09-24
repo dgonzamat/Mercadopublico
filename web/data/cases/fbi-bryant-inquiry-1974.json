@@ -69,5 +69,16 @@
       "note": "Papeles personales de Bryant, incluida correspondencia de su trabajo con CAUS.",
       "note_en": "Bryant's personal papers, including correspondence from his CAUS work."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D014 — correspondencia del FBI sobre avistamientos OVNI, 1967 y 1974 (5 págs.)",
+      "title_en": "FBI-UAP-D014 — FBI correspondence on UFO sightings, 1967 and 1974 (5 pp.)",
+      "source": "PURSUE, entrega 04 (war.gov/UFO)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf"
+    }
   ]
 }

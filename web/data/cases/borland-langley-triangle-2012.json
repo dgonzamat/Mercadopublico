@@ -96,5 +96,16 @@
       "note_en": "Source of the formal ICIG statement and the Director's Initiatives Group context.",
       "name_en": "Liberation Times — 'Intelligence watchdog warns of FBI referral over alleged disclosure of UAP whistleblower testimony' (Aug 11, 2026)"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/borland-written-testimony-2025.pdf",
+      "type": "pdf",
+      "title": "Testimonio escrito de Dylan Borland ante el Comité de Supervisión de la Cámara (9 sep 2025, 2 págs.)",
+      "title_en": "Dylan Borland's written testimony to the House Oversight Committee (9 Sep 2025, 2 pp.)",
+      "source": "U.S. House Committee on Oversight and Government Reform",
+      "license": "Registro público del Congreso de EE.UU. (testimonio escrito publicado por el Comité de Supervisión de la Cámara)",
+      "fallbackUrl": "https://oversight.house.gov/wp-content/uploads/2025/09/Borland-Written-Testimony.pdf"
+    }
   ]
 }

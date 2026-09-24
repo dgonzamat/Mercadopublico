@@ -19,14 +19,17 @@
   "epistemicStatus": "documented",
   "probability": 28,
   "posterior": {
-    "mundano_natural": 0.40,
+    "mundano_natural": 0.4,
     "humana_clasificada": 0.12,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.13,
     "nohumano_abierto": 0.05,
     "indet": 0.28
   },
-  "patterns": ["8h", "8m"],
+  "patterns": [
+    "8h",
+    "8m"
+  ],
   "category": "incident",
   "summary": "Entre 2003 y 2005, el policía militar de la Fuerza Aérea Jeffrey Nuccetelli documentó cinco incidentes UAP en la Base Vandenberg (California), sede del Proyecto de Defensa Antimisiles Nacional, durante lo que la Oficina Nacional de Reconocimiento calificó como los lanzamientos «más importantes en veinticinco años». El más citado, el 14 de octubre de 2003, es el conocido como «Vandenberg Red Square»: contratistas de Boeing reportaron un cuadrado rojo enorme y luminoso suspendido en silencio sobre dos instalaciones de defensa antimisiles. Esa misma noche, Nuccetelli respondió a un segundo incidente con una nave rectangular vista por cinco testigos, y meses después tuvo su propio encuentro fuera de servicio con una esfera azul-blanca que aparecía y desaparecía en el cielo. Declaró bajo juramento el 9 de septiembre de 2025 ante el Task Force de Declasificación de la Cámara de Representantes.",
   "summary_en": "Between 2003 and 2005, Air Force military police officer Jeffrey Nuccetelli documented five UAP incidents at Vandenberg Air Force Base, California, home of the National Missile Defense Project, during what the National Reconnaissance Office called the 'most important' launches 'in twenty-five years'. The most cited, on October 14, 2003, is known as the 'Vandenberg Red Square': Boeing contractors reported a massive, glowing red square silently hovering over two missile defense sites. That same night, Nuccetelli responded to a second incident involving a rectangular craft seen by five witnesses, and months later he had his own off-duty encounter with a blue-white sphere that appeared and disappeared in the sky. He testified under oath on September 9, 2025, before the House Task Force on the Declassification of Federal Secrets.",
@@ -80,6 +83,17 @@
       "url": "https://www.vanguardenterprise.org/team",
       "note": "Confirma el rol de Nuccetelli como director de desarrollo.",
       "note_en": "Confirms Nuccetelli's role as development director."
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/nuccetelli-written-testimony-2025.pdf",
+      "type": "pdf",
+      "title": "Testimonio escrito de Jeffrey Nuccetelli ante el Comité de Supervisión de la Cámara (9 sep 2025, 3 págs.)",
+      "title_en": "Jeffrey Nuccetelli's written testimony to the House Oversight Committee (9 Sep 2025, 3 pp.)",
+      "source": "U.S. House Committee on Oversight and Government Reform",
+      "license": "Registro público del Congreso de EE.UU. (testimonio escrito publicado por el Comité de Supervisión de la Cámara)",
+      "fallbackUrl": "https://oversight.house.gov/wp-content/uploads/2025/09/Nuccetelli-Written-Testimony.pdf"
     }
   ]
 }
