@@ -60,6 +60,27 @@
     {
       "name": "Flying Saucer Working Party — entrada enciclopédica",
       "url": "https://en.wikipedia.org/wiki/Flying_Saucer_Working_Party"
+    },
+    {
+      "name": "The National Archives (UK) — DEFE 44/119, «Unidentified Flying Objects» (1951), digitalizado",
+      "name_en": "The National Archives (UK) — DEFE 44/119, 'Unidentified Flying Objects' (1951), digitised",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C11001295",
+      "note": "Ficha de catálogo del expediente que contiene el informe del grupo de trabajo.",
+      "note_en": "Catalogue entry for the file containing the working party's report."
+    },
+    {
+      "name": "The National Archives (UK) — PREM 11/855, petición del primer ministro Churchill al secretario del Aire (28 jul 1952)",
+      "name_en": "The National Archives (UK) — PREM 11/855, Prime Minister Churchill's request to the Secretary of State for Air (28 Jul 1952)",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C2037672",
+      "note": "La minuta de Churchill preguntando qué hay detrás de los «platillos volantes», digitalizada.",
+      "note_en": "Churchill's minute asking what lies behind the 'flying saucers', digitised."
+    },
+    {
+      "name": "Hansard — debate de la Cámara de los Lores «Unidentified Flying Objects» (18 ene 1979)",
+      "name_en": "Hansard — House of Lords debate 'Unidentified Flying Objects' (18 Jan 1979)",
+      "url": "https://api.parliament.uk/historic-hansard/lords/1979/jan/18/unidentified-flying-objects",
+      "note": "Debate completo impulsado por el conde de Clancarty. Open Parliament Licence.",
+      "note_en": "The full debate led by the Earl of Clancarty. Open Parliament Licence."
     }
   ],
   "documents": [

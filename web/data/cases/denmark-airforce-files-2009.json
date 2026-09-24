@@ -55,6 +55,13 @@
     {
       "name": "SUFOI — Scandinavian UFO Information (archivo receptor de los expedientes daneses)",
       "url": "https://www.sufoi.dk/"
+    },
+    {
+      "name": "Forsvaret (Dinamarca) — archivo OVNI de la Fuerza Aérea publicado en 2009",
+      "name_en": "Danish Defence — the Air Force's UFO archive published in 2009",
+      "url": "https://www.forsvaret.dk/da/organisation/flyvevaabnet/flyvevabnets-historie/flyvevabnets-ufo-arkiv--offentliggjort-i-2009/",
+      "note": "Página oficial con los cuatro PDF escaneados del archivo (329 págs.).",
+      "note_en": "The official page with the archive's four scanned PDFs (329 pp.)."
     }
   ],
   "documents": [
