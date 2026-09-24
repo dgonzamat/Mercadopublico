@@ -15,6 +15,7 @@
   },
   "tier": "A",
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
   "epistemicStatus": "documented",
   "probability": 40,
   "summary": "El 19 de noviembre de 2023, a las 14:30, la torre de control del aeropuerto de Imphal, en el noreste de la India, recibió aviso de la fuerza de seguridad del aeródromo de que un objeto blanco no identificado estaba sobre la torre. Quedó visible hasta las 16:05. Se suspendieron despegues y aterrizajes durante casi tres horas con un aviso oficial a pilotos, dos vuelos se desviaron y tres salidas se retrasaron. La Fuerza Aérea envió dos cazas Rafale, que no encontraron nada. El Ministerio de Aviación Civil lo confirmó todo ante el Parlamento.",

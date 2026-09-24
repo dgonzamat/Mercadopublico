@@ -1,0 +1,80 @@
+{
+  "id": "orange-caritat-1951",
+  "num": 403,
+  "name": "Orange-Caritat · el objeto plateado perseguido por dos Vampire",
+  "name_en": "Orange-Caritat · the silver object chased by two Vampires",
+  "year_start": 1951,
+  "country": "FR",
+  "country_name": "Francia",
+  "flag": "🇫🇷",
+  "location": {
+    "lat": 44.14,
+    "lng": 4.8667,
+    "place": "Base aérea 115 de Orange-Caritat (Vaucluse) y cielo de los Altos Alpes",
+    "place_en": "Orange-Caritat Air Base 115 (Vaucluse) and the sky over the Hautes-Alpes"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "epistemicStatus": "documented",
+  "probability": 45,
+  "summary": "El 15 de junio de 1951, hacia las 11:30, dos pilotos de caza de la 5.ª Escuadra, en un vuelo de entrenamiento con Vampire desde la base de Orange-Caritat, vieron un objeto plateado, muy brillante y aparentemente inmóvil hacia el macizo del Pelvoux. Al acercarse, se volvió oblongo y se alejó al este subiendo, más rápido que sus aviones, hasta perderse tras seis minutos de persecución. El coronel de la base informó al mando con los relatos de ambos pilotos. El GEIPAN lo clasifica «D»: no identificado.",
+  "summary_en": "On 15 June 1951, at about 11:30, two fighter pilots of the 5th Fighter Wing, on a training flight in Vampires from Orange-Caritat air base, saw a silver, very bright and apparently motionless object towards the Pelvoux massif. As they closed in, it turned oblong and moved off to the east while climbing, faster than their aircraft, until it was lost after a six-minute chase. The base's colonel reported to command with both pilots' accounts. GEIPAN classes it 'D': unidentified.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "whatHappened": "La mañana del 15 de junio de 1951, una patrulla de la 5.ª Escuadra de Caza despegó hacia el sur desde la base aérea 115 de Orange-Caritat, en el Vaucluse, para un vuelo de entrenamiento con cazas a reacción de Havilland Vampire. La torre registró el despegue a las 10:23 hora universal. A los pocos minutos, uno de los aviones notificó que la luz verde de su tren de aterrizaje izquierdo seguía encendida: la compuerta no había cerrado. Mientras el jefe de patrulla le ordenaba volver, los otros dos pilotos —un teniente al mando de la escuadrilla y un sargento primero— hacían eses a su alrededor para no perderlo de vista, a unos 6.000 pies y al norte del aeródromo.\n\nEn uno de esos virajes, el sargento primero vio a su derecha y algo más alto algo que tomó por un avión. Al mirarlo con atención comprobó que no se movía: parecía circular o esférico, de color plateado y muy brillante, sin relieve. Avisó al teniente, que tomó la dirección de la patrulla y puso rumbo hacia el objeto, al 080, sin dejar de subir. Durante unos dos minutos el objeto no pareció moverse; al acercarse, su forma redonda se confirmaba y su brillo obligaba a quitarse las gafas de sol. Hacia los 10.000 pies, el teniente tuvo la impresión de estar a su altura: el objeto se recortaba al sur del macizo del Pelvoux, a la altura de sus cumbres nevadas.\n\nEntonces cambió. En los informes, el objeto adoptó bruscamente una forma alargada y empezó a alejarse hacia el este, subiendo con un ángulo suave. Los pilotos lo persiguieron con el mismo rumbo, con una velocidad que nunca bajó de 250 nudos y subiendo hasta 16.000 pies. El objeto se hacía cada vez más pequeño; lo perdieron, volvió a aparecer como un punto sobre el horizonte y desapareció del todo al cabo de unos seis minutos de persecución, cuando los aviones estaban sobre Serres, en el valle del Petit Buëch. El teniente anotó que no tuvo que cambiar de rumbo en ningún momento desde que el objeto empezó a moverse.\n\nEl coronel que mandaba la base interrogó a los dos pilotos una hora y media después y, el 19 de junio, envió sus informes al mando de la 1.ª División Aérea y al de la 4.ª Región Aérea. Los describió como aviadores experimentados, ponderados y sin imaginación desbordante, y subrayó que sus relatos eran idénticos. Resumió las observaciones: un objeto primero inmóvil y esférico a unos 10.000 pies sobre la región de Serres-Veynes-Aspres, luego oblongo y en movimiento hacia el este, con una velocidad de subida y horizontal superior a la de los Vampire. Pidió a la Gendarmería de los Altos Alpes que averiguara si se había visto desde tierra. El 25 de junio, el general de la 4.ª Región remitió el expediente al Estado Mayor en París con el asunto «ingenio extraño que circula por el espacio aéreo de la base de Orange-Caritat». El legajo se recuperó en 1959 en los archivos del Estado Mayor y hoy lo publica el GEIPAN, el servicio de estudio de fenómenos aéreos de la agencia espacial francesa, con la clasificación «D»: fenómeno extraño y consistente, no identificado.",
+  "whatHappened_en": "On the morning of 15 June 1951, a patrol of the 5th Fighter Wing took off southwards from Air Base 115 at Orange-Caritat, in the Vaucluse, for a training flight in de Havilland Vampire jet fighters. The tower logged the take-off at 10:23 universal time. A few minutes later one of the aircraft reported that the green light for its left landing gear was still on: the door had not closed. While the patrol leader ordered it back, the other two pilots —a lieutenant commanding the flight and a sergeant-chef— flew S-turns around it so as not to lose sight of it, at about 6,000 feet and north of the airfield.\n\nIn one of those turns the sergeant-chef saw, to his right and somewhat higher, something he took for an aircraft. Looking more carefully he saw it was not moving: it seemed circular or spherical, silver in colour and very bright, with no visible relief. He alerted the lieutenant, who took the lead of the patrol and set course towards the object, on 080, while continuing to climb. For about two minutes the object did not seem to move; as they closed in its round shape was confirmed and its brightness made them take off their sunglasses. At about 10,000 feet the lieutenant had the impression of being level with it: the object stood out south of the Pelvoux massif, at the height of its snowy summits.\n\nThen it changed. In the reports, the object abruptly took an elongated shape and began to move away to the east, climbing at a shallow angle. The pilots chased it on the same heading, at a speed that never fell below 250 knots and climbing to 16,000 feet. The object grew ever smaller; they lost it, it reappeared as a dot on the horizon and vanished completely after some six minutes of pursuit, when the aircraft were over Serres, in the Petit Buëch valley. The lieutenant noted that he never had to change heading from the moment the object began to move.\n\nThe colonel commanding the base questioned the two pilots an hour and a half later and, on 19 June, sent their reports to the commanders of the 1st Air Division and the 4th Air Region. He described them as experienced, level-headed airmen without an overactive imagination, and stressed that their accounts were identical. He summarised the observations: an object first motionless and spherical at about 10,000 feet over the Serres-Veynes-Aspres area, then oblong and moving east, with a rate of climb and a horizontal speed greater than the Vampires'. He asked the Hautes-Alpes Gendarmerie to find out whether it had been seen from the ground. On 25 June the general of the 4th Region forwarded the file to the General Staff in Paris under the subject 'strange craft moving in the airspace of Orange-Caritat air base'. The file was retrieved in 1959 from the General Staff archives and is now published by GEIPAN, the French space agency's aerial-phenomena study unit, with the classification 'D': strange and consistent phenomenon, unidentified.",
+  "whyMatters": "Orange-Caritat es uno de los casos militares franceses documentados más tempranos, y tiene la ventaja de haberse conservado casi intacto. El expediente guarda los dos relatos individuales, redactados el mismo día y antes de que los pilotos pudieran contrastarlos por escrito, y la síntesis del coronel que los interrogó. Los relatos coinciden en lo esencial y difieren en detalles razonables —quién vio primero, a qué altura estaba cada uno—, que es lo que se espera de dos testigos reales. Además, el caso no fue fabricado para la prensa: circuló por la vía jerárquica, de la base a la región y al Estado Mayor, con el rótulo de asunto técnico.\n\nLa explicación más natural para un objeto plateado, brillante y aparentemente inmóvil a pleno día en 1951 es un globo estratosférico de gran altitud: en esos años se lanzaban globos de plástico que, iluminados por el Sol, se ven como esferas plateadas y parecen quietos. Los aviones que suben hacia ellos suelen tener la impresión de acercarse y luego de verlos alejarse, porque el globo está mucho más alto y lejos de lo que parece. El propio GEIPAN reconoce que varias descripciones hacen pensar en un globo visto de lejos, pero descarta la hipótesis porque uno de los pilotos describe un alejamiento rápido cuando intentaba acercarse. Hay que añadir el cambio a forma alargada y el alejamiento continuo hacia el este, que un globo solo reproduciría con viento fuerte y un efecto de perspectiva.\n\nPor eso el caso entra en el corpus con una partición abierta. Una misidentificación convencional —un globo, con la ilusión de distancia típica de estas persecuciones— tiene peso real; también lo tiene la posibilidad de un ingenio experimental, en una época en que Francia y sus aliados ensayaban globos y aparatos de gran altitud. Pero la clasificación oficial francesa es «no identificado», y el corpus la respeta dejando un tramo indeterminado amplio. El caso sirve, además, para comparar la cultura del GEPAN y el GEIPAN con la de otros organismos: publica el expediente completo, explica qué hipótesis evaluó y por qué la descarta.",
+  "whyMatters_en": "Orange-Caritat is one of the earliest documented French military cases, and it has the advantage of having survived almost intact. The file keeps the two individual accounts, written the same day and before the pilots could compare them in writing, and the synthesis by the colonel who questioned them. The accounts agree on the essentials and differ in reasonable details —who saw it first, at what height each was—, which is what one expects of two real witnesses. Moreover, the case was not manufactured for the press: it moved up the chain of command, from base to region to General Staff, labelled as a technical matter.\n\nThe most natural explanation for a silver, bright and apparently motionless object in broad daylight in 1951 is a high-altitude stratospheric balloon: in those years plastic balloons were being launched that, lit by the Sun, look like silver spheres and seem still. Aircraft climbing towards them often have the impression of closing in and then of seeing them move away, because the balloon is much higher and farther than it looks. GEIPAN itself acknowledges that several descriptions suggest a balloon seen from afar, but rejects the hypothesis because one of the pilots describes a rapid departure when he tried to close in. To that must be added the change to an elongated shape and the steady departure eastwards, which a balloon would only reproduce with a strong wind and a perspective effect.\n\nThat is why the case enters the corpus with an open partition. A conventional misidentification —a balloon, with the illusion of distance typical of these chases— carries real weight; so does the possibility of an experimental craft, at a time when France and its allies were testing high-altitude balloons and vehicles. But the official French classification is 'unidentified', and the corpus respects it by leaving a broad undetermined share. The case also serves to compare the culture of GEPAN and GEIPAN with that of other bodies: it publishes the full file, explains which hypothesis it evaluated and why it rejects it.",
+  "evidence": [
+    "Informe del coronel al mando de la base aérea 115 (19 jun 1951) a la 1.ª División Aérea y a la 4.ª Región Aérea, con la síntesis de las observaciones",
+    "Relatos firmados por el teniente jefe de escuadrilla y el sargento primero de la escuadrilla de caza I/5 «Vendée» (15 jun 1951)",
+    "Objeto plateado, muy brillante y esférico, aparentemente inmóvil a unos 10.000 pies; luego oblongo y alejándose al este mientras subía",
+    "Persecución de unos seis minutos al rumbo 080, a no menos de 250 nudos y hasta 16.000 pies, hasta perderlo sobre Serres",
+    "Remisión al Estado Mayor en París (25 jun 1951); clasificación GEIPAN «D» con la hipótesis del globo estratosférico evaluada y descartada"
+  ],
+  "evidence_en": [
+    "Report by the colonel commanding Air Base 115 (19 Jun 1951) to the 1st Air Division and the 4th Air Region, with the synthesis of the observations",
+    "Signed accounts by the lieutenant commanding the flight and the sergeant-chef of fighter squadron I/5 'Vendée' (15 Jun 1951)",
+    "A silver, very bright, spherical object, apparently motionless at about 10,000 feet; then oblong and moving away to the east while climbing",
+    "A chase of about six minutes on heading 080, at no less than 250 knots and up to 16,000 feet, until it was lost over Serres",
+    "Forwarding to the General Staff in Paris (25 Jun 1951); GEIPAN classification 'D', with the stratospheric-balloon hypothesis evaluated and rejected"
+  ],
+  "sources": [
+    {
+      "name": "GEIPAN (CNES) — ficha del caso «[AERO MIL] Orange (84) 15.06.1951», clasificación D",
+      "name_en": "GEIPAN (CNES) — case file '[AERO MIL] Orange (84) 15.06.1951', classification D",
+      "url": "https://www.cnes-geipan.fr/fr/cas/1951-06-00002",
+      "note": "Resumen oficial, clasificación y evaluación de la hipótesis del globo; solo enlace (© CNES).",
+      "note_en": "Official summary, classification and evaluation of the balloon hypothesis; link only (© CNES)."
+    },
+    {
+      "name": "GEIPAN (CNES) — expediente «PV AERO (1951208633)»: bordereau del Estado Mayor, informe del coronel de la BA 115 y relatos de los dos pilotos (9 págs.)",
+      "name_en": "GEIPAN (CNES) — file 'PV AERO (1951208633)': General Staff covering note, the BA 115 colonel's report and the two pilots' accounts (9 pp.)",
+      "url": "https://www.cnes-geipan.fr/sites/default/files/PV%20AERO%20%281951208633%29.pdf",
+      "note": "Fuente primaria escaneada; los nombres de los pilotos aparecen tachados.",
+      "note_en": "Scanned primary source; the pilots' names are redacted."
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.09,
+    "indet": 0.32
+  },
+  "documents": [
+    {
+      "src": "/pursue/orange-caritat-1951-context.jpg",
+      "type": "image",
+      "title": "Contexto · un SE.535 Mistral, la versión francesa del de Havilland Vampire que volaba la 5.ª Escuadra",
+      "title_en": "Context · an SE.535 Mistral, the French-built version of the de Havilland Vampire flown by the 5th Fighter Wing",
+      "source": "S.N.C.A.S.E. SE.535 Mistral (28479693102).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:S.N.C.A.S.E._SE.535_Mistral_%E2%80%987-CE_-_Mistral_-_S.N.C.A.S.E._-_535_-_N%E3%82%9C4%E2%80%99_(28479693102).jpg"
+    }
+  ]
+}

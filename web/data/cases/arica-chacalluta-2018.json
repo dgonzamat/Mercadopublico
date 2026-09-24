@@ -1,0 +1,78 @@
+{
+  "id": "arica-chacalluta-2018",
+  "num": 404,
+  "name": "Arica · la luz que persiguió el avión de Carabineros",
+  "name_en": "Arica · the light chased by the Carabineros aircraft",
+  "year_start": 2018,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -18.3485,
+    "lng": -70.3387,
+    "place": "Aeropuerto Internacional Chacalluta, Arica (región de Arica y Parinacota)",
+    "place_en": "Chacalluta International Airport, Arica (Arica y Parinacota region)"
+  },
+  "tier": "B",
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "summary": "El 20 de febrero de 2018, a las 20:35, los controladores de la torre del aeropuerto de Chacalluta, en Arica, vieron una luz blanca intensa sobre el aeródromo que no correspondía a ningún tráfico. Avisaron por radio al avión de Carabineros C52, que patrullaba la frontera con Perú; su piloto la vio, viró para acercarse y la perdió. No hubo eco de radar ni transpondedor. El SEFAA, la oficina oficial chilena, lo investigó y lo cerró en 2025 como «Relato» por falta de imágenes, con un dron como hipótesis principal.",
+  "summary_en": "On 20 February 2018, at 20:35, the controllers in the tower at Chacalluta airport, in Arica, saw an intense white light over the airfield that matched no traffic. They radioed the Carabineros aircraft C52, which was patrolling the border with Peru; its pilot saw it, turned to close in and lost it. There was no radar echo or transponder. SEFAA, Chile's official office, investigated it and closed it in 2025 as a 'Report' for lack of images, with a drone as its main hypothesis.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "La tarde del 20 de febrero de 2018 el cielo de Arica, en el extremo norte de Chile, estaba despejado: los informes meteorológicos del aeródromo de Chacalluta registran brisa ligera, sin neblina ni camanchaca y con visibilidad completa. Hacia las 20:35 hora local, con el Sol ya bajo el horizonte, un controlador que subía a la torre vio una luz sobre la vertical del aeropuerto. Su compañero en la posición de control pensó que era el avión de Carabineros que patrullaba la zona fronteriza, el C52, visible en la presentación de tráfico de la torre, que no es un radar. Le pidieron su posición: no era el avión. Chacalluta no tenía otro tráfico; los vuelos comerciales llegan del sur y, según el controlador, sobre la vertical del aeródromo no suele haber nada salvo algún sobrevuelo anunciado desde Tacna, en Perú.\n\nLa torre llamó entonces al C52, que venía de patrullar el límite político con Perú, cerca del hito 10, y descendía desde 8.000 pies. El audio, conservado y transcrito por el SEFAA, es breve. La torre pide el radial que cruza; el tripulante responde «075». Luego: «Carabineros 52, tengo un objeto volador no identificado a la izquierda de su posición. ¿Por casualidad le es posible observarlo?». El piloto responde que lo tiene a la vista, anuncia un viraje para acercarse y, al poco, informa que el objeto se alejó y desapareció: «era una luz blanca… no se podía identificar desde esta posición qué es lo que era». La torre cierra: «sí, la observamos desde esta posición». El controlador recordaría después que la luz se movió despacio desde la vertical hacia el este, hacia la cordillera, y que cuando el avión viró la perdió «muy rápido». Consultaron al control de Iquique: tampoco la tenía en el radar.\n\nEl antiguo CEFAA, hoy SEFAA, entrevistó a los testigos. El piloto del C52, un capitán de Carabineros que había sido representante de su institución ante el propio CEFAA, dio el testimonio más vívido: una luz blanca amarillenta, grande y fuerte, «cinco, seis, siete veces Venus», que su copiloto le pidió perseguir y grabar; mientras buscaba el teléfono, la luz perdió intensidad o se alejó hacia el cielo. Se declaró escéptico, pero descartó con firmeza un avión y una bengala, y dijo que en la persecución no sintió acercarse. Ofreció el vídeo del teléfono y el registro de vuelo, que la investigación nunca recibió.\n\nEl SEFAA publicó su informe en octubre de 2025. Comprobó que el Sol estaba 6° bajo el horizonte y que Venus, muy brillante, estaba casi rozándolo por el oeste, a 2,9°, así que no podía ser lo observado. Señaló incoherencias entre los testimonios sobre el aspecto, el desplazamiento y la posición del avión. Su conclusión es que lo relatado pudo ser compatible con una aeronave capaz de quedarse suspendida, sin transpondedor y sin eco en el radar de Iquique, es decir, con un pequeño aparato no tripulado o dron; en menor medida, con un fenómeno espacial. Sin imágenes que confrontar con los testimonios, cerró el caso como «Relato» y añadió que no hubo peligro para las operaciones aéreas.",
+  "whatHappened_en": "On the evening of 20 February 2018 the sky over Arica, in Chile's far north, was clear: the Chacalluta aerodrome's weather reports record a light breeze, no fog or camanchaca and full visibility. At about 20:35 local time, with the Sun already below the horizon, a controller climbing up to the tower saw a light directly over the airport. His colleague at the control position thought it was the Carabineros aircraft patrolling the border area, the C52, visible on the tower's traffic display, which is not a radar. They asked for its position: it was not the aircraft. Chacalluta had no other traffic; commercial flights arrive from the south and, according to the controller, there is usually nothing overhead except the occasional overflight announced from Tacna, in Peru.\n\nThe tower then called C52, which had been patrolling the political border with Peru, near boundary marker 10, and was descending from 8,000 feet. The audio, preserved and transcribed by SEFAA, is short. The tower asks for the radial it is crossing; the crew member answers '075'. Then: 'Carabineros 52, I have an unidentified flying object to the left of your position. Are you by any chance able to observe it?'. The pilot replies that he has it in sight, announces a turn to close in and, shortly after, reports that the object moved away and disappeared: 'it was a white light… it could not be identified from this position what it was'. The tower closes: 'yes, we observed it from this position'. The controller would later recall that the light moved slowly from overhead towards the east, towards the mountains, and that when the aircraft turned it lost it 'very fast'. They checked with Iquique control: it did not have it on radar either.\n\nThe former CEFAA, now SEFAA, interviewed the witnesses. The C52 pilot, a Carabineros captain who had been his institution's representative to CEFAA itself, gave the most vivid account: a yellowish-white light, large and strong, 'five, six, seven times Venus', which his co-pilot told him to chase and film; while he was reaching for his phone, the light faded or moved off into the sky. He called himself sceptical, but firmly ruled out an aircraft and a flare, and said he did not feel he was getting closer during the chase. He offered the phone video and the flight log, which the investigation never received.\n\nSEFAA published its report in October 2025. It established that the Sun was 6° below the horizon and that Venus, very bright, was almost touching it in the west, at 2.9°, so it could not be what was seen. It noted inconsistencies between the accounts regarding the appearance, the movement and the aircraft's position. Its conclusion is that what was reported could be consistent with an aircraft able to hover, with no transponder and no echo on the Iquique radar, that is, with a small unmanned aircraft or drone; to a lesser extent, with a space phenomenon. With no images to set against the testimony, it closed the case as a 'Report' and added that there had been no danger to air operations.",
+  "whyMatters": "El caso de Arica vale por su documentación más que por su fenómeno. Tiene lo que pocos casos recientes tienen: una grabación de la conversación entre la torre y un avión en vuelo, con la palabra «ovni» pronunciada por un controlador en servicio; un registro en el libro de novedades de la torre; tres testigos profesionales —dos controladores y una tripulación policial aérea— y una investigación oficial publicada con transcripciones, condiciones meteorológicas y una comprobación astronómica. Todo ello lo produjo y lo publica el SEFAA, la sección de la Dirección General de Aeronáutica Civil chilena heredera del CEFAA, que desde 2024 difunde sus expedientes en línea.\n\nEs también un buen ejemplo de cómo una oficina seria maneja un caso que no puede cerrar. El SEFAA no lo declara inexplicable ni lo atribuye a un origen extraordinario: descarta lo que puede descartar —Venus, el Sol, el tráfico conocido—, anota las contradicciones entre testigos, propone la hipótesis que mejor encaja —un dron sin transpondedor, invisible para el radar— y admite que sin imágenes no puede avanzar sin sesgo. La categoría «Relato» significa exactamente eso: hay testimonio consistente, pero no evidencia instrumental que lo confirme. El vídeo del teléfono del piloto, que nunca llegó a la investigación, es el eslabón que falta.\n\nPara el corpus, el caso cubre el norte fronterizo de Chile y se suma a la larga serie de avistamientos de aviadores sobre el desierto de Atacama que el propio SEFAA ha resuelto, desde lanzamientos de satélites hasta las luces de las flotas de pesca de calamar. Su partición reparte el peso principal entre una misidentificación convencional y un aparato humano no identificado —un dron en la frontera con Perú, propio o ajeno— y deja un tramo indeterminado amplio, porque la hipótesis oficial es plausible pero no demostrada.",
+  "whyMatters_en": "The Arica case is valuable for its documentation more than for its phenomenon. It has what few recent cases have: a recording of the conversation between the tower and an aircraft in flight, with the word 'UFO' spoken by an on-duty controller; an entry in the tower's log; three professional witnesses —two controllers and a police aircrew— and a published official investigation with transcripts, weather conditions and an astronomical check. All of it was produced and is published by SEFAA, the section of Chile's civil aviation authority that succeeded CEFAA and has been putting its files online since 2024.\n\nIt is also a good example of how a serious office handles a case it cannot close. SEFAA does not declare it inexplicable or attribute it to an extraordinary origin: it rules out what it can —Venus, the Sun, known traffic—, notes the contradictions between witnesses, proposes the hypothesis that fits best —a drone without a transponder, invisible to radar— and admits that without images it cannot go further without bias. The 'Report' category means exactly that: there is consistent testimony, but no instrumental evidence to confirm it. The video on the pilot's phone, which never reached the investigation, is the missing link.\n\nFor the corpus, the case covers Chile's northern border and joins the long series of airmen's sightings over the Atacama desert that SEFAA itself has resolved, from satellite launches to the lights of squid-fishing fleets. Its partition splits the main weight between a conventional misidentification and an unidentified human device —a drone on the border with Peru, one's own or another's— and leaves a broad undetermined share, because the official hypothesis is plausible but not proven.",
+  "evidence": [
+    "Transcripción del audio torre–C52: «Carabineros 52, tengo un objeto volador no identificado a la izquierda de su posición»; el piloto lo ve, vira y lo pierde",
+    "Nota en el libro de novedades de la torre de Chacalluta y reporte del servicio de tránsito aéreo",
+    "Entrevistas del SEFAA a un controlador y al piloto del C52: luz blanca intensa que se desplazó al este y se perdió al virar el avión",
+    "Sin señal de transpondedor en Arica ni eco en el radar de Iquique; cielo despejado y visibilidad completa",
+    "Comprobación astronómica: Sol 6° bajo el horizonte y Venus a 2,9°, descartado; cierre como «Relato» con un dron como hipótesis principal"
+  ],
+  "evidence_en": [
+    "Transcript of the tower–C52 audio: 'Carabineros 52, I have an unidentified flying object to the left of your position'; the pilot sees it, turns and loses it",
+    "Entry in the Chacalluta tower's log and the air traffic service report",
+    "SEFAA interviews with a controller and the C52 pilot: an intense white light that moved east and was lost when the aircraft turned",
+    "No transponder signal at Arica and no echo on the Iquique radar; clear sky and full visibility",
+    "Astronomical check: Sun 6° below the horizon and Venus at 2.9°, ruled out; closed as a 'Report' with a drone as the main hypothesis"
+  ],
+  "sources": [
+    {
+      "name": "SEFAA (Dirección General de Aeronáutica Civil de Chile) — «Caso N.º 794», Chacalluta, 20 feb 2018 (informe publicado el 28 oct 2025)",
+      "name_en": "SEFAA (Chilean Directorate General of Civil Aviation) — 'Case No. 794', Chacalluta, 20 Feb 2018 (report published 28 Oct 2025)",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2025/11/CASO-N%C2%B0-794-20022018.pdf",
+      "note": "Fuente primaria: transcripción del audio torre-avión, entrevistas, meteorología, análisis astronómico y conclusión oficial.",
+      "note_en": "Primary source: transcript of the tower-aircraft audio, interviews, weather, astronomical analysis and official conclusion."
+    },
+    {
+      "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC), sitio oficial",
+      "name_en": "SEFAA — Anomalous Aerial Phenomena Study Section (DGAC), official site",
+      "url": "https://sefaa.dgac.gob.cl/",
+      "note": "Catálogo de casos publicados por la oficina chilena.",
+      "note_en": "Catalogue of cases published by the Chilean office."
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.12,
+    "adversaria": 0.08,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.06,
+    "indet": 0.32
+  },
+  "documents": [
+    {
+      "src": "/pursue/arica-chacalluta-2018-context.jpg",
+      "type": "image",
+      "title": "Contexto · la plataforma del aeropuerto de Chacalluta, en Arica, en el año 2000",
+      "title_en": "Context · the apron at Chacalluta airport, Arica, in 2000",
+      "source": "109ae - Ladeco Airlines Boeing 737-2E1; CC-CYT@ARI;14.09.2000 (5398325424).jpg · Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:109ae_-_Ladeco_Airlines_Boeing_737-2E1;_CC-CYT@ARI;14.09.2000_(5398325424).jpg"
+    }
+  ]
+}
