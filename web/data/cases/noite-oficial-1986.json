@@ -68,6 +68,15 @@
   ],
   "documents": [
     {
+      "src": "/pursue/noite-oficial-1986-comda-relatorio.pdf",
+      "type": "pdf",
+      "title": "«Relatório de Ocorrência» del Comando de Defensa Aeroespacial (COMDA), firmado por el brigadier José Pessoa Cavalcanti de Albuquerque (2 jun 1986), 8 págs.",
+      "title_en": "'Relatório de Ocorrência' by the Aerospace Defence Command (COMDA), signed by Brigadier José Pessoa Cavalcanti de Albuquerque (2 Jun 1986), 8 pp.",
+      "source": "Arquivo Nacional (Brasil), ARX.0.0.249",
+      "license": "Documento oficial público (Arquivo Nacional; Lei 9.610, art. 8.º, IV)",
+      "fallbackUrl": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0249/BR_DFANBSB_ARX_0_0_0249_d0001de0001.pdf"
+    },
+    {
       "src": "/pursue/noite-oficial-1986-context.jpg",
       "type": "image",
       "title": "Contexto · São José dos Campos (Brasil), desde donde despegaron los cazas en la 'Noite Oficial'",

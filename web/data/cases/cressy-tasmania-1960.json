@@ -76,6 +76,15 @@
   },
   "documents": [
     {
+      "src": "/pursue/cressy-tasmania-1960-raaf-a703.pdf",
+      "type": "pdf",
+      "title": "RAAF, expediente A703 580/1/1 parte 3 (extracto, 2 págs.): minutas del Support Command de 1961 sobre el avistamiento de Cressy",
+      "title_en": "RAAF, file A703 580/1/1 part 3 (extract, 2 pp.): 1961 Support Command minutes on the Cressy sighting",
+      "source": "National Archives of Australia, A703 580/1/1 Part 3 (espejo de The Black Vault con permiso del NAA); se omiten el recorte de prensa y la carta de una asociación privada",
+      "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
+      "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/A703_580-1-1_Part%203_756666.pdf"
+    },
+    {
       "src": "/pursue/cressy-tasmania-1960-context.jpg",
       "type": "image",
       "title": "Contexto · Cressy (Tasmania, Australia)",

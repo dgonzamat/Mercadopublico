@@ -66,6 +66,15 @@
   ],
   "documents": [
     {
+      "src": "/pursue/manises-1979-expediente-791111.pdf",
+      "type": "pdf",
+      "title": "Expediente 791111/791117/791128 del Ejército del Aire (extracto, 16 de 150 págs.): ficha del Mando Operativo Aéreo, parte diario y comienzo de la transcripción de la cinta",
+      "title_en": "Spanish Air Force file 791111/791117/791128 (extract, 16 of 150 pp.): the Air Operations Command sheet, the daily report and the start of the tape transcript",
+      "source": "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/registro.do?control=BMDB20160070545"
+    },
+    {
       "src": "/pursue/manises-1979-context.jpg",
       "type": "image",
       "title": "Contexto · un Sud Aviation Caravelle, del tipo del avión de Aviaco desviado a Manises",

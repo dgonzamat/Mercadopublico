@@ -73,6 +73,15 @@
   ],
   "documents": [
     {
+      "src": "/pursue/colares-1977-registro-observacoes.pdf",
+      "type": "pdf",
+      "title": "I COMAR, «Registro de Observações de OVNI» (Operación Prato): portada y primeros registros, con croquis y mapas (extracto, 14 de 160 págs.)",
+      "title_en": "I COMAR, 'Registro de Observações de OVNI' (Operation Prato): cover and first entries, with sketches and maps (extract, 14 of 160 pp.)",
+      "source": "Arquivo Nacional (Brasil), ARX.0.0.184",
+      "license": "Documento oficial público (Arquivo Nacional; Lei 9.610, art. 8.º, IV)",
+      "fallbackUrl": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0184/BR_DFANBSB_ARX_0_0_0184_d0001de0001.pdf"
+    },
+    {
       "src": "/pursue/colares-1977-context.jpg",
       "type": "image",
       "title": "Contexto · la costa del Pará (Brasil), región de la Operação Prato en Colares",
