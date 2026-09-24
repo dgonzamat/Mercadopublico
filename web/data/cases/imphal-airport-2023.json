@@ -1,0 +1,93 @@
+{
+  "id": "imphal-airport-2023",
+  "num": 400,
+  "name": "Aeropuerto de Imphal · objeto sobre la torre",
+  "name_en": "Imphal Airport · object over the tower",
+  "year_start": 2023,
+  "country": "IN",
+  "country_name": "India",
+  "flag": "🇮🇳",
+  "location": {
+    "lat": 24.76,
+    "lng": 93.8967,
+    "place": "Aeropuerto Internacional Bir Tikendrajit, Imphal (Manipur)",
+    "place_en": "Bir Tikendrajit International Airport, Imphal (Manipur)"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "epistemicStatus": "documented",
+  "probability": 40,
+  "summary": "El 19 de noviembre de 2023, a las 14:30, la torre de control del aeropuerto de Imphal, en el noreste de la India, recibió aviso de la fuerza de seguridad del aeródromo de que un objeto blanco no identificado estaba sobre la torre. Quedó visible hasta las 16:05. Se suspendieron despegues y aterrizajes durante casi tres horas con un aviso oficial a pilotos, dos vuelos se desviaron y tres salidas se retrasaron. La Fuerza Aérea envió dos cazas Rafale, que no encontraron nada. El Ministerio de Aviación Civil lo confirmó todo ante el Parlamento.",
+  "summary_en": "On 19 November 2023, at 14:30, the control tower at Imphal airport in north-east India was told by the airfield's security force that an unidentified white object was over the tower. It remained visible until 16:05. Take-offs and landings were suspended for nearly three hours under an official notice to airmen, two flights were diverted and three departures delayed. The Air Force sent two Rafale fighters, which found nothing. The Ministry of Civil Aviation confirmed all of it to Parliament.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El domingo 19 de noviembre de 2023, a las 14:30 hora de la India, la torre de control del Aeropuerto Internacional Bir Tikendrajit de Imphal, capital del estado de Manipur, recibió una llamada de la sala de control de la Fuerza Central de Seguridad Industrial (CISF), el cuerpo federal que custodia los aeropuertos del país. El aviso decía que se veía un objeto volador no identificado cerca del aeródromo, justo por encima de la torre de control. Según la versión oficial, el objeto parecía de color blanco, se desplazó hacia el sur por encima de la torre y permaneció allí inmóvil durante un tiempo. Siguió visible hasta las 16:05 y después desapareció. El atardecer en Imphal ese día fue a las 16:26, así que toda la observación se hizo con luz diurna.\n\nLas consecuencias operativas fueron inmediatas. La autoridad aeroportuaria emitió un NOTAM, el aviso oficial a los pilotos, y suspendió los despegues y aterrizajes durante casi tres horas. El vuelo 6E-275 de IndiGo, que venía de Calcuta, recibió orden de esperar en circuito sobre el aeropuerto y, al cabo de unos veinticinco minutos, fue desviado a Guwahati; el 6E-5118, procedente de Delhi, terminó en Calcuta. Tres salidas —el 6E-525 a Agartala, el AI-734 a Calcuta y el AI-890 a Guwahati— quedaron retenidas en tierra hasta que se levantó la restricción. La prensa india calculó en torno a quinientos pasajeros afectados.\n\nEl Mando Oriental de la Fuerza Aérea, con sede en Shillong, fue informado y activó su mecanismo de defensa aérea. Según la prensa india, desde la base de Hasimara, en Bengala Occidental, despegaron cazas Rafale del escuadrón n.º 101, que sobrevolaron la zona a baja altura con sus sensores. El primero no encontró nada y regresó; se envió un segundo, con el mismo resultado. El comunicado de la Fuerza Aérea fue breve: el mecanismo de respuesta de defensa aérea se activó a partir de observaciones visuales desde el aeropuerto de Imphal, y el objeto, al que calificó de pequeño, no volvió a ser visto.\n\nEl registro que fija los hechos es parlamentario. El 14 de diciembre de 2023, el diputado Manish Tewari preguntó en la Lok Sabha, la cámara baja, por los detalles del objeto, el cierre, el peligro para los aviones, el vuelo MH370 y la política del Gobierno ante un avistamiento. El ministro de Estado de Aviación Civil, general (R) V. K. Singh, respondió por escrito en la pregunta no oral n.º 2024. Su respuesta confirma la hora, el origen del aviso, el color, el desplazamiento, la duración, el NOTAM y la lista de vuelos afectados, y añade una frase que resume la lógica institucional: cualquier objeto aéreo no identificado en las proximidades de un aeropuerto supone un peligro para las operaciones, por lo impredecible de sus movimientos, y el de Imphal suponía ese mismo peligro. No ofreció una identificación del objeto ni la anunció como pendiente.\n\nNingún organismo publicó después una explicación. En la prensa se barajaron un dron privado y un globo, incluida la comparación con el globo chino derribado en Estados Unidos en febrero de ese año; el vídeo que circuló muestra un punto claro contra el cielo que encaja con un globo, sin permitir concluirlo.",
+  "whatHappened_en": "On Sunday 19 November 2023, at 14:30 India time, the control tower at Bir Tikendrajit International Airport in Imphal, capital of Manipur state, received a call from the control room of the Central Industrial Security Force (CISF), the federal force that guards the country's airports. It said an unidentified flying object could be seen near the airfield, right above the control tower. According to the official account, the object appeared white, moved south above the tower and stayed stationary there for some time. It remained visible until 16:05 and then disappeared. Sunset in Imphal that day was at 16:26, so the whole observation took place in daylight.\n\nThe operational consequences were immediate. The airport authority issued a NOTAM, the official notice to airmen, and suspended take-offs and landings for nearly three hours. IndiGo flight 6E-275 from Kolkata was told to hold over the airport and, after about twenty-five minutes, was diverted to Guwahati; 6E-5118 from Delhi ended up in Kolkata. Three departures —6E-525 to Agartala, AI-734 to Kolkata and AI-890 to Guwahati— were held on the ground until the restriction was lifted. The Indian press put the number of affected passengers at around five hundred.\n\nThe Air Force's Eastern Command, headquartered in Shillong, was informed and activated its air-defence mechanism. According to the Indian press, Rafale fighters of No. 101 Squadron took off from Hasimara air base in West Bengal and flew low over the area with their sensors. The first found nothing and returned; a second was sent, with the same result. The Air Force's statement was brief: its air-defence response mechanism had been activated on the basis of visual inputs from Imphal airport, and the object, which it described as small, was not seen again.\n\nThe record that fixes the facts is parliamentary. On 14 December 2023, MP Manish Tewari asked in the Lok Sabha, the lower house, for details of the object, the closure, the danger to aircraft, flight MH370 and the Government's policy in the event of a sighting. The Minister of State for Civil Aviation, General (ret.) V. K. Singh, answered in writing in unstarred question no. 2024. His answer confirms the time, the source of the alert, the colour, the movement, the duration, the NOTAM and the list of affected flights, and adds a sentence that sums up the institutional logic: any unidentified airborne object in the vicinity of an airport is a danger to operations because of its unpredictable movements, and the Imphal object posed that same danger. It offered no identification of the object, nor did it announce one as pending.\n\nNo agency published an explanation afterwards. The press floated a private drone and a balloon, including a comparison with the Chinese balloon shot down over the United States that February; the video that circulated shows a bright dot against the sky that fits a balloon, without allowing a conclusion.",
+  "whyMatters": "Imphal es un caso pequeño en lo fenoménico y grande en lo documental. No hay radar publicado, ni fotografía de calidad, ni tripulación que describa estructura: hay un punto blanco a la vista durante hora y media. Lo que lo sitúa en el nivel alto del corpus es la cadena institucional completa y verificable: un cuerpo de seguridad federal que da el aviso, una torre que lo convierte en NOTAM, una aerolínea que desvía vuelos, una fuerza aérea que despega cazas y un ministro que, ante el Parlamento, confirma cada eslabón por escrito. Pocas veces un avistamiento queda asentado con tanto detalle operativo en un documento oficial de acceso público.\n\nEl caso también ilustra bien la distancia entre «no identificado» y «anómalo». Todo lo que describe la respuesta ministerial —objeto blanco, lento, estacionario por momentos, visible a simple vista durante horas y no encontrado después por aviones rápidos— es lo que cabría esperar de un globo a gran altura, que se ve pequeño, parece quieto y no es fácil de localizar para un caza que vuela bajo. Un dron privado, en cambio, encaja peor con la duración. La hipótesis del globo tiene además un contexto regional: Manipur limita con Myanmar, y 2023 fue el año en que los globos de vigilancia pasaron a ser una preocupación de defensa aérea tras el episodio estadounidense. Por eso la partición del caso reparte la mayor parte del peso en una misidentificación convencional, deja una fracción visible para un globo de otro Estado y mantiene un tramo indeterminado amplio, porque el Estado indio nunca identificó el objeto.\n\nPara el corpus, Imphal amplía la cobertura a la India contemporánea —hasta ahora representada solo por los reportes fronterizos de Ladakh en 2012— y suma un ejemplo claro del patrón de transparencia en tiempo real: la Fuerza Aérea reconoció públicamente la salida de sus cazas el mismo día, y el Gobierno respondió al Parlamento en menos de cuatro semanas. Es también un recordatorio útil de coste: un objeto sin identificar sobre un aeropuerto civil se trata como un peligro para la aviación con independencia de lo que sea, y ese criterio de seguridad, más que cualquier hipótesis exótica, es el que explica el cierre.",
+  "whyMatters_en": "Imphal is a small case phenomenally and a large one documentarily. There is no published radar, no quality photograph and no crew describing structure: there is a white dot in plain sight for an hour and a half. What places it at the upper level of the corpus is the complete, verifiable institutional chain: a federal security force that raises the alert, a tower that turns it into a NOTAM, an airline that diverts flights, an air force that launches fighters and a minister who, before Parliament, confirms every link in writing. Rarely is a sighting set down in such operational detail in an official, publicly accessible document.\n\nThe case also illustrates well the distance between 'unidentified' and 'anomalous'. Everything the ministerial answer describes —a white, slow object, stationary at times, visible to the naked eye for hours and not found afterwards by fast aircraft— is what one would expect from a high-altitude balloon, which looks small, seems still and is hard for a low-flying fighter to locate. A private drone, by contrast, fits the duration less well. The balloon hypothesis also has a regional context: Manipur borders Myanmar, and 2023 was the year surveillance balloons became an air-defence concern after the United States episode. That is why the case's partition places most of the weight on a conventional misidentification, leaves a visible fraction for another state's balloon and keeps a broad undetermined share, because the Indian state never identified the object.\n\nFor the corpus, Imphal extends coverage to contemporary India —until now represented only by the 2012 Ladakh border reports— and adds a clear example of the real-time transparency pattern: the Air Force publicly acknowledged its fighters' sortie the same day, and the Government answered Parliament in under four weeks. It is also a useful reminder of cost: an unidentified object over a civil airport is treated as a danger to aviation whatever it is, and that safety criterion, more than any exotic hypothesis, is what explains the closure.",
+  "evidence": [
+    "Respuesta escrita del Ministerio de Aviación Civil a la pregunta no oral n.º 2024 de la Lok Sabha (14 dic 2023): aviso de la CISF a las 14:30, objeto blanco estacionario sobre la torre, visible hasta las 16:05",
+    "NOTAM y suspensión de despegues y aterrizajes durante casi tres horas",
+    "Vuelos 6E-275 y 6E-5118 desviados; 6E-525, AI-734 y AI-890 retenidos en tierra",
+    "Salida de dos cazas Rafale, según la prensa del escuadrón n.º 101 de Hasimara, sin contacto con el objeto",
+    "Comunicado del Mando Oriental de la Fuerza Aérea: respuesta de defensa aérea activada por observaciones visuales; el objeto no volvió a verse"
+  ],
+  "evidence_en": [
+    "Written answer by the Ministry of Civil Aviation to Lok Sabha unstarred question no. 2024 (14 Dec 2023): CISF alert at 14:30, white object stationary over the tower, visible until 16:05",
+    "NOTAM and suspension of take-offs and landings for nearly three hours",
+    "Flights 6E-275 and 6E-5118 diverted; 6E-525, AI-734 and AI-890 held on the ground",
+    "Sortie of two Rafale fighters, per the press from No. 101 Squadron at Hasimara, with no contact with the object",
+    "Statement by the Air Force's Eastern Command: air-defence response activated on visual inputs; the object was not seen again"
+  ],
+  "sources": [
+    {
+      "name": "Lok Sabha (India) — pregunta no oral n.º 2024, «Unidentified Flying Object», respuesta del Ministerio de Aviación Civil (14 dic 2023)",
+      "name_en": "Lok Sabha (India) — unstarred question no. 2024, 'Unidentified Flying Object', answer by the Ministry of Civil Aviation (14 Dec 2023)",
+      "url": "https://elibrary.sansad.in/server/api/core/bitstreams/7e980698-40bd-4ddc-8402-bc6f331c3376/content",
+      "note": "Fuente primaria: cronología, NOTAM, vuelos afectados y valoración oficial del peligro.",
+      "note_en": "Primary source: timeline, NOTAM, affected flights and the official assessment of the danger."
+    },
+    {
+      "name": "The Tribune — «UFO affects flight services in Manipur» (19 nov 2023)",
+      "name_en": "The Tribune — 'UFO affects flight services in Manipur' (19 Nov 2023)",
+      "url": "https://www.tribuneindia.com/news/india/ufo-affects-flight-services-in-manipur-563938",
+      "note": "Cobertura del mismo día, con el desvío del vuelo de Calcuta tras 25 minutos de espera.",
+      "note_en": "Same-day coverage, including the Kolkata flight diverted after a 25-minute hold."
+    },
+    {
+      "name": "The Tribune — «IAF scrambles Rafale fighter jets to search for 'UFO' sighted near Imphal airport» (20 nov 2023)",
+      "name_en": "The Tribune — 'IAF scrambles Rafale fighter jets to search for UFO sighted near Imphal airport' (20 Nov 2023)",
+      "url": "https://www.tribuneindia.com/news/india/iaf-scrambles-rafale-fighter-jets-to-search-for-ufo-sighted-near-imphal-airport-564193",
+      "note": "La salida de los Rafale y el comunicado del Mando Oriental.",
+      "note_en": "The Rafale sortie and the Eastern Command statement."
+    },
+    {
+      "name": "Gulf News / IANS — «Flight operations suspended for few hours at Imphal airport in Manipur after sighting of 'UFO'» (20 nov 2023)",
+      "name_en": "Gulf News / IANS — 'Flight operations suspended for few hours at Imphal airport in Manipur after sighting of UFO' (20 Nov 2023)",
+      "url": "https://gulfnews.com/world/asia/india/india-flight-operations-suspended-for-few-hours-at-imphal-airport-in-manipur-after-sighting-of-ufo-1.1700469055966",
+      "note": "Despacho de agencia con el cierre de más de tres horas.",
+      "note_en": "Wire report on the closure of over three hours."
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.45,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.15,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.05,
+    "indet": 0.28
+  },
+  "documents": [
+    {
+      "src": "/pursue/imphal-airport-2023-context.jpg",
+      "type": "image",
+      "title": "Contexto · la plataforma y la torre de control del aeropuerto de Imphal, sobre la que se vio el objeto",
+      "title_en": "Context · the apron and control tower of Imphal airport, over which the object was seen",
+      "source": "Arrival in Imphal through the Imphal International Airport 01.jpg · Wikimedia Commons",
+      "license": "CC0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Arrival_in_Imphal_through_the_Imphal_International_Airport_01.jpg"
+    }
+  ]
+}
