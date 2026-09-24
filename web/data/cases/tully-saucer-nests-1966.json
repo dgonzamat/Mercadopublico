@@ -93,6 +93,15 @@
   ],
   "documents": [
     {
+      "src": "/pursue/tully-saucer-nests-1966-raaf-a703.pdf",
+      "type": "pdf",
+      "title": "RAAF, expediente A703 580/1/1 parte 5 (extracto, 5 págs.): carta del Operational Command con el veredicto de las trombas, formulario de avistamiento de Townsville y seguimiento",
+      "title_en": "RAAF, file A703 580/1/1 part 5 (extract, 5 pp.): the Operational Command letter with the waterspout verdict, the Townsville sighting form and follow-up",
+      "source": "National Archives of Australia, A703 580/1/1 Part 5 (espejo de The Black Vault con permiso del NAA); se omiten los recortes de prensa",
+      "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
+      "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/A703_580-1-1_Part%205_645646.pdf"
+    },
+    {
       "src": "/pursue/tully-saucer-nests-1966-context.jpg",
       "type": "image",
       "title": "Contexto · Tully (Queensland), cerca de la laguna de los 'nidos de platillo'",
