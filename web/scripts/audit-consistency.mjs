@@ -578,6 +578,8 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "mystery-drones-east-coast-2024": "sin imagen libre; archive.org/wargovUFO sin hits",
   "val-johnson-1979": "solo una reconstrucción amateur y un doc CIA ajeno — ambos engañosos",
   "nz-defence-force-declass-2010": "Crown copyright NZ (100 años); catálogo NatLib: «All rights reserved»; la PDM de archive.org es errónea",
+  "afghanistan-isr-disc-2020": "metraje filtrado (Corbell/Knapp), nunca liberado; sin espejo en DVIDS ni archive.org/wargovUFO",
+  "jellyfish-iraq-2018": "metraje filtrado (Corbell), nunca liberado; sin espejo en DVIDS ni archive.org/wargovUFO",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió

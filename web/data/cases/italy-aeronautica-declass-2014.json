@@ -80,5 +80,16 @@
       "note": "Reseña en italiano del libro y su contexto institucional.",
       "note_en": "Italian-language review of the book and its institutional context."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/aeronautica-militare-avvistamenti-1972-1990.pdf",
+      "type": "pdf",
+      "title": "Aeronautica Militare — avistamientos por región y año, 1972–1990 (3 págs.)",
+      "title_en": "Italian Air Force — sightings by region and year, 1972–1990 (3 pp.)",
+      "source": "Aeronautica Militare (aeronautica.difesa.it)",
+      "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
+      "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/INT.Dperiodo1972-1990.pdf"
+    }
   ]
 }
