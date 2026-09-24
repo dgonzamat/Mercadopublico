@@ -35,7 +35,7 @@ console.log(`build-cases: client bundle (no prose) → data/cases-client.json`);
 // de eso: solo id (nav), name+country_name+year+tier+probability (tooltip/filtro)
 // y location (marcador). Esta proyección diminuta (~60 KB) es lo que
 // lib/atlasData.ts embarca a /atlas, en vez de arrastrar el corpus client entero.
-const ATLAS_FIELDS = ["id", "name", "tier", "country", "country_name", "year_start", "probability"];
+const ATLAS_FIELDS = ["id", "name", "name_en", "tier", "country", "country_name", "year_start", "probability"];
 const atlasPoints = cases
   .filter((c) => c.location && typeof c.location.lat === "number")
   .map((c) => {

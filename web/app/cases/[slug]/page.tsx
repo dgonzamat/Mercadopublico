@@ -342,7 +342,15 @@ export async function CaseDetailPage(
           />
         </p>
 
-        <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-5">
+          <KeyFact
+            locale={locale}
+            es="País"
+            en="Country"
+            icon={c.flag}
+            className="col-span-2 md:col-span-1"
+            value={<T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />}
+          />
           <KeyFact locale={locale} es="Año" en="Year" value={year} />
           <KeyFact locale={locale} es="Tier" en="Tier" value={c.tier} mono />
           <KeyFact
@@ -1052,17 +1060,26 @@ function KeyFact({
   value,
   mono = false,
   locale,
+  icon,
+  className = "",
 }: {
   es: string;
   en: string;
   value: ReactNode;
   mono?: boolean;
   locale: "es" | "en";
+  icon?: string;
+  className?: string;
 }) {
   return (
-    <div className="bg-bg p-4">
+    <div className={`bg-bg p-4 ${className}`}>
       <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
         <T locale={locale} es={es} en={en} />
+        {icon && (
+          <span aria-hidden className="ml-2 align-middle text-xs leading-none tracking-normal">
+            {icon}
+          </span>
+        )}
       </p>
       <p
         className={`mt-1 ${
