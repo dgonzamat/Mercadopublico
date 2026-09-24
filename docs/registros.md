@@ -36,6 +36,8 @@ El protocolo de captura sigue en `CLAUDE.md` → *Protocolo de aprendizaje*. Al 
 - **Reino Unido**: el Hansard histórico está en `api.parliament.uk/historic-hansard/`, que cubre hasta 2005; `hansard.parliament.uk` da 403. The National Archives se verifica por `discovery.nationalarchives.gov.uk/API/records/v1/details/<id>`, porque el HTML responde 202 vacío.
 - **Francia**: GEIPAN da 429 si se consulta rápido (espaciar unos 25 s) y sus ficheros son © CNES, así que van solo como enlace.
 
+**Descartados como caso propio (sep 2026)**: Mirage IV cerca de Nancy, 15 oct 2004 (GEIPAN 2004-10-01631, clase D). Es solo un punto seguido 15–20 s por una patrulla; el jefe concluyó que era un caza, no hubo traza radar y el GEIPAN no publica documentos. Bardenas 1980 y Aitana 1986 son demasiado delgados; quedaron como fuentes de `bardenas-reales-1975` y de `desclasificacion-mod-espana-1992-1997`.
+
 **Dos citas de TNA apuntaban a registros ajenos**: la de `rendlesham-1980` a un certificado de nacionalidad de 1950 y la de `lakenheath-bentwaters-1956` a listas de dotación de la Royal Navy. Las dos respondían 200, así que ningún chequeo de enlaces podía verlas: **un identificador de catálogo que resuelve no prueba que sea el expediente citado**; hay que leer el título del registro. Lakenheath 1956 no tiene expediente OVNI en el catálogo británico, y la fuente primaria es el de Blue Book.
 
 
