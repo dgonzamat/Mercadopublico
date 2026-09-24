@@ -53,6 +53,13 @@
     {
       "name": "Wikipedia — UFO sightings in the United Kingdom (Howden Moor, 1997)",
       "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_the_United_Kingdom"
+    },
+    {
+      "name": "The National Archives (UK) — DEFE 24/1988, «UFO reports» (ene-jul 1997)",
+      "name_en": "The National Archives (UK) — DEFE 24/1988, 'UFO reports' (Jan-Jul 1997)",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C11527877",
+      "note": "Ficha de catálogo del expediente del MoD del periodo.",
+      "note_en": "Catalogue entry for the MoD file for the period."
     }
   ],
   "documents": [

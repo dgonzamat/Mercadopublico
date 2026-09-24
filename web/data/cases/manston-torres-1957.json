@@ -61,6 +61,13 @@
       "name": "The National Archives (UK) — expedientes UFO del MoD, sección de reportes de 1957",
       "note": "Documentación de contexto sobre el sistema de alerta e intercepción del periodo",
       "note_en": "Context documentation on the period's warning and interception system"
+    },
+    {
+      "name": "Hansard — Cámara de los Comunes, «Unidentified Flying Objects» (15 may 1957)",
+      "name_en": "Hansard — House of Commons, 'Unidentified Flying Objects' (15 May 1957)",
+      "url": "https://api.parliament.uk/historic-hansard/commons/1957/may/15/unidentified-flying-objects",
+      "note": "Cifras oficiales del secretario del Aire sobre objetos no identificados: 5 en lo que iba de 1957 y 6 en 1956. Open Parliament Licence.",
+      "note_en": "The Air Secretary's official figures on unidentified objects: 5 so far in 1957 and 6 in 1956. Open Parliament Licence."
     }
   ],
   "posterior": {

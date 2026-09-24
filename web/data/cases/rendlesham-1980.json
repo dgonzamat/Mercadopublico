@@ -56,11 +56,21 @@
       "name_en": "Halt Tape — declassified original audio"
     },
     {
-      "name": "MoD UK — Rendlesham Forest File (DEFE 24/1948)",
-      "url": "https://discovery.nationalarchives.gov.uk/details/r/C12104616"
+      "name": "The National Archives (UK) — DEFE 24/1948, «UFO reports of sighting: Rendlesham Forest, December 1980»",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C11483093",
+      "name_en": "The National Archives (UK) — DEFE 24/1948, 'UFO reports of sighting: Rendlesham Forest, December 1980'",
+      "note": "Ficha de catálogo del expediente del MoD; hay copia digital (C10342055). La cita anterior apuntaba por error a un certificado de nacionalidad de 1950.",
+      "note_en": "Catalogue entry for the MoD file; a digital copy exists (C10342055). The previous citation pointed by mistake to a 1950 naturalisation certificate."
     },
     {
       "name": "Penniston, J. & Burroughs, J. — Encounter in Rendlesham Forest (2014)"
+    },
+    {
+      "name": "Hansard — respuesta escrita «Rendlesham Forest Incident» (24 jul 1996)",
+      "name_en": "Hansard — written answer 'Rendlesham Forest Incident' (24 Jul 1996)",
+      "url": "https://api.parliament.uk/historic-hansard/written_answers/1996/jul/24/rendlesham-forest-incident",
+      "note": "Respuesta del Gobierno británico sobre el memorando de Halt. Open Parliament Licence.",
+      "note_en": "The British Government's answer on the Halt memo. Open Parliament Licence."
     }
   ],
   "primaryDocument": {
