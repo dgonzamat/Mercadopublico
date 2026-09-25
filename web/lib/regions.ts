@@ -67,6 +67,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   // Medio Oriente
   IR: "medio-oriente", TR: "medio-oriente", IL: "medio-oriente", SA: "medio-oriente",
   AE: "medio-oriente", EG: "medio-oriente", IQ: "medio-oriente", OM: "medio-oriente",
+  KW: "medio-oriente",
   SY: "medio-oriente",
   // Oceanía
   AU: "oceania", NZ: "oceania", PG: "oceania", FJ: "oceania",
