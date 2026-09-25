@@ -1,0 +1,112 @@
+{
+  "id": "genkai-nuclear-2025",
+  "num": 417,
+  "name": "Genkai · las tres luces sobre la central nuclear (2025)",
+  "name_en": "Genkai · the three lights over the nuclear plant (2025)",
+  "year_start": 2025,
+  "country": "JP",
+  "country_name": "Japón",
+  "flag": "🇯🇵",
+  "location": {
+    "lat": 33.515,
+    "lng": 129.837,
+    "place": "Central nuclear de Genkai (Saga, Japón)",
+    "place_en": "Genkai nuclear power station (Saga, Japan)"
+  },
+  "tier": "A",
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "summary": "La noche del 26 de julio de 2025, cuatro guardias de la central nuclear de Genkai, en Saga, vieron tres luces en vuelo sobre la instalación, y los policías de la unidad especial destacada en la central también las vieron. Las siguieron casi dos horas. Kyushu Electric lo notificó al regulador nuclear como incidente de protección física, y el regulador anunció primero «tres drones» y después lo corrigió a «tres luces». Según el mapa de la eléctrica, las luces trazaron una elipse de un kilómetro y pasaron a unos 50 metros de los reactores 1 y 2. Nadie las fotografió. La policía de Saga concluyó que probablemente eran aviones confundidos con drones, sin descartar del todo un dron, y el gobierno lo repitió dos veces en el Parlamento en 2026. El caso reapareció en septiembre de 2026 en un artículo conjunto de un congresista de EE.UU. y un exministro de Defensa japonés.",
+  "summary_en": "On the night of 26 July 2025 four guards at the Genkai nuclear power station, in Saga, saw three lights flying over the facility, and officers of the special police unit stationed at the plant saw them too. They followed them for almost two hours. Kyushu Electric reported it to the nuclear regulator as a physical-protection incident, and the regulator first announced 'three drones' and then corrected it to 'three lights'. According to the company's map, the lights traced a one-kilometre ellipse and passed about 50 metres from reactors 1 and 2. Nobody photographed them. Saga police concluded they were probably aircraft mistaken for drones, without fully ruling out a drone, and the government repeated this twice in the Diet in 2026. The case resurfaced in September 2026 in a joint article by a US congressman and a former Japanese defence minister.",
+  "patterns": [
+    "8f"
+  ],
+  "category": "incident",
+  "whatHappened": "La central nuclear de Genkai, en la costa de Saga, en el sur de Japón, pertenece a Kyushu Electric. Sus reactores 3 y 4 están en servicio y los 1 y 2 en desmantelamiento. Como todas las centrales japonesas, la vigilan guardias de la empresa y una unidad especial de la policía destacada allí las veinticuatro horas, y la ley prohíbe volar drones sobre ella y en su entorno.\n\nEl sábado 26 de julio de 2025, hacia las 21:00, cuatro guardias que estaban junto a la puerta principal vieron lo que describieron como tres luces de un aparato en vuelo, que tomaron por drones. Según la eléctrica, oyeron además un sonido de motor. A las 21:19 avisaron a la unidad especial de la policía, cuyos agentes también vieron las luces hacia las 21:35. A las 21:45, con 45 minutos de retraso, Kyushu Electric notificó el incidente a la autoridad de regulación nuclear como un caso de recogida de información de protección física, y a las 21:53 avisó a los ayuntamientos. Los guardias siguieron las luces, con momentos en que las perdían, hasta que hacia las 22:53 dejaron de verlas en el lado sur de la central. A las 00:30 del día 27 terminaron de revisar todo el recinto sin encontrar nada caído ni sospechoso. Nadie tomó una foto ni un vídeo.\n\nLa comunicación pública fue confusa. Pasada la medianoche, el regulador anunció que se buscaban tres drones; a las 12:09 del día 27, después de cruzar datos con la eléctrica y la policía, lo corrigió a tres luces que se creían drones. El 30 de julio, Kyushu Electric presentó a la prefectura un informe con la cronología. Más tarde entregó al regulador un mapa, obtenido en octubre por la agencia Kyodo, con la ruta estimada a partir de lo que vieron los guardias: las luces aparecieron sobre la caseta de la puerta principal, recorrieron en sentido horario una elipse de un kilómetro de nordeste a suroeste y cruzaron el recinto a unos 50 metros de los reactores 1 y 2.\n\nEl 10 de septiembre, el regulador celebró una reunión extraordinaria a puerta cerrada y señaló tres fallos: el retraso de 45 minutos en la notificación, las dudas sobre qué era el objeto y cómo comunicar información sensible. El 16 de septiembre, Kyushu Electric anunció que, en adelante, sus guardias fotografiarían con cámara o teléfono cualquier luz sospechosa. El 19 de septiembre, el jefe de la policía de Saga, Hidenobu Fukuda, explicó en la asamblea de la prefectura que, tras interrogar a los testigos y revisar cámaras de seguridad cercanas, lo más probable era que se hubieran confundido luces de aviones con drones, aunque no se podía descartar del todo un dron.\n\nEl caso llegó al Parlamento. El 8 de abril de 2026, en la comisión de gabinete de la Cámara de Representantes, el ministro Jiro Akama repitió que lo más probable era un avión confundido con un dron y que la investigación seguía abierta. El 16 de junio, en la comisión de gabinete de la Cámara de Consejeros, el jefe de operaciones de seguridad de la Agencia Nacional de Policía dio más detalle: las luces tenían el mismo patrón que las de un avión, y a esa hora varios aviones sobrevolaban y giraban por la zona, en horarios, direcciones y rutas compatibles con lo que vieron los guardias. Tras el incidente, la policía empezó a formar a los guardias de las centrales para distinguir de noche entre drones y aviones. El senador que preguntó respondió que no se podía asegurar al cien por cien que fuera un avión.",
+  "whatHappened_en": "The Genkai nuclear power station, on the Saga coast in southern Japan, belongs to Kyushu Electric. Its reactors 3 and 4 are in service and 1 and 2 are being decommissioned. Like every Japanese plant, it is watched by company guards and by a special police unit stationed there around the clock, and the law bans drone flights over it and its surroundings.\n\nOn Saturday 26 July 2025, at about 21:00, four guards near the main gate saw what they described as three lights from an aircraft in flight, which they took for drones. According to the company, they also heard a motor sound. At 21:19 they alerted the special police unit, whose officers also saw the lights at about 21:35. At 21:45, 45 minutes late, Kyushu Electric reported the incident to the nuclear regulator as a physical-protection information case, and at 21:53 it alerted the local authorities. The guards followed the lights, losing them at times, until at about 22:53 they stopped seeing them on the south side of the plant. At 00:30 on the 27th they finished checking the whole site and found nothing fallen or suspicious. Nobody took a photograph or a video.\n\nPublic communication was confused. After midnight the regulator announced that three drones were being searched for; at 12:09 on the 27th, after comparing notes with the company and the police, it corrected this to three lights believed to be drones. On 30 July Kyushu Electric gave the prefecture a report with the timeline. It later gave the regulator a map, obtained in October by the Kyodo agency, with the estimated route based on what the guards saw: the lights appeared over the main-gate guardhouse, travelled clockwise around a one-kilometre ellipse from north-east to south-west and crossed the site about 50 metres from reactors 1 and 2.\n\nOn 10 September the regulator held an extraordinary closed meeting and identified three failings: the 45-minute delay in reporting, the uncertainty about what the object was and how to communicate sensitive information. On 16 September Kyushu Electric announced that from then on its guards would photograph any suspicious light with a camera or phone. On 19 September the head of Saga police, Hidenobu Fukuda, told the prefectural assembly that, after questioning the witnesses and reviewing nearby security cameras, the most likely explanation was aircraft lights mistaken for drones, although a drone could not be entirely ruled out.\n\nThe case reached the Diet. On 8 April 2026, in the Cabinet Committee of the House of Representatives, Minister Jiro Akama repeated that the most likely explanation was an aircraft mistaken for a drone and that the investigation remained open. On 16 June, in the Cabinet Committee of the House of Councillors, the security operations director of the National Police Agency gave more detail: the lights had the same pattern as an aircraft's, and at that time several aircraft were flying and circling in the area, with times, directions and routes consistent with what the guards saw. After the incident, police began training plant guards to tell drones from aircraft at night. The senator who asked replied that it could not be said with one hundred per cent certainty that it was an aircraft.",
+  "whyMatters": "Genkai es un caso reciente con una cadena documental muy completa, y por eso sirve para ver con claridad dónde se rompe. Hay testigos profesionales, guardias y policías de una unidad especializada; hay una cronología al minuto de la eléctrica; hay una notificación formal al regulador nuclear; hay un mapa de la ruta; hay una explicación policial, y hay dos respuestas del gobierno en el Parlamento. Lo único que no hay es lo que habría resuelto el caso esa misma noche: una imagen. Nadie la tomó, y la propia eléctrica lo reconoció al cambiar sus protocolos para que los guardias fotografíen cualquier luz sospechosa.\n\nLa explicación oficial es razonable. Tres luces que se mueven juntas de noche y siguen un recorrido amplio y regular encajan con las luces de navegación de un avión o con varios aviones en ruta, y la policía comprobó que a esa hora había tráfico sobre la zona con rutas compatibles. Una luz lejana vista de noche, sin referencias, parece mucho más cercana de lo que está, y el mapa de la eléctrica se dibujó a partir de lo que creyeron ver los guardias, no de un radar. Pero la policía no cerró la puerta a un dron, y el senador que preguntó en el Parlamento tampoco la cerró. El sonido de motor que dijeron oír los guardias y la duración, casi dos horas con pausas, son los detalles que la explicación no termina de absorber.\n\nEl caso importa también por su lugar en el patrón que el corpus documenta sobre instalaciones nucleares. No por lo que era la luz, sino por cómo reaccionaron las instituciones: un incidente así activa hoy protocolos de protección física, informes al regulador, reuniones de crisis, cambios de reglamento y leyes que amplían las zonas prohibidas para drones. En Japón, además, abrió una discusión política sobre quién tiene acceso a la información: los diputados de la liga parlamentaria sobre fenómenos anómalos, encabezada por el exministro de Defensa Yasukazu Hamada, dicen que no han visto las grabaciones de las cámaras de seguridad de la eléctrica, y en septiembre de 2026 firmaron con el congresista estadounidense Eric Burlison un artículo que usa Genkai como ejemplo de la falta de acceso de los parlamentarios.\n\nPor eso el caso entra como Tier A con probabilidad baja. La documentación es oficial, reciente y coherente, y la explicación más probable es prosaica. Queda un margen de indeterminación honesto, el mismo que dejan la policía y el Parlamento, y una lección práctica que vale para cualquier caso: sin una imagen tomada en el momento, ni siquiera cuatro guardias y una unidad policial bastan para saber qué pasó.",
+  "whyMatters_en": "Genkai is a recent case with a very complete documentary chain, which makes it useful for seeing clearly where it breaks. There are professional witnesses, guards and officers of a specialised unit; there is a to-the-minute timeline from the company; there is a formal report to the nuclear regulator; there is a map of the route; there is a police explanation, and there are two government answers in the Diet. The only thing missing is what would have settled the case that same night: an image. Nobody took one, and the company itself acknowledged it by changing its protocols so that guards photograph any suspicious light.\n\nThe official explanation is reasonable. Three lights moving together at night along a wide, regular course fit an aircraft's navigation lights or several aircraft en route, and police confirmed that there was traffic over the area at that time on compatible routes. A distant light seen at night without references looks much closer than it is, and the company's map was drawn from what the guards believed they saw, not from radar. But the police did not close the door on a drone, and neither did the senator who asked in the Diet. The motor sound the guards said they heard and the duration, almost two hours with gaps, are the details the explanation does not fully absorb.\n\nThe case also matters for its place in the pattern the corpus documents around nuclear facilities. Not because of what the light was, but because of how the institutions reacted: such an incident now triggers physical-protection protocols, reports to the regulator, crisis meetings, rule changes and laws widening drone no-fly zones. In Japan it also opened a political debate about who has access to information: members of the parliamentary league on anomalous phenomena, led by former defence minister Yasukazu Hamada, say they have not seen the company's security-camera recordings, and in September 2026 they signed with US congressman Eric Burlison an article that uses Genkai as an example of lawmakers' lack of access.\n\nThat is why the case enters as Tier A with a low probability. The documentation is official, recent and consistent, and the most likely explanation is prosaic. An honest margin of indeterminacy remains, the same one the police and the Diet leave open, along with a practical lesson that applies to any case: without an image taken at the time, not even four guards and a police unit are enough to know what happened.",
+  "evidence": [
+    "Informe de Kyushu Electric a la prefectura de Saga (30 jul 2025): cuatro guardias ven tres luces hacia las 21:00; la unidad policial las ve a las 21:35; notificación al regulador a las 21:45; última observación hacia las 22:53",
+    "Mapa de la ruta estimada entregado al regulador (difundido por Kyodo, oct 2025): elipse de 1 km en sentido horario, a unos 50 m de los reactores 1 y 2",
+    "Corrección del regulador nuclear el 27 jul 2025: de «tres drones» a «tres luces que se creían drones»",
+    "Reunión extraordinaria del regulador (10 sep 2025): retraso de 45 minutos, dudas sobre el objeto y problemas de comunicación",
+    "Declaración del jefe de la policía de Saga en la asamblea prefectural (19 sep 2025): probable avión confundido con dron; no se descarta del todo un dron",
+    "Actas de la Cámara de Representantes (8 abr 2026) y de la Cámara de Consejeros (16 jun 2026): patrón de luces de avión y varios aviones en la zona; investigación abierta",
+    "Artículo conjunto de Burlison, Hamada y Asakawa en The Debrief (16 sep 2026): los diputados no han visto las grabaciones de las cámaras de la eléctrica"
+  ],
+  "evidence_en": [
+    "Kyushu Electric report to Saga Prefecture (30 Jul 2025): four guards see three lights at about 21:00; the police unit sees them at 21:35; report to the regulator at 21:45; last sighting at about 22:53",
+    "Map of the estimated route given to the regulator (reported by Kyodo, Oct 2025): a 1 km clockwise ellipse, about 50 m from reactors 1 and 2",
+    "Nuclear regulator's correction on 27 Jul 2025: from 'three drones' to 'three lights believed to be drones'",
+    "Regulator's extraordinary meeting (10 Sep 2025): 45-minute delay, uncertainty about the object and communication problems",
+    "Statement by the head of Saga police to the prefectural assembly (19 Sep 2025): probably an aircraft mistaken for a drone; a drone not entirely ruled out",
+    "Minutes of the House of Representatives (8 Apr 2026) and House of Councillors (16 Jun 2026): aircraft-like light pattern and several aircraft in the area; investigation open",
+    "Joint article by Burlison, Hamada and Asakawa in The Debrief (16 Sep 2026): lawmakers have not seen the company's camera recordings"
+  ],
+  "sources": [
+    {
+      "name": "Kyushu Electric — «Confirmación de tres luces que se creían drones en el recinto de la central de Genkai» (30 jul 2025), publicado por la prefectura de Saga",
+      "name_en": "Kyushu Electric — 'Confirmation of three lights believed to be drones on the Genkai plant site' (30 Jul 2025), published by Saga Prefecture",
+      "url": "https://www.pref.saga.lg.jp/kiji003115090/3_115090_363059_up_k7vu4arn.pdf",
+      "note": "Fuente primaria: cronología al minuto y medidas de la eléctrica.",
+      "note_en": "Primary source: the company's to-the-minute timeline and measures."
+    },
+    {
+      "name": "Actas de la Dieta de Japón — Cámara de Representantes, comisión de gabinete (8 abr 2026), intervenciones 204–205",
+      "name_en": "Minutes of the National Diet of Japan — House of Representatives, Cabinet Committee (8 Apr 2026), statements 204–205",
+      "url": "https://kokkai.ndl.go.jp/txt/122104889X00220260408/205",
+      "note": "Fuente primaria: pregunta del diputado Junji Hasegawa y respuesta del ministro Jiro Akama.",
+      "note_en": "Primary source: question by Representative Junji Hasegawa and answer by Minister Jiro Akama."
+    },
+    {
+      "name": "Actas de la Dieta de Japón — Cámara de Consejeros, comisión de gabinete (16 jun 2026), intervenciones 75–77",
+      "name_en": "Minutes of the National Diet of Japan — House of Councillors, Cabinet Committee (16 Jun 2026), statements 75–77",
+      "url": "https://kokkai.ndl.go.jp/txt/122114889X01620260616/76",
+      "note": "Fuente primaria: respuesta de la Agencia Nacional de Policía sobre el patrón de luces y el tráfico aéreo.",
+      "note_en": "Primary source: the National Police Agency's answer on the light pattern and air traffic."
+    },
+    {
+      "name": "Kyodo News, vía Yahoo! News Japan — «Tres luces, ¿se acercaron al reactor de Genkai?» (9 oct 2025)",
+      "name_en": "Kyodo News, via Yahoo! News Japan — 'Three lights: did they approach the Genkai reactor?' (9 Oct 2025)",
+      "url": "https://news.yahoo.co.jp/articles/1a0d22dcceeeb78b5583bc0c11aba5de0620b7eb",
+      "note": "Mapa de la ruta estimada entregado al regulador y declaraciones del jefe de la policía de Saga.",
+      "note_en": "The estimated-route map given to the regulator and statements by the Saga police chief."
+    },
+    {
+      "name": "Nikkei — «Los ‘drones’ de Genkai, posiblemente luces de avión, según el jefe de la policía de Saga» (19 sep 2025)",
+      "name_en": "Nikkei — 'Genkai \"drones\" possibly aircraft lights, says Saga police chief' (19 Sep 2025)",
+      "url": "https://www.nikkei.com/article/DGXZQOUD198HR0Z10C25A9000000/",
+      "note": "Cobertura de la declaración policial en la asamblea prefectural.",
+      "note_en": "Coverage of the police statement to the prefectural assembly."
+    },
+    {
+      "name": "The Debrief — Burlison, Hamada y Asakawa, «Democratic Allies Must Join Forces in the Race for UAP Disclosure» (16 sep 2026)",
+      "name_en": "The Debrief — Burlison, Hamada and Asakawa, 'Democratic Allies Must Join Forces in the Race for UAP Disclosure' (16 Sep 2026)",
+      "url": "https://thedebrief.org/democratic-allies-must-join-forces-in-the-race-for-uap-disclosure/",
+      "note": "Artículo de opinión conjunto de un congresista de EE.UU. y dos diputados japoneses que cita el caso.",
+      "note_en": "Joint opinion piece by a US congressman and two Japanese Diet members that cites the case."
+    }
+  ],
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.08,
+    "adversaria": 0.1,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.05,
+    "indet": 0.2
+  },
+  "documents": [
+    {
+      "src": "/pursue/genkai-2025-actas-dieta.pdf",
+      "type": "pdf",
+      "title": "Actas de la Dieta de Japón sobre el incidente de Genkai (8 abr y 16 jun 2026): transcripción literal de las cuatro intervenciones, 2 págs.",
+      "title_en": "Minutes of the National Diet of Japan on the Genkai incident (8 Apr and 16 Jun 2026): verbatim transcription of the four statements, 2 pp.",
+      "source": "Sistema de búsqueda de actas de la Dieta (kokkai.ndl.go.jp)",
+      "license": "Intervenciones públicas en el Parlamento, de uso libre (Ley de Derecho de Autor de Japón, art. 40)",
+      "fallbackUrl": "https://kokkai.ndl.go.jp/txt/122114889X01620260616/76"
+    }
+  ]
+}
