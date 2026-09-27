@@ -78,5 +78,16 @@
       "note": "Crítica al rol de financistas privados (Bigelow) y al rigor.",
       "note_en": "Critique of the role of private financiers (Bigelow) and of the rigor."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/mufon-network-1969-context.jpg",
+      "type": "image",
+      "title": "Contexto · una conferencia de MUFON: Whitley Strieber ante la red",
+      "title_en": "Context · a MUFON lecture: Whitley Strieber addressing the network",
+      "source": "WhitleyAnne3 (cropped) Whitley Strieber.jpg · Wikimedia Commons (RobertoTenore)",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWhitleyAnne3_%28cropped%29_Whitley_Strieber.jpg"
+    }
   ]
 }
