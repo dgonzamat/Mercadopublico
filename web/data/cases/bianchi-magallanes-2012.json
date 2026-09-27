@@ -95,5 +95,16 @@
   "seoDescription": "En 2024, el senador de Magallanes Karim Bianchi reveló haber sido abducido en 2012: luz giratoria, 200 km sin memoria, y un mensajero con documentos secretos de la NASA. Sin corroboración independiente ni retractación.",
   "seoTitle_en": "Karim Bianchi: the Chilean senator who says he was abducted in 2012",
   "seoDescription_en": "In 2024, Magallanes senator Karim Bianchi revealed he was abducted in 2012: a spinning light, 200 km with no memory, and a messenger with secret NASA documents. No independent corroboration, no retraction.",
-  "misidSubtype": "terrestre_otros"
+  "misidSubtype": "terrestre_otros",
+  "documents": [
+    {
+      "src": "/pursue/bianchi-magallanes-2012-context.jpg",
+      "type": "image",
+      "title": "Contexto · Karim Bianchi Retamales, senador por Magallanes",
+      "title_en": "Context · Karim Bianchi Retamales, senator for Magallanes",
+      "source": "Karim Bianchi Retamales.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0 CL (Senado de Chile)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKarim_Bianchi_Retamales.jpg"
+    }
+  ]
 }

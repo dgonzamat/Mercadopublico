@@ -21,7 +21,7 @@
     "humana_clasificada": 0.06,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.24,
-    "nohumano_abierto": 0.10,
+    "nohumano_abierto": 0.1,
     "indet": 0.45
   },
   "summary": "A inicios de 2026, Aldo Rebelo —ex ministro de Defensa de Brasil (2015-2016) y pre-candidato presidencial por Democracia Cristã— afirmó públicamente conocer documentos de las Fuerzas Armadas brasileñas sobre OVNIs y prometió divulgarlos, atando el gesto a la ola de desclasificación en Estados Unidos. En una entrevista extensa con el documentalista Jesse Michels (American Alchemy), y en declaraciones recogidas por CNN Brasil y Metrópoles, Rebelo sostuvo que el incidente de Varginha de 1996 fue real —una nave estrellada y seres no humanos— y recordó la Noite Oficial de 1986, con 21 objetos rastreados por radar y cazas de la FAB despegados. Es la confirmación de mayor rango jerárquico hecha en público, pero es testimonio por autoridad —no documento— y llega como promesa de campaña presidencial.",
@@ -62,6 +62,17 @@
     {
       "name": "American Alchemy (Jesse Michels) — entrevista a Aldo Rebelo (YouTube)",
       "url": "https://www.youtube.com/watch?v=nqLnEVcZ8vE"
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/aldo-rebelo-disclosure-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · Aldo Rebelo, exministro de Defensa de Brasil",
+      "title_en": "Context · Aldo Rebelo, former Defence Minister of Brazil",
+      "source": "Aldo Rebelo (16654292721) (cropped).jpg · Wikimedia Commons",
+      "license": "CC BY 2.0 (Agência Senado)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAldo_Rebelo_%2816654292721%29_%28cropped%29.jpg"
     }
   ]
 }

@@ -65,5 +65,16 @@
     "nohumano_abierto": 0.24,
     "indet": 0.14
   },
-  "misidSubtype": "terrestre_otros"
+  "misidSubtype": "terrestre_otros",
+  "documents": [
+    {
+      "src": "/pursue/communion-1985-context.jpg",
+      "type": "image",
+      "title": "Contexto · Whitley Strieber, autor de «Communion», en una conferencia ante MUFON",
+      "title_en": "Context · Whitley Strieber, author of \"Communion\", lecturing to MUFON",
+      "source": "WhitleyAnne3 (cropped) Whitley Strieber.jpg · Wikimedia Commons (RobertoTenore)",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWhitleyAnne3_%28cropped%29_Whitley_Strieber.jpg"
+    }
+  ]
 }
