@@ -1,0 +1,88 @@
+{
+  "id": "luanda-tap-1966",
+  "num": 420,
+  "name": "Luanda · el vuelo de TAP escoltado por dos luces (1966)",
+  "name_en": "Luanda · the TAP flight escorted by two lights (1966)",
+  "year_start": 1966,
+  "country": "AO",
+  "country_name": "Angola",
+  "flag": "🇦🇴",
+  "location": {
+    "lat": -8.858,
+    "lng": 13.231,
+    "place": "Aproximación al aeropuerto de Luanda, Angola",
+    "place_en": "Approach to Luanda airport, Angola"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 20,
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.1,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.05,
+    "indet": 0.25
+  },
+  "summary": "El 7 de diciembre de 1966, pasajeros y tripulación de un vuelo de TAP de Beira a Luanda vieron dos luces que acompañaron al avión durante unos veinte minutos; la torre no tenía tráfico en la zona. El caso se conoce por el aerograma A-53 del consulado de EE.UU. en Luanda, que acabó en la colección de documentos sobre ovnis de la NSA.",
+  "summary_en": "On 7 December 1966, passengers and crew of a TAP flight from Beira to Luanda saw two lights that accompanied the aircraft for about twenty minutes; the tower had no traffic in the area. The case is known through airgram A-53 from the US consulate in Luanda, which ended up in the NSA's collection of UFO documents.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "El 7 de diciembre de 1966, un avión de Transportes Aéreos Portugueses (TAP) que cubría el trayecto de Beira, en Mozambique, a Luanda, capital de Angola, estaba a unos veinte minutos de su destino cuando un pasajero vio por la ventanilla lo que le parecieron dos objetos que seguían al avión. Avisó a la tripulación. El comandante, al que los documentos nombran como Maia de Loureiro, fue a mirar por sí mismo y después comunicó el avistamiento a la torre de control de Luanda. Según contó a los periodistas al aterrizar, la torre le respondió que no había ningún tráfico en la zona en ese momento. Los ocupantes del avión siguieron mirando los objetos hasta que el aparato estuvo a un minuto de tocar tierra; en ese momento, dijeron, desaparecieron.\n\nLa prensa de Luanda publicó la historia el fin de semana del 10 de diciembre como el posible avistamiento de dos «platillos volantes». Las descripciones eran vagas, y varios testigos, entre ellos el comandante, lo atribuyeron a la alta velocidad, la maniobrabilidad y la distancia de lo que habían visto. El comandante se limitó a decir que había visto «dos luces al costado de mi avión». Otras observaciones, sin nombre, añadían que los objetos irradiaban un resplandor anaranjado y que acompañaban al avión con picados y subidas rápidas. El 13 de diciembre la misma prensa informó de un comunicado de la sede de TAP en Lisboa: citando una investigación preliminar basada en el informe del comandante, la compañía concluyó que «no hay razón para considerar que los fenómenos observados constituyan una prueba demostrable de objetos voladores».\n\nTodo esto se conoce por un documento estadounidense. El 23 de diciembre de 1966, el consulado general de Estados Unidos en Luanda envió al Departamento de Estado el aerograma A-53, sin clasificar, dirigido a la Oficina de Asuntos Científicos y Tecnológicos Internacionales (SCI) y con copia a la embajada en Lisboa, con el asunto «Objetos voladores no identificados reportados sobre Angola». El aerograma resume la prensa local; el consulado no dice haber hablado con los testigos ni añade información propia. El documento acabó en los archivos de la Agencia de Seguridad Nacional (NSA), que lo publicó junto con otros aerogramas del Departamento de Estado en su colección de documentos desclasificados sobre ovnis, hoy espejada en archive.org.\n\nEl aerograma no es una pieza aislada. En esa misma colección hay otros de la misma época y el mismo destinatario: uno de la embajada en Tokio de mayo de 1966 sobre un avistamiento en Nemuro, que menciona una instrucción del Departamento de junio de 1962 que pedía a las embajadas informar de este tipo de sucesos, y otro del consulado de Monterrey de febrero de 1967 sobre un objeto caído cerca de General Terán, que se reenvió a la NASA. El de Luanda pertenece a esa rutina: las representaciones diplomáticas de Estados Unidos recogían noticias de ovnis de la prensa local y las enviaban a Washington. No hay constancia de que nadie en Washington investigara el caso, y los documentos de la colección no incluyen respuesta. Tampoco hemos encontrado el episodio en la prensa de Lisboa: el Diário de Lisboa del 2 al 15 de diciembre de 1966 no lo menciona.",
+  "whatHappened_en": "On 7 December 1966, a Transportes Aéreos Portugueses (TAP) aircraft flying from Beira, in Mozambique, to Luanda, the capital of Angola, was some twenty minutes from its destination when a passenger saw through the window what looked like two objects following the plane. He told the crew. The captain, whom the documents name as Maia de Loureiro, went to look for himself and then reported the sighting to the Luanda control tower. According to what he told reporters after landing, the tower replied that there was no traffic in the area at the time. The occupants of the aircraft kept watching the objects until the plane was a minute from touchdown; at that point, they said, the objects vanished.\n\nThe Luanda press ran the story over the weekend of 10 December as the possible sighting of two \"flying saucers\". The descriptions were vague, and several witnesses, the captain among them, put this down to the high speed, manoeuvrability and distance of what they had seen. The captain said only that he had seen \"two lights at the side of my aircraft\". Other, unattributed observations added that the objects radiated an orange glow and accompanied the plane with swift dives and climbs. On 13 December the same press reported a statement from TAP headquarters in Lisbon: citing a preliminary investigation based on the captain's report, the airline concluded that \"there is no reason to consider that the phenomena observed constitute demonstrable proof of flying objects\".\n\nAll of this is known through an American document. On 23 December 1966, the US consulate general in Luanda sent the State Department unclassified airgram A-53, addressed to the Office of International Scientific and Technological Affairs (SCI) and copied to the embassy in Lisbon, under the subject \"Unidentified Flying Objects Reported Over Angola\". The airgram summarises the local press; the consulate does not say it spoke to the witnesses and adds no information of its own. The document ended up in the files of the National Security Agency (NSA), which published it along with other State Department airgrams in its collection of declassified UFO documents, now mirrored on archive.org.\n\nThe airgram is not an isolated piece. The same collection holds others from the same period sent to the same office: one from the Tokyo embassy in May 1966 on a sighting at Nemuro, which cites a Department instruction of June 1962 asking posts to report such events, and one from the Monterrey consulate in February 1967 on an object that fell near General Terán, which was forwarded to NASA. The Luanda airgram belongs to that routine: US diplomatic posts collected UFO stories from the local press and sent them to Washington. There is no record that anyone in Washington investigated the case, and the documents in the collection include no reply. Nor have we found the episode in the Lisbon press: the Diário de Lisboa of 2 to 15 December 1966 does not mention it.",
+  "whyMatters": "Es el primer caso del corpus en Angola y uno de los pocos del África lusófona, y reúne varios elementos que suelen dar peso a un avistamiento: un piloto de línea con experiencia como testigo, una consulta a la torre de control en tiempo real y una observación compartida por pasajeros durante unos veinte minutos. Pero su valor es sobre todo documental. Muestra cómo un suceso local de prensa entraba en el circuito de información del gobierno de Estados Unidos en plena Guerra Fría, por un canal regular del Departamento de Estado, y cómo acababa archivado en la NSA sin que conste ningún análisis.\n\nLa evidencia es débil, y el propio aerograma lo dice: la descripción era «ciertamente vaga». Todo lo que se sabe son declaraciones a la prensa, recogidas de segunda mano por el consulado, y el único testimonio con nombre es el del comandante, que habló solo de «dos luces». Las explicaciones convencionales encajan bien. Dos luces fijas en el cielo, como estrellas o planetas brillantes, parecen moverse junto al avión y hacer picados y subidas cuando es el avión el que vira y desciende en la aproximación, y eso explicaría también que desaparecieran justo antes del aterrizaje, cuando la aeronave está baja y el horizonte las tapa. Un reflejo en la ventanilla es otra posibilidad. Que la torre no tuviera tráfico no descarta aviones militares, frecuentes en Angola durante la guerra colonial y que no necesariamente figuraban en el tráfico civil. La propia TAP cerró el asunto con una conclusión escéptica, y no hay radar, ni foto, ni informe técnico.\n\nPor eso el caso carga sobre todo en la narrativa mundana, con una parte de indeterminación por falta de datos: no se sabe ni la hora exacta del avistamiento, lo que impide comprobar qué astros eran visibles. Lo que el caso sí documenta, con precisión de archivo, es la rutina diplomática de la época. La misma colección de la NSA guarda aerogramas equivalentes de Tokio, Monterrey, Buenos Aires y Mexicali, y juntos muestran que el interés del Departamento de Estado por los ovnis en los años sesenta era de registro, no de investigación.",
+  "whyMatters_en": "It is the corpus's first case in Angola and one of the few from Portuguese-speaking Africa, and it brings together several elements that usually lend weight to a sighting: an experienced airline pilot as a witness, a real-time check with the control tower, and an observation shared by passengers for some twenty minutes. But its value is above all documentary. It shows how a local press story entered the US government's information stream at the height of the Cold War, through a regular State Department channel, and how it ended up filed at the NSA with no record of any analysis.\n\nThe evidence is weak, and the airgram itself says so: the description was \"admittedly vague\". Everything known consists of statements to the press, collected second-hand by the consulate, and the only named testimony is the captain's, who spoke only of \"two lights\". Conventional explanations fit well. Two fixed lights in the sky, such as bright stars or planets, seem to move alongside the aircraft and to dive and climb when it is the aircraft that banks and descends on approach, which would also explain why they vanished just before landing, when the plane is low and the horizon hides them. A reflection in the window is another possibility. That the tower had no traffic does not rule out military aircraft, common in Angola during the colonial war and not necessarily part of civil traffic. TAP itself closed the matter with a sceptical conclusion, and there is no radar, no photograph and no technical report.\n\nThat is why the case weighs mainly on the mundane narrative, with a share of indeterminacy for lack of data: not even the exact time of the sighting is known, which makes it impossible to check which celestial bodies were visible. What the case does document, with archival precision, is the diplomatic routine of the period. The same NSA collection holds equivalent airgrams from Tokyo, Monterrey, Buenos Aires and Mexicali, and together they show that the State Department's interest in UFOs in the 1960s was one of recording, not investigating.",
+  "evidence": [
+    "Aerograma A-53 del consulado general de EE.UU. en Luanda al Departamento de Estado (23 dic 1966), sin clasificar, con copia a la embajada en Lisboa.",
+    "Avistamiento del 7 de diciembre de 1966 en un vuelo de TAP de Beira a Luanda, unos veinte minutos antes del aterrizaje; lo notó primero un pasajero.",
+    "El comandante, Maia de Loureiro, consultó a la torre de Luanda, que le dijo que no había tráfico en la zona.",
+    "Su única declaración citada: «dos luces al costado de mi avión». Testigos sin nombre hablan de un resplandor anaranjado y de picados y subidas.",
+    "Comunicado de la sede de TAP en Lisboa (prensa de Luanda, 13 dic 1966): «no hay razón para considerar» que fuera una prueba de objetos voladores.",
+    "El documento se conserva en la colección de documentos desclasificados sobre ovnis de la NSA."
+  ],
+  "evidence_en": [
+    "Airgram A-53 from the US consulate general in Luanda to the State Department (23 Dec 1966), unclassified, copied to the embassy in Lisbon.",
+    "Sighting of 7 December 1966 on a TAP flight from Beira to Luanda, some twenty minutes before landing; a passenger noticed it first.",
+    "The captain, Maia de Loureiro, checked with the Luanda tower, which told him there was no traffic in the area.",
+    "His only quoted statement: \"two lights at the side of my aircraft\". Unnamed witnesses speak of an orange glow and of dives and climbs.",
+    "Statement from TAP headquarters in Lisbon (Luanda press, 13 Dec 1966): \"there is no reason to consider\" it proof of flying objects.",
+    "The document is held in the NSA's collection of declassified UFO documents."
+  ],
+  "sources": [
+    {
+      "name": "Consulado general de EE.UU. en Luanda — aerograma A-53, «Unidentified Flying Objects Reported Over Angola» (23 dic 1966), colección de documentos sobre ovnis de la NSA, espejo en archive.org",
+      "name_en": "US consulate general in Luanda — airgram A-53, \"Unidentified Flying Objects Reported Over Angola\" (23 Dec 1966), NSA UFO document collection, archive.org mirror",
+      "url": "https://archive.org/download/NSAUFO/DOS%20Airgram%20UFOs%20Angola.pdf"
+    },
+    {
+      "name": "Embajada de EE.UU. en Tokio — aerograma sobre el avistamiento de Nemuro (18 may 1966), misma colección; cita la instrucción del Departamento CW-9986 de junio de 1962",
+      "name_en": "US embassy in Tokyo — airgram on the Nemuro sighting (18 May 1966), same collection; cites Department instruction CW-9986 of June 1962",
+      "url": "https://archive.org/download/NSAUFO/DOS%20Airgram%20Sighting%20Object.pdf"
+    },
+    {
+      "name": "Consulado de EE.UU. en Monterrey — aerograma A-41 sobre el objeto caído cerca de General Terán (17 feb 1967), misma colección",
+      "name_en": "US consulate in Monterrey — airgram A-41 on the object that fell near General Terán (17 Feb 1967), same collection",
+      "url": "https://archive.org/download/NSAUFO/DOS%20Airgram%20UFO%20Fell%20Teran.pdf"
+    },
+    {
+      "name": "Diário de Lisboa, 2–15 dic 1966 (Fundação Mário Soares / Casa Comum, espejo en archive.org), revisado sin encontrar el episodio",
+      "name_en": "Diário de Lisboa, 2–15 Dec 1966 (Fundação Mário Soares / Casa Comum, archive.org mirror), checked without finding the episode",
+      "url": "https://archive.org/details/cc_dl_06573.111.20910"
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/state-dept-airgram-a53-luanda-1966.pdf",
+      "type": "pdf",
+      "title": "Aerograma A-53 del consulado de EE.UU. en Luanda (23 dic 1966): «Objetos voladores no identificados reportados sobre Angola», 1 pág.",
+      "title_en": "Airgram A-53 from the US consulate in Luanda (23 Dec 1966): \"Unidentified Flying Objects Reported Over Angola\", 1 p.",
+      "source": "Departamento de Estado de EE.UU., vía la colección de documentos sobre ovnis de la NSA (archive.org)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://archive.org/download/NSAUFO/DOS%20Airgram%20UFOs%20Angola.pdf"
+    }
+  ]
+}
