@@ -62,7 +62,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   PL: "europa", CH: "europa", AT: "europa", DK: "europa", FI: "europa",
   GR: "europa", RO: "europa", UA: "europa",
   // Asia (incluye Rusia/Eurasia)
-  RU: "asia", IN: "asia", JP: "asia", CN: "asia", KR: "asia", ID: "asia", TH: "asia",
+  RU: "asia", IN: "asia", PK: "asia", JP: "asia", CN: "asia", KR: "asia", ID: "asia", TH: "asia",
   SU: "asia", KZ: "asia", AF: "asia", VN: "asia", MY: "asia", KP: "asia",
   // Medio Oriente
   IR: "medio-oriente", TR: "medio-oriente", IL: "medio-oriente", SA: "medio-oriente",
