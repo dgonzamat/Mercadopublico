@@ -1,0 +1,88 @@
+{
+  "id": "tunis-firefall-1969",
+  "num": 421,
+  "name": "Túnez · la «bola de fuego» vista por la embajada de EE.UU. (1969)",
+  "name_en": "Tunis · the \"firefall\" seen by the US embassy (1969)",
+  "year_start": 1969,
+  "country": "TN",
+  "country_name": "Túnez",
+  "flag": "🇹🇳",
+  "location": {
+    "lat": 36.806,
+    "lng": 10.181,
+    "place": "Túnez (cielo del norte, hacia Cerdeña)",
+    "place_en": "Tunis (northern sky, towards Sardinia)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 10,
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "posterior": {
+    "mundano_natural": 0.82,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.02,
+    "indet": 0.11
+  },
+  "summary": "La noche del 13 de julio de 1969, muchos testigos en Túnez, entre ellos funcionarios de la embajada de EE.UU., vieron nubes luminosas verdosas hacia el norte. La embajada pidió una explicación al Smithsonian. Esa misma noche, a las 19:41 GMT, la ESRO lanzó un cohete sonda Skylark desde Cerdeña, justo en esa dirección.",
+  "summary_en": "On the night of 13 July 1969, many witnesses in Tunis, US embassy officials among them, saw greenish luminous clouds to the north. The embassy asked the Smithsonian for an explanation. That same night, at 19:41 GMT, ESRO launched a Skylark sounding rocket from Sardinia, in exactly that direction.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 13 de julio de 1969, muchas personas en Túnez, entre ellas funcionarios de la embajada de Estados Unidos, vieron dos fenómenos en el cielo del norte. El primero era una nube circular de color verde azulado, del tamaño aproximado de la luna llena, que apareció unos grados al oeste de la estrella Polar y bastante por debajo de ella respecto al horizonte. El segundo apareció unos grados a la derecha de la Polar y más alto: primero parecía una estrella, luego «explotó» formando una nube circular verdosa que enseguida se deformó y se extendió por el cielo. Algunos testigos no vieron la fase de nube del segundo fenómeno y solo hablaron de luces brillantes de corta duración.\n\nLa embajada lo comunicó a Washington al día siguiente, el 14 de julio a las 12:05 GMT, en el telegrama TUNIS 3293, sin clasificar, con el asunto «Tunisian firefall» («bola de fuego tunecina»). El telegrama iba dirigido a la Oficina de Asuntos Científicos y Tecnológicos Internacionales (SCI) del Departamento de Estado, con copia a la NASA, entre otros, y pedía reenviarlo al Observatorio Astrofísico Smithsonian de Cambridge (Massachusetts). No era el primer aviso: el texto dice que lo visto el día 13 era «casi idéntico» a lo que la embajada había descrito en un telegrama anterior, el TUNIS 3222, y termina así: «Agradeceríamos conocer la explicación que el Smithsonian haya podido encontrar para estos fenómenos». La colección de la NSA, donde se conserva el documento, no incluye la respuesta.\n\nLa explicación está en el calendario de lanzamientos de la época. A 314 kilómetros al norte de Túnez, en la costa oriental de Cerdeña, estaba el campo de tiro de Salto di Quirra, desde donde la Organización Europea de Investigación Espacial (ESRO) lanzaba cohetes sonda Skylark. En julio de 1969 hubo una campaña con cuatro lanzamientos, todos al anochecer: el 5 de julio a las 19:45 GMT (misión S38/1, ionosfera), el 6 a las 19:50 (S64/1, aeronomía), el 11 a las 19:42 (S38/2, ionosfera) y el 13 a las 19:41 (S64/2, aeronomía, apogeo de unos 280 kilómetros). El último coincide con la noche del telegrama, y los anteriores explican que la embajada ya hubiera informado de algo parecido.\n\nLa geometría encaja. Vista desde Túnez, Salto di Quirra está en rumbo 351°, es decir, nueve grados al oeste del norte, que es donde los testigos situaron el primer fenómeno respecto a la Polar. Una nube a entre 100 y 200 kilómetros de altura sobre Cerdeña se vería desde Túnez a entre 16° y 31° sobre el horizonte, por debajo de la Polar, que allí está a unos 37°; un punto a la altura del apogeo del cohete se vería a unos 40°, por encima de ella. A las 19:41 GMT el Sol estaba 11° bajo el horizonte en Túnez, así que el suelo estaba a oscuras, pero todo lo que estuviera a más de unos 80 kilómetros sobre Cerdeña seguía iluminado por el Sol. Esa es la condición que buscan los experimentos que liberan nubes de vapor químico en la alta atmósfera: se lanzan en el crepúsculo precisamente para que la nube brille contra un cielo oscuro. No hemos podido confirmar qué sustancia llevaba la carga S64, pero la ESRO había empezado su programa en Salto di Quirra con nubes de bario y amoníaco, y el bario neutro brilla con un color verde azulado.",
+  "whatHappened_en": "On the night of 13 July 1969, many people in Tunis, US embassy officials among them, saw two phenomena in the northern sky. The first was a greenish-blue circular cloud, roughly the size of the full moon, which appeared a few degrees west of the Pole Star and well below it with respect to the horizon. The second appeared a few degrees to the right of the Pole Star and higher: at first it looked like a star, then it \"exploded\", forming a greenish circular cloud that quickly became misshapen and spread across the sky. Some witnesses did not see the cloud phase of the second phenomenon and spoke only of short-lived bright lights.\n\nThe embassy reported it to Washington the next day, 14 July at 12:05 GMT, in the unclassified telegram TUNIS 3293, under the subject \"Tunisian firefall\". The telegram was addressed to the State Department's Office of International Scientific and Technological Affairs (SCI), copied to NASA among others, and asked for it to be passed to the Smithsonian Astrophysical Observatory in Cambridge, Massachusetts. It was not the first report: the text says that what was seen on the 13th was \"almost identical\" to what the embassy had described in an earlier telegram, TUNIS 3222, and it ends: \"Would appreciate knowing explanation which Smithsonian may have found for these phenomena.\" The NSA collection in which the document is kept does not include the reply.\n\nThe explanation lies in the launch calendar of the time. 314 kilometres north of Tunis, on the east coast of Sardinia, was the Salto di Quirra range, from which the European Space Research Organisation (ESRO) launched Skylark sounding rockets. In July 1969 there was a campaign with four launches, all at dusk: 5 July at 19:45 GMT (mission S38/1, ionosphere), the 6th at 19:50 (S64/1, aeronomy), the 11th at 19:42 (S38/2, ionosphere) and the 13th at 19:41 (S64/2, aeronomy, apogee of some 280 kilometres). The last one coincides with the night of the telegram, and the earlier ones explain why the embassy had already reported something similar.\n\nThe geometry fits. Seen from Tunis, Salto di Quirra lies on a bearing of 351°, that is, nine degrees west of north, which is where the witnesses placed the first phenomenon relative to the Pole Star. A cloud 100 to 200 kilometres above Sardinia would be seen from Tunis at 16° to 31° above the horizon, below the Pole Star, which stands at about 37° there; a point at the height of the rocket's apogee would be seen at about 40°, above it. At 19:41 GMT the Sun was 11° below the horizon in Tunis, so the ground was dark, but anything more than about 80 kilometres above Sardinia was still sunlit. That is exactly the condition sought by experiments that release chemical vapour clouds in the upper atmosphere: they are launched at twilight precisely so that the cloud glows against a dark sky. We have not been able to confirm which substance the S64 payload carried, but ESRO had begun its programme at Salto di Quirra with barium and ammonia clouds, and neutral barium glows greenish-blue.",
+  "whyMatters": "Es el primer caso del corpus en Túnez y uno de los más limpios en su clase: un avistamiento múltiple, con testigos diplomáticos, que la propia embajada trató como una curiosidad científica y que se resuelve con datos públicos. Pertenece a la misma familia que [[canary-islands-1976]], donde la explicación más citada para una nube luminosa vista desde varias islas es el lanzamiento de un misil: la ciencia espacial y militar de los años sesenta y setenta dejó en el cielo nocturno fenómenos espectaculares que nadie en tierra sabía interpretar, porque los lanzamientos no se anunciaban al público de los países vecinos.\n\nEl caso también muestra el funcionamiento del circuito diplomático. La embajada no habló de ovnis ni de platillos: usó la palabra «firefall», pidió ayuda a un observatorio y dejó constancia de que el fenómeno se repetía. El Observatorio Smithsonian de Cambridge tenía entonces un servicio dedicado a registrar fenómenos de corta duración —meteoros, volcanes, bolas de fuego—, y era el destinatario natural. La colección de la NSA guarda además un telegrama de la misma embajada de marzo de 1975, enviado a Argel en plena crisis diplomática por los objetos sobre Argelia ([[algeria-min-defense-1975]]), que dice que en Túnez no había habido informes recientes de ovnis y que la embajada no podía aclarar lo descrito.\n\nLa resolución tiene dos límites que conviene decir. El telegrama no da la hora de la observación, solo «la tarde del 13 de julio», y no sabemos con certeza qué liberaba la carga S64/2. Pero la coincidencia de fecha, dirección, altura aparente, hora crepuscular y repetición en una campaña de varios lanzamientos es difícil de atribuir al azar. Por eso el caso carga casi entero sobre la explicación mundana, con un resto de indeterminación por la falta de la hora exacta y de la respuesta del Smithsonian.",
+  "whyMatters_en": "It is the corpus's first case in Tunisia and one of the cleanest of its kind: a multiple sighting, with diplomatic witnesses, that the embassy itself treated as a scientific curiosity and that is resolved with public data. It belongs to the same family as [[canary-islands-1976]], where the most cited explanation for a luminous cloud seen from several islands is a missile launch: the space and military science of the 1960s and 1970s left spectacular phenomena in the night sky that nobody on the ground knew how to interpret, because launches were not announced to the public of neighbouring countries.\n\nThe case also shows how the diplomatic channel worked. The embassy spoke of neither UFOs nor saucers: it used the word \"firefall\", asked an observatory for help and recorded that the phenomenon was recurring. The Smithsonian Observatory in Cambridge then ran a service devoted to recording short-lived phenomena —meteors, volcanoes, fireballs— and was the natural recipient. The NSA collection also holds a telegram from the same embassy from March 1975, sent to Algiers in the middle of the diplomatic crisis over the objects above Algeria ([[algeria-min-defense-1975]]), which says there had been no recent UFO reports in Tunisia and that the embassy could shed no light on what had been described.\n\nThe resolution has two limits worth stating. The telegram does not give the time of the observation, only \"evening July 13\", and we do not know for certain what the S64/2 payload released. But the coincidence of date, direction, apparent height, twilight hour and repetition across a campaign of several launches is hard to put down to chance. That is why the case weighs almost entirely on the mundane explanation, with a remainder of indeterminacy for the missing exact time and the missing Smithsonian reply.",
+  "evidence": [
+    "Telegrama TUNIS 3293 de la embajada de EE.UU. (14 jul 1969, 12:05 GMT), sin clasificar, con copia a la NASA y reenvío pedido al Observatorio Smithsonian de Cambridge.",
+    "Dos fenómenos: una nube circular verde azulada del tamaño de la luna llena, al oeste de la Polar y por debajo, y una «estrella» que explotó en una nube verdosa, a la derecha de la Polar y más alta.",
+    "El telegrama dice que lo visto era «casi idéntico» a lo descrito en un telegrama anterior, el TUNIS 3222.",
+    "Campaña de la ESRO en Salto di Quirra (Cerdeña) en julio de 1969: cuatro lanzamientos de cohetes Skylark al anochecer (5, 6, 11 y 13 de julio); el del 13 a las 19:41 GMT.",
+    "Desde Túnez, Salto di Quirra está a 314 km en rumbo 351°; una nube a 100–200 km de altura se vería a 16–31° sobre el horizonte, con el suelo a oscuras y la nube iluminada por el Sol.",
+    "Telegrama TUNIS 1442 (marzo de 1975) a la embajada en Argel: no había informes recientes de ovnis en Túnez."
+  ],
+  "evidence_en": [
+    "Telegram TUNIS 3293 from the US embassy (14 Jul 1969, 12:05 GMT), unclassified, copied to NASA and asked to be passed to the Smithsonian Observatory in Cambridge.",
+    "Two phenomena: a greenish-blue circular cloud the size of the full moon, west of the Pole Star and below it, and a \"star\" that exploded into a greenish cloud, to the right of the Pole Star and higher.",
+    "The telegram says what was seen was \"almost identical\" to what an earlier telegram, TUNIS 3222, had described.",
+    "ESRO campaign at Salto di Quirra (Sardinia) in July 1969: four Skylark rocket launches at dusk (5, 6, 11 and 13 July); the one on the 13th at 19:41 GMT.",
+    "From Tunis, Salto di Quirra lies 314 km away on a bearing of 351°; a cloud 100–200 km high would be seen 16–31° above the horizon, with the ground dark and the cloud sunlit.",
+    "Telegram TUNIS 1442 (March 1975) to the embassy in Algiers: there had been no recent UFO reports in Tunisia."
+  ],
+  "sources": [
+    {
+      "name": "Embajada de EE.UU. en Túnez — telegrama TUNIS 3293, «Tunisian firefall» (14 jul 1969), colección de documentos sobre ovnis de la NSA, espejo en archive.org",
+      "name_en": "US embassy in Tunis — telegram TUNIS 3293, \"Tunisian firefall\" (14 Jul 1969), NSA UFO document collection, archive.org mirror",
+      "url": "https://archive.org/download/NSAUFO/DOS%20Report%20Tunisian%20Firefall.pdf"
+    },
+    {
+      "name": "Embajada de EE.UU. en Túnez — telegrama TUNIS 1442 a Argel sobre objetos voladores no identificados (mar 1975), misma colección",
+      "name_en": "US embassy in Tunis — telegram TUNIS 1442 to Algiers on unidentified flying objects (Mar 1975), same collection",
+      "url": "https://archive.org/download/NSAUFO/American%20Embassy%20Tunis.pdf"
+    },
+    {
+      "name": "Encyclopedia Astronautica — Salto di Quirra: registro de lanzamientos, incluidos los Skylark de la ESRO del 5, 6, 11 y 13 de julio de 1969",
+      "name_en": "Encyclopedia Astronautica — Salto di Quirra: launch log, including ESRO's Skylarks of 5, 6, 11 and 13 July 1969",
+      "url": "http://www.astronautix.com/s/saltodiquirra.html"
+    },
+    {
+      "name": "ESA — «ESRO's first sounding rockets» (2014): los primeros cohetes de la ESRO en Salto di Quirra liberaban nubes de bario y amoníaco",
+      "name_en": "ESA — \"ESRO's first sounding rockets\" (2014): ESRO's first rockets at Salto di Quirra released barium and ammonia clouds",
+      "url": "https://www.esa.int/About_Us/50_years_of_ESA/ESRO_s_first_sounding_rockets"
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/state-dept-tunis-03293-1969.pdf",
+      "type": "pdf",
+      "title": "Telegrama TUNIS 3293 de la embajada de EE.UU. (14 jul 1969): «Tunisian firefall», 2 págs.",
+      "title_en": "US embassy telegram TUNIS 3293 (14 Jul 1969): \"Tunisian firefall\", 2 pp.",
+      "source": "Departamento de Estado de EE.UU., vía la colección de documentos sobre ovnis de la NSA (archive.org)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://archive.org/download/NSAUFO/DOS%20Report%20Tunisian%20Firefall.pdf"
+    }
+  ]
+}
