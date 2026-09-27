@@ -72,7 +72,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   // Oceanía
   AU: "oceania", NZ: "oceania", PG: "oceania", FJ: "oceania",
   // África
-  DZ: "africa", AO: "africa", TN: "africa", ZW: "africa", ZA: "africa", NG: "africa", KE: "africa", MA: "africa",
+  DZ: "africa", AO: "africa", CD: "africa", TN: "africa", ZW: "africa", ZA: "africa", NG: "africa", KE: "africa", MA: "africa",
   TZ: "africa", MG: "africa",
 };
 
