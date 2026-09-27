@@ -1,0 +1,86 @@
+{
+  "id": "general-teran-1967",
+  "num": 422,
+  "name": "General Terán · la esfera caída del cielo (1967)",
+  "name_en": "General Terán · the sphere that fell from the sky (1967)",
+  "year_start": 1967,
+  "country": "MX",
+  "country_name": "México",
+  "flag": "🇲🇽",
+  "location": {
+    "lat": 25.26,
+    "lng": -99.68,
+    "place": "General Terán, Nuevo León (ejido Las Anacuitas)",
+    "place_en": "General Terán, Nuevo León (Las Anacuitas ejido)"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 3,
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "posterior": {
+    "mundano_natural": 0.9,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.01,
+    "indet": 0.06
+  },
+  "summary": "El 7 de febrero de 1967 los vecinos de General Terán (Nuevo León) vieron una estela de humo y oyeron estruendos, y en un ejido apareció una esfera metálica que acabó en manos de EE.UU. El consulado en Monterrey reenvió el informe del alcalde a la NASA. Todo apunta a la reentrada de la segunda etapa del cohete Delta que lanzó el satélite Intelsat II F-1.",
+  "summary_en": "On 7 February 1967 residents of General Terán (Nuevo León) saw a smoke trail and heard booms, and a metal sphere turned up on an ejido and ended up in US hands. The consulate in Monterrey forwarded the mayor's report to NASA. Everything points to the re-entry of the second stage of the Delta rocket that launched the Intelsat II F-1 satellite.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "La mañana del 7 de febrero de 1967, vecinos de General Terán, un municipio agrícola de Nuevo León a un centenar de kilómetros al sureste de Monterrey, vieron una estela de humo en el cielo a plena luz del día y oyeron estruendos que hicieron vibrar la tierra. En el ejido Las Anacuitas, en una huerta, apareció después un objeto metálico. Según los relatos locales, los campesinos lo vieron caer envuelto en llamas y no se atrevieron a tocarlo; el objeto se llevó a la presidencia municipal, estuvo expuesto varios días y acabó guardado en la comandancia de policía. El secretario del ayuntamiento, Rubén Garza Rodríguez, fue fotografiado con él.\n\nEl 16 de febrero, el alcalde de General Terán escribió al secretario particular del gobernador de Nuevo León para informar del objeto. Al día siguiente, el 17, el consulado de Estados Unidos en Monterrey envió al Departamento de Estado el aerograma A-41, sin clasificar y con copia a la embajada en México, con el asunto «Informe sobre un objeto no identificado que cayó cerca del municipio de General Terán, N.L.». El aerograma adjuntaba la traducción al inglés de la carta del alcalde y de un memorándum anexo, y pedía reenviarlas a la NASA. Respondía a instrucciones previas del Departamento (el telegrama 138873) y a un telegrama anterior del propio consulado, lo que indica que Washington ya se había interesado por el objeto. El aerograma se conserva en la colección de documentos sobre ovnis de la NSA; las traducciones adjuntas no están en ella.\n\nLo que pasó después se conoce por otros telegramas del Departamento de Estado que no hemos podido consultar directamente, pero que resumen el analista de reentradas Ted Molczan y, a partir de él, el divulgador José Jaime Herrera, de la Sociedad Astronómica de Quintana Roo. Según esos documentos, una partida enviada desde Monterrey recogió el objeto el 20 de febrero; pesaba unos 34 kilos y medía 63,5 centímetros de diámetro, y se describió como una esfera de aluminio con dos orificios roscados de 1,9 centímetros de profundidad y una costura soldada que la recorría entera. Durante un tiempo lo tuvo el procurador del estado, Jesús Espinoza, y finalmente se entregó a funcionarios estadounidenses. En esos años era lo habitual: la Declaración de la ONU de 1963 sobre el espacio ultraterrestre, y después el Tratado del Espacio de 1967, obligan a devolver los objetos espaciales al país que los lanzó, y Estados Unidos reclamaba sistemáticamente los restos que caían en otros países.\n\nEl objeto tiene identificación. El catálogo de reentradas observadas de Molczan atribuye el suceso a la reentrada, el 7 de febrero de 1967 a las 16:32 UTC —las 10:32 en Monterrey—, de la segunda etapa del cohete Delta que en octubre de 1966 había lanzado el satélite de comunicaciones Intelsat II F-1 (designación internacional 1966-096B, número de catálogo 2515). El satélite quedó en una órbita equivocada por un fallo de su motor de apogeo, y la etapa, de unos 785 kilos, siguió en órbita hasta caer. El Mando Estratégico de EE.UU. fecha su reentrada el 9 de febrero, pero Molczan concluye que es más probable que cayera el 7, a la hora de los avistamientos. Las esferas como la de General Terán son depósitos de gas a presión, en este caso de helio, que presurizan los tanques de combustible de la etapa; son de las pocas piezas que sobreviven a la reentrada, porque su material aguanta el calor y su forma lo reparte.",
+  "whatHappened_en": "On the morning of 7 February 1967, residents of General Terán, a farming municipality in Nuevo León about a hundred kilometres south-east of Monterrey, saw a smoke trail in the sky in broad daylight and heard booms that made the ground shake. A metallic object later turned up in an orchard on the Las Anacuitas ejido. According to local accounts, the farmers saw it fall in flames and did not dare touch it; the object was taken to the town hall, displayed for several days and eventually stored at the police station. The town council secretary, Rubén Garza Rodríguez, was photographed with it.\n\nOn 16 February, the mayor of General Terán wrote to the private secretary of the governor of Nuevo León to report the object. The next day, the 17th, the US consulate in Monterrey sent the State Department airgram A-41, unclassified and copied to the embassy in Mexico City, under the subject \"Report of unidentified object which fell near Municipio of General Teran, N.L.\". The airgram enclosed English translations of the mayor's letter and of an attached memorandum, and asked for them to be forwarded to NASA. It was answering earlier instructions from the Department (telegram 138873) and an earlier telegram from the consulate itself, which shows that Washington had already taken an interest in the object. The airgram is kept in the NSA's collection of UFO documents; the enclosed translations are not in it.\n\nWhat happened next is known from other State Department telegrams that we have not been able to consult directly, but which are summarised by the re-entry analyst Ted Molczan and, drawing on him, by the science writer José Jaime Herrera of the Quintana Roo Astronomical Society. According to those documents, a party sent from Monterrey collected the object on 20 February; it weighed about 34 kilos and measured 63.5 centimetres across, and was described as an aluminium sphere with two threaded holes 1.9 centimetres deep and a welded seam running all around it. For a time it was held by the state prosecutor, Jesús Espinoza, and it was finally handed over to US officials. In those years that was the norm: the 1963 UN Declaration on outer space, and then the 1967 Outer Space Treaty, require space objects to be returned to the country that launched them, and the United States routinely reclaimed debris that fell in other countries.\n\nThe object has an identification. Molczan's catalogue of observed re-entries attributes the event to the re-entry, on 7 February 1967 at 16:32 UTC —10:32 in Monterrey—, of the second stage of the Delta rocket that had launched the Intelsat II F-1 communications satellite in October 1966 (international designation 1966-096B, catalogue number 2515). The satellite was left in the wrong orbit by a failure of its apogee motor, and the stage, of some 785 kilos, stayed in orbit until it fell. US Strategic Command dates its re-entry to 9 February, but Molczan concludes it more likely came down on the 7th, at the time of the sightings. Spheres like the one at General Terán are pressurised gas tanks, in this case helium, that pressurise the stage's propellant tanks; they are among the few parts that survive re-entry, because their material withstands the heat and their shape spreads it.",
+  "whyMatters": "El caso tiene todos los ingredientes de una leyenda de «ovni estrellado»: una bola de fuego a la vista de todo un pueblo, un objeto metálico extraño recogido por campesinos, autoridades locales que lo exhiben, y agentes estadounidenses que se lo llevan. Con los años se contó como la caída de una nave y su traslado secreto. Pero cada una de esas piezas tiene una explicación documentada, y la más sospechosa —que Estados Unidos se llevara el objeto— es la que mejor lo identifica: Washington lo reclamó porque sabía que era suyo.\n\nPor eso el caso es valioso: permite ver el mecanismo completo de un tipo de suceso que se repite. Cuando un resto espacial cae en otro país, la población ve un fenómeno inexplicable, las autoridades locales guardan un objeto que no saben identificar, y el Estado que lanzó el cohete aparece para recogerlo en silencio. Ese silencio, que en los años sesenta respondía al secreto de la Guerra Fría y a la incomodidad de admitir que la basura espacial caía sobre terceros países, alimenta después la sospecha. La misma secuencia se repitió en Arabia Saudí en 1967, donde según los Archivos Nacionales de EE.UU. el embajador tuvo que pedir personalmente al rey Faisal la devolución de una esfera de presión caída cerca de Dhahran, y se repite hoy: el CIAE argentino recuperó en 2025 tanques de presión de un cohete chino en Santa Fe ([[ciae-cefae-2011]]).\n\nLa identificación no es completa. No tenemos los telegramas que describen el objeto, solo su resumen, y la fecha de reentrada del catálogo oficial no coincide con la del avistamiento, aunque la diferencia de dos días está dentro del margen de error habitual de esas predicciones. Pero la descripción del objeto, la hora diurna, la estela de humo, los estruendos y el interés inmediato de Washington y de la NASA encajan con una reentrada, y no hay nada en el caso que la contradiga. Por eso carga casi entero sobre la explicación mundana, con un pequeño resto de indeterminación.",
+  "whyMatters_en": "The case has all the ingredients of a \"crashed UFO\" legend: a fireball in view of a whole town, a strange metal object collected by farmers, local authorities who put it on display, and American agents who take it away. Over the years it was told as the fall of a craft and its secret removal. But each of those pieces has a documented explanation, and the most suspicious one —that the United States took the object— is the one that best identifies it: Washington reclaimed it because it knew it was its own.\n\nThat is why the case is valuable: it shows the full mechanism of a recurring kind of event. When space debris falls in another country, the population sees an inexplicable phenomenon, local authorities keep an object they cannot identify, and the state that launched the rocket turns up to collect it quietly. That quietness, which in the 1960s reflected Cold War secrecy and the awkwardness of admitting that space junk was falling on third countries, later feeds suspicion. The same sequence played out in Saudi Arabia in 1967, where according to the US National Archives the ambassador had to ask King Faisal personally for the return of a pressure sphere that had fallen near Dhahran, and it recurs today: Argentina's CIAE recovered pressure tanks from a Chinese rocket in Santa Fe in 2025 ([[ciae-cefae-2011]]).\n\nThe identification is not complete. We do not have the telegrams that describe the object, only their summary, and the re-entry date in the official catalogue does not match the sighting, although the two-day gap is within the usual error of such predictions. But the description of the object, the daytime hour, the smoke trail, the booms and the immediate interest of Washington and NASA fit a re-entry, and nothing in the case contradicts it. That is why it weighs almost entirely on the mundane explanation, with a small remainder of indeterminacy.",
+  "evidence": [
+    "Aerograma A-41 del consulado de EE.UU. en Monterrey (17 feb 1967): adjunta la carta del alcalde de General Terán (16 feb) y pide reenviarla a la NASA.",
+    "Avistamiento diurno el 7 de febrero de 1967: estela de humo y estruendos; objeto hallado en una huerta del ejido Las Anacuitas.",
+    "Según telegramas del Departamento de Estado resumidos por Ted Molczan: esfera de unos 34 kg y 63,5 cm, con dos orificios roscados y costura soldada, recogida el 20 de febrero y entregada a EE.UU.",
+    "Catálogo de reentradas de Molczan: segunda etapa del Delta de Intelsat II F-1 (1966-096B), reentrada estimada el 7 feb 1967 a las 16:32 UTC; esfera de presurización de helio.",
+    "Paralelo documentado por los Archivos Nacionales de EE.UU.: esfera de presión caída en Arabia Saudí en 1967, reclamada por el embajador ante el rey Faisal."
+  ],
+  "evidence_en": [
+    "Airgram A-41 from the US consulate in Monterrey (17 Feb 1967): encloses the letter from the mayor of General Terán (16 Feb) and asks for it to be forwarded to NASA.",
+    "Daytime sighting on 7 February 1967: smoke trail and booms; object found in an orchard on the Las Anacuitas ejido.",
+    "According to State Department telegrams summarised by Ted Molczan: sphere of about 34 kg and 63.5 cm, with two threaded holes and a welded seam, collected on 20 February and handed to the US.",
+    "Molczan's re-entry catalogue: second stage of the Delta that launched Intelsat II F-1 (1966-096B), estimated re-entry 7 Feb 1967 at 16:32 UTC; helium pressurant sphere.",
+    "Parallel documented by the US National Archives: a pressure sphere that fell in Saudi Arabia in 1967, reclaimed by the ambassador from King Faisal."
+  ],
+  "sources": [
+    {
+      "name": "Consulado de EE.UU. en Monterrey — aerograma A-41 sobre el objeto caído cerca de General Terán (17 feb 1967), colección de documentos sobre ovnis de la NSA, espejo en archive.org",
+      "name_en": "US consulate in Monterrey — airgram A-41 on the object that fell near General Terán (17 Feb 1967), NSA UFO document collection, archive.org mirror",
+      "url": "https://archive.org/download/NSAUFO/DOS%20Airgram%20UFO%20Fell%20Teran.pdf"
+    },
+    {
+      "name": "Ted Molczan — catálogo de reentradas observadas a simple vista (satobs.org, borrador de sep 2025): entrada del 7 feb 1967, 1966-096B",
+      "name_en": "Ted Molczan — catalogue of visually observed re-entries (satobs.org, Sep 2025 draft): entry for 7 Feb 1967, 1966-096B",
+      "url": "http://www.satobs.org/reentry/Visually_Observed_Natural_Re-entries_latest_draft.pdf"
+    },
+    {
+      "name": "Tiempo Regio — «La verdad del caso del ovni de General Terán» (30 may 2026), con datos de José Jaime Herrera",
+      "name_en": "Tiempo Regio — \"La verdad del caso del ovni de General Terán\" (30 May 2026), with data from José Jaime Herrera",
+      "url": "https://www.tiemporegio.com/la-verdad-del-caso-del-ovni-de-general-teran/"
+    },
+    {
+      "name": "Archivos Nacionales de EE.UU., The Text Message — «Give Us Back Our Junk: Space Debris, 1968» (9 ago 2022): la esfera caída en Arabia Saudí",
+      "name_en": "US National Archives, The Text Message — \"Give Us Back Our Junk: Space Debris, 1968\" (9 Aug 2022): the sphere that fell in Saudi Arabia",
+      "url": "https://text-message.blogs.archives.gov/2022/08/09/give-us-back-our-junk-space-debris-1968/"
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/state-dept-airgram-a41-monterrey-1967.pdf",
+      "type": "pdf",
+      "title": "Aerograma A-41 del consulado de EE.UU. en Monterrey (17 feb 1967): objeto no identificado caído cerca de General Terán, 1 pág.",
+      "title_en": "Airgram A-41 from the US consulate in Monterrey (17 Feb 1967): unidentified object that fell near General Terán, 1 p.",
+      "source": "Departamento de Estado de EE.UU., vía la colección de documentos sobre ovnis de la NSA (archive.org)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://archive.org/download/NSAUFO/DOS%20Airgram%20UFO%20Fell%20Teran.pdf"
+    }
+  ]
+}
