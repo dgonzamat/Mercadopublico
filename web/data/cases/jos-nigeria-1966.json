@@ -1,0 +1,69 @@
+{
+  "id": "jos-nigeria-1966",
+  "num": 430,
+  "name": "Jos · la luz parpadeante que vio un piloto misionero (1966)",
+  "name_en": "Jos · the flashing light a missionary pilot saw (1966)",
+  "year_start": 1966,
+  "country": "NG",
+  "country_name": "Nigeria",
+  "flag": "🇳🇬",
+  "location": {
+    "lat": 9.9,
+    "lng": 8.89,
+    "place": "Jos, meseta central de Nigeria",
+    "place_en": "Jos, central plateau of Nigeria"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "probability": 12,
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "posterior": {
+    "mundano_natural": 0.7,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.03,
+    "indet": 0.2
+  },
+  "summary": "El 2 de abril de 1966, Bob Ediger, piloto de la Misión del Interior de Sudán en Jos (Nigeria), vio pasar por el cénit una luz blanca que destellaba dos veces por segundo, sin ningún sonido. Escribió a la NASA que no era «ni un satélite ni un avión». Blue Book lo clasificó como posible avión, admitiendo que por la experiencia del testigo no era una identificación firme.",
+  "summary_en": "On 2 April 1966, Bob Ediger, a pilot with the Sudan Interior Mission in Jos (Nigeria), saw a white light flashing twice a second pass through the zenith without a sound. He wrote to NASA that it was \"neither a satellite or an aircraft\". Blue Book classified it as a possible aircraft, admitting that given the witness's experience it was not a firm identification.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "El sábado 2 de abril de 1966, a las 18:24 GMT —las 19:24 hora local—, Bob Ediger, piloto del departamento de aviación de la Misión del Interior de Sudán en Jos, en la meseta central de Nigeria, estaba mirando el cielo en busca de satélites cuando vio pasar justo por encima de su cabeza, con rumbo este, lo que describió como «un aparato de lo más inusual». Al día siguiente se lo contó por carta a la NASA, en un aerograma dirigido simplemente a «National Aeronautics and Space Administration, Cabo Kennedy, Florida», con una disculpa por la vaguedad de la dirección.\n\nDos cosas le parecieron raras. La primera, la velocidad: en los 50 a 80 grados de arco en que lo siguió no pasó más de un minuto. La segunda, que parpadeaba con mucho brillo unas dos veces por segundo, y entre destello y destello parecía invisible. Su brillo era al menos el de una estrella de primera magnitud, y justo encima de él, mucho mayor; el color, el de una estrella blanca. No se oyó nada, y Ediger subrayó que en Jos hay mucho silencio y los reactores que pasan alto se oyen con facilidad. Aportó sus credenciales: más de 4.000 horas de vuelo, incluidas horas en cazas de reacción F-84G de la Fuerza Aérea de EE.UU. «He visto muchos satélites», terminaba, «y en mi opinión este objeto no era ni un satélite ni un avión.»\n\nLa carta, enviada por correo aéreo nigeriano, llegó a la Oficina de Información del secretario de la Fuerza Aérea el 21 de abril de 1966 y pasó a Blue Book, que abrió una ficha: un testigo civil, observación visual desde tierra, un objeto, rumbo este, un minuto, sin fotografías ni pruebas físicas. La conclusión fue «posible avión», con una nota poco habitual: «dada la experiencia del observador, no es una identificación firme». El proyecto reconocía así que su propia explicación chocaba con el testimonio de un piloto que decía haber descartado precisamente esa posibilidad.",
+  "whatHappened_en": "On Saturday 2 April 1966, at 18:24 GMT —19:24 local time—, Bob Ediger, a pilot with the aviation department of the Sudan Interior Mission in Jos, on the central plateau of Nigeria, was watching the sky for satellites when he saw pass directly overhead, heading east, what he described as \"a most unusual device\". The next day he told NASA about it in an air letter addressed simply to \"National Aeronautics and Space Administration, Cape Kennedy, Florida\", apologising for the vagueness of the address.\n\nTwo things struck him as strange. The first was its speed: in the 50 to 80 degrees of arc through which he followed it, no more than a minute elapsed. The second was that it blinked very brightly about twice a second, and between flashes seemed invisible. Its brightness was at least that of a first-magnitude star, and directly overhead much greater; its colour, that of a white star. There was no sound, and Ediger stressed that Jos is very quiet and high-flying jets are easily heard. He gave his credentials: more than 4,000 flying hours, including time in US Air Force F-84G jet fighters. \"I have seen many satellites,\" he concluded, \"and in my opinion this object was neither a satellite or an aircraft.\"\n\nThe letter, sent by Nigerian airmail, reached the Office of Information of the Secretary of the Air Force on 21 April 1966 and passed to Blue Book, which opened a card: one civilian witness, ground-visual observation, one object, course east, one minute, no photographs or physical evidence. The conclusion was \"possible aircraft\", with an unusual note: \"in view of experience of observer, not a firm identification\". The project thus acknowledged that its own explanation clashed with the testimony of a pilot who said he had ruled out precisely that possibility.",
+  "whyMatters": "Es el primer caso del corpus en Nigeria, y su testigo es de los mejores que puede tener un avistamiento aislado: un piloto profesional, con experiencia en reactores militares, acostumbrado a observar satélites y que conocía el sonido de los aviones que pasaban sobre Jos. Blue Book lo tomó en serio hasta el punto de admitir que su conclusión no era firme. Pero un solo testigo, sin foto ni otra observación, deja el caso abierto a explicaciones ordinarias que el propio testigo no podía descartar del todo.\n\nLa más probable es un satélite o un resto de cohete dando vueltas sobre sí mismo. A las 18:24 GMT el Sol estaba unos 13 grados bajo el horizonte en Jos: el cielo ya estaba oscuro, pero cualquier objeto a más de unos 160 kilómetros de altura seguía iluminado, las condiciones típicas para ver satélites al anochecer. Un satélite en órbita baja que pasa por el cénit recorre alrededor de un grado por segundo, justo la velocidad que describió Ediger, y no hace ruido. Los destellos rápidos son la firma de un objeto que gira, sobre todo de las etapas de cohete, cuyas superficies reflejan el Sol a cada vuelta; hay restos que destellan varias veces por segundo. La alternativa de Blue Book, un avión muy alto con luz anticolisión, explica el parpadeo pero choca con la falta de sonido en un lugar tan silencioso.\n\nNo hemos comprobado qué satélites pasaban sobre Jos a esa hora, así que la identificación queda como hipótesis. Pero el conjunto —movimiento uniforme, recto, silencioso, por el cénit y poco después del ocaso— encaja mejor con un objeto en órbita que con cualquier otra cosa. Por eso el caso carga sobre todo en la explicación mundana, con un resto de indeterminación por la falta de una segunda observación.\n\nEl caso ilustra también cómo llegaban a Blue Book muchos informes extranjeros en los años sesenta: no por canales militares, sino por cartas de particulares a la NASA o a la Fuerza Aérea, a menudo con direcciones aproximadas, que alguien en Washington reenviaba al proyecto. Ediger no esperaba una investigación; quería saber si había un satélite que explicara lo que había visto, y el expediente no incluye ninguna respuesta.",
+  "whyMatters_en": "It is the corpus's first case in Nigeria, and its witness is among the best an isolated sighting can have: a professional pilot, with military jet experience, used to watching satellites and familiar with the sound of aircraft passing over Jos. Blue Book took him seriously enough to admit its conclusion was not firm. But a single witness, with no photograph or other observation, leaves the case open to ordinary explanations the witness himself could not fully rule out.\n\nThe most likely is a satellite or a piece of rocket debris tumbling end over end. At 18:24 GMT the Sun was some 13 degrees below the horizon at Jos: the sky was already dark, but anything more than about 160 kilometres up was still sunlit, the typical conditions for seeing satellites after dusk. A low-orbit satellite passing through the zenith covers about a degree per second, exactly the speed Ediger described, and makes no noise. Rapid flashes are the signature of a spinning object, above all rocket stages, whose surfaces catch the Sun on each turn; some debris flashes several times a second. Blue Book's alternative, a very high aircraft with an anti-collision light, explains the blinking but clashes with the lack of sound in so quiet a place.\n\nWe have not checked which satellites passed over Jos at that time, so the identification remains a hypothesis. But the whole —uniform, straight, silent motion, through the zenith and shortly after sunset— fits an object in orbit better than anything else. That is why the case weighs mainly on the mundane explanation, with a remainder of indeterminacy for the lack of a second observation.\n\nThe case also illustrates how many foreign reports reached Blue Book in the 1960s: not through military channels, but through private letters to NASA or the Air Force, often with approximate addresses, which someone in Washington forwarded to the project. Ediger was not expecting an investigation; he wanted to know whether there was a satellite that explained what he had seen, and the file contains no reply.",
+  "evidence": [
+    "Aerograma de Bob Ediger a la NASA (3 abr 1966): observación del 2 de abril a las 18:24 GMT, justo por encima, rumbo este.",
+    "Recorrió 50 a 80 grados de arco en no más de un minuto, destellando unas dos veces por segundo, con brillo de estrella de primera magnitud o mayor.",
+    "Sin sonido, en un lugar donde los reactores altos se oyen con facilidad; el testigo tenía más de 4.000 horas de vuelo, incluidas en F-84G.",
+    "Ficha de Blue Book: «posible avión»; «dada la experiencia del observador, no es una identificación firme».",
+    "A esa hora el Sol estaba a unos 13° bajo el horizonte en Jos: condiciones típicas para ver satélites iluminados."
+  ],
+  "evidence_en": [
+    "Bob Ediger's air letter to NASA (3 Apr 1966): observation of 2 April at 18:24 GMT, directly overhead, heading east.",
+    "It covered 50 to 80 degrees of arc in no more than a minute, flashing about twice a second, as bright as a first-magnitude star or brighter.",
+    "No sound, in a place where high jets are easily heard; the witness had over 4,000 flying hours, including in F-84Gs.",
+    "Blue Book card: \"possible aircraft\"; \"in view of experience of observer, not a firm identification\".",
+    "At that time the Sun was about 13° below the horizon at Jos: typical conditions for seeing sunlit satellites."
+  ],
+  "sources": [
+    {
+      "name": "Proyecto Blue Book — expediente «2 April 1966, Nigeria, West Africa» (ficha y aerograma de Bob Ediger), NARA, espejo en archive.org",
+      "name_en": "Project Blue Book — file \"2 April 1966, Nigeria, West Africa\" (record card and Bob Ediger's air letter), NARA, archive.org mirror",
+      "url": "https://archive.org/details/1966-04-7094626-Nigeria-WestAfrica"
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/blue-book-jos-nigeria-1966.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book de Jos, Nigeria (abril de 1966): ficha y carta del testigo a la NASA, 3 págs.",
+      "title_en": "Blue Book file on Jos, Nigeria (April 1966): record card and the witness's letter to NASA, 3 pp.",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://archive.org/details/1966-04-7094626-Nigeria-WestAfrica"
+    }
+  ]
+}
