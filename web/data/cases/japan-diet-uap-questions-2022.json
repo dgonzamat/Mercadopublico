@@ -1,0 +1,121 @@
+{
+  "id": "japan-diet-uap-questions-2022",
+  "num": 419,
+  "name": "Los UAP en la Dieta de Japón · preguntas de Asakawa y respuestas del gobierno (2022–2024)",
+  "name_en": "UAP in Japan's National Diet · Asakawa's questions and the government's answers (2022–2024)",
+  "year_start": 2022,
+  "country": "JP",
+  "country_name": "Japón",
+  "flag": "🇯🇵",
+  "location": {
+    "lat": 35.6759,
+    "lng": 139.7449,
+    "place": "Tokio · Edificio de la Dieta Nacional",
+    "place_en": "Tokyo · National Diet Building"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 60,
+  "mundanoType": "misid",
+  "posterior": {
+    "mundano_natural": 0.4,
+    "humana_clasificada": 0.18,
+    "adversaria": 0.12,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.02,
+    "indet": 0.28
+  },
+  "summary": "Entre 2022 y 2024 el diputado Yoshiharu Asakawa interrogó al gobierno japonés sobre los UAP en más de quince sesiones de comisión. Las actas recogen la línea oficial —nada confirmado desde 2020, registros reservados, coordinación con EE.UU.—, un sondeo entre ministerios sin un solo reporte y la fundación, en junio de 2024, de una liga parlamentaria presidida por el exministro de Defensa Hamada.",
+  "summary_en": "Between 2022 and 2024, lawmaker Yoshiharu Asakawa questioned the Japanese government about UAP in more than fifteen committee sessions. The records capture the official line —nothing confirmed since 2020, records withheld, coordination with the US—, a survey of ministries that turned up not a single report, and the founding in June 2024 of a parliamentary league chaired by former Defence Minister Hamada.",
+  "patterns": [
+    "8e",
+    "8o",
+    "8q"
+  ],
+  "category": "document",
+  "whatHappened": "Entre febrero de 2022 y julio de 2024, el diputado Yoshiharu Asakawa, del partido Nippon Ishin no Kai, llevó el tema de los UAP a la Cámara de Representantes de Japón en más de quince sesiones de comisión: gabinete, territorio y transporte, presupuestos, auditoría y, sobre todo, la comisión de seguridad nacional. En su primera intervención de fondo, el 8 de abril de 2022 en la comisión de gabinete, recordó que en los dos años transcurridos desde que el gobierno estadounidense publicó sus vídeos la Dieta no había debatido el asunto ni una vez. Desde el principio lo planteó como una cuestión de seguridad: un ovni no es por definición una nave extraterrestre, dijo, y lo que ve un piloto puede ser un misil hipersónico chino o un dron.\n\nLas respuestas de aquel día marcaron el tono de las siguientes. El jefe de gabinete, Hirokazu Matsuno, resumió los pasos de Washington —los vídeos de abril de 2020, el informe de junio de 2021 y la oficina creada en noviembre de ese año— y reconoció que Estados Unidos veía en los UAP un riesgo para la seguridad de vuelo y para la defensa, pero dijo que Japón no preveía crear un órgano especializado. El viceministro de Defensa, Makoto Oniki, confirmó que en la reunión de ministros de Defensa de Japón y Estados Unidos del 29 de agosto de 2020 se había hablado de lo que hacía Washington con los UAP, y se negó a dar más detalle «por la relación con la parte estadounidense». El viceministro del Gabinete Keitaro Ohno contó que, al ver los vídeos, se preguntó si no serían insectos en la lente. Y la Oficina de Aviación Civil respondió a algo que Asakawa había planteado un mes antes: según las aerolíneas consultadas, ningún piloto había sido trasladado a un puesto de tierra solo por reportar un objeto no identificado.\n\nEn 2023 el diálogo se trasladó a la comisión de seguridad y al Ministerio de Defensa. El 23 de marzo, Taro Yamato, del Estado Mayor Conjunto, dijo que desde la directiva de septiembre de 2020 no se había confirmado ningún objeto de ese tipo, y explicó que en los informes por violación del espacio aéreo existe una categoría «otros» donde caen aeronaves de terceros países o bandadas de pájaros captadas por el radar. El 14 de abril, el ministro de Defensa Yasukazu Hamada dijo que no existía una ventanilla específica con Estados Unidos para compartir información sobre UAP, y Yamato añadió que el ministerio no revela si tiene o no registros de UAP porque eso revelaría su capacidad de recolección, aunque no descartó publicarlos si algún día hubiera algo que explicar a la ciudadanía. El 9 de noviembre, el nuevo ministro, Minoru Kihara, reconoció que Asakawa había declarado en la audiencia sobre UAP del Congreso mexicano de septiembre de 2023 —la de [[maussan-congreso-mexico-2023]]— y admitió que al recibir la pregunta no entendió el término, porque en el ministerio no se usa: allí se habla de «objetos no identificables en el aire». El 7 de diciembre, el Estado Mayor Conjunto repitió la línea oficial: el gobierno nunca ha confirmado la existencia de objetos voladores no identificados que parezcan venir de fuera de la Tierra, y desde 2020 no ha llegado ningún reporte.\n\nEn 2024 las preguntas subieron de nivel. El 8 de febrero, en la comisión de presupuestos, el jefe de gabinete Yoshimasa Hayashi dijo que gracias a Asakawa había aprendido el término y su cambio de «aéreo» a «anómalo», y que ante una emergencia el gobierno activaría sus oficinas de crisis. El 12 de marzo, Kihara dijo haber leído entero el informe histórico de AARO ([[aaro-historical-record-2024]]), que no encontró pruebas de nada extraterrestre, y sacó una conclusión: si un UAP no es japonés, es de otro país, y el riesgo de que sean armas o aviones espía de otros Estados debía abordarse con Estados Unidos. El 13 de junio, al hacer balance de dos años de preguntas en esa comisión, Asakawa anunció que acababa de fundarse la Liga parlamentaria para esclarecer los fenómenos anómalos no identificados desde la seguridad nacional, presidida por el exministro Hamada, con Shinjiro Koizumi, presidente de la comisión, como secretario general, y él mismo como director de secretaría; en el acto fundacional habló Christopher Mellon. En esa sesión se hizo un sondeo entre ministerios: la Oficina de Aviación Civil dijo que en los cinco años de registros conservados ningún comandante había reportado un UAP como amenaza a la seguridad de vuelo; la Agencia de Pesca, que sus patrulleras no tenían ningún informe; el Ministerio de Educación, que ni JAXA ni el Observatorio Astronómico Nacional investigaban el tema. Kihara cerró diciendo que no se estudiaba crear una oficina. El 30 de julio, Yamato, ya director de política de defensa, precisó que su dirección coordina la información sobre objetos no identificables. Después de esa fecha, la palabra UAP no vuelve a aparecer en las actas de la Dieta.",
+  "whatHappened_en": "Between February 2022 and July 2024, Yoshiharu Asakawa, a member of the House of Representatives for the Nippon Ishin no Kai party, brought UAP before Japan's lower house in more than fifteen committee sessions: cabinet, land and transport, budget, audit and, above all, national security. In his first substantive intervention, on 8 April 2022 in the cabinet committee, he noted that in the two years since the US government released its videos the Diet had not discussed the matter once. From the outset he framed it as a security question: a UFO is not by definition an alien craft, he said, and what a pilot sees could be a Chinese hypersonic missile or a drone.\n\nThe answers that day set the tone for those that followed. Chief Cabinet Secretary Hirokazu Matsuno summarised Washington's steps —the videos of April 2020, the report of June 2021 and the office created that November— and acknowledged that the United States saw UAP as a risk to flight safety and to defence, but said Japan had no plans to create a dedicated body. State Minister of Defence Makoto Oniki confirmed that the Japan–US defence ministers' meeting of 29 August 2020 had touched on what Washington was doing about UAP, and declined to give further detail \"given the relationship with the US side\". Cabinet Office State Minister Keitaro Ohno said that when he watched the videos he wondered whether they were insects on the lens. And the Civil Aviation Bureau answered something Asakawa had raised a month earlier: according to the airlines consulted, no pilot had been moved to a ground job merely for reporting an unidentified object.\n\nIn 2023 the exchange moved to the security committee and the Ministry of Defence. On 23 March, Taro Yamato of the Joint Staff said that since the directive of September 2020 no such object had been confirmed, and explained that airspace-violation reports have an \"other\" category covering aircraft from third countries or flocks of birds picked up by radar. On 14 April, Defence Minister Yasukazu Hamada said there was no specific channel with the United States for sharing UAP information, and Yamato added that the ministry does not reveal whether it holds UAP records because that would reveal its collection capability, though he did not rule out publishing them if one day there were something to explain to the public. On 9 November, the new minister, Minoru Kihara, acknowledged that Asakawa had testified at the Mexican Congress's UAP hearing of September 2023 —the one in [[maussan-congreso-mexico-2023]]— and admitted that when he received the question he did not understand the term, because the ministry does not use it: there they speak of \"unidentifiable objects in the air\". On 7 December, the Joint Staff repeated the official line: the government has never confirmed the existence of unidentified flying objects that appear to come from beyond the Earth, and no report has come in since 2020.\n\nIn 2024 the questions went up a level. On 8 February, in the budget committee, Chief Cabinet Secretary Yoshimasa Hayashi said that thanks to Asakawa he had learned the term and its change from \"aerial\" to \"anomalous\", and that in an emergency the government would activate its crisis offices. On 12 March, Kihara said he had read AARO's historical report in full ([[aaro-historical-record-2024]]), which found no evidence of anything extraterrestrial, and drew a conclusion: if a UAP is not Japanese, it belongs to another country, and the risk that such objects are other states' weapons or spy aircraft had to be tackled with the United States. On 13 June, looking back on two years of questions in that committee, Asakawa announced that a parliamentary league to elucidate unidentified anomalous phenomena from a national-security perspective had just been founded, chaired by former minister Hamada, with the committee chairman Shinjiro Koizumi as secretary-general and Asakawa himself as secretariat director; Christopher Mellon spoke at the founding meeting. At that session a survey of ministries was carried out: the Civil Aviation Bureau said that in the five years of retained records no captain had reported a UAP as a threat to flight safety; the Fisheries Agency, that its patrol vessels had no report; the Ministry of Education, that neither JAXA nor the National Astronomical Observatory was researching the subject. Kihara closed by saying that no office was under consideration. On 30 July, Yamato, by then Director General of Defence Policy, clarified that his bureau coordinates information on unidentifiable objects. After that date, the word UAP does not appear again in the Diet's records.",
+  "whyMatters": "Estas actas son el registro completo de cómo responde en su Parlamento un gobierno del G7 cuando se le pregunta, una y otra vez, por los UAP. La línea no se movió en dos años y medio: no se ha confirmado nada, el ministerio no usa ese término, no se dice qué registros hay porque eso revelaría capacidades de inteligencia, y todo se coordina con Estados Unidos. Es el complemento parlamentario del protocolo de [[japan-jai-directive-2020]]: la directiva dice qué deben hacer los pilotos, y las actas dicen qué ha salido de ella, que según el gobierno es nada.\n\nEl contraste con Washington es instructivo. En el Congreso estadounidense las audiencias traen testigos que afirman programas ocultos; en la Dieta, las preguntas vinieron casi siempre de un solo diputado y las respuestas fueron de procedimiento. El peso político llegó tarde y por otra vía: una liga parlamentaria presidida por un exministro de Defensa y con Shinjiro Koizumi, que meses después aspiraría a primer ministro, como secretario general. El sondeo de junio de 2024 da además un dato negativo útil —cinco años de reportes obligatorios de aviación civil y los informes de las patrulleras de pesca sin un solo UAP—, pero el propio Asakawa ofreció la otra lectura: pilotos que temían ser trasladados si hablaban, y una cultura en las Fuerzas de Autodefensa de no subir información que incomode al superior. Un registro vacío puede significar que no pasa nada o que nadie lo anota, y las actas no permiten distinguirlo; es el mismo problema de estigma que Estados Unidos intentó resolver con sus canales de reporte.\n\nEl razonamiento de Kihara de marzo de 2024 muestra además cómo se importan las conclusiones ajenas: como AARO no halló pruebas de nada extraterrestre, lo no identificado sería de otro país. AARO no hace esa deducción —la oficina mantiene casos sin resolver—, pero la inferencia convierte el tema en uno de amenaza estatal, que es el marco en el que Japón está dispuesto a gastar. Por eso el caso carga sobre la narrativa mundana y, en segundo lugar, sobre la de tecnología de otro Estado. El episodio de [[genkai-nuclear-2025]], que llegó a la Dieta en 2026 hablando ya solo de drones y aviones, confirma el patrón: la política japonesa tramita el fenómeno como vigilancia del espacio aéreo, no como enigma.",
+  "whyMatters_en": "These records are the complete account of how a G7 government answers in its parliament when asked, again and again, about UAP. The line did not move in two and a half years: nothing has been confirmed, the ministry does not use the term, it will not say which records exist because that would reveal intelligence capabilities, and everything is coordinated with the United States. It is the parliamentary complement to the protocol in [[japan-jai-directive-2020]]: the directive says what pilots must do, and the records say what has come of it, which according to the government is nothing.\n\nThe contrast with Washington is instructive. In the US Congress, hearings bring witnesses who allege hidden programmes; in the Diet, the questions came almost always from a single member and the answers were procedural. Political weight arrived late and by another route: a parliamentary league chaired by a former defence minister, with Shinjiro Koizumi, who months later would run for prime minister, as secretary-general. The June 2024 survey also yields a useful negative datum —five years of mandatory civil-aviation reports and the fisheries patrol vessels' reports without a single UAP—, but Asakawa himself offered the other reading: pilots who feared reassignment if they spoke, and a culture in the Self-Defense Forces of not passing up information that embarrasses a superior. An empty register can mean that nothing happens or that nobody writes it down, and the records do not let us tell which; it is the same stigma problem the United States tried to solve with its reporting channels.\n\nKihara's reasoning of March 2024 also shows how other people's conclusions get imported: since AARO found no evidence of anything extraterrestrial, whatever is unidentified must belong to another country. AARO does not make that deduction —the office keeps cases unresolved—, but the inference turns the subject into one of state threat, which is the frame in which Japan is willing to spend. That is why the case weighs on the mundane narrative and, second, on that of another state's technology. The [[genkai-nuclear-2025]] episode, which reached the Diet in 2026 already speaking only of drones and aircraft, confirms the pattern: Japanese politics processes the phenomenon as airspace surveillance, not as a mystery.",
+  "evidence": [
+    "8 abr 2022: el jefe de gabinete Matsuno descarta crear un órgano especializado; Defensa confirma que los UAP se trataron en la reunión de ministros de Defensa Japón–EE.UU. del 29 ago 2020.",
+    "14 abr 2023: el Estado Mayor Conjunto no revela si tiene registros de UAP porque eso expondría su capacidad de recolección, pero no descarta publicarlos en el futuro.",
+    "7 dic 2023: el gobierno reitera que nunca ha confirmado objetos que parezcan venir de fuera de la Tierra y que desde 2020 no ha llegado ningún reporte.",
+    "12 mar 2024: el ministro Kihara deduce del informe histórico de AARO que un UAP no japonés sería de otro Estado.",
+    "13 jun 2024: Aviación Civil (cinco años de registros), Agencia de Pesca y Ministerio de Educación declaran no tener ningún reporte ni estudio de UAP; Defensa no estudia crear una oficina.",
+    "Junio de 2024: fundación de la liga parlamentaria sobre fenómenos anómalos no identificados, presidida por Yasukazu Hamada, con Shinjiro Koizumi como secretario general y conferencia de Christopher Mellon.",
+    "Desde agosto de 2024, el término UAP no vuelve a aparecer en las actas de la Dieta."
+  ],
+  "evidence_en": [
+    "8 Apr 2022: Chief Cabinet Secretary Matsuno rules out a dedicated body; Defence confirms UAP were discussed at the Japan–US defence ministers' meeting of 29 Aug 2020.",
+    "14 Apr 2023: the Joint Staff will not reveal whether it holds UAP records because that would expose its collection capability, but does not rule out publishing them in future.",
+    "7 Dec 2023: the government reiterates it has never confirmed objects that appear to come from beyond the Earth and that no report has come in since 2020.",
+    "12 Mar 2024: Minister Kihara infers from AARO's historical report that a non-Japanese UAP would belong to another state.",
+    "13 Jun 2024: Civil Aviation (five years of records), the Fisheries Agency and the Ministry of Education state they hold no UAP report or study; Defence is not considering an office.",
+    "June 2024: founding of the parliamentary league on unidentified anomalous phenomena, chaired by Yasukazu Hamada, with Shinjiro Koizumi as secretary-general and a talk by Christopher Mellon.",
+    "Since August 2024, the term UAP does not reappear in the Diet's records."
+  ],
+  "sources": [
+    {
+      "name": "Actas de la Dieta — Cámara de Representantes, comisión de gabinete (8 abr 2022), respuesta del jefe de gabinete Matsuno",
+      "name_en": "Diet records — House of Representatives, cabinet committee (8 Apr 2022), answer by Chief Cabinet Secretary Matsuno",
+      "url": "https://kokkai.ndl.go.jp/txt/120804889X01720220408/88"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de gabinete (8 abr 2022), respuesta del viceministro de Defensa Oniki sobre la reunión Japón–EE.UU. de 2020",
+      "name_en": "Diet records — cabinet committee (8 Apr 2022), answer by State Minister of Defence Oniki on the 2020 Japan–US meeting",
+      "url": "https://kokkai.ndl.go.jp/txt/120804889X01720220408/86"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (14 abr 2023), respuesta del Estado Mayor Conjunto sobre los registros de UAP",
+      "name_en": "Diet records — security committee (14 Apr 2023), Joint Staff answer on UAP records",
+      "url": "https://kokkai.ndl.go.jp/txt/121103815X00820230414/33"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (9 nov 2023), respuesta del ministro de Defensa Kihara",
+      "name_en": "Diet records — security committee (9 Nov 2023), answer by Defence Minister Kihara",
+      "url": "https://kokkai.ndl.go.jp/txt/121203815X00220231109/180"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (7 dic 2023), respuesta del Estado Mayor Conjunto",
+      "name_en": "Diet records — security committee (7 Dec 2023), Joint Staff answer",
+      "url": "https://kokkai.ndl.go.jp/txt/121203815X00420231207/41"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de presupuestos (8 feb 2024), respuesta del jefe de gabinete Hayashi",
+      "name_en": "Diet records — budget committee (8 Feb 2024), answer by Chief Cabinet Secretary Hayashi",
+      "url": "https://kokkai.ndl.go.jp/txt/121305261X00620240208/409"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (12 mar 2024), respuesta del ministro Kihara sobre el informe histórico de AARO",
+      "name_en": "Diet records — security committee (12 Mar 2024), answer by Minister Kihara on AARO's historical report",
+      "url": "https://kokkai.ndl.go.jp/txt/121303815X00220240312/140"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (13 jun 2024), intervención de Asakawa sobre la fundación de la liga parlamentaria",
+      "name_en": "Diet records — security committee (13 Jun 2024), Asakawa's statement on the founding of the parliamentary league",
+      "url": "https://kokkai.ndl.go.jp/txt/121303815X01120240613/12"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (13 jun 2024), respuesta de la Oficina de Aviación Civil",
+      "name_en": "Diet records — security committee (13 Jun 2024), Civil Aviation Bureau answer",
+      "url": "https://kokkai.ndl.go.jp/txt/121303815X01120240613/14"
+    },
+    {
+      "name": "Actas de la Dieta — comisión de seguridad (30 jul 2024), respuesta del director de política de defensa Yamato",
+      "name_en": "Diet records — security committee (30 Jul 2024), answer by Director General of Defence Policy Yamato",
+      "url": "https://kokkai.ndl.go.jp/txt/121303815X01320240730/144"
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/japan-diet-uap-actas-2022-2024.pdf",
+      "type": "pdf",
+      "title": "Actas de la Dieta de Japón sobre los UAP (2022–2024): transcripción literal de doce intervenciones del gobierno y de Asakawa",
+      "title_en": "Records of Japan's National Diet on UAP (2022–2024): verbatim transcription of twelve interventions by the government and Asakawa",
+      "source": "Biblioteca de la Dieta Nacional, sistema de búsqueda de actas (kokkai.ndl.go.jp)",
+      "license": "Intervenciones públicas en el Parlamento, de uso libre (Ley de Derecho de Autor de Japón, art. 40)",
+      "fallbackUrl": "https://kokkai.ndl.go.jp/txt/121303815X01120240613/12"
+    }
+  ]
+}
