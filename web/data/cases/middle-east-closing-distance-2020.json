@@ -31,7 +31,7 @@
   "summary": "En 2020, la Fuerza Aérea de EE.UU. sometió a la AARO un reporte de 58 segundos de metraje infrarrojo sobre Oriente Medio, sin descripción alguna del testigo. El sensor sigue un área de contraste que 'aumenta gradualmente en distintividad' y luego, al hacer zoom, 'aumenta en tamaño y distintividad aparentes'. La AARO adjuntó un comentario técnico infrecuente en el corpus: ese aumento de tamaño se debe, al menos en parte, a que la propia plataforma se acercaba al objeto — no a que el objeto creciera o se aproximara por su cuenta.",
   "summary_en": "In 2020, the U.S. Air Force submitted a report to AARO consisting of 58 seconds of infrared footage over the Middle East, with no witness description at all. The sensor tracks an area of contrast that 'gradually increases in distinctiveness' and then, after zooming in, 'increases in apparent size and distinctiveness.' AARO attached a technical comment rare in this corpus: that apparent growth is at least partly due to the platform itself closing the distance to the object — not the object growing or approaching on its own.",
   "patterns": [],
-  "category": "document",
+  "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/1006105",

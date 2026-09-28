@@ -29,7 +29,7 @@
   "summary": "En octubre de 2017, un sensor infrarrojo a bordo de un aeróstato de protección de fuerzas cerca de la base aérea de Al Taqaddum, en Irak, registró 17 minutos de metraje de un objeto no identificado — una de las grabaciones continuas más largas del corpus. La AARO empleó análisis de video de movimiento completo, examen de píxeles y datos geolocacionales del propio aeróstato para evaluar la velocidad y dirección del objeto, y concluyó que se trataba de un racimo de globos parcial y totalmente inflados, cuya apariencia coincide con otras observaciones de racimos de globos ya documentadas. La AARO evalúa que el objeto no exhibió características de desempeño anómalas.",
   "summary_en": "In October 2017, an infrared sensor aboard a force-protection aerostat near Al Taqaddum Air Base, Iraq, recorded 17 minutes of footage of an unidentified object — one of the longest continuous recordings in the corpus. AARO employed full-motion video analysis, pixel examination, and geo-locational data from the aerostat itself to assess the object's speed and direction, concluding it was a cluster of partially and fully inflated balloons, whose appearance matches other already-documented balloon-cluster observations. AARO assesses the object did not exhibit anomalous performance characteristics.",
   "patterns": [],
-  "category": "document",
+  "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/960331",

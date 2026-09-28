@@ -29,7 +29,7 @@
   "summary": "El 15 de enero de 2023, un dron MQ-9 Reaper que filmaba a otro MQ-9 en Asia del Sur registró un objeto con una aparente estela atmosférica o de cavitación cruzando el campo de visión del sensor. El director de la AARO, Sean Kirkpatrick, presentó el caso ante el Senado el 19 de abril de 2023 junto al Mosul Orb, pero con un desenlace distinto: tras analizar el video completo, sumar metraje con mayor distancia focal y cruzar datos de tráfico aéreo comercial, la AARO evaluó que el objeto era probablemente una aeronave comercial, y que la estela era un artefacto de compresión del sensor — no un fenómeno físico del objeto. La resolución del caso, dijo la oficina, seguía pendiente de revisión final.",
   "summary_en": "On January 15, 2023, an MQ-9 Reaper drone filming another MQ-9 over South Asia recorded an object with an apparent atmospheric or cavitation wake crossing the sensor's field of view. AARO director Sean Kirkpatrick presented the case to the Senate on April 19, 2023 alongside the Mosul Orb, but with a different outcome: after analyzing the full video, adding footage with a longer focal length, and cross-referencing commercial air traffic data, AARO assessed the object was likely a commercial aircraft, and the wake a sensor compression artifact — not a physical phenomenon of the object. Case resolution, the office said, remained pending final review.",
   "patterns": [],
-  "category": "document",
+  "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/880270",

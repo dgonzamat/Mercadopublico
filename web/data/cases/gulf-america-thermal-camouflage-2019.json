@@ -31,7 +31,7 @@
   "summary": "En 2019, la Fuerza Aérea de EE.UU. sometió a la AARO un reporte de 8 segundos de metraje infrarrojo sobre el Golfo de América. El clip mismo es breve y poco distintivo: un área de contraste parcialmente oculta por el HUD que 'parpadea visualmente' mientras el sensor la sigue. Lo inusual es que la AARO adjuntó, además de la descripción visual estándar, un comentario técnico explicando el mecanismo físico del parpadeo: cuando la temperatura de una fuente se asemeja a la del entorno, puede mezclarse visualmente con el fondo o parecer parpadear por los filtros de control automático de ganancia del propio sensor. Es de los pocos expedientes del corpus donde la AARO explica la física del artefacto, no solo lo describe.",
   "summary_en": "In 2019, the U.S. Air Force submitted a report to AARO consisting of 8 seconds of infrared footage over the Gulf of America. The clip itself is brief and undistinctive: an area of contrast partially obscured by the HUD that 'visually flickers' as the sensor tracks it. What is unusual is that AARO attached, beyond the standard visual description, a technical comment explaining the physical mechanism behind the flicker: when a source's temperature resembles that of its surroundings, it can visually blend into the background or appear to flicker due to the sensor's own auto-gain control filters. It is one of the few files in the corpus where AARO explains the physics of the artifact, not just describes it.",
   "patterns": [],
-  "category": "document",
+  "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/1014123",

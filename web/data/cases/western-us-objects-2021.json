@@ -29,7 +29,7 @@
   "summary": "En 2021, un sensor infrarrojo sobre un campo de tiro militar del oeste de Estados Unidos registró tres objetos no identificados. El 31 de mayo de 2023, el director de la AARO, Sean Kirkpatrick, presentó el caso ante el Equipo de Estudio Independiente de la NASA sobre UAP — y lo cerró en la misma presentación: el análisis del video, cruzado con datos de tráfico aéreo comercial de la región, mostró que las trayectorias de radar de tres aeronaves comerciales coincidían exactamente con los tres puntos observados. A la distancia registrada por el sensor, los aviones aparecían como simples puntos, sin forma reconocible. Es uno de los pocos casos del corpus con una resolución oficial completa y verificable.",
   "summary_en": "In 2021, an infrared sensor over a military range in the western United States recorded three unidentified objects. On May 31, 2023, AARO director Sean Kirkpatrick presented the case to NASA's Independent Study Team on UAP — and closed it in the same presentation: video analysis, cross-referenced with the region's commercial air traffic data, showed that three commercial aircraft's radar tracks matched the three observed points exactly. At the sensor's recorded distance, the aircraft appeared as mere dots, with no recognizable shape. It is one of the few cases in the corpus with a complete, verifiable official resolution.",
   "patterns": [],
-  "category": "document",
+  "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/885190",

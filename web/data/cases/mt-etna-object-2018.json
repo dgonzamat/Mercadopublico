@@ -29,7 +29,7 @@
   "summary": "En diciembre de 2018, un sensor infrarrojo de avance (FLIR) a bordo de una plataforma no tripulada de la Fuerza Aérea de EE.UU. registró metraje sobre el Mediterráneo que mostraba, aparentemente, un objeto cruzando la columna de gas sobrecalentado y ceniza de una erupción del Monte Etna, en Sicilia. La AARO coordinó un esfuerzo analítico interagencial e internacional y determinó que los efectos ópticos de las intensas condiciones atmosféricas cerca del volcán habían distorsionado el video, haciendo parecer que el objeto cruzaba la columna. La agencia evalúa con confianza moderada que el metraje muestra en realidad un globo a unos 170 kilómetros de la caldera, desplazándose a la velocidad y dirección del viento.",
   "summary_en": "In December 2018, a forward-looking infrared (FLIR) sensor aboard an uncrewed U.S. Air Force platform recorded footage over the Mediterranean that appeared to show an object transiting the superheated gas and ash plume of an erupting Mount Etna, Sicily. AARO coordinated an interagency and international analytical effort and determined that optical effects from the intense atmospheric conditions near the volcano had distorted the video, making the object appear to cross the plume. The agency assesses with moderate confidence that the footage actually shows a balloon roughly 170 kilometers from the caldera, traveling at wind speed and direction.",
   "patterns": [],
-  "category": "document",
+  "category": "incident",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/944201",
