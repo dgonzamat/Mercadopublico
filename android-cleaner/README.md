@@ -4,7 +4,7 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que anal
 
 | Grupo | Criterio | ¿Preseleccionado? | Requiere |
 |---|---|---|---|
-| Apps sospechosas | apps instaladas por el usuario con señales de riesgo: fuera de una tienda (+2), accesibilidad activa (+3), administradora del dispositivo (+3), lee SMS (+2), ≥3 permisos de espionaje (+2), lee notificaciones, sin ícono, instala apps o dibuja encima (+1 c/u). Se lista si viene de fuera de una tienda con ≥4 puntos, o de una tienda con accesibilidad **y** administrador. **No es un antivirus con firmas** (ver Límites) | no | nada extra |
+| Apps sospechosas (antivirus) | **1. Malware conocido** (opcional, con tu clave gratuita de VirusTotal): la huella SHA-256 de cada app instalada fuera de una tienda, de las de tienda que ya salieron sospechosas y de cada instalador APK se compara con más de 70 antivirus; solo sale la huella, nunca el archivo. **2. Señales de riesgo** (sin conexión): sin ícono pero apareció en pantalla en las últimas 24 h (+4, adware de anuncios a pantalla completa), fuera de una tienda (+2), accesibilidad activa (+3), administradora del dispositivo (+3), lee SMS (+2), ≥3 permisos de espionaje (+2), se presenta como limpiador/acelerador, lee notificaciones, sin ícono, instala apps o dibuja encima (+1 c/u). Ver `RiskRules` para cuándo se lista | no | nada extra (VirusTotal: clave; conteo de pantallas: datos de uso) |
 | Capturas de pantalla | carpeta `Screenshots`/`Capturas` o nombre `Screenshot_*`, **de hace más de 14 días** (las recientes no se listan) | sí | fotos |
 | Fotos y videos repetidos | en la galería: mismo tamaño → mismos primeros 64 KB → mismo SHA-256 → **doble verificación byte a byte contra el original** (se repite justo antes de borrar); se conserva el más antiguo | sí | fotos |
 | Fotos parecidas | huella perceptual dHash de cada foto comparada con todas: ≤4 bits entre fotos cualesquiera (reenvíos, otra carpeta u otra compresión) o ≤10 bits dentro de una ráfaga (misma carpeta, ≤10 s); se conserva la más grande | no | fotos |
@@ -17,7 +17,7 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que anal
 | Descargas antiguas | en `Download/` desde hace más de 30 días | no | todos los archivos |
 | Apps que no usas | sin abrir en 60 días, con tamaño app+datos+caché | no | datos de uso |
 
-Más una sección **Más espacio** con el vaciado de **caché de todas las apps** (diálogo del sistema `ACTION_CLEAR_APP_CACHE`), un acceso a **Google Play Protect** (sí tiene base de malware conocido) y accesos directos para conceder los dos permisos opcionales.
+Más una sección **Más espacio** con el vaciado de **caché de todas las apps** (diálogo del sistema `ACTION_CLEAR_APP_CACHE`), la herramienta **«¿Qué app muestra los anuncios?»** (tras un anuncio que bloquea la pantalla, lista la última app que la ocupó y abre sus ajustes), la configuración del **antivirus en la nube** (clave de VirusTotal), un acceso a **Google Play Protect** y accesos directos para conceder los dos permisos opcionales.
 
 **Cómo se elimina cada cosa**: fotos y videos pasan por `MediaStore.createDeleteRequest` (confirmación de Android y papelera de 30 días donde exista); los archivos y carpetas se borran de inmediato tras la confirmación de la app; las apps se desinstalan una por una con el diálogo del sistema. `Android/data` y `Android/obb` no se tocan: Android 11+ no los expone a apps de terceros, así que la caché interna de otras apps solo se vacía con la herramienta del sistema.
 
@@ -34,7 +34,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.11.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.12.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -86,7 +86,9 @@ app/src/main/kotlin/com/dgonzamat/limpiador/
 
 ## Límites conocidos
 
-- **Seguridad: no es un antivirus.** Una app sin root no puede leer el contenido de otras apps ni ponerlas en cuarentena, y este proyecto no tiene una base de firmas de malware. «Apps sospechosas» solo reúne señales de riesgo: puede dar falsos positivos (una app legítima instalada fuera de la tienda) y no detecta malware que no las muestre. Para malware conocido, usar Play Protect. Una app administradora del dispositivo no se desinstala hasta desactivarla en Ajustes › Seguridad; la app lo avisa.
+- **Seguridad: límites del antivirus.** Una app sin root no puede leer el contenido de otras apps, ni ponerlas en cuarentena, ni detenerlas: detecta y lleva a desinstalar. La detección por firma depende de VirusTotal (clave del usuario, 4 consultas por minuto y 500 al día en la cuota gratuita según sus condiciones actuales; la app consulta hasta 20 huellas por análisis, una cada 15 s). Sin clave solo hay señales de riesgo, que pueden dar falsos positivos y no ven malware que no las muestre. Una app administradora del dispositivo no se desinstala hasta desactivarla en Ajustes › Seguridad; la app lo avisa.
+- **Si el malware no deja usar el teléfono** (anuncios que tapan la pantalla o reaparecen): reiniciar en **modo seguro** (mantener apagar → mantener «Apagar» → «Modo seguro»; varía por fabricante). En modo seguro no corre ninguna app de terceros, tampoco esta, pero se puede desinstalar desde Ajustes › Apps la app que Limpiador señaló.
+- «¿Qué app muestra los anuncios?» y la señal «apareció en pantalla sin ícono» usan el registro de uso de Android (`ACTIVITY_RESUMED`). Si el anuncio se dibuja como capa (permiso de dibujar sobre otras apps) en vez de como pantalla, no queda en ese registro: ahí ayuda la señal «puede dibujar sobre otras apps».
 - El acceso a Play Protect abre un componente de Google Play Services que no es una API pública documentada; si no existe, abre Ajustes › Seguridad.
 
 - La caché interna de otras apps (`Android/data`) no es accesible para apps de terceros en Android 11+; se vacía con la herramienta del sistema que la app enlaza.

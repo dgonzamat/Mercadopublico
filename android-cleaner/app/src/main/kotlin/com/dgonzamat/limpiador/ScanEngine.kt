@@ -14,7 +14,14 @@ object ScanEngine {
     /** Dónde se entregan los avisos de progreso (la pantalla vive en el hilo principal). */
     var uiDispatcher: kotlinx.coroutines.CoroutineDispatcher = Dispatchers.Main
     /** Análisis de seguridad de las apps instaladas (reemplazable en pruebas). */
-    var securityScan: (Context) -> List<JunkItem> = { SecurityScanner(it).scan() }
+    var securityScan: suspend (Context, VirusTotal?, suspend (Int) -> Unit) -> List<JunkItem> =
+        { ctx, vt, onLookup -> SecurityScanner(ctx, vt).scan(onLookup) }
+    /** Antivirus en la nube: solo si el usuario guardó su clave de VirusTotal (reemplazable en pruebas). */
+    var virusTotal: (Context) -> VirusTotal? = { ctx -> vtKey(ctx)?.let { VirusTotal(it) } }
+
+    const val PREF_VT_KEY = "vt_key"
+    fun vtKey(ctx: Context): String? =
+        ctx.getSharedPreferences("limpiador", Context.MODE_PRIVATE).getString(PREF_VT_KEY, null)?.trim()?.takeIf { it.isNotEmpty() }
 
     val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.SIMILAR, Category.TINY, Category.LARGE_VIDEOS)
     val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS, Category.DUPLICATE_FILES)
@@ -54,14 +61,29 @@ object ScanEngine {
             out += AppScanner(context).scan()
         }
         // Seguridad: no necesita permisos especiales (la app ya declara QUERY_ALL_PACKAGES).
+        val vt = if (Category.SUSPICIOUS_APPS in enabled || Category.APK_FILES in enabled) virusTotal(context) else null
         if (Category.SUSPICIOUS_APPS in enabled) {
             onProgress(ScanProgress.Security)
-            out += securityScan(context)
+            out += securityScan(context, vt) { onProgress(ScanProgress.Antivirus(it)) }
+        }
+        // Instaladores APK descargados: la vía habitual por la que llega el malware.
+        if (vt != null && Category.APK_FILES in enabled) {
+            for (i in out.indices) {
+                val item = out[i]
+                if (item.category != Category.APK_FILES || item.isDir || item.path == null) continue
+                val v = vt.check(File(item.path)) ?: continue
+                onProgress(ScanProgress.Antivirus(vt.checked))
+                val malware = v is VtVerdict.Found && v.malicious > 0
+                out[i] = item.copy(
+                    note = listOfNotNull(SecurityScanner.verdictNote(context, v), item.note).joinToString(" · "),
+                    risk = if (malware) 1000 + (v as VtVerdict.Found).malicious else 0,
+                ).also { it.selected = item.selected || malware }
+            }
         }
         ScanResult(
             out.filter { it.category in enabled }
                 .sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.risk }.thenByDescending { it.size }),
-            ScanScope(allFiles = allFiles, usage = usage, filesVisited = visited),
+            ScanScope(allFiles = allFiles, usage = usage, filesVisited = visited, vt = vt?.report() ?: VtReport()),
         )
     }
 }

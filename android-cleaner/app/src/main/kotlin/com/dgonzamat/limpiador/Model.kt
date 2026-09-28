@@ -82,10 +82,18 @@ sealed class ScanProgress {
     data class FileHashing(val done: Int, val total: Int) : ScanProgress()
     object Apps : ScanProgress()
     object Security : ScanProgress()
+    /** Huellas consultadas en VirusTotal (una cada 15 s por la cuota gratuita). */
+    data class Antivirus(val checked: Int) : ScanProgress()
 }
 
 /** Qué alcanzó el último escaneo, para decirlo en pantalla. */
-data class ScanScope(val allFiles: Boolean = false, val usage: Boolean = false, val filesVisited: Int = 0)
+data class ScanScope(
+    val allFiles: Boolean = false,
+    val usage: Boolean = false,
+    val filesVisited: Int = 0,
+    /** Consultas al antivirus en la nube (VirusTotal) del último análisis. */
+    val vt: VtReport = VtReport(),
+)
 
 data class ScanResult(val items: List<JunkItem>, val scope: ScanScope)
 

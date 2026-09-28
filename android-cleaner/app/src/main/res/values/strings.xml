@@ -204,4 +204,50 @@
     <string name="tool_protect_desc">Busca malware conocido con la base de datos de Google. Complementa la revisión de apps sospechosas, que se basa en señales de riesgo.</string>
     <string name="tool_protect_button">Abrir</string>
     <string name="admin_blocks_uninstall">«%1$s» es administradora del dispositivo: desactívala en Ajustes › Seguridad y vuelve a intentarlo.</string>
+
+    <!-- v2.12: antivirus en la nube -->
+    <string name="tool_vt_title">Antivirus en la nube (VirusTotal)</string>
+    <string name="tool_vt_desc_off">Compara cada app instalada fuera de una tienda y cada instalador APK con malware conocido, usando más de 70 antivirus. Solo se envía la huella del archivo, nunca el archivo. Necesita tu clave gratuita de VirusTotal.</string>
+    <string name="tool_vt_desc_on">Activo: en cada análisis se consultan las huellas de las apps de fuera de una tienda y de los instaladores APK (hasta 20, una cada 15 segundos).</string>
+    <string name="tool_vt_button_on">Activar</string>
+    <string name="tool_vt_button_change">Cambiar clave</string>
+    <string name="vt_dialog_message">Crea una cuenta gratuita en virustotal.com, copia tu clave de API desde tu perfil y pégala aquí. Se guarda solo en este teléfono. La cuota gratuita permite 4 consultas por minuto y 500 al día.</string>
+    <string name="vt_key_hint">Clave de API de VirusTotal</string>
+    <string name="vt_save">Guardar</string>
+    <string name="vt_remove">Quitar</string>
+    <string name="vt_malware">MALWARE: lo detectan %1$d de %2$d antivirus (VirusTotal)</string>
+    <string name="vt_clean">VirusTotal: ninguno de %1$d antivirus lo detecta</string>
+    <string name="vt_unknown">VirusTotal no conoce este archivo</string>
+    <plurals name="scanning_antivirus">
+        <item quantity="one">Antivirus en la nube: %1$d huella consultada (una cada 15 s)…</item>
+        <item quantity="other">Antivirus en la nube: %1$d huellas consultadas (una cada 15 s)…</item>
+    </plurals>
+    <plurals name="vt_scope_ok">
+        <item quantity="one">VirusTotal: %1$d huella consultada, %2$d con malware.</item>
+        <item quantity="other">VirusTotal: %1$d huellas consultadas, %2$d con malware.</item>
+    </plurals>
+    <string name="vt_scope_limited">Se llegó al tope de %1$d consultas por análisis; el resto queda para el próximo.</string>
+    <string name="vt_scope_bad_key">VirusTotal no aceptó la clave: revísala en «Antivirus en la nube».</string>
+    <string name="vt_scope_quota">VirusTotal: se agotó la cuota gratuita de consultas; se usaron solo señales de riesgo.</string>
+    <string name="vt_scope_offline">VirusTotal: sin conexión; se usaron solo señales de riesgo.</string>
+    <string name="privacy_note_vt">Todo ocurre en tu teléfono. Solo las huellas de apps e instaladores van a VirusTotal.</string>
+    <string name="reason_cleaner">se presenta como limpiador o acelerador (disfraz común del adware)</string>
+
+    <!-- v2.12: anuncios que bloquean la pantalla -->
+    <string name="reason_pops_up">abre pantallas por su cuenta sin tener ícono (anuncios)</string>
+    <plurals name="reason_pops_up_n">
+        <item quantity="one">no tiene ícono, pero apareció en pantalla %1$d vez en 24 h (anuncios a pantalla completa)</item>
+        <item quantity="other">no tiene ícono, pero apareció en pantalla %1$d veces en 24 h (anuncios a pantalla completa)</item>
+    </plurals>
+    <string name="tool_ads_title">¿Qué app muestra los anuncios?</string>
+    <string name="tool_ads_desc">Cuando un anuncio te bloquee la pantalla, abre Limpiador y toca aquí: verás qué app acaba de ocupar la pantalla. Tócala para abrir sus ajustes y desinstalarla.</string>
+    <string name="tool_ads_button">Buscar</string>
+    <string name="ads_need_usage">Para saber qué app abrió cada pantalla hace falta el «Acceso a datos de uso». Actívalo y vuelve a tocar Buscar.</string>
+    <string name="ads_none">Ninguna app instalada por ti mostró pantallas en los últimos 30 minutos.</string>
+    <string name="ads_seconds_ago">hace %1$d s</string>
+    <string name="ads_minutes_ago">hace %1$d min</string>
+    <plurals name="ads_times">
+        <item quantity="one">%1$d vez</item>
+        <item quantity="other">%1$d veces</item>
+    </plurals>
 </resources>

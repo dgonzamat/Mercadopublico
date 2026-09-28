@@ -25,6 +25,9 @@
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <!-- Antivirus en la nube (opcional, con la clave del usuario): solo sale la huella SHA-256
+         de apps e instaladores hacia VirusTotal; nunca fotos ni archivos. -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".LimpiadorApp"

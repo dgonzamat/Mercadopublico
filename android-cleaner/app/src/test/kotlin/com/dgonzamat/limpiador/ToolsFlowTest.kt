@@ -46,7 +46,8 @@ class ToolsFlowTest {
         ScanEngine.storageRoot = { storage }
         ScanEngine.allFilesAccess = { true }
         ScanEngine.usageAccess = { AppScanner.hasUsageAccess(it) }
-        ScanEngine.securityScan = { SecurityScanner(it).scan() }
+        ScanEngine.securityScan = { ctx, vt, p -> SecurityScanner(ctx, vt).scan(p) }
+        ScanEngine.virusTotal = { null } // sin red en las pruebas
         shadowOf(ApplicationProvider.getApplicationContext<Application>())
             .grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
     }
@@ -78,9 +79,9 @@ class ToolsFlowTest {
             assertEquals("2 apps · 190,0 MB", appsCard.findViewById<TextView>(R.id.stats).text.toString())
             assertTrue(!appsCard.findViewById<MaterialSwitch>(R.id.toggle).isChecked)
 
-            // Con ambos permisos quedan la caché y Play Protect; el botón de caché abre el diálogo del sistema.
+            // Con ambos permisos quedan la caché, el antivirus en la nube y Play Protect; la caché abre el diálogo del sistema.
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(2, tools.size)
+            assertEquals(4, tools.size)
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()
             idle()
             val cacheReq = a.nextResultRequest()
@@ -175,7 +176,17 @@ class ToolsFlowTest {
             AppFacts(FakeApps.RECENT, "Gestor de claves", 30_000_000, "com.android.vending", emptySet(),
                 accessibilityOn = true, deviceAdmin = false, notificationListener = false, hasLauncherIcon = true),
         )
-        ScanEngine.securityScan = { SecurityScanner(it) { facts }.scan() }
+        // Antivirus en la nube con respuestas inventadas: la administradora es malware conocido.
+        val apkDir = java.nio.file.Files.createTempDirectory("apks").toFile() // fuera del almacenamiento analizado
+        val adminApk = File(apkDir, "admin.apk").apply { writeBytes(ByteArray(64) { 7 }) }
+        val adminHash = VirusTotal.sha256(adminApk)
+        val vt = VirusTotal("clave", http = { url, _ ->
+            if (url.endsWith(adminHash)) 200 to """{"data":{"attributes":{"last_analysis_stats":{"malicious":38,"suspicious":2,"undetected":24,"harmless":0}}}}"""
+            else 404 to """{"error":{"code":"NotFoundError"}}"""
+        }, wait = {})
+        val withApks = facts.mapIndexed { i, f -> f.copy(apkPath = if (i == 1) adminApk.path else File(apkDir, "otra$i.apk").apply { writeBytes(ByteArray(8) { i.toByte() }) }.path) }
+        ScanEngine.virusTotal = { vt }
+        ScanEngine.securityScan = { ctx, v, p -> SecurityScanner(ctx, v) { withApks }.scan(p) }
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         scenario.onActivity { a ->
             idle()
@@ -187,7 +198,12 @@ class ToolsFlowTest {
             assertTrue(!cards[0].findViewById<MaterialSwitch>(R.id.toggle).isChecked)
             assertEquals(View.GONE, a.v<View>(R.id.securityClean).visibility)
             val suspicious = ScanStore.byCategory(Category.SUSPICIOUS_APPS)
-            assertEquals(listOf(FakeApps.UNUSED, FakeApps.NEVER), suspicious.map { it.packageName }) // la de tienda no
+            // El malware confirmado por VirusTotal va primero; la de tienda ni se consulta ni se lista.
+            assertEquals(listOf(FakeApps.NEVER, FakeApps.UNUSED), suspicious.map { it.packageName })
+            assertTrue(suspicious[0].note!!.startsWith("MALWARE: lo detectan 38 de 64 antivirus (VirusTotal)"))
+            assertTrue(suspicious[1].note!!.endsWith("VirusTotal no conoce este archivo"))
+            assertEquals(VtReport(VtStatus.OK, 2, 1), ScanStore.scope.vt)
+            assertTrue(a.v<TextView>(R.id.resultsScope).text.contains("VirusTotal: 2 huellas consultadas, 1 con malware."))
             Screenshots.snap(a.window.decorView, "12-resultados-seguridad")
         }
 
@@ -206,7 +222,7 @@ class ToolsFlowTest {
             assertEquals(c.getString(R.string.grid_hint_security), c.v<TextView>(R.id.hint).text.toString())
             val first = grid.findViewHolderForAdapterPosition(0)!!.itemView
             val label = first.findViewById<TextView>(R.id.label)
-            assertTrue(label.text.toString(), label.text.contains("Riesgo alto: no viene de una tienda, controla la pantalla"))
+            assertTrue(label.text.toString(), label.text.contains("MALWARE: lo detectan 38 de 64 antivirus"))
             assertEquals(androidx.core.content.ContextCompat.getColor(c, R.color.danger), label.currentTextColor)
             Screenshots.snap(c.window.decorView, "13-revision-seguridad")
         }
@@ -221,18 +237,86 @@ class ToolsFlowTest {
             val pm = shadowOf(a.packageManager)
             var del: org.robolectric.shadows.ShadowActivity.IntentForResult? = null
             waitUntil("desinstalación 1") { del = a.nextResultRequest(); del != null }
-            assertEquals("package:${FakeApps.UNUSED}", del!!.intent.dataString)
-            pm.removePackage(FakeApps.UNUSED)
-            shadowOf(a).receiveResult(del!!.intent, Activity.RESULT_OK, null)
+            assertEquals("package:${FakeApps.NEVER}", del!!.intent.dataString)
+            shadowOf(a).receiveResult(del!!.intent, Activity.RESULT_CANCELED, null) // administradora: Android no la deja ir
             idle()
-            val admin = a.nextResultRequest()
-            assertEquals("package:${FakeApps.NEVER}", admin!!.intent.dataString)
-            shadowOf(a).receiveResult(admin.intent, Activity.RESULT_CANCELED, null) // Android no la deja ir
+            val other = a.nextResultRequest()
+            assertEquals("package:${FakeApps.UNUSED}", other!!.intent.dataString)
+            pm.removePackage(FakeApps.UNUSED)
+            shadowOf(a).receiveResult(other.intent, Activity.RESULT_OK, null)
             idle()
             assertEquals(View.VISIBLE, a.v<View>(R.id.doneGroup).visibility)
             assertNotNull(a.window.decorView.findText(a.getString(R.string.admin_blocks_uninstall, "Servicio de actualización")))
         }
-        ScanEngine.securityScan = { SecurityScanner(it).scan() }
+        ScanEngine.securityScan = { ctx, vt, p -> SecurityScanner(ctx, vt).scan(p) }
+        ScanEngine.virusTotal = { null } // sin red en las pruebas
+    }
+
+    @Test
+    fun quien_muestra_los_anuncios_lista_la_ultima_app_en_pantalla() {
+        FakeApps.install(usageAccess = true)
+        val ctx = ApplicationProvider.getApplicationContext<Application>()
+        val usm = shadowOf(ctx.getSystemService(android.content.Context.USAGE_STATS_SERVICE) as android.app.usage.UsageStatsManager)
+        val now = System.currentTimeMillis()
+        val resumed = android.app.usage.UsageEvents.Event.ACTIVITY_RESUMED
+        usm.addEvent(FakeApps.NEVER, now - 12_000, resumed)          // el anuncio de recién
+        usm.addEvent(FakeApps.NEVER, now - 400_000, resumed)
+        usm.addEvent(FakeApps.RECENT, now - 600_000, resumed)
+        usm.addEvent(FakeApps.SYSTEM, now - 5_000, resumed)          // del sistema: no se ofrece
+        usm.addEvent(ctx.packageName, now - 1_000, resumed)          // esta misma app: tampoco
+        usm.addEvent(FakeApps.UNUSED, now - 3 * 3600_000L, resumed)  // hace más de 30 min
+        ScanStore.items = listOf(JunkItem(Category.TINY, "x.jpg", 10, uri = android.net.Uri.parse("content://media/external/images/media/1")))
+        ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
+            idle()
+            val card = a.v<ViewGroup>(R.id.toolsContainer).children()
+                .single { it.findViewById<TextView>(R.id.title).text.toString() == a.getString(R.string.tool_ads_title) }
+            card.findViewById<MaterialButton>(R.id.button).performClick()
+            idle()
+            val dialog = ShadowDialog.getLatestDialog() as AlertDialog
+            val list = dialog.listView
+            assertEquals(2, list.adapter.count)
+            val first = list.adapter.getItem(0).toString()
+            assertTrue(first, first.startsWith("App nunca abierta · hace 1") && first.endsWith("2 veces"))
+            val second = list.adapter.getItem(1).toString()
+            assertTrue(second, second.startsWith("App reciente · hace 10 min"))
+            Screenshots.snap(dialog.window!!.decorView, "15-quien-muestra-anuncios")
+            shadowOf(list).performItemClick(0)
+            idle()
+            val info = shadowOf(a).nextStartedActivity
+            assertEquals(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, info.action)
+            assertEquals("package:${FakeApps.NEVER}", info.dataString)
+        }
+    }
+
+    @Test
+    fun antivirus_en_la_nube_se_activa_con_la_clave_y_lo_dice() {
+        ScanStore.items = listOf(JunkItem(Category.TINY, "x.jpg", 10, uri = android.net.Uri.parse("content://media/external/images/media/1")))
+        ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
+            idle()
+            val privacy = a.v<TextView>(R.id.privacyNote)
+            assertEquals(a.getString(R.string.privacy_note), privacy.text.toString())
+            fun vtCard() = a.v<ViewGroup>(R.id.toolsContainer).children()
+                .single { it.findViewById<TextView>(R.id.title).text.toString() == a.getString(R.string.tool_vt_title) }
+            assertEquals(a.getString(R.string.tool_vt_button_on), vtCard().findViewById<MaterialButton>(R.id.button).text.toString())
+            vtCard().findViewById<MaterialButton>(R.id.button).performClick()
+            idle()
+            val dialog = ShadowDialog.getLatestDialog() as AlertDialog
+            dialog.findViewById<TextView>(R.id.vtKeyInput)!!.text = "  abc123  "
+            Screenshots.snap(dialog.window!!.decorView, "14-clave-virustotal")
+            dialog.getButton(AlertDialog.BUTTON_POSITIVE).performClick()
+            idle()
+            assertEquals("abc123", ScanEngine.vtKey(a))
+            assertEquals(a.getString(R.string.privacy_note_vt), a.v<TextView>(R.id.privacyNote).text.toString())
+            assertEquals(a.getString(R.string.tool_vt_button_change), vtCard().findViewById<MaterialButton>(R.id.button).text.toString())
+            assertEquals(a.getString(R.string.tool_vt_desc_on), vtCard().findViewById<TextView>(R.id.description).text.toString())
+            // «Quitar» la borra y la nota vuelve a «nada se sube».
+            vtCard().findViewById<MaterialButton>(R.id.button).performClick()
+            idle()
+            (ShadowDialog.getLatestDialog() as AlertDialog).getButton(AlertDialog.BUTTON_NEUTRAL).performClick()
+            idle()
+            assertEquals(null, ScanEngine.vtKey(a))
+            assertEquals(a.getString(R.string.privacy_note), a.v<TextView>(R.id.privacyNote).text.toString())
+        }
     }
 
     @Test
@@ -262,7 +346,7 @@ class ToolsFlowTest {
             assertEquals(View.VISIBLE, a.v<View>(R.id.scopeBanner).visibility)
             assertEquals(a.getString(R.string.scope_gallery), a.v<TextView>(R.id.resultsScope).text.toString())
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(2, tools.size)
+            assertEquals(4, tools.size)
             assertEquals(a.getString(R.string.tool_usage_title), tools[0].findViewById<TextView>(R.id.title).text.toString())
             Screenshots.snap(a.window.decorView, "10-resultados-sin-permisos")
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()

@@ -192,4 +192,50 @@
     <string name="tool_protect_desc">Looks for known malware using Google\'s database. It complements the suspicious-apps check, which is based on risk signals.</string>
     <string name="tool_protect_button">Open</string>
     <string name="admin_blocks_uninstall">"%1$s" is a device administrator: turn it off in Settings › Security and try again.</string>
+
+    <!-- v2.12: cloud antivirus -->
+    <string name="tool_vt_title">Cloud antivirus (VirusTotal)</string>
+    <string name="tool_vt_desc_off">Compares every app installed outside an app store and every APK installer with known malware, using more than 70 antivirus engines. Only the file\'s fingerprint is sent, never the file. Needs your free VirusTotal key.</string>
+    <string name="tool_vt_desc_on">On: each scan checks the fingerprints of apps from outside an app store and of APK installers (up to 20, one every 15 seconds).</string>
+    <string name="tool_vt_button_on">Turn on</string>
+    <string name="tool_vt_button_change">Change key</string>
+    <string name="vt_dialog_message">Create a free account at virustotal.com, copy your API key from your profile and paste it here. It is stored only on this phone. The free quota allows 4 lookups per minute and 500 per day.</string>
+    <string name="vt_key_hint">VirusTotal API key</string>
+    <string name="vt_save">Save</string>
+    <string name="vt_remove">Remove</string>
+    <string name="vt_malware">MALWARE: flagged by %1$d of %2$d antivirus engines (VirusTotal)</string>
+    <string name="vt_clean">VirusTotal: none of %1$d engines flag it</string>
+    <string name="vt_unknown">VirusTotal has never seen this file</string>
+    <plurals name="scanning_antivirus">
+        <item quantity="one">Cloud antivirus: %1$d fingerprint checked (one every 15 s)…</item>
+        <item quantity="other">Cloud antivirus: %1$d fingerprints checked (one every 15 s)…</item>
+    </plurals>
+    <plurals name="vt_scope_ok">
+        <item quantity="one">VirusTotal: %1$d fingerprint checked, %2$d with malware.</item>
+        <item quantity="other">VirusTotal: %1$d fingerprints checked, %2$d with malware.</item>
+    </plurals>
+    <string name="vt_scope_limited">Reached the limit of %1$d lookups per scan; the rest is left for the next one.</string>
+    <string name="vt_scope_bad_key">VirusTotal rejected the key: check it in "Cloud antivirus".</string>
+    <string name="vt_scope_quota">VirusTotal: the free lookup quota ran out; only risk signals were used.</string>
+    <string name="vt_scope_offline">VirusTotal: no connection; only risk signals were used.</string>
+    <string name="privacy_note_vt">Everything happens on your phone. Only app and installer fingerprints go to VirusTotal.</string>
+    <string name="reason_cleaner">poses as a cleaner or booster (a common adware disguise)</string>
+
+    <!-- v2.12: ads that block the screen -->
+    <string name="reason_pops_up">opens screens by itself without an icon (ads)</string>
+    <plurals name="reason_pops_up_n">
+        <item quantity="one">has no icon, but showed up on screen %1$d time in 24 h (full-screen ads)</item>
+        <item quantity="other">has no icon, but showed up on screen %1$d times in 24 h (full-screen ads)</item>
+    </plurals>
+    <string name="tool_ads_title">Which app shows the ads?</string>
+    <string name="tool_ads_desc">When an ad blocks your screen, open Cleaner and tap here: you will see which app just took over the screen. Tap it to open its settings and uninstall it.</string>
+    <string name="tool_ads_button">Find</string>
+    <string name="ads_need_usage">To know which app opened each screen, "Usage access" is needed. Turn it on and tap Find again.</string>
+    <string name="ads_none">No app you installed showed a screen in the last 30 minutes.</string>
+    <string name="ads_seconds_ago">%1$d s ago</string>
+    <string name="ads_minutes_ago">%1$d min ago</string>
+    <plurals name="ads_times">
+        <item quantity="one">%1$d time</item>
+        <item quantity="other">%1$d times</item>
+    </plurals>
 </resources>

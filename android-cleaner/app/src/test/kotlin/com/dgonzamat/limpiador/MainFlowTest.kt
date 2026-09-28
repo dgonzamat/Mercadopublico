@@ -42,7 +42,8 @@ class MainFlowTest {
         ScanEngine.storageRoot = { storage }
         ScanEngine.allFilesAccess = { true }
         ScanEngine.usageAccess = { false }
-        ScanEngine.securityScan = { SecurityScanner(it).scan() }
+        ScanEngine.securityScan = { ctx, vt, p -> SecurityScanner(ctx, vt).scan(p) }
+        ScanEngine.virusTotal = { null } // sin red en las pruebas
         val app = ApplicationProvider.getApplicationContext<Application>()
         shadowOf(app).grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
     }
@@ -138,8 +139,11 @@ class MainFlowTest {
             )
             // Herramientas: caché del sistema (hay acceso a archivos) y activar acceso de uso (no lo hay).
             val tools = a.v<android.view.ViewGroup>(R.id.toolsContainer)
-            assertEquals(3, tools.childCount)
-            assertEquals(a.getString(R.string.tool_protect_title), tools.getChildAt(2).findViewById<TextView>(R.id.title).text.toString())
+            assertEquals(5, tools.childCount)
+            assertEquals(
+                listOf(R.string.tool_cache_title, R.string.tool_usage_title, R.string.tool_vt_title, R.string.tool_ads_title, R.string.tool_protect_title).map(a::getString),
+                (0 until tools.childCount).map { tools.getChildAt(it).findViewById<TextView>(R.id.title).text.toString() },
+            )
             assertEquals(a.getString(R.string.tool_cache_title), tools.getChildAt(0).findViewById<TextView>(R.id.title).text.toString())
             assertEquals(a.getString(R.string.tool_usage_title), tools.getChildAt(1).findViewById<TextView>(R.id.title).text.toString())
             assertEquals("1 archivo · 59 KB", cards[1].findViewById<TextView>(R.id.stats).text.toString())

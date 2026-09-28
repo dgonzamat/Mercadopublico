@@ -27,11 +27,19 @@ data class AppFacts(
     val deviceAdmin: Boolean,
     val notificationListener: Boolean,
     val hasLauncherIcon: Boolean,
+    /** APK instalado (legible por cualquier app): se usa para su huella en VirusTotal. */
+    val apkPath: String? = null,
+    /** Veces que mostró una pantalla en las últimas 24 h (registro de uso; 0 si no hay acceso). */
+    val screensLastDay: Int = 0,
 )
 
 /** Señales de riesgo. Son las que usan troyanos bancarios y stalkerware; ninguna prueba por sí sola que una app sea maliciosa. */
 enum class RiskSignal(val weight: Int, val textRes: Int) {
     SIDELOADED(2, R.string.reason_sideloaded),
+    /** No tiene ícono, así que el usuario no pudo abrirla, y aun así mostró pantallas: anuncios a pantalla completa. */
+    POPS_UP(4, R.string.reason_pops_up),
+    /** Se presenta como limpiador, acelerador o ahorrador de batería: disfraz frecuente de adware y malware. */
+    CLEANER(1, R.string.reason_cleaner),
     ACCESSIBILITY(3, R.string.reason_accessibility),
     DEVICE_ADMIN(3, R.string.reason_admin),
     SMS(2, R.string.reason_sms),
@@ -60,6 +68,23 @@ object RiskRules {
         "org.fdroid.fdroid",              // F-Droid
     )
 
+    /**
+     * Palabras con las que se presentan los limpiadores falsos. Solo suman con otra señal: un
+     * limpiador legítimo sin overlay, sin ícono oculto y sin control del teléfono no se lista.
+     */
+    private val CLEANER_WORDS = listOf(
+        "clean", "cleaner", "limpia", "booster", "boost", "acelera", "optimiz", "speed", "junk",
+        "basura", "cooler", "cpu", "ram", "battery", "bateria", "batería", "virus", "antivirus", "security master",
+        "phone master", "phonemaster",
+    )
+
+    fun looksLikeCleaner(label: String, pkg: String): Boolean {
+        val text = (label + " " + pkg).lowercase()
+        return CLEANER_WORDS.any { w ->
+            if (w.length <= 4) Regex("(^|[^a-z])" + Regex.escape(w) + "([^a-z]|$)").containsMatchIn(text) else w in text
+        }
+    }
+
     private val SMS = setOf(Manifest.permission.READ_SMS, Manifest.permission.RECEIVE_SMS)
     private val SPY = setOf(
         Manifest.permission.READ_CONTACTS, Manifest.permission.READ_CALL_LOG,
@@ -72,6 +97,8 @@ object RiskRules {
 
     fun signals(f: AppFacts): List<RiskSignal> = buildList {
         if (f.installer !in TRUSTED_STORES) add(RiskSignal.SIDELOADED)
+        if (looksLikeCleaner(f.label, f.packageName)) add(RiskSignal.CLEANER)
+        if (!f.hasLauncherIcon && f.screensLastDay > 0) add(RiskSignal.POPS_UP)
         if (f.accessibilityOn) add(RiskSignal.ACCESSIBILITY)
         if (f.deviceAdmin) add(RiskSignal.DEVICE_ADMIN)
         if (f.permissions.any { it in SMS }) add(RiskSignal.SMS)
@@ -84,41 +111,89 @@ object RiskRules {
 
     /**
      * null si la app no se lista. Las apps de tienda con permisos amplios son comunes (mensajería,
-     * gestores de contraseñas), así que solo se listan si combinan accesibilidad y administrador.
+     * gestores de contraseñas), así que una app de tienda solo se lista si:
+     * - combina accesibilidad y administrador, o
+     * - oculta su ícono y además dibuja encima, controla el teléfono o instala apps (patrón del adware), o
+     * - se presenta como limpiador/acelerador y además dibuja encima, oculta su ícono, controla el
+     *   teléfono, lee notificaciones o instala apps (los limpiadores falsos de Google Play).
      */
     fun assess(f: AppFacts): RiskAssessment? {
         val s = signals(f)
         val score = s.sumOf { it.weight }
         val sideloaded = RiskSignal.SIDELOADED in s
         val control = RiskSignal.ACCESSIBILITY in s || RiskSignal.DEVICE_ADMIN in s
+        val adwareMoves = RiskSignal.OVERLAY in s || control || RiskSignal.INSTALLS_APPS in s
         val listed = if (sideloaded) score >= SIDELOADED_MIN_SCORE
-        else RiskSignal.ACCESSIBILITY in s && RiskSignal.DEVICE_ADMIN in s
+        else RiskSignal.POPS_UP in s ||
+            (RiskSignal.ACCESSIBILITY in s && RiskSignal.DEVICE_ADMIN in s) ||
+            (RiskSignal.HIDDEN in s && adwareMoves) ||
+            (RiskSignal.CLEANER in s && (adwareMoves || RiskSignal.HIDDEN in s || RiskSignal.NOTIFICATIONS in s))
         if (!listed) return null
-        val high = score >= HIGH_SCORE || (sideloaded && control)
+        val high = score >= HIGH_SCORE || (sideloaded && control) || RiskSignal.POPS_UP in s
         return RiskAssessment(high, score, s)
     }
 }
 
 /**
- * Apps sospechosas instaladas por el usuario. No es un antivirus con base de firmas: no sabe
- * si una app es malware conocido, solo si reúne señales de riesgo. Nada se marca solo.
+ * Antivirus de apps instaladas por el usuario, en dos capas:
+ * 1. Señales de riesgo ([RiskRules]), sin conexión.
+ * 2. Con [vt] (clave de VirusTotal del usuario), la huella de cada app instalada fuera de una
+ *    tienda, y de las de tienda que ya salieron sospechosas, se compara con malware conocido.
+ * Nada se marca solo: desinstalar es decisión del usuario.
  */
 class SecurityScanner(
     private val context: Context,
+    private val vt: VirusTotal? = null,
     private val facts: () -> List<AppFacts> = { collectFacts(context) },
 ) {
 
-    fun scan(): List<JunkItem> = facts().mapNotNull { f ->
-        val a = RiskRules.assess(f) ?: return@mapNotNull null
-        val level = context.getString(if (a.high) R.string.risk_high else R.string.risk_medium)
-        val reasons = a.signals.joinToString(", ") { context.getString(it.textRes) }
-        JunkItem(
-            Category.SUSPICIOUS_APPS, f.label, f.size, "$level: $reasons",
-            packageName = f.packageName, risk = a.score + if (a.high) 100 else 0, deviceAdmin = f.deviceAdmin,
-        )
-    }.sortedWith(compareByDescending<JunkItem> { it.risk }.thenByDescending { it.size })
+    suspend fun scan(onLookup: suspend (Int) -> Unit = {}): List<JunkItem> {
+        val all = facts().map { it to RiskRules.assess(it) }
+        // Antivirus en la nube: primero las de más riesgo, por si se agota el tope de consultas.
+        val verdicts = HashMap<String, VtVerdict>()
+        if (vt != null) {
+            all.filter { (f, a) -> (f.installer !in RiskRules.TRUSTED_STORES || a != null) && f.apkPath != null }
+                .sortedByDescending { (_, a) -> a?.score ?: 0 }
+                .forEach { (f, _) ->
+                    vt.check(File(f.apkPath!!))?.let { verdicts[f.packageName] = it }
+                    onLookup(vt.checked)
+                }
+        }
+        return all.mapNotNull { (f, a) ->
+            val v = verdicts[f.packageName]
+            val malware = v is VtVerdict.Found && v.malicious > 0
+            if (a == null && !malware) return@mapNotNull null
+            val reasons = a?.signals?.joinToString(", ") {
+                if (it == RiskSignal.POPS_UP) context.resources.getQuantityString(R.plurals.reason_pops_up_n, f.screensLastDay, f.screensLastDay)
+                else context.getString(it.textRes)
+            }
+            val note = when {
+                malware -> listOfNotNull(malwareNote(context, v as VtVerdict.Found), reasons?.replaceFirstChar { it.uppercase() }).joinToString(". ")
+                else -> {
+                    val level = context.getString(if (a!!.high) R.string.risk_high else R.string.risk_medium)
+                    "$level: $reasons" + (v?.let { " · " + verdictNote(context, it) } ?: "")
+                }
+            }
+            val risk = when {
+                malware -> 1000 + (v as VtVerdict.Found).malicious
+                else -> a!!.score + if (a.high) 100 else 0
+            }
+            JunkItem(
+                Category.SUSPICIOUS_APPS, f.label, f.size, note,
+                packageName = f.packageName, risk = risk, deviceAdmin = f.deviceAdmin,
+            )
+        }.sortedWith(compareByDescending<JunkItem> { it.risk }.thenByDescending { it.size })
+    }
 
     companion object {
+        fun malwareNote(ctx: Context, v: VtVerdict.Found) = ctx.getString(R.string.vt_malware, v.malicious, v.engines)
+
+        /** Qué dijo VirusTotal cuando no hubo detección (limpio o nunca visto). */
+        fun verdictNote(ctx: Context, v: VtVerdict): String = when (v) {
+            is VtVerdict.Found -> if (v.malicious > 0) malwareNote(ctx, v) else ctx.getString(R.string.vt_clean, v.engines)
+            VtVerdict.Unknown -> ctx.getString(R.string.vt_unknown)
+        }
+
         /** Lee de Android lo que se puede saber de cada app instalada por el usuario. */
         @Suppress("DEPRECATION")
         fun collectFacts(context: Context): List<AppFacts> {
@@ -133,6 +208,7 @@ class SecurityScanner(
                     .activeAdmins?.map { it.packageName }?.toSet() ?: emptySet()
             } catch (e: Exception) { emptySet() }
             val listeners = try { NotificationManagerCompat.getEnabledListenerPackages(context) } catch (e: Exception) { emptySet() }
+            val screens = ForegroundLog.counts(context, System.currentTimeMillis() - 24 * 3600_000L)
             val launchable = try {
                 pm.queryIntentActivities(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER), 0)
                     .map { it.activityInfo.packageName }.toSet()
@@ -154,6 +230,8 @@ class SecurityScanner(
                         deviceAdmin = p.packageName in admins,
                         notificationListener = p.packageName in listeners,
                         hasLauncherIcon = p.packageName in launchable,
+                        apkPath = app.sourceDir,
+                        screensLastDay = screens[p.packageName] ?: 0,
                     )
                 } catch (e: Exception) {
                     null // una app que no se deja leer no detiene el análisis

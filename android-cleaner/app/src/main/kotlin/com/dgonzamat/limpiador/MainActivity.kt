@@ -121,6 +121,7 @@ class MainActivity : AppCompatActivity() {
         b.cancelScanButton.setOnClickListener { cancelScan() }
         b.appTitle.setOnLongClickListener { showDiagnostics(); true }
         renderWelcomeGroups()
+        updatePrivacyNote()
 
         if (ScanStore.items.isNotEmpty()) show(Screen.RESULTS) else show(Screen.WELCOME)
     }
@@ -348,6 +349,85 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
+     * Lista las apps que mostraron pantallas en los últimos 30 minutos, la más reciente primero.
+     * Tocar una abre su información en Ajustes (desinstalar, forzar detención, permisos).
+     */
+    private fun findAdsCulprit() {
+        if (!ScanEngine.usageAccess(this)) {
+            MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.tool_ads_title)
+                .setMessage(R.string.ads_need_usage)
+                .setPositiveButton(R.string.tool_enable) { _, _ -> openUsageAccessSettings() }
+                .setNegativeButton(android.R.string.cancel, null)
+                .show()
+            return
+        }
+        val now = System.currentTimeMillis()
+        val apps = ForegroundLog.recentUserApps(this, now - 30 * 60_000L, now)
+        val builder = MaterialAlertDialogBuilder(this).setTitle(R.string.tool_ads_title)
+        if (apps.isEmpty()) {
+            builder.setMessage(R.string.ads_none).setPositiveButton(android.R.string.ok, null).show()
+            return
+        }
+        val rows = apps.take(8).map { a ->
+            val ago = ((now - a.lastSeen) / 1000).coerceAtLeast(0)
+            val whenText = if (ago < 60) getString(R.string.ads_seconds_ago, ago) else getString(R.string.ads_minutes_ago, ago / 60)
+            "${a.label} · $whenText · " + resources.getQuantityString(R.plurals.ads_times, a.times, a.times)
+        }.toTypedArray()
+        builder.setItems(rows) { _, i ->
+            try {
+                startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:${apps[i].packageName}")))
+            } catch (e: Exception) {
+                Snackbar.make(b.root, R.string.open_failed, Snackbar.LENGTH_LONG).show()
+            }
+        }.setNegativeButton(android.R.string.cancel, null).show()
+    }
+
+    /** Una línea con lo que pasó con VirusTotal en el análisis (null si no está activo). */
+    private fun vtScopeText(r: VtReport): String? = when (r.status) {
+        VtStatus.OFF -> null
+        VtStatus.OK -> resources.getQuantityString(R.plurals.vt_scope_ok, r.checked, r.checked, r.detected)
+        VtStatus.LIMITED -> resources.getQuantityString(R.plurals.vt_scope_ok, r.checked, r.checked, r.detected) + " " +
+            getString(R.string.vt_scope_limited, VirusTotal.MAX_LOOKUPS)
+        VtStatus.BAD_KEY -> getString(R.string.vt_scope_bad_key)
+        VtStatus.QUOTA -> getString(R.string.vt_scope_quota)
+        VtStatus.OFFLINE -> getString(R.string.vt_scope_offline)
+    }
+
+    /** Guardar o quitar la clave de VirusTotal del usuario (queda en las preferencias privadas de la app). */
+    private fun configureVirusTotal() {
+        val pad = dp(20)
+        val input = com.google.android.material.textfield.TextInputEditText(this).apply {
+            hint = getString(R.string.vt_key_hint)
+            setText(ScanEngine.vtKey(this@MainActivity) ?: "")
+            isSingleLine = true
+            id = R.id.vtKeyInput
+        }
+        val box = android.widget.FrameLayout(this).apply { setPadding(pad, dp(8), pad, 0); addView(input) }
+        MaterialAlertDialogBuilder(this)
+            .setTitle(R.string.tool_vt_title)
+            .setMessage(R.string.vt_dialog_message)
+            .setView(box)
+            .setPositiveButton(R.string.vt_save) { _, _ ->
+                prefs.edit().putString(ScanEngine.PREF_VT_KEY, input.text?.toString()?.trim()).apply()
+                renderTools()
+                updatePrivacyNote()
+            }
+            .setNeutralButton(R.string.vt_remove) { _, _ ->
+                prefs.edit().remove(ScanEngine.PREF_VT_KEY).apply()
+                renderTools()
+                updatePrivacyNote()
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
+    /** La nota de privacidad dice la verdad: con VirusTotal activo, salen las huellas (y nada más). */
+    private fun updatePrivacyNote() {
+        b.privacyNote.setText(if (ScanEngine.vtKey(this) != null) R.string.privacy_note_vt else R.string.privacy_note)
+    }
+
+    /**
      * Abre Play Protect. No hay una acción pública documentada para esa pantalla: se prueba el
      * componente de Google Play Services y, si no existe, los ajustes de seguridad.
      */
@@ -426,7 +506,7 @@ class MainActivity : AppCompatActivity() {
                         when (p) {
                             is ScanProgress.Files, is ScanProgress.FileHashing -> Phase.FILES
                             ScanProgress.Apps -> Phase.APPS
-                            ScanProgress.Security -> Phase.SECURITY
+                            ScanProgress.Security, is ScanProgress.Antivirus -> Phase.SECURITY
                             else -> Phase.GALLERY
                         },
                     )
@@ -441,6 +521,7 @@ class MainActivity : AppCompatActivity() {
                             else resources.getQuantityString(R.plurals.scanning_files_count, p.visited, p.visited)
                         ScanProgress.Apps -> getString(R.string.scanning_apps)
                         ScanProgress.Security -> getString(R.string.scanning_security)
+                        is ScanProgress.Antivirus -> resources.getQuantityString(R.plurals.scanning_antivirus, p.checked, p.checked)
                     }
                 }
                 ScanStore.items = result.items
@@ -515,7 +596,7 @@ class MainActivity : AppCompatActivity() {
             scope.allFiles -> if (n > 0) getString(R.string.scope_files, n) else getString(R.string.scope_files_nocount)
             else -> getString(R.string.scope_gallery)
         }
-        b.resultsScope.text = scopeText
+        b.resultsScope.text = listOfNotNull(scopeText, vtScopeText(scope.vt)).joinToString(" ")
         if (all.isEmpty()) {
             b.resultsTitle.text = getString(R.string.results_clean_title)
             b.resultsSubtitle.text = getString(R.string.results_clean_subtitle)
@@ -586,6 +667,12 @@ class MainActivity : AppCompatActivity() {
         if (!ScanEngine.usageAccess(this)) {
             tool(R.drawable.ic_apps, R.string.tool_usage_title, R.string.tool_usage_desc, R.string.tool_enable) { openUsageAccessSettings() }
         }
+        // Antivirus en la nube: la huella de apps e instaladores contra malware conocido.
+        val vtOn = ScanEngine.vtKey(this) != null
+        tool(R.drawable.ic_shield, R.string.tool_vt_title, if (vtOn) R.string.tool_vt_desc_on else R.string.tool_vt_desc_off,
+            if (vtOn) R.string.tool_vt_button_change else R.string.tool_vt_button_on) { configureVirusTotal() }
+        // Anuncios que bloquean la pantalla: la última app que ocupó la pantalla es la que los lanza.
+        tool(R.drawable.ic_search, R.string.tool_ads_title, R.string.tool_ads_desc, R.string.tool_ads_button) { findAdsCulprit() }
         // Play Protect sí tiene base de datos de malware conocido: complementa las señales de riesgo.
         tool(R.drawable.ic_shield, R.string.tool_protect_title, R.string.tool_protect_desc, R.string.tool_protect_button) { openPlayProtect() }
         b.toolsTitle.visibility = if (b.toolsContainer.childCount > 0) View.VISIBLE else View.GONE
