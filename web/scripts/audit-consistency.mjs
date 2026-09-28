@@ -1814,6 +1814,30 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9z. RULE E41: Tier S/A sostenido solo por fuentes secundarias ───────
+//
+// Las fichas armadas desde relatos secundarios inflan el misterio frente al
+// registro: de 25 fichas S/A contrastadas con fuentes primarias en sep 2026,
+// 23 exageraban (testigos inventados, maniobras y cifras que el documento no
+// trae, veredictos oficiales mal citados) y ninguna erraba hacia lo prosaico.
+// Las 12 que solo citaban Wikipedia/UFO Evidence y similares fallaron las 12.
+// La sonda no puede juzgar si una URL es primaria, pero sí detectar el caso
+// extremo: ninguna fuente con URL fuera de la lista de agregadores. WARN, no
+// ERROR: el remedio es investigar, no silenciar. Ver CLAUDE.md, anti-pattern
+// de Blue Book.
+{
+  const SECONDARY = /wikipedia\.org|wikidisc|grokipedia|handwiki|ufoevidence\.org|ufocasebook|thinkaboutit|weirdnj|ufoinsight|uapglobe|namu\.wiki/i;
+  const flagged = [];
+  for (const c of cases) {
+    if (c.tier !== "S" && c.tier !== "A") continue;
+    const urls = (c.sources || []).map((s) => s.url).filter(Boolean);
+    if (!urls.some((u) => !SECONDARY.test(u))) flagged.push(`${c.id} (${c.tier})`);
+  }
+  if (flagged.length > 0) {
+    record("WARN", casesDir, 0, `E41 fuentes: ${flagged.length} caso(s) Tier S/A sin ninguna fuente enlazada fuera de agregadores secundarios (Wikipedia, UFO Evidence…): ${flagged.join(", ")}. Contrastar con la fuente primaria antes de confiar en cifras, testigos o veredictos oficiales.`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
