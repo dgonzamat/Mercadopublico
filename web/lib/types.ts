@@ -123,6 +123,11 @@ export interface UAPCase {
   /** Subtipo de misidentificación (con qué objeto conocido se confundió). Solo
    *  en casos mundanoType="misid"; es un drill-down bajo esa narrativa. */
   misidSubtype?: MisidSubtype;
+  /** Fecha (AAAA-MM-DD) en que la clasificación —posterior, probability,
+   *  mundanoType— se asignó o se contrastó leyendo la evidencia primaria del caso
+   *  (expediente, télex, informe, crónica de la época), no un resumen secundario.
+   *  Ausente = la clasificación no está verificada contra el documento. */
+  evidenceReviewed?: string;
   // Estatus epistémico del caso. Ausente = "documented" (evidencia
   // primaria verificable). "developing" = reciente/en curso; "projected"
   // = contenido near-future del corpus (análisis, no hecho documentado).

@@ -80,5 +80,6 @@
       "note_en": "2025 version: object observed for four hours and missiles that could not be shut down, details absent from the file."
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "evidenceReviewed": "2026-09-28"
 }

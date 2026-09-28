@@ -186,6 +186,11 @@ for (const file of caseFiles) {
       err(w, `misidSubtype presente pero mundanoType no es "misid" (es "${c.mundanoType ?? "ausente"}") — el subtipo solo aplica a misidentificaciones`);
     }
   }
+  // evidenceReviewed (opcional): fecha ISO en que la clasificación se contrastó
+  // con la evidencia primaria.
+  if (c.evidenceReviewed !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(String(c.evidenceReviewed))) {
+    err(w, `evidenceReviewed inválido "${c.evidenceReviewed}" (AAAA-MM-DD)`);
+  }
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");
 
