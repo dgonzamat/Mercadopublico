@@ -33,6 +33,7 @@ class DarkThemeTest {
         ScanEngine.storageRoot = { storage }
         ScanEngine.allFilesAccess = { true }
         ScanEngine.usageAccess = { false }
+        ScanEngine.securityScan = { SecurityScanner(it).scan() }
         shadowOf(ApplicationProvider.getApplicationContext<Application>())
             .grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
         // Resultados precalculados: la Activity arranca directo en esa pantalla. El progreso no debe

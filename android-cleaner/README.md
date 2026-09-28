@@ -1,9 +1,10 @@
 # Limpiador · liberador de espacio para Android
 
-App Android (Kotlin, Material 3 con colores dinámicos de Material You) que analiza el teléfono completo y propone liberar espacio en once grupos:
+App Android (Kotlin, Material 3 con colores dinámicos de Material You) que analiza el teléfono completo y revisa la seguridad de las apps y propone liberar espacio en doce grupos:
 
 | Grupo | Criterio | ¿Preseleccionado? | Requiere |
 |---|---|---|---|
+| Apps sospechosas | apps instaladas por el usuario con señales de riesgo: fuera de una tienda (+2), accesibilidad activa (+3), administradora del dispositivo (+3), lee SMS (+2), ≥3 permisos de espionaje (+2), lee notificaciones, sin ícono, instala apps o dibuja encima (+1 c/u). Se lista si viene de fuera de una tienda con ≥4 puntos, o de una tienda con accesibilidad **y** administrador. **No es un antivirus con firmas** (ver Límites) | no | nada extra |
 | Capturas de pantalla | carpeta `Screenshots`/`Capturas` o nombre `Screenshot_*`, **de hace más de 14 días** (las recientes no se listan) | sí | fotos |
 | Fotos y videos repetidos | en la galería: mismo tamaño → mismos primeros 64 KB → mismo SHA-256 → **doble verificación byte a byte contra el original** (se repite justo antes de borrar); se conserva el más antiguo | sí | fotos |
 | Fotos parecidas | huella perceptual dHash de cada foto comparada con todas: ≤4 bits entre fotos cualesquiera (reenvíos, otra carpeta u otra compresión) o ≤10 bits dentro de una ráfaga (misma carpeta, ≤10 s); se conserva la más grande | no | fotos |
@@ -16,7 +17,7 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que anal
 | Descargas antiguas | en `Download/` desde hace más de 30 días | no | todos los archivos |
 | Apps que no usas | sin abrir en 60 días, con tamaño app+datos+caché | no | datos de uso |
 
-Más una sección **Más espacio** con el vaciado de **caché de todas las apps** (diálogo del sistema `ACTION_CLEAR_APP_CACHE`) y accesos directos para conceder los dos permisos opcionales.
+Más una sección **Más espacio** con el vaciado de **caché de todas las apps** (diálogo del sistema `ACTION_CLEAR_APP_CACHE`), un acceso a **Google Play Protect** (sí tiene base de malware conocido) y accesos directos para conceder los dos permisos opcionales.
 
 **Cómo se elimina cada cosa**: fotos y videos pasan por `MediaStore.createDeleteRequest` (confirmación de Android y papelera de 30 días donde exista); los archivos y carpetas se borran de inmediato tras la confirmación de la app; las apps se desinstalan una por una con el diálogo del sistema. `Android/data` y `Android/obb` no se tocan: Android 11+ no los expone a apps de terceros, así que la caché interna de otras apps solo se vacía con la herramienta del sistema.
 
@@ -24,7 +25,7 @@ Más una sección **Más espacio** con el vaciado de **caché de todas las apps*
 
 ## Cómo se usa
 
-1. **Inicio**: anillo con el espacio usado/libre, la lista de los once grupos con una casilla cada uno (se recuerdan) y el botón «Analizar mi teléfono».
+1. **Inicio**: anillo con el espacio usado/libre, la lista de los doce grupos con una casilla cada uno (se recuerdan) y el botón «Analizar mi teléfono».
 2. **Análisis**: indicador animado con progreso en vivo («Comparando repetidos 40 de 120», «12.340 archivos del teléfono revisados…») y botón «Cancelar análisis».
 3. **Resultados**: titular «Puedes liberar X» y una tarjeta por grupo con ícono, cantidad, tamaño y un interruptor para incluirlo o no. Tocar la tarjeta abre la **revisión en cuadrícula**: miniaturas (foto, ícono del APK o de la app), toque para marcar/desmarcar, mantener presionado para ver la foto, la ruta y fecha del archivo o la información de la app; botón Todos/Ninguno. Debajo, la sección **Más espacio**.
 4. **Limpiar**: botón fijo abajo con el tamaño a liberar → confirmación de la app → confirmación de Android → pantalla «¡Listo! Liberaste X».
@@ -33,7 +34,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.10.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.11.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -41,9 +42,9 @@ Requiere **Android 11 o superior** (`minSdk 30`). El APK está firmado con la cl
 
 ## Capturas (renderizadas por las pruebas)
 
-| Inicio | Análisis | Resultados | Repetidos (doble check) | Archivos | Listo | Sin permiso |
-|---|---|---|---|---|---|---|
-| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/02-analizando.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/05c-revision-repetidos.png) | ![](docs/screenshots/05b-revision-residuos.png) | ![](docs/screenshots/06-listo.png) | ![](docs/screenshots/07-sin-permiso.png) |
+| Inicio | Análisis | Resultados | Seguridad | Repetidos (doble check) | Archivos | Listo | Sin permiso |
+|---|---|---|---|---|---|---|---|
+| ![](docs/screenshots/01-inicio.png) | ![](docs/screenshots/02-analizando.png) | ![](docs/screenshots/03-resultados.png) | ![](docs/screenshots/13-revision-seguridad.png) | ![](docs/screenshots/05c-revision-repetidos.png) | ![](docs/screenshots/05b-revision-residuos.png) | ![](docs/screenshots/06-listo.png) | ![](docs/screenshots/07-sin-permiso.png) |
 
 ## Pruebas
 
@@ -84,6 +85,9 @@ app/src/main/kotlin/com/dgonzamat/limpiador/
 ```
 
 ## Límites conocidos
+
+- **Seguridad: no es un antivirus.** Una app sin root no puede leer el contenido de otras apps ni ponerlas en cuarentena, y este proyecto no tiene una base de firmas de malware. «Apps sospechosas» solo reúne señales de riesgo: puede dar falsos positivos (una app legítima instalada fuera de la tienda) y no detecta malware que no las muestre. Para malware conocido, usar Play Protect. Una app administradora del dispositivo no se desinstala hasta desactivarla en Ajustes › Seguridad; la app lo avisa.
+- El acceso a Play Protect abre un componente de Google Play Services que no es una API pública documentada; si no existe, abre Ajustes › Seguridad.
 
 - La caché interna de otras apps (`Android/data`) no es accesible para apps de terceros en Android 11+; se vacía con la herramienta del sistema que la app enlaza.
 - «Duplicado» significa copia byte a byte. Dos fotos casi iguales (ráfaga, recomprimida por WhatsApp) no se detectan.

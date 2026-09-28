@@ -41,6 +41,7 @@ class CategoryActivity : AppCompatActivity() {
         b.toolbar.setNavigationOnClickListener { finish() }
         b.hint.text = getString(
             when {
+                category == Category.SUSPICIOUS_APPS -> R.string.grid_hint_security
                 category in GridAdapter.PAIR_CATEGORIES -> R.string.grid_hint_pair
                 items.first().kind == Kind.MEDIA -> R.string.grid_hint_media
                 items.first().kind == Kind.FILE -> R.string.grid_hint_file

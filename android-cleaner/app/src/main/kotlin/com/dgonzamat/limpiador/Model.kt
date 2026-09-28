@@ -8,6 +8,8 @@ enum class Kind { MEDIA, FILE, APP }
 
 /** Categorías de basura detectadas. [preselected] marca las que se limpian por defecto. */
 enum class Category(val titleRes: Int, val descRes: Int, val iconRes: Int, val preselected: Boolean) {
+    /** Primero: la seguridad importa más que el espacio. Nunca se marca sola. */
+    SUSPICIOUS_APPS(R.string.cat_suspicious, R.string.cat_suspicious_desc, R.drawable.ic_shield, false),
     SCREENSHOTS(R.string.cat_screenshots, R.string.cat_screenshots_desc, R.drawable.ic_phone, true),
     DUPLICATES(R.string.cat_duplicates, R.string.cat_duplicates_desc, R.drawable.ic_copy, true),
     SIMILAR(R.string.cat_similar, R.string.cat_similar_desc, R.drawable.ic_burst, false),
@@ -54,6 +56,10 @@ data class JunkItem(
     val originalPath: String? = null,
     /** Repetido confirmado byte a byte contra su original (doble verificación), no solo por hash. */
     val verified: Boolean = false,
+    /** Apps sospechosas: puntaje de riesgo (más alto primero). */
+    val risk: Int = 0,
+    /** Apps sospechosas: es administradora del dispositivo (Android no la desinstala hasta desactivarla). */
+    val deviceAdmin: Boolean = false,
     var selected: Boolean = category.preselected,
 ) {
     val kind: Kind
@@ -75,6 +81,7 @@ sealed class ScanProgress {
     /** Hash de archivos del mismo tamaño para buscar repetidos fuera de la galería. */
     data class FileHashing(val done: Int, val total: Int) : ScanProgress()
     object Apps : ScanProgress()
+    object Security : ScanProgress()
 }
 
 /** Qué alcanzó el último escaneo, para decirlo en pantalla. */

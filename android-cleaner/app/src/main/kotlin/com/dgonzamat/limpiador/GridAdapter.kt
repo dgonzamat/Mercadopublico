@@ -102,6 +102,12 @@ class GridAdapter(
                 if (item.size == 0L && item.note != null) null else formatSize(item.size),
                 item.note,
             ).joinToString(" · ")
+            // Apps sospechosas: el motivo en rojo, para que no se lea como un dato más.
+            val ctx = b.root.context
+            b.label.setTextColor(
+                if (item.category == Category.SUSPICIOUS_APPS) androidx.core.content.ContextCompat.getColor(ctx, R.color.danger)
+                else com.google.android.material.color.MaterialColors.getColor(b.label, androidx.appcompat.R.attr.colorPrimary),
+            )
             val folder = item.path?.let { folderOf(it) }
             b.path.visibility = if (folder == null) View.GONE else View.VISIBLE
             b.path.text = folder

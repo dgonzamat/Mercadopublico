@@ -42,6 +42,7 @@ class MainFlowTest {
         ScanEngine.storageRoot = { storage }
         ScanEngine.allFilesAccess = { true }
         ScanEngine.usageAccess = { false }
+        ScanEngine.securityScan = { SecurityScanner(it).scan() }
         val app = ApplicationProvider.getApplicationContext<Application>()
         shadowOf(app).grantPermissions(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
     }
@@ -86,10 +87,11 @@ class MainFlowTest {
             assertEquals(View.VISIBLE, a.v<View>(R.id.scanningGroup).visibility)
             assertEquals(View.GONE, a.v<View>(R.id.welcomeGroup).visibility)
             assertEquals(View.INVISIBLE, a.v<View>(R.id.bottomBar).visibility)
-            // Fases visibles: galería (en curso) y archivos (pendiente); apps no, sin acceso de uso.
+            // Fases visibles: galería (en curso), archivos y seguridad (pendientes); apps no, sin acceso de uso.
             val phases = a.v<android.view.ViewGroup>(R.id.scanPhases)
             assertEquals(View.VISIBLE, phases.visibility)
-            assertEquals(2, phases.childCount)
+            assertEquals(3, phases.childCount)
+            assertEquals(a.getString(R.string.phase_security), phases.getChildAt(2).findViewById<TextView>(R.id.phaseText).text.toString())
             assertEquals(a.getString(R.string.phase_gallery), phases.getChildAt(0).findViewById<TextView>(R.id.phaseText).text.toString())
             assertEquals(a.getString(R.string.phase_files), phases.getChildAt(1).findViewById<TextView>(R.id.phaseText).text.toString())
             assertEquals(View.VISIBLE, phases.getChildAt(0).findViewById<View>(R.id.phaseSpinner).visibility)
@@ -120,6 +122,9 @@ class MainFlowTest {
             assertEquals(View.VISIBLE, empty.visibility)
             assertTrue(empty.text.contains(a.getString(R.string.cat_similar)))
             assertFalse(empty.text.contains(a.getString(R.string.cat_unused_apps)))
+            // Seguridad sin hallazgos: línea propia (no «sin nada que limpiar»).
+            assertFalse(empty.text.contains(a.getString(R.string.cat_suspicious)))
+            assertEquals(View.VISIBLE, a.v<View>(R.id.securityClean).visibility)
 
             // El interruptor de "Videos pesados" arranca apagado; el de capturas, encendido.
             val cards = (0 until container.childCount).map { container.getChildAt(it) }
@@ -133,7 +138,8 @@ class MainFlowTest {
             )
             // Herramientas: caché del sistema (hay acceso a archivos) y activar acceso de uso (no lo hay).
             val tools = a.v<android.view.ViewGroup>(R.id.toolsContainer)
-            assertEquals(2, tools.childCount)
+            assertEquals(3, tools.childCount)
+            assertEquals(a.getString(R.string.tool_protect_title), tools.getChildAt(2).findViewById<TextView>(R.id.title).text.toString())
             assertEquals(a.getString(R.string.tool_cache_title), tools.getChildAt(0).findViewById<TextView>(R.id.title).text.toString())
             assertEquals(a.getString(R.string.tool_usage_title), tools.getChildAt(1).findViewById<TextView>(R.id.title).text.toString())
             assertEquals("1 archivo · 59 KB", cards[1].findViewById<TextView>(R.id.stats).text.toString())

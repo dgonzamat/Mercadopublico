@@ -375,6 +375,22 @@
                         tools:text="Sin nada que limpiar en: Instaladores APK, Descargas antiguas."
                         tools:visibility="visible" />
 
+                    <!-- Seguridad sin hallazgos: dicho aparte y con su límite (no es un antivirus con firmas) -->
+                    <TextView
+                        android:id="@+id/securityClean"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/security_clean"
+                        android:textAppearance="?attr/textAppearanceBodySmall"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/ic_shield"
+                        app:drawableTint="@color/success"
+                        tools:visibility="visible" />
+
                     <TextView
                         android:id="@+id/toolsTitle"
                         android:layout_width="match_parent"

@@ -13,6 +13,8 @@ object ScanEngine {
     var usageAccess: (Context) -> Boolean = { AppScanner.hasUsageAccess(it) }
     /** Dónde se entregan los avisos de progreso (la pantalla vive en el hilo principal). */
     var uiDispatcher: kotlinx.coroutines.CoroutineDispatcher = Dispatchers.Main
+    /** Análisis de seguridad de las apps instaladas (reemplazable en pruebas). */
+    var securityScan: (Context) -> List<JunkItem> = { SecurityScanner(it).scan() }
 
     val MEDIA_CATEGORIES = setOf(Category.SCREENSHOTS, Category.DUPLICATES, Category.SIMILAR, Category.TINY, Category.LARGE_VIDEOS)
     val FILE_CATEGORIES = setOf(Category.RESIDUE, Category.APK_FILES, Category.LARGE_FILES, Category.OLD_DOWNLOADS, Category.DUPLICATE_FILES)
@@ -51,9 +53,14 @@ object ScanEngine {
             onProgress(ScanProgress.Apps)
             out += AppScanner(context).scan()
         }
+        // Seguridad: no necesita permisos especiales (la app ya declara QUERY_ALL_PACKAGES).
+        if (Category.SUSPICIOUS_APPS in enabled) {
+            onProgress(ScanProgress.Security)
+            out += securityScan(context)
+        }
         ScanResult(
             out.filter { it.category in enabled }
-                .sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.size }),
+                .sortedWith(compareBy<JunkItem> { it.category.ordinal }.thenByDescending { it.risk }.thenByDescending { it.size }),
             ScanScope(allFiles = allFiles, usage = usage, filesVisited = visited),
         )
     }

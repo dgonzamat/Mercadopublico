@@ -169,4 +169,27 @@
     <!-- v2.9 -->
     <string name="done_detail_title">What was cleaned</string>
     <string name="done_detail_line">%1$s: %2$d · %3$s</string>
+
+    <!-- v2.11: security -->
+    <string name="cat_suspicious">Suspicious apps</string>
+    <string name="cat_suspicious_desc">Installed outside an app store or with control over the phone. Not necessarily viruses: uninstall the ones you don\'t recognize</string>
+    <string name="risk_high">High risk</string>
+    <string name="risk_medium">Medium risk</string>
+    <string name="reason_sideloaded">not from an app store</string>
+    <string name="reason_accessibility">controls the screen (accessibility on)</string>
+    <string name="reason_admin">is a device administrator</string>
+    <string name="reason_sms">can read your SMS</string>
+    <string name="reason_spy">accesses contacts, calls, microphone, camera or location</string>
+    <string name="reason_notifications">reads your notifications</string>
+    <string name="reason_hidden">has no visible icon</string>
+    <string name="reason_installs">can install other apps</string>
+    <string name="reason_overlay">can draw over other apps</string>
+    <string name="phase_security">App security</string>
+    <string name="scanning_security">Checking app security…</string>
+    <string name="security_clean">Security: no installed app shows risk signals. This check does not detect known malware by signature; use Play Protect for that.</string>
+    <string name="grid_hint_security">Tap to mark the app for uninstall. Long-press to open it in Settings, where you can remove its permissions. If it won\'t uninstall, first turn off its device administrator or accessibility permission.</string>
+    <string name="tool_protect_title">Google Play Protect</string>
+    <string name="tool_protect_desc">Looks for known malware using Google\'s database. It complements the suspicious-apps check, which is based on risk signals.</string>
+    <string name="tool_protect_button">Open</string>
+    <string name="admin_blocks_uninstall">"%1$s" is a device administrator: turn it off in Settings › Security and try again.</string>
 </resources>

@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
     /** Fases del análisis, en el orden en que corren; solo se listan las que aplican. */
     private enum class Phase(val textRes: Int) {
-        GALLERY(R.string.phase_gallery), FILES(R.string.phase_files), APPS(R.string.phase_apps)
+        GALLERY(R.string.phase_gallery), FILES(R.string.phase_files), APPS(R.string.phase_apps), SECURITY(R.string.phase_security)
     }
     private val phaseRows = linkedMapOf<Phase, ItemPhaseRowBinding>()
 
@@ -66,6 +66,8 @@ class MainActivity : AppCompatActivity() {
     private val deletedItems = mutableListOf<JunkItem>()
     /** Repetidos que la doble verificación dejó en paz justo antes de borrar. */
     private var staleSkipped = 0
+    /** Apps que no se desinstalaron por ser administradoras del dispositivo. */
+    private val blockedAdmins = mutableListOf<JunkItem>()
 
     private val permissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
@@ -93,6 +95,8 @@ class MainActivity : AppCompatActivity() {
             if (gone) {
                 deletedItems += app
                 ScanStore.remove(listOf(app))
+            } else if (app.deviceAdmin) {
+                blockedAdmins += app
             }
             continueDeletion()
         }
@@ -343,6 +347,23 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Abre Play Protect. No hay una acción pública documentada para esa pantalla: se prueba el
+     * componente de Google Play Services y, si no existe, los ajustes de seguridad.
+     */
+    private fun openPlayProtect() {
+        val protect = Intent().setClassName("com.google.android.gms", "com.google.android.gms.security.settings.VerifyAppsSettingsActivity")
+        for (intent in listOf(protect, Intent(Settings.ACTION_SECURITY_SETTINGS))) {
+            try {
+                startActivity(intent)
+                return
+            } catch (e: Exception) {
+                // probar la siguiente
+            }
+        }
+        Snackbar.make(b.root, R.string.open_failed, Snackbar.LENGTH_LONG).show()
+    }
+
     private fun clearAllAppsCache() {
         try {
             cacheLauncher.launch(Intent(StorageManager.ACTION_CLEAR_APP_CACHE))
@@ -394,6 +415,7 @@ class MainActivity : AppCompatActivity() {
             when (phaseRows.keys.firstOrNull()) {
                 Phase.FILES -> R.string.scanning_files
                 Phase.APPS -> R.string.scanning_apps
+                Phase.SECURITY -> R.string.scanning_security
                 else -> R.string.scanning_reading
             },
         )
@@ -404,6 +426,7 @@ class MainActivity : AppCompatActivity() {
                         when (p) {
                             is ScanProgress.Files, is ScanProgress.FileHashing -> Phase.FILES
                             ScanProgress.Apps -> Phase.APPS
+                            ScanProgress.Security -> Phase.SECURITY
                             else -> Phase.GALLERY
                         },
                     )
@@ -417,6 +440,7 @@ class MainActivity : AppCompatActivity() {
                             if (p.visited == 0) getString(R.string.scanning_files)
                             else resources.getQuantityString(R.plurals.scanning_files_count, p.visited, p.visited)
                         ScanProgress.Apps -> getString(R.string.scanning_apps)
+                        ScanProgress.Security -> getString(R.string.scanning_security)
                     }
                 }
                 ScanStore.items = result.items
@@ -439,6 +463,7 @@ class MainActivity : AppCompatActivity() {
             if (enabled.any { it in ScanEngine.MEDIA_CATEGORIES }) add(Phase.GALLERY)
             if (ScanEngine.allFilesAccess(this@MainActivity) && enabled.any { it in ScanEngine.FILE_CATEGORIES }) add(Phase.FILES)
             if (ScanEngine.usageAccess(this@MainActivity) && Category.UNUSED_APPS in enabled) add(Phase.APPS)
+            if (Category.SUSPICIOUS_APPS in enabled) add(Phase.SECURITY)
         }
         for (phase in phases) {
             val row = ItemPhaseRowBinding.inflate(layoutInflater, b.scanPhases, false)
@@ -502,8 +527,9 @@ class MainActivity : AppCompatActivity() {
         }
         // Grupos que se buscaron y no tenían nada: decirlo, para que no parezca que se saltaron.
         val enabled = enabledCategories()
+        // La seguridad tiene su propia línea (abajo): «sin nada que limpiar» no es lo que hay que decir.
         val emptyGroups = Category.entries.filter { cat ->
-            cat in enabled && ScanStore.byCategory(cat).isEmpty() && when (cat) {
+            cat != Category.SUSPICIOUS_APPS && cat in enabled && ScanStore.byCategory(cat).isEmpty() && when (cat) {
                 in ScanEngine.MEDIA_CATEGORIES -> true
                 in ScanEngine.FILE_CATEGORIES -> scope.allFiles
                 else -> scope.usage
@@ -511,6 +537,8 @@ class MainActivity : AppCompatActivity() {
         }
         b.emptyGroups.visibility = if (all.isEmpty() || emptyGroups.isEmpty()) View.GONE else View.VISIBLE
         b.emptyGroups.text = getString(R.string.results_nothing_in, emptyGroups.joinToString(", ") { getString(it.titleRes) })
+        b.securityClean.visibility =
+            if (Category.SUSPICIOUS_APPS in enabled && ScanStore.byCategory(Category.SUSPICIOUS_APPS).isEmpty()) View.VISIBLE else View.GONE
         // Aviso destacado: sin «todos los archivos» solo se revisó la galería (si pidió grupos de archivos).
         val wantsFiles = enabled.any { it in ScanEngine.FILE_CATEGORIES }
         b.scopeBanner.visibility = if (scope.allFiles || !wantsFiles) View.GONE else View.VISIBLE
@@ -558,6 +586,8 @@ class MainActivity : AppCompatActivity() {
         if (!ScanEngine.usageAccess(this)) {
             tool(R.drawable.ic_apps, R.string.tool_usage_title, R.string.tool_usage_desc, R.string.tool_enable) { openUsageAccessSettings() }
         }
+        // Play Protect sí tiene base de datos de malware conocido: complementa las señales de riesgo.
+        tool(R.drawable.ic_shield, R.string.tool_protect_title, R.string.tool_protect_desc, R.string.tool_protect_button) { openPlayProtect() }
         b.toolsTitle.visibility = if (b.toolsContainer.childCount > 0) View.VISIBLE else View.GONE
     }
 
@@ -606,6 +636,7 @@ class MainActivity : AppCompatActivity() {
     private fun deleteSelected(selected: List<JunkItem>) {
         deletedItems.clear()
         staleSkipped = 0
+        blockedAdmins.clear()
         pendingMedia.clear()
         pendingApps.clear()
         b.primaryButton.isEnabled = false
@@ -665,6 +696,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun finishDeletion(cancelled: Boolean) {
         refreshStorage()
+        // Android no desinstala una administradora activa: llevar a los ajustes para desactivarla.
+        blockedAdmins.firstOrNull()?.let { app ->
+            Snackbar.make(b.root, getString(R.string.admin_blocks_uninstall, app.name), Snackbar.LENGTH_INDEFINITE)
+                .setAction(R.string.allfiles_open_settings) {
+                    try { startActivity(Intent(Settings.ACTION_SECURITY_SETTINGS)) } catch (e: Exception) { }
+                }
+                .show()
+        }
         val n = deletedItems.size
         if (n > 0) {
             b.doneTitle.text = getString(R.string.done_title, formatSize(deletedItems.sumOf { it.size }))

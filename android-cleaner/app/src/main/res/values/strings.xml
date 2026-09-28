@@ -181,4 +181,27 @@
     <!-- v2.9 -->
     <string name="done_detail_title">Qué se limpió</string>
     <string name="done_detail_line">%1$s: %2$d · %3$s</string>
+
+    <!-- v2.11: seguridad -->
+    <string name="cat_suspicious">Apps sospechosas</string>
+    <string name="cat_suspicious_desc">Instaladas fuera de una tienda o con control del teléfono. No son necesariamente virus: desinstala las que no reconozcas</string>
+    <string name="risk_high">Riesgo alto</string>
+    <string name="risk_medium">Riesgo medio</string>
+    <string name="reason_sideloaded">no viene de una tienda</string>
+    <string name="reason_accessibility">controla la pantalla (accesibilidad activa)</string>
+    <string name="reason_admin">es administradora del dispositivo</string>
+    <string name="reason_sms">puede leer tus SMS</string>
+    <string name="reason_spy">accede a contactos, llamadas, micrófono, cámara o ubicación</string>
+    <string name="reason_notifications">lee tus notificaciones</string>
+    <string name="reason_hidden">no tiene ícono visible</string>
+    <string name="reason_installs">puede instalar otras apps</string>
+    <string name="reason_overlay">puede dibujar sobre otras apps</string>
+    <string name="phase_security">Seguridad de las apps</string>
+    <string name="scanning_security">Revisando la seguridad de las apps…</string>
+    <string name="security_clean">Seguridad: ninguna app instalada muestra señales de riesgo. Esta revisión no detecta malware conocido por firma; para eso usa Play Protect.</string>
+    <string name="grid_hint_security">Toca para marcar la app a desinstalar. Mantén presionado para abrirla en Ajustes, donde puedes quitarle permisos. Si no se deja desinstalar, desactiva antes su permiso de administrador o de accesibilidad.</string>
+    <string name="tool_protect_title">Google Play Protect</string>
+    <string name="tool_protect_desc">Busca malware conocido con la base de datos de Google. Complementa la revisión de apps sospechosas, que se basa en señales de riesgo.</string>
+    <string name="tool_protect_button">Abrir</string>
+    <string name="admin_blocks_uninstall">«%1$s» es administradora del dispositivo: desactívala en Ajustes › Seguridad y vuelve a intentarlo.</string>
 </resources>
