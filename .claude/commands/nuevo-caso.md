@@ -32,6 +32,7 @@ Distribución sobre 6 narrativas que **suma 1** (tolerancia ±0.005):
 - **OBLIGATORIO** en `incident`, `contactee`, `crop_circle` (todo lo no-documento).
 - En `document` es opcional (es el "lean" evidencial, no P(objeto)).
 - Es un juicio analítico estructurado, no una frecuencia: reparte según cómo la evidencia distribuye la explicación. Ver `lib/meceModel.ts`.
+- **Se asigna después de leer la evidencia primaria** (el documento, no un resumen). Si no la pudiste leer, no clasifiques: dilo y deja el caso sin crear o con la limitación declarada. Al terminar, pon `evidenceReviewed: "AAAA-MM-DD"` con la fecha de la lectura (regla E42).
 
 ## 4. Rich content — estándar editorial (obligatorio para el estándar)
 `whatHappened(_en)` + `whyMatters(_en)` deben sumar **≥ ~550 palabras / ~3.500 caracteres, en español E inglés** (prosa; `evidence`/`sources` NO cuentan para la página). Separa párrafos con `\n\n`.

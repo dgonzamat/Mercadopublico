@@ -1838,6 +1838,27 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9za. RULE E42: clasificación sin evidencia primaria leída ────────────
+//
+// El posterior y la probabilidad son juicios que el redactor escribe a mano; el
+// código solo los agrega. Si se escriben desde un resumen secundario, el sesgo
+// es sistemático: en sep 2026, 23 de 25 fichas contrastadas con su fuente
+// primaria exageraban el misterio. Regla: clasificar después de leer la
+// evidencia, y dejar constancia en `evidenceReviewed`. WARN agregado por tier
+// (mismo patrón que E13/E21/E26): el backlog queda medible y no crece.
+{
+  const byTier = { S: 0, A: 0, B: 0 };
+  let pending = 0, reviewed = 0;
+  for (const c of cases) {
+    if (!c.posterior) continue;
+    if (c.evidenceReviewed) { reviewed++; continue; }
+    pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
+  }
+  if (pending > 0) {
+    record("WARN", casesDir, 0, `E42 clasificación: ${pending} caso(s) con posterior sin \`evidenceReviewed\` (${reviewed} ya contrastados con su fuente primaria). Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. La probabilidad y el posterior se asignan después de leer la evidencia primaria, no un resumen.`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

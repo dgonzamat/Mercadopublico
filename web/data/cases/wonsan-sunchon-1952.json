@@ -75,5 +75,6 @@
     "nohumano_abierto": 0.08,
     "indet": 0.27
   },
-  "misidSubtype": "terrestre_otros"
+  "misidSubtype": "terrestre_otros",
+  "evidenceReviewed": "2026-09-27"
 }
