@@ -143,7 +143,7 @@ export default function CalidadPage() {
           <T es="Panel de calidad del corpus" en="Corpus quality panel" />
         </Eyebrow>
         <H1>
-          <T es={`Salud editorial de los ${total} casos`} en={`Editorial health of the ${total} cases`} />
+          <T es={`Salud editorial de las ${total} fichas`} en={`Editorial health of the ${total} entries`} />
         </H1>
         <Lede>
           <T
@@ -196,7 +196,7 @@ export default function CalidadPage() {
       {/* ── tiles ── */}
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[
-          { n: total, es: "Casos totales", en: "Total cases", cls: "border-l-text" },
+          { n: total, es: "Fichas (casos y documentos)", en: "Entries (cases and documents)", cls: "border-l-text" },
           { n: proseOk === total ? "100%" : `${pct(proseOk, total)}%`, es: "Prosa al día", en: "Prose complete", cls: "border-l-text" },
           { n: withVisual, es: "Con evidencia visual", en: "With visual evidence", cls: "border-l-tierB" },
           { n: total - withVisual, es: "Sin visual (backlog)", en: "Without visual (backlog)", cls: "border-l-accent" },

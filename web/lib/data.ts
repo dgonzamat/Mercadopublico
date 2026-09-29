@@ -11,7 +11,9 @@ export const frameworks = frameworksData as Framework[];
 export const researchers = researchersData as Researcher[];
 export const entityMorphologies = entityMorphologyData as EntityMorphology[];
 
-export const TOTAL_CASES = cases.length;
+/** Incidentes: los casos-documento son evidencia, no casos (ver site-stats). */
+export const TOTAL_CASES = cases.filter((c) => c.category !== "document").length;
+export const TOTAL_DOCUMENTS = cases.length - TOTAL_CASES;
 
 export function getResearcher(id: string): Researcher | undefined {
   return researchers.find((r) => r.id === id);

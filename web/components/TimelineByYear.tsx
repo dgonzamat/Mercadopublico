@@ -21,13 +21,16 @@ const PEAKS: Array<{ year: number; label: string }> = [
   { year: 2026, label: "PURSUE" },
 ];
 
+// Solo incidentes: los casos-documento son evidencia, no sucesos.
+const incidents = cases.filter((c) => c.category !== "document");
+
 export function TimelineByYear() {
   const YEAR_MIN = 1947;
   const YEAR_MAX = 2026;
   const span = YEAR_MAX - YEAR_MIN;
 
   const counts = new Map<number, number>();
-  for (const c of cases) {
+  for (const c of incidents) {
     counts.set(c.year_start, (counts.get(c.year_start) ?? 0) + 1);
   }
   const maxCount = Math.max(...Array.from(counts.values()));
@@ -35,7 +38,7 @@ export function TimelineByYear() {
 
   const decades = [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
   const totalForDecade = (start: number) =>
-    cases.filter((c) => c.year_start >= start && c.year_start < start + 10)
+    incidents.filter((c) => c.year_start >= start && c.year_start < start + 10)
       .length;
 
   return (
@@ -45,7 +48,7 @@ export function TimelineByYear() {
           Corpus por año · {YEAR_MIN}–{YEAR_MAX}
         </p>
         <p className="text-right font-mono text-xs uppercase tracking-widest text-bg/60">
-          {cases.length} casos · {span} años
+          {incidents.length} casos · {span} años
         </p>
       </figcaption>
 
@@ -83,7 +86,7 @@ export function TimelineByYear() {
           preserveAspectRatio="none"
           className="h-48 w-full md:h-64"
           role="img"
-          aria-label={`Distribución temporal de ${cases.length} casos UAP entre ${YEAR_MIN} y ${YEAR_MAX}. Picos en 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) y 2026 (PURSUE).`}
+          aria-label={`Distribución temporal de ${incidents.length} casos UAP entre ${YEAR_MIN} y ${YEAR_MAX}. Picos en 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) y 2026 (PURSUE).`}
         >
           {Array.from({ length: span + 1 }, (_, i) => {
             const year = YEAR_MIN + i;

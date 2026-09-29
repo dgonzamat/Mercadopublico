@@ -1,4 +1,4 @@
-import { cases, TOTAL_CASES } from "@/lib/data";
+import { cases, TOTAL_CASES, TOTAL_DOCUMENTS } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
 import { CasesFilter, type HypKey } from "@/components/CasesFilter";
 import {
@@ -163,8 +163,8 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es="Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. De 1947 a 2026, era por era, en orden cronológico."
-            en="Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From 1947 to 2026, era by era, in chronological order."
+            es={`Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. De 1947 a 2026, era por era, en orden cronológico. Junto a ellos van los ${TOTAL_DOCUMENTS} documentos oficiales que los respaldan: son evidencia de los casos, no casos.`}
+            en={`Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From 1947 to 2026, era by era, in chronological order. Alongside them are the ${TOTAL_DOCUMENTS} official documents that back them: evidence for the cases, not cases.`}
             locale={locale}
           />
         </Lede>

@@ -19,7 +19,10 @@ import statsData from "@/data/site-stats.json";
  * killer). Keep this file corpus-free.
  */
 export const STATS = statsData as {
+  /** Incidentes (sin los casos-documento). */
   cases: number;
+  /** Documentos: evidencia de los incidentes, no casos. */
+  documents: number;
   patterns: number;
   frameworks: number;
   researchers: number;

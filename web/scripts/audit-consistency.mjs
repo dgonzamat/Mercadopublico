@@ -103,7 +103,8 @@ const patternList = readJsonList("patterns.json", "patterns");
 const frameworkList = readJsonList("frameworks.json", "frameworks");
 
 const STATS = {
-  cases: cases.length,
+  // Incidentes: los documentos no cuentan como casos (ver build-cases.mjs).
+  cases: cases.filter((c) => c.category !== "document").length,
   countries: new Set(cases.map((c) => c.country)).size,
   tierS: cases.filter((c) => c.tier === "S").length,
   tierA: cases.filter((c) => c.tier === "A").length,
@@ -1903,7 +1904,7 @@ out.push(` Tier S/A/B:   ${STATS.tierS} / ${STATS.tierA} / ${STATS.tierB}`);
 out.push(` Researchers linked to ≥1 case: ${linkedCount} / ${STATS.researchers}`);
 out.push(` Patterns usados / total: ${STATS.patterns - orphanPatterns.length} / ${STATS.patterns}`);
 out.push(` Client components ("use client"): ${clientComponents.length} / techo ${CLIENT_BUDGET}`);
-out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${STATS.cases - shortBodies.length} / ${STATS.cases}`);
+out.push(` Descripciones ≥1 página (≥${PAGE_MIN_BODY} chars): ${cases.length - shortBodies.length} / ${cases.length}`);
 out.push(` Casos con posterior MECE (no-documento): ${mecePosteriorCount}`);
 out.push(` Assets de visor same-origin presentes en disco: ${presentAssets} / ${docAssetRefs.length}`);
 {
