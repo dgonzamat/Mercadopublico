@@ -47,3 +47,9 @@ A sample check of 15 merged corrections found a deflation bias: in 4 of 15 the c
 - When you cite a document to support a correction, look through the rest of the same file for material that contradicts it and include that too.
 - Never state an absence ("no radar", "nothing found", "only one receiver") unless the primary record states it; otherwise write what the record does say.
 - An independent verifier will check your edits claim by claim, including what you removed and what you left out.
+
+## Rules added 29 Sep 2026
+- `probability` is derived from the posterior (audit E43): never judge it separately, and never describe it in the prose ("probabilidad baja", "sube la probabilidad de X a Y"). The prose explains the evidence; the number follows from the posterior.
+- The site no longer shows a category called "Misidentificación". When the prosaic reading is a misidentification, set `misidSubtype` to the concrete object class (astronomico, aeronave — includes balloons —, espacial, or terrestre_otros only if no single object can be pinned down).
+- Documents (category "document") are evidence, not events: if a document backs specific incidents, list them in `relatedCases` instead of classifying the document.
+- Your edits will be checked by an independent verifier using docs/brief-verificacion.md. In the last round, 29 of 79 corrections had omissions; most leaned prosaic.
