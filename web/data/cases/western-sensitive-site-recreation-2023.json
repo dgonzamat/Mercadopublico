@@ -19,7 +19,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 44,
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "posterior": {
     "mundano_natural": 0.3,
     "humana_clasificada": 0.18,
@@ -82,5 +82,11 @@
       "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage.",
       "name_en": "DVIDS — FBI-UAP-PR005/PR006, FBI digital recreations (PURSUE Release 03)"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa: las dos fichas del FBI (FBI-UAP-PR005 y PR006) solo dicen que son recreaciones digitales basadas en el relato de primera mano de un agente especial federal, sin describir lo que vio, y no se halló ningún análisis del caso. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes a cause: the two FBI records (FBI-UAP-PR005 and PR006) say only that they are digital recreations 'based upon a first-hand description provided by a federal law enforcement special agent', without describing what was seen, and no analysis of the case was found. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "FBI — FBI-UAP-PR005/PR006 (DVIDS, PURSUE Release 03) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  }
 }
