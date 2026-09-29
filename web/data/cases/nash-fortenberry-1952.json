@@ -14,11 +14,17 @@
     "place_en": "Near Norfolk, Virginia"
   },
   "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 49,
   "mundanoType": "misid",
   "misidSubtype": "luces_tierra",
   "objectDetail": "faro_reflector",
-  "epistemicStatus": "documented",
-  "probability": 49,
+  "classBasis": {
+    "es": "Menzel, tras abandonar la idea del reflejo en la cabina, propuso que «un reflector muy enfocado, que brille de noche a través de una serie de capas de calima, se verá como una serie de discos», y sugirió «una luz en la costa de Virginia, que brillara hacia el nordeste en dirección al avión».",
+    "en": "Menzel, after dropping the cockpit-reflection idea, proposed that \"a sharply focused searchlight, shining at night through a series of such hazy layers, will show up as a series of discs\", and suggested \"a light on the Virginia coast, shining northeast toward the plane\".",
+    "source": "Tulien, T., «Revisiting One of the Classics: The 1952 Nash/Fortenberry Sighting» (NICAP), citando a Menzel, The World of Flying Saucers (1963)",
+    "url": "http://www.nicap.org/reports/nash-tulien.htm"
+  },
   "summary": "El 14 de julio de 1952, los pilotos de Pan American William Nash y William Fortenberry observaron desde su DC-4, cerca de Norfolk (Virginia), seis discos de brillo rojizo volando en formación por debajo de su avión; los discos ejecutaron una inversión abrupta, se les unieron otros dos y partieron a gran velocidad. Project Blue Book lo archivó como «Unknown» (no identificado).",
   "summary_en": "On July 14, 1952, Pan American pilots William Nash and William Fortenberry observed from their DC-4, near Norfolk, Virginia, six reddish-glowing discs flying in formation below their aircraft; the discs executed an abrupt flip, were joined by two more and departed at high speed. Project Blue Book filed it as \"Unknown\".",
   "patterns": [
