@@ -156,11 +156,11 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
   ],
   natural: [
     { key: "atmosferico", label: "Atmosférico (rayo en bola, nubes)", labelEn: "Atmospheric (ball lightning, clouds)" },
-    { key: "optico", label: "Óptico (espejismo, refracción)", labelEn: "Optical (mirage, refraction)" },
+    { key: "optico", label: "Óptico (espejismo, refracción, propagación anómala del radar)", labelEn: "Optical (mirage, refraction, anomalous radar propagation)" },
   ],
   instrumento: [
     { key: "pelicula_foto", label: "Defecto de película o foto", labelEn: "Film or photo defect" },
-    { key: "sensor_radar", label: "Artefacto de sensor o eco de radar", labelEn: "Sensor artifact or radar echo" },
+    { key: "sensor_radar", label: "Artefacto del sensor o del radar", labelEn: "Sensor or radar artifact" },
     { key: "falla_equipo", label: "Avería de equipo", labelEn: "Equipment failure" },
   ],
   psicosocial: [
