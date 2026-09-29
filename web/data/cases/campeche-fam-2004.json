@@ -80,5 +80,11 @@
     "note_en": "Develops the Cantarell flares hypothesis, the parallax effect and why the radar did not detect the heat sources."
   },
   "misidSubtype": "luces_tierra",
-  "objectDetail": "llama_industrial"
+  "objectDetail": "llama_industrial",
+  "classBasis": {
+    "es": "Robert Sheaffer: los analistas escépticos habían identificado la fuente probable de los objetos, «llamas de pozos petroleros en las plataformas marinas de la Bahía de Campeche».",
+    "en": "Robert Sheaffer: skeptical analysts had identified the probable source of the objects: 'burning oil well flares from offshore oil platforms in the Bay of Campeche'.",
+    "source": "Sheaffer, R. — «The Campeche, Mexico 'Infrared UFO' Video», Skeptical Inquirer, sep/oct 2004",
+    "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2004/09/22164651/p36.pdf"
+  }
 }
