@@ -18,6 +18,8 @@
   "epistemicStatus": "documented",
   "probability": 8,
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
   "posterior": {
     "mundano_natural": 0.9,
     "humana_clasificada": 0.01,
