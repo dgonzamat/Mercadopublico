@@ -13,7 +13,7 @@
     "place": "Costa de Virginia, Atlántico Occidental"
   },
   "tier": "A",
-  "probability": 40,
+  "probability": 32,
   "category": "incident",
   "patterns": [
     "8s",

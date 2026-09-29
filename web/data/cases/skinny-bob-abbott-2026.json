@@ -15,7 +15,7 @@
   },
   "tier": "B",
   "epistemicStatus": "developing",
-  "probability": 5,
+  "probability": 8,
   "mundanoType": "fraude",
   "posterior": {
     "mundano_natural": 0.92,

@@ -23,7 +23,7 @@ El estándar es prosa con **investigación caso por caso, fuentes primarias**. A
 - **flag**: emoji de bandera de país (dos indicadores regionales, ej. 🇧🇷).
 - **location**: `{lat, lng}` reales del ancla terrestre — lat ∈ [-90,90], lng ∈ [-180,180], **nunca (0,0)** (null island). Opcional `place`.
 - **tier**: `S` | `A` | `B`. **category**: `incident` | `document` | `contactee` | `crop_circle`.
-- **probability**: number (0-100).
+- **probability**: number (0-100), **derivado, no a mano**: `round(100 × (indet + nohumano_encubierto + nohumano_abierto))` del `posterior` (audit E43, ERROR si difiere). En documentos enlazados con `relatedCases` no se muestra.
 - **patterns**: array de ids que **deben existir** en `data/patterns.json` (verifícalos; array vacío `[]` es válido si ninguno aplica).
 
 ## 3. posterior (modelo MECE) — invariante M1

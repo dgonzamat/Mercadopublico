@@ -15,7 +15,7 @@
   "tier": "S",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 55,
+  "probability": 41,
   "summary": "El 17 de noviembre de 1986, la tripulación del vuelo de carga Japan Airlines 1628 siguió sobre Alaska durante unos 45 minutos dos grupos de luces y, según el capitán, la silueta de un objeto «dos veces» mayor que un portaaviones. Controladores de Anchorage y el radar militar registraron retornos primarios intermitentes cerca del avión, pero la FAA, tras revisar sus datos, los atribuyó a un eco partido del propio 747 y declaró que no podía confirmar el suceso.",
   "summary_en": "On 17 November 1986, the crew of Japan Airlines cargo flight 1628 followed two groups of lights over Alaska for about 45 minutes and, according to the captain, the silhouette of an object \"two times\" larger than an aircraft carrier. Anchorage controllers and military radar logged intermittent primary returns near the aircraft, but the FAA, after reviewing its data, attributed them to a split return from the 747 itself and said it was unable to confirm the event.",
   "patterns": [

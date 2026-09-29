@@ -272,8 +272,10 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
  * en `indet` (no inclinan a ninguna narrativa: puro proceso/inconcluso).
  */
 export function documentPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): ScoredCase[] {
+  // Un documento enlazado a sus casos (`relatedCases`) es evidencia de ellos,
+  // no un ítem con reparto propio: sale del agregado.
   return cases
-    .filter((c) => c.category === "document")
+    .filter((c) => c.category === "document" && !c.relatedCases?.length)
     .map((c) => ({
       id: c.id,
       name: c.name,

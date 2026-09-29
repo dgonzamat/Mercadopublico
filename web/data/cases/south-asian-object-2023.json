@@ -16,7 +16,7 @@
   },
   "tier": "A",
   "epistemicStatus": "documented",
-  "probability": 5,
+  "probability": 9,
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
   "posterior": {

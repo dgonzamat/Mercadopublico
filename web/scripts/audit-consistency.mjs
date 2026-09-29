@@ -1859,6 +1859,28 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
+//
+// Cada incidente llevaba dos números escritos por separado —la «probabilidad»
+// (cuán sin explicar sigue) y el reparto de explicaciones— y nada obligaba a
+// que cuadraran: SETKA marcaba 90 con un 50 % mundano, el globo chino 95 siendo
+// un objeto identificado. Desde sep 2026 la probabilidad NO se escribe a mano:
+// es la parte del reparto que ninguna causa conocida explica,
+// indet + nohumano_encubierto + nohumano_abierto, redondeada. ERROR si difiere.
+{
+  const bad = [];
+  for (const c of cases) {
+    if (c.category === "document" || !c.posterior) continue;
+    const p = c.posterior;
+    const tot = Object.values(p).reduce((a, b) => a + b, 0);
+    const derived = Math.round((100 * (p.indet + p.nohumano_encubierto + p.nohumano_abierto)) / tot);
+    if (c.probability !== derived) bad.push(`${c.id} (${c.probability}≠${derived})`);
+  }
+  if (bad.length) {
+    record("ERROR", casesDir, 0, `E43 probabilidad: ${bad.length} caso(s) con \`probability\` distinta de la derivada del posterior (indet + no humano): ${bad.slice(0, 8).join(", ")}${bad.length > 8 ? "…" : ""}. No se escribe a mano: recalcúlala desde el reparto.`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
