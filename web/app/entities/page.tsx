@@ -27,8 +27,10 @@ export default function EntitiesPage() {
 export function EntitiesView({ locale }: { locale: "es" | "en" }) {
   const present = entityMorphologies.filter((f) => f.present);
   const absent = entityMorphologies.filter((f) => !f.present);
-  const withForm = cases.filter((c) => (c.entityMorphology?.length ?? 0) > 0).length;
-  const total = cases.length;
+  // Solo incidentes: los casos-documento son evidencia, no casos.
+  const incidents = cases.filter((c) => c.category !== "document");
+  const withForm = incidents.filter((c) => (c.entityMorphology?.length ?? 0) > 0).length;
+  const total = incidents.length;
 
   return (
     <div className="space-y-8">

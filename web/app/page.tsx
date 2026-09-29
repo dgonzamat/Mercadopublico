@@ -133,11 +133,11 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             number={STATS.cases}
             es={{
               label: "Casos institucionales",
-              sub: "Sobrevivieron filtros militares, congresionales y periodísticos",
+              sub: `Y ${STATS.documents} documentos oficiales que los respaldan`,
             }}
             en={{
               label: "Institutional cases",
-              sub: "Survived military, congressional, and journalistic filters",
+              sub: `Plus ${STATS.documents} official documents that back them`,
             }}
           />
           <BigStat

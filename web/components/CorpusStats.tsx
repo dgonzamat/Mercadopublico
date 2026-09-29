@@ -16,9 +16,11 @@ import { Eyebrow, H2, Caption, DisplayNumber } from "@/lib/typography";
  * the visual, not labels on top of bars. Whitespace-heavy.
  */
 export function CorpusStats({ locale }: { locale: "es" | "en" }) {
-  const tiers = tierDistribution(cases);
-  const top = topPatterns(cases, patterns, 5);
-  const eras = eraDistribution(cases);
+  // Solo incidentes: los casos-documento son evidencia, no casos.
+  const incidents = cases.filter((c) => c.category !== "document");
+  const tiers = tierDistribution(incidents);
+  const top = topPatterns(incidents, patterns, 5);
+  const eras = eraDistribution(incidents);
 
   return (
     <section aria-labelledby="corpus-stats-title" className="space-y-12">
