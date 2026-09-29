@@ -101,7 +101,7 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   { key: "terrestre_otros", label: "Objeto convencional no precisado", labelEn: "Conventional object, not pinned down", color: "#5a6b7a" },
 ];
 
-export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial" | "sin_propuesta";
+export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial" | "sin_propuesta" | "folclore";
 
 /** Las clases prosaicas que se MUESTRAN (primer nivel): las de objeto
  *  (misidSubtype) + fenómeno natural + posible fraude. MECE dentro de
@@ -116,6 +116,9 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   // resolvieron fueron casi siempre algo ordinario: la masa prosaica se conserva
   // por tasa base en vez de pasar a «Indeterminado». Sin detalle.
   { key: "sin_propuesta", label: "Sin explicación propuesta", labelEn: "No explanation proposed", color: "#6f7f8c" },
+  // Leyendas y relatos de época sin testigo verificable: la lectura prosaica es
+  // literaria, no un objeto mal identificado ni un engaño (decisión del dueño).
+  { key: "folclore", label: "Relato folclórico o literario", labelEn: "Folklore or literary account", color: "#9a7b4f" },
 ];
 
 /** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.

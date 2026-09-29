@@ -202,7 +202,7 @@ for (const file of caseFiles) {
     }
   }
   // mundanoType (opcional): sub-tipo de la explicación prosaica.
-  const MUNDANO_TYPES = ["misid", "natural", "fraude", "instrumento", "psicosocial", "sin_propuesta"];
+  const MUNDANO_TYPES = ["misid", "natural", "fraude", "instrumento", "psicosocial", "sin_propuesta", "folclore"];
   if (c.mundanoType !== undefined && !MUNDANO_TYPES.includes(c.mundanoType)) {
     err(w, `mundanoType inválido "${c.mundanoType}" (${MUNDANO_TYPES.join("|")})`);
   }

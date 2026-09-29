@@ -21,6 +21,10 @@ export const metadata = {
 };
 
 /** Qué significa cada hipótesis (y qué hipótesis del marco anterior preserva). */
+/** Detalle de los casos cuya clase aún no se contrastó con la fuente. */
+const PENDING_REVIEW = { key: "pendiente", label: "Pendiente de revisión", labelEn: "Pending review" } as const;
+const SOURCED_DETAIL = { ...DETAIL_UNSPECIFIED, label: "La fuente no fija el objeto", labelEn: "Source does not pin the object" };
+
 const BLURB: Record<string, { es: string; en: string }> = {
   // Lo prosaico se nombra por el OBJETO, no por el error del testigo: las clases
   // de objeto salen de `misidSubtype` (dato), ver PROSAIC_CLASSES; su detalle de
@@ -69,6 +73,10 @@ const BLURB: Record<string, { es: string; en: string }> = {
     es: "Sin explicación propuesta: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario. La parte prosaica se conserva por esa tasa base, no porque alguien la haya identificado; la ficha dice qué fuentes se revisaron.",
     en: "No explanation proposed: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary. The prosaic share is kept on that base rate, not because anyone identified it; the entry says which sources were checked.",
   },
+  folclore: {
+    es: "Relato folclórico o literario: leyendas y relatos de época sin testigo verificable. La lectura prosaica es que se trata de una historia que circuló y se reescribió, no de un objeto mal identificado ni de un engaño deliberado; la ficha dice qué estudioso lo lee así.",
+    en: "Folklore or literary account: legends and period tales with no verifiable witness. The prosaic reading is that it is a story that circulated and was rewritten, not a misidentified object nor a deliberate hoax; the entry says which scholar reads it that way.",
+  },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
     en: "A secret own or allied program (cover-up is intrinsic). Former 'classified programs' hypothesis.",
@@ -110,15 +118,23 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
   // clase prosaica, también modal: qué objeto concreto era, o «sin precisar».
   const modalCount: Record<string, number> = {};
   const detailCount: Record<string, Record<string, number>> = {};
+  // Cuántos casos de cada clase tienen su «Por qué» citado de una fuente; el
+  // resto conserva una clase heredada que aún no se contrastó.
+  const sourcedCount: Record<string, number> = {};
   for (const r of hypRows) modalCount[r.key] = 0;
   for (const s of scored) {
     const m = modalHypothesis(s, { consolidateNonHuman: true, keepIndet: true });
     modalCount[m.key] = (modalCount[m.key] ?? 0) + 1;
+    if (s.classSourced) sourcedCount[m.key] = (sourcedCount[m.key] ?? 0) + 1;
     if (OBJECT_DETAILS[m.key as ProsaicKey]) {
       const d = (detailCount[m.key] ??= {});
+      // «Sin precisar» se parte en dos: la fuente fija la clase pero no el
+      // objeto, o la clase todavía no se ha contrastado con ninguna fuente.
       const k = OBJECT_DETAILS[m.key as ProsaicKey]!.some((x) => x.key === s.objectDetail)
         ? s.objectDetail!
-        : DETAIL_UNSPECIFIED.key;
+        : s.classSourced
+          ? DETAIL_UNSPECIFIED.key
+          : PENDING_REVIEW.key;
       d[k] = (d[k] ?? 0) + 1;
     }
   }
@@ -191,8 +207,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         </H2>
         <Caption>
           <T
-            es="Qué significa cada una y qué hipótesis del marco anterior preserva. Las clases prosaicas se abren en su detalle —qué objeto concreto era—, con «sin precisar» para los casos en que la evidencia fija la clase pero no el objeto. Cada bloque enlaza al listado de casos donde es la explicación más probable, ya filtrado."
-            en="What each means and which prior-framework hypothesis it preserves. The prosaic classes open into their detail —which specific object it was—, with 'not specified' for cases where the evidence fixes the class but not the object. Each block links to the list of cases where it is the most probable explanation, pre-filtered."
+            es="Qué significa cada una y qué hipótesis del marco anterior preserva. Las clases prosaicas se abren en su detalle —qué objeto concreto era—, separando los casos en que la fuente fija la clase pero no el objeto de los que todavía no se han contrastado con ninguna fuente («pendiente de revisión»): esa clase es aún la heredada, no una conclusión. Cada bloque enlaza al listado de casos donde es la explicación más probable, ya filtrado."
+            en="What each means and which prior-framework hypothesis it preserves. The prosaic classes open into their detail —which specific object it was—, separating cases where the source fixes the class but not the object from those not yet checked against any source ('pending review'): that class is still the inherited one, not a conclusion. Each block links to the list of cases where it is the most probable explanation, pre-filtered."
             locale={locale}
           />
         </Caption>
@@ -219,10 +235,20 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
                   <T es={BLURB[c.key].es} en={BLURB[c.key].en} locale={locale} />
                 </Body>
 
+                {total > 0 && PROSAIC_KEYS.has(c.key) && (
+                  <p className="mt-2 font-mono text-[11px] uppercase tracking-widest text-muted">
+                    <T
+                      es={`${sourcedCount[c.key] ?? 0} de ${total} con su porqué citado de una fuente · ${total - (sourcedCount[c.key] ?? 0)} pendientes de revisión`}
+                      en={`${sourcedCount[c.key] ?? 0} of ${total} with their reason cited from a source · ${total - (sourcedCount[c.key] ?? 0)} pending review`}
+                      locale={locale}
+                    />
+                  </p>
+                )}
+
                 {/* Segundo nivel: detalle del objeto dentro de la clase (modal). */}
                 {total > 0 && OBJECT_DETAILS[c.key as ProsaicKey] && (
                   <ul className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
-                    {[...OBJECT_DETAILS[c.key as ProsaicKey]!, DETAIL_UNSPECIFIED].map((d) => (
+                    {[...OBJECT_DETAILS[c.key as ProsaicKey]!, SOURCED_DETAIL, PENDING_REVIEW].map((d) => (
                       <li key={d.key} className="flex items-baseline justify-between gap-3 border-b border-border/60 py-1 font-mono text-[11px]">
                         <span className="text-text">
                           <T es={d.label} en={d.labelEn} locale={locale} />

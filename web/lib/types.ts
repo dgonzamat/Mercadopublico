@@ -6,7 +6,7 @@ export type Category = "incident" | "document" | "contactee" | "crop_circle";
  *  avería); `psicosocial` = contagio colectivo, sugestión, parálisis del sueño;
  *  `sin_propuesta` = ninguna fuente propone una causa, pero casos parecidos
  *  suelen resolverse como algo ordinario (tasa base; decisión del dueño, 29 sep 2026). */
-export type MundanoType = "misid" | "natural" | "fraude" | "instrumento" | "psicosocial" | "sin_propuesta";
+export type MundanoType = "misid" | "natural" | "fraude" | "instrumento" | "psicosocial" | "sin_propuesta" | "folclore";
 
 /** Clase de OBJETO de una misidentificación: qué era lo que se vio. Solo aplica
  *  a casos con mundanoType="misid"; es el primer nivel de la taxonomía prosaica

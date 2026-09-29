@@ -153,6 +153,7 @@ a {
 [data-hyp-filter="instrumento"] [data-hyp]:not([data-hyp="instrumento"]),
 [data-hyp-filter="psicosocial"] [data-hyp]:not([data-hyp="psicosocial"]),
 [data-hyp-filter="sin_propuesta"] [data-hyp]:not([data-hyp="sin_propuesta"]),
+[data-hyp-filter="folclore"] [data-hyp]:not([data-hyp="folclore"]),
 [data-hyp-filter="humana_clasificada"] [data-hyp]:not([data-hyp="humana_clasificada"]),
 [data-hyp-filter="adversaria"] [data-hyp]:not([data-hyp="adversaria"]),
 [data-hyp-filter="nohumano"] [data-hyp]:not([data-hyp="nohumano"]),
