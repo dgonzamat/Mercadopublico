@@ -18,7 +18,7 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "probability": 50,
+  "probability": 40,
   "mundanoType": "misid",
   "misidSubtype": "terrestre_otros",
   "posterior": {

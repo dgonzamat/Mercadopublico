@@ -15,7 +15,7 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "probability": 20,
+  "probability": 32,
   "mundanoType": "misid",
   "misidSubtype": "astronomico",
   "posterior": {

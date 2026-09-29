@@ -17,7 +17,7 @@
   "mundanoType": "misid",
   "misidSubtype": "astronomico",
   "epistemicStatus": "documented",
-  "probability": 75,
+  "probability": 25,
   "posterior": {
     "mundano_natural": 0.62,
     "humana_clasificada": 0.05,

@@ -17,7 +17,7 @@
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
   "epistemicStatus": "documented",
-  "probability": 40,
+  "probability": 35,
   "summary": "El 19 de noviembre de 2023, a las 14:30, la torre de control del aeropuerto de Imphal, en el noreste de la India, recibió aviso de la fuerza de seguridad del aeródromo de que un objeto blanco no identificado estaba sobre la torre. Quedó visible hasta las 16:05. Se suspendieron despegues y aterrizajes durante casi tres horas con un aviso oficial a pilotos, dos vuelos se desviaron y tres salidas se retrasaron. La Fuerza Aérea envió dos cazas Rafale, que no encontraron nada. El Ministerio de Aviación Civil lo confirmó todo ante el Parlamento.",
   "summary_en": "On 19 November 2023, at 14:30, the control tower at Imphal airport in north-east India was told by the airfield's security force that an unidentified white object was over the tower. It remained visible until 16:05. Take-offs and landings were suspended for nearly three hours under an official notice to airmen, two flights were diverted and three departures delayed. The Air Force sent two Rafale fighters, which found nothing. The Ministry of Civil Aviation confirmed all of it to Parliament.",
   "patterns": [

@@ -16,7 +16,7 @@
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 45,
+  "probability": 39,
   "summary": "El 14 de diciembre de 1990, tres controladores aéreos independientes en distintas ubicaciones detectaron en radar un objeto cigar-shaped que cruzaba el espacio aéreo griego a más de 3.000 mph, pintando un blanco duro en pantalla. La Hellenic Air Force abrió un expediente oficial del caso. Primer caso de Grecia en el corpus: multi-controlador + radar duro + archivo militar.",
   "summary_en": "On December 14, 1990, three independent air traffic controllers at different locations tracked on radar a cigar-shaped object crossing Greek airspace at over 3,000 mph, painting a hard target on screen. The Hellenic Air Force opened an official file on the case. Greece's first case in the corpus: multi-controller + hard radar + military file.",
   "patterns": [

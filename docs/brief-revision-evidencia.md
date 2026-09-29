@@ -2,7 +2,7 @@
 
 Repo: /home/user/Mercadopublico. Cases are JSON files at web/data/cases/<id>.json.
 
-Each case's classification is written by hand: `probability` (0–100), `posterior` (6 MECE keys summing to exactly 1: mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet), `mundanoType` (misid|natural|fraude) and `misidSubtype` (astronomico|aeronave|espacial|terrestre_otros, only when mundanoType=misid). The site just sums these numbers, so a classification written without reading the evidence contaminates every count.
+Each case's classification is written by hand: `posterior` (6 MECE keys summing to exactly 1: mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet), `mundanoType` (misid|natural|fraude) and `misidSubtype` (astronomico|aeronave|espacial|terrestre_otros, only when mundanoType=misid). The site just sums these numbers, so a classification written without reading the evidence contaminates every count.
 
 Rule from the owner: the classification must be assigned only AFTER reading the primary evidence (the actual file, report, telex, transcript, contemporaneous press), never from Wikipedia or an aggregator summary.
 
@@ -10,7 +10,7 @@ Be neutral. Look for errors in BOTH directions:
 - claims the primary record does not support (invented names, figures or maneuvers, misquoted verdicts);
 - facts the ficha downplays or omits that strengthen the case (instrument data, independent witnesses, official admissions that something was unexplained, weaknesses in the official explanation).
 
-If the primary evidence supports a higher probability than the ficha gives, raise it. If it supports the ficha, change little. Do not assume in advance which way the correction goes: the document decides.
+If the primary evidence supports less prosaic weight than the ficha gives, lower it. If it supports the ficha, change little. Do not assume in advance which way the correction goes: the document decides.
 
 ## Your job, for each assigned case
 1. Read the ficha (summary, whatHappened, whyMatters, evidence, sources, and the _en pairs).
@@ -29,7 +29,7 @@ If the primary evidence supports a higher probability than the ficha gives, rais
    - Spanish must be neutral, with no voseo. ES fields must not contain untranslated English except verbatim quotes in «» and titles or proper names; use «» for quotes in ES. No markdown in the prose (no **, no "- " lists, no #).
    - whatHappened + whyMatters must stay at 3,500 characters or more in each language.
    - Sources: add the primary sources with url, note and note_en, using exact URLs you verified return 200 with real content. Label Wikipedia and aggregators as secondary. Remove any source that presents Wikipedia as a primary archive.
-   - Re-assess `probability` and `posterior` in light of what you read, and adjust `mundanoType`/`misidSubtype` if a prosaic explanation becomes the leading one. Justify every change.
+   - Re-assess the `posterior` in light of what you read, then set `probability` = round(100 × (indet + nohumano_encubierto + nohumano_abierto)) — it is derived, never judged separately (audit E43), and adjust `mundanoType`/`misidSubtype` if a prosaic explanation becomes the leading one. Justify every change.
    - Only if you actually read primary evidence for the case, add `"evidenceReviewed": "2026-09-28"` as the last key. If you could not reach any primary evidence, do NOT add it; say so in your report.
 4. From /home/user/Mercadopublico/web, run `node scripts/validate-schema.mjs` and `node scripts/audit-consistency.mjs --warn`. Fix anything that flags your cases (E7b spanglish, E13 length, E26 note without note_en). Pre-existing WARNs to ignore: E21, E38, E41, E42.
 

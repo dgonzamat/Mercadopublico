@@ -16,7 +16,7 @@
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 40,
+  "probability": 39,
   "summary": "El 23 de noviembre de 1953, un caza F-89C Scorpion despegó de Kinross AFB para interceptar un blanco de radar clasificado como «Unknown» sobre el lago Superior. El radar terrestre mostró que el avión y el objetivo se fusionaban en un solo blip, y el F-89, con el teniente Felix Moncla y el operador de radar Robert Wilson, desapareció sin dejar rastro. El informe de accidente de la USAF identificó el blanco como un Dakota (C-47) de la Real Fuerza Aérea Canadiense desviado de su ruta, algo que Canadá negó después; nunca se hallaron la aeronave ni los cuerpos.",
   "summary_en": "On November 23, 1953, an F-89C Scorpion fighter took off from Kinross AFB to intercept a radar target classified as \"Unknown\" over Lake Superior. Ground radar showed the aircraft and the target merge into a single blip, and the F-89, with Lt. Felix Moncla and radar operator Robert Wilson, vanished without a trace. The USAF accident report identified the target as an off-course Royal Canadian Air Force Dakota (C-47), which Canada later denied; neither the aircraft nor the bodies were ever found.",
   "patterns": [

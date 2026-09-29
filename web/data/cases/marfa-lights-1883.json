@@ -15,7 +15,7 @@
   },
   "tier": "B",
   "mundanoType": "misid",
-  "probability": 20,
+  "probability": 17,
   "posterior": {
     "mundano_natural": 0.82,
     "humana_clasificada": 0.01,

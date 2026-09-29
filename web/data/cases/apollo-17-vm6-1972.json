@@ -19,7 +19,7 @@
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 38,
+  "probability": 32,
   "posterior": {
     "mundano_natural": 0.66,
     "humana_clasificada": 0.02,

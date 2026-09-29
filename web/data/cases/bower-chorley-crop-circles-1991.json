@@ -16,7 +16,7 @@
   },
   "tier": "B",
   "mundanoType": "fraude",
-  "probability": 6,
+  "probability": 7,
   "posterior": {
     "mundano_natural": 0.92,
     "humana_clasificada": 0.01,

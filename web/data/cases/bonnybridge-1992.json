@@ -18,7 +18,7 @@
   "category": "incident",
   "epistemicStatus": "documented",
   "mundanoType": "misid",
-  "probability": 14,
+  "probability": 26,
   "patterns": [
     "8g",
     "8o"

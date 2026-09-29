@@ -15,7 +15,7 @@
   },
   "tier": "B",
   "epistemicStatus": "developing",
-  "probability": 28,
+  "probability": 35,
   "posterior": {
     "mundano_natural": 0.05,
     "humana_clasificada": 0.05,

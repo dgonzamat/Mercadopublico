@@ -402,8 +402,8 @@ export async function CaseDetailPage(
         ) : (
         <Caption>
           <T locale={locale}
-            es={`${TIER_META[c.tier].description}. Tres ejes independientes: el «tier» mide la fuerza de la evidencia; la «probabilidad» estima cuán genuinamente inexplicado está el caso —un fenómeno natural puede seguir sin explicación, así que no equivale a «no-prosaico»—; y la partición de explicaciones (abajo) dice qué fue más plausiblemente. Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude.`}
-            en={`${TIER_META[c.tier].description_en}. Three independent axes: the «tier» measures the strength of the evidence; the «probability» estimates how genuinely unexplained the case is —a natural phenomenon can remain unexplained, so it does not equal «non-prosaic»—; and the partition of explanations (below) says what it most plausibly was. So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax.`}
+            es={`${TIER_META[c.tier].description}. El «tier» mide la fuerza de la evidencia; la partición de explicaciones (abajo) reparte qué fue más plausiblemente, y la «probabilidad» es la parte de esa partición que ninguna causa conocida explica (indeterminado más las narrativas no humanas), calculada a partir de ella. Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude.`}
+            en={`${TIER_META[c.tier].description_en}. The «tier» measures the strength of the evidence; the partition of explanations (below) splits what it most plausibly was, and the «probability» is the share of that partition no known cause explains (indeterminate plus the non-human narratives), computed from it. So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax.`}
           />
         </Caption>
         )}
@@ -893,10 +893,10 @@ export async function CaseDetailPage(
                   <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     partición comparable
                   </LocaleLink>
-                  . Es una pregunta distinta de la{" "}
-                  <em>Probabilidad</em> de arriba: aquella estima qué tan
-                  probable es que el caso sea un fenómeno genuinamente no
-                  explicado; esta reparte <em>cuál</em> sería la explicación.
+                  . De esta partición sale la{" "}
+                  <em>Probabilidad</em> de arriba: es la parte que no cubre
+                  ninguna causa conocida (indeterminado más las narrativas no
+                  humanas).
                 </>
               }
               en={
@@ -908,10 +908,10 @@ export async function CaseDetailPage(
                   <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
                     comparable partition
                   </LocaleLink>
-                  . It is a different question from the{" "}
-                  <em>Probability</em> above: that one estimates how likely the
-                  case is a genuinely unexplained phenomenon; this one splits{" "}
-                  <em>which</em> the explanation would be.
+                  . The{" "}
+                  <em>Probability</em> above comes from this partition: it is
+                  the share no known cause covers (indeterminate plus the
+                  non-human narratives).
                 </>
               }
             />

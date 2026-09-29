@@ -17,7 +17,7 @@
   "category": "incident",
   "epistemicStatus": "documented",
   "mundanoType": "fraude",
-  "probability": 7,
+  "probability": 10,
   "patterns": [
     "8o"
   ],

@@ -16,7 +16,7 @@
   "tier": "A",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
-  "probability": 62,
+  "probability": 43,
   "summary": "El 4 de agosto de 1990, dos hombres fotografían un gran objeto en forma de diamante suspendido en silencio sobre los páramos de Calvine (Escocia), con un caza militar visible cerca. Entregaron las fotos a un diario, que las pasó al Ministerio de Defensa; los originales 'desaparecieron' y nunca se publicaron. David Clarke recuperó una copia 32 años después.",
   "summary_en": "On 4 August 1990, two men photograph a large diamond-shaped object hovering silently over the moors at Calvine, Scotland, with a military jet visible nearby. They handed the photos to a newspaper, which passed them to the Ministry of Defence; the originals 'disappeared' and were never published. David Clarke recovered a copy 32 years later.",
   "patterns": ["8m"],

@@ -16,7 +16,7 @@
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 38,
+  "probability": 32,
   "summary": "En 2004, ante un objeto no identificado en el espacio aéreo cercano a Lisboa, la Fuerza Aérea Portuguesa puso F-16 en alerta. El portavoz de la fuerza, coronel Carlos Barbosa, confirmó públicamente que el radar de defensa registró un 'blanco' durante dos o tres minutos, sin explicación final. Primer caso de Portugal en el corpus: confirmación oficial de un retorno de radar, sin programa de investigación que lo respaldara.",
   "summary_en": "In 2004, in response to an unidentified object in the airspace near Lisbon, the Portuguese Air Force put F-16s on standby. The force's spokesperson, Colonel Carlos Barbosa, publicly confirmed that defense radar registered a 'target' for two or three minutes, with no final explanation. Portugal's first case in the corpus: official confirmation of a radar return, with no investigation program to back it.",
   "patterns": [

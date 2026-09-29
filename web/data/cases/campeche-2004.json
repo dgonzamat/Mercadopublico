@@ -14,7 +14,7 @@
   "place": "Sonda de Campeche, cerca de Ciudad del Carmen, México",
   "place_en": "Bay of Campeche, near Ciudad del Carmen, Mexico",
   "tier": "S",
-  "probability": 40,
+  "probability": 30,
   "category": "incident",
   "patterns": [
     "8e"

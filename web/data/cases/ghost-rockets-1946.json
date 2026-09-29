@@ -26,7 +26,7 @@
     "nohumano_abierto": 0.02,
     "indet": 0.12
   },
-  "probability": 40,
+  "probability": 15,
   "summary": "En 1946 el Estado Mayor de Defensa sueco (Försvarsstaben) reunió cerca de mil reportes de «cohetes fantasma» hasta el 1 de octubre; en su comunicado del 10 de octubre atribuyó en torno al 80% a fenómenos luminosos de probable origen celeste, admitió que no había podido establecer trayectorias de proyectil ni hallar restos, y dejó sin explicar solo algunos casos aislados.",
   "summary_en": "In 1946 the Swedish Defence Staff (Försvarsstaben) collected about a thousand 'ghost rocket' reports up to October 1; its communiqué of October 10 attributed roughly 80% to luminous phenomena of probable celestial origin, conceded it had been unable to establish any projectile track or recover any debris, and left only a few isolated cases unexplained.",
   "patterns": [
