@@ -105,7 +105,7 @@ const frameworkList = readJsonList("frameworks.json", "frameworks");
 const STATS = {
   // Incidentes: los documentos no cuentan como casos (ver build-cases.mjs).
   cases: cases.filter((c) => c.category !== "document").length,
-  countries: new Set(cases.map((c) => c.country)).size,
+  countries: new Set(cases.filter((c) => c.category !== "document").map((c) => c.country)).size,
   tierS: cases.filter((c) => c.tier === "S").length,
   tierA: cases.filter((c) => c.tier === "A").length,
   tierB: cases.filter((c) => c.tier === "B").length,

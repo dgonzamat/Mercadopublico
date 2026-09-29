@@ -36,8 +36,10 @@ console.log(`build-cases: client bundle (no prose) → data/cases-client.json`);
 // y location (marcador). Esta proyección diminuta (~60 KB) es lo que
 // lib/atlasData.ts embarca a /atlas, en vez de arrastrar el corpus client entero.
 const ATLAS_FIELDS = ["id", "name", "name_en", "tier", "country", "country_name", "year_start", "probability"];
+// Solo incidentes: los casos-documento son evidencia, no sucesos, y no se
+// cuentan como casos (ver siteStats.cases); el mapa y su conteo deben cuadrar.
 const atlasPoints = cases
-  .filter((c) => c.location && typeof c.location.lat === "number")
+  .filter((c) => c.category !== "document" && c.location && typeof c.location.lat === "number")
   .map((c) => {
     const p = { location: { lat: c.location.lat, lng: c.location.lng } };
     for (const k of ATLAS_FIELDS) p[k] = c[k];
@@ -79,7 +81,7 @@ const siteStats = {
   tierS: cases.filter((c) => c.tier === "S").length,
   tierA: cases.filter((c) => c.tier === "A").length,
   tierB: cases.filter((c) => c.tier === "B").length,
-  countries: new Set(cases.map((c) => c.country)).size,
+  countries: new Set(cases.filter((c) => c.category !== "document").map((c) => c.country)).size,
   startYear: CORPUS_START_YEAR,
   endYear: corpusEndYear,
   years: corpusEndYear - CORPUS_START_YEAR,
