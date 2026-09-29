@@ -8,7 +8,8 @@ Level 1 (field `mundanoType` + `misidSubtype`):
 - misid + astronomico — Objeto astronómico
 - misid + aeronave — Aeronave (includes balloons)
 - misid + espacial — Objeto espacial
-- misid + luces_tierra — En tierra (the source was on or near the ground: lights, a person, an animal)
+- misid + luces_tierra — En tierra (the source was on or near the ground: lights, a person)
+- misid + animal — Animal (birds in flight, insects near the lens)
 - natural — Fenómeno natural
 - fraude — Posible fraude
 - instrumento — Fallo de instrumento (the anomaly came from the equipment: film, sensor, radar, a failure)
@@ -18,7 +19,8 @@ Level 2 (field `objectDetail`, optional; allowed values in web/lib/meceClasses.t
 - astronomico: planeta_estrella | meteoro | luna
 - aeronave: avion | helicoptero | dron | globo
 - espacial: cohete_misil | satelite | reentrada
-- luces_tierra: faro_reflector | bengala | vehiculo | llama_industrial | persona | animal
+- luces_tierra: faro_reflector | bengala | vehiculo | llama_industrial | persona
+- animal: ave | insecto
 - natural: atmosferico (ball lightning, clouds, plasma) | optico (mirage, refraction, anomalous radar propagation from a temperature inversion — the radar worked, the air bent the beam)
 - instrumento: pelicula_foto | sensor_radar (artifacts made by the equipment itself: internal radar fault, second-time-around echo, interference, IR glare — not AP) | falla_equipo
 - psicosocial: contagio_colectivo | sugestion | paralisis_sueno

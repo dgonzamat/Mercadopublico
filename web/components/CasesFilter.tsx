@@ -31,6 +31,7 @@ export type HypKey =
   | "aeronave"
   | "espacial"
   | "luces_tierra"
+  | "animal"
   | "terrestre_otros"
   | "natural"
   | "fraude"
@@ -49,6 +50,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "aeronave", es: "Aeronave", en: "Aircraft" },
   { key: "espacial", es: "Objeto espacial", en: "Space object" },
   { key: "luces_tierra", es: "En tierra", en: "Ground-level" },
+  { key: "animal", es: "Animal", en: "Animal" },
   { key: "terrestre_otros", es: "Objeto convencional no precisado", en: "Conventional object, not pinned down" },
   { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
   { key: "fraude", es: "Posible fraude", en: "Possible hoax" },
@@ -70,7 +72,7 @@ const HYP_KEYS = new Set<string>(HYP_ORDER.map((h) => h.key));
 const LEGACY_MISID = "misid";
 const LEGACY_MISID_LABEL = { es: "Objeto convencional · todas las clases", en: "Conventional object · all classes" };
 type HypFilter = HypKey | typeof LEGACY_MISID;
-const MISID_OBJECT_KEYS: ReadonlyArray<HypKey> = ["astronomico", "aeronave", "espacial", "luces_tierra", "terrestre_otros"];
+const MISID_OBJECT_KEYS: ReadonlyArray<HypKey> = ["astronomico", "aeronave", "espacial", "luces_tierra", "animal", "terrestre_otros"];
 
 export type FacetOption = { key: string; es: string; en: string; count: number };
 

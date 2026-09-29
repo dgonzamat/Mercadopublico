@@ -230,6 +230,18 @@ for (const file of caseFiles) {
       err(w, `objectDetail inválido "${c.objectDetail}" para la clase "${cls}" (${allowed.join("|")})`);
     }
   }
+  // classBasis (opcional): por qué la clase prosaica es esa, con su fuente.
+  if (c.classBasis !== undefined) {
+    const b = c.classBasis;
+    if (typeof b !== "object" || b === null) err(w, "classBasis debe ser un objeto {es, en, source, url?}");
+    else {
+      for (const k of ["es", "en", "source"]) if (typeof b[k] !== "string" || !b[k].trim()) err(w, `classBasis.${k} vacío o ausente`);
+      if (b.url !== undefined && !/^https?:\/\//.test(b.url) && !String(b.url).startsWith("/")) err(w, `classBasis.url inválida "${b.url}"`);
+      const extra = Object.keys(b).filter((k) => !["es", "en", "source", "url"].includes(k));
+      if (extra.length) err(w, `classBasis con claves no válidas [${extra}]`);
+    }
+    if (c.category === "document") err(w, "classBasis en un documento: los documentos no se clasifican");
+  }
   // evidenceReviewed (opcional): fecha ISO en que la clasificación se contrastó
   // con la evidencia primaria.
   if (c.evidenceReviewed !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(String(c.evidenceReviewed))) {

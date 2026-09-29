@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { cases, getPattern, getEntityMorphology, TOTAL_CASES } from "@/lib/data";
 import { CATEGORY_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
+import { PROSAIC_CLASSES, prosaicKey, objectDetailDef } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
@@ -407,6 +408,7 @@ export async function CaseDetailPage(
           />
         </Caption>
         )}
+        {!isLinkedDoc && c.category !== "document" && <ClassBasis c={c} locale={locale} />}
       </header>
 
       {/* ────────── ZONE A2 — DOCUMENTO PRIMARIO DESTACADO ────────── */}
@@ -1153,6 +1155,62 @@ function KeyFact({
       >
         {value}
       </p>
+    </div>
+  );
+}
+
+/** Qué fue más plausiblemente, en términos prosaicos, y por qué: la clase
+ *  (mundanoType + misidSubtype + objectDetail) y la frase de la fuente que la
+ *  fija (`classBasis`). Sin la frase, lo dice: la clase aún no se contrastó. */
+function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "en" }) {
+  if (!c.mundanoType && !c.classBasis) return null;
+  const pk = c.mundanoType ? prosaicKey(c.mundanoType, c.misidSubtype) : undefined;
+  const cls = pk ? PROSAIC_CLASSES.find((k) => k.key === pk) : undefined;
+  const detail = pk ? objectDetailDef(pk, c.objectDetail) : undefined;
+  const b = c.classBasis;
+  return (
+    <div className="space-y-2 border-l-2 border-text pl-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-muted">
+        <T locale={locale} es="Explicación conocida más plausible" en="Most plausible known explanation" />
+      </p>
+      <p className="text-lg font-semibold text-text">
+        {cls ? (
+          <T
+            locale={locale}
+            es={detail ? `${cls.label} · ${detail.label}` : cls.label}
+            en={detail ? `${cls.labelEn} · ${detail.labelEn}` : cls.labelEn}
+          />
+        ) : (
+          <T locale={locale} es="Ninguna fuente propone una" en="No source proposes one" />
+        )}
+      </p>
+      {b ? (
+        <p className="text-sm text-text">
+          <span className="font-semibold">
+            <T locale={locale} es="Por qué: " en="Why: " />
+          </span>
+          <T locale={locale} es={b.es} en={b.en} />{" "}
+          <span className="text-muted">
+            (
+            {b.url ? (
+              <a href={b.url} target="_blank" rel="noopener noreferrer" className="text-accent underline-offset-4 hover:underline">
+                {b.source} ↗
+              </a>
+            ) : (
+              b.source
+            )}
+            )
+          </span>
+        </p>
+      ) : (
+        <p className="text-sm italic text-muted">
+          <T
+            locale={locale}
+            es="Por qué: pendiente. Esta clase todavía no se ha contrastado con la fuente que la fijaría."
+            en="Why: pending. This class has not yet been checked against the source that would pin it."
+          />
+        </p>
+      )}
     </div>
   );
 }

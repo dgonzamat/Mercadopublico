@@ -10,7 +10,7 @@ export type MundanoType = "misid" | "natural" | "fraude" | "instrumento" | "psic
  *  a casos con mundanoType="misid"; es el primer nivel de la taxonomía prosaica
  *  (el detalle de segundo nivel va en `objectDetail`). `terrestre_otros` es
  *  transitorio: se conserva válido mientras la pasada de datos lo reparte. */
-export type MisidSubtype = "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "terrestre_otros";
+export type MisidSubtype = "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "animal" | "terrestre_otros";
 export type VerdictMoral = "neutral" | "hostile" | "positive" | "variable";
 
 export interface Location {
@@ -138,6 +138,9 @@ export interface UAPCase {
    *  (expediente, télex, informe, crónica de la época), no un resumen secundario.
    *  Ausente = la clasificación no está verificada contra el documento. */
   evidenceReviewed?: string;
+  /** Por qué la clase prosaica es esa (o por qué no hay ninguna): la frase de
+   *  la fuente que la fija, ES + EN, y la fuente. Se muestra en el detalle. */
+  classBasis?: { es: string; en: string; source: string; url?: string };
   /** Solo en documentos: ids de los incidentes de los que este documento es
    *  evidencia. El documento no reparte probabilidad propia (no es un suceso);
    *  la ficha de cada caso enlazado lo lista como «Documentos que lo respaldan». */

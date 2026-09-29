@@ -85,7 +85,7 @@ export function dominantNarrativeLabel(p: Posterior): string {
  *  mudo) queda a ΔE76 ≥ 27 de toda la paleta prosaica e hipótesis y ≥ 3:1 sobre
  *  el crema y el fondo oscuro de la home. */
 export const MISID_SUBTYPES: ReadonlyArray<{
-  key: "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "terrestre_otros";
+  key: "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "animal" | "terrestre_otros";
   label: string;
   labelEn: string;
   color: string;
@@ -94,6 +94,7 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#7d95a6" },
   { key: "espacial", label: "Objeto espacial", labelEn: "Space object", color: "#3f4e5a" },
   { key: "luces_tierra", label: "En tierra", labelEn: "Ground-level", color: "#9a6a8a" },
+  { key: "animal", label: "Animal", labelEn: "Animal", color: "#2e7d8c" },
   // TRANSITORIO: el bucket de misid sin objeto fijado. Se conserva válido
   // mientras la pasada de datos reparte sus casos entre las clases de arriba.
   // Recoge también los casos misid sin `misidSubtype`.
@@ -152,7 +153,10 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "vehiculo", label: "Vehículo", labelEn: "Vehicle" },
     { key: "llama_industrial", label: "Llama industrial", labelEn: "Industrial flare" },
     { key: "persona", label: "Persona", labelEn: "Person" },
-    { key: "animal", label: "Animal", labelEn: "Animal" },
+  ],
+  animal: [
+    { key: "ave", label: "Ave", labelEn: "Bird" },
+    { key: "insecto", label: "Insecto", labelEn: "Insect" },
   ],
   natural: [
     { key: "atmosferico", label: "Atmosférico (rayo en bola, nubes)", labelEn: "Atmospheric (ball lightning, clouds)" },

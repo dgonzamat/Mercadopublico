@@ -1863,6 +1863,25 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9za2. RULE E44: clase prosaica sin su porqué ─────────────────────────
+//
+// El detalle de cada caso muestra su clase prosaica (qué fue más plausiblemente)
+// y el porqué: la frase de la fuente que la fija (`classBasis`). Sin ella, el
+// lector ve una clase que parece deducida (decisión del dueño, 29 sep 2026).
+// WARN agregado por tier, mismo patrón que E42: el backlog queda medible.
+{
+  const byTier = { S: 0, A: 0, B: 0 };
+  let pending = 0, done = 0;
+  for (const c of cases) {
+    if (c.category === "document" || !c.posterior || !c.mundanoType) continue;
+    if (c.classBasis) { done++; continue; }
+    pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
+  }
+  if (pending > 0) {
+    record("WARN", casesDir, 0, `E44 clase sin porqué: ${pending} caso(s) con clase prosaica sin \`classBasis\` (${done} ya la citan). Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. La clase se muestra con la frase de la fuente que la fija.`);
+  }
+}
+
 // ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
 //
 // Cada incidente llevaba dos números escritos por separado —la «probabilidad»
