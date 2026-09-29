@@ -9,7 +9,10 @@
  *   node scripts/test-chart.mjs   # requiere out/ (correr tras el build)
  *
  * Verifica:
- *  - El donut tiene exactamente 6 segmentos (hipótesis, no-humano consolidado).
+ *  - El donut tiene exactamente 10 segmentos (6 clases prosaicas + humana +
+ *    adversaria + no-humano consolidado + Indeterminado).
+ *  - Lo prosaico se nombra por el objeto: las 6 clases prosaicas se renderizan y
+ *    no queda ninguna categoría «Misidentificación» en /probabilidades.
  *  - Los arcos (stroke-dasharray) suman la circunferencia → la partición = 100%.
  *  - Los offsets son monótonos y no se solapan.
  *  - El centro del donut muestra el total de casos.
@@ -74,10 +77,15 @@ const num = (tag, attr) => {
 
 console.log("Donut /probabilidades");
 
-// 1) Nº de segmentos = 7: 6 hipótesis (no-humano consolidado) + 1 porción de
-//    casos-documento, para que el donut marque el TOTAL del corpus.
-if (circles.length === 7) ok(`7 segmentos en el donut (6 hipótesis + documentos)`);
-else fail(`esperaba 7 segmentos (6 hipótesis + documentos), encontré ${circles.length}`);
+// 1) Nº de segmentos = 10: lo prosaico abierto en sus 6 clases concretas
+//    (objeto astronómico, aeronave o globo, cohete/satélite/reentrada, objeto
+//    convencional no precisado, fenómeno natural, posible fraude) + tecnología
+//    humana + adversaria + no-humano (consolidado) + Indeterminado (casos-
+//    documento sin lean e incidentes inconclusos), para que el donut marque el
+//    TOTAL del corpus. Antes eran 7, con «Misidentificación» como una sola
+//    porción: nombraba el error del testigo, no el objeto (sep 2026).
+if (circles.length === 10) ok(`10 segmentos en el donut (6 clases prosaicas + 4 narrativas)`);
+else fail(`esperaba 10 segmentos (6 clases prosaicas + 4 narrativas), encontré ${circles.length}`);
 
 if (circles.length > 0) {
   const r = parseFloat(num(circles[0], "r"));
@@ -134,6 +142,23 @@ const leaks = ["misid+natural+fraude", "clasificado+adversaria+no-humano"];
 const leaked = leaks.filter((s) => html.includes(s));
 if (leaked.length === 0) ok(`sin fórmulas en español filtradas`);
 else fail(`fórmulas filtradas en el HTML: ${leaked.join(", ")}`);
+
+// 5b) Lo prosaico se nombra por el OBJETO: las seis clases se renderizan (ES y
+//     EN) y no vuelve la categoría «Misidentificación» (ni en la raíz inglesa ni
+//     en el espejo /es). /probabilidades no lleva prosa de casos, así que
+//     cualquier aparición es una etiqueta de UI.
+const PROSAIC_LABELS = {
+  "probabilidades/index.html": ["Astronomical object", "Aircraft or balloon", "Rocket, satellite or reentry", "Conventional object, not pinned down", "Natural phenomenon", "Possible hoax"],
+  "es/probabilidades/index.html": ["Objeto astronómico", "Aeronave o globo", "Cohete, satélite o reentrada", "Objeto convencional no precisado", "Fenómeno natural", "Posible fraude"],
+};
+for (const [rel, labels] of Object.entries(PROSAIC_LABELS)) {
+  const page = readFileSync(join(__dirname, "..", "out", rel), "utf8");
+  const missing = labels.filter((l) => !page.includes(l));
+  if (missing.length === 0) ok(`${rel}: las 6 clases prosaicas se renderizan`);
+  else fail(`${rel}: faltan clases prosaicas: ${missing.join(", ")}`);
+  if (!/misidentifica/i.test(page)) ok(`${rel}: sin categoría «Misidentificación»`);
+  else fail(`${rel}: reapareció «Misidentificación/Misidentification»`);
+}
 
 // 6) No reaparece el hover rojo en la leyenda
 if (!html.includes("group-hover:text-accent")) ok(`sin hover rojo (group-hover:text-accent)`);
