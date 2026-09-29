@@ -1,7 +1,10 @@
 import type { UAPCase } from "@/lib/types";
 import {
+  DETAIL_UNSPECIFIED,
   dominantNarrativeLabel,
   MISID_SUBTYPES,
+  OBJECT_DETAILS,
+  objectDetailDef,
   PROSAIC_CLASSES,
   prosaicKey,
 } from "@/lib/meceClasses";
@@ -120,6 +123,19 @@ export const DIMENSIONS: DimensionDef[] = [
     // Qué objeto era (misidSubtype). Solo en casos con mundanoType="misid"
     // clasificados; el resto → "—". Key conservada por compatibilidad.
     values: (c) => (c.misidSubtype ? [MISID_LABEL[c.misidSubtype]] : ["—"]),
+  },
+  {
+    key: "detalle",
+    label: { es: "Detalle del objeto", en: "Object detail" },
+    // Segundo nivel (`objectDetail`) dentro de la clase prosaica. Solo las clases
+    // con detalle (OBJECT_DETAILS); sin él → «Sin precisar». Fraude, la clase
+    // transitoria y los casos sin lean mundano → "—".
+    values: (c) => {
+      if (!c.mundanoType) return ["—"];
+      const pk = prosaicKey(c.mundanoType, c.misidSubtype);
+      if (!OBJECT_DETAILS[pk]) return ["—"];
+      return [objectDetailDef(pk, c.objectDetail)?.label ?? DETAIL_UNSPECIFIED.label];
+    },
   },
 ];
 

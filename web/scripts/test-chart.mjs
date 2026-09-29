@@ -9,13 +9,15 @@
  *   node scripts/test-chart.mjs   # requiere out/ (correr tras el build)
  *
  * Verifica:
- *  - El donut tiene exactamente 10 segmentos (6 clases prosaicas + humana +
- *    adversaria + no-humano consolidado + Indeterminado).
- *  - Lo prosaico se nombra por el objeto: las 6 clases prosaicas se renderizan y
- *    no queda ninguna categoría «Misidentificación» en /probabilidades.
+ *  - El donut tiene un segmento por narrativa modal presente en los INCIDENTES
+ *    (clases prosaicas + humana + adversaria + no-humano consolidado +
+ *    Indeterminado), derivado de data/cases.json — no hardcodeado.
+ *  - Lo prosaico se nombra por el objeto: las clases prosaicas presentes se
+ *    renderizan y no queda ninguna categoría «Misidentificación».
  *  - Los arcos (stroke-dasharray) suman la circunferencia → la partición = 100%.
  *  - Los offsets son monótonos y no se solapan.
- *  - El centro del donut muestra el total de casos.
+ *  - El centro del donut muestra el total de INCIDENTES (los documentos no
+ *    entran en el agregado: son evidencia, no sucesos).
  *  - No se filtran fórmulas en español a la vista renderizada.
  *  - No reaparece el hover rojo (group-hover:text-accent) en la leyenda.
  */
@@ -65,6 +67,42 @@ const fail = (msg) => {
 };
 const approx = (a, b, tol) => Math.abs(a - b) <= tol;
 
+// --- Lo esperado, derivado del corpus (nada hardcodeado) ------------------
+// Réplica mínima de lib/meceModel (corpusPosteriors + modalHypothesis con
+// consolidateNonHuman + keepIndet): solo incidentes; cada uno cae en el argmax
+// de {clase prosaica, humana, adversaria, no-humano, indet}, con empate a favor
+// del primero en ese orden (el sort estable de expandedHypotheses).
+const PROSAIC_ORDER = ["astronomico", "aeronave", "espacial", "luces_tierra", "terrestre_otros", "natural", "fraude"];
+const prosaicKey = (c) =>
+  c.mundanoType === "natural" || c.mundanoType === "fraude" ? c.mundanoType : c.misidSubtype ?? "terrestre_otros";
+let incidents = null;
+let expectedModal = null; // Map key → nº de incidentes
+try {
+  const raw = JSON.parse(readFileSync(CASES_JSON, "utf8"));
+  const list = Array.isArray(raw) ? raw : Array.isArray(raw?.cases) ? raw.cases : null;
+  if (list) {
+    incidents = list.filter((c) => c.category !== "document");
+    expectedModal = new Map();
+    for (const c of incidents) {
+      const p = c.posterior;
+      if (!p) continue; // sin posterior = seed (M1 lo impide); no se replica aquí
+      const tot = Object.values(p).reduce((a, b) => a + b, 0) || 1;
+      const cand = [
+        [prosaicKey(c), p.mundano_natural / tot],
+        ["humana_clasificada", p.humana_clasificada / tot],
+        ["adversaria", p.adversaria / tot],
+        ["nohumano", (p.nohumano_encubierto + p.nohumano_abierto) / tot],
+        ["indet", p.indet / tot],
+      ].filter(([, v]) => v > 0.001);
+      let best = cand[0];
+      for (const x of cand) if (x[1] > best[1]) best = x;
+      expectedModal.set(best[0], (expectedModal.get(best[0]) ?? 0) + 1);
+    }
+  }
+} catch {
+  /* cases.json es artefacto de build; si falta, caemos a los checks laxos */
+}
+
 // --- Parse de los segmentos del donut (marcados con data-segment) ---------
 // data-segment distingue los arcos de hipótesis del anillo de fondo y del halo.
 const circleRe = /<circle\b[^>]*\bdata-segment\b[^>]*>/g;
@@ -77,15 +115,18 @@ const num = (tag, attr) => {
 
 console.log("Donut /probabilidades");
 
-// 1) Nº de segmentos = 10: lo prosaico abierto en sus 6 clases concretas
-//    (objeto astronómico, aeronave o globo, cohete/satélite/reentrada, objeto
-//    convencional no precisado, fenómeno natural, posible fraude) + tecnología
-//    humana + adversaria + no-humano (consolidado) + Indeterminado (casos-
-//    documento sin lean e incidentes inconclusos), para que el donut marque el
-//    TOTAL del corpus. Antes eran 7, con «Misidentificación» como una sola
-//    porción: nombraba el error del testigo, no el objeto (sep 2026).
-if (circles.length === 10) ok(`10 segmentos en el donut (6 clases prosaicas + 4 narrativas)`);
-else fail(`esperaba 10 segmentos (6 clases prosaicas + 4 narrativas), encontré ${circles.length}`);
+// 1) Nº de segmentos = nº de narrativas modales presentes en los incidentes: lo
+//    prosaico abierto en sus clases de objeto + fenómeno natural + posible
+//    fraude, más tecnología humana + adversaria + no-humano (consolidado) +
+//    Indeterminado (incidentes inconclusos). Derivado del corpus porque las
+//    clases cambian con la taxonomía (sep 2026: entra «Luces en tierra», sale de
+//    forma transitoria «Objeto convencional no precisado»).
+if (expectedModal) {
+  const n = expectedModal.size;
+  if (circles.length === n) ok(`${n} segmentos en el donut (uno por narrativa modal presente)`);
+  else fail(`esperaba ${n} segmentos (${[...expectedModal.keys()].join(", ")}), encontré ${circles.length}`);
+} else if (circles.length >= 4) ok(`${circles.length} segmentos en el donut (no se pudo derivar del corpus)`);
+else fail(`muy pocos segmentos en el donut: ${circles.length}`);
 
 if (circles.length > 0) {
   const r = parseFloat(num(circles[0], "r"));
@@ -108,29 +149,15 @@ if (circles.length > 0) {
   else fail(`offsets no monótonos / con solape: ${offs.map((o) => o.toFixed(1)).join(", ")}`);
 }
 
-// 4) El centro del donut marca el TOTAL del corpus.
+// 4) El centro del donut marca el TOTAL de INCIDENTES.
 //    El total NO se hardcodea (anti-pattern del repo): se deriva del corpus
-//    generado (data/cases.json) para que el test no se rompa al crecer el corpus.
-//    El donut reparte el corpus completo: incidentes por hipótesis + una porción
-//    para los casos-documento, de modo que el centro marca cases.length menos los
-//    documentos ya enlazados a sus casos (esos son evidencia, no ítems del donut).
-//    La clasificación POR HIPÓTESIS sigue siendo solo sobre incidentes (canon
-//    CLAUDE.md / sonda E24); los documentos son una porción neutra, no una hipótesis.
-let expectedN = null;
-try {
-  const raw = JSON.parse(readFileSync(join(__dirname, "..", "data", "cases.json"), "utf8"));
-  const list = Array.isArray(raw) ? raw : Array.isArray(raw?.cases) ? raw.cases : null;
-  // Los documentos enlazados a sus casos (`relatedCases`) son evidencia, no
-  // ítems con reparto propio: salen del donut (lib/meceModel documentPosteriors).
-  expectedN = list
-    ? list.filter((c) => !(c.category === "document" && c.relatedCases?.length)).length
-    : null;
-} catch {
-  /* cases.json es artefacto de build; si falta, caemos al check laxo abajo */
-}
+//    generado (data/cases.json). Solo cuentan los casos no-documento: los
+//    documentos son evidencia, no sucesos, y no entran en ningún agregado
+//    (lib/meceModel corpusPosteriors; sonda E24).
+const expectedN = incidents ? incidents.length : null;
 if (expectedN != null) {
-  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro marca el total del corpus derivado (${expectedN})`);
-  else fail(`el centro no marca el total del corpus (${expectedN})`);
+  if (new RegExp(`>\\s*${expectedN}\\s*<`).test(html)) ok(`el centro marca el total de incidentes derivado (${expectedN})`);
+  else fail(`el centro no marca el total de incidentes (${expectedN})`);
 } else if (/>\s*\d{2,4}\s*</.test(html)) {
   ok(`el centro muestra un total numérico (no se pudo derivar del corpus)`);
 } else {
@@ -143,18 +170,26 @@ const leaked = leaks.filter((s) => html.includes(s));
 if (leaked.length === 0) ok(`sin fórmulas en español filtradas`);
 else fail(`fórmulas filtradas en el HTML: ${leaked.join(", ")}`);
 
-// 5b) Lo prosaico se nombra por el OBJETO: las seis clases se renderizan (ES y
-//     EN) y no vuelve la categoría «Misidentificación» (ni en la raíz inglesa ni
-//     en el espejo /es). /probabilidades no lleva prosa de casos, así que
-//     cualquier aparición es una etiqueta de UI.
+// 5b) Lo prosaico se nombra por el OBJETO: las clases prosaicas presentes se
+//     renderizan (ES y EN) y no vuelve la categoría «Misidentificación» (ni en
+//     la raíz inglesa ni en el espejo /es). /probabilidades no lleva prosa de
+//     casos, así que cualquier aparición es una etiqueta de UI. Las etiquetas se
+//     leen de lib/meceClasses.ts (fuente única), no se duplican aquí.
+const MECE_SRC = readFileSync(join(__dirname, "..", "lib", "meceClasses.ts"), "utf8");
+const LABELS = new Map(
+  [...MECE_SRC.matchAll(/\{ key: "(\w+)", label: "([^"]+)", labelEn: "([^"]+)"/g)]
+    .filter((m) => PROSAIC_ORDER.includes(m[1]))
+    .map((m) => [m[1], { es: m[2], en: m[3] }]),
+);
+const presentProsaic = PROSAIC_ORDER.filter((k) => expectedModal ? expectedModal.has(k) : LABELS.has(k));
 const PROSAIC_LABELS = {
-  "probabilidades/index.html": ["Astronomical object", "Aircraft or balloon", "Rocket, satellite or reentry", "Conventional object, not pinned down", "Natural phenomenon", "Possible hoax"],
-  "es/probabilidades/index.html": ["Objeto astronómico", "Aeronave o globo", "Cohete, satélite o reentrada", "Objeto convencional no precisado", "Fenómeno natural", "Posible fraude"],
+  "probabilidades/index.html": presentProsaic.map((k) => LABELS.get(k)?.en ?? k),
+  "es/probabilidades/index.html": presentProsaic.map((k) => LABELS.get(k)?.es ?? k),
 };
 for (const [rel, labels] of Object.entries(PROSAIC_LABELS)) {
   const page = readFileSync(join(__dirname, "..", "out", rel), "utf8");
   const missing = labels.filter((l) => !page.includes(l));
-  if (missing.length === 0) ok(`${rel}: las 6 clases prosaicas se renderizan`);
+  if (missing.length === 0) ok(`${rel}: las ${labels.length} clases prosaicas presentes se renderizan`);
   else fail(`${rel}: faltan clases prosaicas: ${missing.join(", ")}`);
   if (!/misidentifica/i.test(page)) ok(`${rel}: sin categoría «Misidentificación»`);
   else fail(`${rel}: reapareció «Misidentificación/Misidentification»`);

@@ -50,13 +50,14 @@
  *       bloquear el egress de iCloud Private Relay, /visitantes fuera del
  *       conteo de pageviews, y migraciones 0005/0006 presentes como registro
  *       reproducible de lo aplicado en Supabase.
- *   E24 (ERROR) Coherencia entre las dos vistas del modelo: ambas sobre el
- *       CORPUS COMPLETO (incidentes por su objeto + documentos por el lean de su
- *       contenido), conservando «Indeterminado». /calidad = valor esperado
- *       (fraccional); home + /probabilidades + /cases = conteo modal navegable
- *       (argmax, entero). Cada vista rotula su método, la home remite a /calidad,
- *       y las vistas navegables clasifican el corpus completo (documentPosteriors)
- *       con keepIndet — si dejan de hacerlo, reaparece la inconsistencia original.
+ *   E24 (ERROR) Coherencia entre las dos vistas del modelo: ambas sobre los
+ *       INCIDENTES (corpusPosteriors; los documentos son evidencia, no sucesos, y
+ *       no entran en ningún agregado — decisión del dueño, sep 2026), conservando
+ *       «Indeterminado». /calidad = valor esperado (fraccional); home +
+ *       /probabilidades + /cases = conteo modal navegable (argmax, entero). Cada
+ *       vista rotula su método, la home remite a /calidad, y las cuatro usan
+ *       corpusPosteriors con keepIndet — si una vuelve a sumar documentos, los
+ *       denominadores divergen.
  *   E28 (WARN) Frescura de la línea base de link rot: data/link-health-baseline.json
  *       existe, es parseable y no está rancia. Esta auditoría no tiene red —
  *       quien verifica las fuentes es check-links.mjs --baseline en el cron
@@ -1101,18 +1102,20 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
 
 // ─── 9o. RULE E24: coherencia entre las dos vistas del modelo (ERROR) ──────
 //
-// El corpus se presenta con DOS estimadores del MISMO conjunto (los STATS.cases
-// casos: incidentes por su objeto + documentos por el lean de su contenido), y si
-// no declaran su método se leen como contradictorios (jul 2026, reportado por el
-// usuario). Ambas vistas clasifican el corpus COMPLETO y conservan «Indeterminado»
-// como narrativa propia (no como un tipo de caso aparte):
+// El corpus se presenta con DOS estimadores del MISMO conjunto (los INCIDENTES;
+// los casos-documento son evidencia, no sucesos, y quedan fuera de todo agregado
+// desde sep 2026), y si no declaran su método se leen como contradictorios (jul
+// 2026, reportado por el usuario). Ambas vistas conservan «Indeterminado» como
+// narrativa propia (no como un tipo de caso aparte):
 //   · vista COMPARABLE (valor esperado Eⱼ=ΣP, fraccional): app/calidad/page.tsx.
 //   · conteo MODAL navegable (argmax, entero, listable en /cases):
 //     components/HypothesesSnapshot.tsx + /probabilidades + /cases.
-// Esta sonda evita la regresión: (a) /calidad agrega sobre el corpus completo
-// (incluye documentPosteriors) y rotula su método; (b) la home se rotula argmax y
-// remite a /calidad; (c) las vistas navegables clasifican el corpus completo con
-// keepIndet (documentos incluidos, «Indeterminado» conservado). Estructural (grep).
+// Esta sonda evita la regresión: (a) /calidad agrega sobre los incidentes
+// (corpusPosteriors, sin documentos) y rotula su método; (b) la home se rotula
+// argmax y remite a /calidad; (c) las vistas navegables usan el mismo conjunto
+// con keepIndet. Estructural (grep): se exige `corpusPosteriors` y se prohíbe
+// cualquier resto del viejo `documentPosteriors` o un filtro por documento que
+// los vuelva a meter en el agregado.
 {
   const calidadPath = path.join(root, "app", "calidad", "page.tsx");
   const snapshotPath = path.join(root, "components", "HypothesesSnapshot.tsx");
@@ -1122,10 +1125,10 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   const snapshot = fs.existsSync(snapshotPath) ? fs.readFileSync(snapshotPath, "utf-8") : "";
   const prob = fs.existsSync(probPath) ? fs.readFileSync(probPath, "utf-8") : "";
   const casesSrc = fs.existsSync(casesPath) ? fs.readFileSync(casesPath, "utf-8") : "";
-  // (a) /calidad agrega sobre el corpus COMPLETO (incluye documentos por su lean),
-  //     mismo conjunto que las vistas navegables.
-  if (calidad && !/documentPosteriors/.test(calidad)) {
-    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad no incluye documentPosteriors — debe sumar sobre el corpus completo (incidentes + documentos por su lean), mismo conjunto que la home y /probabilidades, o los denominadores divergen. Ver CLAUDE.md · modelo MECE.");
+  // (a) /calidad agrega sobre los INCIDENTES (corpusPosteriors), mismo conjunto
+  //     que las vistas navegables; los documentos no entran.
+  if (calidad && (!/corpusPosteriors/.test(calidad) || /documentPosteriors/.test(calidad))) {
+    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad debe sumar solo los incidentes (corpusPosteriors, sin documentPosteriors) — mismo conjunto que la home, /probabilidades y /cases, o los denominadores divergen. Ver CLAUDE.md · modelo MECE.");
   }
   // (a bis) /calidad declara su método (valor esperado).
   if (calidad && !/[Vv]alor esperado|Expected value/.test(calidad)) {
@@ -1138,12 +1141,12 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   if (snapshot && !/\/calidad/.test(snapshot)) {
     record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado). El puente entre ambas vistas evita que se lean como contradictorias.");
   }
-  // (c) las vistas NAVEGABLES clasifican el corpus completo (documentPosteriors)
-  //     conservando «Indeterminado» (keepIndet). Si dejan de incluir los documentos
-  //     o de conservar el indeterminado, reaparece la inconsistencia que motivó E24.
+  // (c) las vistas NAVEGABLES clasifican los incidentes (corpusPosteriors, sin
+  //     documentos) conservando «Indeterminado» (keepIndet). Si una vuelve a sumar
+  //     documentos o deja de conservar el indeterminado, los denominadores divergen.
   for (const [src, p, name] of [[snapshot, snapshotPath, "HypothesesSnapshot"], [prob, probPath, "/probabilidades"], [casesSrc, casesPath, "/cases"]]) {
-    if (src && !/documentPosteriors/.test(src)) {
-      record("ERROR", p, 0, `E24 modelo: ${name} no clasifica el corpus completo (falta documentPosteriors) — la vista navegable debe cubrir incidentes + documentos, igual que /calidad, o el denominador diverge.`);
+    if (src && (!/corpusPosteriors/.test(src) || /documentPosteriors/.test(src))) {
+      record("ERROR", p, 0, `E24 modelo: ${name} debe clasificar solo los incidentes (corpusPosteriors, sin documentPosteriors) — igual que /calidad; los documentos son evidencia, no sucesos, o el denominador diverge.`);
     }
     if (src && !/keepIndet/.test(src)) {
       record("ERROR", p, 0, `E24 modelo: ${name} no conserva «Indeterminado» (falta keepIndet) — sin él la masa indeterminada se reparte a la fuerza y los documentos sin lean caen en una hipótesis equivocada. Debe usar keepIndet para que «Indeterminado» sea una narrativa navegable.`);

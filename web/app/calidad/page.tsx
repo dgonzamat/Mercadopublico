@@ -1,7 +1,7 @@
 import { cases } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
-import { MECE_CLASSES, corpusPosteriors, documentPosteriors } from "@/lib/meceModel";
+import { MECE_CLASSES, corpusPosteriors } from "@/lib/meceModel";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import Link from "next/link";
@@ -81,13 +81,11 @@ export default function CalidadPage() {
     .filter((x) => x.n > 0)
     .sort((a, b) => b.n - a.n);
 
-  // MECE agregado (Eⱼ = Σ P(narrativaⱼ | casoᵢ)) sobre el CORPUS COMPLETO: los
-  // incidentes por su objeto y los casos-documento por la inclinación de su
-  // contenido (documentPosteriors siembra «indeterminable» a los que no traen
-  // lean). Conserva «Indeterminable»: es la vista comparable (valor esperado),
-  // hermana del conteo modal navegable de la home/probabilidades. Mismo conjunto
-  // (STATS.cases) que las demás vistas.
-  const meceScored = [...corpusPosteriors(), ...documentPosteriors()];
+  // MECE agregado (Eⱼ = Σ P(narrativaⱼ | casoᵢ)) sobre los INCIDENTES: los
+  // casos-documento no entran (son evidencia, no sucesos). Conserva
+  // «Indeterminable»: es la vista comparable (valor esperado), hermana del conteo
+  // modal navegable de la home/probabilidades. Mismo conjunto que esas vistas.
+  const meceScored = corpusPosteriors();
   const meceN = meceScored.length;
   const agg: Record<string, number> = {};
   MECE_CLASSES.forEach((m) => {
@@ -285,8 +283,8 @@ export default function CalidadPage() {
         </div>
         <p className="text-sm text-muted">
           <T
-            es={`Valor esperado (Eⱼ = Σ P) sobre los ${meceN} casos del corpus —incidentes por su objeto, casos-documento por el lean de su contenido—. Conserva «Indeterminable» de forma fraccional: es la vista comparable del modelo. El conteo modal navegable (cada caso en una narrativa, «Indeterminado» incluido) vive en /probabilidades y en la home. Comparable, no una frecuencia calibrada.`}
-            en={`Expected value (Eⱼ = Σ P) over the corpus's ${meceN} cases —incidents by their object, document cases by their content's lean—. It keeps 'Indeterminable' fractionally: this is the model's comparable view. The navigable modal count (each case in one narrative, 'Indeterminate' included) lives on /probabilidades and the home. Comparable, not a calibrated frequency.`}
+            es={`Valor esperado (Eⱼ = Σ P) sobre los ${meceN} incidentes del corpus, por la naturaleza del objeto; los casos-documento no entran porque son evidencia, no sucesos. Conserva «Indeterminable» de forma fraccional: es la vista comparable del modelo. El conteo modal navegable (cada incidente en una narrativa, «Indeterminado» incluido) vive en /probabilidades y en la home. Comparable, no una frecuencia calibrada.`}
+            en={`Expected value (Eⱼ = Σ P) over the corpus's ${meceN} incidents, by the nature of the object; document cases are left out because they are evidence, not events. It keeps 'Indeterminable' fractionally: this is the model's comparable view. The navigable modal count (each incident in one narrative, 'Indeterminate' included) lives on /probabilidades and the home. Comparable, not a calibrated frequency.`}
           />
         </p>
       </section>

@@ -8,6 +8,7 @@ import {
   PROSAIC_CLASSES,
   type ScoredCase,
 } from "@/lib/meceModel";
+import { objectDetailDef, prosaicKey } from "@/lib/meceClasses";
 import type { MisidSubtype } from "@/lib/types";
 import type { Posterior } from "@/lib/types";
 
@@ -66,8 +67,8 @@ export function MecePartition({
   totalLabelEs?: string;
   totalLabelEn?: string;
   /** Conserva «Indeterminado» como narrativa navegable propia (no reparte su
-   *  masa a la fuerza). Con el corpus completo esto deja que el centro marque el
-   *  total y que los documentos sin lean caigan en una categoría con sentido. */
+   *  masa a la fuerza): el centro marca el total de incidentes y los inconclusos
+   *  caen en una categoría con sentido. */
   keepIndet?: boolean;
   /** Vistas derivadas (solo aplican a la partición de incidentes). */
   showDerived?: boolean;
@@ -92,7 +93,7 @@ export function MecePartition({
 
   // Vistas derivadas, también por hipótesis modal para no chocar con el gráfico.
   const modalKeys = scored.map((c) => modalHypothesis(c, { consolidateNonHuman, keepIndet }).key);
-  // Las seis clases prosaicas de primer nivel (cuatro de objeto + natural + fraude).
+  // Las clases prosaicas de primer nivel (las de objeto + natural + fraude).
   const PROSAIC = new Set<string>(PROSAIC_CLASSES.map((c) => c.key));
   const NONHUMAN = new Set(["nohumano", "nohumano_encubierto", "nohumano_abierto"]);
   // El eje macro prosaico-vs-anómalo solo tiene sentido sobre los casos
@@ -100,7 +101,7 @@ export function MecePartition({
   // excluye del denominador (si no, se contaría como anómalo/secreto, que es falso).
   const indetCount = modalKeys.filter((k) => k === "indet").length;
   const classifiable = N - indetCount;
-  const prosaico = modalKeys.filter((k) => PROSAIC.has(k)).length; // objeto convencional (4 clases) + natural + fraude
+  const prosaico = modalKeys.filter((k) => PROSAIC.has(k)).length; // clases de objeto + natural + fraude
   const anomalo = classifiable - prosaico;
   const enh = modalKeys.filter((k) => NONHUMAN.has(k)).length;
   const derivedBase = classifiable || 1;
@@ -164,19 +165,28 @@ export function MecePartition({
 
 /** Posterior de un caso: barra apilada al 100% + hipótesis modal (clasificación
  *  forzada; mundano/natural abierto en su clase prosaica concreta — el objeto,
- *  vía `misidSubtype`, o fenómeno natural / posible fraude). */
+ *  vía `misidSubtype`, o fenómeno natural / posible fraude). Si el caso trae
+ *  `objectDetail` (segundo nivel), se muestra junto a su clase. */
 export function CasePosterior({
   posterior,
   mundanoType,
   misidSubtype,
+  objectDetail,
   locale,
 }: {
   posterior: Posterior;
   mundanoType?: ScoredCase["mundanoType"];
   misidSubtype?: MisidSubtype;
+  objectDetail?: string;
   locale: "es" | "en";
 }) {
   const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }]);
+  const pk = prosaicKey(mundanoType, misidSubtype);
+  const detail = objectDetailDef(pk, objectDetail);
+  const withDetail = (r: { key: string; label: string; labelEn: string }) =>
+    detail && r.key === pk
+      ? { es: `${r.label} · ${detail.label}`, en: `${r.labelEn} · ${detail.labelEn}` }
+      : { es: r.label, en: r.labelEn };
   const m = rows[0];
   // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los
   // enteros impresos tienen que sumarlo — redondear cada fila por separado daba
@@ -194,7 +204,7 @@ export function CasePosterior({
           <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px]">
             <span className="flex items-center gap-1.5 text-text">
               <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: r.color }} />
-              <T es={r.label} en={r.labelEn} locale={locale} />
+              <T es={withDetail(r).es} en={withDetail(r).en} locale={locale} />
             </span>
             <span className="text-muted">{partes[i]}%</span>
           </div>
@@ -203,7 +213,7 @@ export function CasePosterior({
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
         <T es="Hipótesis modal" en="Modal hypothesis" locale={locale} />:{" "}
         <span style={{ color: m.color }} className="font-semibold">
-          <T es={m.label} en={m.labelEn} locale={locale} />
+          <T es={withDetail(m).es} en={withDetail(m).en} locale={locale} />
         </span>{" "}
         {partes[0]}% · <T es="suma 100%" en="sums to 100%" locale={locale} />
       </p>

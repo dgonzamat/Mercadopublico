@@ -3,7 +3,6 @@ import { CaseRow } from "@/components/CaseRow";
 import { CasesFilter, type HypKey } from "@/components/CasesFilter";
 import {
   corpusPosteriors,
-  documentPosteriors,
   modalHypothesis,
 } from "@/lib/meceModel";
 import { regionOf, type Region } from "@/lib/regions";
@@ -108,11 +107,13 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
   }
 
   // Narrativa modal por caso (misma lógica que /probabilidades y el donut de la
-  // home): el CORPUS COMPLETO —incidentes por su objeto, casos-documento por el
-  // lean de su contenido— conservando «Indeterminado» (keepIndet) para lo que no
-  // se puede decidir. Denominador unificado en STATS.cases con las demás vistas.
+  // home): solo los INCIDENTES, conservando «Indeterminado» (keepIndet) para lo
+  // que no se puede decidir. Los casos-documento se listan pero no cuentan en
+  // ninguna hipótesis (son evidencia, no sucesos): llevan data-hyp="documento",
+  // que ninguna opción del filtro selecciona, así que solo aparecen con
+  // «Explicación · todas».
   const modalById = new Map<string, HypKey>();
-  for (const s of [...corpusPosteriors(), ...documentPosteriors()]) {
+  for (const s of corpusPosteriors()) {
     modalById.set(
       s.id,
       modalHypothesis(s, { consolidateNonHuman: true, keepIndet: true }).key as HypKey,
@@ -245,7 +246,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
                     <div
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
-                      data-hyp={modalById.get(c.id) ?? "indet"}
+                      data-hyp={modalById.get(c.id) ?? "documento"}
                       data-era={String(era.start)}
                       data-tier={c.tier}
                       // Clave del buscador de la barra de filtros, normalizada

@@ -30,6 +30,7 @@ export type HypKey =
   | "astronomico"
   | "aeronave"
   | "espacial"
+  | "luces_tierra"
   | "terrestre_otros"
   | "natural"
   | "fraude"
@@ -43,8 +44,9 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   // testigo. Etiquetas = PROSAIC_CLASSES de lib/meceClasses (no se importa aquí
   // para mantener este componente cliente libre de lib de modelo).
   { key: "astronomico", es: "Objeto astronómico", en: "Astronomical object" },
-  { key: "aeronave", es: "Aeronave o globo", en: "Aircraft or balloon" },
-  { key: "espacial", es: "Cohete, satélite o reentrada", en: "Rocket, satellite or reentry" },
+  { key: "aeronave", es: "Aeronave", en: "Aircraft" },
+  { key: "espacial", es: "Objeto espacial", en: "Space object" },
+  { key: "luces_tierra", es: "Luces en tierra", en: "Ground lights" },
   { key: "terrestre_otros", es: "Objeto convencional no precisado", en: "Conventional object, not pinned down" },
   { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
   { key: "fraude", es: "Posible fraude", en: "Possible hoax" },
@@ -57,14 +59,14 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
 const HYP_KEYS = new Set<string>(HYP_ORDER.map((h) => h.key));
 
 /** Alias LEGADO de deep-link: `#misid` era la hipótesis «Misidentificación»,
- *  hoy abierta en las cuatro clases de objeto. Un enlace viejo filtra la UNIÓN
- *  de las cuatro (regla `[data-hyp-filter="misid"]` en globals.css), así sigue
+ *  hoy abierta en las clases de objeto. Un enlace viejo filtra la UNIÓN de
+ *  todas ellas (regla `[data-hyp-filter="misid"]` en globals.css), así sigue
  *  mostrando los mismos casos. No aparece como opción del select salvo cuando
  *  llega por un enlace viejo, para que el control refleje el filtro activo. */
 const LEGACY_MISID = "misid";
-const LEGACY_MISID_LABEL = { es: "Objeto convencional · 4 clases", en: "Conventional object · 4 classes" };
+const LEGACY_MISID_LABEL = { es: "Objeto convencional · todas las clases", en: "Conventional object · all classes" };
 type HypFilter = HypKey | typeof LEGACY_MISID;
-const MISID_OBJECT_KEYS: ReadonlyArray<HypKey> = ["astronomico", "aeronave", "espacial", "terrestre_otros"];
+const MISID_OBJECT_KEYS: ReadonlyArray<HypKey> = ["astronomico", "aeronave", "espacial", "luces_tierra", "terrestre_otros"];
 
 export type FacetOption = { key: string; es: string; en: string; count: number };
 
@@ -94,7 +96,7 @@ export function CasesFilter({
   const rootRef = useRef<HTMLDivElement>(null);
 
   // Deep-link por hash (#nohumano, #aeronave…) — al montar y en cada hashchange.
-  // `#misid` (legado) filtra la unión de las cuatro clases de objeto.
+  // `#misid` (legado) filtra la unión de las clases de objeto.
   useEffect(() => {
     const sync = () => {
       const h = window.location.hash.replace(/^#/, "");
