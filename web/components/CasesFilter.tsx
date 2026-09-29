@@ -38,6 +38,7 @@ export type HypKey =
   | "instrumento"
   | "psicosocial"
   | "sin_propuesta"
+  | "folclore"
   | "humana_clasificada"
   | "adversaria"
   | "nohumano"
@@ -58,6 +59,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "instrumento", es: "Fallo de instrumento", en: "Instrument artifact" },
   { key: "psicosocial", es: "Causa psicológica, médica o social", en: "Psychological, medical or social cause" },
   { key: "sin_propuesta", es: "Sin explicación propuesta", en: "No explanation proposed" },
+  { key: "folclore", es: "Relato folclórico o literario", en: "Folklore or literary account" },
   { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
   { key: "adversaria", es: "Tecnología adversaria", en: "Adversary tech" },
   { key: "nohumano", es: "No-humano", en: "Non-human" },

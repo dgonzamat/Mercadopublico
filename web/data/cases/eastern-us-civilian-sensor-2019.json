@@ -19,7 +19,13 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 42,
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa: la ficha oficial DOW-UAP-PR112 cita el debrief D090 ('pequeño', 'en línea recta en dirección opuesta a alta velocidad') sin evaluarlo, y no se halló análisis publicado; la lectura de tráfico cruzado de la ficha es propia, no de una fuente. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes a cause: the official DOW-UAP-PR112 record quotes debrief D090 ('small', 'travelling in a straight line [in the] opposite direction at high speed') without assessing it, and no published analysis was found; the entry's crossing-traffic reading is its own, not a source's. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "DVIDS, DOW-UAP-PR112 con el debrief D090 (PURSUE Release 04) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  },
   "posterior": {
     "mundano_natural": 0.42,
     "humana_clasificada": 0.12,

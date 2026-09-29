@@ -14,6 +14,7 @@ Level 1 (field `mundanoType` + `misidSubtype`):
 - fraude — Posible fraude
 - instrumento — Fallo de instrumento (the anomaly came from the equipment: film, sensor, radar, a failure)
 - sin_propuesta — Sin explicación propuesta (no source proposes a cause; the prosaic share is kept on the base rate of similar resolved cases — owner decision 29 Sep 2026; no detail)
+- folclore — Relato folclórico o literario (legends and period tales with no verifiable witness, read by scholars as a story that circulated; no detail)
 - psicosocial — Causa psicológica, médica o social (collective contagion, suggestion, sleep paralysis, a medical/neurological condition)
 
 Level 2 (field `objectDetail`, optional; allowed values in web/lib/meceClasses.ts OBJECT_DETAILS):

@@ -69,6 +69,10 @@ const BLURB: Record<string, { es: string; en: string }> = {
     es: "Sin explicación propuesta: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario. La parte prosaica se conserva por esa tasa base, no porque alguien la haya identificado; la ficha dice qué fuentes se revisaron.",
     en: "No explanation proposed: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary. The prosaic share is kept on that base rate, not because anyone identified it; the entry says which sources were checked.",
   },
+  folclore: {
+    es: "Relato folclórico o literario: leyendas y relatos de época sin testigo verificable. La lectura prosaica es que se trata de una historia que circuló y se reescribió, no de un objeto mal identificado ni de un engaño deliberado; la ficha dice qué estudioso lo lee así.",
+    en: "Folklore or literary account: legends and period tales with no verifiable witness. The prosaic reading is that it is a story that circulated and was rewritten, not a misidentified object nor a deliberate hoax; the entry says which scholar reads it that way.",
+  },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
     en: "A secret own or allied program (cover-up is intrinsic). Former 'classified programs' hypothesis.",
