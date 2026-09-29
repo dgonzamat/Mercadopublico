@@ -13,7 +13,7 @@ Level 1 (field `mundanoType` + `misidSubtype`):
 - natural — Fenómeno natural
 - fraude — Posible fraude
 - instrumento — Fallo de instrumento (the anomaly came from the equipment: film, sensor, radar, a failure)
-- psicosocial — Causa psicológica o social (collective contagion, suggestion, sleep paralysis)
+- psicosocial — Causa psicológica, médica o social (collective contagion, suggestion, sleep paralysis, a medical/neurological condition)
 
 Level 2 (field `objectDetail`, optional; allowed values in web/lib/meceClasses.ts OBJECT_DETAILS):
 - astronomico: planeta_estrella | meteoro | luna
@@ -23,7 +23,7 @@ Level 2 (field `objectDetail`, optional; allowed values in web/lib/meceClasses.t
 - animal: ave | insecto
 - natural: atmosferico (ball lightning, clouds, plasma) | optico (mirage, refraction, anomalous radar propagation from a temperature inversion — the radar worked, the air bent the beam)
 - instrumento: pelicula_foto | sensor_radar (artifacts made by the equipment itself: internal radar fault, second-time-around echo, interference, IR glare — not AP) | falla_equipo
-- psicosocial: contagio_colectivo | sugestion | paralisis_sueno
+- psicosocial: contagio_colectivo | sugestion | paralisis_sueno | medica
 - fraude: no detail
 
 ## For each assigned case

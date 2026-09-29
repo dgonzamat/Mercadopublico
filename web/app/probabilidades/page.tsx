@@ -62,8 +62,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "Instrument artifact: the anomaly came from the equipment, not the sky — a film or processing defect, a sensor artifact, a false radar echo or a failure that was blamed on the object.",
   },
   psicosocial: {
-    es: "Causa psicológica o social: contagio colectivo, sugestión o parálisis del sueño. Los testigos no mienten; lo que relatan se explica por cómo se percibe y se recuerda en grupo o en estados alterados.",
-    en: "Psychological or social cause: collective contagion, suggestion or sleep paralysis. Witnesses are not lying; what they report is explained by how people perceive and remember in groups or altered states.",
+    es: "Causa psicológica, médica o social: contagio colectivo, sugestión, parálisis del sueño o una condición médica (una crisis epiléptica, por ejemplo). Los testigos no mienten; lo que relatan se explica por cómo se percibe y se recuerda en grupo, en estados alterados o por una causa médica.",
+    en: "Psychological, medical or social cause: collective contagion, suggestion, sleep paralysis or a medical condition (an epileptic seizure, for instance). Witnesses are not lying; what they report is explained by how people perceive and remember in groups, in altered states or through a medical cause.",
   },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
@@ -131,8 +131,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
       </H1>
       <Lede>
         <T
-          es={`Los ${incidents} incidentes del corpus se clasifican, cada uno, en una narrativa según la naturaleza del objeto. Lo prosaico se nombra por lo que era —objeto astronómico, aeronave, objeto espacial, algo en tierra, un animal—, más fenómeno natural, fallo de instrumento, causa psicológica o social y posible fraude; «no-humano» agrupa encubierto + abierto. Los incidentes inconclusos caen en «Indeterminado». Los ${docCount} casos-documento del archivo no entran: son evidencia de los sucesos, no sucesos. Sumadas, las narrativas reparten los incidentes de forma comparable: se puede decir cuál da cuenta de más casos.`}
-          en={`The corpus's ${incidents} incidents are each classified into one narrative by the nature of the object. The prosaic is named by what it was —astronomical object, aircraft, space object, something on the ground, an animal—, plus natural phenomenon, instrument artifact, psychological or social cause and possible hoax; 'non-human' groups covert + open. Inconclusive incidents fall into 'Indeterminate'. The archive's ${docCount} document cases are left out: they are evidence of the events, not events. Summed, the narratives partition the incidents comparably: one can say which accounts for more cases.`}
+          es={`Los ${incidents} incidentes del corpus se clasifican, cada uno, en una narrativa según la naturaleza del objeto. Lo prosaico se nombra por lo que era —objeto astronómico, aeronave, objeto espacial, algo en tierra, un animal—, más fenómeno natural, fallo de instrumento, causa psicológica, médica o social y posible fraude; «no-humano» agrupa encubierto + abierto. Los incidentes inconclusos caen en «Indeterminado». Los ${docCount} casos-documento del archivo no entran: son evidencia de los sucesos, no sucesos. Sumadas, las narrativas reparten los incidentes de forma comparable: se puede decir cuál da cuenta de más casos.`}
+          en={`The corpus's ${incidents} incidents are each classified into one narrative by the nature of the object. The prosaic is named by what it was —astronomical object, aircraft, space object, something on the ground, an animal—, plus natural phenomenon, instrument artifact, psychological, medical or social cause and possible hoax; 'non-human' groups covert + open. Inconclusive incidents fall into 'Indeterminate'. The archive's ${docCount} document cases are left out: they are evidence of the events, not events. Summed, the narratives partition the incidents comparably: one can say which accounts for more cases.`}
           locale={locale}
         />
       </Lede>

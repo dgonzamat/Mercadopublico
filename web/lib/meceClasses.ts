@@ -111,7 +111,7 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
   { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
   { key: "instrumento", label: "Fallo de instrumento", labelEn: "Instrument artifact", color: "#8a7d3a" },
-  { key: "psicosocial", label: "Causa psicológica o social", labelEn: "Psychological or social cause", color: "#6a5f94" },
+  { key: "psicosocial", label: "Causa psicológica, médica o social", labelEn: "Psychological, medical or social cause", color: "#6a5f94" },
 ];
 
 /** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.
@@ -171,6 +171,7 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "contagio_colectivo", label: "Contagio colectivo", labelEn: "Collective contagion" },
     { key: "sugestion", label: "Sugestión", labelEn: "Suggestion" },
     { key: "paralisis_sueno", label: "Parálisis del sueño", labelEn: "Sleep paralysis" },
+    { key: "medica", label: "Causa médica o neurológica", labelEn: "Medical or neurological cause" },
   ],
 };
 
