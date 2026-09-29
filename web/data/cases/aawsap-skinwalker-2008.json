@@ -15,7 +15,7 @@
   },
   "tier": "A",
   "epistemicStatus": "documented",
-  "probability": 65,
+  "probability": 47,
   "summary": "Programa federal estadounidense del DoD (USD ~22M, 2008–2010), encargado por el Senador Harry Reid a la DIA y ejecutado por BAASS de Robert Bigelow desde el rancho Skinwalker en Utah. Produjo 38 Defense Intelligence Reference Documents (DIRDs) sobre física exótica y efectos biológicos. Es el primer programa federal post-Blue Book documentado con contratos, recibos y testimonios bajo declaración, y antecesor directo de AATIP (Elizondo) y de la corriente de divulgación que culmina en AARO y las audiencias congresionales 2023–2025. El caso integra además las tres campañas de medición instrumentada en el predio —NIDS (1996–2004), BAASS y el equipo televisado de Brandon Fugal— y sus resultados, de calidad evidencial mucho menor que el papeleo del programa.",
   "summary_en": "U.S. DoD federal program (~USD 22M, 2008–2010), requested by Senator Harry Reid, contracted to the DIA and executed by Robert Bigelow's BAASS from the Skinwalker Ranch in Utah. It produced 38 Defense Intelligence Reference Documents (DIRDs) on exotic physics and biological effects. The first formally documented U.S. federal program after Project Blue Book — with contracts, paid receipts and testimony under declaration — and the direct precursor to AATIP (Elizondo) and the disclosure wave that culminates in AARO and the 2023–2025 congressional hearings. The case also folds in the three instrumented-measurement campaigns at the property —NIDS (1996–2004), BAASS and Brandon Fugal's televised team— and their results, of far lower evidential quality than the program's paperwork.",
   "patterns": [
@@ -199,12 +199,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0,
+    "mundano_natural": 0.18,
     "humana_clasificada": 0.32,
     "adversaria": 0.03,
     "nohumano_encubierto": 0.2,
     "nohumano_abierto": 0.12,
-    "indet": 0.33
+    "indet": 0.15
   },
   "primaryDocument": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skinwalker_Ranch_(10393732103).jpg?width=800",
@@ -248,9 +248,10 @@
     }
   ],
   "classBasis": {
-    "es": "Ninguna fuente propone una explicación prosaica de los fenómenos del rancho. El informe histórico de AARO (2024) describe la investigación «paranormal» de AAWSAP en la propiedad de Utah sin identificar causa alguna; el preprint de 2025 que propone la «lente de plasma piezoeléctrico pulsado» no pudo consultarse (403) y es una hipótesis sin verificar sobre anomalías de instrumentos, no sobre los objetos.",
-    "en": "No source proposes a prosaic explanation of the ranch phenomena. AARO's historical report (2024) describes AAWSAP's 'paranormal' research at the Utah property without identifying any cause; the 2025 preprint proposing a 'pulsed piezo-plasma lens' could not be consulted (403) and is an unverified hypothesis about instrument anomalies, not about the objects.",
-    "source": "AARO — Report on the Historical Record of U.S. Government Involvement with UAP, Vol. 1 (2024), pp. 23 y 34",
-    "url": "https://en.wikisource.org/wiki/Index:AARO_Historical_Record_Report_Volume_1_2024.pdf"
-  }
+    "es": "Ninguna fuente propone una causa para los fenómenos del rancho: el informe histórico de AARO (2024) describe la investigación «paranormal» de AAWSAP en la propiedad de Utah sin identificar ninguna, y el preprint de 2025 sobre una «lente de plasma piezoeléctrico pulsado» no pudo consultarse y trata anomalías de instrumentos, no los objetos. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes a cause for the ranch phenomena: AARO's historical report (2024) describes AAWSAP's 'paranormal' research at the Utah property without identifying any, and the 2025 preprint on a 'pulsed piezo-plasma lens' could not be consulted and deals with instrument anomalies, not the objects. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "AARO — Historical Record Report, Vol. 1 (2024), pp. 23 y 34 · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  },
+  "mundanoType": "sin_propuesta"
 }

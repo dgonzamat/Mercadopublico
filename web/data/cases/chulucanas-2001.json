@@ -14,7 +14,7 @@
   },
   "tier": "A",
   "epistemicStatus": "documented",
-  "probability": 94,
+  "probability": 41,
   "summary": "Entre octubre y noviembre de 2001 se grabaron en video, en Chulucanas (Piura, norte de Perú), luces anaranjadas y rojas en tres fechas; la grabación del 13 de octubre, sobre la procesión del Señor Cautivo de Ayabaca, las muestra moviéndose de forma organizada. La Oficina de Investigación de Fenómenos Aéreos Anómalos (OIFAA) de la Fuerza Aérea del Perú, hoy DIFAA, hizo de Chulucanas su primer caso: el informe de 84 páginas que presentó al alto mando en noviembre de 2002 sigue clasificado.",
   "summary_en": "Between October and November 2001, orange and red lights were videotaped on three dates in Chulucanas (Piura, northern Peru); the recording of 13 October, over the procession of the Señor Cautivo de Ayabaca, shows them moving in an organised way. The Peruvian Air Force's Office for the Investigation of Anomalous Aerial Phenomena (OIFAA), today DIFAA, made Chulucanas its first case: the 84-page report it presented to the high command in November 2002 remains classified.",
   "patterns": [
@@ -77,12 +77,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0,
+    "mundano_natural": 0.53,
     "humana_clasificada": 0.03,
     "adversaria": 0.03,
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.09,
-    "indet": 0.83
+    "indet": 0.3
   },
   "documents": [
     {
@@ -95,5 +95,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACiudad%20de%20Chulucanas%2C%20Piura%20PER%C3%99.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "mundanoType": "sin_propuesta",
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa para las luces de 2001: ni el informe de Anthony Choy (2005) ni la cobertura de El Comercio, RPP e Infobae nombran una, y el informe formal de la OIFAA nunca se publicó; la lectura obvia —farolillos o bengalas sobre una procesión nocturna— nadie la ha propuesto por escrito ni puesto a prueba. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes a cause for the 2001 lights: neither Anthony Choy's report (2005) nor the coverage in El Comercio, RPP and Infobae names one, and the OIFAA's formal report was never published; the obvious reading —paper lanterns or flares over a night procession— has not been proposed in writing or tested by anyone. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "Choy, A. — «Perú: El Incidente Chulucanas» (2005); El Comercio; RPP; Infobae · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  }
 }
