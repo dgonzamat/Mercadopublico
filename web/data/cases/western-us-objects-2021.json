@@ -20,12 +20,18 @@
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
   "objectDetail": "avion",
+  "classBasis": {
+    "es": "La AARO evaluó que los objetos eran «tres aviones comerciales distintos que volaban a gran distancia del sensor infrarrojo», cuyas trazas de radar coincidían con los objetos.",
+    "en": "AARO assessed that 'the objects were three separate commercial aircraft flying at a great distance from the infrared sensor', whose radar tracks aligned with the objects.",
+    "source": "DVIDS — 'Western U.S. Objects', descripción oficial de la AARO (31 may 2023)",
+    "url": "https://www.dvidshub.net/video/885190"
+  },
   "posterior": {
     "mundano_natural": 0.9,
     "humana_clasificada": 0.01,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.01,
-    "nohumano_abierto": 0.0,
+    "nohumano_abierto": 0,
     "indet": 0.07
   },
   "summary": "En 2021, un sensor de video infrarrojo, desde un campo de tiro militar del oeste de Estados Unidos registró tres objetos no identificados. El 31 de mayo de 2023, el director de la AARO, Sean Kirkpatrick, presentó el caso ante el Equipo de Estudio Independiente de la NASA sobre UAP — y lo cerró en la misma presentación: el análisis del video, cruzado con datos de vuelos comerciales de la región, llevó a la AARO a evaluar que eran tres aeronaves comerciales distintas que volaban muy lejos del sensor, cuyas trazas de radar se alineaban con los tres objetos. A esa distancia los aviones se veían solo como pequeños puntos. Es uno de los pocos casos del corpus con una resolución oficial apoyada en un dato externo, aunque ni el radar, ni la fecha, ni el lugar se han publicado, de modo que nadie fuera del gobierno puede repetir la comprobación.",

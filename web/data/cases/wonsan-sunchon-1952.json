@@ -16,6 +16,12 @@
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "classBasis": {
+    "es": "El memorando de la ATIC ofrece dos evaluaciones tentativas, ambas aeronaves: el escape de un caza soviético La-9 o La-11, o un reflector aerotransportado montado en un interceptor; la ficha de Blue Book marca «posiblemente globo».",
+    "en": "The ATIC memo offers two tentative evaluations, both aircraft: 'the exhaust from an La-9 or La-11 Soviet fighter aircraft', or an airborne searchlight attached to a conventional interceptor; the Blue Book card marks 'possibly balloon'.",
+    "source": "Project Blue Book, expediente «Korea», 29 de enero de 1952",
+    "url": "https://archive.org/details/1952-01-6310451-KOREA"
+  },
   "epistemicStatus": "documented",
   "probability": 37,
   "summary": "La noche del 29 de enero de 1952, durante la Guerra de Corea, dos tripulaciones de B-29 de la USAF, en misiones distintas y con 24 minutos de diferencia, vieron cerca de Wonsan y de Sunchon una esfera naranja de menos de un metro que se acercó a sus aviones. La inteligencia de la zona pensó en una bengala o un dispositivo enemigo nuevo, y la tarjeta de Project Blue Book lo dejó como «posiblemente globo».",
