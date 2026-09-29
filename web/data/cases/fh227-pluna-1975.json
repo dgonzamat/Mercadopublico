@@ -82,5 +82,11 @@
   ],
   "misidSubtype": "astronomico",
   "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "Luis R. González concluye que «todo apunta hacia una confusión con el planeta Júpiter que en esas fechas lucía su máximo brillo».",
+    "en": "Luis R. González concludes that 'everything points to a confusion with the planet Jupiter, which was at its brightest at that time'.",
+    "source": "Luis R. González, Misterios del Aire (19 may 2014)",
+    "url": "http://misteriosdelaire.blogspot.com/2014/05/incidente-ovni-de-un-avion-militar.html"
+  },
   "evidenceReviewed": "2026-09-29"
 }
