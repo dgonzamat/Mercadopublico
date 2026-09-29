@@ -69,6 +69,12 @@
       "url": "https://www.vice.com/en/article/ufo-watching-in-bonnybridge-scotland-456/",
       "note": "Recoge la explicación escéptica: el pueblo está bajo las rutas de Edimburgo y Glasgow y a pocas millas del aeródromo de Cumbernauld.",
       "note_en": "Records the skeptical explanation: the town lies under the Edinburgh and Glasgow flight paths and a few miles from Cumbernauld airfield."
+    },
+    {
+      "name": "History (UK) — 'Why is a small village in Scotland the UK's UFO hotspot?'",
+      "url": "https://www.history.co.uk/articles/why-is-a-small-village-in-scotland-the-uk-s-ufo-hotspot",
+      "note": "Entre las explicaciones que repasa, entrenamientos militares secretos en las Tierras Bajas escocesas.",
+      "note_en": "Among the explanations it reviews, secret military training over the Scottish Lowlands."
     }
   ],
   "documents": [
@@ -83,11 +89,10 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "objectDetail": "avion",
   "classBasis": {
-    "es": "«Los escépticos señalaron que Bonnybridge está bajo las rutas de vuelo de los aeropuertos internacionales de Edimburgo y Glasgow, y que a solo un par de millas opera un aeródromo comercial en Cumbernauld». Es una explicación de conjunto para la oleada, no para cada reporte; otras fuentes añaden vuelos militares nocturnos de prueba.",
-    "en": "'Sceptics pointed to the fact that Bonnybridge is under flight paths serving Edinburgh and Glasgow international airports, and a commercial airfield operates only a couple of miles away in Cumbernauld.' It is an explanation for the wave as a whole, not for each report; other sources add night-time military test flights.",
-    "source": "VICE (Chris McCall), 'Watching for Aliens in the UFO Capital of Scotland', 4 nov 2014",
+    "es": "«Los escépticos señalaron que Bonnybridge está bajo las rutas de vuelo de los aeropuertos internacionales de Edimburgo y Glasgow, y que a solo un par de millas opera un aeródromo comercial en Cumbernauld». Es una explicación de conjunto para la oleada, no para cada reporte; otra fuente añade que 'entrenamientos militares secretos han sido responsables de avistamientos'.",
+    "en": "'Sceptics pointed to the fact that Bonnybridge is under flight paths serving Edinburgh and Glasgow international airports, and a commercial airfield operates only a couple of miles away in Cumbernauld.' It is an explanation for the wave as a whole, not for each report; another source adds that 'secret military training has been responsible for UFO sightings'.",
+    "source": "VICE (Chris McCall), 'Watching for Aliens in the UFO Capital of Scotland', 4 nov 2014; History (UK), 'Why is a small village in Scotland the UK's UFO hotspot?'",
     "url": "https://www.vice.com/en/article/ufo-watching-in-bonnybridge-scotland-456/"
   }
 }

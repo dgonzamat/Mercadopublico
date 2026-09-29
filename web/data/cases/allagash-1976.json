@@ -16,7 +16,7 @@
   "tier": "B",
   "category": "contactee",
   "epistemicStatus": "documented",
-  "mundanoType": "misid",
+  "mundanoType": "fraude",
   "probability": 41,
   "patterns": [
     "8a",
@@ -84,11 +84,9 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APancake%20ice%20on%20the%20Allagash%20River%2C%20Maine.jpg"
     }
   ],
-  "misidSubtype": "luces_tierra",
-  "objectDetail": "faro_reflector",
   "classBasis": {
-    "es": "Para la luz, la única explicación prosaica que recoge una fuente es la de un guardabosques, según Rak: 'lo que vimos eran unos tipos manejando un reflector en la parte trasera de una camioneta', por la inauguración de una ferretería en Millinocket. Rak la rechaza por la distancia (unos 120 km). La abducción la cubre otra capa: Rak dice que fue 'una narración brillante, no la verdad', que apoyó 'porque quería ganar dinero'; los otros tres mantienen su relato.",
-    "en": "For the light, the only prosaic explanation any source records is a park ranger's, according to Rak: 'what we saw was these guys operating a search light in back of a pick-up', for a hardware store grand opening in Millinocket. Rak rejects it on distance (about 75 miles). The abduction is covered by a different layer: Rak calls it 'brilliant storytelling. It's not the truth', which he supported 'because I wanted to make money'; the other three maintain their account.",
+    "es": "La abducción, que es el núcleo del caso, la desmiente uno de sus cuatro protagonistas: Chuck Rak dice que la apoyó al principio 'porque quería ganar dinero' y que fue 'una narración brillante. No es la verdad', aunque 'no lo llamo fraude'. La luz queda aparte: Rak sostiene que la vio, y la única explicación prosaica registrada, un reflector en una camioneta que sugirió un guardabosques según Rak, la rechaza el propio Rak por la distancia (unos 120 km).",
+    "en": "The abduction, which is the core of the case, is denied by one of its four protagonists: Chuck Rak says he supported it at first 'because I wanted to make money' and that it was 'brilliant storytelling. It's not the truth', although 'I don't call it a hoax'. The light is separate: Rak maintains he saw it, and the only prosaic explanation on record, a searchlight on a pickup suggested by a park ranger according to Rak, is rejected by Rak himself on distance (about 75 miles).",
     "source": "The County (Jessica Potila), 'How much of 1976 UFO abduction is true?', 21 sep 2016",
     "url": "https://thecounty.me/2016/09/21/community/how-much-of-1976-ufo-abduction-is-true/"
   }
