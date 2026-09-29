@@ -101,7 +101,7 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   { key: "terrestre_otros", label: "Objeto convencional no precisado", labelEn: "Conventional object, not pinned down", color: "#5a6b7a" },
 ];
 
-export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial";
+export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial" | "sin_propuesta";
 
 /** Las clases prosaicas que se MUESTRAN (primer nivel): las de objeto
  *  (misidSubtype) + fenómeno natural + posible fraude. MECE dentro de
@@ -112,6 +112,10 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
   { key: "instrumento", label: "Fallo de instrumento", labelEn: "Instrument artifact", color: "#8a7d3a" },
   { key: "psicosocial", label: "Causa psicológica, médica o social", labelEn: "Psychological, medical or social cause", color: "#6a5f94" },
+  // Ninguna fuente propone una causa, pero los casos parecidos que sí se
+  // resolvieron fueron casi siempre algo ordinario: la masa prosaica se conserva
+  // por tasa base en vez de pasar a «Indeterminado». Sin detalle.
+  { key: "sin_propuesta", label: "Sin explicación propuesta", labelEn: "No explanation proposed", color: "#6f7f8c" },
 ];
 
 /** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.

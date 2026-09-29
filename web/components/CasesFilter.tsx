@@ -37,6 +37,7 @@ export type HypKey =
   | "fraude"
   | "instrumento"
   | "psicosocial"
+  | "sin_propuesta"
   | "humana_clasificada"
   | "adversaria"
   | "nohumano"
@@ -56,6 +57,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "fraude", es: "Posible fraude", en: "Possible hoax" },
   { key: "instrumento", es: "Fallo de instrumento", en: "Instrument artifact" },
   { key: "psicosocial", es: "Causa psicológica, médica o social", en: "Psychological, medical or social cause" },
+  { key: "sin_propuesta", es: "Sin explicación propuesta", en: "No explanation proposed" },
   { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
   { key: "adversaria", es: "Tecnología adversaria", en: "Adversary tech" },
   { key: "nohumano", es: "No-humano", en: "Non-human" },

@@ -13,6 +13,7 @@ Level 1 (field `mundanoType` + `misidSubtype`):
 - natural — Fenómeno natural
 - fraude — Posible fraude
 - instrumento — Fallo de instrumento (the anomaly came from the equipment: film, sensor, radar, a failure)
+- sin_propuesta — Sin explicación propuesta (no source proposes a cause; the prosaic share is kept on the base rate of similar resolved cases — owner decision 29 Sep 2026; no detail)
 - psicosocial — Causa psicológica, médica o social (collective contagion, suggestion, sleep paralysis, a medical/neurological condition)
 
 Level 2 (field `objectDetail`, optional; allowed values in web/lib/meceClasses.ts OBJECT_DETAILS):
@@ -41,3 +42,7 @@ Level 2 (field `objectDetail`, optional; allowed values in web/lib/meceClasses.t
 
 ## Report
 One line per case: id | old class/detail → new class/detail | posterior change if any | source + quote that fixes the object. Then run from web/: node scripts/build-cases.mjs && node scripts/validate-schema.mjs && node scripts/audit-consistency.mjs --warn, and paste the tails.
+
+## No source proposes a candidate (owner decision, 29 Sep 2026: base rate)
+Absence of a published analysis is not evidence against an ordinary cause. When, after an in-depth search, no source names any prosaic candidate, do NOT move the mundano mass to indet. Keep it (normally at its previous value, unless the evidence itself argues otherwise) with mundanoType "sin_propuesta" and no detail. The classBasis lists the sources checked, says none proposes a cause, and cites a base-rate source for similar cases (e.g. AARO's published resolution statistics: balloons, birds, drones, satellites). Move mass to indet only when the evidence itself argues against ordinary causes (e.g. a source that ruled out the candidates of that class).
+A source that proposes several prosaic candidates of different classes (e.g. a forum split between bird and plastic bag) is still a prosaic reading: keep the mass, pick the class the evidence favours, or use sin_propuesta if none is favoured.

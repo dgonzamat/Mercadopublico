@@ -65,6 +65,10 @@ const BLURB: Record<string, { es: string; en: string }> = {
     es: "Causa psicológica, médica o social: contagio colectivo, sugestión, parálisis del sueño o una condición médica (una crisis epiléptica, por ejemplo). Los testigos no mienten; lo que relatan se explica por cómo se percibe y se recuerda en grupo, en estados alterados o por una causa médica.",
     en: "Psychological, medical or social cause: collective contagion, suggestion, sleep paralysis or a medical condition (an epileptic seizure, for instance). Witnesses are not lying; what they report is explained by how people perceive and remember in groups, in altered states or through a medical cause.",
   },
+  sin_propuesta: {
+    es: "Sin explicación propuesta: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario. La parte prosaica se conserva por esa tasa base, no porque alguien la haya identificado; la ficha dice qué fuentes se revisaron.",
+    en: "No explanation proposed: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary. The prosaic share is kept on that base rate, not because anyone identified it; the entry says which sources were checked.",
+  },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
     en: "A secret own or allied program (cover-up is intrinsic). Former 'classified programs' hypothesis.",
