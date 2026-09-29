@@ -104,14 +104,19 @@ if (circles.length > 0) {
 //    El total NO se hardcodea (anti-pattern del repo): se deriva del corpus
 //    generado (data/cases.json) para que el test no se rompa al crecer el corpus.
 //    El donut reparte el corpus completo: incidentes por hipótesis + una porción
-//    para los casos-documento, de modo que el centro marca cases.length (el total).
+//    para los casos-documento, de modo que el centro marca cases.length menos los
+//    documentos ya enlazados a sus casos (esos son evidencia, no ítems del donut).
 //    La clasificación POR HIPÓTESIS sigue siendo solo sobre incidentes (canon
 //    CLAUDE.md / sonda E24); los documentos son una porción neutra, no una hipótesis.
 let expectedN = null;
 try {
   const raw = JSON.parse(readFileSync(join(__dirname, "..", "data", "cases.json"), "utf8"));
   const list = Array.isArray(raw) ? raw : Array.isArray(raw?.cases) ? raw.cases : null;
-  expectedN = list ? list.length : null;
+  // Los documentos enlazados a sus casos (`relatedCases`) son evidencia, no
+  // ítems con reparto propio: salen del donut (lib/meceModel documentPosteriors).
+  expectedN = list
+    ? list.filter((c) => !(c.category === "document" && c.relatedCases?.length)).length
+    : null;
 } catch {
   /* cases.json es artefacto de build; si falta, caemos al check laxo abajo */
 }
