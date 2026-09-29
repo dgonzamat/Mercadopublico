@@ -33,6 +33,8 @@ Distribución sobre 6 narrativas que **suma 1** (tolerancia ±0.005):
 - En `document` es opcional (es el "lean" evidencial, no P(objeto)).
 - Es un juicio analítico estructurado, no una frecuencia: reparte según cómo la evidencia distribuye la explicación. Ver `lib/meceModel.ts`.
 - **Se asigna después de leer la evidencia primaria** (el documento, no un resumen). Si no la pudiste leer, no clasifiques: dilo y deja el caso sin crear o con la limitación declarada. Al terminar, pon `evidenceReviewed: "AAAA-MM-DD"` con la fecha de la lectura (regla E42).
+- **Verificación independiente antes de publicar:** otro agente revisa el caso con [`docs/brief-verificacion.md`](../../docs/brief-verificacion.md) (afirmaciones, eliminaciones y omisiones del mismo expediente). No se fusiona sin ese paso.
+- Si el reparto es una misidentificación, pon `misidSubtype` con el objeto concreto: el sitio ya no muestra la categoría «Misidentificación». Si el caso es un **documento** que respalda incidentes concretos, enlázalos en `relatedCases` en vez de clasificarlo.
 
 ## 4. Rich content — estándar editorial (obligatorio para el estándar)
 `whatHappened(_en)` + `whyMatters(_en)` deben sumar **≥ ~550 palabras / ~3.500 caracteres, en español E inglés** (prosa; `evidence`/`sources` NO cuentan para la página). Separa párrafos con `\n\n`.

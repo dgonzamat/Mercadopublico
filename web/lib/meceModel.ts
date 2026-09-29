@@ -59,15 +59,14 @@ export const INDET_COLOR = "#8a8172";
 
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
-// MUNDANO_SUBTYPES / MISID_SUBTYPES viven en `./meceClasses` (data-free) para
+// MISID_SUBTYPES / PROSAIC_CLASSES viven en `./meceClasses` (data-free) para
 // que el explorer cliente los use como dimensiones sin arrastrar el corpus. Se
 // re-exportan aquí para no romper a sus consumidores (MeceChart, /cases,
 // /probabilidades).
-export { MUNDANO_SUBTYPES, MISID_SUBTYPES } from "./meceClasses";
-// `MUNDANO_SUBTYPES` se usa localmente (expandedHypotheses) → import local
-// además del re-export (el re-export no crea binding). `MISID_SUBTYPES` solo se
-// re-exporta (no se usa aquí), así que no se importa para no gatillar noUnusedLocals.
-import { MUNDANO_SUBTYPES } from "./meceClasses";
+export { MISID_SUBTYPES, PROSAIC_CLASSES } from "./meceClasses";
+// `PROSAIC_CLASSES` y `prosaicKey` se usan localmente (expandedHypotheses) →
+// import local además del re-export (el re-export no crea binding).
+import { PROSAIC_CLASSES, prosaicKey } from "./meceClasses";
 
 export function emptyPosterior(): Posterior {
   return {
@@ -177,17 +176,22 @@ export interface ScoredCase {
   posterior: Posterior;
   seeded: boolean;
   mundanoType?: UAPCase["mundanoType"];
+  misidSubtype?: UAPCase["misidSubtype"];
 }
 
 export interface HypRow { key: string; label: string; labelEn: string; color: string; count: number; }
 
 /**
  * Conteos sobre el conjunto EXPANDIDO de hipótesis (clasificación forzada):
- * mundano/natural se abre en sus 3 sub-tipos según el `mundanoType` de cada caso,
+ * mundano/natural se abre en sus 6 clases prosaicas —las cuatro de objeto
+ * (`misidSubtype`: astronómico, aeronave o globo, cohete/satélite/reentrada,
+ * objeto convencional no precisado) + fenómeno natural + posible fraude— según
+ * `mundanoType`/`misidSubtype` de cada caso (ver `prosaicKey`). «Misid» no es
+ * una fila: nombra el error del testigo, no lo que era el objeto,
  * y —con consolidateNonHuman— las dos no-humanas se funden en una. Ningún caso
  * queda en indeterminable. Para 1 ítem, los counts son su distribución (suman 1).
  */
-type HypInput = { posterior: Posterior; mundanoType?: UAPCase["mundanoType"] };
+type HypInput = { posterior: Posterior; mundanoType?: UAPCase["mundanoType"]; misidSubtype?: UAPCase["misidSubtype"] };
 export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean; keepIndet?: boolean } = {}): HypRow[] {
   const byId = Object.fromEntries(MECE_CLASSES.map((c) => [c.id, c])) as Record<MeceClassId, (typeof MECE_CLASSES)[number]>;
   const acc: Record<string, number> = {};
@@ -196,7 +200,8 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
     // posterior crudo normalizado). Si no, se reparte a la fuerza sobre las 5
     // sustantivas (clasificación forzada clásica, sin indeterminado).
     const cp = opts.keepIndet ? normalize(s.posterior) : classifiedPosterior(s.posterior);
-    acc[s.mundanoType ?? "misid"] = (acc[s.mundanoType ?? "misid"] || 0) + cp.mundano_natural;
+    const pk = prosaicKey(s.mundanoType, s.misidSubtype);
+    acc[pk] = (acc[pk] || 0) + cp.mundano_natural;
     acc.humana_clasificada = (acc.humana_clasificada || 0) + cp.humana_clasificada;
     acc.adversaria = (acc.adversaria || 0) + cp.adversaria;
     if (opts.consolidateNonHuman) {
@@ -216,7 +221,7 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
     // «Indeterminado» como narrativa navegable propia (color visible sobre fondo oscuro).
     indet: { label: "Indeterminado", labelEn: "Indeterminate", color: INDET_COLOR },
   };
-  for (const st of MUNDANO_SUBTYPES) meta[st.key] = st;
+  for (const st of PROSAIC_CLASSES) meta[st.key] = st;
   return Object.entries(acc)
     .filter(([, v]) => v > 0.001)
     .map(([key, count]) => ({ key, label: meta[key].label, labelEn: meta[key].labelEn, color: meta[key].color, count }))
@@ -261,6 +266,7 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
       posterior: posteriorFor(c),
       seeded: !c.posterior,
       mundanoType: c.mundanoType,
+      misidSubtype: c.misidSubtype,
     }));
 }
 
@@ -284,6 +290,7 @@ export function documentPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): S
       posterior: c.posterior ? normalize(c.posterior) : { ...emptyPosterior(), indet: 1 },
       seeded: !c.posterior,
       mundanoType: c.mundanoType,
+      misidSubtype: c.misidSubtype,
     }));
 }
 

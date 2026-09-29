@@ -1,16 +1,17 @@
 import type { UAPCase } from "@/lib/types";
 import {
   dominantNarrativeLabel,
-  MUNDANO_SUBTYPES,
   MISID_SUBTYPES,
+  PROSAIC_CLASSES,
+  prosaicKey,
 } from "@/lib/meceClasses";
 
 // Etiquetas de subtipos por key. Importadas de `lib/meceClasses` (data-free) —
 // NO de `lib/meceModel`, que arrastra el corpus completo al chunk cliente del
 // explorer (anti-pattern del LCP, enforzado por audit-consistency E18d).
-const MUNDANO_LABEL = Object.fromEntries(
-  MUNDANO_SUBTYPES.map((s) => [s.key, s.label]),
-) as Record<(typeof MUNDANO_SUBTYPES)[number]["key"], string>;
+const PROSAIC_LABEL = Object.fromEntries(
+  PROSAIC_CLASSES.map((s) => [s.key, s.label]),
+) as Record<(typeof PROSAIC_CLASSES)[number]["key"], string>;
 const MISID_LABEL = Object.fromEntries(
   MISID_SUBTYPES.map((s) => [s.key, s.label]),
 ) as Record<(typeof MISID_SUBTYPES)[number]["key"], string>;
@@ -106,16 +107,18 @@ export const DIMENSIONS: DimensionDef[] = [
   },
   {
     key: "mundano",
-    label: { es: "Tipo mundano/natural", en: "Mundane/natural type" },
-    // Subtipo de la narrativa mundano (misid / natural / fraude). Solo lo llevan
-    // los casos con lean mundano; el resto → "—" (kpiDistinct lo ignora).
-    values: (c) => (c.mundanoType ? [MUNDANO_LABEL[c.mundanoType]] : ["—"]),
+    label: { es: "Clase prosaica", en: "Prosaic class" },
+    // Clase prosaica concreta (las seis de primer nivel: cuatro de objeto +
+    // natural + fraude), igual que /probabilidades. Solo la llevan los casos con
+    // lean mundano; el resto → "—" (kpiDistinct lo ignora). Key conservada.
+    values: (c) =>
+      c.mundanoType ? [PROSAIC_LABEL[prosaicKey(c.mundanoType, c.misidSubtype)]] : ["—"],
   },
   {
     key: "misid",
-    label: { es: "Subtipo de misidentificación", en: "Misidentification subtype" },
-    // Drill-down bajo misid: con qué objeto conocido se confundió. Solo en casos
-    // con mundanoType="misid" clasificados; el resto → "—".
+    label: { es: "Clase de objeto convencional", en: "Conventional object class" },
+    // Qué objeto era (misidSubtype). Solo en casos con mundanoType="misid"
+    // clasificados; el resto → "—". Key conservada por compatibilidad.
     values: (c) => (c.misidSubtype ? [MISID_LABEL[c.misidSubtype]] : ["—"]),
   },
 ];

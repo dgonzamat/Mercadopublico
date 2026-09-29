@@ -5,8 +5,7 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
 import { HeterogeneityByDecade } from "@/components/HeterogeneityByDecade";
-import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis, MISID_SUBTYPES } from "@/lib/meceModel";
-import { cases } from "@/lib/data";
+import { corpusPosteriors, documentPosteriors, expandedHypotheses, modalHypothesis } from "@/lib/meceModel";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 export const metadata = {
@@ -21,9 +20,23 @@ export const metadata = {
 
 /** Qué significa cada hipótesis (y qué hipótesis del marco anterior preserva). */
 const BLURB: Record<string, { es: string; en: string }> = {
-  misid: {
-    es: "Misidentificación de un objeto conocido (avión, globo, satélite, planeta, dron) o error perceptual / ilusión. Error humano sobre algo ordinario.",
-    en: "Misidentification of a known object (aircraft, balloon, satellite, planet, drone) or perceptual error / illusion. Human error about something ordinary.",
+  // Lo prosaico se nombra por el OBJETO, no por el error del testigo: las cuatro
+  // clases de objeto salen de `misidSubtype` (dato), ver PROSAIC_CLASSES.
+  astronomico: {
+    es: "Un objeto astronómico tomado por otra cosa: un planeta brillante (Venus, Júpiter), una estrella, la Luna o un meteoro común. El objeto era real y estaba donde debía; lo anómalo fue la lectura.",
+    en: "An astronomical object taken for something else: a bright planet (Venus, Jupiter), a star, the Moon or an ordinary meteor. The object was real and where it should be; the anomaly was in the reading.",
+  },
+  aeronave: {
+    es: "Una aeronave o un globo: avión, helicóptero, dron, dirigible o globo (meteorológico, de investigación, de fiesta). Los globos se archivan aquí por convención del corpus.",
+    en: "An aircraft or a balloon: plane, helicopter, drone, blimp or balloon (weather, research, party). Balloons are filed here by corpus convention.",
+  },
+  espacial: {
+    es: "Un cohete, un satélite o una reentrada: lanzamientos, etapas y restos que reentran, trenes de satélites. El catálogo de lanzamientos permite fecharlos y a menudo identificarlos.",
+    en: "A rocket, a satellite or a reentry: launches, stages and debris reentering, satellite trains. Launch catalogs make it possible to date them and often identify them.",
+  },
+  terrestre_otros: {
+    es: "Un objeto convencional no precisado: el análisis inclina a algo ordinario —una luz en tierra, un faro, un reflejo, un error perceptual— pero la evidencia no fija un objeto concreto. Incluye los casos-documento cuyo contenido apunta a una explicación convencional.",
+    en: "A conventional object, not pinned down: the analysis leans toward something ordinary —a ground light, a beacon, a reflection, a perceptual error— but the evidence does not fix a specific object. Includes document cases whose content points to a conventional explanation.",
   },
   natural: {
     es: "Fenómeno natural genuino poco entendido: plasma atmosférico, rayo en bola, bólido / meteoro, óptica atmosférica. Física real, no una nave ni un engaño.",
@@ -77,15 +90,6 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
     modalCount[m.key] = (modalCount[m.key] ?? 0) + 1;
   }
 
-  // Drill-down bajo «Misidentificación» (capa 2, MECE dentro de misid): con qué
-  // objeto conocido se confundió cada INCIDENTE misid. Los documentos no llevan
-  // subtipo. El bucket mayoritario («sin objeto único») se rotula con honestidad.
-  const misidSub = MISID_SUBTYPES.map((s) => ({
-    ...s,
-    count: cases.filter((c) => c.category !== "document" && c.misidSubtype === s.key).length,
-  })).sort((a, b) => b.count - a.count);
-  const misidSubTotal = misidSub.reduce((a, s) => a + s.count, 0);
-
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
       <Eyebrow>
@@ -96,8 +100,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
       </H1>
       <Lede>
         <T
-          es={`Los ${scored.length} casos del corpus se clasifican, cada uno, en una narrativa: los ${incidents} incidentes por la naturaleza del objeto y los ${docCount} casos-documento por la inclinación de su contenido. Lo prosaico se abre en tres narrativas propias —misidentificación, fenómeno natural y posible fraude— y «no-humano» agrupa encubierto + abierto. Lo que no se puede decidir —incidentes inconclusos, documentos sin dirección clara— cae en «Indeterminado». Sumadas, reparten el corpus de forma comparable: se puede decir qué narrativa da cuenta de más casos.`}
-          en={`The corpus's ${scored.length} cases are each classified into one narrative: the ${incidents} incidents by the nature of the object and the ${docCount} document cases by their content's lean. The prosaic opens into three narratives of its own —misidentification, natural phenomenon and possible hoax— and 'non-human' groups covert + open. Whatever cannot be decided —inconclusive incidents, documents with no clear direction— falls into 'Indeterminate'. Summed, they partition the corpus comparably: one can say which narrative accounts for more cases.`}
+          es={`Los ${scored.length} casos del corpus se clasifican, cada uno, en una narrativa: los ${incidents} incidentes por la naturaleza del objeto y los ${docCount} casos-documento por la inclinación de su contenido. Lo prosaico se nombra por lo que era: cuatro clases de objeto —objeto astronómico, aeronave o globo, cohete/satélite/reentrada y objeto convencional no precisado— más fenómeno natural y posible fraude; «no-humano» agrupa encubierto + abierto. Lo que no se puede decidir —incidentes inconclusos, documentos sin dirección clara— cae en «Indeterminado». Sumadas, reparten el corpus de forma comparable: se puede decir qué narrativa da cuenta de más casos.`}
+          en={`The corpus's ${scored.length} cases are each classified into one narrative: the ${incidents} incidents by the nature of the object and the ${docCount} document cases by their content's lean. The prosaic is named by what it was: four object classes —astronomical object, aircraft or balloon, rocket/satellite/reentry and conventional object not pinned down— plus natural phenomenon and possible hoax; 'non-human' groups covert + open. Whatever cannot be decided —inconclusive incidents, documents with no clear direction— falls into 'Indeterminate'. Summed, they partition the corpus comparably: one can say which narrative accounts for more cases.`}
           locale={locale}
         />
       </Lede>
@@ -120,8 +124,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
             consolidateNonHuman
             locale={locale}
             hrefFor={(key) => `#hyp-${key}`}
-            totalLabelEs={`Suman 100% · ${scored.length} casos del corpus · mundano abierto en 3 · no-humano agrupado · Indeterminado aparte`}
-            totalLabelEn={`Sum to 100% · ${scored.length} corpus cases · mundane opened into 3 · non-human grouped · Indeterminate separate`}
+            totalLabelEs={`Suman 100% · ${scored.length} casos del corpus · mundano abierto en 6 · no-humano agrupado · Indeterminado aparte`}
+            totalLabelEn={`Sum to 100% · ${scored.length} corpus cases · mundane opened into 6 · non-human grouped · Indeterminate separate`}
           />
         </div>
       </section>
@@ -179,47 +183,6 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
                 <Body className="mt-3 text-sm leading-relaxed text-muted">
                   <T es={BLURB[c.key].es} en={BLURB[c.key].en} locale={locale} />
                 </Body>
-
-                {c.key === "misid" && misidSubTotal > 0 && (
-                  <div className="mt-4 rounded-sm border border-border bg-panel/60 p-4">
-                    <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                      <T
-                        es={`¿Con qué se confundió? · ${misidSubTotal} incidentes`}
-                        en={`Mistaken for what? · ${misidSubTotal} incidents`}
-                        locale={locale}
-                      />
-                    </p>
-                    <div className="mt-3 flex h-2 w-full overflow-hidden rounded-full">
-                      {misidSub.filter((s) => s.count > 0).map((s) => (
-                        <div
-                          key={s.key}
-                          title={`${s.label}: ${s.count}`}
-                          style={{ width: `${(s.count / misidSubTotal) * 100}%`, backgroundColor: s.color }}
-                        />
-                      ))}
-                    </div>
-                    <ul className="mt-3 space-y-1">
-                      {misidSub.map((s) => (
-                        <li key={s.key} className="flex items-baseline justify-between gap-3 font-mono text-[11px]">
-                          <span className="flex items-center gap-1.5 text-text">
-                            <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: s.color }} />
-                            <T es={s.label} en={s.labelEn} locale={locale} />
-                          </span>
-                          <span className="tabular-nums text-muted">
-                            {s.count} · {Math.round((s.count / misidSubTotal) * 100)}%
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="mt-3 font-mono text-[10px] leading-snug text-muted/80">
-                      <T
-                        es="Solo incidentes; los casos-documento misid no se sub-clasifican. «Sin objeto único» = el análisis inclina a lo prosaico pero no fija un objeto concreto (luz difusa, faro, o explicación mundana no determinada)."
-                        en="Incidents only; misid document-cases are not sub-classified. 'No single object' = the analysis leans prosaic but pins no specific object (diffuse light, lighthouse, or an undetermined mundane explanation)."
-                        locale={locale}
-                      />
-                    </p>
-                  </div>
-                )}
 
                 {total > 0 && (
                   <LocaleLink

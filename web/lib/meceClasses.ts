@@ -1,4 +1,4 @@
-import type { MeceClassId, Posterior } from "./types";
+import type { MeceClassId, MisidSubtype, MundanoType, Posterior } from "./types";
 
 /**
  * Metadatos de las SEIS narrativas MECE (id + etiquetas bilingües + color) y el
@@ -72,35 +72,46 @@ export function dominantNarrativeLabel(p: Posterior): string {
   return MECE_LABEL_BY_ID[dominantNarrative(p)];
 }
 
-// ─── Subtipos de la narrativa mundano/natural (drill-down navegable) ─────────
+// ─── Clases prosaicas de la narrativa mundano/natural (primer nivel) ─────────
 // Viven aquí (data-free, junto a MECE_CLASSES) para que el explorer cliente los
 // use como dimensiones sin arrastrar el corpus. meceModel los re-exporta. Los
 // colores viven en lib (no en app/components) → fuera del scan de audit-design.
 
-/** Sub-tipos de mundano/natural, promovidos a hipótesis de primer nivel. */
-export const MUNDANO_SUBTYPES: ReadonlyArray<{
-  key: "misid" | "natural" | "fraude";
-  label: string;
-  labelEn: string;
-  color: string;
-}> = [
-  { key: "misid", label: "Misidentificación", labelEn: "Misidentification", color: "#5a6b7a" },
-  { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
-  { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
-];
-
-/** Subtipos de «Misidentificación» (drill-down, capa 2): con qué objeto conocido
- *  se confundió. MECE dentro de misid. Rampa afín al azul-acero de misid. */
+/** Clases de OBJETO dentro de mundanoType="misid" (`misidSubtype`): qué era el
+ *  objeto. Se muestran como clases de PRIMER NIVEL (no como drill-down bajo una
+ *  «misidentificación»): el sitio nombra el objeto, no el error del testigo.
+ *  Los globos se archivan bajo `aeronave` por convención del corpus. Colores
+ *  separados entre sí (ΔE ≥ 12) y del gris de «Indeterminado» (INDET_COLOR), con
+ *  el que antes chocaba `terrestre_otros`; el bucket mayoritario conserva el
+ *  azul-acero histórico. */
 export const MISID_SUBTYPES: ReadonlyArray<{
   key: "astronomico" | "aeronave" | "espacial" | "terrestre_otros";
   label: string;
   labelEn: string;
   color: string;
 }> = [
-  { key: "astronomico", label: "Astronómico", labelEn: "Astronomical", color: "#5f7d94" },
-  { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#6b8ea3" },
-  { key: "espacial", label: "Espacial (satélite/reentrada)", labelEn: "Space (satellite/reentry)", color: "#4d6475" },
-  // El bucket mayoritario: casos misid cuyo texto no fija un objeto concreto.
-  // Etiqueta honesta —no un «otros» que finja precisión que no hay.
-  { key: "terrestre_otros", label: "Sin objeto único identificado", labelEn: "No single object identified", color: "#8a8172" },
+  { key: "astronomico", label: "Objeto astronómico", labelEn: "Astronomical object", color: "#3d6a8f" },
+  { key: "aeronave", label: "Aeronave o globo", labelEn: "Aircraft or balloon", color: "#7d95a6" },
+  { key: "espacial", label: "Cohete, satélite o reentrada", labelEn: "Rocket, satellite or reentry", color: "#3f4e5a" },
+  // El bucket mayoritario: el análisis inclina a un objeto convencional pero no
+  // fija cuál. Recoge también los casos misid sin `misidSubtype`.
+  { key: "terrestre_otros", label: "Objeto convencional no precisado", labelEn: "Conventional object, not pinned down", color: "#5a6b7a" },
 ];
+
+export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude";
+
+/** Las seis clases prosaicas que se MUESTRAN (primer nivel): las cuatro de
+ *  objeto + fenómeno natural + posible fraude. MECE dentro de mundano_natural. */
+export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; labelEn: string; color: string }> = [
+  ...MISID_SUBTYPES,
+  { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
+  { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
+];
+
+/** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.
+ *  Sin `mundanoType` el modelo ya caía en misid (M2 de audit-consistency lo
+ *  vigila); misid sin subtipo → «objeto convencional no precisado». */
+export function prosaicKey(mundanoType?: MundanoType, misidSubtype?: MisidSubtype): ProsaicKey {
+  if (mundanoType === "natural" || mundanoType === "fraude") return mundanoType;
+  return misidSubtype ?? "terrestre_otros";
+}
