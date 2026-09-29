@@ -12,7 +12,7 @@
     "place": "Mansfield, Ohio"
   },
   "tier": "S",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 51,
   "summary": "El 18 de octubre de 1973, hacia las 23:05, un helicóptero UH-1H de la reserva del Ejército de EE.UU. que volaba cerca de Mansfield (Ohio) estuvo a punto de chocar con una luz roja que se le echó encima; según la tripulación, el objeto se detuvo un instante sobre ellos y, con el colectivo abajo, el altímetro marcó un ascenso hasta 3.500 pies. El informe que firmaron los cuatro tripulantes el 23 de noviembre de 1973 lo registra como casi colisión con un objeto no identificado.",
@@ -90,5 +90,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABell%20UH-1%20Iroquois%203-view%20line%20drawing.png"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro"
 }

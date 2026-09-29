@@ -149,6 +149,8 @@ a {
 [data-hyp-filter="misid"] [data-hyp]:not([data-hyp="astronomico"]):not([data-hyp="aeronave"]):not([data-hyp="espacial"]):not([data-hyp="luces_tierra"]):not([data-hyp="terrestre_otros"]),
 [data-hyp-filter="natural"] [data-hyp]:not([data-hyp="natural"]),
 [data-hyp-filter="fraude"] [data-hyp]:not([data-hyp="fraude"]),
+[data-hyp-filter="instrumento"] [data-hyp]:not([data-hyp="instrumento"]),
+[data-hyp-filter="psicosocial"] [data-hyp]:not([data-hyp="psicosocial"]),
 [data-hyp-filter="humana_clasificada"] [data-hyp]:not([data-hyp="humana_clasificada"]),
 [data-hyp-filter="adversaria"] [data-hyp]:not([data-hyp="adversaria"]),
 [data-hyp-filter="nohumano"] [data-hyp]:not([data-hyp="nohumano"]),

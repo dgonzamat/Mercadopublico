@@ -2,7 +2,9 @@ export type Tier = "S" | "A" | "B";
 export type EpistemicStatus = "documented" | "developing" | "projected";
 export type Category = "incident" | "document" | "contactee" | "crop_circle";
 /** Sub-tipo de la explicación prosaica (abre la narrativa mundano/natural). */
-export type MundanoType = "misid" | "natural" | "fraude";
+/** `instrumento` = la anomalía la produjo el equipo (película, sensor, radar,
+ *  avería); `psicosocial` = contagio colectivo, sugestión, parálisis del sueño. */
+export type MundanoType = "misid" | "natural" | "fraude" | "instrumento" | "psicosocial";
 
 /** Clase de OBJETO de una misidentificación: qué era lo que se vio. Solo aplica
  *  a casos con mundanoType="misid"; es el primer nivel de la taxonomía prosaica

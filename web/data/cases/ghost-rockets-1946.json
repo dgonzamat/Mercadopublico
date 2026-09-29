@@ -16,7 +16,9 @@
     "place_en": "Stockholm · Försvarsstaben (Defence Staff)"
   },
   "tier": "S",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "epistemicStatus": "documented",
   "posterior": {
     "mundano_natural": 0.74,

@@ -14,6 +14,8 @@
   },
   "tier": "S",
   "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
   "epistemicStatus": "documented",
   "probability": 41,
   "summary": "El 17 de noviembre de 1986, la tripulación del vuelo de carga Japan Airlines 1628 siguió sobre Alaska durante unos 45 minutos dos grupos de luces y, según el capitán, la silueta de un objeto «dos veces» mayor que un portaaviones. Controladores de Anchorage y el radar militar registraron retornos primarios intermitentes cerca del avión, pero la FAA, tras revisar sus datos, los atribuyó a un eco partido del propio 747 y declaró que no podía confirmar el suceso.",
@@ -85,6 +87,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAnchorage%20International%20Airport%20and%20Cook%20Inlet.jpg"
     }
   ],
-  "misidSubtype": "astronomico",
   "evidenceReviewed": "2026-09-29"
 }

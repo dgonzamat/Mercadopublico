@@ -12,7 +12,7 @@
     "place": "Ruwa, Zimbabwe"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "psicosocial",
   "epistemicStatus": "documented",
   "probability": 45,
   "summary": "El 16 de septiembre de 1994, durante el recreo, más de 60 de los 250 alumnos de la Ariel School (Ruwa, Zimbabwe) dijeron haber visto varios objetos plateados posarse en el matorral junto al patio y una o varias figuras pequeñas vestidas de negro, mientras los maestros estaban reunidos. El director les hizo dibujarlo ese mismo día y la ufóloga Cynthia Hind los entrevistó en las semanas siguientes; el psiquiatra de Harvard John Mack llegó unas diez semanas después, y el mensaje ecológico que hoy se asocia al caso aparece en sus entrevistas, no en los relatos que Hind publicó.",
@@ -86,6 +86,6 @@
       "url": "https://johnemackinstitute.org/"
     }
   ],
-  "misidSubtype": "terrestre_otros",
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "objectDetail": "contagio_colectivo"
 }

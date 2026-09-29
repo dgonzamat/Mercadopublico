@@ -12,7 +12,7 @@
     "place": "Malmstrom AFB, Montana"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "instrumento",
   "epistemicStatus": "documented",
   "probability": 39,
   "summary": "El 16 de marzo de 1967, a las 08:45, los diez misiles Minuteman del escuadrón Echo de Malmstrom AFB (Montana) perdieron la alerta en 10 a 40 segundos. La historia desclasificada de la 341.ª Ala dice que los investigadores no hallaron una causa lógica, que el apagado se reprodujo con un pulso eléctrico y que los rumores de ovnis fueron «refutados». El relato del capitán Robert Salas sobre un objeto rojo sobre otro centro de lanzamiento se publicó en 1996 y no tiene respaldo documental.",
@@ -112,6 +112,6 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALaunch%20Control%20Facility%20after%20construction%20at%20Malmstrom%20AFB%2C%20Montana.jpg"
     }
   ],
-  "misidSubtype": "terrestre_otros",
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "objectDetail": "falla_equipo"
 }

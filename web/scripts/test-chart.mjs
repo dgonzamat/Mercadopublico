@@ -72,9 +72,9 @@ const approx = (a, b, tol) => Math.abs(a - b) <= tol;
 // consolidateNonHuman + keepIndet): solo incidentes; cada uno cae en el argmax
 // de {clase prosaica, humana, adversaria, no-humano, indet}, con empate a favor
 // del primero en ese orden (el sort estable de expandedHypotheses).
-const PROSAIC_ORDER = ["astronomico", "aeronave", "espacial", "luces_tierra", "terrestre_otros", "natural", "fraude"];
+const PROSAIC_ORDER = ["astronomico", "aeronave", "espacial", "luces_tierra", "terrestre_otros", "natural", "fraude", "instrumento", "psicosocial"];
 const prosaicKey = (c) =>
-  c.mundanoType === "natural" || c.mundanoType === "fraude" ? c.mundanoType : c.misidSubtype ?? "terrestre_otros";
+  c.mundanoType && c.mundanoType !== "misid" ? c.mundanoType : c.misidSubtype ?? "terrestre_otros";
 let incidents = null;
 let expectedModal = null; // Map key → nº de incidentes
 try {

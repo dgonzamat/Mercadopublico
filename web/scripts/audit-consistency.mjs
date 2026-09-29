@@ -661,13 +661,13 @@ for (const c of cases) {
   // abre en misid/natural/fraude según `mundanoType`. Sin el campo, el código
   // cae en "misid" por defecto (lib/meceModel.ts) → misclasificación silenciosa.
   // Se exige declararlo explícitamente.
-  const MUNDANO_TYPES = ["misid", "natural", "fraude"];
+  const MUNDANO_TYPES = ["misid", "natural", "fraude", "instrumento", "psicosocial"];
   if (total > 0 && p.mundano_natural / total >= 0.15 && !MUNDANO_TYPES.includes(c.mundanoType)) {
     record(
       "ERROR",
       file,
       0,
-      `M2: "${c.id}" tiene mundano_natural=${(p.mundano_natural / total).toFixed(2)} pero sin mundanoType (caería en "misid" por default) — declarar misid|natural|fraude`,
+      `M2: "${c.id}" tiene mundano_natural=${(p.mundano_natural / total).toFixed(2)} pero sin mundanoType (caería en "misid" por default) — declarar ${MUNDANO_TYPES.join("|")}`,
     );
   }
   if (isDoc) continue;

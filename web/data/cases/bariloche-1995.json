@@ -106,6 +106,7 @@
     "license": "CC BY-SA 3.0",
     "href": "https://commons.wikimedia.org/wiki/File:Aeropuerto_Internacional_Teniente_Luis_Candelaria_(Bariloche).JPG"
   },
-  "misidSubtype": "terrestre_otros",
-  "evidenceReviewed": "2026-09-29"
+  "misidSubtype": "luces_tierra",
+  "evidenceReviewed": "2026-09-29",
+  "objectDetail": "faro_reflector"
 }

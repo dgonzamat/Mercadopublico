@@ -20,6 +20,7 @@
   "epistemicStatus": "documented",
   "probability": 43,
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
   "posterior": {
     "mundano_natural": 0.3,
     "humana_clasificada": 0.15,
