@@ -20,6 +20,14 @@
   "epistemicStatus": "documented",
   "probability": 15,
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "El memorando de la CIA del 11 de febrero de 1965 concluye que el llamado ovni era «probablemente un caza de ala delta de un tipo con un rendimiento de ascenso significativamente superior al del F-8C».",
+    "en": "The CIA memo of 11 February 1965 concludes that the so-called UFO was 'probably a delta-wing fighter of a type having significantly higher climb performance than the F-8C'.",
+    "source": "CIA, CIAUAPD022 — memorando BYEMAN/OXCART sobre el UFO de Puerto Rico (PURSUE Release 05)",
+    "url": "/pursue/CIAUAPD022_UnidentifiedFlyingObjectReportednearPuertoRico_1965.pdf"
+  },
   "posterior": {
     "mundano_natural": 0.5,
     "humana_clasificada": 0.3,

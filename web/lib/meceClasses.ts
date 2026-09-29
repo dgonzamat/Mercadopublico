@@ -85,7 +85,7 @@ export function dominantNarrativeLabel(p: Posterior): string {
  *  mudo) queda a ΔE76 ≥ 27 de toda la paleta prosaica e hipótesis y ≥ 3:1 sobre
  *  el crema y el fondo oscuro de la home. */
 export const MISID_SUBTYPES: ReadonlyArray<{
-  key: "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "terrestre_otros";
+  key: "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "animal" | "terrestre_otros";
   label: string;
   labelEn: string;
   color: string;
@@ -94,13 +94,14 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#7d95a6" },
   { key: "espacial", label: "Objeto espacial", labelEn: "Space object", color: "#3f4e5a" },
   { key: "luces_tierra", label: "En tierra", labelEn: "Ground-level", color: "#9a6a8a" },
+  { key: "animal", label: "Animal", labelEn: "Animal", color: "#2e7d8c" },
   // TRANSITORIO: el bucket de misid sin objeto fijado. Se conserva válido
   // mientras la pasada de datos reparte sus casos entre las clases de arriba.
   // Recoge también los casos misid sin `misidSubtype`.
   { key: "terrestre_otros", label: "Objeto convencional no precisado", labelEn: "Conventional object, not pinned down", color: "#5a6b7a" },
 ];
 
-export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial";
+export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial" | "sin_propuesta";
 
 /** Las clases prosaicas que se MUESTRAN (primer nivel): las de objeto
  *  (misidSubtype) + fenómeno natural + posible fraude. MECE dentro de
@@ -110,7 +111,11 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
   { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
   { key: "instrumento", label: "Fallo de instrumento", labelEn: "Instrument artifact", color: "#8a7d3a" },
-  { key: "psicosocial", label: "Causa psicológica o social", labelEn: "Psychological or social cause", color: "#6a5f94" },
+  { key: "psicosocial", label: "Causa psicológica, médica o social", labelEn: "Psychological, medical or social cause", color: "#6a5f94" },
+  // Ninguna fuente propone una causa, pero los casos parecidos que sí se
+  // resolvieron fueron casi siempre algo ordinario: la masa prosaica se conserva
+  // por tasa base en vez de pasar a «Indeterminado». Sin detalle.
+  { key: "sin_propuesta", label: "Sin explicación propuesta", labelEn: "No explanation proposed", color: "#6f7f8c" },
 ];
 
 /** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.
@@ -152,7 +157,10 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "vehiculo", label: "Vehículo", labelEn: "Vehicle" },
     { key: "llama_industrial", label: "Llama industrial", labelEn: "Industrial flare" },
     { key: "persona", label: "Persona", labelEn: "Person" },
-    { key: "animal", label: "Animal", labelEn: "Animal" },
+  ],
+  animal: [
+    { key: "ave", label: "Ave", labelEn: "Bird" },
+    { key: "insecto", label: "Insecto", labelEn: "Insect" },
   ],
   natural: [
     { key: "atmosferico", label: "Atmosférico (rayo en bola, nubes)", labelEn: "Atmospheric (ball lightning, clouds)" },
@@ -167,6 +175,7 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "contagio_colectivo", label: "Contagio colectivo", labelEn: "Collective contagion" },
     { key: "sugestion", label: "Sugestión", labelEn: "Suggestion" },
     { key: "paralisis_sueno", label: "Parálisis del sueño", labelEn: "Sleep paralysis" },
+    { key: "medica", label: "Causa médica o neurológica", labelEn: "Medical or neurological cause" },
   ],
 };
 

@@ -14,9 +14,17 @@
     "place_en": "Iraq, target area 92AS (MGRS coordinates partly redacted)"
   },
   "tier": "A",
-  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 16,
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "dron",
+  "classBasis": {
+    "es": "El parte de misión codifica la observación como «UAS» (sistema aéreo no tripulado) en el campo «Observed Activity Description», y describe objetos de «aproximadamente 1-2 metros» a «entre 80 y 180 millas por hora».",
+    "en": "The mission report codes the observation as \"UAS\" (unmanned aircraft system) in the \"Observed Activity Description\" field, and describes objects of \"approximately 1-2 meters\" at \"various speeds between 80-180 MPH\".",
+    "source": "DOW-UAP-D106, «Mission Report, Iraq, 2022» (PURSUE, entrega 6)",
+    "url": "/pursue/DOW-UAP-D106_mission-report-iraq-2022.pdf"
+  },
   "pursueReleases": [
     6
   ],

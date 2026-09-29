@@ -105,7 +105,7 @@ const frameworkList = readJsonList("frameworks.json", "frameworks");
 const STATS = {
   // Incidentes: los documentos no cuentan como casos (ver build-cases.mjs).
   cases: cases.filter((c) => c.category !== "document").length,
-  countries: new Set(cases.map((c) => c.country)).size,
+  countries: new Set(cases.filter((c) => c.category !== "document").map((c) => c.country)).size,
   tierS: cases.filter((c) => c.tier === "S").length,
   tierA: cases.filter((c) => c.tier === "A").length,
   tierB: cases.filter((c) => c.tier === "B").length,
@@ -662,7 +662,7 @@ for (const c of cases) {
   // abre en misid/natural/fraude según `mundanoType`. Sin el campo, el código
   // cae en "misid" por defecto (lib/meceModel.ts) → misclasificación silenciosa.
   // Se exige declararlo explícitamente.
-  const MUNDANO_TYPES = ["misid", "natural", "fraude", "instrumento", "psicosocial"];
+  const MUNDANO_TYPES = ["misid", "natural", "fraude", "instrumento", "psicosocial", "sin_propuesta"];
   if (total > 0 && p.mundano_natural / total >= 0.15 && !MUNDANO_TYPES.includes(c.mundanoType)) {
     record(
       "ERROR",
@@ -1860,6 +1860,25 @@ if (fs.existsSync(regionsPath)) {
   }
   if (pending > 0) {
     record("WARN", casesDir, 0, `E42 clasificación: ${pending} caso(s) con posterior sin \`evidenceReviewed\` (${reviewed} ya contrastados con su fuente primaria). Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. La probabilidad y el posterior se asignan después de leer la evidencia primaria, no un resumen.`);
+  }
+}
+
+// ─── 9za2. RULE E44: clase prosaica sin su porqué ─────────────────────────
+//
+// El detalle de cada caso muestra su clase prosaica (qué fue más plausiblemente)
+// y el porqué: la frase de la fuente que la fija (`classBasis`). Sin ella, el
+// lector ve una clase que parece deducida (decisión del dueño, 29 sep 2026).
+// WARN agregado por tier, mismo patrón que E42: el backlog queda medible.
+{
+  const byTier = { S: 0, A: 0, B: 0 };
+  let pending = 0, done = 0;
+  for (const c of cases) {
+    if (c.category === "document" || !c.posterior || !c.mundanoType) continue;
+    if (c.classBasis) { done++; continue; }
+    pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
+  }
+  if (pending > 0) {
+    record("WARN", casesDir, 0, `E44 clase sin porqué: ${pending} caso(s) con clase prosaica sin \`classBasis\` (${done} ya la citan). Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. La clase se muestra con la frase de la fuente que la fija.`);
   }
 }
 
