@@ -180,6 +180,8 @@ export interface ScoredCase {
   mundanoType?: UAPCase["mundanoType"];
   misidSubtype?: UAPCase["misidSubtype"];
   objectDetail?: UAPCase["objectDetail"];
+  /** La clase prosaica ya se contrastó con la fuente que la fija (`classBasis`). */
+  classSourced?: boolean;
 }
 
 export interface HypRow { key: string; label: string; labelEn: string; color: string; count: number; }
@@ -273,6 +275,7 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
       mundanoType: c.mundanoType,
       misidSubtype: c.misidSubtype,
       objectDetail: c.objectDetail,
+      classSourced: Boolean(c.classBasis),
     }));
 }
 

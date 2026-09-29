@@ -19,14 +19,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 43,
-  "mundanoType": "instrumento",
-  "objectDetail": "sensor_radar",
-  "classBasis": {
-    "es": "Mick West abre el análisis de Metabunk: 'parece un artefacto de difracción, es decir, brillo alrededor de una luz intensa'; otro participante concluye que la forma es 'un patrón de difracción inherente a la óptica del instrumento, y no la forma real del objeto', que sería 'una pequeña fuente de calor' oculta en el centro del destello.",
-    "en": "Mick West opens the Metabunk analysis: 'Looks like a diffraction artifact - i.e. glare around a bright light'; another participant concludes the shape is 'a diffraction pattern inherent to the instrument's optics, and not the actual shape of the object', which would be 'a small source of heat' hidden in the core of the glare.",
-    "source": "Metabunk, hilo 'PR038: The \"Chandelier\" UFO' (2026)",
-    "url": "https://www.metabunk.org/threads/pr38-the-chandelier-ufo.13307/"
-  },
+  "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.42,
     "humana_clasificada": 0.1,
@@ -77,12 +70,6 @@
       "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual con marcas de tiempo citada en whatHappened.",
       "note_en": "Video embedded in this case's viewer; the record includes the timestamped visual description quoted in whatHappened.",
       "name_en": "DVIDS — DOW-UAP-PR38, with AARO's official visual description (PURSUE Release 01)"
-    },
-    {
-      "name": "Metabunk — 'PR038: The \"Chandelier\" UFO'",
-      "url": "https://www.metabunk.org/threads/pr38-the-chandelier-ufo.13307/",
-      "note": "Análisis del foro: la estrella de ocho puntas como patrón de difracción del propio sensor (Raytheon MTS-B) alrededor de una fuente de calor pequeña.",
-      "note_en": "Forum analysis: the eight-pointed star as a diffraction pattern of the sensor itself (Raytheon MTS-B) around a small heat source."
     }
   ]
 }
