@@ -20,7 +20,7 @@
     "8e"
   ],
   "mundanoType": "misid",
-  "misidSubtype": "terrestre_otros",
+  "misidSubtype": "luces_tierra",
   "posterior": {
     "mundano_natural": 0.65,
     "humana_clasificada": 0.03,
@@ -93,5 +93,6 @@
       "name_en": "UFO Evidence — Campeche 2004 case file"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "objectDetail": "llama_industrial"
 }

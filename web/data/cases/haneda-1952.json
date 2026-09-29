@@ -15,6 +15,8 @@
   },
   "tier": "S",
   "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
   "epistemicStatus": "documented",
   "probability": 37,
   "summary": "La noche del 5 al 6 de agosto de 1952, cuatro operadores de la torre de Haneda AFB (Tokio) vigilaron durante cerca de una hora, con binoculares 7x50, una luz brillante baja hacia el noreste rodeada de una zona oscura; el radar del GCI de Shiroi siguió un blanco débil en la zona y un F-94 obtuvo un contacto de radar de unos 90 segundos, sin lograr el enganche ni ver nada. La tarjeta de Blue Book dice «Unknown»; el Informe Condon (1968) atribuyó la luz a la estrella Capella, que el cálculo sitúa justo en ese rumbo, y los ecos a propagación anómala.",
@@ -90,6 +92,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHaneda%20airport%204.jpg"
     }
   ],
-  "misidSubtype": "astronomico",
   "evidenceReviewed": "2026-09-28"
 }

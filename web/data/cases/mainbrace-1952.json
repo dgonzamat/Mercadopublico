@@ -15,6 +15,8 @@
   },
   "tier": "S",
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
   "epistemicStatus": "documented",
   "probability": 40,
   "summary": "Durante Operation Mainbrace (septiembre de 1952), el gran ejercicio naval de la OTAN en el Mar del Norte, se acumularon varios avistamientos militares con desenlaces distintos. La esfera plateada fotografiada desde el USS Franklin D. Roosevelt el 20 de septiembre fue cerrada por Blue Book como globo, después de que la Armada informara que el propio portaaviones había lanzado un globo meteorológico con reflector de radar poco antes de las fotos. El disco que cinco tripulantes de Shackleton vieron seguir a un Meteor sobre RAF Topcliffe el 19 de septiembre, durante 15 a 20 segundos, quedó sin explicar. Otros episodios, como el del Willemoes cerca de Bornholm o la persecución de unos Meteors, solo constan en la prensa y en relatos posteriores.",
@@ -96,6 +98,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:USS_Wright_(CVL-49),_HMS_Illustrious_(R87)_and_HMS_Eagle_(R05)_underway_in_the_North_Sea_in_September_1952_(IWM_A32288).jpg"
     }
   ],
-  "misidSubtype": "terrestre_otros",
   "evidenceReviewed": "2026-09-28"
 }

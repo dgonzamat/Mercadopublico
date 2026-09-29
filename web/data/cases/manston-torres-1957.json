@@ -14,7 +14,7 @@
     "place_en": "RAF Manston, Kent, over East Anglia"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 47,
   "summary": "Según el relato que escribió en 1988, la noche del 20 de mayo de 1957 el teniente de la USAF Milton Torres despegó de RAF Manston (Kent) en un F-86D y recibió la orden de disparar una salva de 24 cohetes contra un eco que el control de tierra seguía sobre East Anglia. Dentro de las nubes y sin verlo nunca, lo enganchó en su radar a 15 millas (24 km) con un retorno «con las proporciones de un portaaviones volador»; el eco se alejó, rompió el enganche y salió de su escala de 30 millas. Al día siguiente un civil le ordenó silencio. No hay registro militar de la época: el MoD y la USAF no hallaron ninguno, y el relato llegó al MoD en 1988 y se publicó en la liberación de archivos de 2008.",
@@ -92,6 +92,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALuftwaffe%20Photograph%20Of%20RAF%20Manston%201939.jpg"
     }
   ],
-  "misidSubtype": "terrestre_otros",
   "evidenceReviewed": "2026-09-28"
 }

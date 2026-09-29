@@ -18,6 +18,8 @@
   },
   "tier": "S",
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
   "epistemicStatus": "documented",
   "probability": 23,
   "summary": "El 12 de febrero de 2023, por orden del presidente Biden, un F-16 derribó con un misil AIM-9X un objeto sin propulsión que volaba a unos 20.000 pies sobre el Lago Hurón, descrito por un funcionario como una estructura octogonal con cuerdas colgantes. Fue el último de tres objetos pequeños derribados tras el globo espía chino; la Casa Blanca los evaluó como probables globos comerciales, recreativos o de investigación, y ningún resto se vinculó oficialmente al objeto. Un video infrarrojo del derribo apareció en la segunda entrega de PURSUE (2026).",
@@ -137,6 +139,5 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1007784"
     }
   ],
-  "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-29"
 }

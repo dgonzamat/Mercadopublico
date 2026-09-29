@@ -17,7 +17,7 @@
     "place": "Sandia Base, New Mexico"
   },
   "tier": "S",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 34,
   "summary": "Entre diciembre de 1948 y mayo de 1950 la oficina de la OSI en Kirtland compiló unos 150 incidentes de luces en el cielo del corredor nuclear de Nuevo México; el meteoriticista Lincoln La Paz aceptó 72 como «bolas de fuego verdes», menos del 5% de todos los reportes que recibió. Dos conferencias en Los Álamos no hallaron explicación, y el Project Twinkle cerró en 1951 sin conclusión. Los documentos se publicaron en 2026 en la entrega 02 de PURSUE.",
@@ -92,5 +92,7 @@
       "name_en": "USAEC / Los Alamos — minutes of the «Conference on Aerial Phenomena» (16 Feb 1949, room P-162)"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro"
 }

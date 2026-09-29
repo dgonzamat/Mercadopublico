@@ -15,6 +15,7 @@
   },
   "tier": "S",
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
   "epistemicStatus": "documented",
   "probability": 43,
   "summary": "El 27 de febrero de 2019, hacia la 01:30, la torre del aeropuerto Jorge Chávez de Lima observó al oeste, sobre el mar, «aparentemente dos ovnis» a unos 8.000 pies, y las tripulaciones de dos vuelos que esperaban para despegar (LANPERÚ 2437 y LATAM ECUADOR 1442) confirmaron tenerlos a la vista. Uno apareció por momentos en la pantalla del radar a 5 millas náuticas, y a las 07:12 UTC ya no se veían. La DIFAA de la Fuerza Aérea recibió los reportes; un asesor civil habló a CNN de una confirmación por radar, pero la FAP precisó por comunicado que no había confirmado ovnis, y su naturaleza quedó sin determinar.",
@@ -134,6 +135,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAeropuerto%20Internacional%20Jorge%20Ch%C3%A1vez%20en%202024.jpg"
     }
   ],
-  "misidSubtype": "terrestre_otros",
   "evidenceReviewed": "2026-09-29"
 }

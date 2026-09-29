@@ -202,8 +202,9 @@ for (const file of caseFiles) {
     }
   }
   // mundanoType (opcional): sub-tipo de la explicación prosaica.
-  if (c.mundanoType !== undefined && !["misid", "natural", "fraude"].includes(c.mundanoType)) {
-    err(w, `mundanoType inválido "${c.mundanoType}" (misid|natural|fraude)`);
+  const MUNDANO_TYPES = ["misid", "natural", "fraude", "instrumento", "psicosocial"];
+  if (c.mundanoType !== undefined && !MUNDANO_TYPES.includes(c.mundanoType)) {
+    err(w, `mundanoType inválido "${c.mundanoType}" (${MUNDANO_TYPES.join("|")})`);
   }
   // misidSubtype (opcional): con qué objeto conocido se confundió. Solo válido en
   // casos misid (drill-down bajo «Misidentificación»).
@@ -219,7 +220,7 @@ for (const file of caseFiles) {
   // mundanoType no admiten detalle. Los valores por clase salen de
   // OBJECT_DETAILS en lib/meceClasses.ts (parseado arriba, fuente única).
   if (c.objectDetail !== undefined) {
-    const cls = c.mundanoType === "misid" ? c.misidSubtype ?? "terrestre_otros" : c.mundanoType === "natural" ? "natural" : null;
+    const cls = c.mundanoType === "misid" ? c.misidSubtype ?? "terrestre_otros" : c.mundanoType && c.mundanoType !== "fraude" ? c.mundanoType : null;
     const allowed = cls ? OBJECT_DETAILS[cls] : undefined;
     if (!cls) {
       err(w, `objectDetail "${c.objectDetail}" presente pero el caso no es misid ni natural (mundanoType "${c.mundanoType ?? "ausente"}") — fraude y los casos sin mundanoType no llevan detalle`);

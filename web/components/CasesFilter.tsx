@@ -34,6 +34,8 @@ export type HypKey =
   | "terrestre_otros"
   | "natural"
   | "fraude"
+  | "instrumento"
+  | "psicosocial"
   | "humana_clasificada"
   | "adversaria"
   | "nohumano"
@@ -46,10 +48,12 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "astronomico", es: "Objeto astronómico", en: "Astronomical object" },
   { key: "aeronave", es: "Aeronave", en: "Aircraft" },
   { key: "espacial", es: "Objeto espacial", en: "Space object" },
-  { key: "luces_tierra", es: "Luces en tierra", en: "Ground lights" },
+  { key: "luces_tierra", es: "En tierra", en: "Ground-level" },
   { key: "terrestre_otros", es: "Objeto convencional no precisado", en: "Conventional object, not pinned down" },
   { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
   { key: "fraude", es: "Posible fraude", en: "Possible hoax" },
+  { key: "instrumento", es: "Fallo de instrumento", en: "Instrument artifact" },
+  { key: "psicosocial", es: "Causa psicológica o social", en: "Psychological or social cause" },
   { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
   { key: "adversaria", es: "Tecnología adversaria", en: "Adversary tech" },
   { key: "nohumano", es: "No-humano", en: "Non-human" },
