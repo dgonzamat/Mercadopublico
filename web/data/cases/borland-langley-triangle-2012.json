@@ -15,14 +15,14 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "probability": 88,
+  "probability": 58,
   "posterior": {
-    "mundano_natural": 0,
+    "mundano_natural": 0.3,
     "humana_clasificada": 0.1,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.18,
     "nohumano_abierto": 0.05,
-    "indet": 0.65
+    "indet": 0.35
   },
   "summary": "En el verano de 2012, el especialista de inteligencia geoespacial de la Fuerza Aérea Dylan Borland reportó haber visto, cerca del hangar de la NASA en la base Langley (Virginia), un objeto triangular de ~100-150 pies que interfirió su teléfono, no emitió sonido y ascendió a velocidad extrema antes de desaparecer sobre el Atlántico. El episodio permaneció privado hasta que Borland lo relató bajo juramento ante el Congreso el 9 de septiembre de 2025, alegando represalias profesionales posteriores. En agosto de 2026 escaló su relato en una entrevista, afirmando que una inteligencia no-humana 'controla' el encubrimiento —una interpretación suya sobre un comentario ajeno de segunda mano, sin nuevo dato verificable.",
   "summary_en": "In the summer of 2012, Air Force geospatial intelligence specialist Dylan Borland reported seeing, near the NASA hangar at Langley Air Force Base (Virginia), a triangular object roughly 100-150 feet across that interfered with his phone, made no sound, and ascended at extreme speed before disappearing over the Atlantic. The episode stayed private until Borland recounted it under oath before Congress on September 9, 2025, alleging subsequent professional retaliation. In August 2026 he escalated the account in an interview, claiming a non-human intelligence 'controls' the cover-up —his own interpretation of a secondhand, unnamed comment, with no new verifiable data.",
@@ -108,9 +108,10 @@
     }
   ],
   "classBasis": {
-    "es": "Sin candidato prosaico en las fuentes: ni el testimonio escrito de Borland ante el Congreso (9 sep 2025) ni la transcripción de la audiencia ni la cobertura posterior proponen una explicación convencional para el triángulo. En la audiencia, la representante Mace comentó en general que 'hay veces que hay globos meteorológicos que se ven algo raros, o drones', sin aplicarlo a este caso; y Borland contó que al ver la luz aparecer 'pensé que era un globo meteorológico', antes de acercarse.",
-    "en": "No prosaic candidate in the sources: neither Borland's written testimony to Congress (Sep 9, 2025) nor the hearing transcript nor later coverage proposes a conventional explanation for the triangle. At the hearing, Rep. Mace remarked in general that 'there are sometimes weather balloons that look a little funky or drones', without applying it to this case; and Borland said that when the light popped up 'I thought it was a weather balloon', before walking closer.",
-    "source": "Borland, testimonio escrito (9 sep 2025) y transcripción de la audiencia 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection' (Rev.com)",
+    "es": "Sin candidato prosaico en las fuentes: ni el testimonio escrito de Borland ante el Congreso (9 sep 2025) ni la transcripción de la audiencia ni la cobertura posterior proponen una explicación convencional para el triángulo. En la audiencia, la representante Mace comentó en general que 'hay veces que hay globos meteorológicos que se ven algo raros, o drones', sin aplicarlo a este caso; y Borland contó que al ver la luz aparecer 'pensé que era un globo meteorológico', antes de acercarse. Como tasa de base para casos parecidos, la AARO informa en su informe anual del año fiscal 2025 que resolvió 370 investigaciones y que 'todos los casos resueltos se atribuyeron a explicaciones ordinarias'.",
+    "en": "No prosaic candidate in the sources: neither Borland's written testimony to Congress (Sep 9, 2025) nor the hearing transcript nor later coverage proposes a conventional explanation for the triangle. At the hearing, Rep. Mace remarked in general that 'there are sometimes weather balloons that look a little funky or drones', without applying it to this case; and Borland said that when the light popped up 'I thought it was a weather balloon', before walking closer. As a base rate for similar cases, AARO's FY2025 annual report states that it resolved 370 investigations and that 'every resolved case was attributed to ordinary explanations'.",
+    "source": "Borland, testimonio escrito (9 sep 2025) y transcripción de la audiencia 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection' (Rev.com); AARO, FY2025 Consolidated Annual Report on UAP (21 jul 2026), según The Black Vault",
     "url": "https://www.rev.com/transcripts/house-uap-whistleblower-hearing"
-  }
+  },
+  "mundanoType": "sin_propuesta"
 }
