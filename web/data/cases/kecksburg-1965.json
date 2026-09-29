@@ -13,7 +13,9 @@
     "place_en": "Kecksburg, Pennsylvania"
   },
   "tier": "S",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "epistemicStatus": "documented",
   "probability": 31,
   "summary": "El 9 de diciembre de 1965 un bólido cruzó el cielo de los Grandes Lagos y fue visto desde varios estados de EE.UU. y Ontario; en Kecksburg (Pensilvania) vecinos denunciaron que algo había caído en el bosque. El expediente de Blue Book registra una búsqueda de la Fuerza Aérea y la policía estatal que terminó sin hallar nada y cierra el caso como meteoro; la prensa de diciembre de 1965 ya habló de una zona boscosa acordonada durante horas mientras se buscaban restos, pero el relato de un objeto metálico en forma de bellota retirado en camión por militares surgió décadas después. Una demanda FOIA contra la NASA reveló que sus archivos de fragología de esos años no aparecen.",

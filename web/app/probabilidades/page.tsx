@@ -38,8 +38,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "A space object: rocket or missile, satellite or reentry —launches, stages and debris reentering, satellite trains. Launch catalogs make it possible to date them and often identify them.",
   },
   luces_tierra: {
-    es: "Luces en tierra: un faro o reflector, una bengala o fuegos artificiales, los faros de un vehículo. La fuente estaba en el suelo o cerca de él, y la distancia o el relieve la hicieron parecer otra cosa.",
-    en: "Ground lights: a beacon or searchlight, a flare or fireworks, a vehicle's headlights. The source was on or near the ground, and distance or terrain made it look like something else.",
+    es: "Algo en tierra: un faro o reflector, una bengala o fuegos artificiales, los faros de un vehículo, la llama de una plataforma, o una persona o un animal. La fuente estaba en el suelo o cerca de él, y la distancia, el relieve o el miedo la hicieron parecer otra cosa.",
+    en: "Something on the ground: a beacon or searchlight, a flare or fireworks, a vehicle's headlights, a platform's gas flare, or a person or an animal. The source was on or near the ground, and distance, terrain or fear made it look like something else.",
   },
   terrestre_otros: {
     es: "Un objeto convencional no precisado: el análisis inclina a algo ordinario —un reflejo, un error perceptual— pero la evidencia no fija de qué clase de objeto se trata.",
@@ -52,6 +52,14 @@ const BLURB: Record<string, { es: string; en: string }> = {
   fraude: {
     es: "Posible engaño deliberado: montaje, fabricación o hoax. La clasificación señala el candidato más plausible, no un veredicto cerrado.",
     en: "Possible deliberate deception: staging, fabrication or hoax. The classification flags the most plausible candidate, not a closed verdict.",
+  },
+  instrumento: {
+    es: "Fallo de instrumento: lo anómalo lo produjo el equipo, no el cielo — un defecto de película o de revelado, un artefacto de sensor, un eco falso de radar o una avería que se atribuyó al objeto.",
+    en: "Instrument artifact: the anomaly came from the equipment, not the sky — a film or processing defect, a sensor artifact, a false radar echo or a failure that was blamed on the object.",
+  },
+  psicosocial: {
+    es: "Causa psicológica o social: contagio colectivo, sugestión o parálisis del sueño. Los testigos no mienten; lo que relatan se explica por cómo se percibe y se recuerda en grupo o en estados alterados.",
+    en: "Psychological or social cause: collective contagion, suggestion or sleep paralysis. Witnesses are not lying; what they report is explained by how people perceive and remember in groups or altered states.",
   },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
@@ -119,8 +127,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
       </H1>
       <Lede>
         <T
-          es={`Los ${incidents} incidentes del corpus se clasifican, cada uno, en una narrativa según la naturaleza del objeto. Lo prosaico se nombra por lo que era —objeto astronómico, aeronave, objeto espacial, luces en tierra—, más fenómeno natural y posible fraude; «no-humano» agrupa encubierto + abierto. Los incidentes inconclusos caen en «Indeterminado». Los ${docCount} casos-documento del archivo no entran: son evidencia de los sucesos, no sucesos. Sumadas, las narrativas reparten los incidentes de forma comparable: se puede decir cuál da cuenta de más casos.`}
-          en={`The corpus's ${incidents} incidents are each classified into one narrative by the nature of the object. The prosaic is named by what it was —astronomical object, aircraft, space object, ground lights—, plus natural phenomenon and possible hoax; 'non-human' groups covert + open. Inconclusive incidents fall into 'Indeterminate'. The archive's ${docCount} document cases are left out: they are evidence of the events, not events. Summed, the narratives partition the incidents comparably: one can say which accounts for more cases.`}
+          es={`Los ${incidents} incidentes del corpus se clasifican, cada uno, en una narrativa según la naturaleza del objeto. Lo prosaico se nombra por lo que era —objeto astronómico, aeronave, objeto espacial, algo en tierra—, más fenómeno natural, fallo de instrumento, causa psicológica o social y posible fraude; «no-humano» agrupa encubierto + abierto. Los incidentes inconclusos caen en «Indeterminado». Los ${docCount} casos-documento del archivo no entran: son evidencia de los sucesos, no sucesos. Sumadas, las narrativas reparten los incidentes de forma comparable: se puede decir cuál da cuenta de más casos.`}
+          en={`The corpus's ${incidents} incidents are each classified into one narrative by the nature of the object. The prosaic is named by what it was —astronomical object, aircraft, space object, something on the ground—, plus natural phenomenon, instrument artifact, psychological or social cause and possible hoax; 'non-human' groups covert + open. Inconclusive incidents fall into 'Indeterminate'. The archive's ${docCount} document cases are left out: they are evidence of the events, not events. Summed, the narratives partition the incidents comparably: one can say which accounts for more cases.`}
           locale={locale}
         />
       </Lede>

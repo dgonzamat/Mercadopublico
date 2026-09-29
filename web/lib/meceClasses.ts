@@ -93,14 +93,14 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   { key: "astronomico", label: "Objeto astronómico", labelEn: "Astronomical object", color: "#3d6a8f" },
   { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#7d95a6" },
   { key: "espacial", label: "Objeto espacial", labelEn: "Space object", color: "#3f4e5a" },
-  { key: "luces_tierra", label: "Luces en tierra", labelEn: "Ground lights", color: "#9a6a8a" },
+  { key: "luces_tierra", label: "En tierra", labelEn: "Ground-level", color: "#9a6a8a" },
   // TRANSITORIO: el bucket de misid sin objeto fijado. Se conserva válido
   // mientras la pasada de datos reparte sus casos entre las clases de arriba.
   // Recoge también los casos misid sin `misidSubtype`.
   { key: "terrestre_otros", label: "Objeto convencional no precisado", labelEn: "Conventional object, not pinned down", color: "#5a6b7a" },
 ];
 
-export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude";
+export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude" | "instrumento" | "psicosocial";
 
 /** Las clases prosaicas que se MUESTRAN (primer nivel): las de objeto
  *  (misidSubtype) + fenómeno natural + posible fraude. MECE dentro de
@@ -109,13 +109,15 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   ...MISID_SUBTYPES,
   { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
   { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
+  { key: "instrumento", label: "Fallo de instrumento", labelEn: "Instrument artifact", color: "#8a7d3a" },
+  { key: "psicosocial", label: "Causa psicológica o social", labelEn: "Psychological or social cause", color: "#6a5f94" },
 ];
 
 /** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.
  *  Sin `mundanoType` el modelo ya caía en misid (M2 de audit-consistency lo
  *  vigila); misid sin subtipo → «objeto convencional no precisado». */
 export function prosaicKey(mundanoType?: MundanoType, misidSubtype?: MisidSubtype): ProsaicKey {
-  if (mundanoType === "natural" || mundanoType === "fraude") return mundanoType;
+  if (mundanoType && mundanoType !== "misid") return mundanoType;
   return misidSubtype ?? "terrestre_otros";
 }
 
@@ -148,10 +150,23 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "faro_reflector", label: "Faro o reflector", labelEn: "Beacon or searchlight" },
     { key: "bengala", label: "Bengala o pirotecnia", labelEn: "Flare or fireworks" },
     { key: "vehiculo", label: "Vehículo", labelEn: "Vehicle" },
+    { key: "llama_industrial", label: "Llama industrial", labelEn: "Industrial flare" },
+    { key: "persona", label: "Persona", labelEn: "Person" },
+    { key: "animal", label: "Animal", labelEn: "Animal" },
   ],
   natural: [
     { key: "atmosferico", label: "Atmosférico (rayo en bola, nubes)", labelEn: "Atmospheric (ball lightning, clouds)" },
-    { key: "optico", label: "Óptico (espejismo, refracción)", labelEn: "Optical (mirage, refraction)" },
+    { key: "optico", label: "Óptico (espejismo, refracción, propagación anómala del radar)", labelEn: "Optical (mirage, refraction, anomalous radar propagation)" },
+  ],
+  instrumento: [
+    { key: "pelicula_foto", label: "Defecto de película o foto", labelEn: "Film or photo defect" },
+    { key: "sensor_radar", label: "Artefacto del sensor o del radar", labelEn: "Sensor or radar artifact" },
+    { key: "falla_equipo", label: "Avería de equipo", labelEn: "Equipment failure" },
+  ],
+  psicosocial: [
+    { key: "contagio_colectivo", label: "Contagio colectivo", labelEn: "Collective contagion" },
+    { key: "sugestion", label: "Sugestión", labelEn: "Suggestion" },
+    { key: "paralisis_sueno", label: "Parálisis del sueño", labelEn: "Sleep paralysis" },
   ],
 };
 

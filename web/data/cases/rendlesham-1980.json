@@ -121,6 +121,7 @@
     "license": "Dominio público · US Government work",
     "href": "https://commons.wikimedia.org/wiki/File:Halt_Memorandum.jpg"
   },
-  "misidSubtype": "terrestre_otros",
-  "evidenceReviewed": "2026-09-29"
+  "misidSubtype": "luces_tierra",
+  "evidenceReviewed": "2026-09-29",
+  "objectDetail": "faro_reflector"
 }

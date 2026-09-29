@@ -14,7 +14,7 @@
     "place_en": "Lake Cote · Arenal-Tilarán"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "instrumento",
   "epistemicStatus": "documented",
   "probability": 60,
   "summary": "El 4 de septiembre de 1971, una cámara aerofotogramétrica del Instituto Geográfico Nacional, en vuelo de relevamiento sobre el Lago de Cote, captó automáticamente un objeto discoidal en un único fotograma de la secuencia, el 300. Su tamaño depende de una distancia que no se conoce: unos 80 a 100 metros si estaba cerca de la superficie del lago. La cadena de custodia gubernamental y el análisis de Haines y Vallée, que en 1990 examinaron el negativo original sin hallar deformación, defecto ni indicio de montaje, la sitúan entre la mejor evidencia fotográfica del corpus.",
@@ -101,6 +101,5 @@
     "license": "Dominio público",
     "href": "https://commons.wikimedia.org/wiki/File:Cote_ufo.jpg"
   },
-  "misidSubtype": "terrestre_otros",
   "evidenceReviewed": "2026-09-28"
 }
