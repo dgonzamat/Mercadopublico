@@ -5,7 +5,7 @@ import {
   expandedHypotheses,
   modalCounts,
   modalHypothesis,
-  MISID_SUBTYPES,
+  PROSAIC_CLASSES,
   type ScoredCase,
 } from "@/lib/meceModel";
 import type { MisidSubtype } from "@/lib/types";
@@ -92,20 +92,22 @@ export function MecePartition({
 
   // Vistas derivadas, también por hipótesis modal para no chocar con el gráfico.
   const modalKeys = scored.map((c) => modalHypothesis(c, { consolidateNonHuman, keepIndet }).key);
-  const PROSAIC = new Set(["misid", "natural", "fraude"]);
+  // Las seis clases prosaicas de primer nivel (cuatro de objeto + natural + fraude).
+  const PROSAIC = new Set<string>(PROSAIC_CLASSES.map((c) => c.key));
   const NONHUMAN = new Set(["nohumano", "nohumano_encubierto", "nohumano_abierto"]);
   // El eje macro prosaico-vs-anómalo solo tiene sentido sobre los casos
   // CLASIFICABLES: «Indeterminado» no es ni prosaico ni anómalo, así que se
   // excluye del denominador (si no, se contaría como anómalo/secreto, que es falso).
   const indetCount = modalKeys.filter((k) => k === "indet").length;
   const classifiable = N - indetCount;
-  const prosaico = modalKeys.filter((k) => PROSAIC.has(k)).length; // misid + natural + fraude
+  const prosaico = modalKeys.filter((k) => PROSAIC.has(k)).length; // objeto convencional (4 clases) + natural + fraude
   const anomalo = classifiable - prosaico;
   const enh = modalKeys.filter((k) => NONHUMAN.has(k)).length;
   const derivedBase = classifiable || 1;
   const ejeMacro = pctParts([prosaico / derivedBase, anomalo / derivedBase]);
   const colorOf = Object.fromEntries(rows.map((r) => [r.key, r.color])) as Record<string, string>;
-  const prosaicoColor = colorOf.misid ?? rows[0].color;
+  // Color del eje «prosaico»: la clase prosaica con más casos (rows viene desc).
+  const prosaicoColor = rows.find((r) => PROSAIC.has(r.key))?.color ?? rows[0].color;
   const anomaloColor = colorOf.nohumano ?? colorOf.nohumano_encubierto ?? rows[rows.length - 1].color;
 
   return (
@@ -161,7 +163,8 @@ export function MecePartition({
 }
 
 /** Posterior de un caso: barra apilada al 100% + hipótesis modal (clasificación
- *  forzada; mundano/natural abierto en su sub-tipo). */
+ *  forzada; mundano/natural abierto en su clase prosaica concreta — el objeto,
+ *  vía `misidSubtype`, o fenómeno natural / posible fraude). */
 export function CasePosterior({
   posterior,
   mundanoType,
@@ -173,18 +176,12 @@ export function CasePosterior({
   misidSubtype?: MisidSubtype;
   locale: "es" | "en";
 }) {
-  const rows = expandedHypotheses([{ posterior, mundanoType }]);
+  const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }]);
   const m = rows[0];
   // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los
   // enteros impresos tienen que sumarlo — redondear cada fila por separado daba
   // 101%. `m` es rows[0] (expandedHypotheses viene ordenado desc).
   const partes = pctParts(rows.map((r) => r.count));
-  // Drill-down bajo «Misidentificación»: con qué objeto conocido se confundió.
-  // Solo se muestra si la hipótesis modal ES misid y el caso trae el subtipo.
-  const sub =
-    m.key === "misid" && misidSubtype
-      ? MISID_SUBTYPES.find((s) => s.key === misidSubtype)
-      : undefined;
   return (
     <div>
       <div className="flex h-4 w-full overflow-hidden rounded-sm">
@@ -210,14 +207,6 @@ export function CasePosterior({
         </span>{" "}
         {partes[0]}% · <T es="suma 100%" en="sums to 100%" locale={locale} />
       </p>
-      {sub && (
-        <p className="mt-1.5 font-mono text-[11px] uppercase tracking-widest text-muted">
-          <T es="Se confundió con" en="Confused with" locale={locale} />:{" "}
-          <span style={{ color: sub.color }} className="font-semibold">
-            <T es={sub.label} en={sub.labelEn} locale={locale} />
-          </span>
-        </p>
-      )}
     </div>
   );
 }

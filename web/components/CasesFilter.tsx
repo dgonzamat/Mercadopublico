@@ -27,7 +27,10 @@ import { searchKey } from "@/lib/searchKey";
  */
 
 export type HypKey =
-  | "misid"
+  | "astronomico"
+  | "aeronave"
+  | "espacial"
+  | "terrestre_otros"
   | "natural"
   | "fraude"
   | "humana_clasificada"
@@ -36,7 +39,13 @@ export type HypKey =
   | "indet";
 
 const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
-  { key: "misid", es: "Misidentificación", en: "Misidentification" },
+  // Lo prosaico se nombra por el objeto (misidSubtype), no por el error del
+  // testigo. Etiquetas = PROSAIC_CLASSES de lib/meceClasses (no se importa aquí
+  // para mantener este componente cliente libre de lib de modelo).
+  { key: "astronomico", es: "Objeto astronómico", en: "Astronomical object" },
+  { key: "aeronave", es: "Aeronave o globo", en: "Aircraft or balloon" },
+  { key: "espacial", es: "Cohete, satélite o reentrada", en: "Rocket, satellite or reentry" },
+  { key: "terrestre_otros", es: "Objeto convencional no precisado", en: "Conventional object, not pinned down" },
   { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
   { key: "fraude", es: "Posible fraude", en: "Possible hoax" },
   { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
@@ -47,13 +56,22 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
 
 const HYP_KEYS = new Set<string>(HYP_ORDER.map((h) => h.key));
 
+/** Alias LEGADO de deep-link: `#misid` era la hipótesis «Misidentificación»,
+ *  hoy abierta en las cuatro clases de objeto. Un enlace viejo filtra la UNIÓN
+ *  de las cuatro (regla `[data-hyp-filter="misid"]` en globals.css), así sigue
+ *  mostrando los mismos casos. No aparece como opción del select salvo cuando
+ *  llega por un enlace viejo, para que el control refleje el filtro activo. */
+const LEGACY_MISID = "misid";
+const LEGACY_MISID_LABEL = { es: "Objeto convencional · 4 clases", en: "Conventional object · 4 classes" };
+type HypFilter = HypKey | typeof LEGACY_MISID;
+const MISID_OBJECT_KEYS: ReadonlyArray<HypKey> = ["astronomico", "aeronave", "espacial", "terrestre_otros"];
+
 export type FacetOption = { key: string; es: string; en: string; count: number };
 
 export function CasesFilter({
   locale,
   regionCounts,
   hypCounts,
-  misidSubtypes,
   eras,
   tiers,
   total,
@@ -62,26 +80,25 @@ export function CasesFilter({
   locale: "es" | "en";
   regionCounts: Partial<Record<Region, number>>;
   hypCounts: Partial<Record<HypKey, number>>;
-  misidSubtypes: FacetOption[];
   eras: FacetOption[];
   tiers: FacetOption[];
   total: number;
   children: React.ReactNode;
 }) {
   const [region, setRegion] = useState<Region | "all">("all");
-  const [hyp, setHyp] = useState<HypKey | "all">("all");
-  const [misid, setMisid] = useState<string | "all">("all");
+  const [hyp, setHyp] = useState<HypFilter | "all">("all");
   const [era, setEra] = useState<string | "all">("all");
   const [tier, setTier] = useState<string | "all">("all");
   const [query, setQuery] = useState("");
   const [matchCount, setMatchCount] = useState(total);
   const rootRef = useRef<HTMLDivElement>(null);
 
-  // Deep-link por hash (#nohumano, #misid…) — al montar y en cada hashchange.
+  // Deep-link por hash (#nohumano, #aeronave…) — al montar y en cada hashchange.
+  // `#misid` (legado) filtra la unión de las cuatro clases de objeto.
   useEffect(() => {
     const sync = () => {
       const h = window.location.hash.replace(/^#/, "");
-      if (HYP_KEYS.has(h)) setHyp(h as HypKey);
+      if (HYP_KEYS.has(h) || h === LEGACY_MISID) setHyp(h as HypFilter);
     };
     sync();
     window.addEventListener("hashchange", sync);
@@ -95,10 +112,6 @@ export function CasesFilter({
     const measure = () => {
       const root = rootRef.current;
       if (!root) return;
-      // El subtipo solo aplica bajo «Misidentificación»: fuera de ahí se ignora
-      // (el select ni se muestra), así un valor viejo nunca filtra de más.
-      const em = hyp === "misid" ? misid : "all";
-
       // La consulta se normaliza con la MISMA función con que el servidor
       // escribió `data-search`, para que la comparación sea substring pelado.
       const q = searchKey(query.trim());
@@ -109,8 +122,11 @@ export function CasesFilter({
 
       const sel =
         (region !== "all" ? `[data-region="${region}"]` : "") +
-        (hyp !== "all" ? `[data-hyp="${hyp}"]` : "") +
-        (em !== "all" ? `[data-misid="${em}"]` : "") +
+        (hyp === LEGACY_MISID
+          ? `:is(${MISID_OBJECT_KEYS.map((k) => `[data-hyp="${k}"]`).join(",")})`
+          : hyp !== "all"
+            ? `[data-hyp="${hyp}"]`
+            : "") +
         (era !== "all" ? `[data-era="${era}"]` : "") +
         (tier !== "all" ? `[data-tier="${tier}"]` : "");
       // todo wrapper de caso lleva data-region; :not([data-nomatch]) mete la
@@ -124,19 +140,14 @@ export function CasesFilter({
       });
     };
     measure();
-  }, [region, hyp, misid, era, tier, query]);
-
-  // El subtipo solo cuenta bajo «Misidentificación»: fuera de ahí se ignora sin
-  // resetear el estado (deriva > efecto → sin cascada de renders, lint-clean).
-  const effectiveMisid = hyp === "misid" ? misid : "all";
+  }, [region, hyp, era, tier, query]);
 
   const availRegions = REGION_ORDER.filter((r) => (regionCounts[r] ?? 0) > 0);
   const availHyps = HYP_ORDER.filter((h) => (hypCounts[h.key] ?? 0) > 0);
 
   const regionLabel = (r: Region) => REGION_LABELS[r][locale];
-  const hypLabel = (k: HypKey) => HYP_ORDER.find((h) => h.key === k)![locale];
-  const misidLabel = (k: string) =>
-    misidSubtypes.find((s) => s.key === k)?.[locale] ?? k;
+  const hypLabel = (k: HypFilter) =>
+    k === LEGACY_MISID ? LEGACY_MISID_LABEL[locale] : HYP_ORDER.find((h) => h.key === k)![locale];
   const optLabel = (opts: FacetOption[], k: string) => {
     const o = opts.find((x) => x.key === k);
     return o ? o[locale] : k;
@@ -149,8 +160,6 @@ export function CasesFilter({
     active.push({ key: `region:${region}`, label: regionLabel(region), clear: () => setRegion("all") });
   if (hyp !== "all")
     active.push({ key: `hyp:${hyp}`, label: hypLabel(hyp), clear: () => setHyp("all") });
-  if (effectiveMisid !== "all")
-    active.push({ key: `misid:${effectiveMisid}`, label: misidLabel(effectiveMisid), clear: () => setMisid("all") });
   if (tier !== "all")
     active.push({ key: `tier:${tier}`, label: optLabel(tiers, tier), clear: () => setTier("all") });
   if (query.trim())
@@ -160,7 +169,6 @@ export function CasesFilter({
     setEra("all");
     setRegion("all");
     setHyp("all");
-    setMisid("all");
     setTier("all");
     setQuery("");
   };
@@ -173,7 +181,6 @@ export function CasesFilter({
       ref={rootRef}
       data-region-filter={region}
       data-hyp-filter={hyp}
-      data-misid-filter={effectiveMisid}
       data-era-filter={era}
       data-tier-filter={tier}
       className="space-y-4"
@@ -203,10 +210,15 @@ export function CasesFilter({
         />
         <FacetSelect
           value={hyp}
-          onChange={(v) => setHyp(v as HypKey | "all")}
+          onChange={(v) => setHyp(v as HypFilter | "all")}
           ariaLabel={locale === "es" ? "Filtrar por explicación" : "Filter by explanation"}
           allLabel={locale === "es" ? "Explicación · todas" : "Explanation · all"}
-          options={availHyps.map((h) => ({ value: h.key, label: `${hypLabel(h.key)} · ${hypCounts[h.key] ?? 0}` }))}
+          options={[
+            ...(hyp === LEGACY_MISID
+              ? [{ value: LEGACY_MISID, label: `${LEGACY_MISID_LABEL[locale]} · ${MISID_OBJECT_KEYS.reduce((a, k) => a + (hypCounts[k] ?? 0), 0)}` }]
+              : []),
+            ...availHyps.map((h) => ({ value: h.key, label: `${hypLabel(h.key)} · ${hypCounts[h.key] ?? 0}` })),
+          ]}
         />
         <FacetSelect
           value={tier}
@@ -251,26 +263,6 @@ export function CasesFilter({
           )}
         </div>
       </div>
-
-      {/* Sub-faceta (drill-down): con qué se confundió. Solo bajo «Misidentificación». */}
-      {hyp === "misid" && misidSubtypes.length > 0 && (
-        <div
-          className="flex flex-wrap items-center gap-2 border-l-2 border-accent/30 pl-3"
-          role="group"
-          aria-label={locale === "es" ? "Filtrar por subtipo de misidentificación" : "Filter by misidentification subtype"}
-        >
-          <span className="mr-1 font-mono text-xs uppercase tracking-widest text-muted">
-            <T es="¿Con qué?" en="With what?" locale={locale} />
-          </span>
-          <FacetSelect
-            value={misid}
-            onChange={setMisid}
-            ariaLabel={locale === "es" ? "Filtrar por subtipo de misidentificación" : "Filter by misidentification subtype"}
-            allLabel={locale === "es" ? "Subtipo · todos" : "Subtype · all"}
-            options={misidSubtypes.map((s) => ({ value: s.key, label: `${s[locale]} · ${s.count}` }))}
-          />
-        </div>
-      )}
 
       {/* Filtros activos (pills removibles) + conteo vivo + limpiar todo. */}
       {anyActive && (

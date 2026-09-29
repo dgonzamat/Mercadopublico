@@ -72,27 +72,10 @@ export function dominantNarrativeLabel(p: Posterior): string {
   return MECE_LABEL_BY_ID[dominantNarrative(p)];
 }
 
-// ─── Subtipos de la narrativa mundano/natural (drill-down navegable) ─────────
+// ─── Clases prosaicas de la narrativa mundano/natural (primer nivel) ─────────
 // Viven aquí (data-free, junto a MECE_CLASSES) para que el explorer cliente los
 // use como dimensiones sin arrastrar el corpus. meceModel los re-exporta. Los
 // colores viven en lib (no en app/components) → fuera del scan de audit-design.
-
-/** Sub-tipos de mundano/natural (MODELO DE DATOS: `mundanoType`). Se conservan
- *  como vocabulario del dato y de sus validadores, pero NO se muestran tal cual:
- *  «misid» describe el error del testigo, no lo que era el objeto, así que en
- *  pantalla se abre en las clases concretas de `MISID_SUBTYPES` (ver
- *  `PROSAIC_CLASSES`). Su `label` es la del agregado interno, no una etiqueta
- *  de UI. */
-export const MUNDANO_SUBTYPES: ReadonlyArray<{
-  key: "misid" | "natural" | "fraude";
-  label: string;
-  labelEn: string;
-  color: string;
-}> = [
-  { key: "misid", label: "Objeto convencional", labelEn: "Conventional object", color: "#5a6b7a" },
-  { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
-  { key: "fraude", label: "Posible fraude", labelEn: "Possible hoax", color: "#8a6b5a" },
-];
 
 /** Clases de OBJETO dentro de mundanoType="misid" (`misidSubtype`): qué era el
  *  objeto. Se muestran como clases de PRIMER NIVEL (no como drill-down bajo una

@@ -140,7 +140,12 @@ a {
 [data-region-filter="medio-oriente"] [data-region]:not([data-region="medio-oriente"]),
 [data-region-filter="oceania"] [data-region]:not([data-region="oceania"]),
 [data-region-filter="africa"] [data-region]:not([data-region="africa"]),
-[data-hyp-filter="misid"] [data-hyp]:not([data-hyp="misid"]),
+[data-hyp-filter="astronomico"] [data-hyp]:not([data-hyp="astronomico"]),
+[data-hyp-filter="aeronave"] [data-hyp]:not([data-hyp="aeronave"]),
+[data-hyp-filter="espacial"] [data-hyp]:not([data-hyp="espacial"]),
+[data-hyp-filter="terrestre_otros"] [data-hyp]:not([data-hyp="terrestre_otros"]),
+/* Alias legado `#misid`: la unión de las cuatro clases de objeto (CasesFilter). */
+[data-hyp-filter="misid"] [data-hyp]:not([data-hyp="astronomico"]):not([data-hyp="aeronave"]):not([data-hyp="espacial"]):not([data-hyp="terrestre_otros"]),
 [data-hyp-filter="natural"] [data-hyp]:not([data-hyp="natural"]),
 [data-hyp-filter="fraude"] [data-hyp]:not([data-hyp="fraude"]),
 [data-hyp-filter="humana_clasificada"] [data-hyp]:not([data-hyp="humana_clasificada"]),
@@ -154,11 +159,7 @@ a {
 [data-era-filter="2017"] [data-era]:not([data-era="2017"]),
 [data-tier-filter="S"] [data-tier]:not([data-tier="S"]),
 [data-tier-filter="A"] [data-tier]:not([data-tier="A"]),
-[data-tier-filter="B"] [data-tier]:not([data-tier="B"]),
-[data-misid-filter="astronomico"] [data-misid]:not([data-misid="astronomico"]),
-[data-misid-filter="aeronave"] [data-misid]:not([data-misid="aeronave"]),
-[data-misid-filter="espacial"] [data-misid]:not([data-misid="espacial"]),
-[data-misid-filter="terrestre_otros"] [data-misid]:not([data-misid="terrestre_otros"]) {
+[data-tier-filter="B"] [data-tier]:not([data-tier="B"]) {
   display: none !important;
 }
 
