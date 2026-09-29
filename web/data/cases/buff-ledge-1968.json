@@ -16,7 +16,7 @@
   "tier": "B",
   "mundanoType": "psicosocial",
   "epistemicStatus": "documented",
-  "probability": 62,
+  "probability": 47,
   "summary": "El 7 de agosto de 1968, dos empleados de un campamento a orillas del lago Champlain (Vermont), Michael Lapp (16) y Janet Cornell (19), vieron una luz que se dividió en otras menores 'como perlas'; despertaron en el muelle con una hora 'perdida'. Diez años después, el investigador Walter Webb reconstruyó bajo hipnosis sendos relatos de abducción que coincidían entre sí.",
   "summary_en": "On 7 August 1968, two employees of a camp on Lake Champlain (Vermont), Michael Lapp (16) and Janet Cornell (19), saw a light that split into smaller ones 'like pearls'; they woke on the dock with a 'lost' hour. Ten years later, investigator Walter Webb reconstructed under hypnosis two abduction accounts that matched each other.",
   "patterns": [
@@ -64,12 +64,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.35,
+    "mundano_natural": 0.5,
     "humana_clasificada": 0.03,
     "adversaria": 0,
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.12,
-    "indet": 0.47
+    "indet": 0.32
   },
   "documents": [
     {
@@ -84,9 +84,9 @@
   ],
   "objectDetail": "sugestion",
   "classBasis": {
-    "es": "La explicación prosaica que recogen las fuentes cubre solo la capa de la abducción: el relato se recuperó bajo hipnosis, y los escépticos apuntan a 'falsos recuerdos, sugestión durante la hipnosis u otros fenómenos psicológicos'. Para las luces sobre el lago, vistas también por otros empleados, ninguna fuente propone un objeto concreto: los testigos pensaron primero en Venus y lo descartaron cuando la luz empezó a moverse.",
-    "en": "The prosaic explanation the sources record covers only the abduction layer: the account was recovered under hypnosis, and skeptics point to 'false memories, suggestion during hypnosis, or other psychological phenomena'. For the lights over the lake, also seen by other employees, no source proposes a concrete object: the witnesses first thought of Venus and ruled it out when the light began to move.",
-    "source": "Vermont Daily Chronicle, 'The Buff Ledge UFO'",
+    "es": "La explicación prosaica que recogen las fuentes cubre solo la capa de la abducción: el relato se recuperó bajo hipnosis, y los escépticos apuntan a 'falsos recuerdos, sugestión durante la hipnosis u otros fenómenos psicológicos'. Para las luces sobre el lago, vistas también por otros empleados, ninguna fuente propone un objeto concreto: los testigos pensaron primero en Venus y lo descartaron cuando la luz empezó a moverse. Para esa capa, la falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "The prosaic explanation the sources record covers only the abduction layer: the account was recovered under hypnosis, and skeptics point to 'false memories, suggestion during hypnosis, or other psychological phenomena'. For the lights over the lake, also seen by other employees, no source proposes a concrete object: the witnesses first thought of Venus and ruled it out when the light began to move. For that layer, the absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "Vermont Daily Chronicle, 'The Buff Ledge UFO' · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "url": "https://vermontdailychronicle.com/the-buff-ledge-ufo/"
   }
 }

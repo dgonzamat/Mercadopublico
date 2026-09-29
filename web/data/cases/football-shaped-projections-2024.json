@@ -20,6 +20,14 @@
   "epistemicStatus": "documented",
   "probability": 40,
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "El hilo de Metabunk titula el caso 'objeto irregular con aspecto de globo' y compara la descripción oficial ('un cuerpo con forma de balón de fútbol americano con tres proyecciones radiales') con aerostatos cautivos de vigilancia como el JLENS de Raytheon o el TARS de Lockheed Martin, este último aún en servicio; no llega a una identificación firme.",
+    "en": "The Metabunk thread titles the case 'Irregular shaped balloon-like object' and compares the official description ('a football-shaped body with three radial projections') with tethered surveillance aerostats such as Raytheon's JLENS or Lockheed Martin's TARS, the latter still in service; it reaches no firm identification.",
+    "source": "Metabunk, hilo 'PR046 — INDOPACOM 2024 (Irregular shaped balloon-like object)' (2026)",
+    "url": "https://www.metabunk.org/threads/pr-46-%E2%80%94-indopacom-2024-irregular-shaped-balloon-like-object.14871/"
+  },
   "posterior": {
     "mundano_natural": 0.4,
     "humana_clasificada": 0.12,
@@ -68,6 +76,12 @@
       "note": "Video embebido en el visor de este caso; la ficha incluye la descripción visual citada en whatHappened.",
       "note_en": "Video embedded in this case's viewer; the record includes the visual description quoted in whatHappened.",
       "name_en": "DVIDS — DOW-UAP-PR46, with AARO's official visual description (PURSUE Release 01)"
+    },
+    {
+      "name": "Metabunk — 'PR046 — INDOPACOM 2024 (Irregular shaped balloon-like object)'",
+      "url": "https://www.metabunk.org/threads/pr-46-%E2%80%94-indopacom-2024-irregular-shaped-balloon-like-object.14871/",
+      "note": "El foro compara la silueta con aerostatos cautivos de vigilancia (JLENS, TARS), sin consenso.",
+      "note_en": "The forum compares the silhouette with tethered surveillance aerostats (JLENS, TARS), without consensus."
     }
   ]
 }
