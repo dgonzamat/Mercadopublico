@@ -198,7 +198,7 @@
       "note_en": "Primary document embedded in the viewer. Source for the contract's closure on 21 Dec 2010 and for the option-year schedule of line items."
     }
   ],
-  "mundanoType": "misid",
+  "mundanoType": "natural",
   "posterior": {
     "mundano_natural": 0.18,
     "humana_clasificada": 0.32,
@@ -227,7 +227,6 @@
     "note": "Informe oficial de AARO que revisa AAWSAP/AATIP y todo el registro del Gobierno de EE.UU. sobre UAP desde 1945. Concluye que no halló evidencia de tecnología de origen no humano ni de programas de ingeniería inversa. PDF alojado en aaro.mil.",
     "note_en": "Official AARO report reviewing AAWSAP/AATIP and the entire U.S. Government UAP record since 1945. Concludes it found no evidence of non-human technology or reverse-engineering programs. PDF hosted on aaro.mil."
   },
-  "misidSubtype": "terrestre_otros",
   "pursueReleases": [
     6
   ],

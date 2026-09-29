@@ -12,9 +12,8 @@
     "place": "Valensole, Provence"
   },
   "tier": "A",
-  "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 71,
+  "probability": 96,
   "summary": "El agricultor Maurice Masse quedó paralizado por un dispositivo que le apuntó una figura junto a un objeto posado en su campo de lavanda; la Gendarmería documentó marcas geométricas persistentes en el suelo y los efectos físicos en el testigo duraron meses. El CNES mantiene el caso como inexplicado.",
   "summary_en": "Farmer Maurice Masse was paralyzed by a device aimed at him by a figure beside an object resting in his lavender field; the Gendarmerie documented persistent geometric ground marks and the witness's physical effects lasted for months. CNES keeps the case unexplained.",
   "patterns": [
@@ -41,12 +40,12 @@
     "GEIPAN/CNES classification 'D1 — non-identifié' in the 1979 review"
   ],
   "posterior": {
-    "mundano_natural": 0.25,
+    "mundano_natural": 0,
     "humana_clasificada": 0.03,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.1,
     "nohumano_abierto": 0.26,
-    "indet": 0.35
+    "indet": 0.6
   },
   "sources": [
     {
@@ -81,6 +80,5 @@
       "license": "CC0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACoucher-de-soleil-plateau-Valensole-Provence-France.jpg"
     }
-  ],
-  "misidSubtype": "terrestre_otros"
+  ]
 }

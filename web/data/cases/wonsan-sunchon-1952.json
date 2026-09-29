@@ -15,6 +15,7 @@
   },
   "tier": "A",
   "mundanoType": "misid",
+  "misidSubtype": "aeronave",
   "epistemicStatus": "documented",
   "probability": 37,
   "summary": "La noche del 29 de enero de 1952, durante la Guerra de Corea, dos tripulaciones de B-29 de la USAF, en misiones distintas y con 24 minutos de diferencia, vieron cerca de Wonsan y de Sunchon una esfera naranja de menos de un metro que se acercó a sus aviones. La inteligencia de la zona pensó en una bengala o un dispositivo enemigo nuevo, y la tarjeta de Project Blue Book lo dejó como «posiblemente globo».",
@@ -79,6 +80,5 @@
     "nohumano_abierto": 0.08,
     "indet": 0.27
   },
-  "misidSubtype": "terrestre_otros",
   "evidenceReviewed": "2026-09-27"
 }

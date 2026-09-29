@@ -12,7 +12,7 @@
     "place": "Voronezh, USSR"
   },
   "tier": "A",
-  "mundanoType": "misid",
+  "mundanoType": "psicosocial",
   "epistemicStatus": "documented",
   "probability": 38,
   "summary": "Tras los reportes de niños y adultos sobre un objeto y figuras humanoides en un parque de Voronezh, la agencia oficial soviética TASS publicó en plena Glasnost un comunicado que calificó la visita de 'hecho científicamente comprobado' — sin paralelo en la comunicación oficial de una superpotencia.",
@@ -75,6 +75,5 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AVoronezh.%20Central%20Market%20P7241263%203950.jpg"
     }
-  ],
-  "misidSubtype": "terrestre_otros"
+  ]
 }

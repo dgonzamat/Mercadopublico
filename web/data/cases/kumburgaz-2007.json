@@ -14,6 +14,7 @@
   },
   "tier": "A",
   "mundanoType": "misid",
+  "misidSubtype": "luces_tierra",
   "epistemicStatus": "documented",
   "probability": 40,
   "summary": "El guardia Yalçın Yalman filmó durante dos años objetos discoidales sobre el Mar de Mármara, también de día — más de 35 horas de video; el consejo científico estatal turco (TÜBİTAK) analizó las cintas y concluyó que no había manipulación.",
@@ -71,6 +72,5 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASunset%20Kumburgaz.jpg"
     }
-  ],
-  "misidSubtype": "terrestre_otros"
+  ]
 }

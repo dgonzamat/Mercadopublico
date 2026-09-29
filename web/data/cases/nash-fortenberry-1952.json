@@ -15,6 +15,8 @@
   },
   "tier": "A",
   "mundanoType": "misid",
+  "misidSubtype": "luces_tierra",
+  "objectDetail": "faro_reflector",
   "epistemicStatus": "documented",
   "probability": 49,
   "summary": "El 14 de julio de 1952, los pilotos de Pan American William Nash y William Fortenberry observaron desde su DC-4, cerca de Norfolk (Virginia), seis discos de brillo rojizo volando en formación por debajo de su avión; los discos ejecutaron una inversión abrupta, se les unieron otros dos y partieron a gran velocidad. Project Blue Book lo archivó como «Unknown» (no identificado).",
@@ -100,6 +102,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APan%20American%20World%20Airways%20-%20Pan%20Am%20McDonnell%20Douglas%20DC-10-10%20N69NA.jpg"
     }
   ],
-  "misidSubtype": "terrestre_otros",
   "evidenceReviewed": "2026-09-28"
 }

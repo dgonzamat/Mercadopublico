@@ -79,5 +79,6 @@
     "note": "Desarrolla la hipótesis de las flamas de Cantarell, el efecto de paralaje y por qué el radar no detectó las fuentes de calor.",
     "note_en": "Develops the Cantarell flares hypothesis, the parallax effect and why the radar did not detect the heat sources."
   },
-  "misidSubtype": "terrestre_otros"
+  "misidSubtype": "luces_tierra",
+  "objectDetail": "llama_industrial"
 }
