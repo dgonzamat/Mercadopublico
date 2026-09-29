@@ -4,10 +4,11 @@ export type Category = "incident" | "document" | "contactee" | "crop_circle";
 /** Sub-tipo de la explicación prosaica (abre la narrativa mundano/natural). */
 export type MundanoType = "misid" | "natural" | "fraude";
 
-/** Subtipo de misidentificación: CON QUÉ objeto conocido se confundió el
- *  avistamiento. Solo aplica a casos con mundanoType="misid" (drill-down, capa 2
- *  bajo la narrativa «Misidentificación»; MECE dentro de misid). */
-export type MisidSubtype = "astronomico" | "aeronave" | "espacial" | "terrestre_otros";
+/** Clase de OBJETO de una misidentificación: qué era lo que se vio. Solo aplica
+ *  a casos con mundanoType="misid"; es el primer nivel de la taxonomía prosaica
+ *  (el detalle de segundo nivel va en `objectDetail`). `terrestre_otros` es
+ *  transitorio: se conserva válido mientras la pasada de datos lo reparte. */
+export type MisidSubtype = "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "terrestre_otros";
 export type VerdictMoral = "neutral" | "hostile" | "positive" | "variable";
 
 export interface Location {
@@ -123,6 +124,13 @@ export interface UAPCase {
   /** Subtipo de misidentificación (con qué objeto conocido se confundió). Solo
    *  en casos mundanoType="misid"; es un drill-down bajo esa narrativa. */
   misidSubtype?: MisidSubtype;
+  /** Detalle de SEGUNDO nivel de la clase prosaica (p. ej. `planeta_estrella`
+   *  bajo `astronomico`, `globo` bajo `aeronave`, `optico` bajo `natural`). La
+   *  clase es `misidSubtype` si mundanoType="misid" y "natural" si
+   *  mundanoType="natural"; los valores admitidos por clase viven en
+   *  `OBJECT_DETAILS` (lib/meceClasses.ts) y los valida validate-schema.mjs. No
+   *  aplica a «fraude» ni a casos sin mundanoType. Ausente = «sin precisar». */
+  objectDetail?: string;
   /** Fecha (AAAA-MM-DD) en que la clasificación —posterior, probability,
    *  mundanoType— se asignó o se contrastó leyendo la evidencia primaria del caso
    *  (expediente, télex, informe, crónica de la época), no un resumen secundario.

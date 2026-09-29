@@ -34,6 +34,33 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(root, p), "utf-8"));
 const errors = [];
 const err = (where, msg) => errors.push(`${where}: ${msg}`);
 
+// Taxonomía prosaica: se PARSEA de lib/meceClasses.ts (node-plain, no puede
+// importar TS) en vez de duplicarla — un segundo diccionario sería un segundo
+// origen de verdad. Si el parseo rinde de menos, se aborta: una sonda que no
+// entiende su fuente no debe dar verde.
+const MECE_CLASSES_SRC = fs.readFileSync(path.join(root, "lib", "meceClasses.ts"), "utf-8");
+const MISID_SUBTYPE_KEYS = (() => {
+  const m = MECE_CLASSES_SRC.match(/export const MISID_SUBTYPES[\s\S]*?\n\];/);
+  return m ? [...m[0].matchAll(/\{ key: "(\w+)"/g)].map((x) => x[1]) : [];
+})();
+const OBJECT_DETAILS = (() => {
+  const m = MECE_CLASSES_SRC.match(/export const OBJECT_DETAILS[\s\S]*?\n\};/);
+  const out = {};
+  if (!m) return out;
+  let cur = null;
+  for (const line of m[0].split("\n")) {
+    const cls = line.match(/^  (\w+): \[/);
+    if (cls) { cur = cls[1]; out[cur] = []; continue; }
+    const k = line.match(/\{ key: "(\w+)"/);
+    if (k && cur) out[cur].push(k[1]);
+  }
+  return out;
+})();
+if (MISID_SUBTYPE_KEYS.length < 4 || Object.keys(OBJECT_DETAILS).length < 5) {
+  console.error(`validate-schema: no se pudo parsear la taxonomía de lib/meceClasses.ts (MISID_SUBTYPES=${MISID_SUBTYPE_KEYS.length}, OBJECT_DETAILS=${Object.keys(OBJECT_DETAILS).length})`);
+  process.exit(1);
+}
+
 const isStr = (v) => typeof v === "string" && v.length > 0;
 const isNum = (v) => typeof v === "number" && Number.isFinite(v);
 const isArr = (v) => Array.isArray(v);
@@ -181,10 +208,25 @@ for (const file of caseFiles) {
   // misidSubtype (opcional): con qué objeto conocido se confundió. Solo válido en
   // casos misid (drill-down bajo «Misidentificación»).
   if (c.misidSubtype !== undefined) {
-    if (!["astronomico", "aeronave", "espacial", "terrestre_otros"].includes(c.misidSubtype)) {
-      err(w, `misidSubtype inválido "${c.misidSubtype}" (astronomico|aeronave|espacial|terrestre_otros)`);
+    if (!MISID_SUBTYPE_KEYS.includes(c.misidSubtype)) {
+      err(w, `misidSubtype inválido "${c.misidSubtype}" (${MISID_SUBTYPE_KEYS.join("|")})`);
     } else if (c.mundanoType !== "misid") {
       err(w, `misidSubtype presente pero mundanoType no es "misid" (es "${c.mundanoType ?? "ausente"}") — el subtipo solo aplica a misidentificaciones`);
+    }
+  }
+  // objectDetail (opcional): detalle de segundo nivel de la clase prosaica. La
+  // clase es misidSubtype (misid) o "natural"; fraude y los casos sin
+  // mundanoType no admiten detalle. Los valores por clase salen de
+  // OBJECT_DETAILS en lib/meceClasses.ts (parseado arriba, fuente única).
+  if (c.objectDetail !== undefined) {
+    const cls = c.mundanoType === "misid" ? c.misidSubtype ?? "terrestre_otros" : c.mundanoType === "natural" ? "natural" : null;
+    const allowed = cls ? OBJECT_DETAILS[cls] : undefined;
+    if (!cls) {
+      err(w, `objectDetail "${c.objectDetail}" presente pero el caso no es misid ni natural (mundanoType "${c.mundanoType ?? "ausente"}") — fraude y los casos sin mundanoType no llevan detalle`);
+    } else if (!allowed) {
+      err(w, `objectDetail "${c.objectDetail}" no admitido: la clase "${cls}" no tiene detalle de segundo nivel`);
+    } else if (!allowed.includes(c.objectDetail)) {
+      err(w, `objectDetail inválido "${c.objectDetail}" para la clase "${cls}" (${allowed.join("|")})`);
     }
   }
   // evidenceReviewed (opcional): fecha ISO en que la clasificación se contrastó

@@ -34,7 +34,9 @@
  * el agregado vale aunque los casos estén correlacionados. Sigue siendo
  * subjetivo, no calibrado.
  *
- * ALCANCE: casos de avistamiento/incidente. Los casos-documento se excluyen.
+ * ALCANCE: casos de avistamiento/incidente. Los casos-documento se excluyen de
+ * todos los agregados (home, /probabilidades, /cases, /calidad): son evidencia,
+ * no sucesos.
  */
 
 import {
@@ -53,7 +55,7 @@ import { MECE_CLASSES } from "./meceClasses";
 
 /** Color neutro/mudo de la narrativa «Indeterminado» en el donut navegable
  *  (más claro que el #3a3a3a de MECE_CLASSES para que se vea sobre el fondo
- *  oscuro de la home). Los documentos sin lean y los incidentes inconclusos caen
+ *  oscuro de la home). Los incidentes inconclusos caen
  *  aquí. Vive en lib (no en app/components) → fuera del scan de audit-design D3. */
 export const INDET_COLOR = "#8a8172";
 
@@ -177,6 +179,7 @@ export interface ScoredCase {
   seeded: boolean;
   mundanoType?: UAPCase["mundanoType"];
   misidSubtype?: UAPCase["misidSubtype"];
+  objectDetail?: UAPCase["objectDetail"];
 }
 
 export interface HypRow { key: string; label: string; labelEn: string; color: string; count: number; }
@@ -254,7 +257,9 @@ export function modalCounts(items: ReadonlyArray<HypInput>, opts: { consolidateN
     .sort((a, b) => b.count - a.count);
 }
 
-/** Casos del corpus a los que aplica el modelo (excluye documentos). */
+/** Casos del corpus a los que aplica el modelo: los INCIDENTES. Los documentos
+ *  quedan fuera de todo agregado —son evidencia, no sucesos: no tienen «objeto»
+ *  que repartir—; se listan en /cases pero no cuentan en ninguna hipótesis. */
 export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): ScoredCase[] {
   return cases
     .filter((c) => c.category !== "document")
@@ -267,30 +272,7 @@ export function corpusPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): Sco
       seeded: !c.posterior,
       mundanoType: c.mundanoType,
       misidSubtype: c.misidSubtype,
-    }));
-}
-
-/**
- * Casos-documento con su "lean" evidencial: a qué narrativa inclina el
- * contenido del documento (NO «qué era el objeto» — un documento no tiene
- * objeto). Es un eje distinto del de incidentes; se muestra aparte y NUNCA
- * se suma con `corpusPosteriors`. Los documentos sin posterior declarado caen
- * en `indet` (no inclinan a ninguna narrativa: puro proceso/inconcluso).
- */
-export function documentPosteriors(cases: UAPCase[] = ALL_CASES as UAPCase[]): ScoredCase[] {
-  // Un documento enlazado a sus casos (`relatedCases`) es evidencia de ellos,
-  // no un ítem con reparto propio: sale del agregado.
-  return cases
-    .filter((c) => c.category === "document" && !c.relatedCases?.length)
-    .map((c) => ({
-      id: c.id,
-      name: c.name,
-      tier: c.tier,
-      category: c.category,
-      posterior: c.posterior ? normalize(c.posterior) : { ...emptyPosterior(), indet: 1 },
-      seeded: !c.posterior,
-      mundanoType: c.mundanoType,
-      misidSubtype: c.misidSubtype,
+      objectDetail: c.objectDetail,
     }));
 }
 

@@ -80,28 +80,31 @@ export function dominantNarrativeLabel(p: Posterior): string {
 /** Clases de OBJETO dentro de mundanoType="misid" (`misidSubtype`): qué era el
  *  objeto. Se muestran como clases de PRIMER NIVEL (no como drill-down bajo una
  *  «misidentificación»): el sitio nombra el objeto, no el error del testigo.
- *  Los globos se archivan bajo `aeronave` por convención del corpus. Colores
- *  separados entre sí (ΔE ≥ 12) y del gris de «Indeterminado» (INDET_COLOR), con
- *  el que antes chocaba `terrestre_otros`; el bucket mayoritario conserva el
- *  azul-acero histórico. */
+ *  Los globos se archivan bajo `aeronave`. Colores separados entre sí (ΔE ≥ 12)
+ *  y del gris de «Indeterminado» (INDET_COLOR); `luces_tierra` (#9a6a8a, malva
+ *  mudo) queda a ΔE76 ≥ 27 de toda la paleta prosaica e hipótesis y ≥ 3:1 sobre
+ *  el crema y el fondo oscuro de la home. */
 export const MISID_SUBTYPES: ReadonlyArray<{
-  key: "astronomico" | "aeronave" | "espacial" | "terrestre_otros";
+  key: "astronomico" | "aeronave" | "espacial" | "luces_tierra" | "terrestre_otros";
   label: string;
   labelEn: string;
   color: string;
 }> = [
   { key: "astronomico", label: "Objeto astronómico", labelEn: "Astronomical object", color: "#3d6a8f" },
-  { key: "aeronave", label: "Aeronave o globo", labelEn: "Aircraft or balloon", color: "#7d95a6" },
-  { key: "espacial", label: "Cohete, satélite o reentrada", labelEn: "Rocket, satellite or reentry", color: "#3f4e5a" },
-  // El bucket mayoritario: el análisis inclina a un objeto convencional pero no
-  // fija cuál. Recoge también los casos misid sin `misidSubtype`.
+  { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#7d95a6" },
+  { key: "espacial", label: "Objeto espacial", labelEn: "Space object", color: "#3f4e5a" },
+  { key: "luces_tierra", label: "Luces en tierra", labelEn: "Ground lights", color: "#9a6a8a" },
+  // TRANSITORIO: el bucket de misid sin objeto fijado. Se conserva válido
+  // mientras la pasada de datos reparte sus casos entre las clases de arriba.
+  // Recoge también los casos misid sin `misidSubtype`.
   { key: "terrestre_otros", label: "Objeto convencional no precisado", labelEn: "Conventional object, not pinned down", color: "#5a6b7a" },
 ];
 
 export type ProsaicKey = (typeof MISID_SUBTYPES)[number]["key"] | "natural" | "fraude";
 
-/** Las seis clases prosaicas que se MUESTRAN (primer nivel): las cuatro de
- *  objeto + fenómeno natural + posible fraude. MECE dentro de mundano_natural. */
+/** Las clases prosaicas que se MUESTRAN (primer nivel): las de objeto
+ *  (misidSubtype) + fenómeno natural + posible fraude. MECE dentro de
+ *  mundano_natural. */
 export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; labelEn: string; color: string }> = [
   ...MISID_SUBTYPES,
   { key: "natural", label: "Fenómeno natural", labelEn: "Natural phenomenon", color: "#4f7a6a" },
@@ -114,4 +117,50 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
 export function prosaicKey(mundanoType?: MundanoType, misidSubtype?: MisidSubtype): ProsaicKey {
   if (mundanoType === "natural" || mundanoType === "fraude") return mundanoType;
   return misidSubtype ?? "terrestre_otros";
+}
+
+// ─── Detalle de SEGUNDO nivel (objectDetail) ────────────────────────────────
+// Qué objeto concreto dentro de cada clase prosaica. Data-free (lo usan el
+// explorer cliente y validate-schema.mjs, que lo parsea de este archivo). Una
+// clase sin entrada (fraude, terrestre_otros) no admite detalle. Ausente en el
+// caso = «sin precisar».
+
+export type ObjectDetailDef = { key: string; label: string; labelEn: string };
+
+export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<ObjectDetailDef>>>> = {
+  astronomico: [
+    { key: "planeta_estrella", label: "Planeta o estrella", labelEn: "Planet or star" },
+    { key: "meteoro", label: "Meteoro o bólido", labelEn: "Meteor or fireball" },
+    { key: "luna", label: "Luna", labelEn: "Moon" },
+  ],
+  aeronave: [
+    { key: "avion", label: "Avión", labelEn: "Airplane" },
+    { key: "helicoptero", label: "Helicóptero", labelEn: "Helicopter" },
+    { key: "dron", label: "Dron", labelEn: "Drone" },
+    { key: "globo", label: "Globo", labelEn: "Balloon" },
+  ],
+  espacial: [
+    { key: "cohete_misil", label: "Cohete o misil", labelEn: "Rocket or missile" },
+    { key: "satelite", label: "Satélite", labelEn: "Satellite" },
+    { key: "reentrada", label: "Reentrada", labelEn: "Reentry" },
+  ],
+  luces_tierra: [
+    { key: "faro_reflector", label: "Faro o reflector", labelEn: "Beacon or searchlight" },
+    { key: "bengala", label: "Bengala o pirotecnia", labelEn: "Flare or fireworks" },
+    { key: "vehiculo", label: "Vehículo", labelEn: "Vehicle" },
+  ],
+  natural: [
+    { key: "atmosferico", label: "Atmosférico (rayo en bola, nubes)", labelEn: "Atmospheric (ball lightning, clouds)" },
+    { key: "optico", label: "Óptico (espejismo, refracción)", labelEn: "Optical (mirage, refraction)" },
+  ],
+};
+
+/** Rótulo del detalle ausente. */
+export const DETAIL_UNSPECIFIED = { key: "sin_precisar", label: "Sin precisar", labelEn: "Not specified" } as const;
+
+/** Definición del detalle `objectDetail` dentro de la clase `pk`, o undefined
+ *  si el caso no lo trae (o no es válido para esa clase). */
+export function objectDetailDef(pk: ProsaicKey, objectDetail?: string): ObjectDetailDef | undefined {
+  if (!objectDetail) return undefined;
+  return OBJECT_DETAILS[pk]?.find((d) => d.key === objectDetail);
 }
