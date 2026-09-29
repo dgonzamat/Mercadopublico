@@ -174,6 +174,16 @@ export async function CaseDetailPage(
     .filter((x): x is NonNullable<typeof x> => Boolean(x))
     .sort((a, b) => b.year_start - a.year_start);
 
+  // Documentos ↔ casos: un documento declara en `relatedCases` los incidentes de
+  // los que es evidencia; la ficha del incidente lo lista en sentido inverso.
+  const documentedCases = (c.relatedCases ?? [])
+    .map((id) => cases.find((x) => x.id === id))
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+  const supportingDocs = cases.filter(
+    (d) => d.category === "document" && d.relatedCases?.includes(c.id),
+  );
+  const isLinkedDoc = c.category === "document" && documentedCases.length > 0;
+
   // Para el CTA de un caso SIN expandir: el primer similar que sí lo esté.
   // `similar` ordena por patrones/país, no por contenido, así que su primer
   // elemento puede ser otro caso sin expandir — y un botón que promete «caso
@@ -353,13 +363,23 @@ export async function CaseDetailPage(
           />
           <KeyFact locale={locale} es="Año" en="Year" value={year} />
           <KeyFact locale={locale} es="Tier" en="Tier" value={c.tier} mono />
-          <KeyFact
-            locale={locale}
-            es="Probabilidad"
-            en="Probability"
-            value={`${c.probability}%`}
-            mono
-          />
+          {isLinkedDoc ? (
+            <KeyFact
+              locale={locale}
+              es="Casos que documenta"
+              en="Cases it documents"
+              value={documentedCases.length}
+              mono
+            />
+          ) : (
+            <KeyFact
+              locale={locale}
+              es="Probabilidad"
+              en="Probability"
+              value={`${c.probability}%`}
+              mono
+            />
+          )}
           <KeyFact
             locale={locale}
             es="Categoría"
@@ -372,12 +392,21 @@ export async function CaseDetailPage(
             }
           />
         </div>
+        {isLinkedDoc ? (
+        <Caption>
+          <T locale={locale}
+            es={`${TIER_META[c.tier].description}. Esto es un documento, no un suceso: no lleva probabilidad propia ni reparto de explicaciones. Es evidencia de los casos que documenta, listados abajo, y cada uno lo enlaza en su ficha.`}
+            en={`${TIER_META[c.tier].description_en}. This is a document, not an event: it carries no probability of its own and no split of explanations. It is evidence for the cases it documents, listed below, and each of them links back to it.`}
+          />
+        </Caption>
+        ) : (
         <Caption>
           <T locale={locale}
             es={`${TIER_META[c.tier].description}. Tres ejes independientes: el «tier» mide la fuerza de la evidencia; la «probabilidad» estima cuán genuinamente inexplicado está el caso —un fenómeno natural puede seguir sin explicación, así que no equivale a «no-prosaico»—; y la partición de explicaciones (abajo) dice qué fue más plausiblemente. Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude.`}
             en={`${TIER_META[c.tier].description_en}. Three independent axes: the «tier» measures the strength of the evidence; the «probability» estimates how genuinely unexplained the case is —a natural phenomenon can remain unexplained, so it does not equal «non-prosaic»—; and the partition of explanations (below) says what it most plausibly was. So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax.`}
           />
         </Caption>
+        )}
       </header>
 
       {/* ────────── ZONE A2 — DOCUMENTO PRIMARIO DESTACADO ────────── */}
@@ -894,6 +923,40 @@ export async function CaseDetailPage(
               en="Structured analytical judgment, not a calibrated frequency. Forced classification: the mass the evidence cannot assign is spread across the hypotheses the case does support."
             />
           </Caption>
+        </section>
+      )}
+
+      {/* ────────── DOCUMENTOS ↔ CASOS ────────── */}
+      {(documentedCases.length > 0 || supportingDocs.length > 0) && (
+        <section className="space-y-6 border-t-2 border-text pt-12">
+          <Eyebrow>
+            {documentedCases.length > 0 ? (
+              <T locale={locale} es="Casos que documenta" en="Cases it documents" />
+            ) : (
+              <T locale={locale} es="Documentos que lo respaldan" en="Documents that back it" />
+            )}
+          </Eyebrow>
+          <ul className="grid gap-px bg-text sm:grid-cols-2">
+            {(documentedCases.length > 0 ? documentedCases : supportingDocs).map((d) => (
+              <li key={d.id} className="flex">
+                <LocaleLink
+                  href={`/cases/${d.id}`}
+                  className="group flex w-full flex-col gap-1 bg-bg p-4 hover:bg-text hover:text-bg"
+                >
+                  <p className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
+                    <T locale={locale} es={d.name} en={d.name_en ?? d.name} />
+                  </p>
+                  <p className="mt-auto font-mono text-xs tabular-nums text-muted group-hover:text-bg/60">
+                    {d.category === "document" ? (
+                      <T locale={locale} es={`${d.year_start} · Documento · Tier ${d.tier}`} en={`${d.year_start} · Document · Tier ${d.tier}`} />
+                    ) : (
+                      `${d.year_start} · Tier ${d.tier} · ${d.probability}%`
+                    )}
+                  </p>
+                </LocaleLink>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

@@ -125,6 +125,7 @@ const casesDir = path.join(root, "data", "cases");
 const caseFiles = fs.readdirSync(casesDir).filter((f) => f.endsWith(".json"));
 const seenCaseIds = new Set();
 const seenNums = new Set();
+const pendingRelated = [];
 
 for (const file of caseFiles) {
   const w = `cases/${file}`;
@@ -190,6 +191,13 @@ for (const file of caseFiles) {
   // con la evidencia primaria.
   if (c.evidenceReviewed !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(String(c.evidenceReviewed))) {
     err(w, `evidenceReviewed inválido "${c.evidenceReviewed}" (AAAA-MM-DD)`);
+  }
+  // relatedCases (opcional, solo documentos): incidentes que el documento
+  // respalda. Los ids se comprueban al final, cuando se conocen todos.
+  if (c.relatedCases !== undefined) {
+    if (c.category !== "document") err(w, `relatedCases solo aplica a documentos (category es "${c.category}")`);
+    else if (!Array.isArray(c.relatedCases) || !c.relatedCases.every(isStr)) err(w, "relatedCases debe ser array de ids");
+    else pendingRelated.push([w, c.relatedCases]);
   }
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");
@@ -270,6 +278,10 @@ for (const file of caseFiles) {
         err(`${w}.sources[${j}]`, `url malformada: "${s.url}"`);
     });
   }
+}
+
+for (const [w, ids] of pendingRelated) {
+  for (const id of ids) if (!seenCaseIds.has(id)) err(w, `relatedCases apunta a un caso inexistente "${id}"`);
 }
 
 // ─── 4. Reporte ──────────────────────────────────────────────────────────
