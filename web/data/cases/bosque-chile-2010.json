@@ -62,6 +62,6 @@
     "nohumano_abierto": 0.07,
     "indet": 0.14
   },
-  "misidSubtype": "luces_tierra",
-  "objectDetail": "animal"
+  "misidSubtype": "animal",
+  "objectDetail": "insecto"
 }
