@@ -106,5 +106,11 @@
     }
   ],
   "misidSubtype": "luces_tierra",
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "Brian Dunning (Skeptoid, 2017): «la explicación candidata que se planteó primero en el lugar en 1967 fue una o más bengalas de socorro marinas», que «encajan muy bien con los relatos» y siguen ardiendo al caer al agua. En contra: el RCC comprobó las bengalas en 1967 sin resultado, y el memorando del CFHQ las da por descartadas junto con aviones y boyas.",
+    "en": "Brian Dunning (Skeptoid, 2017): \"The candidate explanation that was first raised on the scene in 1967 was one or more marine distress flares\", which \"are an excellent match for the reports\" and keep burning once in the water. Against it: the RCC checked flares in 1967 with nil results, and the CFHQ memorandum records them as discounted along with aircraft and floats.",
+    "source": "Dunning, B. — «The Shag Harbour UFO», Skeptoid, episodio 565 (2017)",
+    "url": "https://skeptoid.com/episodes/4565"
+  }
 }

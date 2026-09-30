@@ -101,5 +101,11 @@
     "license": "Dominio público",
     "href": "https://commons.wikimedia.org/wiki/File:Cote_ufo.jpg"
   },
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Un revisor del artículo de Haines y Vallée propuso que el óvalo era un artefacto de la película, una marca de presión causada quizá por una partícula atrapada entre dos capas del rollo, y no la imagen de un objeto físico. Los propios autores examinaron el negativo original y no hallaron esa deformación («absolutamente ninguna protuberancia ni depresión»), de modo que la fuente que recoge la hipótesis la contradice. Paráfrasis: el texto del artículo no fue accesible desde aquí.",
+    "en": "A reviewer of Haines and Vallée's paper proposed that the oval was a film artifact, a pressure mark perhaps caused by a particle trapped between two layers of the roll, rather than the image of a physical object. The authors themselves examined the original negative and found no such deformation (\"absolutely no protrusions or depressions anywhere\"), so the source that records the hypothesis contradicts it. Paraphrase: the article's text was not accessible from here.",
+    "source": "Haines, R. F. y Vallée, J. — «Photo Analysis of an Aerial Disc Over Costa Rica: New Evidence», Journal of Scientific Exploration 4(1), 1990, pp. 71-74",
+    "url": "https://www.scribd.com/document/34892561/Photo-Analysis-of-an-Aerial-Disc-Over-Costa-Rica-New-Evidence"
+  }
 }

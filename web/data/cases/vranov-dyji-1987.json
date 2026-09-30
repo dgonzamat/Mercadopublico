@@ -87,5 +87,11 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "Ninguna fuente propone una explicación concreta. La clase se apoya en lo que dice el propio piloto, Tesařík: la otra tripulación de guardia «escoltaba un helicóptero que en ese momento hacía vuelos por la frontera desde el lado austríaco», y el control les anunció varias veces el blanco a 500 metros sin que vieran nada. Original en checo: «doprovázeli nějaký vrtulník, který tam v té době visel někde a prováděl taky lety po hranici z rakouské strany».",
+    "en": "No source proposes a specific explanation. The class rests on what the pilot, Tesařík, says himself: the other standby crew \"were escorting some helicopter that was hanging around there at the time and also flying along the border from the Austrian side\", and control several times called the target at 500 metres without their seeing anything. Czech original: «doprovázeli nějaký vrtulník, který tam v té době visel někde a prováděl taky lety po hranici z rakouské strany».",
+    "source": "Projekt Záře — «Incident nad Vranovem», transcripción de la entrevista a Tesařík en ČT-1 (10 ago 1999), original en checo",
+    "url": "http://www.projektzare.cz/nej-pripady-ufo/incident-nad-vranovem/"
+  }
 }

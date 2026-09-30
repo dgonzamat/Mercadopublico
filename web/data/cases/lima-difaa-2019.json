@@ -135,5 +135,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAeropuerto%20Internacional%20Jorge%20Ch%C3%A1vez%20en%202024.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "El mayor general FAP Robert Baxerias: «Lo que se vio podría ser una cometa, uno de los tantos globos de Google (proyecto Loon) o como lo llamamos basura en el aire». Es una opinión sin análisis publicado detrás.",
+    "en": "FAP Major General Robert Baxerias: \"What was seen could be a kite, one of the many Google balloons (Project Loon) or what we call garbage in the air\". It is an opinion with no published analysis behind it.",
+    "source": "RPP Noticias — «La FAP se pronunció sobre reporte de avistamiento de ovnis en el cielo limeño» (19 jun 2019), citando a Perú21",
+    "url": "https://rpp.pe/lima/actualidad/la-fap-se-pronuncio-sobre-reporte-de-avistamiento-de-ovnis-en-el-cielo-limeno-noticia-1203836"
+  }
 }

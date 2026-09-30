@@ -90,5 +90,11 @@
   ],
   "misidSubtype": "astronomico",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "planeta_estrella"
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "Análisis de ATIC (junio de 1960): «se concluyó que la causa del avistamiento visual fue la refracción de la luz del planeta Venus»; la dirección coincidía, Venus tenía magnitud −4,2 y las irregularidades de la atmósfera le daban movimiento aparente. El eco de radar lo atribuyeron los operadores a la antena o a un pico montañoso, otra capa.",
+    "en": "ATIC analysis (June 1960): \"it was concluded that the cause for the visual sighting was the refraction of light from the planet Venus\"; the direction matched, Venus was at magnitude −4.2, and inconsistencies in the atmosphere gave it apparent motion. The operators put the radar return down to the antenna or a mountain peak, a separate layer.",
+    "source": "Project Blue Book — expediente «24 Sep 59, Redmond, Oregon»",
+    "url": "https://archive.org/details/1959-09-6958382-Redmond-Oregon"
+  }
 }

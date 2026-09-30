@@ -98,5 +98,11 @@
   ],
   "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "globo"
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "Carta del Ministerio de Defensa del 2 de noviembre de 1984: «el objeto en cuestión, inmediatamente localizado, fue fotografiado con las cámaras de a bordo e inequívocamente identificado por el personal fotointérprete como un globo de forma cilíndrica hecho con bolsas de plástico negro». Original en italiano: «inequivocabilmente identificato dal personale fotointerprete in un pallone di forma cilindrica realizzato con sacchi di plastica nera». Un extracto del Estado Mayor de 1986 lo lista aún como no identificado.",
+    "en": "Ministry of Defence letter of 2 November 1984: \"the object in question, immediately located, was photographed with the on-board cameras and unequivocally identified by the photo-interpretation staff as a cylindrical balloon made of black plastic bags\". Italian original: «inequivocabilmente identificato dal personale fotointerprete in un pallone di forma cilindrica realizzato con sacchi di plastica nera». A 1986 General Staff extract still lists it as unidentified.",
+    "source": "Ministerio de Defensa de Italia, carta a A. Chiumiento (2 nov 1984), citada en Silverland, «Il caso Cecconi» (original en italiano)",
+    "url": "https://www.silverland.info/documenti/il-caso-cecconi/"
+  }
 }

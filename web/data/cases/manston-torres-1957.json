@@ -92,5 +92,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALuftwaffe%20Photograph%20Of%20RAF%20Manston%201939.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "No hay registro oficial que explique el eco. En 1988 un ufólogo preguntó al Ministerio de Defensa británico si había sido «un experimento de guerra electrónica» para crear «blips» fantasma en el radar, y el Ministerio no encontró ninguna referencia al incidente; el historiador David Clarke recordó en 2008 que la CIA tuvo un programa para crear señales fantasma. La lectura de propagación anómala que sostiene la clase no la propone ninguna fuente localizada.",
+    "en": "No official record explains the echo. In 1988 a ufologist asked the British Ministry of Defence whether it had been \"an experiment in electronic warfare\" to create phantom radar \"blips\", and the Ministry found no reference to the incident; historian David Clarke noted in 2008 that the CIA once had a program to create phantom radar signals. The anomalous-propagation reading behind the class is proposed by no source located.",
+    "source": "History of Manston Airfield — «USAF F-86D from Manston ordered to fire on UFO» (sobre DEFE 24/1931/1) y AP, 20 oct 2008",
+    "url": "https://www.manstonhistory.org.uk/usaf-f-86d-manston-ordered-fire-ufo-may-20th-1957/"
+  }
 }

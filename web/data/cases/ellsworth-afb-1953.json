@@ -83,5 +83,11 @@
   ],
   "misidSubtype": "astronomico",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "planeta_estrella"
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "La capa que explica es la luz que persiguió el segundo F-84. El comandante del escuadrón de radar escribió a Hynek que el piloto, «tras reconsiderarlo, está dispuesto a admitir que perseguía una estrella grande»; la tarjeta lleva una corrección a mano que lo pasa a «astro (Capella)». El mismo expediente dice que, si el movimiento dibujado es fiable, Capella queda descartada, y el eco de radar no queda explicado.",
+    "en": "The layer it explains is the light the second F-84 chased. The radar squadron commander wrote to Hynek that the pilot, \"on reconsideration\", was \"willing to admit that he was chasing a large star\"; the card carries a handwritten correction to 'astro (Capella)'. The same file says that if the drawn motion is to be trusted Capella is ruled out, and the radar echo remains unexplained.",
+    "source": "Project Blue Book — expediente «5 August 53, Rapid City, Blackhawk, South Dakota Area» (carta de Atwell a Hynek y tarjeta)",
+    "url": "https://archive.org/details/1953-08-6979324-RapidCity-Blackhawk-SoughDakotaArea"
+  }
 }

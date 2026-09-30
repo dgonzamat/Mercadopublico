@@ -95,5 +95,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKaik%C5%8Dura%20Peninsula%20coast%2C%20New%20Zealand%20(52385942035).jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Informe del DSIR en el expediente de la RNZAF: los avistamientos «son coherentes con que los ovnis estén relacionados con la salida de Venus», con inversiones térmicas registradas cada noche; de la luz de Startup dice que «la descripción del objeto es clásica de un planeta muy refractado por la atmósfera». El mismo informe deja sin cerrar el eco del radar de a bordo.",
+    "en": "DSIR report in the RNZAF file: the sightings are \"consistent with the UFO's being related to the rising of Venus\", with temperature inversions recorded each night; of Startup's light it says \"the description of the object is classic for that of a planet substantially refracted by the atmosphere\". The same report leaves the airborne radar echo open.",
+    "source": "Real Fuerza Aérea de Nueva Zelanda — expediente AIR 1080/6/897 vol. 1 (informe del DSIR, ene 1979)",
+    "url": "https://archive.org/download/NewZealandUFO/AIR-1080-6-897-Volume-1-1978-1981.pdf"
+  }
 }

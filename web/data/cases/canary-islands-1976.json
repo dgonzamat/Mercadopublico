@@ -101,5 +101,11 @@
   ],
   "misidSubtype": "espacial",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "cohete_misil"
+  "objectDetail": "cohete_misil",
+  "classBasis": {
+    "es": "El catálogo de lanzamientos de McDowell registra el 22 de junio de 1976, a las 20:16 y 20:17 UTC, dos misiles Poseidon C3 lanzados por el submarino SSBN-632 en el Eastern Test Range; Ballester Olmos y Campo Pérez atribuyen el fenómeno a un lanzamiento así. Punto débil: el expediente fecha el inicio a las 21:27Z, unos 70 minutos después, y el catálogo no da la posición del disparo.",
+    "en": "McDowell's launch catalogue records on 22 June 1976, at 20:16 and 20:17 UTC, two Poseidon C3 missiles fired by the submarine SSBN-632 on the Eastern Test Range; Ballester Olmos and Campo Pérez attribute the phenomenon to such a launch. Weak point: the file dates the start to 21:27Z, some 70 minutes later, and the catalogue does not give the firing position.",
+    "source": "McDowell, J. — General Catalog of Artificial Space Objects (GCAT), launch.tsv, registros 1976-S207 y 1976-S208",
+    "url": "https://planet4589.org/space/gcat/tsv/launch/launch.tsv"
+  }
 }

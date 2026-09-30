@@ -137,5 +137,11 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "La capa que explica es el vídeo GOFAST. AARO: «el objeto no se movió a velocidades anómalas», viajaba con el viento a unos 13.000 pies y su tamaño, de un metro o menos, es «comparable a un dron pequeño o un ave». AARO no identifica el objeto; las demás observaciones de Graves y su escuadrón quedan fuera.",
+    "en": "The layer it explains is the GOFAST video. AARO: \"the object did not move at anomalous speeds\", it travelled with the wind at about 13,000 feet and its size, one meter or less, is \"comparable to a small drone or bird\". AARO does not identify the object; the other observations by Graves and his squadron are outside it.",
+    "source": "AARO — Case Resolution «Go Fast» (6 feb 2025), copia en The Black Vault",
+    "url": "https://www.theblackvault.com/documentarchive/wp-content/uploads/2025/02/AARO_GoFast_Case_Resolution_Card_Methodology_Final.pdf"
+  }
 }

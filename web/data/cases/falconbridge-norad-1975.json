@@ -96,5 +96,11 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-27"
+  "evidenceReviewed": "2026-09-27",
+  "classBasis": {
+    "es": "Apoyo débil. Los registros de NORAD dan ecos «de 26.000 a 72.000 pies» y un objeto que el personal vio «como una estrella brillante pero mucho más cercana», con aspecto de esfera de 100 pies en prismáticos. La lectura de globo es del propio corpus: los tres puntos del télex dan un ascenso continuo con deriva, como el de un globo; nadie ha hallado el lanzamiento, el sol estaba demasiado bajo para iluminarlo y no explica las luces bajas de la noche. El télex original no se pudo reabrir desde aquí.",
+    "en": "Weak support. The NORAD records give returns \"from 26,000 ft. to 72,000 ft.\" and an object site personnel said \"appeared as a bright star but much closer\", a 100-ft sphere through binoculars. The balloon reading is the corpus's own: the telex's three points give a steady climb with drift, as a balloon's would; no launch has been found, the sun was too low to light it, and it does not explain the low lights of the night. The original telex could not be reopened from here.",
+    "source": "Fawcett y Greenwood, «Clear Intent» (1984), transcripción de los registros de NORAD de nov. 1975, y télex de CFS Falconbridge (11 nov 1975)",
+    "url": "https://archive.org/details/clear-intent-the-government-coverup-of-the-ufo-experience"
+  }
 }

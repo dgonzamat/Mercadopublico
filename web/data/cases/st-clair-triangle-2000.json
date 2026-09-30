@@ -105,5 +105,11 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Ninguna fuente propone una aeronave convencional. NIDS consideró un dirigible secreto parecido a un modelo experimental patentado por la empresa Aereon, que según su director nunca pasó de prueba de principio, y en 2002 publicó la hipótesis de una nave más ligera que el aire del Departamento de Defensa; Klass propuso Venus, que no había salido. El testigo Jany describió una luz a altura de avión de línea.",
+    "en": "No source proposes a conventional aircraft. NIDS considered a secret blimp resembling an experimental model patented by the Aereon company, which according to its CEO never went past proof of principle, and in 2002 published the hypothesis of a lighter-than-air Department of Defense craft; Klass proposed Venus, which had not yet risen. Witness Jany described a light at airliner height.",
+    "source": "Huyghe, P. — «NIDS and the Illinois UFO sighting», Space.com (15 mar 2000), copia en UFO Evidence",
+    "url": "http://www.ufoevidence.org/documents/doc1289.htm"
+  }
 }

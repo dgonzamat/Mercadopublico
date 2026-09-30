@@ -102,5 +102,11 @@
     }
   ],
   "misidSubtype": "espacial",
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "La capa que explica son las luces. El teniente coronel Camilo, oficial de la investigación, declaró en noviembre de 1977: «Los habitantes confundieron los satélites artificiales existentes en la región y los meteoritos que surcan los cielos con naves extraterrestres»; las reacciones físicas las atribuyó al miedo. Original en portugués: «Os moradores confundiram os satélites artificiais existentes na região e os meteoritos que riscam os céus, com naves extraterrenas».",
+    "en": "The layer it explains is the lights. Lieutenant Colonel Camilo, an officer on the investigation, stated in November 1977: \"The residents mistook the artificial satellites in the region and the meteors that streak across the sky for extraterrestrial craft\"; he put the physical reactions down to fear. Portuguese original: «Os moradores confundiram os satélites artificiais existentes na região e os meteoritos que riscam os céus, com naves extraterrenas».",
+    "source": "A Província do Pará, 5 nov 1977, p. 11, citado en Fernandes y Barbosa, Revista Brasileira de História da Mídia 11(1), 2022 (original en portugués)",
+    "url": "https://archive.org/details/10465-50996-1-pb"
+  }
 }

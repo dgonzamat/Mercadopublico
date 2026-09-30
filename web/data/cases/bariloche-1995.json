@@ -108,5 +108,11 @@
   },
   "misidSubtype": "luces_tierra",
   "evidenceReviewed": "2026-09-29",
-  "objectDetail": "faro_reflector"
+  "objectDetail": "faro_reflector",
+  "classBasis": {
+    "es": "Conclusión de la CEFAE (2018): se confirma oficialmente la hipótesis de la investigación inicial, «sugiriendo como posible causa: el reflejo en la base nubosa del haz de un proyector», el trazador de cielo que Juan Carlos Rivero probaba esa noche. Cubre la fase del lago; la CIAE (2025) dejó la fase de aproximación como «Tipo B».",
+    "en": "CEFAE conclusion (2018): the initial investigation's hypothesis is officially confirmed, \"suggesting as a possible cause the reflection on the cloud base of a projector beam\", the skytracer Juan Carlos Rivero was testing that night. It covers the lake phase; the CIAE (2025) left the approach phase as 'Type B'.",
+    "source": "Fuerza Aérea Argentina, CEFAE — Informe anual 2018, caso Bariloche 1995, pp. 75-76",
+    "url": "https://www.argentina.gob.ar/sites/default/files/informe_cefae_2018.pdf"
+  }
 }

@@ -112,5 +112,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALaunch%20Control%20Facility%20after%20construction%20at%20Malmstrom%20AFB%2C%20Montana.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "La capa que explica es el apagado de los misiles del vuelo Echo. La historia de la unidad recoge que OOAMA «pensó que la causa del incidente fue ruido de pulso electromagnético (EMP) o de naturaleza electrostática», que la mejor fuente posible del pulso era un fallo de transformador en la zona, y que los rumores de ovnis «fueron refutados». No explica el relato de Salas sobre el vuelo Oscar.",
+    "en": "The layer it explains is the Echo Flight missile shutdown. The unit history records that OOAMA \"thought that the cause of the incident was of Electro Magnetic Pulse (EMP) noise or electrostatic nature\", that the best possible source of the noise pulse was a transformer failure in the area, and that UFO rumours \"were disproven\". It does not explain Salas's Oscar Flight account.",
+    "source": "341st Strategic Missile Wing — historias de la unidad, ene 1967-mar 1968 (FOIA, The Black Vault)",
+    "url": "https://documents.theblackvault.com/documents/ufos/malmstromufo.pdf"
+  }
 }

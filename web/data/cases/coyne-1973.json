@@ -92,5 +92,11 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "misidSubtype": "astronomico",
-  "objectDetail": "meteoro"
+  "objectDetail": "meteoro",
+  "classBasis": {
+    "es": "Philip J. Klass, en «UFOs Explained» (1974): al estudiar la transcripción de Coyne «mi atención empezó a centrarse en la posibilidad de que el ovni fuera un meteoro-bola de fuego brillante», de las Oriónidas, con el ascenso del helicóptero atribuido a reacciones reflejas de la tripulación. Cita de segunda mano: el libro no es accesible desde aquí y la frase se toma de un crítico de Klass.",
+    "en": "Philip J. Klass, in 'UFOs Explained' (1974): studying Coyne's transcript, \"my attention began to focus on the possibility that the UFO might have been a bright meteor-fireball\", an Orionid, with the helicopter's climb attributed to the crew's reflex reactions. Second-hand quote: the book is not accessible from here and the sentence is taken from a critic of Klass.",
+    "source": "Klass, P. J. — UFOs Explained (1974), citado por K. Randle, «October 18, 1973: The Coyne Helicopter Case» (2015)",
+    "url": "http://kevinrandle.blogspot.com/2015/06/october-181973-coyne-helicopter-case.html"
+  }
 }

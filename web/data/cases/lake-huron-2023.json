@@ -139,5 +139,11 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1007784"
     }
   ],
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "El presidente Biden, 16 de febrero de 2023: «La evaluación actual de la comunidad de inteligencia es que estos tres objetos eran muy probablemente globos vinculados a empresas privadas, actividades recreativas o instituciones de investigación que estudian el clima o realizan otras investigaciones científicas».",
+    "en": "President Biden, 16 February 2023: \"The intelligence community's current assessment is that these three objects were most likely balloons tied to private companies, recreation, or research institutions studying weather or conducting other scientific research.\"",
+    "source": "Casa Blanca — Palabras del presidente Biden sobre la respuesta a los objetos aéreos recientes (16 feb 2023)",
+    "url": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2023/02/16/remarks-by-president-biden-on-the-united-states-response-to-recent-aerial-objects/"
+  }
 }

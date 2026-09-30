@@ -100,5 +100,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AConcourse%20B%2C%20Chicago%20O'Hare%20airport.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "El astrónomo Mark Hammergren (Planetario Adler) dijo que las condiciones de ese día eran propicias para una «nube perforada» (hole-punch cloud): «ocurre cuando una hélice o un avión a reacción la atraviesa con una capa de nubes uniforme y la temperatura cerca del punto de congelación».",
+    "en": "Astronomer Mark Hammergren (Adler Planetarium) said conditions that day were right for a \"hole-punch cloud\": \"It's something that occurs when a propeller or jet airplane passes through when you have uniform cloud cover and the temperature is right near the freezing point.\"",
+    "source": "Smith, R. — «O'Hare UFO sighting in 2006 one of the most famous reported», Chicago Tribune (20 mar 2013)",
+    "url": "https://www.chicagotribune.com/2013/03/20/ohare-ufo-sighting-in-2006-one-of-the-most-famous-reported/"
+  }
 }

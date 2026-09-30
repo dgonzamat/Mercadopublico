@@ -91,5 +91,11 @@
   ],
   "mundanoType": "misid",
   "misidSubtype": "astronomico",
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "Ninguna fuente con nombre propone una causa astronómica. El informe del COMDA recoge que el piloto del PT-MBZ vio luces que «parecían estrellas grandes y rojas», y el cálculo de efemérides del corpus sitúa a Marte (−1,2) saliendo al este-sureste; pero el mismo informe concluye que los fenómenos «son sólidos y reflejan de cierta forma inteligencia». Original en portugués: «pareciam estrelas grandes e vermelhas».",
+    "en": "No named source proposes an astronomical cause. The COMDA report records that the PT-MBZ pilot saw lights that \"looked like large red stars\", and the corpus's ephemeris calculation puts Mars (−1.2) rising in the east-south-east; but the same report concludes that the phenomena \"are solid and reflect, in a certain way, intelligence\". Portuguese original: «pareciam estrelas grandes e vermelhas».",
+    "source": "Arquivo Nacional (Brasil) — «Relatório de Ocorrência» del COMDA (2 jun 1986), expediente ARX.0.0.249 (original en portugués)",
+    "url": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0249/BR_DFANBSB_ARX_0_0_0249_d0001de0001.pdf"
+  }
 }

@@ -141,5 +141,11 @@
       "note_en": "PR121 page (PR122 is https://www.dvidshub.net/video/1017803): 'a relatively larger area of contrast' and 'the relatively smaller area of contrast' leave and re-enter the frame; the note says all six clips were captured contemporaneously."
     }
   ],
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa: el informe de inteligencia de AFSOC no concluye nada. La clase se apoya en el análisis del propio corpus, que lo compara con los casos que AARO resolvió como objetos pasivos llevados por el viento y amplificados por el paralaje de la aeronave, como GOFAST («el objeto no se movió a velocidades anómalas»).",
+    "en": "No source proposes a cause: the AFSOC intelligence report concludes nothing. The class rests on the corpus's own analysis, which compares it with cases AARO resolved as passive objects carried by the wind and amplified by the aircraft's parallax, such as GOFAST (\"the object did not move at anomalous speeds\").",
+    "source": "DOW-UAP-D101, IIR de AFSOC sobre el Golfo de Omán (PURSUE Release 05); AARO — Case Resolution «Go Fast» (2025) como caso análogo",
+    "url": "https://www.theblackvault.com/documentarchive/wp-content/uploads/2025/02/AARO_GoFast_Case_Resolution_Card_Methodology_Final.pdf"
+  }
 }

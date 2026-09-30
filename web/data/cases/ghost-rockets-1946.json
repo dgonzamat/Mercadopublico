@@ -113,5 +113,11 @@
       "note_en": "Secondary: origin of the 225-case figure and the FOA memo, citing Svahn and Liljegren."
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Comunicado del Estado Mayor sueco del 10 de octubre de 1946, según la NZZ: de los cerca de mil informes recibidos hasta el 1 de octubre, «aproximadamente el 80 % se referían a fenómenos puramente luminosos que con gran probabilidad pueden atribuirse a un origen celeste (meteoros y meteoritos)». Original en alemán: «ungefähr 80 Prozent reine Lichtphänomene betroffen, die mit großer Wahrscheinlichkeit auf himmlischen Ursprung (Meteore und Meteoriten) zurückgeführt werden könnten». Un pequeño resto quedó sin explicar.",
+    "en": "Swedish Defence Staff communiqué of 10 October 1946, as reported by the NZZ: of the roughly one thousand reports received by 1 October, \"about 80 percent concerned purely luminous phenomena that can very probably be traced to a celestial origin (meteors and meteorites)\". German original: «ungefähr 80 Prozent reine Lichtphänomene betroffen, die mit großer Wahrscheinlichkeit auf himmlischen Ursprung (Meteore und Meteoriten) zurückgeführt werden könnten». A small residue remained unexplained.",
+    "source": "Neue Zürcher Zeitung, 11 oct 1946, «Die Raketengeschosse über Schweden. Bericht des schwedischen Generalstabs» (original en alemán)",
+    "url": "https://archive.org/details/neue-zurcher-zeitung-numero-1822-11-ottobre-1946-ghost-rocket"
+  }
 }
