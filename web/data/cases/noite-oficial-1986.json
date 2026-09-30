@@ -89,13 +89,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APararangaba%20River%20-%20Eug%C3%AAnio%20de%20Melo%20-%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20Brazil.jpg"
     }
   ],
-  "mundanoType": "misid",
-  "misidSubtype": "astronomico",
+  "mundanoType": "sin_propuesta",
   "evidenceReviewed": "2026-09-29",
   "classBasis": {
-    "es": "Ninguna fuente con nombre propone una causa astronómica. El informe del COMDA recoge que el piloto del PT-MBZ vio luces que «parecían estrellas grandes y rojas», y el cálculo de efemérides del corpus sitúa a Marte (−1,2) saliendo al este-sureste; pero el mismo informe concluye que los fenómenos «son sólidos y reflejan de cierta forma inteligencia». Original en portugués: «pareciam estrelas grandes e vermelhas».",
-    "en": "No named source proposes an astronomical cause. The COMDA report records that the PT-MBZ pilot saw lights that \"looked like large red stars\", and the corpus's ephemeris calculation puts Mars (−1.2) rising in the east-south-east; but the same report concludes that the phenomena \"are solid and reflect, in a certain way, intelligence\". Portuguese original: «pareciam estrelas grandes e vermelhas».",
-    "source": "Arquivo Nacional (Brasil) — «Relatório de Ocorrência» del COMDA (2 jun 1986), expediente ARX.0.0.249 (original en portugués)",
-    "url": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0249/BR_DFANBSB_ARX_0_0_0249_d0001de0001.pdf"
+    "es": "Ninguna fuente con nombre propone una causa. Que el piloto del PT-MBZ viera luces que «parecían estrellas grandes y rojas» y que Marte estuviera saliendo al este-sureste (cálculo de efemérides del corpus) no es una propuesta; el informe del COMDA, por su parte, interpreta que los fenómenos «son sólidos y reflejan de cierta forma inteligencia». La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No named source proposes a cause. That the PT-MBZ pilot saw lights that \"looked like large red stars\" and that Mars was rising in the east-south-east (the corpus's own ephemeris calculation) is not a proposal; the COMDA report, for its part, interprets the phenomena as \"solid and reflecting, in a certain way, intelligence\". The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "Arquivo Nacional (Brasil) — «Relatório de Ocorrência» del COMDA (2 jun 1986), ARX.0.0.249, original en portugués · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
   }
 }

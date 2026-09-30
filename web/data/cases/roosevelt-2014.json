@@ -18,7 +18,7 @@
     "place_en": "Atlantic, U.S. East Coast (Virginia–Florida)"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 48,
   "summary": "Pilotos de F/A-18 del escuadrón VFA-11, del ala aérea del USS Theodore Roosevelt, registran desde 2014 contactos casi diarios frente a la costa este de EE.UU., primero en el radar recién modernizado y luego en infrarrojo. Del mismo escuadrón salen los videos Gimbal y GoFast, ambos del 21 de enero de 2015 según la Marina y grabados más al sur, frente a Jacksonville y Savannah, no en el área W-72 de Virginia, donde Ryan Graves sitúa el cuasi-choque que testificó en 2023. La AARO resolvió GoFast en 2025 como un objeto de un metro o menos, a unos 4.000 m, que se desplazaba a favor del viento, a velocidad no anómala, sin poder identificarlo.",
@@ -136,12 +136,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AUSS%20Theodore%20Roosevelt%20at%20sea.jpg"
     }
   ],
-  "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-29",
   "classBasis": {
-    "es": "La capa que explica es el vídeo GOFAST. AARO: «el objeto no se movió a velocidades anómalas», viajaba con el viento a unos 13.000 pies y su tamaño, de un metro o menos, es «comparable a un dron pequeño o un ave». AARO no identifica el objeto; las demás observaciones de Graves y su escuadrón quedan fuera.",
-    "en": "The layer it explains is the GOFAST video. AARO: \"the object did not move at anomalous speeds\", it travelled with the wind at about 13,000 feet and its size, one meter or less, is \"comparable to a small drone or bird\". AARO does not identify the object; the other observations by Graves and his squadron are outside it.",
-    "source": "AARO — Case Resolution «Go Fast» (6 feb 2025), copia en The Black Vault",
+    "es": "Ninguna fuente identifica el objeto. Para el vídeo GOFAST, AARO concluye que «el objeto no se movió a velocidades anómalas» y viajaba con el viento a unos 13.000 pies, y solo compara su tamaño, de un metro o menos, con el de «un dron pequeño o un ave», sin proponer ninguno. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source identifies the object. For the GOFAST video, AARO concludes that \"the object did not move at anomalous speeds\" and travelled with the wind at about 13,000 feet, and only compares its size, one meter or less, to \"a small drone or bird\", proposing neither. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "AARO — Case Resolution «Go Fast» (6 feb 2025), copia en The Black Vault · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "url": "https://www.theblackvault.com/documentarchive/wp-content/uploads/2025/02/AARO_GoFast_Case_Resolution_Card_Methodology_Final.pdf"
   }
 }

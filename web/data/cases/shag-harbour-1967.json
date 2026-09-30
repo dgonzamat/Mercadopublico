@@ -12,7 +12,7 @@
     "place": "Shag Harbour, Nova Scotia"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 65,
   "summary": "El 4 de octubre de 1967, varios testigos de Shag Harbour (Nueva Escocia) vieron una hilera de luces descender hacia el mar; los agentes de la RCMP llegaron a tiempo de ver una luz flotando en el agua y hallaron espuma. El centro de rescate de Halifax comprobó aviones y bengalas sin resultado, y buzos de la Marina rastrearon el fondo dos días sin encontrar nada. El Informe Condon anota que, al parecer, nadie vio realmente el objeto entrar en el agua.",
@@ -105,12 +105,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AShag%20Harbour.jpg"
     }
   ],
-  "misidSubtype": "luces_tierra",
   "evidenceReviewed": "2026-09-29",
   "classBasis": {
-    "es": "Brian Dunning (Skeptoid, 2017): «la explicación candidata que se planteó primero en el lugar en 1967 fue una o más bengalas de socorro marinas», que «encajan muy bien con los relatos» y siguen ardiendo al caer al agua. En contra: el RCC comprobó las bengalas en 1967 sin resultado, y el memorando del CFHQ las da por descartadas junto con aviones y boyas.",
-    "en": "Brian Dunning (Skeptoid, 2017): \"The candidate explanation that was first raised on the scene in 1967 was one or more marine distress flares\", which \"are an excellent match for the reports\" and keep burning once in the water. Against it: the RCC checked flares in 1967 with nil results, and the CFHQ memorandum records them as discounted along with aircraft and floats.",
-    "source": "Dunning, B. — «The Shag Harbour UFO», Skeptoid, episodio 565 (2017)",
+    "es": "Ninguna fuente se decanta por una causa. Brian Dunning (Skeptoid, 2017) propone dos, de clases distintas —un bólido y bengalas de socorro— y dice que no hay razón para excluir «ninguna de al menos dos explicaciones corrientes»; el télex del RCC de 1967 registra que todas las pistas posibles («aviones, bengalas, etc.») se comprobaron con «resultado nulo». La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source settles on one cause. Brian Dunning (Skeptoid, 2017) proposes two, of different classes —a fireball and distress flares— and says there is no reason \"to exclude either of at least two unremarkable explanations\"; the 1967 RCC telex records that all other possible leads (\"A/C, FLARES, ETC.\") were \"CHECKED - NIL RESULTS\". The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "Dunning, B. — «The Shag Harbour UFO», Skeptoid 565 (2017); télex del RCC Halifax (oct 1967), NRC RG 77 vol. 310 · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "url": "https://skeptoid.com/episodes/4565"
   }
 }

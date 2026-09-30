@@ -13,7 +13,7 @@
     "place_en": "Vranov nad Dyjí reservoir · South Moravia"
   },
   "tier": "S",
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 45,
   "summary": "El 12 de julio de 1987, poco después del mediodía, la tripulación de un helicóptero Mi-24 del 51.º Regimiento checoslovaco fue guiada por radar hacia un blanco junto a la frontera austríaca y vio durante alrededor de un minuto un objeto oscuro, cilíndrico y sin alas sobre el embalse de Vranov. Recibió orden de fuego y no disparó por los bañistas; los pilotos estimaron después velocidades de 60 a 2.700 km/h. Los registros se destruyeron por orden, y el relato procede de una crónica del regimiento (1998) y de una entrevista al piloto (1999).",
@@ -86,12 +86,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACzech%20Air%20Force%20Mil%20Mi-24%20Hind%203362%20-%20Radom%20Air%20Show%20-%2020180825%200926%204675%20DxO.jpg"
     }
   ],
-  "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-29",
   "classBasis": {
-    "es": "Ninguna fuente propone una explicación concreta. La clase se apoya en lo que dice el propio piloto, Tesařík: la otra tripulación de guardia «escoltaba un helicóptero que en ese momento hacía vuelos por la frontera desde el lado austríaco», y el control les anunció varias veces el blanco a 500 metros sin que vieran nada. Original en checo: «doprovázeli nějaký vrtulník, který tam v té době visel někde a prováděl taky lety po hranici z rakouské strany».",
-    "en": "No source proposes a specific explanation. The class rests on what the pilot, Tesařík, says himself: the other standby crew \"were escorting some helicopter that was hanging around there at the time and also flying along the border from the Austrian side\", and control several times called the target at 500 metres without their seeing anything. Czech original: «doprovázeli nějaký vrtulník, který tam v té době visel někde a prováděl taky lety po hranici z rakouské strany».",
-    "source": "Projekt Záře — «Incident nad Vranovem», transcripción de la entrevista a Tesařík en ČT-1 (10 ago 1999), original en checo",
-    "url": "http://www.projektzare.cz/nej-pripady-ufo/incident-nad-vranovem/"
+    "es": "Ninguna fuente propone una causa. El piloto, Tesařík, no dio explicación; el helicóptero del lado austríaco que menciona lo escoltaba la otra tripulación, sobre Mikulov, y nadie lo propone como el objeto. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes a cause. The pilot, Tesařík, offered no explanation; the helicopter on the Austrian side he mentions was being escorted by the other crew, over Mikulov, and nobody proposes it as the object. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "Projekt Záře — «Incident nad Vranovem», entrevista a Tesařík en ČT-1 (1999) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
   }
 }
