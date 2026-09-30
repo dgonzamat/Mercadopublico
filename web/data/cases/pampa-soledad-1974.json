@@ -14,7 +14,7 @@
     "place_en": "Pampa Soledad, between Oficina Victoria and Quillagua, Antofagasta Region"
   },
   "tier": "B",
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 42,
   "summary": "La madrugada del 16 de agosto de 1974, cinco artistas populares chilenos —entre ellos el folclorista Tito Fernández «El Temucano»— volvían en auto de una presentación en la Oficina Victoria hacia Antofagasta cuando, en el tramo desértico de Pampa Soledad, fueron seguidos por una luz anaranjada que se multiplicó en dos y luego se fusionó en un solo objeto, bajo el cual dijeron ver una figura humanoide alta. Huyeron a más de 130 km/h; un camionero que se cruzó en el camino corroboró de forma independiente haber sido perseguido por las mismas luces. El fenómeno cesó al llegar a un puesto de Carabineros en Quillagua, donde declararon. Tito Fernández escribió después «El mensaje de Sirio», relatando una supuesta comunicación telepática posterior con la entidad.",
@@ -23,8 +23,14 @@
   "seoDescription": "El 16 de agosto de 1974, cinco artistas chilenos —entre ellos el folclorista Tito Fernández— fueron perseguidos por luces OVNI en Pampa Soledad, Atacama. Un camionero corroboró el hecho de forma independiente.",
   "seoTitle_en": "Pampa Soledad 1974: the UFO that chased a famous Chilean folk singer",
   "seoDescription_en": "On 16 August 1974, five Chilean artists — including folk singer Tito Fernández — were chased by UFO lights in Pampa Soledad, Atacama Desert. An independent truck driver corroborated the sighting.",
-  "patterns": ["8d", "8h"],
-  "entityMorphology": ["alto-humanoide", "luminosa"],
+  "patterns": [
+    "8d",
+    "8h"
+  ],
+  "entityMorphology": [
+    "alto-humanoide",
+    "luminosa"
+  ],
   "category": "contactee",
   "posterior": {
     "mundano_natural": 0.55,
@@ -85,5 +91,11 @@
       "note": "Catálogo de la comunidad de ufología chilena que incluye el caso con fecha y testigos.",
       "note_en": "Chilean ufology community catalog listing the case with date and witnesses."
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa: Cine y Literatura, La Voz del Norte, Inexplicata (Scott Corrales) y la entrevista de En Cancha recogen el relato de los testigos sin explicación; la única conjetura prosaica registrada es la de los propios viajeros, que pensaron en una locomotora, aunque, según Corrales, ninguna vía cruzaba la carretera. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes a cause: Cine y Literatura, La Voz del Norte, Inexplicata (Scott Corrales) and the En Cancha interview record the witnesses' account without explanation; the only prosaic guess on record is the travellers' own, who thought of a locomotive, although, according to Corrales, no railway crossed the road. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "Cine y Literatura; La Voz del Norte (16 ago 2020); Inexplicata, «Highways to High Strangeness» (2011) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  }
 }
