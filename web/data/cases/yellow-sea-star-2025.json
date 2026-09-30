@@ -1,7 +1,9 @@
 {
   "id": "yellow-sea-star-2025",
   "num": 331,
-  "pursueReleases": [4],
+  "pursueReleases": [
+    4
+  ],
   "name": "Objeto en forma de estrella sobre el Mar Amarillo",
   "name_en": "Star-shaped object over the Yellow Sea",
   "year_start": 2025,
@@ -17,7 +19,10 @@
   "tier": "B",
   "probability": 25,
   "category": "incident",
-  "patterns": ["8s", "8e"],
+  "patterns": [
+    "8s",
+    "8e"
+  ],
   "summary": "El 1 de enero de 2025, una plataforma militar estadounidense del Comando Indo-Pacífico detectó mediante sensor infrarrojo un objeto no identificado sobre el Mar Amarillo. El video de 18 segundos, desclasificado por la administración Trump el 10 de julio de 2026, muestra un patrón de contraste descrito por funcionarios como una estrella de seis puntas rastreada por el sensor a bordo. AARO no ofreció conclusión analítica y el caso quedó formalmente sin resolver. El video se difundió dentro del cuarto lote de registros UAP —40 archivos: 14 documentos, 19 videos, 4 audios y 3 imágenes— liberado el 10 de julio de 2026.",
   "summary_en": "On January 1, 2025, a U.S. military platform from Indo-Pacific Command detected an unidentified object over the Yellow Sea via infrared sensor. The 18-second video, declassified by the Trump administration on July 10, 2026, shows a contrast pattern described by officials as a six-pointed star tracked by the onboard sensor. AARO offered no analytical conclusion and the case was formally left unresolved. The video was released within the fourth tranche of UAP records — 40 files: 14 documents, 19 videos, 4 audio files and 3 images — declassified on July 10, 2026.",
   "posterior": {
@@ -28,7 +33,7 @@
     "nohumano_abierto": 0.02,
     "indet": 0.18
   },
-  "mundanoType": "misid",
+  "mundanoType": "instrumento",
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/1014101",
@@ -47,7 +52,7 @@
   "evidence": [
     "Video infrarrojo de 18 segundos capturado el 1 de enero de 2025 por sensor militar estadounidense sobre el Mar Amarillo",
     "Reporte formal DOW-UAP-PR104 presentado por el Comando Indo-Pacífico ante AARO",
-    "Desclasificación oficial como parte del cuarto lote de registros UAP de la administración Trump (enero 2025)",
+    "Desclasificación oficial como parte del cuarto lote de registros UAP de la administración Trump (10 de julio de 2026)",
     "Descripción técnica oficial: área de contraste con patrón de estrella de seis puntas rastreada por sensor a bordo",
     "Ausencia de conclusión analítica por parte de AARO; caso formalmente clasificado como no resuelto",
     "Publicación dentro del cuarto lote de registros UAP (40 archivos: 14 documentos, 19 videos, 4 audios, 3 imágenes) desclasificado el 10 de julio de 2026"
@@ -55,7 +60,7 @@
   "evidence_en": [
     "18-second infrared video captured on January 1, 2025 by U.S. military sensor over the Yellow Sea",
     "Formal report DOW-UAP-PR104 submitted by Indo-Pacific Command to AARO",
-    "Official declassification as part of the fourth tranche of UAP records from the Trump administration (January 2025)",
+    "Official declassification as part of the fourth tranche of UAP records from the Trump administration (July 10, 2026)",
     "Official technical description: area of contrast with six-pointed star pattern tracked by onboard sensor",
     "Absence of analytical conclusion from AARO; case formally classified as unresolved",
     "Release within the fourth tranche of UAP records (40 files: 14 documents, 19 videos, 4 audio files, 3 images) declassified on July 10, 2026"
@@ -90,6 +95,17 @@
       "url": "https://www.theblackvault.com/documentarchive/aaro-releases-fy2025-uap-report-months-after-statutory-deadline-citing-319-new-cases-and-expanded-satellite-analysis/",
       "note": "Análisis del reporte anual FY2025 de AARO que contextualiza los casos sin resolver.",
       "note_en": "Analysis of AARO's FY2025 annual report that contextualizes the unresolved cases."
+    },
+    {
+      "name": "Metabunk — hilo «Department of War - UAP Release 4» (10 jul 2026)",
+      "url": "https://www.metabunk.org/threads/department-of-war-uap-release-4.15005/"
     }
-  ]
+  ],
+  "objectDetail": "sensor_radar",
+  "classBasis": {
+    "es": "En el hilo de Metabunk sobre la cuarta entrega, flarkey identificó la estrella como el conocido artefacto de cámara de seis puntas, y John J. escribió que es un patrón de picos de difracción, con toda evidencia, del sistema de imagen. Eso explica la forma de estrella, no el objeto puntual que la produce, que ninguna fuente identifica.",
+    "en": "In the Metabunk thread on the fourth release, flarkey wrote 'The familar 6 pointed camera artefact is there again', and John J. wrote that these are 'obviously diffraction spikes': 'It's a diffraction spike pattern.' That explains the star shape, not the point source that produces it, which no source identifies.",
+    "source": "Metabunk — hilo «Department of War - UAP Release 4», mensajes 3 (flarkey) y 8 (John J.), 10 jul 2026",
+    "url": "https://www.metabunk.org/threads/department-of-war-uap-release-4.15005/"
+  }
 }
