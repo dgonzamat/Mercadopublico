@@ -87,5 +87,11 @@
   ],
   "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "globo"
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "La capa que explica es el objeto que vio el T-33 sobre Sandy Hook el día 10. Tarjeta de Blue Book: «Globo lanzado desde el Evans Signal Laboratory a las 11:12 EDST». Los ecos del día 11 van a propagación anómala, y el expediente deja un eco sin explicar.",
+    "en": "The layer it explains is the object the T-33 saw over Sandy Hook on the 10th. Blue Book card: \"Balloon released from Evans Signal Laboratory at 1112 EDST\". The returns of the 11th go to anomalous propagation, and the file leaves one return unexplained.",
+    "source": "Project Blue Book — expediente «10 September 1951, Sandy Hook, New Jersey» (tarjeta)",
+    "url": "https://archive.org/details/1951-09-7009027-SandyHook-NewJersey"
+  }
 }

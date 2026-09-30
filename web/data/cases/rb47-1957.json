@@ -97,5 +97,11 @@
   ],
   "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "avion"
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "La capa que explica es el eco del radar de tierra (Utah) cerca de Dallas. Análisis de Klass en el expediente: hay razones para creer que el blanco «no identificado» del radar de Duncanville «pudo ser el vuelo 966 de American Airlines», que aproximaba a Love Field a esa hora. La tarjeta de Blue Book cita en cambio el vuelo 655, apoyándose en una carta de la CAA sobre otro incidente, cerca de El Paso. Las señales ELINT (radares de tierra) y la primera luz (un meteoro) son otras capas.",
+    "en": "The layer it explains is the ground-radar (Utah) echo near Dallas. Klass's analysis in the file: there is reason to believe the \"unidentified\" target on the Duncanville radar \"may have been American Airlines Flt. #966\", on approach to Love Field at that time. The Blue Book card instead cites flight 655, relying on a CAA letter about a different incident near El Paso. The ELINT signals (ground radars) and the first light (a meteor) are separate layers.",
+    "source": "Project Blue Book — expediente «Forbes AFB, Kansas / Oklahoma City / Ft Worth», 17 jul 1957 (análisis de Klass y carta de la CAA)",
+    "url": "https://archive.org/details/1957-07-6961835-ForbesAFB-Kansas"
+  }
 }

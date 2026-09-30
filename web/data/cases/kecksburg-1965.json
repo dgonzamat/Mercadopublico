@@ -101,5 +101,11 @@
     "license": "CC BY-SA 3.0",
     "href": "https://commons.wikimedia.org/wiki/File:Kecksburg_UFO.JPG"
   },
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "La capa que explica es el bólido visto en seis estados y Ontario. Memorando para el registro de Blue Book, 10 de diciembre de 1965: el avistamiento de Pensilvania «es probablemente un bólido o un meteoro». No explica el supuesto objeto caído en el bosque de Kecksburg.",
+    "en": "The layer it explains is the fireball seen across six states and Ontario. Blue Book memo for the record, 10 December 1965: the Pennsylvania sighting \"is probably a bolide or a meteor\". It does not explain the alleged object fallen in the Kecksburg woods.",
+    "source": "Project Blue Book — expediente de Kecksburg/Acme, 9 dic 1965, memorando del 10 dic 1965, p. 4 (copia de The Black Vault)",
+    "url": "https://documents2.theblackvault.com/documents/projectbluebook/projectbluebook-kecksburg.pdf"
+  }
 }

@@ -91,5 +91,11 @@
     }
   ],
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "planeta_estrella"
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "La embajada en Argel lo dio por «algún tipo de fenómeno natural que ha provocado una histeria leve», recordó un «globo misterioso» visto por argelinos cerca de Orán el 25 de enero, y dejó constancia de que el funcionario argelino Latreche ya había rechazado que fuera un satélite o, frente a la costa, un reflector rebotando en las nubes. La de Rabat informó de que Le Matin atribuyó las luces vistas sobre Marruecos a «una conjunción poco frecuente de Venus con Sirio», citando a un «astrólogo aficionado». El cálculo de efemérides del corpus sitúa a Venus (−3,8) al oeste tras el ocaso. Apoyo débil: no explica el contacto de radar.",
+    "en": "The Algiers embassy took it to be a \"natural phenomenon of some sort which has engendered a mild hysteria\", recalled a \"mysterious balloon\" sighted by Algerians near Oran on 25 January, and recorded that the Algerian official Latreche had \"already rejected my theory that object is satellite or that in case of sighting off coast it was searchlight bouncing off clouds\". The Rabat embassy reported that Le Matin put the lights seen over Morocco down to \"an infrequent conjunction of Venus with Sirius\", citing an \"amateur Casablanca astrologist\". The corpus's ephemeris calculation places Venus (−3.8) in the west after sunset. Weak support: it does not explain the radar contact.",
+    "source": "Cables 1975ALGIER00638 (7 mar 1975) y 1975RABAT01225 (11 mar 1975), Departamento de Estado, en WikiLeaks PlusD",
+    "url": "https://wikileaks.org/plusd/cables/1975ALGIER00638_b.html"
+  }
 }

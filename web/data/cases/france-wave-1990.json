@@ -108,5 +108,11 @@
   ],
   "misidSubtype": "espacial",
   "evidenceReviewed": "2026-09-29",
-  "objectDetail": "reentrada"
+  "objectDetail": "reentrada",
+  "classBasis": {
+    "es": "El catálogo GCAT de McDowell registra el objeto 1990-094C como la tercera etapa del Proton-K lanzado el 3 de noviembre de 1990, reentrada el 5 de noviembre, la noche de la oleada; el SEPRA anunció pronto que se trataba de la reentrada atmosférica de restos de esa tercera etapa. El informe del SEPRA no se pudo reabrir desde aquí (el servidor del GEIPAN devolvía 429).",
+    "en": "McDowell's GCAT catalogue lists object 1990-094C as the third stage of the Proton-K launched on 3 November 1990, re-entered on 5 November, the night of the wave; SEPRA soon announced that it was the atmospheric re-entry of debris from that third stage. The SEPRA report could not be reopened from here (the GEIPAN server returned 429).",
+    "source": "McDowell, J. — GCAT, satcat.tsv, entrada 1990-094C (Proton-K 370-01 Stage 3); GEIPAN, «Rentrée atmosphérique 5 novembre 1990»",
+    "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv"
+  }
 }

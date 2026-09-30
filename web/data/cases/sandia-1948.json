@@ -94,5 +94,10 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "misidSubtype": "astronomico",
-  "objectDetail": "meteoro"
+  "classBasis": {
+    "es": "Informe final del Proyecto Twinkle: «No ha habido ningún indicio de que siquiera las observaciones algo extrañas, a menudo llamadas bolas de fuego verdes, sean otra cosa que fenómenos naturales»; entre esos fenómenos enumera aves en vuelo, nubes pequeñas y meteoritos, sin atribuir las bolas verdes a ninguno. El mismo expediente recoge que había «considerable duda en la mente de parte del personal del proyecto de que se trate de un fenómeno natural».",
+    "en": "Project Twinkle final report: \"There has been no indication that even the somewhat strange observations often called Green Fireballs are anything but natural phenomena\"; among those phenomena it lists flying birds, small clouds and meteorites, without assigning the green fireballs to any of them. The same file records \"considerable doubt in the minds of some of the project personnel that this is a natural phenomenon\".",
+    "source": "Project Twinkle Final Report, Geophysics Research Division (noviembre de 1951)",
+    "url": "https://documents2.theblackvault.com/documents/projectbluebook/ProjectTwinkle-November1951.pdf"
+  }
 }

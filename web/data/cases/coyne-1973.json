@@ -92,5 +92,11 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "misidSubtype": "astronomico",
-  "objectDetail": "meteoro"
+  "objectDetail": "meteoro",
+  "classBasis": {
+    "es": "Philip J. Klass: «Mi investigación sugirió que el ovni era un meteoro-bola de fuego de la lluvia anual de las Oriónidas, que estaba cerca de su máximo el 18 de octubre», con el ascenso del helicóptero atribuido a reacciones reflejas de la tripulación. Según Randle, Klass buscó mucho una explicación meteórica pero «no encontró nada que corroborara su idea», y nadie más en posición de verlo informó del bólido.",
+    "en": "Philip J. Klass: \"My investigation suggested that the UFO was a meteor-fireball from the annual Orionids meteor shower which was near its peak activity on Oct. 18\", with the helicopter's climb attributed to the crew's reflex reactions. According to Randle, Klass searched long for a meteoric explanation but \"found nothing to corroborate his idea\", and \"there were no reports of anyone else seeing it\".",
+    "source": "Klass, P. J., citado en Parabunk, «The 1973 Coyne/Mansfield helicopter UFO incident finally explained» (2018); Randle, K., «October 18, 1973: The Coyne Helicopter Case» (2015)",
+    "url": "http://parabunk.blogspot.com/2018/04/the-1973-coynemansfield-helicopter-ufo.html"
+  }
 }

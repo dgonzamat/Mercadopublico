@@ -97,5 +97,11 @@
   ],
   "misidSubtype": "astronomico",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "planeta_estrella"
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "La tarjeta de Blue Book concluye «Visual: Astro». Un oficial que observó los objetos escribió: «Los objetos parecían estrellas corrientes. Uno de los señalados era muy brillante, pero no tanto como para descartar que fuera una estrella»; un octavo objeto resultó ser el globo meteorológico de Edwards. El radar lo atribuye a condiciones atmosféricas, otra capa.",
+    "en": "The Blue Book card concludes 'Visual: Astro'. An officer who watched the objects wrote: \"The objects looked like ordinary stars. One of the objects pointed out was very brilliant but not so brilliant as to preclude its being a star\"; an eighth object turned out to be the Edwards weather balloon. The radar is put down to atmospheric conditions, a separate layer.",
+    "source": "Project Blue Book — expediente «7 Oct 1965, Edwards AFB, California» (tarjeta y declaraciones)",
+    "url": "https://archive.org/details/1965-10-8692927-EdwardsAFB-California"
+  }
 }

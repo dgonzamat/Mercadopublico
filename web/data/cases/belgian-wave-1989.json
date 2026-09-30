@@ -90,5 +90,11 @@
   ],
   "misidSubtype": "astronomico",
   "evidenceReviewed": "2026-09-29",
-  "objectDetail": "planeta_estrella"
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "La capa que explica son las luces que vieron los gendarmes. Meessen (2007): había establecido la carta del cielo, «que mostraba que Sirio era visible para ellos», refractado por masas de aire; «Júpiter también era visible, pero más alto en el cielo». Los enganches de radar de los F-16 los atribuye a masas de aire húmedo, otra capa. Original en francés: «Sirius y était visible pour eux… Jupiter était également visible, mais plus haut dans le ciel».",
+    "en": "The layer it explains is the lights the gendarmes saw. Meessen (2007): he had drawn the sky chart \"showing that Sirius was visible to them\", refracted by air masses; \"Jupiter was also visible, but higher in the sky\". He attributes the F-16 radar lock-ons to humid air masses, a separate layer. French original: «Sirius y était visible pour eux… Jupiter était également visible, mais plus haut dans le ciel».",
+    "source": "Meessen, A. — «Étude approfondie des mystérieux enregistrements radar des F-16» (2007), original en francés",
+    "url": "https://www.meessen.net/AMeessen/Etude_des_myst%C3%A9rieux_enregistrements_des_F16.pdf"
+  }
 }

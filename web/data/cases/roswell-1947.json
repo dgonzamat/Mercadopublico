@@ -89,5 +89,11 @@
   },
   "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-28",
-  "objectDetail": "globo"
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "La capa que explica es la de los restos del rancho Foster. La historia de julio de 1947 del 509.º Grupo de Bombardeo, citada por la GAO, dice que el «disco volador» «resultó ser un globo de seguimiento por radar»; el informe de la Fuerza Aérea de 1994 atribuyó los restos, con más probabilidad, a un proyecto gubernamental clasificado lanzado en globo (Mogul).",
+    "en": "The layer it explains is the Foster ranch debris. The July 1947 history of the 509th Bomb Group, quoted by the GAO, says the 'flying disc' \"turned out to be a radar tracking balloon\"; the Air Force's 1994 report attributed the wreckage most likely to \"a balloon-launched classified government project\" (Mogul).",
+    "source": "GAO/NSIAD-95-187, Government Records: Results of a Search for Records Concerning the 1947 Crash Near Roswell (1995)",
+    "url": "https://archive.org/details/roswell-rapporto-gao"
+  }
 }

@@ -123,5 +123,11 @@
   },
   "misidSubtype": "luces_tierra",
   "evidenceReviewed": "2026-09-29",
-  "objectDetail": "faro_reflector"
+  "objectDetail": "faro_reflector",
+  "classBasis": {
+    "es": "La capa que explica es la primera noche (26 de diciembre). Carta del jefe de policía de Suffolk: «las únicas luces visibles para los agentes que acudieron al incidente eran las del faro de Orford».",
+    "en": "The layer it explains is the first night (26 December). Letter from the Suffolk chief constable: \"the only lights visible to the officers visiting the incident were those from Orford light house\".",
+    "source": "Policía de Suffolk — carta del 23 nov 1983 sobre la noche del 26 dic 1980 (escaneo alojado por Ian Ridpath)",
+    "url": "http://www.ianridpath.com/ufo/police.html"
+  }
 }

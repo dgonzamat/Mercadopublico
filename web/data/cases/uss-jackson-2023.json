@@ -105,5 +105,11 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "classBasis": {
+    "es": "Solo un foro secundario propone candidatos: en Metabunk varios analistas buscaron aeronaves en la dirección de la cámara y hallaron coincidencias «muy tentativas», entre ellas un helicóptero, sin identificación firme por la incertidumbre del rumbo de la cámara. Ninguna fuente oficial ha propuesto una causa.",
+    "en": "Only a secondary forum proposes candidates: on Metabunk several analysts searched for aircraft in the camera's direction and found \"very tentative\" matches, among them a helicopter, with no firm identification because of the uncertain camera bearing. No official source has proposed a cause.",
+    "source": "Metabunk — «The USS Jackson “Tic-tac” UAP» (hilo de análisis, 2025)",
+    "url": "https://www.metabunk.org/threads/the-uss-jackson-tic-tac-uap.14130/"
+  }
 }

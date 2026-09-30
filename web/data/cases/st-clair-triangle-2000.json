@@ -104,6 +104,13 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMain%20Street%2C%20Belleville%2C%20IL.jpg"
     }
   ],
-  "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-28"
+  "misidSubtype": "astronomico",
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Philip Klass propuso Venus: «por curiosa coincidencia, un planeta Venus muy brillante estaba justo saliendo por el sureste» esa madrugada. Objeción de Davis (NIDS): Venus estaba bajo el horizonte cuando se vio el objeto por primera vez, hacia las 4:00, y no salió hasta las 4:25. La otra propuesta con nombre, de NIDS, es una nave más ligera que el aire del Departamento de Defensa, que no es una misidentificación.",
+    "en": "Philip Klass proposed Venus: \"By curious coincidence, a very bright planet Venus was just rising in the southeast\" that morning. Davis's (NIDS) objection: Venus was below the horizon when the object was first seen, at about 4:00, and did not rise until 4:25. The other named proposal, NIDS's, is a lighter-than-air Department of Defense craft, which is not a misidentification.",
+    "source": "Huyghe, P. — «NIDS and the Illinois UFO sighting», Space.com (15 mar 2000), citando el Skeptics UFO Newsletter de Klass, copia en UFO Evidence",
+    "url": "http://www.ufoevidence.org/documents/doc1289.htm"
+  },
+  "objectDetail": "planeta_estrella"
 }

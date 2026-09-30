@@ -99,5 +99,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASwissair%20Sud-Aviation%20Caravelle%20Soderstrom-1.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "La explicación de Fernández Peris (El Expediente Manises, 1998), resumida por un crítico: las luces que vio el Super Caravelle «eran las llamaradas de las torres de combustión de la refinería de Escombreras, próximas a Cartagena». La fuente que la cita la disputa, y el libro no es accesible desde aquí.",
+    "en": "Fernández Peris's explanation (El Expediente Manises, 1998), as summarised by a critic: the lights seen by the Super Caravelle \"were the flares from the combustion towers of the Escombreras refinery near Cartagena\". The source quoting it disputes it, and the book is not accessible from here.",
+    "source": "Ruiz, M. Á. — «“El Expediente Manises”: un análisis crítico» (Informe OVNI), resumiendo a Fernández Peris (1998)",
+    "url": "https://www.informeovni.net/articulos/elexpedientemanises.html"
+  }
 }
