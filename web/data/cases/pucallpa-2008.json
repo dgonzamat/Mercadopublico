@@ -14,7 +14,7 @@
     "place_en": "San Juan hamlet, near Pucallpa (Ucayali)"
   },
   "tier": "B",
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 37,
   "summary": "En abril de 2008, pobladores del caserío San Juan, cerca de Pucallpa (Amazonía peruana, Ucayali), reportaron 'luces' que sobrevolaban la zona de noche y disparaban haces de luz contra la gente, generando terror. Según una reconstrucción de divulgación ufológica, la OIFAA de la Fuerza Aérea del Perú recibió el reporte a través del comandante Julio César Chamorro, aunque otras fuentes sitúan la salida de Chamorro de la oficina años antes; la pesquisa civil la realizaron tres estudiantes de Ciencias de la Comunicación de la Universidad de Lima. Es un caso de baja documentación —principalmente testimonial y secundaria— que recuerda, a escala menor, al patrón de Colares.",
@@ -76,10 +76,5 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APucallpa%20Plaza%20San%20Mart%C3%ADn%20Fountain%20by%20Night.jpg"
     }
   ],
-  "classBasis": {
-    "es": "Ninguna fuente consultada propone una causa para las luces de San Juan: la reconstrucción de Exploración OVNI (2012), el relato principal del caso, las presenta sin explicación, y ni el perfil de Chamorro en ICER ni el archivo de El Comercio sobre la OIFAA ofrecen alguna. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones.",
-    "en": "No source consulted proposes a cause for the San Juan lights: the Exploración OVNI reconstruction (2012), the case's main account, presents them without explanation, and neither Chamorro's ICER profile nor El Comercio's archive piece on the OIFAA offers one. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
-    "source": "Exploración OVNI (2012); ICER — Julio Chamorro; El Comercio, archivo (2023) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
-    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
-  }
+  "misidSubtype": "terrestre_otros"
 }

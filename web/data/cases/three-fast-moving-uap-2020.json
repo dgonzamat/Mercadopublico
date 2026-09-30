@@ -19,7 +19,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 44,
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.42,
     "humana_clasificada": 0.1,
@@ -78,11 +78,5 @@
       "note_en": "Video embedded in this case's viewer; the record includes the provenance assessment and the timestamped visual description quoted in whatHappened.",
       "name_en": "DVIDS — DOW-UAP-PR079, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)"
     }
-  ],
-  "classBasis": {
-    "es": "Ninguna fuente propone qué eran las áreas de contraste: la ficha de la AARO (DOW-UAP-PR079) solo las describe y advierte que su descripción no es un juicio analítico, y no se halló un análisis de Metabunk ni de otro sitio sobre este clip. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones.",
-    "en": "No source proposes what the areas of contrast were: AARO's record (DOW-UAP-PR079) only describes them and warns that its description is not an analytical judgment, and no Metabunk or other analysis of this clip was found. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
-    "source": "AARO — DOW-UAP-PR079 (DVIDS) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
-    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
-  }
+  ]
 }

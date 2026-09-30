@@ -71,12 +71,5 @@
       "note_en": "Video embedded in this case's viewer; the record includes the mission report quote and the visual description quoted in whatHappened.",
       "name_en": "DVIDS — DOW-UAP-PR29, with the DoW-UAP-D8 mission report quoted by AARO (PURSUE Release 01)"
     }
-  ],
-  "misidSubtype": "luces_tierra",
-  "classBasis": {
-    "es": "El propio observador, en el informe de misión DoW-UAP-D8 que cita la AARO, dijo que el UAP podía ser en cambio el reflejo de un objeto en el agua, es decir, una fuente al nivel de la superficie. No dice qué objeto, así que no se fija detalle.",
-    "en": "The observer himself, in mission report DoW-UAP-D8 as cited by AARO, reported that 'the UAP may instead be a reflection from an object in the water', that is, a source at surface level. He does not say what object, so no detail is set.",
-    "source": "AARO — DOW-UAP-PR29, con el informe de misión DoW-UAP-D8 (DVIDS, PURSUE Release 01)",
-    "url": "https://www.dvidshub.net/video/1006074"
-  }
+  ]
 }

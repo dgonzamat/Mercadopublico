@@ -19,7 +19,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 43,
-  "mundanoType": "instrumento",
+  "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.46,
     "humana_clasificada": 0.08,
@@ -76,16 +76,6 @@
       "note": "Video embebido en el visor de este caso; la ficha incluye la nota de alteración digital y la descripción visual con marcas de tiempo citadas en whatHappened.",
       "note_en": "Video embedded in this case's viewer; the record includes the digital-alteration note and the timestamped visual description quoted in whatHappened.",
       "name_en": "DVIDS — DOW-UAP-PR055, uploader-defined title, with AARO's provenance assessment and visual description (Reeves FOIA batch, PURSUE Release 02)"
-    },
-    {
-      "name": "Metabunk — hilo «PR055: Corbell's 'U.S. Military Films Huge Disc Hiding In The Clouds'»",
-      "url": "https://www.metabunk.org/threads/pr055-corbells-u-s-military-films-huge-disc-hiding-in-the-clouds-new-video-06-17-25.14289/page-5"
     }
-  ],
-  "classBasis": {
-    "es": "El análisis de Metabunk atribuye la forma a un artefacto óptico de la cámara: si la fuente de luz es muy intensa, como el sol, 'sus rayos pueden llegar al frente de la lente y causar un destello, aunque la fuente no esté en la imagen'; con el color del destello igual al de la nube, 'parece desaparecer en el fondo'. Otros participantes propusieron un globo, y Mick West señaló que no conocía un ejemplo de reflejo interno en ese tipo de cámara.",
-    "en": "The Metabunk analysis attributes the shape to an optical artifact of the camera: if the light source is very strong, such as the sun, 'its light rays can reach the front of the lens and cause lens flare, even if the light source itself is not included in the image'; when the flare colour matches the cloud colour it 'will seem to disappear into the background'. Other participants proposed a balloon, and Mick West noted he did not recall an example of an internal reflection in that kind of camera.",
-    "source": "Metabunk, hilo PR055 (posts de John J. y flarkey, 27-28 may 2026)",
-    "url": "https://www.metabunk.org/threads/pr055-corbells-u-s-military-films-huge-disc-hiding-in-the-clouds-new-video-06-17-25.14289/page-5"
-  }
+  ]
 }

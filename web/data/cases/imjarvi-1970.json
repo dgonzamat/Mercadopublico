@@ -62,7 +62,7 @@
       "note_en": "The Swedish ufologist concluded that Heinonen's later claims resembled myth more than a genuine contact, which contaminated the reading of the original case."
     }
   ],
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
   "posterior": {
     "mundano_natural": 0.3,
     "humana_clasificada": 0.03,
@@ -80,10 +80,5 @@
     "note": "Reúne la secuencia del encuentro, los efectos físicos reportados y las referencias de la investigación de campo temprana.",
     "note_en": "Gathers the encounter sequence, the reported physical effects and the references of the early field investigation."
   },
-  "classBasis": {
-    "es": "Ninguna fuente propone una causa ordinaria para el encuentro de 1970: el médico que examinó a los testigos, Pauli Kajanoja, dijo que los síntomas se parecían a los de una exposición a radiación; otros investigadores lo compararon con fenómenos eléctricos como el rayo en bola, y el Instituto de Investigación de Alta Tensión de Uppsala descartó que tuviera relación con la electricidad atmosférica natural. La crítica de Anders Liljegren se refiere a los relatos posteriores de Heinonen, no a la noche de Imjärvi. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
-    "en": "No source proposes an ordinary cause for the 1970 encounter: the physician who examined the witnesses, Pauli Kajanoja, said the symptoms resembled radiation exposure; other researchers compared it with electrical phenomena such as ball lightning, and the Institute for High Voltage Research at Uppsala dismissed a link with natural atmospheric electricity. Anders Liljegren's criticism concerns Heinonen's later accounts, not the night at Imjärvi. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
-    "source": "Above the Norm News, «Skiers, a UFO, and a Humanoid: The 1970 Imjärvi Incident» (12 sep 2025); UFO Evidence, ficha del caso · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
-    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
-  }
+  "misidSubtype": "terrestre_otros"
 }
