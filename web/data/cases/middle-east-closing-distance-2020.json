@@ -19,7 +19,7 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 36,
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "posterior": {
     "mundano_natural": 0.52,
     "humana_clasificada": 0.08,
@@ -72,5 +72,11 @@
       "name_en": "DVIDS — DOW-UAP-PR45, Unresolved UAP Report, Middle East, 2020 (with AARO's technical comment)"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Ninguna fuente propone qué era el objeto: el comentario de la AARO en DVIDS explica solo el aumento de tamaño aparente («probablemente se debe, al menos en parte, a que la plataforma estadounidense estaba cerrando la distancia»), no el objeto, y el reporte se publicó como no resuelto; en el hilo de Metabunk sobre la primera entrega de PURSUE solo se discute un desajuste de ubicación en la tabla oficial. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones.",
+    "en": "No source proposes what the object was: AARO's comment on DVIDS explains only the apparent growth in size ('likely due, at least in part, to the U.S. platform closing the distance'), not the object, and the report was published as unresolved; the Metabunk thread on the first PURSUE release only discusses a location mismatch in the official table. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'.",
+    "source": "DVIDS, DOW-UAP-PR45 (comentario de la AARO); Metabunk, hilo de la entrega 1 de PURSUE · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  }
 }
