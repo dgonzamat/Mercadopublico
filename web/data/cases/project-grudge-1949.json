@@ -16,6 +16,7 @@
   },
   "tier": "A",
   "category": "document",
+  "relatedCases": ["fort-monmouth-1951", "gorman-dogfight-1948", "mariana-great-falls-1950", "chiles-whitted-1948"],
   "epistemicStatus": "documented",
   "mundanoType": "misid",
   "probability": 70,
