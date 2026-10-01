@@ -87,5 +87,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASalyut%206%20cine%20camera%20(53594100081).jpg"
     }
   ],
-  "misidSubtype": "espacial"
+  "misidSubtype": "espacial",
+  "classBasis": {
+    "es": "James Oberg compara el relato de Kovalyonok con penachos de misiles fotografiados desde la órbita y desde tierra —formas y tamaños, cambios de alargamiento, iluminación idéntica al entrar en la sombra de la Tierra— y explora un ensayo secreto de misil en el sur de África. Pero él mismo concluye que esa conexión «sigue siendo especulativa», que no se han encontrado registros de lanzamientos en la zona y que «la verdadera naturaleza del fenómeno observado por la tripulación del Salyut-6 sigue sin explicarse».",
+    "en": "James Oberg compares Kovalyonok's account with missile plumes photographed from orbit and from the ground —shapes and sizes, dynamic elongation changes, identical illumination on entering Earth's shadow— and explores a secret missile test in southern Africa. But he himself concludes that the connection \"remains speculative\", that no records of local-area launches have been found, and that \"the true nature of the phenomenon observed by the Salyut-6 crew remains unexplained\".",
+    "source": "Oberg, J. — «Have cosmonauts seen launches?» (presentación, copia en el Internet Archive)",
+    "url": "https://web.archive.org/web/2020id_/https://www.jamesoberg.com/cosmonauts-see-launches.pdf"
+  }
 }

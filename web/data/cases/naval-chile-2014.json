@@ -73,5 +73,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALa%20ciudad%20de%20Valpara%C3%ADso%20desde%20el%20Cerro%20Artiller%C3%ADa%2C%20Chile%202019.jpg"
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "El análisis colectivo de Metabunk sobre el vídeo FLIR de la Armada: el objeto es un avión que se aleja de la cámara y deja una estela aerodinámica breve; tras descartar el LA330, «el análisis 3D posterior reveló que el IB6830 (un A340 de cuatro motores) encaja perfectamente», a unas 35 millas cuando se vio por primera vez.",
+    "en": "Metabunk's collective analysis of the Navy FLIR video: the object is a plane flying away from the camera and briefly leaving an aerodynamic contrail; after setting aside LA330, \"subsequent 3D analysis revealed that IB6830 (a four-engined A340) is actually a perfect match\", some 35 miles away when first spotted.",
+    "source": "Metabunk — «Explained: Chilean Navy \"UFO\" video - Aerodynamic Contrails, Flight IB6830» (2017)",
+    "url": "https://www.metabunk.org/threads/explained-chilean-navy-ufo-video-aerodynamic-contrails-flight-ib6830.8306/"
+  }
 }

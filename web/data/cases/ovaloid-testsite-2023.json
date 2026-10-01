@@ -17,7 +17,7 @@
     "place_en": "Military test site — classified location (U.S.)"
   },
   "tier": "A",
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "developing",
   "probability": 40,
   "summary": "Septiembre 2023, sitio de prueba militar de EE.UU. con espacio aéreo cerrado por ensayos LiDAR: una contratista con 15 años en instalaciones militares —que ella misma cerró el espacio aéreo ese día—, un piloto de drones y otros testigos observan un objeto ovaloide metálico color bronce (~40–60 m) que se materializa desde una luz brillante y desaparece al instante. Gráfico renderizado por el FBI y boceto compuesto; ubicación oficialmente redactada. Divulgado en el release oficial PURSUE (war.gov/ufo, may 2026).",
@@ -118,5 +118,10 @@
       "url": "https://www.flyingmag.com/unpacking-pentagon-latest-uap-release/"
     }
   ],
-  "misidSubtype": "aeronave"
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa: en los formularios FD-302 del FBI, la testigo principal se dio cuenta de que el objeto «no era un avión ni un dron» y otro de los presentes «pensó que la luz podría haber sido un meteoro que venía directo hacia ellos y se quemaba en la atmósfera», sin que nadie lo sostenga después; cada formulario advierte que «no contiene recomendaciones ni conclusiones del FBI». La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones, aunque el mismo informe añade que «muchos otros casos siguen sin resolverse»: es la proporción entre los casos resueltos, no entre todos.",
+    "en": "No source proposes a cause: in the FBI FD-302 forms, the main witness realised the object \"was not an aircraft or drone\" and another of those present \"thought the light might have been a meteor coming straight toward them and burning up in the atmosphere\", with no one taking it further; each form states that it \"contains neither recommendations nor conclusions of the FBI\". The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites and aircraft', although the same report adds that 'many other cases remain unresolved': it is the rate among resolved cases, not among all cases.",
+    "source": "FBI — FD-302, septiembre de 2023 (PURSUE, entrega 1, seriales 3 y 5) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), citado por EarthSky, tasa base",
+    "url": "https://www.war.gov/medialink/ufo/release_1/serial-5_redacted.pdf"
+  }
 }

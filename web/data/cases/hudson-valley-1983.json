@@ -136,5 +136,12 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-28"
+  "objectDetail": "avion",
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "The New York Times, 25 de agosto de 1984: «la policía estatal dice que el “objeto” son en realidad cinco o seis avionetas que vuelan en formación cerrada como parte de una broma»; el sargento Kenneth Spiro contó que un agente lo siguió hasta el aeródromo de Stormville: «Era un grupo de avionetas. Vuelan en formación», con la parte inferior pintada de negro y luces que cambian de color. Pero el mismo artículo recoge que «algunos vecinos no están tan seguros» y testigos que describen un objeto que se detenía sobre su casa sin ruido.",
+    "en": "The New York Times, 25 August 1984: \"The state police say the 'object' is really five or six small planes flying in tight formation as part of a hoax\"; Sgt. Kenneth Spiro said a trooper tracked it to Stormville airport: \"It was a group of light planes. They fly in formation\", with undersides painted black and lights that change colour. But the same article notes that \"some residents are not so sure\" and quotes witnesses describing an object that stopped silently over their house.",
+    "source": "The New York Times, 25 ago 1984, reproducido en UFO Newsclipping Service n.º 182 (archive.org)",
+    "url": "https://archive.org/details/UFO_Newsclipping_Service_1984_09_no_182"
+  }
 }

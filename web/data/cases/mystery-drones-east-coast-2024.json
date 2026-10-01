@@ -88,5 +88,11 @@
       "note_en": "Sustained press coverage of the incident."
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "classBasis": {
+    "es": "Declaración conjunta del DHS, el FBI, la FAA y el Departamento de Defensa (16 de diciembre de 2024): «Evaluamos que los avistamientos hasta la fecha incluyen una combinación de drones comerciales legales, drones de aficionados y drones policiales, así como aviones tripulados de ala fija, helicópteros y estrellas reportadas por error como drones», y «no hemos identificado nada anómalo».",
+    "en": "Joint statement by DHS, the FBI, the FAA and the Department of Defense (16 December 2024): \"We assess that the sightings to date include a combination of lawful commercial drones, hobbyist drones, and law enforcement drones, as well as manned fixed-wing aircraft, helicopters, and stars mistakenly reported as drones\", and \"We have not identified anything anomalous\".",
+    "source": "DHS, FBI, FAA y DoD — declaración conjunta del 16 dic 2024, citada por DroneLife (17 dic 2024)",
+    "url": "https://dronelife.com/2024/12/17/dhs-fbi-faa-and-dod-respond-to-reported-drone-sightings/"
+  }
 }

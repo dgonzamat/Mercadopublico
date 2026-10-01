@@ -73,5 +73,11 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APitlochry%2C%20Perthshire%20(50248925367).jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "David Clarke, que recuperó la copia de la foto, resume las teorías publicadas desde 2022: «la mayoría de ellas sugieren que la foto es producto de un fraude o una broma», como un objeto colgado de un hilo cerca de la cámara —posiblemente un adorno navideño de cinco puntas, según el escéptico belga Wim van Utrecht— o un reflejo en un estanque. Pero el analista fotográfico Andrew Robinson, citado por Clarke, sostiene que la explicación más simple, «una fotografía de un objeto real en el cielo, es con mucho la más convincente».",
+    "en": "David Clarke, who recovered the copy of the photo, summarises the theories published since 2022: \"most of these suggest the photo is the product of a hoax or prank\", such as an object hung from a thread close to the camera —possibly a five-pointed Christmas tree ornament, according to Belgian skeptic Wim van Utrecht— or a reflection in a pond. But photographic analyst Andrew Robinson, quoted by Clarke, holds that the simplest explanation, \"that we are seeing a photograph of a real object in the sky, is by far the most convincing\".",
+    "source": "Clarke, D. — «Calvine UFO revisited» (Substack)",
+    "url": "https://drclarke.substack.com/p/calvine-ufo-revisited"
+  }
 }

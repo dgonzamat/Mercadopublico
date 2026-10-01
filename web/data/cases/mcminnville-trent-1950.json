@@ -96,5 +96,11 @@
     "license": "Dominio público",
     "href": "https://commons.wikimedia.org/wiki/File:UFO_picture_taken_by_Paul_Trent_in_McMinnville,_Oregon.jpg"
   },
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "El propio análisis de Hartmann para el Informe Condon dejó abierta la hipótesis del fraude: sus pruebas «no descartan la posibilidad de que el objeto fuera una maqueta pequeña colgada del cable cercano por un hilo no resuelto», y Sheaffer resume después el estudio del grupo francés IPACO (2013), que «concluyó que el objeto es una maqueta pequeña» y buscó el hilo de suspensión por métodos estadísticos. Pero la conclusión de Hartmann es que todos los factores investigados parecen coherentes con un objeto volador extraordinario, aunque «no puede decirse que la evidencia descarte positivamente una fabricación».",
+    "en": "Hartmann's own analysis for the Condon Report left the hoax hypothesis open: his tests \"do not rule out the possibility that the object was a small model suspended from the nearby wire by an unresolved thread\", and Sheaffer later summarises the study by the French group IPACO (2013), which \"concluded that the object is a small model\" and searched statistically for the suspension thread. But Hartmann's conclusion is that all factors investigated appear consistent with an extraordinary flying object, although \"it cannot be said that the evidence positively rules out a fabrication\".",
+    "source": "Sheaffer, R. — «Special Report: Trent UFO Photos» (Bad UFOs, 2014) · Hartmann, W. K. — Informe Condon (1969), caso 46",
+    "url": "https://badufos.blogspot.com/2014/09/special-report-trent-ufo-photos-best-of.html"
+  }
 }

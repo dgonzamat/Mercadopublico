@@ -14,11 +14,12 @@
     "place_en": "Stadio Artemio Franchi, Florence"
   },
   "tier": "A",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "animal",
   "epistemicStatus": "documented",
   "probability": 40,
-  "summary": "El 27 de octubre de 1954, durante un partido de la Fiorentina, ~10.000 personas en el Stadio Artemio Franchi vieron objetos sobre el estadio y el partido se detuvo. Cayó una sustancia filamentosa ('angel hair') que el profesor Giovanni Canneri (Universidad de Florencia) analizó por espectrografía: boro, silicio, calcio y magnesio, no radiactiva. Avistamiento masivo con testigos nombrados (jugadores, prensa, policía) y muestra física con análisis universitario — aunque con un debate escéptico abierto (ejercicios de chaff de la Aeronautica ese día).",
-  "summary_en": "On October 27, 1954, during a Fiorentina football match, ~10,000 people at the Stadio Artemio Franchi saw objects over the stadium and the game stopped. A filamentous substance ('angel hair') fell, which Professor Giovanni Canneri (University of Florence) analyzed by spectrography: boron, silicon, calcium and magnesium, non-radioactive. A mass sighting with named witnesses (players, press, police) and a physical sample with university analysis — though with an open skeptical debate (Italian Air Force chaff exercises that day).",
+  "summary": "El 27 de octubre de 1954, durante un partido de la Fiorentina, ~10.000 personas en el Stadio Artemio Franchi vieron objetos sobre el estadio y el partido se detuvo. Cayó una sustancia filamentosa ('angel hair') que el profesor Giovanni Canneri (Universidad de Florencia) analizó por espectrografía: boro, silicio, calcio y magnesio, no radiactiva. Avistamiento masivo con testigos nombrados (jugadores, prensa, policía) y muestra física con análisis universitario — aunque con un debate escéptico abierto (arañas migratorias, según el escéptico James McGaha).",
+  "summary_en": "On October 27, 1954, during a Fiorentina football match, ~10,000 people at the Stadio Artemio Franchi saw objects over the stadium and the game stopped. A filamentous substance ('angel hair') fell, which Professor Giovanni Canneri (University of Florence) analyzed by spectrography: boron, silicon, calcium and magnesium, non-radioactive. A mass sighting with named witnesses (players, press, police) and a physical sample with university analysis — though with an open skeptical debate (migrating spiders, according to skeptic James McGaha).",
   "patterns": [
     "8a"
   ],
@@ -67,5 +68,11 @@
       "license": "CC BY 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AFirenze%2C%20stadio%20artemio%20franchi%2C%20campo%20da%20gioco%2C%2010%2C0.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "El astrónomo y expiloto James McGaha, en la BBC (2014): a su juicio todo el espectáculo, «cabello de ángel» incluido, no fue «nada más que arañas migratorias»: crías que tejen hilos muy finos, los usan como velas, se enganchan en grandes masas que el sol hace brillar y caen al suelo. Pero en el mismo reportaje Roberto Pinotti la llama «una tontería» porque la seda de araña es una proteína, y el divulgador Philip Ball señala que el boro y el silicio medidos en las muestras no cuadran con que vinieran de arañas.",
+    "en": "Astronomer and former pilot James McGaha, to the BBC (2014): in his view the whole spectacle, 'angel hair' and all, \"was nothing more than migrating spiders\": young spiders spinning very thin webs, using them as sails, linking into large globs that glisten in the sun and fall to the ground. But in the same report Roberto Pinotti calls it \"pure nonsense\" because spider silk is a protein, and science writer Philip Ball notes that the boron and silicon measured in the samples do not fit with their having come from spiders.",
+    "source": "BBC News Magazine — «The day UFOs stopped play» (2014)",
+    "url": "https://www.bbc.com/news/magazine-29342407"
+  }
 }

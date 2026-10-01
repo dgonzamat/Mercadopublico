@@ -15,6 +15,7 @@
   },
   "tier": "A",
   "mundanoType": "natural",
+  "objectDetail": "atmosferico",
   "epistemicStatus": "documented",
   "probability": 46,
   "summary": "El 29 de enero de 1986, una esfera metálica del tamaño de un automóvil descendió en trayectoria controlada y se estrelló contra la 'Altura 611' cerca de Dalnegorsk, en el Lejano Oriente soviético; la Academia de Ciencias de la URSS analizó los residuos y reportó aleaciones anómalas.",
@@ -72,5 +73,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADalnegorsk%2C%20Primorsky%20Krai%2C%20Russia%20-%20panoramio.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Según el reportaje de Takiedela (2020), el periodista Valeri Bolshakov, de «Trudovoe slovo», sostuvo en 2013 un origen terrestre: «planteó la hipótesis de que en la roca impactó un rayo en bola, y de que las gotas de una sustancia desconocida y las redecillas ya estaban allí antes». El mismo reportaje recoge otra explicación que un miembro de la comisión contra la pseudociencia de la Academia de Ciencias rusa da por definitiva, la del físico Valentín Psalomshchikov: un «globo sonda de reconocimiento» extranjero que se desplazaba «sin ruido, a la velocidad del viento» y se autodestruyó; esa lectura corresponde a la narrativa de tecnología adversaria, no a esta clase. Original en ruso: «Большаков выдвинул гипотезу о том, что в скалу попала шаровая молния».",
+    "en": "According to Takiedela's 2020 report, journalist Valery Bolshakov of 'Trudovoye Slovo' argued in 2013 for an earthly origin: he \"put forward the hypothesis that ball lightning struck the rock, and that the drops of unknown substance and the meshes had been there before\". The same report records another explanation that a member of the Russian Academy of Sciences' commission against pseudoscience considers definitive, physicist Valentin Psalomshchikov's: a foreign \"reconnaissance balloon probe\" that moved \"silently, at the speed of the wind\" and self-destructed; that reading belongs to the adversary-technology narrative, not to this class. Russian original: «Большаков выдвинул гипотезу о том, что в скалу попала шаровая молния».",
+    "source": "Takiedela — «Земля большая, а упали именно сюда» (octubre de 2020, original en ruso)",
+    "url": "https://takiedela.ru/2020/10/zemlya-bolshaya-a-upali-imenno-syuda/"
+  }
 }

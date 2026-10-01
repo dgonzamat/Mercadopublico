@@ -72,5 +72,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Ogilvie%20Mountains%2C%20Yukon%2C%20Canada.jpg"
     }
   ],
-  "misidSubtype": "espacial"
+  "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
+  "classBasis": {
+    "es": "Ted Molczan, especialista civil en órbitas de satélites, tras analizar los elementos orbitales: «confío en que los fenómenos observados se debieron a la reentrada de la 2.ª etapa del cohete que puso en órbita a Cosmos 2335 ese mismo día», con la reentrada en curso a la hora más probable de los avistamientos y visible desde cada uno de los lugares de los que se informó.",
+    "en": "Ted Molczan, a civilian specialist in satellite orbits, after analysing the orbital elements: \"I am confident that the observed phenomena were due to the re-entry of the 2nd stage of the rocket that placed Cosmos 2335 into orbit earlier the same day\", with the re-entry in progress at the most probable time of the sightings and visible from each of the locations reported.",
+    "source": "Molczan, T. — «Old Unknown Identified as a Re-entry», lista SeeSat-L (30 abr 2012)",
+    "url": "http://www.satobs.org/seesat/Apr-2012/0331.html"
+  }
 }
