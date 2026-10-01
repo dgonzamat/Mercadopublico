@@ -14,7 +14,9 @@
     "place_en": "Chelyabinsk, Russia"
   },
   "tier": "A",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "epistemicStatus": "documented",
   "probability": 4,
   "summary": "El 15 de febrero de 2013, un meteoroide de unos 20 metros entró en la atmósfera sobre Cheliábinsk (Rusia) y explotó a ~30 km de altura con una energía de 20-30 bombas de Hiroshima. La onda expansiva rompió ventanas en seis ciudades e hirió a unas 1.500 personas. Fue el primer impacto de esa magnitud documentado masivamente en vídeo (dashcams).",
@@ -73,5 +75,11 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:2013_Chelyabinsk_meteor_trace.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "EarthSky: «El 15 de febrero de 2013, un pequeño asteroide de unos 20 metros entró en la atmósfera terrestre» a unos 19 km/s y estalló a unos 30 km de altura; los vecinos y escolares recogieron después meteoritos, y en octubre se sacó del lago Chebarkul un fragmento de 654 kg.",
+    "en": "EarthSky: \"On February 15, 2013, a small asteroid with an estimated size of 65 feet (20 meters) entered Earth's atmosphere\" at about 19 km/s and exploded some 30 km up; residents and schoolchildren later collected meteorites, and in October a 654 kg fragment was lifted from Lake Chebarkul.",
+    "source": "Byrd, D. — «Chelyabinsk meteor: February 15, 2013», EarthSky",
+    "url": "https://earthsky.org/space/chelyabinsk-meteor-exploded-over-russia-feb-15-2013/"
+  }
 }

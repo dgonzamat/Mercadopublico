@@ -86,5 +86,12 @@
     "note": "Revisa los teletipos al NMCC, los ecos de radar de NORAD y por qué la etiqueta oficial de 'helicópteros' no encaja con el comportamiento reportado.",
     "note_en": "Reviews the NMCC teletypes, NORAD radar returns and why the official 'helicopters' label does not fit the reported behavior."
   },
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "objectDetail": "helicoptero",
+  "classBasis": {
+    "es": "Documento del NORAD citado por The War Zone: «La información indica que la aeronave es un helicóptero. Sin embargo, la aeronave sigue sin identificar». Los mensajes de la base hablan de un «helicóptero no identificado»; pero, según un documento de la CIA citado en el mismo artículo, las investigaciones posteriores de la Fuerza Aérea en Loring «no revelaron una causa».",
+    "en": "NORAD document quoted by The War Zone: \"Information indicates that the A/C is a helicopter. However, the A/C remains unidentified.\" The base's messages speak of \"an unidentified helicopter\"; but, according to a CIA document quoted in the same article, the Air Force's subsequent investigations at Loring \"did not reveal a cause for the sightings\".",
+    "source": "Trevithick, J. y Rogoway, T. — «The Bizarre Mystery of Unexplained Aerial Incursions Over Loring Air Force Base», The War Zone (documentos del NORAD y de la CIA obtenidos por FOIA)",
+    "url": "https://www.twz.com/35674/the-bizarre-mystery-of-unexplained-aerial-incursions-over-loring-air-force-base"
+  }
 }

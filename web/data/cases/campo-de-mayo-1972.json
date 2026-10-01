@@ -16,6 +16,7 @@
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "espacial",
+  "objectDetail": "cohete_misil",
   "epistemicStatus": "documented",
   "probability": 12,
   "summary": "El 2 de noviembre de 1972, hacia las 20:30, la tripulación de un Cessna 182 de Gendarmería Nacional en vuelo de adiestramiento sobre Campo de Mayo vio al noroeste una enorme esfera luminosa de colores que cambió de forma, pareció virar y se desvaneció; los pilotos hicieron una maniobra evasiva. El expediente de Gendarmería pasó más de cuatro décadas archivado. En 2017 la Fuerza Aérea Argentina lo resolvió: dos minutos antes había despegado de Chamical (La Rioja) un cohete Rigel que liberó una nube de bario para un experimento ionosférico.",
@@ -88,5 +89,11 @@
       "license": "CC BY 4.0 (argentina.gob.ar)",
       "fallbackUrl": "https://www.argentina.gob.ar/sites/default/files/informe_cefae_2017.pdf"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Conclusión de la CEFAE (2017): con los «datos duros» (fecha, hora, rumbo y elevación), el «OVNI» avistado por la tripulación del Cessna de Gendarmería «resulta compatible con la presencia de una gigantesca nube ionizada liberada por el cohete experimental Rigel que despegó a las 20:28 hs. (hora local argentina), es decir: dos minutos antes del avistamiento».",
+    "en": "CEFAE conclusion (2017): using the 'hard data' (date, time, bearing and elevation), the 'UFO' seen by the crew of the Gendarmería Cessna \"is compatible with the presence of a gigantic ionised cloud released by the experimental Rigel rocket that lifted off at 20:28 (Argentine local time), that is, two minutes before the sighting\".",
+    "source": "Fuerza Aérea Argentina, CEFAE — Informe anual 2017, caso «Campo de Mayo», p. 48",
+    "url": "https://www.argentina.gob.ar/sites/default/files/informe_cefae_2017.pdf"
+  }
 }

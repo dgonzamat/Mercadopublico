@@ -19,6 +19,7 @@
   "probability": 12,
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "globo",
   "posterior": {
     "mundano_natural": 0.84,
     "humana_clasificada": 0.02,
@@ -87,5 +88,11 @@
       "note_en": "Jon Kosloski's oral statement: 'a rather difficult case to resolve', the volcanologist consulted, and the '170 meters away from the plume' figure."
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Evaluación de la AARO en DVIDS: los efectos ópticos de las intensas condiciones atmosféricas cerca del volcán distorsionaron el vídeo e hicieron que el objeto pareciera cruzar la columna; «la AARO evalúa con confianza moderada que la grabación muestra en cambio un globo a unos 170 kilómetros de la caldera, que viajaba a la velocidad y en la dirección del viento».",
+    "en": "AARO assessment on DVIDS: optical effects from the intense atmospheric conditions near the volcano distorted the video, causing the object to appear to transit the plume; \"AARO assesses with moderate confidence that the footage instead depicts a balloon approximately 170 kilometers from the caldera traveling at wind speed and direction.\"",
+    "source": "DVIDS — «Mt. Etna Object», evaluación de la AARO (19 nov 2024)",
+    "url": "https://www.dvidshub.net/video/944201/mt-etna-object"
+  }
 }

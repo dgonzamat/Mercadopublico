@@ -88,5 +88,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKilimanjaro%2C%20Tanzania%2C%202024-05-22%2C%20DD%20110.jpg"
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "classBasis": {
+    "es": "La única aeronave que comprobó la investigación es un Constellation francés. Ficha de Blue Book: se contactó con Nairobi para ver si el Constellation que iba de Eastleigh a Tananarive, cuyo rumbo era aproximadamente el del «platillo», podía ser el objeto, y solo se supo que volaba a unos 17.500 pies; la prensa recogió que, según Air France, pasaba por la zona de Kilimanjaro a esa hora. Pero la conclusión de la ficha es «Insufficient Data for Evaluation».",
+    "en": "The only aircraft the inquiry checked is a French Constellation. Blue Book card: Nairobi was contacted to see whether the Constellation bound from Eastleigh to Tananarive, whose course was approximately that of the 'saucer', could be the object, and the only information gathered was that it was at about 17,500 ft; the press reported that, according to Air France, it would have been in the Kilimanjaro area at that time. But the card's conclusion is \"Insufficient Data for Evaluation\".",
+    "source": "Project Blue Book — expediente «East Africa», feb 1951 (ficha e informe del consulado en Dar es Salaam)",
+    "url": "https://archive.org/details/1951-02-7006612-EastAfrica"
+  }
 }

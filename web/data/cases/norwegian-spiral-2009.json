@@ -72,5 +72,12 @@
     "nohumano_abierto": 0,
     "indet": 0.04
   },
-  "misidSubtype": "espacial"
+  "misidSubtype": "espacial",
+  "objectDetail": "cohete_misil",
+  "classBasis": {
+    "es": "El Ministerio de Defensa ruso confirmó que había fallado una prueba del misil balístico Bulava: «las dos primeras etapas del misil funcionaron con normalidad, pero hubo una avería técnica en la siguiente, la tercera etapa de la trayectoria»; al girar sin control el motor, probablemente creó la espiral de luz.",
+    "en": "The Russian Defense Ministry confirmed that a Bulava ballistic missile test had failed: \"the missile's first two stages worked as normal, but there was a technical malfunction at the next, third, stage of the trajectory\"; when the rocket motor spun out of control, it likely created the spiral of light.",
+    "source": "NBC News / Reuters — «Russia admits missile caused UFO lights» (10 dic 2009)",
+    "url": "https://www.nbcnews.com/id/wbna34362960"
+  }
 }
