@@ -68,5 +68,11 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APlaza%20San%20Mart%C3%ADn%2C%20Santa%20Rosa%2C%20La%20Pampa%2C%20Argentina%2C%202026.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Página/12 recoge el informe que la Universidad Nacional del Centro presentó con el SENASA: «las vacas murieron por causas naturales y los carroñeros atacaron los cuerpos», y el ratón «hocicudo rojizo» haría los cortes; el presidente del SENASA explica que se descartó la acción humana al no encontrarse narcóticos y que «aparecen bordes irregulares en los cortes y cuando se toman los huesos también se ven las marcas de los roedores». Pero el mismo artículo recuerda que el SENASA había dicho al principio que los carroñeros no podían ser los causantes y que las mutilaciones eran «intencionales», postura que cambió con estos análisis, y que el hocicudo no fue el único carroñero: también zorros, peludos y otros.",
+    "en": "Página/12 reports the study that the Universidad Nacional del Centro presented with SENASA: \"the cows died of natural causes and scavengers attacked the bodies\", and the red-nosed mouse (hocicudo rojizo) would have made the cuts; SENASA's president explains that human action was ruled out because no narcotics were found and that \"the cuts show irregular edges, and on the bones the rodents' marks can also be seen\". But the same article recalls that SENASA had first said scavengers could not be the cause and that the mutilations were \"intentional\", a position these analyses changed, and that the mouse was not the only scavenger: foxes, armadillos and others were involved too.",
+    "source": "Página/12 — «Un sospechoso rojizo y hocicudo», 2 jul 2002 (informe SENASA–UNICEN–INTA)",
+    "url": "https://www.pagina12.com.ar/diario/sociedad/3-7062-2002-07-02.html"
+  }
 }

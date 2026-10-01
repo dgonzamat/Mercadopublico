@@ -75,5 +75,11 @@
       "license": "CC BY-SA 2.5",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKalahari%20PICT0036.JPG"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "El estudio del caso en USAC recoge el juicio de Cynthia Hind, que había servido tres años en la Fuerza Aérea sudafricana: ningún oficial de la SAAF habría aprobado un documento con tantos errores de ortografía y de terminología militar, y aunque no podía estar segura de que Van Greunen fuera el autor de la falsificación, «no tenía dudas de que se trataba de un falso»; el artículo concluye que investigaciones posteriores establecieron que Van Greunen era «solo un vulgar mistificador», que organizaba conferencias fantasma para quedarse con la recaudación. Pero el mismo artículo recoge que el investigador alemán Michael Hesemann consideraba los hechos descritos fundamentalmente exactos pese a que los documentos fueran falsos.",
+    "en": "The USAC study of the case records the judgment of Cynthia Hind, who had served three years in the South African Air Force: no SAAF officer would have approved a document with so many spelling and military-terminology errors, and although she could not be sure Van Greunen was the author of the forgery, she \"had no doubt it was a fake\"; the article concludes that later research established Van Greunen was \"just a vulgar mystifier\" who organised phantom conferences to pocket the takings. But the same article records that German researcher Michael Hesemann considered the events described fundamentally accurate even though the documents were forged.",
+    "source": "USAC — «UFO crash in Sud-Africa» (sobre la investigación de Cynthia Hind)",
+    "url": "http://www.usac.it/articoli/UFO_CRASH_SUDAF/UFO_CRASH_IN_SUD_Africa.html"
+  }
 }

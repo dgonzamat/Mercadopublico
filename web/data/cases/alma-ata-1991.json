@@ -14,7 +14,7 @@
     "place_en": "Alma-Ata (Almaty), near Mount Kok-Tyube"
   },
   "tier": "B",
-  "mundanoType": "natural",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 32,
   "summary": "En 1991, milicianos (policía) de patrulla en Alma-Atá —entonces capital de la Kazajistán soviética— reportaron un objeto no identificado cerca del monte Kok-Tyube: una especie de fuego en la cima del que salían rayos rojos que subían y bajaban. El episodio quedó registrado en un documento del FOIA reading room de la CIA. Caso documentado pero de fenómeno ambiguo, incluido por su rastro institucional más que por su solidez.",
@@ -61,5 +61,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAlmaty%2C%20Kok-tobe%20exposition%203.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone qué fue el objeto: el despacho de TASS archivado por la CIA solo reproduce lo publicado por Vechernyaya Alma-Ata —un fuego en la cima del Kok-Tyube del que salieron rayos rojos, un coche patrulla que se detuvo y una pérdida de memoria del regreso— sin ninguna explicación, y no se halló un análisis posterior. Las fogatas, bengalas o descargas eléctricas que mencionaba la ficha eran conjeturas propias, no de una fuente. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes what the object was: the TASS dispatch archived by the CIA only reproduces what Vechernyaya Alma-Ata published —a fire on top of Kok-Tyube from which red rays burst out, a patrol car that stopped dead and a lost memory of the way back— with no explanation, and no later analysis was found. The campfires, flares or electrical discharges the ficha mentioned were its own conjectures, not a source's. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "CIA (FBIS) — «Alma-Ata patrolmen report UFO sighting», TASS, 19 abr 1991 (DOC_0005517792) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://archive.dni.gov/files/ODNI/documents/assessments/DOD-AARO-Consolidated-Annual-Report-on-UAP-Nov2024.pdf"
+  }
 }

@@ -14,7 +14,7 @@
     "place_en": "Ubatuba, São Paulo, Brazil"
   },
   "tier": "B",
-  "mundanoType": "fraude",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 30,
   "summary": "En septiembre de 1957, fragmentos de un metal ligero —presuntamente de un disco que explotó sobre una playa de Ubatuba— llegaron por correo al columnista Ibrahim Sued. Los primeros análisis del laboratorio mineral brasileño reportaron magnesio muy puro; análisis modernos posteriores no confirmaron pureza anómala, y la procedencia nunca tuvo cadena de testigos verificable.",
@@ -66,5 +66,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABrasil%20Ubatuba%20beaches.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone qué ocurrió en la playa de Ubatuba: el Informe Condon, que analizó los fragmentos, concluye que «la afirmación de una pureza inusual de los fragmentos de magnesio ha sido refutada», que pudieron producirse con tecnología terrestre conocida antes de 1957 y que su composición «no revela información sobre el origen de las muestras», y subraya que la historia es «aún más endeble que la mayoría» porque los testigos nunca pudieron identificarse por la firma ilegible de la carta. Pero no dice que la carta o los fragmentos fueran un fraude, y no se halló otra fuente que lo sostenga. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes what happened on the Ubatuba beach: the Condon Report, which analysed the fragments, concludes that \"the claim of unusual purity of the magnesium fragments has been disproved\", that they could have been produced by common earthly technology known prior to 1957 and that their composition reveals \"no information about the samples' origin\", and stresses that the story is \"even more tenuous than most UFO reports\" because the observers could never be identified owing to the illegible signature on the letter. But it does not say the letter or the fragments were a hoax, and no other source was found that does. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "Scientific Study of Unidentified Flying Objects (Informe Condon, 1969) — sección III, cap. 3 · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://files.ncas.org/condon/text/s3chap03.htm"
+  }
 }

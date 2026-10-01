@@ -18,6 +18,7 @@
   "probability": 4,
   "mundanoType": "misid",
   "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
   "posterior": {
     "mundano_natural": 0.93,
     "humana_clasificada": 0.02,
@@ -87,5 +88,11 @@
       "fallbackUrl": "https://text-message.blogs.archives.gov/2022/08/09/give-us-back-our-junk-space-debris-1968/"
     }
   ],
-  "evidenceReviewed": "2026-09-27"
+  "evidenceReviewed": "2026-09-27",
+  "classBasis": {
+    "es": "David Langbart (Archivos Nacionales de EE.UU.), con los telegramas del expediente: el embajador Eilts anotó que el dosier de prensa podía servir para explicar al rey «por qué EE.UU. creía que los restos eran una botella de presión del satélite IMP»; en los comentarios, Jonathan McDowell precisa que la etapa 1967-070B, del lanzamiento del Explorer 35, hizo una reentrada no controlada hacia las 12:20 GMT del 31 de agosto de 1967. El funcionario de ARAMCO que informó primero había barajado también equipo petrolero o una aeronave a gran altura.",
+    "en": "David Langbart (US National Archives), with the file's telegrams: Ambassador Eilts noted that the press kit could help explain to the King 'why the U.S. believed the debris was a pressure bottle from the IMP satellite'; in the comments, Jonathan McDowell specifies that stage 1967-070B, from the Explorer 35 launch, made an uncontrolled re-entry around 12:20 GMT on 31 August 1967. The ARAMCO official who first reported it had also considered oil company equipment or a high-altitude aircraft.",
+    "source": "Archivos Nacionales de EE.UU., The Text Message — D. Langbart, «Give Us Back Our Junk: Space Debris, 1968» (9 ago 2022)",
+    "url": "https://text-message.blogs.archives.gov/2022/08/09/give-us-back-our-junk-space-debris-1968/"
+  }
 }

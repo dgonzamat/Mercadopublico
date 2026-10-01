@@ -16,6 +16,7 @@
   "tier": "B",
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "dron",
   "epistemicStatus": "documented",
   "probability": 40,
   "summary": "El 20 de febrero de 2018, a las 20:35, los controladores de la torre del aeropuerto de Chacalluta, en Arica, vieron una luz blanca intensa sobre el aeródromo que no correspondía a ningún tráfico. Avisaron por radio al avión de Carabineros C52, que patrullaba la frontera con Perú; su piloto la vio, viró para acercarse y la perdió. No hubo eco de radar ni transpondedor. El SEFAA, la oficina oficial chilena, lo investigó y lo cerró en 2025 como «Relato» por falta de imágenes, con un dron como hipótesis principal.",
@@ -74,5 +75,11 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:109ae_-_Ladeco_Airlines_Boeing_737-2E1;_CC-CYT@ARI;14.09.2000_(5398325424).jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Informe del SEFAA, caso n.º 794: lo relatado «pudo tener las características del sobrevuelo de alguna aeronave capaz de vuelo estacionario», sin transpondedor ni eco en el radar de Iquique, y «todo esto pudo ser compatible con un equipo pequeño del tipo RPA o dron». Pero añade: «al no contar con imágenes de lo ocurrido, no se pudo avanzar en su identificación sin incurrir en sesgo», y «en menor medida, pudo tratarse de un sobrevuelo espacial».",
+    "en": "SEFAA report, case no. 794: what was reported 'could have had the characteristics of an overflight by some aircraft capable of hovering', with no transponder and no echo on the Iquique radar, and 'all this could be consistent with a small RPA- or drone-type device'. But it adds: 'without images of what happened, it was not possible to advance its identification without incurring bias', and 'to a lesser extent, it could have been a space overflight'.",
+    "source": "SEFAA (DGAC Chile) — «Caso N.º 794», Chacalluta, 20 feb 2018 (informe publicado en 2025)",
+    "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2025/11/CASO-N%C2%B0-794-20022018.pdf"
+  }
 }

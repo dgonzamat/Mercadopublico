@@ -79,5 +79,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKofu%20montage.jpg"
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "El relato de la época que reproduce UFO Evidence recoge la explicación oficial: «Las autoridades de la Oficina de Aviación Civil del Ministerio de Transporte dicen que un avión de línea sobrevuela Kōfu a menudo entre las 6 y las 7 de la tarde y que, en especial, las luces del avión de hélice YS-11, que vuela a mil metros de altitud, son visibles a simple vista». La clase cubre solo esa capa, las luces naranjas en el cielo; la explicación no da cuenta del aterrizaje, del ocupante, del contacto con el niño ni de los postes derribados del viñedo.",
+    "en": "The period account reproduced by UFO Evidence records the official explanation: \"The authorities of Civil Aviation Bureau of Transportation Ministry say that an airliner often flies over Kofu between 6:00 and 7:00 pm and that, especially, the lights of YS-11 propeller plane which flies at an altitude of thousand meters, will be visible to the naked eyes.\" The class covers only that layer, the orange lights in the sky; the explanation does not account for the landing, the occupant, the contact with the boy or the knocked-down posts in the vineyard.",
+    "source": "UFO Evidence — «UFO lands and humanoid taps young schoolboy on shoulder, Kofu City, Japan» (declaración de la Oficina de Aviación Civil)",
+    "url": "http://www.ufoevidence.org/cases/case443.htm"
+  }
 }

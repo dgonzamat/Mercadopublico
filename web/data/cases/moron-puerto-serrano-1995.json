@@ -16,6 +16,7 @@
   "tier": "B",
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "helicoptero",
   "epistemicStatus": "documented",
   "probability": 28,
   "summary": "El 23 de febrero de 1995, hacia las 12:35, un capitán del Ala 21 que volvía de una misión en un reactor de entrenamiento C-101, a unos 1.000 pies sobre el terreno, vio a su derecha, casi sobre Puerto Serrano, un objeto ovalado de color gris claro que parecía inmóvil. Cuando se cruzó con él, el objeto aceleró de golpe en rumbo opuesto y desapareció. No hubo más testigos ni eco de radar. El oficial informador descubrió que ese mismo día y a esa hora pasaba por la carretera de Puerto Serrano la Vuelta Ciclista a Andalucía, con helicópteros de televisión sobrevolándola, y que la cúpula de ese avión tenía microfracturas en su lado derecho, justo por donde el piloto miró. Concluyó que probablemente vio uno de esos helicópteros sin poder identificarlo.",
@@ -69,5 +70,11 @@
       "license": "CC BY 4.0",
       "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395956"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Resumen del Mando Operativo Aéreo, expediente 01-MAEST-95: a esa hora, en esa localidad, pasaba la Vuelta Ciclista a Andalucía con «varios helicópteros sobrevolando la carretera», y «la única explicación razonable al suceso […] es que el piloto por causa de la microfractura (Krazzy) que sufre el avión en cuestión, pudiera haber visto uno de los mencionados helicópteros, no pudiendo identificarlo como tal», aseveración que corroboró el general segundo jefe del MAEST. Es la explicación del oficial informador, sin prueba de qué helicóptero fue; la microfractura de la cúpula es una segunda capa que explicaría por qué no lo reconoció.",
+    "en": "Summary by the Air Operations Command, file 01-MAEST-95: at that hour, in that place, the Tour of Andalusia was passing with 'several helicopters flying over the road', and 'the only reasonable explanation for the event […] is that the pilot, because of the microfracture (crazing) in the aircraft in question, may have seen one of those helicopters, being unable to identify it as such', a statement the MAEST deputy commander corroborated. It is the investigating officer's explanation, with no proof of which helicopter it was; the canopy microfracture is a second layer that would explain why he did not recognise it.",
+    "source": "Ministerio de Defensa (España) — expediente 01-MAEST-95, Morón, 23 feb 1995 (resumen del MOA, 30 oct 1996)",
+    "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395956"
+  }
 }

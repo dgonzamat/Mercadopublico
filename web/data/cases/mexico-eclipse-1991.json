@@ -83,5 +83,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMonumental%20Flag%2C%20Zocalo%2C%20Mexico%2020250907%20p1.jpg"
     }
   ],
-  "misidSubtype": "astronomico"
+  "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "Tim Printy, tras revisar los vídeos del eclipse uno por uno: «Estoy convencido de que el planeta Venus es la fuente del ovni en casi todas las cintas de vídeo»; en varias se ven Júpiter, Regulus y Marte en la configuración correcta. Pero no en todas: de un clip breve dice que «no es Venus», y de otro, el objeto bajo con el horizonte visible, que «parece ser otra cosa» y «puede ser la estrella brillante Sirio o Canopus». La clase cubre la mayoría de las grabaciones, no cada una.",
+    "en": "Tim Printy, after reviewing the eclipse videos one by one: 'I am convinced that the planet Venus is the source of the UFO in almost all of the videotapes'; several show Jupiter, Regulus and Mars in the correct configuration. But not all: of one brief clip he says 'This is not Venus', and of another, a low object with the horizon visible, that it 'seems to be something other than Venus' and 'may be the bright star Sirius or Canopus'. The class covers most of the recordings, not every one.",
+    "source": "Tim Printy — «The July 11, 1991 Mexico City UFOs», astronomyufo.com",
+    "url": "https://astronomyufo.com/UFO/mexico.htm"
+  }
 }

@@ -21,6 +21,7 @@
   "category": "incident",
   "epistemicStatus": "documented",
   "mundanoType": "natural",
+  "objectDetail": "atmosferico",
   "probability": 35,
   "documents": [
     {
@@ -88,5 +89,11 @@
       "note": "Reseña histórica del fenómeno y sus testigos.",
       "note_en": "Historical review of the phenomenon and its witnesses."
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "El informe del Panel Robertson (CIA, 1953), dos de cuyos miembros, Robertson y Alvarez, habían participado en la investigación de los foo fighters, dice que esas bolas de luz «se creyó que eran fenómenos electrostáticos (parecidos al fuego de San Telmo) o electromagnéticos, o posiblemente reflejos de luz en cristales de hielo en el aire». Pero el mismo informe añade que «su causa o naturaleza exacta nunca se definió», y la alternativa de los reflejos en cristales de hielo sería óptica, no atmosférica.",
+    "en": "The Robertson Panel report (CIA, 1953), two of whose members, Robertson and Alvarez, had taken part in investigating the foo fighters, says these balls of light \"were believed to be electrostatic (similar to St. Elmo's fire) or electromagnetic phenomena or possibly light reflections from ice crystals in the air\". But the same report adds that \"their exact cause or nature was never defined\", and the ice-crystal reflection alternative would be optical, not atmospheric.",
+    "source": "Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects (Panel Robertson, CIA, enero 1953) — CIA-RDP79B00752A000300100010-4",
+    "url": "https://archive.org/details/cia-readingroom-document-cia-rdp79b00752a000300100010-4"
+  }
 }

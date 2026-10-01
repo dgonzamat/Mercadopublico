@@ -74,5 +74,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACape%20Otway%20(AU)%2C%20Cape%20Otway%20Lighthouse%2C%20Telegraph%20Station%20--%202019%20--%201179.jpg"
     }
   ],
-  "misidSubtype": "astronomico"
+  "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "James McGaha y Joe Nickell escriben en el Skeptical Inquirer que una búsqueda informática del cielo para el día, la hora y el lugar del vuelo muestra que los cuatro puntos de luz brillante que Valentich «casi con certeza» habría visto eran Venus, «en su máximo brillo», Marte, Mercurio y la estrella Antares, que formarían un rombo que pudo percibirse como una aeronave, y lo combinan con una desorientación espacial en «espiral mortal». Pero es la reconstrucción de dos escépticos décadas después, no una conclusión oficial, y no explica por sí sola el ruido metálico ni la desaparición.",
+    "en": "James McGaha and Joe Nickell write in the Skeptical Inquirer that a computer search of the sky for the day, time and place of the flight shows that the four points of bright light Valentich \"would almost certainly have seen\" were Venus, \"at its very brightest\", Mars, Mercury and the star Antares, which would have formed a diamond that could be perceived as an aircraft, and they combine this with spatial disorientation in a \"graveyard spiral\". But it is two sceptics' reconstruction decades later, not an official conclusion, and on its own it does not explain the metallic noise or the disappearance.",
+    "source": "James McGaha y Joe Nickell — «The Valentich Disappearance: Another UFO Cold Case Solved», Skeptical Inquirer (nov 2013)",
+    "url": "https://skepticalinquirer.org/2013/11/the-valentich-disappearance-another-ufo-cold-case-solved/"
+  }
 }

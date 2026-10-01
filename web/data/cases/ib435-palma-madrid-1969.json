@@ -16,6 +16,7 @@
   "tier": "B",
   "mundanoType": "misid",
   "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
   "epistemicStatus": "documented",
   "probability": 12,
   "summary": "La noche del 25 de febrero de 1969, la tripulación de un Caravelle de Iberia, el vuelo IB-435 de Palma a Madrid, vio durante unos veinte minutos una luz que alternaba destellos rojos y blancos y parecía acercarse, alejarse y tomar forma de triángulo. Llamaron por el canal de emergencia a los radares militares, que no vieron nada, y la noticia llegó a la agencia Cifra y a la prensa. El teniente coronel que investigó el caso comprobó que Venus estaba exactamente en la dirección en que volaba el avión, a unos cuatro grados sobre el horizonte, y que se ponía dos minutos después de que los pilotos lo perdieran de vista. Concluyó que era el planeta, y propuso que el ministerio empezara a explicar en público los casos que resolvía.",
@@ -71,5 +72,11 @@
       "license": "CC BY 4.0",
       "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395898"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Resumen del Mando Operativo Aéreo, expediente 690225: cuando la tripulación ve el objeto por primera vez, «la situación del astro Venus coincide completamente en ese punto»; «la luz blanca y anaranjada y la producción de destellos son características clásicas en la observación de este astro», y «es significativa la coincidencia de horario en el ocaso de Venus», a las 21:40Z, con el fin del avistamiento a las 21:38Z. La refracción cerca del horizonte explicaría además los cambios de color, el desplazamiento aparente y la imagen triple.",
+    "en": "Summary by the Air Operations Command, file 690225: when the crew first saw the object, 'the position of the planet Venus coincides completely with that point'; 'the white and orange light and the flashes are classic features of observing this body', and 'the coincidence in time with the setting of Venus is significant', at 21:40Z, with the end of the sighting at 21:38Z. Refraction near the horizon would also explain the changes of colour, the apparent movement and the triple image.",
+    "source": "Ministerio de Defensa (España) — expediente 690225, vuelo IB-435 Palma-Madrid, 25 feb 1969 (resumen del MOA, 29 abr 1993)",
+    "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395898"
+  }
 }
