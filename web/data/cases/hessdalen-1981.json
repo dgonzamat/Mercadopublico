@@ -71,5 +71,11 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHessdalen%20-%20Fo30141603210119.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Paiva y Taft (2011) proponen una causa geofísica: según su modelo, las bolas de luz «se producen por electrones acelerados por campos eléctricos durante la fractura rápida de rocas piezoeléctricas bajo el suelo», dentro de su teoría de un plasma de polvo. Es una hipótesis sin confirmar: el mismo resumen abre diciendo que las luces son «bolas de luz sin explicar», y D. M. Gross sostiene en la misma revista que todos los esfuerzos por explicarlas por causas terrestres «han fracasado» (JSE 27(3), 2013, journalofscientificexploration.org/index.php/jse/article/view/580).",
+    "en": "Paiva and Taft (2011) propose a geophysical cause: in their model the light balls \"are produced by electrons accelerated by electric fields during rapid fracture of piezoelectric rocks under the ground\", within their dusty-plasma theory. It is an unconfirmed hypothesis: the same abstract opens by calling the lights \"unexplained light balls\", and D. M. Gross holds in the same journal that \"all efforts to explain them by terrestrial causes have failed\" (JSE 27(3), 2013, journalofscientificexploration.org/index.php/jse/article/view/580).",
+    "source": "Paiva, G. S. y Taft, C. A. — «Color Distribution of Light Balls in Hessdalen Lights Phenomenon», Journal of Scientific Exploration 25(4), 2011",
+    "url": "https://journalofscientificexploration.org/index.php/jse/article/view/367"
+  }
 }

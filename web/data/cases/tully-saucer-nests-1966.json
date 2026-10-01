@@ -15,6 +15,7 @@
   },
   "tier": "A",
   "mundanoType": "natural",
+  "objectDetail": "atmosferico",
   "epistemicStatus": "documented",
   "probability": 35,
   "summary": "El 19 de enero de 1966, el trabajador rural George Pedley (28 años) reportó haber observado un disco metálico de ~7.5m levantándose de Horseshoe Lagoon cerca de Tully, Queensland. En el sitio dejó una depresión circular de ~9m de juncos aplanados que él denominó 'nest'. Cinco nidos adicionales fueron encontrados después. La Royal Australian Air Force (RAAF) ejecutó una investigación oficial — la primera con análisis de muestras en Australia. La conclusión RAAF fue que los juncos murieron 'por inmersión natural'; la University of Queensland atribuyó los patrones a 'severe turbulence' compatible con line squalls de la región. El caso es el primer paradigma de 'crop circle' con investigación militar oficial documentada, paralelo cronológico de Westall (mismo año, distinto modus).",
@@ -110,5 +111,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AButler%20Street%2C%20Tully%2C%20Queensland%2C%201935.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Carta del Mando Operacional de la RAAF del 17 de febrero de 1966, que remite la investigación de la base de Townsville: «Este cuartel general cree que las depresiones de la hierba del pantano fueron causadas por pequeñas trombas de agua aisladas». La explicación cubre los «nidos», no el disco que Pedley dijo ver elevarse.",
+    "en": "Letter from RAAF Operational Command of 17 February 1966, forwarding the Townsville base investigation: \"This headquarters believes that the depressions of the swamp grass were caused by small isolated waterspouts.\" The explanation covers the 'nests', not the disc Pedley said he saw rise.",
+    "source": "RAAF — expediente A703 580/1/1 parte 5 (Archivos Nacionales de Australia, espejo de The Black Vault), pág. 165 del PDF",
+    "url": "https://documents.theblackvault.com/documents/ufos/australia/A703_580-1-1_Part%205_645646.pdf"
+  }
 }

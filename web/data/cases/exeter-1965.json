@@ -91,5 +91,11 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Respuesta interna de Blue Book de marzo de 1966, firmada por su jefe Hector Quintanilla: «el análisis del informe indica que es posible que aeronaves de tipo convencional con balizas giratorias o aeronaves que usaban luces infrarrojas en misiones fotográficas hayan sido la causa de este avistamiento»; como no se pudo identificar un avión concreto, el caso figura «a efectos estadísticos como no identificado». Pero los dos policías escribieron a Blue Book que su observación fue casi una hora después de las 2:00, lo que descarta la operación Big Blast que el expediente había invocado primero.",
+    "en": "Blue Book internal reply of March 1966, signed by its chief Hector Quintanilla: \"Analysis of the report indicates that it is possible for aircraft of a conventional type with rotating beacons or aircraft utilizing infra-red lights in photographic missions to have been the cause of this sighting\"; since no specific aircraft could be identified, the case \"is regarded for statistical purposes as unidentified\". But the two patrolmen wrote to Blue Book that their observation was nearly an hour after 2:00 AM, \"which would eliminate the 8th Air Force operation Big Blast\" the file had first invoked.",
+    "source": "Project Blue Book — expediente «Exeter, New Hampshire», 3 sep 1965 (respuesta de marzo de 1966 y carta de los patrulleros)",
+    "url": "https://archive.org/details/1965-09-9373271-Exeter-NewHampshire"
+  }
 }

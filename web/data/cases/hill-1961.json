@@ -97,5 +97,11 @@
     }
   ],
   "misidSubtype": "astronomico",
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Carta de la Foreign Technology Division de 1963 en el expediente de Blue Book: Júpiter estaba al suroeste, a unos 20 grados, y se habría puesto hacia la hora en que desapareció el objeto; «como no se observó movimiento lateral ni vertical, el objeto era con toda probabilidad Júpiter». Pero la misma carta dice que sin datos de posición el caso no podía evaluarse como Júpiter, que la fuente real de la luz no se conoce y que figura como datos insuficientes.",
+    "en": "Foreign Technology Division letter of 1963 in the Blue Book file: Jupiter was in the southwest at about 20 degrees and would have set at about the time the object disappeared; \"As no lateral or vertical movement was noted, the object was in all probability Jupiter.\" But the same letter says that without positional data the case could not be evaluated as Jupiter, that the actual light source is not known, and that it is carried as insufficient data.",
+    "source": "Project Blue Book — expediente «Lincoln, New Hampshire», 20 sep 1961 (carta de la FTD, 1963)",
+    "url": "https://archive.org/details/1961-09-8303388-Lincoln-NewHampshire"
+  }
 }

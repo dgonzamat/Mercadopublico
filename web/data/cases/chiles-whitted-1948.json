@@ -14,7 +14,9 @@
     "place_en": "~32 km southwest of Montgomery, Alabama"
   },
   "tier": "A",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "epistemicStatus": "documented",
   "probability": 27,
   "summary": "Hacia las 2:45 de la madrugada del 24 de julio de 1948, los pilotos de Eastern Air Lines Clarence S. Chiles y John B. Whitted vieron, desde un DC-3 a 5.000 pies cerca de Montgomery (Alabama), un objeto en forma de cigarro, sin alas, de unos 30 metros, con un resplandor interior «como una bengala de magnesio», un brillo azul bajo el fuselaje y una llama rojo-anaranjada detrás; pasó a su derecha a media milla y subió bruscamente hasta perderse en una nube tras 10 a 15 segundos. El único pasajero despierto vio solo una estela luminosa. El informe técnico del Project Sign lo dio por no identificado y afirmó que «no era un meteoro»; J. Allen Hynek escribió en 1949 que no había explicación astronómica si se aceptaba el relato al pie de la letra, pero que la llama, la nube y la duración encajaban con un bólido lento. El propio expediente reúne varias observaciones de una bola de fuego horizontal rumbo al suroeste esa misma noche, desde Georgia hasta Virginia, lo que refuerza la lectura del bólido.",
@@ -90,5 +92,11 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEastern%20Air%20Lines%20Douglas%20DC-3%20NC18124%20NASM.jpg"
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "La evaluación de J. Allen Hynek para el Proyecto Grudge, en el expediente, empieza advirtiendo que «no hay explicación astronómica si aceptamos el informe al pie de la letra»; pero frases de los propios pilotos —«llamaradas tremendas», «en forma de cigarro», «llama rojo-anaranjada», «visible de cinco a diez segundos»— pueden satisfacerse con «un meteoro brillante y lento», y si no hubo diferencia de hora con el avistamiento de Robins el objeto tuvo que ser «un meteoro extraordinario»; lo clasifica como astronómico de probabilidad «regular o baja», y la tarjeta del expediente anota «Probable Astro (METEOR)». Pero Hynek deja abierta la otra rama: si la hora de Robins, una hora antes, es correcta, era algún tipo de aeronave; y el informe del Proyecto Sign lo había dado por no identificado.",
+    "en": "J. Allen Hynek's evaluation for Project Grudge, in the file, begins by warning that \"there is no astronomical explanation if we accept the report at face value\"; but phrases from the pilots themselves —'tremendous bursts of flame', 'cigar-shaped', 'orange-red flame', 'time in sight five to ten seconds'— could be satisfied by \"a brilliant, slow-moving meteor\", and if there was no time difference with the Robins sighting the object must have been \"an extraordinary meteor\"; he classes it as astronomical with 'fair or low' probability, and the file's card notes 'Probable Astro (METEOR)'. But Hynek leaves the other branch open: if the Robins time, an hour earlier, is correct, it was some kind of aircraft; and the Project Sign report had declared it unidentified.",
+    "source": "Project Blue Book — expediente n.º 144, «20 mi. S of Montgomery, Ala.», 24 jul 1948 (evaluación de Hynek y tarjeta)",
+    "url": "https://archive.org/details/1948-07-9670642-20Mi-SofMontgomery-Ala--144-"
+  }
 }

@@ -13,7 +13,7 @@
     "place_en": "El Taire hill · Bermejo · Tarija border"
   },
   "tier": "A",
-  "mundanoType": "natural",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 42,
   "summary": "El 6 de mayo de 1978, un objeto cilíndrico metálico impactó el cerro El Taire, en la frontera entre Bolivia y Argentina, con un estampido audible a unos 240 km; la Fuerza Aérea Boliviana desplegó tres aeronaves al sitio. Un cable de la CIA, recuperado vía FOIA, documenta las contradicciones del reporte oficial y aporta el rastro institucional verificable.",
@@ -70,5 +70,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKirche%20in%20Bermejo.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa para lo que cayó en El Taire: el cable del Departamento de Estado del 18 de mayo de 1978 dice que «no puede establecerse una correlación directa con objetos espaciales conocidos que pudieran haber reentrado en la atmósfera cerca del 6 de mayo»; el Ejército boliviano concluyó que podía haber o no un objeto, y los oficiales de la Fuerza Aérea Boliviana que llegaron al desprendimiento dijeron creer que «algo se estrelló contra la montaña», aunque no hallaron restos. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones, aunque el mismo informe añade que «muchos otros casos siguen sin resolverse»: es la proporción entre los casos resueltos, no entre todos.",
+    "en": "No source proposes a cause for what fell at El Taire: the State Department cable of 18 May 1978 says \"No direct correlation with known space objects that may have reentered the earth's atmosphere near May 6 can be made\"; the Bolivian Army concluded there may or may not be an object, and the Bolivian Air Force officers who reached the rockslide said they \"believe something crashed into the mountain\", although they found no debris. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites and aircraft', although the same report adds that 'many other cases remain unresolved': it is the rate among resolved cases, not among all cases.",
+    "source": "Cable del Departamento de Estado 126725 (18 may 1978) y testimonio de los oficiales de la FAB, en Fawcett y Greenwood, «Clear Intent» (1984) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), citado por EarthSky, tasa base",
+    "url": "https://earthsky.org/earth/pentagon-uap-report-aaro-ufos/"
+  }
 }

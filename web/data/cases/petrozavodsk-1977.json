@@ -73,5 +73,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APetrozavodsk%20Bay%20(2).jpg"
     }
   ],
-  "misidSubtype": "espacial"
+  "misidSubtype": "espacial",
+  "objectDetail": "cohete_misil",
+  "classBasis": {
+    "es": "Platov y Sokolov, que trabajaron en el programa estatal soviético de estudio de fenómenos anómalos, citan como el más interesante de los efectos de cohetes «el famoso fenómeno de Petrozavodsk, causado por el lanzamiento del satélite artificial Kosmos-955 desde el cosmódromo de Plesetsk», y atribuyen otros efectos que lo acompañaron a un lanzamiento de prueba fallido de un misil balístico en la misma región y casi a la misma hora. Original en ruso: «знаменитое Петрозаводское явление, обусловленное запуском искусственного спутника Земли \"Космос-955\" с космодрома Плесецк».",
+    "en": "Platov and Sokolov, who worked in the Soviet state programme on anomalous phenomena, cite as the most interesting of the rocket effects \"the famous Petrozavodsk phenomenon, caused by the launch of the artificial Earth satellite Kosmos-955 from the Plesetsk cosmodrome\", and attribute other effects that accompanied it to a failed test launch of a ballistic missile in the same region at almost the same time. Russian original: «знаменитое Петрозаводское явление, обусловленное запуском искусственного спутника Земли \"Космос-955\" с космодрома Плесецк».",
+    "source": "Platov, Yu. V. y Sokolov, B. A. — «Estudio de los objetos voladores no identificados en la URSS», Vestnik RAN 70(6), 2000 (original en ruso)",
+    "url": "http://vivovoco.astronet.ru/VV/JOURNAL/VRAN/UFO.HTM"
+  }
 }
