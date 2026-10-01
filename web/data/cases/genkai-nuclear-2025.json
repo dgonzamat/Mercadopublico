@@ -16,6 +16,7 @@
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "avion",
   "epistemicStatus": "documented",
   "probability": 27,
   "summary": "La noche del 26 de julio de 2025, cuatro guardias de la central nuclear de Genkai, en Saga, vieron tres luces en vuelo sobre la instalación, y los policías de la unidad especial destacada en la central también las vieron. Las siguieron casi dos horas. Kyushu Electric lo notificó al regulador nuclear como incidente de protección física, y el regulador anunció primero «tres drones» y después lo corrigió a «tres luces». Según el mapa de la eléctrica, las luces trazaron una elipse de un kilómetro y pasaron a unos 50 metros de los reactores 1 y 2. Nadie las fotografió. La policía de Saga concluyó que probablemente eran aviones confundidos con drones, sin descartar del todo un dron, y el gobierno lo repitió dos veces en el Parlamento en 2026. El caso reapareció en septiembre de 2026 en un artículo conjunto de un congresista de EE.UU. y un exministro de Defensa japonés.",
@@ -108,5 +109,11 @@
       "license": "Intervenciones públicas en el Parlamento, de uso libre (Ley de Derecho de Autor de Japón, art. 40)",
       "fallbackUrl": "https://kokkai.ndl.go.jp/txt/122114889X01620260616/76"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Agencia Nacional de Policía ante la Cámara de Consejeros (16 jun 2026): las luces tenían el mismo patrón que las de un avión y a esa hora varios aviones volaban y giraban en la zona, sin contradicción con la hora, dirección y ruta vistas por los guardias; «aunque no se puede descartar la posibilidad de un dron, se considera muy probable que se confundiera un avión con un dron».",
+    "en": "National Police Agency before the House of Councillors (16 Jun 2026): the lights had the same pattern as an aircraft's and at that time several aircraft were flying and circling in the area, consistent with the time, direction and route the guards saw; \"although the possibility of a drone cannot be ruled out, it is considered highly likely that an aircraft was mistaken for a drone.\"",
+    "source": "Actas de la Dieta de Japón — Cámara de Consejeros, comisión de gabinete (16 jun 2026), intervención 76 (Ishikawa Taizō), original en japonés",
+    "url": "https://kokkai.ndl.go.jp/txt/122114889X01620260616/76"
+  }
 }

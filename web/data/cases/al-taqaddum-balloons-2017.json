@@ -19,6 +19,7 @@
   "probability": 4,
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "globo",
   "posterior": {
     "mundano_natural": 0.93,
     "humana_clasificada": 0.01,
@@ -87,5 +88,11 @@
       "note_en": "Mirror of the report and the original video (DOD_110956846), with a still every minute."
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Informe de resolución de la AARO: «La AARO evalúa con alta confianza que el objeto no mostró velocidad ni otro comportamiento anómalo» y «era coherente con un racimo de globos total y parcialmente inflados». Descarta la hipótesis de un socio, un cuadricóptero cubierto con red de camuflaje, porque no derivaría con el viento y sus motores darían calor visible en infrarrojo.",
+    "en": "AARO case resolution report: \"AARO assesses with high confidence that the object did not exhibit anomalous speed or other behavior\" and \"was consistent with a cluster of fully and partially inflated balloons\". It rejects a partner's hypothesis, a quadrotor UAS draped in camouflage netting, because it would not drift with the wind and its motors would show heat in the infrared.",
+    "source": "AARO — «The Al Taqaddum Object», informe de resolución del caso (8 sep 2025)",
+    "url": "https://archive.org/download/declassified-aaro/AARO_Al_Taqaddam_Case_Resolution_Final.pdf"
+  }
 }

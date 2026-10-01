@@ -103,5 +103,11 @@
       "note_en": "Secondary summary naming the witnesses and documenting the 1985 declassification."
     }
   ],
-  "misidSubtype": "espacial"
+  "misidSubtype": "espacial",
+  "classBasis": {
+    "es": "Memorando del subdirector de Inteligencia Científica de la CIA al director: la descripción encaja en parte con un avión de despegue vertical «o un misil o un avión lanzado desde un raíl de longitud cero», lanzamiento que «sin duda solo podría hacerse con un cohete», y el giro del objeto al salir no casa bien con un avión de despegue vertical. Pero el mismo memorando dice que los pocos detalles «no permiten una identificación», y Scoville escribió después que probablemente eran reactores normales en ascenso pronunciado.",
+    "en": "Memo from the CIA Assistant Director for Scientific Intelligence to the Director: the description fits in some degree \"a vertical take-off aircraft or a missile or aircraft launched from a zero length rail\", a launch that \"could most certainly be accomplished only with a rocket\", and the object's spiralling as it left does not fit a vertical take-off aircraft well. But the same memo says the few details \"does not permit an identification\", and Scoville later wrote that the objects probably were normal jet aircraft in a steep climb.",
+    "source": "CIA — memorando «Comments on … Sighting of Unconventional Aircraft» (1955), CIA-RDP81R00560R000100080043-7 · Haines, G. — «CIA's Role in the Study of UFOs, 1947-90» (1997)",
+    "url": "https://archive.org/details/cia-readingroom-document-cia-rdp81r00560r000100080043-7"
+  }
 }

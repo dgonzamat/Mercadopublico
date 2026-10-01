@@ -14,8 +14,7 @@
     "place_en": "Woomera rocket range, South Australia"
   },
   "tier": "A",
-  "mundanoType": "misid",
-  "misidSubtype": "aeronave",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 35,
   "summary": "Entre 1952 y 1954, la oficina de seguridad del campo de misiles de Woomera investigó seis episodios en su propio recinto y los archivó en un solo expediente, hoy en el Archivo Nacional de Australia. El más fuerte es el del 5 de mayo de 1954: un radar antiaéreo siguió un blanco sin identificar que, según el sargento que lo cronometró, cruzó 15.000 yardas en diez segundos por encima de los 60.000 pies, y ese mismo día un técnico de Vickers-Armstrongs vio con prismáticos un objeto circular y gris detenerse sobre la trayectoria de un bombardero Canberra. El resto del expediente se resolvió o quedó en explicaciones prosaicas: meteoros, un eco de nube de nieve y una luz baja sobre el horizonte.",
@@ -82,5 +81,11 @@
       "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
       "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/D174_SA5281_1012736.pdf"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa para el episodio principal, el blanco de radar del 5 de mayo de 1954 y el objeto que Baker vio con prismáticos ese día: el expediente del LRWE no los explica. Las causas que el expediente sí propone son de otros episodios: «muy probablemente un meteoro» (28 de abril de 1952) y una nube de nieve para el eco de radar del 8 de octubre de 1952; ninguna cubre 1954. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones; el mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes a cause for the main episode, the radar target of 5 May 1954 and the object Baker saw through binoculars that day: the LRWE file does not explain them. The causes the file does propose belong to other episodes: \"an object, most likely a meteor\" (28 April 1952) and a snow cloud for the radar echo of 8 October 1952; neither covers 1954. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'; the same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "National Archives of Australia — D174, SA5281 (expediente del LRWE, 1952-1954) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), p. 3, tasa base",
+    "url": "https://documents.theblackvault.com/documents/ufos/australia/D174_SA5281_1012736.pdf"
+  }
 }

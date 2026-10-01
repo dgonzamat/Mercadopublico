@@ -70,6 +70,7 @@
     }
   ],
   "mundanoType": "natural",
+  "objectDetail": "optico",
   "posterior": {
     "mundano_natural": 0.34,
     "humana_clasificada": 0.05,
@@ -86,5 +87,11 @@
     "url": "http://www.martinshough.com/aerialphenomena/BOAC%20aircrew%20sighting.pdf",
     "note": "Reconstrucción de la geometría del avistamiento y discusión de las hipótesis atmosféricas y del supuesto contacto de radar.",
     "note_en": "Reconstruction of the sighting geometry and discussion of the atmospheric hypotheses and the alleged radar contact."
+  },
+  "classBasis": {
+    "es": "Martin Shough, en su estudio del caso: se han propuesto naves, una bandada de estorninos, globos o un espejismo; «aunque la evidencia no es concluyente, presentamos pruebas de que la explicación más probable parece ser un espejismo inusual», de un tipo raro pero observado varias veces en condiciones parecidas.",
+    "en": "Martin Shough, in his study of the case: spaceships, a flock of starlings, balloons or a mirage have been proposed; \"whilst the evidence is not conclusive, we present evidence that the most likely explanation seems to be an unusual mirage of a type which, whilst rare, appears to have been observed several times in similar conditions in other parts of the world.\"",
+    "source": "Shough, M. — «The BOAC Labrador sighting of June 29, 1954», resumen (CAELESTIA)",
+    "url": "https://www.caelestia.be/BOAC.html"
   }
 }

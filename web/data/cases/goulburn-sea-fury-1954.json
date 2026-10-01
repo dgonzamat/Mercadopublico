@@ -14,8 +14,7 @@
     "place_en": "Sky over Goulburn, New South Wales"
   },
   "tier": "A",
-  "mundanoType": "misid",
-  "misidSubtype": "aeronave",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 47,
   "summary": "La noche del 31 de agosto de 1954, el teniente J. A. O'Farrell, de la Armada australiana, volaba un Sea Fury a 13.000 pies sobre Goulburn cuando dos luces muy brillantes se cruzaron por delante de su avión, una pareció orbitar a su costado y ambas se alejaron hacia el noreste. El radar de tierra de Nowra registró tres ecos. Inteligencia Naval calificó al piloto de enteramente creíble y el comité de la RAAF le agradeció un avistamiento «bien autenticado». Tres meses después, el caso saltó a la prensa deformado.",
@@ -69,5 +68,11 @@
       "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
       "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/MP926-1%203079-101-1%203173603.pdf"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa: el expediente solo comprueba el tráfico («la única otra aeronave en las inmediaciones era un Convair de T.A.A.») sin atribuirle las luces, y la prensa del mismo expediente recoge que las autoridades navales admitieron que «no encuentran ninguna “fuente humana”» para los ecos de Nowra. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones; el mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes a cause: the file only checks the traffic (\"the only other aircraft in the vicinity was a T.A.A. Convair\") without attributing the lights to it, and the press clipping in the same file reports that naval authorities admitted \"they cannot find any 'human source'\" for the Nowra echoes. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'; the same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "National Archives of Australia — MP926/1, 3079/101/1 (declaración del ministro Francis y recortes, dic 1954) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), p. 3, tasa base",
+    "url": "https://documents.theblackvault.com/documents/ufos/australia/MP926-1%203079-101-1%203173603.pdf"
+  }
 }

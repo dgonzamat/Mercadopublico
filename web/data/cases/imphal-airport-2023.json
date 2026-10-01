@@ -90,5 +90,11 @@
       "license": "CC0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Arrival_in_Imphal_through_the_Imphal_International_Airport_01.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Prensa india de la época: unos especulaban con un dron privado cerca del aeropuerto, y no se descartaba un globo espía militar chino; «las imágenes grabadas por testigos sugerían que el objeto se parecía a un globo blanco similar al que se encontró en Estados Unidos en febrero». Ninguna autoridad publicó una explicación.",
+    "en": "Indian press at the time: some speculated about a privately flown drone near the airport, and a Chinese military spy balloon was not ruled out; \"video footage captured by witnesses suggested the object resembled a white balloon similar to the one encountered in the United States in February\". No authority published an explanation.",
+    "source": "Agencias vía The Kashmir Monitor — «Imphal: Could the 'UFO' Spotted Near Airport Be a Chinese Spy Balloon?» (25 nov 2023)",
+    "url": "https://www.thekashmirmonitor.net/imphal-could-the-ufo-spotted-near-airport-be-a-chinese-spy-balloon/"
+  }
 }

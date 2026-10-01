@@ -73,5 +73,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Wow_signal.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Méndez y colaboradores (2024), con datos del radiotelescopio de Arecibo: detectaron señales parecidas, más débiles, que se identifican fácilmente como pequeñas nubes interestelares de hidrógeno frío; «planteamos la hipótesis de que la señal Wow! fue causada por un abrillantamiento repentino de la línea del hidrógeno en estas nubes, desencadenado por una fuente transitoria de radiación intensa, como una fulguración de un magnetar». Es una hipótesis, no una identificación.",
+    "en": "Méndez et al. (2024), with Arecibo data: they detected similar, weaker signals that are easily identified as small interstellar clouds of cold hydrogen; \"We hypothesize that the Wow! Signal was caused by a sudden brightening of the hydrogen line in these clouds triggered by a strong transient radiation source, such as a magnetar flare or a soft gamma repeater (SGR).\" It is a hypothesis, not an identification.",
+    "source": "Méndez, A. et al. — «Arecibo Wow! I: An Astrophysical Explanation for the Wow! Signal», arXiv:2408.08513 (2024), resumen",
+    "url": "https://arxiv.org/abs/2408.08513"
+  }
 }

@@ -19,6 +19,7 @@
   "probability": 9,
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "avion",
   "posterior": {
     "mundano_natural": 0.88,
     "humana_clasificada": 0.02,
@@ -96,5 +97,11 @@
       "note_en": "Primary source for Kirkpatrick's explanation: the trail follows the camera, a 'shadow image' from readout overlap, the engine heat signature of a commuter aircraft; and the Middle East case shown as unresolved."
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "Evaluación de la AARO en el registro oficial de DVIDS: tras analizar el vídeo completo, metraje adicional con mayor distancia focal y los datos de vuelos comerciales de la región, «la AARO evalúa que el objeto probablemente es una aeronave comercial y que la estela de cavitación es un artefacto del sensor resultante de la compresión del vídeo». La resolución del caso quedó «pendiente de revisión final».",
+    "en": "AARO assessment in the official DVIDS record: after analysis of the full motion video, additional footage with a longer focal length and commercial flight data in the region, \"AARO assesses that the object likely is a commercial aircraft and that the trailing cavitation is a sensor artifact resultant of video compression.\" Case resolution was \"pending final review\".",
+    "source": "DVIDS — «South Asian Object 1», evaluación de la AARO (19 abr 2023)",
+    "url": "https://www.dvidshub.net/video/880270/south-asian-object-1"
+  }
 }

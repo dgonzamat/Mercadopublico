@@ -68,5 +68,11 @@
       "fallbackUrl": "https://archive.org/details/1965-05-9073552-Philippines"
     }
   ],
-  "evidenceReviewed": "2026-09-27"
+  "evidenceReviewed": "2026-09-27",
+  "classBasis": {
+    "es": "Nota de trámite de Blue Book a la DIA: se informó de que una aeronave «era la causa más probable. Datos demasiado incompletos y contradictorios para el análisis»; la duración y la velocidad comunicadas son incompatibles, y el alcance y las características visuales tampoco concuerdan con el informe. La ficha concluye «(2) Aircraft» para el segundo episodio.",
+    "en": "Blue Book routing note to DIA: it was reported that an aircraft \"was the most likely cause. Data too incomplete and conflicting for analysis\"; the reported duration and speed are incompatible, and range and visual characteristics are not in accord with the report either. The record card concludes '(2) Aircraft' for the second episode.",
+    "source": "Project Blue Book — expediente «5-7 May 65, Philippines» (ficha y nota de trámite de la DIA)",
+    "url": "https://archive.org/details/1965-05-9073552-Philippines"
+  }
 }

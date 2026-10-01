@@ -14,8 +14,7 @@
     "place_en": "Orange-Caritat Air Base 115 (Vaucluse) and the sky over the Hautes-Alpes"
   },
   "tier": "A",
-  "mundanoType": "misid",
-  "misidSubtype": "aeronave",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 45,
   "summary": "El 15 de junio de 1951, hacia las 11:30, dos pilotos de caza de la 5.ª Escuadra, en un vuelo de entrenamiento con Vampire desde la base de Orange-Caritat, vieron un objeto plateado, muy brillante y aparentemente inmóvil hacia el macizo del Pelvoux. Al acercarse, se volvió oblongo y se alejó al este subiendo, más rápido que sus aviones, hasta perderse tras seis minutos de persecución. El coronel de la base informó al mando con los relatos de ambos pilotos. El GEIPAN lo clasifica «D»: no identificado.",
@@ -76,5 +75,11 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:S.N.C.A.S.E._SE.535_Mistral_%E2%80%987-CE_-_Mistral_-_S.N.C.A.S.E._-_535_-_N%E3%82%9C4%E2%80%99_(28479693102).jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente sostiene una causa: el GEIPAN anota que algunas descripciones «hacen pensar en un globo estratosférico observado de lejos», pero rechaza la hipótesis porque el alejamiento rápido que describe un piloto «no conviene» a ella, y clasifica el caso D. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones; el mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source upholds a cause: GEIPAN notes that some descriptions \"suggest a stratospheric balloon observed from afar\", but rejects the hypothesis because the rapid departure one pilot describes \"does not fit\" it, and classes the case D. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'; the same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "GEIPAN (CNES) — ficha «[AERO MIL] Orange (84) 15.06.1951», original en francés · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), p. 3, tasa base",
+    "url": "https://www.cnes-geipan.fr/fr/cas/1951-06-00002"
+  }
 }

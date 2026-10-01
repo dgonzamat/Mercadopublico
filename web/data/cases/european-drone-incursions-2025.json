@@ -15,8 +15,7 @@
     "place_en": "Copenhagen Airport + some ten NATO countries"
   },
   "tier": "A",
-  "mundanoType": "misid",
-  "misidSubtype": "aeronave",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "developing",
   "probability": 25,
   "summary": "Entre septiembre y diciembre de 2025, incursiones aéreas no identificadas cerraron aeropuertos y sobrevolaron bases nucleares en una decena de países de la OTAN: Kleine Brogel, Volkel —donde los militares abrieron fuego— e Île Longue. No se recuperó ni identificó un solo aparato. En junio de 2026 la policía danesa cerró la investigación de Copenhague sin poder confirmar ni descartar que hubiera habido drones.",
@@ -107,5 +106,11 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACopenhagen%20airport%20from%20air.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa ordinaria: la policía de Copenhague habló esa noche de «tres o cuatro drones grandes», pero tras nueve meses la investigación danesa no pudo confirmar que los drones causaran el cierre ni descartar que estuvieran implicados, y se cerró sin sospechosos; nadie identificó ningún aparato en los diez países. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones; el mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes an ordinary cause: Copenhagen police spoke that night of \"three or four big drones\", but after nine months the Danish investigation could neither confirm that drones caused the closure nor rule out that they were involved, and it was closed with no suspects; no craft was identified in any of the ten countries. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'; the same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "DroneLife — «Danish Investigation Finds No Proof Drones Caused Copenhagen Airport Shutdown» (25 jun 2026) · AFP vía Al Jazeera (22 sep 2025) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), p. 3, tasa base",
+    "url": "https://dronelife.com/2026/06/25/airport-drone-detection-copenhagen-investigation/"
+  }
 }
