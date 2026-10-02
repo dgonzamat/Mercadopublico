@@ -47,8 +47,8 @@
       "url": "https://www.science-frontiers.com/sf093/sf093g13.htm"
     },
     {
-      "name": "CIA FOIA Reading Room — 'Diverging Options on Cause of Sasovo Explosion'",
-      "url": "https://www.cia.gov/readingroom/document/0005517791"
+      "name": "CIA FOIA Reading Room — 'Diverging Opinions on Cause of Sasovo Explosion' (FBIS, Pravda, 15 abr 1991), espejo en archive.org",
+      "url": "https://archive.org/details/cia-readingroom-document-0005517791"
     },
     {
       "name": "Russia Beyond — 'Top 10 places in Russia to see a UFO' (contexto Sasovo)",
@@ -73,5 +73,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AWelcome%20sign%20in%20Sasovo%2C%20Ryazan%20Oblast%2C%20Russia.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "El investigador ruso Andrei Ol'khovatov, en Science Frontiers n.º 93 (1994): de las ideas propuestas al principio «casi todas se han abandonado, salvo una: que tuvo un origen tectónico (endógeno, para ser exactos)», apoyada en estudios geofísicos de la región y en una segunda explosión, más débil, en 1992 a unos 9 km. Pero es la tesis de un solo autor, que el boletín presenta como comunicación personal. Las fuentes recogen otra lectura prosaica: según Pravda (15 abr 1991, en la traducción del FBIS archivada por la CIA), los militares que visitaron el lugar sostuvieron que había estallado nitrato de amonio, y junto al cráter había «30 toneladas de nitrato de amonio fresco» llevadas al campo el 5 de abril para abonar; el mismo artículo dice que la causa «sigue siendo un misterio».",
+    "en": "Russian researcher Andrei Ol'khovatov, in Science Frontiers no. 93 (1994): 'At first, several ideas about its nature were proposed, but now almost all of them are abandoned, except one: that it was a tectonic (endogenic, to be exact) origin', supported by geophysical research in the region and 'a secondary, weaker explosion' in 1992 about 9 km away. But it is a single author's thesis, which the bulletin gives as a personal communication. The sources record another prosaic reading: according to Pravda (15 Apr 1991, in the FBIS translation archived by the CIA), 'Military men who visited the scene of the explosion' said 'that ammonium nitrate exploded', and beside the crater 'there were 30 tonnes of fresh ammonium nitrate which was brought to the field 5 April to fertilize the plants'; the same article says 'the cause of the explosion is still a mystery'.",
+    "source": "Science Frontiers n.º 93 (may-jun 1994), «Strange explosions at Sasovo, in Russia» (comunicación de A. Yu. Ol'khovatov) · Pravda, 15 abr 1991 (FBIS), CIA — «Diverging Opinions on Cause of Sasovo Explosion»",
+    "url": "https://www.science-frontiers.com/sf093/sf093g13.htm"
+  }
 }

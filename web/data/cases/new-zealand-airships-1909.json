@@ -67,5 +67,11 @@
     "nohumano_abierto": 0.07,
     "indet": 0.22
   },
-  "misidSubtype": "astronomico"
+  "misidSubtype": "astronomico",
+  "classBasis": {
+    "es": "Robert E. Bartholomew, «The Great Zeppelin Scare of 1909» (NZ Skeptics, 1998): el cielo nocturno ambiguo «era ideal para fomentar confusiones con estrellas, planetas y otros fenómenos naturales», agravadas por el efecto autocinético, en lo que llama «un notable delirio social». Pero el mismo artículo atribuye casos concretos a otras causas: la luna en Gore, globos de fuego y cometas iluminadas en agosto, una broma en Temuka —unos chicos que pusieron una vela dentro de un nabo hueco y lo izaron al mástil del instituto— y vuelos repetidos de miles de estorninos en el objeto de las colinas de Tapanui.",
+    "en": "Robert E. Bartholomew, 'The Great Zeppelin Scare of 1909' (NZ Skeptics, 1998): 'The ambiguous night-time sky was ideal for fostering misperceptions of stars, planets and other natural phenomena', compounded by the autokinetic effect, in what he calls 'a remarkable social delusion'. But the same article assigns particular sightings to other causes: the moon at Gore, fire balloons and illuminated kites in August, a prank at Temuka by 'some boys who had placed a candle in a hollowed turnip and raised it to the top of the High School flagpole', and 'repeated flights of thousands of starlings' for the object near the Tapanui Hills.",
+    "source": "Bartholomew, R. E. — «The Great Zeppelin Scare of 1909», NZ Skeptics (1 may 1998)",
+    "url": "https://articles.skeptics.nz/1998/05/01/the-great-zeppelin-scare-of-1909/"
+  }
 }

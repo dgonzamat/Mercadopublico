@@ -80,5 +80,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMystery%20airship%201896.jpg"
     }
   ],
-  "misidSubtype": "astronomico"
+  "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "Wikipedia («Mystery airship»): la conclusión general de los investigadores fue que buena parte de las observaciones más simples eran confusiones con planetas y estrellas, y muchas de las más complejas, fraudes y bromas; «queda un pequeño residuo desconcertante». El astrónomo G. W. Hough, director del Observatorio Dearborn, estaba seguro de que la gente miraba a Betelgeuse, y otros astrónomos creían que se había tomado a Júpiter, Venus y Marte por la aeronave. El mismo artículo recoge otras propuestas: enjambres de luciérnagas, meteoros y bromas probadas con «globos o cometas con faroles o velas». La clase cubre la capa de las luces; los relatos con tripulantes, como el choque de Aurora, caen del lado del fraude.",
+    "en": "Wikipedia ('Mystery airship'): 'The general conclusion of investigators was that a considerable number of the simpler sightings were misidentification of planets and stars, and a large number of the more complex the result of hoaxes and practical jokes. A small residuum remains perplexing.' Astronomer G. W. Hough, director of the Dearborn Observatory, 'was certain people were looking at Alpha Orionis (Betelgeuse)', and 'Other astronomers believed witnesses may have mistaken Jupiter, Venus and Mars for the airship.' The same article records other proposals: 'swarms of lightning beetles', 'meteors', and proven pranks with 'balloons or kites with lanterns or candles attached'. The class covers the layer of the lights; the stories with crews, such as the Aurora crash, fall on the hoax side.",
+    "source": "Wikipedia — «Mystery airship» (cita a M. Dash, Borderlands, 2000, y a D. Cohen, 1981)",
+    "url": "https://en.wikipedia.org/wiki/Mystery_airship"
+  }
 }

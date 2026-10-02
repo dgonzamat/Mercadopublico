@@ -14,7 +14,9 @@
     "place_en": "Podkamennaya Tunguska River, Siberia"
   },
   "tier": "B",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "epistemicStatus": "documented",
   "probability": 10,
   "summary": "El 30 de junio de 1908, una colosal explosión en el aire sobre el río Tunguska, en la remota Siberia, derribó unos 80 millones de árboles en unos 2.000 km² sin dejar cráter. El consenso científico lo atribuye al estallido atmosférico de un asteroide o cometa pequeño. Décadas después, una novela soviética de 1946 popularizó la idea de una nave extraterrestre, que la ciencia descartó.",
@@ -73,5 +75,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Tunguska_Ereignis-1.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Gasperini, Bonatti y Longo, «The Tunguska Mystery, 100 Years Later» (Scientific American, 2008): la mayoría acepta que «algún tipo de cuerpo cósmico, un asteroide o un cometa, estalló en el cielo de Siberia», y «la explosión en el aire de un asteroide pétreo es la interpretación principal». Pero el mismo artículo recuerda que nadie ha encontrado fragmentos del objeto ni cráteres de impacto, y recoge una hipótesis alternativa: la combustión rápida de metano liberado del suelo pantanoso.",
+    "en": "Gasperini, Bonatti and Longo, 'The Tunguska Mystery, 100 Years Later' (Scientific American, 2008): most observers 'generally accept that some kind of cosmic body, either an asteroid or a comet, exploded in the sky above Siberia', and 'The airburst of a stony asteroid is the leading interpretation.' But the same article notes that 'no one has yet found fragments of the object or any impact craters', and records an alternative hypothesis: 'the rapid combustion of methane gas released from the swampy ground'.",
+    "source": "Gasperini, L., Bonatti, E. y Longo, G. — «The Tunguska Mystery, 100 Years Later», Scientific American (30 jun 2008)",
+    "url": "https://www.scientificamerican.com/article/the-tunguska-mystery-100-years-later/"
+  }
 }

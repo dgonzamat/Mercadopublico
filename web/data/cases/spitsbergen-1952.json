@@ -73,5 +73,11 @@
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALongyearbyen-as-of-2022.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Kevin Randle (2024), tras revisar los expedientes de Blue Book: el caso figura allí como fraude; según otras fuentes, la Fuerza Aérea noruega dijo al agregado que la historia era «definitivamente falsa»; y «no parece haber prueba de que el accidente ocurriera», pues el relato «parece venir de un periódico que inventó los detalles». Randle cita además «Majic Eyes Only» de Ryan Wood: en 1985 el investigador británico Philip Mantle consultó al Gobierno noruego, y Arild Isseg, jefe de la división de información del Ministerio de Defensa, le respondió que «toda la historia parece completamente infundada»; y varias personas citadas en los artículos y en los resúmenes de inteligencia «simplemente no existían».",
+    "en": "Kevin Randle (2024), after going through the Blue Book files: the case 'is labeled as a hoax by them'; according to other sources the Norwegian Air Force told the attaché that 'the story was definitely false'; and 'there seems to be no evidence that the crash took place and the origin of the story seems to be a newspaper that made up the details'. Randle also quotes Ryan Wood's 'Majic Eyes Only': in 1985 British researcher Philip Mantle asked the Norwegian Government, and 'The whole story seems utterly unfounded,' Mantle was told by Arild Isseg, head of the Information Division of the Norwegian Royal Ministry of Defense; and 'several of those people cited in both newspaper articles and official intelligence summaries of newspaper articles on the Spitsbergen story simply did not exist'.",
+    "source": "Randle, K. — «Spitsbergen Crash/Retrieval and David Grusch», A Different Perspective (may 2024)",
+    "url": "http://kevinrandle.blogspot.com/2024/05/spitsbergen-crashretrieval-and-david.html"
+  }
 }

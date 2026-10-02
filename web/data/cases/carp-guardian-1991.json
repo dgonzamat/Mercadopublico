@@ -55,6 +55,12 @@
     {
       "name": "CBC Docs — 'We investigated an alleged UFO sighting near Ottawa'",
       "url": "https://www.cbc.ca/documentaries/cbc-docs-pov/we-investigated-an-alleged-ufo-sighting-near-ottawa-1.5954765"
+    },
+    {
+      "name": "Rogers, I. — 'I was a teenage UFO investigator who explored an infamous alien sighting near Ottawa', CBC Docs POV (18 mar 2021)",
+      "url": "https://www.cbc.ca/documentaries/cbc-docs-pov/i-was-a-teenage-ufo-investigator-who-explored-an-infamous-alien-sighting-near-ottawa-1.5954801",
+      "note": "Testimonio firmado de un investigador del caso: la mayoría lo descartó como fraude, cuyo autor nunca se identificó.",
+      "note_en": "Signed account by one of the case's investigators: most dismissed it as a hoax whose author was never identified."
     }
   ],
   "posterior": {
@@ -75,5 +81,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADiefenbunker.JPG"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ian Rogers, que investigó el caso de adolescente, en CBC Docs POV (2021): «la mayoría de los investigadores descartaron el material como un fraude»; el relato del accidente se leía como mala ciencia ficción y las fotos del alienígena no parecían más que alguien de pie en un campo con ropa oscura y una máscara de hockey. Pero el fraude no tiene autor conocido: «nunca descubrí quién era Guardian ni cómo exactamente montaron el engaño». La clase cubre los paquetes de «Guardian»; no explica las luces que una vecina dijo haber visto.",
+    "en": "Ian Rogers, who investigated the case as a teenager, in CBC Docs POV (2021): 'Most investigators dismissed the material as a hoax. The story of the UFO crash read like bad science fiction, while the alien photos looked like nothing more than someone standing in a field in a dark outfit and a hockey mask.' But the hoax has no known author: 'I never found out who Guardian was or how exactly they staged the hoax.' The class covers the 'Guardian' parcels; it does not explain the lights a neighbour said she saw.",
+    "source": "Rogers, I. — «I was a teenage UFO investigator who explored an infamous alien sighting near Ottawa», CBC Docs POV (18 mar 2021)",
+    "url": "https://www.cbc.ca/documentaries/cbc-docs-pov/i-was-a-teenage-ufo-investigator-who-explored-an-infamous-alien-sighting-near-ottawa-1.5954801"
+  }
 }

@@ -75,5 +75,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMagenta-municipio1.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Vice Italia, «X Files fascisti»: para el Centro Italiano Studi Ufologici (CISU) la historia del «ovni fascista» es «del todo falsa, o incluso una broma en la que cayeron algunos ufólogos»; los documentos, enviados por correo desde 1996 por una fuente anónima, «no tienen números de protocolo, ni sellos, ni ninguna indicación verificable». Pero Roberto Pinotti (CUN) sostiene que el perito Antonio Garavaglia autentificó uno de los papeles, una pericia de parte cuyas técnicas, señala OggiScienza, no se conocen.",
+    "en": "Vice Italia, 'X Files fascisti': for the Centro Italiano Studi Ufologici (CISU) the story of the 'fascist UFO' 'è del tutto falsa —o addirittura uno scherzo in cui sono cascati alcuni ufologi' (is entirely false, or even a joke some ufologists fell for); the documents, mailed from 1996 by an anonymous source, 'non hanno numeri di protocolli, non hanno timbri né alcuna indicazione verificabile' (have no protocol numbers, no stamps, nor any verifiable indication). But Roberto Pinotti (CUN) holds that the expert Antonio Garavaglia authenticated one of the papers, a privately commissioned report whose techniques, OggiScienza notes, are not known.",
+    "source": "Vice Italia — «X Files fascisti: il primo avvistamento ufo» · OggiScienza — «1933, quando un ufo cadde in Lombardia» (2020)",
+    "url": "https://www.vice.com/it/article/x-files-fascisti-primo-avvistamento-ufo-mussolini/"
+  }
 }

@@ -75,5 +75,11 @@
       "license": "Dominio público · obra anterior a 1928",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:LinkSeltsame_Gestalt_so_in_disem_MDLXVI_Jar.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Blog del Museo Nacional Suizo (2024): la mayoría de los estudiosos afirma que fenómenos naturales causaron probablemente las observaciones; se han propuesto lluvias de meteoros, un bólido, cometas, una aurora boreal, ilusiones ópticas por condiciones atmosféricas poco comunes como el polvo del Sáhara, o una rara disposición de los planetas. Pero el mismo texto reconoce que historiadores y científicos «siguen preguntándose» qué lo causó exactamente, y parte de esos candidatos son astronómicos: la clase recoge el «fenómeno natural» genérico, sin precisar.",
+    "en": "Swiss National Museum blog (2024): 'the majority of scholars affirm that natural phenomena likely caused the spectacular sightings. Meteor showers, a bolide, cometary movements, an aurora borealis, optical illusions caused by uncommon atmospheric conditions, like Sahara dust, or some other rare astronomical event, like a singular arrangement of planets, have all been proposed as hypothetical explanations.' But the same text admits that 'Historians and scientists, nonetheless, are still left wondering what exactly caused the celestial event', and some of those candidates are astronomical: the class records the generic 'natural phenomena', without a detail.",
+    "source": "Swiss National Museum — «The celestial event over Basel in 1566» (blog, jul 2024)",
+    "url": "https://blog.nationalmuseum.ch/en/2024/07/the-celestial-event-over-basel-in-1566/"
+  }
 }

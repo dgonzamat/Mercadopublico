@@ -14,7 +14,8 @@
     "place_en": "Oloron-Sainte-Marie (and Gaillac), France"
   },
   "tier": "B",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "animal",
   "epistemicStatus": "documented",
   "probability": 36,
   "summary": "El 17 de octubre de 1952, numerosos vecinos de Oloron-Sainte-Marie (suroeste de Francia) describieron un cilindro inclinado precedido por unas 30 'esferas rojas con anillo' que se movían en parejas en zigzag, mientras caía sobre cables y tejados una sustancia filamentosa blanca —'cabellos de ángel'— que se desvanecía al tocarla. Diez días después se repitió casi idéntico en Gaillac.",
@@ -75,5 +76,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ACathedrale%20Sainte-Marie%20Oloron%20portail.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Carta del médico de Oloron (27 nov 1952), publicada por Patrick Gross: la nueva aparición, el 28 de octubre, de bolas iridiscentes unidas por filamentos «confirmó que el fenómeno del 17 de octubre fue realmente una migración de arañas de campo transportadas por el espacio por los hilos de la Virgen», y los colores se debían a «la refracción de los rayos del sol». Pero, como anota la misma página, otro testigo de otra observación de ese día rechazó con fuerza la explicación. La carta trata solo Oloron —Gaillac queda fuera—, su autor no tiene nombre en la página publicada y no explica el «cigarro»: «no pretendo explicar la cuestión de los platillos o de los cigarros», escribe.",
+    "en": "Letter from the Oloron doctor (27 Nov 1952), published by Patrick Gross: the new display on 28 October of iridescent balls joined by filaments 'indeed confirmed that the phenomenon of October 17 was really a migration of field spiders carried through space by \"gossamer threads\"', the colours being 'caused by the refraction of the sun's rays'. But, as the same page notes, 'another witness of another observation that day strongly disputed it'. The letter deals only with Oloron —Gaillac is left out—, its author is unnamed on the published page, and it does not account for the 'cigar': 'I do not claim to want to explain the issue of the flying saucers or cigars', he writes.",
+    "source": "Carta de un médico de Oloron a un investigador, 27 nov 1952 — Gross, P., «The angel hair affair in Oloron in 1952, the MD's explanation» (UFOs at close sight)",
+    "url": "https://ufology.patrickgross.org/attic/1952-10-17-oloron-dr.htm"
+  }
 }
