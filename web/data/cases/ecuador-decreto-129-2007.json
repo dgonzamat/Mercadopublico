@@ -25,8 +25,8 @@
     "nohumano_abierto": 0.12,
     "indet": 0.15
   },
-  "summary": "El 17 de mayo de 2007, el Decreto Ejecutivo N° 129 ordenó la desclasificación de los archivos de la Fuerza Aérea Ecuatoriana (FAE) sobre observaciones aéreas anómalas, incluido el encuentro de 1989 entre un caza Mirage F.1 y un objeto no identificado sobre la Amazonía ecuatoriana.",
-  "summary_en": "On 17 May 2007, Executive Decree No. 129 ordered the declassification of the Ecuadorian Air Force (FAE) files on anomalous aerial observations, including the 1989 encounter between a Mirage F.1 fighter and an unidentified object over the Ecuadorian Amazon.",
+  "summary": "El 25 de junio de 2007, el gobierno de Rafael Correa autorizó, mediante un oficio del secretario del Consejo de Seguridad Nacional, general Patricio Cárdenas, que el Ministerio de Defensa y las tres ramas de las Fuerzas Armadas entregaran al ufólogo Jaime Rodríguez (CEIFO) la información que existiera en sus archivos sobre observaciones aéreas no identificadas. El vocero de la Fuerza Aérea Ecuatoriana, coronel Mauricio Campuzano, afirmó después no tener ningún archivo en su poder, algo que Rodríguez discute.",
+  "summary_en": "On 25 June 2007, the government of Rafael Correa authorized, through an official letter from the secretary of the National Security Council, General Patricio Cárdenas, the Ministry of Defense and the three branches of the Armed Forces to hand ufologist Jaime Rodríguez (CEIFO) whatever information their archives held on unidentified aerial observations. The Ecuadorian Air Force spokesman, Colonel Mauricio Campuzano, later stated that he had no files in his possession, which Rodríguez disputes.",
   "patterns": [
     "8q",
     "8e"
@@ -56,8 +56,10 @@
       "note_en": "Primary administrative document"
     },
     {
-      "name": "Fuerza Aérea Ecuatoriana — expediente desclasificado Mirage 1989",
-      "url": "https://www.fuerzaaereaecuatoriana.mil.ec"
+      "name": "EcoActivo — «ECUADOR: Desclasificación Extraterrestre y OVNI» (fuente secundaria)",
+      "url": "https://www.ecoactivo.com/extraterrestres/ecuador-desclasificacion-extraterrestre",
+      "note": "Fecha el oficio del general Patricio Cárdenas (COSENA) el 25 de junio de 2007 y recoge que el vocero de la FAE, coronel Mauricio Campuzano, aseguró no tener ningún archivo en su poder.",
+      "note_en": "Dates General Patricio Cárdenas's (COSENA) official letter to 25 June 2007 and reports that the FAE spokesman, Colonel Mauricio Campuzano, said he had no files in his possession."
     },
     {
       "name": "Cobertura El Comercio (Ecuador, mayo 2007)",
