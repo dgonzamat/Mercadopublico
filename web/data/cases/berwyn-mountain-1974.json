@@ -16,7 +16,9 @@
   "tier": "B",
   "category": "incident",
   "epistemicStatus": "documented",
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "probability": 16,
   "patterns": [
     "8o"
@@ -73,5 +75,11 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABerwyn%20mountains%20-%20geograph.org.uk%20-%20979691.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "History UK resume los expedientes del Ministerio de Defensa liberados en 2010: según ellos, una investigación privada impulsada por la Asociación Astronómica Británica «sugirió que el OVNI era un meteoro que se desintegraba», y el veredicto «oficial» es que la zona sufrió un terremoto antes de que un meteoro pasara por encima. La clase cubre esa capa, la luz en el cielo que se tomó por el OVNI. El estruendo y el temblor son otra capa, natural: según el Daily Post, el entonces Institute of Geological Sciences informó de que un terremoto de magnitud 3,5 se sintió a las 20:38 en una amplia zona del norte de Gales. Las luces en la ladera son una tercera capa: el mismo diario recoge la teoría de que eran cazadores con focos, que rechaza un granjero de la zona; y History UK sostiene que hay razones para creer que ocurrió algo más extraordinario, porque los expedientes recogen testigos que describen una luz roja «como un fuego de carbón», un «círculo perfecto» con otras luces moviéndose.",
+    "en": "History UK summarises the Ministry of Defence files released in 2010: according to them, a private investigation launched at the behest of the British Astronomical Society \"suggested that the UFO was a disintegrating meteor\", and the 'official' verdict is that the area \"had simply been struck by an earthquake before a meteor passed overhead\". The class covers that layer, the light in the sky taken for the UFO. The bang and tremor are another, natural layer: according to the Daily Post, \"the then Institute of Geological Sciences reported that a magnitude 3.5 earthquake was felt at 8.38pm that night over a wide area of North Wales\". The lights on the hillside are a third layer: the same paper records the theory that they were lampers out shooting, which a local farmer rejects; and History UK argues there is reason to believe something more extraordinary happened, because the files mention witnesses describing a \"bright red light, like a coal-fire red. Large perfect circle\" with other lights moving.",
+    "source": "History UK — «Berwyn Mountain UFO: The Welsh Roswell» (sobre los expedientes del MoD liberados por The National Archives en 2010) · Daily Post (North Wales Live), 9 feb 2023",
+    "url": "https://www.history.co.uk/articles/berwyn-mountain-ufo-the-welsh-roswell"
+  }
 }

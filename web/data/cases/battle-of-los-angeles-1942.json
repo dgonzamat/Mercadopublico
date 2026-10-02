@@ -69,5 +69,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Battle_of_Los_Angeles_LATimes.jpg"
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "La historia oficial de las fuerzas aéreas del Ejército concluye: «Un estudio cuidadoso de las pruebas sugiere que globos meteorológicos —que se sabe que se soltaron sobre Los Ángeles— pudieron causar la alarma inicial», teoría apoyada porque la artillería antiaérea fue criticada oficialmente por gastar munición contra blancos que se movían demasiado despacio para ser aviones; ya con la alarma en marcha, a las 3:06 se vio sobre Santa Mónica un globo con una bengala roja y cuatro baterías abrieron fuego. Pero la misma historia atribuye buena parte de la confusión posterior a otra cosa: las explosiones de la propia artillería, iluminadas por los reflectores, que se tomaron a su vez por aviones enemigos.",
+    "en": "The official history of the Army Air Forces concludes: \"A careful study of the evidence suggests that meteorological balloons—known to have been released over Los Angeles—may well have caused the initial alarm\", a theory supported by the fact that anti-aircraft units were officially criticised for wasting ammunition on targets that moved too slowly to have been airplanes; with the alert already under way, at 0306 \"a balloon carrying a red flare was seen over Santa Monica and four batteries of antiaircraft artillery opened fire\". But the same history attributes much of the later confusion to something else: the anti-aircraft shell bursts, caught by the searchlights, \"were themselves mistaken for enemy planes\".",
+    "source": "W. F. Craven y J. L. Cate (eds.) — «The Army Air Forces in World War II», vol. I, cap. 8 (Office of Air Force History)",
+    "url": "https://www.ibiblio.org/hyperwar/AAF/I/AAF-I-8.html"
+  }
 }

@@ -77,5 +77,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Anosy%2C%20Central%20Antananarivo%2C%20Capital%20of%20Madagascar%2C%20Photo%20by%20Sascha%20Grabow.jpg"
     }
   ],
-  "misidSubtype": "astronomico"
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
+  "classBasis": {
+    "es": "Eric Maillot, del Cercle Zététique, sostiene que fue un meteoro, citado por Patrick Gross: su abuelo, que vivía en Madagascar, observó «este... meteoro, pasando sin la doble vuelta que se le atribuye» en la revista LDLN, y resume: «Tomen un meteoro, háganlo zigzaguear y ahí lo tienen: tienen un OVNI»; Gross añade que el caso ha sido criticado como un simple meteoro cuyos rasgos extraños serían «añadidos tardíos» por la «memoria defectuosa». Pero Gross, que reproduce la crítica, la rechaza, y un meteoro no explica bien el segundo objeto visto minutos después ni el apagón que relatan los testigos.",
+    "en": "Eric Maillot, of the Cercle Zététique, holds it was a meteor, quoted by Patrick Gross: his grandfather, who lived in Madagascar, observed \"this... meteor, streaking by without double turn as it is claimed\" in LDLN magazine, and he sums up: \"Take a meteor, make it zig-zag, and there you are: you have a UFO\"; Gross adds that the case has been criticised as only a meteor whose strange features were \"late additions\" due to \"faulty memory\". But Gross, who reproduces the criticism, rejects it, and a meteor does not explain well the second object seen minutes later or the blackout the witnesses describe.",
+    "source": "Patrick Gross — «Tananarive, Madagascar, 1954» (cita a Eric Maillot, Cercle Zététique)",
+    "url": "https://ufologie.patrickgross.org/htm/tana54.htm"
+  }
 }

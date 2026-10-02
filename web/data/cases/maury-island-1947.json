@@ -74,5 +74,11 @@
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADes%20Moines%2C%20Washington%20with%20Puget%20Sounds%20and%20Maury%20and%20Vashon%20Island%20(1292124062).jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "HistoryLink resume el desenlace: el FBI abrió una investigación de inmediato y «Dahl y Crissman confesaron que habían inventado la historia del platillo volante»; los «restos» eran trozos de chatarra y piedra pómez de una playa de Maury Island, y el Ejército y los supervivientes confirmaron que el accidente del B-25 que llevaba las muestras lo causó un incendio de motor. Pero la misma reseña advierte que el relato dramático de 1952 alimentó rumores persistentes de encubrimiento, y la confesión consta en el resumen, no en una fuente primaria que se haya consultado aquí.",
+    "en": "HistoryLink summarises the outcome: the FBI immediately began an investigation and \"Dahl and Crissman confessed that they had fabricated the flying saucer story\"; the \"debris\" consisted of bits of scrap and pumice from a Maury Island beach, and the Army and survivors confirmed that the crash of the B-25 carrying the samples was caused by an engine fire. But the same essay notes that the dramatic 1952 account spawned persistent rumours of a cover-up, and the confession appears in the summary, not in a primary source consulted here.",
+    "source": "HistoryLink.org — Essay 2068, «Dahl and Crissman report a June 21, 1947, explosion of a flying saucer over Maury Island»",
+    "url": "https://www.historylink.org/File/2068"
+  }
 }

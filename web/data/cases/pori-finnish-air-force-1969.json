@@ -14,8 +14,7 @@
     "place_en": "Pori airfield, Finland"
   },
   "tier": "B",
-  "mundanoType": "misid",
-  "misidSubtype": "aeronave",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 35,
   "summary": "El 12 de abril de 1969, durante unas maniobras de la Fuerza Aérea finlandesa, un controlador pidió a un piloto en formación que mirara qué eran siete «globos» inmóviles sobre el aeródromo de Pori. Según los pilotos y el personal de control, eran siete objetos redondos y amarillentos; cuando el reactor Fouga Magister se acercó, se pusieron en formación y se alejaron hacia el norte tan deprisa que el avión no pudo seguirlos. Es el único caso que la Fuerza Aérea finlandesa ha reconocido: la revista de las Fuerzas de Defensa, «Ruotuväki», lo publicó en 2012 y apuntó a posibles aviones espía extranjeros. No hay expediente público; todo lo que se sabe viene de los testigos, sobre todo del piloto Jouko Kuronen.",
@@ -81,5 +80,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Fouga_Magister_Pirkkalassa.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa ordinaria para las siete esferas de Pori: el piloto Jouko Kuronen dijo en Yle que no sabe explicar la observación «y difícilmente nadie podrá hacerlo nunca», y que entre una veintena de pilotos y controladores pudieron constatar que «al menos no eran aviones». El controlador los llamó «esos siete globos» («noi seitsemän ilmapalloa»), pero era una descripción, no una explicación. No hay expediente público ni análisis. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes an ordinary cause for the seven spheres over Pori: the pilot Jouko Kuronen told Yle that he cannot explain the sighting 'and hardly anyone ever will', and that some twenty pilots and controllers could establish that 'at least they were not aircraft'. The controller called them 'those seven balloons' ('noi seitsemän ilmapalloa'), but as a description, not an explanation. There is no public file and no analysis. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "Yle — «Porin ufohavainto puhuttaa yhä» (2009) y Elävä arkisto (2024) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://yle.fi/a/3-5971507"
+  }
 }

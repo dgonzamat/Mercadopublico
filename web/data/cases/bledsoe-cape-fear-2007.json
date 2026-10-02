@@ -14,7 +14,7 @@
     "place_en": "Cape Fear River, near Fayetteville, North Carolina"
   },
   "tier": "B",
-  "mundanoType": "fraude",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 49,
   "summary": "El 8 de enero de 2007, el contratista Chris Bledsoe y cuatro testigos —su hijo de 17 años y tres subcontratistas— reportaron cerca del río Cape Fear (Carolina del Norte) tres objetos anaranjados que parecían aterrizar, seguidos esa misma noche de un presunto encuentro con una entidad en su casa. MUFON investigó con hipnosis regresiva, evaluación psiquiátrica y un polígrafo que marcó indicios de engaño en parte de las respuestas de Bledsoe; desde entonces construyó una carrera pública de libros y documentales que incluye la afirmación —nunca corroborada por documento o funcionario nombrado de la NASA— de haber sido investigado por esa agencia durante ocho años.",
@@ -73,5 +73,11 @@
       "note": "Único proceso institucional de la NASA sobre UAP documentado públicamente en el período citado por Bledsoe; no menciona su caso.",
       "note_en": "The only publicly documented NASA institutional UAP process in the period Bledsoe cites; does not mention his case."
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa para lo que vieron los cinco testigos ni sostiene que el relato sea un fraude. B. J. Booth (UFO Casebook), sobre la investigación de MUFON, escribe que «no hay ninguna prueba por ahora» de que los testigos inventaran sus relatos o se confabularan para crear un fraude, y que la evaluadora Debbie Gioia halló a Bledsoe en su sano juicio. La única señal en contra es discutida: según el poligrafista Bob DrDak, exanalista del FBI, Bledsoe «mostró engaño en algunas de sus respuestas», un resultado que el propio Booth relativiza. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes a cause for what the five witnesses saw, nor holds that the account is a hoax. B. J. Booth (UFO Casebook), on the MUFON investigation, writes that 'there is no evidence at this time to suggest that they made up their stories, or conspired to create a hoax', and that evaluator Debbie Gioia found Bledsoe of sound mind. The only pointer against him is disputed: according to polygraph examiner Bob DrDak, a retired FBI analyst, Bledsoe 'showed deception on some of his answers', a result Booth himself puts in perspective. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "B. J. Booth — «The Fayetteville, North Carolina Encounter, January 8, 2007», UFO Casebook (reproducido en thinkaboutitdocs.com) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://www.thinkaboutitdocs.com/2007-the-fayetteville-north-carolina-encounter/"
+  }
 }

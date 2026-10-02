@@ -18,6 +18,7 @@
   "probability": 3,
   "mundanoType": "misid",
   "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
   "posterior": {
     "mundano_natural": 0.94,
     "humana_clasificada": 0.02,
@@ -73,5 +74,11 @@
       "fallbackUrl": "https://archive.org/details/1965-05-9074065-Thailand"
     }
   ],
-  "evidenceReviewed": "2026-09-27"
+  "evidenceReviewed": "2026-09-27",
+  "classBasis": {
+    "es": "Tarjeta de Blue Book, expediente «25 May 1965, Thailand»: «Se determinó que el objeto era un cohete Scout, lanzado desde Wallops Island el 16 de diciembre de 1964»; la carta de Hercules Powder Company confirma que los componentes eran parte de un motor fabricado en el Allegany Ballistics Laboratory para la «propulsión de la 4.ª etapa del vehículo Scout S-137, misión San Marco». Los papeles dicen que cayó «hacia mayo», pero el catálogo GCAT de McDowell da la reentrada de esa etapa, 1964-084B con el motor RH-75, el 7 de febrero de 1965.",
+    "en": "Blue Book card, file '25 May 1965, Thailand': 'Object was determined to be a Scout Rocket, launched from Wallops Island on 16 Dec 64'; the Hercules Powder Company letter confirms that the components were part of a motor made at the Allegany Ballistics Laboratory for '4th stage propulsion on Scout Vehicle S-137, San Marco Mission'. The papers say it fell 'sometime in May', but McDowell's GCAT catalogue gives the re-entry of that stage, 1964-084B with motor RH-75, on 7 February 1965.",
+    "source": "Proyecto Blue Book — expediente «25 May 1965, Thailand» (archive.org) · J. McDowell, GCAT satcat, 1964-084B",
+    "url": "https://archive.org/details/1965-05-9074065-Thailand"
+  }
 }

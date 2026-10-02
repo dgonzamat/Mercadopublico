@@ -92,5 +92,12 @@
     }
   ],
   "misidSubtype": "astronomico",
-  "evidenceReviewed": "2026-09-28"
+  "objectDetail": "planeta_estrella",
+  "evidenceReviewed": "2026-09-28",
+  "classBasis": {
+    "es": "El Informe FOTOCAT n.º 3 concluye sobre el avistamiento principal, el de la base argentina Decepción a las 19:42 del 3 de julio: «Muy probablemente se trata de un astro (el planeta Marte o bien una estrella —Spica o Arcturus—), como algunos de los observadores sospechan». La clase cubre esa capa. Las otras dos observaciones clave de ese día tienen otra causa según el mismo informe: la de la base chilena a las 19:20, el satélite Echo II «o, en todo caso», Spica o Arcturus, y la de las Orcadas, un fenómeno «asimilable a un meteoro». El informe advierte que subsisten contradicciones de peso en los datos y presenta sus explicaciones como las más probables, no como demostradas.",
+    "en": "FOTOCAT Report no. 3 concludes on the main sighting, at the Argentine Decepción base at 19:42 on 3 July: \"Most probably it was an astronomical body (the planet Mars or else a star—Spica or Arcturus), as some of the observers suspect\". The class covers that layer. The other two key observations of that day have another cause according to the same report: the Chilean base sighting at 19:20, the Echo II satellite \"or, in any case\", Spica or Arcturus, and the Orcadas one, a phenomenon \"comparable to a meteor\". The report warns that serious contradictions remain in the data and presents its explanations as the most probable, not as proven.",
+    "source": "V.-J. Ballester Olmos, M. Borraz, M. Janosch y Victorio Uranga — Informe FOTOCAT n.º 3, «Avistamientos OVNI en la Antártida en 1965»",
+    "url": "https://dokumen.pub/avistamientos-ovni-en-la-antartida.html"
+  }
 }

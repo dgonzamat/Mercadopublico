@@ -14,7 +14,7 @@
     "place_en": "Moshav Kadima, near Netanya"
   },
   "tier": "B",
-  "mundanoType": "fraude",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 37,
   "summary": "Entre marzo y junio de 1993, en el moshav de Kadima (cerca de Netanya, Israel), varias personas —en su mayoría mujeres, en relatos independientes— afirmaron haber tenido encuentros con una entidad alta y calva de tipo 'gris'. El episodio dejó elementos materiales verificables: depresiones circulares en un campo con residuos muestreados (material gelatinoso, líquido rojizo, depósitos de silicio) y huellas profundas que la policía rastreó varios kilómetros. La respuesta institucional fue real —unos 30 agentes de la Policía de Fronteras peinaron la zona— pero la difusión del caso quedó dominada por ufología sensacionalista (Barry Chamish), lo que erosiona su credibilidad. Es el caso israelí mejor documentado, e ilustra un punto de alta extrañeza con evidencia frágil: entra al corpus como apertura de Medio Oriente y caso-contraste, no como ancla evidencial.",
@@ -76,5 +76,11 @@
       "license": "CC BY-SA 3.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ATzoran-KadimaEntrance.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Ninguna fuente propone qué ocurrió en los encuentros: el caso lo difundió Barry Chamish y se apoya en testimonios, y no se halló un análisis escéptico, policial ni académico que nombre una causa; David Halperin solo menciona Kadima como uno de los episodios de la ufología israelí que no conoce. La sospecha de fraude existe, pero solo sobre las trazas: Chamish recoge que, «como había un bromista suelto en Kadima», muchos ufólogos israelíes temían que hubiera colocado el silicio en los círculos, y él mismo la rechaza citando a Levengood y Burke, según los cuales ese silicio sería demasiado caro para que un bromista lo esparciera. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes what happened in the encounters: the case was spread by Barry Chamish and rests on testimony, and no sceptical, police or academic analysis naming a cause was found; David Halperin only mentions Kadima as one of the episodes of Israeli ufology he does not know. A hoax suspicion exists, but only for the traces: Chamish records that \"because a prankster was loose in Kadima, many in the Israeli ufological community feared he planted the silicon in the circles\", and he himself rejects it citing Levengood and Burke, according to whom that silicon \"would be far too expensive to be spread about by a hoakster\". The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "Barry Chamish — informes sobre Kadima y las pruebas de Levengood y Burke (recopilados en greatdreams.com/chamish.htm) · David Halperin — «UFOs in Israel» (2016) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "https://archive.dni.gov/files/ODNI/documents/assessments/DOD-AARO-Consolidated-Annual-Report-on-UAP-Nov2024.pdf"
+  }
 }

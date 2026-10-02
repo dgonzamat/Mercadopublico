@@ -115,5 +115,11 @@
     "nohumano_encubierto": 0.005,
     "nohumano_abierto": 0.015,
     "indet": 0.08
+  },
+  "classBasis": {
+    "es": "Fox News, que cubrió la desclasificación del audio, recoge que en el propio debrief del Apolo 12 el fenómeno «se discutió como posiblemente ligado a rayos cósmicos o partículas pesadas que atraviesan el ojo», y OANN añade que los científicos han señalado desde hace tiempo que esos destellos se debieron probablemente a rayos cósmicos que interactúan con la retina de los astronautas en el espacio profundo. No hay una fuente que lo cierre para estos destellos en concreto: es la explicación general del fenómeno, que el debrief plantea como posibilidad.",
+    "en": "Fox News, which covered the declassification of the audio, reports that in the Apollo 12 debrief itself the phenomenon \"was discussed in the debrief as possibly tied to cosmic rays or heavy particles passing through the eye\", and OANN adds that scientists have long noted that the flashes were likely caused by cosmic rays interacting with the astronauts' retinas in deep space. No source settles it for these particular flashes: it is the general explanation of the phenomenon, which the debrief raises as a possibility.",
+    "source": "Fox News — «Pentagon declassifies Apollo 12 audio of astronauts describing unexplained streaks of light in space» (2026) · OANN (2026)",
+    "url": "https://www.foxnews.com/us/pentagon-declassifies-apollo-12-audio-astronauts-describing-unexplained-streaks-light-space"
   }
 }

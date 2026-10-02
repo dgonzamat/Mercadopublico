@@ -64,7 +64,8 @@
       "note_en": "Coverage of the UNAM hypothesis and its implications (near-impact)."
     }
   ],
-  "mundanoType": "natural",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
   "posterior": {
     "mundano_natural": 0.6,
     "humana_clasificada": 0,
@@ -81,5 +82,11 @@
     "url": "https://arxiv.org/abs/1110.2798",
     "note": "Preprint que propone que Bonilla observó fragmentos de un cometa que pasó muy cerca de la Tierra. Es la lectura científica más seria del caso, aunque no demostrada con las placas originales.",
     "note_en": "Preprint proposing that Bonilla observed fragments of a comet that passed very close to Earth. It is the most serious scientific reading of the case, though unproven against the original plates."
+  },
+  "classBasis": {
+    "es": "Manterola, Ramos Lara y Cordero proponen como hipótesis de trabajo que «lo que Bonilla observó en 1883 fue un cometa muy fragmentado, en una aproximación casi a ras de la superficie terrestre», y calculan que los fragmentos pasaron entre 538 y 8.062 km de la superficie. Pero es un preprint de arXiv de 2011 sin referencia de revista, que descansa en los datos que publicó Bonilla, y el mismo artículo recoge la otra lectura: el editor de L'Astronomie, la revista fundada por Flammarion donde Bonilla publicó en 1886, «supuso que los objetos podían ser aves, insectos o polvo que cruzaron delante del telescopio».",
+    "en": "Manterola, Ramos Lara and Cordero propose as their working hypothesis that \"what Bonilla observed in 1883 was a highly fragmented comet, in an approach almost flush to the Earth's surface\", and calculate that the fragments passed between 538 km and 8,062 km from the surface. But it is a 2011 arXiv preprint with no journal reference, resting on the results Bonilla reported, and the same paper records the other reading: the editor of L'Astronomie, the magazine founded by Flammarion where Bonilla published in 1886, \"supposed that the objects could have been birds, insects, or dust that crossed in front of the telescope\".",
+    "source": "H. Manterola, M. Ramos Lara y G. Cordero — «Interpretation of the observations made in 1883 in Zacatecas (Mexico)», arXiv:1110.2798 (2011, preprint)",
+    "url": "https://arxiv.org/abs/1110.2798"
   }
 }

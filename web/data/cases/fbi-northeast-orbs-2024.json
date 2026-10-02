@@ -18,7 +18,7 @@
     "place_en": "Northeastern US (exact location redacted)"
   },
   "tier": "B",
-  "mundanoType": "misid",
+  "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 45,
   "summary": "Siete documentos del FBI desclasificados en PURSUE Release 03 (12 jun 2026) conforman un mismo expediente: observaciones repetidas de 'orbes' en el noreste de EE.UU. durante años (~2021-2024), cerca de una residencia con ubicación redactada. Cinco FD-1057 (2024) y dos FD-302 (2026) recogen el relato de testigos —'orbes de plasma', una 'esfera roja' bajo la línea de árboles, objetos que se mueven lateralmente, captados por una cámara doméstica— y, de forma poco habitual, la corroboración por agentes especiales del FBI que observaron la actividad in situ en 2024 con plena línea de visión. Material muy redactado, sin radar ni telemetría publicados; la morfología coincide con la oleada de drones/UAS del noreste de ese periodo. Valor: testimonio cualificado y cadena FBI, no origen anómalo probado.",
@@ -136,5 +136,10 @@
       "note_en": "Department of War portal."
     }
   ],
-  "misidSubtype": "aeronave"
+  "classBasis": {
+    "es": "Ninguna fuente propone qué eran los orbes: los siete documentos del FBI (FBI-UAP-D004 a D010) recogen los testimonios, la visita de los agentes y su inspección del terreno, pero no dan una explicación, y no se halló un análisis publicado del expediente. En contra de la lectura de un dron, el propio FBI anotó tras recorrer la zona que, con la cubierta de árboles, «sería poco realista que alguien volara un dron u otra aeronave de noche sin el riesgo de chocar con las ramas», y el testigo dijo haber cotejado sus avistamientos con los datos ADS-B para determinar qué avistamientos podían ser aviones; a favor de causas ordinarias, en la inspección los agentes anotaron que tenían «línea de visión a varias casas» al este de la zona, y el informe de la visita anota que, antes de la primera observación de los agentes, el testigo señaló luces lejanas que se creyó eran casas y otras estructuras permanentes. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, AARO dio por resueltos 174 casos, todos como objetos prosaicos, entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "No source proposes what the orbs were: the FBI's seven records (FBI-UAP-D004 to D010) set down the accounts, the agents' visit and their survey of the ground, but give no explanation, and no published analysis of the file was found. Against a drone reading, the FBI itself noted after walking the area that, given the tree cover, 'it would be unrealistic for someone to fly a drone or other craft at night without the risk of crashing into tree limbs', and the witness said he had cross-referenced his sightings with ADS-B data to determine which sightings might be aircraft; in favour of ordinary causes, during the survey the agents noted they 'had line of sight to multiple homes' to the east of the area, and the report of the visit notes that, before the agents' first sighting, the witness pointed out distant lights that were believed to be homes and other permanent structures. The absence of a published analysis is not evidence against an ordinary cause: in its FY2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "FBI — FD-1057 y FD-302 del expediente «Northeastern Orb Sighting» (FBI-UAP-D004 a D010, PURSUE Release 03) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "url": "/pursue/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf"
+  }
 }

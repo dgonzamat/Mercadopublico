@@ -96,5 +96,11 @@
       "license": "Dominio público (fotografías publicadas en 1952; Ley 9.610, art. 44, protección de 70 años)",
       "fallbackUrl": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0001/BR_DFANBSB_ARX_0_0_0001_d0001de0001.pdf"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Informe Condon, caso 48: Menzel y Boyd señalaron que en una de las fotos el disco está iluminado desde la izquierda mientras la ladera parece iluminada desde la derecha, y «califican el caso sin rodeos de fraude»; el equipo de Condon concluye que «la objeción planteada por el Dr. Menzel está respaldada por nuestra ampliación independiente». La propuesta de fraude es de Menzel y Boyd; Condon solo confirma la incoherencia de la luz, y la FAB había declarado auténticas las fotos.",
+    "en": "Condon Report, case 48: Menzel and Boyd pointed out that on one of the photos the disk is illuminated from the left while the hillside appears to be illuminated from the right, and 'they flatly label the case as a hoax'; Condon's team concludes that 'the objection raised by Dr. Menzel is supported by our independent enlargement'. The hoax proposal is Menzel and Boyd's; Condon only confirms the lighting inconsistency, and the Brazilian Air Force had declared the photos genuine.",
+    "source": "Informe Condon (Universidad de Colorado, 1968) — caso 48, «Barra da Tijuca, Brazil»",
+    "url": "http://files.ncas.org/condon/text/case48.htm"
+  }
 }

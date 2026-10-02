@@ -83,5 +83,12 @@
     "note": "Reúne las distintas analíticas (USAF, Robertson Panel, Baker) y la controversia de los fotogramas faltantes con sus referencias.",
     "note_en": "Gathers the various analyses (USAF, Robertson Panel, Baker) and the missing-frames controversy with their references."
   },
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "El informe del Panel Robertson (CIA, 1953) dice que los objetos del caso de Great Falls «se creyó que probablemente fueron aviones, y las luces brillantes, sus reflejos», y que «se sospecha fuertemente que son reflejos de aviones que se sabe que estaban en la zona». Pero el panel no detalla qué aviones eran ni cómo se comprobó, y el Informe Condon, que volvió a analizar el film (caso 47), concluye lo contrario: «El caso sigue sin explicación. El análisis indica que las imágenes del film son difíciles de conciliar con aviones u otros fenómenos conocidos, aunque los aviones no pueden descartarse por completo».",
+    "en": "The Robertson Panel report (CIA, 1953) says the objects in the Great Falls case \"were believed to have probably been aircraft, and the bright lights such reflections\", and that they \"are strongly suspected of being reflections of aircraft known to have been in the area\". But the panel does not say which aircraft they were or how this was checked, and the Condon Report, which re-analysed the film (case 47), concludes otherwise: \"The case remains unexplained. Analysis indicates that the images on the film are difficult to reconcile with aircraft or other known phenomena, although aircraft cannot be entirely ruled out.\"",
+    "source": "Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects (Panel Robertson, CIA, enero 1953) — CIA-RDP79B00752A000300100010-4 · Informe Condon (1969), caso 47 (files.ncas.org/condon/text/case47.htm)",
+    "url": "https://archive.org/details/cia-readingroom-document-cia-rdp79b00752a000300100010-4"
+  }
 }

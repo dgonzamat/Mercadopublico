@@ -14,7 +14,8 @@
     "place_en": "Bank of the Pascagoula River, Mississippi"
   },
   "tier": "B",
-  "mundanoType": "fraude",
+  "mundanoType": "psicosocial",
+  "objectDetail": "paralisis_sueno",
   "epistemicStatus": "documented",
   "probability": 52,
   "summary": "La noche del 11 de octubre de 1973, Charles Hickson (42) y Calvin Parker (19) pescaban en la ribera del río Pascagoula (Misisipi) cuando, según su relato, oyeron un zumbido, vieron luces azules y un objeto ovalado del que salieron tres seres que los introdujeron en la nave. Reportaron el hecho a la base Keesler de la USAF y al sheriff del condado de Jackson. Los oficiales los dejaron solos en una sala y grabaron en secreto su conversación esperando pillarlos en una mentira; en cambio, la grabación mostró a dos hombres genuinamente aterrados, preocupados por sus familias y sin indicios de engaño. Es uno de los casos de encuentro cercano (CE4) más conocidos de EE.UU.: testimonio sincero y consistente, pero sin evidencia física.",
@@ -78,5 +79,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEast%20Pascagoula%20River%20Light.JPG"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Joe Nickell propone en el Skeptical Inquirer que los dos hombres, que quizá habían bebido, se adormecieron y que Hickson entró en un estado hipnagógico, un «sueño despierto» que «puede ir acompañado de lo que se llama 'parálisis del sueño'», y concluye que «la preponderancia de las pruebas parece no solo favorecer la hipótesis del estado hipnagógico, sino aportar corroboración»: Hickson dijo que los seres lo «paralizaron», que flotó y que le hablaban dentro de la cabeza. La clase cubre a Hickson. Parker es otra capa: según Nickell, dijo haberse desmayado al principio y «recordó» después fragmentos, lo que encaja con una folie à deux. La misma fuente recoge la lectura contraria de Philip Klass, que por las discrepancias del relato, un polígrafo hecho por un examinador inexperto y el historial de Hickson «concluyó que el caso era un fraude»; Nickell la descarta en parte porque, grabados en secreto en la oficina del sheriff, no dijeron nada incriminatorio.",
+    "en": "Joe Nickell proposes in the Skeptical Inquirer that the two men, who may have been drinking, dozed off and that Hickson entered a hypnagogic (\"waking dream\") state, which \"may be accompanied by what is called 'sleep paralysis'\", and concludes that \"the preponderance of evidence appears not only to favor the hypothesis involving the hypnagogic state but to provide corroboration as well\": Hickson said the beings \"paralyzed\" him, that he floated and that they spoke inside his head. The class covers Hickson. Parker is another layer: according to Nickell, he said he passed out at the beginning and later \"remembered\" bits and pieces, which is consistent with folie à deux. The same source records the opposite reading of Philip Klass, who from the discrepancies in the account, a polygraph by an inexperienced examiner and Hickson's record \"concluded the case was a hoax\"; Nickell discounts it partly because, secretly recorded in the sheriff's office, they made no incriminating statements.",
+    "source": "Joe Nickell — «Famous Alien Abduction in Pascagoula: Reinvestigating a Cold Case», Skeptical Inquirer 36(3), 2012",
+    "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2012/05/22164303/p12.pdf"
+  }
 }

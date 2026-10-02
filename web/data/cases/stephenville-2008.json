@@ -71,5 +71,12 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADowntown%20Stephenville%202024.jpg"
     }
   ],
-  "misidSubtype": "aeronave"
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "El Skeptical Inquirer recoge la investigación del astrónomo y piloto retirado de la USAF James McGaha: la FAA le confirmó que dos grupos de cuatro F-16 del 457.º Escuadrón de Caza entraron esa tarde en el área de operaciones militares de Brownwood, y McGaha concluye que «los observadores no entrenados no vieron más que F-16 y bengalas». La propia Air Force Reserve Command rectificó su negativa inicial: «diez F-16 del 457.º Escuadrón de Caza realizaban operaciones de entrenamiento de 6 a 8 de la tarde» en esa zona, que incluye el cielo del condado de Erath. Pero en el Dallas Morning News el consultor de aviación Jay Miller objetó que las bengalas no arden en silencio y que los cazas que las sueltan van con posquemador, lo que choca con los testigos que describen un objeto silencioso, y McGaha no explica la traza de radar del informe de MUFON, que considera ruido.",
+    "en": "The Skeptical Inquirer reports the investigation by astronomer and retired USAF pilot James McGaha: the FAA confirmed to him that two groups of four F-16s from the 457th Fighter Squadron entered the Brownwood Military Operating Area that evening, and McGaha concludes that \"the untrained witnesses/observers were seeing nothing more than F-16s and flares\". Air Force Reserve Command itself reversed its initial denial: \"Ten F-16s from the 457th Fighter Squadron were performing training operations from 6 to 8 p.m.\" in that area, which includes the airspace above Erath County. But in the Dallas Morning News aviation consultant Jay Miller objected that flares do not burn silently and that jets dropping them fly in afterburner, which clashes with witnesses describing a silent object, and McGaha does not explain the MUFON radar track, which he dismisses as noise.",
+    "source": "Skeptical Inquirer 33(1), 2009 — «The Stephenville Lights: What Actually Happened» (investigación de James McGaha) · Dallas Morning News, 24 ene 2008, reproducido en ufoevidence.org/cases/case1163.htm (comunicado de la Air Force Reserve Command y objeción del consultor Jay Miller)",
+    "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2009/01/22164446/p56.pdf"
+  }
 }
