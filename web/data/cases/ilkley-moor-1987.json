@@ -14,7 +14,7 @@
     "place_en": "Ilkley Moor, West Yorkshire, England"
   },
   "tier": "B",
-  "mundanoType": "fraude",
+  "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 34,
   "summary": "La mañana del 1 de diciembre de 1987, un ex policía al que la literatura llama 'Philip Spencer' (seudónimo) dijo haber cruzado Ilkley Moor, en West Yorkshire, y haber fotografiado a un humanoide verde de ~1,2 m con cabeza grande y brazos largos que le hizo un gesto y huyó. Al seguirlo vio una cúpula plateada elevarse y desaparecer; su brújula apuntaba al sur y, al llegar a Ilkley, descubrió ~2 horas de 'tiempo perdido'. La única foto, muy borrosa, fue examinada por el laboratorio Kodak de Hemel Hempstead sin hallar manipulación. Bajo hipnosis (marzo 1988) Spencer 'recordó' una abducción con examen médico y un film apocalíptico. Investigado por Peter Hough y Jenny Randles, sigue sin resolverse: para los escépticos es un montaje (recorte/persona); su valor es de caso testimonial icónico, no de evidencia.",
@@ -67,6 +67,18 @@
       "url": "https://www.ufocasebook.com/ilkleymoor.html",
       "note": "Relato detallado del testigo, la regresión hipnótica y la cronología de la investigación.",
       "note_en": "Detailed account of the witness, the hypnotic regression and the chronology of the investigation."
+    },
+    {
+      "name": "Wikipedia — List of UFO-related hoaxes (Ilkley Moor; cita a P. Vidal, SOBEPS Flash n.º 1, 1990)",
+      "url": "https://en.wikipedia.org/wiki/List_of_UFO-related_hoaxes",
+      "note": "Recoge la explicación del Daily Star (2 jul 1989): un agente de seguros fotografiado sin saberlo.",
+      "note_en": "Records the Daily Star's explanation (2 Jul 1989): an insurance broker photographed unawares."
+    },
+    {
+      "name": "Gross, P. — «The Ilkley Moor encounter of the 3rd kind, 1987», UFOs at close sight",
+      "url": "https://ufologie.patrickgross.org/htm/ilkleymoor.htm",
+      "note": "Recoge que Hough y Randles atribuyeron la explicación del periódico a una broma de redacción.",
+      "note_en": "Records that Hough and Randles traced the newspaper's explanation to a newsroom joke."
     }
   ],
   "documents": [
@@ -79,5 +91,13 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AStream%20on%20Ilkley%20Moor.jpg"
     }
-  ]
+  ],
+  "misidSubtype": "luces_tierra",
+  "objectDetail": "persona",
+  "classBasis": {
+    "es": "El Daily Star (2 jul 1989) presentó la foto como un engaño y sostuvo que el «alienígena» era en realidad un agente de seguros que cruzaba el páramo para visitar a sus clientes sin saber que lo fotografiaban; lo recoge Wikipedia («List of UFO-related hoaxes»), que cita a Patrick Vidal, «L'humanoïde d'Ilkley Moor, un agent d'assurance ?» (SOBEPS, Flash n.º 1, feb 1990), donde los investigadores belgas se preguntan cómo pudieron dejarse engañar investigadores experimentados por «un canular o una confusión tan banal». Pero el texto de Vidal no se pudo leer, y según Patrick Gross los investigadores Peter Hough y Jenny Randles rastrearon esa «explicación» hasta una broma contada en la redacción que el periódico imprimió tal cual; además, el laboratorio de Kodak no halló manipulación en la foto.",
+    "en": "The Daily Star (2 Jul 1989) presented the photograph as a hoax, saying the 'alien' 'was in fact an insurance broker, unsuspecting he was being photographed, while he visited his clientele in the outskirts and cut through the hills'; this is reported by Wikipedia ('List of UFO-related hoaxes'), which cites Patrick Vidal, 'L'humanoïde d'Ilkley Moor, un agent d'assurance ?' (SOBEPS, Flash no. 1, Feb 1990), where the Belgian investigators ask how 'des enquêteurs expérimentés' could have been taken in by 'un aussi banal canular ou méprise'. But Vidal's text could not be read, and according to Patrick Gross investigators Peter Hough and Jenny Randles traced that 'explanation' to a joke told in the newsroom, which 'the paper had simply printed ... out as \"the explanation\"'; moreover, the Kodak laboratory found no tampering in the photograph.",
+    "source": "Wikipedia — «List of UFO-related hoaxes» (cita a P. Vidal, SOBEPS Flash n.º 1, feb 1990, sobre el Daily Star del 2 jul 1989) · Gross, P. — «The Ilkley Moor encounter of the 3rd kind, 1987», UFOs at close sight",
+    "url": "https://en.wikipedia.org/wiki/List_of_UFO-related_hoaxes"
+  }
 }

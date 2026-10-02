@@ -78,5 +78,11 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAztec%20New%20Mexico%20City%20Hall.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "J. P. Cahn, «Flying Saucer Swindlers» (True, agosto de 1956), citado por SMU Physics: «dos hombres, Silas M. Newton y Leo A. GeBauer, fabricaron el fraude y se lo endosaron a un autor crédulo»; en 1952 Cahn había identificado a GeBauer como el «Dr. Gee» del libro de Frank Scully, y las varillas del supuesto material casi indestructible resultaron ser separadores de antena de televisión. Cahn reconoce que en 1952 no pudo probar sus sospechas sobre el motivo: «lo que no puedes probar no lo publicas».",
+    "en": "J. P. Cahn, 'Flying Saucer Swindlers' (True, August 1956), quoted by SMU Physics: 'two men - Silas M. Newton and Leo A. GeBauer - had manufactured the hoax and fobbed it off on a gullible author'; in 1952 Cahn had identified GeBauer as the 'Dr. Gee' of Frank Scully's book, and the rods of supposedly near-indestructible material turned out to be television antenna separators. Cahn acknowledges that in 1952 they 'couldn't prove our suspicions' about the motive: 'what you can't prove you don't print'.",
+    "source": "SMU Physics — «Flying Saucers and Frank Scully», resumen de J. P. Cahn, True (sep 1952 y ago 1956)",
+    "url": "https://www.physics.smu.edu/pseudo/UFOs/Scully/"
+  }
 }

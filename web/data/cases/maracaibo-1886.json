@@ -61,6 +61,7 @@
     }
   ],
   "mundanoType": "natural",
+  "objectDetail": "atmosferico",
   "posterior": {
     "mundano_natural": 0.55,
     "humana_clasificada": 0,
@@ -77,5 +78,11 @@
     "url": "https://www.science-frontiers.com/sf132/sf132p11.htm",
     "note": "Reproducción del informe consular original publicado en Scientific American, con comentario dentro de la literatura de anomalías.",
     "note_en": "Reproduction of the original consular report published in Scientific American, with commentary within the anomalies literature."
+  },
+  "classBasis": {
+    "es": "El físico Anatoly Nikitin, en «Ball lightning and unidentified flying objects (UFOs)»: el daño por radiación a quienes estaban cerca es un efecto de los «grandes rayos en bola», y «el primer caso ocurrió en 1886 en Venezuela». El propio cónsul Cowgill presentó el suceso como una «extraña ocurrencia meteorológica», una más de las «excentricidades eléctricas». Pero el mismo informe de Cowgill dice que después «no se pudo observar rastro alguno de rayo» en la casa y que no hubo detonación, solo el zumbido; y Nikitin sostiene además que los propios ovnis son rayos en bola, una tesis minoritaria.",
+    "en": "Physicist Anatoly Nikitin, in 'Ball lightning and unidentified flying objects (UFOs)': radiation damage to people nearby is an effect of 'large ball lightning', and 'The first occurred in 1886 in Venezuela.' Consul Cowgill himself presented the event as a 'strange meteorological occurrence', one more of the 'electrical eccentricities'. But Cowgill's same report says 'No trace of lightning could afterward be observed in any part of the building' and that there was no detonation, only the hum; and Nikitin also holds that UFOs themselves are ball lightning, a minority thesis.",
+    "source": "Nikitin, A. I. — «Ball lightning and unidentified flying objects (UFOs)», Physics & Astronomy International Journal (MedCrave) · Cowgill, W., Scientific American 55:389 (1886), vía Science Frontiers",
+    "url": "https://medcraveonline.com/PAIJ/ball-lightning-and-unidentified-flying-objects-ufos.html"
   }
 }

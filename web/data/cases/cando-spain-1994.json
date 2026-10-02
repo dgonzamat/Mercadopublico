@@ -15,6 +15,7 @@
   },
   "tier": "B",
   "mundanoType": "natural",
+  "objectDetail": "atmosferico",
   "epistemicStatus": "documented",
   "probability": 28,
   "summary": "En la mañana del 18 de enero de 1994, vecinos de Cando, en Galicia (España), vieron una bola de fuego en el cielo durante casi un minuto. En una ladera cercana apareció un socavón con unos 200 m³ de terreno arrancado y árboles desplazados 100 m, pero sin fragmentos ni meteorito. Descrito como un 'pequeño Tunguska', se barajó un meteoro o un reventón de gas subterráneo.",
@@ -73,5 +74,11 @@
       "license": "CC BY 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AChurche%20of%20San%20Tirso%20de%20Cando%2C%20Cando%2C%20Outes%2C%20A%20coru%C3%B1a.jpg"
     }
-  ]
+  ],
+  "classBasis": {
+    "es": "Docobo, Spalding, Ceplecha y otros, Meteoritics & Planetary Science 33 (1998): por los avistamientos «se concluye que el objeto no era una bola de fuego meteórica (bólido)»; como no aparecieron meteoritos ni materiales de choque, «un impacto es muy improbable», y proponen una erupción de gases de la tierra que abrió el cráter, cuya columna, al interactuar con la electricidad atmosférica, produjo la bola de fuego observada. La presentan como «una posible explicación», no como una identificación.",
+    "en": "Docobo, Spalding, Ceplecha et al., Meteoritics & Planetary Science 33 (1998): 'From visual sightings, it is concluded that the object wasn't a meteoric fireball (bolide)'; with no meteorites or shocked materials recovered, 'an impact is very improbable', and they hypothesize 'an eruption of earth gases to create the crater, with the rising gas plume then interacting with atmospheric electricity to produce the propagating fireball that was observed'. They offer it as 'A possible explanation', not an identification.",
+    "source": "Docobo, J. A. et al. — «Investigation of a bright flying object over northwest Spain, 1994 January 18», Meteoritics & Planetary Science 33 (1998): 57-64",
+    "url": "https://doi.org/10.1111/j.1945-5100.1998.tb01607.x"
+  }
 }

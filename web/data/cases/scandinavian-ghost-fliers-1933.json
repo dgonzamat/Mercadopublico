@@ -66,5 +66,12 @@
     "nohumano_abierto": 0.02,
     "indet": 0.23
   },
-  "misidSubtype": "aeronave"
+  "misidSubtype": "astronomico",
+  "objectDetail": "planeta_estrella",
+  "classBasis": {
+    "es": "Clas Svahn (UFO-Sverige), «Spökflygarens vinter»: «la estrella Sirio y el eternamente malinterpretado planeta Venus confundieron a mucha gente»; la mayoría no llegó a ver aviones, sino luces intensas fáciles de tomar por el aviador misterioso, y los diarios hablaron de psicosis colectiva. Pero la teoría del momento eran contrabandistas de alcohol rumbo a Noruega, y el general Reuterswärd sostuvo que «personas fidedignas, militares y civiles» habían visto aviones, de modo que hubo vuelos reales. El propio Svahn concluye que hoy casi todo apunta a «vuelos de espionaje alemanes desde un buque catapulta frente a la costa noruega, combinados con una gran dosis de pura psicosis de guerra»: esos vuelos son la lectura adversaria y quedan fuera de la clase, que cubre solo las luces.",
+    "en": "Clas Svahn (UFO-Sweden), 'Spökflygarens vinter': 'Stjärnan Sirius och den evigt missförstådda planeten Venus förvillade många människor' (the star Sirius and the eternally misunderstood planet Venus led many people astray); most never saw aircraft, only strong lights easily taken for the mysterious flier, and the papers spoke of mass psychosis. But the theory of the day was liquor smugglers bound for Norway, and General Reuterswärd held that 'Flygplan hava iakttagits av trovärdiga personer, militära såväl som civila' (aircraft have been observed by credible persons, military and civilian), so that real flights took place. Svahn himself concludes: 'I dag tyder dock det mesta på att det rörde sig om tyska spionflygningar från ett katapultfartyg utanför norska kusten kombinerat med en stor portion ren krigspsykos' (today most evidence points to German spy flights from a catapult ship off the Norwegian coast, combined with a large dose of pure war psychosis). Those flights are the adversary reading and fall outside the class, which covers only the lights.",
+    "source": "Svahn, C. — «Spökflygarens vinter», UFO-Sverige",
+    "url": "https://www.ufo.se/index.php/ufo-historia/1344-spokflygarens-vinter"
+  }
 }
