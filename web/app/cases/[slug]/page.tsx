@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { cases, getPattern, getEntityMorphology, TOTAL_CASES } from "@/lib/data";
 import { CATEGORY_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
-import { PROSAIC_CLASSES, prosaicKey, objectDetailDef } from "@/lib/meceClasses";
+import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, MECE_CLASSES } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
@@ -1183,10 +1183,32 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
   const cls = pk ? PROSAIC_CLASSES.find((k) => k.key === pk) : undefined;
   const detail = pk ? objectDetailDef(pk, c.objectDetail) : undefined;
   const b = c.classBasis;
+  // La clase prosaica cubre solo la parte mundana del reparto. Cuando otra
+  // narrativa pesa más (Roswell: 55 % programa clasificado frente a 22 %
+  // mundano), mostrarla sola como «la explicación más plausible» se lee como el
+  // veredicto del caso. Se antepone la narrativa dominante y se rotula la clase
+  // con el peso de la capa que explica.
+  const post = posteriorFor(c);
+  const [topId, topP] = (Object.entries(post) as [string, number][]).sort((x, y) => y[1] - x[1])[0];
+  const topDef = MECE_CLASSES.find((k) => k.id === topId);
+  const mund = Math.round(100 * post.mundano_natural);
+  const mundaneLeads = topId === "mundano_natural";
   return (
     <div className="space-y-2 border-l-2 border-text pl-4">
+      {!mundaneLeads && topDef && (
+        <p className="text-sm text-text">
+          <span className="font-semibold">
+            <T locale={locale} es="Lectura dominante del reparto: " en="Dominant reading of the partition: " />
+          </span>
+          <T locale={locale} es={`${topDef.label} (${Math.round(100 * topP)} %)`} en={`${topDef.labelEn} (${Math.round(100 * topP)}%)`} />
+        </p>
+      )}
       <p className="font-mono text-xs uppercase tracking-widest text-muted">
-        <T locale={locale} es="Explicación conocida más plausible" en="Most plausible known explanation" />
+        {mundaneLeads ? (
+          <T locale={locale} es={`Explicación conocida más plausible · ${mund} %`} en={`Most plausible known explanation · ${mund}%`} />
+        ) : (
+          <T locale={locale} es={`Si fue algo mundano (${mund} %), lo más plausible`} en={`If it was something mundane (${mund}%), most plausibly`} />
+        )}
       </p>
       <p className="text-lg font-semibold text-text">
         {cls ? (
