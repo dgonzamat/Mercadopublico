@@ -4,6 +4,7 @@ import {
 } from "@/app/cases/[slug]/page";
 import { cases } from "@/lib/data";
 import { esMeta } from "@/lib/seo";
+import { CASE_ALIASES } from "@/lib/caseAliases";
 
 /**
  * Detalle de caso en español (/es/cases/[slug]/). Reutiliza el componente y los
@@ -17,6 +18,8 @@ export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
 }) {
   const params = await props.params;
+  const alias = CASE_ALIASES[params.slug];
+  if (alias) return { title: "Caso fusionado", alternates: { canonical: `/es/cases/${alias}/` }, robots: { index: false, follow: true } };
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Caso no encontrado" };
   // `seoTitle`/`seoDescription` están en ESPAÑOL: esta es su ruta. Antes no se

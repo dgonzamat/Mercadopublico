@@ -19,9 +19,10 @@ import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { linkCaseRefs } from "@/lib/caseRefs";
+import { CASE_ALIASES } from "@/lib/caseAliases";
 
 export function generateStaticParams() {
-  return cases.map((c) => ({ slug: c.id }));
+  return [...cases.map((c) => c.id), ...Object.keys(CASE_ALIASES)].map((slug) => ({ slug }));
 }
 
 // Mapa slug → nombre para el title/aria-label de las referencias cruzadas
@@ -55,6 +56,8 @@ const BACKLINKS = (() => {
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
+  const alias = CASE_ALIASES[params.slug];
+  if (alias) return { title: "Case moved", alternates: { canonical: `/cases/${alias}/` }, robots: { index: false, follow: true } };
   const c = cases.find((x) => x.id === params.slug);
   if (!c) return { title: "Case not found" };
   const path = `/cases/${c.id}/`;
@@ -131,6 +134,18 @@ export async function CaseDetailPage(
 ) {
   const params = await props.params;
   const locale = props.locale ?? "en";
+  const alias = CASE_ALIASES[params.slug];
+  if (alias) {
+    // Ficha fusionada: la ruta relativa conserva el basePath y el prefijo /es.
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-16">
+        <meta httpEquiv="refresh" content={`0; url=../${alias}/`} />
+        <a href={`../${alias}/`} className="text-accent underline">
+          <T es="Este caso se fusionó con otra ficha. Ir a la ficha vigente." en="This case was merged into another entry. Go to the current entry." locale={locale} />
+        </a>
+      </div>
+    );
+  }
   const c = cases.find((x) => x.id === params.slug);
   if (!c) notFound();
 
