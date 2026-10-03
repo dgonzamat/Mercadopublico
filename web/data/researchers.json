@@ -1907,23 +1907,35 @@
     "section": "B",
     "section_label": "Informantes / denunciantes",
     "credentials": "Ex-USAF Major + NRO + NGA + ICIG officially designated 'credible and urgent'",
-    "bio_short": "En julio de 2023 declaró bajo juramento ante el Comité de Supervisión de la Cámara de Representantes que existen programas secretos de recuperación de naves de origen no humano, junto con restos biológicos no humanos. Su testimonio se apoya en fuentes indirectas —más de cuarenta informantes— y fue calificado de 'creíble y urgente' por el inspector general de la comunidad de inteligencia. La desclasificación PURSUE de 2026 surgió en parte como respuesta a esa declaración.",
+    "bio_short": "En julio de 2023 declaró bajo juramento ante el Comité de Supervisión de la Cámara de Representantes que existen programas secretos de recuperación de naves de origen no humano, junto con restos biológicos no humanos. Su testimonio se apoya en fuentes indirectas —más de cuarenta informantes— y fue calificado de 'creíble y urgente' por el inspector general de la comunidad de inteligencia. La desclasificación PURSUE de 2026 surgió en parte como respuesta a esa declaración. El 30 de septiembre de 2026, en el episodio 2560 de The Joe Rogan Experience, fue más lejos: dijo haber visto un vídeo contemporáneo de una recuperación con cadáveres de aspecto muy humano y piel muy pálida, y relató que, tras un choque entre grupos no humanos, se hallaron grises muertos y seres reptilianos vivos de más de dos metros a los que el personal estadounidense habría disparado. Admitió que nunca vio a esos reptilianos —el relato se lo atribuye a un amigo— y no aportó nombres ni documentos verificables.",
     "works": [
       {
         "year": 2023,
         "title": "Congressional Testimony (House Oversight)",
-        "contribution": "Disclosure formal de programas SAP no acknowledged",
+        "contribution": "Denuncia formal de programas de acceso especial no reconocidos",
         "contribution_en": "Formal disclosure of unacknowledged special-access programs"
+      },
+      {
+        "year": 2026,
+        "title": "The Joe Rogan Experience #2560",
+        "contribution": "Dice haber visto vídeo de cadáveres en una recuperación y relata de segunda mano reptilianos abatidos por personal estadounidense",
+        "contribution_en": "Says he saw video of cadavers at a retrieval and relays second-hand an account of reptilians shot by U.S. personnel"
       }
     ],
     "section_label_en": "Insiders / whistleblowers",
     "credentials_en": "Former USAF Major + NRO + NGA + officially designated 'credible and urgent' by the ICIG",
-    "bio_short_en": "In July 2023 he testified under oath before the House Oversight Committee that secret programs exist to recover craft of non-human origin, along with non-human biological remains. His testimony rests on indirect sources —more than forty informants— and was deemed 'credible and urgent' by the intelligence community's inspector general. The 2026 PURSUE disclosure arose in part as a response to that statement.",
+    "bio_short_en": "In July 2023 he testified under oath before the House Oversight Committee that secret programs exist to recover craft of non-human origin, along with non-human biological remains. His testimony rests on indirect sources —more than forty informants— and was deemed 'credible and urgent' by the intelligence community's inspector general. The 2026 PURSUE disclosure arose in part as a response to that statement. On 30 September 2026, on episode 2560 of The Joe Rogan Experience, he went further: he said he had watched contemporary video of a retrieval showing very human-looking cadavers with very pale skin, and recounted that after a clash between non-human groups dead grays and living reptilian beings over seven feet tall were found, and that U.S. personnel shot them. He acknowledged he never saw those reptilians himself —he attributes the account to a friend— and offered no names or verifiable documents.",
     "sources": [
       {
         "name": "Testimonio bajo juramento de David Grusch, Comité de Supervisión de la Cámara (26 jul 2023)",
         "note": "Transcripción oficial del Congreso.",
         "note_en": "Official congressional transcript."
+      },
+      {
+        "name": "IBTimes UK — 'David Grusch Says He Never Saw a Reptilian Himself but Claims US Personnel Shot Them After a UFO Crash' (3 oct 2026)",
+        "url": "https://www.ibtimes.co.uk/david-grusch-says-he-never-saw-reptilian-himself-claims-us-personnel-shot-them-after-ufo-crash-1823425",
+        "note": "Cobertura del episodio 2560 de The Joe Rogan Experience (30 sep 2026); recoge que el relato de los reptilianos es de segunda mano.",
+        "note_en": "Coverage of The Joe Rogan Experience episode 2560 (30 Sep 2026); records that the reptilian account is second-hand."
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Grusch%20giving%20testimony%20on%2026%20July%202023%20before%20the%20US%20House%20Subcommittee%20on%20National%20Security%20the%20Border%20and%20Foreign%20Affairs.png?width=400",
