@@ -31,13 +31,13 @@
     "Primeros reportes de la oleada: 26 de febrero de 1946, por observadores finlandeses (antes del pico sueco de verano).",
     "~2.000 avistamientos en la región durante 1946 según compilaciones posteriores (picos 9 y 11 de agosto); el Estado Mayor sueco contaba cerca de mil informes hasta el 1 de octubre.",
     "Comunicado del Estado Mayor sueco (10 oct 1946, en la NZZ): ~80 % meteoros; casos concretos inequívocos sin explicar; ninguna trayectoria de proyectil confirmada y ningún resto de material en los supuestos impactos.",
-    "Encuadre honesto: explicación más discutida = pruebas soviéticas de misiles capturados, rechazada por falta de fragmentos reconocibles; sin conclusión."
+    "La explicación más discutida, pruebas soviéticas de misiles capturados, quedó sin confirmar: el Estado Mayor sueco no estableció trayectorias de proyectil ni halló restos de material; sin conclusión."
   ],
   "evidence_en": [
     "Wave's first reports: February 26, 1946, by Finnish observers (before the Swedish summer peak).",
     "~2,000 sightings in the region during 1946 per later compilations (peaks Aug 9 and 11); the Swedish Defence Staff counted about a thousand reports up to 1 October.",
     "Swedish Defence Staff communiqué (10 Oct 1946, in the NZZ): ~80% meteors; individual unambiguous cases unexplained; no confirmed projectile track and no material remains at the alleged impact sites.",
-    "Honest framing: most-discussed explanation = Soviet tests of captured missiles, rejected for lack of recognizable fragments; inconclusive."
+    "The most-discussed explanation, Soviet tests of captured missiles, remained unconfirmed: the Swedish General Staff established no projectile trajectories and found no material remains; inconclusive."
   ],
   "sources": [
     {
@@ -91,5 +91,6 @@
     "en": "Swedish Defence Staff communiqué of 10 October 1946, as reported by the NZZ: of the roughly one thousand reports received by 1 October, \"about 80 percent concerned purely luminous phenomena that can very probably be traced to a celestial origin (meteors and meteorites)\". It is the assessment of the wave the Finnish reports were part of, not a Finnish analysis, which has not been found; and the same communiqué admits that in individual cases there were unambiguous observations it does not explain. German original: «ungefähr 80 Prozent reine Lichtphänomene betroffen, die mit großer Wahrscheinlichkeit auf himmlischen Ursprung (Meteore und Meteoriten) zurückgeführt werden könnten».",
     "source": "Neue Zürcher Zeitung, 11 oct 1946, «Die Raketengeschosse über Schweden. Bericht des schwedischen Generalstabs» (original en alemán)",
     "url": "https://archive.org/details/neue-zurcher-zeitung-numero-1822-11-ottobre-1946-ghost-rocket"
-  }
+  },
+  "evidenceReviewed": "2026-10-03"
 }
