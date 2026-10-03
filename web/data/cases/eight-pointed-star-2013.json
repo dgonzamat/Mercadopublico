@@ -18,7 +18,7 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "probability": 43,
+  "probability": 30,
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
   "classBasis": {
@@ -28,12 +28,12 @@
     "url": "https://www.metabunk.org/threads/pr38-the-chandelier-ufo.13307/"
   },
   "posterior": {
-    "mundano_natural": 0.42,
+    "mundano_natural": 0.55,
     "humana_clasificada": 0.1,
     "adversaria": 0.05,
-    "nohumano_encubierto": 0.08,
-    "nohumano_abierto": 0.05,
-    "indet": 0.3
+    "nohumano_encubierto": 0.06,
+    "nohumano_abierto": 0.04,
+    "indet": 0.2
   },
   "summary": "En 2013, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área de responsabilidad del Comando Central (CENTCOM) registró un minuto y 46 segundos de un patrón de contraste que la AARO describe como 'una estrella de ocho puntas con brazos de largo alternado'. El objeto deja una estela visible al moverse y desaparece del encuadre tras un corte aparente en el metraje, para reaparecer y salir finalmente por la esquina superior izquierda. El propio reportante no dejó ninguna descripción oral ni escrita de lo observado — todo lo que se sabe proviene de la lectura instrumental de la AARO sobre el video, publicada en 2026, trece años después del hecho.",
   "summary_en": "In 2013, an infrared sensor aboard a U.S. military platform within U.S. Central Command's (CENTCOM) area of responsibility recorded one minute and 46 seconds of a contrast pattern AARO describes as 'an eight-pointed star with arms of alternating length.' The object leaves a visible trail as it moves and disappears from frame after an apparent cut in the footage, reappearing before finally exiting through the top left corner. The original reporter left no oral or written description of the observation — everything known comes from AARO's instrumental reading of the video, published in 2026, thirteen years after the fact.",
