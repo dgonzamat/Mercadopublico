@@ -148,6 +148,7 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "helicoptero", label: "Helicóptero", labelEn: "Helicopter" },
     { key: "dron", label: "Dron", labelEn: "Drone" },
     { key: "globo", label: "Globo", labelEn: "Balloon" },
+    { key: "desechos_aereos", label: "Desechos aéreos (globo de fiesta, bolsa, farolillo)", labelEn: "Airborne debris (party balloon, bag, sky lantern)" },
   ],
   espacial: [
     { key: "cohete_misil", label: "Cohete o misil", labelEn: "Rocket or missile" },
