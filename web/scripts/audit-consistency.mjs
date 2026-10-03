@@ -1850,11 +1850,15 @@ if (fs.existsSync(regionsPath)) {
 // primaria exageraban el misterio. Regla: clasificar después de leer la
 // evidencia, y dejar constancia en `evidenceReviewed`. WARN agregado por tier
 // (mismo patrón que E13/E21/E26): el backlog queda medible y no crece.
+// Los documentos quedan fuera: su posterior es el «lean» evidencial (a qué
+// narrativa inclina el documento), no una clasificación de un objeto, y no
+// entra en ningún agregado. Contarlos inflaba el backlog con 66 fichas que
+// no tienen nada que contrastar (decisión del dueño, oct 2026).
 {
   const byTier = { S: 0, A: 0, B: 0 };
   let pending = 0, reviewed = 0;
   for (const c of cases) {
-    if (!c.posterior) continue;
+    if (!c.posterior || c.category === "document") continue;
     if (c.evidenceReviewed) { reviewed++; continue; }
     pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
   }
