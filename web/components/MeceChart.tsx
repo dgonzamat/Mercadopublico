@@ -8,7 +8,7 @@ import {
   PROSAIC_CLASSES,
   type ScoredCase,
 } from "@/lib/meceModel";
-import { objectDetailDef, prosaicKey } from "@/lib/meceClasses";
+import { objectDetailDef, prosaicKey, shortLabel } from "@/lib/meceClasses";
 import type { MisidSubtype } from "@/lib/types";
 import type { Posterior } from "@/lib/types";
 
@@ -181,12 +181,15 @@ export function CasePosterior({
   objectDetail?: string;
   locale: "es" | "en";
 }) {
-  const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }]);
+  // keepIndet: el «indeterminado» se muestra como tal. Repartirlo entre las
+  // demás narrativas inflaba la clase prosaica (Min Min: 97 % aquí frente al
+  // 85 % del encabezado y el 15 % «sin explicar» de la misma ficha).
+  const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }], { keepIndet: true });
   const pk = prosaicKey(mundanoType, misidSubtype);
   const detail = objectDetailDef(pk, objectDetail);
   const withDetail = (r: { key: string; label: string; labelEn: string }) =>
     detail && r.key === pk
-      ? { es: `${r.label} · ${detail.label}`, en: `${r.labelEn} · ${detail.labelEn}` }
+      ? { es: `${r.label} · ${shortLabel(detail.label)}`, en: `${r.labelEn} · ${shortLabel(detail.labelEn)}` }
       : { es: r.label, en: r.labelEn };
   const m = rows[0];
   // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los

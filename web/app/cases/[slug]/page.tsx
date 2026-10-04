@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { cases, getPattern, getEntityMorphology, TOTAL_CASES } from "@/lib/data";
 import { CATEGORY_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
-import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, MECE_CLASSES } from "@/lib/meceClasses";
+import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, MECE_CLASSES, shortLabel } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
@@ -1189,12 +1189,6 @@ function KeyFact({
 /** Qué fue más plausiblemente, en términos prosaicos, y por qué: la clase
  *  (mundanoType + misidSubtype + objectDetail) y la frase de la fuente que la
  *  fija (`classBasis`). Sin la frase, lo dice: la clase aún no se contrastó. */
-// Las subclases traen entre paréntesis toda su gama («Óptico (espejismo,
-// refracción, propagación anómala del radar)»), útil en el filtro pero engañosa
-// en una ficha concreta: las luces de Min Min de 1838 no tuvieron radar. La
-// ficha muestra solo el nombre; el «Por qué» dice qué fue.
-const shortLabel = (label: string) => label.replace(/\s*\([^)]*\)\s*$/, "");
-
 function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "en" }) {
   if (!c.mundanoType && !c.classBasis) return null;
   const pk = c.mundanoType ? prosaicKey(c.mundanoType, c.misidSubtype) : undefined;
