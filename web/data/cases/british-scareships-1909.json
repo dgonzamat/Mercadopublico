@@ -102,5 +102,16 @@
     "source": "Vergano, D. — «Fear of Floating», Air & Space/Smithsonian (2009) · Holman, B. — «Post-blogging the 1909 scareships: thoughts and conclusions», Airminded (11 jun 2009) · Venus Phase Cycle (alabe.com): conjunción superior de Venus, 28 abr 1909",
     "url": "https://www.smithsonianmag.com/air-space-magazine/fear-of-floating-137226392/"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "src": "/pursue/Punch_1909-06-02_p379_phantom-airships.jpg",
+      "type": "image",
+      "title": "Punch, 2 de junio de 1909, p. 379: «In phantom airships Great Britain is now facile princeps» (Charivaria) y la sátira «The New Terror», con dispositivos para protegerse de los dirigibles",
+      "title_en": "Punch, 2 June 1909, p. 379: \"In phantom airships Great Britain is now facile princeps\" (Charivaria) and the satire \"The New Terror\", with devices for protection against airships",
+      "source": "Punch, or the London Charivari, vol. 136, vía archive.org",
+      "license": "Dominio público · publicado en 1909",
+      "fallbackUrl": "https://archive.org/details/sim_punch_1909-06-02_136"
+    }
+  ]
 }
