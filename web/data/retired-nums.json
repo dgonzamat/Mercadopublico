@@ -1,0 +1,21 @@
+{
+  "_doc": "Números de caso retirados por fusión o borrado. Un num nunca se reasigna. audit-consistency.mjs (E45) exige que todo num ausente entre 1 y max(num) figure aquí. Detalle en docs/registros.md.",
+  "retired": {
+    "65": "pampa-joya-1980 → la-joya-arequipa-1980",
+    "79": "nsa-umbra-foia-2026",
+    "111": "fbi-occupant-memos-1960s",
+    "126": "switzerland-air-intel-1954",
+    "129": "afghanistan-isr-disc-2020 → spherical-afghanistan-2020",
+    "131": "indonesia-tniau-salatun",
+    "145": "china-ufo-research-1979",
+    "189": "geipan-cnes-1977 → geipan-gepan-france",
+    "221": "campeche-fam-2004",
+    "290": "pursue-rocketry-reference-docs",
+    "291": "state-dept-misc-uap-cables",
+    "295": "fbi-northeast-orbs-2024 → northeastern-us-orbs-2021-2025",
+    "299": "gov-misc-uap-records-1949-1998",
+    "329": "campeche-2004",
+    "379": "fbi-bryant-inquiry-1974",
+    "383": "ireland-foi-records-2023"
+  }
+}

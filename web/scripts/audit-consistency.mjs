@@ -1893,6 +1893,39 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9za3. RULE E45: números retirados registrados ──────────────────────
+//
+// `num` es un identificador estable: al fusionar o borrar una ficha su número
+// se retira y nunca se reasigna. El registro de retirados vivía solo en la
+// prosa de docs/registros.md y se pudrió: listaba 2 y había 16, porque catorce
+// fusiones y borrados nunca se anotaron (oct 2026). Sin el registro, «max(num)
+// − nº de fichas» deja de ser una comprobación. La lista legible por máquina es
+// data/retired-nums.json; esta regla exige que todo num ausente entre 1 y
+// max(num) figure en ella, y que ningún num listado como retirado esté vivo.
+// (Los num duplicados ya los rechaza validate-schema.mjs.)
+{
+  const retiredPath = path.join(root, "data", "retired-nums.json");
+  if (!fs.existsSync(retiredPath)) {
+    record("ERROR", retiredPath, 0, "E45 números retirados: falta data/retired-nums.json; la regla está ciega.");
+  } else {
+    const retired = JSON.parse(fs.readFileSync(retiredPath, "utf-8")).retired || {};
+    const retiredNums = new Set(Object.keys(retired).map(Number));
+    const liveNums = new Set(cases.map((c) => c.num));
+    const maxNum = Math.max(...liveNums);
+    const unregistered = [];
+    for (let n = 1; n <= maxNum; n++) {
+      if (!liveNums.has(n) && !retiredNums.has(n)) unregistered.push(n);
+    }
+    const reused = [...retiredNums].filter((n) => liveNums.has(n));
+    if (unregistered.length > 0) {
+      record("ERROR", retiredPath, 0, `E45 números retirados: ${unregistered.join(", ")} falta(n) en el corpus y no figura(n) en data/retired-nums.json. Al fusionar o borrar una ficha, anota su num ahí (y en docs/registros.md).`);
+    }
+    if (reused.length > 0) {
+      record("ERROR", retiredPath, 0, `E45 números retirados: ${reused.join(", ")} figura(n) como retirado(s) pero una ficha viva lo usa. Un num retirado no se reasigna: renumera la ficha nueva o saca el número de la lista si fue un error.`);
+    }
+  }
+}
+
 // ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
 //
 // Cada incidente llevaba dos números escritos por separado —la «probabilidad»
