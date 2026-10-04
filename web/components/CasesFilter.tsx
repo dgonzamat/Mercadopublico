@@ -58,7 +58,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "fraude", es: "Posible fraude", en: "Possible hoax" },
   { key: "instrumento", es: "Fallo de instrumento", en: "Instrument artifact" },
   { key: "psicosocial", es: "Causa psicológica, médica o social", en: "Psychological, medical or social cause" },
-  { key: "sin_propuesta", es: "Sin explicación propuesta", en: "No explanation proposed" },
+  { key: "sin_propuesta", es: "Causa ordinaria probable, sin identificar", en: "Likely ordinary, unidentified" },
   { key: "folclore", es: "Relato folclórico o literario", en: "Folklore or literary account" },
   { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
   { key: "adversaria", es: "Tecnología adversaria", en: "Adversary tech" },

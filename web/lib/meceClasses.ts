@@ -115,7 +115,7 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   // Ninguna fuente propone una causa, pero los casos parecidos que sí se
   // resolvieron fueron casi siempre algo ordinario: la masa prosaica se conserva
   // por tasa base en vez de pasar a «Indeterminado». Sin detalle.
-  { key: "sin_propuesta", label: "Sin explicación propuesta", labelEn: "No explanation proposed", color: "#6f7f8c" },
+  { key: "sin_propuesta", label: "Causa ordinaria probable, sin identificar", labelEn: "Likely ordinary, unidentified", color: "#6f7f8c" },
   // Leyendas y relatos de época sin testigo verificable: la lectura prosaica es
   // literaria, no un objeto mal identificado ni un engaño (decisión del dueño).
   { key: "folclore", label: "Relato folclórico o literario", labelEn: "Folklore or literary account", color: "#9a7b4f" },
