@@ -105,5 +105,16 @@
     "source": "Project Grudge, informe técnico de agosto de 1949, partes 6, 7 y 8 (escaneo de la NARA en archive.org)",
     "url": "https://archive.org/details/project-grudge-august-1949-part-8"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "src": "/pursue/Grudge_1949_AppendixI_Incident1_Muroc.jpg",
+      "type": "image",
+      "title": "Project Grudge (agosto de 1949), apéndice I · incidente n.º 1, Muroc, 8 de julio de 1947: opinión del AMC «probablemente globos de investigación»",
+      "title_en": "Project Grudge (August 1949), Appendix I · Incident No. 1, Muroc, 8 July 1947: AMC opinion \"probably research balloons\"",
+      "source": "US Air Force · Project Grudge (NARA), vía archive.org",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://archive.org/details/project-grudge-august-1949-part-8"
+    }
+  ]
 }
