@@ -118,6 +118,7 @@ export function MecePartition({
           key: c.key,
           color: c.color,
           count: c.count,
+          weak: c.weak,
           label: c.label,
           labelEn: c.labelEn,
           href: hrefFor?.(c.key),

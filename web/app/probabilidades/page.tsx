@@ -70,8 +70,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "Psychological, medical or social cause: collective contagion, suggestion, sleep paralysis or a medical condition (an epileptic seizure, for instance). Witnesses are not lying; what they report is explained by how people perceive and remember in groups, in altered states or through a medical cause.",
   },
   sin_propuesta: {
-    es: "Sin explicación propuesta: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario. La parte prosaica se conserva por esa tasa base, no porque alguien la haya identificado; la ficha dice qué fuentes se revisaron.",
-    en: "No explanation proposed: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary. The prosaic share is kept on that base rate, not because anyone identified it; the entry says which sources were checked.",
+    es: "Causa ordinaria probable, sin identificar: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario. La parte prosaica se conserva por esa tasa base, no porque alguien la haya identificado; la ficha dice qué fuentes se revisaron.",
+    en: "Likely ordinary, unidentified: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary. The prosaic share is kept on that base rate, not because anyone identified it; the entry says which sources were checked.",
   },
   folclore: {
     es: "Relato folclórico o literario: leyendas y relatos de época sin testigo verificable. La lectura prosaica es que se trata de una historia que circuló y se reescribió, no de un objeto mal identificado ni de un engaño deliberado; la ficha dice qué estudioso lo lee así.",
@@ -163,8 +163,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         </H2>
         <Caption>
           <T
-            es={`El centro marca el total de incidentes (${incidents}), cada uno en su narrativa más probable, y «Indeterminado» para lo que no se puede decidir. Clasificación forzada y navegable.`}
-            en={`The center marks the total of incidents (${incidents}), each in its most probable narrative, and 'Indeterminate' for what cannot be decided. Forced, navigable classification.`}
+            es={`El centro marca el total de incidentes (${incidents}), cada uno en su narrativa más probable, y «Indeterminado» para lo que no se puede decidir. Clasificación forzada y navegable: «con menos del 50 %» cuenta los casos que su narrativa gana solo por mayoría simple.`}
+            en={`The center marks the total of incidents (${incidents}), each in its most probable narrative, and 'Indeterminate' for what cannot be decided. Forced, navigable classification: 'below 50%' counts the cases their narrative wins only by plurality.`}
             locale={locale}
           />
         </Caption>

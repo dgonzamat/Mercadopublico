@@ -184,7 +184,7 @@ export interface ScoredCase {
   classSourced?: boolean;
 }
 
-export interface HypRow { key: string; label: string; labelEn: string; color: string; count: number; }
+export interface HypRow { key: string; label: string; labelEn: string; color: string; count: number; /** Solo en modalCounts: casos cuya narrativa modal reúne menos del 50 % de su reparto. */ weak?: number; }
 
 /**
  * Conteos sobre el conjunto EXPANDIDO de hipótesis (clasificación forzada):
@@ -249,13 +249,17 @@ export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boole
 export function modalCounts(items: ReadonlyArray<HypInput>, opts: { consolidateNonHuman?: boolean; keepIndet?: boolean } = {}): HypRow[] {
   const meta = new Map<string, HypRow>();
   const counts: Record<string, number> = {};
+  // Asignación débil: la narrativa modal gana por mayoría simple, sin llegar a
+  // la mitad del reparto del caso. El gráfico lo muestra en vez de esconderlo.
+  const weak: Record<string, number> = {};
   for (const s of items) {
     const m = modalHypothesis(s, opts);
     counts[m.key] = (counts[m.key] ?? 0) + 1;
+    if (m.count < 0.5) weak[m.key] = (weak[m.key] ?? 0) + 1;
     if (!meta.has(m.key)) meta.set(m.key, m);
   }
   return [...meta.values()]
-    .map((r) => ({ ...r, count: counts[r.key] }))
+    .map((r) => ({ ...r, count: counts[r.key], weak: weak[r.key] ?? 0 }))
     .sort((a, b) => b.count - a.count);
 }
 
