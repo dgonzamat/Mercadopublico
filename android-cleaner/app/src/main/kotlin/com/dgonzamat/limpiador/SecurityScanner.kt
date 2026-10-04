@@ -3,6 +3,7 @@ package com.dgonzamat.limpiador
 import android.Manifest
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.app.admin.DevicePolicyManager
+import android.app.usage.UsageEvents
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ApplicationInfo
@@ -31,6 +32,8 @@ data class AppFacts(
     val apkPath: String? = null,
     /** Veces que mostró una pantalla en las últimas 24 h (registro de uso; 0 si no hay acceso). */
     val screensLastDay: Int = 0,
+    /** Veces que arrancó un servicio en primer plano (aviso fijo en la barra) en las últimas 24 h. */
+    val backgroundLastDay: Int = 0,
 )
 
 /** Señales de riesgo. Son las que usan troyanos bancarios y stalkerware; ninguna prueba por sí sola que una app sea maliciosa. */
@@ -38,8 +41,10 @@ enum class RiskSignal(val weight: Int, val textRes: Int) {
     SIDELOADED(2, R.string.reason_sideloaded),
     /** No tiene ícono, así que el usuario no pudo abrirla, y aun así mostró pantallas: anuncios a pantalla completa. */
     POPS_UP(4, R.string.reason_pops_up),
-    /** Se presenta como limpiador, acelerador o ahorrador de batería: disfraz frecuente de adware y malware. */
+    /** Se presenta como limpiador, acelerador, recuperador de fotos, galería o lector: disfraces frecuentes del adware. */
     CLEANER(1, R.string.reason_cleaner),
+    /** Hay varias apps de ese mismo tipo instaladas: el adware de utilidades se instala en cadena. */
+    SWARM(2, R.string.reason_swarm),
     ACCESSIBILITY(3, R.string.reason_accessibility),
     DEVICE_ADMIN(3, R.string.reason_admin),
     SMS(2, R.string.reason_sms),
@@ -48,6 +53,10 @@ enum class RiskSignal(val weight: Int, val textRes: Int) {
     HIDDEN(1, R.string.reason_hidden),
     INSTALLS_APPS(1, R.string.reason_installs),
     OVERLAY(1, R.string.reason_overlay),
+    /** Puede abrir avisos a pantalla completa (permiso pensado para alarmas y llamadas). */
+    FULL_SCREEN(1, R.string.reason_full_screen),
+    /** Trabajó en segundo plano con un aviso fijo en la barra durante las últimas 24 h. */
+    BACKGROUND(1, R.string.reason_background),
 }
 
 data class RiskAssessment(val high: Boolean, val score: Int, val signals: List<RiskSignal>)
@@ -69,14 +78,20 @@ object RiskRules {
     )
 
     /**
-     * Palabras con las que se presentan los limpiadores falsos. Solo suman con otra señal: un
-     * limpiador legítimo sin overlay, sin ícono oculto y sin control del teléfono no se lista.
+     * Palabras con las que se presenta el adware de utilidades: limpiadores, aceleradores,
+     * recuperadores de fotos, galerías y lectores de documentos falsos. Solo suman con otra señal:
+     * un limpiador o una galería legítimos sin overlay, sin ícono oculto, sin trabajo en segundo
+     * plano y sin hermanas del mismo tipo no se listan.
      */
     private val CLEANER_WORDS = listOf(
         "clean", "cleaner", "limpia", "booster", "boost", "acelera", "optimiz", "speed", "junk",
         "basura", "cooler", "cpu", "ram", "battery", "bateria", "batería", "virus", "antivirus", "security master",
         "phone master", "phonemaster",
+        "recover", "recuper", "restore", "restaur", "gallery", "galer", "pdf", "reader", "lector",
     )
+
+    /** Desde cuántas apps del mismo tipo instaladas a la vez se considera una cadena de adware. */
+    const val SWARM_MIN = 4
 
     fun looksLikeCleaner(label: String, pkg: String): Boolean {
         val text = (label + " " + pkg).lowercase()
@@ -95,9 +110,12 @@ object RiskRules {
     const val SIDELOADED_MIN_SCORE = 4
     const val HIGH_SCORE = 6
 
-    fun signals(f: AppFacts): List<RiskSignal> = buildList {
+    /** [baitApps]: cuántas apps instaladas parecen utilidades cebo (incluida esta). */
+    fun signals(f: AppFacts, baitApps: Int = 0): List<RiskSignal> = buildList {
+        val bait = looksLikeCleaner(f.label, f.packageName)
         if (f.installer !in TRUSTED_STORES) add(RiskSignal.SIDELOADED)
-        if (looksLikeCleaner(f.label, f.packageName)) add(RiskSignal.CLEANER)
+        if (bait) add(RiskSignal.CLEANER)
+        if (bait && baitApps >= SWARM_MIN) add(RiskSignal.SWARM)
         if (!f.hasLauncherIcon && f.screensLastDay > 0) add(RiskSignal.POPS_UP)
         if (f.accessibilityOn) add(RiskSignal.ACCESSIBILITY)
         if (f.deviceAdmin) add(RiskSignal.DEVICE_ADMIN)
@@ -107,6 +125,8 @@ object RiskRules {
         if (!f.hasLauncherIcon) add(RiskSignal.HIDDEN)
         if (Manifest.permission.REQUEST_INSTALL_PACKAGES in f.permissions) add(RiskSignal.INSTALLS_APPS)
         if (Manifest.permission.SYSTEM_ALERT_WINDOW in f.permissions) add(RiskSignal.OVERLAY)
+        if (Manifest.permission.USE_FULL_SCREEN_INTENT in f.permissions) add(RiskSignal.FULL_SCREEN)
+        if (f.backgroundLastDay > 0) add(RiskSignal.BACKGROUND)
     }
 
     /**
@@ -114,20 +134,23 @@ object RiskRules {
      * gestores de contraseñas), así que una app de tienda solo se lista si:
      * - combina accesibilidad y administrador, o
      * - oculta su ícono y además dibuja encima, controla el teléfono o instala apps (patrón del adware), o
-     * - se presenta como limpiador/acelerador y además dibuja encima, oculta su ícono, controla el
-     *   teléfono, lee notificaciones o instala apps (los limpiadores falsos de Google Play).
+     * - se presenta como utilidad cebo (limpiador, recuperador de fotos, galería, lector) y además
+     *   dibuja encima, abre avisos a pantalla completa, oculta su ícono, controla el teléfono, lee
+     *   notificaciones, instala apps, trabaja en segundo plano o tiene varias hermanas del mismo
+     *   tipo instaladas (el adware de utilidades de las tiendas).
      */
-    fun assess(f: AppFacts): RiskAssessment? {
-        val s = signals(f)
+    fun assess(f: AppFacts, baitApps: Int = 0): RiskAssessment? {
+        val s = signals(f, baitApps)
         val score = s.sumOf { it.weight }
         val sideloaded = RiskSignal.SIDELOADED in s
         val control = RiskSignal.ACCESSIBILITY in s || RiskSignal.DEVICE_ADMIN in s
-        val adwareMoves = RiskSignal.OVERLAY in s || control || RiskSignal.INSTALLS_APPS in s
+        val adwareMoves = RiskSignal.OVERLAY in s || control || RiskSignal.INSTALLS_APPS in s || RiskSignal.FULL_SCREEN in s
         val listed = if (sideloaded) score >= SIDELOADED_MIN_SCORE
         else RiskSignal.POPS_UP in s ||
             (RiskSignal.ACCESSIBILITY in s && RiskSignal.DEVICE_ADMIN in s) ||
             (RiskSignal.HIDDEN in s && adwareMoves) ||
-            (RiskSignal.CLEANER in s && (adwareMoves || RiskSignal.HIDDEN in s || RiskSignal.NOTIFICATIONS in s))
+            (RiskSignal.CLEANER in s && (adwareMoves || RiskSignal.HIDDEN in s || RiskSignal.NOTIFICATIONS in s ||
+                RiskSignal.BACKGROUND in s || RiskSignal.SWARM in s))
         if (!listed) return null
         val high = score >= HIGH_SCORE || (sideloaded && control) || RiskSignal.POPS_UP in s
         return RiskAssessment(high, score, s)
@@ -148,7 +171,9 @@ class SecurityScanner(
 ) {
 
     suspend fun scan(onLookup: suspend (Int) -> Unit = {}): List<JunkItem> {
-        val all = facts().map { it to RiskRules.assess(it) }
+        val list = facts()
+        val baitApps = list.count { RiskRules.looksLikeCleaner(it.label, it.packageName) }
+        val all = list.map { it to RiskRules.assess(it, baitApps) }
         // Antivirus en la nube: primero las de más riesgo, por si se agota el tope de consultas.
         val verdicts = HashMap<String, VtVerdict>()
         if (vt != null) {
@@ -164,8 +189,11 @@ class SecurityScanner(
             val malware = v is VtVerdict.Found && v.malicious > 0
             if (a == null && !malware) return@mapNotNull null
             val reasons = a?.signals?.joinToString(", ") {
-                if (it == RiskSignal.POPS_UP) context.resources.getQuantityString(R.plurals.reason_pops_up_n, f.screensLastDay, f.screensLastDay)
-                else context.getString(it.textRes)
+                when (it) {
+                    RiskSignal.POPS_UP -> context.resources.getQuantityString(R.plurals.reason_pops_up_n, f.screensLastDay, f.screensLastDay)
+                    RiskSignal.SWARM -> context.getString(R.string.reason_swarm_n, baitApps)
+                    else -> context.getString(it.textRes)
+                }
             }
             val note = when {
                 malware -> listOfNotNull(malwareNote(context, v as VtVerdict.Found), reasons?.replaceFirstChar { it.uppercase() }).joinToString(". ")
@@ -208,7 +236,9 @@ class SecurityScanner(
                     .activeAdmins?.map { it.packageName }?.toSet() ?: emptySet()
             } catch (e: Exception) { emptySet() }
             val listeners = try { NotificationManagerCompat.getEnabledListenerPackages(context) } catch (e: Exception) { emptySet() }
-            val screens = ForegroundLog.counts(context, System.currentTimeMillis() - 24 * 3600_000L)
+            val dayAgo = System.currentTimeMillis() - 24 * 3600_000L
+            val screens = ForegroundLog.counts(context, dayAgo)
+            val background = ForegroundLog.counts(context, dayAgo, type = UsageEvents.Event.FOREGROUND_SERVICE_START)
             val launchable = try {
                 pm.queryIntentActivities(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER), 0)
                     .map { it.activityInfo.packageName }.toSet()
@@ -232,6 +262,7 @@ class SecurityScanner(
                         hasLauncherIcon = p.packageName in launchable,
                         apkPath = app.sourceDir,
                         screensLastDay = screens[p.packageName] ?: 0,
+                        backgroundLastDay = background[p.packageName] ?: 0,
                     )
                 } catch (e: Exception) {
                     null // una app que no se deja leer no detiene el análisis

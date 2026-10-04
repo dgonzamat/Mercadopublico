@@ -84,6 +84,25 @@ class SecurityScannerTest {
         assertTrue(RiskSignal.POPS_UP in popup.signals)
         // Con ícono, aparecer en pantalla es lo normal.
         assertNull(RiskRules.assess(facts().copy(screensLastDay = 50)))
+        // Adware de utilidades de tienda (recuperadores de fotos, galerías, lectores): con trabajo en
+        // segundo plano, avisos a pantalla completa o varias hermanas del mismo tipo, se lista.
+        assertTrue(RiskRules.looksLikeCleaner("Recuperación de fotos borradas", "com.x"))
+        assertTrue(RiskRules.looksLikeCleaner("Photo Recover Studio", "com.x"))
+        assertTrue(RiskRules.looksLikeCleaner("Gallery - Photo Gallery", "com.x"))
+        assertTrue(RiskRules.looksLikeCleaner("Swift All Reader", "com.x"))
+        assertTrue(RiskRules.looksLikeCleaner("Lector de PDF", "com.x"))
+        assertFalse(RiskRules.looksLikeCleaner("WhatsApp", "com.whatsapp"))
+        val recovery = facts(label = "Recuperación de fotos")
+        assertNull(RiskRules.assess(recovery))                                  // sola y quieta: no
+        assertNotNull(RiskRules.assess(recovery.copy(backgroundLastDay = 3)))  // con aviso fijo en segundo plano
+        assertNotNull(RiskRules.assess(recovery.copy(permissions = setOf(Manifest.permission.USE_FULL_SCREEN_INTENT))))
+        assertNull(RiskRules.assess(recovery, baitApps = RiskRules.SWARM_MIN - 1))
+        val swarm = RiskRules.assess(recovery, baitApps = RiskRules.SWARM_MIN)!!
+        assertTrue(RiskSignal.SWARM in swarm.signals)
+        // Una app normal no suma «una de varias» aunque haya muchas utilidades cebo instaladas.
+        assertNull(RiskRules.assess(facts(label = "WhatsApp"), baitApps = 10))
+        // Trabajar en segundo plano no basta por sí solo (música, navegación).
+        assertNull(RiskRules.assess(facts(label = "Música").copy(backgroundLastDay = 20)))
         // Tiendas conocidas no suman «no viene de una tienda».
         for (store in RiskRules.TRUSTED_STORES) assertFalse(RiskSignal.SIDELOADED in RiskRules.signals(facts(installer = store)))
     }
@@ -143,18 +162,33 @@ class SecurityScannerTest {
     }
 
     @Test
+    fun la_cadena_de_recuperadores_falsos_se_lista_completa_y_lo_explica() = runBlocking {
+        val labels = listOf("Recuperación de fotos", "Recuperar fotos y videos", "Photo Recover S", "Flare Cleaner", "Gallery")
+        val items = SecurityScanner(ctx) {
+            labels.mapIndexed { i, l -> facts("com.bait$i", label = l) } + facts("com.whatsapp", label = "WhatsApp")
+        }.scan()
+        assertEquals(labels.size, items.size)
+        assertTrue(items.none { it.packageName == "com.whatsapp" })
+        assertTrue(items[0].note!!, items[0].note!!.contains("es una de 5 apps de este mismo tipo instaladas"))
+    }
+
+    @Test
     fun cuenta_las_pantallas_de_cada_app_en_el_registro_de_uso() {
         FakeApps.install(usageAccess = true)
         val usm = org.robolectric.Shadows.shadowOf(ctx.getSystemService(Context.USAGE_STATS_SERVICE) as android.app.usage.UsageStatsManager)
         val now = System.currentTimeMillis()
         repeat(3) { usm.addEvent(FakeApps.NEVER, now - (it + 1) * 60_000L, android.app.usage.UsageEvents.Event.ACTIVITY_RESUMED) }
+        usm.addEvent(FakeApps.RECENT, now - 120_000L, android.app.usage.UsageEvents.Event.FOREGROUND_SERVICE_START)
         usm.addEvent(FakeApps.NEVER, now - 2 * 86_400_000L, android.app.usage.UsageEvents.Event.ACTIVITY_RESUMED) // fuera de las 24 h
         val facts = SecurityScanner.collectFacts(ctx).associateBy { it.packageName }
         assertEquals(3, facts.getValue(FakeApps.NEVER).screensLastDay)
         assertEquals(0, facts.getValue(FakeApps.RECENT).screensLastDay)
-        // Sin ícono y apareciendo en pantalla: sale como adware aunque no tenga nada más.
+        assertEquals(1, facts.getValue(FakeApps.RECENT).backgroundLastDay)
+        assertEquals(0, facts.getValue(FakeApps.NEVER).backgroundLastDay)
+        // Sin ícono y apareciendo en pantalla: sale como adware aunque no tenga nada más. Y la que,
+        // instalada fuera de una tienda y sin ícono, trabajó en segundo plano, también.
         val items = runBlocking { SecurityScanner(ctx).scan() }
-        assertEquals(listOf(FakeApps.NEVER), items.map { it.packageName })
+        assertEquals(listOf(FakeApps.NEVER, FakeApps.RECENT), items.map { it.packageName })
     }
 
     @Test

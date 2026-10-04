@@ -199,11 +199,10 @@
     <string name="phase_security">Seguridad de las apps</string>
     <string name="scanning_security">Revisando la seguridad de las apps…</string>
     <string name="security_clean">Seguridad: ninguna app instalada muestra señales de riesgo. Esta revisión no detecta malware conocido por firma; para eso usa Play Protect.</string>
-    <string name="grid_hint_security">Toca para marcar la app a desinstalar. Mantén presionado para abrirla en Ajustes, donde puedes quitarle permisos. Si no se deja desinstalar, desactiva antes su permiso de administrador o de accesibilidad.</string>
+    <string name="grid_hint_security">Toca para marcar la app a desinstalar. Mantén presionado para ver los pasos si no se deja desinstalar: quitarle el permiso de administrador o de accesibilidad, silenciar sus avisos, abrir su ficha o quitarla desde el computador.</string>
     <string name="tool_protect_title">Google Play Protect</string>
     <string name="tool_protect_desc">Busca malware conocido con la base de datos de Google. Complementa la revisión de apps sospechosas, que se basa en señales de riesgo.</string>
     <string name="tool_protect_button">Abrir</string>
-    <string name="admin_blocks_uninstall">«%1$s» es administradora del dispositivo: desactívala en Ajustes › Seguridad y vuelve a intentarlo.</string>
 
     <!-- v2.12: antivirus en la nube -->
     <string name="tool_vt_title">Antivirus en la nube (VirusTotal)</string>
@@ -231,7 +230,7 @@
     <string name="vt_scope_quota">VirusTotal: se agotó la cuota gratuita de consultas; se usaron solo señales de riesgo.</string>
     <string name="vt_scope_offline">VirusTotal: sin conexión; se usaron solo señales de riesgo.</string>
     <string name="privacy_note_vt">Todo ocurre en tu teléfono. Solo las huellas de apps e instaladores van a VirusTotal.</string>
-    <string name="reason_cleaner">se presenta como limpiador o acelerador (disfraz común del adware)</string>
+    <string name="reason_cleaner">se presenta como limpiador, acelerador, recuperador de fotos, galería o lector de PDF (disfraces comunes del adware)</string>
 
     <!-- v2.12: anuncios que bloquean la pantalla -->
     <string name="reason_pops_up">abre pantallas por su cuenta sin tener ícono (anuncios)</string>
@@ -240,7 +239,7 @@
         <item quantity="other">no tiene ícono, pero apareció en pantalla %1$d veces en 24 h (anuncios a pantalla completa)</item>
     </plurals>
     <string name="tool_ads_title">¿Qué app muestra los anuncios?</string>
-    <string name="tool_ads_desc">Cuando un anuncio te bloquee la pantalla, abre Limpiador y toca aquí: verás qué app acaba de ocupar la pantalla. Tócala para abrir sus ajustes y desinstalarla.</string>
+    <string name="tool_ads_desc">Cuando un anuncio te bloquee la pantalla o salte un aviso, abre Limpiador y toca aquí: verás qué app acaba de ocupar la pantalla o trabajar en segundo plano. Tócala para ver cómo quitarla.</string>
     <string name="tool_ads_button">Buscar</string>
     <string name="ads_need_usage">Para saber qué app abrió cada pantalla hace falta el «Acceso a datos de uso». Actívalo y vuelve a tocar Buscar.</string>
     <string name="ads_none">Ninguna app instalada por ti mostró pantallas en los últimos 30 minutos.</string>
@@ -250,4 +249,29 @@
         <item quantity="one">%1$d vez</item>
         <item quantity="other">%1$d veces</item>
     </plurals>
+    <!-- v2.13: adware de utilidades y apps que no se dejan desinstalar -->
+    <string name="reason_swarm">hay varias apps de este mismo tipo instaladas (el adware se instala en cadena)</string>
+    <string name="reason_swarm_n">es una de %1$d apps de este mismo tipo instaladas (el adware se instala en cadena)</string>
+    <string name="reason_full_screen">puede abrir avisos a pantalla completa</string>
+    <string name="reason_background">trabajó en segundo plano con un aviso fijo en las últimas 24 h</string>
+    <string name="ads_background">trabajando en segundo plano</string>
+    <plurals name="help_list_title">
+        <item quantity="one">%1$d app no se desinstaló</item>
+        <item quantity="other">%1$d apps no se desinstalaron</item>
+    </plurals>
+    <string name="help_title">Cómo quitar «%1$s»</string>
+    <string name="help_admin">Quitarle el permiso de administrador (Ajustes › Seguridad › Apps de administración)</string>
+    <string name="help_accessibility">Apagar su accesibilidad (con ella cierra la pantalla de desinstalar)</string>
+    <string name="help_notifications">Silenciar sus avisos y anuncios mientras tanto</string>
+    <string name="help_details">Abrir su ficha: Forzar detención y luego Desinstalar</string>
+    <string name="help_retry">Intentar desinstalarla de nuevo</string>
+    <string name="help_safe_mode">Si nada funciona: modo seguro</string>
+    <string name="help_safe_mode_steps">En modo seguro no corre ninguna app de terceros, así que no puede impedir que la quites.\n\n1. Mantén presionado el botón de encendido.\n2. Mantén presionado «Apagar» hasta que ofrezca «Modo seguro» y acepta (en algunos Xiaomi: apaga, enciende y mantén presionado Bajar volumen mientras arranca).\n3. Ve a Ajustes › Aplicaciones, busca la app y desinstálala.\n4. Reinicia normalmente.\n\nLos pasos cambian según el fabricante.</string>
+    <string name="help_copy_adb">Comandos para el computador</string>
+    <string name="help_close">Cerrar</string>
+    <string name="adb_header"># Limpiador: apps que no se dejaron desinstalar. Pega cada línea en la terminal del computador.</string>
+    <string name="adb_intro">Con el teléfono conectado al computador por USB y la depuración USB activada (Ajustes › Opciones de desarrollador), escribe estas líneas en la terminal del computador. La segunda línea de cada app solo hace falta si la primera responde «Failure»: la deja sin poder ejecutarse.</string>
+    <string name="adb_share">Enviar al computador</string>
+    <string name="adb_copy">Copiar</string>
+    <string name="adb_copied">Comandos copiados</string>
 </resources>

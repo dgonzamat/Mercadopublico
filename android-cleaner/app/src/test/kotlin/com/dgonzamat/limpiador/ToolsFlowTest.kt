@@ -227,7 +227,10 @@ class ToolsFlowTest {
             Screenshots.snap(c.window.decorView, "13-revision-seguridad")
         }
 
-        // Limpiar solo las sospechosas: una se desinstala; la administradora no, y se avisa cómo seguir.
+        // Limpiar solo las sospechosas: una se desinstala; la administradora no, y se ofrecen los pasos.
+        val ctx = ApplicationProvider.getApplicationContext<Application>()
+        val dpm = ctx.getSystemService(android.content.Context.DEVICE_POLICY_SERVICE) as android.app.admin.DevicePolicyManager
+        shadowOf(dpm).setActiveAdmin(android.content.ComponentName(FakeApps.NEVER, "${FakeApps.NEVER}.Admin"))
         scenario.onActivity { a ->
             idle()
             ScanStore.items.forEach { it.selected = it.category == Category.SUSPICIOUS_APPS }
@@ -246,7 +249,37 @@ class ToolsFlowTest {
             shadowOf(a).receiveResult(other.intent, Activity.RESULT_OK, null)
             idle()
             assertEquals(View.VISIBLE, a.v<View>(R.id.doneGroup).visibility)
-            assertNotNull(a.window.decorView.findText(a.getString(R.string.admin_blocks_uninstall, "Servicio de actualización")))
+            // La que quedó se lista con sus pasos, empezando por quitarle el permiso de administrador.
+            val left = ShadowDialog.getLatestDialog() as AlertDialog
+            assertEquals(1, left.listView.adapter.count)
+            assertEquals("Servicio de actualización", left.listView.adapter.getItem(0).toString())
+            Screenshots.snap(left.window!!.decorView, "16-no-se-desinstalo")
+            shadowOf(left.listView).performItemClick(0)
+            idle()
+            val steps = ShadowDialog.getLatestDialog() as AlertDialog
+            assertTrue(steps !== left)
+            val rows = (0 until steps.listView.adapter.count).map { steps.listView.adapter.getItem(it).toString() }
+            assertEquals("1. " + a.getString(R.string.help_admin), rows[0])
+            assertEquals("2. " + a.getString(R.string.help_notifications), rows[1])
+            assertTrue(rows.last().endsWith(a.getString(R.string.help_safe_mode)))
+            Screenshots.snap(steps.window!!.decorView, "17-como-quitarla")
+            // Comandos para el computador: se muestran, se copian y se pueden enviar.
+            steps.getButton(AlertDialog.BUTTON_NEUTRAL).performClick()
+            idle()
+            val adb = ShadowDialog.getLatestDialog() as AlertDialog
+            val msg = adb.findViewById<TextView>(android.R.id.message)!!.text.toString()
+            assertTrue(msg, msg.contains("adb shell pm uninstall ${FakeApps.NEVER}"))
+            adb.getButton(AlertDialog.BUTTON_NEUTRAL).performClick()
+            idle()
+            val clip = (a.getSystemService(android.content.Context.CLIPBOARD_SERVICE) as android.content.ClipboardManager).primaryClip!!
+            assertTrue(clip.getItemAt(0).text.contains("adb shell pm disable-user --user 0 ${FakeApps.NEVER}"))
+            // El primer paso lleva a Ajustes › Seguridad, donde están las administradoras.
+            shadowOf(a).clearNextStartedActivities()
+            RemovalHelp.show(a, JunkItem(Category.SUSPICIOUS_APPS, "Servicio de actualización", 0, packageName = FakeApps.NEVER))
+            idle()
+            shadowOf((ShadowDialog.getLatestDialog() as AlertDialog).listView).performItemClick(0)
+            idle()
+            assertEquals(Settings.ACTION_SECURITY_SETTINGS, shadowOf(a).nextStartedActivity.action)
         }
         ScanEngine.securityScan = { ctx, vt, p -> SecurityScanner(ctx, vt).scan(p) }
         ScanEngine.virusTotal = { null } // sin red en las pruebas
@@ -265,6 +298,8 @@ class ToolsFlowTest {
         usm.addEvent(FakeApps.SYSTEM, now - 5_000, resumed)          // del sistema: no se ofrece
         usm.addEvent(ctx.packageName, now - 1_000, resumed)          // esta misma app: tampoco
         usm.addEvent(FakeApps.UNUSED, now - 3 * 3600_000L, resumed)  // hace más de 30 min
+        // Un anuncio que salió como aviso, no como pantalla: solo deja su servicio en primer plano.
+        usm.addEvent(FakeApps.UNUSED, now - 90_000, android.app.usage.UsageEvents.Event.FOREGROUND_SERVICE_START)
         ScanStore.items = listOf(JunkItem(Category.TINY, "x.jpg", 10, uri = android.net.Uri.parse("content://media/external/images/media/1")))
         ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
             idle()
@@ -274,13 +309,23 @@ class ToolsFlowTest {
             idle()
             val dialog = ShadowDialog.getLatestDialog() as AlertDialog
             val list = dialog.listView
-            assertEquals(2, list.adapter.count)
+            assertEquals(3, list.adapter.count)
             val first = list.adapter.getItem(0).toString()
             assertTrue(first, first.startsWith("App nunca abierta · hace 1") && first.endsWith("2 veces"))
             val second = list.adapter.getItem(1).toString()
-            assertTrue(second, second.startsWith("App reciente · hace 10 min"))
+            assertEquals("App olvidada · hace 1 min · trabajando en segundo plano", second)
+            val third = list.adapter.getItem(2).toString()
+            assertTrue(third, third.startsWith("App reciente · hace 10 min"))
             Screenshots.snap(dialog.window!!.decorView, "15-quien-muestra-anuncios")
+            // Tocarla muestra cómo quitarla; «Abrir su ficha» lleva a sus ajustes.
             shadowOf(list).performItemClick(0)
+            idle()
+            val steps = ShadowDialog.getLatestDialog() as AlertDialog
+            assertEquals(a.getString(R.string.help_title, "App nunca abierta"), steps.findViewById<TextView>(androidx.appcompat.R.id.alertTitle)!!.text.toString())
+            val details = (0 until steps.listView.adapter.count).first {
+                steps.listView.adapter.getItem(it).toString().endsWith(a.getString(R.string.help_details))
+            }
+            shadowOf(steps.listView).performItemClick(details)
             idle()
             val info = shadowOf(a).nextStartedActivity
             assertEquals(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, info.action)

@@ -80,7 +80,8 @@ class CategoryActivity : AppCompatActivity() {
                 }
                 startSafely(intent)
             }
-            Kind.APP -> startSafely(
+            Kind.APP -> if (item.category == Category.SUSPICIOUS_APPS) RemovalHelp.show(this, item)
+            else startSafely(
                 Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:${item.packageName}")),
             )
             Kind.FILE -> {

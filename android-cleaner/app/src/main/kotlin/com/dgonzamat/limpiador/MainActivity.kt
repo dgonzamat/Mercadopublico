@@ -66,8 +66,8 @@ class MainActivity : AppCompatActivity() {
     private val deletedItems = mutableListOf<JunkItem>()
     /** Repetidos que la doble verificación dejó en paz justo antes de borrar. */
     private var staleSkipped = 0
-    /** Apps que no se desinstalaron por ser administradoras del dispositivo. */
-    private val blockedAdmins = mutableListOf<JunkItem>()
+    /** Apps que siguen instaladas tras su diálogo de desinstalación (Android no las dejó ir o se canceló). */
+    private val notRemoved = mutableListOf<JunkItem>()
 
     private val permissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
@@ -95,8 +95,8 @@ class MainActivity : AppCompatActivity() {
             if (gone) {
                 deletedItems += app
                 ScanStore.remove(listOf(app))
-            } else if (app.deviceAdmin) {
-                blockedAdmins += app
+            } else {
+                notRemoved += app
             }
             continueDeletion()
         }
@@ -372,14 +372,15 @@ class MainActivity : AppCompatActivity() {
         val rows = apps.take(8).map { a ->
             val ago = ((now - a.lastSeen) / 1000).coerceAtLeast(0)
             val whenText = if (ago < 60) getString(R.string.ads_seconds_ago, ago) else getString(R.string.ads_minutes_ago, ago / 60)
-            "${a.label} · $whenText · " + resources.getQuantityString(R.plurals.ads_times, a.times, a.times)
+            val what = listOfNotNull(
+                a.times.takeIf { it > 0 }?.let { resources.getQuantityString(R.plurals.ads_times, it, it) },
+                a.background.takeIf { it > 0 }?.let { getString(R.string.ads_background) },
+            ).joinToString(" · ")
+            "${a.label} · $whenText · $what"
         }.toTypedArray()
         builder.setItems(rows) { _, i ->
-            try {
-                startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:${apps[i].packageName}")))
-            } catch (e: Exception) {
-                Snackbar.make(b.root, R.string.open_failed, Snackbar.LENGTH_LONG).show()
-            }
+            val a = apps[i]
+            RemovalHelp.show(this, JunkItem(Category.SUSPICIOUS_APPS, a.label, 0, packageName = a.packageName))
         }.setNegativeButton(android.R.string.cancel, null).show()
     }
 
@@ -723,7 +724,7 @@ class MainActivity : AppCompatActivity() {
     private fun deleteSelected(selected: List<JunkItem>) {
         deletedItems.clear()
         staleSkipped = 0
-        blockedAdmins.clear()
+        notRemoved.clear()
         pendingMedia.clear()
         pendingApps.clear()
         b.primaryButton.isEnabled = false
@@ -783,14 +784,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun finishDeletion(cancelled: Boolean) {
         refreshStorage()
-        // Android no desinstala una administradora activa: llevar a los ajustes para desactivarla.
-        blockedAdmins.firstOrNull()?.let { app ->
-            Snackbar.make(b.root, getString(R.string.admin_blocks_uninstall, app.name), Snackbar.LENGTH_INDEFINITE)
-                .setAction(R.string.allfiles_open_settings) {
-                    try { startActivity(Intent(Settings.ACTION_SECURITY_SETTINGS)) } catch (e: Exception) { }
-                }
-                .show()
-        }
         val n = deletedItems.size
         if (n > 0) {
             b.doneTitle.text = getString(R.string.done_title, formatSize(deletedItems.sumOf { it.size }))
@@ -811,6 +804,9 @@ class MainActivity : AppCompatActivity() {
             if (cancelled) Snackbar.make(b.root, R.string.delete_cancelled, Snackbar.LENGTH_LONG).show()
             else if (staleSkipped > 0) Snackbar.make(b.root, resources.getQuantityString(R.plurals.dup_recheck_failed, staleSkipped, staleSkipped), Snackbar.LENGTH_LONG).show()
         }
+        // Apps que siguen instaladas (administradoras, accesibilidad que cierra el diálogo, o el
+        // usuario canceló): pasos para quitarlas.
+        if (notRemoved.isNotEmpty()) RemovalHelp.showList(this, notRemoved.toList())
     }
 
     private fun dp(v: Int) = (v * resources.displayMetrics.density).toInt()

@@ -187,11 +187,10 @@
     <string name="phase_security">App security</string>
     <string name="scanning_security">Checking app security…</string>
     <string name="security_clean">Security: no installed app shows risk signals. This check does not detect known malware by signature; use Play Protect for that.</string>
-    <string name="grid_hint_security">Tap to mark the app for uninstall. Long-press to open it in Settings, where you can remove its permissions. If it won\'t uninstall, first turn off its device administrator or accessibility permission.</string>
+    <string name="grid_hint_security">Tap to mark the app for uninstall. Long-press for steps if it won\'t uninstall: remove its device administrator or accessibility permission, mute its notifications, open its settings page or remove it from a computer.</string>
     <string name="tool_protect_title">Google Play Protect</string>
     <string name="tool_protect_desc">Looks for known malware using Google\'s database. It complements the suspicious-apps check, which is based on risk signals.</string>
     <string name="tool_protect_button">Open</string>
-    <string name="admin_blocks_uninstall">"%1$s" is a device administrator: turn it off in Settings › Security and try again.</string>
 
     <!-- v2.12: cloud antivirus -->
     <string name="tool_vt_title">Cloud antivirus (VirusTotal)</string>
@@ -219,7 +218,7 @@
     <string name="vt_scope_quota">VirusTotal: the free lookup quota ran out; only risk signals were used.</string>
     <string name="vt_scope_offline">VirusTotal: no connection; only risk signals were used.</string>
     <string name="privacy_note_vt">Everything happens on your phone. Only app and installer fingerprints go to VirusTotal.</string>
-    <string name="reason_cleaner">poses as a cleaner or booster (a common adware disguise)</string>
+    <string name="reason_cleaner">poses as a cleaner, booster, photo recovery, gallery or PDF reader (common adware disguises)</string>
 
     <!-- v2.12: ads that block the screen -->
     <string name="reason_pops_up">opens screens by itself without an icon (ads)</string>
@@ -228,7 +227,7 @@
         <item quantity="other">has no icon, but showed up on screen %1$d times in 24 h (full-screen ads)</item>
     </plurals>
     <string name="tool_ads_title">Which app shows the ads?</string>
-    <string name="tool_ads_desc">When an ad blocks your screen, open Cleaner and tap here: you will see which app just took over the screen. Tap it to open its settings and uninstall it.</string>
+    <string name="tool_ads_desc">When an ad blocks your screen or a pop-up appears, open Cleaner and tap here: you will see which app just took over the screen or worked in the background. Tap it to see how to remove it.</string>
     <string name="tool_ads_button">Find</string>
     <string name="ads_need_usage">To know which app opened each screen, "Usage access" is needed. Turn it on and tap Find again.</string>
     <string name="ads_none">No app you installed showed a screen in the last 30 minutes.</string>
@@ -238,4 +237,29 @@
         <item quantity="one">%1$d time</item>
         <item quantity="other">%1$d times</item>
     </plurals>
+    <!-- v2.13: utility adware and apps that will not uninstall -->
+    <string name="reason_swarm">several apps of this same kind are installed (adware installs in chains)</string>
+    <string name="reason_swarm_n">is one of %1$d apps of this same kind installed (adware installs in chains)</string>
+    <string name="reason_full_screen">can open full-screen pop-ups</string>
+    <string name="reason_background">ran in the background with a pinned notification in the last 24 h</string>
+    <string name="ads_background">working in the background</string>
+    <plurals name="help_list_title">
+        <item quantity="one">%1$d app was not uninstalled</item>
+        <item quantity="other">%1$d apps were not uninstalled</item>
+    </plurals>
+    <string name="help_title">How to remove "%1$s"</string>
+    <string name="help_admin">Remove its device administrator permission (Settings › Security › Device admin apps)</string>
+    <string name="help_accessibility">Turn off its accessibility (with it, it closes the uninstall screen)</string>
+    <string name="help_notifications">Mute its notifications and ads meanwhile</string>
+    <string name="help_details">Open its settings page: Force stop, then Uninstall</string>
+    <string name="help_retry">Try uninstalling it again</string>
+    <string name="help_safe_mode">If nothing works: safe mode</string>
+    <string name="help_safe_mode_steps">In safe mode no third-party app runs, so it cannot stop you from removing it.\n\n1. Press and hold the power button.\n2. Press and hold "Power off" until it offers "Safe mode" and accept (on some Xiaomi phones: power off, turn on and hold Volume down while it boots).\n3. Go to Settings › Apps, find the app and uninstall it.\n4. Restart normally.\n\nSteps vary by manufacturer.</string>
+    <string name="help_copy_adb">Commands for a computer</string>
+    <string name="help_close">Close</string>
+    <string name="adb_header"># Cleaner: apps that would not uninstall. Paste each line into the computer terminal.</string>
+    <string name="adb_intro">With the phone connected to the computer over USB and USB debugging on (Settings › Developer options), type these lines into the computer terminal. Each app\'s second line is only needed if the first one answers "Failure": it leaves the app unable to run.</string>
+    <string name="adb_share">Send to computer</string>
+    <string name="adb_copy">Copy</string>
+    <string name="adb_copied">Commands copied</string>
 </resources>
