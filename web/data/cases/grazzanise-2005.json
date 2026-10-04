@@ -112,5 +112,16 @@
     "nohumano_abierto": 0.03,
     "indet": 0.35
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "src": "/pursue/aeronautica-militare-avvistamenti-2005.pdf",
+      "type": "pdf",
+      "title": "Aeronautica Militare — «Avvistamenti O.V.N.I. 2005» (5 págs.); Grazzanise, entradas 1 y 2 en la pág. 3",
+      "title_en": "Italian Air Force — 'Avvistamenti O.V.N.I. 2005' (5 pp.); Grazzanise, entries 1 and 2 on p. 3",
+      "source": "Aeronautica Militare (aeronautica.difesa.it)",
+      "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
+      "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2022/11/Avvistamenti_2005.pdf"
+    }
+  ]
 }

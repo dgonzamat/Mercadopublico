@@ -87,5 +87,16 @@
     "nohumano_abierto": 0.03,
     "indet": 0.33
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "src": "/pursue/EVA5-JUL94_Aitana_1986.pdf",
+      "type": "pdf",
+      "title": "Ejército del Aire — expediente EVA-5 JUL 94, «Avistamiento de fenómenos extraños» (8 págs., desclasificado en 1998)",
+      "title_en": "Spanish Air Force — file EVA-5 JUL 94, 'Avistamiento de fenómenos extraños' (8 pp., declassified 1998)",
+      "source": "Biblioteca Central del Ejército del Aire, vía Biblioteca Virtual de Defensa",
+      "license": "CC BY 4.0 · Fuente: Biblioteca Central del Ejército del Aire",
+      "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395964"
+    }
+  ]
 }
