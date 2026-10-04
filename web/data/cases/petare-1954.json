@@ -91,5 +91,16 @@
     "source": "URECAT / Patrick Gross, «1954-11-29 Petare, Venezuela, González & Ponce» · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
   },
-  "evidenceReviewed": "2026-10-03"
+  "evidenceReviewed": "2026-10-03",
+  "documents": [
+    {
+      "src": "/pursue/ArubaanseCourant_1954-12-01_p3_Petare.jpg",
+      "type": "image",
+      "title": "Arubaanse Courant, 1 de diciembre de 1954, p. 3: «Platillo volador aterrizó en Venezuela», con el relato de González según El Universal y el parte policial",
+      "title_en": "Arubaanse Courant, 1 December 1954, p. 3: 'Platillo volador aterrizó en Venezuela', with González's account per El Universal and the police report",
+      "source": "Arubaanse Courant (Oranjestad), Biblioteca Nacional Aruba, vía archive.org",
+      "license": "Dominio público · artículo de prensa sin firma publicado en 1954 (más de 70 años)",
+      "fallbackUrl": "https://archive.org/details/BNA-DIG-ARUBAANSECOURANT-1954-12-01"
+    }
+  ]
 }
