@@ -188,6 +188,12 @@ export const DETAIL_UNSPECIFIED = { key: "sin_precisar", label: "Sin precisar", 
 
 /** Definición del detalle `objectDetail` dentro de la clase `pk`, o undefined
  *  si el caso no lo trae (o no es válido para esa clase). */
+/** Nombre de una subclase sin el paréntesis con su gama («Óptico (espejismo,
+ *  refracción, propagación anómala del radar)» → «Óptico»). El filtro de /cases
+ *  usa la etiqueta completa; la ficha de un caso, la corta, porque la gama puede
+ *  nombrar algo que ese caso no tuvo (las luces de Min Min de 1838 y el radar). */
+export const shortLabel = (label: string) => label.replace(/\s*\([^)]*\)\s*$/, "");
+
 export function objectDetailDef(pk: ProsaicKey, objectDetail?: string): ObjectDetailDef | undefined {
   if (!objectDetail) return undefined;
   return OBJECT_DETAILS[pk]?.find((d) => d.key === objectDetail);
