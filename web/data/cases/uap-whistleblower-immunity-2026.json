@@ -99,5 +99,16 @@
       "note": "Anuncio del formulario de denunciantes; contenido verificado por captura de pantalla de la cuenta oficial verificada, no accesible directamente desde este entorno (dominio house.gov bloqueado para el fetcher, igual que war.gov).",
       "note_en": "Announcement of the whistleblower form; content verified via screenshot of the official verified account, not directly reachable from this environment (house.gov domain blocked for the fetcher, same as war.gov)."
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/uap-whistleblower-immunity-2026-context.jpg",
+      "type": "image",
+      "title": "Contexto · Anna Paulina Luna, representante por Florida y presidenta de la UAP Task Force (retrato oficial)",
+      "title_en": "Context · Anna Paulina Luna, Representative for Florida and chair of the UAP Task Force (official portrait)",
+      "source": "U.S. House of Representatives · Office of the Clerk (clerk.house.gov)",
+      "license": "Dominio público · obra del Congreso de EE.UU. (PD-USGov-Congress)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Anna_Paulina_Luna_(FL-13).jpg"
+    }
   ]
 }

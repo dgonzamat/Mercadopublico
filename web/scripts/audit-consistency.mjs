@@ -581,6 +581,14 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "val-johnson-1979": "solo una reconstrucción amateur y un doc CIA ajeno — ambos engañosos",
   "nz-defence-force-declass-2010": "Crown copyright NZ (100 años); catálogo NatLib: «All rights reserved»; la PDM de archive.org es errónea",
   "jellyfish-iraq-2018": "metraje filtrado (Corbell), nunca liberado; sin espejo en DVIDS ni archive.org/wargovUFO",
+  // Barrido de oct 2026 (Commons + archive.org + Openverse, detalle en docs/registros.md):
+  "bledsoe-cape-fear-2007": "testimonio personal; solo fotos y entrevistas con copyright; barrido seco",
+  "china-spiral-1981": "fotos de la prensa china de 1981 con copyright; barrido seco",
+  "dr-x-1968": "testigo anónimo; solo Flying Saucer Review (copyright) y un vídeo de un canal privado",
+  "friendship-island-chile-1984": "contactados sin documento; solo prensa y TV con copyright; barrido seco",
+  "pampa-soledad-1974": "contactados; prensa chilena con copyright; barrido seco",
+  "schirmer-ashland-1967": "Informe Condon de licencia dudosa; el «Herbert Schirmer» de Commons es un homónimo alemán",
+  "vilas-boas-1957": "la foto de Commons es de un homónimo; Flying Saucer Review con copyright; textos de archive.org sin licencia",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
