@@ -390,8 +390,8 @@ export async function CaseDetailPage(
           ) : (
             <KeyFact
               locale={locale}
-              es="Probabilidad"
-              en="Probability"
+              es="Sin explicar"
+              en="Unexplained"
               value={`${c.probability}%`}
               mono
             />
@@ -416,12 +416,24 @@ export async function CaseDetailPage(
           />
         </Caption>
         ) : (
-        <Caption>
-          <T locale={locale}
-            es={`${TIER_META[c.tier].description}. El «tier» mide la fuerza de la evidencia; la partición de explicaciones (abajo) reparte qué fue más plausiblemente, y la «probabilidad» es la parte de esa partición que ninguna causa conocida explica (indeterminado más las narrativas no humanas), calculada a partir de ella. Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude.`}
-            en={`${TIER_META[c.tier].description_en}. The «tier» measures the strength of the evidence; the partition of explanations (below) splits what it most plausibly was, and the «probability» is the share of that partition no known cause explains (indeterminate plus the non-human narratives), computed from it. So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax.`}
-          />
-        </Caption>
+        <div className="space-y-1">
+          <Caption>
+            <T locale={locale} es={`${TIER_META[c.tier].description}.`} en={`${TIER_META[c.tier].description_en}.`} />
+          </Caption>
+          {/* La explicación de las cifras es la misma en todas las fichas: va
+              plegada para que no empuje el caso fuera de la pantalla en móvil. */}
+          <details className="text-xs leading-normal text-muted">
+            <summary className="cursor-pointer marker:text-accent">
+              <T locale={locale} es="¿Qué significan estas cifras?" en="What do these figures mean?" />
+            </summary>
+            <p className="mt-1">
+              <T locale={locale}
+                es="El tier mide la fuerza de la evidencia. El reparto de explicaciones (abajo) dice qué fue más plausiblemente, y «sin explicar» es la parte de ese reparto que ninguna causa conocida explica (indeterminado más las narrativas no humanas). Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude."
+                en="The tier measures the strength of the evidence. The split of explanations (below) says what it most plausibly was, and “unexplained” is the share of that split no known cause explains (indeterminate plus the non-human narratives). So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax."
+              />
+            </p>
+          </details>
+        </div>
         )}
         {!isLinkedDoc && c.category !== "document" && <ClassBasis c={c} locale={locale} />}
       </header>
@@ -1177,6 +1189,12 @@ function KeyFact({
 /** Qué fue más plausiblemente, en términos prosaicos, y por qué: la clase
  *  (mundanoType + misidSubtype + objectDetail) y la frase de la fuente que la
  *  fija (`classBasis`). Sin la frase, lo dice: la clase aún no se contrastó. */
+// Las subclases traen entre paréntesis toda su gama («Óptico (espejismo,
+// refracción, propagación anómala del radar)»), útil en el filtro pero engañosa
+// en una ficha concreta: las luces de Min Min de 1838 no tuvieron radar. La
+// ficha muestra solo el nombre; el «Por qué» dice qué fue.
+const shortLabel = (label: string) => label.replace(/\s*\([^)]*\)\s*$/, "");
+
 function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "en" }) {
   if (!c.mundanoType && !c.classBasis) return null;
   const pk = c.mundanoType ? prosaicKey(c.mundanoType, c.misidSubtype) : undefined;
@@ -1214,8 +1232,8 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
         {cls ? (
           <T
             locale={locale}
-            es={detail ? `${cls.label} · ${detail.label}` : cls.label}
-            en={detail ? `${cls.labelEn} · ${detail.labelEn}` : cls.labelEn}
+            es={detail ? `${cls.label} · ${shortLabel(detail.label)}` : cls.label}
+            en={detail ? `${cls.labelEn} · ${shortLabel(detail.labelEn)}` : cls.labelEn}
           />
         ) : (
           <T locale={locale} es="Ninguna fuente propone una" en="No source proposes one" />
