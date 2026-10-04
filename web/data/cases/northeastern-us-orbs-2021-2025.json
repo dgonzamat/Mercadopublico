@@ -41,7 +41,8 @@
   "summary_en": "Between November 2021 and July 2025, civilian witnesses filmed on their phones four sightings of spherical lights within a 25-mile radius of a rural area in the northeastern United States. The FBI assessed the witnesses as 'highly credible' (the first three) or 'credible' (the fourth, with two witnesses, a couple), and the U.S. government authenticated at least one of the videos. The four clips —'Triangle-Orbs' (2021), 'Red Orb Rotation' (2022), 'Orbs Over the Pond' (2024) and 'Northeastern Orb Sighting' (2025)— were released in PURSUE's third drop (June 12, 2026) under a distinct series ('FBI-UAP-PR', not 'DOW-UAP-PR'), with FBI supporting documents (FBI-UAP-D004 through D010). It is, within the corpus, one of the few multi-year geographic recurrence patterns with an explicit FBI credibility assessment.",
   "patterns": [
     "8n",
-    "8b"
+    "8b",
+    "8g"
   ],
   "category": "incident",
   "documents": [
@@ -80,6 +81,69 @@
       "source": "Dos testigos civiles (iPhone 14 Pro Max), reportado al FBI, vía DVIDS (PURSUE Release 03)",
       "license": "Dominio público · US Government work",
       "fallbackUrl": "https://www.dvidshub.net/video/1010269"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D004 — FD-1057-02, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D004 — FD-1057-02, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D005 — FD-1057-04, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D005 — FD-1057-04, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D006 — FD-1057-05, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D006 — FD-1057-05, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D007 — FD-1057-06, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D007 — FD-1057-06, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D008 — FD-1057-07, observaciones UAP en el noreste de EE.UU. (2024)",
+      "title_en": "FBI-UAP-D008 — FD-1057-07, UAP observations in the Northeastern US (2024)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D009 — FD-302-67, entrevista 'Northeastern Orb Sighting' (2026)",
+      "title_en": "FBI-UAP-D009 — FD-302-67, 'Northeastern Orb Sighting' interview (2026)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf"
+    },
+    {
+      "src": "/pursue/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf",
+      "type": "pdf",
+      "title": "FBI-UAP-D010 — FD-302-71, entrevista 'Northeastern Orb Sighting' (2026)",
+      "title_en": "FBI-UAP-D010 — FD-302-71, 'Northeastern Orb Sighting' interview (2026)",
+      "source": "FBI (PURSUE Release 03)",
+      "license": "Dominio público · US Government work",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf"
     }
   ],
   "whatHappened": "El 12 de junio de 2026, el Departamento de Guerra publicó la tercera entrega del sistema PURSUE, que —a diferencia de las entregas 1, 2, 4 y 5, todas catalogadas en DVIDS bajo la serie 'DOW-UAP-PR' con procedencia del propio Departamento— incluyó una serie distinta identificada como 'FBI-UAP-PR', correspondiente a reportes recibidos directamente por la Oficina Federal de Investigaciones (FBI). Cuatro de esos videos documentan avistamientos de luces esféricas dentro de un radio de 25 millas en una zona rural escasamente poblada del noreste de Estados Unidos, a lo largo de casi cuatro años.\n\nEl primero, catalogado como FBI-UAP-PR001 ('Triangle-Orbs'), ocurrió en noviembre de 2021 alrededor de las 5:00 de la madrugada hora local. Un testigo observó una fuente de luz brillante cerca del horizonte, a una distancia estimada de 2.000 pies, que inicialmente apareció como un único objeto luminoso intenso antes de resolverse en múltiples luces con movimiento rotacional errático entre sí. El objeto se desplazó lateralmente de izquierda a derecha durante el encuentro. El testigo grabó con un iPhone 12 Pro sostenido a mano, lo que introdujo movimiento de cámara no intencional.\n\nEl segundo, FBI-UAP-PR002 ('Red Orb Rotation'), ocurrió en marzo de 2022 a las 19:20 hora local. El testigo observó dos fuentes de luz roja brillante suspendidas cerca del horizonte, a una distancia estimada de 2.500 pies, ambas en posiciones generalmente estacionarias. La fuente inferior pareció rotar lentamente respecto a la superior, desplazándose de una posición aparente de las 6 en punto a poco más allá de las 9 en punto, en la analogía de esfera de reloj que usa el propio reporte. El testigo no escuchó ningún sonido proveniente de las luces.\n\nEl tercero, FBI-UAP-PR003 ('Orbs Over the Pond'), ocurrió en octubre de 2024 a las 18:51 hora local. El testigo observó una fuente de luz bajo el horizonte, suspendida sobre un estanque a una distancia estimada de 2.700 pies. El objeto luminoso se asemejaba a una 'esfera tipo plasma' que cambiaba de forma y luminosidad de manera intermitente. En ciertos momentos, la fuente de luz principal pareció separarse en puntos luminosos más pequeños; un punto luminoso por debajo de la fuente principal se mantuvo justo sobre el agua sin comportarse de forma consistente con un simple reflejo de superficie. El objeto permaneció generalmente estático durante aproximadamente 45 minutos antes de desaparecer, sin sonido audible. A diferencia de los otros tres, este video fue 'analizado y autenticado por el gobierno de Estados Unidos'; el material se recortó para proteger la privacidad del testigo, pero según la propia ficha no recibió ninguna otra edición, mejora o alteración.\n\nEl cuarto, FBI-UAP-PR004 ('Northeastern Orb Sighting'), ocurrió en julio de 2025 a las 21:00 hora local. El testigo observó una luz intensa en su patio trasero al estacionar su auto al volver del trabajo, suspendida a unos 25 pies del suelo, a una distancia estimada de 90 pies. Su cónyuge salió a evaluar la situación y también presenció el fenómeno, describiéndolo como una 'esfera roja brillante' de aproximadamente un metro de diámetro, con un núcleo que parecía un 'sol' de plasma blanco del tamaño de una pelota de baloncesto. La esfera ascendió lentamente y se desplazó hacia la izquierda; ambos testigos observaron entonces una segunda esfera idéntica, suspendida sobre la primera. Mientras el testigo grababa con un iPhone 14 Pro Max, ambos orbes se desplazaron juntos hacia el oeste sobre una línea de árboles cercana, con un movimiento que ambos testigos describieron como silencioso y suave, 'como si volaran en formación o estuvieran atados entre sí'. Al alejarse de la vista, ambos testigos vieron que los orbes parecían fusionarse, a una distancia estimada final de 75 yardas.\n\nEl propio expediente de la AARO señala explícitamente que este cuarto avistamiento ocurrió 'dentro de 25 millas' de los tres anteriores, en una ubicación 'bien conocida' por los testigos y escasamente poblada — el mismo tipo de área que los tres primeros reportes. El FBI evaluó a los testigos de los primeros tres eventos como 'altamente creíbles'; a los dos testigos del cuarto evento, como 'creíbles'. Los cuatro videos remiten a documentos de respaldo del FBI —FBI-UAP-D004 a D008 para los tres primeros, D009 y D010 para el cuarto—, alojados en este sitio. D004 a D008 son comunicaciones internas de octubre a diciembre de 2024. El testigo de los tres primeros episodios, que vive en la zona desde 2006, contó que había instalado cámaras de sendero y otros sensores y que trabajaba para «descartar posibles explicaciones prosaicas»; en la entrevista (D005) explicó que cruzaba la hora de sus avistamientos con los registros ADS-B «para determinar qué avistamientos podían ser aviones». En noviembre de 2024 dos agentes vieron desde su patio luces blancas que pulsaban en la línea de árboles y una luz blanca sobre otra roja que se desplazaba rápido a la altura de las copas (D007). En los reconocimientos de día no hallaron nada inusual en el suelo ni en las copas, anotaron que varias casas al este tenían línea de visión a la zona (D006) y juzgaron «poco realista» que alguien volara allí un dron de noche sin chocar con las ramas (D008). D009 y D010 son las entrevistas de febrero de 2026 a la pareja del cuarto episodio; en D010, una nota del agente sitúa los objetos a unas 30 yardas y a 20-30 pies del suelo. Los documentos añaden datos que la versión de DVIDS no trae. El testigo de los tres primeros episodios dijo haber visto picos de radiación gamma que coincidían con los avistamientos y efectos extraños en aparatos electrónicos y datos de GPS (D004), y que era «común tener vídeo corrupto» al intentar grabarlos (D005); la entrevista recoge además un relato de 1996, de un vehículo que se apagó en Nuevo México bajo una luz, cuya atribución no queda clara por las tachaduras. Las fechas no casan: D004 dice que vive en esa casa desde 2006, y D005, que desde 2021. En el cuarto episodio, el testigo de D010 describe una bola de luz «amarilla y del tamaño de una pelota de baloncesto» y una segunda «del tamaño de una pelota de playa», no dos esferas rojas; y cuenta que en 1987 ya había visto algo extraño junto a una central eléctrica y que desde entonces «siempre le ha interesado el tema de los UAP».",
@@ -94,7 +158,8 @@
     "Los cuatro eventos ocurrieron dentro de un radio de 25 millas en la misma zona rural del noreste de EE.UU.",
     "El FBI evaluó a los testigos como 'altamente creíbles' (PR001-003) o 'creíbles' (PR004, dos testigos)",
     "Documentos de respaldo FBI-UAP-D004 a D010: el testigo cruzó sus avistamientos con registros ADS-B para descartar aviones; dos agentes vieron luces en la línea de árboles en noviembre de 2024 y juzgaron «poco realista» que se volara allí un dron de noche",
-    "Publicado en PURSUE Release 03 (12 de junio de 2026), serie 'FBI-UAP-PR' distinta de la serie 'DOW-UAP-PR' del resto del corpus"
+    "Publicado en PURSUE Release 03 (12 de junio de 2026), serie 'FBI-UAP-PR' distinta de la serie 'DOW-UAP-PR' del resto del corpus",
+    "Según los FD-1057 de 2024 (D004–D008), un vecino también vio luces en la línea de árboles"
   ],
   "evidence_en": [
     "Nov 2021 (PR001, 'Triangle-Orbs'): a single light resolves into multiple lights with erratic rotation, 5:00 AM, iPhone 12 Pro",
@@ -104,7 +169,8 @@
     "All four events occurred within a 25-mile radius in the same rural northeastern U.S. area",
     "The FBI assessed the witnesses as 'highly credible' (PR001-003) or 'credible' (PR004, two witnesses)",
     "Supporting documents FBI-UAP-D004 through D010: the witness cross-referenced his sightings with ADS-B records to rule out aircraft; two agents saw lights along the tree line in November 2024 and judged it \"unrealistic\" to fly a drone there at night",
-    "Released in PURSUE Release 03 (June 12, 2026), 'FBI-UAP-PR' series distinct from the 'DOW-UAP-PR' series covering the rest of the corpus"
+    "Released in PURSUE Release 03 (June 12, 2026), 'FBI-UAP-PR' series distinct from the 'DOW-UAP-PR' series covering the rest of the corpus",
+    "According to the 2024 FD-1057s (D004–D008), a neighbor also saw lights in the tree line"
   ],
   "sources": [
     {
@@ -132,6 +198,18 @@
       "url": "https://www.dvidshub.net/video/1010269",
       "note": "Ficha del cuarto vídeo: julio de 2025, esfera roja de un metro con núcleo blanco, dos orbes que parecen fusionarse; a menos de 25 millas de los tres anteriores.",
       "note_en": "Record of the fourth video: July 2025, one-metre red sphere with a white core, two orbs that appear to merge; within 25 miles of the previous three."
+    },
+    {
+      "name": "war.gov/UFO — expediente 'Northeastern Orb Sighting' (FBI-UAP-D004 a D010, PURSUE Release 03)",
+      "url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
+      "note": "Cinco FD-1057 (2024) y dos FD-302 (2026); los siete están embebidos en el visor de este caso.",
+      "note_en": "Five FD-1057 (2024) and two FD-302 (2026); all seven are embedded in this case's viewer."
+    },
+    {
+      "name": "war.gov/UFO — índice oficial PURSUE Release 03 (12 jun 2026)",
+      "url": "https://www.war.gov/UFO/",
+      "note": "Portal del Departamento de Guerra.",
+      "note_en": "Department of War portal."
     }
   ],
   "evidenceReviewed": "2026-10-02"
