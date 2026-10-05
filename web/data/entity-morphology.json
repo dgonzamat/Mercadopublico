@@ -83,8 +83,8 @@
     "slug": "reptiloide",
     "name": "Reptiloide",
     "name_en": "Reptiloid",
-    "description": "Arquetipo central de la cultura ufológica sin caso propio en el corpus: lo disponible es testimonio único sin corroborar, o relectura retroactiva de casos que nunca lo describieron así.",
-    "description_en": "A central archetype of UFO culture with no case of its own in the corpus: what exists is uncorroborated single testimony, or retroactive rereading of cases that never described it that way.",
+    "description": "Arquetipo central de la cultura ufológica sin caso propio en el corpus: lo disponible es testimonio único sin corroborar, o relectura retroactiva de casos que nunca lo describieron así. El relato más reciente, el de David Grusch en el episodio 2560 de The Joe Rogan Experience (2026), es de segunda mano y llega por un solo interlocutor; se registra como «Afirmada, no descrita».",
+    "description_en": "A central archetype of UFO culture with no case of its own in the corpus: what exists is uncorroborated single testimony, or retroactive rereading of cases that never described it that way. The most recent account, David Grusch's on episode 2560 of The Joe Rogan Experience (2026), is second-hand and comes through a single source; it is recorded as 'Asserted, not described'.",
     "color": "#8b0000",
     "present": false,
     "readsToward": []
