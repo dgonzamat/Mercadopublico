@@ -213,10 +213,12 @@ export async function ResearcherDetailPage({
                     rel="noopener noreferrer"
                     className="text-accent hover:underline"
                   >
-                    {s.name}
+                    <T es={s.name} en={s.name_en ?? s.name} locale={locale} />
                   </a>
                 ) : (
-                  <span>{s.name}</span>
+                  <span>
+                    <T es={s.name} en={s.name_en ?? s.name} locale={locale} />
+                  </span>
                 )}
                 {(s.note || s.note_en) && (
                   <span className="text-muted">

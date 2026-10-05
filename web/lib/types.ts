@@ -263,6 +263,10 @@ export interface ResearcherWork {
 
 export interface ResearcherSource {
   name: string;
+  /** Par inglés del nombre (mismo patrón que CaseSource): el sitio es
+   *  inglés-primario y la ficha renderiza `name_en ?? name`, así que una fuente
+   *  sin par muestra su nombre español a la ruta inglesa. */
+  name_en?: string;
   url?: string;
   note?: string;
   note_en?: string;
