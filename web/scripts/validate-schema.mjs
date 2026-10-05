@@ -135,7 +135,7 @@ researchers.forEach((r, i) => {
   } else {
     r.sources.forEach((s, j) => {
       if (!isStr(s.name)) err(`${w}.sources[${j}]`, "name obligatorio (string)");
-      for (const f of ["note", "note_en"])
+      for (const f of ["name_en", "note", "note_en"])
         if (s[f] !== undefined && !isStr(s[f]))
           err(`${w}.sources[${j}]`, `${f} debe ser string`);
       if (s.url !== undefined && !isHttpUrl(s.url))
