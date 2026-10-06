@@ -17,7 +17,20 @@ export type DonutDatum = {
   weak?: number;
 };
 
-const share = (x: number) => (x * 100).toFixed(1);
+/**
+ * Porcentajes a 1 decimal por *largest remainder*: suman exactamente 100,0.
+ * Redondear cada fila por separado con `toFixed(1)` puede dar 100,1 (o 99,9)
+ * bajo una leyenda que reparte el 100 %.
+ */
+function sharesByKey(rows: DonutDatum[]): Record<string, string> {
+  const total = rows.reduce((s, r) => s + r.count, 0) || 1;
+  const exact = rows.map((r) => (r.count / total) * 1000);
+  const base = exact.map(Math.floor);
+  let left = 1000 - base.reduce((s, n) => s + n, 0);
+  const order = exact.map((v, i) => ({ i, rest: v - Math.floor(v), v })).sort((a, b) => b.rest - a.rest || b.v - a.v);
+  for (let k = 0; left > 0 && k < order.length; k++, left--) base[order[k].i] += 1;
+  return Object.fromEntries(rows.map((r, i) => [r.key, (base[i] / 10).toFixed(1)]));
+}
 // Conteo modal (argmax) → entero; red de seguridad para un count fraccional.
 const fmtCount = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
@@ -40,6 +53,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
   const fill = dark ? "bg-bg/15" : "bg-border/40"; // pista de mini-barra + fila activa
   const rowHover = dark ? "hover:bg-bg/15" : "hover:bg-border/40";
 
+  const shares = sharesByKey(rows);
   const [active, setActive] = useState<string | null>(null);
   // Posición del cursor (relativa al donut) para el tooltip flotante.
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -93,7 +107,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
               </div>
               <div className="mt-1 font-mono text-[11px] text-muted">
                 <span className="font-semibold tabular-nums" style={{ color: activeRow.color }}>
-                  {share(activeRow.count / N)}%
+                  {shares[activeRow.key]}%
                 </span>{" "}
                 · {fmtCount(activeRow.count)} <T es="casos" en="cases" locale={locale} />
               </div>
@@ -104,7 +118,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
           viewBox={`0 0 ${size} ${size}`}
           className="donut-in h-60 w-60 overflow-visible"
           role="img"
-          aria-label={rows.map((rw) => `${rw.label} ${share(rw.count / N)}%`).join(", ")}
+          aria-label={rows.map((rw) => `${rw.label} ${shares[rw.key]}%`).join(", ")}
         >
           <defs>
             {/* Lift sutil para el segmento activo (profundidad, no glow chillón) */}
@@ -136,7 +150,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
                   dim={dim}
                   dasharray={dasharray}
                   dashoffset={dashoffset}
-                  title={`${row.label}: ${share(frac)}%`}
+                  title={`${row.label}: ${shares[row.key]}%`}
                   onActivate={() => setActive(row.key)}
                   onDeactivate={clear}
                 />
@@ -174,7 +188,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
                   transition: "opacity 200ms",
                 }}
               >
-                {share(frac)}%
+                {shares[row.key]}%
               </text>
             );
           })}
@@ -183,7 +197,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
           {activeRow ? (
             <>
               <span className="font-mono text-3xl font-semibold tabular-nums transition-colors" style={{ color: activeRow.color }}>
-                {share(activeRow.count / N)}%
+                {shares[activeRow.key]}%
               </span>
               <span className={`mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider ${muted}`}>
                 <T es={activeRow.label} en={activeRow.labelEn} locale={locale} />
@@ -216,7 +230,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
                   </span>
                 </span>
                 <span className={`shrink-0 whitespace-nowrap text-right tabular-nums ${muted}`}>
-                  <span className={i === 0 || isActive ? txt : ""}>{share(frac)}%</span>
+                  <span className={i === 0 || isActive ? txt : ""}>{shares[row.key]}%</span>
                   {" · "}
                   {fmtCount(row.count)} <T es="casos" en="cases" locale={locale} />
                 </span>

@@ -230,6 +230,20 @@ else {
 
 }
 
+// Leyenda del donut: los % a 1 decimal REALMENTE impresos suman 100,0. Con
+// `toFixed(1)` por fila, producción imprimía 100,1 (15 filas) bajo una leyenda
+// que reparte el 100 % (oct 2026); se reparte por resto mayor en MeceDonut.
+console.log("\nDonut · los % impresos de la leyenda suman 100,0");
+for (const ol of html.matchAll(/<ol class="w-full flex-1.*?<\/ol>/gs)) {
+  const dec = [...ol[0].matchAll(/class="(?:text-text)?">(\d+\.\d)(?:<!-- -->)?%<\/span>/g)].map((m) => Math.round(parseFloat(m[1]) * 10));
+  if (dec.length < 2) {
+    fail("no encontré filas de leyenda con % a 1 decimal (¿cambió el markup de MeceDonut?)");
+    continue;
+  }
+  const suma = dec.reduce((a, b) => a + b, 0);
+  check(`la leyenda (${dec.length} filas) suma ${(suma / 10).toFixed(1)}% (debe ser 100.0%)`, suma === 1000);
+}
+
 // Los enteros REALMENTE impresos suman 100 — no basta con que la leyenda lo
 // prometa. Redondear cada fila por su cuenta daba 101% en pantalla bajo ese
 // mismo texto, y el test pasaba igual porque solo validaba los valores crudos.
