@@ -94,8 +94,7 @@ Sea cual sea el modo:
 | Elegir el hueco | **`/proximo-caso`** | Mide cobertura país×década/tier **y corre el NEWS-SWEEP**. No vuelvas a buscar por tu cuenta: ese es su trabajo |
 | Crear | **`/nuevo-caso`** | Schema `UAPCase`, `num` secuencial, `posterior` MECE=1, estándar E13 (~550 palabras ES+EN) y disciplina de fuentes primarias |
 | Descartes | **`/learn`** → [`docs/registros.md`](../../docs/registros.md) | Cada candidato rechazado, fechado y **con motivo** |
-| Cierre | **`/retro`** | Lo que no se capturó en caliente |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Ver «Toda cadena cierra igual». |
 
 **Salida honesta posible: «no hay candidato anclable»** — con los descartes registrados es un resultado, no un fracaso. Ojo con el visual: sin `documents[]`/`primaryDocument` el caso engorda el backlog E21; revisa `web/public/pursue/` antes.
 
@@ -113,7 +112,7 @@ Sea cual sea el modo:
 | Seguridad | **`security-review`** | Dimensión **nunca mirada** por el cerebro, sobre un repo con anon key de Supabase y funciones `SECURITY DEFINER` en producción |
 | Diff a mergear | **`review`** | Segunda mirada antes del merge |
 | Trinquete | **`/blindar`** | Si el defecto abre una clase enforzable |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Ver «Toda cadena cierra igual». |
 
 Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo donde más falsos verdes han aparecido.
 
@@ -129,7 +128,7 @@ Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo do
 | Lo medible | `audit-design.mjs` | Contraste AA, touch targets, drift de color de tier |
 | Priorizar | **`/innovar`** acotado a UI/UX | Backlog por leverage, no lista de deseos |
 | Articular | **`dataviz`** / **`artifact-design`** | Solo si el visual gana al texto |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Ver «Toda cadena cierra igual». |
 
 **Este modo necesita MÁS disciplina, no menos** — es el más fácil de llenar de trabajo inventado: **una mejora sin fricción observada es pulido, y el pulido no entra.** Antes de proponer una vista, lista `app/*/page.tsx` y grepea `lib/`.
 
@@ -143,7 +142,7 @@ Aplica la **regla cero** de VERIFY a toda sonda que uses aquí — es el modo do
 |---|---|---|
 | Simplificar | **`simplify`** | Reuso, eficiencia, limpieza de altitud. **Explícitamente NO caza bugs** — por eso es un modo distinto de `bugs` |
 | Trinquete | **`/blindar`** | Si la limpieza revela una clase enforzable |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Ver «Toda cadena cierra igual». |
 
 Cuidado con el anti-pattern de bundle: al tocar imports, traza el grafo desde cada `"use client"` antes de concluir nada.
 
@@ -161,7 +160,7 @@ El corpus va hasta 2026 pero el mundo sigue: un caso «completo» hoy puede tene
 | Contraste | `gh-pages` + el propio caso | ¿ya está cubierto? |
 | Aplicar | **`/nuevo-caso`** (su disciplina de fuentes) | Mismo anclaje a primaria |
 | Descartes | **`/learn`** → registros | Los ~14 de jul 2026 se habrían salvado |
-| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Clase enforzable → guardrail; lecciones **y descartes** → memoria; cierre → cosecha. |
+| **Cierre** | **`/blindar`** · **`/learn`** · **`/retro`** | Ver «Toda cadena cierra igual». |
 
 **La noticia es pista, no fuente.** Ancla a primaria o descarta — la tasa histórica de descarte ronda el 75%, y este dominio está lleno de detalle fabricado. Si el juicio del caso cambia, **mueve el `posterior`**: registrar evidencia nueva sin dejarla pesar es incoherente.
 
@@ -249,7 +248,7 @@ Termina cuando el modo pedido está agotado y `err=0`. **Declara qué skills del
 ## Invariantes
 1. **Impacto-primero** — el presupuesto va a crear valor; la deuda es un gate, no el objetivo. En el modo **diagnóstico** el corpus manda y saltárselo exige probar en esa corrida que la palanca está agotada; en los modos explícitos **manda tu elección** — la precedencia corregía el sesgo del cerebro al elegir, y cuando eliges tú, sobra. El meta-trabajo sobre el propio loop nunca cuenta como ataque. *(Corrección de la v1, endurecida en V5, acotada a diagnóstico en V7.)*
 2. **Cimiento duro** — `err=0` antes de construir; nunca sobre schema roto.
-3. **Verificado, no eyeball-eado** — lo que el sitio SIRVE se comprueba contra el artefacto desplegado en `gh-pages` (VERIFY), que funciona sin `node_modules`; `webapp-testing` tras **`run`**, cuando el cambio es interactivo. *(Corrección de V2, reescrita en V4: la versión anterior de este invariante exigía `webapp-testing` sin más y contradecía a VERIFY desde entonces — un lector que solo mire los invariantes concluía algo falso.)*
+3. **Verificado, no eyeball-eado** — lo que el sitio SIRVE se comprueba contra el artefacto desplegado en `gh-pages` (VERIFY), que funciona sin `node_modules`; `webapp-testing` tras **`run`**, cuando el cambio es interactivo. *(V2, reescrito en V4.)*
 4. **Auto-medido, no auto-afirmado** — nada se declara sano por fe: **toda sonda pasa su control negativo** (regla cero de VERIFY) y **todo guardrail su gate doble** (RATCHET). Si la corrida editó un skill del loop, `skill-creator` mide el cambio. *(El invariante se cumple en cada corrida, no solo cuando hay evals.)*
 5. **Trinquete** — cada fix enforzable → guardrail (medio, no fin), y el guardrail lo crea **`/blindar`**, no el cerebro a mano.
 6. **Orquestar, no ejecutar** — los skills del loop se delegan **siempre** que la acción cae en su dominio; hacer su trabajo a mano se salta la disciplina que codifican y deja al skill sin usar (y por tanto sin mejorar). Los de librería son opt-in. Al cerrar, declara cuáles invocaste y cuáles no. *(jul 2026: tres violaciones en una sesión.)*
@@ -260,6 +259,4 @@ Termina cuando el modo pedido está agotado y `err=0`. **Declara qué skills del
 - Señales de deuda = node-plano sin red; `run` + `webapp-testing` corren local (sin salir a internet); las de contenido pueden usar red (Wikipedia/archive.org).
 - **El cerebro no se autoconvoca, pero sí se autodirige.** No hay cron, hook ni cola que lo lance: arranca cuando lo invocas. Pero una vez dentro **decide y ejecuta** — elige modo, lo gatilla y encadena a otro si el trabajo lo destapa. Lo que no hace es devolverte la pregunta que su propio diagnóstico ya respondió. La automatización del repo (`weekly-audit`, `discover-cases`) produce insumos que los modos LEEN, nunca gatillos que disparen trabajo por su cuenta.
 - Un disparo, una señal — de deuda **o de impacto**. Sin señal, no es un disparo.
-- **DOS CLASES DE SKILL, DOS REGLAS OPUESTAS.** No mezclarlas era el agujero: una sola regla permisiva («invócalo solo si supera al enfoque plano») dejaba el juicio para el instante en que hacerlo a mano *siempre* parece más barato, así que se resolvía en «no delegues» casi siempre.
-  - **Skills del loop** (`/proximo-caso`, `/nuevo-caso`, `/blindar`, `/curar-memoria`, `/learn`, `/retro`, `/innovar`): **delegación OBLIGATORIA**. Si la acción cae en su dominio, se invocan — el cerebro **no reimplementa** su trabajo. No es purismo: un skill que nunca se invoca nunca mejora, y el trabajo hecho a mano **se salta la disciplina que el skill codifica** (el gate doble de `/blindar`, la disciplina de fuentes de `/nuevo-caso`, la deduplicación de `/learn`). Es el mismo principio que el resto del doc: un output que nadie consume se pudre — y un skill que nadie invoca es exactamente eso.
-  - **Skills de librería** (`webapp-testing`, `dataviz`, `artifact-design`, `skill-creator`): opt-in, solo cuando superan al enfoque plano. Simplicity first — aquí sí, no los llames por lucir.
+- **Dos clases de skill, dos reglas opuestas**: los del loop se delegan siempre (ver «Skills del loop»); los de librería son opt-in (ver «Skills de librería»). Por qué no basta una sola regla: [historia](../../docs/cerebro-historia.md).

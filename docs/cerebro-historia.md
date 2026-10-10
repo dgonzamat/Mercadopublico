@@ -44,3 +44,16 @@ verde. Tres de los cuatro los detectó el usuario, no el loop.
   error como éxito. De ahí la regla cero.
 - **Tres guardrails a mano** (E31–E33) escritos dentro del cerebro sin invocar
   `/blindar`, saltándose su gate doble. De ahí la delegación obligatoria.
+- **Invariante 3 contradecía a VERIFY** (V2, reescrito en V4) — exigía
+  `webapp-testing` sin más, mientras VERIFY ya mandaba verificar lo servido en
+  `gh-pages`; un lector que solo mirara los invariantes concluía algo falso.
+- **Por qué dos reglas de skill y no una** — una sola regla permisiva («invócalo
+  solo si supera al enfoque plano») dejaba el juicio para el instante en que
+  hacerlo a mano *siempre* parece más barato, y se resolvía en «no delegues»
+  casi siempre. Los skills del loop (`/proximo-caso`, `/nuevo-caso`, `/blindar`,
+  `/curar-memoria`, `/learn`, `/retro`, `/innovar`) pasaron a delegación
+  obligatoria: un skill que nunca se invoca nunca mejora, y el trabajo a mano se
+  salta la disciplina que codifica (el gate doble de `/blindar`, las fuentes de
+  `/nuevo-caso`, la deduplicación de `/learn`). Los de librería
+  (`webapp-testing`, `dataviz`, `artifact-design`, `skill-creator`) siguen
+  opt-in. Extraído de `cerebro.md` en oct 2026 por el techo X6.
