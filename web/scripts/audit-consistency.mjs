@@ -1948,6 +1948,44 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9za5. RULE E47: notas internas y rankings del corpus en la prosa ───
+//
+// Un barrido de texto generado (oct 2026) encontró, publicadas en la prosa de
+// los casos, tareas del redactor («lo que el corpus debe seguir…»), bitácoras
+// de corrección («una versión anterior de esta ficha contaba…») y rankings
+// dentro del propio archivo («el primer caso del corpus en Sudán», «la mejor
+// evidencia fotográfica del corpus»). Las dos primeras son notas internas que
+// el lector toma por análisis; los rankings son conteos disfrazados que se
+// vuelven falsos al entrar un caso nuevo. Se reescribieron ~150 frases; esta
+// regla impide que vuelvan. Las citas entre comillas quedan fuera.
+// El léxico de hipérbole («fascinante», «unprecedented»…) no se mecaniza como
+// error: sus usos restantes son citas, nombres propios o afirmaciones
+// atribuidas, y se reporta como NOTE para revisión.
+{
+  const NOTE_RE = /\b(?:el|este) corpus (?:debe|debería|deberá|necesita|tiene que)\b|\bthe corpus (?:must|should|needs)\b|versión anterior de (?:esta|este) (?:ficha|caso)|(?:la|una) ficha anterior|esta misma ficha|versiones anteriores|earlier versions? of this|previous version of this|this same record/i;
+  const RANK_RE = /\bprimer[oa]? (?:[\p{L}\p{N}'’-]+ ){0,4}(?:del|en el) corpus\b|corpus's first\b|\bfirst (?:[\p{L}\p{N}'’-]+ ){0,3}(?:case|file) in the corpus\b|\b(?:más|menos) [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} (?:del|de todo el|en todo el) corpus\b|\bmejor(?:es)? [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} del corpus\b|corpus's (?:most|least|best|strongest|weakest|clearest|largest|only|anchor)\b|\b(?:most|best|strongest|weakest|largest|longest|shortest|clearest|cleanest|oldest)\b(?: [\p{L}\p{N}'’-]+){0,4} in the (?:entire )?corpus\b|\bcaso ancla del corpus\b|\bancla a [\p{L}\p{N}'’-]+ en el corpus\b|\banchors [\p{L}\p{N}'’-]+ in the corpus\b/iu;
+  const HYPE_RE = /\b(?:fascinante|intrigante|enigmátic[oa]s?|desconcertante|sin precedentes|fascinating|intriguing|enigmatic|baffling|unprecedented)\b/gi;
+  const stripQuotes = (t) => t.replace(/«[^»]*»|“[^”]*”|"[^"]*"|(?<!\w)'[^']{2,200}'(?!\w)/g, "");
+  const PROSE = ["summary", "whatHappened", "whyMatters", "evidence"];
+  let hype = 0;
+  for (const c of cases) {
+    const file = path.join("data", "cases", `${c.id}.json`);
+    for (const [k, v] of Object.entries(c)) {
+      if (!PROSE.includes(k.replace(/_en$/, ""))) continue;
+      for (const s of Array.isArray(v) ? v : [v]) {
+        if (typeof s !== "string") continue;
+        const t = stripQuotes(s);
+        const note = t.match(NOTE_RE);
+        if (note) record("ERROR", file, 0, `E47 nota interna en ${k}: «${note[0]}». Es una tarea o una bitácora del redactor, no análisis: reescribe la frase como hecho («queda por ver si…») o bórrala.`);
+        const rank = t.match(RANK_RE);
+        if (rank) record("ERROR", file, 0, `E47 ranking dentro del corpus en ${k}: «${rank[0]}». Es un conteo disfrazado que caduca al entrar un caso nuevo: describe el caso por sí mismo.`);
+        hype += (t.match(HYPE_RE) ?? []).length;
+      }
+    }
+  }
+  if (hype > 0) record("NOTE", path.join("data", "cases"), 0, `E47 léxico: ${hype} usos de hipérbole fuera de comillas (fascinante, enigmático, unprecedented…). Revisa que sean afirmaciones atribuidas o nombres propios.`);
+}
+
 // ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
 //
 // Cada incidente llevaba dos números escritos por separado —la «probabilidad»

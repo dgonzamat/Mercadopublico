@@ -122,8 +122,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
           <h2 className="max-w-3xl font-display text-2xl font-medium leading-snug text-text md:text-3xl">
             <T
               locale={locale}
-              es="No es teoría — es una colección documentada de evidencia."
-              en="It's not theory — it's a documented evidence collection."
+              es="Una colección documentada de evidencia, caso por caso."
+              en="A documented collection of evidence, case by case."
             />
           </h2>
         </div>
