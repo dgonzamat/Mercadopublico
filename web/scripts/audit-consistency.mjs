@@ -1926,6 +1926,28 @@ if (fs.existsSync(regionsPath)) {
   }
 }
 
+// ─── 9za4. RULE E46: morfologías ausentes coherentes con el corpus ──────
+//
+// /entities separa las formas «presentes» de las «ausentes» por el flag
+// `present` de data/entity-morphology.json, y la descripción de una ausente
+// afirma «sin caso propio en el corpus». El flag se escribe a mano: si una
+// ficha nueva etiqueta una forma ausente, la página la sigue listando como
+// ausente con un texto que ya es falso; y una presente sin casos sale con
+// «0 casos». Esta regla exige que `present` coincida con el uso real.
+{
+  const morphPath = path.join(root, "data", "entity-morphology.json");
+  const morphs = JSON.parse(fs.readFileSync(morphPath, "utf-8"));
+  const used = new Set(cases.flatMap((c) => c.entityMorphology ?? []));
+  for (const m of morphs) {
+    if (m.present && !used.has(m.slug)) {
+      record("ERROR", morphPath, 0, `E46 morfologías: «${m.slug}» figura como presente y ninguna ficha la usa. Márcala present:false con su porqué, o etiqueta el caso.`);
+    }
+    if (!m.present && used.has(m.slug)) {
+      record("ERROR", morphPath, 0, `E46 morfologías: «${m.slug}» figura como ausente pero una ficha la usa. Pásala a present:true y reescribe la descripción («sin caso propio» ya no es cierto).`);
+    }
+  }
+}
+
 // ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
 //
 // Cada incidente llevaba dos números escritos por separado —la «probabilidad»

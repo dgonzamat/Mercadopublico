@@ -83,10 +83,10 @@
     {
         "id": "8j",
         "letter": "j",
-        "name": "Metodología Bayesiana",
-        "name_en": "Bayesian methodology",
-        "description": "Qué casos mueven probabilidades vs cuáles tienen retorno marginal nulo.",
-        "description_en": "Which cases move probabilities vs marginal-return-zero ones.",
+        "name": "Paneles científicos de revisión",
+        "name_en": "Scientific review panels",
+        "description": "Comités de científicos que revisan la evidencia acumulada y concluyen qué datos harían falta para resolver los casos, como el panel Sturrock (1998) o el equipo independiente de la NASA (2023).",
+        "description_en": "Committees of scientists who review the accumulated evidence and conclude what data would be needed to resolve the cases, such as the Sturrock panel (1998) or NASA's independent study team (2023).",
         "color": "#999999"
     },
     {
