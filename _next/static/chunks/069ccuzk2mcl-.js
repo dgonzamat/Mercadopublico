@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,3718,o=>{"use strict";var e=o.i(71645);o.s(["default",0,function(){return(0,e.useEffect)(()=>{let o=window.location.pathname.replace(/^\/en(?=\/|$)/,"")||"/";window.location.replace(o+window.location.search+window.location.hash)},[]),null}])}]);
