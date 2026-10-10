@@ -131,8 +131,8 @@ export function EntitiesView({ locale }: { locale: "es" | "en" }) {
       <section className="space-y-3">
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
           <T
-            es="Arquetipos conocidos, sin caso en el corpus"
-            en="Known archetypes, no case in the corpus"
+            es="Arquetipos conocidos, sin caso en el archivo"
+            en="Known archetypes, no case in the archive"
             locale={locale}
           />
         </h2>

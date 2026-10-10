@@ -147,7 +147,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         <T es="Probabilidades · modelo comparable" en="Probabilities · comparable model" locale={locale} />
       </Eyebrow>
       <H1>
-        <T es="Qué explica el corpus" en="What the corpus explains" locale={locale} />
+        <T es="Qué explica cada caso" en="What explains each case" locale={locale} />
       </H1>
       <Lede>
         <T
@@ -159,7 +159,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
 
       <section className="mt-12">
         <H2>
-          <T es="Las hipótesis del corpus" en="The corpus hypotheses" locale={locale} />
+          <T es="Las seis explicaciones" en="The six explanations" locale={locale} />
         </H2>
         <Caption>
           <T
@@ -183,12 +183,12 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
 
       <section className="mt-16">
         <H2>
-          <T es="La heterogeneidad en el tiempo" en="Heterogeneity over time" locale={locale} />
+          <T es="Lo que queda sin explicación ordinaria, década a década" en="What lacks an ordinary explanation, decade by decade" locale={locale} />
         </H2>
         <Caption>
           <T
-            es="El donut de arriba es el snapshot agregado. Esta serie le añade el eje temporal: cuánto de cada década resiste explicación mundana. El repunte de los 2020s coincide con el ciclo de divulgación."
-            en="The donut above is the aggregate snapshot. This series adds the time axis: how much of each decade resists a mundane explanation. The 2020s uptick coincides with the disclosure cycle."
+            es="El donut de arriba muestra el total. Esta serie lo reparte por década: cuánto de cada década no tiene una explicación ordinaria. La subida de los años 2020 coincide con el ciclo de divulgación."
+            en="The donut above shows the total. This series breaks it down by decade: how much of each decade has no ordinary explanation. The rise in the 2020s coincides with the disclosure cycle."
             locale={locale}
           />
         </Caption>

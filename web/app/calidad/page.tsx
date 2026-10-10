@@ -244,7 +244,7 @@ export default function CalidadPage() {
       <section className="space-y-5">
         <div className="flex items-baseline justify-between gap-3 border-b border-border pb-2">
           <h2 className="font-display text-2xl font-medium">
-            <T es="Reparto MECE del corpus" en="Corpus MECE split" />
+            <T es="Reparto de explicaciones del archivo" en="How the archive splits among explanations" />
           </h2>
           <span className="font-mono text-xs uppercase tracking-widest text-muted">
             <T es="nº esperado de casos" en="expected # of cases" />
@@ -332,8 +332,8 @@ export default function CalidadPage() {
 
       <footer className="border-t border-border pt-6 text-sm text-muted">
         <T
-          es="Panel derivado de las mismas señales que audit-consistency.mjs reporta en cada build. Cifras vivas — se recalculan con el corpus, no fijadas a mano."
-          en="Panel derived from the same signals audit-consistency.mjs reports on every build. Live figures — recomputed with the corpus, never hand-set."
+          es="Las cifras salen de las mismas comprobaciones que corren en cada compilación y se recalculan con cada cambio; ninguna se escribe a mano."
+          en="The figures come from the same checks that run on every build and are recalculated with every change; none is written by hand."
         />
       </footer>
     </div>

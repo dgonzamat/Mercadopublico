@@ -255,8 +255,8 @@ export default function WorldMap({
           ) : (
             <p className="text-sm text-muted">
               <T
-                es="Ningún investigador del corpus está asociado a casos de este país."
-                en="No researcher in the corpus is associated with cases from this country."
+                es="Ningún investigador del archivo está asociado a casos de este país."
+                en="No researcher in the archive is associated with cases from this country."
               />
             </p>
           )}

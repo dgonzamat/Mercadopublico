@@ -75,8 +75,8 @@ export default function ContactPage() {
         </span>
         <span className="text-sm text-muted">
           <T
-            es="Casos y probabilidades del corpus, en formato visual."
-            en="Cases and probabilities from the corpus, in visual form."
+            es="Casos y probabilidades del archivo, en formato visual."
+            en="Cases and probabilities from the archive, in visual form."
           />
         </span>
       </a>
@@ -95,8 +95,8 @@ export default function ContactPage() {
         </span>
         <span className="text-sm text-muted">
           <T
-            es="Tableros visuales de casos, mapas y patrones del corpus."
-            en="Visual boards of cases, maps and patterns from the corpus."
+            es="Tableros visuales de casos, mapas y patrones del archivo."
+            en="Visual boards of cases, maps and patterns from the archive."
           />
         </span>
       </a>

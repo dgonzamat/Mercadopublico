@@ -215,7 +215,7 @@ export function CasePosterior({
         ))}
       </div>
       <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T es="Hipótesis modal" en="Modal hypothesis" locale={locale} />:{" "}
+        <T es="Explicación más probable" en="Most likely explanation" locale={locale} />:{" "}
         <span style={{ color: m.color }} className="font-semibold">
           <T es={withDetail(m).es} en={withDetail(m).en} locale={locale} />
         </span>{" "}

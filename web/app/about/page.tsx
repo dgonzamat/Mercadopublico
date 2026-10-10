@@ -203,10 +203,10 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                     <strong className="text-tierS"><T es="Tier (S/A/B)" en="Tier (S/A/B)" locale={locale} /></strong> — <T es="la fuerza de la evidencia. Se ve como badge en cada caso y como color del marcador en el mapa." en="the strength of the evidence. Shown as a badge on each case and as the marker color on the map." locale={locale} />
                   </li>
                   <li>
-                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" locale={locale} /></strong> — <T es="cuánto del caso sigue sin explicación: la parte de la partición de explicaciones que no cubre ninguna causa conocida («indeterminado» más las dos narrativas no humanas). No se escribe a mano, se calcula desde esa partición, así que nunca la contradice. Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how much of the case remains unexplained: the share of the partition of explanations that no known cause covers («indeterminate» plus the two non-human narratives). It is not written by hand but computed from that partition, so it never contradicts it. Shown as «%» on each case and as the marker size on the map." locale={locale} />
+                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" locale={locale} /></strong> — <T es="cuánto del caso sigue sin explicación: la parte del reparto de explicaciones que no cubre ninguna causa conocida («indeterminado» más las dos explicaciones no humanas). No se escribe a mano: se calcula desde ese reparto, así que nunca lo contradice. Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how much of the case remains unexplained: the share of the split of explanations that no known cause covers («indeterminate» plus the two non-human explanations). It is not written by hand: it is computed from that split, so it never contradicts it. Shown as «%» on each case and as the marker size on the map." locale={locale} />
                   </li>
                   <li>
-                    <strong className="text-text"><T es="Partición MECE" en="MECE partition" locale={locale} /></strong> — <T es="qué fue: la distribución sobre seis narrativas excluyentes." en="what it was: the distribution over six mutually exclusive narratives." locale={locale} /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" locale={locale} /></LocaleLink>
+                    <strong className="text-text"><T es="Reparto de explicaciones" en="Split of explanations" locale={locale} /></strong> — <T es="qué fue: cómo se reparte el caso entre seis explicaciones que se excluyen entre sí." en="what it was: how the case splits across six explanations that exclude one another." locale={locale} /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" locale={locale} /></LocaleLink>
                   </li>
                 </ul>
                 <Body className="mt-3 text-sm text-muted">
@@ -243,8 +243,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </Body>
               <div className="grid gap-4 sm:grid-cols-2">
                 <MoveList
-                  es="Desplaza masa entre narrativas"
-                  en="Moves mass between narratives"
+                  es="Cambia el reparto entre explicaciones"
+                  en="Shifts the split between explanations"
                   items={[
                     "Tier S/A con multi-sensor → posterior nítido (Tehran, Nimitz)",
                     "Categoría de evidencia nueva (Hessdalen, Lake Huron)",
@@ -382,7 +382,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
 
               <div className="mt-10 space-y-4 border-t border-text/15 pt-8">
                 <Eyebrow>
-                  <T es="Posterior por caso, agregado mecánico" en="Per-case posterior, mechanical aggregate" locale={locale} />
+                  <T es="Reparto por caso, suma automática" en="Split per case, automatic total" locale={locale} />
                 </Eyebrow>
                 <h3 className="font-display text-xl font-medium leading-snug text-text md:text-2xl">
                   <T es="Cómo cada caso nuevo mueve las probabilidades automáticamente" en="How each new case moves the probabilities automatically" locale={locale} />
@@ -423,11 +423,11 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
         <section className="space-y-6 border-t-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
           <Eyebrow><T es="Ya entiendes el método" en="You now understand the method" locale={locale} /></Eyebrow>
           <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
-            <T es="Ahora mira el resultado: seis narrativas que reparten el corpus" en="Now see the result: six narratives partitioning the corpus" locale={locale} />
+            <T es="Ahora mira el resultado: cómo se reparte el archivo entre seis explicaciones" en="Now see the result: how the archive splits across six explanations" locale={locale} />
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
             <Cta href="/probabilidades" variant="primary">
-              <T es="Ver las seis narrativas →" en="See the six narratives →" locale={locale} />
+              <T es="Ver las seis explicaciones →" en="See the six explanations →" locale={locale} />
             </Cta>
             <Cta href="/cases" variant="secondary">
               <T es={`Ver los ${STATS.cases} casos →`} en={`See the ${STATS.cases} cases →`} locale={locale} />

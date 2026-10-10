@@ -8,7 +8,7 @@ import { Eyebrow, H1, Lede } from "@/lib/typography";
 export const metadata = {
   ...pageMeta({
     title: "Recurring patterns of the phenomenon",
-    description: `${STATS.patterns} recurring patterns (8a–8r) identified across the corpus of institutional UAP cases.`,
+    description: `${STATS.patterns} recurring patterns identified across institutional UAP cases.`,
     path: "/patterns/",
   }),
   alternates: {
@@ -25,11 +25,14 @@ export default function PatternsPage() {
 
 // `locale` fija el idioma que emite cada <T> (un idioma por URL → mitad de DOM).
 export function PatternsView({ locale }: { locale: "es" | "en" }) {
+  // El rango se deriva de los datos: escrito a mano decía «8a–8r» con 19
+  // patrones (8a–8s) publicados.
+  const range = `${patterns[0].id}–${patterns[patterns.length - 1].id}`;
   return (
     <div className="space-y-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T es="El catálogo · 8a–8r" en="The catalog · 8a–8r" locale={locale} />
+          <T es={`El catálogo · ${range}`} en={`The catalog · ${range}`} locale={locale} />
         </Eyebrow>
         <H1>
           <T

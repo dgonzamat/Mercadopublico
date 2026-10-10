@@ -141,8 +141,8 @@ export async function ReleasePage({
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`${list.length} casos del corpus extraen documentos de esta release. ${meta.blurbEs}`}
-            en={`${list.length} cases in the corpus draw documents from this release. ${meta.blurbEn}`}
+            es={`${list.length} casos usan documentos de esta entrega. ${meta.blurbEs}`}
+            en={`${list.length} cases use documents from this release. ${meta.blurbEn}`}
             locale={locale}
           />
         </Lede>

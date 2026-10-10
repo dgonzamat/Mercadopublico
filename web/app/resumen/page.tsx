@@ -92,8 +92,8 @@ const THREE_FRASES = [
     en: "There is a phenomenon institutions have been documenting since 1947, and no single explanation is enough to cover all of it.",
   },
   {
-    es: "En mayo de 2026, Estados Unidos liberó por primera vez archivos masivos sobre el tema — una operación llamada PURSUE, la primera divulgación presidencial de la historia. Pero la liberación fue cuidadosamente curada para no afirmar ni negar nada sustantivo.",
-    en: "In May 2026, the United States released massive archives on the topic for the first time — an operation called PURSUE, the first presidential disclosure in history. But the release was carefully curated to neither affirm nor deny anything substantive.",
+    es: "Desde mayo de 2026, el Gobierno de EE. UU. publica por entregas, en el programa PURSUE, archivos UAP antes clasificados. Los documentos salen sin una conclusión oficial: no confirman ni descartan nada.",
+    en: "Since May 2026, the U.S. government has been publishing previously classified UAP files in installments, through the PURSUE program. The documents come out with no official conclusion: they neither confirm nor rule out anything.",
   },
   {
     es: "Cómo se está liberando la información importa más que el contenido mismo de lo liberado.",
@@ -279,8 +279,8 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
         </div>
         <Body className="text-muted">
           <T
-            es="Cuando una institución se enfrenta al fenómeno UAP, el corpus identifica cuatro maneras distintas de manejarlo:"
-            en="When an institution faces the UAP phenomenon, the corpus identifies four distinct ways of handling it:"
+            es="Cuando una institución se enfrenta al fenómeno UAP, los casos muestran cuatro maneras distintas de manejarlo:"
+            en="When an institution faces the UAP phenomenon, the cases show four distinct ways of handling it:"
             locale={locale}
           />
         </Body>
@@ -347,8 +347,8 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
         </Cta>
         <Cta href="/probabilidades" variant="secondary">
           <T
-            es="Cómo se reparte el corpus entre explicaciones"
-            en="How the corpus splits among the explanations"
+            es="Cómo se reparte el archivo entre explicaciones"
+            en="How the archive splits among the explanations"
             locale={locale}
           />
         </Cta>

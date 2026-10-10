@@ -22,8 +22,8 @@ export function HypothesesSnapshot({ locale }: { locale: "es" | "en" }) {
       <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
         <T
           locale={locale}
-          es={`Cómo se clasifican los ${N} incidentes del corpus entre las narrativas — suman 100%`}
-          en={`How the corpus's ${N} incidents classify among the narratives — they sum to 100%`}
+          es={`Cómo se reparten los ${N} incidentes del archivo entre las explicaciones (suman 100 %)`}
+          en={`How the archive's ${N} incidents split among the explanations (they sum to 100%)`}
         />
       </p>
       <div className="mt-8">

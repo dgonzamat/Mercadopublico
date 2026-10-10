@@ -1210,7 +1210,7 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
       {!mundaneLeads && topDef && (
         <p className="text-sm text-text">
           <span className="font-semibold">
-            <T locale={locale} es="Lectura dominante del reparto: " en="Dominant reading of the partition: " />
+            <T locale={locale} es="Lo más probable: " en="Most likely: " />
           </span>
           <T locale={locale} es={`${topDef.label} (${Math.round(100 * topP)} %)`} en={`${topDef.labelEn} (${Math.round(100 * topP)}%)`} />
         </p>

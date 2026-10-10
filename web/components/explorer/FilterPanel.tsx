@@ -110,7 +110,7 @@ export function FilterPanel({
       {/* NARRATIVE (MECE dominante) — solo si hay opciones (no documentos) */}
       {options.narrativas.length > 0 && (
         <FilterGroup
-          label={{ es: "Narrativa MECE", en: "MECE narrative" }}
+          label={{ es: "Explicación", en: "Explanation" }}
           locale={locale}
         >
           <div className="flex flex-wrap gap-2">

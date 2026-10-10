@@ -116,8 +116,8 @@ export async function EntityDetailPage(
         </h2>
         <p className="mt-2 text-xs text-muted">
           <T
-            es="Construida sobre los textos de cada caso. No mueve el agregado de /probabilidades, que trabaja sobre la narrativa del incidente completo, no sobre la forma del ocupante."
-            en="Built from the texts of each case. It does not move the /probabilidades aggregate, which works on the narrative of the whole incident, not the occupant's form."
+            es="Construida sobre los textos de cada caso. No cambia las cifras de /probabilidades, que clasifican el incidente completo y no la forma del ocupante."
+            en="Built from the texts of each case. It does not change the /probabilidades figures, which classify the whole incident, not the occupant's form."
             locale={locale}
           />
         </p>
