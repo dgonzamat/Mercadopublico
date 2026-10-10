@@ -147,8 +147,8 @@ export default function CalidadPage() {
         </H1>
         <Lede>
           <T
-            es="Las mismas señales que las sondas del repositorio miden en cada build: completitud editorial, cobertura de evidencia visual, balance analítico MECE y alcance geográfico-temporal. Se recalcula desde el corpus en cada despliegue — no es una foto fija."
-            en="The same signals the repository's probes measure on every build: editorial completeness, visual-evidence coverage, MECE analytical balance and geographic-temporal reach. Recomputed from the corpus on every deploy — not a fixed snapshot."
+            es="Las mismas señales que miden las sondas del repositorio en cada compilación: si las fichas están completas, cuántas tienen documento o imagen, el equilibrio entre explicaciones y la cobertura por país y época. Se recalcula en cada despliegue."
+            en="The same signals the repository's probes measure on every build: whether the case pages are complete, how many have a document or image, the balance between explanations and the coverage by country and period. Recomputed on every deploy."
           />
         </Lede>
       </header>
@@ -283,8 +283,8 @@ export default function CalidadPage() {
         </div>
         <p className="text-sm text-muted">
           <T
-            es={`Valor esperado (Eⱼ = Σ P) sobre los ${meceN} incidentes del corpus, por la naturaleza del objeto; los casos-documento no entran porque son evidencia, no sucesos. Conserva «Indeterminable» de forma fraccional: es la vista comparable del modelo. El conteo modal navegable (cada incidente en una narrativa, «Indeterminado» incluido) vive en /probabilidades y en la home. Comparable, no una frecuencia calibrada.`}
-            en={`Expected value (Eⱼ = Σ P) over the corpus's ${meceN} incidents, by the nature of the object; document cases are left out because they are evidence, not events. It keeps 'Indeterminable' fractionally: this is the model's comparable view. The navigable modal count (each incident in one narrative, 'Indeterminate' included) lives on /probabilidades and the home. Comparable, not a calibrated frequency.`}
+            es={`Número esperado de casos por explicación: la suma de las probabilidades de los ${meceN} incidentes. Los documentos no entran porque son evidencia, no sucesos. Aquí lo indeterminado se reparte en fracciones, y por eso esta es la vista que permite comparar explicaciones. El conteo de casos enteros, uno por explicación más probable y con «Indeterminado» como categoría, está en /probabilidades y en la portada. Se puede comparar, pero no es una frecuencia medida.`}
+            en={`Expected number of cases per explanation: the sum of the probabilities of the ${meceN} incidents. Documents are left out because they are evidence, not events. Here the indeterminate share is spread in fractions, which is why this is the view that lets you compare explanations. The count of whole cases, one per most likely explanation and with 'Indeterminate' as its own category, is on /probabilidades and the home page. It is comparable, but it is not a measured frequency.`}
           />
         </p>
       </section>
