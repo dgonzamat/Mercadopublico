@@ -97,6 +97,7 @@
     "es": "La capa que explica es la luz. Informe Condon: «La fuente luminosa más probable del objeto visual es la estrella Capella (magnitud 0,2), que estaba a 8° sobre el horizonte y 37° de acimut a medianoche»; el mecanismo óptico «debe seguir siendo conjetural». Los ecos de radar los atribuye a propagación anómala, sin datos de temperatura de esa noche.",
     "en": "The layer it explains is the light. Condon Report: \"The most likely light source to have produced the visual object is the star Capella (magnitude 0.2), which was 8° above horizon at 37° azimuth at 2400 LST\"; the optical mechanism \"must remain conjectural\". It attributes the radar returns to anomalous propagation, with no temperature data for that night.",
     "source": "Informe Condon (1968), sección III, cap. 5 «Optical and Radar Analyses of Field Cases», caso 237-B",
+    "source_en": "Condon Report (1968), section III, ch. 5 «Optical and Radar Analyses of Field Cases», case 237-B",
     "url": "http://files.ncas.org/condon/text/s3chap05.htm"
   }
 }

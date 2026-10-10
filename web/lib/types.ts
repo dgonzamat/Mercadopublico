@@ -142,7 +142,7 @@ export interface UAPCase {
   evidenceReviewed?: string;
   /** Por qué la clase prosaica es esa (o por qué no hay ninguna): la frase de
    *  la fuente que la fija, ES + EN, y la fuente. Se muestra en el detalle. */
-  classBasis?: { es: string; en: string; source: string; url?: string };
+  classBasis?: { es: string; en: string; source: string; source_en?: string; url?: string };
   /** Solo en documentos: ids de los incidentes de los que este documento es
    *  evidencia. El documento no reparte probabilidad propia (no es un suceso);
    *  la ficha de cada caso enlazado lo lista como «Documentos que lo respaldan». */
