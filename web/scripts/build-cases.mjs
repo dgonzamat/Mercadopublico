@@ -45,6 +45,29 @@ const atlasPoints = cases
     for (const k of ATLAS_FIELDS) p[k] = c[k];
     return p;
   });
+// Marcadores apilados: varias fichas comparten coordenadas (ubicaciones «no
+// reveladas» de CENTCOM o Nevada, la misma base aérea, el mismo centro de la
+// NASA) y en el mapa se tapan unas a otras, así que solo se ve una. Se reparten
+// en un círculo pequeño (~0,1°, unos 10 km) alrededor del punto común, en orden
+// de id para que el resultado sea estable. Solo cambia el dibujo del atlas:
+// la ficha conserva su location.
+const stacks = new Map();
+for (const p of atlasPoints) {
+  const key = `${p.location.lat.toFixed(3)},${p.location.lng.toFixed(3)}`;
+  if (!stacks.has(key)) stacks.set(key, []);
+  stacks.get(key).push(p);
+}
+for (const group of stacks.values()) {
+  if (group.length < 2) continue;
+  group.sort((x, y) => x.id.localeCompare(y.id));
+  group.forEach((p, i) => {
+    const angle = (2 * Math.PI * i) / group.length;
+    p.location = {
+      lat: +(p.location.lat + 0.1 * Math.sin(angle)).toFixed(4),
+      lng: +(p.location.lng + 0.1 * Math.cos(angle)).toFixed(4),
+    };
+  });
+}
 const atlasOutFile = path.join(__dirname, "..", "data", "atlas-points.json");
 fs.writeFileSync(atlasOutFile, JSON.stringify(atlasPoints) + "\n");
 console.log(`build-cases: atlas points (${atlasPoints.length}) → data/atlas-points.json`);
