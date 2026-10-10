@@ -170,6 +170,13 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   </tbody>
                 </table>
               </div>
+              <p className="text-sm text-muted">
+                <T
+                  es="Los documentos no tienen testigos ni sensores: su tier mide si son auténticos y están completos. S, documento oficial publicado o desclasificado por quien lo emitió o por un archivo público, e íntegro. A, oficial pero incompleto o muy tachado; testimonio jurado; estudio revisado por pares; filtración de autenticidad verificada; o prensa cuyo contenido confirmó después la fuente oficial. B, filtración sin autenticar, procedencia dudosa o prensa sin confirmar."
+                  en="Documents have no witnesses or sensors: their tier measures whether they are authentic and complete. S, an official document published or declassified by its issuer or by a public archive, and intact. A, official but incomplete or heavily redacted; sworn testimony; a peer-reviewed study; a leak whose authenticity has been verified; or press reporting later confirmed by the official source. B, an unauthenticated leak, doubtful provenance or unconfirmed press reporting."
+                  locale={locale}
+                />
+              </p>
               <PullQuote>
                 <T
                   es={`Una "evidencia" Tier B no debería usarse para sustentar conclusiones que exigen Tier S. La escala (heredera de las categorías de encuentros cercanos de Hynek) mide solo la fuerza de la evidencia — no qué fue el caso.`}
