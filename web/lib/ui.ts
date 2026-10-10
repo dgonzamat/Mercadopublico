@@ -51,6 +51,23 @@ export const TIER_META: Record<TierKey, {
   },
 };
 
+// Tier de los DOCUMENTOS: mide autenticidad e integridad, no testigos ni
+// sensores (decisión del dueño, oct 2026; regla en CLAUDE.md y /about).
+export const DOC_TIER_META: Record<TierKey, { description: string; description_en: string }> = {
+  S: {
+    description: "Documento oficial íntegro, publicado o desclasificado por quien lo emitió o por un archivo público",
+    description_en: "Intact official document, published or declassified by its issuer or by a public archive",
+  },
+  A: {
+    description: "Documento oficial incompleto o muy tachado, testimonio jurado, estudio revisado por pares o filtración autenticada",
+    description_en: "Incomplete or heavily redacted official document, sworn testimony, peer-reviewed study or authenticated leak",
+  },
+  B: {
+    description: "Filtración sin autenticar, procedencia dudosa o prensa sin confirmar",
+    description_en: "Unauthenticated leak, doubtful provenance or unconfirmed press reporting",
+  },
+};
+
 export const CATEGORY_META: Record<
   string,
   { icon: string; label: string; label_en: string }

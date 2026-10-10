@@ -77,8 +77,8 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
         <Lede className="text-muted">
           <T
             locale={locale}
-            es={`Dónde el corpus de ${STATS.cases} casos es denso y dónde está flaco. ${singletons} países aparecen con un solo caso — la cola larga marca la próxima deuda de contenido.`}
-            en={`Where the ${STATS.cases}-case corpus is dense and where it is thin. ${singletons} countries appear with a single case — the long tail marks the next content backlog.`}
+            es={`Dónde se concentran los ${STATS.cases} casos y dónde faltan. ${singletons} países tienen un solo caso.`}
+            en={`Where the ${STATS.cases} cases cluster and where they are missing. ${singletons} countries have a single case.`}
           />
         </Lede>
       </header>

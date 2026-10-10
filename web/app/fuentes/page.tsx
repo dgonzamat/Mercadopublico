@@ -173,8 +173,8 @@ export default function FuentesPage() {
         </Eyebrow>
         <Caption>
           <T
-            es="Categorización por dominio URL (best-effort). Una fuente puede aparecer en múltiples casos; la deduplicación es por URL idéntica o por nombre normalizado cuando no hay URL. Cada cita es auditable directamente desde su link."
-            en="Categorization is by URL domain (best-effort). A source may appear in multiple cases; deduplication is by identical URL or by normalized name when no URL is present. Every citation is auditable directly from its link."
+            es="Agrupadas por dominio. Cada cita enlaza a su fuente."
+            en="Grouped by domain. Every citation links to its source."
           />
         </Caption>
       </section>

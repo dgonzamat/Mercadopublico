@@ -307,6 +307,20 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   locale={locale}
                 />
               </Body>
+              <Body className="text-muted">
+                <T
+                  es="Las probabilidades de cada caso son juicios estructurados, no frecuencias medidas: que se puedan comparar no las hace ciertas. Dicen qué explicación encaja mejor con lo que se sabe de cada caso, no cuál es la correcta. Hay dos formas de sumar los casos, y las dos dejan fuera los documentos, que son evidencia de los casos y no casos. Una suma las probabilidades de cada explicación: da el número esperado de casos por explicación y reparte lo indeterminado en fracciones (está en /calidad). La otra cuenta cada caso una vez, en su explicación más probable, con «Indeterminado» como categoría propia: es la que usan la portada, /probabilidades y el filtro de /cases. Las dos dan cifras algo distintas porque miden cosas distintas, no porque se contradigan."
+                  en="Each case's probabilities are structured judgments, not measured frequencies: being comparable does not make them true. They say which explanation fits best with what is known about each case, not which one is correct. There are two ways to add up the cases, and both leave out the documents, which are evidence for the cases and not cases. One adds the probabilities of each explanation: it gives the expected number of cases per explanation and spreads the indeterminate share in fractions (it is on /calidad). The other counts each case once, under its most likely explanation, with 'Indeterminate' as its own category: that is what the home page, /probabilidades and the /cases filter use. The two give slightly different figures because they measure different things, not because they contradict each other."
+                  locale={locale}
+                />
+              </Body>
+              <Body className="text-muted">
+                <T
+                  es="En los gráficos, «con menos del 50 %» cuenta los casos en que la explicación más probable no llega a la mitad del reparto. En /probabilidades, las explicaciones ordinarias se abren por el objeto concreto, y «pendiente de revisión» marca los casos que aún no se han contrastado con ninguna fuente: su clase es la heredada, no una conclusión. En cada ficha, la Probabilidad es la parte del reparto que ninguna causa conocida explica (lo indeterminado más las dos explicaciones no humanas), y el tier mide la fuerza de la evidencia, no qué fue: un caso bien documentado puede tener como explicación más probable un posible fraude."
+                  en="In the charts, 'below 50%' counts the cases where the most likely explanation does not reach half of the split. On /probabilidades, ordinary explanations open into the specific object, and 'pending review' marks the cases not yet checked against any source: their class is the inherited one, not a conclusion. On each case page, the Probability is the share of the split no known cause explains (the indeterminate part plus the two non-human explanations), and the tier measures the strength of the evidence, not what it was: a well-documented case can have a possible hoax as its most likely explanation."
+                  locale={locale}
+                />
+              </Body>
               <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
                 <p className="text-sm text-text">
                   <T

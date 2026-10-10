@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import { cases, getPattern, getEntityMorphology, TOTAL_CASES } from "@/lib/data";
-import { CATEGORY_META, TIER_META } from "@/lib/ui";
+import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, MECE_CLASSES, shortLabel } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
@@ -411,8 +411,8 @@ export async function CaseDetailPage(
         {isLinkedDoc ? (
         <Caption>
           <T locale={locale}
-            es={`${TIER_META[c.tier].description}. Esto es un documento, no un suceso: no lleva probabilidad propia ni reparto de explicaciones. Es evidencia de los casos que documenta, listados abajo, y cada uno lo enlaza en su ficha.`}
-            en={`${TIER_META[c.tier].description_en}. This is a document, not an event: it carries no probability of its own and no split of explanations. It is evidence for the cases it documents, listed below, and each of them links back to it.`}
+            es={`${DOC_TIER_META[c.tier].description}. Es evidencia de los casos que documenta, listados abajo.`}
+            en={`${DOC_TIER_META[c.tier].description_en}. It is evidence for the cases it documents, listed below.`}
           />
         </Caption>
         ) : (
@@ -422,17 +422,12 @@ export async function CaseDetailPage(
           </Caption>
           {/* La explicación de las cifras es la misma en todas las fichas: va
               plegada para que no empuje el caso fuera de la pantalla en móvil. */}
-          <details className="text-xs leading-normal text-muted">
-            <summary className="cursor-pointer marker:text-accent">
-              <T locale={locale} es="¿Qué significan estas cifras?" en="What do these figures mean?" />
-            </summary>
-            <p className="mt-1">
-              <T locale={locale}
-                es="El tier mide la fuerza de la evidencia. El reparto de explicaciones (abajo) dice qué fue lo más probable, y «sin explicar» es la parte que ninguna causa conocida explica (indeterminado más las explicaciones no humanas). Por eso un caso bien documentado puede tener como causa más probable un posible fraude, y un caso Tier B no es por eso un fraude."
-                en="The tier measures the strength of the evidence. The split of explanations (below) says what it most likely was, and “unexplained” is the share no known cause explains (indeterminate plus the non-human explanations). So a well-documented case can have a possible hoax as its most likely cause, and a Tier B case is not a hoax for that reason."
-              />
-            </p>
-          </details>
+          <p className="text-xs leading-normal">
+            <T locale={locale}
+              es={<LocaleLink href="/about#tiers" className="text-accent underline-offset-4 hover:underline">¿Qué significan estas cifras? →</LocaleLink>}
+              en={<LocaleLink href="/about#tiers" className="text-accent underline-offset-4 hover:underline">What do these figures mean? →</LocaleLink>}
+            />
+          </p>
         </div>
         )}
         {!isLinkedDoc && c.category !== "document" && <ClassBasis c={c} locale={locale} />}
@@ -911,43 +906,11 @@ export async function CaseDetailPage(
           <Eyebrow>
             <T locale={locale} es="Distribución de explicaciones" en="Distribution of explanations" />
           </Eyebrow>
-          <Body className="text-muted">
-            <T locale={locale}
-              es={
-                <>
-                  La barra reparte el 100 % de este caso entre las
-                  explicaciones posibles, según cuánto pesa cada una; lo que la
-                  evidencia no permite decidir se reparte entre las que el caso
-                  apoya. Sumando todos los casos sale el{" "}
-                  <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
-                    reparto del archivo
-                  </LocaleLink>
-                  . La <em>Probabilidad</em> de arriba es la parte de esta barra
-                  que ninguna causa conocida explica: lo indeterminado más las
-                  explicaciones no humanas.
-                </>
-              }
-              en={
-                <>
-                  The bar splits 100% of this case across the possible
-                  explanations, by how much each one weighs; what the evidence
-                  cannot decide is spread across those the case supports.
-                  Adding up every case gives the{" "}
-                  <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
-                    archive&apos;s split
-                  </LocaleLink>
-                  . The <em>Probability</em> above is the share of this bar
-                  that no known cause explains: the indeterminate part plus the
-                  non-human explanations.
-                </>
-              }
-            />
-          </Body>
           <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} objectDetail={c.objectDetail} locale={locale} />
           <Caption className="italic">
             <T locale={locale}
-              es="Es un juicio estructurado, no una frecuencia medida. La parte que la evidencia no permite asignar se reparte entre las explicaciones que el caso sí apoya."
-              en="A structured judgment, not a measured frequency. The share the evidence cannot assign is spread across the explanations the case does support."
+              es={<LocaleLink href="/about#non-exclusive" className="text-accent underline-offset-4 hover:underline">Cómo se calcula este reparto →</LocaleLink>}
+              en={<LocaleLink href="/about#non-exclusive" className="text-accent underline-offset-4 hover:underline">How this split is calculated →</LocaleLink>}
             />
           </Caption>
         </section>

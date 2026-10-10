@@ -50,8 +50,8 @@ export default function AtlasPage() {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`${STATS.cases} casos georeferenciados. Si fuera fenómeno gringo, la mancha estaría sobre Nevada. Mira dónde está realmente. Toca un marcador para abrir el caso.`}
-            en={`${STATS.cases} georeferenced cases. If it were a US-only phenomenon, the cluster would be over Nevada. Look at where it actually is. Tap a marker to open the case.`}
+            es={`${STATS.cases} casos en el mapa. Toca un marcador para abrir el caso.`}
+            en={`${STATS.cases} cases on the map. Tap a marker to open the case.`}
           />
         </Lede>
       </header>

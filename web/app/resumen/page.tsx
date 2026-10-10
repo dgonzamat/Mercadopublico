@@ -328,8 +328,8 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
         </PullQuote>
         <Body className="text-muted">
           <T
-            es={`${STATS.years} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. El astrofísico Jacques Vallée describió este patrón en 1975 — ahora lo vemos en directo. Qué se decida hacer con la información es la pregunta política de nuestra generación.`}
-            en={`${STATS.years} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Astrophysicist Jacques Vallée described this pattern in 1975 — we now see it in real time. What we decide to do with the information is the political question of our generation.`}
+            es={`${STATS.years} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. Jacques Vallée describió este patrón en 1975.`}
+            en={`${STATS.years} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Jacques Vallée described this pattern in 1975.`}
             locale={locale}
           />
         </Body>

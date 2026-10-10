@@ -43,8 +43,8 @@ export function PatternsView({ locale }: { locale: "es" | "en" }) {
         </H1>
         <Lede className="text-muted">
           <T
-            es={`${STATS.patterns} patrones identificados a través de convergencia entre casos independientes. No se diseñaron a priori — emergieron tras acumulación de evidencia.`}
-            en={`${STATS.patterns} patterns identified through convergence across independent cases. They were not designed a priori — they emerged after accumulation of evidence.`}
+            es={`${STATS.patterns} patrones que se repiten en casos independientes.`}
+            en={`${STATS.patterns} patterns that recur across independent cases.`}
             locale={locale}
           />
         </Lede>
