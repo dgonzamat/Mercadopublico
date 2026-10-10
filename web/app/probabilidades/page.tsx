@@ -46,8 +46,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "Something on the ground: a beacon or searchlight, a flare or fireworks, a vehicle's headlights, a platform's gas flare or a person. The source was on or near the ground, and distance, terrain or fear made it look like something else.",
   },
   terrestre_otros: {
-    es: "Un objeto convencional no precisado: el análisis inclina a algo ordinario —un reflejo, un error perceptual— pero la evidencia no fija de qué clase de objeto se trata.",
-    en: "A conventional object, not pinned down: the analysis leans toward something ordinary —a reflection, a perceptual error— but the evidence does not fix what class of object it was.",
+    es: "Un objeto convencional no precisado: el análisis apunta a algo ordinario, como un reflejo o un error de percepción, pero la evidencia no dice de qué clase de objeto se trata.",
+    en: "A conventional object, not pinned down: the analysis points to something ordinary, such as a reflection or a perceptual error, but the evidence does not say what class of object it was.",
   },
   natural: {
     es: "Fenómeno natural genuino poco entendido: atmosférico (plasma, rayo en bola, nubes) u óptico (espejismo, refracción). Física real, no una nave ni un engaño. Los meteoros y bólidos se cuentan como objeto astronómico.",
@@ -86,12 +86,12 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "Another state's surveillance technology. Former 'adversary technology' hypothesis.",
   },
   nohumano: {
-    es: "Inteligencia o tecnología no humana — ya sea que un Estado la controle u oculte (ingeniería inversa, tratado) o que nadie la controle (tipo Vallée, interdimensional / ontológico).",
-    en: "Non-human intelligence or technology — whether a state controls or hides it (reverse-engineering, treaty) or no one controls it (Vallée-style, interdimensional / ontological).",
+    es: "Inteligencia o tecnología no humana, tanto si un Estado la controla u oculta (ingeniería inversa, un tratado) como si nadie la controla (la idea de Vallée, lo interdimensional).",
+    en: "Non-human intelligence or technology, whether a state controls or hides it (reverse-engineering, a treaty) or no one controls it (Vallée's idea, the interdimensional).",
   },
   indet: {
-    es: "Indeterminado — la evidencia no inclina hacia ninguna narrativa: incidentes inconclusos. No es una explicación, es la ausencia honesta de una.",
-    en: "Indeterminate — the evidence leans toward no narrative: inconclusive incidents. It is not an explanation but the honest absence of one.",
+    es: "Indeterminado: la evidencia no inclina hacia ninguna explicación. No es una explicación, sino la falta de una.",
+    en: "Indeterminate: the evidence leans toward no explanation. It is not an explanation but the lack of one.",
   },
 };
 
@@ -151,8 +151,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
       </H1>
       <Lede>
         <T
-          es={`Los ${incidents} incidentes del corpus se clasifican, cada uno, en una narrativa según la naturaleza del objeto. Lo prosaico se nombra por lo que era —objeto astronómico, aeronave, objeto espacial, algo en tierra, un animal—, más fenómeno natural, fallo de instrumento, causa psicológica, médica o social y posible fraude; «no-humano» agrupa encubierto + abierto. Los incidentes inconclusos caen en «Indeterminado». Los ${docCount} casos-documento del archivo no entran: son evidencia de los sucesos, no sucesos. Sumadas, las narrativas reparten los incidentes de forma comparable: se puede decir cuál da cuenta de más casos.`}
-          en={`The corpus's ${incidents} incidents are each classified into one narrative by the nature of the object. The prosaic is named by what it was —astronomical object, aircraft, space object, something on the ground, an animal—, plus natural phenomenon, instrument artifact, psychological, medical or social cause and possible hoax; 'non-human' groups covert + open. Inconclusive incidents fall into 'Indeterminate'. The archive's ${docCount} document cases are left out: they are evidence of the events, not events. Summed, the narratives partition the incidents comparably: one can say which accounts for more cases.`}
+          es={`Cada uno de los ${incidents} incidentes se clasifica en una explicación según lo que era el objeto. Las ordinarias se nombran por el objeto (un astro, una aeronave, un objeto espacial, algo en tierra, un animal) o por la causa: fenómeno natural, fallo de instrumento, causa psicológica, médica o social, o posible fraude. Las dos explicaciones no humanas van juntas, y los casos que no se pueden decidir quedan en «Indeterminado». Los ${docCount} documentos no entran: son evidencia de los sucesos, no sucesos. Como todos los casos se reparten igual, se puede comparar qué explicación da cuenta de más casos.`}
+          en={`Each of the ${incidents} incidents is classified under one explanation according to what the object was. Ordinary ones are named by the object (a star or planet, an aircraft, a space object, something on the ground, an animal) or by the cause: natural phenomenon, instrument artifact, psychological, medical or social cause, or possible hoax. The two non-human explanations are grouped, and cases that cannot be decided go to 'Indeterminate'. The ${docCount} documents are left out: they are evidence of the events, not events. Because every case is split the same way, you can compare which explanation accounts for more cases.`}
           locale={locale}
         />
       </Lede>
@@ -163,8 +163,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         </H2>
         <Caption>
           <T
-            es={`El centro marca el total de incidentes (${incidents}), cada uno en su narrativa más probable, y «Indeterminado» para lo que no se puede decidir. Clasificación forzada y navegable: «con menos del 50 %» cuenta los casos que su narrativa gana solo por mayoría simple.`}
-            en={`The center marks the total of incidents (${incidents}), each in its most probable narrative, and 'Indeterminate' for what cannot be decided. Forced, navigable classification: 'below 50%' counts the cases their narrative wins only by plurality.`}
+            es={`El centro muestra el total de incidentes (${incidents}), cada uno en su explicación más probable; «Indeterminado» reúne los que no se pueden decidir. «Con menos del 50 %» cuenta los casos en que esa explicación gana sin llegar a la mitad.`}
+            en={`The center shows the total of incidents (${incidents}), each under its most likely explanation; 'Indeterminate' holds those that cannot be decided. 'Below 50%' counts the cases where that explanation wins without reaching half.`}
             locale={locale}
           />
         </Caption>
@@ -207,8 +207,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         </H2>
         <Caption>
           <T
-            es="Qué significa cada una y qué hipótesis del marco anterior preserva. Las clases prosaicas se abren en su detalle —qué objeto concreto era—, separando los casos en que la fuente fija la clase pero no el objeto de los que todavía no se han contrastado con ninguna fuente («pendiente de revisión»): esa clase es aún la heredada, no una conclusión. Cada bloque enlaza al listado de casos donde es la explicación más probable, ya filtrado."
-            en="What each means and which prior-framework hypothesis it preserves. The prosaic classes open into their detail —which specific object it was—, separating cases where the source fixes the class but not the object from those not yet checked against any source ('pending review'): that class is still the inherited one, not a conclusion. Each block links to the list of cases where it is the most probable explanation, pre-filtered."
+            es="Qué significa cada explicación y qué hipótesis del modelo anterior incluye. Las ordinarias se abren para mostrar qué objeto concreto era, y se separan los casos en que una fuente fija la clase pero no el objeto de los que todavía no se han contrastado con ninguna fuente («pendiente de revisión»): en esos, la clase es la heredada, no una conclusión. Cada bloque enlaza a la lista de casos donde esa explicación es la más probable."
+            en="What each explanation means and which hypothesis from the previous model it includes. Ordinary ones open to show which specific object it was, separating cases where a source fixes the class but not the object from those not yet checked against any source ('pending review'): for those, the class is the inherited one, not a conclusion. Each block links to the list of cases where that explanation is the most likely."
             locale={locale}
           />
         </Caption>
@@ -293,15 +293,15 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         </H2>
         <Body className="mt-2 text-sm text-muted">
           <T
-            es="Los posteriores por caso son juicios analíticos estructurados, no frecuencias calibradas empíricamente: comparabilidad no es lo mismo que verdad. El modelo dice qué explicación es más coherente con el análisis de cada caso, no cuál es objetivamente correcta. Hay dos maneras de agregar el corpus, y ambas cubren los mismos incidentes —los casos-documento no entran: son evidencia, no sucesos—. El «nº esperado de casos por explicación» (la suma de las probabilidades de cada narrativa) es lineal y comparable, válido aunque los casos estén correlacionados, y reparte la masa «indeterminable» de forma fraccional: se muestra en /calidad. El conteo por hipótesis modal asigna cada caso —clasificación forzada— a su narrativa más probable, conservando «Indeterminado» como narrativa propia para lo que no se puede decidir; el gráfico de arriba y los enlaces a los casos usan este último: conteos enteros y navegables, coherentes con el filtro de «/cases». Las dos vistas dan cifras algo distintas porque son estimadores distintos (esperado vs modal), no porque se contradigan. La distribución completa de cada caso —con su masa de incertidumbre repartida entre las narrativas que apoya— vive en el detalle del caso."
-            en="Per-case posteriors are structured analytical judgments, not empirically calibrated frequencies: comparability is not the same as truth. The model says which explanation is most coherent with each case's analysis, not which is objectively correct. There are two ways to aggregate the corpus, and both cover the same incidents —document cases are left out: they are evidence, not events. The 'expected number of cases per explanation' (the sum of each narrative's probabilities) is linear and comparable, holding even if cases are correlated, and it spreads the 'indeterminable' mass fractionally: it is shown on /calidad. The modal-hypothesis count assigns each case —forced classification— to its single most probable narrative, keeping 'Indeterminate' as its own narrative for what cannot be decided; the chart above and the links to the cases use the latter: integer, navigable counts, consistent with the '/cases' filter. The two views give slightly different figures because they are different estimators (expected vs modal), not because they contradict each other. Each case's full distribution —with its uncertainty mass spread across the narratives it supports— lives in the case detail."
+            es="Las probabilidades de cada caso son juicios estructurados, no frecuencias medidas: que se puedan comparar no las hace ciertas. Dicen qué explicación encaja mejor con lo que se sabe de cada caso, no cuál es la correcta. Hay dos formas de sumar los casos, y las dos dejan fuera los documentos. Una suma las probabilidades de cada explicación: da el número esperado de casos por explicación, reparte lo indeterminado en fracciones y está en /calidad. La otra cuenta cada caso una vez, en su explicación más probable, con «Indeterminado» como categoría propia: es la que usan el gráfico de arriba, los enlaces y el filtro de /cases. Las dos dan cifras algo distintas porque miden cosas distintas, no porque se contradigan. El reparto completo de cada caso está en su ficha."
+            en="Each case's probabilities are structured judgments, not measured frequencies: being comparable does not make them true. They say which explanation fits best with what is known about each case, not which one is correct. There are two ways to add up the cases, and both leave documents out. One adds the probabilities of each explanation: it gives the expected number of cases per explanation, spreads the indeterminate share in fractions and is on /calidad. The other counts each case once, under its most likely explanation, with 'Indeterminate' as its own category: that is what the chart above, the links and the /cases filter use. The two give slightly different figures because they measure different things, not because they contradict each other. Each case's full split is on its page."
             locale={locale}
           />
         </Body>
         <Body className="mt-4 text-sm text-muted">
           <T
-            es="Dos ejes independientes, fácil de confundir: el «tier» (S/A/B) mide la fuerza de la evidencia —cuán difícil es descartar el caso—, mientras que esta partición de explicaciones mide qué fue. No son lo mismo: un caso bien documentado (Tier S o A) puede tener como explicación más plausible un posible fraude, y un caso de evidencia limitada (Tier B) no es, por eso, un fraude. De hecho, los casos clasificados como posible fraude se reparten por igual entre Tier A y Tier B."
-            en="Two independent axes, easy to confuse: the «tier» (S/A/B) measures the strength of the evidence —how hard the case is to dismiss— while this partition of explanations measures what it was. They are not the same: a well-documented case (Tier S or A) can have a possible hoax as its most plausible explanation, and a case with limited evidence (Tier B) is not, for that reason, a hoax. In fact, the cases classified as possible hoax split evenly between Tier A and Tier B."
+            es="No hay que confundir dos cosas. El tier (S, A o B) mide la fuerza de la evidencia: cuánto cuesta descartar el caso. Este reparto mide qué fue. Un caso bien documentado (S o A) puede tener como explicación más probable un posible fraude, y un caso con poca evidencia (B) no es por eso un fraude. De hecho, los casos clasificados como posible fraude se reparten por igual entre Tier A y Tier B."
+            en="Two things should not be confused. The tier (S, A or B) measures the strength of the evidence: how hard the case is to dismiss. This split measures what it was. A well-documented case (S or A) can have a possible hoax as its most likely explanation, and a case with little evidence (B) is not a hoax for that reason. In fact, the cases classified as a possible hoax split evenly between Tier A and Tier B."
             locale={locale}
           />
         </Body>

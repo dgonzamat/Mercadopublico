@@ -278,8 +278,8 @@ export async function ResearcherDetailPage({
       ) : (
         <p className="border-t border-border pt-6 font-mono text-xs uppercase tracking-widest text-muted">
           <T
-            es="Aporta marco teórico / ontológico — sin caso puntual del corpus."
-            en="Contributes a theoretical / ontological framework — no specific corpus case."
+            es="Aporta un marco teórico, sin un caso concreto del archivo."
+            en="Contributes a theoretical framework, with no specific case in the archive."
             locale={locale}
           />
         </p>

@@ -1142,9 +1142,11 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   if (calidad && !/[Vv]alor esperado|Expected value/.test(calidad)) {
     record("ERROR", calidadPath, 0, "E24 modelo: /calidad no rotula su método (valor esperado Eⱼ=ΣP). Sin rótulo, su reparto se lee como contradictorio con el conteo modal de la home.");
   }
-  // (b) la home se rotula como argmax y remite a /calidad.
-  if (snapshot && !/argmax/.test(snapshot)) {
-    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot (donut de la home) no se rotula como conteo modal (argmax). Debe declararlo para no leerse como contradictorio con /calidad.");
+  // (b) la home se rotula como conteo modal y remite a /calidad. El rótulo se
+  //     exige en lenguaje llano («cuenta una vez» / «counts once»): antes la regla
+  //     pedía la palabra «argmax», y eso obligaba a publicar jerga (oct 2026).
+  if (snapshot && !(/cuenta una vez/.test(snapshot) && /counts once/.test(snapshot))) {
+    record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot (donut de la home) no se rotula como conteo modal («cada incidente cuenta una vez, en su explicación más probable», ES y EN). Debe declararlo para no leerse como contradictorio con /calidad.");
   }
   if (snapshot && !/\/calidad/.test(snapshot)) {
     record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado). El puente entre ambas vistas evita que se lean como contradictorias.");

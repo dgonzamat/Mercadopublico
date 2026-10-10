@@ -428,8 +428,8 @@ export async function CaseDetailPage(
             </summary>
             <p className="mt-1">
               <T locale={locale}
-                es="El tier mide la fuerza de la evidencia. El reparto de explicaciones (abajo) dice qué fue más plausiblemente, y «sin explicar» es la parte de ese reparto que ninguna causa conocida explica (indeterminado más las narrativas no humanas). Por eso un caso bien documentado puede tener como causa más plausible un posible fraude, y un Tier B no es, por eso, un fraude."
-                en="The tier measures the strength of the evidence. The split of explanations (below) says what it most plausibly was, and “unexplained” is the share of that split no known cause explains (indeterminate plus the non-human narratives). So a well-documented case can have a possible hoax as its most plausible cause, and a Tier B is not, for that reason, a hoax."
+                es="El tier mide la fuerza de la evidencia. El reparto de explicaciones (abajo) dice qué fue lo más probable, y «sin explicar» es la parte que ninguna causa conocida explica (indeterminado más las explicaciones no humanas). Por eso un caso bien documentado puede tener como causa más probable un posible fraude, y un caso Tier B no es por eso un fraude."
+                en="The tier measures the strength of the evidence. The split of explanations (below) says what it most likely was, and “unexplained” is the share no known cause explains (indeterminate plus the non-human explanations). So a well-documented case can have a possible hoax as its most likely cause, and a Tier B case is not a hoax for that reason."
               />
             </p>
           </details>
@@ -948,8 +948,8 @@ export async function CaseDetailPage(
           <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} objectDetail={c.objectDetail} locale={locale} />
           <Caption className="italic">
             <T locale={locale}
-              es="Juicio analítico estructurado, no frecuencia calibrada. Clasificación forzada: la masa que la evidencia no permite asignar se reparte entre las hipótesis que el caso sí apoya."
-              en="Structured analytical judgment, not a calibrated frequency. Forced classification: the mass the evidence cannot assign is spread across the hypotheses the case does support."
+              es="Es un juicio estructurado, no una frecuencia medida. La parte que la evidencia no permite asignar se reparte entre las explicaciones que el caso sí apoya."
+              en="A structured judgment, not a measured frequency. The share the evidence cannot assign is spread across the explanations the case does support."
             />
           </Caption>
         </section>
