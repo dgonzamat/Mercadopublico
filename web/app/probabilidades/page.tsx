@@ -289,7 +289,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
 
       <section className="mt-16 border-t border-border pt-6">
         <H2>
-          <T es="Honestidad del modelo" en="Model honesty" locale={locale} />
+          <T es="Límites del modelo" en="Limits of the model" locale={locale} />
         </H2>
         <Body className="mt-2 text-sm text-muted">
           <T
