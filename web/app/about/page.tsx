@@ -13,6 +13,24 @@ import {
 } from "@/lib/typography";
 import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
+import { cases } from "@/lib/data";
+
+// Ejemplos de cada tier. Se filtran por el tier real de la ficha, así que la
+// tabla no puede contradecir a los casos: si un tier cambia, el ejemplo sale
+// de su fila en vez de quedar mal clasificado (antes 6 de 13 no coincidían).
+const TIER_EXAMPLE_IDS: Record<"S" | "A" | "B", string[]> = {
+  S: ["tehran-1976", "nimitz-2004", "belgian-wave-1989", "lake-huron-2023", "jal1628-1986", "manises-1979"],
+  A: ["hessdalen-1981", "hudson-valley-1983", "talavera-la-real-1976", "trans-en-provence-1981", "falcon-lake-1967"],
+  B: ["communion-1985", "maury-island-1947", "bonnybridge-1992", "gulf-breeze-1987"],
+};
+
+function tierExamples(tier: "S" | "A" | "B", locale: "es" | "en"): string {
+  return TIER_EXAMPLE_IDS[tier]
+    .map((id) => cases.find((c) => c.id === id))
+    .filter((c) => c && c.tier === tier)
+    .map((c) => (locale === "en" ? c!.name_en ?? c!.name : c!.name).split(" · ")[0])
+    .join(", ");
+}
 
 export const metadata = {
   ...pageMeta({
@@ -28,8 +46,8 @@ const CHAPTERS = [
   {
     id: "tiers",
     n: "1",
-    es: { eyebrow: "Capítulo 1", h2: "Por qué Roswell no equivale a Meier", tldr: "3 niveles de evidencia (S/A/B) — Tier S (militar+sensor) no pesa lo mismo que Tier B (testigo único); y el tier no es un veredicto" },
-    en: { eyebrow: "Chapter 1", h2: "Why Roswell isn't equivalent to Meier", tldr: "3 evidence tiers (S/A/B) — Tier S (military+sensor) weighs differently than Tier B (single-witness); and the tier is not a verdict" },
+    es: { eyebrow: "Capítulo 1", h2: "Por qué Teherán no equivale a Communion", tldr: "3 niveles de evidencia (S/A/B) — Tier S (militar+sensor) no pesa lo mismo que Tier B (testigo único); y el tier no es un veredicto" },
+    en: { eyebrow: "Chapter 1", h2: "Why Tehran isn't equivalent to Communion", tldr: "3 evidence tiers (S/A/B) — Tier S (military+sensor) weighs differently than Tier B (single-witness); and the tier is not a verdict" },
   },
   {
     id: "bayes",
@@ -146,9 +164,9 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                     </tr>
                   </thead>
                   <tbody>
-                    <TierRow tier="S" es="Evidencia fuerte: sensor instrumental + múltiples testigos (típicamente militar)" en="Strong evidence: instrumental sensor + multiple witnesses (typically military)" examples="Tehran 1976, Nimitz, Belgian Wave, Lake Huron" color="text-tierS" locale={locale} />
-                    <TierRow tier="A" es="Evidencia institucional: múltiples testigos verificables o documentación oficial" en="Institutional evidence: multiple verifiable witnesses or official documentation" examples="Ariel School, JAL 1628, Manises, Westall, Roswell" color="text-tierA" locale={locale} />
-                    <TierRow tier="B" es="Evidencia limitada: testigo único, local o sin verificación primaria" en="Limited evidence: single-witness, local or without primary verification" examples="Hessdalen, Communion, Maury Island, Bonnybridge" color="text-tierB" locale={locale} />
+                    <TierRow tier="S" es="Evidencia fuerte: sensor instrumental + múltiples testigos (típicamente militar)" en="Strong evidence: instrumental sensor + multiple witnesses (typically military)" examples={tierExamples("S", locale)} color="text-tierS" locale={locale} />
+                    <TierRow tier="A" es="Evidencia institucional: múltiples testigos verificables o documentación oficial" en="Institutional evidence: multiple verifiable witnesses or official documentation" examples={tierExamples("A", locale)} color="text-tierA" locale={locale} />
+                    <TierRow tier="B" es="Evidencia limitada: testigo único, local o sin verificación primaria" en="Limited evidence: single-witness, local or without primary verification" examples={tierExamples("B", locale)} color="text-tierB" locale={locale} />
                   </tbody>
                 </table>
               </div>
@@ -239,12 +257,12 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   es="Solo refuerza lo dominante"
                   en="Only reinforces the dominant"
                   items={[
-                    "Contactado aislado Tier B → casi todo mundano/indet (Meier)",
+                    "Contactado aislado Tier B → mayormente mundano/indet (Communion)",
                     "Caso #50 del mismo patrón (escala la narrativa dominante)",
                     "Predicción de contactado fallida (carga mundano_natural)",
                   ]}
                   itemsEn={[
-                    "Isolated Tier B contactee → mostly mundane/indet (Meier)",
+                    "Isolated Tier B contactee → mostly mundane/indet (Communion)",
                     "Case #50 of the same pattern (scales the dominant narrative)",
                     "Failed contactee prediction (loads mundano_natural)",
                   ]}

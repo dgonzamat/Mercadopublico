@@ -28,12 +28,12 @@ const FINDINGS = [
     es: {
       confidence: "Alta",
       title: "El fenómeno es real",
-      text: `${STATS.cases} casos institucionales documentados por gobiernos, militares y agencias entre 1947 y 2026, en ${STATS.countries} países. No es un puñado de testigos contando lo mismo: son cámaras térmicas militares, radares en tierra y en el aire, ondas de presión registradas, materiales recuperados, daño físico verificable. Evidencia distribuida en sensores que no se hablan entre sí.`,
+      text: `${STATS.cases} casos documentados por gobiernos, militares, agencias y prensa entre 1947 y 2026, en ${STATS.countries} países. Los reportes existen y muchos están en papel oficial; en una parte hay registros de sensores (cámaras térmicas, radares en tierra y en el aire) y en otra solo testigos. Muchos tienen explicación ordinaria; el resto es lo que el corpus intenta medir, caso por caso.`,
     },
     en: {
       confidence: "High",
       title: "The phenomenon is real",
-      text: `${STATS.cases} institutional cases documented by governments, militaries and agencies between 1947 and 2026, in ${STATS.countries} countries. It's not a handful of witnesses telling the same story: it's military thermal cameras, ground and airborne radar, recorded pressure waves, recovered materials, verifiable physical damage. Evidence spread across sensors that don't talk to each other.`,
+      text: `${STATS.cases} cases documented by governments, militaries, agencies and the press between 1947 and 2026, in ${STATS.countries} countries. The reports exist and many are on official paper; some have sensor records (thermal cameras, ground and airborne radar) and others rest only on witnesses. Many have an ordinary explanation; the rest is what the corpus tries to measure, case by case.`,
     },
   },
   {
@@ -64,24 +64,24 @@ const FINDINGS = [
     es: {
       confidence: "Media",
       title: "PURSUE 2026 no es divulgación real — es ambigüedad estratégica",
-      text: "La liberación PURSUE (Presidential Unified UAP Records Repository and Strategic Engagement) de mayo 2026 abre archivos al público con una mano. Con la otra, una propuesta del 26 de mayo (de la Oficina de Personal Federal, el organismo que regula a los empleados públicos) introduce un acuerdo de confidencialidad mucho más amplio que silencia, hacia adelante, a quien quiera denunciar irregularidades desde dentro del gobierno.",
+      text: "La liberación PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) de mayo 2026 abre archivos al público con una mano. Con la otra, una propuesta del 26 de mayo (de la Oficina de Personal Federal, el organismo que regula a los empleados públicos) introduce un acuerdo de confidencialidad mucho más amplio que silencia, hacia adelante, a quien quiera denunciar irregularidades desde dentro del gobierno.",
     },
     en: {
       confidence: "Medium",
       title: "PURSUE 2026 is not real disclosure — it's strategic ambiguity",
-      text: "The PURSUE release (Presidential Unified UAP Records Repository and Strategic Engagement) of May 2026 opens archives to the public with one hand. With the other, a May 26 proposal (from the Office of Personnel Management, the agency that regulates federal employees) introduces a much broader non-disclosure agreement that silences, going forward, anyone who wants to report internal wrongdoing.",
+      text: "The PURSUE release (Presidential Unsealing and Reporting System for UAP Encounters) of May 2026 opens archives to the public with one hand. With the other, a May 26 proposal (from the Office of Personnel Management, the agency that regulates federal employees) introduces a much broader non-disclosure agreement that silences, going forward, anyone who wants to report internal wrongdoing.",
     },
   },
   {
     es: {
       confidence: "Media",
-      title: "Una teoría de 1975 anticipó este momento",
-      text: "El astrofísico Jacques Vallée propuso en 1975 que el manejo institucional del fenómeno funciona como un mecanismo de control — uno que regula cuánto cree la sociedad en el tema, como un termostato. PURSUE encaja exactamente con esa descripción: ni negación total ni admisión total, sino apertura calibrada. 51 años de predicción cumplida.",
+      title: "Una teoría de 1975 que ayuda a leer este momento",
+      text: "El astrofísico Jacques Vallée propuso en 1975 que la inteligencia detrás del fenómeno funciona como un sistema de control, uno que regula cuánto cree la sociedad en el tema, como un termostato. Vallée hablaba del fenómeno, no de los gobiernos; pero la forma en que PURSUE abre archivos, sin negar ni admitir del todo, recuerda a esa idea de apertura calibrada.",
     },
     en: {
       confidence: "Medium",
-      title: "A 1975 theory anticipated this moment",
-      text: "Astrophysicist Jacques Vallée proposed in 1975 that institutional handling of the phenomenon works as a control mechanism — one that regulates how much society believes in the topic, like a thermostat. PURSUE fits that description exactly: neither full denial nor full admission, but calibrated openness. 51 years of fulfilled prediction.",
+      title: "A 1975 theory that helps read this moment",
+      text: "Astrophysicist Jacques Vallée proposed in 1975 that the intelligence behind the phenomenon works as a control system, one that regulates how much society believes in the topic, like a thermostat. Vallée was talking about the phenomenon, not about governments; but the way PURSUE opens archives, neither fully denying nor fully admitting, is reminiscent of that idea of calibrated openness.",
     },
   },
 ];

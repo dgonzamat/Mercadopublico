@@ -74,10 +74,10 @@
     {
         "id": "8i",
         "letter": "i",
-        "name": "Framework de cuatro tiers evidenciales",
-        "name_en": "Four-tier evidential framework",
-        "description": "Tier 1 institucional → Tier 4 contactee.",
-        "description_en": "Tier 1 institutional → Tier 4 contactee.",
+        "name": "Escalas institucionales de clasificación de casos",
+        "name_en": "Institutional case-classification scales",
+        "description": "Organismos que clasifican cada caso según cuánto se explica, como las categorías PAN A–D del GEIPAN.",
+        "description_en": "Bodies that classify each case by how much is explained, such as GEIPAN's PAN A–D categories.",
         "color": "#888aff"
     },
     {

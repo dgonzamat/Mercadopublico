@@ -11,7 +11,7 @@ import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
   title: "UAP Codex — The institutional evidence",
-  description: `${STATS.cases} institutional UAP cases (${STATS.startYear}–${STATS.endYear}) that survived military, congressional and journalistic filters; comparable per-case probability (MECE model).`,
+  description: `${STATS.cases} UAP cases (${STATS.startYear}–${STATS.endYear}) documented by governments, militaries and the press, each with its sources, evidence tier and a comparable probability across six explanations (MECE model).`,
   // Canonical/hreflang específicos de la home. NO van en el layout: ahí se
   // heredan a todas las páginas y hacían que cada ruta canonicalizara a "/".
   alternates: {
@@ -78,8 +78,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             <Lede className="max-w-2xl !text-bg/70">
               <T
                 locale={locale}
-                es={`Hay algo que las instituciones no pudieron — o no quisieron — explicar desde 1947. Un compendio de los ${STATS.cases} casos institucionales mejor documentados — los que sobrevivieron filtros militares, congresionales y periodísticos. No es lista de avistamientos. Es la evidencia que no se explica fácil.`}
-                en={`There's something institutions couldn't — or wouldn't — explain since 1947. A compendium of the ${STATS.cases} best-documented institutional cases — the ones that survived military, congressional, and journalistic filters. Not a sightings list. The evidence that doesn't explain away easily.`}
+                es={`Hay algo que las instituciones no pudieron — o no quisieron — explicar desde 1947. Un compendio de ${STATS.cases} casos documentados por gobiernos, militares y prensa, cada uno con sus fuentes, su nivel de evidencia y una probabilidad comparable. No es una lista de avistamientos: incluye también los que tienen explicación ordinaria, para que se vea qué se explica y qué no.`}
+                en={`There's something institutions couldn't — or wouldn't — explain since 1947. A compendium of ${STATS.cases} cases documented by governments, militaries and the press, each with its sources, its evidence tier and a comparable probability. Not a sightings list: it also includes the ones with an ordinary explanation, so you can see what is explained and what is not.`}
               />
             </Lede>
             <div className="flex flex-wrap gap-3 pt-2">
@@ -217,8 +217,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             <p className="max-w-prose text-lg leading-relaxed text-bg/80">
               <T
                 locale={locale}
-                es={`La mayoría apunta a programas militares clasificados — lo sabemos desde el U-2 (1950s) y el F-117 (1980s). Una porción no menor involucra entidades no humanas que aún no sabemos categorizar. Algunos pueden ser fenómenos naturales raros (plasma, sprites), aunque la evidencia multi-sensora militar excluye esa lectura en la mayoría de los casos Tier S. Las identificaciones equivocadas se filtran antes — quedan los ${STATS.cases} casos que las superaron.`}
-                en={`Most point to classified military programs — we've known since the U-2 (1950s) and the F-117 (1980s). A non-trivial portion involves non-human entities we don't yet know how to categorize. Some may be rare natural phenomena (plasma, sprites), though multi-sensor military evidence rules that out for most Tier S cases. Misidentifications get filtered out first — what remains are the ${STATS.cases} cases that survived that culling.`}
+                es={`En buena parte de los ${STATS.cases} casos la explicación más probable es ordinaria: aviones, globos, astros, satélites o fenómenos naturales. Otra parte sigue sin explicación con lo que se sabe hoy. Una minoría apunta a tecnología humana secreta —como lo fueron el U-2 en los cincuenta y el F-117 en los ochenta— o de otro Estado, y otra minoría a entidades no humanas. El gráfico de abajo lo reparte caso a caso.`}
+                en={`In a good share of the ${STATS.cases} cases the most likely explanation is ordinary: aircraft, balloons, celestial bodies, satellites or natural phenomena. Another share remains unexplained with what is known today. A minority points to secret human technology —as the U-2 was in the 1950s and the F-117 in the 1980s— or another state's, and another minority to non-human entities. The chart below splits it case by case.`}
               />
             </p>
           </div>
