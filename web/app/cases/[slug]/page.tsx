@@ -1156,6 +1156,8 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
   const cls = pk ? PROSAIC_CLASSES.find((k) => k.key === pk) : undefined;
   const detail = pk ? objectDetailDef(pk, c.objectDetail) : undefined;
   const b = c.classBasis;
+  // El rótulo de la fuente tiene par inglés: el sitio es inglés-primario.
+  const src = b ? (locale === "es" ? b.source : b.source_en ?? b.source) : "";
   // La clase prosaica cubre solo la parte mundana del reparto. Cuando otra
   // narrativa pesa más (Roswell: 55 % programa clasificado frente a 22 %
   // mundano), mostrarla sola como «la explicación más plausible» se lee como el
@@ -1204,10 +1206,10 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
             (
             {b.url ? (
               <a href={b.url} target="_blank" rel="noopener noreferrer" className="text-accent underline-offset-4 hover:underline">
-                {b.source} ↗
+                {src} ↗
               </a>
             ) : (
-              b.source
+              src
             )}
             )
           </span>
