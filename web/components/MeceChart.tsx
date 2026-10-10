@@ -131,8 +131,8 @@ export function MecePartition({
       <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-muted">
         <T
           locale={locale}
-          es={totalLabelEs ?? `Suman 100% · ${N} casos de incidente · partición exhaustiva`}
-          en={totalLabelEn ?? `Sum to 100% · ${N} incident cases · exhaustive partition`}
+          es={totalLabelEs ?? `Suman 100 % · ${N} incidentes`}
+          en={totalLabelEn ?? `Sum to 100% · ${N} incidents`}
         />
       </p>
 

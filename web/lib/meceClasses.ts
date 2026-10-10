@@ -38,7 +38,7 @@ export const MECE_CLASSES: ReadonlyArray<{
   // a #5a6cc8: ΔE 16.2 normal / 13.9 CVD, validado con el script del skill
   // dataviz. Mantiene la oscuridad muteada del palette (L*rel 0.17). No revertir
   // sin re-validar la separación del par no-humano.
-  { id: "nohumano_abierto", label: "No-humano sin gestión estatal", labelEn: "Non-human, no state management", color: "#5a6cc8", legacyHypothesis: "interdimensional + ontológico", href: "/probabilidades/#hyp-nohumano" },
+  { id: "nohumano_abierto", label: "No humano, sin control de ningún Estado", labelEn: "Non-human, controlled by no state", color: "#5a6cc8", legacyHypothesis: "interdimensional + ontológico", href: "/probabilidades/#hyp-nohumano" },
   { id: "indet", label: "Indeterminable", labelEn: "Indeterminable", color: "#3a3a3a", legacyHypothesis: "—", href: "/probabilidades/#hyp-indet" },
 ];
 

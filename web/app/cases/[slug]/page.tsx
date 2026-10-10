@@ -915,32 +915,30 @@ export async function CaseDetailPage(
             <T locale={locale}
               es={
                 <>
-                  Este caso se clasifica entre las hipótesis del modelo: la
-                  barra reparte el 100% según cuánto pesa cada explicación (la
-                  incertidumbre se reparte entre las hipótesis que el caso
-                  apoya). Sumadas en todo el corpus producen la{" "}
+                  La barra reparte el 100 % de este caso entre las
+                  explicaciones posibles, según cuánto pesa cada una; lo que la
+                  evidencia no permite decidir se reparte entre las que el caso
+                  apoya. Sumando todos los casos sale el{" "}
                   <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
-                    partición comparable
+                    reparto del archivo
                   </LocaleLink>
-                  . De esta partición sale la{" "}
-                  <em>Probabilidad</em> de arriba: es la parte que no cubre
-                  ninguna causa conocida (indeterminado más las narrativas no
-                  humanas).
+                  . La <em>Probabilidad</em> de arriba es la parte de esta barra
+                  que ninguna causa conocida explica: lo indeterminado más las
+                  explicaciones no humanas.
                 </>
               }
               en={
                 <>
-                  This case is classified among the model&apos;s hypotheses:
-                  the bar splits 100% by how much each explanation weighs (the
-                  uncertainty is spread across the hypotheses the case
-                  supports). Summed across the corpus they produce the{" "}
+                  The bar splits 100% of this case across the possible
+                  explanations, by how much each one weighs; what the evidence
+                  cannot decide is spread across those the case supports.
+                  Adding up every case gives the{" "}
                   <LocaleLink href="/probabilidades" className="text-accent underline-offset-4 hover:underline">
-                    comparable partition
+                    archive&apos;s split
                   </LocaleLink>
-                  . The{" "}
-                  <em>Probability</em> above comes from this partition: it is
-                  the share no known cause covers (indeterminate plus the
-                  non-human narratives).
+                  . The <em>Probability</em> above is the share of this bar
+                  that no known cause explains: the indeterminate part plus the
+                  non-human explanations.
                 </>
               }
             />
