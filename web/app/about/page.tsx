@@ -203,10 +203,10 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                     <strong className="text-tierS"><T es="Tier (S/A/B)" en="Tier (S/A/B)" locale={locale} /></strong> — <T es="la fuerza de la evidencia. Se ve como badge en cada caso y como color del marcador en el mapa." en="the strength of the evidence. Shown as a badge on each case and as the marker color on the map." locale={locale} />
                   </li>
                   <li>
-                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" locale={locale} /></strong> — <T es="cuánto del caso sigue sin explicación: la parte de la partición de explicaciones que no cubre ninguna causa conocida («indeterminado» más las dos narrativas no humanas). No se escribe a mano, se calcula desde esa partición, así que nunca la contradice. Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how much of the case remains unexplained: the share of the partition of explanations that no known cause covers («indeterminate» plus the two non-human narratives). It is not written by hand but computed from that partition, so it never contradicts it. Shown as «%» on each case and as the marker size on the map." locale={locale} />
+                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" locale={locale} /></strong> — <T es="cuánto del caso sigue sin explicación: la parte del reparto de explicaciones que no cubre ninguna causa conocida («indeterminado» más las dos explicaciones no humanas). No se escribe a mano: se calcula desde ese reparto, así que nunca lo contradice. Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how much of the case remains unexplained: the share of the split of explanations that no known cause covers («indeterminate» plus the two non-human explanations). It is not written by hand: it is computed from that split, so it never contradicts it. Shown as «%» on each case and as the marker size on the map." locale={locale} />
                   </li>
                   <li>
-                    <strong className="text-text"><T es="Partición MECE" en="MECE partition" locale={locale} /></strong> — <T es="qué fue: la distribución sobre seis narrativas excluyentes." en="what it was: the distribution over six mutually exclusive narratives." locale={locale} /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" locale={locale} /></LocaleLink>
+                    <strong className="text-text"><T es="Reparto de explicaciones" en="Split of explanations" locale={locale} /></strong> — <T es="qué fue: cómo se reparte el caso entre seis explicaciones que se excluyen entre sí." en="what it was: how the case splits across six explanations that exclude one another." locale={locale} /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" locale={locale} /></LocaleLink>
                   </li>
                 </ul>
                 <Body className="mt-3 text-sm text-muted">
@@ -243,8 +243,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </Body>
               <div className="grid gap-4 sm:grid-cols-2">
                 <MoveList
-                  es="Desplaza masa entre narrativas"
-                  en="Moves mass between narratives"
+                  es="Cambia el reparto entre explicaciones"
+                  en="Shifts the split between explanations"
                   items={[
                     "Tier S/A con multi-sensor → posterior nítido (Tehran, Nimitz)",
                     "Categoría de evidencia nueva (Hessdalen, Lake Huron)",
@@ -304,6 +304,20 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                 <T
                   es="En cada caso, las explicaciones se excluyen entre sí: el caso tuvo una sola causa real, y la incertidumbre se reparte entre las candidatas hasta sumar 100 %. Sumadas sobre todos los casos, se pueden comparar: se puede decir qué explicación da cuenta de más casos. En el sitio, cada caso se muestra en una sola explicación. Las ordinarias se nombran por lo que era el objeto (un astro, una aeronave o un globo, un cohete o un satélite…), un fenómeno natural o un posible fraude; las dos no humanas van juntas, y la parte que el caso no permite asignar se reparte entre las explicaciones que sí apoya, así que ningún caso queda sin clasificar. El modelo anterior, en el que los porcentajes no sumaban 100 ni se podían comparar, se cambió justo por eso."
                   en="In each case, the explanations exclude one another: the case had a single real cause, and the uncertainty is split among the candidates until it sums to 100%. Added across all cases, they can be compared: you can say which explanation accounts for more cases. On the site, each case is shown under a single explanation. Ordinary ones are named by what the object was (a star or planet, an aircraft or balloon, a rocket or satellite…), a natural phenomenon or a possible hoax; the two non-human ones are grouped, and the share a case cannot assign is spread across the explanations it does support, so no case is left unclassified. The previous model, where percentages neither summed to 100 nor could be compared, was replaced for exactly that reason."
+                  locale={locale}
+                />
+              </Body>
+              <Body className="text-muted">
+                <T
+                  es="Las probabilidades de cada caso son juicios estructurados, no frecuencias medidas: que se puedan comparar no las hace ciertas. Dicen qué explicación encaja mejor con lo que se sabe de cada caso, no cuál es la correcta. Hay dos formas de sumar los casos, y las dos dejan fuera los documentos, que son evidencia de los casos y no casos. Una suma las probabilidades de cada explicación: da el número esperado de casos por explicación y reparte lo indeterminado en fracciones (está en /calidad). La otra cuenta cada caso una vez, en su explicación más probable, con «Indeterminado» como categoría propia: es la que usan la portada, /probabilidades y el filtro de /cases. Las dos dan cifras algo distintas porque miden cosas distintas, no porque se contradigan."
+                  en="Each case's probabilities are structured judgments, not measured frequencies: being comparable does not make them true. They say which explanation fits best with what is known about each case, not which one is correct. There are two ways to add up the cases, and both leave out the documents, which are evidence for the cases and not cases. One adds the probabilities of each explanation: it gives the expected number of cases per explanation and spreads the indeterminate share in fractions (it is on /calidad). The other counts each case once, under its most likely explanation, with 'Indeterminate' as its own category: that is what the home page, /probabilidades and the /cases filter use. The two give slightly different figures because they measure different things, not because they contradict each other."
+                  locale={locale}
+                />
+              </Body>
+              <Body className="text-muted">
+                <T
+                  es="En los gráficos, «con menos del 50 %» cuenta los casos en que la explicación más probable no llega a la mitad del reparto. En /probabilidades, las explicaciones ordinarias se abren por el objeto concreto, y «pendiente de revisión» marca los casos que aún no se han contrastado con ninguna fuente: su clase es la heredada, no una conclusión. En cada ficha, la Probabilidad es la parte del reparto que ninguna causa conocida explica (lo indeterminado más las dos explicaciones no humanas), y el tier mide la fuerza de la evidencia, no qué fue: un caso bien documentado puede tener como explicación más probable un posible fraude."
+                  en="In the charts, 'below 50%' counts the cases where the most likely explanation does not reach half of the split. On /probabilidades, ordinary explanations open into the specific object, and 'pending review' marks the cases not yet checked against any source: their class is the inherited one, not a conclusion. On each case page, the Probability is the share of the split no known cause explains (the indeterminate part plus the two non-human explanations), and the tier measures the strength of the evidence, not what it was: a well-documented case can have a possible hoax as its most likely explanation."
                   locale={locale}
                 />
               </Body>
@@ -382,7 +396,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
 
               <div className="mt-10 space-y-4 border-t border-text/15 pt-8">
                 <Eyebrow>
-                  <T es="Posterior por caso, agregado mecánico" en="Per-case posterior, mechanical aggregate" locale={locale} />
+                  <T es="Reparto por caso, suma automática" en="Split per case, automatic total" locale={locale} />
                 </Eyebrow>
                 <h3 className="font-display text-xl font-medium leading-snug text-text md:text-2xl">
                   <T es="Cómo cada caso nuevo mueve las probabilidades automáticamente" en="How each new case moves the probabilities automatically" locale={locale} />
@@ -423,11 +437,11 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
         <section className="space-y-6 border-t-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
           <Eyebrow><T es="Ya entiendes el método" en="You now understand the method" locale={locale} /></Eyebrow>
           <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
-            <T es="Ahora mira el resultado: seis narrativas que reparten el corpus" en="Now see the result: six narratives partitioning the corpus" locale={locale} />
+            <T es="Ahora mira el resultado: cómo se reparte el archivo entre seis explicaciones" en="Now see the result: how the archive splits across six explanations" locale={locale} />
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
             <Cta href="/probabilidades" variant="primary">
-              <T es="Ver las seis narrativas →" en="See the six narratives →" locale={locale} />
+              <T es="Ver las seis explicaciones →" en="See the six explanations →" locale={locale} />
             </Cta>
             <Cta href="/cases" variant="secondary">
               <T es={`Ver los ${STATS.cases} casos →`} en={`See the ${STATS.cases} cases →`} locale={locale} />

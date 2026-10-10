@@ -216,7 +216,7 @@ console.log("\nHome · snapshot de hipótesis");
 const home = readOut("index.html");
 if (home == null) fail("no existe out/index.html");
 else {
-  check("renderiza el snapshot de hipótesis (header)", /casos del corpus|corpus's \d+ cases|Cómo se clasifican|How the corpus/.test(home));
+  check("renderiza el snapshot de hipótesis (header)", /Cómo se reparten los \d+ incidentes|incidents split among the explanations/.test(home));
   check("declara que suman 100%", home.includes("suman 100%") || home.includes("sum to 100%"));
 }
 
@@ -225,7 +225,7 @@ console.log("\nCaso · CasePosterior");
 const casePage = readOut("cases/roswell-1947/index.html");
 if (casePage == null) fail("no existe out/cases/roswell-1947/index.html");
 else {
-  check("renderiza la hipótesis modal del caso", /Hipótesis modal|Modal hypothesis/.test(casePage));
+  check("renderiza la explicación más probable del caso", /Explicación más probable|Most likely explanation/.test(casePage));
   check("la barra por caso suma 100%", casePage.includes("suma 100%") || casePage.includes("sums to 100%"));
 
 }
@@ -265,11 +265,11 @@ for (const slug of [
     fail(`no existe out/cases/${slug}/index.html`);
     continue;
   }
-  // La leyenda va entre el grid de filas y el pie "Hipótesis modal": el % del
+  // La leyenda va entre el grid de filas y el pie "Explicación más probable": el % del
   // modal queda fuera (viene después de ese texto) y los del `title` de la
   // barra también (vienen antes del grid).
   const leyenda = html.match(
-    /grid-cols-1 gap-x-6[\s\S]*?(?:Hipótesis modal|Modal hypothesis)/,
+    /grid-cols-1 gap-x-6[\s\S]*?(?:Explicación más probable|Most likely explanation)/,
   );
   if (!leyenda) {
     fail(`${slug}: no encontré la leyenda de CasePosterior en el render`);

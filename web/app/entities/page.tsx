@@ -131,15 +131,15 @@ export function EntitiesView({ locale }: { locale: "es" | "en" }) {
       <section className="space-y-3">
         <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
           <T
-            es="Arquetipos conocidos, sin caso en el corpus"
-            en="Known archetypes, no case in the corpus"
+            es="Arquetipos conocidos, sin caso en el archivo"
+            en="Known archetypes, no case in the archive"
             locale={locale}
           />
         </h2>
         <p className="text-xs text-muted">
           <T
-            es="Existen en la literatura ufológica amplia. Ningún caso cumple el estándar editorial — se documentan por eso, no por falta de búsqueda."
-            en="They exist in the broader UFO literature. No case meets the editorial standard — they are documented for that reason, not for lack of searching."
+            es="Aparecen en la literatura ufológica, pero ningún caso cumple el estándar editorial."
+            en="They appear in the UFO literature, but no case meets the editorial standard."
             locale={locale}
           />
         </p>

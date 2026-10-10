@@ -30,16 +30,16 @@ const BLURB: Record<string, { es: string; en: string }> = {
   // de objeto salen de `misidSubtype` (dato), ver PROSAIC_CLASSES; su detalle de
   // segundo nivel (`objectDetail`) se desglosa bajo cada bloque.
   astronomico: {
-    es: "Un objeto astronómico tomado por otra cosa: un planeta brillante (Venus, Júpiter), una estrella, la Luna o un meteoro o bólido. El objeto era real y estaba donde debía; lo anómalo fue la lectura.",
-    en: "An astronomical object taken for something else: a bright planet (Venus, Jupiter), a star, the Moon or a meteor or fireball. The object was real and where it should be; the anomaly was in the reading.",
+    es: "Un objeto astronómico tomado por otra cosa: un planeta brillante (Venus, Júpiter), una estrella, la Luna o un meteoro o bólido.",
+    en: "An astronomical object taken for something else: a bright planet (Venus, Jupiter), a star, the Moon or a meteor or fireball.",
   },
   aeronave: {
-    es: "Una aeronave: avión, helicóptero, dron o globo (meteorológico, de investigación, de fiesta). Los globos se archivan aquí porque vuelan en el mismo espacio aéreo y se confunden con lo mismo.",
-    en: "An aircraft: plane, helicopter, drone or balloon (weather, research, party). Balloons are filed here because they fly in the same airspace and get mistaken for the same things.",
+    es: "Una aeronave: avión, helicóptero, dron o globo (meteorológico, de investigación, de fiesta).",
+    en: "An aircraft: plane, helicopter, drone or balloon (weather, research, party).",
   },
   espacial: {
-    es: "Un objeto espacial: cohete o misil, satélite o reentrada —lanzamientos, etapas y restos que reentran, trenes de satélites—. El catálogo de lanzamientos permite fecharlos y a menudo identificarlos.",
-    en: "A space object: rocket or missile, satellite or reentry —launches, stages and debris reentering, satellite trains. Launch catalogs make it possible to date them and often identify them.",
+    es: "Un objeto espacial: cohete o misil, satélite o reentrada —lanzamientos, etapas y restos que reentran, trenes de satélites—.",
+    en: "A space object: rocket or missile, satellite or reentry —launches, stages and debris reentering, satellite trains.",
   },
   luces_tierra: {
     es: "Algo en tierra: un faro o reflector, una bengala o fuegos artificiales, los faros de un vehículo, la llama de una plataforma o una persona. La fuente estaba en el suelo o cerca de él, y la distancia, el relieve o el miedo la hicieron parecer otra cosa.",
@@ -54,8 +54,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "A genuine, poorly-understood natural phenomenon: atmospheric (plasma, ball lightning, clouds) or optical (mirage, refraction). Real physics, not a craft or a hoax. Meteors and fireballs are counted as astronomical objects.",
   },
   fraude: {
-    es: "Posible engaño deliberado: montaje, fabricación o hoax. La clasificación señala el candidato más plausible, no un veredicto cerrado.",
-    en: "Possible deliberate deception: staging, fabrication or hoax. The classification flags the most plausible candidate, not a closed verdict.",
+    es: "Posible engaño deliberado: montaje, fabricación o hoax.",
+    en: "Possible deliberate deception: staging, fabrication or hoax.",
   },
   animal: {
     es: "Un animal: aves que reflejan la luz en vuelo o insectos cerca de la lente, que la cámara convierte en objetos rápidos y lejanos.",
@@ -66,16 +66,16 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "Instrument artifact: the anomaly came from the equipment, not the sky — a film or processing defect, a sensor artifact, a false radar echo or a failure that was blamed on the object.",
   },
   psicosocial: {
-    es: "Causa psicológica, médica o social: contagio colectivo, sugestión, parálisis del sueño o una condición médica (una crisis epiléptica, por ejemplo). Los testigos no mienten; lo que relatan se explica por cómo se percibe y se recuerda en grupo, en estados alterados o por una causa médica.",
-    en: "Psychological, medical or social cause: collective contagion, suggestion, sleep paralysis or a medical condition (an epileptic seizure, for instance). Witnesses are not lying; what they report is explained by how people perceive and remember in groups, in altered states or through a medical cause.",
+    es: "Causa psicológica, médica o social: contagio colectivo, sugestión, parálisis del sueño o una condición médica (una crisis epiléptica, por ejemplo).",
+    en: "Psychological, medical or social cause: collective contagion, suggestion, sleep paralysis or a medical condition (an epileptic seizure, for instance).",
   },
   sin_propuesta: {
-    es: "Causa ordinaria probable, sin identificar: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario. La parte prosaica se conserva por esa tasa base, no porque alguien la haya identificado; la ficha dice qué fuentes se revisaron.",
-    en: "Likely ordinary, unidentified: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary. The prosaic share is kept on that base rate, not because anyone identified it; the entry says which sources were checked.",
+    es: "Causa ordinaria probable, sin identificar: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario.",
+    en: "Likely ordinary, unidentified: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary.",
   },
   folclore: {
-    es: "Relato folclórico o literario: leyendas y relatos de época sin testigo verificable. La lectura prosaica es que se trata de una historia que circuló y se reescribió, no de un objeto mal identificado ni de un engaño deliberado; la ficha dice qué estudioso lo lee así.",
-    en: "Folklore or literary account: legends and period tales with no verifiable witness. The prosaic reading is that it is a story that circulated and was rewritten, not a misidentified object nor a deliberate hoax; the entry says which scholar reads it that way.",
+    es: "Relato folclórico o literario: leyendas y relatos de época sin testigo verificable.",
+    en: "Folklore or literary account: legends and period tales with no verifiable witness.",
   },
   humana_clasificada: {
     es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
@@ -139,7 +139,6 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
     }
   }
   const PROSAIC_KEYS = new Set<string>(PROSAIC_CLASSES.map((c) => c.key));
-  const prosaicShown = hypRows.filter((r) => PROSAIC_KEYS.has(r.key)).length;
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
@@ -147,27 +146,20 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         <T es="Probabilidades · modelo comparable" en="Probabilities · comparable model" locale={locale} />
       </Eyebrow>
       <H1>
-        <T es="Qué explica el corpus" en="What the corpus explains" locale={locale} />
+        <T es="Qué explica cada caso" en="What explains each case" locale={locale} />
       </H1>
       <Lede>
         <T
-          es={`Cada uno de los ${incidents} incidentes se clasifica en una explicación según lo que era el objeto. Las ordinarias se nombran por el objeto (un astro, una aeronave, un objeto espacial, algo en tierra, un animal) o por la causa: fenómeno natural, fallo de instrumento, causa psicológica, médica o social, o posible fraude. Las dos explicaciones no humanas van juntas, y los casos que no se pueden decidir quedan en «Indeterminado». Los ${docCount} documentos no entran: son evidencia de los sucesos, no sucesos. Como todos los casos se reparten igual, se puede comparar qué explicación da cuenta de más casos.`}
-          en={`Each of the ${incidents} incidents is classified under one explanation according to what the object was. Ordinary ones are named by the object (a star or planet, an aircraft, a space object, something on the ground, an animal) or by the cause: natural phenomenon, instrument artifact, psychological, medical or social cause, or possible hoax. The two non-human explanations are grouped, and cases that cannot be decided go to 'Indeterminate'. The ${docCount} documents are left out: they are evidence of the events, not events. Because every case is split the same way, you can compare which explanation accounts for more cases.`}
+          es={<>Los {incidents} incidentes del archivo, cada uno en su explicación más probable. <span className="text-base"><LocaleLink href="/about#non-exclusive" className="text-accent underline-offset-4 hover:underline">Cómo se calcula →</LocaleLink></span></>}
+          en={<>The archive&apos;s {incidents} incidents, each under its most likely explanation. <span className="text-base"><LocaleLink href="/about#non-exclusive" className="text-accent underline-offset-4 hover:underline">How it is calculated →</LocaleLink></span></>}
           locale={locale}
         />
       </Lede>
 
       <section className="mt-12">
         <H2>
-          <T es="Las hipótesis del corpus" en="The corpus hypotheses" locale={locale} />
+          <T es="Las seis explicaciones" en="The six explanations" locale={locale} />
         </H2>
-        <Caption>
-          <T
-            es={`El centro muestra el total de incidentes (${incidents}), cada uno en su explicación más probable; «Indeterminado» reúne los que no se pueden decidir. «Con menos del 50 %» cuenta los casos en que esa explicación gana sin llegar a la mitad.`}
-            en={`The center shows the total of incidents (${incidents}), each under its most likely explanation; 'Indeterminate' holds those that cannot be decided. 'Below 50%' counts the cases where that explanation wins without reaching half.`}
-            locale={locale}
-          />
-        </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
             items={scored}
@@ -175,22 +167,18 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
             consolidateNonHuman
             locale={locale}
             hrefFor={(key) => `#hyp-${key}`}
-            totalLabelEs={`Suman 100% · ${incidents} incidentes · mundano abierto en ${prosaicShown} · no-humano agrupado · Indeterminado aparte`}
-            totalLabelEn={`Sum to 100% · ${incidents} incidents · mundane opened into ${prosaicShown} · non-human grouped · Indeterminate separate`}
+            totalLabelEs={`Suman 100 % · ${incidents} incidentes`}
+            totalLabelEn={`Sum to 100% · ${incidents} incidents`}
           />
         </div>
       </section>
 
       <section className="mt-16">
         <H2>
-          <T es="La heterogeneidad en el tiempo" en="Heterogeneity over time" locale={locale} />
+          <T es="Lo que queda sin explicación ordinaria, década a década" en="What lacks an ordinary explanation, decade by decade" locale={locale} />
         </H2>
         <Caption>
-          <T
-            es="El donut de arriba es el snapshot agregado. Esta serie le añade el eje temporal: cuánto de cada década resiste explicación mundana. El repunte de los 2020s coincide con el ciclo de divulgación."
-            en="The donut above is the aggregate snapshot. This series adds the time axis: how much of each decade resists a mundane explanation. The 2020s uptick coincides with the disclosure cycle."
-            locale={locale}
-          />
+          <T es="La parte de cada década sin explicación ordinaria." en="The share of each decade with no ordinary explanation." locale={locale} />
         </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <HeterogeneityByDecade locale={locale} />
@@ -203,15 +191,8 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
 
       <section className="mt-16">
         <H2>
-          <T es="Las hipótesis, una por una" en="The hypotheses, one by one" locale={locale} />
+          <T es="Cada explicación" en="Each explanation" locale={locale} />
         </H2>
-        <Caption>
-          <T
-            es="Qué significa cada explicación y qué hipótesis del modelo anterior incluye. Las ordinarias se abren para mostrar qué objeto concreto era, y se separan los casos en que una fuente fija la clase pero no el objeto de los que todavía no se han contrastado con ninguna fuente («pendiente de revisión»): en esos, la clase es la heredada, no una conclusión. Cada bloque enlaza a la lista de casos donde esa explicación es la más probable."
-            en="What each explanation means and which hypothesis from the previous model it includes. Ordinary ones open to show which specific object it was, separating cases where a source fixes the class but not the object from those not yet checked against any source ('pending review'): for those, the class is the inherited one, not a conclusion. Each block links to the list of cases where that explanation is the most likely."
-            locale={locale}
-          />
-        </Caption>
 
         <div className="mt-8 space-y-10">
           {hypRows.map((c) => {
@@ -285,26 +266,6 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
             <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
           </LocaleLink>
         </div>
-      </section>
-
-      <section className="mt-16 border-t border-border pt-6">
-        <H2>
-          <T es="Límites del modelo" en="Limits of the model" locale={locale} />
-        </H2>
-        <Body className="mt-2 text-sm text-muted">
-          <T
-            es="Las probabilidades de cada caso son juicios estructurados, no frecuencias medidas: que se puedan comparar no las hace ciertas. Dicen qué explicación encaja mejor con lo que se sabe de cada caso, no cuál es la correcta. Hay dos formas de sumar los casos, y las dos dejan fuera los documentos. Una suma las probabilidades de cada explicación: da el número esperado de casos por explicación, reparte lo indeterminado en fracciones y está en /calidad. La otra cuenta cada caso una vez, en su explicación más probable, con «Indeterminado» como categoría propia: es la que usan el gráfico de arriba, los enlaces y el filtro de /cases. Las dos dan cifras algo distintas porque miden cosas distintas, no porque se contradigan. El reparto completo de cada caso está en su ficha."
-            en="Each case's probabilities are structured judgments, not measured frequencies: being comparable does not make them true. They say which explanation fits best with what is known about each case, not which one is correct. There are two ways to add up the cases, and both leave documents out. One adds the probabilities of each explanation: it gives the expected number of cases per explanation, spreads the indeterminate share in fractions and is on /calidad. The other counts each case once, under its most likely explanation, with 'Indeterminate' as its own category: that is what the chart above, the links and the /cases filter use. The two give slightly different figures because they measure different things, not because they contradict each other. Each case's full split is on its page."
-            locale={locale}
-          />
-        </Body>
-        <Body className="mt-4 text-sm text-muted">
-          <T
-            es="No hay que confundir dos cosas. El tier (S, A o B) mide la fuerza de la evidencia: cuánto cuesta descartar el caso. Este reparto mide qué fue. Un caso bien documentado (S o A) puede tener como explicación más probable un posible fraude, y un caso con poca evidencia (B) no es por eso un fraude. De hecho, los casos clasificados como posible fraude se reparten por igual entre Tier A y Tier B."
-            en="Two things should not be confused. The tier (S, A or B) measures the strength of the evidence: how hard the case is to dismiss. This split measures what it was. A well-documented case (S or A) can have a possible hoax as its most likely explanation, and a case with little evidence (B) is not a hoax for that reason. In fact, the cases classified as a possible hoax split evenly between Tier A and Tier B."
-            locale={locale}
-          />
-        </Body>
       </section>
     </main>
   );

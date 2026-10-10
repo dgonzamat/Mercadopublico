@@ -4,7 +4,7 @@ import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
   title: "UAP Codex — La evidencia institucional",
-  description: `${STATS.cases} casos UAP (${STATS.startYear}–${STATS.endYear}) documentados por gobiernos, militares y prensa, cada uno con sus fuentes, su nivel de evidencia y una probabilidad comparable entre seis explicaciones (modelo MECE).`,
+  description: `${STATS.cases} casos UAP (${STATS.startYear}–${STATS.endYear}) documentados por gobiernos, militares y prensa, cada uno con sus fuentes, su nivel de evidencia y una probabilidad comparable entre seis explicaciones.`,
   enPath: "/",
 });
 

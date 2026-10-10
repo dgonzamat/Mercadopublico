@@ -22,8 +22,8 @@ export default function VisitantesPage() {
         </H1>
         <Lede>
           <T
-            es="De dónde llega quien lee el corpus. Conteo agregado por país — solo guardamos el país, nunca la IP ni datos personales."
-            en="Where the corpus's readers come from. Aggregate per-country count — we store only the country, never the IP or personal data."
+            es="De dónde llegan los lectores del sitio. Contamos solo el país: nunca la IP ni datos personales."
+            en="Where the site's readers come from. We count only the country: never the IP or personal data."
           />
         </Lede>
       </header>

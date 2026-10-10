@@ -11,7 +11,7 @@ import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
   title: "UAP Codex — The institutional evidence",
-  description: `${STATS.cases} UAP cases (${STATS.startYear}–${STATS.endYear}) documented by governments, militaries and the press, each with its sources, evidence tier and a comparable probability across six explanations (MECE model).`,
+  description: `${STATS.cases} UAP cases (${STATS.startYear}–${STATS.endYear}) documented by governments, militaries and the press, each with its sources, evidence tier and a comparable probability across six explanations.`,
   // Canonical/hreflang específicos de la home. NO van en el layout: ahí se
   // heredan a todas las páginas y hacían que cada ruta canonicalizara a "/".
   alternates: {
@@ -183,8 +183,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
               <T
                 locale={locale}
-                es={`La respuesta del corpus — en una frase y en números`}
-                en={`The corpus answer — in one sentence and in numbers`}
+                es={`La respuesta del archivo, en una frase y en números`}
+                en={`What the archive says, in one sentence and in numbers`}
               />
             </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
@@ -235,8 +235,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             >
               <T
                 locale={locale}
-                es="Cómo se reparte el corpus entre explicaciones →"
-                en="How the corpus splits among the explanations →"
+                es="Cómo se reparte el archivo entre explicaciones →"
+                en="How the archive splits among the explanations →"
               />
             </Cta>
           </div>

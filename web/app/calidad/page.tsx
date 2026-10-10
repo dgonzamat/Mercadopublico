@@ -147,8 +147,8 @@ export default function CalidadPage() {
         </H1>
         <Lede>
           <T
-            es="Las mismas señales que miden las sondas del repositorio en cada compilación: si las fichas están completas, cuántas tienen documento o imagen, el equilibrio entre explicaciones y la cobertura por país y época. Se recalcula en cada despliegue."
-            en="The same signals the repository's probes measure on every build: whether the case pages are complete, how many have a document or image, the balance between explanations and the coverage by country and period. Recomputed on every deploy."
+            es="Las mismas comprobaciones que corren en cada compilación."
+            en="The same checks that run on every build."
           />
         </Lede>
       </header>
@@ -187,8 +187,8 @@ export default function CalidadPage() {
         </div>
         <p className="text-sm text-muted">
           <T
-            es="La cobertura de evidencia visual (E21) es el frente en cierre activo — sube caso por caso con material de dominio público."
-            en="Visual-evidence coverage (E21) is the front under active closure — it rises case by case with public-domain material."
+            es="Casos con documento o imagen."
+            en="Cases with a document or image."
           />
         </p>
       </section>
@@ -244,7 +244,7 @@ export default function CalidadPage() {
       <section className="space-y-5">
         <div className="flex items-baseline justify-between gap-3 border-b border-border pb-2">
           <h2 className="font-display text-2xl font-medium">
-            <T es="Reparto MECE del corpus" en="Corpus MECE split" />
+            <T es="Reparto de explicaciones del archivo" en="How the archive splits among explanations" />
           </h2>
           <span className="font-mono text-xs uppercase tracking-widest text-muted">
             <T es="nº esperado de casos" en="expected # of cases" />
@@ -283,8 +283,8 @@ export default function CalidadPage() {
         </div>
         <p className="text-sm text-muted">
           <T
-            es={`Número esperado de casos por explicación: la suma de las probabilidades de los ${meceN} incidentes. Los documentos no entran porque son evidencia, no sucesos. Aquí lo indeterminado se reparte en fracciones, y por eso esta es la vista que permite comparar explicaciones. El conteo de casos enteros, uno por explicación más probable y con «Indeterminado» como categoría, está en /probabilidades y en la portada. Se puede comparar, pero no es una frecuencia medida.`}
-            en={`Expected number of cases per explanation: the sum of the probabilities of the ${meceN} incidents. Documents are left out because they are evidence, not events. Here the indeterminate share is spread in fractions, which is why this is the view that lets you compare explanations. The count of whole cases, one per most likely explanation and with 'Indeterminate' as its own category, is on /probabilidades and the home page. It is comparable, but it is not a measured frequency.`}
+            es={`Valor esperado: la suma de las probabilidades de los ${meceN} incidentes.`}
+            en={`Expected value: the sum of the probabilities of the ${meceN} incidents.`}
           />
         </p>
       </section>
@@ -332,8 +332,8 @@ export default function CalidadPage() {
 
       <footer className="border-t border-border pt-6 text-sm text-muted">
         <T
-          es="Panel derivado de las mismas señales que audit-consistency.mjs reporta en cada build. Cifras vivas — se recalculan con el corpus, no fijadas a mano."
-          en="Panel derived from the same signals audit-consistency.mjs reports on every build. Live figures — recomputed with the corpus, never hand-set."
+          es="Ninguna cifra se escribe a mano."
+          en="No figure is written by hand."
         />
       </footer>
     </div>

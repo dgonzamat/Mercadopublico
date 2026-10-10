@@ -68,9 +68,9 @@ const sections: SectionDef[] = [
     // haberlo vivido. Sin ese encuadre, listar a un experiencer junto a un
     // investigador de la sección A se lee como aval del relato.
     noteEs:
-      "A diferencia de las secciones anteriores, acá el sujeto no es quien investiga el fenómeno sino quien dice haberlo vivido: abducidos, contactados y quienes solo vieron una entidad de cerca, todos en un mismo grupo. Se ordenan por el peso documental del expediente asociado —testigos, evaluación institucional, costo asumido—, no por la verosimilitud del relato: la sección incluye casos que su propio protagonista terminó desmintiendo.",
+      "Quienes dicen haber vivido el fenómeno: abducidos, contactados y testigos de una entidad de cerca, ordenados por el peso documental de su expediente.",
     noteEn:
-      "Unlike the previous sections, here the subject is not the one investigating the phenomenon but the one who says they lived it: abductees, contactees, and those who merely saw an entity up close, all in one group. They are ordered by the documentary weight of the associated file —witnesses, institutional evaluation, cost incurred—, not by the plausibility of the account: the section includes cases their own protagonist ended up denying.",
+      "People who say they lived the phenomenon: abductees, contactees and witnesses of an entity up close, ordered by the documentary weight of their file.",
   },
 ];
 

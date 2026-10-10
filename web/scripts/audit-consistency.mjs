@@ -1148,8 +1148,10 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   if (snapshot && !(/cuenta una vez/.test(snapshot) && /counts once/.test(snapshot))) {
     record("ERROR", snapshotPath, 0, "E24 modelo: HypothesesSnapshot (donut de la home) no se rotula como conteo modal («cada incidente cuenta una vez, en su explicación más probable», ES y EN). Debe declararlo para no leerse como contradictorio con /calidad.");
   }
-  if (snapshot && !/\/calidad/.test(snapshot)) {
-    record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no remite a /calidad (donde vive el reparto por valor esperado). El puente entre ambas vistas evita que se lean como contradictorias.");
+  // La explicación de las dos vistas vive en una sola página, la de metodología
+  // (decisión del dueño, oct 2026): la home enlaza ahí, no a /calidad.
+  if (snapshot && !/\/about#non-exclusive/.test(snapshot)) {
+    record("ERROR", snapshotPath, 0, "E24 modelo: el donut de la home no enlaza a la metodología (/about#non-exclusive), donde se explican las dos formas de contar. Sin ese puente, la home y /calidad se leen como contradictorias.");
   }
   // (c) las vistas NAVEGABLES clasifican los incidentes (corpusPosteriors, sin
   //     documentos) conservando «Indeterminado» (keepIndet). Si una vuelve a sumar

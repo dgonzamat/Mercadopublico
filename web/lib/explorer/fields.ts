@@ -98,7 +98,7 @@ export const DIMENSIONS: DimensionDef[] = [
   },
   {
     key: "narrativa",
-    label: { es: "Narrativa MECE (dominante)", en: "MECE narrative (dominant)" },
+    label: { es: "Explicación más probable", en: "Most likely explanation" },
     // Narrativa más probable del posterior (argmax). Los documentos no llevan
     // posterior (la partición «qué era el objeto» no les aplica) → "—", como la
     // convención de `patterns` vacío (kpiDistinct la ignora). Etiqueta en ES

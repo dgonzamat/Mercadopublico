@@ -103,8 +103,8 @@ export function HeterogeneityByDecade({ locale }: { locale: "es" | "en" }) {
 
       <Caption>
         <T
-          es="Heterogeneidad: la parte media de cada caso que no se explica como algo ordinario o natural, por década (solo incidentes). Mide cuánto resiste el archivo a una explicación convencional. El donut muestra el total; este gráfico añade el tiempo. Pasa el cursor por cada punto para ver cuántos casos tiene la década."
-          en="Heterogeneity: the average share of each case not explained as something ordinary or natural, by decade (incidents only). It measures how much the archive resists a conventional explanation. The donut shows the total; this chart adds time. Hover each point to see how many cases the decade has."
+          es="Pasa el cursor por cada punto para ver cuántos casos tiene la década."
+          en="Hover each point to see how many cases the decade has."
           locale={locale}
         />
       </Caption>

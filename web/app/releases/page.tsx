@@ -54,8 +54,8 @@ export function ReleasesView({ locale }: { locale: "es" | "en" }) {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es="Cada entrega de archivos UAP desclasificados por el Department of War alimenta casos del corpus. Aquí se agrupa qué aportó cada release."
-            en="Each drop of UAP files declassified by the Department of War feeds cases in the corpus. Here is what each release contributed."
+            es="Cada entrega de archivos UAP desclasificados por el Department of War aporta documentos a los casos. Aquí está lo que aportó cada entrega."
+            en="Each drop of UAP files declassified by the Department of War adds documents to the cases. Here is what each release contributed."
             locale={locale}
           />
         </Lede>
