@@ -156,15 +156,15 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
         </Eyebrow>
         <H1>
           <T
-            es={`Los ${TOTAL_CASES} que sobrevivieron`}
-            en={`The ${TOTAL_CASES} that survived`}
+            es={`Los ${TOTAL_CASES} casos`}
+            en={`The ${TOTAL_CASES} cases`}
             locale={locale}
           />
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`Cada caso superó tres filtros: tuvo testigos institucionales, dejó rastro documental, y nadie pudo descartarlo con explicación convencional. De 1947 a 2026, era por era, en orden cronológico. Junto a ellos van los ${TOTAL_DOCUMENTS} documentos oficiales que los respaldan: son evidencia de los casos, no casos.`}
-            en={`Each case survived three filters: institutional witnesses, documented paper trail, and no one could dismiss it with a conventional explanation. From 1947 to 2026, era by era, in chronological order. Alongside them are the ${TOTAL_DOCUMENTS} official documents that back them: evidence for the cases, not cases.`}
+            es={`Cada caso lleva sus fuentes, su nivel de evidencia (S, A o B) y una probabilidad repartida entre seis explicaciones; muchos tienen una explicación ordinaria y se quedan en el archivo para que se vea qué se explica y qué no. De 1947 a 2026, era por era, en orden cronológico. Junto a ellos van los ${TOTAL_DOCUMENTS} documentos oficiales que los respaldan: son evidencia de los casos, no casos.`}
+            en={`Each case carries its sources, its evidence tier (S, A or B) and a probability split across six explanations; many have an ordinary explanation and stay in the archive so you can see what is explained and what is not. From 1947 to 2026, era by era, in chronological order. Alongside them are the ${TOTAL_DOCUMENTS} official documents that back them: evidence for the cases, not cases.`}
             locale={locale}
           />
         </Lede>
