@@ -1990,6 +1990,31 @@ if (fs.existsSync(regionsPath)) {
   if (hype > 0) record("NOTE", path.join("data", "cases"), 0, `E47 léxico: ${hype} usos de hipérbole fuera de comillas (fascinante, enigmático, unprecedented…). Revisa que sean afirmaciones atribuidas o nombres propios.`);
 }
 
+// ─── 9za6. RULE E48: la fuente de la clase prosaica está citada ─────────
+//
+// `classBasis.url` es el documento que fija la clase prosaica de la ficha, así
+// que el lector debe encontrarlo entre las fuentes. En oct 2026, 92 fichas
+// enlazaban ahí un documento ausente de su lista de fuentes (la mitad, el
+// informe anual de la AARO usado como tasa base). Cuenta como citado si está en
+// `sources`, en el visor (`documents`/`primaryDocument`/`featuredDoc`) o si es
+// la copia /pursue/ de un documento citado con el mismo nombre de fichero.
+{
+  for (const c of cases) {
+    const u = c.classBasis?.url;
+    if (!u) continue;
+    const fd = c.featuredDoc;
+    const cited = [
+      ...(c.sources ?? []).map((s) => s.url),
+      ...(c.documents ?? []).map((d) => d.src),
+      c.primaryDocument?.src,
+      typeof fd === "string" ? fd : fd?.src,
+    ].filter(Boolean);
+    const base = (x) => x.split(/[?#]/)[0].split("/").pop();
+    const ok = cited.includes(u) || (u.startsWith("/pursue/") && cited.some((x) => base(x) === base(u)));
+    if (!ok) record("ERROR", path.join("data", "cases", `${c.id}.json`), 0, `E48 classBasis.url no figura entre las fuentes de la ficha: ${u}. Añádelo a sources (es el documento que fija la clase) o corrige la URL.`);
+  }
+}
+
 // ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
 //
 // Cada incidente llevaba dos números escritos por separado —la «probabilidad»
