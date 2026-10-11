@@ -34,9 +34,9 @@ function tierExamples(tier: "S" | "A" | "B", locale: "es" | "en"): string {
 
 export const metadata = {
   ...pageMeta({
-  title: "Methodology — how the evidence is weighed",
+  title: "Methodology: how the evidence is weighed",
   description:
-    "How the evidence is weighed: three evidentiary tiers (S/A/B), diminishing returns per case, and why the six narratives are comparable.",
+    "How the evidence is weighed: three evidence tiers (S, A and B), why a repeated case adds little, and how six explanations share each case.",
   path: "/about/",
 }),
   alternates: { canonical: "/about/", languages: hreflangFor("/about/") },
@@ -46,32 +46,32 @@ const CHAPTERS = [
   {
     id: "tiers",
     n: "1",
-    es: { eyebrow: "Capítulo 1", h2: "Por qué Teherán no equivale a Communion", tldr: "3 niveles de evidencia (S/A/B) — Tier S (militar+sensor) no pesa lo mismo que Tier B (testigo único); y el tier no es un veredicto" },
-    en: { eyebrow: "Chapter 1", h2: "Why Tehran isn't equivalent to Communion", tldr: "3 evidence tiers (S/A/B) — Tier S (military+sensor) weighs differently than Tier B (single-witness); and the tier is not a verdict" },
+    es: { eyebrow: "Capítulo 1", h2: "Por qué Teherán no equivale a Communion", tldr: "Tres niveles de evidencia (S, A y B): un caso con sensores y testigos militares no pesa lo mismo que uno de testigo único, y el nivel no dice qué fue el caso" },
+    en: { eyebrow: "Chapter 1", h2: "Why Tehran isn't equivalent to Communion", tldr: "Three evidence tiers (S, A and B): a case with sensors and military witnesses does not weigh the same as a single-witness one, and the tier does not say what the case was" },
   },
   {
     id: "bayes",
     n: "2",
-    es: { eyebrow: "Capítulo 2", h2: "Por qué el caso número 50 ya no agrega nada nuevo", tldr: "Un caso con sensor produce un posterior nítido que mueve masa entre narrativas; el caso 50 del mismo patrón solo refuerza la que ya dominaba" },
-    en: { eyebrow: "Chapter 2", h2: "Why case number 50 adds nothing new", tldr: "A sensor case yields a sharp posterior that moves mass between narratives; case 50 of the same pattern only reinforces the one already dominant" },
+    es: { eyebrow: "Capítulo 2", h2: "Por qué el caso número 50 ya no agrega nada nuevo", tldr: "Un caso con sensores puede cambiar qué explicación pesa más; el caso 50 del mismo tipo solo refuerza la que ya dominaba" },
+    en: { eyebrow: "Chapter 2", h2: "Why case number 50 adds nothing new", tldr: "A case with sensors can change which explanation weighs most; case 50 of the same kind only reinforces the one already dominant" },
   },
   {
     id: "non-exclusive",
     n: "3",
-    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades suman 100%", tldr: "Las seis narrativas son mutuamente excluyentes por caso; la distribución es comparable y reparte el 100%" },
-    en: { eyebrow: "Chapter 3", h2: "Why probabilities sum to 100%", tldr: "The six narratives are mutually exclusive per case; the distribution is comparable and sums to 100%" },
+    es: { eyebrow: "Capítulo 3", h2: "Por qué las probabilidades suman 100%", tldr: "En cada caso, las seis explicaciones se excluyen entre sí y se reparten el 100 %, así que se pueden comparar" },
+    en: { eyebrow: "Chapter 3", h2: "Why probabilities sum to 100%", tldr: "In each case, the six explanations exclude one another and share 100%, so they can be compared" },
   },
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayor parte del corpus es prosaico (sobre todo objetos convencionales: aeronaves, globos, astros, satélites); las hipótesis no-humanas son minoría y se concentran en los casos mejor documentados." },
-    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most of the corpus is prosaic (mostly conventional objects: aircraft, balloons, celestial bodies, satellites); the non-human hypotheses are a minority and concentrate in the best-documented cases." },
+    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayoría de los casos tiene una causa ordinaria (sobre todo aeronaves, globos, astros y satélites); las explicaciones no humanas son minoría y se concentran en los casos mejor documentados." },
+    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most cases have an ordinary cause (mostly aircraft, balloons, celestial bodies and satellites); the non-human explanations are a minority and concentrate in the best-documented cases." },
   },
   {
     id: "movers",
     n: "5",
     es: { eyebrow: "Capítulo 5", h2: "Qué movería el análisis ahora", tldr: "Análisis isotópico de Lake Huron, material recuperado verificable, reconocimiento formal de un nuevo país" },
-    en: { eyebrow: "Chapter 5", h2: "What would move the analysis now", tldr: "Lake Huron isotopic analysis, verifiable recovered material, new country acknowledging" },
+    en: { eyebrow: "Chapter 5", h2: "What would move the analysis now", tldr: "Lake Huron isotopic analysis, verifiable recovered material, formal acknowledgment by a new country" },
   },
 ];
 
@@ -109,8 +109,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
           <H1><T es="Las reglas del juego" en="The rules of the game" locale={locale} /></H1>
           <Lede className="text-muted">
             <T
-              es="Toda colección de evidencia UAP necesita una respuesta a tres preguntas: qué cuenta, cómo se pesa, y cuándo cambia. Acá las tres, explícitas — para que cualquiera pueda auditar el análisis en lugar de creerlo."
-              en="Any UAP evidence collection needs an answer to three questions: what counts, how it's weighted, and when it changes. Here are all three, made explicit — so anyone can audit the analysis instead of having to believe it."
+              es="Toda colección de evidencia UAP necesita una respuesta a tres preguntas: qué cuenta, cómo se pesa, y cuándo cambia. Aquí están las tres, para que cualquiera pueda revisar el análisis en lugar de creerlo."
+              en="Any UAP evidence collection needs an answer to three questions: what counts, how it's weighted, and when it changes. Here are all three, so anyone can check the analysis instead of having to believe it."
               locale={locale}
             />
           </Lede>
@@ -149,8 +149,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="No todos los casos UAP son equivalentes en valor evidencial. Mezclar niveles opaca el análisis e infla artificialmente la apariencia de evidencia. El público y la prensa confunden esos niveles con frecuencia — esa es una fuente principal de confusión."
-                  en="Not all UAP cases are equivalent in evidential value. Mixing tiers obscures the analysis and artificially inflates the appearance of evidence. The public and the press frequently conflate tiers — that's a principal source of confusion."
+                  es="No todos los casos valen lo mismo como evidencia. Mezclar niveles enturbia el análisis y hace que parezca haber más evidencia de la que hay, y el público y la prensa los mezclan con frecuencia."
+                  en="Not all cases are worth the same as evidence. Mixing tiers muddies the analysis and makes it look as if there were more evidence than there is, and the public and the press mix them up often."
                   locale={locale}
                 />
               </Body>
@@ -179,8 +179,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </p>
               <PullQuote>
                 <T
-                  es={`Una "evidencia" Tier B no debería usarse para sustentar conclusiones que exigen Tier S. La escala (heredera de las categorías de encuentros cercanos de Hynek) mide solo la fuerza de la evidencia — no qué fue el caso.`}
-                  en={`A Tier B "evidence" should not be used to support conclusions that require Tier S. The scale (descended from Hynek's Close Encounter Categories) measures only the strength of the evidence — not what the case was.`}
+                  es={`Una "evidencia" Tier B no debería usarse para sustentar conclusiones que exigen Tier S. La escala (heredera de las categorías de encuentros cercanos de Hynek) mide solo la fuerza de la evidencia, no qué fue el caso.`}
+                  en={`A Tier B "evidence" should not be used to support conclusions that require Tier S. The scale (descended from Hynek's close-encounter categories) measures only the strength of the evidence, not what the case was.`}
                   locale={locale}
                 />
               </PullQuote>
@@ -189,7 +189,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   Responde a la confusión de que cada vista habla solo de "su" eje. */}
               <div className="border-l-4 border-accent bg-surface-2 p-5">
                 <p className="font-mono text-xs uppercase tracking-widest text-accent">
-                  <T es="Tres ejes independientes — no confundir" en="Three independent axes — don't conflate" locale={locale} />
+                  <T es="Tres medidas distintas" en="Three different measures" locale={locale} />
                 </p>
                 <Body className="mt-3 text-sm text-muted">
                   <T
@@ -200,19 +200,19 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                 </Body>
                 <ul className="mt-3 space-y-2 text-sm text-text">
                   <li>
-                    <strong className="text-tierS"><T es="Tier (S/A/B)" en="Tier (S/A/B)" locale={locale} /></strong> — <T es="la fuerza de la evidencia. Se ve como badge en cada caso y como color del marcador en el mapa." en="the strength of the evidence. Shown as a badge on each case and as the marker color on the map." locale={locale} />
+                    <strong className="text-tierS"><T es="Tier (S/A/B)" en="Tier (S/A/B)" locale={locale} /></strong>: <T es="la fuerza de la evidencia. Se ve como etiqueta en cada caso y como color del marcador en el mapa." en="the strength of the evidence. Shown as a badge on each case and as the marker color on the map." locale={locale} />
                   </li>
                   <li>
-                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" locale={locale} /></strong> — <T es="cuánto del caso sigue sin explicación: la parte del reparto de explicaciones que no cubre ninguna causa conocida («indeterminado» más las dos explicaciones no humanas). No se escribe a mano: se calcula desde ese reparto, así que nunca lo contradice. Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how much of the case remains unexplained: the share of the split of explanations that no known cause covers («indeterminate» plus the two non-human explanations). It is not written by hand: it is computed from that split, so it never contradicts it. Shown as «%» on each case and as the marker size on the map." locale={locale} />
+                    <strong className="text-accent"><T es="Probabilidad (0–100%)" en="Probability (0–100%)" locale={locale} /></strong>: <T es="cuánto del caso sigue sin explicación: la parte del reparto de explicaciones que no cubre ninguna causa conocida («indeterminado» más las dos explicaciones no humanas). No se escribe a mano: se calcula desde ese reparto, así que nunca lo contradice. Se ve como «%» en cada caso y como tamaño del marcador en el mapa." en="how much of the case remains unexplained: the share of the split of explanations that no known cause covers («indeterminate» plus the two non-human explanations). It is not written by hand: it is computed from that split, so it never contradicts it. Shown as «%» on each case and as the marker size on the map." locale={locale} />
                   </li>
                   <li>
-                    <strong className="text-text"><T es="Reparto de explicaciones" en="Split of explanations" locale={locale} /></strong> — <T es="qué fue: cómo se reparte el caso entre seis explicaciones que se excluyen entre sí." en="what it was: how the case splits across six explanations that exclude one another." locale={locale} /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" locale={locale} /></LocaleLink>
+                    <strong className="text-text"><T es="Reparto de explicaciones" en="Split of explanations" locale={locale} /></strong>: <T es="qué fue: cómo se reparte el caso entre seis explicaciones que se excluyen entre sí." en="what it was: how the case splits across six explanations that exclude one another." locale={locale} /> <LocaleLink href="/probabilidades" className="text-accent hover:underline"><T es="ver /probabilidades →" en="see /probabilidades →" locale={locale} /></LocaleLink>
                   </li>
                 </ul>
                 <Body className="mt-3 text-sm text-muted">
                   <T
-                    es="Son ortogonales: un caso bien documentado (Tier S/A) puede tener como explicación más plausible un posible fraude, y un Tier B no es, por eso, un fraude."
-                    en="They are orthogonal: a well-documented case (Tier S/A) can have a possible hoax as its most plausible explanation, and a Tier B is not, for that reason, a hoax."
+                    es="Son independientes: un caso bien documentado (Tier S o A) puede tener como explicación más probable un posible fraude, y un Tier B no es por eso un fraude."
+                    en="They are independent: a well-documented case (Tier S or A) can have a possible hoax as its most likely explanation, and a Tier B is not a hoax for that reason."
                     locale={locale}
                   />
                 </Body>
@@ -246,16 +246,16 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   es="Cambia el reparto entre explicaciones"
                   en="Shifts the split between explanations"
                   items={[
-                    "Tier S/A con multi-sensor → posterior nítido (Tehran, Nimitz)",
+                    "Tier S o A con varios sensores (Teherán, Nimitz)",
                     "Categoría de evidencia nueva (Hessdalen, Lake Huron)",
                     "Caso que contradice el patrón establecido",
-                    "Sensores oficiales + video correlacionado",
+                    "Sensores oficiales y vídeo que coinciden",
                   ]}
                   itemsEn={[
-                    "Tier S/A with multi-sensor → sharp posterior (Tehran, Nimitz)",
+                    "Tier S or A with several sensors (Tehran, Nimitz)",
                     "New class of evidence (Hessdalen, Lake Huron)",
                     "Case that contradicts the established pattern",
-                    "Official sensors + correlated video",
+                    "Official sensors and matching video",
                   ]}
                   accent
                   locale={locale}
@@ -264,22 +264,22 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   es="Solo refuerza lo dominante"
                   en="Only reinforces the dominant"
                   items={[
-                    "Contactado aislado Tier B → mayormente mundano/indet (Communion)",
-                    "Caso #50 del mismo patrón (escala la narrativa dominante)",
-                    "Predicción de contactado fallida (carga mundano_natural)",
+                    "Un contactado aislado de Tier B (Communion)",
+                    "El caso 50 del mismo tipo",
+                    "Una predicción de contactado que no se cumplió",
                   ]}
                   itemsEn={[
-                    "Isolated Tier B contactee → mostly mundane/indet (Communion)",
-                    "Case #50 of the same pattern (scales the dominant narrative)",
-                    "Failed contactee prediction (loads mundano_natural)",
+                    "An isolated Tier B contactee (Communion)",
+                    "Case 50 of the same kind",
+                    "A contactee prediction that did not come true",
                   ]}
                   locale={locale}
                 />
               </div>
               <Caption>
                 <T
-                  es={<><strong className="text-text">Estado:</strong> los casos &quot;contactado&quot; aislados aportan posteriores dominados por <em>mundano_natural</em> e <em>indeterminable</em> — no redistribuyen la partición. Los institucionales con sensor (Tier S/A) producen posteriores nítidos que sí mueven masa entre narrativas.</>}
-                  en={<><strong className="text-text">Status:</strong> isolated &quot;contactee&quot; cases contribute posteriors dominated by <em>mundano_natural</em> and <em>indeterminable</em> — they do not redistribute the partition. Institutional sensor cases (Tier S/A) yield sharp posteriors that do move mass between narratives.</>}
+                  es="Los casos aislados de contactados se reparten sobre todo entre causas ordinarias e indeterminado, así que no cambian el reparto del archivo. Los casos institucionales con sensores (Tier S o A) sí pueden cambiarlo."
+                  en="Isolated contactee cases split mostly between ordinary causes and indeterminate, so they do not change the archive's split. Institutional cases with sensors (Tier S or A) can."
                   locale={locale}
                 />
               </Caption>
@@ -302,8 +302,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <div className="mt-6 space-y-6">
               <Body className="text-muted">
                 <T
-                  es="En cada caso, las explicaciones se excluyen entre sí: el caso tuvo una sola causa real, y la incertidumbre se reparte entre las candidatas hasta sumar 100 %. Sumadas sobre todos los casos, se pueden comparar: se puede decir qué explicación da cuenta de más casos. En el sitio, cada caso se muestra en una sola explicación. Las ordinarias se nombran por lo que era el objeto (un astro, una aeronave o un globo, un cohete o un satélite…), un fenómeno natural o un posible fraude; las dos no humanas van juntas, y la parte que el caso no permite asignar se reparte entre las explicaciones que sí apoya, así que ningún caso queda sin clasificar. El modelo anterior, en el que los porcentajes no sumaban 100 ni se podían comparar, se cambió justo por eso."
-                  en="In each case, the explanations exclude one another: the case had a single real cause, and the uncertainty is split among the candidates until it sums to 100%. Added across all cases, they can be compared: you can say which explanation accounts for more cases. On the site, each case is shown under a single explanation. Ordinary ones are named by what the object was (a star or planet, an aircraft or balloon, a rocket or satellite…), a natural phenomenon or a possible hoax; the two non-human ones are grouped, and the share a case cannot assign is spread across the explanations it does support, so no case is left unclassified. The previous model, where percentages neither summed to 100 nor could be compared, was replaced for exactly that reason."
+                  es="En cada caso, las explicaciones se excluyen entre sí: el caso tuvo una sola causa real, y la incertidumbre se reparte entre las candidatas hasta sumar 100 %. Sumadas sobre todos los casos, se pueden comparar: se puede decir qué explicación da cuenta de más casos. En el sitio, cada caso se muestra en una sola explicación. Las ordinarias se nombran por lo que era el objeto (un astro, una aeronave o un globo, un cohete o un satélite…), un fenómeno natural o un posible fraude; las dos no humanas van juntas, y la parte que el caso no permite asignar se reparte entre las explicaciones que sí apoya, así que ningún caso queda sin clasificar."
+                  en="In each case, the explanations exclude one another: the case had a single real cause, and the uncertainty is split among the candidates until it sums to 100%. Added across all cases, they can be compared: you can say which explanation accounts for more cases. On the site, each case is shown under a single explanation. Ordinary ones are named by what the object was (a star or planet, an aircraft or balloon, a rocket or satellite…), a natural phenomenon or a possible hoax; the two non-human ones are grouped, and the share a case cannot assign is spread across the explanations it does support, so no case is left unclassified."
                   locale={locale}
                 />
               </Body>
@@ -324,8 +324,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               <div className="border-l-4 border-accent bg-surface-2 px-5 py-4">
                 <p className="text-sm text-text">
                   <T
-                    es={<>El detalle por explicación (con números y casos modales) vive en{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>{" "}para no duplicar el contenido acá.</>}
-                    en={<>The per-explanation detail (with numbers and modal cases) lives in{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>{" "}to avoid duplicating content here.</>}
+                    es={<>El detalle de cada explicación, con sus cifras y sus casos más representativos, está en{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink></>}
+                    en={<>The detail of each explanation, with its figures and most representative cases, is at{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink></>}
                     locale={locale}
                   />
                 </p>
@@ -356,8 +356,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </Body>
               <Caption className="pt-2">
                 <T
-                  es={<>La partición completa, las seis narrativas y los casos modales de cada una viven en{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>.</>}
-                  en={<>The full partition, the six narratives and each one&apos;s modal cases live at{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>.</>}
+                  es={<>El reparto completo, las seis explicaciones y los casos más representativos de cada una están en{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>.</>}
+                  en={<>The full split, the six explanations and the most representative cases of each are at{" "}<LocaleLink href="/probabilidades" className="text-accent hover:underline">/probabilidades →</LocaleLink>.</>}
                   locale={locale}
                 />
               </Caption>
@@ -382,10 +382,10 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                 {[
                   { weight: "+++", color: "text-tierS", es: "Análisis isotópico independiente de residuos físicos publicado", en: "Independent isotopic analysis of physical residues published" },
                   { weight: "+++", color: "text-tierS", es: "Material recuperado con fotos verificables", en: "Recovered material with verifiable photos" },
-                  { weight: "+++", color: "text-tierS", es: "Lake Huron fragmentos análisis publicado", en: "Lake Huron fragment analysis published" },
-                  { weight: "+", color: "text-tierA", es: "Nuevo país que reconoce formalmente el fenómeno", en: "New country formally acknowledging" },
-                  { weight: "+", color: "text-tierA", es: "Otro Tehran-equivalente con sensor data", en: "Another Tehran-equivalent with sensor data" },
-                  { weight: "~0", color: "text-muted", es: "Nuevo contactee con cosmología detallada", en: "New contactee with detailed cosmology" },
+                  { weight: "+++", color: "text-tierS", es: "Análisis publicado de los fragmentos de Lake Huron", en: "Published analysis of the Lake Huron fragments" },
+                  { weight: "+", color: "text-tierA", es: "Nuevo país que reconoce formalmente el fenómeno", en: "A new country formally acknowledging the phenomenon" },
+                  { weight: "+", color: "text-tierA", es: "Otro caso como Teherán, con datos de sensores", en: "Another case like Tehran, with sensor data" },
+                  { weight: "~0", color: "text-muted", es: "Un nuevo contactado con una cosmología detallada", en: "A new contactee with a detailed cosmology" },
                 ].map((item, i) => (
                   <li key={i} className="grid grid-cols-[3rem_1fr] items-baseline gap-3">
                     <span className={`text-right font-mono text-xs ${item.color}`}>{item.weight}</span>
@@ -396,36 +396,29 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
 
               <div className="mt-10 space-y-4 border-t border-text/15 pt-8">
                 <Eyebrow>
-                  <T es="Reparto por caso, suma automática" en="Split per case, automatic total" locale={locale} />
+                  <T es="Cómo se suma" en="How it adds up" locale={locale} />
                 </Eyebrow>
                 <h3 className="font-display text-xl font-medium leading-snug text-text md:text-2xl">
-                  <T es="Cómo cada caso nuevo mueve las probabilidades automáticamente" en="How each new case moves the probabilities automatically" locale={locale} />
+                  <T es="Cómo cada caso nuevo cambia las cifras" en="How each new case changes the figures" locale={locale} />
                 </h3>
                 <Body className="text-muted">
                   <T
-                    es={<>Las probabilidades del corpus se derivan en build-time de forma pública y comparable. Cada caso reparte el 100% entre seis narrativas mutuamente excluyentes: <strong className="text-text">un posterior que suma 1</strong>. El corpus las agrega en el nº esperado de casos por narrativa —Eⱼ = Σᵢ P(narrativaⱼ | casoᵢ)—, que reparte el 100% y es comparable entre narrativas; al ser una esperanza (lineal), es válido aunque los casos estén correlacionados. Son juicios analíticos estructurados, no frecuencias calibradas empíricamente: el modelo dice qué explicación es más coherente con cada caso, no cuál es objetivamente correcta. Cada caso nuevo recalcula la partición sin intervención humana.</>}
-                    en={<>Corpus probabilities are derived at build-time in a public, comparable way. Each case splits 100% among six mutually-exclusive narratives: <strong className="text-text">a posterior that sums to 1</strong>. The corpus aggregates them into the expected number of cases per narrative —Eⱼ = Σᵢ P(narrativeⱼ | caseᵢ)—, which splits 100% and is comparable across narratives; being an expectation (linear), it holds even if cases are correlated. These are structured analytical judgments, not empirically calibrated frequencies: the model says which explanation is most coherent with each case, not which is objectively correct. Every new case recomputes the partition without human intervention.</>}
+                    es="Cada caso reparte el 100 % entre las seis explicaciones. Ese reparto es un juicio declarado, no el resultado de una fórmula: el análisis del caso decide cuánto encaja cada explicación con la evidencia, y el reparto queda visible en la página del caso, en «Distribución de explicaciones». Son juicios razonados, no frecuencias medidas: dicen qué explicación encaja mejor con cada caso, no cuál es la correcta."
+                    en="Each case splits 100% across the six explanations. That split is a declared judgment, not the output of a formula: the case analysis decides how well each explanation fits the evidence, and the split stays visible on the case page, under 'Distribution of explanations'. They are reasoned judgments, not measured frequencies: they say which explanation fits each case best, not which one is correct."
                     locale={locale}
                   />
                 </Body>
                 <Body className="text-muted">
                   <T
-                    es={<>El posterior de cada caso es un juicio declarado, no un cálculo a partir de pesos: el análisis del caso reparte explícitamente el 100% según qué tan bien cada explicación da cuenta de la evidencia. No hay fórmula oculta — el reparto es el juicio, y queda visible en la página del caso. La masa que el caso no permite asignar (la antigua{" "}<strong className="text-text">«indeterminable»</strong>) se redistribuye, en las gráficas, entre las hipótesis que el caso sí apoya: <strong className="text-text">clasificación forzada</strong>, ningún caso queda sin clasificar.</>}
-                    en={<>Each case&apos;s posterior is a declared judgment, not a computation from weights: the case analysis explicitly splits 100% by how well each explanation accounts for the evidence. There is no hidden formula — the split is the judgment, and it stays visible on the case page. The mass a case cannot assign (the former{" "}<strong className="text-text">&apos;indeterminable&apos;</strong>) is redistributed, in the charts, across the hypotheses the case does support: <strong className="text-text">forced classification</strong>, no case left unclassified.</>}
-                    locale={locale}
-                  />
-                </Body>
-                <Body className="text-muted">
-                  <T
-                    es={<>El agregado del corpus es puramente mecánico: suma esos posteriores en el nº esperado de casos por narrativa y los redondea con el método de mayor resto (Hamilton) para que los porcentajes mostrados sumen exactamente 100. Cada caso nuevo entra con su posterior y recalcula la partición sin intervención adicional.</>}
-                    en={<>The corpus aggregate is purely mechanical: it sums those posteriors into the expected number of cases per narrative and rounds them with the largest-remainder (Hamilton) method so the displayed percentages sum to exactly 100. Each new case enters with its posterior and recomputes the partition with no further intervention.</>}
+                    es="El total del archivo se calcula solo: suma los repartos de todos los casos y redondea para que los porcentajes mostrados sumen exactamente 100. Como es una suma, vale aunque los casos se parezcan entre sí. Cada caso nuevo entra con su reparto y el total se recalcula al publicar el sitio, sin ajustes a mano. En las gráficas, la parte que un caso no permite asignar se reparte entre las explicaciones que ese caso sí apoya, así que ningún caso queda sin clasificar."
+                    en="The archive total is computed automatically: it adds up the splits of every case and rounds them so the displayed percentages sum to exactly 100. Because it is a sum, it holds even when cases resemble one another. Each new case enters with its split and the total is recomputed when the site is published, with no manual adjustment. In the charts, the share a case cannot assign is spread across the explanations that case does support, so no case is left unclassified."
                     locale={locale}
                   />
                 </Body>
                 <Caption>
                   <T
-                    es={<>Cada caso muestra su posterior en su propia página, en la sección{" "}<em>&quot;Distribución de explicaciones&quot;</em>. En los incidentes el posterior mide la naturaleza del objeto; en los casos-documento (memos, audiencias, filtraciones) mide el «lean» evidencial —hacia qué explicación inclina su contenido—, ya que no tienen un objeto que clasificar.</>}
-                    en={<>Each case shows its posterior on its own page, in the{" "}<em>&quot;Distribution of explanations&quot;</em> section. For incidents the posterior measures the nature of the object; for document cases (memos, hearings, leaks) it measures the evidential &apos;lean&apos; —which explanation their content tilts toward—, since they have no object to classify.</>}
+                    es="Los documentos (memorandos, audiencias, filtraciones) no tienen un objeto que clasificar: su reparto indica hacia qué explicación apunta su contenido, y no entra en el total."
+                    en="Documents (memos, hearings, leaks) have no object to classify: their split shows which explanation their content points to, and it does not enter the total."
                     locale={locale}
                   />
                 </Caption>
@@ -435,8 +428,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
         </section>
 
         <section className="space-y-6 border-t-4 border-text bg-surface-2 px-6 py-10 md:px-10 md:py-14">
-          <Eyebrow><T es="Ya entiendes el método" en="You now understand the method" locale={locale} /></Eyebrow>
-          <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
+                    <h2 className="font-display text-2xl font-medium leading-snug text-text md:text-3xl">
             <T es="Ahora mira el resultado: cómo se reparte el archivo entre seis explicaciones" en="Now see the result: how the archive splits across six explanations" locale={locale} />
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
@@ -454,8 +446,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
 
         <Caption className="border-t border-border pt-6">
           <T
-            es="Toda la metodología vive en esta página — sin documentos externos ni dependencias técnicas. Auditable directamente desde acá."
-            en="The full methodology lives on this page — no external documents or technical dependencies. Auditable directly from here."
+            es="Toda la metodología está en esta página, sin documentos externos."
+            en="The full methodology is on this page, with no external documents."
             locale={locale}
           />
         </Caption>
