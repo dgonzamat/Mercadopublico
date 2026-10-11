@@ -1964,13 +1964,16 @@ if (fs.existsSync(regionsPath)) {
 // regla impide que vuelvan. Las citas entre comillas quedan fuera.
 // También el código entre comillas invertidas (`8l`, `nohumano_encubierto`,
 // slugs): la prosa no lo interpreta y el lector veía nombres de campos y slugs
-// crudos en 17 fichas (oct 2026).
+// crudos en 17 fichas (oct 2026). Y la prosa que describe el reparto («el
+// posterior carga sobre…», «la masa en…»): caduca en cuanto cambia el número
+// (22 fichas reescritas, oct 2026).
 // El léxico de hipérbole («fascinante», «unprecedented»…) no se mecaniza como
 // error: sus usos restantes son citas, nombres propios o afirmaciones
 // atribuidas, y se reporta como NOTE para revisión.
 {
   const NOTE_RE = /\b(?:el|este) corpus (?:debe|debería|deberá|necesita|tiene que)\b|\bthe corpus (?:must|should|needs)\b|versión anterior de (?:esta|este) (?:ficha|caso)|(?:la|una) ficha anterior|esta misma ficha|versiones anteriores|earlier versions? of this|previous version of this|this same record/i;
   const RANK_RE = /\bprimer[oa]? (?:[\p{L}\p{N}'’-]+ ){0,4}(?:del|en el) corpus\b|corpus's first\b|\bfirst (?:[\p{L}\p{N}'’-]+ ){0,3}(?:case|file) in the corpus\b|\b(?:más|menos) [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} (?:del|de todo el|en todo el) corpus\b|\bmejor(?:es)? [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} del corpus\b|corpus's (?:most|least|best|strongest|weakest|clearest|largest|only|anchor)\b|\b(?:most|best|strongest|weakest|largest|longest|shortest|clearest|cleanest|oldest)\b(?: [\p{L}\p{N}'’-]+){0,4} in the (?:entire )?corpus\b|\bcaso ancla del corpus\b|\bancla a [\p{L}\p{N}'’-]+ en el corpus\b|\banchors [\p{L}\p{N}'’-]+ in the corpus\b/iu;
+  const PROB_RE = /\b(?:el|su) posterior (?:carga|refleja|reparte|del caso|es casi|se reparte)|\b(?:the|its) posterior\b|calibraci[oó]n del posterior|posterior calibration|\bla masa (?:en|dominante)\b|\bthe (?:dominant |main )?mass on\b/i;
   const HYPE_RE = /\b(?:fascinante|intrigante|enigmátic[oa]s?|desconcertante|sin precedentes|fascinating|intriguing|enigmatic|baffling|unprecedented)\b/gi;
   const stripQuotes = (t) => t.replace(/«[^»]*»|“[^”]*”|"[^"]*"|(?<!\w)'[^']{2,200}'(?!\w)/g, "");
   const PROSE = ["summary", "whatHappened", "whyMatters", "evidence"];
@@ -1986,6 +1989,8 @@ if (fs.existsSync(regionsPath)) {
         const t = stripQuotes(s);
         const note = t.match(NOTE_RE);
         if (note) record("ERROR", file, 0, `E47 nota interna en ${k}: «${note[0]}». Es una tarea o una bitácora del redactor, no análisis: reescribe la frase como hecho («queda por ver si…») o bórrala.`);
+        const prob = t.match(PROB_RE);
+        if (prob) record("ERROR", file, 0, `E47 reparto descrito en la prosa en ${k}: «${prob[0]}». El reparto es un número derivado y el texto caduca en cuanto cambia: explica la evidencia, no la masa de cada narrativa.`);
         const rank = t.match(RANK_RE);
         if (rank) record("ERROR", file, 0, `E47 ranking dentro del corpus en ${k}: «${rank[0]}». Es un conteo disfrazado que caduca al entrar un caso nuevo: describe el caso por sí mismo.`);
         hype += (t.match(HYPE_RE) ?? []).length;
