@@ -3,7 +3,7 @@ import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { LocaleLink } from "@/components/LocaleLink";
-import { Eyebrow, H1, Lede } from "@/lib/typography";
+import { Eyebrow, H1 } from "@/lib/typography";
 
 export const metadata = {
   ...pageMeta({
@@ -41,13 +41,6 @@ export function PatternsView({ locale }: { locale: "es" | "en" }) {
             locale={locale}
           />
         </H1>
-        <Lede className="text-muted">
-          <T
-            es={`${STATS.patterns} patrones que se repiten en casos independientes.`}
-            en={`${STATS.patterns} patterns that recur across independent cases.`}
-            locale={locale}
-          />
-        </Lede>
       </header>
 
       <div className="grid gap-3 sm:grid-cols-2">
