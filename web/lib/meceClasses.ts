@@ -32,7 +32,7 @@ export const MECE_CLASSES: ReadonlyArray<{
   // /probabilidades renderiza con `consolidateNonHuman`, así que allí existe una
   // sola sección para ambas. Enlazar a `#hyp-nohumano_encubierto` navegaba a la
   // página y no hacía scroll a ninguna parte — un fallo mudo.
-  { id: "nohumano_encubierto", label: "No-humano + encubrimiento estatal", labelEn: "Non-human + state cover-up", color: "#6b3a7a", legacyHypothesis: "ingeniería-inversa + tratado-greys + entidades con cover-up", href: "/probabilidades/#hyp-nohumano" },
+  { id: "nohumano_encubierto", label: "No humano, ocultado por un Estado", labelEn: "Non-human, hidden by a state", color: "#6b3a7a", legacyHypothesis: "ingeniería-inversa + tratado-greys + entidades con cover-up", href: "/probabilidades/#hyp-nohumano" },
   // El azul de `nohumano_abierto` (antes #5b3a8a, un violeta casi idéntico al
   // #6b3a7a de encubierto: ΔE 4.1 en visión normal → indistinguibles) se separó
   // a #5a6cc8: ΔE 16.2 normal / 13.9 CVD, validado con el script del skill
