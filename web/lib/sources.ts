@@ -20,6 +20,7 @@ export type SourceCategory =
   | "book"
   | "code"
   | "audio_video"
+  | "reference"
   | "other";
 
 export interface SourceAppearance {
@@ -72,6 +73,14 @@ export const CATEGORY_LABELS: Record<
     description_en:
       "NYT, Washington Post, The Debrief, News Nation, plus international press coverage of incidents and disclosure.",
   },
+  reference: {
+    es: "Obras de referencia y agregadores",
+    en: "Reference works and aggregators",
+    description_es:
+      "Enciclopedias, catálogos de casos y sitios de análisis escéptico: Wikipedia, UFO Evidence, Metabunk, Skeptical Inquirer. Sirven de guía; la ficha cita además la fuente primaria cuando existe.",
+    description_en:
+      "Encyclopedias, case catalogs and skeptical-analysis sites: Wikipedia, UFO Evidence, Metabunk, Skeptical Inquirer. They serve as guides; the entry also cites the primary source when one exists.",
+  },
   book: {
     es: "Libros y memorias",
     en: "Books and memoirs",
@@ -114,6 +123,7 @@ const CATEGORY_ORDER: SourceCategory[] = [
   "book",
   "audio_video",
   "code",
+  "reference",
   "other",
 ];
 
@@ -135,10 +145,15 @@ function categorize(s: { name: string; url?: string; note?: string }): SourceCat
     d === "dni.gov" ||
     d === "nasa.gov" ||
     d === "congress.gov" ||
-    d === "oversight.house.gov"
+    d === "oversight.house.gov" ||
+    // Gobiernos y fuerzas armadas de otros países, y DVIDS (Departamento de
+    // Guerra): sin esto, 1.213 de 1.910 fuentes caían en «Otros».
+    /\.gob\.|\.gob$|\.go\.jp$|\.govt\.|\.gov\.[a-z]{2}$|\.gouv\.|\.gc\.ca$|\.mod\.|difesa\.it|defensa\.|cnes|dvidshub|bundesarchiv|parliament|parlamento|senado|camara|kokkai/.test(d)
   ) return "official";
 
-  if (/(blackvault|project1947|archive\.org|cufos|nicap)/.test(d)) return "archive";
+  if (/wikipedia\.org|ufoevidence|patrickgross|metabunk|skepticalinquirer|centerforinquiry|skeptoid|ufoinsight|nicap\.org\/|ufocasebook|ufologie|snopes|fandom\.com|howstuffworks|britannica|astronautix|satobs/.test(d)) return "reference";
+
+  if (/(blackvault|project1947|archive\.org|cufos|nicap|nationalarchives|paperspast|wikileaks|ncas\.org|trove\.nla|hemeroteca|digi\.kansalliskirjasto|newspapers\.com|chroniclingamerica)/.test(d)) return "archive";
 
   if (
     /arxiv\.org|science\.org|nature\.com|cell\.com|sciencedirect|mit\.edu|harvard\.edu|stanford\.edu|\.edu$|\.edu\//.test(d) ||
@@ -146,7 +161,7 @@ function categorize(s: { name: string; url?: string; note?: string }): SourceCat
   ) return "academic";
 
   if (
-    /nytimes|washingtonpost|theatlantic|newyorker|guardian|reuters|apnews|news\b|thedebrief|theintercept|wired|vice|politico|nbcnews|cbsnews|abcnews|9news|kqed|kpbs/.test(d) ||
+    /nytimes|washingtonpost|theatlantic|newyorker|guardian|reuters|apnews|news\b|thedebrief|theintercept|wired|vice|politico|nbcnews|cbsnews|abcnews|9news|kqed|kpbs|newsnation|huffpost|defensescoop|bbc\.|cnn\.|elpais|clarin|lanacion|folha|globo\.com|lemonde|spiegel|corriere|abc\.es|elmundo|thedrive|twz\.com|space\.com|livescience|vox\.com|axios|thehill|businessinsider|independent\.co|telegraph|dailymail|smh\.com|stuff\.co|upi\.com|chicagotribune|elcomercio|aljazeera|cbc\.ca|csmonitor|smithsonianmag|scientificamerican|latimes|usatoday|foxnews|newsweek|time\.com/.test(d) ||
     d.includes("press") ||
     d.includes("times") ||
     /(\bnews\b|periódico|periodico)/i.test(n)

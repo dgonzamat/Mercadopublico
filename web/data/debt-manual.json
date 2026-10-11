@@ -4,8 +4,8 @@
     "items": [
       {
         "id": "D4",
-        "title": "Paginar /cases y /fuentes",
-        "state": "pendiente"
+        "title": "/fuentes dividida por categoría; queda «Otros» (cola larga de dominios y fuentes sin enlace) y /cases, que conviene paginar",
+        "state": "parcial"
       }
     ]
   },
