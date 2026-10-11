@@ -93,7 +93,57 @@ for (const [label, fn] of checks) {
   console.log(`  ${label}: ${hit.length} · ${byTier(hit)}${hit.length && hit.length <= 12 ? " — " + hit.map((c) => c.id).join(", ") : ""}`);
 }
 
-// 5 · Deuda que no se mide: estado escrito, sin cifras.
+// 5 · IA slop: huellas de texto generado, en las fichas y en la interfaz.
+const SLOP = {
+  "fórmula «no es X, es/sino Y»": /\bno es (?:solo |sólo |simplemente )?[^.;:]{1,60}?, (?:sino|es) |\bit is not [^.;:]{1,60}?, (?:but|it is) /i,
+  "raya (—) en la prosa": /—/,
+  "intensificador vacío (crucial, clave, fundamental…)": /\b(?:crucial|cabe destacar|vale la pena|sin duda|en definitiva|fundamental(?:mente)?|crucially|it is worth noting|notably|undoubtedly)\b/i,
+};
+console.log("\nIA slop · prosa de las fichas:");
+for (const [label, re] of Object.entries(SLOP)) {
+  const hit = cases.filter((c) => re.test(prose(c)));
+  console.log(`  ${label}: ${hit.length} fichas · ${byTier(hit)}`);
+}
+const srcFiles = (dir) => fs.readdirSync(path.join(ROOT, dir), { recursive: true }).filter((f) => /\.tsx$/.test(f)).map((f) => path.join(dir, f));
+const ui = [...srcFiles("app"), ...srcFiles("components")].map((f) => [f, fs.readFileSync(path.join(ROOT, f), "utf8")]);
+const uiStrings = (src) => [...src.matchAll(/\b(?:es|en)=(?:"([^"]{12,})"|\{`([^`]{12,})`\})/g)].map((m) => m[1] ?? m[2]);
+const uiChecks = [
+  ["textos de interfaz con raya (—)", (t) => /—/.test(t)],
+  ["textos de interfaz con fórmula «no es X, es Y»", (t) => SLOP["fórmula «no es X, es/sino Y»"].test(t)],
+  ["textos de interfaz con intensificador vacío", (t) => SLOP["intensificador vacío (crucial, clave, fundamental…)"].test(t)],
+];
+console.log("\nIA slop · textos de la interfaz (app/ y components/):");
+for (const [label, fn] of uiChecks) {
+  const hits = ui.flatMap(([f, src]) => uiStrings(src).filter(fn).map(() => f));
+  const files = [...new Set(hits)];
+  console.log(`  ${label}: ${hits.length} en ${files.length} archivos${files.length && files.length <= 6 ? " — " + files.join(", ") : ""}`);
+}
+
+// 6 · UX/UI: densidad de cada página construida (requiere out/ de un build).
+const OUT = path.join(ROOT, "out");
+console.log("\nUX/UI · densidad por página (out/):");
+if (!fs.existsSync(OUT)) {
+  console.log("  ciega: no hay out/ (corre npm run build)");
+} else {
+  const pages = [];
+  for (const f of fs.readdirSync(OUT, { recursive: true })) {
+    if (!/index\.html$/.test(f) || /^es\//.test(f) || /^cases\/.+\//.test(f) || /^(researchers|patterns|blog|frameworks|entities|probabilidades)\/.+\//.test(f)) continue;
+    const html = fs.readFileSync(path.join(OUT, f), "utf8").replace(/<script[\s\S]*?<\/script>/g, "");
+    const main = html.slice(html.indexOf("<main"), html.indexOf("</main>"));
+    const words = main.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+    const upper = (main.match(/class="[^"]*\buppercase\b/g) ?? []).length;
+    pages.push({ page: "/" + f.replace(/index\.html$/, ""), words, upper, kb: Math.round(fs.statSync(path.join(OUT, f)).size / 1024) });
+  }
+  const heavy = pages.filter((p) => p.kb > 1500).sort((a, b) => b.kb - a.kb);
+  const wordy = pages.filter((p) => p.words > 2500).sort((a, b) => b.words - a.words);
+  const shouty = pages.filter((p) => p.upper > 10).sort((a, b) => b.upper - a.upper);
+  const fmt = (l, k) => l.slice(0, 6).map((p) => `${p.page} (${p[k]})`).join(", ");
+  console.log(`  páginas de más de 1,5 MB: ${heavy.length}${heavy.length ? " — " + fmt(heavy, "kb") : ""}`);
+  console.log(`  páginas de más de 2.500 palabras: ${wordy.length}${wordy.length ? " — " + fmt(wordy, "words") : ""}`);
+  console.log(`  páginas con más de 10 rótulos en mayúsculas: ${shouty.length}${shouty.length ? " — " + fmt(shouty, "upper") : ""}`);
+}
+
+// 7 · Deuda que no se mide: estado escrito, sin cifras.
 const manualPath = path.join(ROOT, "data/debt-manual.json");
 const manual = JSON.parse(fs.readFileSync(manualPath, "utf8"));
 console.log("\nDeuda no medible (data/debt-manual.json):");
