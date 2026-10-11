@@ -72,7 +72,25 @@ const englishInEs = [...new Set(labels.filter((l) => /\bwork\b|Public domain/.te
 console.log(`\nU11 · licencias: ${untranslated.length} rótulos sin traducción en lib/license.ts, ${englishInEs.length} con inglés en el dato español`);
 for (const l of [...untranslated, ...englishInEs]) console.log(`  · ${l}`);
 
-// 4 · Deuda que no se mide: estado escrito, sin cifras.
+// 4 · Densidad e inconsistencias en TODAS las fichas (no en una de muestra).
+// Ordenadas de menor a mayor coste de arreglo.
+const PROSE = ["summary", "whatHappened", "whyMatters"];
+const joinProse = (c, sfx) => [...PROSE.map((k) => c[k + sfx] ?? ""), ...(c["evidence" + sfx] ?? [])].join(" ");
+const checks = [
+  // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.
+  ["comillas españolas «» en el texto inglés", (c) => joinProse(c, "_en").includes("«")],
+  ["comillas rectas sueltas en el texto español", (c) => /(?<![\w\d])"[A-Za-zÁÉÍÓÚáéíóúñ]/.test(joinProse(c, "").replace(/«[^«»]*(?:«[^«»]*»[^«»]*)*»/g, ""))],
+  ["evidencia con más de 8 ítems", (c) => (c.evidence ?? []).length > 8],
+  ["porqué (classBasis) de más de 700 caracteres", (c) => (c.classBasis?.es ?? "").length > 700],
+  ["resumen de más de 700 caracteres", (c) => (c.summary ?? "").length > 700],
+];
+console.log("\nFichas · densidad e inconsistencias (de menor a mayor coste):");
+for (const [label, fn] of checks) {
+  const hit = cases.filter(fn);
+  console.log(`  ${label}: ${hit.length} · ${byTier(hit)}${hit.length && hit.length <= 12 ? " — " + hit.map((c) => c.id).join(", ") : ""}`);
+}
+
+// 5 · Deuda que no se mide: estado escrito, sin cifras.
 const manualPath = path.join(ROOT, "data/debt-manual.json");
 const manual = JSON.parse(fs.readFileSync(manualPath, "utf8"));
 console.log("\nDeuda no medible (data/debt-manual.json):");
