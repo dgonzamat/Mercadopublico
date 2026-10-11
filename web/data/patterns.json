@@ -29,10 +29,10 @@
     {
         "id": "8d",
         "letter": "d",
-        "name": "Investigadores/contactees aparte",
-        "name_en": "Researchers/contactees separate",
-        "description": "Tradición paralela al corpus institucional, tratamiento epistemológico distinto.",
-        "description_en": "Parallel tradition to institutional corpus, distinct epistemological treatment.",
+        "name": "Investigadores y contactados, aparte",
+        "name_en": "Researchers and contactees, set apart",
+        "description": "Tradición de investigadores independientes y contactados, paralela a los registros oficiales y tratada con un criterio de evidencia distinto.",
+        "description_en": "A tradition of independent researchers and contactees, parallel to official records and weighed by a different standard of evidence.",
         "color": "#888888"
     },
     {
@@ -40,8 +40,8 @@
         "letter": "e",
         "name": "Transparencia institucional tiempo real",
         "name_en": "Real-time institutional transparency",
-        "description": "Casos donde gobiernos/militares acknowledged abiertamente durante o poco después del evento.",
-        "description_en": "Cases where governments/militaries openly acknowledged during or shortly after event.",
+        "description": "Casos que un gobierno o unas fuerzas armadas reconocieron abiertamente durante el suceso o poco después.",
+        "description_en": "Cases that a government or military openly acknowledged during the event or shortly after.",
         "color": "#7fdbff"
     },
     {
@@ -49,8 +49,8 @@
         "letter": "f",
         "name": "Monitoreo de fuentes de riesgo catastrófico",
         "name_en": "Monitoring catastrophic risk sources",
-        "description": "Concentración UAP sobre sitios nucleares + volcanes activos + submarinos.",
-        "description_en": "UAP concentration over nuclear sites + active volcanoes + submarines.",
+        "description": "Avistamientos concentrados sobre instalaciones nucleares, volcanes activos y submarinos.",
+        "description_en": "Sightings concentrated over nuclear facilities, active volcanoes and submarines.",
         "color": "#ffdd00"
     },
     {
@@ -67,8 +67,8 @@
         "letter": "h",
         "name": "Catálogo de morfologías observadas",
         "name_en": "Observed morphology catalog",
-        "description": "9 categorías morfológicas distintas: discos, orbes, tic-tacs, triángulos, cigarros, etc.",
-        "description_en": "9 distinct morphological categories: discs, orbs, tic-tacs, triangles, cigars, etc.",
+        "description": "Formas que se repiten en los relatos: discos, orbes, tic-tacs, triángulos, cigarros y otras.",
+        "description_en": "Shapes that recur across reports: discs, orbs, tic-tacs, triangles, cigars and others.",
         "color": "#aa88ff"
     },
     {
@@ -94,8 +94,8 @@
         "letter": "k",
         "name": "Interferencia EM en vehículos/aeronaves",
         "name_en": "EM interference in vehicles/aircraft",
-        "description": "66 años de estabilidad. Levelland, Coyne, Tehran, Belgian, DOW Syria.",
-        "description_en": "66 years of stability. Levelland, Coyne, Tehran, Belgian, DOW Syria.",
+        "description": "Motores, radios o instrumentos que fallan durante el avistamiento, un relato estable desde Levelland (1957): Coyne, Teherán, la ola belga, Siria.",
+        "description_en": "Engines, radios or instruments that fail during the sighting, a report that has stayed stable since Levelland (1957): Coyne, Tehran, the Belgian wave, Syria.",
         "color": "#ff00aa"
     },
     {
@@ -103,42 +103,42 @@
         "letter": "l",
         "name": "Triángulos grandes silenciosos",
         "name_en": "Large silent triangles",
-        "description": "1980s-presente. Hudson Valley, Belgian, Phoenix, Yukon.",
-        "description_en": "1980s-present. Hudson Valley, Belgian, Phoenix, Yukon.",
+        "description": "Triángulos grandes y silenciosos, desde la década de 1980: Hudson Valley, la ola belga, Phoenix, Yukón.",
+        "description_en": "Large, silent triangles, from the 1980s on: Hudson Valley, the Belgian wave, Phoenix, Yukon.",
         "color": "#5555ff"
     },
     {
         "id": "8m",
         "letter": "m",
-        "name": "Cover-up institucional documentado",
+        "name": "Ocultación institucional documentada",
         "name_en": "Documented institutional cover-up",
-        "description": "79 años, 1947-2026. Twining→Robertson→Bolender→Wilson-Davis→Bennewitz. Secuencia documental verificable.",
-        "description_en": "79 years, 1947-2026. Twining→Robertson→Bolender→Wilson-Davis→Bennewitz. Verifiable documentary sequence.",
+        "description": "Documentos verificables que muestran a instituciones restando importancia o reservando información desde 1947: el memorando Twining, el Panel Robertson, el memorando Bolender, el caso Bennewitz y las notas Wilson-Davis.",
+        "description_en": "Verifiable documents showing institutions downplaying or withholding information since 1947: the Twining memo, the Robertson Panel, the Bolender memo, the Bennewitz affair and the Wilson-Davis notes.",
         "color": "#990000"
     },
     {
         "id": "8n",
         "letter": "n",
         "name": "Divulgación de ambigüedad estratégica",
-        "name_en": "Strategic Ambiguity Disclosure",
-        "description": "Liberación de archivos + no-confirmación simultánea + cierre de canales del denunciante. PURSUE 2026.",
-        "description_en": "File release + simultaneous non-confirmation + whistleblower channel closure. PURSUE 2026.",
+        "name_en": "Strategic-ambiguity disclosure",
+        "description": "Se publican archivos sin confirmar nada y, a la vez, se cierran los canales de los denunciantes, como en PURSUE (2026).",
+        "description_en": "Files are released without confirming anything while whistleblower channels are closed, as with PURSUE (2026).",
         "color": "#ff6600"
     },
     {
         "id": "8o",
         "letter": "o",
         "name": "Sincronización cultural-institucional",
-        "name_en": "Cultural-Institutional Synchronization",
-        "description": "Convergencia ±90 días entre divulgación institucional y declaraciones autoridades culturales. Spielberg + PURSUE.",
-        "description_en": "±90-day convergence between institutional disclosure and cultural authority statements. Spielberg + PURSUE.",
+        "name_en": "Cultural-institutional synchronization",
+        "description": "Una divulgación oficial y declaraciones de figuras culturales separadas por menos de 90 días, como Spielberg y PURSUE.",
+        "description_en": "An official disclosure and statements by cultural figures less than 90 days apart, such as Spielberg and PURSUE.",
         "color": "#cc88ff"
     },
     {
         "id": "8p",
         "letter": "p",
-        "name": "Marcadores geométricos en vegetación (nidos → crop circles)",
-        "name_en": "Geometric Vegetation Markers (saucer nests → crop circles)",
+        "name": "Marcadores geométricos en vegetación (de los nidos a los círculos en cultivos)",
+        "name_en": "Geometric vegetation markers (saucer nests to crop circles)",
         "description": "Patrones circulares de vegetación aplanada, del precursor documentado (nidos de Tully, RAAF 1966) a la subpoblación con anomalías físicas reportadas (Levengood/BLT 1994-99).",
         "description_en": "Circular flattened-vegetation patterns, from the documented precursor (Tully saucer nests, RAAF 1966) to the subpopulation with reported physical anomalies (Levengood/BLT 1994-99).",
         "color": "#66ffaa"
@@ -147,27 +147,27 @@
         "id": "8q",
         "letter": "q",
         "name": "Red del ecosistema de divulgación",
-        "name_en": "Disclosure Ecosystem Network",
-        "description": "Infraestructura formal político-mediática contra la ambigüedad estratégica. Luna + Burchett + Coulthart + News Nation + Grusch.",
-        "description_en": "Formal political-media infrastructure against strategic ambiguity. Luna + Burchett + Coulthart + News Nation + Grusch.",
+        "name_en": "Disclosure ecosystem network",
+        "description": "Políticos, periodistas y denunciantes que se coordinan contra la ambigüedad oficial: Luna, Burchett, Coulthart, NewsNation y Grusch.",
+        "description_en": "Politicians, journalists and whistleblowers working together against official ambiguity: Luna, Burchett, Coulthart, NewsNation and Grusch.",
         "color": "#00aaff"
     },
     {
         "id": "8r",
         "letter": "r",
         "name": "Canales de divulgación no autorizada",
-        "name_en": "Unauthorized Disclosure Channels",
-        "description": "Leaks de documentos institucionales auténticos fuera del control estatal. WikiLeaks Cablegate + Podesta + Wilson-Davis.",
-        "description_en": "Leaks of authentic institutional documents outside state control. WikiLeaks Cablegate + Podesta + Wilson-Davis.",
+        "name_en": "Unauthorized disclosure channels",
+        "description": "Filtraciones de documentos oficiales auténticos fuera del control del Estado: los cables de WikiLeaks, los correos de Podesta y las notas Wilson-Davis.",
+        "description_en": "Leaks of authentic official documents outside state control: the WikiLeaks cables, the Podesta emails and the Wilson-Davis notes.",
         "color": "#ff00ff"
     },
     {
         "id": "8s",
         "letter": "s",
         "name": "Vigilancia aérea de otro Estado",
-        "name_en": "Foreign-State Aerial Surveillance",
-        "description": "Plataformas de vigilancia operadas por otro Estado sobre territorio nacional sin atribución inmediata. Globo 2023 (atribución oficial DoD) + Mystery Drones 2024 + derribos feb 2023.",
-        "description_en": "Surveillance platforms operated by another state over national territory without immediate attribution. 2023 balloon (official DoD attribution) + 2024 Mystery Drones + Feb 2023 shoot-downs.",
+        "name_en": "Foreign-state aerial surveillance",
+        "description": "Plataformas de vigilancia de otro Estado sobre territorio propio, sin atribución inmediata: el globo de 2023 (atribuido oficialmente por el Pentágono), los derribos de febrero de 2023 y los drones de 2024.",
+        "description_en": "Another state's surveillance platforms over a country's territory, without immediate attribution: the 2023 balloon (officially attributed by the Pentagon), the February 2023 shoot-downs and the 2024 drones.",
         "color": "#b08d57"
     }
 ]
