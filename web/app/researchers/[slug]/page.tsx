@@ -14,6 +14,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
+import { licenseLabel } from "@/lib/license";
 
 export function generateStaticParams() {
   return researchers.map((r) => ({ slug: r.id }));
@@ -138,7 +139,7 @@ export async function ResearcherDetailPage({
         </Caption>
         {r.photo && (r.photo_credit || r.photo_license) && (
           <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-            {[r.photo_credit, r.photo_license].filter(Boolean).join(" · ")}
+            {[r.photo_credit, licenseLabel(r.photo_license, locale)].filter(Boolean).join(" · ")}
           </p>
         )}
       </header>
