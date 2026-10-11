@@ -132,12 +132,7 @@ export default function FuentesPage() {
                         <span className="text-text">{s.name}</span>
                       )}
                     </p>
-                    {s.note && (
-                      <p className="text-sm leading-snug text-muted">
-                        {s.note}
-                      </p>
-                    )}
-                    <p className="flex flex-wrap items-baseline gap-x-2 gap-y-1 pt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
+                    <p className="flex flex-wrap items-baseline gap-x-2 gap-y-1 pt-1 text-xs text-muted">
                       <span>
                         <T es="Aparece en" en="Appears in" />
                       </span>
@@ -151,10 +146,10 @@ export default function FuentesPage() {
                               href={a.href}
                               className="text-text hover:text-accent hover:underline"
                             >
-                              {a.label}
+                              <T es={a.label} en={a.labelEn ?? a.label} />
                             </Link>
                           ) : (
-                            <span className="text-text">{a.label}</span>
+                            <span className="text-text"><T es={a.label} en={a.labelEn ?? a.label} /></span>
                           )}
                         </span>
                       ))}
