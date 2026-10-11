@@ -57,11 +57,20 @@ for (const [label, re] of Object.entries(MARKERS)) {
   console.log(`  ${label}: ${hit.length} · ${byTier(hit)}`);
 }
 
-// 3 · U11: rótulo de licencia del visor en dos idiomas a la vez.
+// 3 · U11: rótulos de licencia sin traducción inglesa en lib/license.ts
+// (el sitio EN los mostraría en español) o con inglés dentro del dato español.
 const docsOf = (c) => [...(c.documents || []), c.primaryDocument, c.featuredDoc].filter(Boolean);
-const MIXED_LICENSE = /Dominio público.*\bwork\b/;
-const mixed = cases.filter((c) => docsOf(c).some((d) => MIXED_LICENSE.test(d.license || "")));
-console.log(`\nU11 · licencia mezclada ES/EN en el visor: ${mixed.length} fichas`);
+const licenseSrc = fs.readFileSync(path.join(ROOT, "lib/license.ts"), "utf8");
+const translated = new Set([...licenseSrc.matchAll(/^\s+"((?:[^"\\]|\\.)*)":/gm)].map((m) => JSON.parse(`"${m[1]}"`)));
+const researchers = JSON.parse(fs.readFileSync(path.join(ROOT, "data/researchers.json"), "utf8"));
+const labels = [
+  ...cases.flatMap((c) => docsOf(c).map((d) => d.license)),
+  ...researchers.map((r) => r.photo_license),
+].filter(Boolean);
+const untranslated = [...new Set(labels.filter((l) => !/^CC/.test(l) && !translated.has(l)))];
+const englishInEs = [...new Set(labels.filter((l) => /\bwork\b|Public domain/.test(l)))];
+console.log(`\nU11 · licencias: ${untranslated.length} rótulos sin traducción en lib/license.ts, ${englishInEs.length} con inglés en el dato español`);
+for (const l of [...untranslated, ...englishInEs]) console.log(`  · ${l}`);
 
 // 4 · Deuda que no se mide: estado escrito, sin cifras.
 const manualPath = path.join(ROOT, "data/debt-manual.json");

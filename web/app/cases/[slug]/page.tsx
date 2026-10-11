@@ -20,6 +20,7 @@ import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { linkCaseRefs } from "@/lib/caseRefs";
 import { CASE_ALIASES } from "@/lib/caseAliases";
+import { licenseLabel } from "@/lib/license";
 
 export function generateStaticParams() {
   return [...cases.map((c) => c.id), ...Object.keys(CASE_ALIASES)].map((slug) => ({ slug }));
@@ -486,7 +487,7 @@ export async function CaseDetailPage(
                     <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
                   </p>
                   <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                    {[doc.source, doc.license].filter(Boolean).join(" · ")}
+                    {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                     {doc.fallbackUrl && (
                       <>
                         {doc.source || doc.license ? " · " : ""}
@@ -525,7 +526,7 @@ export async function CaseDetailPage(
                       <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
                     </p>
                     <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                      {[doc.source, doc.license].filter(Boolean).join(" · ")}
+                      {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                       {" · "}
                       <a
                         href={doc.fallbackUrl ?? doc.src}
@@ -677,7 +678,7 @@ export async function CaseDetailPage(
                 />
               </p>
               <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                {c.primaryDocument.source} · {c.primaryDocument.license}
+                {c.primaryDocument.source} · {licenseLabel(c.primaryDocument.license, locale)}
               </p>
             </figcaption>
           </figure>
