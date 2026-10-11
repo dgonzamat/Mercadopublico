@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { getAllSources, groupByCategory, CATEGORY_LABELS } from "@/lib/sources";
 import { pageMeta } from "@/lib/seo";
 import { T } from "@/components/T";
-import { Eyebrow, H1, H2, Lede, Caption } from "@/lib/typography";
+import { Eyebrow, H1, Lede, Caption } from "@/lib/typography";
 
 export const metadata = pageMeta({
   title: "Sources and bibliography of the corpus",
@@ -34,20 +33,20 @@ export default function FuentesPage() {
               <>
                 Toda fuente citada en el corpus, deduplicada y agrupada por
                 categoría. <strong className="text-text">{totalCount}</strong>{" "}
-                referencias en total — incluyendo documentos FOIA, archivos
+                referencias en total: documentos FOIA, archivos
                 desclasificados, papers académicos, periodismo, libros, audio,
-                video, código y otros. Cada entrada muestra dónde aparece
-                dentro del sitio para que puedas auditar la cita.
+                video, código y otros. Elige una categoría para ver sus fuentes y en qué
+                casos aparece cada una.
               </>
             }
             en={
               <>
                 Every source cited in the corpus, deduplicated and grouped by
                 category. <strong className="text-text">{totalCount}</strong>{" "}
-                references in total — including FOIA documents, declassified
+                references in total: FOIA documents, declassified
                 archives, academic papers, press, books, audio, video, code,
-                and other. Each entry shows where it appears in the site so
-                you can audit the citation.
+                and other. Pick a category to see its sources and which cases
+                each one appears in.
               </>
             }
           />
@@ -55,14 +54,14 @@ export default function FuentesPage() {
       </header>
 
       <nav
-        aria-label="Saltar a categoría"
+        aria-label="Categorías de fuentes"
         className="grid gap-2 border-y-2 border-text/15 py-6 sm:grid-cols-2"
       >
         {grouped.map((g) => (
           <a
             key={g.category}
-            href={`#${g.category}`}
-            className="flex items-baseline justify-between gap-3 py-1 font-mono text-xs text-muted hover:text-accent"
+            href={`/fuentes/${g.category}/`}
+            className="flex items-baseline justify-between gap-3 py-2 text-sm text-text hover:text-accent"
           >
             <span>
               <T
@@ -76,91 +75,6 @@ export default function FuentesPage() {
           </a>
         ))}
       </nav>
-
-      <div className="space-y-20">
-        {grouped.map((g) => (
-          <section
-            key={g.category}
-            id={g.category}
-            className="scroll-mt-20 space-y-6"
-          >
-            <header className="space-y-3 border-b-2 border-text pb-4">
-              <Eyebrow>
-                <T
-                  es={`${g.items.length} referencias`}
-                  en={`${g.items.length} references`}
-                />
-              </Eyebrow>
-              <H2>
-                <T
-                  es={CATEGORY_LABELS[g.category].es}
-                  en={CATEGORY_LABELS[g.category].en}
-                />
-              </H2>
-              <Caption>
-                <T
-                  es={CATEGORY_LABELS[g.category].description_es}
-                  en={CATEGORY_LABELS[g.category].description_en}
-                />
-              </Caption>
-            </header>
-
-            <ol className="divide-y divide-text/10 border-y border-text/15">
-              {g.items.map((s, i) => (
-                <li
-                  key={`${g.category}-${i}-${s.name.slice(0, 30)}`}
-                  className="grid grid-cols-[2.5rem_1fr] gap-3 py-5 text-sm"
-                >
-                  <span
-                    aria-hidden
-                    className="font-mono text-xs tabular-nums text-muted"
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div className="min-w-0 space-y-2">
-                    <p className="text-base leading-snug text-text md:text-lg">
-                      {s.url ? (
-                        <a
-                          href={s.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-text underline decoration-text/30 underline-offset-4 hover:text-accent hover:decoration-accent"
-                        >
-                          {s.name} <span aria-hidden>↗</span>
-                        </a>
-                      ) : (
-                        <span className="text-text">{s.name}</span>
-                      )}
-                    </p>
-                    <p className="flex flex-wrap items-baseline gap-x-2 gap-y-1 pt-1 text-xs text-muted">
-                      <span>
-                        <T es="Aparece en" en="Appears in" />
-                      </span>
-                      {s.appearances.map((a, idx) => (
-                        <span key={`${a.label}-${idx}`}>
-                          {idx > 0 && (
-                            <span className="text-text/30"> · </span>
-                          )}
-                          {a.href ? (
-                            <Link
-                              href={a.href}
-                              className="text-text hover:text-accent hover:underline"
-                            >
-                              <T es={a.label} en={a.labelEn ?? a.label} />
-                            </Link>
-                          ) : (
-                            <span className="text-text"><T es={a.label} en={a.labelEn ?? a.label} /></span>
-                          )}
-                        </span>
-                      ))}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </section>
-        ))}
-      </div>
 
       <section className="space-y-4 border-t-2 border-text pt-8">
         <Eyebrow>
