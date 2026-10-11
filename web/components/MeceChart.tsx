@@ -191,10 +191,10 @@ export function CasePosterior({
     detail && r.key === pk
       ? { es: `${r.label} · ${shortLabel(detail.label)}`, en: `${r.labelEn} · ${shortLabel(detail.labelEn)}` }
       : { es: r.label, en: r.labelEn };
-  const m = rows[0];
   // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los
   // enteros impresos tienen que sumarlo — redondear cada fila por separado daba
-  // 101%. `m` es rows[0] (expandedHypotheses viene ordenado desc).
+  // 101%. Las filas vienen ordenadas de mayor a menor: la primera es la más
+  // probable, así que no hace falta un pie que la repita.
   const partes = pctParts(rows.map((r) => r.count));
   return (
     <div>
@@ -210,17 +210,10 @@ export function CasePosterior({
               <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: r.color }} />
               <T es={withDetail(r).es} en={withDetail(r).en} locale={locale} />
             </span>
-            <span className="text-muted">{partes[i]}%</span>
+            <span className="text-muted" data-pct="">{partes[i]}%</span>
           </div>
         ))}
       </div>
-      <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
-        <T es="Explicación más probable" en="Most likely explanation" locale={locale} />:{" "}
-        <span style={{ color: m.color }} className="font-semibold">
-          <T es={withDetail(m).es} en={withDetail(m).en} locale={locale} />
-        </span>{" "}
-        {partes[0]}%
-      </p>
     </div>
   );
 }

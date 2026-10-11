@@ -3,16 +3,6 @@
     "group": "Rediseño",
     "items": [
       {
-        "id": "D1",
-        "title": "Una sola lectura del reparto por página",
-        "state": "pendiente"
-      },
-      {
-        "id": "D2",
-        "title": "Cabecera más compacta en la página de cada caso",
-        "state": "pendiente"
-      },
-      {
         "id": "D3",
         "title": "Menos etiquetas en mayúsculas",
         "state": "pendiente"

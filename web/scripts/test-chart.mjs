@@ -225,7 +225,7 @@ console.log("\nCaso · CasePosterior");
 const casePage = readOut("cases/roswell-1947/index.html");
 if (casePage == null) fail("no existe out/cases/roswell-1947/index.html");
 else {
-  check("renderiza la explicación más probable del caso", /Explicación más probable|Most likely explanation/.test(casePage));
+  check("renderiza el reparto del caso", /data-pct=""/.test(casePage));
 
 }
 
@@ -264,19 +264,10 @@ for (const slug of [
     fail(`no existe out/cases/${slug}/index.html`);
     continue;
   }
-  // La leyenda va entre el grid de filas y el pie "Explicación más probable": el % del
-  // modal queda fuera (viene después de ese texto) y los del `title` de la
-  // barra también (vienen antes del grid).
-  const leyenda = html.match(
-    /grid-cols-1 gap-x-6[\s\S]*?(?:Explicación más probable|Most likely explanation)/,
-  );
-  if (!leyenda) {
-    fail(`${slug}: no encontré la leyenda de CasePosterior en el render`);
-    continue;
-  }
+  // Cada % de la leyenda lleva data-pct; los del `title` de la barra no.
   // React intercala `<!-- -->` entre el número y el "%" (dos nodos de texto
   // contiguos), así que el separador es opcional en el patrón.
-  const partes = [...leyenda[0].matchAll(/>(\d+)(?:<!-- -->)?%</g)].map((m) =>
+  const partes = [...html.matchAll(/data-pct="">(\d+)(?:<!-- -->)?%</g)].map((m) =>
     Number(m[1]),
   );
   const suma = partes.reduce((s, n) => s + n, 0);

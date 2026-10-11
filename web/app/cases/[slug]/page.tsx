@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { cases, getPattern, getEntityMorphology } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
-import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, MECE_CLASSES, shortLabel } from "@/lib/meceClasses";
+import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, shortLabel } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
@@ -273,11 +273,11 @@ export async function CaseDetailPage(
     summaryLen > 800
       ? "text-lg leading-relaxed text-text md:text-xl"
       : summaryLen > 500
-        ? "font-display text-xl leading-snug text-text md:text-2xl"
-        : "font-display text-2xl leading-snug text-text md:text-3xl";
+        ? "font-display text-lg leading-snug text-text md:text-2xl"
+        : "font-display text-xl leading-snug text-text md:text-3xl";
 
   return (
-    <article className="mx-auto max-w-3xl space-y-24 py-4 md:space-y-32">
+    <article className="mx-auto max-w-3xl space-y-16 py-4 md:space-y-32">
       <script
         type="application/ld+json"
         // Per-case Schema.org Article+Event+Place graph for rich snippets
@@ -317,12 +317,13 @@ export async function CaseDetailPage(
         <div className="grid grid-cols-[auto_1fr] items-baseline gap-x-6 gap-y-4 md:gap-x-10">
           <span
             aria-hidden
-            className="font-display text-6xl leading-none tabular-nums text-accent md:text-8xl"
+            className="font-display text-4xl leading-none tabular-nums text-accent md:text-8xl"
           >
             {String(c.num).padStart(2, "0")}
           </span>
           <div className="space-y-3">
             <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              {c.flag && <span aria-hidden className="mr-2 tracking-normal">{c.flag}</span>}
               {year}
               <span className="mx-2 text-text/30">·</span>
               {c.location.place ? (
@@ -350,66 +351,55 @@ export async function CaseDetailPage(
           />
         </p>
 
-        <div className="grid grid-cols-2 gap-px border-y-2 border-text bg-text md:grid-cols-5">
-          <KeyFact
-            locale={locale}
-            es="País"
-            en="Country"
-            icon={c.flag}
-            className="col-span-2 md:col-span-1"
-            value={<T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />}
-          />
-          <KeyFact locale={locale} es="Año" en="Year" value={year} />
-          <KeyFact locale={locale} es="Tier" en="Tier" value={c.tier} mono />
+        {/* Una sola línea de cifras: año, lugar y país ya están sobre el título,
+            y la categoría solo se dice cuando no es un incidente. El reparto
+            completo va una sola vez, en el bloque «Qué fue» de abajo. */}
+        <p className="flex flex-wrap items-baseline gap-x-4 gap-y-1 border-y-2 border-text py-3 font-mono text-sm text-text">
+          <span>Tier <strong className="font-semibold">{c.tier}</strong></span>
           {isLinkedDoc ? (
-            <KeyFact
-              locale={locale}
-              es="Casos que documenta"
-              en="Cases it documents"
-              value={documentedCases.length}
-              mono
-            />
+            <span>
+              <T locale={locale}
+                es={`Documenta ${documentedCases.length} ${documentedCases.length === 1 ? "caso" : "casos"}`}
+                en={`Documents ${documentedCases.length} ${documentedCases.length === 1 ? "case" : "cases"}`}
+              />
+            </span>
           ) : (
-            <KeyFact
-              locale={locale}
-              es="Sin explicar"
-              en="Unexplained"
-              value={`${c.probability}%`}
-              mono
-            />
+            <span>
+              <strong className="font-semibold">{c.probability}%</strong>{" "}
+              <T locale={locale} es="sin explicar" en="unexplained" />
+            </span>
           )}
-          <KeyFact
-            locale={locale}
-            es="Categoría"
-            en="Category"
-            value={
+          {c.category !== "incident" && (
+            <span className="text-muted">
               <T locale={locale}
                 es={CATEGORY_META[c.category]?.label ?? c.category}
                 en={CATEGORY_META[c.category]?.label_en ?? c.category}
               />
-            }
-          />
-        </div>
-        {isLinkedDoc ? (
+            </span>
+          )}
+          {!isLinkedDoc && (
+            <LocaleLink href="/about#tiers" className="ml-auto font-sans text-xs text-accent underline-offset-4 hover:underline">
+              <T locale={locale} es="¿Qué significan? →" en="What do they mean? →" />
+            </LocaleLink>
+          )}
+        </p>
+        {isLinkedDoc && (
         <Caption>
           <T locale={locale}
             es={`${DOC_TIER_META[c.tier].description}. Es evidencia de los casos que documenta, listados abajo.`}
             en={`${DOC_TIER_META[c.tier].description_en}. It is evidence for the cases it documents, listed below.`}
           />
         </Caption>
-        ) : (
-        <div className="space-y-1">
-          {/* La explicación de las cifras es la misma en todas las fichas: va
-              plegada para que no empuje el caso fuera de la pantalla en móvil. */}
-          <p className="text-xs leading-normal">
-            <T locale={locale}
-              es={<LocaleLink href="/about#tiers" className="text-accent underline-offset-4 hover:underline">¿Qué significan estas cifras? →</LocaleLink>}
-              en={<LocaleLink href="/about#tiers" className="text-accent underline-offset-4 hover:underline">What do these figures mean? →</LocaleLink>}
-            />
-          </p>
-        </div>
         )}
-        {!isLinkedDoc && c.category !== "document" && <ClassBasis c={c} locale={locale} />}
+        {!isLinkedDoc && c.category !== "document" && (
+          <section className="space-y-4">
+            <Eyebrow>
+              <T locale={locale} es="Qué fue" en="What it was" />
+            </Eyebrow>
+            <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} objectDetail={c.objectDetail} locale={locale} />
+            <ClassBasis c={c} locale={locale} />
+          </section>
+        )}
       </header>
 
       {/* ────────── ZONE A2 — DOCUMENTO PRIMARIO DESTACADO ────────── */}
@@ -817,25 +807,6 @@ export async function CaseDetailPage(
           </div>
         )}
 
-        <div className="space-y-2">
-          <Eyebrow>
-            <T locale={locale} es="Ubicación" en="Location" />
-          </Eyebrow>
-          <p className="text-sm text-text">
-            {c.location.place ? (
-              <T locale={locale}
-                es={c.location.place}
-                en={c.location.place_en ?? c.location.place}
-              />
-            ) : (
-              <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />
-            )}{" "}
-            <span className="font-mono text-xs text-muted">
-              · {c.location.lat.toFixed(2)}°, {c.location.lng.toFixed(2)}°
-            </span>
-          </p>
-        </div>
-
         {!hasRichContent && (
           <div className="space-y-6 border-l-2 border-accent/40 bg-panel p-6">
             <Caption className="italic">
@@ -869,22 +840,6 @@ export async function CaseDetailPage(
           </div>
         )}
       </section>
-
-      {/* ────────── DISTRIBUCIÓN DE EXPLICACIONES (MECE) ────────── */}
-      {c.category !== "document" && (
-        <section className="space-y-6 border-t-2 border-text pt-12">
-          <Eyebrow>
-            <T locale={locale} es="Distribución de explicaciones" en="Distribution of explanations" />
-          </Eyebrow>
-          <CasePosterior posterior={posteriorFor(c)} mundanoType={c.mundanoType} misidSubtype={c.misidSubtype} objectDetail={c.objectDetail} locale={locale} />
-          <Caption className="italic">
-            <T locale={locale}
-              es={<LocaleLink href="/about#non-exclusive" className="text-accent underline-offset-4 hover:underline">Cómo se calcula este reparto →</LocaleLink>}
-              en={<LocaleLink href="/about#non-exclusive" className="text-accent underline-offset-4 hover:underline">How this split is calculated →</LocaleLink>}
-            />
-          </Caption>
-        </section>
-      )}
 
       {/* ────────── DOCUMENTOS ↔ CASOS ────────── */}
       {(documentedCases.length > 0 || supportingDocs.length > 0) && (
@@ -1077,46 +1032,6 @@ export async function CaseDetailPage(
 
 export default CaseDetailPage;
 
-function KeyFact({
-  es,
-  en,
-  value,
-  mono = false,
-  locale,
-  icon,
-  className = "",
-}: {
-  es: string;
-  en: string;
-  value: ReactNode;
-  mono?: boolean;
-  locale: "es" | "en";
-  icon?: string;
-  className?: string;
-}) {
-  return (
-    <div className={`bg-bg p-4 ${className}`}>
-      <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
-        <T locale={locale} es={es} en={en} />
-        {icon && (
-          <span aria-hidden className="ml-2 align-middle text-xs leading-none tracking-normal">
-            {icon}
-          </span>
-        )}
-      </p>
-      <p
-        className={`mt-1 ${
-          mono
-            ? "font-mono text-2xl font-semibold tabular-nums text-text"
-            : "font-display text-2xl font-medium leading-tight text-text"
-        }`}
-      >
-        {value}
-      </p>
-    </div>
-  );
-}
-
 /** Qué fue más plausiblemente, en términos prosaicos, y por qué: la clase
  *  (mundanoType + misidSubtype + objectDetail) y la frase de la fuente que la
  *  fija (`classBasis`). Sin la frase, lo dice: la clase aún no se contrastó. */
@@ -1128,50 +1043,28 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
   const b = c.classBasis;
   // El rótulo de la fuente tiene par inglés: el sitio es inglés-primario.
   const src = b ? (locale === "es" ? b.source : b.source_en ?? b.source) : "";
-  // La clase prosaica cubre solo la parte mundana del reparto. Cuando otra
-  // narrativa pesa más (Roswell: 55 % programa clasificado frente a 22 %
-  // mundano), mostrarla sola como «la explicación más plausible» se lee como el
-  // veredicto del caso. Se antepone la narrativa dominante y se rotula la clase
-  // con el peso de la capa que explica.
+  // La clase prosaica cubre solo la parte mundana del reparto: cuando otra
+  // narrativa pesa más (Roswell), la cita no puede leerse como veredicto.
   const post = posteriorFor(c);
-  const [topId, topP] = (Object.entries(post) as [string, number][]).sort((x, y) => y[1] - x[1])[0];
-  const topDef = MECE_CLASSES.find((k) => k.id === topId);
-  const mund = Math.round(100 * post.mundano_natural);
+  const [topId] = (Object.entries(post) as [string, number][]).sort((x, y) => y[1] - x[1])[0];
   const mundaneLeads = topId === "mundano_natural";
+  // La barra y la leyenda de arriba ya dicen qué pesa más y cuánto; aquí solo
+  // va el porqué, citado de la fuente. Cuando lo mundano no es lo más
+  // probable, se aclara a qué parte del reparto se refiere la cita.
+  const label = cls ? (detail ? { es: `${cls.label} · ${shortLabel(detail.label)}`, en: `${cls.labelEn} · ${shortLabel(detail.labelEn)}` } : { es: cls.label, en: cls.labelEn }) : undefined;
+  const why = mundaneLeads || !label
+    ? { es: "Por qué: ", en: "Why: " }
+    : { es: `Por qué, si fue algo mundano, sería ${label.es.toLowerCase()}: `, en: `Why, if it was mundane, it would be ${label.en.toLowerCase()}: ` };
+  const es = b ? splitOriginal(b.es) : undefined;
+  const en = b ? splitOriginal(b.en) : undefined;
   return (
     <div className="space-y-2 border-l-2 border-text pl-4">
-      {!mundaneLeads && topDef && (
-        <p className="text-sm text-text">
-          <span className="font-semibold">
-            <T locale={locale} es="Lo más probable: " en="Most likely: " />
-          </span>
-          <T locale={locale} es={`${topDef.label} (${Math.round(100 * topP)} %)`} en={`${topDef.labelEn} (${Math.round(100 * topP)}%)`} />
-        </p>
-      )}
-      <p className="font-mono text-xs uppercase tracking-widest text-muted">
-        {mundaneLeads ? (
-          <T locale={locale} es={`Explicación conocida más plausible · ${mund} %`} en={`Most plausible known explanation · ${mund}%`} />
-        ) : (
-          <T locale={locale} es={`Si fue algo mundano (${mund} %), lo más plausible`} en={`If it was something mundane (${mund}%), most plausibly`} />
-        )}
-      </p>
-      <p className="text-lg font-semibold text-text">
-        {cls ? (
-          <T
-            locale={locale}
-            es={detail ? `${cls.label} · ${shortLabel(detail.label)}` : cls.label}
-            en={detail ? `${cls.labelEn} · ${shortLabel(detail.labelEn)}` : cls.labelEn}
-          />
-        ) : (
-          <T locale={locale} es="Ninguna fuente propone una" en="No source proposes one" />
-        )}
-      </p>
       {b ? (
-        <p className="text-sm text-text">
+        <div className="text-sm text-text">
           <span className="font-semibold">
-            <T locale={locale} es="Por qué: " en="Why: " />
+            <T locale={locale} es={why.es} en={why.en} />
           </span>
-          <T locale={locale} es={b.es} en={b.en} />{" "}
+          <T locale={locale} es={es!.text} en={en!.text} />{" "}
           <span className="text-muted">
             (
             {b.url ? (
@@ -1183,7 +1076,15 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
             )}
             )
           </span>
-        </p>
+          {(locale === "es" ? es : en)?.original && (
+            <details className="mt-2 text-xs text-muted">
+              <summary className="cursor-pointer text-accent">
+                <T locale={locale} es="Cita en el idioma original" en="Quote in the original language" />
+              </summary>
+              <span className="mt-1 block">{(locale === "es" ? es : en)!.original}</span>
+            </details>
+          )}
+        </div>
       ) : (
         <p className="text-sm italic text-muted">
           <T
@@ -1195,4 +1096,13 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
       )}
     </div>
   );
+}
+
+/** Separa la cita en el idioma original («Original en alemán: «…»» /
+ *  «German original: «…»») del resto del porqué: se pliega para que el
+ *  bloque no lea la misma frase dos veces. */
+function splitOriginal(t: string): { text: string; original?: string } {
+  const m = t.match(/\s*(?:Original en [a-záéíóú]+|[A-Z][a-z]+ original):\s*(«[^»]*»(?:[;,]\s*«[^»]*»)*)\.?/);
+  if (!m || m.index === undefined) return { text: t };
+  return { text: (t.slice(0, m.index) + " " + t.slice(m.index + m[0].length)).replace(/\s+/g, " ").trim(), original: m[1] };
 }
