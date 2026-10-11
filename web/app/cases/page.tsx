@@ -171,7 +171,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
       </header>
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
-        <span className="font-mono uppercase tracking-widest text-muted/70">
+        <span className="font-mono text-muted/70">
           <T es="Sin marca = documentado." en="No marker = documented." locale={locale} />
         </span>
         <span className="inline-flex items-center gap-1.5">
@@ -203,7 +203,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
           {/* CA-2 · cabecera de columnas — una sola vez, estilo tabla editorial */}
           <div
             aria-hidden
-            className="grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 border-b-2 border-text pb-2 font-mono text-[10px] uppercase tracking-widest text-muted sm:grid-cols-[auto_auto_1fr_auto_auto_auto]"
+            className="grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 border-b-2 border-text pb-2 font-mono text-[10px] text-muted sm:grid-cols-[auto_auto_1fr_auto_auto_auto]"
           >
             <span className="hidden w-10 text-right sm:inline">Nº</span>
             <span className="w-6" />
@@ -226,7 +226,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
                 data-group
                 className="scroll-mt-20"
               >
-                <h2 className="sticky top-[76px] z-10 -mx-4 border-b border-border bg-bg px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted">
+                <h2 className="sticky top-[76px] z-10 -mx-4 border-b border-border bg-bg px-4 py-2 font-mono text-xs text-muted">
                   <span className="text-text">
                     {era.range ?? `${era.start}–${era.end}`}
                   </span>{" "}

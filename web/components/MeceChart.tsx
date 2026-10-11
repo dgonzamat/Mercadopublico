@@ -129,7 +129,7 @@ export function MecePartition({
         tone={tone}
       />
 
-      <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-muted">
+      <p className="mt-6 font-mono text-[11px] text-muted">
         <T
           locale={locale}
           es={totalLabelEs ?? `Suman 100 % · ${N} incidentes`}
@@ -146,7 +146,7 @@ export function MecePartition({
           </div>
           {/* Par complementario (prosaico + anómalo = el total), así que también
               por resto mayor: con toFixed independiente se leía 51% / 50%. */}
-          <div className="mt-2 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-wider">
+          <div className="mt-2 flex items-baseline justify-between font-mono text-[11px]">
             <span className="text-text">
               <T es="Prosaico" en="Prosaic" locale={locale} /> <span className="tabular-nums text-muted">{ejeMacro[0]}%</span>
             </span>

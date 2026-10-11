@@ -20,7 +20,7 @@ export function HypothesesSnapshot({ locale }: { locale: "es" | "en" }) {
 
   return (
     <div>
-      <p className="border-b border-bg/10 pb-3 font-mono text-[11px] uppercase tracking-widest text-bg/50">
+      <p className="border-b border-bg/10 pb-3 font-mono text-[11px] text-bg/50">
         <T
           locale={locale}
           es={`Cómo se reparten los ${N} incidentes del archivo entre las explicaciones (suman 100 %)`}
@@ -40,7 +40,7 @@ export function HypothesesSnapshot({ locale }: { locale: "es" | "en" }) {
           totalLabelEn=""
         />
       </div>
-      <p className="mt-8 font-mono text-[11px] uppercase tracking-widest text-bg/50">
+      <p className="mt-8 font-mono text-[11px] text-bg/50">
         <T
           locale={locale}
           es={<>Cada incidente cuenta una vez, en su explicación más probable. <LocaleLink href="/about#non-exclusive" className="underline underline-offset-4 hover:text-bg">Cómo se calcula →</LocaleLink></>}

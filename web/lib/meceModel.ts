@@ -222,7 +222,7 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
     adversaria: byId.adversaria,
     nohumano_encubierto: byId.nohumano_encubierto,
     nohumano_abierto: byId.nohumano_abierto,
-    nohumano: { label: "No-humano", labelEn: "Non-human", color: byId.nohumano_abierto.color },
+    nohumano: { label: "No humano", labelEn: "Non-human", color: byId.nohumano_abierto.color },
     // «Indeterminado» como narrativa navegable propia (color visible sobre fondo oscuro).
     indet: { label: "Indeterminado", labelEn: "Indeterminate", color: INDET_COLOR },
   };

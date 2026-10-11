@@ -238,7 +238,7 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
               </span>
               <div className="space-y-2">
                 <div className="space-y-1">
-                  <p className="font-mono text-xs uppercase tracking-wider text-muted">
+                  <p className="font-mono text-xs text-muted">
                     <T
                       es={`Confianza · ${f.es.confidence}`}
                       en={`Confidence · ${f.en.confidence}`}

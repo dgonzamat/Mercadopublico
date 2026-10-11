@@ -196,7 +196,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
                   className="flex items-baseline justify-between gap-3 border-b-2 pb-2"
                   style={{ borderColor: c.color }}
                 >
-                  <h3 className="font-mono text-sm font-medium uppercase tracking-wider text-text">
+                  <h3 className="font-mono text-sm font-medium text-text">
                     <T es={c.label} en={c.labelEn} locale={locale} />
                   </h3>
                   <span className="shrink-0 font-mono text-xs tabular-nums text-muted">
@@ -225,7 +225,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
                 {total > 0 && (
                   <LocaleLink
                     href={`/cases/#${c.key}`}
-                    className="group mt-4 inline-flex min-h-[44px] items-center gap-2 font-mono text-xs uppercase tracking-widest text-text underline-offset-4 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="group mt-4 inline-flex min-h-[44px] items-center gap-2 font-mono text-xs text-text underline-offset-4 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     <span className="group-hover:underline">
                       <T es={`Ver los ${total} casos`} en={`See the ${total} cases`} locale={locale} />

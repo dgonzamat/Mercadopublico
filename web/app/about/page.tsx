@@ -84,7 +84,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
     <div className="mx-auto grid max-w-6xl gap-12 py-4 lg:grid-cols-[14rem_1fr]">
       <aside className="hidden lg:block">
         <div className="sticky top-20 space-y-3">
-          <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+          <p className="font-mono text-[11px] text-muted">
             <T es="Capítulos" en="Chapters" locale={locale} />
           </p>
           <ol className="space-y-2">
@@ -117,7 +117,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
         </header>
 
         <nav aria-label="Índice de capítulos" className="space-y-3 border-y-2 border-text/15 py-6 lg:hidden">
-          <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+          <p className="font-mono text-[11px] text-muted">
             <T es="Saltar a capítulo" en="Jump to chapter" locale={locale} />
           </p>
           <ol className="space-y-2">
@@ -139,7 +139,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[0].es.eyebrow} en={CHAPTERS[0].en.eyebrow} locale={locale} /></Eyebrow>
               <H2><T es={CHAPTERS[0].es.h2} en={CHAPTERS[0].en.h2} locale={locale} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              <p className="font-mono text-xs text-muted">
                 <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[0].es.tldr} en={CHAPTERS[0].en.tldr} locale={locale} />
                 </span>
@@ -158,9 +158,9 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                 <table className="w-full text-sm">
                   <thead className="bg-surface-2">
                     <tr>
-                      <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted">Tier</th>
-                      <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted"><T es="Categoría" en="Category" locale={locale} /></th>
-                      <th className="px-3 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted"><T es="Ejemplos" en="Examples" locale={locale} /></th>
+                      <th className="px-3 py-2 text-left font-mono text-xs text-muted">Tier</th>
+                      <th className="px-3 py-2 text-left font-mono text-xs text-muted"><T es="Categoría" en="Category" locale={locale} /></th>
+                      <th className="px-3 py-2 text-left font-mono text-xs text-muted"><T es="Ejemplos" en="Examples" locale={locale} /></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -188,7 +188,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               {/* Los tres ejes — unifica tier / probabilidad / partición y dónde se ve cada uno.
                   Responde a la confusión de que cada vista habla solo de "su" eje. */}
               <div className="border-l-4 border-accent bg-surface-2 p-5">
-                <p className="font-mono text-xs uppercase tracking-widest text-accent">
+                <p className="font-mono text-xs text-accent">
                   <T es="Tres medidas distintas" en="Three different measures" locale={locale} />
                 </p>
                 <Body className="mt-3 text-sm text-muted">
@@ -226,7 +226,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[1].es.eyebrow} en={CHAPTERS[1].en.eyebrow} locale={locale} /></Eyebrow>
               <H2><T es={CHAPTERS[1].es.h2} en={CHAPTERS[1].en.h2} locale={locale} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              <p className="font-mono text-xs text-muted">
                 <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[1].es.tldr} en={CHAPTERS[1].en.tldr} locale={locale} />
                 </span>
@@ -292,7 +292,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[2].es.eyebrow} en={CHAPTERS[2].en.eyebrow} locale={locale} /></Eyebrow>
               <H2><T es={CHAPTERS[2].es.h2} en={CHAPTERS[2].en.h2} locale={locale} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              <p className="font-mono text-xs text-muted">
                 <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[2].es.tldr} en={CHAPTERS[2].en.tldr} locale={locale} />
                 </span>
@@ -339,7 +339,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[3].es.eyebrow} en={CHAPTERS[3].en.eyebrow} locale={locale} /></Eyebrow>
               <H2><T es={CHAPTERS[3].es.h2} en={CHAPTERS[3].en.h2} locale={locale} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              <p className="font-mono text-xs text-muted">
                 <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[3].es.tldr} en={CHAPTERS[3].en.tldr} locale={locale} />
                 </span>
@@ -370,7 +370,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
             <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
               <Eyebrow><T es={CHAPTERS[4].es.eyebrow} en={CHAPTERS[4].en.eyebrow} locale={locale} /></Eyebrow>
               <H2><T es={CHAPTERS[4].es.h2} en={CHAPTERS[4].en.h2} locale={locale} /></H2>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              <p className="font-mono text-xs text-muted">
                 <span className="normal-case tracking-normal">
                   <T es={CHAPTERS[4].es.tldr} en={CHAPTERS[4].en.tldr} locale={locale} />
                 </span>
@@ -499,7 +499,7 @@ function MoveList({
 }) {
   return (
     <div className="space-y-2">
-      <p className={`font-mono text-xs uppercase tracking-widest ${accent ? "text-accent" : "text-muted"}`}>
+      <p className={`font-mono text-xs ${accent ? "text-accent" : "text-muted"}`}>
         <T es={es} en={en} locale={locale} />
       </p>
       <ul className="space-y-1.5 text-xs text-text">

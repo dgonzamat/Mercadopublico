@@ -138,7 +138,7 @@ export async function ResearcherDetailPage({
           <T es={r.credentials} en={r.credentials_en} locale={locale} />
         </Caption>
         {r.photo && (r.photo_credit || r.photo_license) && (
-          <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-muted">
+          <p className="mt-3 font-mono text-[11px] text-muted">
             {[r.photo_credit, licenseLabel(r.photo_license, locale)].filter(Boolean).join(" · ")}
           </p>
         )}
@@ -277,7 +277,7 @@ export async function ResearcherDetailPage({
           </div>
         </section>
       ) : (
-        <p className="border-t border-border pt-6 font-mono text-xs uppercase tracking-widest text-muted">
+        <p className="border-t border-border pt-6 font-mono text-xs text-muted">
           <T
             es="Aporta un marco teórico, sin un caso concreto del archivo."
             en="Contributes a theoretical framework, with no specific case in the archive."
@@ -288,8 +288,8 @@ export async function ResearcherDetailPage({
 
       <Caption className="border-t border-border pt-6">
         <T
-          es="Bio sintetizada del ecosistema de divulgación UAP — categorizada por sección epistemológica (A-F)."
-          en="Synthesized bio from the UAP disclosure ecosystem — categorized by epistemological section (A-F)."
+          es="Biografía resumida a partir de fuentes públicas, clasificada por sección (A-F)."
+          en="Biography summarized from public sources, classified by section (A-F)."
           locale={locale}
         />
       </Caption>

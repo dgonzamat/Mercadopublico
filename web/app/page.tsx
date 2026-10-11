@@ -92,7 +92,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             {/* Social · Instagram. Tono "dark" por el hero oscuro (D1 contraste);
                 target 44px en el componente (D4). */}
             <div className="flex items-center gap-3 pt-2">
-              <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55">
+              <span className="font-mono text-[11px] text-bg/55">
                 <T locale={locale} es="Síguenos" en="Follow" />
               </span>
               <InstagramLink tone="dark" />
@@ -217,7 +217,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             separada por un border sutil en vez de un hueco crema entre dos bloques negros. */}
         <div className="mx-auto mt-20 max-w-6xl space-y-10 border-t border-bg/20 px-4 pt-16 md:mt-28 md:pt-20">
           <div className="space-y-6">
-            <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+            <p className="font-mono text-xs text-bg/60">
               <T
                 locale={locale}
                 es="Distribución temporal"
@@ -294,7 +294,7 @@ function BigStat({
         <p className="text-sm font-semibold leading-snug text-text md:text-lg">
           <T locale={locale} es={es.label} en={en.label} />
         </p>
-        <p className="hidden font-mono text-xs uppercase tracking-widest text-muted md:block">
+        <p className="hidden font-mono text-xs text-muted md:block">
           <T locale={locale} es={es.sub} en={en.sub} />
         </p>
       </div>

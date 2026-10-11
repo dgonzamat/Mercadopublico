@@ -87,7 +87,7 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
         <table className="w-full min-w-[640px] border-collapse text-sm">
           <thead>
             <tr className="border-b border-border">
-              <th className="sticky left-0 bg-bg px-2 py-2 text-left font-mono text-xs uppercase tracking-widest text-muted">
+              <th className="sticky left-0 bg-bg px-2 py-2 text-left font-mono text-xs text-muted">
                 <T es="País" en="Country" locale={locale} />
               </th>
               {COLS.map((d) => (
@@ -95,7 +95,7 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
                   {colLabel(d)}
                 </th>
               ))}
-              <th className="px-2 py-2 text-center font-mono text-[10px] uppercase tracking-widest text-muted">
+              <th className="px-2 py-2 text-center font-mono text-[10px] text-muted">
                 <T es="Total" en="Total" locale={locale} />
               </th>
             </tr>
@@ -130,7 +130,7 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
           </tbody>
           <tfoot>
             <tr className="border-t-2 border-border">
-              <th className="sticky left-0 bg-bg px-2 py-2 text-left font-mono text-[10px] uppercase tracking-widest text-muted">
+              <th className="sticky left-0 bg-bg px-2 py-2 text-left font-mono text-[10px] text-muted">
                 <T es="Total" en="Total" locale={locale} />
               </th>
               {COLS.map((d) => (

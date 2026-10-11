@@ -45,10 +45,10 @@ export function TimelineByYear({ locale }: { locale: "es" | "en" }) {
   return (
     <figure className="space-y-6">
       <figcaption className="grid grid-cols-2 items-end gap-4">
-        <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
+        <p className="font-mono text-xs text-bg/60">
           <T es="Casos por año" en="Cases per year" locale={locale} /> · {YEAR_MIN}–{YEAR_MAX}
         </p>
-        <p className="text-right font-mono text-xs uppercase tracking-widest text-bg/60">
+        <p className="text-right font-mono text-xs text-bg/60">
           {incidents.length} <T es="casos" en="cases" locale={locale} /> · {span} <T es="años" en="years" locale={locale} />
         </p>
       </figcaption>
@@ -71,7 +71,7 @@ export function TimelineByYear({ locale }: { locale: "es" | "en" }) {
                 style={{ left: `${pct}%` }}
                 className={`absolute bottom-0 flex transform flex-col gap-1 ${align}`}
               >
-                <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-widest text-accent-bright">
+                <span className="whitespace-nowrap font-mono text-[10px] text-accent-bright">
                   {p.year} {p.label}
                 </span>
                 <span className="text-[9px] leading-none text-accent-bright">
@@ -116,7 +116,7 @@ export function TimelineByYear({ locale }: { locale: "es" | "en" }) {
             <p className="font-display text-2xl tabular-nums leading-none text-bg md:text-3xl">
               {totalForDecade(d)}
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-widest text-bg/60">
+            <p className="font-mono text-[10px] text-bg/60">
               {d}s
             </p>
           </div>
