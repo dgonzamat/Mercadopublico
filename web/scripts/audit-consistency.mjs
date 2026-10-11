@@ -1969,7 +1969,11 @@ if (fs.existsSync(regionsPath)) {
 // (22 fichas reescritas, oct 2026).
 // El léxico de hipérbole («fascinante», «unprecedented»…) no se mecaniza como
 // error: sus usos restantes son citas, nombres propios o afirmaciones
-// atribuidas, y se reporta como NOTE para revisión.
+// atribuidas, y se reporta como NOTE para revisión. Las fichas ya revisadas
+// (oct 2026: citas de Condon, Dash, el embajador en Marruecos y AARO, un hecho
+// histórico y el blog «Enigmatic Ideas») salen del conteo para que la nota solo
+// hable de usos nuevos; si una de ellas pierde todos sus usos, el guard lo dice.
+const HYPE_REVIEWED = new Set(["cia-historical-uap-archive", "lakenheath-bentwaters-1956", "morocco-gendarmerie-1976", "mosul-orb-2016", "mystery-airships-1896", "tinley-park-lights-2004"]);
 {
   const NOTE_RE = /\b(?:el|este) corpus (?:debe|debería|deberá|necesita|tiene que)\b|\bthe corpus (?:must|should|needs)\b|versión anterior de (?:esta|este) (?:ficha|caso)|(?:la|una) ficha anterior|esta misma ficha|versiones anteriores|earlier versions? of this|previous version of this|this same record/i;
   const RANK_RE = /\bprimer[oa]? (?:[\p{L}\p{N}'’-]+ ){0,4}(?:del|en el) corpus\b|corpus's first\b|\bfirst (?:[\p{L}\p{N}'’-]+ ){0,3}(?:case|file) in the corpus\b|\b(?:más|menos) [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} (?:del|de todo el|en todo el) corpus\b|\bmejor(?:es)? [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} del corpus\b|corpus's (?:most|least|best|strongest|weakest|clearest|largest|only|anchor)\b|\b(?:most|best|strongest|weakest|largest|longest|shortest|clearest|cleanest|oldest)\b(?: [\p{L}\p{N}'’-]+){0,4} in the (?:entire )?corpus\b|\bcaso ancla del corpus\b|\bancla a [\p{L}\p{N}'’-]+ en el corpus\b|\banchors [\p{L}\p{N}'’-]+ in the corpus\b/iu;
@@ -1978,6 +1982,7 @@ if (fs.existsSync(regionsPath)) {
   const stripQuotes = (t) => t.replace(/«[^»]*»|“[^”]*”|"[^"]*"|(?<!\w)'[^']{2,200}'(?!\w)/g, "");
   const PROSE = ["summary", "whatHappened", "whyMatters", "evidence"];
   let hype = 0;
+  const hypeReviewedSeen = new Set();
   for (const c of cases) {
     const file = path.join("data", "cases", `${c.id}.json`);
     for (const [k, v] of Object.entries(c)) {
@@ -1993,10 +1998,13 @@ if (fs.existsSync(regionsPath)) {
         if (prob) record("ERROR", file, 0, `E47 reparto descrito en la prosa en ${k}: «${prob[0]}». El reparto es un número derivado y el texto caduca en cuanto cambia: explica la evidencia, no la masa de cada narrativa.`);
         const rank = t.match(RANK_RE);
         if (rank) record("ERROR", file, 0, `E47 ranking dentro del corpus en ${k}: «${rank[0]}». Es un conteo disfrazado que caduca al entrar un caso nuevo: describe el caso por sí mismo.`);
-        hype += (t.match(HYPE_RE) ?? []).length;
+        const n = (t.match(HYPE_RE) ?? []).length;
+        if (HYPE_REVIEWED.has(c.id)) { if (n) hypeReviewedSeen.add(c.id); }
+        else hype += n;
       }
     }
   }
+  for (const id of HYPE_REVIEWED) if (!hypeReviewedSeen.has(id)) record("WARN", path.join("data", "cases"), 0, `E47 léxico: ${id} figura como revisada en HYPE_REVIEWED pero ya no tiene usos (o no existe): sácala de la lista.`);
   if (hype > 0) record("NOTE", path.join("data", "cases"), 0, `E47 léxico: ${hype} usos de hipérbole fuera de comillas (fascinante, enigmático, unprecedented…). Revisa que sean afirmaciones atribuidas o nombres propios.`);
 }
 
