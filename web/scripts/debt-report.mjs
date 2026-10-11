@@ -80,9 +80,9 @@ const checks = [
   // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.
   ["comillas españolas «» en el texto inglés", (c) => joinProse(c, "_en").includes("«")],
   ["comillas rectas sueltas en el texto español", (c) => /(?<![\w\d])"[A-Za-zÁÉÍÓÚáéíóúñ]/.test(joinProse(c, "").replace(/«[^«»]*(?:«[^«»]*»[^«»]*)*»/g, ""))],
-  ["evidencia con más de 8 ítems", (c) => (c.evidence ?? []).length > 8],
-  ["porqué (classBasis) de más de 700 caracteres", (c) => (c.classBasis?.es ?? "").length > 700],
-  ["resumen de más de 700 caracteres", (c) => (c.summary ?? "").length > 700],
+  ["evidencia con más de 8 ítems (plegada en la ficha desde el 6.º)", (c) => (c.evidence ?? []).length > 8],
+  ["porqué de más de 700 caracteres (plegado en la ficha)", (c) => (c.classBasis?.es ?? "").length > 700],
+  ["resumen de más de 700 caracteres (plegado en la ficha)", (c) => (c.summary ?? "").length > 700],
   // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
   // un documento del caso: esto mide cuántas fichas no tienen ninguno.
   ["sin documento del caso (solo foto de contexto)", (c) => { const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean); return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? "")); }],
