@@ -6,9 +6,10 @@ import {
   modalCounts,
   modalHypothesis,
   PROSAIC_CLASSES,
+  INDET_COLOR,
   type ScoredCase,
 } from "@/lib/meceModel";
-import { objectDetailDef, prosaicKey, shortLabel } from "@/lib/meceClasses";
+import { MECE_CLASSES, objectDetailDef, prosaicKey, shortLabel } from "@/lib/meceClasses";
 import type { MisidSubtype } from "@/lib/types";
 import type { Posterior } from "@/lib/types";
 
@@ -196,6 +197,20 @@ export function CasePosterior({
   // 101%. Las filas vienen ordenadas de mayor a menor: la primera es la más
   // probable, así que no hace falta un pie que la repita.
   const partes = pctParts(rows.map((r) => r.count));
+  // Las seis explicaciones se evalúan siempre; las que valen 0 se dibujaban
+  // ocultas y la leyenda cambiaba de 3 a 6 filas según la ficha, como si cada
+  // una juzgara categorías distintas (55 fichas). Se listan todas, las de 0 %
+  // atenuadas al final.
+  const present = new Set(rows.map((r) => r.key));
+  const prosaic = PROSAIC_CLASSES.find((k) => k.key === pk);
+  const zeros = [
+    ...(present.has(pk) || !prosaic ? [] : [{ key: pk, label: prosaic.label, labelEn: prosaic.labelEn, color: prosaic.color }]),
+    ...(["humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto"] as const)
+      .filter((id) => !present.has(id))
+      .map((id) => MECE_CLASSES.find((k) => k.id === id)!)
+      .map((k) => ({ key: k.id, label: k.label, labelEn: k.labelEn, color: k.color })),
+    ...(present.has("indet") ? [] : [{ key: "indet", label: "Indeterminado", labelEn: "Indeterminate", color: INDET_COLOR }]),
+  ];
   return (
     <div>
       <div className="flex h-4 w-full overflow-hidden rounded-sm">
@@ -211,6 +226,15 @@ export function CasePosterior({
               <T es={withDetail(r).es} en={withDetail(r).en} locale={locale} />
             </span>
             <span className="text-muted" data-pct="">{partes[i]}%</span>
+          </div>
+        ))}
+        {zeros.map((r) => (
+          <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px] text-muted/70">
+            <span className="flex items-center gap-1.5">
+              <span className="inline-block h-2 w-2 shrink-0 opacity-30" style={{ backgroundColor: r.color }} />
+              <T es={r.label} en={r.labelEn} locale={locale} />
+            </span>
+            <span>0%</span>
           </div>
         ))}
       </div>
