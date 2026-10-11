@@ -169,6 +169,17 @@ export function MecePartition({
  *  forzada; mundano/natural abierto en su clase prosaica concreta — el objeto,
  *  vía `misidSubtype`, o fenómeno natural / posible fraude). Si el caso trae
  *  `objectDetail` (segundo nivel), se muestra junto a su clase. */
+const NO_KNOWN_CAUSE = new Set(["indet", "nohumano_encubierto", "nohumano_abierto"]);
+
+/** % «sin causa conocida» tal como lo imprime la leyenda (indeterminado + las
+ *  dos no humanas, con el mismo redondeo por resto mayor). La cabecera de la
+ *  ficha usa este número para que nunca difiera en un punto de la leyenda. */
+export function unexplainedPrinted(posterior: Posterior, mundanoType?: ScoredCase["mundanoType"], misidSubtype?: MisidSubtype): number {
+  const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }], { keepIndet: true });
+  const partes = pctParts(rows.map((r) => r.count));
+  return rows.reduce((acc, r, i) => acc + (NO_KNOWN_CAUSE.has(r.key) ? partes[i] : 0), 0);
+}
+
 export function CasePosterior({
   posterior,
   mundanoType,
@@ -197,6 +208,7 @@ export function CasePosterior({
   // 101%. Las filas vienen ordenadas de mayor a menor: la primera es la más
   // probable, así que no hace falta un pie que la repita.
   const partes = pctParts(rows.map((r) => r.count));
+  const unknown = rows.reduce((acc, r, i) => acc + (NO_KNOWN_CAUSE.has(r.key) ? partes[i] : 0), 0);
   // Las seis explicaciones se evalúan siempre; las que valen 0 se dibujaban
   // ocultas y la leyenda cambiaba de 3 a 6 filas según la ficha, como si cada
   // una juzgara categorías distintas (55 fichas). Se listan todas, las de 0 %
@@ -238,6 +250,13 @@ export function CasePosterior({
           </div>
         ))}
       </div>
+      <p className="mt-3 text-xs text-muted">
+        <T
+          es={`Sin causa conocida: ${unknown} % (indeterminado más las dos explicaciones no humanas). Es la cifra de la cabecera.`}
+          en={`No known cause: ${unknown}% (indeterminate plus the two non-human explanations). It is the figure in the header.`}
+          locale={locale}
+        />
+      </p>
     </div>
   );
 }
