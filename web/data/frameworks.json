@@ -101,8 +101,8 @@
     },
     {
         "id": "plurality",
-        "name": "Pluralidad (posición del corpus)",
-        "name_en": "Plurality (corpus position)",
+        "name": "Pluralidad (posición de UAP Codex)",
+        "name_en": "Plurality (UAP Codex position)",
         "author": "Corpus",
         "origin": "Heterogéneo — múltiples sources distintas",
         "verdict_moral": "variable",

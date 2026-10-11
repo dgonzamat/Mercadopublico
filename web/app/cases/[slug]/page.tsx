@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
-import { cases, getPattern, getEntityMorphology, TOTAL_CASES } from "@/lib/data";
-import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
+import { cases, getPattern, getEntityMorphology } from "@/lib/data";
+import { CATEGORY_META, DOC_TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, MECE_CLASSES, shortLabel } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
@@ -275,17 +275,6 @@ export async function CaseDetailPage(
         ? "font-display text-xl leading-snug text-text md:text-2xl"
         : "font-display text-2xl leading-snug text-text md:text-3xl";
 
-  // CD-2 · numeración de partes secuencial y honesta. Antes "Parte 01/02/03"
-  // estaban hard-codeadas: un caso sin `whatHappened` saltaba a "Parte 02" o
-  // empezaba en "Parte 03". Ahora el contador solo cuenta las partes presentes
-  // (el aparato documental "Lo que queda en papel" siempre existe).
-  const partNo: Record<string, string> = {};
-  let _pc = 0;
-  const pad = (n: number) => String(n).padStart(2, "0");
-  if (c.whatHappened) partNo.whatHappened = pad(++_pc);
-  if (c.whyMatters) partNo.whyMatters = pad(++_pc);
-  partNo.apparatus = pad(++_pc);
-
   return (
     <article className="mx-auto max-w-3xl space-y-24 py-4 md:space-y-32">
       <script
@@ -319,14 +308,6 @@ export async function CaseDetailPage(
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">
         <div className="space-y-4">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T locale={locale}
-              es={`Caso Nº ${String(c.num).padStart(2, "0")}`}
-              en={`Case No. ${String(c.num).padStart(2, "0")}`}
-            />
-            <span className="mx-2 text-text/30">·</span>
-            <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />
-          </p>
           {c.epistemicStatus && c.epistemicStatus !== "documented" && (
             <EpistemicBadge status={c.epistemicStatus} locale={locale} />
           )}
@@ -417,9 +398,6 @@ export async function CaseDetailPage(
         </Caption>
         ) : (
         <div className="space-y-1">
-          <Caption>
-            <T locale={locale} es={`${TIER_META[c.tier].description}.`} en={`${TIER_META[c.tier].description_en}.`} />
-          </Caption>
           {/* La explicación de las cifras es la misma en todas las fichas: va
               plegada para que no empuje el caso fuera de la pantalla en móvil. */}
           <p className="text-xs leading-normal">
@@ -483,8 +461,8 @@ export async function CaseDetailPage(
         <section className="space-y-6">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
             <T locale={locale}
-              es="Documentos primarios · visor"
-              en="Primary documents · viewer"
+              es="Documentos primarios"
+              en="Primary documents"
             />
           </p>
           {docsInline
@@ -585,9 +563,6 @@ export async function CaseDetailPage(
           {c.whatHappened && (
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
-                <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  <T locale={locale} es={`Parte ${partNo.whatHappened}`} en={`Part ${partNo.whatHappened}`} />
-                </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
                   <T locale={locale} es={whTitle.es} en={whTitle.en} />
                 </h2>
@@ -640,13 +615,10 @@ export async function CaseDetailPage(
           {c.whyMatters && (
             <div className="space-y-8">
               <header className="space-y-3 border-b-2 border-text pb-4">
-                <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  <T locale={locale} es={`Parte ${partNo.whyMatters}`} en={`Part ${partNo.whyMatters}`} />
-                </p>
                 <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
                   <T locale={locale}
-                    es="Por qué este caso movió la aguja"
-                    en="Why this case moved the needle"
+                    es="Por qué importa"
+                    en="Why it matters"
                   />
                 </h2>
               </header>
@@ -676,9 +648,6 @@ export async function CaseDetailPage(
       {/* ────────── ZONE C — APPARATUS ────────── */}
       <section className="space-y-12 border-t-2 border-text pt-12">
         <header className="space-y-3">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T locale={locale} es={`Parte ${partNo.apparatus}`} en={`Part ${partNo.apparatus}`} />
-          </p>
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
             <T locale={locale} es="Lo que queda en papel" en="What's left on paper" />
           </h2>
@@ -870,8 +839,8 @@ export async function CaseDetailPage(
           <div className="space-y-6 border-l-2 border-accent/40 bg-panel p-6">
             <Caption className="italic">
               <T locale={locale}
-                es={`Este caso aún no está expandido — solo el dato bruto. Vamos por los ${TOTAL_CASES} progresivamente.`}
-                en={`This case isn't expanded yet — just the raw record. We're going through ${TOTAL_CASES} progressively.`}
+                es="Esta ficha todavía no tiene descripción."
+                en="This record has no description yet."
               />
             </Caption>
             <div className="flex flex-wrap gap-3">

@@ -242,11 +242,6 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
                   style={{ width: `${(frac / maxFrac) * 100}%`, backgroundColor: row.color }}
                 />
               </div>
-              {row.weak ? (
-                <p className={`mt-0.5 text-[10px] ${muted}`}>
-                  <T es={`${row.weak} de ${fmtCount(row.count)} con menos del 50 %`} en={`${row.weak} of ${fmtCount(row.count)} below 50%`} locale={locale} />
-                </p>
-              ) : null}
             </>
           );
           const rowClass = `block rounded-sm px-2 py-1 transition-all ${

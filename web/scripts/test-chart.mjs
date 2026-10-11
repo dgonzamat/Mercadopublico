@@ -226,7 +226,6 @@ const casePage = readOut("cases/roswell-1947/index.html");
 if (casePage == null) fail("no existe out/cases/roswell-1947/index.html");
 else {
   check("renderiza la explicación más probable del caso", /Explicación más probable|Most likely explanation/.test(casePage));
-  check("la barra por caso suma 100%", casePage.includes("suma 100%") || casePage.includes("sums to 100%"));
 
 }
 

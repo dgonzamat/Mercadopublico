@@ -50,20 +50,18 @@ export function FrameworksView({ locale }: { locale: "es" | "en" }) {
             locale={locale}
             es={
               <>
-                {frameworks.length} marcos interpretativos serios en competencia.
-                El corpus adopta{" "}
-                <strong className="text-text">Pluralidad</strong> — posición
-                epistémicamente honesta que evita la unificación prematura que
-                cada marco comete en distinta dirección.
+                {frameworks.length} marcos interpretativos en competencia. UAP
+                Codex adopta la{" "}
+                <strong className="text-text">pluralidad</strong>: varios
+                fenómenos distintos bajo la misma etiqueta.
               </>
             }
             en={
               <>
-                {frameworks.length} serious interpretive frameworks in
-                competition. The corpus adopts{" "}
-                <strong className="text-text">Plurality</strong> — an
-                epistemically honest position that avoids the premature
-                unification each framework commits in a different direction.
+                {frameworks.length} competing interpretive frameworks. UAP Codex
+                adopts{" "}
+                <strong className="text-text">plurality</strong>: several
+                distinct phenomena under the same label.
               </>
             }
           />

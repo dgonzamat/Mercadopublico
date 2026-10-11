@@ -44,14 +44,14 @@ export default function AtlasPage() {
         </Eyebrow>
         <H1>
           <T
-            es="Dónde pasa lo que no debería estar pasando"
-            en="Where the things that shouldn't happen, happen"
+            es={`Mapa de los ${STATS.cases} casos`}
+            en={`Map of the ${STATS.cases} cases`}
           />
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`${STATS.cases} casos en el mapa. Toca un marcador para abrir el caso.`}
-            en={`${STATS.cases} cases on the map. Tap a marker to open the case.`}
+            es={`Cada marcador abre su caso.`}
+            en={`Each marker opens its case.`}
           />
         </Lede>
       </header>

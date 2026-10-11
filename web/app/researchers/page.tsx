@@ -104,8 +104,8 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
         </Eyebrow>
         <H1>
           <T
-            es="Las personas que no se callaron"
-            en="The people who didn't stay quiet"
+            es="Actores del debate UAP"
+            en="Actors in the UAP debate"
             locale={locale}
           />
         </H1>
@@ -114,30 +114,14 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
             locale={locale}
             es={
               <>
-                Investigadores, pilotos, congresistas, periodistas y filósofos
-                religiosos, más quienes dicen haber vivido el fenómeno en carne
-                propia. {STATS.researchers} personas: las que sostienen el
-                discurso UAP en{" "}
-                <strong className="text-text">
-                  riesgo personal, político o profesional
-                </strong>{" "}
-                —producen metodología, testimonio o acción, no opinión— y, en la
-                sección F, los experiencers cuyo relato es la materia prima que
-                el resto examina.
+                Investigadores, pilotos, congresistas, periodistas y filósofos,
+                más quienes dicen haber vivido el fenómeno (sección F).
               </>
             }
             en={
               <>
-                Researchers, pilots, congresspeople, journalists, and religious
-                philosophers, plus those who say they lived the phenomenon
-                themselves. {STATS.researchers} people: those who sustain the UAP
-                discourse at{" "}
-                <strong className="text-text">
-                  personal, political, or professional risk
-                </strong>{" "}
-                —producing methodology, testimony, or action, not opinion— and,
-                in section F, the experiencers whose accounts are the raw
-                material the rest examine.
+                Researchers, pilots, congresspeople, journalists and philosophers,
+                plus those who say they lived the phenomenon (section F).
               </>
             }
           />
