@@ -2,34 +2,81 @@
   {
     "group": "Coste medio",
     "items": [
-      { "id": "U8", "title": "Jerga en /about", "state": "pendiente" },
-      { "id": "U9", "title": "/resumen repite contenido de otras páginas", "state": "pendiente" }
+      {
+        "id": "U9",
+        "title": "/resumen repite contenido de otras páginas",
+        "state": "pendiente"
+      }
     ]
   },
   {
     "group": "Rediseño",
     "items": [
-      { "id": "D1", "title": "Una sola lectura del reparto por página", "state": "pendiente" },
-      { "id": "D2", "title": "Cabecera más compacta en la página de cada caso", "state": "pendiente" },
-      { "id": "D3", "title": "Menos etiquetas en mayúsculas", "state": "pendiente" },
-      { "id": "D4", "title": "Paginar /cases y /fuentes", "state": "pendiente" },
-      { "id": "D5", "title": "Cifras de la portada en una fila en el móvil", "state": "pendiente" }
+      {
+        "id": "D1",
+        "title": "Una sola lectura del reparto por página",
+        "state": "pendiente"
+      },
+      {
+        "id": "D2",
+        "title": "Cabecera más compacta en la página de cada caso",
+        "state": "pendiente"
+      },
+      {
+        "id": "D3",
+        "title": "Menos etiquetas en mayúsculas",
+        "state": "pendiente"
+      },
+      {
+        "id": "D4",
+        "title": "Paginar /cases y /fuentes",
+        "state": "pendiente"
+      },
+      {
+        "id": "D5",
+        "title": "Cifras de la portada en una fila en el móvil",
+        "state": "pendiente"
+      }
     ]
   },
   {
     "group": "Esperan decisión del dueño",
     "items": [
-      { "id": "1", "title": "Regla de país", "state": "esperando decisión" },
-      { "id": "8", "title": "Texto del estándar de tiers (bloquea los puntos 3 y 18)", "state": "esperando decisión" },
-      { "id": "U1", "title": "/calidad: ocultarla a Google y sacarla del pie, o reescribirla para lectores", "state": "esperando decisión" },
-      { "id": "X1", "title": "Juicios del Historical Record de AARO", "state": "esperando decisión" },
-      { "id": "k", "title": "El patrón k cita Siria y ninguna ficha de Siria lleva ese patrón: quitarlo o etiquetar el caso", "state": "esperando decisión" }
+      {
+        "id": "1",
+        "title": "Regla de país",
+        "state": "esperando decisión"
+      },
+      {
+        "id": "8",
+        "title": "Texto del estándar de tiers (bloquea los puntos 3 y 18)",
+        "state": "esperando decisión"
+      },
+      {
+        "id": "U1",
+        "title": "/calidad: ocultarla a Google y sacarla del pie, o reescribirla para lectores",
+        "state": "esperando decisión"
+      },
+      {
+        "id": "X1",
+        "title": "Juicios del Historical Record de AARO",
+        "state": "esperando decisión"
+      },
+      {
+        "id": "k",
+        "title": "El patrón k cita Siria y ninguna ficha de Siria lleva ese patrón: quitarlo o etiquetar el caso",
+        "state": "esperando decisión"
+      }
     ]
   },
   {
     "group": "Bloqueados",
     "items": [
-      { "id": "19", "title": "BVD", "state": "en pausa" }
+      {
+        "id": "19",
+        "title": "BVD",
+        "state": "en pausa"
+      }
     ]
   }
 ]

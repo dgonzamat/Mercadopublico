@@ -2,9 +2,9 @@ import { AboutView } from "@/app/about/page";
 import { esMeta } from "@/lib/seo";
 
 export const metadata = esMeta({
-  title: "Metodología — cómo se pesa la evidencia",
+  title: "Metodología: cómo se pesa la evidencia",
   description:
-    "Cómo se pesa la evidencia: tres niveles probatorios (Tier S/A/B), retornos decrecientes por caso, y por qué las seis narrativas son comparables.",
+    "Cómo se pesa la evidencia: tres niveles (S, A y B), por qué un caso repetido aporta poco y cómo seis explicaciones se reparten cada caso.",
   enPath: "/about/",
 });
 
