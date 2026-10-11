@@ -25,7 +25,7 @@ export function Eyebrow({ children, className }: Props) {
   return (
     <p
       className={cx(
-        "font-mono text-xs uppercase tracking-widest text-muted",
+        "text-sm font-semibold text-muted",
         className,
       )}
     >

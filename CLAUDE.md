@@ -200,7 +200,7 @@ Son juicios analíticos estructurados, NO frecuencias calibradas: comparabilidad
 ## Convenciones de UI
 
 - Server components puros donde sea posible (zero JS shipped).
-- Headers de section: `font-mono text-xs uppercase tracking-widest text-muted`.
+- Headers de section: el componente `Eyebrow` (`text-sm font-semibold text-muted`, en minúsculas). Hasta oct 2026 iban en `font-mono uppercase tracking-widest`, y la ficha acumulaba ~17 rótulos en mayúsculas que competían con el contenido; no volver a las mayúsculas para rótulos de sección.
 - Theme tokens en `tailwind.config.ts`: `bg`, `panel`, `border`, `text`, `muted`, `accent`, `tierS/A/B`.
 - Badges: usar el static lookup `TIER_META` de `lib/ui.ts` (Tailwind JIT no compila clases dinámicas como `bg-${color}/10`).
 - max-w container del detalle: `mx-auto max-w-3xl`.
