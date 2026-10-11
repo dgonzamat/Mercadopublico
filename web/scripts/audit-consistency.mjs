@@ -1962,6 +1962,9 @@ if (fs.existsSync(regionsPath)) {
 // el lector toma por análisis; los rankings son conteos disfrazados que se
 // vuelven falsos al entrar un caso nuevo. Se reescribieron ~150 frases; esta
 // regla impide que vuelvan. Las citas entre comillas quedan fuera.
+// También el código entre comillas invertidas (`8l`, `nohumano_encubierto`,
+// slugs): la prosa no lo interpreta y el lector veía nombres de campos y slugs
+// crudos en 17 fichas (oct 2026).
 // El léxico de hipérbole («fascinante», «unprecedented»…) no se mecaniza como
 // error: sus usos restantes son citas, nombres propios o afirmaciones
 // atribuidas, y se reporta como NOTE para revisión.
@@ -1978,6 +1981,8 @@ if (fs.existsSync(regionsPath)) {
       if (!PROSE.includes(k.replace(/_en$/, ""))) continue;
       for (const s of Array.isArray(v) ? v : [v]) {
         if (typeof s !== "string") continue;
+        const code = s.match(/`[^`\n]+`/);
+        if (code) record("ERROR", file, 0, `E47 código en ${k}: ${code[0]}. La prosa no interpreta comillas invertidas y el lector ve el nombre del campo o el slug: usa [[slug]] para enlazar un caso, el id del patrón sin comillas (8q) o la etiqueta de la clase.`);
         const t = stripQuotes(s);
         const note = t.match(NOTE_RE);
         if (note) record("ERROR", file, 0, `E47 nota interna en ${k}: «${note[0]}». Es una tarea o una bitácora del redactor, no análisis: reescribe la frase como hecho («queda por ver si…») o bórrala.`);
