@@ -11,7 +11,6 @@ import {
   H2,
   Lede,
   Body,
-  PullQuote,
 } from "@/lib/typography";
 
 export const metadata = {
@@ -28,24 +27,24 @@ const FINDINGS = [
     es: {
       confidence: "Alta",
       title: "El fenómeno es real",
-      text: `${STATS.cases} casos documentados por gobiernos, militares, agencias y prensa entre 1947 y 2026, en ${STATS.countries} países. Los reportes existen y muchos están en papel oficial; en una parte hay registros de sensores (cámaras térmicas, radares en tierra y en el aire) y en otra solo testigos. Muchos tienen explicación ordinaria; el resto es lo que el corpus intenta medir, caso por caso.`,
+      text: `${STATS.cases} casos documentados por gobiernos, militares, agencias y prensa entre ${STATS.startYear} y ${STATS.endYear}, en ${STATS.countries} países. Los reportes existen y muchos están en papel oficial; en una parte hay registros de sensores (cámaras térmicas, radares en tierra y en el aire) y en otra solo testigos. Muchos tienen explicación ordinaria; el resto es lo que este archivo intenta medir, caso por caso.`,
     },
     en: {
       confidence: "High",
       title: "The phenomenon is real",
-      text: `${STATS.cases} cases documented by governments, militaries, agencies and the press between 1947 and 2026, in ${STATS.countries} countries. The reports exist and many are on official paper; some have sensor records (thermal cameras, ground and airborne radar) and others rest only on witnesses. Many have an ordinary explanation; the rest is what the corpus tries to measure, case by case.`,
+      text: `${STATS.cases} cases documented by governments, militaries, agencies and the press between ${STATS.startYear} and ${STATS.endYear}, in ${STATS.countries} countries. The reports exist and many are on official paper; some have sensor records (thermal cameras, ground and airborne radar) and others rest only on witnesses. Many have an ordinary explanation; the rest is what this archive tries to measure, case by case.`,
     },
   },
   {
     es: {
       confidence: "Alta",
-      title: "No es UNA cosa — son varias",
-      text: "Los reportes describen al menos nueve formas distintas — discos, esferas, triángulos, cilindros, 'tic-tacs', anillos — y cinco modos diferentes de interactuar con humanos, desde indiferencia total hasta encuentro físico documentado. Un fenómeno único no produciría esa variedad.",
+      title: "Los reportes describen cosas distintas",
+      text: "Los reportes describen formas muy distintas (discos, esferas, triángulos, cilindros, «tic-tacs», anillos) y modos diferentes de interactuar con humanos, desde indiferencia total hasta encuentro físico documentado. Un fenómeno único no produciría esa variedad.",
     },
     en: {
       confidence: "High",
-      title: "It's not ONE thing — there are several",
-      text: "Reports describe at least nine distinct shapes — discs, spheres, triangles, cylinders, 'tic-tacs', rings — and five different modes of interaction with humans, from total indifference to documented physical encounter. A single phenomenon would not produce that variety.",
+      title: "The reports describe different things",
+      text: "Reports describe very different shapes (discs, spheres, triangles, cylinders, 'tic-tacs', rings) and different modes of interaction with humans, from total indifference to documented physical encounter. A single phenomenon would not produce that variety.",
     },
   },
   {
@@ -63,12 +62,12 @@ const FINDINGS = [
   {
     es: {
       confidence: "Media",
-      title: "PURSUE 2026 no es divulgación real — es ambigüedad estratégica",
+      title: "PURSUE 2026 abre archivos mientras se propone limitar a los denunciantes",
       text: "La liberación PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) de mayo 2026 abre archivos al público con una mano. Con la otra, una propuesta del 26 de mayo (de la Oficina de Personal Federal, el organismo que regula a los empleados públicos) introduce un acuerdo de confidencialidad mucho más amplio que silencia, hacia adelante, a quien quiera denunciar irregularidades desde dentro del gobierno.",
     },
     en: {
       confidence: "Medium",
-      title: "PURSUE 2026 is not real disclosure — it's strategic ambiguity",
+      title: "PURSUE 2026 opens files while new limits on whistleblowers are proposed",
       text: "The PURSUE release (Presidential Unsealing and Reporting System for UAP Encounters) of May 2026 opens archives to the public with one hand. With the other, a May 26 proposal (from the Office of Personnel Management, the agency that regulates federal employees) introduces a much broader non-disclosure agreement that silences, going forward, anyone who wants to report internal wrongdoing.",
     },
   },
@@ -222,8 +221,8 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
           </Eyebrow>
           <H2>
             <T
-              es="Los 5 hechos que cambian la conversación"
-              en="The 5 facts that change the conversation"
+              es="Cinco hallazgos"
+              en="Five findings"
               locale={locale}
             />
           </H2>
@@ -298,13 +297,13 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
                   es={
                     <>
                       <strong>{item.es.label}</strong>{" "}
-                      <span className="text-muted">— {item.es.desc}</span>
+                      <span className="text-muted">: {item.es.desc}</span>
                     </>
                   }
                   en={
                     <>
                       <strong>{item.en.label}</strong>{" "}
-                      <span className="text-muted">— {item.en.desc}</span>
+                      <span className="text-muted">: {item.en.desc}</span>
                     </>
                   }
                   locale={locale}
@@ -313,26 +312,6 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
             </li>
           ))}
         </ol>
-      </section>
-
-      <section className="space-y-6">
-        <Eyebrow>
-          <T es="Cierre" en="Closing" locale={locale} />
-        </Eyebrow>
-        <PullQuote>
-          <T
-            es={`PURSUE 2026 no es el fin del encubrimiento. Es su evolución a "transparencia controlada".`}
-            en={`PURSUE 2026 is not the end of the cover-up. It is its evolution into "controlled transparency".`}
-            locale={locale}
-          />
-        </PullQuote>
-        <Body className="text-muted">
-          <T
-            es={`${STATS.years} años de un fenómeno que ninguna explicación única resuelve, gestionado por las instituciones con creciente sofisticación. Jacques Vallée describió este patrón en 1975.`}
-            en={`${STATS.years} years of a phenomenon no single explanation resolves, managed institutionally with growing sophistication. Jacques Vallée described this pattern in 1975.`}
-            locale={locale}
-          />
-        </Body>
       </section>
 
       {/* CE-1/T-1 (extensión de la auditoría a esta página): primitiva Cta,

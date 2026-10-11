@@ -251,7 +251,7 @@ function TierStat({
           <T es={es} en={en} locale={locale} />
         </p>
         <p className="font-mono text-xs uppercase tracking-widest text-muted tabular-nums">
-          <T es={`${pct.toFixed(0)}% del corpus`} en={`${pct.toFixed(0)}% of corpus`} locale={locale} />
+          <T es={`${pct.toFixed(0)}% de los casos`} en={`${pct.toFixed(0)}% of cases`} locale={locale} />
         </p>
       </div>
     </div>
