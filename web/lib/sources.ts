@@ -24,6 +24,7 @@ export type SourceCategory =
 
 export interface SourceAppearance {
   label: string;
+  labelEn?: string;
   href?: string;
 }
 
@@ -200,6 +201,7 @@ export function getAllSources(): AggregatedSource[] {
   for (const c of cases) {
     const appearance: SourceAppearance = {
       label: `${c.name} · ${c.year_start}`,
+      labelEn: `${c.name_en ?? c.name} · ${c.year_start}`,
       href: `/cases/${c.id}`,
     };
     for (const s of c.sources ?? []) {

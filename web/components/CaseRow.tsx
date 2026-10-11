@@ -46,7 +46,10 @@ export function CaseRow({
           <EpistemicBadge status={caseData.epistemicStatus} compact />
         </div>
         <p className="truncate text-xs text-muted">
-          <T es={caseData.summary} en={caseData.summary_en ?? caseData.summary} locale={locale} />
+          {/* La fila muestra una línea truncada: mandar el resumen entero
+              (hasta 1.500 caracteres, dos veces en el HTML y en el payload de
+              Next) inflaba /cases a 2 MB sin que el lector viera más. */}
+          <T es={clip(caseData.summary)} en={clip(caseData.summary_en ?? caseData.summary)} locale={locale} />
         </p>
       </div>
       <span className="hidden w-16 text-right font-mono text-xs tabular-nums text-muted sm:inline">
@@ -66,4 +69,10 @@ export function CaseRow({
       </span>
     </LocaleLink>
   );
+}
+
+function clip(t: string, max = 160): string {
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max);
+  return cut.slice(0, cut.lastIndexOf(" ")) + "…";
 }
