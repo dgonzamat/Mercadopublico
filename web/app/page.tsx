@@ -67,8 +67,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             <Lede className="max-w-2xl !text-bg/70">
               <T
                 locale={locale}
-                es={`Hay algo que las instituciones no pudieron — o no quisieron — explicar desde 1947. Un compendio de ${STATS.cases} casos documentados por gobiernos, militares y prensa, cada uno con sus fuentes, su nivel de evidencia y una probabilidad comparable. No es una lista de avistamientos: incluye también los que tienen explicación ordinaria, para que se vea qué se explica y qué no.`}
-                en={`There's something institutions couldn't — or wouldn't — explain since 1947. A compendium of ${STATS.cases} cases documented by governments, militaries and the press, each with its sources, its evidence tier and a comparable probability. Not a sightings list: it also includes the ones with an ordinary explanation, so you can see what is explained and what is not.`}
+                es={`${STATS.cases} casos documentados por gobiernos, militares y prensa desde 1947, cada uno con sus fuentes, su nivel de evidencia y una probabilidad comparable. Incluye también los que tienen explicación ordinaria, para que se vea qué se explica y qué no.`}
+                en={`${STATS.cases} cases documented by governments, militaries and the press since 1947, each with its sources, its evidence tier and a comparable probability. It also includes the ones with an ordinary explanation, so you can see what is explained and what is not.`}
               />
             </Lede>
             <div className="flex flex-wrap gap-3 pt-2">
@@ -116,7 +116,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             />
           </h2>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+        <div className="mt-10 grid grid-cols-3 gap-4 md:mt-12 md:gap-8">
           <BigStat
             locale={locale}
             number={STATS.cases}
@@ -287,14 +287,14 @@ function BigStat({
 }) {
   return (
     <div className="space-y-3">
-      <DisplayNumber className="text-[clamp(4.5rem,12vw,9rem)] text-accent">
+      <DisplayNumber className="text-[clamp(2.5rem,12vw,9rem)] text-accent">
         {number}
       </DisplayNumber>
       <div className="space-y-1 border-t border-text/20 pt-2">
-        <p className="text-lg font-semibold text-text">
+        <p className="text-sm font-semibold leading-snug text-text md:text-lg">
           <T locale={locale} es={es.label} en={en.label} />
         </p>
-        <p className="font-mono text-xs uppercase tracking-widest text-muted">
+        <p className="hidden font-mono text-xs uppercase tracking-widest text-muted md:block">
           <T locale={locale} es={es.sub} en={en.sub} />
         </p>
       </div>
