@@ -242,6 +242,11 @@ export async function CaseDetailPage(
   const docsOther = docsAll.filter((d) => d.type !== "video");
   const docsInline = [...docsVideo, ...docsOther.slice(0, INLINE_NONVIDEO_MAX)];
   const docsRest = docsOther.slice(INLINE_NONVIDEO_MAX);
+  // Una foto del lugar o del tipo de avión («Contexto · …») no es un
+  // documento del caso: si es lo único que hay, el rótulo no puede decir
+  // «Documentos primarios» (204 fichas lo decían de una foto de contexto).
+  const isContextDoc = (d: { title?: string }) => /^(Contexto|Context)\b/.test(d.title ?? "");
+  const onlyContext = docsAll.length > 0 && docsAll.every(isContextDoc);
 
   const whatHappenedParas = c.whatHappened
     ? c.whatHappened.split("\n\n")
@@ -457,10 +462,11 @@ export async function CaseDetailPage(
       {c.documents && c.documents.length > 0 && (
         <section className="space-y-6">
           <p className="text-sm font-semibold text-accent">
-            <T locale={locale}
-              es="Documentos primarios"
-              en="Primary documents"
-            />
+            {onlyContext ? (
+              <T locale={locale} es="Imagen de contexto (no es un documento del caso)" en="Context image (not a document from the case)" />
+            ) : (
+              <T locale={locale} es="Documentos primarios" en="Primary documents" />
+            )}
           </p>
           {docsInline
             .map((doc, i) => (

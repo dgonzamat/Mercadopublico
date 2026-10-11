@@ -83,6 +83,9 @@ const checks = [
   ["evidencia con más de 8 ítems", (c) => (c.evidence ?? []).length > 8],
   ["porqué (classBasis) de más de 700 caracteres", (c) => (c.classBasis?.es ?? "").length > 700],
   ["resumen de más de 700 caracteres", (c) => (c.summary ?? "").length > 700],
+  // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
+  // un documento del caso: esto mide cuántas fichas no tienen ninguno.
+  ["sin documento del caso (solo foto de contexto)", (c) => { const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean); return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? "")); }],
 ];
 console.log("\nFichas · densidad e inconsistencias (de menor a mayor coste):");
 for (const [label, fn] of checks) {
