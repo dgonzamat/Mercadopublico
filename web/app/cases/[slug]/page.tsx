@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
-import { cases, getPattern, getEntityMorphology } from "@/lib/data";
+import { cases, getEntityMorphology } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, shortLabel } from "@/lib/meceClasses";
@@ -160,28 +160,34 @@ export async function CaseDetailPage(
     ? `${c.year_start}–${c.year_end}`
     : c.year_start.toString();
 
-  const casePatterns = c.patterns
-    .map((id) => getPattern(id))
-    .filter((p): p is NonNullable<typeof p> => p !== undefined);
-
   const caseEntityForms = (c.entityMorphology ?? [])
     .map((slug) => getEntityMorphology(slug))
     .filter((f): f is NonNullable<typeof f> => f !== undefined);
 
+  // Relacionados por lo que la ficha sí afirma: la misma explicación
+  // ordinaria (y el mismo objeto, si se precisa), el mismo país y una época
+  // cercana. Compartir un patrón genérico (8h, 8e) enlazaba Núremberg 1561
+  // con Campeche 2004; ya no cuenta.
+  const myKey = c.mundanoType ? prosaicKey(c.mundanoType, c.misidSubtype) : undefined;
   const similar = cases
-    .filter((x) => x.id !== c.id)
+    .filter((x) => x.id !== c.id && x.category !== "document")
     .map((x) => {
-      const sharedPatterns = x.patterns.filter((p) => c.patterns.includes(p));
+      const xKey = x.mundanoType ? prosaicKey(x.mundanoType, x.misidSubtype) : undefined;
+      const sameClass = Boolean(myKey && xKey === myKey && myKey !== "sin_propuesta");
+      const sameObject = sameClass && Boolean(c.objectDetail && x.objectDetail === c.objectDetail);
       const sameCountry = x.country === c.country;
+      const nearYear = Math.abs(x.year_start - c.year_start) <= 10;
       return {
         caseData: x,
-        sharedPatterns,
+        sameClass,
+        sameObject,
         sameCountry,
-        score: (sameCountry ? 1 : 0) + sharedPatterns.length * 2,
+        nearYear,
+        score: (sameObject ? 2 : 0) + (sameClass ? 2 : 0) + (sameCountry ? 2 : 0) + (nearYear ? 1 : 0),
       };
     })
-    .filter((x) => x.score > 0)
-    .sort((a, b) => b.score - a.score)
+    .filter((x) => x.score >= 3)
+    .sort((a, b) => b.score - a.score || Math.abs(a.caseData.year_start - c.year_start) - Math.abs(b.caseData.year_start - c.year_start))
     .slice(0, 4);
 
   // Backlinks: casos que CITAN a éste en su prosa (grafo inverso de [[slug]]).
@@ -753,33 +759,6 @@ export async function CaseDetailPage(
           </div>
         )}
 
-        {casePatterns.length > 0 && (
-          <div className="space-y-4">
-            <Eyebrow>
-              <T locale={locale}
-                es={`Patrones que exhibe (${casePatterns.length})`}
-                en={`Patterns it exhibits (${casePatterns.length})`}
-              />
-            </Eyebrow>
-            <div className="flex flex-wrap gap-2">
-              {casePatterns.map((p) => (
-                <LocaleLink
-                  key={p.id}
-                  href={`/patterns/${p.letter}`}
-                  className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
-                  style={{ borderColor: p.color }}
-                  title={p.description_en ?? p.description}
-                >
-                  <span className="font-mono">{p.id}</span>
-                  <span className="ml-2">
-                    <T locale={locale} es={p.name} en={p.name_en} />
-                  </span>
-                </LocaleLink>
-              ))}
-            </div>
-          </div>
-        )}
-
         {caseEntityForms.length > 0 && (
           <div className="space-y-4">
             <Eyebrow>
@@ -914,16 +893,11 @@ export async function CaseDetailPage(
             {similar.map((s) => {
               const reasonFor = (lang: "es" | "en") =>
                 [
-                  s.sameCountry
-                    ? lang === "es"
-                      ? "mismo país"
-                      : "same country"
-                    : null,
-                  s.sharedPatterns.length > 0
-                    ? lang === "es"
-                      ? `${s.sharedPatterns.length} ${s.sharedPatterns.length === 1 ? "patrón" : "patrones"}`
-                      : `${s.sharedPatterns.length} ${s.sharedPatterns.length === 1 ? "pattern" : "patterns"}`
-                    : null,
+                  s.sameObject
+                    ? (lang === "es" ? "mismo objeto" : "same object")
+                    : s.sameClass ? (lang === "es" ? "misma explicación" : "same explanation") : null,
+                  s.sameCountry ? (lang === "es" ? "mismo país" : "same country") : null,
+                  s.nearYear ? (lang === "es" ? "misma época" : "same period") : null,
                 ]
                   .filter(Boolean)
                   .join(" · ");

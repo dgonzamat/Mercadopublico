@@ -46,6 +46,11 @@
         "id": "k",
         "title": "El patrón k cita Siria y ninguna ficha de Siria lleva ese patrón: quitarlo o etiquetar el caso",
         "state": "esperando decisión"
+      },
+      {
+        "id": "P1",
+        "title": "Patrones: el etiquetado es irregular y no se explica en la ficha. ¿Retirar /patterns del sitio o rehacer la taxonomía?",
+        "state": "esperando decisión"
       }
     ]
   },
