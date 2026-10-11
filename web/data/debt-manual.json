@@ -3,11 +3,6 @@
     "group": "Rediseño",
     "items": [
       {
-        "id": "D3",
-        "title": "Menos etiquetas en mayúsculas",
-        "state": "pendiente"
-      },
-      {
         "id": "D4",
         "title": "Paginar /cases y /fuentes",
         "state": "pendiente"

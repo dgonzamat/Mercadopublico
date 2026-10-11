@@ -328,7 +328,7 @@ export async function CaseDetailPage(
             {String(c.num).padStart(2, "0")}
           </span>
           <div className="space-y-3">
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">
+            <p className="font-mono text-xs text-muted">
               {c.flag && <span aria-hidden className="mr-2 tracking-normal">{c.flag}</span>}
               {year}
               <span className="mx-2 text-text/30">·</span>
@@ -419,7 +419,7 @@ export async function CaseDetailPage(
           rel="noopener noreferrer"
           className="group block border-2 border-accent bg-panel p-6 no-underline transition-colors hover:bg-accent/5 md:p-8"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+          <p className="text-sm font-semibold text-accent">
             <T locale={locale} es="Documento primario · PDF" en="Primary source · PDF" />
           </p>
           <p className="mt-3 flex items-start gap-3 font-display text-xl font-medium leading-snug text-text md:text-2xl">
@@ -456,7 +456,7 @@ export async function CaseDetailPage(
           donde se calculan docsInline/docsRest. */}
       {c.documents && c.documents.length > 0 && (
         <section className="space-y-6">
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+          <p className="text-sm font-semibold text-accent">
             <T locale={locale}
               es="Documentos primarios"
               en="Primary documents"
@@ -482,7 +482,7 @@ export async function CaseDetailPage(
                   <p className="text-sm leading-snug text-text">
                     <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
                   </p>
-                  <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                  <p className="font-mono text-[11px] text-muted">
                     {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                     {doc.fallbackUrl && (
                       <>
@@ -508,7 +508,7 @@ export async function CaseDetailPage(
               — un índice de 39 entradas se recorre; 39 visores de 80vh no. */}
           {docsRest.length > 0 && (
             <details className="border border-border bg-panel/50 p-4">
-              <summary className="cursor-pointer font-mono text-xs uppercase tracking-widest text-text marker:text-accent">
+              <summary className="cursor-pointer text-sm font-semibold text-text marker:text-accent">
                 <T
                   locale={locale}
                   es={`Ver los otros ${docsRest.length} documentos`}
@@ -521,7 +521,7 @@ export async function CaseDetailPage(
                     <p className="text-sm leading-snug text-text">
                       <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
                     </p>
-                    <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                    <p className="font-mono text-[11px] text-muted">
                       {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                       {" · "}
                       <a
@@ -544,7 +544,7 @@ export async function CaseDetailPage(
       {/* EN-only disclaimer when no EN narrative available */}
       {hasNarrative && !c.whatHappened_en && locale === "en" && (
         <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+          <p className="text-sm font-semibold text-accent">
             Translation note
           </p>
           <p className="mt-2 text-sm text-text">
@@ -673,7 +673,7 @@ export async function CaseDetailPage(
                   en={c.primaryDocument.caption_en ?? c.primaryDocument.caption}
                 />
               </p>
-              <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+              <p className="font-mono text-[11px] text-muted">
                 {c.primaryDocument.source} · {licenseLabel(c.primaryDocument.license, locale)}
               </p>
             </figcaption>
@@ -797,7 +797,7 @@ export async function CaseDetailPage(
             <div className="flex flex-wrap gap-3">
               <LocaleLink
                 href="/cases"
-                className="inline-flex min-h-[44px] items-center border-2 border-text bg-bg px-4 py-2 font-mono text-sm uppercase tracking-wide text-text transition-colors hover:bg-text hover:text-bg"
+                className="inline-flex min-h-[44px] items-center border-2 border-text bg-bg px-4 py-2 font-mono text-sm text-text transition-colors hover:bg-text hover:text-bg"
               >
                 <T locale={locale}
                   es="← Ver todos los casos"
@@ -807,7 +807,7 @@ export async function CaseDetailPage(
               {similarExpandido && (
                 <LocaleLink
                   href={`/cases/${similarExpandido.caseData.id}`}
-                  className="inline-flex min-h-[44px] items-center border-2 border-accent bg-bg px-4 py-2 font-mono text-sm uppercase tracking-wide text-accent transition-colors hover:bg-accent hover:text-bg"
+                  className="inline-flex min-h-[44px] items-center border-2 border-accent bg-bg px-4 py-2 font-mono text-sm text-accent transition-colors hover:bg-accent hover:text-bg"
                 >
                   <T locale={locale}
                     es={`Caso similar expandido →`}
@@ -907,7 +907,7 @@ export async function CaseDetailPage(
                   href={`/cases/${s.caseData.id}`}
                   className="group flex flex-col gap-2 bg-bg p-5 hover:bg-text hover:text-bg"
                 >
-                  <p className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
+                  <p className="font-mono text-[11px] text-muted group-hover:text-bg/60">
                     <T locale={locale} es={reasonFor("es")} en={reasonFor("en")} />
                   </p>
                   <p className="font-display text-xl font-medium leading-tight text-text group-hover:text-bg">
@@ -968,7 +968,7 @@ export async function CaseDetailPage(
             href={`/cases/${prev.id}`}
             className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
           >
-            <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
+            <span className="font-mono text-[11px] text-muted group-hover:text-bg/60">
               <T locale={locale}
                 es={`← Caso anterior · #${prev.num}`}
                 en={`← Previous case · #${prev.num}`}
@@ -986,7 +986,7 @@ export async function CaseDetailPage(
             href={`/cases/${next.id}`}
             className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
           >
-            <span className="font-mono text-[11px] uppercase tracking-widest text-muted group-hover:text-bg/60">
+            <span className="font-mono text-[11px] text-muted group-hover:text-bg/60">
               <T locale={locale}
                 es={`Siguiente caso · #${next.num} →`}
                 en={`Next case · #${next.num} →`}
