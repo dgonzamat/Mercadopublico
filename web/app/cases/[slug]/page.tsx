@@ -355,12 +355,24 @@ export async function CaseDetailPage(
           </div>
         </div>
 
-        <p className={summaryClass}>
-          <T locale={locale}
-            es={linkCaseRefs(c.summary, NAME_BY_SLUG)}
-            en={linkCaseRefs(c.summary_en ?? c.summary, NAME_BY_SLUG)}
-          />
-        </p>
+        {/* Resúmenes de hasta 1.500 caracteres en letra grande empujaban todo
+            fuera de la pantalla: se muestra la entrada y el resto se pliega. */}
+        {(() => {
+          const sum = splitLead(locale === "es" ? c.summary : c.summary_en ?? c.summary, 420);
+          return (
+            <div className="space-y-3">
+              <p className={summaryClass}>{linkCaseRefs(sum.lead, NAME_BY_SLUG)}</p>
+              {sum.rest && (
+                <details className="group">
+                  <summary className="cursor-pointer text-sm text-accent">
+                    <T locale={locale} es="Seguir leyendo el resumen" en="Read the rest of the summary" />
+                  </summary>
+                  <p className="mt-2 text-lg leading-relaxed text-text">{linkCaseRefs(sum.rest, NAME_BY_SLUG)}</p>
+                </details>
+              )}
+            </div>
+          );
+        })()}
 
         {/* Una sola línea de cifras: año, lugar y país ya están sobre el título,
             y la categoría solo se dice cuando no es un incidente. El reparto
@@ -693,8 +705,10 @@ export async function CaseDetailPage(
                 <Eyebrow>
                   <T locale={locale} es="Evidencia documentada" en="Documented evidence" />
                 </Eyebrow>
-                <ol className="space-y-3">
-                  {c.evidence!.map((item, i) => (
+                {(() => {
+                  // Más de 6 ítems (hasta 15 en algunas fichas) se leían como un
+                  // muro: los 5 primeros a la vista, el resto plegado.
+                  const renderItem = (item: string, i: number) => (
                     <li
                       key={i}
                       className="grid grid-cols-[2rem_1fr] gap-3 text-base leading-relaxed text-text"
@@ -712,8 +726,24 @@ export async function CaseDetailPage(
                         />
                       </span>
                     </li>
-                  ))}
-                </ol>
+                  );
+                  const ev = c.evidence!;
+                  const head = ev.length > 6 ? ev.slice(0, 5) : ev;
+                  const tail = ev.length > 6 ? ev.slice(5) : [];
+                  return (
+                    <>
+                      <ol className="space-y-3">{head.map((item, i) => renderItem(item, i))}</ol>
+                      {tail.length > 0 && (
+                        <details className="mt-3">
+                          <summary className="cursor-pointer text-sm text-accent">
+                            <T locale={locale} es={`Ver ${tail.length} evidencias más`} en={`Show ${tail.length} more items`} />
+                          </summary>
+                          <ol className="mt-3 space-y-3">{tail.map((item, k) => renderItem(item, k + 5))}</ol>
+                        </details>
+                      )}
+                    </>
+                  );
+                })()}
               </div>
             )}
 
@@ -1044,7 +1074,22 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
           <span className="font-semibold">
             <T locale={locale} es={why.es} en={why.en} />
           </span>
-          <T locale={locale} es={es!.text} en={en!.text} />{" "}
+          {(() => {
+            const w = splitLead((locale === "es" ? es! : en!).text, 380);
+            return (
+              <>
+                {w.lead}{" "}
+                {w.rest && (
+                  <details className="mt-1 inline">
+                    <summary className="inline cursor-pointer text-accent">
+                      <T locale={locale} es="Leer el porqué completo" en="Read the full reasoning" />
+                    </summary>
+                    <span className="mt-1 block">{w.rest}</span>
+                  </details>
+                )}{" "}
+              </>
+            );
+          })()}
           <span className="text-muted">
             (
             {b.url ? (
@@ -1085,4 +1130,16 @@ function splitOriginal(t: string): { text: string; original?: string } {
   const m = t.match(/\s*(?:Original en [a-záéíóú]+|[A-Z][a-z]+ original):\s*(«[^»]*»(?:[;,]\s*«[^»]*»)*)\.?/);
   if (!m || m.index === undefined) return { text: t };
   return { text: (t.slice(0, m.index) + " " + t.slice(m.index + m[0].length)).replace(/\s+/g, " ").trim(), original: m[1] };
+}
+
+/** Corta un texto largo en una entrada de frases completas (hasta `max`
+ *  caracteres) y el resto, que la ficha pliega. Si no hay un punto razonable
+ *  donde cortar, o lo que sobra es corto, devuelve el texto entero. */
+function splitLead(t: string, max: number): { lead: string; rest?: string } {
+  if (t.length <= max + 200) return { lead: t };
+  const re = /[.!?»"](?=\s+[A-ZÁÉÍÓÚÑ«"(¿¡])/g;
+  let cut = -1;
+  for (let m; (m = re.exec(t)) && m.index < max; ) cut = m.index + 1;
+  if (cut < 120) return { lead: t };
+  return { lead: t.slice(0, cut), rest: t.slice(cut).trim() };
 }
