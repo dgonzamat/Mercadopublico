@@ -1,5 +1,15 @@
 [
   {
+    "group": "Contenido",
+    "items": [
+      {
+        "id": "V1",
+        "title": "Visor: fotos de contexto (el lugar, el pueblo) rotuladas como «Documentos primarios» (Marfa); revisar en todas las fichas y separar «Imágenes del lugar» de los documentos del caso",
+        "state": "pendiente"
+      }
+    ]
+  },
+  {
     "group": "Rediseño",
     "items": [
       {
