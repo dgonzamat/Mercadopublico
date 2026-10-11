@@ -47,7 +47,7 @@ export default function ContactPage() {
         href={`mailto:${CONTACT_EMAIL}`}
         className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span className="font-mono text-[11px] uppercase tracking-widest text-muted">
+        <span className="font-mono text-[11px] text-muted">
           <T es="Email" en="Email" />
         </span>
         <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
@@ -67,7 +67,7 @@ export default function ContactPage() {
         rel="me noopener noreferrer"
         className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span className="font-mono text-[11px] uppercase tracking-widest text-muted">
+        <span className="font-mono text-[11px] text-muted">
           Instagram
         </span>
         <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
@@ -87,7 +87,7 @@ export default function ContactPage() {
         rel="me noopener noreferrer"
         className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span className="font-mono text-[11px] uppercase tracking-widest text-muted">
+        <span className="font-mono text-[11px] text-muted">
           Pinterest
         </span>
         <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
@@ -101,10 +101,10 @@ export default function ContactPage() {
         </span>
       </a>
 
-      <p className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted">
+      <p className="border-t border-text/15 pt-6 font-mono text-xs text-muted">
         <T
-          es="No se recopilan datos de quien escribe — no hay formulario, ni tracking, ni base de datos."
-          en="No data is collected from senders — no form, no tracking, no database."
+          es="No se recopilan datos de quien escribe: no hay formulario, ni seguimiento, ni base de datos."
+          en="No data is collected from senders: no form, no tracking, no database."
         />
       </p>
     </div>

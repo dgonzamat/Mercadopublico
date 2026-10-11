@@ -144,7 +144,7 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
                     />
                   </div>
                 </div>
-                <p className="col-span-2 font-mono text-xs uppercase tracking-widest text-muted md:col-span-1 md:text-right">
+                <p className="col-span-2 font-mono text-xs text-muted md:col-span-1 md:text-right">
                   {e.range ?? `${e.start}–${String(e.end).slice(-2)}`}
                 </p>
               </div>
@@ -175,7 +175,7 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
                   <p className="font-display text-lg leading-tight text-text md:text-xl">
                     <T es={p.name} en={p.name_en} locale={locale} />
                   </p>
-                  <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  <p className="font-mono text-xs text-muted">
                     <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} locale={locale} />
                   </p>
                 </div>
@@ -183,7 +183,7 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
                   <span className="font-display text-3xl tabular-nums leading-none text-accent md:text-4xl">
                     {p.count}
                   </span>
-                  <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  <p className="font-mono text-xs text-muted">
                     <T es="casos" en="cases" locale={locale} />
                   </p>
                 </div>
@@ -250,7 +250,7 @@ function TierStat({
         <p className="font-display text-xl font-medium text-text">
           <T es={es} en={en} locale={locale} />
         </p>
-        <p className="font-mono text-xs uppercase tracking-widest text-muted tabular-nums">
+        <p className="font-mono text-xs text-muted tabular-nums">
           <T es={`${pct.toFixed(0)}% de los casos`} en={`${pct.toFixed(0)}% of cases`} locale={locale} />
         </p>
       </div>

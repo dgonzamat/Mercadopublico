@@ -148,7 +148,7 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
             data-group={section.code}
             className="scroll-mt-20"
           >
-            <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+            <h2 className="font-mono text-xs text-muted">
               <T
                 es={`Sección ${section.code} · ${section.es}`}
                 en={`Section ${section.code} · ${section.en}`}
@@ -215,7 +215,7 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
               type="button"
               data-toggle={section.code}
               hidden
-              className="mt-3 inline-flex min-h-[44px] items-center gap-2 border border-border bg-panel px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-muted transition hover:border-accent/50 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="mt-3 inline-flex min-h-[44px] items-center gap-2 border border-border bg-panel px-3 py-1.5 font-mono text-xs text-muted transition hover:border-accent/50 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <span data-when="more">
                 <T es="Ver todos" en="Show all" locale={locale} />

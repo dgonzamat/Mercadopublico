@@ -25,7 +25,7 @@ export function ContractorsShowcase({ locale }: { locale: "es" | "en" }) {
 
   return (
     <section className="space-y-3">
-      <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+      <h2 className="font-mono text-xs text-muted">
         <T
           es={`Contratistas del fenómeno (${contractors.length})`}
           en={`Contractors of the phenomenon (${contractors.length})`}
@@ -51,7 +51,7 @@ export function ContractorsShowcase({ locale }: { locale: "es" | "en" }) {
               <div className="flex items-baseline gap-2">
                 <h3 className="text-sm font-medium text-text">{c.name}</h3>
               </div>
-              <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
+              <p className="mt-1 font-mono text-[11px] text-muted">
                 <T es={c.country_name} en={countryEn(c.country_name)} locale={locale} /> ·{" "}
                 {c.year_start}
               </p>

@@ -91,7 +91,7 @@ export function EpistemicBadge({
   return (
     <span
       className={cn(
-        "inline-flex shrink-0 items-center gap-1 border px-2 py-0.5 font-mono text-xs uppercase tracking-widest",
+        "inline-flex shrink-0 items-center gap-1 border px-2 py-0.5 text-xs",
         m.cls,
       )}
       title={compact ? m.es : undefined}

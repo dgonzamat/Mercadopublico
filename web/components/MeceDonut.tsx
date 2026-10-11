@@ -101,7 +101,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
             <div className="rounded-md border border-border bg-panel/95 px-3 py-2 shadow-lg backdrop-blur">
               <div className="flex items-center gap-2">
                 <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: activeRow.color }} aria-hidden />
-                <span className="font-mono text-xs uppercase tracking-wider text-text">
+                <span className="font-mono text-xs text-text">
                   <T es={activeRow.label} en={activeRow.labelEn} locale={locale} />
                 </span>
               </div>
@@ -199,14 +199,14 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
               <span className="font-mono text-3xl font-semibold tabular-nums transition-colors" style={{ color: activeRow.color }}>
                 {shares[activeRow.key]}%
               </span>
-              <span className={`mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider ${muted}`}>
+              <span className={`mt-1 font-mono text-[10px] leading-tight ${muted}`}>
                 <T es={activeRow.label} en={activeRow.labelEn} locale={locale} />
               </span>
             </>
           ) : (
             <>
               <span className={`font-mono text-4xl font-semibold tabular-nums ${txt}`}>{N}</span>
-              <span className={`mt-1 font-mono text-[10px] uppercase tracking-widest ${muted}`}>
+              <span className={`mt-1 font-mono text-[10px] ${muted}`}>
                 <T es="casos" en="cases" locale={locale} />
               </span>
             </>
@@ -225,7 +225,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
               <div className="flex items-baseline justify-between gap-3">
                 <span className="flex min-w-0 items-center gap-2">
                   <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: row.color }} aria-hidden />
-                  <span className={`uppercase tracking-wider ${i === 0 || isActive ? `font-semibold ${txt}` : txt}`}>
+                  <span className={`${i === 0 || isActive ? `font-semibold ${txt}` : txt}`}>
                     <T es={row.label} en={row.labelEn} locale={locale} />
                   </span>
                 </span>

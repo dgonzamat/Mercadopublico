@@ -159,7 +159,7 @@ export default function CalidadPage() {
           <h2 className="font-display text-2xl font-medium">
             <T es="Completitud editorial" en="Editorial completeness" />
           </h2>
-          <span className="font-mono text-xs uppercase tracking-widest text-muted">
+          <span className="font-mono text-xs text-muted">
             <T es="% de casos que cumplen" en="% of cases meeting" />
           </span>
         </div>
@@ -203,7 +203,7 @@ export default function CalidadPage() {
         ].map((t, i) => (
           <div key={i} className={`border border-border border-l-4 ${t.cls} bg-panel p-4`}>
             <div className="font-display text-3xl font-medium leading-none tabular-nums">{t.n}</div>
-            <div className="mt-2 font-mono text-[10px] uppercase tracking-widest text-muted">
+            <div className="mt-2 font-mono text-[10px] text-muted">
               <T es={t.es} en={t.en} />
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function CalidadPage() {
           <h2 className="font-display text-2xl font-medium">
             <T es="Evidencia visual por tier" en="Visual evidence by tier" />
           </h2>
-          <span className="font-mono text-xs uppercase tracking-widest text-muted">E21</span>
+          <span className="font-mono text-xs text-muted">E21</span>
         </div>
         <div className="space-y-3">
           {visualByTier.map((v) => (
@@ -246,7 +246,7 @@ export default function CalidadPage() {
           <h2 className="font-display text-2xl font-medium">
             <T es="Reparto de explicaciones del archivo" en="How the archive splits among explanations" />
           </h2>
-          <span className="font-mono text-xs uppercase tracking-widest text-muted">
+          <span className="font-mono text-xs text-muted">
             <T es="nº esperado de casos" en="expected # of cases" />
           </span>
         </div>

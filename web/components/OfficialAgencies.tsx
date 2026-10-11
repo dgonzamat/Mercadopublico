@@ -26,7 +26,7 @@ export function OfficialAgencies({ locale }: { locale: "es" | "en" }) {
 
   return (
     <section className="space-y-3">
-      <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+      <h2 className="font-mono text-xs text-muted">
         <T
           es={`Agencias oficiales del fenómeno (${agencies.length})`}
           en={`Official agencies for the phenomenon (${agencies.length})`}
@@ -52,7 +52,7 @@ export function OfficialAgencies({ locale }: { locale: "es" | "en" }) {
               <div className="flex items-baseline gap-2">
                 <h3 className="text-sm font-medium text-text">{a.name}</h3>
               </div>
-              <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
+              <p className="mt-1 font-mono text-[11px] text-muted">
                 <T es={a.country_name} en={countryEn(a.country_name)} locale={locale} /> ·{" "}
                 {a.year_start}
               </p>

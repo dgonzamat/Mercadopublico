@@ -60,9 +60,9 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "psicosocial", es: "Causa psicológica, médica o social", en: "Psychological, medical or social cause" },
   { key: "sin_propuesta", es: "Causa ordinaria probable, sin identificar", en: "Likely ordinary, unidentified" },
   { key: "folclore", es: "Relato folclórico o literario", en: "Folklore or literary account" },
-  { key: "humana_clasificada", es: "Tecnología humana", en: "Human tech" },
-  { key: "adversaria", es: "Tecnología adversaria", en: "Adversary tech" },
-  { key: "nohumano", es: "No-humano", en: "Non-human" },
+  { key: "humana_clasificada", es: "Tecnología humana clasificada", en: "Classified human technology" },
+  { key: "adversaria", es: "Tecnología adversaria", en: "Adversary technology" },
+  { key: "nohumano", es: "No humano", en: "Non-human" },
   { key: "indet", es: "Indeterminado", en: "Indeterminate" },
 ];
 
@@ -203,7 +203,7 @@ export function CasesFilter({
         role="group"
         aria-label={locale === "es" ? "Filtrar casos" : "Filter cases"}
       >
-        <span className="mr-1 font-mono text-xs uppercase tracking-widest text-muted">
+        <span className="mr-1 font-mono text-xs text-muted">
           <T es="Filtrar" en="Filter" locale={locale} />
         </span>
         <FacetSelect
@@ -301,7 +301,7 @@ export function CasesFilter({
           <button
             type="button"
             onClick={clearAll}
-            className="min-h-[36px] font-mono text-xs uppercase tracking-widest text-muted underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="min-h-[36px] font-mono text-xs text-muted underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <T es="Limpiar todo" en="Clear all" locale={locale} />
           </button>
@@ -323,7 +323,7 @@ export function CasesFilter({
           <button
             type="button"
             onClick={clearAll}
-            className="mt-4 inline-flex min-h-[44px] items-center gap-2 border-2 border-text px-5 font-mono text-xs uppercase tracking-widest text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="mt-4 inline-flex min-h-[44px] items-center gap-2 border-2 border-text px-5 font-mono text-xs text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <T es="Limpiar los filtros" en="Clear the filters" locale={locale} />
           </button>

@@ -62,7 +62,7 @@ export default function FuentesPage() {
           <a
             key={g.category}
             href={`#${g.category}`}
-            className="flex items-baseline justify-between gap-3 py-1 font-mono text-xs uppercase tracking-widest text-muted hover:text-accent"
+            className="flex items-baseline justify-between gap-3 py-1 font-mono text-xs text-muted hover:text-accent"
           >
             <span>
               <T

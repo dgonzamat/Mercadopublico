@@ -105,8 +105,8 @@ export async function PatternDetailPage(
           {patternCases.length === 0 ? (
             <p className="text-muted">
               <T
-                es="Patrón estructural/meta — sin casos individuales en este corpus."
-                en="Structural/meta pattern — no individual cases in this corpus."
+                es="Patrón estructural, sin casos individuales asociados."
+                en="Structural pattern, with no individual cases attached."
                 locale={locale}
               />
             </p>
