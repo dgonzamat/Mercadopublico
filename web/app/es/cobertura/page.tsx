@@ -1,4 +1,4 @@
-import CoberturaPage from "@/app/cobertura/page";
+import { CoberturaView } from "@/app/cobertura/page";
 import { STATS } from "@/lib/siteStats";
 import { esMeta } from "@/lib/seo";
 
@@ -8,4 +8,6 @@ export const metadata = esMeta({
   enPath: "/cobertura/",
 });
 
-export default CoberturaPage;
+export default function CoberturaPageEs() {
+  return <CoberturaView locale="es" />;
+}

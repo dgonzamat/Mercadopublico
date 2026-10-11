@@ -35,17 +35,6 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
       <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
         <HeroRadar contacts={STATS.cases} />
         <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
-          {/* readout de instrumento — alineado a la columna de contenido (mismo
-              eje que el header) y bajo el header fijo. Cableado a STATS; punto
-              cuadrado para no reintroducir rounded. */}
-          <div className="pointer-events-none absolute right-4 top-[88px] hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bg/55 md:flex">
-            <span className="h-1.5 w-1.5 animate-pulse bg-accent-bright" />
-            <T
-              locale={locale}
-              es={`Barrido activo · ${STATS.cases} contactos`}
-              en={`Sweep active · ${STATS.cases} contacts`}
-            />
-          </div>
           <div className="max-w-2xl space-y-8">
             <Eyebrow className="!text-bg/55">
               <T
@@ -157,11 +146,11 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             number={STATS.countries}
             es={{
               label: "Países con registros",
-              sub: "Cada continente menos Antártida — no es fenómeno gringo",
+              sub: "Todos los continentes salvo la Antártida",
             }}
             en={{
               label: "Countries with records",
-              sub: "Every continent except Antarctica — not a US-only phenomenon",
+              sub: "Every continent except Antarctica",
             }}
           />
         </div>
@@ -180,13 +169,6 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
       <section className="full-bleed bg-text py-32 text-bg md:py-48">
         <div className="mx-auto max-w-6xl space-y-16 px-4">
           <div className="space-y-6">
-            <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-              <T
-                locale={locale}
-                es={`La respuesta del archivo, en una frase y en números`}
-                en={`What the archive says, in one sentence and in numbers`}
-              />
-            </p>
             <h2 className="font-display text-3xl font-medium leading-tight text-bg md:text-5xl lg:text-6xl">
               <T
                 locale={locale}
@@ -196,9 +178,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                     <span className="text-accent-bright italic">
                       no son una sola cosa
                     </span>
-                    . Son varias cosas distintas mezcladas bajo la misma
-                    etiqueta — y eso es justamente lo que hace difícil
-                    explicarlos.
+                    : son varias, mezcladas bajo la misma etiqueta.
                   </>
                 }
                 en={
@@ -207,20 +187,11 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                     <span className="text-accent-bright italic">
                       are not one single thing
                     </span>
-                    . They are several distinct things mixed under the same
-                    label — and that&apos;s exactly what makes them hard to
-                    explain.
+                    : they are several, mixed under the same label.
                   </>
                 }
               />
             </h2>
-            <p className="max-w-prose text-lg leading-relaxed text-bg/80">
-              <T
-                locale={locale}
-                es={`En buena parte de los ${STATS.cases} casos la explicación más probable es ordinaria: aviones, globos, astros, satélites o fenómenos naturales. Otra parte sigue sin explicación con lo que se sabe hoy. Una minoría apunta a tecnología humana secreta —como lo fueron el U-2 en los cincuenta y el F-117 en los ochenta— o de otro Estado, y otra minoría a entidades no humanas. El gráfico de abajo lo reparte caso a caso.`}
-                en={`In a good share of the ${STATS.cases} cases the most likely explanation is ordinary: aircraft, balloons, celestial bodies, satellites or natural phenomena. Another share remains unexplained with what is known today. A minority points to secret human technology —as the U-2 was in the 1950s and the F-117 in the 1980s— or another state's, and another minority to non-human entities. The chart below splits it case by case.`}
-              />
-            </p>
           </div>
 
           {/* PB-1 · el foco del sitio: la respuesta en números, no solo detrás de un CTA */}
@@ -277,18 +248,18 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    <strong className="text-accent-bright">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent-bright">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent-bright">2004</strong> Nimitz — primer video oficial ATFLIR · <strong className="text-accent-bright">2026</strong> PURSUE — primera divulgación presidencial. Cada pico es un momento donde una institución no pudo seguir negando.
+                    <strong className="text-accent-bright">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent-bright">1973</strong> oleada de otoño en EE. UU. (Pascagoula, Coyne) · <strong className="text-accent-bright">2004</strong> Nimitz — vídeo ATFLIR de un F/A-18 · <strong className="text-accent-bright">2026</strong> PURSUE — primera divulgación presidencial.
                   </>
                 }
                 en={
                   <>
-                    <strong className="text-accent-bright">1947</strong> Roswell — USAF creates Project Sign · <strong className="text-accent-bright">1973</strong> Pascagoula — Senate hearings · <strong className="text-accent-bright">2004</strong> Nimitz — first official ATFLIR video · <strong className="text-accent-bright">2026</strong> PURSUE — first presidential disclosure. Each peak is a moment when an institution could no longer keep denying.
+                    <strong className="text-accent-bright">1947</strong> Roswell — USAF creates Project Sign · <strong className="text-accent-bright">1973</strong> US autumn wave (Pascagoula, Coyne) · <strong className="text-accent-bright">2004</strong> Nimitz — F/A-18 ATFLIR video · <strong className="text-accent-bright">2026</strong> PURSUE — first presidential disclosure.
                   </>
                 }
               />
             </p>
           </div>
-          <TimelineByYear />
+          <TimelineByYear locale={locale} />
           <Cta href="/cases" variant="secondary" onDark>
             <T
               locale={locale}

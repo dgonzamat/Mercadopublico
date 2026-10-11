@@ -1,4 +1,5 @@
 import { cases } from "@/lib/data";
+import { T } from "@/components/T";
 
 /**
  * 79-year timeline of the corpus. Each year is a vertical line; height
@@ -24,7 +25,7 @@ const PEAKS: Array<{ year: number; label: string }> = [
 // Solo incidentes: los casos-documento son evidencia, no sucesos.
 const incidents = cases.filter((c) => c.category !== "document");
 
-export function TimelineByYear() {
+export function TimelineByYear({ locale }: { locale: "es" | "en" }) {
   const YEAR_MIN = 1947;
   const YEAR_MAX = 2026;
   const span = YEAR_MAX - YEAR_MIN;
@@ -45,10 +46,10 @@ export function TimelineByYear() {
     <figure className="space-y-6">
       <figcaption className="grid grid-cols-2 items-end gap-4">
         <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-          Corpus por año · {YEAR_MIN}–{YEAR_MAX}
+          <T es="Casos por año" en="Cases per year" locale={locale} /> · {YEAR_MIN}–{YEAR_MAX}
         </p>
         <p className="text-right font-mono text-xs uppercase tracking-widest text-bg/60">
-          {incidents.length} casos · {span} años
+          {incidents.length} <T es="casos" en="cases" locale={locale} /> · {span} <T es="años" en="years" locale={locale} />
         </p>
       </figcaption>
 
@@ -86,7 +87,7 @@ export function TimelineByYear() {
           preserveAspectRatio="none"
           className="h-48 w-full md:h-64"
           role="img"
-          aria-label={`Distribución temporal de ${incidents.length} casos UAP entre ${YEAR_MIN} y ${YEAR_MAX}. Picos en 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) y 2026 (PURSUE).`}
+          aria-label={locale === "es" ? `Distribución temporal de ${incidents.length} casos UAP entre ${YEAR_MIN} y ${YEAR_MAX}. Picos en 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) y 2026 (PURSUE).` : `Timeline of ${incidents.length} UAP cases between ${YEAR_MIN} and ${YEAR_MAX}. Peaks in 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) and 2026 (PURSUE).`}
         >
           {Array.from({ length: span + 1 }, (_, i) => {
             const year = YEAR_MIN + i;

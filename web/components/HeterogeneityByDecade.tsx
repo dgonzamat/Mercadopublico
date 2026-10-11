@@ -1,6 +1,4 @@
 import { meceByDecade } from "@/lib/meceModel";
-import { T } from "@/components/T";
-import { Caption } from "@/lib/typography";
 
 /**
  * Heterogeneidad del corpus a lo largo del tiempo: por década, 1 − el share
@@ -101,13 +99,6 @@ export function HeterogeneityByDecade({ locale }: { locale: "es" | "en" }) {
         ))}
       </svg>
 
-      <Caption>
-        <T
-          es="Pasa el cursor por cada punto para ver cuántos casos tiene la década."
-          en="Hover each point to see how many cases the decade has."
-          locale={locale}
-        />
-      </Caption>
     </figure>
   );
 }

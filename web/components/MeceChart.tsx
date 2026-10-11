@@ -219,7 +219,7 @@ export function CasePosterior({
         <span style={{ color: m.color }} className="font-semibold">
           <T es={withDetail(m).es} en={withDetail(m).en} locale={locale} />
         </span>{" "}
-        {partes[0]}% · <T es="suma 100%" en="sums to 100%" locale={locale} />
+        {partes[0]}%
       </p>
     </div>
   );

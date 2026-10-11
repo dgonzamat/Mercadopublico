@@ -8,7 +8,6 @@ import { HeterogeneityByDecade } from "@/components/HeterogeneityByDecade";
 import { corpusPosteriors, expandedHypotheses, modalHypothesis, PROSAIC_CLASSES } from "@/lib/meceModel";
 import { DETAIL_UNSPECIFIED, OBJECT_DETAILS, type ProsaicKey } from "@/lib/meceClasses";
 import { cases } from "@/lib/data";
-import { AnalyzerCta } from "@/components/AnalyzerCta";
 
 export const metadata = {
   ...pageMeta({
@@ -42,56 +41,56 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "A space object: rocket or missile, satellite or reentry —launches, stages and debris reentering, satellite trains.",
   },
   luces_tierra: {
-    es: "Algo en tierra: un faro o reflector, una bengala o fuegos artificiales, los faros de un vehículo, la llama de una plataforma o una persona. La fuente estaba en el suelo o cerca de él, y la distancia, el relieve o el miedo la hicieron parecer otra cosa.",
-    en: "Something on the ground: a beacon or searchlight, a flare or fireworks, a vehicle's headlights, a platform's gas flare or a person. The source was on or near the ground, and distance, terrain or fear made it look like something else.",
+    es: "Un faro, una bengala, un vehículo o una llama en tierra que la distancia hizo parecer otra cosa.",
+    en: "A beacon, flare, vehicle or flame on the ground that distance made look like something else.",
   },
   terrestre_otros: {
-    es: "Un objeto convencional no precisado: el análisis apunta a algo ordinario, como un reflejo o un error de percepción, pero la evidencia no dice de qué clase de objeto se trata.",
-    en: "A conventional object, not pinned down: the analysis points to something ordinary, such as a reflection or a perceptual error, but the evidence does not say what class of object it was.",
+    es: "El análisis apunta a algo ordinario, como un reflejo o un error de percepción, pero la evidencia no dice de qué objeto se trata.",
+    en: "The analysis points to something ordinary, such as a reflection or a perceptual error, but the evidence does not say what object it was.",
   },
   natural: {
-    es: "Fenómeno natural genuino poco entendido: atmosférico (plasma, rayo en bola, nubes) u óptico (espejismo, refracción). Física real, no una nave ni un engaño. Los meteoros y bólidos se cuentan como objeto astronómico.",
-    en: "A genuine, poorly-understood natural phenomenon: atmospheric (plasma, ball lightning, clouds) or optical (mirage, refraction). Real physics, not a craft or a hoax. Meteors and fireballs are counted as astronomical objects.",
+    es: "Atmosférico (plasma, rayo en bola, nubes) u óptico (espejismo, refracción). Los meteoros y bólidos se cuentan como objeto astronómico.",
+    en: "Atmospheric (plasma, ball lightning, clouds) or optical (mirage, refraction). Meteors and fireballs are counted as astronomical objects.",
   },
   fraude: {
-    es: "Posible engaño deliberado: montaje, fabricación o hoax.",
-    en: "Possible deliberate deception: staging, fabrication or hoax.",
+    es: "Montaje o fabricación deliberada.",
+    en: "Deliberate staging or fabrication.",
   },
   animal: {
-    es: "Un animal: aves que reflejan la luz en vuelo o insectos cerca de la lente, que la cámara convierte en objetos rápidos y lejanos.",
-    en: "An animal: birds catching the light in flight or insects near the lens, which the camera turns into fast, distant objects.",
+    es: "Aves que reflejan la luz o insectos cerca de la lente, que la cámara convierte en objetos rápidos y lejanos.",
+    en: "Birds catching the light or insects near the lens, which the camera turns into fast, distant objects.",
   },
   instrumento: {
-    es: "Fallo de instrumento: lo anómalo lo produjo el equipo, no el cielo — un defecto de película o de revelado, un artefacto de sensor, un eco falso de radar o una avería que se atribuyó al objeto.",
-    en: "Instrument artifact: the anomaly came from the equipment, not the sky — a film or processing defect, a sensor artifact, a false radar echo or a failure that was blamed on the object.",
+    es: "Un defecto de película, un artefacto de sensor, un eco falso de radar o una avería atribuida al objeto.",
+    en: "A film defect, a sensor artifact, a false radar echo or a failure blamed on the object.",
   },
   psicosocial: {
-    es: "Causa psicológica, médica o social: contagio colectivo, sugestión, parálisis del sueño o una condición médica (una crisis epiléptica, por ejemplo).",
-    en: "Psychological, medical or social cause: collective contagion, suggestion, sleep paralysis or a medical condition (an epileptic seizure, for instance).",
+    es: "Contagio colectivo, sugestión, parálisis del sueño o una condición médica.",
+    en: "Collective contagion, suggestion, sleep paralysis or a medical condition.",
   },
   sin_propuesta: {
-    es: "Causa ordinaria probable, sin identificar: ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario.",
-    en: "Likely ordinary, unidentified: no source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary.",
+    es: "Ninguna fuente propone una causa concreta, pero los casos parecidos que sí se investigaron resultaron casi siempre algo ordinario.",
+    en: "No source proposes a specific cause, but similar cases that were investigated almost always turned out to be ordinary.",
   },
   folclore: {
-    es: "Relato folclórico o literario: leyendas y relatos de época sin testigo verificable.",
-    en: "Folklore or literary account: legends and period tales with no verifiable witness.",
+    es: "Leyendas y relatos de época sin testigo verificable.",
+    en: "Legends and period tales with no verifiable witness.",
   },
   humana_clasificada: {
-    es: "Programa secreto propio o aliado (el encubrimiento es intrínseco). Antigua hipótesis «programas clasificados».",
-    en: "A secret own or allied program (cover-up is intrinsic). Former 'classified programs' hypothesis.",
+    es: "Un programa secreto propio o aliado.",
+    en: "A secret own or allied program.",
   },
   adversaria: {
-    es: "Tecnología de vigilancia de otro Estado. Antigua hipótesis «tecnología adversaria».",
-    en: "Another state's surveillance technology. Former 'adversary technology' hypothesis.",
+    es: "Tecnología de vigilancia de otro Estado.",
+    en: "Another state's surveillance technology.",
   },
   nohumano: {
-    es: "Inteligencia o tecnología no humana, tanto si un Estado la controla u oculta (ingeniería inversa, un tratado) como si nadie la controla (la idea de Vallée, lo interdimensional).",
-    en: "Non-human intelligence or technology, whether a state controls or hides it (reverse-engineering, a treaty) or no one controls it (Vallée's idea, the interdimensional).",
+    es: "Inteligencia o tecnología no humana, la controle u oculte un Estado o no la controle nadie.",
+    en: "Non-human intelligence or technology, whether a state controls or hides it or no one does.",
   },
   indet: {
-    es: "Indeterminado: la evidencia no inclina hacia ninguna explicación. No es una explicación, sino la falta de una.",
-    en: "Indeterminate: the evidence leans toward no explanation. It is not an explanation but the lack of one.",
+    es: "La evidencia no inclina hacia ninguna explicación.",
+    en: "The evidence leans toward no explanation.",
   },
 };
 
@@ -143,7 +142,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
       <Eyebrow>
-        <T es="Probabilidades · modelo comparable" en="Probabilities · comparable model" locale={locale} />
+        <T es="Probabilidades" en="Probabilities" locale={locale} />
       </Eyebrow>
       <H1>
         <T es="Qué explica cada caso" en="What explains each case" locale={locale} />
@@ -158,7 +157,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
 
       <section className="mt-12">
         <H2>
-          <T es="Las seis explicaciones" en="The six explanations" locale={locale} />
+          <T es="Reparto de los incidentes" en="How the incidents split" locale={locale} />
         </H2>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <MecePartition
@@ -177,17 +176,10 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
         <H2>
           <T es="Lo que queda sin explicación ordinaria, década a década" en="What lacks an ordinary explanation, decade by decade" locale={locale} />
         </H2>
-        <Caption>
-          <T es="La parte de cada década sin explicación ordinaria." en="The share of each decade with no ordinary explanation." locale={locale} />
-        </Caption>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
           <HeterogeneityByDecade locale={locale} />
         </div>
       </section>
-
-      <div className="mt-12">
-        <AnalyzerCta locale={locale} />
-      </div>
 
       <section className="mt-16">
         <H2>
@@ -216,20 +208,10 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
                   <T es={BLURB[c.key].es} en={BLURB[c.key].en} locale={locale} />
                 </Body>
 
-                {total > 0 && PROSAIC_KEYS.has(c.key) && (
-                  <p className="mt-2 font-mono text-[11px] uppercase tracking-widest text-muted">
-                    <T
-                      es={`${sourcedCount[c.key] ?? 0} de ${total} con su porqué citado de una fuente · ${total - (sourcedCount[c.key] ?? 0)} pendientes de revisión`}
-                      en={`${sourcedCount[c.key] ?? 0} of ${total} with their reason cited from a source · ${total - (sourcedCount[c.key] ?? 0)} pending review`}
-                      locale={locale}
-                    />
-                  </p>
-                )}
-
                 {/* Segundo nivel: detalle del objeto dentro de la clase (modal). */}
                 {total > 0 && OBJECT_DETAILS[c.key as ProsaicKey] && (
                   <ul className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
-                    {[...OBJECT_DETAILS[c.key as ProsaicKey]!, SOURCED_DETAIL, PENDING_REVIEW].map((d) => (
+                    {[...OBJECT_DETAILS[c.key as ProsaicKey]!, SOURCED_DETAIL, PENDING_REVIEW].filter((d) => (detailCount[c.key]?.[d.key] ?? 0) > 0).map((d) => (
                       <li key={d.key} className="flex items-baseline justify-between gap-3 border-b border-border/60 py-1 font-mono text-[11px]">
                         <span className="text-text">
                           <T es={d.label} en={d.labelEn} locale={locale} />
