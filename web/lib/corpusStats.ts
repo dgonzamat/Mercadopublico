@@ -76,12 +76,12 @@ export interface EraDistribution {
 // usaba `<T es={p.name} en={p.name_en}>` para los patrones; las eras eran la
 // excepción. Exigirlo en el tipo hace que tsc obligue a traer el par.
 const ERAS: Array<{ label: string; label_en: string; start: number; end: number; range?: string }> = [
-  { label: "Antecedentes", label_en: "Antecedents", start: 0, end: 1946, range: "‹1947" },
-  { label: "Era inicial", label_en: "Early era", start: 1947, end: 1959 },
-  { label: "Era Cold War", label_en: "Cold War era", start: 1960, end: 1979 },
-  { label: "Fin Cold War", label_en: "Late Cold War", start: 1980, end: 1995 },
-  { label: "Pre-disclosure", label_en: "Pre-disclosure", start: 1996, end: 2016 },
-  { label: "Disclosure", label_en: "Disclosure", start: 2017, end: 2030 },
+  { label: "Antecedentes", label_en: "Antecedents", start: 0, end: 1945, range: "‹1946" },
+  { label: "Primera oleada", label_en: "First wave", start: 1946, end: 1959 },
+  { label: "Guerra Fría", label_en: "Cold War", start: 1960, end: 1979 },
+  { label: "Fin de la Guerra Fría", label_en: "Late Cold War", start: 1980, end: 1995 },
+  { label: "Antes de la divulgación", label_en: "Before disclosure", start: 1996, end: 2016 },
+  { label: "Divulgación", label_en: "Disclosure", start: 2017, end: 2030 },
 ];
 
 export function eraDistribution(cases: UAPCase[]): EraDistribution[] {
