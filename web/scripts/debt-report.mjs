@@ -88,6 +88,10 @@ const checks = [
   ["evidencia con más de 8 ítems (plegada en la ficha desde el 6.º)", (c) => (c.evidence ?? []).length > 8],
   ["porqué de más de 700 caracteres (plegado en la ficha)", (c) => (c.classBasis?.es ?? "").length > 700],
   ["resumen de más de 700 caracteres (plegado en la ficha)", (c) => (c.summary ?? "").length > 700],
+  // Los documentos (memos, informes, filtraciones) viven en /cases/, llevan
+  // número de caso y la miga «Casos»: el lector los toma por sucesos.
+  ["documentos que se presentan como casos (URL /cases/, número y miga «Casos»)", (c) => c.category === "document"],
+  ["documentos sin ningún caso enlazado (relatedCases vacío)", (c) => c.category === "document" && !(c.relatedCases ?? []).length],
   // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
   // un documento del caso: esto mide cuántas fichas no tienen ninguno.
   ["sin documento del caso (solo foto de contexto)", (c) => { const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean); return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? "")); }],
