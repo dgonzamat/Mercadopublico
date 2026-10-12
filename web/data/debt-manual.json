@@ -1,15 +1,20 @@
 [
   {
+    "group": "Revisión con fuente primaria",
+    "items": [
+      {
+        "id": "T1",
+        "title": "Revisar el tier de los demás incidentes con el estándar fijado en TIER_META, y quitar de la prosa las frases que justifican el tier con criterios propios",
+        "state": "pendiente"
+      }
+    ]
+  },
+  {
     "group": "Esperan decisión del dueño",
     "items": [
       {
         "id": "1",
         "title": "Regla de país",
-        "state": "esperando decisión"
-      },
-      {
-        "id": "8",
-        "title": "Texto del estándar de tiers (bloquea los puntos 3 y 18)",
         "state": "esperando decisión"
       },
       {
