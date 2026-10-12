@@ -1,5 +1,20 @@
 @tailwind base;
 @tailwind components;
+
+/* Fila de caso (CaseRow): /cases pinta ~420 filas y cada clase utilitaria se
+   repetía en cada una, en el HTML y otra vez en el payload de Next (~0,3 MB
+   solo en atributos class). Con clases compartidas va una vez, aquí. */
+@layer components {
+  .cr { @apply grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 border-b border-border/50 py-3 transition hover:bg-panel/50 sm:grid-cols-[auto_auto_1fr_auto_auto_auto]; }
+  .cr-num { @apply hidden w-10 text-right font-mono text-xs tabular-nums text-muted sm:inline; }
+  .cr-flag { @apply w-6 shrink-0 text-lg leading-none; }
+  .cr-title { @apply truncate text-sm font-medium text-text group-hover:text-accent; }
+  .cr-year-sm { @apply ml-2 font-mono text-xs text-muted sm:hidden; }
+  .cr-sum { @apply truncate text-xs text-muted; }
+  .cr-year { @apply hidden w-16 text-right font-mono text-xs tabular-nums text-muted sm:inline; }
+  .cr-tier { @apply w-12 shrink-0 text-right font-mono text-xs; }
+  .cr-pct { @apply w-12 shrink-0 text-right font-mono text-sm font-semibold tabular-nums text-text; }
+}
 @tailwind utilities;
 
 /* Twemoji Country Flags webfont — restores flag emoji rendering on Windows
