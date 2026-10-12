@@ -572,6 +572,7 @@ const hasVisualAsset = (c) =>
 const VISUAL_CERRADO_POR_LICENCIA = {
   "ariel-school-1994": "artefactos con copyright (dibujos, footage BBC 1994); sin contextual libre no engañosa",
   "aaro-historical-record-2024": "meta/institucional; el PDF de AARO da 403 y no está en archive.org",
+  "pursue-r03-2026": "meta/institucional; sin documento de incidente único que no sea forzarlo",
   "bosque-chile-2010": "Commons seco; sin imagen libre del incidente",
   "byelokoroviche-1982": "Commons seco; sin imagen libre del incidente",
   "delphos-ring-1971": "Commons seco; sin imagen libre del incidente",
