@@ -875,7 +875,7 @@ export async function CaseDetailPage(
                     {d.category === "document" ? (
                       <T locale={locale} es={`${d.year_start} · Documento · Tier ${d.tier}`} en={`${d.year_start} · Document · Tier ${d.tier}`} />
                     ) : (
-                      `${d.year_start} · Tier ${d.tier} · ${d.probability}%`
+                      `${d.year_start} · Tier ${d.tier}`
                     )}
                   </p>
                 </LocaleLink>
@@ -948,8 +948,7 @@ export async function CaseDetailPage(
                     />
                   </p>
                   <p className="mt-auto font-mono text-xs tabular-nums text-muted group-hover:text-bg/60">
-                    {s.caseData.year_start} · Tier {s.caseData.tier} ·{" "}
-                    {s.caseData.probability}%
+                    {s.caseData.year_start} · Tier {s.caseData.tier}
                   </p>
                 </LocaleLink>
               );

@@ -58,9 +58,6 @@ export function CaseRow({
       <span className={`cr-tier ${tierColor}`}>
         {caseData.tier}
       </span>
-      <span className="cr-pct">
-        {caseData.category === "document" && caseData.relatedCases?.length ? "doc" : `${caseData.probability}%`}
-      </span>
     </LocaleLink>
   );
 }
