@@ -234,12 +234,28 @@ export function CasePosterior({
     { id: "unknown", es: "Sin causa conocida", en: "No known cause", lead: { es: "sin causa conocida", en: "no known cause" }, items: unknown, sub: sub(unknown) },
   ].sort((a, b) => b.sub - a.sub);
   const lead = groups[0];
+  // Respuesta primero, un solo número a la vista: el % del grupo mayor y,
+  // sin cifra, la explicación que más pesa dentro de él. El reparto completo
+  // (seis filas con su %) queda plegado como respaldo (oct 2026).
+  const top = lead.items[0];
+  // Con segundo nivel (globo, meteoro…) se nombra solo el objeto concreto.
+  const topName =
+    detail && top.key === pk
+      ? { es: shortLabel(detail.label), en: shortLabel(detail.labelEn) }
+      : { es: top.label, en: top.labelEn };
+  const topText =
+    top.key === "indet"
+      ? { es: "La evidencia no alcanza para decidir entre las explicaciones", en: "The evidence is not enough to decide between the explanations" }
+      : top.key === "sin_propuesta"
+        ? { es: "Lo más probable es una causa ordinaria que nadie ha identificado", en: "Most likely an ordinary cause that no one has identified" }
+        : { es: `Explicación más probable: ${topName.es.toLowerCase()}`, en: `Most likely explanation: ${topName.en.toLowerCase()}` };
   return (
     <div>
-      <p className="mb-3 flex items-baseline gap-2 text-text">
+      <p className="flex items-baseline gap-2 text-text">
         <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
         <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
       </p>
+      <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
       <div className="flex h-4 w-full gap-1 overflow-hidden">
         {groups.map((g) => (
           <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
@@ -249,6 +265,10 @@ export function CasePosterior({
           </div>
         ))}
       </div>
+      <details className="mt-3">
+      <summary className="cursor-pointer text-sm text-accent hover:underline">
+        <T es="Ver el reparto entre las seis explicaciones" en="See the split across the six explanations" locale={locale} />
+      </summary>
       <div className="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
         {groups.map((g) => {
           return (
@@ -269,6 +289,7 @@ export function CasePosterior({
           );
         })}
       </div>
+      </details>
     </div>
   );
 }
