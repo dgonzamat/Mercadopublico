@@ -221,19 +221,24 @@ export function CasePosterior({
     ...rows.map((r, i) => ({ key: r.key, label: r.label, labelEn: r.labelEn, color: r.color, count: r.count, pct: partes[i], zero: false })),
     ...zeros.map((z) => ({ ...z, count: 0, pct: 0, zero: true })),
   ];
+  const sub = (items: typeof all) => items.reduce((a, r) => a + r.pct, 0);
+  const known = all.filter((r) => !NO_KNOWN_CAUSE.has(r.key));
+  const unknown = all.filter((r) => NO_KNOWN_CAUSE.has(r.key));
+  // Una sola cifra manda, y es la MAYOR: el grupo que pesa más va primero y
+  // su porcentaje en grande; debajo, el desglose. Con un subtotal por grupo y
+  // otra cifra en la cabecera se leían dos probabilidades del mismo peso, y
+  // destacar siempre «sin causa conocida» ponía arriba el 34 % de un caso
+  // que es 66 % causa conocida (oct 2026).
   const groups = [
-    { id: "known", es: "Causa natural o humana", en: "Natural or human cause", items: all.filter((r) => !NO_KNOWN_CAUSE.has(r.key)) },
-    { id: "unknown", es: "Sin causa conocida", en: "No known cause", items: all.filter((r) => NO_KNOWN_CAUSE.has(r.key)) },
-  ];
-  // Una sola cifra manda: la parte sin causa conocida, en grande, y debajo
-  // su desglose. Con un subtotal por grupo (66 % / 34 %) y la misma cifra en
-  // la cabecera se leían dos probabilidades del mismo peso (oct 2026).
-  const unknownSub = groups[1].items.reduce((a, r) => a + r.pct, 0);
+    { id: "known", es: "Causa natural o humana", en: "Natural or human cause", lead: { es: "causa natural o humana", en: "natural or human cause" }, items: known, sub: sub(known) },
+    { id: "unknown", es: "Sin causa conocida", en: "No known cause", lead: { es: "sin causa conocida", en: "no known cause" }, items: unknown, sub: sub(unknown) },
+  ].sort((a, b) => b.sub - a.sub);
+  const lead = groups[0];
   return (
     <div>
       <p className="mb-3 flex items-baseline gap-2 text-text">
-        <span className="text-4xl font-semibold tabular-nums" data-unknown="">{unknownSub}%</span>
-        <span className="text-base"><T es="sin causa conocida" en="no known cause" locale={locale} /></span>
+        <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
+        <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
       </p>
       <div className="flex h-4 w-full gap-1 overflow-hidden">
         {groups.map((g) => (
@@ -257,7 +262,7 @@ export function CasePosterior({
                     <span className={`inline-block h-2 w-2 shrink-0 ${r.zero ? "opacity-30" : ""}`} style={{ backgroundColor: r.color }} />
                     <T es={r.zero ? r.label : withDetail(r).es} en={r.zero ? r.labelEn : withDetail(r).en} locale={locale} />
                   </span>
-                  {r.zero ? <span>0%</span> : <span className="text-muted" {...(g.id === "unknown" ? { "data-unknown-row": "" } : {})} data-pct="">{r.pct}%</span>}
+                  {r.zero ? <span>0%</span> : <span className="text-muted" {...(g === lead ? { "data-lead-row": "" } : {})} data-pct="">{r.pct}%</span>}
                 </div>
               ))}
             </div>

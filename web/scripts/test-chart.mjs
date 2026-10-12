@@ -277,8 +277,8 @@ for (const slug of [
   );
 }
 
-// La ficha muestra UNA cifra agregada («N % sin causa conocida», en grande) y
-// debajo su desglose. Antes la cabecera y el subtotal de la leyenda la
+// La ficha muestra UNA cifra agregada en grande (la del grupo mayor: causa
+// natural o humana, o sin causa conocida) y debajo su desglose. Antes la cabecera y el subtotal de la leyenda la
 // repetían con el mismo peso y se leían como dos probabilidades (oct 2026):
 // la cifra debe aparecer una sola vez y ser la suma de sus filas.
 console.log("\nCaso · una sola cifra agregada = suma de su desglose");
@@ -289,12 +289,13 @@ console.log("\nCaso · una sola cifra agregada = suma de su desglose");
     const f = join(dir, slug, "index.html");
     if (!existsSync(f)) continue;
     const h = readFileSync(f, "utf8");
-    const heads = [...h.matchAll(/data-unknown="">(\d+)(?:<!-- -->)?%/g)];
+    const heads = [...h.matchAll(/data-lead="">(\d+)(?:<!-- -->)?%/g)];
     if (!heads.length) continue;
     n++;
-    const rows = [...h.matchAll(/data-unknown-row="" data-pct="">(\d+)(?:<!-- -->)?%/g)].reduce((a, m) => a + Number(m[1]), 0);
+    const rows = [...h.matchAll(/data-lead-row="" data-pct="">(\d+)(?:<!-- -->)?%/g)].reduce((a, m) => a + Number(m[1]), 0);
     if (heads.length !== 1) bad.push(`${slug} ×${heads.length}`);
     else if (Number(heads[0][1]) !== rows) bad.push(`${slug} ${heads[0][1]}≠${rows}`);
+    else if (rows < 50) bad.push(`${slug} destaca ${rows}%, no el grupo mayor`);
   }
   check(`${n} fichas con una sola cifra que suma su desglose${bad.length ? ": " + bad.slice(0, 5).join(", ") : ""}`, n > 300 && bad.length === 0);
 }
