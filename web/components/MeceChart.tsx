@@ -208,7 +208,6 @@ export function CasePosterior({
   // 101%. Las filas vienen ordenadas de mayor a menor: la primera es la más
   // probable, así que no hace falta un pie que la repita.
   const partes = pctParts(rows.map((r) => r.count));
-  const unknown = rows.reduce((acc, r, i) => acc + (NO_KNOWN_CAUSE.has(r.key) ? partes[i] : 0), 0);
   // Las seis explicaciones se evalúan siempre; las que valen 0 se dibujaban
   // ocultas y la leyenda cambiaba de 3 a 6 filas según la ficha, como si cada
   // una juzgara categorías distintas (55 fichas). Se listan todas, las de 0 %
@@ -223,40 +222,51 @@ export function CasePosterior({
       .map((k) => ({ key: k.id, label: k.label, labelEn: k.labelEn, color: k.color })),
     ...(present.has("indet") ? [] : [{ key: "indet", label: "Indeterminado", labelEn: "Indeterminate", color: INDET_COLOR }]),
   ];
+  // Dos grupos con subtotal: lo que tiene una causa (natural o humana) y lo
+  // que no (indeterminado + las dos no humanas). Una sola lista de seis filas
+  // obligaba a sumar tres sueltas para llegar a la cifra de la cabecera, y se
+  // leía como dos probabilidades que no calzaban (oct 2026).
+  const all = [
+    ...rows.map((r, i) => ({ key: r.key, label: r.label, labelEn: r.labelEn, color: r.color, count: r.count, pct: partes[i], zero: false })),
+    ...zeros.map((z) => ({ ...z, count: 0, pct: 0, zero: true })),
+  ];
+  const groups = [
+    { id: "known", es: "Causa natural o humana", en: "Natural or human cause", items: all.filter((r) => !NO_KNOWN_CAUSE.has(r.key)) },
+    { id: "unknown", es: "Sin causa conocida", en: "No known cause", items: all.filter((r) => NO_KNOWN_CAUSE.has(r.key)) },
+  ];
   return (
     <div>
-      <div className="flex h-4 w-full overflow-hidden rounded-sm">
-        {rows.map((r, i) => (
-          <div key={r.key} title={`${r.label}: ${partes[i]}%`} style={{ width: `${r.count * 100}%`, backgroundColor: r.color }} />
-        ))}
-      </div>
-      <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
-        {rows.map((r, i) => (
-          <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px]">
-            <span className="flex items-center gap-1.5 text-text">
-              <span className="inline-block h-2 w-2 shrink-0" style={{ backgroundColor: r.color }} />
-              <T es={withDetail(r).es} en={withDetail(r).en} locale={locale} />
-            </span>
-            <span className="text-muted" data-pct="">{partes[i]}%</span>
-          </div>
-        ))}
-        {zeros.map((r) => (
-          <div key={r.key} className="flex items-baseline justify-between font-mono text-[11px] text-muted/70">
-            <span className="flex items-center gap-1.5">
-              <span className="inline-block h-2 w-2 shrink-0 opacity-30" style={{ backgroundColor: r.color }} />
-              <T es={r.label} en={r.labelEn} locale={locale} />
-            </span>
-            <span>0%</span>
+      <div className="flex h-4 w-full gap-1 overflow-hidden">
+        {groups.map((g) => (
+          <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
+            {g.items.filter((r) => !r.zero).map((r) => (
+              <div key={r.key} title={`${r.label}: ${r.pct}%`} style={{ flex: `${Math.round(r.count * 1000)} 1 0%`, backgroundColor: r.color }} />
+            ))}
           </div>
         ))}
       </div>
-      <p className="mt-3 text-xs text-muted">
-        <T
-          es={`Sin causa conocida: ${unknown} % (indeterminado más las dos explicaciones no humanas). Es la cifra de la cabecera.`}
-          en={`No known cause: ${unknown}% (indeterminate plus the two non-human explanations). It is the figure in the header.`}
-          locale={locale}
-        />
-      </p>
+      <div className="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+        {groups.map((g) => {
+          const sub = g.items.reduce((a, r) => a + r.pct, 0);
+          return (
+            <div key={g.id} className="space-y-1">
+              <p className="flex items-baseline justify-between border-b border-text/20 pb-1 text-sm font-semibold text-text">
+                <T es={g.es} en={g.en} locale={locale} />
+                <span {...(g.id === "unknown" ? { "data-unknown": "" } : {})}>{sub}%</span>
+              </p>
+              {g.items.map((r) => (
+                <div key={r.key} className={`flex items-baseline justify-between pl-3 font-mono text-[11px] ${r.zero ? "text-muted/70" : ""}`}>
+                  <span className={`flex items-center gap-1.5 ${r.zero ? "" : "text-text"}`}>
+                    <span className={`inline-block h-2 w-2 shrink-0 ${r.zero ? "opacity-30" : ""}`} style={{ backgroundColor: r.color }} />
+                    <T es={r.zero ? r.label : withDetail(r).es} en={r.zero ? r.labelEn : withDetail(r).en} locale={locale} />
+                  </span>
+                  {r.zero ? <span>0%</span> : <span className="text-muted" data-pct="">{r.pct}%</span>}
+                </div>
+              ))}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
