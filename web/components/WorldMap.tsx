@@ -219,7 +219,7 @@ export default function WorldMap({
                   </strong>
                   <br />
                   <T es={c.country_name} en={countryEn(c.country_name)} /> ·{" "}
-                  {c.year_start} · Tier {c.tier} · {c.probability}%
+                  {c.year_start} · Tier {c.tier}
                 </div>
               </Tooltip>
             </CircleMarker>
