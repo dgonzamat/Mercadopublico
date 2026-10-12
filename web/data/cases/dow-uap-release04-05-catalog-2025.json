@@ -32,6 +32,7 @@
   },
   "patterns": [],
   "category": "document",
+  "relatedCases": ["eastern-us-civilian-sensor-2019", "atlantic-ocean-balloon-2020", "eastern-us-metallic-reflective-2020", "gulf-america-thermal-camouflage-2019", "middle-east-closing-distance-2020", "mt-etna-object-2018", "al-taqaddum-balloons-2017"],
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/1014100",
