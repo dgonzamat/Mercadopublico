@@ -290,7 +290,7 @@ console.log("\nCaso · cabecera = pie de la leyenda");
     if (!existsSync(f)) continue;
     const h = readFileSync(f, "utf8");
     const head = h.match(/font-semibold">(\d+)(?:<!-- -->)?%<\/strong> <!-- -->no known cause/);
-    const foot = h.match(/No known cause: (\d+)%/);
+    const foot = h.match(/data-unknown="">(\d+)(?:<!-- -->)?%/);
     if (!head || !foot) continue;
     n++;
     if (head[1] !== foot[1]) bad.push(`${slug} ${head[1]}≠${foot[1]}`);
