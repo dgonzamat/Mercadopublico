@@ -21,7 +21,8 @@ export type SourceCategory =
   | "code"
   | "audio_video"
   | "reference"
-  | "other";
+  | "other"
+  | "nolink";
 
 export interface SourceAppearance {
   label: string;
@@ -106,12 +107,20 @@ export const CATEGORY_LABELS: Record<
       "GitHub repositories of the original corpus and site source code.",
   },
   other: {
-    es: "Otros · Sin enlace público",
-    en: "Other · No public link",
+    es: "Otros sitios web",
+    en: "Other websites",
     description_es:
-      "Documentos físicos, testimonios privados, archivos militares aún clasificados y referencias sin URL pública directa.",
+      "Páginas web citadas que no son de un gobierno, un archivo, una revista académica, la prensa ni una obra de referencia.",
     description_en:
-      "Physical documents, private testimony, military files still classified, and references without a direct public URL.",
+      "Cited web pages that are not from a government, an archive, an academic journal, the press or a reference work.",
+  },
+  nolink: {
+    es: "Sin enlace público",
+    en: "No public link",
+    description_es:
+      "Libros, documentos físicos, testimonios privados y referencias sin una URL pública directa.",
+    description_en:
+      "Books, physical documents, private testimony and references without a direct public URL.",
   },
 };
 
@@ -125,6 +134,7 @@ const CATEGORY_ORDER: SourceCategory[] = [
   "code",
   "reference",
   "other",
+  "nolink",
 ];
 
 function domainOf(url: string): string {
@@ -181,7 +191,9 @@ function categorize(s: { name: string; url?: string; note?: string }): SourceCat
 
   if (/github\.com|gitlab/.test(d)) return "code";
 
-  return "other";
+  // «Otros» juntaba 769 fuentes en una página de 2 MB: las que no tienen
+  // enlace van aparte (las dos mitades eran además dos cosas distintas).
+  return s.url ? "other" : "nolink";
 }
 
 function sourceKey(s: { name: string; url?: string }): string {
