@@ -277,11 +277,11 @@ for (const slug of [
   );
 }
 
-// La cabecera de la ficha («N % sin causa conocida») y el pie de la leyenda
-// tienen que dar el mismo número: antes la cabecera venía de `probability`
-// (redondeo propio) y no decía de qué filas salía, y se leían como dos
-// probabilidades distintas (oct 2026).
-console.log("\nCaso · cabecera = pie de la leyenda");
+// La ficha muestra UNA cifra agregada («N % sin causa conocida», en grande) y
+// debajo su desglose. Antes la cabecera y el subtotal de la leyenda la
+// repetían con el mismo peso y se leían como dos probabilidades (oct 2026):
+// la cifra debe aparecer una sola vez y ser la suma de sus filas.
+console.log("\nCaso · una sola cifra agregada = suma de su desglose");
 {
   const dir = join(__dirname, "..", "out", "cases");
   let n = 0, bad = [];
@@ -289,13 +289,14 @@ console.log("\nCaso · cabecera = pie de la leyenda");
     const f = join(dir, slug, "index.html");
     if (!existsSync(f)) continue;
     const h = readFileSync(f, "utf8");
-    const head = h.match(/font-semibold">(\d+)(?:<!-- -->)?%<\/strong> <!-- -->no known cause/);
-    const foot = h.match(/data-unknown="">(\d+)(?:<!-- -->)?%/);
-    if (!head || !foot) continue;
+    const heads = [...h.matchAll(/data-unknown="">(\d+)(?:<!-- -->)?%/g)];
+    if (!heads.length) continue;
     n++;
-    if (head[1] !== foot[1]) bad.push(`${slug} ${head[1]}≠${foot[1]}`);
+    const rows = [...h.matchAll(/data-unknown-row="" data-pct="">(\d+)(?:<!-- -->)?%/g)].reduce((a, m) => a + Number(m[1]), 0);
+    if (heads.length !== 1) bad.push(`${slug} ×${heads.length}`);
+    else if (Number(heads[0][1]) !== rows) bad.push(`${slug} ${heads[0][1]}≠${rows}`);
   }
-  check(`${n} fichas con la misma cifra arriba y abajo${bad.length ? ": " + bad.slice(0, 5).join(", ") : ""}`, n > 300 && bad.length === 0);
+  check(`${n} fichas con una sola cifra que suma su desglose${bad.length ? ": " + bad.slice(0, 5).join(", ") : ""}`, n > 300 && bad.length === 0);
 }
 
 console.log("");
