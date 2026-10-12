@@ -31,6 +31,7 @@
   "summary_en": "Separate from the PURSUE program's drops, AARO publishes its own 'UAP Case Resolution Reports' archive on DVIDS — clips numbered PR-001 through PR-018, plus at least three additional non-PR-numbered files, all with the office's official assessment attached as text. Having reviewed all 21 in full: 2 were closed as migratory birds, 6 as balloon (5 within the PR series + 1 additional), 1 was closed as 'not anomalous' without identifying its origin, 1 remained 'under analysis,' 5 confirmed a physical object but found it 'unremarkable, not warranting further analysis,' and 6 remain unresolved for lack of telemetry or multi-sensor data.",
   "patterns": [],
   "category": "document",
+  "relatedCases": ["al-taqaddum-balloons-2017", "atlantic-ocean-balloon-2020"],
   "documents": [
     {
       "src": "https://www.dvidshub.net/video/embed/973048",

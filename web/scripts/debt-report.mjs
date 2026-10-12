@@ -118,7 +118,7 @@ const unquoted = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^
 const FORMULA_REVIEWED = new Set([
   "allagash-1976", "alma-ata-1991", "colorado-law-enforcement-2023", "deception-island-1965",
   "detroit-dome-object-1958", "dow-uap-release04-05-catalog-2025", "eight-pointed-star-2013",
-  "ellsworth-woods-1977", "japan-diet-uap-questions-2022", "kinross-incident-1953", "trancas-1963",
+  "ellsworth-woods-1977", "kinross-incident-1953", "trancas-1963",
   "uso-formation-nonlinear-edit-2024",
 ]);
 for (const [label, re] of Object.entries(SLOP)) {

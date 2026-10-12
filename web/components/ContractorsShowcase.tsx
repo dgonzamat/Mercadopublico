@@ -12,7 +12,6 @@ import { countryEn } from "@/lib/i18n-geo";
  * filtra los que existan, así que se completa solo a medida que se agregan.
  */
 const CONTRACTOR_IDS = [
-  "mitre-ffrdc-2026",
   "aawsap-skinwalker-2008",
   "battelle-special-report-1952",
 ];
