@@ -171,15 +171,6 @@ export function MecePartition({
  *  `objectDetail` (segundo nivel), se muestra junto a su clase. */
 const NO_KNOWN_CAUSE = new Set(["indet", "nohumano_encubierto", "nohumano_abierto"]);
 
-/** % «sin causa conocida» tal como lo imprime la leyenda (indeterminado + las
- *  dos no humanas, con el mismo redondeo por resto mayor). La cabecera de la
- *  ficha usa este número para que nunca difiera en un punto de la leyenda. */
-export function unexplainedPrinted(posterior: Posterior, mundanoType?: ScoredCase["mundanoType"], misidSubtype?: MisidSubtype): number {
-  const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }], { keepIndet: true });
-  const partes = pctParts(rows.map((r) => r.count));
-  return rows.reduce((acc, r, i) => acc + (NO_KNOWN_CAUSE.has(r.key) ? partes[i] : 0), 0);
-}
-
 export function CasePosterior({
   posterior,
   mundanoType,
@@ -234,8 +225,16 @@ export function CasePosterior({
     { id: "known", es: "Causa natural o humana", en: "Natural or human cause", items: all.filter((r) => !NO_KNOWN_CAUSE.has(r.key)) },
     { id: "unknown", es: "Sin causa conocida", en: "No known cause", items: all.filter((r) => NO_KNOWN_CAUSE.has(r.key)) },
   ];
+  // Una sola cifra manda: la parte sin causa conocida, en grande, y debajo
+  // su desglose. Con un subtotal por grupo (66 % / 34 %) y la misma cifra en
+  // la cabecera se leían dos probabilidades del mismo peso (oct 2026).
+  const unknownSub = groups[1].items.reduce((a, r) => a + r.pct, 0);
   return (
     <div>
+      <p className="mb-3 flex items-baseline gap-2 text-text">
+        <span className="text-4xl font-semibold tabular-nums" data-unknown="">{unknownSub}%</span>
+        <span className="text-base"><T es="sin causa conocida" en="no known cause" locale={locale} /></span>
+      </p>
       <div className="flex h-4 w-full gap-1 overflow-hidden">
         {groups.map((g) => (
           <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
@@ -247,12 +246,10 @@ export function CasePosterior({
       </div>
       <div className="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
         {groups.map((g) => {
-          const sub = g.items.reduce((a, r) => a + r.pct, 0);
           return (
             <div key={g.id} className="space-y-1">
-              <p className="flex items-baseline justify-between border-b border-text/20 pb-1 text-sm font-semibold text-text">
+              <p className="border-b border-text/15 pb-1 text-xs text-muted">
                 <T es={g.es} en={g.en} locale={locale} />
-                <span {...(g.id === "unknown" ? { "data-unknown": "" } : {})}>{sub}%</span>
               </p>
               {g.items.map((r) => (
                 <div key={r.key} className={`flex items-baseline justify-between pl-3 font-mono text-[11px] ${r.zero ? "text-muted/70" : ""}`}>
@@ -260,7 +257,7 @@ export function CasePosterior({
                     <span className={`inline-block h-2 w-2 shrink-0 ${r.zero ? "opacity-30" : ""}`} style={{ backgroundColor: r.color }} />
                     <T es={r.zero ? r.label : withDetail(r).es} en={r.zero ? r.labelEn : withDetail(r).en} locale={locale} />
                   </span>
-                  {r.zero ? <span>0%</span> : <span className="text-muted" data-pct="">{r.pct}%</span>}
+                  {r.zero ? <span>0%</span> : <span className="text-muted" {...(g.id === "unknown" ? { "data-unknown-row": "" } : {})} data-pct="">{r.pct}%</span>}
                 </div>
               ))}
             </div>

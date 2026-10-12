@@ -5,7 +5,7 @@ import { cases, getEntityMorphology } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, shortLabel } from "@/lib/meceClasses";
-import { CasePosterior, unexplainedPrinted } from "@/components/MeceChart";
+import { CasePosterior } from "@/components/MeceChart";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -386,12 +386,7 @@ export async function CaseDetailPage(
                 en={`Documents ${documentedCases.length} ${documentedCases.length === 1 ? "case" : "cases"}`}
               />
             </span>
-          ) : (
-            <span>
-              <strong className="font-semibold">{unexplainedPrinted(posteriorFor(c), c.mundanoType, c.misidSubtype)}%</strong>{" "}
-              <T locale={locale} es="sin causa conocida" en="no known cause" />
-            </span>
-          )}
+          ) : null}
           {c.category !== "incident" && (
             <span className="text-muted">
               <T locale={locale}
