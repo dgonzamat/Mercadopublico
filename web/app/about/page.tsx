@@ -14,6 +14,7 @@ import {
 import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
 import { cases } from "@/lib/data";
+import { TIER_META } from "@/lib/ui";
 
 // Ejemplos de cada tier. Se filtran por el tier real de la ficha, así que la
 // tabla no puede contradecir a los casos: si un tier cambia, el ejemplo sale
@@ -164,12 +165,19 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                     </tr>
                   </thead>
                   <tbody>
-                    <TierRow tier="S" es="Evidencia fuerte: sensor instrumental + múltiples testigos (típicamente militar)" en="Strong evidence: instrumental sensor + multiple witnesses (typically military)" examples={tierExamples("S", locale)} color="text-tierS" locale={locale} />
-                    <TierRow tier="A" es="Evidencia institucional: múltiples testigos verificables o documentación oficial" en="Institutional evidence: multiple verifiable witnesses or official documentation" examples={tierExamples("A", locale)} color="text-tierA" locale={locale} />
-                    <TierRow tier="B" es="Evidencia limitada: testigo único, local o sin verificación primaria" en="Limited evidence: single-witness, local or without primary verification" examples={tierExamples("B", locale)} color="text-tierB" locale={locale} />
+                    <TierRow tier="S" es={TIER_META.S.description} en={TIER_META.S.description_en} examples={tierExamples("S", locale)} color="text-tierS" locale={locale} />
+                    <TierRow tier="A" es={TIER_META.A.description} en={TIER_META.A.description_en} examples={tierExamples("A", locale)} color="text-tierA" locale={locale} />
+                    <TierRow tier="B" es={TIER_META.B.description} en={TIER_META.B.description_en} examples={tierExamples("B", locale)} color="text-tierB" locale={locale} />
                   </tbody>
                 </table>
               </div>
+              <p className="text-sm text-muted">
+                <T
+                  es="Tres reglas fijan la frontera entre tiers. Sin un registro instrumental de la época, un caso no pasa de A, por muchos testigos que tenga. Un testimonio recogido años después no cuenta como de la época. Y el tier mide la fuerza de la evidencia, no qué fue: un caso S puede tener una causa ordinaria."
+                  en="Three rules set the boundary between tiers. Without a contemporary instrumental record, a case goes no higher than A, however many witnesses it has. Testimony gathered years later does not count as contemporary. And the tier measures the strength of the evidence, not what it was: an S case can have an ordinary cause."
+                  locale={locale}
+                />
+              </p>
               <p className="text-sm text-muted">
                 <T
                   es="Los documentos no tienen testigos ni sensores: su tier mide si son auténticos y están completos. S, documento oficial publicado o desclasificado por quien lo emitió o por un archivo público, e íntegro. A, oficial pero incompleto o muy tachado; testimonio jurado; estudio revisado por pares; filtración de autenticidad verificada; o prensa cuyo contenido confirmó después la fuente oficial. B, filtración sin autenticar, procedencia dudosa o prensa sin confirmar."

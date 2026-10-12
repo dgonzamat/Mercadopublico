@@ -26,8 +26,8 @@ export const TIER_META: Record<TierKey, {
     color: "text-tierS",
     bg: "bg-tierS/10",
     border: "border-tierS/40",
-    description: "Evidencia fuerte: registro de sensor instrumental + múltiples testigos (típicamente militar)",
-    description_en: "Strong evidence: instrumental sensor record + multiple witnesses (typically military)",
+    description: "Evidencia fuerte: un registro instrumental de la época (radar, sensor, película o foto con procedencia conocida) que corrobora a varios testigos independientes",
+    description_en: "Strong evidence: a contemporary instrumental record (radar, sensor, film or photo of known provenance) that corroborates several independent witnesses",
   },
   A: {
     label: "Tier A",
@@ -36,8 +36,8 @@ export const TIER_META: Record<TierKey, {
     color: "text-tierA",
     bg: "bg-tierA/10",
     border: "border-tierA/40",
-    description: "Evidencia institucional: múltiples testigos verificables o documentación oficial",
-    description_en: "Institutional evidence: multiple verifiable witnesses or official documentation",
+    description: "Evidencia institucional: varios testigos independientes identificados, o documentación oficial de la época, sin un registro instrumental que los corrobore",
+    description_en: "Institutional evidence: several identified independent witnesses, or contemporary official documentation, without an instrumental record to corroborate them",
   },
   B: {
     label: "Tier B",
@@ -46,8 +46,8 @@ export const TIER_META: Record<TierKey, {
     color: "text-tierB",
     bg: "bg-tierB/10",
     border: "border-tierB/40",
-    description: "Evidencia limitada: testigo único, local o sin verificación primaria",
-    description_en: "Limited evidence: single-witness, local or without primary verification",
+    description: "Evidencia limitada: un solo testigo, un testimonio recogido años después o un relato sin documentación primaria de la época",
+    description_en: "Limited evidence: a single witness, testimony gathered years later, or an account without contemporary primary documentation",
   },
 };
 
