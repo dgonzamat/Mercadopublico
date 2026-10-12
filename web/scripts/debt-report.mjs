@@ -81,6 +81,7 @@ for (const l of [...untranslated, ...englishInEs]) console.log(`  · ${l}`);
 // Ordenadas de menor a mayor coste de arreglo.
 const PROSE = ["summary", "whatHappened", "whyMatters"];
 const joinProse = (c, sfx) => [...PROSE.map((k) => c[k + sfx] ?? ""), ...(c["evidence" + sfx] ?? [])].join(" ");
+const actorLinked = new Set([...fs.readFileSync(path.join(ROOT, "lib/researcherCases.ts"), "utf8").matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
 const checks = [
   // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.
   ["comillas españolas «» en el texto inglés", (c) => joinProse(c, "_en").includes("«")],
@@ -91,7 +92,9 @@ const checks = [
   // Los documentos (memos, informes, filtraciones) viven en /cases/, llevan
   // número de caso y la miga «Casos»: el lector los toma por sucesos.
   ["documentos que se presentan como casos (URL /cases/, número y miga «Casos»)", (c) => c.category === "document"],
-  ["documentos sin ningún caso enlazado (relatedCases vacío)", (c) => c.category === "document" && !(c.relatedCases ?? []).length],
+  // Un documento se justifica si respalda un caso (relatedCases) o un actor
+  // (lib/researcherCases.ts); si no hace ninguna de las dos cosas, sobra.
+  ["documentos que no respaldan ningún caso ni actor", (c) => c.category === "document" && !(c.relatedCases ?? []).length && !actorLinked.has(c.id)],
   // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
   // un documento del caso: esto mide cuántas fichas no tienen ninguno.
   ["sin documento del caso (solo foto de contexto)", (c) => { const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean); return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? "")); }],
