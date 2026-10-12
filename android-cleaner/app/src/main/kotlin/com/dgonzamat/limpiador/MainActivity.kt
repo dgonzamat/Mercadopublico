@@ -101,6 +101,12 @@ class MainActivity : AppCompatActivity() {
             continueDeletion()
         }
 
+    /** Vigilancia: se activa aunque se niegue el permiso de avisos (entonces solo recuerda lo visto). */
+    private val notifyPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+            enableWatch(granted)
+        }
+
     private val cacheLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             val msg = if (result.resultCode == Activity.RESULT_OK) R.string.cache_cleared else R.string.cache_not_cleared
@@ -124,6 +130,46 @@ class MainActivity : AppCompatActivity() {
         updatePrivacyNote()
 
         if (ScanStore.items.isNotEmpty()) show(Screen.RESULTS) else show(Screen.WELCOME)
+        handleWatchAlert(intent)
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        handleWatchAlert(intent)
+    }
+
+    /** Se tocó un aviso de la vigilancia: mostrar cómo quitar esa app, si sigue instalada. */
+    private fun handleWatchAlert(intent: Intent?) {
+        val pkg = intent?.getStringExtra(Watchdog.EXTRA_PACKAGE) ?: return
+        intent.removeExtra(Watchdog.EXTRA_PACKAGE)
+        val label = try {
+            packageManager.getApplicationLabel(packageManager.getApplicationInfo(pkg, 0)).toString()
+        } catch (e: PackageManager.NameNotFoundException) {
+            Snackbar.make(b.root, R.string.watch_already_gone, Snackbar.LENGTH_LONG).show()
+            return
+        }
+        RemovalHelp.show(this, JunkItem(Category.SUSPICIOUS_APPS, label, 0, packageName = pkg))
+    }
+
+    private fun toggleWatch() {
+        if (Watchdog.isEnabled(this)) {
+            Watchdog.setEnabled(this, false)
+            renderTools()
+            Snackbar.make(b.root, R.string.watch_off_done, Snackbar.LENGTH_LONG).show()
+        } else if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
+            enableWatch(true)
+        } else {
+            notifyPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
+    }
+
+    private fun enableWatch(canNotify: Boolean) {
+        Watchdog.setEnabled(this, true)
+        // Primera revisión ahora: recuerda lo instalado y avisa de lo urgente que ya esté.
+        val ctx = applicationContext
+        lifecycleScope.launch(Dispatchers.IO) { try { Watchdog.run(ctx) } catch (e: Exception) { } }
+        renderTools()
+        Snackbar.make(b.root, if (canNotify) R.string.watch_on_done else R.string.watch_no_notify, Snackbar.LENGTH_LONG).show()
     }
 
     override fun onResume() {
@@ -375,6 +421,7 @@ class MainActivity : AppCompatActivity() {
             val what = listOfNotNull(
                 a.times.takeIf { it > 0 }?.let { resources.getQuantityString(R.plurals.ads_times, it, it) },
                 a.background.takeIf { it > 0 }?.let { getString(R.string.ads_background) },
+                getString(R.string.ads_hidden).takeIf { a.hidden },
             ).joinToString(" · ")
             "${a.label} · $whenText · $what"
         }.toTypedArray()
@@ -674,6 +721,10 @@ class MainActivity : AppCompatActivity() {
             if (vtOn) R.string.tool_vt_button_change else R.string.tool_vt_button_on) { configureVirusTotal() }
         // Anuncios que bloquean la pantalla: la última app que ocupó la pantalla es la que los lanza.
         tool(R.drawable.ic_search, R.string.tool_ads_title, R.string.tool_ads_desc, R.string.tool_ads_button) { findAdsCulprit() }
+        // Vigilancia: avisa en cuanto se instala adware, antes de que se apodere de la pantalla.
+        val watchOn = Watchdog.isEnabled(this)
+        tool(R.drawable.ic_shield, R.string.tool_watch_title, if (watchOn) R.string.tool_watch_desc_on else R.string.tool_watch_desc_off,
+            if (watchOn) R.string.tool_watch_button_off else R.string.tool_watch_button_on) { toggleWatch() }
         // Play Protect sí tiene base de datos de malware conocido: complementa las señales de riesgo.
         tool(R.drawable.ic_shield, R.string.tool_protect_title, R.string.tool_protect_desc, R.string.tool_protect_button) { openPlayProtect() }
         b.toolsTitle.visibility = if (b.toolsContainer.childCount > 0) View.VISIBLE else View.GONE

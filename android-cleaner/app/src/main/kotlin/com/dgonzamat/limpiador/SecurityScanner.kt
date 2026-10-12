@@ -41,6 +41,8 @@ enum class RiskSignal(val weight: Int, val textRes: Int) {
     SIDELOADED(2, R.string.reason_sideloaded),
     /** No tiene ícono, así que el usuario no pudo abrirla, y aun así mostró pantallas: anuncios a pantalla completa. */
     POPS_UP(4, R.string.reason_pops_up),
+    /** Instalada por el usuario con nombre de parte del teléfono («System App»): las de sistema de verdad no llegan aquí. */
+    IMPERSONATES(3, R.string.reason_impersonates),
     /** Se presenta como limpiador, acelerador, recuperador de fotos, galería o lector: disfraces frecuentes del adware. */
     CLEANER(1, R.string.reason_cleaner),
     /** Hay varias apps de ese mismo tipo instaladas: el adware de utilidades se instala en cadena. */
@@ -90,6 +92,26 @@ object RiskRules {
         "recover", "recuper", "restore", "restaur", "gallery", "galer", "pdf", "reader", "lector",
     )
 
+    /**
+     * Nombres con los que el adware se hace pasar por parte del teléfono: «System App»,
+     * «Servicio del sistema», «Google Services»… Las apps de sistema de verdad llevan FLAG_SYSTEM
+     * y no llegan a estas reglas, así que una app instalada por el usuario con uno de estos
+     * nombres se está disfrazando. Se compara el nombre entero, no una palabra suelta: «System
+     * Monitor» o «Ajustes de cámara pro» no cuentan.
+     */
+    private val SYSTEM_NAME = Regex(
+        "^(android |google (play )?)?(system|sistema|service|services|servicio|servicios|update|updates|" +
+            "actualizacion|actualizaciones|settings|ajustes|configuracion|security|seguridad)" +
+            "( (app|apps|service|services|servicio|servicios|update|updates|manager|del sistema|de sistema|" +
+            "de android|de actualizacion))?$",
+    )
+
+    fun impersonatesSystem(label: String): Boolean {
+        val plain = java.text.Normalizer.normalize(label.trim().lowercase(), java.text.Normalizer.Form.NFD)
+            .replace(Regex("\\p{M}"), "").replace(Regex("\\s+"), " ")
+        return SYSTEM_NAME.matches(plain)
+    }
+
     /** Desde cuántas apps del mismo tipo instaladas a la vez se considera una cadena de adware. */
     const val SWARM_MIN = 4
 
@@ -117,6 +139,7 @@ object RiskRules {
         if (bait) add(RiskSignal.CLEANER)
         if (bait && baitApps >= SWARM_MIN) add(RiskSignal.SWARM)
         if (!f.hasLauncherIcon && f.screensLastDay > 0) add(RiskSignal.POPS_UP)
+        if (impersonatesSystem(f.label)) add(RiskSignal.IMPERSONATES)
         if (f.accessibilityOn) add(RiskSignal.ACCESSIBILITY)
         if (f.deviceAdmin) add(RiskSignal.DEVICE_ADMIN)
         if (f.permissions.any { it in SMS }) add(RiskSignal.SMS)
@@ -132,6 +155,7 @@ object RiskRules {
     /**
      * null si la app no se lista. Las apps de tienda con permisos amplios son comunes (mensajería,
      * gestores de contraseñas), así que una app de tienda solo se lista si:
+     * - se hace pasar por el sistema (siempre se lista, venga de donde venga), o
      * - combina accesibilidad y administrador, o
      * - oculta su ícono y además dibuja encima, controla el teléfono o instala apps (patrón del adware), o
      * - se presenta como utilidad cebo (limpiador, recuperador de fotos, galería, lector) y además
@@ -145,14 +169,15 @@ object RiskRules {
         val sideloaded = RiskSignal.SIDELOADED in s
         val control = RiskSignal.ACCESSIBILITY in s || RiskSignal.DEVICE_ADMIN in s
         val adwareMoves = RiskSignal.OVERLAY in s || control || RiskSignal.INSTALLS_APPS in s || RiskSignal.FULL_SCREEN in s
-        val listed = if (sideloaded) score >= SIDELOADED_MIN_SCORE
-        else RiskSignal.POPS_UP in s ||
+        val listed = if (sideloaded) score >= SIDELOADED_MIN_SCORE || RiskSignal.IMPERSONATES in s
+        else RiskSignal.POPS_UP in s || RiskSignal.IMPERSONATES in s ||
             (RiskSignal.ACCESSIBILITY in s && RiskSignal.DEVICE_ADMIN in s) ||
             (RiskSignal.HIDDEN in s && adwareMoves) ||
             (RiskSignal.CLEANER in s && (adwareMoves || RiskSignal.HIDDEN in s || RiskSignal.NOTIFICATIONS in s ||
                 RiskSignal.BACKGROUND in s || RiskSignal.SWARM in s))
         if (!listed) return null
-        val high = score >= HIGH_SCORE || (sideloaded && control) || RiskSignal.POPS_UP in s
+        val impostor = RiskSignal.IMPERSONATES in s && (RiskSignal.HIDDEN in s || sideloaded)
+        val high = score >= HIGH_SCORE || (sideloaded && control) || RiskSignal.POPS_UP in s || impostor
         return RiskAssessment(high, score, s)
     }
 }
@@ -188,13 +213,7 @@ class SecurityScanner(
             val v = verdicts[f.packageName]
             val malware = v is VtVerdict.Found && v.malicious > 0
             if (a == null && !malware) return@mapNotNull null
-            val reasons = a?.signals?.joinToString(", ") {
-                when (it) {
-                    RiskSignal.POPS_UP -> context.resources.getQuantityString(R.plurals.reason_pops_up_n, f.screensLastDay, f.screensLastDay)
-                    RiskSignal.SWARM -> context.getString(R.string.reason_swarm_n, baitApps)
-                    else -> context.getString(it.textRes)
-                }
-            }
+            val reasons = a?.let { reasons(context, f, it.signals, baitApps) }
             val note = when {
                 malware -> listOfNotNull(malwareNote(context, v as VtVerdict.Found), reasons?.replaceFirstChar { it.uppercase() }).joinToString(". ")
                 else -> {
@@ -214,6 +233,15 @@ class SecurityScanner(
     }
 
     companion object {
+        /** Los motivos en palabras, en el orden de las señales. */
+        fun reasons(ctx: Context, f: AppFacts, signals: List<RiskSignal>, baitApps: Int): String = signals.joinToString(", ") {
+            when (it) {
+                RiskSignal.POPS_UP -> ctx.resources.getQuantityString(R.plurals.reason_pops_up_n, f.screensLastDay, f.screensLastDay)
+                RiskSignal.SWARM -> ctx.getString(R.string.reason_swarm_n, baitApps)
+                else -> ctx.getString(it.textRes)
+            }
+        }
+
         fun malwareNote(ctx: Context, v: VtVerdict.Found) = ctx.getString(R.string.vt_malware, v.malicious, v.engines)
 
         /** Qué dijo VirusTotal cuando no hubo detección (limpio o nunca visto). */

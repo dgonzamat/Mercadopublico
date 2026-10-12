@@ -12,8 +12,14 @@ import android.content.pm.ApplicationInfo
  * la pantalla del anuncio pertenece a la app que lo lanza.
  */
 object ForegroundLog {
-    /** [times]: pantallas que abrió; [background]: veces que arrancó un servicio con aviso fijo en la barra. */
-    data class Appearance(val packageName: String, val label: String, val lastSeen: Long, val times: Int, val background: Int = 0)
+    /**
+     * [times]: pantallas que abrió; [background]: veces que arrancó un servicio con aviso fijo en
+     * la barra; [hidden]: no tiene ícono en el lanzador, así que el usuario no pudo abrirla.
+     */
+    data class Appearance(
+        val packageName: String, val label: String, val lastSeen: Long, val times: Int,
+        val background: Int = 0, val hidden: Boolean = false,
+    )
 
     /**
      * Paquete → veces que ocurrió [type] desde [since] (ms): por defecto, pantallas abiertas.
@@ -37,6 +43,10 @@ object ForegroundLog {
         val home = try {
             pm.resolveActivity(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME), 0)?.activityInfo?.packageName
         } catch (e: Exception) { null }
+        val launchable = try {
+            pm.queryIntentActivities(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER), 0)
+                .map { it.activityInfo.packageName }.toSet()
+        } catch (e: Exception) { null }
         return events(context, since, now)
             .groupBy { it.pkg }
             .mapNotNull { (pkg, list) ->
@@ -47,6 +57,7 @@ object ForegroundLog {
                     pkg, pm.getApplicationLabel(info).toString(), list.maxOf { it.time },
                     times = list.count { it.type == UsageEvents.Event.ACTIVITY_RESUMED },
                     background = list.count { it.type == UsageEvents.Event.FOREGROUND_SERVICE_START },
+                    hidden = launchable != null && pkg !in launchable,
                 )
             }
             .sortedByDescending { it.lastSeen }

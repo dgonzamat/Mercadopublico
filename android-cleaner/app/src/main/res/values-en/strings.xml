@@ -230,7 +230,7 @@
     <string name="tool_ads_desc">When an ad blocks your screen or a pop-up appears, open Cleaner and tap here: you will see which app just took over the screen or worked in the background. Tap it to see how to remove it.</string>
     <string name="tool_ads_button">Find</string>
     <string name="ads_need_usage">To know which app opened each screen, "Usage access" is needed. Turn it on and tap Find again.</string>
-    <string name="ads_none">No app you installed showed a screen in the last 30 minutes.</string>
+    <string name="ads_none">No app you installed showed a screen in the last 30 minutes. Another clue: in Settings › Apps › Screen time, the app with minutes you did not use is usually the one showing ads.</string>
     <string name="ads_seconds_ago">%1$d s ago</string>
     <string name="ads_minutes_ago">%1$d min ago</string>
     <plurals name="ads_times">
@@ -254,7 +254,7 @@
     <string name="help_details">Open its settings page: Force stop, then Uninstall</string>
     <string name="help_retry">Try uninstalling it again</string>
     <string name="help_safe_mode">If nothing works: safe mode</string>
-    <string name="help_safe_mode_steps">In safe mode no third-party app runs, so it cannot stop you from removing it.\n\n1. Press and hold the power button.\n2. Press and hold "Power off" until it offers "Safe mode" and accept (on some Xiaomi phones: power off, turn on and hold Volume down while it boots).\n3. Go to Settings › Apps, find the app and uninstall it.\n4. Restart normally.\n\nSteps vary by manufacturer.</string>
+    <string name="help_safe_mode_steps">In safe mode no third-party app runs, so none can cover the screen or stop you from removing it. If the Uninstall button does not respond, it is almost always because another app is covering it: this is the way out.\n\n1. Open the power menu: on Motorola, hold Power + Volume up together (or swipe down and tap ⏻); on other phones holding Power is enough.\n2. Hold your finger on "Power off" until it asks "Reboot to safe mode?" and accept.\n3. If it does not offer it: turn the phone off, turn it on with only the power button and, 2–3 seconds after the logo appears, hold Volume down until the lock screen (it can take a while). If you press it too early a technical screen with a green Android appears: choose START with the power button and try again.\n4. In safe mode, go to Settings › Apps, find the app and uninstall it.\n5. To leave, restart normally.\n\nSteps vary by manufacturer.</string>
     <string name="help_copy_adb">Commands for a computer</string>
     <string name="help_close">Close</string>
     <string name="adb_header"># Cleaner: apps that would not uninstall. Paste each line into the computer terminal.</string>
@@ -262,4 +262,20 @@
     <string name="adb_share">Send to computer</string>
     <string name="adb_copy">Copy</string>
     <string name="adb_copied">Commands copied</string>
+    <!-- v2.14: apps posing as system apps and background watch -->
+    <string name="reason_impersonates">poses as part of the phone (real system apps are not installed)</string>
+    <string name="ads_hidden">no icon (suspicious)</string>
+    <string name="tool_watch_title">Continuous watch</string>
+    <string name="tool_watch_desc_off">Checks your apps every 15 minutes and warns you if one that looks like adware gets installed, or if a hidden app starts showing ads, before it takes over the screen.</string>
+    <string name="tool_watch_desc_on">On: checks your apps every 15 minutes and warns you with a notification. With "Usage access" it also sees hidden apps that show ads.</string>
+    <string name="tool_watch_button_on">Turn on</string>
+    <string name="tool_watch_button_off">Turn off</string>
+    <string name="watch_on_done">Watch turned on</string>
+    <string name="watch_off_done">Watch turned off</string>
+    <string name="watch_no_notify">Watch turned on, but without permission to notify: allow it in Cleaner\'s notification settings</string>
+    <string name="watch_channel">Suspicious apps</string>
+    <string name="watch_new_title">"%1$s" was installed and looks like adware</string>
+    <string name="watch_alert_title">"%1$s" looks like adware</string>
+    <string name="watch_tap">Tap to see how to remove it.</string>
+    <string name="watch_already_gone">That app is no longer installed</string>
 </resources>

@@ -79,9 +79,9 @@ class ToolsFlowTest {
             assertEquals("2 apps · 190,0 MB", appsCard.findViewById<TextView>(R.id.stats).text.toString())
             assertTrue(!appsCard.findViewById<MaterialSwitch>(R.id.toggle).isChecked)
 
-            // Con ambos permisos quedan la caché, el antivirus en la nube y Play Protect; la caché abre el diálogo del sistema.
+            // Con ambos permisos quedan la caché, el antivirus en la nube, los anuncios, la vigilancia y Play Protect; la caché abre el diálogo del sistema.
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(4, tools.size)
+            assertEquals(5, tools.size)
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()
             idle()
             val cacheReq = a.nextResultRequest()
@@ -311,9 +311,11 @@ class ToolsFlowTest {
             val list = dialog.listView
             assertEquals(3, list.adapter.count)
             val first = list.adapter.getItem(0).toString()
-            assertTrue(first, first.startsWith("App nunca abierta · hace 1") && first.endsWith("2 veces"))
+            assertTrue(first, first.startsWith("App nunca abierta · hace 1") && first.contains("2 veces"))
+            // Ninguna de estas apps de prueba tiene ícono en el lanzador: se marcan como sospechosas.
+            assertTrue(first, first.endsWith(a.getString(R.string.ads_hidden)))
             val second = list.adapter.getItem(1).toString()
-            assertEquals("App olvidada · hace 1 min · trabajando en segundo plano", second)
+            assertEquals("App olvidada · hace 1 min · trabajando en segundo plano · sin ícono (sospechosa)", second)
             val third = list.adapter.getItem(2).toString()
             assertTrue(third, third.startsWith("App reciente · hace 10 min"))
             Screenshots.snap(dialog.window!!.decorView, "15-quien-muestra-anuncios")
@@ -391,7 +393,7 @@ class ToolsFlowTest {
             assertEquals(View.VISIBLE, a.v<View>(R.id.scopeBanner).visibility)
             assertEquals(a.getString(R.string.scope_gallery), a.v<TextView>(R.id.resultsScope).text.toString())
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(4, tools.size)
+            assertEquals(5, tools.size)
             assertEquals(a.getString(R.string.tool_usage_title), tools[0].findViewById<TextView>(R.id.title).text.toString())
             Screenshots.snap(a.window.decorView, "10-resultados-sin-permisos")
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()

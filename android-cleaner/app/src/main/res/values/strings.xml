@@ -242,7 +242,7 @@
     <string name="tool_ads_desc">Cuando un anuncio te bloquee la pantalla o salte un aviso, abre Limpiador y toca aquí: verás qué app acaba de ocupar la pantalla o trabajar en segundo plano. Tócala para ver cómo quitarla.</string>
     <string name="tool_ads_button">Buscar</string>
     <string name="ads_need_usage">Para saber qué app abrió cada pantalla hace falta el «Acceso a datos de uso». Actívalo y vuelve a tocar Buscar.</string>
-    <string name="ads_none">Ninguna app instalada por ti mostró pantallas en los últimos 30 minutos.</string>
+    <string name="ads_none">Ninguna app instalada por ti mostró pantallas en los últimos 30 minutos. Otra pista: en Ajustes › Aplicaciones › Tiempo de uso, la app con minutos que tú no usaste suele ser la de los anuncios.</string>
     <string name="ads_seconds_ago">hace %1$d s</string>
     <string name="ads_minutes_ago">hace %1$d min</string>
     <plurals name="ads_times">
@@ -266,7 +266,7 @@
     <string name="help_details">Abrir su ficha: Forzar detención y luego Desinstalar</string>
     <string name="help_retry">Intentar desinstalarla de nuevo</string>
     <string name="help_safe_mode">Si nada funciona: modo seguro</string>
-    <string name="help_safe_mode_steps">En modo seguro no corre ninguna app de terceros, así que no puede impedir que la quites.\n\n1. Mantén presionado el botón de encendido.\n2. Mantén presionado «Apagar» hasta que ofrezca «Modo seguro» y acepta (en algunos Xiaomi: apaga, enciende y mantén presionado Bajar volumen mientras arranca).\n3. Ve a Ajustes › Aplicaciones, busca la app y desinstálala.\n4. Reinicia normalmente.\n\nLos pasos cambian según el fabricante.</string>
+    <string name="help_safe_mode_steps">En modo seguro no corre ninguna app de terceros, así que ninguna puede tapar la pantalla ni impedir que la quites. Si el botón Desinstalar no responde, casi siempre es porque otra app lo tapa: esta es la salida.\n\n1. Abre el menú de apagado: en Motorola, mantén encendido + Subir volumen a la vez (o desliza desde arriba y toca ⏻); en otros teléfonos basta mantener encendido.\n2. Mantén el dedo sobre «Apagar» hasta que pregunte «¿Reiniciar en modo seguro?» y acepta.\n3. Si no lo ofrece: apaga el teléfono, enciéndelo solo con el botón de encendido y, 2–3 segundos después de que aparezca el logo, mantén Bajar volumen hasta ver la pantalla de bloqueo (puede tardar). Si lo aprietas antes de tiempo aparece una pantalla técnica con un Android verde: elige START con el botón de encendido y repite.\n4. En modo seguro, ve a Ajustes › Aplicaciones, busca la app y desinstálala.\n5. Para salir, reinicia normalmente.\n\nLos pasos cambian según el fabricante.</string>
     <string name="help_copy_adb">Comandos para el computador</string>
     <string name="help_close">Cerrar</string>
     <string name="adb_header"># Limpiador: apps que no se dejaron desinstalar. Pega cada línea en la terminal del computador.</string>
@@ -274,4 +274,20 @@
     <string name="adb_share">Enviar al computador</string>
     <string name="adb_copy">Copiar</string>
     <string name="adb_copied">Comandos copiados</string>
+    <!-- v2.14: apps que se hacen pasar por el sistema y vigilancia en segundo plano -->
+    <string name="reason_impersonates">se hace pasar por parte del teléfono (las apps de sistema de verdad no se instalan)</string>
+    <string name="ads_hidden">sin ícono (sospechosa)</string>
+    <string name="tool_watch_title">Vigilancia continua</string>
+    <string name="tool_watch_desc_off">Revisa tus apps cada 15 minutos y te avisa si se instala una que parece adware o si una app oculta empieza a mostrar anuncios, antes de que se apodere de la pantalla.</string>
+    <string name="tool_watch_desc_on">Activa: revisa tus apps cada 15 minutos y te avisa con una notificación. Con «Acceso a datos de uso» también ve las apps ocultas que muestran anuncios.</string>
+    <string name="tool_watch_button_on">Activar</string>
+    <string name="tool_watch_button_off">Desactivar</string>
+    <string name="watch_on_done">Vigilancia activada</string>
+    <string name="watch_off_done">Vigilancia desactivada</string>
+    <string name="watch_no_notify">Vigilancia activada, pero sin permiso para avisar: actívalo en los ajustes de notificaciones de Limpiador</string>
+    <string name="watch_channel">Apps sospechosas</string>
+    <string name="watch_new_title">Se instaló «%1$s», que parece adware</string>
+    <string name="watch_alert_title">«%1$s» parece adware</string>
+    <string name="watch_tap">Toca para ver cómo quitarla.</string>
+    <string name="watch_already_gone">Esa app ya no está instalada</string>
 </resources>

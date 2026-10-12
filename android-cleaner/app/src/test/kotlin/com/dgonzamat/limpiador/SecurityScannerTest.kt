@@ -103,6 +103,18 @@ class SecurityScannerTest {
         assertNull(RiskRules.assess(facts(label = "WhatsApp"), baitApps = 10))
         // Trabajar en segundo plano no basta por sí solo (música, navegación).
         assertNull(RiskRules.assess(facts(label = "Música").copy(backgroundLastDay = 20)))
+        // Se hace pasar por el sistema (caso real: «System App», sin ícono, fuera de tienda): alto
+        // aunque no haya acceso de uso para ver sus anuncios.
+        for (name in listOf("System App", "system", "Servicio del sistema", "Google Play Services", "Android System", "Ajustes", "Actualización"))
+            assertTrue(name, RiskRules.impersonatesSystem(name))
+        for (name in listOf("System Monitor Pro", "Ajustes de cámara", "Google Maps", "Servicios Bancarios", "Systema"))
+            assertFalse(name, RiskRules.impersonatesSystem(name))
+        val impostor = RiskRules.assess(facts(label = "System App", installer = "com.google.android.packageinstaller", launcher = false))!!
+        assertTrue(impostor.high)
+        assertTrue(RiskSignal.IMPERSONATES in impostor.signals)
+        // De tienda y con ícono también se lista, pero como riesgo medio.
+        val storeImpostor = RiskRules.assess(facts(label = "System App"))!!
+        assertFalse(storeImpostor.high)
         // Tiendas conocidas no suman «no viene de una tienda».
         for (store in RiskRules.TRUSTED_STORES) assertFalse(RiskSignal.SIDELOADED in RiskRules.signals(facts(installer = store)))
     }
@@ -157,7 +169,7 @@ class SecurityScannerTest {
 
     @Test
     fun el_adware_que_aparece_sin_icono_se_explica_con_el_conteo() = runBlocking {
-        val items = SecurityScanner(ctx) { listOf(facts("com.ads", label = "Servicio", launcher = false).copy(screensLastDay = 7)) }.scan()
+        val items = SecurityScanner(ctx) { listOf(facts("com.ads", label = "Utilidades", launcher = false).copy(screensLastDay = 7)) }.scan()
         assertEquals("Riesgo alto: no tiene ícono, pero apareció en pantalla 7 veces en 24 h (anuncios a pantalla completa), no tiene ícono visible", items.single().note)
     }
 
