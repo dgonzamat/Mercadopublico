@@ -100,8 +100,11 @@ const SLOP = {
   "intensificador vacío (crucial, clave, fundamental…)": /\b(?:crucial|cabe destacar|vale la pena|sin duda|en definitiva|fundamental(?:mente)?|crucially|it is worth noting|notably|undoubtedly)\b/i,
 };
 console.log("\nIA slop · prosa de las fichas:");
+// Lo citado entre comillas es de la fuente, no del redactor («sin duda» en
+// boca de un informe de 1951 no es relleno): se excluye, como en E7b.
+const unquoted = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "");
 for (const [label, re] of Object.entries(SLOP)) {
-  const hit = cases.filter((c) => re.test(prose(c)));
+  const hit = cases.filter((c) => re.test(unquoted(prose(c))));
   console.log(`  ${label}: ${hit.length} fichas · ${byTier(hit)}`);
 }
 const srcFiles = (dir) => fs.readdirSync(path.join(ROOT, dir), { recursive: true }).filter((f) => /\.tsx$/.test(f)).map((f) => path.join(dir, f));
