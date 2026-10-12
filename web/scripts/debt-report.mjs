@@ -49,11 +49,16 @@ const MARKERS = {
   "«honesto»": /\bhonest/i,
   "«Es uno de los»": /\bEs uno de los\b|\bIt is one of the\b/,
 };
+// Lo citado es de la fuente, y la sinceridad de un testigo («hombre honesto»,
+// «testigos honestos», «reporta honestamente lo que vio») es un dato del caso:
+// ninguno es la muletilla del redactor que alaba su propia lectura.
+const SINCERE = /hombre honesto|honest man|testigos honestos|honest witnesses|honestamente lo que vio|honestly reports?|describe it honestly/gi;
+const unquotedProse = (c) => prose(c).replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "").replace(SINCERE, "");
 console.log("\nProsa · fichas con muletillas (C3 = Tier A, C4/C5 = Tier B):");
-const anyHit = cases.filter((c) => Object.values(MARKERS).some((re) => re.test(prose(c))));
+const anyHit = cases.filter((c) => Object.values(MARKERS).some((re) => re.test(unquotedProse(c))));
 console.log(`  total: ${anyHit.length} fichas · ${byTier(anyHit)}`);
 for (const [label, re] of Object.entries(MARKERS)) {
-  const hit = cases.filter((c) => re.test(prose(c)));
+  const hit = cases.filter((c) => re.test(unquotedProse(c)));
   console.log(`  ${label}: ${hit.length} · ${byTier(hit)}`);
 }
 
