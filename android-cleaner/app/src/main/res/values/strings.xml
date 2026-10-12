@@ -290,4 +290,22 @@
     <string name="watch_alert_title">«%1$s» parece adware</string>
     <string name="watch_tap">Toca para ver cómo quitarla.</string>
     <string name="watch_already_gone">Esa app ya no está instalada</string>
+    <!-- v2.15: prevenir -->
+    <string name="tool_prevent_title">Blindar el teléfono</string>
+    <string name="tool_prevent_desc">Siete ajustes que cierran las puertas por donde entra el adware: anuncios bloqueados en todo el teléfono, nadie instala ni dibuja encima sin tu permiso y aviso si algo se cuela. Te lleva a cada uno y te dice qué elegir.</string>
+    <string name="tool_prevent_button">Revisar</string>
+    <string name="prevent_title">Blindar el teléfono</string>
+    <string name="prevent_dns">Bloquear los anuncios en todo el teléfono (DNS privado)</string>
+    <string name="prevent_dns_steps">El adware llega por anuncios: si los anuncios no cargan, no hay botón «Clean now» que tocar. Un DNS privado con filtro los bloquea en todas las apps y en el navegador, sin instalar nada.\n\nAl tocar «Abrir ajustes» se copia dns.adguard-dns.com. En Red e Internet › DNS privado (a veces dentro de «Configuración avanzada»), elige «Nombre de host del proveedor», pega y guarda.\n\nOjo: también bloquea anuncios de apps legítimas y alguna página puede fallar; para quitarlo, vuelve a «Automático». Tus consultas de nombres pasan por AdGuard.</string>
+    <string name="prevent_unknown">Que ninguna app pueda instalar otras</string>
+    <string name="prevent_unknown_steps">Así se instala la cadena: una app o el navegador pide permiso para «instalar apps desconocidas» y luego instala más. En la lista que se abre, deja todas en «No permitido». Si un día instalas un APK a propósito (como Limpiador), lo permites solo en ese momento.</string>
+    <string name="prevent_overlay">Que ninguna app desconocida dibuje sobre las demás</string>
+    <string name="prevent_overlay_steps">Con este permiso una app tapa la pantalla con anuncios y bloquea botones como Desinstalar. En la lista que se abre, quítaselo a toda app que no reconozcas o que no lo necesite (los chats con burbujas sí lo usan).</string>
+    <string name="prevent_accessibility">Revisar quién controla la pantalla (accesibilidad)</string>
+    <string name="prevent_accessibility_steps">Una app con accesibilidad puede tocar y leer por ti, y cerrar la pantalla de desinstalar. En «Apps instaladas» apaga cualquier servicio que no hayas activado tú a propósito.</string>
+    <string name="prevent_chrome">Bloquear avisos y ventanas de sitios en Chrome</string>
+    <string name="prevent_chrome_steps">Muchas páginas piden «permitir notificaciones» y después mandan anuncios falsos de virus. En Chrome: ⋮ › Configuración › Configuración de sitios:\n\n• Notificaciones: «No permitir que los sitios envíen notificaciones».\n• Ventanas emergentes y redireccionamientos: bloquear.</string>
+    <string name="prevent_protect">Tener Play Protect activo</string>
+    <string name="prevent_watch">Activar la vigilancia continua de Limpiador</string>
+    <string name="prevent_watch_on">Vigilancia continua de Limpiador: activa ✓</string>
 </resources>

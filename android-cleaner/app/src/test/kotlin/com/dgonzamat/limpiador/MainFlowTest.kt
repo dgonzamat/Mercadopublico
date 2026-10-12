@@ -139,11 +139,11 @@ class MainFlowTest {
             )
             // Herramientas: caché del sistema (hay acceso a archivos) y activar acceso de uso (no lo hay).
             val tools = a.v<android.view.ViewGroup>(R.id.toolsContainer)
-            assertEquals(6, tools.childCount)
+            assertEquals(7, tools.childCount)
             assertEquals(
                 listOf(
                     R.string.tool_cache_title, R.string.tool_usage_title, R.string.tool_vt_title, R.string.tool_ads_title,
-                    R.string.tool_watch_title, R.string.tool_protect_title,
+                    R.string.tool_watch_title, R.string.tool_prevent_title, R.string.tool_protect_title,
                 ).map(a::getString),
                 (0 until tools.childCount).map { tools.getChildAt(it).findViewById<TextView>(R.id.title).text.toString() },
             )

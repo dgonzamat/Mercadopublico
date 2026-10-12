@@ -278,4 +278,22 @@
     <string name="watch_alert_title">"%1$s" looks like adware</string>
     <string name="watch_tap">Tap to see how to remove it.</string>
     <string name="watch_already_gone">That app is no longer installed</string>
+    <!-- v2.15: prevent -->
+    <string name="tool_prevent_title">Harden the phone</string>
+    <string name="tool_prevent_desc">Seven settings that close the doors adware comes in through: ads blocked phone-wide, nothing installs or draws on top without your permission, and a warning if something slips in. It takes you to each one and tells you what to pick.</string>
+    <string name="tool_prevent_button">Review</string>
+    <string name="prevent_title">Harden the phone</string>
+    <string name="prevent_dns">Block ads across the whole phone (Private DNS)</string>
+    <string name="prevent_dns_steps">Adware arrives through ads: if ads do not load, there is no "Clean now" button to tap. A filtering Private DNS blocks them in every app and the browser, with nothing to install.\n\nTapping "Open settings" copies dns.adguard-dns.com. In Network &amp; internet › Private DNS (sometimes under "Advanced"), choose "Private DNS provider hostname", paste and save.\n\nNote: it also blocks ads in legitimate apps and some page may fail; to undo it, go back to "Automatic". Your name lookups go through AdGuard.</string>
+    <string name="prevent_unknown">Stop any app from installing others</string>
+    <string name="prevent_unknown_steps">This is how the chain installs: an app or the browser asks to "install unknown apps" and then installs more. In the list that opens, set them all to "Not allowed". If one day you install an APK on purpose (like Cleaner), allow it just for that moment.</string>
+    <string name="prevent_overlay">Stop unknown apps from drawing over others</string>
+    <string name="prevent_overlay_steps">With this permission an app covers the screen with ads and blocks buttons like Uninstall. In the list that opens, remove it from any app you do not recognise or that does not need it (chat bubbles do use it).</string>
+    <string name="prevent_accessibility">Check who controls the screen (accessibility)</string>
+    <string name="prevent_accessibility_steps">An app with accessibility can tap and read for you, and close the uninstall screen. Under "Installed apps", turn off any service you did not turn on on purpose.</string>
+    <string name="prevent_chrome">Block site notifications and pop-ups in Chrome</string>
+    <string name="prevent_chrome_steps">Many pages ask to "allow notifications" and then send fake virus ads. In Chrome: ⋮ › Settings › Site settings:\n\n• Notifications: "Don\'t allow sites to send notifications".\n• Pop-ups and redirects: block.</string>
+    <string name="prevent_protect">Keep Play Protect on</string>
+    <string name="prevent_watch">Turn on Cleaner\'s continuous watch</string>
+    <string name="prevent_watch_on">Cleaner\'s continuous watch: on ✓</string>
 </resources>

@@ -17,7 +17,7 @@ App Android (Kotlin, Material 3 con colores dinámicos de Material You) que anal
 | Descargas antiguas | en `Download/` desde hace más de 30 días | no | todos los archivos |
 | Apps que no usas | sin abrir en 60 días, con tamaño app+datos+caché | no | datos de uso |
 
-Más una sección **Más espacio** con el vaciado de **caché de todas las apps** (diálogo del sistema `ACTION_CLEAR_APP_CACHE`), la herramienta **«¿Qué app muestra los anuncios?»** (tras un anuncio que bloquea la pantalla o un aviso que salta, lista las últimas apps que ocuparon la pantalla o arrancaron un servicio con aviso fijo, y muestra cómo quitarlas), la configuración del **antivirus en la nube** (clave de VirusTotal), la **vigilancia continua** (cada ~15 minutos revisa las apps con las mismas reglas y avisa con una notificación si se instala una que parece adware o si una se hace pasar por el sistema o abre pantallas sin tener ícono; tocar el aviso abre los pasos para quitarla), un acceso a **Google Play Protect** y accesos directos para conceder los dos permisos opcionales.
+Más una sección **Más espacio** con el vaciado de **caché de todas las apps** (diálogo del sistema `ACTION_CLEAR_APP_CACHE`), la herramienta **«¿Qué app muestra los anuncios?»** (tras un anuncio que bloquea la pantalla o un aviso que salta, lista las últimas apps que ocuparon la pantalla o arrancaron un servicio con aviso fijo, y muestra cómo quitarlas), la configuración del **antivirus en la nube** (clave de VirusTotal), la **vigilancia continua** (cada ~15 minutos revisa las apps con las mismas reglas y avisa con una notificación si se instala una que parece adware o si una se hace pasar por el sistema o abre pantallas sin tener ícono; tocar el aviso abre los pasos para quitarla), **Blindar el teléfono** (prevención: lleva a los siete ajustes que cierran la puerta al adware — DNS privado que bloquea anuncios en todo el teléfono, nadie instala apps desconocidas, nadie dibuja encima, accesibilidad, avisos de sitios en Chrome, Play Protect y la vigilancia — y explica qué elegir en cada uno), un acceso a **Google Play Protect** y accesos directos para conceder los dos permisos opcionales.
 
 **Cómo se elimina cada cosa**: fotos y videos pasan por `MediaStore.createDeleteRequest` (confirmación de Android y papelera de 30 días donde exista); los archivos y carpetas se borran de inmediato tras la confirmación de la app; las apps se desinstalan una por una con el diálogo del sistema.
 
@@ -36,7 +36,7 @@ Si el análisis corrió sin «Acceso a todos los archivos», los resultados lo d
 
 ## Instalar
 
-1. Descarga `dist/limpiador-v2.14.apk` en el teléfono.
+1. Descarga `dist/limpiador-v2.15.apk` en el teléfono.
 2. Ábrelo; Android pedirá permitir «instalar apps desconocidas» para el navegador o el gestor de archivos.
 3. Al abrir la app, concede el permiso de fotos y videos y pulsa **Buscar archivos basura**.
 
@@ -100,6 +100,7 @@ app/src/main/kotlin/com/dgonzamat/limpiador/
 - Las palabras de «utilidad cebo» (galería, lector de PDF, recuperar…) también describen apps legítimas. Por eso solo suman con otra señal o cuando hay 4 o más instaladas a la vez; aun así puede haber falsos positivos, y nada se marca solo.
 - Los comandos ADB no los probé contra malware real: `pm uninstall` falla mientras la app siga siendo administradora (hay que quitarle ese permiso antes), y no sé si `pm disable-user` funciona sobre una administradora activa.
 - **Caso real que guió la v2.14** (Moto g55, oct 2026): los anuncios a pantalla completa venían de una app llamada «System App», con el ícono genérico de Android, sin ícono en el lanzador e instalada por el usuario; tenía 29 minutos de «uso» en el día sin que nadie la abriera. El botón Desinstalar de otra app del mismo grupo no respondía fuera del modo seguro (otra app tapaba la pantalla), y en ese Motorola el modo seguro se abre con encendido + Subir volumen y manteniendo «Apagar»; Bajar volumen al encender lleva a Fastboot. La regla «se hace pasar por el sistema» y los pasos de modo seguro salen de ahí; no se probaron todavía con la app en ese teléfono.
+- «Blindar el teléfono» no cambia ni lee esos ajustes (una app sin root no puede): abre cada uno y explica qué elegir. El DNS privado sugerido es `dns.adguard-dns.com`, el que AdGuard publica en su documentación; bloquea también anuncios de apps legítimas y las consultas de nombres pasan por AdGuard.
 - La vigilancia usa JobScheduler: Android decide el momento exacto y puede atrasar la revisión con el teléfono en reposo o por el ahorro de batería del fabricante, así que «cada 15 minutos» es un mínimo, no una garantía. Sin permiso de notificaciones (Android 13+) revisa pero no puede avisar.
 - El acceso a Play Protect abre un componente de Google Play Services que no es una API pública documentada; si no existe, abre Ajustes › Seguridad.
 

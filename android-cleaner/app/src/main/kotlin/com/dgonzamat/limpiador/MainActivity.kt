@@ -39,6 +39,11 @@ import java.io.File
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        /** DNS privado de AdGuard que bloquea dominios de publicidad (hostname según su documentación oficial). */
+        const val PRIVATE_DNS = "dns.adguard-dns.com"
+    }
+
     private enum class Screen { WELCOME, SCANNING, RESULTS, DONE }
 
     /** Fases del análisis, en el orden en que corren; solo se listan las que aplican. */
@@ -479,6 +484,56 @@ class MainActivity : AppCompatActivity() {
      * Abre Play Protect. No hay una acción pública documentada para esa pantalla: se prueba el
      * componente de Google Play Services y, si no existe, los ajustes de seguridad.
      */
+    /**
+     * Prevenir: los ajustes que cierran las puertas por donde entra el adware. Una app sin root
+     * no puede cambiarlos ni leer cómo están, así que lleva a cada uno y dice qué elegir.
+     */
+    private fun showPrevention() {
+        val watchOn = Watchdog.isEnabled(this)
+        val rows = listOf(
+            R.string.prevent_dns, R.string.prevent_unknown, R.string.prevent_overlay, R.string.prevent_accessibility,
+            R.string.prevent_chrome, R.string.prevent_protect, if (watchOn) R.string.prevent_watch_on else R.string.prevent_watch,
+        )
+        MaterialAlertDialogBuilder(this)
+            .setTitle(R.string.prevent_title)
+            .setItems(rows.mapIndexed { i, r -> "${i + 1}. " + getString(r) }.toTypedArray()) { _, i ->
+                when (rows[i]) {
+                    R.string.prevent_dns -> explainThenOpen(R.string.prevent_dns, R.string.prevent_dns_steps, Intent(Settings.ACTION_WIRELESS_SETTINGS)) {
+                        val cm = getSystemService(android.content.ClipboardManager::class.java)
+                        cm.setPrimaryClip(android.content.ClipData.newPlainText("dns", PRIVATE_DNS))
+                    }
+                    R.string.prevent_unknown -> explainThenOpen(R.string.prevent_unknown, R.string.prevent_unknown_steps, Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES))
+                    R.string.prevent_overlay -> explainThenOpen(R.string.prevent_overlay, R.string.prevent_overlay_steps, Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION))
+                    R.string.prevent_accessibility -> explainThenOpen(R.string.prevent_accessibility, R.string.prevent_accessibility_steps, Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+                    R.string.prevent_chrome -> MaterialAlertDialogBuilder(this)
+                        .setTitle(R.string.prevent_chrome).setMessage(R.string.prevent_chrome_steps)
+                        .setPositiveButton(android.R.string.ok, null).show()
+                    R.string.prevent_protect -> openPlayProtect()
+                    R.string.prevent_watch -> toggleWatch()
+                    else -> Unit // vigilancia ya activa
+                }
+            }
+            .setNegativeButton(R.string.help_close, null)
+            .show()
+    }
+
+    /** Explica qué elegir y abre el ajuste; [before] corre justo antes (p. ej. copiar un texto). */
+    private fun explainThenOpen(title: Int, steps: Int, intent: Intent, before: () -> Unit = {}) {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(title)
+            .setMessage(steps)
+            .setPositiveButton(R.string.allfiles_open_settings) { _, _ ->
+                before()
+                try {
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    try { startActivity(Intent(Settings.ACTION_SETTINGS)) } catch (e2: Exception) { }
+                }
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
     private fun openPlayProtect() {
         val protect = Intent().setClassName("com.google.android.gms", "com.google.android.gms.security.settings.VerifyAppsSettingsActivity")
         for (intent in listOf(protect, Intent(Settings.ACTION_SECURITY_SETTINGS))) {
@@ -725,6 +780,8 @@ class MainActivity : AppCompatActivity() {
         val watchOn = Watchdog.isEnabled(this)
         tool(R.drawable.ic_shield, R.string.tool_watch_title, if (watchOn) R.string.tool_watch_desc_on else R.string.tool_watch_desc_off,
             if (watchOn) R.string.tool_watch_button_off else R.string.tool_watch_button_on) { toggleWatch() }
+        // Prevenir: los ajustes que cierran la puerta por donde entró el adware.
+        tool(R.drawable.ic_shield, R.string.tool_prevent_title, R.string.tool_prevent_desc, R.string.tool_prevent_button) { showPrevention() }
         // Play Protect sí tiene base de datos de malware conocido: complementa las señales de riesgo.
         tool(R.drawable.ic_shield, R.string.tool_protect_title, R.string.tool_protect_desc, R.string.tool_protect_button) { openPlayProtect() }
         b.toolsTitle.visibility = if (b.toolsContainer.childCount > 0) View.VISIBLE else View.GONE

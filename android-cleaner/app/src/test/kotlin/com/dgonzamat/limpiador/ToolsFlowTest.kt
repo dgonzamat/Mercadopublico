@@ -81,7 +81,7 @@ class ToolsFlowTest {
 
             // Con ambos permisos quedan la caché, el antivirus en la nube, los anuncios, la vigilancia y Play Protect; la caché abre el diálogo del sistema.
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(5, tools.size)
+            assertEquals(6, tools.size)
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()
             idle()
             val cacheReq = a.nextResultRequest()
@@ -336,6 +336,40 @@ class ToolsFlowTest {
     }
 
     @Test
+    fun blindar_el_telefono_lleva_a_cada_ajuste() {
+        ScanStore.items = listOf(JunkItem(Category.TINY, "x.jpg", 10, uri = android.net.Uri.parse("content://media/external/images/media/1")))
+        ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
+            idle()
+            val card = a.v<ViewGroup>(R.id.toolsContainer).children()
+                .single { it.findViewById<TextView>(R.id.title).text.toString() == a.getString(R.string.tool_prevent_title) }
+            card.findViewById<MaterialButton>(R.id.button).performClick()
+            idle()
+            val list = (ShadowDialog.getLatestDialog() as AlertDialog).listView
+            assertEquals(7, list.adapter.count)
+            assertEquals("1. " + a.getString(R.string.prevent_dns), list.adapter.getItem(0).toString())
+            Screenshots.snap(ShadowDialog.getLatestDialog().window!!.decorView, "18-blindar")
+            // DNS privado: explica, copia el servidor y abre los ajustes de red.
+            shadowOf(list).performItemClick(0)
+            idle()
+            val dns = ShadowDialog.getLatestDialog() as AlertDialog
+            assertTrue(dns.findViewById<TextView>(android.R.id.message)!!.text.contains(MainActivity.PRIVATE_DNS))
+            dns.getButton(AlertDialog.BUTTON_POSITIVE).performClick()
+            idle()
+            val clip = (a.getSystemService(android.content.Context.CLIPBOARD_SERVICE) as android.content.ClipboardManager).primaryClip!!
+            assertEquals(MainActivity.PRIVATE_DNS, clip.getItemAt(0).text.toString())
+            assertEquals(Settings.ACTION_WIRELESS_SETTINGS, shadowOf(a).nextStartedActivity.action)
+            // Instalar apps desconocidas: la lista de todas las apps con ese permiso.
+            card.findViewById<MaterialButton>(R.id.button).performClick()
+            idle()
+            shadowOf((ShadowDialog.getLatestDialog() as AlertDialog).listView).performItemClick(1)
+            idle()
+            (ShadowDialog.getLatestDialog() as AlertDialog).getButton(AlertDialog.BUTTON_POSITIVE).performClick()
+            idle()
+            assertEquals(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, shadowOf(a).nextStartedActivity.action)
+        }
+    }
+
+    @Test
     fun antivirus_en_la_nube_se_activa_con_la_clave_y_lo_dice() {
         ScanStore.items = listOf(JunkItem(Category.TINY, "x.jpg", 10, uri = android.net.Uri.parse("content://media/external/images/media/1")))
         ActivityScenario.launch(MainActivity::class.java).onActivity { a ->
@@ -393,7 +427,7 @@ class ToolsFlowTest {
             assertEquals(View.VISIBLE, a.v<View>(R.id.scopeBanner).visibility)
             assertEquals(a.getString(R.string.scope_gallery), a.v<TextView>(R.id.resultsScope).text.toString())
             val tools = a.v<ViewGroup>(R.id.toolsContainer).children()
-            assertEquals(5, tools.size)
+            assertEquals(6, tools.size)
             assertEquals(a.getString(R.string.tool_usage_title), tools[0].findViewById<TextView>(R.id.title).text.toString())
             Screenshots.snap(a.window.decorView, "10-resultados-sin-permisos")
             tools[0].findViewById<MaterialButton>(R.id.button).performClick()
