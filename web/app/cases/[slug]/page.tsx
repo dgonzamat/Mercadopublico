@@ -151,7 +151,17 @@ export async function CaseDetailPage(
   if (!c) notFound();
 
   const caseResearchers = researchersForCase(c.id);
-  const sortedByNum = [...cases].sort((a, b) => a.num - b.num);
+  // Un documento cuelga de lo que respalda: su miga lleva al primer caso que
+  // documenta si es uno solo o, si solo respalda a un actor, a ese actor.
+  const docParentCase = c.category === "document" && c.relatedCases?.length === 1 ? cases.find((x) => x.id === c.relatedCases?.[0]) : undefined;
+  const docParentActor = c.category === "document" && !docParentCase ? caseResearchers[0] : undefined;
+  const crumbParent = docParentCase
+    ? { href: `/cases/${docParentCase.id}`, es: docParentCase.name.split(" · ")[0], en: (docParentCase.name_en ?? docParentCase.name).split(" · ")[0] }
+    : docParentActor
+      ? { href: `/researchers/${docParentActor.id}`, es: docParentActor.name, en: docParentActor.name }
+      : { href: "/cases", es: "Casos", en: "Cases" };
+  // «Caso anterior / siguiente» recorre solo sucesos: un documento no es un caso.
+  const sortedByNum = cases.filter((x) => x.category !== "document").sort((a, b) => a.num - b.num);
   const idx = sortedByNum.findIndex((x) => x.id === c.id);
   const prev = idx > 0 ? sortedByNum[idx - 1] : null;
   const next = idx < sortedByNum.length - 1 ? sortedByNum[idx + 1] : null;
@@ -301,7 +311,7 @@ export async function CaseDetailPage(
       <BreadcrumbJsonLd
         items={[
           { href: "/", label: locale === "es" ? "Inicio" : "Home" },
-          { href: "/cases/", label: locale === "es" ? "Casos" : "Cases" },
+          { href: `${crumbParent.href}/`, label: locale === "es" ? crumbParent.es : crumbParent.en },
           { label: locale === "es" ? c.name : c.name_en ?? c.name },
         ]}
       />
@@ -310,7 +320,7 @@ export async function CaseDetailPage(
           locale={locale}
           items={[
             { href: "/", es: "Inicio", en: "Home" },
-            { href: "/cases", es: "Casos", en: "Cases" },
+            crumbParent,
             { es: c.name, en: c.name_en ?? c.name },
           ]}
         />
@@ -326,11 +336,12 @@ export async function CaseDetailPage(
         </div>
 
         <div className="grid grid-cols-[auto_1fr] items-baseline gap-x-6 gap-y-4 md:gap-x-10">
+          {/* El número es de caso: un documento no lo muestra. */}
           <span
             aria-hidden
             className="font-display text-4xl leading-none tabular-nums text-accent md:text-8xl"
           >
-            {String(c.num).padStart(2, "0")}
+            {c.category === "document" ? "" : String(c.num).padStart(2, "0")}
           </span>
           <div className="space-y-3">
             <p className="font-mono text-xs text-muted">
@@ -988,7 +999,8 @@ export async function CaseDetailPage(
         </section>
       )}
 
-      {/* ────────── PREV / NEXT NAVIGATION ────────── */}
+      {/* ────────── PREV / NEXT NAVIGATION (solo sucesos) ────────── */}
+      {c.category !== "document" && (
       <nav
         aria-label="Navegación entre casos"
         className="grid grid-cols-2 gap-px border-y-2 border-text bg-text"
@@ -1030,6 +1042,7 @@ export async function CaseDetailPage(
           <div className="bg-bg p-5" aria-hidden />
         )}
       </nav>
+      )}
     </article>
   );
 }
