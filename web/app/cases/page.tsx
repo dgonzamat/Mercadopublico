@@ -89,11 +89,14 @@ export default function CasesPage() {
 }
 
 export function CasesView({ locale }: { locale: "es" | "en" }) {
+  // Los documentos (memos, informes, expedientes) no son sucesos: tienen su
+  // propia lista en /documentos y aquí no se mezclan con los casos.
+  const incidents = cases.filter((c) => c.category !== "document");
   // CA-1 · la promesa de la Home es «caminar en orden cronológico»:
   // eras ascendentes (1947 → 2026) y, dentro de cada una, por año.
   const eras = ERAS.map((era) => ({
     era,
-    eraCases: cases
+    eraCases: incidents
       .filter((c) => c.year_start >= era.start && c.year_start <= era.end)
       .sort(
         (a, b) => a.year_start - b.year_start || b.probability - a.probability,
@@ -101,7 +104,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
   })).filter(({ eraCases }) => eraCases.length > 0);
 
   const regionCounts: Partial<Record<Region, number>> = {};
-  for (const c of cases) {
+  for (const c of incidents) {
     const r = regionOf(c.country);
     if (r) regionCounts[r] = (regionCounts[r] ?? 0) + 1;
   }
@@ -120,13 +123,13 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
     );
   }
   const hypCounts: Partial<Record<HypKey, number>> = {};
-  for (const c of cases) {
+  for (const c of incidents) {
     const h = modalById.get(c.id);
     if (h) hypCounts[h] = (hypCounts[h] ?? 0) + 1;
   }
 
   const tierCounts: Record<string, number> = {};
-  for (const c of cases) tierCounts[c.tier] = (tierCounts[c.tier] ?? 0) + 1;
+  for (const c of incidents) tierCounts[c.tier] = (tierCounts[c.tier] ?? 0) + 1;
   const tierOpts = TIER_ORDER.filter((t) => (tierCounts[t] ?? 0) > 0).map(
     (t) => ({
       key: t,
@@ -141,7 +144,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(casesCollectionJsonLd(cases, locale)),
+          __html: serializeJsonLd(casesCollectionJsonLd(incidents, locale)),
         }}
       />
       <script
@@ -163,8 +166,8 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`De 1947 a 2026, era por era. Junto a ellos, los ${TOTAL_DOCUMENTS} documentos oficiales que los respaldan.`}
-            en={`From 1947 to 2026, era by era. Alongside them, the ${TOTAL_DOCUMENTS} official documents that back them.`}
+            es={`De 1947 a 2026, era por era. Los ${TOTAL_DOCUMENTS} documentos que los respaldan aparecen dentro de cada caso.`}
+            en={`From 1947 to 2026, era by era. The ${TOTAL_DOCUMENTS} documents that back them appear inside each case.`}
             locale={locale}
           />
         </Lede>
@@ -197,7 +200,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
           count: eraCases.length,
         }))}
         tiers={tierOpts}
-        total={cases.length}
+        total={incidents.length}
       >
         <div className="space-y-8 pt-2">
           {/* CA-2 · cabecera de columnas — una sola vez, estilo tabla editorial */}

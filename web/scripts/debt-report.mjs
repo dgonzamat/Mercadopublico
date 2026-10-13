@@ -89,9 +89,10 @@ const checks = [
   ["evidencia con más de 8 ítems (plegada en la ficha desde el 6.º)", (c) => (c.evidence ?? []).length > 8],
   ["porqué de más de 700 caracteres (plegado en la ficha)", (c) => (c.classBasis?.es ?? "").length > 700],
   ["resumen de más de 700 caracteres (plegado en la ficha)", (c) => (c.summary ?? "").length > 700],
-  // Los documentos (memos, informes, filtraciones) viven en /cases/, llevan
-  // número de caso y la miga «Casos»: el lector los toma por sucesos.
-  ["documentos que se presentan como casos (URL /cases/, número y miga «Casos»)", (c) => c.category === "document"],
+  // Los documentos ya no están en la lista de /cases ni llevan número, y su
+  // miga lleva al caso o actor que respaldan; solo los que respaldan varios
+  // casos y ningún actor caen todavía en la miga genérica «Casos».
+  ["documentos con miga genérica «Casos» (respaldan varios casos)", (c) => c.category === "document" && (c.relatedCases ?? []).length !== 1 && !actorLinked.has(c.id)],
   // Un documento se justifica si respalda un caso (relatedCases) o un actor
   // (lib/researcherCases.ts); si no hace ninguna de las dos cosas, sobra.
   ["documentos que no respaldan ningún caso ni actor", (c) => c.category === "document" && !(c.relatedCases ?? []).length && !actorLinked.has(c.id)],
