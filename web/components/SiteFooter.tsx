@@ -88,7 +88,6 @@ export function SiteFooter() {
             </p>
             <ul className="space-y-1">
               <FooterLink href="/blog" es="Blog" en="Blog" locale={locale} />
-              <FooterLink href="/patterns" es="Patrones" en="Patterns" locale={locale} />
               <FooterLink href="/researchers" es="Actores" en="Actors" locale={locale} />
               <FooterLink
                 href="/frameworks"
@@ -100,12 +99,6 @@ export function SiteFooter() {
               <FooterLink href="/about" es="Metodología" en="Method" locale={locale} />
               <FooterLink href="/contact" es="Contacto" en="Contact" locale={locale} />
               <FooterLink href="/visitantes" es="Visitantes" en="Visitors" locale={locale} />
-              <FooterLink
-                href="/calidad"
-                es="Calidad del corpus"
-                en="Corpus quality"
-                locale={locale}
-              />
               <FooterLink href="/cobertura" es="Cobertura" en="Coverage" locale={locale} />
               <FooterLink
                 href="/fuentes"

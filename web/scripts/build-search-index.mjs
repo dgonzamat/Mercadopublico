@@ -218,16 +218,6 @@ const pageEntries = [
     keywords: "bibliografia sources FOIA",
   },
   {
-    id: "patterns",
-    name: "Patrones",
-    name_en: "Patterns",
-    subtitle: "Índice de patrones",
-    subtitle_en: "Pattern index",
-    summary: "Índice de patrones recurrentes del corpus.",
-    summary_en: "Index of recurring corpus patterns.",
-    keywords: "patrones patterns",
-  },
-  {
     id: "frameworks",
     name: "Marcos teóricos",
     name_en: "Theoretical frameworks",
@@ -279,7 +269,6 @@ const index = [
   ...caseEntries,
   ...researcherEntries,
   ...postEntries,
-  ...patternEntries,
   ...frameworkEntries,
   ...pageEntries,
 ];

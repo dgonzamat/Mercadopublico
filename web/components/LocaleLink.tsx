@@ -15,7 +15,6 @@ const MIRRORED = new Set([
   "",
   "cases",
   "blog",
-  "patterns",
   "researchers",
   "about",
   "probabilidades",

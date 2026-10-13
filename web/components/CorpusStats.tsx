@@ -1,9 +1,8 @@
 import { LocaleLink } from "@/components/LocaleLink";
 
-import { cases, patterns } from "@/lib/data";
+import { cases } from "@/lib/data";
 import {
   tierDistribution,
-  topPatterns,
   eraDistribution,
 } from "@/lib/corpusStats";
 import { T } from "@/components/T";
@@ -19,7 +18,6 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
   // Solo incidentes: los casos-documento son evidencia, no casos.
   const incidents = cases.filter((c) => c.category !== "document");
   const tiers = tierDistribution(incidents);
-  const top = topPatterns(incidents, patterns, 5);
   const eras = eraDistribution(incidents);
 
   return (
@@ -153,72 +151,6 @@ export function CorpusStats({ locale }: { locale: "es" | "en" }) {
         </div>
       </div>
 
-      <div className="space-y-6">
-        <Eyebrow>
-          <T
-            es="Top 5 patrones por frecuencia"
-            en="Top 5 patterns by frequency"
-            locale={locale}
-          />
-        </Eyebrow>
-        <ol className="divide-y divide-text/10 border-t border-text/15">
-          {top.map((p, i) => (
-            <li key={p.id}>
-              <LocaleLink
-                href={`/patterns/${p.letter}`}
-                className="grid grid-cols-[3rem_1fr_auto] items-baseline gap-6 py-5 transition hover:bg-panel/50 md:gap-8"
-              >
-                <span className="font-display text-2xl tabular-nums leading-none text-muted md:text-3xl">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div className="min-w-0 space-y-1">
-                  <p className="font-display text-lg leading-tight text-text md:text-xl">
-                    <T es={p.name} en={p.name_en} locale={locale} />
-                  </p>
-                  <p className="font-mono text-xs text-muted">
-                    <T es={`Patrón ${p.id}`} en={`Pattern ${p.id}`} locale={locale} />
-                  </p>
-                </div>
-                <div className="text-right">
-                  <span className="font-display text-3xl tabular-nums leading-none text-accent md:text-4xl">
-                    {p.count}
-                  </span>
-                  <p className="font-mono text-xs text-muted">
-                    <T es="casos" en="cases" locale={locale} />
-                  </p>
-                </div>
-              </LocaleLink>
-            </li>
-          ))}
-        </ol>
-        <Caption>
-          <T
-            es={
-              <>
-                ¿Quieres ver los {patterns.length} patrones?{" "}
-                <LocaleLink
-                  href="/patterns"
-                  className="text-accent hover:underline"
-                >
-                  Lista completa →
-                </LocaleLink>
-              </>
-            }
-            en={
-              <>
-                Want to see all {patterns.length} patterns?{" "}
-                <LocaleLink
-                  href="/patterns"
-                  className="text-accent hover:underline"
-                >
-                  Full list →
-                </LocaleLink>
-              </>
-            }
-            locale={locale}
-          />
-        </Caption>
-      </div>
     </section>
   );
 }

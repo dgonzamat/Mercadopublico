@@ -14,7 +14,6 @@ const SECTIONS = [
   "about",
   "cases",
   "blog",
-  "patterns",
   "researchers",
   "probabilidades",
   "resumen",

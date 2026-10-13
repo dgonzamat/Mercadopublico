@@ -67,7 +67,7 @@ web/
     cases/              # listado + detalle [slug]
     probabilidades/     # transparencia del juicio ICD-203
     atlas/              # Leaflet map (client)
-    patterns/           # 19 patrones recurrentes
+    (patterns/ retirada en oct 2026 por decisión del dueño: etiquetado irregular; el campo `patterns` sigue en los datos y en el laboratorio)
     researchers/        # ecosistema disclosure (5 secciones)
     frameworks/         # 11 frameworks teóricos comparados
     about/, resumen/    # metodología + 10-min summary
