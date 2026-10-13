@@ -259,7 +259,7 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
       </section>
 
       {/* Anclaje cuantitativo: tras los hallazgos cualitativos, lo que el
-          corpus permite contar literalmente (tiers, eras, patrones). Reubicado
+          corpus permite contar literalmente (tiers, eras). Reubicado
           desde /cases, donde competía con la navegación del archivo. */}
       <CorpusStats locale={locale} />
 

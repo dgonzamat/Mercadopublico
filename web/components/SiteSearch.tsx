@@ -55,8 +55,6 @@ function hrefFor(e: IndexEntry): string {
       return `/researchers/${e.id}`;
     case "post":
       return `/blog/${e.id}`;
-    case "pattern":
-      return `/patterns/${e.id}`;
     case "framework":
       return `/frameworks/#${e.id}`;
     case "page":

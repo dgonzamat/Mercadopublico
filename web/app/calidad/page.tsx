@@ -17,6 +17,9 @@ export const metadata = {
   // apuntaba a un 404 — Google descarta el cluster entero y se le entrega una
   // URL muerta. Ruta bilingüe en una sola URL, como /atlas o /fuentes.
   alternates: { canonical: "/calidad/" },
+  // Panel interno de salud editorial (decisión del dueño, oct 2026): fuera de
+  // Google, del sitemap y del pie; sigue accesible por URL.
+  robots: { index: false, follow: true },
 };
 
 // ─── métricas derivadas del corpus (build-time; se recalculan en cada deploy) ─

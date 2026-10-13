@@ -18,23 +18,8 @@
         "state": "esperando decisión"
       },
       {
-        "id": "U1",
-        "title": "/calidad: ocultarla a Google y sacarla del pie, o reescribirla para lectores",
-        "state": "esperando decisión"
-      },
-      {
         "id": "X1",
         "title": "Juicios del Historical Record de AARO",
-        "state": "esperando decisión"
-      },
-      {
-        "id": "k",
-        "title": "El patrón k cita Siria y ninguna ficha de Siria lleva ese patrón: quitarlo o etiquetar el caso",
-        "state": "esperando decisión"
-      },
-      {
-        "id": "P1",
-        "title": "Patrones: el etiquetado es irregular y no se explica en la ficha. ¿Retirar /patterns del sitio o rehacer la taxonomía?",
         "state": "esperando decisión"
       }
     ]

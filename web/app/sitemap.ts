@@ -1,6 +1,6 @@
 import { execSync } from "child_process";
 import type { MetadataRoute } from "next";
-import { cases, patterns, researchers, entityMorphologies } from "@/lib/data";
+import { cases, researchers, entityMorphologies } from "@/lib/data";
 import { posts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
@@ -62,10 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/cases/",
     "/probabilidades/",
-    "/calidad/",
     "/cobertura/",
     "/atlas/",
-    "/patterns/",
     "/frameworks/",
     "/entities/",
     "/researchers/",
@@ -94,13 +92,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: dateFor(`data/cases/${c.id}.json`),
     changeFrequency: "monthly" as const,
     priority: 0.6,
-  }));
-
-  const patternRoutes = patterns.map((p) => ({
-    url: `${SITE_URL}/patterns/${p.letter}/`,
-    lastModified: dateFor("data/patterns.json"),
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
   }));
 
   // Solo formas `present: true` tienen página — mismo criterio que
@@ -142,7 +133,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,
     ...caseRoutes,
-    ...patternRoutes,
     ...entityRoutes,
     ...researcherRoutes,
     ...postRoutes,
