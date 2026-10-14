@@ -2032,6 +2032,30 @@ const HYPE_REVIEWED = new Set(["cia-historical-uap-archive", "lakenheath-bentwat
   }
 }
 
+// ─── 9za7. RULE E49: ningún documento sin caso ni actor ──────────────────
+//
+// Decisión del dueño (oct 2026): un documento existe solo como respaldo de un
+// caso (`relatedCases`) o de un actor (lib/researcherCases.ts). Los que no
+// respaldaban nada se borraron, y no hay página de documentos sueltos: cuelgan
+// de su caso o de su actor. Esta regla impide que vuelva a entrar uno huérfano,
+// y que un `relatedCases` apunte a un caso que no existe o a otro documento.
+{
+  const rcSrc = fs.readFileSync(path.join(root, "lib", "researcherCases.ts"), "utf8");
+  const actorLinked = new Set([...rcSrc.matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
+  const byId = new Map(cases.map((c) => [c.id, c]));
+  for (const c of cases) {
+    if (c.category !== "document") continue;
+    const rel = c.relatedCases ?? [];
+    const f = path.join("data", "cases", `${c.id}.json`);
+    for (const id of rel) {
+      const t = byId.get(id);
+      if (!t) record("ERROR", f, 0, `E49 relatedCases apunta a un caso que no existe: ${id}.`);
+      else if (t.category === "document") record("ERROR", f, 0, `E49 relatedCases apunta a otro documento (${id}); debe apuntar a un incidente.`);
+    }
+    if (!rel.length && !actorLinked.has(c.id)) record("ERROR", f, 0, `E49 documento sin caso ni actor: añade relatedCases o enlázalo a un actor en lib/researcherCases.ts; si no respalda nada, se borra y su num va a data/retired-nums.json.`);
+  }
+}
+
 // ─── 9zb. RULE E43: la probabilidad se deriva del reparto ────────────────
 //
 // Cada incidente llevaba dos números escritos por separado —la «probabilidad»
