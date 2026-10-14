@@ -4143,23 +4143,41 @@
     "section": "B",
     "section_label": "Informantes / denunciantes",
     "credentials": "ex-Director de la UAP Task Force (UAPTF) + oficial de inteligencia de carrera (Marina/DIA)",
-    "bio_short": "Oficial de inteligencia de carrera que dirigió la UAP Task Force, el grupo oficial del Pentágono (2020–2022) que produjo la base del informe preliminar de la ODNI de 2021. Es citado por David Grusch como una fuente interna creíble del manejo del tema, y según varios relatos estuvo involucrado en líneas de investigación sobre materiales y recuperaciones. Tras dejar el gobierno pasó al sector privado. Aporta el eslabón institucional formal entre los casos navales y el ciclo de denuncias.",
+    "bio_short": "Oficial de inteligencia de carrera que dirigió la UAP Task Force, el grupo oficial del Pentágono (2020–2022) que produjo la base del informe preliminar de la ODNI de 2021. Es citado por David Grusch como una fuente interna creíble del manejo del tema, y según varios relatos estuvo involucrado en líneas de investigación sobre materiales y recuperaciones. Tras dejar el gobierno pasó al sector privado. Aporta el eslabón institucional formal entre los casos navales y el ciclo de denuncias. En octubre de 2026 publicó sus memorias, «Out of the Shadows», revisadas por 21 agencias antes de su publicación; en ellas relata que una fuente le aseguró que en Roswell (1947) se recuperaron restos y cuerpos no humanos, y en una entrevista con Fox News afirmó haber visto «con mis propios ojos» seres y naves no humanos. No ha aportado documentos que lo respalden.",
     "works": [
       {
         "year": 2021,
         "title": "Conducción de la UAP Task Force",
         "contribution": "Lideró el grupo oficial que alimentó el informe ODNI 2021",
         "contribution_en": "Led the official task force that fed the 2021 ODNI assessment"
+      },
+      {
+        "year": 2026,
+        "title": "Out of the Shadows: Revealing the Truth About Non-Human Intelligent Life (HarperCollins/William Morrow)",
+        "contribution": "Memorias: el relato de segunda mano sobre Roswell y su afirmación de haber visto seres y naves no humanos",
+        "contribution_en": "Memoir: the second-hand Roswell account and his claim to have seen non-human beings and craft"
       }
     ],
     "section_label_en": "Insiders / whistleblowers",
     "credentials_en": "Former Director of the UAP Task Force (UAPTF) + career intelligence officer (Navy/DIA)",
-    "bio_short_en": "A career intelligence officer who led the UAP Task Force, the Pentagon's official group (2020–2022) that produced the basis for the 2021 ODNI preliminary assessment. He is cited by David Grusch as a credible insider on the handling of the topic, and per several accounts was involved in lines of inquiry into materials and retrievals. After leaving government he moved to the private sector. He provides the formal institutional link between the Navy cases and the whistleblower cycle.",
+    "bio_short_en": "A career intelligence officer who led the UAP Task Force, the Pentagon's official group (2020–2022) that produced the basis for the 2021 ODNI preliminary assessment. He is cited by David Grusch as a credible insider on the handling of the topic, and per several accounts was involved in lines of inquiry into materials and retrievals. After leaving government he moved to the private sector. He provides the formal institutional link between the Navy cases and the whistleblower cycle. In October 2026 he published his memoir, Out of the Shadows, reviewed by 21 agencies before release; in it he relates that a source assured him wreckage and non-human bodies were recovered at Roswell (1947), and in an interview with Fox News he said he had seen non-human beings and craft 'with my own eyes'. He has produced no documents to support it.",
     "sources": [
       {
         "name": "ODNI — 'Preliminary Assessment: Unidentified Aerial Phenomena' (2021)",
         "note": "Producto de la UAP Task Force dirigida por Stratton.",
         "note_en": "Product of the UAP Task Force led by Stratton."
+      },
+      {
+        "name": "PEOPLE (Johnny Dodd), 13 oct 2026 (republicado en Yahoo)",
+        "url": "https://www.yahoo.com/news/science/articles/pentagon-ufo-hunter-reveals-himself-160723870.html",
+        "note": "Extractos del libro; dato de la revisión por 21 agencias.",
+        "note_en": "Book excerpts; the 21-agency review."
+      },
+      {
+        "name": "AOL/SoapCentral, 13 oct 2026, sobre su entrevista con Fox News",
+        "url": "https://www.aol.com/articles/seen-non-human-beings-ex-094318000.html",
+        "note": "Cita: «I have seen non-human beings and non-human crafts with my own eyes».",
+        "note_en": "Quote: 'I have seen non-human beings and non-human crafts with my own eyes'."
       }
     ]
   },

@@ -100,7 +100,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   keyhoe: ["washington-dc-1952"],
   kirkpatrick: ["uss-jackson-2023", "usper-2025", "mosul-orb-2016"],
   nell: ["grusch-testimony-2023"],
-  stratton: ["grusch-testimony-2023"],
+  stratton: ["grusch-testimony-2023", "roswell-1947"],
   gallaudet: ["nimitz-2004"],
 
   // C — actores políticos
