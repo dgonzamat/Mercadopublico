@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import { cases, getEntityMorphology } from "@/lib/data";
-import { CATEGORY_META, DOC_TIER_META } from "@/lib/ui";
+import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, shortLabel } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
@@ -393,7 +393,12 @@ export async function CaseDetailPage(
             y la categoría solo se dice cuando no es un incidente. El reparto
             completo va una sola vez, en el bloque «Qué fue» de abajo. */}
         <p className="flex flex-wrap items-baseline gap-x-4 gap-y-1 border-y-2 border-text py-3 font-mono text-sm text-text">
-          <span>Tier <strong className="font-semibold">{c.tier}</strong></span>
+          <span>
+            Tier <strong className="font-semibold">{c.tier}</strong>
+            {!isLinkedDoc && c.category !== "document" && (
+              <span className="font-sans text-muted"> · <T locale={locale} es={TIER_META[c.tier].plain} en={TIER_META[c.tier].plain_en} /></span>
+            )}
+          </span>
           {isLinkedDoc ? (
             <span>
               <T locale={locale}
@@ -416,6 +421,11 @@ export async function CaseDetailPage(
             </LocaleLink>
           )}
         </p>
+        {!isLinkedDoc && c.category !== "document" && (
+          <Caption>
+            <T locale={locale} es={`${TIER_META[c.tier].description}.`} en={`${TIER_META[c.tier].description_en}.`} />
+          </Caption>
+        )}
         {isLinkedDoc && (
         <Caption>
           <T locale={locale}
