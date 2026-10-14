@@ -265,6 +265,14 @@ export function CasePosterior({
           </div>
         ))}
       </div>
+      {/* Leyenda de la barra sin cifras: la única cifra visible es la de arriba. */}
+      <div className="mt-1 flex w-full gap-1 text-xs text-muted">
+        {groups.map((g) => (
+          <span key={g.id} className="min-w-0 truncate" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
+            {g.sub >= 15 && <T es={g.es} en={g.en} locale={locale} />}
+          </span>
+        ))}
+      </div>
       <details className="mt-3">
       <summary className="cursor-pointer text-sm text-accent hover:underline">
         <T es="Ver el reparto entre las seis explicaciones" en="See the split across the six explanations" locale={locale} />

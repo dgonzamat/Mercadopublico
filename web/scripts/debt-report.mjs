@@ -89,7 +89,7 @@ const joinProse = (c, sfx) => [...PROSE.map((k) => c[k + sfx] ?? ""), ...(c["evi
 const actorLinked = new Set([...fs.readFileSync(path.join(ROOT, "lib/researcherCases.ts"), "utf8").matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
 const checks = [
   // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.
-  ["comillas españolas «» en el texto inglés", (c) => joinProse(c, "_en").includes("«")],
+  ["comillas españolas «» en el texto inglés (prosa y fuente del porqué)", (c) => joinProse(c, "_en").includes("«") || (c.classBasis?.source && (c.classBasis.source_en ?? c.classBasis.source).includes("«"))],
   ["comillas rectas sueltas en el texto español", (c) => /(?<![\w\d])"[A-Za-zÁÉÍÓÚáéíóúñ]/.test(joinProse(c, "").replace(/«[^«»]*(?:«[^«»]*»[^«»]*)*»/g, ""))],
   ["evidencia con más de 8 ítems (plegada en la ficha desde el 6.º)", (c) => (c.evidence ?? []).length > 8],
   ["porqué de más de 700 caracteres (plegado en la ficha)", (c) => (c.classBasis?.es ?? "").length > 700],
