@@ -18,6 +18,7 @@
   "category": "incident",
   "epistemicStatus": "documented",
   "mundanoType": "psicosocial",
+  "objectDetail": "contagio_colectivo",
   "probability": 26,
   "patterns": [
     "8a",

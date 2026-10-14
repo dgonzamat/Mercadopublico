@@ -45,7 +45,12 @@ const prose = (c) =>
     .filter(Boolean)
     .join("\n");
 const MARKERS = {
-  "«el corpus»": /\b(?:el|este|del|al) corpus\b|\bthe corpus\b/i,
+  // Autorreferencias al archivo, no «corpus» como conjunto de datos de una
+  // fuente («corpus de video de Yalman»): el primer barrido solo miraba «el
+  // corpus»/«the corpus» y dejó ~45 fichas con «this corpus», «un corpus
+  // calibrado» o «Ireland's first corpus case» (oct 2026).
+  "«el corpus»": /\b(?:el|este|del|al|mismo) corpus\b|\b(?:the|this|same|calibrated|institutional|PURSUE) corpus\b|\bun corpus (?:calibrado|que|donde|serio)\b|\ba corpus (?:that|where|tracking)\b|\bcorpus (?:case|cases|file|pattern)\b/i,
+  "nota de sesión": /\besta (?:misma )?sesión\b|\bthis (?:same )?session\b|\bthis session's\b/i,
   "«honesto»": /\bhonest/i,
   "«Es uno de los»": /\bEs uno de los\b|\bIt is one of the\b/,
 };
