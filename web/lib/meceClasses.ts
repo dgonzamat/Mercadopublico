@@ -93,7 +93,7 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   { key: "astronomico", label: "Objeto astronómico", labelEn: "Astronomical object", color: "#3d6a8f" },
   { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#7d95a6" },
   { key: "espacial", label: "Objeto espacial", labelEn: "Space object", color: "#3f4e5a" },
-  { key: "luces_tierra", label: "En tierra", labelEn: "Ground-level", color: "#9a6a8a" },
+  { key: "luces_tierra", label: "Luz o actividad humana", labelEn: "Human light or activity", color: "#9a6a8a" },
   { key: "animal", label: "Animal", labelEn: "Animal", color: "#2e7d8c" },
   // TRANSITORIO: el bucket de misid sin objeto fijado. Se conserva válido
   // mientras la pasada de datos reparte sus casos entre las clases de arriba.
@@ -142,6 +142,7 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "planeta_estrella", label: "Planeta o estrella", labelEn: "Planet or star" },
     { key: "meteoro", label: "Meteoro o bólido", labelEn: "Meteor or fireball" },
     { key: "luna", label: "Luna", labelEn: "Moon" },
+    { key: "cometa", label: "Cometa", labelEn: "Comet" },
   ],
   aeronave: [
     { key: "avion", label: "Avión", labelEn: "Airplane" },

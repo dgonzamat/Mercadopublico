@@ -51,7 +51,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   { key: "astronomico", es: "Objeto astronómico", en: "Astronomical object" },
   { key: "aeronave", es: "Aeronave", en: "Aircraft" },
   { key: "espacial", es: "Objeto espacial", en: "Space object" },
-  { key: "luces_tierra", es: "En tierra", en: "Ground-level" },
+  { key: "luces_tierra", es: "Luz o actividad humana", en: "Human light or activity" },
   { key: "animal", es: "Animal", en: "Animal" },
   { key: "terrestre_otros", es: "Objeto convencional no precisado", en: "Conventional object, not pinned down" },
   { key: "natural", es: "Fenómeno natural", en: "Natural phenomenon" },
