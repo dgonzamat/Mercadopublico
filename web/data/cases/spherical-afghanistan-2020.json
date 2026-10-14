@@ -20,7 +20,6 @@
   "epistemicStatus": "documented",
   "probability": 43,
   "mundanoType": "instrumento",
-  "objectDetail": "pelicula_foto",
   "posterior": {
     "mundano_natural": 0.46,
     "humana_clasificada": 0.08,
