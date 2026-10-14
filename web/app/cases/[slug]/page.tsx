@@ -152,14 +152,18 @@ export async function CaseDetailPage(
 
   const caseResearchers = researchersForCase(c.id);
   // Un documento cuelga de lo que respalda: su miga lleva al primer caso que
-  // documenta si es uno solo o, si solo respalda a un actor, a ese actor.
+  // documenta si es uno solo o, si no, al actor que respalda.
   const docParentCase = c.category === "document" && c.relatedCases?.length === 1 ? cases.find((x) => x.id === c.relatedCases?.[0]) : undefined;
   const docParentActor = c.category === "document" && !docParentCase ? caseResearchers[0] : undefined;
   const crumbParent = docParentCase
     ? { href: `/cases/${docParentCase.id}`, es: docParentCase.name.split(" · ")[0], en: (docParentCase.name_en ?? docParentCase.name).split(" · ")[0] }
     : docParentActor
       ? { href: `/researchers/${docParentActor.id}`, es: docParentActor.name, en: docParentActor.name }
-      : { href: "/cases", es: "Casos", en: "Cases" };
+      : c.category === "document"
+        // Un documento que respalda varios casos y ningún actor no cuelga de
+        // ninguno, y la lista de /cases ya no lo incluye: la miga va directa.
+        ? null
+        : { href: "/cases", es: "Casos", en: "Cases" };
   // «Caso anterior / siguiente» recorre solo sucesos: un documento no es un caso.
   const sortedByNum = cases.filter((x) => x.category !== "document").sort((a, b) => a.num - b.num);
   const idx = sortedByNum.findIndex((x) => x.id === c.id);
@@ -311,7 +315,7 @@ export async function CaseDetailPage(
       <BreadcrumbJsonLd
         items={[
           { href: "/", label: locale === "es" ? "Inicio" : "Home" },
-          { href: `${crumbParent.href}/`, label: locale === "es" ? crumbParent.es : crumbParent.en },
+          ...(crumbParent ? [{ href: `${crumbParent.href}/`, label: locale === "es" ? crumbParent.es : crumbParent.en }] : []),
           { label: locale === "es" ? c.name : c.name_en ?? c.name },
         ]}
       />
@@ -320,7 +324,7 @@ export async function CaseDetailPage(
           locale={locale}
           items={[
             { href: "/", es: "Inicio", en: "Home" },
-            crumbParent,
+            ...(crumbParent ? [crumbParent] : []),
             { es: c.name, en: c.name_en ?? c.name },
           ]}
         />

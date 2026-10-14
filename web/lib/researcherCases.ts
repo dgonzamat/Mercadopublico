@@ -39,7 +39,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   salazar: ["oleada-mexico-1965"],
   hourcade: ["cridovni-uruguay-1979", "fh227-pluna-1975"],
   banchs: ["trancas-1963", "mutilaciones-ganado-2002"],
-  agostinelli: ["trancas-1963"],
+  agostinelli: ["trancas-1963", "capilla-del-monte-1986"],
   janosch: ["bariloche-1995", "campeche-2004"],
   mack: ["ariel-school-1994"],
   hind: ["ariel-school-1994"],
