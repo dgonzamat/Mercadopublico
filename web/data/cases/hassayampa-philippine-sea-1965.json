@@ -18,6 +18,7 @@
   "probability": 43,
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
+  "objectDetail": "avion",
   "posterior": {
     "mundano_natural": 0.35,
     "humana_clasificada": 0.12,

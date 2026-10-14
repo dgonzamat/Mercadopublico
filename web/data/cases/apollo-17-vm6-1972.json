@@ -18,6 +18,7 @@
   },
   "tier": "B",
   "mundanoType": "instrumento",
+  "objectDetail": "pelicula_foto",
   "epistemicStatus": "documented",
   "probability": 32,
   "posterior": {
