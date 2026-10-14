@@ -73,6 +73,7 @@
   ],
   "mundanoType": "misid",
   "misidSubtype": "astronomico",
+  "objectDetail": "cometa",
   "posterior": {
     "mundano_natural": 0.6,
     "humana_clasificada": 0,

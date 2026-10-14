@@ -41,8 +41,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "A space object: rocket or missile, satellite or reentry —launches, stages and debris reentering, satellite trains.",
   },
   luces_tierra: {
-    es: "Un faro, una bengala, un vehículo o una llama en tierra que la distancia hizo parecer otra cosa.",
-    en: "A beacon, flare, vehicle or flame on the ground that distance made look like something else.",
+    es: "Una luz o una actividad humana (un faro, una bengala o pirotecnia, un vehículo, una llama industrial o una persona) que la distancia o la oscuridad hicieron parecer otra cosa.",
+    en: "A human light or activity (a beacon, a flare or fireworks, a vehicle, an industrial flame or a person) that distance or darkness made look like something else.",
   },
   terrestre_otros: {
     es: "El análisis apunta a algo ordinario, como un reflejo o un error de percepción, pero la evidencia no dice de qué objeto se trata.",
