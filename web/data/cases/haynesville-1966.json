@@ -115,13 +115,13 @@
   },
   "documents": [
     {
-      "src": "/pursue/condon-report-1968-case-10-haynesville.pdf",
-      "type": "pdf",
-      "title": "Informe Condon (1968), Caso 10 · extracto de seis páginas del volumen 1: la página del capítulo primero donde se nombra Haynesville, y el caso íntegro bajo su epígrafe oficial «South Central, Winter 1966», con la discrepancia del registro y el veredicto de que la potencia es «altamente dudosa»",
-      "title_en": "Condon report (1968), Case 10 · six-page extract from volume 1: the chapter-one page naming Haynesville, and the case in full under its official heading 'South Central, Winter 1966', with the discrepancy in the record and the verdict that the power figure is 'highly dubious'",
-      "source": "Defense Technical Information Center · AD0680975, «Scientific Study of Unidentified Flying Objects», vol. 1 (1969), vía el espejo público de archive.org. Extracto de las páginas 100 y 369-373 del escaneo; el documento completo pesa 22 MB y se enlaza abajo",
-      "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)",
-      "fallbackUrl": "https://archive.org/details/DTIC_AD0680975"
+      "src": "https://archive.org/details/DTIC_AD0680975",
+      "type": "link",
+      "title": "Informe Condon (1968), caso 10: «South Central, Winter 1966»",
+      "title_en": "Condon report (1968), Case 10: 'South Central, Winter 1966'",
+      "description": "Volumen 1 del «Scientific Study of Unidentified Flying Objects», el estudio de la Universidad de Colorado para la Fuerza Aérea dirigido por Edward Condon, en la copia del Defense Technical Information Center (AD0680975). El caso 10 trata Haynesville bajo el epígrafe «South Central, Winter 1966»: recoge el relato del testigo, la discrepancia en el registro y el veredicto del proyecto de que la cifra de potencia atribuida a la luz es «altamente dudosa». Haynesville aparece también nombrado en el capítulo primero.",
+      "description_en": "Volume 1 of the 'Scientific Study of Unidentified Flying Objects', the University of Colorado study for the Air Force directed by Edward Condon, in the Defense Technical Information Center copy (AD0680975). Case 10 covers Haynesville under the heading 'South Central, Winter 1966': it records the witness's account, the discrepancy in the record and the project's verdict that the power figure attributed to the light is 'highly dubious'. Haynesville is also named in chapter one.",
+      "source": "Defense Technical Information Center · AD0680975, vol. 1 (1969), espejo de archive.org; caso 10 en las páginas 369-373 del escaneo"
     }
   ],
   "mundanoType": "misid",
