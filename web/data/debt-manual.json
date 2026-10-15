@@ -4,7 +4,7 @@
     "items": [
       {
         "id": "T1",
-        "title": "Revisar el tier de los demás incidentes con el estándar fijado en TIER_META, y quitar de la prosa las frases que justifican el tier con criterios propios",
+        "title": "Revisar el tier de los incidentes Tier B con el estándar fijado en TIER_META (los Tier S y A ya se revisaron, 14 y 15 oct), y quitar de la prosa las frases que justifican el tier con criterios propios",
         "state": "pendiente"
       }
     ]
