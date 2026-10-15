@@ -81,6 +81,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/wanaque-reservoir-1966-bluebook.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book · tarjeta, memorandos y télex de la Defensa Aérea de Nueva York (extracto)",
+      "title_en": "Project Blue Book · record card, memos and New York Air Defense telex (extract)",
+      "description": "Ocho páginas del expediente de Blue Book «Wayne, New Jersey» (NARA). La tarjeta del 11 de enero de 1966 resume a un testigo civil que vio de 3 a 4 minutos una luz blanco-azulada «como magnesio ardiendo» y concluye «probable aeronave»; la evaluación lo justifica por la densidad del tráfico aéreo de Nueva York. Un memorando para el registro anota la llamada de un periodista de Nueva York sobre el embalse y propone Saturno y Júpiter. El télex del sector de defensa aérea registra la batería Nike 75, que vio un objeto a velocidad de avión, y el «desconocido» del mayor O'Connell. Un memorando de enero de 1967 recoge las gestiones con McGuire, Stewart y Willow Grove sobre los episodios de enero y octubre.",
+      "description_en": "Eight pages of the Blue Book file \"Wayne, New Jersey\" (NARA). The record card for 11 January 1966 summarises a civilian witness who watched a blue-white light \"resembling a burning magnesium\" for 3 to 4 minutes and concludes \"probable aircraft\"; the evaluation cites the density of New York air traffic. A memo for record notes a New York reporter's call about the reservoir and proposes Saturn and Jupiter. The air defense sector telex records Nike fire unit 75, which saw an object moving at aircraft speed, and Major O'Connell's \"unknown\". A January 1967 memo records the inquiries to McGuire, Stewart and Willow Grove about the January and October episodes.",
+      "source": "Project Blue Book, expediente «11 Jan 66, Wayne, New Jersey» (NARA), espejo en archive.org · pp. 1, 8–14",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1966-01-8722320-Wayne-NewJersey"
+    },
+    {
       "src": "/pursue/wanaque-reservoir-1966-context.jpg",
       "type": "image",
       "title": "Contexto · el embalse de Wanaque (Nueva Jersey)",

@@ -105,6 +105,17 @@
   "name_en": "Malmstrom ICBM shutdown",
   "documents": [
     {
+      "src": "/pursue/malmstrom-1967-341smw-history.pdf",
+      "type": "pdf",
+      "title": "Historia de la 341.ª Ala de Misiles Estratégicos, enero–marzo de 1967 (extracto) y respuesta FOIA de 2001",
+      "title_en": "341st Strategic Missile Wing history, January–March 1967 (extract) and 2001 FOIA response",
+      "description": "Diez páginas: la respuesta de la base de Malmstrom del 14 de junio de 2001 a la solicitud FOIA de John Greenewald, que entrega extractos de las historias de la unidad y dice no tener cintas ni documentos de personal herido, y las páginas de la historia de enero a marzo de 1967 que narran el incidente de Echo. El 16 de marzo a las 08:45 los diez silos pasaron a «No-Go» con indicación de los canales 9 y 12; el equipo de investigación descartó el clima y las comunicaciones, y la historia afirma que los rumores de ovnis en torno a Echo «fueron refutados», apoyándose en un equipo móvil que había revisado el escuadrón November.",
+      "description_en": "Ten pages: Malmstrom's 14 June 2001 response to John Greenewald's FOIA request, which releases excerpts of the unit histories and says it has no tapes or documents of any personnel injured, and the pages of the January–March 1967 history that narrate the Echo incident. On 16 March at 08:45 all ten sites went \"No-Go\" with channel 9 and 12 indications; the investigation team ruled out weather and communications, and the history states that rumours of UFOs around Echo \"were disproven\", relying on a mobile strike team that had checked November Flight.",
+      "source": "341st Strategic Missile Wing History, 1 Jan–31 Mar 1967 (excerpts), desclasificada por Malmstrom AFB (FOIA, 2001), copia en The Black Vault · pp. 3, 5, 7, 9–15 del PDF",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/malmstromufo.pdf"
+    },
+    {
       "src": "/pursue/malmstrom-1967-context.jpg",
       "type": "image",
       "title": "Contexto · la base aérea de Malmstrom (Montana), sede del apagón de misiles Minuteman",

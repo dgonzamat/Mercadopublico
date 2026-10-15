@@ -73,6 +73,15 @@
   },
   "documents": [
     {
+      "src": "https://www.cnes-geipan.fr/sites/default/files/note_tech_17.pdf",
+      "type": "link",
+      "title": "GEPAN · Nota técnica n.º 17 sobre el caso del 21 de octubre de 1982 (21 de marzo de 1983)",
+      "title_en": "GEPAN · Technical Note no. 17 on the case of 21 October 1982 (21 March 1983)",
+      "description": "Informe de 73 páginas del GEPAN, el grupo de estudio de fenómenos aeroespaciales de la agencia espacial francesa (CNES), sobre la observación de un biólogo en su jardín de las afueras de Nancy. Recoge el télex de la gendarmería del día siguiente, la investigación de campo del 29 de octubre, la reconstrucción de la escena, el análisis del testimonio, el estudio experimental sobre el levantamiento de la hierba por un campo eléctrico y los análisis de los amarantos en la Universidad Paul Sabatier de Toulouse, que no fueron concluyentes. Los ficheros del GEIPAN son © CNES, por eso se enlaza y no se aloja.",
+      "description_en": "A 73-page report by GEPAN, the French space agency's (CNES) unit for the study of aerospace phenomena, on a biologist's sighting in his garden on the outskirts of Nancy. It contains the gendarmerie telex of the following day, the field investigation of 29 October, the reconstruction of the scene, the analysis of the testimony, the experimental study of grass being raised by an electric field and the analyses of the amaranths at Paul Sabatier University in Toulouse, which were inconclusive. GEIPAN's files are © CNES, so the report is linked rather than hosted.",
+      "source": "GEIPAN (CNES) · © CNES"
+    },
+    {
       "src": "/pursue/amarante-nancy-1982-context.jpg",
       "type": "image",
       "title": "Contexto · un amaranto en flor (Amaranthus caudatus), la especie del macizo que el testigo encontró marchito",

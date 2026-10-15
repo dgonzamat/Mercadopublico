@@ -90,6 +90,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/seoul-blue-house-1976-state-cables.pdf",
+      "type": "pdf",
+      "title": "Cables del Departamento de Estado de EE. UU. sobre el fuego antiaéreo en Seúl (14 y 15 de octubre de 1976)",
+      "title_en": "US State Department cables on the anti-aircraft fire over Seoul (14 and 15 October 1976)",
+      "description": "Texto íntegro de dos telegramas desclasificados en 2004. El de Washington (STATE 255220, 14 de octubre) recoge el informe del Gobierno coreano: a las 18:13 el carguero 902 de Northwest, que despegaba de Gimpo hacia Tokio, entró en la zona restringida a 8.000 pies y recibió más de mil disparos sin ser alcanzado, y a las 18:32 las fuerzas de la capital dispararon unos 700 proyectiles contra «un presunto avión de hélice no identificado». El de la embajada (SEOUL 8287, 15 de octubre) transcribe el comunicado del Ministerio de Defensa (Boeing 707 con error de navegación, rumbo a Osaka), cita 21 heridos, 8 graves, y ninguna muerte comunicada.",
+      "description_en": "Full text of two telegrams declassified in 2004. Washington's (STATE 255220, 14 October) relays the Korean government's report: at 18:13 Northwest cargo flight 902, taking off from Kimpo for Tokyo, entered the restricted area at 8,000 feet and was fired on with over 1,000 rounds without being hit, and at 18:32 the capital's forces fired about 700 rounds at \"a suspected unidentified propeller driven aircraft\". The embassy's (SEOUL 8287, 15 October) quotes the Defense Ministry statement (a Boeing 707 off course through a navigational error, bound for Osaka), cites 21 injured, 8 seriously, and no deaths reported.",
+      "source": "US Department of State, Central Foreign Policy Files 1973–79 (NARA RG 59), telegramas 1976STATE255220 y 1976SEOUL08287; texto tomado de WikiLeaks PlusD",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://wikileaks.org/plusd/cables/1976SEOUL08287_b.html"
+    },
+    {
       "src": "/pursue/seoul-blue-house-1976-context.jpg",
       "type": "image",
       "title": "Contexto · la Casa Azul (Cheong Wa Dae), Seúl",

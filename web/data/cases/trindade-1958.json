@@ -64,6 +64,17 @@
   "name_en": "Trindade Island",
   "documents": [
     {
+      "src": "/pursue/trindade-1958-bluebook-oni.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book · tarjeta «fraude» e informe 39-58 de la Inteligencia Naval de EE. UU. (extracto)",
+      "title_en": "Project Blue Book · \"hoax\" record card and US Naval Intelligence report 39-58 (extract)",
+      "description": "Siete páginas del expediente de Blue Book «Trinidade Island» (NARA). La tarjeta registra que la Marina brasileña se negó a hacer una declaración oficial y que la Oficina de Inteligencia Naval juzgó las fotos un fraude; un resumen posterior dice que el caso sigue como «TRICK». El informe 39-58 del agregado naval en Río, del 11 de marzo de 1958, recoge la nota del Ministerio de Marina del 24 de febrero, que el comandante y el segundo no vieron el objeto, que el capitán atribuyó la observación a su secretario y que el fotógrafo reveló a solas mientras un oficial esperaba fuera. El agregado se inclina por un montaje publicitario.",
+      "description_en": "Seven pages of the Blue Book file \"Trinidade Island\" (NARA). The record card notes that the Brazilian Navy refused to make an official statement and that the Office of Naval Intelligence judged the photos a hoax; a later summary says the case is still carried as a \"TRICK\". Report 39-58 by the naval attaché in Rio, dated 11 March 1958, records the Navy Ministry statement of 24 February, that the commanding and executive officers had not seen the object, that the captain said his secretary had, and that the photographer developed the negatives alone while an officer waited outside. The attaché leans towards a publicity hoax.",
+      "source": "Project Blue Book, expediente «16 Jan 58, Trinidade Island» (NARA), espejo en archive.org · pp. 1, 2, 10–14",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1958-01-6957752-Trinidade-Island"
+    },
+    {
       "src": "/pursue/trindade-1958-context.jpg",
       "type": "image",
       "title": "Contexto · la isla de Trindade (Brasil), donde el buque escuela fotografió el objeto",
