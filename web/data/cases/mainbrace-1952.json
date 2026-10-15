@@ -77,6 +77,13 @@
       "url": "https://en.wikipedia.org/wiki/Operation_Mainbrace",
       "note": "Secundaria: contexto del ejercicio.",
       "note_en": "Secondary: context of the exercise."
+    },
+    {
+      "name": "Forsvaret (Dinamarca) — archivo OVNI de la Fuerza Aérea publicado en 2009",
+      "name_en": "Danish Defence — the Air Force's UFO archive published in 2009",
+      "url": "https://www.forsvaret.dk/da/organisation/flyvevaabnet/flyvevabnets-historie/flyvevabnets-ufo-arkiv--offentliggjort-i-2009/",
+      "note": "Página oficial con los cuatro PDF escaneados del archivo (329 págs.).",
+      "note_en": "The official page with the archive's four scanned PDFs (329 pp.)."
     }
   ],
   "posterior": {
@@ -96,6 +103,14 @@
       "source": "Imperial War Museum (A32288) vía Wikimedia Commons",
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:USS_Wright_(CVL-49),_HMS_Illustrious_(R87)_and_HMS_Eagle_(R05)_underway_in_the_North_Sea_in_September_1952_(IWM_A32288).jpg"
+    },
+    {
+      "src": "https://www.forsvaret.dk/da/organisation/flyvevaabnet/flyvevabnets-historie/flyvevabnets-ufo-arkiv--offentliggjort-i-2009/",
+      "type": "link",
+      "title": "Dinamarca · archivos UFO de la Fuerza Aérea desclasificados",
+      "title_en": "Denmark · declassified Air Force UFO files",
+      "description": "En febrero de 2009 la Fuerza Aérea Real de Dinamarca desclasificó los archivos de ovnis que había reunido durante unas tres décadas y entregó a la asociación civil SUFOI 329 páginas de reportes del período 1978–2002, con la justificación oficial de que no había nada secreto en ellos. El acervo documenta del orden de 15.000 avistamientos, de los que más de 200 quedaron como no resueltos; la mayoría se explicó como aeronaves, fenómenos meteorológicos y confusiones similares. Entre los expedientes antiguos figura el reporte de un objeto triangular luminoso al norte de Bornholm durante el ejercicio Mainbrace de la OTAN, en septiembre de 1952. El valor del archivo es su transparencia institucional, no una prueba de anomalía.",
+      "description_en": "In February 2009 the Royal Danish Air Force declassified the UFO files it had gathered over some three decades and handed the civilian association SUFOI 329 pages of reports from 1978–2002, with the official justification that there was nothing secret in them. The archive records on the order of 15,000 sightings, of which more than 200 were left unresolved; most were explained as aircraft, weather phenomena and similar confusions. Among the older files is the report of a luminous triangular object north of Bornholm during NATO's Mainbrace exercise in September 1952. The archive's value lies in its institutional transparency, not in any proof of anomaly."
     }
   ],
   "evidenceReviewed": "2026-09-28",

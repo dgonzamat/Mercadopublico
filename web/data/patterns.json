@@ -72,24 +72,6 @@
         "color": "#aa88ff"
     },
     {
-        "id": "8i",
-        "letter": "i",
-        "name": "Escalas institucionales de clasificación de casos",
-        "name_en": "Institutional case-classification scales",
-        "description": "Organismos que clasifican cada caso según cuánto se explica, como las categorías PAN A–D del GEIPAN.",
-        "description_en": "Bodies that classify each case by how much is explained, such as GEIPAN's PAN A–D categories.",
-        "color": "#888aff"
-    },
-    {
-        "id": "8j",
-        "letter": "j",
-        "name": "Paneles científicos de revisión",
-        "name_en": "Scientific review panels",
-        "description": "Comités de científicos que revisan la evidencia acumulada y concluyen qué datos harían falta para resolver los casos, como el panel Sturrock (1998) o el equipo independiente de la NASA (2023).",
-        "description_en": "Committees of scientists who review the accumulated evidence and conclude what data would be needed to resolve the cases, such as the Sturrock panel (1998) or NASA's independent study team (2023).",
-        "color": "#999999"
-    },
-    {
         "id": "8k",
         "letter": "k",
         "name": "Interferencia EM en vehículos/aeronaves",

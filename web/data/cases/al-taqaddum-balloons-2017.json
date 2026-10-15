@@ -41,6 +41,14 @@
       "source": "US Air Force (aeróstato de protección de fuerzas), con evaluación de resolución de la AARO, vía DVIDS",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.dvidshub.net/video/960331"
+    },
+    {
+      "src": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/",
+      "type": "link",
+      "title": "El archivo de resoluciones de la AARO: aves, globos, y lo que queda sin resolver",
+      "title_en": "AARO's case resolution archive: birds, balloons, and what stays unresolved",
+      "description": "Al margen de las entregas de PURSUE, la AARO publica en DVIDS su propio archivo de «UAP Case Resolution Reports»: clips numerados de PR-001 a PR-018, tramitados por EUCOM y AFRICOM, más al menos tres expedientes de Oriente Medio sin numeración, cada uno con la evaluación oficial de la oficina. De los 21, dos se cerraron como aves y seis como globos; uno, como no anómalo sin origen identificado; uno quedó en análisis; cinco confirmaron un objeto físico sin rasgos que ameritaran más análisis, y seis siguen sin resolver por falta de telemetría o de datos de varios sensores. El archivo muestra lo que la agencia resuelve junto a lo que no, pero no es una muestra representativa del fenómeno.",
+      "description_en": "Separately from the PURSUE releases, AARO publishes on DVIDS its own archive of 'UAP Case Resolution Reports': clips numbered PR-001 to PR-018, handled by EUCOM and AFRICOM, plus at least three unnumbered Middle East files, each with the office's official assessment. Of the 21, two were closed as birds and six as balloons; one was closed as not anomalous with no origin identified; one remained under analysis; five confirmed a physical object with no features warranting further analysis; and six remain unresolved for lack of telemetry or multi-sensor data. The archive shows what the agency resolves alongside what it does not, but it is not a representative sample of the phenomenon."
     }
   ],
   "whatHappened": "El 23 de octubre de 2017, un sensor infrarrojo instalado a bordo de un aeróstato de protección de fuerzas (un dirigible cautivo, equipado con sensores, que se usa para la vigilancia perimetral de instalaciones militares) operaba a unos 2.700 pies de altura sobre la base aérea de Al Taqaddum, en la provincia de Al Anbar, Irak. Durante 17 minutos y 30 segundos registró un objeto no identificado que parecía flotar sobre el terreno. La ficha de DVIDS, publicada por la AARO el 29 de abril de 2025, fecha el hecho solo como «octubre de 2017»; el día exacto lo da el informe de resolución. Ese informe no identifica a quien reportó el objeto ni registra altitud o velocidad reportadas: el único dato original es el propio video, y la forma del objeto figura como «anormal».\n\nLa Oficina de Resolución de Anomalías de Todos los Dominios (AARO) publicó primero una evaluación breve junto al video, en la que decía haber usado «técnicas de análisis de video de movimiento completo y de examen de píxeles», además de los datos de geolocalización del propio aeróstato para calcular la velocidad y la dirección del objeto. El informe de resolución completo, fechado el 8 de septiembre de 2025 (referencia 25-P-1190), precisa que la evaluación se basó en el video, sus metadatos, la línea de visión, reconstrucciones del escenario y el análisis de datos meteorológicos. Con confianza moderada (por la variabilidad de los datos de viento históricos y en tiempo real), la oficina sitúa el objeto entre 850 y 2.200 pies de altitud, moviéndose a entre 4 y 14 millas por hora; con confianza alta, afirma que viajaba dentro del rango de la velocidad del viento, de este a oeste.\n\nLa conclusión, de alta confianza, es que el objeto era compatible con un racimo de globos total y parcialmente inflados. El informe se apoya en lo que el video muestra: en varios tramos se distinguen formas redondeadas de globos e hilos colgando, cuyo número y forma cambian a medida que el racimo gira respecto del sensor. Las fluctuaciones del brillo infrarrojo se atribuyen al ajuste automático de la escala de grises del sensor sobre un fondo cambiante, y el grano creciente del final del clip, a la distancia cada vez mayor del objeto. Uno de los socios de la AARO propuso una hipótesis alternativa (un dron cuadricóptero cubierto con red de camuflaje), que la oficina y sus socios descartaron por dos razones: un cuadricóptero no derivaría con el viento como lo hace el objeto, y sus motores producirían una firma térmica que el video no muestra. La ausencia de firma térmica es además, según el informe, coherente con otros racimos de globos ya identificados.",
@@ -86,6 +94,11 @@
       "url": "https://archive.org/details/declassified-aaro",
       "note": "Espejo del informe y del video original (DOD_110956846), con fotogramas cada minuto.",
       "note_en": "Mirror of the report and the original video (DOD_110956846), with a still every minute."
+    },
+    {
+      "name": "AARO — UAP Case Resolution Reports (repositorio oficial)",
+      "url": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/",
+      "name_en": "AARO — UAP Case Resolution Reports (official repository)"
     }
   ],
   "evidenceReviewed": "2026-09-28",

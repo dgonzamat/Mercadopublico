@@ -63,7 +63,10 @@ export interface CaseDocument {
  */
 export interface DocEmbed {
   src: string;
-  type: "pdf" | "image" | "video";
+  /** "link": documento sin copia embebible (solo existe en el sitio del
+   *  emisor o en Commons). Se muestra como tarjeta con su descripción y un
+   *  enlace al original; no cuenta como visual del caso. */
+  type: "pdf" | "image" | "video" | "link";
   title: string;
   title_en?: string;
   /** Qué es el documento y qué prueba, en un párrafo. Lo lleva todo documento

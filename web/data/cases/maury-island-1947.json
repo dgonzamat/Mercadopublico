@@ -74,6 +74,18 @@
       "url": "https://archive.org/download/fbi-ufo-files/FBI%20UFO3.pdf",
       "note": "Declaración firmada sobre las rocas del pozo de grava, accidente del B-25 y admisión del engaño el 2 de agosto.",
       "note_en": "Signed statement on the gravel-pit rocks, the B-25 crash and the admission of the hoax on 2 August."
+    },
+    {
+      "name": "FBI Records: The Vault — 'Unidentified Flying Objects' (file 62-HQ-83894)",
+      "url": "https://vault.fbi.gov/UFO",
+      "note": "El expediente completo y la nota del FBI sobre el memo Hottel.",
+      "note_en": "The full file and the FBI's note on the Hottel memo."
+    },
+    {
+      "name": "war.gov/UFO — 62-HQ-83894 serials (PURSUE Release 01)",
+      "url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf",
+      "note": "Serials del Volumen 1 del expediente FBI (muestra incorporada al visor).",
+      "note_en": "Serials from Volume 1 of the FBI file (sample embedded in the viewer)."
     }
   ],
   "documents": [
@@ -85,6 +97,231 @@
       "source": "Des Moines, Washington with Puget Sounds and Maury and Vashon Island (1292124062).jpg · Wikimedia Commons",
       "license": "CC BY-SA 2.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ADes%20Moines%2C%20Washington%20with%20Puget%20Sounds%20and%20Maury%20and%20Vashon%20Island%20(1292124062).jpg"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_section_1.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 1 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 1 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_1.pdf",
+      "description": "El expediente 62-HQ-83894 es el archivo central del FBI sobre «discos voladores», abierto en el verano de 1947 cuando las Fuerzas Aéreas del Ejército pidieron ayuda al Bureau, y nutrido con reportes, testimonios y correspondencia hasta los años setenta. Por él pasaron incidentes como Maury Island y el avistamiento de Kenneth Arnold. PURSUE desclasificó sus serials en 2026; aquí se embebe una muestra del Volumen 1 (las secciones 1 a 10, el sub-expediente SUB A y siete serials), correspondencia investigativa de la oleada de 1947. El FBI se retiró de la investigación activa a fines de ese año. El grueso del archivo es trabajo de campo que resolvía la mayoría de los reportes como globos, fraudes o confusiones: documenta cómo se procesó la oleada, no que los objetos fueran anómalos.",
+      "description_en": "File 62-HQ-83894 is the FBI's central 'flying discs' file, opened in the summer of 1947 when the Army Air Forces asked the Bureau for help, and fed with reports, testimony and correspondence into the 1970s. Incidents such as Maury Island and Kenneth Arnold's sighting passed through it. PURSUE declassified its serials in 2026; embedded here is a sample of Volume 1 (sections 1 to 10, the SUB A sub-file and seven serials), investigative correspondence from the 1947 wave. The FBI withdrew from active investigation at the end of that year. Most of the file is field work that resolved the bulk of reports as balloons, hoaxes or confusions: it documents how the wave was processed, not that the objects were anomalous."
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_2.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 2 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 2 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_3.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 3 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 3 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_3.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_4.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 4 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 4 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_5.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 5 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 5 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_5.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_6__part1of2.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 6 (parte 1/2) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 6 (part 1/2) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU."
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_6__part2of2.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 6 (parte 2/2) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 6 (part 2/2) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU."
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_7.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 7 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 7 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_7.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_8__part1of6.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 8 (parte 1/6) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 8 (part 1/6) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_8__part2of6.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 8 (parte 2/6) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 8 (part 2/6) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_8__part3of6.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 8 (parte 3/6) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 8 (part 3/6) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_8__part4of6.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 8 (parte 4/6) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 8 (part 4/6) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_8__part5of6.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 8 (parte 5/6) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 8 (part 5/6) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_8__part6of6.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 8 (parte 6/6) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 8 (part 6/6) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_9.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 9 — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 9 — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_10__part1of2.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 10 (parte 1/2) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 10 (part 1/2) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_section_10__part2of2.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sección 10 (parte 2/2) — expediente FBI 'discos voladores'",
+      "title_en": "62-HQ-83894 · Section 10 (part 2/2) — FBI 'flying discs' file",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_130.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 130 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 130 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_130.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_153.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 153 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 153 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_164.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 164 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 164 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_164.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_220.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 220 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 220 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_220.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_403.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 403 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 403 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_403.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_438.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 438 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 438 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_438.pdf"
+    },
+    {
+      "src": "/pursue/65_hs1-834228961_62-hq-83894_serial_449.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Serial 449 (Vol. 1) — correspondencia investigativa FBI",
+      "title_en": "62-HQ-83894 · Serial 449 (Vol. 1) — FBI investigative correspondence",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_449.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/65_hs1-834228961_62-hq-83894_sub_a.pdf",
+      "type": "pdf",
+      "title": "62-HQ-83894 · Sub-expediente A (SUB A) — material adjunto del expediente FBI",
+      "title_en": "62-HQ-83894 · Subfile A (SUB A) — FBI file attached material",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_sub_a.pdf"
     }
   ],
   "classBasis": {

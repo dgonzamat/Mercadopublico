@@ -109,6 +109,242 @@
       "source": "FBI · AARO (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a8.png"
+    },
+    {
+      "src": "/pursue/usper-statement-redacted.pdf",
+      "type": "pdf",
+      "title": "USPER Statement — entrevista FBI-302 del oficial de inteligencia (PURSUE R01, redactada)",
+      "title_en": "USPER Statement — FBI-302 interview of the intelligence official (PURSUE R01, redacted)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/usper-statement-redacted.pdf",
+      "description": "Entrevista FBI-302 a un alto oficial en activo de la comunidad de inteligencia de EE.UU., con identidad protegida, desclasificada en la primera entrega de PURSUE y ampliada en la segunda con su narrativa en primera persona (ODNI-UAP-D001). Relata un encuentro en 2025 en una instalación de prueba sensible del oeste del país: un orbe «súper-caliente» suspendido sobre el suelo que recorrió unas 20 millas a una velocidad inalcanzable para el helicóptero que lo seguía, y luego cuatro o cinco orbes que se encendían y apagaban durante media hora, vistos por el oficial, pilotos con visión nocturna y observadores en tierra, que tomaron fotos con esos dispositivos. Es testimonio: no se publicó radar ni telemetría y la ubicación está tachada.",
+      "description_en": "An FBI-302 interview with a currently serving senior U.S. intelligence-community official, identity protected, declassified in the first PURSUE release and expanded in the second with his first-person narrative (ODNI-UAP-D001). It describes a 2025 encounter at a sensitive Western US test installation: a 'super-hot' orb hovering over the ground that traveled some 20 miles at a speed the pursuing helicopter could not match, then four or five orbs flaring up and down for half an hour, seen by the official, pilots on night vision and ground observers, who took photos through those devices. It is testimony: no radar or telemetry was published and the location is redacted."
+    },
+    {
+      "src": "/pursue/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
+      "type": "pdf",
+      "title": "ODNI-UAP-D001 — narrativa en primera persona del mismo oficial (PURSUE R02)",
+      "title_en": "ODNI-UAP-D001 — first-hand narrative by the same official (PURSUE R02)",
+      "source": "ODNI (PURSUE Release 02)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b1.png",
+      "type": "image",
+      "title": "Foto FBI B001 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B001 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b1.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b2.png",
+      "type": "image",
+      "title": "Foto FBI B002 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B002 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b2.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b3.png",
+      "type": "image",
+      "title": "Foto FBI B003 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B003 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b3.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b4.png",
+      "type": "image",
+      "title": "Foto FBI B004 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B004 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b4.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b5.png",
+      "type": "image",
+      "title": "Foto FBI B005 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B005 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b5.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b6.png",
+      "type": "image",
+      "title": "Foto FBI B006 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B006 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b6.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b7.png",
+      "type": "image",
+      "title": "Foto FBI B007 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B007 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b7.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b8.png",
+      "type": "image",
+      "title": "Foto FBI B008 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B008 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b8.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b9.png",
+      "type": "image",
+      "title": "Foto FBI B009 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B009 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b9.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b10.png",
+      "type": "image",
+      "title": "Foto FBI B010 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B010 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b10.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b11.png",
+      "type": "image",
+      "title": "Foto FBI B011 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B011 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b11.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b12.png",
+      "type": "image",
+      "title": "Foto FBI B012 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B012 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b12.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b13.png",
+      "type": "image",
+      "title": "Foto FBI B013 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B013 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b13.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b14.png",
+      "type": "image",
+      "title": "Foto FBI B014 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B014 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b14.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b15.png",
+      "type": "image",
+      "title": "Foto FBI B015 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B015 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b15.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b16.png",
+      "type": "image",
+      "title": "Foto FBI B016 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B016 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b16.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b17.png",
+      "type": "image",
+      "title": "Foto FBI B017 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B017 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b17.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b18.png",
+      "type": "image",
+      "title": "Foto FBI B018 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B018 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b18.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b19.png",
+      "type": "image",
+      "title": "Foto FBI B019 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B019 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b19.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b20.png",
+      "type": "image",
+      "title": "Foto FBI B020 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B020 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b20.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b21.pdf",
+      "type": "pdf",
+      "title": "Foto FBI B021 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B021 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b21.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b22.png",
+      "type": "image",
+      "title": "Foto FBI B022 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B022 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b22.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b23.png",
+      "type": "image",
+      "title": "Foto FBI B023 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B023 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b23.pdf"
+    },
+    {
+      "src": "/pursue/fbi-photo-b24.png",
+      "type": "image",
+      "title": "Foto FBI B024 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B024 — IR/night-vision contact from the event (Western US, 2025)",
+      "source": "FBI (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b24.pdf"
     }
   ],
   "patterns": [],

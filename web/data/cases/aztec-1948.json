@@ -68,6 +68,14 @@
       "url": "https://www.physics.smu.edu/pseudo/UFOs/Scully/Cahn2.pdf",
       "note": "Fuente primaria: la denuncia de Herman Flader, el juicio de Denver de 1953 y la condena.",
       "note_en": "Primary source: Herman Flader's complaint, the 1953 Denver trial and the conviction."
+    },
+    {
+      "name": "FBI Vault — Hottel Memo",
+      "url": "https://vault.fbi.gov/hottel_guy/Guy%20Hottel%20Part%201%20of%201/view"
+    },
+    {
+      "name": "FBI clarification statement (2013)",
+      "url": "https://www.fbi.gov/news/stories/the-hottel-memo-roswell"
     }
   ],
   "posterior": {
@@ -87,6 +95,14 @@
       "source": "Aztec New Mexico City Hall.jpg · Wikimedia Commons",
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAztec%20New%20Mexico%20City%20Hall.jpg"
+    },
+    {
+      "src": "https://vault.fbi.gov/hottel_guy/Guy%20Hottel%20Part%201%20of%201/view",
+      "type": "link",
+      "title": "Hottel Memo",
+      "title_en": "Hottel Memo",
+      "description": "Memorándum de una página que Guy Hottel, agente especial a cargo de la oficina del FBI en Washington, envió al director J. Edgar Hoover el 22 de marzo de 1950. Transmite un relato de oídas, llegado a través de un investigador de la Fuerza Aérea, sobre tres «platillos» con tripulantes recuperados en Nuevo México. El papel es auténtico y el FBI lo publicó en su archivo en línea en 2011, pero no prueba lo que cuenta: no identifica testigos ni fuente primaria, el FBI nunca lo investigó y en 2013 aclaró que publicarlo no autentica su contenido. El relato coincide con el fraude de Aztec que difundieron Silas Newton y Frank Scully, y no hay registros de la Fuerza Aérea que documenten esa recuperación.",
+      "description_en": "A one-page memorandum sent by Guy Hottel, Special Agent in Charge of the FBI's Washington field office, to Director J. Edgar Hoover on 22 March 1950. It passes on a hearsay account, relayed through an Air Force investigator, of three \"saucers\" with occupants recovered in New Mexico. The paper is authentic and the FBI published it in its online Vault in 2011, but it does not prove what it reports: it names no witnesses or primary source, the FBI never investigated it, and in 2013 the Bureau clarified that publishing it does not authenticate its content. The story matches the Aztec hoax spread by Silas Newton and Frank Scully, and no Air Force records document such a recovery."
     }
   ],
   "classBasis": {

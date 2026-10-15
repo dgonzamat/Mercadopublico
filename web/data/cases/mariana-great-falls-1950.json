@@ -71,6 +71,19 @@
       "url": "https://files.ncas.org/condon/text/case47.htm",
       "note": "Reexamina el film y el expediente: duda de la fecha, testimonio de Raunig, objeciones a la hipótesis de los aviones; caso sin explicar.",
       "note_en": "Re-examines the film and file: doubts over the date, Raunig's testimony, objections to the aircraft hypothesis; case unexplained."
+    },
+    {
+      "name": "Informe de las reuniones del panel (CIA-RDP79B00752A000300100010-4), copia archive.org de la sala de lectura de la CIA",
+      "name_en": "Report of the panel's meetings (CIA-RDP79B00752A000300100010-4), archive.org copy from the CIA reading room",
+      "url": "https://archive.org/download/cia-readingroom-document-cia-rdp79b00752a000300100010-4/cia-rdp79b00752a000300100010-4.pdf",
+      "note": "Fuente primaria: informe de Durant, íntegro, con el informe firmado del panel (Tab A) y la lista de participantes.",
+      "note_en": "Primary source: Durant's full report, with the panel's signed report (Tab A) and the list of participants."
+    },
+    {
+      "name": "Condon Report — Appendix U: Robertson Panel Report",
+      "url": "https://files.ncas.org/condon/text/appndx-u.htm",
+      "note": "Fuente primaria: texto del informe tal como se publicó en 1969, con las supresiones restituidas y señaladas.",
+      "note_en": "Primary source: text of the report as published in 1969, with the deletions restored and marked."
     }
   ],
   "mundanoType": "misid",
@@ -100,5 +113,26 @@
     "source_en": "Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects (Robertson Panel, CIA, January 1953) — CIA-RDP79B00752A000300100010-4 · Condon Report (1969), case 47 (files.ncas.org/condon/text/case47.htm)",
     "url": "https://archive.org/details/cia-readingroom-document-cia-rdp79b00752a000300100010-4"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "src": "/pursue/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-002 — Scientific Advisory Panel on UFOs (Panel Robertson), 1952-53",
+      "title_en": "CIA-UAP-002 — Scientific Advisory Panel on UFOs (Robertson Panel), 1952-53",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
+      "description": "Informe del Scientific Advisory Panel on Unidentified Flying Objects, el llamado Panel Robertson: el comité de científicos que la CIA convocó en enero de 1953, que revisó los mejores casos y recomendó una política pública de «desmitificación» para reducir el volumen de reportes. Es uno de los dieciocho documentos de la CIA (CIA-UAP-002) liberados en la tercera entrega de PURSUE, el 12 de junio de 2026, junto con el Special Report No. 14 de Battelle, la historia oficial de los programas U-2 y OXCART, que reconoce que muchos reportes de los años cincuenta y sesenta eran vuelos de esos aviones espía, e informes de inteligencia exterior. Muestra que la CIA trató el fenómeno como un problema de gestión; no prueba que los objetos fueran anómalos.",
+      "description_en": "Report of the Scientific Advisory Panel on Unidentified Flying Objects, the so-called Robertson Panel: the committee of scientists convened by the CIA in January 1953, which reviewed the best cases and recommended a public \"debunking\" policy to reduce the volume of reports. It is one of eighteen CIA documents (CIA-UAP-002) released in the third PURSUE release on 12 June 2026, together with Battelle's Special Report No. 14, the official history of the U-2 and OXCART programs, which acknowledges that many reports from the 1950s and 1960s were flights of those spy planes, and foreign-intelligence reports. It shows that the CIA treated the phenomenon as a management problem; it does not prove the objects were anomalous."
+    },
+    {
+      "src": "https://archive.org/download/cia-readingroom-document-cia-rdp79b00752a000300100010-4/cia-rdp79b00752a000300100010-4.pdf",
+      "type": "link",
+      "title": "Robertson Panel",
+      "title_en": "Robertson Panel",
+      "description": "Informe del panel de cinco científicos convocado por la CIA del 14 al 18 de enero de 1953, firmado el 17 de enero y recogido en el informe de reuniones redactado por F. C. Durant (CIA-RDP79B00752A000300100010-4). El panel revisó casos aportados por ATIC y dos películas, la de Great Falls (1950) y la de Tremonton (1952): rechazó la conclusión de la Marina de que los objetos de Tremonton eran «self-luminous» y se inclinó por aves, y atribuyó los de Great Falls a reflejos de aviones. Concluyó que no había amenaza directa y recomendó un programa de «training» y «debunking» y vigilar a grupos civiles. Se desclasificó en parte en 1966; el informe Condon afirma que ese programa nunca se ejecutó oficialmente.",
+      "description_en": "Report of the five-scientist panel convened by the CIA from 14 to 18 January 1953, signed on 17 January and included in the meetings report written by F. C. Durant (CIA-RDP79B00752A000300100010-4). The panel reviewed cases supplied by ATIC and two films, Great Falls (1950) and Tremonton (1952): it rejected the Navy's conclusion that the Tremonton objects were 'self-luminous' and leaned towards birds, and attributed the Great Falls objects to reflections from aircraft. It concluded there was no direct threat and recommended a 'training' and 'debunking' program and watching civilian groups. It was partially declassified in 1966; the Condon Report states that program was never officially carried out."
+    }
+  ]
 }

@@ -79,6 +79,11 @@
       "url": "http://www.ufoevidence.org/cases/case116.htm",
       "note": "Síntesis secundaria del caso.",
       "note_en": "Secondary synthesis of the case."
+    },
+    {
+      "name": "Ruppelt, E. — The Report on Unidentified Flying Objects (1956)",
+      "note": "Capítulo 4 dedicado al Estimate",
+      "note_en": "Chapter 4 dedicated to the Estimate"
     }
   ],
   "documents": [
@@ -90,6 +95,70 @@
       "source": "Eastern Air Lines Douglas DC-3 NC18124 NASM.jpg · Wikimedia Commons",
       "license": "CC BY-SA 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEastern%20Air%20Lines%20Douglas%20DC-3%20NC18124%20NASM.jpg"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_1-100.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 1-100 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 1-100 — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf",
+      "description": "Tres volúmenes de «Incident Summaries» de la Fuerza Aérea de Estados Unidos, con los incidentes numerados del 1 al 233, procedentes de sus registros en los Archivos Nacionales y desclasificados en la primera entrega de PURSUE, el 8 de mayo de 2026. Cada resumen gira en torno a una ficha estandarizada, «Check-List - Unidentified Flying Objects», con fecha, lugar, descripción del objeto, rumbo, meteorología y fiabilidad del testigo, y muchos añaden listas de testigos y declaraciones. Es el instrumento con que los proyectos Sign (1948) y Grudge (1949) tabularon los reportes de discos voladores, antecedente de las fichas de Blue Book. Una ficha prueba que un reporte se recibió y se procesó, no que fuera anómalo: la mayoría se resolvía como globos, astros, aeronaves o errores de identificación.",
+      "description_en": "Three volumes of US Air Force \"Incident Summaries\", covering incidents numbered 1 to 233, drawn from its records at the National Archives and declassified in the first PURSUE release on 8 May 2026. Each summary is built around a standardized form, \"Check-List - Unidentified Flying Objects\", recording date, place, object description, heading, weather and witness reliability, and many add witness lists and statements. It is the instrument with which Projects Sign (1948) and Grudge (1949) tabulated flying-disc reports, the forerunner of Blue Book's record cards. A form proves that a report was received and processed, not that it was anomalous: most were resolved as balloons, astronomical bodies, aircraft or misidentifications."
+    },
+    {
+      "src": "/pursue/38_143685_box7_incident_summaries_101-172.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 101-172 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 101-172 — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_101-172.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part1of4.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 173-233 (parte 1/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 173-233 (part 1/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part2of4.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 173-233 (parte 2/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 173-233 (part 2/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part3of4.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 173-233 (parte 3/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 173-233 (part 3/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
+    },
+    {
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part4of4.pdf",
+      "type": "pdf",
+      "title": "Incident Summaries 173-233 (parte 4/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
+      "title_en": "Incident Summaries 173-233 (part 4/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
+      "source": "Department of War / USAF (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
+    },
+    {
+      "src": "https://paradigmresearchgroup.org/citizen-hearing-on-disclosure/",
+      "type": "link",
+      "title": "Estimate of the Situation",
+      "title_en": "Estimate of the Situation",
+      "description": "El «Estimate of the Situation» fue un documento TOP SECRET que el equipo de Project Sign, la investigación de la USAF en Wright Field, redactó en el verano de 1948, fechado hacia el 8 de agosto. Concluía que la hipótesis interplanetaria era la mejor explicación del fenómeno, y el avistamiento Chiles-Whitted fue una de sus piezas centrales, junto con el episodio de George Gorman sobre Fargo y la oleada de 1947. Hacia octubre de 1948 el general Hoyt S. Vandenberg lo rechazó por falta de evidencia física y ordenó destruir las copias, sin refutación científica documentada. El original nunca se ha recuperado: su contenido se conoce solo por testimonio de participantes, sobre todo el de Edward J. Ruppelt en su libro de 1956, escrito ocho años después.",
+      "description_en": "The 'Estimate of the Situation' was a TOP SECRET document drafted in the summer of 1948 by the Project Sign team, the USAF investigation at Wright Field, and dated around August 8. It concluded that the interplanetary hypothesis was the best explanation for the phenomenon, and the Chiles-Whitted sighting was one of its central pieces, together with George Gorman's encounter over Fargo and the 1947 wave. Around October 1948 General Hoyt S. Vandenberg rejected it for lack of physical evidence and ordered the copies destroyed, with no documented scientific rebuttal. The original has never been recovered: its content is known only through participants' testimony, above all Edward J. Ruppelt's 1956 book, written eight years later."
     }
   ],
   "evidenceReviewed": "2026-09-28",

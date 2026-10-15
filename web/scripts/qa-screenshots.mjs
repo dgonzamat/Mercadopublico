@@ -57,7 +57,7 @@ const PORT = Number(process.env.QA_PORT || 8123);
 const VIEWS = [
   { name: "home", route: "/", fullHeight: 2200 },
   { name: "case-detail", route: "/cases/varginha-1996/", fullHeight: 2600 },
-  { name: "case-xref", route: "/cases/burlison-ffrdc-investigation-2026/", phrase: "public front" },
+  { name: "case-xref", route: "/cases/lake-huron-2023/", phrase: "chain of custody (see" },
   { name: "cases-list", route: "/cases/", fullHeight: 2200 },
   { name: "probabilidades", route: "/probabilidades/", fullHeight: 2600 },
   { name: "calidad", route: "/calidad/", fullHeight: 2400 },

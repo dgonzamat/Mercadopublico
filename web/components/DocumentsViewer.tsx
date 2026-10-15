@@ -34,14 +34,18 @@ const isContextDoc = (d: { title?: string }) => /^(Contexto|Context)\b/.test(d.t
 export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "es" | "en" }) {
   if (docs.length === 0) return null;
   const docsVideo = docs.filter((d) => d.type === "video");
-  const docsOther = docs.filter((d) => d.type !== "video");
+  const docsOther = docs.filter((d) => d.type !== "video" && d.type !== "link");
+  const docsLink = docs.filter((d) => d.type === "link");
   const docsInline = [...docsVideo, ...docsOther.slice(0, INLINE_NONVIDEO_MAX)];
   const docsRest = docsOther.slice(INLINE_NONVIDEO_MAX);
   const onlyContext = docs.every(isContextDoc);
+  const onlyLinks = docsLink.length === docs.length;
   return (
     <section className="space-y-6">
       <p className="text-sm font-semibold text-accent">
-        {onlyContext ? (
+        {onlyLinks ? (
+          <T locale={locale} es="Documentos" en="Documents" />
+        ) : onlyContext ? (
           <T locale={locale} es="Imagen de contexto (no es un documento del caso)" en="Context image (not a document from the case)" />
         ) : (
           <T locale={locale} es="Documentos primarios" en="Primary documents" />
@@ -133,6 +137,31 @@ export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "e
           </ul>
         </details>
       )}
+      {/* Documentos sin copia embebible: tarjeta con su descripción y el
+          enlace a su mejor fuente (no siempre el original del emisor). */}
+      {docsLink.map((doc, i) => (
+        <div key={`l${i}`} className="space-y-2 border border-border bg-panel/50 p-4">
+          <p className="text-sm font-semibold leading-snug text-text">
+            <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
+          </p>
+          {doc.description && (
+            <p className="text-sm leading-relaxed text-muted">
+              <T locale={locale} es={doc.description} en={doc.description_en ?? doc.description} />
+            </p>
+          )}
+          <p className="font-mono text-[11px] text-muted">
+            {doc.source && <>{doc.source} · </>}
+            <a
+              href={doc.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
+            >
+              <T locale={locale} es="ver fuente" en="view source" />
+            </a>
+          </p>
+        </div>
+      ))}
     </section>
   );
 }

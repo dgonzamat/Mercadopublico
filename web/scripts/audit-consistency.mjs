@@ -252,7 +252,10 @@ for (const r of researchers) {
   const surname = full.split(/\s+/).pop() || "";
   const linked =
     (full.length >= 4 && caseCorpusText.includes(full)) ||
-    (surname.length >= 4 && caseCorpusText.includes(surname));
+    (surname.length >= 4 && caseCorpusText.includes(surname)) ||
+    // Un actor que embebe documentos propios (los que respaldan al actor y no
+    // a un incidente) ya tiene su respaldo en el perfil.
+    (r.documents?.length ?? 0) > 0;
   if (!linked) orphanResearchers.push(r.id);
 }
 const linkedCount = researchers.length - orphanResearchers.length;
@@ -556,7 +559,7 @@ if (conSourcesEn.length > 0) {
 // prioriza Tier S→A→B, mismo patrón que E13.
 
 const hasVisualAsset = (c) =>
-  (Array.isArray(c.documents) && c.documents.length > 0) ||
+  (Array.isArray(c.documents) && c.documents.some((d) => d.type !== "link")) ||
   (c.primaryDocument && (c.primaryDocument.url || c.primaryDocument.href)) ||
   (c.featuredDoc && c.featuredDoc.url);
 
@@ -571,14 +574,11 @@ const hasVisualAsset = (c) =>
 // «no se puede tener». (sep 2026)
 const VISUAL_CERRADO_POR_LICENCIA = {
   "ariel-school-1994": "artefactos con copyright (dibujos, footage BBC 1994); sin contextual libre no engañosa",
-  "aaro-historical-record-2024": "meta/institucional; el PDF de AARO da 403 y no está en archive.org",
-  "pursue-r03-2026": "meta/institucional; sin documento de incidente único que no sea forzarlo",
   "bosque-chile-2010": "Commons seco; sin imagen libre del incidente",
   "byelokoroviche-1982": "Commons seco; sin imagen libre del incidente",
   "delphos-ring-1971": "Commons seco; sin imagen libre del incidente",
   "mystery-drones-east-coast-2024": "sin imagen libre; archive.org/wargovUFO sin hits",
   "val-johnson-1979": "solo una reconstrucción amateur y un doc CIA ajeno — ambos engañosos",
-  "nz-defence-force-declass-2010": "Crown copyright NZ (100 años); catálogo NatLib: «All rights reserved»; la PDM de archive.org es errónea",
   "jellyfish-iraq-2018": "metraje filtrado (Corbell), nunca liberado; sin espejo en DVIDS ni archive.org/wargovUFO",
   // Barrido de oct 2026 (Commons + archive.org + Openverse, detalle en docs/registros.md):
   "bledsoe-cape-fear-2007": "testimonio personal; solo fotos y entrevistas con copyright; barrido seco",
@@ -1988,7 +1988,7 @@ if (fs.existsSync(regionsPath)) {
 // (oct 2026: citas de Condon, Dash, el embajador en Marruecos y AARO, un hecho
 // histórico y el blog «Enigmatic Ideas») salen del conteo para que la nota solo
 // hable de usos nuevos; si una de ellas pierde todos sus usos, el guard lo dice.
-const HYPE_REVIEWED = new Set(["cia-historical-uap-archive", "lakenheath-bentwaters-1956", "morocco-gendarmerie-1976", "mosul-orb-2016", "mystery-airships-1896", "tinley-park-lights-2004"]);
+const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmerie-1976", "mosul-orb-2016", "mystery-airships-1896", "tinley-park-lights-2004"]);
 {
   const NOTE_RE = /\b(?:el|este) corpus (?:debe|debería|deberá|necesita|tiene que)\b|\bthe corpus (?:must|should|needs)\b|versión anterior de (?:esta|este) (?:ficha|caso)|(?:la|una) ficha anterior|esta misma ficha|versiones anteriores|earlier versions? of this|previous version of this|this same record/i;
   const RANK_RE = /\bprimer[oa]? (?:[\p{L}\p{N}'’-]+ ){0,4}(?:del|en el) corpus\b|corpus's first\b|\bfirst (?:[\p{L}\p{N}'’-]+ ){0,3}(?:case|file) in the corpus\b|\b(?:más|menos) [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} (?:del|de todo el|en todo el) corpus\b|\bmejor(?:es)? [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} del corpus\b|corpus's (?:most|least|best|strongest|weakest|clearest|largest|only|anchor)\b|\b(?:most|best|strongest|weakest|largest|longest|shortest|clearest|cleanest|oldest)\b(?: [\p{L}\p{N}'’-]+){0,4} in the (?:entire )?corpus\b|\bcaso ancla del corpus\b|\bancla a [\p{L}\p{N}'’-]+ en el corpus\b|\banchors [\p{L}\p{N}'’-]+ in the corpus\b/iu;
@@ -2048,27 +2048,17 @@ const HYPE_REVIEWED = new Set(["cia-historical-uap-archive", "lakenheath-bentwat
   }
 }
 
-// ─── 9za7. RULE E49: ningún documento sin caso ni actor ──────────────────
+// ─── 9za7. RULE E49: ninguna ficha de tipo documento ────────────────────
 //
-// Decisión del dueño (oct 2026): un documento existe solo como respaldo de un
-// caso (`relatedCases`) o de un actor (lib/researcherCases.ts). Los que no
-// respaldaban nada se borraron, y no hay página de documentos sueltos: cuelgan
-// de su caso o de su actor. Esta regla impide que vuelva a entrar uno huérfano,
-// y que un `relatedCases` apunte a un caso que no existe o a otro documento.
+// Decisión del dueño (oct 2026): un documento no tiene ficha propia. Vive
+// embebido en el visor del caso o del actor que respalda (`documents[]`, con su
+// `description`), y la URL de la ficha vieja redirige ahí (lib/caseAliases.ts).
+// Primero se borraron los documentos que no respaldaban nada (12 oct); el 15
+// oct se integraron los 66 restantes. Esta regla impide que vuelva a entrar una.
 {
-  const rcSrc = fs.readFileSync(path.join(root, "lib", "researcherCases.ts"), "utf8");
-  const actorLinked = new Set([...rcSrc.matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
-  const byId = new Map(cases.map((c) => [c.id, c]));
   for (const c of cases) {
     if (c.category !== "document") continue;
-    const rel = c.relatedCases ?? [];
-    const f = path.join("data", "cases", `${c.id}.json`);
-    for (const id of rel) {
-      const t = byId.get(id);
-      if (!t) record("ERROR", f, 0, `E49 relatedCases apunta a un caso que no existe: ${id}.`);
-      else if (t.category === "document") record("ERROR", f, 0, `E49 relatedCases apunta a otro documento (${id}); debe apuntar a un incidente.`);
-    }
-    if (!rel.length && !actorLinked.has(c.id)) record("ERROR", f, 0, `E49 documento sin caso ni actor: añade relatedCases o enlázalo a un actor en lib/researcherCases.ts; si no respalda nada, se borra y su num va a data/retired-nums.json.`);
+    record("ERROR", path.join("data", "cases", `${c.id}.json`), 0, `E49 ficha de tipo documento: los documentos no tienen ficha propia. Embébelo en el caso o el actor que respalda (documents[] con description), borra la ficha, anota su num en data/retired-nums.json y su id en lib/caseAliases.ts.`);
   }
 }
 

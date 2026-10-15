@@ -103,6 +103,11 @@
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
       "note": "Tasa base para la clase prosaica: 174 casos resueltos, todos como objetos prosaicos.",
       "note_en": "Base rate for the prosaic class: 174 resolved cases, all as prosaic objects."
+    },
+    {
+      "name": "Petrilli, Lao & Sinapi, Vincenzo. 'UFO: I dossier italiani' (Ugo Mursia Editore, 2014)",
+      "note": "Libro basado en el acceso a expedientes previamente sellados 'Segreto'/'Riservato' de la Aeronautica Militare.",
+      "note_en": "Book based on access to files previously stamped 'Secret'/'Reserved' by the Aeronautica Militare."
     }
   ],
   "posterior": {
@@ -123,6 +128,17 @@
       "source": "Aeronautica Militare (aeronautica.difesa.it)",
       "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
       "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2022/11/Avvistamenti_2005.pdf"
+    },
+    {
+      "src": "/pursue/aeronautica-militare-avvistamenti-1972-1990.pdf",
+      "type": "pdf",
+      "title": "Aeronautica Militare — avistamientos por región y año, 1972–1990 (3 págs.)",
+      "title_en": "Italian Air Force — sightings by region and year, 1972–1990 (3 pp.)",
+      "source": "Aeronautica Militare (aeronautica.difesa.it)",
+      "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
+      "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/INT.Dperiodo1972-1990.pdf",
+      "description": "Archivo OVNI de la Aeronautica Militare, el organismo que el primer ministro Giulio Andreotti designó en 1978 para recibir e investigar los reportes en Italia, hoy a cargo del Reparto Generale Sicurezza. Sus expedientes, muchos sellados como «Segreto» o «Riservato», llegaron al público en marzo de 2014 con el libro «UFO: I dossier italiani» de Lao Petrilli y Vincenzo Sinapi, que reveló entre otros el contacto radar de Grazzanise (8 de febrero de 2005) confirmado por la tripulación de un C-130. Se embebe la estadística oficial de avistamientos por región y año de 1972 a 1990. La Fuerza Aérea mantiene un archivo público anual desde 1972, pero nunca presentó el episodio de 2014 como una desclasificación formal: fue acceso periodístico.",
+      "description_en": "The UFO archive of the Aeronautica Militare, the body that Prime Minister Giulio Andreotti designated in 1978 to receive and investigate reports in Italy, now handled by its General Security Department. Its files, many stamped 'Segreto' or 'Riservato', reached the public in March 2014 through the book 'UFO: I dossier italiani' by Lao Petrilli and Vincenzo Sinapi, which revealed among others the Grazzanise radar contact (February 8, 2005) confirmed by a C-130 crew. The embedded file is the official tally of sightings by region and year from 1972 to 1990. The Air Force keeps a public yearly archive since 1972, but never presented the 2014 episode as a formal declassification: it was journalistic access."
     }
   ]
 }

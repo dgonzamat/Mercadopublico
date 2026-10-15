@@ -75,6 +75,12 @@
       "url": "https://archive.org/details/UFO_Newsclipping_Service_1980_05_no_130",
       "note": "Reproduce el Rio Grande Sun (17 abr 1980) y The New Mexican (18 abr 1980) sobre la rueda de prensa de Rommel y las objeciones de Dulce.",
       "note_en": "Reproduces the Rio Grande Sun (Apr 17, 1980) and The New Mexican (Apr 18, 1980) on Rommel's press conference and the Dulce objections."
+    },
+    {
+      "name": "FBI Vault — Animal Mutilation files",
+      "url": "https://vault.fbi.gov/Animal%20Mutilation",
+      "note": "Archivo desclasificado del FBI con correspondencia y materiales relacionados al caso.",
+      "note_en": "Declassified FBI archive with correspondence and case-related materials."
     }
   ],
   "classBasis": {
@@ -84,5 +90,18 @@
     "source_en": "Rommel, K. M. — \"Operation Animal Mutilation\" (June 1980), ch. 3, \"Summary and Conclusions\"",
     "url": "https://rr0.org/time/1/9/8/0/06/Rommel_OperationAnimalMutilation/index.html"
   },
-  "evidenceReviewed": "2026-10-12"
+  "evidenceReviewed": "2026-10-12",
+  "documents": [
+    {
+      "src": "/pursue/rommel-report-1980-context.jpg",
+      "type": "image",
+      "title": "Contexto · Santa Fe (Nuevo México)",
+      "title_en": "Context · Santa Fe (New Mexico)",
+      "source": "Santa Fe Plaza.jpg · Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ASanta%20Fe%20Plaza.jpg",
+      "description": "«Operation Animal Mutilation», informe final (junio de 1980) del proyecto de la Fiscalía del Primer Distrito Judicial de Nuevo México, financiado con 44.170 dólares de la LEAA del Departamento de Justicia y dirigido por el exagente del FBI Kenneth M. Rommel. Revisó 117 casos del estado: los informes de 90 anteriores al proyecto, de los que 69 resultaron explicables al menos en parte y 21 sin datos suficientes, y 27 incidentes durante él, 15 inspeccionados en persona. Ninguno pudo confirmarse como mutilación «clásica»: atribuyó los daños a depredadores y carroñeros sobre animales muertos sobre todo por causas naturales, sin pruebas de sectas ni helicópteros encubiertos. Su límite: al ver bordes desgarrados o marcas de dientes, Rommel no buscó la causa de la muerte.",
+      "description_en": "'Operation Animal Mutilation', the final report (June 1980) of the project run by the District Attorney of New Mexico's First Judicial District, funded with $44,170 from the Justice Department's LEAA and directed by former FBI agent Kenneth M. Rommel. It reviewed 117 cases in the state: reports on 90 earlier ones, of which 69 proved at least partly explainable and 21 lacked enough data, and 27 incidents during the project, 15 inspected in person. None could be confirmed as a 'classic' mutilation: it attributed the damage to predators and scavengers on animals that died mostly of natural causes, with no evidence of cults or covert helicopters. Its limit: on seeing torn edges or tooth marks, Rommel did not look for the cause of death."
+    }
+  ]
 }

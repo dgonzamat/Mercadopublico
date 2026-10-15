@@ -124,11 +124,27 @@
         "name": "J. Allen Hynek, 'The UFO Experience: A Scientific Inquiry' (1972)",
         "note": "Define el sistema de encuentros cercanos.",
         "note_en": "Defines the close-encounters classification."
+      },
+      {
+        "name": "Ruppelt, Edward J. — 'The Report on Unidentified Flying Objects' (1956)",
+        "url": "https://sacred-texts.com/ufo/rufo/index.htm",
+        "note": "Relato de primera mano del oficial que reorganizó el esfuerzo y fundó Blue Book; describe el clima de Grudge.",
+        "note_en": "First-hand account by the officer who reorganized the effort and founded Blue Book; describes the Grudge climate."
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Allen%20Hynek%20Jacques%20Vallee%201.jpg?width=400",
     "photo_credit": "U.S. Government work",
-    "photo_license": "Dominio público"
+    "photo_license": "Dominio público",
+    "documents": [
+      {
+        "src": "https://sacred-texts.com/ufo/rufo/index.htm",
+        "type": "link",
+        "title": "Project Grudge — USAF",
+        "title_en": "Project Grudge — USAF",
+        "description": "Informe Técnico de Project Grudge (agosto de 1949), segundo programa de la USAF sobre «platillos volantes» y sucesor de Project Sign. Revisó unos 244 casos y los atribuyó a globos meteorológicos, cuerpos astronómicos, aviones, reflejos, ilusiones ópticas, histeria y engaños; reconoció que cerca del 23% quedaba sin explicar, pero lo declaró sin significado y sin amenaza para la seguridad nacional. Recomendó reducir la investigación y desalentar el reporte público. El astrónomo J. Allen Hynek aportó como consultor explicaciones astronómicas. Prueba cómo la respuesta oficial pasó de investigar a desacreditar antes de que el programa se refundara como Blue Book en marzo de 1952; no dice qué eran los objetos.",
+        "description_en": "Project Grudge Technical Report (August 1949), the USAF's second 'flying saucer' program and the successor to Project Sign. It reviewed about 244 cases and attributed them to weather balloons, astronomical bodies, aircraft, reflections, optical illusions, hysteria and hoaxes; it acknowledged that about 23% remained unexplained, but deemed that residue insignificant and no threat to national security. It recommended scaling back the investigation and discouraging public reporting. Astronomer J. Allen Hynek contributed astronomical explanations as a consultant. It shows how the official response moved from investigating to debunking before the program was refounded as Blue Book in March 1952; it says nothing about what the objects were."
+      }
+    ]
   },
   {
     "id": "ruppelt",
@@ -156,11 +172,129 @@
         "name": "Edward J. Ruppelt, 'The Report on Unidentified Flying Objects' (1956)",
         "note": "Memoria del director del Proyecto Libro Azul.",
         "note_en": "Memoir by the Project Blue Book director."
+      },
+      {
+        "name": "USAF Twining Memo, 23 Sep 1947 (escaneo, copia NICAP)",
+        "url": "https://www.nicap.org/docs/1947_Twining_memo.pdf",
+        "note": "Fuente primaria: escaneo de las tres páginas de la copia de archivo, con el sello de desclasificación",
+        "note_en": "Primary source: scan of the three pages of the archival copy, with the declassification stamp"
+      },
+      {
+        "name": "Condon Report (1969), Apéndice R: carta del general N. F. Twining, texto completo (NCAS)",
+        "name_en": "Condon Report (1969), Appendix R: letter from General N. F. Twining, full text (NCAS)",
+        "url": "http://files.ncas.org/condon/text/appndx-r.htm",
+        "note": "Fuente primaria: primera publicación del texto íntegro",
+        "note_en": "Primary source: first publication of the full text"
+      },
+      {
+        "name": "National Archives — Project Blue Book (Record Group 341) y hoja informativa de la USAF",
+        "url": "https://www.archives.gov/research/military/air-force/ufos",
+        "note": "Fuente primaria: descripción de los expedientes y copia de la hoja informativa de la USAF (12.618 avistamientos entre 1947 y 1969, 701 sin identificar, conclusiones del cierre).",
+        "note_en": "Primary source: description of the files and a copy of the USAF fact sheet (12,618 sightings from 1947 to 1969, 701 unidentified, closure conclusions).",
+        "name_en": "National Archives — Project Blue Book (Record Group 341) and USAF fact sheet"
+      },
+      {
+        "name": "Condon, E. U. (ed.) — 'Scientific Study of Unidentified Flying Objects' (Colorado Project, 1968)",
+        "url": "https://files.ncas.org/condon/",
+        "note": "Fuente primaria: informe que sirvió de base al cierre de Blue Book.",
+        "note_en": "Primary source: the report on which Blue Book's closure was based."
       }
     ],
     "photo": "/researchers/ruppelt.jpg",
     "photo_credit": "St. Louis Post-Dispatch, 8 mar 1953 (recorte de la foto en en.wikipedia)",
-    "photo_license": "Dominio público en EE.UU. (PD-US)"
+    "photo_license": "Dominio público en EE.UU. (PD-US)",
+    "documents": [
+      {
+        "src": "https://www.dvidshub.net/video/embed/1023407",
+        "type": "video",
+        "title": "DOW-UAP-PR160 · audio de la presentación del capitán Edward J. Ruppelt, marzo de 1952 (PURSUE Release 06)",
+        "title_en": "DOW-UAP-PR160 · audio of Captain Edward J. Ruppelt's presentation, March 1952 (PURSUE Release 06)",
+        "source": "Department of War · PURSUE Release 06 (18 sep 2026), vía DVIDS",
+        "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)",
+        "fallbackUrl": "https://www.dvidshub.net/video/1023407/dow-uap-pr160-presentation-captain-edward-j-ruppelt-1952",
+        "description": "Audio (DOW-UAP-PR160) y transcripción íntegra de 19 páginas (DOW-UAP-D154) de una presentación del capitán Edward J. Ruppelt, jefe de Blue Book, de la segunda quincena de marzo de 1952, publicados en la sexta entrega de PURSUE el 18 de septiembre de 2026. Ruppelt expone que de unos 800 casos en archivo cerca del 20% resiste toda explicación, y en la sala desinfla dos casos: Fort Monmouth, un globo mayor de lo normal más operadores de radar alterados, y Mantell, falta de oxígeno mientras perseguía Venus o un globo Skyhook. Se acompaña la carta del congresista Eric Burlison al MIT Lincoln Laboratory (7 de mayo de 2026) que reclamaba el carrete «AF-ATIC-FILM, 03/52». Ningún documento de la entrega nombra al laboratorio: la identificación la hizo la oficina de Burlison.",
+        "description_en": "Audio (DOW-UAP-PR160) and a full 19-page transcript (DOW-UAP-D154) of a presentation by Captain Edward J. Ruppelt, head of Blue Book, from the second half of March 1952, published in PURSUE's sixth release on September 18, 2026. Ruppelt states that of some 800 cases on file about 20% resist all explanation, and in the room he deflates two cases: Fort Monmouth, a larger-than-normal balloon plus rattled radar operators, and Mantell, oxygen starvation while chasing Venus or a Skyhook balloon. It comes with Congressman Eric Burlison's letter to MIT Lincoln Laboratory (May 7, 2026) seeking the 'AF-ATIC-FILM, 03/52' reel. No document in the release names the laboratory: the identification was made by Burlison's office."
+      },
+      {
+        "src": "/pursue/DOW-UAP-D154_ruppelt-transcript-1952.pdf",
+        "type": "pdf",
+        "title": "DOW-UAP-D154 · transcripción íntegra de la presentación del capitán Edward J. Ruppelt, marzo de 1952: 19 páginas, de la prueba de micrófono a la última pregunta del público (PURSUE Release 06)",
+        "title_en": "DOW-UAP-D154 · full transcript of Captain Edward J. Ruppelt's presentation, March 1952: 19 pages, from the microphone test to the last question from the floor (PURSUE Release 06)",
+        "source": "Department of War · PURSUE Release 06 (18 sep 2026)",
+        "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
+      },
+      {
+        "src": "/pursue/burlison-mit-lincoln-lab-ruppelt-tape-2026.pdf",
+        "type": "pdf",
+        "title": "La carta que demanda esta grabación: el congresista Eric Burlison a MIT Lincoln Laboratory (7 may 2026), pidiendo determinar si el reel-to-reel 'AF-ATIC-FILM, 03/52' —el briefing de Ruppelt rotulado 'flying saucer talk'— sobrevive, preservarlo y transferir una copia de preservación a NARA (Record Group 615) bajo la UAP Records Collection de la FY 2024 NDAA.",
+        "title_en": "The letter that demands this recording: Rep. Eric Burlison to MIT Lincoln Laboratory (May 7, 2026), asking to determine whether the reel-to-reel 'AF-ATIC-FILM, 03/52' —Ruppelt's briefing labeled 'flying saucer talk'— still exists, to preserve it, and to transfer a preservation copy to NARA (Record Group 615) under the FY 2024 NDAA UAP Records Collection.",
+        "source": "U.S. House of Representatives · Committee on Oversight and Government Reform",
+        "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
+      },
+      {
+        "src": "/pursue/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
+        "type": "pdf",
+        "title": "DOW-UAP-D086 — Report of Flying Discs, Marina de EE.UU. (Quinto Distrito Naval, dic 1948)",
+        "title_en": "DOW-UAP-D086 — U.S. Navy Report of Flying Discs (Fifth Naval District, Dec 1948)",
+        "source": "Department of War / U.S. Navy (PURSUE Release 03)",
+        "license": "Dominio público · obra del Gobierno de EE. UU.",
+        "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
+        "description": "Cinco documentos desclasificados en la tercera entrega de PURSUE (12 de junio de 2026) sobre los primeros estudios militares de los «discos voladores» en Estados Unidos: el «Report of Flying Discs» de la Marina (Quinto Distrito Naval, Norfolk, 13 de diciembre de 1948, DOW-UAP-D086); el «Flying Saucer Study» del Ejército (Army Field Forces, 1949, D084); los dos volúmenes de la «Analysis of Flying Objects in the United States» de la USAF, con las fichas «Check-List UFO» de los objetos 1 a 172 (D087 y D088); y la transmisión interna, de marzo de 1953, del informe del Panel Robertson de la CIA, que recomendó una política pública de desmitificación (D085). Documentan cómo se estudió y se encuadró el fenómeno, no que los objetos fueran anómalos.",
+        "description_en": "Five documents declassified in PURSUE's third release (June 12, 2026) on the earliest U.S. military studies of 'flying discs': the Navy's 'Report of Flying Discs' (Fifth Naval District, Norfolk, December 13, 1948, DOW-UAP-D086); the Army's 'Flying Saucer Study' (Army Field Forces, 1949, D084); the two volumes of the USAF 'Analysis of Flying Objects in the United States', with the 'Check-List UFO' sheets for objects 1 to 172 (D087 and D088); and the internal transmittal, from March 1953, of the CIA Robertson Panel report, which recommended a public debunking policy (D085). They document how the phenomenon was studied and framed, not that the objects were anomalous."
+      },
+      {
+        "src": "/pursue/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
+        "type": "pdf",
+        "title": "DOW-UAP-D084 — Flying Saucer Study, Ejército de EE.UU. (Army Field Forces, 1949)",
+        "title_en": "DOW-UAP-D084 — U.S. Army Flying Saucer Study (Army Field Forces, 1949)",
+        "source": "Department of War / U.S. Army (PURSUE Release 03)",
+        "license": "Dominio público · obra del Gobierno de EE. UU.",
+        "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf"
+      },
+      {
+        "src": "/pursue/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf",
+        "type": "pdf",
+        "title": "DOW-UAP-D087 — Analysis of Flying Objects in the US, objetos 1-100 (Check-List UFO, USAF)",
+        "title_en": "DOW-UAP-D087 — Analysis of Flying Objects in the US, objects 1-100 (Check-List UFO, USAF)",
+        "source": "Department of War / USAF (PURSUE Release 03)",
+        "license": "Dominio público · obra del Gobierno de EE. UU.",
+        "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf"
+      },
+      {
+        "src": "/pursue/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
+        "type": "pdf",
+        "title": "DOW-UAP-D088 — Analysis of Flying Objects in the US, objetos 101-172 (Check-List UFO, USAF)",
+        "title_en": "DOW-UAP-D088 — Analysis of Flying Objects in the US, objects 101-172 (Check-List UFO, USAF)",
+        "source": "Department of War / USAF (PURSUE Release 03)",
+        "license": "Dominio público · obra del Gobierno de EE. UU.",
+        "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf"
+      },
+      {
+        "src": "/pursue/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
+        "type": "pdf",
+        "title": "DOW-UAP-D085 — transmisión del informe del panel científico de la CIA (Panel Robertson, 1953)",
+        "title_en": "DOW-UAP-D085 — transmission of the CIA scientific advisory panel report (Robertson Panel, 1953)",
+        "source": "Department of War / CIA (PURSUE Release 03)",
+        "license": "Dominio público · obra del Gobierno de EE. UU.",
+        "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf"
+      },
+      {
+        "src": "https://www.nicap.org/docs/1947_Twining_memo.pdf",
+        "type": "link",
+        "title": "Twining Memo",
+        "title_en": "Twining Memo",
+        "description": "Carta clasificada SECRET del 23 de septiembre de 1947, titulada «AMC Opinion Concerning \"Flying Discs\"», firmada por el teniente general Nathan F. Twining, comandante del Air Materiel Command, y dirigida al general Schulgen. Afirma que «the phenomenon reported is something real and not visionary or fictitious», admite que algunos incidentes pueden ser fenómenos naturales como meteoros y recomienda un estudio con prioridad y nombre clave, que cristalizó en Project Sign. Su límite es su base: es la opinión de ingenieros y analistas sobre informes de interrogatorio de testigos, no una investigación de campo propia, y menciona la falta de restos recuperados. El texto se publicó en 1969 en el Apéndice R del informe Condon.",
+        "description_en": "A SECRET classified letter dated 23 September 1947, titled 'AMC Opinion Concerning \"Flying Discs\"', signed by Lieutenant General Nathan F. Twining, commander of the Air Materiel Command, and addressed to General Schulgen. It states that 'the phenomenon reported is something real and not visionary or fictitious', concedes that some incidents may be natural phenomena such as meteors, and recommends a priority, code-named study, which crystallized into Project Sign. Its limit is its basis: it is the opinion of engineers and analysts on witness interrogation reports, not a field investigation of its own, and it notes the lack of recovered crash debris. The text was published in 1969 in Appendix R of the Condon Report."
+      },
+      {
+        "src": "https://www.archives.gov/research/military/air-force/ufos",
+        "type": "link",
+        "title": "Project Blue Book — USAF (1952–1969)",
+        "title_en": "Project Blue Book — USAF (1952–1969)",
+        "description": "Project Blue Book fue el programa oficial de la USAF entre marzo de 1952 y diciembre de 1969, sucesor de Sign y Grudge, operado desde el Air Technical Intelligence Center en Wright-Patterson. Según la hoja informativa de la USAF, entre 1947 y 1969 recibió 12.618 avistamientos, de los que 701 (5,6%) quedaron como «Unidentified». Su cierre, anunciado el 17 de diciembre de 1969, se apoyó en el informe Condon y en su revisión por la Academia Nacional de Ciencias. El memorándum Bolender (20 de octubre de 1969) recordó que los informes que afectaran la seguridad nacional iban por otros canales y «are not part of the Blue Book system». Los expedientes están en los Archivos Nacionales desde 1976 (Record Group 341).",
+        "description_en": "Project Blue Book was the official USAF program between March 1952 and December 1969, successor to Sign and Grudge, run from the Air Technical Intelligence Center at Wright-Patterson. According to the USAF fact sheet, it received 12,618 sightings between 1947 and 1969, of which 701 (5.6%) remained 'Unidentified'. Its closure, announced on 17 December 1969, rested on the Condon Report and its review by the National Academy of Sciences. The Bolender memorandum (20 October 1969) noted that reports affecting national security went through other channels and 'are not part of the Blue Book system'. The files have been at the National Archives since 1976 (Record Group 341)."
+      }
+    ]
   },
   {
     "id": "keyhoe",
@@ -233,11 +367,27 @@
         "name": "James E. McDonald, 'Statement on Unidentified Flying Objects', House Symposium (1968)",
         "note": "Testimonio científico ante el Congreso de EE.UU.",
         "note_en": "Scientific testimony before the US Congress."
+      },
+      {
+        "name": "'Scientific Study of Unidentified Flying Objects' (Condon Report) — texto completo (archive.org)",
+        "url": "https://archive.org/details/scientificstudyo0000unse",
+        "note": "Documento primario.",
+        "note_en": "Primary document."
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20E.%20McDonald%201.gif?width=400",
     "photo_credit": "United States Government",
-    "photo_license": "Dominio público · obra del Gobierno de EE. UU."
+    "photo_license": "Dominio público · obra del Gobierno de EE. UU.",
+    "documents": [
+      {
+        "src": "https://archive.org/details/scientificstudyo0000unse",
+        "type": "link",
+        "title": "Condon Report · estudio USAF–Universidad de Colorado",
+        "title_en": "Condon Report · USAF–University of Colorado study",
+        "description": "«Scientific Study of Unidentified Flying Objects», estudio de la Universidad de Colorado dirigido por el físico Edward U. Condon con financiación de la USAF desde octubre de 1966, entregado a fines de 1968 y publicado en enero de 1969. Examinó unos 91 casos. Su conclusión, redactada por Condon, sostuvo que el estudio de los OVNIs no aportaba nada a la ciencia y no justificaba más fondos; la Academia Nacional de Ciencias la avaló y la USAF cerró Blue Book en diciembre de 1969. Dos límites: el memorándum de Robert Low de 1966 muestra que el resultado negativo se esperaba antes de empezar, y cerca de un tercio de los casos del propio informe quedó sin explicar. Ese residuo no prueba nada exótico: puede deberse a datos insuficientes.",
+        "description_en": "'Scientific Study of Unidentified Flying Objects', a University of Colorado study led by physicist Edward U. Condon under USAF funding from October 1966, delivered in late 1968 and published in January 1969. It examined about 91 cases. Its conclusion, written by Condon, held that UFO study had contributed nothing to science and did not warrant further funding; the National Academy of Sciences endorsed it and the USAF closed Blue Book in December 1969. Two limits: Robert Low's 1966 memo shows a negative result was expected before work began, and about a third of the report's own cases remained unexplained. That residue proves nothing exotic: it may reflect insufficient data."
+      }
+    ]
   },
   {
     "id": "friedman",
@@ -382,6 +532,26 @@
         "name": "'Wilson/Davis Memo' (notas filtradas, 2019)",
         "note": "Notas sobre un presunto programa de acceso especial no reconocido.",
         "note_en": "Notes on an alleged unacknowledged special-access program."
+      },
+      {
+        "name": "The Black Vault — 'The Admiral Wilson Leak – Core Secrets Document – An Analysis'",
+        "url": "https://www.theblackvault.com/casefiles/the-admiral-wilson-leak-an-analysis/"
+      },
+      {
+        "name": "Billy Cox, Life in Jonestown — «Oke who? — the Admiral» (9 ago 2021)",
+        "url": "https://lifeinjonestown.substack.com/p/oke-who-the-admiral",
+        "note": "Reproduce el correo de Wilson a Ross Coulthart del 30 jun 2020 («pure fiction») y su negativa a haberse reunido con Davis «en ningún sitio»; Wilson confirma una reunión anterior con Edgar Mitchell sobre ovnis.",
+        "note_en": "Reproduces Wilson's June 30, 2020 email to Ross Coulthart ('pure fiction') and his denial of ever meeting Davis 'anywhere else'; Wilson confirms an earlier meeting with Edgar Mitchell about UFOs."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.theblackvault.com/casefiles/the-admiral-wilson-leak-an-analysis/",
+        "type": "link",
+        "title": "Wilson-Davis Memo",
+        "title_en": "Wilson-Davis Memo",
+        "description": "El llamado memo Wilson-Davis es un conjunto de notas manuscritas atribuidas a Eric W. Davis, fechadas el 16 de octubre de 2002, que registran una conversación con el almirante Thomas R. Wilson, ex vicedirector de la DIA. Según las notas, Wilson relató que hacia 1997 se le negó el acceso a un programa de acceso especial gestionado por un contratista privado que decía estudiar material recuperado de origen desconocido, pese a su habilitación y su rango. Las notas se difundieron en 2019, tras la muerte de Edgar Mitchell. Davis no ha negado su autoría, pero Wilson niega la reunión y el contenido y llamó al memo «pure fiction»; el Pentágono no lo confirma ni lo desmiente. Son notas privadas que ningún documento de programa corrobora.",
+        "description_en": "The so-called Wilson-Davis memo is a set of handwritten notes attributed to Eric W. Davis, dated October 16, 2002, recording a conversation with Admiral Thomas R. Wilson, former deputy director of the DIA. According to the notes, Wilson said that around 1997 he was denied access to a special access program run by a private contractor that claimed to be studying recovered material of unknown origin, despite his clearance and rank. The notes circulated in 2019, after Edgar Mitchell's death. Davis has not denied writing them, but Wilson denies both the meeting and the content and called the memo 'pure fiction'; the Pentagon neither confirms nor denies it. They are private notes that no program document corroborates."
       }
     ]
   },
@@ -441,11 +611,25 @@
         "name": "Christopher Mellon, columnas en The Wall Street Journal y The Washington Post (2018–2024)",
         "note": "Encuadre del problema UAP como seguridad nacional.",
         "note_en": "Framing of the UAP problem as national security."
+      },
+      {
+        "name": "PR Newswire / Disclosure Foundation — anuncio oficial del foro (23 jun 2026)",
+        "url": "https://www.prnewswire.com/news-releases/disclosure-foundation-to-convene-senators-members-of-congress-and-leading-experts-across-disciplines-for-landmark-public-forum-on-june-25-302807931.html"
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ChrisMellonMoszkowiczshowJan242023.jpg?width=400",
     "photo_credit": "Max Moszkowicz Show",
-    "photo_license": "CC-BY-SA"
+    "photo_license": "CC-BY-SA",
+    "documents": [
+      {
+        "src": "https://www.prnewswire.com/news-releases/disclosure-foundation-to-convene-senators-members-of-congress-and-leading-experts-across-disciplines-for-landmark-public-forum-on-june-25-302807931.html",
+        "type": "link",
+        "title": "Disclosure Forum 2026 · Kennedy Caucus Room, Senado EEUU (25 jun)",
+        "title_en": "Disclosure Forum 2026 · Kennedy Caucus Room, U.S. Senate (June 25)",
+        "description": "El Disclosure Forum 2026 fue un foro público de jornada completa que la Disclosure Foundation, presidida por Christopher Mellon, celebró el 25 de junio de 2026 en el Kennedy Caucus Room del Russell Senate Office Building, en Washington, con transmisión en directo. Reunió a los senadores Kirsten Gillibrand y Mike Rounds, a los representantes Anna Paulina Luna, Eric Burlison, Tim Burchett y Suhas Subramanyam, y a expertos como Avi Loeb, Harold Puthoff, el contralmirante retirado Tim Gallaudet y el historiador Carlos Eire. Llegó dos semanas después de la tercera entrega de PURSUE. El foro no aportó evidencia material nueva: documenta la convergencia pública de figuras legislativas, militares, de inteligencia y académicas, no la naturaleza del fenómeno.",
+        "description_en": "The Disclosure Forum 2026 was a full-day public forum held by the Disclosure Foundation, chaired by Christopher Mellon, on June 25, 2026 in the Kennedy Caucus Room of the Russell Senate Office Building in Washington, and streamed live. It brought together Senators Kirsten Gillibrand and Mike Rounds, Representatives Anna Paulina Luna, Eric Burlison, Tim Burchett and Suhas Subramanyam, and experts such as Avi Loeb, Harold Puthoff, retired Rear Admiral Tim Gallaudet and historian Carlos Eire. It came two weeks after the third PURSUE release. The forum brought no new material evidence: it documents the public convergence of legislative, military, intelligence and academic figures, not the nature of the phenomenon."
+      }
+    ]
   },
   {
     "id": "mack",
@@ -1957,11 +2141,72 @@
         "url": "https://www.ibtimes.co.uk/david-grusch-says-he-never-saw-reptilian-himself-claims-us-personnel-shot-them-after-ufo-crash-1823425",
         "note": "Cobertura del episodio 2560 de The Joe Rogan Experience (30 sep 2026); recoge que el relato de los reptilianos es de segunda mano.",
         "note_en": "Coverage of The Joe Rogan Experience episode 2560 (30 Sep 2026); records that the reptilian account is second-hand."
+      },
+      {
+        "name": "Air Staff Summary Sheet «Unidentified Flying Objects (UFO)», firmada por el general de brigada C. H. Bolender, 20 oct 1969 (escaneo, copia NICAP)",
+        "url": "https://www.nicap.org/docs/Bolender_draft.pdf",
+        "note": "Documento primario: tres páginas firmadas; los 16 anexos no están incluidos.",
+        "note_en": "Primary document: three signed pages; the 16 attachments are not included."
+      },
+      {
+        "name": "JANAP 146(E), Canadian-United States Communications Instructions for Reporting Vital Intelligence Sightings (CIRVIS/MERINT), Estado Mayor Conjunto, 1966 (copia revisada en 1977, archive.org)",
+        "url": "https://archive.org/download/CIADocuments/CIA-613_text.pdf",
+        "note": "Fuente primaria del procedimiento CIRVIS: incluye los OVNIs en la lista de lo reportable y se declara no clasificado.",
+        "note_en": "Primary source for the CIRVIS procedure: lists UFOs among reportable items and declares itself unclassified."
+      },
+      {
+        "name": "House Oversight UAP Hearing — full transcript (26 jul 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+      },
+      {
+        "name": "House Oversight — Grusch, declaración inicial y final (PDF, 26 jul 2023)",
+        "url": "https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf",
+        "note": "El texto que Grusch entregó al comité y leyó bajo juramento. Lo que aportó en privado (su denuncia al Inspector General y la información clasificada) no tiene versión pública.",
+        "note_en": "The text Grusch gave the committee and read under oath. What he provided in private (his complaint to the Inspector General and the classified information) has no public version."
+      },
+      {
+        "name": "NewsNation — 'UFO whistleblower David Grusch says government aware of several kinds of aliens'",
+        "url": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-david-grusch-declassified-uap-files/"
+      },
+      {
+        "name": "Unidentified Phenomena — 'Grusch Reveals Multiple Non-Human Life Forms, Legacy Programs, Sentient Plasmoid Entities'",
+        "url": "https://unidentifiedphenomena.com/topics/capitol-hill-ufo-press-conference-grusch-reveals-multiple-non-human-life-forms-legacy-programs-sentient-plasmoid-entities-and-dozens-of-aware-u-s-bases/",
+        "note": "Quote primario del 'continuo... vida plasmoide sintiente'.",
+        "note_en": "Primary quote of the 'continuum... sentient plasmoid life'."
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Grusch%20giving%20testimony%20on%2026%20July%202023%20before%20the%20US%20House%20Subcommittee%20on%20National%20Security%20the%20Border%20and%20Foreign%20Affairs.png?width=400",
     "photo_credit": "US House Subcommittee",
-    "photo_license": "Dominio público"
+    "photo_license": "Dominio público",
+    "documents": [
+      {
+        "src": "/pursue/grusch-opening-statement-2023.pdf",
+        "type": "pdf",
+        "title": "Declaración inicial y final de David Grusch ante el Subcomité de la Cámara (26 jul 2023, 3 págs.)",
+        "title_en": "David Grusch's opening and closing statements to the House Subcommittee (26 Jul 2023, 3 pp.)",
+        "source": "U.S. House Committee on Oversight and Government Reform",
+        "license": "Registro público del Congreso de EE.UU. (declaración publicada por el Comité de Supervisión de la Cámara)",
+        "fallbackUrl": "https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf",
+        "description": "Declaración inicial y final que David Grusch, ex oficial de inteligencia de la USAF, entregó y leyó bajo juramento el 26 de julio de 2023 ante el subcomité de Seguridad Nacional, Fronteras y Asuntos Exteriores del Comité de Supervisión de la Cámara. Afirma que múltiples testigos le describieron un programa de recuperación e ingeniería inversa de vehículos de origen no humano, y que el inspector general de la comunidad de inteligencia calificó su denuncia de «credible and urgent». Su testimonio es de oídas: no vio el material, y lo aportado en privado (la denuncia al inspector general y la información clasificada) no tiene versión pública. El ex director de AARO, Sean Kirkpatrick, sostiene que Grusch se negó a hablar con AARO y que sus alegaciones malinterpretan programas legítimos.",
+        "description_en": "Opening and closing statement that former USAF intelligence officer David Grusch submitted and read under oath on July 26, 2023 before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. He states that multiple witnesses described to him a program to recover and reverse-engineer vehicles of non-human origin, and that the Intelligence Community Inspector General found his complaint 'credible and urgent'. His testimony is hearsay: he did not see the material, and what he provided privately (the complaint to the Inspector General and the classified information) has no public version. Former AARO director Sean Kirkpatrick holds that Grusch declined to speak with AARO and that his allegations misread legitimate programs."
+      },
+      {
+        "src": "https://www.nicap.org/docs/Bolender_draft.pdf",
+        "type": "link",
+        "title": "Bolender Memo",
+        "title_en": "Bolender Memo",
+        "description": "Hoja resumen del Estado Mayor Aéreo de la USAF, de tres páginas, firmada el 20 de octubre de 1969 por el general de brigada Carroll H. Bolender, que recomienda cerrar Project Blue Book tras el informe Condon. Su párrafo 4 constata que los informes de OVNIs que pudieran afectar la seguridad nacional se hacían según JANAP 146 o el AFM 55-11 «and are not part of the Blue Book system», y el párrafo 6 añade que seguirían tramitándose por los procedimientos estándar tras el cierre. Prueba que el cierre de Blue Book no cerró el cauce militar de reporte. No prueba un programa secreto: JANAP 146 (CIRVIS) era un procedimiento estándar y no clasificado para cualquier posible amenaza. Los 16 anexos no están en la copia que circula.",
+        "description_en": "A three-page U.S. Air Staff Summary Sheet signed on October 20, 1969 by Brigadier General Carroll H. Bolender, recommending the closure of Project Blue Book after the Condon Report. Its paragraph 4 states that UFO reports which could affect national security were made under JANAP 146 or AFM 55-11 'and are not part of the Blue Book system', and paragraph 6 adds that they would continue to be handled through standard procedures after the closure. It shows that closing Blue Book did not close the military reporting channel. It does not show a secret program: JANAP 146 (CIRVIS) was a standard, unclassified procedure for any potential threat. The 16 attachments are missing from the circulating copy."
+      },
+      {
+        "src": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-david-grusch-declassified-uap-files/",
+        "type": "link",
+        "title": "Conferencia del Capitolio · Grusch + legisladores (9 jun 2026)",
+        "title_en": "Capitol Press Conference · Grusch + lawmakers (Jun 9, 2026)",
+        "description": "El 9 de junio de 2026, en la escalinata del Capitolio, los representantes Eric Burlison, Jared Moskowitz, Anna Paulina Luna y Tim Burchett dieron una conferencia de prensa junto al denunciante David Grusch, con la periodista Leslie Kean y el documentalista James Fox como anfitriones. Formularon tres demandas: la desclasificación presidencial de archivos que Grusch identificó por nombre, la aprobación del UAP Disclosure Act y más protección para los denunciantes, con coordinación internacional. Los legisladores citaron Varginha 1996 entre los registros a desclasificar. Grusch afirmó que el gobierno conoce varias clases de inteligencias no humanas, hasta lo que llamó «sentient plasmoid life». La conferencia no aportó evidencia material nueva sobre el fenómeno: su peso es de presión institucional.",
+        "description_en": "On June 9, 2026, on the Capitol steps, Representatives Eric Burlison, Jared Moskowitz, Anna Paulina Luna and Tim Burchett held a press conference with whistleblower David Grusch, hosted by journalist Leslie Kean and documentary maker James Fox. They set out three demands: presidential declassification of files Grusch had identified by name, passage of the UAP Disclosure Act, and stronger whistleblower protections with international coordination. The lawmakers cited Varginha 1996 among the records to be declassified. Grusch said the government is aware of several kinds of non-human intelligence, up to what he called 'sentient plasmoid life'. The conference brought no new material evidence about the phenomenon: its weight is that of institutional pressure."
+      }
+    ]
   },
   {
     "id": "elizondo",
@@ -2161,11 +2406,27 @@
         "name": "AARO, 'Historical Record Report, Volume 1' (2024)",
         "note": "Conclusión escéptica oficial de la AARO.",
         "note_en": "AARO's official skeptical conclusion."
+      },
+      {
+        "name": "AARO — 'Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1' (8 mar 2024)",
+        "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
+        "note": "Documento primario oficial de la AARO.",
+        "note_en": "Official AARO primary document."
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sean%20Kirkpatrick%2031%20May%202023.jpg?width=400",
     "photo_credit": "NASA (NHQ photo series)",
-    "photo_license": "Dominio público"
+    "photo_license": "Dominio público",
+    "documents": [
+      {
+        "src": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
+        "type": "link",
+        "title": "AARO · Historical Record Report, Volumen 1 (2024)",
+        "title_en": "AARO · Historical Record Report, Volume 1 (2024)",
+        "description": "Volumen 1 del «Report on the Historical Record of U.S. Government Involvement with UAP», publicado por la AARO el 8 de marzo de 2024 con la firma original de su entonces director Sean Kirkpatrick. Cubre de 1945 a octubre de 2023 a partir de archivos clasificados y no clasificados, entrevistas y la revisión de los programas y nombres en clave alegados. Concluye que no halló evidencia de que ninguna investigación confirmara tecnología extraterrestre ni de programas de recuperación o ingeniería inversa, y atribuye esas creencias a identificaciones erróneas, confusión burocrática y «reporte circular»; rebate afirmaciones del tipo de las de Grusch. El Volumen 2 seguía sin publicarse en septiembre de 2026.",
+        "description_en": "Volume 1 of the 'Report on the Historical Record of U.S. Government Involvement with UAP', published by AARO on 8 March 2024 with the original signature of its then director Sean Kirkpatrick. It covers 1945 to October 2023 from classified and unclassified files, interviews and a review of the alleged programs and code names. It concludes it found no evidence that any investigation confirmed extraterrestrial technology, nor of recovery or reverse-engineering programs, and attributes those beliefs to misidentification, bureaucratic confusion and 'circular reporting'; it rebuts claims of the kind made by Grusch. Volume 2 remained unpublished as of September 2026."
+      }
+    ]
   },
   {
     "id": "luna",
@@ -2202,6 +2463,20 @@
         "name_en": "Office of Representative Anna Paulina Luna, U.S. House of Representatives",
         "note": "Presidencia del grupo de trabajo de desclasificación.",
         "note_en": "Chair of the declassification task force."
+      },
+      {
+        "name": "NewsNation — Lawmakers want immunity for list of UFO whistleblowers: Rep. Luna",
+        "url": "https://www.newsnationnow.com/us-news/lawmakers-want-immunity-for-list-of-ufo-whistleblowers-rep-luna/"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.newsnationnow.com/us-news/lawmakers-want-immunity-for-list-of-ufo-whistleblowers-rep-luna/",
+        "type": "link",
+        "title": "Programa de inmunidad a denunciantes UAP · iniciativa Luna",
+        "title_en": "UAP Whistleblower Immunity Initiative · Luna",
+        "description": "Iniciativa anunciada a fines de junio de 2026, en torno al Disclosure Forum de Washington, por la representante Anna Paulina Luna (R-FL), presidenta del grupo de trabajo sobre UAP del Comité de Supervisión de la Cámara: un grupo de legisladores entregaba a la Casa Blanca una lista de denunciantes para obtenerles inmunidad frente a la pérdida de su habilitación de seguridad y a la Ley de Espionaje. Esos denunciantes dicen saber de naves no humanas recuperadas y «biológicos», algo que el Pentágono y la AARO niegan, y nadie ha presentado documentos ni testimonio jurado nuevo. La inmunidad es un mecanismo procesal, no evidencia. La exención que el Departamento de Guerra publicó en septiembre de 2026 levantó las cláusulas civiles y administrativas de los acuerdos de confidencialidad, no la responsabilidad penal.",
+        "description_en": "An initiative announced in late June 2026, around the Disclosure Forum in Washington, by Representative Anna Paulina Luna (R-FL), chair of the UAP task force of the House Oversight Committee: a group of lawmakers was handing the White House a list of whistleblowers in order to obtain immunity for them against losing their security clearances and against the Espionage Act. These whistleblowers say they know of recovered non-human craft and \"biologics\", which the Pentagon and AARO deny, and no one has produced new documents or sworn testimony. Immunity is a procedural mechanism, not evidence. The waiver the Department of War published in September 2026 lifted the civil and administrative provisions of non-disclosure agreements, not criminal liability."
       }
     ]
   },
@@ -2279,6 +2554,38 @@
         "url": "https://burlison.house.gov/",
         "note": "Integrante del subcomité de Supervisión en la audiencia UAP de julio de 2023.",
         "note_en": "Member of the Oversight subcommittee at the July 2023 UAP hearing."
+      },
+      {
+        "name": "Representative Burlison · 'Burlison Presses MITRE for Answers on UAP Records, FFRDC Accountability, and Compliance with Federal Declassification Mandates'",
+        "url": "https://burlison.house.gov/media/press-releases/burlison-presses-mitre-answers-uap-records-ffrdc-accountability-and-compliance",
+        "note": "Press release oficial del Committee con texto de la solicitud.",
+        "note_en": "Official Committee press release with the text of the request."
+      },
+      {
+        "name": "DefenseScoop · 'MITRE moves to comply with lawmaker's request for UAP records and assets dating back to 1930' (27 may 2026)",
+        "url": "https://defensescoop.com/2026/05/27/rep-eric-burlison-request-for-uap-records-mitre/",
+        "note": "Confirmación pública de MITRE de que cumplirá la solicitud.",
+        "note_en": "MITRE's public confirmation that it will comply with the request."
+      }
+    ],
+    "documents": [
+      {
+        "src": "/pursue/burlison-mit-lincoln-lab-ruppelt-tape-2026.pdf",
+        "type": "pdf",
+        "title": "Carta del congresista Eric Burlison a MIT Lincoln Laboratory (7 may 2026): pide determinar si sobrevive la grabación reel-to-reel 'AF-ATIC-FILM, 03/52' del Beacon Hill Study —rotulada 'flying saucer talk', con Edward J. Ruppelt como briefer—, preservarla y transferir una copia de preservación a NARA (Record Group 615) bajo la UAP Records Collection de la FY 2024 NDAA.",
+        "title_en": "Letter from Rep. Eric Burlison to MIT Lincoln Laboratory (May 7, 2026): asks to determine whether the reel-to-reel recording 'AF-ATIC-FILM, 03/52' from the Beacon Hill Study —labeled 'flying saucer talk', with Edward J. Ruppelt as briefer— still exists, to preserve it, and to transfer a preservation copy to NARA (Record Group 615) under the FY 2024 NDAA UAP Records Collection.",
+        "source": "U.S. House of Representatives · Committee on Oversight and Government Reform",
+        "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)",
+        "description": "Dos cartas del representante Eric Burlison (R-MO), enviadas desde el Comité de Supervisión y Reforma Gubernamental de la Cámara de Representantes en mayo de 2026. La primera, del 7 de mayo, pide al MIT Lincoln Laboratory que determine si sobrevive la grabación «AF-ATIC-FILM, 03/52» del Beacon Hill Study de 1952, rotulada como una charla sobre platillos voladores con Edward J. Ruppelt como ponente, que la preserve y que transfiera una copia a los Archivos Nacionales (Record Group 615). La segunda, del 22 de mayo, dirige a la MITRE Corporation interrogatorios y solicitudes de documentos sobre todo registro UAP desde 1930, incluidos materiales recuperados y supuestos programas de recuperación o ingeniería inversa. MITRE anunció que cumpliría. Las cartas prueban que el Congreso busca esos registros, no que existan.",
+        "description_en": "Two letters from Representative Eric Burlison (R-MO), sent through the House Committee on Oversight and Government Reform in May 2026. The first, of 7 May, asks MIT Lincoln Laboratory to determine whether the \"AF-ATIC-FILM, 03/52\" recording from the 1952 Beacon Hill Study, labelled as a flying-saucer talk with Edward J. Ruppelt as briefer, still exists, to preserve it and to transfer a copy to the National Archives (Record Group 615). The second, of 22 May, sends the MITRE Corporation interrogatories and document requests covering every UAP record since 1930, including recovered materials and alleged crash-retrieval or reverse-engineering programs. MITRE announced it would comply. The letters prove that Congress is seeking those records, not that they exist."
+      },
+      {
+        "src": "/pursue/burlison-mitre-ffrdc-interrogatories-2026.pdf",
+        "type": "pdf",
+        "title": "Interrogatorios legislativos y solicitudes de producción del congresista Eric Burlison a The MITRE Corporation (22 may 2026): exige identificar, preservar y producir todo record UAP en custodia de MITRE o sus FFRDCs desde 1930 —incluidos materiales recuperados, tecnologías de origen desconocido y programas heredados de recuperación de restos o ingeniería inversa— y transferir lo pertinente a NARA (Record Group 615). Incluye el pliego de 11 secciones de interrogatorios.",
+        "title_en": "Legislative interrogatories and production requests from Rep. Eric Burlison to The MITRE Corporation (May 22, 2026): demands identifying, preserving and producing every UAP record in MITRE's or its FFRDCs' custody since 1930 —including recovered materials, technologies of unknown origin, and legacy crash-retrieval or reverse-engineering programs— and transferring the relevant ones to NARA (Record Group 615). Includes the 11-section enclosure of interrogatories.",
+        "source": "U.S. House of Representatives · Committee on Oversight and Government Reform",
+        "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
       }
     ]
   },
@@ -2308,11 +2615,25 @@
         "name_en": "Ross Coulthart, report on David Grusch, NewsNation (June 2023)",
         "note": "Primicia del testimonio del denunciante.",
         "note_en": "Broke the whistleblower's testimony."
+      },
+      {
+        "name": "alien.gov — sitio oficial DHS",
+        "url": "https://alien.gov/"
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ross%20Coulthart%20%26%20Noreen%20Powell.jpg?width=400",
     "photo_credit": "Wikimedia Commons",
-    "photo_license": "CC-BY-SA"
+    "photo_license": "CC-BY-SA",
+    "documents": [
+      {
+        "src": "https://alien.gov/",
+        "type": "link",
+        "title": "alien.gov — retórica de divulgación instrumentalizada para inmigración",
+        "title_en": "alien.gov — disclosure rhetoric weaponized for immigration",
+        "description": "El dominio gubernamental alien.gov, usado en 2025 por el Departamento de Seguridad Nacional (DHS) como página de aterrizaje de la mensajería de inmigración y deportaciones, juega con la doble lectura de la palabra inglesa «alien»: no ciudadano en el código de inmigración, extraterrestre en la cultura popular. En mayo de 2026, en coincidencia con las entregas de PURSUE, el DHS desplegó piezas con iconografía de estética OVNI, y periodistas como Marisa Kabas, Wired y Ross Coulthart señalaron la coincidencia. No dice nada sobre los UAP: documenta cómo el Estado toma prestada la estética de la divulgación para otros fines. Lo estable es el uso del dominio y la doble semántica; fechas, piezas concretas e intención declarada son cobertura periodística en desarrollo.",
+        "description_en": "The government domain alien.gov, used in 2025 by the Department of Homeland Security (DHS) as a landing page for immigration and deportation messaging, plays on the double meaning of the English word 'alien': a non-citizen in immigration law, an extraterrestrial in popular culture. In May 2026, coinciding with the PURSUE releases, DHS rolled out material with UFO-style imagery, and journalists such as Marisa Kabas, Wired and Ross Coulthart noted the timing. It says nothing about UAP: it documents how the state borrows the aesthetics of disclosure for other ends. What is stable is the use of the domain and the double meaning; dates, specific pieces and stated intent are developing press coverage."
+      }
+    ]
   },
   {
     "id": "kean",
@@ -2501,11 +2822,48 @@
         "name": "To The Stars Academy — comunicados y publicaciones (desde 2017)",
         "note": "Vehículo de difusión de los videos Nimitz/Gimbal/GoFast.",
         "note_en": "Vehicle for releasing the Nimitz/Gimbal/GoFast videos."
+      },
+      {
+        "name": "CNN — «A retired general vanished from his home. An unseasonably warm spring is making him harder to find» (17 mar 2026)",
+        "name_en": "CNN — 'A retired general vanished from his home. An unseasonably warm spring is making him harder to find' (Mar 17, 2026)",
+        "url": "https://www.cnn.com/2026/03/17/us/fbi-search-william-mccasland-general-missing",
+        "note": "Fecha, lugar y circunstancias de la desaparición, Silver Alert de la Oficina del Sheriff del Condado de Bernalillo y declaraciones del sheriff John Allen y del teniente Kyle Woods.",
+        "note_en": "Date, place and circumstances of the disappearance, the Bernalillo County Sheriff's Office Silver Alert and statements by Sheriff John Allen and Lt. Kyle Woods."
+      },
+      {
+        "name": "WikiLeaks Podesta Email #3099 (DeLonge a Podesta, 25 ene 2016, «General McCasland»)",
+        "name_en": "WikiLeaks Podesta Email #3099 (DeLonge to Podesta, Jan 25, 2016, \"General McCasland\")",
+        "url": "https://wikileaks.org/podesta-emails/emailid/3099"
+      },
+      {
+        "name": "WikiLeaks Podesta Emails (2016)",
+        "url": "https://wikileaks.org/podesta-emails/"
       }
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20DeLonge%20in%202011.jpg?width=400",
     "photo_credit": "Flickr (Wikimedia mirror)",
-    "photo_license": "CC-BY-SA 2.5"
+    "photo_license": "CC-BY-SA 2.5",
+    "documents": [
+      {
+        "src": "/pursue/wikileaks-podesta-2016-email3099.png",
+        "type": "image",
+        "title": "WikiLeaks · Podesta Emails #3099 — Tom DeLonge a John Podesta (25 ene 2016)",
+        "title_en": "WikiLeaks · Podesta Emails #3099 — Tom DeLonge to John Podesta (25 Jan 2016)",
+        "source": "WikiLeaks · «The Podesta Emails» (2016), email 3099",
+        "license": "Transcripción literal con fines documentales; derechos del contenido de sus autores",
+        "fallbackUrl": "https://wikileaks.org/podesta-emails/emailid/3099",
+        "description": "Correo electrónico del 25 de enero de 2016 de Tom DeLonge a John Podesta, jefe de la campaña de Hillary Clinton, publicado por WikiLeaks en octubre de 2016 dentro del archivo de correos de Podesta. En los mensajes que envió entre octubre de 2015 y enero de 2016, DeLonge buscaba reuniones sobre un «tema sensible» ligado a su proyecto Sekret Machines, decía estar en contacto con personas de «liderazgo principal» y adjuntaba imágenes. La autenticidad del archivo se verificó con las firmas DKIM con que los servidores de Google habían firmado los mensajes. El correo prueba que existía un canal entre DeLonge y un operador político de primer nivel, no que fuera cierto lo que DeLonge afirmaba sobre sus contactos ni sobre ningún programa clasificado.",
+        "description_en": "Email of 25 January 2016 from Tom DeLonge to John Podesta, Hillary Clinton's campaign chairman, published by WikiLeaks in October 2016 as part of the Podesta email archive. In the messages he sent between October 2015 and January 2016, DeLonge sought meetings about a \"sensitive topic\" tied to his Sekret Machines project, said he was in contact with people in \"senior leadership\", and attached images. The archive's authenticity was verified through the DKIM signatures with which Google's servers had originally signed the messages. The email proves that a channel existed between DeLonge and a top-level political operative, not that what DeLonge claimed about his contacts or about any classified program was true."
+      },
+      {
+        "src": "https://www.cnn.com/2026/03/17/us/fbi-search-william-mccasland-general-missing",
+        "type": "link",
+        "title": "Desaparición Gen. McCasland",
+        "title_en": "Gen. McCasland disappearance",
+        "description": "Registro de la desaparición del general de división retirado de la USAF William Neil McCasland, de 68 años, antiguo jefe del Air Force Research Laboratory en Wright-Patterson, que el 27 de febrero de 2026 salió a pie de su casa en Albuquerque y no volvió; según CNN, la Oficina del Sheriff del Condado de Bernalillo emitió un Silver Alert. No es un incidente UAP: no hay objeto ni avistamiento. Su relación con el tema es que su nombre figura en un correo de Tom DeLonge a John Podesta del 25 de enero de 2016, filtrado por WikiLeaks (email #3099, asunto «General McCasland»), y que desapareció días después de la orden presidencial de publicar los archivos federales sobre ovnis. Las lecturas de seguridad nacional son comentario periodístico, no hechos documentados.",
+        "description_en": "Record of the disappearance of retired USAF Major General William Neil McCasland, 68, former head of the Air Force Research Laboratory at Wright-Patterson, who on 27 February 2026 walked out of his home in Albuquerque and did not return; according to CNN, the Bernalillo County Sheriff's Office issued a Silver Alert. It is not a UAP incident: there is no object and no sighting. Its link to the subject is that his name appears in a Tom DeLonge email to John Podesta of 25 January 2016, leaked by WikiLeaks (email #3099, subject 'General McCasland'), and that he went missing days after the presidential order to release federal UFO records. National-security readings are press commentary, not documented facts."
+      }
+    ]
   },
   {
     "id": "pasulka",
@@ -2581,6 +2939,30 @@
         "url": "https://fotocat.blogspot.com/",
         "note": "Mayor catálogo mundial de casos con evidencia fotográfica/fílmica.",
         "note_en": "Largest worldwide catalogue of cases with photographic/film evidence."
+      },
+      {
+        "name": "Ministerio de Defensa (España), Biblioteca Virtual de Defensa — «Normativa militar sobre el fenómeno OVNI» (1968-1985), 51 págs.",
+        "name_en": "Spanish Ministry of Defence, Defence Virtual Library — 'Normativa militar sobre el fenómeno OVNI' (1968-1985), 51 pp.",
+        "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/registro.do?control=BMDB20160089844",
+        "note": "Normas militares sobre OVNI; recoge la propuesta de desclasificación del 13 abr 1992 y su aprobación por el Jefe del Estado Mayor del Aire el 28 abr 1992. Licencia CC BY 4.0.",
+        "note_en": "Military rules on UFOs; it records the declassification proposal of 13 Apr 1992 and its approval by the Chief of the Air Staff on 28 Apr 1992. CC BY 4.0 licence."
+      },
+      {
+        "name": "Ministerio de Defensa (España), Biblioteca Virtual de Defensa — índice de los 84 expedientes OVNI desclasificados (1962-1995)",
+        "name_en": "Spanish Ministry of Defence, Defence Virtual Library — index of the 84 declassified UFO files (1962-1995)",
+        "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/indice_campo.do?campo=idtitulo",
+        "note": "Colección completa en línea, con licencia CC BY 4.0.",
+        "note_en": "The complete collection online, under a CC BY 4.0 licence."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/registro.do?control=BMDB20160089844",
+        "type": "link",
+        "title": "Desclasificación UAP del Ejército del Aire (España, 1992–1997)",
+        "title_en": "Spanish Air Force UAP Declassification (Spain, 1992–1997)",
+        "description": "Entre 1992 y 1997 el Ejército del Aire español desclasificó sus expedientes sobre ovnis, archivados por el Mando Operativo Aéreo y que cubren sucesos entre 1962 y 1995. El proceso se autorizó en 1992, y el investigador civil Vicente-Juan Ballester Olmos actuó como interlocutor técnico entre el aparato militar y los investigadores. Los expedientes se liberaron con la información sensible tachada, como nombres de testigos militares y posiciones operativas, y hoy la colección está en línea en la Biblioteca Virtual de Defensa, con 84 expedientes. Alrededor del 80 % se atribuyó a causas convencionales: globos, aeronaves, reentradas, planetas o fenómenos atmosféricos. Fue un proceso voluntario, sin presión parlamentaria ni judicial, pero el archivo es selectivo: solo contiene lo que el propio Ejército del Aire entregó.",
+        "description_en": "Between 1992 and 1997 the Spanish Air Force declassified its UFO files, archived by the Air Operations Command and covering events between 1962 and 1995. The process was authorized in 1992, and the civilian researcher Vicente-Juan Ballester Olmos acted as technical liaison between the military and researchers. The files were released with sensitive information redacted, such as the names of military witnesses and operational positions, and today the collection is online at the Defence Virtual Library, with 84 files. About 80% were attributed to conventional causes: balloons, aircraft, reentries, planets or atmospheric phenomena. It was a voluntary process, with no parliamentary or judicial pressure, but the archive is selective: it holds only what the Air Force itself handed over."
       }
     ]
   },
@@ -3154,6 +3536,16 @@
         "note": "Organismo oficial francés de estudio de fenómenos aeroespaciales no identificados.",
         "note_en": "Official French body studying unidentified aerospace phenomena."
       }
+    ],
+    "documents": [
+      {
+        "src": "https://www.cnes-geipan.fr/",
+        "type": "link",
+        "title": "GEPAN / GEIPAN · agencia CNES",
+        "title_en": "GEPAN / GEIPAN · CNES agency",
+        "description": "El GEPAN (Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés) es el servicio que la agencia espacial francesa, el CNES, creó en 1977 en Toulouse bajo la dirección del ingeniero Claude Poher; pasó a llamarse SEPRA en 1988 y GEIPAN en 2005. Recibe denuncias canalizadas por la gendarmería y la aviación civil, las investiga y clasifica cada caso de PAN A (perfectamente identificado) a PAN D (no identificado pese a contar con datos de buena calidad), y publica sus expedientes en línea desde 2007. Según sus propias estadísticas, solo un 2 a 3 % de los casos queda como PAN D. Su investigación de referencia es la de Trans-en-Provence (1981), que el propio organismo no presenta como prueba de un origen exótico.",
+        "description_en": "GEPAN (Groupe d'Étude des Phénomènes Aérospatiaux Non-identifiés) is the service that the French space agency, CNES, created in Toulouse in 1977 under the direction of engineer Claude Poher; it was renamed SEPRA in 1988 and GEIPAN in 2005. It receives reports channelled through the gendarmerie and civil aviation, investigates them and classifies each case from PAN A (fully identified) to PAN D (unidentified despite good-quality data), and has published its case files online since 2007. According to its own statistics, only 2 to 3% of cases remain PAN D. Its benchmark investigation is Trans-en-Provence (1981), which the agency itself does not present as proof of an exotic origin."
+      }
     ]
   },
   {
@@ -3189,6 +3581,25 @@
       {
         "name": "GEIPAN — CNES",
         "url": "https://www.cnes-geipan.fr/"
+      },
+      {
+        "name": "Informe COMETA 'Les OVNI et la Défense' (1999) — texto",
+        "url": "https://www.cufos.org/cometa/COMETA_part1.pdf",
+        "note": "Documento primario (traducción/archivo).",
+        "note_en": "Primary document (translation/archive)."
+      }
+    ],
+    "documents": [
+      {
+        "src": "/pursue/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
+        "type": "pdf",
+        "title": "«UFO's and Defense: What Should We Prepare For» — informe COMETA (1999) + carta de Carol Rosin",
+        "title_en": "'UFO's and Defense: What Should We Prepare For' — COMETA report (1999) + Carol Rosin letter",
+        "source": "NASA (PURSUE Release 01)",
+        "license": "Dominio público · obra del Gobierno de EE. UU.",
+        "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
+        "description": "«Les OVNI et la Défense: à quoi doit-on se préparer?» es el informe de unas 90 páginas que publicó en julio de 1999 COMETA, un comité privado de generales y oficiales franceses retirados y expertos aeroespaciales, presidido por el general Denis Letty y con varios antiguos auditores del IHEDN. Revisó casos con radar, intercepciones y testigos calificados, entre ellos los de Air France 3532 y Bariloche, y concluyó que para un residuo de alrededor del 5 % la hipótesis extraterrestre era la más racional. No es un documento del gobierno francés ni del Ministerio de Defensa, y su conclusión es un argumento por descarte sobre casos ya conocidos, no evidencia nueva. La copia que se embebe aquí incluye una carta de Carol Rosin.",
+        "description_en": "'Les OVNI et la Défense: à quoi doit-on se préparer?' is the roughly 90-page report published in July 1999 by COMETA, a private committee of retired French generals and senior officers and aerospace experts, chaired by General Denis Letty and including several former IHEDN auditors. It reviewed cases with radar, interceptions and qualified witnesses, among them Air France 3532 and Bariloche, and concluded that for a residue of about 5% the extraterrestrial hypothesis was the most rational. It is not a document of the French government or the Ministry of Defence, and its conclusion is an argument by elimination over already known cases, not new evidence. The copy embedded here includes a letter from Carol Rosin."
       }
     ]
   },
@@ -3301,6 +3712,42 @@
         "url": "https://drdavidclarke.co.uk/national-archives-ufo-files-7/",
         "note": "Desclasificación de los expedientes OVNI del Ministerio de Defensa británico.",
         "note_en": "Declassification of the British Ministry of Defence UFO files."
+      },
+      {
+        "name": "The National Archives (UK) — DEFE 44/119, «Unidentified Flying Objects» (1951), digitalizado",
+        "name_en": "The National Archives (UK) — DEFE 44/119, 'Unidentified Flying Objects' (1951), digitised",
+        "url": "https://discovery.nationalarchives.gov.uk/details/r/C11001295",
+        "note": "Ficha de catálogo del expediente que contiene el informe del grupo de trabajo.",
+        "note_en": "Catalogue entry for the file containing the working party's report."
+      },
+      {
+        "name": "Project Condign — informe completo en tres volúmenes, «Scientific & Technical Memorandum 55/2/00» (dic 2000), copia en archive.org",
+        "name_en": "Project Condign — full three-volume report, 'Scientific & Technical Memorandum 55/2/00' (Dec 2000), copy on archive.org",
+        "url": "https://archive.org/details/condign-vol-2-1-258",
+        "note": "El texto del propio informe, dividido por capítulos con OCR; liberado por el MoD bajo la ley de libertad de información en 2006.",
+        "note_en": "The report's own text, split into chapters with OCR; released by the MoD under freedom of information in 2006."
+      },
+      {
+        "name": "Clarke, D. — 'The UFO Files' (The National Archives) — análisis del Project Condign",
+        "url": "https://drdavidclarke.co.uk/national-archives/"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://discovery.nationalarchives.gov.uk/details/r/C11001295",
+        "type": "link",
+        "title": "Flying Saucer Working Party · primer estudio oficial del MoD (UK)",
+        "title_en": "Flying Saucer Working Party · first official MoD study (UK)",
+        "description": "El Flying Saucer Working Party fue el grupo de estudio creado en 1950 por el Ministerio de Defensa británico a impulso de Sir Henry Tizard. Su informe secreto, completado en junio de 1951, concluyó que todos los avistamientos se explicaban por identificación errónea, ilusión o engaño, y recomendó no investigar más. Es el primer estudio oficial británico sobre el tema y se liberó en The National Archives en enero de 2002, dentro del expediente DEFE 44/119. Muestra la postura oficial temprana del Reino Unido; su conclusión es una valoración general, no el análisis de un caso concreto.",
+        "description_en": "The Flying Saucer Working Party was the study group set up in 1950 by the UK Ministry of Defence at the urging of Sir Henry Tizard. Its secret report, completed in June 1951, concluded that all sightings were explained by misidentification, illusion or hoax, and recommended no further investigation. It is the first official British study of the subject and was released at The National Archives in January 2002, in file DEFE 44/119. It shows the early official UK position; its conclusion is a general assessment, not the analysis of a specific case."
+      },
+      {
+        "src": "https://archive.org/details/condign-vol-2-1-258",
+        "type": "link",
+        "title": "Project Condign · estudio UAP del MoD británico",
+        "title_en": "Project Condign · UK MoD UAP study",
+        "description": "Project Condign es el estudio del Defence Intelligence Staff del Ministerio de Defensa británico titulado «Unidentified Aerial Phenomena in the UK Air Defence Region», elaborado entre 1997 y 2000 por un autor anónimo a partir de décadas de reportes reunidos por la rama DI55, en unas 460 páginas. Permaneció clasificado hasta mayo de 2006, cuando se liberó por la ley de libertad de información a David Clarke y Gary Anthony. Acepta que los fenómenos son reales, no halla evidencia de amenaza hostil ni de origen extraterrestre y atribuye muchos casos a plasmas atmosféricos flotantes poco comprendidos. Esa hipótesis es discutida: Clarke sostiene que no explica el residuo mejor que otras, y documentó una minuta de 1998 en la que el autor ya anticipaba recomendar que DI55 dejara el tema.",
+        "description_en": "Project Condign is the British Ministry of Defence's Defence Intelligence Staff study 'Unidentified Aerial Phenomena in the UK Air Defence Region', produced between 1997 and 2000 by an anonymous author from decades of reports gathered by the DI55 branch, in some 460 pages. It stayed classified until May 2006, when it was released under freedom of information to David Clarke and Gary Anthony. It accepts that the phenomena are real, finds no evidence of a hostile threat or of extraterrestrial origin, and attributes many cases to poorly understood buoyant atmospheric plasmas. That hypothesis is disputed: Clarke argues it explains the residue no better than others, and he documented a 1998 minute in which the author was already anticipating a recommendation that DI55 drop the subject."
       }
     ]
   },
@@ -3389,6 +3836,14 @@
       {
         "name": "Revista UFO — Gevaerd",
         "url": "https://ufo.com.br/gevaerd/"
+      },
+      {
+        "name": "Arquivo Nacional (gov.br) — 'Conheça o fundo sobre OVNIs do Arquivo Nacional'",
+        "url": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/copy_of_noticias/conheca-o-fundo-sobre-ovnis-do-arquivo-nacional"
+      },
+      {
+        "name": "Arquivo Nacional — 'Os OVNIs no Arquivo Nacional' (acervo Fundo Óvnis, SIAN)",
+        "url": "https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional"
       }
     ],
     "seoTitle": "A.J. Gevaerd: la ufología brasileña y la Revista UFO",
@@ -3397,7 +3852,17 @@
     "bio_en": "Ademar José Gevaerd (1962–2022), known as A.J. Gevaerd, was Brazil's most influential ufologist and one of the reference figures for UAP research in Latin America. A chemist by training, he left teaching in the mid-1980s to devote himself fully to the subject and, in 1985, founded «Revista UFO», the country's longest-running specialized magazine, which he directed for more than three decades. From that platform he organized much of the Brazilian research community and built a case archive that is, by volume and continuity, one of the richest in the southern hemisphere.\n\nGevaerd founded and directed the Centro Brasileiro de Pesquisas de Discos Voadores (CBPDV) and served as Brazil's director for the international MUFON network. Over his career he conducted or coordinated more than seven hundred field investigations within Brazil and lectured in nearly thirty countries, making him the main bridge between Brazilian ufology and the international conversation. His work stood out for insisting on documentation —photographs, military reports, corroborated testimony— over speculation, in a field especially prone to sensationalism.\n\nHis most significant institutional contribution was the campaign «UFOs: Liberdade de Informação Já» («UFOs: Freedom of Information Now»), which through the 2000s pressured the Brazilian state to declassify and transfer its military files on sightings to the National Archives. The campaign produced concrete results: Brazil became one of the countries with a relatively open policy of archiving and reporting UAP cases, and episodes such as the so-called «Operation Saucer» in the Amazon (1977) or the «Varginha case» (1996) became better documented thanks to that pressure. That declassified file in the Brazilian National Archives is a primary piece directly tied to his work.\n\nFor the UAP Codex map, Gevaerd represents the Latin American, archival dimension of the phenomenon: not a theorist of exotic hypotheses but an organizer who professionalized regional research and forced the opening of state archives. His critical flank is the usual one in media ufology: the closeness between the investigative and the editorial role —being at once archivist, director of a commercial magazine and spokesman— can create dissemination incentives that strain rigor. Even so, his documentary legacy and his push for institutional transparency place him among the indispensable actors of the South American record. He died in December 2022.",
     "photo": "/researchers/gevaerd.jpg",
     "photo_credit": "Victor Lopes, Campus Party Brasil 2013 (recorte)",
-    "photo_license": "CC-BY-SA 3.0"
+    "photo_license": "CC-BY-SA 3.0",
+    "documents": [
+      {
+        "src": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/copy_of_noticias/conheca-o-fundo-sobre-ovnis-do-arquivo-nacional",
+        "type": "link",
+        "title": "Arquivo Nacional · acervo OVNI de la FAB (Brasil)",
+        "title_en": "National Archives · FAB UFO collection (Brazil)",
+        "description": "Fondo público de registros de OVNIs producido por el Comando da Aeronáutica (FAB) y custodiado por el Arquivo Nacional de Brasil, consultable en la plataforma SIAN. Abarca de 1952 a 2023 e incluye informes, cuestionarios, correspondencia oficial, fotografías, dibujos, videos, audios y recortes de prensa. Desde 2008, tras la campaña por la apertura de los archivos militares, la FAB deriva al archivo el material que hace público. La cifra varía según la fuente: unos 743 registros según el Arquivo Nacional, más de 700 según el Ministério da Justiça y cerca de 900 según la prensa de 2026. El acceso abierto no equivale a calidad evidencial: el fondo mezcla reportes mundanos, recortes y cuestionarios con unos pocos casos bien investigados, como Colares, Trindade y la Noite Oficial dos OVNIs.",
+        "description_en": "A public collection of UFO records produced by the Brazilian Air Force command (FAB) and held by Brazil's National Archives (Arquivo Nacional), searchable on the SIAN platform. It covers 1952 to 2023 and includes reports, questionnaires, official correspondence, photographs, drawings, videos, audio and press clippings. Since 2008, after the campaign to open the military files, the FAB transfers to the archive the material it makes public. The count varies by source: about 743 records according to the Arquivo Nacional, more than 700 according to the Ministry of Justice, and close to 900 according to 2026 press reports. Open access is not evidential quality: the collection mixes mundane reports, clippings and questionnaires with a few well-investigated cases such as Colares, Trindade and the Official UFO Night."
+      }
+    ]
   },
   {
     "id": "chamorro",
@@ -3433,6 +3898,28 @@
       {
         "name": "La Huella OVNI — entrevista al Comandante (r) Julio Chamorro",
         "url": "https://mundonow.com/en/commander-julio-chamorro-ufo-research-information/"
+      },
+      {
+        "name": "El Comercio (Perú), archivo histórico — Óscar Santa María Huertas, 'La vez que un piloto de la FAP derribó un ovni…' (12 ago 2023)",
+        "url": "https://elcomercio.pe/archivo-elcomercio/ovnis-la-vez-que-un-piloto-de-la-fap-derribo-un-ovni-en-una-base-aerea-de-arequipa-y-un-agente-del-gobierno-de-estados-unidos-elaboro-un-informe-confidencial-sobre-este-suceso-oscar-santa-maria-huertas-extraterrestres-alien-objeto-volador-no-identificado-cuerpos-no-humanos-nnsp-noticia/",
+        "note": "Creación de la OIFAA por la ordenanza interna 55 (2001), equipo fundador, cuestionario de 17 páginas, informe de Chulucanas (84 págs., 19 nov 2002) y robo de 2004.",
+        "note_en": "Creation of OIFAA by internal ordinance 55 (2001), founding team, 17-page questionnaire, Chulucanas report (84 pp., 19 Nov 2002) and the 2004 theft."
+      },
+      {
+        "name": "Agencia Andina (agencia estatal) — 'Fenómenos aéreos anómalos en Perú podrán reportarse a la FAP' (18 oct 2013)",
+        "url": "https://andina.pe/agencia/noticia-fenomenos-aereos-anomalos-peru-podran-reportarse-a-fap-478982.aspx",
+        "note": "Anuncio oficial del relanzamiento de la DIFAA por el coronel Julio Vucetich Abanto (DINAE); cita el cierre de cinco años.",
+        "note_en": "Official announcement of the DIFAA relaunch by Colonel Julio Vucetich Abanto (DINAE); mentions the five-year closure."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://elcomercio.pe/archivo-elcomercio/ovnis-la-vez-que-un-piloto-de-la-fap-derribo-un-ovni-en-una-base-aerea-de-arequipa-y-un-agente-del-gobierno-de-estados-unidos-elaboro-un-informe-confidencial-sobre-este-suceso-oscar-santa-maria-huertas-extraterrestres-alien-objeto-volador-no-identificado-cuerpos-no-humanos-nnsp-noticia/",
+        "type": "link",
+        "title": "OIFAA / DIFAA · oficina FAP",
+        "title_en": "OIFAA / DIFAA · Peruvian Air Force office",
+        "description": "La Oficina de Investigación de Fenómenos Aéreos Anómalos (OIFAA) de la Fuerza Aérea del Perú se creó en 2001 mediante la ordenanza interna 55, adscrita a la DINAE y con el comandante Julio Chamorro como primer jefe. Recibía testimonios con un cuestionario de 17 páginas e investigó la oleada de Chulucanas, sobre la que se presentó al alto mando un informe clasificado de 84 páginas el 19 de noviembre de 2002, nunca publicado. En 2004 le robaron las computadoras con gran parte de los expedientes, quedó clausurada años y en octubre de 2013 se relanzó como DIFAA, con un consejo consultivo civil. En 2019 la FAP negó por comunicado haber confirmado ovnis en Lima: solo constaban reportes enviados para que la DIFAA los investigara.",
+        "description_en": "The Peruvian Air Force's Office for the Investigation of Anomalous Aerial Phenomena (OIFAA) was created in 2001 by internal ordinance 55, attached to DINAE, with Commander Julio Chamorro as its first head. It took testimony through a 17-page questionnaire and investigated the Chulucanas wave, on which a classified 84-page report was presented to the high command on November 19, 2002, never published. In 2004 its computers, holding much of its files, were stolen; it was closed for years and relaunched in October 2013 as DIFAA, with a civilian advisory council. In 2019 the FAP denied in a statement that it had confirmed UFOs over Lima: there were only reports sent for DIFAA to investigate."
       }
     ]
   },
@@ -3471,6 +3958,26 @@
         "name": "Fuerza Aérea Argentina — Centro de Identificación Aeroespacial",
         "name_en": "Argentine Air Force — Aerospace Identification Center",
         "url": "https://www.argentina.gob.ar/fuerzaaerea/centro-de-identificacion-aeroespacial"
+      },
+      {
+        "name": "Fuerza Aérea Argentina, CIAE — Informe anual 2025",
+        "name_en": "Argentine Air Force, CIAE — 2025 annual report",
+        "url": "https://www.argentina.gob.ar/sites/default/files/2018/11/informe_ciae_2025.pdf",
+        "note": "Último informe anual publicado; la serie de informes CEFAE/CIAE de 2015 a 2025 está en argentina.gob.ar con licencia CC BY 4.0.",
+        "note_en": "The latest published annual report; the CEFAE/CIAE series from 2015 to 2025 is on argentina.gob.ar under a CC BY 4.0 licence."
+      }
+    ],
+    "documents": [
+      {
+        "src": "/pursue/ciae-informe-2025-extracto.pdf",
+        "type": "pdf",
+        "title": "Informe anual CIAE 2025 · extracto: introducción, índice y conclusiones finales",
+        "title_en": "CIAE 2025 annual report · extract: introduction, index and final conclusions",
+        "source": "Fuerza Aérea Argentina, Centro de Investigación Aeroespacial (pp. 1, 2 y 166 de 167)",
+        "license": "CC BY 4.0 (argentina.gob.ar)",
+        "fallbackUrl": "https://www.argentina.gob.ar/sites/default/files/2018/11/informe_ciae_2025.pdf",
+        "description": "Extracto del informe anual 2025 del Centro de Identificación Aeroespacial (CIAE) de la Fuerza Aérea Argentina, con introducción, índice y conclusiones. El organismo nació el 6 de mayo de 2011 como CEFAe y se reorganizó como CIAE el 4 de abril de 2019; desde hacia 2014, bajo el comodoro (R) Rubén Lianza, trata cada denuncia como un problema de identificación y contrasta fotos y videos con astronomía, tráfico aéreo y satélites. El informe 2025 registra 28 casos aceptados, 11 rechazados y 28 resueltos, y dos investigaciones de campo sobre restos de cohetes chinos. Muestra el método y los resultados de un organismo oficial; no aporta por sí solo evidencia sobre ningún avistamiento concreto.",
+        "description_en": "Extract from the 2025 annual report of the Argentine Air Force's Aerospace Identification Center (CIAE), with introduction, contents and final conclusions. The body was created on 6 May 2011 as CEFAe and reorganized as CIAE on 4 April 2019; from around 2014, under Commodore (ret.) Rubén Lianza, it treats each report as an identification problem and checks photos and videos against astronomy, air traffic and satellites. The 2025 report records 28 accepted cases, 11 rejected and 28 resolved, and two field investigations of Chinese rocket debris. It shows the method and results of an official body; on its own it provides no evidence about any specific sighting."
       }
     ]
   },
@@ -3507,6 +4014,20 @@
       {
         "name": "DGAC Chile — CEFAA",
         "url": "https://www.dgac.gob.cl/cefaa-un-modelo-investigativo-de-fenomenos-aereos-anomalos/"
+      },
+      {
+        "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC)",
+        "url": "https://sefaa.dgac.gob.cl/"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://sefaa.dgac.gob.cl/",
+        "type": "link",
+        "title": "CEFAA · comité DGAC/FACh",
+        "title_en": "CEFAA · Chilean DGAC/Air Force committee",
+        "description": "Comité de Estudios de Fenómenos Aéreos Anómalos (CEFAA), creado en 1997 por la Dirección General de Aeronáutica Civil de Chile tras dos noches de avistamientos de su personal en el aeropuerto de Chacalluta (Arica). Reúne un panel multidisciplinario de astrónomos, físicos, meteorólogos, psicólogos y expertos aeronáuticos que contrasta cada reporte con tráfico aéreo, efemérides y meteorología. Reorganizado el 15 de diciembre de 2009 bajo la Secretaría General de la DGAC, lo dirigió el general (R) Ricardo Bermúdez hasta 2016, y en esa etapa reconoció públicamente como no identificados los casos de El Bosque (2010) y del helicóptero naval (2014). Luego pasó a llamarse SEFAA. Que deje casos abiertos no prueba nada sobre su naturaleza: el panel descarta la mayoría como objetos o efectos convencionales.",
+        "description_en": "The Committee for the Study of Anomalous Aerial Phenomena (CEFAA), created in 1997 by Chile's civil aviation authority (DGAC) after two nights of sightings by its staff at Chacalluta airport (Arica). It brings together a multidisciplinary panel of astronomers, physicists, meteorologists, psychologists and aviation experts who check each report against air traffic, ephemerides and weather. Reorganized on December 15, 2009 under the DGAC General Secretariat, it was led by retired General Ricardo Bermúdez until 2016, and in that period publicly acknowledged the El Bosque (2010) and naval helicopter (2014) cases as unidentified. It was later renamed SEFAA. Leaving cases open proves nothing about their nature: the panel dismisses most reports as conventional objects or effects."
       }
     ]
   },
@@ -3581,6 +4102,20 @@
         "name": "Fuerza Aérea Uruguaya — CRIDOVNI",
         "name_en": "Uruguayan Air Force — CRIDOVNI",
         "url": "https://www.fau.mil.uy/es/articulos/182-comision-receptora-e-investigadora-de-denuncias-de-objetos-voladores-no-identificados-cridovni.html"
+      },
+      {
+        "name": "FAU — 40 años de CRIDOVNI",
+        "url": "https://www.fau.mil.uy/es/noticias/481-40-anos-de-existencia-de-la-cridovni.html"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.fau.mil.uy/es/noticias/481-40-anos-de-existencia-de-la-cridovni.html",
+        "type": "link",
+        "title": "CRIDOVNI · Comisión FAU",
+        "title_en": "CRIDOVNI · FAU commission",
+        "description": "La CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de Objetos Voladores no Identificados) es la comisión que la Fuerza Aérea Uruguaya creó el 7 de agosto de 1979, dependiente del Ministerio de Defensa Nacional, y que funciona sin interrupción desde entonces. Recibe denuncias, las investiga con recursos militares (radar, controladores, cotejo con el tránsito conocido y con datos meteorológicos) y las clasifica, con una categoría explícita para los casos «no convencionales». Según cifras de la propia comisión recogidas por la prensa uruguaya, de unas 1.570 denuncias entre 1979 y 2021, 47 (alrededor del 3 %) quedaron en esa categoría; el resto recibió explicación convencional. La comisión no se pronuncia sobre la naturaleza del fenómeno, y su cooperación con la AARO estadounidense consta solo como reportada.",
+        "description_en": "CRIDOVNI (Commission for the Reception and Investigation of Reports of Unidentified Flying Objects) is the commission the Uruguayan Air Force created on 7 August 1979, under the Ministry of National Defence, and which has operated without interruption ever since. It receives reports, investigates them with military resources (radar, controllers, checks against known traffic and weather data) and classifies them, with an explicit category for \"non-conventional\" cases. According to the commission's own figures as reported by the Uruguayan press, of some 1,570 reports between 1979 and 2021, 47 (about 3%) ended up in that category; the rest received a conventional explanation. The commission makes no statement on the nature of the phenomenon, and its cooperation with the US AARO stands only as reported."
       }
     ]
   },
@@ -3702,6 +4237,22 @@
         "name": "The Cash-Landrum UFO Incident (John F. Schuessler, 1998)",
         "note": "Monografía de referencia del caso",
         "note_en": "Reference monograph on the case"
+      },
+      {
+        "name": "MUFON — 'A Brief History of MUFON' (sitio oficial)",
+        "url": "https://mufon.com/history/",
+        "note": "Fundación 1969 y evolución (fuente primaria).",
+        "note_en": "Founding 1969 and evolution (primary source)."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://mufon.com/history/",
+        "type": "link",
+        "title": "MUFON · red civil de reporte e investigación UAP (EE.UU., 1969–)",
+        "title_en": "MUFON · civilian UAP reporting and investigation network (USA, 1969–)",
+        "description": "MUFON (Mutual UFO Network) es la red civil de reporte e investigación fundada el 31 de mayo de 1969 en Quincy (Illinois) como Midwest UFO Network, en respuesta al cierre de Project Blue Book; entre sus fundadores figuran Walter H. Andrus Jr., John F. Schuessler y Allen R. Utke. Reúne unos 4.000 miembros y más de 700 investigadores de campo formados con un manual propio, y desde 2006 mantiene el Case Management System, que superaba los 100.000 reportes en marzo de 2024. Su volumen no equivale a rigor: hay crítica documentada por su enredo con Bigelow Aerospace y por un enfoque que científicos califican de pseudocientífico, con datos sin verificación independiente.",
+        "description_en": "MUFON (Mutual UFO Network) is the civilian reporting and investigation network founded on 31 May 1969 in Quincy, Illinois, as the Midwest UFO Network, in response to the closure of Project Blue Book; its founders include Walter H. Andrus Jr., John F. Schuessler and Allen R. Utke. It has some 4,000 members and more than 700 field investigators trained with its own manual, and since 2006 it has maintained the Case Management System, which passed 100,000 reports by March 2024. Its volume is not rigor: there is documented criticism of its entanglement with Bigelow Aerospace and of a focus scientists call pseudoscientific, with data lacking independent verification."
       }
     ]
   },
@@ -3733,6 +4284,21 @@
         "name": "Jennie Zeidman, 'A Helicopter-UFO Encounter Over Ohio' (CUFOS, 1979)",
         "note": "Monografía del caso Coyne/Mansfield",
         "note_en": "Monograph on the Coyne/Mansfield case"
+      },
+      {
+        "name": "USAF / Project Blue Book — Special Report No. 14 (Battelle Memorial Institute, 1955)",
+        "note": "Estudio estadístico de ~3200 reportes; ~22% clasificados 'unknown'.",
+        "note_en": "Statistical study of ~3,200 reports; ~22% classified 'unknown'."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.livescience.com/space/extraterrestrial-life/us-government-declassifies-nearly-200-uap-files-including-strange-sightings-from-apollo-astronauts",
+        "type": "link",
+        "title": "Battelle Memorial Institute · Special Report 14",
+        "title_en": "Battelle Memorial Institute · Special Report 14",
+        "description": "El Project Blue Book Special Report No. 14 es el estudio estadístico que el Battelle Memorial Institute ejecutó bajo contrato de la USAF entre 1952 y 1955, sobre unos 3.200 reportes de avistamientos. Dejó alrededor del 22% de los casos como «unknown», con una tasa mayor entre los reportes de mejor calidad. Es la base cuantitativa más amplia de la época sobre los informes recibidos por la Fuerza Aérea; mide cómo se clasificaron esos informes, no qué eran los objetos, y una proporción de desconocidos no equivale a una prueba de anomalía.",
+        "description_en": "Project Blue Book Special Report No. 14 is the statistical study the Battelle Memorial Institute carried out under USAF contract between 1952 and 1955, covering some 3,200 sighting reports. It left about 22% of cases as 'unknown', with a higher rate among the best-quality reports. It is the broadest quantitative base of its era on the reports the Air Force received; it measures how those reports were classified, not what the objects were, and a share of unknowns is not proof of an anomaly."
       }
     ]
   },
@@ -3770,6 +4336,16 @@
         "name": "Oficina de la senadora Kirsten Gillibrand, Senado de EE.UU.",
         "url": "https://www.gillibrand.senate.gov/"
       }
+    ],
+    "documents": [
+      {
+        "src": "https://www.congress.gov/amendment/119th-congress/senate-amendment/3111/text",
+        "type": "link",
+        "title": "UAP Disclosure Act 2025 (S.Amdt.3111)",
+        "title_en": "UAP Disclosure Act 2025 (S.Amdt.3111)",
+        "description": "Enmienda S.Amdt.3111 al NDAA S.2296 (año fiscal 2026), reintroducida en 2025 por los senadores Chuck Schumer, Mike Rounds y Kirsten Gillibrand, con copatrocinio de Marco Rubio, Todd Young y Martin Heinrich, como continuación del UAP Disclosure Act presentado en 2023. Modelada sobre la JFK Assassination Records Collection Act de 1992, crea un Records Review Board de nueve ciudadanos designados por el Presidente para identificar, revisar y desclasificar registros UAP en custodia federal. La versión de 2023 incluía una cláusula de expropiación (eminent domain) sobre material UAP en manos privadas, eliminada en la conferencia con la Cámara; la de 2025 modificó ese lenguaje. Es texto legislativo primario, pero legislación pendiente: no es evidencia del fenómeno ni una divulgación efectiva.",
+        "description_en": "Amendment S.Amdt.3111 to the NDAA S.2296 (fiscal year 2026), reintroduced in 2025 by Senators Chuck Schumer, Mike Rounds and Kirsten Gillibrand, cosponsored by Marco Rubio, Todd Young and Martin Heinrich, as a continuation of the UAP Disclosure Act first filed in 2023. Modeled on the 1992 JFK Assassination Records Collection Act, it creates a Records Review Board of nine presidentially appointed citizens to identify, review and declassify UAP records held by federal agencies. The 2023 version included an eminent domain clause over UAP material in private hands, removed in conference with the House; the 2025 version modified that language. It is primary legislative text, but pending legislation: not evidence of the phenomenon nor an actual disclosure."
+      }
     ]
   },
   {
@@ -3799,6 +4375,28 @@
       {
         "name": "UAP Disclosure Act of 2023 (Schumer–Rounds), Congreso de EE.UU.",
         "url": "https://www.congress.gov/"
+      },
+      {
+        "name": "Congress.gov — S.Amdt.3111 to S.2296 (Unidentified Anomalous Phenomena Disclosure Act of 2025)",
+        "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/3111/text",
+        "note": "Texto legislativo primario, fuente oficial.",
+        "note_en": "Primary legislative text, official source."
+      },
+      {
+        "name": "Senator Schumer — Press release: 'Schumer, Rounds Introduce New Legislation to Declassify Government Records Related to Unidentified Anomalous Phenomena' (jul 2023)",
+        "url": "https://www.democrats.senate.gov/newsroom/press-releases/schumer-rounds-introduce-new-legislation-to-declassify-government-records-related-to-unidentified-anomalous-phenomena-_-also-known-as-ufos",
+        "note": "Comunicado del líder de la mayoría con texto introductorio original.",
+        "note_en": "Statement by the majority leader with the original introductory text."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.congress.gov/amendment/119th-congress/senate-amendment/3111/text",
+        "type": "link",
+        "title": "UAP Disclosure Act 2025 (S.Amdt.3111)",
+        "title_en": "UAP Disclosure Act 2025 (S.Amdt.3111)",
+        "description": "Enmienda S.Amdt.3111 al NDAA S.2296 (año fiscal 2026), reintroducida en 2025 por los senadores Chuck Schumer, Mike Rounds y Kirsten Gillibrand, con copatrocinio de Marco Rubio, Todd Young y Martin Heinrich, como continuación del UAP Disclosure Act presentado en 2023. Modelada sobre la JFK Assassination Records Collection Act de 1992, crea un Records Review Board de nueve ciudadanos designados por el Presidente para identificar, revisar y desclasificar registros UAP en custodia federal. La versión de 2023 incluía una cláusula de expropiación (eminent domain) sobre material UAP en manos privadas, eliminada en la conferencia con la Cámara; la de 2025 modificó ese lenguaje. Es texto legislativo primario, pero legislación pendiente: no es evidencia del fenómeno ni una divulgación efectiva.",
+        "description_en": "Amendment S.Amdt.3111 to the NDAA S.2296 (fiscal year 2026), reintroduced in 2025 by Senators Chuck Schumer, Mike Rounds and Kirsten Gillibrand, cosponsored by Marco Rubio, Todd Young and Martin Heinrich, as a continuation of the UAP Disclosure Act first filed in 2023. Modeled on the 1992 JFK Assassination Records Collection Act, it creates a Records Review Board of nine presidentially appointed citizens to identify, review and declassify UAP records held by federal agencies. The 2023 version included an eminent domain clause over UAP material in private hands, removed in conference with the House; the 2025 version modified that language. It is primary legislative text, but pending legislation: not evidence of the phenomenon nor an actual disclosure."
       }
     ]
   },
@@ -3954,6 +4552,24 @@
         "name": "Daniel Sheehan — Constitutional Attorney & UAP Disclosure",
         "url": "https://dannysheehan.com/"
       }
+    ],
+    "documents": [
+      {
+        "src": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-david-grusch-declassified-uap-files/",
+        "type": "link",
+        "title": "Conferencia del Capitolio · Grusch + legisladores (9 jun 2026)",
+        "title_en": "Capitol Press Conference · Grusch + lawmakers (Jun 9, 2026)",
+        "description": "El 9 de junio de 2026, en la escalinata del Capitolio, los representantes Eric Burlison, Jared Moskowitz, Anna Paulina Luna y Tim Burchett dieron una conferencia de prensa junto al denunciante David Grusch, con la periodista Leslie Kean y el documentalista James Fox como anfitriones. Formularon tres demandas: la desclasificación presidencial de archivos que Grusch identificó por nombre, la aprobación del UAP Disclosure Act y más protección para los denunciantes, con coordinación internacional. Los legisladores citaron Varginha 1996 entre los registros a desclasificar. Grusch afirmó que el gobierno conoce varias clases de inteligencias no humanas, hasta lo que llamó «sentient plasmoid life». La conferencia no aportó evidencia material nueva sobre el fenómeno: su peso es de presión institucional.",
+        "description_en": "On June 9, 2026, on the Capitol steps, Representatives Eric Burlison, Jared Moskowitz, Anna Paulina Luna and Tim Burchett held a press conference with whistleblower David Grusch, hosted by journalist Leslie Kean and documentary maker James Fox. They set out three demands: presidential declassification of files Grusch had identified by name, passage of the UAP Disclosure Act, and stronger whistleblower protections with international coordination. The lawmakers cited Varginha 1996 among the records to be declassified. Grusch said the government is aware of several kinds of non-human intelligence, up to what he called 'sentient plasmoid life'. The conference brought no new material evidence about the phenomenon: its weight is that of institutional pressure."
+      },
+      {
+        "src": "https://abcnews.com/Technology/story?id=98572&page=1",
+        "type": "link",
+        "title": "Disclosure Project · conferencia del National Press Club (9 may 2001)",
+        "title_en": "Disclosure Project · National Press Club conference (May 9, 2001)",
+        "description": "Conferencia de prensa del Disclosure Project celebrada el 9 de mayo de 2001 en el National Press Club de Washington y organizada por el médico Steven M. Greer. Unos veinte ex militares, funcionarios y contratistas, entre ellos John Callahan, ex jefe de Accidentes e Investigaciones de la FAA, y Robert Salas, ex oficial de lanzamiento de misiles, declararon ante la prensa haber presenciado sucesos OVNI o su encubrimiento. Pidieron audiencias abiertas en el Congreso, una orden ejecutiva que protegiera a los testigos, desclasificación y una ley contra las armas en el espacio. No hubo audiencias. Algunos testimonios se sostienen en otros expedientes y otros quedaron sin verificar; Philip Klass criticó que la conferencia mezclara la petición con otras agendas y excluyera a los críticos.",
+        "description_en": "Disclosure Project press conference held on 9 May 2001 at the National Press Club in Washington, organized by physician Steven M. Greer. Some twenty former military personnel, officials and contractors, among them John Callahan, former head of the FAA's Accidents and Investigations division, and Robert Salas, a former missile launch officer, told the press they had witnessed UFO events or their cover-up. They called for open congressional hearings, an executive order protecting witnesses, declassification and a law banning weapons in space. No hearings followed. Some testimonies hold up in other case files and others remained unverified; Philip Klass criticized the conference for mixing the request with other agendas and for excluding critics."
+      }
     ]
   },
   {
@@ -3992,7 +4608,17 @@
     "seoTitle": "Dan Farah y 'The Age of Disclosure': el documental UAP",
     "seoDescription": "Dan Farah, productor de Hollywood (Ready Player One) y director de 'The Age of Disclosure' (2025): el documental que llevó la narrativa UAP a una plataforma masiva.",
     "bio": "Dan Farah es un productor estadounidense de cine y televisión que, en 2025, se convirtió en una figura del ecosistema de divulgación UAP al dirigir su primer documental, «The Age of Disclosure». Antes de eso su perfil era el de Hollywood: produjo la película de ciencia ficción «Ready Player One» (Steven Spielberg, 2018) y la serie de fantasía «The Shannara Chronicles», entre otros proyectos. Ese origen importa para entender su papel en el fenómeno: Farah no es un investigador ni un testigo, sino un narrador profesional con acceso a las herramientas de producción y distribución que el tema rara vez había tenido.\n\n«The Age of Disclosure» fue, según el propio Farah, filmada a lo largo de más de dos años en relativo secreto. La película reúne entrevistas con 34 personas con trayectoria en defensa, inteligencia y gobierno de EE.UU. —entre ellas figuras del ciclo de divulgación reciente— y articula con ellas la tesis de un encubrimiento global de ochenta años sobre la existencia de inteligencia no humana. Se estrenó en el festival South by Southwest el 9 de marzo de 2025, tuvo un recorrido limitado en salas estadounidenses y, desde el 21 de noviembre de 2025, quedó disponible en streaming en Amazon Prime Video, alcanzando así a una audiencia masiva.\n\nDesde el punto de vista analítico, conviene ser preciso sobre qué aporta y qué no. El documental es un ejercicio de testimonio agregado, no de evidencia: su material son declaraciones de oficiales —muchos ya conocidos por el público— y no documentos primarios desclasificados, fotografías o datos de sensores nuevos. Su fuerza es retórica y de alcance: poner a tres docenas de personas con credenciales a decir lo mismo ante una cámara y distribuirlo en una plataforma global tiene un efecto cultural innegable. Su debilidad es la misma que la de todo el ciclo testimonial: la concordancia de los relatos no equivale a su verificación, y la película no resuelve esa brecha; la enmarca. La recepción fue dividida —desde coberturas amplias en prensa generalista hasta reseñas escépticas que señalaron la ausencia de pruebas materiales—.\n\nFarah representa la dimensión mediática del fenómeno: el momento en que la narrativa de divulgación deja los pasillos del Congreso y los pódcast especializados para entrar en el circuito del entretenimiento masivo. Su papel no es probar ni refutar, sino amplificar y empaquetar; y eso, en un tema donde la percepción pública es parte del objeto de estudio, es en sí mismo un dato. Es un actor del ecosistema —productor y vocero—, no una fuente independiente: su contribución se pesa por su efecto sobre la conversación, no por la evidencia que añade, que es, en rigor, ninguna nueva y verificable.",
-    "bio_en": "Dan Farah is an American film and television producer who, in 2025, became a figure in the UAP disclosure ecosystem by directing his first documentary, «The Age of Disclosure». Before that his profile was Hollywood's: he produced the science-fiction film «Ready Player One» (Steven Spielberg, 2018) and the fantasy series «The Shannara Chronicles», among other projects. That origin matters to understand his role in the phenomenon: Farah is neither an investigator nor a witness, but a professional storyteller with access to the production and distribution tools the subject had rarely had.\n\n«The Age of Disclosure» was, by Farah's own account, filmed over more than two years in relative secrecy. The film gathers interviews with 34 people with backgrounds in U.S. defense, intelligence and government —among them figures of the recent disclosure cycle— and uses them to articulate the thesis of an eighty-year global cover-up of the existence of non-human intelligence. It premiered at the South by Southwest festival on 9 March 2025, had a limited U.S. theatrical run and, from 21 November 2025, became available for streaming on Amazon Prime Video, thus reaching a mass audience.\n\nFrom an analytical standpoint, it is worth being precise about what it contributes and what it does not. The documentary is an exercise in aggregated testimony, not evidence: its material is officials' statements —many already known to the public— and not new declassified primary documents, photographs or sensor data. Its strength is rhetorical and one of reach: putting three dozen credentialed people on camera saying the same thing and distributing it on a global platform has an undeniable cultural effect. Its weakness is the same as that of the whole testimonial cycle: the concordance of the accounts does not amount to their verification, and the film does not close that gap; it frames it. Reception was divided —from broad coverage in mainstream media to skeptical reviews that noted the absence of material proof.\n\nFarah represents the media dimension of the phenomenon: the moment the disclosure narrative leaves the corridors of Congress and the specialized podcasts to enter the mass-entertainment circuit. His role is not to prove or refute but to amplify and package; and that, in a subject where public perception is part of the object of study, is itself a datum. He is an actor of the ecosystem —producer and spokesman— not an independent source: his contribution is weighed by its effect on the conversation, not by the evidence it adds, which is, strictly, none that is new and verifiable."
+    "bio_en": "Dan Farah is an American film and television producer who, in 2025, became a figure in the UAP disclosure ecosystem by directing his first documentary, «The Age of Disclosure». Before that his profile was Hollywood's: he produced the science-fiction film «Ready Player One» (Steven Spielberg, 2018) and the fantasy series «The Shannara Chronicles», among other projects. That origin matters to understand his role in the phenomenon: Farah is neither an investigator nor a witness, but a professional storyteller with access to the production and distribution tools the subject had rarely had.\n\n«The Age of Disclosure» was, by Farah's own account, filmed over more than two years in relative secrecy. The film gathers interviews with 34 people with backgrounds in U.S. defense, intelligence and government —among them figures of the recent disclosure cycle— and uses them to articulate the thesis of an eighty-year global cover-up of the existence of non-human intelligence. It premiered at the South by Southwest festival on 9 March 2025, had a limited U.S. theatrical run and, from 21 November 2025, became available for streaming on Amazon Prime Video, thus reaching a mass audience.\n\nFrom an analytical standpoint, it is worth being precise about what it contributes and what it does not. The documentary is an exercise in aggregated testimony, not evidence: its material is officials' statements —many already known to the public— and not new declassified primary documents, photographs or sensor data. Its strength is rhetorical and one of reach: putting three dozen credentialed people on camera saying the same thing and distributing it on a global platform has an undeniable cultural effect. Its weakness is the same as that of the whole testimonial cycle: the concordance of the accounts does not amount to their verification, and the film does not close that gap; it frames it. Reception was divided —from broad coverage in mainstream media to skeptical reviews that noted the absence of material proof.\n\nFarah represents the media dimension of the phenomenon: the moment the disclosure narrative leaves the corridors of Congress and the specialized podcasts to enter the mass-entertainment circuit. His role is not to prove or refute but to amplify and package; and that, in a subject where public perception is part of the object of study, is itself a datum. He is an actor of the ecosystem —producer and spokesman— not an independent source: his contribution is weighed by its effect on the conversation, not by the evidence it adds, which is, strictly, none that is new and verifiable.",
+    "documents": [
+      {
+        "src": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-david-grusch-declassified-uap-files/",
+        "type": "link",
+        "title": "Conferencia del Capitolio · Grusch + legisladores (9 jun 2026)",
+        "title_en": "Capitol Press Conference · Grusch + lawmakers (Jun 9, 2026)",
+        "description": "El 9 de junio de 2026, en la escalinata del Capitolio, los representantes Eric Burlison, Jared Moskowitz, Anna Paulina Luna y Tim Burchett dieron una conferencia de prensa junto al denunciante David Grusch, con la periodista Leslie Kean y el documentalista James Fox como anfitriones. Formularon tres demandas: la desclasificación presidencial de archivos que Grusch identificó por nombre, la aprobación del UAP Disclosure Act y más protección para los denunciantes, con coordinación internacional. Los legisladores citaron Varginha 1996 entre los registros a desclasificar. Grusch afirmó que el gobierno conoce varias clases de inteligencias no humanas, hasta lo que llamó «sentient plasmoid life». La conferencia no aportó evidencia material nueva sobre el fenómeno: su peso es de presión institucional.",
+        "description_en": "On June 9, 2026, on the Capitol steps, Representatives Eric Burlison, Jared Moskowitz, Anna Paulina Luna and Tim Burchett held a press conference with whistleblower David Grusch, hosted by journalist Leslie Kean and documentary maker James Fox. They set out three demands: presidential declassification of files Grusch had identified by name, passage of the UAP Disclosure Act, and stronger whistleblower protections with international coordination. The lawmakers cited Varginha 1996 among the records to be declassified. Grusch said the government is aware of several kinds of non-human intelligence, up to what he called 'sentient plasmoid life'. The conference brought no new material evidence about the phenomenon: its weight is that of institutional pressure."
+      }
+    ]
   },
   {
     "id": "salas",
@@ -4275,6 +4901,16 @@
         "url": "https://vascoproject.wixsite.com/vasco",
         "note": "Sitio del proyecto liderado por Villarroel."
       }
+    ],
+    "documents": [
+      {
+        "src": "https://www.nature.com/articles/s41598-025-21620-3",
+        "type": "link",
+        "title": "POSS-I Transients ↔ tests nucleares + UAP (Bruehl & Villarroel)",
+        "title_en": "POSS-I Transients ↔ nuclear tests + UAP (Bruehl & Villarroel)",
+        "description": "Artículo de R. Bruehl y Beatriz Villarroel publicado en Scientific Reports (grupo Nature) en octubre de 2025, revisado por pares. Cruza, día por día entre el 19 de noviembre de 1949 y el 28 de abril de 1957 (antes del Sputnik), los transitorios hallados en las placas del Palomar Observatory Sky Survey con las pruebas nucleares atmosféricas y con reportes UAP de la época. Halla dos asociaciones: los transitorios son un 45 % más probables en un margen de un día respecto de una prueba nuclear (p=0,008) y aumentan un 8,5 % por cada reporte UAP adicional del mismo día (p=0,015). Documenta una correlación, no una causa: el efecto es modesto y la contaminación de las placas o el sesgo de búsqueda siguen siendo explicaciones competidoras.",
+        "description_en": "Peer-reviewed paper by R. Bruehl and Beatriz Villarroel published in Scientific Reports (Nature group) in October 2025. Day by day between 19 November 1949 and 28 April 1957 (before Sputnik), it cross-matches transients found on the Palomar Observatory Sky Survey plates with atmospheric nuclear tests and with UAP reports of the period. It finds two associations: transients are 45% more likely within one day of a nuclear test (p=0.008) and increase by 8.5% for each additional UAP report on the same day (p=0.015). It documents a correlation, not a cause: the effect is modest, and plate contamination or search bias remain competing explanations."
+      }
     ]
   },
   {
@@ -4308,6 +4944,22 @@
         "name": "P. A. Sturrock, 'The UFO Enigma' (1999) + Pocantico Report (1998)",
         "note": "Primera revisión científica independiente de la evidencia física.",
         "note_en": "First independent scientific review of the physical evidence."
+      },
+      {
+        "name": "Sturrock, P. et al. — 'Physical Evidence Related to UFO Reports' (Pocantico Report, 1998), Journal of Scientific Exploration",
+        "url": "https://web.archive.org/web/20240624065615/https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+        "note": "Documento primario. · Original (enlace caído): https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+        "note_en": "Primary document. · Original (dead link): https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://web.archive.org/web/20240624065615/https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+        "type": "link",
+        "title": "Panel Sturrock · revisión científica de evidencia física (1998)",
+        "title_en": "Sturrock Panel · scientific review of physical evidence (1998)",
+        "description": "Informe del taller que el astrofísico de Stanford Peter A. Sturrock organizó en el Pocantico Conference Center de Tarrytown (Nueva York) del 29 de septiembre al 4 de octubre de 1997, con auspicio de la Society for Scientific Exploration y financiación de Laurance Rockefeller. Un panel de nueve científicos escuchó casos con evidencia física: marcas en el suelo, fallos en vehículos, daños en la vegetación, quemaduras en testigos, fotografías y detecciones de radar. El informe, de 1998 y publicado después en el Journal of Scientific Exploration, concluye que ningún caso prueba un origen extraterrestre, pero que algunos presentan efectos físicos sin explicación convencional que merecen estudio. El panel revisó evidencia ya existente y de calidad desigual, sin reunir datos nuevos.",
+        "description_en": "Report of the workshop that Stanford astrophysicist Peter A. Sturrock organized at the Pocantico Conference Center in Tarrytown, New York, from 29 September to 4 October 1997, sponsored by the Society for Scientific Exploration and funded by Laurance Rockefeller. A panel of nine scientists heard cases involving physical evidence: ground marks, vehicle malfunctions, vegetation damage, burns on witnesses, photographs and radar detections. The report, issued in 1998 and later published in the Journal of Scientific Exploration, concludes that no case proves an extraterrestrial origin, but that some show physical effects without a conventional explanation that merit study. The panel reviewed existing evidence of uneven quality and gathered no new data."
       }
     ]
   },
@@ -4335,6 +4987,16 @@
         "name": "News Nation / Ross Coulthart — cobertura de Jake Barber (2025)",
         "note": "Testimonio sin corroboración documental independiente.",
         "note_en": "Testimony without independent documentary corroboration."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-david-grusch-declassified-uap-files/",
+        "type": "link",
+        "title": "Conferencia del Capitolio · Grusch + legisladores (9 jun 2026)",
+        "title_en": "Capitol Press Conference · Grusch + lawmakers (Jun 9, 2026)",
+        "description": "El 9 de junio de 2026, en la escalinata del Capitolio, los representantes Eric Burlison, Jared Moskowitz, Anna Paulina Luna y Tim Burchett dieron una conferencia de prensa junto al denunciante David Grusch, con la periodista Leslie Kean y el documentalista James Fox como anfitriones. Formularon tres demandas: la desclasificación presidencial de archivos que Grusch identificó por nombre, la aprobación del UAP Disclosure Act y más protección para los denunciantes, con coordinación internacional. Los legisladores citaron Varginha 1996 entre los registros a desclasificar. Grusch afirmó que el gobierno conoce varias clases de inteligencias no humanas, hasta lo que llamó «sentient plasmoid life». La conferencia no aportó evidencia material nueva sobre el fenómeno: su peso es de presión institucional.",
+        "description_en": "On June 9, 2026, on the Capitol steps, Representatives Eric Burlison, Jared Moskowitz, Anna Paulina Luna and Tim Burchett held a press conference with whistleblower David Grusch, hosted by journalist Leslie Kean and documentary maker James Fox. They set out three demands: presidential declassification of files Grusch had identified by name, passage of the UAP Disclosure Act, and stronger whistleblower protections with international coordination. The lawmakers cited Varginha 1996 among the records to be declassified. Grusch said the government is aware of several kinds of non-human intelligence, up to what he called 'sentient plasmoid life'. The conference brought no new material evidence about the phenomenon: its weight is that of institutional pressure."
       }
     ]
   },
@@ -4386,6 +5048,40 @@
         "name": "American Alchemy con Jesse Michels — 'Pentagon Whistleblower UNLOADS on Alien Hybrid Breeding Programs (ft. Matthew Brown)' (ago 2026)",
         "note": "Fuente de las afirmaciones adicionales sin corroborar y del relato de represalias personales.",
         "note_en": "Source of the additional uncorroborated claims and the personal-retaliation account."
+      },
+      {
+        "name": "ODNI FOIA — DF-2025-00021 'Immaculate Constellation' (descripción desclasificada, 22 oct 2024)",
+        "url": "https://www.dni.gov/files/documents/FOIA/DF-2025-00021-Immaculate-Constellation-descrp-from-UNCLASS-Press-22-Oct-2024.pdf",
+        "note": "Referencia documental oficial del DNI.",
+        "note_en": "Official DNI documentary reference."
+      },
+      {
+        "name": "Metabunk — 'Matthew Brown: Immaculate Constellation Report Author/Whistleblower'",
+        "url": "https://www.metabunk.org/threads/matthew-brown-immaculate-constellation-report-author-whistleblower.14170/",
+        "note": "Análisis escéptico detallado: problemas de sourcing, el origen del wargame, y las fotos del 'USS Trepang' con patrones de nube duplicados.",
+        "note_en": "Detailed skeptical analysis: sourcing problems, the wargame origin, and the 'USS Trepang' photos with duplicated cloud patterns."
+      },
+      {
+        "name": "Vanguard Enterprise — misión (vanguardenterprise.org/mission)",
+        "url": "https://www.vanguardenterprise.org/mission"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.dni.gov/files/documents/FOIA/DF-2025-00021-Immaculate-Constellation-descrp-from-UNCLASS-Press-22-Oct-2024.pdf",
+        "type": "link",
+        "title": "Immaculate Constellation · uSAP alegado de archivo UAP",
+        "title_en": "Immaculate Constellation · alleged UAP-archive uSAP",
+        "description": "Documento de 12 páginas que describe «Immaculate Constellation», un presunto programa de acceso especial no reconocido para recolectar y custodiar imágenes de alta resolución y datos de sensores de UAP. El periodista Michael Shellenberger lo entregó a legisladores y lo detalló bajo testimonio en la Cámara el 13 de noviembre de 2024; la representante Nancy Mace lo publicó y la ODNI lo referencia en la FOIA DF-2025-00021. El Departamento de Defensa negó que exista un programa con ese nombre sin explicar el origen del texto. En 2025 Matthew Brown se identificó como autor y dijo haberlo reconstruido de memoria. Jason Colavito y el foro Metabunk sostienen que confundió con un programa real una carpeta del wargame ficticio Schriever de 2018. No hay imágenes liberadas ni corroboración independiente.",
+        "description_en": "A 12-page document describing 'Immaculate Constellation', an alleged unacknowledged special access program to collect and hold high-resolution imagery and sensor data of UAP. Journalist Michael Shellenberger gave it to lawmakers and detailed it under testimony in the House on November 13, 2024; Representative Nancy Mace published it, and ODNI references it in FOIA DF-2025-00021. The Department of Defense said no program by that name exists without explaining where the text came from. In 2025 Matthew Brown identified himself as its author and said he reconstructed it from memory. Jason Colavito and the Metabunk forum argue that he mistook a folder from the fictional 2018 Schriever wargame for a real program. No imagery has been released and there is no independent corroboration."
+      },
+      {
+        "src": "https://www.vanguardenterprise.org/mission",
+        "type": "link",
+        "title": "Vanguard Enterprise · ONG de apoyo a denunciantes UAP (2026)",
+        "title_en": "Vanguard Enterprise · UAP whistleblower support nonprofit (2026)",
+        "description": "Vanguard Enterprise es una organización sin fines de lucro cofundada en 2026 por los denunciantes Dylan Borland, su director ejecutivo, y Matthew Brown, su director de operaciones; Jeff Nuccetelli se sumó después como director de desarrollo. Según su sitio, ofrece apoyo legal, médico, financiero y psicológico a denunciantes UAP del sector de seguridad nacional y a sus familias, con un plan a tres años que culmina en estrategias de litigio. Se dio a conocer en agosto de 2026, en un AMA de Reddit moderado por Leslie Kean y en una entrevista de Brown con Jesse Michels. No publica cifras de fondos, presupuesto ni casos atendidos, y su existencia no cambia el peso de las denuncias individuales de sus fundadores.",
+        "description_en": "Vanguard Enterprise is a nonprofit co-founded in 2026 by whistleblowers Dylan Borland, its chief executive, and Matthew Brown, its chief operating officer; Jeff Nuccetelli later joined as chief development officer. According to its website, it offers legal, medical, financial and psychological support to UAP whistleblowers from the national-security sector and their families, with a three-year plan that culminates in litigation strategies. It became public in August 2026, through a Reddit AMA moderated by Leslie Kean and an interview of Brown by Jesse Michels. It publishes no figures on funds, budget or cases handled, and its existence does not change the weight of its founders' individual claims."
       }
     ]
   },
@@ -4457,6 +5153,16 @@
         "name": "The Moscow Times — 'Little Green Men: A Look at the Official Soviet X-Files Investigation'",
         "url": "https://www.themoscowtimes.com/2016/03/31/little-green-men-a-look-at-the-official-soviet-x-files-investigation-a52335"
       }
+    ],
+    "documents": [
+      {
+        "src": "https://skepticalinquirer.org/newsletter/history-of-state-ufo-research-in-the-ussr/",
+        "type": "link",
+        "title": "Programa SETKA · investigación estatal soviética de UAP (1978–1991)",
+        "title_en": "SETKA Program · Soviet state UAP investigation (1978–1991)",
+        "description": "Relato del programa estatal soviético SETKA publicado en 2000 por sus responsables operativos, Yuli Platov y Borís Sokolov, en la revista de la Academia de Ciencias (Vestnik RAN). Nació tras la noche de Petrozavodsk de 1977 con dos temas del plan de defensa de 1978: Setka MO (Ministerio de Defensa) y Setka AN (Academia de Ciencias). En trece años reunió unos 3.000 informes y más del 90% se explicó por lanzamientos de cohetes y globos; Petrozavodsk fue el lanzamiento del Kosmos-955 más un ensayo fallido de misil. Dejó sin identificar los accidentes de Borisoglebsk y no registró aterrizajes ni contactos. Es el relato de los propios responsables, sin documentos soviéticos publicados.",
+        "description_en": "An account of the Soviet state program SETKA published in 2000 by its operational heads, Yuli Platov and Boris Sokolov, in the Academy of Sciences journal (Vestnik RAN). It arose after the 1977 Petrozavodsk night as two topics in the 1978 defense plan: Setka MO (Ministry of Defense) and Setka AN (Academy of Sciences). Over thirteen years it gathered about 3,000 reports, and more than 90% were explained as rocket launches and balloons; Petrozavodsk was the Kosmos-955 launch plus a failed missile test. It left the Borisoglebsk accidents unidentified and recorded no landings or contacts. It is the heads' own account, with no Soviet documents published."
+      }
     ]
   },
   {
@@ -4496,6 +5202,19 @@
       {
         "name": "American Alchemy (Jesse Michels) — entrevista a Aldo Rebelo (YouTube)",
         "url": "https://www.youtube.com/watch?v=nqLnEVcZ8vE"
+      }
+    ],
+    "documents": [
+      {
+        "src": "/pursue/aldo-rebelo-disclosure-2026-context.jpg",
+        "type": "image",
+        "title": "Contexto · Aldo Rebelo, exministro de Defensa de Brasil",
+        "title_en": "Context · Aldo Rebelo, former Defence Minister of Brazil",
+        "source": "Aldo Rebelo (16654292721) (cropped).jpg · Wikimedia Commons",
+        "license": "CC BY 2.0 (Agência Senado)",
+        "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAldo_Rebelo_%2816654292721%29_%28cropped%29.jpg",
+        "description": "Declaraciones públicas de Aldo Rebelo, ministro de Defensa de Brasil en 2015-2016 y precandidato presidencial por Democracia Cristã, a inicios de 2026: en una entrevista de unas dos horas y media con Jesse Michels (American Alchemy) y en lo que recogieron CNN Brasil y Metrópoles en febrero, dijo conocer documentos de las Fuerzas Armadas sobre ovnis, prometió divulgarlos, sostuvo que Varginha 1996 fue real (una nave estrellada y seres no humanos) y recordó la Noite Oficial de 1986. Es testimonio por autoridad de un exministro, no un documento, y llega como promesa de campaña: no aporta por sí mismo los archivos que menciona.",
+        "description_en": "Public statements by Aldo Rebelo, Brazil's Minister of Defence in 2015-2016 and presidential pre-candidate for Christian Democracy, in early 2026: in an interview of about two and a half hours with Jesse Michels (American Alchemy) and in remarks reported by CNN Brasil and Metrópoles in February, he said he knew of Armed Forces documents about UFOs, promised to release them, asserted that Varginha 1996 was real (a crashed craft and non-human beings) and recalled the 1986 Official UFO Night. It is testimony by authority from a former minister, not a document, and comes as a campaign promise: it does not itself provide the files it mentions."
       }
     ]
   },
@@ -4632,6 +5351,16 @@
         "name_en": "Ross Coulthart (X) — on Kirk McConnell's public concerns",
         "url": "https://x.com/rosscoulthart/status/1907566147966480403"
       }
+    ],
+    "documents": [
+      {
+        "src": "https://www.congress.gov/amendment/119th-congress/senate-amendment/3111/text",
+        "type": "link",
+        "title": "UAP Disclosure Act 2025 (S.Amdt.3111)",
+        "title_en": "UAP Disclosure Act 2025 (S.Amdt.3111)",
+        "description": "Enmienda S.Amdt.3111 al NDAA S.2296 (año fiscal 2026), reintroducida en 2025 por los senadores Chuck Schumer, Mike Rounds y Kirsten Gillibrand, con copatrocinio de Marco Rubio, Todd Young y Martin Heinrich, como continuación del UAP Disclosure Act presentado en 2023. Modelada sobre la JFK Assassination Records Collection Act de 1992, crea un Records Review Board de nueve ciudadanos designados por el Presidente para identificar, revisar y desclasificar registros UAP en custodia federal. La versión de 2023 incluía una cláusula de expropiación (eminent domain) sobre material UAP en manos privadas, eliminada en la conferencia con la Cámara; la de 2025 modificó ese lenguaje. Es texto legislativo primario, pero legislación pendiente: no es evidencia del fenómeno ni una divulgación efectiva.",
+        "description_en": "Amendment S.Amdt.3111 to the NDAA S.2296 (fiscal year 2026), reintroduced in 2025 by Senators Chuck Schumer, Mike Rounds and Kirsten Gillibrand, cosponsored by Marco Rubio, Todd Young and Martin Heinrich, as a continuation of the UAP Disclosure Act first filed in 2023. Modeled on the 1992 JFK Assassination Records Collection Act, it creates a Records Review Board of nine presidentially appointed citizens to identify, review and declassify UAP records held by federal agencies. The 2023 version included an eminent domain clause over UAP material in private hands, removed in conference with the House; the 2025 version modified that language. It is primary legislative text, but pending legislation: not evidence of the phenomenon nor an actual disclosure."
+      }
     ]
   },
   {
@@ -4672,6 +5401,16 @@
       {
         "name": "UAP Files Podcast S3E21 — 'UFOs, UAPs & 2027: Former CIA Agent John Ramirez Tells All' (2025)",
         "url": "https://www.imdb.com/title/tt37000193/"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.prnewswire.com/news-releases/disclosure-foundation-to-convene-senators-members-of-congress-and-leading-experts-across-disciplines-for-landmark-public-forum-on-june-25-302807931.html",
+        "type": "link",
+        "title": "Disclosure Forum 2026 · Kennedy Caucus Room, Senado EEUU (25 jun)",
+        "title_en": "Disclosure Forum 2026 · Kennedy Caucus Room, U.S. Senate (June 25)",
+        "description": "El Disclosure Forum 2026 fue un foro público de jornada completa que la Disclosure Foundation, presidida por Christopher Mellon, celebró el 25 de junio de 2026 en el Kennedy Caucus Room del Russell Senate Office Building, en Washington, con transmisión en directo. Reunió a los senadores Kirsten Gillibrand y Mike Rounds, a los representantes Anna Paulina Luna, Eric Burlison, Tim Burchett y Suhas Subramanyam, y a expertos como Avi Loeb, Harold Puthoff, el contralmirante retirado Tim Gallaudet y el historiador Carlos Eire. Llegó dos semanas después de la tercera entrega de PURSUE. El foro no aportó evidencia material nueva: documenta la convergencia pública de figuras legislativas, militares, de inteligencia y académicas, no la naturaleza del fenómeno.",
+        "description_en": "The Disclosure Forum 2026 was a full-day public forum held by the Disclosure Foundation, chaired by Christopher Mellon, on June 25, 2026 in the Kennedy Caucus Room of the Russell Senate Office Building in Washington, and streamed live. It brought together Senators Kirsten Gillibrand and Mike Rounds, Representatives Anna Paulina Luna, Eric Burlison, Tim Burchett and Suhas Subramanyam, and experts such as Avi Loeb, Harold Puthoff, retired Rear Admiral Tim Gallaudet and historian Carlos Eire. It came two weeks after the third PURSUE release. The forum brought no new material evidence: it documents the public convergence of legislative, military, intelligence and academic figures, not the nature of the phenomenon."
       }
     ]
   },
@@ -4778,7 +5517,17 @@
     ],
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/StevenGreer01%20%28cropped%29.jpg?width=400",
     "photo_credit": "Energy Artist, Conscious Life Expo 2007 (Wikimedia Commons)",
-    "photo_license": "Dominio público (CC0)"
+    "photo_license": "Dominio público (CC0)",
+    "documents": [
+      {
+        "src": "https://abcnews.com/Technology/story?id=98572&page=1",
+        "type": "link",
+        "title": "Disclosure Project · conferencia del National Press Club (9 may 2001)",
+        "title_en": "Disclosure Project · National Press Club conference (May 9, 2001)",
+        "description": "Conferencia de prensa del Disclosure Project celebrada el 9 de mayo de 2001 en el National Press Club de Washington y organizada por el médico Steven M. Greer. Unos veinte ex militares, funcionarios y contratistas, entre ellos John Callahan, ex jefe de Accidentes e Investigaciones de la FAA, y Robert Salas, ex oficial de lanzamiento de misiles, declararon ante la prensa haber presenciado sucesos OVNI o su encubrimiento. Pidieron audiencias abiertas en el Congreso, una orden ejecutiva que protegiera a los testigos, desclasificación y una ley contra las armas en el espacio. No hubo audiencias. Algunos testimonios se sostienen en otros expedientes y otros quedaron sin verificar; Philip Klass criticó que la conferencia mezclara la petición con otras agendas y excluyera a los críticos.",
+        "description_en": "Disclosure Project press conference held on 9 May 2001 at the National Press Club in Washington, organized by physician Steven M. Greer. Some twenty former military personnel, officials and contractors, among them John Callahan, former head of the FAA's Accidents and Investigations division, and Robert Salas, a former missile launch officer, told the press they had witnessed UFO events or their cover-up. They called for open congressional hearings, an executive order protecting witnesses, declassification and a law banning weapons in space. No hearings followed. Some testimonies hold up in other case files and others remained unverified; Philip Klass criticized the conference for mixing the request with other agendas and for excluding critics."
+      }
+    ]
   },
   {
     "id": "hellyer",
@@ -4826,6 +5575,28 @@
         "name": "RT — SophieCo, entrevista a Paul Hellyer (2014)",
         "note": "Fuente primaria de las afirmaciones sobre especies alienígenas.",
         "note_en": "Primary source of the alien-species claims."
+      },
+      {
+        "name": "Management of Public Reporting of Unidentified Aerial Phenomena in Canada — informe (gov.ca)",
+        "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project/management-public-reporting-unidentified-aerial-phenomena-canada",
+        "note": "Informe completo y recomendaciones.",
+        "note_en": "Full report and recommendations."
+      },
+      {
+        "name": "Office of the Chief Science Advisor of Canada — Sky Canada Project (portal oficial)",
+        "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project",
+        "note": "Página primaria del proyecto.",
+        "note_en": "Primary project page."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://science.gc.ca/site/science/en/office-chief-science-advisor/sky-canada-project/management-public-reporting-unidentified-aerial-phenomena-canada",
+        "type": "link",
+        "title": "Sky Canada Project · revisión científica federal del reporte UAP",
+        "title_en": "Sky Canada Project · federal scientific review of UAP reporting",
+        "description": "Informe «Management of Public Reporting of Unidentified Aerial Phenomena in Canada», de la Oficina del Asesor Científico Jefe de Canadá, encabezada por Mona Nemer, dentro del Sky Canada Project iniciado en 2022; tuvo una versión preliminar en enero de 2025 y se publicó completo a mediados de ese año. Constata que el país recibe entre 600 y 1.000 reportes al año y que desde 1995 ningún organismo federal tiene el mandato de recogerlos, que quedan dispersos entre la Real Policía Montada, Transport Canada y la Agencia Espacial Canadiense. Recomienda un responsable nacional único, que sugiere sea la Agencia Espacial. Es un diagnóstico de gobernanza con recomendaciones no vinculantes: no investiga avistamientos ni se pronuncia sobre su naturaleza.",
+        "description_en": "The report \"Management of Public Reporting of Unidentified Aerial Phenomena in Canada\", by the Office of the Chief Science Advisor of Canada, headed by Mona Nemer, as part of the Sky Canada Project launched in 2022; a preview version appeared in January 2025 and the full report in mid-2025. It finds that the country receives between 600 and 1,000 reports a year and that since 1995 no federal body has had the mandate to collect them, so they are scattered among the RCMP, Transport Canada and the Canadian Space Agency. It recommends a single national lead, suggesting the Space Agency. It is a governance diagnosis with non-binding recommendations: it does not investigate sightings or rule on their nature."
       }
     ]
   },
@@ -4862,6 +5633,29 @@
         "name": "The Japan Times — Defense Minister Taro Kono on UFO protocols (2020)",
         "note": "Cobertura del contexto (videos FLIR de la Marina de EE.UU.) y del escepticismo declarado de Kono.",
         "note_en": "Coverage of the context (U.S. Navy FLIR videos) and Kono's declared skepticism."
+      },
+      {
+        "name": "Ministry of Defense (Japan) — UAP reporting protocol announcement (Sept 2020)",
+        "url": "https://www.mod.go.jp/en/",
+        "note": "Comunicado oficial 2020",
+        "note_en": "Official statement 2020"
+      },
+      {
+        "name": "Dieta de Japón — respuesta del Estado Mayor Conjunto sobre la directiva de 2020 (23 mar 2023)",
+        "name_en": "National Diet of Japan — Joint Staff answer on the 2020 directive (23 Mar 2023)",
+        "url": "https://kokkai.ndl.go.jp/txt/121103815X00320230323/110",
+        "note": "Desde la directiva ministerial de septiembre de 2020 no se ha confirmado ningún objeto de ese tipo.",
+        "note_en": "Since the ministerial directive of September 2020 no such object has been confirmed."
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.mod.go.jp/en/",
+        "type": "link",
+        "title": "Protocolo UAP del Ministerio de Defensa · Japón",
+        "title_en": "MoD UAP Reporting Protocol · Japan",
+        "description": "El 14 de septiembre de 2020, el Ministerio de Defensa de Japón, bajo el ministro Taro Kono, fijó un procedimiento para que las Fuerzas de Autodefensa, y en particular la Fuerza Aérea, registren y fotografíen cualquier objeto aéreo no identificable, documenten las circunstancias de la observación y lo reporten por la cadena de mando. Llegó meses después de que el Pentágono publicara en abril los tres videos de la Marina, y el Gobierno lo presentó como alineamiento con la práctica estadounidense y como defensa del espacio aéreo. Kono se declaró escéptico y dijo no haber recibido nunca un reporte de pilotos. Según una respuesta oficial ante la Dieta de marzo de 2023, desde la directiva no se ha confirmado ningún objeto de ese tipo.",
+        "description_en": "On September 14, 2020, Japan's Ministry of Defense, under Minister Taro Kono, set a procedure for the Self-Defense Forces, and the Air Self-Defense Force in particular, to record and photograph any unidentifiable aerial object, document the circumstances of the observation and report it up the chain of command. It came months after the Pentagon released the three Navy videos in April, and the government presented it as alignment with U.S. practice and as a matter of airspace defense. Kono described himself as skeptical and said he had never received a report from pilots. According to an official answer before the Diet in March 2023, no such object has been confirmed since the directive."
       }
     ]
   }

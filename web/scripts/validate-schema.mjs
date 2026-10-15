@@ -166,10 +166,14 @@ function validateDocEmbeds(w, docs) {
         const dw = `${w}.documents[${j}]`;
         const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
         if (!isStr(d.src)) err(dw, "src obligatorio (string)");
-        else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids)
+        else if (d.type === "link") {
+          // Tarjeta sin visor: el src es el original, fuera del sitio.
+          if (!isHttpUrl(d.src)) err(dw, `type "link" exige src http(s): "${d.src}"`);
+          if (!isStr(d.description)) err(dw, `type "link" exige description (es lo único que muestra)`);
+        } else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids)
           err(dw, `src debe ser same-origin (/pursue/), el bucket Supabase pursue, o el player de DVIDS (war.gov no se puede embeber): "${d.src}"`);
-        if (!["pdf", "image", "video"].includes(d.type))
-          err(dw, `type inválido "${d.type}" (pdf|image|video)`);
+        if (!["pdf", "image", "video", "link"].includes(d.type))
+          err(dw, `type inválido "${d.type}" (pdf|image|video|link)`);
         // El origen DVIDS es exclusivo de "video", y "video" es exclusivo de
         // DVIDS: sin este cruce, un PDF podría apuntar al player (iframe roto)
         // o un "video" a /pursue (binario que no cabe, justo lo que evitamos).

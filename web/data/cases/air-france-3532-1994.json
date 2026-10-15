@@ -68,6 +68,12 @@
       "name": "Maillot, É. — «OVNI : Quand des scientifiques trompent le public» (dossier VSD), Cercle Zététique (original en francés)",
       "name_en": "Maillot, É. — «OVNI : Quand des scientifiques trompent le public» (VSD dossier), Cercle Zététique (in French)",
       "url": "http://zetetique.ldh.org/vsd_st.html"
+    },
+    {
+      "name": "Informe COMETA 'Les OVNI et la Défense' (1999) — texto",
+      "url": "https://www.cufos.org/cometa/COMETA_part1.pdf",
+      "note": "Documento primario (traducción/archivo).",
+      "note_en": "Primary document (translation/archive)."
     }
   ],
   "posterior": {
@@ -87,6 +93,17 @@
       "source": "Lufthansa Airbus A320-211 D-AIQT 01.jpg · Wikimedia Commons",
       "license": "CC BY 4.0",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALufthansa%20Airbus%20A320-211%20D-AIQT%2001.jpg"
+    },
+    {
+      "src": "/pursue/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
+      "type": "pdf",
+      "title": "«UFO's and Defense: What Should We Prepare For» — informe COMETA (1999) + carta de Carol Rosin",
+      "title_en": "'UFO's and Defense: What Should We Prepare For' — COMETA report (1999) + Carol Rosin letter",
+      "source": "NASA (PURSUE Release 01)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
+      "description": "«Les OVNI et la Défense: à quoi doit-on se préparer?» es el informe de unas 90 páginas que publicó en julio de 1999 COMETA, un comité privado de generales y oficiales franceses retirados y expertos aeroespaciales, presidido por el general Denis Letty y con varios antiguos auditores del IHEDN. Revisó casos con radar, intercepciones y testigos calificados, entre ellos los de Air France 3532 y Bariloche, y concluyó que para un residuo de alrededor del 5 % la hipótesis extraterrestre era la más racional. No es un documento del gobierno francés ni del Ministerio de Defensa, y su conclusión es un argumento por descarte sobre casos ya conocidos, no evidencia nueva. La copia que se embebe aquí incluye una carta de Carol Rosin.",
+      "description_en": "'Les OVNI et la Défense: à quoi doit-on se préparer?' is the roughly 90-page report published in July 1999 by COMETA, a private committee of retired French generals and senior officers and aerospace experts, chaired by General Denis Letty and including several former IHEDN auditors. It reviewed cases with radar, interceptions and qualified witnesses, among them Air France 3532 and Bariloche, and concluded that for a residue of about 5% the extraterrestrial hypothesis was the most rational. It is not a document of the French government or the Ministry of Defence, and its conclusion is an argument by elimination over already known cases, not new evidence. The copy embedded here includes a letter from Carol Rosin."
     }
   ],
   "misidSubtype": "aeronave",
