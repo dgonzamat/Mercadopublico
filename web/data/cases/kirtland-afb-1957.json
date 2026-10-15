@@ -75,6 +75,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/kirtland-afb-1957-blue-book-index.pdf",
+      "type": "pdf",
+      "title": "Índice de Project Blue Book · avistamientos del 1 al 4 de noviembre de 1957",
+      "title_en": "Project Blue Book index · sightings of 1–4 November 1957",
+      "description": "Página del índice de casos de Project Blue Book (copia no censurada) que lista los avistamientos del 1 al 4 de noviembre de 1957. La última línea del día 4 corresponde a este caso: «Kirtland AFB, New Mexico», observadores «Brink, Greer, Kaser (RADAR)», evaluación «Aircraft». Una anotación a mano junto al lugar dice «case missing»: el expediente no estaba en la carpeta cuando se microfilmó el archivo, lo que explica que no figure entre los expedientes digitalizados. La misma página lista otro informe militar en Kirtland ese día (observador Moreno), evaluado como meteoro.",
+      "description_en": "Page of the Project Blue Book case index (unredacted copy) listing the sightings of 1–4 November 1957. The last entry for the 4th is this case: 'Kirtland AFB, New Mexico', observers 'Brink, Greer, Kaser (RADAR)', evaluation 'Aircraft'. A handwritten note beside the location reads 'case missing': the file was not in its folder when the archive was microfilmed, which is why it is absent from the digitized case files. The same page lists a second military report at Kirtland that day (observer Moreno), evaluated as a meteor.",
+      "source": "Project Blue Book Indexes, 1947-1969 · índice de 1957, p. 16 (NARA, espejo en archive.org)",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://archive.org/details/ProjectBlueBookIndexes"
+    },
+    {
       "src": "/pursue/kirtland-afb-1957-context.jpg",
       "type": "image",
       "title": "Contexto · la Base Aérea de Kirtland (Nuevo México)",

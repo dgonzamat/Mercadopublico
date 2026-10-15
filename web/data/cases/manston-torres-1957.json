@@ -82,6 +82,26 @@
   },
   "documents": [
     {
+      "src": "/pursue/manston-torres-1957-defe24-1931.pdf",
+      "type": "pdf",
+      "title": "Expediente DEFE 24/1931: memorandos de Sec(AS)2a del 22 de julio y del 18 de noviembre de 1988 sobre el incidente de 1957",
+      "title_en": "File DEFE 24/1931: Sec(AS)2a memoranda of 22 July and 18 November 1988 on the 1957 incident",
+      "description": "Tres páginas del expediente DEFE 24/1931 del Ministerio de Defensa. Dos memorandos manuscritos de Sec(AS)2a del 22 de julio de 1988 remiten el relato de «un incidente inusual de 1957» y piden a la Air Historical Branch que busque si hay registro de él, «un ovni o un experimento de la RAF». El memorando de traspaso del 18 de noviembre recoge la consulta del Daily Express sobre dos cazas de la USAF de Manston armados y con orden de disparar el 20 de mayo de 1957; una nota a mano anota que la Air Historical Branch confirmó que Manston estaba bajo control de la USAF de diciembre de 1956 a mayo de 1958, que sus registros de salidas los guarda la USAF y que ni el PRO ni la AHB tienen nada.",
+      "description_en": "Three pages from the Ministry of Defence file DEFE 24/1931. Two handwritten Sec(AS)2a memoranda of 22 July 1988 forward an account of 'an unusual incident from 1957' and ask the Air Historical Branch to check whether it holds any record of it, 'either a UFO or RAF experimentation'. The handover memorandum of 18 November records the Daily Express's query about two USAF jets from Manston armed and ordered to fire on 20 May 1957; a handwritten note records that the Air Historical Branch confirmed Manston was under USAF control from December 1956 to May 1958, that its sortie records are held by the USAF, and that nothing is held by the PRO or the AHB.",
+      "source": "The National Archives (Reino Unido), DEFE 24/1931, págs. 255-256 y 65 del PDF; copia digital en archive.org (BritishUFOFiles)",
+      "license": "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)",
+      "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11483076"
+    },
+    {
+      "src": "https://archive.org/details/BritishUFOFiles/defe-24-1931.pdf/page/n258/mode/1up",
+      "type": "link",
+      "title": "Carta del abogado al Ministerio de Defensa (20 de julio de 1988) y relato mecanografiado de Milton Torres, en DEFE 24/1931",
+      "title_en": "Solicitor's letter to the Ministry of Defence (20 July 1988) and Milton Torres's typed account, in DEFE 24/1931",
+      "description": "Páginas 259 a 262 del expediente DEFE 24/1931 en la copia de archive.org. La carta del abogado, fechada el 20 de julio de 1988 y titulada «Radar Blip», remite el relato de un antiguo piloto estadounidense y pregunta si un «blip» falso por mal tiempo o un experimento de «guerra electrónica» explicarían el episodio, y si la tecnología para crear esas ilusiones de radar existía en 1957. El relato mecanografiado del piloto narra el despegue de dos F-86D en alerta en Manston el 20 de mayo de 1957 y la persecución de un eco que, según él, se le escapó del alcance de 30 millas. Son documentos de particulares archivados por el ministerio, no obra de la Corona.",
+      "description_en": "Pages 259 to 262 of file DEFE 24/1931 in the archive.org copy. The solicitor's letter, dated 20 July 1988 and headed 'Radar Blip', forwards a former American pilot's account and asks whether a 'bogus' blip caused by weather or an 'electronic warfare' experiment would explain the episode, and whether the technology to create such radar illusions existed in 1957. The pilot's typed account describes the scramble of two F-86Ds on alert at Manston on 20 May 1957 and the chase of a return that, he says, left his 30-mile range. They are private documents filed by the ministry, not Crown works.",
+      "source": "The National Archives (Reino Unido), DEFE 24/1931; copia digital en archive.org (BritishUFOFiles)"
+    },
+    {
       "src": "/pursue/manston-torres-1957-context.jpg",
       "type": "image",
       "title": "Contexto · RAF Manston (Kent, Inglaterra), base del interceptor con orden de disparar",
