@@ -39,6 +39,15 @@
       "source": "CIA · Department of War (PURSUE Release 02)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf"
+    },
+    {
+      "src": "/pursue/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-011 — el campo de pruebas de armas de Sary Shagan",
+      "title_en": "CIA-UAP-011 — the Sary Shagan weapons testing range",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf"
     }
   ],
   "patterns": [

@@ -97,6 +97,20 @@
       "url": "https://www.nicap.org/bb/BB_Unknowns.pdf",
       "note": "Fuente secundaria: catálogo de un investigador, entradas 29, 33 y 34",
       "note_en": "Secondary source: a researcher's catalog, entries 29, 33 and 34"
+    },
+    {
+      "name": "NARA — guía del Record Group 38, Records of the Office of the Chief of Naval Operations",
+      "name_en": "NARA — guide to Record Group 38, Records of the Office of the Chief of Naval Operations",
+      "url": "https://www.archives.gov/research/guide-fed-records/groups/038.html",
+      "note": "Descripción oficial del fondo y de sus series de la ONI",
+      "note_en": "Official description of the holdings and its ONI series"
+    },
+    {
+      "name": "Air Intelligence Report 100-203-79, «Analysis of Flying Object Incidents in the U.S.» (10 de diciembre de 1948), escaneo en archive.org",
+      "name_en": "Air Intelligence Report 100-203-79, 'Analysis of Flying Object Incidents in the U.S.' (December 10, 1948), scan on archive.org",
+      "url": "https://archive.org/details/air-intelligence-report-100-203-79-analysis-of-flying-object-incidents-in-the-u.-s.",
+      "note": "Fuente primaria firmada por la Fuerza Aérea y la ONI; el usuario que lo subió lo rotula como documento de «Majestic 12», pero es el informe auténtico de 1948",
+      "note_en": "Primary source signed by the Air Force and ONI; the uploader labels it a 'Majestic 12' document, but it is the authentic 1948 report"
     }
   ],
   "classBasis": {
@@ -116,6 +130,17 @@
       "source": "US Air Force · Project Grudge (NARA), vía archive.org",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://archive.org/details/project-grudge-august-1949-part-8"
+    },
+    {
+      "src": "/pursue/nara-rg38-1947-context.jpg",
+      "type": "image",
+      "title": "Contexto · Rogers Dry Lake (Muroc / Edwards, California), citado en los reportes de 1947",
+      "title_en": "Context · Rogers Dry Lake (Muroc / Edwards, California), cited in the 1947 reports",
+      "source": "Edwards Air Force Base - Rogers Dry Lake CA 2006.jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AEdwards%20Air%20Force%20Base%20-%20Rogers%20Dry%20Lake%20CA%202006.jpg",
+      "description": "El Record Group 38 de los Archivos Nacionales de Estados Unidos reúne los registros de la Oficina del Jefe de Operaciones Navales, con los de la Oficina de Inteligencia Naval (ONI) en su apartado 38.4. La lista de la NARA de fondos con registros OVNI no lo incluye, y no se ha localizado en él ninguna serie con resúmenes de los avistamientos de 1947. Los de Muroc del 8 de julio de 1947 se tramitaron por otro canal: declaraciones juradas recogidas por el CIC y enviadas a la sección A-2 de la Cuarta Fuerza Aérea, cuyo informe del 18 de agosto no previó más investigación. La participación naval sí consta en el informe AIR 100-203-79, que la ONI firmó con la inteligencia de la Fuerza Aérea en diciembre de 1948.",
+      "description_en": "Record Group 38 of the U.S. National Archives holds the records of the Office of the Chief of Naval Operations, with those of the Office of Naval Intelligence (ONI) in section 38.4. NARA's list of record groups holding UFO records does not include it, and no series with summaries of the 1947 sightings has been located in it. The Muroc sightings of July 8, 1947 went through another channel: sworn statements taken by the CIC and sent to the A-2 section of the Fourth Air Force, whose August 18 report foresaw no further investigation. Naval involvement is documented in report AIR 100-203-79, which ONI signed with Air Force intelligence in December 1948."
     }
   ]
 }

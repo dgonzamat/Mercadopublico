@@ -75,6 +75,12 @@
       "url": "https://www.yahoo.com/news/science/articles/pentagon-ufo-hunter-reveals-himself-160723870.html",
       "note": "Cita el pasaje de las memorias de Stratton sobre Roswell, atribuido a una fuente sin nombre.",
       "note_en": "Quotes the passage of Stratton's memoir on Roswell, attributed to an unnamed source."
+    },
+    {
+      "name": "FBI Records: The Vault — Majestic 12",
+      "url": "https://vault.fbi.gov/Majestic%2012",
+      "note": "Expediente del FBI con el veredicto 'bogus' de la AFOSI sobre los documentos MJ-12.",
+      "note_en": "FBI file with the AFOSI's 'bogus' verdict on the MJ-12 documents."
     }
   ],
   "posterior": {
@@ -103,5 +109,18 @@
     "source": "GAO/NSIAD-95-187, Government Records: Results of a Search for Records Concerning the 1947 Crash Near Roswell (1995)",
     "source_en": "GAO/NSIAD-95-187, Government Records: Results of a Search for Records Concerning the 1947 Crash Near Roswell (1995)",
     "url": "https://archive.org/details/roswell-rapporto-gao"
-  }
+  },
+  "documents": [
+    {
+      "src": "/pursue/majestic-12-documents-context.jpg",
+      "type": "image",
+      "title": "Uno de los documentos Majestic-12 en circulación, investigados por el FBI",
+      "title_en": "One of the circulating Majestic-12 documents, investigated by the FBI",
+      "source": "Majestic 12 Part 1 of 1 (page 4 crop).jpg · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMajestic%2012%20Part%201%20of%201%20(page%204%20crop).jpg",
+      "description": "Los documentos «Operation Majestic-12» aparecieron entre 1984 y 1987: un rollo de película anónimo recibido por Jaime Shandera en diciembre de 1984, difundido después por él, William Moore y Stanton Friedman. Describen un comité secreto de doce altos funcionarios creado por Truman en 1947 para gestionar ovnis estrellados y cuerpos recuperados, en relación con Roswell. En 1988 dos oficinas del FBI recibieron copias y la AFOSI respondió que eran «completamente falsos» (bogus), veredicto que consta en el expediente de The Vault. Examinadores hallaron una firma de Truman calcada de una carta de 1947, formatos de fecha anacrónicos y membrete inconsistente. No prueban ni el comité ni los ovnis; su origen exacto sigue sin esclarecer.",
+      "description_en": "The 'Operation Majestic-12' documents surfaced between 1984 and 1987: an anonymous roll of film received by Jaime Shandera in December 1984, later circulated by him, William Moore and Stanton Friedman. They describe a secret committee of twelve senior officials created by Truman in 1947 to manage crashed UFOs and recovered bodies, in connection with Roswell. In 1988 two FBI offices received copies and the AFOSI replied that they were 'completely bogus', a verdict recorded in the FBI's Vault file. Examiners found a Truman signature traced from a 1947 letter, anachronistic date formats and inconsistent letterhead. They prove neither the committee nor the UFOs; their exact origin remains unclear."
+    }
+  ]
 }

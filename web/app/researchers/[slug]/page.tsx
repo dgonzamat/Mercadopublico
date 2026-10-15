@@ -14,6 +14,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { Eyebrow, H1, Body, Caption } from "@/lib/typography";
+import { DocumentsViewer } from "@/components/DocumentsViewer";
 import { licenseLabel } from "@/lib/license";
 
 export function generateStaticParams() {
@@ -164,6 +165,12 @@ export async function ResearcherDetailPage({
           </Body>
         )}
       </section>
+
+      {r.documents && r.documents.length > 0 && (
+        <section className="border-t border-border pt-10">
+          <DocumentsViewer docs={r.documents} locale={locale} />
+        </section>
+      )}
 
       {/* Zone C — Apparatus: works as timeline */}
       {r.works.length > 0 && (

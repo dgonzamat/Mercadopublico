@@ -1,7 +1,9 @@
 {
   "id": "gemini7-borman-1965",
   "num": 233,
-  "pursueReleases": [1],
+  "pursueReleases": [
+    1
+  ],
   "name": "Gemini 7 · Borman & Lovell",
   "name_en": "Gemini 7 · Borman & Lovell",
   "year_start": 1965,
@@ -30,6 +32,17 @@
       "source": "NASA · Department of War (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/255_t_763_r1b_transcripts.pdf"
+    },
+    {
+      "src": "/pursue/NASA-UAP-D021_Gemini-7-Technical-Debriefing_1965.pdf",
+      "type": "pdf",
+      "title": "NASA-UAP-D021 — Gemini 7, debriefing técnico (1965)",
+      "title_en": "NASA-UAP-D021 — Gemini 7, technical debriefing (1965)",
+      "source": "NASA (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D021_Gemini-7-Technical-Debriefing_1965.pdf",
+      "description": "Ocho documentos de la NASA publicados en la tercera entrega de PURSUE, el 12 de junio de 2026: los debriefings de tripulación y técnicos de las misiones Gemini 4, 5, 7 y 9 (1965-1966) y los Astronaut Scientific Debriefings de la era Mercury (1962-1963). Son la fuente primaria del objeto cilíndrico que James McDivitt describió y fotografió en Gemini 4, del «bogey» y las «luciérnagas» que Frank Borman y Jim Lovell reportaron en Gemini 7, y del reporte de «luciérnagas» de John Glenn. La mayor parte es material técnico rutinario. La NASA atribuyó el bogey a la etapa propulsora Titan y las luciérnagas a hielo y desechos desprendidos de la nave; el objeto de McDivitt nunca se identificó con seguridad.",
+      "description_en": "Eight NASA documents published in the third PURSUE release on June 12, 2026: the crew and technical debriefings of the Gemini 4, 5, 7 and 9 missions (1965-1966) and the Mercury-era Astronaut Scientific Debriefings (1962-1963). They are the primary source for the cylindrical object James McDivitt described and photographed on Gemini 4, the 'bogey' and 'fireflies' Frank Borman and Jim Lovell reported on Gemini 7, and John Glenn's 'fireflies' report. Most of the material is routine technical debriefing. NASA attributed the bogey to the Titan booster stage and the fireflies to ice and debris shed by the spacecraft; McDivitt's object was never securely identified."
     }
   ],
   "patterns": [],

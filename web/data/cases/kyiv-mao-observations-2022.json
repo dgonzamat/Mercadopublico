@@ -107,5 +107,18 @@
     "source_en": "Live Science (Brandon Specktor), 15 Oct 2022; Metabunk (Mick West), 26 Aug and 5 Oct 2022",
     "url": "https://www.livescience.com/ukraine-uap-report-debunked"
   },
-  "evidenceReviewed": "2026-10-12"
+  "evidenceReviewed": "2026-10-12",
+  "documents": [
+    {
+      "src": "/pursue/ukraine-mao-uap-2022-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kyiv (Ucrania), sede del Observatorio Astronómico Principal (NASU)",
+      "title_en": "Context · Kyiv (Ukraine), seat of the Main Astronomical Observatory (NASU)",
+      "source": "Voskresenka, Kyiv, Kyiv city, Ukraine - panoramio.jpg · Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AVoskresenka%2C%20Kyiv%2C%20Kyiv%20city%2C%20Ukraine%20-%20panoramio.jpg",
+      "description": "Dos memorias publicadas en arXiv en 2022 por B. E. Zhilyaev, V. N. Petukhov y V. M. Reshetnyk, del Observatorio Astronómico Principal de la Academia Nacional de Ciencias de Ucrania, con observaciones diurnas sobre Kyiv hechas entre 2018 y octubre de 2022 con dos estaciones de meteoros separadas unos 120 km. Proponen dos clases de objetos, «Cosmics» luminosos y «Phantoms» oscuros, y atribuyen a estos últimos velocidades de hasta 15 km/s. Tras un seminario del 15 de septiembre de 2022, el Consejo Científico del propio observatorio declaró prematura la publicación y halló errores significativos en la estimación de distancias; Avi Loeb y Mick West señalaron que, más cerca de la cámara, los objetos encajan con proyectiles o insectos. Documentan el estudio y su corrección, no una anomalía.",
+      "description_en": "Two papers posted to arXiv in 2022 by B. E. Zhilyaev, V. N. Petukhov and V. M. Reshetnyk of the Main Astronomical Observatory of the National Academy of Sciences of Ukraine, with daytime observations over Kyiv made between 2018 and October 2022 from two meteor stations about 120 km apart. They propose two classes of objects, luminous \"Cosmics\" and dark \"Phantoms\", and attribute speeds of up to 15 km/s to the latter. After a seminar on 15 September 2022, the observatory's own Scientific Council declared the publication premature and found significant errors in the distance estimates; Avi Loeb and Mick West noted that, closer to the camera, the objects fit artillery shells or insects. They document the study and its correction, not an anomaly."
+    }
+  ]
 }

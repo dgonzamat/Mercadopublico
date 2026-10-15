@@ -57,6 +57,17 @@
       "source": "DoD vía DVIDS · Video ID 885193",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.dvidshub.net/video/885193"
+    },
+    {
+      "src": "/pursue/NASA-UAP-Independent-Study-Team-Final-Report-2023.pdf",
+      "type": "pdf",
+      "title": "NASA · Unidentified Anomalous Phenomena — Independent Study Team Report (sep 2023)",
+      "title_en": "NASA · Unidentified Anomalous Phenomena — Independent Study Team Report (Sep 2023)",
+      "source": "NASA · Independent Study Team",
+      "license": "Dominio público · NASA, obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://smd-cms.nasa.gov/wp-content/uploads/2023/09/uap-independent-study-team-final-report.pdf",
+      "description": "Informe final, de 33 páginas, del equipo de estudio independiente sobre UAP que la NASA convocó en 2022: dieciséis científicos y expertos presididos por el astrofísico David Spergel, que trabajaron solo con datos no clasificados y celebraron reuniones públicas, la primera en mayo de 2023, donde se discutieron los más de 800 casos reunidos por la AARO. Publicado el 14 de septiembre de 2023, no halla evidencia de un origen extraterrestre, pero tampoco ofrece explicaciones concluyentes para los casos mejor documentados, y atribuye el problema a datos escasos, dispersos y sin calibrar. Recomienda usar los satélites de la NASA, reducir el estigma del reporte y aplicar aprendizaje automático. Es un documento de método, y su conclusión depende de la mala calidad de los datos disponibles.",
+      "description_en": "Final 33-page report of the independent study team on UAP that NASA convened in 2022: sixteen scientists and experts chaired by astrophysicist David Spergel, who worked only with unclassified data and held public meetings, the first in May 2023, where the more than 800 cases gathered by AARO were discussed. Published on 14 September 2023, it finds no evidence of an extraterrestrial origin but offers no conclusive explanations for the best-documented cases either, and attributes the problem to sparse, scattered, uncalibrated data. It recommends using NASA's satellites, reducing the stigma of reporting and applying machine learning. It is a methodological document, and its conclusion is conditioned on the poor quality of the available data."
     }
   ],
   "whatHappened": "En algún momento de 2021, la fecha exacta no se publicó, un sensor de video infrarrojo que grababa desde un campo de tiro militar en el oeste de Estados Unidos (la ubicación exacta tampoco se reveló) registró tres objetos no identificados dentro de su campo de visión. No se sabe cuándo quedó resuelto el caso: se conoció el 31 de mayo de 2023, cuando el director de la Oficina de Resolución de Anomalías de Todos los Dominios (AARO), el Dr. Sean Kirkpatrick, lo presentó en una reunión abierta del Equipo de Estudio Independiente sobre Fenómenos Anómalos No Identificados de la NASA.\n\nA diferencia de la mayoría de los casos que Kirkpatrick mostró en sus apariciones públicas de 2023, este llegó acompañado de una resolución completa en la misma presentación. Según la descripción oficial publicada junto al video, la AARO analizó el metraje de movimiento completo y lo cruzó con datos de tráfico aéreo comercial de la región. La conclusión está redactada como una evaluación de la AARO y no como una certeza demostrada en público: los objetos eran tres aeronaves comerciales distintas que volaban a gran distancia del sensor, y las trazas de radar de esos vuelos «se alineaban» con los tres objetos del video infrarrojo. A la distancia a la que el sensor los captó, los aviones no eran reconocibles como tales — se veían únicamente como pequeños puntos de calor, sin forma, ala ni fuselaje discernible, precisamente el tipo de imagen ambigua que en un expediente sin ese cruce de datos habría quedado catalogada, sin más, como 'UAP no identificados'.\n\nEl material se liberó en dos versiones: una grabación de ocho minutos y veintinueve segundos con el metraje de sensor más extenso, y una versión abreviada de tres minutos y cincuenta y un segundos que parece un montaje recortado del mismo metraje. Ninguna de las dos lleva narración ni texto superpuesto (la pista de audio de ambas es muda), así que la explicación de Kirkpatrick no está en el video: está solo en la descripción que la acompaña en DVIDS. Revisado fotograma a fotograma, el video largo muestra sobre todo cielo gris y, más adelante, cúmulos, con la retícula del sensor en el centro; los tres objetos se ven desde el inicio como tres puntos tenues, y hacia el minuto cuatro pasan a verse durante unos cuarenta segundos como tres trazos cortos, casi paralelos y con la misma inclinación, espaciados a lo ancho del encuadre, sin forma ni detalle alguno. Esa disposición (tres puntos con la misma orientación, a la manera de aviones que siguen una misma aerovía) es compatible con la explicación oficial, aunque por sí sola no la demuestra. Ambas versiones fueron publicadas por el Departamento de Defensa a través de DVIDS como obra de dominio público; el caso no forma parte de las entregas de PURSUE de 2026.",
@@ -97,6 +108,12 @@
       "url": "https://www.dvidshub.net/video/885193",
       "note": "Fuente primaria: misma descripción oficial que la versión larga; montaje recortado del mismo metraje, sin narración.",
       "note_en": "Primary source: same official description as the long version; a trimmed cut of the same footage, without narration."
+    },
+    {
+      "name": "NASA — UAP Independent Study Team Report (14 sep 2023)",
+      "url": "https://science.nasa.gov/uap/",
+      "note": "Informe oficial de NASA.",
+      "note_en": "Official NASA report."
     }
   ],
   "evidenceReviewed": "2026-09-28"

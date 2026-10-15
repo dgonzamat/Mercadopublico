@@ -109,6 +109,15 @@
       "url": "https://ottawarewind.com/2013/12/17/close-encounters-of-the-ottawa-kind/",
       "note": "Fuente secundaria: fotografías de la caseta y de Smith; repite que el cierre llegó dos días después, lo que la prensa de la época contradice.",
       "note_en": "Secondary source: photographs of the hut and of Smith; repeats that the closure came two days later, which period press contradicts."
+    },
+    {
+      "name": "DoW/USAF — «Joint US-Canadian Aviation Projects and UFO Sighting Reports» (1954–1955)",
+      "note": "Correspondencia y reportes conjuntos EE.UU.–Canadá del período de Project Magnet / Second Storey. AARO UAP Records, release 04 (DOWUAPD095).",
+      "note_en": "Joint U.S.–Canada correspondence and reports from the Project Magnet / Second Storey period. AARO UAP Records, release 04 (DOWUAPD095)."
+    },
+    {
+      "name": "Library and Archives Canada — Wilbert Smith / Project Magnet records (Department of Transport)",
+      "url": "https://mysteriesofcanada.com/canada/wilbert-smith/"
     }
   ],
   "classBasis": {
@@ -118,5 +127,15 @@
     "source_en": "Ottawa Journal, \"Saucer Station Shut At Shirley Bay\" (1954), in CIA file CIA-RDP81R00560R000100080032-9 · Smith, \"The Day Project Magnet Detected a Flying Saucer\"",
     "url": "https://archive.org/details/cia-readingroom-document-cia-rdp81r00560r000100080032-9"
   },
-  "evidenceReviewed": "2026-10-12"
+  "evidenceReviewed": "2026-10-12",
+  "documents": [
+    {
+      "src": "https://mysteriesofcanada.com/canada/wilbert-smith/",
+      "type": "link",
+      "title": "Project Magnet / Second Storey · programas UFO del gobierno (Canadá)",
+      "title_en": "Project Magnet / Second Storey · government UFO programs (Canada)",
+      "description": "Project Magnet fue el programa de estudio de ovnis aprobado por Transport Canada el 2 de diciembre de 1950 y dirigido por el ingeniero de radio Wilbert B. Smith, que montó una estación de instrumentos en Shirleys Bay, cerca de Ottawa, para detectar perturbaciones asociadas al fenómeno; estuvo activo formalmente hasta 1954. En abril de 1952 el gobierno creó además Project Second Storey, un comité del Defence Research Board que evaluó los reportes y los consideró poco fiables. Las conclusiones de Smith sobre un origen extraterrestre y una propulsión magnética fueron interpretación personal, no postura oficial: su departamento y el comité no las respaldaron. Del período se conserva correspondencia conjunta EE.UU.–Canadá publicada en la cuarta entrega de PURSUE (DOWUAPD095).",
+      "description_en": "Project Magnet was the UFO study program approved by Transport Canada on 2 December 1950 and directed by radio engineer Wilbert B. Smith, who set up an instrument station at Shirleys Bay, near Ottawa, to detect disturbances associated with the phenomenon; it was formally active until 1954. In April 1952 the government also created Project Second Storey, a Defence Research Board committee that assessed the reports and judged them unreliable. Smith's conclusions about an extraterrestrial origin and magnetic propulsion were his personal interpretation, not official policy: neither his department nor the committee endorsed them. Joint U.S.–Canada correspondence from the period was published in the fourth PURSUE release (DOWUAPD095)."
+    }
+  ]
 }

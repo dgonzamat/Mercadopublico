@@ -180,8 +180,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </p>
               <p className="text-sm text-muted">
                 <T
-                  es="Los documentos no tienen testigos ni sensores: su tier mide si son auténticos y están completos. S, documento oficial publicado o desclasificado por quien lo emitió o por un archivo público, e íntegro. A, oficial pero incompleto o muy tachado; testimonio jurado; estudio revisado por pares; filtración de autenticidad verificada; o prensa cuyo contenido confirmó después la fuente oficial. B, filtración sin autenticar, procedencia dudosa o prensa sin confirmar."
-                  en="Documents have no witnesses or sensors: their tier measures whether they are authentic and complete. S, an official document published or declassified by its issuer or by a public archive, and intact. A, official but incomplete or heavily redacted; sworn testimony; a peer-reviewed study; a leak whose authenticity has been verified; or press reporting later confirmed by the official source. B, an unauthenticated leak, doubtful provenance or unconfirmed press reporting."
+                  es="Los documentos no tienen ficha ni tier propios: cada uno aparece en el caso o el perfil de actor que respalda, con un párrafo que dice qué es, quién lo emitió y qué prueba."
+                  en="Documents have no entry or tier of their own: each one appears on the case or actor profile it supports, with a paragraph on what it is, who issued it and what it proves."
                   locale={locale}
                 />
               </p>
@@ -317,8 +317,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </Body>
               <Body className="text-muted">
                 <T
-                  es="Las probabilidades de cada caso son juicios estructurados, no frecuencias medidas: que se puedan comparar no las hace ciertas. Dicen qué explicación encaja mejor con lo que se sabe de cada caso, no cuál es la correcta. Hay dos formas de sumar los casos, y las dos dejan fuera los documentos, que son evidencia de los casos y no casos. Una suma las probabilidades de cada explicación: da el número esperado de casos por explicación y reparte lo indeterminado en fracciones. La otra cuenta cada caso una vez, en su explicación más probable, con «Indeterminado» como categoría propia: es la que usan la portada, /probabilidades y el filtro de /cases. Las dos dan cifras algo distintas porque miden cosas distintas, no porque se contradigan."
-                  en="Each case's probabilities are structured judgments, not measured frequencies: being comparable does not make them true. They say which explanation fits best with what is known about each case, not which one is correct. There are two ways to add up the cases, and both leave out the documents, which are evidence for the cases and not cases. One adds the probabilities of each explanation: it gives the expected number of cases per explanation and spreads the indeterminate share in fractions. The other counts each case once, under its most likely explanation, with 'Indeterminate' as its own category: that is what the home page, /probabilidades and the /cases filter use. The two give slightly different figures because they measure different things, not because they contradict each other."
+                  es="Las probabilidades de cada caso son juicios estructurados, no frecuencias medidas: que se puedan comparar no las hace ciertas. Dicen qué explicación encaja mejor con lo que se sabe de cada caso, no cuál es la correcta. Hay dos formas de sumar los casos. Una suma las probabilidades de cada explicación: da el número esperado de casos por explicación y reparte lo indeterminado en fracciones. La otra cuenta cada caso una vez, en su explicación más probable, con «Indeterminado» como categoría propia: es la que usan la portada, /probabilidades y el filtro de /cases. Las dos dan cifras algo distintas porque miden cosas distintas, no porque se contradigan."
+                  en="Each case's probabilities are structured judgments, not measured frequencies: being comparable does not make them true. They say which explanation fits best with what is known about each case, not which one is correct. There are two ways to add up the cases. One adds the probabilities of each explanation: it gives the expected number of cases per explanation and spreads the indeterminate share in fractions. The other counts each case once, under its most likely explanation, with 'Indeterminate' as its own category: that is what the home page, /probabilidades and the /cases filter use. The two give slightly different figures because they measure different things, not because they contradict each other."
                   locale={locale}
                 />
               </Body>
@@ -423,13 +423,6 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                     locale={locale}
                   />
                 </Body>
-                <Caption>
-                  <T
-                    es="Los documentos (memorandos, audiencias, filtraciones) no tienen un objeto que clasificar: su reparto indica hacia qué explicación apunta su contenido, y no entra en el total."
-                    en="Documents (memos, hearings, leaks) have no object to classify: their split shows which explanation their content points to, and it does not enter the total."
-                    locale={locale}
-                  />
-                </Caption>
               </div>
             </div>
           </details>

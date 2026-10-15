@@ -6,7 +6,6 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { CategoryNav } from "@/components/CategoryNav";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { RegionFilter } from "@/components/RegionFilter";
-import { OfficialAgencies } from "@/components/OfficialAgencies";
 import { ContractorsShowcase } from "@/components/ContractorsShowcase";
 import { regionOf, flagToCountry, type Region } from "@/lib/regions";
 import { searchKey } from "@/lib/searchKey";
@@ -229,10 +228,6 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
         );
       })}
       </RegionFilter>
-
-      <section id="agencias" className="scroll-mt-20 border-t border-border pt-8">
-        <OfficialAgencies locale={locale} />
-      </section>
 
       <section id="contratistas" className="scroll-mt-20 border-t border-border pt-8">
         <ContractorsShowcase locale={locale} />

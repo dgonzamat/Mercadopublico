@@ -83,6 +83,11 @@
       "url": "https://www.project1947.com/kbcat/kbangel.htm",
       "note": "Fuente secundaria: transcribe la declaración de Payne, cita la prensa de la época y anota el tiempo en Meekatharra a las 9 de la mañana.",
       "note_en": "Secondary source: transcribes Payne's statement, cites the press of the day and records the 9 am weather at Meekatharra."
+    },
+    {
+      "name": "Archivo Nacional de Australia — serie A13693, número de control 3092/2/000, código de barras 30030606",
+      "note": "Original en custodia del archivo; su ficha en RecordSearch no fue alcanzable desde aquí, por lo que se cita sin enlace.",
+      "note_en": "Original held by the archive; its RecordSearch entry was not reachable from here, so it is cited without a link."
     }
   ],
   "posterior": {
@@ -93,5 +98,15 @@
     "nohumano_abierto": 0.04,
     "indet": 0.2
   },
-  "evidenceReviewed": "2026-10-12"
+  "evidenceReviewed": "2026-10-12",
+  "documents": [
+    {
+      "src": "https://documents.theblackvault.com/documents/ufos/australia/A13693_3092-2-000_30030606.pdf",
+      "type": "link",
+      "title": "Turner Report · JIO Australia (1971)",
+      "title_en": "Turner Report · JIO Australia (1971)",
+      "description": "El Turner Report es la minuta «Scientific and Intelligence Aspects of the UFO Problem», firmada el 27 de mayo de 1971 por O. H. Turner, jefe del Nuclear Branch de la Joint Intelligence Organisation australiana, dentro de un expediente de la JIO con documentos desde 1957. Sostiene que los ovnis son reales y que la CIA usó el panel Robertson para desacreditarlos, pero Turner dice haber compilado su historia a partir de informes y declaraciones públicas estadounidenses, y el texto contiene errores verificables. Es la tesis de un analista, no una evaluación adoptada: el director de la JIO, R. W. Furlonger, admitió ese mismo día que algunos casos no se explicaban con facilidad, pero pidió no dedicarles recursos significativos. Se conserva en el Archivo Nacional de Australia (A13693, 3092/2/000).",
+      "description_en": "The Turner Report is the minute 'Scientific and Intelligence Aspects of the UFO Problem', signed on May 27, 1971 by O. H. Turner, head of the Nuclear Branch of Australia's Joint Intelligence Organisation, within a JIO file holding documents from 1957 onward. It argues that UFOs are real and that the CIA used the Robertson panel to discredit them, but Turner himself says he compiled his history from published U.S. reports and statements, and the text contains verifiable errors. It is one analyst's thesis, not an adopted assessment: the JIO director, R. W. Furlonger, granted the same day that some cases were not easily explained but asked that no significant JIO resources be devoted to them. It is held by the National Archives of Australia (A13693, 3092/2/000)."
+    }
+  ]
 }
