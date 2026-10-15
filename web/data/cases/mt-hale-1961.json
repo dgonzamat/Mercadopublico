@@ -101,6 +101,17 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "src": "/pursue/mt-hale-1961-raaf-a703.pdf",
+      "type": "pdf",
+      "title": "RAAF, expediente A703 580/1/1 parte 3 (extracto, 3 págs.): télex de Pearce del 7 ago 1961, carta del 18 ago e informe policial de Meekatharra",
+      "title_en": "RAAF, file A703 580/1/1 part 3 (extract, 3 pp.): Pearce telex of 7 Aug 1961, letter of 18 Aug and Meekatharra police report",
+      "description": "Tres páginas del expediente de la RAAF. La primera es el télex prioritario que la base de Pearce envió al Departamento del Aire el 7 de agosto de 1961: doce objetos no identificados que volaban alto en parejas y soltaban una sustancia blanca, vistos por 13 vecinos de Meekatharra, entre ellos Lee-Steere, sin explicación del meteorólogo del gobierno, de Aviación Civil ni de la RAAF. La segunda es la carta del 18 de agosto del comandante de ala A. E. K. Bolleman, con el parecer del astrónomo del Estado. La tercera es el informe del agente A. J. Coyle del 5 de agosto, que fija el rumbo de norte a sur y dice que Payne y Lee-Steere atraparon la sustancia.",
+      "description_en": "Three pages of the RAAF file. The first is the priority telex that RAAF Base Pearce sent to the Department of Air on August 7, 1961: twelve unidentified objects flying high in pairs and dropping a white substance, seen by 13 citizens of Meekatharra, among them Lee-Steere, with no explanation from the government meteorologist, Civil Aviation or the RAAF. The second is the August 18 letter from Wing Commander A. E. K. Bolleman, with the State Government Astronomer's view. The third is Constable A. J. Coyle's report of August 5, which gives the course as north to south and says that Payne and Lee-Steere caught the substance.",
+      "source": "National Archives of Australia, A703 580/1/1 Part 3, págs. 160, 152 y 154 del PDF (espejo de The Black Vault con permiso del NAA); se omiten la declaración del testigo y la carta de un particular",
+      "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
+      "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/A703_580-1-1_Part%203_756666.pdf"
+    },
+    {
       "src": "https://documents.theblackvault.com/documents/ufos/australia/A13693_3092-2-000_30030606.pdf",
       "type": "link",
       "title": "Turner Report · JIO Australia (1971)",

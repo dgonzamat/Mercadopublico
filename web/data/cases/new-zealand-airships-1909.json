@@ -107,5 +107,18 @@
     "source_en": "Bartholomew, R. E. — “The Great Zeppelin Scare of 1909”, NZ Skeptics (1 May 1998)",
     "url": "https://articles.skeptics.nz/1998/05/01/the-great-zeppelin-scare-of-1909/"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "src": "/pursue/new-zealand-airships-1909-context.jpg",
+      "type": "image",
+      "title": "Contexto · Kelso (Otago) desde el aire en 1956, el pueblo sobre cuya escuela se vio la nave del 23 de julio de 1909",
+      "title_en": "Context · Kelso (Otago) from the air in 1956, the township over whose school the July 23, 1909 airship was seen",
+      "description": "Fotografía aérea de Kelso y del valle del Pomahaka con las Blue Mountains al fondo, tomada en noviembre de 1956 por Whites Aviation y conservada en la Alexander Turnbull Library (WA-42614). Es una imagen de contexto, no un registro del suceso.",
+      "description_en": "Aerial photograph of Kelso and the Pomahaka valley with the Blue Mountains behind, taken in November 1956 by Whites Aviation and held by the Alexander Turnbull Library (WA-42614). It is a context image, not a record of the event.",
+      "source": "Kelso, Otago · Whites Aviation, Alexander Turnbull Library, WA-42614 (también en Wikimedia Commons como FL27145622.jp2.jpg)",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://natlib.govt.nz/records/32050997"
+    }
+  ]
 }
