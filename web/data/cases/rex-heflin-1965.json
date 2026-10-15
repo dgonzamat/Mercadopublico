@@ -74,6 +74,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/rex-heflin-1965-blue-book.pdf",
+      "type": "pdf",
+      "title": "Expediente de Project Blue Book · Santa Ana, 3 de agosto de 1965",
+      "title_en": "Project Blue Book file · Santa Ana, 3 August 1965",
+      "description": "Extracto de tres páginas del expediente de Blue Book. La ficha de registro (3 de agosto de 1965, 18:35Z) cierra el caso como «Other (HOAX)»: el análisis de las fotos indica que no representan las condiciones visuales del avistamiento, y los tres Polaroid sitúan el objeto a menos de 50 pies de la cámara, con un tamaño estimado de uno a tres pies. La carta de remisión de la Space Systems Division del 30 de septiembre dice que los Polaroid originales no estaban disponibles. El informe narrativo del capitán Charles F. Reichmuth sitúa el avistamiento hacia las 11:30 PDT en Myford Road y recoge que Heflin intentó usar la radio justo antes de ver el objeto, no durante, y que después funcionó con normalidad.",
+      "description_en": "Three-page extract from the Blue Book file. The record card (3 August 1965, 1835Z) closes the case as 'Other (HOAX)': photo analysis indicates the pictures did not represent the visual conditions of the sighting, and the three Polaroids place the object within 50 feet of the camera, with an estimated size of one to three feet. The Space Systems Division transmittal letter of 30 September says the original Polaroids were not available. Capt Charles F. Reichmuth's narrative report puts the sighting at about 1130 PDT on Myford Road and records that Heflin tried his radio just before seeing the object, not during it, and that it worked normally afterwards.",
+      "source": "Project Blue Book · 1965-08-7461487-SantaAna-California, pp. 1, 3 y 14 (NARA, espejo en archive.org)",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://archive.org/details/1965-08-7461487-SantaAna-California"
+    },
+    {
       "src": "/pursue/rex-heflin-1965-context.jpg",
       "type": "image",
       "title": "Contexto · Santa Ana (condado de Orange, California)",

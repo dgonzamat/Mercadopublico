@@ -82,6 +82,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/kelly-hopkinsville-1955-blue-book.pdf",
+      "type": "pdf",
+      "title": "Correspondencia de la Fuerza Aérea sobre el incidente de Hopkinsville (1957)",
+      "title_en": "Air Force correspondence on the Hopkinsville incident (1957)",
+      "description": "Cuatro páginas archivadas en Blue Book. El 29 de agosto de 1957 el Centro de Inteligencia Técnica Aérea pidió datos a Campbell AFB sobre el «ataque nocturno» de criaturas a una familia seis millas al norte de Hopkinsville, y escribió que el incidente «nunca se comunicó oficialmente a la Fuerza Aérea». La respuesta de la base (1 de octubre, teniente Charles N. Kirk) informa de que nunca se ordenó una investigación oficial y de que ni el sheriff ni la policía conservaban un informe. Adjunta la carta del capitán Robert J. Hertell (17 de septiembre), que creía que algunos oficiales fueron por su cuenta y recogía que, según autoridades locales, el granjero cobró un dólar por persona «para ver dónde aterrizaron los marcianos».",
+      "description_en": "Four pages filed in Blue Book. On 29 August 1957 the Air Technical Intelligence Center asked Campbell AFB for data on the all-night 'attack' by creatures on a family six miles north of Hopkinsville, writing that the incident 'has never been officially reported to the Air Force'. The base reply (1 October, 1st Lt Charles N. Kirk) reports that no official investigation was ever ordered and that neither the sheriff nor the police held a report. It encloses Capt Robert J. Hertell's letter (17 September), who believed some officers went on their own and relayed that, according to local authorities, the farmer charged a dollar a head 'to see where the Mars-Men landed'.",
+      "source": "Project Blue Book · 1955-08-6972585-OLDGREENWICH-CONNECTICUT, pp. 72, 61, 71 y 70 (NARA, espejo en archive.org)",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://archive.org/details/1955-08-6972585-OLDGREENWICH-CONNECTICUT"
+    },
+    {
       "src": "/pursue/kelly-hopkinsville-1955-context.jpg",
       "type": "image",
       "title": "Contexto · Hopkinsville (Kentucky), cerca de la granja del célebre 'asedio'",
