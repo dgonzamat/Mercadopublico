@@ -1,3 +1,4 @@
+import { CASE_ALIASES } from "@/lib/caseAliases";
 import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 
@@ -37,11 +38,11 @@ export function linkCaseRefs(
     const slug = m[1];
     const start = m.index;
     if (start > last) parts.push(src.slice(last, start));
-    const name = nameBySlug.get(slug) ?? slug;
+    const name = nameBySlug.get(slug) ?? nameBySlug.get(CASE_ALIASES[slug] ?? "") ?? slug;
     parts.push(
       <LocaleLink
         key={key++}
-        href={`/cases/${slug}`}
+        href={CASE_ALIASES[slug]?.startsWith("/") ? CASE_ALIASES[slug] : `/cases/${CASE_ALIASES[slug] ?? slug}`}
         title={name}
         aria-label={name}
         className="whitespace-nowrap font-medium text-accent underline decoration-accent/40 underline-offset-2 transition-colors hover:decoration-accent"

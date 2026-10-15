@@ -1181,7 +1181,21 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
 // 2/5/34"; hay cites a archivos "case 149, Australian National Archives A13693")
 // por contexto, para no marcar falsos positivos. Barato y determinista.
 {
-  const validIds = new Set(cases.map((c) => c.id));
+  // Un id retirado con alias (lib/caseAliases.ts) sigue resolviendo: caseRefs
+  // enlaza directo al destino (un caso, un actor o una entrega de PURSUE).
+  const aliasSrc = fs.readFileSync(path.join(root, "lib/caseAliases.ts"), "utf8");
+  const aliasIds = [...aliasSrc.matchAll(/^\s*"([a-z0-9-]+)":\s*"/gm)].map((m) => m[1]);
+  // El destino de cada alias debe existir: un caso, un actor o una entrega.
+  const researcherIds = new Set(JSON.parse(fs.readFileSync(path.join(root, "data/researchers.json"), "utf8")).map((r) => r.id));
+  const releases = new Set(cases.flatMap((c) => c.pursueReleases ?? []).map((n) => String(n).padStart(2, "0")));
+  for (const [, from, to] of aliasSrc.matchAll(/^\s*"([a-z0-9-]+)":\s*"([^"]+)"/gm)) {
+    const ok = to.startsWith("/researchers/") ? researcherIds.has(to.slice(13))
+      : to.startsWith("/releases/") ? releases.has(to.slice(10))
+      : to === "/releases" ? releases.size > 0
+      : !to.startsWith("/") && cases.some((c) => c.id === to);
+    if (!ok) record("ERROR", path.join(root, "lib/caseAliases.ts"), 0, `E25 alias: «${from}» redirige a «${to}», que no existe (enlace a 404).`);
+  }
+  const validIds = new Set([...cases.map((c) => c.id), ...aliasIds]);
   const PROSE = ["summary", "summary_en", "whatHappened", "whatHappened_en", "whyMatters", "whyMatters_en", "evidence", "evidence_en"];
   const SLUG_REF = /\[\[([a-z0-9-]+)\]\]/g;
   const STRICT_REF = /\((?:caso|case)\s+\d+\)/gi;

@@ -66,6 +66,11 @@ export interface DocEmbed {
   type: "pdf" | "image" | "video";
   title: string;
   title_en?: string;
+  /** Qué es el documento y qué prueba, en un párrafo. Lo lleva todo documento
+   *  que antes tenía ficha propia: ahora vive embebido en el caso o el actor
+   *  que respalda (oct 2026). */
+  description?: string;
+  description_en?: string;
   source?: string;
   license?: string;
   fallbackUrl?: string;
@@ -307,6 +312,9 @@ export interface Researcher {
   photo_license?: string;  // e.g. "Public domain"
   // Primary references that back the bio. Mirrors CaseSource.
   sources?: ResearcherSource[];
+  // Documentos que respaldan al actor y no a un incidente concreto (una
+  // directiva, una ley, un memo). Mismo visor que el de los casos.
+  documents?: DocEmbed[];
 }
 
 /**
