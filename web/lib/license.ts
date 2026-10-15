@@ -42,6 +42,8 @@ const EN: Record<string, string> = {
   "Dominio público (obra del gobierno de EE. UU., 17 U.S.C. § 105)": "Public domain (US Government work, 17 U.S.C. § 105)",
   "Dominio público (PD-USGov, obra de la Marina de EE. UU.)": "Public domain (PD-USGov, US Navy work)",
   "CC BY 4.0 · Fuente: Biblioteca Central del Ejército del Aire": "CC BY 4.0 · Source: Biblioteca Central del Ejército del Aire",
+  "Dominio público (obra del Gobierno de EE. UU.)": "Public domain (US Government work)",
+  "Open Parliament Licence v3.0": "Open Parliament Licence v3.0",
 };
 
 export function licenseLabel(license: string | undefined, locale: "es" | "en"): string | undefined {
