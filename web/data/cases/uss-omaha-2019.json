@@ -67,6 +67,28 @@
   ],
   "documents": [
     {
+      "src": "/pursue/uss-omaha-2019-navy-foia.pdf",
+      "type": "pdf",
+      "title": "Marina de EE. UU. — respuesta FOIA sobre los registros del USS Omaha del 15 de julio de 2019 (3 págs.)",
+      "title_en": "U.S. Navy — FOIA response on USS Omaha records for 15 July 2019 (3 pp.)",
+      "description": "Carta del Departamento de la Marina (Naval Surface Force, Flota del Pacífico, San Diego) del 15 de septiembre de 2021, firmada por el capitán J. M. Lucci, Force Judge Advocate, en respuesta a la solicitud FOIA DON-NAVY-2021-005821 de John Greenewald (The Black Vault), que pedía los registros del incidente del 15 de julio de 2019 frente a San Diego y los diarios del USS Omaha del 13 al 18 de julio. La Marina explica que en esta clase de buque el diario en navegación es una grabación de voz digital; que el buque buscó copias digitales, en CD/DVD y en papel, y concluyó que la tripulación anterior no conservó ni creó registros del 1 al 18 de julio de 2019; y que el NHHC y el Federal Records Center tampoco los tienen. Solo entrega los diarios del 19 al 31 de julio.",
+      "description_en": "Letter from the Department of the Navy (Naval Surface Force, U.S. Pacific Fleet, San Diego) dated 15 September 2021, signed by Captain J. M. Lucci, Force Judge Advocate, answering FOIA request DON-NAVY-2021-005821 from John Greenewald (The Black Vault), which asked for the records of the 15 July 2019 incident off San Diego and USS Omaha's logs for 13–18 July. The Navy explains that on this class of ship the underway deck log is a digital voice recording; that the ship searched for digital, CD/DVD and paper copies and concluded that the prior crew did not retain or create records for 1–18 July 2019; and that NHHC and the Federal Records Center have none either. It releases only the logs for 19–31 July.",
+      "source": "Department of the Navy, FOIA DON-NAVY-2021-005821 (vía The Black Vault)",
+      "license": "Dominio público (obra del gobierno de EE. UU., 17 U.S.C. § 105)",
+      "fallbackUrl": "https://documents2.theblackvault.com/documents/navy/DON-NAVY-2021-005821.pdf"
+    },
+    {
+      "src": "/pursue/uss-omaha-2019-fotograma.png",
+      "type": "image",
+      "title": "Fotograma del vídeo del USS Omaha (15 de julio de 2019)",
+      "title_en": "Frame from the USS Omaha video (15 July 2019)",
+      "description": "Captura de baja resolución (250 × 211 píxeles) del vídeo tomado desde el USS Omaha el 15 de julio de 2019, tal como la publica Wikimedia Commons, que la atribuye a la Marina de EE. UU. y la toma de una nota de IBTimes sobre el vídeo filtrado. Se ve una mancha oscura y redonda a la derecha de la cruz de una retícula de sensor, sobre la línea del horizonte marino, con una escala de −90 a +90 en el borde inferior.",
+      "description_en": "Low-resolution capture (250 × 211 pixels) of the video taken from USS Omaha on 15 July 2019, as published by Wikimedia Commons, which attributes it to the U.S. Navy and takes it from an IBTimes article on the leaked video. It shows a dark round blob just right of a sensor reticle's crosshair, above the sea horizon, with a −90 to +90 scale along the bottom edge.",
+      "source": "USS Omaha UFO video - July 2019.png · Wikimedia Commons",
+      "license": "Dominio público (PD-USGov, obra de la Marina de EE. UU.)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:USS_Omaha_UFO_video_-_July_2019.png"
+    },
+    {
       "src": "/pursue/uss-omaha-2019-context.jpg",
       "type": "image",
       "title": "Contexto · el USS Omaha (LCS-12), buque de la esfera transmedium filmada en 2019",
