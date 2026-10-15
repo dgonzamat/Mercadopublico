@@ -106,5 +106,18 @@
     "source_en": "UK Ministry of Defence — DSI/JTIC Report No. 7, 'Unidentified Flying Objects', June 1951 (TNA DEFE 44/119)",
     "url": "http://martinshough.com/aerialphenomena/Lakenheath/FSworkingparty.htm"
   },
-  "evidenceReviewed": "2026-10-12"
+  "evidenceReviewed": "2026-10-12",
+  "documents": [
+    {
+      "src": "/pursue/farnborough-1950-defe44-119.pdf",
+      "type": "pdf",
+      "title": "DSI/JTIC Report No. 7, «Unidentified Flying Objects» (junio de 1951, TNA DEFE 44/119), portada y página 3: los párrafos sobre Farnborough",
+      "title_en": "DSI/JTIC Report No. 7, 'Unidentified Flying Objects' (June 1951, TNA DEFE 44/119), cover and page 3: the Farnborough paragraphs",
+      "description": "Portada y página 3 del informe final del Flying Saucer Working Party del Ministerio de Defensa británico, de junio de 1951, clasificado secreto. El párrafo 13 narra el avistamiento del teniente de vuelo Hubbard en Farnborough a las 11:27 del 14 de agosto de 1950: un disco gris perla de unos 50 pies a una altura estimada de 5.000 pies, que los otros dos oficiales presentes no vieron; el informe concluye que fue una ilusión óptica o un avión corriente cuya forma y velocidad lo engañaron. El párrafo 14 trata el avistamiento de seis oficiales desde la torre a las 16:09 del 5 de septiembre de 1950 y lo atribuye a un avión normal, como ejemplo de un informe que induce otro.",
+      "description_en": "Cover and page 3 of the final report of the British Ministry of Defence's Flying Saucer Working Party, dated June 1951 and classified secret. Paragraph 13 recounts Flight Lieutenant Hubbard's sighting at Farnborough at 11:27 on August 14, 1950: a pale pearl-grey disc about 50 feet across at an estimated height of 5,000 feet, which the two other officers present did not see; the report concludes that it was an optical illusion or an ordinary aircraft whose shape and speed deceived him. Paragraph 14 deals with the sighting by six officers from the control tower at 16:09 on September 5, 1950, and attributes it to a normal aircraft, as an example of one report inducing another.",
+      "source": "The National Archives (Reino Unido), DEFE 44/119; escaneos de baja resolución publicados por David Clarke y Andy Roberts en uk-ufo.org",
+      "license": "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)",
+      "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11001295"
+    }
+  ]
 }

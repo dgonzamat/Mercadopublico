@@ -84,6 +84,15 @@
   },
   "documents": [
     {
+      "src": "http://www.nicap.org/docs/751111falconbridge.pdf",
+      "type": "link",
+      "title": "Télex de CFS Falconbridge a NDHQ Ottawa y al Consejo Nacional de Investigación (11 nov 1975)",
+      "title_en": "CFS Falconbridge telex to NDHQ Ottawa and the National Research Council (11 Nov 1975)",
+      "description": "Mensaje de la propia estación de radar canadiense del 11 de noviembre de 1975, conservado en los fondos del Consejo Nacional de Investigación (RG 77). Describe un objeto esférico que «appeared to be rotating», visto de forma intermitente durante unas dos horas con nubes dispersas, y da las alturas que registró el radar: unos 42.000 pies a las 11:15Z, 50.000 a las 11:20Z y 72.000 a las 11:29Z. Es copyright de la Corona canadiense sin licencia abierta, por eso no se aloja aquí y se enlaza la copia de NICAP.",
+      "description_en": "Message from the Canadian radar station itself on 11 November 1975, held in the National Research Council records (RG 77). It describes a spherical object that 'appeared to be rotating', seen intermittently for about two hours with broken cloud, and gives the heights the radar recorded: about 42,000 feet at 11:15Z, 50,000 at 11:20Z and 72,000 at 11:29Z. It is Canadian Crown copyright with no open licence, so it is not hosted here and NICAP's copy is linked instead.",
+      "source": "Archivos Públicos de Canadá (RG 77, vol. 308), vía NICAP"
+    },
+    {
       "src": "/pursue/falconbridge-norad-1975-context.jpg",
       "type": "image",
       "title": "Contexto · Falconbridge (Sudbury, Ontario), sede de la estación de radar de NORAD",

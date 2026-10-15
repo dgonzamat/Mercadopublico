@@ -97,5 +97,18 @@
       "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
     }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/lake-michigan-1994-context.jpg",
+      "type": "image",
+      "title": "Contexto · la costa del lago Michigan en Holland, de donde llegaron las primeras llamadas al 911 la noche del 8 de marzo de 1994",
+      "title_en": "Context · the Lake Michigan shore at Holland, where the first 911 calls came from on the night of March 8, 1994",
+      "description": "Fotografía de 2010 del faro del puerto de Holland, conocido como «Big Red», y de la playa del lago Michigan al anochecer. Es una imagen de contexto, no un registro del suceso.",
+      "description_en": "2010 photograph of the Holland Harbor Light, known as 'Big Red', and the Lake Michigan beach at dusk. It is a context image, not a record of the event.",
+      "source": "Holland Harbor Light US-MI - windy night.jpg · Wikimedia Commons (Kramer, Flickr)",
+      "license": "CC BY 2.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Holland_Harbor_Light_US-MI_-_windy_night.jpg"
+    }
   ]
 }
