@@ -12,7 +12,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.04,
-    "place": "Department of War"
+    "place": "Department of War",
+    "place_en": "Department of War"
   },
   "tier": "A",
   "mundanoType": "misid",

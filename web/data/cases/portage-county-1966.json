@@ -10,7 +10,8 @@
   "location": {
     "lat": 41.1574,
     "lng": -81.2412,
-    "place": "Portage County, Ohio, EE.UU. (Ruta 224, Ravenna)"
+    "place": "Portage County, Ohio, EE.UU. (Ruta 224, Ravenna)",
+    "place_en": "Portage County, Ohio, U.S. (Route 224, Ravenna)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

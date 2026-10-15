@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.8898,
     "lng": -77.0091,
-    "place": "House Oversight Committee · Task Force on Declassification of Federal Secrets, Washington D.C."
+    "place": "House Oversight Committee · Task Force on Declassification of Federal Secrets, Washington D.C.",
+    "place_en": "House Oversight Committee · Task Force on Declassification of Federal Secrets, Washington D.C."
   },
   "tier": "A",
   "epistemicStatus": "developing",

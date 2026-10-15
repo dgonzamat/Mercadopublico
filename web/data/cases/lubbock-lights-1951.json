@@ -10,7 +10,8 @@
   "location": {
     "lat": 33.5779,
     "lng": -101.8552,
-    "place": "Lubbock, Texas"
+    "place": "Lubbock, Texas",
+    "place_en": "Lubbock, Texas"
   },
   "tier": "B",
   "mundanoType": "misid",

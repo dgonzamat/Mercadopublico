@@ -10,7 +10,8 @@
   "location": {
     "lat": 38.883,
     "lng": -77.0163,
-    "place": "NASA Headquarters · Washington D.C."
+    "place": "NASA Headquarters · Washington D.C.",
+    "place_en": "NASA Headquarters · Washington D.C."
   },
   "tier": "A",
   "mundanoType": "misid",

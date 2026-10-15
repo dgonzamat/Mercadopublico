@@ -10,7 +10,8 @@
   "location": {
     "lat": 10.48,
     "lng": -66.81,
-    "place": "Petare, Caracas"
+    "place": "Petare, Caracas",
+    "place_en": "Petare, Caracas"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

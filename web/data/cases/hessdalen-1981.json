@@ -9,7 +9,8 @@
   "location": {
     "lat": 62.78,
     "lng": 11.2,
-    "place": "Hessdalen Valley"
+    "place": "Hessdalen Valley",
+    "place_en": "Hessdalen Valley"
   },
   "tier": "A",
   "mundanoType": "natural",

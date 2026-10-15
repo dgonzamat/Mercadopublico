@@ -9,7 +9,8 @@
   "location": {
     "lat": 45.67,
     "lng": 12.24,
-    "place": "Treviso · 14° Gruppo, 2° Stormo"
+    "place": "Treviso · 14° Gruppo, 2° Stormo",
+    "place_en": "Treviso · 14° Gruppo, 2° Stormo"
   },
   "tier": "S",
   "mundanoType": "misid",

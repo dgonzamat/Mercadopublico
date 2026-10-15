@@ -9,7 +9,8 @@
   "location": {
     "lat": 52.09,
     "lng": 1.46,
-    "place": "Rendlesham Forest, Suffolk"
+    "place": "Rendlesham Forest, Suffolk",
+    "place_en": "Rendlesham Forest, Suffolk"
   },
   "tier": "A",
   "mundanoType": "misid",

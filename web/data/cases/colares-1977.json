@@ -10,7 +10,8 @@
   "location": {
     "lat": -0.93,
     "lng": -48.3,
-    "place": "Colares, Pará"
+    "place": "Colares, Pará",
+    "place_en": "Colares, Pará"
   },
   "tier": "S",
   "mundanoType": "misid",

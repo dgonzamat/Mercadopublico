@@ -10,7 +10,8 @@
   "location": {
     "lat": -25.7155,
     "lng": 28.3937,
-    "place": "Pretoria / Mamelodi / Cullinan, Gauteng"
+    "place": "Pretoria / Mamelodi / Cullinan, Gauteng",
+    "place_en": "Pretoria / Mamelodi / Cullinan, Gauteng"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

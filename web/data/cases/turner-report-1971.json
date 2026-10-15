@@ -10,7 +10,8 @@
   "location": {
     "lat": -35.2809,
     "lng": 149.13,
-    "place": "Joint Intelligence Organisation, Department of Defence, Canberra"
+    "place": "Joint Intelligence Organisation, Department of Defence, Canberra",
+    "place_en": "Joint Intelligence Organisation, Department of Defence, Canberra"
   },
   "tier": "S",
   "epistemicStatus": "documented",

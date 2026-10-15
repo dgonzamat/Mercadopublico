@@ -11,7 +11,8 @@
   "location": {
     "lat": 17.92,
     "lng": -99.58,
-    "place": "Mezcala, Guerrero"
+    "place": "Mezcala, Guerrero",
+    "place_en": "Mezcala, Guerrero"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

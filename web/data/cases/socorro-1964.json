@@ -9,7 +9,8 @@
   "location": {
     "lat": 34.06,
     "lng": -106.89,
-    "place": "Socorro, New Mexico"
+    "place": "Socorro, New Mexico",
+    "place_en": "Socorro, New Mexico"
   },
   "tier": "A",
   "mundanoType": "fraude",

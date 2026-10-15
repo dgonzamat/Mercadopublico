@@ -9,7 +9,8 @@
   "location": {
     "lat": 35.69,
     "lng": 51.39,
-    "place": "Tehran"
+    "place": "Tehran",
+    "place_en": "Tehran"
   },
   "tier": "A",
   "mundanoType": "misid",

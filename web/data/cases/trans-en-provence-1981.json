@@ -9,7 +9,8 @@
   "location": {
     "lat": 43.5,
     "lng": 6.48,
-    "place": "Trans-en-Provence"
+    "place": "Trans-en-Provence",
+    "place_en": "Trans-en-Provence"
   },
   "tier": "A",
   "mundanoType": "fraude",

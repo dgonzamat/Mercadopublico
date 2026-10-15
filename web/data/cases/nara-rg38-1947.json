@@ -10,7 +10,8 @@
   "location": {
     "lat": 34.95,
     "lng": -117.88,
-    "place": "Muroc Field, California"
+    "place": "Muroc Field, California",
+    "place_en": "Muroc Field, California"
   },
   "tier": "S",
   "epistemicStatus": "documented",

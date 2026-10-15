@@ -10,7 +10,8 @@
   "location": {
     "lat": 36.18,
     "lng": 34.99,
-    "place": "Mediterráneo Oriental, 55 millas náuticas al noroeste de Latakia"
+    "place": "Mediterráneo Oriental, 55 millas náuticas al noroeste de Latakia",
+    "place_en": "Eastern Mediterranean, 55 nautical miles northwest of Latakia"
   },
   "tier": "A",
   "probability": 17,

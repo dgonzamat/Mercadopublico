@@ -9,7 +9,8 @@
   "location": {
     "lat": 18.43,
     "lng": -67.15,
-    "place": "Aguadilla, PR"
+    "place": "Aguadilla, PR",
+    "place_en": "Aguadilla, PR"
   },
   "tier": "S",
   "mundanoType": "misid",

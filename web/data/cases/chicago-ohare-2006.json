@@ -9,7 +9,8 @@
   "location": {
     "lat": 41.98,
     "lng": -87.9,
-    "place": "Chicago O'Hare International Airport"
+    "place": "Chicago O'Hare International Airport",
+    "place_en": "Chicago O'Hare International Airport"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

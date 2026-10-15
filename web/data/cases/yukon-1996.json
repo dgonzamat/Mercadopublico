@@ -9,7 +9,8 @@
   "location": {
     "lat": 62.45,
     "lng": -136.66,
-    "place": "Yukon Territory"
+    "place": "Yukon Territory",
+    "place_en": "Yukon Territory"
   },
   "tier": "A",
   "mundanoType": "misid",

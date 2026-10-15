@@ -10,7 +10,8 @@
   "location": {
     "lat": 42.9814,
     "lng": -70.9478,
-    "place": "Exeter / Kensington, New Hampshire"
+    "place": "Exeter / Kensington, New Hampshire",
+    "place_en": "Exeter / Kensington, New Hampshire"
   },
   "tier": "A",
   "mundanoType": "misid",

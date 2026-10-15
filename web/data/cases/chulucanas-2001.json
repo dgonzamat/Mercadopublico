@@ -10,7 +10,8 @@
   "location": {
     "lat": -5.1,
     "lng": -80.16,
-    "place": "Chulucanas, Piura"
+    "place": "Chulucanas, Piura",
+    "place_en": "Chulucanas, Piura"
   },
   "tier": "A",
   "epistemicStatus": "documented",

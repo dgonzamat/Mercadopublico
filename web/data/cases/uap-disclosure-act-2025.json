@@ -11,7 +11,8 @@
   "location": {
     "lat": 38.8899,
     "lng": -77.0091,
-    "place": "U.S. Senate, Washington D.C."
+    "place": "U.S. Senate, Washington D.C.",
+    "place_en": "U.S. Senate, Washington D.C."
   },
   "tier": "A",
   "epistemicStatus": "developing",

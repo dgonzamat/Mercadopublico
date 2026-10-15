@@ -9,7 +9,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.01,
-    "place": "House Oversight, US Capitol"
+    "place": "House Oversight, US Capitol",
+    "place_en": "House Oversight, US Capitol"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": -33.46,
     "lng": -70.69,
-    "place": "Santiago, Chile"
+    "place": "Santiago, Chile",
+    "place_en": "Santiago, Chile"
   },
   "tier": "A",
   "mundanoType": "misid",
