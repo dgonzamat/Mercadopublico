@@ -82,6 +82,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/exeter-1965-blue-book.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book de Exeter (septiembre de 1965): tarjeta, informe de la base de Pease, declaraciones de los tres testigos, carta de los patrulleros y respuestas de la Fuerza Aérea, 12 págs.",
+      "title_en": "Blue Book file on Exeter (September 1965): record card, Pease AFB report, statements of the three witnesses, the patrolmen's letter and Air Force replies, 12 pp.",
+      "description": "La tarjeta marca «Unidentified» y anota aviones de la operación Big Blast en la zona entre las 04:44Z y las 05:35Z. En el informe de la base de Pease (15 de septiembre), el mayor David Griffin no llega a una causa probable y no cree relacionados los cinco B-47 en vuelo. Siguen las declaraciones firmadas de Muscarello, Bertrand y Hunt; la carta de los patrulleros de diciembre de 1965, que sitúa su observación casi una hora después de las 2:00; la carta de febrero de 1966 («no hemos podido identificar el objeto»), y el memorando del 3 de marzo de 1966, redactado por Quintanilla y firmado por el coronel de Jonckheere, que juzga posible un avión convencional y registra el caso como no identificado «a efectos estadísticos».",
+      "description_en": "The record card checks \"Unidentified\" and notes aircraft of Operation Big Blast in the area between 04:44Z and 05:35Z. Pease AFB's report of 15 September describes five red lights in a row at about 100 feet, and Maj. David Griffin writes that he could not arrive at a probable cause and that the five B-47s airborne did not seem connected. It is followed by the signed statements of Muscarello, Bertrand and Hunt, the patrolmen's December 1965 letter placing their observation nearly an hour after 2:00 AM, the February 1966 letter (\"we have been unable to identify the object\") and the memo of 3 March 1966, originated by Quintanilla and signed by Col. de Jonckheere, which judges a conventional aircraft possible and carries the case as unidentified \"for statistical purposes\".",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1965-09-9373271-Exeter-NewHampshire"
+    },
+    {
       "src": "/pursue/exeter-1965-context.jpg",
       "type": "image",
       "title": "Contexto · Exeter (Nuevo Hampshire), escenario del avistamiento a baja altura",
@@ -94,8 +105,8 @@
   "misidSubtype": "aeronave",
   "evidenceReviewed": "2026-09-28",
   "classBasis": {
-    "es": "Respuesta interna de Blue Book de marzo de 1966, firmada por su jefe Hector Quintanilla: «el análisis del informe indica que es posible que aeronaves de tipo convencional con balizas giratorias o aeronaves que usaban luces infrarrojas en misiones fotográficas hayan sido la causa de este avistamiento»; como no se pudo identificar un avión concreto, el caso figura «a efectos estadísticos como no identificado». Pero los dos policías escribieron a Blue Book que su observación fue casi una hora después de las 2:00, lo que descarta la operación Big Blast que el expediente había invocado primero.",
-    "en": "Blue Book internal reply of March 1966, signed by its chief Hector Quintanilla: \"Analysis of the report indicates that it is possible for aircraft of a conventional type with rotating beacons or aircraft utilizing infra-red lights in photographic missions to have been the cause of this sighting\"; since no specific aircraft could be identified, the case \"is regarded for statistical purposes as unidentified\". But the two patrolmen wrote to Blue Book that their observation was nearly an hour after 2:00 AM, \"which would eliminate the 8th Air Force operation Big Blast\" the file had first invoked.",
+    "es": "Respuesta interna de Blue Book de marzo de 1966, redactada por su jefe Hector Quintanilla y firmada por el coronel Eric T. de Jonckheere: «el análisis del informe indica que es posible que aeronaves de tipo convencional con balizas giratorias o aeronaves que usaban luces infrarrojas en misiones fotográficas hayan sido la causa de este avistamiento»; como no se pudo identificar un avión concreto, el caso figura «a efectos estadísticos como no identificado». Pero los dos policías escribieron a Blue Book que su observación fue casi una hora después de las 2:00, lo que descarta la operación Big Blast que el expediente había invocado primero.",
+    "en": "Blue Book internal reply of March 1966, drafted by its chief Hector Quintanilla and signed by Colonel Eric T. de Jonckheere: \"Analysis of the report indicates that it is possible for aircraft of a conventional type with rotating beacons or aircraft utilizing infra-red lights in photographic missions to have been the cause of this sighting\"; since no specific aircraft could be identified, the case \"is regarded for statistical purposes as unidentified\". But the two patrolmen wrote to Blue Book that their observation was nearly an hour after 2:00 AM, \"which would eliminate the 8th Air Force operation Big Blast\" the file had first invoked.",
     "source": "Project Blue Book — expediente «Exeter, New Hampshire», 3 sep 1965 (respuesta de marzo de 1966 y carta de los patrulleros)",
     "source_en": "Project Blue Book — file “Exeter, New Hampshire”, 3 Sep 1965 (reply of March 1966 and the patrolmen's letter)",
     "url": "https://archive.org/details/1965-09-9373271-Exeter-NewHampshire"
