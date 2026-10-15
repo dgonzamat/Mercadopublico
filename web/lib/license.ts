@@ -38,6 +38,9 @@ const EN: Record<string, string> = {
   "Dominio público (PD-USGov-POTUS)": "Public domain (PD-USGov-POTUS)",
   "Dominio público (CC0)": "Public domain (CC0)",
   "Dominio público en EE.UU. (PD-US)": "Public domain in the US (PD-US)",
+  "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)": "Open Government Licence v3.0 (Crown copyright, Ministry of Defence)",
+  "Dominio público (obra del gobierno de EE. UU., 17 U.S.C. § 105)": "Public domain (US Government work, 17 U.S.C. § 105)",
+  "Dominio público (PD-USGov, obra de la Marina de EE. UU.)": "Public domain (PD-USGov, US Navy work)",
   "CC BY 4.0 · Fuente: Biblioteca Central del Ejército del Aire": "CC BY 4.0 · Source: Biblioteca Central del Ejército del Aire",
 };
 

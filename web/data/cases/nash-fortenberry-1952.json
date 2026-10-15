@@ -100,6 +100,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/nash-fortenberry-1952-blue-book.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book de Norfolk (julio de 1952): tarjeta, cable AFOIN 53722, informe de inteligencia AF Form 112 del mayor Sharpe con croquis y resumen de ATIC, 7 págs.",
+      "title_en": "Blue Book file on Norfolk (July 1952): record card, cable AFOIN 53722, Maj. Sharpe's AF Form 112 intelligence report with overlay, and ATIC summary, 7 pp.",
+      "description": "Escaneo de NICAP. La tarjeta describe seis objetos en forma de disco de 100 pies que se acercaron al avión de línea a unos 2.000 pies y anota cinco reactores cerca de Langley. El cable AFOIN 53722 del 16 de julio transmite el aviso de la OSI: ocho objetos circulares luminosos en formación, a unas 1.000 millas por hora. El informe AF Form 112 del mayor John H. Sharpe, del 15 de julio, recoge el interrogatorio de Nash y Fortenberry, con sus impresiones (entre ellas, que los objetos «no son de origen terrestre»); Sharpe los juzga fiables y calcula que los vieron de cinco a diez segundos. Cierran el croquis de la trayectoria y el resumen de ATIC, que concluye «Unknown».",
+      "description_en": "NICAP scan. The record card describes six disc-shaped objects 100 feet across that approached the airliner at about 2,000 feet and notes five jets near Langley. Cable AFOIN 53722 of 16 July relays the OSI report: eight luminous circular objects in formation, at about 1,000 miles per hour. Maj. John H. Sharpe's AF Form 112 report of 15 July records the debriefing of Nash and Fortenberry, with their impressions (among them, that the objects \"are definitely not of earthly origin\"); Sharpe judges them reliable and reckons they were in view five to ten seconds. The overlay of the path and the ATIC summary, which concludes \"Unknown\", close the extract.",
+      "source": "Proyecto Blue Book (NARA), escaneo publicado por NICAP",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "http://www.nicap.org/docs/520714norfolk_docs2a.pdf"
+    },
+    {
       "src": "/pursue/nash-fortenberry-1952-context.jpg",
       "type": "image",
       "title": "Contexto · un Douglas DC-4 de Pan American, el tipo de avión del avistamiento de Norfolk",

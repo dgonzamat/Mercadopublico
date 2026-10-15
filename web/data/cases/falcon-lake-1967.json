@@ -72,6 +72,15 @@
   ],
   "documents": [
     {
+      "src": "https://files.ncas.org/condon/text/case22.htm",
+      "type": "link",
+      "title": "Informe Condon (1968), caso 22 «Claim of UFO Landing»",
+      "title_en": "Condon Report (1968), Case 22 \"Claim of UFO Landing\"",
+      "description": "Capítulo del estudio de la Universidad de Colorado para la Fuerza Aérea que investiga el caso de Falcon Lake con el testigo anonimizado como «Mr. A». Resume su relato (dos discos, uno posado a 160 pies, el chorro que le quemó el abdomen), el dictamen del hospital de que la quemadura era térmica y sin radiación, y la búsqueda del sitio con el investigador Roy Craig, que le pareció «sin rumbo». Recoge además que las torres de vigilancia estaban ocupadas ese día y que los guardas creían que un fuego así habría prendido el bosque. El texto lleva copyright de la Universidad de Colorado, así que va solo como enlace; los expedientes de la RCMP y del DND están en Library and Archives Canada.",
+      "description_en": "Chapter of the University of Colorado study for the Air Force that investigates the Falcon Lake case with the witness anonymized as \"Mr. A\". It summarizes his account (two discs, one landed 160 feet away, the blast that burned his abdomen), the hospital's finding that the burn was thermal with no radiation, and the search for the site with investigator Roy Craig, which struck him as \"aimless\". It also records that the fire towers were manned that day and that the rangers believed such a fire would have set the forest alight. The text carries the University of Colorado's copyright, so it is linked only; the RCMP and DND files are in Library and Archives Canada.",
+      "source": "Condon, E. U. (dir.), «Scientific Study of Unidentified Flying Objects» (1968), transcripción de NCAS"
+    },
+    {
       "src": "/pursue/falcon-lake-1967-context.jpg",
       "type": "image",
       "title": "Contexto · el parque Whiteshell (Manitoba, Canadá), zona del encuentro de Stefan Michalak",

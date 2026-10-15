@@ -87,6 +87,15 @@
   },
   "documents": [
     {
+      "src": "https://elibrary.sansad.in/server/api/core/bitstreams/7e980698-40bd-4ddc-8402-bc6f331c3376/content",
+      "type": "link",
+      "title": "Respuesta del Ministerio de Aviación Civil a la pregunta no oral n.º 2024 de la Lok Sabha (14 dic 2023)",
+      "title_en": "Ministry of Civil Aviation answer to Lok Sabha unstarred question no. 2024 (14 Dec 2023)",
+      "description": "Respuesta escrita del ministro de Estado de Aviación Civil, V. K. Singh, a la pregunta del diputado Manish Tewari. Dice que el 19 de noviembre de 2023, a las 14:30, la torre de Imphal recibió un aviso de la sala de control de la CISF de un objeto no identificado justo encima de la torre; que era de color blanco, se movió hacia el sur, quedó un rato inmóvil y siguió visible hasta las 16:05; que se suspendieron los despegues y aterrizajes casi tres horas con un NOTAM, dos vuelos se desviaron y tres quedaron retenidos. Obra del Gobierno de la India sin licencia abierta: se enlaza, no se aloja.",
+      "description_en": "Written answer by the Minister of State for Civil Aviation, V. K. Singh, to MP Manish Tewari's question. It says that on 19 November 2023 at 14:30 Imphal ATC received a message from the CISF control room about an unidentified object just above the ATC tower; that it was white, moved southwards, remained stationary for some time and was visible until 16:05; and that landings and take-offs were suspended for nearly three hours under a NOTAM, with two flights diverted and three held on the ground. It is a Government of India work with no open licence, so it is linked rather than hosted.",
+      "source": "Lok Sabha, Parlamento de la India (Digital Sansad)"
+    },
+    {
       "src": "/pursue/imphal-airport-2023-context.jpg",
       "type": "image",
       "title": "Contexto · la plataforma y la torre de control del aeropuerto de Imphal, sobre la que se vio el objeto",

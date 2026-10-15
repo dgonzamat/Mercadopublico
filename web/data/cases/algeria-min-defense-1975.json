@@ -81,6 +81,15 @@
   ],
   "documents": [
     {
+      "src": "https://wikileaks.org/plusd/cables/1975ALGIER00638_b.html",
+      "type": "link",
+      "title": "Cable 1975ALGIER00638 de la embajada de EE. UU. en Argel, 7 de marzo de 1975",
+      "title_en": "Cable 1975ALGIER00638 from the U.S. Embassy in Algiers, 7 March 1975",
+      "description": "Telegrama de «uso oficial limitado» firmado por Parker, jefe de la misión estadounidense, tras la reunión con el coronel Abdelhamid Latreche, secretario general del Ministerio de Defensa argelino. Recoge los cinco avistamientos del objeto, hacia las 19:00-19:30, el último frente a la costa el 6 de marzo, visto primero por radar y luego a simple vista a unos 15.000 m «(sic)», y su luz comparada con un faro de coche. La embajada supone «algún fenómeno natural» y pide datos sobre el contacto de radar; Latreche ya había rechazado la idea de un satélite o de un reflector sobre las nubes. Es un telegrama electrónico sin facsímil: el texto íntegro está en el archivo PlusD.",
+      "description_en": "A \"limited official use\" telegram signed by Parker, head of the U.S. mission, after his meeting with Col. Abdelhamid Latreche, secretary general of Algeria's Defence Ministry. It records the five sightings of the object, around 19:00-19:30, the last off the coast on 6 March, seen first by radar and then visually at about 15,000 meters \"(sic)\", with a light compared to a car headlight. The embassy assumes \"natural phenomenon of some sort\" and asks for data on the radar contact; Latreche had already rejected the idea of a satellite or of a searchlight bouncing off clouds. It is an electronic telegram with no facsimile; the full text is in the PlusD archive.",
+      "source": "Departamento de Estado de EE. UU. (NARA, telegramas electrónicos de 1975), vía WikiLeaks PlusD"
+    },
+    {
       "src": "/pursue/algeria-min-defense-1975-context.jpg",
       "type": "image",
       "title": "Contexto · Argel (Argelia), sede del Ministerio de Defensa Nacional",

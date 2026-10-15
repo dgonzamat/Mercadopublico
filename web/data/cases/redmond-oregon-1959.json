@@ -79,6 +79,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/redmond-oregon-1959-blue-book.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book de Redmond (septiembre de 1959): tarjeta, télex del 24 de septiembre, registros de la FAA de Redmond y Seattle, télex del 827.º escuadrón y conclusiones de ATIC, 13 págs.",
+      "title_en": "Blue Book file on Redmond (September 1959): record card, 24 September teletype, Redmond and Seattle FAA logs, 827th squadron teletype and ATIC conclusions, 13 pp.",
+      "description": "La tarjeta marca «probablemente astronómico (Venus)» y comenta que la refracción de Venus y Régulo era posible. El télex del 24 de septiembre describe una luz blanca «como una luz de aterrizaje» que pasa a anaranjada, con cuatro luces salientes, y que cae, se queda a 800 pies y sube a 3.000. Los registros de la FAA de Redmond y Seattle recogen el aviso del policía Dickerson, las «lenguas» de luz, la forma de hongo y los ecos del radar de Klamath Falls entre 6.000 y más de 50.000 pies. El télex de marzo de 1960 detalla los despegues de los cazas, y los resúmenes de ATIC de junio de 1960 atribuyen la luz a la refracción de Venus y el eco a una antena o al terreno.",
+      "description_en": "The record card checks \"probably astronomical (Venus)\" and comments that refraction of Venus and Regulus was possible. The teletype of the morning of 24 September describes a white light \"such as landing light\" changing to orangish, four protruding lights, and a falling light that hovered at 800 feet and rose to 3,000. The extracts of the Redmond and Seattle FAA logs record Officer Dickerson's report, the \"tongues\" of light, the mushroom shape and the Klamath Falls radar returns at altitudes from 6,000 to over 50,000 feet. The March 1960 teletype details the fighter scrambles, and ATIC's June 1960 summaries attribute the light to refraction of Venus and the return to a gap-filler antenna or the terrain.",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1959-09-6958382-Redmond-Oregon"
+    },
+    {
       "src": "/pursue/redmond-oregon-1959-context.jpg",
       "type": "image",
       "title": "Contexto · Redmond (Oregón), donde policía, FAA y seis F-102 siguieron el objeto",

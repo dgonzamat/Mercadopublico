@@ -91,6 +91,15 @@
   },
   "documents": [
     {
+      "src": "https://www.cnes-geipan.fr/sites/default/files/PV%20n%C2%B028%20%281981308305%29.pdf",
+      "type": "link",
+      "title": "Gendarmería de Draguignan: télex del 9 de enero de 1981 y acta n.º 28/1981 con plancha fotográfica, 11 págs.",
+      "title_en": "Draguignan gendarmerie: telex of 9 January 1981 and report no. 28/1981 with photographic plates, 11 pp.",
+      "description": "Expediente de la gendarmería que publica el GEIPAN. El télex del 9 de enero de 1981 resume el aterrizaje del día 8 hacia las 17:00: objeto ovoide de unos 3 m, gris mate, sin ojos de buey ni antenas, que se posó y se fue en vertical, con una observación total de «1 minuto aproximadamente»; y dos arcos de círculo «que parecen huellas de derrape de neumáticos». El acta n.º 28 (cerrada el 4 de febrero) describe el terreno, dos círculos concéntricos con estrías negras, la toma de muestras de tierra y hierba enviadas al CNES y siete fotografías del lugar y de las huellas. Los documentos del GEIPAN son © CNES: va solo como enlace.",
+      "description_en": "Gendarmerie file published by GEIPAN. The telex of 9 January 1981 summarizes the landing on the 8th at about 17:00: an ovoid object about 3 m across, matt grey, with no portholes or antennas, that set down and left vertically, the whole observation lasting \"about 1 minute\"; and two arcs of a circle \"resembling tyre skid marks\". Report no. 28 (closed on 4 February) describes the ground, two concentric circles with black striations, the soil and grass samples sent to CNES, and seven photographs of the site and the traces. GEIPAN documents are © CNES, so it is linked only.",
+      "source": "Gendarmería Nacional (brigada de Draguignan); expediente GEIPAN 1981-01-00849"
+    },
+    {
       "src": "/pursue/trans-en-provence-1981-context.jpg",
       "type": "image",
       "title": "Contexto · la región de Draguignan (Var, Francia), cerca de Trans-en-Provence",

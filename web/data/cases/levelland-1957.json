@@ -79,6 +79,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/levelland-1957-blue-book.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book de Levelland (noviembre de 1957): tarjeta, informes preliminares de Reese AFB, resumen de ATIC, conclusiones del capitán Gregory y resumen de la Fuerza Aérea, 7 págs.",
+      "title_en": "Blue Book file on Levelland (November 1957): record card, preliminary reports from Reese AFB, ATIC summary, Capt. Gregory's conclusions and the Air Force summary, 7 pp.",
+      "description": "La tarjeta de Blue Book da el 2-3 de noviembre de 1957, de 23:00 a 01:30, seis observadores, tamaños de una pelota de baloncesto a 800 pies, y marca «Other: Ball lightning»; anota que casi todos los testigos mencionaron relámpagos y lluvia o neblina. El informe preliminar baraja fuego de San Telmo, gas de pozos reflejado en nubes a 400 pies o un cable caído; otro mensaje dice que en un camión un trozo del rotor viejo, cambiado la víspera, quedó encajado entre los platinos. El resumen de ATIC registra techo de 400 pies, llovizna todo el periodo y tormentas «just prior to the sightings», y concluye que la causa fue «probablemente» rayo en bola. El análisis del capitán Gregory (3 de enero de 1958) lo liga a niebla, lluvia, techo bajo y descargas eléctricas.",
+      "description_en": "The Blue Book record card gives 2-3 November 1957, 23:00 to 01:30, six observers, sizes from a basketball to 800 feet, and checks \"Other: Ball lightning\"; it notes that all but one witness mentioned lightning and rain or mist. The preliminary report weighs St. Elmo's fire, oil-field gas flares reflecting off a 400-foot cloud deck, or a downed power line; another message says that on one truck a piece of the old rotor, changed the day before, had wedged between the points. ATIC's summary records a 400-foot overcast, drizzle throughout and heavy thunderstorms \"just prior to the sightings\", and concludes the cause was \"probably\" ball lightning. Capt. Gregory's analysis (3 January 1958) links it to fog, rain, a low ceiling and lightning discharges.",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1957-11-7229541-VicinityLevelland-Texas"
+    },
+    {
       "src": "/pursue/levelland-1957-context.jpg",
       "type": "image",
       "title": "Contexto · Levelland (Texas), donde el objeto detuvo los motores de varios vehículos",
@@ -90,8 +101,8 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "classBasis": {
-    "es": "Resumen de ATIC en el expediente de Blue Book: «Se concluye que la causa de los avistamientos del 2 de noviembre de 1957 se debió probablemente a un fenómeno conocido como “rayo en bola”». Se apoya en que la zona había sufrido fuertes tormentas, aunque según el mismo resumen ya habían pasado antes de los avistamientos, con llovizna durante el periodo. Para la capa de los motores parados propone humedad depositada en los distribuidores.",
-    "en": "ATIC summary in the Blue Book file: \"It is concluded that the cause of the sightings on 2 November 1957, was probably due to a phenomena known as 'Ball Lightning'.\" It rests on the area having had heavy thunderstorms, although by the same summary they had \"past prior to the Sightings\", with drizzle during the period. For the stalled-engine layer it proposes moisture deposited on distributor parts.",
+    "es": "Resumen de ATIC en el expediente de Blue Book: «Se concluye que la causa de los avistamientos del 2 de noviembre de 1957 se debió probablemente a un fenómeno conocido como “rayo en bola”». Se apoya en que la zona había sufrido fuertes tormentas «justo antes» de los avistamientos, con llovizna durante el periodo. Para la capa de los motores parados propone humedad depositada en los distribuidores.",
+    "en": "ATIC summary in the Blue Book file: \"It is concluded that the cause of the sightings on 2 November 1957, was probably due to a phenomena known as 'Ball Lightning'.\" It rests on the area having been \"subjected to heavy thunderstorms just prior to the sightings\", with drizzle during the period. For the stalled-engine layer it proposes moisture deposited on distributor parts.",
     "source": "Project Blue Book — expediente «Vicinity Levelland, Texas», 2-3 nov 1957",
     "source_en": "Project Blue Book — file “Vicinity Levelland, Texas”, 2-3 Nov 1957",
     "url": "https://archive.org/details/1957-11-7229541-VicinityLevelland-Texas"

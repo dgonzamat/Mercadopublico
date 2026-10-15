@@ -93,6 +93,17 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "src": "/pursue/new-mexico-cattle-mutilations-1979-fbi.pdf",
+      "type": "pdf",
+      "title": "Expediente del FBI «Animal Mutilation»: informe de Gabe Valdez sobre la vaca de Manuel Gómez (1976) y memorando de cierre de Albuquerque (enero de 1980), 7 págs.",
+      "title_en": "FBI \"Animal Mutilation\" file: Gabe Valdez's report on Manuel Gómez's cow (1976) and the Albuquerque closing memo (January 1980), 7 pp.",
+      "description": "Extracto del expediente del FBI. El informe de la Policía Estatal de Nuevo México, redactado por el agente Gabriel Valdez el 15 de diciembre de 1976, sitúa el caso a 13 millas al este de Dulce: la vaca de tres años sin oreja izquierda, lengua, ubre ni recto, las marcas de trípode de 4 pulgadas que la siguen unos 600 pies, la sustancia amarilla que los laboratorios no identificaron y la medición de radiación de Howard Burgess. El memorando y la carta del FBI de Albuquerque (enero de 1980) cierran el asunto: no hubo nuevas denuncias en tierras indígenas y las de 1978, aunque sospechosas, no permitían determinar que hubiera mutilación.",
+      "description_en": "Extract from the FBI file. The New Mexico State Police report written by Officer Gabriel Valdez on 15 December 1976 places the case 13 miles east of Dulce: the three-year-old cow missing its left ear, tongue, udder and rectum, the 4-inch tripod marks that followed it for some 600 feet, the yellow substance the labs could not identify, and Howard Burgess's radiation reading. The Albuquerque FBI memo and letterhead memorandum (January 1980) close the matter: there were no new reports on Indian lands, and the 1978 reports, though suspicious, did not allow a determination that the animals had been mutilated.",
+      "source": "FBI, expediente «Animal Mutilation» (partes 3 y 5), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/AnimalMutilation"
+    },
+    {
       "src": "/pursue/rommel-report-1980-context.jpg",
       "type": "image",
       "title": "Contexto · Santa Fe (Nuevo México)",

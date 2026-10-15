@@ -86,6 +86,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/edwards-afb-1965-bluebook.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book · tarjeta, informe del Centro de Pruebas de Vuelo y evaluación del radar (extracto)",
+      "title_en": "Project Blue Book · record card, Flight Test Center report and radar evaluation (extract)",
+      "description": "Once páginas del expediente de Blue Book sobre Edwards (NARA). La tarjeta concluye: visual, astronómico (estrellas y planetas) con «globo» a mano; radar, ecos por condiciones atmosféricas. El informe del Centro de Pruebas de Vuelo del 21 de diciembre de 1965 describe de 7 a 12 objetos con «la forma y el aspecto general de estrellas» que parpadeaban en rojo, verde y blanco, identifica uno como globo meteorológico y dice que en un momento torre y radar casi coincidieron en tres objetos. La evaluación de la División de Tecnología Extranjera, firmada por Vincent D. Bryant, atribuye las fotos de pantalla a variaciones radicales de la atmósfera. Incluye una de esas fotografías.",
+      "description_en": "Eleven pages of the Blue Book file on Edwards (NARA). The record card concludes: visual, astro (stars/planets) with \"balloon\" added by hand; radar, returns due to atmospheric conditions. The Flight Test Center report of 21 December 1965 describes 7 to 12 objects with \"the general shape and appearance of stars\" flashing red, green and white, identifies one as a weather balloon and says that at one point tower and radar operators nearly agreed on three objects. The Foreign Technology Division evaluation signed by Vincent D. Bryant attributes the scope photos to radical variations in the atmosphere. One of those photographs is included.",
+      "source": "Project Blue Book, expediente «7 Oct 65, Edwards AFB, California» (NARA), espejo en archive.org · pp. 1, 2, 16–23 y 32",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1965-10-8692927-EdwardsAFB-California"
+    },
+    {
       "src": "/pursue/edwards-afb-1965-context.jpg",
       "type": "image",
       "title": "Contexto · Base Aérea de Edwards (California)",

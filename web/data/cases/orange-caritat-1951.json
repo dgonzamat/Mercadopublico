@@ -67,6 +67,15 @@
   },
   "documents": [
     {
+      "src": "https://www.cnes-geipan.fr/sites/default/files/PV%20AERO%20%281951208633%29.pdf",
+      "type": "link",
+      "title": "Expediente militar de 1951 · informe del coronel de la base 115 y relatos de los dos pilotos",
+      "title_en": "1951 military file · report by the commander of Air Base 115 and the two pilots' accounts",
+      "description": "Legajo de nueve páginas que publica el GEIPAN: el borderó del Estado Mayor, el informe del coronel al mando de la base aérea 115 de Orange-Caritat y los relatos firmados del teniente y del sargento primero que, el 15 de junio de 1951, persiguieron con sus Vampire un objeto plateado y brillante, primero inmóvil y esférico y después alargado, que se alejó hacia el este sobre la región de Serres. El coronel describe a los dos pilotos como experimentados y ponderados y sus relatos como idénticos. El GEIPAN clasifica el caso D. Los ficheros del GEIPAN son © CNES, por eso se enlaza y no se aloja.",
+      "description_en": "A nine-page file published by GEIPAN: the General Staff transmittal slip, the report by the colonel commanding Air Base 115 at Orange-Caritat and the signed accounts of the lieutenant and the sergeant who, on 15 June 1951, chased in their Vampires a bright silvery object, first motionless and spherical and then elongated, that moved away eastwards over the Serres area. The colonel describes both pilots as experienced and level-headed and their accounts as identical. GEIPAN classes the case D. GEIPAN's files are © CNES, so the file is linked rather than hosted.",
+      "source": "GEIPAN (CNES), expediente «PV AERO (1951208633)» · © CNES"
+    },
+    {
       "src": "/pursue/orange-caritat-1951-context.jpg",
       "type": "image",
       "title": "Contexto · un SE.535 Mistral, la versión francesa del de Havilland Vampire que volaba la 5.ª Escuadra",
