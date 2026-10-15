@@ -97,6 +97,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/minot-afb-1968-bluebook-extracto.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book · tarjeta de conclusiones y memorando del 24 de octubre de 1968 (extracto)",
+      "title_en": "Project Blue Book · record card and memo of 24 October 1968 (extract)",
+      "description": "Tres páginas del expediente de Project Blue Book sobre Minot (NARA). La tarjeta de registro concluye: avistamientos visuales desde tierra, «probable avión (B-52)» y «probable astronómico (Sirio)»; radar y visual aéreo, «posible plasma», y comenta que el contacto de radar y la pérdida temporal de transmisión UHF podrían atribuirse a un plasma «similar al rayo en bola». El memorando para el registro del 24 de octubre resume la llamada al teniente coronel Werlich: un blanco en el radar del B-52 que recorrió 2,5 millas en 3 segundos, se colocó junto al ala izquierda unas 20 millas mientras los dos transmisores fallaban, fotografías de la pantalla, catorce testigos más y la alarma de seguridad de un silo.",
+      "description_en": "Three pages of the Project Blue Book file on Minot (NARA). The record card concludes: ground-visual sightings, \"probable aircraft (B-52)\" and \"probable astro (Sirius)\"; radar and air-visual, \"possible plasma\", commenting that the radar contact and the temporary loss of UHF transmission could be attributed to plasma \"similar to ball lightning\". The memo for the record of 24 October summarises the call with Lt Col Werlich: a target on the B-52 radar that covered 2.5 miles in 3 seconds and held off the left wing for about 20 miles while both transmitters failed, scope photographs, fourteen other witnesses and a security alarm at one of the sites.",
+      "source": "Project Blue Book, expediente «24 Oct 68, Minot AFB, North Dakota» (NARA), espejo en archive.org · pp. 1, 3 y 4",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1968-10-7170577-MinotAFB-NorthDakota"
+    },
+    {
       "src": "/pursue/minot-afb-1968-context.jpg",
       "type": "image",
       "title": "Contexto · Base Aérea de Minot (Dakota del Norte)",

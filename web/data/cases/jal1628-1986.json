@@ -77,6 +77,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/jal1628-1986-faa-extracto.pdf",
+      "type": "pdf",
+      "title": "FAA, Región de Alaska · comunicado, transcripción de radio y análisis de radar del vuelo JAL 1628 (extracto)",
+      "title_en": "FAA, Alaskan Region · release, radio transcript and radar analysis of JAL flight 1628 (extract)",
+      "description": "Diez páginas del expediente que la Oficina de Asuntos Públicos del FAA en Anchorage publicó el 5 de marzo de 1987: el índice, el comunicado 87-09, en el que la agencia dice que «no pudo confirmar» el suceso y que el segundo blanco era un eco partido del propio 747, visto por el vuelo de United que no vio nada más; las siete páginas de la transcripción seleccionada de las comunicaciones entre JAL 1628, el centro de Anchorage, el ROCC militar, United 69 y el C-130, con horas UTC; y el análisis de los datos de radar del 25 de febrero de 1987, que no halló anomalías.",
+      "description_en": "Ten pages of the file the FAA Public Affairs Office in Anchorage released on 5 March 1987: the contents page; release 87-09, in which the agency says it was \"unable to confirm the event\" and that the second target was a split radar return from the 747 itself, seen by the United flight whose pilots saw nothing else; the seven pages of the selected transcript of communications between JAL 1628, Anchorage Center, the military ROCC, United 69 and the C-130, with UTC times; and the 25 February 1987 analysis of the radar data, which found no abnormalities.",
+      "source": "FAA, Región de Alaska — «Selected Material Relative to the FAA Investigation of Japan Air Lines flight 1628» (5 mar 1987), copia en NICAP · pp. 41-49 y 53 del PDF",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.nicap.org/docs/861117_flight1628.pdf"
+    },
+    {
       "src": "/pursue/jal1628-1986-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto de Anchorage (Alaska), destino del vuelo JAL 1628",

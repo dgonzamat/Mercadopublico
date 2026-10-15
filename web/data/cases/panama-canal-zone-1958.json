@@ -99,6 +99,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/panama-canal-zone-1958-bluebook-extracto.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book · tarjeta, análisis de Hoffman e informe IR-4-58 de la Zona del Canal (extracto)",
+      "title_en": "Project Blue Book · record card, Hoffman analysis and Canal Zone report IR-4-58 (extract)",
+      "description": "Seis páginas del expediente de Project Blue Book sobre la Zona del Canal, 9-10 de marzo de 1958 (NARA). La tarjeta marca «probablemente globo» y, a mano, «falso blanco»; resume dos trazas de radar con velocidades de cero a 1.000 mph y luces rojas y verdes vistas un instante. El análisis del 30 de octubre firmado por el coronel Gordon C. Hoffman atribuye el primer avistamiento a uno o más globos y el segundo a un falso blanco. Siguen el resumen del capitán Vernon D. Adams (informe IR-4-58), el informe del Ejército con los reflectores y el registro horario de la sección de movimiento e identificación.",
+      "description_en": "Six pages of the Project Blue Book file on the Canal Zone, 9-10 March 1958 (NARA). The record card marks \"probably balloon\" and, by hand, \"false target\"; it summarises two radar tracks with speeds from hovering to 1,000 mph and red and green lights seen briefly. The 30 October analysis signed by Colonel Gordon C. Hoffman attributes the first sighting to one or more balloons and the second to a false target. Then come Captain Vernon D. Adams's summary (report IR-4-58), the Army report with the searchlights and the hour-by-hour log of the movement and identification section.",
+      "source": "Project Blue Book, expediente «1958-03-6963741-PanamaCanalZone» (NARA), espejo en archive.org · pp. 1, 11-14 y 17",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1958-03-6963741-PanamaCanalZone"
+    },
+    {
       "src": "/pursue/panama-canal-zone-1958-context.jpg",
       "type": "image",
       "title": "Contexto · el Canal de Panamá (esclusas), en cuya Zona el radar militar detectó el objeto",
