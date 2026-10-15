@@ -88,6 +88,28 @@
   ],
   "documents": [
     {
+      "src": "/pursue/cecconi-treviso-1979-archivio-am.pdf",
+      "type": "pdf",
+      "title": "Aeronautica Militare — ficha del 18 de junio de 1979 en el catálogo de avistamientos 1972–1990 (2 págs.)",
+      "title_en": "Italian Air Force — the 18 June 1979 entry in the 1972–1990 sightings catalogue (2 pp.)",
+      "description": "Extracto (págs. 98 y 106 de 227) del catálogo «Avvistamenti oggetti volanti non identificati» del Stato Maggiore dell'Aeronautica, Reparto Generale Sicurezza, publicado en 2023 en aeronautica.difesa.it: la portada del año 1979 y la ficha n.º 8 de junio. La ficha registra Treviso, 18/06/1979, «mattina, non precisato»; forma cilíndrica, color negro; velocidad y dirección no indicadas; altura de unos 3.000 m; cielo despejado; aviso dado por personal de la Aeronautica Militare. En «riscontri» dice que, tras examinar los datos del archivo, el suceso se catalogó como O.V.N.I. No nombra al piloto ni menciona fotografías ni radar.",
+      "description_en": "Extract (pp. 98 and 106 of 227) of the catalogue 'Avvistamenti oggetti volanti non identificati' of the Italian Air Staff, General Security Department, published in 2023 on aeronautica.difesa.it: the 1979 title page and June's entry no. 8. The entry records Treviso, 18/06/1979, 'mattina, non precisato' (morning, time not specified); cylindrical shape, black colour; speed and direction not stated; altitude about 3,000 m; clear sky; reported by Aeronautica Militare personnel. Under 'riscontri' it says that, after reviewing the archived data, the event was catalogued as a UFO. It does not name the pilot or mention photographs or radar.",
+      "source": "Aeronautica Militare (aeronautica.difesa.it) — Archivio OVNI, periodo 1972–1990",
+      "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
+      "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/Archivio_OVNI_periodo1972-1990.pdf"
+    },
+    {
+      "src": "/pursue/cecconi-treviso-1979-foto.jpg",
+      "type": "image",
+      "title": "Fotografía del objeto atribuida al G-91R de Cecconi (18 de junio de 1979)",
+      "title_en": "Photograph of the object attributed to Cecconi's G-91R (18 June 1979)",
+      "description": "Reproducción de una copia impresa de una de las fotografías del suceso, tal como la publica Wikimedia Commons, que la fecha el 18 de junio de 1979 y la atribuye al mariscal Giancarlo Cecconi. Muestra, en una toma aérea oblicua, un objeto oscuro y alargado de extremos romos suspendido sobre un paisaje de campos, con la pista y la plataforma de un aeródromo en el ángulo inferior izquierdo. Commons da como fuente ufoinsight.com y no indica de qué copia sale ni a qué fotograma de la serie corresponde; es una imagen de segunda generación, no el negativo.",
+      "description_en": "Reproduction of a printed copy of one of the photographs of the event, as published by Wikimedia Commons, which dates it to 18 June 1979 and attributes it to Marshal Giancarlo Cecconi. In an oblique aerial shot it shows a dark, elongated object with blunt ends hanging over a landscape of fields, with an airfield runway and apron in the lower left corner. Commons gives ufoinsight.com as its source and does not say which copy it comes from or which frame of the series it is; it is a second-generation image, not the negative.",
+      "source": "UFO photographed by Italian pilot Giancarlo Cecconi, 1979.jpg · Wikimedia Commons",
+      "license": "Dominio público en Italia (PD-Italy: fotografía simple, Ley 633/1941, art. 92)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:UFO_photographed_by_Italian_pilot_Giancarlo_Cecconi,_1979.jpg"
+    },
+    {
       "src": "/pursue/cecconi-treviso-1979-context.jpg",
       "type": "image",
       "title": "Contexto · Treviso (Italia), base del 2° Stormo cuyo piloto persiguió el objeto",
