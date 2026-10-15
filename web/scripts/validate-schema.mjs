@@ -65,6 +65,8 @@ const isStr = (v) => typeof v === "string" && v.length > 0;
 const isNum = (v) => typeof v === "number" && Number.isFinite(v);
 const isArr = (v) => Array.isArray(v);
 // URL http(s) válida, o ruta absoluta bajo /public (para fotos locales).
+const SUPA_PURSUE = "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
+const DVIDS_EMBED = "https://www.dvidshub.net/video/embed/";
 const isHttpUrl = (v) => typeof v === "string" && /^https?:\/\/\S+$/.test(v);
 // Bandera: dos símbolos indicadores regionales (emoji de país, p. ej. 🇦🇷).
 const isFlag = (v) =>
@@ -84,6 +86,7 @@ const seenResearcherIds = new Set();
 
 researchers.forEach((r, i) => {
   const w = `researchers[${i}]${r.id ? ` (${r.id})` : ""}`;
+  validateDocEmbeds(w, r.documents);
   if (!isStr(r.id)) err(w, "id obligatorio (string)");
   else if (seenResearcherIds.has(r.id)) err(w, `id duplicado "${r.id}"`);
   else seenResearcherIds.add(r.id);
@@ -153,6 +156,41 @@ const caseFiles = fs.readdirSync(casesDir).filter((f) => f.endsWith(".json"));
 const seenCaseIds = new Set();
 const seenNums = new Set();
 const pendingRelated = [];
+
+// Visor de documentos (DocEmbed[]): lo usan los casos y los actores.
+function validateDocEmbeds(w, docs) {
+  if (docs !== undefined) {
+    if (!isArr(docs)) err(w, "documents debe ser array (DocEmbed[])");
+    else
+      docs.forEach((d, j) => {
+        const dw = `${w}.documents[${j}]`;
+        const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
+        if (!isStr(d.src)) err(dw, "src obligatorio (string)");
+        else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids)
+          err(dw, `src debe ser same-origin (/pursue/), el bucket Supabase pursue, o el player de DVIDS (war.gov no se puede embeber): "${d.src}"`);
+        if (!["pdf", "image", "video"].includes(d.type))
+          err(dw, `type inválido "${d.type}" (pdf|image|video)`);
+        // El origen DVIDS es exclusivo de "video", y "video" es exclusivo de
+        // DVIDS: sin este cruce, un PDF podría apuntar al player (iframe roto)
+        // o un "video" a /pursue (binario que no cabe, justo lo que evitamos).
+        if (isDvids && d.type !== "video")
+          err(dw, `el player de DVIDS solo admite type "video", no "${d.type}": "${d.src}"`);
+        if (d.type === "video" && !isDvids)
+          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>): "${d.src}"`);
+        if (d.type === "video" && isDvids && !/^\d+$/.test(d.src.slice(DVIDS_EMBED.length)))
+          err(dw, `src de DVIDS debe terminar en el id numérico del video: "${d.src}"`);
+        if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))
+          err(dw, `type "pdf" exige src con extensión .pdf: "${d.src}"`);
+        if (isStr(d.src) && d.type === "image" && !/\.(jpe?g|png|webp|gif)$/i.test(d.src))
+          err(dw, `type "image" exige src con extensión de imagen (.jpg/.png/.webp/.gif): "${d.src}"`);
+        if (!isStr(d.title)) err(dw, "title obligatorio (string)");
+        for (const f of ["title_en", "description", "description_en", "source", "license"])
+          if (d[f] !== undefined && !isStr(d[f])) err(dw, `${f} debe ser string`);
+        if (d.fallbackUrl !== undefined && !isHttpUrl(d.fallbackUrl))
+          err(dw, `fallbackUrl malformada: "${d.fallbackUrl}"`);
+      });
+  }
+}
 
 for (const file of caseFiles) {
   const w = `cases/${file}`;
@@ -290,39 +328,7 @@ for (const file of caseFiles) {
   // responde sin `x-frame-options` ni `frame-ancestors` (el resto del sitio va
   // con DENY: el embed es deliberado). La garantía perdida la cubre la sonda
   // viva `check-dvids-embeds.mjs`, no el build (que es offline a propósito).
-  const SUPA_PURSUE = "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
-  const DVIDS_EMBED = "https://www.dvidshub.net/video/embed/";
-  if (c.documents !== undefined) {
-    if (!isArr(c.documents)) err(w, "documents debe ser array (DocEmbed[])");
-    else
-      c.documents.forEach((d, j) => {
-        const dw = `${w}.documents[${j}]`;
-        const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
-        if (!isStr(d.src)) err(dw, "src obligatorio (string)");
-        else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids)
-          err(dw, `src debe ser same-origin (/pursue/), el bucket Supabase pursue, o el player de DVIDS (war.gov no se puede embeber): "${d.src}"`);
-        if (!["pdf", "image", "video"].includes(d.type))
-          err(dw, `type inválido "${d.type}" (pdf|image|video)`);
-        // El origen DVIDS es exclusivo de "video", y "video" es exclusivo de
-        // DVIDS: sin este cruce, un PDF podría apuntar al player (iframe roto)
-        // o un "video" a /pursue (binario que no cabe, justo lo que evitamos).
-        if (isDvids && d.type !== "video")
-          err(dw, `el player de DVIDS solo admite type "video", no "${d.type}": "${d.src}"`);
-        if (d.type === "video" && !isDvids)
-          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>): "${d.src}"`);
-        if (d.type === "video" && isDvids && !/^\d+$/.test(d.src.slice(DVIDS_EMBED.length)))
-          err(dw, `src de DVIDS debe terminar en el id numérico del video: "${d.src}"`);
-        if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))
-          err(dw, `type "pdf" exige src con extensión .pdf: "${d.src}"`);
-        if (isStr(d.src) && d.type === "image" && !/\.(jpe?g|png|webp|gif)$/i.test(d.src))
-          err(dw, `type "image" exige src con extensión de imagen (.jpg/.png/.webp/.gif): "${d.src}"`);
-        if (!isStr(d.title)) err(dw, "title obligatorio (string)");
-        for (const f of ["title_en", "source", "license"])
-          if (d[f] !== undefined && !isStr(d[f])) err(dw, `${f} debe ser string`);
-        if (d.fallbackUrl !== undefined && !isHttpUrl(d.fallbackUrl))
-          err(dw, `fallbackUrl malformada: "${d.fallbackUrl}"`);
-      });
-  }
+  validateDocEmbeds(w, c.documents);
 
   // BIBLIOGRAFÍA: todo caso debe citar al menos una fuente; url bien formada
   if (!isArr(c.sources) || c.sources.length === 0) {

@@ -927,8 +927,10 @@ if (fs.existsSync(meceClassesPath)) {
 // binarios. Las URLs externas (http/https, p. ej. Commons) se eximen: su
 // disponibilidad no es verificable en build.
 const publicDir = path.join(root, "public");
+// Los actores también embeben documentos (Researcher.documents, oct 2026).
+const docHosts = [...cases, ...researchers];
 const docAssetRefs = []; // {caseId, ref}
-for (const c of cases) {
+for (const c of docHosts) {
   for (const d of c.documents || []) {
     if (typeof d.src === "string" && d.src.startsWith("/")) docAssetRefs.push({ caseId: c.id, ref: d.src });
   }
@@ -997,7 +999,7 @@ const SUPA_PURSUE_PREFIX =
   "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
 const bucketManifestPath = path.join(root, "data", "pursue-bucket-manifest.json");
 const bucketRefs = []; // {caseId, name}
-for (const c of cases) {
+for (const c of docHosts) {
   for (const d of c.documents || []) {
     if (typeof d.src === "string" && d.src.startsWith(SUPA_PURSUE_PREFIX)) {
       bucketRefs.push({ caseId: c.id, name: d.src.slice(SUPA_PURSUE_PREFIX.length) });
