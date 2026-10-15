@@ -4,6 +4,7 @@ import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
 import { LocaleLink } from "@/components/LocaleLink";
 import { CategoryNav } from "@/components/CategoryNav";
+import { clip } from "@/components/CaseRow";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { RegionFilter } from "@/components/RegionFilter";
 import { ContractorsShowcase } from "@/components/ContractorsShowcase";
@@ -198,7 +199,7 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
                         </p>
                       )}
                       <p className="mt-2 line-clamp-3 text-xs text-muted">
-                        <T es={r.bio_short} en={r.bio_short_en} locale={locale} />
+                        <T es={clip(r.bio_short, 200)} en={clip(r.bio_short_en, 200)} locale={locale} />
                       </p>
                     </div>
                   </LocaleLink>
