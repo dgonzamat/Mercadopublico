@@ -48,7 +48,9 @@ export function CaseRow({
         <p className="cr-sum">
           {/* La fila muestra una línea truncada: mandar el resumen entero
               (hasta 1.500 caracteres, dos veces en el HTML y en el payload de
-              Next) inflaba /cases a 2 MB sin que el lector viera más. */}
+              Next) inflaba /cases a 2 MB sin que el lector viera más. Con 160
+              caracteres la página seguía en ~14.700 palabras; 90 (~15
+              palabras) bastan para la línea visible (oct 2026). */}
           <T es={clip(caseData.summary)} en={clip(caseData.summary_en ?? caseData.summary)} locale={locale} />
         </p>
       </div>
@@ -62,7 +64,7 @@ export function CaseRow({
   );
 }
 
-function clip(t: string, max = 160): string {
+export function clip(t: string, max = 90): string {
   if (t.length <= max) return t;
   const cut = t.slice(0, max);
   return cut.slice(0, cut.lastIndexOf(" ")) + "…";
