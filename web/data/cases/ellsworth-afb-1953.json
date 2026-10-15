@@ -72,6 +72,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/ellsworth-afb-1953-blue-book.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book de Rapid City–Blackhawk (agosto de 1953): tarjeta, informe T53-11156 y cartas de Atwell y Hynek, 8 págs.",
+      "title_en": "Blue Book file on Rapid City–Blackhawk (August 1953): record card, report T53-11156 and the Atwell and Hynek letters, 8 pp.",
+      "description": "La tarjeta de Blue Book dice que el representante de ATIC no pudo determinar la identidad del objeto, y una corrección manuscrita en la casilla de conclusión pone «Astro (Capella)» para lo visual y «propagación anómala» para el radar. Las páginas 20 a 23 del informe T53-11156 recogen la entrevista al controlador del GCI y a los dos pilotos de F-84: la persecución de cinco minutos hasta 80 millas al norte con el eco 5-10 millas por delante, la mira de radar sin distancia y la conclusión «Unsolved». Siguen la carta del mayor Allen L. Atwell a Hynek (19 de enero de 1954), que cree que el piloto admitiría haber perseguido una estrella grande, y la respuesta de Hynek del 2 de febrero.",
+      "description_en": "Extract of the Blue Book file. The record card says the ATIC representative was unable to determine the identity of the object, and a handwritten correction in the conclusion box reads \"Astro (Capella)\" for the visual and \"anomalous propagation\" for the radar. Pages 20 to 23 of report T53-11156 record the interviews with the GCI controller and the two F-84 pilots: the five-minute chase to 80 miles north with the blip 5-10 miles ahead, the radar gunsight that gave no range, the camera that malfunctioned, and the conclusion \"Unsolved\". They are followed by Maj. Allen L. Atwell's letter to Hynek (19 January 1954), who believes the pilot would admit he was chasing a large star, and Hynek's reply of 2 February.",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1953-08-6979324-RapidCity-Blackhawk-SoughDakotaArea"
+    },
+    {
       "src": "/pursue/ellsworth-afb-1953-context.jpg",
       "type": "image",
       "title": "Contexto · Base Aérea de Ellsworth (Dakota del Sur)",
