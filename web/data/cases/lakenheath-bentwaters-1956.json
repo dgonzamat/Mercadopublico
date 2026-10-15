@@ -88,6 +88,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/lakenheath-bentwaters-1956-blue-book-extract.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book · tarjeta, análisis de ATIC e informe IR-1-56 (extracto, 4 págs.)",
+      "title_en": "Project Blue Book · record card, ATIC analysis and report IR-1-56 (extract, 4 pp.)",
+      "description": "Cuatro páginas del expediente de Project Blue Book sobre el caso. La tarjeta de registro (formulario ATIC 329) fija las fechas del 13 y 14 de agosto de 1956, unas cinco horas de observación por radar, en tierra y desde el aire, y la conclusión «Anam. Propagation»; su comentario dice que, según el informe IR-1-56, las observaciones «cannot be considered as concurrent». El análisis de AFOIN-4E1 del 31 de agosto, firmado por el coronel Gordon C. Hoffman, atribuye los blancos a condiciones meteorológicas y pide fotos de pantalla y datos de inversión térmica. Las dos últimas páginas son del informe IR-1-56 de la 81.ª Ala de Cazabombarderos: las tres trayectorias del radar GCA de Bentwaters y el objeto visto con prismáticos desde la torre durante una hora.",
+      "description_en": "Four pages from the Project Blue Book file on the case. The record card (ATIC Form 329) sets the dates of 13 and 14 August 1956, about five hours of radar, ground and air observation, and the conclusion 'Anam. Propagation'; its comment says that, according to report IR-1-56, the observations 'cannot be considered as concurrent'. The AFOIN-4E1 analysis of 31 August, signed by Colonel Gordon C. Hoffman, attributes the targets to weather conditions and asks for scope photographs and temperature-inversion data. The last two pages are from report IR-1-56 of the 81st Fighter Bomber Wing: the three tracks on the Bentwaters GCA radar and the object watched through binoculars from the tower for an hour.",
+      "source": "Project Blue Book, expediente «1956-08-7069309-Bentwaters-Lakenheath-England» (NARA, copia en archive.org), págs. 1, 27, 34 y 40",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1956-08-7069309-Bentwaters-Lakenheath-England"
+    },
+    {
       "src": "/pursue/lakenheath-bentwaters-1956-context.jpg",
       "type": "image",
       "title": "Contexto · RAF Lakenheath (Inglaterra), base del incidente radar-visual",
