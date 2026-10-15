@@ -76,6 +76,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/cosford-1993-defe24-2086.pdf",
+      "type": "pdf",
+      "title": "Expediente DEFE 24/2086: informe de la Policía de la RAF en Cosford y minutas de Sec(AS)2a del 16 y el 22 de abril de 1993",
+      "title_en": "File DEFE 24/2086: RAF Police report from Cosford and Sec(AS)2a minutes of 16 and 22 April 1993",
+      "description": "Seis páginas del expediente DEFE 24/2086 del Ministerio de Defensa británico. Abre el informe de un cabo de la Policía de la RAF: el 31 de marzo de 1993, a la 01:15, en patrulla por RAF Cosford, vio dos luces circulares color crema volar en silencio hacia el sureste a unos 1.000 pies durante un minuto; ninguna base ni aeropuerto consultado tenía aviones en el aire, y a las 02:50 el observador meteorológico de Shawbury llamó para contar lo que había visto. Siguen la minuta de Sec(AS)2a del 16 de abril, que descarta la reentrada de un cohete ruso a las 00:10 y pide investigar un objeto «de considerable significación para la defensa» no detectado por radar, y la minuta al ACAS del 22 de abril.",
+      "description_en": "Six pages from the British Ministry of Defence file DEFE 24/2086. It opens with an RAF Police corporal's report: on 31 March 1993, at 01:15, on patrol at RAF Cosford, he saw two circular cream-coloured lights fly silently south-east at about 1,000 feet for a minute; no base or airport he checked had aircraft airborne, and at 02:50 the Shawbury Met Office observer phoned to describe what he had seen. Next come the Sec(AS)2a minute of 16 April, which rejects a Russian rocket re-entry at 00:10 and recommends investigating an object of 'considerable defence significance' undetected by radar, and the 22 April minute to ACAS.",
+      "source": "The National Archives (Reino Unido), DEFE 24/2086, págs. 57-58, 75-76 y 52-53 del PDF; copia digital en archive.org (BritishUFOFiles)",
+      "license": "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)",
+      "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11511541"
+    },
+    {
       "src": "/pursue/cosford-1993-context.jpg",
       "type": "image",
       "title": "Contexto · RAF Cosford (Shropshire, Inglaterra)",

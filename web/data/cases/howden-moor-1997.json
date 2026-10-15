@@ -70,6 +70,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/howden-moor-1997-hansard-1998.pdf",
+      "type": "pdf",
+      "title": "Hansard: respuestas escritas a Helen Jackson sobre la noche del 24 de marzo de 1997 (30 de marzo y 7 de abril de 1998)",
+      "title_en": "Hansard: written answers to Helen Jackson on the night of 24 March 1997 (30 March and 7 April 1998)",
+      "description": "Respuestas escritas de la Cámara de los Comunes a la diputada Helen Jackson. El 30 de marzo de 1998 el ministro John Spellar dice que varios aviones militares tenían reservado vuelo a baja cota en el norte de Inglaterra esa noche, que Defensa recibió 13 quejas y ningún aviso de «ovnis», que la zona de peligro del 25 de marzo sobre el embalse de Howden era para un helicóptero de rescate de la RAF que buscaba a petición de la policía, y que no consta ningún estampido sónico de aviones de la RAF o la OTAN. Interior añade que la policía no halló rastro del avión que se creyó estrellado. El 7 de abril fija la reserva sobre el Peak District de 20:30 a 21:07.",
+      "description_en": "Written answers in the House of Commons to MP Helen Jackson. On 30 March 1998 minister John Spellar says a number of military aircraft were booked for low-flying training in northern England that evening, that Defence received 13 complaints and no reports of 'UFOs', that the Danger Area of 25 March around Howden Reservoir was for an RAF rescue helicopter searching at the police's request, and that there is no record of sonic events from RAF or NATO aircraft. The Home Office adds that police found no trace of the aircraft thought to have crashed. On 7 April he puts the booking over the Peak District at 20:30 to 21:07.",
+      "source": "Hansard, Cámara de los Comunes: HC Deb 30 mar 1998 vol 309 cc393W y 414-415W; 7 abr 1998 vol 310 c222W (texto de api.parliament.uk/historic-hansard, maquetado en PDF)",
+      "license": "Open Parliament Licence v3.0",
+      "fallbackUrl": "https://api.parliament.uk/historic-hansard/written_answers/1998/mar/30/low-flying-training"
+    },
+    {
       "src": "/pursue/howden-moor-1997-context.jpg",
       "type": "image",
       "title": "Contexto · Howden (Peak District, Inglaterra)",

@@ -99,6 +99,26 @@
   ],
   "documents": [
     {
+      "src": "/pursue/bonnybridge-1992-defe24-1963.pdf",
+      "type": "pdf",
+      "title": "Expediente DEFE 24/1963: respuesta del Ministerio de Defensa sobre la oleada de Bonnybridge (13 de abril de 1993)",
+      "title_en": "File DEFE 24/1963: Ministry of Defence reply on the Bonnybridge wave (13 April 1993)",
+      "description": "Carta de Sec(AS)2a, la oficina del Ministerio de Defensa británico que coordinaba los informes de ovnis, fechada el 13 de abril de 1993 y archivada en el expediente DEFE 24/1963. Responde a una carta del 29 de marzo: dice que el ministerio sabe por otros investigadores que ha habido una oleada de avistamientos centrada en Bonnybridge, pero que no ha recibido ningún informe de esa zona; que la posición de las autoridades de EE. UU. es que el avión Aurora no existe; que no puede sugerir otra actividad militar que explique los avistamientos salvo que la zona ve a veces reactores militares, y que los aviones teledirigidos solo vuelan en polígonos, nunca cerca de Bonnybridge.",
+      "description_en": "Letter from Sec(AS)2a, the British Ministry of Defence office that co-ordinated UFO reports, dated 13 April 1993 and filed in DEFE 24/1963. It answers a letter of 29 March: it says the ministry is aware from other researchers of a wave of sightings centred on Bonnybridge but has received no reports from that area; that the US authorities' position is that the Aurora aircraft does not exist; that it cannot suggest any military activity to explain the sightings, other than that the area sees some military jet activity from time to time; and that RPVs fly only in ranges, never near Bonnybridge.",
+      "source": "The National Archives (Reino Unido), DEFE 24/1963, pág. 249 del PDF; copia digital en archive.org (BritishUFOFiles)",
+      "license": "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)",
+      "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11511527"
+    },
+    {
+      "src": "https://archive.org/details/BritishUFOFiles/defe-24-1963.pdf/page/n249/mode/1up",
+      "type": "link",
+      "title": "Carta de Strange Phenomena Investigations al Ministerio de Defensa sobre los avistamientos de Bonnybridge (29 de marzo de 1993), en DEFE 24/1963",
+      "title_en": "Strange Phenomena Investigations letter to the Ministry of Defence on the Bonnybridge sightings (29 March 1993), in DEFE 24/1963",
+      "description": "Carta del editor de la revista SPI Enigmas, del grupo Strange Phenomena Investigations, archivada en el expediente DEFE 24/1963 (pág. 250 de la copia de archive.org). Pide al ministerio información sobre una serie de avistamientos en el centro de Escocia, sobre todo en Bonnybridge, que dice que ocurren desde noviembre de 1992 y continúan; cuenta que los aeropuertos de Edimburgo, Glasgow y Cumbernauld no pudieron aclararlos, y pregunta si podrían deberse a ejercicios militares, al avión Aurora o a pruebas de aviones teledirigidos sobre zonas pobladas. Es la carta a la que responde el ministerio el 13 de abril; es de un particular, no obra de la Corona.",
+      "description_en": "Letter from the editor of SPI Enigmas, the magazine of the group Strange Phenomena Investigations, filed in DEFE 24/1963 (p. 250 of the archive.org copy). It asks the ministry for information on a spate of sightings in central Scotland, particularly over Bonnybridge, which it says have been occurring since November 1992 and continue; it says Edinburgh, Glasgow and Cumbernauld airports could not clarify them, and asks whether they could be military exercises, the Aurora aircraft or drone tests over populated areas. It is the letter the ministry answers on 13 April; it is a private letter, not a Crown work.",
+      "source": "The National Archives (Reino Unido), DEFE 24/1963; copia digital en archive.org (BritishUFOFiles)"
+    },
+    {
       "src": "/pursue/bonnybridge-1992-context.jpg",
       "type": "image",
       "title": "Contexto · Bonnybridge (Escocia), corazón del 'triángulo de Falkirk'",

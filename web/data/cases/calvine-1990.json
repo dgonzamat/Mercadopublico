@@ -75,6 +75,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/calvine-1990-defe24-1940.pdf",
+      "type": "pdf",
+      "title": "Expediente DEFE 24/1940: nota del incidente de Calvine, minuta del 14 de septiembre de 1990 y líneas para responder al Daily Record",
+      "title_en": "File DEFE 24/1940: note on the Calvine incident, minute of 14 September 1990 and lines to take with the Daily Record",
+      "description": "Tres páginas del expediente DEFE 24/1940 del Ministerio de Defensa. Una nota manuscrita, «UFO Incident: Saturday 4th August 90», sitúa el avistamiento en Calvine, 20 millas al norte de Pitlochry junto a la A9, hacia las 21:00: un ovni en forma de diamante suspendido unos 10 minutos antes de ascender en vertical a gran velocidad, mientras un avión de la RAF que se cree un Harrier hacía pasadas a baja cota. La minuta de Sec(AS)2a del 14 de septiembre dice que los seis negativos llegaron el 10 de septiembre, que el avión es un Harrier, con un segundo apenas visible, que no hay conclusión sobre el objeto ni registro de Harriers en la zona, y que los negativos se devolvieron al periódico.",
+      "description_en": "Three pages from the Ministry of Defence file DEFE 24/1940. A handwritten note, 'UFO Incident: Saturday 4th August 90', places the sighting at Calvine, 20 miles north of Pitlochry off the A9, at about 9 pm: a diamond-shaped UFO hovering for about 10 minutes before ascending vertically at high speed, while an RAF aircraft believed to be a Harrier made low-level passes. The Sec(AS)2a minute of 14 September says the six negatives arrived on 10 September, that the jet is a Harrier, with a barely visible second one, that no conclusion was reached on the object and there is no record of Harriers in the area, and that the negatives were returned to the newspaper.",
+      "source": "The National Archives (Reino Unido), DEFE 24/1940, págs. 114-116 del PDF; copia digital en archive.org (BritishUFOFiles)",
+      "license": "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)",
+      "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11483085"
+    },
+    {
       "src": "/pursue/calvine-1990-context.jpg",
       "type": "image",
       "title": "Contexto · Pitlochry (Perthshire, Escocia), cerca de donde se tomó la fotografía de Calvine",
