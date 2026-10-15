@@ -122,7 +122,7 @@ const unquoted = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^
 // recurso retórico: no son deuda. Si una deja de usarla, se avisa.
 const FORMULA_REVIEWED = new Set([
   "allagash-1976", "alma-ata-1991", "colorado-law-enforcement-2023", "deception-island-1965",
-  "detroit-dome-object-1958", "dow-uap-release04-05-catalog-2025", "eight-pointed-star-2013",
+  "detroit-dome-object-1958", "eight-pointed-star-2013",
   "ellsworth-woods-1977", "kinross-incident-1953", "trancas-1963",
   "uso-formation-nonlinear-edit-2024",
 ]);

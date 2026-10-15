@@ -70,7 +70,7 @@
     "section_label": "Investigadores científicos",
     "credentials": "PhD inmunología Stanford + 230+ peer-reviewed papers + 50+ patentes + co-fundador 8+ biotechs",
     "framework": "plurality",
-    "bio_short": "Es el científico de mayor rango que aplica análisis forense de laboratorio a materiales presuntamente asociados al fenómeno. Mediante imagen iónica de alta resolución ha reportado proporciones isotópicas (magnesio, bismuto) difíciles de explicar por procesos naturales terrestres. Mantiene una disciplina estricta: no afirma un origen extraterrestre, solo 'origen desconocido con propiedades anómalas'.",
+    "bio_short": "Es el científico de mayor rango que aplica análisis forense de laboratorio a materiales presuntamente asociados al fenómeno. Mediante imagen iónica de alta resolución ha reportado proporciones isotópicas (magnesio, bismuto) difíciles de explicar por procesos naturales terrestres. Mantiene una disciplina estricta: no afirma un origen extraterrestre, solo 'origen desconocido con propiedades anómalas'. Es miembro del consejo científico asesor sobre UAP que la ODNI formó en junio de 2026. En el episodio 11 del Bigelow Podcast (octubre de 2026) dijo, según el resumen publicado por UFO News, que en cuatro meses el consejo no había recibido ningún dato, que ni siquiera ve los videos antes de que se publiquen, que no tiene poder de citación y que la resistencia viene del personal de nivel medio de las agencias, no de sus jefes.",
     "works": [
       {
         "year": 2021,
@@ -87,13 +87,26 @@
     ],
     "section_label_en": "Scientific researchers",
     "credentials_en": "PhD in immunology, Stanford + 230+ peer-reviewed papers + 50+ patents + co-founder of 8+ biotechs",
-    "bio_short_en": "He is the highest-profile scientist applying forensic laboratory analysis to materials presumably associated with the phenomenon. Using high-resolution ion imaging he has reported isotopic ratios (magnesium, bismuth) hard to explain by natural terrestrial processes. He keeps a strict discipline: he does not claim an extraterrestrial origin, only 'unknown origin with anomalous properties'.",
+    "bio_short_en": "He is the highest-profile scientist applying forensic laboratory analysis to materials presumably associated with the phenomenon. Using high-resolution ion imaging he has reported isotopic ratios (magnesium, bismuth) hard to explain by natural terrestrial processes. He keeps a strict discipline: he does not claim an extraterrestrial origin, only 'unknown origin with anomalous properties'. He sits on the UAP science advisory council that the ODNI formed in June 2026. On episode 11 of the Bigelow Podcast (October 2026) he said, according to the summary published by UFO News, that in four months the council had not received any data, that it does not even see videos before they are released, that it has no subpoena power, and that the resistance comes from mid-level agency staff, not their leaders.",
     "sources": [
       {
         "name": "Nolan, Vallée et al., 'The New Science of UAP', arXiv:2502.06794 (2025)",
         "url": "https://arxiv.org/abs/2502.06794",
         "note": "Marco metodológico para el análisis de materiales anómalos.",
         "note_en": "Methodological framework for analyzing anomalous materials."
+      },
+      {
+        "name": "Bigelow Podcast, episodio 11: «Three Beings at the Bedside: Bigelow & Nolan's Childhood Encounters» (YouTube, oct 2026)",
+        "name_en": "Bigelow Podcast, episode 11: 'Three Beings at the Bedside: Bigelow & Nolan's Childhood Encounters' (YouTube, Oct 2026)",
+        "url": "https://www.youtube.com/watch?v=vabzzz6bgWY",
+        "note": "Episodio completo (1 h 54 min). La transcripción no se pudo descargar para contrastar la cita.",
+        "note_en": "Full episode (1 h 54 min). The transcript could not be downloaded to check the wording."
+      },
+      {
+        "name": "UFO News: «Dr. Garry Nolan Reveals Latest Info on Government UFO Advisory Council»",
+        "url": "https://www.ufonews.co/post/dr-garry-nolan-reveals-latest-info-on-government-ufo-advisory-council",
+        "note": "Resumen de lo que dijo sobre el consejo en el episodio.",
+        "note_en": "Summary of what he said about the council on the episode."
       }
     ]
   },
