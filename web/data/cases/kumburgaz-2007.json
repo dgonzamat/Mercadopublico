@@ -10,7 +10,8 @@
   "location": {
     "lat": 41.06,
     "lng": 28.36,
-    "place": "Kumburgaz, Istanbul"
+    "place": "Kumburgaz, Istanbul",
+    "place_en": "Kumburgaz, Istanbul"
   },
   "tier": "A",
   "epistemicStatus": "documented",

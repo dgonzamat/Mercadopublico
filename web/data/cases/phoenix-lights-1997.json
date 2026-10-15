@@ -9,7 +9,8 @@
   "location": {
     "lat": 33.45,
     "lng": -112.07,
-    "place": "Phoenix, Arizona"
+    "place": "Phoenix, Arizona",
+    "place_en": "Phoenix, Arizona"
   },
   "tier": "B",
   "mundanoType": "misid",

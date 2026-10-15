@@ -10,7 +10,8 @@
   "location": {
     "lat": 35.08,
     "lng": -106.65,
-    "place": "Albuquerque, NM"
+    "place": "Albuquerque, NM",
+    "place_en": "Albuquerque, NM"
   },
   "tier": "A",
   "epistemicStatus": "projected",

@@ -9,7 +9,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.04,
-    "place": "Pentagon, Washington DC"
+    "place": "Pentagon, Washington DC",
+    "place_en": "Pentagon, Washington DC"
   },
   "tier": "S",
   "mundanoType": "misid",

@@ -9,7 +9,8 @@
   "location": {
     "lat": 40.42,
     "lng": -82.91,
-    "place": "Mansfield, Ohio"
+    "place": "Mansfield, Ohio",
+    "place_en": "Mansfield, Ohio"
   },
   "tier": "A",
   "mundanoType": "misid",

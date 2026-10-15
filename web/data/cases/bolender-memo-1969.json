@@ -9,7 +9,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.04,
-    "place": "USAF Pentagon"
+    "place": "USAF Pentagon",
+    "place_en": "USAF Pentagon"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -10,7 +10,8 @@
   "location": {
     "lat": 39.998,
     "lng": -83.021,
-    "place": "Battelle, Columbus, Ohio"
+    "place": "Battelle, Columbus, Ohio",
+    "place_en": "Battelle, Columbus, Ohio"
   },
   "tier": "A",
   "mundanoType": "misid",

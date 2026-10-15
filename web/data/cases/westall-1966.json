@@ -9,7 +9,8 @@
   "location": {
     "lat": -37.94,
     "lng": 145.13,
-    "place": "Westall, Melbourne"
+    "place": "Westall, Melbourne",
+    "place_en": "Westall, Melbourne"
   },
   "tier": "A",
   "mundanoType": "misid",

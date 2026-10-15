@@ -10,7 +10,8 @@
   "location": {
     "lat": -26.23,
     "lng": -65.28,
-    "place": "Trancas, Tucumán"
+    "place": "Trancas, Tucumán",
+    "place_en": "Trancas, Tucumán"
   },
   "tier": "B",
   "mundanoType": "misid",

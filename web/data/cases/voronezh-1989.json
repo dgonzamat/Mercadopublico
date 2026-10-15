@@ -9,7 +9,8 @@
   "location": {
     "lat": 51.67,
     "lng": 39.21,
-    "place": "Voronezh, USSR"
+    "place": "Voronezh, USSR",
+    "place_en": "Voronezh, USSR"
   },
   "tier": "A",
   "mundanoType": "psicosocial",

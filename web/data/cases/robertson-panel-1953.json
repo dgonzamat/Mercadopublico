@@ -9,7 +9,8 @@
   "location": {
     "lat": 38.95,
     "lng": -77.15,
-    "place": "CIA HQ, Langley VA"
+    "place": "CIA HQ, Langley VA",
+    "place_en": "CIA HQ, Langley VA"
   },
   "tier": "S",
   "mundanoType": "misid",

@@ -13,7 +13,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.04,
-    "place": "Washington, D.C."
+    "place": "Washington, D.C.",
+    "place_en": "Washington, D.C."
   },
   "tier": "S",
   "mundanoType": "natural",

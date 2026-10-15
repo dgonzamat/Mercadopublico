@@ -9,7 +9,8 @@
   "location": {
     "lat": 49.71,
     "lng": -95.27,
-    "place": "Falcon Lake, Manitoba"
+    "place": "Falcon Lake, Manitoba",
+    "place_en": "Falcon Lake, Manitoba"
   },
   "tier": "A",
   "mundanoType": "fraude",

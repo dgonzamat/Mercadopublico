@@ -11,7 +11,8 @@
   "location": {
     "lat": 40.25,
     "lng": -109.88,
-    "place": "Skinwalker Ranch, Uintah Basin, Utah"
+    "place": "Skinwalker Ranch, Uintah Basin, Utah",
+    "place_en": "Skinwalker Ranch, Uintah Basin, Utah"
   },
   "tier": "A",
   "epistemicStatus": "documented",

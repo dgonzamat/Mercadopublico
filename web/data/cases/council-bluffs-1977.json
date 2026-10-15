@@ -10,7 +10,8 @@
   "location": {
     "lat": 41.28,
     "lng": -95.85,
-    "place": "Big Lake Park, Council Bluffs, Iowa"
+    "place": "Big Lake Park, Council Bluffs, Iowa",
+    "place_en": "Big Lake Park, Council Bluffs, Iowa"
   },
   "tier": "B",
   "mundanoType": "fraude",

@@ -10,7 +10,8 @@
   "location": {
     "lat": -19.86,
     "lng": -49.77,
-    "place": "São Francisco de Sales, Minas Gerais"
+    "place": "São Francisco de Sales, Minas Gerais",
+    "place_en": "São Francisco de Sales, Minas Gerais"
   },
   "tier": "B",
   "mundanoType": "fraude",

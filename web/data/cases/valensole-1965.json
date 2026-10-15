@@ -9,7 +9,8 @@
   "location": {
     "lat": 43.83,
     "lng": 5.98,
-    "place": "Valensole, Provence"
+    "place": "Valensole, Provence",
+    "place_en": "Valensole, Provence"
   },
   "tier": "A",
   "mundanoType": "misid",

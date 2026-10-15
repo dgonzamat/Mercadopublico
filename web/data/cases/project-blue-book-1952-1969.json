@@ -14,7 +14,8 @@
   "location": {
     "lat": 39.8137,
     "lng": -84.0498,
-    "place": "Air Technical Intelligence Center, Wright-Patterson AFB, Dayton, Ohio"
+    "place": "Air Technical Intelligence Center, Wright-Patterson AFB, Dayton, Ohio",
+    "place_en": "Air Technical Intelligence Center, Wright-Patterson AFB, Dayton, Ohio"
   },
   "tier": "S",
   "mundanoType": "misid",

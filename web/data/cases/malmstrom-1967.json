@@ -9,7 +9,8 @@
   "location": {
     "lat": 47.51,
     "lng": -111.18,
-    "place": "Malmstrom AFB, Montana"
+    "place": "Malmstrom AFB, Montana",
+    "place_en": "Malmstrom AFB, Montana"
   },
   "tier": "A",
   "mundanoType": "instrumento",

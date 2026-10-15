@@ -9,7 +9,8 @@
   "location": {
     "lat": -21.55,
     "lng": -45.43,
-    "place": "Varginha, Minas Gerais"
+    "place": "Varginha, Minas Gerais",
+    "place_en": "Varginha, Minas Gerais"
   },
   "tier": "A",
   "mundanoType": "misid",

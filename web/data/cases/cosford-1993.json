@@ -10,7 +10,8 @@
   "location": {
     "lat": 52.64,
     "lng": -2.31,
-    "place": "RAF Cosford / RAF Shawbury, Shropshire"
+    "place": "RAF Cosford / RAF Shawbury, Shropshire",
+    "place_en": "RAF Cosford / RAF Shawbury, Shropshire"
   },
   "tier": "B",
   "mundanoType": "misid",

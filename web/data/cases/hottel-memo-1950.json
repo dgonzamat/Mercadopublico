@@ -9,7 +9,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.04,
-    "place": "FBI Vault"
+    "place": "FBI Vault",
+    "place_en": "FBI Vault"
   },
   "tier": "A",
   "mundanoType": "fraude",

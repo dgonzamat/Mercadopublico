@@ -10,7 +10,8 @@
   "location": {
     "lat": 44.97,
     "lng": 3.05,
-    "place": "Cussac, Cantal"
+    "place": "Cussac, Cantal",
+    "place_en": "Cussac, Cantal"
   },
   "tier": "B",
   "mundanoType": "misid",

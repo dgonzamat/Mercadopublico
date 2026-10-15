@@ -10,7 +10,8 @@
   "location": {
     "lat": 41.5,
     "lng": -73.9,
-    "place": "Hudson Valley, NY-CT"
+    "place": "Hudson Valley, NY-CT",
+    "place_en": "Hudson Valley, NY-CT"
   },
   "tier": "A",
   "mundanoType": "misid",

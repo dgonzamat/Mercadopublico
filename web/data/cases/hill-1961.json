@@ -10,7 +10,8 @@
   "location": {
     "lat": 44.49,
     "lng": -71.57,
-    "place": "Lancaster, New Hampshire"
+    "place": "Lancaster, New Hampshire",
+    "place_en": "Lancaster, New Hampshire"
   },
   "tier": "A",
   "mundanoType": "misid",

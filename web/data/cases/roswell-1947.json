@@ -9,7 +9,8 @@
   "location": {
     "lat": 33.39,
     "lng": -104.52,
-    "place": "Roswell, New Mexico"
+    "place": "Roswell, New Mexico",
+    "place_en": "Roswell, New Mexico"
   },
   "tier": "A",
   "mundanoType": "misid",

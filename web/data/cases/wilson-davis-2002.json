@@ -9,7 +9,8 @@
   "location": {
     "lat": 38.89,
     "lng": -77.04,
-    "place": "DIA HQ"
+    "place": "DIA HQ",
+    "place_en": "DIA HQ"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -9,7 +9,8 @@
   "location": {
     "lat": 37,
     "lng": -85.5,
-    "place": "Kentucky"
+    "place": "Kentucky",
+    "place_en": "Kentucky"
   },
   "tier": "A",
   "epistemicStatus": "documented",
