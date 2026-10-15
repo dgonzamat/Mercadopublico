@@ -87,6 +87,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/coyne-1973-army-da2496.jpg",
+      "type": "image",
+      "title": "Formulario de disposición del Ejército (DA Form 2496) «Near Midair Collision with UFO Report», 23 de noviembre de 1973, firmado por los cuatro tripulantes",
+      "title_en": "Army Disposition Form (DA Form 2496) \"Near Midair Collision with UFO Report\", 23 November 1973, signed by the four crewmembers",
+      "description": "Informe de la Oficina de Operaciones de Vuelo de la instalación de la reserva del Ejército en el aeropuerto Cleveland Hopkins al 83.º USARCOM. Dice que el 18 de octubre de 1973 a las 23:05, cerca de Mansfield (Ohio), el helicóptero 68-15444 volaba a 2.500 pies con rumbo 030 cuando el sargento Yanacsek vio una luz roja al este que convergía a más de 600 nudos; Coyne descendió a 1.700 pies, el objeto «vaciló» sobre el aparato y se alejó al oeste, y el altímetro marcó 1.000 pies por minuto de ascenso y 3.500 pies con el colectivo abajo. La torre de Mansfield acusó recibo y no respondió más. Lo firman Coyne, Jezzi, Yanacsek y Healey.",
+      "description_en": "Report from the Flight Operations Office of the Army Reserve flight facility at Cleveland Hopkins Airport to the 83d USARCOM. It states that on 18 October 1973 at 23:05, near Mansfield, Ohio, helicopter 68-15444 was at 2,500 feet heading 030 when SSG Yanacsek saw a red light to the east converging at over 600 knots; Coyne descended to 1,700 feet, the object \"hesitated\" over the aircraft and moved off to the west, and the altimeter read a 1,000 fpm climb and 3,500 feet with the collective fully down. Mansfield Tower acknowledged the call and then gave no response. It is signed by Coyne, Jezzi, Yanacsek and Healey.",
+      "source": "Ejército de EE. UU., 83.º USARCOM; respuesta FOIA, escaneo publicado por NICAP",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.nicap.org/docs/coynefoiadoc1.jpg"
+    },
+    {
       "src": "/pursue/coyne-1973-context.png",
       "type": "image",
       "title": "Contexto · un Bell UH-1 Iroquois, el tipo de helicóptero del caso Coyne",
