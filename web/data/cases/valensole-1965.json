@@ -97,6 +97,15 @@
   ],
   "documents": [
     {
+      "src": "https://www.cnes-geipan.fr/fr/cas/1965-07-00050",
+      "type": "link",
+      "title": "GEIPAN (CNES), ficha del caso 1965-07-00050, con el acta de la gendarmería n.º 445",
+      "title_en": "GEIPAN (CNES), case record 1965-07-00050, with gendarmerie report no. 445",
+      "description": "Expediente oficial francés del caso de Maurice Masse: la cronología de las tres actas de la gendarmería, la constancia de que no hubo otros testigos ni indicios, y la clasificación «D» que el GEIPAN le da por defecto, sin investigación propia. El GEIPAN es un servicio del CNES y sus documentos tienen derechos reservados, por eso va como enlace; el servidor limita las consultas seguidas.",
+      "description_en": "Official French file on Maurice Masse's case: the chronology of the three gendarmerie reports, the record that there were no other witnesses or traces, and the 'D' classification GEIPAN gives it by default, without an investigation of its own. GEIPAN is a CNES service and its documents are copyrighted, so it is given as a link; the server limits repeated requests.",
+      "source": "GEIPAN · Centre national d'études spatiales (CNES)"
+    },
+    {
       "src": "/pursue/valensole-1965-context.jpg",
       "type": "image",
       "title": "Contexto · Valensole (Provenza), donde Maurice Masse vio aterrizar el objeto",

@@ -97,6 +97,15 @@
   ],
   "documents": [
     {
+      "src": "https://cnes-geipan.fr/en/node/50980",
+      "type": "link",
+      "title": "GEIPAN (CNES), expediente del caso «Rentrée atmosphérique 5 novembre 1990» (clase A), con las actas de la gendarmería",
+      "title_en": "GEIPAN (CNES), case file 'Rentrée atmosphérique 5 novembre 1990' (class A), with the gendarmerie reports",
+      "description": "Expediente oficial francés de la oleada del 5 de noviembre de 1990, clasificado por el GEIPAN en la clase A (fenómeno identificado): la reentrada atmosférica de restos de un cohete. Reúne las actas de la gendarmería con los testimonios de esa noche. El GEIPAN es un servicio del CNES y sus documentos tienen derechos reservados, por eso va como enlace; el servidor limita las consultas seguidas.",
+      "description_en": "Official French file on the wave of 5 November 1990, classified by GEIPAN in class A (identified phenomenon): the atmospheric re-entry of rocket debris. It gathers the gendarmerie reports with that night's testimony. GEIPAN is a CNES service and its documents are copyrighted, so it is given as a link; the server limits repeated requests.",
+      "source": "GEIPAN · Centre national d'études spatiales (CNES)"
+    },
+    {
       "src": "/pursue/france-wave-1990-context.jpg",
       "type": "image",
       "title": "Contexto · la Gendarmería francesa, que recopiló los reportes de la oleada del 5-nov-1990",
