@@ -9,7 +9,7 @@ import { Eyebrow, H1, Caption } from "@/lib/typography";
 // bilingüe: /fuentes no tiene espejo /es). Se paginan de forma estática:
 // la página 1 vive en /fuentes/<categoría>/ y las siguientes en
 // /fuentes/<categoría>/<n>/ (oct 2026).
-export const PAGE_SIZE = 100;
+export const PAGE_SIZE = 30;
 
 export const groups = () => groupByCategory(getAllSources());
 
