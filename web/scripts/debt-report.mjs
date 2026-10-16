@@ -165,7 +165,11 @@ if (!fs.existsSync(OUT)) {
     pages.push({ page: "/" + f.replace(/index\.html$/, ""), words, upper, kb: Math.round(fs.statSync(path.join(OUT, f)).size / 1024) });
   }
   const heavy = pages.filter((p) => p.kb > 1500).sort((a, b) => b.kb - a.kb);
-  const wordy = pages.filter((p) => p.words > 2500).sort((a, b) => b.words - a.words);
+  // /cases/ es el índice completo: su filtro y su búsqueda trabajan en el
+  // navegador sobre todas las fichas, y paginarlo los dejaría ciegos al resto
+  // (decisión del dueño, 16 oct 2026, de dejarla larga).
+  const WORDY_OK = new Set(["/cases/"]);
+  const wordy = pages.filter((p) => p.words > 2500 && !WORDY_OK.has(p.page)).sort((a, b) => b.words - a.words);
   const shouty = pages.filter((p) => p.upper > 10).sort((a, b) => b.upper - a.upper);
   const fmt = (l, k) => l.slice(0, 6).map((p) => `${p.page} (${p[k]})`).join(", ");
   console.log(`  páginas de más de 1,5 MB: ${heavy.length}${heavy.length ? " — " + fmt(heavy, "kb") : ""}`);
