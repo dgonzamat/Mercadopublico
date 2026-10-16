@@ -87,6 +87,19 @@ for (const l of [...untranslated, ...englishInEs]) console.log(`  · ${l}`);
 const PROSE = ["summary", "whatHappened", "whyMatters"];
 const joinProse = (c, sfx) => [...PROSE.map((k) => c[k + sfx] ?? ""), ...(c["evidence" + sfx] ?? [])].join(" ");
 const actorLinked = new Set([...fs.readFileSync(path.join(ROOT, "lib/researcherCases.ts"), "utf8").matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
+function soloContexto(c) {
+  const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean);
+  return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? ""));
+}
+// R6 agotado: barrido hecho y sin documento primario posible (relato en libro o
+// video, sin registro oficial, o archivo sin digitalizar). Detalle y fecha de
+// cada barrido en docs/registros.md. Si una de estas fichas consigue documento,
+// sale sola de la cuenta.
+const R6_AGOTADO = new Set([
+  "belgian-wave-1989", "naval-chile-2014", "west-freugh-1957", "cluj-barnea-1968", "robert-taylor-livingston-1979",
+  "american-cosmic-2017", "boyd-bushman-2014", "buff-ledge-1968", "cape-girardeau-1941", "communion-1985",
+  "ellsworth-woods-1977", "skinny-bob-abbott-2026",
+]);
 const checks = [
   // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.
   ["comillas españolas «» en el texto inglés (prosa y fuente del porqué)", (c) => joinProse(c, "_en").includes("«") || (c.classBasis?.source && (c.classBasis.source_en ?? c.classBasis.source).includes("«"))],
@@ -98,8 +111,11 @@ const checks = [
   // (lib/researcherCases.ts); si no hace ninguna de las dos cosas, sobra.
   ["documentos que no respaldan ningún caso ni actor", (c) => c.category === "document" && !(c.relatedCases ?? []).length && !actorLinked.has(c.id)],
   // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
-  // un documento del caso: esto mide cuántas fichas no tienen ninguno.
-  ["sin documento del caso (solo foto de contexto)", (c) => { const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean); return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? "")); }],
+  // un documento del caso: esto mide cuántas fichas no tienen ninguno. Las de
+  // R6_AGOTADO se barrieron sin resultado (detalle en docs/registros.md): se
+  // cuentan aparte para separar «no lo tenemos» de «no se puede tener».
+  ["sin documento del caso (solo foto de contexto)", (c) => soloContexto(c) && !R6_AGOTADO.has(c.id)],
+  ["  · de ellas ya barridas sin documento posible", (c) => soloContexto(c) && R6_AGOTADO.has(c.id)],
 ];
 console.log("\nFichas · densidad e inconsistencias (de menor a mayor coste):");
 for (const [label, fn] of checks) {
