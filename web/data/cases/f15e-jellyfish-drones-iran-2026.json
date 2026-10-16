@@ -80,6 +80,15 @@
   ],
   "documents": [
     {
+      "src": "https://www.cnn.com/2026/06/23/politics/iran-drones-f-15-pilot-intelligence",
+      "type": "link",
+      "title": "CNN, «Exclusive: Downed US pilot reported seeing Iranian drones swarm in 'jellyfish' formation» (23 jun 2026)",
+      "title_en": "CNN, \"Exclusive: Downed US pilot reported seeing Iranian drones swarm in 'jellyfish' formation\" (23 Jun 2026)",
+      "description": "Única fuente del relato: no hay documento oficial publicado. Según cuatro fuentes, el piloto del F-15 derribado sobre Irán en abril contó en el interrogatorio de inteligencia que vio varios drones «moving as one with smaller drones below the bigger drones like legs»; otra fuente habló de un «minefield of drones». Los funcionarios discrepan sobre cómo leerlo y si el piloto, que sufrió una conmoción y ya había sido derribado por fuego amigo kuwaití, podía relatarlo con claridad. Los informes iniciales veían posible que la formación facilitara el derribo. La Fuerza Aérea remitió al CENTCOM, que no respondió a las preguntas, y la ODNI no contestó.",
+      "description_en": "The only source for the account: no official document has been released. According to four sources, the pilot of the F-15 downed over Iran in April told intelligence debriefers he saw several drones \"moving as one with smaller drones below the bigger drones like legs\"; another source spoke of a \"minefield of drones\". Officials disagree on how to read it and on whether the pilot, who was concussed and had already been downed by Kuwaiti friendly fire, could recount it clearly. Initial reports saw it as possible that the formation enabled the shootdown. The Air Force referred queries to CENTCOM, which did not address them, and ODNI did not reply.",
+      "source": "CNN"
+    },
+    {
       "src": "/pursue/f15e-jellyfish-drones-iran-2026-context.jpg",
       "type": "image",
       "title": "Contexto · un F-15 Strike Eagle de la USAF, del tipo derribado sobre Irán en 2026",

@@ -100,6 +100,15 @@
   ],
   "documents": [
     {
+      "src": "https://archive.org/details/HollandMichiganUfoSighting911Call03-08-1994",
+      "type": "link",
+      "title": "Grabación del 911 del condado de Ottawa (Michigan), 8 mar 1994, con la llamada al Servicio Meteorológico Nacional",
+      "title_en": "Ottawa County (Michigan) 911 recording, 8 Mar 1994, with the call to the National Weather Service",
+      "description": "Audio de 24 minutos subido a archive.org en 2009 por John Greenewald (The Black Vault). Es una recopilación editada: una locución inicial lo fecha el 8 de marzo de 1994 a las 21:30 y lo presenta como copia de la cinta maestra, y otra voz comenta entre tramos. Recoge llamadas de vecinos sobre luces en fila al este-sureste y la conversación del despachador con el operador de radar del Servicio Meteorológico, que sigue ecos a unos 6.000 y luego 12.000 pies, ve tres «en triángulo» cerca de South Haven, Benton Harbor y Decatur, dice que son «huge returns» como nunca había visto y que tres se mueven hacia Chicago.",
+      "description_en": "A 24-minute audio file uploaded to archive.org in 2009 by John Greenewald (The Black Vault). It is an edited compilation: an opening voice-over dates it to 8 March 1994 at 21:30 and presents it as a copy of the master tape, and another voice comments between segments. It holds residents' calls about strings of lights to the east-southeast and the dispatcher's conversation with the Weather Service radar operator, who follows returns at about 6,000 and then 12,000 feet, sees three \"in a triangle\" near South Haven, Benton Harbor and Decatur, calls them \"huge returns\" like nothing he had seen, and says three are moving toward Chicago.",
+      "source": "Despacho del 911 del condado de Ottawa (Michigan), vía The Black Vault (archive.org)"
+    },
+    {
       "src": "/pursue/lake-michigan-1994-context.jpg",
       "type": "image",
       "title": "Contexto · la costa del lago Michigan en Holland, de donde llegaron las primeras llamadas al 911 la noche del 8 de marzo de 1994",

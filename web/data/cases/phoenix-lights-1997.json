@@ -77,6 +77,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/phoenix-lights-1997-usaf-foia.pdf",
+      "type": "pdf",
+      "title": "Respuestas FOIA de la Fuerza Aérea sobre la noche del 13 de marzo de 1997: base de Luke (1 may 1997) y base de Davis-Monthan (8 ago 2013)",
+      "title_en": "Air Force FOIA responses about the night of 13 March 1997: Luke AFB (1 May 1997) and Davis-Monthan AFB (8 Aug 2013)",
+      "description": "Dos cartas del Departamento de la Fuerza Aérea a John Greenewald. En la primera, del 1 de mayo de 1997, la oficina de archivos del 56th Fighter Wing de Luke responde que no existen registros, que esa noche sus F-16 hacían «normal training missions» sin «involvement whatsoever with the lights observed over Phoenix», que su puesto de mando recibió llamadas, y que su oficina de prensa no dijo que la causa fueran bengalas: «we don't know where the question of aerial flares come from». La segunda, de Davis-Monthan en 2013, contesta a una petición sobre la hipótesis de las bengalas de los A-10: esos registros se conservan seis meses y fueron destruidos, así que no pudo consultar ningún registro de esa fecha.",
+      "description_en": "Two letters from the Department of the Air Force to John Greenewald. In the first, dated 1 May 1997, the records office of the 56th Fighter Wing at Luke answers that no records exist, that its F-16s flew \"normal training missions\" that night with \"no involvement whatsoever with the lights observed over Phoenix\", that its command post received calls, and that its public affairs office never said the cause was flares: \"we don't know where the question of aerial flares come from.\" The second, from Davis-Monthan in 2013, answers a request about the A-10 flare explanation: those records are kept for six months and were destroyed, so no log for that date could be checked.",
+      "source": "Departamento de la Fuerza Aérea de EE. UU. (56 CS/SCBR, Luke AFB; 355 CS, Davis-Monthan AFB), vía The Black Vault",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://www.theblackvault.com/documentarchive/the-phoenix-lights-incident-march-13th-1997/"
+    },
+    {
       "src": "/pursue/phoenix-lights-1997-context.jpg",
       "type": "image",
       "title": "Contexto · Phoenix (Arizona), sobre cuya área metropolitana se vieron las luces de 1997",
