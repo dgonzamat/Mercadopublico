@@ -30,7 +30,7 @@
       {
         "id": "G4",
         "title": "Supabase: quitar EXECUTE a anon y authenticated en las funciones internas _tracking_allowed y _request_country (aviso del revisor de seguridad)",
-        "state": "pendiente"
+        "state": "hecho el 16 oct: migración 0008; probado como anon en una transacción revertida (la llamada directa se deniega, increment_visit e increment_page siguen contando) y el revisor de seguridad ya no lo marca"
       },
       {
         "id": "G5",
