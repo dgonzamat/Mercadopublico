@@ -99,6 +99,7 @@ const R6_AGOTADO = new Set([
   "belgian-wave-1989", "naval-chile-2014", "west-freugh-1957", "cluj-barnea-1968", "robert-taylor-livingston-1979",
   "american-cosmic-2017", "boyd-bushman-2014", "buff-ledge-1968", "cape-girardeau-1941", "communion-1985",
   "ellsworth-woods-1977", "skinny-bob-abbott-2026",
+  "bianchi-magallanes-2012", "chulucanas-2001", "fh227-pluna-1975", "mexico-eclipse-1991", "pucallpa-2008", "lead-masks-niteroi-1966",
 ]);
 const checks = [
   // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.

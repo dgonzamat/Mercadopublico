@@ -81,6 +81,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/la-joya-1980-dia-ir-6876014680.pdf",
+      "type": "pdf",
+      "title": "USDAO Lima, informe de inteligencia IR 6 876 0146 80, «UFO sighted in Peru» (recibido el 3 de junio de 1980, 2 págs.)",
+      "title_en": "USDAO Lima, intelligence information report IR 6 876 0146 80, 'UFO sighted in Peru' (received 3 June 1980, 2 pp.)",
+      "description": "Cable de la agregaduría de Defensa de EE. UU. en Lima a la DIA, con fecha de información 10 de mayo de 1980 y sello de recepción del Estado Mayor Conjunto del 3 de junio. Su fuente es un oficial de la Fuerza Aérea del Perú que vio el suceso: un ovni redondo visto la mañana del 9 de mayo cerca de la base Mariano Melgar de La Joya, contra el que despegó un Su-22 cuyo piloto, «según un tercero», le disparó a muy corta distancia sin daño aparente, y una segunda observación al anochecer del 10 de mayo con otro Su-22 superado. Lo redacta el coronel Norman H. Runge y lo aprueba el capitán Vaughn E. Wilson. Es el único registro de la época del caso, y de otro Estado.",
+      "description_en": "Cable from the US Defense Attaché Office in Lima to DIA, with date of information 10 May 1980 and a Joint Chiefs of Staff receipt stamp of 3 June. Its source is a Peruvian Air Force officer who saw the event: a round UFO seen on the morning of 9 May near Mariano Melgar air base at La Joya, against which an Su-22 was scrambled whose pilot, 'according to a third party', fired at it at very close range with no apparent damage, and a second sighting on the evening of 10 May with another Su-22 outrun. It was prepared by Col. Norman H. Runge and approved by Capt. Vaughn E. Wilson. It is the only contemporary record of the case, and from another state.",
+      "source": "Defense Intelligence Agency · respuesta FOIA (copia de The Black Vault, págs. 11-12 de «dia2ufo.pdf»)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/dia2ufo.pdf"
+    },
+    {
       "src": "/pursue/la-joya-arequipa-1980-context.jpg",
       "type": "image",
       "title": "Contexto · Arequipa (Perú), cerca de La Joya donde un caza FAP disparó al objeto",
