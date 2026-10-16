@@ -15,7 +15,7 @@
       {
         "id": "G1",
         "title": "Link rot: el Weekly Audit falla cada semana desde septiembre por fuentes rotas nuevas (issue #746, cuyo informe sale truncado); correr el gate a mano, reparar o sustituir las citas y recongelar la línea base",
-        "state": "reparado el 16 oct: tres fuentes sustituidas y, tras la auditoría lanzada a mano ese día, retirada la cita genérica del National Post en langenburg-1974; falta la corrida de la auditoría sobre main con el arreglo para cerrar el issue #746"
+        "state": "hecho el 16 oct: cuatro citas sustituidas o retiradas (#1117, #1120, #1121); dos corridas seguidas del Weekly Audit sobre main en verde (38839406563 y 38839694893) y el issue #746 cerrado por el workflow"
       },
       {
         "id": "G2",
@@ -25,7 +25,7 @@
       {
         "id": "G3",
         "title": "Galicia: faltan Ferrol 1966, Becerreá 1969 y Noia 1989 y 1993 (expedientes del Ejército del Aire en la BVD, accesible de nuevo desde el 16 oct)",
-        "state": "pendiente"
+        "state": "hecho el 16 oct: ferrol-1966, becerrea-1969, noia-1989 y noia-1993 (num 446-449), cada una verificada por un segundo agente y con los arreglos contrastados con el expediente"
       },
       {
         "id": "G4",
@@ -60,7 +60,7 @@
       {
         "id": "19",
         "title": "BVD: la Biblioteca Virtual de Defensa volvió a dar acceso el 16 oct; reintentar las fichas españolas pendientes (cruce con Mis primos)",
-        "state": "pendiente"
+        "state": "hecho el 16 oct: de la lista de Mis primos entraron zaragoza-1980, gallarta-1977, burgos-1970 y burgos-1975 (num 450-453), con verificación ligera; Puente Almuhey 1968 aplazado por coste; Almería 1968, Sevilla 1965, El Garrobo y Constantina 1968 son demasiado finos y Sóller 1992 no es un incidente (ver docs/registros.md)"
       }
     ]
   }
