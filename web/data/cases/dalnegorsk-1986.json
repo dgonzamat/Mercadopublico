@@ -69,6 +69,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/voronezh-1989-fbis-nota-prensa.pdf",
+      "type": "pdf",
+      "title": "FBIS, Foreign Press Note «USSR: Media Report Multitude of UFO Sightings» (22 nov 1989, 5 págs.)",
+      "title_en": "FBIS, Foreign Press Note 'USSR: Media Report Multitude of UFO Sightings' (22 Nov 1989, 5 pp.)",
+      "description": "Resumen del servicio de escucha de prensa extranjera de la CIA. Sus primeras páginas recogen lo que la prensa soviética publicó sobre la «Altura 611»: Sotsialisticheskaya Industriya contaba que muchos vieron una esfera estrellarse en uno de los picos del cerro, que científicos de la División Siberiana de la Academia de Ciencias seguían estudiando la «fine mesh», objetos esféricos y trozos de vidrio, y que A. Makeyev halló oro, plata, níquel, titanio alfa, molibdeno y compuestos de berilio; un físico de Tomsk proponía un «plasmoide». Después cita el artículo de Poisk en el que el físico Yuriy Platov sostiene que los restos son de un lanzamiento fallido de un cohete soviético, frente a Vladimir Azhazha, que defiende el choque de un ovni. Es un registro de cómo se discutió el caso en 1988-1989, no un informe de la investigación.",
+      "description_en": "Summary by the CIA's foreign press monitoring service. Its first pages gather what the Soviet press published about 'Hill 611': Sotsialisticheskaya Industriya reported that many saw a sphere crash into one of the hill's peaks, that scientists from the Siberian Division of the Academy of Sciences were still studying the 'fine mesh', spherical objects and pieces of glass, and that A. Makeyev found gold, silver, nickel, alpha-titanium, molybdenum and beryllium compounds; a Tomsk physicist proposed a 'plasmoid'. It then cites the Poisk article in which physicist Yuriy Platov holds that the remains come from an unsuccessful launch of a Soviet rocket, against Vladimir Azhazha, who argues for a UFO crash. It is a record of how the case was debated in 1988-1989, not a report of the investigation.",
+      "source": "FBIS (CIA), Foreign Press Note · CIA Reading Room 0000042346 (copia de archive.org)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/cia-readingroom-document-0000042346"
+    },
+    {
       "src": "/pursue/dalnegorsk-1986-context.jpg",
       "type": "image",
       "title": "Contexto · Dalnegorsk (Primorie, Rusia), al pie de la Altura 611",

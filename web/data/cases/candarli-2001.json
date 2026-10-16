@@ -67,6 +67,15 @@
   ],
   "documents": [
     {
+      "src": "https://abcnews.go.com/International/story?id=80672",
+      "type": "link",
+      "title": "ABC News, «Turkish Pilots Encounter UFOs Over Aegean» (Atenas, 8 ago 2001)",
+      "title_en": "ABC News, 'Turkish Pilots Encounter UFOs Over Aegean' (Athens, 8 Aug 2001)",
+      "description": "La crónica de la época. Cuenta que dos pilotos turcos en formación, en un vuelo de instrucción rutinario en un T-37 de fabricación estadounidense frente a Çandarlı, llamaron a la torre de su base porque un objeto brillante se acercó al avión a gran velocidad y, según se informó, giró a su alrededor una media hora; cita la llamada que publicó Hürriyet («Object approaching the wings. Now it's behind the plane… now it's in front of us»), dice que avisaron al controlador y al centro regional de alerta del Ejército turco con la descripción de algo entre cono y disco, y que fuentes de la Fuerza Aérea turca decían estar investigando, igual que los griegos. Artículo con derechos, por eso va como enlace.",
+      "description_en": "The contemporary report. It says that two Turkish trainee pilots, on a routine training flight in a US-made T-37 off Çandarlı, called their base tower because a bright object approached the aircraft at high speed and reportedly gyrated around them for about half an hour; it quotes the call published by Hürriyet ('Object approaching the wings. Now it's behind the plane… now it's in front of us'), says they told the controller and the Turkish army's regional war alert centre that it looked like a cross between a cone and a disc, and that Turkish air force sources said they were investigating, as were the Greeks. A copyrighted article, so it is given as a link.",
+      "source": "ABC News"
+    },
+    {
       "src": "/pursue/candarli-2001-context.jpg",
       "type": "image",
       "title": "Contexto · Çandarlı (costa del Egeo, Turquía)",

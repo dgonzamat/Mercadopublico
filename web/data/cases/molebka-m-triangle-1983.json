@@ -72,6 +72,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/voronezh-1989-fbis-nota-prensa.pdf",
+      "type": "pdf",
+      "title": "FBIS, Foreign Press Note «USSR: Media Report Multitude of UFO Sightings» (22 nov 1989, 5 págs.)",
+      "title_en": "FBIS, Foreign Press Note 'USSR: Media Report Multitude of UFO Sightings' (22 Nov 1989, 5 pp.)",
+      "description": "Resumen del servicio de escucha de prensa extranjera de la CIA sobre la oleada de noticias de ovnis en la prensa soviética de 1989. En la pág. 3 recoge que Komsomolskaya Pravda del 12 de octubre de 1989 informó de que un grupo de científicos visitó un campo del óblast de Perm para investigar las afirmaciones de que un ovni se había posado allí y dejado «a circular impression measuring 62 meters in diameter». La nota no nombra Molebka ni fecha el supuesto aterrizaje; es el registro más antiguo localizado de la huella de 62 metros en la prensa de la época.",
+      "description_en": "Summary by the CIA's foreign press monitoring service of the wave of UFO stories in the Soviet press in 1989. On p. 3 it records that Komsomolskaya Pravda of 12 October 1989 reported that a group of scientists visited a field in Perm Oblast to investigate claims that a UFO had landed there and left 'a circular impression measuring 62 meters in diameter'. The note does not name Molebka or date the alleged landing; it is the earliest record located of the 62-metre print in the press of the time.",
+      "source": "FBIS (CIA), Foreign Press Note · CIA Reading Room 0000042346 (copia de archive.org)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/cia-readingroom-document-0000042346"
+    },
+    {
       "src": "/pursue/molebka-m-triangle-1983-context.jpg",
       "type": "image",
       "title": "Contexto · el óblast de Perm (Rusia), región del 'triángulo M' de Molebka",
