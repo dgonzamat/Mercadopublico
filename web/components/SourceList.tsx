@@ -4,6 +4,11 @@ import type { AggregatedSource } from "@/lib/sources";
 
 /** Lista de fuentes de una categoría (cada categoría tiene su propia página:
  *  las 1.910 fuentes juntas hacían de /fuentes una página de 5,3 MB). */
+
+// Una fuente citada por decenas de fichas (el informe FY2024 de AARO, 48)
+// llenaba media página con sus apariciones; se muestran las primeras y se
+// cuenta el resto (oct 2026).
+const MAX_APPEARANCES = 12;
 export function SourceList({ items }: { items: AggregatedSource[] }) {
   return (
             <ol className="divide-y divide-text/10 border-y border-text/15">
@@ -37,7 +42,7 @@ export function SourceList({ items }: { items: AggregatedSource[] }) {
                       <span>
                         <T es="Aparece en" en="Appears in" />
                       </span>
-                      {s.appearances.map((a, idx) => (
+                      {s.appearances.slice(0, MAX_APPEARANCES).map((a, idx) => (
                         <span key={`${a.label}-${idx}`}>
                           {idx > 0 && (
                             <span className="text-text/30"> · </span>
@@ -54,6 +59,15 @@ export function SourceList({ items }: { items: AggregatedSource[] }) {
                           )}
                         </span>
                       ))}
+                      {s.appearances.length > MAX_APPEARANCES && (
+                        <span>
+                          <span className="text-text/30"> · </span>
+                          <T
+                            es={`y ${s.appearances.length - MAX_APPEARANCES} fichas más`}
+                            en={`and ${s.appearances.length - MAX_APPEARANCES} more`}
+                          />
+                        </span>
+                      )}
                     </p>
                   </div>
                 </li>

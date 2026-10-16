@@ -5,7 +5,7 @@
       {
         "id": "T1",
         "title": "Revisar el tier de los incidentes Tier B con el estándar fijado en TIER_META (los Tier S y A ya se revisaron, 14 y 15 oct), y quitar de la prosa las frases que justifican el tier con criterios propios",
-        "state": "pendiente"
+        "state": "hecho el 16 oct, revisión de escritorio por décadas con las precisiones de TIER_META (el dueño pidió recomendación y se aplicó): anterior a 1947, foo fighters, Los Ángeles 1942 y Bonilla a A; 1947-1969, dieciséis a A (Kirtland, Decepción, la DMZ, Lubbock, Great Falls, Heflin, Barra da Tijuca, Kerekere, General Terán, la esfera saudí, Sisaket, Túnez, Schirmer, IB-435, Glenn, Gemini 7); 1970-1989, once a A (Abanico, Aitana, Berwyn, la espiral china, Council Bluffs, Kuwait, Marruecos, Todmorden, Valentich, De los Santos, Apolo 17 VM6); 1990 en adelante, cuatro a S (los MISREP de Oriente Medio 2025, Kyiv, Michigan 1994 y el mar Egeo 2023) y treinta y cuatro a A (los clips de sensor con cadena institucional de las entregas 01, 04 y 06, y casos con documentación oficial o varios testigos independientes). Se quitaron de la prosa las frases «el caso entra en nivel…». Tunguska queda en el backlog (B4)"
       }
     ]
   },
@@ -45,12 +45,12 @@
       {
         "id": "1",
         "title": "Regla de país",
-        "state": "esperando decisión"
+        "state": "hecho el 16 oct: lugar del suceso (decisión del dueño); Yemen 2024 y Hassayampa 1965 pasan al país del lugar, los de ubicación no revelada conservan la plataforma; regla escrita en CLAUDE.md"
       },
       {
         "id": "X1",
         "title": "Juicios del Historical Record de AARO",
-        "state": "esperando decisión"
+        "state": "resuelto el 16 oct: la objeción era sobre los dos juicios de reparto de la ficha-documento del Historical Record; con la integración de los documentos (15 oct) esa ficha dejó de existir, el informe vive en el perfil de Kirkpatrick y los documentos ya no llevan reparto"
       }
     ]
   },
@@ -61,6 +61,36 @@
         "id": "19",
         "title": "BVD: la Biblioteca Virtual de Defensa volvió a dar acceso el 16 oct; reintentar las fichas españolas pendientes (cruce con Mis primos)",
         "state": "hecho el 16 oct: de la lista de Mis primos entraron zaragoza-1980, gallarta-1977, burgos-1970 y burgos-1975 (num 450-453), con verificación ligera; Puente Almuhey 1968 aplazado por coste; Almería 1968, Sevilla 1965, El Garrobo y Constantina 1968 son demasiado finos y Sóller 1992 no es un incidente (ver docs/registros.md)"
+      }
+    ]
+  },
+  {
+    "group": "Backlog · deuda nueva, por fecha de hallazgo",
+    "items": [
+      {
+        "id": "B0",
+        "title": "16 oct · País en español en el sitio inglés: el mapa COUNTRY_EN no tenía decenas de country_name (Filipinas, Siria, Omán, las de ubicación no revelada…)",
+        "state": "hecho el 16 oct: mapa completado y sonda E50 (ERROR) con control negativo"
+      },
+      {
+        "id": "B1",
+        "title": "16 oct · Bucket `pursue` casi lleno (E38): recomprimir sus PDF en gris como se hizo en /pursue; la prueba con la sección 10, parte 2, del expediente FBI 62-HQ-83894 lo deja en la mitad con páginas y capa de texto intactas. El bucket ya se descarga desde aquí, pero subir los ficheros exige la clave de servicio de Supabase",
+        "state": "pendiente: acción del dueño (subir los ficheros recomprimidos)"
+      },
+      {
+        "id": "B2",
+        "title": "16 oct · La sección 10, parte 2, del expediente FBI 62-HQ-83894 en el bucket está escaneada en espejo (texto y sellos invertidos); voltearla al recomprimir y comprobar las demás partes del expediente",
+        "state": "pendiente, junto con B1"
+      },
+      {
+        "id": "B3",
+        "title": "16 oct · Puente Almuhey 1968 (expediente de la BVD, de la lista de Mis primos) sin ficha",
+        "state": "aplazado por coste"
+      },
+      {
+        "id": "B4",
+        "title": "16 oct · Tunguska 1908 cumpliría S por la precisión 7 (sismógrafos de Irkutsk y microbarógrafos británicos que se corroboran), pero la ficha no cita esos registros y Whipple (1930) no es accesible desde aquí (ADS pide verificación humana)",
+        "state": "pendiente: sigue en B hasta citar el registro instrumental"
       }
     ]
   }
