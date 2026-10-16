@@ -74,6 +74,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/alma-ata-1991-fbis-tass.pdf",
+      "type": "pdf",
+      "title": "FBIS, «Alma-Ata patrolmen report UFO sighting»: el despacho de TASS en inglés del 19 de abril de 1991 (1 pág.)",
+      "title_en": "FBIS, 'Alma-Ata patrolmen report UFO sighting': the TASS English dispatch of 19 April 1991 (1 p.)",
+      "description": "Transcripción del Servicio de Información de Emisiones Extranjeras (FBIS) del despacho de TASS firmado por el corresponsal Vasiliy Danshin, que cita al diario Vechernyaya Alma-Ata. Cuenta que unos milicianos de patrulla vieron a última hora de la tarde una especie de fuego en lo alto del monte Kok-Tyube; que al acercarse a unos 200 metros unos rayos barrieron el coche y lo pararon; que el objeto atenuó sus «reflectores» y desapareció cuando avanzaron, y que de vuelta en la comisaría ninguno recordaba el camino de regreso. Añade que las conversaciones por radio quedaron grabadas y que hubo «testigos imparciales». Es el registro de la época del caso, y transmite el relato de prensa, no una investigación. Desclasificado por la CIA en mayo de 2000.",
+      "description_en": "Foreign Broadcast Information Service (FBIS) transcript of the TASS dispatch by correspondent Vasiliy Danshin, citing the newspaper Vechernyaya Alma-Ata. It says that militiamen on patrol saw late in the afternoon a kind of fire at the top of Kok-Tyube mountain; that at about 200 metres a few rays swept across the car and stopped it; that the object dimmed its 'searchlights' and disappeared as they moved towards it, and that back at the police station none could recall the way back. It adds that the radio talks were recorded on tape and that there were 'impartial witnesses'. It is the case's contemporary record, and it relays the press account, not an investigation. Released by the CIA in May 2000.",
+      "source": "CIA · FBIS (archive.org, cia-readingroom-document-0005517792)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/cia-readingroom-document-0005517792"
+    },
+    {
       "src": "/pursue/alma-ata-1991-context.jpg",
       "type": "image",
       "title": "Contexto · Almaty (Alma-Atá, Kazajistán), cerca del monte Kok-Tyube",
