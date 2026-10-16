@@ -94,6 +94,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/talavera-la-real-1976-expediente-761112.pdf",
+      "type": "pdf",
+      "title": "Expediente 761112 del Mando Operativo Aéreo, «Avistamiento de fenómenos extraños en la base aérea de Talavera» (desclasificado en 1996), extracto de 10 págs.",
+      "title_en": "Air Operations Command file 761112, \"Sighting of strange phenomena at Talavera air base\" (declassified 1996), 10-page extract",
+      "description": "Resumen e índice de la Sección de Inteligencia del Mando Operativo Aéreo, la nota del agregado de Defensa en Caracas (abril de 1982) que remite el artículo del Diario de Caracas, la ficha del suceso («aparición humanoide»; testigos J. M. Trejo, Hidalgo y otro, tres soldados; «fiabilidad expediente: falta») y cuatro respuestas oficiales: el general segundo jefe del Estado Mayor del Aire (1984) dice que se nombró un juez instructor y que no consta el hecho en el Estado Mayor; la Oficina de Relaciones Públicas del Aire (1984) y la DRISDE (1985) repiten lo del juez, fechando el suceso por error el 12 de diciembre, y el jefe accidental del Ala 23 (1991) no halla documento alguno. El resumen anota que no aparece el informe elevado a la autoridad judicial.",
+      "description_en": "Summary and index by the Intelligence Section of the Air Operations Command, the note from the defence attaché in Caracas (April 1982) forwarding the Diario de Caracas article, the event card (\"humanoid apparition\"; witnesses J. M. Trejo, Hidalgo and another, three soldiers; \"file reliability: missing\") and four official replies: the Air Staff's deputy chief (1984) says an examining judge was appointed and the event is not recorded at the Air Staff; the Air Force Public Relations Office (1984) and DRISDE (1985) repeat the judge, mistakenly dating the event 12 December, and the acting commander of Wing 23 (1991) finds no document at all. The summary notes that the report sent to the judicial authority does not appear.",
+      "source": "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395902"
+    },
+    {
       "src": "/pursue/talavera-la-real-1976-context.jpg",
       "type": "image",
       "title": "Contexto · Talavera la Real (Badajoz, España)",

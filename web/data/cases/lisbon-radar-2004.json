@@ -110,6 +110,15 @@
   },
   "documents": [
     {
+      "src": "https://www.news24.com/southafrica/news/air-force-on-alert-about-ufo-20040603",
+      "type": "link",
+      "title": "Despacho de AFP «Air force on alert about UFO» (Lisboa, 3 de junio de 2004), publicado por News24",
+      "title_en": "AFP dispatch \"Air force on alert about UFO\" (Lisbon, 3 June 2004), published by News24",
+      "description": "Despacho de agencia de dos días después; la Fuerza Aérea Portuguesa no publicó ningún documento propio. Recoge que la vigilancia radar militar se reforzó y que los F-16 estaban listos para despegar (según el Correio da Manhã), que el coronel Carlos Barbosa confirmó a Lusa que los radares militares detectaron durante dos o tres minutos «un blanco… que no se identificó como un avión», y que la NAV, a través de Paulo Lagarto, dijo que la torre de Oporto detectó un objeto visto 25 minutos antes en Montijo y Beja. Cita también las explicaciones descartadas y la del satélite Iridium. Prensa con derechos vigentes: se enlaza.",
+      "description_en": "Agency dispatch from two days later; the Portuguese Air Force published no document of its own. It reports that military radar surveillance was stepped up and F-16s stood ready to take off (per Correio da Manhã), that Col. Carlos Barbosa told Lusa that military radars detected for two or three minutes \"a target… that was not identified as a plane\", and that NAV, through Paulo Lagarto, said the Oporto tower detected an object seen 25 minutes earlier at Montijo and Beja. It also cites the explanations ruled out and the Iridium satellite suggestion. Press material still under copyright, so it is linked.",
+      "source": "Agence France-Presse, vía News24"
+    },
+    {
       "src": "/pursue/lisbon-radar-2004-context.jpg",
       "type": "image",
       "title": "Contexto · Lisboa (Portugal), cuyo control aéreo registró el blanco de radar",

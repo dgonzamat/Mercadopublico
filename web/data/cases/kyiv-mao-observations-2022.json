@@ -110,6 +110,15 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "src": "https://arxiv.org/pdf/2208.11215",
+      "type": "link",
+      "title": "Zhilyaev, Petukhov y Reshetnyk, «Unidentified aerial phenomena I. Observations of events» (Observatorio Astronómico Principal de la NASU, arXiv:2208.11215, v2 de septiembre de 2022)",
+      "title_en": "Zhilyaev, Petukhov and Reshetnyk, \"Unidentified aerial phenomena I. Observations of events\" (Main Astronomical Observatory, NASU, arXiv:2208.11215, v2 September 2022)",
+      "description": "El preprint de 8 páginas que dio origen al caso. Describe dos estaciones de meteoros en Kyiv y en Vinarivka, a 120 km, con cámaras ZWO ASI 178 MC y 294 Pro filmando el cielo diurno a menos de 1 ms de exposición, y los dos tipos de objeto que sus autores llaman «Cosmics», luminosos, y «Phantoms», oscuros. Estima la distancia por colorimetría y da tamaños de 3 a 12 m y velocidades de hasta 15 km/s; el mismo método, aplicado a una torre de agua del encuadre, da «0 ± 1 km» para una distancia real de unos 300 m. Licencia no exclusiva de arXiv, no libre: se enlaza.",
+      "description_en": "The 8-page preprint that started the case. It describes two meteor stations, in Kyiv and in Vinarivka, 120 km apart, with ZWO ASI 178 MC and 294 Pro cameras filming the daytime sky at under 1 ms exposure, and the two kinds of object its authors call \"Cosmics\", luminous, and \"Phantoms\", dark. It estimates distance by colorimetry and gives sizes of 3 to 12 m and speeds of up to 15 km/s; the same method, applied to a water tower in the frame, gives \"0 ± 1 km\" for an actual distance of about 300 m. arXiv non-exclusive licence, not a free one, so it is linked.",
+      "source": "arXiv (Observatorio Astronómico Principal, Academia Nacional de Ciencias de Ucrania)"
+    },
+    {
       "src": "/pursue/ukraine-mao-uap-2022-context.jpg",
       "type": "image",
       "title": "Contexto · Kyiv (Ucrania), sede del Observatorio Astronómico Principal (NASU)",

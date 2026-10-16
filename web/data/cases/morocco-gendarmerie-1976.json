@@ -69,6 +69,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/morocco-gendarmerie-1976-state-cables.pdf",
+      "type": "pdf",
+      "title": "Cables del Departamento de Estado de EE. UU. sobre los avistamientos de Marruecos (25 de septiembre y 5 de octubre de 1976)",
+      "title_en": "US State Department cables on the Moroccan sightings (25 September and 5 October 1976)",
+      "description": "Transcripción íntegra de dos telegramas; el PDF reproduce su texto, no el facsímil. En RABAT 5209 (25 de septiembre), el embajador Anderson cuenta que el coronel Benslimane, jefe de la Gendarmería Real, acudió el 23 enviado por el rey: llamadas desde Agadir, Marrakech, Casablanca, Rabat y Kenitra entre la 01:00 y la 01:30 del 19 de septiembre, un objeto plateado y circular, silencioso, que soltaba chispas. Al día siguiente el mayor Lissaoui, testigo él mismo, dio un resumen al agregado de defensa: horas de 01:00 a 02:00, rumbo sur-norte, unos 1.000 metros. La respuesta de Washington (STATE 247538, 5 de octubre) no conoce actividad de EE. UU. y se inclina por un meteoro o un satélite en descenso.",
+      "description_en": "Full transcript of two telegrams; the PDF reproduces their text, not the facsimile. In RABAT 5209 (25 September), Ambassador Anderson reports that Col. Benslimane, commander of the Royal Gendarmerie, came on the 23rd at the King's behest: calls from Agadir, Marrakech, Casablanca, Rabat and Kenitra between 01:00 and 01:30 on 19 September, a silvery circular object, silent, giving off sparks. The next day Maj. Lissaoui, himself a witness, briefed the defense attaché: times from 01:00 to 02:00, a south-to-north course, about 1,000 metres. Washington's reply (STATE 247538, 5 October) knows of no US activity and leans towards a meteor or a decaying satellite.",
+      "source": "US Department of State, Central Foreign Policy Files 1973–79 (NARA RG 59), telegramas 1976RABAT05209 y 1976STATE247538; texto tomado de WikiLeaks PlusD",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://wikileaks.org/plusd/cables/1976RABAT05209_b.html"
+    },
+    {
       "src": "/pursue/morocco-gendarmerie-1976-context.jpg",
       "type": "image",
       "title": "Contexto · Rabat (Marruecos), sede de la Gendarmería Real",

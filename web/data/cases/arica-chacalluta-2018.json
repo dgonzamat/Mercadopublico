@@ -67,6 +67,15 @@
   },
   "documents": [
     {
+      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2025/11/CASO-N%C2%B0-794-20022018.pdf",
+      "type": "link",
+      "title": "Informe del SEFAA (DGAC de Chile), caso n.º 794, Chacalluta, 20 de febrero de 2018 (resuelto el 28 de octubre de 2025)",
+      "title_en": "SEFAA (Chilean DGAC) report, case no. 794, Chacalluta, 20 February 2018 (resolved 28 October 2025)",
+      "description": "Informe de 10 páginas de la sección oficial de fenómenos aéreos anómalos. Transcribe el audio entre la torre y el avión de Carabineros C52 («tengo un objeto volador no identificado a la izquierda de su posición»), cita la nota del libro de novedades de la torre y el METAR (CAVOK), y reproduce las entrevistas a un controlador y al piloto, que la describe como «cinco, seis, siete veces Venus». Comprueba que Venus estaba a 2,9° sobre el horizonte, anota incoherencias entre testigos, juzga lo relatado compatible con un dron sin transpondedor y, sin imágenes, cierra el caso como «Relato». Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
+      "description_en": "Ten-page report by the official anomalous aerial phenomena section. It transcribes the audio between the tower and Carabineros aircraft C52 (\"I have an unidentified flying object to the left of your position\"), cites the tower logbook note and the METAR (CAVOK), and gives the interviews with a controller and with the pilot, who compares it to \"five, six, seven times Venus\". It checks that Venus was 2.9° above the horizon, notes inconsistencies between witnesses, judges the account compatible with a drone without a transponder and, lacking images, closes the case as \"Account\" (Relato). A DGAC work with no open licence, so it is linked rather than hosted.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+    },
+    {
       "src": "/pursue/arica-chacalluta-2018-context.jpg",
       "type": "image",
       "title": "Contexto · la plataforma del aeropuerto de Chacalluta, en Arica, en el año 2000",
