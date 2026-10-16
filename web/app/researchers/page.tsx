@@ -198,8 +198,11 @@ export function ResearchersView({ locale }: { locale: "es" | "en" }) {
                           <T es={fw.name} en={fw.name_en} locale={locale} />
                         </p>
                       )}
-                      <p className="mt-2 line-clamp-3 text-xs text-muted">
-                        <T es={clip(r.bio_short, 200)} en={clip(r.bio_short_en, 200)} locale={locale} />
+                      {/* Una línea por actor: la bio entera vive en su perfil, y las
+                          127 bios de 200 caracteres llevaban la página a casi
+                          5.000 palabras (decisión del dueño, 16 oct 2026). */}
+                      <p className="mt-2 line-clamp-2 text-xs text-muted">
+                        <T es={clip(r.bio_short, 80)} en={clip(r.bio_short_en, 80)} locale={locale} />
                       </p>
                     </div>
                   </LocaleLink>
