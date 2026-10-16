@@ -10,6 +10,36 @@
     ]
   },
   {
+    "group": "Del registro de Gemini (16 oct), verificado contra el repo",
+    "items": [
+      {
+        "id": "G1",
+        "title": "Link rot: el Weekly Audit falla cada semana desde septiembre por fuentes rotas nuevas (issue #746, cuyo informe sale truncado); correr el gate a mano, reparar o sustituir las citas y recongelar la línea base",
+        "state": "pendiente"
+      },
+      {
+        "id": "G2",
+        "title": "Documentos de PURSUE sin fichar ni embeber: D092, DOS-UAP-D001 (cable Brasil 1963) y los DIRD de AAWSAP D113-D115, D121, D128, D134, D138 y D147",
+        "state": "pendiente"
+      },
+      {
+        "id": "G3",
+        "title": "Galicia: faltan Ferrol 1966, Becerreá 1969 y Noia 1989 y 1993 (expedientes del Ejército del Aire en la BVD, accesible de nuevo desde el 16 oct)",
+        "state": "pendiente"
+      },
+      {
+        "id": "G4",
+        "title": "Supabase: quitar EXECUTE a anon y authenticated en las funciones internas _tracking_allowed y _request_country (aviso del revisor de seguridad)",
+        "state": "pendiente"
+      },
+      {
+        "id": "G5",
+        "title": "Casos de los borradores de junio que nunca llegaron al repo: Kihara (Japón 2026), Siria 2021 (DOW-UAP-PR051) y UAP Governance Board 2026",
+        "state": "esperando decisión"
+      }
+    ]
+  },
+  {
     "group": "Esperan decisión del dueño",
     "items": [
       {
@@ -25,12 +55,12 @@
     ]
   },
   {
-    "group": "Bloqueados",
+    "group": "Reabiertos",
     "items": [
       {
         "id": "19",
-        "title": "BVD",
-        "state": "en pausa"
+        "title": "BVD: la Biblioteca Virtual de Defensa volvió a dar acceso el 16 oct; reintentar las fichas españolas pendientes (cruce con Mis primos)",
+        "state": "pendiente"
       }
     ]
   }
