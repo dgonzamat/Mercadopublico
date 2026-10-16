@@ -65,6 +65,15 @@
   },
   "documents": [
     {
+      "src": "https://archive.org/details/cia-readingroom-document-0005517791",
+      "type": "link",
+      "title": "Pravda, 15 de abril de 1991, «¿Salitre volado por un ovni?»: traducción del servicio de seguimiento de prensa extranjera, en la sala de lectura de la CIA",
+      "title_en": "Pravda, 15 April 1991, \"Saltpeter blown up from UFO?\": foreign press monitoring translation, in the CIA reading room",
+      "description": "Télex no clasificado del 17 de abril de 1991 que traduce la crónica del corresponsal N. Kireyev en la primera edición de Pravda del 15 de abril, p. 3. A medianoche del 12 de abril una explosión muy potente cerca de Sasovo arrancó tejados y reventó ventanas en la mitad de los edificios. A. Rozhkov, presidente del soviet del distrito, enumera las versiones (munición de la guerra, una bomba, un meteorito, ovnis, una «esfera de fuego en movimiento»), dice que los militares apuntan al nitrato de amonio y que no varió la radiación de fondo. El cráter mide 28 m por unos 4 de hondo, a 1 km de la ciudad, junto a 30 toneladas de nitrato llevadas el 5 de abril. Traducción de prensa soviética: se enlaza, no se aloja.",
+      "description_en": "Unclassified telex of 17 April 1991 translating correspondent N. Kireyev's report in the first edition of Pravda of 15 April, p. 3. At midnight on 12 April a highly powerful explosion near Sasovo ripped off roofs and knocked out windows in a good half of the buildings. A. Rozhkov, chairman of the rayon soviet, lists the rumours (wartime munitions, an air bomb, a meteorite, UFOs, a \"moving fiery sphere\"), says the military blame ammonium nitrate and that no change in background radiation was detected. The crater is 28 m across and about 4 m deep, 1 km from the town, beside 30 tonnes of nitrate brought on 5 April. It is a translation of Soviet press, so it is linked rather than hosted.",
+      "source": "Pravda (15 abr 1991), traducción del FBIS; sala de lectura de la CIA, espejo en archive.org"
+    },
+    {
       "src": "/pursue/sasovo-1991-context.jpg",
       "type": "image",
       "title": "Contexto · Sasovo (óblast de Riazán, Rusia)",

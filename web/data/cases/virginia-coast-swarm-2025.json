@@ -80,6 +80,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/virginia-coast-swarm-2025-aaro-fy25.pdf",
+      "type": "pdf",
+      "title": "Informe Anual Consolidado sobre UAP del año fiscal 2025 de la AARO: portada y pp. 4-5 (el único caso marítimo, frente a Virginia)",
+      "title_en": "AARO Fiscal Year 2025 Consolidated Annual Report on UAP: cover and pp. 4-5 (the single maritime case, off Virginia)",
+      "description": "Extracto del informe del Departamento de Guerra (Oficina de Resolución de Anomalías en Todos los Dominios, fecha de corte 30 de mayo de 2025). La p. 4 da las cifras del periodo: 319 reportes entre el 2 de junio de 2024 y el 30 de mayo de 2025, 284 de hechos de ese periodo y 35 de hechos de 2010 a 2024; 274 del dominio aéreo, 44 del espacial y uno del marítimo. La p. 5 dice de ese caso que vino de unidades de la Marina frente a la costa de Virginia, que describían «approximately 100 airborne UAP and two, likely uncrewed, surface systems», y que la AARO lo investiga con la unidad. No da fecha, sensores ni duración.",
+      "description_en": "Extract from the Department of War report (All-domain Anomaly Resolution Office, information cut-off 30 May 2025). Page 4 gives the period's figures: 319 reports between 2 June 2024 and 30 May 2025, 284 about events in that period and 35 about events from 2010 to 2024; 274 in the air domain, 44 in space and one maritime. Page 5 says that case came from U.S. Navy assets off the coast of Virginia, describing \"approximately 100 airborne UAP and two, likely uncrewed, surface systems\", and that AARO is investigating it with the reporting unit. It gives no date, sensors or duration.",
+      "source": "Departamento de Guerra de EE. UU., All-domain Anomaly Resolution Office (AARO), vía The Black Vault",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://documents2.theblackvault.com/documents/osd/AARO_FY2025_Consolidated_Annual_Report_on_UAP.pdf"
+    },
+    {
       "src": "/pursue/virginia-coast-swarm-2025-context.jpg",
       "type": "image",
       "title": "Contexto · la Estación Naval de Norfolk en 2011, la mayor base naval del mundo y la instalación militar dominante de la costa de Virginia donde se reportó el enjambre",
