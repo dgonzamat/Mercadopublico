@@ -73,6 +73,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/langley-drones-2023-senate-hearing.pdf",
+      "type": "pdf",
+      "title": "Audiencias del Comité de Servicios Armados del Senado, S. Hrg. 118-741: el general Guillot (14 mar 2024) y la respuesta escrita del general Allvin, 5 págs.",
+      "title_en": "Senate Armed Services Committee hearings, S. Hrg. 118-741: Gen. Guillot (14 Mar 2024) and Gen. Allvin's written answer, 5 pp.",
+      "description": "Extracto del registro oficial del Senado. En la audiencia de postura del Mando Norte del 14 de marzo de 2024, el general Gregory Guillot, a preguntas del senador Kaine, dice que la defensa contra drones ha dominado su primer mes, que no estaba preparado «para el número de incursiones» que ve y que ha tomado los sucesos de la base conjunta Langley-Eustis como eje de su evaluación de 90 días. En las preguntas por escrito de la audiencia de la Fuerza Aérea del 16 de abril, el senador Cotton dice que Langley fue invadida por drones durante semanas en diciembre de 2023, y el general David Allvin responde que Langley «no fue atacada, pero su espacio aéreo fue violado por drones».",
+      "description_en": "Extract from the official Senate record. At the Northern Command posture hearing of 14 March 2024, Gen. Gregory Guillot, asked by Sen. Kaine, says counter-drone work has dominated his first month, that he \"was not prepared for the number of incursions\" he sees, and that he has made the events at Joint Base Langley-Eustis the centerpiece of his 90-day assessment. In the questions for the record of the Air Force hearing of 16 April, Sen. Cotton says Langley was swarmed by drones for weeks in December 2023, and Gen. David Allvin answers that \"Langley was not attacked, but its airspace was violated by drones\".",
+      "source": "Senado de EE. UU., Comité de Servicios Armados (GPO, govinfo)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-118shrg62122/pdf/CHRG-118shrg62122.pdf"
+    },
+    {
       "src": "/pursue/langley-drones-2023-context.jpg",
       "type": "image",
       "title": "Contexto · la Base Aérea de Langley (Virginia), sobrevolada por las incursiones de drones",

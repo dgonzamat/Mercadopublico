@@ -95,6 +95,15 @@
   ],
   "documents": [
     {
+      "src": "https://archive.org/download/just-cause-newsletter/Just_Cause_Zechel_v1_i6.pdf",
+      "type": "link",
+      "title": "Just Cause, vol. 1, n.º 6 (septiembre de 1978, con noticias hasta noviembre): las cartas de la NSA y de la Fuerza Aérea a Robert Todd",
+      "title_en": "Just Cause, vol. 1, no. 6 (September 1978, news through November): the NSA and Air Force letters to Robert Todd",
+      "description": "Boletín de CAUS que transcribe las respuestas oficiales a Robert Todd. La NSA, en carta del 8 de agosto de 1978 firmada por su consejero general Daniel Silver, dice no haber hallado ningún registro de que el incidente ocurriera, pero que lo relativo a cómo se obtuvo la información es clasificado, y le recuerda la ley que castiga revelar datos de inteligencia de comunicaciones. El coronel James Johnson, de la Oficina del Auditor General de la Fuerza Aérea, escribe el 14 de septiembre que no puede confirmar ni negar la declaración ni la existencia de registros, que «si es auténtica» sería Secreta en su totalidad, y retiene diez documentos internos. Boletín con derechos de autor: se enlaza, no se aloja.",
+      "description_en": "CAUS newsletter transcribing the official replies to Robert Todd. The NSA, in a letter of 8 August 1978 signed by its General Counsel Daniel Silver, says it has located no record indicating that the incident occurred, but that information on how it was allegedly obtained is classified, and reminds him of the law against disclosing communications intelligence. Col. James Johnson of the Air Force Judge Advocate General's office writes on 14 September that he can neither confirm nor deny the statement or the existence of records, that \"if authentic\" it would be classified SECRET in its entirety, and withholds ten internal documents. The newsletter is under copyright, so it is linked rather than hosted.",
+      "source": "Citizens Against UFO Secrecy (CAUS), vía archive.org"
+    },
+    {
       "src": "/pursue/cuba-mig-1967-context.jpg",
       "type": "image",
       "title": "Contexto · un caza MiG-21, del tipo cubano implicado en el reporte de la NSA de 1967",
