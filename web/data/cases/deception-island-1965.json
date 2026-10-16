@@ -82,6 +82,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/deception-island-1965-dos-airgram.pdf",
+      "type": "pdf",
+      "title": "Aerograma A-208 de la embajada de EE. UU. en Buenos Aires, «Celestial Body Observed over Antarctica» (4 de septiembre de 1965), 1 pág.",
+      "title_en": "Airgram A-208 from the U.S. Embassy in Buenos Aires, \"Celestial Body Observed over Antarctica\" (4 September 1965), 1 p.",
+      "description": "Aerograma confidencial, hoy desclasificado, que la embajada en Buenos Aires envió al Departamento de Estado en respuesta a una consulta del 16 de agosto; lo firma Albert Mayio, consejero para asuntos comerciales y económicos. Remite a un informe de inteligencia del Departamento de Defensa del 16 de julio con la traducción de cuatro mensajes recibidos por el Servicio de Hidrografía Naval argentino sobre objetos no identificados. Dice que la agregaduría naval pidió más datos a la Armada, pero que no los habrá hasta el relevo de verano de las bases antárticas, y que el Observatorio de La Plata declaró no tener teoría sobre los objetos, aunque señaló que se vieron cuando el satélite Echo II orbitaba sobre la zona antártica.",
+      "description_en": "Confidential airgram, since declassified, sent by the Embassy in Buenos Aires to the Department of State in reply to an inquiry of 16 August; it is signed by Albert Mayio, Counselor for Commercial and Economic Affairs. It points to a Defense intelligence information report of 16 July that translated four messages received by the Argentine Navy Hydrographic Service about unidentified flying objects. It says the Naval Attaché asked the Argentine Navy for more data, but that none is likely until the summer exchange of personnel at the Antarctic stations, and that the La Plata Observatory stated it had no theory on the objects, although it pointed out that they were sighted when the Echo II satellite was orbiting over the Antarctic zone.",
+      "source": "Departamento de Estado de EE. UU. (publicado por la NSA en su colección sobre ovnis; espejo de archive.org)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/NSAUFO"
+    },
+    {
       "src": "/pursue/deception-island-1965-context.jpg",
       "type": "image",
       "title": "Contexto · isla Decepción (Antártida), la caldera volcánica donde tres bases informaron de luces en 1965",

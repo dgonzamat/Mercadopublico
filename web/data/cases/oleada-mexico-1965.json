@@ -58,6 +58,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/oleada-mexico-1965-mexicali-airgram.pdf",
+      "type": "pdf",
+      "title": "Aerograma A-11 del consulado de EE. UU. en Mexicali, «Political Report for August 1965» (14 de septiembre de 1965): página de resumen, 1 pág.",
+      "title_en": "Airgram A-11 from the U.S. Consulate in Mexicali, \"Political Report for August 1965\" (14 September 1965): summary page, 1 p.",
+      "description": "Primera página, la única publicada, del informe político mensual que el consulado en Mexicali (Baja California) remitió al Departamento de Estado, con copia a la embajada en México y al consulado de Tijuana; lo firma Arthur W. Feldman. Es un documento no clasificado de cinco páginas, y su índice de diez puntos incluye, entre las secuelas de las elecciones, el mercado municipal y la cosecha de algodón, uno titulado «Platillos voladores en Mexicali», marcado con una flecha. El cuerpo de ese punto no figura en la copia publicada. Atestigua que en agosto de 1965 los avistamientos de Baja California ocupaban un lugar en el informe político del consulado.",
+      "description_en": "First page, the only one released, of the monthly political report that the Consulate in Mexicali (Baja California) sent to the Department of State, copied to the Embassy in Mexico City and the Tijuana consulate; it is signed by Arthur W. Feldman. It is an unclassified five-page document, and its ten-point summary lists, between the aftermath of the elections, the municipal market and the cotton harvest, an item titled \"Flying Saucers in Mexicali\", marked with an arrow. The text of that item is not in the released copy. It shows that in August 1965 the Baja California sightings earned a place in the consulate's political report.",
+      "source": "Departamento de Estado de EE. UU. (publicado por la NSA en su colección sobre ovnis; espejo de archive.org)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/NSAUFO"
+    },
+    {
       "src": "/pursue/oleada-mexico-1965-context.jpg",
       "type": "image",
       "title": "Contexto · el Ángel de la Independencia, Ciudad de México",
