@@ -77,6 +77,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/brown-mountain-lights-1913-usgs-circular-646.pdf",
+      "type": "pdf",
+      "title": "Mansfield, «Origin of the Brown Mountain Light in North Carolina» · USGS Circular 646 (extracto)",
+      "title_en": "Mansfield, 'Origin of the Brown Mountain Light in North Carolina' · USGS Circular 646 (extract)",
+      "description": "Informe del geólogo George Rogers Mansfield para el Servicio Geológico de EE. UU., emitido en 1922 como comunicado de prensa 14328 y reeditado sin cambios como Circular 646 en 1971. El extracto (portada, pp. 1-6 con el mapa, p. 16 y la conclusión final) recoge la primera visita del USGS, la de D. B. Sterrett en octubre de 1913, que atribuyó las luces a faros de locomotoras; la crónica del Charlotte Daily Observer del 23 de septiembre de 1913; la inundación de 1916, con las luces «vistas como de costumbre» sin trenes a 40 o 50 millas; la propuesta del Weather Bureau de 1919, y la conclusión: 47 % faros de automóviles, 33 % de locomotoras, 10 % luces fijas y 10 % fuegos de monte.",
+      "description_en": "Report by geologist George Rogers Mansfield for the U.S. Geological Survey, issued in 1922 as Press Notice 14328 and reprinted unchanged as Circular 646 in 1971. The extract (cover, pp. 1-6 with the map, p. 16 and the final conclusion) covers the first USGS visit, by D. B. Sterrett in October 1913, who attributed the lights to locomotive headlights; the Charlotte Daily Observer dispatch of September 23, 1913; the 1916 flood, with the lights 'seen as usual' while no trains came within 40 or 50 miles; the Weather Bureau's 1919 proposal; and the conclusion: 47% automobile headlights, 33% locomotive headlights, 10% stationary lights and 10% brush fires.",
+      "source": "U.S. Geological Survey, Circular 646 (1971), pubs.usgs.gov",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://pubs.usgs.gov/circ/1971/0646/report.pdf"
+    },
+    {
       "src": "/pursue/brown-mountain-lights-1913-context.png",
       "type": "image",
       "title": "Contexto · Brown Mountain (Carolina del Norte), donde aparecen las 'luces' recurrentes",

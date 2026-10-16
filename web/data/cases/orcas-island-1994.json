@@ -75,6 +75,15 @@
   ],
   "documents": [
     {
+      "src": "https://nuforc.org/sighting/?id=33261",
+      "type": "link",
+      "title": "NUFORC, informe S33261 · «Bright blue flashes in the sky and zigzagging light - 1994»",
+      "title_en": "NUFORC report S33261 · 'Bright blue flashes in the sky and zigzagging light - 1994'",
+      "description": "Informe del National UFO Reporting Center, enviado el 20 de noviembre de 2003 y publicado el 26 de noviembre, escrito por una testigo «de memoria». Cuenta que seis a ocho mujeres miraban las estrellas en una playa de Isla Orcas cuando vieron dos o tres destellos azules del color de los antiguos cubos de flash, luego una luz que tomó por un satélite y que bajó en zigzag con una pequeña cola de fuego hasta perderse a unos 60 grados, y un zumbido como de motor fuera de borda que duró una hora. La nota de Peter Davenport dice que la fecha es aproximada, que la fijó él en el sábado 24 de septiembre de 1994, que tuvo cinco reportes independientes del suceso y anomalías eléctricas en una casa de West Sound.",
+      "description_en": "National UFO Reporting Center report, submitted on November 20, 2003 and posted on November 26, written by a witness 'from memory'. It says six to eight women were stargazing on an Orcas Island beach when they saw two or three blue flashes the color of old flash cubes, then a light taken for a satellite that zigzagged down with a small fiery tail until lost at about 60 degrees, and a hum like an outboard motor that lasted an hour. Peter Davenport's note says the date is approximate, that he set it as Saturday, September 24, 1994, that he had five independent reports of the event, and electrical anomalies in a West Sound home.",
+      "source": "National UFO Reporting Center (texto leído en la copia de su base de datos en Hugging Face, arieltunontdf/nuforc_reports.CSV)"
+    },
+    {
       "src": "/pursue/orcas-island-1994-context.jpg",
       "type": "image",
       "title": "Contexto · Orcas Island (Washington)",

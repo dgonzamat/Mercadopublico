@@ -109,6 +109,26 @@
   },
   "documents": [
     {
+      "src": "/pursue/mothman-1966-ntsb-har-71-1.pdf",
+      "type": "pdf",
+      "title": "NTSB-HAR-71-1 · el informe del colapso del Silver Bridge (extracto)",
+      "title_en": "NTSB-HAR-71-1 · the Silver Bridge collapse report (extract)",
+      "description": "Informe de accidente de la Junta Nacional de Seguridad en el Transporte de EE. UU. sobre el colapso del puente de la US-35 entre Point Pleasant (Virginia Occidental) y Kanauga (Ohio), adoptado el 16 de diciembre de 1970. El extracto reúne la portada, la sinopsis (p. 9) y la sección de causa (p. 126). Establece que el puente cayó hacia las 17:00 del 15 de diciembre de 1967, con 46 muertos; que 31 de los 37 vehículos cayeron con él, 24 al río Ohio y 7 a la orilla de Ohio, y que la causa fue la fractura por clivaje del ojal del eslabón 330 por la acción conjunta de corrosión bajo tensión y fatiga por corrosión, un defecto inaccesible a la inspección visual. No menciona avistamientos.",
+      "description_en": "Highway accident report by the U.S. National Transportation Safety Board on the collapse of the US-35 bridge between Point Pleasant (West Virginia) and Kanauga (Ohio), adopted on December 16, 1970. The extract gathers the cover, the synopsis (p. 9) and the cause section (p. 126). It establishes that the bridge fell at about 5 p.m. on December 15, 1967, with 46 dead; that 31 of the 37 vehicles fell with it, 24 into the Ohio River and 7 onto the Ohio shore; and that the cause was a cleavage fracture in the eye of eyebar 330 from the joint action of stress corrosion and corrosion fatigue, a flaw inaccessible to visual inspection. It does not mention any sightings.",
+      "source": "National Transportation Safety Board, NTSB-HAR-71-1 (1970), ntsb.gov",
+      "license": "Dominio público (obra del Gobierno de EE. UU.)",
+      "fallbackUrl": "https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR7101.pdf"
+    },
+    {
+      "src": "https://archive.org/details/the-flying-saucer-review-ultimate-collection",
+      "type": "link",
+      "title": "John A. Keel, «West Virginia's Enigmatic \"Bird\"» · Flying Saucer Review 14(4), 1968",
+      "title_en": "John A. Keel, 'West Virginia's Enigmatic \"Bird\"' · Flying Saucer Review 14(4), 1968",
+      "description": "Informe especial de John A. Keel en Flying Saucer Review (vol. 14, n.º 4, julio-agosto de 1968; fichero 80.FSR de la colección), escrito tras cinco visitas a Point Pleasant desde diciembre de 1966. Tabula 26 avistamientos entre noviembre de 1966 y noviembre de 1967, diez junto a la «TNT Area», y narra el caso de los Scarberry y los Mallette del 15 de noviembre de 1966, la radio del ayudante Halstead y el de Thomas Ury del 25 de noviembre. Admite que en tres casos (n.º 7, 11 y 15) los testigos pudieron ver un ave grande, y cuenta que los testigos negaron parecido con el búho nival abatido en Gallipolis Ferry. Keel lo liga a los ovnis y a los «hombres de negro».",
+      "description_en": "Special report by John A. Keel in Flying Saucer Review (vol. 14, no. 4, July-August 1968; file 80.FSR in the collection), written after five visits to Point Pleasant from December 1966. It tabulates 26 sightings between November 1966 and November 1967, ten of them near the 'TNT Area', and recounts the Scarberry and Mallette case of November 15, 1966, Deputy Halstead's radio and Thomas Ury's sighting of November 25. It concedes that in three cases (nos. 7, 11 and 15) the witnesses may have seen a large bird, and says the witnesses denied any resemblance to the snowy owl shot at Gallipolis Ferry. Keel ties it to UFOs and the 'Men in Black'.",
+      "source": "Flying Saucer Review 14(4), julio-agosto de 1968 (archive.org)"
+    },
+    {
       "src": "/pursue/mothman-1966-context.jpg",
       "type": "image",
       "title": "Contexto · la estatua del Mothman en Point Pleasant (Virginia Occidental)",
