@@ -85,6 +85,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/kilimanjaro-1951-consulado.pdf",
+      "type": "pdf",
+      "title": "Project Blue Book, expediente «East Africa», 19 feb 1951: ficha ATIC y despacho del consulado de EE. UU. en Dar es Salaam (3 págs.)",
+      "title_en": "Project Blue Book, 'East Africa' file, 19 Feb 1951: ATIC record card and despatch of the US consulate in Dar es Salaam (3 pp.)",
+      "description": "La ficha de Blue Book (Project 10073 Record Card) anota observación aire-visual de 17 minutos por «Crew and Passengers», un objeto «like bullet with fin» con rumbo este, y la conclusión «Insufficient data for evaluation», con el comentario de que se tomaron fotos que no están en el archivo. El despacho del consulado de Dar es Salaam al Departamento de Estado (archivo 778.5612, febrero de 1951), firmado por el cónsul H. Gordon Minnigerode, cuenta que la tripulación y los pasajeros del Lodestar de East African Airways vieron el objeto unos 17 minutos sobre el Kilimanjaro, con prismáticos «bullet shaped with a fin at one end» y «three definite stripes», que se preguntó por radio a Nairobi por el Constellation francés Eastleigh–Tananarive, y que el comandante obtuvo la firma de los nueve pasajeros. Los nombres de los pasajeros están tachados en la copia.",
+      "description_en": "The Blue Book card (Project 10073 Record Card) records a 17-minute air-visual sighting by 'Crew and Passengers', an object 'like bullet with fin' heading east, and the conclusion 'Insufficient data for evaluation', with the comment that photos were taken but are not in the file. The despatch from the Dar es Salaam consulate to the Department of State (file 778.5612, February 1951), signed by Consul H. Gordon Minnigerode, reports that the crew and passengers of the East African Airways Lodestar watched the object for about 17 minutes above Kilimanjaro, through binoculars 'bullet shaped with a fin at one end' with 'three definite stripes', that Nairobi was asked by radio about the French Constellation from Eastleigh to Tananarive, and that the master obtained the signatures of the nine passengers. The passengers' names are blacked out in the copy.",
+      "source": "Project Blue Book · NARA, microfilm T-1206 (copia de archive.org, «1951-02-7006612-EastAfrica», págs. 1-3)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1951-02-7006612-EastAfrica"
+    },
+    {
       "src": "/pursue/kilimanjaro-1951-context.jpg",
       "type": "image",
       "title": "Contexto · el monte Kilimanjaro (Tanzania), sobre el que la tripulación de EAA observó el objeto",

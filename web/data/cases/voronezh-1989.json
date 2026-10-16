@@ -114,6 +114,17 @@
   },
   "documents": [
     {
+      "src": "/pursue/voronezh-1989-fbis-nota-prensa.pdf",
+      "type": "pdf",
+      "title": "FBIS, Foreign Press Note «USSR: Media Report Multitude of UFO Sightings» (22 nov 1989, 5 págs.)",
+      "title_en": "FBIS, Foreign Press Note 'USSR: Media Report Multitude of UFO Sightings' (22 Nov 1989, 5 pp.)",
+      "description": "Resumen del servicio de escucha de prensa extranjera de la CIA sobre la avalancha de noticias de ovnis en la prensa soviética de 1989. Registra que «On 9 October the Soviet news agency TASS reported that a UFO had landed in a park in the city of Voronezh» y que el objeto fue visto por muchos testigos antes de irse; que Krasnaya Zvezda del 13 de octubre sugirió que la histeria colectiva podía explicar parte de la oleada; y que Literaturnaya Gazeta del 1 de noviembre informó de que Vorónezh se había vuelto lugar de «pilgrimage» de corresponsales en busca de noticias sensacionales, sin importar la naturaleza discutible de las supuestas pruebas. Es un registro de la época de cómo circuló el caso, no una investigación del suceso.",
+      "description_en": "Summary by the CIA's foreign press monitoring service of the flood of UFO stories in the Soviet press in 1989. It records that 'On 9 October the Soviet news agency TASS reported that a UFO had landed in a park in the city of Voronezh' and that the object was seen by many witnesses before it left; that Krasnaya Zvezda of 13 October suggested mass hysteria might explain part of the wave; and that Literaturnaya Gazeta of 1 November reported that Voronezh had become a place of 'pilgrimage' for correspondents seeking sensational news, regardless of the controversial nature of the so-called evidence. It is a contemporary record of how the case circulated, not an investigation of the event.",
+      "source": "FBIS (CIA), Foreign Press Note · CIA Reading Room 0000042346 (copia de archive.org)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/cia-readingroom-document-0000042346"
+    },
+    {
       "src": "/pursue/voronezh-1989-context.jpg",
       "type": "image",
       "title": "Contexto · la ciudad de Vorónezh (Rusia), escenario del avistamiento del parque en 1989",

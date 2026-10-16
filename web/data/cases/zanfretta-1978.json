@@ -79,6 +79,17 @@
   "whyMatters_en": "Zanfretta is the Italian case that defines the problem of testimony in its sharpest form: an institutionally documented core (a Carabinieri telex rating reliability 'buono', an imprint in the grass, a clean neurological examination, residents who had been seeing lights for months) wrapped in a later layer (eleven abductions under hypnosis) that is almost impossible to assess. It matters precisely because it cleanly separates those two layers, which the popular account fuses. The first withstands some scrutiny; the second is the textbook example of why recovered memory is not evidence. It shows how an ambiguous event, once passed through the filter of hypnosis and the press, becomes a saga that can no longer be dismantled or confirmed. It is the European counterweight to Communion and Pascagoula: high cultural profile, mixed evidential base, with nothing physical surviving independent analysis beyond an imprint in the grass.",
   "documents": [
     {
+      "src": "/pursue/zanfretta-1978-telex-carabinieri.pdf",
+      "type": "pdf",
+      "title": "Télex de la compañía de Carabinieri de Chiavari al Ministerio del Interior y al Estado Mayor de la Aeronáutica (8 dic 1978, 1 pág.)",
+      "title_en": "Telex from the Carabinieri company of Chiavari to the Interior Ministry and the Air Force General Staff (8 Dec 1978, 1 p.)",
+      "description": "El primer parte oficial del caso, «UNCLAS Nº 387/1-2», firmado por el capitán Carusi y con sello de recepción del 8 de diciembre. Recoge primero un objeto volador luminoso visto unos instantes desde Albora di Propata a unos 1.500 metros, con fiabilidad «discreta», y luego el relato del vigilante nocturno Zanfretta en Marzano de Torriglia, durante la inspección de la villa «Casa Nostra»: una fuente luminosa, un objeto oval rojo de más de diez metros de diámetro y una «forma luminosa in sembianze umane alta circa tre metri» que subió al objeto, que despegó en vertical con un fuerte silbido hacia el sudoeste. Anota que sus colegas lo hallaron en el lugar en estado de agitación, «nessun testimone», una huella en forma de herradura de unos dos metros en el terreno y un grado de fiabilidad «buono».",
+      "description_en": "The first official report on the case, 'UNCLAS Nº 387/1-2', signed by Capt. Carusi and with a receipt stamp of 8 December. It first records a luminous flying object seen for a few moments from Albora di Propata at about 1,500 metres, with 'fair' reliability, and then the account of night watchman Zanfretta at Marzano di Torriglia, while inspecting the villa 'Casa Nostra': a light source, a red oval object over ten metres across and a 'luminous form with human semblance about three metres tall' that climbed into the object, which took off vertically with a loud whistle towards the south-west. It notes that his colleagues found him on the spot in a state of agitation, 'no witness', a horseshoe-shaped print about two metres across on the ground and a 'good' degree of reliability.",
+      "source": "Arma dei Carabinieri, Compagnia di Chiavari (copia publicada por Rino Di Stefano)",
+      "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
+      "fallbackUrl": "https://www.rinodistefano.com/docs/Primo-Rapporto-Comando-Carabinieri-caso-Zanfretta.pdf"
+    },
+    {
       "src": "/pursue/zanfretta-1978-context.jpg",
       "type": "image",
       "title": "Contexto · Torriglia (Génova, Italia), cerca del caso Zanfretta",
