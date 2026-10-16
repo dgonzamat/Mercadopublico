@@ -82,6 +82,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/vietnam-dmz-1968-iii-maf-chronology.pdf",
+      "type": "pdf",
+      "title": "Crónica de mando de la III Fuerza Anfibia de Marines, junio de 1968: carátula, cartas de remisión y págs. 16-17 del resumen de inteligencia, 6 págs.",
+      "title_en": "III Marine Amphibious Force Command Chronology, June 1968: cover, transmittal letters and pp. 16-17 of the intelligence summary, 6 pp.",
+      "description": "Extracto de la crónica de mando de la III MAF del 1 al 30 de junio de 1968, remitida al Comandante del Cuerpo de Marines el 9 de agosto de 1968 (serie 00176768) y reenviada por la Fuerza de Marines del Pacífico el 23 de septiembre; clasificada «secret» y hoy desclasificada. En la sección 5, «Inteligencia», anota que al final de la tarde del 15 de junio se avistaron en la zona de la DMZ unas 15 aeronaves no identificadas, «que se cree que eran helicópteros enemigos», que desde entonces hubo numerosos avistamientos, visuales y por radar, de «OVNIs» lentos en la DMZ y hacia la isla del Tigre, y que «aún no se ha recibido ninguna prueba sólida de esas aeronaves».",
+      "description_en": "Extract from the III MAF command chronology for 1-30 June 1968, forwarded to the Commandant of the Marine Corps on 9 August 1968 (serial 00176768) and endorsed onward by Fleet Marine Force, Pacific on 23 September; classified secret and since declassified. In section 5, \"Intelligence\", it records that during the late evening hours of 15 June approximately 15 unidentified aircraft, \"believed to be enemy helicopters\", were reportedly sighted in the DMZ area, that since then there had been numerous sightings, both visual and by radar, of slow-moving \"UFO's\" in the DMZ area and seaward toward Tiger Island, and that \"no hard evidence of these aircraft has yet been received\".",
+      "source": "Cuerpo de Marines de EE. UU., III MAF (copia desclasificada publicada por Project 1947)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "http://www.project1947.com/articles/vietnam_command_chron_june_68.pdf"
+    },
+    {
       "src": "/pursue/vietnam-dmz-1968-context.jpg",
       "type": "image",
       "title": "Contexto · el crucero USS Boston, alcanzado por fuego amigo durante el incidente de la DMZ",

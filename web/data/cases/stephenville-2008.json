@@ -77,6 +77,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/stephenville-2008-faa-foia.pdf",
+      "type": "pdf",
+      "title": "Respuesta FOIA de la FAA sobre las luces de Stephenville (26 mar 2009): carta, correos internos del centro de Fort Worth y registro del área de operaciones de Brownwood, 5 págs.",
+      "title_en": "FAA FOIA response on the Stephenville Lights (26 Mar 2009): cover letter, internal Fort Worth Center e-mails and the Brownwood operating area schedule, 5 pp.",
+      "description": "Respuesta del Centro de Servicios Central de la FAA a la solicitud FOIA 2009-003019 de John Greenewald: dice que entonces había varias aeronaves cerca de Stephenville y que el único registro de tráfico aéreo es la grabación continua del centro de Fort Worth, entregada en CD. Los correos de enero de 2008 contienen las preguntas de James McGaha y la respuesta del control de calidad del centro: un King Air hacia Brownwood a las 18:22, cuatro F-16 que entraron en el área de operaciones de Brownwood a las 18:17, justo al este de Stephenville, otros cuatro a las 18:26, y salidas a las 18:54 y 18:58. Cierra la tabla de activación de las áreas de Brownwood del 9 de enero de 2008, 0:00-3:00 UTC.",
+      "description_en": "Reply from the FAA's Central Service Center to John Greenewald's FOIA request 2009-003019: it says several aircraft were in the vicinity of Stephenville and that the only air traffic record is the continuous data recording of the Fort Worth Center, supplied on CD. The January 2008 e-mails contain James McGaha's questions and the Center's quality-assurance answer: a King Air descending toward Brownwood at 18:22, four F-16s entering the Brownwood MOA at 18:17 just east of Stephenville, four more at 18:26, and exits at 18:54 and 18:58. It ends with the activation table for the Brownwood areas on 9 January 2008, 0:00-3:00 UTC.",
+      "source": "Administración Federal de Aviación (FAA), vía The Black Vault",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://documents.theblackvault.com/documents/Stephenville/FAAStephenville.pdf"
+    },
+    {
       "src": "/pursue/stephenville-2008-context.jpg",
       "type": "image",
       "title": "Contexto · Stephenville (Texas)",

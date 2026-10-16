@@ -79,6 +79,15 @@
   "name_en": "El Taire / Bermejo crash",
   "documents": [
     {
+      "src": "https://wikileaks.org/plusd/cables/1978LAPAZ03804_d.html",
+      "type": "link",
+      "title": "Cable 1978LAPAZ03804 de la embajada de EE. UU. en La Paz, «Report of fallen space object» (15 de mayo de 1978)",
+      "title_en": "Cable 1978LAPAZ03804 from the U.S. Embassy in La Paz, \"Report of fallen space object\" (15 May 1978)",
+      "description": "Telegrama no clasificado y con precedencia inmediata, firmado por el embajador Paul Boeker, con copia a la CIA, la NSA y la NASA, entre otras. Dice que los diarios bolivianos de esa mañana, citando una crónica desde Salta, informaban de un objeto no identificado caído del cielo y hallado cerca de Bermejo, «en forma de huevo, metálico y de unos cuatro metros de diámetro»; que la Fuerza Aérea Boliviana iba a investigar, y pide que las agencias aclaren qué puede ser, porque la región había tenido «más de su cuota de reportes de ovnis» esa semana. Telegrama electrónico sin facsímil: el texto íntegro está en el archivo PlusD.",
+      "description_en": "Unclassified telegram with immediate precedence, signed by Ambassador Paul Boeker and copied to the CIA, the NSA and NASA, among others. It says that the Bolivian papers that morning, quoting a story from Salta, reported an unidentified object that had fallen from the sky and was found near Bermejo, \"egg-shaped, metal and about four meters in diameter\"; that the Bolivian Air Force planned to investigate; and it asks the agencies to shed light on what it might be, since the region had had \"more than its share of reports of UFOs\" that week. It is an electronic telegram with no facsimile; the full text is in the PlusD archive.",
+      "source": "Departamento de Estado de EE. UU. (NARA, telegramas electrónicos de 1978), vía WikiLeaks PlusD"
+    },
+    {
       "src": "/pursue/bolivia-el-taire-1978-context.jpg",
       "type": "image",
       "title": "Contexto · Bermejo (Tarija, Bolivia), cerca del cerro El Taire",

@@ -81,6 +81,17 @@
   ],
   "documents": [
     {
+      "src": "/pursue/yemen-orb-2024-house-hearing.pdf",
+      "type": "pdf",
+      "title": "Audiencia de la Cámara de Representantes del 9 de septiembre de 2025 (Serie 119-44): presentación del vídeo de Yemen por el congresista Burlison, 4 págs.",
+      "title_en": "House hearing of 9 September 2025 (Serial No. 119-44): Rep. Burlison's presentation of the Yemen video, 4 pp.",
+      "description": "Extracto de la transcripción oficial de la audiencia «Restoring Public Trust Through UAP Transparency and Whistleblower Protection», del grupo de trabajo sobre desclasificación del Comité de Supervisión, publicada por la GPO. Burlison presenta «un vídeo que me han dado», tomado el 30 de octubre de 2024: un MQ-9 que sigue un orbe frente a la costa de Yemen mientras otro MQ-9, que no se ve, lanza un misil Hellfire. George Knapp dice haber oído hablar del suceso. Más tarde la presidenta, Anna Paulina Luna, pide repetirlo y pregunta a los testigos si algo del arsenal estadounidense puede «partir un Hellfire» así; responden que nada que ellos sepan.",
+      "description_en": "Extract from the official transcript, printed by the GPO, of the hearing \"Restoring Public Trust Through UAP Transparency and Whistleblower Protection\" held by the Oversight Committee's declassification task force. Burlison queues up \"a video that I have been given\", taken on 30 October 2024: an MQ-9 tracking an orb off the coast of Yemen while another MQ-9, not visible, launches a Hellfire missile. George Knapp says he had heard about the event. Later the chair, Anna Paulina Luna, has it replayed and asks the witnesses whether anything in the U.S. arsenal can \"split a Hellfire missile like this\"; they answer nothing to their knowledge.",
+      "source": "Cámara de Representantes de EE. UU., Comité de Supervisión (GPO, govinfo)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf"
+    },
+    {
       "src": "/pursue/yemen-orb-2024-context.jpg",
       "type": "image",
       "title": "Contexto · el mar Rojo, frente a cuya costa yemení se grabó la esfera",
