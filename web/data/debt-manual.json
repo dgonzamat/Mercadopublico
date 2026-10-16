@@ -50,7 +50,7 @@
       {
         "id": "X1",
         "title": "Juicios del Historical Record de AARO",
-        "state": "esperando decisión"
+        "state": "resuelto el 16 oct: la objeción era sobre los dos juicios de reparto de la ficha-documento del Historical Record; con la integración de los documentos (15 oct) esa ficha dejó de existir, el informe vive en el perfil de Kirkpatrick y los documentos ya no llevan reparto"
       }
     ]
   },
@@ -61,6 +61,26 @@
         "id": "19",
         "title": "BVD: la Biblioteca Virtual de Defensa volvió a dar acceso el 16 oct; reintentar las fichas españolas pendientes (cruce con Mis primos)",
         "state": "hecho el 16 oct: de la lista de Mis primos entraron zaragoza-1980, gallarta-1977, burgos-1970 y burgos-1975 (num 450-453), con verificación ligera; Puente Almuhey 1968 aplazado por coste; Almería 1968, Sevilla 1965, El Garrobo y Constantina 1968 son demasiado finos y Sóller 1992 no es un incidente (ver docs/registros.md)"
+      }
+    ]
+  },
+  {
+    "group": "Backlog · deuda nueva, por fecha de hallazgo",
+    "items": [
+      {
+        "id": "B1",
+        "title": "16 oct · Bucket `pursue` casi lleno (E38): recomprimir sus PDF en gris como se hizo en /pursue; la prueba con la sección 10, parte 2, del expediente FBI 62-HQ-83894 lo deja en la mitad con páginas y capa de texto intactas. El bucket ya se descarga desde aquí, pero subir los ficheros exige la clave de servicio de Supabase",
+        "state": "pendiente: acción del dueño (subir los ficheros recomprimidos)"
+      },
+      {
+        "id": "B2",
+        "title": "16 oct · La sección 10, parte 2, del expediente FBI 62-HQ-83894 en el bucket está escaneada en espejo (texto y sellos invertidos); voltearla al recomprimir y comprobar las demás partes del expediente",
+        "state": "pendiente, junto con B1"
+      },
+      {
+        "id": "B3",
+        "title": "16 oct · Puente Almuhey 1968 (expediente de la BVD, de la lista de Mis primos) sin ficha",
+        "state": "aplazado por coste"
       }
     ]
   }
