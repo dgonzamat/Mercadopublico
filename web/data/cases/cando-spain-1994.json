@@ -76,6 +76,15 @@
   },
   "documents": [
     {
+      "src": "https://articles.adsabs.harvard.edu/pdf/1998M%26PS...33...57D",
+      "type": "link",
+      "title": "Docobo, Spalding, Ceplecha, Díaz-Fierros, Tamazian y Onda, «Investigation of a bright flying object over northwest Spain, 1994 January 18», Meteoritics & Planetary Science 33 (1998)",
+      "title_en": "Docobo, Spalding, Ceplecha, Díaz-Fierros, Tamazian and Onda, 'Investigation of a bright flying object over northwest Spain, 1994 January 18', Meteoritics & Planetary Science 33 (1998)",
+      "description": "El estudio científico del suceso: recoge los testimonios, las medidas del cráter de Cando, la lluvia de enero y el apéndice de Onda. Concluye que el objeto no era un bólido, que un impacto es muy improbable porque no aparecieron meteoritos ni materiales de choque, y propone una erupción de gases de la tierra que abrió el cráter. Copia del ADS de Harvard; el artículo tiene derechos de la revista, por eso va como enlace.",
+      "description_en": "The scientific study of the event: it gathers the testimony, the measurements of the Cando crater, the January rainfall and Onda's appendix. It concludes that the object was not a fireball, that an impact is very unlikely because no meteorites or impact materials were found, and proposes an eruption of gases from the ground that opened the crater. Copy at Harvard's ADS; the article is under the journal's copyright, so it is given as a link.",
+      "source": "Meteoritics & Planetary Science · NASA ADS"
+    },
+    {
       "src": "/pursue/cando-spain-1994-context.jpg",
       "type": "image",
       "title": "Contexto · Cando (Galicia, España), donde cayó el objeto que dejó el cráter",

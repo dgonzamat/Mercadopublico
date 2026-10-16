@@ -64,6 +64,15 @@
   },
   "documents": [
     {
+      "src": "https://files.ncas.org/condon/text/s3chap03.htm",
+      "type": "link",
+      "title": "Informe Condon (1969), sección III, capítulo 3, «Direct Physical Evidence»: el análisis de los fragmentos de magnesio de Ubatuba",
+      "title_en": "Condon Report (1969), section III, chapter 3, 'Direct Physical Evidence': the analysis of the Ubatuba magnesium fragments",
+      "description": "El análisis de laboratorio de los fragmentos por activación neutrónica y microsonda, encargado por el proyecto de la Universidad de Colorado. Concluye que la afirmación de una pureza inusual del magnesio «ha sido refutada», que los fragmentos pudieron fabricarse con tecnología terrestre anterior a 1957 y que su composición no dice nada de su origen, y juzga la historia más endeble que la mayoría porque los testigos nunca se identificaron. Texto del informe en la web de NCAS; su licencia es dudosa, por eso va como enlace.",
+      "description_en": "The laboratory analysis of the fragments by neutron activation and microprobe, commissioned by the University of Colorado project. It concludes that the claim of unusual purity of the magnesium 'has been refuted', that the fragments could have been made with terrestrial technology from before 1957 and that their composition says nothing of their origin, and judges the story weaker than most because the witnesses were never identified. Text of the report on the NCAS website; its licence is doubtful, so it is given as a link.",
+      "source": "Scientific Study of Unidentified Flying Objects (1969) · NCAS"
+    },
+    {
       "src": "/pursue/ubatuba-1957-context.jpg",
       "type": "image",
       "title": "Contexto · Ubatuba (São Paulo, Brasil)",
