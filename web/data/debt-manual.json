@@ -15,7 +15,7 @@
       {
         "id": "G1",
         "title": "Link rot: el Weekly Audit falla cada semana desde septiembre por fuentes rotas nuevas (issue #746, cuyo informe sale truncado); correr el gate a mano, reparar o sustituir las citas y recongelar la línea base",
-        "state": "reparado el 16 oct: tres fuentes sustituidas y, tras la auditoría lanzada a mano ese día, retirada la cita genérica del National Post en langenburg-1974; falta la corrida de la auditoría sobre main con el arreglo para cerrar el issue #746"
+        "state": "hecho el 16 oct: cuatro citas sustituidas o retiradas (#1117, #1120, #1121); dos corridas seguidas del Weekly Audit sobre main en verde (38839406563 y 38839694893) y el issue #746 cerrado por el workflow"
       },
       {
         "id": "G2",
