@@ -16,7 +16,7 @@
     "place": "Mar Amarillo",
     "place_en": "Yellow Sea"
   },
-  "tier": "B",
+  "tier": "A",
   "probability": 25,
   "category": "incident",
   "patterns": [
