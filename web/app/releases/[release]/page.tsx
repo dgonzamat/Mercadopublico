@@ -22,7 +22,15 @@ const LATEST = Math.max(...RELEASES);
 
 const RELEASE_META: Record<
   number,
-  { es: string; en: string; blurbEs: string; blurbEn: string }
+  {
+    es: string;
+    en: string;
+    blurbEs: string;
+    blurbEn: string;
+    // Lo que pasó alrededor de la entrega y no es un caso: una reacción
+    // oficial o un organismo nuevo. Va con su fuente, porque no tiene ficha.
+    context?: { es: string; en: string; source: string; url: string };
+  }
 > = {
   1: {
     es: "PURSUE · Primera entrega",
@@ -31,6 +39,12 @@ const RELEASE_META: Record<
       "El drop histórico fundacional del Departamento de Guerra: expedientes del FBI y de la USAF temprana.",
     blurbEn:
       "The foundational historic drop from the Department of War: FBI and early-USAF files.",
+    context: {
+      es: "El 11 de mayo de 2026, tres días después de la primera entrega, el secretario jefe del Gabinete de Japón, Minoru Kihara, se refirió a ella en su rueda de prensa ordinaria. La entrega incluía dos vídeos grabados cerca de Japón. Kihara dijo que el Gobierno reúne y analiza de forma constante, con gran interés, la información sobre incidentes que afectan a la seguridad nacional, incluidos los UAP, en estrecha coordinación con Estados Unidos y otros países. Preguntado si Japón publicaría archivos parecidos, respondió que se decidiría caso por caso, sopesando entre otros factores el riesgo de revelar su capacidad de obtener información.",
+      en: "On 11 May 2026, three days after the first release, Japan's Chief Cabinet Secretary, Minoru Kihara, addressed it at his regular news conference. The release included two videos recorded near Japan. Kihara said the government is constantly gathering and analyzing information with great interest on incidents related to national security, including UAP, in close coordination with the United States and other countries. Asked whether Japan would disclose similar files, he said decisions would be made case by case, weighing among other factors the risk of exposing its intelligence-gathering capabilities.",
+      source: "The Japan Times",
+      url: "https://www.japantimes.co.jp/news/2026/05/11/japan/us-pentagon-japan-ufos/",
+    },
   },
   2: {
     es: "PURSUE · Segunda entrega",
@@ -47,6 +61,12 @@ const RELEASE_META: Record<
       "El archivo histórico de la CIA: Panel Robertson, programa U-2 e inteligencia exterior.",
     blurbEn:
       "The CIA historical archive: Robertson Panel, the U-2 program and foreign intelligence.",
+    context: {
+      es: "El 16 de junio de 2026, cuatro días después de la tercera entrega, un funcionario de la Oficina del Director de Inteligencia Nacional (ODNI) dijo a Liberation Times que la ODNI, junto al FBI y al Departamento de Guerra, había creado un UAP Governance Board para dar orientación, recomendaciones y coordinación a organismos militares, policiales, de inteligencia y civiles. Según el funcionario, la junta se había reunido por primera vez el día anterior. Su carta fundacional le encarga coordinar a tiempo la desclasificación de información sobre UAP conforme a la Orden Ejecutiva 13526 y mejorar el apoyo a AARO. Sus miembros no se hicieron públicos.",
+      en: "On 16 June 2026, four days after the third release, an official from the Office of the Director of National Intelligence (ODNI) told Liberation Times that ODNI, alongside the FBI and the Department of War, had established a UAP Governance Board to provide guidance, recommendations and coordination across military, law enforcement, intelligence and civilian agencies. The official said the board had met for the first time the day before. Its charter tasks it with the timely coordination of declassification of UAP-related information under Executive Order 13526 and with more effective support to AARO. Its members were not named.",
+      source: "Liberation Times",
+      url: "https://www.liberationtimes.com/home/us-establishes-new-interagency-uap-governance-board-to-coordinate-investigations-and-declassification",
+    },
   },
   4: {
     es: "PURSUE · Cuarta entrega",
@@ -146,6 +166,19 @@ export async function ReleasePage({
             locale={locale}
           />
         </Lede>
+        {meta.context && (
+          <p className="max-w-3xl text-sm leading-relaxed text-text">
+            <T es={meta.context.es} en={meta.context.en} locale={locale} />{" "}
+            <a
+              href={meta.context.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted underline decoration-dotted hover:text-accent"
+            >
+              {meta.context.source} ↗
+            </a>
+          </p>
+        )}
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
           {list.length} <T es="casos" en="cases" locale={locale} /> · Tier S {t.S} · A {t.A} · B {t.B}
         </p>
