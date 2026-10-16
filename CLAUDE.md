@@ -138,6 +138,8 @@ Esta separación existe porque `cases.json` monolítico (~5,5 MB a sep 2026, con
 
 Campos obligatorios: `id, num, name, year_start, country, country_name, flag, location, tier, probability, summary, summary_en, patterns, category`.
 
+**Regla de país (16 oct 2026, decisión del dueño)**: `country` es el del **lugar del suceso**, no el de la plataforma que lo registró; en el mar, el del país costero más cercano (Golfo de Omán → OM, frente a Yemen → YE, mar de Filipinas → PH). Solo si la fuente no revela el lugar se queda la nación de la plataforma, y `country_name` lo dice («Área de responsabilidad de INDOPACOM (ubicación exacta no revelada)»). Todo `country_name` nuevo necesita su entrada en `COUNTRY_EN` de `lib/i18n-geo.ts` y su código en `lib/regions.ts`. *(enforzado: `audit-consistency.mjs` **E50** y **E35**, ERROR.)*
+
 Campos opcionales de rich content (renderizados como secciones en `/cases/[slug]`):
 - `whatHappened` — cronología + contexto. Separa párrafos con `\n\n`.
 - `whyMatters` — significancia analítica.

@@ -4,9 +4,9 @@
   "name": "Yemen — Orbe / Misil Hellfire (MQ-9, 2024)",
   "name_en": "Yemen — Orb / Hellfire Missile Strike (MQ-9, 2024)",
   "year_start": 2024,
-  "country": "US",
-  "country_name": "Estados Unidos / Mar Rojo",
-  "flag": "🇺🇸",
+  "country": "YE",
+  "country_name": "Yemen",
+  "flag": "🇾🇪",
   "location": {
     "lat": 14.8,
     "lng": 42,

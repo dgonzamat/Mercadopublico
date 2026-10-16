@@ -2085,6 +2085,21 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   }
 }
 
+// ─── 9zc. RULE E50: todo country_name tiene traducción al inglés ─────────
+//
+// `countryEn` (lib/i18n-geo.ts) devuelve el valor tal cual si no está en el
+// mapa, así que un país sin entrada se ve en español en el sitio inglés sin que
+// nada falle: el 16 oct 2026 eran 60 casos (Filipinas, Siria, Omán, todas las
+// «ubicación exacta no revelada»…). ERROR si un country_name no está en el mapa.
+{
+  const src = fs.readFileSync(path.join(root, "lib", "i18n-geo.ts"), "utf8");
+  const keys = new Set([...src.matchAll(/^\s*(?:"([^"]+)"|([^\s:"]+)):\s*"/gm)].map((m) => m[1] || m[2]));
+  const miss = [...new Set(cases.map((c) => c.country_name).filter((n) => n && !keys.has(n)))];
+  if (miss.length) {
+    record("ERROR", path.join("lib", "i18n-geo.ts"), 0, `E50 país sin traducción: ${miss.length} country_name sin entrada en COUNTRY_EN (se verían en español en el sitio inglés): ${miss.slice(0, 6).join(" · ")}${miss.length > 6 ? "…" : ""}. Añádelos al mapa.`);
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

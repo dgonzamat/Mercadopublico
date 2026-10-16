@@ -45,7 +45,7 @@
       {
         "id": "1",
         "title": "Regla de país",
-        "state": "esperando decisión"
+        "state": "hecho el 16 oct: lugar del suceso (decisión del dueño); Yemen 2024 y Hassayampa 1965 pasan al país del lugar, los de ubicación no revelada conservan la plataforma; regla escrita en CLAUDE.md"
       },
       {
         "id": "X1",
@@ -67,6 +67,11 @@
   {
     "group": "Backlog · deuda nueva, por fecha de hallazgo",
     "items": [
+      {
+        "id": "B0",
+        "title": "16 oct · País en español en el sitio inglés: el mapa COUNTRY_EN no tenía decenas de country_name (Filipinas, Siria, Omán, las de ubicación no revelada…)",
+        "state": "hecho el 16 oct: mapa completado y sonda E50 (ERROR) con control negativo"
+      },
       {
         "id": "B1",
         "title": "16 oct · Bucket `pursue` casi lleno (E38): recomprimir sus PDF en gris como se hizo en /pursue; la prueba con la sección 10, parte 2, del expediente FBI 62-HQ-83894 lo deja en la mitad con páginas y capa de texto intactas. El bucket ya se descarga desde aquí, pero subir los ficheros exige la clave de servicio de Supabase",
