@@ -101,7 +101,7 @@ El hallazgo real: `950338`, "The Satellite Flaring Phenomenon" — una animació
 ## Release 02 — 22 may 2026 (50 videos)
 
 - [x] `PR050` · 08.26.2022 — 4-uap-formation-iran-26-aug-2022-over-water-callsign → `four-object-formation-iran-2022` · [ver](https://www.dvidshub.net/video/1007706)
-- [x] `PR051` · 01.01.2021 — syrian-uap-instant-acceleration → `pursue-release-2026` · [ver](https://www.dvidshub.net/video/1007707)
+- [x] `PR051` · 01.01.2021 — syrian-uap-instant-acceleration → `syria-instant-acceleration-2021` · [ver](https://www.dvidshub.net/video/1007707)
 - [x] `PR052` · 06.01.2024 — uap-uso-formation-callsign-mission → `uso-formation-nonlinear-edit-2024` · [ver](https://www.dvidshub.net/video/1007708)
 - [x] `PR053` · 10.15.2022 — cigar-shaped-fast-spherical-uap-clip-15-oct-22 → `dow-uap-release02-catalog-2023`(https://www.dvidshub.net/video/1007709)
 - [x] `PR054` · 08.01.2022 — spherical-uap-erratic-movement-callsign-mission-2022 → `spherical-erratic-editing-artifact-2022` · [ver](https://www.dvidshub.net/video/1007711)

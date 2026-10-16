@@ -15,7 +15,7 @@
       {
         "id": "G1",
         "title": "Link rot: el Weekly Audit falla cada semana desde septiembre por fuentes rotas nuevas (issue #746, cuyo informe sale truncado); correr el gate a mano, reparar o sustituir las citas y recongelar la línea base",
-        "state": "pendiente"
+        "state": "reparado el 16 oct (tres fuentes sustituidas); confirmar con el Weekly Audit del 19 oct y cerrar el issue #746"
       },
       {
         "id": "G2",
@@ -35,7 +35,7 @@
       {
         "id": "G5",
         "title": "Casos de los borradores de junio que nunca llegaron al repo: Kihara (Japón 2026), Siria 2021 (DOW-UAP-PR051) y UAP Governance Board 2026",
-        "state": "esperando decisión"
+        "state": "hecho el 16 oct: Kihara y el Governance Board como contexto en /releases/01 y /releases/03; Siria 2021 como ficha propia, verificada por un segundo agente"
       }
     ]
   },
