@@ -126,9 +126,9 @@
       "note_en": "Primary source: FBI interviews of the main witness and the others present"
     },
     {
-      "name": "FBI — FD-302, septiembre de 2023 (PURSUE, entrega 1, seriales 3 y 5)",
-      "name_en": "FBI — FD-302, September 2023 (PURSUE, release 1, serials 3 and 5)",
-      "url": "https://www.war.gov/medialink/ufo/release_1/serial-5_redacted.pdf"
+      "name": "FBI — FD-302, septiembre de 2023 (PURSUE, entrega 1, seriales 3 y 5; copia alojada en este sitio, war.gov retiró la URL original)",
+      "name_en": "FBI — FD-302, September 2023 (PURSUE, release 1, serials 3 and 5; copy hosted on this site, war.gov withdrew the original URL)",
+      "url": "https://uapcodex.org/pursue/serial-5_redacted.pdf"
     }
   ],
   "classBasis": {
@@ -136,7 +136,7 @@
     "en": "No source proposes a cause: in the FBI FD-302 forms, the main witness realised the object \"was not an aircraft or drone\" and another person present \"thought the light might have been a meteor coming straight toward them and burning up in the atmosphere\", with no one taking it further. The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites and aircraft', although it adds that 'many other cases remain unresolved': it is the rate among resolved cases.",
     "source": "FBI — FD-302, septiembre de 2023 (PURSUE, entrega 1, seriales 3 y 5) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), citado por EarthSky, tasa base",
     "source_en": "FBI — FD-302, September 2023 (PURSUE, release 1, serials 3 and 5) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), cited by EarthSky, base rate",
-    "url": "https://www.war.gov/medialink/ufo/release_1/serial-5_redacted.pdf"
+    "url": "https://uapcodex.org/pursue/serial-5_redacted.pdf"
   },
   "evidenceReviewed": "2026-10-02"
 }
