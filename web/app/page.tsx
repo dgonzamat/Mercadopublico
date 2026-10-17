@@ -32,7 +32,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
       {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
       <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
         <HeroRadar contacts={STATS.cases} />
-        <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
+        <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-40 pt-16 md:pt-28">
           <div className="max-w-2xl space-y-8">
             <Eyebrow className="!text-bg/55">
               <T
