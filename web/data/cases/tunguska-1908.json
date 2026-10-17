@@ -13,7 +13,7 @@
     "place": "Río Podkámennaya Tunguska, Siberia",
     "place_en": "Podkamennaya Tunguska River, Siberia"
   },
-  "tier": "B",
+  "tier": "S",
   "mundanoType": "misid",
   "misidSubtype": "astronomico",
   "objectDetail": "meteoro",
@@ -31,6 +31,7 @@
     "~80 millones de árboles derribados en ~2.000 km² en un patrón radial (30 jun 1908)",
     "'Bosque de postes de telégrafo' central: árboles en pie sin ramas, indicando fuerza desde arriba (airburst)",
     "Testimonios de un destello casi tan brillante como el Sol y detonaciones audibles a cientos de km",
+    "Registros instrumentales de la época: los sismógrafos de Irkutsk, San Petersburgo y Jena registraron la vibración del suelo, estaciones meteorológicas de Rusia y Gran Bretaña detectaron fluctuaciones de presión durante unos 20 minutos, y el sismógrafo de Milne de la Universidad de Coimbra muestra en el rollo de esa semana una oscilación de unos 13 minutos que los técnicos de 1908 no advirtieron (Lopes, Gomes y Ribeiro, 2025)",
     "Expedición de Leonid Kulik (1927): bosque derribado en abanico, huellas de quemadura y testimonios de Vanovara; describió «craterlets», pero no halló meteorito, y nunca se ha recuperado un fragmento macroscópico ni confirmado un cráter",
     "Material con elementos propios de asteroides rocosos; nubes noctilucentes en Europa tras el evento (argumento cometario)",
     "Origen de la hipótesis 'ovni': relato de ciencia ficción de Alexander Kazantsev (1946), no datos de campo"
@@ -39,6 +40,7 @@
     "~80 million trees flattened across ~2,000 km² in a radial pattern (30 Jun 1908)",
     "Central 'telegraph pole forest': trees left standing without branches, indicating force from above (airburst)",
     "Testimony of a flash nearly as bright as the Sun and detonations audible hundreds of km away",
+    "Instrumental records from the time: the seismographs at Irkutsk, Saint Petersburg and Jena recorded the ground shaking, meteorological stations in Russia and Britain detected pressure fluctuations over about 20 minutes, and the University of Coimbra's Milne seismograph shows, on that week's roll, an oscillation of about 13 minutes that the 1908 technicians did not notice (Lopes, Gomes and Ribeiro, 2025)",
     "Leonid Kulik's expedition (1927): forest felled in a fan, burn traces and Vanovara testimony; he described \"craterlets\", but found no meteorite, and no macroscopic fragment has ever been recovered nor a crater confirmed",
     "Material with elements typical of rocky asteroids; noctilucent clouds over Europe after the event (cometary argument)",
     "Origin of the 'UFO' hypothesis: science-fiction story by Alexander Kazantsev (1946), not field data"
@@ -61,6 +63,12 @@
       "url": "https://archive.org/details/sim_popular-astronomy_1935-11_43_9",
       "note": "Fuente primaria: informe de la expedición de 1927, con la descripción del bosque derribado, las huellas de quemadura, los «craterlets» y los testimonios de Semenov y Kossolapov.",
       "note_en": "Primary source: report of the 1927 expedition, describing the felled forest, the burn traces, the «craterlets» and the testimony of Semenov and Kossolapov."
+    },
+    {
+      "name": "F. C. Lopes, A. I. Gomes y P. Ribeiro, «Registo instrumental dos efeitos físicos do Evento de Tunguska no Observatório Geofísico e Astronómico da Universidade de Coimbra», Comunicações Geológicas 112, Especial I (2025), pp. 479-482 (LNEG)",
+      "url": "https://doi.org/10.34637/8nx3-th47",
+      "note": "Resume los registros sísmicos (Irkutsk, San Petersburgo, Jena) y barométricos (Rusia y Gran Bretaña) de 1908 e identifica la oscilación en el sismograma de Coimbra; la perturbación magnética no aparece en Coimbra.",
+      "note_en": "Summarises the 1908 seismic (Irkutsk, Saint Petersburg, Jena) and barometric (Russia and Britain) records and identifies the oscillation on the Coimbra seismogram; the magnetic disturbance does not appear at Coimbra."
     }
   ],
   "posterior": {
