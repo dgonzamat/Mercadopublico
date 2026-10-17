@@ -67,8 +67,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
             <Lede className="max-w-2xl !text-bg/70">
               <T
                 locale={locale}
-                es={`${STATS.cases} casos documentados por gobiernos, militares y prensa desde 1947, cada uno con sus fuentes, su nivel de evidencia y una probabilidad comparable. Incluye también los que tienen explicación ordinaria, para que se vea qué se explica y qué no.`}
-                en={`${STATS.cases} cases documented by governments, militaries and the press since 1947, each with its sources, its evidence tier and a comparable probability. It also includes the ones with an ordinary explanation, so you can see what is explained and what is not.`}
+                es={`¿Qué hay de verdad detrás de los UAP? Reunimos ${STATS.cases} casos con sus documentos oficiales y los revisamos uno por uno: cuáles tienen explicación, cuáles no y cuánta evidencia hay en cada uno.`}
+                en={`What is really behind UAP? We gathered ${STATS.cases} cases with their official documents and reviewed them one by one: which have an explanation, which do not, and how much evidence each one holds.`}
               />
             </Lede>
             <div className="flex flex-wrap gap-3 pt-2">
