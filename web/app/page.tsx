@@ -3,6 +3,8 @@ import { Cta } from "@/components/Cta";
 import { HeroRadar } from "@/components/HeroRadar";
 import { CountUp } from "@/components/CountUp";
 import { HypothesesSnapshot } from "@/components/HypothesesSnapshot";
+import { InstagramLink } from "@/components/InstagramLink";
+import { PinterestLink } from "@/components/PinterestLink";
 import { T } from "@/components/T";
 import { Eyebrow, Lede, DisplayNumber } from "@/lib/typography";
 import { STATS } from "@/lib/siteStats";
@@ -32,7 +34,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
       {/* ────────── 1 · HERO (radar oscuro + count-up) ────────── */}
       <section className="full-bleed relative -mt-8 overflow-hidden bg-text">
         <HeroRadar contacts={STATS.cases} />
-        <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-40 pt-16 md:pt-28">
+        <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl grid-cols-1 items-end gap-12 px-4 pb-20 pt-16 md:pt-28">
           <div className="max-w-2xl space-y-8">
             <Eyebrow className="!text-bg/55">
               <T
@@ -86,6 +88,15 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 />
                 <span aria-hidden>→</span>
               </Cta>
+            </div>
+            {/* Social · Instagram. Tono "dark" por el hero oscuro (D1 contraste);
+                target 44px en el componente (D4). */}
+            <div className="flex items-center gap-3 pt-2">
+              <span className="font-mono text-[11px] text-bg/55">
+                <T locale={locale} es="Síguenos" en="Follow" />
+              </span>
+              <InstagramLink tone="dark" />
+              <PinterestLink tone="dark" />
             </div>
           </div>
         </div>
