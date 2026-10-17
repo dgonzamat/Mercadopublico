@@ -23,6 +23,7 @@ const COUNTRY_EN: Record<string, string> = {
   Ecuador: "Ecuador",
   "El Salvador": "El Salvador",
   "Espacio · STEREO y SOHO (NASA/ESA)": "Space · STEREO and SOHO (NASA/ESA)",
+  "Órbita terrestre · misión STS-88 (NASA)": "Earth orbit · STS-88 mission (NASA)",
   "Espacio interestelar · ATLAS (Chile)": "Interstellar space · ATLAS (Chile)",
   "Espacio interestelar · Pan-STARRS (Hawái)":
     "Interstellar space · Pan-STARRS (Hawaii)",
