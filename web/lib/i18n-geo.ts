@@ -22,6 +22,7 @@ const COUNTRY_EN: Record<string, string> = {
   Dinamarca: "Denmark",
   Ecuador: "Ecuador",
   "El Salvador": "El Salvador",
+  "Espacio · STEREO y SOHO (NASA/ESA)": "Space · STEREO and SOHO (NASA/ESA)",
   "Espacio interestelar · ATLAS (Chile)": "Interstellar space · ATLAS (Chile)",
   "Espacio interestelar · Pan-STARRS (Hawái)":
     "Interstellar space · Pan-STARRS (Hawaii)",
