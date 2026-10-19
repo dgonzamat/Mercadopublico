@@ -1,0 +1,123 @@
+{
+  "id": "antofagasta-fach922-2023",
+  "num": 465,
+  "name": "Antofagasta · las tres luces que filmó la tripulación del FACh922",
+  "name_en": "Antofagasta · the three lights filmed by the FACh922 crew",
+  "year_start": 2023,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -23.7975,
+    "lng": -70.3761,
+    "place": "Junto al punto de control ISEKA, al sur de Antofagasta, a 35.000 pies",
+    "place_en": "Next to the ISEKA control point, south of Antofagasta, at 35,000 feet"
+  },
+  "tier": "S",
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "satelite",
+  "epistemicStatus": "documented",
+  "probability": 9,
+  "summary": "Poco después de la medianoche del 23 de noviembre de 2023, la tripulación del FACh922, un vuelo de la Fuerza Aérea de Chile de Iquique a Santiago, vio sobre la Región de Antofagasta tres luces que se encendían y apagaban como estrellas y que en un momento empezaron a moverse, y las filmó con un iPhone. El SEFAA analizó los 1.110 cuadros del video, fijó con los metadatos y con el radar la hora y la posición del avión, y concluyó que lo filmado fueron tres satélites Starlink y los restos del satélite chino Fengyun 1C. La cabecera del informe lo clasifica como «Resuelto» y la conclusión, como «Probablemente Explicado».",
+  "summary_en": "Shortly after midnight on 23 November 2023, the crew of FACh922, a Chilean Air Force flight from Iquique to Santiago, saw over the Antofagasta Region three lights that flashed on and off like stars and at one point began to move, and filmed them with an iPhone. SEFAA analysed the video's 1,110 frames, fixed the time and the aircraft's position from the metadata and the radar, and concluded that what was filmed was three Starlink satellites and the debris of the Chinese satellite Fengyun 1C. The report's header classifies it as 'Resolved' and its conclusion as 'Probably Explained'.",
+  "patterns": [],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.88,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.02,
+    "indet": 0.06
+  },
+  "whatHappened": "El reporte llegó al SEFAA, la sección de la Dirección General de Aeronáutica Civil de Chile que estudia los fenómenos aéreos anómalos, el 24 de noviembre de 2023. Contaba que en un vuelo del día anterior, sobre la Región de Antofagasta, se vieron tres luces blancas, sin tamaño indicado, durante más de un minuto y siempre al sur. Los testigos tripulaban el FACh922, de la Fuerza Aérea, que volaba de Iquique (SCDA) a Santiago (SCEL) a 35.000 pies, y al empezar la observación, según el reporte, estaban «Vertical SCFA, rumbo 190», es decir, sobre el aeropuerto de Antofagasta y con rumbo sur-suroeste. La frase del informe que debería decir cuántos eran está mal construida («siempre al sur de más de tres testigos») y no permite fijar una cifra. El testimonio decía: «Durante el vuelo, se ven tres luces que se prenden y apagan en forma intermitente (parecidas a una estrella) Sin embargo, en un momento comienzan a moverse».\n\nEl reporte llegó sin imágenes, pero después la tripulación entregó la filmación, y la oficina la analizó en cada uno de sus 1.110 fotogramas. El cuadro 428, que el informe reproduce, muestra dos de los objetos luminosos. Según los metadatos, el archivo conservaba su integridad digital y fue grabado hacia las 00:21 hora local del 23 de noviembre (las 03:21 UTC) con la cámara principal de un iPhone 11. El avión no aparecía en los registros públicos de tráfico con transpondedor, así que el SEFAA pidió ayuda al asesor de la Oficina Normas y Desarrollo del Departamento de Aeródromos y Servicios Aeronáuticos (DASA). El registro de radar situó al vuelo sobre el aeropuerto Andrés Sabella, de Antofagasta, a las 03:07:54 UTC, trece minutos antes de lo que indicaba el reporte, y al iniciarse la filmación el avión estaba aproximadamente junto al punto de control ISEKA, al sur de la ciudad. Con eso la oficina fijó su posición en 23° 47′ 51″ S y 70° 22′ 34″ W, a 11.278 metros sobre el nivel del mar y con rumbo 190°.\n\nLa reconstrucción del cielo puso el Sol en el acimut 201° 15′, casi de frente a la tripulación, unos 43° bajo el horizonte. Para el SEFAA eso permitía que objetos espaciales que orbitaban cerca del horizonte reflejaran fugazmente su luz. Segundos antes de empezar la filmación, el tránsito espacial en ese sector incluía el Fengyun 1C, que la figura del informe llama satélite meteorológico, y tres satélites de comunicaciones Starlink, los números 30109, 3096 y 2102. Según el informe, los cuatro estaban en el horizonte descrito, en órbitas de planos distintos, y realizaron desplazamientos semejantes a lo que vio la tripulación y a lo que quedó en el video. La conclusión, del 15 de diciembre de 2023, dice que «se concluyó que lo reportado fue el sobrevuelo de tres satélites del proyecto Starlink y los restos del satélite Fengyun 1C». La cabecera del informe clasifica el caso como «Resuelto», pero su última frase lo cierra como «Probablemente Explicado».",
+  "whatHappened_en": "The report reached SEFAA, the section of Chile's Directorate General of Civil Aviation that studies anomalous aerial phenomena, on 24 November 2023. It said that on a flight the day before, over the Antofagasta Region, three white lights had been seen, with no size given, for more than a minute and always to the south. The witnesses were the crew of FACh922, an Air Force flight from Iquique (SCDA) to Santiago (SCEL) at 35,000 feet, and when the sighting began, according to the report, they were 'Vertical SCFA, heading 190', that is, over Antofagasta airport and heading south-southwest. The sentence in the report that should say how many there were is garbled ('always to the south of more than three witnesses') and does not allow a number to be fixed. The testimony read: 'During the flight, three lights are seen that switch on and off intermittently (like a star). However, at one point they begin to move'.\n\nThe report arrived without images, but the crew later handed over the footage, and the office analysed each of its 1,110 frames. Frame 428, reproduced in the report, shows two of the luminous objects. According to the metadata, the file had kept its digital integrity and was recorded at about 00:21 local time on 23 November (03:21 UTC) with the main camera of an iPhone 11. The aircraft did not appear in the public records of transponder traffic, so SEFAA asked for help from the adviser of the Standards and Development Office of the Department of Aerodromes and Aeronautical Services (DASA). The radar record placed the flight over Andrés Sabella airport, Antofagasta, at 03:07:54 UTC, thirteen minutes earlier than the report indicated, and when filming began the aircraft was roughly next to the ISEKA control point, south of the city. With that the office fixed its position at 23° 47′ 51″ S and 70° 22′ 34″ W, 11,278 metres above sea level, heading 190°.\n\nThe reconstruction of the sky put the Sun at azimuth 201° 15′, almost straight ahead of the crew, some 43° below the horizon. For SEFAA this allowed space objects orbiting near the horizon to reflect its light fleetingly. Seconds before filming began, the space traffic in that sector included Fengyun 1C, which the report's figure calls a weather satellite, and three Starlink communications satellites, numbers 30109, 3096 and 2102. According to the report, all four were on the horizon described, in orbits on different planes, and made movements similar to what the crew saw and to what was captured on video. The conclusion, dated 15 December 2023, states that 'it was concluded that what was reported was the overflight of three satellites of the Starlink project and the remains of the Fengyun 1C satellite'. The report's header classifies the case as 'Resolved', but its last sentence closes it as 'Probably Explained'.",
+  "whyMatters": "Lo que separa este caso de los otros reportes de tripulaciones de ese mes en el norte de Chile es el video. En la misma ruta y en las mismas semanas, el SEFAA estudió varios avistamientos de luces hechos por pilotos, y en los que solo había testimonio pudo decir que había satélites en el sector, pero no cuál era cuál: así quedaron las luces que vieron tres tripulaciones al este de Paposo el 6 de noviembre ([[paposo-tripulaciones-2023]]) y la luz que el piloto de un Learjet argentino vio pasando Calama el 8 de noviembre ([[calama-learjet-2023]]), los dos cerrados como «Relato». Aquí, en cambio, había una grabación con hora y cámara verificadas y un registro de radar que situaba al avión, de modo que la oficina pudo comparar lo filmado con satélites concretos y nombrarlos.\n\nEl informe deja cabos sueltos. El testimonio habla de tres luces y la conclusión, de cuatro objetos, tres satélites y los restos de otro, sin decir cuál corresponde a cada luz ni si alguno no llegó a verse; el cuadro que reproduce muestra dos. No analiza por separado el momento en que las luces «comienzan a moverse», más allá de afirmar que los desplazamientos de los satélites fueron semejantes a lo filmado. La figura de la situación espacial llama «satélite meteorológico» al Fengyun 1C y la conclusión habla de sus «restos»: el catálogo de satélites GCAT de Jonathan McDowell lo da por destruido el 11 de enero de 2007, la fecha de la prueba antisatélite china, de modo que lo que sigue en órbita con ese nombre es un fragmento (el dato es del catálogo, no del informe). Y la clasificación oscila entre «Resuelto» y «Probablemente Explicado» dentro del mismo documento.\n\nEl mecanismo que invoca el SEFAA explica por qué estas luces aparecen en plena noche. A la altura de crucero, con el Sol más de 40° bajo el horizonte, el cielo está oscuro, pero los satélites a centenares de kilómetros de altura pueden seguir iluminados, sobre todo los que están cerca del horizonte en la dirección del Sol, que en este caso era hacia donde volaba el avión. Una luz que parece una estrella, se enciende y se apaga y de pronto se desplaza es lo que se ve cuando un satélite refleja el Sol en sus paneles o entra y sale de la sombra de la Tierra. Que el reporte viniera de una tripulación militar y que la oficina tuviera que pedir el radar a otro departamento, porque el vuelo no figuraba en los registros públicos, no cambió el método: el video, con su hora verificada, permitió pasar de la hipótesis a la identificación.",
+  "whyMatters_en": "What sets this case apart from the other crew reports that month in northern Chile is the video. On the same route and in the same weeks, SEFAA studied several sightings of lights by pilots, and where there was only testimony it could say that satellites were in the sector, but not which was which: that is how the lights seen by three crews east of Paposo on 6 November ([[paposo-tripulaciones-2023]]) and the light an Argentine Learjet pilot saw passing Calama on 8 November ([[calama-learjet-2023]]) ended up, both closed as a 'Report' (Relato). Here, by contrast, there was a recording with a verified time and camera and a radar record placing the aircraft, so the office could compare what was filmed with specific satellites and name them.\n\nThe report leaves loose ends. The testimony speaks of three lights and the conclusion of four objects, three satellites and the remains of another, without saying which one corresponds to each light or whether one was not seen; the frame it reproduces shows two. It does not analyse separately the moment when the lights 'begin to move', beyond stating that the satellites' movements were similar to what was filmed. The figure of the space situation calls Fengyun 1C a 'weather satellite' and the conclusion speaks of its 'remains': Jonathan McDowell's GCAT satellite catalogue lists it as destroyed on 11 January 2007, the date of the Chinese anti-satellite test, so what remains in orbit under that name is a fragment (the fact comes from the catalogue, not the report). And the classification wavers between 'Resolved' and 'Probably Explained' within the same document.\n\nThe mechanism SEFAA invokes explains why these lights appear in the middle of the night. At cruising altitude, with the Sun more than 40° below the horizon, the sky is dark, but satellites hundreds of kilometres up can remain lit, above all those near the horizon in the direction of the Sun, which in this case was where the aircraft was heading. A light that looks like a star, switches on and off and suddenly moves is what is seen when a satellite reflects the Sun off its panels or passes in and out of the Earth's shadow. That the report came from a military crew, and that the office had to ask another department for the radar because the flight was not in the public records, did not change the method: the video, with its verified time, made it possible to move from hypothesis to identification.",
+  "evidence": [
+    "Testimonio de la tripulación del FACh922: tres luces «parecidas a una estrella» que se encendían y apagaban y que en un momento empezaron a moverse, durante más de un minuto y siempre al sur",
+    "Video de un iPhone 11, de 1.110 cuadros y con metadatos íntegros, grabado hacia las 00:21 hora local (03:21 UTC) del 23 de noviembre de 2023; el cuadro 428 muestra dos objetos luminosos",
+    "Registro de radar obtenido por la DASA: el vuelo sobre el aeropuerto de Antofagasta a las 03:07:54 UTC y, al iniciarse la filmación, junto al punto ISEKA, a 11.278 metros y con rumbo 190°",
+    "Reconstrucción astronómica: Sol en el acimut 201° 15′, unos 43° bajo el horizonte y casi de frente a la tripulación",
+    "Tránsito espacial: tres satélites Starlink (30109, 3096 y 2102) y el Fengyun 1C en el sector, con desplazamientos semejantes a los filmados según el informe",
+    "Conclusión del SEFAA (15 dic 2023): tres Starlink y los restos del Fengyun 1C; cabecera «Resuelto» y conclusión «Probablemente Explicado»",
+    "Catálogo GCAT: el Fengyun 1C figura como destruido el 11 de enero de 2007, de modo que el objeto que lleva su nombre es un fragmento"
+  ],
+  "evidence_en": [
+    "Testimony of the FACh922 crew: three lights 'like a star' that switched on and off and at one point began to move, for more than a minute and always to the south",
+    "iPhone 11 video, 1,110 frames with intact metadata, recorded at about 00:21 local time (03:21 UTC) on 23 November 2023; frame 428 shows two luminous objects",
+    "Radar record obtained through DASA: the flight over Antofagasta airport at 03:07:54 UTC and, when filming began, next to the ISEKA point, at 11,278 metres heading 190°",
+    "Astronomical reconstruction: Sun at azimuth 201° 15′, some 43° below the horizon and almost straight ahead of the crew",
+    "Space traffic: three Starlink satellites (30109, 3096 and 2102) and Fengyun 1C in the sector, with movements similar to those filmed according to the report",
+    "SEFAA conclusion (15 Dec 2023): three Starlinks and the remains of Fengyun 1C; header 'Resolved' and conclusion 'Probably Explained'",
+    "GCAT catalogue: Fengyun 1C is listed as destroyed on 11 January 2007, so the object bearing its name is a fragment"
+  ],
+  "sources": [
+    {
+      "name": "SEFAA (Dirección General de Aeronáutica Civil de Chile) — «Caso N°: 1936», FL350 sobre Antofagasta, 23 nov 2023 (resuelto el 15 dic 2023)",
+      "name_en": "SEFAA (Chilean Directorate General of Civil Aviation) — 'Case No. 1936', FL350 over Antofagasta, 23 Nov 2023 (resolved 15 Dec 2023)",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf",
+      "note": "Fuente primaria: testimonio, análisis forense del video, posición por radar, reconstrucción astronómica y del tránsito espacial, y conclusión oficial.",
+      "note_en": "Primary source: testimony, forensic analysis of the video, radar position, astronomical and space-traffic reconstruction, and official conclusion."
+    },
+    {
+      "name": "SEFAA — «Caso N°: 1931», aerovía UQ803, 6 nov 2023",
+      "name_en": "SEFAA — 'Case No. 1931', airway UQ803, 6 Nov 2023",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/08/CASO-N%C2%B0-1931-06112023.pdf",
+      "note": "Reporte vecino sin imágenes: tres tripulaciones, satélites en el sector sin identificar; «Relato».",
+      "note_en": "Neighbouring report without images: three crews, satellites in the sector not identified; 'Report'."
+    },
+    {
+      "name": "SEFAA — «Caso N°: 1937», Calama, 8 nov 2023",
+      "name_en": "SEFAA — 'Case No. 1937', Calama, 8 Nov 2023",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01937-25112023.pdf",
+      "note": "Reporte vecino sin imágenes: objetos en órbita posibles, ninguno identificado; «Relato».",
+      "note_en": "Neighbouring report without images: possible orbiting objects, none identified; 'Report'."
+    },
+    {
+      "name": "Jonathan McDowell — General Catalog of Artificial Space Objects (GCAT), satcat",
+      "name_en": "Jonathan McDowell — General Catalog of Artificial Space Objects (GCAT), satcat",
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "note": "Ficha 1999-025A (Feng Yun 1C): destruido el 11 de enero de 2007.",
+      "note_en": "Entry 1999-025A (Feng Yun 1C): destroyed on 11 January 2007."
+    },
+    {
+      "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC), sitio oficial",
+      "name_en": "SEFAA — Anomalous Aerial Phenomena Study Section (DGAC), official site",
+      "url": "https://sefaa.dgac.gob.cl/",
+      "note": "Catálogo de casos publicados por la oficina chilena.",
+      "note_en": "Catalogue of cases published by the Chilean office."
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/antofagasta-fach922-2023-ckoirama.jpg",
+      "type": "image",
+      "title": "Contexto · dos objetos en órbita cruzando el cielo de Antofagasta",
+      "title_en": "Context · two orbiting objects crossing the sky over Antofagasta",
+      "description": "Exposición de cinco segundos tomada el 10 de noviembre de 2022 con el telescopio Chakana del Observatorio Ckoirama, de la Universidad de Antofagasta: las dos trazas paralelas son el satélite BlueWalker 3 y, según sus autores, el adaptador del cohete que lo lanzó, iluminados por el Sol sobre un cielo nocturno. No es una imagen de este caso; muestra, desde la misma región, cómo dos objetos en órbita pueden verse juntos.",
+      "description_en": "Five-second exposure taken on 10 November 2022 with the Chakana telescope at the Ckoirama Observatory, run by the University of Antofagasta: the two parallel trails are the BlueWalker 3 satellite and, according to its authors, the adapter of the rocket that launched it, lit by the Sun against a night sky. It is not an image of this case; it shows, from the same region, how two orbiting objects can be seen together.",
+      "source": "Earlier image of a BlueWalker 3 pass over Ckoirama Observatory (ann22033e).jpg (CLEOsat/Ckoirama Observatory/IAU CPS, E. Unda-Sanzana) · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Earlier_image_of_a_BlueWalker_3_pass_over_Ckoirama_Observatory_(ann22033e).jpg"
+    },
+    {
+      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf",
+      "type": "link",
+      "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1936, FL350 sobre Antofagasta, 23 de noviembre de 2023",
+      "title_en": "SEFAA (Chilean DGAC) report, case no. 1936, FL350 over Antofagasta, 23 November 2023",
+      "description": "Informe de cinco páginas de la sección oficial de fenómenos aéreos anómalos. Recoge el testimonio de la tripulación del FACh922, reproduce un cuadro del video, sitúa al avión con el radar, reconstruye el cielo y el tránsito espacial y concluye que lo filmado fueron tres satélites Starlink y los restos del Fengyun 1C. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
+      "description_en": "Five-page report by the official anomalous aerial phenomena section. It records the testimony of the FACh922 crew, reproduces a frame of the video, places the aircraft with radar, reconstructs the sky and the space traffic, and concludes that what was filmed was three Starlink satellites and the remains of Fengyun 1C. A DGAC work with no open licence, so it is linked rather than hosted.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+    }
+  ],
+  "classBasis": {
+    "es": "Informe del SEFAA, caso n.º 1936: tras analizar el video y el tránsito espacial, «se concluyó que lo reportado fue el sobrevuelo de tres satélites del proyecto Starlink y los restos del satélite Fengyun 1C», cuatro objetos que «realizaron desplazamientos semejantes a lo visualizado por la tripulación». La cabecera clasifica el caso como «Resuelto» y la conclusión, como «Probablemente Explicado»; el informe no asigna cada luz a un satélite.",
+    "en": "SEFAA report, case no. 1936: after analysing the video and the space traffic, 'it was concluded that what was reported was the overflight of three satellites of the Starlink project and the remains of the Fengyun 1C satellite', four objects that 'made movements similar to what the crew saw'. The header classifies the case as 'Resolved' and the conclusion as 'Probably Explained'; the report does not assign each light to a satellite.",
+    "source": "SEFAA (DGAC Chile) — «Caso N°: 1936», FL350 sobre Antofagasta, 23 nov 2023",
+    "source_en": "SEFAA (DGAC Chile) — 'Case No. 1936', FL350 over Antofagasta, 23 Nov 2023",
+    "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf"
+  },
+  "evidenceReviewed": "2026-10-19"
+}
