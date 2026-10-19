@@ -11,7 +11,6 @@ import { searchKey } from "@/lib/searchKey";
 import { countryEn } from "@/lib/i18n-geo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
-import { EpistemicBadge } from "@/components/Badge";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
 import { pageMeta } from "@/lib/seo";
 import {
@@ -172,16 +171,6 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
           />
         </Lede>
       </header>
-
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
-        <span className="font-mono text-muted/70">
-          <T es="Sin marca = documentado." en="No marker = documented." locale={locale} />
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <EpistemicBadge status="projected" compact locale={locale} />
-          <T es="proyectado / especulativo" en="projected / speculative" locale={locale} />
-        </span>
-      </div>
 
       <AnalyzerCta locale={locale} />
 

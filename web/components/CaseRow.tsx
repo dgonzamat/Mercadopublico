@@ -1,6 +1,5 @@
 import { LocaleLink } from "@/components/LocaleLink";
 import type { UAPCase } from "@/lib/types";
-import { EpistemicBadge } from "@/components/Badge";
 import { T } from "@/components/T";
 import { TIER_META } from "@/lib/ui";
 import { countryEn } from "@/lib/i18n-geo";
@@ -43,7 +42,6 @@ export function CaseRow({
               · {year}
             </span>
           </p>
-          <EpistemicBadge status={caseData.epistemicStatus} compact />
         </div>
         <p className="cr-sum">
           {/* La fila muestra una línea truncada: mandar el resumen entero

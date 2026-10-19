@@ -224,9 +224,9 @@ for (const file of caseFiles) {
   if (!TIERS.has(c.tier)) err(w, `tier inválido "${c.tier}" (S/A/B)`);
   if (
     c.epistemicStatus !== undefined &&
-    !["documented", "projected"].includes(c.epistemicStatus)
+    c.epistemicStatus !== "documented"
   )
-    err(w, `epistemicStatus inválido "${c.epistemicStatus}" (no hay «en desarrollo»: el caso se arma con lo que se sabe y se amplía después)`);
+    err(w, `epistemicStatus inválido "${c.epistemicStatus}" (no hay «en desarrollo» ni «proyectado»: el caso se arma con lo que se sabe y se amplía después)`);
   if (!CATEGORIES.has(c.category)) err(w, `category inválida "${c.category}"`);
   if (!isNum(c.probability)) err(w, "probability obligatorio (number)");
   // posterior (modelo MECE): si está presente, valida 6 claves y suma ≈ 1.
