@@ -1,5 +1,5 @@
 export type Tier = "S" | "A" | "B";
-export type EpistemicStatus = "documented" | "projected";
+export type EpistemicStatus = "documented";
 export type Category = "incident" | "document" | "contactee" | "crop_circle";
 /** Sub-tipo de la explicación prosaica (abre la narrativa mundano/natural). */
 /** `instrumento` = la anomalía la produjo el equipo (película, sensor, radar,
@@ -156,8 +156,7 @@ export interface UAPCase {
    *  la ficha de cada caso enlazado lo lista como «Documentos que lo respaldan». */
   relatedCases?: string[];
   // Estatus epistémico del caso. Ausente = "documented" (evidencia
-  // primaria verificable). "projected" = contenido near-future del corpus
-  // (análisis, no hecho documentado). No existe "en desarrollo" (oct 2026,
+  // primaria verificable). No existen «en desarrollo» ni «proyectado» (oct 2026,
   // decisión del dueño): un caso se arma con lo que se sabe y se amplía después.
   epistemicStatus?: EpistemicStatus;
   probability: number;

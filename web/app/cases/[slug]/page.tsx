@@ -12,7 +12,6 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
-import { EpistemicBadge } from "@/components/Badge";
 import { DocumentsViewer } from "@/components/DocumentsViewer";
 import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
@@ -306,12 +305,6 @@ export async function CaseDetailPage(
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">
-        <div className="space-y-4">
-          {c.epistemicStatus && c.epistemicStatus !== "documented" && (
-            <EpistemicBadge status={c.epistemicStatus} locale={locale} />
-          )}
-        </div>
-
         <div className="grid grid-cols-[auto_1fr] items-baseline gap-x-6 gap-y-4 md:gap-x-10">
           {/* El número es de caso: un documento no lo muestra. */}
           <span
