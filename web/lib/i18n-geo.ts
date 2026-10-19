@@ -80,6 +80,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Rumanía": "Romania",
   "Cuba": "Cuba",
   "Antártida · Isla Decepción (bases AR/CL/UK)": "Antarctica · Deception Island (AR/CL/UK bases)",
+  "Antártida · Isla Robert (expedición chilena)": "Antarctica · Robert Island (Chilean expedition)",
   "Oriente Medio, área CENTCOM (país exacto no revelado; plataforma y liberación son de EE.UU.)": "Middle East, CENTCOM area (exact country undisclosed; platform and release are U.S.)",
   "Polonia": "Poland",
   "Dinamarca · oleada europea": "Denmark · European wave",
