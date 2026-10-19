@@ -178,10 +178,6 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
           <T es="Sin marca = documentado." en="No marker = documented." locale={locale} />
         </span>
         <span className="inline-flex items-center gap-1.5">
-          <EpistemicBadge status="developing" compact locale={locale} />
-          <T es="reciente / en curso" en="recent / in progress" locale={locale} />
-        </span>
-        <span className="inline-flex items-center gap-1.5">
           <EpistemicBadge status="projected" compact locale={locale} />
           <T es="proyectado / especulativo" en="projected / speculative" locale={locale} />
         </span>

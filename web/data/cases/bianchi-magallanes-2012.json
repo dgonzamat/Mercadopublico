@@ -14,7 +14,6 @@
     "place_en": "Route 9 near Río Rubens (approximate location), between Puerto Natales and Punta Arenas, Magallanes Region"
   },
   "tier": "B",
-  "epistemicStatus": "developing",
   "probability": 53,
   "mundanoType": "sin_propuesta",
   "posterior": {
