@@ -1,0 +1,114 @@
+{
+  "id": "rebep-avion-ambulancia-2022",
+  "num": 458,
+  "name": "Atacama · la luz que vio el avión ambulancia cerca de REBEP",
+  "name_en": "Atacama · the light seen by the air ambulance near REBEP",
+  "year_start": 2022,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -26.98,
+    "lng": -70.3925,
+    "place": "Punto de notificación REBEP, al norte de Caldera (región de Atacama)",
+    "place_en": "REBEP reporting point, north of Caldera (Atacama region)"
+  },
+  "tier": "B",
+  "mundanoType": "sin_propuesta",
+  "epistemicStatus": "documented",
+  "probability": 41,
+  "summary": "En la madrugada del 30 de enero de 2022, el piloto de un avión ambulancia Beechcraft 200 que volaba de Iquique a Santiago preguntó tres veces por radio al control de Iquique por un tráfico «muy luminoso y rápido», a unos 50.000 pies, hacia el sur de su posición, cerca del punto REBEP, en Atacama. Ni el radar de Iquique ni el de Santiago tenían otro avión en la zona. El SEFAA revisó el radar del vuelo y once satélites visibles sin encontrar nada que encajara; el comandante nunca respondió ni entregó el video que habría grabado, y el caso se cerró como «Relato».",
+  "summary_en": "In the early hours of 30 January 2022, the pilot of a Beechcraft 200 air ambulance flying from Iquique to Santiago asked Iquique control three times by radio about a 'very bright and fast' traffic, at about 50,000 feet, to the south of his position, near the REBEP waypoint in Atacama. Neither the Iquique nor the Santiago radar had any other aircraft in the area. SEFAA reviewed the flight's radar track and eleven visible satellites without finding anything that fitted; the captain never replied or handed over the video he reportedly shot, and the case was closed as a 'Report'.",
+  "patterns": [],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.5,
+    "humana_clasificada": 0.06,
+    "adversaria": 0.03,
+    "nohumano_encubierto": 0.05,
+    "nohumano_abierto": 0.06,
+    "indet": 0.3
+  },
+  "whatHappened": "El sábado 29 de enero de 2022, a las 23:43 hora local, un Beechcraft 200 de la empresa Aero Transportes Araucanía despegó del aeródromo Diego Aracena de Iquique como avión ambulancia, con destino al aeropuerto Arturo Merino Benítez de Santiago, donde aterrizó a las 02:58 del domingo 30. Niveló a 17.000 pies. El cielo del desierto estaba despejado: el aeródromo Desierto de Atacama, en Caldera, no emitió informes meteorológicos durante la noche, pero los de la tarde anterior y la mañana siguiente registran nubes por debajo de los 2.800 pies y una presión casi sin cambios, de modo que el SEFAA concluyó que desde la altitud del avión el cielo debía verse oscuro y limpio, en condiciones especialmente favorables para observar.\n\nAl día siguiente, el 31 de enero a las 16:01, una controladora del Centro de Control de Área de Iquique reportó lo ocurrido en su turno. Según su registro, a las 04:24 el piloto preguntó si tenía algún otro tránsito a las 12 o a la 1 de su posición, a 40 millas; se le dijo que no. A las 04:29 volvió a preguntar y se le respondió que era el único tránsito en vuelo y en la frecuencia. A las 04:34 informó que veía «un tránsito entre Vallenar y La Serena en circuito de espera de este a oeste, muy luminoso y rápido, aproximadamente a 50 mil pies». La controladora le contestó que el radar no mostraba nada en esa posición y consultó al Centro de Control de Santiago, dueño de ese espacio aéreo, que tampoco tenía tránsito en el sector. Las horas del registro solo caben dentro del vuelo si se leen en hora UTC (las 01:24 a 01:34 locales), aunque el informe las encabeza como hora local. El reporte no indicaba tamaño ni color, ni fallas en los instrumentos.\n\nEl SEFAA, la oficina de la Dirección General de Aeronáutica Civil que estudia estos reportes, pidió los datos de la tripulación. Al comandante le escribió cinco veces, entre el 3 de febrero y el 14 de septiembre de 2022, para pedirle su relato, la identidad del equipo médico que iba a bordo y la filmación que habría tomado con su teléfono; nunca respondió. El primer oficial sí entregó un reporte: situó el avión a 40 millas náuticas al norte del aeródromo de Caldera y a 22 del punto REBEP, y describió una luz que volaba horizontalmente de oeste a este. En un correo del 9 de febrero trazó un esquema de lo visto, y de él el SEFAA dedujo que no hubo una luz recorriendo un circuito de espera, como había entendido la controladora, y que no se podía descartar que fueran varios objetos luminosos que cruzaron el horizonte frente al avión.\n\nLa oficina reconstruyó el cielo visible desde REBEP con el planetario Stellarium y los registros de Heavens-Above, y revisó los once satélites que pudieron verse durante el vuelo. Ninguno siguió un recorrido parecido al descrito: tres pudieron verse hacia el este, pero dos por menos de un minuto y el tercero siempre al sureste del avión. Un controlador que asesora al SEFAA revisó el radar de todo el vuelo, con 14 imágenes desde el despegue en Iquique: el avión ambulancia aparecía nivelado a 17.000 pies y no había ninguna otra aeronave ni traza cerca. El asesor dijo que no le era posible formular ninguna hipótesis sobre lo reportado. Sin imágenes que contrastar, el SEFAA concluyó que «no se pudo confirmar la ocurrencia de lo reportado» y cerró el caso como «Relato».",
+  "whatHappened_en": "On Saturday 29 January 2022, at 23:43 local time, a Beechcraft 200 belonging to Aero Transportes Araucanía took off from Diego Aracena aerodrome in Iquique as an air ambulance, bound for Arturo Merino Benítez airport in Santiago, where it landed at 02:58 on Sunday the 30th. It levelled off at 17,000 feet. The desert sky was clear: the Desierto de Atacama aerodrome, at Caldera, issued no weather reports overnight, but those from the previous evening and the following morning record clouds below 2,800 feet and almost unchanged pressure, so SEFAA concluded that from the aircraft's altitude the sky must have looked dark and clean, conditions especially favourable for observation.\n\nThe next day, 31 January at 16:01, a controller at the Iquique Area Control Centre reported what had happened on her shift. According to her log, at 04:24 the pilot asked whether she had any other traffic at 12 or 1 o'clock of his position, 40 miles out; he was told no. At 04:29 he asked again and was told he was the only traffic in flight and on the frequency. At 04:34 he reported seeing 'a traffic between Vallenar and La Serena in a holding pattern from east to west, very bright and fast, at about 50 thousand feet'. The controller replied that the radar showed nothing at that position and checked with the Santiago Area Control Centre, which controls that airspace and had no traffic in the sector either. The logged times only fit within the flight if read as UTC (01:24 to 01:34 local), although the report heads them as local time. The report gave no size or colour, and no instrument failures.\n\nSEFAA, the office of the Directorate General of Civil Aviation that studies these reports, requested the crew's details. It wrote to the captain five times, between 3 February and 14 September 2022, asking for his account, the identity of the medical team on board and the footage he had reportedly taken with his phone; he never replied. The first officer did send a report: he placed the aircraft 40 nautical miles north of the Caldera aerodrome and 22 from the REBEP waypoint, and described a light flying horizontally from west to east. In an email of 9 February he drew a sketch of what he had seen, and from it SEFAA inferred that there had been no light flying a holding pattern, as the controller had understood, and that it could not be ruled out that there were several luminous objects crossing the horizon in front of the aircraft.\n\nThe office reconstructed the sky visible from REBEP with the Stellarium planetarium and Heavens-Above records, and reviewed the eleven satellites that could have been seen during the flight. None followed a path like the one described: three could have been seen towards the east, but two for less than a minute and the third always to the southeast of the aircraft. A controller who advises SEFAA reviewed the radar for the whole flight, with 14 images from the take-off at Iquique: the air ambulance appeared level at 17,000 feet and there was no other aircraft or track nearby. The adviser said he was unable to form any hypothesis about what was reported. With no images to set against the accounts, SEFAA concluded that 'the occurrence of what was reported could not be confirmed' and closed the case as a 'Report' (Relato).",
+  "whyMatters": "El caso muestra cómo se degrada un reporte de cabina en su camino hasta el archivo. Lo primero que quedó por escrito fue la versión de la controladora, de segunda mano y del día siguiente, y venía con un «circuito de espera» que el esquema del primer oficial desmintió: no hubo una luz dando vueltas, sino una o varias que cruzaron de oeste a este. El comandante, que hizo las tres consultas por radio y según la controladora grabó con su teléfono, no respondió a cinco correos en siete meses. Así, lo que queda es el relato de un solo tripulante, recogido días después, y un radar que registra la ausencia de otra aeronave, no la presencia de un objeto: el radar de control solo ve lo que lleva transpondedor o devuelve eco a su alcance, y una luz a 50.000 pies o mucho más arriba puede no estar en ninguno de los dos casos.\n\nEl SEFAA no propuso ninguna causa. Comprobó los satélites visibles esa noche y ninguno encajaba con el recorrido, y su asesor de radar no pudo formular hipótesis. Esa ausencia de propuesta no es evidencia en contra de una causa ordinaria: en el mismo corredor aéreo del norte de Chile, la oficina atribuyó después varios reportes de tripulaciones a un lanzamiento espacial (el de la nave Cygnus NG-18, en noviembre de 2022) y a reflejos del Sol en satélites (una serie de noviembre de 2023), aunque ninguno de esos hallazgos se refiere a esta noche. La filmación del comandante, si existe, sería la única forma de resolverlo; mientras no aparezca, el caso queda como lo dejó el SEFAA: un relato que no se pudo confirmar ni explicar.",
+  "whyMatters_en": "The case shows how a cockpit report degrades on its way to the archive. The first thing put in writing was the controller's version, second-hand and from the following day, and it came with a 'holding pattern' that the first officer's sketch contradicted: there was no light circling, but one or several that crossed from west to east. The captain, who made the three radio queries and, according to the controller, filmed with his phone, did not answer five emails over seven months. What remains, then, is the account of a single crew member, gathered days later, and a radar that records the absence of another aircraft, not the presence of an object: a control radar only sees what carries a transponder or returns an echo within its range, and a light at 50,000 feet or far higher may meet neither condition.\n\nSEFAA proposed no cause. It checked the satellites visible that night and none fitted the path, and its radar adviser could not form a hypothesis. That absence of a proposal is not evidence against an ordinary cause: in the same air corridor of northern Chile, the office later attributed several crew reports to a space launch (that of the Cygnus NG-18 spacecraft, in November 2022) and to sunlight reflecting off satellites (a series in November 2023), although none of those findings concerns this night. The captain's footage, if it exists, would be the only way to settle it; until it turns up, the case stays as SEFAA left it: an account that could be neither confirmed nor explained.",
+  "evidence": [
+    "Registro de la controladora del Centro de Control de Área de Iquique: tres consultas del piloto (04:24, 04:29 y 04:34) por un tránsito «muy luminoso y rápido» a unos 50.000 pies entre Vallenar y La Serena",
+    "Sin tránsito en el radar de Iquique ni en el del Centro de Control de Santiago, consultado en el momento",
+    "Plan de vuelo: Beechcraft 200 de Aero Transportes Araucanía, Iquique 23:43 – Santiago 02:58 hora local, nivelado a 17.000 pies",
+    "Reporte y esquema del primer oficial: una luz, o quizá varias, que cruzó horizontalmente de oeste a este; no un circuito de espera",
+    "Revisión de once satélites visibles (Stellarium y Heavens-Above): ninguno siguió un recorrido parecido",
+    "Asesor de radar del SEFAA: 14 imágenes del vuelo, ninguna otra traza cerca del avión y ninguna hipótesis posible",
+    "El comandante no respondió a cinco correos ni entregó la filmación que habría tomado; cierre como «Relato»"
+  ],
+  "evidence_en": [
+    "Log of the Iquique Area Control Centre controller: three queries from the pilot (04:24, 04:29 and 04:34) about a 'very bright and fast' traffic at about 50,000 feet between Vallenar and La Serena",
+    "No traffic on the Iquique radar or on that of the Santiago Area Control Centre, checked at the time",
+    "Flight plan: Aero Transportes Araucanía Beechcraft 200, Iquique 23:43 – Santiago 02:58 local time, level at 17,000 feet",
+    "First officer's report and sketch: a light, or perhaps several, crossing horizontally from west to east; not a holding pattern",
+    "Review of eleven visible satellites (Stellarium and Heavens-Above): none followed a similar path",
+    "SEFAA radar adviser: 14 images of the flight, no other track near the aircraft and no possible hypothesis",
+    "The captain did not answer five emails or hand over the footage he reportedly took; closed as a 'Report'"
+  ],
+  "sources": [
+    {
+      "name": "SEFAA (Dirección General de Aeronáutica Civil de Chile) — «Caso N° 1752», REBEP, 30 ene 2022",
+      "name_en": "SEFAA (Chilean Directorate General of Civil Aviation) — 'Case No. 1752', REBEP, 30 Jan 2022",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/10/Informe-de-Publicacion-de-caso-N%C2%B0-1752-31012022.pdf",
+      "note": "Fuente primaria: registro de la controladora, plan de vuelo, meteorología, análisis satelital y de radar, y conclusión oficial.",
+      "note_en": "Primary source: the controller's log, flight plan, weather, satellite and radar analysis, and official conclusion."
+    },
+    {
+      "name": "SEFAA — «Caso N° 1838», tripulaciones en el norte de Chile, 8 nov 2022",
+      "name_en": "SEFAA — 'Case No. 1838', crews over northern Chile, 8 Nov 2022",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/10/CASO-N%C2%B0-1838-08112022-2.pdf",
+      "note": "Reporte posterior en el mismo corredor, atribuido por el SEFAA al lanzamiento 2022-149 (Antares y la nave Cygnus NG-18).",
+      "note_en": "Later report in the same corridor, attributed by SEFAA to launch 2022-149 (Antares and the Cygnus NG-18 spacecraft)."
+    },
+    {
+      "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024)",
+      "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024)",
+      "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
+      "note": "Tasa base: los 174 casos resueltos ese año lo fueron como objetos prosaicos; muchos otros siguen sin resolver.",
+      "note_en": "Base rate: the 174 cases resolved that year were all resolved to prosaic objects; many others remain unresolved."
+    },
+    {
+      "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC), sitio oficial",
+      "name_en": "SEFAA — Anomalous Aerial Phenomena Study Section (DGAC), official site",
+      "url": "https://sefaa.dgac.gob.cl/",
+      "note": "Catálogo de casos publicados por la oficina chilena.",
+      "note_en": "Catalogue of cases published by the Chilean office."
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/rebep-ambulancia-2022-king-air.jpg",
+      "type": "image",
+      "title": "Contexto · un Beechcraft King Air 200 configurado como avión ambulancia",
+      "title_en": "Context · a Beechcraft King Air 200 configured as an air ambulance",
+      "description": "Avión del mismo modelo que el del caso, en otro país. Es una imagen del tipo de aeronave, no del fenómeno: del avistamiento no se entregó ninguna imagen.",
+      "description_en": "An aircraft of the same model as the one in the case, in another country. It is an image of the aircraft type, not of the phenomenon: no image of the sighting was handed over.",
+      "source": "King Air 200 air ambulance.JPG (Trevor MacInnis) · Wikimedia Commons",
+      "license": "Dominio público",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:King_Air_200_air_ambulance.JPG"
+    },
+    {
+      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/10/Informe-de-Publicacion-de-caso-N%C2%B0-1752-31012022.pdf",
+      "type": "link",
+      "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1752, REBEP, 30 de enero de 2022",
+      "title_en": "SEFAA (Chilean DGAC) report, case no. 1752, REBEP, 30 January 2022",
+      "description": "Informe de seis páginas de la sección oficial de fenómenos aéreos anómalos. Cita el registro de la controladora de Iquique con las tres consultas del piloto, reconstruye el vuelo y el cielo visible desde REBEP, lista los once satélites que pudieron verse, resume el reporte del primer oficial y el análisis del radar de un asesor, y cierra el caso como «Relato» por no poder confirmar lo reportado. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
+      "description_en": "Six-page report by the official anomalous aerial phenomena section. It quotes the Iquique controller's log with the pilot's three queries, reconstructs the flight and the sky visible from REBEP, lists the eleven satellites that could have been seen, summarises the first officer's report and an adviser's radar analysis, and closes the case as 'Report' (Relato) because what was reported could not be confirmed. A DGAC work with no open licence, so it is linked rather than hosted.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+    }
+  ],
+  "classBasis": {
+    "es": "El SEFAA no propuso ninguna causa: ninguno de los once satélites visibles «siguió un patrón de desplazamiento que pudiera interpretarse como lo informado», y su asesor de radar dijo que «no le fue posible generar alguna hipótesis respecto a la naturaleza o identidad de lo reportado». La falta de una propuesta no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "SEFAA proposed no cause: none of the eleven visible satellites 'followed a pattern of movement that could be interpreted as what was reported', and its radar adviser said he was 'unable to generate any hypothesis about the nature or identity of what was reported'. The lack of a proposal is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "SEFAA (DGAC Chile) — «Caso N° 1752» · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "source_en": "SEFAA (DGAC Chile) — 'Case No. 1752' · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  },
+  "evidenceReviewed": "2026-10-19"
+}
