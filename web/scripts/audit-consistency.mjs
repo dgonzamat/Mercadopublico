@@ -2100,6 +2100,27 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   }
 }
 
+// ─── 9zd. RULE E51: ninguna cifra del sitio vale 0 ───────────────────────
+//
+// Las cifras de STATS (data/site-stats.json, generado por build-cases.mjs) se
+// imprimen en la portada y en /cases. Cuando las fichas-documento se integraron
+// en los visores (15 oct 2026), `documents` seguía contando fichas con
+// category "document" y quedó en 0: la portada dijo «Y 0 documentos oficiales»
+// durante cuatro días sin que nada avisara. Una cifra que cae a 0 es casi
+// siempre una derivación que perdió su fuente, no un corpus vacío.
+{
+  const p = path.join(root, "data", "site-stats.json");
+  if (!fs.existsSync(p)) {
+    record("WARN", path.join("data", "site-stats.json"), 0, "E51 cifras del sitio: data/site-stats.json no existe (corre build-cases.mjs antes); la regla está ciega.");
+  } else {
+    const stats = JSON.parse(fs.readFileSync(p, "utf8"));
+    const zero = Object.entries(stats).filter(([, v]) => typeof v === "number" && v <= 0).map(([k]) => k);
+    if (zero.length) {
+      record("ERROR", path.join("scripts", "build-cases.mjs"), 0, `E51 cifra del sitio en 0: ${zero.join(", ")}. La derivación de site-stats perdió su fuente; revisa cómo la calcula build-cases.mjs.`);
+    }
+  }
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");
