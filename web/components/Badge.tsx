@@ -57,18 +57,12 @@ export function TierBadge({ tier, withDescription = false }: { tier: TierKey; wi
 }
 
 // Epistemic-status chips. "documented" is the default and renders nothing;
-// only recent/in-progress ("developing") and near-future corpus content
-// ("projected") get a visible marker so speculative entries read honestly.
+// only near-future corpus content ("projected") gets a visible marker so
+// speculative entries read honestly.
 const EPISTEMIC: Record<
-  "developing" | "projected",
+  "projected",
   { icon: string; es: string; en: string; cls: string }
 > = {
-  developing: {
-    icon: "●",
-    es: "En desarrollo",
-    en: "Developing",
-    cls: "border-accent/30 bg-accent/10 text-accent",
-  },
   projected: {
     icon: "◷",
     es: "Proyectado",
@@ -86,7 +80,7 @@ export function EpistemicBadge({
   compact?: boolean;
   locale?: "es" | "en";
 }) {
-  if (status !== "developing" && status !== "projected") return null;
+  if (status !== "projected") return null;
   const m = EPISTEMIC[status];
   return (
     <span
