@@ -93,11 +93,20 @@ const researchers = readArr("researchers.json");
 const CORPUS_START_YEAR = 1947;
 const corpusEndYear = Math.max(...cases.map((c) => c.year_start));
 // `cases` cuenta INCIDENTES: los casos-documento son evidencia de los
-// incidentes, no casos (decisión del dueño, sep 2026), y van en `documents`.
+// incidentes, no casos (decisión del dueño, sep 2026).
 // Así el conteo del sitio coincide con el centro del gráfico de /probabilidades.
+// `documents` cuenta los documentos embebidos en los visores de casos y de
+// perfiles de actores: PDF y tarjetas de enlace a documentos. Las fichas-
+// documento desaparecieron el 15 oct 2026 y la cuenta anterior (fichas con
+// category "document") quedó en 0; las imágenes y los vídeos no cuentan,
+// porque muchas son fotos de contexto (decisión del dueño, 19 oct 2026).
+const isDocument = (d) => d.type === "pdf" || d.type === "link";
+const embeddedDocuments = [...cases, ...researchers]
+  .flatMap((x) => x.documents ?? [])
+  .filter(isDocument).length;
 const siteStats = {
   cases: cases.filter((c) => c.category !== "document").length,
-  documents: cases.filter((c) => c.category === "document").length,
+  documents: embeddedDocuments,
   patterns: patterns.length,
   frameworks: frameworks.length,
   researchers: researchers.length,

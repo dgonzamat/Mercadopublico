@@ -1,4 +1,5 @@
-import { cases, TOTAL_CASES, TOTAL_DOCUMENTS } from "@/lib/data";
+import { cases, TOTAL_CASES } from "@/lib/data";
+import { STATS } from "@/lib/siteStats";
 import { CaseRow } from "@/components/CaseRow";
 import { CasesFilter, type HypKey } from "@/components/CasesFilter";
 import {
@@ -165,8 +166,8 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`De 1947 a 2026, era por era. Los ${TOTAL_DOCUMENTS} documentos que los respaldan aparecen dentro de cada caso.`}
-            en={`From 1947 to 2026, era by era. The ${TOTAL_DOCUMENTS} documents that back them appear inside each case.`}
+            es={`De 1947 a 2026, era por era. Los ${STATS.documents} documentos que los respaldan aparecen dentro de los casos y de los perfiles de actores.`}
+            en={`From 1947 to 2026, era by era. The ${STATS.documents} documents that back them appear inside the cases and the actor profiles.`}
             locale={locale}
           />
         </Lede>

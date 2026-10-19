@@ -21,7 +21,7 @@ import statsData from "@/data/site-stats.json";
 export const STATS = statsData as {
   /** Incidentes (sin los casos-documento). */
   cases: number;
-  /** Documentos: evidencia de los incidentes, no casos. */
+  /** Documentos embebidos (PDF y enlaces) en los visores de casos y actores. */
   documents: number;
   patterns: number;
   frameworks: number;
