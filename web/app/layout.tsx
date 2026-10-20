@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AnchorExpander } from "@/components/AnchorExpander";
@@ -11,17 +11,21 @@ import { SITE_URL } from "@/lib/site";
 import { serializeJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
+// Fuentes alojadas en el repo (subconjunto latino, variables, licencia OFL) en
+// vez de `next/font/google`: el build ya no depende de bajarlas de Google en
+// cada corrida, que fue lo que rompió el CI el 20 oct 2026.
+const fraunces = localFont({
+  src: "./fonts/fraunces-latin-var.woff2",
   variable: "--font-display",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: "400 700",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
+const inter = localFont({
+  src: "./fonts/inter-latin-var.woff2",
   variable: "--font-sans",
   display: "swap",
+  weight: "100 900",
 });
 
 // Metadata por defecto en INGLÉS: es el idioma primario del sitio (<html lang="en">,
