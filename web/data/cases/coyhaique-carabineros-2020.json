@@ -1,0 +1,107 @@
+{
+  "id": "coyhaique-carabineros-2020",
+  "num": 471,
+  "name": "Aysén · la luz azul verde que vio el piloto de Carabineros sobre Coyhaique",
+  "name_en": "Aysén · the blue-green light seen by the Carabineros pilot over Coyhaique",
+  "year_start": 2020,
+  "country": "CL",
+  "country_name": "Chile",
+  "flag": "🇨🇱",
+  "location": {
+    "lat": -45.5936,
+    "lng": -72.1053,
+    "place": "En vuelo a unos 28.000 pies, a la altura del aeródromo Teniente Vidal de Coyhaique (región de Aysén)",
+    "place_en": "In flight at about 28,000 feet, abeam Teniente Vidal aerodrome, Coyhaique (Aysén region)"
+  },
+  "tier": "B",
+  "mundanoType": "sin_propuesta",
+  "epistemicStatus": "documented",
+  "probability": 39,
+  "summary": "Hacia las 20:00 del 20 de abril de 2020, el piloto de un avión de la Prefectura Aérea de Carabineros que volaba de Punta Arenas a Puerto Montt, a unos 28.000 pies, vio a la altura de Coyhaique una luz grande, ovalada y de color azul verde que se mantenía arriba y frente a su avión; la tomó por un avión comercial hasta que se desplazó y se acercó, y luego desapareció hacia el noroeste. El SEFAA identificó el vuelo por los planes de vuelo, pero el piloto dejó de colaborar y no entregó imágenes, y el caso se cerró como «Relato» sin proponer causa.",
+  "summary_en": "At around 20:00 on 20 April 2020, the pilot of a Carabineros Air Prefecture aircraft flying from Punta Arenas to Puerto Montt, at about 28,000 feet, saw abeam Coyhaique a large, oval, blue-green light that stayed above and in front of his aircraft; he took it for an airliner until it moved and came closer, and it then disappeared towards the northwest. SEFAA identified the flight from the flight plans, but the pilot stopped cooperating and handed over no images, and the case was closed as a 'Report' (Relato) with no cause proposed.",
+  "patterns": [],
+  "category": "incident",
+  "posterior": {
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.05,
+    "indet": 0.3
+  },
+  "whatHappened": "El lunes 20 de abril de 2020, un piloto de 36 años, identificado en el informe solo por sus iniciales, despegó del aeropuerto Carlos Ibáñez del Campo de Punta Arenas con destino al aeropuerto El Tepual de Puerto Montt. Según su reporte al entonces CEFAA, hacia las 20:00 hora local, mientras volaba a cerca de 28.000 pies «a la cuadra» del aeródromo Teniente Vidal de Coyhaique, en la región de Aysén, «una luz grande se mantenía arriba, frente a mi avión, creí que era un avión comercial, pero a medida de se desplazaba y acercaba claramente no lo era». La describió como ovalada, de color azul verde, y la situó a 1.000 metros de su aeronave. No supo decir desde dónde apareció, pero indicó que desapareció hacia el noroeste. El informe no registra la meteorología («N/A») ni otros testigos.\n\nEl piloto añadió un dato que el informe recoge sin comentarlo: «Posteriormente esa misma luz, en un paseo con mi hijo a Puerto Varas, apareció en unas fotos sacadas al lago Llanquihue». Esas fotos no llegaron nunca a la oficina.\n\nEl SEFAA, la sección de la Dirección General de Aeronáutica Civil que estudia estos reportes, empezó por establecer qué avión era. Según el registro de planes de vuelo, ese día solo dos aviones volaron de Punta Arenas a Puerto Montt. El manifiesto de pasajeros del primero, un Piper Cheyenne de la empresa de transporte aeromédico Aerotac, mostraba un piloto y un copiloto cuyos nombres no coincidían con el del informante; por descarte, el reporte provenía del vuelo C62 de la Prefectura Aérea de Carabineros de Chile. El informe no dice qué tipo de avión era el C62 ni si llevaba más tripulantes o pasajeros.\n\nLa oficina pidió al piloto más detalles del vuelo y las imágenes que tuviera de lo relatado. En un correo del 5 de mayo de 2020 respondió que encontraba «engorroso el procedimiento de enviar la información» y que, aunque le habían «tocado varios episodios» con fenómenos anómalos, no quería «entrometerse» en el tema, y cerró con un «lo voy a dejar hasta aquí». Desde el 8 de mayo la carpeta quedó a cargo del director del CEFAA. El usuario, anota el informe, no aportó material de estudio. Tras más de un año y diez meses sin nuevas comunicaciones, el SEFAA cerró la investigación en virtud del numeral 2d de su instructivo técnico, que se refiere a los medios audiovisuales de apoyo, porque no había medios de estudio que permitieran ir más allá del relato, y clasificó el caso como «Relato». El informe no propone ninguna causa ni menciona haber revisado el cielo de esa noche, el radar o los satélites visibles.",
+  "whatHappened_en": "On Monday 20 April 2020, a 36-year-old pilot, identified in the report only by his initials, took off from Carlos Ibáñez del Campo airport in Punta Arenas bound for El Tepual airport in Puerto Montt. According to his report to what was then CEFAA, at around 20:00 local time, while flying at about 28,000 feet 'abeam' Teniente Vidal aerodrome in Coyhaique, in the Aysén region, 'a large light stayed above, in front of my aircraft; I thought it was an airliner, but as it moved and came closer it clearly was not'. He described it as oval, blue-green in colour, and placed it 1,000 metres from his aircraft. He could not say where it came from, but said it disappeared towards the northwest. The report records no weather ('N/A') and no other witnesses.\n\nThe pilot added a detail that the report records without comment: 'Later that same light, on an outing with my son to Puerto Varas, appeared in some photos taken of Lake Llanquihue'. Those photos never reached the office.\n\nSEFAA, the section of Chile's Directorate General of Civil Aviation that studies these reports, began by establishing which aircraft it was. According to the flight-plan register, only two aircraft flew from Punta Arenas to Puerto Montt that day. The passenger manifest of the first, a Piper Cheyenne belonging to the air-ambulance company Aerotac, showed a pilot and co-pilot whose names did not match the informant's; by elimination, the report came from flight C62 of the Air Prefecture of Carabineros de Chile, the national police. The report does not say what type of aircraft C62 was or whether it carried other crew or passengers.\n\nThe office asked the pilot for more details of the flight and any images he had of what he described. In an email of 5 May 2020 he replied that he found 'the procedure for sending the information cumbersome' and that, although he had 'had several episodes' with anomalous phenomena, he did not want to 'get involved' in the subject, ending with 'I'll leave it here'. From 8 May the file was handled by the director of CEFAA. The user, the report notes, provided no material for study. After more than a year and ten months with no further communication, SEFAA closed the investigation under paragraph 2d of its technical procedure, which concerns supporting audiovisual material, because there was nothing that allowed it to go beyond the account, and classified the case as a 'Report' (Relato). The report proposes no cause and does not mention any review of that night's sky, of radar or of visible satellites.",
+  "whyMatters": "El caso muestra el límite de un reporte de cabina cuando el testigo se retira. El SEFAA hizo lo que podía hacer sin él: identificó el vuelo cruzando planes de vuelo y manifiestos, y así confirmó que el informante iba de verdad en el aire esa tarde por esa ruta. Pero todo lo demás descansa en un solo relato breve, de un solo tripulante, sin imágenes, sin radar y sin otros testigos, y el autor declinó ampliarlo. Que dijera haber tenido «varios episodios» con fenómenos anómalos y que viera después «esa misma luz» en fotos del lago Llanquihue, a unos 480 kilómetros al norte y en otro día, son datos del propio relato que el informe no pudo contrastar: las fotos no se entregaron.\n\nEl SEFAA no propuso ninguna causa, y esa ausencia no es evidencia contra una causa ordinaria. Por cuenta nuestra, no del SEFAA, calculamos con el programa de efemérides PyEphem la posición de Venus para un observador a 8.500 metros sobre Coyhaique. Si las 20:00 son hora de Aysén (UTC−4, la misma de Santiago en abril de 2020), el planeta estaba hacia el noroeste, con azimut de unos 305 a 307 grados, y en plena puesta: a las 19:50 su altura geométrica era de unos −2,6 grados y a las 20:00 de unos −4,0. Desde 8.500 metros el horizonte aparente queda unos 3 grados por debajo del horizontal, y la refracción en un rayo rasante levanta algo más los astros, así que Venus se ocultaba tras ese horizonte alrededor de las 20:00, delante a la izquierda de un avión con rumbo casi norte. Si el piloto dio la hora de Punta Arenas (UTC−3), eran las 19:00 de Aysén y Venus estaba unos 4 grados sobre el horizonte, también al noroeste. Brillaba con magnitud −4,4, cerca de su máximo de fines de abril de 2020, el Sol estaba entre 11 y 21 grados bajo el horizonte y la Luna, casi nueva, no había salido.\n\nEsa coincidencia no identifica nada, y el mismo relato tiene detalles que no encajan con ella. El piloto dijo que la luz estaba «arriba» y «frente» al avión, no baja sobre el horizonte y a un lado; que «se desplazaba y acercaba»; que estaba a 1.000 metros, distancia que un testigo no puede medir de noche frente a una luz sin referencias; y que era ovalada y azul verde. Un planeta muy brillante y bajo puede verse alargado y cambiar de color por la turbulencia del aire, pero eso es una posibilidad general, no algo que el informe compruebe. La hora es además aproximada y el informe no da el rumbo ni la posición exacta del avión. Lo que queda es lo que dejó el SEFAA: un relato que no se pudo estudiar más allá de sus propias palabras.",
+  "whyMatters_en": "The case shows the limit of a cockpit report when the witness withdraws. SEFAA did what it could without him: it identified the flight by cross-checking flight plans and passenger manifests, and so confirmed that the informant was indeed in the air that evening on that route. But everything else rests on a single short account by a single crew member, with no images, no radar and no other witnesses, and its author declined to expand on it. That he said he had had 'several episodes' with anomalous phenomena, and that he later saw 'that same light' in photos of Lake Llanquihue, some 480 kilometres to the north and on another day, are details of his own account that the report could not check: the photos were never handed over.\n\nSEFAA proposed no cause, and that absence is not evidence against an ordinary one. On our own account, not SEFAA's, we used the PyEphem ephemeris software to calculate the position of Venus for an observer at 8,500 metres above Coyhaique. If 20:00 was Aysén time (UTC−4, the same as Santiago in April 2020), the planet was to the northwest, at an azimuth of about 305 to 307 degrees, and in the middle of setting: at 19:50 its geometric altitude was about −2.6 degrees and at 20:00 about −4.0. From 8,500 metres the apparent horizon lies about 3 degrees below the horizontal, and refraction along a grazing ray lifts objects a little further, so Venus was sinking behind that horizon at around 20:00, ahead and to the left of an aircraft heading almost due north. If the pilot gave Punta Arenas time (UTC−3), it was 19:00 in Aysén and Venus stood about 4 degrees above the horizon, also to the northwest. It was shining at magnitude −4.4, close to its peak brightness of late April 2020; the Sun was between 11 and 21 degrees below the horizon and the Moon, almost new, had not risen.\n\nThat coincidence identifies nothing, and the account itself has details that do not fit it. The pilot said the light was 'above' and 'in front of' the aircraft, not low on the horizon and off to one side; that it 'moved and came closer'; that it was 1,000 metres away, a distance a witness cannot measure at night for a light with no reference points; and that it was oval and blue-green. A very bright, low planet can look elongated and change colour through atmospheric turbulence, but that is a general possibility, not something the report checks. The time is also approximate, and the report gives neither the aircraft's heading nor its exact position. What remains is what SEFAA left: an account that could not be studied beyond its own words.",
+  "evidence": [
+    "Relato del piloto: hacia las 20:00 hora local y a unos 28.000 pies, a la altura del aeródromo Teniente Vidal de Coyhaique, una luz grande, ovalada y azul verde que «se mantenía arriba, frente a mi avión», a 1.000 metros, y que desapareció hacia el noroeste",
+    "El piloto la tomó primero por un avión comercial, hasta que «se desplazaba y acercaba»",
+    "Registro de planes de vuelo: solo dos aviones volaron ese día de Punta Arenas a Puerto Montt; por el manifiesto del otro, un Piper Cheyenne de Aerotac, el reporte se atribuyó al vuelo C62 de la Prefectura Aérea de Carabineros",
+    "El piloto afirmó haber visto después «esa misma luz» en fotos del lago Llanquihue, que no entregó",
+    "Correo del 5 de mayo de 2020: encontró «engorroso» el procedimiento, dijo haber tenido «varios episodios» y que lo dejaba «hasta aquí»",
+    "Sin imágenes, sin radar ni otros testigos; cierre como «Relato» por el numeral 2d del instructivo técnico, sin causa propuesta",
+    "Deducción nuestra, no del SEFAA: según PyEphem, Venus (magnitud −4,4) se ponía hacia el noroeste, azimut de unos 305 a 307 grados, alrededor de las 20:00 hora de Aysén vista desde 8.500 metros"
+  ],
+  "evidence_en": [
+    "Pilot's account: at around 20:00 local time and about 28,000 feet, abeam Teniente Vidal aerodrome in Coyhaique, a large, oval, blue-green light that 'stayed above, in front of my aircraft', 1,000 metres away, and disappeared towards the northwest",
+    "The pilot first took it for an airliner, until it 'moved and came closer'",
+    "Flight-plan register: only two aircraft flew from Punta Arenas to Puerto Montt that day; from the manifest of the other, an Aerotac Piper Cheyenne, the report was attributed to flight C62 of the Carabineros Air Prefecture",
+    "The pilot said he later saw 'that same light' in photos of Lake Llanquihue, which he did not hand over",
+    "Email of 5 May 2020: he found the procedure 'cumbersome', said he had had 'several episodes' and that he would 'leave it here'",
+    "No images, no radar and no other witnesses; closed as a 'Report' (Relato) under paragraph 2d of the technical procedure, with no cause proposed",
+    "Our own deduction, not SEFAA's: according to PyEphem, Venus (magnitude −4.4) was setting to the northwest, azimuth about 305 to 307 degrees, at around 20:00 Aysén time as seen from 8,500 metres"
+  ],
+  "sources": [
+    {
+      "name": "SEFAA (Dirección General de Aeronáutica Civil de Chile) — «Caso N° 1101», Coyhaique, 20 abr 2020",
+      "name_en": "SEFAA (Chilean Directorate General of Civil Aviation) — 'Case No. 1101', Coyhaique, 20 Apr 2020",
+      "url": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/06/INFORME-CASO-N%C2%B0-1101.pdf",
+      "note": "Fuente primaria: relato del piloto, identificación del vuelo por planes de vuelo y manifiestos, correo del testigo y conclusión oficial.",
+      "note_en": "Primary source: the pilot's account, identification of the flight from flight plans and manifests, the witness's email and the official conclusion."
+    },
+    {
+      "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024)",
+      "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024)",
+      "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
+      "note": "Tasa base: los 174 casos resueltos ese año lo fueron como objetos prosaicos; muchos otros siguen sin resolver.",
+      "note_en": "Base rate: the 174 cases resolved that year were all resolved to prosaic objects; many others remain unresolved."
+    },
+    {
+      "name": "SEFAA — Sección de Estudios de Fenómenos Aéreos Anómalos (DGAC), sitio oficial",
+      "name_en": "SEFAA — Anomalous Aerial Phenomena Study Section (DGAC), official site",
+      "url": "https://sefaa.dgac.gob.cl/",
+      "note": "Catálogo de casos publicados por la oficina chilena.",
+      "note_en": "Catalogue of cases published by the Chilean office."
+    }
+  ],
+  "documents": [
+    {
+      "src": "/pursue/coyhaique-carabineros-2020-ciudad.jpg",
+      "type": "image",
+      "title": "Contexto · Coyhaique vista desde la Reserva Nacional Coyhaique",
+      "title_en": "Context · Coyhaique seen from the Coyhaique National Reserve",
+      "description": "Vista panorámica de la ciudad junto a la que está el aeródromo Teniente Vidal, punto de referencia que dio el piloto. Es una imagen del lugar, tomada de día en 2013, no del fenómeno: del avistamiento no se entregó ninguna imagen.",
+      "description_en": "Panoramic view of the city beside which lies Teniente Vidal aerodrome, the reference point the pilot gave. It is an image of the place, taken by day in 2013, not of the phenomenon: no image of the sighting was handed over.",
+      "source": "Coyhaique desde la RNC.jpg (Rakela) · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Coyhaique_desde_la_RNC.jpg"
+    },
+    {
+      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/06/INFORME-CASO-N%C2%B0-1101.pdf",
+      "type": "link",
+      "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1101, Coyhaique, 20 de abril de 2020",
+      "title_en": "SEFAA (Chilean DGAC) report, case no. 1101, Coyhaique, 20 April 2020",
+      "description": "Informe de dos páginas de la sección oficial de fenómenos aéreos anómalos. Cita el relato del piloto, explica cómo se identificó su vuelo por los planes de vuelo y el manifiesto de pasajeros del otro avión que hizo la ruta, reproduce su correo declinando seguir colaborando y cierra el caso como «Relato» por falta de material de estudio. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
+      "description_en": "Two-page report by the official anomalous aerial phenomena section. It quotes the pilot's account, explains how his flight was identified from the flight plans and the passenger manifest of the other aircraft on the route, reproduces his email declining to cooperate further and closes the case as a 'Report' (Relato) for lack of study material. A DGAC work with no open licence, so it is linked rather than hosted.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+    }
+  ],
+  "classBasis": {
+    "es": "El SEFAA no propuso ninguna causa: cerró el caso porque «no existen medios de estudio que permitan ir más allá del relato reportado». La falta de una propuesta no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "en": "SEFAA proposed no cause: it closed the case because 'there are no means of study that allow going beyond the reported account'. The lack of a proposal is not evidence against an ordinary cause: in its 2024 report AARO stated that 'all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft'. The same report adds that 'many other cases remain unresolved', so the figure is the rate among resolved cases, not among all cases.",
+    "source": "SEFAA (DGAC Chile) — «Caso N° 1101» · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "source_en": "SEFAA (DGAC Chile) — 'Case No. 1101' · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  },
+  "evidenceReviewed": "2026-10-19"
+}
