@@ -4096,8 +4096,8 @@
     "section_label_en": "FAU Colonel · president of CRIDOVNI",
     "credentials": "Coronel (Aviador Naval, R) de la Fuerza Aérea Uruguaya · presidente de la CRIDOVNI (desde 2008)",
     "credentials_en": "Colonel (Naval Aviator, ret.) of the Uruguayan Air Force · president of CRIDOVNI (since 2008)",
-    "bio_short": "Coronel (aviador naval, retirado) de la Fuerza Aérea Uruguaya y, desde 2008, presidente de la CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de Objetos Voladores no Identificados), la comisión gubernamental UAP de mayor continuidad del mundo —activa sin interrupción desde 1979—. Es su cara pública y su voz institucional: defiende un enfoque metodológico y de soberanía aérea, y bajo su conducción la CRIDOVNI ha investigado más de 1.500 denuncias, de las que cerca de un 3% quedan clasificadas como 'no convencionales'. En su gestión la Fuerza Aérea Uruguaya firmó un acuerdo preliminar de cooperación con la AARO de Estados Unidos para el análisis de fenómenos.",
-    "bio_short_en": "Colonel (naval aviator, retired) of the Uruguayan Air Force and, since 2008, president of CRIDOVNI (Commission for Receiving and Investigating Reports of Unidentified Flying Objects), the world's longest continuously running government UAP commission —active without interruption since 1979—. He is its public face and institutional voice: he advocates a methodological, air-sovereignty approach, and under his leadership CRIDOVNI has investigated more than 1,500 reports, of which about 3% are classified as 'non-conventional'. During his tenure the Uruguayan Air Force signed a preliminary cooperation agreement with the United States' AARO for the analysis of phenomena.",
+    "bio_short": "Coronel (aviador naval, retirado) de la Fuerza Aérea Uruguaya y, desde 2008, presidente de la CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de Objetos Voladores no Identificados), la comisión gubernamental UAP de mayor continuidad del mundo —activa sin interrupción desde 1979—. Es su cara pública y su voz institucional: defiende un enfoque metodológico y de soberanía aérea, y bajo su conducción la CRIDOVNI ha investigado más de 1.500 denuncias, de las que cerca de un 3% quedan clasificadas como 'no convencionales'. Según la propia comisión, en su gestión la Fuerza Aérea Uruguaya alcanzó un acuerdo preliminar de cooperación con la AARO de Estados Unidos; ningún documento estadounidense publicado lo confirma. Lo que sí consta, en correos de la AARO obtenidos por FOIA (caso 26-F-1773, publicado por The Black Vault en 2026), es que dos representantes de la CRIDOVNI, con los nombres tachados, asistieron en agosto de 2025 al taller de datos UAP de la AARO y se reunieron con la oficina en el Pentágono el 4 de agosto, con una hora reservada a la «colaboración futura». En esos correos la delegación uruguaya escribe que le interesa ampliar la relación de trabajo con la AARO, y la oficina cuenta que también invitó al SEFAA chileno, que no respondió.",
+    "bio_short_en": "Colonel (naval aviator, retired) of the Uruguayan Air Force and, since 2008, president of CRIDOVNI (Commission for Receiving and Investigating Reports of Unidentified Flying Objects), the world's longest continuously running government UAP commission —active without interruption since 1979—. He is its public face and institutional voice: he advocates a methodological, air-sovereignty approach, and under his leadership CRIDOVNI has investigated more than 1,500 reports, of which about 3% are classified as 'non-conventional'. According to the commission itself, during his tenure the Uruguayan Air Force reached a preliminary cooperation agreement with the United States' AARO; no published US document confirms it. What is on record, in AARO emails obtained through FOIA (case 26-F-1773, published by The Black Vault in 2026), is that two CRIDOVNI representatives, their names redacted, attended AARO's UAP data workshop in August 2025 and met the office at the Pentagon on 4 August, with an hour set aside for 'future collaboration'. In those emails the Uruguayan delegation writes that it wants 'to establish a further working relationship' with AARO, and the office says it also invited Chile's SEFAA, which did not reply.",
     "works": [
       {
         "year": 2008,
@@ -4108,8 +4108,14 @@
       {
         "year": 2023,
         "title": "Acuerdo de cooperación FAU–AARO",
-        "contribution": "Acercamiento con la oficina de UAP de EE.UU. para análisis conjunto",
-        "contribution_en": "Engagement with the U.S. UAP office for joint analysis"
+        "contribution": "Acuerdo preliminar con la oficina UAP de EE.UU., según la propia comisión (sin documento estadounidense publicado)",
+        "contribution_en": "Preliminary agreement with the US UAP office, according to the commission itself (no published US document)"
+      },
+      {
+        "year": 2025,
+        "title": "Reunión CRIDOVNI–AARO en el Pentágono y taller de datos UAP",
+        "contribution": "Dos representantes de la CRIDOVNI presentan su trabajo a la AARO el 4 de agosto y asisten al taller del 5 y 6 de agosto (registros FOIA 26-F-1773)",
+        "contribution_en": "Two CRIDOVNI representatives brief AARO on 4 August and attend the 5–6 August workshop (FOIA records 26-F-1773)"
       }
     ],
     "sources": [
@@ -4126,6 +4132,13 @@
       {
         "name": "FAU — 40 años de CRIDOVNI",
         "url": "https://www.fau.mil.uy/es/noticias/481-40-anos-de-existencia-de-la-cridovni.html"
+      },
+      {
+        "name": "AARO — registros FOIA 26-F-1773 sobre el taller de datos UAP de agosto de 2025 (The Black Vault, 2026)",
+        "name_en": "AARO — FOIA records 26-F-1773 on the August 2025 UAP data workshop (The Black Vault, 2026)",
+        "url": "https://documents3.theblackvault.com/documents/osd/26-F-1773.pdf",
+        "note": "Correos de la AARO con la delegación de la CRIDOVNI (pp. 12-17 del PDF) y lista de asistentes del taller (p. 39); nombres tachados.",
+        "note_en": "AARO emails with the CRIDOVNI delegation (PDF pp. 12-17) and the workshop attendee list (p. 39); names redacted."
       }
     ],
     "documents": [
@@ -4136,6 +4149,15 @@
         "title_en": "CRIDOVNI · FAU commission",
         "description": "La CRIDOVNI (Comisión Receptora e Investigadora de Denuncias de Objetos Voladores no Identificados) es la comisión que la Fuerza Aérea Uruguaya creó el 7 de agosto de 1979, dependiente del Ministerio de Defensa Nacional, y que funciona sin interrupción desde entonces. Recibe denuncias, las investiga con recursos militares (radar, controladores, cotejo con el tránsito conocido y con datos meteorológicos) y las clasifica, con una categoría explícita para los casos «no convencionales». Según cifras de la propia comisión recogidas por la prensa uruguaya, de unas 1.570 denuncias entre 1979 y 2021, 47 (alrededor del 3 %) quedaron en esa categoría; el resto recibió explicación convencional. La comisión no se pronuncia sobre la naturaleza del fenómeno, y su cooperación con la AARO estadounidense consta solo como reportada.",
         "description_en": "CRIDOVNI (Commission for the Reception and Investigation of Reports of Unidentified Flying Objects) is the commission the Uruguayan Air Force created on 7 August 1979, under the Ministry of National Defence, and which has operated without interruption ever since. It receives reports, investigates them with military resources (radar, controllers, checks against known traffic and weather data) and classifies them, with an explicit category for \"non-conventional\" cases. According to the commission's own figures as reported by the Uruguayan press, of some 1,570 reports between 1979 and 2021, 47 (about 3%) ended up in that category; the rest received a conventional explanation. The commission makes no statement on the nature of the phenomenon, and its cooperation with the US AARO stands only as reported."
+      },
+      {
+        "src": "https://documents3.theblackvault.com/documents/osd/26-F-1773.pdf",
+        "type": "link",
+        "title": "Registros FOIA 26-F-1773 de la AARO · taller de datos UAP y reunión con la CRIDOVNI (agosto de 2025)",
+        "title_en": "AARO FOIA records 26-F-1773 · UAP data workshop and meeting with CRIDOVNI (August 2025)",
+        "description": "PDF de 92 páginas que la AARO entregó por FOIA a The Black Vault (caso 26-F-1773, solicitado el 17 de marzo de 2026). Contiene los correos en que la oficina organiza el viaje de dos representantes de la CRIDOVNI, la agenda de la reunión del 4 de agosto de 2025 en el Pentágono (presentación de la CRIDOVNI, presentación de la AARO y una hora de «colaboración futura») y la lista de asistentes del taller, donde figuran dos veces «CRIDOVNI (Uruguay)» y un «Australian Government». Los nombres están tachados y 19 páginas se retuvieron completas. No contiene ningún acuerdo de cooperación firmado. Documento oficial de EE.UU.; se enlaza la copia de The Black Vault.",
+        "description_en": "A 92-page PDF AARO released through FOIA to The Black Vault (case 26-F-1773, requested 17 March 2026). It contains the emails in which the office arranges the trip of two CRIDOVNI representatives, the agenda of the 4 August 2025 meeting at the Pentagon (CRIDOVNI briefing, AARO briefing and an hour on 'future collaboration') and the workshop attendee list, which shows 'CRIDOVNI (Uruguay)' twice and an 'Australian Government'. Names are redacted and 19 pages were withheld in full. It contains no signed cooperation agreement. A US government document; The Black Vault's copy is linked.",
+        "source": "All-domain Anomaly Resolution Office (AARO), vía The Black Vault"
       }
     ]
   },
