@@ -66,7 +66,8 @@ object Watchdog {
             if (f.packageName in alerted) return@mapNotNull null
             val a = RiskRules.assess(f, baitApps) ?: return@mapNotNull null
             val isNew = known != null && f.packageName !in known
-            val urgent = RiskSignal.POPS_UP in a.signals || RiskSignal.IMPERSONATES in a.signals
+            val urgent = RiskSignal.POPS_UP in a.signals || RiskSignal.IMPERSONATES in a.signals ||
+                (RiskSignal.USAGE_SPIKE in a.signals && a.high)
             if (isNew || urgent) f to a else null
         }
     }

@@ -48,6 +48,7 @@ object ForegroundLog {
                 .map { it.activityInfo.packageName }.toSet()
         } catch (e: Exception) { null }
         return events(context, since, now)
+            .filter { it.type != UsageEvents.Event.ACTIVITY_PAUSED }
             .groupBy { it.pkg }
             .mapNotNull { (pkg, list) ->
                 if (pkg == context.packageName || pkg == home) return@mapNotNull null
@@ -63,9 +64,51 @@ object ForegroundLog {
             .sortedByDescending { it.lastSeen }
     }
 
+    /**
+     * Paquete → tiempo en pantalla (ms) desde [since]: de cada pantalla abierta hasta que se
+     * pausa o la reemplaza otra app (solo una está en primer plano a la vez). Una que sigue
+     * abierta cuenta hasta [now]. Es el mismo dato que «Tiempo de uso» de Android, por app.
+     */
+    fun screenTime(context: Context, since: Long, now: Long = System.currentTimeMillis()): Map<String, Long> {
+        val total = HashMap<String, Long>()
+        var open: Pair<String, Long>? = null
+        fun close(at: Long) {
+            open?.let { (pkg, start) -> total[pkg] = (total[pkg] ?: 0L) + (at - start).coerceAtLeast(0) }
+            open = null
+        }
+        for (e in events(context, since, now).sortedBy { it.time }) when (e.type) {
+            UsageEvents.Event.ACTIVITY_RESUMED -> if (open?.first != e.pkg) { close(e.time); open = e.pkg to e.time }
+            UsageEvents.Event.ACTIVITY_PAUSED -> if (open?.first == e.pkg) close(e.time)
+        }
+        close(now)
+        return total
+    }
+
+    /**
+     * Paquete → promedio diario de tiempo en pantalla (ms) en los 7 días anteriores a las
+     * últimas 24 h, según las estadísticas diarias de Android (se guardan más tiempo que el
+     * registro de eventos). Vacío sin acceso de uso.
+     */
+    fun dailyBaseline(context: Context, now: Long = System.currentTimeMillis()): Map<String, Long> {
+        if (!ScanEngine.usageAccess(context)) return emptyMap()
+        return try {
+            val usm = context.getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
+            usm.queryUsageStats(UsageStatsManager.INTERVAL_DAILY, now - 8 * DAY_MS, now - DAY_MS)
+                .orEmpty()
+                .groupBy { it.packageName }
+                .mapValues { (_, days) -> days.sumOf { it.totalTimeInForeground } / 7 }
+        } catch (e: Exception) {
+            emptyMap()
+        }
+    }
+
+    const val DAY_MS = 24 * 3600_000L
+
     private data class Ev(val pkg: String, val time: Long, val type: Int)
 
-    private val TYPES = setOf(UsageEvents.Event.ACTIVITY_RESUMED, UsageEvents.Event.FOREGROUND_SERVICE_START)
+    private val TYPES = setOf(
+        UsageEvents.Event.ACTIVITY_RESUMED, UsageEvents.Event.ACTIVITY_PAUSED, UsageEvents.Event.FOREGROUND_SERVICE_START,
+    )
 
     private fun events(context: Context, since: Long, now: Long): List<Ev> {
         if (!ScanEngine.usageAccess(context)) return emptyList()

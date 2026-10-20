@@ -296,4 +296,10 @@
     <string name="prevent_protect">Keep Play Protect on</string>
     <string name="prevent_watch">Turn on Cleaner\'s continuous watch</string>
     <string name="prevent_watch_on">Cleaner\'s continuous watch: on ✓</string>
+    <!-- v2.16: sudden usage -->
+    <string name="reason_usage_spike">had far more screen time than usual in the last 24 h (did you open it?)</string>
+    <plurals name="reason_usage_spike_n">
+        <item quantity="one">was on screen %1$d minute in the last 24 h, far more than usual (did you open it?)</item>
+        <item quantity="other">was on screen %1$d minutes in the last 24 h, far more than usual (did you open it?)</item>
+    </plurals>
 </resources>

@@ -34,6 +34,10 @@ data class AppFacts(
     val screensLastDay: Int = 0,
     /** Veces que arrancó un servicio en primer plano (aviso fijo en la barra) en las últimas 24 h. */
     val backgroundLastDay: Int = 0,
+    /** Tiempo en pantalla (ms) en las últimas 24 h. */
+    val screenMsLastDay: Long = 0,
+    /** Promedio diario de tiempo en pantalla (ms) de los 7 días anteriores: su uso habitual. */
+    val screenMsBaselineDaily: Long = 0,
 )
 
 /** Señales de riesgo. Son las que usan troyanos bancarios y stalkerware; ninguna prueba por sí sola que una app sea maliciosa. */
@@ -41,6 +45,12 @@ enum class RiskSignal(val weight: Int, val textRes: Int) {
     SIDELOADED(2, R.string.reason_sideloaded),
     /** No tiene ícono, así que el usuario no pudo abrirla, y aun así mostró pantallas: anuncios a pantalla completa. */
     POPS_UP(4, R.string.reason_pops_up),
+    /**
+     * Uso repentino: mucho tiempo en pantalla en las últimas 24 h comparado con su uso habitual.
+     * Los anuncios a pantalla completa suman minutos que nadie eligió (el caso real: «System App»,
+     * 29 min en un día sin que nadie la abriera).
+     */
+    USAGE_SPIKE(2, R.string.reason_usage_spike),
     /** Instalada por el usuario con nombre de parte del teléfono («System App»): las de sistema de verdad no llegan aquí. */
     IMPERSONATES(3, R.string.reason_impersonates),
     /** Se presenta como limpiador, acelerador, recuperador de fotos, galería o lector: disfraces frecuentes del adware. */
@@ -112,6 +122,13 @@ object RiskRules {
         return SYSTEM_NAME.matches(plain)
     }
 
+    /** Uso repentino: al menos [SPIKE_MIN_MS] en pantalla en 24 h y [SPIKE_RATIO] veces su promedio diario anterior. */
+    const val SPIKE_MIN_MS = 10 * 60_000L
+    const val SPIKE_RATIO = 5
+
+    fun usageSpike(lastDayMs: Long, baselineDailyMs: Long) =
+        lastDayMs >= SPIKE_MIN_MS && lastDayMs >= SPIKE_RATIO * baselineDailyMs
+
     /** Desde cuántas apps del mismo tipo instaladas a la vez se considera una cadena de adware. */
     const val SWARM_MIN = 4
 
@@ -140,6 +157,7 @@ object RiskRules {
         if (bait && baitApps >= SWARM_MIN) add(RiskSignal.SWARM)
         if (!f.hasLauncherIcon && f.screensLastDay > 0) add(RiskSignal.POPS_UP)
         if (impersonatesSystem(f.label)) add(RiskSignal.IMPERSONATES)
+        if (usageSpike(f.screenMsLastDay, f.screenMsBaselineDaily)) add(RiskSignal.USAGE_SPIKE)
         if (f.accessibilityOn) add(RiskSignal.ACCESSIBILITY)
         if (f.deviceAdmin) add(RiskSignal.DEVICE_ADMIN)
         if (f.permissions.any { it in SMS }) add(RiskSignal.SMS)
@@ -156,6 +174,7 @@ object RiskRules {
      * null si la app no se lista. Las apps de tienda con permisos amplios son comunes (mensajería,
      * gestores de contraseñas), así que una app de tienda solo se lista si:
      * - se hace pasar por el sistema (siempre se lista, venga de donde venga), o
+     * - tuvo un uso repentino: mucho tiempo en pantalla en 24 h frente a su uso habitual, o
      * - combina accesibilidad y administrador, o
      * - oculta su ícono y además dibuja encima, controla el teléfono o instala apps (patrón del adware), o
      * - se presenta como utilidad cebo (limpiador, recuperador de fotos, galería, lector) y además
@@ -169,15 +188,19 @@ object RiskRules {
         val sideloaded = RiskSignal.SIDELOADED in s
         val control = RiskSignal.ACCESSIBILITY in s || RiskSignal.DEVICE_ADMIN in s
         val adwareMoves = RiskSignal.OVERLAY in s || control || RiskSignal.INSTALLS_APPS in s || RiskSignal.FULL_SCREEN in s
+        val spike = RiskSignal.USAGE_SPIKE in s
         val listed = if (sideloaded) score >= SIDELOADED_MIN_SCORE || RiskSignal.IMPERSONATES in s
-        else RiskSignal.POPS_UP in s || RiskSignal.IMPERSONATES in s ||
+        else RiskSignal.POPS_UP in s || RiskSignal.IMPERSONATES in s || spike ||
             (RiskSignal.ACCESSIBILITY in s && RiskSignal.DEVICE_ADMIN in s) ||
             (RiskSignal.HIDDEN in s && adwareMoves) ||
             (RiskSignal.CLEANER in s && (adwareMoves || RiskSignal.HIDDEN in s || RiskSignal.NOTIFICATIONS in s ||
                 RiskSignal.BACKGROUND in s || RiskSignal.SWARM in s))
         if (!listed) return null
         val impostor = RiskSignal.IMPERSONATES in s && (RiskSignal.HIDDEN in s || sideloaded)
-        val high = score >= HIGH_SCORE || (sideloaded && control) || RiskSignal.POPS_UP in s || impostor
+        // Un uso repentino de una app oculta, disfrazada o instalada fuera de una tienda es alto;
+        // el de una app normal (un juego nuevo) queda como medio: el usuario sabe si la abrió.
+        val suddenAds = spike && (RiskSignal.HIDDEN in s || RiskSignal.CLEANER in s || RiskSignal.IMPERSONATES in s || sideloaded)
+        val high = score >= HIGH_SCORE || (sideloaded && control) || RiskSignal.POPS_UP in s || impostor || suddenAds
         return RiskAssessment(high, score, s)
     }
 }
@@ -238,6 +261,9 @@ class SecurityScanner(
             when (it) {
                 RiskSignal.POPS_UP -> ctx.resources.getQuantityString(R.plurals.reason_pops_up_n, f.screensLastDay, f.screensLastDay)
                 RiskSignal.SWARM -> ctx.getString(R.string.reason_swarm_n, baitApps)
+                RiskSignal.USAGE_SPIKE -> (f.screenMsLastDay / 60_000L).toInt().let { min ->
+                    ctx.resources.getQuantityString(R.plurals.reason_usage_spike_n, min, min)
+                }
                 else -> ctx.getString(it.textRes)
             }
         }
@@ -267,6 +293,8 @@ class SecurityScanner(
             val dayAgo = System.currentTimeMillis() - 24 * 3600_000L
             val screens = ForegroundLog.counts(context, dayAgo)
             val background = ForegroundLog.counts(context, dayAgo, type = UsageEvents.Event.FOREGROUND_SERVICE_START)
+            val screenTime = ForegroundLog.screenTime(context, dayAgo)
+            val baseline = ForegroundLog.dailyBaseline(context)
             val launchable = try {
                 pm.queryIntentActivities(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER), 0)
                     .map { it.activityInfo.packageName }.toSet()
@@ -291,6 +319,8 @@ class SecurityScanner(
                         apkPath = app.sourceDir,
                         screensLastDay = screens[p.packageName] ?: 0,
                         backgroundLastDay = background[p.packageName] ?: 0,
+                        screenMsLastDay = screenTime[p.packageName] ?: 0L,
+                        screenMsBaselineDaily = baseline[p.packageName] ?: 0L,
                     )
                 } catch (e: Exception) {
                     null // una app que no se deja leer no detiene el análisis

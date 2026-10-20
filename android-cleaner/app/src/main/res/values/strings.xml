@@ -308,4 +308,10 @@
     <string name="prevent_protect">Tener Play Protect activo</string>
     <string name="prevent_watch">Activar la vigilancia continua de Limpiador</string>
     <string name="prevent_watch_on">Vigilancia continua de Limpiador: activa ✓</string>
+    <!-- v2.16: uso repentino -->
+    <string name="reason_usage_spike">tuvo mucho más tiempo en pantalla que de costumbre en las últimas 24 h (¿la abriste tú?)</string>
+    <plurals name="reason_usage_spike_n">
+        <item quantity="one">estuvo %1$d minuto en pantalla en las últimas 24 h, mucho más que de costumbre (¿la abriste tú?)</item>
+        <item quantity="other">estuvo %1$d minutos en pantalla en las últimas 24 h, mucho más que de costumbre (¿la abriste tú?)</item>
+    </plurals>
 </resources>

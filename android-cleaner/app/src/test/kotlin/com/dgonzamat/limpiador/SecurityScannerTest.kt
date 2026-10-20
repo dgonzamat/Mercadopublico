@@ -115,6 +115,21 @@ class SecurityScannerTest {
         // De tienda y con ícono también se lista, pero como riesgo medio.
         val storeImpostor = RiskRules.assess(facts(label = "System App"))!!
         assertFalse(storeImpostor.high)
+        // Uso repentino: 10 min o más en 24 h y al menos 5 veces su promedio diario anterior.
+        val min = 60_000L
+        assertTrue(RiskRules.usageSpike(12 * min, 0))
+        assertFalse(RiskRules.usageSpike(9 * min, 0))          // poco tiempo
+        assertFalse(RiskRules.usageSpike(60 * min, 30 * min))  // mucho, pero es su uso normal (YouTube)
+        assertTrue(RiskRules.usageSpike(60 * min, 10 * min))
+        // Una app normal con uso repentino (un juego nuevo) se lista como medio: el usuario sabe si la abrió.
+        val newGame = RiskRules.assess(facts(label = "Juego de cartas").copy(screenMsLastDay = 25 * min))!!
+        assertFalse(newGame.high)
+        assertEquals(listOf(RiskSignal.USAGE_SPIKE), newGame.signals)
+        // Oculta, disfrazada o fuera de tienda con uso repentino: alto (el caso real de «System App»).
+        assertTrue(RiskRules.assess(facts(label = "Utilidades", launcher = false).copy(screenMsLastDay = 29 * min))!!.high)
+        assertTrue(RiskRules.assess(facts(label = "Notas", installer = null).copy(screenMsLastDay = 15 * min))!!.high)
+        // Mucho tiempo pero habitual: no se lista.
+        assertNull(RiskRules.assess(facts(label = "YouTube").copy(screenMsLastDay = 90 * min, screenMsBaselineDaily = 60 * min)))
         // Tiendas conocidas no suman «no viene de una tienda».
         for (store in RiskRules.TRUSTED_STORES) assertFalse(RiskSignal.SIDELOADED in RiskRules.signals(facts(installer = store)))
     }
@@ -201,6 +216,39 @@ class SecurityScannerTest {
         // instalada fuera de una tienda y sin ícono, trabajó en segundo plano, también.
         val items = runBlocking { SecurityScanner(ctx).scan() }
         assertEquals(listOf(FakeApps.NEVER, FakeApps.RECENT), items.map { it.packageName })
+    }
+
+    @Test
+    fun mide_el_tiempo_en_pantalla_y_lo_compara_con_su_uso_habitual() {
+        FakeApps.install(usageAccess = true)
+        val usm = org.robolectric.Shadows.shadowOf(ctx.getSystemService(Context.USAGE_STATS_SERVICE) as android.app.usage.UsageStatsManager)
+        val now = System.currentTimeMillis()
+        val min = 60_000L
+        val resumed = android.app.usage.UsageEvents.Event.ACTIVITY_RESUMED
+        val paused = android.app.usage.UsageEvents.Event.ACTIVITY_PAUSED
+        // «App nunca abierta» muestra anuncios en dos tandas (8 + 4 min); «App reciente» se usa 20 min,
+        // y la tapa un anuncio sin que llegue a registrarse su pausa.
+        usm.addEvent(FakeApps.NEVER, now - 60 * min, resumed)
+        usm.addEvent(FakeApps.NEVER, now - 52 * min, paused)
+        usm.addEvent(FakeApps.RECENT, now - 50 * min, resumed)
+        usm.addEvent(FakeApps.NEVER, now - 30 * min, resumed)
+        usm.addEvent(FakeApps.NEVER, now - 26 * min, paused)
+        // La semana anterior, «App reciente» se usó media hora al día; «App nunca abierta», nada.
+        usm.addUsageStats(
+            android.app.usage.UsageStatsManager.INTERVAL_DAILY,
+            org.robolectric.shadows.ShadowUsageStatsManager.UsageStatsBuilder.newBuilder()
+                .setPackageName(FakeApps.RECENT).setFirstTimeStamp(now - 3 * 86_400_000L).setLastTimeStamp(now - 2 * 86_400_000L)
+                .setTotalTimeInForeground(7 * 30 * min).build(),
+        )
+        val facts = SecurityScanner.collectFacts(ctx).associateBy { it.packageName }
+        assertEquals(12 * min, facts.getValue(FakeApps.NEVER).screenMsLastDay)
+        assertEquals(20 * min, facts.getValue(FakeApps.RECENT).screenMsLastDay)
+        assertEquals(30 * min, facts.getValue(FakeApps.RECENT).screenMsBaselineDaily)
+        assertEquals(0L, facts.getValue(FakeApps.NEVER).screenMsBaselineDaily)
+        // Solo la de los anuncios cuenta como uso repentino, y el motivo lo dice en minutos.
+        assertEquals(listOf(FakeApps.NEVER), facts.values.filter { RiskRules.usageSpike(it.screenMsLastDay, it.screenMsBaselineDaily) }.map { it.packageName })
+        val item = runBlocking { SecurityScanner(ctx).scan() }.single { it.packageName == FakeApps.NEVER }
+        assertTrue(item.note!!, item.note!!.contains("estuvo 12 minutos en pantalla en las últimas 24 h"))
     }
 
     @Test
