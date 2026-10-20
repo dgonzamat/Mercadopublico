@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Solo actualizaciones de seguridad (open-pull-requests-limit: 0 apaga las de versión).
+  - package-ecosystem: "npm"
+    directory: "/web"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    groups:
+      npm-security:
+        applies-to: security-updates
+        patterns: ["*"]
+    ignore:
+      # Tailwind 4 mueve el plugin de PostCSS a @tailwindcss/postcss y cambia la
+      # configuración: es una migración aparte, no un parche (PR #1154 rompía el build).
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
