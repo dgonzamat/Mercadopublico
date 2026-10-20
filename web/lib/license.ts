@@ -7,6 +7,8 @@ const EN: Record<string, string> = {
   "Dominio público · obra del Gobierno de EE. UU.": "Public domain · US Government work",
   "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)": "Public domain · US Government work (17 USC §105)",
   "Dominio público · NASA, obra del Gobierno de EE. UU.": "Public domain · NASA, US Government work",
+  "Dominio público (NASA)": "Public domain (NASA)",
+  "Uso libre con crédito «SOHO (ESA & NASA)»": "Free to use with credit \"SOHO (ESA & NASA)\"",
   "Dominio público (obra del Gobierno de Australia anterior a 1975)": "Public domain (Australian Government work before 1975)",
   "Registro público del Congreso de EE.UU. (testimonio escrito publicado por el Comité de Supervisión de la Cámara)":
     "US Congressional public record (written testimony published by the House Oversight Committee)",
