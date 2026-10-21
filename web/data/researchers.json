@@ -348,6 +348,108 @@
     "photo_license": "Dominio público"
   },
   {
+    "id": "corso",
+    "name": "Philip J. Corso",
+    "flag": "🇺🇸",
+    "born": 1915,
+    "death": 1998,
+    "section": "B",
+    "section_label": "Informantes / denunciantes (histórico)",
+    "credentials": "Teniente coronel del Ejército de EE. UU. (retirado en 1963) · oficial de inteligencia en la Junta de Coordinación de Operaciones del Consejo de Seguridad Nacional (1954–1956) · jefe de la División de Tecnología Extranjera de Investigación y Desarrollo del Ejército (abril-julio de 1962) · autor de «The Day After Roswell» (1997)",
+    "bio_short": "Teniente coronel del Ejército con una carrera real en inteligencia que en 1997 publicó «The Day After Roswell», donde afirma que repartió restos de Roswell entre contratistas de defensa y que de ellos salieron la visión nocturna, la fibra óptica, el láser y los circuitos integrados. Su hoja de servicio muestra que dirigió la División de Tecnología Extranjera tres meses, en 1962; el senador Thurmond se desmarcó de su prólogo, y la crítica documentó errores de fechas imposibles. No aportó documentos, y la AARO (2024) no halló pruebas de programas de ingeniería inversa.",
+    "bio": "Teniente coronel del Ejército de Estados Unidos (1942–1963) que en 1997, a los 82 años, publicó «The Day After Roswell» con el escritor William J. Birnes, el libro que fijó la versión más difundida de la ingeniería inversa de Roswell. Su hoja de servicio (DA Form 66) confirma una carrera real en inteligencia: interrogador de prisioneros e intérprete de italiano en el teatro mediterráneo durante la Segunda Guerra Mundial, oficial de inteligencia en el cuartel general del Lejano Oriente durante la guerra de Corea y, de 1954 a 1956, oficial de inteligencia en la Junta de Coordinación de Operaciones, el órgano que ejecutaba las políticas del Consejo de Seguridad Nacional de Eisenhower. El 5 de mayo de 1961 entró en la Oficina del Jefe de Investigación y Desarrollo del Ejército; el 20 de julio pasó a la División de Tecnología Extranjera, la dirigió del 18 de abril al 18 de julio de 1962, volvió después a la División de Planes y se retiró el 1 de marzo de 1963. Fue luego asesor del senador Strom Thurmond (1963–1964 y 1973–1974). Murió en 1998.\n\nEn el libro cuenta que en julio de 1947, siendo mayor en Fort Riley (Kansas), vio el cuerpo de uno de los seres de Roswell en un convoy de camiones, y que en 1961, como responsable de Tecnología Extranjera, heredó un archivador con restos del choque y los fue entregando a contratistas de defensa a través de los programas del Ejército. La lista de desarrollos que atribuye a ese material incluye los intensificadores de imagen de la visión nocturna, la fibra óptica, las fibras de alta tenacidad, el láser y los circuitos integrados. No aportó documentos que respalden ninguna de esas entregas.\n\nLo que va en contra está documentado. Thurmond, autor del prólogo, declaró el 3 de junio de 1997 que lo había escrito creyendo que el libro era una autobiografía (un asesor suyo explicó que la propuesta recibida solo hablaba de memorias, sin mención de ovnis) y que lamentaba verlo en una obra que prometía revelar un encubrimiento: «I know of no such 'cover-up' and do not believe one existed». El prólogo se retiró del libro. Brad Sparks, en Skeptical Inquirer (marzo-abril de 1998), señaló episodios que las fechas hacen imposibles: Corso relata que en 1961 amenazó en la sede de Langley al jefe de operaciones encubiertas de la CIA, Frank Wisner, cuando Wisner había dejado ese cargo en 1958, estaba destinado en Londres y Langley no recibió a sus primeros empleados hasta septiembre de 1961; escribe que Wisner se ahorcó en un hotel de Londres en 1961, cuando se suicidó en su granja de Maryland en 1965; y se atribuye haber impulsado en 1962 el objetivo lunar que Kennedy anunció el 25 de mayo de 1961. La hoja de servicio muestra además que dirigió la División de Tecnología Extranjera tres meses, en 1962.\n\nLas tecnologías de su lista tienen historias de invención documentadas anteriores o ajenas a su paso por el Pentágono: Jack Kilby y Robert Noyce mostraron el circuito integrado en 1959, Theodore Maiman publicó el primer láser en agosto de 1960, Charles Kao propuso en la década de 1960, desde un laboratorio británico, la fibra de vidrio puro que hizo viable la comunicación óptica, y el propio libro pone en boca del general Trudeau que Fort Belvoir llevaba diez años con un proyecto de visión nocturna. El informe histórico de la AARO (volumen I, fechado en febrero de 2024 y publicado en marzo) no halló pruebas empíricas de que el gobierno o empresas privadas hayan hecho ingeniería inversa de tecnología extraterrestre; no menciona a Corso por su nombre. El libro sigue citándose como base de esa creencia: en julio de 2026 Sean Stone dijo a NewsNation que Roswell fue un choque real, que «we started to basically reverse engineer the craft», y puso a Corso como respaldo.",
+    "works": [
+      {
+        "year": 1997,
+        "title": "The Day After Roswell (Pocket Books, con William J. Birnes)",
+        "title_en": "The Day After Roswell (Pocket Books, with William J. Birnes)",
+        "contribution": "Fuente original de la tesis de que el material de Roswell se repartió a la industria y dio lugar a la visión nocturna, la fibra óptica, el láser y los circuitos integrados; sin documentos que la respalden",
+        "contribution_en": "Original source of the claim that Roswell material was fed to industry and gave rise to night vision, fiber optics, the laser and integrated circuits; no documents support it"
+      }
+    ],
+    "section_label_en": "Insiders / whistleblowers (historical)",
+    "credentials_en": "US Army lieutenant colonel (retired 1963) · intelligence staff officer at the National Security Council's Operations Coordinating Board (1954–1956) · chief of the Army Research and Development Foreign Technology Division (April-July 1962) · author of The Day After Roswell (1997)",
+    "bio_short_en": "An Army lieutenant colonel with a real intelligence career who in 1997 published The Day After Roswell, claiming he fed Roswell debris to defense contractors and that night vision, fiber optics, the laser and integrated circuits came from it. His service record shows he headed the Foreign Technology Division for three months, in 1962; Senator Thurmond distanced himself from his foreword, and critics documented impossible date errors. He produced no documents, and AARO (2024) found no evidence of reverse-engineering programs.",
+    "bio_en": "A US Army lieutenant colonel (1942–1963) who in 1997, at 82, published The Day After Roswell with writer William J. Birnes, the book that set the most widely told version of Roswell reverse engineering. His service record (DA Form 66) confirms a real intelligence career: prisoner-of-war interrogator and Italian interpreter in the Mediterranean theater in World War II, intelligence officer at Far East Command headquarters during the Korean War and, from 1954 to 1956, intelligence staff officer at the Operations Coordinating Board, the body that carried out the policies of Eisenhower's National Security Council. On May 5, 1961 he joined the Army's Office of the Chief of Research and Development; on July 20 he moved to the Foreign Technology Division, headed it from April 18 to July 18, 1962, then returned to the Plans Division and retired on March 1, 1963. He later served as an aide to Senator Strom Thurmond (1963–1964 and 1973–1974). He died in 1998.\n\nIn the book he says that in July 1947, as a major at Fort Riley (Kansas), he saw the body of one of the Roswell beings in a truck convoy, and that in 1961, in charge of Foreign Technology, he inherited a filing cabinet of crash debris and fed it to defense contractors through Army programs. The list of developments he attributes to that material includes image intensifiers for night vision, fiber optics, super-tenacity fibers, the laser and integrated circuits. He produced no documents to support any of those transfers.\n\nThe case against it is on record. Thurmond, who wrote the foreword, stated on June 3, 1997 that he had written it believing the book was an autobiography (an aide explained that the proposal they received described only a memoir, with no mention of UFOs) and that he regretted seeing it in a book that promised to reveal a cover-up: 'I know of no such \"cover-up\" and do not believe one existed.' The foreword was withdrawn from the book. Brad Sparks, in Skeptical Inquirer (March-April 1998), pointed to episodes the dates make impossible: Corso says that in 1961 he threatened the CIA's covert operations chief, Frank Wisner, at Langley headquarters, when Wisner had left that post in 1958, was stationed in London, and Langley did not receive its first employees until September 1961; he writes that Wisner hanged himself in a London hotel in 1961, when Wisner killed himself at his Maryland farm in 1965; and he claims to have spurred in 1962 the Moon goal Kennedy announced on May 25, 1961. The service record also shows he headed the Foreign Technology Division for three months, in 1962.\n\nThe technologies on his list have documented invention histories that predate or are unrelated to his Pentagon tour: Jack Kilby and Robert Noyce demonstrated the integrated circuit in 1959, Theodore Maiman published the first laser in August 1960, Charles Kao proposed in the 1960s, from a British laboratory, the pure-glass fiber that made optical communication workable, and the book itself has General Trudeau say that Fort Belvoir had run a night-vision project for ten years. AARO's historical report (Volume I, dated February 2024 and released in March) found no empirical evidence that the government or private companies have reverse-engineered extraterrestrial technology; it does not name Corso. The book is still cited as the basis for that belief: in July 2026 Sean Stone told NewsNation that Roswell was a real crash, that 'we started to basically reverse engineer the craft', and named Corso as his support.",
+    "sources": [
+      {
+        "name": "Hoja de servicio de Philip J. Corso, DA Form 66 (copia de The Black Vault)",
+        "name_en": "Philip J. Corso's service record, DA Form 66 (The Black Vault copy)",
+        "url": "https://www.theblackvault.com/documents/ufos/corso/corso.pdf",
+        "note": "Fuente primaria: registro de destinos; Junta de Coordinación de Operaciones 1954–1956, Investigación y Desarrollo desde el 5 may 1961, jefe de Tecnología Extranjera del 18 abr al 18 jul 1962, retiro el 1 mar 1963.",
+        "note_en": "Primary source: record of assignments; Operations Coordinating Board 1954–1956, Research and Development from May 5, 1961, chief of Foreign Technology from April 18 to July 18, 1962, retired March 1, 1963."
+      },
+      {
+        "name": "The Black Vault, ficha de Philip J. Corso, con el análisis de la hoja de servicio por Jan Aldrich",
+        "name_en": "The Black Vault, Philip J. Corso case file, with Jan Aldrich's analysis of the service record",
+        "url": "https://www.theblackvault.com/casefiles/philip-j-corso/",
+        "note": "Fuente secundaria: señala que fue jefe de la división solo 90 días.",
+        "note_en": "Secondary source: notes he headed the division for only 90 days."
+      },
+      {
+        "name": "Philip J. Corso y William J. Birnes, «The Day After Roswell» (Pocket Books, 1997)",
+        "name_en": "Philip J. Corso and William J. Birnes, The Day After Roswell (Pocket Books, 1997)",
+        "note": "El libro: Fort Riley en 1947, el archivador de restos y la lista de tecnologías.",
+        "note_en": "The book: Fort Riley in 1947, the filing cabinet of debris and the list of technologies."
+      },
+      {
+        "name": "Publishers Weekly, reseña de «The Day After Roswell», 30 jun 1997",
+        "name_en": "Publishers Weekly, review of The Day After Roswell, June 30, 1997",
+        "url": "https://www.publishersweekly.com/9780671004613",
+        "note": "Resume las afirmaciones del libro: el cuerpo visto el 6 de julio de 1947 y el reparto de los restos a contratistas.",
+        "note_en": "Summarizes the book's claims: the body seen on July 6, 1947 and the handing out of debris to contractors."
+      },
+      {
+        "name": "Government Executive (Louis Jacobson), «The Senator and the UFOs», 4 jun 1997",
+        "url": "https://www.govexec.com/federal-news/1997/06/the-senator-and-the-ufos/3223/",
+        "note": "Prensa de la época: declaración de Thurmond y periodos de Corso como asesor del senador.",
+        "note_en": "Contemporary press: Thurmond's statement and Corso's periods as the senator's aide."
+      },
+      {
+        "name": "Brad Sparks, «Philip Corso's Roswellmania», Skeptical Inquirer, marzo-abril de 1998, pp. 52-54",
+        "name_en": "Brad Sparks, 'Philip Corso's Roswellmania', Skeptical Inquirer, March-April 1998, pp. 52-54",
+        "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/1998/03/22164921/p52.pdf",
+        "note": "Reseña crítica: Wisner, Langley, la fecha del anuncio del programa lunar y el prólogo retirado.",
+        "note_en": "Critical review: Wisner, Langley, the date of the Moon announcement and the withdrawn foreword."
+      },
+      {
+        "name": "Fundación Nobel, Jack S. Kilby, Premio Nobel de Física 2000",
+        "name_en": "Nobel Foundation, Jack S. Kilby, Nobel Prize in Physics 2000",
+        "url": "https://www.nobelprize.org/prizes/physics/2000/kilby/facts/",
+        "note": "Kilby y Noyce mostraron el circuito integrado en 1959.",
+        "note_en": "Kilby and Noyce demonstrated the integrated circuit in 1959."
+      },
+      {
+        "name": "T. H. Maiman, «Stimulated Optical Radiation in Ruby», Nature 187, agosto de 1960",
+        "name_en": "T. H. Maiman, 'Stimulated Optical Radiation in Ruby', Nature 187, August 1960",
+        "url": "https://www.nature.com/articles/187493a0",
+        "note": "Publicación del primer láser.",
+        "note_en": "Publication of the first laser."
+      },
+      {
+        "name": "Fundación Nobel, Charles K. Kao, Premio Nobel de Física 2009",
+        "name_en": "Nobel Foundation, Charles K. Kao, Nobel Prize in Physics 2009",
+        "url": "https://www.nobelprize.org/prizes/physics/2009/kao/facts/",
+        "note": "La fibra de vidrio puro para comunicación óptica, propuesta en la década de 1960.",
+        "note_en": "Pure-glass fiber for optical communication, proposed in the 1960s."
+      },
+      {
+        "name": "AARO, Report on the Historical Record of U.S. Government Involvement with UAP, volumen I (febrero de 2024; copia de The Black Vault)",
+        "name_en": "AARO, Report on the Historical Record of U.S. Government Involvement with UAP, Volume I (February 2024; The Black Vault copy)",
+        "url": "https://documents2.theblackvault.com/documents/dod/AARO_Historical_Record_Report_Volume_1_2024.pdf",
+        "note": "Fuente primaria: sin pruebas empíricas de ingeniería inversa de tecnología extraterrestre por el gobierno o empresas privadas.",
+        "note_en": "Primary source: no empirical evidence of reverse engineering of extraterrestrial technology by the government or private companies."
+      },
+      {
+        "name": "NewsNation (Paula Froelich), entrevista con Sean Stone, 23 jul 2026",
+        "name_en": "NewsNation (Paula Froelich), interview with Sean Stone, July 23, 2026",
+        "url": "https://www.newsnationnow.com/entertainment-news/oliver-sean-stone-ufo-uap-tech/",
+        "note": "Stone cita a Corso como base de su creencia en la ingeniería inversa de Roswell.",
+        "note_en": "Stone cites Corso as the basis for his belief in Roswell reverse engineering."
+      }
+    ]
+  },
+  {
     "id": "mcdonald",
     "name": "James E. McDonald",
     "flag": "🇺🇸",
@@ -4811,7 +4913,7 @@
     "section": "B",
     "section_label": "Informantes / denunciantes",
     "credentials": "ex-Director de la UAP Task Force (UAPTF) + oficial de inteligencia de carrera (Marina/DIA)",
-    "bio_short": "Oficial de inteligencia de carrera que dirigió la UAP Task Force, el grupo oficial del Pentágono (2020–2022) que produjo la base del informe preliminar de la ODNI de 2021. Es citado por David Grusch como una fuente interna creíble del manejo del tema, y según varios relatos estuvo involucrado en líneas de investigación sobre materiales y recuperaciones. Tras dejar el gobierno pasó al sector privado. Aporta el eslabón institucional formal entre los casos navales y el ciclo de denuncias. En octubre de 2026 publicó sus memorias, «Out of the Shadows», revisadas por 21 agencias antes de su publicación; en ellas relata que una fuente le aseguró que en Roswell (1947) se recuperaron restos y cuerpos no humanos, y en la entrevista con Bret Baier en Fox News que acompañó al libro dio un paso que Grusch nunca dio: afirmó ser testigo directo («I have seen non-human beings and non-human craft with my own eyes»). Sostuvo además que tanto los contratistas de defensa como el gobierno tienen naves de origen no humano, y describió un submarino nuclear estacionado para captar datos de un UAP y un objeto triangular sobre un silo de misiles nucleares. No dio fecha ni lugar de lo que vio ni aportó documentos o imágenes que lo respalden, y nadie del gobierno lo confirmó ni lo desmintió.",
+    "bio_short": "Oficial de inteligencia de carrera que dirigió la UAP Task Force, el grupo oficial del Pentágono (2020–2022) que produjo la base del informe preliminar de la ODNI de 2021. Es citado por David Grusch como una fuente interna creíble del manejo del tema, y según varios relatos estuvo involucrado en líneas de investigación sobre materiales y recuperaciones. Tras dejar el gobierno pasó al sector privado. Aporta el eslabón institucional formal entre los casos navales y el ciclo de denuncias. En octubre de 2026 publicó sus memorias, «Out of the Shadows» (William Morrow, 13 de octubre), revisadas por 21 agencias antes de su publicación. Según la descripción del editor, su investigación empezó cuando le mostraron el video de un vehículo aeroespacial avanzado sobre un sitio sensible de armas nucleares, y lo que supo en la Agencia de Inteligencia de Defensa (DIA) sobre incursiones de UAP en sitios de armas nucleares lo llevó a cofundar el AAWSAP; el libro no reproduce ese video y no consta que se haya publicado ni analizado de forma independiente. En las memorias relata que una fuente le aseguró que en Roswell (1947) se recuperaron restos y cuerpos no humanos, y en la entrevista con Bret Baier en Fox News que acompañó al libro dio un paso que Grusch nunca dio: afirmó ser testigo directo («I have seen non-human beings and non-human craft with my own eyes»). Sostuvo además que tanto los contratistas de defensa como el gobierno tienen naves de origen no humano, y describió un submarino nuclear estacionado para captar datos de un UAP y un objeto triangular sobre un silo de misiles nucleares. No dio fecha ni lugar de lo que vio ni aportó documentos o imágenes que lo respalden, y nadie del gobierno lo confirmó ni lo desmintió.",
     "works": [
       {
         "year": 2021,
@@ -4822,13 +4924,13 @@
       {
         "year": 2026,
         "title": "Out of the Shadows: Revealing the Truth About Non-Human Intelligent Life (HarperCollins/William Morrow)",
-        "contribution": "Memorias: el relato de segunda mano sobre Roswell y su afirmación de haber visto seres y naves no humanos",
-        "contribution_en": "Memoir: the second-hand Roswell account and his claim to have seen non-human beings and craft"
+        "contribution": "Memorias: el video sobre un sitio de armas nucleares y las incursiones conocidas en la DIA que, según el editor, lo llevaron al AAWSAP; el relato de segunda mano sobre Roswell y su afirmación de haber visto seres y naves no humanos",
+        "contribution_en": "Memoir: the video over a nuclear weapon site and the incursions learned of at DIA that, per the publisher, led him to AAWSAP; the second-hand Roswell account and his claim to have seen non-human beings and craft"
       }
     ],
     "section_label_en": "Insiders / whistleblowers",
     "credentials_en": "Former Director of the UAP Task Force (UAPTF) + career intelligence officer (Navy/DIA)",
-    "bio_short_en": "A career intelligence officer who led the UAP Task Force, the Pentagon's official group (2020–2022) that produced the basis for the 2021 ODNI preliminary assessment. He is cited by David Grusch as a credible insider on the handling of the topic, and per several accounts was involved in lines of inquiry into materials and retrievals. After leaving government he moved to the private sector. He provides the formal institutional link between the Navy cases and the whistleblower cycle. In October 2026 he published his memoir, Out of the Shadows, reviewed by 21 agencies before release; in it he relates that a source assured him wreckage and non-human bodies were recovered at Roswell (1947), and in the Fox News interview with Bret Baier that accompanied the book he took a step Grusch never took: he claimed to be a direct witness ('I have seen non-human beings and non-human craft with my own eyes'). He also said that both defense contractors and the government hold craft of non-human origin, and described a nuclear submarine parked to collect data on a UAP and a triangular object over a nuclear missile silo. He gave no date or place for what he saw, produced no documents or images to support it, and no one in government confirmed or denied it.",
+    "bio_short_en": "A career intelligence officer who led the UAP Task Force, the Pentagon's official group (2020–2022) that produced the basis for the 2021 ODNI preliminary assessment. He is cited by David Grusch as a credible insider on the handling of the topic, and per several accounts was involved in lines of inquiry into materials and retrievals. After leaving government he moved to the private sector. He provides the formal institutional link between the Navy cases and the whistleblower cycle. In October 2026 he published his memoir, Out of the Shadows (William Morrow, October 13), reviewed by 21 agencies before release. According to the publisher's description, his inquiry began when he was shown video of an advanced aerospace vehicle over a sensitive nuclear weapon site, and what he learned at the Defense Intelligence Agency (DIA) about UAP incursions over nuclear weapon sites led him to co-found AAWSAP; the book does not reproduce that video, and there is no record of it being released or independently analyzed. In the memoir he relates that a source assured him wreckage and non-human bodies were recovered at Roswell (1947), and in the Fox News interview with Bret Baier that accompanied the book he took a step Grusch never took: he claimed to be a direct witness ('I have seen non-human beings and non-human craft with my own eyes'). He also said that both defense contractors and the government hold craft of non-human origin, and described a nuclear submarine parked to collect data on a UAP and a triangular object over a nuclear missile silo. He gave no date or place for what he saw, produced no documents or images to support it, and no one in government confirmed or denied it.",
     "sources": [
       {
         "name": "ODNI — 'Preliminary Assessment: Unidentified Aerial Phenomena' (2021)",
@@ -4852,6 +4954,20 @@
         "url": "https://www.sentinel-news.org/p/jay-stratton-both-the-defense-contractor",
         "note": "Citas textuales: naves en manos de contratistas y del gobierno, el submarino y el silo.",
         "note_en": "Verbatim quotes: craft held by contractors and government, the submarine and the silo."
+      },
+      {
+        "name": "Blackstone Library, ficha del audiolibro «Out of the Shadows» (descripción del editor)",
+        "name_en": "Blackstone Library, Out of the Shadows audiobook listing (publisher's description)",
+        "url": "https://www.blackstonelibrary.com/out-of-the-shadows-664935",
+        "note": "Descripción del editor: el video de un vehículo aeroespacial avanzado sobre un sitio sensible de armas nucleares y la cofundación del AAWSAP.",
+        "note_en": "Publisher's description: the video of an advanced aerospace vehicle over a sensitive nuclear weapon site and the co-founding of AAWSAP."
+      },
+      {
+        "name": "The Hollywood Reporter, 3 jun 2026: anuncio de la fecha de «Out of the Shadows» (William Morrow, 13 oct)",
+        "name_en": "The Hollywood Reporter, June 3, 2026: release date of Out of the Shadows (William Morrow, Oct 13)",
+        "url": "https://www.hollywoodreporter.com/lifestyle/arts/jay-stratton-memoir-out-of-the-shadows-release-1236612113/",
+        "note": "Sinopsis del editor: en la DIA supo de incursiones de UAP sobre sitios de armas nucleares, lo que lo llevó a cofundar el AAWSAP.",
+        "note_en": "Publisher's synopsis: at DIA he learned of UAP incursions over nuclear weapon sites, leading him to co-found AAWSAP."
       }
     ]
   },
