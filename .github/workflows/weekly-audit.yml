@@ -41,10 +41,10 @@ jobs:
         working-directory: ./web
     steps:
       - name: Checkout
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
       - name: Setup Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: '22'
 
@@ -88,7 +88,7 @@ jobs:
 
       - name: Open issue on broken DVIDS embeds
         if: steps.dvids.outputs.exit_code != '0'
-        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const fs = require('fs');
@@ -148,7 +148,7 @@ jobs:
       # vigente—. (sep 2026)
       - name: Close DVIDS issue when green
         if: steps.dvids.outputs.exit_code == '0'
-        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const MARKER = '<!-- dvids-embed-gate -->';
@@ -185,7 +185,7 @@ jobs:
       # no.
       - name: Report new link rot (single persistent issue)
         if: steps.links.outputs.exit_code != '0'
-        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const fs = require('fs');
@@ -246,7 +246,7 @@ jobs:
       # problema que los 82: nadie sabe si sigue vigente.
       - name: Close link rot issue when green
         if: steps.links.outputs.exit_code == '0'
-        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const MARKER = '<!-- link-rot-gate -->';
@@ -278,7 +278,7 @@ jobs:
       # Se usa el script de GitHub Actions oficial para no agregar deps.
       - name: Open issue on drift
         if: steps.audit.outputs.exit_code != '0'
-        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const fs = require('fs');
@@ -338,7 +338,7 @@ jobs:
       # "Close link rot issue when green".
       - name: Close drift issue when green
         if: steps.audit.outputs.exit_code == '0'
-        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const MARKER = '<!-- audit-drift -->';
