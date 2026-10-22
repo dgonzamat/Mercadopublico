@@ -75,12 +75,12 @@
       {
         "id": "B1",
         "title": "16 oct · Bucket `pursue` casi lleno (E38): recomprimir sus PDF en gris como se hizo en /pursue; la prueba con la sección 10, parte 2, del expediente FBI 62-HQ-83894 lo deja en la mitad con páginas y capa de texto intactas. El bucket ya se descarga desde aquí, pero subir los ficheros exige la clave de servicio de Supabase",
-        "state": "script listo el 16 oct (tools/bucket-regray/regray_bucket.py): la simulación sobre los 24 objetos baja el bucket de unas nueve décimas del gigabyte a cerca de un cuarto, todos con las mismas páginas y la misma capa de texto; falta que el dueño lo corra con su clave de servicio y regenerar el manifiesto"
+        "state": "hecho el 22 oct: los objetos del bucket se recomprimieron con el script y se subieron por una función Edge temporal de Supabase (desplegada por MCP y desactivada al terminar), cada uno comprobado byte a byte contra su versión local, con las mismas páginas y la misma capa de texto; el bucket pasó de unas nueve décimas del gigabyte a cerca de un cuarto y el manifiesto está regenerado"
       },
       {
         "id": "B2",
         "title": "16 oct · La sección 10, parte 2, del expediente FBI 62-HQ-83894 en el bucket está escaneada en espejo (texto y sellos invertidos); voltearla al recomprimir y comprobar las demás partes del expediente",
-        "state": "el script lo voltea (lista FLIP); las demás partes del expediente no se revisaron a ojo"
+        "state": "hecho el 22 oct: la parte en espejo subió volteada por el script (lista FLIP); las demás partes del expediente no se revisaron a ojo"
       },
       {
         "id": "B3",
