@@ -142,6 +142,17 @@
       "description": "Texto en inglés del comunicado con el que las Fuerzas de Defensa de Israel cerraron de forma provisional el caso: tras una investigación a fondo, el objeto que activó las alertas en Arab el-Aramsha era con toda probabilidad un objeto similar a un globo o un dispositivo que flota con aire caliente; no era un dron ni un vehículo aéreo no tripulado; su origen y su propósito no se pueden determinar con certeza; lo detectaron los sistemas de vigilancia de la Fuerza Aérea, que lo siguieron y guiaron a las tropas, y no se había encontrado. Las imágenes de la cámara de seguridad y la foto de Galei Tzahal no se alojan aquí porque tienen derechos de autor.",
       "description_en": "English text of the statement with which the Israel Defense Forces provisionally closed the case: after an in-depth inquiry, the object that set off the alerts in Arab el-Aramsha was most likely a balloon-like object or a device that floats using hot air; it was not a drone or UAV; its origin and purpose cannot be determined with certainty; Air Force surveillance systems detected it, tracked it and directed troops, and it had not been found. The security camera footage and the Galei Tzahal photo are not hosted here because they are copyrighted.",
       "source": "Fuerzas de Defensa de Israel, vía JNS"
+    },
+    {
+      "src": "/pursue/galilea-frontera-libano-2026-aldea.jpg",
+      "type": "image",
+      "title": "Contexto · Entrada de Arab el-Aramsha, junto a la frontera con el Líbano",
+      "title_en": "Context · Entrance to Arab el-Aramsha, beside the Lebanese border",
+      "description": "La entrada y las casas de la aldea beduina de Arab el-Aramsha, en la cresta de Adamit, pegada a la frontera. Es una imagen del lugar, tomada en octubre de 2018, no del objeto: las imágenes del suceso (el video de la cámara de seguridad y la foto del corresponsal) tienen derechos de autor y no se alojan aquí.",
+      "description_en": "The entrance and houses of the Bedouin village of Arab el-Aramsha, on the Adamit ridge, right against the border. It is an image of the place, taken in October 2018, not of the object: the images of the event (the security camera video and the correspondent's photo) are copyrighted and are not hosted here.",
+      "source": "104738 the bedouin village of arab al armasha on the leba PikiWiki Israel.jpg (Shlomo Roded, PikiWiki Israel) · Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:104738_the_bedouin_village_of_arab_al_armasha_on_the_leba_PikiWiki_Israel.jpg"
     }
   ],
   "mundanoType": "misid",
