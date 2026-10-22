@@ -1,4 +1,3 @@
-import { LocaleLink } from "@/components/LocaleLink";
 
 import { cases } from "@/lib/data";
 import {

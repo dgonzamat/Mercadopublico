@@ -26,7 +26,7 @@ const Y_TOP = 12; // heterogeneidad = 1.0
 const Y_BOT = 120; // heterogeneidad = 0.0
 const yFor = (h: number) => Y_BOT - h * (Y_BOT - Y_TOP);
 
-export function HeterogeneityByDecade({ locale }: { locale: "es" | "en" }) {
+export function HeterogeneityByDecade() {
   const rows = meceByDecade();
   const step = rows.length > 1 ? (X1 - X0) / (rows.length - 1) : 0;
   const pts = rows.map((r, i) => ({ ...r, x: X0 + i * step, y: yFor(r.heterogeneity) }));
