@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   MapContainer,
   TileLayer,
@@ -64,6 +65,7 @@ export default function WorldMap({
     B: true,
   });
   const [country, setCountry] = useState<string>("all");
+  const router = useRouter();
   // <option> solo admite texto: el dual-span de <T> no sirve ahí.
   const locale = useLocale();
   const counts: Record<Tier, number> = {
@@ -208,7 +210,7 @@ export default function WorldMap({
               }}
               eventHandlers={{
                 click: () => {
-                  window.location.href = `${basePath}/cases/${c.id}/`;
+                  router.push(`/cases/${c.id}/`);
                 },
               }}
             >

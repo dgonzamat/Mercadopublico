@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import { cases, getEntityMorphology } from "@/lib/data";
@@ -13,7 +12,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { DocumentsViewer } from "@/components/DocumentsViewer";
-import { Eyebrow, H1, Body, Caption, PullQuote } from "@/lib/typography";
+import { Eyebrow, H1, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { linkCaseRefs } from "@/lib/caseRefs";

@@ -69,21 +69,6 @@ export default function CalidadPage() {
     return { tier: t, withV: w, without: inTier.length - w, total: inTier.length };
   });
 
-  // distribución por tier
-  const tierDist = TIERS.map((t) => ({ tier: t, n: cases.filter((c) => c.tier === t).length }));
-
-  // categoría
-  const catMeta: Record<string, { es: string; en: string }> = {
-    incident: { es: "Incidente", en: "Incident" },
-    document: { es: "Documento", en: "Document" },
-    contactee: { es: "Contactado", en: "Contactee" },
-    crop_circle: { es: "Crop circle", en: "Crop circle" },
-  };
-  const catDist = Object.keys(catMeta)
-    .map((k) => ({ k, n: cases.filter((c) => c.category === k).length }))
-    .filter((x) => x.n > 0)
-    .sort((a, b) => b.n - a.n);
-
   // MECE agregado (Eⱼ = Σ P(narrativaⱼ | casoᵢ)) sobre los INCIDENTES: los
   // casos-documento no entran (son evidencia, no sucesos). Conserva
   // «Indeterminable»: es la vista comparable (valor esperado), hermana del conteo

@@ -2,12 +2,11 @@ import { LocaleLink } from "@/components/LocaleLink";
 
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { T } from "@/components/T";
-import { Eyebrow, H1, H2, Lede, Body, Caption } from "@/lib/typography";
+import { Eyebrow, H1, H2, Lede, Body } from "@/lib/typography";
 import { MecePartition } from "@/components/MeceChart";
 import { HeterogeneityByDecade } from "@/components/HeterogeneityByDecade";
-import { corpusPosteriors, expandedHypotheses, modalHypothesis, PROSAIC_CLASSES } from "@/lib/meceModel";
+import { corpusPosteriors, expandedHypotheses, modalHypothesis } from "@/lib/meceModel";
 import { DETAIL_UNSPECIFIED, OBJECT_DETAILS, type ProsaicKey } from "@/lib/meceClasses";
-import { cases } from "@/lib/data";
 
 export const metadata = {
   ...pageMeta({
@@ -105,7 +104,6 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
   // una narrativa MECE del mismo eje. Mismo conjunto que la home, /cases y /calidad.
   const scored = corpusPosteriors();
   const incidents = scored.length;
-  const docCount = cases.filter((c) => c.category === "document").length;
 
   // Conjunto expandido de narrativas (mundano abierto en 3 sub-tipos, no-humano
   // consolidado, «Indeterminado» conservado), clasificación forzada. Por masa.
@@ -137,7 +135,6 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
       d[k] = (d[k] ?? 0) + 1;
     }
   }
-  const PROSAIC_KEYS = new Set<string>(PROSAIC_CLASSES.map((c) => c.key));
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-16">
@@ -177,7 +174,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
           <T es="Lo que queda sin explicación ordinaria, década a década" en="What lacks an ordinary explanation, decade by decade" locale={locale} />
         </H2>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
-          <HeterogeneityByDecade locale={locale} />
+          <HeterogeneityByDecade />
         </div>
       </section>
 
