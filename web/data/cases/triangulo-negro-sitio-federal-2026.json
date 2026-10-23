@@ -23,18 +23,16 @@
   "misidSubtype": "aeronave",
   "objectDetail": "dron",
   "posterior": {
-    "mundano_natural": 0.1,
+    "mundano_natural": 0.2,
     "humana_clasificada": 0.25,
-    "adversaria": 0.25,
+    "adversaria": 0.15,
     "nohumano_encubierto": 0.03,
     "nohumano_abierto": 0.05,
     "indet": 0.32
   },
   "summary": "Al anochecer de un día de 2026, en un sitio federal sensible del oeste de EE. UU., un agente detectó con un equipo térmico un objeto sobre una cresta y otros dos lo vieron con prismáticos y un monocular térmico: un triángulo negro y mate de nueve a quince pies de envergadura que subió en vertical, pasó a vuelo horizontal muy rápido y se perdió tras el terreno sin hacer ruido. La declaración firmada que recibió el FBI lo compara con un dron de ala delta y da tres segundos en total; el memorando de la AARO añade un estacionario de veinte segundos, advierte que no hubo medida de velocidad y recoge que los testigos, habituados a los drones, creen que uno pequeño se habría oído.",
   "summary_en": "At dusk on a day in 2026, at a sensitive federal site in the western U.S., one agent detected an object over a ridgeline on thermal equipment and two others watched it through binoculars and a thermal monocular: a matte black triangle with a nine-to-fifteen-foot wingspan that climbed vertically, went into very fast horizontal flight and vanished behind the terrain without a sound. The signed statement the FBI received likens it to a delta wing drone and gives three seconds in total; the AARO memorandum adds a twenty-second hover, states that no speed was measured and records that the witnesses, who are used to drones, believe a small one would have been heard.",
-  "patterns": [
-    "8l"
-  ],
+  "patterns": [],
   "category": "incident",
   "documents": [
     {
