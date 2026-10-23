@@ -129,14 +129,15 @@
       "fallbackUrl": "https://www.dvidshub.net/video/955825"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
-      "type": "link",
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D175 · informe de BAASS sobre sus capacidades de análisis UAP, 23 de noviembre de 2010 (PURSUE Release 07)",
       "title_en": "DOW-UAP-D175 · BAASS report on its UAP analysis capabilities, 23 November 2010 (PURSUE Release 07)",
       "description": "Versión oficial tachada del informe del contratista del programa AAWSAP de la DIA, publicado por el Departamento de Guerra el 23 de octubre de 2026 (17 MB, sin copia en este sitio). Su sección 4.1 reproduce un extracto del informe de la DIA sobre el grupo del Nimitz (relatos del Princeton, de las dos secciones del VFA-41, del piloto del F/A-18C y del USS Louisville, imágenes del FLIR y valoraciones finales) y le aplica un modelo paramétrico: de 0,5 a 10 segundos para un descenso de 60.000 pies, con 75 g a 5 segundos. El propio informe advierte que había «little hard data» y que el análisis se apoya en supuestos y testimonios.",
       "description_en": "Official redacted version of the report by the contractor of DIA's AAWSAP program, released by the Department of War on 23 October 2026 (17 MB, no copy on this site). Its section 4.1 reproduces an excerpt of the DIA report on the Nimitz group (accounts from the Princeton, both VFA-41 sections, the F/A-18C pilot and USS Louisville, FLIR images and key assessments) and applies a parametric model to it: 0.5 to 10 seconds for a 60,000-foot descent, with 75 g at 5 seconds. The report itself warns there was \"little hard data\" and that the analysis rests on assumptions and testimony.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf"
     },
     {
       "src": "/pursue/nimitz-2004-context.jpg",

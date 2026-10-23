@@ -113,14 +113,15 @@
   "evidenceReviewed": "2026-10-23",
   "documents": [
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
-      "type": "link",
+      "src": "/pursue/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D170 · informe mensual de BAASS de abril de 2009, con el análisis inicial del «Project Northern Tier» (PURSUE Release 07)",
       "title_en": "DOW-UAP-D170 · BAASS monthly report for April 2009, with the initial analysis of 'Project Northern Tier' (PURSUE Release 07)",
       "description": "Informe mensual del contratista del programa AAWSAP de la DIA, publicado por el Departamento de Guerra el 23 de octubre de 2026 con los nombres tachados (8 MB, sin copia en este sitio). Su sección «Project Northern Tier» repasa los sobrevuelos de septiembre-noviembre de 1975 en Malmstrom, Wurtsmith y Loring, con mapas, y menciona la base canadiense de Falconbridge. Fija además un plan para localizar testigos. De Loring anota que un helicóptero de la Guardia Nacional Aérea, con funcionarios canadienses a bordo, no logró ver el objeto. Es un análisis de 2009, no un documento de la época.",
       "description_en": "Monthly report by the contractor of DIA's AAWSAP program, released by the Department of War on 23 October 2026 with names redacted (8 MB, no copy on this site). Its 'Project Northern Tier' section reviews the September-November 1975 overflights at Malmstrom, Wurtsmith and Loring, with maps, and mentions the Canadian base at Falconbridge. It also sets out a plan to locate witnesses. Of Loring it notes that an Air National Guard helicopter, with Canadian officials aboard, could not see the object. It is a 2009 analysis, not a document of the period.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf"
     }
   ],
   "pursueReleases": [

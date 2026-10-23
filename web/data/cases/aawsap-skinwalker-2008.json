@@ -296,34 +296,37 @@
       "description_en": "Front-page article in The New York Times on December 16, 2017, 'Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program', by Helene Cooper, Ralph Blumenthal and Leslie Kean. It revealed the Advanced Aerospace Threat Identification Program (AATIP), funded with about $22 million between 2007 and 2012, driven by Senator Harry Reid and with contracts to Bigelow Aerospace (BAASS). It presented Luis Elizondo as its former director, and on the same day To The Stars Academy released the Navy FLIR1 and Gimbal videos. The Pentagon confirmed the program existed. It proves nothing about the origin of the objects, and Elizondo's role at the head of AATIP was later questioned by The Intercept and by contradictory Pentagon statements."
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf",
-      "type": "link",
+      "src": "/pursue/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D166 · informes de MUFON preparados para BAASS, noviembre de 2008: cinco propuestas de investigación sobre sustentación, potencia, control, interfaz humana y propulsión (PURSUE Release 07, 9,5 MB)",
       "title_en": "DOW-UAP-D166 · MUFON reports prepared for BAASS, November 2008: five research proposals on lift, power, control, human interface and propulsion (PURSUE Release 07, 9.5 MB)",
       "description": "Cinco documentos breves, rotulados «BAASS CONFIDENTIAL Nov-08», firmados por distintas «MUFON Advanced Technology Establishment» (Newport Beach, Fort Collins, Delafield y Austin): sustentación (proponen estudiar el uso del campo magnético terrestre con superconductores), generación de potencia (proponen comprar un reactor ya diseñado para investigar la fusión fría), control, interfaz humana y propulsión, cada uno con un plan de acción y el perfil del equipo que haría falta. El plan de gestión de BAASS (D168) los cita como uno de los tres juegos de documentos recibidos por contrato antes de diciembre de 2008. Prueba que BAASS encargó a MUFON, desde el primer trimestre, propuestas sobre las áreas técnicas del pliego; son propuestas, no análisis de casos. Los redactó MUFON, una organización privada, así que su condición de dominio público no está garantizada.",
       "description_en": "Five short documents, marked 'BAASS CONFIDENTIAL Nov-08', signed by different 'MUFON Advanced Technology Establishment' units (Newport Beach, Fort Collins, Delafield and Austin): lift (they propose studying the use of Earth's magnetic field with superconductors), power generation (they propose buying an already-designed reactor to research cold fusion), control, human interface and propulsion, each with a plan of action and the profile of the team it would need. BAASS's project management plan (D168) cites them as one of three sets of documents received under contract before December 2008. It proves BAASS commissioned MUFON, from the first quarter, to write proposals on the solicitation's technical areas; they are proposals, not case analyses. They were written by MUFON, a private organization, so their public-domain status is not guaranteed.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · obra de MUFON, organización privada: dominio público no garantizado"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · obra de MUFON, organización privada: dominio público no garantizado",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D167-Project_Capella-December-2008.pdf",
-      "type": "link",
+      "src": "/pursue/DOW-UAP-D167-Project_Capella-December-2008.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D167 · «Project Capella», 10 de diciembre de 2008: el informe n.º 1 de Documatica Research a BAASS sobre un almacén de datos de fenómenos aéreos inusuales (PURSUE Release 07, 6,7 MB)",
       "title_en": "DOW-UAP-D167 · 'Project Capella', 10 December 2008: Documatica Research's report no. 1 to BAASS on a data warehouse of unusual aerial phenomena (PURSUE Release 07, 6.7 MB)",
       "description": "Informe n.º 1 de Documatica Research, LLC (San Francisco) a BAASS, fechado el 10 de diciembre de 2008, con el autor tachado como «AAP Person 5»: «Towards the development of a data warehouse in support of research on unusual aerial phenomena and related anomalies». Propone una metodología de clasificación y medidas de fiabilidad para los reportes, un modelo de categorías de información que incluye los datos de «high-strangeness» y la plataforma de software, y repasa los catálogos anteriores (el estudio de Battelle sobre Blue Book, UFOCAT). Prueba que el almacén de datos CAPELLA existía como encargo de BAASS desde el primer trimestre del contrato; el documento no basta para atribuir la autoría a una persona concreta. Lo redactó un contratista privado, así que su condición de dominio público no está garantizada.",
       "description_en": "Report no. 1 from Documatica Research, LLC (San Francisco) to BAASS, dated 10 December 2008, with the author redacted as 'AAP Person 5': 'Towards the development of a data warehouse in support of research on unusual aerial phenomena and related anomalies'. It proposes a classification methodology and reliability measures for reports, a model of information categories that includes 'high-strangeness' data, and the software platform, and reviews earlier catalogues (Battelle's Blue Book study, UFOCAT). It proves the CAPELLA data warehouse existed as a BAASS commission from the contract's first quarter; the document is not enough to attribute authorship to a specific person. It was written by a private contractor, so its public-domain status is not guaranteed.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · obra de Documatica Research, contratista privado: dominio público no garantizado"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · obra de Documatica Research, contratista privado: dominio público no garantizado",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D167-Project_Capella-December-2008.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf",
-      "type": "link",
+      "src": "/pursue/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D168 · plan de gestión del proyecto de BAASS, 2 de diciembre de 2008: las doce áreas del pliego repartidas en nueve proyectos (PURSUE Release 07, 6,7 MB)",
       "title_en": "DOW-UAP-D168 · BAASS project management plan, 2 December 2008: the solicitation's twelve areas divided into nine projects (PURSUE Release 07, 6.7 MB)",
       "description": "Entregable del contrato HHM402-08-C-0072, fechado el 2 de diciembre de 2008 y rotulado como propiedad de BAASS. Reparte las doce áreas técnicas del pliego en nueve proyectos: Physics (unos 24 informes de Earthtech, origen de los DIRD), Engagement (localizar zonas pequeñas donde naves «seem to frequent»), Cooperation (con la DIA), Campus (atraer a la universidad), Database, Oral History, Blue Book Materials, Northern Tier (sobrevuelos de bases con armas nucleares en los años sesenta y setenta) y Colares (Brasil, 1977). Su primera recomendación pide autorizaciones de seguridad para el personal de BAASS, porque la información pertinente «already resides in government hands»; la segunda, acceso a película de cámaras de tiro, de tierra o de satélite. Prueba cómo planteaba el contratista el programa; sus afirmaciones de partida (habla de «confirmation that a significant menu of very novel spacecraft have existed for over 60 years») son de BAASS, no de la DIA.",
       "description_en": "Deliverable under contract HHM402-08-C-0072, dated 2 December 2008 and marked as BAASS proprietary. It divides the solicitation's twelve technical areas into nine projects: Physics (about 24 Earthtech papers, the origin of the DIRDs), Engagement (locating small areas where craft 'seem to frequent'), Cooperation (with DIA), Campus (bringing in academia), Database, Oral History, Blue Book Materials, Northern Tier (overflights of nuclear-weapons bases in the 1960s and 1970s) and Colares (Brazil, 1977). Its first recommendation asks for security clearances for BAASS staff, because the relevant information 'already resides in government hands'; the second, for access to gun-camera, ground-based or satellite film. It proves how the contractor framed the program; its starting claims (it speaks of 'confirmation that a significant menu of very novel spacecraft have existed for over 60 years') are BAASS's, not DIA's.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf"
     },
     {
       "src": "/pursue/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf",
@@ -337,54 +340,59 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
-      "type": "link",
+      "src": "/pursue/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D170 · informe mensual de BAASS, abril de 2009: casos de MUFON y el primer análisis de Project Northern Tier (PURSUE Release 07, 7,9 MB)",
       "title_en": "DOW-UAP-D170 · BAASS monthly report, April 2009: MUFON cases and the first analysis of Project Northern Tier (PURSUE Release 07, 7.9 MB)",
       "description": "Informe de progreso de BAASS para abril de 2009 (el nombre oficial del fichero escribe «Montly»). Resume casos investigados por MUFON para BAASS y abre el análisis inicial y el plan de investigación de Project Northern Tier, sobre sobrevuelos de bases con armas nucleares. Su conclusión dice que en abril se formaron y desplegaron los primeros equipos de campo, que BAASS empezó a reunir información sobre Brasil y que la relación con MUFON madura, aunque el número de casos era «considerably lower than expected». Prueba el ritmo real del primer año.",
       "description_en": "BAASS progress report for April 2009 (the official file name spells it 'Montly'). It summarizes cases investigated by MUFON for BAASS and opens the initial analysis and investigative plan of Project Northern Tier, on overflights of nuclear-weapons bases. Its conclusion says the first field teams were trained and deployed in April, that BAASS began gathering information on Brazil, and that the MUFON relationship was maturing, although case numbers were 'considerably lower than expected'. It proves the real pace of the first year.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf",
-      "type": "link",
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D171 · informe mensual de BAASS, junio de 2009: la bóveda subterránea proyectada, los casos de MUFON, Brasil y Northern Tier (PURSUE Release 07, 19,3 MB)",
       "title_en": "DOW-UAP-D171 · BAASS monthly report, June 2009: the planned underground vault, MUFON cases, Brazil and Northern Tier (PURSUE Release 07, 19.3 MB)",
       "description": "Informe de progreso de BAASS para junio de 2009, fechado el 9 de julio, de unas 130 páginas. Describe los planos que el administrador de BAASS trazó en junio para una bóveda subterránea de unos 465 metros cuadrados en la sede de Bigelow Aerospace en North Las Vegas, pensada para guardar el «exotic material or tissue» que BAASS esperaba obtener de empresas o particulares, «including in Brazil»; un resumen de casos investigados por MUFON en junio; y secciones sobre el despliegue de BAASS en Brasil y sobre Northern Tier. Prueba la ambición del contratista; el informe no documenta que ese material se obtuviera.",
       "description_en": "BAASS progress report for June 2009, dated 9 July, about 130 pages long. It describes the plans the BAASS administrator drew up in June for an underground vault of about 5,000 square feet at Bigelow Aerospace's North Las Vegas site, meant to store the 'exotic material or tissue' BAASS expected to obtain from companies or private individuals, 'including in Brazil'; a summary of cases investigated by MUFON in June; and sections on the BAASS deployment to Brazil and on Northern Tier. It proves the contractor's ambition; the report does not document that such material was obtained.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf",
-      "type": "link",
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D173 · informe mensual de BAASS, noviembre de 2009 (PURSUE Release 07, 80,4 MB)",
       "title_en": "DOW-UAP-D173 · BAASS monthly report, November 2009 (PURSUE Release 07, 80.4 MB)",
       "description": "Informe de progreso de BAASS para noviembre de 2009, ya dentro del año de opción del contrato. No revisado para esta ficha, que no cita nada de él.",
       "description_en": "BAASS progress report for November 2009, already within the contract's option year. Not reviewed for this case, which cites nothing from it.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf",
-      "type": "link",
+      "src": "/pursue/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D174 · «Utah Ranch Investigation», despliegues de marzo y abril de 2010: testigos, cámaras, biosensores, barrido de radiofrecuencia y ADN de un pelo (PURSUE Release 07, 7,5 MB)",
       "title_en": "DOW-UAP-D174 · 'Utah Ranch Investigation', March and April 2010 deployments: witnesses, cameras, biosensors, radio-frequency sweep and hair DNA (PURSUE Release 07, 7.5 MB)",
       "description": "Informe del equipo de BAASS sobre los despliegues del 22 al 26 de marzo y del 19 al 23 de abril de 2010 en el rancho y sus alrededores (Fort Duchesne, embalse de Bottle Hollow), con los nombres de testigos e investigadores tachados. Recoge más de veinticinco entrevistas, un mapa de cruces de rumbos de las criaturas que el propio informe dice que podrían ser arbitrarios, siete cámaras de caza Moultrie según el resumen, plantas biosensoras aún sin resultado, un barrido de radiofrecuencia con dos señales sin identificar entre 1,2 y 1,24 GHz, y la carta de un laboratorio (27 de abril de 2010) sobre cuatro muestras de pelo con el correo en que BAASS la interpreta: el pelo de la alambrada, de una misma secuencia canina, lo atribuyó a un perro de la propiedad, y el de una roca de la meseta, a un mapache. Es la fuente primaria de la investigación de BAASS en Utah; no propone causa para los avistamientos.",
       "description_en": "BAASS team report on the 22–26 March and 19–23 April 2010 deployments at the ranch and its surroundings (Fort Duchesne, Bottle Hollow reservoir), with the names of witnesses and investigators redacted. It records more than twenty-five interviews, a map of intersecting creature headings that the report itself says could be arbitrary, seven Moultrie game cameras according to the summary, biosensor plants with no results yet, a radio-frequency sweep with two unidentified signals between 1.2 and 1.24 GHz, and a laboratory letter (27 April 2010) on four hair samples with the email in which BAASS interprets it: it attributed the fence hair, all of one canine sequence, to a dog from the property, and the hair from a rock on the mesa to a raccoon. It is the primary source on BAASS's Utah investigation; it proposes no cause for the sightings.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf"
     },
     {
-      "src": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
-      "type": "link",
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
+      "type": "pdf",
       "title": "DOW-UAP-D175 · autoevaluación de las capacidades de análisis de BAASS, 23 de noviembre de 2010: el almacén de datos de once bases y los modelos del caso Tic Tac (PURSUE Release 07, 17,3 MB)",
       "title_en": "DOW-UAP-D175 · BAASS self-assessment of its analysis capabilities, 23 November 2010: the eleven-database warehouse and the Tic Tac models (PURSUE Release 07, 17.3 MB)",
       "description": "«Summary Report on BAASS UAP Analysis Capabilities», de 23 de noviembre de 2010, a un mes del cierre del contrato. Dice que BAASS fue contratado por la «Defense Warning Office» de la DIA bajo el contrato HHM402-08-C-0072, describe su personal y equipo y el almacén de datos CAPELLA con once bases (entre ellas NIDS, Blue Book, UFOCAT, MUFON, Colares, una «Utah Ranch Database» y una de efectos posteriores al rancho), menciona un análisis estadístico de la base del rancho, sobre cuándo se reporta la actividad anómala, sin dar sus resultados, y dedica el grueso a modelos numéricos con ANSYS del caso Tic Tac, de un objeto que entra en el agua y de objetos esféricos, como demostración de capacidades. Admite que «many, but not all, of these sightings may be explained by natural phenomena, or by unacknowledged aerospace technology». Prueba qué dejó construido el contratista.",
       "description_en": "'Summary Report on BAASS UAP Analysis Capabilities', dated 23 November 2010, a month before the contract closed. It says BAASS was contracted by DIA's 'Defense Warning Office' under contract HHM402-08-C-0072, describes its staff and equipment and the CAPELLA data warehouse with eleven databases (among them NIDS, Blue Book, UFOCAT, MUFON, Colares, a 'Utah Ranch Database' and one on post-ranch effects), mentions a statistical analysis of the ranch database, on when anomalous activity is reported, without giving its results, and devotes most of its length to ANSYS numerical models of the Tic Tac case, of an object entering water and of spherical objects, as a demonstration of capabilities. It concedes that 'many, but not all, of these sightings may be explained by natural phenomena, or by unacknowledged aerospace technology'. It proves what the contractor left built.",
       "source": "Department of War · PURSUE Release 07 (23 oct 2026)",
-      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada"
+      "license": "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf"
     }
   ],
   "classBasis": {
