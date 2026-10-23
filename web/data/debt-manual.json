@@ -101,6 +101,16 @@
         "id": "B6",
         "title": "17 oct · Portada: «Síguenos» está en el bloque principal, antes de que el visitante vea un caso; iría mejor en el pie de página",
         "state": "revertido el 17 oct a petición del dueño: la fila «Síguenos» vuelve debajo de los botones de la portada, discreta como estaba"
+      },
+      {
+        "id": "B7",
+        "title": "23 oct · La historia de la CIA sobre los programas U-2 y OXCART (CIA-UAP-003, entrega 03) estaba en /pursue sin que ninguna ficha la usara; se movió al bucket para liberar espacio. Falta embeberla donde respalde algo (los casos de los años cincuenta y sesenta que la CIA atribuye a vuelos de esos aviones, o puerto-rico-gyatt-1964)",
+        "state": "pendiente"
+      },
+      {
+        "id": "B8",
+        "title": "23 oct · Expedientes de la Fuerza Aérea de la séptima entrega (1949-1957) sin ficha: Guam, Hässleholm, Berlín, Prince George, isla Catalina, Sassari, Seymour y Alaska. Los PDF ya están descargados y optimizados; la página 5 de Guam viene escaneada en espejo y hay que voltearla al alojarla",
+        "state": "pendiente (Arabia Saudí y Marruecos hechas el 23 oct)"
       }
     ]
   }
