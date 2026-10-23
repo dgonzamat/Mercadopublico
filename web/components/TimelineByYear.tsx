@@ -2,124 +2,99 @@ import { cases } from "@/lib/data";
 import { T } from "@/components/T";
 
 /**
- * 79-year timeline of the corpus. Each year is a vertical line; height
- * proportional to number of cases that year. Decade ticks below.
+ * Distribución del corpus por década. Cada década es una barra con su
+ * conteo encima; los antecedentes anteriores a 1940 van juntos en la
+ * primera columna («‹1940», como en /cobertura), así que las barras
+ * suman el total de incidentes.
  *
- * RD-3 · Los cuatro picos que el copy narra (1947 · 1973 · 2004 · 2026)
- * se anotan directamente sobre el gráfico: barra en accent-bright +
- * etiqueta mono con marcador ▲ (ID-2). El gráfico pasa de decorativo
- * a autoexplicativo.
+ * RD-3 · Las décadas de los cuatro hitos que narra el copy (1947 · 1973 ·
+ * 2004 · 2026) van en accent-bright; el párrafo de arriba hace de leyenda.
+ * (Antes era una barra por año; el dueño pidió verla por década, oct 2026.)
  */
 
-// CC-1 · #ee6075 = accent-bright (5.4:1 sobre #1a1a1a). El fill de SVG
-// no puede leer tokens de Tailwind, así que va el hex con nombre.
-const ACCENT_BRIGHT = "#ee6075";
-
-const PEAKS: Array<{ year: number; label: string }> = [
-  { year: 1947, label: "Roswell" },
-  { year: 1973, label: "Pascagoula" },
-  { year: 2004, label: "Nimitz" },
-  { year: 2026, label: "PURSUE" },
-];
+// CC-1 · #ee6075 = accent-bright (5.4:1 sobre #1a1a1a), igual que la clase
+// text-accent-bright; las barras usan las clases de Tailwind.
+const PEAK_YEARS = [1947, 1973, 2004, 2026];
 
 // Solo incidentes: los casos-documento son evidencia, no sucesos.
 const incidents = cases.filter((c) => c.category !== "document");
 
+const FIRST_DECADE = 1940;
+
 export function TimelineByYear({ locale }: { locale: "es" | "en" }) {
-  const YEAR_MIN = 1947;
-  const YEAR_MAX = 2026;
-  const span = YEAR_MAX - YEAR_MIN;
+  const lastDecade = Math.floor(
+    Math.max(...incidents.map((c) => c.year_start)) / 10,
+  ) * 10;
 
-  const counts = new Map<number, number>();
-  for (const c of incidents) {
-    counts.set(c.year_start, (counts.get(c.year_start) ?? 0) + 1);
+  // `short` es la etiqueta móvil (dos cifras): a 360 px diez columnas no
+  // caben con el año completo.
+  const buckets: Array<{ key: string; label: string; short: string; count: number; peak: boolean }> = [
+    {
+      key: "pre",
+      label: `‹${FIRST_DECADE}`,
+      short: `‹${String(FIRST_DECADE).slice(2)}`,
+      count: incidents.filter((c) => c.year_start < FIRST_DECADE).length,
+      peak: false,
+    },
+  ];
+  for (let d = FIRST_DECADE; d <= lastDecade; d += 10) {
+    buckets.push({
+      key: String(d),
+      label: `${d}s`,
+      short: `${String(d).slice(2)}s`,
+      count: incidents.filter((c) => c.year_start >= d && c.year_start < d + 10)
+        .length,
+      peak: PEAK_YEARS.some((y) => y >= d && y < d + 10),
+    });
   }
-  const maxCount = Math.max(...Array.from(counts.values()));
-  const peakYears = new Set(PEAKS.map((p) => p.year));
-
-  const decades = [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
-  const totalForDecade = (start: number) =>
-    incidents.filter((c) => c.year_start >= start && c.year_start < start + 10)
-      .length;
+  const maxCount = Math.max(...buckets.map((b) => b.count));
 
   return (
     <figure className="space-y-6">
       <figcaption className="grid grid-cols-2 items-end gap-4">
         <p className="font-mono text-xs text-bg/60">
-          <T es="Casos por año" en="Cases per year" locale={locale} /> · {YEAR_MIN}–{YEAR_MAX}
+          <T es="Casos por década" en="Cases per decade" locale={locale} />
         </p>
         <p className="text-right font-mono text-xs text-bg/60">
-          {incidents.length} <T es="casos" en="cases" locale={locale} /> · {span} <T es="años" en="years" locale={locale} />
+          {incidents.length} <T es="casos" en="cases" locale={locale} />
         </p>
       </figcaption>
 
-      <div>
-        {/* Etiquetas de picos — HTML posicionado (el SVG está estirado
-            con preserveAspectRatio="none"; texto dentro se deformaría). */}
-        <div className="relative h-10" aria-hidden>
-          {PEAKS.map((p, i) => {
-            const pct = ((p.year - YEAR_MIN) / span) * 100;
-            const align =
-              i === 0
-                ? "translate-x-0 items-start"
-                : i === PEAKS.length - 1
-                  ? "-translate-x-full items-end"
-                  : "-translate-x-1/2 items-center";
-            return (
-              <div
-                key={p.year}
-                style={{ left: `${pct}%` }}
-                className={`absolute bottom-0 flex transform flex-col gap-1 ${align}`}
-              >
-                <span className="whitespace-nowrap font-mono text-[10px] text-accent-bright">
-                  {p.year} {p.label}
-                </span>
-                <span className="text-[9px] leading-none text-accent-bright">
-                  ▲
-                </span>
-              </div>
-            );
-          })}
-        </div>
-
-        <svg
-          viewBox={`0 0 ${span + 1} 100`}
-          preserveAspectRatio="none"
-          className="h-48 w-full md:h-64"
-          role="img"
-          aria-label={locale === "es" ? `Distribución temporal de ${incidents.length} casos UAP entre ${YEAR_MIN} y ${YEAR_MAX}. Picos en 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) y 2026 (PURSUE).` : `Timeline of ${incidents.length} UAP cases between ${YEAR_MIN} and ${YEAR_MAX}. Peaks in 1947 (Roswell), 1973 (Pascagoula), 2004 (Nimitz) and 2026 (PURSUE).`}
-        >
-          {Array.from({ length: span + 1 }, (_, i) => {
-            const year = YEAR_MIN + i;
-            const count = counts.get(year) ?? 0;
-            if (count === 0) return null;
-            const height = (count / maxCount) * 90;
-            return (
-              <rect
-                key={year}
-                x={i}
-                y={100 - height}
-                width={0.7}
-                height={height}
-                fill={peakYears.has(year) ? ACCENT_BRIGHT : "#f7f2e8"}
-              />
-            );
-          })}
-          {/* Baseline */}
-          <rect x={0} y={99.5} width={span + 1} height={0.5} fill="#f7f2e8" opacity={0.3} />
-        </svg>
-      </div>
-
-      <div className="grid grid-cols-4 gap-x-4 gap-y-3 border-t border-bg/20 pt-4 md:grid-cols-8">
-        {decades.map((d) => (
-          <div key={d} className="space-y-0.5">
-            <p className="font-display text-2xl tabular-nums leading-none text-bg md:text-3xl">
-              {totalForDecade(d)}
-            </p>
-            <p className="font-mono text-[10px] text-bg/60">
-              {d}s
-            </p>
-          </div>
+      <ol
+        className="flex h-56 items-end gap-1.5 border-b border-bg/30 md:h-72 md:gap-3"
+        aria-label={
+          locale === "es"
+            ? `Distribución de ${incidents.length} casos UAP por década: ${buckets.map((b) => `${b.label}, ${b.count}`).join("; ")}.`
+            : `Distribution of ${incidents.length} UAP cases by decade: ${buckets.map((b) => `${b.label}, ${b.count}`).join("; ")}.`
+        }
+      >
+        {buckets.map((b) => (
+          <li
+            key={b.key}
+            className="flex h-full min-w-0 flex-1 flex-col items-center justify-end gap-1"
+          >
+            <span
+              className={`font-display text-base tabular-nums leading-none md:text-2xl ${b.peak ? "text-accent-bright" : "text-bg"}`}
+            >
+              {b.count}
+            </span>
+            <span
+              aria-hidden
+              className={`block w-full ${b.peak ? "bg-accent-bright" : "bg-bg"}`}
+              style={{ height: `${(b.count / maxCount) * 80}%` }}
+            />
+          </li>
+        ))}
+      </ol>
+      <div className="-mt-4 flex gap-1.5 md:gap-3" aria-hidden>
+        {buckets.map((b) => (
+          <span
+            key={b.key}
+            className="min-w-0 flex-1 text-center font-mono text-[10px] text-bg/60 md:text-xs"
+          >
+            <span className="md:hidden">{b.short}</span>
+            <span className="hidden md:inline">{b.label}</span>
+          </span>
         ))}
       </div>
     </figure>
