@@ -118,6 +118,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Vietnam": "Vietnam",
   "Sitio sensible de seguridad nacional, oeste de EE.UU. (ubicación exacta no revelada)": "Sensitive national-security site, western U.S. (exact location undisclosed)",
   "Yemen": "Yemen",
+  Guam: "Guam",
 };
 
 /** Traduce un country_name del español al inglés; fallback al valor original. */
