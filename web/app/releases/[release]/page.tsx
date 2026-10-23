@@ -92,6 +92,14 @@ const RELEASE_META: Record<
     blurbEn:
       "The full contractual paperwork of the AAWSAP program and its 37 reference documents (DIRDs), the Blue Book file on the Tremonton film (1952) and Ruppelt's recording at MIT Lincoln Laboratory, mission reports from Iraq and the Middle East, sensor clips over the Yellow Sea and the East China Sea, and the first material contributed by a local police force (Colorado, 2023).",
   },
+  7: {
+    es: "PURSUE · Séptima entrega",
+    en: "PURSUE · Seventh release",
+    blurbEs:
+      "Veintiocho documentos y ningún vídeo: el triángulo negro que tres agentes federales vieron en 2026 en un sitio sensible del oeste de EE. UU. (la declaración del FBI y el memorando de la AARO), papeles del programa BAASS/AAWSAP y de la investigación del rancho de Utah (2008-2010), quince expedientes de la Fuerza Aérea de 1949 a 1957 (Arabia Saudí, Guam, Sassari, Prince George, Berlín, Marruecos, Alaska, Hässleholm, Seymour, la isla Catalina), la hoja de servicio de Howard McCoy y la correspondencia de 1962 a 1964 entre la Casa Blanca, la NASA y Defensa sobre fragmentos de vehículos espaciales.",
+    blurbEn:
+      "Twenty-eight documents and no video: the black triangle three federal agents saw in 2026 at a sensitive site in the western U.S. (the FBI statement and the AARO memorandum), papers from the BAASS/AAWSAP program and the Utah ranch investigation (2008-2010), fifteen Air Force files from 1949 to 1957 (Saudi Arabia, Guam, Sassari, Prince George, Berlin, Morocco, Alaska, Hässleholm, Seymour, Catalina Island), Howard McCoy's service record, and 1962-1964 White House, NASA and Defense correspondence on space-vehicle fragments.",
+  },
 };
 
 export function generateStaticParams() {
