@@ -2,6 +2,8 @@
 
 Second step of the mandatory two-step method (see CLAUDE.md, "Modelo de probabilidad"). You did not make the corrections; you check them. Do NOT edit any file.
 
+**Writing:** also check the corrected text against the `/redaccion` guide (`.claude/commands/redaccion.md`): flag any departure with the exact sentence and a proposed rewrite.
+
 Repo: /home/user/Mercadopublico. Case files: web/data/cases/<id>.json. See what changed with
 `git diff origin/main -- web/data/cases/<id>.json` (unmerged work) or `git diff <commit>~1 <commit> -- …` (merged work).
 

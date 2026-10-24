@@ -148,6 +148,10 @@ Campos opcionales de rich content (renderizados como secciones en `/cases/[slug]
 - `evidence` — array de strings, 3-8 ítems documentados.
 - `sources` — array de `{name, url?, note?, note_en?}` para citas primarias. Si una fuente lleva `note` (ES) debe llevar su par `note_en`: el sitio es inglés-primario y el detalle renderiza `note_en ?? note`, así que una nota sin par cae al español en el sitio EN. *(enforzado: `audit-consistency.mjs` E26, WARN agregado por tier)*
 
+### Línea editorial · guía de redacción (oct 2026)
+
+**Todo texto de una ficha, en español y en inglés, se escribe y se verifica con el skill `/redaccion`** (`.claude/commands/redaccion.md`), y su ruta va en el brief de todo agente redactor o verificador. Fija el trabajo de cada campo (título «Lugar · quién vio qué» ≤ 65 caracteres, ubicación ≤ 70, relato cronológico del suceso, `evidence` de 3–8 hechos), el lenguaje llano, la norma de cada idioma con el mismo nivel de exigencia y lo prohibido. Nació porque Skinwalker había crecido a 41.500 caracteres contando entrega tras entrega de documentos, y 23 títulos de las tandas de Blue Book usaban jerga de piloto («un F-94 engancha con su radar un blanco en la cola») que el dueño no entendió (oct 2026): ninguna regla escrita decía cómo escribir, solo qué no escribir, y las sondas no ven lo que no se entiende.
+
 ### Línea editorial · longitud de la descripción (jun 2026)
 
 **Estándar: la descripción narrativa de cada caso —`whatHappened` + `whyMatters`— debe alcanzar al menos ~1 página A4 (~550 palabras / ~3.500 caracteres), en español e inglés.** `evidence` y `sources` aportan pero NO cuentan para la página: el estándar mide prosa, no listas — un caso con narrativa corta y listas largas sigue por debajo del estándar.
